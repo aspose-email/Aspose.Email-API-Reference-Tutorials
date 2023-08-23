@@ -116,10 +116,6 @@ Yes, you can easily attach files to your emails using the `Attachment` class pro
 
 Absolutely! Aspose.Email is versatile and can be used for both personal and enterprise email automation needs. Its robust features make it suitable for a wide range of applications.
 
-### Are there any licensing considerations for using Aspose.Email?
-
-Yes, Aspose.Email is a commercial product, and you'll need a valid license to use it in your projects. Refer to the official documentation for detailed licensing information.
-
 ### Can I send HTML-formatted emails using Aspose.Email?
 
 Certainly! You can create and send HTML-formatted emails using the `HtmlBody` property of the `MailMessage` class. This allows you to include rich content and styling in your emails.

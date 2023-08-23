@@ -94,7 +94,7 @@ In this guide, we explored how to include attachments in your emails using Aspos
 
 ### How can I download the Aspose.Email library?
 
-You can download the Aspose.Email library from their official website or by using NuGet Package Manager in Visual Studio.
+You can download the Aspose.Email library from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or by using NuGet Package Manager in Visual Studio.
 
 ### Can I attach multiple files to a single email?
 
@@ -110,4 +110,4 @@ Yes, you can configure Aspose.Email to send emails over secure connections using
 
 ### Where can I find more information about Aspose.Email's capabilities?
 
-For more detailed information about Aspose.Email's features, classes, and methods, refer to the [official documentation](https://reference.aspose.com/email).
+For more detailed information about Aspose.Email's features, classes, and methods, refer to the [Aspose.Email API Reference](https://reference.aspose.com/email/net/).

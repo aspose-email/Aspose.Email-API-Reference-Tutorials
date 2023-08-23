@@ -107,4 +107,4 @@ You can implement error handling and exception catching mechanisms to ensure the
 
 ### Where can I find more information about Aspose.Email for .NET?
 
-For more detailed documentation and resources, you can visit the official [Aspose.Email for .NET Reference](https://reference.aspose.com/email/net/).
+For more detailed documentation and resources, you can visit the [Aspose.Email for .NET Reference](https://reference.aspose.com/email/net/).

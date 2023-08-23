@@ -77,10 +77,6 @@ You can install Aspose.Email for .NET using NuGet Package Manager. Simply search
 
 Yes, Aspose.Email for .NET supports various email formats, including EML, MSG, PST, and more.
 
-### Is there a trial version of Aspose.Email for .NET available?
-
-Yes, you can get a trial version of Aspose.Email for .NET from their official website.
-
 ### Can I use Aspose.Email for commercial projects?
 
 Yes, you can use Aspose.Email for .NET in both personal and commercial projects, provided you have the appropriate license.

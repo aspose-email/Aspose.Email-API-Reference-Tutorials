@@ -119,7 +119,7 @@ Yes, Aspose.Email is designed to handle a wide range of email manipulation tasks
 
 ### Where can I find more examples and documentation for Aspose.Email?
 
-You can explore the official [Aspose.Email documentation](https://reference.aspose.com/email/net/) for detailed examples, API reference, and usage guidelines. It's a valuable resource for mastering email manipulation with Aspose.Email.
+You can explore the [Aspose.Email API Reference](https://reference.aspose.com/email/net/) for detailed examples, API reference, and usage guidelines. It's a valuable resource for mastering email manipulation with Aspose.Email.
 
 ### Can I use Aspose.Email in commercial projects?
 

@@ -92,7 +92,7 @@ Absolutely. Aspose.Email is designed to be scalable and can be used in projects 
 
 ### How can I learn more about Aspose.Email for .NET?
 
-For more detailed information and documentation about Aspose.Email for .NET, visit the official documentation: [Aspose.Email for .Net](https://reference.aspose.com/email/net)
+For more detailed information and documentation about Aspose.Email for .NET, visit the [Aspose.Email for .Net API Reference](https://reference.aspose.com/email/net)
 
 ### Can I test the Aspose.Email library before integrating it into my project?
 

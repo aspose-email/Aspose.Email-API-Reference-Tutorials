@@ -97,7 +97,7 @@ Yes, you can. In Step 5, you can check the `args.IsHtml` property to determine w
 
 ### Where can I find more information about Aspose.Email for .NET?
 
-You can find detailed documentation and code examples for Aspose.Email for .NET in the [official documentation](https://reference.aspose.com/email/net).
+You can find detailed documentation and code examples for Aspose.Email for .NET in the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
 
 ## Conclusion
 

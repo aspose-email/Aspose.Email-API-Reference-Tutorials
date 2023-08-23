@@ -22,7 +22,7 @@ Before we delve into the actual coding, ensure you have a suitable development e
 
 ## Installing Aspose.Email for .NET
 
-To get started, you need to install the Aspose.Email for .NET library. You can download it from the official [Aspose.Email website](https://downloads.aspose.com/email/net). Once downloaded, follow these steps:
+To get started, you need to install the Aspose.Email for .NET library. You can download it from the Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/). Once downloaded, follow these steps:
 
 1. Launch Visual Studio.
 2. Create a new C# project or open an existing one.
@@ -80,7 +80,7 @@ client.Send(message);
 
 ## Advanced Customizations
 
-Aspose.Email for .NET offers a wide range of advanced features, such as adding attachments, embedding images, and working with email headers. Explore the official [documentation](https://reference.aspose.com/email/net) for detailed information.
+Aspose.Email for .NET offers a wide range of advanced features, such as adding attachments, embedding images, and working with email headers. Explore the [API Reference](https://reference.aspose.com/email/net) for detailed information.
 
 ## Troubleshooting and Tips
 
@@ -96,7 +96,7 @@ Creating HTML email files using C# and Aspose.Email for .NET opens up a world of
 
 ### How do I download Aspose.Email for .NET?
 
-You can download the library from the official [Aspose.Email releases page](https://releases.aspose.com/email/net).
+You can download the library from the [Aspose.Email releases page](https://releases.aspose.com/email/net).
 
 ### Can I add attachments to my HTML email?
 

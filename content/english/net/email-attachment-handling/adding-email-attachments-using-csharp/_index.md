@@ -75,7 +75,7 @@ In this guide, we've learned how to add email attachments using C# with the Aspo
 
 ### How do I download the Aspose.Email for .NET library?
 
-You can download the Aspose.Email for .NET library from their official website: [https://products.aspose.com/email/net](https://products.aspose.com/email/net)
+You can download the Aspose.Email for .NET library from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/)
 
 ### Can I add multiple attachments to a single email?
 

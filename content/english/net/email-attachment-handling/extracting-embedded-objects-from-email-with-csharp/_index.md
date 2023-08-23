@@ -14,7 +14,7 @@ Embedded objects in emails refer to files that are directly inserted into the em
 
 ## Getting Started with Aspose.Email for .NET
 
-Aspose.Email for .NET is a powerful library that provides various features for working with emails, including parsing, creation, and manipulation of email messages. To get started, you need to have the Aspose.Email for .NET library installed in your project. You can either download it from the official website or use a package manager like NuGet.
+Aspose.Email for .NET is a powerful library that provides various features for working with emails, including parsing, creation, and manipulation of email messages. To get started, you need to have the Aspose.Email for .NET library installed in your project. You can either download it from the Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or use a package manager like NuGet.
 
 ## Loading and Parsing an Email
 
@@ -96,7 +96,7 @@ In this article, we explored how to extract embedded objects from emails using C
 
 ### How do I install Aspose.Email for .NET?
 
-You can install Aspose.Email for .NET by downloading it from the official website or using a package manager like NuGet. For detailed installation instructions, refer to the [official documentation](https://docs.aspose.com/email/net/installation/).
+You can install Aspose.Email for .NET by downloading it from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or using a package manager like NuGet. 
 
 ### Can I extract embedded objects from attachments other than HTML?
 
@@ -112,4 +112,4 @@ Yes, you can manipulate the extracted embedded objects before saving them. The A
 
 ### Where can I find more examples of using Aspose.Email for .NET?
 
-You can find more code examples and tutorials in the [official documentation](https://docs.aspose.com/email/net/). Additionally, the Aspose.Email GitHub repository contains sample projects that demonstrate various features of the library.
+You can find more code examples and tutorials in the [API Reference](https://reference.aspose.com/email/net/). 

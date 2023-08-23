@@ -70,7 +70,7 @@ In this article, we explored the process of defining a custom order of informati
 
 ### How can I download the Aspose.Email for .NET library?
 
-You can download the Aspose.Email for .NET library from the official Aspose website by visiting [this link](https://releases.aspose.com/email/net).
+You can download the Aspose.Email for .NET library from the Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/).
 
 ### Can I use Aspose.Email to modify other email-related formats?
 

@@ -80,7 +80,7 @@ TNEF attachments are often named "winmail.dat" and contain encapsulated data. Th
 
 ### Can I use Aspose.Email for other email-related tasks?
 
-Yes, Aspose.Email provides a wide range of features for working with email messages, attachments, calendars, and more. You can explore its documentation for detailed information.
+Yes, Aspose.Email provides a wide range of features for working with email messages, attachments, calendars, and more. You can explore its [Aspose.Email for .Net API Reference](https://reference.aspose.com/email/net) for detailed information.
 
 ### Is Aspose.Email compatible with different email protocols?
 
@@ -88,7 +88,7 @@ Yes, Aspose.Email supports various email protocols such as SMTP, POP3, IMAP, and
 
 ### How frequently are updates released for Aspose.Email?
 
-Aspose frequently releases updates and improvements to its libraries. It's recommended to check their official website or documentation for the latest updates and features.
+Aspose frequently releases updates and improvements to its libraries. It's recommended to check Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or [Aspose.Email for .Net API Reference](https://reference.aspose.com/email/net) for the latest updates and features.
 
 ### Can I use Aspose.Email in commercial projects?
 

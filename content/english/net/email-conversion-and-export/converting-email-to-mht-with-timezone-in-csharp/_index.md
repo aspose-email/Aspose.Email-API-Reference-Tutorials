@@ -125,8 +125,8 @@ Yes, the timezone information is preserved during the conversion process. By han
 
 ### Where can I find further documentation and updates about Aspose.Email for .NET?
 
-You can refer to the official documentation for comprehensive information and updates: [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net/)
+You can refer to the documentation for comprehensive information and updates: [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/)
 
 ### How can I download the latest version of Aspose.Email for .NET?
 
-You can download the latest version from the official releases page: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net/)
+You can download the latest version from the releases page: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net/)

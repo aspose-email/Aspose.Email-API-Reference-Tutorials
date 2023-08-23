@@ -90,7 +90,7 @@ Detecting attachments and embedded messages within emails is a crucial task for 
 
 ### How can I download the Aspose.Email for .NET library?
 
-You can download the Aspose.Email for .NET library from their official website or directly from the [product download page](https://products.aspose.com/email/net).
+You can download the Aspose.Email for .NET library from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/).
 
 ### Can I use this guide for other programming languages?
 

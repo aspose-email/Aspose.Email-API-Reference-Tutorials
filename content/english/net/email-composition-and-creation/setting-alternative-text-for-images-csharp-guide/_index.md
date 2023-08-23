@@ -100,4 +100,4 @@ You can download the Aspose.Email library from the Aspose Releases or install it
 To add images as linked resources in an email, you can use the `LinkedResource` class. Assign a content ID to the linked resource, and then reference this content ID in the HTML body using the `cid:` scheme. For detailed information, see the [LinkedResource documentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Where can I find more documentation on Aspose.Email for .NET?
 
-You can find more detailed documentation, tutorials, and examples on working with Aspose.Email for .NET in the [official documentation](https://reference.aspose.com/email/net/).
+You can find more detailed documentation, tutorials, and examples on working with Aspose.Email for .NET in the [API Reference](https://reference.aspose.com/email/net/).

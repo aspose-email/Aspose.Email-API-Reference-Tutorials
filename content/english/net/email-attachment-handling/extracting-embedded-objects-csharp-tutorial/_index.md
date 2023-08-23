@@ -104,4 +104,4 @@ Absolutely! Aspose.Email for .NET is compatible with ASP.NET web applications, d
 
 ### Where can I find more documentation about Aspose.Email?
 
-You can find detailed documentation and code examples for Aspose.Email on their [official documentation](https://reference.aspose.com) page.
+You can find detailed documentation and code examples for Aspose.Email on [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) page.
