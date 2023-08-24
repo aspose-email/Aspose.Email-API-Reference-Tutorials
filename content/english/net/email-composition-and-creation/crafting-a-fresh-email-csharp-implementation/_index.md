@@ -1,6 +1,6 @@
 ---
-title: Crafting a Fresh Email -  C# Implementation
-linktitle: Crafting a Fresh Email -  C# Implementation
+title: Crafting a Fresh Email - C# Implementation
+linktitle: Crafting a Fresh Email - C# Implementation
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to create dynamic emails using C# and Aspose.Email for .NET. Step-by-step guide with code examples for seamless implementation. Boost your communication automation today!
 type: docs
