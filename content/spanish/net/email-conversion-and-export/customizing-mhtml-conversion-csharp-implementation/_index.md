@@ -1,6 +1,6 @@
 ---
-title: Personalización de la conversión MHTML: implementación de C#
-linktitle: Personalización de la conversión MHTML: implementación de C#
+title: Personalización de la conversión MHTML implementación de C#
+linktitle: Personalización de la conversión MHTML implementación de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a personalizar la conversión MHTML utilizando Aspose.Email para .NET. Guía paso a paso con código fuente C#.
 type: docs

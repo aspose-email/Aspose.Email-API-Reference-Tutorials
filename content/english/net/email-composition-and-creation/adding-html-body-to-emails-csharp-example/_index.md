@@ -1,6 +1,6 @@
 ---
-title: Adding HTML Body to Emails -  C# Example
-linktitle: Adding HTML Body to Emails -  C# Example
+title: Adding HTML Body to Emails - C# Example
+linktitle: Adding HTML Body to Emails - C# Example
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to enhance email content using HTML in Aspose.Email for .NET. Step-by-step guide with C# examples. Elevate your email communication!
 type: docs

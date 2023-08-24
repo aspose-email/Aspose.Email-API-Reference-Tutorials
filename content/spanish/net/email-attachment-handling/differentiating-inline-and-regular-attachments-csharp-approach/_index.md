@@ -1,6 +1,6 @@
 ---
-title: Diferenciación de archivos adjuntos en línea y regulares: enfoque C#
-linktitle: Diferenciación de archivos adjuntos en línea y regulares: enfoque C#
+title: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
+linktitle: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a diferenciar entre archivos adjuntos de correo electrónico regulares y en línea utilizando Aspose.Email para .NET. Guía completa con ejemplos de código.
 type: docs

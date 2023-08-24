@@ -1,6 +1,6 @@
 ---
-title: Rilevamento dei messaggi TNEF in C#: spiegazione
-linktitle: Rilevamento dei messaggi TNEF in C#: spiegazione
+title: Rilevamento dei messaggi TNEF in C# spiegazione
+linktitle: Rilevamento dei messaggi TNEF in C# spiegazione
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Impara a rilevare ed elaborare i messaggi TNEF in C# utilizzando Aspose.Email per .NET. Migliora la gestione delle e-mail con rich text e allegati.
 type: docs

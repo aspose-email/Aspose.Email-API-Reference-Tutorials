@@ -1,6 +1,6 @@
 ---
-title: Elaboración de un borrador de solicitud de cita: ejemplo de C#
-linktitle: Elaboración de un borrador de solicitud de cita: ejemplo de C#
+title: Elaboración de un borrador de solicitud de cita ejemplo de C#
+linktitle: Elaboración de un borrador de solicitud de cita ejemplo de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a utilizar Aspose.Email para .NET para crear borradores de correos electrónicos de solicitud de citas en C#. Mejorar la comunicación y la eficiencia empresarial.
 type: docs

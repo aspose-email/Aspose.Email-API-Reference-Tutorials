@@ -1,6 +1,6 @@
 ---
-title: Técnica C#: conversión del cuerpo HTML a texto sin formato
-linktitle: Técnica C#: conversión del cuerpo HTML a texto sin formato
+title: Técnica C# conversión del cuerpo HTML a texto sin formato
+linktitle: Técnica C# conversión del cuerpo HTML a texto sin formato
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a convertir fácilmente contenido de correo electrónico HTML a texto sin formato utilizando Aspose.Email para .NET. Guía detallada y código. ¡Explora ahora!
 type: docs

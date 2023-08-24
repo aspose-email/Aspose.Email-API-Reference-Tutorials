@@ -1,6 +1,6 @@
 ---
-title: Manejo de borradores de mensajes en C#: guardar correo electrónico como borrador
-linktitle: Manejo de borradores de mensajes en C#: guardar correo electrónico como borrador
+title: Manejo de borradores de mensajes en C# guardar correo electrónico como borrador
+linktitle: Manejo de borradores de mensajes en C# guardar correo electrónico como borrador
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a implementar el manejo de borradores de correo electrónico en C# usando Aspose.Email para .NET. Cree, edite y guarde borradores sin problemas.
 type: docs

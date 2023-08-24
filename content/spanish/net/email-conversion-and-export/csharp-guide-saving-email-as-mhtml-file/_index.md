@@ -1,6 +1,6 @@
 ---
-title: Guía de C#: guardar correo electrónico como archivo MHTML
-linktitle: Guía de C#: guardar correo electrónico como archivo MHTML
+title: Guía de C# guardar correo electrónico como archivo MHTML
+linktitle: Guía de C# guardar correo electrónico como archivo MHTML
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a guardar correos electrónicos como archivos MHTML usando C# y Aspose.Email para .NET. Guía paso a paso con ejemplos de código y preguntas frecuentes.
 type: docs

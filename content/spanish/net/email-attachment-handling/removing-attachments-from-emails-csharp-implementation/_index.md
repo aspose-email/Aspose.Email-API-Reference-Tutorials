@@ -1,6 +1,6 @@
 ---
-title: Eliminación de archivos adjuntos de correos electrónicos: implementación de C#
-linktitle: Eliminación de archivos adjuntos de correos electrónicos: implementación de C#
+title: Eliminación de archivos adjuntos de correos electrónicos implementación de C#
+linktitle: Eliminación de archivos adjuntos de correos electrónicos implementación de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda cómo eliminar archivos adjuntos de correo electrónico usando Aspose.Email para .NET. Guía paso a paso con código fuente C#.
 type: docs

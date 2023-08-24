@@ -1,6 +1,6 @@
 ---
-title: Protección de archivos adjuntos TNEF: método C#
-linktitle: Protección de archivos adjuntos TNEF: método C#
+title: Protección de archivos adjuntos TNEF método C#
+linktitle: Protección de archivos adjuntos TNEF método C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda cómo proteger los archivos adjuntos TNEF usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente incluido.
 type: docs

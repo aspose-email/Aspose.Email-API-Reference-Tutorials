@@ -1,6 +1,6 @@
 ---
-title: Incluir archivos adjuntos en el correo electrónico: ejemplo de C#
-linktitle: Incluir archivos adjuntos en el correo electrónico: ejemplo de C#
+title: Incluir archivos adjuntos en el correo electrónico ejemplo de C#
+linktitle: Incluir archivos adjuntos en el correo electrónico ejemplo de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a incluir archivos adjuntos en el correo electrónico utilizando Aspose.Email para .NET. Guía paso a paso con ejemplo de código C#.
 type: docs

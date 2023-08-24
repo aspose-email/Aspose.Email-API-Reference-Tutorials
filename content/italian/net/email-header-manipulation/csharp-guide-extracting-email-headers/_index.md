@@ -1,6 +1,6 @@
 ---
-title: Guida C#: estrazione delle intestazioni dei messaggi di posta elettronica
-linktitle: Guida C#: estrazione delle intestazioni dei messaggi di posta elettronica
+title: Guida C# estrazione delle intestazioni dei messaggi di posta elettronica
+linktitle: Guida C# estrazione delle intestazioni dei messaggi di posta elettronica
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come estrarre le intestazioni di posta elettronica in C# utilizzando Aspose.Email per .NET. Guida passo passo con codice sorgente per un'analisi efficiente della posta elettronica.
 type: docs

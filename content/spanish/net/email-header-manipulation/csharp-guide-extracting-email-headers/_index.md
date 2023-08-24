@@ -1,6 +1,6 @@
 ---
-title: Guía de C#: extracción de encabezados de correo electrónico
-linktitle: Guía de C#: extracción de encabezados de correo electrónico
+title: Guía de C# extracción de encabezados de correo electrónico
+linktitle: Guía de C# extracción de encabezados de correo electrónico
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a extraer encabezados de correo electrónico en C# usando Aspose.Email para .NET. Guía paso a paso con código fuente para un análisis eficiente del correo electrónico.
 type: docs

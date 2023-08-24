@@ -1,6 +1,6 @@
 ---
-title: Crafting a Draft Appointment Request -  C# Example
-linktitle: Crafting a Draft Appointment Request -  C# Example
+title: Crafting a Draft Appointment Request - C# Example
+linktitle: Crafting a Draft Appointment Request - C# Example
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to use Aspose.Email for .NET to create draft appointment request emails in C#. Enhance business communication and efficiency.
 type: docs

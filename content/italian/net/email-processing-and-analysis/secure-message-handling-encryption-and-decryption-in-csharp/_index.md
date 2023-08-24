@@ -1,6 +1,6 @@
 ---
-title: Gestione sicura dei messaggi: crittografia e decrittografia in C#
-linktitle: Gestione sicura dei messaggi: crittografia e decrittografia in C#
+title: Gestione sicura dei messaggi crittografia e decrittografia in C#
+linktitle: Gestione sicura dei messaggi crittografia e decrittografia in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come implementare la gestione sicura dei messaggi con crittografia e decrittografia in C# utilizzando Aspose.Email per .NET. Proteggi i dati sensibili in modo efficace.
 type: docs

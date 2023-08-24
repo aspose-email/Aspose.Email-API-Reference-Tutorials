@@ -1,6 +1,6 @@
 ---
-title: Tecnica C#: conversione del corpo HTML in testo semplice
-linktitle: Tecnica C#: conversione del corpo HTML in testo semplice
+title: Tecnica C# conversione del corpo HTML in testo semplice
+linktitle: Tecnica C# conversione del corpo HTML in testo semplice
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Impara a convertire facilmente il contenuto delle e-mail HTML in testo semplice utilizzando Aspose.Email per .NET. Guida e codice dettagliati. Esplora ora!
 type: docs

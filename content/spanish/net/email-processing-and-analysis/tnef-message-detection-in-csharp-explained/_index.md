@@ -1,6 +1,6 @@
 ---
-title: Detección de mensajes TNEF en C#: explicado
-linktitle: Detección de mensajes TNEF en C#: explicado
+title: Detección de mensajes TNEF en C# explicado
+linktitle: Detección de mensajes TNEF en C# explicado
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a detectar y procesar mensajes TNEF en C# usando Aspose.Email para .NET. Mejore el manejo del correo electrónico con texto enriquecido y archivos adjuntos.
 type: docs

@@ -1,6 +1,6 @@
 ---
-title: Agregar cuerpo HTML a correos electrónicos: ejemplo de C#
-linktitle: Agregar cuerpo HTML a correos electrónicos: ejemplo de C#
+title: Agregar cuerpo HTML a correos electrónicos ejemplo de C#
+linktitle: Agregar cuerpo HTML a correos electrónicos ejemplo de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda cómo mejorar el contenido del correo electrónico usando HTML en Aspose.Email para .NET. Guía paso a paso con ejemplos de C#. ¡Mejore su comunicación por correo electrónico!
 type: docs

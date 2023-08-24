@@ -1,6 +1,6 @@
 ---
-title: Inclusione di allegati nei messaggi di posta elettronica: esempio in C#
-linktitle: Inclusione di allegati nei messaggi di posta elettronica: esempio in C#
+title: Inclusione di allegati nei messaggi di posta elettronica esempio in C#
+linktitle: Inclusione di allegati nei messaggi di posta elettronica esempio in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come includere allegati nella posta elettronica utilizzando Aspose.Email per .NET. Guida dettagliata con esempio di codice C#.
 type: docs
