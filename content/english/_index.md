@@ -1,5 +1,6 @@
 ---
 title: Aspose.Email Tutorials for Email Management & Manipulation
+linktitle: Aspose.Email Tutorials
 additionalTitle: Aspose API References
 description: Unlock efficient email management with Aspose.Email tutorials. From composition to security, master diverse aspects for enhanced workflows and user experiences.
 type: docs
