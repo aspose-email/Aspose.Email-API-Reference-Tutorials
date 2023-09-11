@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 18
-url: /java/securing-email-communications-with-aspose.email-for-java/securely-storing-and-retrieving-email-credentials/
+url: /java/securing-email-communications/securely-storing-and-retrieving-email-credentials/
 ---

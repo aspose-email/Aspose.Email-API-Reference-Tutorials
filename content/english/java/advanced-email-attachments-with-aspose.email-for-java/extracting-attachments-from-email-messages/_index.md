@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to extract email attachments effortlessly using Aspose.Email for Java. Step-by-step guide for Java developers.
 type: docs
 weight: 13
-url: /java/advanced-email-attachments-with-aspose.email-for-java/extracting-attachments-from-email-messages/
+url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
 
 ## Introduction to Aspose.Email for Java

@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 13
-url: /java/advanced-email-attachments-with-aspose.email-for-java/
+url: /java/advanced-email-attachments/
 ---
 
 ## Advanced Email Attachments with Aspose.Email for Java Tutorials

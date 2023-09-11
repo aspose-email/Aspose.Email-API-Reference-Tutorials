@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 11
-url: /java/receiving-emails-with-aspose.email-for-java/fetching-emails-from-pop3-servers/
+url: /java/receiving-emails/fetching-emails-from-pop3-servers/
 ---

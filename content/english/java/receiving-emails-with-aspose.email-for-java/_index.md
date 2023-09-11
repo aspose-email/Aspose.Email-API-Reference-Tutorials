@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 11
-url: /java/receiving-emails-with-aspose.email-for-java/
+url: /java/receiving-emails/
 ---
 
 ## Receiving Emails with Aspose.Email for Java Tutorials

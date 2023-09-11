@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Efficiently manage large email attachments with Aspose.Email for Java. Step-by-step guide and source code for streamlined attachment handling in Java applications.
 type: docs
 weight: 11
-url: /java/advanced-email-attachments-with-aspose.email-for-java/managing-large-attachments/
+url: /java/advanced-email-attachments/managing-large-attachments/
 ---
 
 ## Introduction to Managing Large Attachments in Aspose.Email for Java

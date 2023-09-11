@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 15
-url: /java/exploring-email-security-with-aspose.email-for-java/two-factor-authentication-for-email/
+url: /java/exploring-email-security/two-factor-authentication-for-email/
 ---

@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Master email attachment handling with Aspose.Email for Java. Learn to add, extract, and manage various file types in email attachments. Step-by-step guide and source code.
 type: docs
 weight: 18
-url: /java/advanced-email-attachments-with-aspose.email-for-java/handling-file-types-and-formats-in-email-attachments/
+url: /java/advanced-email-attachments/handling-file-types-and-formats-in-email-attachments/
 ---
 
 ## Introduction to Handling File Types and Formats in Email Attachments

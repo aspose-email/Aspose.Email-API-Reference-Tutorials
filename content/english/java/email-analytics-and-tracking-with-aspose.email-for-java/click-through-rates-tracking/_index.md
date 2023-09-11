@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 11
-url: /java/email-analytics-and-tracking-with-aspose.email-for-java/click-through-rates-tracking/
+url: /java/email-analytics-and-tracking/click-through-rates-tracking/
 ---

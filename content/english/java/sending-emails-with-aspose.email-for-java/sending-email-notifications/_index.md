@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to send email notifications effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
 type: docs
 weight: 17
-url: /java/sending-emails-with-aspose.email-for-java/sending-email-notifications/
+url: /java/sending-emails/sending-email-notifications/
 ---
 
 ## Introduction

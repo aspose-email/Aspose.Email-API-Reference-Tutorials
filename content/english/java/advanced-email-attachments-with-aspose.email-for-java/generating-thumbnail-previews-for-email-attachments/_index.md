@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to enhance email communication by generating thumbnail previews for attachments using Aspose.Email for Java.
 type: docs
 weight: 15
-url: /java/advanced-email-attachments-with-aspose.email-for-java/generating-thumbnail-previews-for-email-attachments/
+url: /java/advanced-email-attachments/generating-thumbnail-previews-for-email-attachments/
 ---
 
 ## Introduction to Generating Thumbnail Previews for Email Attachments

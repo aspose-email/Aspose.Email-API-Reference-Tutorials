@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 13
-url: /java/receiving-emails-with-aspose.email-for-java/email-synchronization-and-download/
+url: /java/receiving-emails/email-synchronization-and-download/
 ---

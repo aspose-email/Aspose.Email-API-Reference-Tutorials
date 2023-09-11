@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Optimize your email communication with Aspose.Email for Java. Learn to work with inline attachments in this comprehensive guide.
 type: docs
 weight: 10
-url: /java/advanced-email-attachments-with-aspose.email-for-java/working-with-inline-attachments/
+url: /java/advanced-email-attachments/working-with-inline-attachments/
 ---
 
 ## Introduction to Working with Inline Attachments in Aspose.Email

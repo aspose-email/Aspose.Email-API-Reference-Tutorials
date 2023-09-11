@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Master the art of sending emails using Aspose.Email for Java with these comprehensive tutorials. Learn to craft and send emails effortlessly.
 type: docs
 weight: 10
-url: /java/sending-emails-with-aspose.email-for-java/
+url: /java/sending-emails/
 ---
 
 

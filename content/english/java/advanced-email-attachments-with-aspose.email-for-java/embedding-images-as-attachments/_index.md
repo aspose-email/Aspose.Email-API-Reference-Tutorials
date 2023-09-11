@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to embed images as attachments in Aspose.Email for Java. Elevate your email communication with visually engaging content.
 type: docs
 weight: 14
-url: /java/advanced-email-attachments-with-aspose.email-for-java/embedding-images-as-attachments/
+url: /java/advanced-email-attachments/embedding-images-as-attachments/
 ---
 
 ## Embedding Images as Attachments in Aspose.Email

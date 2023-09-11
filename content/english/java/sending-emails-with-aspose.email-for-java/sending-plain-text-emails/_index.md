@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to send plain text emails efficiently with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
 type: docs
 weight: 10
-url: /java/sending-emails-with-aspose.email-for-java/sending-plain-text-emails/
+url: /java/sending-emails/sending-plain-text-emails/
 ---
 
 ## Introduction

@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 14
-url: /java/securing-email-communications-with-aspose.email-for-java/secure-password-storage-for-email-accounts/
+url: /java/securing-email-communications/secure-password-storage-for-email-accounts/
 ---

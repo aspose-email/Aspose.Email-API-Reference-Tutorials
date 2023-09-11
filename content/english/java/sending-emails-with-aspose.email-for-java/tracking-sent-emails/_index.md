@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to track sent emails effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for email tracking.
 type: docs
 weight: 18
-url: /java/sending-emails-with-aspose.email-for-java/tracking-sent-emails/
+url: /java/sending-emails/tracking-sent-emails/
 ---
 
 ## Introduction

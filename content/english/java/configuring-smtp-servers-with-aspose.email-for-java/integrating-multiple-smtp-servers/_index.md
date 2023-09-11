@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 18
-url: /java/configuring-smtp-servers-with-aspose.email-for-java/integrating-multiple-smtp-servers/
+url: /java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---

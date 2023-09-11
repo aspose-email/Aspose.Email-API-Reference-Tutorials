@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to create dynamic email templates with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for effective email communication.
 type: docs
 weight: 13
-url: /java/sending-emails-with-aspose.email-for-java/implementing-email-templates/
+url: /java/sending-emails/implementing-email-templates/
 ---
 
 ## Introduction

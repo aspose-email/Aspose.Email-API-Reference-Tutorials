@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to enhance your email messages by adding custom headers using Aspose.Email for Java. Improve email metadata and organization.
 type: docs
 weight: 15
-url: /java/sending-emails-with-aspose.email-for-java/adding-custom-headers-in-aspose-email/
+url: /java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
 
 ## Introduction

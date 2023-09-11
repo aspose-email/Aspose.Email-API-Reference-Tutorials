@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to manage document attachments in Java emails using Aspose.Email for Java. Create, send, and extract document attachments with ease.
 type: docs
 weight: 16
-url: /java/advanced-email-attachments-with-aspose.email-for-java/using-aspose-email-for-document-attachments/
+url: /java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
 
 ## Introduction to Using Aspose.Email for Document Attachments in Java

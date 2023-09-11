@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 16
-url: /java/configuring-smtp-servers-with-aspose.email-for-java/customizing-smtp-headers-and-footers/
+url: /java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---

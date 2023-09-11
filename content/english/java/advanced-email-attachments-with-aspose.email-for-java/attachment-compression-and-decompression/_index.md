@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to efficiently compress and decompress email attachments using Aspose.Email for Java. Enhance user experience with optimized storage and faster processing.
 type: docs
 weight: 17
-url: /java/advanced-email-attachments-with-aspose.email-for-java/attachment-compression-and-decompression/
+url: /java/advanced-email-attachments/attachment-compression-and-decompression/
 ---
 
 ## Introduction

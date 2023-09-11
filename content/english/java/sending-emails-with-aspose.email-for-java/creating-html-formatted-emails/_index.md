@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to create stunning HTML emails with Aspose.Email for Java. Step-by-step guide with code examples for effective email communication.
 type: docs
 weight: 11
-url: /java/sending-emails-with-aspose.email-for-java/creating-html-formatted-emails/
+url: /java/sending-emails/creating-html-formatted-emails/
 ---
 
 ## Introduction

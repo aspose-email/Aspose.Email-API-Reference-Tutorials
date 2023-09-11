@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to attach files to email messages using Aspose.Email for Java. Enhance your emails with ease using this step-by-step guide.
 type: docs
 weight: 12
-url: /java/sending-emails-with-aspose.email-for-java/attaching-files-to-emails-using-aspose-email/
+url: /java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
 ## Introduction
 

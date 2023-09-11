@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 12
-url: /java/configuring-smtp-servers-with-aspose.email-for-java/smtp-authentication-methods/
+url: /java/configuring-smtp-servers/smtp-authentication-methods/
 ---

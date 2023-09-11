@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 10
-url: /java/exploring-email-security-with-aspose.email-for-java/secure-email-authentication/
+url: /java/exploring-email-security/secure-email-authentication/
 ---

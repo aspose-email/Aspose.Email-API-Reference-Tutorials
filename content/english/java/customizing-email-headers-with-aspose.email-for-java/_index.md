@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 16
-url: /java/customizing-email-headers-with-aspose.email-for-java/
+url: /java/customizing-email-headers/
 ---
 
 ## Customizing Email Headers with Aspose.Email for Java Tutorials

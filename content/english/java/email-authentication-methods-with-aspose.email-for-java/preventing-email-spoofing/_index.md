@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 15
-url: /java/email-authentication-methods-with-aspose.email-for-java/preventing-email-spoofing/
+url: /java/email-authentication-methods/preventing-email-spoofing/
 ---

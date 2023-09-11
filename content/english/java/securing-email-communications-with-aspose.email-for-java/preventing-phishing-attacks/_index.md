@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 17
-url: /java/securing-email-communications-with-aspose.email-for-java/preventing-phishing-attacks/
+url: /java/securing-email-communications/preventing-phishing-attacks/
 ---

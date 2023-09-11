@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 18
-url: /java/email-authentication-methods-with-aspose.email-for-java/handling-spf-failures-in-java/
+url: /java/email-authentication-methods/handling-spf-failures-in-java/
 ---

@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 13
-url: /java/customizing-email-headers-with-aspose.email-for-java/modifying-reply-to-and-return-path-headers/
+url: /java/customizing-email-headers/modifying-reply-to-and-return-path-headers/
 ---

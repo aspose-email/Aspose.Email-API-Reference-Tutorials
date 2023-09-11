@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 15
-url: /java/email-analytics-and-tracking-with-aspose.email-for-java/creating-custom-email-tracking-reports/
+url: /java/email-analytics-and-tracking/creating-custom-email-tracking-reports/
 ---

@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 10
-url: /java/configuring-smtp-servers-with-aspose.email-for-java/choosing-the-right-smtp-server/
+url: /java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---

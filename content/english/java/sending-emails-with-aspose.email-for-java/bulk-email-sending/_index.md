@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to send bulk emails efficiently using Aspose.Email for Java. A step-by-step guide with code examples for email marketing and communication.
 type: docs
 weight: 14
-url: /java/sending-emails-with-aspose.email-for-java/bulk-email-sending/
+url: /java/sending-emails/bulk-email-sending/
 ---
 
 ## Introduction

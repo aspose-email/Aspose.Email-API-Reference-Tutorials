@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn to schedule email delivery with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for efficient email management.
 type: docs
 weight: 16
-url: /java/sending-emails-with-aspose.email-for-java/scheduling-email-delivery/
+url: /java/sending-emails/scheduling-email-delivery/
 ---
 
 ## Introduction

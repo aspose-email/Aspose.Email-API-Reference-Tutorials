@@ -5,7 +5,7 @@ second_title: Aspose.Email Java Email Management API
 description: Learn how to create secure email attachments with password protection using Aspose.Email for Java.
 type: docs
 weight: 12
-url: /java/advanced-email-attachments-with-aspose.email-for-java/creating-password-protected-attachments/
+url: /java/advanced-email-attachments/creating-password-protected-attachments/
 ---
 
 ## Introduction to Creating Password-Protected Attachments

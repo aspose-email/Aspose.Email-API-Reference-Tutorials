@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 14
-url: /java/receiving-emails-with-aspose.email-for-java/parsing-email-headers-and-metadata/
+url: /java/receiving-emails/parsing-email-headers-and-metadata/
 ---

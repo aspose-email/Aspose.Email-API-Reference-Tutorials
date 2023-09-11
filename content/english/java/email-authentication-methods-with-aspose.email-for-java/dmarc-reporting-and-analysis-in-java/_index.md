@@ -5,5 +5,5 @@ second_title: Aspose.Email Java Email Management API
 description: 
 type: docs
 weight: 19
-url: /java/email-authentication-methods-with-aspose.email-for-java/dmarc-reporting-and-analysis-in-java/
+url: /java/email-authentication-methods/dmarc-reporting-and-analysis-in-java/
 ---
