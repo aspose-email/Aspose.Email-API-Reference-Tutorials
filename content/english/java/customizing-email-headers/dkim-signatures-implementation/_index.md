@@ -50,13 +50,17 @@ To generate a DKIM signature, you'll need to load your private DKIM key and appl
 
 ```java
 // Load the DKIM key
-DkimSignatureInfo dkimSignatureInfo = new DkimSignatureInfo("your_domain.com", "selector", "path_to_private_key.pem");
 
+String privateKeyFile = "key2.pem";
+
+RSACryptoServiceProvider rsa = PemReader.getPrivateKey(privateKeyFile);
+DKIMSignatureInfo dkimSignatureInfo = new DKIMSignatureInfo("test", "some_email.com");
+ 
 // Create an instance of the MailMessage class
 MailMessage message = new MailMessage("sender@your_domain.com", "recipient@recipient_domain.com", "Subject", "Body");
 
 // Sign the message with DKIM
-message.addDkimSignature(dkimSignatureInfo);
+message.dKIMSign(rsa, dkimSignatureInfo);
 
 // Send the message
 SmtpClient client = new SmtpClient("your_smtp_server");
@@ -71,7 +75,7 @@ Once the DKIM signature is applied, you can send the email using your SMTP serve
 
 - We load the DKIM key using the `DkimSignatureInfo` class.
 - Create an instance of the `MailMessage` class with the sender, recipient, subject, and body.
-- Add the DKIM signature to the message using `addDkimSignature`.
+- Add the DKIM signature to the message using `dKIMSign`.
 - Send the email using an SMTP client.
 
 ### Step 4: Testing DKIM Signatures

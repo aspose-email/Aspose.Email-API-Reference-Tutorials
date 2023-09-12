@@ -99,25 +99,26 @@ In this guide, you've learned how to create visually appealing HTML-formatted em
 ## FAQs
 
 ### Why should I use HTML-formatted emails?
-   - HTML-formatted emails allow you to create visually appealing and interactive email content. They are commonly used for marketing campaigns, newsletters, and personalized communication because they can include images, links, and custom styling.
+HTML-formatted emails allow you to create visually appealing and interactive email content. They are commonly used for marketing campaigns, newsletters, and personalized communication because they can include images, links, and custom styling.
 
 ### How can I set up Aspose.Email for Java in my project?
-   - To set up Aspose.Email for Java, download the library from the official website, and add the JAR files to your project's classpath. You'll also need a valid license to use the library in a production environment.
+To set up Aspose.Email for Java, download the library from the official website, and add the JAR files to your project's classpath. You'll also need a valid license to use the library in a production environment.
 
 ### Can I customize the HTML content of the email?
-   - Yes, you can fully customize the HTML content of your email. You can include headings, paragraphs, images, links, and any other HTML elements to create rich and engaging email messages.
+Yes, you can fully customize the HTML content of your email. You can include headings, paragraphs, images, links, and any other HTML elements to create rich and engaging email messages.
 
 ### What is the recommended way to send HTML-formatted emails using Aspose.Email for Java?
-   - Aspose.Email for Java provides email sending capabilities through SMTP. You can configure the SMTP server details and recipient addresses in your Java code to send HTML-formatted emails to recipients.
+Aspose.Email for Java provides email sending capabilities through SMTP. You can configure the SMTP server details and recipient addresses in your Java code to send HTML-formatted emails to recipients.
 
 ### Can I add attachments to HTML-formatted emails?
-   - Yes, you can add attachments to HTML-formatted emails using Aspose.Email for Java. The library provides features to attach files to email messages, enhancing the content of your emails.
+Yes, you can add attachments to HTML-formatted emails using Aspose.Email for Java. The library provides features to attach files to email messages, enhancing the content of your emails.
 
 ### Is Aspose.Email for Java suitable for both simple and complex HTML emails?
-   - Yes, Aspose.Email for Java is suitable for creating both simple and complex HTML emails. You have the flexibility to create emails with basic HTML content or design intricate layouts with CSS and JavaScript.
+Yes, Aspose.Email for Java is suitable for creating both simple and complex HTML emails. You have the flexibility to create emails with basic HTML content or design intricate layouts with CSS and JavaScript.
 
 ### How can I handle email delivery status and tracking when sending HTML emails?
-   - Aspose.Email for Java offers features for handling email delivery status notifications (DSNs) and tracking email delivery. You can implement logic to track email opens, bounces, and other delivery-related events.
-
+Aspose.Email for Java offers features for handling email delivery status notifications (DSNs) and tracking email delivery. You can implement logic to track email opens, bounces, and other delivery-related events.
 ### Where can I find additional resources and documentation for Aspose.Email for Java?
-    - You can find comprehensive documentation, tutorials, and examples on the official Aspose.Email for Java API documentation page: [Aspose.Email for Java API Documentation](https://reference.aspose.com/email/java/)
+You can find comprehensive documentation, tutorials, and examples on the official Aspose.Email for Java API documentation page: [Aspose.Email for Java API Documentation](https://reference.aspose.com/email/java/)
+
+

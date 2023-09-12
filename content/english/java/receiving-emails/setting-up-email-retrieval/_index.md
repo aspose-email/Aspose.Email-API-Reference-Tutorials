@@ -92,19 +92,19 @@ If you encounter issues, consult the [API documentation](https://releases.aspose
 Here are some common questions about setting up email retrieval with Aspose.Email for Java:
 
 ### Q1: How do I set up a secure connection to the email server?
-	A1: You can use SSL or TLS for secure connections. Refer to the documentation for code examples.
+A1: You can use SSL or TLS for secure connections. Refer to the documentation for code examples.
 
 ### Q2: Can I retrieve emails from multiple folders?
-	A2: Yes, you can select different folders and retrieve emails from them.
+A2: Yes, you can select different folders and retrieve emails from them.
 
 ### Q3: How can I handle email attachments efficiently?
-	A3: Use the provided Attachment class to manage attachments easily.
+A3: Use the provided Attachment class to manage attachments easily.
 
 ### Q4: Are there any limitations on the number of emails I can retrieve?
-	A4: The limitations depend on your email server and account settings.
+A4: The limitations depend on your email server and account settings.
 
 ### Q5: Can I integrate Aspose.Email with other Java libraries?
-	A5: Yes, Aspose.Email can be integrated with other Java libraries for enhanced functionality.
+A5: Yes, Aspose.Email can be integrated with other Java libraries for enhanced functionality.
 
 ## Conclusion
 Setting up email retrieval with Aspose.Email for Java is a valuable skill for any Java developer. With the step-by-step guide and code examples provided in this article, you can quickly integrate email functionality into your applications. If you have further questions or need assistance, don't hesitate to consult the Aspose.Email documentation or reach out to the community for support. Happy coding!

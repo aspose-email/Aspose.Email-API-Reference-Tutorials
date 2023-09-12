@@ -46,5 +46,4 @@ These are links to some useful resources:
 - [Securing Email Communications with Aspose.Email for Java](./java/securing-email-communications/)
 - [Email Analytics and Tracking with Aspose.Email for Java](./java/email-analytics-and-tracking/)
 - [Customizing Email Headers with Aspose.Email for Java](./java/customizing-email-headers/)
-- [Email Authentication Methods with Aspose.Email for Java](./java/email-authentication-methods/)
 - [Exploring Email Security with Aspose.Email for Java](./java/exploring-email-security/)

@@ -29,9 +29,3 @@ In conclusion, email security is a top priority for businesses and individuals a
 Learn how to achieve secure email authentication with Aspose.Email for Java. Step-by-step guide, source code, and FAQs included.
 ### [Email Encryption and Decryption with Aspose.Email](./email-encryption-and-decryption/)
 Learn how to secure your emails with Email Encryption and Decryption using Aspose.Email for Java. Step-by-step guide, source code, and FAQs included.
-### [Detecting and Preventing Email Spoofing with Aspose.Email](./detecting-and-preventing-email-spoofing/)
-Learn how to detect and prevent email spoofing with Aspose.Email for Java. Protect your emails from fraudulent manipulation.
-### [Digital Signatures for Email Authentication with Aspose.Email](./digital-signatures-for-email-authentication/)
-Learn how to enhance email security with Digital Signatures using Aspose.Email for Java. Step-by-step guide and FAQs included.
-### [SPF and DKIM Configuration for Email Security with Aspose.Email](./spf-and-dkim-configuration-for-email-security/)
-Unlock the power of Aspose.Email for Java with step-by-step tutorials. Enhance your Java email applications with expert guidance and source code examples.

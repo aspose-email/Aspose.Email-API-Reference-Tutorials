@@ -159,6 +159,3 @@ Yes, Aspose.Email for Java is compatible with a wide range of Java versions, mak
 
 ### 4. Can I schedule email fetching tasks with Aspose.Email for Java?
 Yes, you can schedule email fetching tasks using Java's scheduling libraries or frameworks like Quartz Scheduler.
-
-### 5. Are there any limitations on the number of emails I can fetch at once?
-The

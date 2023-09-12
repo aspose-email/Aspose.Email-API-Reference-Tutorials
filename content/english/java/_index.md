@@ -38,7 +38,5 @@ Learn how to enhance email security with Aspose.Email for Java. Our tutorials co
 Unlock powerful insights into your email communication with Aspose.Email for Java's analytics and tracking tutorials.
 ### [Customizing Email Headers with Aspose.Email for Java](./customizing-email-headers/)
 Learn how to customize email headers effortlessly with Aspose.Email for Java. Dive into tutorials and harness the power of email header customization.
-### [Email Authentication Methods with Aspose.Email for Java](./email-authentication-methods/)
-Learn about email authentication methods using Aspose.Email for Java. Explore tutorials on SPF, DKIM, and DMARC to secure your email communications.
 ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
 Discover how to enhance email security with Aspose.Email for Java. Explore step-by-step tutorials and best practices.
