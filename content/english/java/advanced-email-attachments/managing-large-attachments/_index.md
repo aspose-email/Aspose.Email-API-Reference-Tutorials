@@ -41,7 +41,7 @@ public class CreateEmailWithLargeAttachment {
             message.setBody("This is a test email with a large attachment.");
 
             // Attach a large file to the email
-            message.getAttachments().addFileAttachment("large_attachment.pdf", "path/to/large_attachment.pdf");
+            message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
             // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
@@ -85,7 +85,7 @@ public class SendEmailWithLargeAttachment {
             message.setBody("This is a test email with a large attachment.");
 
             // Attach a large file to the email
-            message.getAttachments().addFileAttachment("large_attachment.pdf", "path/to/large_attachment.pdf");
+             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
             // Send the email
             client.send(message);

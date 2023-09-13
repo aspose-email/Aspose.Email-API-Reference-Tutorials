@@ -77,7 +77,7 @@ public class ExtractAttachments {
 
         // Iterate through attachments and save document attachments
         for (Attachment attachment : message.getAttachments()) {
-            if (attachment.getContentType().toLowerCase().contains("pdf")) {
+            if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
             }
         }

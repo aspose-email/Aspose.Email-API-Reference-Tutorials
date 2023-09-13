@@ -55,6 +55,7 @@ linkedImage.setContentId("image1");
 // Create an HTML body with the embedded image
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
+message.getLinkedResources().addItem(linkedImage);
 ```
 
 ## Sending the Email
