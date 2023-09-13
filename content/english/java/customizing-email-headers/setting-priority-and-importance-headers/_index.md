@@ -55,17 +55,6 @@ message.setPriority(MailPriority.High);
 
 In the code above, we've created an email message, set the sender and recipient addresses, specified the subject and body of the email, and finally, set the email's priority to "High."
 
-## Step 4: Set Importance Header
-
-To emphasize the importance of the email, you can set the importance header. Here's how you can do it:
-
-```java
-// Set the email importance
-message.setImportance(MailMessageImportance.High);
-```
-
-By setting the importance to "High," you indicate to the recipient that the email requires immediate attention.
-
 ## Step 5: Send the Email
 
 Once you've configured the email message with the desired priority and importance, it's time to send it. Aspose.Email simplifies the email sending process as well:

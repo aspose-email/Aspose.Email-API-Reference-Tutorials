@@ -25,7 +25,5 @@ To empower developers in the quest for robust email security, Aspose.Email for J
 In conclusion, email security is a top priority for businesses and individuals alike, and Aspose.Email for Java proves to be a valuable ally in this endeavor. With its rich features and extensive documentation, developers can explore and implement various security measures to protect email communication. By following the provided tutorials and best practices, they can fortify their email systems and maintain the confidentiality and integrity of their messages.
 
 ## Exploring Email Security with Aspose.Email for Java Tutorials
-### [Secure Email Authentication with Aspose.Email](./secure-email-authentication/)
-Learn how to achieve secure email authentication with Aspose.Email for Java. Step-by-step guide, source code, and FAQs included.
 ### [Email Encryption and Decryption with Aspose.Email](./email-encryption-and-decryption/)
 Learn how to secure your emails with Email Encryption and Decryption using Aspose.Email for Java. Step-by-step guide, source code, and FAQs included.
