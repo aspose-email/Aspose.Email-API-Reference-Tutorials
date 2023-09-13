@@ -68,6 +68,12 @@ Now, let's use Aspose.Email to create a draft email with the appointment details
 using Aspose.Email;
 using Aspose.Email.Mime;
 
+//attendees for the event
+MailAddressCollection attendees = new MailAddressCollection();
+attendees.Add(new MailAddress("person1@domain.com"));
+attendees.Add(new MailAddress("person2@domain.com"));
+attendees.Add(new MailAddress("person3@domain.com"));
+
 // Create a new draft message
 MailMessage draftMessage = new MailMessage();
 draftMessage.Subject = subject;
@@ -79,7 +85,7 @@ foreach (string recipient in recipients)
 }
 
 // Define the appointment request
-Appointment appointment = new Appointment("Meeting Room 1", appointmentDate, appointmentDuration);
+Appointment appointment = new Appointment("Meeting Room 1", appointmentDate, appointmentDate + appointmentDuration, new MailAddress("your-email@example.com"), attendees);
 draftMessage.AddAlternateView(appointment.RequestApointment());
 ```
 

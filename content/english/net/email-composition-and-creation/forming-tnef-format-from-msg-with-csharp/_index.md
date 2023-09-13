@@ -41,7 +41,9 @@ Now comes the exciting part – converting MSG files to TNEF format. Aspose.Emai
 ```csharp
 // Convert MSG to TNEF
 var tnefStream = new MemoryStream();
-TnefWriter.WriteTnefMessage(tnefStream, msg);
+MailConversionOptions options = new MailConversionOptions();
+options.ConvertAsTnef = true;
+MailMessage mail = msg.ToMailMessage(options);
 ```
 
 ##  Handling Conversion Errors and Exceptions
@@ -51,9 +53,14 @@ During the conversion process, it's essential to handle errors and exceptions gr
 ```csharp
 try
 {
-    // Convert MSG to TNEF
-    var tnefStream = new MemoryStream();
-    TnefWriter.WriteTnefMessage(tnefStream, msg);
+	// Load MSG file
+	var msg = MapiMessage.FromFile("sample.msg");
+	// Convert MSG to TNEF
+	var tnefStream = new MemoryStream();
+	MailConversionOptions options = new MailConversionOptions();
+	options.ConvertAsTnef = true;
+	MailMessage mail = msg.ToMailMessage(options);
+
 }
 catch (Exception ex)
 {
