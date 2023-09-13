@@ -23,17 +23,9 @@ Aspose.Email for Java offers advanced features for handling emails, including su
 Start mastering the art of receiving emails in Java with Aspose.Email for Java Tutorials today and take control of your email communication like never before.
 
 ## Receiving Emails with Aspose.Email for Java Tutorials
-### [Setting Up Email Retrieval with Aspose.Email](./setting-up-email-retrieval/)
-Learn how to set up email retrieval with Aspose.Email for Java. Follow our step-by-step guide, complete with source code and FAQs for seamless email integration.
 ### [Fetching Emails from POP3 Servers with Aspose.Email](./fetching-emails-from-pop3-servers/)
  Learn how to fetch emails from POP3 servers using Aspose.Email for Java. Step-by-step guide with source code and FAQs included.
 ### [Working with IMAP Protocol in Aspose.Email](./working-with-imap-protocol/)
 Learn how to work with the IMAP protocol in Aspose.Email for Java to efficiently manage your email communication.
-### [Email Synchronization and Download with Aspose.Email](./email-synchronization-and-download/)
-Learn how to achieve seamless email synchronization and download using Aspose.Email for Java. Follow our step-by-step guide with source code and FAQs. 
 ### [Handling Email Attachments in Aspose.Email](./handling-email-attachments/)
 Learn to handle email attachments in Aspose.Email for Java. Step-by-step guide with source code and FAQs for efficient email attachment management.
-### [Filtering and Sorting Received Emails in Aspose.Email](./filtering-and-sorting-received-emails/)
-Learn how to filter and sort received emails in Aspose.Email for Java. Step-by-step guide with source code and FAQs included.
-### [Email Notifications for Incoming Messages with Aspose.Email](./email-notifications-for-incoming-messages/)
- How to implement email notifications for incoming messages with Aspose.Email for Java. Step-by-step guide, source code, and FAQs included. 

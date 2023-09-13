@@ -36,9 +36,5 @@ Learn to create dynamic email templates with Aspose.Email for Java. A comprehens
 Learn how to send bulk emails efficiently using Aspose.Email for Java. A step-by-step guide with code examples for email marketing and communication.
 ### [Adding Custom Headers in Aspose.Email](./adding-custom-headers-in-aspose-email/)
 Learn how to enhance your email messages by adding custom headers using Aspose.Email for Java. Improve email metadata and organization.
-### [Scheduling Email Delivery with Aspose.Email](./scheduling-email-delivery/)
-Learn to schedule email delivery with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for efficient email management.
 ### [Sending Email Notifications with Aspose.Email](./sending-email-notifications/)
 Learn to send email notifications effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
-### [Tracking Sent Emails with Aspose.Email](./tracking-sent-emails/)
-Learn how to track sent emails effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for email tracking.

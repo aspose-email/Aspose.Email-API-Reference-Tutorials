@@ -74,7 +74,7 @@ public class PlainTextEmail {
         message.setSubject("Plain Text Email Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
-        message.setPlainText("This is a plain text email.");
+        message.setBody("This is a plain text email.");
 
         // Create an SMTP client with your SMTP server details
         SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
