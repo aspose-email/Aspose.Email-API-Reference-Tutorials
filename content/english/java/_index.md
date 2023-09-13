@@ -34,8 +34,6 @@ Learn how to configure SMTP servers effortlessly with Aspose.Email for Java. Ste
 Master advanced email attachment techniques with Aspose.Email for Java. Explore tutorials for handling attachments efficiently.
 ### [Securing Email Communications with Aspose.Email for Java](./securing-email-communications/)
 Learn how to enhance email security with Aspose.Email for Java. Our tutorials cover encryption, digital signatures, and more for secure email communication.
-### [Email Analytics and Tracking with Aspose.Email for Java](./email-analytics-and-tracking/)
-Unlock powerful insights into your email communication with Aspose.Email for Java's analytics and tracking tutorials.
 ### [Customizing Email Headers with Aspose.Email for Java](./customizing-email-headers/)
 Learn how to customize email headers effortlessly with Aspose.Email for Java. Dive into tutorials and harness the power of email header customization.
 ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
