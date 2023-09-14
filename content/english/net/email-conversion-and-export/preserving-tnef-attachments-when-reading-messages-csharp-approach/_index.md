@@ -30,8 +30,10 @@ To work with email messages, you first need to load and parse the email. Aspose.
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Load the email message
-MailMessage msg = MailMessage.Load("path/to/email.msg");
+// Load the email with TNEF attachment
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Identifying and Extracting TNEF Attachments
@@ -40,12 +42,15 @@ Once you've loaded the email message, the next step is to identify and extract T
 
 ```csharp
 // Check if the message has TNEF attachments
-if (msg.Attachments.HasTnefAttachments)
+foreach (var attachment in message.Attachments)
 {
-    // Extract TNEF attachments
-    foreach (TnefAttachment attachment in msg.Attachments.TnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Process the TNEF attachment
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
     }
 }
 ```
@@ -55,25 +60,9 @@ if (msg.Attachments.HasTnefAttachments)
 Preserving TNEF attachments involves ensuring that the extracted attachments retain their original formatting and content. Aspose.Email provides methods and properties to access various elements within a TNEF attachment, such as text, embedded images, and calendar data.
 
 ```csharp
-foreach (TnefAttachment attachment in msg.Attachments.TnefAttachments)
-{
-    // Extract content from TNEF attachment
-    string formattedText = attachment.GetFormattedText();
-    byte[] embeddedImageBytes = attachment.GetEmbeddedImageBytes();
-    // Process the extracted content as needed
-}
-```
-
-## Saving Extracted Attachments
-
-Once you've processed the TNEF attachments, you can save them to your desired location. Aspose.Email offers simple ways to save attachments while preserving their original file formats:
-
-```csharp
-foreach (TnefAttachment attachment in msg.Attachments.TnefAttachments)
-{
-    // Save the attachment
-    attachment.Save("path/to/save/location");
-}
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Complete C# Code Example
@@ -90,21 +79,27 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            // Load the email message
-            MailMessage msg = MailMessage.Load("path/to/email.msg");
+            // Load the email with TNEF attachment
+			MsgLoadOptions options = new MsgLoadOptions();
+			options.PreserveTnefAttachments = true;
+			var message = MailMessage.Load("path/to/email.eml", options);
 
-            // Check if the message has TNEF attachments
-            if (msg.Attachments.HasTnefAttachments)
-            {
-                foreach (TnefAttachment attachment in msg.Attachments.TnefAttachments)
-                {
-                    // Extract and process TNEF attachment content
-                    string formattedText = attachment.GetFormattedText();
-                    byte[] embeddedImageBytes = attachment.GetEmbeddedImageBytes();
-                    // Save the attachment
-                    attachment.Save("path/to/save/location");
-                }
-            }
+			 // Check if the message has TNEF attachments
+			foreach (var attachment in message.Attachments)
+			{
+				if (attachment.ContentType.MediaType == "application/ms-tnef")
+				{
+					// Extract TNEF attachment
+					var tnefAttachment = attachment;
+
+					// Access TNEF properties and modify if necessary
+					// tnefAttachment.Properties...
+				}
+			}
+			// Preserving TNEF Attachments	
+			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+			message.Save("path/to/modified_email.eml", emlSaveOptions);
         }
     }
 }

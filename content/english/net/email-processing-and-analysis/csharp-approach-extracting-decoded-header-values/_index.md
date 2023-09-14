@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Load the email message
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Extract and decode the Subject header
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Print the decoded Subject header
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -57,7 +53,7 @@ In the code snippet above, we perform the following steps:
 1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
 2. We create a `Main` method as the entry point of our application.
 3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `HeaderDecoder.DecodeHeader` method to decode the Subject header.
+4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
 5. We print the decoded Subject header to the console.
 
 ## Step 5: Run the Application
@@ -68,7 +64,7 @@ Compile and run your application. Make sure to replace `"path/to/your/email.eml"
 
 ### How can I decode other email headers using Aspose.Email for .NET?
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `HeaderDecoder.DecodeHeader` method. Just provide the header value as a parameter to the method.
+You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
 
 ### Where can I find more information about Aspose.Email for .NET?
 

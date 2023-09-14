@@ -32,53 +32,14 @@ Use the following code to load an MHTML file into your application:
 ```csharp
 using Aspose.Email.Mime;
 // Load MHTML file
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. Accessing HTML Content and Resources:
-Extract HTML content and associated resources using the following code:
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   // Access HTML content
-	   var htmlContent = resource.GetContent();
-	   // Modify HTML content as needed
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   // Access image resources
-	   var imageData = resource.GetContent();
-	   // Modify or embed images
-   }
-   // Handle other resource types
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## Customizing Conversion Options
 
 Customize your MHTML conversion process by specifying various output formats and adjusting settings.
 
-1. Choosing Output Formats:
-Decide on the output format for your conversion, such as PDF, DOCX, or others:
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; // Convert to PDF
-// Set other conversion options
-```
-
-2. Specifying Page Margins and Orientation:
-Adjust page margins and orientation for the output document:
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. Controlling Image Quality:
+1. Controlling Image Quality:
 Control the quality of embedded images:
 
 ```csharp

@@ -35,7 +35,6 @@ Learn how to identify TNEF messages using C# and Aspose.Email for .NET. A step-b
 Learn to detect & process TNEF messages in C# using Aspose.Email for .NET. Enhance email handling with rich text & attachments.
 ### [Secure Message Handling - Encryption and Decryption in C#](./secure-message-handling-encryption-and-decryption-in-csharp/)
 Learn how to implement secure message handling with encryption and decryption in C# using Aspose.Email for .NET. Protect sensitive data effectively.
-### [C# Approach - Extracting Decoded Header Values](./csharp-approach-extracting-decoded-header-values/)
 ### [Retrieving Delivery Status Notifications with C#](./retrieving-delivery-status-notifications-with-csharp/)
 Learn how to retrieve email Delivery Status Notifications using C# and Aspose.Email for .NET.
 ### [C# Technique - Converting HTML Body to Plain Text](./csharp-technique-converting-html-body-to-plain-text/)

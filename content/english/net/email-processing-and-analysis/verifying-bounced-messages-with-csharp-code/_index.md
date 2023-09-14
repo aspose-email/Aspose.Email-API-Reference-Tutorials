@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Create an instance of the ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Connect to the server
-    client.Connect(host, port, true);
-
-    // Log in
-    client.Login(username, password);
-    
+   
     // Your code for retrieving and analyzing bounced messages will go here
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Search for bounced messages
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Your code to analyze bounce notifications will go here
 }

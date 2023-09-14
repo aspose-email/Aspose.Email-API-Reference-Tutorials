@@ -38,7 +38,7 @@ Now that we have loaded the email message, we need to determine whether it is a 
 
 ```csharp
 // Check if the message is a TNEF message
-if (message.IsTnef)
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Extracting Data from TNEF Messages
-
-If the message is indeed a TNEF message, you can extract various data from it. For instance, you can extract the plain text content as follows:
-
-```csharp
-if (message.IsTnef)
-{
-    // Extract plain text content from TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Handling Attachments within TNEF Messages
 
 TNEF messages often contain attachments. To extract and save these attachments, you can use the following code:
 
 ```csharp
-if (message.IsTnef)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
     }
 }
 ```
