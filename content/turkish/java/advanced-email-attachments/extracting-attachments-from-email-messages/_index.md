@@ -1,38 +1,38 @@
 ---
-title: Aspose.Email belgeleri
-linktitle: Gömülü Nesneleri Çıkarma - C# Eğitimi
-second_title: Gömülü Nesneleri Çıkarma - C# Eğitimi
-description: Aspose.Email .NET E-Posta İşleme API'si
+title: Aspose.Email'de E-posta Mesajlarından Ekleri Çıkarma
+linktitle: Aspose.Email'de E-posta Mesajlarından Ekleri Çıkarma
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java'yı kullanarak e-posta eklerini zahmetsizce nasıl çıkaracağınızı öğrenin. Java geliştiricileri için adım adım kılavuz.
 type: docs
 weight: 13
 url: /tr/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
 
-##  Aspose.Email for .NET'i kullanarak e-posta mesajlarından gömülü nesneleri çıkarmayı öğrenin. Kod örnekleri içeren adım adım kılavuz.
+## Aspose.Email for Java'ya giriş
 
-Gömülü Nesneleri Çıkarmaya Giriş - C# Eğitimi
+Aspose.Email for Java, geliştiricilerin e-posta mesajları ve ekleriyle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir Java kütüphanesidir. E-posta mesajlarından ekleri çıkarma yeteneği de dahil olmak üzere, e-posta işleme için çok çeşitli özellikler sağlar. Bu adım adım kılavuzda, e-posta mesajlarındaki ekleri kolaylıkla çıkarmak için Aspose.Email for Java'nın nasıl kullanılacağını keşfedeceğiz.
 
-## Bu eğitimde, Aspose.Email for .NET kütüphanesini kullanarak gömülü nesnelerin e-posta mesajlarından nasıl çıkarılacağını inceleyeceğiz. Aspose.Email, geliştiricilerin .NET uygulamaları dahilinde e-posta mesajları, ekler ve e-posta iletişiminin diğer çeşitli yönleriyle çalışmasına olanak tanıyan güçlü ve çok yönlü bir kütüphanedir.
+## Önkoşullar
 
-Önkoşullar:
+Koda dalmadan önce her şeyin doğru şekilde kurulduğundan emin olalım:
 
-1. Bu öğreticiyi takip etmek için C# programlama ve .NET çerçevesi hakkında temel bilgiye sahip olmanız gerekir. Ayrıca makinenizde Visual Studio'nun veya başka bir uygun geliştirme ortamının kurulu olduğundan emin olun.
+1. Java Geliştirme Ortamı: Sisteminizde Java'nın kurulu olduğundan emin olun.
 
-2. Aspose.Email for .NET'in Kurulumu:[Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Bunu Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak yapabilirsiniz. Projenizi açın, Solution Explorer'da proje adına sağ tıklayın ve "NuGet Paketlerini Yönet" seçeneğini seçin. "Aspose.Email" ifadesini arayın ve en son sürümü yükleyin.](https://releases.aspose.com/email/java/)E-posta Mesajlarını Yükleme:
+2.  Aspose.Email for Java: Kütüphaneyi şu adresten indirin:[Burada](https://releases.aspose.com/email/java/) ve projenize ekleyin.
 
-3. Gömülü nesneleri çıkarmadan önce e-posta mesajlarını uygulamamıza yüklememiz gerekir. Aspose.Email, EML, MSG ve PST gibi çeşitli formatlardaki e-posta mesajlarını verimli bir şekilde yüklemek ve yönetmek için sınıflar ve yöntemler sağlar.
+3. E-posta Mesajı: Çalışmak için ekleri olan bir e-posta mesajınız olmalıdır. Kendi e-postanızı kullanabilir veya test için örnek bir e-posta oluşturabilirsiniz.
 
-##  Bir dosyadan e-posta mesajı yükleme
+## Adım 1: Java Projesi Oluşturun
 
-Gömülü Nesneleri E-posta Mesajlarından Çıkarma:
+Öncelikle favori Entegre Geliştirme Ortamınızda (IDE) yeni bir Java projesi oluşturalım.
 
-## E-posta mesajını yükledikten sonra, resimler ve ekler gibi gömülü nesneleri mesajdan çıkarmaya devam edebiliriz. Aspose.Email, mesajdaki eklere ve gömülü görsellere erişim için yöntemler sunar.
+## Adım 2: Aspose.Email Kütüphanesini Ekleyin
 
- Eki çıkarın ve işleyin
+Daha önce indirdiğiniz JAR dosyasını ekleyerek Aspose.Email kütüphanesini projenize ekleyin.
 
-##  Gömülü görüntüyü çıkarın ve işleyin
+## Adım 3: Ekleri Çıkarın
 
-Çıkarılan Nesneleri Kaydetme:
+Şimdi bir e-posta mesajından ekleri çıkarmak için Java kodunu yazalım. Aşağıda başlamanıza yardımcı olacak örnek bir kod pasajı verilmiştir:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -40,46 +40,46 @@ import com.aspose.email.Attachment;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        //Gömülü nesneleri çıkardıktan sonra bunları sisteminizde belirli bir konuma kaydetmek isteyebilirsiniz. Aspose.Email, çıkarılan nesneleri kaydetmeye yönelik yöntemler sağlayarak, çıkarılan içeriği düzenlemenize ve yönetmenize olanak tanır.
+        // E-posta mesajını yükle
         MailMessage message = MailMessage.load("path/to/your/email.msg");
 
-        //Farklı Türdeki Gömülü Nesneleri Kullanma:
+        // Ekler aracılığıyla yineleme
         for (Attachment attachment : message.getAttachments()) {
-            //E-posta mesajları resimler, ses dosyaları ve belgeler dahil olmak üzere çeşitli gömülü nesneler içerebilir. Aspose.Email, gömülü nesnenin türünü belirlemenizi ve buna göre işlemenizi sağlar.
+            // Eki bir dosyaya kaydedin
             attachment.save("path/to/save/" + attachment.getName());
         }
     }
 }
 ```
 
- İşlem resmi eki`"path/to/your/email.msg"` Ses ekini işle
+ Bu kodda, bir e-posta mesajı yüklüyoruz, eklerini yineliyoruz ve her eki belirli bir konuma kaydediyoruz. Değiştirmeyi unutmayın`"path/to/your/email.msg"` e-posta mesajınızın gerçek yolunu içeren.
 
-##  Farklı türler için daha fazla koşul ekleyin
+## Adım 4: Derleyin ve Çalıştırın
 
-Çözüm
+Java programını derleyin ve çalıştırın. Her şey doğru ayarlanmışsa, eklerin belirtilen klasöre çıkarıldığını görmelisiniz.
 
-## Bu eğitimde, e-posta mesajlarından gömülü nesneleri çıkarmak için Aspose.Email for .NET kütüphanesinin nasıl kullanılacağını öğrendik. E-posta mesajlarının yüklenmesini, eklerin ve gömülü görsellerin çıkarılmasını, çıkarılan içeriğin kaydedilmesini ve farklı türdeki gömülü nesnelerin işlenmesini ele aldık. Bu işlevsellik, e-posta iletişimi ve içerik çıkarmayı içeren uygulamalar oluştururken inanılmaz derecede yararlı olabilir.
+## Çözüm
 
-SSS'ler
+E-posta mesajlarından eklerin çıkarılması, e-posta işleme uygulamalarında yaygın bir görevdir. Aspose.Email for Java, e-postayla ilgili işlemleri verimli bir şekilde yürüten sağlam bir kütüphane sağlayarak bu süreci basitleştirir. Yalnızca birkaç satır kodla ekleri çıkarabilir ve bu işlevselliği Java uygulamalarınıza dahil edebilirsiniz.
 
-## Aspose.Email for .NET'i nasıl kurabilirim?
+## SSS'ler
 
-### Aspose.Email for .NET'i Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Basitçe "Aspose.Email"i arayın ve en son sürümü yükleyin.
+### Aspose.Email for Java'yı nasıl indirebilirim?
 
-Bu kitaplığı kullanarak ses dosyalarını çıkarabilir miyim?[Evet, Aspose.Email'i kullanarak ses dosyaları da dahil olmak üzere çeşitli türdeki gömülü nesneleri çıkarabilirsiniz. İçerik türünü tanımladığınızdan ve buna göre işlediğinizden emin olun.](https://releases.aspose.com/email/java/).
+ Aspose.Email for Java'yı şu adresteki web sitesinden indirebilirsiniz:[Burada](https://releases.aspose.com/email/java/).
 
-### Aspose.Email PST dosyalarıyla çalışmaya uygun mudur?
+### Aspose.Email for Java'yı ticari projelerimde kullanabilir miyim?
 
-Evet, Aspose.Email, PST dosyalarıyla çalışmayı destekleyerek Outlook Kişisel Klasörlerinden içerik yüklemenize, değiştirmenize ve çıkarmanıza olanak tanır.
+Evet, Aspose.Email for Java hem kişisel hem de ticari projelerde kullanılabilir. Daha fazla bilgi için web sitesindeki lisans ayrıntılarını kontrol edin.
 
-### Aspose.Email'i ASP.NET web uygulamamda kullanabilir miyim?
+### Aspose.Email for Java'ya ait herhangi bir belge mevcut mu?
 
-Kesinlikle! Aspose.Email for .NET, ASP.NET web uygulamaları, masaüstü uygulamaları ve diğer .NET proje türleriyle uyumludur.[Aspose.Email hakkında daha fazla belgeyi nerede bulabilirim?](https://reference.aspose.com/email/java/).
+ Kesinlikle! Aspose.Email for Java belgelerini şu adreste bulabilirsiniz:[Burada](https://reference.aspose.com/email/java/).
 
-###  Aspose.Email için detaylı dokümantasyonu ve kod örneklerini şu adreste bulabilirsiniz:
+### Aspose.Email for Java hangi e-posta formatlarını destekliyor?
 
-Aspose.Email for .NET API Referansı
+Aspose.Email for Java, MSG, EML ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler. Desteklenen formatların tam listesi için belgelere bakın.
 
-###  sayfa.
+### Aspose.Email for Java için nereden destek alabilirim?
 
- C# ile Gömülü Nesneleri E-postadan Çıkarma
+Her türlü teknik yardım veya sorularınız için Aspose'un destek ekibine destek kanalları aracılığıyla ulaşabilirsiniz.

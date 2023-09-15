@@ -1,184 +1,184 @@
 ---
-title: Evet, Aspose.Email .NET Core'u destekleyerek platformlar arası uygulamalar oluşturmanıza olanak tanır.
-linktitle: Daha fazla örnek ve belgeyi nerede bulabilirim?
-second_title: Kapsamlı örnekleri ve ayrıntılı belgeleri inceleyebilirsiniz.
-description: Aspose.Email belgeleri
+title: Aspose.Email'de IMAP Protokolü ile Çalışmak
+linktitle: Aspose.Email'de IMAP Protokolü ile Çalışmak
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: E-posta iletişiminizi verimli bir şekilde yönetmek için Aspose.Email for Java'da IMAP protokolüyle nasıl çalışacağınızı öğrenin.
 type: docs
 weight: 12
 url: /tr/java/receiving-emails/working-with-imap-protocol/
 ---
 
- sayfa.
+Bu kapsamlı kılavuzda, Aspose.Email for Java'da IMAP (İnternet Mesaj Erişim Protokolü) ile çalışma sürecinde size yol göstereceğiz. IMAP, bir posta sunucusundaki e-posta iletilerine erişmek ve bunları yönetmek için yaygın olarak kullanılan bir protokoldür. Aspose.Email for Java ile IMAP işlevselliğini Java uygulamalarınıza kolayca entegre edebilirsiniz. Başlayalım!
 
 
-##  C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme
+## 1. IMAP Protokolüne Giriş
 
- C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme
+IMAP, uzak bir posta sunucusundaki e-posta iletilerinize erişmenize ve onları yönetmenize olanak tanıyan güçlü bir e-posta protokolüdür. E-postaları okumak, aramak ve düzenlemek için özellikler sunarak onu e-posta iletişimi için önemli bir araç haline getirir.
 
-##  Aspose.Email .NET E-Posta İşleme API'si
+## 2. Java için Aspose.Email'in Kurulumu
 
- C# ve Aspose.Email for .NET kullanarak e-postaları MHTML dosyaları olarak nasıl kaydedeceğinizi öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.[E-postayı MHTML Dosyası Olarak Kaydetmeye Giriş](https://releases.aspose.com/email/java/)Aspose.Email for .NET, geliştiricilerin e-posta mesajları, takvimler, kişiler ve görevlerle programlı olarak çalışmasına olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Aspose.Email, ister e-postayla ilgili uygulamalar oluşturuyor, ister mesajları işliyor, ister e-postalardan veri çıkarıyor olun, görevi kolaylaştırır.
+ Başlamak için Aspose.Email for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/email/java/). Kütüphaneyi Java ortamınızda kurmak için kurulum talimatlarını izleyin.
 
-## Kurulum ve Kurulum
+## 3. IMAP Sunucusuna Bağlanma
 
-Başlamak için Aspose.Email for .NET'i kurmanız gerekiyor. Bu adımları takip et:
+IMAP protokolünü kullanmak için e-posta sunucunuzla bağlantı kurmanız gerekir. Aspose.Email for Java kullanarak bir IMAP sunucusuna bağlanmak için örnek kod pasajını burada bulabilirsiniz:
 
 ```java
-// Kütüphaneyi şuradan indirin:
+// ImapClient sınıfının bir örneğini oluşturun
 ImapClient client = new ImapClient("imap.example.com", "username", "password");
 
-//Burada
+// Sunucuya bağlanın
 client.connect();
 ```
 
-## Projenizde Aspose.Email DLL dosyasına bakın.
+## 4. Posta Kutularını ve Klasörleri Listeleyin
 
-E-posta Mesajlarını Yükleme
+Bağlandıktan sonra sunucudaki tüm posta kutularını ve klasörleri listeleyebilirsiniz. Bu, e-posta hiyerarşisinde verimli bir şekilde gezinmenize yardımcı olur.
 
 ```java
-//E-postaları MHTML dosyaları olarak kaydetmeden önce e-posta mesajlarını yüklemeniz gerekir. Aşağıdaki kod parçacığını kullanın:
+// Tüm posta kutularını listele
 MailboxInfo[] mailboxes = client.listMailboxes();
 ```
 
-##  E-posta mesajını yükle
+## 5. E-postaları Okumak
 
-MHTML Formatını Anlamak
+Posta kutunuzdaki e-postaları okumak için aşağıdaki kodu kullanabilirsiniz:
 
 ```java
-//MHTML (MIME HTML), web sayfalarını ve e-postaları arşivlemek için kullanılan bir formattır. Resimler ve stil sayfaları gibi tüm kaynakları tek bir dosyada kapsüller. E-postaları MHTML olarak kaydederek, e-posta içeriğinin aktif bir internet bağlantısı olmasa bile bozulmadan ve erişilebilir kalmasını sağlarsınız.
+// Bir posta kutusu seçin
 client.selectMailbox("inbox");
 
-//E-postayı MHTML olarak kaydetme
+// E-postaları alın
 ImapMessageInfo[] messages = client.listMessages();
 ```
 
-## Şimdi heyecan verici kısım geliyor: bir e-postayı MHTML dosyası olarak kaydetmek. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+## 6. E-posta Eklerini İndirme
 
- E-postayı MHTML olarak kaydedin
+E-posta eklerini kolaylıkla indirebilirsiniz:
 
 ```java
-//Süreci Özelleştirme
+// Belirli bir e-postadaki ekleri indirme
 MailMessage message = client.fetchMessage(1);
 AttachmentCollection attachments = message.getAttachments();
 ```
 
-## Aspose.Email, kaydetme sürecini daha da özelleştirmenize olanak tanır. Ekleri kaydetme ve gereksiz bilgileri hariç tutma gibi çeşitli seçenekleri kontrol edebilirsiniz.
+## 7. IMAP aracılığıyla E-posta Gönderme
 
-Eklerin Kullanımı
+Aspose.Email for Java, IMAP protokolü aracılığıyla e-posta göndermenize olanak tanır. İşte bir örnek:
 
 ```java
-//Ekler e-postaların önemli bileşenleridir. E-posta eklerini MHTML dosyasının yanına kaydedebilirsiniz. İşte nasıl:
+// Yeni bir e-posta mesajı oluştur
 MailMessage message = new MailMessage();
 message.setSubject("Hello, IMAP!");
 message.setBody("This is a test email sent via IMAP.");
 
-//E-posta Meta Verilerini Yönetme
+// E-postayı gönder
 client.appendMessage("Sent Items", message);
 ```
 
-## MHTML dosyaları ayrıca e-postanın meta verilerini de koruyarak e-postanın orijinalliğini ve içeriğini garanti altına alabilir. Meta veriler gönderen, alıcı, konu ve daha fazlası gibi bilgileri içerir.
+## 8. E-postaları Silme
 
-Hata yönetimi
+İstenmeyen e-postaları kolayca silebilirsiniz:
 
 ```java
-//E-posta işlemeyle uğraşırken hata yönetimi çok önemlidir. İstisnaları yakalamak ve kullanıcılara uygun geri bildirim sağlamak veya sorunları hata ayıklama amacıyla günlüğe kaydetmek için try-catch bloklarını kullanın.
+// Bir e-postayı benzersiz kimliğine göre silin
 client.deleteMessage(1);
 ```
 
-## En İyi Uygulamalar
+## 9. Klasörleri Yönetme
 
-Yeni özelliklere ve geliştirmelere erişmek için Aspose.Email for .NET'in en son sürümüne düzenli olarak güncelleyin.
+E-posta klasörlerinizi programlı bir şekilde yönetin:
 
 ```java
-//Bellek sızıntılarını önlemek için kaynakları kullandıktan sonra uygun şekilde atın.
+// Yeni bir klasör oluştur
 client.createFolder("MyFolder");
 
-//Gerçek Dünyadaki Kullanım Durumları
+// Bir klasörü yeniden adlandırın
 client.renameFolder("MyFolder", "NewFolderName");
 
-//Yasal veya uyumluluk amacıyla önemli e-postaların arşivlenmesi.
+// Bir klasörü silme
 client.deleteFolder("NewFolderName");
 ```
 
-## Bültenlerin veya pazarlama e-postalarının çevrimdışı sürümlerini oluşturma.
+## 10. E-postaları Arama
 
-E-postaları farklı platformlarda kolayca paylaşılabilecek bir biçimde saklamak.
+Belirli e-postaları verimli bir şekilde arayın:
 
 ```java
-//Çözüm
+// Belirli bir anahtar kelimeyi içeren e-postaları arayın
 ImapQueryBuilder builder = new ImapQueryBuilder();
 builder.getSubject().contains("important");
 
 ImapMessageInfo[] searchResults = client.listMessages(builder.getQuery());
 ```
 
-## Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak e-postaların MHTML dosyaları olarak nasıl kaydedileceğini araştırdık. Kütüphanenin yetenekleri, geliştiricilerin içerik bütünlüğünü ve erişilebilirliğini korurken e-postayla ilgili görevleri verimli bir şekilde yönetmelerine olanak tanır. İster e-postayla ilgili uygulamalar oluşturuyor olun ister e-posta iş akışınızı kolaylaştırmaya ihtiyacınız olsun, Aspose.Email güvenilir ortağınızdır.
+## 11. Bayraklarla Çalışmak
 
-SSS'ler
+E-postaları okundu, okunmadı veya işaretlendi olarak işaretlemek için e-posta bayraklarını yönetin:
 
 ```java
-//Aspose.Email for .NET'in en son sürümünü nasıl edinebilirim?
+// Bir e-postayı okundu olarak işaretleme
 client.setMessageFlags(1, MessageFlag.SEEN, true);
 
-// Aspose.Email for .NET'in son sürümünü şu adresten indirebilirsiniz:
+// Bir e-postayı işaretleme
 client.setMessageFlags(1, MessageFlag.FLAGGED, true);
 ```
 
-## Burada
+## 12. IMAP Olaylarını Yönetme
 
-Kaydedilen MHTML dosyasının görünümünü özelleştirebilir miyim?
+Aspose.Email for Java, yeni e-posta gelişi gibi IMAP olaylarını yönetmenizi sağlar:
 
 ```java
-//Evet, kaydetme işlemi sırasında MHTFormatOptions'ı değiştirerek görünümü özelleştirebilirsiniz.
+// Etkinlik işleyicinizi uygulayın
 class MyImapEventHandler implements ImapEventHandler {
-    //Aspose.Email hem kişisel hem de kurumsal düzeyde e-posta yönetimine uygun mu?
+    // Olay işleme yöntemlerini uygulayın
 }
 
-//Kesinlikle! Aspose.Email, bireylerin ve işletmelerin ihtiyaçlarını karşılamak üzere tasarlanmış olup, çeşitli senaryolar için çok yönlü çözümler sunmaktadır.
+// Olay işleyicisini kaydedin
 client.addImapEventHandler(new MyImapEventHandler());
 ```
 
-## Aspose.Email for .NET kullanımıyla ilgili herhangi bir lisans ücreti var mı?
+## 13. Hata İşleme
 
-Evet, Aspose.Email ticari bir kütüphanedir. Lisanslama ve fiyatlandırma ile ilgili detaylı bilgiye web sitemizden ulaşabilirsiniz.
+İstisnaları düzgün bir şekilde ele almak için her zaman hata işlemeyi uygulayın:
 
 ```java
 try {
-    //Aspose.Email web sitesi
+    // IMAP kodunuz burada
 } catch (ImapException ex) {
-    // MHTML Dönüşümünü Özelleştirme - C# Uygulaması
+    // İstisnaları ele alın
 }
 ```
 
-##  MHTML Dönüşümünü Özelleştirme - C# Uygulaması
+## 14. En İyi Uygulamalar
 
- Aspose.Email .NET E-Posta İşleme API'si
+Verimli ve güvenli IMAP kullanımı için en iyi uygulamaları izleyin:
 
--  Aspose.Email for .NET'i kullanarak MHTML dönüşümünü nasıl özelleştireceğinizi öğrenin. C# kaynak koduyla adım adım kılavuz.
-- MHTML Dönüşümünü Özelleştirmeye Giriş
-- Aspose.Email for .NET'i kullanarak MHTML dönüşümünü özelleştirmek istiyorsanız doğru yerdesiniz. Bu kapsamlı kılavuz, başarılı uygulama için ihtiyaç duyduğunuz kaynak kodunu sağlayarak süreç boyunca size adım adım yol gösterecektir. MHTML (MIME HTML), HTML içeriğini ve kaynaklarını tek bir dosyada birleştiren bir web arşivi biçimidir. Aspose.Email for .NET, MHTML dosyalarıyla çalışmak için güçlü araçlar sunar ve birkaç ayarlamayla dönüştürme sürecini özel gereksinimlerinize göre uyarlayabilirsiniz.
+- Güvenli bağlantılar için SSL/TLS kullanın.
+- Kullanımdan sonra bağlantıyı kapatın.
+- Kaynakları boşaltmak için nesneleri uygun şekilde atın.
 
-## Geliştirme Ortamınızı Kurma
+## 15. Sonuç
 
-MHTML dönüşümünü özelleştirmeye başlamadan önce Aspose.Email for .NET'in kurulu olduğundan ve yeni bir C# projesinin kullanıma hazır olduğundan emin olun.
+Aspose.Email for Java'da IMAP protokolüyle nasıl çalışılacağını öğrendiniz. Bu çok yönlü kitaplık, e-posta iletişimini verimli bir şekilde yönetmenizi sağlar. Aspose.Email ile daha fazla özelliği keşfedin ve e-posta çözümlerinizi özelleştirin.
 
 ---
 
-## Aspose.Email for .NET'in Kurulumu:
+## SSS (Sık Sorulan Sorular)
 
-###  Başlamak için Aspose.Email for .NET'i aşağıdaki adresten indirip yükleyin.
-   İndirme: {link
+### IMAP nedir ve POP3'ten farkı nedir?
+   IMAP (İnternet İleti Erişim Protokolü) ve POP3 (Postane Protokolü) her ikisi de e-posta alma protokolleridir, ancak farklı çalışırlar. IMAP, sunucudaki e-postaları yönetmenize izin verirken, POP3 bunları yerel cihazınıza indirir.
 
-### . Belgelerde sağlanan kurulum talimatlarını izleyin.
-   Yeni bir C# Projesi Oluşturma:
+### Aspose.Email for Java diğer e-posta protokolleriyle uyumlu mu?
+   Evet, Aspose.Email for Java, SMTP, POP3 ve IMAP dahil olmak üzere çeşitli e-posta protokollerini destekler ve bu da onu çok yönlü bir e-posta düzenleme kitaplığı haline getirir.
 
-### Visual Studio'yu açın ve yeni bir C# projesi oluşturun. Uygun DLL referansını ekleyerek projenizdeki Aspose.Email kütüphanesine referans verdiğinizden emin olun.
-   MHTML Dosyalarını Yükleme ve Değiştirme
+### Aspose.Email for Java'yı ticari projelerimde kullanabilir miyim?
+   Evet, Aspose.Email for Java hem ticari hem de kişisel projelerde kullanılabilir. Daha fazla bilgi için Aspose web sitesindeki lisanslama ayrıntılarını kontrol edin.
 
-### Ortamınız kurulduktan sonra Aspose.Email for .NET'i kullanarak MHTML dosyalarını yüklemeye ve değiştirmeye başlayabilirsiniz.
-   MHTML Dosyası Yükleme:
+### Aspose.Email for Java'da e-posta eklerini nasıl yönetebilirim?
+   Aspose.Email for Java tarafından sağlananattachmentCollection sınıfını kullanarak e-posta eklerini kolayca yönetebilirsiniz. Ayrıntılı örnekler için belgelere bakın.
 
-### Uygulamanıza bir MHTML dosyası yüklemek için aşağıdaki kodu kullanın:
-    MHTML dosyasını yükle[HTML İçeriğine ve Kaynaklarına Erişim:](https://reference.aspose.com/email/java/)Aşağıdaki kodu kullanarak HTML içeriğini ve ilgili kaynakları çıkarın:
+### Aspose.Email for Java için daha fazla kaynak ve belgeyi nerede bulabilirim?
+    Aspose.Email for Java API belgelerini şu adreste ziyaret edin:[https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) kapsamlı kılavuzlar, API referansları ve kod örnekleri için.
 
- HTML içeriğine erişme
+Artık Aspose.Email for Java'da IMAP protokolüyle çalışma konusunda sağlam bir anlayışa sahip olduğunuza göre, özel ihtiyaçlarınıza göre uyarlanmış güçlü e-posta yönetimi çözümleri oluşturabilirsiniz. Mutlu kodlama!

@@ -1,35 +1,35 @@
 ---
-title: C# Approach - Extracting Decoded Header Values
-linktitle: C# Approach - Extracting Decoded Header Values
-second_title: Aspose.Email .NET Email Processing API
-description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
+title: Enfoque C#: extracción de valores de encabezado decodificados
+linktitle: Enfoque C#: extracción de valores de encabezado decodificados
+second_title: Aspose.Email API de procesamiento de correo electrónico .NET
+description: Aprenda a extraer valores de encabezado de correo electrónico decodificados en C# usando Aspose.Email para .NET. Guía completa con ejemplos de código.
 type: docs
 weight: 17
 url: /es/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
+En este tutorial, lo guiaremos a través del proceso de uso de Aspose.Email para .NET para extraer valores de encabezado decodificados de mensajes de correo electrónico. Aspose.Email para .NET es una biblioteca sólida que permite a los desarrolladores trabajar con diversos aspectos de los mensajes de correo electrónico, incluida la lectura y manipulación de encabezados de correo electrónico.
 
-## Step 1: Download and Install Aspose.Email for .NET
+## Paso 1: Descargue e instale Aspose.Email para .NET
 
-Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
+ Antes de comenzar, asegúrese de tener instalado Aspose.Email para .NET. Si aún no lo has hecho, puedes descargar la biblioteca desde el siguiente enlace:[Descargar Aspose.Email para .NET](https://releases.aspose.com/email/net).
 
-## Step 2: Create a New C# Project
+## Paso 2: crear un nuevo proyecto C#
 
-Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
+Comience creando un nuevo proyecto de C# en su entorno de desarrollo integrado (IDE) o editor de texto preferido.
 
-## Step 3: Add a Reference to Aspose.Email
+## Paso 3: agregue una referencia a Aspose.Email
 
-In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
+ Para utilizar Aspose.Email en su proyecto, debe agregar una referencia al`Aspose.Email` asamblea. Así es cómo:
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Add" > "Reference."
-3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
-4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
+1. Haga clic derecho en su proyecto en el Explorador de soluciones.
+2. Seleccione "Agregar" > "Referencia".
+3. En la ventana "Administrador de referencias", haga clic en "Examinar" o "Examinar..." y navegue hasta la ubicación donde instaló Aspose.Email.
+4.  Elija el ensamblaje apropiado para su proyecto (por ejemplo,`Aspose.Email.dll`) y haga clic en "Agregar".
 
-## Step 4: Extract Decoded Header Values
+## Paso 4: extraer los valores del encabezado decodificados
 
-Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
+Ahora profundicemos en el código para extraer valores de encabezado decodificados de un mensaje de correo electrónico. En este ejemplo, nos centraremos en extraer el encabezado "Asunto".
 
 ```csharp
 using Aspose.Email;
@@ -39,7 +39,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Load the email message
+        // Cargar el mensaje de correo electrónico
 		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
 		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
 		Console.WriteLine(decodedValue);
@@ -48,32 +48,32 @@ class Program
 }
 ```
 
-In the code snippet above, we perform the following steps:
+En el fragmento de código anterior, realizamos los siguientes pasos:
 
-1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
-2. We create a `Main` method as the entry point of our application.
-3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
-5. We print the decoded Subject header to the console.
+1. Importamos los espacios de nombres necesarios (`Aspose.Email` y`Aspose.Email.Mail`).
+2.  Creamos un`Main` método como punto de entrada de nuestra aplicación.
+3.  Dentro de`Main`método, utilizamos el`MailMessage.Load` Método para cargar un mensaje de correo electrónico desde un archivo. Reemplazar`"path/to/your/email.eml"` con la ruta real al mensaje de correo electrónico que desea procesar.
+4.  Usamos el`Headers.GetDecodedValue` método para decodificar el encabezado Asunto.
+5. Imprimimos el encabezado Asunto decodificado en la consola.
 
-## Step 5: Run the Application
+## Paso 5: Ejecute la aplicación
 
-Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
+ Compile y ejecute su aplicación. Asegúrate de reemplazar`"path/to/your/email.eml"` con la ruta real al mensaje de correo electrónico que desea procesar. La aplicación cargará el correo electrónico, extraerá el encabezado del Asunto decodificado y lo mostrará en la consola.
 
-## FAQs
+## Preguntas frecuentes
 
-### How can I decode other email headers using Aspose.Email for .NET?
+### ¿Cómo puedo decodificar otros encabezados de correo electrónico usando Aspose.Email para .NET?
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
+ Puede decodificar varios encabezados de correo electrónico como "De", "Para", "Fecha", etc., utilizando el`Headers.GetDecodedValue` método. Simplemente proporcione el valor del encabezado como parámetro del método.
 
-### Where can I find more information about Aspose.Email for .NET?
+### ¿Dónde puedo encontrar más información sobre Aspose.Email para .NET?
 
-For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
+ Para obtener documentación detallada y ejemplos, consulte la[Aspose.Email para referencia de API .NET](https://reference.aspose.com/email/net).
 
-### Is Aspose.Email for .NET available for free?
+### ¿Aspose.Email para .NET está disponible de forma gratuita?
 
-Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
+ Aspose.Email para .NET es una biblioteca comercial. Puedes explorar sus características[descargando la versión de prueba gratuita](https://releases.aspose.com/email/net).
 
-## Conclusion
+## Conclusión
 
-In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+En este tutorial, aprendió cómo utilizar Aspose.Email para .NET para extraer valores de encabezado decodificados de mensajes de correo electrónico. Aspose.Email para .NET proporciona un conjunto completo de herramientas que permite a los desarrolladores trabajar de manera eficiente con mensajes de correo electrónico, incluido el manejo de encabezados.

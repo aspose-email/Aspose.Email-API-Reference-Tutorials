@@ -1,37 +1,37 @@
 ---
-title: Requesting Email Read Receipts using C# Code
-linktitle: Requesting Email Read Receipts using C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
+title: طلب إيصالات قراءة البريد الإلكتروني باستخدام رمز C#
+linktitle: طلب إيصالات قراءة البريد الإلكتروني باستخدام رمز C#
+second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
+description: تعرف على كيفية استخدام كود C# لطلب إيصالات قراءة البريد الإلكتروني باستخدام Aspose.Email for .NET، مما يعزز تتبع الاتصالات.
 type: docs
 weight: 11
 url: /ar/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-In today's digital age, communication via email has become an integral part of our personal and professional lives. Often, when sending important emails, we want to ensure that the recipient has read and acknowledged our message. This is where email read receipts come into play. In this step-by-step tutorial, we will guide you through the process of requesting email read receipts using C# with Aspose.Email for .NET.
+في العصر الرقمي الحالي، أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من حياتنا الشخصية والمهنية. في كثير من الأحيان، عند إرسال رسائل بريد إلكتروني مهمة، نريد التأكد من أن المستلم قد قرأ رسالتنا واعترف بها. هذا هو المكان الذي تلعب فيه إيصالات قراءة البريد الإلكتروني. في هذا البرنامج التعليمي خطوة بخطوة، سنرشدك خلال عملية طلب إيصالات قراءة البريد الإلكتروني باستخدام C# مع Aspose.Email for .NET.
 
-## Introduction to Email Read Receipts
+## مقدمة إلى إيصالات قراءة البريد الإلكتروني
 
-Email read receipts, also known as email tracking or return receipts, allow you to receive notifications when the recipient opens and reads your email. It's a valuable feature, especially in business communications, as it provides confirmation of message delivery and engagement.
+تسمح لك إيصالات قراءة البريد الإلكتروني، والمعروفة أيضًا بتتبع البريد الإلكتروني أو إيصالات الإرجاع، بتلقي إشعارات عندما يفتح المستلم بريدك الإلكتروني ويقرأه. إنها ميزة قيمة، خاصة في الاتصالات التجارية، لأنها توفر تأكيدًا لتسليم الرسالة والمشاركة.
 
-## Prerequisites
+## المتطلبات الأساسية
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
 
-- Visual Studio installed on your system.
-- Aspose.Email for .NET library downloaded and referenced in your project.
+- تم تثبيت Visual Studio على نظامك.
+- تم تنزيل Aspose.Email لمكتبة .NET والإشارة إليها في مشروعك.
 
-## Step 1: Creating a MailMessage Instance
+## الخطوة 1: إنشاء مثيل MailMessage
 
-The first step in implementing email read receipts is to create an instance of the `MailMessage` class. This class represents an email message and allows you to set various properties of the email.
+ الخطوة الأولى في تنفيذ إيصالات قراءة البريد الإلكتروني هي إنشاء مثيل لـ`MailMessage` فصل. تمثل هذه الفئة رسالة بريد إلكتروني وتسمح لك بتعيين خصائص مختلفة للبريد الإلكتروني.
 
 ```csharp
 MailMessage message = new MailMessage();
 ```
 
-## Step 2: Specifying Message Details
+## الخطوة 2: تحديد تفاصيل الرسالة
 
-Now, let's specify the details of the email message, including the sender, recipient, HTML body, and delivery notification options.
+الآن، دعنا نحدد تفاصيل رسالة البريد الإلكتروني، بما في ذلك المرسل والمستلم ونص HTML وخيارات إشعار التسليم.
 
 ```csharp
 message.From = "sender@sender.com";
@@ -42,17 +42,17 @@ message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-## Step 3: Creating an SmtpClient Instance
+## الخطوة 3: إنشاء مثيل SmtpClient
 
-To send the email, we need to create an instance of the `SmtpClient` class, which is responsible for sending the message.
+ لإرسال البريد الإلكتروني، نحتاج إلى إنشاء مثيل لـ`SmtpClient` الطبقة المسؤولة عن إرسال الرسالة.
 
 ```csharp
 SmtpClient client = new SmtpClient();
 ```
 
-## Step 4: Configuring SMTP Settings
+## الخطوة 4: تكوين إعدادات SMTP
 
-Configure your SMTP server settings by specifying the host server, username, password, and port number.
+قم بتكوين إعدادات خادم SMTP الخاص بك عن طريق تحديد الخادم المضيف واسم المستخدم وكلمة المرور ورقم المنفذ.
 
 ```csharp
 client.Host = "smtp.server.com";
@@ -61,9 +61,9 @@ client.Password = "Password";
 client.Port = 25;
 ```
 
-## Step 5: Sending the Email
+## الخطوة 5: إرسال البريد الإلكتروني
 
-Finally, use the `client.Send` method to send the email message. If the message is sent successfully, a "Message Sent" notification will be displayed.
+ وأخيرا، استخدم`client.Send` طريقة ارسال رسالة بالبريد الالكتروني. إذا تم إرسال الرسالة بنجاح، فسيتم عرض إشعار "تم إرسال الرسالة".
 
 ```csharp
 try
@@ -77,14 +77,14 @@ catch (Exception ex)
 }
 ```
 
-With these five simple steps, you can request email read receipts when sending emails using C# and Aspose.Email for .NET. This feature adds a layer of assurance to your email communications, ensuring that you know when your important messages are read.
+من خلال هذه الخطوات الخمس البسيطة، يمكنك طلب إيصالات قراءة البريد الإلكتروني عند إرسال رسائل البريد الإلكتروني باستخدام C# وAspose.Email for .NET. تضيف هذه الميزة طبقة من الضمان إلى اتصالات البريد الإلكتروني الخاصة بك، مما يضمن أنك تعرف متى تتم قراءة رسائلك المهمة.
 
-## Complete Source Code
+## كود المصدر الكامل
 ```csharp
-// Create an Instance of MailMessage class
+// إنشاء مثيل لفئة MailMessage
 MailMessage message = new MailMessage();
 
-// Specify From, To, HtmlBody, DeliveryNotificationOptions field
+// حدد من، إلى، HtmlBody، حقل DeliveryNotificationOptions
 message.From = "sender@sender.com";
 message.To.Add("receiver@receiver.com");
 message.HtmlBody = "<html><body>This is the Html body</body></html>";
@@ -92,10 +92,10 @@ message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
 message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 
-// Create an instance of SmtpClient Class
+// إنشاء مثيل لفئة SmtpClient
 SmtpClient client = new SmtpClient();
 
-// Specify your mailing host server, Username, Password and Port No
+// حدد خادم مضيف البريد الخاص بك واسم المستخدم وكلمة المرور ورقم المنفذ
 client.Host = "smtp.server.com";
 client.Username = "Username";
 client.Password = "Password";
@@ -103,9 +103,9 @@ client.Port = 25;
 
 try
 {
-	// Client.Send will send this message
+	// سوف يرسل Client.Send هذه الرسالة
 	client.Send(message);
-	// Display ‘Message Sent’, only if message sent successfully
+	// قم بعرض "الرسالة المرسلة"، فقط في حالة إرسال الرسالة بنجاح
 	Console.WriteLine("Message sent");
 }
 catch (Exception ex)
@@ -113,23 +113,23 @@ catch (Exception ex)
 	System.Diagnostics.Trace.WriteLine(ex.ToString());
 }
 ```
-## Conclusion
+## خاتمة
 
-In this tutorial, we've explored how to request email read receipts using C# with Aspose.Email for .NET. Email tracking is a powerful tool for ensuring your messages are delivered and read by the intended recipients, particularly in professional settings. By following the steps outlined here, you can easily implement this functionality in your email application.
+في هذا البرنامج التعليمي، اكتشفنا كيفية طلب إيصالات قراءة البريد الإلكتروني باستخدام لغة C# مع Aspose.Email لـ .NET. يعد تتبع البريد الإلكتروني أداة قوية لضمان تسليم رسائلك وقراءتها من قبل المستلمين المقصودين، خاصة في الإعدادات المهنية. باتباع الخطوات الموضحة هنا، يمكنك بسهولة تنفيذ هذه الوظيفة في تطبيق البريد الإلكتروني الخاص بك.
 
-## Frequently Asked Questions (FAQs)
+## الأسئلة المتداولة (الأسئلة الشائعة)
 
-1. ### What is the purpose of email read receipts?
-   Email read receipts provide confirmation that an email has been opened and read by the recipient. They are often used for tracking important or time-sensitive messages.
+1. ### ما هو الغرض من إيصالات القراءة عبر البريد الإلكتروني؟
+   توفر إيصالات قراءة البريد الإلكتروني تأكيدًا بأن المستلم قد فتح رسالة بريد إلكتروني وقرأها. يتم استخدامها غالبًا لتتبع الرسائل المهمة أو الحساسة للوقت.
 
-2. ### Can email read receipts be disabled by the recipient?
-   Yes, email clients often allow users to disable the sending of read receipts. Therefore, it's not guaranteed that you will always receive them.
+2. ### هل يمكن للمستلم تعطيل إيصالات قراءة البريد الإلكتروني؟
+   نعم، غالبًا ما يسمح عملاء البريد الإلكتروني للمستخدمين بتعطيل إرسال إيصالات القراءة. لذلك، ليس من المضمون أنك سوف تحصل عليها دائمًا.
 
-3. ### Are email read receipts a standard feature in all email clients?
-   No, email read receipts are not universally supported. Whether they work or not depends on the email client and the recipient's settings.
+3. ### هل تعد إيصالات قراءة البريد الإلكتروني ميزة قياسية في جميع عملاء البريد الإلكتروني؟
+   لا، إيصالات قراءة البريد الإلكتروني غير مدعومة عالميًا. يعتمد نجاحها أم لا على عميل البريد الإلكتروني وإعدادات المستلم.
 
-4. ### Is it possible to track when an email is opened on a mobile device?
-   Email tracking is typically based on the recipient's email client and settings, so it may or may not work on mobile devices, depending on various factors.
+4. ### هل من الممكن تتبع متى يتم فتح البريد الإلكتروني على جهاز محمول؟
+   يعتمد تتبع البريد الإلكتروني عادةً على برنامج البريد الإلكتروني للمستلم وإعداداته، لذلك قد يعمل أو لا يعمل على الأجهزة المحمولة، اعتمادًا على عوامل مختلفة.
 
-5. ### Are there privacy considerations when using email read receipts?
-   Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.
+5. ### هل هناك اعتبارات تتعلق بالخصوصية عند استخدام إيصالات قراءة البريد الإلكتروني؟
+   نعم، هناك مخاوف تتعلق بالخصوصية تتعلق بتتبع البريد الإلكتروني. قد يعتبرها بعض المستلمين متطفلة، لذلك من الضروري استخدام هذه الميزة بمسؤولية واحترام تفضيلات الخصوصية.

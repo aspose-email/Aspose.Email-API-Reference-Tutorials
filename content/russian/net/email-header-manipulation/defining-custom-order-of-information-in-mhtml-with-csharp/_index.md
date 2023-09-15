@@ -1,28 +1,28 @@
 ---
-title: Defining Custom Order of Information in MHTML with C#
-linktitle: Defining Custom Order of Information in MHTML with C#
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-step guide with code for efficient information arrangement. Boost user experience now!
+title: Определение пользовательского порядка информации в MHTML с помощью C#
+linktitle: Определение пользовательского порядка информации в MHTML с помощью C#
+second_title: Aspose.Email .NET API обработки электронной почты
+description: Узнайте, как настроить порядок MHTML с помощью C# и Aspose.Email для .NET. Пошаговое руководство с кодом для эффективного размещения информации. Улучшите пользовательский опыт прямо сейчас!
 type: docs
 weight: 14
 url: /ru/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
 
-In the realm of email management, the ability to customize the order of information in MHTML emails is a valuable feature. Aspose.Email for .NET offers a robust solution for achieving this. In this article, we will guide you through the process step by step.
+В сфере управления электронной почтой ценной функцией является возможность настраивать порядок информации в электронных письмах MHTML. Aspose.Email для .NET предлагает надежное решение для достижения этой цели. В этой статье мы шаг за шагом проведем вас через этот процесс.
 
-## Step 1: Understanding the Scenario
+## Шаг 1: Понимание сценария
 
-Before delving into the technical details, let's grasp the scenario. Imagine you have an email message, and you want to save it in MHTML format with specific headers and in a custom order. The headers you want to include are 'From,' 'Subject,' 'To,' 'Sent,' and 'Attachments.'
+Прежде чем углубляться в технические детали, давайте разберемся в сценарии. Представьте, что у вас есть сообщение электронной почты, и вы хотите сохранить его в формате MHTML с определенными заголовками и в произвольном порядке. Заголовки, которые вы хотите включить: «От», «Тема», «Кому», «Отправлено» и «Вложения».
 
-## Step 2: Setting Up the Development Environment
+## Шаг 2. Настройка среды разработки
 
-To begin, ensure that Aspose.Email for .NET is installed in your development environment. If you haven't done this already, you can download it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
+Для начала убедитесь, что Aspose.Email for .NET установлен в вашей среде разработки. Если вы еще этого не сделали, вы можете скачать его с сайта[Aspose.Email для релизов .NET](https://releases.aspose.com/email/net/).
 
-Once the installation is complete, create a new C# project and add a reference to the Aspose.Email assembly. This step is crucial to access the functionality we need.
+После завершения установки создайте новый проект C# и добавьте ссылку на сборку Aspose.Email. Этот шаг имеет решающее значение для доступа к нужным нам функциям.
 
-## Step 3: Writing the Code
+## Шаг 3: Написание кода
 
-Now, let's dive into the code implementation. Below is the code that accomplishes our goal:
+Теперь давайте углубимся в реализацию кода. Ниже приведен код, который достигает нашей цели:
 
 ```csharp
 string dataDir = "Your Data Directory";
@@ -47,36 +47,36 @@ opt.RenderingHeaders.Add(MhtTemplateName.Subject);
 eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ```
 
-In this code, we first load the email message and configure the MHTML save options. Then, we save the email in MHTML format multiple times, each time specifying the desired rendering headers. This process ensures the custom order of information in the MHTML file.
+В этом коде мы сначала загружаем сообщение электронной почты и настраиваем параметры сохранения MHTML. Затем мы сохраняем письмо в формате MHTML несколько раз, каждый раз указывая нужные заголовки рендеринга. Этот процесс обеспечивает индивидуальный порядок информации в файле MHTML.
 
-## Step 4: Conclusion
+## Шаг 4: Заключение
 
-To sum it up, Aspose.Email for .NET empowers developers to efficiently manage email content, including customizing the order of information in MHTML emails. The code snippet provided simplifies this task, making it accessible and effective.
+Подводя итог, можно сказать, что Aspose.Email для .NET дает разработчикам возможность эффективно управлять содержимым электронной почты, включая настройку порядка информации в электронных письмах MHTML. Предоставленный фрагмент кода упрощает эту задачу, делая ее доступной и эффективной.
 
-In a world where effective email handling is paramount, Aspose.Email for .NET proves to be an invaluable tool for developers.
+В мире, где эффективная обработка электронной почты имеет первостепенное значение, Aspose.Email для .NET оказывается бесценным инструментом для разработчиков.
 
-For comprehensive documentation and more details, you can visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
+ Для получения полной документации и более подробной информации вы можете посетить[Справочник по API Aspose.Email для .NET](https://reference.aspose.com/email/net/).
 
 ---
 
-## Step 5: FAQs
+## Шаг 5. Часто задаваемые вопросы
 
-### 1. What is MHTML, and why is it important?
+### 1. Что такое MHTML и почему это важно?
 
-- MHTML, short for MIME HTML, is a format used to archive web pages with all their elements. It's crucial for preserving web content and structure.
+- MHTML, сокращение от MIME HTML, — это формат, используемый для архивирования веб-страниц со всеми их элементами. Это крайне важно для сохранения веб-контента и структуры.
 
-### 2. Can I customize the order of other email headers using Aspose.Email for .NET?
+### 2. Могу ли я настроить порядок других заголовков электронных писем с помощью Aspose.Email для .NET?
 
-- Yes, you can tailor the order of various email headers according to your specific requirements, as demonstrated in the article.
+- Да, вы можете настроить порядок различных заголовков электронных писем в соответствии с вашими конкретными требованиями, как показано в статье.
 
-### 3. What other tasks can Aspose.Email for .NET handle in email processing?
+### 3. Какие еще задачи может решать Aspose.Email for .NET при обработке электронной почты?
 
-- Aspose.Email for .NET offers a wide range of features, including email creation, conversion, and manipulation, making it a comprehensive solution for various email-related tasks.
+- Aspose.Email для .NET предлагает широкий спектр функций, включая создание, преобразование и манипулирование электронной почтой, что делает его комплексным решением для различных задач, связанных с электронной почтой.
 
-### 4. Is Aspose.Email for .NET suitable for both small-scale and enterprise-level projects?
+### 4. Подходит ли Aspose.Email для .NET как для небольших, так и для корпоративных проектов?
 
-- Absolutely. It's versatile and can be applied in projects of all sizes, from small applications to large-scale enterprise solutions.
+- Абсолютно. Он универсален и может применяться в проектах любого масштаба: от небольших приложений до крупномасштабных корпоративных решений.
 
-### 5. Where can I find additional resources and support for Aspose.Email for .NET?
+### 5. Где я могу найти дополнительные ресурсы и поддержку Aspose.Email для .NET?
 
-- You can access extensive documentation, code examples, and support on the [Aspose.Email for .NET API Documentation](https://reference.aspose.com/email/net/).
+-  Вы можете получить доступ к обширной документации, примерам кода и поддержке на сайте[Документация Aspose.Email для .NET API](https://reference.aspose.com/email/net/).

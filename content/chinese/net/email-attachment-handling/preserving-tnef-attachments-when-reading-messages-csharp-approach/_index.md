@@ -1,63 +1,63 @@
 ---
-title: 安装 Aspose.Email for .NET
-linktitle: 首先，您需要安装 Aspose.Email for .NET 库。您可以从
-second_title: Aspose. 发布
-description: 或使用 Visual Studio 中的 NuGet 包管理器。
+title: 读取消息时保留 TNEF 附件 - C# 方法
+linktitle: 读取消息时保留 TNEF 附件 - C# 方法
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 在此包含源代码的分步指南中，了解如何使用 Aspose.Email for .NET 保留 TNEF 附件。
 type: docs
 weight: 15
 url: /zh/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
 
-## 创建新的 .NET 项目
+## TNEF 附件简介
 
-打开 Visual Studio 并创建一个新的 .NET 项目。
+TNEF 也称为“winmail.dat”，是 Microsoft Outlook 和 Exchange 使用的专有电子邮件附件格式。它封装了各种元素，如格式化文本、嵌入图像，甚至日历信息。但是，当电子邮件在不同的电子邮件客户端或平台之间传输时，TNEF 附件有时会变得无法读取或无法访问。这就是 Aspose.Email for .NET 发挥作用的地方。
 
-## 使用 NuGet 包管理器安装 Aspose.Email for .NET 库。
+## .NET 的 Aspose.Email 入门
 
-您现在已经准备好开始编码了！
+Aspose.Email for .NET 是一个综合库，提供了处理电子邮件及其附件的广泛功能。首先，您需要：
 
-1. 加载和解析电子邮件消息[加载电子邮件消息](https://releases.aspose.com/email/net)在修改电子邮件中的字体之前，我们需要加载电子邮件。您可以从各种来源加载电子邮件，例如文件、流甚至邮件服务器。
+1. 下载并安装 Aspose.Email：访问[这里](https://releases.aspose.com/email/net)下载并安装最新版本的 Aspose.Email for .NET。
 
-2. 加载电子邮件消息
+2. 创建新项目：打开 Visual Studio 环境并创建新的 C# 项目。
 
-3. 解析消息体
+3. 添加引用：添加对项目中下载的 Aspose.Email 程序集的引用。
 
-## 电子邮件加载后，您可以访问其不同部分，包括 HTML 正文。解析 HTML 正文允许我们更改字体。
+## 加载和解析电子邮件消息
 
-解析 HTML 正文
+要处理电子邮件，您首先需要加载并解析电子邮件。 Aspose.Email 提供的类允许您从各种来源加载电子邮件，包括文件、流甚至电子邮件服务器。以下是如何从文件加载电子邮件的示例：
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//修改电子邮件中的字体
+//加载带有 TNEF 附件的电子邮件
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## 了解字体样式
+## 识别和提取 TNEF 附件
 
-HTML 电子邮件中的字体是使用 CSS 样式定义的。要更改字体，您需要修改与电子邮件的 HTML 内容关联的 CSS 样式。
+加载电子邮件后，下一步是识别并提取 TNEF 附件。 TNEF 附件封装在一个特殊的“winmail.dat”文件中。 Aspose.Email 简化了识别和提取这些附件的过程：
 
 ```csharp
-//以编程方式更改字体
+//检查邮件是否有 TNEF 附件
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //假设您想要更改电子邮件 HTML 正文中段落的字体。您可以这样做：
+        //提取 TNEF 附件
         var tnefAttachment = attachment;
 
-        //更改段落的字体
-        //转换为 MHT 格式
+        //访问 TNEF 属性并根据需要进行修改
+        //tnefAttachment.属性...
     }
 }
 ```
 
-## 创建MHT消息
+## 保留 TNEF 附件
 
-要将电子邮件转换为 MHT 格式，您需要使用 Aspose.Email 创建 MHT 格式的电子邮件。
+保留 TNEF 附件涉及确保提取的附件保留其原始格式和内容。 Aspose.Email 提供了方法和属性来访问 TNEF 附件中的各种元素，例如文本、嵌入图像和日历数据。
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -65,9 +65,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## 创建 MHT 格式的电子邮件
+## 完整的 C# 代码示例
 
-将消息保存为 MHT 格式
+以下是如何使用 Aspose.Email for .NET 读取和保留 TNEF 附件的完整示例：
 
 ```csharp
 using Aspose.Email;
@@ -79,24 +79,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            //最后，将 MHT 格式的消息保存到文件中。
+            //加载带有 TNEF 附件的电子邮件
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 //将消息保存为 MHT 格式
+			 //检查邮件是否有 TNEF 附件
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					//完整的源代码
+					//提取 TNEF 附件
 					var tnefAttachment = attachment;
 
-					//这是将所有内容组合在一起的完整源代码：
-					//结论
+					//访问 TNEF 属性并根据需要进行修改
+					//tnefAttachment.属性...
 				}
 			}
-			//在本指南中，我们探讨了如何使用 Aspose.Email for .NET 在 MHT 转换期间更改字体。通过执行以下步骤，您可以将电子邮件无缝转换为 MHT 格式，同时保留所需的字体样式。
+			//保留 TNEF 附件
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -105,30 +105,30 @@ namespace TnefAttachmentExample
 }
 ```
 
+## 处理 TNEF 附件的提示
+
+- 在尝试提取之前，请务必检查电子邮件是否包含 TNEF 附件。
+- 利用 Aspose.Email 的方法访问和保留 TNEF 附件中的各种元素。
+- 确保您拥有最新版本的 Aspose.Email for .NET 以利用最新功能。
+
+## 结论
+
+在本指南中，我们探讨了如何在使用 C# 编程语言和 Aspose.Email for .NET 阅读消息时保留 TNEF 附件。凭借其全面的工具集，Aspose.Email 简化了识别、提取和保存 TNEF 附件的过程，确保电子邮件中的关键信息保持完整且可访问。
+
 ## 常见问题解答
 
-- 我可以一次性将多封电子邮件转换为 MHT 格式吗？
-- 是的，您可以循环浏览一组电子邮件并对每封邮件应用相同的字体更改，然后再将其转换为 MHT 格式。
-- Aspose.Email 也支持其他电子邮件格式吗？
+### 如何下载 .NET 版 Aspose.Email？
 
-## 是的，Aspose.Email 支持各种电子邮件格式，包括 EML、MSG、PST 等。
+您可以从发布页面下载 Aspose.Email for .NET：[这里](https://releases.aspose.com/email/net)
 
-是否可以进一步自定义字体更改？
+### 我可以使用 Aspose.Email 处理其他电子邮件格式吗？
 
-## 绝对地！您可以探索更多 CSS 样式来自定义字体，例如字体大小、颜色和对齐方式。
+是的，Aspose.Email 支持各种电子邮件格式，包括 PST、EML、MSG 等。
 
-### 我可以将 Aspose.Email 用于商业项目吗？
+### Aspose.Email 适合小型和大型应用程序吗？
 
-是的，根据许可条款，Aspose.Email 可用于个人和商业项目。[请记住，本指南提供了总体概述，您可以通过参考进一步探索](https://releases.aspose.com/email/net)
+绝对地！ Aspose.Email 旨在满足从小型项目到企业级解决方案的广泛应用。
 
-### Aspose.Email API 参考
+### Aspose.Email 定期更新吗？
 
-并尝试不同的字体定制技术。快乐编码！
-
-###  C# 指南 - 提取电子邮件标头
-
- C# 指南 - 提取电子邮件标头
-
-### Aspose.Email .NET 电子邮件处理 API
-
-了解如何使用 Aspose.Email for .NET 在 C# 中提取电子邮件标头。带有源代码的分步指南，可实现高效的电子邮件分析。
+是的，Aspose 保持定期更新，以确保与最新技术和平台的兼容性。

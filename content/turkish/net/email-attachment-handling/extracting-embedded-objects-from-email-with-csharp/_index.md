@@ -1,61 +1,61 @@
 ---
-title: Mesaj özelliklerini görüntülemek veya işlemek için kod
-linktitle: 4. Mesaj İçeriklerini Görüntüleme
-second_title: İleti metnini ve eklerini alın ve işleyin:
-description: Ekleri işleme kodu
+title: C# ile Gömülü Nesneleri E-postadan Çıkarma
+linktitle: C# ile Gömülü Nesneleri E-postadan Çıkarma
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: C# ve Aspose.Email for .NET kullanarak e-postalardan gömülü nesneleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 type: docs
 weight: 16
 url: /tr/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
 
-## 5. Hata İşleme
+## E-postalardaki Gömülü Nesnelere Giriş
 
-İstisnaları ele almak için hata işlemeyi uygulayın:
+E-postalardaki gömülü nesneler, ayrı olarak eklenmek yerine doğrudan e-posta içeriğine eklenen dosyalar anlamına gelir. Bu nesneler, gönderenin mesaj gövdesine resimler, animasyonlar veya etkileşimli içerik eklemesine olanak tanıyarak e-posta deneyimini zenginleştirir.
 
-##  Mesaj çıkarma ve işleme kodu
+## Aspose.Email for .NET'e Başlarken
 
-Çözüm[Bu makalede Aspose.Email for .NET ile C# kullanarak NSF depolama alanındaki mesajları nasıl okuyacağımızı öğrendik. Projeyi kurmayı, NSF dosyasını yüklemeyi, mesaj özelliklerine erişmeyi, mesaj içeriklerini görüntülemeyi ve hata işlemeyi uygulamayı ele aldık. Aspose.Email for .NET bu görevi basitleştirir ve geliştiricilerin e-posta verileriyle verimli bir şekilde çalışmasını sağlar.](https://releases.aspose.com/email/net/)SSS'ler
+ Aspose.Email for .NET, e-posta mesajlarının ayrıştırılması, oluşturulması ve değiştirilmesi dahil, e-postalarla çalışmak için çeşitli özellikler sağlayan güçlü bir kütüphanedir. Başlamak için Aspose.Email for .NET kütüphanesinin projenizde kurulu olması gerekir. Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya NuGet gibi bir paket yöneticisi kullanın.
 
-## Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
+## E-posta Yükleme ve Ayrıştırma
 
- Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:
+Bir e-postadan katıştırılmış nesneleri çıkarmak için öncelikle e-posta mesajını yükleyip ayrıştırmanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
-//Burada
+// Gerekli ad alanlarını içe aktarın
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-//Aspose.Email'i e-postayla ilgili diğer görevler için kullanabilir miyim?
+// E-posta mesajını yükle
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Evet, Aspose.Email for .NET, çeşitli e-posta formatları, ekler ve daha fazlasıyla çalışmak için geniş bir özellik yelpazesi sunar.
+## Gömülü Nesneleri Tanımlama ve Çıkarma
 
-Bu kütüphaneyi ticari projelerde kullanabilir miyim?
+E-posta mesajı yüklendikten sonra, gömülü nesneleri tanımlamak ve çıkarmak için AlternateView'leri yineleyebilirsiniz. AlternateView'ler, HTML ve düz metin de dahil olmak üzere farklı e-posta formatlarını temsil eder. Gömülü nesneler genellikle HTML görünümünde bulunur.
 
 ```csharp
-//Evet, Aspose.Email for .NET'i lisans koşulları kapsamında ticari projelerde kullanabilirsiniz.
+// Alternatif görünümleri yineleyin
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        //Aspose.Email ne sıklıkta güncellenir?
+        // Gömülü nesneleri HTML içeriğinden çıkarın
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Aspose, yeni özellikler, iyileştirmeler ve hata düzeltmeleri eklemek için kitaplıklarını düzenli olarak günceller. Güncellemeler için sürüm notlarını kontrol edebilirsiniz.
+            // Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
 }
 ```
 
-##  C# ile Zimbra TGZ Depolama Alanından Mesajları Kaydetme
+## Çıkarılan Nesneleri Kaydetme
 
- C# ile Zimbra TGZ Depolama Alanından Mesajları Kaydetme
+Gömülü nesneleri tanımlayıp çıkardıktan sonra bunları istediğiniz konuma kaydedebilirsiniz. Bağlantılı kaynağın ContentId'si genellikle dosya adı olarak kullanılır.
 
-##  Aspose.Email .NET E-Posta İşleme API'si
+## Kaynak Kodunu Tamamlayın
 
- Aspose.Email for .NET'i kullanarak Zimbra TGZ e-postalarını nasıl çıkaracağınızı öğrenin. Etkin e-posta yönetimi için kaynak kodlu adım adım kılavuz.
+Aspose.Email for .NET kullanarak bir e-postadan gömülü nesneleri çıkarmak için gereken kaynak kodun tamamı burada:
 
 ```csharp
 using Aspose.Email;
@@ -67,18 +67,18 @@ namespace EmbeddedObjectExtractor
     {
         static void Main(string[] args)
         {
-            //Zimbra TGZ Depolama ve Aspose.Email'e Giriş
+            // E-posta mesajını yükle
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            //Zimbra TGZ (Tar Gzipped), e-posta mesajlarını, ekleri ve diğer ilgili verileri saklayan sıkıştırılmış bir dosya formatıdır. Aspose.Email for .NET, e-postalarla çalışmak için çeşitli formatlardaki e-posta mesajlarını okuma, yazma ve değiştirme gibi kapsamlı özellikler sağlayan güçlü bir kütüphanedir.
+            // Alternatif görünümleri yineleyin
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    //Geliştirme Ortamını Kurma
+                    // Gömülü nesneleri HTML içeriğinden çıkarın
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Başlamak için geliştirme ortamınızı ayarlamanız gerekir:
+                        // Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -88,28 +88,28 @@ namespace EmbeddedObjectExtractor
 }
 ```
 
-## Visual Studio'yu yükleyin: Henüz yapmadıysanız, .NET geliştirme için popüler bir tümleşik geliştirme ortamı (IDE) olan Visual Studio'yu indirip yükleyin.
+## Çözüm
 
-Yeni Bir Proje Oluşturun: Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun. Uygulamanızın gereksinimlerine göre uygun proje türünü seçin.
+Bu makalede, C# ve Aspose.Email for .NET kitaplığını kullanarak e-postalardan gömülü nesnelerin nasıl çıkarılacağını araştırdık. E-postanın yüklenmesi ve ayrıştırılmasından, gömülü nesnelerin tanımlanmasına ve kaydedilmesine kadar tüm süreci ele aldık. Bu kılavuzu takip ederek e-posta işleme yeteneklerinizi geliştirebilir ve uygulamalarınızın içeriğini zenginleştirebilirsiniz.
 
-## Aspose.Email'i yükleyin: Aspose.Email'i projenize dahil etmek için NuGet Paket Yöneticisini kullanabilir veya kütüphaneyi web sitesinden indirebilir ve projenizde ona başvurabilirsiniz.
+## SSS'ler
 
-### TGZ Dosyalarını Yükleme ve Çıkarma
+### Aspose.Email for .NET'i nasıl yüklerim?
 
-Başlamak için Zimbra TGZ dosyasını yükleyip içeriğini çıkaralım:[ TGZ dosyasını yükleyin](https://releases.aspose.com/email/net/) İçeriği geçici bir dizine çıkarın 
+ Aspose.Email for .NET'i Aspose.Release'ler'ten indirerek kurabilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya NuGet gibi bir paket yöneticisi kullanarak. 
 
-### Mesaj Klasörlerinde Gezinme
+### Gömülü nesneleri HTML dışındaki eklerden çıkarabilir miyim?
 
-TGZ dosyasını çıkardıktan sonra farklı mesaj klasörleri arasında gezinebilirsiniz:
+Evet, Aspose.Email for .NET, HTML, düz metin ve hatta multimedya formatları da dahil olmak üzere çeşitli ek türlerinden gömülü nesneleri ayıklamak için yöntemler sağlar.
 
-###  Çıkarılan klasörü MapiMessage olarak yükle
+### Aspose.Email for .NET'in kullanımı ücretsiz mi?
 
- Klasörlere ve mesajlara erişme[ Her mesajı işle](https://purchase.aspose.com/pricing/email/net)Mesajları Farklı Formatlarda Kaydetme
+ Aspose.Email for .NET ticari bir kütüphanedir ve projelerinizde kullanmak için lisans almanız gerekebilir. Bakın[fiyatlandırma sayfası](https://purchase.aspose.com/pricing/email/net) daha fazla bilgi için.
 
-### Aspose.Email, mesajlarınızı MSG, EML veya HTML gibi çeşitli formatlarda kaydetmenize olanak tanır:
+### Çıkarılan gömülü nesneleri kaydetmeden önce değiştirebilir miyim?
 
- Mesajı MSG olarak kaydet
+Evet, çıkartılan gömülü nesneleri kaydetmeden önce değiştirebilirsiniz. Aspose.Email kütüphanesi, e-posta içeriğini ve kaynaklarını değiştirmek için çeşitli yöntemler sunar.
 
-###  Mesajı EML olarak kaydet
+### Aspose.Email for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
 
- Mesajı HTML olarak kaydet[Gelişmiş Seçeneklerin Uygulanması](https://reference.aspose.com/email/net/). 
+ Daha fazla kod örneği ve öğreticiyi şurada bulabilirsiniz:[API Referansı](https://reference.aspose.com/email/net/). 

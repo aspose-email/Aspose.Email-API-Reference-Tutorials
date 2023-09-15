@@ -1,96 +1,96 @@
 ---
-title: Dieser Leitfaden führt Sie durch den Prozess der Angabe von Empfängeradressen in C# mithilfe der Aspose.Email für .NET-Bibliothek. Aspose.Email ist eine leistungsstarke .NET-API, die Ihnen die Arbeit mit E-Mail-Nachrichten und verschiedenen E-Mail-bezogenen Aufgaben ermöglicht. In diesem Tutorial erfahren Sie, wie Sie mithilfe der Bibliothek Empfängeradressen zu einer E-Mail-Nachricht hinzufügen.
-linktitle: Voraussetzungen
-second_title: Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
-description: Visual Studio oder eine beliebige C#-Entwicklungsumgebung installiert.
+title: Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
+linktitle: Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
+second_title: Aspose.Email Java E-Mail-Management-API
+description: Steigern Sie die Wirkung Ihrer E-Mails, indem Sie mit Aspose.Email für Java Prioritäts- und Wichtigkeitsheader festlegen. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie es geht.
 type: docs
 weight: 14
 url: /de/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
 
-## Aspose.Email für .NET-Bibliothek. Sie erhalten es von der
+## Einführung
 
-Aspose.Email für .NET-Versionen
+In dieser umfassenden Anleitung führen wir Sie durch die Schritte zur Verwendung von Aspose.Email für Java, um Prioritäts- und Wichtigkeitsheader in Ihren E-Mails festzulegen. Ganz gleich, ob Sie wichtige Geschäftsvorschläge versenden oder einfach nur die Dringlichkeit Ihrer Nachricht betonen möchten, mit diesem Tutorial sind Sie bestens gerüstet.
 
-## Schritte
+## Voraussetzungen
 
-Befolgen Sie diese Schritte, um Empfängeradressen in C# mit Aspose.Email für .NET anzugeben:
+Bevor Sie mit der Implementierung beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-- 1. Erstellen Sie ein neues C#-Projekt
-- Erstellen Sie zunächst ein neues C#-Projekt in Ihrer Entwicklungsumgebung.[2. Fügen Sie einen Verweis auf Aspose.Email hinzu](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) auf Ihrem System installiert.
+-  Aspose.Email für Java-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/email/java/).
 
-## Laden Sie die Aspose.Email für .NET-Bibliothek herunter und installieren Sie sie, falls Sie dies noch nicht getan haben.
+## Schritt 1: Erstellen Sie ein Java-Projekt
 
-Öffnen Sie Ihr C#-Projekt.
+Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Email-Bibliothek zu den Abhängigkeiten Ihres Projekts hinzugefügt haben.
 
-## Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf „Referenzen“ und wählen Sie „Referenz hinzufügen“.
+## Schritt 2: Aspose.Email-Klassen importieren
 
-Durchsuchen Sie die heruntergeladenen Aspose.Email-DLL-Dateien und wählen Sie sie aus.
+Importieren Sie die erforderlichen Aspose.Email-Klassen in Ihren Java-Code. Mit diesen Kursen können Sie mit E-Mail-Nachrichten arbeiten und Prioritäts- und Wichtigkeitsheader festlegen.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## 3. Importieren Sie die erforderlichen Namespaces
+## Schritt 3: Erstellen Sie eine E-Mail-Nachricht
 
-Importieren Sie in Ihre C#-Codedatei die erforderlichen Namespaces für die Verwendung von Aspose.Email-Klassen:
+Um Prioritäts- und Wichtigkeitsheader festzulegen, müssen Sie zunächst eine E-Mail-Nachricht erstellen. So können Sie mit Aspose.Email eine einfache E-Mail-Nachricht erstellen:
 
 ```java
-//4. Erstellen und konfigurieren Sie die E-Mail-Nachricht
+// Erstellen Sie eine neue E-Mail-Nachricht
 MailMessage message = new MailMessage();
 
-// Erstellen Sie eine neue Instanz von
+// Legen Sie Absender- und Empfängeradressen fest
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Klasse, um Ihre E-Mail-Nachricht darzustellen. Konfigurieren Sie den Absender und Betreff der E-Mail:
+// Legen Sie den Betreff und den Text der E-Mail fest
 message.setSubject("Important Meeting");
 
-//5. Empfängeradressen hinzufügen
+//Fügen Sie den E-Mail-Text hinzu
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-//Mit dem können Sie Empfängeradressen hinzufügen
+// Legen Sie die E-Mail-Priorität fest
 message.setPriority(MailPriority.High);
 ```
 
- , Und
+Im obigen Code haben wir eine E-Mail-Nachricht erstellt, die Absender- und Empfängeradressen festgelegt, den Betreff und den Text der E-Mail angegeben und schließlich die Priorität der E-Mail auf „Hoch“ festgelegt.
 
-##  Eigenschaften der
+## Schritt 5: Senden Sie die E-Mail
 
- Klasse. So können Sie Empfängeradressen hinzufügen:
+Sobald Sie die E-Mail-Nachricht mit der gewünschten Priorität und Wichtigkeit konfiguriert haben, ist es an der Zeit, sie zu versenden. Aspose.Email vereinfacht auch den E-Mail-Versand:
 
 ```java
-//6. Vervollständigen Sie die E-Mail-Nachricht
+// Erstellen Sie eine Instanz der SmtpClient-Klasse
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-//Fügen Sie Ihrer E-Mail-Nachricht den E-Mail-Text und alle anderen erforderlichen Inhalte hinzu:
+// Senden Sie die E-Mail
 client.send(message);
 ```
 
-7. Senden Sie die E-Mail`"smtp.example.com"`, `"username"` Zum Versenden der E-Mail können Sie die verwenden`"password"` Klasse, bereitgestellt von Aspose.Email. Konfigurieren Sie die SMTP-Servereinstellungen und senden Sie die E-Mail:
+ Ersetzen`"smtp.example.com"`, `"username"` , Und`"password"` mit Ihren SMTP-Serverdetails.
+
+## Abschluss
+
+In diesem Tutorial haben wir untersucht, wie Sie Aspose.Email für Java verwenden, um Prioritäts- und Wichtigkeitsheader in Ihren E-Mail-Nachrichten festzulegen. Indem Sie diese Schritte befolgen, können Sie sicherstellen, dass Ihre E-Mails mit der richtigen Dringlichkeit und Wichtigkeit zugestellt werden, und so die Kommunikation mit Ihren Empfängern verbessern.
 
 ## FAQs
 
- Wie kann ich mehrere Empfänger hinzufügen?
+### Wie kann ich die Priorität einer E-Mail auf „Niedrig“ ändern?
 
-##  Sie können mehrere Empfänger hinzufügen, indem Sie die aufrufen
+ Um die E-Mail-Priorität auf „Niedrig“ zu ändern, verwenden Sie einfach die`MailPriority.Low` enum beim Festlegen der Priorität, wie in Schritt 3 gezeigt.
 
-###  Methode mehrmals auf der jeweiligen
+### Kann ich Aspose.Email mit anderen Programmiersprachen verwenden?
 
-:`MailPriority.Low`Kann ich Empfängernamen zusammen mit ihren E-Mail-Adressen angeben?
+Ja, Aspose.Email ist für verschiedene Programmiersprachen verfügbar, darunter .NET, Python und Android. Die entsprechenden Bibliotheken finden Sie auf der Aspose-Website.
 
-### Ja, Sie können beim Hinzufügen von Empfängern sowohl den Namen als auch die E-Mail-Adresse des Empfängers angeben:
+### Ist es möglich, für eine E-Mail sowohl Priorität als auch Wichtigkeit festzulegen?
 
-Wie gehe ich mit Ausnahmen beim Versenden einer E-Mail um?
+Absolut! Sie können sowohl die Prioritäts- als auch die Wichtigkeitsüberschrift festlegen, um die Dringlichkeit und Bedeutung Ihrer Nachricht anzupassen.
 
-### Sie können Try-Catch-Blöcke verwenden, um Ausnahmen zu behandeln, die beim E-Mail-Versand auftreten können:
+### Gibt es Einschränkungen für E-Mail-Wichtigkeitsheader?
 
- Weitere Informationen und erweiterte Funktionen von Aspose.Email für .NET finden Sie im
+Sie können zwar Wichtigkeitsüberschriften festlegen, bedenken Sie jedoch, dass die tatsächliche Auswirkung auf den Posteingang des Empfängers je nach E-Mail-Client unterschiedlich sein kann.
 
-### Aspose API-Referenzen
+### Wie gehe ich mit E-Mail-Anhängen mit Aspose.Email um?
 
-Damit ist die Anleitung zum Angeben von Empfängeradressen in C# mit Aspose.Email für .NET abgeschlossen. Sie haben gelernt, wie Sie mithilfe der Bibliotheksfunktionen eine E-Mail-Nachricht erstellen, Empfängeradressen hinzufügen und die E-Mail versenden.
-
-###  Konvertieren von E-Mails in MHT mit Zeitzone in C#
-
- Konvertieren von E-Mails in MHT mit Zeitzone in C#`Attachment` Aspose.Email .NET E-Mail-Verarbeitungs-API
+ Der Umgang mit E-Mail-Anhängen ist mit Aspose.Email unkompliziert. Du kannst den ... benutzen`Attachment` Klasse zum Hinzufügen von Anhängen zu Ihren E-Mail-Nachrichten. Eine detaillierte Anleitung finden Sie in der Aspose.Email-Dokumentation.

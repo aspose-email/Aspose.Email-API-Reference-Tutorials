@@ -1,105 +1,105 @@
 ---
-title: Aggiungi le istruzioni using necessarie
-linktitle: Crea un'istanza della classe Appuntamento
-second_title: Imposta le proprietà dell'appuntamento
-description: Aggiungi partecipanti all'appuntamento
+title: Estrazione di allegati incorporati da file MSG utilizzando C#
+linktitle: Estrazione di allegati incorporati da file MSG utilizzando C#
+second_title: Aspose.Email API di elaborazione della posta elettronica .NET
+description: Scopri come estrarre allegati incorporati da file MSG utilizzando C# e Aspose.Email per .NET. Una guida completa con esempi di codice sorgente.
 type: docs
 weight: 10
 url: /it/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
 
-##  Imposta lo stato partecipante per i partecipanti
+## Introduzione agli allegati incorporati
 
-Conclusione
+Gli allegati incorporati sono file incapsulati all'interno di un messaggio di posta elettronica, consentendo al destinatario di accedere ai file senza la necessità di collegamenti esterni. Questi allegati possono essere particolarmente utili quando si condividono documenti preservando il contesto della conversazione e-mail.
 
-## In questa guida abbiamo esplorato il processo di gestione dei partecipanti agli appuntamenti e di impostazione dello stato dei partecipanti utilizzando C# e Aspose.Email per .NET. Le funzionalità complete della libreria la rendono uno strumento prezioso per gli sviluppatori che devono lavorare in modo efficiente con le attività relative alla posta elettronica.
+## Iniziare con Aspose.Email per .NET
 
-Domande frequenti
+Aspose.Email per .NET è una potente libreria che semplifica le attività di elaborazione della posta elettronica nelle applicazioni .NET. Fornisce un supporto completo per lavorare con vari formati di posta elettronica, inclusi i file MSG. Per iniziare, segui questi passaggi:
 
-1. Come posso ottenere la libreria Aspose.Email per .NET?
+1. Scarica e installa Aspose.Email per .NET
 
-    È possibile scaricare la libreria Aspose.Email per .NET dal sito Web:[Scarica Aspose.Email per .NET](https://releases.aspose.com/email/net)Posso personalizzare le opzioni relative allo stato del partecipante?
+    È possibile scaricare la libreria da[Aspose.Email per il sito Web .NET](https://releases.aspose.com/email/net) oppure utilizzare il gestore pacchetti NuGet:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2.  Sì, puoi personalizzare le opzioni dello stato del partecipante in base alle esigenze della tua candidatura utilizzando il
+2. Crea un nuovo progetto C#
 
-    enumerazione fornita da Aspose.Email per .NET.
+   Inizia creando un nuovo progetto C# nel tuo ambiente di sviluppo preferito.
 
-3. Aspose.Email per .NET è adatto per gestire altre attività relative alla posta elettronica?
+3. Aggiungi riferimento ad Aspose.Email
 
-   Assolutamente! Aspose.Email per .NET offre un'ampia gamma di funzionalità per lavorare con e-mail, allegati, appuntamenti e altro, rendendolo una scelta versatile per varie attività relative alla posta elettronica.
+   Aggiungi un riferimento alla DLL Aspose.Email nel tuo progetto.
 
-## Posso integrare questa funzionalità nella mia applicazione .NET esistente?
+## Caricamento e analisi di file MSG
 
-Sì, puoi facilmente integrare le funzionalità discusse in questa guida nelle tue applicazioni .NET esistenti facendo riferimento alla libreria Aspose.Email per .NET e seguendo gli esempi di codice forniti.
+Prima di estrarre gli allegati incorporati, dobbiamo caricare e analizzare il file MSG utilizzando Aspose.Email. Ecco come puoi farlo:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-//Dove posso trovare ulteriore documentazione e risorse?
+// Carica il file MSG
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // Per documentazione e risorse più dettagliate, fare riferimento alla documentazione Aspose.Email per .NET:
+    // Accedi alle proprietà del messaggio
     string subject = message.Subject;
     string sender = message.From.Address;
-    //Aspose.Email per la documentazione .NET
+    // ...
 }
 ```
 
-##  Lettura di tutti i messaggi dallo storage Zimbra TGZ con C#
+## Estrazione degli allegati incorporati
 
- Lettura di tutti i messaggi dallo storage Zimbra TGZ con C#
+Ora che abbiamo caricato il file MSG, estraiamo gli allegati incorporati:
 
 ```csharp
-// Aspose.Email API di elaborazione della posta elettronica .NET
+// Estrai gli allegati incorporati
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
     {
         var embeddedMsg = (MailMessage)attachment.Object;
-        // Scopri come leggere i messaggi di archiviazione Zimbra TGZ utilizzando C# e Aspose.Email per .NET. Guida passo passo con codice sorgente incluso.
+        // Elabora il messaggio incorporato
     }
 }
 ```
 
-## Introduzione alla lettura di tutti i messaggi dallo storage Zimbra TGZ con C#
+## Salvataggio degli allegati estratti
 
-In questo tutorial esploreremo come leggere tutti i messaggi dallo spazio di archiviazione Zimbra TGZ utilizzando C# e la libreria Aspose.Email per .NET. Zimbra è una popolare piattaforma di collaborazione e-mail e talvolta potremmo aver bisogno di estrarre messaggi dai suoi file di archiviazione per scopi di analisi o migrazione. La libreria Aspose.Email per .NET fornisce un potente set di funzionalità per lavorare con i messaggi di posta elettronica, inclusa la lettura di messaggi da vari formati come TGZ. Andremo passo dopo passo per capire come raggiungere questo compito.
+Una volta elaborati gli allegati incorporati, possiamo salvarli nella posizione desiderata:
 
 ```csharp
-//Prerequisiti
+// Salva gli allegati incorporati
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
 }
 ```
 
-## Prima di immergerci nel codice, assicurati di avere i seguenti prerequisiti:
+## Conclusione
 
-Visual Studio: utilizzeremo Visual Studio come ambiente di sviluppo.
+In questo tutorial, abbiamo esplorato come estrarre allegati incorporati da file MSG utilizzando C# e la libreria Aspose.Email per .NET. Seguendo i passaggi descritti qui, puoi integrare perfettamente le funzionalità di estrazione degli allegati nelle tue applicazioni .NET, migliorando il modo in cui gestisci il contenuto della posta elettronica.
 
-##  Aspose.Email per .NET Library: puoi scaricarlo da
+## Domande frequenti
 
-### Qui
+### Come posso scaricare Aspose.Email per .NET?
 
-1. Crea un nuovo progetto C#[Apri Visual Studio e crea un nuovo progetto C#. Puoi scegliere il tipo di progetto adatto alle tue esigenze.](https://releases.aspose.com/email/net).
+ È possibile scaricare Aspose.Email per .NET da[Sito web Aspose.E-mail](https://releases.aspose.com/email/net).
 
-### 2. Installare la libreria Aspose.Email
+### Aspose.Email è compatibile con diversi formati di posta elettronica?
 
-Una volta creato il progetto, è necessario aggiungere un riferimento alla libreria Aspose.Email. È possibile farlo facendo clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, selezionando "Gestisci pacchetti NuGet" e quindi cercando "Aspose.Email". Installa il pacchetto nel tuo progetto.
+Sì, Aspose.Email fornisce un ampio supporto per vari formati di posta elettronica, inclusi MSG, EML, PST e altri.
 
-### 3. Importare gli spazi dei nomi necessari
+### Posso utilizzare Aspose.Email sia nelle applicazioni desktop che web?
 
-Nel file di codice C#, importa gli spazi dei nomi necessari per lavorare con Aspose.Email:
+Assolutamente! Aspose.Email per .NET può essere utilizzato sia in applicazioni desktop che web, rendendolo una scelta versatile per le tue esigenze di elaborazione della posta elettronica.
 
-### 4. Carica il file TGZ
+### Ci sono considerazioni sulla licenza?
 
-Successivamente, è necessario caricare il file Zimbra TGZ contenente i messaggi email:[ Elabora ogni messaggio di posta elettronica](https://purchase.aspose.com).
+ Sì, Aspose.Email è una libreria commerciale. Puoi trovare informazioni dettagliate sulla licenza su[Sito web Aspose](https://purchase.aspose.com).
 
-###  Leggere ed elaborare il messaggio di posta elettronica
+### Dove posso trovare altri esempi e documentazione?
 
- Eseguire le operazioni desiderate sul messaggio[5. Accedi al contenuto del messaggio](https://reference.aspose.com/email/net).
+ È possibile trovare esempi dettagliati e documentazione sull'utilizzo di Aspose.Email per .NET nel file[documentazione](https://reference.aspose.com/email/net).

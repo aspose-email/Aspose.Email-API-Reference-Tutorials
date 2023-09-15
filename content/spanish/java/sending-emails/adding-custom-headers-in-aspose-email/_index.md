@@ -1,60 +1,60 @@
 ---
-title: aquí
-linktitle: Configurando el proyecto
-second_title: Cree un nuevo proyecto de C# en su entorno de desarrollo.
-description: Agregue referencias a las DLL de Aspose.Email en su proyecto.
+title: Agregar encabezados personalizados en Aspose.Email
+linktitle: Agregar encabezados personalizados en Aspose.Email
+second_title: Aspose.Email API de gestión de correo electrónico Java
+description: Aprenda cómo mejorar sus mensajes de correo electrónico agregando encabezados personalizados usando Aspose.Email para Java. Mejore los metadatos y la organización del correo electrónico.
 type: docs
 weight: 15
 url: /es/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
 
-## Crear el borrador del correo electrónico
+## Introducción
 
-Para crear un borrador de mensaje, siga estos pasos:
+En el mundo de la comunicación por correo electrónico, la capacidad de agregar encabezados personalizados a sus mensajes de correo electrónico puede ser una herramienta valiosa. Los encabezados personalizados le permiten incluir información o metadatos adicionales en sus correos electrónicos, lo que puede resultar útil para diversos fines, como rastrear, filtrar o categorizar mensajes.
 
-Agregar destinatarios y asunto
+Aspose.Email para Java proporciona una API potente y flexible para trabajar con mensajes de correo electrónico, incluida la capacidad de agregar encabezados personalizados a sus correos electrónicos. En esta guía paso a paso, lo guiaremos a través del proceso de agregar encabezados personalizados a un mensaje de correo electrónico usando Aspose.Email para Java.
 
-##  Crear una nueva instancia de MailMessage
+## Requisitos previos
 
- Agregar recipientes
+Antes de comenzar, asegúrese de cumplir con los siguientes requisitos previos:
 
-1.  Establecer asunto de correo electrónico
+1. Entorno de desarrollo Java: asegúrese de tener un entorno de desarrollo Java configurado en su sistema. Necesitará Java para compilar y ejecutar los ejemplos de código Java de esta guía.
 
-2. Redactar el cuerpo del correo electrónico[ Establecer cuerpo de correo electrónico](https://releases.aspose.com/email/java/)
+2.  Biblioteca Aspose.Email para Java: descargue la biblioteca Aspose.Email para Java desde el enlace de descarga:[Descargar Aspose.Email para Java](https://releases.aspose.com/email/java/)
 
-   Guardar como borrador
+   Una vez descargado, agregue los archivos JAR Aspose.Email a la ruta de clase de su proyecto Java. Esta biblioteca es esencial para trabajar con mensajes de correo electrónico utilizando Aspose.Email.
 
- Guarde el correo electrónico como borrador
+Con estos requisitos previos implementados, está listo para comenzar a agregar encabezados personalizados a sus mensajes de correo electrónico usando Aspose.Email para Java. Siga la guía paso a paso de la sección anterior para aprender cómo hacer esto.
 
-Cargando y editando borradores
+¡Ciertamente! A continuación se muestra una guía paso a paso sobre cómo agregar encabezados personalizados en Aspose.Email utilizando la API Aspose.Email para Java. Esta guía incluye ejemplos de código fuente.
 
-## Para cargar y editar borradores de mensajes, siga estos pasos:
+## Paso 1: configure su entorno Java
 
- Cargar un borrador de correo electrónico
+Antes de comenzar, asegúrese de tener Java y Aspose.Email para Java correctamente instalados y configurados en su entorno de desarrollo.
 
-##  Editar destinatarios
+## Paso 2: crea un nuevo proyecto Java
 
- Editar cuerpo del correo electrónico
+Cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) preferido.
 
-##  Guardar cambios
+## Paso 3: agregue Aspose.Email para la biblioteca Java
 
-Conclusión
+Debe agregar la biblioteca Aspose.Email para Java a su proyecto. Puede hacerlo descargando la biblioteca desde el enlace de descarga proporcionado:
 
-[En este artículo, exploramos cómo manejar borradores de mensajes en C# usando la biblioteca Aspose.Email para .NET. Aprendimos cómo crear, editar y guardar borradores de correos electrónicos, brindando a los usuarios una experiencia perfecta al redactar mensajes. Si sigue los pasos descritos en esta guía, puede mejorar su aplicación de cliente de correo electrónico con la funcionalidad de borrador de mensajes.](https://releases.aspose.com/email/java/)
+[Descargar Aspose.Email para Java](https://releases.aspose.com/email/java/)
 
-Preguntas frecuentes
+Una vez descargado, agregue los archivos JAR Aspose.Email al classpath de su proyecto.
 
-## ¿Cómo descargo la biblioteca Aspose.Email para .NET?
+## Paso 4: Importar clases de Aspose.Email
 
- Puede descargar la biblioteca Aspose.Email para .NET desde
+En su código Java, importe las clases Aspose.Email necesarias:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## aquí
+## Paso 5: crea un mensaje de correo electrónico
 
-¿Puedo editar los destinatarios y el asunto de un borrador guardado?
+Puede crear un mensaje de correo electrónico utilizando Aspose.Email. He aquí un ejemplo:
 
 ```java
 MailMessage message = new MailMessage();
@@ -64,46 +64,46 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 ```
 
-## Sí, puede cargar un borrador guardado, editar sus destinatarios, tema y contenido, y luego guardar los cambios como un borrador actualizado.
+## Paso 6: agregue encabezados personalizados
 
-¿El borrador del correo electrónico se guarda en un formato específico?`MailMessage`Sí, el borrador del correo electrónico se guarda en formato EML, que es un formato ampliamente utilizado para mensajes de correo electrónico.`getHeaders`¿Puedo integrar el manejo de borradores de mensajes en mi aplicación de correo electrónico existente?
+ Para agregar encabezados personalizados al correo electrónico, puede utilizar el`MailMessage` objetos`getHeaders` método:
 
 ```java
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 ```
 
-Por supuesto, siguiendo los pasos proporcionados en esta guía, puede integrar sin problemas el manejo de borradores de mensajes en su aplicación cliente de correo electrónico existente.
+Puede agregar tantos encabezados personalizados como necesite.
 
-## ¿La biblioteca Aspose.Email admite otras funcionalidades relacionadas con el correo electrónico?
+## Paso 7: guarde el correo electrónico
 
- Sí, la biblioteca Aspose.Email ofrece una amplia gama de funciones para trabajar con mensajes de correo electrónico, incluido el envío, la recepción y la manipulación de correos electrónicos y archivos adjuntos. Puede consultar la documentación para obtener más detalles:
+Después de agregar encabezados personalizados, puede guardar el correo electrónico en un archivo o enviarlo utilizando las capacidades de Aspose.Email. A continuación se muestra un ejemplo de cómo guardarlo en un archivo:
 
 ```java
 message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 ```
 
-## aquí
+## Paso 8: Completa el programa
 
- Exportación de correo electrónico sin esfuerzo a EML usando C#
+Aquí está el programa Java completo:
 
 ```java
 import com.aspose.email.*;
 
 public class AddCustomHeadersExample {
     public static void main(String[] args) {
-        // Exportación de correo electrónico sin esfuerzo a EML usando C#
+        // Crear un nuevo mensaje de correo electrónico
         MailMessage message = new MailMessage();
         message.setSubject("Adding Custom Headers Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 
-        // Aspose.Email API de procesamiento de correo electrónico .NET
+        // Agregar encabezados personalizados
         message.getHeaders().add("X-Custom-Header1", "Value1");
         message.getHeaders().add("X-Custom-Header2", "Value2");
 
-        // Exporte correos electrónicos sin esfuerzo a formato EML usando C# y Aspose.Email para .NET. Aprenda paso a paso con ejemplos de código fuente.
+        // Guarde el correo electrónico en un archivo
         message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with custom headers saved successfully.");
@@ -111,24 +111,24 @@ public class AddCustomHeadersExample {
 }
 ```
 
-## Introducción a la exportación de correo electrónico sin esfuerzo a EML
+## Conclusión
 
-Aspose.Email para .NET es una biblioteca sólida y rica en funciones que permite a los desarrolladores trabajar con mensajes de correo electrónico y diversas tareas relacionadas con el correo electrónico en sus aplicaciones .NET. Proporciona un conjunto completo de clases y métodos para manipular correos electrónicos, archivos adjuntos, encabezados y más. En este tutorial, nos centraremos en el uso de Aspose.Email para exportar mensajes de correo electrónico al formato EML sin esfuerzo.
+En esta guía, aprendió cómo agregar encabezados personalizados a un correo electrónico usando Aspose.Email para Java. Puede personalizar sus mensajes de correo electrónico con varios encabezados para cumplir con sus requisitos específicos.
 
 
-## Requisitos previos
+## Preguntas frecuentes (Preguntas frecuentes)
 
-### Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
-   Visual Studio o cualquier otro entorno de desarrollo C#
+### ¿Qué son los encabezados personalizados en los mensajes de correo electrónico?
+   Los encabezados personalizados son campos adicionales en los mensajes de correo electrónico que se pueden utilizar para proporcionar información adicional o metadatos sobre el mensaje.
 
-### Conocimientos básicos de programación en C#.
-    Aspose.Email para la biblioteca .NET (descargar desde`getHeaders`aquí`MailMessage`Instalación de Aspose.Email para .NET
+### ¿Cómo puedo enviar un correo electrónico con encabezados personalizados usando Aspose.Email?
+    Puedes usar el`getHeaders` método de la`MailMessage` clase para agregar encabezados personalizados a un mensaje de correo electrónico antes de enviarlo.
 
-### Siga estos pasos para instalar la biblioteca Aspose.Email para .NET en su proyecto:
-    Descargue la biblioteca Aspose.Email desde
+### ¿Los encabezados personalizados son visibles para el destinatario del correo electrónico?
+   Los encabezados personalizados generalmente no se muestran al destinatario del correo electrónico, pero se pueden usar para diversos fines, como filtrar o procesar correos electrónicos por parte del remitente o del destinatario.
 
-### aquí
-   Extraiga el archivo zip descargado a un directorio en su computadora.`add`Abra su proyecto C# en Visual Studio.`HeadersCollection`Haga clic derecho en su proyecto en el Explorador de soluciones y seleccione "Administrar paquetes NuGet".
+### ¿Puedo agregar varios encabezados personalizados a un solo mensaje de correo electrónico?
+    Sí, puede agregar varios encabezados personalizados a un solo mensaje de correo electrónico utilizando el`add` método en el`HeadersCollection` objeto.
 
-### En el Administrador de paquetes NuGet, haga clic en "Examinar" y busque "Aspose.Email".
-   Seleccione la versión apropiada del paquete y haga clic en "Instalar".`getHeaders`Cargando mensajes de correo electrónico`MailMessage`Para exportar correos electrónicos al formato EML, primero debemos cargar los mensajes de correo electrónico desde la fuente. Así es como puedes hacerlo:
+### ¿Cómo puedo extraer encabezados personalizados de los correos electrónicos recibidos?
+    Puedes usar el`getHeaders` método en el correo electrónico recibido`MailMessage` objeto para recuperar y procesar encabezados personalizados.

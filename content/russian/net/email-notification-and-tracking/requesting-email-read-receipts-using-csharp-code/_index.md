@@ -1,37 +1,37 @@
 ---
-title: Requesting Email Read Receipts using C# Code
-linktitle: Requesting Email Read Receipts using C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
+title: Запрос уведомлений о прочтении электронной почты с использованием кода C#
+linktitle: Запрос уведомлений о прочтении электронной почты с использованием кода C#
+second_title: Aspose.Email .NET API обработки электронной почты
+description: Узнайте, как использовать код C# для запроса уведомлений о прочтении электронной почты с помощью Aspose.Email для .NET, улучшая отслеживание общения.
 type: docs
 weight: 11
 url: /ru/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-In today's digital age, communication via email has become an integral part of our personal and professional lives. Often, when sending important emails, we want to ensure that the recipient has read and acknowledged our message. This is where email read receipts come into play. In this step-by-step tutorial, we will guide you through the process of requesting email read receipts using C# with Aspose.Email for .NET.
+В современную эпоху цифровых технологий общение по электронной почте стало неотъемлемой частью нашей личной и профессиональной жизни. Часто при отправке важных писем мы хотим быть уверены, что получатель прочитал и подтвердил наше сообщение. Именно здесь в игру вступают уведомления о прочтении электронной почты. В этом пошаговом руководстве мы проведем вас через процесс запроса уведомлений о прочтении электронной почты с использованием C# с Aspose.Email для .NET.
 
-## Introduction to Email Read Receipts
+## Введение в уведомления о прочтении электронной почты
 
-Email read receipts, also known as email tracking or return receipts, allow you to receive notifications when the recipient opens and reads your email. It's a valuable feature, especially in business communications, as it provides confirmation of message delivery and engagement.
+Уведомления о прочтении электронной почты, также известные как отслеживание электронной почты или уведомления о возврате, позволяют вам получать уведомления, когда получатель открывает и читает ваше письмо. Это ценная функция, особенно в бизнес-коммуникациях, поскольку она обеспечивает подтверждение доставки сообщения и взаимодействия.
 
-## Prerequisites
+## Предварительные условия
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+Прежде чем мы углубимся в код, убедитесь, что у вас есть следующие предварительные условия:
 
-- Visual Studio installed on your system.
-- Aspose.Email for .NET library downloaded and referenced in your project.
+- Visual Studio установлена в вашей системе.
+- Библиотека Aspose.Email для .NET загружена и используется в вашем проекте.
 
-## Step 1: Creating a MailMessage Instance
+## Шаг 1. Создание экземпляра MailMessage
 
-The first step in implementing email read receipts is to create an instance of the `MailMessage` class. This class represents an email message and allows you to set various properties of the email.
+ Первым шагом в реализации уведомлений о прочтении электронной почты является создание экземпляра`MailMessage` сорт. Этот класс представляет сообщение электронной почты и позволяет вам устанавливать различные свойства электронной почты.
 
 ```csharp
 MailMessage message = new MailMessage();
 ```
 
-## Step 2: Specifying Message Details
+## Шаг 2. Указание деталей сообщения
 
-Now, let's specify the details of the email message, including the sender, recipient, HTML body, and delivery notification options.
+Теперь давайте укажем детали сообщения электронной почты, включая отправителя, получателя, тело HTML и параметры уведомления о доставке.
 
 ```csharp
 message.From = "sender@sender.com";
@@ -42,17 +42,17 @@ message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-## Step 3: Creating an SmtpClient Instance
+## Шаг 3. Создание экземпляра SmtpClient
 
-To send the email, we need to create an instance of the `SmtpClient` class, which is responsible for sending the message.
+ Чтобы отправить электронное письмо, нам нужно создать экземпляр`SmtpClient` класс, который отвечает за отправку сообщения.
 
 ```csharp
 SmtpClient client = new SmtpClient();
 ```
 
-## Step 4: Configuring SMTP Settings
+## Шаг 4. Настройка параметров SMTP
 
-Configure your SMTP server settings by specifying the host server, username, password, and port number.
+Настройте параметры SMTP-сервера, указав хост-сервер, имя пользователя, пароль и номер порта.
 
 ```csharp
 client.Host = "smtp.server.com";
@@ -61,9 +61,9 @@ client.Password = "Password";
 client.Port = 25;
 ```
 
-## Step 5: Sending the Email
+## Шаг 5: Отправка электронного письма
 
-Finally, use the `client.Send` method to send the email message. If the message is sent successfully, a "Message Sent" notification will be displayed.
+ Наконец, используйте`client.Send` метод отправки сообщения электронной почты. Если сообщение отправлено успешно, отобразится уведомление «Сообщение отправлено».
 
 ```csharp
 try
@@ -77,14 +77,14 @@ catch (Exception ex)
 }
 ```
 
-With these five simple steps, you can request email read receipts when sending emails using C# and Aspose.Email for .NET. This feature adds a layer of assurance to your email communications, ensuring that you know when your important messages are read.
+С помощью этих пяти простых шагов вы можете запрашивать уведомления о прочтении электронной почты при отправке электронных писем с использованием C# и Aspose.Email для .NET. Эта функция добавляет уровень уверенности к вашим сообщениям по электронной почте, гарантируя, что вы будете знать, когда ваши важные сообщения будут прочитаны.
 
-## Complete Source Code
+## Полный исходный код
 ```csharp
-// Create an Instance of MailMessage class
+// Создайте экземпляр класса MailMessage.
 MailMessage message = new MailMessage();
 
-// Specify From, To, HtmlBody, DeliveryNotificationOptions field
+// Укажите поле «От», «Кому», «HtmlBody», «DeliveryNotificationOptions».
 message.From = "sender@sender.com";
 message.To.Add("receiver@receiver.com");
 message.HtmlBody = "<html><body>This is the Html body</body></html>";
@@ -92,10 +92,10 @@ message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
 message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 
-// Create an instance of SmtpClient Class
+// Создайте экземпляр класса SmtpClient.
 SmtpClient client = new SmtpClient();
 
-// Specify your mailing host server, Username, Password and Port No
+// Укажите свой почтовый хост-сервер, имя пользователя, пароль и номер порта.
 client.Host = "smtp.server.com";
 client.Username = "Username";
 client.Password = "Password";
@@ -103,9 +103,9 @@ client.Port = 25;
 
 try
 {
-	// Client.Send will send this message
+	// Client.Send отправит это сообщение
 	client.Send(message);
-	// Display ‘Message Sent’, only if message sent successfully
+	// Отобразить «Сообщение отправлено», только если сообщение отправлено успешно.
 	Console.WriteLine("Message sent");
 }
 catch (Exception ex)
@@ -113,23 +113,23 @@ catch (Exception ex)
 	System.Diagnostics.Trace.WriteLine(ex.ToString());
 }
 ```
-## Conclusion
+## Заключение
 
-In this tutorial, we've explored how to request email read receipts using C# with Aspose.Email for .NET. Email tracking is a powerful tool for ensuring your messages are delivered and read by the intended recipients, particularly in professional settings. By following the steps outlined here, you can easily implement this functionality in your email application.
+В этом руководстве мы рассмотрели, как запрашивать уведомления о прочтении электронной почты с помощью C# с помощью Aspose.Email для .NET. Отслеживание электронной почты — это мощный инструмент, позволяющий гарантировать, что ваши сообщения будут доставлены и прочитаны предполагаемыми получателями, особенно в профессиональных условиях. Выполнив описанные здесь шаги, вы сможете легко реализовать эту функцию в своем почтовом приложении.
 
-## Frequently Asked Questions (FAQs)
+## Часто задаваемые вопросы (FAQ)
 
-1. ### What is the purpose of email read receipts?
-   Email read receipts provide confirmation that an email has been opened and read by the recipient. They are often used for tracking important or time-sensitive messages.
+1. ### Какова цель получения уведомлений о прочтении электронной почты?
+   Уведомления о прочтении электронной почты подтверждают, что электронное письмо было открыто и прочитано получателем. Они часто используются для отслеживания важных или срочных сообщений.
 
-2. ### Can email read receipts be disabled by the recipient?
-   Yes, email clients often allow users to disable the sending of read receipts. Therefore, it's not guaranteed that you will always receive them.
+2. ### Может ли получатель отключить уведомления о прочтении электронной почты?
+   Да, почтовые клиенты часто позволяют пользователям отключать отправку уведомлений о прочтении. Поэтому нет гарантии, что вы всегда их получите.
 
-3. ### Are email read receipts a standard feature in all email clients?
-   No, email read receipts are not universally supported. Whether they work or not depends on the email client and the recipient's settings.
+3. ### Являются ли уведомления о прочтении электронной почты стандартной функцией всех почтовых клиентов?
+   Нет, уведомления о прочтении электронной почты не поддерживаются повсеместно. Будут ли они работать или нет, зависит от почтового клиента и настроек получателя.
 
-4. ### Is it possible to track when an email is opened on a mobile device?
-   Email tracking is typically based on the recipient's email client and settings, so it may or may not work on mobile devices, depending on various factors.
+4. ### Можно ли отследить, когда письмо открывается на мобильном устройстве?
+   Отслеживание электронной почты обычно основано на почтовом клиенте и настройках получателя, поэтому оно может работать или не работать на мобильных устройствах в зависимости от различных факторов.
 
-5. ### Are there privacy considerations when using email read receipts?
-   Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.
+5. ### Существуют ли соображения конфиденциальности при использовании уведомлений о прочтении по электронной почте?
+   Да, существуют проблемы конфиденциальности, связанные с отслеживанием электронной почты. Некоторые получатели могут посчитать это агрессивным, поэтому важно использовать эту функцию ответственно и уважать предпочтения конфиденциальности.

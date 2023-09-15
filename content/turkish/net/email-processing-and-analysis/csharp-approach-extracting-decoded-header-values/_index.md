@@ -1,35 +1,35 @@
 ---
-title: C# Approach - Extracting Decoded Header Values
-linktitle: C# Approach - Extracting Decoded Header Values
-second_title: Aspose.Email .NET Email Processing API
-description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
+title: C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma
+linktitle: C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET'i kullanarak C#'ta kodu çözülmüş e-posta başlığı değerlerini çıkarmayı öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
 type: docs
 weight: 17
 url: /tr/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
+Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i kullanma sürecinde size rehberlik edeceğiz. Aspose.Email for .NET, geliştiricilerin e-posta başlıklarını okuma ve değiştirme de dahil olmak üzere e-posta mesajlarının çeşitli yönleriyle çalışmasına olanak tanıyan güçlü bir kitaplıktır.
 
-## Step 1: Download and Install Aspose.Email for .NET
+## Adım 1: Aspose.Email for .NET'i indirin ve yükleyin
 
-Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
+ Başlamadan önce Aspose.Email for .NET'in kurulu olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi aşağıdaki bağlantıdan indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net).
 
-## Step 2: Create a New C# Project
+## Adım 2: Yeni Bir C# Projesi Oluşturun
 
-Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
+Tercih ettiğiniz tümleşik geliştirme ortamında (IDE) veya metin düzenleyicide yeni bir C# projesi oluşturarak başlayın.
 
-## Step 3: Add a Reference to Aspose.Email
+## Adım 3: Aspose.Email'e Referans Ekleyin
 
-In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
+ Aspose.Email'i projenizde kullanabilmek için, projenize bir referans eklemeniz gerekmektedir.`Aspose.Email` toplantı. İşte nasıl:
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Add" > "Reference."
-3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
-4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
+1. Solution Explorer'da projenize sağ tıklayın.
+2. "Ekle" > "Referans"ı seçin.
+3. "Referans Yöneticisi" penceresinde "Gözat" veya "Gözat..."a tıklayın ve Aspose.Email'i kurduğunuz konuma gidin.
+4.  Projeniz için uygun montajı seçin (örneğin,`Aspose.Email.dll`) ve "Ekle"yi tıklayın.
 
-## Step 4: Extract Decoded Header Values
+## Adım 4: Kodu Çözülmüş Başlık Değerlerini Çıkarın
 
-Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
+Şimdi bir e-posta mesajından kodu çözülmüş başlık değerlerini çıkarmak için koda dalalım. Bu örnekte "Konu" başlığını çıkarmaya odaklanacağız.
 
 ```csharp
 using Aspose.Email;
@@ -39,7 +39,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Load the email message
+        // E-posta mesajını yükle
 		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
 		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
 		Console.WriteLine(decodedValue);
@@ -48,32 +48,32 @@ class Program
 }
 ```
 
-In the code snippet above, we perform the following steps:
+Yukarıdaki kod parçacığında aşağıdaki adımları gerçekleştiriyoruz:
 
-1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
-2. We create a `Main` method as the entry point of our application.
-3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
-5. We print the decoded Subject header to the console.
+1. Gerekli ad alanlarını içe aktarıyoruz (`Aspose.Email` Ve`Aspose.Email.Mail`).
+2.  Biz bir yaratıyoruz`Main` yöntemi uygulamamızın giriş noktası olarak kullanın.
+3.  İçinde`Main`yöntemini kullanıyoruz`MailMessage.Load` Bir dosyadan e-posta mesajı yükleme yöntemi. Yer değiştirmek`"path/to/your/email.eml"` işlemek istediğiniz e-posta mesajının gerçek yolunu belirtin.
+4.  biz kullanıyoruz`Headers.GetDecodedValue` Konu başlığının kodunu çözme yöntemi.
+5. Kodu çözülmüş Konu başlığını konsola yazdırıyoruz.
 
-## Step 5: Run the Application
+## Adım 5: Uygulamayı Çalıştırın
 
-Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
+ Uygulamanızı derleyin ve çalıştırın. Değiştirdiğinizden emin olun`"path/to/your/email.eml"` işlemek istediğiniz e-posta mesajının gerçek yolunu belirtin. Uygulama e-postayı yükleyecek, kodu çözülmüş Konu başlığını çıkaracak ve konsolda gösterecektir.
 
-## FAQs
+## SSS
 
-### How can I decode other email headers using Aspose.Email for .NET?
+### Aspose.Email for .NET'i kullanarak diğer e-posta başlıklarının kodunu nasıl çözebilirim?
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
+ "Kimden", "Kime", "Tarih" vb. gibi çeşitli e-posta başlıklarının kodunu çözebilirsiniz.`Headers.GetDecodedValue` yöntem. Sadece başlık değerini yönteme parametre olarak sağlayın.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
-For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
+ Ayrıntılı belgeler ve örnekler için bkz.[Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net).
 
-### Is Aspose.Email for .NET available for free?
+### Aspose.Email for .NET ücretsiz olarak mevcut mu?
 
-Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
+ Aspose.Email for .NET ticari bir kütüphanedir. Özelliklerini şu şekilde keşfedebilirsiniz:[ücretsiz deneme sürümünü indirme](https://releases.aspose.com/email/net).
 
-## Conclusion
+## Çözüm
 
-In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i nasıl kullanacağınızı öğrendiniz. Aspose.Email for .NET, geliştiricilerin e-posta mesajlarıyla verimli bir şekilde çalışmasını sağlayan, başlıkların işlenmesi de dahil olmak üzere kapsamlı bir araç seti sağlar.

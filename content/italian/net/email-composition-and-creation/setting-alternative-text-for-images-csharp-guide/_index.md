@@ -1,41 +1,41 @@
 ---
-title: Carica il messaggio di posta elettronica
-linktitle: Verifica la crittografia S/MIME
-second_title: Visualizza il risultato
-description: Conclusione
+title: Impostazione del testo alternativo per le immagini - Guida C#
+linktitle: Impostazione del testo alternativo per le immagini - Guida C#
+second_title: Aspose.Email API di elaborazione della posta elettronica .NET
+description: Impara a impostare testo alternativo per le immagini nelle e-mail utilizzando Aspose.Email per .NET. Garantisci l'accessibilità con un testo alternativo chiaro. Documentazione e codice inclusi.
 type: docs
 weight: 15
 url: /it/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
 
-In questa guida, abbiamo esplorato come sfruttare le funzionalità di Aspose.Email per .NET per verificare la crittografia dei messaggi. Rilevando e verificando la crittografia S/MIME, decrittografando i messaggi e gestendo le eccezioni, puoi garantire comunicazioni sicure nelle tue applicazioni. Aspose.Email semplifica il processo, permettendoti di concentrarti sulla creazione di funzionalità di posta elettronica robuste e sicure.
+Questa guida ti guiderà attraverso il processo di impostazione del testo alternativo per le immagini nelle e-mail utilizzando Aspose.Email per .NET. Il testo alternativo, noto anche come "testo alternativo", viene utilizzato per fornire una descrizione testuale di un'immagine nel caso in cui l'immagine non possa essere visualizzata. Aspose.Email per .NET è una potente libreria che ti consente di lavorare con email e allegati in vari formati. In questa guida ci concentreremo sull'impostazione del testo alternativo per le immagini nei messaggi di posta elettronica utilizzando C#.
 
-## Domande frequenti
+## Prerequisiti
 
-In che modo Aspose.Email gestisce gli allegati crittografati?
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
-1.  Aspose.Email fornisce metodi per estrarre e decrittografare gli allegati da messaggi di posta elettronica crittografati. Puoi usare il
-2.  metodo dopo aver decrittografato il messaggio per salvare gli allegati su disco.
+1. Visual Studio o qualsiasi ambiente di sviluppo C# compatibile installato.
+2. Aspose.Email per la libreria .NET. È possibile utilizzare Gestione pacchetti NuGet in Visual Studio.
 
-## Posso utilizzare Aspose.Email con le applicazioni .NET Core?
+## Passaggio 1: crea un nuovo progetto
 
-1. Sì, Aspose.Email è compatibile sia con le applicazioni .NET Framework che .NET Core, offrendoti flessibilità nei tuoi progetti di sviluppo.
+1. Avviare Visual Studio e creare un nuovo progetto di applicazione console C#.
 
-## Quali algoritmi di crittografia supporta Aspose.Email?
+## Passaggio 2: installare Aspose.Email tramite NuGet
 
-1. Aspose.Email supporta un'ampia gamma di algoritmi di crittografia, inclusi AES, RSA e TripleDES, per garantire la sicurezza dei tuoi messaggi di posta elettronica.
-2. È possibile crittografare solo parti specifiche di un'e-mail?
+1. Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e seleziona "Gestisci pacchetti NuGet".
+2. Cerca "Aspose.Email" e installa l'ultima versione del pacchetto.
 
-## Sì, Aspose.Email ti consente di crittografare selettivamente alcune parti di un messaggio di posta elettronica, come allegati o sezioni specifiche del corpo dell'email.
+## Passaggio 3: aggiungere le istruzioni Using
 
 ```csharp
 using Aspose.Email.Mail;
 using Aspose.Email.Mime;
 ```
 
-## Dove posso trovare ulteriori informazioni su Aspose.Email per .NET?
+## Passaggio 4: caricare e modificare il messaggio e-mail
 
-1.  Per informazioni più dettagliate, esempi e documentazione, visitare il`MailMessage`Aspose.Email per la documentazione .NET
+1.  Caricare il messaggio e-mail utilizzando il file`MailMessage` classe:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -44,40 +44,40 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-3.  pagina.
+3. Carica il contenuto HTML del messaggio email:
 
 ```csharp
 var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-##  Tecnica C#: conversione del corpo HTML in testo semplice
+## Passaggio 5: aggiungi AlternativeView per testo alternativo alle immagini
 
- Tecnica C#: conversione del corpo HTML in testo semplice 
+Aggiungi htmlview per il testo alternativo all'immagine come AlternateView nel messaggio. 
 ```csharp
 message.AlternateViews.Add(htmlView);
 ```
 
-##  Aspose.Email API di elaborazione della posta elettronica .NET
+## Passaggio 6: salva e invia l'e-mail
 
-1.  Impara a convertire facilmente il contenuto delle e-mail HTML in testo semplice utilizzando Aspose.Email per .NET. Guida e codice dettagliati. Esplora ora!
+1. Salva il messaggio modificato in un file o invialo utilizzando il metodo desiderato:
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
 ```
 
-## Nella moderna comunicazione e-mail, la formattazione HTML migliora l'attrattiva visiva dei messaggi. Tuttavia, esistono situazioni in cui potrebbe essere necessario convertire il contenuto HTML in testo semplice. Aspose.Email per .NET offre una soluzione semplice per raggiungere questo obiettivo. In questa guida forniremo un tutorial passo passo insieme al codice sorgente su come convertire il corpo HTML di un'e-mail in testo semplice utilizzando Aspose.Email per .NET.
+## Conclusione
 
-Introduzione ad Aspose.Email per .NET
+In questa guida hai imparato come impostare testo alternativo per le immagini nei messaggi di posta elettronica utilizzando Aspose.Email per .NET. Seguendo i passaggi sopra descritti, puoi assicurarti che il contenuto della tua email rimanga accessibile e informativo anche quando le immagini non possono essere visualizzate.
 
-## Aspose.Email per .NET è una potente libreria che facilita il lavoro con vari formati e funzionalità di posta elettronica all'interno delle applicazioni .NET.
+## FAQ
 
-## Perché convertire HTML in testo semplice?
+## Come posso scaricare la libreria Aspose.Email?
 
-La conversione del contenuto HTML in testo semplice è utile per scenari come la visualizzazione del contenuto della posta elettronica in un formato semplificato o l'estrazione di informazioni importanti per un'ulteriore elaborazione.
+È possibile scaricare la libreria Aspose.Email dalle versioni Aspose o installarla tramite NuGet Package Manager in Visual Studio.
 
-### Iniziare
+### Come faccio ad aggiungere immagini come risorse collegate in un'e-mail?
 
-Configurazione dell'ambiente di sviluppo`LinkedResource`Assicurati di avere quanto segue:`cid:`Visual Studio o IDE preferito[.NET Framework o .NET Core installato](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### Installazione di Aspose.Email tramite NuGet
+Per aggiungere immagini come risorse collegate in un'e-mail, puoi utilizzare il file`LinkedResource` classe. Assegna un ID contenuto alla risorsa collegata, quindi fai riferimento a questo ID contenuto nel corpo HTML utilizzando il file`cid:` schema. Per informazioni dettagliate consultare il[Documentazione di LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+### Dove posso trovare ulteriore documentazione su Aspose.Email per .NET?
 
-Apri il tuo progetto in Visual Studio.[Passare a "Strumenti" > "Gestione pacchetti NuGet" > "Gestisci pacchetti NuGet per la soluzione".](https://reference.aspose.com/email/net/).
+ È possibile trovare documentazione più dettagliata, tutorial ed esempi su come lavorare con Aspose.Email per .NET nel file[Riferimento API](https://reference.aspose.com/email/net/).

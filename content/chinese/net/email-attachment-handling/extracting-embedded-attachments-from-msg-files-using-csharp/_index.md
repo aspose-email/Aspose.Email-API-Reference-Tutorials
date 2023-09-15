@@ -1,105 +1,105 @@
 ---
-title: 添加必要的 using 语句
-linktitle: 创建 Appointment 类的实例
-second_title: 设置约会属性
-description: 将与会者添加到约会中
+title: 使用 C# 从 MSG 文件中提取嵌入式附件
+linktitle: 使用 C# 从 MSG 文件中提取嵌入式附件
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 了解如何使用 C# 和 Aspose.Email for .NET 从 MSG 文件中提取嵌入附件。包含源代码示例的综合指南。
 type: docs
 weight: 10
 url: /zh/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
 
-## 设置与会者的与会者状态
+## 嵌入式附件简介
 
-结论
+嵌入式附件是封装在电子邮件中的文件，允许收件人无需外部链接即可访问这些文件。在共享文档同时保留电子邮件对话上下文时，这些附件特别有用。
 
-## 在本指南中，我们探索了使用 C# 和 Aspose.Email for .NET 管理约会与会者和设置参与者状态的过程。该库的全面功能使其成为需要高效处理电子邮件相关任务的开发人员的宝贵工具。
+## .NET 的 Aspose.Email 入门
 
-常见问题解答
+Aspose.Email for .NET 是一个功能强大的库，可以简化 .NET 应用程序中的电子邮件处理任务。它为处理各种电子邮件格式（包括 MSG 文件）提供全面支持。首先，请按照下列步骤操作：
 
-1. 如何获取 Aspose.Email for .NET 库？
+1. 下载并安装 Aspose.Email for .NET
 
-   您可以从以下网站下载 Aspose.Email for .NET 库：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net)我可以自定义参与者状态选项吗？
+   您可以从以下位置下载该库[Aspose.Email for .NET 网站](https://releases.aspose.com/email/net)或使用 NuGet 包管理器：
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2. 是的，您可以根据应用程序的需要自定义参与者状态选项
+2. 创建一个新的 C# 项目
 
-   Aspose.Email for .NET 提供的枚举。
+   首先在您首选的开发环境中创建一个新的 C# 项目。
 
-3. Aspose.Email for .NET 是否适合处理其他电子邮件相关任务？
+3. 添加对 Aspose.Email 的引用
 
-   绝对地！ Aspose.Email for .NET 提供了广泛的功能来处理电子邮件、附件、约会等，使其成为各种电子邮件相关任务的多功能选择。
+   在项目中添加对 Aspose.Email DLL 的引用。
 
-## 我可以将此功能集成到我现有的 .NET 应用程序中吗？
+## 加载和解析 MSG 文件
 
-是的，您可以通过引用 Aspose.Email for .NET 库并按照提供的代码示例轻松地将本指南中讨论的功能集成到现有的 .NET 应用程序中。
+在提取嵌入的附件之前，我们需要使用 Aspose.Email 加载并解析 MSG 文件。您可以这样做：
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-//在哪里可以找到更多文档和资源？
+//加载 MSG 文件
 using (var message = MailMessage.Load("sample.msg"))
 {
-    //有关更详细的文档和资源，请参阅 Aspose.Email for .NET 文档：
+    //访问消息属性
     string subject = message.Subject;
     string sender = message.From.Address;
-    //Aspose.Email for .NET 文档
+    //...
 }
 ```
 
-## 使用 C# 读取 Zimbra TGZ 存储中的所有消息
+## 提取嵌入的附件
 
-使用 C# 读取 Zimbra TGZ 存储中的所有消息
+现在我们已经加载了 MSG 文件，让我们提取嵌入的附件：
 
 ```csharp
-//Aspose.Email .NET 电子邮件处理 API
+//提取嵌入的附件
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
     {
         var embeddedMsg = (MailMessage)attachment.Object;
-        //了解如何使用 C# 和 Aspose.Email for .NET 读取 Zimbra TGZ 存储消息。包含源代码的分步指南。
+        //处理嵌入的消息
     }
 }
 ```
 
-## 使用 C# 从 Zimbra TGZ 存储读取所有消息的简介
+## 保存提取的附件
 
-在本教程中，我们将探索如何使用 C# 和 Aspose.Email for .NET 库从 Zimbra TGZ 存储读取所有消息。 Zimbra 是一个流行的电子邮件协作平台，有时我们可能需要从其存储文件中提取消息以进行分析或迁移。 Aspose.Email for .NET 库提供了一组强大的功能来处理电子邮件，包括读取 TGZ 等各种格式的消息。我们将逐步了解如何完成此任务。
+处理完嵌入的附件后，我们可以将它们保存到所需的位置：
 
 ```csharp
-//先决条件
+//保存嵌入的附件
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
 }
 ```
 
-## 在我们深入研究代码之前，请确保您具备以下先决条件：
+## 结论
 
-Visual Studio：我们将使用 Visual Studio 作为我们的开发环境。
+在本教程中，我们探讨了如何使用 C# 和 Aspose.Email for .NET 库从 MSG 文件中提取嵌入附件。通过执行此处概述的步骤，您可以将附件提取功能无缝集成到 .NET 应用程序中，从而增强处理电子邮件内容的方式。
 
-##  Aspose.Email for .NET Library：您可以从以下位置下载它
+## 常见问题解答
 
-### 这里
+### 如何下载 .NET 版 Aspose.Email？
 
-1. 创建一个新的C#项目[打开 Visual Studio 并创建一个新的 C# 项目。您可以选择适合您要求的项目类型。](https://releases.aspose.com/email/net).
+您可以从以下位置下载 Aspose.Email for .NET[Aspose.Email网站](https://releases.aspose.com/email/net).
 
-### 2.安装Aspose.Email库
+### Aspose.Email 是否兼容不同的电子邮件格式？
 
-创建项目后，您需要添加对 Aspose.Email 库的引用。您可以通过右键单击解决方案资源管理器中的项目，选择“管理 NuGet 包”，然后搜索“Aspose.Email”来执行此操作。将包安装到您的项目中。
+是的，Aspose.Email 为各种电子邮件格式提供广泛支持，包括 MSG、EML、PST 等。
 
-### 3.导入必要的命名空间
+### 我可以在桌面和 Web 应用程序中使用 Aspose.Email 吗？
 
-在您的 C# 代码文件中，导入使用 Aspose.Email 所需的命名空间：
+绝对地！ Aspose.Email for .NET 可在桌面和 Web 应用程序中使用，使其成为满足您的电子邮件处理需求的多功能选择。
 
-### 4.加载TGZ文件
+### 是否有任何许可注意事项？
 
-接下来，您需要加载包含电子邮件的 Zimbra TGZ 文件：[处理每封电子邮件](https://purchase.aspose.com).
+是的，Aspose.Email 是一个商业库。您可以在以下位置找到详细的许可信息[阿斯普斯网站](https://purchase.aspose.com).
 
-### 阅读并处理电子邮件
+### 在哪里可以找到更多示例和文档？
 
-对消息执行所需的操作[5. 访问消息内容](https://reference.aspose.com/email/net).
+您可以在以下位置找到有关使用 Aspose.Email for .NET 的详细示例和文档[文档](https://reference.aspose.com/email/net).

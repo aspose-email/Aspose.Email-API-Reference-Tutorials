@@ -1,60 +1,60 @@
 ---
-title: Hier
-linktitle: Einrichten des Projekts
-second_title: Erstellen Sie ein neues C#-Projekt in Ihrer Entwicklungsumgebung.
-description: Fügen Sie Verweise auf die Aspose.Email-DLLs in Ihrem Projekt hinzu.
+title: Hinzufügen benutzerdefinierter Header in Aspose.Email
+linktitle: Hinzufügen benutzerdefinierter Header in Aspose.Email
+second_title: Aspose.Email Java E-Mail-Management-API
+description: Erfahren Sie, wie Sie Ihre E-Mail-Nachrichten verbessern, indem Sie mit Aspose.Email für Java benutzerdefinierte Header hinzufügen. Verbessern Sie E-Mail-Metadaten und -Organisation.
 type: docs
 weight: 15
 url: /de/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
 
-## Erstellen des E-Mail-Entwurfs
+## Einführung
 
-Um einen Nachrichtenentwurf zu erstellen, gehen Sie folgendermaßen vor:
+In der Welt der E-Mail-Kommunikation kann die Möglichkeit, Ihren E-Mail-Nachrichten benutzerdefinierte Header hinzuzufügen, ein wertvolles Werkzeug sein. Mit benutzerdefinierten Headern können Sie zusätzliche Informationen oder Metadaten in Ihre E-Mails einfügen, die für verschiedene Zwecke nützlich sein können, beispielsweise zum Verfolgen, Filtern oder Kategorisieren von Nachrichten.
 
-Empfänger und Betreff hinzufügen
+Aspose.Email für Java bietet eine leistungsstarke und flexible API für die Arbeit mit E-Mail-Nachrichten, einschließlich der Möglichkeit, Ihren E-Mails benutzerdefinierte Header hinzuzufügen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch den Prozess des Hinzufügens benutzerdefinierter Header zu einer E-Mail-Nachricht mit Aspose.Email für Java.
 
-##  Erstellen Sie eine neue MailMessage-Instanz
+## Voraussetzungen
 
- Empfänger hinzufügen
+Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1.  E-Mail-Betreff festlegen
+1. Java-Entwicklungsumgebung: Stellen Sie sicher, dass auf Ihrem System eine Java-Entwicklungsumgebung eingerichtet ist. Sie benötigen Java, um die Java-Codebeispiele in diesem Handbuch zu kompilieren und auszuführen.
 
-2. E-Mail-Text verfassen[ E-Mail-Text festlegen](https://releases.aspose.com/email/java/)
+2.  Aspose.Email für Java-Bibliothek: Laden Sie die Aspose.Email für Java-Bibliothek über den Download-Link herunter:[Aspose.Email für Java herunterladen](https://releases.aspose.com/email/java/)
 
-   Als Entwurf speichern
+   Fügen Sie nach dem Herunterladen die Aspose.Email-JAR-Dateien zum Klassenpfad Ihres Java-Projekts hinzu. Diese Bibliothek ist für die Arbeit mit E-Mail-Nachrichten mit Aspose.Email unerlässlich.
 
- Speichern Sie die E-Mail als Entwurf
+Wenn diese Voraussetzungen erfüllt sind, können Sie mit Aspose.Email für Java benutzerdefinierte Header zu Ihren E-Mail-Nachrichten hinzufügen. Befolgen Sie die Schritt-für-Schritt-Anleitung im vorherigen Abschnitt, um zu erfahren, wie Sie dies tun.
 
-Entwürfe laden und bearbeiten
+Sicherlich! Nachfolgend finden Sie eine Schritt-für-Schritt-Anleitung zum Hinzufügen benutzerdefinierter Header in Aspose.Email mithilfe der Aspose.Email für Java-API. Dieses Handbuch enthält Quellcodebeispiele.
 
-## Um Nachrichtenentwürfe zu laden und zu bearbeiten, gehen Sie folgendermaßen vor:
+## Schritt 1: Richten Sie Ihre Java-Umgebung ein
 
- Laden Sie einen E-Mail-Entwurf
+Bevor Sie beginnen, stellen Sie sicher, dass Java und Aspose.Email für Java ordnungsgemäß in Ihrer Entwicklungsumgebung installiert und eingerichtet sind.
 
-##  Empfänger bearbeiten
+## Schritt 2: Erstellen Sie ein neues Java-Projekt
 
- E-Mail-Text bearbeiten
+Erstellen Sie ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE).
 
-##  Änderungen speichern
+## Schritt 3: Aspose.Email für Java-Bibliothek hinzufügen
 
-Abschluss
+Sie müssen die Aspose.Email for Java-Bibliothek zu Ihrem Projekt hinzufügen. Sie können dies tun, indem Sie die Bibliothek über den bereitgestellten Download-Link herunterladen:
 
-[In diesem Artikel haben wir untersucht, wie Entwurfsnachrichten in C# mithilfe der Aspose.Email für .NET-Bibliothek verarbeitet werden. Wir haben gelernt, wie man E-Mail-Entwürfe erstellt, bearbeitet und speichert, um Benutzern ein nahtloses Erlebnis beim Verfassen von Nachrichten zu bieten. Indem Sie die in dieser Anleitung beschriebenen Schritte befolgen, können Sie Ihre E-Mail-Client-Anwendung mit der Funktionalität für Nachrichtenentwürfe erweitern.](https://releases.aspose.com/email/java/)
+[Aspose.Email für Java herunterladen](https://releases.aspose.com/email/java/)
 
-FAQs
+Fügen Sie nach dem Herunterladen die Aspose.Email-JAR-Dateien zum Klassenpfad Ihres Projekts hinzu.
 
-## Wie lade ich die Aspose.Email für .NET-Bibliothek herunter?
+## Schritt 4: Aspose.Email-Klassen importieren
 
- Sie können die Aspose.Email für .NET-Bibliothek unter herunterladen
+Importieren Sie in Ihren Java-Code die erforderlichen Aspose.Email-Klassen:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Hier
+## Schritt 5: Erstellen Sie eine E-Mail-Nachricht
 
-Kann ich die Empfänger und den Betreff eines gespeicherten Entwurfs bearbeiten?
+Sie können eine E-Mail-Nachricht mit Aspose.Email erstellen. Hier ist ein Beispiel:
 
 ```java
 MailMessage message = new MailMessage();
@@ -64,46 +64,46 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 ```
 
-## Ja, Sie können einen gespeicherten Entwurf laden, dessen Empfänger, Betreff und Inhalt bearbeiten und die Änderungen dann als aktualisierten Entwurf speichern.
+## Schritt 6: Benutzerdefinierte Header hinzufügen
 
-Wird der E-Mail-Entwurf in einem bestimmten Format gespeichert?`MailMessage`Ja, der E-Mail-Entwurf wird im EML-Format gespeichert, einem weit verbreiteten Format für E-Mail-Nachrichten.`getHeaders`Kann ich die Bearbeitung von Nachrichtenentwürfen in meine bestehende E-Mail-Anwendung integrieren?
+ Um der E-Mail benutzerdefinierte Header hinzuzufügen, können Sie die verwenden`MailMessage` Objekt`getHeaders` Methode:
 
 ```java
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 ```
 
-Auf jeden Fall können Sie die Bearbeitung von Nachrichtenentwürfen nahtlos in Ihre bestehende E-Mail-Client-Anwendung integrieren, indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen.
+Sie können beliebig viele benutzerdefinierte Header hinzufügen.
 
-## Unterstützt die Aspose.Email-Bibliothek andere E-Mail-bezogene Funktionen?
+## Schritt 7: Speichern Sie die E-Mail
 
- Ja, die Aspose.Email-Bibliothek bietet eine breite Palette von Funktionen für die Arbeit mit E-Mail-Nachrichten, einschließlich des Sendens, Empfangens und Bearbeitens von E-Mails und Anhängen. Weitere Einzelheiten finden Sie in der Dokumentation:
+Nachdem Sie benutzerdefinierte Header hinzugefügt haben, können Sie die E-Mail in einer Datei speichern oder mit den Funktionen von Aspose.Email versenden. Hier ist ein Beispiel für das Speichern in einer Datei:
 
 ```java
 message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 ```
 
-## Hier
+## Schritt 8: Schließen Sie das Programm ab
 
- Müheloser E-Mail-Export nach EML mit C#
+Hier ist das komplette Java-Programm:
 
 ```java
 import com.aspose.email.*;
 
 public class AddCustomHeadersExample {
     public static void main(String[] args) {
-        // Müheloser E-Mail-Export nach EML mit C#
+        // Erstellen Sie eine neue E-Mail-Nachricht
         MailMessage message = new MailMessage();
         message.setSubject("Adding Custom Headers Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 
-        // Aspose.Email .NET E-Mail-Verarbeitungs-API
+        // Fügen Sie benutzerdefinierte Header hinzu
         message.getHeaders().add("X-Custom-Header1", "Value1");
         message.getHeaders().add("X-Custom-Header2", "Value2");
 
-        // Exportieren Sie E-Mails mühelos in das EML-Format mit C# und Aspose.Email für .NET. Lernen Sie Schritt für Schritt anhand von Quellcode-Beispielen.
+        // Speichern Sie die E-Mail in einer Datei
         message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with custom headers saved successfully.");
@@ -111,24 +111,24 @@ public class AddCustomHeadersExample {
 }
 ```
 
-## Einführung in den mühelosen E-Mail-Export nach EML
+## Abschluss
 
-Aspose.Email für .NET ist eine robuste und funktionsreiche Bibliothek, die es Entwicklern ermöglicht, in ihren .NET-Anwendungen mit E-Mail-Nachrichten und verschiedenen E-Mail-bezogenen Aufgaben zu arbeiten. Es bietet einen umfassenden Satz an Klassen und Methoden zum Bearbeiten von E-Mails, Anhängen, Headern und mehr. In diesem Tutorial konzentrieren wir uns auf die Verwendung von Aspose.Email zum mühelosen Exportieren von E-Mail-Nachrichten in das EML-Format.
+In dieser Anleitung haben Sie erfahren, wie Sie mit Aspose.Email für Java benutzerdefinierte Header zu einer E-Mail hinzufügen. Sie können Ihre E-Mail-Nachrichten mit verschiedenen Headern an Ihre spezifischen Anforderungen anpassen.
 
 
-## Voraussetzungen
+## FAQs (häufig gestellte Fragen)
 
-### Bevor wir uns mit der Implementierung befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
-   Visual Studio oder eine andere C#-Entwicklungsumgebung
+### Was sind benutzerdefinierte Header in E-Mail-Nachrichten?
+   Benutzerdefinierte Header sind zusätzliche Felder in E-Mail-Nachrichten, die verwendet werden können, um zusätzliche Informationen oder Metadaten zur Nachricht bereitzustellen.
 
-### Grundkenntnisse der C#-Programmierung
-    Aspose.Email für .NET-Bibliothek (Download von`getHeaders`Hier`MailMessage`Installation von Aspose.Email für .NET
+### Wie kann ich mit Aspose.Email eine E-Mail mit benutzerdefinierten Headern senden?
+    Du kannst den ... benutzen`getHeaders` Methode der`MailMessage` Klasse, um einer E-Mail-Nachricht vor dem Senden benutzerdefinierte Header hinzuzufügen.
 
-### Befolgen Sie diese Schritte, um die Aspose.Email für .NET-Bibliothek in Ihrem Projekt zu installieren:
-    Laden Sie die Aspose.Email-Bibliothek herunter von
+### Sind benutzerdefinierte Header für den E-Mail-Empfänger sichtbar?
+   Benutzerdefinierte Header werden dem E-Mail-Empfänger normalerweise nicht angezeigt, können aber für verschiedene Zwecke verwendet werden, beispielsweise zum Filtern oder Verarbeiten von E-Mails auf Absender- oder Empfängerseite.
 
-### Hier
-   Extrahieren Sie die heruntergeladene ZIP-Datei in ein Verzeichnis auf Ihrem Computer.`add`Öffnen Sie Ihr C#-Projekt in Visual Studio.`HeadersCollection`Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt und wählen Sie „NuGet-Pakete verwalten“.
+### Kann ich einer einzelnen E-Mail-Nachricht mehrere benutzerdefinierte Header hinzufügen?
+    Ja, Sie können einer einzelnen E-Mail-Nachricht mehrere benutzerdefinierte Header hinzufügen, indem Sie die verwenden`add` Methode auf der`HeadersCollection` Objekt.
 
-### Klicken Sie im NuGet-Paketmanager auf „Durchsuchen“ und suchen Sie nach „Aspose.Email“.
-   Wählen Sie die entsprechende Version des Pakets aus und klicken Sie auf „Installieren“.`getHeaders`E-Mail-Nachrichten laden`MailMessage`Um E-Mails in das EML-Format zu exportieren, müssen wir zunächst die E-Mail-Nachrichten aus der Quelle laden. So können Sie es machen:
+### Wie kann ich benutzerdefinierte Header aus empfangenen E-Mails extrahieren?
+    Du kannst den ... benutzen`getHeaders` Methode für die empfangenen E-Mails`MailMessage` Objekt zum Abrufen und Verarbeiten benutzerdefinierter Header.

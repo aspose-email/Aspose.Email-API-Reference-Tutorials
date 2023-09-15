@@ -1,119 +1,119 @@
 ---
-title: TNEF Message Detection in C# - Explained
-linktitle: TNEF Message Detection in C# - Explained
-second_title: Aspose.Email .NET Email Processing API
-description: Learn to detect & process TNEF messages in C# using Aspose.Email for .NET. Enhance email handling with rich text & attachments.
+title: C#'ta TNEF Mesaj Algılama - Açıklandı
+linktitle: C#'ta TNEF Mesaj Algılama - Açıklandı
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET'i kullanarak C#'ta TNEF mesajlarını algılamayı ve işlemeyi öğrenin. Zengin metin ve eklerle e-posta yönetimini geliştirin.
 type: docs
 weight: 15
 url: /tr/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
 
-This guide will provide you with a detailed step-by-step explanation of how to detect TNEF (Transport Neutral Encapsulation Format) messages using the Aspose.Email for .NET library. TNEF is a format used by Microsoft Outlook to encapsulate rich text and attachments within email messages. Aspose.Email for .NET offers a powerful set of APIs to work with emails and attachments, including TNEF messages.
+Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Taşıma Nötr Kapsülleme Formatı) mesajlarının nasıl tespit edileceğine dair ayrıntılı adım adım açıklama sağlayacaktır. TNEF, Microsoft Outlook tarafından e-posta iletilerindeki zengin metni ve ekleri kapsüllemek için kullanılan bir biçimdir. Aspose.Email for .NET, TNEF mesajları da dahil olmak üzere e-postalar ve eklerle çalışmak için güçlü bir API seti sunar.
 
-## Prerequisites
+## Önkoşullar
 
-Before you begin, ensure you have the following:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- A development environment (e.g., Visual Studio) for C#.
-- Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net).
+- C# için bir geliştirme ortamı (örneğin, Visual Studio).
+-  Aspose.Email for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net).
 
-## Step 1: Create a New C# Project
+## 1. Adım: Yeni bir C# Projesi Oluşturun
 
-Start by creating a new C# project in your chosen development environment.
+Seçtiğiniz geliştirme ortamında yeni bir C# projesi oluşturarak başlayın.
 
-## Step 2: Install Aspose.Email for .NET
+## Adım 2: Aspose.Email for .NET'i yükleyin
 
-Install the Aspose.Email for .NET library using the NuGet Package Manager. Run the following command in the Package Manager Console:
+NuGet Paket Yöneticisini kullanarak Aspose.Email for .NET kitaplığını yükleyin. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırın:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## Step 3: Import Necessary Namespaces
+## 3. Adım: Gerekli Ad Alanlarını İçe Aktarın
 
-In your C# code, import the necessary namespaces:
+C# kodunuzda gerekli ad alanlarını içe aktarın:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-## Step 4: Load and Detect TNEF Message
+## Adım 4: TNEF Mesajını Yükleyin ve Algılayın
 
-1. Load the email message using the `MapiMessage` class:
+1.  E-posta mesajını kullanarak yükleyin.`MapiMessage` sınıf:
 
 ```csharp
-// Load the email with TNEF attachment
+// E-postayı TNEF ekiyle yükleyin
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-2. Determine whether the loaded email is a TNEF message:
+2. Yüklenen e-postanın bir TNEF mesajı olup olmadığını belirleyin:
 
 ```csharp
 bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-Replace `"path/to/your/email.msg"` with the actual path to your email message file.
+ Yer değiştirmek`"path/to/your/email.msg"` e-posta mesajı dosyanızın gerçek yolunu içerir.
 
-## Step 5: Process TNEF Attachments
+## Adım 5: TNEF Eklerini İşleyin
 
-If the loaded email is indeed a TNEF message, you can extract and process its attachments:
+Yüklenen e-posta gerçekten bir TNEF mesajıysa, eklerini çıkarabilir ve işleyebilirsiniz:
 
 ```csharp
-// Iterate through attachments
+// Ekler aracılığıyla yineleme
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extract TNEF attachment
+        // TNEF ekini çıkarın
         var tnefAttachment = attachment;
 
-        // Access TNEF properties and modify if necessary
-        // tnefAttachment.Properties...
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
     }
 }
 ```
 
-## FAQs
+## SSS
 
-### How Can I Check if an Email is a TNEF Message?
+### Bir E-postanın TNEF Mesajı olup olmadığını Nasıl Kontrol Edebilirim?
 
-To check if an email is a TNEF message, use the `IsTnefMessage()` method of the `MapiMessage` class:
+ Bir e-postanın TNEF mesajı olup olmadığını kontrol etmek için`IsTnefMessage()` yöntemi`MapiMessage` sınıf:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
 bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-### How Do I Extract Attachments from a TNEF Message?
+### Bir TNEF Mesajından Ekleri Nasıl Çıkarırım?
 
-To extract attachments from a TNEF message, follow these steps:
+Bir TNEF mesajından ekleri çıkarmak için şu adımları izleyin:
 
-1. Load the email using `MapiMessage.FromFile()`.
-2. Check if the email is a TNEF message using `OriginalIsTnef`.
-3. If it is a TNEF message, extract attachments using by iterating Attachments with ContentType.MediaType is equal to "application/ms-tnef".
+1.  E-postayı kullanarak yükleyin`MapiMessage.FromFile()`.
+2.  kullanarak e-postanın bir TNEF mesajı olup olmadığını kontrol edin.`OriginalIsTnef`.
+3. Bu bir TNEF mesajıysa, Ekleri ContentType ile yineleyerek kullanarak ekleri çıkarın.MediaType "application/ms-tnef" değerine eşittir.
 
 ```csharp
-// Iterate through attachments
+// Ekler aracılığıyla yineleme
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extract TNEF attachment
+        // TNEF ekini çıkarın
         var tnefAttachment = attachment;
 
-        // Access TNEF properties and modify if necessary
-        // tnefAttachment.Properties...
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
     }
 }
 ```
 
-For more detailed information and API references, refer to the [Aspose.Email for .NET documentation](https://reference.aspose.com/email/net/).
+ Daha ayrıntılı bilgi ve API referansları için bkz.[Aspose.Email for .NET belgeleri](https://reference.aspose.com/email/net/).
 
-## Conclusion
+## Çözüm
 
-In this guide, you have learned how to detect TNEF (Transport Neutral Encapsulation Format) messages using the Aspose.Email for .NET library. TNEF messages, often used by Microsoft Outlook, encapsulate rich text and attachments within emails. By following the steps outlined in this guide, you can efficiently identify TNEF messages and extract their attachments for further processing.
+Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Transport Neutral Encapsulation Format) mesajlarını nasıl tespit edeceğinizi öğrendiniz. Microsoft Outlook tarafından sıklıkla kullanılan TNEF mesajları, e-postaların içindeki zengin metinleri ve ekleri kapsüller. Bu kılavuzda özetlenen adımları izleyerek, TNEF mesajlarını verimli bir şekilde tanımlayabilir ve daha sonraki işlemler için eklerini çıkarabilirsiniz.
 
 

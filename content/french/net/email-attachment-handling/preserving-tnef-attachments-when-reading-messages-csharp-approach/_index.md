@@ -1,63 +1,63 @@
 ---
-title: Installation d'Aspose.Email pour .NET
-linktitle: Pour commencer, vous devez installer la bibliothèque Aspose.Email pour .NET. Vous pouvez le télécharger depuis le
-second_title: Aspose.Releases
-description: ou utilisez NuGet Package Manager dans Visual Studio.
+title: Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#
+linktitle: Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#
+second_title: API de traitement des e-mails Aspose.Email .NET
+description: Découvrez comment conserver les pièces jointes TNEF à l'aide d'Aspose.Email pour .NET dans ce guide étape par étape avec le code source.
 type: docs
 weight: 15
 url: /fr/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
 
-## Création d'un nouveau projet .NET
+## Introduction aux pièces jointes TNEF
 
-Ouvrez Visual Studio et créez un nouveau projet .NET.
+TNEF, également connu sous le nom de « winmail.dat », est un format de pièce jointe propriétaire utilisé par Microsoft Outlook et Exchange. Il encapsule divers éléments tels que du texte formaté, des images intégrées et même des informations de calendrier. Cependant, lorsque les e-mails sont transférés entre différents clients ou plateformes de messagerie, les pièces jointes TNEF peuvent parfois devenir illisibles ou inaccessibles. C'est là qu'Aspose.Email pour .NET vient à la rescousse.
 
-## Installez la bibliothèque Aspose.Email pour .NET à l'aide de NuGet Package Manager.
+## Premiers pas avec Aspose.Email pour .NET
 
-Vous êtes maintenant prêt à commencer à coder !
+Aspose.Email for .NET est une bibliothèque complète qui offre un large éventail de fonctionnalités pour travailler avec les e-mails et leurs pièces jointes. Pour commencer, vous devez :
 
-1. Chargement et analyse d'un message électronique[Chargement d'un message électronique](https://releases.aspose.com/email/net)Avant de pouvoir modifier les polices de l'e-mail, nous devons charger un e-mail. Vous pouvez charger un e-mail à partir de diverses sources, comme un fichier, un flux ou même un serveur de messagerie.
+1.  Téléchargez et installez Aspose.Email : visitez[ici](https://releases.aspose.com/email/net) pour télécharger et installer la dernière version d’Aspose.Email pour .NET.
 
-2.  Charger le message électronique
+2. Créer un nouveau projet : ouvrez votre environnement Visual Studio et créez un nouveau projet C#.
 
-3. Analyser le corps du message
+3. Ajouter une référence : ajoutez une référence à l’assembly Aspose.Email téléchargé dans votre projet.
 
-## Une fois l’email chargé, vous pouvez accéder à ses différentes parties, dont le corps HTML. L'analyse du corps HTML nous permet d'apporter des modifications à la police.
+## Chargement et analyse des messages électroniques
 
- Analyser le corps HTML
+Pour travailler avec des e-mails, vous devez d'abord charger et analyser l'e-mail. Aspose.Email propose des classes qui vous permettent de charger des e-mails provenant de diverses sources, notamment des fichiers, des flux et même des serveurs de messagerie. Voici un exemple de la façon dont vous pouvez charger un e-mail à partir d'un fichier :
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//Modification des polices dans l'e-mail
+// Charger l'e-mail avec la pièce jointe TNEF
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Comprendre les styles de police
+## Identification et extraction des pièces jointes TNEF
 
-Les polices des e-mails HTML sont définies à l'aide de styles CSS. Pour changer les polices, vous devez modifier les styles CSS associés au contenu HTML de l'e-mail.
+Une fois que vous avez chargé le message électronique, l'étape suivante consiste à identifier et extraire les pièces jointes TNEF. Les pièces jointes TNEF sont encapsulées dans un fichier spécial « winmail.dat ». Aspose.Email simplifie le processus d'identification et d'extraction de ces pièces jointes :
 
 ```csharp
-//Changer les polices par programme
+// Vérifiez si le message contient des pièces jointes TNEF
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //Supposons que vous souhaitiez modifier la police d'un paragraphe dans le corps HTML de l'e-mail. Voici comment procéder :
+        // Extraire la pièce jointe TNEF
         var tnefAttachment = attachment;
 
-        // Changer la police d'un paragraphe
-        //Conversion au format MHT
+        //Accéder aux propriétés du TNEF et modifier si nécessaire
+        // tnefAttachment.Propriétés...
     }
 }
 ```
 
-## Création d'un message MHT
+## Préserver les pièces jointes TNEF
 
-Pour convertir l'e-mail au format MHT, vous devez créer un e-mail au format MHT à l'aide d'Aspose.Email.
+La préservation des pièces jointes TNEF implique de garantir que les pièces jointes extraites conservent leur formatage et leur contenu d'origine. Aspose.Email fournit des méthodes et des propriétés pour accéder à divers éléments d'une pièce jointe TNEF, tels que du texte, des images intégrées et des données de calendrier.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -65,9 +65,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-##  Créer un message électronique au format MHT
+## Exemple de code C# complet
 
-Enregistrement du message au format MHT
+Voici un exemple complet de la façon dont vous pouvez utiliser Aspose.Email pour .NET pour lire et conserver les pièces jointes TNEF :
 
 ```csharp
 using Aspose.Email;
@@ -79,24 +79,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            //Enfin, enregistrez le message au format MHT dans un fichier.
+            // Charger l'e-mail avec la pièce jointe TNEF
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Enregistrez le message au format MHT
+			 // Vérifiez si le message contient des pièces jointes TNEF
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					//Code source complet
+					// Extraire la pièce jointe TNEF
 					var tnefAttachment = attachment;
 
-					//Voici le code source complet qui rassemble le tout :
-					//Conclusion
+					//Accéder aux propriétés du TNEF et modifier si nécessaire
+					// tnefAttachment.Propriétés...
 				}
 			}
-			//Dans ce guide, nous avons exploré comment modifier les polices lors de la conversion MHT à l'aide d'Aspose.Email pour .NET. En suivant ces étapes, vous pouvez convertir en toute transparence les messages électroniques au format MHT tout en conservant les styles de police souhaités.
+			// Préserver les pièces jointes TNEF
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -105,30 +105,30 @@ namespace TnefAttachmentExample
 }
 ```
 
+## Conseils pour gérer les pièces jointes TNEF
+
+- Vérifiez toujours si un e-mail contient des pièces jointes TNEF avant de tenter l’extraction.
+- Utilisez les méthodes d'Aspose.Email pour accéder et conserver divers éléments dans les pièces jointes TNEF.
+- Assurez-vous de disposer de la dernière version d'Aspose.Email pour .NET pour tirer parti des fonctionnalités les plus récentes.
+
+## Conclusion
+
+Dans ce guide, nous avons expliqué comment conserver les pièces jointes TNEF lors de la lecture de messages à l'aide du langage de programmation C# et d'Aspose.Email pour .NET. Grâce à son ensemble complet d'outils, Aspose.Email simplifie le processus d'identification, d'extraction et de conservation des pièces jointes TNEF, garantissant que les informations cruciales contenues dans les e-mails restent intactes et accessibles.
+
 ## FAQ
 
-- Puis-je convertir plusieurs e-mails au format MHT en une seule fois ?
-- Oui, vous pouvez parcourir une collection de messages électroniques et appliquer les mêmes modifications de police à chaque message avant de les convertir au format MHT.
-- Aspose.Email prend-il également en charge d'autres formats de courrier électronique ?
+### Comment puis-je télécharger Aspose.Email pour .NET ?
 
-## Oui, Aspose.Email prend en charge divers formats de courrier électronique, notamment EML, MSG, PST, etc.
+ Vous pouvez télécharger Aspose.Email pour .NET à partir de la page des versions :[ici](https://releases.aspose.com/email/net)
 
-Est-il possible de personnaliser davantage les modifications de police ?
+### Puis-je utiliser Aspose.Email pour travailler avec d’autres formats de courrier électronique ?
 
-## Absolument! Vous pouvez explorer davantage de styles CSS pour personnaliser les polices, telles que la taille, la couleur et l'alignement de la police.
+Oui, Aspose.Email prend en charge divers formats de courrier électronique, notamment PST, EML, MSG, etc.
 
-### Puis-je utiliser Aspose.Email pour des projets commerciaux ?
+### Aspose.Email convient-il aux applications à petite et à grande échelle ?
 
-Oui, Aspose.Email peut être utilisé pour des projets personnels et commerciaux, conformément aux conditions de licence.[ N'oubliez pas que ce guide fournit un aperçu général et que vous pouvez l'approfondir en vous référant au](https://releases.aspose.com/email/net)
+Absolument! Aspose.Email est conçu pour répondre à un large éventail d'applications, des petits projets aux solutions d'entreprise.
 
-### Référence de l'API Aspose.Email
+### Aspose.Email est-il régulièrement mis à jour ?
 
-et essayer différentes techniques de personnalisation des polices. Bon codage !
-
-###  Guide C# - Extraction des en-têtes d'e-mails
-
- Guide C# - Extraction des en-têtes d'e-mails
-
-###  API de traitement des e-mails Aspose.Email .NET
-
- Découvrez comment extraire les en-têtes d'e-mails en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source pour une analyse efficace des e-mails.
+Oui, Aspose maintient des mises à jour régulières pour garantir la compatibilité avec les dernières technologies et plateformes.

@@ -1,53 +1,53 @@
 ---
-title: Döngünün içinde e-posta mesajının gönderen, alıcılar, konu, gövde, ekler ve daha fazlası gibi çeşitli özelliklerine erişebilirsiniz:
-linktitle: TextBody'yi düz metin e-postaları için de kullanabilirsiniz.
-second_title: Ekleri işle
-description: Çözüm
+title: Gömülü Nesneleri Çıkarma - C# Eğitimi
+linktitle: Gömülü Nesneleri Çıkarma - C# Eğitimi
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET'i kullanarak e-posta mesajlarından gömülü nesneleri çıkarmayı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 type: docs
 weight: 15
 url: /tr/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
 
-## Bu eğitimde, C# ve Aspose.Email for .NET kütüphanesini kullanarak Zimbra TGZ depolama alanındaki tüm mesajları nasıl okuyacağımızı öğrendik. TGZ dosyasını yüklemek, e-posta iletilerine erişmek ve içeriklerini almak için gerekli adımları anlattık. Bu bilgi, e-posta geçişi, analiz veya diğer sistemlerle entegrasyon gibi senaryolar için değerli olabilir.
+## Gömülü Nesneleri Çıkarmaya Giriş - C# Eğitimi
 
-SSS'ler
+Bu eğitimde, Aspose.Email for .NET kütüphanesini kullanarak gömülü nesnelerin e-posta mesajlarından nasıl çıkarılacağını inceleyeceğiz. Aspose.Email, geliştiricilerin .NET uygulamaları dahilinde e-posta mesajları, ekler ve e-posta iletişiminin diğer çeşitli yönleriyle çalışmasına olanak tanıyan güçlü ve çok yönlü bir kütüphanedir.
 
-## Aspose.Email for .NET kütüphanesini nasıl indirebilirim?
+## Önkoşullar:
 
- Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:
+Bu öğreticiyi takip etmek için C# programlama ve .NET çerçevesi hakkında temel bilgiye sahip olmanız gerekir. Ayrıca makinenizde Visual Studio'nun veya başka bir uygun geliştirme ortamının kurulu olduğundan emin olun.
 
-## Burada
+## Aspose.Email for .NET'in Kurulumu:
 
-Aspose.Email'i diğer e-posta formatlarıyla çalışmak için kullanabilir miyim?
+Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Bunu Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak yapabilirsiniz. Projenizi açın, Solution Explorer'da proje adına sağ tıklayın ve "NuGet Paketlerini Yönet" seçeneğini seçin. "Aspose.Email" ifadesini arayın ve en son sürümü yükleyin.
 
-## Evet, Aspose.Email MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler.
+## E-posta Mesajlarını Yükleme:
 
-Aspose.Email için herhangi bir belge mevcut mu?
+Gömülü nesneleri çıkarmadan önce e-posta mesajlarını uygulamamıza yüklememiz gerekir. Aspose.Email, EML, MSG ve PST gibi çeşitli formatlardaki e-posta mesajlarını verimli bir şekilde yüklemek ve yönetmek için sınıflar ve yöntemler sağlar.
 
 ```csharp
-// Evet, ayrıntılı belgeleri ve örnekleri şurada bulabilirsiniz:
+// Bir dosyadan e-posta mesajı yükleme
 var message = MailMessage.Load("path/to/email.eml");
 ```
 
-## Aspose.Email belgeleri
+## Gömülü Nesneleri E-posta Mesajlarından Çıkarma:
 
-Aspose.Email hangi .NET sürümlerini destekliyor?
+E-posta mesajını yükledikten sonra, resimler ve ekler gibi gömülü nesneleri mesajdan çıkarmaya devam edebiliriz. Aspose.Email, mesajdaki eklere ve gömülü görsellere erişim için yöntemler sunar.
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
-    //Aspose.Email, .NET Framework, .NET Core ve .NET 5 ve sonraki sürümlerini destekler.
+    // Eki çıkarın ve işleyin
 }
 
 foreach (var embeddedImage in message.LinkedResources)
 {
-    //Aspose.Email'i kullanırken sorunlarla karşılaşırsam nasıl destek alabilirim?
+    // Gömülü görüntüyü çıkarın ve işleyin
 }
 ```
 
-##  adresini ziyaret ederek teknik destek alabilirsiniz.
+## Çıkarılan Nesneleri Kaydetme:
 
-Aspose destek forumları
+Gömülü nesneleri çıkardıktan sonra bunları sisteminizde belirli bir konuma kaydetmek isteyebilirsiniz. Aspose.Email, çıkarılan nesneleri kaydetmeye yönelik yöntemler sağlayarak, çıkarılan içeriği düzenlemenize ve yönetmenize olanak tanır.
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -61,47 +61,47 @@ foreach (var embeddedImage in message.LinkedResources)
 }
 ```
 
-##  veya aracılığıyla bir destek bileti göndererek
+## Farklı Türdeki Gömülü Nesneleri Kullanma:
 
-Aspose destek sistemi
+E-posta mesajları resimler, ses dosyaları ve belgeler dahil olmak üzere çeşitli gömülü nesneler içerebilir. Aspose.Email, gömülü nesnenin türünü belirlemenizi ve buna göre işlemenizi sağlar.
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // C# kullanarak NSF Depolama Alanından Mesajları Okuma
+        // İşlem resmi eki
     }
     else if (attachment.ContentType.MediaType == "audio/mpeg")
     {
-        // C# kullanarak NSF Depolama Alanından Mesajları Okuma
+        // Ses ekini işle
     }
-    // Aspose.Email .NET E-Posta İşleme API'si
+    // Farklı türler için daha fazla koşul ekleyin
 }
 ```
 
-## C# ve Aspose.Email for .NET kullanarak NSF depolama mesajlarını nasıl okuyacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
+## Çözüm
 
-C# kullanarak NSF Depolama Alanından Mesaj Okumaya Giriş
+Bu eğitimde, e-posta mesajlarından gömülü nesneleri çıkarmak için Aspose.Email for .NET kütüphanesinin nasıl kullanılacağını öğrendik. E-posta mesajlarının yüklenmesini, eklerin ve gömülü görsellerin çıkarılmasını, çıkarılan içeriğin kaydedilmesini ve farklı türdeki gömülü nesnelerin işlenmesini ele aldık. Bu işlevsellik, e-posta iletişimi ve içerik çıkarmayı içeren uygulamalar oluştururken inanılmaz derecede yararlı olabilir.
 
-## Yazılım geliştirme dünyasında verimli veri işleme çok önemlidir. E-posta yönetimi söz konusu olduğunda, özellikle Notes Depolama Formatı (NSF) dosyalarıyla ilgilenirken, mesajları okumak için güvenilir bir yönteme sahip olmak çok önemlidir. Bu makale, Aspose.Email for .NET'in yardımıyla C# kullanarak NSF depolama alanındaki mesajların nasıl okunacağı konusunda size adım adım rehberlik edecektir. Aspose.Email, e-posta dosya formatlarıyla çalışmayı kolaylaştıran güçlü bir kütüphanedir, bu da onu bu görev için mükemmel bir seçim haline getirir.
+## SSS'ler
 
-### Önkoşullar
+### Aspose.Email for .NET'i nasıl kurabilirim?
 
-Kodlama sürecine dalmadan önce aşağıdaki önkoşulları oluşturduğunuzdan emin olun:
+Aspose.Email for .NET'i Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Basitçe "Aspose.Email"i arayın ve en son sürümü yükleyin.
 
-### Visual Studio veya tercih edilen herhangi bir C# geliştirme ortamı.
+### Bu kitaplığı kullanarak ses dosyalarını çıkarabilir miyim?
 
- Aspose.Email for .NET kütüphanesi. Şuradan indirebilirsiniz
+Evet, Aspose.Email'i kullanarak ses dosyaları da dahil olmak üzere çeşitli türdeki gömülü nesneleri çıkarabilirsiniz. İçerik türünü tanımladığınızdan ve buna göre işlediğinizden emin olun.
 
-### Burada
+### Aspose.Email PST dosyalarıyla çalışmaya uygun mudur?
 
-1. Projenin Kurulumu
+Evet, Aspose.Email, PST dosyalarıyla çalışmayı destekleyerek Outlook Kişisel Klasörlerinden içerik yüklemenize, değiştirmenize ve çıkarmanıza olanak tanır.
 
-### Seçtiğiniz geliştirme ortamında yeni bir C# konsolu uygulama projesi oluşturarak başlayın. Ardından şu adımları izleyin:
+### Aspose.Email'i ASP.NET web uygulamamda kullanabilir miyim?
 
-2. NSF Dosyasının Yüklenmesi
+Kesinlikle! Aspose.Email for .NET, ASP.NET web uygulamaları, masaüstü uygulamaları ve diğer .NET proje türleriyle uyumludur.
 
-### Aşağıdaki kodu kullanarak NSF dosyasını yükleyin:
+### Aspose.Email hakkında daha fazla belgeyi nerede bulabilirim?
 
- Mesajlara erişim kodu buraya gelecek[3. Mesajlara Erişim](https://reference.aspose.com/email/net/)NSF dosyasındaki mesajları yineleyin ve özellikleri çıkarın:
+ Aspose.Email için detaylı dokümantasyonu ve kod örneklerini şu adreste bulabilirsiniz:[Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net/) sayfa.

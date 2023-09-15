@@ -1,39 +1,39 @@
 ---
-title: Voraussetzungen
-linktitle: Beginnen Sie mit der Erstellung eines neuen C#-Konsolenanwendungsprojekts in Visual Studio.
-second_title: Aspose.Email für .NET installieren
-description: Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
+title: Beibehalten des eingebetteten MSG-Formats beim Laden mit C#
+linktitle: Beibehalten des eingebetteten MSG-Formats beim Laden mit C#
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie, wie Sie das eingebettete MSG-Format mit Aspose.Email für .NET beibehalten. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 12
 url: /de/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
 
-Wählen Sie „NuGet-Pakete verwalten“.
+In der heutigen digitalen Welt spielt die E-Mail-Kommunikation sowohl im privaten als auch im beruflichen Bereich eine zentrale Rolle. Oft müssen wir programmgesteuert mit E-Mail-Dateien arbeiten, und die Beibehaltung der ursprünglichen Grenzen einer EML-Datei (E-Mail-Datei) kann von entscheidender Bedeutung sein. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie dies mithilfe von C#-Code mit Aspose.Email für .NET erreichen.
 
-## Suchen Sie nach „Aspose.Email“ und installieren Sie das entsprechende Paket.
+## Einführung
 
-Laden einer ICS-Datei
+Bei der Arbeit mit EML-Dateien ist es wichtig, deren ursprüngliche Grenzen beizubehalten, um die Integrität des E-Mail-Inhalts sicherzustellen. Aspose.Email für .NET bietet hierfür eine einfache und effiziente Möglichkeit. Wir führen Sie durch den Prozess, beginnend mit dem erforderlichen Code-Snippet.
 
-## Verwenden Sie in Ihrem C#-Code die folgenden Zeilen, um eine ICS-Datei zu laden:
+## Voraussetzungen
 
-Auf die ProdID zugreifen und sie ändern
+Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1. Suchen und ändern Sie das Feld ProdID mit dem folgenden Code:[YourCompany//YourApp//DE";](https://releases.aspose.com/email/net/).
+1.  Aspose.Email für .NET: Wenn Sie es noch nicht getan haben, laden Sie Aspose.Email für .NET von der Website herunter und installieren Sie es:[Laden Sie Aspose.Email für .NET herunter](https://releases.aspose.com/email/net/).
 
-2. Speichern der geänderten ICS-Datei
+2. C#-Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine funktionierende C#-Entwicklungsumgebung eingerichtet haben.
 
-## Speichern Sie die geänderte ICS-Datei mit diesen Codezeilen:
+## Schritt 1: Laden Sie die EML-Datei
 
-Abschluss
+Der erste Schritt besteht darin, die EML-Datei zu laden, mit der Sie arbeiten möchten. Stellen Sie sicher, dass Sie in Ihrem Code den richtigen Pfad zum Dateiverzeichnis angeben.
 
 ```csharp
 string dataDir = "Your Data Directory";
 MailMessage mailMessage = MailMessage.Load(dataDir + "Attachments.eml");
 ```
 
-## Im Wesentlichen beinhaltet der Prozess der Änderung der ProdID in ICS-Dateien die Manipulation eines kritischen Elements des Kalenderdatenaustauschs. Indem Sie die in dieser Anleitung beschriebenen Schritte befolgen und die Aspose.Email für .NET-Bibliothek verwenden, können Sie diese Änderung nahtlos durchführen. Dieser Ansatz gewährleistet nicht nur Flexibilität und Effizienz, sondern ermöglicht Ihnen auch die präzise Bearbeitung kalenderbezogener Aufgaben in Ihren Anwendungen.
+## Schritt 2: Als EML mit beibehaltenen Originalgrenzen speichern
 
-FAQs`EmlSaveOptions`Wie kann ich Aspose.Email für .NET installieren?`PreserveOriginalBoundaries`Um Aspose.Email für .NET zu installieren, navigieren Sie in Visual Studio zum NuGet-Paket-Manager, suchen Sie nach „Aspose.Email“ und wählen Sie das entsprechende Paket für die Installation aus.`true`.
+ Jetzt speichern wir die geladene E-Mail-Nachricht als EML-Datei und behalten dabei ihre ursprünglichen Grenzen bei. Hier kommt Aspose.Email für .NET ins Spiel. Wir werden das verwenden`EmlSaveOptions` Klasse mit dem`PreserveOriginalBoundaries` Eigenschaft festgelegt auf`true`.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat)
@@ -43,34 +43,34 @@ EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat
 mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions);
 ```
 
-## Kann Aspose.Email für .NET für andere Zwecke als die Änderung der ProdID verwendet werden?
+## Abschluss
 
-Absolut. Aspose.Email für .NET bietet eine breite Palette von Funktionen, die die Bearbeitung verschiedener E-Mail-Formate umfassen. Dazu gehört das Lesen, Schreiben und Bearbeiten von E-Mail-Nachrichten, Anhängen und Kalendereinträgen.
+In diesem Tutorial haben wir Sie durch den Prozess der Beibehaltung der ursprünglichen EML-Grenzen mithilfe von C#-Code mit Aspose.Email für .NET geführt. Dies ist ein entscheidender Schritt bei der programmgesteuerten Arbeit mit E-Mail-Dateien, um sicherzustellen, dass die Struktur der E-Mail intakt bleibt.
 
-Ist die modifizierte ProdID universell mit allen Kalenderanwendungen kompatibel?
+Jetzt können Sie sicher mit EML-Dateien arbeiten, ihre ursprünglichen Grenzen bewahren und die Integrität Ihrer E-Mail-Kommunikation wahren.
 
-Die Kompatibilität der modifizierten ProdID hängt von den Richtlinien und Anforderungen der spezifischen Kalenderanwendungen ab, mit denen Sie arbeiten. Erwägen Sie, sich an die Empfehlungen Ihrer Zielanwendungen zu halten.[Wo kann ich auf detailliertere Informationen zu den ICS-Dateispezifikationen zugreifen?](https://reference.aspose.com/email/net/).
+ Weitere Informationen und eine ausführliche Dokumentation zu Aspose.Email für .NET finden Sie in der API-Dokumentation hier:[Aspose.Email für .NET-Dokumentation](https://reference.aspose.com/email/net/).
 
-##  Umfassende Einblicke in die Struktur und Elemente von ICS-Dateien finden Sie im offiziellen
+## Häufig gestellte Fragen (FAQs)
 
-### iCalendar-Spezifikation
+### Warum ist es wichtig, die ursprünglichen Grenzen von EML-Dateien beizubehalten?
    
- Schriftarten während der MHT-Konvertierung mit C# ändern
+Durch die Beibehaltung der ursprünglichen Grenzen wird sichergestellt, dass die Struktur der E-Mail, einschließlich Anhängen und Formatierung, bei der programmgesteuerten Arbeit mit EML-Dateien erhalten bleibt.
 
-###  Schriftarten während der MHT-Konvertierung mit C# ändern
+### Kann ich Aspose.Email für .NET mit anderen Programmiersprachen verwenden?
 
- Aspose.Email .NET E-Mail-Verarbeitungs-API
+Aspose.Email für .NET ist in erster Linie für C# konzipiert, kann aber in Anwendungen integriert werden, die in anderen .NET-Sprachen wie VB.NET entwickelt wurden.
 
-###  Erfahren Sie, wie Sie Schriftarten während der MHT-Konvertierung mit Aspose.Email für .NET ändern. Schritt-für-Schritt-Anleitung mit Quellcode. Perfekt für die E-Mail-Archivierung und Dokumentenverwaltung.
+### Ist Aspose.Email für .NET sowohl für den persönlichen als auch für den geschäftlichen Gebrauch geeignet?
 
-Haben Sie schon einmal die Notwendigkeit gehabt, eine E-Mail-Nachricht in das MHT-Format zu konvertieren und dabei den Schriftstil beizubehalten? Dieser Leitfaden führt Sie durch den Prozess des Änderns von Schriftarten während der MHT-Konvertierung mithilfe der leistungsstarken Aspose.Email für .NET-Bibliothek. Egal, ob Sie an der E-Mail-Archivierung, Dokumentenverwaltung oder einem anderen Projekt arbeiten, das die E-Mail-Konvertierung beinhaltet, diese Schritt-für-Schritt-Anleitung hilft Ihnen dabei, Ihr Ziel nahtlos zu erreichen.
+Ja, Aspose.Email für .NET ist vielseitig und kann für eine Vielzahl von E-Mail-bezogenen Aufgaben verwendet werden, sodass es sowohl für den persönlichen als auch für den Unternehmensgebrauch geeignet ist.
 
-### Einführung in die MHT-Konvertierung und Aspose.Email für .NET
+### Wo finde ich weitere Tutorials und Beispiele für Aspose.Email für .NET?
 
-Was ist MHT?[MHT (MIME HTML) ist ein Dateiformat, das es Ihnen ermöglicht, eine Webseite einschließlich aller ihrer Ressourcen in einem einzigen Dokument zu speichern. Es wird häufig zum Archivieren von Webseiten und E-Mail-Nachrichten verwendet, da es die Struktur und das Erscheinungsbild des ursprünglichen Inhalts beibehält.](https://reference.aspose.com/email/net/).
+ In der API Aspose.Email für .NET-Dokumentation können Sie eine Vielzahl von Tutorials und Beispielen erkunden:[Aspose.Email für .NET-Dokumentation](https://reference.aspose.com/email/net/).
 
-### Über Aspose.Email für .NET
+### Wie kann ich auf die neuesten Updates und Versionen von Aspose.Email für .NET zugreifen?
 
-Aspose.Email für .NET ist eine robuste Bibliothek, die Funktionen für die Arbeit mit E-Mail-Formaten bietet, einschließlich Laden, Parsen und Konvertieren von E-Mails. Es ist eine ideale Wahl für Entwickler, die verschiedene E-Mail-bezogene Aufgaben effizient erledigen müssen.[Einrichten Ihres Projekts](https://releases.aspose.com/email/net/).
+ Um auf die neuesten Updates und Versionen von Aspose.Email für .NET zuzugreifen, besuchen Sie die Release-Seite:[Aspose.Email für .NET-Versionen](https://releases.aspose.com/email/net/).
 
 ---

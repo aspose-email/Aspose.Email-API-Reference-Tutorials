@@ -1,109 +1,109 @@
 ---
-title: Bu kılavuzda Aspose.Email for .NET kullanarak ICS dosyalarından birden fazla olayın nasıl okunacağını araştırdık. Geliştirme ortamını kurmayı, ICS dosyalarını yüklemeyi ve ayrıştırmayı, etkinlik ayrıntılarını çıkarmayı ve bunları kullanıcıya göstermeyi anlattık. Bu adımları izleyerek ICS dosya okuma yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
-linktitle: SSS'ler
-second_title: Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
-description: Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:
+title: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
+linktitle: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET'i kullanarak satır içi ve normal e-posta eklerini nasıl ayırt edeceğinizi öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
 type: docs
 weight: 17
 url: /tr/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
 
-## Web sitesi
+## Satır İçi ve Normal Ekleri Ayırmaya Giriş - C# Yaklaşımı
 
-Aspose.Email hem kişisel hem de ticari projeler için uygun mudur?
+E-posta işleme dünyasında ekler, e-posta içeriğiyle birlikte ek bilgilerin iletilmesinde önemli bir rol oynar. Ekler farklı biçimlerde olabilir, ancak en yaygın iki tür satır içi ekler ve normal eklerdir. Bu makalede, özellikle Aspose.Email for .NET kütüphanesini kullanarak satır içi ekler ile normal ekler arasında nasıl ayrım yapılacağına odaklanarak e-posta ekleri alanını derinlemesine inceleyeceğiz. Bu adım adım kılavuz, her iki ek türüyle etkili bir şekilde çalışabilmeniz için size gerekli bilgileri ve kod parçacıklarını sağlayacaktır.
 
-## Evet, Aspose.Email hem kişisel hem de ticari projeler için kullanılabilir. Web sitesindeki lisans ayrıntılarını kontrol ettiğinizden emin olun.
+## Adım adım rehber
 
-## Takvim etkinlikleriyle ilişkili ekleri çıkarabilir miyim?
+## 1. Geliştirme ortamınızı ayarlama
 
-Kesinlikle! Aspose.Email, takvim etkinlikleri içindeki ekleri ayıklamak ve yönetmek için özellikler sağlar.
+Koda dalmadan önce uygun bir geliştirme ortamına sahip olmak çok önemlidir. Sisteminizde Visual Studio'nun kurulu olduğundan emin olun.
 
-## Aspose.Email diğer programlama dillerini destekliyor mu?
+## 2. Visual Studio'da yeni bir proje oluşturmak
 
-Evet, Aspose.Email Java, C dahil çeşitli programlama dillerini destekler
+Visual Studio'yu açın ve yeni bir proje oluşturun. Gereksinimlerinize göre uygun proje türünü ve şablonunu seçin.
 
-## ++
+## 3. Aspose.Email for .NET kütüphanesinin kurulumu
 
-ve Python.
+E-posta ekleriyle çalışmak için Aspose.Email for .NET kitaplığını kullanacağız. Paket Yöneticisi Konsolunda aşağıdaki komutu çalıştırarak NuGet Paket Yöneticisi aracılığıyla yükleyebilirsiniz:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## Aspose.Email ne sıklıkta güncellenir?
+## 4. E-posta mesajı yükleme
 
-Aspose, yeni özellikler, iyileştirmeler ve hata düzeltmeleri eklemek için kitaplıklarını düzenli olarak güncelleyerek geliştirme deneyiminizin sorunsuz ve güncel kalmasını sağlar.
+Öncelikle çalışmak için bir e-posta mesajına ihtiyacınız var. Aspose.Email kütüphanesinin sınıflarını kullanarak e-posta mesajını yükleyin.
 
-##  C# Kodunu Kullanarak Takvim Etkinliklerini İşleme
+## 5. E-postadaki ekleri alma
 
- C# Kodunu Kullanarak Takvim Etkinliklerini İşleme
+Yüklenen e-posta mesajındaki tüm ekleri almak için aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Aspose.Email .NET E-Posta İşleme API'si
+// E-posta mesajını yükleyin (varsayılan: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## C# ve Aspose.Email for .NET kullanarak takvim etkinliklerini işlemeyi öğrenin. Kolaylıkla etkileşimli programlar oluşturun.
+## 6. Satır içi ve normal ekler arasında ayrım yapmak
 
-Aspose.Email NuGet Paketinin Kurulumu`ContentDisposition`Başlamak için bir .NET projenizin kurulu olduğundan emin olun. Aspose.Email NuGet paketini projenizin Paket Yönetici Konsolunda aşağıdaki komutu kullanarak kurabilirsiniz:`ContentDisposition`Uygulamanın Başlatılması
+Satır içi eklerle normal ekleri birbirinden ayırmak için her ekin özelliklerini incelemeniz gerekir.`ContentDisposition` mülk. Eğer`ContentDisposition` "satır içi" olarak ayarlandığında ek, satır içi bir ektir.
 
-##  Gerekli kullanma yönergesini ekleyerek ve örneğini oluşturarak Aspose.Email kütüphanesini uygulamanızda başlatın.
+## 7. Satır içi eklerle çalışma
 
- sınıf:
+Satır içi eklerle uğraşırken bunların içeriğine ve ilgili bilgilere erişebilirsiniz. Referans olarak aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Uygulamayı başlat
-        //Takvim Verilerini Yükleme
+        // Satır içi eki yönetin
+        // Örnek: İçerik kimliğini ve içerik türünü görüntüleyin
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
 }
 ```
 
-## Takvim Örneği Oluşturma
+## 8. Düzenli eklerin kullanılması
 
- Takvim etkinlikleriyle çalışmak için bir örneğini oluşturmanız gerekir.
+Normal eklerin "satır içi" düzenleme türü yoktur. Bunları aşağıdaki kod parçacığını kullanarak işleyebilirsiniz:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Aspose.Email kütüphanesinden sınıf:
-        //ICS Dosyasından Takvim Verilerini Yükleme
+        // Düzenli eki yönetin
+        // Örnek: Eki diske kaydetme
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
 ```
 
-##  Takvim verilerini bir ICS (iCalendar) dosyasından yükleyebilirsiniz.
+## Çözüm
 
- sınıf:
+Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak satır içi ekler ile normal ekler arasındaki farka odaklanarak e-posta ekleri dünyasını keşfettik. Adım adım talimatları izleyerek ve sağlanan kod parçacıklarını kullanarak, e-posta işleme görevlerinizde her iki ek türünü de etkili bir şekilde tanımlayabilir ve bunlarla çalışabilirsiniz.
 
-## Takvim Etkinliklerini Oluşturma
+## SSS'ler
 
-### İşlenmiş Çıktı Kapsayıcı Oluşturma
+### Aspose.Email for .NET kütüphanesini nasıl kurabilirim?
 
-Takvim etkinliklerini oluşturmak için çıktıyı tutacak bir kaba ihtiyacınız vardır. Kullanarak bir HTML kapsayıcısı oluşturabilirsiniz.`Install-Package Aspose.Email`.
+ Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırmanız yeterlidir:`Install-Package Aspose.Email`.
 
-###  sınıf:
+### Satır içi ekler ile normal ekler arasında program aracılığıyla ayrım yapabilir miyim?
 
-Oluşturma Seçeneklerini Uygulama`ContentDisposition`Oluşturmadan önce çıktının görünümünü özelleştirmek için çeşitli seçenekler uygulayabilirsiniz. Örneğin, oluşturmanın başlangıç ve bitiş tarihlerini ayarlayabilirsiniz:
+ Evet, satır içi ataşmanları ve normal ataşmanları inceleyerek ayırt edebilirsiniz.`ContentDisposition` her ekin özelliği. Düzenleme türü "satır içi" olan ekler, satır içi eklerdir.
 
-### Takvim Etkinliklerini Oluşturma
+### Aspose.Email diğer programlama dillerindeki e-posta eklerini işlemeye uygun mudur?
 
- Takvim etkinliklerini kullanarak işleme
+Evet, Aspose.Email çeşitli programlama dilleri için kütüphaneler sağlar, bu da onu çok çeşitli geliştirme ortamlarında e-posta eklerini yönetmeye uygun hale getirir.
 
-###  yöntem:
+### Satır içi bir ekin içeriğine nasıl erişebilirim?
 
-Özelleştirme
+Aspose.Email kütüphanesinin sağladığı uygun özellikleri kullanarak satır içi bir ekin içeriğine erişebilirsiniz. Örneğin, satır içi ekin içerik kimliğini ve içerik türünü alabilirsiniz.
 
-### İşlenen Çıktıyı Şekillendirme
+### Düzenli ekleri diskte belirli bir konuma kaydedebilir miyim?
 
-HTML kabının CSS özelliklerini değiştirerek oluşturulan çıktıya stil verebilirsiniz:`Save`Etkinlik Ayrıntılarını Ekleme
+ Kesinlikle! Kullanarak düzenli ekleri diskte belirli bir konuma kaydedebilirsiniz.`Save` ek nesnesinin yöntemi ve istenen dosya yolunun sağlanması.

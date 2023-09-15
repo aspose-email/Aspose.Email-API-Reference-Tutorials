@@ -1,37 +1,37 @@
 ---
-title: 在我们深入研究编码细节之前，请确保您拥有合适的开发环境。你需要：
-linktitle: Visual Studio（或您选择的任何 C# IDE）
-second_title: 安装了 .NET Framework 或 .NET Core
-description: 将 Aspose.Email 添加到您的项目中
+title: 使用 Aspose.Email 作为文档附件
+linktitle: 使用 Aspose.Email 作为文档附件
+second_title: Aspose.Email Java 电子邮件管理 API
+description: 了解如何使用 Aspose.Email for Java 管理 Java 电子邮件中的文档附件。轻松创建、发送和提取文档附件。
 type: docs
 weight: 16
 url: /zh/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
 
-## Aspose.Email 是一个功能强大的库，可以简化各种格式的电子邮件的处理。首先，请按照下列步骤操作：
+## 在 Java 中使用 Aspose.Email 处理文档附件的简介
 
-创建新项目：打开 Visual Studio 并创建一个新的 C# 项目。
+在本教程中，我们将探索如何使用 Aspose.Email for Java 处理文档附件。 Aspose.Email 是一个功能强大的 Java API，可让您轻松操作电子邮件及其附件。我们将讨论以下主题：
 
-## 安装 Aspose.Email：在解决方案资源管理器中右键单击您的项目，选择“管理 NuGet 包”，搜索“Aspose.Email”并安装该包。
+## 先决条件
 
-创建电子邮件消息
+在我们开始之前，请确保您具备以下先决条件：
 
-- 现在 Aspose.Email 已集成到您的项目中，让我们开始创建电子邮件：
-- 创建新电子邮件[设置发件人和收件人地址](https://releases.aspose.com/email/java/).
+- 您的系统上安装了 Java 开发工具包 (JDK)。
+-  Java 库的 Aspose.Email。您可以从以下位置下载：[这里](https://releases.aspose.com/email/java/).
 
-## 设置电子邮件主题和正文
+## 将 Aspose.Email 添加到您的项目中
 
-你的其余代码...
+首先，您需要将 Aspose.Email 库添加到您的 Java 项目中。按着这些次序：
 
-1. 添加附件到电子邮件
+1. 从提供的链接下载 Aspose.Email for Java 库。
 
-2. 附件为您的电子邮件提供了额外的上下文。让我们向电子邮件添加附件：
+2. 将下载的 ZIP 文件解压缩到您选择的目录。
 
-3. 添加附件到电子邮件
+3. 在您的 Java 项目中，将 Aspose.Email JAR 文件添加到您的类路径中。您可以在您最喜欢的集成开发环境 (IDE) 中或使用命令行来执行此操作。
 
-## 发送电子邮件
+## 创建新电子邮件
 
-电子邮件准备好后，就可以发送了：
+让我们首先创建一封带有文档附件的新电子邮件。我们将使用一个简单的例子来说明这一点：
 
 ```java
 import com.aspose.email.Attachment;
@@ -39,32 +39,32 @@ import com.aspose.email.MailMessage;
 
 public class CreateEmailWithAttachment {
     public static void main(String[] args) {
-        //你的其余代码...
+        //创建新电子邮件
         MailMessage message = new MailMessage();
 
-        //使用 SMTP 客户端发送电子邮件
+        //设置发件人和收件人电子邮件地址
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
 
-        //结论
+        //设置电子邮件的主题和正文
         message.setSubject("Document Attachment Example");
         message.setBody("Please find the attached document.");
 
-        //在本指南中，我们探讨了如何使用 Aspose.Email for .NET 在电子邮件中包含附件。通过执行上述步骤，您可以通过内容丰富的附件增强您的电子邮件通信。 Aspose.Email 库简化了这个过程，使以编程方式创建和发送带有附件的电子邮件变得比以往更容易。
+        //将文档文件附加到电子邮件中
         Attachment attachment = new Attachment("path/to/your/document.pdf");
         message.addAttachment(attachment);
 
-        //常见问题解答
+        //将电子邮件保存到文件或使用 SMTP 发送
         message.save("attachment_email.eml");
     }
 }
 ```
 
-如何下载 Aspose.Email 库？`MailMessage`您可以从 Aspose.Releases 下载 Aspose.Email 库：
+在这个例子中，我们创建一个新的`MailMessage`对象，设置发件人和收件人电子邮件地址，指定电子邮件的主题和正文，并附加文档文件。
 
-## Aspose. 发布
+## 检索文档附件
 
-或使用 Visual Studio 中的 NuGet 包管理器。
+您可能需要从传入电子邮件中提取并使用文档附件。您可以这样做：
 
 ```java
 import com.aspose.email.Attachment;
@@ -72,10 +72,10 @@ import com.aspose.email.MailMessage;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        //我可以将多个文件附加到一封电子邮件中吗？
+        //从文件加载电子邮件或使用 SMTP 接收电子邮件
         MailMessage message = MailMessage.load("received_email.eml");
 
-        //绝对地！您可以通过创建和添加多个附件来将多个附件添加到一封电子邮件中
+        //遍历附件并保存文档附件
         for (Attachment attachment : message.getAttachments()) {
             if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
@@ -85,22 +85,22 @@ public class ExtractAttachments {
 }
 ```
 
-反对
+在此示例中，我们从文件加载电子邮件消息（您也可以使用 SMTP 接收它），迭代附件，并使用 PDF 内容类型保存任何文档附件。
 
-## 你的集合
+## 结论
 
-Aspose.Email同时适用于.NET Framework和.NET Core吗？
+在本教程中，我们探索了如何使用 Aspose.Email for Java 处理文档附件。您已了解如何创建和发送带有文档附件的电子邮件以及如何从传入电子邮件中提取文档附件。 Aspose.Email 提供了处理各种类型附件的强大功能，使其成为 Java 应用程序中电子邮件自动化的宝贵工具。
 
-## 是的，Aspose.Email 与 .NET Framework 和 .NET Core 兼容，为您选择平台提供了灵活性。
+## 常见问题解答
 
-### Aspose.Email 是否支持通过安全连接发送电子邮件？
+### 如何发送包含多个文档附件的电子邮件？
 
-是的，您可以配置 Aspose.Email 以使用 SMTPS 或 STARTTLS 等协议通过安全连接发送电子邮件。确保提供适当的服务器设置。`Attachment`在哪里可以找到有关 Aspose.Email 功能的更多信息？`MailMessage`有关 Aspose.Email 的功能、类和方法的更多详细信息，请参阅`Attachment`Aspose.Email API 参考
+要发送包含多个文档附件的电子邮件，您只需添加更多`Attachment`反对`MailMessage`如上例所示。每个`Attachment`代表一个单独的附件。
 
-### 从电子邮件中删除附件 - C# 实现
+### 我可以使用 PDF 文档以外的附件吗？
 
-从电子邮件中删除附件 - C# 实现
+是的，Aspose.Email for Java 支持多种附件类型，包括 Word 文档、Excel 电子表格、图像等。您可以检查附件的内容类型并在代码中进行相应的处理。
 
-### Aspose.Email .NET 电子邮件处理 API
+### 如何处理大文档附件？
 
-了解如何使用 Aspose.Email for .NET 删除电子邮件附件。包含 C# 源代码的分步指南。
+如果您需要处理大型文档附件，请考虑使用流技术以避免将整个附件加载到内存中。 Aspose.Email 提供了流附件的选项，使您能够有效地处理它们。

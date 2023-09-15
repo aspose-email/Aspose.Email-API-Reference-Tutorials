@@ -1,105 +1,105 @@
 ---
-title: Gerekli kullanım ifadelerini ekleyin
-linktitle: Randevu sınıfının bir örneğini oluşturun
-second_title: Randevu özelliklerini ayarlama
-description: Randevuya katılımcı ekleme
+title: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
+linktitle: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
 type: docs
 weight: 10
 url: /tr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
 
-##  Katılımcılar için katılımcı durumunu ayarlama
+## Gömülü Eklere Giriş
 
-Çözüm
+Gömülü ekler, bir e-posta iletisi içinde kapsüllenmiş dosyalardır ve alıcının, harici bağlantılara ihtiyaç duymadan dosyalara erişmesine olanak tanır. Bu ekler, e-posta görüşmesinin içeriğini korurken belgeleri paylaşırken özellikle yararlı olabilir.
 
-## Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak randevu katılımcılarını yönetme ve katılımcı durumunu ayarlama sürecini inceledik. Kitaplığın kapsamlı özellikleri, onu e-postayla ilgili görevlerle verimli bir şekilde çalışması gereken geliştiriciler için değerli bir araç haline getiriyor.
+## Aspose.Email for .NET'e Başlarken
 
-SSS'ler
+Aspose.Email for .NET, .NET uygulamalarındaki e-posta işleme görevlerini basitleştiren güçlü bir kütüphanedir. MSG dosyaları da dahil olmak üzere çeşitli e-posta formatlarıyla çalışmak için kapsamlı destek sağlar. Başlamak için şu adımları izleyin:
 
-1. Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
+1. Aspose.Email for .NET'i indirin ve yükleyin
 
-    Aspose.Email for .NET kütüphanesini web sitesinden indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net)Katılımcı durumu seçeneklerini özelleştirebilir miyim?
+    Kütüphaneyi adresinden indirebilirsiniz.[.NET web sitesi için Aspose.Email](https://releases.aspose.com/email/net) veya NuGet paket yöneticisini kullanın:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2.  Evet, katılımcı durumu seçeneklerini uygulamanızın ihtiyaçlarına göre özelleştirebilirsiniz.
+2. Yeni Bir C# Projesi Oluşturun
 
-    numaralandırma Aspose.Email for .NET tarafından sağlanmıştır.
+   Tercih ettiğiniz geliştirme ortamında yeni bir C# projesi oluşturarak başlayın.
 
-3. Aspose.Email for .NET e-postayla ilgili diğer görevleri yerine getirmeye uygun mu?
+3. Aspose.Email'e Referans Ekle
 
-   Kesinlikle! Aspose.Email for .NET, e-postalar, ekler, randevular ve daha fazlasıyla çalışmak için çok çeşitli özellikler sunarak, onu e-postayla ilgili çeşitli görevler için çok yönlü bir seçim haline getiriyor.
+   Projenize Aspose.Email DLL dosyasına bir referans ekleyin.
 
-## Bu işlevselliği mevcut .NET uygulamama entegre edebilir miyim?
+## MSG Dosyalarını Yükleme ve Ayrıştırma
 
-Evet, Aspose.Email for .NET kütüphanesine başvurarak ve verilen kod örneklerini takip ederek bu kılavuzda tartışılan işlevselliği mevcut .NET uygulamalarınıza kolayca entegre edebilirsiniz.
+Gömülü ekleri çıkarmadan önce Aspose.Email'i kullanarak MSG dosyasını yükleyip ayrıştırmamız gerekiyor. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-//Daha fazla belge ve kaynağı nerede bulabilirim?
+// MSG dosyasını yükle
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // Daha ayrıntılı belgeler ve kaynaklar için Aspose.Email for .NET belgelerine bakın:
+    // İleti özelliklerine erişme
     string subject = message.Subject;
     string sender = message.From.Address;
-    //Aspose.Email for .NET Belgelendirmesi
+    // ...
 }
 ```
 
-##  Zimbra TGZ Depolama Alanındaki Tüm Mesajları C# ile Okumak
+## Gömülü Ekleri Çıkarma
 
- Zimbra TGZ Depolama Alanındaki Tüm Mesajları C# ile Okumak
+Artık MSG dosyasını yüklediğimize göre, gömülü ekleri çıkaralım:
 
 ```csharp
-// Aspose.Email .NET E-Posta İşleme API'si
+// Gömülü ekleri çıkarın
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
     {
         var embeddedMsg = (MailMessage)attachment.Object;
-        // C# ve Aspose.Email for .NET kullanarak Zimbra TGZ depolama mesajlarını nasıl okuyacağınızı öğrenin. Kaynak kodu içeren adım adım kılavuz.
+        // Gömülü mesajı işle
     }
 }
 ```
 
-## C# ile Zimbra TGZ Depolama Alanındaki Tüm Mesajları Okumaya Giriş
+## Çıkarılan Ekleri Kaydetme
 
-Bu eğitimde, C# ve Aspose.Email for .NET kütüphanesini kullanarak Zimbra TGZ depolama alanındaki tüm mesajların nasıl okunacağını keşfedeceğiz. Zimbra popüler bir e-posta işbirliği platformudur ve bazen analiz veya taşıma amacıyla depolama dosyalarından mesajları çıkarmamız gerekebilir. Aspose.Email for .NET kütüphanesi, e-posta mesajlarıyla çalışmak için TGZ gibi çeşitli formatlardaki mesajları okumak da dahil olmak üzere güçlü özellikler sunar. Bu göreve nasıl ulaşacağımızı anlamak için adım adım ilerleyeceğiz.
+Gömülü ekleri işledikten sonra bunları istenen konuma kaydedebiliriz:
 
 ```csharp
-//Önkoşullar
+// Gömülü ekleri kaydet
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
 }
 ```
 
-## Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+## Çözüm
 
-Visual Studio: Geliştirme ortamımız olarak Visual Studio'yu kullanacağız.
+Bu eğitimde, C# ve Aspose.Email for .NET kitaplığını kullanarak MSG dosyalarından gömülü eklerin nasıl çıkarılacağını araştırdık. Burada özetlenen adımları izleyerek, ek çıkarma yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, e-posta içeriğini işleme şeklinizi geliştirebilirsiniz.
 
-##  Aspose.Email for .NET Kütüphanesi: Buradan indirebilirsiniz.
+## SSS'ler
 
-### Burada
+### Aspose.Email for .NET'i nasıl indirebilirim?
 
-1. Yeni bir C# Projesi Oluşturun[Visual Studio'yu açın ve yeni bir C# projesi oluşturun. İhtiyaçlarınıza uygun proje türünü seçebilirsiniz.](https://releases.aspose.com/email/net).
+ Aspose.Email for .NET'i şu adresten indirebilirsiniz:[Aspose.Email web sitesi](https://releases.aspose.com/email/net).
 
-### 2. Aspose.Email Library'yi yükleyin
+### Aspose.Email farklı e-posta formatlarıyla uyumlu mu?
 
-Proje oluşturulduktan sonra Aspose.Email kütüphanesine bir referans eklemeniz gerekir. Bunu, Solution Explorer'da projeye sağ tıklayıp, "NuGet Paketlerini Yönet"i seçip ardından "Aspose.Email"i arayarak yapabilirsiniz. Paketi projenize yükleyin.
+Evet, Aspose.Email, MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatları için kapsamlı destek sağlar.
 
-### 3. Gerekli Ad Alanlarını İçe Aktarın
+### Aspose.Email'i hem masaüstü hem de web uygulamalarında kullanabilir miyim?
 
-Aspose.Email ile çalışmak için gerekli ad alanlarını C# kod dosyanıza aktarın:
+Kesinlikle! Aspose.Email for .NET hem masaüstü hem de web uygulamalarında kullanılabilir, bu da onu e-posta işleme ihtiyaçlarınız için çok yönlü bir seçim haline getirir.
 
-### 4. TGZ Dosyasını Yükleyin
+### Lisanslamayla ilgili herhangi bir husus var mı?
 
-Daha sonra e-posta mesajlarını içeren Zimbra TGZ dosyasını yüklemeniz gerekir:[ Her e-posta iletisini işleyin](https://purchase.aspose.com).
+ Evet, Aspose.Email ticari bir kütüphanedir. Detaylı lisanslama bilgilerine şuradan ulaşabilirsiniz.[Web sitesi](https://purchase.aspose.com).
 
-###  E-posta mesajını okuyun ve işleyin
+### Daha fazla örnek ve belgeyi nerede bulabilirim?
 
- Mesaj üzerinde istenilen işlemleri gerçekleştirin[5. Mesaj İçeriğine Erişin](https://reference.aspose.com/email/net).
+ Aspose.Email for .NET kullanımına ilişkin ayrıntılı örnekleri ve belgeleri şu adreste bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/email/net).

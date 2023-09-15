@@ -1,37 +1,37 @@
 ---
-title: Requesting Email Read Receipts using C# Code
-linktitle: Requesting Email Read Receipts using C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
+title: Demander des accusés de lecture d'e-mails à l'aide du code C#
+linktitle: Demander des accusés de lecture d'e-mails à l'aide du code C#
+second_title: API de traitement des e-mails Aspose.Email .NET
+description: Découvrez comment utiliser le code C# pour demander des accusés de lecture d'e-mails à l'aide d'Aspose.Email pour .NET, améliorant ainsi le suivi des communications.
 type: docs
 weight: 11
 url: /fr/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-In today's digital age, communication via email has become an integral part of our personal and professional lives. Often, when sending important emails, we want to ensure that the recipient has read and acknowledged our message. This is where email read receipts come into play. In this step-by-step tutorial, we will guide you through the process of requesting email read receipts using C# with Aspose.Email for .NET.
+À l'ère du numérique d'aujourd'hui, la communication par courrier électronique est devenue une partie intégrante de nos vies personnelles et professionnelles. Souvent, lors de l'envoi d'e-mails importants, nous voulons nous assurer que le destinataire a lu et accusé réception de notre message. C’est là que les confirmations de lecture des e-mails entrent en jeu. Dans ce didacticiel étape par étape, nous vous guiderons tout au long du processus de demande de confirmations de lecture par courrier électronique à l'aide de C# avec Aspose.Email pour .NET.
 
-## Introduction to Email Read Receipts
+## Introduction aux accusés de lecture des e-mails
 
-Email read receipts, also known as email tracking or return receipts, allow you to receive notifications when the recipient opens and reads your email. It's a valuable feature, especially in business communications, as it provides confirmation of message delivery and engagement.
+Les accusés de lecture des e-mails, également appelés suivi des e-mails ou accusés de retour, vous permettent de recevoir des notifications lorsque le destinataire ouvre et lit votre e-mail. Il s'agit d'une fonctionnalité précieuse, en particulier dans les communications professionnelles, car elle permet de confirmer la transmission du message et l'engagement.
 
-## Prerequisites
+## Conditions préalables
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
 
-- Visual Studio installed on your system.
-- Aspose.Email for .NET library downloaded and referenced in your project.
+- Visual Studio installé sur votre système.
+- Bibliothèque Aspose.Email pour .NET téléchargée et référencée dans votre projet.
 
-## Step 1: Creating a MailMessage Instance
+## Étape 1 : Création d'une instance MailMessage
 
-The first step in implementing email read receipts is to create an instance of the `MailMessage` class. This class represents an email message and allows you to set various properties of the email.
+ La première étape de la mise en œuvre des accusés de lecture des e-mails consiste à créer une instance du`MailMessage` classe. Cette classe représente un e-mail et vous permet de définir diverses propriétés de l'e-mail.
 
 ```csharp
 MailMessage message = new MailMessage();
 ```
 
-## Step 2: Specifying Message Details
+## Étape 2 : Spécification des détails du message
 
-Now, let's specify the details of the email message, including the sender, recipient, HTML body, and delivery notification options.
+Maintenant, spécifions les détails du message électronique, y compris les options de l'expéditeur, du destinataire, du corps HTML et de la notification de livraison.
 
 ```csharp
 message.From = "sender@sender.com";
@@ -42,17 +42,17 @@ message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-## Step 3: Creating an SmtpClient Instance
+## Étape 3 : Création d'une instance SmtpClient
 
-To send the email, we need to create an instance of the `SmtpClient` class, which is responsible for sending the message.
+ Pour envoyer l'e-mail, nous devons créer une instance du`SmtpClient` classe, qui est responsable de l’envoi du message.
 
 ```csharp
 SmtpClient client = new SmtpClient();
 ```
 
-## Step 4: Configuring SMTP Settings
+## Étape 4 : configuration des paramètres SMTP
 
-Configure your SMTP server settings by specifying the host server, username, password, and port number.
+Configurez les paramètres de votre serveur SMTP en spécifiant le serveur hôte, le nom d'utilisateur, le mot de passe et le numéro de port.
 
 ```csharp
 client.Host = "smtp.server.com";
@@ -61,9 +61,9 @@ client.Password = "Password";
 client.Port = 25;
 ```
 
-## Step 5: Sending the Email
+## Étape 5 : Envoi de l'e-mail
 
-Finally, use the `client.Send` method to send the email message. If the message is sent successfully, a "Message Sent" notification will be displayed.
+ Enfin, utilisez le`client.Send` méthode pour envoyer le message électronique. Si le message est envoyé avec succès, une notification « Message envoyé » s'affichera.
 
 ```csharp
 try
@@ -77,14 +77,14 @@ catch (Exception ex)
 }
 ```
 
-With these five simple steps, you can request email read receipts when sending emails using C# and Aspose.Email for .NET. This feature adds a layer of assurance to your email communications, ensuring that you know when your important messages are read.
+Avec ces cinq étapes simples, vous pouvez demander des accusés de lecture lors de l'envoi d'e-mails à l'aide de C# et Aspose.Email pour .NET. Cette fonctionnalité ajoute une couche d'assurance à vos communications par courrier électronique, garantissant que vous savez quand vos messages importants sont lus.
 
-## Complete Source Code
+## Code source complet
 ```csharp
-// Create an Instance of MailMessage class
+// Créer une instance de classe MailMessage
 MailMessage message = new MailMessage();
 
-// Specify From, To, HtmlBody, DeliveryNotificationOptions field
+// Spécifiez le champ De, À, HtmlBody, DeliveryNotificationOptions
 message.From = "sender@sender.com";
 message.To.Add("receiver@receiver.com");
 message.HtmlBody = "<html><body>This is the Html body</body></html>";
@@ -92,10 +92,10 @@ message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
 message.Headers.Add("Return-Receipt-To", "sender@sender.com");
 message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 
-// Create an instance of SmtpClient Class
+// Créer une instance de la classe SmtpClient
 SmtpClient client = new SmtpClient();
 
-// Specify your mailing host server, Username, Password and Port No
+// Spécifiez votre serveur hôte de messagerie, votre nom d'utilisateur, votre mot de passe et votre numéro de port.
 client.Host = "smtp.server.com";
 client.Username = "Username";
 client.Password = "Password";
@@ -103,9 +103,9 @@ client.Port = 25;
 
 try
 {
-	// Client.Send will send this message
+	// Client.Send enverra ce message
 	client.Send(message);
-	// Display ‘Message Sent’, only if message sent successfully
+	// Afficher 'Message envoyé', uniquement si le message a été envoyé avec succès
 	Console.WriteLine("Message sent");
 }
 catch (Exception ex)
@@ -115,21 +115,21 @@ catch (Exception ex)
 ```
 ## Conclusion
 
-In this tutorial, we've explored how to request email read receipts using C# with Aspose.Email for .NET. Email tracking is a powerful tool for ensuring your messages are delivered and read by the intended recipients, particularly in professional settings. By following the steps outlined here, you can easily implement this functionality in your email application.
+Dans ce didacticiel, nous avons expliqué comment demander des accusés de lecture par courrier électronique à l'aide de C# avec Aspose.Email pour .NET. Le suivi des e-mails est un outil puissant pour garantir que vos messages sont livrés et lus par les destinataires prévus, en particulier dans le cadre professionnel. En suivant les étapes décrites ici, vous pouvez facilement implémenter cette fonctionnalité dans votre application de messagerie.
 
-## Frequently Asked Questions (FAQs)
+## Foire aux questions (FAQ)
 
-1. ### What is the purpose of email read receipts?
-   Email read receipts provide confirmation that an email has been opened and read by the recipient. They are often used for tracking important or time-sensitive messages.
+1. ### À quoi servent les accusés de lecture par courrier électronique ?
+   Les accusés de lecture d'e-mails confirment qu'un e-mail a été ouvert et lu par le destinataire. Ils sont souvent utilisés pour suivre des messages importants ou urgents.
 
-2. ### Can email read receipts be disabled by the recipient?
-   Yes, email clients often allow users to disable the sending of read receipts. Therefore, it's not guaranteed that you will always receive them.
+2. ### Les confirmations de lecture des e-mails peuvent-elles être désactivées par le destinataire ?
+   Oui, les clients de messagerie permettent souvent aux utilisateurs de désactiver l'envoi de confirmations de lecture. Il n’est donc pas garanti que vous les recevrez toujours.
 
-3. ### Are email read receipts a standard feature in all email clients?
-   No, email read receipts are not universally supported. Whether they work or not depends on the email client and the recipient's settings.
+3. ### Les confirmations de lecture des e-mails sont-elles une fonctionnalité standard dans tous les clients de messagerie ?
+   Non, les confirmations de lecture des e-mails ne sont pas universellement prises en charge. Leur fonctionnement ou non dépend du client de messagerie et des paramètres du destinataire.
 
-4. ### Is it possible to track when an email is opened on a mobile device?
-   Email tracking is typically based on the recipient's email client and settings, so it may or may not work on mobile devices, depending on various factors.
+4. ### Est-il possible de savoir quand un e-mail est ouvert sur un appareil mobile ?
+   Le suivi des e-mails est généralement basé sur le client de messagerie et les paramètres du destinataire. Il peut donc fonctionner ou non sur les appareils mobiles, en fonction de divers facteurs.
 
-5. ### Are there privacy considerations when using email read receipts?
-   Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.
+5. ### Existe-t-il des considérations en matière de confidentialité lors de l'utilisation des accusés de lecture par courrier électronique ?
+   Oui, il existe des problèmes de confidentialité liés au suivi des e-mails. Certains destinataires peuvent le considérer comme invasif, il est donc essentiel d'utiliser cette fonctionnalité de manière responsable et de respecter les préférences en matière de confidentialité.

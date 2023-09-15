@@ -1,63 +1,63 @@
 ---
-title: Aspose.Email für .NET installieren
-linktitle: Um zu beginnen, müssen Sie die Aspose.Email für .NET-Bibliothek installieren. Sie können es hier herunterladen
-second_title: Aspose.Releases
-description: oder verwenden Sie NuGet Package Manager in Visual Studio.
+title: Beibehalten von TNEF-Anhängen beim Lesen von Nachrichten – C#-Ansatz
+linktitle: Beibehalten von TNEF-Anhängen beim Lesen von Nachrichten – C#-Ansatz
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung mit Quellcode, wie Sie TNEF-Anhänge mit Aspose.Email für .NET bewahren.
 type: docs
 weight: 15
 url: /de/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
 
-## Erstellen eines neuen .NET-Projekts
+## Einführung in TNEF-Anhänge
 
-Öffnen Sie Visual Studio und erstellen Sie ein neues .NET-Projekt.
+TNEF, auch bekannt als „winmail.dat“, ist ein proprietäres E-Mail-Anhangsformat, das von Microsoft Outlook und Exchange verwendet wird. Es kapselt verschiedene Elemente wie formatierten Text, eingebettete Bilder und sogar Kalenderinformationen. Wenn E-Mails jedoch über verschiedene E-Mail-Clients oder Plattformen übertragen werden, können TNEF-Anhänge manchmal unlesbar oder unzugänglich werden. Hier kommt Aspose.Email für .NET zur Rettung.
 
-## Installieren Sie die Aspose.Email für .NET-Bibliothek mit NuGet Package Manager.
+## Erste Schritte mit Aspose.Email für .NET
 
-Jetzt können Sie mit dem Codieren beginnen!
+Aspose.Email für .NET ist eine umfassende Bibliothek, die eine breite Palette an Funktionalitäten für die Arbeit mit E-Mails und deren Anhängen bietet. Um zu beginnen, müssen Sie Folgendes tun:
 
-1. Laden und Analysieren einer E-Mail-Nachricht[Laden einer E-Mail-Nachricht](https://releases.aspose.com/email/net)Bevor wir die Schriftarten in der E-Mail ändern können, müssen wir eine E-Mail-Nachricht laden. Sie können eine E-Mail aus verschiedenen Quellen laden, beispielsweise einer Datei, einem Stream oder sogar einem Mailserver.
+1.  Laden Sie Aspose.Email herunter und installieren Sie es: Besuchen Sie[Hier](https://releases.aspose.com/email/net) um die neueste Version von Aspose.Email für .NET herunterzuladen und zu installieren.
 
-2.  Laden Sie die E-Mail-Nachricht
+2. Erstellen Sie ein neues Projekt: Öffnen Sie Ihre Visual Studio-Umgebung und erstellen Sie ein neues C#-Projekt.
 
-3. Analysieren des Nachrichtentexts
+3. Referenz hinzufügen: Fügen Sie eine Referenz auf die heruntergeladene Aspose.Email-Assembly in Ihrem Projekt hinzu.
 
-## Sobald die E-Mail geladen ist, können Sie auf ihre verschiedenen Teile zugreifen, einschließlich des HTML-Textes. Durch das Parsen des HTML-Körpers können wir Schriftartänderungen vornehmen.
+## E-Mail-Nachrichten laden und analysieren
 
- Analysieren Sie den HTML-Text
+Um mit E-Mail-Nachrichten arbeiten zu können, müssen Sie zunächst die E-Mail laden und analysieren. Aspose.Email bietet Klassen, mit denen Sie E-Mails aus verschiedenen Quellen laden können, darunter Dateien, Streams und sogar E-Mail-Server. Hier ist ein Beispiel dafür, wie Sie eine E-Mail-Nachricht aus einer Datei laden können:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//Schriftarten in der E-Mail ändern
+// Laden Sie die E-Mail mit dem TNEF-Anhang
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Schriftstile verstehen
+## Identifizieren und Extrahieren von TNEF-Anhängen
 
-Schriftarten in HTML-E-Mails werden mithilfe von CSS-Stilen definiert. Um Schriftarten zu ändern, müssen Sie die CSS-Stile ändern, die mit dem HTML-Inhalt der E-Mail verknüpft sind.
+Sobald Sie die E-Mail-Nachricht geladen haben, besteht der nächste Schritt darin, TNEF-Anhänge zu identifizieren und zu extrahieren. TNEF-Anhänge werden in einer speziellen Datei „winmail.dat“ gekapselt. Aspose.Email vereinfacht das Identifizieren und Extrahieren dieser Anhänge:
 
 ```csharp
-//Schriftarten programmgesteuert ändern
+// Überprüfen Sie, ob die Nachricht TNEF-Anhänge enthält
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //Angenommen, Sie möchten die Schriftart eines Absatzes im HTML-Text der E-Mail ändern. So können Sie es machen:
+        // Extrahieren Sie den TNEF-Anhang
         var tnefAttachment = attachment;
 
-        // Schriftart eines Absatzes ändern
-        //Konvertieren in das MHT-Format
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        // tnefAttachment.Properties...
     }
 }
 ```
 
-## MHT-Nachricht erstellen
+## Bewahren von TNEF-Anhängen
 
-Um die E-Mail in das MHT-Format zu konvertieren, müssen Sie mit Aspose.Email eine MHT-formatierte E-Mail-Nachricht erstellen.
+Bei der Beibehaltung von TNEF-Anhängen muss sichergestellt werden, dass die extrahierten Anhänge ihre ursprüngliche Formatierung und ihren ursprünglichen Inhalt beibehalten. Aspose.Email bietet Methoden und Eigenschaften für den Zugriff auf verschiedene Elemente in einem TNEF-Anhang, wie z. B. Text, eingebettete Bilder und Kalenderdaten.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -65,9 +65,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-##  Erstellen Sie eine MHT-formatierte E-Mail-Nachricht
+## Vollständiges C#-Codebeispiel
 
-Speichern der Nachricht im MHT-Format
+Hier ist ein vollständiges Beispiel dafür, wie Sie Aspose.Email für .NET zum Lesen und Speichern von TNEF-Anhängen verwenden können:
 
 ```csharp
 using Aspose.Email;
@@ -79,24 +79,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            //Speichern Sie abschließend die MHT-formatierte Nachricht in einer Datei.
+            // Laden Sie die E-Mail mit dem TNEF-Anhang
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Speichern Sie die Nachricht im MHT-Format
+			 // Überprüfen Sie, ob die Nachricht TNEF-Anhänge enthält
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					//Vollständiger Quellcode
+					// Extrahieren Sie den TNEF-Anhang
 					var tnefAttachment = attachment;
 
-					//Hier ist der vollständige Quellcode, der alles zusammenfügt:
-					//Abschluss
+					//Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+					// tnefAttachment.Properties...
 				}
 			}
-			//In diesem Leitfaden haben wir untersucht, wie Sie Schriftarten während der MHT-Konvertierung mit Aspose.Email für .NET ändern. Wenn Sie diese Schritte befolgen, können Sie E-Mail-Nachrichten nahtlos in das MHT-Format konvertieren und dabei Ihre gewünschten Schriftarten beibehalten.
+			// Bewahren von TNEF-Anhängen
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -105,30 +105,30 @@ namespace TnefAttachmentExample
 }
 ```
 
+## Tipps zum Umgang mit TNEF-Anhängen
+
+- Überprüfen Sie immer, ob eine E-Mail TNEF-Anhänge enthält, bevor Sie versuchen, sie zu extrahieren.
+- Nutzen Sie die Methoden von Aspose.Email, um auf verschiedene Elemente in TNEF-Anhängen zuzugreifen und diese beizubehalten.
+- Stellen Sie sicher, dass Sie über die neueste Version von Aspose.Email für .NET verfügen, um die aktuellsten Funktionen nutzen zu können.
+
+## Abschluss
+
+In diesem Leitfaden haben wir untersucht, wie TNEF-Anhänge beim Lesen von Nachrichten mit der Programmiersprache C# und Aspose.Email für .NET erhalten bleiben. Mit seinem umfassenden Satz an Tools vereinfacht Aspose.Email den Prozess der Identifizierung, Extraktion und Aufbewahrung von TNEF-Anhängen und stellt sicher, dass wichtige Informationen in E-Mails intakt und zugänglich bleiben.
+
 ## FAQs
 
-- Kann ich mehrere E-Mails auf einmal in das MHT-Format konvertieren?
-- Ja, Sie können eine Sammlung von E-Mail-Nachrichten durchlaufen und auf jede Nachricht dieselben Schriftartänderungen anwenden, bevor Sie sie in das MHT-Format konvertieren.
-- Unterstützt Aspose.Email auch andere E-Mail-Formate?
+### Wie kann ich Aspose.Email für .NET herunterladen?
 
-## Ja, Aspose.Email unterstützt verschiedene E-Mail-Formate, darunter EML, MSG, PST und mehr.
+ Sie können Aspose.Email für .NET von der Release-Seite herunterladen:[Hier](https://releases.aspose.com/email/net)
 
-Ist es möglich, die Schriftartänderungen weiter anzupassen?
+### Kann ich Aspose.Email verwenden, um mit anderen E-Mail-Formaten zu arbeiten?
 
-## Absolut! Sie können weitere CSS-Stile erkunden, um Schriftarten anzupassen, z. B. Schriftgröße, Farbe und Ausrichtung.
+Ja, Aspose.Email unterstützt verschiedene E-Mail-Formate, darunter PST, EML, MSG und mehr.
 
-### Kann ich Aspose.Email für kommerzielle Projekte verwenden?
+### Ist Aspose.Email sowohl für kleine als auch für große Anwendungen geeignet?
 
-Ja, Aspose.Email kann gemäß den Lizenzbedingungen sowohl für persönliche als auch für kommerzielle Projekte verwendet werden.[ Denken Sie daran, dass dieser Leitfaden einen allgemeinen Überblick bietet und Sie ihn weiter erkunden können, indem Sie auf ihn verweisen](https://releases.aspose.com/email/net)
+Absolut! Aspose.Email ist für ein breites Anwendungsspektrum konzipiert, von kleinen Projekten bis hin zu Lösungen auf Unternehmensebene.
 
-### Aspose.Email API-Referenz
+### Wird Aspose.Email regelmäßig aktualisiert?
 
-und das Ausprobieren verschiedener Techniken zur Schriftartanpassung. Viel Spaß beim Codieren!
-
-###  C#-Leitfaden – Extrahieren von E-Mail-Headern
-
- C#-Leitfaden – Extrahieren von E-Mail-Headern
-
-###  Aspose.Email .NET E-Mail-Verarbeitungs-API
-
- Erfahren Sie, wie Sie E-Mail-Header in C# mit Aspose.Email für .NET extrahieren. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente E-Mail-Analyse.
+Ja, Aspose führt regelmäßige Updates durch, um die Kompatibilität mit den neuesten Technologien und Plattformen sicherzustellen.

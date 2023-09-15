@@ -1,59 +1,59 @@
 ---
-title: Kaynak e-posta mesajını yükleyin
-linktitle: E-postayı EML Formatına Aktarma
-second_title: E-posta mesajını yükledikten sonraki adım, mesajı EML formatına aktarmaktır. Bu sadece bir örneğini oluşturarak yapılır.
-description: sınıf ve özelliklerini ayarlama:
+title: Aspose.Email Kullanarak E-postalara Dosya Ekleme
+linktitle: Aspose.Email Kullanarak E-postalara Dosya Ekleme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java kullanarak e-posta mesajlarına dosya eklemeyi öğrenin. Bu adım adım kılavuzu kullanarak e-postalarınızı kolaylıkla geliştirin.
 type: docs
 weight: 12
 url: /tr/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
-##  Yeni bir MailMessage örneği oluşturun
+## giriiş
 
- Yüklenen e-postanın özelliklerini ayarlayın
+E-posta iletişimi dünyasında ek gönderme yeteneği çok önemlidir. İster önemli belgeler, resimler veya başka türde bir dosya gönderiyor olun, süreç basit ve güvenilir olmalıdır. Aspose.Email for Java, e-posta mesajlarına dosya eklemek için güçlü araçlar sağlayarak bu süreci basitleştirir.
 
- Diğer özellikleri gerektiği gibi ayarlayın
+Bu adım adım kılavuzda Aspose.Email for Java kullanarak e-posta mesajlarına dosya ekleme sürecinde size yol göstereceğiz. E-posta mesajlarını nasıl oluşturacağınızı ve özelleştireceğinizi, çeşitli türlerde ekler ekleyeceğinizi ve e-postanızı güvenle kaydedip göndereceğinizi öğreneceksiniz.
 
-##  Dışa aktarılan e-posta artık emlMessage nesnesindedir
+## Önkoşullar
 
-EML Dosyalarını Kaydetme
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-1. E-posta mesajını EML formatında hazırladıktan sonra bir dosyaya kaydedebilirsiniz. Dosyaları kaydetmek için uygun yola sahip olduğunuzdan emin olun:
+1. Java Geliştirme Ortamı: Sisteminizde bir Java geliştirme ortamının kurulu olduğundan emin olun. Bu kılavuzdaki Java kodu örneklerini derleyip çalıştırmak için Java'ya ihtiyacınız olacak.
 
-2. Eklerin Kullanımı
+2. Aspose.Email for Java Kütüphanesi: Aspose.Email for Java kütüphanesini indirme bağlantısından indirin:
 
-   [E-posta mesajları genellikle mesajla birlikte dışa aktarılması gereken ekler içerir. Aspose.Email'i kullanarak ekleri şu şekilde yönetebilirsiniz:](https://releases.aspose.com/email/java/)
+   [Java İndirmek için Aspose.Email](https://releases.aspose.com/email/java/)
 
-   Ek E-posta Meta Verileri Ekleme
+   Aspose.Email JAR dosyalarını indirdikten sonra Java projenizin sınıf yoluna ekleyin. Bu kütüphane, Aspose.Email kullanarak e-posta mesajlarıyla çalışmak için gereklidir.
 
-Ayrıca Aspose.Email'i kullanarak dışa aktarılan e-postaya ek meta veriler de ekleyebilirsiniz. Buna başlıklar, özel özellikler ve daha fazlası dahildir:
+Bu önkoşullar yerine getirildiğinde, Aspose.Email for Java'yı kullanarak e-posta mesajlarınıza dosya eklemeye başlamaya hazırsınız. Bunun nasıl yapılacağını öğrenmek için aşağıdaki adım adım kılavuzu izleyin.
 
-##  Gerektiğinde diğer başlıkları ve meta verileri ekleyin
+## 1. Adım: Java ortamınızı kurun
 
-Hata yönetimi
+Geliştirme ortamınızda Java ve Aspose.Email for Java'nın kurulu ve yapılandırılmış olduğundan emin olun.
 
-## Dışa aktarma işlemi sırasında, sorunsuz bir kullanıcı deneyimi sağlamak için olası hataların ele alınması önemlidir. İstisnaları işlemek için try-catch bloklarını kullanın:
+## Adım 2: Yeni bir Java projesi oluşturun
 
- E-postayı dışa aktarın ve hataları yönetin
+Seçtiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun.
 
-##  İstisnayı ele alın
+## 3. Adım: Aspose.Email for Java kütüphanesini ekleyin
 
-Kaynak Kodunu Tamamlayın
+Aspose.Email for Java kütüphanesini indirme bağlantısından indirin:
 
-[Aspose.Email for .NET kullanarak e-postaları EML formatına aktarmak için gereken kaynak kodun tamamı burada:](https://releases.aspose.com/email/java/)
+[Java İndirmek için Aspose.Email](https://releases.aspose.com/email/java/)
 
- Kaynak e-posta mesajını yükleyin
+İndirilen JAR dosyalarını projenizin sınıf yoluna ekleyin.
 
-##  Yeni bir MailMessage örneği oluşturun
+## Adım 4: Aspose.Email sınıflarını içe aktarın
 
- Yüklenen e-postanın özelliklerini ayarlayın
+Java kodunuzda gerekli Aspose.Email sınıflarını içe aktarın:
 
 ```java
 import com.aspose.email.*;
 ```
 
-##  Diğer özellikleri gerektiği gibi ayarlayın
+## 5. Adım: Bir E-posta mesajı oluşturun
 
- Ekleri tut
+Aspose.Email'i kullanarak yeni bir e-posta mesajı oluşturun. Örneğin:
 
 ```java
 MailMessage message = new MailMessage();
@@ -63,48 +63,48 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This email contains attachments.</p>");
 ```
 
-##  Ek meta veriler ekleyin
+## 6. Adım: Dosyaları e-postaya ekleyin
 
- EML dosyasını kaydedin`Attachment`Çözüm
+ kullanarak e-postaya dosya ekleyebilirsiniz.`Attachment` sınıf. Aşağıda bir dosya ekleme örneği verilmiştir:
 
 ```java
 Attachment attachment = new Attachment("path/to/attachment.pdf");
 message.getAttachments().add(attachment);
 ```
 
-C# ve Aspose.Email for .NET kullanarak e-postaları EML formatına aktarmak, size e-posta mesajlarını ve özelliklerini yönetme esnekliği sağlayan basit bir işlemdir. Bu eğitimde özetlenen adımları izleyerek, e-posta dışa aktarma işlevini uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
+Gerektiğinde birden fazla ek ekleyebilirsiniz.
 
-## SSS'ler
+## 7. Adım: E-postayı kaydedin veya gönderin
 
-E-posta dışa aktarma işlemi sırasında hataları nasıl halledebilirim?
+Dosyaları ekledikten sonra e-postayı bir dosyaya kaydedebilir veya gönderebilirsiniz. Bir dosyaya kaydetmek için:
 
 ```java
 message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 ```
 
-E-posta dışa aktarma işlemi sırasında hataları yönetmek için try-catch bloklarını kullanın. Dışa aktarma kodunu bir try bloğunun içine sarın ve oluşabilecek istisnaları yakalayın. Bu, uygulamanızın hataları hassas bir şekilde ele almasını ve iyi bir kullanıcı deneyimi sunmasını sağlar.
+E-postayı göndermek için Aspose.Email'in e-posta gönderme özelliklerini kullanabilirsiniz. E-posta göndermeyle ilgili ayrıntılar için Aspose.Email belgelerine bakın.
 
-## Aspose.Email for .NET'i kullanarak e-posta eklerini dışa aktarabilir miyim?
+## Adım 8: Programı tamamlayın
 
-Evet, Aspose.Email for .NET'i kullanarak e-posta mesajıyla birlikte e-posta eklerini de dışarı aktarabilirsiniz. Kaynak e-postanın eklerini yineleyin ve bunları dışa aktarılan e-postanın ekler koleksiyonuna ekleyin.
+İşte tam Java programı:
 
 ```java
 import com.aspose.email.*;
 
 public class EmailWithAttachments {
     public static void main(String[] args) {
-        //Aspose.Email for .NET kütüphanesini nereden indirebilirim?
+        // Yeni bir e-posta mesajı oluştur
         MailMessage message = new MailMessage();
         message.setSubject("Sending an Email with Attachments");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This email contains attachments.</p>");
 
-        // Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:
+        // Dosya ekle
         Attachment attachment = new Attachment("path/to/attachment.pdf");
         message.getAttachments().add(attachment);
 
-        //Burada
+        // E-postayı bir dosyaya kaydedin
         message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with attachments saved successfully.");
@@ -112,25 +112,25 @@ public class EmailWithAttachments {
 }
 ```
 
-## Eğitimde sağlanan kaynak kodu eksiksiz mi?
+## Çözüm
 
-Evet, eğitimde Aspose.Email for .NET kullanılarak e-postaların EML formatına nasıl aktarılacağını gösteren eksiksiz kaynak kodu sağlanmaktadır. Bu kodu başlangıç noktası olarak kullanabilirsiniz
+Bu kılavuzda Aspose.Email for Java kullanarak bir e-postaya nasıl dosya ekleyeceğinizi öğrendiniz. Özel ihtiyaçlarınızı karşılamak için çeşitli dosya türlerini ekleyerek e-posta iletilerinizi özelleştirebilirsiniz.
 
- EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
+Başka sorularınız varsa veya yardıma ihtiyacınız varsa lütfen bizimle iletişime geçmekten çekinmeyin.
 
-##  EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
+## SSS (Sık Sorulan Sorular)
 
-###  Aspose.Email .NET E-Posta İşleme API'si
-   Aspose.Email for .NET kullanarak C#'ta EML dosyalarını nasıl yöneteceğinizi öğrenin. E-posta iletilerini yüklemeye, değiştirmeye ve kaydetmeye ilişkin kod örnekleri içeren adım adım kılavuz.`Attachment`EML Dosyalarına Giriş`MailMessage`Elektronik Posta Formatı (EML) dosyaları, e-posta mesajlarını saklar ve arşivleme ve paylaşım için yaygın olarak kullanılır. Aspose.Email for .NET, e-posta mesajlarını programlı olarak yüklemek, değiştirmek ve kaydetmek için kapsamlı bir dizi özellik sağlayarak EML dosyalarının kullanımını basitleştirir.`getAttachments()`Projenin Kurulumu
+### Tek bir e-posta mesajına birden fazla dosya ekleyebilir miyim?
+    Evet, birden fazla dosya ekleyerek bir e-posta mesajına birden fazla dosya ekleyebilirsiniz.`Attachment` nesnelere`MailMessage` nesnenin`getAttachments()` Toplamak.
 
-###  Başlamadan önce Aspose.Email for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz
-   Burada
+### Aspose.Email'i kullanarak bir e-postaya ne tür dosyalar ekleyebilirim?
+   Belgeler, resimler, PDF'ler ve daha fazlasını içeren çok çeşitli dosya türlerini ekleyebilirsiniz. Aspose.Email, eklerin işlenmesinde esneklik sağlar.
 
-### EML Dosyalarını Yükleme
-   EML dosyalarını yüklemek, e-posta mesajlarıyla çalışmanın ilk adımıdır. Aspose.Email for .NET, bireysel EML dosyalarını veya birden fazla dosyayı toplu olarak yüklemek için etkili yollar sunar.
+### Ekleri olan e-postayı nasıl gönderebilirim?
+   E-postayı eklerle birlikte göndermek için Aspose.Email'in e-posta sunucusunu yapılandırmayı ve alıcı ayrıntılarını belirlemeyi içeren e-posta gönderme özelliklerini kullanabilirsiniz. E-posta göndermek için Aspose.Email belgelerine bakın.
 
-### Tek Bir EML Dosyası Yükleme
-   Tek bir EML dosyası yüklemek için aşağıdaki kod pasajını kullanabilirsiniz:
+### Uzak bir URL'den dosya ekleyebilir miyim?
+   Evet, dosyaları uzak bir URL'den yerel sisteminize indirip ardından Aspose.Email'i kullanarak e-postaya ekleyerek ekleyebilirsiniz.
 
-###  EML dosyasını yükle
-   EML Dosyalarının Toplu Yüklenmesi
+### E-posta ekleri için boyut sınırlamaları var mı?
+   E-posta sunucuları ve istemcilerinde ek boyutu sınırlamaları olabilir. E-posta gönderme veya almayla ilgili sorunları önlemek için eklerinizin kabul edilebilir boyut sınırları dahilinde olduğundan emin olun.

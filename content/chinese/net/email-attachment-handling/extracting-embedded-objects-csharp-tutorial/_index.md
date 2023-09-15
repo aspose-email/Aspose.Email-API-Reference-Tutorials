@@ -1,53 +1,53 @@
 ---
-title: 在循环内，您可以访问电子邮件的各种属性，例如发件人、收件人、主题、正文、附件等：
-linktitle: 您还可以将 TextBody 用于纯文本电子邮件
-second_title: 处理附件
-description: 结论
+title: 提取嵌入对象 - C# 教程
+linktitle: 提取嵌入对象 - C# 教程
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 了解使用 Aspose.Email for .NET 从电子邮件中提取嵌入对象。带有代码示例的分步指南。
 type: docs
 weight: 15
 url: /zh/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
 
-## 在本教程中，我们学习了如何使用 C# 和 Aspose.Email for .NET 库从 Zimbra TGZ 存储读取所有消息。我们介绍了加载 TGZ 文件、访问电子邮件以及检索其内容的必要步骤。这些知识对于电子邮件迁移、分析或与其他系统集成等场景非常有价值。
+## 提取嵌入对象简介 - C# 教程
 
-常见问题解答
+在本教程中，我们将探索如何使用 Aspose.Email for .NET 库从电子邮件中提取嵌入对象。 Aspose.Email 是一个功能强大且多功能的库，使开发人员能够在其 .NET 应用程序中处理电子邮件、附件以及电子邮件通信的各个其他方面。
 
-## 如何下载 Aspose.Email for .NET 库？
+## 先决条件：
 
-您可以从以下位置下载 Aspose.Email for .NET 库：
+要学习本教程，您应该对 C# 编程和 .NET 框架有基本的了解。此外，请确保您的计算机上设置有 Visual Studio 或其他合适的开发环境。
 
-## 这里
+## 安装 Aspose.Email for .NET：
 
-我可以使用 Aspose.Email 处理其他电子邮件格式吗？
+首先，您需要安装 Aspose.Email for .NET 库。您可以使用 Visual Studio 中的 NuGet 包管理器来执行此操作。打开项目，在解决方案资源管理器中右键单击项目名称，然后选择“管理 NuGet 包”。搜索“Aspose.Email”并安装最新版本。
 
-## 是的，Aspose.Email 提供对各种电子邮件格式的支持，包括 MSG、EML、PST 等。
+## 加载电子邮件消息：
 
-有 Aspose.Email 可用的文档吗？
+在提取嵌入对象之前，我们需要将电子邮件加载到我们的应用程序中。 Aspose.Email 提供了有效加载和操作各种格式（例如 EML、MSG 和 PST）电子邮件消息的类和方法。
 
 ```csharp
-//是的，您可以在以下位置找到详细的文档和示例
+//从文件加载电子邮件
 var message = MailMessage.Load("path/to/email.eml");
 ```
 
-## Aspose.Email 文档
+## 从电子邮件中提取嵌入对象：
 
-Aspose.Email 支持哪些版本的 .NET？
+加载电子邮件后，我们可以继续从邮件中提取嵌入的对象，例如图像和附件。 Aspose.Email 提供了访问邮件中的附件和嵌入图像的方法。
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
-    //Aspose.Email支持.NET Framework、.NET Core和.NET 5及更高版本。
+    //提取并处理附件
 }
 
 foreach (var embeddedImage in message.LinkedResources)
 {
-    //如果我在使用 Aspose.Email 时遇到问题，如何获得支持？
+    //提取并处理嵌入图像
 }
 ```
 
-## 您可以通过访问获得技术支持
+## 保存提取的对象：
 
-Aspose 支持论坛
+提取嵌入对象后，您可能希望将它们保存到系统上的特定位置。 Aspose.Email提供了保存提取的对象的方法，允许您组织和管理提取的内容。
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -61,47 +61,47 @@ foreach (var embeddedImage in message.LinkedResources)
 }
 ```
 
-## 或通过提交支持票
+## 处理不同类型的嵌入对象：
 
-Aspose支持系统
+电子邮件消息可以包含各种嵌入对象，包括图像、音频文件和文档。 Aspose.Email 使您能够识别嵌入对象的类型并进行相应的处理。
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        //使用 C# 从 NSF 存储读取消息
+        //处理图像附件
     }
     else if (attachment.ContentType.MediaType == "audio/mpeg")
     {
-        //使用 C# 从 NSF 存储读取消息
+        //处理音频附件
     }
-    //Aspose.Email .NET 电子邮件处理 API
+    //为不同类型添加更多条件
 }
 ```
 
-## 了解如何使用 C# 和 Aspose.Email for .NET 读取 NSF 存储消息。带有代码示例的分步指南。
+## 结论
 
-使用 C# 从 NSF 存储读取消息的简介
+在本教程中，我们学习了如何使用 Aspose.Email for .NET 库从电子邮件中提取嵌入对象。我们涵盖了加载电子邮件、提取附件和嵌入图像、保存提取的内容以及处理不同类型的嵌入对象。在构建涉及电子邮件通信和内容提取的应用程序时，此功能非常有用。
 
-## 在软件开发领域，高效的数据处理至关重要。当涉及到电子邮件管理时，特别是处理 Notes 存储格式 (NSF) 文件时，拥有可靠的方法来读取消息至关重要。本文将逐步指导您如何在 Aspose.Email for .NET 的帮助下使用 C# 从 NSF 存储中读取消息。 Aspose.Email 是一个功能强大的库，可以简化电子邮件文件格式的处理，使其成为此任务的绝佳选择。
+## 常见问题解答
 
-### 先决条件
+### 如何安装 Aspose.Email for .NET？
 
-在我们深入编码过程之前，请确保您已设置以下先决条件：
+您可以使用 Visual Studio 中的 NuGet 包管理器安装 Aspose.Email for .NET。只需搜索“Aspose.Email”并安装最新版本。
 
-### Visual Studio 或任何首选的 C# 开发环境。
+### 我可以使用这个库提取音频文件吗？
 
- Aspose.Email for .NET 库。您可以从以下位置下载：
+是的，您可以使用 Aspose.Email 提取各种类型的嵌入对象，包括音频文件。确保识别内容类型并进行相应处理。
 
-### 这里
+### Aspose.Email 适合处理 PST 文件吗？
 
-1. 设置项目
+是的，Aspose.Email 支持使用 PST 文件，允许您从 Outlook 个人文件夹加载、操作和提取内容。
 
-### 首先在您选择的开发环境中创建一个新的 C# 控制台应用程序项目。然后，按照下列步骤操作：
+### 我可以在 ASP.NET Web 应用程序中使用 Aspose.Email 吗？
 
-2. 加载NSF文件
+绝对地！ Aspose.Email for .NET 与 ASP.NET Web 应用程序、桌面应用程序和其他类型的 .NET 项目兼容。
 
-### 使用以下代码加载 NSF 文件：
+### 在哪里可以找到有关 Aspose.Email 的更多文档？
 
-访问消息的代码将位于此处[3. 访问消息](https://reference.aspose.com/email/net/)迭代 NSF 文件中的消息并提取属性：
+您可以在以下位置找到 Aspose.Email 的详细文档和代码示例[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net/)页。

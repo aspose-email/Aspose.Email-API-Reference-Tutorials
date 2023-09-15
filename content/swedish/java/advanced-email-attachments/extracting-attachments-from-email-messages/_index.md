@@ -1,38 +1,38 @@
 ---
-title: Aspose.Email dokumentation
-linktitle: Extrahera inbäddade objekt - C# Tutorial
-second_title: Extrahera inbäddade objekt - C# Tutorial
-description: Aspose.Email .NET Email Processing API
+title: Extrahera bilagor från e-postmeddelanden i Aspose.Email
+linktitle: Extrahera bilagor från e-postmeddelanden i Aspose.Email
+second_title: Aspose.Email Java Email Management API
+description: Lär dig hur du extraherar e-postbilagor utan ansträngning med Aspose.Email för Java. Steg-för-steg-guide för Java-utvecklare.
 type: docs
 weight: 13
 url: /sv/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
 
-##  Lär dig att extrahera inbäddade objekt från e-postmeddelanden med Aspose.Email för .NET. Steg-för-steg guide med kodexempel.
+## Introduktion till Aspose.Email för Java
 
-Introduktion till extrahering av inbäddade objekt - Handledning för C#
+Aspose.Email för Java är ett kraftfullt Java-bibliotek som låter utvecklare arbeta med e-postmeddelanden och bilagor sömlöst. Det ger ett brett utbud av funktioner för e-postbearbetning, inklusive möjligheten att extrahera bilagor från e-postmeddelanden. I den här steg-för-steg-guiden kommer vi att utforska hur du använder Aspose.Email för Java för att enkelt extrahera bilagor från e-postmeddelanden.
 
-## I den här handledningen kommer vi att utforska hur man extraherar inbäddade objekt från e-postmeddelanden med hjälp av Aspose.Email for .NET-biblioteket. Aspose.Email är ett kraftfullt och mångsidigt bibliotek som gör det möjligt för utvecklare att arbeta med e-postmeddelanden, bilagor och olika andra aspekter av e-postkommunikation i sina .NET-applikationer.
+## Förutsättningar
 
-Förutsättningar:
+Innan vi dyker in i koden, låt oss se till att du har allt korrekt inställt:
 
-1. För att följa med i denna handledning bör du ha en grundläggande förståelse för C#-programmering och .NET-ramverket. Se dessutom till att du har Visual Studio eller annan lämplig utvecklingsmiljö inställd på din dator.
+1. Java Development Environment: Se till att du har Java installerat på ditt system.
 
-2. Installera Aspose.Email för .NET:[För att komma igång måste du installera Aspose.Email for .NET-biblioteket. Du kan göra detta med NuGet Package Manager i Visual Studio. Öppna ditt projekt, högerklicka på projektnamnet i Solution Explorer och välj "Hantera NuGet-paket." Sök efter "Aspose.Email" och installera den senaste versionen.](https://releases.aspose.com/email/java/)Laddar e-postmeddelanden:
+2.  Aspose.Email för Java: Ladda ner biblioteket från[här](https://releases.aspose.com/email/java/) och lägg till det i ditt projekt.
 
-3. Innan vi kan extrahera inbäddade objekt måste vi ladda e-postmeddelanden i vår applikation. Aspose.Email tillhandahåller klasser och metoder för att effektivt ladda och manipulera e-postmeddelanden i olika format som EML, MSG och PST.
+3. E-postmeddelande: Du bör ha ett e-postmeddelande med bilagor att arbeta med. Du kan använda din egen e-post eller skapa ett exempel på e-post för testning.
 
-##  Ladda ett e-postmeddelande från en fil
+## Steg 1: Skapa ett Java-projekt
 
-Extrahera inbäddade objekt från e-postmeddelanden:
+Låt oss först skapa ett nytt Java-projekt i din favorit Integrated Development Environment (IDE).
 
-## När vi har laddat e-postmeddelandet kan vi fortsätta att extrahera inbäddade objekt, såsom bilder och bilagor, från meddelandet. Aspose.Email erbjuder metoder för att komma åt bilagorna och inbäddade bilderna i meddelandet.
+## Steg 2: Lägg till Aspose.Email Library
 
- Extrahera och bearbeta bilagan
+Lägg till Aspose.Email-biblioteket till ditt projekt genom att inkludera JAR-filen du laddade ner tidigare.
 
-##  Extrahera och bearbeta den inbäddade bilden
+## Steg 3: Extrahera bilagor
 
-Spara extraherade objekt:
+Låt oss nu skriva Java-koden för att extrahera bilagor från ett e-postmeddelande. Nedan är ett exempel på ett kodavsnitt för att komma igång:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -40,46 +40,46 @@ import com.aspose.email.Attachment;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        //När du har extraherat de inbäddade objekten kanske du vill spara dem på en specifik plats på ditt system. Aspose.Email tillhandahåller metoder för att spara de extraherade objekten, så att du kan organisera och hantera det extraherade innehållet.
+        // Ladda e-postmeddelandet
         MailMessage message = MailMessage.load("path/to/your/email.msg");
 
-        //Hantera olika typer av inbäddade objekt:
+        // Iterera genom bilagor
         for (Attachment attachment : message.getAttachments()) {
-            //E-postmeddelanden kan innehålla en mängd olika inbäddade objekt, inklusive bilder, ljudfiler och dokument. Aspose.Email låter dig identifiera typen av inbäddat objekt och bearbeta det därefter.
+            // Spara bilagan till en fil
             attachment.save("path/to/save/" + attachment.getName());
         }
     }
 }
 ```
 
- Bearbeta bildbilaga`"path/to/your/email.msg"` Bearbeta ljudbilaga
+ I den här koden laddar vi ett e-postmeddelande, itererar genom dess bilagor och sparar varje bilaga på en angiven plats. Glöm inte att byta ut`"path/to/your/email.msg"` med den faktiska sökvägen till ditt e-postmeddelande.
 
-##  Lägg till fler villkor för olika typer
+## Steg 4: Kompilera och kör
 
-Slutsats
+Kompilera och kör Java-programmet. Om allt är korrekt inställt bör du se bilagorna extraherade till den angivna mappen.
 
-## den här handledningen har vi lärt oss hur man använder Aspose.Email för .NET-biblioteket för att extrahera inbäddade objekt från e-postmeddelanden. Vi täckte in att ladda e-postmeddelanden, extrahera bilagor och inbäddade bilder, spara det extraherade innehållet och hantera olika typer av inbäddade objekt. Denna funktion kan vara oerhört användbar när du bygger applikationer som involverar e-postkommunikation och innehållsextraktion.
+## Slutsats
 
-FAQ's
+Att extrahera bilagor från e-postmeddelanden är en vanlig uppgift i e-postbehandlingsprogram. Aspose.Email för Java förenklar denna process genom att tillhandahålla ett robust bibliotek som hanterar e-postrelaterade operationer effektivt. Med bara några rader kod kan du extrahera bilagor och införliva denna funktion i dina Java-applikationer.
 
-## Hur kan jag installera Aspose.Email för .NET?
+## FAQ's
 
-### Du kan installera Aspose.Email för .NET med NuGet Package Manager i Visual Studio. Sök helt enkelt efter "Aspose.Email" och installera den senaste versionen.
+### Hur kan jag ladda ner Aspose.Email för Java?
 
-Kan jag extrahera ljudfiler med det här biblioteket?[Ja, du kan extrahera olika typer av inbäddade objekt, inklusive ljudfiler, med Aspose.Email. Se till att identifiera innehållstypen och bearbeta den därefter.](https://releases.aspose.com/email/java/).
+ Du kan ladda ner Aspose.Email för Java från webbplatsen på[här](https://releases.aspose.com/email/java/).
 
-### Är Aspose.Email lämplig för att arbeta med PST-filer?
+### Kan jag använda Aspose.Email för Java i mina kommersiella projekt?
 
-Ja, Aspose.Email stöder arbete med PST-filer, vilket gör att du kan ladda, manipulera och extrahera innehåll från personliga Outlook-mappar.
+Ja, Aspose.Email för Java kan användas i både personliga och kommersiella projekt. Kontrollera licensinformationen på webbplatsen för mer information.
 
-### Kan jag använda Aspose.Email i min ASP.NET webbapplikation?
+### Finns det någon dokumentation tillgänglig för Aspose.Email för Java?
 
-Absolut! Aspose.Email för .NET är kompatibel med ASP.NET-webbapplikationer, skrivbordsapplikationer och andra typer av .NET-projekt.[Var kan jag hitta mer dokumentation om Aspose.Email?](https://reference.aspose.com/email/java/).
+ Säkert! Du hittar dokumentationen för Aspose.Email för Java på[här](https://reference.aspose.com/email/java/).
 
-###  Du kan hitta detaljerad dokumentation och kodexempel för Aspose.Email på
+### Vilka e-postformat stöder Aspose.Email för Java?
 
-Aspose.Email för .NET API-referens
+Aspose.Email för Java stöder olika e-postformat, inklusive MSG, EML och mer. Se dokumentationen för en komplett lista över format som stöds.
 
-###  sida.
+### Var kan jag få support för Aspose.Email för Java?
 
- Extrahera inbäddade objekt från e-post med C#
+För teknisk assistans eller förfrågningar kan du kontakta Asposes supportteam via deras supportkanaler.

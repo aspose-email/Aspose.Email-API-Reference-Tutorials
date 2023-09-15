@@ -1,111 +1,111 @@
 ---
-title: Setting Participant Status for Appointment Attendees with C#
-linktitle: Setting Participant Status for Appointment Attendees with C#
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to manage appointment attendees' status using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+title: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
+linktitle: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Randevu katılımcılarının durumunu C# ve Aspose.Email for .NET kullanarak nasıl yöneteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
 type: docs
 weight: 16
 url: /tr/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
 
-## Introduction to Aspose.Email for .NET
+## Aspose.Email for .NET'e giriş
 
-Aspose.Email for .NET is a versatile library that enables developers to work with email messages, appointments, contacts, and more within their .NET applications. With its intuitive API, developers can effortlessly manipulate various aspects of email communication, making it an excellent choice for handling appointment-related tasks.
+Aspose.Email for .NET, geliştiricilerin .NET uygulamalarında e-posta mesajları, randevular, kişiler ve daha fazlasıyla çalışmasına olanak tanıyan çok yönlü bir kütüphanedir. Sezgisel API'si sayesinde geliştiriciler, e-posta iletişiminin çeşitli yönlerini zahmetsizce yönetebilir, bu da onu randevuyla ilgili görevlerin yerine getirilmesi için mükemmel bir seçim haline getirir.
 
-## Prerequisites
+## Önkoşullar
 
-Before we dive into the implementation, make sure you have the following prerequisites in place:
+Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Visual Studio (or any C# IDE)
-- Aspose.Email for .NET library
-- Basic understanding of C# programming
+- Visual Studio (veya herhangi bir C# IDE)
+- Aspose.Email for .NET kütüphanesi
+- C# programlamanın temel anlayışı
 
-## Creating an Appointment
+## Randevu Oluşturma
 
-To get started, you need to create an appointment instance using Aspose.Email for .NET. An appointment represents a scheduled event, and you can set various properties like start time, end time, location, and more.
+Başlamak için Aspose.Email for .NET'i kullanarak bir randevu örneği oluşturmanız gerekir. Randevu, planlanmış bir etkinliği temsil eder ve başlangıç zamanı, bitiş zamanı, konum ve daha fazlası gibi çeşitli özellikleri ayarlayabilirsiniz.
 
 ```csharp
-// Add necessary using statements
+// Gerekli kullanım ifadelerini ekleyin
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Create an instance of the Appointment class
+// Randevu sınıfının bir örneğini oluşturun
 var appointment = new Appointment();
 
-// Set appointment properties
+// Randevu özelliklerini ayarlama
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 ```
 
-## Adding Attendees
+## Katılımcı Ekleme
 
-Next, you can add attendees to the appointment using the `Attendees` collection. Attendees are the individuals who will be participating in the appointment. You can specify their email addresses and names.
+ Daha sonra, randevuya katılımcıları kullanarak ekleyebilirsiniz.`Attendees` Toplamak. Katılımcılar, randevuya katılacak kişilerdir. E-posta adreslerini ve adlarını belirtebilirsiniz.
 
 ```csharp
-// Add attendees to the appointment
+// Randevuya katılımcı ekleme
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Setting Participant Status
+## Katılımcı Durumunun Ayarlanması
 
-Now comes the crucial part: setting the participant status for the attendees. Participant status indicates whether an attendee has accepted, declined, or tentatively accepted the appointment invitation. Aspose.Email for .NET provides different status options to choose from.
+Şimdi en önemli kısım geliyor: katılımcılar için katılımcı statüsünün ayarlanması. Katılımcı durumu, katılımcının randevu davetini kabul ettiğini, reddettiğini veya geçici olarak kabul ettiğini gösterir. Aspose.Email for .NET, aralarından seçim yapabileceğiniz farklı durum seçenekleri sunar.
 
 ```csharp
-// Set participant status for attendees
+// Katılımcılar için katılımcı durumunu ayarlama
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Complete Source Code
+## Kaynak Kodunu Tamamlayın
 
-Here's the complete source code that demonstrates the process of creating an appointment, adding attendees, and setting participant status:
+Randevu oluşturma, katılımcı ekleme ve katılımcı durumunu ayarlama sürecini gösteren kaynak kodun tamamı burada verilmiştir:
 
 ```csharp
-// Add necessary using statements
+// Gerekli kullanım ifadelerini ekleyin
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Create an instance of the Appointment class
+// Randevu sınıfının bir örneğini oluşturun
 var appointment = new Appointment();
 
-// Set appointment properties
+// Randevu özelliklerini ayarlama
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 
-// Add attendees to the appointment
+// Randevuya katılımcı ekleme
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 
-// Set participant status for attendees
+// Katılımcılar için katılımcı durumunu ayarlama
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Conclusion
+## Çözüm
 
-In this guide, we've explored the process of managing appointment attendees and setting participant status using C# and Aspose.Email for .NET. The library's comprehensive features make it a valuable tool for developers who need to work with email-related tasks efficiently.
+Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak randevu katılımcılarını yönetme ve katılımcı durumunu ayarlama sürecini inceledik. Kitaplığın kapsamlı özellikleri, onu e-postayla ilgili görevlerle verimli bir şekilde çalışması gereken geliştiriciler için değerli bir araç haline getiriyor.
 
-## FAQ's
+## SSS'ler
 
-### How can I obtain the Aspose.Email for .NET library?
+### Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
 
-You can download the Aspose.Email for .NET library from the website: [Download Aspose.Email for .NET](https://releases.aspose.com).
+ Aspose.Email for .NET kütüphanesini web sitesinden indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com).
 
-### Can I customize the participant status options?
+### Katılımcı durumu seçeneklerini özelleştirebilir miyim?
 
-Yes, you can customize the participant status options according to your application's needs by using the `AppointmentParticipantStatus` enumeration provided by Aspose.Email for .NET.
+ Evet, katılımcı durumu seçeneklerini uygulamanızın ihtiyaçlarına göre özelleştirebilirsiniz.`AppointmentParticipantStatus` numaralandırma Aspose.Email for .NET tarafından sağlanmıştır.
 
-### Is Aspose.Email for .NET suitable for handling other email-related tasks?
+### Aspose.Email for .NET e-postayla ilgili diğer görevleri yerine getirmeye uygun mu?
 
-Absolutely! Aspose.Email for .NET offers a wide range of features for working with emails, attachments, appointments, and more, making it a versatile choice for various email-related tasks.
+Kesinlikle! Aspose.Email for .NET, e-postalar, ekler, randevular ve daha fazlasıyla çalışmak için çok çeşitli özellikler sunarak, onu e-postayla ilgili çeşitli görevler için çok yönlü bir seçim haline getiriyor.
 
-### Can I integrate this functionality into my existing .NET application?
+### Bu işlevselliği mevcut .NET uygulamama entegre edebilir miyim?
 
-Yes, you can easily integrate the functionality discussed in this guide into your existing .NET applications by referencing the Aspose.Email for .NET library and following the provided code examples.
+Evet, Aspose.Email for .NET kütüphanesine başvurarak ve verilen kod örneklerini takip ederek bu kılavuzda tartışılan işlevselliği mevcut .NET uygulamalarınıza kolayca entegre edebilirsiniz.
 
-### Where can I find more documentation and resources?
+### Daha fazla belge ve kaynağı nerede bulabilirim?
 
-For more detailed documentation and resources, refer to the Aspose.Email for .NET documentation: [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net).
+ Daha ayrıntılı belgeler ve kaynaklar için Aspose.Email for .NET belgelerine bakın:[Aspose.Email for .NET Belgelendirmesi](https://reference.aspose.com/email/net).

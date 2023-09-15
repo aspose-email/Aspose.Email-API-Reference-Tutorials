@@ -1,90 +1,90 @@
 ---
-title: Wie lade ich Aspose.Email für .NET herunter?
-linktitle: Sie können die neueste Version von Aspose.Email für .NET von herunterladen
-second_title: Aspose.Email für .NET-Downloadseite
-description: Ist Aspose.Email für .NET mit anderen Outlook-bezogenen Formaten kompatibel?
+title: Hinzufügen neuer TNEF-Anhänge in C#
+linktitle: Hinzufügen neuer TNEF-Anhänge in C#
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Email für .NET neue TNEF-Anhänge in C# hinzufügen. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine nahtlose Integration.
 type: docs
 weight: 12
 url: /de/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## Ja, Aspose.Email für .NET bietet umfassende Unterstützung für verschiedene Outlook-bezogene Formate, einschließlich PST, EML, MSG und mehr.
+## Einführung in TNEF-Anhänge und Aspose.Email für .NET
 
-Kann ich Aspose.Email für .NET sowohl in kommerziellen als auch in persönlichen Projekten verwenden?
+TNEF-Anhänge (Transport Neutral Encapsulation Format) sind ein proprietäres Format, das von Microsoft Outlook zum Verpacken von Rich Text und Anhängen in E-Mails verwendet wird. Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die Ihnen die Arbeit mit E-Mails in verschiedenen Formaten, einschließlich TNEF-Anhängen, mithilfe von C# ermöglicht.
 
-## Ja, Aspose.Email für .NET kann sowohl in kommerziellen als auch in persönlichen Projekten verwendet werden. Lesen Sie unbedingt die Lizenzbedingungen auf der Aspose-Website.
+## Einrichten Ihrer Entwicklungsumgebung
 
-Bietet Aspose.Email für .NET Dokumentation für Entwickler?
+Bevor wir uns mit dem Codieren befassen, stellen Sie sicher, dass Sie eine Entwicklungsumgebung eingerichtet haben. Installieren Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
 
-##  Ja, eine ausführliche Dokumentation und Codebeispiele zur Verwendung von Aspose.Email für .NET in verschiedenen Szenarien finden Sie auf der
+## Erstellen eines neuen Projekts
 
-Aspose.Email-Dokumentation
+Erstellen Sie zunächst ein neues C#-Projekt in Visual Studio. Wählen Sie einen geeigneten Projektnamen und -ort.
 
-##  Seite.
+## Hinzufügen der Aspose.Email für .NET-Bibliothek
 
- Beibehaltung ursprünglicher Grenzen mithilfe von C#-Code
+Um mit E-Mails und TNEF-Anhängen arbeiten zu können, müssen wir die Aspose.Email for .NET-Bibliothek zu unserem Projekt hinzufügen. Sie können dies tun, indem Sie NuGet Package Manager in Visual Studio verwenden. Suchen Sie nach „Aspose.Email“ und installieren Sie das entsprechende Paket.
 
-##  Beibehaltung ursprünglicher Grenzen mithilfe von C#-Code
+## Laden einer vorhandenen E-Mail mit TNEF-Anhang
 
- Aspose.Email .NET E-Mail-Verarbeitungs-API
+Laden wir zunächst eine vorhandene E-Mail, die einen TNEF-Anhang enthält. Sie müssen den Pfad zur E-Mail-Datei angeben.
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Erfahren Sie, wie Sie mit C# und Aspose.Email für .NET die ursprünglichen Grenzen von E-Mail-Anhängen beibehalten. Schritt-für-Schritt-Anleitung mit Quellcode.
+// Laden Sie die E-Mail mit dem TNEF-Anhang
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Einführung in die Wahrung ursprünglicher Grenzen
+## Extrahieren und Ändern von TNEF-Anhängen
 
-In der modernen Geschäftswelt spielt die E-Mail-Kommunikation eine zentrale Rolle. Beim Austausch von E-Mails enthalten diese häufig wichtige Anhänge, die programmgesteuert verwaltet und manipuliert werden müssen. Bei der Arbeit mit E-Mail-Anhängen muss jedoch unbedingt darauf geachtet werden, dass die ursprünglichen Grenzen und Formatierungen dieser Anhänge erhalten bleiben. Hier kommt Aspose.Email für .NET ins Spiel.
+Sobald Sie die E-Mail geladen haben, können Sie den TNEF-Anhang extrahieren und ihn nach Bedarf ändern.
 
 ```csharp
-//Voraussetzungen
+// Durchlaufen Sie Anhänge
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+        // Extrahieren Sie den TNEF-Anhang
         var tnefAttachment = attachment;
 
-        //Visual Studio installiert
-        //.NET Framework- oder .NET Core-Projekt
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        // tnefAttachment.Properties...
     }
 }
 ```
 
-## Installation
+## Speichern der E-Mail mit geänderten Anhängen
 
-Um zu beginnen, müssen Sie die Aspose.Email für .NET-Bibliothek installieren. Sie können dies tun, indem Sie die folgenden Schritte ausführen:
+Nachdem Sie den TNEF-Anhang geändert haben, können Sie die E-Mail wieder in einer Datei speichern.
 
 ```csharp
-//Öffnen Sie Ihr Visual Studio-Projekt.
+// Speichern Sie die geänderte E-Mail
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
+## Abschluss
 
-Wählen Sie „NuGet-Pakete verwalten“.
+In diesem Artikel haben wir untersucht, wie man mit TNEF-Anhängen in C# mithilfe von Aspose.Email für .NET arbeitet. Sie haben gelernt, wie Sie eine E-Mail mit TNEF-Anhängen laden, diese Anhänge extrahieren und ändern und die geänderte E-Mail speichern.
 
-## Suchen Sie nach „Aspose.Email“ und installieren Sie das Paket.
+## FAQs
 
-### E-Mail-Nachrichten laden
+### Wie kann ich Aspose.Email für .NET installieren?
 
-Der erste Schritt besteht darin, die E-Mail-Nachricht zu laden, die den Anhang enthält, mit dem Sie arbeiten möchten. So können Sie es machen:
+Sie können Aspose.Email für .NET mit dem NuGet Package Manager installieren. Suchen Sie einfach nach „Aspose.Email“ und installieren Sie das entsprechende Paket.
 
-###  Laden Sie die E-Mail-Nachricht
+### Kann ich mit Aspose.Email für .NET mit anderen E-Mail-Formaten arbeiten?
 
-Anhänge extrahieren
+Ja, Aspose.Email für .NET unterstützt verschiedene E-Mail-Formate, darunter EML, MSG, PST und mehr.
 
-### Sobald Sie die E-Mail-Nachricht geladen haben, können Sie die Anhänge daraus extrahieren:
+### Kann ich Aspose.Email für kommerzielle Projekte verwenden?
 
- Anhangsdaten extrahieren
+Ja, Sie können Aspose.Email für .NET sowohl in persönlichen als auch kommerziellen Projekten verwenden, sofern Sie über die entsprechende Lizenz verfügen.
 
-###  Weitere Bearbeitung...
+### Wo finde ich weitere Dokumentation und Beispiele?
 
-Anhänge ändern[Um die ursprünglichen Grenzen beim Ändern von Anhängen beizubehalten, können Sie die Funktionen der Aspose.Email-Bibliothek verwenden. Angenommen, Sie möchten die Größe eines Bildanhangs ändern:](https://reference.aspose.com/email/net/).
+ Eine ausführlichere Dokumentation und Codebeispiele finden Sie unter[Aspose.Email für .NET-Dokumentation](https://reference.aspose.com/email/net/).

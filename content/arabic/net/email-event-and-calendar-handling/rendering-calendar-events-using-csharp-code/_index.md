@@ -1,36 +1,36 @@
 ---
-title:الخطوة 3: اكتب الرمز للتحقق من صحة عناوين البريد الإلكتروني
-linktitle: افتح ال
-second_title: قم بملف واكتب الكود التالي للتحقق من صحة عناوين البريد الإلكتروني باستخدام Aspose.Email:
-description: عنوان البريد الإلكتروني للتحقق من صحة
+title: عرض أحداث التقويم باستخدام كود C#
+linktitle: عرض أحداث التقويم باستخدام كود C#
+second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
+description: تعلم كيفية عرض أحداث التقويم باستخدام C# وAspose.Email لـ .NET. إنشاء جداول تفاعلية بكل سهولة.
 type: docs
 weight: 15
 url: /ar/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
 
 
- قم بإنشاء مثيل لفئة EmailValidator
+في العصر الرقمي الحالي، تعد إدارة أحداث التقويم بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حدٍ سواء. يوفر Aspose.Email for .NET مجموعة قوية من الأدوات للتعامل مع أحداث التقويم وتحقيق أقصى استفادة من احتياجات الجدولة الخاصة بك. في هذا الدليل المفصّل خطوة بخطوة، سنرشدك خلال عملية عرض أحداث التقويم باستخدام كود C# مع Aspose.Email for .NET.
 
-##  التحقق من صحة عنوان البريد الإلكتروني
+## مقدمة إلى Aspose.Email لـ .NET
 
-الخطوة 4: تشغيل التطبيق
+قبل أن نتعمق في التعليمات البرمجية وتنفيذها، دعنا نقدم بإيجاز Aspose.Email for .NET. إنها واجهة برمجة تطبيقات قوية تسمح للمطورين بإنشاء رسائل البريد الإلكتروني وأحداث التقويم ومعالجتها وإدارتها بتنسيقات مختلفة. باستخدام Aspose.Email، يمكنك العمل بسلاسة مع ملفات Outlook PST وExchange Server والمهام الأخرى المتعلقة بالبريد الإلكتروني. في هذا البرنامج التعليمي، سوف نركز على إمكانيات عرض أحداث التقويم الخاصة به.
 
-## قم بإنشاء التطبيق الخاص بك وتشغيله بالضغط على F5 أو النقر فوق الزر "ابدأ" في Visual Studio. سيتم تنفيذ التطبيق وعرض ما إذا كان عنوان البريد الإلكتروني المقدم صالحًا أم لا.
+## المتطلبات الأساسية
 
-الأسئلة الشائعة
+قبل البدء في البرمجة، تأكد من توفر المتطلبات الأساسية التالية:
 
-1. كيف يقوم Aspose.Email بالتحقق من صحة عناوين البريد الإلكتروني؟[يستخدم Aspose.Email مجموعة من التعبيرات العادية وعمليات التحقق من بناء الجملة للتحقق من صحة عناوين البريد الإلكتروني. فهو يتحقق من التنسيق الصحيح وأسماء النطاق الصالحة والخصائص الأخرى التي تشكل عنوان بريد إلكتروني صالحًا.](https://releases.aspose.com/email/net/).
+1.  Aspose.Email for .NET: يمكنك تنزيل أحدث إصدار من[هنا](https://releases.aspose.com/email/net/).
 
-2. هل يمكنني تخصيص قواعد التحقق من الصحة؟
+2. بيئة تطوير C#: أنت بحاجة إلى إعداد بيئة تطوير C# على جهازك.
 
-3.  نعم، يمكنك تخصيص قواعد التحقق من الصحة باستخدام الخصائص والأساليب التي يوفرها
+3. ملف حدث التقويم: قم بإعداد ملف حدث تقويم نموذجي. في هذا البرنامج التعليمي، سنستخدم "Meeting with Recurring Occurrences.msg."
 
-##  فئة من مكتبة Aspose.Email. الرجوع إلى
+## إعداد الكود
 
-Aspose.Email لمرجع .NET API
+لنبدأ بإعداد كود C# لعرض أحداث التقويم.
 
 ```csharp
-//لمزيد من التفاصيل.
+// المسار إلى دليل الملفات.
 string dataDir = "Your Data Directory";
 string fileName = "Meeting with Recurring Occurrences.msg";
 MailMessage msg = MailMessage.Load(dataDir + fileName);
@@ -38,55 +38,55 @@ MhtSaveOptions options = new MhtSaveOptions();
 {
     options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent;
 
-    //أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
+    // قم بتنسيق تفاصيل الإخراج إذا لزم الأمر - اختياري
 
-    // يمكنك العثور على وثائق شاملة ونماذج تعليمات برمجية لـ Aspose.Email for .NET على الموقع
+    // اضبط العرض لخاصية البدء
     if (options.FormatTemplates.ContainsKey(MhtTemplateName.Start))
         options.FormatTemplates[MhtTemplateName.Start] = @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>"; 
     else
         options.FormatTemplates.Add(MhtTemplateName.Start, @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
 
-    //Aspose.Email لمرجع .NET API
+    // متابعة ضبط العرض للعقارات الأخرى...
 };
 
 msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
 ```
 
-##  موقع إلكتروني.
+## فهم الكود
 
-خاتمة
+الآن، دعونا نحلل الكود ونفهم كل جزء:
 
-- في هذا الدليل، تعلمت كيفية التحقق من صحة عناوين البريد الإلكتروني باستخدام رمز C# وAspose.Email لـ .NET. باتباع الخطوات المقدمة، يمكنك بسهولة دمج التحقق من صحة عنوان البريد الإلكتروني في تطبيقاتك، مما يضمن أن عناوين البريد الإلكتروني المقدمة من قبل المستخدمين منسقة بشكل صحيح وصالحة.`MailMessage.Load` method.
+-  نبدأ بتحميل ملف حدث التقويم ("Meeting with Recurring Occurrences.msg") باستخدام الملف`MailMessage.Load` طريقة.
 
-- We create an `MhtSaveOptions` object to specify how we want to save the output.
+-  نحن ننشئ`MhtSaveOptions` كائن لتحديد كيف نريد حفظ الإخراج.
 
-- In the `options.MhtFormatOptions`, we specify that we want to render calendar event information.
+- في ال`options.MhtFormatOptions`، نحدد أننا نريد عرض معلومات حدث التقويم.
 
-- We then have the option to format the output details for various properties like Start, End, Recurrence, RecurrencePattern, Organizer, and RequiredAttendees.
+- لدينا بعد ذلك خيار تنسيق تفاصيل الإخراج لخصائص مختلفة مثل البداية والنهاية والتكرار وRecurrencePattern والمنظم وRequiredAttendees.
 
-- Finally, we save the rendered calendar event as an MHTML file.
+- وأخيرًا، نقوم بحفظ حدث التقويم المعروض كملف MHTML.
 
-## Conclusion
+## خاتمة
 
-In this tutorial, we've explored how to render calendar events using C# code with Aspose.Email for .NET. Aspose.Email provides a straightforward and efficient way to work with calendar events, making it an excellent choice for managing scheduling tasks in your applications.
+في هذا البرنامج التعليمي، اكتشفنا كيفية عرض أحداث التقويم باستخدام كود C# مع Aspose.Email لـ .NET. يوفر Aspose.Email طريقة مباشرة وفعالة للعمل مع أحداث التقويم، مما يجعله خيارًا ممتازًا لإدارة مهام الجدولة في تطبيقاتك.
 
-Now you can harness the power of Aspose.Email for .NET to handle calendar events seamlessly, improving your productivity and enhancing your scheduling capabilities.
+يمكنك الآن الاستفادة من قوة Aspose.Email for .NET للتعامل مع أحداث التقويم بسلاسة، وتحسين إنتاجيتك وتعزيز إمكانيات الجدولة لديك.
 
-## FAQs
+## الأسئلة الشائعة
 
-1. What is Aspose.Email for .NET?
-   Aspose.Email for .NET is an API that allows developers to work with email messages and calendar events in various formats within .NET applications.
+1. ما هو Aspose.Email لـ .NET؟
+   Aspose.Email for .NET عبارة عن واجهة برمجة تطبيقات تسمح للمطورين بالعمل مع رسائل البريد الإلكتروني وأحداث التقويم بتنسيقات مختلفة داخل تطبيقات .NET.
 
-2. Where can I download Aspose.Email for .NET?
-   You can download Aspose.Email for .NET from [here](https://releases.aspose.com/email/net/).
+2. أين يمكنني تنزيل Aspose.Email لـ .NET؟
+    يمكنك تنزيل Aspose.Email لـ .NET من[هنا](https://releases.aspose.com/email/net/).
 
-3. Can I customize the formatting of calendar event details?
-   Yes, you can customize the formatting of calendar event details as shown in the code example.
+3. هل يمكنني تخصيص تنسيق تفاصيل أحداث التقويم؟
+   نعم، يمكنك تخصيص تنسيق تفاصيل حدث التقويم كما هو موضح في مثال الكود.
 
-4. Is Aspose.Email suitable for working with Outlook data?
-   Yes, Aspose.Email is ideal for working with Outlook PST files and Exchange Server data.
+4. هل Aspose.Email مناسب للعمل مع بيانات Outlook؟
+   نعم، يعد Aspose.Email مثاليًا للعمل مع ملفات Outlook PST وبيانات Exchange Server.
 
-5. Are there any other features in Aspose.Email for .NET?
-   Yes, Aspose.Email offers a wide range of features for email management, including sending, receiving, and processing emails.
+5. هل هناك أي ميزات أخرى في Aspose.Email لـ .NET؟
+   نعم، يقدم Aspose.Email مجموعة واسعة من الميزات لإدارة البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني واستلامها ومعالجتها.
 
-Feel free to explore the [Aspose.Email API documentation](https://reference.aspose.com/email/net/) for more details and advanced usage scenarios. Happy coding!
+ لا تتردد في استكشاف[وثائق Aspose.Email API](https://reference.aspose.com/email/net/) لمزيد من التفاصيل وسيناريوهات الاستخدام المتقدمة. ترميز سعيد!

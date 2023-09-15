@@ -1,52 +1,52 @@
 ---
-title: 请按照以下步骤使用 Aspose.Email for .NET 检索传递状态通知：
-linktitle: 第 1 步：创建一个新项目
-second_title: 打开 Visual Studio 并创建一个新的 C# 控制台应用程序项目。
-description: 第2步：添加Aspose.Email引用
+title: C# 指南 - 将电子邮件保存为 MHTML 文件
+linktitle: C# 指南 - 将电子邮件保存为 MHTML 文件
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 了解如何使用 C# 和 Aspose.Email for .NET 将电子邮件另存为 MHTML 文件。包含代码示例和常见问题解答的分步指南。
 type: docs
 weight: 16
 url: /zh/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
 
-## 将下载的 Aspose.Email DLL 复制到您的项目目录。然后，在解决方案资源管理器中右键单击该项目，选择“添加”>“引用”，然后浏览找到 Aspose.Email DLL。单击“确定”将引用添加到您的项目中。
+## 将电子邮件另存为 MHTML 文件简介
 
-步骤 3：编写代码来检索 DSN
+Aspose.Email for .NET 是一个功能丰富的库，使开发人员能够以编程方式处理电子邮件、日历、联系人和任务。无论您是创建与电子邮件相关的应用程序、处理消息还是从电子邮件中提取数据，Aspose.Email 都能简化任务。
 
-## 打开
+## 安装和设置
 
-在您的项目中创建文件并导入必要的命名空间：
+首先，您需要安装 Aspose.Email for .NET。按着这些次序：
 
-1. 在 - 的里面[方法，编写代码以连接到电子邮件服务器、检索 DSN 并处理它们：](https://releases.aspose.com/email/net).
-2. 设置您的 IMAP 服务器凭据和主机
+1. 从以下位置下载库[这里](https://releases.aspose.com/email/net).
+2. 在您的项目中引用 Aspose.Email DLL。
 
-## 选择收件箱文件夹
+## 加载电子邮件消息
 
-搜索带有 DSN 的邮件
+在将电子邮件另存为 MHTML 文件之前，您需要加载电子邮件。使用以下代码片段：
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//处理检索到的 DSN
+//加载电子邮件消息
 var message = MailMessage.Load("path/to/your/email.msg");
 ```
 
-## 处理 DSN 详细信息
+## 了解 MHTML 格式
 
-...处理其他 DSN 详细信息
+MHTML (MIME HTML) 是一种用于存档网页和电子邮件的格式。它将所有资源（例如图像和样式表）封装到一个文件中。通过将电子邮件另存为 MHTML，您可以确保即使没有有效的 Internet 连接，电子邮件的内容也保持完整且可访问。
 
-## 将消息标记为已读或将其删除
+## 将电子邮件另存为 MHTML
 
-代替
+现在是令人兴奋的部分：将电子邮件另存为 MHTML 文件。您可以这样做：
 
 ```csharp
-//， 和
+//将电子邮件另存为 MHTML
 message.Save("path/to/save/email.mhtml", SaveOptions.DefaultMhtml);
 ```
 
-## 与您实际的 IMAP 服务器详细信息。
+## 定制流程
 
-第 4 步：运行应用程序
+Aspose.Email 允许您进一步自定义保存过程。您可以控制各种选项，例如保存附件和排除不必要的信息。
 
 ```csharp
 var options = SaveOptions.DefaultMhtml;
@@ -54,9 +54,9 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 message.Save("path/to/save/customized-email.mhtml", options);
 ```
 
-## 构建并运行您的应用程序。它将连接到您的电子邮件服务器，从收件箱文件夹中检索 DSN，处理其详细信息，并可选择删除它们或将它们标记为已读。
+## 处理附件
 
-常见问题解答
+附件是电子邮件的重要组成部分。您可以将电子邮件附件与 MHTML 文件一起保存。就是这样：
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -65,43 +65,43 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## 如何找到 IMAP 服务器主机？
+## 管理电子邮件元数据
 
-您可以从电子邮件服务提供商的文档或设置中找到 IMAP 服务器主机。它通常采用以下格式
+MHTML 文件还可以保留电子邮件元数据，确保电子邮件的真实性和上下文。元数据包括发件人、收件人、主题等信息。
 
-## 如何处理除主题和发件人之外的 DSN 详细信息？
+## 错误处理
 
-您可以访问的各种属性
+在处理电子邮件时，错误处理至关重要。使用 try-catch 块捕获异常并向用户提供适当的反馈或记录问题以进行调试。
 
-## 对象来检索 DSN 详细信息，例如收件人地址、传递状态、时间戳等。请参阅
+## 最佳实践
 
-- Aspose.Email 文档
-- 了解更多信息。
+- 定期更新到 Aspose.Email for .NET 的最新版本以访问新功能和增强功能。
+- 使用后妥善处理资源，防止内存泄漏。
 
-## 是否有必要删除 DSN 或将其标记为已读？
+## 现实世界的用例
 
-- 不，这是没有必要的。是否删除 DSN 或将 DSN 标记为已读取决于应用程序的要求。提供的代码演示了这两个选项，但您可以根据需要对其进行自定义。
-- 结论
-- 使用 C# 和 Aspose.Email for .NET 检索传递状态通知是一个简单的过程。 Aspose.Email 库简化了与 IMAP 服务器的通信，并提供易于使用的 API 来处理电子邮件消息。通过本指南，您现在可以将 DSN 检索功能合并到您的 C# 应用程序中。
+- 出于法律或合规目的存档重要电子邮件。
+- 创建新闻通讯或营销电子邮件的离线版本。
+- 以可以在不同平台之间轻松共享的格式存储电子邮件。
 
-## 安全消息处理 - C# 中的加密和解密
+## 结论
 
-安全消息处理 - C# 中的加密和解密
+在本指南中，我们探讨了如何使用 C# 和 Aspose.Email for .NET 将电子邮件另存为 MHTML 文件。该库的功能使开发人员能够有效管理与电子邮件相关的任务，同时保持内容的完整性和可访问性。无论您是构建电子邮件相关的应用程序还是需要简化电子邮件工作流程，Aspose.Email 都是您可靠的合作伙伴。
 
-## Aspose.Email .NET 电子邮件处理 API
+## 常见问题解答
 
-### 了解如何使用 Aspose.Email for .NET 在 C# 中通过加密和解密来实现安全消息处理。有效保护敏感数据。
+### 如何获取最新版本的 Aspose.Email for .NET？
 
-在当今的数字时代，确保通信过程中敏感信息的安全至关重要。网络威胁不断发展，因此实施强大的加密和解密机制来保护我们的数据至关重要。本文将指导您在 Aspose.Email for .NET 的帮助下完成在 C# 中使用加密和解密来安全处理消息的过程。[安全消息处理简介](https://releases.aspose.com/email/net).
+您可以从以下位置下载最新版本的 Aspose.Email for .NET[这里](https://releases.aspose.com/email/net).
 
-### 安全消息处理涉及使用加密和解密技术来保护各方之间交换的消息的机密性和完整性。加密将纯文本消息转换为密文，使未经授权的个人无法读取。另一方面，解密将密文转换回其原始的纯文本形式。
+### 我可以自定义保存的 MHTML 文件的外观吗？
 
-了解加密和解密
+是的，您可以通过在保存过程中修改 MHTFormatOptions 来自定义外观。
 
-### 对称加密
+### Aspose.Email 是否适合个人和企业级电子邮件管理？
 
-对称加密使用单个密钥来加密和解密消息。发送者和接收者之间共享相同的密钥。虽然这种方法对于更快的加密和解密过程非常有效，但挑战在于安全地共享和管理密钥。
+绝对地！ Aspose.Email旨在满足个人和企业的需求，为各种场景提供多功能解决方案。
 
-### 非对称加密
+### 使用 Aspose.Email for .NET 是否需要支付任何许可费用？
 
-非对称加密使用一对密钥：用于加密的公钥和用于解密的私钥。公钥可以公开共享，而私钥则保密。这种方法消除了密钥共享的需要，但与对称加密相比速度相对较慢。[使用 Aspose.Email for .NET](https://www.aspose.com/purchase/default.aspx).
+是的，Aspose.Email 是一个商业库。您可以在以下位置找到有关许可和定价的详细信息[Aspose.Email网站](https://www.aspose.com/purchase/default.aspx).

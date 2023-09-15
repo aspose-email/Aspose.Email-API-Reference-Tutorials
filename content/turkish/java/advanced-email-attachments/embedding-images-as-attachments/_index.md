@@ -1,99 +1,99 @@
 ---
-title: Aspose.Email .NET E-Posta İşleme API'si
-linktitle: Aspose.Email for .NET'i kullanarak e-posta eklerini adım adım çıkarmayı öğrenin. Çeşitli formatları kullanın ve kolaylıkla kaydedin.
-second_title: E-postadan Ek Çıkarmaya Giriş - Aspose.Email for .NET kullanarak C# Çözüm Yolu
-description: E-posta iletişimi hem kişisel hem de profesyonel olarak hayatımızın ayrılmaz bir parçası haline geldi. Çoğu zaman bu e-postalar, çıkarılması ve işlenmesi gereken önemli ekler içerir. Bu makalede, .NET için Aspose.Email kütüphanesini kullanarak e-postalardaki eklerin nasıl çıkarılacağına dair adım adım bir kılavuzu inceleyeceğiz.
+title: Aspose.Email'e Görüntüleri Ek Olarak Gömme
+linktitle: Aspose.Email'e Görüntüleri Ek Olarak Gömme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java'da görüntüleri ek olarak nasıl yerleştireceğinizi öğrenin. E-posta iletişiminizi görsel olarak ilgi çekici içerikle geliştirin.
 type: docs
 weight: 14
 url: /tr/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
 
-## Ekleri Çıkarmanın Önkoşulları
+## Aspose.Email'e Görüntüleri Ek Olarak Gömme
 
-Kodlama sürecine dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Günümüzün dijital çağında etkili iletişim genellikle metinden daha fazlasına dayanır. Resimler gibi görsel öğeler, bilginin iletilmesinde çok önemli bir rol oynar ve e-posta iletişimine gelince, resimlerin ek olarak yerleştirilmesi yaygın bir uygulamadır. Bu makalede Aspose.Email for Java kullanarak bunu nasıl başaracağımızı inceleyeceğiz. Bu adım adım kılavuz, e-postalarınızın yalnızca bilgilendirici değil aynı zamanda görsel olarak da çekici olmasını sağlayarak süreç boyunca size yol gösterecektir.
 
-## Makinenizde Visual Studio yüklü
+## Önkoşullar
 
-C# programlamaya ilişkin temel bilgiler
+Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Test için geçerli bir e-posta hesabına erişim[Geliştirme Ortamını Kurma](https://releases.aspose.com/email/java/).
+-  Aspose.Email for Java: Henüz yapmadıysanız Aspose.Email for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/email/java/).
 
-## Visual Studio'yu başlatın ve yeni bir C# konsol uygulaması projesi oluşturun.
+## E-posta Mesajı Oluşturma
 
-Projeye bir ad verin ve kaydetmek istediğiniz konumu seçin.`MailMessage`Aspose.Email Kütüphanesini Kurma
+ Aspose.Email'i kullanarak bir e-posta mesajı oluşturmak için gerekli kütüphaneleri içe aktarmanız ve e-posta mesajını başlatmanız gerekir.`MailMessage`nesne. İşte başlamanıza yardımcı olacak bir kod pasajı:
 
 ```java
-//Çözüm Gezgini'nde projenize sağ tıklayın ve "NuGet Paketlerini Yönet"i seçin.
+// Gerekli kütüphaneleri içe aktarın
 import com.aspose.email.*;
 
-//"Aspose.Email" ifadesini arayın ve projeniz için kütüphaneyi yükleyin.
+// Yeni bir e-posta mesajı oluştur
 MailMessage message = new MailMessage();
 ```
 
-## E-posta Mesajlarını Yükleme ve Erişme
+## Resmi Ek Olarak Ekleme
 
-Başlamak için Aspose.Email kütüphanesini kullanarak e-posta mesajlarını yüklemeniz ve bunlara erişmeniz gerekir. İşte nasıl:
+E-postanıza resim eklemek için resim dosyasının yolunu belirtmeniz ve onu ek olarak eklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
-// E-posta sunucusuna bağlanın
+// Görüntü dosyasının yolunu belirtin
 String imagePath = "path/to/your/image.jpg";
 
-// Mesajları al
+// Resmi e-postaya ekleyin
 Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-##  E-posta mesajına erişme
+## Ekli Resmin Gömülmesi
 
-E-postadan Ekleri Çıkarma`LinkedResource`E-posta mesajına eriştikten sonra ekleri çıkarmaya başlayabilirsiniz:
+ Ekli resmi e-posta gövdesine gömmek için`LinkedResource` sınıf. Bu, e-postanın HTML gövdesindeki eke referans vermenizi sağlar:
 
 ```java
-// Ek türünü kontrol edin
+// Ekli görüntü için bir LinkedResource oluşturun
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// PDF ekini işle
+// Gömülü görüntüyle bir HTML gövdesi oluşturun
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-##  İşlem resmi eki
+## E-postayı Gönderme
 
-Diğer ek türlerini de benzer şekilde kullanın`SmtpClient`Farklı Ek Tiplerini Kullanma
+ Artık gömülü görseli içeren bir e-posta mesajı oluşturduğunuza göre, onu Aspose.Email'i kullanarak gönderebilirsiniz.`SmtpClient`:
 
 ```java
-//Ekler, PDF'ler, resimler, belgeler vb. gibi çeşitli biçimlerde gelebilir. Kodunuzu, farklı ek türlerini uygun şekilde işleyecek şekilde uyarlayabilirsiniz.
+// SmtpClient'i başlat
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
-//Çıkarılan Ekleri Kaydetme
+// E-postayı gönder
 client.send(message);
 ```
 
-Çıkarılan ekleri yerel sisteminize kaydetmek için:
+Tebrikler! Aspose.Email for Java'yı kullanarak bir resmi e-postaya başarıyla ek olarak yerleştirdiniz. E-postalarınız artık görsel olarak daha ilgi çekici ve bilgilendirici olacak.
 
 ## Çözüm
 
-Bu eğitimde, .NET için Aspose.Email kütüphanesini kullanarak e-postalardaki eklerin nasıl çıkarılacağını araştırdık. Bu adımları izleyerek, e-posta iletişimlerinizdeki ekleri verimli bir şekilde alabilir ve işleyebilirsiniz.
+Bu kılavuzda, Aspose.Email for Java'ya görselleri ek olarak yerleştirmenin temel adımlarını ele aldık. Bu adımları izleyerek hedef kitlenizi büyüleyecek görsel öğeler ekleyerek e-posta iletişiminizi geliştirebilirsiniz.
 
-## SSS
+## SSS'ler
 
-### Bilinmeyen dosya türlerine sahip ekleri nasıl işleyebilirim?
+### Tek bir e-postaya birden fazla resmi nasıl gömebilirim?
 
- Ektekileri kullanabilirsiniz
+Her görsel için aynı işlemi takip ederek ve her birinin benzersiz bir içerik kimliğine sahip olmasını sağlayarak birden fazla görseli gömebilirsiniz.
 
-###  dosya türünü tanımlama ve buna göre işleme özelliği.
+### Düz metin e-postalara resim yerleştirebilir miyim?
 
-Aynı anda birden fazla eki çıkarabilir miyim?
+Düz metin e-postaları gömülü görselleri desteklemediğinden, düz metin e-postalarına resim gömmek standart bir uygulama değildir. Ancak düz metin e-postalarına resim URL'lerini ekleyebilirsiniz.
 
-### Evet, bir e-posta mesajının ek koleksiyonunu yineleyebilir ve tüm ekleri çıkarabilirsiniz.
+### Gömme için hangi resim formatları destekleniyor?
 
-Aspose.Email farklı e-posta protokolleriyle uyumlu mu?
+Aspose.Email for Java, JPEG, PNG, GIF ve daha fazlası dahil olmak üzere çeşitli görüntü formatlarını destekler. Görüntünüzün uyumlu bir formatta olduğundan emin olun.
 
-### Evet, Aspose.Email, IMAP, POP3, SMTP ve Exchange Web Services (EWS) gibi çeşitli e-posta protokollerini destekler.
+### E-postadaki gömülü görselleri yeniden boyutlandırmak mümkün mü?
 
-Aspose.Email hangi .NET sürümlerini destekliyor?`<img>`Aspose.Email, .NET Framework ve .NET Core'u destekler.
+ Evet, HTML'yi ayarlayarak gömülü görsellerin boyutunu kontrol edebilirsiniz.`<img>` e-postanızın HTML gövdesindeki etiket özelliklerini kullanın.
 
-### Aspose.Email hakkında daha fazla bilgiyi nerede bulabilirim?
+### Gömülü görüntülerin boyutunda herhangi bir sınırlama var mı?
 
- Ayrıntılı belgeler ve örnekler için bkz.
+Gömülü görsellerin boyutu, e-posta teslim edilebilirliğini ve alıcı deneyimini etkileyebilir. Büyük dosya boyutlarından kaçınmak için resimlerin e-posta için optimize edilmesi önerilir.

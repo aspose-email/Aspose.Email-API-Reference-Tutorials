@@ -1,97 +1,97 @@
 ---
-title: Aspose.Email for .NET'i kullanarak e-postalarınızı doğru zaman dilimleriyle MHT formatına dönüştürün. Adım adım kılavuz ve kod örneği sağlanmıştır.
-linktitle: Zaman Dilimi ile E-postayı MHT'ye Dönüştürmeye Giriş
-second_title: E-posta mesajlarını çeşitli formatlara dönüştürmek birçok uygulamada ortak bir gerekliliktir. Saat ve saat dilimi bilgilerinin çok önemli bir rol oynadığı senaryolarda, bu bilgilerin dönüştürme işlemi sırasında doğru şekilde korunmasını sağlamak önemlidir. Bu kılavuzda, saat dilimi verilerini doğru şekilde işlerken e-postaları MHT biçimine dönüştürmeye odaklanacağız.
-description: Geliştirme Ortamınızı Kurma
+title: Aspose.Email ile E-posta Şifreleme ve Şifre Çözme
+linktitle: Aspose.Email ile E-posta Şifreleme ve Şifre Çözme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java kullanarak e-postalarınızı E-posta Şifreleme ve Şifre Çözme ile nasıl güvence altına alacağınızı öğrenin. Adım adım kılavuz, kaynak kodu ve SSS'ler dahildir.
 type: docs
 weight: 11
 url: /tr/java/exploring-email-security/email-encryption-and-decryption/
 ---
 
-## Kodlama sürecine dalmadan önce geliştirme ortamınızın harekete hazır olduğundan emin olalım. Uyumlu bir Visual Studio sürümünün yüklü olduğundan emin olun ve başlamak için yeni bir C# projesi oluşturun.
+## giriiş
 
-Aspose.Email for .NET'in Kurulumu
+E-posta Şifreleme ve Şifre Çözme, e-postalardaki hassas bilgilerin güvenliğini sağlamak için gereklidir. Aspose.Email for Java bunu başarmak için güçlü araçlar sağlar. Bu kılavuzda, süreç boyunca size adım adım yol göstereceğiz.
 
-## Aspose.Email for .NET, e-postayla ilgili görevleri basitleştiren, zengin özelliklere sahip bir kütüphanedir. Yüklemek için şu adımları izleyin:
+## Önkoşullar
 
-Projenizi Visual Studio'da açın.
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. "Araçlar" > "NuGet Paket Yöneticisi" > "Çözüm için NuGet Paketlerini Yönet" seçeneğine gidin.
-2. "Aspose.Email"i arayın ve paketi yükleyin.[E-posta Mesajlarını Yükleme ve Ayrıştırma](https://releases.aspose.com/email/java/).
+1. Java Geliştirme Ortamı.
+2.  Aspose.Email Java kütüphanesi için. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/java/).
 
-## Bu adımda dönüştürmek istediğimiz e-posta mesajını yükleyip ayrıştıracağız. Başlangıç noktası olarak aşağıdaki kod parçacığını kullanın:
+## Adım 1: Java Projenizi Kurma
 
- Gerekli kullanım ifadelerini ekleyin
+Başlamak için yeni bir Java projesi oluşturun ve Aspose.Email kütüphanesini sınıf yolunuza ekleyin.
 
 ```java
 import com.aspose.email.*;
 ```
 
-##  E-posta mesajını yükle
+## Adım 2: E-posta Şifreleme
 
-###  Artık mesaj özelliklerine erişebilirsiniz
+### E-posta Mesajı Oluştur
 
 ```java
 MailMessage message = new MailMessage();
 message.setSubject("Confidential Document");
 message.setBody("This is a confidential document.");
 
-// ... diğer mülkler
+// Göndereni ve alıcıyı ayarlayın
 message.setFrom("sender@example.com");
 message.getTo().add("recipient@example.com");
 
-//Saat Dilimi Bilgilerini İşleme
+// E-postayı şifrele
 message.encrypt(EncryptionAlgorithm.TripleDes);
 ```
 
-### Saat dilimi bilgileriyle doğru şekilde ilgilenmek çok önemlidir. Aşağıdaki kod parçacığı, bir e-posta iletisinden saat dilimi verilerinin nasıl çıkarılacağını ve yönetileceğini gösterir:
+### Şifrelenmiş E-postayı Kaydet
 
 ```java
 message.save("encrypted_email.eml", SaveOptions.getDefaultEml());
 ```
 
-##  Artık saat dilimi dönüşümlerini yönetmek için timezoneInfo'yu kullanabilirsiniz
+## Adım 3: E-posta Şifre Çözme
 
-### E-postayı MHT Formatına Dönüştürme
+### Şifreli E-postayı Yükle
 
 ```java
 MailMessage encryptedMessage = MailMessage.load("encrypted_email.eml");
 
-//Şimdi temel dönüşüm adımı geliyor. MHT formatına dönüştürme işlemini gerçekleştirmek için Aspose.Email'i kullanacağız:
+// E-postanın şifresini çözün
 encryptedMessage.decrypt();
 ```
 
-### MHT Dosyasını Kaydetme
+### Şifresi Çözülmüş İçeriği Çıkarın
 
 ```java
 String decryptedSubject = encryptedMessage.getSubject();
 String decryptedBody = encryptedMessage.getBodyText();
 ```
 
-## E-posta mesajı MHT formatına dönüştürüldüğünde, onu dosya olarak kaydetmenin zamanı geldi:
+## Çözüm
 
-Tam Kaynak Kodu Örneği
+E-postalarınızı şifreleme ve şifre çözme ile güvence altına almak, hassas bilgilerin korunması açısından çok önemlidir. Aspose.Email for Java bu süreci basitleştirerek verilerinizin gizli kalmasını sağlar.
 
-## İşte tüm adımları bir araya getiren tam kod örneği:
+## SSS
 
-###  Gerekli kullanım ifadelerini ekleyin
+### S1: Aspose.Email diğer Java kütüphaneleriyle uyumlu mu?
 
- E-posta mesajını yükleyin ve ayrıştırın
+Evet, Aspose.Email diğer Java kütüphaneleriyle sorunsuz bir şekilde bütünleşerek onu çeşitli projeler için çok yönlü hale getiriyor.
 
-###  Saat dilimi bilgilerini işleme
+### S2: Bir e-postadaki ekleri şifreleyebilir miyim?
 
- E-postayı MHT formatına dönüştürün
+Kesinlikle, gelişmiş güvenlik için hem e-posta gövdesini hem de eklerini şifreleyebilirsiniz.
 
-###  MHT dosyasını kaydedin
+### S3: Başka şifreleme algoritmaları mevcut mu?
 
-Ek Özelleştirmeleri Keşfetmek
+Aspose.Email çeşitli şifreleme algoritmalarını destekleyerek ihtiyacınız olan güvenlik seviyesini seçmenize olanak tanır.
 
-### Aspose.Email for .NET çeşitli özelleştirme seçenekleri sunar. Uygulamanızın ihtiyaçlarına uyacak şekilde ek eklemeyi, mesaj özelliklerini değiştirmeyi ve daha fazlasını keşfedebilirsiniz.
+### S4: Aspose.Email büyük ölçekli e-posta işlemlerine uygun mudur?
 
-Aspose.Email for .NET Kullanmanın Yararları
+Evet, ölçeklenebilirlik için tasarlandığı için hem küçük hem de büyük ölçekli e-posta işlemeye uygundur.
 
-### Aspose.Email for .NET, e-postayla ilgili karmaşık görevleri basitleştirerek geliştiricilerin temel işlevlere odaklanmasına olanak tanır. Doğru ve verimli dönüşümler sağlayarak çeşitli e-posta formatları için güçlü destek sağlar.
+### S5: Aspose.Email for Java'da daha fazla kaynağı nerede bulabilirim?
 
-Çözüm[Bu kılavuzda, Aspose.Email for .NET kullanarak saat dilimi bilgilerini işlerken e-posta mesajlarını MHT formatına nasıl dönüştüreceğimizi öğrendik. Bu adımları izleyerek ve daha fazla özelleştirme seçeneklerini keşfederek, e-posta dönüştürme işlevini uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.](https://reference.aspose.com/email/java/)SSS'ler
+ API belgelerini ziyaret edin[Burada](https://reference.aspose.com/email/java/) detaylı bilgi ve örnekler için.
 
-E-posta dönüşümü sırasında ekleri nasıl yönetirim?
+Artık Aspose.Email for Java'yı kullanarak E-posta Şifreleme ve Şifre Çözme konusunda kapsamlı bir anlayışa sahipsiniz. E-postalarınızı korumaya bugün başlayın!

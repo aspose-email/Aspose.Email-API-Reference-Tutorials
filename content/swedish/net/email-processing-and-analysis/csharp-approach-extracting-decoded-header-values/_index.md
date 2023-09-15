@@ -1,35 +1,35 @@
 ---
-title: C# Approach - Extracting Decoded Header Values
-linktitle: C# Approach - Extracting Decoded Header Values
+title: C# Approach - Extrahera avkodade huvudvärden
+linktitle: C# Approach - Extrahera avkodade huvudvärden
 second_title: Aspose.Email .NET Email Processing API
-description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
+description: Lär dig att extrahera avkodade e-posthuvudvärden i C# med Aspose.Email för .NET. Omfattande guide med kodexempel.
 type: docs
 weight: 17
 url: /sv/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
+I den här handledningen kommer vi att guida dig genom processen att använda Aspose.Email för .NET för att extrahera avkodade rubrikvärden från e-postmeddelanden. Aspose.Email för .NET är ett robust bibliotek som ger utvecklare möjlighet att arbeta med olika aspekter av e-postmeddelanden, inklusive att läsa och manipulera e-postrubriker.
 
-## Step 1: Download and Install Aspose.Email for .NET
+## Steg 1: Ladda ner och installera Aspose.Email för .NET
 
-Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
+ Innan vi börjar, se till att du har Aspose.Email för .NET installerat. Om du inte redan har gjort det kan du ladda ner biblioteket från följande länk:[Ladda ner Aspose.Email för .NET](https://releases.aspose.com/email/net).
 
-## Step 2: Create a New C# Project
+## Steg 2: Skapa ett nytt C#-projekt
 
-Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
+Börja med att skapa ett nytt C#-projekt i din föredragna integrerade utvecklingsmiljö (IDE) eller textredigerare.
 
-## Step 3: Add a Reference to Aspose.Email
+## Steg 3: Lägg till en referens till Aspose.Email
 
-In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
+ För att kunna använda Aspose.Email i ditt projekt måste du lägga till en referens till`Aspose.Email` hopsättning. Här är hur:
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Add" > "Reference."
-3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
-4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
+1. Högerklicka på ditt projekt i Solution Explorer.
+2. Välj "Lägg till" > "Referens".
+3. I fönstret "Reference Manager", klicka på "Bläddra" eller "Bläddra..." och navigera till platsen där du installerade Aspose.Email.
+4.  Välj lämplig montering för ditt projekt (t.ex.`Aspose.Email.dll`) och klicka på "Lägg till".
 
-## Step 4: Extract Decoded Header Values
+## Steg 4: Extrahera avkodade huvudvärden
 
-Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
+Låt oss nu dyka in i koden för att extrahera avkodade rubrikvärden från ett e-postmeddelande. I det här exemplet kommer vi att fokusera på att extrahera rubriken "Ämne".
 
 ```csharp
 using Aspose.Email;
@@ -39,7 +39,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Load the email message
+        // Ladda e-postmeddelandet
 		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
 		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
 		Console.WriteLine(decodedValue);
@@ -48,32 +48,32 @@ class Program
 }
 ```
 
-In the code snippet above, we perform the following steps:
+I kodavsnittet ovan utför vi följande steg:
 
-1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
-2. We create a `Main` method as the entry point of our application.
-3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
-5. We print the decoded Subject header to the console.
+1. Vi importerar nödvändiga namnutrymmen (`Aspose.Email` och`Aspose.Email.Mail`).
+2.  Vi skapar en`Main` metod som startpunkt för vår ansökan.
+3.  Inom`Main`metoden använder vi`MailMessage.Load` metod för att ladda ett e-postmeddelande från en fil. Byta ut`"path/to/your/email.eml"` med den faktiska sökvägen till e-postmeddelandet du vill bearbeta.
+4.  Vi använder`Headers.GetDecodedValue` metod för att avkoda ämnesrubriken.
+5. Vi skriver ut den avkodade ämnesrubriken till konsolen.
 
-## Step 5: Run the Application
+## Steg 5: Kör programmet
 
-Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
+ Kompilera och kör din applikation. Se till att byta ut`"path/to/your/email.eml"` med den faktiska sökvägen till e-postmeddelandet du vill bearbeta. Applikationen kommer att ladda e-postmeddelandet, extrahera den avkodade ämnesrubriken och visa den i konsolen.
 
-## FAQs
+## Vanliga frågor
 
-### How can I decode other email headers using Aspose.Email for .NET?
+### Hur kan jag avkoda andra e-postrubriker med Aspose.Email för .NET?
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
+ Du kan avkoda olika e-postrubriker som "Från", "Till", "Datum" etc., med hjälp av`Headers.GetDecodedValue` metod. Ange bara rubrikvärdet som en parameter till metoden.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Var kan jag hitta mer information om Aspose.Email för .NET?
 
-For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
+ För detaljerad dokumentation och exempel, se[Aspose.Email för .NET API-referens](https://reference.aspose.com/email/net).
 
-### Is Aspose.Email for .NET available for free?
+### Är Aspose.Email för .NET tillgängligt gratis?
 
-Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
+ Aspose.Email för .NET är ett kommersiellt bibliotek. Du kan utforska dess funktioner genom att[ladda ner den kostnadsfria testversionen](https://releases.aspose.com/email/net).
 
-## Conclusion
+## Slutsats
 
-In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+den här handledningen har du lärt dig hur du använder Aspose.Email för .NET för att extrahera avkodade rubrikvärden från e-postmeddelanden. Aspose.Email för .NET tillhandahåller en omfattande uppsättning verktyg som ger utvecklare möjlighet att effektivt arbeta med e-postmeddelanden, inklusive hantering av rubriker.

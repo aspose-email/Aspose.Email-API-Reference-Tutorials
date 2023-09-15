@@ -1,49 +1,49 @@
 ---
-title: C# ile Gömülü Nesneleri E-postadan Çıkarma
-linktitle: Aspose.Email .NET E-Posta İşleme API'si
-second_title: C# ve Aspose.Email for .NET kullanarak e-postalardan gömülü nesneleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-description: E-postalardaki Gömülü Nesnelere Giriş
+title: Aspose.Email'de Büyük Ekleri Yönetme
+linktitle: Aspose.Email'de Büyük Ekleri Yönetme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java ile büyük e-posta eklerini verimli bir şekilde yönetin. Java uygulamalarında kolaylaştırılmış ek yönetimi için adım adım kılavuz ve kaynak kodu.
 type: docs
 weight: 11
 url: /tr/java/advanced-email-attachments/managing-large-attachments/
 ---
 
-## E-postalardaki gömülü nesneler, ayrı olarak eklenmek yerine doğrudan e-posta içeriğine eklenen dosyalar anlamına gelir. Bu nesneler, gönderenin mesaj gövdesine resimler, animasyonlar veya etkileşimli içerik eklemesine olanak tanıyarak e-posta deneyimini zenginleştirir.
+## Aspose.Email for Java'da Büyük Ekleri Yönetmeye Giriş
 
-Aspose.Email for .NET'e Başlarken
+Ekler e-posta iletişiminin önemli bir parçasıdır, ancak büyük eklerle verimli bir şekilde başa çıkmak zor olabilir. Aspose.Email for Java ile Java uygulamalarınızdaki büyük e-posta eklerinin yönetimini kolaylaştırabilirsiniz. Bu kılavuzda, etkili ek kullanımı için kaynak kodu örnekleri sunarak süreç boyunca size adım adım yol göstereceğiz.
 
-## Aspose.Email for .NET, e-posta mesajlarının ayrıştırılması, oluşturulması ve değiştirilmesi dahil, e-postalarla çalışmak için çeşitli özellikler sağlayan güçlü bir kütüphanedir. Başlamak için Aspose.Email for .NET kütüphanesinin projenizde kurulu olması gerekir. Aspose.Releases'ten indirebilirsiniz:
+## Önkoşullar
 
-Aspose.Release'ler
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- [ veya NuGet gibi bir paket yöneticisi kullanın.](https://releases.aspose.com/email/java/)E-posta Yükleme ve Ayrıştırma
+- [Java için Aspose.Email](https://releases.aspose.com/email/java/): Aspose.Email for Java kütüphanesini indirip yükleyin.
 
-## Bir e-postadan katıştırılmış nesneleri çıkarmak için öncelikle e-posta mesajını yükleyip ayrıştırmanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+## 1. Adım: E-posta Oluşturma
 
- Gerekli ad alanlarını içe aktarın
+Başlamak için büyük bir ek içeren örnek bir e-posta oluşturalım. Bunu yapmak için Aspose.Email kütüphanesini kullanacağız. İşte basit bir Java kod pasajı:
 
 ```java
-// E-posta mesajını yükle
+// Gerekli Aspose.Email sınıflarını içe aktarın
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            //Gömülü Nesneleri Tanımlama ve Çıkarma
+            // Yeni bir Posta Mesajı oluştur
             MailMessage message = new MailMessage();
 
-            //E-posta mesajı yüklendikten sonra, gömülü nesneleri tanımlamak ve çıkarmak için AlternateView'leri yineleyebilirsiniz. AlternateView'ler, HTML ve düz metin de dahil olmak üzere farklı e-posta formatlarını temsil eder. Gömülü nesneler genellikle HTML görünümünde bulunur.
+            // Gönderen ve alıcı adreslerini ayarlayın
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // Alternatif görünümleri yineleyin
+            // E-postanın konusunu ve metnini ayarlayın
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Gömülü nesneleri HTML içeriğinden çıkarın
+            // E-postaya büyük bir dosya ekleyin
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            //Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
+            // E-postayı kaydet
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -52,42 +52,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-Çıkarılan Nesneleri Kaydetme`MailMessage`Gömülü nesneleri tanımlayıp çıkardıktan sonra bunları istediğiniz konuma kaydedebilirsiniz. Bağlantılı kaynağın ContentId'si genellikle dosya adı olarak kullanılır.`"sender@example.com"`, `"recipient@example.com"`Kaynak Kodunu Tamamlayın`"path/to/large_attachment.pdf"`Aspose.Email for .NET kullanarak bir e-postadan gömülü nesneleri çıkarmak için gereken kaynak kodun tamamı burada:
+ Bu kodda yeni bir tane oluşturuyoruz.`MailMessage` ve ona büyük bir PDF dosyası ekleyin. Değiştirdiğinizden emin olun`"sender@example.com"`, `"recipient@example.com"` , Ve`"path/to/large_attachment.pdf"` gerçek e-posta adresleriniz ve büyük ek dosyanızın yolu ile.
 
-##  E-posta mesajını yükle
+## Adım 2: E-postayı Gönderme
 
- Alternatif görünümleri yineleyin
+Artık büyük bir eke sahip bir e-posta oluşturduğumuza göre, bunu SMTP kullanarak gönderelim. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
-// Gömülü nesneleri HTML içeriğinden çıkarın
+// Gerekli Aspose.Email sınıflarını içe aktarın
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            //Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
+            // Yeni bir SmtpClient örneği oluşturun
             SmtpClient client = new SmtpClient();
 
-            //Çözüm
+            //SMTP sunucusu ayarlarını belirtin
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            //Bu makalede, C# ve Aspose.Email for .NET kitaplığını kullanarak e-postalardan gömülü nesnelerin nasıl çıkarılacağını araştırdık. E-postanın yüklenmesi ve ayrıştırılmasından, gömülü nesnelerin tanımlanmasına ve kaydedilmesine kadar tüm süreci ele aldık. Bu kılavuzu takip ederek e-posta işleme yeteneklerinizi geliştirebilir ve uygulamalarınızın içeriğini zenginleştirebilirsiniz.
+            // Yeni bir Posta Mesajı oluştur
             MailMessage message = new MailMessage();
 
-            //SSS'ler
+            // Gönderen ve alıcı adreslerini ayarlayın
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            //Aspose.Email for .NET'i nasıl yüklerim?
+            // E-postanın konusunu ve metnini ayarlayın
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Aspose.Email for .NET'i Aspose.Releases'ten indirerek kurabilirsiniz:
+            // E-postaya büyük bir dosya ekleyin
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            //Aspose.Release'ler
+            // E-postayı gönder
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -96,23 +96,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
- veya NuGet gibi bir paket yöneticisi kullanarak.`SmtpClient`Gömülü nesneleri HTML dışındaki eklerden çıkarabilir miyim?`"smtp.example.com"`, `"your_username"`Evet, Aspose.Email for .NET, HTML, düz metin ve hatta multimedya formatları da dahil olmak üzere çeşitli ek türlerinden gömülü nesneleri ayıklamak için yöntemler sağlar.`"your_password"`Aspose.Email for .NET'in kullanımı ücretsiz mi?
+ Bu kodda şunu kullanıyoruz:`SmtpClient` Büyük ek içeren e-postayı göndermek için sınıfa gidin. Yer değiştirmek`"smtp.example.com"`, `"your_username"` , Ve`"your_password"` SMTP sunucu ayarlarınızla.
 
-##  Aspose.Email for .NET ticari bir kütüphanedir ve projelerinizde kullanmak için lisans almanız gerekebilir. Bakın
+## 3. Adım: E-postayı Alma ve İndirme
 
-fiyatlandırma sayfası
+Büyük bir ek içeren bir e-posta aldığınızda, eki yerel sisteminize indirmek isteyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
-// daha fazla bilgi için.
+// Gerekli Aspose.Email sınıflarını içe aktarın
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            //Çıkarılan gömülü nesneleri kaydetmeden önce değiştirebilir miyim?
+            // E-postayı bir dosyadan veya e-posta sunucunuzdan yükleyin
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            //Evet, çıkartılan gömülü nesneleri kaydetmeden önce değiştirebilirsiniz. Aspose.Email kütüphanesi, e-posta içeriğini ve kaynaklarını değiştirmek için çeşitli yöntemler sunar.
+            // Ekler arasında dolaşın ve büyük olanı indirin
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -126,22 +126,22 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-Aspose.Email for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
+Bu kodda, alınan e-postayı yüklüyoruz ve büyük eki bulup indirmek için eklerini yineliyoruz.
 
-##  Daha fazla kod örneği ve öğreticiyi şurada bulabilirsiniz:
+## Çözüm
 
-API Referansı
+Büyük e-posta eklerini verimli bir şekilde yönetmek, etkili e-posta iletişimi için çok önemlidir. Aspose.Email for Java ile Java uygulamalarınızdaki büyük eklerin işlenmesi sürecini kolaylaştırabilirsiniz. Bu kılavuzda, büyük eklere sahip e-postalar oluşturup göndermekten, bunları alıp indirmeye kadar temel adımları ele aldık. Bu adımları ve en iyi uygulamaları izleyerek, Java projelerinizde büyük e-posta ekleriyle uğraşırken sorunsuz bir deneyim sağlayabilirsiniz.
 
-##  E-postaya Ekleri Ekleme - C# Örneği
+## SSS'ler
 
-###  E-postaya Ekleri Ekleme - C# Örneği
+### Çok büyük ataşmanları verimli bir şekilde nasıl idare edebilirim?
 
- Aspose.Email .NET E-Posta İşleme API'si
+Çok büyük ekleri verimli bir şekilde işlemek için, ekin tamamını belleğe yüklemek yerine, ek verilerini parçalar halinde okumak ve yazmak için akış tekniklerini kullanmayı düşünün. Aspose.Email, büyük ekleri aşırı bellek tüketmeden işlemenize olanak tanıyan akış yetenekleri sağlar.
 
-###  Aspose.Email for .NET'i kullanarak e-postaya ekleri nasıl ekleyeceğinizi öğrenin. C# kod örneğiyle adım adım kılavuz.
+### E-posta ekleri için herhangi bir boyut sınırlaması var mı?
 
-E-postaya Ek Eklemeye Giriş
+E-posta eklerinin boyut sınırlamaları, e-posta servis sağlayıcılarına ve e-posta istemcilerine bağlı olarak değişebilir. Teslimat sorunlarını önlemek için e-posta servis sağlayıcınızın ek boyutu sınırlarını kontrol etmeniz ve eklerinizin bu sınırlara uygun olduğundan emin olmanız önemlidir.
 
-### Günümüzün hızlı tempolu dijital dünyasında, e-posta iletişimi hem işletmeler hem de bireyler için temel taşı olmaya devam ediyor. E-postalarınıza ek eklemek, belgeleri, resimleri ve dosyaları zahmetsizce paylaşmanıza olanak tanıyarak mesajlarınızın değerini artırır. Bu adım adım kılavuz, .NET için Aspose.Email kütüphanesini kullanarak e-postanıza ek ekleme sürecinde size yol gösterecektir.
+### Ekleri boyutlarını küçültmek için sıkıştırabilir miyim?
 
-Geliştirme Ortamınızı Kurma
+Evet, ekleri göndermeden önce boyutlarını küçültmek için sıkıştırabilirsiniz. Aspose.Email, ekleri programlı olarak sıkıştırmak ve açmak için özellikler sağlar. E-posta eklerinizin boyutunu optimize etmek için bunu uygulayabilirsiniz.

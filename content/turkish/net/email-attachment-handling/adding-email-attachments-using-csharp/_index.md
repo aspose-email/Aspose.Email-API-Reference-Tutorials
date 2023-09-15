@@ -1,45 +1,45 @@
 ---
-title: Çözüm
-linktitle: Bu makalede, Aspose.Email for .NET kütüphanesini kullanarak C#'ta yükleme seçenekleriyle e-posta mesajlarının nasıl yükleneceğini araştırdık. Dosyalardan, akışlardan, Exchange Sunucusundan yükleme yapma ve parola korumalı e-postaları yönetme gibi çeşitli senaryoları ele aldık. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodu örneklerini kullanarak, e-posta yükleme işlevini uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
-second_title: SSS'ler
-description: Aspose.Email for .NET kütüphanesini nasıl kurabilirim?
+title: C# kullanarak E-posta Ekleri Ekleme
+linktitle: C# kullanarak E-posta Ekleri Ekleme
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: C# ve Aspose.Email for .NET kullanarak e-posta eklerini nasıl ekleyeceğinizi öğrenin. Sorunsuz entegrasyon için kod örnekleri içeren adım adım kılavuz.
 type: docs
 weight: 11
 url: /tr/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
 
-##  Aspose.Email for .NET kütüphanesini web sitesinden indirerek kurabilirsiniz.
+## E-posta Eklerine ve Aspose.Email for .NET'e Giriş
 
-Burada
+E-posta ekleri elektronik iletişimin ayrılmaz bir parçasıdır. Dosyaları başkalarıyla rahatça paylaşmamıza olanak tanırlar. Aspose.Email for .NET, C# uygulamalarındaki e-postayla ilgili görevleri basitleştiren güçlü bir kütüphanedir.
 
-## Bu kitaplığı kullanarak Exchange Sunucusundan e-posta yükleyebilir miyim?
+## Önkoşullar
 
-Evet, Aspose.Email for .NET tarafından sağlanan Exchange Web Hizmetleri (EWS) işlevini kullanarak e-postaları doğrudan Exchange Sunucusundan yükleyebilirsiniz.
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Parola korumalı e-postaları yönetmek mümkün mü?
-- Kesinlikle! Aspose.Email for .NET, parola korumalı e-postaların yüklenmesini ve işlenmesini destekler. Şifreyi yükleme seçeneklerinin bir parçası olarak sağlayabilirsiniz.
-- E-postaları yüklerken hatalarla karşılaşırsam ne yapmalıyım?[E-posta yükleme sırasında hatalarla karşılaşırsanız istisnaları işlemek için yükleme kodunuzu bir try-catch bloğuna sardığınızdan emin olun. Bu, ortaya çıkan sorunları tanımlamanıza ve çözmenize yardımcı olacaktır.](https://products.aspose.com/email/net C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma)
+- Visual Studio yüklü
+- Temel C# anlayışı
+-  Aspose.Email for .NET kütüphanesi (Şu adresten alabilirsiniz:[Burada](https://products.aspose.com/email/net))
 
-##  C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma
+## Geliştirme Ortamını Kurma
 
-1.  Aspose.Email .NET E-Posta İşleme API'si
-2.  Aspose.Email for .NET'i kullanarak gömülü MSG formatını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
-3. Gömülü MSG Formatını Korumaya Giriş
+1. Visual Studio'yu başlatın.
+2. Yeni bir C# konsol uygulaması oluşturun.
+3. Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyin.
 
 ```csharp
-//"Mesaj"ın kısaltması olan MSG formatı genellikle e-postaları, kişileri, randevuları ve Outlook ile ilgili diğer verileri depolamak için kullanılır. Ekler, resimler ve biçimlendirme gibi zengin içeriğin korunmasına olanak tanır. Ancak MSG dosyalarını C# kullanarak yüklerken bu gömülü içeriği korumak zor olabilir.
+// Geliştirme ortamını ayarlama kodunuz
 ```
 
-## Aspose.Email for .NET'i Anlamak
+## Yeni Bir E-posta Mesajı Oluşturma
 
-1. Aspose.Email for .NET, geliştiricilerin Outlook ile ilgili dosyalar oluşturmasına, yönetmesine ve işlemesine olanak tanıyan güçlü bir kitaplıktır. MSG dahil çeşitli formatlar için kapsamlı destek sunar. Öne çıkan özelliklerinden biri, MSG dosyalarını yüklerken gömülü içeriği sorunsuz bir şekilde koruma yeteneğidir.
+1. Gerekli ad alanlarını içe aktarın.
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-2. Adım 1: Aspose.Email for .NET'in Kurulumu
+2. Yeni bir MailMessage örneği oluşturun.
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -47,48 +47,48 @@ message.Subject = "My Email with Attachments";
 message.Body = "Please find the attached files.";
 ```
 
-##  Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. En son sürümü adresinden indirebilirsiniz.
+## E-postaya Ek Ekleme
 
-1. Aspose.Email for .NET indirme sayfası
+1. Ek eklemek için Ek sınıfını kullanın.
 
 ```csharp
 Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-2. . İndirdikten sonra şu adımları izleyin:
+2. Yukarıdaki adımı tekrarlayarak birden fazla ek ekleyebilirsiniz.
 
-## C# projenizi Visual Studio'da açın.
+## E-postayı Kaydetme ve Gönderme
 
-1. Solution Explorer'da "Referanslar" düğümüne sağ tıklayın.
+1. E-postayı göndermek için SmtpClient sınıfını kullanın.
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 client.Send(message);
 ```
 
-## "NuGet Paketlerini Yönet"i seçin.
+## Çözüm
 
-Paketi projenize eklemek için "Aspose.Email"i arayın ve "Yükle"ye tıklayın.
+Bu kılavuzda, Aspose.Email for .NET kitaplığıyla C# kullanarak e-posta eklerinin nasıl ekleneceğini öğrendik. Artık önemli dosya ve belgeleri sorunsuz bir şekilde gönderme özelliğini ekleyerek uygulamalarınızı geliştirebilirsiniz.
 
-## Adım 2: MSG Dosyalarını Yükleme
+## SSS'ler
 
-### Kütüphaneyi başarıyla yükledikten sonra MSG dosyalarını yüklemeye başlayabilirsiniz. Başlangıç noktası olarak aşağıdaki kod parçacığını kullanın:
+### Aspose.Email for .NET kütüphanesini nasıl indirebilirim?
 
- MSG dosyasını yükleyin[ Mesaja erişmek ve mesajı değiştirmek için kodunuz](https://releases.aspose.com/email/net/)
+ Aspose.Email for .NET kütüphanesini Aspose.Release'ler adresinden indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/)
 
-### 3. Adım: Gömülü Formatı Koruma
+### Tek bir e-postaya birden fazla ek ekleyebilir miyim?
 
-Aspose.Email for .NET'in büyüsü, MSG dosyalarını yüklerken gömülü formatı otomatik olarak koruma yeteneğinde yatmaktadır. Bu, eklerin, resimlerin ve diğer içeriklerin sizin herhangi bir ekstra çaba harcamanıza gerek kalmadan saklanacağı anlamına gelir.
+Evet, birden fazla Ek örneği oluşturup bunları MailMessage'ın Ekler koleksiyonuna ekleyerek tek bir e-postaya birden fazla ek ekleyebilirsiniz.
 
-### Adım 4: Korunan Verilere Erişim
+### Aspose.Email for .NET farklı e-posta protokolleriyle uyumlu mu?
 
-MSG dosyasını yükledikten sonra korunan içeriğine kolaylıkla erişebilirsiniz. Örneğin, eklere erişmek için aşağıdaki kod parçacığını kullanabilirsiniz:
+Evet, Aspose.Email for .NET, SMTP, POP3, IMAP ve Exchange dahil olmak üzere çeşitli e-posta protokollerini destekler.
 
-###  Eklerle çalışacak kodunuz
+### Göndermeden önce e-posta gövdesini özelleştirebilir miyim?
 
-Çözüm
+Kesinlikle! E-postayı gereksinimlerinize göre özelleştirmek için MailMessage sınıfının Gövde, Konu ve ekler gibi çeşitli özelliklerini ayarlayabilirsiniz.
 
-### Bu makalede, C# ve Aspose.Email for .NET kullanarak veri yükleme sırasında gömülü MSG formatını koruma sürecini araştırdık. Bu kitaplığın güçlü yetenekleri sayesinde geliştiriciler, MSG dosyalarının zengin içeriğinin bozulmadan kalmasını sağlayarak veri yönetimini ve manipülasyonunu basitleştirebilirler.
+### Aspose.Email for .NET'in ücretsiz deneme sürümü mevcut mu?
 
-SSS'ler
+Evet, satın almadan önce özelliklerini keşfetmek için Aspose.Email for .NET'in ücretsiz deneme sürümünü indirebilirsiniz.

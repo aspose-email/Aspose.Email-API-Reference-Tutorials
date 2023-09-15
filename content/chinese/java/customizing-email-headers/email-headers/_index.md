@@ -1,94 +1,94 @@
 ---
-title: 发送电子邮件
-linktitle: 使用
-second_title: 发送电子邮件的实例：
-description: 处理异常
+title: Aspose.Email 中的电子邮件标头
+linktitle: Aspose.Email 中的电子邮件标头
+second_title: Aspose.Email Java 电子邮件管理 API
+description: 使用 Aspose.Email for Java 释放电子邮件标头的威力。了解如何轻松设置和检索电子邮件标头。
 type: docs
 weight: 10
 url: /zh/java/customizing-email-headers/email-headers/
 ---
 
-## 将电子邮件发送代码封装在
+## 电子邮件标头简介
 
-块来处理异常：
+电子邮件标题就像数字消息的信封。它们包含指导电子邮件从发件人到收件人的整个旅程的基本元数据。了解电子邮件标头可以帮助您跟踪电子邮件的路径、识别潜在问题并确保安全可靠的电子邮件通信。
 
-### 结论
+### 什么是电子邮件标头？
 
-使用 C# 和 Aspose.Email for .NET 库制作新电子邮件是自动化电子邮件通信的强大方法。通过遵循本文提供的分步指南，您可以将电子邮件功能无缝集成到您的应用程序中，从而提高用户参与度和效率。
+电子邮件标头是电子邮件开头的元数据行。它们提供有关消息的来源、路由和处理的信息。常见的电子邮件标头字段包括：
 
-- 常见问题解答
-- 我可以使用 Aspose.Email 发送电子邮件中的附件吗？
-- 是的，您可以使用以下方式轻松将文件附加到电子邮件中
-- Aspose.Email for .NET 提供的类。
-- Aspose.Email 适合个人和企业级电子邮件自动化吗？
-- 绝对地！ Aspose.Email 用途广泛，可用于个人和企业电子邮件自动化需求。其强大的功能使其适用于广泛的应用。
+- 发件人：发件人的电子邮件地址。
+- 收件人：收件人的电子邮件地址。
+- 主题：电子邮件的主题。
+- 日期：电子邮件发送的日期和时间。
+- 已接收：一系列详细说明电子邮件从发件人到收件人的过程的条目。
+- 消息 ID：电子邮件的唯一标识符。
 
-## 我可以使用 Aspose.Email 发送 HTML 格式的电子邮件吗？
+## 在 Aspose.Email 中使用电子邮件标头
 
-当然！您可以使用以下命令创建和发送 HTML 格式的电子邮件
+现在我们了解了电子邮件标头的重要性，让我们探索如何使用 Aspose.Email for Java 来使用它们。 Aspose.Email 是一个功能强大的库，允许开发人员创建、操作和提取电子邮件中的信息（包括标题）。
 
-### 的财产
+### 设置电子邮件标头
 
-班级。这使您可以在电子邮件中包含丰富的内容和样式。
+要使用 Aspose.Email 以编程方式设置电子邮件标头，请按照下列步骤操作：
 
-1. 使用 C# 从 MSG 形成 TNEF 格式`MailMessage`使用 C# 从 MSG 形成 TNEF 格式
+1. 初始化电子邮件消息：创建一个实例`MailMessage`班级。
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Aspose.Email .NET 电子邮件处理 API`Headers`了解如何使用 Aspose.Email for .NET 将 MSG 文件转换为 TNEF 格式。无缝创建丰富的电子邮件内容。
+2. 设置标头值：使用`Headers`设置标头值的集合。
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. TNEF 格式和 MSG 文件简介
+3. 发送电子邮件：像平常一样发送电子邮件。
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### 在处理电子邮件通信和数据交换时，TNEF（传输中性封装格式）格式起着至关重要的作用。 TNEF 是 Microsoft Outlook 使用的专有电子邮件附件格式，用于在电子邮件中封装富文本和其他多媒体元素。另一方面，MSG 文件特定于 Outlook，包含电子邮件、附件和元数据等信息。在本文中，我们将探讨如何使用 Aspose.Email for .NET 的强大功能从 MSG 文件创建 TNEF 格式。
+### 检索电子邮件标头
 
-了解 .NET 的 Aspose.Email
+要使用 Aspose.Email 从传入电子邮件中检索电子邮件标头，您可以按照以下步骤操作：
 
-1. Aspose.Email for .NET 是一个多功能库，使 .NET 开发人员能够使用各种电子邮件格式，包括 MSG 文件。它提供了一套全面的 API 来以编程方式操作和管理电子邮件数据。凭借其丰富的功能集，您可以轻松执行加载、解析和转换电子邮件等任务。
+1. 加载电子邮件消息：加载传入的电子邮件消息。
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. 安装 Aspose.Email for .NET`Headers`在我们深入实施之前，让我们先设置环境。首先，您需要安装 Aspose.Email for .NET。您可以通过 NuGet 包管理器来完成此操作，这是一种向 .NET 项目添加外部库的便捷且广泛使用的方法。
+2. 访问标头值：使用`Headers`收藏。
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## 使用 NuGet 添加 Aspose.Email for .NET
+## 结论
 
-加载和解析 MSG 文件
+电子邮件标头是电子邮件通信的无名英雄，它携带重要信息，确保电子邮件到达预期收件人。 Aspose.Email for Java 简化了处理电子邮件标头的任务，使开发人员能够利用此元数据的强大功能来实现各种目的。无论您需要设置自定义标头、检索信息还是分析电子邮件路由，Aspose.Email 都能提供您高效处理电子邮件标头所需的工具。
 
-## 要开始此过程，我们需要加载并解析要转换为 TNEF 格式的 MSG 文件。 Aspose.Email 通过提供允许您轻松读取 MSG 文件的类和方法来简化此任务。
+## 常见问题解答
 
-### 加载 MSG 文件
+### 如何在流行的电子邮件客户端中查看电子邮件标题？
 
-将 MSG 转换为 TNEF 格式
+在大多数电子邮件客户端中，您可以通过打开电子邮件并查找“查看源文件”或“显示原始文件”等选项来查看电子邮件标题。
 
-### 现在是令人兴奋的部分 - 将 MSG 文件转换为 TNEF 格式。 Aspose.Email 使您能够无缝地实现这一目标。
+### 电子邮件标头是否已加密？
 
-将 MSG 转换为 TNEF
+不，电子邮件标头未加密。它们是电子邮件元数据的一部分，通常采用纯文本形式。
 
-### 处理转换错误和异常
+### 发送电子邮件后可以修改电子邮件标头吗？
 
-在转换过程中，必须妥善处理错误和异常，以确保应用程序的可靠性。
+电子邮件发送后，其标头通常是不可变的。在发送电子邮件之前设置所需的标头非常重要。
 
-### 将 MSG 转换为 TNEF
+### “已接收”标头的用途是什么？
 
-处理异常
+“已接收”标头是一系列条目，用于跟踪电子邮件从发件人到收件人的路径。它有助于诊断递送问题并跟踪电子邮件的路径。
 
-### 额外的定制和选项
+### 如何从大量电子邮件中提取电子邮件标头？
 
-Aspose.Email 提供了一系列自定义选项，可以根据您的具体要求定制转换过程。在将电子邮件转换为 TNEF 格式之前，您可以操作电子邮件中的各种属性和元素。
+您可以使用Aspose.Email的批处理功能有效地从多封电子邮件中提取标头。

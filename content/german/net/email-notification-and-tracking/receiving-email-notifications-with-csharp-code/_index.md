@@ -1,90 +1,90 @@
 ---
-title: Receiving Email Notifications with C# Code
-linktitle: Receiving Email Notifications with C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn to receive email notifications in C# using Aspose.Email for .NET. Efficient code example provided.
+title: Empfangen von E-Mail-Benachrichtigungen mit C#-Code
+linktitle: Empfangen von E-Mail-Benachrichtigungen mit C#-Code
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in C# mit Aspose.Email für .NET empfangen. Effizientes Codebeispiel bereitgestellt.
 type: docs
 weight: 10
 url: /de/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
 
 
-In the digital age, communication is essential, and email remains one of the most popular means of exchanging information. As a developer, you might find yourself needing to send and receive email notifications in your applications. In this step-by-step tutorial, we will explore how to receive email notifications with C# using Aspose.Email for .NET.
+Im digitalen Zeitalter ist Kommunikation unerlässlich und E-Mail bleibt eines der beliebtesten Mittel zum Informationsaustausch. Als Entwickler müssen Sie möglicherweise E-Mail-Benachrichtigungen in Ihren Anwendungen senden und empfangen. In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie mit C# und Aspose.Email für .NET E-Mail-Benachrichtigungen empfangen.
 
-## Introduction
+## Einführung
 
-Email notifications are crucial for keeping users informed about important events or updates in your application. Aspose.Email for .NET provides a powerful and easy-to-use solution for handling email-related tasks in your C# applications. In this tutorial, we will focus on receiving email notifications.
+E-Mail-Benachrichtigungen sind von entscheidender Bedeutung, um Benutzer über wichtige Ereignisse oder Aktualisierungen in Ihrer Anwendung auf dem Laufenden zu halten. Aspose.Email für .NET bietet eine leistungsstarke und benutzerfreundliche Lösung für die Bearbeitung von E-Mail-bezogenen Aufgaben in Ihren C#-Anwendungen. In diesem Tutorial konzentrieren wir uns auf den Empfang von E-Mail-Benachrichtigungen.
 
-## Setting up Aspose.Email
+## Aspose.Email einrichten
 
-Before we dive into the code, you need to set up Aspose.Email for .NET in your project. Here's how you can do it:
+Bevor wir uns mit dem Code befassen, müssen Sie Aspose.Email für .NET in Ihrem Projekt einrichten. So können Sie es machen:
 
-1. Install Aspose.Email: Begin by installing the Aspose.Email for .NET library in your project. You can do this via NuGet Package Manager.
+1. Installieren Sie Aspose.Email: Beginnen Sie mit der Installation der Aspose.Email für .NET-Bibliothek in Ihrem Projekt. Sie können dies über den NuGet Package Manager tun.
 
-2. Import Aspose.Email Namespace: In your C# code, make sure to include the necessary namespace: `using Aspose.Email;`.
+2.  Aspose.Email-Namespace importieren: Stellen Sie sicher, dass Sie in Ihrem C#-Code den erforderlichen Namespace einschließen:`using Aspose.Email;`.
 
-## Creating the Email Message
+## Erstellen der E-Mail-Nachricht
 
-Now that we have Aspose.Email set up, let's create an email message. In this example, we will create a basic email message with a sender, recipient, subject, and body.
+Nachdem wir Aspose.Email nun eingerichtet haben, erstellen wir eine E-Mail-Nachricht. In diesem Beispiel erstellen wir eine einfache E-Mail-Nachricht mit Absender, Empfänger, Betreff und Text.
 
 ```csharp
-// Create the message
+// Erstellen Sie die Nachricht
 MailMessage msg = new MailMessage();
 msg.From = "sender@sender.com";
 msg.To = "receiver@receiver.com";
 msg.Subject = "the subject of the message";
 ```
 
-## Configuring Notifications
+## Benachrichtigungen konfigurieren
 
-To ensure that you receive notifications about the delivery status of your email, you can configure delivery notification options. You can specify whether you want to be notified on success, failure, or both.
+Um sicherzustellen, dass Sie Benachrichtigungen über den Zustellungsstatus Ihrer E-Mail erhalten, können Sie Zustellungsbenachrichtigungsoptionen konfigurieren. Sie können angeben, ob Sie bei Erfolg, Misserfolg oder beidem benachrichtigt werden möchten.
 
 ```csharp
-// Set delivery notifications for success and failed messages
+// Legen Sie Zustellungsbenachrichtigungen für erfolgreiche und fehlgeschlagene Nachrichten fest
 msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
-## Adding MIME Headers
+## Hinzufügen von MIME-Headern
 
-MIME headers provide additional information about the email message. You can add custom MIME headers as needed.
+MIME-Header liefern zusätzliche Informationen über die E-Mail-Nachricht. Sie können nach Bedarf benutzerdefinierte MIME-Header hinzufügen.
 
 ```csharp
-// Add the MIME headers
+// Fügen Sie die MIME-Header hinzu
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-## Sending the Email
+## Senden der E-Mail
 
-Once you've configured your email message, it's time to send it. Aspose.Email provides a convenient way to send emails using the SMTP client.
+Sobald Sie Ihre E-Mail-Nachricht konfiguriert haben, ist es an der Zeit, sie zu versenden. Aspose.Email bietet eine bequeme Möglichkeit, E-Mails über den SMTP-Client zu versenden.
 
 ```csharp
-// Send the message
+// Senden Sie die Nachricht
 SmtpClient client = new SmtpClient("host", "username", "password");
 client.Send(msg);
 ```
 
-## Conclusion
+## Abschluss
 
-In this tutorial, we've explored how to receive email notifications with C# using Aspose.Email for .NET. We've covered setting up Aspose.Email, creating an email message, configuring notifications, adding MIME headers, and sending the email.
+In diesem Tutorial haben wir untersucht, wie Sie mit C# und Aspose.Email für .NET E-Mail-Benachrichtigungen empfangen. Wir haben das Einrichten von Aspose.Email, das Erstellen einer E-Mail-Nachricht, das Konfigurieren von Benachrichtigungen, das Hinzufügen von MIME-Headern und das Versenden der E-Mail behandelt.
 
-By following these steps, you can seamlessly integrate email notifications into your C# applications, enhancing user communication and keeping them informed.
+Wenn Sie diese Schritte befolgen, können Sie E-Mail-Benachrichtigungen nahtlos in Ihre C#-Anwendungen integrieren, die Benutzerkommunikation verbessern und sie auf dem Laufenden halten.
 
 ## FAQs
 
-### 1. Can I use Aspose.Email for .NET in my .NET Core project?
-   Yes, Aspose.Email for .NET is compatible with both .NET Framework and .NET Core.
+### 1. Kann ich Aspose.Email für .NET in meinem .NET Core-Projekt verwenden?
+   Ja, Aspose.Email für .NET ist sowohl mit .NET Framework als auch mit .NET Core kompatibel.
 
-### 2. How can I handle email attachments in my notifications?
-   You can use the `Attachment` class provided by Aspose.Email to handle email attachments easily.
+### 2. Wie kann ich mit E-Mail-Anhängen in meinen Benachrichtigungen umgehen?
+    Du kannst den ... benutzen`Attachment` Von Aspose.Email bereitgestellte Klasse zur einfachen Handhabung von E-Mail-Anhängen.
 
-### 3. Is Aspose.Email for .NET a paid library?
-   Aspose.Email offers both a free trial and a paid version. The paid version provides additional features and support.
+### 3. Ist Aspose.Email für .NET eine kostenpflichtige Bibliothek?
+   Aspose.Email bietet sowohl eine kostenlose Testversion als auch eine kostenpflichtige Version. Die kostenpflichtige Version bietet zusätzliche Funktionen und Support.
 
-### 4. Can I customize the email notification templates?
-   Yes, you can create custom email templates and use Aspose.Email to populate them with dynamic content.
+### 4. Kann ich die E-Mail-Benachrichtigungsvorlagen anpassen?
+   Ja, Sie können benutzerdefinierte E-Mail-Vorlagen erstellen und Aspose.Email verwenden, um diese mit dynamischen Inhalten zu füllen.
 
-### 5. Are there any limitations on the number of emails I can send/receive with Aspose.Email?
-   Aspose.Email does not impose strict limitations on the number of emails you can send or receive, but it may be subject to your email server's limitations.
+### 5. Gibt es Einschränkungen hinsichtlich der Anzahl der E-Mails, die ich mit Aspose.Email senden/empfangen kann?
+   Aspose.Email legt keine strengen Beschränkungen für die Anzahl der E-Mails fest, die Sie senden oder empfangen können, unterliegt jedoch möglicherweise den Einschränkungen Ihres E-Mail-Servers.
 
-That concludes our tutorial on receiving email notifications with C# using Aspose.Email for .NET. We hope you found this guide helpful in implementing email notifications in your applications. 
+Damit ist unser Tutorial zum Empfang von E-Mail-Benachrichtigungen mit C# unter Verwendung von Aspose.Email für .NET abgeschlossen. Wir hoffen, dass Ihnen dieser Leitfaden bei der Implementierung von E-Mail-Benachrichtigungen in Ihren Anwendungen hilfreich war. 

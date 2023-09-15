@@ -1,60 +1,60 @@
 ---
-title: Burada
-linktitle: Projenin Kurulumu
-second_title: Geliştirme ortamınızda yeni bir C# projesi oluşturun.
-description: Projenizdeki Aspose.Email DLL'lerine referanslar ekleyin.
+title: Aspose.Email'e Özel Başlıklar Ekleme
+linktitle: Aspose.Email'e Özel Başlıklar Ekleme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java'yı kullanarak özel başlıklar ekleyerek e-posta mesajlarınızı nasıl geliştireceğinizi öğrenin. E-posta meta verilerini ve organizasyonunu iyileştirin.
 type: docs
 weight: 15
 url: /tr/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
 
-## E-posta Taslağı Oluşturma
+## giriiş
 
-Taslak mesaj oluşturmak için şu adımları izleyin:
+E-posta iletişimi dünyasında, e-posta mesajlarınıza özel başlıklar ekleme yeteneği değerli bir araç olabilir. Özel başlıklar, e-postalarınıza, mesajları izleme, filtreleme veya kategorilere ayırma gibi çeşitli amaçlar için yararlı olabilecek ek bilgiler veya meta veriler eklemenize olanak tanır.
 
-Alıcı ve Konu Ekleme
+Aspose.Email for Java, e-postalarınıza özel başlıklar ekleme yeteneği de dahil olmak üzere, e-posta mesajlarıyla çalışmak için güçlü ve esnek bir API sağlar. Bu adım adım kılavuzda, Aspose.Email for Java kullanarak bir e-posta mesajına özel başlıklar ekleme sürecinde size yol göstereceğiz.
 
-##  Yeni bir MailMessage örneği oluşturun
+## Önkoşullar
 
- Alıcı ekle
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-1.  E-posta konusunu ayarlayın
+1. Java Geliştirme Ortamı: Sisteminizde bir Java geliştirme ortamının kurulu olduğundan emin olun. Bu kılavuzdaki Java kodu örneklerini derleyip çalıştırmak için Java'ya ihtiyacınız olacak.
 
-2. E-posta Gövdesi Oluşturma[ E-posta gövdesini ayarla](https://releases.aspose.com/email/java/)
+2.  Aspose.Email for Java Kütüphanesi: Aspose.Email for Java kütüphanesini indirme bağlantısından indirin:[Java İndirmek için Aspose.Email](https://releases.aspose.com/email/java/)
 
-   Taslak olarak kaydediliyor
+   Aspose.Email JAR dosyalarını indirdikten sonra Java projenizin sınıf yoluna ekleyin. Bu kütüphane, Aspose.Email kullanarak e-posta mesajlarıyla çalışmak için gereklidir.
 
- E-postayı taslak olarak kaydedin
+Bu ön koşullar yerine getirildiğinde Aspose.Email for Java'yı kullanarak e-posta mesajlarınıza özel başlıklar eklemeye hazırsınız. Bunun nasıl yapılacağını öğrenmek için önceki bölümdeki adım adım kılavuzu izleyin.
 
-Taslakları Yükleme ve Düzenleme
+Kesinlikle! Aşağıda Aspose.Email for Java API'sini kullanarak Aspose.Email'e özel başlıkların nasıl ekleneceğine dair adım adım bir kılavuz bulunmaktadır. Bu kılavuz kaynak kodu örneklerini içerir.
 
-## Taslak mesajları yüklemek ve düzenlemek için şu adımları izleyin:
+## 1. Adım: Java ortamınızı kurun
 
- Taslak e-posta yükle
+Başlamadan önce Java ve Aspose.Email for Java'nın geliştirme ortamınızda düzgün şekilde yüklendiğinden ve kurulduğundan emin olun.
 
-##  Alıcıları düzenle
+## Adım 2: Yeni bir Java projesi oluşturun
 
- E-posta gövdesini düzenle
+Tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun.
 
-##  Değişiklikleri Kaydet
+## 3. Adım: Aspose.Email for Java kütüphanesini ekleyin
 
-Çözüm
+Aspose.Email for Java kütüphanesini projenize eklemeniz gerekir. Bunu, sağlanan indirme bağlantısından kitaplığı indirerek yapabilirsiniz:
 
-[Bu makalede, Aspose.Email for .NET kütüphanesini kullanarak C#'ta taslak mesajların nasıl işleneceğini araştırdık. Taslak e-postaların nasıl oluşturulacağını, düzenleneceğini ve kaydedileceğini öğrendik, böylece kullanıcılara mesaj yazarken kusursuz bir deneyim sağladık. Bu kılavuzda özetlenen adımları izleyerek e-posta istemcisi uygulamanızı taslak mesaj işleviyle geliştirebilirsiniz.](https://releases.aspose.com/email/java/)
+[Java İndirmek için Aspose.Email](https://releases.aspose.com/email/java/)
 
-SSS'ler
+Aspose.Email JAR dosyalarını indirdikten sonra projenizin sınıf yoluna ekleyin.
 
-## Aspose.Email for .NET kütüphanesini nasıl indirebilirim?
+## Adım 4: Aspose.Email sınıflarını içe aktarın
 
- Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:
+Java kodunuzda gerekli Aspose.Email sınıflarını içe aktarın:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Burada
+## 5. Adım: Bir E-posta mesajı oluşturun
 
-Kaydedilmiş bir taslağın alıcılarını ve konusunu düzenleyebilir miyim?
+Aspose.Email'i kullanarak bir E-posta mesajı oluşturabilirsiniz. İşte bir örnek:
 
 ```java
 MailMessage message = new MailMessage();
@@ -64,46 +64,46 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 ```
 
-## Evet, kayıtlı bir taslağı yükleyebilir, alıcılarını, konusunu ve içeriğini düzenleyebilir ve ardından değişiklikleri güncellenmiş bir taslak olarak kaydedebilirsiniz.
+## 6. Adım: Özel başlıklar ekleyin
 
-Taslak e-posta belirli bir biçimde mi kaydedildi?`MailMessage`Evet, taslak e-posta, e-posta mesajları için yaygın olarak kullanılan bir format olan EML formatında kaydedilir.`getHeaders`Taslak mesaj işlemeyi mevcut e-posta uygulamama entegre edebilir miyim?
+ E-postaya özel başlıklar eklemek için`MailMessage` nesnenin`getHeaders` yöntem:
 
 ```java
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 ```
 
-Kesinlikle, bu kılavuzda verilen adımları izleyerek taslak mesaj işlemeyi mevcut e-posta istemci uygulamanıza sorunsuz bir şekilde entegre edebilirsiniz.
+Gerektiği kadar özel başlık ekleyebilirsiniz.
 
-## Aspose.Email kütüphanesi e-postayla ilgili diğer işlevleri destekliyor mu?
+## 7. Adım: E-postayı kaydedin
 
- Evet, Aspose.Email kütüphanesi, e-posta mesajlarıyla çalışmak için, e-postaları ve ekleri gönderme, alma ve değiştirme de dahil olmak üzere çok çeşitli özellikler sunar. Daha fazla ayrıntı için belgelere başvurabilirsiniz:
+Özel başlıklar ekledikten sonra e-postayı bir dosyaya kaydedebilir veya Aspose.Email'in özelliklerini kullanarak gönderebilirsiniz. İşte onu bir dosyaya kaydetmenin bir örneği:
 
 ```java
 message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 ```
 
-## Burada
+## Adım 8: Programı tamamlayın
 
- C# kullanarak EML'ye Zahmetsiz E-posta Aktarımı
+İşte tam Java programı:
 
 ```java
 import com.aspose.email.*;
 
 public class AddCustomHeadersExample {
     public static void main(String[] args) {
-        // C# kullanarak EML'ye Zahmetsiz E-posta Aktarımı
+        // Yeni bir e-posta mesajı oluştur
         MailMessage message = new MailMessage();
         message.setSubject("Adding Custom Headers Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 
-        // Aspose.Email .NET E-Posta İşleme API'si
+        // Özel başlıklar ekleyin
         message.getHeaders().add("X-Custom-Header1", "Value1");
         message.getHeaders().add("X-Custom-Header2", "Value2");
 
-        // C# ve Aspose.Email for .NET kullanarak e-postalarınızı zahmetsizce EML formatına aktarın. Kaynak kodu örnekleriyle adım adım öğrenin.
+        // E-postayı bir dosyaya kaydedin
         message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with custom headers saved successfully.");
@@ -111,24 +111,24 @@ public class AddCustomHeadersExample {
 }
 ```
 
-## EML'ye Zahmetsiz E-posta Aktarımına Giriş
+## Çözüm
 
-Aspose.Email for .NET, geliştiricilerin .NET uygulamalarında e-posta mesajları ve e-postayla ilgili çeşitli görevlerle çalışmasına olanak tanıyan sağlam ve zengin özelliklere sahip bir kitaplıktır. E-postaları, ekleri, başlıkları ve daha fazlasını yönetmek için kapsamlı bir dizi sınıf ve yöntem sağlar. Bu eğitimde, e-posta mesajlarını zahmetsizce EML formatına aktarmak için Aspose.Email'i kullanmaya odaklanacağız.
+Bu kılavuzda Aspose.Email for Java kullanarak bir e-postaya nasıl özel başlıklar ekleyeceğinizi öğrendiniz. Özel gereksinimlerinizi karşılamak için e-posta iletilerinizi çeşitli başlıklarla özelleştirebilirsiniz.
 
 
-## Önkoşullar
+## SSS (Sık Sorulan Sorular)
 
-### Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-   Visual Studio veya başka herhangi bir C# geliştirme ortamı
+### E-posta iletilerindeki özel başlıklar nelerdir?
+   Özel başlıklar, e-posta mesajlarında, mesaj hakkında ekstra bilgi veya meta veri sağlamak için kullanılabilecek ek alanlardır.
 
-### C# programlamaya ilişkin temel bilgiler
-    Aspose.Email for .NET kitaplığı (şu adresten indirin:`getHeaders`Burada`MailMessage`Aspose.Email for .NET'in kurulumu
+### Aspose.Email'i kullanarak özel başlıklara sahip bir e-postayı nasıl gönderebilirim?
+    Şunu kullanabilirsiniz:`getHeaders` yöntemi`MailMessage` Bir e-posta iletisini göndermeden önce ona özel başlıklar eklemek için sınıf.
 
-### Aspose.Email for .NET kütüphanesini projenize kurmak için şu adımları izleyin:
-    Aspose.Email kütüphanesini şu adresten indirin:
+### Özel başlıklar e-posta alıcısı tarafından görülebilir mi?
+   Özel başlıklar genellikle e-posta alıcısına görüntülenmez ancak gönderen veya alıcı tarafında e-postaları filtrelemek veya işlemek gibi çeşitli amaçlarla kullanılabilir.
 
-### Burada
-   İndirdiğiniz zip dosyasını bilgisayarınızdaki bir dizine çıkartın.`add`C# projenizi Visual Studio'da açın.`HeadersCollection`Çözüm Gezgini'nde projenize sağ tıklayın ve "NuGet Paketlerini Yönet"i seçin.
+### Tek bir e-posta iletisine birden fazla özel başlık ekleyebilir miyim?
+    Evet, tek bir e-posta mesajına birden çok özel başlık ekleyebilirsiniz.`add` konusundaki yöntem`HeadersCollection` nesne.
 
-### NuGet Paket Yöneticisinde "Gözat"a tıklayın ve "Aspose.Email"i arayın.
-   Paketin uygun sürümünü seçin ve "Yükle"ye tıklayın.`getHeaders`E-posta Mesajlarını Yükleme`MailMessage`E-postaları EML formatına aktarmak için öncelikle e-posta mesajlarını kaynaktan yüklememiz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+### Alınan e-postalardan özel başlıkları nasıl çıkarabilirim?
+    Şunu kullanabilirsiniz:`getHeaders` Alınan e-postanın yöntemi`MailMessage` özel başlıkları almak ve işlemek için nesne.

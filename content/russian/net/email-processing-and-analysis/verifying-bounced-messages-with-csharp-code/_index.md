@@ -1,39 +1,39 @@
 ---
-title: Verifying Bounced Messages with C# Code
-linktitle: Verifying Bounced Messages with C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Automate bounce message verification using C# & Aspose.Email for .NET. Effortlessly manage email lists & enhance campaign effectiveness. 
+title: Проверка возвращенных сообщений с помощью кода C#
+linktitle: Проверка возвращенных сообщений с помощью кода C#
+second_title: Aspose.Email .NET API обработки электронной почты
+description: Автоматизируйте проверку возвращенных сообщений с помощью C# и Aspose.Email для .NET. Легко управляйте списками адресов электронной почты и повышайте эффективность кампании.
 type: docs
 weight: 11
 url: /ru/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
 ---
 
-Are you tired of dealing with bounced email messages? Managing bounced emails can be a real headache, especially when you're running an email campaign or maintaining a large mailing list. Fortunately, there's a solution that can help you efficiently verify and handle bounced messages using C# code and the Aspose.Email for .NET library. In this step-by-step guide, we'll walk you through the process of verifying bounced messages and ensuring that your email communication remains effective and hassle-free.
+Вы устали иметь дело с возвращенными сообщениями электронной почты? Управление возвращенными электронными письмами может стать настоящей головной болью, особенно если вы проводите кампанию по электронной почте или поддерживаете большой список рассылки. К счастью, есть решение, которое поможет вам эффективно проверять и обрабатывать возвращенные сообщения с помощью кода C# и библиотеки Aspose.Email для .NET. В этом пошаговом руководстве мы покажем вам процесс проверки возвращенных сообщений и гарантируем, что ваше общение по электронной почте останется эффективным и беспроблемным.
 
-## Installation and Setup
+## Установка и настройка
 
-Before we dive into the code, let's ensure that you have everything set up to get started.
+Прежде чем мы углубимся в код, давайте убедимся, что у вас все настроено для начала работы.
 
-### Installing Aspose.Email for .NET
+### Установка Aspose.Email для .NET
 
-Aspose.Email for .NET is a powerful library that simplifies email-related tasks in C# applications. To install it, follow these steps:
+Aspose.Email для .NET — это мощная библиотека, которая упрощает задачи, связанные с электронной почтой, в приложениях C#. Чтобы установить его, выполните следующие действия:
 
-1. Open your Visual Studio project.
-2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
-3. Search for "Aspose.Email" and install the package.
+1. Откройте проект Visual Studio.
+2. Перейдите в «Инструменты» > «Диспетчер пакетов NuGet» > «Управление пакетами NuGet для решения».
+3. Найдите «Aspose.Email» и установите пакет.
 
-### Creating a New C# Project
+### Создание нового проекта C#
 
-If you don't have a C# project yet, here's how you can create one:
+Если у вас еще нет проекта C#, вы можете его создать:
 
-1. Open Visual Studio.
-2. Click on "Create a new project."
-3. Select "Console App (.NET Core)" or "Console App (.NET Framework)" depending on your preference.
-4. Choose a name and location for your project.
+1. Откройте Visual Studio.
+2. Нажмите «Создать новый проект».
+3. Выберите «Консольное приложение (.NET Core)» или «Консольное приложение (.NET Framework)» в зависимости от ваших предпочтений.
+4. Выберите имя и местоположение для вашего проекта.
 
-### Adding References and Namespaces
+### Добавление ссылок и пространств имен
 
-Once you have your project set up, you'll need to add the necessary references and namespaces to start using Aspose.Email:
+После настройки проекта вам нужно будет добавить необходимые ссылки и пространства имен, чтобы начать использовать Aspose.Email:
 
 ```csharp
 using Aspose.Email;
@@ -41,98 +41,98 @@ using Aspose.Email.Imap;
 using Aspose.Email.Mail;
 ```
 
-## Connecting to the Email Server
+## Подключение к почтовому серверу
 
-To connect to the email server, you'll need to configure the server settings and establish a connection.
+Чтобы подключиться к почтовому серверу, вам необходимо настроить параметры сервера и установить соединение.
 
 ```csharp
-// Server configuration
+// Конфигурация сервера
 string host = "your-email-server.com";
 int port = 993;
 string username = "your-username";
 string password = "your-password";
 
-// Create an instance of the ImapClient
+// Создайте экземпляр ImapClient
 using (ImapClient client = new ImapClient((host, port, username, password))
 {
    
-    // Your code for retrieving and analyzing bounced messages will go here
+    // Здесь будет размещен ваш код для получения и анализа возвращенных сообщений.
 }
 ```
 
-## Retrieving Bounced Messages
+## Получение возвращенных сообщений
 
-Once connected, you can fetch inbox messages and identify bounced emails.
+После подключения вы можете получать входящие сообщения и идентифицировать возвращенные электронные письма.
 
 ```csharp
-// Select the inbox folder
+// Выберите папку «Входящие»
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// Search for bounced messages
+// Поиск возвращенных сообщений
 MessageInfoCollection messages = client.ListMessages();
 foreach (var messageInfo in messages)
 {
-    // Your code to analyze bounce notifications will go here
+    // Здесь будет размещен ваш код для анализа уведомлений о недоставках.
 }
 ```
 
-## Analyzing Bounce Notifications
+## Анализ уведомлений о возврате
 
-Bounce notifications contain valuable information about why an email bounced. You can extract these details and classify bounce types.
+Уведомления о возврате содержат ценную информацию о том, почему письмо было возвращено. Вы можете извлечь эти детали и классифицировать типы отказов.
 
 ```csharp
-// Fetch the message
+// Получить сообщение
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-// Check for bounce headers
+// Проверьте заголовки отказов
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
     string bounceReason = message.Headers["X-Failure-Reason"];
     
-    // Your code to handle different bounce types will go here
+    // Здесь будет находиться ваш код для обработки различных типов отказов.
 }
 ```
 
-## Updating Your Email List
+## Обновление списка адресов электронной почты
 
-Based on the bounce analysis, you can update your email list to remove bounced addresses and manage unsubscribes.
+На основе анализа отказов вы можете обновить свой список адресов электронной почты, чтобы удалить возвращенные адреса и управлять отписками.
 
 ```csharp
-// Remove bounced addresses from your list
+// Удалите возвращенные адреса из вашего списка
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {
-    // Remove the address from your list
+    // Удалить адрес из списка
 }
 
-// Handle unsubscribes
+// Обработка отказа от подписки
 if (bounceReason.Contains("unsubscribe"))
 {
-    // Update your unsubscribe list
+    // Обновите список отказа от подписки
 }
 ```
 
-## Conclusion
+## Заключение
 
-Automating the process of verifying bounced messages is crucial for maintaining a healthy email list and optimizing your email campaigns. With Aspose.Email for .NET and the C# code provided in this guide, you can streamline the entire process and focus on delivering valuable content to your subscribers.
+Автоматизация процесса проверки возвращенных сообщений имеет решающее значение для поддержания работоспособного списка адресов электронной почты и оптимизации ваших почтовых кампаний. С помощью Aspose.Email для .NET и кода C#, представленного в этом руководстве, вы можете упростить весь процесс и сосредоточиться на доставке ценного контента своим подписчикам.
 
-## FAQs
+## Часто задаваемые вопросы
 
-### How accurate is the bounce analysis?
+### Насколько точен анализ отказов?
 
-The bounce analysis provided by the code is quite accurate. It categorizes bounce types based on standard email headers and helps you understand why emails bounced.
+Анализ отказов, предоставляемый кодом, довольно точен. Он классифицирует типы отказов на основе стандартных заголовков электронных писем и помогает понять, почему электронные письма были возвращены.
 
-### Can I use this approach for any email service?
+### Могу ли я использовать этот подход для любой службы электронной почты?
 
-Yes, you can use this approach with any email service that supports IMAP. Just make sure to update the server settings accordingly.
+Да, вы можете использовать этот подход с любой службой электронной почты, поддерживающей IMAP. Просто обязательно обновите настройки сервера соответствующим образом.
 
-### What if I have a mix of soft and hard bounces?
+### Что делать, если у меня сочетание мягких и жестких отскоков?
 
-The code allows you to differentiate between different bounce types, whether they are soft bounces (temporary issues) or hard bounces (permanent issues).
+Код позволяет различать различные типы отказов: мягкие (временные проблемы) или жесткие (постоянные проблемы).
 
-## Conclusion
+## Заключение
 
-In conclusion, managing bounced email messages can be a challenging task that often requires careful attention and efficient handling. Bounced emails can result from various reasons, including invalid addresses, full mailboxes, or temporary server issues. Failing to address these bounce notifications promptly can lead to ineffective email campaigns, decreased deliverability rates, and potential damage to your sender reputation.
+В заключение, управление возвращенными сообщениями электронной почты может оказаться сложной задачей, которая часто требует пристального внимания и эффективной обработки. Возвращенные электронные письма могут быть вызваны различными причинами, включая неверные адреса, переполненные почтовые ящики или временные проблемы с сервером. Несвоевременное реагирование на эти уведомления о возврате может привести к неэффективным кампаниям по электронной почте, снижению скорости доставки и потенциальному ущербу репутации вашего отправителя.
 
-However, with the power of C# code and the Aspose.Email for .NET library, the process of verifying bounced messages becomes more manageable and automated. By following the step-by-step guide outlined in this article, you can seamlessly connect to your email server, retrieve bounced messages, and analyze bounce notifications with precision. The code snippets provided enable you to extract relevant information, categorize bounce types, and update your email lists accordingly.
+Однако благодаря возможностям кода C# и библиотеке Aspose.Email for .NET процесс проверки возвращенных сообщений становится более управляемым и автоматизированным. Следуя пошаговому руководству, изложенному в этой статье, вы сможете беспрепятственно подключаться к своему почтовому серверу, получать возвращенные сообщения и точно анализировать уведомления о возврате. Предоставленные фрагменты кода позволяют вам извлекать соответствующую информацию, классифицировать типы отказов и соответствующим образом обновлять списки адресов электронной почты.

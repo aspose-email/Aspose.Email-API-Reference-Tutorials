@@ -1,109 +1,109 @@
 ---
-title: In diesem Leitfaden haben wir untersucht, wie man mit Aspose.Email für .NET mehrere Ereignisse aus ICS-Dateien liest. Wir haben das Einrichten der Entwicklungsumgebung, das Laden und Parsen von ICS-Dateien, das Extrahieren von Ereignisdetails und deren Anzeige für den Benutzer behandelt. Wenn Sie diese Schritte befolgen, können Sie die Lesefunktionen für ICS-Dateien nahtlos in Ihre .NET-Anwendungen integrieren.
-linktitle: FAQs
-second_title: Wie kann ich die Aspose.Email für .NET-Bibliothek erhalten?
-description: Sie können die Aspose.Email für .NET-Bibliothek von herunterladen
+title: Unterscheiden von Inline- und regulären Anhängen – C#-Ansatz
+linktitle: Unterscheiden von Inline- und regulären Anhängen – C#-Ansatz
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Email für .NET zwischen Inline- und regulären E-Mail-Anhängen unterscheiden. Umfassende Anleitung mit Codebeispielen.
 type: docs
 weight: 17
 url: /de/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
 
-## Aspose-Website
+## Einführung in die Unterscheidung von Inline- und regulären Anhängen – C#-Ansatz
 
-Eignet sich Aspose.Email sowohl für private als auch für kommerzielle Projekte?
+In der Welt der E-Mail-Verarbeitung spielen Anhänge eine zentrale Rolle bei der Übermittlung zusätzlicher Informationen zum E-Mail-Inhalt. Anhänge können in verschiedenen Formen vorliegen, die beiden häufigsten Arten sind jedoch Inline-Anhänge und reguläre Anhänge. In diesem Artikel befassen wir uns mit dem Bereich der E-Mail-Anhänge und konzentrieren uns dabei insbesondere auf die Unterscheidung zwischen Inline- und regulären Anhängen mithilfe der Aspose.Email für .NET-Bibliothek. Diese Schritt-für-Schritt-Anleitung liefert Ihnen die notwendigen Einblicke und Codeausschnitte, um effektiv mit beiden Anhangstypen arbeiten zu können.
 
-## Ja, Aspose.Email kann sowohl für persönliche als auch für kommerzielle Projekte verwendet werden. Überprüfen Sie unbedingt die Lizenzdetails auf der Website.
+## Schritt für Schritt Anleitung
 
-## Kann ich mit Kalenderereignissen verknüpfte Anhänge extrahieren?
+## 1. Einrichten Ihrer Entwicklungsumgebung
 
-Absolut! Aspose.Email bietet Funktionen zum Extrahieren und Verwalten von Anhängen innerhalb von Kalenderereignissen.
+Bevor wir uns mit dem Code befassen, ist es wichtig, über eine geeignete Entwicklungsumgebung zu verfügen. Stellen Sie sicher, dass Visual Studio auf Ihrem System installiert ist.
 
-## Unterstützt Aspose.Email andere Programmiersprachen?
+## 2. Erstellen eines neuen Projekts in Visual Studio
 
-Ja, Aspose.Email unterstützt verschiedene Programmiersprachen, darunter Java, C
+Öffnen Sie Visual Studio und erstellen Sie ein neues Projekt. Wählen Sie basierend auf Ihren Anforderungen den passenden Projekttyp und die entsprechende Vorlage.
 
-## ++
+## 3. Installieren der Aspose.Email für .NET-Bibliothek
 
-, und Python.
+Um mit E-Mail-Anhängen zu arbeiten, verwenden wir die Aspose.Email for .NET-Bibliothek. Sie können es über NuGet Package Manager installieren, indem Sie den folgenden Befehl in der Package Manager-Konsole ausführen:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## Wie oft wird Aspose.Email aktualisiert?
+## 4. Laden einer E-Mail-Nachricht
 
-Aspose aktualisiert seine Bibliotheken regelmäßig, um neue Funktionen, Verbesserungen und Fehlerbehebungen hinzuzufügen und sicherzustellen, dass Ihre Entwicklungserfahrung reibungslos und auf dem neuesten Stand bleibt.
+Zunächst benötigen Sie eine E-Mail-Nachricht, mit der Sie arbeiten können. Laden Sie die E-Mail-Nachricht mithilfe der Klassen der Aspose.Email-Bibliothek.
 
-##  Rendern von Kalenderereignissen mit C#-Code
+## 5. Abrufen von Anhängen aus der E-Mail
 
- Rendern von Kalenderereignissen mit C#-Code
+Verwenden Sie den folgenden Codeausschnitt, um alle Anhänge der geladenen E-Mail-Nachricht abzurufen:
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Aspose.Email .NET E-Mail-Verarbeitungs-API
+// Laden Sie die E-Mail-Nachricht (angenommen: „emailMessage“).
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## Erfahren Sie, wie Sie Kalenderereignisse mit C# und Aspose.Email für .NET rendern. Erstellen Sie ganz einfach interaktive Zeitpläne.
+## 6. Unterscheidung zwischen Inline- und regulären Anhängen
 
-Installation des Aspose.Email NuGet-Pakets`ContentDisposition`Stellen Sie zunächst sicher, dass Sie ein .NET-Projekt eingerichtet haben. Sie können das Aspose.Email NuGet-Paket installieren, indem Sie den folgenden Befehl in der Paket-Manager-Konsole Ihres Projekts verwenden:`ContentDisposition`Initialisierung der Anwendung
+Um zwischen Inline- und regulären Anhängen zu unterscheiden, müssen Sie die einzelnen Anhänge überprüfen`ContentDisposition` Eigentum. Wenn die`ContentDisposition` auf „inline“ eingestellt ist, handelt es sich bei dem Anhang um einen Inline-Anhang.
 
-##  Initialisieren Sie die Aspose.Email-Bibliothek in Ihrer Anwendung, indem Sie die erforderliche using-Direktive hinzufügen und eine Instanz davon erstellen
+## 7. Arbeiten mit Inline-Anhängen
 
- Klasse:
+Beim Umgang mit Inline-Anhängen können Sie auf deren Inhalt und zugehörige Informationen zugreifen. Verwenden Sie den folgenden Codeausschnitt als Referenz:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Initialisieren Sie die Anwendung
-        //Laden von Kalenderdaten
+        // Behandeln Sie die Inline-Befestigung
+        // Beispiel: Inhalts-ID und Inhaltstyp anzeigen
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
 }
 ```
 
-## Erstellen einer Kalenderinstanz
+## 8. Umgang mit regelmäßigen Anhängen
 
- Um mit Kalenderereignissen arbeiten zu können, müssen Sie eine Instanz davon erstellen
+Normale Anhänge verfügen nicht über den Dispositionstyp „Inline“. Sie können sie mit dem folgenden Codeausschnitt verarbeiten:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Klasse aus der Aspose.Email-Bibliothek:
-        //Laden von Kalenderdaten aus der ICS-Datei
+        // Behandeln Sie regelmäßige Befestigungen
+        // Beispiel: Anhang auf Datenträger speichern
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
 ```
 
-##  Sie können Kalenderdaten aus einer ICS-Datei (iCalendar) mit laden
+## Abschluss
 
- Klasse:
+In diesem Leitfaden haben wir die Welt der E-Mail-Anhänge erkundet und uns dabei auf die Unterscheidung zwischen Inline- und regulären Anhängen mithilfe der Aspose.Email für .NET-Bibliothek konzentriert. Indem Sie die Schritt-für-Schritt-Anleitungen befolgen und die bereitgestellten Codeausschnitte verwenden, können Sie bei Ihren E-Mail-Verarbeitungsaufgaben beide Arten von Anhängen effektiv identifizieren und damit arbeiten.
 
-## Kalenderereignisse rendern
+## FAQs
 
-### Erstellen eines gerenderten Ausgabecontainers
+### Wie kann ich die Aspose.Email für .NET-Bibliothek installieren?
 
-Zum Rendern von Kalenderereignissen benötigen Sie einen Container für die Ausgabe. Sie können einen HTML-Container mit erstellen`Install-Package Aspose.Email`.
+ Sie können die Aspose.Email für .NET-Bibliothek mit dem NuGet Package Manager installieren. Führen Sie einfach den folgenden Befehl in der Package Manager-Konsole aus:`Install-Package Aspose.Email`.
 
-###  Klasse:
+### Kann ich programmgesteuert zwischen Inline- und regulären Anhängen unterscheiden?
 
-Anwenden von Rendering-Optionen`ContentDisposition`Vor dem Rendern können Sie verschiedene Optionen anwenden, um das Erscheinungsbild der Ausgabe anzupassen. Sie können beispielsweise das Start- und Enddatum für das Rendern festlegen:
+ Ja, Sie können zwischen Inline- und regulären Anhängen unterscheiden, indem Sie die überprüfen`ContentDisposition` Eigentum jedes Anhangs. Anhänge mit dem Dispositionstyp „Inline“ sind Inline-Anhänge.
 
-### Kalenderereignisse rendern
+### Ist Aspose.Email für die Verarbeitung von E-Mail-Anhängen in anderen Programmiersprachen geeignet?
 
- Rendern Sie die Kalenderereignisse mithilfe von
+Ja, Aspose.Email bietet Bibliotheken für verschiedene Programmiersprachen und eignet sich daher für die Verarbeitung von E-Mail-Anhängen in einer Vielzahl von Entwicklungsumgebungen.
 
-###  Methode:
+### Wie kann ich auf den Inhalt eines Inline-Anhangs zugreifen?
 
-Anpassung
+Sie können auf den Inhalt eines Inline-Anhangs zugreifen, indem Sie die entsprechenden Eigenschaften verwenden, die von der Aspose.Email-Bibliothek bereitgestellt werden. Sie können beispielsweise die Inhalts-ID und den Inhaltstyp des Inline-Anhangs abrufen.
 
-### Gestalten der gerenderten Ausgabe
+### Kann ich reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern?
 
-Sie können die gerenderte Ausgabe formatieren, indem Sie die CSS-Eigenschaften des HTML-Containers ändern:`Save`Ereignisdetails hinzufügen
+ Absolut! Sie können reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern, indem Sie die Funktion verwenden`Save` Methode des Anhangobjekts und Angabe des gewünschten Dateipfads.

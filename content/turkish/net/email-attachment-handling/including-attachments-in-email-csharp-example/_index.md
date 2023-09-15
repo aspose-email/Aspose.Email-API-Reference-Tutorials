@@ -1,35 +1,35 @@
 ---
-title: İletileri filtreleme, ek ekleme ve ileti özelliklerini değiştirme gibi gelişmiş seçenekleri uygulayabilirsiniz:
-linktitle: Kriterlere göre mesajları filtreleyin
-second_title: İletiye ek ekleme
-description: Mesaj özelliklerini değiştirin
+title: E-postaya Ekleri Ekleme - C# Örneği
+linktitle: E-postaya Ekleri Ekleme - C# Örneği
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET'i kullanarak e-postaya ekleri nasıl ekleyeceğinizi öğrenin. C# kod örneğiyle adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
 
-## Hata İşleme ve Günlüğe Kaydetme
+## E-postaya Ek Eklemeye Giriş
 
-Uygulamanızın kararlılığını sağlamak için güçlü hata işleme ve günlük kaydı uygulayın:
+Günümüzün hızlı tempolu dijital dünyasında, e-posta iletişimi hem işletmeler hem de bireyler için temel taşı olmaya devam ediyor. E-postalarınıza ek eklemek, belgeleri, resimleri ve dosyaları zahmetsizce paylaşmanıza olanak tanıyarak mesajlarınızın değerini artırır. Bu adım adım kılavuz, .NET için Aspose.Email kütüphanesini kullanarak e-postanıza ek ekleme sürecinde size yol gösterecektir.
 
-## İstisnalar oluşturabilecek kod
+## Geliştirme Ortamınızı Kurma
 
- İstisnayı günlüğe kaydet
+Kodlama ayrıntılarına dalmadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olun. İhtiyacın olacak:
 
-- Uygulamayı Test Etme
-- Uygulamanızı dağıtmadan önce, işlevselliğinden ve güvenilirliğinden emin olmak için onu çeşitli senaryolar ve uç durumlarla kapsamlı bir şekilde test edin.
+- Visual Studio (veya seçtiğiniz herhangi bir C# IDE)
+- .NET Framework veya .NET Core yüklü
 
-## Çözüm
+## Aspose.Email'i Projenize Eklemek
 
-Bu makalede Aspose.Email for .NET kullanarak Zimbra TGZ depolama alanından mesajların nasıl çıkarılıp kaydedileceğini araştırdık. Geliştirme ortamını kurmayı, mesaj klasörlerini yüklemeyi ve bunlar arasında gezinmeyi, mesajları farklı formatlarda kaydetmeyi, gelişmiş seçenekleri uygulamayı ve hata yönetimini sağlamayı anlattık. Bu kılavuzu takip ederek .NET uygulamalarınızdaki e-posta mesajlarını etkili bir şekilde yönetebilirsiniz.
+Aspose.Email, çeşitli formatlardaki e-postalarla çalışmayı kolaylaştıran güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
 
-1. SSS'ler
+1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın ve yeni bir C# projesi oluşturun.
 
-2. Aspose.Email for .NET'i nasıl yüklerim?
+2. Aspose.Email'i yükleyin: Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Email"i arayın ve paketi yükleyin.
 
-## Aspose.Email for .NET'i yüklemek için Visual Studio'daki NuGet Paket Yöneticisini kullanabilirsiniz. Basitçe "Aspose.Email"i arayın ve projenize uygun paketi yükleyin.
+## E-posta Mesajı Oluşturma
 
-Aspose.Email'i e-posta mesajları göndermek için kullanabilir miyim?
+Artık Aspose.Email projenize entegre edildiğine göre bir e-posta mesajı oluşturmaya başlayalım:
 
 ```csharp
 using Aspose.Email;
@@ -38,35 +38,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Evet, Aspose.Email, e-posta mesajları oluşturma ve gönderme işlevselliği de sağlar. Şunu kullanabilirsiniz:
+        // Yeni bir e-posta mesajı oluştur
         MailMessage message = new MailMessage();
 
-        //Farklı protokoller kullanarak mesaj göndermek için sınıf.
+        // Gönderen ve alıcı adreslerini ayarlayın
         message.From = new MailAddress("sender@example.com");
         message.To.Add("recipient@example.com");
 
-        //Aspose.Email platformlar arası uygulamalara uygun mu?
+        // E-posta konusunu ve metnini ayarlayın
         message.Subject = "Check out this attachment!";
         message.Body = "Hello, I've attached an important document for you.";
 
-        //Evet, Aspose.Email for .NET, .NET Core ile uyumludur, bu da onu Windows, Linux ve macOS'u hedefleyen çapraz platform uygulamaları için uygun kılar.
+        // Kodunuzun geri kalanı...
     }
 }
 ```
 
-## E-posta iletilerindeki ekleri nasıl çıkarabilirim?
+## E-postaya Ek Ekleme
 
- Ekleri kullanarak erişebilirsiniz.
+Ekler, e-postalarınıza ek bağlam sağlar. E-postaya bir ek ekleyelim:
 
 ```csharp
-// mülkiyeti
+// E-postaya ek ekleme
 Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-##  sınıf. Ekleri yineleyin ve bunları istediğiniz konuma kaydedin.
+## E-postayı Gönderme
 
-Aspose.Email takvimler ve randevularla çalışmayı destekliyor mu?
+E-postanız hazır olduğunda gönderme zamanı:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
@@ -75,9 +75,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Evet, Aspose.Email, iCalendar (ICS) dosyalarıyla çalışarak randevuları, etkinlikleri ve takvimleri yönetmenize olanak tanıyan özellikler sunar.
+        // Kodunuzun geri kalanı...
 
-        // ICS Dosyalarındaki ProdID'yi C# ile Değiştirme
+        // E-postayı bir SMTP istemcisi kullanarak gönderme
         SmtpClient client = new SmtpClient("smtp.example.com", 587);
         client.Username = "your_username";
         client.Password = "your_password";
@@ -86,28 +86,28 @@ class Program
 }
 ```
 
-##  ICS Dosyalarındaki ProdID'yi C# ile Değiştirme
+## Çözüm
 
- Aspose.Email .NET E-Posta İşleme API'si
+Bu kılavuzda Aspose.Email for .NET'i kullanarak e-postalarınıza ekleri nasıl ekleyeceğinizi araştırdık. Yukarıda özetlenen adımları izleyerek e-posta iletişimlerinizi zengin içerikli eklerle geliştirebilirsiniz. Aspose.Email kütüphanesi bu süreci basitleştirerek, ekleri olan e-postaları program aracılığıyla oluşturmayı ve göndermeyi her zamankinden daha kolay hale getiriyor.
 
-##  C# ve Aspose.Email for .NET kullanarak ICS dosyalarındaki ProdID'yi değiştirmeyi öğrenin. Adım adım kılavuz ve kod. Veri bütünlüğünü ve uyumluluğunu sağlayın.
+## SSS'ler
 
-### ICS Dosyalarına ve ProdID'ye Giriş
+### Aspose.Email kütüphanesini nasıl indirebilirim?
 
-ICalendar (ICS) dosyaları, çeşitli uygulamalar ve kullanıcılar arasında takvimle ilgili bilgilerin paylaşılması için standartlaştırılmış bir format görevi görür. Bu dosyalar genellikle etkinlik tarihleri, saatleri ve açıklamalar gibi temel ayrıntıları içerir. ICS dosyalarındaki önemli bileşenlerden biri, dosyayı oluşturmaktan sorumlu uygulamayı veya ürünü belirten "ProdID"dir. Özellikle sistemler arasında veri taşırken veya çeşitli uygulamalarla entegrasyon yaparken, ICS dosyalarındaki ProdID'yi değiştirmeniz gerekebilecek durumlar vardır.[Aspose.Email for .NET'e Başlarken](https://releases.aspose.com/email/net/)ICS dosyalarındaki ProdID'yi değiştirme yolculuğuna çıkmak için Aspose.Email for .NET kitaplığını kullanacağız. Bu güçlü kütüphane, ICS dosyaları da dahil olmak üzere çeşitli e-posta formatlarının işlenmesini ve yönetimini kolaylaştırır. Süreç birkaç adıma ayrılmıştır:
+ Aspose.Email kütüphanesini Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya Visual Studio'da NuGet Paket Yöneticisi'ni kullanarak.
 
-### Önkoşullar
+### Tek bir e-postaya birden fazla dosya ekleyebilir miyim?
 
-Süreci derinlemesine incelemeden önce, C# programlama konusunda temel bilgilere sahip olduğunuzdan emin olun. Ayrıca Visual Studio'nun veya uyumlu bir tümleşik geliştirme ortamının (IDE) yüklü olması gerekir.`Attachment`Aspose.Email for .NET'in Kurulumu`Attachments`İlk adım gerekli araçların edinilmesini içerir. Aspose.Email NuGet paketini projenize yükleyin. Bunu Visual Studio'daki NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.`MailMessage`.
+ Kesinlikle! Birden fazla ek oluşturup ekleyerek tek bir e-postaya birden fazla ek ekleyebilirsiniz.`Attachment` nesnelere`Attachments` senin koleksiyonun`MailMessage`.
 
-### ICS Dosyasını Yükleme
+### Aspose.Email hem .NET Framework hem de .NET Core için uygun mu?
 
-Paket yüklendikten sonra Aspose.Email kütüphanesini kullanarak ICS dosyasını C# uygulamanıza yüklemeye devam edebilirsiniz.
+Evet, Aspose.Email hem .NET Framework hem de .NET Core ile uyumludur ve seçtiğiniz platformda esneklik sunar.
 
-### ProdID'ye Erişim ve Değiştirme
+### Aspose.Email güvenli bağlantılar üzerinden e-posta göndermeyi destekliyor mu?
 
-ICS dosyasını yükledikten sonra dosyanın içindeki ProdID alanını bulup gerekli değişiklikleri yapacaksınız.
+Evet, Aspose.Email'i SMTPS veya STARTTLS gibi protokolleri kullanarak güvenli bağlantılar üzerinden e-posta gönderecek şekilde yapılandırabilirsiniz. Uygun sunucu ayarlarını sağladığınızdan emin olun.
 
-### Değiştirilen ICS Dosyasını Kaydetme
+### Aspose.Email'in yetenekleri hakkında daha fazla bilgiyi nerede bulabilirim?
 
-Son adım, ProdID'de yapılan değişikliklerin ICS dosyasına geri kaydedilmesini gerektirir.[Kaynak Kodlu Adım Adım Kılavuz](https://reference.aspose.com/email/net/).
+ Aspose.Email'in özellikleri, sınıfları ve yöntemleri hakkında daha ayrıntılı bilgi için bkz.[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).

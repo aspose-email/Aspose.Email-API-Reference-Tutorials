@@ -1,109 +1,109 @@
 ---
-title: Preserving Original Boundaries using C# Code
-linktitle: Preserving Original Boundaries using C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+title: C# Kodunu Kullanarak Orijinal Sınırları Koruma
+linktitle: C# Kodunu Kullanarak Orijinal Sınırları Koruma
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: C# ve Aspose.Email for .NET kullanarak e-posta eklerinin orijinal sınırlarını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
 type: docs
 weight: 13
 url: /tr/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
 
-## Introduction to Preserving Original Boundaries
+## Orijinal Sınırların Korunmasına Giriş
 
-In the modern business world, email communication plays a pivotal role. As emails are exchanged, they often contain crucial attachments that need to be managed and manipulated programmatically. However, when working with email attachments, it's essential to ensure that the original boundaries and formatting of these attachments are preserved. This is where Aspose.Email for .NET comes into play.
+Modern iş dünyasında e-posta iletişimi çok önemli bir rol oynamaktadır. E-postalar alınıp alındıkça, genellikle programlı olarak yönetilmesi ve değiştirilmesi gereken önemli ekler içerirler. Ancak e-posta ekleriyle çalışırken bu eklerin orijinal sınırlarının ve formatının korunduğundan emin olmak önemlidir. Aspose.Email for .NET tam da burada devreye giriyor.
 
-## Prerequisites
+## Önkoşullar
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Visual Studio installed
-- .NET Framework or .NET Core project
+- Visual Studio yüklü
+- .NET Framework veya .NET Core projesi
 
-## Installation
+## Kurulum
 
-To get started, you need to install the Aspose.Email for .NET library. You can do this by following these steps:
+Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Bunu şu adımları izleyerek yapabilirsiniz:
 
-1. Open your Visual Studio project.
-2. Right-click on your project in the Solution Explorer.
-3. Select "Manage NuGet Packages."
-4. Search for "Aspose.Email" and install the package.
+1. Visual Studio projenizi açın.
+2. Solution Explorer'da projenize sağ tıklayın.
+3. "NuGet Paketlerini Yönet"i seçin.
+4. "Aspose.Email"i arayın ve paketi yükleyin.
 
-## Loading Email Messages
+## E-posta Mesajlarını Yükleme
 
-The first step is to load the email message that contains the attachment you want to work with. Here's how you can do it:
+İlk adım, çalışmak istediğiniz eki içeren e-posta mesajını yüklemektir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-// Load the email message
+// E-posta mesajını yükle
 MailMessage message = MailMessage.Load("path/to/email.msg");
 ```
 
-## Extracting Attachments
+## Ekleri Çıkarma
 
-Once you have the email message loaded, you can extract the attachments from it:
+E-posta mesajını yükledikten sonra ekleri buradan çıkarabilirsiniz:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Extract attachment data
+    // Ek verilerini çıkarın
     byte[] attachmentData = attachment.ContentStream.ToByteArray();
     string fileName = attachment.Name;
-    // Further processing...
+    // İlave işlemler...
 }
 ```
 
-## Modifying Attachments
+## Ekleri Değiştirme
 
-To preserve the original boundaries while modifying attachments, you can use the Aspose.Email library's features. Let's say you want to resize an image attachment:
+Ekleri değiştirirken orijinal sınırları korumak için Aspose.Email kütüphanesinin özelliklerini kullanabilirsiniz. Bir resim ekini yeniden boyutlandırmak istediğinizi varsayalım:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType.StartsWith("image/"))
     {
-        // Resize the image while preserving original boundaries
+        // Orijinal sınırları koruyarak görüntüyü yeniden boyutlandırın
         using (MemoryStream memoryStream = new MemoryStream(attachmentData))
         {
-            // Perform image manipulation
-            // Save changes to memoryStream
+            // Görüntü manipülasyonu gerçekleştirin
+            // Değişiklikleri MemoryStream'e kaydet
         }
     }
 }
 ```
 
-## Saving Changes
+## Değişiklikleri kaydediyor
 
-After making modifications to the attachments, you can save the changes back to the email message:
+Eklerde değişiklik yaptıktan sonra değişiklikleri e-posta mesajına geri kaydedebilirsiniz:
 
 ```csharp
-// Save changes to the original email message
+// Değişiklikleri orijinal e-posta mesajına kaydet
 message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ```
 
-## Conclusion
+## Çözüm
 
-Preserving original boundaries when working with email attachments is crucial for maintaining data integrity. With Aspose.Email for .NET, this process becomes seamless, allowing you to manipulate attachments while ensuring that their formatting remains intact.
+E-posta ekleriyle çalışırken orijinal sınırları korumak, veri bütünlüğünü korumak açısından çok önemlidir. Aspose.Email for .NET ile bu süreç kusursuz hale gelir ve ekleri değiştirmenize olanak tanırken aynı zamanda formatlarının bozulmadan kalmasını sağlar.
 
-## FAQ's
+## SSS'ler
 
-### How do I install Aspose.Email for .NET?
+### Aspose.Email for .NET'i nasıl yüklerim?
 
-You can install Aspose.Email for .NET by using NuGet packages. Simply search for "Aspose.Email" in the NuGet Package Manager and install it.
+Aspose.Email for .NET'i NuGet paketlerini kullanarak kurabilirsiniz. NuGet Paket Yöneticisinde "Aspose.Email" ifadesini arayın ve yükleyin.
 
-### Can I use Aspose.Email with both .NET Framework and .NET Core?
+### Aspose.Email'i hem .NET Framework hem de .NET Core ile kullanabilir miyim?
 
-Yes, Aspose.Email for .NET supports both .NET Framework and .NET Core projects.
+Evet, Aspose.Email for .NET hem .NET Framework hem de .NET Core projelerini destekler.
 
-### Is there a free trial version available?
+### Ücretsiz deneme sürümü mevcut mu?
 
-Yes, you can get a free trial version of Aspose.Email for .NET from the website.
+Evet, Aspose.Email for .NET'in ücretsiz deneme sürümünü web sitesinden edinebilirsiniz.
 
-### How can I resize image attachments while maintaining boundaries?
+### Sınırları korurken resim eklerini nasıl yeniden boyutlandırabilirim?
 
-You can use the Aspose.Email library to load and manipulate image attachments while ensuring that the original boundaries are preserved.
+Orijinal sınırların korunmasını sağlarken görüntü eklerini yüklemek ve değiştirmek için Aspose.Email kütüphanesini kullanabilirsiniz.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
-You can find comprehensive documentation and examples on the [Aspose.Email documentation](https://reference.aspose.com/email/net/) page.
+ Kapsamlı belgeleri ve örnekleri şurada bulabilirsiniz:[Aspose.Email belgeleri](https://reference.aspose.com/email/net/) sayfa.

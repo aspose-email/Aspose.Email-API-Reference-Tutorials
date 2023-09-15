@@ -1,37 +1,37 @@
 ---
-title: Kodlama ayrıntılarına dalmadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olun. İhtiyacın olacak:
-linktitle: Visual Studio (veya seçtiğiniz herhangi bir C# IDE)
-second_title: .NET Framework veya .NET Core yüklü
-description: Aspose.Email'i Projenize Eklemek
+title: Belge Ekleri için Aspose.Email Kullanımı
+linktitle: Belge Ekleri için Aspose.Email Kullanımı
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java kullanarak Java e-postalarındaki belge eklerini nasıl yöneteceğinizi öğrenin. Belge eklerini kolaylıkla oluşturun, gönderin ve çıkarın.
 type: docs
 weight: 16
 url: /tr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
 
-## Aspose.Email, çeşitli formatlardaki e-postalarla çalışmayı kolaylaştıran güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
+## Java'da Belge Ekleri için Aspose.Email Kullanımına Giriş
 
-Yeni Bir Proje Oluşturun: Visual Studio'yu açın ve yeni bir C# projesi oluşturun.
+Bu eğitimde Aspose.Email for Java kullanarak belge ekleriyle nasıl çalışılacağını inceleyeceğiz. Aspose.Email, e-posta mesajlarını ve eklerini kolaylıkla değiştirmenizi sağlayan güçlü bir Java API'sidir. Aşağıdaki konuları ele alacağız:
 
-## Aspose.Email'i yükleyin: Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Email"i arayın ve paketi yükleyin.
+## Önkoşullar
 
-E-posta Mesajı Oluşturma
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Artık Aspose.Email projenize entegre edildiğine göre bir e-posta mesajı oluşturmaya başlayalım:
--  Yeni bir e-posta mesajı oluştur[ Gönderen ve alıcı adreslerini ayarlayın](https://releases.aspose.com/email/java/).
+- Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
+-  Aspose.Email Java kütüphanesi için. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/java/).
 
-##  E-posta konusunu ve metnini ayarlayın
+## Aspose.Email'i Projenize Eklemek
 
- Kodunuzun geri kalanı...
+Başlamak için Aspose.Email kütüphanesini Java projenize eklemeniz gerekir. Bu adımları takip et:
 
-1. E-postaya Ek Ekleme
+1. Verilen bağlantıdan Aspose.Email for Java kütüphanesini indirin.
 
-2. Ekler, e-postalarınıza ek bağlam sağlar. E-postaya bir ek ekleyelim:
+2. İndirdiğiniz ZIP dosyasını istediğiniz dizine çıkartın.
 
-3.  E-postaya ek ekleme
+3. Java projenizde Aspose.Email JAR dosyalarını sınıf yolunuza ekleyin. Bunu favori entegre geliştirme ortamınızda (IDE) veya komut satırını kullanarak yapabilirsiniz.
 
-## E-postayı Gönderme
+## Yeni Bir E-posta Mesajı Oluşturma
 
-E-postanız hazır olduğunda gönderme zamanı:
+Belge eki içeren yeni bir e-posta mesajı oluşturarak başlayalım. Bunu açıklamak için basit bir örnek kullanacağız:
 
 ```java
 import com.aspose.email.Attachment;
@@ -39,32 +39,32 @@ import com.aspose.email.MailMessage;
 
 public class CreateEmailWithAttachment {
     public static void main(String[] args) {
-        // Kodunuzun geri kalanı...
+        // Yeni bir e-posta mesajı oluştur
         MailMessage message = new MailMessage();
 
-        // E-postayı bir SMTP istemcisi kullanarak gönderme
+        //Gönderenin ve alıcının e-posta adreslerini ayarlayın
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
 
-        //Çözüm
+        // E-postanın konusunu ve metnini ayarlayın
         message.setSubject("Document Attachment Example");
         message.setBody("Please find the attached document.");
 
-        //Bu kılavuzda Aspose.Email for .NET'i kullanarak e-postalarınıza ekleri nasıl ekleyeceğinizi araştırdık. Yukarıda özetlenen adımları izleyerek e-posta iletişimlerinizi zengin içerikli eklerle geliştirebilirsiniz. Aspose.Email kütüphanesi bu süreci basitleştirerek, ekleri olan e-postaları program aracılığıyla oluşturmayı ve göndermeyi her zamankinden daha kolay hale getiriyor.
+        // E-postaya bir belge dosyası ekleyin
         Attachment attachment = new Attachment("path/to/your/document.pdf");
         message.addAttachment(attachment);
 
-        //SSS'ler
+        // E-posta mesajını bir dosyaya kaydedin veya SMTP kullanarak gönderin
         message.save("attachment_email.eml");
     }
 }
 ```
 
-Aspose.Email kütüphanesini nasıl indirebilirim?`MailMessage` Aspose.Email kütüphanesini Aspose.Releases'ten indirebilirsiniz:
+ Bu örnekte yeni bir tane oluşturuyoruz.`MailMessage` nesnesini seçin, gönderen ve alıcı e-posta adreslerini ayarlayın, e-postanın konusunu ve metnini belirtin ve e-postaya bir belge dosyası ekleyin.
 
-## Aspose.Release'ler
+## Belge Eklerini Alma
 
-veya Visual Studio'da NuGet Paket Yöneticisi'ni kullanarak.
+Gelen e-postalardan belge eklerini çıkarmanız ve bunlarla çalışmanız gerekebilir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
 import com.aspose.email.Attachment;
@@ -72,10 +72,10 @@ import com.aspose.email.MailMessage;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        //Tek bir e-postaya birden fazla dosya ekleyebilir miyim?
+        // Bir dosyadan e-posta mesajı yükleyin veya SMTP kullanarak alın
         MailMessage message = MailMessage.load("received_email.eml");
 
-        // Kesinlikle! Birden fazla ek oluşturup ekleyerek tek bir e-postaya birden fazla ek ekleyebilirsiniz.
+        // Ekleri yineleyin ve belge eklerini kaydedin
         for (Attachment attachment : message.getAttachments()) {
             if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
@@ -85,22 +85,22 @@ public class ExtractAttachments {
 }
 ```
 
- nesnelere
+Bu örnekte, bir dosyadan bir e-posta mesajı yüklüyoruz (bunu SMTP kullanarak da alabilirsiniz), ekler arasında yineleniyoruz ve tüm belge eklerini PDF içerik türüyle kaydediyoruz.
 
-##  senin koleksiyonun
+## Çözüm
 
-Aspose.Email hem .NET Framework hem de .NET Core için uygun mu?
+Bu eğitimde Aspose.Email for Java kullanarak belge ekleriyle nasıl çalışılacağını araştırdık. Belge ekleri içeren e-postaları nasıl oluşturup göndereceğinizi ve gelen e-postalardan belge eklerini nasıl çıkaracağınızı öğrendiniz. Aspose.Email, çeşitli ek türleriyle çalışmak için güçlü yetenekler sağlar ve bu da onu Java uygulamalarında e-posta otomasyonu için değerli bir araç haline getirir.
 
-## Evet, Aspose.Email hem .NET Framework hem de .NET Core ile uyumludur ve seçtiğiniz platformda esneklik sunar.
+## SSS'ler
 
-### Aspose.Email güvenli bağlantılar üzerinden e-posta göndermeyi destekliyor mu?
+### Birden fazla belge eki içeren bir e-postayı nasıl gönderebilirim?
 
-Evet, Aspose.Email'i SMTPS veya STARTTLS gibi protokolleri kullanarak güvenli bağlantılar üzerinden e-posta gönderecek şekilde yapılandırabilirsiniz. Uygun sunucu ayarlarını sağladığınızdan emin olun.`Attachment`Aspose.Email'in yetenekleri hakkında daha fazla bilgiyi nerede bulabilirim?`MailMessage` Aspose.Email'in özellikleri, sınıfları ve yöntemleri hakkında daha ayrıntılı bilgi için bkz.`Attachment`Aspose.Email API Referansı
+ Birden fazla belge eki içeren bir e-posta göndermek için daha fazlasını ekleyebilirsiniz.`Attachment` nesnelere`MailMessage` yukarıdaki örnekte gösterildiği gibi. Her biri`Attachment` ayrı bir eki temsil eder.
 
-###  E-postalardan Ekleri Kaldırma - C# Uygulaması
+### PDF belgeleri dışındaki eklerle çalışabilir miyim?
 
- E-postalardan Ekleri Kaldırma - C# Uygulaması
+Evet, Aspose.Email for Java, Word belgeleri, Excel elektronik tabloları, resimler ve daha fazlasını içeren çok çeşitli ek türlerini destekler. Ekin içerik türünü kontrol edebilir ve kodunuzda buna göre işleyebilirsiniz.
 
-###  Aspose.Email .NET E-Posta İşleme API'si
+### Büyük belge eklerini nasıl halledebilirim?
 
-Aspose.Email for .NET'i kullanarak e-posta eklerini nasıl kaldıracağınızı öğrenin. C# kaynak koduyla adım adım kılavuz.
+Büyük belge ekleriyle uğraşmanız gerekiyorsa, ekin tamamının belleğe yüklenmesini önlemek için akış tekniklerini kullanmayı düşünün. Aspose.Email, eklerin akışı için seçenekler sunarak bunları verimli bir şekilde işlemenize olanak tanır.

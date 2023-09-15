@@ -1,109 +1,109 @@
 ---
-title: Preserving Original Boundaries using C# Code
-linktitle: Preserving Original Boundaries using C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+title: Préserver les limites d'origine à l'aide du code C#
+linktitle: Préserver les limites d'origine à l'aide du code C#
+second_title: API de traitement des e-mails Aspose.Email .NET
+description: Découvrez comment préserver les limites d'origine des pièces jointes aux e-mails à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.
 type: docs
 weight: 13
 url: /fr/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
 
-## Introduction to Preserving Original Boundaries
+## Introduction à la préservation des limites d'origine
 
-In the modern business world, email communication plays a pivotal role. As emails are exchanged, they often contain crucial attachments that need to be managed and manipulated programmatically. However, when working with email attachments, it's essential to ensure that the original boundaries and formatting of these attachments are preserved. This is where Aspose.Email for .NET comes into play.
+Dans le monde des affaires moderne, la communication par courrier électronique joue un rôle central. Au fur et à mesure que les e-mails sont échangés, ils contiennent souvent des pièces jointes cruciales qui doivent être gérées et manipulées par programme. Cependant, lorsque vous travaillez avec des pièces jointes à des e-mails, il est essentiel de garantir que les limites et le formatage d'origine de ces pièces jointes sont préservés. C'est là qu'Aspose.Email pour .NET entre en jeu.
 
-## Prerequisites
+## Conditions préalables
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
 
-- Visual Studio installed
-- .NET Framework or .NET Core project
+- Visual Studio installé
+- Projet .NET Framework ou .NET Core
 
 ## Installation
 
-To get started, you need to install the Aspose.Email for .NET library. You can do this by following these steps:
+Pour commencer, vous devez installer la bibliothèque Aspose.Email pour .NET. Vous pouvez le faire en suivant ces étapes :
 
-1. Open your Visual Studio project.
-2. Right-click on your project in the Solution Explorer.
-3. Select "Manage NuGet Packages."
-4. Search for "Aspose.Email" and install the package.
+1. Ouvrez votre projet Visual Studio.
+2. Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions.
+3. Sélectionnez « Gérer les packages NuGet ».
+4. Recherchez « Aspose.Email » et installez le package.
 
-## Loading Email Messages
+## Chargement des messages électroniques
 
-The first step is to load the email message that contains the attachment you want to work with. Here's how you can do it:
+La première étape consiste à charger le message électronique contenant la pièce jointe avec laquelle vous souhaitez travailler. Voici comment procéder :
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-// Load the email message
+// Charger le message électronique
 MailMessage message = MailMessage.Load("path/to/email.msg");
 ```
 
-## Extracting Attachments
+## Extraction des pièces jointes
 
-Once you have the email message loaded, you can extract the attachments from it:
+Une fois le message électronique chargé, vous pouvez en extraire les pièces jointes :
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Extract attachment data
+    // Extraire les données des pièces jointes
     byte[] attachmentData = attachment.ContentStream.ToByteArray();
     string fileName = attachment.Name;
-    // Further processing...
+    // Traitement ultérieur...
 }
 ```
 
-## Modifying Attachments
+## Modification des pièces jointes
 
-To preserve the original boundaries while modifying attachments, you can use the Aspose.Email library's features. Let's say you want to resize an image attachment:
+Pour conserver les limites d'origine lors de la modification des pièces jointes, vous pouvez utiliser les fonctionnalités de la bibliothèque Aspose.Email. Supposons que vous souhaitiez redimensionner une pièce jointe :
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType.StartsWith("image/"))
     {
-        // Resize the image while preserving original boundaries
+        // Redimensionner l'image tout en préservant les limites d'origine
         using (MemoryStream memoryStream = new MemoryStream(attachmentData))
         {
-            // Perform image manipulation
-            // Save changes to memoryStream
+            // Effectuer une manipulation d'images
+            // Enregistrer les modifications dans memoryStream
         }
     }
 }
 ```
 
-## Saving Changes
+## Enregistrer les modifications
 
-After making modifications to the attachments, you can save the changes back to the email message:
+Après avoir modifié les pièces jointes, vous pouvez enregistrer les modifications dans le message électronique :
 
 ```csharp
-// Save changes to the original email message
+// Enregistrer les modifications apportées au message électronique d'origine
 message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ```
 
 ## Conclusion
 
-Preserving original boundaries when working with email attachments is crucial for maintaining data integrity. With Aspose.Email for .NET, this process becomes seamless, allowing you to manipulate attachments while ensuring that their formatting remains intact.
+Préserver les limites d'origine lorsque vous travaillez avec des pièces jointes à des e-mails est crucial pour maintenir l'intégrité des données. Avec Aspose.Email pour .NET, ce processus devient transparent, vous permettant de manipuler les pièces jointes tout en garantissant que leur formatage reste intact.
 
-## FAQ's
+## FAQ
 
-### How do I install Aspose.Email for .NET?
+### Comment installer Aspose.Email pour .NET ?
 
-You can install Aspose.Email for .NET by using NuGet packages. Simply search for "Aspose.Email" in the NuGet Package Manager and install it.
+Vous pouvez installer Aspose.Email pour .NET à l’aide des packages NuGet. Recherchez simplement « Aspose.Email » dans le gestionnaire de packages NuGet et installez-le.
 
-### Can I use Aspose.Email with both .NET Framework and .NET Core?
+### Puis-je utiliser Aspose.Email avec .NET Framework et .NET Core ?
 
-Yes, Aspose.Email for .NET supports both .NET Framework and .NET Core projects.
+Oui, Aspose.Email pour .NET prend en charge les projets .NET Framework et .NET Core.
 
-### Is there a free trial version available?
+### Existe-t-il une version d'essai gratuite disponible ?
 
-Yes, you can get a free trial version of Aspose.Email for .NET from the website.
+Oui, vous pouvez obtenir une version d’essai gratuite d’Aspose.Email pour .NET sur le site Web.
 
-### How can I resize image attachments while maintaining boundaries?
+### Comment puis-je redimensionner les pièces jointes d’images tout en conservant les limites ?
 
-You can use the Aspose.Email library to load and manipulate image attachments while ensuring that the original boundaries are preserved.
+Vous pouvez utiliser la bibliothèque Aspose.Email pour charger et manipuler les pièces jointes d'images tout en garantissant que les limites d'origine sont préservées.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Où puis-je trouver plus d’informations sur Aspose.Email pour .NET ?
 
-You can find comprehensive documentation and examples on the [Aspose.Email documentation](https://reference.aspose.com/email/net/) page.
+ Vous pouvez trouver une documentation complète et des exemples sur le[Documentation Aspose.Email](https://reference.aspose.com/email/net/) page.

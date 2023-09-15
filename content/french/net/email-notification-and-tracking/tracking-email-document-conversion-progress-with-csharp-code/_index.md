@@ -1,30 +1,30 @@
 ---
-title: Tracking Email Document Conversion Progress with C# Code
-linktitle: Tracking Email Document Conversion Progress with C# Code
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!
+title: Suivi de la progression de la conversion des documents électroniques avec le code C#
+linktitle: Suivi de la progression de la conversion des documents électroniques avec le code C#
+second_title: API de traitement des e-mails Aspose.Email .NET
+description: Découvrez comment implémenter la notification et le suivi par e-mail à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec des exemples de code. Améliorez votre communication par e-mail dès aujourd'hui !
 type: docs
 weight: 12
 url: /fr/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-In today's digital age, email communication plays a crucial role in both personal and professional spheres. As a programmer, you might have encountered the need to handle and manipulate email messages programmatically. One common task is tracking the progress of email document conversion, and in this article, we will guide you through the process step by step using C# and Aspose.Email for .NET.
+À l’ère numérique d’aujourd’hui, la communication par courrier électronique joue un rôle crucial tant dans la sphère personnelle que professionnelle. En tant que programmeur, vous avez peut-être rencontré le besoin de gérer et de manipuler des messages électroniques par programmation. Une tâche courante consiste à suivre la progression de la conversion des documents électroniques, et dans cet article, nous vous guiderons pas à pas tout au long du processus à l'aide de C# et Aspose.Email pour .NET.
 
-## Introduction to Aspose.Email for .NET
+## Introduction à Aspose.Email pour .NET
 
-Before diving into the code, let's have a brief introduction to Aspose.Email for .NET. This powerful library provides a wide range of features for working with email messages, including reading, writing, and converting emails in various formats. In our case, we will focus on email document conversion.
+Avant de plonger dans le code, faisons une brève introduction à Aspose.Email pour .NET. Cette puissante bibliothèque offre un large éventail de fonctionnalités pour travailler avec des messages électroniques, notamment la lecture, l'écriture et la conversion d'e-mails dans différents formats. Dans notre cas, nous nous concentrerons sur la conversion des documents email.
 
-## Setting up Your Environment
+## Configuration de votre environnement
 
-To get started, you'll need to set up your development environment. Ensure you have the following prerequisites in place:
+Pour commencer, vous devrez configurer votre environnement de développement. Assurez-vous que les conditions préalables suivantes sont remplies :
 
-- Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net/).
+-  Aspose.Email pour la bibliothèque .NET installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/email/net/).
 
-Now, let's get into the code. We'll create a step-by-step guide on tracking email document conversion progress using the provided C# source code.
+Passons maintenant au code. Nous allons créer un guide étape par étape sur le suivi de la progression de la conversion des documents électroniques à l'aide du code source C# fourni.
 
-## Step 1: Loading the Email Message
+## Étape 1 : Chargement du message électronique
 
-We begin by loading the email message from a file. Make sure to replace `"Your Document Directory"` with the actual path to your document directory.
+ Nous commençons par charger le message électronique à partir d’un fichier. Assurez-vous de remplacer`"Your Document Directory"` avec le chemin réel vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -32,9 +32,9 @@ var fileName = dataDir + "test.eml";
 MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## Step 2: Defining a Custom Progress Handler
+## Étape 2 : Définition d’un gestionnaire de progression personnalisé
 
-In this step, we set up a custom progress handler to monitor the conversion progress. The `ShowEmlConversionProgress` method will be called during the conversion process to provide information about the progress.
+ Dans cette étape, nous avons configuré un gestionnaire de progression personnalisé pour surveiller la progression de la conversion. Le`ShowEmlConversionProgress` La méthode sera appelée pendant le processus de conversion pour fournir des informations sur la progression.
 
 ```csharp
 private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
@@ -65,9 +65,9 @@ private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 }
 ```
 
-## Step 3: Saving the Email Message with Progress Tracking
+## Étape 3 : Enregistrement du message électronique avec suivi de la progression
 
-Now, let's save the email message while tracking the progress. We use the `EmlSaveOptions` class with a custom progress handler.
+ Maintenant, enregistrons le message électronique tout en suivant la progression. Nous utilisons le`EmlSaveOptions` classe avec un gestionnaire de progression personnalisé.
 
 ```csharp
 MemoryStream ms = new MemoryStream();
@@ -78,26 +78,26 @@ msg.Save(ms, opt);
 
 ## Conclusion
 
-Congratulations! You've successfully implemented email document conversion progress tracking using C# and Aspose.Email for .NET. This capability can be valuable when dealing with large volumes of emails and document conversions in your applications.
+Toutes nos félicitations! Vous avez implémenté avec succès le suivi de la progression de la conversion des documents électroniques à l'aide de C# et Aspose.Email pour .NET. Cette fonctionnalité peut s'avérer précieuse lorsque vous traitez de gros volumes d'e-mails et de conversions de documents dans vos applications.
 
-For more information and detailed documentation, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
+ Pour plus d’informations et une documentation détaillée, visitez le[Aspose.Email pour la référence de l'API .NET](https://reference.aspose.com/email/net/).
 
 
-## FAQs
+## FAQ
 
-### What is Aspose.Email for .NET?
-Aspose.Email for .NET is a powerful library for working with email messages in .NET applications. It provides features for reading, writing, and converting emails.
+### Qu’est-ce qu’Aspose.Email pour .NET ?
+Aspose.Email pour .NET est une bibliothèque puissante permettant de travailler avec des messages électroniques dans des applications .NET. Il fournit des fonctionnalités pour lire, écrire et convertir des e-mails.
 
-### Can I track email document conversion progress with Aspose.Email for .NET?
-Yes, you can track email document conversion progress using custom progress handlers, as demonstrated in this article.
+### Puis-je suivre la progression de la conversion des documents électroniques avec Aspose.Email pour .NET ?
+Oui, vous pouvez suivre la progression de la conversion des documents électroniques à l'aide de gestionnaires de progression personnalisés, comme démontré dans cet article.
 
-### Is Aspose.Email for .NET easy to integrate into my C# project?
-Yes, Aspose.Email for .NET is easy to integrate into C# projects. You can download and install the library from the website.
+### Aspose.Email pour .NET est-il facile à intégrer dans mon projet C# ?
+Oui, Aspose.Email pour .NET est facile à intégrer dans les projets C#. Vous pouvez télécharger et installer la bibliothèque à partir du site Web.
 
-### Are there other libraries for working with emails in C#?
-Yes, there are other libraries, but Aspose.Email for .NET is known for its comprehensive features and ease of use.
+### Existe-t-il d'autres bibliothèques pour travailler avec des e-mails en C# ?
+Oui, il existe d'autres bibliothèques, mais Aspose.Email pour .NET est connu pour ses fonctionnalités complètes et sa facilité d'utilisation.
 
-### Where can I find more tutorials and examples for Aspose.Email for .NET?
-You can explore the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) for tutorials, examples, and detailed documentation.
+### Où puis-je trouver plus de didacticiels et d’exemples pour Aspose.Email pour .NET ?
+Vous pouvez explorer le[Aspose.Email pour la référence de l'API .NET](https://reference.aspose.com/email/net/)pour des tutoriels, des exemples et une documentation détaillée.
 
-Now, you're well-equipped to handle email document conversion progress in your C# applications with confidence. Happy coding!
+Vous êtes désormais bien équipé pour gérer en toute confiance la progression de la conversion des documents de courrier électronique dans vos applications C#. Bon codage !

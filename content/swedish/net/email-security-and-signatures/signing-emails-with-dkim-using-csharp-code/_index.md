@@ -1,32 +1,32 @@
 ---
-title: Signing Emails with DKIM using C# Code
-linktitle: Signing Emails with DKIM using C# Code
+title: Signera e-postmeddelanden med DKIM med C#-kod
+linktitle: Signera e-postmeddelanden med DKIM med C#-kod
 second_title: Aspose.Email .NET Email Processing API
-description: Learn to secure emails with DKIM using C# & Aspose.Email for .NET. Step-by-step guide with source code. Enhance email trust & authenticity.
+description: Lär dig att säkra e-postmeddelanden med DKIM med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod. Förbättra e-postförtroende och autenticitet.
 type: docs
 weight: 11
 url: /sv/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
 
-In today's digital world, ensuring the authenticity and integrity of email communications is of paramount importance. One way to achieve this is by using DomainKeys Identified Mail (DKIM) signatures. In this step-by-step guide, we will explore how to sign emails with DKIM using C# and the powerful Aspose.Email for .NET library.
+I dagens digitala värld är det av största vikt att säkerställa äktheten och integriteten hos e-postkommunikation. Ett sätt att uppnå detta är att använda DomainKeys Identified Mail (DKIM)-signaturer. I den här steg-för-steg-guiden kommer vi att utforska hur du signerar e-postmeddelanden med DKIM med C# och det kraftfulla Aspose.Email for .NET-biblioteket.
 
-## Introduction to DKIM
+## Introduktion till DKIM
 
-### What is DKIM?
-DKIM stands for DomainKeys Identified Mail. It is an email authentication method that allows the sender to digitally sign an email, providing a cryptographic signature that verifies the email's authenticity.
+### Vad är DKIM?
+DKIM står för DomainKeys Identified Mail. Det är en e-postautentiseringsmetod som låter avsändaren digitalt signera ett e-postmeddelande, vilket ger en kryptografisk signatur som verifierar e-postmeddelandets äkthet.
 
-### Why is DKIM Important?
-DKIM helps in preventing email spoofing and phishing attacks by ensuring that incoming emails are from legitimate sources and haven't been tampered with during transit.
+### Varför är DKIM viktigt?
+DKIM hjälper till att förhindra e-postspoofing och nätfiskeattacker genom att se till att inkommande e-postmeddelanden kommer från legitima källor och inte har manipulerats under transporten.
 
-## Prerequisites
+## Förutsättningar
 
-Before we begin, make sure you have the following prerequisites in place:
+Innan vi börjar, se till att du har följande förutsättningar på plats:
 
-1. Aspose.Email for .NET: Ensure you have the Aspose.Email for .NET library installed in your project. You can download it from [here](https://releases.aspose.com/email/net/).
+1.  Aspose.Email for .NET: Se till att du har Aspose.Email for .NET-biblioteket installerat i ditt projekt. Du kan ladda ner den från[här](https://releases.aspose.com/email/net/).
 
-2. DKIM Private Key: You will need a DKIM private key to sign your emails. Make sure you have it ready. 
+2. DKIM Privat nyckel: Du behöver en DKIM privat nyckel för att signera dina e-postmeddelanden. Se till att du har den redo. 
 
-## Step 1: Initialize DKIM Parameters
+## Steg 1: Initiera DKIM-parametrar
 
 ```csharp
 string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
@@ -37,9 +37,9 @@ signInfo.Headers.Add("From");
 signInfo.Headers.Add("Subject");
 ```
 
-In this step, we initialize the DKIM parameters. We load the private key from the file, specify the selector and domain, and list the headers that should be included in the DKIM signature.
+I det här steget initierar vi DKIM-parametrarna. Vi laddar den privata nyckeln från filen, anger väljaren och domänen och listar de rubriker som ska inkluderas i DKIM-signaturen.
 
-## Step 2: Create and Prepare the Email
+## Steg 2: Skapa och förbered e-postmeddelandet
 
 ```csharp
 MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
@@ -47,17 +47,17 @@ mailMessage.Subject = "Signed DKIM message text body";
 mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-Here, we create an instance of the `MailMessage` class and set the sender, recipient, subject, and body of the email.
+Här skapar vi en instans av`MailMessage` klass och ange avsändare, mottagare, ämne och brödtext för e-postmeddelandet.
 
-## Step 3: Sign the Email
+## Steg 3: Signera e-postmeddelandet
 
 ```csharp
 MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-Now, we sign the email using the DKIM parameters and private key we initialized earlier.
+Nu signerar vi e-postmeddelandet med DKIM-parametrarna och den privata nyckeln som vi initierade tidigare.
 
-## Step 4: Send the Signed Email
+## Steg 4: Skicka det signerade e-postmeddelandet
 
 ```csharp
 try
@@ -67,12 +67,12 @@ try
 }
 finally
 {
-    // Cleanup code, if any
+    // Rengöringskod, om någon
 }
 ```
-In this step, we send the signed email using an SMTP client. Ensure you replace `"your.email@gmail.com"` and `"your.password"` with your Gmail credentials.
+ I det här steget skickar vi det signerade e-postmeddelandet med en SMTP-klient. Se till att du byter ut`"your.email@gmail.com"` och`"your.password"` med dina Gmail-uppgifter.
 
-## Compelete Source Code
+## Komplett källkod
 ```csharp
 
 string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP()+ "key2.pem");
@@ -96,30 +96,30 @@ finally
 {}
 ```
 
-## Conclusion
+## Slutsats
 
-Signing emails with DKIM is a crucial step in ensuring the security and authenticity of your email communications. With the help of Aspose.Email for .NET and C#, you can easily implement DKIM signatures in your email sending process.
+Att signera e-postmeddelanden med DKIM är ett avgörande steg för att säkerställa säkerheten och äktheten för din e-postkommunikation. Med hjälp av Aspose.Email för .NET och C# kan du enkelt implementera DKIM-signaturer i din e-postsändningsprocess.
 
 ---
 
-## Frequently Asked Questions
+## Vanliga frågor
 
-### Q1: What is DKIM, and why is it important for email security?
+### F1: Vad är DKIM och varför är det viktigt för e-postsäkerhet?
 
-DKIM stands for DomainKeys Identified Mail, and it is important for email security because it verifies the authenticity of email messages, preventing spoofing and phishing.
+DKIM står för DomainKeys Identified Mail, och det är viktigt för e-postsäkerhet eftersom det verifierar äktheten av e-postmeddelanden, vilket förhindrar spoofing och nätfiske.
 
-### Q2: How do I obtain a DKIM private key?
+### F2: Hur får jag en privat DKIM-nyckel?
 
-You can obtain a DKIM private key through your email service provider or by generating one using cryptographic tools.
+Du kan få en privat DKIM-nyckel genom din e-postleverantör eller genom att skapa en med kryptografiska verktyg.
 
-### Q3: Can I use Aspose.Email for .NET with other email providers besides Gmail?
+### F3: Kan jag använda Aspose.Email för .NET med andra e-postleverantörer förutom Gmail?
 
-Yes, Aspose.Email for .NET can be used with various email providers, not limited to Gmail.
+Ja, Aspose.Email för .NET kan användas med olika e-postleverantörer, inte begränsat till Gmail.
 
-### Q4: What headers should I include in the DKIM signature?
+### F4: Vilka rubriker ska jag inkludera i DKIM-signaturen?
 
-Common headers to include in the DKIM signature are "From," "Subject," and any other headers that are important for email authentication.
+Vanliga rubriker att inkludera i DKIM-signaturen är "Från", "Ämne" och alla andra rubriker som är viktiga för e-postautentisering.
 
-### Q5: Is DKIM the only method for email authentication?
+### F5: Är DKIM den enda metoden för e-postautentisering?
 
-No, there are other methods like SPF and DMARC that are used in conjunction with DKIM for enhanced email security.
+Nej, det finns andra metoder som SPF och DMARC som används tillsammans med DKIM för förbättrad e-postsäkerhet.

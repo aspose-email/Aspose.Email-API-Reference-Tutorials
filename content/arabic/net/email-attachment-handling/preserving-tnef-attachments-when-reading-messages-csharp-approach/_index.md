@@ -1,63 +1,63 @@
 ---
-title: تثبيت Aspose.Email لـ .NET
-linktitle: للبدء، تحتاج إلى تثبيت Aspose.Email لمكتبة .NET. يمكنك تنزيله من
-second_title: Aspose.Releases
-description: أو استخدم NuGet Package Manager في Visual Studio.
+title: الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#
+linktitle: الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#
+second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
+description: تعرف على كيفية الحفاظ على مرفقات TNEF باستخدام Aspose.Email لـ .NET في هذا الدليل خطوة بخطوة مع التعليمات البرمجية المصدر.
 type: docs
 weight: 15
 url: /ar/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
 
-## إنشاء مشروع .NET جديد
+## مقدمة إلى مرفقات TNEF
 
-افتح Visual Studio وقم بإنشاء مشروع .NET جديد.
+TNEF، المعروف أيضًا باسم "winmail.dat"، هو تنسيق مرفق بريد إلكتروني خاص يستخدمه Microsoft Outlook وExchange. فهو يقوم بتغليف عناصر مختلفة مثل النص المنسق والصور المضمنة وحتى معلومات التقويم. ومع ذلك، عندما يتم نقل رسائل البريد الإلكتروني عبر عملاء أو منصات بريد إلكتروني مختلفة، قد تصبح مرفقات TNEF في بعض الأحيان غير قابلة للقراءة أو لا يمكن الوصول إليها. هذا هو المكان الذي يأتي فيه Aspose.Email for .NET للإنقاذ.
 
-## قم بتثبيت Aspose.Email لمكتبة .NET باستخدام NuGet Package Manager.
+## الشروع في العمل مع Aspose.Email لـ .NET
 
-أنت الآن جاهز لبدء البرمجة!
+Aspose.Email for .NET هي مكتبة شاملة توفر نطاقًا واسعًا من الوظائف للتعامل مع رسائل البريد الإلكتروني ومرفقاتها. للبدء، تحتاج إلى:
 
-1. تحميل وتحليل رسالة البريد الإلكتروني[تحميل رسالة بريد إلكتروني](https://releases.aspose.com/email/net)قبل أن نتمكن من تعديل الخطوط في البريد الإلكتروني، نحتاج إلى تحميل رسالة بريد إلكتروني. يمكنك تحميل بريد إلكتروني من مصادر مختلفة، مثل ملف أو دفق أو حتى خادم بريد.
+1.  تنزيل وتثبيت Aspose.Email: قم بزيارة[هنا](https://releases.aspose.com/email/net) لتنزيل وتثبيت أحدث إصدار من Aspose.Email لـ .NET.
 
-2.  قم بتحميل رسالة البريد الإلكتروني
+2. إنشاء مشروع جديد: افتح بيئة Visual Studio الخاصة بك وقم بإنشاء مشروع C# جديد.
 
-3. تحليل نص الرسالة
+3. إضافة مرجع: أضف مرجعًا إلى مجموعة Aspose.Email التي تم تنزيلها في مشروعك.
 
-## بمجرد تحميل البريد الإلكتروني، يمكنك الوصول إلى أجزائه المختلفة، بما في ذلك نص HTML. يتيح لنا تحليل نص HTML إجراء تغييرات على الخط.
+## تحميل وتحليل رسائل البريد الإلكتروني
 
- تحليل نص HTML
+للعمل مع رسائل البريد الإلكتروني، تحتاج أولاً إلى تحميل البريد الإلكتروني وتحليله. يوفر Aspose.Email فئات تسمح لك بتحميل رسائل البريد الإلكتروني من مصادر مختلفة، بما في ذلك الملفات والتدفقات وحتى خوادم البريد الإلكتروني. فيما يلي مثال لكيفية تحميل رسالة بريد إلكتروني من ملف:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//تعديل الخطوط في البريد الإلكتروني
+// قم بتحميل البريد الإلكتروني بمرفق TNEF
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## فهم أنماط الخطوط
+## تحديد واستخراج مرفقات TNEF
 
-يتم تعريف الخطوط في رسائل البريد الإلكتروني بتنسيق HTML باستخدام أنماط CSS. لتغيير الخطوط، تحتاج إلى تعديل أنماط CSS المرتبطة بمحتوى HTML الخاص بالبريد الإلكتروني.
+بمجرد تحميل رسالة البريد الإلكتروني، فإن الخطوة التالية هي تحديد مرفقات TNEF واستخراجها. يتم تغليف مرفقات TNEF ضمن ملف "winmail.dat" خاص. يعمل Aspose.Email على تبسيط عملية تحديد هذه المرفقات واستخراجها:
 
 ```csharp
-//تغيير الخطوط برمجيا
+// تحقق مما إذا كانت الرسالة تحتوي على مرفقات TNEF
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //لنفترض أنك تريد تغيير خط الفقرة في نص HTML للبريد الإلكتروني. وإليك كيف يمكنك القيام بذلك:
+        // استخراج مرفق TNEF
         var tnefAttachment = attachment;
 
-        // تغيير خط الفقرة
-        //التحويل إلى تنسيق MHT
+        //الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.Properties...
     }
 }
 ```
 
-## إنشاء رسالة MHT
+## الحفاظ على مرفقات TNEF
 
-لتحويل البريد الإلكتروني إلى تنسيق MHT، تحتاج إلى إنشاء رسالة بريد إلكتروني بتنسيق MHT باستخدام Aspose.Email.
+يتضمن الاحتفاظ بمرفقات TNEF التأكد من احتفاظ المرفقات المستخرجة بتنسيقها ومحتواها الأصليين. يوفر Aspose.Email طرقًا وخصائص للوصول إلى العناصر المختلفة داخل مرفق TNEF، مثل النص والصور المضمنة وبيانات التقويم.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -65,9 +65,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-##  إنشاء رسالة بريد إلكتروني بتنسيق MHT
+## أكمل مثال كود C#
 
-حفظ الرسالة بتنسيق MHT
+فيما يلي مثال كامل لكيفية استخدام Aspose.Email لـ .NET لقراءة مرفقات TNEF والاحتفاظ بها:
 
 ```csharp
 using Aspose.Email;
@@ -79,24 +79,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            //وأخيرًا، احفظ الرسالة بتنسيق MHT في ملف.
+            // قم بتحميل البريد الإلكتروني بمرفق TNEF
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // احفظ الرسالة بتنسيق MHT
+			 // تحقق مما إذا كانت الرسالة تحتوي على مرفقات TNEF
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					//كود المصدر الكامل
+					// استخراج مرفق TNEF
 					var tnefAttachment = attachment;
 
-					//إليك كود المصدر الكامل الذي يجمع كل شيء معًا:
-					//خاتمة
+					//الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+					// tnefAttachment.Properties...
 				}
 			}
-			//في هذا الدليل، اكتشفنا كيفية تغيير الخطوط أثناء تحويل MHT باستخدام Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك تحويل رسائل البريد الإلكتروني بسلاسة إلى تنسيق MHT مع الحفاظ على أنماط الخط المطلوبة.
+			// الحفاظ على مرفقات TNEF
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -105,30 +105,30 @@ namespace TnefAttachmentExample
 }
 ```
 
+## نصائح للتعامل مع مرفقات TNEF
+
+- تحقق دائمًا مما إذا كان البريد الإلكتروني يحتوي على مرفقات TNEF قبل محاولة الاستخراج.
+- استخدم أساليب Aspose.Email للوصول إلى العناصر المختلفة داخل مرفقات TNEF والحفاظ عليها.
+- تأكد من أن لديك أحدث إصدار من Aspose.Email لـ .NET للاستفادة من أحدث الميزات.
+
+## خاتمة
+
+في هذا الدليل، اكتشفنا كيفية الحفاظ على مرفقات TNEF عند قراءة الرسائل باستخدام لغة البرمجة C# وAspose.Email لـ .NET. بفضل مجموعة الأدوات الشاملة، يعمل Aspose.Email على تبسيط عملية تحديد مرفقات TNEF واستخراجها والحفاظ عليها، مما يضمن بقاء المعلومات المهمة داخل رسائل البريد الإلكتروني سليمة ويمكن الوصول إليها.
+
 ## الأسئلة الشائعة
 
-- هل يمكنني تحويل عدة رسائل بريد إلكتروني إلى تنسيق MHT دفعة واحدة؟
-- نعم، يمكنك التنقل عبر مجموعة من رسائل البريد الإلكتروني وتطبيق نفس تغييرات الخط على كل رسالة قبل تحويلها إلى تنسيق MHT.
-- هل يدعم Aspose.Email تنسيقات البريد الإلكتروني الأخرى أيضًا؟
+### كيف يمكنني تنزيل Aspose.Email لـ .NET؟
 
-## نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة، بما في ذلك EML وMSG وPST والمزيد.
+ يمكنك تنزيل Aspose.Email for .NET من صفحة الإصدارات:[هنا](https://releases.aspose.com/email/net)
 
-هل من الممكن تخصيص تغييرات الخط بشكل أكبر؟
+### هل يمكنني استخدام Aspose.Email للعمل مع تنسيقات البريد الإلكتروني الأخرى؟
 
-## قطعاً! يمكنك استكشاف المزيد من أنماط CSS لتخصيص الخطوط، مثل حجم الخط واللون والمحاذاة.
+نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة، بما في ذلك PST وEML وMSG والمزيد.
 
-### هل يمكنني استخدام Aspose.Email للمشاريع التجارية؟
+### هل Aspose.Email مناسب لكل من التطبيقات الصغيرة والكبيرة الحجم؟
 
-نعم، يمكن استخدام Aspose.Email لكل من المشاريع الشخصية والتجارية، وفقًا لشروط الترخيص.[ تذكر أن هذا الدليل يقدم نظرة عامة، ويمكنك استكشاف المزيد من خلال الرجوع إلى](https://releases.aspose.com/email/net)
+قطعاً! تم تصميم Aspose.Email لتلبية مجموعة واسعة من التطبيقات، بدءًا من المشاريع الصغيرة وحتى الحلول على مستوى المؤسسات.
 
-### مرجع Aspose.Email API
+### هل يتم تحديث Aspose.Email بانتظام؟
 
-وتجربة تقنيات تخصيص الخطوط المختلفة. ترميز سعيد!
-
-###  دليل C# - استخراج رؤوس البريد الإلكتروني
-
- دليل C# - استخراج رؤوس البريد الإلكتروني
-
-###  Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-
- تعرف على كيفية استخراج رؤوس البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لتحليل البريد الإلكتروني بكفاءة.
+نعم، يحتفظ Aspose بتحديثات منتظمة لضمان التوافق مع أحدث التقنيات والمنصات.

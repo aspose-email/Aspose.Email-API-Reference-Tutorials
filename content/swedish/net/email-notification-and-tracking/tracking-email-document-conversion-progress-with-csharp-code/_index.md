@@ -1,30 +1,30 @@
 ---
-title: Tracking Email Document Conversion Progress with C# Code
-linktitle: Tracking Email Document Conversion Progress with C# Code
+title: Spåra e-postdokumentkonvertering med C#-kod
+linktitle: Spåra e-postdokumentkonvertering med C#-kod
 second_title: Aspose.Email .NET Email Processing API
-description: Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!
+description: Lär dig hur du implementerar e-postmeddelanden och spårning med Aspose.Email för .NET. Steg-för-steg guide med kodexempel. Förbättra din e-postkommunikation idag!
 type: docs
 weight: 12
 url: /sv/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-In today's digital age, email communication plays a crucial role in both personal and professional spheres. As a programmer, you might have encountered the need to handle and manipulate email messages programmatically. One common task is tracking the progress of email document conversion, and in this article, we will guide you through the process step by step using C# and Aspose.Email for .NET.
+dagens digitala tidsålder spelar e-postkommunikation en avgörande roll i både personlig och professionell sfär. Som programmerare kan du ha stött på behovet av att hantera och manipulera e-postmeddelanden programmatiskt. En vanlig uppgift är att spåra framstegen för konvertering av e-postdokument, och i den här artikeln guidar vi dig genom processen steg för steg med C# och Aspose.Email för .NET.
 
-## Introduction to Aspose.Email for .NET
+## Introduktion till Aspose.Email för .NET
 
-Before diving into the code, let's have a brief introduction to Aspose.Email for .NET. This powerful library provides a wide range of features for working with email messages, including reading, writing, and converting emails in various formats. In our case, we will focus on email document conversion.
+Innan vi dyker in i koden, låt oss ha en kort introduktion till Aspose.Email för .NET. Detta kraftfulla bibliotek tillhandahåller ett brett utbud av funktioner för att arbeta med e-postmeddelanden, inklusive att läsa, skriva och konvertera e-postmeddelanden i olika format. I vårt fall kommer vi att fokusera på konvertering av e-postdokument.
 
-## Setting up Your Environment
+## Ställa in din miljö
 
-To get started, you'll need to set up your development environment. Ensure you have the following prerequisites in place:
+För att komma igång måste du konfigurera din utvecklingsmiljö. Se till att du har följande förutsättningar:
 
-- Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net/).
+-  Aspose.Email för .NET-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/email/net/).
 
-Now, let's get into the code. We'll create a step-by-step guide on tracking email document conversion progress using the provided C# source code.
+Låt oss nu gå in på koden. Vi kommer att skapa en steg-för-steg-guide för att spåra framsteg för konvertering av e-postdokument med hjälp av den medföljande C#-källkoden.
 
-## Step 1: Loading the Email Message
+## Steg 1: Laddar e-postmeddelandet
 
-We begin by loading the email message from a file. Make sure to replace `"Your Document Directory"` with the actual path to your document directory.
+ Vi börjar med att ladda e-postmeddelandet från en fil. Se till att byta ut`"Your Document Directory"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -32,9 +32,9 @@ var fileName = dataDir + "test.eml";
 MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## Step 2: Defining a Custom Progress Handler
+## Steg 2: Definiera en anpassad framstegshanterare
 
-In this step, we set up a custom progress handler to monitor the conversion progress. The `ShowEmlConversionProgress` method will be called during the conversion process to provide information about the progress.
+ I det här steget ställer vi in en anpassad förloppshanterare för att övervaka konverteringsförloppet. De`ShowEmlConversionProgress` metod kommer att anropas under konverteringsprocessen för att ge information om framstegen.
 
 ```csharp
 private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
@@ -65,9 +65,9 @@ private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 }
 ```
 
-## Step 3: Saving the Email Message with Progress Tracking
+## Steg 3: Spara e-postmeddelandet med förloppsspårning
 
-Now, let's save the email message while tracking the progress. We use the `EmlSaveOptions` class with a custom progress handler.
+ Låt oss nu spara e-postmeddelandet medan vi spårar framstegen. Vi använder`EmlSaveOptions` klass med en anpassad framstegshanterare.
 
 ```csharp
 MemoryStream ms = new MemoryStream();
@@ -76,28 +76,28 @@ opt.CustomProgressHandler = new ConversionProgressEventHandler(ShowEmlConversion
 msg.Save(ms, opt);
 ```
 
-## Conclusion
+## Slutsats
 
-Congratulations! You've successfully implemented email document conversion progress tracking using C# and Aspose.Email for .NET. This capability can be valuable when dealing with large volumes of emails and document conversions in your applications.
+Grattis! Du har framgångsrikt implementerat spårning av framsteg för konvertering av e-postdokument med C# och Aspose.Email för .NET. Denna förmåga kan vara värdefull när du hanterar stora volymer e-postmeddelanden och dokumentkonverteringar i dina applikationer.
 
-For more information and detailed documentation, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
+ För mer information och detaljerad dokumentation, besök[Aspose.Email för .NET API-referens](https://reference.aspose.com/email/net/).
 
 
-## FAQs
+## Vanliga frågor
 
-### What is Aspose.Email for .NET?
-Aspose.Email for .NET is a powerful library for working with email messages in .NET applications. It provides features for reading, writing, and converting emails.
+### Vad är Aspose.Email för .NET?
+Aspose.Email för .NET är ett kraftfullt bibliotek för att arbeta med e-postmeddelanden i .NET-applikationer. Den tillhandahåller funktioner för att läsa, skriva och konvertera e-postmeddelanden.
 
-### Can I track email document conversion progress with Aspose.Email for .NET?
-Yes, you can track email document conversion progress using custom progress handlers, as demonstrated in this article.
+### Kan jag spåra framsteg för konvertering av e-postdokument med Aspose.Email för .NET?
+Ja, du kan spåra e-postdokumentkonvertering med hjälp av anpassade förloppshanterare, som visas i den här artikeln.
 
-### Is Aspose.Email for .NET easy to integrate into my C# project?
-Yes, Aspose.Email for .NET is easy to integrate into C# projects. You can download and install the library from the website.
+### Är Aspose.Email för .NET lätt att integrera i mitt C#-projekt?
+Ja, Aspose.Email för .NET är lätt att integrera i C#-projekt. Du kan ladda ner och installera biblioteket från webbplatsen.
 
-### Are there other libraries for working with emails in C#?
-Yes, there are other libraries, but Aspose.Email for .NET is known for its comprehensive features and ease of use.
+### Finns det andra bibliotek för att arbeta med e-post i C#?
+Ja, det finns andra bibliotek, men Aspose.Email för .NET är känt för sina omfattande funktioner och användarvänlighet.
 
-### Where can I find more tutorials and examples for Aspose.Email for .NET?
-You can explore the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) for tutorials, examples, and detailed documentation.
+### Var kan jag hitta fler handledningar och exempel för Aspose.Email för .NET?
+Du kan utforska[Aspose.Email för .NET API-referens](https://reference.aspose.com/email/net/)för handledningar, exempel och detaljerad dokumentation.
 
-Now, you're well-equipped to handle email document conversion progress in your C# applications with confidence. Happy coding!
+Nu är du väl rustad för att hantera framsteg för konvertering av e-postdokument i dina C#-applikationer med tillförsikt. Glad kodning!

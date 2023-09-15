@@ -1,35 +1,35 @@
 ---
-title: C# Approach - Extracting Decoded Header Values
-linktitle: C# Approach - Extracting Decoded Header Values
-second_title: Aspose.Email .NET Email Processing API
-description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
+title: C#-Ansatz – Extrahieren dekodierter Headerwerte
+linktitle: C#-Ansatz – Extrahieren dekodierter Headerwerte
+second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
+description: Erfahren Sie, wie Sie dekodierte E-Mail-Header-Werte in C# mit Aspose.Email für .NET extrahieren. Umfassende Anleitung mit Codebeispielen.
 type: docs
 weight: 17
 url: /de/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
+In diesem Tutorial führen wir Sie durch den Prozess der Verwendung von Aspose.Email für .NET zum Extrahieren dekodierter Headerwerte aus E-Mail-Nachrichten. Aspose.Email für .NET ist eine robuste Bibliothek, die es Entwicklern ermöglicht, mit verschiedenen Aspekten von E-Mail-Nachrichten zu arbeiten, einschließlich des Lesens und Bearbeitens von E-Mail-Headern.
 
-## Step 1: Download and Install Aspose.Email for .NET
+## Schritt 1: Laden Sie Aspose.Email für .NET herunter und installieren Sie es
 
-Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
+ Bevor wir beginnen, stellen Sie sicher, dass Aspose.Email für .NET installiert ist. Wenn Sie es noch nicht getan haben, können Sie die Bibliothek über den folgenden Link herunterladen:[Laden Sie Aspose.Email für .NET herunter](https://releases.aspose.com/email/net).
 
-## Step 2: Create a New C# Project
+## Schritt 2: Erstellen Sie ein neues C#-Projekt
 
-Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE) oder Ihrem bevorzugten Texteditor.
 
-## Step 3: Add a Reference to Aspose.Email
+## Schritt 3: Fügen Sie einen Verweis auf Aspose.Email hinzu
 
-In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
+ Um Aspose.Email in Ihrem Projekt verwenden zu können, müssen Sie einen Verweis auf hinzufügen`Aspose.Email` Montage. Hier ist wie:
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Add" > "Reference."
-3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
-4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
+2. Wählen Sie „Hinzufügen“ > „Referenz“.
+3. Klicken Sie im Fenster „Referenzmanager“ auf „Durchsuchen“ oder „Durchsuchen…“ und navigieren Sie zu dem Speicherort, an dem Sie Aspose.Email installiert haben.
+4.  Wählen Sie die passende Baugruppe für Ihr Projekt (z. B.`Aspose.Email.dll`) und klicken Sie auf „Hinzufügen“.
 
-## Step 4: Extract Decoded Header Values
+## Schritt 4: Dekodierte Header-Werte extrahieren
 
-Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
+Lassen Sie uns nun in den Code eintauchen, um dekodierte Header-Werte aus einer E-Mail-Nachricht zu extrahieren. In diesem Beispiel konzentrieren wir uns auf das Extrahieren des „Subject“-Headers.
 
 ```csharp
 using Aspose.Email;
@@ -39,7 +39,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Load the email message
+        // Laden Sie die E-Mail-Nachricht
 		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
 		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
 		Console.WriteLine(decodedValue);
@@ -48,32 +48,32 @@ class Program
 }
 ```
 
-In the code snippet above, we perform the following steps:
+Im obigen Codeausschnitt führen wir die folgenden Schritte aus:
 
-1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
-2. We create a `Main` method as the entry point of our application.
-3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
-5. We print the decoded Subject header to the console.
+1. Wir importieren notwendige Namespaces (`Aspose.Email` Und`Aspose.Email.Mail`).
+2.  Wir erstellen ein`Main` Methode als Einstiegspunkt unserer Anwendung.
+3.  Innerhalb der`Main`Methode verwenden wir die`MailMessage.Load` Methode zum Laden einer E-Mail-Nachricht aus einer Datei. Ersetzen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zu der E-Mail-Nachricht, die Sie verarbeiten möchten.
+4.  Wir benutzen das`Headers.GetDecodedValue` Methode zum Dekodieren des Subject-Headers.
+5. Wir geben den entschlüsselten Subject-Header an die Konsole aus.
 
-## Step 5: Run the Application
+## Schritt 5: Führen Sie die Anwendung aus
 
-Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
+ Kompilieren Sie Ihre Anwendung und führen Sie sie aus. Unbedingt austauschen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zu der E-Mail-Nachricht, die Sie verarbeiten möchten. Die Anwendung lädt die E-Mail, extrahiert den entschlüsselten Betreff-Header und zeigt ihn in der Konsole an.
 
 ## FAQs
 
-### How can I decode other email headers using Aspose.Email for .NET?
+### Wie kann ich andere E-Mail-Header mit Aspose.Email für .NET dekodieren?
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
+ Mit dem können Sie verschiedene E-Mail-Header wie „Von“, „An“, „Datum“ usw. entschlüsseln`Headers.GetDecodedValue` Methode. Geben Sie einfach den Header-Wert als Parameter für die Methode an.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Wo finde ich weitere Informationen zu Aspose.Email für .NET?
 
-For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
+ Ausführliche Dokumentation und Beispiele finden Sie im[Aspose.Email für .NET API-Referenz](https://reference.aspose.com/email/net).
 
-### Is Aspose.Email for .NET available for free?
+### Ist Aspose.Email für .NET kostenlos verfügbar?
 
-Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
+ Aspose.Email für .NET ist eine kommerzielle Bibliothek. Sie können seine Funktionen erkunden, indem Sie[Laden Sie die kostenlose Testversion herunter](https://releases.aspose.com/email/net).
 
-## Conclusion
+## Abschluss
 
-In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+In diesem Tutorial haben Sie gelernt, wie Sie Aspose.Email für .NET verwenden, um dekodierte Header-Werte aus E-Mail-Nachrichten zu extrahieren. Aspose.Email für .NET bietet einen umfassenden Satz an Tools, die es Entwicklern ermöglichen, effizient mit E-Mail-Nachrichten zu arbeiten, einschließlich der Handhabung von Headern.

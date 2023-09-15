@@ -1,63 +1,63 @@
 ---
-title: Aspose.Email for .NET'in Kurulumu
-linktitle: Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. adresinden indirebilirsiniz.
-second_title: Aspose.Release'ler
-description: veya Visual Studio'da NuGet Paket Yöneticisini kullanın.
+title: Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı
+linktitle: Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Kaynak kodlu bu adım adım kılavuzdan Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin.
 type: docs
 weight: 15
 url: /tr/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
 
-## Yeni Bir .NET Projesi Oluşturma
+## TNEF Eklerine Giriş
 
-Visual Studio'yu açın ve yeni bir .NET projesi oluşturun.
+"winmail.dat" olarak da bilinen TNEF, Microsoft Outlook ve Exchange tarafından kullanılan özel bir e-posta eki biçimidir. Biçimlendirilmiş metin, gömülü resimler ve hatta takvim bilgileri gibi çeşitli öğeleri kapsar. Ancak e-postalar farklı e-posta istemcileri veya platformları arasında aktarıldığında TNEF ekleri bazen okunamaz veya erişilemez hale gelebilir. Aspose.Email for .NET tam da bu noktada imdadımıza yetişiyor.
 
-## Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyin.
+## Aspose.Email for .NET'e Başlarken
 
-Artık kodlamaya başlamaya hazırsınız!
+Aspose.Email for .NET, e-postalar ve ekleriyle çalışmak için çok çeşitli işlevler sağlayan kapsamlı bir kütüphanedir. Başlamak için şunları yapmanız gerekir:
 
-1. E-posta Mesajını Yükleme ve Ayrıştırma[E-posta Mesajı Yükleme](https://releases.aspose.com/email/net)E-postadaki yazı tiplerini değiştirebilmemiz için önce bir e-posta mesajı yüklememiz gerekiyor. Dosya, akış ve hatta posta sunucusu gibi çeşitli kaynaklardan bir e-posta yükleyebilirsiniz.
+1.  Aspose.Email'i indirin ve yükleyin: Ziyaret edin[Burada](https://releases.aspose.com/email/net) Aspose.Email for .NET'in en son sürümünü indirip yüklemek için.
 
-2.  E-posta mesajını yükle
+2. Yeni Bir Proje Oluşturun: Visual Studio ortamınızı açın ve yeni bir C# projesi oluşturun.
 
-3. Mesaj Gövdesini Ayrıştırma
+3. Referans Ekle: İndirdiğiniz Aspose.Email derlemesine projenize bir referans ekleyin.
 
-## E-posta yüklendikten sonra HTML gövdesi de dahil olmak üzere farklı bölümlerine erişebilirsiniz. HTML gövdesini ayrıştırmak yazı tipi değişiklikleri yapmamıza olanak tanır.
+## E-posta Mesajlarını Yükleme ve Ayrıştırma
 
- HTML gövdesini ayrıştır
+E-posta iletileriyle çalışmak için öncelikle e-postayı yüklemeniz ve ayrıştırmanız gerekir. Aspose.Email; dosyalar, akışlar ve hatta e-posta sunucuları da dahil olmak üzere çeşitli kaynaklardan e-posta yüklemenize olanak tanıyan sınıflar sağlar. Bir dosyadan e-posta mesajını nasıl yükleyebileceğinize dair bir örnek:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-//E-postadaki Yazı Tiplerini Değiştirme
+// E-postayı TNEF ekiyle yükleyin
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Yazı Tipi Stillerini Anlamak
+## TNEF Eklerini Tanımlama ve Çıkarma
 
-HTML e-postalarındaki yazı tipleri CSS stilleri kullanılarak tanımlanır. Yazı tiplerini değiştirmek için e-postanın HTML içeriğiyle ilişkili CSS stillerini değiştirmeniz gerekir.
+E-posta mesajını yükledikten sonraki adım, TNEF eklerini tanımlayıp çıkarmaktır. TNEF ekleri özel bir "winmail.dat" dosyası içinde kapsüllenir. Aspose.Email bu eklerin tanımlanması ve çıkarılması sürecini basitleştirir:
 
 ```csharp
-//Yazı Tiplerini Programlı Olarak Değiştirme
+// Mesajın TNEF ekleri olup olmadığını kontrol edin
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //Diyelim ki e-postanın HTML gövdesindeki bir paragrafın yazı tipini değiştirmek istiyorsunuz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+        // TNEF ekini çıkarın
         var tnefAttachment = attachment;
 
-        // Paragrafın yazı tipini değiştirme
-        //MHT Formatına Dönüştürme
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
     }
 }
 ```
 
-## MHT Mesajı Oluşturma
+## TNEF Eklerini Koruma
 
-E-postayı MHT formatına dönüştürmek için Aspose.Email'i kullanarak MHT formatlı bir e-posta mesajı oluşturmanız gerekir.
+TNEF eklerinin korunması, çıkarılan eklerin orijinal biçimlendirmesini ve içeriğini korumasını sağlamayı içerir. Aspose.Email, bir TNEF eki içindeki metin, gömülü resimler ve takvim verileri gibi çeşitli öğelere erişim için yöntemler ve özellikler sağlar.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -65,9 +65,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-##  MHT biçimli e-posta mesajı oluşturun
+## Tam C# Kod Örneği
 
-Mesajı MHT Formatına Kaydetme
+TNEF eklerini okumak ve korumak için Aspose.Email for .NET'i nasıl kullanabileceğinizi gösteren tam bir örnek:
 
 ```csharp
 using Aspose.Email;
@@ -79,24 +79,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            //Son olarak MHT formatlı mesajı bir dosyaya kaydedin.
+            // E-postayı TNEF ekiyle yükleyin
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Mesajı MHT formatında kaydedin
+			 // Mesajın TNEF ekleri olup olmadığını kontrol edin
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					//Kaynak Kodunu Tamamlayın
+					// TNEF ekini çıkarın
 					var tnefAttachment = attachment;
 
-					//İşte her şeyi bir araya getiren kaynak kodun tamamı:
-					//Çözüm
+					//TNEF özelliklerine erişin ve gerekirse değiştirin
+					// tnefAttachment.Özellikler...
 				}
 			}
-			//Bu kılavuzda Aspose.Email for .NET kullanarak MHT dönüşümü sırasında yazı tiplerinin nasıl değiştirileceğini araştırdık. Bu adımları izleyerek, istediğiniz yazı tipi stillerini korurken e-posta mesajlarını sorunsuz bir şekilde MHT formatına dönüştürebilirsiniz.
+			// TNEF Eklerini Koruma
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -105,30 +105,30 @@ namespace TnefAttachmentExample
 }
 ```
 
-## SSS
+## TNEF Eklerini Kullanmaya İlişkin İpuçları
 
-- Birden fazla e-postayı tek seferde MHT formatına dönüştürebilir miyim?
-- Evet, bir dizi e-posta mesajı arasında geçiş yapabilir ve MHT formatına dönüştürmeden önce her mesaja aynı yazı tipi değişikliklerini uygulayabilirsiniz.
-- Aspose.Email diğer e-posta formatlarını da destekliyor mu?
+- Çıkarmaya çalışmadan önce her zaman bir e-postanın TNEF ekleri içerip içermediğini kontrol edin.
+- TNEF eklerindeki çeşitli öğelere erişmek ve bunları korumak için Aspose.Email'in yöntemlerini kullanın.
+- En güncel özelliklerden yararlanmak için Aspose.Email for .NET'in en son sürümüne sahip olduğunuzdan emin olun.
 
-## Evet, Aspose.Email, EML, MSG, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler.
+## Çözüm
 
-Yazı tipi değişikliklerini daha da özelleştirmek mümkün mü?
+Bu kılavuzda, C# programlama dilini ve Aspose.Email for .NET kullanarak mesajları okurken TNEF eklerinin nasıl korunacağını araştırdık. Aspose.Email, kapsamlı araç seti ile TNEF eklerini tanımlama, çıkarma ve koruma sürecini basitleştirerek e-postalardaki önemli bilgilerin bozulmadan ve erişilebilir kalmasını sağlar.
 
-## Kesinlikle! Yazı tipi boyutu, rengi ve hizalaması gibi yazı tiplerini özelleştirmek için daha fazla CSS stili keşfedebilirsiniz.
+## SSS'ler
 
-### Aspose.Email'i ticari projeler için kullanabilir miyim?
+### Aspose.Email for .NET'i nasıl indirebilirim?
 
-Evet, Aspose.Email lisans koşullarına göre hem kişisel hem de ticari projeler için kullanılabilir.[ Bu kılavuzun genel bir genel bakış sağladığını ve aşağıdaki bilgilere başvurarak daha fazlasını keşfedebileceğinizi unutmayın.](https://releases.aspose.com/email/net)
+ Aspose.Email for .NET'i sürümler sayfasından indirebilirsiniz:[Burada](https://releases.aspose.com/email/net)
 
-### Aspose.Email API Referansı
+### Aspose.Email'i diğer e-posta formatlarıyla çalışmak için kullanabilir miyim?
 
-ve farklı yazı tipi özelleştirme tekniklerini denemek. Mutlu kodlama!
+Evet, Aspose.Email PST, EML, MSG ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler.
 
-###  C# Kılavuzu - E-posta Başlıklarını Çıkarma
+### Aspose.Email hem küçük hem de büyük ölçekli uygulamalar için uygun mudur?
 
- C# Kılavuzu - E-posta Başlıklarını Çıkarma
+Kesinlikle! Aspose.Email, küçük projelerden kurumsal düzeydeki çözümlere kadar geniş bir uygulama yelpazesine hitap edecek şekilde tasarlanmıştır.
 
-###  Aspose.Email .NET E-Posta İşleme API'si
+### Aspose.Email düzenli olarak güncelleniyor mu?
 
- Aspose.Email for .NET'i kullanarak C#'ta e-posta başlıklarını nasıl çıkaracağınızı öğrenin. Etkili e-posta analizi için kaynak kodlu adım adım kılavuz.
+Evet, Aspose en son teknolojiler ve platformlarla uyumluluğu sağlamak için düzenli güncellemeler sağlar.

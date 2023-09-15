@@ -1,86 +1,86 @@
 ---
-title: C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
-linktitle: Gömülü Eklere Giriş
-second_title: Gömülü ekler, bir e-posta iletisi içinde kapsüllenmiş dosyalardır ve alıcının, harici bağlantılara ihtiyaç duymadan dosyalara erişmesine olanak tanır. Bu ekler, e-posta görüşmesinin içeriğini korurken belgeleri paylaşırken özellikle yararlı olabilir.
-description: Aspose.Email for .NET'e Başlarken
+title: Aspose.Email ile E-posta Bildirimleri Gönderme
+linktitle: Aspose.Email ile E-posta Bildirimleri Gönderme
+second_title: Aspose.Email Java E-posta Yönetimi API'si
+description: Aspose.Email for Java ile e-posta bildirimlerini etkili bir şekilde göndermeyi öğrenin. Sorunsuz iletişim için kod örnekleri ve SSS içeren kapsamlı bir kılavuz.
 type: docs
 weight: 17
 url: /tr/java/sending-emails/sending-email-notifications/
 ---
 
-## Aspose.Email for .NET, .NET uygulamalarındaki e-posta işleme görevlerini basitleştiren güçlü bir kütüphanedir. MSG dosyaları da dahil olmak üzere çeşitli e-posta formatlarıyla çalışmak için kapsamlı destek sağlar. Başlamak için şu adımları izleyin:
+## giriiş
 
-Aspose.Email for .NET'i indirin ve yükleyin
+Aspose.Email for Java, e-posta bildirimlerini zahmetsizce göndermenizi sağlar. Bu kılavuzda Aspose.Email for Java'yı kullanarak adım adım e-posta bildirimlerinin nasıl gönderileceğini öğreneceksiniz.
 
-##  Kütüphaneyi adresinden indirebilirsiniz.
+## Önkoşullar
 
-.NET web sitesi için Aspose.Email
+Başlamadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
 
-1.  veya NuGet paket yöneticisini kullanın:
+1. Java Geliştirme Ortamı: Sisteminizde bir Java geliştirme ortamı kurun.
 
-2. Yeni Bir C# Projesi Oluşturun
+2. Aspose.Email for Java Kütüphanesi: Aspose.Email for Java kütüphanesini indirme bağlantısından indirin:
 
-   [Tercih ettiğiniz geliştirme ortamında yeni bir C# projesi oluşturarak başlayın.](https://releases.aspose.com/email/java/)
+   [Java İndirmek için Aspose.Email](https://releases.aspose.com/email/java/)
 
-   Aspose.Email'e Referans Ekle
+   İndirilen JAR dosyalarını, e-posta yönetimi için Java projenizin sınıf yoluna ekleyin.
 
-## Projenize Aspose.Email DLL dosyasına bir referans ekleyin.
+## 1. Adım: Java ortamınızı kurun
 
-MSG Dosyalarını Yükleme ve Ayrıştırma
+Java ve Aspose.Email for Java'nın geliştirme ortamınızda kurulu ve doğru şekilde yapılandırıldığını doğrulayın.
 
-## Gömülü ekleri çıkarmadan önce Aspose.Email'i kullanarak MSG dosyasını yükleyip ayrıştırmamız gerekiyor. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+## Adım 2: Yeni bir Java projesi oluşturun
 
- MSG dosyasını yükle
+Entegre Geliştirme Ortamınızda (IDE) yeni bir Java projesi başlatın.
 
-##  İleti özelliklerine erişme
+## 3. Adım: Aspose.Email for Java kütüphanesini ekleyin
 
- ...
+Daha önce belirtilen bağlantıdan Aspose.Email for Java kütüphanesini indirin. JAR dosyalarını projenizin sınıf yoluna ekleyin.
 
-## Gömülü Ekleri Çıkarma
+## Adım 4: Aspose.Email sınıflarını içe aktarın
 
-Artık MSG dosyasını yüklediğimize göre, gömülü ekleri çıkaralım:
+Java kodunuzda gerekli Aspose.Email sınıflarını içe aktarın:
 
 ```java
 import com.aspose.email.*;
 ```
 
-##  Gömülü ekleri çıkarın
+## Adım 5: Bir E-posta Mesajı Oluşturun
 
- Gömülü mesajı işle`MailMessage`Çıkarılan Ekleri Kaydetme
+E-posta mesajınızı kullanarak tasarlayın`MailMessage` sınıf. Bildirim e-postanızın konusunu, göndereni, alıcılarını ve içeriğini ayarlayın.
 
-## Gömülü ekleri işledikten sonra bunları istenen konuma kaydedebiliriz:
+## Adım 6: E-posta Bildirimini Gönderin
 
- Gömülü ekleri kaydet
+E-posta bildirimini göndermek için Aspose.Email for Java'nın e-posta gönderme özelliklerini kullanın:
 
 ```java
-//Çözüm
+// SMTP sunucu ayrıntılarınızla bir SMTP istemcisi oluşturun
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 
-//Bu eğitimde, C# ve Aspose.Email for .NET kitaplığını kullanarak MSG dosyalarından gömülü eklerin nasıl çıkarılacağını araştırdık. Burada özetlenen adımları izleyerek, ek çıkarma yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, e-posta içeriğini işleme şeklinizi geliştirebilirsiniz.
+// E-posta bildirimini gönder
 client.send(message);
 ```
 
-## SSS'ler
+## Adım 7: Programı tamamlayın
 
-Aspose.Email for .NET'i nasıl indirebilirim?
+İşte tam Java programı:
 
 ```java
 import com.aspose.email.*;
 
 public class EmailNotification {
     public static void main(String[] args) {
-        //Aspose.Email for .NET'i şu adresten indirebilirsiniz:
+        // Bildirim için bir e-posta mesajı oluşturun
         MailMessage message = new MailMessage();
         message.setSubject("Notification Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<html><body><p>This is an email notification.</p></body></html>");
 
-        //Aspose.Email web sitesi
+        // SMTP sunucu ayrıntılarınızla bir SMTP istemcisi oluşturun
         SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 
         try {
-            //Aspose.Email farklı e-posta formatlarıyla uyumlu mu?
+            // E-posta bildirimini gönder
             client.send(message);
             System.out.println("Email notification sent successfully.");
         } catch (Exception ex) {
@@ -90,22 +90,22 @@ public class EmailNotification {
 }
 ```
 
-## Evet, Aspose.Email, MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatları için kapsamlı destek sağlar.
+## SSS (Sık Sorulan Sorular)
 
-### Aspose.Email'i hem masaüstü hem de web uygulamalarında kullanabilir miyim?
-   - Kesinlikle! Aspose.Email for .NET hem masaüstü hem de web uygulamalarında kullanılabilir, bu da onu e-posta işleme ihtiyaçlarınız için çok yönlü bir seçim haline getirir.
+### E-posta bildirimleri nedir?
+   - E-posta bildirimleri, alıcıları hesap etkinliği, sistem uyarıları veya hatırlatıcılar gibi belirli etkinlikler, güncellemeler veya eylemler hakkında bilgilendirmek için e-posta yoluyla gönderilen otomatik mesajlardır.
 
-### Lisanslamayla ilgili herhangi bir husus var mı?
-   -  Evet, Aspose.Email ticari bir kütüphanedir. Detaylı lisanslama bilgilerine şuradan ulaşabilirsiniz.
+### E-posta bildirimleri göndermek için neden Java için Aspose.Email kullanmalısınız?
+   - Aspose.Email for Java, Java uygulamalarında güvenilir ve etkili e-posta gönderme yetenekleri sunarak e-posta bildirimleri gönderme sürecini basitleştirir.
 
-### Web sitesi
-   - Daha fazla örnek ve belgeyi nerede bulabilirim?
+### SMTP istemcisi nedir ve neden ona ihtiyacım var?
+   - SMTP istemcisi, Basit Posta Aktarım Protokolü'nü (SMTP) kullanarak e-posta mesajları gönderen bir program veya kitaplıktır. E-posta göndermek için SMTP sunucunuzla iletişim kurmanız gerekir.
 
-###  Aspose.Email for .NET kullanımına ilişkin ayrıntılı örnekleri ve belgeleri şu adreste bulabilirsiniz:
-   - dokümantasyon
+### E-posta bildirimlerinin içeriğini özelleştirebilir miyim?
+   - Evet, gereksinimlerinize bağlı olarak HTML, düz metin veya her ikisinin bir kombinasyonunu kullanarak e-posta bildirimlerinin içeriğini ve yapısını tamamen özelleştirebilirsiniz.
 
-###  C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme
-   -  C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme
+### Aspose.Email for Java ile e-posta bildirimleri gönderme konusunda herhangi bir sınırlama var mı?
+   - Sınırlamalar e-posta servis sağlayıcınıza ve SMTP sunucunuza bağlı olabilir. Gönderme sınırlarına ve e-posta gönderme politikalarına uyduğunuzdan emin olun.
 
-###  Aspose.Email .NET E-Posta İşleme API'si
-   -  C#'ta Aspose.Email for .NET ile e-posta mesajlarını nasıl yükleyeceğinizi öğrenin. Etkili e-posta yönetimi için adım adım kılavuzu ve kaynak kodu örneklerini keşfedin.
+### E-posta bildirimi teslim durumunu ve takibini nasıl halledebilirim?
+   - Ek araçları veya hizmetleri kullanarak e-posta teslim durumu bildirimlerini (DSN'ler) yönetmek ve e-posta açılışlarını ve tıklamalarını izlemek için mantığı uygulayabilirsiniz.

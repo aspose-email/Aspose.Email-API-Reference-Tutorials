@@ -1,50 +1,50 @@
 ---
-title: "Aspose.Email"i arayın ve paketi yükleyin.
-linktitle: E-posta Yükleme
-second_title: HTML'yi düz metne dönüştürmeden önce Aspose.Email'i kullanarak bir e-posta mesajı yüklemeniz gerekir:
-description: Diğer ilgili kullanım ifadeleri
+title: C#'ta Alıcı Adreslerini Belirleme
+linktitle: C#'ta Alıcı Adreslerini Belirleme
+second_title: Aspose.Email .NET E-Posta İşleme API'si
+description: Aspose.Email for .NET kullanarak C#'ta alıcı adreslerini nasıl belirleyeceğinizi öğrenin. E-postaları verimli bir şekilde oluşturun, yapılandırın ve gönderin.
 type: docs
 weight: 19
 url: /tr/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
 
 
- E-posta mesajını yükle
+Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak C#'ta alıcı adreslerini belirleme sürecinde size yol gösterecektir. Aspose.Email, e-posta mesajlarıyla ve e-postayla ilgili çeşitli görevlerle çalışmanıza olanak tanıyan güçlü bir .NET API'sidir. Bu eğitimde, kütüphaneyi kullanarak bir e-posta mesajına alıcı adreslerinin nasıl ekleneceğini ele alacağız.
 
-## HTML Gövdesini Düz Metne Dönüştürme
+## Önkoşullar
 
-Aspose.Email dönüştürme sürecini basitleştirir:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Diğer ilgili kullanım ifadeleri
-2.  HTML gövdesini düz metne dönüştürün[İstisnaları İşleme](https://releases.aspose.com/email/net/).
+1. Visual Studio veya yüklü herhangi bir C# geliştirme ortamı.
+2.  Aspose.Email for .NET kütüphanesi. Şu adresten alabilirsiniz:[.NET Sürümleri için Aspose.Email](https://releases.aspose.com/email/net/).
 
-## Dönüşümlerle çalışırken çeşitli nedenlerden dolayı istisnalar ortaya çıkabilir. Sorunsuz bir deneyim sağlamak için istisnaları ele alın:
+## Adımlar
 
- Dönüşüm içeren kod
+Aspose.Email for .NET kullanarak C#'ta alıcı adreslerini belirtmek için şu adımları izleyin:
 
-###  İstisnaları ele alın
+### 1. Yeni bir C# projesi oluşturun
 
-Basit kod
+Geliştirme ortamınızda yeni bir C# projesi oluşturarak başlayın.
 
-### Aspose.Email for .NET kullanılarak bir HTML gövdesinin düz metne dönüştürülmesini gösteren örnek kod pasajını burada bulabilirsiniz:
+### 2. Aspose.Email'e referans ekleyin
 
-1.  E-posta mesajını yükle
-2.  HTML gövdesini düz metne dönüştürün
-3.  Sonucu göster
-4. Çözüm
+1. Henüz yapmadıysanız Aspose.Email for .NET kitaplığını indirip yükleyin.
+2. C# projenizi açın.
+3. Solution Explorer'da "Referanslar"a sağ tıklayın ve "Referans Ekle"yi seçin.
+4. İndirdiğiniz Aspose.Email DLL dosyalarına göz atın ve seçin.
 
-### Bu kılavuzda, Aspose.Email for .NET kullanarak bir e-postanın HTML gövdesini düz metne nasıl dönüştürebileceğimizi araştırdık. Bu teknik, e-posta içeriğinin çeşitli amaçlarla yönetilmesinde esneklik sunar. Aspose.Email'in yetenekleri dönüştürme sürecini basitleştirerek onu .NET geliştirme cephaneliğinizde değerli bir araç haline getirir.
+### 3. Gerekli ad alanlarını içe aktarın
 
-SSS
+Aspose.Email sınıflarını kullanmak için gerekli ad alanlarını C# kod dosyanıza aktarın:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-### Dönüştürme işlemi sırasında herhangi bir biçimlendirmeyi koruyabilir miyim?
+### 4. E-posta mesajını oluşturun ve yapılandırın
 
-Hayır, dönüştürme işlemi, düz metin oluşturmak için HTML biçimlendirmesini çıkarır. Yazı tipleri veya renkler gibi tüm biçimlendirmeler kaybolacaktır.`MailMessage`Aspose.Email e-postayla ilgili diğer görevler için uygun mu?
+ Yeni bir örneğini oluşturun`MailMessage` E-posta mesajınızı temsil edecek sınıf. E-postanın göndericisini ve konusunu yapılandırın:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -52,9 +52,9 @@ message.From = new MailAddress("sender@example.com");
 message.Subject = "Hello from Aspose.Email";
 ```
 
-### Kesinlikle. Aspose.Email, çeşitli formatlardaki e-posta mesajlarını gönderme, alma, ayrıştırma ve işleme dahil olmak üzere çok çeşitli işlevler sağlar.
+### 5. Alıcı adreslerini ekleyin
 
-Birden fazla e-postayı toplu olarak dönüştürebilir miyim?`To`, `Cc`Evet, bir e-posta koleksiyonu arasında geçiş yapabilir ve dönüştürme işlemini her birine uygulayabilirsiniz.`Bcc`Aspose.Email diğer metin tabanlı dönüşümleri destekliyor mu?`MailMessage`Evet, Aspose.Email, düz metinden HTML'ye ve RTF'ye dönüşümler de dahil olmak üzere çeşitli metin tabanlı dönüşümleri destekler.
+kullanarak alıcı adreslerini ekleyebilirsiniz.`To`, `Cc` , Ve`Bcc` özellikleri`MailMessage` sınıf. Alıcı adreslerini şu şekilde ekleyebilirsiniz:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
@@ -62,17 +62,17 @@ message.Cc.Add(new MailAddress("recipient2@example.com"));
 message.Bcc.Add(new MailAddress("recipient3@example.com"));
 ```
 
-### Aspose.Email için daha fazla örnek ve belgeyi nerede bulabilirim?
+### 6. E-posta mesajını tamamlayın
 
- Kapsamlı örnekler, API belgeleri ve kaynaklar için şu adresi ziyaret edin:
+E-posta gövdesini ve diğer gerekli içeriği e-posta mesajınıza ekleyin:
 
 ```csharp
 message.Body = "This is the email body.";
 ```
 
-### Aspose.Email for .NET API Referansı
+### 7. E-postayı gönderin
 
- sayfa.`SmtpClient` C# Kodunu Kullanarak Çeşitli Dosya Formatlarını Algılama
+ E-postayı göndermek için şunları kullanabilirsiniz:`SmtpClient` Aspose.Email tarafından sağlanan sınıf. SMTP sunucusu ayarlarını yapılandırın ve e-postayı gönderin:
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
@@ -81,28 +81,28 @@ client.SecurityOptions = SecurityOptions.Auto;
 client.Send(message);
 ```
 
-##  C# Kodunu Kullanarak Çeşitli Dosya Formatlarını Algılama
+## SSS
 
-###  Aspose.Email .NET E-Posta İşleme API'si`To`, `Cc`, or `Bcc` fields?
+###  Birden fazla alıcıyı nasıl ekleyebilirim?`To`, `Cc`, or `Bcc` fields?
 
- C# ve Aspose.Email for .NET kullanarak dosya formatlarını zahmetsizce tespit edin. Adım adım kılavuz ve kod örnekleri. Şimdi keşfedin!`Add`Bir geliştirici olarak, bir dosyanın formatını belirlemek, işleme ve değiştirme açısından çok önemlidir. Aspose.Email for .NET ile dosya formatlarını doğru şekilde tespit edebilirsiniz. Bu kılavuz, C# ve Aspose.Email for .NET kullanılarak çeşitli dosya formatlarının nasıl algılanacağı konusunda kaynak koduyla birlikte adım adım bir eğitim sağlar.`MailAddressCollection`Aspose.Email for .NET'e giriş
+ numaralı telefonu arayarak birden fazla alıcı ekleyebilirsiniz.`Add` ilgili yöntemde birden çok kez`MailAddressCollection`:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
 message.To.Add(new MailAddress("recipient2@example.com"));
 ```
 
-### Aspose.Email for .NET, geliştiricilerin .NET uygulamaları içerisinde e-posta mesajları, ekler ve daha fazlasıyla çalışmasına olanak tanıyan güçlü bir kütüphanedir.
+### Alıcı adlarını e-posta adresleriyle birlikte belirtebilir miyim?
 
-Dosya Formatlarını Neden Algılamalı?
+Evet, alıcıları eklerken hem alıcının adını hem de e-posta adresini belirtebilirsiniz:
 
 ```csharp
 message.To.Add(new MailAddress("recipient@example.com", "Recipient Name"));
 ```
 
-### Dosya formatlarının tespiti, dosyaların doğru şekilde işlenmesini ve işlenmesini sağlamak için çok önemlidir. Bu bilgi, geliştirme sırasında bilinçli kararlar alınmasına yardımcı olur.
+### E-posta gönderirken istisnaları nasıl ele alacağım?
 
-Başlarken
+E-posta gönderimi sırasında oluşabilecek istisnaları ele almak için try-catch bloklarını kullanabilirsiniz:
 
 ```csharp
 try
@@ -116,6 +116,6 @@ catch (Exception ex)
 }
 ```
 
-Geliştirme Ortamınızı Kurma[Aşağıdakilere sahip olduğunuzdan emin olun:](https://reference.aspose.com/email/net/).
+ Aspose.Email for .NET hakkında daha fazla bilgi ve gelişmiş özellikler için bkz.[API Referanslarını Aspose Edin](https://reference.aspose.com/email/net/).
 
-Visual Studio veya tercih ettiğiniz IDE
+Bu, Aspose.Email for .NET kullanılarak C#'ta alıcı adreslerinin belirlenmesine ilişkin kılavuzun sonuncusudur. Kütüphanenin özelliklerini kullanarak e-posta mesajı oluşturmayı, alıcı adreslerini eklemeyi ve e-postayı göndermeyi öğrendiniz.

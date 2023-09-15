@@ -1,38 +1,38 @@
 ---
-title: Aspose.Email 文档
-linktitle: 提取嵌入对象 - C# 教程
-second_title: 提取嵌入对象 - C# 教程
-description: Aspose.Email .NET 电子邮件处理 API
+title: 在 Aspose.Email 中从电子邮件中提取附件
+linktitle: 在 Aspose.Email 中从电子邮件中提取附件
+second_title: Aspose.Email Java 电子邮件管理 API
+description: 了解如何使用 Aspose.Email for Java 轻松提取电子邮件附件。 Java 开发人员的分步指南。
 type: docs
 weight: 13
 url: /zh/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
 
-## 了解使用 Aspose.Email for .NET 从电子邮件中提取嵌入对象。带有代码示例的分步指南。
+## Java 版 Aspose.Email 简介
 
-提取嵌入对象简介 - C# 教程
+Aspose.Email for Java 是一个功能强大的 Java 库，允许开发人员无缝地处理电子邮件和附件。它提供了广泛的电子邮件处理功能，包括从电子邮件中提取附件的功能。在本分步指南中，我们将探索如何使用 Aspose.Email for Java 轻松从电子邮件中提取附件。
 
-## 在本教程中，我们将探索如何使用 Aspose.Email for .NET 库从电子邮件中提取嵌入对象。 Aspose.Email 是一个功能强大且多功能的库，使开发人员能够在其 .NET 应用程序中处理电子邮件、附件以及电子邮件通信的各个其他方面。
+## 先决条件
 
-先决条件：
+在我们深入研究代码之前，让我们确保您已正确设置所有内容：
 
-1. 要学习本教程，您应该对 C# 编程和 .NET 框架有基本的了解。此外，请确保您的计算机上设置有 Visual Studio 或其他合适的开发环境。
+1. Java 开发环境：确保您的系统上安装了 Java。
 
-2. 安装 Aspose.Email for .NET：[首先，您需要安装 Aspose.Email for .NET 库。您可以使用 Visual Studio 中的 NuGet 包管理器来执行此操作。打开项目，在解决方案资源管理器中右键单击项目名称，然后选择“管理 NuGet 包”。搜索“Aspose.Email”并安装最新版本。](https://releases.aspose.com/email/java/)加载电子邮件消息：
+2.  Aspose.Email for Java：从以下位置下载库[这里](https://releases.aspose.com/email/java/)并将其添加到您的项目中。
 
-3. 在提取嵌入对象之前，我们需要将电子邮件加载到我们的应用程序中。 Aspose.Email 提供了有效加载和操作各种格式（例如 EML、MSG 和 PST）电子邮件消息的类和方法。
+3. 电子邮件消息：您应该有一封带有附件的电子邮件消息可供使用。您可以使用自己的电子邮件或创建示例电子邮件进行测试。
 
-## 从文件加载电子邮件
+## 第 1 步：创建 Java 项目
 
-从电子邮件中提取嵌入对象：
+首先，让我们在您最喜欢的集成开发环境 (IDE) 中创建一个新的 Java 项目。
 
-## 加载电子邮件后，我们可以继续从邮件中提取嵌入的对象，例如图像和附件。 Aspose.Email 提供了访问邮件中的附件和嵌入图像的方法。
+## 第2步：添加Aspose.Email库
 
-提取并处理附件
+通过包含之前下载的 JAR 文件，将 Aspose.Email 库添加到您的项目中。
 
-## 提取并处理嵌入图像
+## 第 3 步：提取附件
 
-保存提取的对象：
+现在，让我们编写 Java 代码来从电子邮件中提取附件。以下是帮助您入门的示例代码片段：
 
 ```java
 import com.aspose.email.MailMessage;
@@ -40,46 +40,46 @@ import com.aspose.email.Attachment;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        //提取嵌入对象后，您可能希望将它们保存到系统上的特定位置。 Aspose.Email提供了保存提取的对象的方法，允许您组织和管理提取的内容。
+        //加载电子邮件消息
         MailMessage message = MailMessage.load("path/to/your/email.msg");
 
-        //处理不同类型的嵌入对象：
+        //遍历附件
         for (Attachment attachment : message.getAttachments()) {
-            //电子邮件消息可以包含各种嵌入对象，包括图像、音频文件和文档。 Aspose.Email 使您能够识别嵌入对象的类型并进行相应的处理。
+            //将附件保存到文件
             attachment.save("path/to/save/" + attachment.getName());
         }
     }
 }
 ```
 
-处理图像附件`"path/to/your/email.msg"`处理音频附件
+在此代码中，我们加载一封电子邮件，遍历其附件，并将每个附件保存到指定位置。别忘了更换`"path/to/your/email.msg"`与您的电子邮件的实际路径。
 
-## 为不同类型添加更多条件
+## 第四步：编译并运行
 
-结论
+编译并运行Java程序。如果一切设置正确，您应该会看到附件被提取到指定的文件夹中。
 
-## 在本教程中，我们学习了如何使用 Aspose.Email for .NET 库从电子邮件中提取嵌入对象。我们涵盖了加载电子邮件、提取附件和嵌入图像、保存提取的内容以及处理不同类型的嵌入对象。在构建涉及电子邮件通信和内容提取的应用程序时，此功能非常有用。
+## 结论
 
-常见问题解答
+从电子邮件中提取附件是电子邮件处理应用程序中的一项常见任务。 Aspose.Email for Java 通过提供一个强大的库来有效地处理电子邮件相关的操作，从而简化了这个过程。只需几行代码，您就可以提取附件并将此功能合并到您的 Java 应用程序中。
 
-## 如何安装 Aspose.Email for .NET？
+## 常见问题解答
 
-### 您可以使用 Visual Studio 中的 NuGet 包管理器安装 Aspose.Email for .NET。只需搜索“Aspose.Email”并安装最新版本。
+### 如何下载 Java 版 Aspose.Email？
 
-我可以使用这个库提取音频文件吗？[是的，您可以使用 Aspose.Email 提取各种类型的嵌入对象，包括音频文件。确保识别内容类型并进行相应处理。](https://releases.aspose.com/email/java/).
+您可以从以下网站下载 Aspose.Email for Java：[这里](https://releases.aspose.com/email/java/).
 
-### Aspose.Email 适合处理 PST 文件吗？
+### 我可以在我的商业项目中使用 Aspose.Email for Java 吗？
 
-是的，Aspose.Email 支持使用 PST 文件，允许您从 Outlook 个人文件夹加载、操作和提取内容。
+是的，Aspose.Email for Java 可以在个人和商业项目中使用。查看网站上的许可详细信息以获取更多信息。
 
-### 我可以在 ASP.NET Web 应用程序中使用 Aspose.Email 吗？
+### 是否有适用于 Java 的 Aspose.Email 的任何文档？
 
-绝对地！ Aspose.Email for .NET 与 ASP.NET Web 应用程序、桌面应用程序和其他类型的 .NET 项目兼容。[在哪里可以找到有关 Aspose.Email 的更多文档？](https://reference.aspose.com/email/java/).
+当然！您可以在以下位置找到 Aspose.Email for Java 的文档：[这里](https://reference.aspose.com/email/java/).
 
-### 您可以在以下位置找到 Aspose.Email 的详细文档和代码示例
+### Aspose.Email for Java 支持哪些电子邮件格式？
 
-Aspose.Email for .NET API 参考
+Aspose.Email for Java 支持各种电子邮件格式，包括 MSG、EML 等。请参阅文档以获取支持格式的完整列表。
 
-### 页。
+### 在哪里可以获得 Aspose.Email for Java 的支持？
 
-使用 C# 从电子邮件中提取嵌入对象
+如需任何技术帮助或询问，您可以通过 Aspose 的支持渠道联系他们的支持团队。

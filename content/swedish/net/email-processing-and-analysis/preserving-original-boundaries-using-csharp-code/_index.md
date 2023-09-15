@@ -1,109 +1,109 @@
 ---
-title: Preserving Original Boundaries using C# Code
-linktitle: Preserving Original Boundaries using C# Code
+title: Bevara ursprungliga gränser med C#-kod
+linktitle: Bevara ursprungliga gränser med C#-kod
 second_title: Aspose.Email .NET Email Processing API
-description: Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+description: Lär dig hur du bevarar ursprungliga gränser för e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
 type: docs
 weight: 13
 url: /sv/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
 
-## Introduction to Preserving Original Boundaries
+## Introduktion till att bevara ursprungliga gränser
 
-In the modern business world, email communication plays a pivotal role. As emails are exchanged, they often contain crucial attachments that need to be managed and manipulated programmatically. However, when working with email attachments, it's essential to ensure that the original boundaries and formatting of these attachments are preserved. This is where Aspose.Email for .NET comes into play.
+den moderna affärsvärlden spelar e-postkommunikation en avgörande roll. När e-postmeddelanden utbyts innehåller de ofta viktiga bilagor som måste hanteras och manipuleras programmatiskt. Men när du arbetar med e-postbilagor är det viktigt att se till att de ursprungliga gränserna och formateringen av dessa bilagor bevaras. Det är här Aspose.Email för .NET kommer in i bilden.
 
-## Prerequisites
+## Förutsättningar
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+Innan vi dyker in i koden, se till att du har följande förutsättningar på plats:
 
-- Visual Studio installed
-- .NET Framework or .NET Core project
+- Visual Studio installerat
+- .NET Framework eller .NET Core-projekt
 
 ## Installation
 
-To get started, you need to install the Aspose.Email for .NET library. You can do this by following these steps:
+För att komma igång måste du installera Aspose.Email for .NET-biblioteket. Du kan göra detta genom att följa dessa steg:
 
-1. Open your Visual Studio project.
-2. Right-click on your project in the Solution Explorer.
-3. Select "Manage NuGet Packages."
-4. Search for "Aspose.Email" and install the package.
+1. Öppna ditt Visual Studio-projekt.
+2. Högerklicka på ditt projekt i Solution Explorer.
+3. Välj "Hantera NuGet-paket."
+4. Sök efter "Aspose.Email" och installera paketet.
 
-## Loading Email Messages
+## Laddar e-postmeddelanden
 
-The first step is to load the email message that contains the attachment you want to work with. Here's how you can do it:
+Det första steget är att ladda e-postmeddelandet som innehåller den bilaga du vill arbeta med. Så här kan du göra det:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-// Load the email message
+// Ladda e-postmeddelandet
 MailMessage message = MailMessage.Load("path/to/email.msg");
 ```
 
-## Extracting Attachments
+## Extrahera bilagor
 
-Once you have the email message loaded, you can extract the attachments from it:
+När du har laddat e-postmeddelandet kan du extrahera bilagorna från det:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Extract attachment data
+    // Extrahera bifogade data
     byte[] attachmentData = attachment.ContentStream.ToByteArray();
     string fileName = attachment.Name;
-    // Further processing...
+    // Ytterligare bearbetning...
 }
 ```
 
-## Modifying Attachments
+## Ändra bilagor
 
-To preserve the original boundaries while modifying attachments, you can use the Aspose.Email library's features. Let's say you want to resize an image attachment:
+För att bevara de ursprungliga gränserna medan du ändrar bilagor kan du använda funktionerna i biblioteket Aspose.Email. Låt oss säga att du vill ändra storlek på en bildbilaga:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType.StartsWith("image/"))
     {
-        // Resize the image while preserving original boundaries
+        // Ändra storlek på bilden samtidigt som de ursprungliga gränserna bevaras
         using (MemoryStream memoryStream = new MemoryStream(attachmentData))
         {
-            // Perform image manipulation
-            // Save changes to memoryStream
+            // Utför bildmanipulation
+            // Spara ändringar i memoryStream
         }
     }
 }
 ```
 
-## Saving Changes
+## Sparar ändringar
 
-After making modifications to the attachments, you can save the changes back to the email message:
+När du har gjort ändringar i bilagorna kan du spara ändringarna i e-postmeddelandet:
 
 ```csharp
-// Save changes to the original email message
+// Spara ändringar i det ursprungliga e-postmeddelandet
 message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ```
 
-## Conclusion
+## Slutsats
 
-Preserving original boundaries when working with email attachments is crucial for maintaining data integrity. With Aspose.Email for .NET, this process becomes seamless, allowing you to manipulate attachments while ensuring that their formatting remains intact.
+Att bevara ursprungliga gränser när du arbetar med e-postbilagor är avgörande för att upprätthålla dataintegriteten. Med Aspose.Email för .NET blir denna process sömlös, vilket gör att du kan manipulera bilagor samtidigt som du säkerställer att deras formatering förblir intakt.
 
 ## FAQ's
 
-### How do I install Aspose.Email for .NET?
+### Hur installerar jag Aspose.Email för .NET?
 
-You can install Aspose.Email for .NET by using NuGet packages. Simply search for "Aspose.Email" in the NuGet Package Manager and install it.
+Du kan installera Aspose.Email för .NET genom att använda NuGet-paket. Sök helt enkelt efter "Aspose.Email" i NuGet Package Manager och installera den.
 
-### Can I use Aspose.Email with both .NET Framework and .NET Core?
+### Kan jag använda Aspose.Email med både .NET Framework och .NET Core?
 
-Yes, Aspose.Email for .NET supports both .NET Framework and .NET Core projects.
+Ja, Aspose.Email för .NET stöder både .NET Framework och .NET Core-projekt.
 
-### Is there a free trial version available?
+### Finns det en gratis testversion tillgänglig?
 
-Yes, you can get a free trial version of Aspose.Email for .NET from the website.
+Ja, du kan få en gratis testversion av Aspose.Email för .NET från webbplatsen.
 
-### How can I resize image attachments while maintaining boundaries?
+### Hur kan jag ändra storlek på bildbilagor samtidigt som jag behåller gränserna?
 
-You can use the Aspose.Email library to load and manipulate image attachments while ensuring that the original boundaries are preserved.
+Du kan använda Aspose.Email-biblioteket för att ladda och manipulera bildbilagor samtidigt som du säkerställer att de ursprungliga gränserna bevaras.
 
-### Where can I find more information about Aspose.Email for .NET?
+### Var kan jag hitta mer information om Aspose.Email för .NET?
 
-You can find comprehensive documentation and examples on the [Aspose.Email documentation](https://reference.aspose.com/email/net/) page.
+ Du kan hitta omfattande dokumentation och exempel på[Aspose.Email dokumentation](https://reference.aspose.com/email/net/) sida.

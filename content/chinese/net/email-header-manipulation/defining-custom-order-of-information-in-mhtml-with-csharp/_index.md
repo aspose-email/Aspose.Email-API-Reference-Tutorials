@@ -1,28 +1,28 @@
 ---
-title: Defining Custom Order of Information in MHTML with C#
-linktitle: Defining Custom Order of Information in MHTML with C#
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-step guide with code for efficient information arrangement. Boost user experience now!
+title: 使用 C# 定义 MHTML 中信息的自定义顺序
+linktitle: 使用 C# 定义 MHTML 中信息的自定义顺序
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 了解如何使用 C# 和 Aspose.Email for .NET 自定义 MHTML 订单。带有代码的分步指南，可实现高效的信息安排。立即提升用户体验！
 type: docs
 weight: 14
 url: /zh/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
 
-In the realm of email management, the ability to customize the order of information in MHTML emails is a valuable feature. Aspose.Email for .NET offers a robust solution for achieving this. In this article, we will guide you through the process step by step.
+在电子邮件管理领域，自定义 MHTML 电子邮件中的信息顺序的能力是一项很有价值的功能。 Aspose.Email for .NET 为实现这一目标提供了一个强大的解决方案。在本文中，我们将逐步指导您完成该过程。
 
-## Step 1: Understanding the Scenario
+## 第 1 步：了解场景
 
-Before delving into the technical details, let's grasp the scenario. Imagine you have an email message, and you want to save it in MHTML format with specific headers and in a custom order. The headers you want to include are 'From,' 'Subject,' 'To,' 'Sent,' and 'Attachments.'
+在深入研究技术细节之前，让我们先了解一下场景。假设您有一封电子邮件，并且希望将其保存为具有特定标题和自定义顺序的 MHTML 格式。您要包含的标头包括“发件人”、“主题”、“收件人”、“已发送”和“附件”。
 
-## Step 2: Setting Up the Development Environment
+## 第二步：搭建开发环境
 
-To begin, ensure that Aspose.Email for .NET is installed in your development environment. If you haven't done this already, you can download it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
+首先，确保您的开发环境中安装了 Aspose.Email for .NET。如果您还没有这样做，您可以从[Aspose.Email for .NET 版本](https://releases.aspose.com/email/net/).
 
-Once the installation is complete, create a new C# project and add a reference to the Aspose.Email assembly. This step is crucial to access the functionality we need.
+安装完成后，创建一个新的 C# 项目并添加对 Aspose.Email 程序集的引用。这一步对于访问我们需要的功能至关重要。
 
-## Step 3: Writing the Code
+## 第三步：编写代码
 
-Now, let's dive into the code implementation. Below is the code that accomplishes our goal:
+现在，让我们深入了解代码实现。下面是实现我们目标的代码：
 
 ```csharp
 string dataDir = "Your Data Directory";
@@ -47,36 +47,36 @@ opt.RenderingHeaders.Add(MhtTemplateName.Subject);
 eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ```
 
-In this code, we first load the email message and configure the MHTML save options. Then, we save the email in MHTML format multiple times, each time specifying the desired rendering headers. This process ensures the custom order of information in the MHTML file.
+在此代码中，我们首先加载电子邮件并配置 MHTML 保存选项。然后，我们多次以 MHTML 格式保存电子邮件，每次都指定所需的渲染标头。此过程可确保 MHTML 文件中信息的自定义顺序。
 
-## Step 4: Conclusion
+## 第四步：结论
 
-To sum it up, Aspose.Email for .NET empowers developers to efficiently manage email content, including customizing the order of information in MHTML emails. The code snippet provided simplifies this task, making it accessible and effective.
+总而言之，Aspose.Email for .NET 使开发人员能够有效地管理电子邮件内容，包括自定义 MHTML 电子邮件中的信息顺序。提供的代码片段简化了此任务，使其易于访问且有效。
 
-In a world where effective email handling is paramount, Aspose.Email for .NET proves to be an invaluable tool for developers.
+在有效的电子邮件处理至关重要的世界中，Aspose.Email for .NET 被证明是开发人员的宝贵工具。
 
-For comprehensive documentation and more details, you can visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
+如需全面的文档和更多详细信息，您可以访问[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net/).
 
 ---
 
-## Step 5: FAQs
+## 第 5 步：常见问题解答
 
-### 1. What is MHTML, and why is it important?
+### 1. 什么是 MHTML，为什么它很重要？
 
-- MHTML, short for MIME HTML, is a format used to archive web pages with all their elements. It's crucial for preserving web content and structure.
+- MHTML 是 MIME HTML 的缩写，是一种用于存档网页及其所有元素的格式。这对于保留网络内容和结构至关重要。
 
-### 2. Can I customize the order of other email headers using Aspose.Email for .NET?
+### 2. 我可以使用 Aspose.Email for .NET 自定义其他电子邮件标头的顺序吗？
 
-- Yes, you can tailor the order of various email headers according to your specific requirements, as demonstrated in the article.
+- 是的，您可以根据您的具体要求定制各种电子邮件标头的顺序，如本文所示。
 
-### 3. What other tasks can Aspose.Email for .NET handle in email processing?
+### 3. Aspose.Email for .NET 在电子邮件处理中还可以处理哪些其他任务？
 
-- Aspose.Email for .NET offers a wide range of features, including email creation, conversion, and manipulation, making it a comprehensive solution for various email-related tasks.
+- Aspose.Email for .NET 提供了广泛的功能，包括电子邮件创建、转换和操作，使其成为各种电子邮件相关任务的综合解决方案。
 
-### 4. Is Aspose.Email for .NET suitable for both small-scale and enterprise-level projects?
+### 4. Aspose.Email for .NET 适合小型和企业级项目吗？
 
-- Absolutely. It's versatile and can be applied in projects of all sizes, from small applications to large-scale enterprise solutions.
+- 绝对地。它用途广泛，可应用于各种规模的项目，从小型应用程序到大型企业解决方案。
 
-### 5. Where can I find additional resources and support for Aspose.Email for .NET?
+### 5. 在哪里可以找到 Aspose.Email for .NET 的其他资源和支持？
 
-- You can access extensive documentation, code examples, and support on the [Aspose.Email for .NET API Documentation](https://reference.aspose.com/email/net/).
+- 您可以访问广泛的文档、代码示例和支持[Aspose.Email for .NET API 文档](https://reference.aspose.com/email/net/).

@@ -1,40 +1,40 @@
 ---
-title: Reading Messages from NSF Storage using C#
-linktitle: Reading Messages from NSF Storage using C#
-second_title: Aspose.Email .NET Email Processing API
-description: Learn how to read NSF storage messages using C# and Aspose.Email for .NET. A step-by-step guide with code examples.
+title: قراءة الرسائل من تخزين NSF باستخدام C#
+linktitle: قراءة الرسائل من تخزين NSF باستخدام C#
+second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
+description: تعرف على كيفية قراءة رسائل تخزين NSF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 11
 url: /ar/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
 
-## Introduction to Reading Messages from NSF Storage using C#
+## مقدمة لقراءة الرسائل من تخزين NSF باستخدام C#
 
-In the world of software development, efficient data handling is paramount. When it comes to email management, particularly dealing with Notes Storage Format (NSF) files, having a reliable method to read messages is essential. This article will guide you step by step on how to read messages from NSF storage using C# with the help of Aspose.Email for .NET. Aspose.Email is a powerful library that simplifies working with email file formats, making it an excellent choice for this task.
+في عالم تطوير البرمجيات، تعد المعالجة الفعالة للبيانات أمرًا بالغ الأهمية. عندما يتعلق الأمر بإدارة البريد الإلكتروني، وخاصة التعامل مع ملفات تنسيق تخزين الملاحظات (NSF)، فإن وجود طريقة موثوقة لقراءة الرسائل أمر ضروري. سترشدك هذه المقالة خطوة بخطوة حول كيفية قراءة الرسائل من وحدة تخزين NSF باستخدام لغة C# بمساعدة Aspose.Email لـ .NET. Aspose.Email هي مكتبة قوية تعمل على تبسيط العمل مع تنسيقات ملفات البريد الإلكتروني، مما يجعلها اختيارًا ممتازًا لهذه المهمة.
 
-## Prerequisites
+## المتطلبات الأساسية
 
-Before we dive into the coding process, ensure that you have the following prerequisites set up:
+قبل أن نتعمق في عملية الترميز، تأكد من إعداد المتطلبات الأساسية التالية:
 
-1. Visual Studio or any preferred C# development environment.
-2. Aspose.Email for .NET library. You can download it from [here](https://releases.aspose.com/email/net).
+1. Visual Studio أو أي بيئة تطوير مفضلة لـ C#.
+2.  Aspose.Email لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net).
 
 
-## Import Necessary Libraries
-- In your C# project, import the Aspose.Email and Aspose.Email.Storage.Nsf namespace:
+## استيراد المكتبات اللازمة
+- في مشروع C# الخاص بك، قم باستيراد مساحة الاسم Aspose.Email وAspose.Email.Storage.Nsf:
     ```csharp
     using Aspose.Email;
 	Aspose.Email.Storage.Nsf;
     ```
 
-## Step 3: Read Messages from Zimbra TGZ Storage
-Now, let's dive into the code. We'll use the provided sample code as a reference.
+## الخطوة 3: قراءة الرسائل من Zimbra TGZ Storage
+الآن، دعونا نتعمق في الكود. سنستخدم نموذج التعليمات البرمجية المقدم كمرجع.
 
 ```csharp
-// The path to the File directory.
+// المسار إلى دليل الملفات.
 string dataDir = "Your Document Directory";
 
-// Initialize the NotesStorageFacility with the path to your Zimbra TGZ storage.
+// قم بتهيئة NotesStorageFacility بالمسار إلى وحدة تخزين Zimbra TGZ الخاصة بك.
 using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.nsf"))
 {
     foreach (MailMessage eml in nsf.EnumerateMessages())
@@ -44,32 +44,32 @@ using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.
 }
 ```
 
-In this code snippet:
-- Replace `"Your Document Directory"` with the actual path to your Zimbra TGZ storage directory.
-- We use the `NotesStorageFacility` class to work with the Zimbra TGZ storage.
-- The `EnumerateMessages` method allows you to iterate through all the messages in the storage.
-- We print the subject of each message to the console. You can perform any desired operations with the messages at this point.
+في مقتطف الشفرة هذا:
+-  يستبدل`"Your Document Directory"` بالمسار الفعلي إلى دليل تخزين Zimbra TGZ.
+-  نحن نستخدم ال`NotesStorageFacility` فئة للعمل مع تخزين Zimbra TGZ.
+-  ال`EnumerateMessages` تسمح لك الطريقة بتكرار جميع الرسائل الموجودة في وحدة التخزين.
+- نقوم بطباعة موضوع كل رسالة إلى وحدة التحكم. يمكنك إجراء أي عمليات مرغوبة مع الرسائل في هذه المرحلة.
 
-## Step 4: Run Your Application
-Build and run your C# application. It will read and display the subjects of all messages from the Zimbra TGZ storage.
+## الخطوة 4: قم بتشغيل التطبيق الخاص بك
+قم ببناء وتشغيل تطبيق C# الخاص بك. سوف يقرأ ويعرض موضوعات جميع الرسائل من مخزن Zimbra TGZ.
 
-## Conclusion
+## خاتمة
 
-In this tutorial, you've learned how to read messages from a Zimbra TGZ storage using C# and Aspose.Email for .NET. It's a straightforward process that can be customized to suit your specific needs. Now you can efficiently work with Zimbra email data in your .NET applications.
+في هذا البرنامج التعليمي، تعلمت كيفية قراءة الرسائل من وحدة تخزين Zimbra TGZ باستخدام C# وAspose.Email لـ .NET. إنها عملية مباشرة يمكن تخصيصها لتناسب احتياجاتك الخاصة. يمكنك الآن العمل بكفاءة مع بيانات البريد الإلكتروني الخاصة بـ Zimbra في تطبيقات .NET الخاصة بك.
 
-## FAQs
+## الأسئلة الشائعة
 
-### 1. Can I use Aspose.Email for .NET with other email storage formats?
-Yes, Aspose.Email for .NET supports various email storage formats, including PST, MSG, EML, and more.
+### 1. هل يمكنني استخدام Aspose.Email لـ .NET مع تنسيقات تخزين البريد الإلكتروني الأخرى؟
+نعم، يدعم Aspose.Email for .NET العديد من تنسيقات تخزين البريد الإلكتروني، بما في ذلك PST وMSG وEML والمزيد.
 
-### 2. How do I handle attachments when reading Zimbra TGZ messages?
-You can access and process email attachments using Aspose.Email's API methods.
+### 2. كيف أتعامل مع المرفقات عند قراءة رسائل Zimbra TGZ؟
+يمكنك الوصول إلى مرفقات البريد الإلكتروني ومعالجتها باستخدام طرق واجهة برمجة التطبيقات الخاصة بـ Aspose.Email.
 
-### 3. Is there a trial version available for Aspose.Email for .NET?
-Yes, you can download a free trial version from the Aspose website.
+### 3. هل هناك إصدار تجريبي متاح لـ Aspose.Email لـ .NET؟
+نعم، يمكنك تنزيل نسخة تجريبية مجانية من موقع Aspose.
 
-### 4. Can I use Aspose.Email for .NET in both Windows and .NET Core applications?
-Yes, Aspose.Email for .NET is compatible with both Windows and .NET Core.
+### 4. هل يمكنني استخدام Aspose.Email لـ .NET في كل من تطبيقات Windows و.NET Core؟
+نعم، Aspose.Email for .NET متوافق مع كل من Windows و.NET Core.
 
-### 5. Are there any limitations when working with Zimbra TGZ storage using Aspose.Email for .NET?
-Aspose.Email for .NET provides robust capabilities for working with Zimbra TGZ storage, but be aware of the specific limitations mentioned in the documentation.
+### 5. هل هناك أي قيود عند العمل مع وحدة تخزين Zimbra TGZ باستخدام Aspose.Email لـ .NET؟
+يوفر Aspose.Email for .NET إمكانات قوية للعمل مع تخزين Zimbra TGZ، ولكن كن على دراية بالقيود المحددة المذكورة في الوثائق.

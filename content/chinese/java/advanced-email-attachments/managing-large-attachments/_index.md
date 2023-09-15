@@ -1,49 +1,49 @@
 ---
-title: 使用 C# 从电子邮件中提取嵌入对象
-linktitle: Aspose.Email .NET 电子邮件处理 API
-second_title: 了解如何使用 C# 和 Aspose.Email for .NET 从电子邮件中提取嵌入对象。带有代码示例的分步指南。
-description: 电子邮件中嵌入对象简介
+title: 在 Aspose.Email 中管理大型附件
+linktitle: 在 Aspose.Email 中管理大型附件
+second_title: Aspose.Email Java 电子邮件管理 API
+description: 使用 Aspose.Email for Java 高效管理大型电子邮件附件。用于简化 Java 应用程序中附件处理的分步指南和源代码。
 type: docs
 weight: 11
 url: /zh/java/advanced-email-attachments/managing-large-attachments/
 ---
 
-## 电子邮件中的嵌入对象是指直接插入到电子邮件内容中而不是单独附加的文件。这些对象允许发件人在邮件正文中包含图像、动画或交互式内容，从而丰富了电子邮件体验。
+## 在 Aspose.Email for Java 中管理大型附件简介
 
-.NET 的 Aspose.Email 入门
+附件是电子邮件通信的重要组成部分，但有效处理大型附件可能是一个挑战。借助 Aspose.Email for Java，您可以简化 Java 应用程序中大型电子邮件附件的管理。在本指南中，我们将逐步引导您完成该过程，并为您提供有效附件处理的源代码示例。
 
-## Aspose.Email for .NET 是一个功能强大的库，提供了处理电子邮件的各种功能，包括解析、创建和操作电子邮件。首先，您需要在项目中安装 Aspose.Email for .NET 库。您可以从 Aspose.Releases 下载它：
+## 先决条件
 
-Aspose. 发布
+在我们开始之前，请确保您具备以下先决条件：
 
-- [或者使用 NuGet 等包管理器。](https://releases.aspose.com/email/java/)加载和解析电子邮件
+- [用于 Java 的 Aspose.Email](https://releases.aspose.com/email/java/)：下载并安装 Aspose.Email for Java 库。
 
-## 要从电子邮件中提取嵌入对象，您首先需要加载并解析电子邮件。您可以这样做：
+## 第 1 步：创建电子邮件
 
-导入必要的命名空间
+首先，让我们创建一封带有大附件的示例电子邮件。我们将使用 Aspose.Email 库来执行此操作。这是一个简单的 Java 代码片段：
 
 ```java
-//加载电子邮件消息
+//导入所需的 Aspose.Email 类
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            //识别和提取嵌入对象
+            //创建一个新的邮件消息
             MailMessage message = new MailMessage();
 
-            //加载电子邮件后，您可以迭代其 AlternateViews 以识别和提取嵌入的对象。 AlternateViews 代表电子邮件的不同格式，包括 HTML 和纯文本。嵌入对象通常可以在 HTML 视图中找到。
+            //设置发件人和收件人地址
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            //迭代替代视图
+            //设置电子邮件的主题和正文
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            //从 HTML 内容中提取嵌入对象
+            //将大文件附加到电子邮件中
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            //提取并保存链接资源（嵌入对象）
+            //保存电子邮件
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -52,42 +52,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-保存提取的对象`MailMessage`识别并提取嵌入的对象后，您可以将它们保存到所需的位置。链接资源的 ContentId 通常用作文件名。`"sender@example.com"`, `"recipient@example.com"`完整的源代码`"path/to/large_attachment.pdf"`以下是使用 Aspose.Email for .NET 从电子邮件中提取嵌入对象的完整源代码：
+在此代码中，我们创建一个新的`MailMessage`并附加一个大的 PDF 文件。确保更换`"sender@example.com"`, `"recipient@example.com"`， 和`"path/to/large_attachment.pdf"`与您的实际电子邮件地址和大型附件文件的路径。
 
-## 加载电子邮件消息
+## 第 2 步：发送电子邮件
 
-迭代替代视图
+现在我们已经创建了一封带有大附件的电子邮件，让我们使用 SMTP 发送它。您可以这样做：
 
 ```java
-//从 HTML 内容中提取嵌入对象
+//导入所需的 Aspose.Email 类
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            //提取并保存链接资源（嵌入对象）
+            //创建 SmtpClient 的新实例
             SmtpClient client = new SmtpClient();
 
-            //结论
+            //指定 SMTP 服务器设置
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            //在本文中，我们探讨了如何使用 C# 和 Aspose.Email for .NET 库从电子邮件中提取嵌入对象。我们涵盖了从加载和解析电子邮件到识别和保存嵌入对象的整个过程。通过遵循本指南，您可以增强电子邮件处理能力并丰富应用程序的内容。
+            //创建一个新的邮件消息
             MailMessage message = new MailMessage();
 
-            //常见问题解答
+            //设置发件人和收件人地址
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            //如何安装 Aspose.Email for .NET？
+            //设置电子邮件的主题和正文
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            //您可以通过从 Aspose.Releases 下载来安装 Aspose.Email for .NET：
+            //将大文件附加到电子邮件中
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            //Aspose. 发布
+            //发送电子邮件
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -96,23 +96,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-或使用 NuGet 等包管理器。`SmtpClient`我可以从 HTML 以外的附件中提取嵌入对象吗？`"smtp.example.com"`, `"your_username"`是的，Aspose.Email for .NET 提供了从各种附件类型（包括 HTML、纯文本，甚至多媒体格式）中提取嵌入对象的方法。`"your_password"`Aspose.Email for .NET 可以免费使用吗？
+在此代码中，我们使用`SmtpClient`类发送带有大附件的电子邮件。代替`"smtp.example.com"`, `"your_username"`， 和`"your_password"`使用您的 SMTP 服务器设置。
 
-##  Aspose.Email for .NET 是一个商业库，您可能需要获得许可证才能在项目中使用它。请参阅
+## 第三步：接收并下载电子邮件
 
-定价页面
+当您收到带有大附件的电子邮件时，您可能需要将附件下载到本地系统。您可以这样做：
 
 ```java
-//了解更多信息。
+//导入所需的 Aspose.Email 类
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            //我可以在保存之前修改提取的嵌入对象吗？
+            //从文件或电子邮件服务器加载电子邮件
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            //是的，您可以在保存提取的嵌入对象之前对其进行操作。 Aspose.Email 库提供了多种修改电子邮件内容和资源的方法。
+            //循环浏览附件并下载大附件
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -126,22 +126,22 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-在哪里可以找到更多使用 Aspose.Email for .NET 的示例？
+在此代码中，我们加载收到的电子邮件并迭代其附件以查找并下载大附件。
 
-## 您可以在以下位置找到更多代码示例和教程
+## 结论
 
-API参考
+有效管理大型电子邮件附件对于有效的电子邮件通信至关重要。借助 Aspose.Email for Java，您可以简化 Java 应用程序中处理大型附件的过程。在本指南中，我们介绍了从创建和发送带有大附件的电子邮件到接收和下载它们的基本步骤。通过遵循这些步骤和最佳实践，您可以确保在 Java 项目中处理大型电子邮件附件时获得流畅的体验。
 
-## 在电子邮件中包含附件 - C# 示例
+## 常见问题解答
 
-### 在电子邮件中包含附件 - C# 示例
+### 如何有效处理非常大的附件？
 
-Aspose.Email .NET 电子邮件处理 API
+为了有效地处理非常大的附件，请考虑使用流技术以块的形式读取和写入附件数据，而不是将整个附件加载到内存中。 Aspose.Email 提供流功能，允许您处理大型附件而不消耗过多的内存。
 
-### 了解如何使用 Aspose.Email for .NET 在电子邮件中包含附件。包含 C# 代码示例的分步指南。
+### 电子邮件附件的大小有限制吗？
 
-在电子邮件中包含附件简介
+电子邮件附件的大小限制可能因电子邮件服务提供商和电子邮件客户端而异。请务必检查电子邮件服务提供商的附件大小限制，并确保您的附件符合这些限制，以避免发送问题。
 
-### 在当今快节奏的数字世界中，电子邮件通信仍然是企业和个人的基石。在电子邮件中添加附件可以让您轻松共享文档、图像和文件，从而提高邮件的价值。本分步指南将引导您完成使用 .NET 的 Aspose.Email 库在电子邮件中添加附件的过程。
+### 我可以压缩附件以减小其大小吗？
 
-设置您的开发环境
+是的，您可以在发送附件之前对其进行压缩以减小其大小。 Aspose.Email 提供了以编程方式压缩和解压缩附件的功能。您可以实施此操作来优化电子邮件附件的大小。

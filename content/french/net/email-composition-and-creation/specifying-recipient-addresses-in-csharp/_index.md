@@ -1,50 +1,50 @@
 ---
-title: Recherchez « Aspose.Email » et installez le package.
-linktitle: Chargement d'un e-mail
-second_title: Avant de convertir du HTML en texte brut, vous devez charger un e-mail à l'aide d'Aspose.Email :
-description: Autres instructions d'utilisation pertinentes
+title: Spécification des adresses de destinataire en C#
+linktitle: Spécification des adresses de destinataire en C#
+second_title: API de traitement des e-mails Aspose.Email .NET
+description: Découvrez comment spécifier les adresses des destinataires en C# à l'aide d'Aspose.Email pour .NET. Créez, configurez et envoyez des e-mails efficacement.
 type: docs
 weight: 19
 url: /fr/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
 
 
- Charger le message électronique
+Ce guide vous guidera tout au long du processus de spécification des adresses de destinataires en C# à l'aide de la bibliothèque Aspose.Email pour .NET. Aspose.Email est une puissante API .NET qui vous permet de travailler avec des messages électroniques et diverses tâches liées au courrier électronique. Dans ce didacticiel, nous expliquerons comment ajouter des adresses de destinataires à un message électronique à l'aide de la bibliothèque.
 
-## Conversion du corps HTML en texte brut
+## Conditions préalables
 
-Aspose.Email simplifie le processus de conversion :
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1.  Autres instructions d'utilisation pertinentes
-2.  Convertir le corps HTML en texte brut[Gestion des exceptions](https://releases.aspose.com/email/net/).
+1. Visual Studio ou tout environnement de développement C# installé.
+2.  Aspose.Email pour la bibliothèque .NET. Vous pouvez l'obtenir auprès du[Aspose.Email pour les versions .NET](https://releases.aspose.com/email/net/).
 
-## Lorsque vous travaillez avec des conversions, des exceptions peuvent survenir pour diverses raisons. Gérez les exceptions pour garantir une expérience fluide :
+## Pas
 
- Code impliquant une conversion
+Suivez ces étapes pour spécifier les adresses des destinataires en C# à l'aide d'Aspose.Email pour .NET :
 
-###  Gérer les exceptions
+### 1. Créez un nouveau projet C#
 
-Exemple de code
+Commencez par créer un nouveau projet C# dans votre environnement de développement.
 
-### Voici un exemple d'extrait de code illustrant la conversion d'un corps HTML en texte brut à l'aide d'Aspose.Email pour .NET :
+### 2. Ajouter une référence à Aspose.Email
 
-1.  Charger le message électronique
-2.  Convertir le corps HTML en texte brut
-3.  Afficher le résultat
-4. Conclusion
+1. Téléchargez et installez la bibliothèque Aspose.Email pour .NET si vous ne l'avez pas déjà fait.
+2. Ouvrez votre projet C#.
+3. Cliquez avec le bouton droit sur les « Références » dans l'Explorateur de solutions et sélectionnez « Ajouter une référence ».
+4. Parcourez et sélectionnez les fichiers DLL Aspose.Email que vous avez téléchargés.
 
-### Dans ce guide, nous avons exploré comment convertir le corps HTML d'un e-mail en texte brut à l'aide d'Aspose.Email pour .NET. Cette technique offre une flexibilité dans la gestion du contenu des e-mails à diverses fins. Les capacités d'Aspose.Email simplifient le processus de conversion, ce qui en fait un outil précieux dans votre arsenal de développement .NET.
+### 3. Importez les espaces de noms nécessaires
 
-FAQ
+Dans votre fichier de code C#, importez les espaces de noms nécessaires à l'utilisation des classes Aspose.Email :
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-### Puis-je conserver un formatage pendant le processus de conversion ?
+### 4. Créez et configurez le message électronique
 
-Non, le processus de conversion supprime le formatage HTML pour produire du texte brut. Tout formatage, tel que les polices ou les couleurs, sera perdu.`MailMessage`Aspose.Email est-il adapté à d’autres tâches liées au courrier électronique ?
+ Créez une nouvelle instance du`MailMessage` classe pour représenter votre message électronique. Configurez l'expéditeur et le sujet de l'e-mail :
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -52,9 +52,9 @@ message.From = new MailAddress("sender@example.com");
 message.Subject = "Hello from Aspose.Email";
 ```
 
-### Absolument. Aspose.Email offre un large éventail de fonctionnalités, notamment l'envoi, la réception, l'analyse et la manipulation de messages électroniques dans différents formats.
+### 5. Ajouter des adresses de destinataires
 
-Puis-je convertir plusieurs e-mails par lots ?`To`, `Cc`Oui, vous pouvez parcourir une collection d’e-mails et appliquer le processus de conversion à chacun d’eux.`Bcc`Aspose.Email prend-il en charge d'autres conversions textuelles ?`MailMessage`Oui, Aspose.Email prend en charge diverses conversions basées sur du texte, y compris les conversions de texte brut en HTML et RTF.
+Vous pouvez ajouter des adresses de destinataires à l'aide du`To`, `Cc` , et`Bcc` propriétés du`MailMessage` classe. Voici comment ajouter des adresses de destinataires :
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
@@ -62,17 +62,17 @@ message.Cc.Add(new MailAddress("recipient2@example.com"));
 message.Bcc.Add(new MailAddress("recipient3@example.com"));
 ```
 
-### Où puis-je trouver plus d’exemples et de documentation pour Aspose.Email ?
+### 6. Complétez le message électronique
 
- Pour obtenir des exemples complets, de la documentation sur l'API et des ressources, visitez le
+Ajoutez le corps de l'e-mail et tout autre contenu nécessaire à votre e-mail :
 
 ```csharp
 message.Body = "This is the email body.";
 ```
 
-### Aspose.Email pour la référence de l'API .NET
+### 7. Envoyez l'e-mail
 
- page.`SmtpClient` Détection de divers formats de fichiers à l'aide du code C#
+ Pour envoyer l'e-mail, vous pouvez utiliser le`SmtpClient` classe fournie par Aspose.Email. Configurez les paramètres du serveur SMTP et envoyez l'e-mail :
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
@@ -81,28 +81,28 @@ client.SecurityOptions = SecurityOptions.Auto;
 client.Send(message);
 ```
 
-##  Détection de divers formats de fichiers à l'aide du code C#
+## FAQ
 
-###  API de traitement des e-mails Aspose.Email .NET`To`, `Cc`, or `Bcc` fields?
+###  Comment puis-je ajouter plusieurs destinataires au`To`, `Cc`, or `Bcc` fields?
 
- Détectez sans effort les formats de fichiers à l’aide de C# et Aspose.Email pour .NET. Guide étape par étape et exemples de code. Explorez maintenant !`Add`En tant que développeur, l'identification du format d'un fichier est cruciale pour son traitement et sa manipulation. Avec Aspose.Email pour .NET, vous pouvez détecter avec précision les formats de fichiers. Ce guide fournit un didacticiel étape par étape, complet avec le code source, sur la façon de détecter différents formats de fichiers à l'aide de C# et Aspose.Email pour .NET.`MailAddressCollection`Introduction à Aspose.Email pour .NET
+ Vous pouvez ajouter plusieurs destinataires en appelant le`Add` méthode plusieurs fois sur le respectif`MailAddressCollection`:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
 message.To.Add(new MailAddress("recipient2@example.com"));
 ```
 
-### Aspose.Email for .NET est une bibliothèque puissante qui permet aux développeurs de travailler avec des messages électroniques, des pièces jointes et bien plus encore dans les applications .NET.
+### Puis-je spécifier les noms des destinataires ainsi que leurs adresses e-mail ?
 
-Pourquoi détecter les formats de fichiers ?
+Oui, vous pouvez spécifier à la fois le nom et l'adresse e-mail du destinataire lors de l'ajout de destinataires :
 
 ```csharp
 message.To.Add(new MailAddress("recipient@example.com", "Recipient Name"));
 ```
 
-### La détection des formats de fichiers est essentielle pour garantir un traitement et une manipulation précis des fichiers. Ces connaissances aident à prendre des décisions éclairées pendant le développement.
+### Comment gérer les exceptions lors de l’envoi d’un e-mail ?
 
-Commencer
+Vous pouvez utiliser des blocs try-catch pour gérer les exceptions qui peuvent survenir lors de l'envoi d'e-mails :
 
 ```csharp
 try
@@ -116,6 +116,6 @@ catch (Exception ex)
 }
 ```
 
-Configuration de votre environnement de développement[Assurez-vous d'avoir :](https://reference.aspose.com/email/net/).
+ Pour plus d'informations et les fonctionnalités avancées d'Aspose.Email pour .NET, reportez-vous au[Références de l'API Aspose](https://reference.aspose.com/email/net/).
 
-Visual Studio ou votre IDE préféré
+Ceci conclut le guide sur la spécification des adresses de destinataires en C# à l'aide d'Aspose.Email pour .NET. Vous avez appris à créer un e-mail, à ajouter des adresses de destinataires et à envoyer l'e-mail à l'aide des fonctionnalités de la bibliothèque.

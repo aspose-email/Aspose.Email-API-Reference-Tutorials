@@ -1,45 +1,45 @@
 ---
-title: 结论
-linktitle: 在本文中，我们探讨了如何使用 Aspose.Email for .NET 库在 C# 中通过加载选项加载电子邮件。我们涵盖了各种场景，包括从文件、流、Exchange Server 加载以及处理受密码保护的电子邮件。通过遵循分步指南并使用提供的源代码示例，您可以将电子邮件加载功能无缝集成到您的应用程序中。
-second_title: 常见问题解答
-description: 如何安装 Aspose.Email for .NET 库？
+title: 使用 C# 添加电子邮件附件
+linktitle: 使用 C# 添加电子邮件附件
+second_title: Aspose.Email .NET 电子邮件处理 API
+description: 了解如何使用 C# 和 Aspose.Email for .NET 添加电子邮件附件。带有代码示例的分步指南，可实现无缝集成。
 type: docs
 weight: 11
 url: /zh/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
 
-## 您可以通过从网站下载 Aspose.Email for .NET 库来安装它
+## 电子邮件附件和 Aspose.Email for .NET 简介
 
-这里
+电子邮件附件是电子通信的一个组成部分。它们使我们能够方便地与他人共享文件。 Aspose.Email for .NET 是一个功能强大的库，可以简化 C# 应用程序中与电子邮件相关的任务。
 
-## 我可以使用此库从 Exchange Server 加载电子邮件吗？
+## 先决条件
 
-是的，您可以使用 Aspose.Email for .NET 提供的 Exchange Web 服务 (EWS) 功能直接从 Exchange Server 加载电子邮件。
+在我们开始之前，请确保您具备以下条件：
 
-- 是否可以处理受密码保护的电子邮件？
-- 绝对地！ Aspose.Email for .NET 支持加载和处理受密码保护的电子邮件。您可以提供密码作为加载选项的一部分。
-- 如果在加载电子邮件时遇到错误，我该怎么办？[如果您在电子邮件加载过程中遇到错误，请确保将加载代码包装在 try-catch 块中以处理异常。这将帮助您识别并解决出现的任何问题。](https://products.aspose.com/email/net使用 C# 加载期间保留嵌入的 MSG 格式)
+- 安装了 Visual Studio
+- 对 C# 的基本了解
+- Aspose.Email for .NET 库（您可以从[这里](https://products.aspose.com/email/net）)
 
-## 使用 C# 加载期间保留嵌入的 MSG 格式
+## 设置开发环境
 
-1. Aspose.Email .NET 电子邮件处理 API
-2. 了解如何使用 Aspose.Email for .NET 保留嵌入的 MSG 格式。带有源代码的分步指南。
-3. 保留嵌入式 MSG 格式简介
+1. 启动 Visual Studio。
+2. 创建一个新的 C# 控制台应用程序。
+3. 使用 NuGet 包管理器安装 Aspose.Email for .NET 库。
 
 ```csharp
-//MSG 格式是“消息”的缩写，通常用于存储电子邮件、联系人、约会和其他 Outlook 相关数据。它允许保留丰富的内容，例如附件、图像和格式。然而，当使用 C# 加载 MSG 文件时，保留此嵌入内容可能具有挑战性。
+//用于设置开发环境的代码
 ```
 
-## 了解 .NET 的 Aspose.Email
+## 创建新电子邮件
 
-1. Aspose.Email for .NET 是一个功能强大的库，使开发人员能够创建、操作和处理 Outlook 相关文件。它为包括 MSG 在内的各种格式提供全面支持。其突出功能之一是能够在加载 MSG 文件时无缝保留嵌入内容。
+1. 导入必要的命名空间。
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-2. 第 1 步：安装 Aspose.Email for .NET
+2. 创建一个新的 MailMessage 实例。
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -47,48 +47,48 @@ message.Subject = "My Email with Attachments";
 message.Body = "Please find the attached files.";
 ```
 
-## 首先，您需要安装 Aspose.Email for .NET 库。您可以从以下位置下载最新版本
+## 添加附件到电子邮件
 
-1. Aspose.Email for .NET 下载页面
+1. 使用 Attachment 类添加附件。
 
 ```csharp
 Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-2. 。下载后，请按照下列步骤操作：
+2. 您可以通过重复上述步骤来添加多个附件。
 
-## 在 Visual Studio 中打开 C# 项目。
+## 保存并发送电子邮件
 
-1. 右键单击解决方案资源管理器中的“引用”节点。
+1. 使用 SmtpClient 类发送电子邮件。
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 client.Send(message);
 ```
 
-## 选择“管理 NuGet 包”。
+## 结论
 
-搜索“Aspose.Email”并单击“安装”将包添加到您的项目中。
+在本指南中，我们学习了如何使用 C# 和 Aspose.Email for .NET 库添加电子邮件附件。您现在可以通过整合无缝发送重要文件和文档的功能来增强您的应用程序。
 
-## 第2步：加载MSG文件
+## 常见问题解答
 
-### 成功安装库后，您可以开始加载 MSG 文件。使用以下代码片段作为起点：
+### 如何下载 Aspose.Email for .NET 库？
 
-加载 MSG 文件[您用于访问和操作消息的代码](https://releases.aspose.com/email/net/)
+您可以从 Aspose. 发布 下载 Aspose.Email for .NET 库：[Aspose.Releases](https://releases.aspose.com/email/net/)
 
-### 步骤 3：保留嵌入格式
+### 我可以在一封电子邮件中添加多个附件吗？
 
-Aspose.Email for .NET 的神奇之处在于它能够在加载 MSG 文件时自动保留嵌入格式。这意味着附件、图像和其他内容将被保留，而无需您付出任何额外的努力。
+是的，您可以通过创建多个 Attachment 实例并将它们添加到 MailMessage 的 Attachments 集合中，向单个电子邮件添加多个附件。
 
-### 第 4 步：访问保留的数据
+### Aspose.Email for .NET 是否与不同的电子邮件协议兼容？
 
-加载 MSG 文件后，您可以轻松访问其保留的内容。例如，要访问附件，您可以使用以下代码片段：
+是的，Aspose.Email for .NET 支持各种电子邮件协议，包括 SMTP、POP3、IMAP 和 Exchange。
 
-### 您处理附件的代码
+### 我可以在发送前自定义电子邮件正文吗？
 
-结论
+绝对地！您可以设置 MailMessage 类的各种属性，例如正文、主题和附件，以根据您的要求自定义电子邮件。
 
-### 在本文中，我们探索了使用 C# 和 Aspose.Email for .NET 在数据加载期间保留嵌入 MSG 格式的过程。得益于该库的强大功能，开发人员可以确保 MSG 文件的丰富内容保持完整，从而简化数据管理和操作。
+### 是否有 Aspose.Email for .NET 的免费试用版？
 
-常见问题解答
+是的，您可以在购买之前下载 Aspose.Email for .NET 的免费试用版来探索其功能。
