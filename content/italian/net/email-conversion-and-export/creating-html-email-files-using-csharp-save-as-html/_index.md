@@ -1,6 +1,6 @@
 ---
-title: Creazione di file di posta elettronica HTML utilizzando C#: salva come HTML
-linktitle: Creazione di file di posta elettronica HTML utilizzando C#: salva come HTML
+title: Creazione di file di posta elettronica HTML utilizzando C# salva come HTML
+linktitle: Creazione di file di posta elettronica HTML utilizzando C# salva come HTML
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come creare file di posta elettronica HTML utilizzando C# e Aspose.Email per .NET. Guida passo passo con codice sorgente per una perfetta personalizzazione della posta elettronica.
 type: docs

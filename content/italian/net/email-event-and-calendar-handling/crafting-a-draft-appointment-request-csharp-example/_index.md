@@ -1,6 +1,6 @@
 ---
-title: Creazione di una bozza di richiesta di appuntamento: esempio in C#
-linktitle: Creazione di una bozza di richiesta di appuntamento: esempio in C#
+title: Creazione di una bozza di richiesta di appuntamento esempio in C#
+linktitle: Creazione di una bozza di richiesta di appuntamento esempio in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come utilizzare Aspose.Email per .NET per creare bozze di email di richiesta di appuntamento in C#. Migliorare la comunicazione e l'efficienza aziendale.
 type: docs

@@ -1,6 +1,6 @@
 ---
-title: Gestione della codifica del testo predefinita: implementazione C#
-linktitle: Gestione della codifica del testo predefinita: implementazione C#
+title: Gestione della codifica del testo predefinita implementazione C#
+linktitle: Gestione della codifica del testo predefinita implementazione C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come gestire la codifica del testo predefinita in C# utilizzando Aspose.Email per .NET. Segui le istruzioni passo passo con il codice sorgente e assicurati una comunicazione accurata dei dati.
 type: docs

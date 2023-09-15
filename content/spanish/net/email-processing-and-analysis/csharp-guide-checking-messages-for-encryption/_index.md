@@ -1,6 +1,6 @@
 ---
-title: Guía de C#: comprobación del cifrado de mensajes
-linktitle: Guía de C#: comprobación del cifrado de mensajes
+title: Guía de C# comprobación del cifrado de mensajes
+linktitle: Guía de C# comprobación del cifrado de mensajes
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda cómo garantizar la seguridad del correo electrónico con Aspose.Email para .NET. Verifique el cifrado, descifre mensajes y más.
 type: docs

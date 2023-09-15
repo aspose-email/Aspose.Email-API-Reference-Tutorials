@@ -1,6 +1,6 @@
 ---
-title: Manejo seguro de mensajes: cifrado y descifrado en C#
-linktitle: Manejo seguro de mensajes: cifrado y descifrado en C#
+title: Manejo seguro de mensajes cifrado y descifrado en C#
+linktitle: Manejo seguro de mensajes cifrado y descifrado en C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a implementar el manejo seguro de mensajes con cifrado y descifrado en C# usando Aspose.Email para .NET. Proteja los datos confidenciales de forma eficaz.
 type: docs

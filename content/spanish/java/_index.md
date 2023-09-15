@@ -1,5 +1,5 @@
 ---
-title: Tutoriales de Aspose.Email para Java: manipulación maestra del correo electrónico
+title: Tutoriales de Aspose.Email para Java manipulación maestra del correo electrónico
 linktitle: Aspose.Email para tutoriales de Java
 type: docs
 weight: 10

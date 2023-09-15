@@ -1,6 +1,6 @@
 ---
-title: Elaboración de un correo electrónico nuevo: implementación de C#
-linktitle: Elaboración de un correo electrónico nuevo: implementación de C#
+title: Elaboración de un correo electrónico nuevo implementación de C#
+linktitle: Elaboración de un correo electrónico nuevo implementación de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a crear correos electrónicos dinámicos usando C# y Aspose.Email para .NET. Guía paso a paso con ejemplos de código para una implementación perfecta. ¡Impulse la automatización de sus comunicaciones hoy!
 type: docs

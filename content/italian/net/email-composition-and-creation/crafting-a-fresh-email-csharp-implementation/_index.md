@@ -1,6 +1,6 @@
 ---
-title: Creazione di una nuova email: implementazione C#
-linktitle: Creazione di una nuova email: implementazione C#
+title: Creazione di una nuova email implementazione C#
+linktitle: Creazione di una nuova email implementazione C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come creare e-mail dinamiche utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice per un'implementazione senza problemi. Potenzia la tua automazione della comunicazione oggi stesso!
 type: docs

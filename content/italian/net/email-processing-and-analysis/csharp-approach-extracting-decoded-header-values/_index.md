@@ -1,6 +1,6 @@
 ---
-title: Approccio C#: estrazione dei valori di intestazione decodificati
-linktitle: Approccio C#: estrazione dei valori di intestazione decodificati
+title: Approccio C# estrazione dei valori di intestazione decodificati
+linktitle: Approccio C# estrazione dei valori di intestazione decodificati
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Impara a estrarre i valori di intestazione e-mail decodificati in C# utilizzando Aspose.Email per .NET. Guida completa con esempi di codice.
 type: docs

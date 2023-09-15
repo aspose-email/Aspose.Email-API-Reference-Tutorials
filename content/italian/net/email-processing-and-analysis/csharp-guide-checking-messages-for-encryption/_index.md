@@ -1,6 +1,6 @@
 ---
-title: Guida C#: controllo della crittografia dei messaggi
-linktitle: Guida C#: controllo della crittografia dei messaggi
+title: Guida C# controllo della crittografia dei messaggi
+linktitle: Guida C# controllo della crittografia dei messaggi
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come garantire la sicurezza della posta elettronica con Aspose.Email per .NET. Verifica la crittografia, decrittografa i messaggi e altro ancora.
 type: docs

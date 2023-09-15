@@ -1,6 +1,6 @@
 ---
-title: Manejo de archivos EML: operaciones de carga y guardado en C#
-linktitle: Manejo de archivos EML: operaciones de carga y guardado en C#
+title: Manejo de archivos EML operaciones de carga y guardado en C#
+linktitle: Manejo de archivos EML operaciones de carga y guardado en C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a manejar archivos EML en C# usando Aspose.Email para .NET. Guía paso a paso con ejemplos de código para cargar, modificar y guardar mensajes de correo electrónico.
 type: docs
