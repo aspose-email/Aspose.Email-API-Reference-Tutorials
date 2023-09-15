@@ -92,7 +92,7 @@ Aspose.Email for .NET is a powerful library for working with email messages in .
 Yes, you can track email document conversion progress using custom progress handlers, as demonstrated in this article.
 
 ### Is Aspose.Email for .NET easy to integrate into my C# project?
-Yes, Aspose.Email for .NET is easy to integrate into C# projects. You can download and install the library from the official website.
+Yes, Aspose.Email for .NET is easy to integrate into C# projects. You can download and install the library from the website.
 
 ### Are there other libraries for working with emails in C#?
 Yes, there are other libraries, but Aspose.Email for .NET is known for its comprehensive features and ease of use.

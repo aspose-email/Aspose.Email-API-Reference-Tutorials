@@ -117,7 +117,7 @@ catch (Exception ex)
 
 In this tutorial, we've explored how to request email read receipts using C# with Aspose.Email for .NET. Email tracking is a powerful tool for ensuring your messages are delivered and read by the intended recipients, particularly in professional settings. By following the steps outlined here, you can easily implement this functionality in your email application.
 
-### Frequently Asked Questions (FAQs)
+## Frequently Asked Questions (FAQs)
 
 1. ### What is the purpose of email read receipts?
    Email read receipts provide confirmation that an email has been opened and read by the recipient. They are often used for tracking important or time-sensitive messages.

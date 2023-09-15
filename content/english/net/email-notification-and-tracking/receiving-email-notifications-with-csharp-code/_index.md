@@ -70,7 +70,7 @@ In this tutorial, we've explored how to receive email notifications with C# usin
 
 By following these steps, you can seamlessly integrate email notifications into your C# applications, enhancing user communication and keeping them informed.
 
-# FAQs
+## FAQs
 
 ### 1. Can I use Aspose.Email for .NET in my .NET Core project?
    Yes, Aspose.Email for .NET is compatible with both .NET Framework and .NET Core.

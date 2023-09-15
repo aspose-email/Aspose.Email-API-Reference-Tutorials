@@ -18,7 +18,7 @@ Before you commence, ensure the following prerequisites are met:
 
 1. Java Development Environment: Have a Java development environment configured on your system.
 
-2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the official download link:
+2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the download link:
 
    [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
@@ -34,7 +34,7 @@ In your Integrated Development Environment (IDE), initiate a new Java project.
 
 ## Step 3: Add Aspose.Email for Java library
 
-Download the Aspose.Email for Java library from the official link provided earlier. Add the JAR files to your project's classpath.
+Download the Aspose.Email for Java library from the link provided earlier. Add the JAR files to your project's classpath.
 
 ## Step 4: Import Aspose.Email classes
 
@@ -102,7 +102,7 @@ In this guide, you've learned how to create visually appealing HTML-formatted em
 HTML-formatted emails allow you to create visually appealing and interactive email content. They are commonly used for marketing campaigns, newsletters, and personalized communication because they can include images, links, and custom styling.
 
 ### How can I set up Aspose.Email for Java in my project?
-To set up Aspose.Email for Java, download the library from the official website, and add the JAR files to your project's classpath. You'll also need a valid license to use the library in a production environment.
+To set up Aspose.Email for Java, download the library from the website, and add the JAR files to your project's classpath. You'll also need a valid license to use the library in a production environment.
 
 ### Can I customize the HTML content of the email?
 Yes, you can fully customize the HTML content of your email. You can include headings, paragraphs, images, links, and any other HTML elements to create rich and engaging email messages.
@@ -119,6 +119,6 @@ Yes, Aspose.Email for Java is suitable for creating both simple and complex HTML
 ### How can I handle email delivery status and tracking when sending HTML emails?
 Aspose.Email for Java offers features for handling email delivery status notifications (DSNs) and tracking email delivery. You can implement logic to track email opens, bounces, and other delivery-related events.
 ### Where can I find additional resources and documentation for Aspose.Email for Java?
-You can find comprehensive documentation, tutorials, and examples on the official Aspose.Email for Java API documentation page: [Aspose.Email for Java API Documentation](https://reference.aspose.com/email/java/)
+You can find comprehensive documentation, tutorials, and examples on the Aspose.Email for Java API documentation page: [Aspose.Email for Java API Documentation](https://reference.aspose.com/email/java/)
 
 

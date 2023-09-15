@@ -24,7 +24,7 @@ Let's go through the steps to change the ProdID in an ICS file using C# and Aspo
 
 ### Step 1: Installation and Setup
 
-Begin by installing Aspose.Email for .NET in your project. You can easily do this by downloading it from the official Aspose website and adding it as a reference to your C# project.
+Begin by installing Aspose.Email for .NET in your project. You can easily do this by downloading it from the Aspose website and adding it as a reference to your C# project.
 
 ### Step 2: Add Necessary `using` Statements
 
@@ -85,4 +85,4 @@ There are no significant limitations when modifying the ProdID in ICS files usin
 
 ### 4. Where can I find more information about Aspose.Email for .NET?
 
-For comprehensive documentation, resources, and details about Aspose.Email for .NET, visit the official Aspose website. You can also access the API reference for in-depth information.
+For comprehensive documentation, resources, and details about Aspose.Email for .NET, visit the Aspose website. You can also access the API reference for in-depth information.

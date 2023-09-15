@@ -66,7 +66,7 @@ Yes, Aspose.Email for .NET supports various email storage formats, including PST
 You can access and process email attachments using Aspose.Email's API methods.
 
 ### 3. Is there a trial version available for Aspose.Email for .NET?
-Yes, you can download a free trial version from the official Aspose website.
+Yes, you can download a free trial version from the Aspose website.
 
 ### 4. Can I use Aspose.Email for .NET in both Windows and .NET Core applications?
 Yes, Aspose.Email for .NET is compatible with both Windows and .NET Core.

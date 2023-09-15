@@ -20,7 +20,7 @@ Before diving into the technical details, let's understand what Delivery Status 
 
 ## 3. Setting up Your Development Environment
 
-To get started, you'll need to set up your development environment. Ensure that you have Visual Studio and the Aspose.Email library installed. You can download Aspose.Email for C# from the official website [here](https://www.aspose.com/downloads/email/net).
+To get started, you'll need to set up your development environment. Ensure that you have Visual Studio and the Aspose.Email library installed. You can download Aspose.Email for C# from the website [here](https://www.aspose.com/downloads/email/net).
 
 ## 4. Initializing Aspose.Email for C#
 
@@ -66,7 +66,7 @@ A3: DSN support may vary among email providers. Check with your provider for com
 A4: Aspose.Email is primarily designed for C#, but it offers APIs for other languages too.
 
 ### Q5: Where can I find more resources and documentation?
-A5: Visit the official [Aspose.Email for C# API documentation](https://reference.aspose.com/email/net/) for comprehensive guides and examples.
+A5: Visit the [Aspose.Email for C# API documentation](https://reference.aspose.com/email/net/) for comprehensive guides and examples.
 
 ### 10. Conclusion
 

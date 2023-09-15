@@ -71,6 +71,6 @@ You can explore a variety of tutorials and examples in the API Aspose.Email for 
 
 ### How can I access the latest updates and releases of Aspose.Email for .NET?
 
-To access the latest updates and releases of Aspose.Email for .NET, visit the official release page: [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
+To access the latest updates and releases of Aspose.Email for .NET, visit the release page: [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
 
 ---

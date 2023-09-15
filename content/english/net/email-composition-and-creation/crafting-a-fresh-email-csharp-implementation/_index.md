@@ -10,33 +10,20 @@ url: /net/email-composition-and-creation/crafting-a-fresh-email-csharp-implement
 
 In the world of modern communication, email remains a staple method of correspondence. Crafting and sending emails programmatically can greatly streamline various business processes, such as sending transactional notifications, marketing campaigns, and more. In this article, we'll explore how to create a fresh email using C# with the help of the Aspose.Email for .NET library. We'll cover everything step by step, from setting up the environment to sending the email, complete with source code examples.
 
-## Outline
 
-1. Introduction
-2. Prerequisites
-3. Setting up the Project
-4. Creating Email Content
-5. Configuring SMTP Settings
-6. Sending the Email
-7. Handling Exceptions
-8. Conclusion
-9. FAQs
-
-## Step by Step Guide
-
-### Prerequisites
+## Prerequisites
 
 Before we dive into the implementation, make sure you have the following prerequisites in place:
 
 - Visual Studio or any C# development environment
 - Aspose.Email for .NET library (You can download it from NuGet)
 
-### Setting up the Project
+## Setting up the Project
 
 1. Create a new C# project in your chosen development environment.
 2. Add references to the Aspose.Email for .NET library.
 
-### Creating Email Content
+## Creating Email Content
 
 1. Import the necessary namespaces:
 
@@ -60,7 +47,7 @@ Before we dive into the implementation, make sure you have the following prerequ
    message.Body = "This is the content of the email.";
    ```
 
-### Configuring SMTP Settings
+## Configuring SMTP Settings
 
 1. Create an instance of the `SmtpClient` class:
 
@@ -78,7 +65,7 @@ Before we dive into the implementation, make sure you have the following prerequ
    client.SecurityOptions = SecurityOptions.Auto;
    ```
 
-### Sending the Email
+## Sending the Email
 
 1. Use the `client` instance to send the email:
 
@@ -86,7 +73,7 @@ Before we dive into the implementation, make sure you have the following prerequ
    client.Send(message);
    ```
 
-### Handling Exceptions
+## Handling Exceptions
 
 1. Wrap the email-sending code in a `try-catch` block to handle exceptions:
 

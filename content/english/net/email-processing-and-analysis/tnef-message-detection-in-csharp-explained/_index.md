@@ -78,7 +78,7 @@ foreach (var attachment in message.Attachments)
 
 ## FAQs
 
-## How Can I Check if an Email is a TNEF Message?
+### How Can I Check if an Email is a TNEF Message?
 
 To check if an email is a TNEF message, use the `IsTnefMessage()` method of the `MapiMessage` class:
 
@@ -87,7 +87,7 @@ MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
 bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## How Do I Extract Attachments from a TNEF Message?
+### How Do I Extract Attachments from a TNEF Message?
 
 To extract attachments from a TNEF message, follow these steps:
 

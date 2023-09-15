@@ -33,7 +33,7 @@ These are links to some useful resources:
 ## Aspose.Email For Java: The Email Management API Tutorials
 {{% alert color="primary" %}}
 
-Aspose.Email for Java tutorials offer an invaluable resource for developers seeking to harness the power of this robust API. These tutorials, hosted on the official Aspose website, provide clear and concise step-by-step guidance on how to leverage the full potential of Aspose.Email for Java. Whether you're a seasoned programmer or just starting, these tutorials cater to all levels of expertise, ensuring that developers can quickly grasp essential concepts and seamlessly integrate them into their email-related projects. From email security to message manipulation and beyond, these tutorials serve as a trusted companion, helping developers unlock the vast capabilities of Aspose.Email for Java with ease and efficiency.
+Aspose.Email for Java tutorials offer an invaluable resource for developers seeking to harness the power of this robust API. These tutorials, hosted on the Aspose website, provide clear and concise step-by-step guidance on how to leverage the full potential of Aspose.Email for Java. Whether you're a seasoned programmer or just starting, these tutorials cater to all levels of expertise, ensuring that developers can quickly grasp essential concepts and seamlessly integrate them into their email-related projects. From email security to message manipulation and beyond, these tutorials serve as a trusted companion, helping developers unlock the vast capabilities of Aspose.Email for Java with ease and efficiency.
 
 
 {{% /alert %}}

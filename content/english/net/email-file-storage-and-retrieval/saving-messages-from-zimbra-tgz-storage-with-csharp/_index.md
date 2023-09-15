@@ -16,7 +16,7 @@ Before diving into the technical details, let's introduce Aspose.Email for .NET 
 
 ### Setting up Your Environment
 
-Before we begin, ensure that you have the Aspose.Email for .NET library installed in your project. You can obtain the library from the official Aspose website and integrate it into your development environment.
+Before we begin, ensure that you have the Aspose.Email for .NET library installed in your project. You can obtain the library from the Aspose website and integrate it into your development environment.
 
 ### Importing the Required Namespace
 

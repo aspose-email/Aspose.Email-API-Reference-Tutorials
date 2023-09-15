@@ -18,7 +18,7 @@ Before you begin, ensure you have the following prerequisites in place:
 
 1. **Java Development Environment**: Set up a Java development environment on your system.
 
-2. **Aspose.Email for Java Library**: Download the Aspose.Email for Java library from the official download link:
+2. **Aspose.Email for Java Library**: Download the Aspose.Email for Java library from the download link:
 
    [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
@@ -34,7 +34,7 @@ Initiate a new Java project in your Integrated Development Environment (IDE).
 
 ## Step 3: Add Aspose.Email for Java library
 
-Download the Aspose.Email for Java library from the official link mentioned earlier. Add the JAR files to your project's classpath.
+Download the Aspose.Email for Java library from the link mentioned earlier. Add the JAR files to your project's classpath.
 
 ## Step 4: Import Aspose.Email classes
 

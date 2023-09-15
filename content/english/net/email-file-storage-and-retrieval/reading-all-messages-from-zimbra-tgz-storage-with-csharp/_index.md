@@ -20,7 +20,7 @@ Before we start coding, make sure you have the necessary tools and libraries ins
 
 1. Visual Studio: If you don't have it already, download and install Visual Studio, a popular integrated development environment (IDE) for C#.
 
-2. Aspose.Email for .NET: You can obtain Aspose.Email for .NET from the official website or via NuGet Package Manager in Visual Studio.
+2. Aspose.Email for .NET: You can obtain Aspose.Email for .NET from the website or via NuGet Package Manager in Visual Studio.
 
 3. Zimbra TGZ Sample Data: Ensure you have a sample TGZ file to work with. You can use the provided "ZimbraSample.tgz" file for this tutorial.
 

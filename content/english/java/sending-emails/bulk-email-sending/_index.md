@@ -18,7 +18,7 @@ Before you begin, make sure you have the following prerequisites in place:
 
 1. Java Development Environment: Ensure that you have a Java development environment set up on your system. You'll need Java to compile and run the Java code examples in this guide.
 
-2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the official download link:
+2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the download link:
 
    [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
@@ -34,7 +34,7 @@ Create a new Java project in your chosen Integrated Development Environment (IDE
 
 ## Step 3: Add Aspose.Email for Java library
 
-Download the Aspose.Email for Java library from the official download link:
+Download the Aspose.Email for Java library from the download link:
 
 [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 

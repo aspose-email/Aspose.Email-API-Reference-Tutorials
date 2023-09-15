@@ -30,7 +30,7 @@ Now that we've established the significance of MHT conversion, let's proceed to 
 
 To get started with changing fonts during MHT conversion, you'll need to set up your development environment. Here are the initial steps:
 
-1. Install Aspose.Email for .NET: If you haven't already, download and install the Aspose.Email for .NET library from the official website.
+1. Install Aspose.Email for .NET: If you haven't already, download and install the Aspose.Email for .NET library from the website.
 
 2. Create a C# Project: Open your favorite C# development environment, such as Visual Studio, and create a new C# project.
 
@@ -101,7 +101,7 @@ Now that you have the knowledge and tools to manipulate fonts in your MHT files,
 
 ### 4. Are there any licensing requirements for Aspose.Email for .NET?
 
-   Yes, Aspose.Email for .NET is a commercial library, and you will need an appropriate license to use it in your projects. Visit the official website for licensing details.
+   Yes, Aspose.Email for .NET is a commercial library, and you will need an appropriate license to use it in your projects. Visit the website for licensing details.
 
 ### 5. Can I automate the font-changing process in my applications?
 
