@@ -44,6 +44,5 @@ Questi sono i link ad alcune risorse utili:
 - [Configurazione dei server SMTP con Aspose.Email per Java](./java/configuring-smtp-servers/)
 - [Allegati e-mail avanzati con Aspose.Email per Java](./java/advanced-email-attachments/)
 - [Protezione delle comunicazioni e-mail con Aspose.Email per Java](./java/securing-email-communications/)
-- [Analisi e monitoraggio della posta elettronica con Aspose.Email per Java](./java/email-analytics-and-tracking/)
 - [Personalizzazione delle intestazioni e-mail con Aspose.Email per Java](./java/customizing-email-headers/)
 - [Esplorando la sicurezza e-mail con Aspose.Email per Java](./java/exploring-email-security/)

@@ -44,6 +44,5 @@ Aspose.Email for Java 教程为寻求利用这一强大 API 功能的开发人�
 - [使用 Aspose.Email for Java 配置 SMTP 服务器](./java/configuring-smtp-servers/)
 - [使用 Aspose.Email for Java 的高级电子邮件附件](./java/advanced-email-attachments/)
 - [使用 Aspose.Email for Java 保护电子邮件通信](./java/securing-email-communications/)
-- [使用 Aspose.Email for Java 进行电子邮件分析和跟踪](./java/email-analytics-and-tracking/)
 - [使用 Aspose.Email for Java 自定义电子邮件标头](./java/customizing-email-headers/)
 - [使用 Aspose.Email for Java 探索电子邮件安全](./java/exploring-email-security/)

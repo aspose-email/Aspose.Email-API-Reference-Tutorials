@@ -44,6 +44,5 @@ is_root: true
 - [Настройка SMTP-серверов с помощью Aspose.Email для Java](./java/configuring-smtp-servers/)
 - [Расширенные вложения электронной почты с помощью Aspose.Email для Java](./java/advanced-email-attachments/)
 - [Защита электронной почты с помощью Aspose.Email для Java](./java/securing-email-communications/)
-- [Аналитика и отслеживание электронной почты с помощью Aspose.Email для Java](./java/email-analytics-and-tracking/)
 - [Настройка заголовков электронной почты с помощью Aspose.Email для Java](./java/customizing-email-headers/)
 - [Изучение безопасности электронной почты с помощью Aspose.Email для Java](./java/exploring-email-security/)

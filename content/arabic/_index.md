@@ -44,6 +44,5 @@ is_root: true
 - [تكوين خوادم SMTP باستخدام Aspose.Email لـ Java](./java/configuring-smtp-servers/)
 - [مرفقات البريد الإلكتروني المتقدمة مع Aspose.Email لجافا](./java/advanced-email-attachments/)
 - [تأمين اتصالات البريد الإلكتروني مع Aspose.Email لجافا](./java/securing-email-communications/)
-- [تحليلات البريد الإلكتروني وتتبعه باستخدام Aspose.Email لـ Java](./java/email-analytics-and-tracking/)
 - [تخصيص رؤوس البريد الإلكتروني باستخدام Aspose.Email لـ Java](./java/customizing-email-headers/)
 - [استكشاف أمان البريد الإلكتروني باستخدام Aspose.Email لـ Java](./java/exploring-email-security/)

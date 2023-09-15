@@ -44,6 +44,5 @@ Bunlar bazı yararlı kaynaklara bağlantılar:
 - [Aspose.Email for Java ile SMTP Sunucularını Yapılandırma](./java/configuring-smtp-servers/)
 - [Aspose.Email for Java ile Gelişmiş E-posta Ekleri](./java/advanced-email-attachments/)
 - [Aspose.Email for Java ile E-posta İletişiminin Güvenliğini Sağlama](./java/securing-email-communications/)
-- [Aspose.Email for Java ile E-posta Analizi ve İzleme](./java/email-analytics-and-tracking/)
 - [Aspose.Email for Java ile E-posta Başlıklarını Özelleştirme](./java/customizing-email-headers/)
 - [Aspose.Email for Java ile E-posta Güvenliğini Keşfetmek](./java/exploring-email-security/)
