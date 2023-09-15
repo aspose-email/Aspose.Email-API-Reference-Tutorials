@@ -44,4 +44,6 @@ Learn how to safeguard TNEF attachments using C# and Aspose.Email for .NET. Step
 Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples.
 ### [Preserving Embedded MSG Format during Load with C#](./preserving-embedded-msg-format-during-load-with-csharp/)
 Learn how to preserve embedded MSG format using Aspose.Email for .NET. Step-by-step guide with source code.
+### [Preserving TNEF Attachments when Reading Messages - C# Approach](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Learn how to preserve TNEF attachments using Aspose.Email for .NET in this step-by-step guide with source code.
 

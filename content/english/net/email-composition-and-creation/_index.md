@@ -27,8 +27,6 @@ Master email creation in C# using Aspose.Email for .NET. A comprehensive guide w
 Learn to generate TNEF EML from MSG using Aspose.Email for .NET. Step-by-step guide with C# code. Efficient email format conversion.
 ### [Forming TNEF Format from MSG with C#](./forming-tnef-format-from-msg-with-csharp/)
 Learn how to convert MSG files to TNEF format using Aspose.Email for .NET. Create rich email content seamlessly. 
-### [Crafting a Draft Appointment Request -  C# Example](./crafting-a-draft-appointment-request-csharp-example/)
-Learn how to use Aspose.Email for .NET to create draft appointment request emails in C#. Enhance business communication and efficiency.
 ### [Setting Alternative Text for Images -  C# Guide](./setting-alternative-text-for-images-csharp-guide/)
  Learn to set alternative text for images in emails using Aspose.Email for .NET. Ensure accessibility with clear alt text. Documentation and code included.
 ### [Managing Default Text Encoding -  C# Implementation](./managing-default-text-encoding-csharp-implementation/)
