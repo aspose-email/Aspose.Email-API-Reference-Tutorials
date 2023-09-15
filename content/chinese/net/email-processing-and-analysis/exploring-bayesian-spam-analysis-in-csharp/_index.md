@@ -49,10 +49,10 @@ MailMessage message = MailMessage.Load("email.eml");
 创建贝叶斯垃圾邮件分析模型：
 
 ```csharp
-using Aspose.Email.Spam;
-
+using Aspose.Email.AntiSpam;
+string spamFilterDatabase = "SpamFilterDatabase.txt";
 //创建垃圾邮件分析器
-BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 ```
 
 ## 训练模型
@@ -61,8 +61,9 @@ BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
 
 ```csharp
 //使用垃圾邮件和火腿电子邮件进行训练
-spamAnalyzer.Train("spam1.eml", true);
-spamAnalyzer.Train("ham1.eml", false);
+spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+spamAnalyzer.SaveDatabase(spamFilterDatabase);
 ```
 
 ## 应用贝叶斯分析
@@ -71,7 +72,7 @@ spamAnalyzer.Train("ham1.eml", false);
 
 ```csharp
 //分析电子邮件
-double spamProbability = spamAnalyzer.Analyze(message);
+double spamProbability = spamAnalyzer.Test(message);
 bool isSpam = spamProbability > 0.5;
 ```
 
@@ -106,16 +107,17 @@ namespace BayesianSpamAnalysisDemo
         {
             //加载电子邮件
             MailMessage message = MailMessage.Load("email.eml");
-
+			string spamFilterDatabase = "SpamFilterDatabase.txt";
             //创建垃圾邮件分析器
-            BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+            SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 
             //训练模型
-            spamAnalyzer.Train("spam1.eml", true);
-            spamAnalyzer.Train("ham1.eml", false);
-
+			spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+			spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+			spamAnalyzer.SaveDatabase(spamFilterDatabase);
             //分析电子邮件
-            double spamProbability = spamAnalyzer.Analyze(message);
+			spamAnalyzer.LoadDatabase(spamFilterDatabase);
+            double spamProbability = spamAnalyzer.Test(message);
             bool isSpam = spamProbability > 0.5;
 
             //显示结果

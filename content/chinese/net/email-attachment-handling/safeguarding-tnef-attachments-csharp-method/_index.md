@@ -36,13 +36,15 @@ using Aspose.Email.Mapi;
 1. 加载 TNEF 文件：使用以下命令加载 TNEF 文件`MapiMessage`班级：
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. 提取附件：迭代附件并提取它们：
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    //提取附件数据
    byte[] attachmentData = attachment.GetContent();
@@ -59,7 +61,7 @@ foreach (MapiAttachment attachment in message.Attachments)
 应用保护措施后，您可以安全地保存附件：
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     //维护逻辑
     //...
@@ -88,7 +90,7 @@ TNEF 附件通常命名为“winmail.dat”并包含封装数据。当接收来�
 
 ### Aspose.Email 的更新发布频率如何？
 
- Aspose 经常发布对其库的更新和改进。建议检查 Aspose. 发布：[Aspose.Releases](https://releases.aspose.com/email/net/)或者[Aspose.Email for .Net API 参考](https://reference.aspose.com/email/net)了解最新的更新和功能。
+Aspose 经常发布对其库的更新和改进。建议检查 Aspose. 发布：[Aspose.Releases](https://releases.aspose.com/email/net/)或者[Aspose.Email for .Net API 参考](https://reference.aspose.com/email/net)了解最新的更新和功能。
 
 ### 我可以在商业项目中使用Aspose.Email吗？
 

@@ -16,7 +16,7 @@ Esta guía lo guiará a través del proceso de especificar direcciones de destin
 Antes de comenzar, asegúrese de tener lo siguiente:
 
 1. Visual Studio o cualquier entorno de desarrollo C# instalado.
-2. Aspose.Email para la biblioteca .NET. Puedes conseguirlo desde el[Aspose.Email para versiones .NET](https://releases.aspose.com/email/net/).
+2.  Aspose.Email para la biblioteca .NET. Puedes conseguirlo desde el[Aspose.Email para versiones .NET](https://releases.aspose.com/email/net/).
 
 ## Pasos
 

@@ -32,7 +32,9 @@ Para comenzar, carguemos un correo electrónico existente que contenga un archiv
 using Aspose.Email.Mail;
 
 // Cargue el correo electrónico con el archivo adjunto TNEF
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Extracción y modificación de archivos adjuntos TNEF
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // Extraer el archivo adjunto TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // Acceda a las propiedades de TNEF y modifíquelas si es necesario
+        //Acceda a las propiedades de TNEF y modifíquelas si es necesario
         // tnefAttachment.Propiedades...
     }
 }
@@ -60,7 +62,9 @@ Después de modificar el archivo adjunto TNEF, puede guardar el correo electrón
 
 ```csharp
 // Guardar el correo electrónico modificado
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Conclusión

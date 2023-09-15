@@ -36,13 +36,15 @@ TNEF eklerini korumak için öncelikle bunları yüklememiz ve çıkarmamız ger
 1.  TNEF Dosyasını Yükle: TNEF dosyasını kullanarak yükleyin.`MapiMessage` sınıf:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Ekleri Çıkart: Ekleri yineleyin ve çıkarın:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Ek verilerini çıkarın
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ Ekler çıkarıldıktan sonra koruma önlemlerinizi uygulayabilirsiniz. Bu, köt
 Koruma önlemlerinizi uyguladıktan sonra ekleri güvenli bir şekilde kaydedebilirsiniz:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Koruma mantığı
     // ...
-    // Eki kaydet
+    //Eki kaydet
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Evet, Aspose.Email, SMTP, POP3, IMAP ve Exchange Server gibi çeşitli e-posta p
 
 ### Aspose.Email için güncellemeler ne sıklıkta yayınlanıyor?
 
- Aspose, kütüphanelerinde sık sık güncellemeler ve iyileştirmeler yayınlar. Aspose.Release'ler'i kontrol etmeniz önerilir:[Aspose.Releases](https://releases.aspose.com/email/net/) veya[.Net API Referansı için Aspose.Email](https://reference.aspose.com/email/net) En son güncellemeler ve özellikler için.
+Aspose, kütüphanelerinde sık sık güncellemeler ve iyileştirmeler yayınlar. Aspose.Release'ler'i kontrol etmeniz önerilir:[Aspose.Releases](https://releases.aspose.com/email/net/) veya[.Net API Referansı için Aspose.Email](https://reference.aspose.com/email/net) En son güncellemeler ve özellikler için.
 
 ### Aspose.Email'i ticari projelerde kullanabilir miyim?
 

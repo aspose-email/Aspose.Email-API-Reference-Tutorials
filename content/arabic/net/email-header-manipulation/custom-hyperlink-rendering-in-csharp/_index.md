@@ -8,97 +8,113 @@ weight: 13
 url: /ar/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/
 ---
 
-سيرشدك هذا الدليل خلال عملية عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET. Aspose.Email for .NET هي مكتبة قوية تمكنك من العمل مع رسائل البريد الإلكتروني، بما في ذلك ميزات متنوعة مثل إنشاء رسائل البريد الإلكتروني وقراءتها ومعالجتها. في هذا البرنامج التعليمي، سنركز على كيفية تخصيص عرض الارتباط التشعبي في رسائل البريد الإلكتروني باستخدام المكتبة.
+في عالم اتصالات البريد الإلكتروني، يعد جعل الارتباطات التشعبية بارزة ومظهرها جذابًا أمرًا بالغ الأهمية لجذب انتباه القارئ. باعتباري كاتبًا ماهرًا في تحسين محركات البحث، سأرشدك خلال عملية عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET. سنستكشف كيفية تحسين مظهر الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك، مما يجعلها أكثر جاذبية للمستلمين.
 
-## المتطلبات الأساسية
+## مقدمة
 
-قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
+تحتوي رسائل البريد الإلكتروني غالبًا على ارتباطات تشعبية توجه المستخدمين إلى مواقع الويب أو الموارد الأخرى. افتراضيًا، تظهر هذه الارتباطات التشعبية كنص عادي في نص البريد الإلكتروني. ومع ذلك، باستخدام Aspose.Email for .NET، يمكنك تخصيص عرض الارتباطات التشعبية وإضافة نمط وتحسين رؤيتها.
 
-- Visual Studio أو أي بيئة تطوير أخرى لـ C#
--  Aspose.Email لمكتبة .NET (يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net))
-- المعرفة الأساسية بمفاهيم البرمجة والبريد الإلكتروني C#
+## تهيئة البيئة
 
-## خطوات
-
-اتبع الخطوات أدناه لتنفيذ عرض الارتباط التشعبي المخصص في C# باستخدام Aspose.Email لـ .NET:
-
-### الخطوة 1: إنشاء مشروع C# جديد
-
-افتح بيئة تطوير C# (مثل Visual Studio) وقم بإنشاء مشروع جديد.
-
-### الخطوة 2: إضافة مرجع إلى Aspose.Email
-
-قم بإضافة مرجع إلى مكتبة Aspose.Email for .NET في مشروعك. يمكنك القيام بذلك عن طريق النقر بزر الماوس الأيمن على مشروعك في Solution Explorer، وتحديد "إضافة" > "مرجع"، ثم الانتقال إلى الموقع الذي قمت بحفظ ملف Aspose.Email DLL فيه.
-
-### الخطوة 3: تهيئة كائن MailMessage
-
- إنشاء مثيل جديد لـ`MailMessage` فئة من مكتبة Aspose.Email. يمثل هذا الفصل رسالة بريد إلكتروني.
+قبل أن نتعمق في التعليمات البرمجية، دعونا نتأكد من إعداد كل شيء بشكل صحيح. ستحتاج إلى تثبيت Aspose.Email for .NET وإنشاء مشروع C#. تأكد من تضمين مراجع Aspose.Email الضرورية.
 
 ```csharp
 using Aspose.Email;
+using System;
+using System.IO;
 
-// ...
-
-MailMessage message = new MailMessage();
-```
-
-### الخطوة 4: إنشاء ارتباط تشعبي
-
- إنشاء`Hyperlink` الكائن وتعيين خصائصه، مثل عنوان URL ونص العرض.
-
-```csharp
-Hyperlink hyperlink = new Hyperlink("https://www.example.com"، "قم بزيارة موقعنا الإلكتروني")؛
-```
-
-### الخطوة 5: تخصيص عرض الارتباط التشعبي
-
- قم بتخصيص عرض الارتباط التشعبي باستخدام`TextFormattingCallback` ملكية. تسمح لك هذه الخاصية بتحديد وظيفة رد الاتصال التي سيتم استدعاؤها عند عرض الارتباط التشعبي.
-
-```csharp
-message.TextFormattingCallback = (sender, args) =>
+namespace CustomHyperlinkRendering
 {
-    if (args.Hyperlink != null)
+    class Program
     {
-        // تخصيص عرض الارتباط التشعبي هنا
-        string formattedText = $"[CustomLink: {args.Hyperlink.Text}]({args.Hyperlink.Uri})";
-        args.FormattedText = formattedText;
-        args.IsHandled = true; //تشير إلى أن العرض المخصص قد تم
+        static void Main(string[] args)
+        {
+            // قم بتعيين مسار دليل البيانات الخاص بك
+            string dataDir = "Your Data Directory";
+            var fileName = dataDir + "LinksSample.eml";
+            MailMessage msg = MailMessage.Load(fileName);
+
+            // عرض الارتباطات التشعبية باستخدام href
+            string renderedHtmlWithHref = RenderHyperlinkWithHref(msg.GetHtmlBodyText());
+
+            //عرض الارتباطات التشعبية بدون href
+            string renderedHtmlWithoutHref = RenderHyperlinkWithoutHref(msg.GetHtmlBodyText());
+
+            Console.WriteLine("Hyperlinks with Href:");
+            Console.WriteLine(renderedHtmlWithHref);
+
+            Console.WriteLine("Hyperlinks without Href:");
+            Console.WriteLine(renderedHtmlWithoutHref);
+        }
+
+        // سيتم هنا تنفيذ طرق عرض الارتباط التشعبي المخصصة
     }
-};
+}
 ```
 
- في الكود أعلاه، تستقبل وظيفة رد الاتصال`Hyperlink` الكائن ويمكنه معالجة خصائصه لتخصيص العرض. في هذا المثال، نقوم بتنسيق الارتباط التشعبي باستخدام بناء جملة نمط Markdown.
+## عرض الارتباطات التشعبية باستخدام Href
 
-### الخطوة 6: إضافة ارتباط تشعبي إلى نص البريد الإلكتروني
-
-أضف الارتباط التشعبي المخصص إلى نص البريد الإلكتروني.
+ في الكود المصدري المقدم، لدينا طريقتان:`RenderHyperlinkWithHref` و`RenderHyperlinkWithoutHref` . لنبدأ بالأول، الذي يعرض الارتباطات التشعبية مع ملف`href` يصف.
 
 ```csharp
-message.HtmlBody = "Please click the following link: [CustomLink: Visit our website](https://www.example.com)");
+private static string RenderHyperlinkWithHref(string source)
+{
+    int start = source.IndexOf("href=\"") + "href=\"".Length;
+    int end = source.IndexOf("\"", start + "href=\"".Length);
+    string href = source.Substring(start, end - start);
+    start = source.IndexOf(">") + 1;
+    end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    string link = string.Format("{0}<{1}>", text, href);
+    return link;
+}
 ```
 
-### الخطوة 7: احفظ أو أرسل البريد الإلكتروني
+ تقوم هذه الطريقة باستخراج`href` السمة ونص الارتباط من مصدر HTML ويجمعهما لإنشاء ارتباط تشعبي مخصص.
 
-يمكنك الآن حفظ البريد الإلكتروني في ملف أو إرساله باستخدام خادم SMTP الذي تختاره.
+## عرض الارتباطات التشعبية بدون Href
+
+ والآن دعنا ننتقل إلى`RenderHyperlinkWithoutHref` الطريقة، التي تعرض الارتباطات التشعبية بدون`href` يصف.
 
 ```csharp
-message.Save("custom_hyperlink_email.eml", SaveOptions.DefaultEml);
+private static string RenderHyperlinkWithoutHref(string source)
+{
+    int start = source.IndexOf(">") + 1;
+    int end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    return text;
+}
 ```
 
-## الأسئلة الشائعة
-
-### كيف يمكنني تخصيص عرض الارتباط التشعبي بشكل أكبر؟
-
-يمكنك تخصيص عرض الارتباط التشعبي بشكل أكبر عن طريق تعديل وظيفة رد الاتصال في الخطوة 5. يمكنك تغيير التنسيق أو تطبيق أنماط CSS أو حتى إنشاء هياكل HTML معقدة لعرض الارتباطات التشعبية.
-
-### هل يمكنني تخصيص الارتباطات التشعبية في رسائل البريد الإلكتروني ذات النص العادي؟
-
- نعم يمكنك ذلك. في الخطوة 5، يمكنك التحقق من`args.IsHtml`الخاصية لتحديد ما إذا كان العرض مخصصًا لبريد إلكتروني بتنسيق HTML أو بريد إلكتروني بنص عادي. وبعد ذلك، يمكنك تطبيق التخصيص الخاص بك وفقًا لذلك.
-
-### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
-
- يمكنك العثور على وثائق مفصلة وأمثلة التعليمات البرمجية لـ Aspose.Email لـ .NET في[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net).
+ تقوم هذه الطريقة باستخراج نص الارتباط مباشرة من مصدر HTML، باستثناء`href` يصف.
 
 ## خاتمة
 
- في هذا البرنامج التعليمي، تعلمت كيفية تخصيص عرض الارتباط التشعبي في لغة C# باستخدام Aspose.Email لـ .NET. من خلال الاستفادة من`TextFormattingCallback` الخاصية، يمكنك التحكم الكامل في كيفية عرض الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك. يتيح لك هذا إنشاء محتوى بريد إلكتروني جذاب وشخصي.
+يتيح لك عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET إضافة نمط وتفرد إلى الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك. سواء كنت تريد جعل الارتباطات التشعبية أكثر جاذبية من الناحية المرئية أو ببساطة استخراج النص، فإن Aspose.Email يوفر الأدوات التي تحتاجها.
+
+قم بتحسين اتصالات البريد الإلكتروني الخاصة بك عن طريق تخصيص الارتباطات التشعبية باستخدام Aspose.Email for .NET، وإشراك المستلمين بشكل أكثر فعالية.
+
+ لمزيد من المعلومات والوصول إلى الكود المصدري، قم بزيارة وثائق Aspose.Email API:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+---
+
+## الأسئلة الشائعة
+
+### 1. ما هو Aspose.Email لـ .NET؟
+   Aspose.Email for .NET هي مكتبة قوية تمكن المطورين من العمل مع رسائل البريد الإلكتروني في تطبيقات .NET الخاصة بهم. يوفر مجموعة واسعة من الميزات لإنشاء رسائل البريد الإلكتروني وتحليلها ومعالجتها.
+
+### 2. هل يمكنني تخصيص مظهر الارتباطات التشعبية في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET؟
+   نعم، يمكنك تخصيص عرض الارتباطات التشعبية في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET، كما هو موضح في هذه المقالة.
+
+### 3. هل هناك أي قيود على عرض الارتباط التشعبي المخصص في Aspose.Email لـ .NET؟
+   بينما يمكنك تحسين مظهر الارتباطات التشعبية، ضع في اعتبارك أن التخصيص المفرط قد لا يكون مدعومًا من قبل جميع عملاء البريد الإلكتروني. اختبر رسائل البريد الإلكتروني الخاصة بك في عملاء مختلفين لضمان التوافق.
+
+### 4. أين يمكنني العثور على المزيد من الموارد والأمثلة لاستخدام Aspose.Email لـ .NET؟
+    يمكنك استكشاف موارد إضافية وأمثلة التعليمات البرمجية في وثائق Aspose.Email API:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+### 5. كيف يمكنني الوصول إلى نموذج التعليمات البرمجية المصدر المستخدم في هذه المقالة؟
+    يمكنك الوصول إلى نموذج التعليمات البرمجية المصدر لعرض الارتباط التشعبي المخصص في C# باستخدام Aspose.Email لـ .NET من خلال زيارة رابط الوثائق المقدم:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+---
+
+في هذا الدليل الشامل، اكتشفنا عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email for .NET، مما يتيح لك إنشاء رسائل بريد إلكتروني جذابة مع ارتباطات تشعبية ذات تصميم جميل. لا تفوت فرصة تحسين اتصالاتك عبر البريد الإلكتروني وإبراز رسائلك. قم بالوصول إلى الرابط المقدم للبدء في رحلتك إلى المزيد من رسائل البريد الإلكتروني الجذابة.

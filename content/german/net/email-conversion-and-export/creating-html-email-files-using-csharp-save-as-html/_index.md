@@ -112,4 +112,4 @@ Ja, Aspose.Email unterstützt .NET Core, sodass Sie plattformübergreifende Anwe
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
 
-Sie können umfassende Beispiele und eine detaillierte Dokumentation dazu erkunden[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net) Seite.
+ Sie können umfassende Beispiele und eine detaillierte Dokumentation dazu erkunden[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net) Seite.

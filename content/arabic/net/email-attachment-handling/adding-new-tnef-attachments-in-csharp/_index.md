@@ -32,7 +32,9 @@ url: /ar/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 using Aspose.Email.Mail;
 
 // قم بتحميل البريد الإلكتروني بمرفق TNEF
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## استخراج وتعديل مرفقات TNEF
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // استخراج مرفق TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        //الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
         // tnefAttachment.Properties...
     }
 }
@@ -60,12 +62,14 @@ foreach (var attachment in message.Attachments)
 
 ```csharp
 // احفظ البريد الإلكتروني المعدل
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## خاتمة
 
-في هذه المقالة، اكتشفنا كيفية العمل مع مرفقات TNEF في لغة C# باستخدام Aspose.Email لـ .NET. لقد تعلمت كيفية تحميل بريد إلكتروني يحتوي على مرفقات TNEF، واستخراج تلك المرفقات وتعديلها، وحفظ البريد الإلكتروني المعدل.
+في هذه المقالة، اكتشفنا كيفية العمل مع مرفقات TNEF في لغة C# باستخدام Aspose.Email لـ .NET. لقد تعلمت كيفية تحميل بريد إلكتروني يحتوي على مرفقات TNEF، واستخراج هذه المرفقات وتعديلها، وحفظ البريد الإلكتروني المعدل.
 
 ## الأسئلة الشائعة
 

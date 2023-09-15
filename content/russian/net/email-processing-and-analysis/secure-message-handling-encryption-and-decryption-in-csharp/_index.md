@@ -43,7 +43,10 @@ url: /ru/net/email-processing-and-analysis/secure-message-handling-encryption-an
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 // Зашифровать сообщение
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 // Сохраните зашифрованное сообщение в файл или отправьте его.
 message.Save("encrypted.eml");

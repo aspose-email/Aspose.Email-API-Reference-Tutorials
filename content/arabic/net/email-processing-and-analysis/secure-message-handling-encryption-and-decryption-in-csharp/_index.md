@@ -43,7 +43,10 @@ url: /ar/net/email-processing-and-analysis/secure-message-handling-encryption-an
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 // تشفير الرسالة
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 // احفظ الرسالة المشفرة في ملف أو أرسلها
 message.Save("encrypted.eml");

@@ -120,6 +120,6 @@ Congratulazioni! Hai imparato con successo come costruire un nuovo messaggio di 
    Aspose.Email si concentra sulla creazione e manipolazione di e-mail. Per pianificare le e-mail, dovresti integrarti con un sistema di pianificazione delle attività separato.
 
 ### Dove posso trovare altri esempi e documentazione?
-    È possibile trovare documentazione completa ed esempi di codice su[Riferimento API Aspose.Email](https://reference.aspose.com/email/net/).
+   È possibile trovare documentazione completa ed esempi di codice su[Riferimento API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---

@@ -16,7 +16,7 @@ Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak C#'ta alıcı adre
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 1. Visual Studio veya yüklü herhangi bir C# geliştirme ortamı.
-2. Aspose.Email for .NET kütüphanesi. Şu adresten alabilirsiniz:[.NET Sürümleri için Aspose.Email](https://releases.aspose.com/email/net/).
+2.  Aspose.Email for .NET kütüphanesi. Şu adresten alabilirsiniz:[.NET Sürümleri için Aspose.Email](https://releases.aspose.com/email/net/).
 
 ## Adımlar
 

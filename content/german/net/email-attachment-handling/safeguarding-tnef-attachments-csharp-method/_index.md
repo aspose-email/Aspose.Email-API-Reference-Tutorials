@@ -36,13 +36,15 @@ Um TNEF-Anhänge zu schützen, müssen wir sie zunächst laden und extrahieren. 
 1.  TNEF-Datei laden: Laden Sie die TNEF-Datei mit`MapiMessage` Klasse:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Anhänge extrahieren: Durchlaufen Sie die Anhänge und extrahieren Sie sie:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Anhangsdaten extrahieren
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ Sobald die Anhänge extrahiert wurden, können Sie Ihre Schutzmaßnahmen umsetze
 Nachdem Sie Ihre Sicherheitsmaßnahmen ergriffen haben, können Sie die Anhänge sicher speichern:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Logik schützen
     // ...
-    // Speichern Sie den Anhang
+    //Speichern Sie den Anhang
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Ja, Aspose.Email unterstützt verschiedene E-Mail-Protokolle wie SMTP, POP3, IMA
 
 ### Wie oft werden Updates für Aspose.Email veröffentlicht?
 
- Aspose veröffentlicht regelmäßig Updates und Verbesserungen für seine Bibliotheken. Es wird empfohlen, Aspose.Releases zu überprüfen:[Aspose.Releases](https://releases.aspose.com/email/net/) oder[Aspose.Email für .Net API-Referenz](https://reference.aspose.com/email/net) für die neuesten Updates und Funktionen.
+Aspose veröffentlicht regelmäßig Updates und Verbesserungen für seine Bibliotheken. Es wird empfohlen, Aspose.Releases zu überprüfen:[Aspose.Releases](https://releases.aspose.com/email/net/) oder[Aspose.Email für .Net API-Referenz](https://reference.aspose.com/email/net) für die neuesten Updates und Funktionen.
 
 ### Kann ich Aspose.Email in kommerziellen Projekten verwenden?
 

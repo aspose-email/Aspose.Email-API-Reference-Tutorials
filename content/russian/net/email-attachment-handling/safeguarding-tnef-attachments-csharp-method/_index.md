@@ -36,13 +36,15 @@ using Aspose.Email.Mapi;
 1.  Загрузить файл TNEF: Загрузите файл TNEF, используя`MapiMessage` сорт:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Извлечение вложений. Перебирайте вложения и извлекайте их:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Извлечь данные вложения
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ foreach (MapiAttachment attachment in message.Attachments)
 После применения мер безопасности вы можете безопасно сохранить вложения:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Защита логики
     // ...
-    // Сохраните вложение
+    //Сохраните вложение
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ foreach (MapiAttachment attachment in message.Attachments)
 
 ### Как часто выходят обновления для Aspose.Email?
 
- Aspose часто выпускает обновления и улучшения своих библиотек. Рекомендуется проверить Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/) или[Справочник по API Aspose.Email для .Net](https://reference.aspose.com/email/net) для получения последних обновлений и функций.
+Aspose часто выпускает обновления и улучшения своих библиотек. Рекомендуется проверить Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/) или[Справочник по API Aspose.Email для .Net](https://reference.aspose.com/email/net) для получения последних обновлений и функций.
 
 ### Могу ли я использовать Aspose.Email в коммерческих проектах?
 

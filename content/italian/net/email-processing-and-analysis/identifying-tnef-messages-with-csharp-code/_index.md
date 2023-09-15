@@ -12,11 +12,11 @@ Aspose.Email per .NET è una potente libreria che fornisce supporto completo per
 
 ## Introduzione ai messaggi TNEF
 
-I messaggi TNEF, noti anche come allegati "winmail.dat", possono causare problemi di compatibilità quando si tenta di visualizzare o elaborare il contenuto della posta elettronica su client di posta elettronica non Microsoft. Questi messaggi incapsulano vari tipi di informazioni, tra cui testo formattato, allegati e metadati, rendendo fondamentale rilevarli e gestirli correttamente.
+messaggi TNEF, noti anche come allegati "winmail.dat", possono causare problemi di compatibilità quando si tenta di visualizzare o elaborare il contenuto della posta elettronica su client di posta elettronica non Microsoft. Questi messaggi incapsulano vari tipi di informazioni, tra cui testo formattato, allegati e metadati, rendendo fondamentale rilevarli e gestirli correttamente.
 
 ## Impostazione dell'ambiente di sviluppo
 
-Prima di approfondire il codice, assicurati di aver installato la libreria Aspose.Email per .NET. Puoi scaricarlo da[Qui](https://releases.aspose.com/email/net). Una volta scaricato, segui questi passaggi per configurare il tuo ambiente di sviluppo:
+ Prima di approfondire il codice, assicurati di aver installato la libreria Aspose.Email per .NET. Puoi scaricarlo da[Qui](https://releases.aspose.com/email/net). Una volta scaricato, segui questi passaggi per configurare il tuo ambiente di sviluppo:
 
 1. Crea un nuovo progetto C# nel tuo ambiente di sviluppo preferito.
 2. Aggiungi un riferimento alla libreria Aspose.Email scaricata.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Ora che abbiamo caricato il messaggio di posta elettronica, dobbiamo determinare se si tratta di un messaggio TNEF. Aspose.Email fornisce il`MailMessage.IsTnef` proprietà a questo scopo. Ecco come puoi usarlo:
 
 ```csharp
-// Controlla se il messaggio è un messaggio TNEF
-if (message.IsTnef)
+//Controlla se il messaggio è un messaggio TNEF
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Estrazione dei dati dai messaggi TNEF
-
-Se il messaggio è effettivamente un messaggio TNEF, puoi estrarne vari dati. Ad esempio, puoi estrarre il contenuto di testo semplice come segue:
-
-```csharp
-if (message.IsTnef)
-{
-    // Estrai contenuto di testo semplice da TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Gestione degli allegati all'interno dei messaggi TNEF
 
-messaggi TNEF spesso contengono allegati. Per estrarre e salvare questi allegati, è possibile utilizzare il seguente codice:
+I messaggi TNEF spesso contengono allegati. Per estrarre e salvare questi allegati, è possibile utilizzare il seguente codice:
 
 ```csharp
-if (message.IsTnef)
+// Scorrere gli allegati
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Estrai l'allegato TNEF
+        var tnefAttachment = attachment;
+
+        //Accedi alle proprietà TNEF e modificale se necessario
+        // tnefAttachment.Properties...
     }
 }
 ```

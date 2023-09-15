@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Erstellen Sie eine Instanz des ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Stellen Sie eine Verbindung zum Server her
-    client.Connect(host, port, true);
-
-    // Anmeldung
-    client.Login(username, password);
-    
+   
     // Hier finden Sie Ihren Code zum Abrufen und Analysieren zurückgesendeter Nachrichten
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Suchen Sie nach zurückgesendeten Nachrichten
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Hier finden Sie Ihren Code zur Analyse von Bounce-Benachrichtigungen
 }
@@ -89,7 +84,7 @@ Bounce-Benachrichtigungen enthalten wertvolle Informationen darüber, warum eine
 // Rufen Sie die Nachricht ab
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Suchen Sie nach Bounce-Headern
+// Suchen Sie nach Bounce-Headern
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
@@ -126,7 +121,7 @@ Die Automatisierung des Prozesses zur Überprüfung zurückgesendeter Nachrichte
 
 ### Wie genau ist die Bounce-Analyse?
 
-Die vom Code bereitgestellte Bounce-Analyse ist ziemlich genau. Es kategorisiert Bounce-Typen basierend auf Standard-E-Mail-Headern und hilft Ihnen zu verstehen, warum E-Mails zurückgesendet werden.
+Die vom Code bereitgestellte Bounce-Analyse ist ziemlich genau. Es kategorisiert Bounce-Typen basierend auf Standard-E-Mail-Headern und hilft Ihnen zu verstehen, warum E-Mails zurückgesendet wurden.
 
 ### Kann ich diesen Ansatz für jeden E-Mail-Dienst verwenden?
 

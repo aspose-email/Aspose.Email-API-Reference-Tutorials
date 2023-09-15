@@ -89,7 +89,7 @@ In diesem Leitfaden haben Sie erfahren, wie Sie mithilfe der Aspose.Email for .N
 
 ### Wie erhalte ich die Aspose.Email für .NET-Bibliothek?
 
- Sie können die Aspose.Email für .NET-Bibliothek aus den Aspose-Releases beziehen:[Laden Sie Aspose.Email für .NET herunter](https://releases.aspose.com/email/net).
+Sie können die Aspose.Email für .NET-Bibliothek aus den Aspose-Releases beziehen:[Laden Sie Aspose.Email für .NET herunter](https://releases.aspose.com/email/net).
 
 ### Kann ich Aspose.Email für andere Formate als MSG verwenden?
 

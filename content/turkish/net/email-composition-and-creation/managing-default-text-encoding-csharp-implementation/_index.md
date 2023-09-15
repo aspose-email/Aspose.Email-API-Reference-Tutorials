@@ -23,11 +23,11 @@ Varsayılan metin kodlaması, belirli bir kodlama belirtilmemişse metni kodlark
 
 Doğru metin kodlamasını kullanmak çeşitli nedenlerden dolayı çok önemlidir:
 ### Veri bütünlüğü:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Yanlış kodlama, depolama veya iletim sırasında verilerin bozulmasına yol açabilir.
 ### Çok Dilli Destek: 
-	Different languages require different encodings to display characters correctly.
+Farklı diller, karakterlerin doğru şekilde görüntülenmesi için farklı kodlamalar gerektirir.
 ### Uyumluluk:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Doğru kodlama, verilerin farklı sistemler arasında sorunsuz bir şekilde değiş tokuş edilmesini sağlar.
 
 ## Aspose.Email for .NET ile tanışın
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## 3. Adım: Varsayılan Metin Kodlamasını Ayarlama
-
-E-postalarınız için varsayılan metin kodlamasını ayarlamak için aşağıdaki kod parçasını kullanabilirsiniz. Bu örnekte kodlamayı UTF-16 olarak ayarlıyoruz.
-
-```csharp
-// Varsayılan metin kodlamasını UTF-16 olarak ayarlayın
-client.Encoding = Encoding.Unicode;
-```
-
-## 4. Adım: Özel Kodlamayla E-posta Gönderme
+## 3. Adım: Özel Kodlamayla E-posta Gönderme
 
 Bir e-posta gönderirken e-posta gövdesi için özel bir metin kodlaması belirleyebilirsiniz. Bu, belirli kodlamalar gerektiren dillerde e-posta gönderirken yararlı olabilir.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Adım 4: Varsayılan Metin Kodlamasını Ayarlama
+
+E-postalarınız için varsayılan metin kodlamasını ayarlamak için aşağıdaki kod parçasını kullanabilirsiniz. Bu örnekte kodlamayı UTF-16 olarak ayarlıyoruz.
+
+```csharp
+// Varsayılan metin kodlamasını UTF-16 olarak ayarlayın
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Adım 5: E-postaları Alma ve Kodlarını Çözme
 
 E-posta alırken, belirli bir kodlama kullanılarak gönderilmişse e-posta gövdesinin kodunu çözmeniz gerekebilir. Gelen bir e-postanın metnini şu şekilde çözebilirsiniz:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Metin Kodlamada Yaygın Zorluklar
 
 ### Eşleşmeyen Kodlamalar: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+E-posta göndermek ve almak için farklı kodlamalar kullanmak, metnin bozuk olmasına yol açabilir.
 ### Desteklenmeyen Karakterler:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Bazı kodlamalar belirli karakterleri desteklemeyebilir ve bu durum karakter değişimine veya kaybına yol açabilir.
 ### Dosya Bozulması: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+E-postaları dosya olarak kaydederken yanlış kodlama, dosyaların bozulmasına neden olabilir.
 
 ## Metin Kodlama için En İyi Uygulamalar
 

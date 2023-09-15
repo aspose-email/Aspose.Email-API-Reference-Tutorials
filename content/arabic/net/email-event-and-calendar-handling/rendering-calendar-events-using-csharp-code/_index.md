@@ -8,153 +8,85 @@ weight: 15
 url: /ar/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
 
-## تثبيت حزمة Aspose.Email NuGet
 
-للبدء، تأكد من إعداد مشروع .NET. يمكنك تثبيت حزمة Aspose.Email NuGet باستخدام الأمر التالي في وحدة تحكم إدارة الحزم الخاصة بمشروعك:
+في العصر الرقمي الحالي، تعد إدارة أحداث التقويم بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حدٍ سواء. يوفر Aspose.Email for .NET مجموعة قوية من الأدوات للتعامل مع أحداث التقويم وتحقيق أقصى استفادة من احتياجات الجدولة الخاصة بك. في هذا الدليل المفصّل خطوة بخطوة، سنرشدك خلال عملية عرض أحداث التقويم باستخدام كود C# مع Aspose.Email for .NET.
 
-```csharp
-Install-Package Aspose.Email
-```
+## مقدمة إلى Aspose.Email لـ .NET
 
-## تهيئة التطبيق
+قبل أن نتعمق في التعليمات البرمجية وتنفيذها، دعنا نقدم بإيجاز Aspose.Email for .NET. إنها واجهة برمجة تطبيقات قوية تسمح للمطورين بإنشاء رسائل البريد الإلكتروني وأحداث التقويم ومعالجتها وإدارتها بتنسيقات مختلفة. باستخدام Aspose.Email، يمكنك العمل بسلاسة مع ملفات Outlook PST وExchange Server والمهام الأخرى المتعلقة بالبريد الإلكتروني. في هذا البرنامج التعليمي، سوف نركز على إمكانيات عرض أحداث التقويم الخاصة به.
 
- قم بتهيئة مكتبة Aspose.Email في التطبيق الخاص بك عن طريق إضافة توجيه الاستخدام الضروري وإنشاء مثيل لـ`MailMessage` فصل:
+## المتطلبات الأساسية
 
-```csharp
-using Aspose.Email;
+قبل البدء في البرمجة، تأكد من توفر المتطلبات الأساسية التالية:
 
-// تهيئة التطبيق
-MailMessage message = new MailMessage();
-```
+1.  Aspose.Email for .NET: يمكنك تنزيل أحدث إصدار من[هنا](https://releases.aspose.com/email/net/).
 
-## تحميل بيانات التقويم
+2. بيئة تطوير C#: أنت بحاجة إلى إعداد بيئة تطوير C# على جهازك.
 
-## إنشاء مثيل للتقويم
+3. ملف حدث التقويم: قم بإعداد ملف حدث تقويم نموذجي. في هذا البرنامج التعليمي، سنستخدم "Meeting with Recurring Occurrences.msg."
 
- للعمل مع أحداث التقويم، ستحتاج إلى إنشاء مثيل لـ`Calendar` فئة من مكتبة Aspose.Email:
+## إعداد الكود
+
+لنبدأ بإعداد كود C# لعرض أحداث التقويم.
 
 ```csharp
-Calendar calendar = new Calendar();
-```
-
-## تحميل بيانات التقويم من ملف ICS
-
- يمكنك تحميل بيانات التقويم من ملف ICS (iCalendar) باستخدام الملف`CalendarReader` فصل:
-
-```csharp
-CalendarReader reader = new CalendarReader("path/to/your/calendar.ics");
-Calendar loadedCalendar = reader.Read();
-```
-
-## عرض أحداث التقويم
-
-## إنشاء حاوية الإخراج المقدمة
-
-لعرض أحداث التقويم، تحتاج إلى حاوية للاحتفاظ بالمخرجات. يمكنك إنشاء حاوية HTML باستخدام`HtmlView` فصل:
-
-```csharp
-HtmlView htmlView = new HtmlView();
-```
-
-## تطبيق خيارات العرض
-
-قبل العرض، يمكنك تطبيق خيارات متنوعة لتخصيص مظهر المخرجات. على سبيل المثال، يمكنك تعيين تاريخي البدء والانتهاء للعرض:
-
-```csharp
-htmlView.CalendarStart = DateTime.Today;
-htmlView.CalendarEnd = DateTime.Today.AddDays(7);
-```
-
-## عرض أحداث التقويم
-
- عرض أحداث التقويم باستخدام`Render` طريقة:
-
-```csharp
-string renderedOutput = htmlView.Render(calendar);
-```
-
-## التخصيص
-
-## تصميم الإخراج المقدم
-
-يمكنك تصميم المخرجات المقدمة عن طريق تعديل خصائص CSS لحاوية HTML:
-
-```csharp
-htmlView.Styles = "body { font-family: Arial, sans-serif; }";
-```
-
-## إضافة تفاصيل الحدث
-
-قم بتحسين المخرجات المقدمة عن طريق إضافة تفاصيل الحدث، مثل أسماء الأحداث وأوصافها:
-
-```csharp
-htmlView.EventFormatter = (eventInfo) =>
+// المسار إلى دليل الملفات.
+string dataDir = "Your Data Directory";
+string fileName = "Meeting with Recurring Occurrences.msg";
+MailMessage msg = MailMessage.Load(dataDir + fileName);
+MhtSaveOptions options = new MhtSaveOptions();
 {
-    return $"<b>{eventInfo.StartDate}: {eventInfo.Summary}</b><br>{eventInfo.Description}<br><br>";
+    options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent;
+
+    // قم بتنسيق تفاصيل الإخراج إذا لزم الأمر - اختياري
+
+    // اضبط العرض لخاصية البدء
+    if (options.FormatTemplates.ContainsKey(MhtTemplateName.Start))
+        options.FormatTemplates[MhtTemplateName.Start] = @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>"; 
+    else
+        options.FormatTemplates.Add(MhtTemplateName.Start, @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
+
+    // متابعة ضبط العرض للعقارات الأخرى...
 };
+
+msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
 ```
 
-## التعامل مع تفاعل المستخدم
+## فهم الكود
 
-## الاستجابة لنقرات المستخدم
+الآن، دعونا نحلل الكود ونفهم كل جزء:
 
-يمكنك جعل الأحداث المعروضة تفاعلية من خلال الاستجابة لنقرات المستخدم. على سبيل المثال، فتح تفاصيل الحدث عند النقر فوق الحدث:
+-  نبدأ بتحميل ملف حدث التقويم ("Meeting with Recurring Occurrences.msg") باستخدام الملف`MailMessage.Load` طريقة.
 
-```csharp
-htmlView.EventClick += (sender, eventArgs) =>
-{
-    EventInfo clickedEvent = eventArgs.Event;
-    // التعامل مع الحدث انقر فوق المنطق هنا
-};
-```
+-  نحن ننشئ`MhtSaveOptions` كائن لتحديد كيف نريد حفظ الإخراج.
 
-## التنقل عبر الأحداث
+- في ال`options.MhtFormatOptions`، نحدد أننا نريد عرض معلومات حدث التقويم.
 
-تمكين المستخدمين من التنقل عبر الأحداث باستخدام أزرار التنقل:
+- لدينا بعد ذلك خيار تنسيق تفاصيل الإخراج لخصائص مختلفة مثل البداية والنهاية والتكرار وRecurrencePattern والمنظم وRequiredAttendees.
 
-```csharp
-htmlView.ShowNavigation = true;
-```
-
-## معالجة الأخطاء
-
-## معالجة أخطاء التحميل والعرض
-
-من المهم معالجة الأخطاء المحتملة عند تحميل بيانات التقويم وعرضها:
-
-```csharp
-try
-{
-    Calendar loadedCalendar = reader.Read();
-    string renderedOutput = htmlView.Render(loadedCalendar);
-}
-catch (Exception ex)
-{
-    // التعامل مع أخطاء التحميل أو العرض
-}
-```
+- وأخيرًا، نقوم بحفظ حدث التقويم المعروض كملف MHTML.
 
 ## خاتمة
 
-في هذه المقالة، اكتشفنا كيفية عرض أحداث التقويم باستخدام كود C# ومكتبة Aspose.Email for .NET. لقد تعلمت كيفية تهيئة التطبيق، وتحميل بيانات التقويم من ملف ICS، وتخصيص العرض، والتعامل مع تفاعل المستخدم، وإدارة الأخطاء المحتملة. باتباع هذه الخطوات، يمكنك دمج وظائف التقويم بسلاسة في تطبيقاتك، مما يوفر للمستخدمين تجربة غنية وتفاعلية.
+في هذا البرنامج التعليمي، اكتشفنا كيفية عرض أحداث التقويم باستخدام كود C# مع Aspose.Email لـ .NET. يوفر Aspose.Email طريقة مباشرة وفعالة للعمل مع أحداث التقويم، مما يجعله خيارًا ممتازًا لإدارة مهام الجدولة في تطبيقاتك.
+
+يمكنك الآن الاستفادة من قوة Aspose.Email for .NET للتعامل مع أحداث التقويم بسلاسة، وتحسين إنتاجيتك وتعزيز إمكانيات الجدولة لديك.
 
 ## الأسئلة الشائعة
 
-### كيف أقوم بتثبيت حزمة Aspose.Email NuGet؟
+1. ما هو Aspose.Email لـ .NET؟
+   Aspose.Email for .NET عبارة عن واجهة برمجة تطبيقات تسمح للمطورين بالعمل مع رسائل البريد الإلكتروني وأحداث التقويم بتنسيقات مختلفة داخل تطبيقات .NET.
 
-يمكنك تثبيت حزمة Aspose.Email NuGet باستخدام الأمر التالي:
-```csharp
-Install-Package Aspose.Email
-```
+2. أين يمكنني تنزيل Aspose.Email لـ .NET؟
+    يمكنك تنزيل Aspose.Email لـ .NET من[هنا](https://releases.aspose.com/email/net/).
 
-### هل يمكنني تخصيص نمط الإخراج المقدم؟
+3. هل يمكنني تخصيص تنسيق تفاصيل أحداث التقويم؟
+   نعم، يمكنك تخصيص تنسيق تفاصيل حدث التقويم كما هو موضح في مثال الكود.
 
-نعم، يمكنك تخصيص نمط المخرجات المقدمة عن طريق تعديل خصائص CSS لحاوية HTML.
+4. هل Aspose.Email مناسب للعمل مع بيانات Outlook؟
+   نعم، يعد Aspose.Email مثاليًا للعمل مع ملفات Outlook PST وبيانات Exchange Server.
 
-### هل من الممكن جعل أحداث التقويم المقدمة تفاعلية؟
+5. هل هناك أي ميزات أخرى في Aspose.Email لـ .NET؟
+   نعم، يقدم Aspose.Email مجموعة واسعة من الميزات لإدارة البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني واستلامها ومعالجتها.
 
-قطعاً! يمكنك جعل أحداث التقويم المعروضة تفاعلية من خلال الاستجابة لنقرات المستخدم وإضافة وظيفة التنقل.
-
-### كيف أتعامل مع الأخطاء عند تحميل بيانات التقويم أو عرضها؟
-
-يمكنك استخدام كتل محاولة الالتقاط لمعالجة الأخطاء المحتملة عند تحميل بيانات التقويم أو عرضها. وهذا يضمن تجربة مستخدم سلسة حتى في حالة حدوث مشكلات غير متوقعة.
+ لا تتردد في استكشاف[وثائق Aspose.Email API](https://reference.aspose.com/email/net/) لمزيد من التفاصيل وسيناريوهات الاستخدام المتقدمة. ترميز سعيد!

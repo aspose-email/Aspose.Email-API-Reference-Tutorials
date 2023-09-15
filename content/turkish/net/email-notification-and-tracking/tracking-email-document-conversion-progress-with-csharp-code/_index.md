@@ -8,101 +8,96 @@ weight: 12
 url: /tr/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-E-posta iletişimi hem kişisel hem de profesyonel amaçlarla hayatımızın ayrılmaz bir parçası haline geldi. Kritik e-postalarla uğraşırken bildirimlerin derhal alındığından ve izleme mekanizmalarının mevcut olduğundan emin olmak önemlidir. Aspose.Email for .NET, verimli e-posta bildirimi ve takibi için güçlü bir çözüm sunar. Bu kılavuzda, her aşama için kaynak kodu örnekleri sunarak süreç boyunca size adım adım yol göstereceğiz.
+Günümüzün dijital çağında, e-posta iletişimi hem kişisel hem de profesyonel alanlarda çok önemli bir rol oynamaktadır. Bir programcı olarak, e-posta mesajlarını programlı bir şekilde işleme ve değiştirme ihtiyacıyla karşılaşmış olabilirsiniz. Yaygın görevlerden biri, e-posta belgesi dönüştürme işleminin ilerlemesini izlemektir ve bu makalede, C# ve Aspose.Email for .NET kullanarak süreç boyunca size adım adım rehberlik edeceğiz.
 
-## E-posta Bildirimi ve Takibine Giriş
+## Aspose.Email for .NET'e giriş
 
-Etkili iletişim çoğu zaman zamanında bildirim yapılmasını ve alıcıların içerikle etkileşimini takip edebilmeyi gerektirir. İster önemli bir iş teklifi ister promosyon teklifi olsun, bir e-postanın ne zaman açıldığını bilmek ve yanıtları yönetebilmek, sonuçlarınızı önemli ölçüde etkileyebilir.
+Koda dalmadan önce Aspose.Email for .NET'e kısa bir giriş yapalım. Bu güçlü kitaplık, e-posta iletileriyle çalışmak için çeşitli biçimlerdeki e-postaları okumak, yazmak ve dönüştürmek de dahil olmak üzere çok çeşitli özellikler sağlar. Bizim durumumuzda e-posta belgesi dönüşümüne odaklanacağız.
 
-## Geliştirme Ortamını Kurma
+## Ortamınızı Kurma
 
-Uygulamaya geçmeden önce, geliştirme ortamınızda Aspose.Email for .NET'in kurulu olduğundan emin olun. Değilse Aspose Sürümlerinden indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net).
+Başlamak için geliştirme ortamınızı ayarlamanız gerekir. Aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-Tercih ettiğiniz .NET dilini (C# veya VB.NET) kullanarak Visual Studio'da yeni bir proje oluşturun.
+-  Aspose.Email for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net/).
 
-## E-posta Bildirimleri Gönderme
+Şimdi koda geçelim. Sağlanan C# kaynak kodunu kullanarak e-posta belgesi dönüştürme ilerlemesini izlemeye ilişkin adım adım bir kılavuz oluşturacağız.
 
-Alıcılara e-posta bildirimleri göndererek başlayalım. Aspose.Email for .NET kullanarak bir e-postanın nasıl oluşturulup gönderileceğine dair temel bir örnek:
+## Adım 1: E-posta Mesajını Yükleme
+
+ E-posta mesajını bir dosyadan yükleyerek başlıyoruz. Değiştirdiğinizden emin olun`"Your Document Directory"` belge dizininizin gerçek yolu ile.
 
 ```csharp
-using Aspose.Email;
-
-// Yeni bir e-posta mesajı oluştur
-MailMessage message = new MailMessage();
-
-// Alıcı ekle
-message.To.Add("recipient@example.com");
-
-// E-posta içeriğini ayarlayın
-message.Subject = "Important Update";
-message.Body = "Dear recipient, we have an important update for you.";
-
-// E-posta önceliğini belirtin
-message.Priority = MailPriority.High;
-
-// E-postayı gönder
-SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
-client.Send(message);
+string dataDir = "Your Document Directory";
+var fileName = dataDir + "test.eml";
+MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## E-posta İzlemeyi Uygulama
+## Adım 2: Özel Bir İlerleme İşleyicisi Tanımlama
 
-E-posta açılışlarını izlemek için e-posta içeriğine izleme pikselleri yerleştirebiliriz. Piksel yüklendiğinde e-postanın açıldığını kaydedebiliriz. Aspose.Email for .NET kullanarak e-posta izlemeyi nasıl uygulayacağınız aşağıda açıklanmıştır:
-
-```csharp
-// İzleme pikselini oluşturun
-string trackingPixel = "<img src='https://izleme sunucunuz.com/track?id=123456' alt='' width='1' height='1' />";
-
-// Pikselin e-posta gövdesine eklenmesi
-message.HtmlBody = $"Dear recipient, {trackingPixel} we have an important update for you.";
-```
-
-## E-posta Yanıtlarını Yönetme
-
-E-posta yanıtlarını programlı bir şekilde yönetmek için yanıtların beklendiği gelen kutusunu izleyebilir ve içeriklerini çıkarabilirsiniz. İşte basitleştirilmiş bir örnek:
+ Bu adımda, dönüşüm ilerlemesini izlemek için özel bir ilerleme işleyicisi ayarladık.`ShowEmlConversionProgress` İlerleme durumu hakkında bilgi sağlamak için dönüştürme işlemi sırasında yöntem çağrılacaktır.
 
 ```csharp
-using Aspose.Email;
-
-// Posta kutusuna bağlanın
-ImapClient client = new ImapClient("imap.example.com", "username", "password");
-client.SelectFolder(ImapFolderInfo.InBox);
-
-// Yanıt e-postalarını arayın
-MailQueryBuilder queryBuilder = new MailQueryBuilder();
-queryBuilder.HasFlags(ImapMessageFlags.Answered);
-MailQuery query = queryBuilder.GetQuery();
-
-// Yanıt e-postalarını alın ve işleyin
-ImapMessageInfoCollection replyEmails = client.ListMessages(query);
-foreach (ImapMessageInfo reply in replyEmails)
+private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 {
-    MailMessage replyMessage = client.FetchMessage(reply.UniqueId);
-    // Yanıt içeriğini burada işleyin
+    int total;
+    int saved;
+    switch (info.EventType)
+    {
+        case ProgressEventType.MimeStructureCreated:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimeStructureCreated - TotalMimePartCount: " + total);
+            Console.WriteLine("MimeStructureCreated - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.MimePartSaved:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimePartSaved - TotalMimePartCount: " + total);
+            Console.WriteLine("MimePartSaved - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.SavedToStream:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("SavedToStream - TotalMimePartCount: " + total);
+            Console.WriteLine("SavedToStream - SavedMimePartCount: " + saved);
+            break;
+    }
 }
 ```
 
-## Kaynak Kodu Örnekleri
+## 3. Adım: E-posta Mesajını İlerleme Takibi ile Kaydetme
 
- Kaynak kodu örneklerinin tamamı için bkz.[Aspose.Email for .NET Belgelendirmesi](https://reference.aspose.com/email/net).
+ Şimdi ilerlemeyi takip ederken e-posta mesajını kaydedelim. biz kullanıyoruz`EmlSaveOptions` özel bir ilerleme işleyicisine sahip sınıf.
+
+```csharp
+MemoryStream ms = new MemoryStream();
+EmlSaveOptions opt = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+opt.CustomProgressHandler = new ConversionProgressEventHandler(ShowEmlConversionProgress);
+msg.Save(ms, opt);
+```
 
 ## Çözüm
 
-Verimli e-posta iletişimi yalnızca mesaj göndermeyi değil, aynı zamanda mesajların anında alınmasını ve takip edilmesini de içerir. Aspose.Email for .NET ile e-posta bildirimlerini ve takibini uygulamalarınıza sorunsuzca uygulayabileceğiniz güçlü bir araca sahip olursunuz. Bu kılavuz, bildirimlerin gönderilmesinden açılışların izlenmesine ve yanıtların işlenmesine kadar sürecin temel yönlerini ele almaktadır.
+Tebrikler! C# ve Aspose.Email for .NET kullanarak e-posta belgesi dönüştürme ilerleme takibini başarıyla uyguladınız. Bu yetenek, uygulamalarınızda büyük hacimli e-postalarla ve belge dönüştürmelerle uğraşırken değerli olabilir.
+
+ Daha fazla bilgi ve ayrıntılı belgeler için şu adresi ziyaret edin:[Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net/).
+
 
 ## SSS
 
-### Aspose.Email for .NET'i nasıl yüklerim?
- Kütüphaneyi Aspose Sürümlerinden indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net).
+### .NET için Aspose.Email nedir?
+Aspose.Email for .NET, .NET uygulamalarında e-posta mesajlarıyla çalışmak için güçlü bir kütüphanedir. E-postaları okumak, yazmak ve dönüştürmek için özellikler sağlar.
 
-### Tek bir piksel kullanarak birden fazla e-posta açılışını izleyebilir miyim?
-Evet, farklı e-postaları ayırt etmek ve bunların açılışlarını ayrı ayrı izlemek için izleme pikseli URL'sinde benzersiz bir tanımlayıcı kullanabilirsiniz.
+### Aspose.Email for .NET ile e-posta belgesi dönüştürme sürecini takip edebilir miyim?
+Evet, bu makalede gösterildiği gibi, özel ilerleme işleyicilerini kullanarak e-posta belgesi dönüştürme sürecini izleyebilirsiniz.
 
-### İzleme piksellerini kullanmadan e-posta açılışlarını izlemek mümkün müdür?
-Pikselleri takip etmek yaygın bir yöntem olsa da bazı e-posta istemcileri bunları engelleyebilir. Alternatif olarak, tıklandığında izleme bilgileri de sağlayabilen harici kaynaklara bağlantılar gömebilirsiniz.
+### Aspose.Email for .NET'in C# projeme entegrasyonu kolay mı?
+Evet, Aspose.Email for .NET'in C# projelerine entegrasyonu kolaydır. Kütüphaneyi web sitesinden indirip kurabilirsiniz.
 
-### E-posta takibinin gizliliğini nasıl sağlayabilirim?
-Gizlilik politikanızda veya kullanım şartlarınızda alıcıları e-posta izleme konusunda bilgilendirmeniz önemlidir. Ek olarak, alıcılara izleme kapsamı dışında kalma seçeneği sunmayı düşünün.
+### C#'ta e-postalarla çalışmak için başka kütüphaneler var mı?
+Evet, başka kütüphaneler de var ama Aspose.Email for .NET, kapsamlı özellikleri ve kullanım kolaylığıyla tanınıyor.
 
-### Aspose.Email for .NET, SMTP ve IMAP dışında diğer e-posta protokollerini de destekliyor mu?
-Evet, Aspose.Email for .NET, e-postayla ilgili çeşitli görevler için POP3 ve Exchange Web Services (EWS) gibi diğer protokolleri destekler.
+### Aspose.Email for .NET için daha fazla eğitim ve örneği nerede bulabilirim?
+Keşfedebilirsiniz[Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net/)öğreticiler, örnekler ve ayrıntılı belgeler için.
+
+Artık C# uygulamalarınızda e-posta belgesi dönüştürme sürecini güvenle yönetebilecek donanıma sahipsiniz. Mutlu kodlama!

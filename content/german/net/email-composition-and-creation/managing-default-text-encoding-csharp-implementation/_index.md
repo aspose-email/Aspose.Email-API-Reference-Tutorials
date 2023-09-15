@@ -23,11 +23,11 @@ Die Standardtextkodierung bezieht sich auf die Zeichenkodierung, die beim Kodier
 
 Die Verwendung der richtigen Textkodierung ist aus verschiedenen Gründen von entscheidender Bedeutung:
 ### Datenintegrität:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Eine falsche Kodierung kann zu Datenbeschädigungen während der Speicherung oder Übertragung führen.
 ### Mehrsprachige Unterstützung: 
-	Different languages require different encodings to display characters correctly.
+Unterschiedliche Sprachen erfordern unterschiedliche Kodierungen, um Zeichen korrekt anzuzeigen.
 ### Kompatibilität:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Durch die richtige Kodierung wird sichergestellt, dass Daten nahtlos zwischen verschiedenen Systemen ausgetauscht werden können.
 
 ## Einführung von Aspose.Email für .NET
 
@@ -54,18 +54,9 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Schritt 3: Standardtextkodierung festlegen
+## Schritt 3: Senden einer E-Mail mit benutzerdefinierter Codierung
 
-Um die Standardtextkodierung für Ihre E-Mails festzulegen, können Sie den folgenden Codeausschnitt verwenden. In diesem Beispiel stellen wir die Kodierung auf UTF-16 ein.
-
-```csharp
-// Legen Sie die Standardtextkodierung auf UTF-16 fest
-client.Encoding = Encoding.Unicode;
-```
-
-## Schritt 4: Senden einer E-Mail mit benutzerdefinierter Codierung
-
-Beim Senden einer E-Mail können Sie eine benutzerdefinierte Textkodierung für den E-Mail-Text festlegen. Dies kann nützlich sein, wenn Sie E-Mails in Sprachen senden, die bestimmte Kodierungen erfordern.
+Beim Senden einer E-Mail können Sie eine benutzerdefinierte Textcodierung für den E-Mail-Text festlegen. Dies kann nützlich sein, wenn Sie E-Mails in Sprachen senden, die bestimmte Kodierungen erfordern.
 
 ```csharp
 using Aspose.Email.Mail;
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Schritt 4: Standardtextkodierung festlegen
+
+Um die Standardtextkodierung für Ihre E-Mails festzulegen, können Sie den folgenden Codeausschnitt verwenden. In diesem Beispiel stellen wir die Kodierung auf UTF-16 ein.
+
+```csharp
+// Legen Sie die Standardtextkodierung auf UTF-16 fest
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Schritt 5: E-Mails empfangen und entschlüsseln
 
 Beim Empfang von E-Mails müssen Sie möglicherweise den E-Mail-Text entschlüsseln, wenn er mit einer bestimmten Codierung gesendet wurde. So können Sie den Text einer eingehenden E-Mail entschlüsseln:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Häufige Herausforderungen bei der Textkodierung
 
 ### Nicht übereinstimmende Codierungen: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+Die Verwendung unterschiedlicher Kodierungen zum Senden und Empfangen von E-Mails kann zu verstümmeltem Text führen.
 ### Nicht unterstützte Zeichen:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Einige Kodierungen unterstützen möglicherweise bestimmte Zeichen nicht, was zu Zeichenersetzungen oder -verlusten führt.
 ### Dateibeschädigung: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+Eine falsche Codierung beim Speichern von E-Mails als Dateien kann zu beschädigten Dateien führen.
 
 ## Best Practices für die Textkodierung
 
@@ -110,7 +110,7 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 
 ## Abschluss
 
-Die Verwaltung der Standardtextkodierung ist ein entscheidender Aspekt für die Gewährleistung einer reibungslosen Kommunikation in der Softwareentwicklung. Mit Aspose.Email für .NET verfügen Sie über die Tools, um die Textkodierung zu steuern und E-Mails mit Genauigkeit und Zuverlässigkeit zuzustellen.
+Die Verwaltung der Standardtextkodierung ist ein entscheidender Aspekt für die Gewährleistung einer reibungslosen Kommunikation bei der Softwareentwicklung. Mit Aspose.Email für .NET verfügen Sie über die Tools, um die Textkodierung zu steuern und E-Mails mit Genauigkeit und Zuverlässigkeit zuzustellen.
 
 ## FAQs
 

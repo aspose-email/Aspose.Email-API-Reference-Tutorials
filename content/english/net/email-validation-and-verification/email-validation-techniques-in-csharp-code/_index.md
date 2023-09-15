@@ -19,13 +19,13 @@ Email communication is a fundamental part of modern technology, making email val
 
 Validating email addresses offers several benefits:
 ### Data Quality:
-	Valid email addresses lead to accurate user information in your database.
+Valid email addresses lead to accurate user information in your database.
 ### User Experience: 
-	Users appreciate instant feedback on whether their email addresses are correct.
+Users appreciate instant feedback on whether their email addresses are correct.
 ### Delivery Success: 
-	Valid emails are more likely to reach their intended recipients without issues.
+Valid emails are more likely to reach their intended recipients without issues.
 ### Security: 
-	Prevent fraudulent activities and spam registrations by confirming email authenticity.
+Prevent fraudulent activities and spam registrations by confirming email authenticity.
 
 ## Using Aspose.Email for .NET
 

@@ -38,14 +38,14 @@ Att upptäcka filformat med Aspose.Email är enkelt:
 
 ```csharp
 using Aspose.Email;
-// Andra relevanta med påståenden
+// Andra relevanta med hjälp av uttalanden
 
 // Ange sökvägen till filen
 string filePath = "sample.docx";
 
 // Upptäck filformatet
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Visa resultatet
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Upptäck filformatet
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Visa resultatet
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ Ja, Aspose.Email erbjuder omfattande stöd för ett brett utbud av vanliga och s
 
 ### Är det möjligt att upptäcka versionen av ett filformat?
 
- Ja den`FileFormatInfo`objekt som returneras av`FileFormatUtil.DetectFileFormat` ger ytterligare information, inklusive filformatversionen.
+ Ja den`FileFormatInfo` objekt som returneras av`FileFormatUtil.DetectFileFormat` ger ytterligare information, inklusive filformatversionen.
 
 ### Kan jag använda Aspose.Email för att identifiera filformat i webbapplikationer?
 

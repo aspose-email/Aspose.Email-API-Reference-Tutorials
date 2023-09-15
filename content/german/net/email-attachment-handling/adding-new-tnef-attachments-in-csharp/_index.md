@@ -32,7 +32,9 @@ Laden wir zunächst eine vorhandene E-Mail, die einen TNEF-Anhang enthält. Sie 
 using Aspose.Email.Mail;
 
 // Laden Sie die E-Mail mit dem TNEF-Anhang
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Extrahieren und Ändern von TNEF-Anhängen
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // Extrahieren Sie den TNEF-Anhang
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
         // tnefAttachment.Properties...
     }
 }
@@ -60,7 +62,9 @@ Nachdem Sie den TNEF-Anhang geändert haben, können Sie die E-Mail wieder in ei
 
 ```csharp
 // Speichern Sie die geänderte E-Mail
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Abschluss

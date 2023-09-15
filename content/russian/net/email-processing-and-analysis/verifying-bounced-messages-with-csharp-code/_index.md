@@ -2,7 +2,7 @@
 title: Проверка возвращенных сообщений с помощью кода C#
 linktitle: Проверка возвращенных сообщений с помощью кода C#
 second_title: Aspose.Email .NET API обработки электронной почты
-description: Автоматизируйте проверку возвращенных сообщений с помощью C# и Aspose.Email для .NET. Легко управляйте списками адресов электронной почты и повышайте эффективность кампаний.
+description: Автоматизируйте проверку возвращенных сообщений с помощью C# и Aspose.Email для .NET. Легко управляйте списками адресов электронной почты и повышайте эффективность кампании.
 type: docs
 weight: 11
 url: /ru/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Создайте экземпляр ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Подключиться к серверу
-    client.Connect(host, port, true);
-
-    // Авторизоваться
-    client.Login(username, password);
-    
+   
     // Здесь будет размещен ваш код для получения и анализа возвращенных сообщений.
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Поиск возвращенных сообщений
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Здесь будет размещен ваш код для анализа уведомлений о недоставках.
 }
@@ -89,7 +84,7 @@ foreach (MessageInfo messageInfo in messages)
 // Получить сообщение
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Проверьте заголовки отказов
+// Проверьте заголовки отказов
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

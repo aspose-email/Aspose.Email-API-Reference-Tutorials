@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // قم بتحميل رسالة البريد الإلكتروني
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // استخراج وفك تشفير رأس الموضوع
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // اطبع رأس الموضوع الذي تم فك ترميزه
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ class Program
 
 1. نقوم باستيراد مساحات الأسماء الضرورية (`Aspose.Email` و`Aspose.Email.Mail`).
 2.  نقوم بإنشاء أ`Main` الطريقة كنقطة دخول لتطبيقنا.
-3.  في حدود`Main` الطريقة نستخدم`MailMessage.Load` طريقة تحميل رسالة بريد إلكتروني من ملف. يستبدل`"path/to/your/email.eml"` بالمسار الفعلي لرسالة البريد الإلكتروني التي تريد معالجتها.
-4.  نحن نستخدم ال`HeaderDecoder.DecodeHeader` طريقة فك تشفير رأس الموضوع.
+3.  في حدود`Main`الطريقة نستخدم`MailMessage.Load` طريقة تحميل رسالة بريد إلكتروني من ملف. يستبدل`"path/to/your/email.eml"` بالمسار الفعلي لرسالة البريد الإلكتروني التي تريد معالجتها.
+4.  نحن نستخدم ال`Headers.GetDecodedValue` طريقة فك تشفير رأس الموضوع.
 5. نقوم بطباعة رأس الموضوع الذي تم فك تشفيره إلى وحدة التحكم.
 
 ## الخطوة 5: قم بتشغيل التطبيق
@@ -68,7 +64,7 @@ class Program
 
 ### كيف يمكنني فك تشفير رؤوس البريد الإلكتروني الأخرى باستخدام Aspose.Email لـ .NET؟
 
- يمكنك فك تشفير رؤوس البريد الإلكتروني المختلفة مثل "من"، و"إلى"، و"التاريخ"، وما إلى ذلك، باستخدام`HeaderDecoder.DecodeHeader` طريقة. ما عليك سوى توفير قيمة الرأس كمعلمة للطريقة.
+ يمكنك فك تشفير رؤوس البريد الإلكتروني المختلفة مثل "من"، و"إلى"، و"التاريخ"، وما إلى ذلك، باستخدام`Headers.GetDecodedValue` طريقة. ما عليك سوى توفير قيمة الرأس كمعلمة للطريقة.
 
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
 

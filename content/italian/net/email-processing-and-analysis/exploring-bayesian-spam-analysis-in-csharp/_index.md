@@ -49,10 +49,10 @@ MailMessage message = MailMessage.Load("email.eml");
 Creare un modello di analisi dello spam bayesiano:
 
 ```csharp
-using Aspose.Email.Spam;
-
+using Aspose.Email.AntiSpam;
+string spamFilterDatabase = "SpamFilterDatabase.txt";
 // Crea un analizzatore di spam
-BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 ```
 
 ## Formazione del modello
@@ -61,8 +61,9 @@ Addestra il modello con email di esempio di spam e ham (non spam):
 
 ```csharp
 // Allenati con le email di spam e ham
-spamAnalyzer.Train("spam1.eml", true);
-spamAnalyzer.Train("ham1.eml", false);
+spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+spamAnalyzer.SaveDatabase(spamFilterDatabase);
 ```
 
 ## Applicazione dell'analisi bayesiana
@@ -71,7 +72,7 @@ Applicare l'analisi bayesiana per valutare se un'e-mail è spam:
 
 ```csharp
 // Analizzare un'e-mail
-double spamProbability = spamAnalyzer.Analyze(message);
+double spamProbability = spamAnalyzer.Test(message);
 bool isSpam = spamProbability > 0.5;
 ```
 
@@ -106,16 +107,17 @@ namespace BayesianSpamAnalysisDemo
         {
             // Carica un'e-mail
             MailMessage message = MailMessage.Load("email.eml");
-
+			string spamFilterDatabase = "SpamFilterDatabase.txt";
             // Crea un analizzatore di spam
-            BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+            SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 
             // Addestra il modello
-            spamAnalyzer.Train("spam1.eml", true);
-            spamAnalyzer.Train("ham1.eml", false);
-
+			spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+			spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+			spamAnalyzer.SaveDatabase(spamFilterDatabase);
             // Analizza l'e-mail
-            double spamProbability = spamAnalyzer.Analyze(message);
+			spamAnalyzer.LoadDatabase(spamFilterDatabase);
+            double spamProbability = spamAnalyzer.Test(message);
             bool isSpam = spamProbability > 0.5;
 
             // Visualizza il risultato

@@ -27,7 +27,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 3. Installare la libreria Aspose.Email per .NET utilizzando NuGet Package Manager.
 
 ```csharp
-//Il tuo codice per configurare l'ambiente di sviluppo
+// Il tuo codice per configurare l'ambiente di sviluppo
 ```
 
 ## Creazione di un nuovo messaggio e-mail

@@ -22,7 +22,6 @@ Le esercitazioni sulla firma di posta elettronica si concentrano sull'abilitazio
 
 
 ## Esercitazioni sulla sicurezza e le firme della posta elettronica
-## [Gestione di oggetti incorporati nelle e-mail con codice C#](./handling-embedded-objects-in-emails-with-csharp-code/)
-Scopri come gestire gli oggetti incorporati nelle e-mail utilizzando C# e Aspose.Email per .NET. Crea contenuti e-mail interattivi e coinvolgenti con indicazioni dettagliate ed esempi di codice.
-## [Firma di e-mail con DKIM utilizzando il codice C#](./signing-emails-with-dkim-using-csharp-code/)
+
+### [Firma di e-mail con DKIM utilizzando il codice C#](./signing-emails-with-dkim-using-csharp-code/)
 Impara a proteggere le e-mail con DKIM utilizzando C# e Aspose.Email per .NET. Guida passo passo con il codice sorgente. Migliora la fiducia e l'autenticità delle e-mail.

@@ -89,7 +89,7 @@ url: /ar/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csha
 
 ### كيف يمكنني الحصول على Aspose.Email لمكتبة .NET؟
 
- يمكنك الحصول على مكتبة Aspose.Email for .NET من إصدارات Aspose:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
+يمكنك الحصول على مكتبة Aspose.Email for .NET من إصدارات Aspose:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
 
 ### هل يمكنني استخدام Aspose.Email لتنسيقات أخرى غير MSG؟
 

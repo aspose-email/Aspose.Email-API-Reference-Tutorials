@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### Überprüfen der Nachrichtenverschlüsselung
-
-Sie können auch überprüfen, ob eine Nachricht digital signiert und verschlüsselt ist:
-
-```csharp
-using Aspose.Email.Security;
-// Andere relevante Verwendungsanweisungen
-
-// Laden Sie eine E-Mail-Nachricht
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// Überprüfen Sie, ob die Nachricht signiert und verschlüsselt ist
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Auf Verschlüsselung prüfen
-if (isSigned && isEncrypted)
-{
-    // Die Nachricht ist signiert und verschlüsselt
-}
-```
-
 ## Verschlüsselte Nachrichten entschlüsseln
 
 Zum Entschlüsseln einer verschlüsselten Nachricht sind die richtigen Schlüssel und Zertifikate erforderlich. So können Sie es mit Aspose.Email machen:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Geben Sie den Entschlüsselungsschlüssel und das Zertifikat an
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Entschlüsseln Sie die Nachricht
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## Ausnahmen behandeln

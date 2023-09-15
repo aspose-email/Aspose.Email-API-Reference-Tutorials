@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Skapa en instans av`MhtmlMessageFormatter`klass för att formatera meddelandet:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. Ladda HTML-innehållet i e-postmeddelandet:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Steg 5: Lägg till alternativ text till bilder
+## Steg 5: Lägg till AlternativeView för alternativ text till bilder
 
-1.  Leta upp`AlternateView` som innehåller HTML-kroppen och bilder:
-
+Lägg till htmlview för alternativ text till bild som AlternateView i meddelandet. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Leta upp`LinkedResource` representerar bilden:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Ställ in alternativ text för bilden:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Steg 6: Spara och skicka e-postmeddelandet
@@ -97,7 +77,7 @@ Du kan ladda ner Aspose.Email-biblioteket från Aspose-versionerna eller install
 
 ### Hur lägger jag till bilder som länkade resurser i ett e-postmeddelande?
 
- För att lägga till bilder som länkade resurser i ett e-postmeddelande kan du använda`LinkedResource`klass. Tilldela ett innehålls-ID till den länkade resursen och referera sedan till detta innehålls-ID i HTML-kroppen med hjälp av`cid:` schema. För detaljerad information, se[LinkedResource dokumentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+För att lägga till bilder som länkade resurser i ett e-postmeddelande kan du använda`LinkedResource` klass. Tilldela ett innehålls-ID till den länkade resursen och referera sedan till detta innehålls-ID i HTML-kroppen med hjälp av`cid:` schema. För detaljerad information, se[LinkedResource dokumentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Var kan jag hitta mer dokumentation om Aspose.Email för .NET?
 
  Du kan hitta mer detaljerad dokumentation, handledningar och exempel på hur du arbetar med Aspose.Email för .NET i[API-referens](https://reference.aspose.com/email/net/).

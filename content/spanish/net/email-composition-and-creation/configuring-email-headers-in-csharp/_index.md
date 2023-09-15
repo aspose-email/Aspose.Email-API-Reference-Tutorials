@@ -18,13 +18,13 @@ Los encabezados de correo electrónico son metadatos que contienen detalles esen
 
 Los encabezados de correo electrónico tienen varios propósitos cruciales:
 #### Enrutamiento: 
-	Headers determine the path an email takes from sender to recipient.
+Los encabezados determinan la ruta que sigue un correo electrónico desde el remitente hasta el destinatario.
 #### Autenticación
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Los encabezados como DKIM y SPF ayudan a verificar la autenticidad de los correos electrónicos.
 #### Línea de asunto: 
-	The subject header gives recipients an idea of the email's content.
+El encabezado del asunto les da a los destinatarios una idea del contenido del correo electrónico.
 #### Manejo de respuestas: 
-	Headers like Reply-To ensure proper handling of replies.
+Encabezados como Responder-Para garantizar el manejo adecuado de las respuestas.
 
 ## 3. Instalación de Aspose.Email para .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Ciertos encabezados se usan comúnmente en mensajes de correo electrónico:
 
 #### Sujeto: 
-	Set the email subject using the `message.Subject` property.
+ Configure el asunto del correo electrónico usando el`message.Subject` propiedad.
 #### De: 
-	Specify the sender's address using the `message.From` property.
+ Especifique la dirección del remitente utilizando el`message.From` propiedad.
 #### A: 
-	Define the recipient's address using the `message.To` property.
+ Defina la dirección del destinatario utilizando el`message.To` propiedad.
 
 ## 6. Personalización de encabezados adicionales
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Manejo de encabezados de tipo de contenido y versión MIME
 
- El`MIME-Version`El encabezado garantiza la compatibilidad MIME adecuada, mientras que el`Content-Type` El encabezado especifica el tipo de contenido en el cuerpo del correo electrónico.
+ El`MIME-Version` El encabezado garantiza la compatibilidad MIME adecuada, mientras que el`Content-Type` El encabezado especifica el tipo de contenido en el cuerpo del correo electrónico.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

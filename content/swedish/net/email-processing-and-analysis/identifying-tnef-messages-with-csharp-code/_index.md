@@ -16,7 +16,7 @@ TNEF-meddelanden, även kända som "winmail.dat"-bilagor, kan orsaka kompatibili
 
 ## Ställa in utvecklingsmiljön
 
-Innan vi går in i koden, se till att du har Aspose.Email för .NET-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/email/net). När du har laddat ned, följ dessa steg för att konfigurera din utvecklingsmiljö:
+ Innan vi går in i koden, se till att du har Aspose.Email för .NET-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/email/net). När du har laddat ned, följ dessa steg för att konfigurera din utvecklingsmiljö:
 
 1. Skapa ett nytt C#-projekt i din föredragna utvecklingsmiljö.
 2. Lägg till en referens till det nedladdade Aspose.Email-biblioteket.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Nu när vi har laddat e-postmeddelandet måste vi avgöra om det är ett TNEF-meddelande. Aspose.Email tillhandahåller`MailMessage.IsTnef` egendom för detta ändamål. Så här kan du använda den:
 
 ```csharp
-// Kontrollera om meddelandet är ett TNEF-meddelande
-if (message.IsTnef)
+//Kontrollera om meddelandet är ett TNEF-meddelande
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Extrahera data från TNEF-meddelanden
-
-Om meddelandet verkligen är ett TNEF-meddelande kan du extrahera olika data från det. Du kan till exempel extrahera textinnehållet enligt följande:
-
-```csharp
-if (message.IsTnef)
-{
-    // Extrahera oformaterad text från TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Hantera bilagor inom TNEF-meddelanden
 
 TNEF-meddelanden innehåller ofta bilagor. För att extrahera och spara dessa bilagor kan du använda följande kod:
 
 ```csharp
-if (message.IsTnef)
+// Iterera genom bilagor
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extrahera TNEF-tillbehör
+        var tnefAttachment = attachment;
+
+        //Få tillgång till TNEF-egenskaper och ändra vid behov
+        // tnefAttachment.Properties...
     }
 }
 ```

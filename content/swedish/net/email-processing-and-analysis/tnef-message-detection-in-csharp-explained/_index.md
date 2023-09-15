@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1.  Ladda e-postmeddelandet med hjälp av`MapiMessage` klass:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// Ladda e-postmeddelandet med TNEF-bilaga
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. Bestäm om det laddade e-postmeddelandet är ett TNEF-meddelande:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
  Byta ut`"path/to/your/email.msg"` med den faktiska sökvägen till din e-postmeddelandefil.
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 Om det laddade e-postmeddelandet verkligen är ett TNEF-meddelande kan du extrahera och bearbeta dess bilagor:
 
 ```csharp
-if (isTnefMessage)
+// Iterera genom bilagor
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Bearbeta TNEF-bilaga
-        // Spara till exempel bilaga på disk
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // Extrahera TNEF-tillbehör
+        var tnefAttachment = attachment;
+
+        //Få tillgång till TNEF-egenskaper och ändra vid behov
+        // tnefAttachment.Properties...
     }
 }
 ```
 
 ## Vanliga frågor
 
-## Hur kan jag kontrollera om ett e-postmeddelande är ett TNEF-meddelande?
+### Hur kan jag kontrollera om ett e-postmeddelande är ett TNEF-meddelande?
 
  För att kontrollera om ett e-postmeddelande är ett TNEF-meddelande, använd`IsTnefMessage()` metod för`MapiMessage` klass:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## Hur extraherar jag bilagor från ett TNEF-meddelande?
+### Hur extraherar jag bilagor från ett TNEF-meddelande?
 
 För att extrahera bilagor från ett TNEF-meddelande, följ dessa steg:
 
 1.  Ladda e-postmeddelandet med`MapiMessage.FromFile()`.
-2.  Kontrollera om e-postmeddelandet är ett TNEF-meddelande med hjälp av`IsTnefMessage()`.
-3.  Om det är ett TNEF-meddelande, extrahera bilagor med hjälp av`ExtractTnefAttachments()`.
+2.  Kontrollera om e-postmeddelandet är ett TNEF-meddelande med hjälp av`OriginalIsTnef`.
+3. Om det är ett TNEF-meddelande, extrahera bilagor genom att iterera bilagor med ContentType.MediaType är lika med "application/ms-tnef".
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Iterera genom bilagor
+foreach (var attachment in message.Attachments)
 {
-    // Bearbeta TNEF-bilaga
-    // Spara till exempel bilaga på disk
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // Extrahera TNEF-tillbehör
+        var tnefAttachment = attachment;
+
+        //Få tillgång till TNEF-egenskaper och ändra vid behov
+        // tnefAttachment.Properties...
+    }
 }
 ```
 

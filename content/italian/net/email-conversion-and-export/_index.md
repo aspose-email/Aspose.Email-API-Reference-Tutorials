@@ -20,8 +20,6 @@ tutorial sulla conversione delle e-mail forniscono approfondimenti sulla trasfor
 
 tutorial sull'esportazione della posta elettronica si concentrano su come consentire agli sviluppatori di esportare messaggi di posta elettronica da diversi formati di archiviazione del client di posta elettronica. Che si tratti di esportare e-mail da Microsoft Exchange Server o Microsoft Outlook, questi tutorial forniscono istruzioni chiare su come recuperare ed esportare i dati e-mail. Questa funzionalità è essenziale per scopi di migrazione, backup e sincronizzazione dei dati. I tutorial offrono una guida passo passo per accedere ai dati di posta elettronica da varie fonti ed esportarli nei formati desiderati, garantendo che i dati rimangano accessibili e utilizzabili su diversi sistemi.
 
- Per approfondimenti dettagliati ed esempi pratici di implementazione, puoi esplorare il[Aspose.Email per esercitazioni di conversione ed esportazione di posta elettronica .NET](https://reference2.aspose.com/tutorials/email/net/email-conversion-and-export/). Migliora le tue capacità di gestione dei dati di posta elettronica con Aspose.Email per .NET e sblocca il potenziale per una conversione ed esportazione efficiente della posta elettronica, migliorando in definitiva le tue attività di sviluppo.
-
 ## Tutorial sulla conversione e sull'esportazione della posta elettronica
 ### [Personalizzazione della conversione MHTML - Implementazione C#](./customizing-mhtml-conversion-csharp-implementation/)
 Scopri come personalizzare la conversione MHTML utilizzando Aspose.Email per .NET. Guida dettagliata con codice sorgente C#.
@@ -33,8 +31,6 @@ Converti e-mail in formato MHT con fusi orari precisi utilizzando Aspose.Email p
 Scopri come gestire i file EML in C# utilizzando Aspose.Email per .NET. Guida passo passo con esempi di codice per caricare, modificare e salvare i messaggi e-mail.
 ### [Conversione di EML in formato MSG utilizzando C#](./converting-eml-to-msg-format-using-csharp/)
 Scopri come convertire EML in MSG utilizzando C# e Aspose.Email per .NET. Una guida completa con esempi di codice per una conversione efficiente del formato email.
-### [Conservazione degli allegati TNEF durante la lettura dei messaggi: approccio C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
-Scopri come preservare gli allegati TNEF utilizzando Aspose.Email per .NET in questa guida passo passo con il codice sorgente.
 ### [Guida C#: salvataggio della posta elettronica come file MHTML](./csharp-guide-saving-email-as-mhtml-file/)
 Scopri come salvare le e-mail come file MHTML utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice e domande frequenti.
 ### [Gestione delle bozze dei messaggi in C#: salvataggio della posta elettronica come bozza](./draft-message-handling-in-csharp-saving-email-as-draft/)

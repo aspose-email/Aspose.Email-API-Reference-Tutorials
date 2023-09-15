@@ -18,13 +18,13 @@ url: /ru/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 
 Заголовки электронных писем служат нескольким важным целям:
 #### Маршрутизация: 
-	Headers determine the path an email takes from sender to recipient.
+Заголовки определяют путь электронного письма от отправителя к получателю.
 #### Аутентификация
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Заголовки, такие как DKIM и SPF, помогают проверить подлинность электронных писем.
 #### Сюжетная линия: 
-	The subject header gives recipients an idea of the email's content.
+Заголовок темы дает получателям представление о содержании электронного письма.
 #### Обработка ответа: 
-	Headers like Reply-To ensure proper handling of replies.
+Заголовки типа Reply-To обеспечивают правильную обработку ответов.
 
 ## 3. Установка Aspose.Email для .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 В сообщениях электронной почты обычно используются определенные заголовки:
 
 #### Предмет: 
-	Set the email subject using the `message.Subject` property.
+ Установите тему электронного письма с помощью`message.Subject` свойство.
 #### От: 
-	Specify the sender's address using the `message.From` property.
+ Укажите адрес отправителя с помощью`message.From` свойство.
 #### К: 
-	Define the recipient's address using the `message.To` property.
+ Определите адрес получателя с помощью`message.To` свойство.
 
 ## 6. Настройка дополнительных заголовков
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Обработка MIME-версии и заголовков типов контента
 
-`MIME-Version`заголовок обеспечивает правильную совместимость MIME, а заголовок`Content-Type` заголовок определяет тип содержимого в теле электронного письма.
+`MIME-Version` заголовок обеспечивает правильную совместимость MIME, а заголовок`Content-Type` заголовок определяет тип содержимого в теле электронного письма.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

@@ -21,7 +21,5 @@ Handledningarna för e-postvalidering gräver ner sig i krångligheterna med att
 Handledningarna för e-postverifiering fokuserar på att göra det möjligt för utvecklare att verifiera existensen och giltigheten av e-postadresser med Aspose.Email för .NET. Utvecklare kan utforska tekniker för att utföra realtidskontroller av e-postadresser för att säkerställa att de motsvarar aktiva och nåbara konton. Dessa handledningar erbjuder steg-för-steg-instruktioner om hur du integrerar e-postverifieringstjänster, upptäcker ogiltiga adresser och förbättrar kommunikationens tillförlitlighet genom att eliminera obeställbara e-postmeddelanden. Aspose.Email för .NET förenklar e-postverifieringsuppgifter, vilket gör att utvecklare kan förbättra sina applikationer med säker och korrekt kommunikation.
 
 ## Handledning för e-postvalidering och verifiering
-## [E-postvalideringstekniker i C#-kod](./email-validation-techniques-in-csharp-code/)
+### [E-postvalideringstekniker i C#-kod](./email-validation-techniques-in-csharp-code/)
 Lär dig hur du validerar e-postadresser effektivt i C# med Aspose.Email för .NET. Steg-för-steg guide med källkod tillhandahållen. Förbättra datanoggrannheten och användarupplevelsen.
-## [Validera e-postadresser med C#-kod](./validating-email-addresses-using-csharp-code/)
-Lär dig hur du validerar e-postadresser med C# och Aspose.Email för .NET. Säkerställ korrekt e-postdata i dina applikationer.

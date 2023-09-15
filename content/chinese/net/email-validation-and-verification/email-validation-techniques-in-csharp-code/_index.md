@@ -19,13 +19,13 @@ url: /zh/net/email-validation-and-verification/email-validation-techniques-in-cs
 
 验证电子邮件地址有几个好处：
 ### 数据质量：
-	Valid email addresses lead to accurate user information in your database.
+有效的电子邮件地址可以在您的数据库中提供准确的用户信息。
 ### 用户体验： 
-	Users appreciate instant feedback on whether their email addresses are correct.
+用户希望获得有关其电子邮件地址是否正确的即时反馈。
 ### 交付成功： 
-	Valid emails are more likely to reach their intended recipients without issues.
+有效的电子邮件更有可能顺利到达预期收件人。
 ### 安全： 
-	Prevent fraudulent activities and spam registrations by confirming email authenticity.
+通过确认电子邮件的真实性来防止欺诈活动和垃圾邮件注册。
 
 ## 使用 Aspose.Email for .NET
 

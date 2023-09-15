@@ -21,9 +21,9 @@ The email notification tutorials delve into the intricacies of implementing emai
 The email tracking tutorials focus on enabling developers to implement email tracking features using Aspose.Email for .NET. Developers can explore techniques to monitor email interactions, such as open rates and link clicks, to gain insights into recipient engagement. These tutorials offer step-by-step instructions on embedding tracking elements in email content, capturing tracking data, and generating reports. Aspose.Email for .NET simplifies email tracking tasks, allowing developers to enhance their applications with data-driven insights into email recipient behaviors.
 
 ## Email Notification and Tracking Tutorials
-## [Receiving Email Notifications with C# Code](./receiving-email-notifications-with-csharp-code/)
+### [Receiving Email Notifications with C# Code](./receiving-email-notifications-with-csharp-code/)
 Learn to receive email notifications in C# using Aspose.Email for .NET. Efficient code example provided.
-## [Requesting Email Read Receipts using C# Code](./requesting-email-read-receipts-using-csharp-code/)
+### [Requesting Email Read Receipts using C# Code](./requesting-email-read-receipts-using-csharp-code/)
 Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
-## [Tracking Email Document Conversion Progress with C# Code](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [Tracking Email Document Conversion Progress with C# Code](./tracking-email-document-conversion-progress-with-csharp-code/)
 Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!

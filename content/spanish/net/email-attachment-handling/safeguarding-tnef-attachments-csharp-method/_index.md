@@ -36,13 +36,15 @@ Para proteger los archivos adjuntos TNEF, primero debemos cargarlos y extraerlos
 1.  Cargar archivo TNEF: cargue el archivo TNEF usando el`MapiMessage` clase:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Extraer archivos adjuntos: itere a través de los archivos adjuntos y extráigalos:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Extraer datos adjuntos
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ Una vez extraídos los archivos adjuntos, puede implementar sus medidas de prote
 Después de aplicar sus medidas de protección, puede guardar los archivos adjuntos de forma segura:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Lógica de salvaguardia
     // ...
-    // Guarde el archivo adjunto
+    //Guarde el archivo adjunto
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Sí, Aspose.Email admite varios protocolos de correo electrónico como SMTP, POP
 
 ### ¿Con qué frecuencia se publican actualizaciones para Aspose.Email?
 
- Aspose publica con frecuencia actualizaciones y mejoras en sus bibliotecas. Se recomienda consultar Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o[Aspose.Email para referencia de API .Net](https://reference.aspose.com/email/net) para obtener las últimas actualizaciones y funciones.
+Aspose publica con frecuencia actualizaciones y mejoras en sus bibliotecas. Se recomienda consultar Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o[Aspose.Email para referencia de API .Net](https://reference.aspose.com/email/net) para obtener las últimas actualizaciones y funciones.
 
 ### ¿Puedo utilizar Aspose.Email en proyectos comerciales?
 

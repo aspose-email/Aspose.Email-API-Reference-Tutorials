@@ -10,33 +10,20 @@ url: /fr/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
 Dans le monde de la communication moderne, le courrier électronique reste un moyen de correspondance incontournable. La création et l'envoi d'e-mails par programmation peuvent grandement rationaliser divers processus métier, tels que l'envoi de notifications transactionnelles, de campagnes marketing, etc. Dans cet article, nous verrons comment créer un nouvel e-mail en utilisant C# à l'aide de la bibliothèque Aspose.Email pour .NET. Nous couvrirons tout étape par étape, de la configuration de l'environnement à l'envoi de l'e-mail, avec des exemples de code source.
 
-## Contour
 
-1. Introduction
-2. Conditions préalables
-3. Mise en place du projet
-4. Création de contenu de courrier électronique
-5. Configuration des paramètres SMTP
-6. Envoi de l'e-mail
-7. Gestion des exceptions
-8. Conclusion
-9. FAQ
-
-## Guide étape par étape
-
-### Conditions préalables
+## Conditions préalables
 
 Avant de nous lancer dans la mise en œuvre, assurez-vous que les conditions préalables suivantes sont en place :
 
 - Visual Studio ou tout environnement de développement C#
 - Bibliothèque Aspose.Email pour .NET (vous pouvez la télécharger depuis NuGet)
 
-### Mise en place du projet
+## Mise en place du projet
 
 1. Créez un nouveau projet C# dans l'environnement de développement de votre choix.
 2. Ajoutez des références à la bibliothèque Aspose.Email pour .NET.
 
-### Création de contenu de courrier électronique
+## Création de contenu de courrier électronique
 
 1. Importez les espaces de noms nécessaires :
 
@@ -60,7 +47,7 @@ Avant de nous lancer dans la mise en œuvre, assurez-vous que les conditions pr�
    message.Body = "This is the content of the email.";
    ```
 
-### Configuration des paramètres SMTP
+## Configuration des paramètres SMTP
 
 1.  Créez une instance du`SmtpClient` classe:
 
@@ -78,7 +65,7 @@ Avant de nous lancer dans la mise en œuvre, assurez-vous que les conditions pr�
    client.SecurityOptions = SecurityOptions.Auto;
    ```
 
-### Envoi de l'e-mail
+## Envoi de l'e-mail
 
 1.  Utilisez le`client` exemple pour envoyer l'e-mail :
 
@@ -86,7 +73,7 @@ Avant de nous lancer dans la mise en œuvre, assurez-vous que les conditions pr�
    client.Send(message);
    ```
 
-### Gestion des exceptions
+## Gestion des exceptions
 
 1.  Enveloppez le code d'envoi de l'e-mail dans un`try-catch` bloquer pour gérer les exceptions :
 

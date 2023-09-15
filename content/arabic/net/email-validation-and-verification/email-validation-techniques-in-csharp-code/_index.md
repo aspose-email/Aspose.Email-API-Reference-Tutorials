@@ -19,13 +19,13 @@ url: /ar/net/email-validation-and-verification/email-validation-techniques-in-cs
 
 يوفر التحقق من صحة عناوين البريد الإلكتروني العديد من الفوائد:
 ### جودة البيانات:
-	Valid email addresses lead to accurate user information in your database.
+تؤدي عناوين البريد الإلكتروني الصالحة إلى الحصول على معلومات دقيقة للمستخدم في قاعدة البيانات الخاصة بك.
 ### تجربة المستخدم: 
-	Users appreciate instant feedback on whether their email addresses are correct.
+يقدّر المستخدمون التعليقات الفورية حول ما إذا كانت عناوين بريدهم الإلكتروني صحيحة.
 ### نجاح التسليم: 
-	Valid emails are more likely to reach their intended recipients without issues.
+من المرجح أن تصل رسائل البريد الإلكتروني الصالحة إلى المستلمين المقصودين دون مشاكل.
 ### حماية: 
-	Prevent fraudulent activities and spam registrations by confirming email authenticity.
+منع الأنشطة الاحتيالية والتسجيلات غير المرغوب فيها من خلال تأكيد صحة البريد الإلكتروني.
 
 ## استخدام Aspose.Email لـ .NET
 
@@ -205,7 +205,7 @@ protected void ValidateButton_Click(object sender, EventArgs e)
 
 يوفر التحقق من الصحة الخاص بالمجال، مثل التحقق من سجلات MX ووجود المجال، مستوى عالٍ من الدقة في تحديد صلاحية عنوان البريد الإلكتروني.
 
-### هل يمكنني استخدام تقنية التحقق هذه مع لغات البرمجة الأخرى؟
+### هل يمكنني استخدام تقنية التحقق هذه مع لغات برمجة أخرى؟
 
 بينما تركز هذه المقالة على C# وAspose.Email لـ .NET، يمكن تطبيق مبادئ مماثلة على لغات البرمجة الأخرى التي تحتوي على مكتبات مناسبة.
 

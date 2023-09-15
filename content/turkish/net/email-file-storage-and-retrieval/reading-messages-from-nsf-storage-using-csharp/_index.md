@@ -19,89 +19,57 @@ Kodlama sürecine dalmadan önce aşağıdaki önkoşulları oluşturduğunuzdan
 1. Visual Studio veya tercih edilen herhangi bir C# geliştirme ortamı.
 2.  Aspose.Email for .NET kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net).
 
-## 1. Projenin Kurulumu
 
-Seçtiğiniz geliştirme ortamında yeni bir C# konsolu uygulama projesi oluşturarak başlayın. Ardından şu adımları izleyin:
+## Gerekli Kitaplıkları İçe Aktarın
+- C# projenizde Aspose.Email ve Aspose.Email.Storage.Nsf ad alanını içe aktarın:
+    ```csharp
+    using Aspose.Email;
+	Aspose.Email.Storage.Nsf;
+    ```
+
+## Adım 3: Zimbra TGZ Depolama Alanındaki Mesajları Okuyun
+Şimdi kodun ayrıntılarına girelim. Sağlanan örnek kodu referans olarak kullanacağız.
 
 ```csharp
-using Aspose.Email.Storage.Pst;
-```
+// Dosya dizininin yolu.
+string dataDir = "Your Document Directory";
 
-## 2. NSF Dosyasının Yüklenmesi
-
-Aşağıdaki kodu kullanarak NSF dosyasını yükleyin:
-
-```csharp
-string nsfFilePath = "path/to/your/nsf/file.nsf";
-using (PersonalStorage nsf = PersonalStorage.FromFile(nsfFilePath))
+// NotesStorageFacility'yi Zimbra TGZ depolama alanınıza giden yolla başlatın.
+using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.nsf"))
 {
-    // Mesajlara erişim kodu buraya gelecek
+    foreach (MailMessage eml in nsf.EnumerateMessages())
+    {
+        Console.WriteLine(eml.Subject);
+    }
 }
 ```
 
-## 3. Mesajlara Erişim
+Bu kod parçacığında:
+-  Yer değiştirmek`"Your Document Directory"` Zimbra TGZ depolama dizininizin gerçek yolunu belirtin.
+-  biz kullanıyoruz`NotesStorageFacility` Zimbra TGZ depolama ile çalışmak için sınıf.
+- `EnumerateMessages` yöntemi, depolama alanındaki tüm mesajları yinelemenize olanak tanır.
+- Her mesajın konusunu konsola yazdırıyoruz. Bu noktada gelen mesajlarla istediğiniz işlemleri gerçekleştirebilirsiniz.
 
-NSF dosyasındaki mesajları yineleyin ve özellikleri çıkarın:
-
-```csharp
-FolderInfo inboxFolder = nsf.RootFolder.GetSubFolder("Inbox");
-foreach (MessageInfo messageInfo in inboxFolder.EnumerateMessages())
-{
-    string subject = messageInfo.Subject;
-    string sender = messageInfo.SenderEmailAddress;
-    DateTime date = messageInfo.DateTime;
-    
-    // Mesaj özelliklerini görüntülemek veya işlemek için kod
-}
-```
-
-## 4. Mesaj İçeriklerini Görüntüleme
-
-İleti metnini ve eklerini alın ve işleyin:
-
-```csharp
-MapiMessage message = nsf.ExtractMessage(messageInfo);
-string messageBody = message.BodyText;
-AttachmentCollection attachments = message.Attachments;
-foreach (var attachment in attachments)
-{
-    // Ekleri işleme kodu
-}
-```
-
-## 5. Hata İşleme
-
-İstisnaları ele almak için hata işlemeyi uygulayın:
-
-```csharp
-try
-{
-    // Mesaj çıkarma ve işleme kodu
-}
-catch (Exception ex)
-{
-    Console.WriteLine("An error occurred: " + ex.Message);
-}
-```
+## Adım 4: Uygulamanızı Çalıştırın
+C# uygulamanızı oluşturun ve çalıştırın. Zimbra TGZ deposundaki tüm mesajların konularını okuyacak ve görüntüleyecektir.
 
 ## Çözüm
 
-Bu makalede Aspose.Email for .NET ile C# kullanarak NSF depolama alanındaki mesajları nasıl okuyacağımızı öğrendik. Projeyi kurmayı, NSF dosyasını yüklemeyi, mesaj özelliklerine erişmeyi, mesaj içeriklerini görüntülemeyi ve hata işlemeyi uygulamayı ele aldık. Aspose.Email for .NET bu görevi basitleştirir ve geliştiricilerin e-posta verileriyle verimli bir şekilde çalışmasını sağlar.
+Bu eğitimde, C# ve Aspose.Email for .NET kullanarak Zimbra TGZ depolama alanındaki mesajları nasıl okuyacağınızı öğrendiniz. Bu, özel ihtiyaçlarınıza uyacak şekilde özelleştirilebilecek basit bir süreçtir. Artık .NET uygulamalarınızda Zimbra e-posta verileriyle verimli bir şekilde çalışabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
+### 1. Aspose.Email for .NET'i diğer e-posta depolama formatlarıyla birlikte kullanabilir miyim?
+Evet, Aspose.Email for .NET, PST, MSG, EML ve daha fazlası dahil olmak üzere çeşitli e-posta depolama formatlarını destekler.
 
- Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/email/net).
+### 2. Zimbra TGZ mesajlarını okurken ekleri nasıl halledeceğim?
+Aspose.Email'in API yöntemlerini kullanarak e-posta eklerine erişebilir ve bunları işleyebilirsiniz.
 
-### Aspose.Email'i e-postayla ilgili diğer görevler için kullanabilir miyim?
+### 3. Aspose.Email for .NET'in deneme sürümü mevcut mu?
+Evet, Aspose web sitesinden ücretsiz deneme sürümünü indirebilirsiniz.
 
-Evet, Aspose.Email for .NET, çeşitli e-posta formatları, ekler ve daha fazlasıyla çalışmak için geniş bir özellik yelpazesi sunar.
+### 4. Aspose.Email for .NET'i hem Windows hem de .NET Core uygulamalarında kullanabilir miyim?
+Evet, Aspose.Email for .NET hem Windows hem de .NET Core ile uyumludur.
 
-### Bu kütüphaneyi ticari projelerde kullanabilir miyim?
-
-Evet, Aspose.Email for .NET'i lisans koşulları kapsamında ticari projelerde kullanabilirsiniz.
-
-### Aspose.Email ne sıklıkta güncellenir?
-
-Aspose, yeni özellikler, iyileştirmeler ve hata düzeltmeleri eklemek için kitaplıklarını düzenli olarak günceller. Güncellemeler için sürüm notlarını kontrol edebilirsiniz.
+### 5. Aspose.Email for .NET kullanarak Zimbra TGZ depolama alanıyla çalışırken herhangi bir sınırlama var mı?
+Aspose.Email for .NET, Zimbra TGZ depolama alanıyla çalışmak için sağlam yetenekler sağlar, ancak belgelerde belirtilen belirli sınırlamaların farkında olun.

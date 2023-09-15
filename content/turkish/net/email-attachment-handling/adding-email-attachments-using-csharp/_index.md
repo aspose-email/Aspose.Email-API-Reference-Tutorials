@@ -27,7 +27,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 3. Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyin.
 
 ```csharp
-//Geliştirme ortamını ayarlama kodunuz
+// Geliştirme ortamını ayarlama kodunuz
 ```
 
 ## Yeni Bir E-posta Mesajı Oluşturma

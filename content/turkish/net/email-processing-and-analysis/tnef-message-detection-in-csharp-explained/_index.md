@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1.  E-posta mesajını kullanarak yükleyin.`MapiMessage` sınıf:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// E-postayı TNEF ekiyle yükleyin
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. Yüklenen e-postanın bir TNEF mesajı olup olmadığını belirleyin:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
  Yer değiştirmek`"path/to/your/email.msg"` e-posta mesajı dosyanızın gerçek yolunu içerir.
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 Yüklenen e-posta gerçekten bir TNEF mesajıysa, eklerini çıkarabilir ve işleyebilirsiniz:
 
 ```csharp
-if (isTnefMessage)
+// Ekler aracılığıyla yineleme
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // TNEF ekini işle
-        // Örneğin, eki diske kaydedin
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // TNEF ekini çıkarın
+        var tnefAttachment = attachment;
+
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
     }
 }
 ```
 
 ## SSS
 
-## Bir E-postanın TNEF Mesajı olup olmadığını Nasıl Kontrol Edebilirim?
+### Bir E-postanın TNEF Mesajı olup olmadığını Nasıl Kontrol Edebilirim?
 
  Bir e-postanın TNEF mesajı olup olmadığını kontrol etmek için`IsTnefMessage()` yöntemi`MapiMessage` sınıf:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## Bir TNEF Mesajından Ekleri Nasıl Çıkarırım?
+### Bir TNEF Mesajından Ekleri Nasıl Çıkarırım?
 
 Bir TNEF mesajından ekleri çıkarmak için şu adımları izleyin:
 
 1.  E-postayı kullanarak yükleyin`MapiMessage.FromFile()`.
-2.  kullanarak e-postanın bir TNEF mesajı olup olmadığını kontrol edin.`IsTnefMessage()`.
-3.  Bu bir TNEF mesajıysa, ekleri kullanarak çıkarın.`ExtractTnefAttachments()`.
+2.  kullanarak e-postanın bir TNEF mesajı olup olmadığını kontrol edin.`OriginalIsTnef`.
+3. Bu bir TNEF mesajıysa, Ekleri ContentType ile yineleyerek kullanarak ekleri çıkarın.MediaType "application/ms-tnef" değerine eşittir.
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Ekler aracılığıyla yineleme
+foreach (var attachment in message.Attachments)
 {
-    // TNEF ekini işle
-    // Örneğin, eki diske kaydedin
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // TNEF ekini çıkarın
+        var tnefAttachment = attachment;
+
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
+    }
 }
 ```
 

@@ -21,9 +21,9 @@ url: /ar/net/email-file-storage-and-retrieval/
 تركز البرامج التعليمية لاسترداد البريد الإلكتروني على تمكين المطورين من استرداد الملفات المتعلقة بالبريد الإلكتروني بكفاءة باستخدام Aspose.Email for .NET. يمكن للمطورين استكشاف تقنيات الوصول إلى رسائل البريد الإلكتروني والمرفقات المخزنة برمجياً، مما يضمن استرجاعها واستخدامها بسلاسة. تقدم هذه البرامج التعليمية إرشادات خطوة بخطوة حول دمج منطق الاسترجاع، والبحث عن محتوى بريد إلكتروني محدد، ودمج البيانات المستردة في التطبيقات. يعمل Aspose.Email for .NET على تبسيط مهام استرداد ملفات البريد الإلكتروني، مما يسمح للمطورين بتحسين تطبيقاتهم للوصول إلى البيانات واستخدامها بكفاءة.
 
 ## دروس تخزين واسترجاع الملفات عبر البريد الإلكتروني
-## [قراءة جميع الرسائل من Zimbra TGZ Storage باستخدام C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [قراءة جميع الرسائل من Zimbra TGZ Storage باستخدام C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 تعرف على كيفية قراءة رسائل تخزين Zimbra TGZ باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن.
-## [قراءة الرسائل من تخزين NSF باستخدام C#](./reading-messages-from-nsf-storage-using-csharp/)
+### [قراءة الرسائل من تخزين NSF باستخدام C#](./reading-messages-from-nsf-storage-using-csharp/)
 تعرف على كيفية قراءة رسائل تخزين NSF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-## [حفظ الرسائل من Zimbra TGZ Storage باستخدام C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [حفظ الرسائل من Zimbra TGZ Storage باستخدام C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 تعرف على كيفية استخراج رسائل البريد الإلكتروني الخاصة بـ Zimbra TGZ باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لإدارة البريد الإلكتروني بكفاءة.

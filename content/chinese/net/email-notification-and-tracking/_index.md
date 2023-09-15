@@ -21,9 +21,9 @@ url: /zh/net/email-notification-and-tracking/
 电子邮件跟踪教程的重点是使开发人员能够使用 Aspose.Email for .NET 实现电子邮件跟踪功能。开发人员可以探索监控电子邮件交互的技术，例如打开率和链接点击次数，以深入了解收件人的参与度。这些教程提供了有关在电子邮件内容中嵌入跟踪元素、捕获跟踪数据和生成报告的分步说明。 Aspose.Email for .NET 简化了电子邮件跟踪任务，使开发人员能够通过数据驱动的电子邮件收件人行为洞察来增强其应用程序。
 
 ## 电子邮件通知和跟踪教程
-## [使用 C# 代码接收电子邮件通知](./receiving-email-notifications-with-csharp-code/)
+### [使用 C# 代码接收电子邮件通知](./receiving-email-notifications-with-csharp-code/)
 了解使用 Aspose.Email for .NET 在 C# 中接收电子邮件通知。提供了高效的代码示例。
-## [使用 C# 代码请求电子邮件已读回执](./requesting-email-read-receipts-using-csharp-code/)
+### [使用 C# 代码请求电子邮件已读回执](./requesting-email-read-receipts-using-csharp-code/)
 了解如何使用 C# 代码使用 Aspose.Email for .NET 请求电子邮件阅读回执，从而增强通信跟踪。
-## [使用 C# 代码跟踪电子邮件文档转换进度](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [使用 C# 代码跟踪电子邮件文档转换进度](./tracking-email-document-conversion-progress-with-csharp-code/)
 了解如何使用 Aspose.Email for .NET 实现电子邮件通知和跟踪。带有代码示例的分步指南。立即增强您的电子邮件沟通！

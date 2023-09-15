@@ -18,13 +18,13 @@ Email headers are metadata that contain essential details about an email message
 
 Email headers serve several crucial purposes:
 #### Routing: 
-	Headers determine the path an email takes from sender to recipient.
+Headers determine the path an email takes from sender to recipient.
 #### Authentication
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Headers like DKIM and SPF help verify the authenticity of emails.
 #### Subject Line: 
-	The subject header gives recipients an idea of the email's content.
+The subject header gives recipients an idea of the email's content.
 #### Reply Handling: 
-	Headers like Reply-To ensure proper handling of replies.
+Headers like Reply-To ensure proper handling of replies.
 
 ## 3. Installing Aspose.Email for .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Certain headers are commonly used in email messages:
 
 #### Subject: 
-	Set the email subject using the `message.Subject` property.
+Set the email subject using the `message.Subject` property.
 #### From: 
-	Specify the sender's address using the `message.From` property.
+Specify the sender's address using the `message.From` property.
 #### To: 
-	Define the recipient's address using the `message.To` property.
+Define the recipient's address using the `message.To` property.
 
 ## 6. Customizing Additional Headers
 

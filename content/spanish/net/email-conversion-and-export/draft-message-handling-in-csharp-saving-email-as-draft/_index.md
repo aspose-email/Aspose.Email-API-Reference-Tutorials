@@ -98,7 +98,7 @@ Sí, el borrador del correo electrónico se guarda en formato EML, que es un for
 
 ### ¿Puedo integrar el manejo de borradores de mensajes en mi aplicación de correo electrónico existente?
 
-Por supuesto, siguiendo los pasos proporcionados en esta guía, puede integrar sin problemas el manejo de borradores de mensajes en su aplicación cliente de correo electrónico existente.
+Por supuesto, siguiendo los pasos proporcionados en esta guía, puede integrar sin problemas el manejo de borradores de mensajes en su aplicación de cliente de correo electrónico existente.
 
 ### ¿La biblioteca Aspose.Email admite otras funcionalidades relacionadas con el correo electrónico?
 

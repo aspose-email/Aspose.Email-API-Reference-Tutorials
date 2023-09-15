@@ -120,6 +120,6 @@ Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Email für .NET 
    Aspose.Email konzentriert sich auf die Erstellung und Bearbeitung von E-Mails. Für die Planung von E-Mails müssten Sie ein separates Aufgabenplanungssystem integrieren.
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
-    Eine umfassende Dokumentation und Codebeispiele finden Sie auf der[Aspose.Email API-Referenz](https://reference.aspose.com/email/net/).
+   Eine umfassende Dokumentation und Codebeispiele finden Sie auf der[Aspose.Email API-Referenz](https://reference.aspose.com/email/net/).
 
 ---

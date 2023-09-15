@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### Verifying Message Encryption
-
-You can also verify if a message is digitally signed and encrypted:
-
-```csharp
-using Aspose.Email.Security;
-// Other relevant using statements
-
-// Load an email message
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// Verify if the message is signed and encrypted
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Check for encryption
-if (isSigned && isEncrypted)
-{
-    // Message is signed and encrypted
-}
-```
-
 ## Decrypting Encrypted Messages
 
 Decrypting an encrypted message requires the proper keys and certificates. Here's how you can do it using Aspose.Email:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Provide the decryption key and certificate
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Decrypt the message
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## Handling Exceptions

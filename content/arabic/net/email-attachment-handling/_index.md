@@ -40,3 +40,9 @@ url: /ar/net/email-attachment-handling/
 تعرف على كيفية إزالة مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود مصدر C#.
 ### [حماية مرفقات TNEF - طريقة C#](./safeguarding-tnef-attachments-csharp-method/)
 تعرف على كيفية حماية مرفقات TNEF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن.
+### [استخراج المرفقات المضمنة من ملفات MSG باستخدام C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+تعرف على كيفية استخراج المرفقات المضمنة من ملفات MSG باستخدام C# وAspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية المصدر.
+### [الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+تعرف على كيفية الحفاظ على تنسيق MSG المضمن باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
+### [الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+تعرف على كيفية الحفاظ على مرفقات TNEF باستخدام Aspose.Email لـ .NET في هذا الدليل خطوة بخطوة مع التعليمات البرمجية المصدر.

@@ -21,17 +21,14 @@ E-posta olayı işleme eğitimleri, Aspose.Email for .NET kullanarak e-postayla 
 E-posta takvimi yönetimi eğitimleri, Aspose.Email for .NET kullanarak takvimle ilgili işlevleri etkili bir şekilde yönetmeye odaklanır. Geliştiriciler, takvim etkinliklerini ve randevuları program aracılığıyla oluşturma, değiştirme ve senkronize etme tekniklerini keşfedebilir. Bu eğitimler, takvim özelliklerinin uygulamalara entegre edilmesi, etkinliklerin kusursuz şekilde planlanması ve yönetilmesi konusunda adım adım talimatlar sunar. Aspose.Email for .NET, takvim yönetimi görevlerini basitleştirerek geliştiricilerin verimli etkinlik organizasyonu ve yönetimi ile uygulamalarını geliştirmelerine olanak tanır.
 
 ## E-posta Etkinliği ve Takvim İşleme Eğitimleri
-### [C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
-### [C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme](./loading-email-messages-with-load-options-in-csharp/)
-C#'ta Aspose.Email for .NET ile e-posta mesajlarını nasıl yükleyeceğinizi öğrenin. Etkili e-posta yönetimi için adım adım kılavuzu ve kaynak kodu örneklerini keşfedin.
-### [C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma](./preserving-embedded-msg-format-during-load-with-csharp/)
-Aspose.Email for .NET'i kullanarak gömülü MSG formatını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
-### [C# Kodunu Kullanarak Orijinal Sınırları Koruma](./preserving-original-boundaries-using-csharp-code/)
-C# ve Aspose.Email for .NET kullanarak e-posta eklerinin orijinal sınırlarını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
+
 ### [C# ile ICS Dosyalarından Çoklu Olayları Okumak](./reading-multiple-events-from-ics-files-with-csharp/)
 Aspose.Email for .NET'i kullanarak ICS dosyalarından birden fazla olayı çıkarmayı öğrenin. Verimli etkinlik yönetimi için kod örnekleri içeren adım adım kılavuz.
 ### [C# Kodunu Kullanarak Takvim Etkinliklerini İşleme](./rendering-calendar-events-using-csharp-code/)
 C# ve Aspose.Email for .NET kullanarak takvim etkinliklerini işlemeyi öğrenin. Kolaylıkla etkileşimli programlar oluşturun.
 ### [C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama](./setting-participant-status-for-appointment-attendees-with-csharp/)
 Randevu katılımcılarının durumunu C# ve Aspose.Email for .NET kullanarak nasıl yöneteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
+### [Taslak Randevu Talebi Hazırlama - C# Örneği](./crafting-a-draft-appointment-request-csharp-example/)
+C#'ta taslak randevu isteği e-postaları oluşturmak için Aspose.Email for .NET'i nasıl kullanacağınızı öğrenin. İş iletişimini ve verimliliği artırın.
+### [ICS Dosyalarındaki ProdID'yi C# ile Değiştirme](./altering-prodid-in-ics-files-with-csharp/)
+C# ve Aspose.Email for .NET kullanarak ICS dosyalarındaki ProdID'yi değiştirmeyi öğrenin. Adım adım kılavuz ve kod. Veri bütünlüğünü ve uyumluluğunu sağlayın. 

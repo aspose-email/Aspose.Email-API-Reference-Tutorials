@@ -14,7 +14,7 @@ url: /zh/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 
 ## .NET 的 Aspose.Email 入门
 
-Aspose.Email for .NET 是一个功能强大的库，提供了处理电子邮件的各种功能，包括解析、创建和操作电子邮件。首先，您需要在项目中安装 Aspose.Email for .NET 库。您可以从 Aspose. 发布 下载它：[Aspose.Releases](https://releases.aspose.com/email/net/)或者使用 NuGet 等包管理器。
+ Aspose.Email for .NET 是一个功能强大的库，提供了处理电子邮件的各种功能，包括解析、创建和操作电子邮件。首先，您需要在项目中安装 Aspose.Email for .NET 库。您可以从 Aspose. 发布 下载它：[Aspose.Releases](https://releases.aspose.com/email/net/)或者使用 NuGet 等包管理器。
 
 ## 加载和解析电子邮件
 

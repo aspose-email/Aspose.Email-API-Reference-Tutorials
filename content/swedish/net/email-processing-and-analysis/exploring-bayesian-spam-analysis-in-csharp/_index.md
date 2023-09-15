@@ -38,7 +38,7 @@ Ladda e-postmeddelanden med Aspose.Email:
 
 ```csharp
 using Aspose.Email;
-// Andra relevanta med påståenden
+// Andra relevanta med hjälp av uttalanden
 
 // Ladda ett e-postmeddelande
 MailMessage message = MailMessage.Load("email.eml");
@@ -49,10 +49,10 @@ MailMessage message = MailMessage.Load("email.eml");
 Skapa en Bayesiansk skräppostanalysmodell:
 
 ```csharp
-using Aspose.Email.Spam;
-
+using Aspose.Email.AntiSpam;
+string spamFilterDatabase = "SpamFilterDatabase.txt";
 // Skapa en skräppostanalysator
-BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 ```
 
 ## Utbildning av modellen
@@ -61,8 +61,9 @@ Träna modellen med exempel på spam och skinka (icke-spam) e-postmeddelanden:
 
 ```csharp
 // Träna med spam och skinka mejl
-spamAnalyzer.Train("spam1.eml", true);
-spamAnalyzer.Train("ham1.eml", false);
+spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+spamAnalyzer.SaveDatabase(spamFilterDatabase);
 ```
 
 ## Tillämpa Bayesiansk analys
@@ -71,7 +72,7 @@ Använd Bayesiansk analys för att bedöma om ett e-postmeddelande är spam:
 
 ```csharp
 // Analysera ett mejl
-double spamProbability = spamAnalyzer.Analyze(message);
+double spamProbability = spamAnalyzer.Test(message);
 bool isSpam = spamProbability > 0.5;
 ```
 
@@ -106,16 +107,17 @@ namespace BayesianSpamAnalysisDemo
         {
             // Ladda ett e-postmeddelande
             MailMessage message = MailMessage.Load("email.eml");
-
+			string spamFilterDatabase = "SpamFilterDatabase.txt";
             // Skapa en skräppostanalysator
-            BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+            SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 
             // Träna modellen
-            spamAnalyzer.Train("spam1.eml", true);
-            spamAnalyzer.Train("ham1.eml", false);
-
+			spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+			spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+			spamAnalyzer.SaveDatabase(spamFilterDatabase);
             // Analysera mejlet
-            double spamProbability = spamAnalyzer.Analyze(message);
+			spamAnalyzer.LoadDatabase(spamFilterDatabase);
+            double spamProbability = spamAnalyzer.Test(message);
             bool isSpam = spamProbability > 0.5;
 
             // Visa resultatet
@@ -127,7 +129,7 @@ namespace BayesianSpamAnalysisDemo
 
 ## Slutsats
 
-den här guiden undersökte vi hur man implementerar Bayesiansk skräppostanalys i C# med Aspose.Email för .NET. Den här tekniken förbättrar e-postfiltreringen och separerar effektivt skräppost från legitima meddelanden.
+I den här guiden undersökte vi hur man implementerar Bayesiansk skräppostanalys i C# med Aspose.Email för .NET. Den här tekniken förbättrar e-postfiltreringen och separerar effektivt skräppost från legitima meddelanden.
 
 ## Vanliga frågor
 

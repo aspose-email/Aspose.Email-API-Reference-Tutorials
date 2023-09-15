@@ -14,7 +14,7 @@ Les objets intégrés dans les e-mails font référence à des fichiers directem
 
 ## Premiers pas avec Aspose.Email pour .NET
 
-Aspose.Email pour .NET est une bibliothèque puissante qui fournit diverses fonctionnalités pour travailler avec les e-mails, notamment l'analyse, la création et la manipulation des e-mails. Pour commencer, vous devez avoir installé la bibliothèque Aspose.Email pour .NET dans votre projet. Vous pouvez soit le télécharger depuis Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou utilisez un gestionnaire de packages comme NuGet.
+ Aspose.Email pour .NET est une bibliothèque puissante qui fournit diverses fonctionnalités pour travailler avec les e-mails, notamment l'analyse, la création et la manipulation des e-mails. Pour commencer, vous devez avoir installé la bibliothèque Aspose.Email pour .NET dans votre projet. Vous pouvez soit le télécharger depuis Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou utilisez un gestionnaire de packages comme NuGet.
 
 ## Chargement et analyse d'un e-mail
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Extraire les objets incorporés du contenu HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Extraire et enregistrer la ressource liée (objet intégré)
+            // Extraire et enregistrer la ressource liée (objet intégré)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Extraire les objets incorporés du contenu HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Extraire et enregistrer la ressource liée (objet intégré)
+                        // Extraire et enregistrer la ressource liée (objet intégré)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

@@ -40,3 +40,9 @@ Erfahren Sie, wie Sie mit Aspose.Email für .NET zwischen Inline- und regulären
 Erfahren Sie, wie Sie E-Mail-Anhänge mit Aspose.Email für .NET entfernen. Schritt-für-Schritt-Anleitung mit C#-Quellcode.
 ### [Schutz von TNEF-Anhängen – C#-Methode](./safeguarding-tnef-attachments-csharp-method/)
 Erfahren Sie, wie Sie TNEF-Anhänge mit C# und Aspose.Email für .NET schützen. Schritt-für-Schritt-Anleitung mit Quellcode im Lieferumfang enthalten.
+### [Extrahieren eingebetteter Anhänge aus MSG-Dateien mit C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Erfahren Sie, wie Sie eingebettete Anhänge aus MSG-Dateien mit C# und Aspose.Email für .NET extrahieren. Eine umfassende Anleitung mit Quellcode-Beispielen.
+### [Beibehalten des eingebetteten MSG-Formats beim Laden mit C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Erfahren Sie, wie Sie das eingebettete MSG-Format mit Aspose.Email für .NET beibehalten. Schritt-für-Schritt-Anleitung mit Quellcode.
+### [Beibehalten von TNEF-Anhängen beim Lesen von Nachrichten – C#-Ansatz](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Erfahren Sie in dieser Schritt-für-Schritt-Anleitung mit Quellcode, wie Sie TNEF-Anhänge mit Aspose.Email für .NET bewahren.

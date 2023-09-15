@@ -120,6 +120,6 @@ Tebrikler! Aspose.Email for .NET'i kullanarak yeni bir posta mesajının nasıl 
    Aspose.Email, e-posta oluşturma ve manipülasyona odaklanır. E-postaları planlamak için ayrı bir görev planlama sistemiyle entegrasyon yapmanız gerekir.
 
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
-    Kapsamlı belgeleri ve kod örneklerini şu adreste bulabilirsiniz:[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
+   Kapsamlı belgeleri ve kod örneklerini şu adreste bulabilirsiniz:[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
 
 ---

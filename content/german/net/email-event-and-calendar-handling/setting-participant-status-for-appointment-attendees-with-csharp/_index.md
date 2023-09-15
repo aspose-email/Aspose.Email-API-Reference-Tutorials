@@ -100,7 +100,7 @@ In diesem Leitfaden haben wir den Prozess der Verwaltung von Terminteilnehmern u
 
 ### Ist Aspose.Email für .NET für die Abwicklung anderer E-Mail-bezogener Aufgaben geeignet?
 
-Absolut! Aspose.Email für .NET bietet eine breite Palette an Funktionen für die Arbeit mit E-Mails, Anhängen, Terminen und mehr und ist damit eine vielseitige Wahl für verschiedene E-Mail-bezogene Aufgaben.
+Absolut! Aspose.Email für .NET bietet zahlreiche Funktionen für die Arbeit mit E-Mails, Anhängen, Terminen und mehr und ist damit eine vielseitige Wahl für verschiedene E-Mail-bezogene Aufgaben.
 
 ### Kann ich diese Funktionalität in meine bestehende .NET-Anwendung integrieren?
 

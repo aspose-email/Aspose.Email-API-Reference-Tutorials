@@ -10,7 +10,7 @@ url: /es/net/email-security-and-signatures/
 
 ## Introducción
 
-Los tutoriales de Aspose.Email para .NET sobre "Firmas y seguridad del correo electrónico" brindan a los desarrolladores información esencial para fortalecer la comunicación por correo electrónico y mejorar la integridad de los datos dentro de sus aplicaciones. Estos tutoriales ofrecen una guía completa sobre cómo aprovechar Aspose.Email para .NET para implementar medidas sólidas de seguridad de correo electrónico y firmas de correo electrónico personalizadas. Con instrucciones paso a paso y ejemplos de código prácticos, estos tutoriales permiten a los desarrolladores garantizar una comunicación por correo electrónico segura y confiable al mismo tiempo que incorporan una marca profesional.
+Los tutoriales de Aspose.Email para .NET sobre "Firmas y seguridad del correo electrónico" brindan a los desarrolladores información esencial para fortalecer la comunicación por correo electrónico y mejorar la integridad de los datos dentro de sus aplicaciones. Estos tutoriales ofrecen una guía completa sobre cómo aprovechar Aspose.Email para .NET para implementar medidas sólidas de seguridad de correo electrónico y firmas de correo electrónico personalizadas. Con instrucciones paso a paso y ejemplos de código prácticos, estos tutoriales permiten a los desarrolladores garantizar una comunicación por correo electrónico segura y confiable al tiempo que incorporan una marca profesional.
 
 ## Seguridad del correo electrónico
 
@@ -22,7 +22,6 @@ Los tutoriales sobre firmas de correo electrónico se centran en permitir a los 
 
 
 ## Tutoriales de firmas y seguridad del correo electrónico
-## [Manejo de objetos incrustados en correos electrónicos con código C#](./handling-embedded-objects-in-emails-with-csharp-code/)
-Aprenda a manejar objetos incrustados en correos electrónicos usando C# y Aspose.Email para .NET. Cree contenido de correo electrónico interactivo y atractivo con orientación paso a paso y ejemplos de código.
-## [Firmar correos electrónicos con DKIM usando código C#](./signing-emails-with-dkim-using-csharp-code/)
+
+### [Firmar correos electrónicos con DKIM usando código C#](./signing-emails-with-dkim-using-csharp-code/)
 Aprenda a proteger correos electrónicos con DKIM usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente. Mejore la confianza y autenticidad del correo electrónico.

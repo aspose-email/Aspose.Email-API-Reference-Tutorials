@@ -36,13 +36,15 @@ Per salvaguardare gli allegati TNEF, dobbiamo prima caricarli ed estrarli. Segui
 1.  Carica file TNEF: carica il file TNEF utilizzando il file`MapiMessage` classe:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Estrai allegati: scorri gli allegati ed estraili:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Estrai i dati degli allegati
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ Una volta estratti gli allegati, puoi implementare le tue misure di salvaguardia
 Dopo aver applicato le misure di salvaguardia, puoi salvare gli allegati in modo sicuro:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Logica di salvaguardia
     // ...
-    // Salva l'allegato
+    //Salva l'allegato
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Sì, Aspose.Email supporta vari protocolli di posta elettronica come SMTP, POP3,
 
 ### Con quale frequenza vengono rilasciati gli aggiornamenti per Aspose.Email?
 
- Aspose rilascia frequentemente aggiornamenti e miglioramenti alle sue librerie. Si consiglia di controllare Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) O[Aspose.Email per riferimento API .Net](https://reference.aspose.com/email/net) per gli ultimi aggiornamenti e funzionalità.
+Aspose rilascia frequentemente aggiornamenti e miglioramenti alle sue librerie. Si consiglia di controllare Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) O[Aspose.Email per riferimento API .Net](https://reference.aspose.com/email/net) per gli ultimi aggiornamenti e funzionalità.
 
 ### Posso utilizzare Aspose.Email in progetti commerciali?
 

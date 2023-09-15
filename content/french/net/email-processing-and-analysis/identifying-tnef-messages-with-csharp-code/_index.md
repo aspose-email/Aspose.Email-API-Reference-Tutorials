@@ -16,7 +16,7 @@ Les messages TNEF, également appelés pièces jointes « winmail.dat », peuven
 
 ## Configuration de l'environnement de développement
 
-Avant d'entrer dans le code, assurez-vous que la bibliothèque Aspose.Email pour .NET est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/email/net). Une fois téléchargé, suivez ces étapes pour configurer votre environnement de développement :
+ Avant d'entrer dans le code, assurez-vous que la bibliothèque Aspose.Email pour .NET est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/email/net). Une fois téléchargé, suivez ces étapes pour configurer votre environnement de développement :
 
 1. Créez un nouveau projet C# dans votre environnement de développement préféré.
 2. Ajoutez une référence à la bibliothèque Aspose.Email téléchargée.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Maintenant que nous avons chargé le message électronique, nous devons déterminer s'il s'agit d'un message TNEF. Aspose.Email fournit le`MailMessage.IsTnef` propriété à cet effet. Voici comment vous pouvez l'utiliser :
 
 ```csharp
-// Vérifiez si le message est un message TNEF
-if (message.IsTnef)
+//Vérifiez si le message est un message TNEF
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Extraction de données à partir de messages TNEF
-
-Si le message est bien un message TNEF, vous pouvez en extraire diverses données. Par exemple, vous pouvez extraire le contenu du texte brut comme suit :
-
-```csharp
-if (message.IsTnef)
-{
-    // Extraire le contenu en texte brut de TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Gestion des pièces jointes dans les messages TNEF
 
 Les messages TNEF contiennent souvent des pièces jointes. Pour extraire et enregistrer ces pièces jointes, vous pouvez utiliser le code suivant :
 
 ```csharp
-if (message.IsTnef)
+// Parcourir les pièces jointes
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extraire la pièce jointe TNEF
+        var tnefAttachment = attachment;
+
+        //Accéder aux propriétés du TNEF et modifier si nécessaire
+        // tnefAttachment.Propriétés...
     }
 }
 ```

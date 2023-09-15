@@ -94,7 +94,7 @@ class Program
 
 ### Как я могу скачать библиотеку Aspose.Email?
 
- Вы можете скачать библиотеку Aspose.Email с сайта Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/)или с помощью диспетчера пакетов NuGet в Visual Studio.
+ Вы можете скачать библиотеку Aspose.Email с сайта Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/) или с помощью диспетчера пакетов NuGet в Visual Studio.
 
 ### Могу ли я прикрепить несколько файлов к одному письму?
 

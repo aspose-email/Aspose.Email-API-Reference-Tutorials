@@ -47,7 +47,7 @@ AttachmentCollection attachments = emailMessage.Attachments;
 
 ## 6. Unterscheidung zwischen Inline- und regulären Anhängen
 
- Um zwischen Inline- und regulären Anhängen zu unterscheiden, müssen Sie die einzelnen Anhänge überprüfen`ContentDisposition` Eigentum. Wenn die`ContentDisposition` auf „inline“ eingestellt ist, handelt es sich bei dem Anhang um einen Inline-Anhang.
+Um zwischen Inline- und regulären Anhängen zu unterscheiden, müssen Sie die einzelnen Anhänge überprüfen`ContentDisposition` Eigentum. Wenn die`ContentDisposition` auf „inline“ eingestellt ist, handelt es sich bei dem Anhang um einen Inline-Anhang.
 
 ## 7. Arbeiten mit Inline-Anhängen
 
@@ -90,7 +90,7 @@ In diesem Leitfaden haben wir die Welt der E-Mail-Anhänge erkundet und uns dabe
 
 ### Wie kann ich die Aspose.Email für .NET-Bibliothek installieren?
 
-Sie können die Aspose.Email für .NET-Bibliothek mit dem NuGet Package Manager installieren. Führen Sie einfach den folgenden Befehl in der Package Manager-Konsole aus:`Install-Package Aspose.Email`.
+ Sie können die Aspose.Email für .NET-Bibliothek mit dem NuGet Package Manager installieren. Führen Sie einfach den folgenden Befehl in der Package Manager-Konsole aus:`Install-Package Aspose.Email`.
 
 ### Kann ich programmgesteuert zwischen Inline- und regulären Anhängen unterscheiden?
 
@@ -106,4 +106,4 @@ Sie können auf den Inhalt eines Inline-Anhangs zugreifen, indem Sie die entspre
 
 ### Kann ich reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern?
 
- Absolut! Sie können reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern, indem Sie die Funktion verwenden`Save` Methode des Anhangobjekts und Bereitstellung des gewünschten Dateipfads.
+ Absolut! Sie können reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern, indem Sie die Funktion verwenden`Save` Methode des Anhangobjekts und Angabe des gewünschten Dateipfads.

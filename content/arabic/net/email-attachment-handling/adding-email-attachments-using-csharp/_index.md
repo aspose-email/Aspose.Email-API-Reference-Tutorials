@@ -27,7 +27,7 @@ url: /ar/net/email-attachment-handling/adding-email-attachments-using-csharp/
 3. قم بتثبيت Aspose.Email لمكتبة .NET باستخدام NuGet Package Manager.
 
 ```csharp
-//الكود الخاص بك لإعداد بيئة التطوير
+// الكود الخاص بك لإعداد بيئة التطوير
 ```
 
 ## إنشاء رسالة بريد إلكتروني جديدة

@@ -16,7 +16,7 @@ TNEF-Nachrichten, auch bekannt als „winmail.dat“-Anhänge, können Kompatibi
 
 ## Einrichten der Entwicklungsumgebung
 
-Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass Sie die Aspose.Email für .NET-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/email/net). Führen Sie nach dem Herunterladen die folgenden Schritte aus, um Ihre Entwicklungsumgebung einzurichten:
+ Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass Sie die Aspose.Email für .NET-Bibliothek installiert haben. Sie können es herunterladen unter[Hier](https://releases.aspose.com/email/net). Führen Sie nach dem Herunterladen die folgenden Schritte aus, um Ihre Entwicklungsumgebung einzurichten:
 
 1. Erstellen Sie ein neues C#-Projekt in Ihrer bevorzugten Entwicklungsumgebung.
 2. Fügen Sie einen Verweis auf die heruntergeladene Aspose.Email-Bibliothek hinzu.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Nachdem wir die E-Mail-Nachricht geladen haben, müssen wir feststellen, ob es sich um eine TNEF-Nachricht handelt. Aspose.Email bietet die`MailMessage.IsTnef` Eigentum für diesen Zweck. So können Sie es verwenden:
 
 ```csharp
-// Überprüfen Sie, ob es sich bei der Nachricht um eine TNEF-Nachricht handelt
-if (message.IsTnef)
+//Überprüfen Sie, ob es sich bei der Nachricht um eine TNEF-Nachricht handelt
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Extrahieren von Daten aus TNEF-Nachrichten
-
-Wenn es sich bei der Nachricht tatsächlich um eine TNEF-Nachricht handelt, können Sie verschiedene Daten daraus extrahieren. Sie können den Klartextinhalt beispielsweise wie folgt extrahieren:
-
-```csharp
-if (message.IsTnef)
-{
-    // Extrahieren Sie Nur-Text-Inhalte aus TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Umgang mit Anhängen in TNEF-Nachrichten
 
 TNEF-Nachrichten enthalten häufig Anhänge. Um diese Anhänge zu extrahieren und zu speichern, können Sie den folgenden Code verwenden:
 
 ```csharp
-if (message.IsTnef)
+// Durchlaufen Sie Anhänge
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extrahieren Sie den TNEF-Anhang
+        var tnefAttachment = attachment;
+
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        // tnefAttachment.Properties...
     }
 }
 ```
@@ -99,7 +91,7 @@ In diesem Leitfaden haben wir untersucht, wie man TNEF-Nachrichten mithilfe von 
 
 ### Wie kann ich die Aspose.Email für .NET-Bibliothek installieren?
 
- Sie können die Aspose.Email-Bibliothek unter herunterladen[https://releases.aspose.com/email/net](https://releases.aspose.com/email/net) und befolgen Sie die Installationsanweisungen in der Dokumentation.
+ Sie können die Aspose.Email-Bibliothek herunterladen von[https://releases.aspose.com/email/net](https://releases.aspose.com/email/net) und befolgen Sie die Installationsanweisungen in der Dokumentation.
 
 ### Kann ich Aspose.Email verwenden, um mit anderen E-Mail-Formaten zu arbeiten?
 

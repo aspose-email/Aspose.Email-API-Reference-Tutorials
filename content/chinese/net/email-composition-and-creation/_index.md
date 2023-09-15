@@ -27,8 +27,6 @@ Aspose.Email for .NET 关于“电子邮件撰写和创建”的教程为开发�
 了解使用 Aspose.Email for .NET 从 MSG 生成 TNEF EML。使用 C# 代码的分步指南。高效的电子邮件格式转换。
 ### [使用 C# 从 MSG 形成 TNEF 格式](./forming-tnef-format-from-msg-with-csharp/)
 了解如何使用 Aspose.Email for .NET 将 MSG 文件转换为 TNEF 格式。无缝创建丰富的电子邮件内容。 
-### [起草预约请求 - C# 示例](./crafting-a-draft-appointment-request-csharp-example/)
-了解如何使用 Aspose.Email for .NET 在 C# 中创建草稿预约请求电子邮件。增强业务沟通和效率。
 ### [设置图像的替代文本 - C# 指南](./setting-alternative-text-for-images-csharp-guide/)
  了解使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本。使用清晰的替代文本确保可访问性。包含文档和代码。
 ### [管理默认文本编码 - C# 实现](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Aspose.Email for .NET 关于“电子邮件撰写和创建”的教程为开发�
 了解如何在 Aspose.Email for .NET 中使用 HTML 增强电子邮件内容。包含 C# 示例的分步指南。提升您的电子邮件沟通！
 ### [在 C# 中指定收件人地址](./specifying-recipient-addresses-in-csharp/)
 了解如何使用 Aspose.Email for .NET 在 C# 中指定收件人地址。高效地创建、配置和发送电子邮件。
+### [使用 C# 中的加载选项加载电子邮件](./loading-email-messages-with-load-options-in-csharp/)
+了解如何在 C# 中使用 Aspose.Email for .NET 加载电子邮件。探索有效电子邮件处理的分步指南和源代码示例。

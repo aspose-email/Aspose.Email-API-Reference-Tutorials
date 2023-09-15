@@ -2,7 +2,7 @@
 title: Utforska e-postkonvertering och export
 linktitle: E-postkonvertering och export
 second_title: Aspose.Email .NET Email Processing API
-description: Bemästra e-postdatahantering med Aspose.Email för .NET handledning. Konvertera, exportera e-post, bibehåll integritet, hantera bilagor. Lyft med exempel.
+description: Bemästra e-postdatahantering med Aspose.Email för .NETs handledning. Konvertera, exportera e-post, bibehåll integritet, hantera bilagor. Lyft med exempel.
 type: docs
 weight: 11
 url: /sv/net/email-conversion-and-export/
@@ -20,8 +20,6 @@ Handledningarna för e-postkonvertering ger djupgående insikter i att transform
 
 E-postexporthandledningarna fokuserar på att göra det möjligt för utvecklare att exportera e-postmeddelanden från olika e-postklientlagringsformat. Oavsett om det handlar om att exportera e-post från Microsoft Exchange Server eller Microsoft Outlook, ger dessa handledningar tydliga instruktioner om hur du hämtar och exporterar e-postdata. Denna funktion är viktig för datamigrering, säkerhetskopiering och synkronisering. Handledningarna erbjuder en steg-för-steg-guide för att komma åt e-postdata från olika källor och exportera den till önskade format, vilket säkerställer att data förblir tillgänglig och användbar i olika system.
 
- För detaljerade insikter och praktiska implementeringsexempel kan du utforska[Aspose.Email för .NET e-postkonvertering och -export handledning](https://reference2.aspose.com/tutorials/email/net/email-conversion-and-export/). Öka dina möjligheter för hantering av e-postdata med Aspose.Email för .NET och lås upp potentialen för effektiv e-postkonvertering och export, vilket i slutändan förbättrar dina utvecklingssträvanden.
-
 ## Självstudier för e-postkonvertering och export
 ### [Anpassa MHTML-konvertering - C#-implementering](./customizing-mhtml-conversion-csharp-implementation/)
 Lär dig hur du anpassar MHTML-konvertering med Aspose.Email för .NET. Steg-för-steg-guide med C#-källkod.
@@ -33,8 +31,6 @@ Konvertera e-post till MHT-format med exakta tidszoner med Aspose.Email för .NE
 Lär dig hur du hanterar EML-filer i C# med Aspose.Email för .NET. Steg-för-steg-guide med kodexempel för att ladda, ändra och spara e-postmeddelanden.
 ### [Konvertera EML till MSG-format med C#](./converting-eml-to-msg-format-using-csharp/)
 Lär dig hur du konverterar EML till MSG med C# och Aspose.Email för .NET. En omfattande guide med kodexempel för effektiv konvertering av e-postformat.
-### [Bevara TNEF-bilagor när du läser meddelanden - C#-metoden](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
-Lär dig hur du bevarar TNEF-bilagor med Aspose.Email för .NET i denna steg-för-steg-guide med källkod.
 ### [C# Guide - Spara e-post som MHTML-fil](./csharp-guide-saving-email-as-mhtml-file/)
 Lär dig hur du sparar e-postmeddelanden som MHTML-filer med C# och Aspose.Email för .NET. Steg-för-steg guide med kodexempel och vanliga frågor.
 ### [Hantering av utkastmeddelande i C# - Spara e-post som utkast](./draft-message-handling-in-csharp-saving-email-as-draft/)

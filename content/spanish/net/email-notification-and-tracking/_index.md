@@ -21,9 +21,9 @@ Los tutoriales de notificación por correo electrónico profundizan en las compl
 Los tutoriales de seguimiento de correo electrónico se centran en permitir a los desarrolladores implementar funciones de seguimiento de correo electrónico utilizando Aspose.Email para .NET. Los desarrolladores pueden explorar técnicas para monitorear las interacciones de correo electrónico, como tasas de apertura y clics en enlaces, para obtener información sobre la participación de los destinatarios. Estos tutoriales ofrecen instrucciones paso a paso sobre cómo incorporar elementos de seguimiento en el contenido del correo electrónico, capturar datos de seguimiento y generar informes. Aspose.Email para .NET simplifica las tareas de seguimiento de correo electrónico, lo que permite a los desarrolladores mejorar sus aplicaciones con información basada en datos sobre el comportamiento de los destinatarios de correo electrónico.
 
 ## Tutoriales de seguimiento y notificación por correo electrónico
-## [Recibir notificaciones por correo electrónico con código C#](./receiving-email-notifications-with-csharp-code/)
+### [Recibir notificaciones por correo electrónico con código C#](./receiving-email-notifications-with-csharp-code/)
 Aprenda a recibir notificaciones por correo electrónico en C# usando Aspose.Email para .NET. Se proporciona un ejemplo de código eficiente.
-## [Solicitar recibos de lectura de correo electrónico usando código C#](./requesting-email-read-receipts-using-csharp-code/)
+### [Solicitar recibos de lectura de correo electrónico usando código C#](./requesting-email-read-receipts-using-csharp-code/)
 Aprenda a utilizar el código C# para solicitar confirmaciones de lectura de correo electrónico utilizando Aspose.Email para .NET, mejorando el seguimiento de las comunicaciones.
-## [Seguimiento del progreso de la conversión de documentos de correo electrónico con código C#](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [Seguimiento del progreso de la conversión de documentos de correo electrónico con código C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Aprenda a implementar notificaciones y seguimiento por correo electrónico utilizando Aspose.Email para .NET. Guía paso a paso con ejemplos de código. ¡Mejore su comunicación por correo electrónico hoy!

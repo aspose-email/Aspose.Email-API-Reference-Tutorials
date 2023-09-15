@@ -40,3 +40,9 @@ Découvrez comment faire la différence entre les pièces jointes en ligne et le
 Découvrez comment supprimer les pièces jointes des e-mails à l’aide d’Aspose.Email pour .NET. Guide étape par étape avec le code source C#.
 ### [Sauvegarde des pièces jointes TNEF - Méthode C#](./safeguarding-tnef-attachments-csharp-method/)
 Découvrez comment sauvegarder les pièces jointes TNEF à l’aide de C# et Aspose.Email pour .NET. Guide étape par étape avec code source inclus.
+### [Extraction de pièces jointes intégrées à partir de fichiers MSG à l'aide de C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Découvrez comment extraire des pièces jointes intégrées à partir de fichiers MSG à l'aide de C# et Aspose.Email pour .NET. Un guide complet avec des exemples de code source.
+### [Préserver le format MSG intégré pendant le chargement avec C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Découvrez comment conserver le format MSG intégré à l’aide d’Aspose.Email pour .NET. Guide étape par étape avec le code source.
+### [Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Découvrez comment conserver les pièces jointes TNEF à l'aide d'Aspose.Email pour .NET dans ce guide étape par étape avec le code source.

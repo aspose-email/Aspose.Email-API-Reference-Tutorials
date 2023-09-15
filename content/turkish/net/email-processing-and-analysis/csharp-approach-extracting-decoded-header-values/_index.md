@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // E-posta mesajını yükle
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Konu başlığını çıkarın ve kodunu çözün
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Kodu çözülmüş Konu başlığını yazdırın
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ Yukarıdaki kod parçacığında aşağıdaki adımları gerçekleştiriyoruz:
 
 1. Gerekli ad alanlarını içe aktarıyoruz (`Aspose.Email` Ve`Aspose.Email.Mail`).
 2.  Biz bir yaratıyoruz`Main` yöntemi uygulamamızın giriş noktası olarak kullanın.
-3.  İçinde`Main` yöntemini kullanıyoruz`MailMessage.Load` Bir dosyadan e-posta mesajı yükleme yöntemi. Yer değiştirmek`"path/to/your/email.eml"` işlemek istediğiniz e-posta mesajının gerçek yolunu belirtin.
-4.  biz kullanıyoruz`HeaderDecoder.DecodeHeader` Konu başlığının kodunu çözme yöntemi.
+3.  İçinde`Main`yöntemini kullanıyoruz`MailMessage.Load` Bir dosyadan e-posta mesajı yükleme yöntemi. Yer değiştirmek`"path/to/your/email.eml"` işlemek istediğiniz e-posta mesajının gerçek yolunu belirtin.
+4.  biz kullanıyoruz`Headers.GetDecodedValue` Konu başlığının kodunu çözme yöntemi.
 5. Kodu çözülmüş Konu başlığını konsola yazdırıyoruz.
 
 ## Adım 5: Uygulamayı Çalıştırın
@@ -68,7 +64,7 @@ Yukarıdaki kod parçacığında aşağıdaki adımları gerçekleştiriyoruz:
 
 ### Aspose.Email for .NET'i kullanarak diğer e-posta başlıklarının kodunu nasıl çözebilirim?
 
- "Kimden", "Kime", "Tarih" vb. gibi çeşitli e-posta başlıklarının kodunu çözebilirsiniz.`HeaderDecoder.DecodeHeader` yöntem. Sadece başlık değerini yönteme parametre olarak sağlayın.
+ "Kimden", "Kime", "Tarih" vb. gibi çeşitli e-posta başlıklarının kodunu çözebilirsiniz.`Headers.GetDecodedValue` yöntem. Sadece başlık değerini yönteme parametre olarak sağlayın.
 
 ### Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 

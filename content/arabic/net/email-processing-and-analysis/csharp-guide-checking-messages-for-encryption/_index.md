@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### التحقق من تشفير الرسائل
-
-يمكنك أيضًا التحقق مما إذا كانت الرسالة موقعة رقميًا ومشفرة:
-
-```csharp
-using Aspose.Email.Security;
-// عبارات الاستخدام الأخرى ذات الصلة
-
-// تحميل رسالة بريد إلكتروني
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// تحقق مما إذا كانت الرسالة موقعة ومشفرة
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// التحقق من التشفير
-if (isSigned && isEncrypted)
-{
-    // تم توقيع الرسالة وتشفيرها
-}
-```
-
 ## فك تشفير الرسائل المشفرة
 
 يتطلب فك تشفير رسالة مشفرة المفاتيح والشهادات المناسبة. إليك كيفية القيام بذلك باستخدام Aspose.Email:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // توفير مفتاح فك التشفير والشهادة
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // فك تشفير الرسالة
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## التعامل مع الاستثناءات

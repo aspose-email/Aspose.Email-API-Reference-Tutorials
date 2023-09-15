@@ -40,3 +40,9 @@ Aspose.Email for .NET'i kullanarak satır içi ve normal e-posta eklerini nasıl
 Aspose.Email for .NET'i kullanarak e-posta eklerini nasıl kaldıracağınızı öğrenin. C# kaynak koduyla adım adım kılavuz.
 ### [TNEF Eklerini Koruma - C# Yöntemi](./safeguarding-tnef-attachments-csharp-method/)
 C# ve Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin. Kaynak kodu içeren adım adım kılavuz.
+### [C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
+### [C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma](./preserving-embedded-msg-format-during-load-with-csharp/)
+Aspose.Email for .NET'i kullanarak gömülü MSG formatını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
+### [Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Kaynak kodlu bu adım adım kılavuzdan Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin.

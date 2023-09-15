@@ -8,102 +8,66 @@ weight: 18
 url: /zh/net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
 
-## 介绍
+在快节奏的电子邮件通信世界中，确保您发送的电子邮件成功送达至关重要。跟踪电子邮件发送状态的一种方法是使用 Aspose.Email for C#。在本综合指南中，我们将引导您使用强大的 Aspose.Email 库通过 C# 检索传递状态通知 (DSN) 的过程。
 
-在电子邮件通信中，传递状态通知 (DSN) 在通知发件人其电子邮件的传递状态方面发挥着至关重要的作用。 Aspose.Email for .NET 是一个功能强大的库，提供处理电子邮件的功能，包括检索 DSN。在本指南中，我们将逐步介绍使用 C# 和 Aspose.Email for .NET 库检索传递状态通知的过程。
+## 一、简介
 
-## 先决条件
+在当今的数字时代，电子邮件是我们沟通不可或缺的一部分。无论您是发送重要的商业文档还是个人消息，了解已发送电子邮件的状态都是至关重要的。 Aspose.Email for C# 提供了强大且灵活的解决方案，用于处理电子邮件相关任务，包括检索传递状态通知。
 
-在开始之前，请确保您具备以下先决条件：
+## 2. 了解递送状态通知
 
-1. 已安装 Visual Studio。
-2.  Aspose.Email for .NET 库。您可以从以下位置下载：[这里](https://releases.aspose.com/email/net).
-3. 对 C# 编程有基本了解。
+在深入了解技术细节之前，我们先了解一下什么是传递状态通知 (DSN)。 DSN 是由邮件服务器生成的自动消息，用于通知发件人其电子邮件的传递状态。这些通知可以指示电子邮件是否已成功发送、延迟或失败。
 
-## 脚步
+## 3. 设置您的开发环境
 
-请按照以下步骤使用 Aspose.Email for .NET 检索传递状态通知：
+首先，您需要设置开发环境。确保您已安装 Visual Studio 和 Aspose.Email 库。您可以从网站下载 Aspose.Email for C#[这里](https://www.aspose.com/downloads/email/net).
 
-### 第 1 步：创建一个新项目
+## 4. C# 初始化 Aspose.Email
 
-打开 Visual Studio 并创建一个新的 C# 控制台应用程序项目。
-
-### 第2步：添加Aspose.Email引用
-
-将下载的 Aspose.Email DLL 复制到您的项目目录。然后，在解决方案资源管理器中右键单击该项目，选择“添加”>“引用”，然后浏览找到 Aspose.Email DLL。单击“确定”将引用添加到您的项目中。
-
-### 步骤 3：编写代码来检索 DSN
-
-打开`Program.cs`在您的项目中创建文件并导入必要的命名空间：
+在您的 C# 项目中，首先添加对 Aspose.Email 库的引用。然后，初始化 Aspose.Email 以开始使用电子邮件和 DSN。
 
 ```csharp
+//添加对 Aspose.Email 的引用
 using Aspose.Email;
-using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
+//初始化Aspose.Email
+var emailClient = new SmtpClient();
 ```
 
-在 - 的里面`Main`方法，编写代码以连接到电子邮件服务器、检索 DSN 并处理它们：
+## 5. 发送带有 DSN 请求的电子邮件
+
+要接收 DSN，您需要在发送电子邮件时请求它们。在电子邮件中设置适当的标头以请求 DSN。
 
 ```csharp
-class Program
-{
-    static void Main(string[] args)
-    {
-        //设置您的 IMAP 服务器凭据和主机
-        string host = "your_imap_host";
-        int port = 993;
-        string username = "your_email";
-        string password = "your_password";
+//创建电子邮件消息
+var message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");
 
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            //选择收件箱文件夹
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            //搜索带有 DSN 的邮件
-            MailQueryBuilder queryBuilder = new MailQueryBuilder();
-            queryBuilder.HasFlags(Aspose.Email.Mail.MessageFlags.DeliveryNotification);
-            MailQuery query = queryBuilder.GetQuery();
-            ImapMessageInfoCollection messages = client.ListMessages(query);
-
-            //处理检索到的 DSN
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                MailMessage message = client.FetchMessage(messageInfo.SequenceNumber);
-
-                //处理 DSN 详细信息
-                Console.WriteLine("Subject: " + message.Subject);
-                Console.WriteLine("From: " + message.From);
-                //...处理其他 DSN 详细信息
-
-                //将消息标记为已读或将其删除
-                client.DeleteMessage(messageInfo.SequenceNumber);
-            }
-        }
-    }
-}
+//请求 DSN
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
-代替`"your_imap_host"`, `"your_email"`， 和`"your_password"`与您实际的 IMAP 服务器详细信息。
 
-### 第 4 步：运行应用程序
+## 8. 自定义 DSN 处理
 
-构建并运行您的应用程序。它将连接到您的电子邮件服务器，从收件箱文件夹中检索 DSN，处理其详细信息，并可选择删除它们或将它们标记为已读。
+Aspose.Email 允许您自定义 DSN 处理以满足您的应用程序的需求。您可以从 DSN 中提取详细信息并采取适当的操作。
 
-## 常见问题解答
+## 9. 故障排除和常见问题解答
 
-### 如何找到 IMAP 服务器主机？
+### Q1：如果我没有收到 DSN 怎么办？
+A1：确保您的电子邮件服务器支持 DSN，并检查您的电子邮件客户端的设置以请求 DSN。
 
-您可以从电子邮件服务提供商的文档或设置中找到 IMAP 服务器主机。它通常采用以下格式`imap.yourdomain.com`.
+### Q2：我可以使用 Aspose.Email 执行其他电子邮件相关任务吗？
+A2：是的，Aspose.Email 提供了广泛的电子邮件处理功能，包括发送、接收和处理电子邮件。
 
-### 如何处理除主题和发件人之外的 DSN 详细信息？
+### 问题 3：是否所有电子邮件提供商都支持 DSN？
+A3：DSN 支持可能因电子邮件提供商而异。请咨询您的提供商以了解兼容性。
 
-您可以访问的各种属性`MailMessage`对象来检索 DSN 详细信息，例如收件人地址、传递状态、时间戳等。请参阅[Aspose.Email 文档](https://reference.aspose.com/email/net/)了解更多信息。
+### Q4：我可以将Aspose.Email与其他编程语言一起使用吗？
+A4：Aspose.Email 主要是为 C# 设计的，但它也提供其他语言的 API。
 
-### 是否有必要删除 DSN 或将其标记为已读？
+### Q5：在哪里可以找到更多资源和文档？
+ A5：访问[用于 C# API 文档的 Aspose.Email](https://reference.aspose.com/email/net/)获取全面的指南和示例。
 
-不，这是没有必要的。是否删除 DSN 或将 DSN 标记为已读取决于应用程序的要求。提供的代码演示了这两个选项，但您可以根据需要对其进行自定义。
+### 10. 结论
 
-## 结论
-
-使用 C# 和 Aspose.Email for .NET 检索传递状态通知是一个简单的过程。 Aspose.Email 库简化了与 IMAP 服务器的通信，并提供易于使用的 API 来处理电子邮件消息。通过本指南，您现在可以将 DSN 检索功能合并到您的 C# 应用程序中。
+在本指南中，我们探讨了如何使用 Aspose.Email for C# 通过 C# 检索传递状态通知。跟踪电子邮件发送对于有效沟通至关重要，而 Aspose.Email 简化了这一过程。

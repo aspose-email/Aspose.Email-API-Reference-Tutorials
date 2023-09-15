@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### Posso estrarre più istanze della stessa intestazione da un'e-mail?
 
- Sì, puoi estrarre più istanze della stessa intestazione utilizzando il file`GetValues` metodo:
+Sì, puoi estrarre più istanze della stessa intestazione utilizzando il file`GetValues` metodo:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### Dove posso accedere alla documentazione di Aspose.Email e scaricare la libreria?
 
-Puoi trovare la documentazione su[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Per scaricare la libreria, visitare[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Puoi trovare la documentazione su[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Per scaricare la libreria, visitare[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

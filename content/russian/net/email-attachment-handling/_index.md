@@ -40,3 +40,9 @@ url: /ru/net/email-attachment-handling/
 Узнайте, как удалить вложения электронной почты с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом C#.
 ### [Защита вложений TNEF — метод C#](./safeguarding-tnef-attachments-csharp-method/)
 Узнайте, как защитить вложения TNEF с помощью C# и Aspose.Email для .NET. Пошаговое руководство с исходным кодом.
+### [Извлечение встроенных вложений из файлов MSG с помощью C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Узнайте, как извлечь встроенные вложения из файлов MSG с помощью C# и Aspose.Email для .NET. Подробное руководство с примерами исходного кода.
+### [Сохранение встроенного формата MSG во время загрузки с помощью C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Узнайте, как сохранить встроенный формат MSG с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом.
+### [Сохранение вложений TNEF при чтении сообщений — подход C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Узнайте, как сохранить вложения TNEF с помощью Aspose.Email для .NET, в этом пошаговом руководстве с исходным кодом.

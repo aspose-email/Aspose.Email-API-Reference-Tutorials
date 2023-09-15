@@ -25,8 +25,6 @@ E-posta başlığı düzenleme eğitimleri, geliştiricilerin Aspose.Email for .
 Aspose.Email for .NET'in yardımıyla C# kullanarak e-posta adreslerini nasıl değiştireceğinizi öğrenin. E-posta adreslerini etkili bir şekilde yönetmek için bu adım adım kılavuzu izleyin.
 ### [C# kullanarak MHT Dönüştürme Sırasında Yazı Tiplerini Değiştirme](./changing-fonts-during-mht-conversion-using-csharp/)
 Aspose.Email for .NET'i kullanarak MHT dönüşümü sırasında yazı tiplerini nasıl değiştireceğinizi öğrenin. Kaynak koduyla adım adım kılavuz. E-posta arşivleme ve belge yönetimi için mükemmeldir.
-### [ICS Dosyalarındaki ProdID'yi C# ile Değiştirme](./altering-prodid-in-ics-files-with-csharp/)
-C# ve Aspose.Email for .NET kullanarak ICS dosyalarındaki ProdID'yi değiştirmeyi öğrenin. Adım adım kılavuz ve kod. Veri bütünlüğünü ve uyumluluğunu sağlayın. 
 ### [ C#'ta Özel Köprü Oluşturma](./custom-hyperlink-rendering-in-csharp/)
 Aspose.Email for .NET'i kullanarak C#'ta köprü oluşturmayı özelleştirmeyi öğrenin. Özel köprü stilleriyle kişiselleştirilmiş e-posta içeriği oluşturun.
 ### [C# ile MHTML'de Özel Bilgi Sırasını Tanımlama](./defining-custom-order-of-information-in-mhtml-with-csharp/)

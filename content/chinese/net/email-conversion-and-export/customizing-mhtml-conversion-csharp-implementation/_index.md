@@ -32,53 +32,14 @@ url: /zh/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 ```csharp
 using Aspose.Email.Mime;
 //加载 MHTML 文件
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. 访问 HTML 内容和资源：
-使用以下代码提取 HTML 内容和关联资源：
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   //访问 HTML 内容
-	   var htmlContent = resource.GetContent();
-	   //根据需要修改 HTML 内容
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   //访问图像资源
-	   var imageData = resource.GetContent();
-	   //修改或嵌入图像
-   }
-   //处理其他资源类型
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## 自定义转换选项
 
 通过指定各种输出格式和调整设置来自定义您的 MHTML 转换过程。
 
-1. 选择输出格式：
-确定转换的输出格式，例如 PDF、DOCX 或其他格式：
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; //转换为 PDF
-//设置其他转换选项
-```
-
-2. 指定页边距和方向：
-调整输出文档的页边距和方向：
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. 控制图像质量：
+1. 控制图像质量：
 控制嵌入图像的质量：
 
 ```csharp

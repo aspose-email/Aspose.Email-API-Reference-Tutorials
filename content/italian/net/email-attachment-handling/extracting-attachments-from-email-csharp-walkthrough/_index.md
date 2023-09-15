@@ -70,7 +70,7 @@ foreach (Attachment attachment in message.Attachments)
     {
         // Elabora l'allegato dell'immagine
     }
-    //Gestisci gli altri tipi di allegati in modo simile
+    // Gestisci gli altri tipi di allegati in modo simile
 }
 ```
 

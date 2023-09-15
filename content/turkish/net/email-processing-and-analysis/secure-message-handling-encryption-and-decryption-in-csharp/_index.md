@@ -18,7 +18,7 @@ Güvenli mesaj işleme, taraflar arasında alınıp verilen mesajların gizlili�
 
 ### Simetrik Şifreleme
 
-Simetrik şifreleme, mesajları hem şifrelemek hem de şifresini çözmek için tek bir gizli anahtar kullanır. Gönderici ve alıcı arasında aynı anahtar paylaşılır. Bu yöntem daha hızlı şifreleme ve şifre çözme süreçleri için etkili olsa da buradaki zorluk, gizli anahtarın güvenli bir şekilde paylaşılması ve yönetilmesinde yatmaktadır.
+Simetrik şifreleme, mesajları hem şifrelemek hem de şifresini çözmek için tek bir gizli anahtar kullanır. Gönderici ve alıcı arasında aynı anahtar paylaşılır. Bu yöntem daha hızlı şifreleme ve şifre çözme süreçleri için etkili olsa da zorluk, gizli anahtarın güvenli bir şekilde paylaşılması ve yönetilmesinde yatmaktadır.
 
 ### Asimetrik Şifreleme
 
@@ -43,7 +43,10 @@ Bir mesajı şifrelemek için aşağıdaki kod parçacığını kullanın:
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 // Mesajı şifrele
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 // Şifrelenmiş mesajı bir dosyaya kaydedin veya gönderin
 message.Save("encrypted.eml");

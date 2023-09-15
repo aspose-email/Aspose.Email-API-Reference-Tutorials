@@ -1,6 +1,6 @@
 ---
-title:Gestión de la codificación de texto predeterminada: implementación de C#
-linktitle:Gestión de la codificación de texto predeterminada: implementación de C#
+title: Gestión de la codificación de texto predeterminada implementación de C#
+linktitle: Gestión de la codificación de texto predeterminada implementación de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a administrar la codificación de texto predeterminada en C# usando Aspose.Email para .NET. Siga las instrucciones paso a paso con el código fuente y garantice una comunicación de datos precisa.
 type: docs
@@ -13,7 +13,7 @@ En el ámbito del desarrollo de software, la gestión de la codificación de tex
 
 ## Introducción a la codificación de texto en el desarrollo de software
 
-La codificación de texto es el proceso de convertir texto legible por humanos a un formato que las computadoras puedan entender y procesar. Implica asignar valores numéricos a caracteres, símbolos y caracteres especiales. En el desarrollo de software, la codificación de texto adecuada garantiza que los datos se almacenen, transmitan y muestren con precisión en diferentes plataformas.
+La codificación de texto es el proceso de convertir texto legible por humanos a un formato que las computadoras puedan comprender y procesar. Implica asignar valores numéricos a caracteres, símbolos y caracteres especiales. En el desarrollo de software, la codificación de texto adecuada garantiza que los datos se almacenen, transmitan y muestren con precisión en diferentes plataformas.
 
 ## Comprender la codificación de texto predeterminada
 
@@ -23,11 +23,11 @@ La codificación de texto predeterminada se refiere a la codificación de caract
 
 Usar la codificación de texto correcta es crucial por varias razones:
 ### Integridad de los datos:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+La codificación incorrecta puede provocar daños en los datos durante el almacenamiento o la transmisión.
 ### Soporte multilingüe: 
-	Different languages require different encodings to display characters correctly.
+Diferentes idiomas requieren diferentes codificaciones para mostrar los caracteres correctamente.
 ### Compatibilidad:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+La codificación adecuada garantiza que los datos se puedan intercambiar sin problemas entre diferentes sistemas.
 
 ## Presentamos Aspose.Email para .NET
 
@@ -35,7 +35,7 @@ Aspose.Email para .NET es una potente biblioteca que proporciona capacidades int
 
 ## Paso 1: instalar Aspose.Email a través de NuGet
 
-Para comenzar, necesita instalar la biblioteca Aspose.Email a través de NuGet. Abra su proyecto en Visual Studio y use el Administrador de paquetes NuGet para buscar e instalar el paquete "Aspose.Email".
+Para comenzar, debe instalar la biblioteca Aspose.Email a través de NuGet. Abra su proyecto en Visual Studio y use el Administrador de paquetes NuGet para buscar e instalar el paquete "Aspose.Email".
 
 ```csharp
 // Fragmento de código para instalar Aspose.Email a través de NuGet
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Paso 3: configurar la codificación de texto predeterminada
-
-Para configurar la codificación de texto predeterminada para sus correos electrónicos, puede utilizar el siguiente fragmento de código. En este ejemplo, configuramos la codificación en UTF-16.
-
-```csharp
-// Establezca la codificación de texto predeterminada en UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## Paso 4: enviar un correo electrónico con codificación personalizada
+## Paso 3: enviar un correo electrónico con codificación personalizada
 
 Al enviar un correo electrónico, puede especificar una codificación de texto personalizada para el cuerpo del correo electrónico. Esto puede resultar útil al enviar correos electrónicos en idiomas que requieren codificaciones específicas.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Paso 4: configurar la codificación de texto predeterminada
+
+Para configurar la codificación de texto predeterminada para sus correos electrónicos, puede utilizar el siguiente fragmento de código. En este ejemplo, configuramos la codificación en UTF-16.
+
+```csharp
+// Establezca la codificación de texto predeterminada en UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Paso 5: recibir y decodificar correos electrónicos
 
 Al recibir correos electrónicos, es posible que necesites decodificar el cuerpo del correo electrónico si se envió con una codificación específica. Así es como puedes decodificar el cuerpo de un correo electrónico entrante:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Desafíos comunes en la codificación de texto
 
 ### Codificaciones no coincidentes: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+El uso de diferentes codificaciones para enviar y recibir correos electrónicos puede generar texto confuso.
 ### Personajes no compatibles:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Es posible que algunas codificaciones no admitan ciertos caracteres, lo que provocará el reemplazo o la pérdida de caracteres.
 ### Corrupción de archivos: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+La codificación incorrecta al guardar correos electrónicos como archivos puede provocar archivos dañados.
 
 ## Mejores prácticas para la codificación de texto
 

@@ -16,7 +16,7 @@ Los mensajes TNEF, también conocidos como archivos adjuntos "winmail.dat", pued
 
 ## Configurar el entorno de desarrollo
 
-Antes de profundizar en el código, asegúrese de tener instalada la biblioteca Aspose.Email para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/email/net). Una vez descargado, siga estos pasos para configurar su entorno de desarrollo:
+ Antes de profundizar en el código, asegúrese de tener instalada la biblioteca Aspose.Email para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/email/net). Una vez descargado, siga estos pasos para configurar su entorno de desarrollo:
 
 1. Cree un nuevo proyecto de C# en su entorno de desarrollo preferido.
 2. Agregue una referencia a la biblioteca Aspose.Email descargada.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Ahora que hemos cargado el mensaje de correo electrónico, debemos determinar si es un mensaje TNEF. Aspose.Email proporciona la`MailMessage.IsTnef` propiedad para este fin. Así es como puedes usarlo:
 
 ```csharp
-// Compruebe si el mensaje es un mensaje TNEF
-if (message.IsTnef)
+//Compruebe si el mensaje es un mensaje TNEF
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## Extracción de datos de mensajes TNEF
-
-Si el mensaje es efectivamente un mensaje TNEF, puede extraer varios datos del mismo. Por ejemplo, puede extraer el contenido de texto sin formato de la siguiente manera:
-
-```csharp
-if (message.IsTnef)
-{
-    // Extraiga contenido de texto sin formato de TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## Manejo de archivos adjuntos dentro de mensajes TNEF
 
 Los mensajes TNEF suelen contener archivos adjuntos. Para extraer y guardar estos archivos adjuntos, puede utilizar el siguiente código:
 
 ```csharp
-if (message.IsTnef)
+// Iterar a través de archivos adjuntos
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extraer el archivo adjunto TNEF
+        var tnefAttachment = attachment;
+
+        //Acceda a las propiedades de TNEF y modifíquelas si es necesario
+        // tnefAttachment.Propiedades...
     }
 }
 ```

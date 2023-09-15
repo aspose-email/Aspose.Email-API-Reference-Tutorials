@@ -21,7 +21,5 @@ Aspose.Email for .NET 关于“电子邮件验证和验证”的教程为开发�
 电子邮件验证教程的重点是使开发人员能够使用 Aspose.Email for .NET 验证电子邮件地址的存在性和有效性。开发人员可以探索对电子邮件地址执行实时检查的技术，以确保它们对应于活跃且可访问的帐户。这些教程提供了有关集成电子邮件验证服务、检测无效地址以及通过消除无法送达的电子邮件来增强通信可靠性的分步说明。 Aspose.Email for .NET 简化了电子邮件验证任务，使开发人员能够通过安全、准确的通信来增强其应用程序。
 
 ## 电子邮件验证和验证教程
-## [C# 代码中的电子邮件验证技术](./email-validation-techniques-in-csharp-code/)
+### [C# 代码中的电子邮件验证技术](./email-validation-techniques-in-csharp-code/)
 了解如何使用 Aspose.Email for .NET 在 C# 中有效验证电子邮件地址。提供源代码的分步指南。提高数据准确性和用户体验。
-## [使用 C# 代码验证电子邮件地址](./validating-email-addresses-using-csharp-code/)
-了解如何使用 C# 和 Aspose.Email for .NET 验证电子邮件地址。确保您的应用程序中的电子邮件数据准确。

@@ -36,7 +36,10 @@ Aspose.Email for .NET 关于“电子邮件处理和分析”的教程为开发�
 ### [安全消息处理 - C# 中的加密和解密](./secure-message-handling-encryption-and-decryption-in-csharp/)
 了解如何使用 Aspose.Email for .NET 在 C# 中通过加密和解密来实现安全消息处理。有效保护敏感数据。
 ### [C# 方法 - 提取解码的标头值](./csharp-approach-extracting-decoded-header-values/)
+了解使用 Aspose.Email for .NET 在 C# 中提取解码的电子邮件标头值。带有代码示例的综合指南。
 ### [使用 C# 检索递送状态通知](./retrieving-delivery-status-notifications-with-csharp/)
 了解如何使用 C# 和 Aspose.Email for .NET 检索电子邮件传送状态通知。
 ### [C# 技术 - 将 HTML 正文转换为纯文本](./csharp-technique-converting-html-body-to-plain-text/)
 了解使用 Aspose.Email for .NET 轻松将 HTML 电子邮件内容转换为纯文本。详细指南和代码。立即探索！
+### [使用 C# 代码保留原始边界](./preserving-original-boundaries-using-csharp-code/)
+了解如何使用 C# 和 Aspose.Email for .NET 保留电子邮件附件的原始边界。带有源代码的分步指南。

@@ -14,7 +14,7 @@ Inbäddade objekt i e-postmeddelanden hänvisar till filer som infogas direkt i 
 
 ## Komma igång med Aspose.Email för .NET
 
-Aspose.Email för .NET är ett kraftfullt bibliotek som tillhandahåller olika funktioner för att arbeta med e-post, inklusive analys, skapande och manipulering av e-postmeddelanden. För att komma igång måste du ha Aspose.Email för .NET-biblioteket installerat i ditt projekt. Du kan antingen ladda ner den från Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) eller använd en pakethanterare som NuGet.
+ Aspose.Email för .NET är ett kraftfullt bibliotek som tillhandahåller olika funktioner för att arbeta med e-post, inklusive analys, skapande och manipulering av e-postmeddelanden. För att komma igång måste du ha Aspose.Email för .NET-biblioteket installerat i ditt projekt. Du kan antingen ladda ner den från Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) eller använd en pakethanterare som NuGet.
 
 ## Laddar och analyserar ett e-postmeddelande
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Extrahera inbäddade objekt från HTML-innehåll
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Extrahera och spara den länkade resursen (inbäddat objekt)
+            // Extrahera och spara den länkade resursen (inbäddat objekt)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Extrahera inbäddade objekt från HTML-innehåll
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Extrahera och spara den länkade resursen (inbäddat objekt)
+                        // Extrahera och spara den länkade resursen (inbäddat objekt)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -90,7 +90,7 @@ namespace EmbeddedObjectExtractor
 
 ## Slutsats
 
-I den här artikeln undersökte vi hur man extraherar inbäddade objekt från e-postmeddelanden med C# och Aspose.Email for .NET-biblioteket. Vi täckte hela processen, från att ladda och analysera e-postmeddelandet till att identifiera och spara de inbäddade objekten. Genom att följa den här guiden kan du förbättra dina e-postbearbetningsmöjligheter och berika innehållet i dina applikationer.
+den här artikeln undersökte vi hur man extraherar inbäddade objekt från e-postmeddelanden med C# och Aspose.Email for .NET-biblioteket. Vi täckte hela processen, från att ladda och analysera e-postmeddelandet till att identifiera och spara de inbäddade objekten. Genom att följa den här guiden kan du förbättra dina e-postbearbetningsmöjligheter och berika innehållet i dina applikationer.
 
 ## FAQ's
 

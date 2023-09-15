@@ -12,7 +12,7 @@ C# kullanarak e-posta başlıklarını nasıl çıkaracağınızı hiç merak et
 
 ## E-posta Başlıklarına Giriş
 
-E-posta başlıkları, bir e-posta mesajının, mesajın kendisi hakkında meta veriler sağlayan temel bileşenleridir. Bunlar, gönderenin e-posta adresi, alıcının e-posta adresi, konu, tarih ve daha fazlası gibi bilgileri içerir. E-posta başlıklarını ayıklamak, e-postaların doğruluğunu analiz etmek, e-postanın yolunu izlemek ve mesajları kategorilere ayırmak gibi çeşitli amaçlar için kullanışlıdır.
+E-posta başlıkları, bir e-posta mesajının, mesajın kendisi hakkında meta veriler sağlayan temel bileşenleridir. Bunlar, gönderenin e-posta adresi, alıcının e-posta adresi, konu, tarih ve daha fazlası gibi bilgileri içerir. E-posta başlıklarını çıkarmak, e-postaların doğruluğunu analiz etmek, e-postanın yolunu izlemek ve mesajları kategorilere ayırmak dahil olmak üzere çeşitli amaçlar için kullanışlıdır.
 
 ## Aspose.Email for .NET'e Başlarken
 
@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### Bir e-postadan aynı başlığın birden fazla örneğini çıkarabilir miyim?
 
- Evet, aynı başlığın birden çok örneğini kullanarak çıkarabilirsiniz.`GetValues` yöntem:
+Evet, aynı başlığın birden çok örneğini kullanarak çıkarabilirsiniz.`GetValues` yöntem:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### Aspose.Email belgelerine nereden erişebilir ve kütüphaneyi indirebilirim?
 
-Belgeleri şu adreste bulabilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Kütüphaneyi indirmek için şu adresi ziyaret edin:[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Belgeleri şu adreste bulabilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Kütüphaneyi indirmek için şu adresi ziyaret edin:[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

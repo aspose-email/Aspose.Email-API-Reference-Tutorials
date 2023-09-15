@@ -21,17 +21,14 @@ The email event handling tutorials delve into the intricacies of managing email-
 The email calendar handling tutorials focus on effectively managing calendar-related functionalities using Aspose.Email for .NET. Developers can explore techniques to create, modify, and synchronize calendar events and appointments programmatically. These tutorials offer step-by-step instructions on integrating calendar features into applications, ensuring seamless scheduling and management of events. Aspose.Email for .NET simplifies calendar handling tasks, enabling developers to enhance their applications with efficient event organization and management.
 
 ## Email Event and Calendar Handling Tutorials
-### [Extracting Embedded Attachments from MSG Files using C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples.
-### [Loading Email Messages with Load Options in C#](./loading-email-messages-with-load-options-in-csharp/)
-Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.
-### [Preserving Embedded MSG Format during Load with C#](./preserving-embedded-msg-format-during-load-with-csharp/)
-Learn how to preserve embedded MSG format using Aspose.Email for .NET. Step-by-step guide with source code.
-### [Preserving Original Boundaries using C# Code](./preserving-original-boundaries-using-csharp-code/)
-Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+
 ### [Reading Multiple Events from ICS Files with C#](./reading-multiple-events-from-ics-files-with-csharp/)
 Learn to extract multiple events from ICS files using Aspose.Email for .NET. A step-by-step guide with code examples for efficient event management.
 ### [Rendering Calendar Events using C# Code](./rendering-calendar-events-using-csharp-code/)
 Learn to render calendar events using C# and Aspose.Email for .NET. Create interactive schedules with ease.
 ### [Setting Participant Status for Appointment Attendees with C#](./setting-participant-status-for-appointment-attendees-with-csharp/)
 Learn how to manage appointment attendees' status using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+### [Crafting a Draft Appointment Request -  C# Example](./crafting-a-draft-appointment-request-csharp-example/)
+Learn how to use Aspose.Email for .NET to create draft appointment request emails in C#. Enhance business communication and efficiency.
+### [Altering ProdID in ICS Files with C#](./altering-prodid-in-ics-files-with-csharp/)
+Learn to alter ProdID in ICS files using C# & Aspose.Email for .NET. Step-by-step guide & code. Ensure data integrity & compatibility. 

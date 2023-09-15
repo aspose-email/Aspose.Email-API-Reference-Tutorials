@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1. Load the email message using the `MapiMessage` class:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// Load the email with TNEF attachment
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. Determine whether the loaded email is a TNEF message:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
 Replace `"path/to/your/email.msg"` with the actual path to your email message file.
@@ -59,44 +62,51 @@ Replace `"path/to/your/email.msg"` with the actual path to your email message fi
 If the loaded email is indeed a TNEF message, you can extract and process its attachments:
 
 ```csharp
-if (isTnefMessage)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Process TNEF attachment
-        // For example, save attachment to disk
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
     }
 }
 ```
 
 ## FAQs
 
-## How Can I Check if an Email is a TNEF Message?
+### How Can I Check if an Email is a TNEF Message?
 
 To check if an email is a TNEF message, use the `IsTnefMessage()` method of the `MapiMessage` class:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## How Do I Extract Attachments from a TNEF Message?
+### How Do I Extract Attachments from a TNEF Message?
 
 To extract attachments from a TNEF message, follow these steps:
 
 1. Load the email using `MapiMessage.FromFile()`.
-2. Check if the email is a TNEF message using `IsTnefMessage()`.
-3. If it is a TNEF message, extract attachments using `ExtractTnefAttachments()`.
+2. Check if the email is a TNEF message using `OriginalIsTnef`.
+3. If it is a TNEF message, extract attachments using by iterating Attachments with ContentType.MediaType is equal to "application/ms-tnef".
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    // Process TNEF attachment
-    // For example, save attachment to disk
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
+    }
 }
 ```
 

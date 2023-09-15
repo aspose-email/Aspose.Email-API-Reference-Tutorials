@@ -2,7 +2,7 @@
 title: Detectar varios formatos de archivos usando código C#
 linktitle: Detectar varios formatos de archivos usando código C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Detecte formatos de archivos sin esfuerzo utilizando C# y Aspose.Email para .NET. Guía paso a paso y ejemplos de código. ¡Explora ahora!
+description: Detecte formatos de archivos sin esfuerzo usando C# y Aspose.Email para .NET. Guía paso a paso y ejemplos de código. ¡Explora ahora!
 type: docs
 weight: 13
 url: /es/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // Detectar el formato del archivo
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Mostrar el resultado
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Detectar el formato del archivo
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Mostrar el resultado
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ Sí, Aspose.Email ofrece soporte integral para una amplia gama de formatos de ar
 
 ### ¿Es posible detectar la versión de un formato de archivo?
 
- Sí el`FileFormatInfo`objeto devuelto por`FileFormatUtil.DetectFileFormat` proporciona información adicional, incluida la versión del formato del archivo.
+ Sí el`FileFormatInfo` objeto devuelto por`FileFormatUtil.DetectFileFormat` proporciona información adicional, incluida la versión del formato del archivo.
 
 ### ¿Puedo utilizar Aspose.Email para la detección de formatos de archivos en aplicaciones web?
 

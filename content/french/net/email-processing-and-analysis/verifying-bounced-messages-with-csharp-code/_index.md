@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Créer une instance de ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Connectez-vous au serveur
-    client.Connect(host, port, true);
-
-    // Se connecter
-    client.Login(username, password);
-    
+   
     // Votre code pour récupérer et analyser les messages renvoyés ira ici
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Rechercher des messages rejetés
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Votre code pour analyser les notifications de rebond ira ici
 }
@@ -89,7 +84,7 @@ Les notifications de rebond contiennent des informations précieuses sur la rais
 // Récupérer le message
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Vérifier les en-têtes de rebond
+// Vérifier les en-têtes de rebond
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
@@ -104,7 +99,7 @@ if (message.Headers.Contains("X-Failed-Recipients"))
 Sur la base de l'analyse des rebonds, vous pouvez mettre à jour votre liste de diffusion pour supprimer les adresses renvoyées et gérer les désabonnements.
 
 ```csharp
-// Supprimez les adresses renvoyées de votre liste
+// Supprimez les adresses rebondies de votre liste
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {

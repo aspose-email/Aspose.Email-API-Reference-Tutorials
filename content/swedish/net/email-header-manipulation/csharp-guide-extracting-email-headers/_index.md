@@ -10,7 +10,7 @@ url: /sv/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 
 Har du någonsin undrat hur man extraherar e-postrubriker med C#? E-postrubriker innehåller värdefull information om avsändaren, mottagaren, ämnet och diverse andra detaljer. I den här guiden går vi igenom steg-för-steg-processen för att extrahera e-postrubriker med det kraftfulla Aspose.Email for .NET-biblioteket. Det här biblioteket tillhandahåller en omfattande uppsättning funktioner för att arbeta med e-postmeddelanden i dina .NET-program.
 
-## Introduktion till e-posthuvuden
+## Introduktion till e-postrubriker
 
 E-postrubriker är viktiga komponenter i ett e-postmeddelande som tillhandahåller metadata om själva meddelandet. De inkluderar information som avsändarens e-postadress, mottagarens e-postadress, ämne, datum och mer. Att extrahera e-postrubriker är användbart för olika ändamål, inklusive att analysera äktheten av e-postmeddelanden, spåra e-postens sökväg och kategorisera meddelanden.
 
@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### Kan jag extrahera flera instanser av samma rubrik från ett e-postmeddelande?
 
- Ja, du kan extrahera flera instanser av samma rubrik med hjälp av`GetValues` metod:
+Ja, du kan extrahera flera instanser av samma rubrik med hjälp av`GetValues` metod:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### Var kan jag komma åt Aspose.Email-dokumentationen och ladda ner biblioteket?
 
-Du hittar dokumentationen på[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . För att ladda ner biblioteket, besök[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Du hittar dokumentationen på[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . För att ladda ner biblioteket, besök[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

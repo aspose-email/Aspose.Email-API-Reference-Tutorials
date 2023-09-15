@@ -41,7 +41,9 @@ var msg = MapiMessage.FromFile("sample.msg");
 ```csharp
 // Конвертировать MSG в TNEF
 var tnefStream = new MemoryStream();
-TnefWriter.WriteTnefMessage(tnefStream, msg);
+MailConversionOptions options = new MailConversionOptions();
+options.ConvertAsTnef = true;
+MailMessage mail = msg.ToMailMessage(options);
 ```
 
 ##  Обработка ошибок и исключений преобразования
@@ -51,9 +53,14 @@ TnefWriter.WriteTnefMessage(tnefStream, msg);
 ```csharp
 try
 {
-    // Конвертировать MSG в TNEF
-    var tnefStream = new MemoryStream();
-    TnefWriter.WriteTnefMessage(tnefStream, msg);
+	// Загрузить файл MSG
+	var msg = MapiMessage.FromFile("sample.msg");
+	// Конвертировать MSG в TNEF
+	var tnefStream = new MemoryStream();
+	MailConversionOptions options = new MailConversionOptions();
+	options.ConvertAsTnef = true;
+	MailMessage mail = msg.ToMailMessage(options);
+
 }
 catch (Exception ex)
 {
@@ -94,4 +101,4 @@ Aspose.Email предоставляет ряд возможностей наст
 
 ### Где я могу узнать больше об Aspose.Email для .NET?
 
-Подробную документацию и ресурсы для Aspose.Email для .NET можно найти по адресу[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Эта документация поможет вам изучить функции и возможности библиотеки.
+ Подробную документацию и ресурсы для Aspose.Email для .NET можно найти по адресу[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Эта документация поможет вам изучить функции и возможности библиотеки.

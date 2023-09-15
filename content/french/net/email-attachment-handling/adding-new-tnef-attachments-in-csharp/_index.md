@@ -32,7 +32,9 @@ Pour commencer, chargeons un e-mail existant contenant une pièce jointe TNEF. V
 using Aspose.Email.Mail;
 
 // Charger l'e-mail avec la pièce jointe TNEF
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Extraction et modification des pièces jointes TNEF
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // Extraire la pièce jointe TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // Accéder aux propriétés du TNEF et modifier si nécessaire
+        //Accéder aux propriétés du TNEF et modifier si nécessaire
         // tnefAttachment.Propriétés...
     }
 }
@@ -60,7 +62,9 @@ Après avoir modifié la pièce jointe TNEF, vous pouvez réenregistrer l'e-mail
 
 ```csharp
 // Enregistrez l'e-mail modifié
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Conclusion

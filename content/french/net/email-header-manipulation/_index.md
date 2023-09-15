@@ -25,8 +25,6 @@ Les didacticiels sur la manipulation des en-têtes de courrier électronique vis
 Découvrez comment modifier les adresses e-mail à l'aide de C# à l'aide d'Aspose.Email pour .NET. Suivez ce guide étape par étape pour manipuler efficacement les adresses e-mail.
 ### [Modification des polices lors de la conversion MHT à l'aide de C#](./changing-fonts-during-mht-conversion-using-csharp/)
 Découvrez comment modifier les polices lors de la conversion MHT à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec le code source. Parfait pour l'archivage des e-mails et la gestion des documents.
-### [Modification de ProdID dans les fichiers ICS avec C#](./altering-prodid-in-ics-files-with-csharp/)
-Apprenez à modifier ProdID dans les fichiers ICS à l'aide de C# et Aspose.Email pour .NET. Guide et code étape par étape. Assurer l’intégrité et la compatibilité des données. 
 ### [ Rendu de lien hypertexte personnalisé en C#](./custom-hyperlink-rendering-in-csharp/)
 Apprenez à personnaliser le rendu des liens hypertexte en C# à l'aide d'Aspose.Email pour .NET. Créez du contenu de courrier électronique personnalisé avec des styles de liens hypertexte personnalisés.
 ### [Définition d'un ordre personnalisé d'informations en MHTML avec C#](./defining-custom-order-of-information-in-mhtml-with-csharp/)

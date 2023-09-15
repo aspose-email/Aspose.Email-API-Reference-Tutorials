@@ -58,7 +58,7 @@ foreach (Attachment attachment in message.Attachments)
 
 ### Rilevamento dei messaggi incorporati
 
-I messaggi incorporati sono messaggi nidificati all'interno dell'e-mail principale. Ecco come rilevarli ed elaborarli:
+messaggi incorporati sono messaggi nidificati all'interno dell'e-mail principale. Ecco come rilevarli ed elaborarli:
 
 ```csharp
 foreach (AlternateView alternateView in message.AlternateViews)
@@ -69,7 +69,6 @@ foreach (AlternateView alternateView in message.AlternateViews)
         foreach (LinkedResource linkedResource in alternateView.LinkedResources)
         {
             // Elabora il messaggio incorporato
-            MailMessage embeddedMessage = linkedResource.GetLinkedMessage();
             // Esegui le operazioni desiderate
         }
     }

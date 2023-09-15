@@ -25,8 +25,6 @@ Handledningarna för manipulering av e-posthuvuden fokuserar på att göra det m
 Lär dig hur du ändrar e-postadresser med C# med hjälp av Aspose.Email för .NET. Följ den här steg-för-steg-guiden för att manipulera e-postadresser effektivt.
 ### [Ändra teckensnitt under MHT-konvertering med C#](./changing-fonts-during-mht-conversion-using-csharp/)
 Lär dig hur du ändrar teckensnitt under MHT-konvertering med Aspose.Email för .NET. Steg-för-steg guide med källkod. Perfekt för e-postarkivering och dokumenthantering.
-### [Ändra ProdID i ICS-filer med C#](./altering-prodid-in-ics-files-with-csharp/)
-Lär dig att ändra ProdID i ICS-filer med C# & Aspose.Email för .NET. Steg-för-steg guide & kod. Säkerställ dataintegritet och kompatibilitet. 
 ### [ Anpassad hyperlänksrendering i C#](./custom-hyperlink-rendering-in-csharp/)
 Lär dig att anpassa hyperlänksrendering i C# med Aspose.Email för .NET. Skapa personligt e-postinnehåll med anpassade hyperlänkstilar.
 ### [Definiera anpassad informationsordning i MHTML med C#](./defining-custom-order-of-information-in-mhtml-with-csharp/)

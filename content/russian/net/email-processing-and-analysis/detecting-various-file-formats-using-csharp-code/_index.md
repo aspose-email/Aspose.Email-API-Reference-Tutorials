@@ -12,7 +12,7 @@ url: /ru/net/email-processing-and-analysis/detecting-various-file-formats-using-
 
 ## Введение в Aspose.Email для .NET
 
-Aspose.Email для .NET — это мощная библиотека, которая позволяет разработчикам работать с сообщениями электронной почты, вложениями и т. д. в приложениях .NET.
+Aspose.Email for .NET — это мощная библиотека, которая позволяет разработчикам работать с сообщениями электронной почты, вложениями и т. д. в приложениях .NET.
 
 ## Зачем определять форматы файлов?
 
@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // Определить формат файла
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Отображение результата
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Определить формат файла
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Отображение результата
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ namespace FileFormatDetectionDemo
 
 ### Можно ли определить версию формата файла?
 
- Да,`FileFormatInfo`объект, возвращаемый`FileFormatUtil.DetectFileFormat` предоставляет дополнительную информацию, включая версию формата файла.
+ Да,`FileFormatInfo` объект, возвращаемый`FileFormatUtil.DetectFileFormat` предоставляет дополнительную информацию, включая версию формата файла.
 
 ### Могу ли я использовать Aspose.Email для определения формата файлов в веб-приложениях?
 

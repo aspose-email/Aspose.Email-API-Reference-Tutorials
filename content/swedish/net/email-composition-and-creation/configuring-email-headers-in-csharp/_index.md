@@ -18,13 +18,13 @@ E-postrubriker är metadata som innehåller viktig information om ett e-postmedd
 
 E-postrubriker tjänar flera avgörande syften:
 #### Routing: 
-	Headers determine the path an email takes from sender to recipient.
+Rubriker bestämmer vägen ett e-postmeddelande tar från avsändare till mottagare.
 #### Autentisering
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Rubriker som DKIM och SPF hjälper till att verifiera e-postmeddelandens äkthet.
 #### Ämnesrad: 
-	The subject header gives recipients an idea of the email's content.
+Ämnesrubriken ger mottagarna en uppfattning om e-postmeddelandets innehåll.
 #### Svarshantering: 
-	Headers like Reply-To ensure proper handling of replies.
+Rubriker som Svara-För att säkerställa korrekt hantering av svar.
 
 ## 3. Installera Aspose.Email för .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Vissa rubriker används ofta i e-postmeddelanden:
 
 #### Ämne: 
-	Set the email subject using the `message.Subject` property.
+ Ställ in e-postämnet med hjälp av`message.Subject` fast egendom.
 #### Från: 
-	Specify the sender's address using the `message.From` property.
+ Ange avsändarens adress med hjälp av`message.From` fast egendom.
 #### Till: 
-	Define the recipient's address using the `message.To` property.
+ Definiera mottagarens adress med hjälp av`message.To` fast egendom.
 
 ## 6. Anpassa ytterligare rubriker
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Hantera rubriker för MIME-version och innehållstyp
 
- De`MIME-Version`header säkerställer korrekt MIME-kompatibilitet, medan`Content-Type` header anger typen av innehåll i e-postmeddelandet.
+ De`MIME-Version` header säkerställer korrekt MIME-kompatibilitet, medan`Content-Type` header anger typen av innehåll i e-postmeddelandet.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");
@@ -126,7 +126,7 @@ Install-Package Aspose.Email
 
 DKIM-Signatur-huvudet används för att digitalt signera e-postmeddelanden, vilket ger en mekanism för mottagaren att verifiera e-postmeddelandets äkthet.
 
-### Hur hanterar jag validering av e-posthuvud?
+### Hur hanterar jag validering av e-posthuvudet?
 
 Aspose.Email erbjuder valideringsfunktioner för att säkerställa att e-posthuvuden är korrekt formaterade och överensstämmer med standarder.
 

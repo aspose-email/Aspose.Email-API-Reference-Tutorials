@@ -89,7 +89,7 @@ En esta guía, ha aprendido cómo generar archivos TNEF EML a partir de archivos
 
 ### ¿Cómo obtengo la biblioteca Aspose.Email para .NET?
 
- Puede obtener la biblioteca Aspose.Email para .NET en las versiones de Aspose:[Descargar Aspose.Email para .NET](https://releases.aspose.com/email/net).
+Puede obtener la biblioteca Aspose.Email para .NET en las versiones de Aspose:[Descargar Aspose.Email para .NET](https://releases.aspose.com/email/net).
 
 ### ¿Puedo usar Aspose.Email para formatos distintos a MSG?
 

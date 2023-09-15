@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### Puis-je extraire plusieurs instances du même en-tête d’un e-mail ?
 
- Oui, vous pouvez extraire plusieurs instances du même en-tête à l'aide de l'outil`GetValues` méthode:
+Oui, vous pouvez extraire plusieurs instances du même en-tête à l'aide de l'outil`GetValues` méthode:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### Où puis-je accéder à la documentation Aspose.Email et télécharger la bibliothèque ?
 
-Vous pouvez trouver la documentation sur[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Pour télécharger la bibliothèque, visitez[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Vous pouvez trouver la documentation sur[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Pour télécharger la bibliothèque, visitez[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Créez une instance du`MhtmlMessageFormatter`classe pour formater le message :
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. Chargez le contenu HTML du message électronique :
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Étape 5 : Ajouter un texte alternatif aux images
+## Étape 5 : Ajouter AlternativeView pour un texte alternatif aux images
 
-1.  Localisez le`AlternateView` contenant le corps HTML et les images :
-
+Ajoutez htmlview pour le texte alternatif à l'image en tant qu'AlternateView dans le message. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Localisez le`LinkedResource` représentant l'image:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Définissez le texte alternatif pour l'image :
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Étape 6 : Enregistrez et envoyez l'e-mail
@@ -97,7 +77,7 @@ Vous pouvez télécharger la bibliothèque Aspose.Email à partir des versions A
 
 ### Comment ajouter des images en tant que ressources liées dans un e-mail ?
 
- Pour ajouter des images en tant que ressources liées dans un e-mail, vous pouvez utiliser l'outil`LinkedResource`classe. Attribuez un ID de contenu à la ressource liée, puis référencez cet ID de contenu dans le corps HTML à l'aide du`cid:` schème. Pour des informations détaillées, consultez le[Documentation LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Pour ajouter des images en tant que ressources liées dans un e-mail, vous pouvez utiliser l'outil`LinkedResource` classe. Attribuez un ID de contenu à la ressource liée, puis référencez cet ID de contenu dans le corps HTML à l'aide du`cid:` schème. Pour des informations détaillées, consultez le[Documentation LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Où puis-je trouver plus de documentation sur Aspose.Email pour .NET ?
 
  Vous pouvez trouver une documentation plus détaillée, des didacticiels et des exemples sur l'utilisation d'Aspose.Email pour .NET dans le[Référence API](https://reference.aspose.com/email/net/).

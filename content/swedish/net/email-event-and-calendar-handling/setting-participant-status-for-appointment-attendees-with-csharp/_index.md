@@ -17,7 +17,7 @@ Aspose.Email för .NET är ett mångsidigt bibliotek som gör det möjligt för 
 Innan vi dyker in i implementeringen, se till att du har följande förutsättningar på plats:
 
 - Visual Studio (eller någon C# IDE)
-- Aspose.Email för .NET-biblioteket
+- Aspose.Email för .NET-bibliotek
 - Grundläggande förståelse för C#-programmering
 
 ## Skapa ett möte

@@ -69,7 +69,6 @@ foreach (AlternateView alternateView in message.AlternateViews)
         foreach (LinkedResource linkedResource in alternateView.LinkedResources)
         {
             // Обработка встроенного сообщения
-            MailMessage embeddedMessage = linkedResource.GetLinkedMessage();
             // Выполните желаемые операции
         }
     }

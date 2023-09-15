@@ -40,3 +40,9 @@ Aprenda a diferenciar entre archivos adjuntos de correo electrónico regulares y
 Aprenda cómo eliminar archivos adjuntos de correo electrónico usando Aspose.Email para .NET. Guía paso a paso con código fuente C#.
 ### [Protección de archivos adjuntos TNEF: método C#](./safeguarding-tnef-attachments-csharp-method/)
 Aprenda cómo proteger los archivos adjuntos TNEF usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente incluido.
+### [Extracción de archivos adjuntos incrustados de archivos MSG usando C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Aprenda a extraer archivos adjuntos incrustados de archivos MSG usando C# y Aspose.Email para .NET. Una guía completa con ejemplos de código fuente.
+### [Preservar el formato MSG incrustado durante la carga con C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Aprenda cómo conservar el formato MSG incrustado usando Aspose.Email para .NET. Guía paso a paso con código fuente.
+### [Preservar archivos adjuntos TNEF al leer mensajes: enfoque C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Aprenda cómo conservar archivos adjuntos TNEF usando Aspose.Email para .NET en esta guía paso a paso con código fuente.

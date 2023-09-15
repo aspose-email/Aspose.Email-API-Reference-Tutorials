@@ -22,7 +22,6 @@ Les didacticiels sur les signatures électroniques visent à permettre aux déve
 
 
 ## Didacticiels sur la sécurité des e-mails et les signatures
-## [Gestion des objets incorporés dans les e-mails avec du code C#](./handling-embedded-objects-in-emails-with-csharp-code/)
-Découvrez comment gérer les objets incorporés dans les e-mails à l'aide de C# et Aspose.Email pour .NET. Créez du contenu de courrier électronique interactif et attrayant avec des conseils étape par étape et des exemples de code.
-## [Signature d'e-mails avec DKIM à l'aide du code C#](./signing-emails-with-dkim-using-csharp-code/)
+
+### [Signature d'e-mails avec DKIM à l'aide du code C#](./signing-emails-with-dkim-using-csharp-code/)
 Apprenez à sécuriser les e-mails avec DKIM en utilisant C# et Aspose.Email pour .NET. Guide étape par étape avec le code source. Améliorez la confiance et l’authenticité des e-mails.

@@ -18,13 +18,13 @@ E-Mail-Header sind Metadaten, die wesentliche Details zu einer E-Mail-Nachricht 
 
 E-Mail-Header erfüllen mehrere wichtige Zwecke:
 #### Routenplanung: 
-	Headers determine the path an email takes from sender to recipient.
+Header bestimmen den Weg einer E-Mail vom Absender zum Empfänger.
 #### Authentifizierung
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Header wie DKIM und SPF helfen dabei, die Authentizität von E-Mails zu überprüfen.
 #### Betreff: 
-	The subject header gives recipients an idea of the email's content.
+Der Betreff-Header gibt den Empfängern eine Vorstellung vom Inhalt der E-Mail.
 #### Antwortbearbeitung: 
-	Headers like Reply-To ensure proper handling of replies.
+Header wie Reply-Um die ordnungsgemäße Verarbeitung von Antworten sicherzustellen.
 
 ## 3. Installation von Aspose.Email für .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Bestimmte Header werden häufig in E-Mail-Nachrichten verwendet:
 
 #### Thema: 
-	Set the email subject using the `message.Subject` property.
+ Legen Sie den E-Mail-Betreff mit fest`message.Subject` Eigentum.
 #### Aus: 
-	Specify the sender's address using the `message.From` property.
+ Geben Sie die Absenderadresse mit an`message.From` Eigentum.
 #### Zu: 
-	Define the recipient's address using the `message.To` property.
+ Definieren Sie die Adresse des Empfängers mithilfe der`message.To` Eigentum.
 
 ## 6. Anpassen zusätzlicher Header
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Umgang mit MIME-Versions- und Inhaltstyp-Headern
 
- Der`MIME-Version`Der Header gewährleistet die ordnungsgemäße MIME-Kompatibilität, während der`Content-Type` Der Header gibt die Art des Inhalts im E-Mail-Text an.
+ Der`MIME-Version` Der Header gewährleistet die ordnungsgemäße MIME-Kompatibilität, während der`Content-Type` Der Header gibt die Art des Inhalts im E-Mail-Text an.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

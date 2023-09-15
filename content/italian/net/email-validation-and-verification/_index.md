@@ -10,7 +10,7 @@ url: /it/net/email-validation-and-verification/
 
 ## introduzione
 
-I tutorial Aspose.Email per .NET su "Convalida e verifica della posta elettronica" forniscono agli sviluppatori strumenti e approfondimenti essenziali per migliorare l'accuratezza e la sicurezza delle comunicazioni e-mail. Questi tutorial offrono una guida completa sull'utilizzo di Aspose.Email per .NET per implementare robusti meccanismi di convalida e verifica della posta elettronica. Con istruzioni dettagliate ed esempi pratici di codice, questi tutorial consentono agli sviluppatori di garantire l'autenticità e la correttezza degli indirizzi e-mail, rafforzando la qualità dei dati e l'affidabilità della comunicazione.
+tutorial Aspose.Email per .NET su "Convalida e verifica della posta elettronica" forniscono agli sviluppatori strumenti e approfondimenti essenziali per migliorare l'accuratezza e la sicurezza delle comunicazioni e-mail. Questi tutorial offrono una guida completa sull'utilizzo di Aspose.Email per .NET per implementare robusti meccanismi di convalida e verifica della posta elettronica. Con istruzioni dettagliate ed esempi pratici di codice, questi tutorial consentono agli sviluppatori di garantire l'autenticità e la correttezza degli indirizzi e-mail, rafforzando la qualità dei dati e l'affidabilità della comunicazione.
 
 ## Convalida e-mail
 
@@ -21,7 +21,5 @@ tutorial sulla convalida della posta elettronica approfondiscono le complessità
 tutorial sulla verifica della posta elettronica si concentrano su come consentire agli sviluppatori di verificare l'esistenza e la validità degli indirizzi di posta elettronica utilizzando Aspose.Email per .NET. Gli sviluppatori possono esplorare tecniche per eseguire controlli in tempo reale sugli indirizzi e-mail per garantire che corrispondano ad account attivi e raggiungibili. Questi tutorial offrono istruzioni dettagliate sull'integrazione dei servizi di verifica e-mail, sul rilevamento di indirizzi non validi e sul miglioramento dell'affidabilità della comunicazione eliminando le e-mail non recapitabili. Aspose.Email per .NET semplifica le attività di verifica della posta elettronica, consentendo agli sviluppatori di migliorare le proprie applicazioni con comunicazioni sicure e accurate.
 
 ## Esercitazioni sulla convalida e verifica della posta elettronica
-## [Tecniche di convalida della posta elettronica nel codice C#](./email-validation-techniques-in-csharp-code/)
+### [Tecniche di convalida della posta elettronica nel codice C#](./email-validation-techniques-in-csharp-code/)
 Scopri come convalidare gli indirizzi e-mail in modo efficace in C# utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente fornito. Migliora l'accuratezza dei dati e l'esperienza dell'utente.
-## [Convalida degli indirizzi e-mail utilizzando il codice C#](./validating-email-addresses-using-csharp-code/)
-Scopri come convalidare gli indirizzi e-mail utilizzando C# e Aspose.Email per .NET. Garantisci dati e-mail accurati nelle tue applicazioni.

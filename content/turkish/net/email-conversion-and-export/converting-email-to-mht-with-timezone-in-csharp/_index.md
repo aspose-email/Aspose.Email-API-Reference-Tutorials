@@ -72,31 +72,6 @@ mhtStream.Seek(0, SeekOrigin.Begin);
 mhtStream.CopyTo(fileStream);
 ```
 
-## Tam Kaynak Kodu Örneği
-
-İşte tüm adımları bir araya getiren tam kod örneği:
-
-```csharp
-// Gerekli kullanım ifadelerini ekleyin
-
-namespace EmailConversionApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // E-posta mesajını yükleyin ve ayrıştırın
-
-            // Saat dilimi bilgilerini işleme
-
-            // E-postayı MHT formatına dönüştürün
-
-            // MHT dosyasını kaydedin
-        }
-    }
-}
-```
-
 ## Ek Özelleştirmeleri Keşfetmek
 
 Aspose.Email for .NET çeşitli özelleştirme seçenekleri sunar. Uygulamanızın ihtiyaçlarına uyacak şekilde ek eklemeyi, mesaj özelliklerini değiştirmeyi ve daha fazlasını keşfedebilirsiniz.
@@ -121,7 +96,7 @@ Evet, Aspose.Email for .NET MSG, EML, PST ve daha fazlası dahil olmak üzere ç
 
 ### Saat dilimi bilgileri MHT formatında korunuyor mu?
 
-Evet, dönüştürme işlemi sırasında saat dilimi bilgileri korunur. Saat dilimi farklarını işleyerek ve uygun olanı kullanarak`TimeZoneInfo` yöntemleri kullanarak, MHT dosyasında doğru saat dilimi gösterimini sağlayabilirsiniz.
+ Evet, dönüştürme işlemi sırasında saat dilimi bilgileri korunur. Saat dilimi farklarını işleyerek ve uygun olanı kullanarak`TimeZoneInfo` yöntemleri kullanarak, MHT dosyasında doğru saat dilimi gösterimini sağlayabilirsiniz.
 
 ### Aspose.Email for .NET hakkında daha fazla belge ve güncellemeyi nerede bulabilirim?
 

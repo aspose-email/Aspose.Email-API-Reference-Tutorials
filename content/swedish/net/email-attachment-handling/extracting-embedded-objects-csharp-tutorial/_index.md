@@ -82,7 +82,7 @@ foreach (var attachment in message.Attachments)
 
 ## Slutsats
 
-den här handledningen har vi lärt oss hur man använder Aspose.Email för .NET-biblioteket för att extrahera inbäddade objekt från e-postmeddelanden. Vi täckte in att ladda e-postmeddelanden, extrahera bilagor och inbäddade bilder, spara det extraherade innehållet och hantera olika typer av inbäddade objekt. Denna funktion kan vara oerhört användbar när du bygger applikationer som involverar e-postkommunikation och innehållsextraktion.
+I den här handledningen har vi lärt oss hur man använder Aspose.Email för .NET-biblioteket för att extrahera inbäddade objekt från e-postmeddelanden. Vi täckte in att ladda e-postmeddelanden, extrahera bilagor och inbäddade bilder, spara det extraherade innehållet och hantera olika typer av inbäddade objekt. Denna funktion kan vara oerhört användbar när du bygger applikationer som involverar e-postkommunikation och innehållsextraktion.
 
 ## FAQ's
 

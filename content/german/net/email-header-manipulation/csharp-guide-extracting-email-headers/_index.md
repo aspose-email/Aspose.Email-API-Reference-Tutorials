@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### Kann ich mehrere Instanzen desselben Headers aus einer E-Mail extrahieren?
 
- Ja, Sie können mit dem mehrere Instanzen desselben Headers extrahieren`GetValues` Methode:
+Ja, Sie können mit dem mehrere Instanzen desselben Headers extrahieren`GetValues` Methode:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### Wo kann ich auf die Aspose.Email-Dokumentation zugreifen und die Bibliothek herunterladen?
 
-Die Dokumentation finden Sie unter[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Um die Bibliothek herunterzuladen, besuchen Sie[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Die Dokumentation finden Sie unter[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Um die Bibliothek herunterzuladen, besuchen Sie[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

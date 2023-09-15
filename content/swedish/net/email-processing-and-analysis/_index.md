@@ -20,7 +20,7 @@ Handledningarna för e-postbearbetning gräver ner sig i krångligheterna med at
 
 E-postanalyshandledningarna fokuserar på att extrahera meningsfulla insikter från e-postmeddelanden med Aspose.Email för .NET. Utvecklare kan lära sig att programmatiskt analysera e-postinnehåll, som att extrahera nyckelmetadata, identifiera trender och generera rapporter. Dessa handledningar erbjuder steg-för-steg-instruktioner för att extrahera avsändarinformation, analysera e-postmönster och härleda värdefull information från e-postinnehåll. Aspose.Email för .NET förenklar e-postanalysuppgifter, vilket gör det möjligt för utvecklare att förbättra sina applikationer med datadrivet beslutsfattande och förbättrade kommunikationsstrategier.
 
-## Självstudier för e-postbearbetning och analys
+## Handledning för e-postbearbetning och analys
 ### [Utforska Bayesian Spam Analysis i C#](./exploring-bayesian-spam-analysis-in-csharp/)
 Implementera Bayesiansk skräppostanalys i C# med Aspose.Email för .NET. Exakt e-postfiltrering. Steg-för-steg guide & kod.
 ### [Verifiera avvisade meddelanden med C#-kod](./verifying-bounced-messages-with-csharp-code/)
@@ -36,7 +36,10 @@ Lär dig att upptäcka och bearbeta TNEF-meddelanden i C# med Aspose.Email för 
 ### [Säker meddelandehantering - Kryptering och dekryptering i C#](./secure-message-handling-encryption-and-decryption-in-csharp/)
 Lär dig hur du implementerar säker meddelandehantering med kryptering och dekryptering i C# med Aspose.Email för .NET. Skydda känsliga uppgifter effektivt.
 ### [C# Approach - Extrahera avkodade huvudvärden](./csharp-approach-extracting-decoded-header-values/)
+Lär dig att extrahera avkodade e-posthuvudvärden i C# med Aspose.Email för .NET. Omfattande guide med kodexempel.
 ### [Hämta leveransstatusmeddelanden med C#](./retrieving-delivery-status-notifications-with-csharp/)
 Lär dig hur du hämtar e-postmeddelanden om leveransstatus med C# och Aspose.Email för .NET.
 ### [C#-teknik - Konvertera HTML-brödtext till vanlig text](./csharp-technique-converting-html-body-to-plain-text/)
 Lär dig att enkelt konvertera HTML-e-postinnehåll till vanlig text med Aspose.Email för .NET. Detaljerad guide & kod. Utforska nu!
+### [Bevara ursprungliga gränser med C#-kod](./preserving-original-boundaries-using-csharp-code/)
+Lär dig hur du bevarar ursprungliga gränser för e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.

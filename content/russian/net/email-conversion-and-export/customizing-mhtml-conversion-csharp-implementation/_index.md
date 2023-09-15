@@ -17,7 +17,7 @@ url: /ru/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 Прежде чем приступить к настройке преобразования MHTML, убедитесь, что у вас установлен Aspose.Email for .NET и готов к работе новый проект C#.
 
 1. Установка Aspose.Email для .NET:
- Для начала загрузите и установите Aspose.Email для .NET с сайта[ссылка для скачивания](https://releases.aspose.com/email/net). Следуйте инструкциям по установке, приведенным в документации.
+Для начала загрузите и установите Aspose.Email для .NET с сайта[ссылка для скачивания](https://releases.aspose.com/email/net). Следуйте инструкциям по установке, приведенным в документации.
 
 2. Создание нового проекта C#:
 Откройте Visual Studio и создайте новый проект C#. Убедитесь, что вы указали библиотеку Aspose.Email в своем проекте, добавив соответствующую ссылку на DLL.
@@ -32,53 +32,14 @@ url: /ru/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 ```csharp
 using Aspose.Email.Mime;
 // Загрузить файл MHTML
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. Доступ к HTML-контенту и ресурсам:
-Извлеките содержимое HTML и связанные ресурсы, используя следующий код:
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   // Доступ к HTML-контенту
-	   var htmlContent = resource.GetContent();
-	   // При необходимости измените HTML-контент.
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   // Доступ к ресурсам изображений
-	   var imageData = resource.GetContent();
-	   //Изменить или вставить изображения
-   }
-   // Обработка других типов ресурсов
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## Настройка параметров преобразования
 
 Настройте процесс преобразования MHTML, указав различные форматы вывода и настроив параметры.
 
-1. Выбор выходных форматов:
-Определите выходной формат для вашего преобразования, например PDF, DOCX или другой:
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; // Конвертировать в PDF
-// Установите другие параметры преобразования
-```
-
-2. Указание полей и ориентации страницы:
-Настройте поля и ориентацию страницы выходного документа:
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. Управление качеством изображения:
+1. Управление качеством изображения:
 Контролируйте качество встроенных изображений:
 
 ```csharp

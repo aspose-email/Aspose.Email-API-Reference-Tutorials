@@ -40,7 +40,7 @@ För att börja arbeta med e-postmeddelanden måste du ladda dem i din applikati
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
-// Andra relevanta med påståenden
+// Andra relevanta med hjälp av uttalanden
 
 // Ladda PST-fil
 using (PersonalStorage pst = PersonalStorage.FromFile("sample.pst"))
@@ -57,7 +57,7 @@ Aspose.Email låter dig upptäcka S/MIME-kryptering i e-postmeddelanden:
 
 ```csharp
 using Aspose.Email;
-// Andra relevanta med påståenden
+// Andra relevanta med hjälp av uttalanden
 
 // Ladda ett e-postmeddelande
 MailMessage message = MailMessage.Load("encrypted.eml");
@@ -66,46 +66,23 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### Verifierar meddelandekryptering
-
-Du kan också verifiera om ett meddelande är digitalt signerat och krypterat:
-
-```csharp
-using Aspose.Email.Security;
-// Andra relevanta med påståenden
-
-// Ladda ett e-postmeddelande
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// Kontrollera om meddelandet är signerat och krypterat
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Kontrollera efter kryptering
-if (isSigned && isEncrypted)
-{
-    // Meddelandet är signerat och krypterat
-}
-```
-
 ## Dekryptera krypterade meddelanden
 
 För att dekryptera ett krypterat meddelande krävs rätt nycklar och certifikat. Så här kan du göra det med Aspose.Email:
 
 ```csharp
 using Aspose.Email.Security.Cryptography;
-// Andra relevanta med påståenden
+// Andra relevanta med hjälp av uttalanden
 
 // Ladda den krypterade e-posten
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Ange dekrypteringsnyckeln och certifikatet
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Dekryptera meddelandet
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## Hantering av undantag
@@ -156,7 +133,7 @@ namespace EmailEncryptionDemo
 
 ## Slutsats
 
-I den här guiden undersökte vi hur man kan utnyttja funktionerna i Aspose.Email för .NET för att kontrollera meddelanden för kryptering. Genom att upptäcka och verifiera S/MIME-kryptering, dekryptera meddelanden och hantera undantag kan du säkerställa säker kommunikation i dina applikationer. Aspose.Email förenklar processen, vilket gör att du kan fokusera på att bygga robusta och säkra e-postfunktioner.
+den här guiden undersökte vi hur man kan utnyttja funktionerna i Aspose.Email för .NET för att kontrollera meddelanden för kryptering. Genom att upptäcka och verifiera S/MIME-kryptering, dekryptera meddelanden och hantera undantag kan du säkerställa säker kommunikation i dina applikationer. Aspose.Email förenklar processen, vilket gör att du kan fokusera på att bygga robusta och säkra e-postfunktioner.
 
 ## Vanliga frågor
 

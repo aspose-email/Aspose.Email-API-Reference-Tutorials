@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Bir örneğini oluşturun`MhtmlMessageFormatter`mesajı biçimlendirmek için sınıf:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. E-posta mesajının HTML içeriğini yükleyin:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Adım 5: Görsellere Alternatif Metin Ekleyin
+## Adım 5: Görsellere Alternatif Metin için Alternatif Görünüm Ekleme
 
-1.  Bulun`AlternateView` HTML gövdesini ve resimlerini içeren:
-
+Mesaja AlternateView olarak Resme Alternatif Metin için htmlview ekleyin. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Bulun`LinkedResource` görüntüyü temsil eden:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Görselin alternatif metnini ayarlayın:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Adım 6: E-postayı Kaydedin ve Gönderin
@@ -97,7 +77,7 @@ Aspose.Email kütüphanesini Aspose Sürümlerinden indirebilir veya Visual Stud
 
 ### Resimleri bir e-postaya bağlantılı kaynaklar olarak nasıl eklerim?
 
- Resimleri bir e-postaya bağlantılı kaynaklar olarak eklemek için`LinkedResource`sınıf. Bağlantılı kaynağa bir içerik kimliği atayın ve ardından HTML gövdesinde bu içerik kimliğine başvuruda bulunun.`cid:` şeması. Ayrıntılı bilgi için bkz.[LinkedResource belgeleri](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Resimleri bir e-postaya bağlantılı kaynaklar olarak eklemek için`LinkedResource` sınıf. Bağlantılı kaynağa bir içerik kimliği atayın ve ardından HTML gövdesinde bu içerik kimliğine başvuruda bulunun.`cid:` şeması. Ayrıntılı bilgi için bkz.[LinkedResource belgeleri](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Aspose.Email for .NET hakkında daha fazla belgeyi nerede bulabilirim?
 
  Aspose.Email for .NET ile çalışmaya ilişkin daha ayrıntılı belgeleri, eğitimleri ve örnekleri şu adreste bulabilirsiniz:[API Referansı](https://reference.aspose.com/email/net/).

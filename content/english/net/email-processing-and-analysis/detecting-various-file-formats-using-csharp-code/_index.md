@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // Detect the file format
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Display the result
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Detect the file format
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Display the result
             Console.WriteLine($"Detected File Format: {formatType}");

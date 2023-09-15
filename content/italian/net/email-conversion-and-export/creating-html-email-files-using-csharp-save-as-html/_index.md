@@ -112,4 +112,4 @@ Sì, Aspose.Email supporta .NET Core, consentendoti di creare applicazioni multi
 
 ### Dove posso trovare altri esempi e documentazione?
 
-Puoi esplorare esempi completi e documentazione dettagliata su[Documentazione Aspose.Email](https://reference.aspose.com/email/net) pagina.
+ Puoi esplorare esempi completi e documentazione dettagliata su[Documentazione Aspose.Email](https://reference.aspose.com/email/net) pagina.

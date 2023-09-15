@@ -36,7 +36,10 @@ Aspose.Email for .NET'i kullanarak C#'ta TNEF mesajlarını algılamayı ve işl
 ### [Güvenli Mesaj İşleme - C#'ta Şifreleme ve Şifre Çözme](./secure-message-handling-encryption-and-decryption-in-csharp/)
 Aspose.Email for .NET'i kullanarak C#'ta şifreleme ve şifre çözme ile güvenli mesaj işlemeyi nasıl uygulayacağınızı öğrenin. Hassas verileri etkili bir şekilde koruyun.
 ### [C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma](./csharp-approach-extracting-decoded-header-values/)
+Aspose.Email for .NET'i kullanarak C#'ta kodu çözülmüş e-posta başlığı değerlerini çıkarmayı öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
 ### [C# ile Teslimat Durumu Bildirimlerini Alma](./retrieving-delivery-status-notifications-with-csharp/)
 C# ve Aspose.Email for .NET kullanarak e-posta Teslim Durumu Bildirimlerini nasıl alacağınızı öğrenin.
 ### [C# Tekniği - HTML Gövdesini Düz Metne Dönüştürme](./csharp-technique-converting-html-body-to-plain-text/)
 Aspose.Email for .NET'i kullanarak HTML e-posta içeriğini zahmetsizce düz metne dönüştürmeyi öğrenin. Ayrıntılı kılavuz ve kod. Şimdi keşfedin!
+### [C# Kodunu Kullanarak Orijinal Sınırları Koruma](./preserving-original-boundaries-using-csharp-code/)
+C# ve Aspose.Email for .NET kullanarak e-posta eklerinin orijinal sınırlarını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.

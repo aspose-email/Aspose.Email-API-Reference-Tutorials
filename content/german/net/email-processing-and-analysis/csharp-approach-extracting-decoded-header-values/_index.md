@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Laden Sie die E-Mail-Nachricht
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Extrahieren und dekodieren Sie den Betreff-Header
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Drucken Sie den entschlüsselten Betreff-Header aus
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -55,20 +51,20 @@ class Program
 Im obigen Codeausschnitt führen wir die folgenden Schritte aus:
 
 1. Wir importieren notwendige Namespaces (`Aspose.Email` Und`Aspose.Email.Mail`).
-2.  Wir erstellen eine`Main` Methode als Einstiegspunkt unserer Anwendung.
-3.  Innerhalb der`Main` Methode verwenden wir die`MailMessage.Load` Methode zum Laden einer E-Mail-Nachricht aus einer Datei. Ersetzen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zur E-Mail-Nachricht, die Sie verarbeiten möchten.
-4.  Wir benutzen das`HeaderDecoder.DecodeHeader` Methode zum Dekodieren des Subject-Headers.
+2.  Wir erstellen ein`Main` Methode als Einstiegspunkt unserer Anwendung.
+3.  Innerhalb der`Main`Methode verwenden wir die`MailMessage.Load` Methode zum Laden einer E-Mail-Nachricht aus einer Datei. Ersetzen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zu der E-Mail-Nachricht, die Sie verarbeiten möchten.
+4.  Wir benutzen das`Headers.GetDecodedValue` Methode zum Dekodieren des Subject-Headers.
 5. Wir geben den entschlüsselten Subject-Header an die Konsole aus.
 
 ## Schritt 5: Führen Sie die Anwendung aus
 
- Kompilieren Sie Ihre Anwendung und führen Sie sie aus. Unbedingt austauschen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zur E-Mail-Nachricht, die Sie verarbeiten möchten. Die Anwendung lädt die E-Mail, extrahiert den entschlüsselten Betreff-Header und zeigt ihn in der Konsole an.
+ Kompilieren Sie Ihre Anwendung und führen Sie sie aus. Unbedingt austauschen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zu der E-Mail-Nachricht, die Sie verarbeiten möchten. Die Anwendung lädt die E-Mail, extrahiert den entschlüsselten Betreff-Header und zeigt ihn in der Konsole an.
 
 ## FAQs
 
 ### Wie kann ich andere E-Mail-Header mit Aspose.Email für .NET dekodieren?
 
- Mit dem können Sie verschiedene E-Mail-Header wie „Von“, „An“, „Datum“ usw. entschlüsseln`HeaderDecoder.DecodeHeader` Methode. Geben Sie einfach den Header-Wert als Parameter für die Methode an.
+ Mit dem können Sie verschiedene E-Mail-Header wie „Von“, „An“, „Datum“ usw. entschlüsseln`Headers.GetDecodedValue` Methode. Geben Sie einfach den Header-Wert als Parameter für die Methode an.
 
 ### Wo finde ich weitere Informationen zu Aspose.Email für .NET?
 

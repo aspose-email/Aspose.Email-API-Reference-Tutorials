@@ -21,7 +21,5 @@ Die Tutorials zur E-Mail-Validierung befassen sich mit den Feinheiten der Implem
 Die Tutorials zur E-Mail-Verifizierung konzentrieren sich darauf, Entwicklern die Möglichkeit zu geben, die Existenz und Gültigkeit von E-Mail-Adressen mithilfe von Aspose.Email für .NET zu überprüfen. Entwickler können Techniken erkunden, um E-Mail-Adressen in Echtzeit zu überprüfen, um sicherzustellen, dass sie aktiven und erreichbaren Konten entsprechen. Diese Tutorials bieten Schritt-für-Schritt-Anleitungen zur Integration von E-Mail-Verifizierungsdiensten, zur Erkennung ungültiger Adressen und zur Verbesserung der Kommunikationszuverlässigkeit durch Eliminierung unzustellbarer E-Mails. Aspose.Email für .NET vereinfacht E-Mail-Verifizierungsaufgaben und ermöglicht Entwicklern, ihre Anwendungen durch sichere und genaue Kommunikation zu verbessern.
 
 ## Tutorials zur E-Mail-Validierung und -Verifizierung
-## [E-Mail-Validierungstechniken in C#-Code](./email-validation-techniques-in-csharp-code/)
+### [E-Mail-Validierungstechniken in C#-Code](./email-validation-techniques-in-csharp-code/)
 Erfahren Sie, wie Sie E-Mail-Adressen in C# mit Aspose.Email für .NET effektiv validieren. Schritt-für-Schritt-Anleitung mit bereitgestelltem Quellcode. Verbessern Sie die Datengenauigkeit und das Benutzererlebnis.
-## [Validieren von E-Mail-Adressen mit C#-Code](./validating-email-addresses-using-csharp-code/)
-Erfahren Sie, wie Sie E-Mail-Adressen mit C# und Aspose.Email für .NET validieren. Stellen Sie sicher, dass Ihre E-Mail-Daten in Ihren Anwendungen korrekt sind.

@@ -43,7 +43,10 @@ url: /zh/net/email-processing-and-analysis/secure-message-handling-encryption-an
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 //加密消息
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 //将加密消息保存到文件或发送
 message.Save("encrypted.eml");
@@ -72,7 +75,7 @@ string decryptedBody = encryptedMessage.Body;
 
 ## 结论
 
-在数据泄露成为持续威胁的世界中，采用安全消息处理实践是不容协商的。通过利用加密和解密技术以及 Aspose.Email for .NET 等强大的工具，您可以确保您的敏感信息保持机密并受到保护。
+在数据泄露成为持续威胁的世界中，采用安全消息处理实践是不容谈判的。通过利用加密和解密技术以及 Aspose.Email for .NET 等强大的工具，您可以确保您的敏感信息保持机密并受到保护。
 
 ## 常见问题解答
 

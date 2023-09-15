@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### هل يمكنني استخراج مثيلات متعددة لنفس الرأس من رسالة بريد إلكتروني؟
 
- نعم، يمكنك استخراج مثيلات متعددة لنفس الرأس باستخدام ملف`GetValues` طريقة:
+نعم، يمكنك استخراج مثيلات متعددة لنفس الرأس باستخدام ملف`GetValues` طريقة:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### أين يمكنني الوصول إلى وثائق Aspose.Email وتنزيل المكتبة؟
 
-يمكنك العثور على الوثائق في[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . لتحميل المكتبة قم بزيارة[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ يمكنك العثور على الوثائق في[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . لتحميل المكتبة قم بزيارة[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

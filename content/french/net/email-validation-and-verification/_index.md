@@ -21,7 +21,5 @@ Les didacticiels de validation des e-mails approfondissent les subtilités de la
 Les didacticiels de vérification des e-mails visent à permettre aux développeurs de vérifier l'existence et la validité des adresses e-mail à l'aide d'Aspose.Email pour .NET. Les développeurs peuvent explorer des techniques pour effectuer des vérifications en temps réel sur les adresses e-mail afin de s'assurer qu'elles correspondent à des comptes actifs et accessibles. Ces didacticiels proposent des instructions étape par étape sur l'intégration des services de vérification des e-mails, la détection des adresses invalides et l'amélioration de la fiabilité des communications en éliminant les e-mails non distribuables. Aspose.Email for .NET simplifie les tâches de vérification des e-mails, permettant aux développeurs d'améliorer leurs applications avec une communication sécurisée et précise.
 
 ## Tutoriels de validation et de vérification des e-mails
-## [Techniques de validation des e-mails dans le code C#](./email-validation-techniques-in-csharp-code/)
+### [Techniques de validation des e-mails dans le code C#](./email-validation-techniques-in-csharp-code/)
 Découvrez comment valider efficacement les adresses e-mail en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec le code source fourni. Améliorez la précision des données et l’expérience utilisateur.
-## [Validation des adresses e-mail à l'aide du code C#](./validating-email-addresses-using-csharp-code/)
-Découvrez comment valider les adresses e-mail à l'aide de C# et Aspose.Email pour .NET. Assurez des données de courrier électronique précises dans vos applications.

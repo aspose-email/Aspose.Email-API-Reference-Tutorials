@@ -23,11 +23,11 @@ url: /ar/net/email-composition-and-creation/managing-default-text-encoding-cshar
 
 يعد استخدام ترميز النص الصحيح أمرًا بالغ الأهمية لأسباب مختلفة:
 ### تكامل البيانات:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+يمكن أن يؤدي التشفير غير الصحيح إلى تلف البيانات أثناء التخزين أو النقل.
 ### دعم متعدد اللغات: 
-	Different languages require different encodings to display characters correctly.
+تتطلب اللغات المختلفة ترميزات مختلفة لعرض الأحرف بشكل صحيح.
 ### التوافق:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+يضمن التشفير الصحيح إمكانية تبادل البيانات بسلاسة بين الأنظمة المختلفة.
 
 ## تقديم Aspose.Email لـ .NET
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## الخطوة 3: إعداد ترميز النص الافتراضي
-
-لتعيين ترميز النص الافتراضي لرسائل البريد الإلكتروني الخاصة بك، يمكنك استخدام مقتطف التعليمات البرمجية التالي. في هذا المثال، نقوم بتعيين التشفير إلى UTF-16.
-
-```csharp
-// اضبط ترميز النص الافتراضي على UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## الخطوة 4: إرسال بريد إلكتروني بتشفير مخصص
+## الخطوة 3: إرسال بريد إلكتروني بتشفير مخصص
 
 عند إرسال بريد إلكتروني، يمكنك تحديد ترميز نص مخصص لنص البريد الإلكتروني. يمكن أن يكون هذا مفيدًا عند إرسال رسائل البريد الإلكتروني باللغات التي تتطلب ترميزات معينة.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## الخطوة 4: إعداد ترميز النص الافتراضي
+
+لتعيين ترميز النص الافتراضي لرسائل البريد الإلكتروني الخاصة بك، يمكنك استخدام مقتطف التعليمات البرمجية التالي. في هذا المثال، نقوم بتعيين التشفير إلى UTF-16.
+
+```csharp
+// اضبط ترميز النص الافتراضي على UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## الخطوة 5: استلام رسائل البريد الإلكتروني وفك تشفيرها
 
 عند تلقي رسائل البريد الإلكتروني، قد تحتاج إلى فك تشفير نص البريد الإلكتروني إذا تم إرساله باستخدام ترميز محدد. إليك كيفية فك تشفير نص رسالة البريد الإلكتروني الواردة:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## التحديات الشائعة في ترميز النص
 
 ### الترميزات غير المتطابقة: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+يمكن أن يؤدي استخدام ترميزات مختلفة لإرسال واستقبال رسائل البريد الإلكتروني إلى نص مشوه.
 ### الشخصيات غير المدعومة:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+قد لا تدعم بعض الترميزات أحرفًا معينة، مما يؤدي إلى استبدال الأحرف أو فقدانها.
 ### تلف الملف: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+قد يؤدي التشفير غير الصحيح عند حفظ رسائل البريد الإلكتروني كملفات إلى ملفات تالفة.
 
 ## أفضل الممارسات لترميز النص
 

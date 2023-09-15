@@ -16,7 +16,7 @@ Aspose.Email for .NET هي مكتبة قوية توفر دعمًا شاملاً 
 
 ## تهيئة بيئة التطوير
 
-قبل أن نتعمق في التعليمات البرمجية، تأكد من تثبيت Aspose.Email لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net). بمجرد التنزيل، اتبع الخطوات التالية لإعداد بيئة التطوير الخاصة بك:
+ قبل أن نتعمق في التعليمات البرمجية، تأكد من تثبيت Aspose.Email لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net). بمجرد التنزيل، اتبع الخطوات التالية لإعداد بيئة التطوير الخاصة بك:
 
 1. قم بإنشاء مشروع C# جديد في بيئة التطوير المفضلة لديك.
 2. أضف مرجعًا إلى مكتبة Aspose.Email التي تم تنزيلها.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  الآن بعد أن قمنا بتحميل رسالة البريد الإلكتروني، نحتاج إلى تحديد ما إذا كانت رسالة TNEF. يوفر Aspose.Email`MailMessage.IsTnef` الملكية لهذا الغرض. وإليك كيف يمكنك استخدامه:
 
 ```csharp
-// تحقق مما إذا كانت الرسالة عبارة عن رسالة TNEF
-if (message.IsTnef)
+//تحقق مما إذا كانت الرسالة عبارة عن رسالة TNEF
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## استخراج البيانات من رسائل TNEF
-
-إذا كانت الرسالة بالفعل رسالة TNEF، فيمكنك استخراج بيانات متنوعة منها. على سبيل المثال، يمكنك استخراج محتوى النص العادي على النحو التالي:
-
-```csharp
-if (message.IsTnef)
-{
-    // استخراج محتوى النص العادي من TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## التعامل مع المرفقات ضمن رسائل TNEF
 
 تحتوي رسائل TNEF غالبًا على مرفقات. لاستخراج هذه المرفقات وحفظها يمكنك استخدام الكود التالي:
 
 ```csharp
-if (message.IsTnef)
+// التكرار من خلال المرفقات
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // استخراج مرفق TNEF
+        var tnefAttachment = attachment;
+
+        //الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.Properties...
     }
 }
 ```

@@ -22,7 +22,6 @@ E-posta imzası eğitimleri, geliştiricilerin Aspose.Email for .NET'i kullanara
 
 
 ## E-posta Güvenliği ve İmza Eğitimleri
-## [C# Koduyla E-postalardaki Gömülü Nesneleri İşleme](./handling-embedded-objects-in-emails-with-csharp-code/)
-C# ve Aspose.Email for .NET kullanarak e-postalardaki gömülü nesneleri nasıl yöneteceğinizi öğrenin. Adım adım rehberlik ve kod örnekleriyle etkileşimli ve ilgi çekici e-posta içeriği oluşturun.
-## [C# Kodunu Kullanarak DKIM ile E-postaları İmzalama](./signing-emails-with-dkim-using-csharp-code/)
+
+### [C# Kodunu Kullanarak DKIM ile E-postaları İmzalama](./signing-emails-with-dkim-using-csharp-code/)
 C# ve Aspose.Email for .NET kullanarak DKIM ile e-postalarınızın güvenliğini sağlamayı öğrenin. Kaynak koduyla adım adım kılavuz. E-posta güvenini ve orijinalliğini artırın.

@@ -8,99 +8,128 @@ weight: 11
 url: /fr/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-La communication par courrier électronique fait partie intégrante des interactions professionnelles et personnelles modernes. Souvent, il est essentiel de savoir si vos emails envoyés ont été lus par les destinataires. C’est là que les confirmations de lecture des e-mails entrent en jeu. Dans cet article, nous verrons comment demander des accusés de lecture d'e-mails à l'aide du code C#, en tirant parti de la puissance de la bibliothèque Aspose.Email pour .NET.
+À l'ère du numérique d'aujourd'hui, la communication par courrier électronique est devenue une partie intégrante de nos vies personnelles et professionnelles. Souvent, lors de l'envoi d'e-mails importants, nous voulons nous assurer que le destinataire a lu et accusé réception de notre message. C’est là que les confirmations de lecture des e-mails entrent en jeu. Dans ce didacticiel étape par étape, nous vous guiderons tout au long du processus de demande de confirmations de lecture par courrier électronique à l'aide de C# avec Aspose.Email pour .NET.
 
 ## Introduction aux accusés de lecture des e-mails
 
-Les accusés de lecture d'e-mails sont des notifications envoyées par le client de messagerie du destinataire lorsqu'il ouvre un e-mail. Il fournit à l'expéditeur la confirmation que l'e-mail a été livré et lu avec succès. Cette fonctionnalité peut être particulièrement utile dans des contextes professionnels pour suivre l'engagement des clients ou des collègues dans des communications importantes.
+Les accusés de lecture des e-mails, également appelés suivi des e-mails ou accusés de retour, vous permettent de recevoir des notifications lorsque le destinataire ouvre et lit votre e-mail. Il s'agit d'une fonctionnalité précieuse, en particulier dans les communications professionnelles, car elle permet de confirmer la transmission du message et l'engagement.
 
-## Configuration de votre environnement de développement
+## Conditions préalables
 
-Avant de plonger dans le processus de codage, assurez-vous de disposer d’un environnement de développement approprié. Tu auras besoin:
+Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
 
-- Visual Studio ou tout autre IDE de développement C#
-- .NET Framework ou .NET Core installé
-- Aspose.Email pour la bibliothèque .NET
+- Visual Studio installé sur votre système.
+- Bibliothèque Aspose.Email pour .NET téléchargée et référencée dans votre projet.
 
-## Installation d'Aspose.Email pour .NET
+## Étape 1 : Création d'une instance MailMessage
 
- Pour commencer, vous devez installer la bibliothèque Aspose.Email pour .NET. Vous pouvez le télécharger depuis[Aspose les versions](https://releases.aspose.com/email/net/). Suivez les instructions d'installation fournies pour intégrer la bibliothèque dans votre projet.
-
-## Création d'un nouveau projet C#
-
-Ouvrez votre environnement de développement et créez un nouveau projet C#. Choisissez un modèle de projet adapté en fonction de votre type d'application (Console, Windows Forms, etc.).
-
-## Écrire le code pour demander des accusés de lecture
-
-Maintenant, écrivons le code C# pour demander des accusés de lecture pour nos e-mails.
-
-### Chargement du message électronique
-
-Tout d’abord, nous devons charger le message électronique que nous souhaitons envoyer avec une demande de confirmation de lecture.
+ La première étape de la mise en œuvre des accusés de lecture des e-mails consiste à créer une instance du`MailMessage` classe. Cette classe représente un e-mail et vous permet de définir diverses propriétés de l'e-mail.
 
 ```csharp
-using Aspose.Email;
-using Aspose.Email.Mime;
-
-// Charger le message électronique
 MailMessage message = new MailMessage();
-message.Subject = "Your Subject";
-message.Body = "Your Email Content";
-message.From = "your@email.com";
-message.To = "recipient@email.com";
 ```
 
-### Ajout d'une demande de confirmation de lecture
+## Étape 2 : Spécification des détails du message
 
-Ensuite, nous ajouterons une demande de confirmation de lecture au message électronique.
+Maintenant, spécifions les détails du message électronique, y compris les options de l'expéditeur, du destinataire, du corps HTML et de la notification de livraison.
 
 ```csharp
-// Ajouter une demande de confirmation de lecture
-ReadReceiptRequest readReceiptRequest = new ReadReceiptRequest();
-message.AddCustomHeader(readReceiptRequest.HeaderName, readReceiptRequest.HeaderValue);
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-### Envoi de l'e-mail
+## Étape 3 : Création d'une instance SmtpClient
 
-Maintenant que la demande de confirmation de lecture est ajoutée, envoyons l'e-mail.
+ Pour envoyer l'e-mail, nous devons créer une instance du`SmtpClient` classe, qui est responsable de l’envoi du message.
 
 ```csharp
-using SmtpClient client = new SmtpClient("smtp.server.com", "username", "password");
-client.Send(message);
+SmtpClient client = new SmtpClient();
 ```
 
-## Gestion des confirmations de lecture
+## Étape 4 : configuration des paramètres SMTP
 
-Lorsqu'un destinataire ouvre l'e-mail et accepte la demande de confirmation de lecture, vous recevez une notification de confirmation de lecture. Cependant, la gestion des confirmations de lecture peut être un peu délicate car tous les clients de messagerie ne les prennent pas en charge. Il est conseillé d'utiliser une adresse e-mail dédiée pour collecter les accusés de lecture et les traiter en conséquence.
+Configurez les paramètres de votre serveur SMTP en spécifiant le serveur hôte, le nom d'utilisateur, le mot de passe et le numéro de port.
 
-## Meilleures pratiques d'utilisation des accusés de lecture des e-mails
+```csharp
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+```
 
-- Utilisez les accusés de lecture avec parcimonie et uniquement pour les e-mails critiques.
-- Respectez la vie privée et les préférences du destinataire. Certaines personnes pourraient trouver les confirmations de lecture intrusives.
-- Soyez prêt aux cas où les confirmations de lecture pourraient ne pas être générées en raison des limitations du client de messagerie.
+## Étape 5 : Envoi de l'e-mail
 
+ Enfin, utilisez le`client.Send` méthode pour envoyer le message électronique. Si le message est envoyé avec succès, une notification « Message envoyé » s'affichera.
+
+```csharp
+try
+{
+    client.Send(message);
+    Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+    System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
+
+Avec ces cinq étapes simples, vous pouvez demander des accusés de lecture lors de l'envoi d'e-mails à l'aide de C# et Aspose.Email pour .NET. Cette fonctionnalité ajoute une couche d'assurance à vos communications par courrier électronique, garantissant que vous savez quand vos messages importants sont lus.
+
+## Code source complet
+```csharp
+// Créer une instance de classe MailMessage
+MailMessage message = new MailMessage();
+
+// Spécifiez le champ De, À, HtmlBody, DeliveryNotificationOptions
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+
+// Créer une instance de la classe SmtpClient
+SmtpClient client = new SmtpClient();
+
+// Spécifiez votre serveur hôte de messagerie, votre nom d'utilisateur, votre mot de passe et votre numéro de port.
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+
+try
+{
+	// Client.Send enverra ce message
+	client.Send(message);
+	// Afficher 'Message envoyé', uniquement si le message a été envoyé avec succès
+	Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+	System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
 ## Conclusion
 
-Dans cet article, nous avons expliqué comment demander des accusés de lecture par courrier électronique à l'aide du code C# à l'aide de la bibliothèque Aspose.Email pour .NET. Cette fonctionnalité peut être utile pour suivre l'engagement de vos destinataires de courrier électronique dans divers scénarios, notamment dans les communications professionnelles.
+Dans ce didacticiel, nous avons expliqué comment demander des accusés de lecture par courrier électronique à l'aide de C# avec Aspose.Email pour .NET. Le suivi des e-mails est un outil puissant pour garantir que vos messages sont livrés et lus par les destinataires prévus, en particulier dans le cadre professionnel. En suivant les étapes décrites ici, vous pouvez facilement implémenter cette fonctionnalité dans votre application de messagerie.
 
-## FAQ
+## Foire aux questions (FAQ)
 
-### Comment puis-je suivre les confirmations de lecture en C# ?
+1. ### À quoi servent les accusés de lecture par courrier électronique ?
+   Les accusés de lecture d'e-mails confirment qu'un e-mail a été ouvert et lu par le destinataire. Ils sont souvent utilisés pour suivre des messages importants ou urgents.
 
-Pour suivre les confirmations de lecture en C#, vous pouvez utiliser la bibliothèque Aspose.Email pour .NET pour ajouter des demandes de confirmation de lecture à vos e-mails. Sachez que le traitement des accusés de lecture peut varier en fonction du client de messagerie du destinataire.
+2. ### Les confirmations de lecture des e-mails peuvent-elles être désactivées par le destinataire ?
+   Oui, les clients de messagerie permettent souvent aux utilisateurs de désactiver l'envoi de confirmations de lecture. Il n’est donc pas garanti que vous les recevrez toujours.
 
-### Les accusés de lecture sont-ils fiables ?
+3. ### Les confirmations de lecture des e-mails sont-elles une fonctionnalité standard dans tous les clients de messagerie ?
+   Non, les confirmations de lecture des e-mails ne sont pas universellement prises en charge. Leur fonctionnement ou non dépend du client de messagerie et des paramètres du destinataire.
 
-Les accusés de lecture ne sont pas toujours fiables, car leur génération dépend du client de messagerie et des paramètres du destinataire. Certains clients de messagerie peuvent ne pas prendre en charge les accusés de lecture, ce qui entraîne un suivi incohérent.
+4. ### Est-il possible de savoir quand un e-mail est ouvert sur un appareil mobile ?
+   Le suivi des e-mails est généralement basé sur le client de messagerie et les paramètres du destinataire. Il peut donc fonctionner ou non sur les appareils mobiles, en fonction de divers facteurs.
 
-### Puis-je envoyer des demandes de confirmation de lecture pour n’importe quel type d’e-mail ?
-
-Oui, vous pouvez envoyer des demandes de confirmation de lecture pour la plupart des types de messages électroniques, y compris les e-mails en texte brut et HTML. Cependant, le client de messagerie du destinataire doit prendre en charge le traitement des accusés de lecture pour que cela fonctionne efficacement.
-
-### Est-il possible de suivre les réponses de plusieurs destinataires avec des accusés de lecture ?
-
-Oui, vous pouvez demander des accusés de lecture pour chaque destinataire séparément en ajoutant les en-têtes appropriés au message électronique. De cette façon, vous pouvez suivre les interactions des destinataires individuels avec l'e-mail.
-
-### Comment gérer les cas où les confirmations de lecture ne sont pas générées ?
-
-Il est essentiel de se préparer aux scénarios dans lesquels les confirmations de lecture ne sont pas générées. Cela peut se produire en raison des préférences du destinataire, des limitations du client de messagerie ou d'autres facteurs. Ayez toujours des méthodes alternatives pour suivre l’engagement par courrier électronique.
+5. ### Existe-t-il des considérations en matière de confidentialité lors de l'utilisation des accusés de lecture par courrier électronique ?
+   Oui, il existe des problèmes de confidentialité liés au suivi des e-mails. Certains destinataires peuvent le considérer comme invasif, il est donc essentiel d'utiliser cette fonctionnalité de manière responsable et de respecter les préférences en matière de confidentialité.

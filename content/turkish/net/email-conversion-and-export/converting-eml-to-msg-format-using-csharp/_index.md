@@ -10,7 +10,7 @@ url: /tr/net/email-conversion-and-export/converting-eml-to-msg-format-using-csha
 
 ## giriiş
 
-E-posta iletişiminin çok önemli bir rol oynadığı günümüzün dijital dünyasında, farklı e-posta formatlarını verimli bir şekilde yönetme yeteneği hayati önem taşıyor. EML ve MSG, e-posta mesajlarını depolamak için kullanılan iki yaygın formattır. EML, bireysel e-postaları dışa aktarmak ve arşivlemek için yaygın olarak kullanılırken, MSG, e-postaları ekleriyle birlikte depolamak için daha uygundur. Bu adım adım kılavuz, C# ve e-postayla ilgili görevlerin yerine getirilmesine yönelik güçlü bir kütüphane olan Aspose.Email for .NET'i kullanarak EML dosyalarını MSG formatına dönüştürme sürecinde size yol gösterecektir.
+E-posta iletişiminin çok önemli bir rol oynadığı günümüzün dijital dünyasında, farklı e-posta formatlarını verimli bir şekilde yönetme yeteneği hayati önem taşıyor. EML ve MSG, e-posta mesajlarını depolamak için kullanılan iki yaygın formattır. EML, bireysel e-postaları dışa aktarmak ve arşivlemek için yaygın olarak kullanılırken, MSG, e-postaları ekleriyle birlikte depolamak için daha uygundur. Bu adım adım kılavuz, C#'ı ve e-postayla ilgili görevleri yerine getirmeye yönelik güçlü bir kütüphane olan Aspose.Email for .NET'i kullanarak EML dosyalarını MSG formatına dönüştürme sürecinde size yol gösterecektir.
 
 ## Önkoşullar
 

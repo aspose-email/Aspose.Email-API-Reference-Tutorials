@@ -36,13 +36,15 @@ Pour sauvegarder les pièces jointes TNEF, nous devons d’abord les charger et 
 1.  Charger le fichier TNEF : chargez le fichier TNEF à l'aide du`MapiMessage` classe:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Extraire les pièces jointes : parcourez les pièces jointes et extrayez-les :
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Extraire les données des pièces jointes
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ Une fois les pièces jointes extraites, vous pouvez mettre en œuvre vos mesures
 Après avoir appliqué vos mesures de sauvegarde, vous pouvez sauvegarder les pièces jointes en toute sécurité :
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Logique de sauvegarde
     // ...
-    // Enregistrez la pièce jointe
+    //Enregistrez la pièce jointe
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Oui, Aspose.Email prend en charge divers protocoles de messagerie tels que SMTP,
 
 ### À quelle fréquence les mises à jour sont-elles publiées pour Aspose.Email ?
 
- Aspose publie fréquemment des mises à jour et des améliorations de ses bibliothèques. Il est recommandé de vérifier Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou[Aspose.Email pour la référence de l'API .Net](https://reference.aspose.com/email/net) pour les dernières mises à jour et fonctionnalités.
+Aspose publie fréquemment des mises à jour et des améliorations de ses bibliothèques. Il est recommandé de vérifier Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou[Aspose.Email pour la référence de l'API .Net](https://reference.aspose.com/email/net) pour les dernières mises à jour et fonctionnalités.
 
 ### Puis-je utiliser Aspose.Email dans des projets commerciaux ?
 

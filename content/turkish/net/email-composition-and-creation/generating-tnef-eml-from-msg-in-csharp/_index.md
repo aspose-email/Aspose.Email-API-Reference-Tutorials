@@ -89,7 +89,7 @@ Bu kılavuzda Aspose.Email for .NET kitaplığını kullanarak MSG dosyalarında
 
 ### Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
 
- Aspose.Email for .NET kütüphanesini Aspose Sürümlerinden edinebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net).
+Aspose.Email for .NET kütüphanesini Aspose Sürümlerinden edinebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net).
 
 ### Aspose.Email'i MSG dışındaki formatlar için kullanabilir miyim?
 

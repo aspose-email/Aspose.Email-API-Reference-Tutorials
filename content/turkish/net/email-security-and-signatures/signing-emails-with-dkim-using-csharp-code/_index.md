@@ -8,124 +8,118 @@ weight: 11
 url: /tr/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
 
-Günümüzün dijital dünyasında, e-postaların orijinalliğini ve güvenliğini sağlamak, güveni korumak ve kötü niyetli etkinlikleri önlemek açısından çok önemlidir. Bunu başarmanın etkili yöntemlerinden biri DKIM (DomainKeys Identified Mail) imzalarını kullanmaktır. Bu kılavuzda, Aspose.Email for .NET'in gücünden yararlanarak C# kodunu kullanarak DKIM ile e-posta imzalama sürecinde size yol göstereceğiz.
+Günümüzün dijital dünyasında, e-posta iletişimlerinin orijinalliğini ve bütünlüğünü sağlamak büyük önem taşıyor. Bunu başarmanın bir yolu Etki Alanı Anahtarları Tanımlanmış Posta (DKIM) imzalarını kullanmaktır. Bu adım adım kılavuzda, C# ve güçlü Aspose.Email for .NET kitaplığını kullanarak DKIM ile e-postaların nasıl imzalanacağını keşfedeceğiz.
 
-## giriiş
+## DKIM'e giriş
 
-DomainKeys Identified Mail'in kısaltması olan DKIM, gönderenin e-postalarını dijital olarak imzalamasına olanak tanıyan, ekstra bir güvenlik katmanı sağlayan ve mesajın bütünlüğünü sağlayan bir e-posta kimlik doğrulama tekniğidir. Alıcılar, DKIM imzalarını uygulayarak, e-postanın gerçekten talep edilen alan adı tarafından gönderildiğini ve aktarım sırasında değiştirilmediğini doğrulayabilir.
+### DKIM nedir?
+DKIM, DomainKeys Tanımlı Posta anlamına gelir. Gönderenin bir e-postayı dijital olarak imzalamasına olanak tanıyan ve e-postanın gerçekliğini doğrulayan kriptografik bir imza sağlayan bir e-posta kimlik doğrulama yöntemidir.
+
+### DKIM Neden Önemlidir?
+DKIM, gelen e-postaların yasal kaynaklardan gelmesini ve aktarım sırasında kurcalanmamasını sağlayarak e-posta sahtekarlığı ve kimlik avı saldırılarının önlenmesine yardımcı olur.
 
 ## Önkoşullar
 
-Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Sisteminizde Visual Studio yüklü
-- C# programlamaya ilişkin temel bilgiler
--  Aspose.Email for .NET kütüphanesi (şu adresten indirebilirsiniz)[Burada](https://releases.aspose.com/email/net))
+1.  Aspose.Email for .NET: Projenizde Aspose.Email for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net/).
 
-## Projenin Kurulumu
+2. DKIM Özel Anahtarı: E-postalarınızı imzalamak için bir DKIM özel anahtarına ihtiyacınız olacaktır. Hazır olduğundan emin olun. 
 
-1. Visual Studio'da yeni bir C# projesi oluşturun.
-2. Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyin:
-   ```
-   Install-Package Aspose.Email
-   ```
-
-## DKIM Anahtarları Oluşturma
-
-DKIM imzaları bir genel-özel anahtar çifti gerektirir. Bu anahtarları çeşitli araçları veya kitaplıkları kullanarak oluşturabilirsiniz, ancak bu kılavuzun amacı doğrultusunda aşağıdaki C# kod parçacığını kullanalım:
+## 1. Adım: DKIM Parametrelerini Başlatın
 
 ```csharp
-// Gerekli kullanım ifadelerini ekleyin
-using Aspose.Email.Tools.DKIM;
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
 
-// DKIM anahtar çifti oluştur
-var keyPair = DkimKeyPair.Generate();
-string privateKey = keyPair.PrivateKey;
-string publicKey = keyPair.PublicKey;
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 ```
 
-## E-posta Mesajı Oluşturma
+Bu adımda DKIM parametrelerini başlatıyoruz. Özel anahtarı dosyadan yüklüyoruz, seçiciyi ve etki alanını belirliyoruz ve DKIM imzasında bulunması gereken başlıkları listeliyoruz.
 
-E-postayı imzalamadan önce örnek bir e-posta mesajı oluşturalım:
+## 2. Adım: E-postayı Oluşturun ve Hazırlayın
 
 ```csharp
-// Yeni bir e-posta mesajı oluştur
-var message = new MailMessage
-{
-    From = "sender@example.com",
-    To = "recipient@example.com",
-    Subject = "Sample Email with DKIM Signature",
-    Body = "This is the content of the email."
-};
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-## DKIM İmzası Ekleme
+Burada bir örneğini oluşturuyoruz.`MailMessage` sınıfını seçin ve e-postanın göndericisini, alıcısını, konusunu ve metnini ayarlayın.
 
-Şimdi daha önce oluşturulan anahtarları kullanarak DKIM imzasını e-postaya ekleyelim:
+## 3. Adım: E-postayı İmzalayın
 
 ```csharp
-// Yeni bir DKIM imzası oluşturun
-var dkimSignature = new DkimSignature("example.com")
-{
-    PrivateKey = privateKey,
-    Selector = "default"
-};
-
-//E-postaya DKIM imzası ekleyin
-message.AddDkimSignature(dkimSignature);
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-## E-postayı Gönderme
+Şimdi e-postayı daha önce başlattığımız DKIM parametrelerini ve özel anahtarı kullanarak imzalıyoruz.
 
-DKIM imzası eklendiğinde artık e-postayı bir SMTP istemcisi kullanarak gönderebilirsiniz:
+## 4. Adım: İmzalı E-postayı Gönderin
 
 ```csharp
-// SmtpClient'in bir örneğini oluşturun
-using (SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password"))
+try
 {
-    // E-postayı gönder
-    client.Send(message);
+    SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+    client.Send(signedMsg);                
+}
+finally
+{
+    // Varsa temizleme kodu
 }
 ```
+ Bu adımda imzalı e-postayı bir SMTP istemcisi kullanarak gönderiyoruz. Değiştirdiğinizden emin olun`"your.email@gmail.com"` Ve`"your.password"` Gmail kimlik bilgilerinizle.
 
-## DKIM İmzasının Doğrulanması
+## Kaynak Kodunu Tamamlayın
+```csharp
 
-Alıcı posta sunucuları, e-postanın orijinalliğinden emin olmak için DKIM imzasını doğrulayabilir. Başarılı doğrulama, e-postanın değiştirilmediğini ve gerçekten talep edilen alan adından gönderildiğini doğrular.
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP()+ "key2.pem");
 
-## Hataları ve İstisnaları Ele Alma
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 
-DKIM imzalama işlemi sırasında oluşabilecek hataların veya istisnaların ele alınması önemlidir. Bu, uygulamanız için sorunsuz ve güvenilir bir e-posta imzalama deneyimi sağlar.
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 
-## DKIM için En İyi Uygulamalar
-
-- Özel anahtarınızı güvenli ve iyi korunan bir yerde tutun.
-- Gelişmiş güvenlik için DKIM anahtarlarınızı düzenli olarak değiştirin.
-- E-posta servis sağlayıcınız tarafından sağlanan DKIM imzalama yönergelerini izleyin.
+try
+{
+	SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+	client.Send(signedMsg);                
+}
+finally
+{}
+```
 
 ## Çözüm
 
-E-posta iletişiminizde DKIM imzalarını uygulamak, güçlü bir güvenlik ve güven katmanı ekler. Bu adım adım kılavuzu takip ederek, C# kodunu ve Aspose.Email for .NET kullanarak DKIM ile e-postaları nasıl imzalayacağınızı öğrendiniz.
+E-postaları DKIM ile imzalamak, e-posta iletişimlerinizin güvenliğini ve orijinalliğini sağlamada çok önemli bir adımdır. Aspose.Email for .NET ve C#'ın yardımıyla DKIM imzalarını e-posta gönderme sürecinize kolayca uygulayabilirsiniz.
 
-## SSS
+---
 
-### DKIM e-posta sahteciliğini önlemeye nasıl yardımcı olur?
+## Sıkça Sorulan Sorular
 
-DKIM, gönderenin e-postalarını dijital olarak imzalamasına olanak tanıyarak kötü niyetli kişilerin gönderenin alan adını taklit etmesini ve sahte e-postalar göndermesini zorlaştırır.
+### S1: DKIM nedir ve e-posta güvenliği açısından neden önemlidir?
 
-### Aynı DKIM anahtarlarını birden fazla alan adı için kullanabilir miyim?
+DKIM, DomainKeys Tanımlanmış Posta anlamına gelir ve e-posta güvenliği açısından önemlidir, çünkü e-posta mesajlarının orijinalliğini doğrulayarak sahtecilik ve kimlik avını önler.
 
-Hayır, DKIM anahtarları alana özeldir. İmzalı e-posta göndermek istediğiniz her alan adı için benzersiz bir anahtar çifti oluşturmanız gerekecektir.
+### S2: DKIM özel anahtarını nasıl edinebilirim?
 
-### E-posta kimlik doğrulaması için tek yöntem DKIM midir?
+DKIM özel anahtarını e-posta servis sağlayıcınız aracılığıyla veya şifreleme araçlarını kullanarak bir tane oluşturarak alabilirsiniz.
 
-Hayır, e-posta güvenliğini artırmak için DKIM ile birlikte çalışan SPF (Gönderen Politikası Çerçevesi) ve DMARC (Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk) gibi başka yöntemler de vardır.
+### S3: Aspose.Email for .NET'i Gmail'in yanı sıra diğer e-posta sağlayıcılarıyla da kullanabilir miyim?
 
-### DKIM imza doğrulaması başarısız olursa ne olur?
+Evet, Aspose.Email for .NET, Gmail ile sınırlı olmamak üzere çeşitli e-posta sağlayıcılarıyla kullanılabilir.
 
-DKIM imza doğrulaması başarısız olursa, alıcının posta sunucusu e-postayı şüpheli olarak değerlendirebilir veya tamamen reddedebilir.
+### S4: DKIM imzasına hangi başlıkları eklemeliyim?
 
-### DKIM'yi C# dışındaki dillerde uygulayabilir miyim?
+DKIM imzasına dahil edilecek genel başlıklar "Kimden", "Konu" ve e-posta kimlik doğrulaması için önemli olan diğer başlıklardır.
 
-Evet, DKIM çeşitli programlama dillerinde uygulanabilir. Bu kılavuz, .NET için Aspose.Email kütüphanesini kullanan C#'a odaklandı.
+### S5: E-posta kimlik doğrulaması için tek yöntem DKIM midir?
 
-Artık C# kodunu kullanarak DKIM ile e-posta imzalama sanatında ustalaştığınıza göre, e-posta iletişimlerinizin güvenliğini artırabilir ve alıcılarınızın yasal mesajları güvenle almasını sağlayabilirsiniz.
+Hayır, gelişmiş e-posta güvenliği için DKIM ile birlikte kullanılan SPF ve DMARC gibi başka yöntemler de vardır.

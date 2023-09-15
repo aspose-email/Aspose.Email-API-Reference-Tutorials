@@ -22,7 +22,6 @@ Die E-Mail-Signatur-Tutorials konzentrieren sich darauf, Entwicklern die Erstell
 
 
 ## Tutorials zu E-Mail-Sicherheit und Signaturen
-## [Umgang mit eingebetteten Objekten in E-Mails mit C#-Code](./handling-embedded-objects-in-emails-with-csharp-code/)
-Erfahren Sie, wie Sie mit C# und Aspose.Email für .NET mit eingebetteten Objekten in E-Mails umgehen. Erstellen Sie interaktive und ansprechende E-Mail-Inhalte mit Schritt-für-Schritt-Anleitungen und Codebeispielen.
-## [Signieren von E-Mails mit DKIM unter Verwendung von C#-Code](./signing-emails-with-dkim-using-csharp-code/)
+
+### [Signieren von E-Mails mit DKIM unter Verwendung von C#-Code](./signing-emails-with-dkim-using-csharp-code/)
 Erfahren Sie, wie Sie E-Mails mit DKIM mit C# und Aspose.Email für .NET sichern. Schritt-für-Schritt-Anleitung mit Quellcode. Verbessern Sie das Vertrauen und die Authentizität Ihrer E-Mails.

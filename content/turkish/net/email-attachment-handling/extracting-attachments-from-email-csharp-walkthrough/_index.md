@@ -70,7 +70,7 @@ foreach (Attachment attachment in message.Attachments)
     {
         // İşlem resmi eki
     }
-    //Diğer ek türlerini de benzer şekilde kullanın
+    // Diğer ek türlerini de benzer şekilde kullanın
 }
 ```
 

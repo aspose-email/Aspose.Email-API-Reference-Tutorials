@@ -18,13 +18,13 @@ Les en-têtes d'e-mails sont des métadonnées qui contiennent des détails esse
 
 Les en-têtes d’e-mails remplissent plusieurs objectifs cruciaux :
 #### Routage : 
-	Headers determine the path an email takes from sender to recipient.
+Les en-têtes déterminent le chemin emprunté par un e-mail de l’expéditeur au destinataire.
 #### Authentification
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Les en-têtes comme DKIM et SPF aident à vérifier l'authenticité des e-mails.
 #### Ligne d'objet : 
-	The subject header gives recipients an idea of the email's content.
+L'en-tête du sujet donne aux destinataires une idée du contenu de l'e-mail.
 #### Gestion des réponses : 
-	Headers like Reply-To ensure proper handling of replies.
+Les en-têtes comme Reply-To garantissent un traitement correct des réponses.
 
 ## 3. Installation d'Aspose.Email pour .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Certains en-têtes sont couramment utilisés dans les messages électroniques :
 
 #### Sujet: 
-	Set the email subject using the `message.Subject` property.
+ Définissez l'objet de l'e-mail à l'aide du`message.Subject` propriété.
 #### Depuis: 
-	Specify the sender's address using the `message.From` property.
+ Précisez l'adresse de l'expéditeur à l'aide du`message.From` propriété.
 #### À: 
-	Define the recipient's address using the `message.To` property.
+ Définissez l'adresse du destinataire à l'aide du`message.To` propriété.
 
 ## 6. Personnalisation des en-têtes supplémentaires
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Gestion des en-têtes MIME-Version et Content-Type
 
- Le`MIME-Version`l'en-tête garantit une bonne compatibilité MIME, tandis que l'en-tête`Content-Type` l'en-tête spécifie le type de contenu dans le corps de l'e-mail.
+ Le`MIME-Version` l'en-tête garantit une bonne compatibilité MIME, tandis que l'en-tête`Content-Type` l'en-tête spécifie le type de contenu dans le corps de l'e-mail.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

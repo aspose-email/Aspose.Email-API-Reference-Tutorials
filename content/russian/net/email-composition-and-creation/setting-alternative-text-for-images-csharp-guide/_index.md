@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Создайте экземпляр`MhtmlMessageFormatter`класс для форматирования сообщения:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. Загрузите HTML-содержимое сообщения электронной почты:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Шаг 5. Добавьте альтернативный текст к изображениям
+## Шаг 5. Добавьте AlternativeView для альтернативного текста к изображениям
 
-1.  Найдите`AlternateView` содержащий тело HTML и изображения:
-
+Добавьте htmlview для альтернативного текста к изображению как AlternateView в сообщение. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Найдите`LinkedResource` представляющий изображение:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Установите альтернативный текст для изображения:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Шаг 6. Сохраните и отправьте электронное письмо.
@@ -97,7 +77,7 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ### Как добавить изображения в качестве связанных ресурсов в электронное письмо?
 
- Чтобы добавить изображения в качестве связанных ресурсов в электронное письмо, вы можете использовать`LinkedResource`сорт. Назначьте идентификатор контента связанному ресурсу, а затем укажите этот идентификатор контента в теле HTML, используя метод`cid:` схема. Подробную информацию см.[Документация LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Чтобы добавить изображения в качестве связанных ресурсов в электронное письмо, вы можете использовать`LinkedResource` сорт. Назначьте идентификатор контента связанному ресурсу, а затем укажите этот идентификатор контента в теле HTML, используя метод`cid:` схема. Подробную информацию см.[Документация LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Где я могу найти дополнительную документацию по Aspose.Email для .NET?
 
  Более подробную документацию, учебные пособия и примеры по работе с Aspose.Email для .NET вы можете найти в разделе[Справочник по API](https://reference.aspose.com/email/net/).

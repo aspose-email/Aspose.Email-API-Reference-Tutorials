@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### Verificación del cifrado de mensajes
-
-También puedes verificar si un mensaje está firmado y cifrado digitalmente:
-
-```csharp
-using Aspose.Email.Security;
-// Otras declaraciones de uso relevantes
-
-// Cargar un mensaje de correo electrónico
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// Verificar si el mensaje está firmado y cifrado
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Comprobar cifrado
-if (isSigned && isEncrypted)
-{
-    // El mensaje está firmado y cifrado.
-}
-```
-
 ## Descifrar mensajes cifrados
 
 Para descifrar un mensaje cifrado se necesitan las claves y los certificados adecuados. Así es como puedes hacerlo usando Aspose.Email:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Proporcione la clave de descifrado y el certificado.
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Descifrar el mensaje
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## Manejo de excepciones

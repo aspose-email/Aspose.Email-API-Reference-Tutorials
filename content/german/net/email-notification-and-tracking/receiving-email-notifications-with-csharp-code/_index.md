@@ -8,93 +8,83 @@ weight: 10
 url: /de/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
 
-Dieses Handbuch bietet eine umfassende Schritt-für-Schritt-Anleitung zum Empfangen von E-Mail-Benachrichtigungen mithilfe von C#-Code und der Aspose.Email für .NET-Bibliothek. Aspose.Email ist eine robuste Bibliothek, die verschiedene E-Mail-bezogene Vorgänge in .NET-Anwendungen erleichtern soll. In diesem Tutorial konzentrieren wir uns auf den Prozess des Empfangens von E-Mail-Benachrichtigungen.
 
-## Voraussetzungen
+Im digitalen Zeitalter ist Kommunikation unerlässlich und E-Mail bleibt eines der beliebtesten Mittel zum Informationsaustausch. Als Entwickler müssen Sie möglicherweise E-Mail-Benachrichtigungen in Ihren Anwendungen senden und empfangen. In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie mit C# und Aspose.Email für .NET E-Mail-Benachrichtigungen empfangen.
 
-Bevor Sie beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+## Einführung
 
-- Eine Entwicklungsumgebung mit C#-Unterstützung (z. B. Visual Studio).
--  Die Aspose.Email für .NET-Bibliothek. Sie können es herunterladen unter[dieser Link](https://releases.aspose.com/email/net).
-- Grundlegende Kenntnisse der C#-Programmierung und grundlegender E-Mail-Konzepte.
+E-Mail-Benachrichtigungen sind von entscheidender Bedeutung, um Benutzer über wichtige Ereignisse oder Aktualisierungen in Ihrer Anwendung auf dem Laufenden zu halten. Aspose.Email für .NET bietet eine leistungsstarke und benutzerfreundliche Lösung für die Bearbeitung von E-Mail-bezogenen Aufgaben in Ihren C#-Anwendungen. In diesem Tutorial konzentrieren wir uns auf den Empfang von E-Mail-Benachrichtigungen.
 
-## Schritt 1: Projekteinrichtung
+## Aspose.Email einrichten
 
-1. Erstellen Sie ein neues C#-Projekt in Ihrer Entwicklungsumgebung.
-2. Fügen Sie einen Verweis auf die Aspose.Email.dll-Bibliothek hinzu. Sie können dies tun, indem Sie entweder die DLL in das bin-Verzeichnis Ihres Projekts kopieren oder den NuGet Package Manager verwenden, um das Aspose.Email-Paket zu installieren.
+Bevor wir uns mit dem Code befassen, müssen Sie Aspose.Email für .NET in Ihrem Projekt einrichten. So können Sie es machen:
 
-## Schritt 2: Schreiben des Codes
+1. Installieren Sie Aspose.Email: Beginnen Sie mit der Installation der Aspose.Email für .NET-Bibliothek in Ihrem Projekt. Sie können dies über den NuGet Package Manager tun.
 
-In diesem Schritt schreiben wir den C#-Code, der erforderlich ist, um eine Verbindung zu einem E-Mail-Server herzustellen und E-Mail-Benachrichtigungen abzurufen.
+2.  Aspose.Email-Namespace importieren: Stellen Sie sicher, dass Sie in Ihrem C#-Code den erforderlichen Namespace einschließen:`using Aspose.Email;`.
+
+## Erstellen der E-Mail-Nachricht
+
+Nachdem wir Aspose.Email nun eingerichtet haben, erstellen wir eine E-Mail-Nachricht. In diesem Beispiel erstellen wir eine einfache E-Mail-Nachricht mit Absender, Empfänger, Betreff und Text.
 
 ```csharp
-using System;
-using Aspose.Email.Client;
-using Aspose.Email.Imap;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Konfigurieren Sie die E-Mail-Servereinstellungen
-        string host = "your-email-server.com";
-        int port = 993; // IMAP-Port
-        string username = "your-username";
-        string password = "your-password";
-
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            // Stellen Sie eine Verbindung zum E-Mail-Server her und wählen Sie den Posteingangsordner aus
-            client.Connect();
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            // Definieren Sie die Suchkriterien
-            ImapQueryBuilder builder = new ImapQueryBuilder();
-            builder.Subject.Contains("notification"); // Passen Sie die Suchkriterien an
-
-            // Suchen Sie nach E-Mail-Benachrichtigungen
-            ImapMessageInfoCollection messages = client.ListMessages(builder.GetQuery());
-            
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                Console.WriteLine("Subject: " + messageInfo.Subject);
-                Console.WriteLine("Date: " + messageInfo.Date);
-                // Sie können hier auf andere E-Mail-Eigenschaften zugreifen
-            }
-
-            // Trennen Sie die Verbindung zum E-Mail-Server
-            client.Disconnect();
-        }
-    }
-}
+// Erstellen Sie die Nachricht
+MailMessage msg = new MailMessage();
+msg.From = "sender@sender.com";
+msg.To = "receiver@receiver.com";
+msg.Subject = "the subject of the message";
 ```
 
-Denken Sie daran, die Platzhalterwerte zu ersetzen (`your-email-server.com`, `your-username`, `your-password`) mit Ihren tatsächlichen E-Mail-Serverdetails.
+## Benachrichtigungen konfigurieren
 
-## Schritt 3: Suchkriterien anpassen
+Um sicherzustellen, dass Sie Benachrichtigungen über den Zustellungsstatus Ihrer E-Mail erhalten, können Sie Zustellungsbenachrichtigungsoptionen konfigurieren. Sie können angeben, ob Sie bei Erfolg, Misserfolg oder beidem benachrichtigt werden möchten.
 
-Der bereitgestellte Code verwendet ein einfaches Suchkriterium, um E-Mail-Benachrichtigungen zu finden, deren Betreff den Begriff „Benachrichtigung“ enthält. Sie können die Suchkriterien anpassen, indem Sie Eigenschaften ändern, z`From`, `To` , Und`Date`.
+```csharp
+// Legen Sie Zustellungsbenachrichtigungen für erfolgreiche und fehlgeschlagene Nachrichten fest
+msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
+```
 
-## Schritt 4: Ausführen des Codes
+## Hinzufügen von MIME-Headern
 
-Erstellen Sie Ihr C#-Projekt und führen Sie es aus. Bei korrekter Konfiguration stellt der Code eine Verbindung mit dem E-Mail-Server her, sucht nach E-Mail-Benachrichtigungen und zeigt deren Betreff und Datum in der Konsole an.
+MIME-Header liefern zusätzliche Informationen über die E-Mail-Nachricht. Sie können nach Bedarf benutzerdefinierte MIME-Header hinzufügen.
 
-## Häufig gestellte Fragen
+```csharp
+// Fügen Sie die MIME-Header hinzu
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+```
 
-### Wie gehe ich mit E-Mail-Anhängen um?
+## Senden der E-Mail
 
- Um E-Mail-Anhänge zu verwalten, verwenden Sie die`Attachments` Eigentum der`ImapMessageInfo` Objekt. Gehen Sie die Anhänge durch und speichern Sie sie an einem gewünschten Ort. Ausführliche Anleitungen finden Sie im[Aspose.Email API-Referenz](https://reference.aspose.com/email/net/).
+Sobald Sie Ihre E-Mail-Nachricht konfiguriert haben, ist es an der Zeit, sie zu versenden. Aspose.Email bietet eine bequeme Möglichkeit, E-Mails über den SMTP-Client zu versenden.
 
-## Kann ich Benachrichtigungen nach einem Datumsbereich filtern?
-
- Sicherlich. Sie können Benachrichtigungen nach einem bestimmten Datumsbereich filtern. Passen Sie die Suchkriterien an, indem Sie die verwenden`Date` Eigentum in der`ImapQueryBuilder` . Siehe die[Dokumentation](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapquerybuilder/) für ausführliche Beispiele.
-
-## Wie kann ich Benachrichtigungen nach der Bearbeitung als gelesen markieren?
-
-Verwenden Sie nach der Verarbeitung jeder Nachricht die`MarkMessageRead` Methode der`ImapClient` um Nachrichten als gelesen zu markieren. Konsultieren Sie die[Dokumentation](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapclient/) für detaillierte Informationen.
-
- Informationen zu erweiterten Funktionen und Optionen finden Sie im[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net).
+```csharp
+// Senden Sie die Nachricht
+SmtpClient client = new SmtpClient("host", "username", "password");
+client.Send(msg);
+```
 
 ## Abschluss
 
-In diesem Tutorial haben wir den Prozess des Empfangens von E-Mail-Benachrichtigungen mithilfe von C#-Code und der Aspose.Email für .NET-Bibliothek untersucht. Aspose.Email erwies sich als leistungsstarkes Tool, das die Arbeit mit E-Mail-bezogenen Vorgängen in .NET-Anwendungen vereinfacht.
+In diesem Tutorial haben wir untersucht, wie Sie mit C# und Aspose.Email für .NET E-Mail-Benachrichtigungen empfangen. Wir haben das Einrichten von Aspose.Email, das Erstellen einer E-Mail-Nachricht, das Konfigurieren von Benachrichtigungen, das Hinzufügen von MIME-Headern und das Versenden der E-Mail behandelt.
+
+Wenn Sie diese Schritte befolgen, können Sie E-Mail-Benachrichtigungen nahtlos in Ihre C#-Anwendungen integrieren, die Benutzerkommunikation verbessern und sie auf dem Laufenden halten.
+
+## FAQs
+
+### 1. Kann ich Aspose.Email für .NET in meinem .NET Core-Projekt verwenden?
+   Ja, Aspose.Email für .NET ist sowohl mit .NET Framework als auch mit .NET Core kompatibel.
+
+### 2. Wie kann ich mit E-Mail-Anhängen in meinen Benachrichtigungen umgehen?
+    Du kannst den ... benutzen`Attachment` Von Aspose.Email bereitgestellte Klasse zur einfachen Handhabung von E-Mail-Anhängen.
+
+### 3. Ist Aspose.Email für .NET eine kostenpflichtige Bibliothek?
+   Aspose.Email bietet sowohl eine kostenlose Testversion als auch eine kostenpflichtige Version. Die kostenpflichtige Version bietet zusätzliche Funktionen und Support.
+
+### 4. Kann ich die E-Mail-Benachrichtigungsvorlagen anpassen?
+   Ja, Sie können benutzerdefinierte E-Mail-Vorlagen erstellen und Aspose.Email verwenden, um diese mit dynamischen Inhalten zu füllen.
+
+### 5. Gibt es Einschränkungen hinsichtlich der Anzahl der E-Mails, die ich mit Aspose.Email senden/empfangen kann?
+   Aspose.Email legt keine strengen Beschränkungen für die Anzahl der E-Mails fest, die Sie senden oder empfangen können, unterliegt jedoch möglicherweise den Einschränkungen Ihres E-Mail-Servers.
+
+Damit ist unser Tutorial zum Empfang von E-Mail-Benachrichtigungen mit C# unter Verwendung von Aspose.Email für .NET abgeschlossen. Wir hoffen, dass Ihnen dieser Leitfaden bei der Implementierung von E-Mail-Benachrichtigungen in Ihren Anwendungen hilfreich war. 

@@ -10,7 +10,7 @@ url: /sv/net/email-attachment-handling/differentiating-inline-and-regular-attach
 
 ## Introduktion till att skilja inline och vanliga bilagor - C#-metoden
 
-en värld av e-postbearbetning spelar bilagor en avgörande roll för att förmedla ytterligare information tillsammans med e-postinnehållet. Bilagor kan komma i olika former, men de två vanligaste typerna är inline-bilagor och vanliga bilagor. I den här artikeln kommer vi att fördjupa oss i sfären av e-postbilagor, särskilt med fokus på hur man kan skilja mellan inline och vanliga bilagor med Aspose.Email for .NET-biblioteket. Den här steg-för-steg-guiden ger dig nödvändiga insikter och kodavsnitt för att effektivt arbeta med båda bilagatyperna.
+I en värld av e-postbearbetning spelar bilagor en avgörande roll för att förmedla ytterligare information tillsammans med e-postinnehållet. Bilagor kan komma i olika former, men de två vanligaste typerna är inline-bilagor och vanliga bilagor. I den här artikeln kommer vi att fördjupa oss i sfären av e-postbilagor, särskilt med fokus på hur man kan skilja mellan inline och vanliga bilagor med Aspose.Email for .NET-biblioteket. Den här steg-för-steg-guiden ger dig nödvändiga insikter och kodavsnitt för att effektivt arbeta med båda bilagatyperna.
 
 ## Steg-för-steg-guide
 
@@ -47,7 +47,7 @@ AttachmentCollection attachments = emailMessage.Attachments;
 
 ## 6. Att skilja mellan inline och vanliga bilagor
 
- För att skilja mellan inline och vanliga bilagor måste du inspektera varje bilaga`ContentDisposition` fast egendom. Om`ContentDisposition` är inställd på "inline", är bilagan en inline-bilaga.
+För att skilja mellan inline och vanliga bilagor måste du inspektera varje bilaga`ContentDisposition` fast egendom. Om`ContentDisposition` är inställd på "inline", är bilagan en inline-bilaga.
 
 ## 7. Arbeta med inline-bilagor
 
@@ -75,7 +75,7 @@ foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Hantera regelbunden infästning
+        // Hantera vanligt fäste
         // Exempel: Spara bilaga till disk
         attachment.Save("path/to/save/" + attachment.Name);
     }
@@ -84,13 +84,13 @@ foreach (Attachment attachment in attachments)
 
 ## Slutsats
 
-I den här guiden har vi utforskat världen av e-postbilagor, med fokus på skillnaden mellan inline och vanliga bilagor med hjälp av Aspose.Email for .NET-biblioteket. Genom att följa steg-för-steg-instruktionerna och använda de medföljande kodavsnitten kan du effektivt identifiera och arbeta med båda typerna av bilagor i dina e-postbearbetningsuppgifter.
+den här guiden har vi utforskat världen av e-postbilagor, med fokus på skillnaden mellan inline och vanliga bilagor med hjälp av Aspose.Email for .NET-biblioteket. Genom att följa steg-för-steg-instruktionerna och använda de medföljande kodavsnitten kan du effektivt identifiera och arbeta med båda typerna av bilagor i dina e-postbearbetningsuppgifter.
 
 ## FAQ's
 
 ### Hur kan jag installera Aspose.Email för .NET-biblioteket?
 
-Du kan installera Aspose.Email för .NET-biblioteket med NuGet Package Manager. Kör helt enkelt följande kommando i Package Manager Console:`Install-Package Aspose.Email`.
+ Du kan installera Aspose.Email för .NET-biblioteket med NuGet Package Manager. Kör helt enkelt följande kommando i Package Manager Console:`Install-Package Aspose.Email`.
 
 ### Kan jag skilja mellan inline och vanliga bilagor programmatiskt?
 

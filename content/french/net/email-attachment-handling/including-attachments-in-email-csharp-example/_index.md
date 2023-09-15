@@ -94,7 +94,7 @@ Dans ce guide, nous avons exploré comment inclure des pièces jointes dans vos 
 
 ### Comment puis-je télécharger la bibliothèque Aspose.Email ?
 
- Vous pouvez télécharger la bibliothèque Aspose.Email depuis Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/)ou en utilisant NuGet Package Manager dans Visual Studio.
+ Vous pouvez télécharger la bibliothèque Aspose.Email depuis Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou en utilisant NuGet Package Manager dans Visual Studio.
 
 ### Puis-je joindre plusieurs fichiers à un seul e-mail ?
 

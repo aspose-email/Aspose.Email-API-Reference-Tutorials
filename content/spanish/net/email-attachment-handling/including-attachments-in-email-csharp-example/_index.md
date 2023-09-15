@@ -94,7 +94,7 @@ En esta guía, exploramos cómo incluir archivos adjuntos en sus correos electr�
 
 ### ¿Cómo puedo descargar la biblioteca Aspose.Email?
 
- Puede descargar la biblioteca Aspose.Email desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) mediante el Administrador de paquetes NuGet en Visual Studio.
+ Puede descargar la biblioteca Aspose.Email desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o mediante el Administrador de paquetes NuGet en Visual Studio.
 
 ### ¿Puedo adjuntar varios archivos a un solo correo electrónico?
 

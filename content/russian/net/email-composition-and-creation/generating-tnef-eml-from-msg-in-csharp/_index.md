@@ -89,7 +89,7 @@ Visual Studio или любая установленная среда разра
 
 ### Как получить библиотеку Aspose.Email для .NET?
 
- Вы можете получить библиотеку Aspose.Email для .NET из релизов Aspose:[Скачать Aspose.Email для .NET](https://releases.aspose.com/email/net).
+Вы можете получить библиотеку Aspose.Email для .NET из релизов Aspose:[Скачать Aspose.Email для .NET](https://releases.aspose.com/email/net).
 
 ### Могу ли я использовать Aspose.Email для форматов, отличных от MSG?
 

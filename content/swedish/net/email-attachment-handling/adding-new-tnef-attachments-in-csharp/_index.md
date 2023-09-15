@@ -32,7 +32,9 @@ Till att börja med, låt oss ladda ett befintligt e-postmeddelande som innehål
 using Aspose.Email.Mail;
 
 // Ladda e-postmeddelandet med TNEF-bilaga
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Extrahera och modifiera TNEF-bilagor
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // Extrahera TNEF-tillbehör
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // Få tillgång till TNEF-egenskaper och ändra vid behov
+        //Få tillgång till TNEF-egenskaper och ändra vid behov
         // tnefAttachment.Properties...
     }
 }
@@ -60,7 +62,9 @@ Efter att ha ändrat TNEF-bilagan kan du spara tillbaka e-postmeddelandet till e
 
 ```csharp
 // Spara det ändrade e-postmeddelandet
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Slutsats

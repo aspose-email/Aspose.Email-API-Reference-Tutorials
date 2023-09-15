@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Crear una instancia de ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Conéctese al servidor
-    client.Connect(host, port, true);
-
-    // Acceso
-    client.Login(username, password);
-    
+   
     // Su código para recuperar y analizar mensajes devueltos irá aquí
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Buscar mensajes devueltos
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Tu código para analizar las notificaciones de rebote irá aquí
 }
@@ -89,7 +84,7 @@ Las notificaciones de rebote contienen información valiosa sobre por qué un co
 // Obtener el mensaje
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Comprobar si hay encabezados rebotados
+// Comprobar si hay encabezados rebotados
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

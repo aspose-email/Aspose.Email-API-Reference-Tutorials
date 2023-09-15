@@ -27,8 +27,6 @@ Meistern Sie die E-Mail-Erstellung in C# mit Aspose.Email für .NET. Eine umfass
 Erfahren Sie, wie Sie mit Aspose.Email für .NET TNEF EML aus MSG generieren. Schritt-für-Schritt-Anleitung mit C#-Code. Effiziente Konvertierung des E-Mail-Formats.
 ### [TNEF-Format aus MSG mit C# bilden](./forming-tnef-format-from-msg-with-csharp/)
 Erfahren Sie, wie Sie MSG-Dateien mit Aspose.Email für .NET in das TNEF-Format konvertieren. Erstellen Sie nahtlos umfangreiche E-Mail-Inhalte. 
-### [Erstellen eines Entwurfs einer Terminanfrage – C#-Beispiel](./crafting-a-draft-appointment-request-csharp-example/)
-Erfahren Sie, wie Sie mit Aspose.Email für .NET Entwürfe für Terminanfrage-E-Mails in C# erstellen. Verbessern Sie die Geschäftskommunikation und Effizienz.
 ### [Alternativtext für Bilder festlegen – C#-Handbuch](./setting-alternative-text-for-images-csharp-guide/)
  Erfahren Sie, wie Sie mit Aspose.Email für .NET alternativen Text für Bilder in E-Mails festlegen. Stellen Sie die Barrierefreiheit mit klarem Alt-Text sicher. Dokumentation und Code enthalten.
 ### [Verwalten der Standardtextkodierung – C#-Implementierung](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Erfahren Sie, wie Sie mit Aspose.Email für .NET benutzerdefinierte E-Mail-Heade
 Erfahren Sie, wie Sie E-Mail-Inhalte mithilfe von HTML in Aspose.Email für .NET verbessern. Schritt-für-Schritt-Anleitung mit C#-Beispielen. Verbessern Sie Ihre E-Mail-Kommunikation!
 ### [Angeben von Empfängeradressen in C#](./specifying-recipient-addresses-in-csharp/)
 Erfahren Sie, wie Sie Empfängeradressen in C# mit Aspose.Email für .NET angeben. E-Mails effizient erstellen, konfigurieren und versenden.
+### [Laden von E-Mail-Nachrichten mit Ladeoptionen in C#](./loading-email-messages-with-load-options-in-csharp/)
+Erfahren Sie, wie Sie E-Mail-Nachrichten mit Aspose.Email für .NET in C# laden. Entdecken Sie Schritt-für-Schritt-Anleitungen und Quellcode-Beispiele für eine effektive E-Mail-Verarbeitung.

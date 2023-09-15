@@ -28,7 +28,7 @@ Automatice la verificación de mensajes devueltos utilizando C# y Aspose.Email p
 ### [Guía de C#: comprobación del cifrado de mensajes](./csharp-guide-checking-messages-for-encryption/)
 Aprenda cómo garantizar la seguridad del correo electrónico con Aspose.Email para .NET. Verifique el cifrado, descifre mensajes y más.
 ### [Detectar varios formatos de archivos usando código C#](./detecting-various-file-formats-using-csharp-code/)
-Detecte formatos de archivos sin esfuerzo utilizando C# y Aspose.Email para .NET. Guía paso a paso y ejemplos de código. ¡Explora ahora!
+Detecte formatos de archivos sin esfuerzo usando C# y Aspose.Email para .NET. Guía paso a paso y ejemplos de código. ¡Explora ahora!
 ### [Identificación de mensajes TNEF con código C#](./identifying-tnef-messages-with-csharp-code/)
 Aprenda a identificar mensajes TNEF usando C# y Aspose.Email para .NET. Una guía paso a paso con código fuente y preguntas frecuentes incluidas.
 ### [Detección de mensajes TNEF en C#: explicado](./tnef-message-detection-in-csharp-explained/)
@@ -36,7 +36,10 @@ Aprenda a detectar y procesar mensajes TNEF en C# usando Aspose.Email para .NET.
 ### [Manejo seguro de mensajes: cifrado y descifrado en C#](./secure-message-handling-encryption-and-decryption-in-csharp/)
 Aprenda a implementar el manejo seguro de mensajes con cifrado y descifrado en C# usando Aspose.Email para .NET. Proteja los datos confidenciales de forma eficaz.
 ### [Enfoque C#: extracción de valores de encabezado decodificados](./csharp-approach-extracting-decoded-header-values/)
+Aprenda a extraer valores de encabezado de correo electrónico decodificados en C# usando Aspose.Email para .NET. Guía completa con ejemplos de código.
 ### [Recuperar notificaciones de estado de entrega con C#](./retrieving-delivery-status-notifications-with-csharp/)
 Aprenda cómo recuperar notificaciones de estado de entrega de correo electrónico usando C# y Aspose.Email para .NET.
 ### [Técnica C#: conversión del cuerpo HTML a texto sin formato](./csharp-technique-converting-html-body-to-plain-text/)
 Aprenda a convertir fácilmente contenido de correo electrónico HTML a texto sin formato utilizando Aspose.Email para .NET. Guía detallada y código. ¡Explora ahora!
+### [Preservar los límites originales usando código C#](./preserving-original-boundaries-using-csharp-code/)
+Aprenda cómo preservar los límites originales de los archivos adjuntos de correo electrónico usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente.

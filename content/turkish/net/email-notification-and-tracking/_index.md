@@ -21,9 +21,9 @@ E-posta bildirimi eğitimleri, Aspose.Email for .NET kullanarak e-posta bildirim
 E-posta izleme eğitimleri, geliştiricilerin Aspose.Email for .NET'i kullanarak e-posta izleme özelliklerini uygulamalarına olanak sağlamaya odaklanıyor. Geliştiriciler, alıcı etkileşimi hakkında bilgi edinmek için açılma oranları ve bağlantı tıklamaları gibi e-posta etkileşimlerini izlemeye yönelik teknikleri keşfedebilir. Bu eğitimler, izleme öğelerini e-posta içeriğine yerleştirme, izleme verilerini yakalama ve rapor oluşturma konusunda adım adım talimatlar sunar. Aspose.Email for .NET, e-posta izleme görevlerini basitleştirerek geliştiricilerin, e-posta alıcısı davranışlarına ilişkin veri odaklı bilgilerle uygulamalarını geliştirmelerine olanak tanır.
 
 ## E-posta Bildirimi ve Takip Eğitimleri
-## [C# Koduyla E-posta Bildirimleri Alma](./receiving-email-notifications-with-csharp-code/)
+### [C# Koduyla E-posta Bildirimleri Alma](./receiving-email-notifications-with-csharp-code/)
 Aspose.Email for .NET'i kullanarak C#'ta e-posta bildirimleri almayı öğrenin. Verimli kod örneği sağlandı.
-## [C# Kodunu Kullanarak E-posta Okundu Bilgilerini İsteme](./requesting-email-read-receipts-using-csharp-code/)
+### [C# Kodunu Kullanarak E-posta Okundu Bilgilerini İsteme](./requesting-email-read-receipts-using-csharp-code/)
 İletişim izlemeyi geliştiren Aspose.Email for .NET'i kullanarak e-posta okundu bilgilerini istemek için C# kodunu nasıl kullanacağınızı öğrenin.
-## [C# Koduyla E-posta Belgesi Dönüştürme İlerlemesini İzleme](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [C# Koduyla E-posta Belgesi Dönüştürme İlerlemesini İzleme](./tracking-email-document-conversion-progress-with-csharp-code/)
 Aspose.Email for .NET'i kullanarak e-posta bildirimini ve izlemeyi nasıl uygulayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz. E-posta iletişiminizi bugün geliştirin!

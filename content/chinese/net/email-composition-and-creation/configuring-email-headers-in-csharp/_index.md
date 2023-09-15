@@ -18,13 +18,13 @@ url: /zh/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 
 电子邮件标头有几个重要目的：
 #### 路由： 
-	Headers determine the path an email takes from sender to recipient.
+标头决定电子邮件从发件人到收件人的路径。
 #### 验证
-	Headers like DKIM and SPF help verify the authenticity of emails.
+DKIM 和 SPF 等标头有助于验证电子邮件的真实性。
 #### 主题行： 
-	The subject header gives recipients an idea of the email's content.
+主题标头让收件人了解电子邮件的内容。
 #### 回复处理： 
-	Headers like Reply-To ensure proper handling of replies.
+Reply-To 等标头可确保正确处理回复。
 
 ## 3.安装Aspose.Email for .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 某些标头常用于电子邮件中：
 
 #### 主题： 
-	Set the email subject using the `message.Subject` property.
+使用设置电子邮件主题`message.Subject`财产。
 #### 从： 
-	Specify the sender's address using the `message.From` property.
+使用以下命令指定发件人地址`message.From`财产。
 #### 到： 
-	Define the recipient's address using the `message.To` property.
+使用以下命令定义收件人地址`message.To`财产。
 
 ## 6. 自定义附加标头
 

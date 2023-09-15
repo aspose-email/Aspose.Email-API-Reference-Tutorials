@@ -12,7 +12,7 @@ Questa guida ti guiderà attraverso il processo di impostazione del testo altern
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
 1. Visual Studio o qualsiasi ambiente di sviluppo C# compatibile installato.
 2. Aspose.Email per la libreria .NET. È possibile utilizzare Gestione pacchetti NuGet in Visual Studio.
@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Crea un'istanza di`MhtmlMessageFormatter`classe per formattare il messaggio:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. Carica il contenuto HTML del messaggio email:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Passaggio 5: aggiungi testo alternativo alle immagini
+## Passaggio 5: aggiungi AlternativeView per testo alternativo alle immagini
 
-1.  Individuare il`AlternateView` contenente il corpo HTML e le immagini:
-
+Aggiungi htmlview per il testo alternativo all'immagine come AlternateView nel messaggio. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Individuare il`LinkedResource` che rappresenta l'immagine:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Imposta il testo alternativo per l'immagine:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Passaggio 6: salva e invia l'e-mail
@@ -97,7 +77,7 @@ In questa guida hai imparato come impostare testo alternativo per le immagini ne
 
 ### Come faccio ad aggiungere immagini come risorse collegate in un'e-mail?
 
- Per aggiungere immagini come risorse collegate in un'e-mail, puoi utilizzare il file`LinkedResource`classe. Assegna un ID contenuto alla risorsa collegata, quindi fai riferimento a questo ID contenuto nel corpo HTML utilizzando il file`cid:` schema. Per informazioni dettagliate consultare il[Documentazione di LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Per aggiungere immagini come risorse collegate in un'e-mail, puoi utilizzare il file`LinkedResource` classe. Assegna un ID contenuto alla risorsa collegata, quindi fai riferimento a questo ID contenuto nel corpo HTML utilizzando il file`cid:` schema. Per informazioni dettagliate consultare il[Documentazione di LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Dove posso trovare ulteriore documentazione su Aspose.Email per .NET?
 
  È possibile trovare documentazione più dettagliata, tutorial ed esempi su come lavorare con Aspose.Email per .NET nel file[Riferimento API](https://reference.aspose.com/email/net/).

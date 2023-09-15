@@ -62,7 +62,7 @@ Les en-têtes personnalisés offrent une gamme de possibilités pour optimiser l
  Les en-têtes personnalisés vous permettent de classer les e-mails en fonction de critères spécifiques, permettant ainsi aux destinataires de gérer plus facilement leur boîte de réception.
 
 ### Personnalisation 
- L'intégration d'en-têtes personnalisés vous permet d'adapter le contenu des e-mails à des destinataires individuels, améliorant ainsi l'expérience utilisateur globale.
+ L'intégration d'en-têtes personnalisés vous permet d'adapter le contenu des e-mails aux destinataires individuels, améliorant ainsi l'expérience utilisateur globale.
 
 ### Filtration 
  Les destinataires peuvent utiliser des en-têtes personnalisés pour configurer des filtres et des règles qui automatisent l'organisation et le traitement des e-mails.

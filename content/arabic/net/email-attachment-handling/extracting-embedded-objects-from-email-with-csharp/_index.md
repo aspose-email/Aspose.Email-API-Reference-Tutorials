@@ -14,7 +14,7 @@ url: /ar/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 
 ## الشروع في العمل مع Aspose.Email لـ .NET
 
-Aspose.Email for .NET هي مكتبة قوية توفر ميزات متنوعة للعمل مع رسائل البريد الإلكتروني، بما في ذلك تحليل رسائل البريد الإلكتروني وإنشائها ومعالجتها. للبدء، تحتاج إلى تثبيت مكتبة Aspose.Email for .NET في مشروعك. يمكنك إما تنزيله من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو استخدم مدير الحزم مثل NuGet.
+ Aspose.Email for .NET هي مكتبة قوية توفر ميزات متنوعة للعمل مع رسائل البريد الإلكتروني، بما في ذلك تحليل رسائل البريد الإلكتروني وإنشائها ومعالجتها. للبدء، تحتاج إلى تثبيت مكتبة Aspose.Email for .NET في مشروعك. يمكنك إما تنزيله من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو استخدم مدير الحزم مثل NuGet.
 
 ## تحميل وتحليل البريد الإلكتروني
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // استخراج الكائنات المضمنة من محتوى HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            //استخراج وحفظ المورد المرتبط (كائن مضمن)
+            // استخراج وحفظ المورد المرتبط (كائن مضمن)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // استخراج الكائنات المضمنة من محتوى HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //استخراج وحفظ المورد المرتبط (كائن مضمن)
+                        // استخراج وحفظ المورد المرتبط (كائن مضمن)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

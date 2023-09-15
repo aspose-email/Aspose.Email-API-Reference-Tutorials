@@ -8,102 +8,66 @@ weight: 18
 url: /de/net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
 
-## Einführung
+In der schnelllebigen Welt der E-Mail-Kommunikation ist es von entscheidender Bedeutung, sicherzustellen, dass Ihre gesendeten E-Mails erfolgreich zugestellt werden. Eine Möglichkeit, den Zustellungsstatus Ihrer E-Mails zu verfolgen, ist die Verwendung von Aspose.Email für C#. In diesem umfassenden Leitfaden führen wir Sie durch den Prozess des Abrufens von Zustellungsstatusbenachrichtigungen (DSNs) mit C# mithilfe der leistungsstarken Aspose.Email-Bibliothek.
 
-In der E-Mail-Kommunikation spielen Delivery Status Notifications (DSNs) eine entscheidende Rolle, um Absender über den Zustellstatus ihrer E-Mails zu informieren. Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die Funktionen für die Arbeit mit E-Mails bereitstellt, einschließlich des Abrufens von DSNs. In diesem Leitfaden gehen wir durch den Prozess des Abrufens von Benachrichtigungen zum Lieferstatus mithilfe von C# und der Aspose.Email für .NET-Bibliothek.
+## 1. Einleitung
 
-## Voraussetzungen
+Im heutigen digitalen Zeitalter ist E-Mail ein integraler Bestandteil unserer Kommunikation. Unabhängig davon, ob Sie wichtige Geschäftsdokumente oder persönliche Nachrichten versenden, ist es wichtig, den Status Ihrer gesendeten E-Mails zu kennen. Aspose.Email für C# bietet eine leistungsstarke und flexible Lösung für die Bearbeitung von E-Mail-bezogenen Aufgaben, einschließlich des Abrufens von Benachrichtigungen zum Zustellungsstatus.
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+## 2. Lieferstatusbenachrichtigungen verstehen
 
-1. Visual Studio installiert.
-2.  Aspose.Email für .NET-Bibliothek. Sie können es herunterladen unter[Hier](https://releases.aspose.com/email/net).
-3. Grundlegendes Verständnis der C#-Programmierung.
+Bevor wir uns mit den technischen Details befassen, wollen wir verstehen, was Delivery Status Notifications (DSNs) sind. DSNs sind automatisierte Nachrichten, die von Mailservern generiert werden, um Absender über den Zustellungsstatus ihrer E-Mails zu informieren. Diese Benachrichtigungen können anzeigen, ob eine E-Mail erfolgreich zugestellt wurde, verzögert wurde oder fehlgeschlagen ist.
 
-## Schritte
+## 3. Einrichten Ihrer Entwicklungsumgebung
 
-Befolgen Sie diese Schritte, um Benachrichtigungen zum Lieferstatus mit Aspose.Email für .NET abzurufen:
+ Um zu beginnen, müssen Sie Ihre Entwicklungsumgebung einrichten. Stellen Sie sicher, dass Visual Studio und die Aspose.Email-Bibliothek installiert sind. Sie können Aspose.Email für C# von der Website herunterladen[Hier](https://www.aspose.com/downloads/email/net).
 
-### Schritt 1: Erstellen Sie ein neues Projekt
+## 4. Aspose.Email für C# initialisieren
 
-Öffnen Sie Visual Studio und erstellen Sie ein neues C#-Konsolenanwendungsprojekt.
-
-### Schritt 2: Aspose.Email-Referenz hinzufügen
-
-Kopieren Sie die heruntergeladene Aspose.Email-DLL in das Verzeichnis Ihres Projekts. Klicken Sie dann im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, wählen Sie „Hinzufügen“ > „Referenz“ und suchen Sie nach der Aspose.Email-DLL. Klicken Sie auf „OK“, um die Referenz zu Ihrem Projekt hinzuzufügen.
-
-### Schritt 3: Schreiben Sie Code zum Abrufen von DSNs
-
- Öffne das`Program.cs` Datei in Ihrem Projekt und importieren Sie die erforderlichen Namespaces:
+Fügen Sie in Ihrem C#-Projekt zunächst einen Verweis auf die Aspose.Email-Bibliothek hinzu. Initialisieren Sie dann Aspose.Email, um mit der Arbeit mit E-Mails und DSNs zu beginnen.
 
 ```csharp
+// Verweis auf Aspose.Email hinzufügen
 using Aspose.Email;
-using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
+// Aspose.Email initialisieren
+var emailClient = new SmtpClient();
 ```
 
- Im Inneren`Main` -Methode schreiben Sie den Code, um eine Verbindung zum E-Mail-Server herzustellen, DSNs abzurufen und sie zu verarbeiten:
+## 5. Senden einer E-Mail mit DSN-Anfrage
+
+Um DSNs zu erhalten, müssen Sie diese beim Senden einer E-Mail anfordern. Legen Sie in Ihrer E-Mail-Nachricht die entsprechenden Header fest, um DSNs anzufordern.
 
 ```csharp
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Legen Sie Ihre IMAP-Server-Anmeldeinformationen und Ihren Host fest
-        string host = "your_imap_host";
-        int port = 993;
-        string username = "your_email";
-        string password = "your_password";
+// Erstellen Sie eine E-Mail-Nachricht
+var message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");
 
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            // Wählen Sie den Posteingangsordner aus
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            // Suchen Sie nach Nachrichten mit DSNs
-            MailQueryBuilder queryBuilder = new MailQueryBuilder();
-            queryBuilder.HasFlags(Aspose.Email.Mail.MessageFlags.DeliveryNotification);
-            MailQuery query = queryBuilder.GetQuery();
-            ImapMessageInfoCollection messages = client.ListMessages(query);
-
-            // Abgerufene DSNs verarbeiten
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                MailMessage message = client.FetchMessage(messageInfo.SequenceNumber);
-
-                // DSN-Details verarbeiten
-                Console.WriteLine("Subject: " + message.Subject);
-                Console.WriteLine("From: " + message.From);
-                // ... Verarbeiten Sie andere DSN-Details
-
-                // Markieren Sie die Nachricht als gelesen oder löschen Sie sie
-                client.DeleteMessage(messageInfo.SequenceNumber);
-            }
-        }
-    }
-}
+//Fordern Sie DSNs an
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
- Ersetzen`"your_imap_host"`, `"your_email"` , Und`"your_password"` mit Ihren tatsächlichen IMAP-Serverdetails.
 
-### Schritt 4: Führen Sie die Anwendung aus
+## 8. Anpassen der DSN-Verarbeitung
 
-Erstellen Sie Ihre Anwendung und führen Sie sie aus. Es stellt eine Verbindung zu Ihrem E-Mail-Server her, ruft DSNs aus dem Posteingangsordner ab, verarbeitet deren Details und löscht sie optional oder markiert sie als gelesen.
+Mit Aspose.Email können Sie die DSN-Verarbeitung an die Anforderungen Ihrer Anwendung anpassen. Sie können detaillierte Informationen aus DSNs extrahieren und entsprechende Maßnahmen ergreifen.
 
-## FAQs
+## 9. Fehlerbehebung und FAQs
 
-### Wie finde ich den IMAP-Server-Host?
+### F1: Was passiert, wenn ich keine DSNs erhalte?
+A1: Stellen Sie sicher, dass Ihr E-Mail-Server DSNs unterstützt, und überprüfen Sie die Einstellungen Ihres E-Mail-Clients, um DSNs anzufordern.
 
- Den Host des IMAP-Servers finden Sie in der Dokumentation oder den Einstellungen Ihres E-Mail-Dienstanbieters. Es hat normalerweise das Format`imap.yourdomain.com`.
+### F2: Kann ich Aspose.Email für andere E-Mail-bezogene Aufgaben verwenden?
+A2: Ja, Aspose.Email bietet eine breite Palette von Funktionen für die Arbeit mit E-Mails, einschließlich des Sendens, Empfangens und Verarbeitens von E-Mails.
 
-### Wie kann ich andere DSN-Details als Betreff und Absender verarbeiten?
+### F3: Werden DSNs für alle E-Mail-Anbieter unterstützt?
+A3: Die DSN-Unterstützung kann je nach E-Mail-Anbieter variieren. Erkundigen Sie sich bei Ihrem Anbieter nach der Kompatibilität.
 
- Sie können auf verschiedene Eigenschaften des zugreifen`MailMessage` Objekt zum Abrufen von DSN-Details wie Empfängeradressen, Lieferstatus, Zeitstempel und mehr. Siehe die[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net/) für mehr Informationen.
+### F4: Kann ich Aspose.Email mit anderen Programmiersprachen verwenden?
+A4: Aspose.Email ist in erster Linie für C# konzipiert, bietet aber auch APIs für andere Sprachen.
 
-### Ist es notwendig, DSNs zu löschen oder als gelesen zu markieren?
+### F5: Wo finde ich weitere Ressourcen und Dokumentation?
+ A5: Besuchen Sie die[Aspose.Email für C#-API-Dokumentation](https://reference.aspose.com/email/net/) Ausführliche Anleitungen und Beispiele finden Sie hier.
 
-Nein, es ist nicht notwendig. Ob DSNs gelöscht oder als gelesen markiert werden, hängt von den Anforderungen Ihrer Anwendung ab. Der bereitgestellte Code demonstriert beide Optionen, Sie können ihn jedoch an Ihre Bedürfnisse anpassen.
+### 10. Fazit
 
-## Abschluss
-
-Das Abrufen von Benachrichtigungen zum Lieferstatus mit C# und Aspose.Email für .NET ist ein unkomplizierter Prozess. Die Aspose.Email-Bibliothek vereinfacht die Kommunikation mit dem IMAP-Server und stellt benutzerfreundliche APIs zur Verarbeitung von E-Mail-Nachrichten bereit. Mit diesem Leitfaden können Sie jetzt DSN-Abruffunktionen in Ihre C#-Anwendungen integrieren.
+In diesem Leitfaden haben wir untersucht, wie Sie mit C# mithilfe von Aspose.Email für C# Benachrichtigungen zum Zustellungsstatus abrufen. Für eine effektive Kommunikation ist es wichtig, den Überblick über Ihre E-Mail-Zustellungen zu behalten, und Aspose.Email vereinfacht diesen Prozess.

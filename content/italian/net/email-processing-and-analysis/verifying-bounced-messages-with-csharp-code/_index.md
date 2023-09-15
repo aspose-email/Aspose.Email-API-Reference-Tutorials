@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Crea un'istanza di ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Connettersi al server
-    client.Connect(host, port, true);
-
-    // Login
-    client.Login(username, password);
-    
+   
     // Il tuo codice per recuperare e analizzare i messaggi restituiti verrà inserito qui
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Cerca i messaggi respinti
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Il tuo codice per analizzare le notifiche di mancato recapito verrà inserito qui
 }
@@ -89,7 +84,7 @@ Le notifiche di mancato recapito contengono informazioni preziose sul motivo per
 // Recupera il messaggio
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Controlla le intestazioni di mancato recapito
+// Controlla le intestazioni di mancato recapito
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

@@ -27,8 +27,6 @@ Master nella creazione di e-mail in C# utilizzando Aspose.Email per .NET. Una gu
 Impara a generare TNEF EML da MSG utilizzando Aspose.Email per .NET. Guida dettagliata con codice C#. Conversione efficiente del formato e-mail.
 ### [Formazione del formato TNEF da MSG con C#](./forming-tnef-format-from-msg-with-csharp/)
 Scopri come convertire i file MSG in formato TNEF utilizzando Aspose.Email per .NET. Crea ricchi contenuti e-mail senza problemi. 
-### [Creazione di una bozza di richiesta di appuntamento: esempio in C#](./crafting-a-draft-appointment-request-csharp-example/)
-Scopri come utilizzare Aspose.Email per .NET per creare bozze di email di richiesta di appuntamento in C#. Migliorare la comunicazione e l'efficienza aziendale.
 ### [Impostazione del testo alternativo per le immagini - Guida C#](./setting-alternative-text-for-images-csharp-guide/)
  Impara a impostare testo alternativo per le immagini nelle e-mail utilizzando Aspose.Email per .NET. Garantisci l'accessibilità con un testo alternativo chiaro. Documentazione e codice inclusi.
 ### [Gestione della codifica del testo predefinita: implementazione C#](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Scopri come configurare intestazioni di posta elettronica personalizzate in C# u
 Scopri come migliorare il contenuto della posta elettronica utilizzando HTML in Aspose.Email per .NET. Guida dettagliata con esempi in C#. Migliora la tua comunicazione via email!
 ### [Specifica degli indirizzi dei destinatari in C#](./specifying-recipient-addresses-in-csharp/)
 Scopri come specificare gli indirizzi dei destinatari in C# utilizzando Aspose.Email per .NET. Crea, configura e invia e-mail in modo efficiente.
+### [Caricamento di messaggi di posta elettronica con opzioni di caricamento in C#](./loading-email-messages-with-load-options-in-csharp/)
+Scopri come caricare messaggi di posta elettronica con Aspose.Email per .NET in C#. Esplora la guida passo passo e gli esempi di codice sorgente per una gestione efficace della posta elettronica.

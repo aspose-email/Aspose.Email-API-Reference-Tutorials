@@ -17,7 +17,7 @@ url: /ar/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 قبل أن تتعمق في تخصيص تحويل MHTML، تأكد من تثبيت Aspose.Email for .NET وجاهزية مشروع C# جديد للبدء.
 
 1. تثبيت Aspose.Email لـ .NET:
- للبدء، قم بتنزيل Aspose.Email for .NET وتثبيته من[رابط التحميل](https://releases.aspose.com/email/net). اتبع تعليمات التثبيت المتوفرة في الوثائق.
+للبدء، قم بتنزيل Aspose.Email for .NET وتثبيته من[رابط التحميل](https://releases.aspose.com/email/net). اتبع تعليمات التثبيت المتوفرة في الوثائق.
 
 2. إنشاء مشروع C# جديد:
 افتح Visual Studio وقم بإنشاء مشروع C# جديد. تأكد من أنك قمت بالرجوع إلى مكتبة Aspose.Email في مشروعك عن طريق إضافة مرجع DLL المناسب.
@@ -32,53 +32,14 @@ url: /ar/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 ```csharp
 using Aspose.Email.Mime;
 // قم بتحميل ملف MHTML
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. الوصول إلى محتوى وموارد HTML:
-قم باستخراج محتوى HTML والموارد المرتبطة به باستخدام الكود التالي:
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   // الوصول إلى محتوى HTML
-	   var htmlContent = resource.GetContent();
-	   // تعديل محتوى HTML حسب الحاجة
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   // الوصول إلى موارد الصورة
-	   var imageData = resource.GetContent();
-	   //تعديل أو تضمين الصور
-   }
-   // التعامل مع أنواع الموارد الأخرى
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## تخصيص خيارات التحويل
 
 قم بتخصيص عملية تحويل MHTML الخاصة بك عن طريق تحديد تنسيقات الإخراج المختلفة وضبط الإعدادات.
 
-1. اختيار تنسيقات الإخراج:
-حدد تنسيق الإخراج للتحويل، مثل PDF أو DOCX أو غيرهم:
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; // تحويل إلى قوات الدفاع الشعبي
-// قم بتعيين خيارات التحويل الأخرى
-```
-
-2. تحديد هوامش الصفحة واتجاهها:
-ضبط هوامش الصفحة واتجاه المستند الناتج:
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. التحكم في جودة الصورة:
+1. التحكم في جودة الصورة:
 التحكم في جودة الصور المضمنة:
 
 ```csharp

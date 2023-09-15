@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1.  Chargez le message électronique à l'aide du`MapiMessage` classe:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// Charger l'e-mail avec la pièce jointe TNEF
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. Déterminez si l'e-mail chargé est un message TNEF :
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
  Remplacer`"path/to/your/email.msg"` avec le chemin réel de votre fichier de messages électroniques.
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 Si l'email chargé est bien un message TNEF, vous pouvez extraire et traiter ses pièces jointes :
 
 ```csharp
-if (isTnefMessage)
+// Parcourir les pièces jointes
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Traiter l'attachement TNEF
-        // Par exemple, enregistrez la pièce jointe sur le disque
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // Extraire la pièce jointe TNEF
+        var tnefAttachment = attachment;
+
+        //Accéder aux propriétés du TNEF et modifier si nécessaire
+        // tnefAttachment.Propriétés...
     }
 }
 ```
 
 ## FAQ
 
-## Comment puis-je vérifier si un e-mail est un message TNEF ?
+### Comment puis-je vérifier si un e-mail est un message TNEF ?
 
  Pour vérifier si un email est un message TNEF, utilisez le`IsTnefMessage()` méthode du`MapiMessage` classe:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## Comment extraire les pièces jointes d’un message TNEF ?
+### Comment extraire les pièces jointes d’un message TNEF ?
 
 Pour extraire les pièces jointes d'un message TNEF, procédez comme suit :
 
 1.  Chargez l'e-mail en utilisant`MapiMessage.FromFile()`.
-2.  Vérifiez si l'e-mail est un message TNEF en utilisant`IsTnefMessage()`.
-3.  S'il s'agit d'un message TNEF, extrayez les pièces jointes à l'aide de`ExtractTnefAttachments()`.
+2.  Vérifiez si l'e-mail est un message TNEF en utilisant`OriginalIsTnef`.
+3. S'il s'agit d'un message TNEF, extrayez les pièces jointes en utilisant en itérant les pièces jointes avec ContentType.MediaType est égal à "application/ms-tnef".
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Parcourir les pièces jointes
+foreach (var attachment in message.Attachments)
 {
-    // Traiter l'attachement TNEF
-    // Par exemple, enregistrez la pièce jointe sur le disque
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // Extraire la pièce jointe TNEF
+        var tnefAttachment = attachment;
+
+        //Accéder aux propriétés du TNEF et modifier si nécessaire
+        // tnefAttachment.Propriétés...
+    }
 }
 ```
 

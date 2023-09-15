@@ -1,6 +1,6 @@
 ---
 title: Effektiv hantering av e-postevenemang och kalender
-linktitle: E-posthantering och kalenderhantering
+linktitle: E-posthändelse och kalenderhantering
 second_title: Aspose.Email .NET Email Processing API
 description: Effektivisera hantering av e-posthändelser och kalenderhantering med Aspose.Email för .NET-tutorials. Lär dig att automatisera e-posthändelser och sömlöst integrera kalenderfunktioner.
 type: docs
@@ -21,17 +21,14 @@ Handledningarna för hantering av e-posthändelser gräver ner sig i krånglighe
 Handledningarna för hantering av e-kalendern fokuserar på att effektivt hantera kalenderrelaterade funktioner med Aspose.Email för .NET. Utvecklare kan utforska tekniker för att skapa, ändra och synkronisera kalenderhändelser och möten programmatiskt. Dessa handledningar erbjuder steg-för-steg-instruktioner om hur du integrerar kalenderfunktioner i applikationer, vilket säkerställer sömlös schemaläggning och hantering av händelser. Aspose.Email för .NET förenklar kalenderhanteringsuppgifter, vilket gör det möjligt för utvecklare att förbättra sina applikationer med effektiv evenemangsorganisation och hantering.
 
 ## Handledning för hantering av e-postevenemang och kalender
-### [Extrahera inbäddade bilagor från MSG-filer med C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-Lär dig hur du extraherar inbäddade bilagor från MSG-filer med C# och Aspose.Email för .NET. En omfattande guide med exempel på källkod.
-### [Ladda e-postmeddelanden med laddningsalternativ i C#](./loading-email-messages-with-load-options-in-csharp/)
-Lär dig hur du laddar e-postmeddelanden med Aspose.Email för .NET i C#. Utforska steg-för-steg-guide och källkodsexempel för effektiv e-posthantering.
-### [Bevara inbäddat MSG-format under laddning med C#](./preserving-embedded-msg-format-during-load-with-csharp/)
-Lär dig hur du bevarar inbäddat MSG-format med Aspose.Email för .NET. Steg-för-steg guide med källkod.
-### [Bevara ursprungliga gränser med C#-kod](./preserving-original-boundaries-using-csharp-code/)
-Lär dig hur du bevarar ursprungliga gränser för e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
+
 ### [Läsa flera händelser från ICS-filer med C#](./reading-multiple-events-from-ics-files-with-csharp/)
 Lär dig att extrahera flera händelser från ICS-filer med Aspose.Email för .NET. En steg-för-steg-guide med kodexempel för effektiv eventhantering.
 ### [Rendering av kalenderhändelser med C#-kod](./rendering-calendar-events-using-csharp-code/)
 Lär dig att rendera kalenderhändelser med C# och Aspose.Email för .NET. Skapa interaktiva scheman med lätthet.
 ### [Ställa in deltagarstatus för mötesdeltagare med C#](./setting-participant-status-for-appointment-attendees-with-csharp/)
 Lär dig hur du hanterar mötesdeltagares status med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
+### [Skapa ett utkast till mötesbegäran - C# Exempel](./crafting-a-draft-appointment-request-csharp-example/)
+Lär dig hur du använder Aspose.Email för .NET för att skapa utkast till e-postmeddelanden om mötesförfrågan i C#. Förbättra affärskommunikation och effektivitet.
+### [Ändra ProdID i ICS-filer med C#](./altering-prodid-in-ics-files-with-csharp/)
+Lär dig att ändra ProdID i ICS-filer med C# & Aspose.Email för .NET. Steg-för-steg guide & kod. Säkerställ dataintegritet och kompatibilitet. 

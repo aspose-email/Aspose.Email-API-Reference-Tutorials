@@ -8,99 +8,128 @@ weight: 11
 url: /zh/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-电子邮件通信是现代商务和个人互动不可或缺的一部分。通常，了解收件人是否已阅读您发送的电子邮件非常重要。这就是电子邮件阅读回执发挥作用的地方。在本文中，我们将探索如何使用 C# 代码请求电子邮件阅读回执，利用 Aspose.Email for .NET 库的强大功能。
+在当今的数字时代，通过电子邮件进行交流已成为我们个人和职业生活中不可或缺的一部分。通常，在发送重要电子邮件时，我们希望确保收件人已阅读并确认我们的消息。这就是电子邮件阅读回执发挥作用的地方。在本分步教程中，我们将指导您完成使用 C# 和 Aspose.Email for .NET 请求电子邮件已读回执的过程。
 
 ## 电子邮件已读回执简介
 
-电子邮件已读回执是收件人的电子邮件客户端在打开电子邮件时发送的通知。它向发件人提供电子邮件已成功发送并阅读的确认。此功能在业务环境中特别有用，可以跟踪客户或同事进行重要通信的情况。
+电子邮件阅读回执，也称为电子邮件跟踪或回执，允许您在收件人打开并阅读您的电子邮件时收到通知。这是一个很有价值的功能，特别是在商业通信中，因为它提供了消息传递和参与的确认。
 
-## 设置您的开发环境
+## 先决条件
 
-在我们深入编码过程之前，请确保您拥有合适的开发环境。你需要：
+在我们深入研究代码之前，请确保您具备以下先决条件：
 
-- Visual Studio 或任何其他 C# 开发 IDE
-- 安装了 .NET Framework 或 .NET Core
-- Aspose.Email for .NET 库
+- Visual Studio 安装在您的系统上。
+- 下载 Aspose.Email for .NET 库并在您的项目中引用。
 
-## 安装 Aspose.Email for .NET
+## 第 1 步：创建 MailMessage 实例
 
-首先，您需要安装 Aspose.Email for .NET 库。您可以从以下位置下载：[Aspose 发布](https://releases.aspose.com/email/net/)。按照提供的安装说明将库集成到您的项目中。
-
-## 创建新的 C# 项目
-
-打开您的开发环境并创建一个新的 C# 项目。根据您的应用程序类型（控制台、Windows 窗体等）选择合适的项目模板。
-
-## 编写代码来请求已读回执
-
-现在，让我们编写 C# 代码来请求电子邮件的已读回执。
-
-### 正在加载电子邮件消息
-
-首先，我们需要加载要发送的带有已读回执请求的电子邮件。
+实现电子邮件阅读回执的第一步是创建一个实例`MailMessage`班级。此类代表电子邮件消息并允许您设置电子邮件的各种属性。
 
 ```csharp
-using Aspose.Email;
-using Aspose.Email.Mime;
-
-//加载电子邮件消息
 MailMessage message = new MailMessage();
-message.Subject = "Your Subject";
-message.Body = "Your Email Content";
-message.From = "your@email.com";
-message.To = "recipient@email.com";
 ```
 
-### 添加已读回执请求
+## 第 2 步：指定消息详细信息
 
-接下来，我们将在电子邮件中添加已读回执请求。
+现在，让我们指定电子邮件的详细信息，包括发件人、收件人、HTML 正文和送达通知选项。
 
 ```csharp
-//添加已读回执请求
-ReadReceiptRequest readReceiptRequest = new ReadReceiptRequest();
-message.AddCustomHeader(readReceiptRequest.HeaderName, readReceiptRequest.HeaderValue);
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-### 发送电子邮件
+## 步骤3：创建SmtpClient实例
 
-现在已添加已读回执请求，让我们发送电子邮件。
+要发送电子邮件，我们需要创建一个实例`SmtpClient`类，负责发送消息。
 
 ```csharp
-using SmtpClient client = new SmtpClient("smtp.server.com", "username", "password");
-client.Send(message);
+SmtpClient client = new SmtpClient();
 ```
 
-## 处理已读回执
+## 步骤 4：配置 SMTP 设置
 
-当收件人打开电子邮件并接受已读回执请求时，您将收到已读回执通知。然而，处理已读回执可能有点棘手，因为并非所有电子邮件客户端都支持它们。建议使用专用电子邮件地址来收集已读回执并进行相应处理。
+通过指定主机服务器、用户名、密码和端口号来配置 SMTP 服务器设置。
 
-## 使用电子邮件已读回执的最佳实践
+```csharp
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+```
 
-- 谨慎使用已读回执，并且仅针对关键电子邮件。
-- 尊重收件人的隐私和偏好。有些人可能会觉得已读回执具有侵扰性。
-- 请做好准备，应对因电子邮件客户端限制而可能无法生成已读回执的情况。
+## 第 5 步：发送电子邮件
 
+最后，使用`client.Send`发送电子邮件消息的方法。如果消息发送成功，将会显示“消息已发送”通知。
+
+```csharp
+try
+{
+    client.Send(message);
+    Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+    System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
+
+通过这五个简单的步骤，您可以在使用 C# 和 Aspose.Email for .NET 发送电子邮件时请求电子邮件已读回执。此功能为您的电子邮件通信增加了一层保证，确保您知道重要消息何时被阅读。
+
+## 完整的源代码
+```csharp
+//创建 MailMessage 类的实例
+MailMessage message = new MailMessage();
+
+//指定 From、To、HtmlBody、DeliveryNotificationOptions 字段
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+
+//创建 SmtpClient 类的实例
+SmtpClient client = new SmtpClient();
+
+//指定您的邮件主机服务器、用户名、密码和端口号
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+
+try
+{
+	//Client.Send 将发送此消息
+	client.Send(message);
+	//仅当消息发送成功时才显示“消息已发送”
+	Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+	System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
 ## 结论
 
-在本文中，我们探讨了如何在 Aspose.Email for .NET 库的帮助下使用 C# 代码请求电子邮件已读回执。此功能对于跟踪电子邮件收件人在各种情况下的参与度非常有价值，尤其是在专业通信中。
+在本教程中，我们探讨了如何使用 C# 和 Aspose.Email for .NET 请求电子邮件已读回执。电子邮件跟踪是一个强大的工具，可确保您的邮件被预期收件人传递和阅读，特别是在专业环境中。通过遵循此处概述的步骤，您可以在电子邮件应用程序中轻松实现此功能。
 
-## 常见问题解答
+## 常见问题 (FAQ)
 
-### 如何在 C# 中跟踪已读回执？
+1. ### 电子邮件阅读回执的目的是什么？
+   电子邮件阅读回执可确认收件人已打开并阅读电子邮件。它们通常用于跟踪重要或时间敏感的消息。
 
-要在 C# 中跟踪已读回执，您可以使用 Aspose.Email for .NET 库将已读回执请求添加到您的电子邮件中。请注意，已读回执处理可能会因收件人的电子邮件客户端而异。
+2. ### 收件人可以禁用电子邮件已读回执吗？
+   是的，电子邮件客户端通常允许用户禁用发送已读回执。因此，不能保证您总是会收到它们。
 
-### 已读回执可靠吗？
+3. ### 电子邮件已读回执是所有电子邮件客户端的标准功能吗？
+   不，电子邮件阅读回执并未得到普遍支持。它们是否有效取决于电子邮件客户端和收件人的设置。
 
-已读回执并不总是可靠，因为它们的生成取决于收件人的电子邮件客户端和设置。某些电子邮件客户端可能不支持已读回执，从而导致跟踪不一致。
+4. ### 是否可以跟踪电子邮件在移动设备上打开的时间？
+   电子邮件跟踪通常基于收件人的电子邮件客户端和设置，因此它可能会或可能不会在移动设备上运行，具体取决于各种因素。
 
-### 我可以发送任何类型电子邮件的已读回执请求吗？
-
-是的，您可以发送大多数类型电子邮件的阅读回执请求，包括纯文本和 HTML 电子邮件。但是，收件人的电子邮件客户端必须支持已读回执处理才能有效工作。
-
-### 是否可以通过已读回执跟踪多个收件人的回复？
-
-是的，您可以通过在电子邮件中添加适当的标头来分别请求每个收件人的已读回执。这样，您就可以跟踪各个收件人与电子邮件的交互。
-
-### 如何处理未生成已读回执的情况？
-
-必须为不生成已读回执的情况做好准备。这可能是由于收件人偏好、电子邮件客户端限制或其他因素造成的。始终有其他方法来跟踪电子邮件参与度。
+5. ### 使用电子邮件阅读回执时是否需要考虑隐私问题？
+   是的，存在与电子邮件跟踪相关的隐私问题。一些接收者可能认为它具有侵入性，因此必须负责任地使用此功能并尊重隐私偏好。

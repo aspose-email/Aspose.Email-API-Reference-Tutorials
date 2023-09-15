@@ -18,13 +18,13 @@ url: /ar/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 
 تخدم رؤوس البريد الإلكتروني عدة أغراض مهمة:
 #### التوجيه: 
-	Headers determine the path an email takes from sender to recipient.
+تحدد الرؤوس المسار الذي تسلكه رسالة البريد الإلكتروني من المرسل إلى المستلم.
 #### المصادقة
-	Headers like DKIM and SPF help verify the authenticity of emails.
+تساعد الرؤوس مثل DKIM وSPF في التحقق من صحة رسائل البريد الإلكتروني.
 #### سطر الموضوع: 
-	The subject header gives recipients an idea of the email's content.
+يمنح رأس الموضوع المستلمين فكرة عن محتوى البريد الإلكتروني.
 #### معالجة الرد: 
-	Headers like Reply-To ensure proper handling of replies.
+رؤوس مثل الرد - لضمان المعالجة السليمة للردود.
 
 ## 3. تثبيت Aspose.Email لـ .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 يتم استخدام رؤوس معينة بشكل شائع في رسائل البريد الإلكتروني:
 
 #### موضوع: 
-	Set the email subject using the `message.Subject` property.
+ قم بتعيين موضوع البريد الإلكتروني باستخدام`message.Subject` ملكية.
 #### من: 
-	Specify the sender's address using the `message.From` property.
+ حدد عنوان المرسل باستخدام`message.From` ملكية.
 #### ل: 
-	Define the recipient's address using the `message.To` property.
+ تحديد عنوان المستلم باستخدام`message.To` ملكية.
 
 ## 6. تخصيص رؤوس إضافية
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. التعامل مع إصدار MIME ورؤوس نوع المحتوى
 
- ال`MIME-Version`يضمن الرأس التوافق المناسب مع MIME، في حين أن`Content-Type` يحدد الرأس نوع المحتوى في نص البريد الإلكتروني.
+ ال`MIME-Version` يضمن الرأس التوافق المناسب مع MIME، في حين أن`Content-Type` يحدد الرأس نوع المحتوى في نص البريد الإلكتروني.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

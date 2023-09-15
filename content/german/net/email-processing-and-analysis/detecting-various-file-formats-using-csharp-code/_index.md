@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // Erkennen Sie das Dateiformat
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Zeigen Sie das Ergebnis an
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Erkennen Sie das Dateiformat
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Zeigen Sie das Ergebnis an
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ Ja, Aspose.Email bietet umfassende Unterstützung für eine Vielzahl gängiger u
 
 ### Ist es möglich, die Version eines Dateiformats zu erkennen?
 
- Ja das`FileFormatInfo`Objekt zurückgegeben von`FileFormatUtil.DetectFileFormat` Bietet zusätzliche Informationen, einschließlich der Dateiformatversion.
+ Ja das`FileFormatInfo` Objekt zurückgegeben von`FileFormatUtil.DetectFileFormat` Bietet zusätzliche Informationen, einschließlich der Dateiformatversion.
 
 ### Kann ich Aspose.Email zur Dateiformaterkennung in Webanwendungen verwenden?
 

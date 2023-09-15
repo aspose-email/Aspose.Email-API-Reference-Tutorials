@@ -27,8 +27,6 @@ Maîtrisez la création d'e-mails en C# à l'aide d'Aspose.Email pour .NET. Un g
 Apprenez à générer TNEF EML à partir de MSG à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec le code C#. Conversion efficace du format d’e-mail.
 ### [Formation du format TNEF à partir de MSG avec C#](./forming-tnef-format-from-msg-with-csharp/)
 Découvrez comment convertir des fichiers MSG au format TNEF à l'aide d'Aspose.Email pour .NET. Créez du contenu de courrier électronique riche en toute transparence. 
-### [Création d'un brouillon de demande de rendez-vous - Exemple C#](./crafting-a-draft-appointment-request-csharp-example/)
-Découvrez comment utiliser Aspose.Email pour .NET pour créer des brouillons d'e-mails de demande de rendez-vous en C#. Améliorez la communication et l’efficacité de l’entreprise.
 ### [Définition d'un texte alternatif pour les images - Guide C#](./setting-alternative-text-for-images-csharp-guide/)
  Apprenez à définir un texte alternatif pour les images dans les e-mails à l'aide d'Aspose.Email pour .NET. Garantissez l’accessibilité avec un texte alternatif clair. Documentation et code inclus.
 ### [Gestion du codage de texte par défaut - Implémentation C#](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Découvrez comment configurer des en-têtes de courrier électronique personnali
 Découvrez comment améliorer le contenu des e-mails à l'aide de HTML dans Aspose.Email pour .NET. Guide étape par étape avec des exemples C#. Élevez votre communication par courrier électronique !
 ### [Spécification des adresses de destinataire en C#](./specifying-recipient-addresses-in-csharp/)
 Découvrez comment spécifier les adresses des destinataires en C# à l'aide d'Aspose.Email pour .NET. Créez, configurez et envoyez des e-mails efficacement.
+### [Chargement des messages électroniques avec les options de chargement en C#](./loading-email-messages-with-load-options-in-csharp/)
+Découvrez comment charger des e-mails avec Aspose.Email pour .NET en C#. Explorez un guide étape par étape et des exemples de code source pour une gestion efficace des e-mails.

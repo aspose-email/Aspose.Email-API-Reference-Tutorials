@@ -27,8 +27,6 @@ Bemästra e-postskapandet i C# med Aspose.Email för .NET. En omfattande guide m
 Lär dig att generera TNEF EML från MSG med Aspose.Email för .NET. Steg-för-steg-guide med C#-kod. Effektiv konvertering av e-postformat.
 ### [Bildar TNEF-format från MSG med C#](./forming-tnef-format-from-msg-with-csharp/)
 Lär dig hur du konverterar MSG-filer till TNEF-format med Aspose.Email för .NET. Skapa rikt e-postinnehåll sömlöst. 
-### [Skapa ett utkast till mötesbegäran - C# Exempel](./crafting-a-draft-appointment-request-csharp-example/)
-Lär dig hur du använder Aspose.Email för .NET för att skapa utkast till e-postmeddelanden om mötesförfrågan i C#. Förbättra affärskommunikation och effektivitet.
 ### [Ställa in alternativ text för bilder - C# Guide](./setting-alternative-text-for-images-csharp-guide/)
  Lär dig att ställa in alternativ text för bilder i e-postmeddelanden med Aspose.Email för .NET. Säkerställ tillgänglighet med tydlig alt-text. Dokumentation och kod ingår.
 ### [Hantera standardtextkodning - C#-implementering](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Lär dig hur du konfigurerar anpassade e-postrubriker i C# med Aspose.Email för
 Lär dig hur du förbättrar e-postinnehåll med HTML i Aspose.Email för .NET. Steg-för-steg-guide med C#-exempel. Lyft din e-postkommunikation!
 ### [Ange mottagaradresser i C#](./specifying-recipient-addresses-in-csharp/)
 Lär dig hur du anger mottagaradresser i C# med Aspose.Email för .NET. Skapa, konfigurera och skicka e-post effektivt.
+### [Ladda e-postmeddelanden med laddningsalternativ i C#](./loading-email-messages-with-load-options-in-csharp/)
+Lär dig hur du laddar e-postmeddelanden med Aspose.Email för .NET i C#. Utforska steg-för-steg-guide och källkodsexempel för effektiv e-posthantering.

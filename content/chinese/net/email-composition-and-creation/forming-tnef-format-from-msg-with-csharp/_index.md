@@ -41,7 +41,9 @@ var msg = MapiMessage.FromFile("sample.msg");
 ```csharp
 //将 MSG 转换为 TNEF
 var tnefStream = new MemoryStream();
-TnefWriter.WriteTnefMessage(tnefStream, msg);
+MailConversionOptions options = new MailConversionOptions();
+options.ConvertAsTnef = true;
+MailMessage mail = msg.ToMailMessage(options);
 ```
 
 ##  处理转换错误和异常
@@ -51,9 +53,14 @@ TnefWriter.WriteTnefMessage(tnefStream, msg);
 ```csharp
 try
 {
-    //将 MSG 转换为 TNEF
-    var tnefStream = new MemoryStream();
-    TnefWriter.WriteTnefMessage(tnefStream, msg);
+	//加载 MSG 文件
+	var msg = MapiMessage.FromFile("sample.msg");
+	//将 MSG 转换为 TNEF
+	var tnefStream = new MemoryStream();
+	MailConversionOptions options = new MailConversionOptions();
+	options.ConvertAsTnef = true;
+	MailMessage mail = msg.ToMailMessage(options);
+
 }
 catch (Exception ex)
 {

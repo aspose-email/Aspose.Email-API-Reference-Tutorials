@@ -47,7 +47,7 @@ AttachmentCollection attachments = emailMessage.Attachments;
 
 ## 6. Distinguere tra allegati in linea e allegati regolari
 
- Per distinguere tra allegati in linea e allegati regolari, è necessario ispezionare ciascun allegato`ContentDisposition` proprietà. Se la`ContentDisposition` è impostato su "in linea", l'allegato è un allegato in linea.
+Per distinguere tra allegati in linea e allegati regolari, è necessario ispezionare ciascun allegato`ContentDisposition` proprietà. Se la`ContentDisposition` è impostato su "in linea", l'allegato è un allegato in linea.
 
 ## 7. Lavorare con allegati in linea
 
@@ -90,7 +90,7 @@ In questa guida, abbiamo esplorato il mondo degli allegati di posta elettronica,
 
 ### Come posso installare la libreria Aspose.Email per .NET?
 
-È possibile installare la libreria Aspose.Email per .NET utilizzando NuGet Package Manager. È sufficiente eseguire il seguente comando nella Console di gestione pacchetti:`Install-Package Aspose.Email`.
+ È possibile installare la libreria Aspose.Email per .NET utilizzando NuGet Package Manager. È sufficiente eseguire il seguente comando nella Console di gestione pacchetti:`Install-Package Aspose.Email`.
 
 ### Posso distinguere a livello di codice tra gli allegati in linea e quelli regolari?
 

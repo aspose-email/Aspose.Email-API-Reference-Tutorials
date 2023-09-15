@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1.  قم بتحميل رسالة البريد الإلكتروني باستخدام`MapiMessage` فصل:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// قم بتحميل البريد الإلكتروني بمرفق TNEF
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. تحديد ما إذا كان البريد الإلكتروني الذي تم تحميله عبارة عن رسالة TNEF:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
  يستبدل`"path/to/your/email.msg"` بالمسار الفعلي لملف رسالة البريد الإلكتروني الخاص بك.
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 إذا كان البريد الإلكتروني الذي تم تحميله عبارة عن رسالة TNEF بالفعل، فيمكنك استخراج مرفقاته ومعالجتها:
 
 ```csharp
-if (isTnefMessage)
+// التكرار من خلال المرفقات
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // معالجة مرفق TNEF
-        // على سبيل المثال، حفظ المرفق على القرص
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // استخراج مرفق TNEF
+        var tnefAttachment = attachment;
+
+        //الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.Properties...
     }
 }
 ```
 
 ## الأسئلة الشائعة
 
-## كيف يمكنني التحقق مما إذا كان البريد الإلكتروني عبارة عن رسالة TNEF؟
+### كيف يمكنني التحقق مما إذا كان البريد الإلكتروني عبارة عن رسالة TNEF؟
 
  للتحقق مما إذا كان البريد الإلكتروني عبارة عن رسالة TNEF، استخدم`IsTnefMessage()` طريقة`MapiMessage` فصل:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## كيف يمكنني استخراج المرفقات من رسالة TNEF؟
+### كيف يمكنني استخراج المرفقات من رسالة TNEF؟
 
 لاستخراج المرفقات من رسالة TNEF، اتبع الخطوات التالية:
 
 1.  قم بتحميل البريد الإلكتروني باستخدام`MapiMessage.FromFile()`.
-2.  تحقق مما إذا كان البريد الإلكتروني عبارة عن رسالة TNEF تستخدم`IsTnefMessage()`.
-3.  إذا كانت رسالة TNEF، فاستخرج المرفقات باستخدام`ExtractTnefAttachments()`.
+2.  تحقق مما إذا كان البريد الإلكتروني عبارة عن رسالة TNEF تستخدم`OriginalIsTnef`.
+3. إذا كانت رسالة TNEF، فاستخرج المرفقات باستخدام تكرار المرفقات مع ContentType.MediaType يساوي "application/ms-tnef".
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// التكرار من خلال المرفقات
+foreach (var attachment in message.Attachments)
 {
-    // معالجة مرفق TNEF
-    // على سبيل المثال، حفظ المرفق على القرص
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // استخراج مرفق TNEF
+        var tnefAttachment = attachment;
+
+        //الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.Properties...
+    }
 }
 ```
 
@@ -104,6 +114,6 @@ foreach (TnefAttachment attachment in tnefAttachments)
 
 ## خاتمة
 
-لقد تعلمت في هذا الدليل كيفية اكتشاف رسائل TNEF (تنسيق تغليف النقل المحايد) باستخدام مكتبة Aspose.Email لـ .NET. تقوم رسائل TNEF، التي يستخدمها Microsoft Outlook غالبًا، بتغليف النص المنسق والمرفقات داخل رسائل البريد الإلكتروني. باتباع الخطوات الموضحة في هذا الدليل، يمكنك التعرف على رسائل TNEF بكفاءة واستخراج مرفقاتها لمزيد من المعالجة.
+في هذا الدليل، تعلمت كيفية اكتشاف رسائل TNEF (تنسيق تغليف النقل المحايد) باستخدام مكتبة Aspose.Email لـ .NET. تقوم رسائل TNEF، التي يستخدمها Microsoft Outlook غالبًا، بتغليف النص المنسق والمرفقات داخل رسائل البريد الإلكتروني. باتباع الخطوات الموضحة في هذا الدليل، يمكنك التعرف على رسائل TNEF بكفاءة واستخراج مرفقاتها لمزيد من المعالجة.
 
 

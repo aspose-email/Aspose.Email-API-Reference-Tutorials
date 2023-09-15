@@ -8,101 +8,96 @@ weight: 12
 url: /zh/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-无论出于个人还是职业目的，电子邮件通信已成为我们生活中不可或缺的一部分。处理关键电子邮件时，确保及时收到通知并建立跟踪机制非常重要。 Aspose.Email for .NET 提供了一个强大的解决方案来实现高效的电子邮件通知和跟踪。在本指南中，我们将逐步引导您完成该过程，并提供每个阶段的源代码示例。
+在当今的数字时代，电子邮件通信在个人和专业领域都发挥着至关重要的作用。作为一名程序员，您可能遇到过以编程方式处理和操作电子邮件的需要。一项常见任务是跟踪电子邮件文档转换的进度，在本文中，我们将使用 C# 和 Aspose.Email for .NET 逐步指导您完成该过程。
 
-## 电子邮件通知和跟踪简介
+## Aspose.Email for .NET 简介
 
-有效的沟通通常需要及时的通知以及跟踪收件人对内容的参与情况的能力。无论是重要的商业提案还是促销优惠，了解电子邮件何时打开并能够处理回复都可以显着影响您的结果。
+在深入研究代码之前，我们先简要介绍一下 Aspose.Email for .NET。这个强大的库提供了处理电子邮件的广泛功能，包括阅读、编写和转换各种格式的电子邮件。在我们的例子中，我们将重点关注电子邮件文档转换。
 
-## 设置开发环境
+## 设置您的环境
 
-在我们深入实施之前，请确保您的开发环境中安装了 Aspose.Email for .NET。如果没有，您可以从 Aspose Releases 下载它：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net).
+首先，您需要设置开发环境。确保您具备以下先决条件：
 
-使用您首选的 .NET 语言（C# 或 VB.NET）在 Visual Studio 中创建一个新项目。
+- 已安装 Aspose.Email for .NET 库。您可以从以下位置下载：[这里](https://releases.aspose.com/email/net/).
 
-## 发送电子邮件通知
+现在，让我们进入代码。我们将创建一个使用提供的 C# 源代码跟踪电子邮件文档转换进度的分步指南。
 
-让我们首先向收件人发送电子邮件通知。以下是如何使用 Aspose.Email for .NET 创建和发送电子邮件的基本示例：
+## 第 1 步：加载电子邮件消息
+
+我们首先从文件中加载电子邮件。确保更换`"Your Document Directory"`与文档目录的实际路径。
 
 ```csharp
-using Aspose.Email;
-
-//创建新电子邮件
-MailMessage message = new MailMessage();
-
-//添加收件人
-message.To.Add("recipient@example.com");
-
-//设置邮件内容
-message.Subject = "Important Update";
-message.Body = "Dear recipient, we have an important update for you.";
-
-//指定电子邮件优先级
-message.Priority = MailPriority.High;
-
-//发送电子邮件
-SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
-client.Send(message);
+string dataDir = "Your Document Directory";
+var fileName = dataDir + "test.eml";
+MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## 实施电子邮件跟踪
+## 第 2 步：定义自定义进度处理程序
 
-要跟踪电子邮件的打开情况，我们可以在电子邮件内容中嵌入跟踪像素。加载像素后，我们可以记录电子邮件已被打开。以下是如何使用 Aspose.Email for .NET 实现电子邮件跟踪：
-
-```csharp
-//创建跟踪像素
-string trackingPixel = "<img src='https://your-tracking-server.com/track?id=123456' alt='' width='1' height='1' />";
-
-//将像素添加到电子邮件正文
-message.HtmlBody = $"Dear recipient, {trackingPixel} we have an important update for you.";
-```
-
-## 处理电子邮件回复
-
-要以编程方式处理电子邮件回复，您可以监视预期回复的收件箱并提取其内容。这是一个简化的示例：
+在此步骤中，我们设置一个自定义进度处理程序来监视转换进度。这`ShowEmlConversionProgress`方法将在转换过程中被调用以提供有关进度的信息。
 
 ```csharp
-using Aspose.Email;
-
-//连接到邮箱
-ImapClient client = new ImapClient("imap.example.com", "username", "password");
-client.SelectFolder(ImapFolderInfo.InBox);
-
-//搜索回复电子邮件
-MailQueryBuilder queryBuilder = new MailQueryBuilder();
-queryBuilder.HasFlags(ImapMessageFlags.Answered);
-MailQuery query = queryBuilder.GetQuery();
-
-//检索并处理回复电子邮件
-ImapMessageInfoCollection replyEmails = client.ListMessages(query);
-foreach (ImapMessageInfo reply in replyEmails)
+private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 {
-    MailMessage replyMessage = client.FetchMessage(reply.UniqueId);
-    //在此处理回复内容
+    int total;
+    int saved;
+    switch (info.EventType)
+    {
+        case ProgressEventType.MimeStructureCreated:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimeStructureCreated - TotalMimePartCount: " + total);
+            Console.WriteLine("MimeStructureCreated - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.MimePartSaved:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimePartSaved - TotalMimePartCount: " + total);
+            Console.WriteLine("MimePartSaved - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.SavedToStream:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("SavedToStream - TotalMimePartCount: " + total);
+            Console.WriteLine("SavedToStream - SavedMimePartCount: " + saved);
+            break;
+    }
 }
 ```
 
-## 源代码示例
+## 第 3 步：保存电子邮件并跟踪进度
 
-完整的源代码示例，请参考[Aspose.Email for .NET 文档](https://reference.aspose.com/email/net).
+现在，让我们在跟踪进度的同时保存电子邮件。我们使用`EmlSaveOptions`具有自定义进度处理程序的类。
+
+```csharp
+MemoryStream ms = new MemoryStream();
+EmlSaveOptions opt = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+opt.CustomProgressHandler = new ConversionProgressEventHandler(ShowEmlConversionProgress);
+msg.Save(ms, opt);
+```
 
 ## 结论
 
-高效的电子邮件通信不仅涉及发送消息，还涉及确保及时接收和跟踪消息。借助 Aspose.Email for .NET，您拥有了一个强大的工具，可以在您的应用程序中无缝地实现电子邮件通知和跟踪。从发送通知到跟踪打开和处理回复，本指南涵盖了该过程的关键方面。
+恭喜！您已使用 C# 和 Aspose.Email for .NET 成功实现了电子邮件文档转换进度跟踪。在应用程序中处理大量电子邮件和文档转换时，此功能非常有价值。
+
+有关更多信息和详细文档，请访问[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net/).
+
 
 ## 常见问题解答
 
-### 如何安装 Aspose.Email for .NET？
-您可以从 Aspose 版本下载该库：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net).
+### 什么是 .NET 的 Aspose.Email？
+Aspose.Email for .NET 是一个功能强大的库，用于在 .NET 应用程序中处理电子邮件消息。它提供阅读、编写和转换电子邮件的功能。
 
-### 我可以使用单个像素跟踪多封电子邮件的打开情况吗？
-是的，您可以在跟踪像素 URL 中使用唯一标识符来区分不同的电子邮件并单独跟踪其打开情况。
+### 我可以使用 Aspose.Email for .NET 跟踪电子邮件文档转换进度吗？
+是的，您可以使用自定义进度处理程序跟踪电子邮件文档转换进度，如本文所示。
 
-### 是否可以在不使用跟踪像素的情况下跟踪电子邮件的打开情况？
-虽然跟踪像素是一种常见方法，但某些电子邮件客户端可能会阻止它们。或者，您可以嵌入外部资源的链接，这些链接也可以在单击时提供跟踪信息。
+### Aspose.Email for .NET 是否可以轻松集成到我的 C# 项目中？
+是的，Aspose.Email for .NET 很容易集成到 C# 项目中。您可以从网站下载并安装该库。
 
-### 如何确保电子邮件跟踪的隐私？
-请务必在隐私政策或使用条款中告知收件人有关电子邮件跟踪的信息。此外，请考虑为收件人提供选择退出跟踪的选项。
+### 还有其他库可以在 C# 中处理电子邮件吗？
+是的，还有其他库，但 Aspose.Email for .NET 以其全面的功能和易用性而闻名。
 
-### 除了 SMTP 和 IMAP 之外，Aspose.Email for .NET 是否支持其他电子邮件协议？
-是的，Aspose.Email for .NET 支持其他协议，例如 POP3 和 Exchange Web Services (EWS)，以执行各种与电子邮件相关的任务。
+### 在哪里可以找到有关 Aspose.Email for .NET 的更多教程和示例？
+您可以探索[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net/)有关教程、示例和详细文档。
+
+现在，您已做好充分准备，可以自信地在 C# 应用程序中处理电子邮件文档转换进度。快乐编码！

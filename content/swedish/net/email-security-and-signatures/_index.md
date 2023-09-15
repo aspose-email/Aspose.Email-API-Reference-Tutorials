@@ -22,7 +22,6 @@ Handledningarna om e-postsignaturer fokuserar på att göra det möjligt för ut
 
 
 ## Handledning för e-postsäkerhet och signaturer
-## [Hantera inbäddade objekt i e-postmeddelanden med C#-kod](./handling-embedded-objects-in-emails-with-csharp-code/)
-Lär dig hur du hanterar inbäddade objekt i e-postmeddelanden med C# och Aspose.Email för .NET. Skapa interaktivt och engagerande e-postinnehåll med steg-för-steg-vägledning och kodexempel.
-## [Signera e-postmeddelanden med DKIM med C#-kod](./signing-emails-with-dkim-using-csharp-code/)
+
+### [Signera e-postmeddelanden med DKIM med C#-kod](./signing-emails-with-dkim-using-csharp-code/)
 Lär dig att säkra e-postmeddelanden med DKIM med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod. Förbättra e-postförtroende och autenticitet.

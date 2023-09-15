@@ -70,11 +70,11 @@ foreach (Attachment attachment in message.Attachments)
     {
         // Bearbeta bildbilaga
     }
-    //Hantera andra redskapstyper på liknande sätt
+    // Hantera andra redskapstyper på liknande sätt
 }
 ```
 
-## Hanterar olika tillbehörstyper
+## Hantera olika tillbehörstyper
 
 Bilagor kan komma i olika format, såsom PDF-filer, bilder, dokument etc. Du kan skräddarsy din kod för att hantera olika bilagatyper efter det.
 
@@ -91,7 +91,7 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Slutsats
 
-I den här handledningen har vi utforskat hur man extraherar bilagor från e-postmeddelanden med hjälp av Aspose.Email-biblioteket för .NET. Genom att följa dessa steg kan du effektivt hämta och bearbeta bilagor från din e-postkommunikation.
+den här handledningen har vi utforskat hur man extraherar bilagor från e-postmeddelanden med hjälp av Aspose.Email-biblioteket för .NET. Genom att följa dessa steg kan du effektivt hämta och bearbeta bilagor från din e-postkommunikation.
 
 ## Vanliga frågor
 

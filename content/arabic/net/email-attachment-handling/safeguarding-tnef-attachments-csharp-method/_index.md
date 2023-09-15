@@ -36,13 +36,15 @@ using Aspose.Email.Mapi;
 1.  تحميل ملف TNEF: قم بتحميل ملف TNEF باستخدام ملف`MapiMessage` فصل:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. استخراج المرفقات: قم بالتكرار من خلال المرفقات واستخراجها:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // استخراج البيانات المرفقة
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ foreach (MapiAttachment attachment in message.Attachments)
 بعد تطبيق إجراءات الحماية الخاصة بك، يمكنك حفظ المرفقات بشكل آمن:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // المنطق الوقائي
     // ...
-    // احفظ المرفق
+    //احفظ المرفق
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ foreach (MapiAttachment attachment in message.Attachments)
 
 ### ما مدى تكرار إصدار التحديثات لـ Aspose.Email؟
 
- يقوم Aspose بشكل متكرر بإصدار التحديثات والتحسينات لمكتباته. من المستحسن التحقق من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو[Aspose.Email لمرجع .Net API](https://reference.aspose.com/email/net) للحصول على آخر التحديثات والميزات.
+يقوم Aspose بشكل متكرر بإصدار التحديثات والتحسينات لمكتباته. من المستحسن التحقق من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو[Aspose.Email لمرجع .Net API](https://reference.aspose.com/email/net) للحصول على آخر التحديثات والميزات.
 
 ### هل يمكنني استخدام Aspose.Email في المشاريع التجارية؟
 

@@ -94,7 +94,7 @@ class Program
 
 ### كيف يمكنني تنزيل مكتبة Aspose.Email؟
 
- يمكنك تنزيل مكتبة Aspose.Email من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/)أو باستخدام NuGet Package Manager في Visual Studio.
+ يمكنك تنزيل مكتبة Aspose.Email من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو باستخدام NuGet Package Manager في Visual Studio.
 
 ### هل يمكنني إرفاق ملفات متعددة ببريد إلكتروني واحد؟
 

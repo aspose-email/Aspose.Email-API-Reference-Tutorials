@@ -10,7 +10,7 @@ url: /tr/net/email-conversion-and-export/
 
 ## giriiş
 
-Aspose.Email for .NET tarafından sağlanan E-posta Dönüştürme ve Dışa Aktarma eğitimleri, geliştiricilere farklı formatlardaki e-posta verilerini sorunsuz bir şekilde yönetmeleri için kapsamlı bir kaynak sunar. Bu eğitimler, geliştiricilere e-posta mesajlarını verimli bir şekilde dönüştürüp dışa aktarmaları için gerekli araçları sağlayarak verilerin birlikte çalışabilirliğini ve işbirlikçi iş akışlarını destekler. Aspose.Email for .NET'in yeteneklerinden yararlanan geliştiriciler, veri bütünlüğünü korurken e-postaları farklı dosya formatları arasında zahmetsizce dönüştürebilir. Öğreticilerde, bu işlevlerin uygulamalara entegrasyonunu kolaylaştıran, açıklayıcı kod parçacıklarıyla birlikte kapsamlı adım adım talimatlar bulunur. Aspose.Email for .NET ile e-posta dönüştürme ve dışa aktarma süreçleri optimize edilerek üretkenliğin artmasına ve veri erişilebilirliğinin kolaylaştırılmasına katkıda bulunulur.
+Aspose.Email for .NET tarafından sağlanan E-posta Dönüştürme ve Dışa Aktarma eğitimleri, geliştiricilere farklı formatlardaki e-posta verilerini sorunsuz bir şekilde yönetmeleri için kapsamlı bir kaynak sunar. Bu eğitimler, geliştiricilere e-posta mesajlarını verimli bir şekilde dönüştürüp dışa aktarmaları için gerekli araçları sağlayarak verilerin birlikte çalışabilirliğini ve işbirlikçi iş akışlarını destekler. Geliştiriciler, Aspose.Email for .NET'in yeteneklerinden yararlanarak, veri bütünlüğünü korurken e-postaları farklı dosya formatları arasında zahmetsizce dönüştürebilir. Öğreticilerde, bu işlevlerin uygulamalara entegrasyonunu kolaylaştıran, açıklayıcı kod parçacıklarıyla birlikte kapsamlı adım adım talimatlar bulunur. Aspose.Email for .NET ile e-posta dönüştürme ve dışa aktarma süreçleri optimize edilerek üretkenliğin artmasına ve veri erişilebilirliğinin kolaylaştırılmasına katkıda bulunulur.
 
 ## E-posta Dönüşümü
 
@@ -19,8 +19,6 @@ E-posta dönüştürme eğitimleri, e-postaların MSG, EML, MHTML ve HTML gibi �
 ## E-posta Dışa Aktarma
 
 E-posta dışa aktarma eğitimleri, geliştiricilerin farklı e-posta istemcisi depolama biçimlerinden e-posta iletilerini dışa aktarmalarına olanak sağlamaya odaklanır. İster Microsoft Exchange Server'dan ister Microsoft Outlook'tan e-postaları dışa aktarıyor olun, bu eğitimler e-posta verilerinin alınması ve dışa aktarılmasıyla ilgili net talimatlar sağlar. Bu işlevsellik, veri taşıma, yedekleme ve senkronizasyon amaçları için gereklidir. Eğiticiler, çeşitli kaynaklardan e-posta verilerine erişme ve bunları istenen formatlara aktarma konusunda adım adım bir kılavuz sunarak verilerin farklı sistemlerde erişilebilir ve kullanılabilir kalmasını sağlar.
-
- Ayrıntılı bilgiler ve pratik uygulama örnekleri için[Aspose.Email for .NET E-posta Dönüştürme ve Dışa Aktarma eğitimleri](https://reference2.aspose.com/tutorials/email/net/email-conversion-and-export/). Aspose.Email for .NET ile e-posta veri yönetimi becerilerinizi geliştirin ve verimli e-posta dönüştürme ve dışa aktarma potansiyelini ortaya çıkarın, sonuçta geliştirme çabalarınızı geliştirin.
 
 ## E-posta Dönüştürme ve Dışa Aktarma Eğitimleri
 ### [MHTML Dönüşümünü Özelleştirme - C# Uygulaması](./customizing-mhtml-conversion-csharp-implementation/)
@@ -33,8 +31,6 @@ Aspose.Email for .NET'i kullanarak e-postalarınızı doğru zaman dilimleriyle 
 Aspose.Email for .NET kullanarak C#'ta EML dosyalarını nasıl yöneteceğinizi öğrenin. E-posta iletilerini yüklemeye, değiştirmeye ve kaydetmeye ilişkin kod örnekleri içeren adım adım kılavuz.
 ### [C# kullanarak EML'yi MSG Formatına dönüştürme](./converting-eml-to-msg-format-using-csharp/)
 C# ve Aspose.Email for .NET kullanarak EML'yi MSG'ye nasıl dönüştüreceğinizi öğrenin. Etkili e-posta biçimi dönüşümü için kod örnekleri içeren kapsamlı bir kılavuz.
-### [Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
-Kaynak kodlu bu adım adım kılavuzdan Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin.
 ### [C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme](./csharp-guide-saving-email-as-mhtml-file/)
 C# ve Aspose.Email for .NET kullanarak e-postaları MHTML dosyaları olarak nasıl kaydedeceğinizi öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
 ### [C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme](./draft-message-handling-in-csharp-saving-email-as-draft/)

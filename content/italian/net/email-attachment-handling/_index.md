@@ -40,3 +40,9 @@ Scopri come distinguere tra allegati di posta elettronica in linea e normali uti
 Scopri come rimuovere gli allegati di posta elettronica utilizzando Aspose.Email per .NET. Guida dettagliata con codice sorgente C#.
 ### [Salvaguardia degli allegati TNEF - Metodo C#](./safeguarding-tnef-attachments-csharp-method/)
 Scopri come salvaguardare gli allegati TNEF utilizzando C# e Aspose.Email per .NET. Guida passo passo con codice sorgente incluso.
+### [Estrazione di allegati incorporati da file MSG utilizzando C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Scopri come estrarre allegati incorporati da file MSG utilizzando C# e Aspose.Email per .NET. Una guida completa con esempi di codice sorgente.
+### [Conservazione del formato MSG incorporato durante il caricamento con C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Scopri come preservare il formato MSG incorporato utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente.
+### [Conservazione degli allegati TNEF durante la lettura dei messaggi: approccio C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Scopri come preservare gli allegati TNEF utilizzando Aspose.Email per .NET in questa guida passo passo con il codice sorgente.

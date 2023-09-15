@@ -25,8 +25,6 @@ tutorial sulla manipolazione delle intestazioni di posta elettronica si concentr
 Scopri come modificare gli indirizzi e-mail utilizzando C# con l'aiuto di Aspose.Email per .NET. Segui questa guida passo passo per manipolare gli indirizzi email in modo efficace.
 ### [Modifica dei caratteri durante la conversione MHT utilizzando C#](./changing-fonts-during-mht-conversion-using-csharp/)
 Scopri come modificare i caratteri durante la conversione MHT utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente. Perfetto per l'archiviazione della posta elettronica e la gestione dei documenti.
-### [Modifica dell'ID Prod nei file ICS con C#](./altering-prodid-in-ics-files-with-csharp/)
-Impara a modificare ProdID nei file ICS utilizzando C# e Aspose.Email per .NET. Guida e codice passo passo. Garantisci l'integrità e la compatibilità dei dati. 
 ### [ Rendering del collegamento ipertestuale personalizzato in C#](./custom-hyperlink-rendering-in-csharp/)
 Impara a personalizzare il rendering del collegamento ipertestuale in C# utilizzando Aspose.Email per .NET. Crea contenuti e-mail personalizzati con stili di collegamento ipertestuale personalizzati.
 ### [Definizione dell'ordine personalizzato delle informazioni in MHTML con C#](./defining-custom-order-of-information-in-mhtml-with-csharp/)

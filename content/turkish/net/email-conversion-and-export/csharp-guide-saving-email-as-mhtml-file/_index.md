@@ -10,7 +10,7 @@ url: /tr/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file
 
 ## E-postayı MHTML Dosyası Olarak Kaydetmeye Giriş
 
-Aspose.Email for .NET, geliştiricilerin e-posta mesajları, takvimler, kişiler ve görevlerle programlı olarak çalışmasına olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Aspose.Email, ister e-postayla ilgili uygulamalar oluşturuyor, ister mesajları işliyor, ister e-postalardan veri çıkarıyor olun, görevi kolaylaştırır.
+Aspose.Email for .NET, geliştiricilerin e-posta mesajları, takvimler, kişiler ve görevlerle programlı olarak çalışmasına olanak tanıyan, zengin özelliklere sahip bir kütüphanedir. İster e-postayla ilgili uygulamalar oluşturuyor olun, ister mesajları işliyor olun, ister e-postalardan veri çıkarıyor olun, Aspose.Email görevi kolaylaştırır.
 
 ## Kurulum ve Kurulum
 

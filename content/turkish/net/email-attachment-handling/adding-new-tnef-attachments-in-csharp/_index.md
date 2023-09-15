@@ -32,7 +32,9 @@ Başlamak için TNEF eki içeren mevcut bir e-postayı yükleyelim. E-posta dosy
 using Aspose.Email.Mail;
 
 // E-postayı TNEF ekiyle yükleyin
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## TNEF Eklerini Çıkarma ve Değiştirme
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // TNEF ekini çıkarın
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // TNEF özelliklerine erişin ve gerekirse değiştirin
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
         // tnefAttachment.Özellikler...
     }
 }
@@ -60,7 +62,9 @@ TNEF ekini değiştirdikten sonra e-postayı tekrar bir dosyaya kaydedebilirsini
 
 ```csharp
 // Değiştirilen e-postayı kaydet
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Çözüm

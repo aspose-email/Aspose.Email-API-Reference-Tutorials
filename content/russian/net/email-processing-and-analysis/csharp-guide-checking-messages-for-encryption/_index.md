@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### Проверка шифрования сообщения
-
-Вы также можете проверить, имеет ли сообщение цифровую подпись и зашифровано:
-
-```csharp
-using Aspose.Email.Security;
-// Другие соответствующие операторы использования
-
-// Загрузить сообщение электронной почты
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// Убедитесь, что сообщение подписано и зашифровано.
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Проверьте шифрование
-if (isSigned && isEncrypted)
-{
-    // Сообщение подписано и зашифровано
-}
-```
-
 ## Расшифровка зашифрованных сообщений
 
 Для расшифровки зашифрованного сообщения требуются соответствующие ключи и сертификаты. Вот как это можно сделать с помощью Aspose.Email:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Предоставьте ключ расшифровки и сертификат
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Расшифровать сообщение
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## Обработка исключений

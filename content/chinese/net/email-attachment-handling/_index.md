@@ -40,3 +40,9 @@ Aspose.Email for .NET 关于“电子邮件附件和附件处理”的教程为�
 了解如何使用 Aspose.Email for .NET 删除电子邮件附件。包含 C# 源代码的分步指南。
 ### [保护 TNEF 附件 - C# 方法](./safeguarding-tnef-attachments-csharp-method/)
 了解如何使用 C# 和 Aspose.Email for .NET 保护 TNEF 附件。包含源代码的分步指南。
+### [使用 C# 从 MSG 文件中提取嵌入式附件](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+了解如何使用 C# 和 Aspose.Email for .NET 从 MSG 文件中提取嵌入附件。包含源代码示例的综合指南。
+### [使用 C# 加载期间保留嵌入的 MSG 格式](./preserving-embedded-msg-format-during-load-with-csharp/)
+了解如何使用 Aspose.Email for .NET 保留嵌入的 MSG 格式。带有源代码的分步指南。
+### [读取消息时保留 TNEF 附件 - C# 方法](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+在此包含源代码的分步指南中，了解如何使用 Aspose.Email for .NET 保留 TNEF 附件。

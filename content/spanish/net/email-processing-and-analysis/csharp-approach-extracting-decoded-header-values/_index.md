@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Cargar el mensaje de correo electrónico
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Extraer y decodificar el encabezado del Asunto
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Imprima el encabezado del Asunto decodificado
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ En el fragmento de código anterior, realizamos los siguientes pasos:
 
 1. Importamos los espacios de nombres necesarios (`Aspose.Email` y`Aspose.Email.Mail`).
 2.  Creamos un`Main` método como punto de entrada de nuestra aplicación.
-3.  Dentro de`Main` método, utilizamos el`MailMessage.Load` Método para cargar un mensaje de correo electrónico desde un archivo. Reemplazar`"path/to/your/email.eml"` con la ruta real al mensaje de correo electrónico que desea procesar.
-4.  Usamos el`HeaderDecoder.DecodeHeader` método para decodificar el encabezado Asunto.
+3.  Dentro de`Main`método, utilizamos el`MailMessage.Load` Método para cargar un mensaje de correo electrónico desde un archivo. Reemplazar`"path/to/your/email.eml"` con la ruta real al mensaje de correo electrónico que desea procesar.
+4.  Usamos el`Headers.GetDecodedValue` método para decodificar el encabezado Asunto.
 5. Imprimimos el encabezado Asunto decodificado en la consola.
 
 ## Paso 5: Ejecute la aplicación
@@ -68,7 +64,7 @@ En el fragmento de código anterior, realizamos los siguientes pasos:
 
 ### ¿Cómo puedo decodificar otros encabezados de correo electrónico usando Aspose.Email para .NET?
 
- Puede decodificar varios encabezados de correo electrónico como "De", "Para", "Fecha", etc., utilizando el`HeaderDecoder.DecodeHeader` método. Simplemente proporcione el valor del encabezado como parámetro del método.
+ Puede decodificar varios encabezados de correo electrónico como "De", "Para", "Fecha", etc., utilizando el`Headers.GetDecodedValue` método. Simplemente proporcione el valor del encabezado como parámetro del método.
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Email para .NET?
 

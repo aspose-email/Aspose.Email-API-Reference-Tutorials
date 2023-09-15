@@ -83,13 +83,13 @@ Följ dessa steg för att generera TNEF EML-filer från MSG-filer med Aspose.Ema
 
 ##  Slutsats
 
-den här guiden har du lärt dig hur du genererar TNEF EML-filer från MSG-filer med hjälp av Aspose.Email for .NET-biblioteket. Detta kraftfulla bibliotek ger dig de verktyg du behöver för att arbeta med olika e-postformat i dina C#-applikationer.
+I den här guiden har du lärt dig hur du genererar TNEF EML-filer från MSG-filer med hjälp av Aspose.Email for .NET-biblioteket. Detta kraftfulla bibliotek ger dig de verktyg du behöver för att arbeta med olika e-postformat i dina C#-applikationer.
 
 ##  Vanliga frågor
 
 ### Hur får jag Aspose.Email för .NET-biblioteket?
 
- Du kan hämta Aspose.Email for .NET-biblioteket från Aspose-versionerna:[Ladda ner Aspose.Email för .NET](https://releases.aspose.com/email/net).
+Du kan hämta Aspose.Email for .NET-biblioteket från Aspose-versionerna:[Ladda ner Aspose.Email för .NET](https://releases.aspose.com/email/net).
 
 ### Kan jag använda Aspose.Email för andra format än MSG?
 

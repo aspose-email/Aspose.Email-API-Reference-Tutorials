@@ -19,7 +19,7 @@ Bevor wir uns mit der Implementierung befassen, stellen Sie sicher, dass die fol
 - Visual Studio (oder eine beliebige C#-Entwicklungsumgebung)
 - Aspose.Email für .NET-Bibliothek
 
- Sie können die Aspose.Email-Bibliothek unter herunterladen[Hier](https://releases.aspose.com/email/net).
+ Sie können die Aspose.Email-Bibliothek herunterladen von[Hier](https://releases.aspose.com/email/net).
 
 ## Einrichten des Projekts
 

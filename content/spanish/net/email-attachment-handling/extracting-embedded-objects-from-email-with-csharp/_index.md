@@ -14,7 +14,7 @@ Los objetos incrustados en los correos electrónicos se refieren a archivos que 
 
 ## Primeros pasos con Aspose.Email para .NET
 
-Aspose.Email para .NET es una poderosa biblioteca que proporciona varias funciones para trabajar con correos electrónicos, incluido el análisis, la creación y la manipulación de mensajes de correo electrónico. Para comenzar, necesita tener la biblioteca Aspose.Email para .NET instalada en su proyecto. Puede descargarlo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilice un administrador de paquetes como NuGet.
+ Aspose.Email para .NET es una poderosa biblioteca que proporciona varias funciones para trabajar con correos electrónicos, incluido el análisis, la creación y la manipulación de mensajes de correo electrónico. Para comenzar, necesita tener la biblioteca Aspose.Email para .NET instalada en su proyecto. Puede descargarlo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilice un administrador de paquetes como NuGet.
 
 ## Cargando y analizando un correo electrónico
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Extraiga objetos incrustados del contenido HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Extraiga y guarde el recurso vinculado (objeto incrustado)
+            // Extraiga y guarde el recurso vinculado (objeto incrustado)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Extraiga objetos incrustados del contenido HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Extraiga y guarde el recurso vinculado (objeto incrustado)
+                        // Extraiga y guarde el recurso vinculado (objeto incrustado)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

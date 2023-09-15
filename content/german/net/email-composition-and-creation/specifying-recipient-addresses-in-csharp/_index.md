@@ -16,7 +16,7 @@ Dieser Leitfaden führt Sie durch den Prozess der Angabe von Empfängeradressen 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 1. Visual Studio oder eine beliebige C#-Entwicklungsumgebung installiert.
-2. Aspose.Email für .NET-Bibliothek. Sie erhalten es von der[Aspose.Email für .NET-Versionen](https://releases.aspose.com/email/net/).
+2.  Aspose.Email für .NET-Bibliothek. Sie erhalten es von der[Aspose.Email für .NET-Versionen](https://releases.aspose.com/email/net/).
 
 ## Schritte
 

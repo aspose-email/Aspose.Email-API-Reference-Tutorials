@@ -36,13 +36,15 @@ För att skydda TNEF-tillbehör måste vi först ladda och extrahera dem. Följ 
 1.  Ladda TNEF-fil: Ladda TNEF-filen med hjälp av`MapiMessage` klass:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Extrahera bilagor: Iterera igenom bilagorna och extrahera dem:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Extrahera bifogade data
    byte[] attachmentData = attachment.GetContent();
@@ -59,11 +61,11 @@ När bilagorna har extraherats kan du genomföra dina skyddsåtgärder. Detta ka
 Efter att ha tillämpat dina skyddsåtgärder kan du spara bilagorna på ett säkert sätt:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Skyddslogik
     // ...
-    // Spara bilagan
+    //Spara bilagan
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
@@ -88,7 +90,7 @@ Ja, Aspose.Email stöder olika e-postprotokoll som SMTP, POP3, IMAP och Exchange
 
 ### Hur ofta släpps uppdateringar för Aspose.Email?
 
- Aspose släpper ofta uppdateringar och förbättringar av sina bibliotek. Det rekommenderas att kontrollera Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) eller[Aspose.Email för .Net API-referens](https://reference.aspose.com/email/net) för de senaste uppdateringarna och funktionerna.
+Aspose släpper ofta uppdateringar och förbättringar av sina bibliotek. Det rekommenderas att kontrollera Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) eller[Aspose.Email för .Net API-referens](https://reference.aspose.com/email/net) för de senaste uppdateringarna och funktionerna.
 
 ### Kan jag använda Aspose.Email i kommersiella projekt?
 

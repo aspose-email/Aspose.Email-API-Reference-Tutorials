@@ -41,7 +41,9 @@ var msg = MapiMessage.FromFile("sample.msg");
 ```csharp
 // MSG'yi TNEF'ye dönüştür
 var tnefStream = new MemoryStream();
-TnefWriter.WriteTnefMessage(tnefStream, msg);
+MailConversionOptions options = new MailConversionOptions();
+options.ConvertAsTnef = true;
+MailMessage mail = msg.ToMailMessage(options);
 ```
 
 ##  Dönüşüm Hatalarını ve İstisnalarını Ele Alma
@@ -51,9 +53,14 @@ Dönüştürme işlemi sırasında, uygulamanızın güvenilirliğini sağlamak 
 ```csharp
 try
 {
-    // MSG'yi TNEF'ye dönüştür
-    var tnefStream = new MemoryStream();
-    TnefWriter.WriteTnefMessage(tnefStream, msg);
+	// MSG dosyasını yükle
+	var msg = MapiMessage.FromFile("sample.msg");
+	// MSG'yi TNEF'ye dönüştür
+	var tnefStream = new MemoryStream();
+	MailConversionOptions options = new MailConversionOptions();
+	options.ConvertAsTnef = true;
+	MailMessage mail = msg.ToMailMessage(options);
+
 }
 catch (Exception ex)
 {
@@ -78,7 +85,7 @@ Bu yazıda Aspose.Email for .NET kullanarak MSG dosyalarından TNEF formatının
 
 ### TNEF formatı e-posta iletişimini nasıl geliştirir?
 
-TNEF formatı, e-posta iletişiminin görsel ve etkileşimli yönlerini geliştirerek, e-posta mesajları içinde zengin metin ve multimedya öğelerinin kapsüllenmesine olanak tanır.
+TNEF formatı, e-posta iletileri içinde zengin metin ve multimedya öğelerinin kapsüllenmesine olanak tanıyarak e-posta iletişiminin görsel ve etkileşimli yönlerini geliştirir.
 
 ### Dönüştürme sürecini ihtiyaçlarıma uyacak şekilde özelleştirebilir miyim?
 
@@ -94,4 +101,4 @@ Evet, test etme ve doğrulama, dönüştürülen TNEF dosyalarının bütünlü�
 
 ### Aspose.Email for .NET hakkında daha fazla bilgiyi nereden edinebilirim?
 
-Aspose.Email for .NET ile ilgili ayrıntılı belge ve kaynakları şu adreste bulabilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Bu belge kitaplığın özelliklerini ve yeteneklerini keşfetmenize yardımcı olacaktır.
+ Aspose.Email for .NET ile ilgili ayrıntılı belge ve kaynakları şu adreste bulabilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Bu belge kitaplığın özelliklerini ve yeteneklerini keşfetmenize yardımcı olacaktır.

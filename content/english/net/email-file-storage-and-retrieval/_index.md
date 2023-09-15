@@ -21,9 +21,9 @@ The email file storage tutorials delve into the intricacies of effectively stori
 The email retrieval tutorials focus on enabling developers to retrieve email-related files efficiently using Aspose.Email for .NET. Developers can explore techniques to access stored emails and attachments programmatically, ensuring seamless retrieval and utilization. These tutorials offer step-by-step instructions on integrating retrieval logic, searching for specific email content, and incorporating retrieved data into applications. Aspose.Email for .NET simplifies email file retrieval tasks, allowing developers to optimize their applications for efficient data access and utilization.
 
 ## Email File Storage and Retrieval Tutorials
-## [Reading All Messages from Zimbra TGZ Storage with C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Reading All Messages from Zimbra TGZ Storage with C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 Learn how to read Zimbra TGZ storage messages using C# and Aspose.Email for .NET. Step-by-step guide with source code included.
-## [Reading Messages from NSF Storage using C#](./reading-messages-from-nsf-storage-using-csharp/)
+### [Reading Messages from NSF Storage using C#](./reading-messages-from-nsf-storage-using-csharp/)
 Learn how to read NSF storage messages using C# and Aspose.Email for .NET. A step-by-step guide with code examples.
-## [Saving Messages from Zimbra TGZ Storage with C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Saving Messages from Zimbra TGZ Storage with C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Learn how to extract Zimbra TGZ emails using Aspose.Email for .NET. Step-by-step guide with source code for efficient email management.

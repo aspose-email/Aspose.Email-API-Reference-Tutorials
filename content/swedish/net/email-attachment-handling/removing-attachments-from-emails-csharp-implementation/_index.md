@@ -71,7 +71,7 @@ message.Save("path/to/save/modified/email.eml");
 
 ## Slutsats
 
-I den här artikeln undersökte vi hur man tar bort bilagor från e-postmeddelanden med hjälp av Aspose.Email for .NET-biblioteket. Vi diskuterade vikten av en ren inkorg och hur Aspose.Email förenklar processen med att manipulera bilagor. Genom att följa stegen som beskrivs i den här guiden kan du enkelt integrera denna funktionalitet i dina egna C#-applikationer.
+den här artikeln undersökte vi hur man tar bort bilagor från e-postmeddelanden med hjälp av Aspose.Email for .NET-biblioteket. Vi diskuterade vikten av en ren inkorg och hur Aspose.Email förenklar processen med att manipulera bilagor. Genom att följa stegen som beskrivs i den här guiden kan du enkelt integrera denna funktionalitet i dina egna C#-applikationer.
 
 ## Vanliga frågor
 

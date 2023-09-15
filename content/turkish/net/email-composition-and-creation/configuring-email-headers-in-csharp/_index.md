@@ -18,13 +18,13 @@ E-posta üstbilgileri, bir e-posta mesajıyla ilgili önemli ayrıntıları içe
 
 E-posta başlıkları birkaç önemli amaca hizmet eder:
 #### Yönlendirme: 
-	Headers determine the path an email takes from sender to recipient.
+Başlıklar, bir e-postanın göndericiden alıcıya kadar izlediği yolu belirler.
 #### Kimlik doğrulama
-	Headers like DKIM and SPF help verify the authenticity of emails.
+DKIM ve SPF gibi başlıklar e-postaların doğruluğunun doğrulanmasına yardımcı olur.
 #### Konu satırı: 
-	The subject header gives recipients an idea of the email's content.
+Konu başlığı, alıcılara e-postanın içeriği hakkında bir fikir verir.
 #### Yanıt İşleme: 
-	Headers like Reply-To ensure proper handling of replies.
+Reply-To gibi başlıklar yanıtların doğru şekilde işlenmesini sağlar.
 
 ## 3. Aspose.Email for .NET'in Kurulumu
 
@@ -63,11 +63,11 @@ client.Send(message);
 Belirli başlıklar e-posta mesajlarında yaygın olarak kullanılır:
 
 #### Ders: 
-	Set the email subject using the `message.Subject` property.
+ kullanarak e-posta konusunu ayarlayın.`message.Subject` mülk.
 #### İtibaren: 
-	Specify the sender's address using the `message.From` property.
+ kullanarak gönderenin adresini belirtin.`message.From` mülk.
 #### İle: 
-	Define the recipient's address using the `message.To` property.
+ Alıcının adresini kullanarak tanımlayın.`message.To` mülk.
 
 ## 6. Ek Başlıkları Özelleştirme
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. MIME Sürümü ve İçerik Türü Başlıklarını Kullanma
 
-`MIME-Version`başlık uygun MIME uyumluluğunu sağlarken,`Content-Type` başlık, e-posta gövdesindeki içeriğin türünü belirtir.
+`MIME-Version` başlık uygun MIME uyumluluğunu sağlarken,`Content-Type` başlık, e-posta gövdesindeki içeriğin türünü belirtir.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

@@ -10,33 +10,20 @@ url: /es/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
 En el mundo de la comunicación moderna, el correo electrónico sigue siendo un método básico de correspondencia. La elaboración y el envío de correos electrónicos mediante programación puede optimizar en gran medida diversos procesos comerciales, como el envío de notificaciones transaccionales, campañas de marketing y más. En este artículo, exploraremos cómo crear un correo electrónico nuevo usando C# con la ayuda de la biblioteca Aspose.Email para .NET. Cubriremos todo paso a paso, desde la configuración del entorno hasta el envío del correo electrónico, con ejemplos de código fuente.
 
-## Describir
 
-1. Introducción
-2. Requisitos previos
-3. Configurando el proyecto
-4. Crear contenido de correo electrónico
-5. Configurar los ajustes SMTP
-6. Enviando el correo electrónico
-7. Manejo de excepciones
-8. Conclusión
-9. Preguntas frecuentes
-
-## Guía paso por paso
-
-### Requisitos previos
+## Requisitos previos
 
 Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
 
 - Visual Studio o cualquier entorno de desarrollo C#
 - Aspose.Email para la biblioteca .NET (puede descargarlo desde NuGet)
 
-### Configurando el proyecto
+## Configurando el proyecto
 
 1. Cree un nuevo proyecto de C# en el entorno de desarrollo elegido.
 2. Agregue referencias a la biblioteca Aspose.Email para .NET.
 
-### Crear contenido de correo electrónico
+## Crear contenido de correo electrónico
 
 1. Importe los espacios de nombres necesarios:
 
@@ -60,7 +47,7 @@ Antes de profundizar en la implementación, asegúrese de tener implementados lo
    message.Body = "This is the content of the email.";
    ```
 
-### Configurar los ajustes SMTP
+## Configurar los ajustes SMTP
 
 1.  Crear una instancia del`SmtpClient` clase:
 
@@ -78,7 +65,7 @@ Antes de profundizar en la implementación, asegúrese de tener implementados lo
    client.SecurityOptions = SecurityOptions.Auto;
    ```
 
-### Enviando el correo electrónico
+## Enviando el correo electrónico
 
 1.  Utilizar el`client` instancia para enviar el correo electrónico:
 
@@ -86,7 +73,7 @@ Antes de profundizar en la implementación, asegúrese de tener implementados lo
    client.Send(message);
    ```
 
-### Manejo de excepciones
+## Manejo de excepciones
 
 1.  Envuelva el código de envío de correo electrónico en un`try-catch` bloque para manejar excepciones:
 

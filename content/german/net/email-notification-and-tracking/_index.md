@@ -21,9 +21,9 @@ Die Tutorials zur E-Mail-Benachrichtigung befassen sich mit den Feinheiten der I
 Die E-Mail-Tracking-Tutorials konzentrieren sich darauf, Entwicklern die Implementierung von E-Mail-Tracking-Funktionen mit Aspose.Email für .NET zu ermöglichen. Entwickler können Techniken zur Überwachung von E-Mail-Interaktionen wie Öffnungsraten und Link-Klicks erkunden, um Erkenntnisse über das Engagement der Empfänger zu gewinnen. Diese Tutorials bieten Schritt-für-Schritt-Anleitungen zum Einbetten von Tracking-Elementen in E-Mail-Inhalte, zum Erfassen von Tracking-Daten und zum Erstellen von Berichten. Aspose.Email für .NET vereinfacht E-Mail-Tracking-Aufgaben und ermöglicht Entwicklern, ihre Anwendungen mit datengesteuerten Einblicken in das Verhalten von E-Mail-Empfängern zu verbessern.
 
 ## E-Mail-Benachrichtigungs- und Tracking-Tutorials
-## [Empfangen von E-Mail-Benachrichtigungen mit C#-Code](./receiving-email-notifications-with-csharp-code/)
+### [Empfangen von E-Mail-Benachrichtigungen mit C#-Code](./receiving-email-notifications-with-csharp-code/)
 Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in C# mit Aspose.Email für .NET empfangen. Effizientes Codebeispiel bereitgestellt.
-## [Anfordern von E-Mail-Lesebestätigungen mithilfe von C#-Code](./requesting-email-read-receipts-using-csharp-code/)
+### [Anfordern von E-Mail-Lesebestätigungen mithilfe von C#-Code](./requesting-email-read-receipts-using-csharp-code/)
 Erfahren Sie, wie Sie C#-Code verwenden, um E-Mail-Lesebestätigungen mit Aspose.Email für .NET anzufordern und so die Kommunikationsverfolgung zu verbessern.
-## [Verfolgen des Konvertierungsfortschritts von E-Mail-Dokumenten mit C#-Code](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [Verfolgen des Konvertierungsfortschritts von E-Mail-Dokumenten mit C#-Code](./tracking-email-document-conversion-progress-with-csharp-code/)
 Erfahren Sie, wie Sie E-Mail-Benachrichtigung und -Verfolgung mit Aspose.Email für .NET implementieren. Schritt-für-Schritt-Anleitung mit Codebeispielen. Verbessern Sie noch heute Ihre E-Mail-Kommunikation!

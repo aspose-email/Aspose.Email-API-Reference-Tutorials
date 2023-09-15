@@ -47,7 +47,7 @@ AttachmentCollection attachments = emailMessage.Attachments;
 
 ## 6. Satır içi ve normal ekler arasında ayrım yapmak
 
- Satır içi eklerle normal ekleri birbirinden ayırmak için her ekin özelliklerini incelemeniz gerekir.`ContentDisposition` mülk. Eğer`ContentDisposition` "satır içi" olarak ayarlandığında ek, satır içi bir ektir.
+Satır içi eklerle normal ekleri birbirinden ayırmak için her ekin özelliklerini incelemeniz gerekir.`ContentDisposition` mülk. Eğer`ContentDisposition` "satır içi" olarak ayarlandığında ek, satır içi bir ektir.
 
 ## 7. Satır içi eklerle çalışma
 
@@ -90,7 +90,7 @@ Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak satır içi ekle
 
 ### Aspose.Email for .NET kütüphanesini nasıl kurabilirim?
 
-Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırmanız yeterlidir:`Install-Package Aspose.Email`.
+ Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırmanız yeterlidir:`Install-Package Aspose.Email`.
 
 ### Satır içi ekler ile normal ekler arasında program aracılığıyla ayrım yapabilir miyim?
 

@@ -43,7 +43,10 @@ För att kryptera ett meddelande, använd följande kodavsnitt:
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 // Kryptera meddelandet
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 // Spara det krypterade meddelandet i en fil eller skicka det
 message.Save("encrypted.eml");

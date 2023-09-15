@@ -21,17 +21,14 @@ Les didacticiels sur la gestion des événements de courrier électronique appro
 Les didacticiels de gestion du calendrier de messagerie se concentrent sur la gestion efficace des fonctionnalités liées au calendrier à l'aide d'Aspose.Email pour .NET. Les développeurs peuvent explorer des techniques pour créer, modifier et synchroniser des événements et des rendez-vous de calendrier par programmation. Ces didacticiels proposent des instructions étape par étape sur l'intégration des fonctionnalités de calendrier dans les applications, garantissant ainsi une planification et une gestion transparentes des événements. Aspose.Email pour .NET simplifie les tâches de gestion du calendrier, permettant aux développeurs d'améliorer leurs applications avec une organisation et une gestion efficaces des événements.
 
 ## Didacticiels sur la gestion des événements et des calendriers par courrier électronique
-### [Extraction de pièces jointes intégrées à partir de fichiers MSG à l'aide de C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-Découvrez comment extraire des pièces jointes intégrées à partir de fichiers MSG à l'aide de C# et Aspose.Email pour .NET. Un guide complet avec des exemples de code source.
-### [Chargement des messages électroniques avec les options de chargement en C#](./loading-email-messages-with-load-options-in-csharp/)
-Découvrez comment charger des e-mails avec Aspose.Email pour .NET en C#. Explorez un guide étape par étape et des exemples de code source pour une gestion efficace des e-mails.
-### [Préserver le format MSG intégré pendant le chargement avec C#](./preserving-embedded-msg-format-during-load-with-csharp/)
-Découvrez comment conserver le format MSG intégré à l’aide d’Aspose.Email pour .NET. Guide étape par étape avec le code source.
-### [Préserver les limites d'origine à l'aide du code C#](./preserving-original-boundaries-using-csharp-code/)
-Découvrez comment préserver les limites d'origine des pièces jointes aux e-mails à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.
+
 ### [Lecture de plusieurs événements à partir de fichiers ICS avec C#](./reading-multiple-events-from-ics-files-with-csharp/)
 Apprenez à extraire plusieurs événements de fichiers ICS à l'aide d'Aspose.Email pour .NET. Un guide étape par étape avec des exemples de code pour une gestion efficace des événements.
 ### [Rendu des événements du calendrier à l'aide du code C#](./rendering-calendar-events-using-csharp-code/)
 Apprenez à restituer les événements de calendrier à l'aide de C# et Aspose.Email pour .NET. Créez facilement des horaires interactifs.
 ### [Définition du statut de participant pour les participants à un rendez-vous avec C#](./setting-participant-status-for-appointment-attendees-with-csharp/)
 Découvrez comment gérer le statut des participants aux rendez-vous à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.
+### [Création d'un brouillon de demande de rendez-vous - Exemple C#](./crafting-a-draft-appointment-request-csharp-example/)
+Découvrez comment utiliser Aspose.Email pour .NET pour créer des brouillons d'e-mails de demande de rendez-vous en C#. Améliorez la communication et l’efficacité de l’entreprise.
+### [Modification de ProdID dans les fichiers ICS avec C#](./altering-prodid-in-ics-files-with-csharp/)
+Apprenez à modifier ProdID dans les fichiers ICS à l'aide de C# et Aspose.Email pour .NET. Guide et code étape par étape. Assurer l’intégrité et la compatibilité des données. 

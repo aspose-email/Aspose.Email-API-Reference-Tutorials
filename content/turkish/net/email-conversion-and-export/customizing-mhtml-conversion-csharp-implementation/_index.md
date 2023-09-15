@@ -17,7 +17,7 @@ Aspose.Email for .NET'i kullanarak MHTML dönüşümünü özelleştirmek istiyo
 MHTML dönüşümünü özelleştirmeye başlamadan önce Aspose.Email for .NET'in kurulu olduğundan ve yeni bir C# projesinin kullanıma hazır olduğundan emin olun.
 
 1. Aspose.Email for .NET'in Kurulumu:
- Başlamak için Aspose.Email for .NET'i aşağıdaki adresten indirip yükleyin.[İndirme: {link](https://releases.aspose.com/email/net). Belgelerde sağlanan kurulum talimatlarını izleyin.
+Başlamak için Aspose.Email for .NET'i aşağıdaki adresten indirip yükleyin.[İndirme: {link](https://releases.aspose.com/email/net). Belgelerde sağlanan kurulum talimatlarını izleyin.
 
 2. Yeni bir C# Projesi Oluşturma:
 Visual Studio'yu açın ve yeni bir C# projesi oluşturun. Uygun DLL referansını ekleyerek projenizdeki Aspose.Email kütüphanesine referans verdiğinizden emin olun.
@@ -32,53 +32,14 @@ Uygulamanıza bir MHTML dosyası yüklemek için aşağıdaki kodu kullanın:
 ```csharp
 using Aspose.Email.Mime;
 // MHTML dosyasını yükle
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. HTML İçeriğine ve Kaynaklarına Erişim:
-Aşağıdaki kodu kullanarak HTML içeriğini ve ilgili kaynakları çıkarın:
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   // HTML içeriğine erişme
-	   var htmlContent = resource.GetContent();
-	   // HTML içeriğini gerektiği gibi değiştirin
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   // Resim kaynaklarına erişin
-	   var imageData = resource.GetContent();
-	   //Resimleri değiştirin veya yerleştirin
-   }
-   // Diğer kaynak türlerini yönetin
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## Dönüşüm Seçeneklerini Özelleştirme
 
 Çeşitli çıktı formatlarını belirleyerek ve ayarları düzenleyerek MHTML dönüştürme işleminizi özelleştirin.
 
-1. Çıktı Formatlarını Seçme:
-Dönüştürmeniz için PDF, DOCX veya diğerleri gibi çıktı biçimine karar verin:
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; // PDF'ye dönüştür
-// Diğer dönüştürme seçeneklerini ayarlayın
-```
-
-2. Sayfa Kenar Boşluklarını ve Yönünü Belirleme:
-Çıktı belgesinin sayfa kenar boşluklarını ve yönünü ayarlayın:
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. Görüntü Kalitesinin Kontrolü:
+1. Görüntü Kalitesinin Kontrolü:
 Gömülü görüntülerin kalitesini kontrol edin:
 
 ```csharp

@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Carica il messaggio di posta elettronica
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Estrai e decodifica l'intestazione Oggetto
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Stampa l'intestazione Oggetto decodificata
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ Nello snippet di codice sopra, eseguiamo i seguenti passaggi:
 
 1. Importiamo gli spazi dei nomi necessari (`Aspose.Email` E`Aspose.Email.Mail`).
 2.  Creiamo un`Main` metodo come punto di ingresso della nostra applicazione.
-3.  All'interno del`Main` metodo, usiamo il`MailMessage.Load` metodo per caricare un messaggio di posta elettronica da un file. Sostituire`"path/to/your/email.eml"` con il percorso effettivo del messaggio di posta elettronica che desideri elaborare.
-4.  Noi usiamo il`HeaderDecoder.DecodeHeader` metodo per decodificare l'intestazione Oggetto.
+3.  All'interno del`Main`metodo, usiamo il`MailMessage.Load` metodo per caricare un messaggio di posta elettronica da un file. Sostituire`"path/to/your/email.eml"` con il percorso effettivo del messaggio di posta elettronica che desideri elaborare.
+4.  Noi usiamo il`Headers.GetDecodedValue` metodo per decodificare l'intestazione Oggetto.
 5. Stampiamo l'intestazione Oggetto decodificata sulla console.
 
 ## Passaggio 5: eseguire l'applicazione
@@ -68,7 +64,7 @@ Nello snippet di codice sopra, eseguiamo i seguenti passaggi:
 
 ### Come posso decodificare altre intestazioni di posta elettronica utilizzando Aspose.Email per .NET?
 
- Puoi decodificare varie intestazioni di posta elettronica come "Da", "A", "Data" ecc., utilizzando`HeaderDecoder.DecodeHeader` metodo. Fornisci semplicemente il valore dell'intestazione come parametro al metodo.
+ Puoi decodificare varie intestazioni di posta elettronica come "Da", "A", "Data" ecc., utilizzando`Headers.GetDecodedValue` metodo. Fornisci semplicemente il valore dell'intestazione come parametro al metodo.
 
 ### Dove posso trovare ulteriori informazioni su Aspose.Email per .NET?
 

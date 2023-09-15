@@ -18,13 +18,13 @@ Le intestazioni e-mail sono metadati che contengono dettagli essenziali su un me
 
 Le intestazioni delle email hanno diversi scopi cruciali:
 #### Itinerario: 
-	Headers determine the path an email takes from sender to recipient.
+Le intestazioni determinano il percorso seguito da un'e-mail dal mittente al destinatario.
 #### Autenticazione
-	Headers like DKIM and SPF help verify the authenticity of emails.
+Intestazioni come DKIM e SPF aiutano a verificare l'autenticità delle e-mail.
 #### Linea tematica: 
-	The subject header gives recipients an idea of the email's content.
+L'intestazione dell'oggetto dà ai destinatari un'idea del contenuto dell'e-mail.
 #### Gestione delle risposte: 
-	Headers like Reply-To ensure proper handling of replies.
+Intestazioni come Reply-To garantiscono la corretta gestione delle risposte.
 
 ## 3. Installazione di Aspose.Email per .NET
 
@@ -63,11 +63,11 @@ client.Send(message);
 Alcune intestazioni sono comunemente utilizzate nei messaggi di posta elettronica:
 
 #### Soggetto: 
-	Set the email subject using the `message.Subject` property.
+ Imposta l'oggetto dell'email utilizzando il comando`message.Subject` proprietà.
 #### Da: 
-	Specify the sender's address using the `message.From` property.
+ Specificare l'indirizzo del mittente utilizzando il file`message.From` proprietà.
 #### A: 
-	Define the recipient's address using the `message.To` property.
+ Definire l'indirizzo del destinatario utilizzando il file`message.To` proprietà.
 
 ## 6. Personalizzazione di intestazioni aggiuntive
 
@@ -81,7 +81,7 @@ message.ReplyToList.Add("reply@example.com");
 
 ## 7. Gestione delle intestazioni della versione MIME e del tipo di contenuto
 
- IL`MIME-Version`l'intestazione garantisce la corretta compatibilità MIME, mentre l'`Content-Type` l'intestazione specifica il tipo di contenuto nel corpo dell'e-mail.
+ IL`MIME-Version` l'intestazione garantisce la corretta compatibilità MIME, mentre l'`Content-Type` l'intestazione specifica il tipo di contenuto nel corpo dell'e-mail.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");

@@ -20,8 +20,6 @@ Aspose.Email for .NET 提供的电子邮件转换和导出教程为开发人员�
 
 电子邮件导出教程的重点是使开发人员能够从不同的电子邮件客户端存储格式导出电子邮件。无论是从 Microsoft Exchange Server 还是 Microsoft Outlook 导出电子邮件，这些教程都提供了有关检索和导出电子邮件数据的清晰说明。此功能对于数据迁移、备份和同步目的至关重要。这些教程提供了从各种来源访问电子邮件数据并将其导出为所需格式的分步指南，确保数据在不同系统中保持可访问和可用。
 
-有关详细见解和实际实施示例，您可以探索[Aspose.Email for .NET 电子邮件转换和导出教程](https://reference2.aspose.com/tutorials/email/net/email-conversion-and-export/)。使用 Aspose.Email for .NET 提升您的电子邮件数据管理能力，并释放高效电子邮件转换和导出的潜力，最终增强您的开发工作。
-
 ## 电子邮件转换和导出教程
 ### [自定义 MHTML 转换 - C# 实现](./customizing-mhtml-conversion-csharp-implementation/)
 了解如何使用 Aspose.Email for .NET 自定义 MHTML 转换。包含 C# 源代码的分步指南。
@@ -33,8 +31,6 @@ Aspose.Email for .NET 提供的电子邮件转换和导出教程为开发人员�
 了解如何使用 Aspose.Email for .NET 在 C# 中处理 EML 文件。包含用于加载、修改和保存电子邮件的代码示例的分步指南。
 ### [使用 C# 将 EML 转换为 MSG 格式](./converting-eml-to-msg-format-using-csharp/)
 了解如何使用 C# 和 Aspose.Email for .NET 将 EML 转换为 MSG。包含高效电子邮件格式转换代码示例的综合指南。
-### [读取消息时保留 TNEF 附件 - C# 方法](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
-在此包含源代码的分步指南中，了解如何使用 Aspose.Email for .NET 保留 TNEF 附件。
 ### [C# 指南 - 将电子邮件保存为 MHTML 文件](./csharp-guide-saving-email-as-mhtml-file/)
 了解如何使用 C# 和 Aspose.Email for .NET 将电子邮件另存为 MHTML 文件。包含代码示例和常见问题解答的分步指南。
 ### [C# 中的草稿消息处理 - 将电子邮件保存为草稿](./draft-message-handling-in-csharp-saving-email-as-draft/)

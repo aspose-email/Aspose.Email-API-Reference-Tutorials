@@ -21,9 +21,9 @@ Die Tutorials zur E-Mail-Dateispeicherung befassen sich mit den Feinheiten der e
 Die Tutorials zum E-Mail-Abruf konzentrieren sich darauf, Entwicklern das effiziente Abrufen von E-Mail-bezogenen Dateien mit Aspose.Email für .NET zu ermöglichen. Entwickler können Techniken erkunden, um programmgesteuert auf gespeicherte E-Mails und Anhänge zuzugreifen und so einen nahtlosen Abruf und eine reibungslose Nutzung sicherzustellen. Diese Tutorials bieten Schritt-für-Schritt-Anleitungen zur Integration der Abruflogik, zur Suche nach bestimmten E-Mail-Inhalten und zur Einbindung abgerufener Daten in Anwendungen. Aspose.Email für .NET vereinfacht das Abrufen von E-Mail-Dateien und ermöglicht Entwicklern die Optimierung ihrer Anwendungen für einen effizienten Datenzugriff und eine effiziente Datennutzung.
 
 ## Tutorials zum Speichern und Abrufen von E-Mail-Dateien
-## [Lesen aller Nachrichten aus Zimbra TGZ Storage mit C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Lesen aller Nachrichten aus Zimbra TGZ Storage mit C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 Erfahren Sie, wie Sie Zimbra TGZ-Speichernachrichten mit C# und Aspose.Email für .NET lesen. Schritt-für-Schritt-Anleitung mit Quellcode im Lieferumfang enthalten.
-## [Lesen von Nachrichten aus dem NSF-Speicher mit C#](./reading-messages-from-nsf-storage-using-csharp/)
+### [Lesen von Nachrichten aus dem NSF-Speicher mit C#](./reading-messages-from-nsf-storage-using-csharp/)
 Erfahren Sie, wie Sie NSF-Speichernachrichten mit C# und Aspose.Email für .NET lesen. Eine Schritt-für-Schritt-Anleitung mit Codebeispielen.
-## [Speichern von Nachrichten aus Zimbra TGZ Storage mit C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Speichern von Nachrichten aus Zimbra TGZ Storage mit C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Erfahren Sie, wie Sie Zimbra TGZ-E-Mails mit Aspose.Email für .NET extrahieren. Schritt-für-Schritt-Anleitung mit Quellcode für effizientes E-Mail-Management.

@@ -21,17 +21,14 @@ Aspose.Email for .NET 关于“电子邮件事件和日历处理”的教程使�
 电子邮件日历处理教程侧重于使用 Aspose.Email for .NET 有效管理与日历相关的功能。开发人员可以探索以编程方式创建、修改和同步日历事件和约会的技术。这些教程提供了有关将日历功能集成到应用程序中的分步说明，以确保事件的无缝安排和管理。 Aspose.Email for .NET 简化了日历处理任务，使开发人员能够通过高效的事件组织和管理来增强其应用程序。
 
 ## 电子邮件事件和日历处理教程
-### [使用 C# 从 MSG 文件中提取嵌入式附件](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-了解如何使用 C# 和 Aspose.Email for .NET 从 MSG 文件中提取嵌入附件。包含源代码示例的综合指南。
-### [使用 C# 中的加载选项加载电子邮件](./loading-email-messages-with-load-options-in-csharp/)
-了解如何在 C# 中使用 Aspose.Email for .NET 加载电子邮件。探索有效电子邮件处理的分步指南和源代码示例。
-### [使用 C# 加载期间保留嵌入的 MSG 格式](./preserving-embedded-msg-format-during-load-with-csharp/)
-了解如何使用 Aspose.Email for .NET 保留嵌入的 MSG 格式。带有源代码的分步指南。
-### [使用 C# 代码保留原始边界](./preserving-original-boundaries-using-csharp-code/)
-了解如何使用 C# 和 Aspose.Email for .NET 保留电子邮件附件的原始边界。带有源代码的分步指南。
+
 ### [使用 C# 从 ICS 文件读取多个事件](./reading-multiple-events-from-ics-files-with-csharp/)
 了解使用 Aspose.Email for .NET 从 ICS 文件中提取多个事件。带有代码示例的分步指南，可实现高效的事件管理。
 ### [使用 C# 代码渲染日历事件](./rendering-calendar-events-using-csharp-code/)
 学习使用 C# 和 Aspose.Email for .NET 呈现日历事件。轻松创建交互式时间表。
 ### [使用 C# 设置约会与会者的参与者状态](./setting-participant-status-for-appointment-attendees-with-csharp/)
 了解如何使用 C# 和 Aspose.Email for .NET 管理约会参加者的状态。带有源代码的分步指南。
+### [起草预约请求 - C# 示例](./crafting-a-draft-appointment-request-csharp-example/)
+了解如何使用 Aspose.Email for .NET 在 C# 中创建草稿预约请求电子邮件。增强业务沟通和效率。
+### [使用 C# 更改 ICS 文件中的 ProdID](./altering-prodid-in-ics-files-with-csharp/)
+了解使用 C# 和 Aspose.Email for .NET 更改 ICS 文件中的 ProdID。分步指南和代码。确保数据完整性和兼容性。 

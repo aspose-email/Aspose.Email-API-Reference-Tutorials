@@ -38,7 +38,7 @@ var message = MailMessage.Load("path_to_email.eml");
 
 ```csharp
 //检查消息是否为 TNEF 消息
-if (message.IsTnef)
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## 从 TNEF 消息中提取数据
-
-如果该消息确实是 TNEF 消息，您可以从中提取各种数据。例如，您可以按如下方式提取纯文本内容：
-
-```csharp
-if (message.IsTnef)
-{
-    //从 TNEF 中提取纯文本内容
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## 处理 TNEF 邮件中的附件
 
 TNEF 邮件通常包含附件。要提取并保存这些附件，您可以使用以下代码：
 
 ```csharp
-if (message.IsTnef)
+//遍历附件
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        //提取 TNEF 附件
+        var tnefAttachment = attachment;
+
+        //访问 TNEF 属性并根据需要进行修改
+        //tnefAttachment.属性...
     }
 }
 ```

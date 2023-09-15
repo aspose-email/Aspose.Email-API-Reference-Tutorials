@@ -8,124 +8,118 @@ weight: 11
 url: /ar/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
 
-في العالم الرقمي اليوم، يعد ضمان صحة وأمان رسائل البريد الإلكتروني أمرًا بالغ الأهمية للحفاظ على الثقة ومنع الأنشطة الضارة. إحدى الطرق الفعالة لتحقيق ذلك هي استخدام توقيعات DKIM (البريد المحدد لمفاتيح المجال). في هذا الدليل، سنرشدك خلال عملية توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام كود C#، مع الاستفادة من قوة Aspose.Email لـ .NET.
+في العالم الرقمي اليوم، يعد ضمان صحة وسلامة اتصالات البريد الإلكتروني أمرًا بالغ الأهمية. إحدى الطرق لتحقيق ذلك هي استخدام توقيعات البريد المحدد لمفاتيح المجال (DKIM). في هذا الدليل التفصيلي، سنستكشف كيفية توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام لغة C# ومكتبة Aspose.Email القوية لـ .NET.
 
-## مقدمة
+## مقدمة إلى DKIM
 
-DKIM، الذي يرمز إلى DomainKeys Identified Mail، هو تقنية مصادقة للبريد الإلكتروني تسمح للمرسل بالتوقيع رقميًا على رسائل البريد الإلكتروني الخاصة به، مما يوفر طبقة إضافية من الأمان ويضمن سلامة الرسالة. من خلال تنفيذ توقيعات DKIM، يمكن للمستلمين التحقق من أن البريد الإلكتروني قد تم إرساله بالفعل بواسطة النطاق المطالب به وأنه لم يتم العبث به أثناء النقل.
+### ما هو DKIM؟
+يرمز DKIM إلى البريد المعرف بمفاتيح المجال. إنها طريقة لمصادقة البريد الإلكتروني تسمح للمرسل بالتوقيع رقميًا على البريد الإلكتروني، مما يوفر توقيعًا مشفرًا يتحقق من صحة البريد الإلكتروني.
+
+### ما أهمية DKIM؟
+يساعد DKIM في منع انتحال البريد الإلكتروني وهجمات التصيد الاحتيالي من خلال التأكد من أن رسائل البريد الإلكتروني الواردة تأتي من مصادر مشروعة ولم يتم العبث بها أثناء النقل.
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
-- تم تثبيت Visual Studio على نظامك
-- المعرفة الأساسية ببرمجة C#
--  Aspose.Email لمكتبة .NET (يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net))
+1.  Aspose.Email for .NET: تأكد من تثبيت مكتبة Aspose.Email for .NET في مشروعك. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net/).
 
-## إعداد المشروع
+2. مفتاح DKIM الخاص: ستحتاج إلى مفتاح DKIM الخاص لتوقيع رسائل البريد الإلكتروني الخاصة بك. تأكد من أنها جاهزة. 
 
-1. قم بإنشاء مشروع C# جديد في Visual Studio.
-2. قم بتثبيت Aspose.Email لمكتبة .NET باستخدام NuGet Package Manager:
-   ```
-   Install-Package Aspose.Email
-   ```
-
-## إنشاء مفاتيح DKIM
-
-تتطلب توقيعات DKIM زوجًا من المفاتيح العامة والخاصة. يمكنك إنشاء هذه المفاتيح باستخدام أدوات أو مكتبات متنوعة، ولكن لغرض هذا الدليل، دعنا نستخدم مقتطف كود C# التالي:
+## الخطوة 1: تهيئة معلمات DKIM
 
 ```csharp
-// أضف عبارات الاستخدام الضرورية
-using Aspose.Email.Tools.DKIM;
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
 
-// إنشاء زوج مفاتيح DKIM
-var keyPair = DkimKeyPair.Generate();
-string privateKey = keyPair.PrivateKey;
-string publicKey = keyPair.PublicKey;
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 ```
 
-## إنشاء رسالة بريد إلكتروني
+في هذه الخطوة، نقوم بتهيئة معلمات DKIM. نقوم بتحميل المفتاح الخاص من الملف، ونحدد المحدد والمجال، وندرج الرؤوس التي يجب تضمينها في توقيع DKIM.
 
-قبل التوقيع على البريد الإلكتروني، لنقم بإنشاء نموذج لرسالة بريد إلكتروني:
+## الخطوة 2: إنشاء وإعداد البريد الإلكتروني
 
 ```csharp
-// إنشاء رسالة بريد إلكتروني جديدة
-var message = new MailMessage
-{
-    From = "sender@example.com",
-    To = "recipient@example.com",
-    Subject = "Sample Email with DKIM Signature",
-    Body = "This is the content of the email."
-};
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-## إضافة توقيع DKIM
+هنا، نقوم بإنشاء مثيل لـ`MailMessage` فئة وتعيين المرسل والمستلم والموضوع ونص البريد الإلكتروني.
 
-الآن، لنضيف توقيع DKIM إلى البريد الإلكتروني باستخدام المفاتيح التي تم إنشاؤها مسبقًا:
+## الخطوة 3: قم بالتوقيع على البريد الإلكتروني
 
 ```csharp
-// قم بإنشاء توقيع DKIM جديد
-var dkimSignature = new DkimSignature("example.com")
-{
-    PrivateKey = privateKey,
-    Selector = "default"
-};
-
-//أضف توقيع DKIM إلى البريد الإلكتروني
-message.AddDkimSignature(dkimSignature);
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-## إرسال البريد الإلكتروني
+الآن، نقوم بتوقيع البريد الإلكتروني باستخدام معلمات DKIM والمفتاح الخاص الذي قمنا بتهيئته مسبقًا.
 
-مع إضافة توقيع DKIM، يمكنك الآن إرسال البريد الإلكتروني باستخدام عميل SMTP:
+## الخطوة 4: أرسل البريد الإلكتروني الموقع
 
 ```csharp
-// قم بإنشاء مثيل لـ SmtpClient
-using (SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password"))
+try
 {
-    // أرسل البريد الإلكتروني
-    client.Send(message);
+    SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+    client.Send(signedMsg);                
+}
+finally
+{
+    // رمز التنظيف، إن وجد
 }
 ```
+ في هذه الخطوة، نقوم بإرسال البريد الإلكتروني الموقع باستخدام عميل SMTP. تأكد من استبدال`"your.email@gmail.com"` و`"your.password"` باستخدام بيانات اعتماد Gmail الخاصة بك.
 
-## التحقق من توقيع DKIM
+## كود المصدر الكامل
+```csharp
 
-يمكن لخوادم البريد المستلمة التحقق من توقيع DKIM لضمان صحة البريد الإلكتروني. يؤكد التحقق الناجح أن البريد الإلكتروني لم يتم تغييره وأنه تم إرساله بشكل حقيقي من النطاق المطالب به.
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP()+ "key2.pem");
 
-## التعامل مع الأخطاء والاستثناءات
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 
-أثناء عملية توقيع DKIM، من المهم التعامل مع أي أخطاء أو استثناءات قد تحدث. وهذا يضمن تجربة توقيع بريد إلكتروني سلسة وموثوقة لتطبيقك.
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 
-## أفضل الممارسات لـ DKIM
-
-- حافظ على مفتاحك الخاص آمنًا ومحميًا بشكل جيد.
-- قم بتدوير مفاتيح DKIM الخاصة بك بانتظام لتعزيز الأمان.
-- اتبع إرشادات توقيع DKIM المقدمة من مزود خدمة البريد الإلكتروني الخاص بك.
+try
+{
+	SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+	client.Send(signedMsg);                
+}
+finally
+{}
+```
 
 ## خاتمة
 
-يضيف تنفيذ توقيعات DKIM في اتصالات البريد الإلكتروني الخاصة بك طبقة قوية من الأمان والثقة. باتباع هذا الدليل التفصيلي، تعلمت كيفية توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام رمز C# وAspose.Email لـ .NET.
+يعد توقيع رسائل البريد الإلكتروني باستخدام DKIM خطوة حاسمة في ضمان أمان وصحة اتصالات البريد الإلكتروني الخاصة بك. بمساعدة Aspose.Email لـ .NET وC#، يمكنك بسهولة تنفيذ توقيعات DKIM في عملية إرسال البريد الإلكتروني الخاص بك.
 
-## الأسئلة الشائعة
+---
 
-### كيف يساعد DKIM في منع انتحال البريد الإلكتروني؟
+## أسئلة مكررة
 
-يسمح DKIM للمرسل بالتوقيع رقميًا على رسائل البريد الإلكتروني الخاصة به، مما يجعل من الصعب على الجهات الفاعلة الضارة انتحال هوية مجال المرسل وإرسال رسائل بريد إلكتروني احتيالية.
+### س1: ما هو DKIM، وما سبب أهميته لأمان البريد الإلكتروني؟
 
-### هل يمكنني استخدام نفس مفاتيح DKIM لنطاقات متعددة؟
+يرمز DKIM إلى DomainKeys Identified Mail، وهو مهم لأمان البريد الإلكتروني لأنه يتحقق من صحة رسائل البريد الإلكتروني، ويمنع الانتحال والتصيد الاحتيالي.
 
-لا، مفاتيح DKIM خاصة بالمجال. ستحتاج إلى إنشاء زوج مفاتيح فريد لكل مجال تريد إرسال رسائل البريد الإلكتروني الموقعة منه.
+### س2: كيف يمكنني الحصول على مفتاح DKIM الخاص؟
 
-### هل DKIM هي الطريقة الوحيدة لمصادقة البريد الإلكتروني؟
+يمكنك الحصول على مفتاح DKIM الخاص من خلال مزود خدمة البريد الإلكتروني الخاص بك أو عن طريق إنشاء مفتاح باستخدام أدوات التشفير.
 
-لا، هناك طرق أخرى مثل SPF (إطار سياسة المرسل) وDMARC (مصادقة الرسائل وإعداد التقارير والتوافق على أساس المجال) التي تعمل جنبًا إلى جنب مع DKIM لتعزيز أمان البريد الإلكتروني.
+### س3: هل يمكنني استخدام Aspose.Email لـ .NET مع موفري خدمة البريد الإلكتروني الآخرين إلى جانب Gmail؟
 
-### ماذا يحدث إذا فشل التحقق من توقيع DKIM؟
+نعم، يمكن استخدام Aspose.Email for .NET مع العديد من موفري خدمة البريد الإلكتروني، وليس مقتصرًا على Gmail.
 
-إذا فشل التحقق من توقيع DKIM، فقد يتعامل خادم البريد الخاص بالمستلم مع البريد الإلكتروني على أنه مريب أو يرفضه تمامًا.
+### س 4: ما هي الرؤوس التي يجب أن أدرجها في توقيع DKIM؟
 
-### هل يمكنني تنفيذ DKIM بلغات أخرى غير C#؟
+الرؤوس الشائعة التي يجب تضمينها في توقيع DKIM هي "من"، و"الموضوع"، وأي رؤوس أخرى مهمة لمصادقة البريد الإلكتروني.
 
-نعم، يمكن تنفيذ DKIM بلغات برمجة مختلفة. يركز هذا الدليل على لغة C# باستخدام مكتبة Aspose.Email لـ .NET.
+### س5: هل DKIM هو الأسلوب الوحيد لمصادقة البريد الإلكتروني؟
 
-الآن بعد أن أتقنت فن توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام كود C#، يمكنك تحسين أمان اتصالات البريد الإلكتروني الخاصة بك والتأكد من تلقي المستلمين للرسائل المشروعة بثقة.
+لا، هناك طرق أخرى مثل SPF وDMARC يتم استخدامها مع DKIM لتعزيز أمان البريد الإلكتروني.

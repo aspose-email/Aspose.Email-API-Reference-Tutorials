@@ -23,11 +23,11 @@ Default text encoding refers to the character encoding that is automatically use
 
 Using the correct text encoding is crucial for various reasons:
 ### Data Integrity:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Incorrect encoding can lead to data corruption during storage or transmission.
 ### Multilingual Support: 
-	Different languages require different encodings to display characters correctly.
+Different languages require different encodings to display characters correctly.
 ### Compatibility:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Proper encoding ensures that data can be exchanged seamlessly between different systems.
 
 ## Introducing Aspose.Email for .NET
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Step 3: Setting Default Text Encoding
-
-To set the default text encoding for your emails, you can use the following code snippet. In this example, we're setting the encoding to UTF-16.
-
-```csharp
-// Set the default text encoding to UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## Step 4: Sending an Email with Custom Encoding
+## Step 3: Sending an Email with Custom Encoding
 
 When sending an email, you can specify a custom text encoding for the email body. This can be useful when sending emails in languages that require specific encodings.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Step 4: Setting Default Text Encoding
+
+To set the default text encoding for your emails, you can use the following code snippet. In this example, we're setting the encoding to UTF-16.
+
+```csharp
+// Set the default text encoding to UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Step 5: Receiving and Decoding Emails
 
 When receiving emails, you might need to decode the email body if it was sent using a specific encoding. Here's how you can decode the body of an incoming email:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Common Challenges in Text Encoding
 
 ### Mismatched Encodings: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+Using different encodings for sending and receiving emails can lead to garbled text.
 ### Unsupported Characters:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Some encodings may not support certain characters, leading to character replacement or loss.
 ### File Corruption: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+Incorrect encoding when saving emails as files can result in corrupted files.
 
 ## Best Practices for Text Encoding
 

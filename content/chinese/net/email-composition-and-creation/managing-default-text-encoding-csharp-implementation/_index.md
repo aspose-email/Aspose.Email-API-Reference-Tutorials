@@ -23,11 +23,11 @@ url: /zh/net/email-composition-and-creation/managing-default-text-encoding-cshar
 
 由于多种原因，使用正确的文本编码至关重要：
 ### 数据的完整性：
-	Incorrect encoding can lead to data corruption during storage or transmission.
+不正确的编码可能会导致存储或传输过程中数据损坏。
 ### 多语言支持： 
-	Different languages require different encodings to display characters correctly.
+不同的语言需要不同的编码才能正确显示字符。
 ### 兼容性：
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+正确的编码可确保数据可以在不同系统之间无缝交换。
 
 ## .NET 的 Aspose.Email 简介
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## 步骤 3：设置默认文本编码
-
-要设置电子邮件的默认文本编码，您可以使用以下代码片段。在此示例中，我们将编码设置为 UTF-16。
-
-```csharp
-//将默认文本编码设置为 UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## 第 4 步：使用自定义编码发送电子邮件
+## 步骤 3：使用自定义编码发送电子邮件
 
 发送电子邮件时，您可以为电子邮件正文指定自定义文本编码。当以需要特定编码的语言发送电子邮件时，这非常有用。
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## 步骤 4：设置默认文本编码
+
+要设置电子邮件的默认文本编码，您可以使用以下代码片段。在此示例中，我们将编码设置为 UTF-16。
+
+```csharp
+//将默认文本编码设置为 UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## 第 5 步：接收和解码电子邮件
 
 接收电子邮件时，如果电子邮件正文是使用特定编码发送的，您可能需要对电子邮件正文进行解码。以下是解码传入电子邮件正文的方法：
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## 文本编码中的常见挑战
 
 ### 编码不匹配： 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+使用不同的编码发送和接收电子邮件可能会导致文本乱码。
 ### 不支持的字符：
-	Some encodings may not support certain characters, leading to character replacement or loss.
+某些编码可能不支持某些字符，从而导致字符替换或丢失。
 ### 文件损坏： 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+将电子邮件另存为文件时的编码不正确可能会导致文件损坏。
 
 ## 文本编码的最佳实践
 

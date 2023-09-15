@@ -21,9 +21,9 @@ Aspose.Email for .NET 关于“电子邮件文件存储和检索”的教程使�
 电子邮件检索教程的重点是使开发人员能够使用 Aspose.Email for .NET 高效地检索与电子邮件相关的文件。开发人员可以探索以编程方式访问存储的电子邮件和附件的技术，确保无缝检索和利用。这些教程提供了有关集成检索逻辑、搜索特定电子邮件内容以及将检索到的数据合并到应用程序中的分步说明。 Aspose.Email for .NET 简化了电子邮件文件检索任务，使开发人员能够优化其应用程序以实现高效的数据访问和利用。
 
 ## 电子邮件文件存储和检索教程
-## [使用 C# 读取 Zimbra TGZ 存储中的所有消息](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [使用 C# 读取 Zimbra TGZ 存储中的所有消息](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 了解如何使用 C# 和 Aspose.Email for .NET 读取 Zimbra TGZ 存储消息。包含源代码的分步指南。
-## [使用 C# 从 NSF 存储读取消息](./reading-messages-from-nsf-storage-using-csharp/)
+### [使用 C# 从 NSF 存储读取消息](./reading-messages-from-nsf-storage-using-csharp/)
 了解如何使用 C# 和 Aspose.Email for .NET 读取 NSF 存储消息。带有代码示例的分步指南。
-## [使用 C# 保存来自 Zimbra TGZ 存储的消息](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [使用 C# 保存来自 Zimbra TGZ 存储的消息](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 了解如何使用 Aspose.Email for .NET 提取 Zimbra TGZ 电子邮件。带有源代码的分步指南，可实现高效的电子邮件管理。

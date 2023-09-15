@@ -22,7 +22,6 @@ url: /zh/net/email-security-and-signatures/
 
 
 ## 电子邮件安全和签名教程
-## [使用 C# 代码处理电子邮件中的嵌入对象](./handling-embedded-objects-in-emails-with-csharp-code/)
-了解如何使用 C# 和 Aspose.Email for .NET 处理电子邮件中的嵌入对象。通过分步指导和代码示例创建交互式且引人入胜的电子邮件内容。
-## [使用 C# 代码通过 DKIM 签署电子邮件](./signing-emails-with-dkim-using-csharp-code/)
+
+### [使用 C# 代码通过 DKIM 签署电子邮件](./signing-emails-with-dkim-using-csharp-code/)
 了解使用 C# 和 Aspose.Email for .NET 通过 DKIM 保护电子邮件。带有源代码的分步指南。增强电子邮件的信任度和真实性。

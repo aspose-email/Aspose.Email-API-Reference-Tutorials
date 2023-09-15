@@ -8,93 +8,83 @@ weight: 10
 url: /sv/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
 
-Den här guiden ger en omfattande steg-för-steg handledning om hur du tar emot e-postmeddelanden med C#-koden och Aspose.Email för .NET-biblioteket. Aspose.Email är ett robust bibliotek designat för att underlätta olika e-postrelaterade operationer i .NET-applikationer. I den här handledningen kommer vi att fokusera på processen för att ta emot e-postmeddelanden.
 
-## Förutsättningar
+I den digitala tidsåldern är kommunikation viktigt, och e-post är fortfarande ett av de mest populära sätten att utbyta information. Som utvecklare kanske du behöver skicka och ta emot e-postmeddelanden i dina applikationer. I denna steg-för-steg handledning kommer vi att utforska hur man tar emot e-postmeddelanden med C# med Aspose.Email för .NET.
 
-Innan du börjar, se till att du har följande förutsättningar på plats:
+## Introduktion
 
-- En utvecklingsmiljö med C#-stöd (t.ex. Visual Studio).
--  Aspose.Email för .NET-biblioteket. Du kan ladda ner den från[den här länken](https://releases.aspose.com/email/net).
-- Grundläggande förtrogenhet med C#-programmering och grundläggande e-postkoncept.
+E-postmeddelanden är avgörande för att hålla användarna informerade om viktiga händelser eller uppdateringar i din applikation. Aspose.Email för .NET tillhandahåller en kraftfull och lättanvänd lösning för att hantera e-postrelaterade uppgifter i dina C#-applikationer. I den här handledningen kommer vi att fokusera på att ta emot e-postmeddelanden.
 
-## Steg 1: Projektinställning
+## Konfigurera Aspose.Email
 
-1. Skapa ett nytt C#-projekt i din utvecklingsmiljö.
-2. Lägg till en referens till Aspose.Email.dll-biblioteket. Du kan göra detta antingen genom att kopiera DLL till ditt projekts bin-katalog eller genom att använda NuGet Package Manager för att installera paketet Aspose.Email.
+Innan vi dyker in i koden måste du ställa in Aspose.Email för .NET i ditt projekt. Så här kan du göra det:
 
-## Steg 2: Skriva koden
+1. Installera Aspose.Email: Börja med att installera Aspose.Email for .NET-biblioteket i ditt projekt. Du kan göra detta via NuGet Package Manager.
 
-I det här steget kommer vi att skriva C#-koden som krävs för att ansluta till en e-postserver och hämta e-postmeddelanden.
+2.  Importera Aspose.Email Namespace: Se till att inkludera det nödvändiga namnutrymmet i din C#-kod:`using Aspose.Email;`.
+
+## Skapa e-postmeddelandet
+
+Nu när vi har konfigurerat Aspose.Email, låt oss skapa ett e-postmeddelande. I det här exemplet kommer vi att skapa ett grundläggande e-postmeddelande med en avsändare, mottagare, ämne och brödtext.
 
 ```csharp
-using System;
-using Aspose.Email.Client;
-using Aspose.Email.Imap;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Konfigurera e-postserverinställningar
-        string host = "your-email-server.com";
-        int port = 993; // IMAP-port
-        string username = "your-username";
-        string password = "your-password";
-
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            // Anslut till e-postservern och välj inkorgsmappen
-            client.Connect();
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            // Definiera sökkriterierna
-            ImapQueryBuilder builder = new ImapQueryBuilder();
-            builder.Subject.Contains("notification"); // Anpassa sökkriterierna
-
-            // Sök efter e-postmeddelanden
-            ImapMessageInfoCollection messages = client.ListMessages(builder.GetQuery());
-            
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                Console.WriteLine("Subject: " + messageInfo.Subject);
-                Console.WriteLine("Date: " + messageInfo.Date);
-                // Du kan komma åt andra e-postegenskaper här
-            }
-
-            // Koppla från e-postservern
-            client.Disconnect();
-        }
-    }
-}
+// Skapa meddelandet
+MailMessage msg = new MailMessage();
+msg.From = "sender@sender.com";
+msg.To = "receiver@receiver.com";
+msg.Subject = "the subject of the message";
 ```
 
-Kom ihåg att ersätta platshållarvärdena (`your-email-server.com`, `your-username`, `your-password`) med din faktiska e-postserverinformation.
+## Konfigurera aviseringar
 
-## Steg 3: Anpassa sökkriterier
+För att säkerställa att du får aviseringar om leveransstatus för din e-post kan du konfigurera alternativ för leveransaviseringar. Du kan ange om du vill bli meddelad om framgång, misslyckande eller båda.
 
-Den tillhandahållna koden använder ett grundläggande sökkriterium för att hitta e-postmeddelanden med ämnen som innehåller termen "avisering". Du kan anpassa sökkriterierna genom att ändra egenskaper som t.ex`From`, `To` , och`Date`.
+```csharp
+// Ställ in leveransaviseringar för framgång och misslyckade meddelanden
+msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
+```
 
-## Steg 4: Exekvera koden
+## Lägger till MIME Headers
 
-Bygg och kör ditt C#-projekt. Om den är korrekt konfigurerad kommer koden att upprätta en anslutning till e-postservern, söka efter e-postaviseringar och visa deras ämnen och datum i konsolen.
+MIME-rubriker ger ytterligare information om e-postmeddelandet. Du kan lägga till anpassade MIME-rubriker efter behov.
 
-## Vanliga frågor
+```csharp
+// Lägg till MIME-rubriker
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+```
 
-### Hur kan jag hantera e-postbilagor?
+## Skickar e-postmeddelandet
 
- För att hantera e-postbilagor, använd`Attachments` egendom av`ImapMessageInfo` objekt. Gå igenom bilagorna och spara dem på önskad plats. För detaljerad vägledning, se[Aspose.Email API Referens](https://reference.aspose.com/email/net/).
+När du har konfigurerat ditt e-postmeddelande är det dags att skicka det. Aspose.Email ger ett bekvämt sätt att skicka e-post med SMTP-klienten.
 
-## Kan jag filtrera aviseringar baserat på ett datumintervall?
-
- Säkert. Du kan filtrera aviseringar med ett specifikt datumintervall. Justera sökkriterierna genom att använda`Date` egendom i`ImapQueryBuilder` . Referera till[dokumentation](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapquerybuilder/) för omfattande exempel.
-
-## Hur kan jag markera aviseringar som lästa efter bearbetning?
-
-Efter att ha bearbetat varje meddelande använder du`MarkMessageRead` metod för`ImapClient` för att markera meddelanden som lästa. Rådfråga[dokumentation](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapclient/) för detaljerad information.
-
- För avancerade funktioner och alternativ, se[Aspose.Email dokumentation](https://reference.aspose.com/email/net).
+```csharp
+// Skicka meddelandet
+SmtpClient client = new SmtpClient("host", "username", "password");
+client.Send(msg);
+```
 
 ## Slutsats
 
-I den här handledningen utforskade vi processen för att ta emot e-postmeddelanden med C#-koden och Aspose.Email för .NET-biblioteket. Aspose.Email visade sig vara ett kraftfullt verktyg som förenklar arbetet med e-postrelaterade operationer inom .NET-applikationer.
+I den här handledningen har vi utforskat hur man tar emot e-postmeddelanden med C# med Aspose.Email för .NET. Vi har täckt inställningen av Aspose.Email, skapa ett e-postmeddelande, konfigurera aviseringar, lägga till MIME-rubriker och skicka e-postmeddelandet.
+
+Genom att följa dessa steg kan du sömlöst integrera e-postmeddelanden i dina C#-applikationer, förbättra användarkommunikationen och hålla dem informerade.
+
+## Vanliga frågor
+
+### 1. Kan jag använda Aspose.Email för .NET i mitt .NET Core-projekt?
+   Ja, Aspose.Email för .NET är kompatibelt med både .NET Framework och .NET Core.
+
+### 2. Hur kan jag hantera e-postbilagor i mina meddelanden?
+    Du kan använda`Attachment` klass tillhandahållen av Aspose.Email för att enkelt hantera e-postbilagor.
+
+### 3. Är Aspose.Email för .NET ett betalbibliotek?
+   Aspose.Email erbjuder både en gratis provversion och en betalversion. Den betalda versionen ger ytterligare funktioner och support.
+
+### 4. Kan jag anpassa mallarna för e-postmeddelanden?
+   Ja, du kan skapa anpassade e-postmallar och använda Aspose.Email för att fylla dem med dynamiskt innehåll.
+
+### 5. Finns det några begränsningar för antalet e-postmeddelanden jag kan skicka/ta emot med Aspose.Email?
+   Aspose.Email sätter inga strikta begränsningar på antalet e-postmeddelanden du kan skicka eller ta emot, men det kan vara föremål för din e-postservers begränsningar.
+
+Det avslutar vår handledning om att ta emot e-postmeddelanden med C# med Aspose.Email för .NET. Vi hoppas att du tyckte att den här guiden var till hjälp för att implementera e-postmeddelanden i dina applikationer. 

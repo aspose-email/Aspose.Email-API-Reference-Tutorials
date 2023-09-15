@@ -27,7 +27,7 @@ url: /ru/net/email-attachment-handling/adding-email-attachments-using-csharp/
 3. Установите библиотеку Aspose.Email для .NET с помощью диспетчера пакетов NuGet.
 
 ```csharp
-//Ваш код для настройки среды разработки
+// Ваш код для настройки среды разработки
 ```
 
 ## Создание нового сообщения электронной почты

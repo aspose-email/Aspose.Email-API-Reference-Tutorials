@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // Skapa en instans av ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Anslut till servern
-    client.Connect(host, port, true);
-
-    // Logga in
-    client.Login(username, password);
-    
+   
     // Din kod för att hämta och analysera avvisade meddelanden kommer hit
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Sök efter avvisade meddelanden
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Din kod för att analysera avvisningsmeddelanden kommer hit
 }
@@ -89,7 +84,7 @@ Avvisningsmeddelanden innehåller värdefull information om varför ett e-postme
 // Hämta meddelandet
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Kontrollera om det finns studsrubriker
+// Kontrollera om det finns studsrubriker
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

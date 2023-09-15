@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2. 创建一个实例`MhtmlMessageFormatter`格式化消息的类：
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. 加载电子邮件的 HTML 内容：
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## 第 5 步：向图像添加替代文本
+## 第 5 步：添加 AlternativeView 以将替代文本添加到图像中
 
-1. 找到`AlternateView`包含 HTML 正文和图像：
-
+将替代文本到图像的 htmlview 作为 AlternateView 添加到消息中。 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2. 找到`LinkedResource`代表图像：
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. 设置图像的替代文本：
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## 第 6 步：保存并发送电子邮件

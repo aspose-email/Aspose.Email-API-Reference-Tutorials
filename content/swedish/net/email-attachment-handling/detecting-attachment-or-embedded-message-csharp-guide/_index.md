@@ -10,7 +10,7 @@ url: /sv/net/email-attachment-handling/detecting-attachment-or-embedded-message-
 
 ## Introduktion till att upptäcka bilagor eller inbäddat meddelande - C#-guide
 
-dagens digitala värld spelar e-postmeddelanden en avgörande roll i kommunikationen och innehåller ofta olika typer av innehåll som bilagor och inbäddade meddelanden. Att upptäcka och hantera dessa komponenter programmatiskt är ett vanligt krav för applikationer som hanterar e-postbehandling. Den här guiden leder dig genom processen att upptäcka bilagor och inbäddade meddelanden i e-post med hjälp av Aspose.Email-biblioteket för .NET.
+I dagens digitala värld spelar e-postmeddelanden en avgörande roll i kommunikationen och innehåller ofta olika typer av innehåll som bilagor och inbäddade meddelanden. Att upptäcka och hantera dessa komponenter programmatiskt är ett vanligt krav för applikationer som hanterar e-postbehandling. Den här guiden leder dig genom processen att upptäcka bilagor och inbäddade meddelanden i e-post med hjälp av Aspose.Email-biblioteket för .NET.
 
 ## Förutsättningar för att implementera detektion
 
@@ -69,7 +69,6 @@ foreach (AlternateView alternateView in message.AlternateViews)
         foreach (LinkedResource linkedResource in alternateView.LinkedResources)
         {
             // Bearbeta det inbäddade meddelandet
-            MailMessage embeddedMessage = linkedResource.GetLinkedMessage();
             // Utför önskade operationer
         }
     }
@@ -98,7 +97,7 @@ Den här guiden är speciellt anpassad för C#-programmering med Aspose.Email f�
 
 ### Är Aspose.Email lämplig för att behandla e-postmeddelanden i en produktionsmiljö?
 
-Ja, Aspose.Email är ett pålitligt och allmänt använt bibliotek för e-postbearbetning i produktionsmiljöer. Den erbjuder robusta funktioner och utmärkt stöd.
+Ja, Aspose.Email är ett pålitligt och allmänt använt bibliotek för e-postbearbetning i produktionsmiljöer. Den erbjuder robusta funktioner och utmärkt support.
 
 ### Hur hanterar jag fel som kan uppstå under e-postbearbetning?
 

@@ -41,7 +41,9 @@ Jetzt kommt der spannende Teil – die Konvertierung von MSG-Dateien in das TNEF
 ```csharp
 // Konvertieren Sie MSG in TNEF
 var tnefStream = new MemoryStream();
-TnefWriter.WriteTnefMessage(tnefStream, msg);
+MailConversionOptions options = new MailConversionOptions();
+options.ConvertAsTnef = true;
+MailMessage mail = msg.ToMailMessage(options);
 ```
 
 ##  Umgang mit Konvertierungsfehlern und Ausnahmen
@@ -51,9 +53,14 @@ Während des Konvertierungsprozesses ist es wichtig, Fehler und Ausnahmen ordnun
 ```csharp
 try
 {
-    // Konvertieren Sie MSG in TNEF
-    var tnefStream = new MemoryStream();
-    TnefWriter.WriteTnefMessage(tnefStream, msg);
+	// MSG-Datei laden
+	var msg = MapiMessage.FromFile("sample.msg");
+	// Konvertieren Sie MSG in TNEF
+	var tnefStream = new MemoryStream();
+	MailConversionOptions options = new MailConversionOptions();
+	options.ConvertAsTnef = true;
+	MailMessage mail = msg.ToMailMessage(options);
+
 }
 catch (Exception ex)
 {
@@ -94,4 +101,4 @@ Ja, Tests und Validierung sind entscheidende Schritte, um sicherzustellen, dass 
 
 ### Wo kann ich mehr über Aspose.Email für .NET erfahren?
 
-Ausführliche Dokumentation und Ressourcen für Aspose.Email für .NET finden Sie unter[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Diese Dokumentation unterstützt Sie bei der Erkundung der Funktionen und Möglichkeiten der Bibliothek.
+ Ausführliche Dokumentation und Ressourcen für Aspose.Email für .NET finden Sie unter[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Diese Dokumentation unterstützt Sie bei der Erkundung der Funktionen und Möglichkeiten der Bibliothek.

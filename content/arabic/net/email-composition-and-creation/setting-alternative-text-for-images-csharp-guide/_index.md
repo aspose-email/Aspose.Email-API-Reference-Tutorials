@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  إنشاء مثيل لـ`MhtmlMessageFormatter`فئة تنسيق الرسالة:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. قم بتحميل محتوى HTML لرسالة البريد الإلكتروني:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## الخطوة 5: إضافة نص بديل للصور
+## الخطوة 5: إضافة AlternativeView للنص البديل للصور
 
-1.  تحديد موقع`AlternateView` تحتوي على نص HTML والصور:
-
+أضف htmlview للنص البديل للصورة كـ AlternateView في الرسالة. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  تحديد موقع`LinkedResource` تمثل الصورة:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. قم بتعيين النص البديل للصورة:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## الخطوة 6: حفظ وإرسال البريد الإلكتروني
@@ -97,7 +77,7 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ### كيف أقوم بإضافة الصور كموارد مرتبطة في رسالة بريد إلكتروني؟
 
- لإضافة صور كموارد مرتبطة في رسالة بريد إلكتروني، يمكنك استخدام`LinkedResource`فصل. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام`cid:` مخطط. للحصول على معلومات مفصلة، راجع[وثائق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+لإضافة صور كموارد مرتبطة في رسالة بريد إلكتروني، يمكنك استخدام`LinkedResource` فصل. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام`cid:` مخطط. للحصول على معلومات مفصلة، راجع[وثائق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email لـ .NET؟
 
  يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في[مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).

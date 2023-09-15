@@ -27,8 +27,6 @@ Aspose.Email for .NET'i kullanarak C#'ta e-posta oluşturma konusunda uzmanlaş�
 Aspose.Email for .NET'i kullanarak MSG'den TNEF EML oluşturmayı öğrenin. C# koduyla adım adım kılavuz. Verimli e-posta biçimi dönüştürme.
 ### [C# ile MSG'den TNEF Formatı Oluşturma](./forming-tnef-format-from-msg-with-csharp/)
 Aspose.Email for .NET'i kullanarak MSG dosyalarını TNEF formatına nasıl dönüştüreceğinizi öğrenin. Zengin e-posta içeriğini sorunsuz bir şekilde oluşturun. 
-### [Taslak Randevu Talebi Hazırlama - C# Örneği](./crafting-a-draft-appointment-request-csharp-example/)
-C#'ta taslak randevu isteği e-postaları oluşturmak için Aspose.Email for .NET'i nasıl kullanacağınızı öğrenin. İş iletişimini ve verimliliği artırın.
 ### [Görseller için Alternatif Metin Ayarlama - C# Kılavuzu](./setting-alternative-text-for-images-csharp-guide/)
  Aspose.Email for .NET kullanarak e-postalardaki görseller için alternatif metin ayarlamayı öğrenin. Net alternatif metinle erişilebilirliği sağlayın. Belgeler ve kod dahildir.
 ### [Varsayılan Metin Kodlamayı Yönetme - C# Uygulaması](./managing-default-text-encoding-csharp-implementation/)
@@ -39,3 +37,5 @@ Aspose.Email for .NET'i kullanarak C#'ta özel e-posta başlıklarını nasıl y
 Aspose.Email for .NET'te HTML kullanarak e-posta içeriğini nasıl geliştireceğinizi öğrenin. C# örnekleriyle adım adım kılavuz. E-posta iletişiminizi yükseltin!
 ### [C#'ta Alıcı Adreslerini Belirleme](./specifying-recipient-addresses-in-csharp/)
 Aspose.Email for .NET kullanarak C#'ta alıcı adreslerini nasıl belirleyeceğinizi öğrenin. E-postaları verimli bir şekilde oluşturun, yapılandırın ve gönderin.
+### [C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme](./loading-email-messages-with-load-options-in-csharp/)
+C#'ta Aspose.Email for .NET ile e-posta mesajlarını nasıl yükleyeceğinizi öğrenin. Etkili e-posta yönetimi için adım adım kılavuzu ve kaynak kodu örneklerini keşfedin.

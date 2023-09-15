@@ -36,13 +36,15 @@ To safeguard TNEF attachments, we first need to load and extract them. Follow th
 1. Load TNEF File: Load the TNEF file using the `MapiMessage` class:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
 2. Extract Attachments: Iterate through the attachments and extract them:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
    // Extract attachment data
    byte[] attachmentData = attachment.GetContent();
@@ -59,7 +61,7 @@ Once the attachments are extracted, you can implement your safeguarding measures
 After applying your safeguarding measures, you can save the attachments securely:
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
     // Safeguarding logic
     // ...

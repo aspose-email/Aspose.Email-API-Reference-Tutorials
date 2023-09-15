@@ -120,6 +120,6 @@ Toutes nos félicitations! Vous avez appris avec succès comment créer un nouve
    Aspose.Email se concentre sur la création et la manipulation d'e-mails. Pour planifier des e-mails, vous devrez intégrer un système de planification de tâches distinct.
 
 ### Où puis-je trouver plus d’exemples et de documentation ?
-    Vous pouvez trouver une documentation complète et des exemples de code sur le[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
+   Vous pouvez trouver une documentation complète et des exemples de code sur le[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---

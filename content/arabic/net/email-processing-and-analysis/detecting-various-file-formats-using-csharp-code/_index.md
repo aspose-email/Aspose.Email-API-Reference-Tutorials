@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // كشف تنسيق الملف
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // عرض النتيجة
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // كشف تنسيق الملف
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // عرض النتيجة
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ namespace FileFormatDetectionDemo
 
 ### هل من الممكن الكشف عن إصدار تنسيق الملف؟
 
- نعم`FileFormatInfo`الكائن الذي تم إرجاعه بواسطة`FileFormatUtil.DetectFileFormat` يوفر معلومات إضافية، بما في ذلك إصدار تنسيق الملف.
+ نعم`FileFormatInfo` الكائن الذي تم إرجاعه بواسطة`FileFormatUtil.DetectFileFormat` يوفر معلومات إضافية، بما في ذلك إصدار تنسيق الملف.
 
 ### هل يمكنني استخدام Aspose.Email للكشف عن تنسيقات الملفات في تطبيقات الويب؟
 

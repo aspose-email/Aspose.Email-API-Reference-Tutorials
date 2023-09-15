@@ -16,7 +16,7 @@ url: /ru/net/email-composition-and-creation/specifying-recipient-addresses-in-cs
 Прежде чем начать, убедитесь, что у вас есть следующее:
 
 1. Visual Studio или любая установленная среда разработки C#.
-2. Aspose.Email для библиотеки .NET. Вы можете получить его из[Aspose.Email для релизов .NET](https://releases.aspose.com/email/net/).
+2.  Aspose.Email для библиотеки .NET. Вы можете получить его из[Aspose.Email для релизов .NET](https://releases.aspose.com/email/net/).
 
 ## Шаги
 

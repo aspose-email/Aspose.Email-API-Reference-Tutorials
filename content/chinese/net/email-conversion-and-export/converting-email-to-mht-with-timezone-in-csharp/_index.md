@@ -72,31 +72,6 @@ mhtStream.Seek(0, SeekOrigin.Begin);
 mhtStream.CopyTo(fileStream);
 ```
 
-## 完整的源代码示例
-
-这是将所有步骤组合在一起的完整代码示例：
-
-```csharp
-//添加必要的 using 语句
-
-namespace EmailConversionApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //加载并解析电子邮件消息
-
-            //处理时区信息
-
-            //将电子邮件转换为 MHT 格式
-
-            //保存 MHT 文件
-        }
-    }
-}
-```
-
 ## 探索其他定制
 
 Aspose.Email for .NET 提供了各种自定义选项。您可以探索添加附件、修改消息属性等，以满足您的应用程序的需求。

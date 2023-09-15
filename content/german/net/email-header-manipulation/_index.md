@@ -25,8 +25,6 @@ Die Tutorials zur E-Mail-Header-Manipulation konzentrieren sich darauf, Entwickl
 Erfahren Sie, wie Sie E-Mail-Adressen mit C# mithilfe von Aspose.Email für .NET ändern. Befolgen Sie diese Schritt-für-Schritt-Anleitung, um E-Mail-Adressen effektiv zu bearbeiten.
 ### [Schriftarten während der MHT-Konvertierung mit C# ändern](./changing-fonts-during-mht-conversion-using-csharp/)
 Erfahren Sie, wie Sie Schriftarten während der MHT-Konvertierung mit Aspose.Email für .NET ändern. Schritt-für-Schritt-Anleitung mit Quellcode. Perfekt für die E-Mail-Archivierung und Dokumentenverwaltung.
-### [ProdID in ICS-Dateien mit C# ändern](./altering-prodid-in-ics-files-with-csharp/)
-Erfahren Sie, wie Sie ProdID in ICS-Dateien mit C# und Aspose.Email für .NET ändern. Schritt-für-Schritt-Anleitung und Code. Stellen Sie Datenintegrität und -kompatibilität sicher. 
 ### [ Benutzerdefiniertes Hyperlink-Rendering in C#](./custom-hyperlink-rendering-in-csharp/)
 Erfahren Sie, wie Sie das Hyperlink-Rendering in C# mit Aspose.Email für .NET anpassen. Erstellen Sie personalisierte E-Mail-Inhalte mit benutzerdefinierten Hyperlink-Stilen.
 ### [Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHTML mit C#](./defining-custom-order-of-information-in-mhtml-with-csharp/)

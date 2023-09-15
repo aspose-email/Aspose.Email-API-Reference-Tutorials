@@ -21,7 +21,5 @@ E-posta doğrulama eğitimleri, Aspose.Email for .NET kullanarak e-posta adresi 
 E-posta doğrulama eğitimleri, geliştiricilerin Aspose.Email for .NET kullanarak e-posta adreslerinin varlığını ve geçerliliğini doğrulamasını sağlamaya odaklanır. Geliştiriciler, e-posta adreslerinin etkin ve erişilebilir hesaplara karşılık geldiğinden emin olmak için gerçek zamanlı kontroller gerçekleştirme tekniklerini keşfedebilirler. Bu eğitimler, e-posta doğrulama hizmetlerini entegre etme, geçersiz adresleri tespit etme ve teslim edilemeyen e-postaları ortadan kaldırarak iletişim güvenilirliğini artırma konusunda adım adım talimatlar sunar. Aspose.Email for .NET, e-posta doğrulama görevlerini basitleştirerek geliştiricilerin uygulamalarını güvenli ve doğru iletişimle geliştirmelerine olanak tanır.
 
 ## E-posta Doğrulama ve Doğrulama Eğitimleri
-## [C# Kodunda E-posta Doğrulama Teknikleri](./email-validation-techniques-in-csharp-code/)
+### [C# Kodunda E-posta Doğrulama Teknikleri](./email-validation-techniques-in-csharp-code/)
 Aspose.Email for .NET'i kullanarak C#'ta e-posta adreslerini etkili bir şekilde nasıl doğrulayacağınızı öğrenin. Sağlanan kaynak koduyla birlikte adım adım kılavuz. Veri doğruluğunu ve kullanıcı deneyimini geliştirin.
-## [C# Kodunu Kullanarak E-posta Adreslerini Doğrulama](./validating-email-addresses-using-csharp-code/)
-C# ve Aspose.Email for .NET kullanarak e-posta adreslerini nasıl doğrulayacağınızı öğrenin. Uygulamalarınızda doğru e-posta verilerinin olduğundan emin olun.

@@ -21,9 +21,9 @@ Los tutoriales sobre almacenamiento de archivos de correo electrónico profundiz
 Los tutoriales de recuperación de correo electrónico se centran en permitir a los desarrolladores recuperar archivos relacionados con el correo electrónico de manera eficiente utilizando Aspose.Email para .NET. Los desarrolladores pueden explorar técnicas para acceder a los correos electrónicos y archivos adjuntos almacenados mediante programación, garantizando una recuperación y utilización perfectas. Estos tutoriales ofrecen instrucciones paso a paso sobre cómo integrar la lógica de recuperación, buscar contenido de correo electrónico específico e incorporar datos recuperados en aplicaciones. Aspose.Email para .NET simplifica las tareas de recuperación de archivos de correo electrónico, lo que permite a los desarrolladores optimizar sus aplicaciones para un acceso y utilización eficientes de los datos.
 
 ## Tutoriales de recuperación y almacenamiento de archivos de correo electrónico
-## [Leer todos los mensajes del almacenamiento Zimbra TGZ con C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Leer todos los mensajes del almacenamiento Zimbra TGZ con C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 Aprenda a leer mensajes de almacenamiento Zimbra TGZ usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente incluido.
-## [Leer mensajes de almacenamiento NSF usando C#](./reading-messages-from-nsf-storage-using-csharp/)
+### [Leer mensajes de almacenamiento NSF usando C#](./reading-messages-from-nsf-storage-using-csharp/)
 Aprenda a leer mensajes de almacenamiento NSF usando C# y Aspose.Email para .NET. Una guía paso a paso con ejemplos de código.
-## [Guardar mensajes del almacenamiento Zimbra TGZ con C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Guardar mensajes del almacenamiento Zimbra TGZ con C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Aprenda cómo extraer correos electrónicos de Zimbra TGZ usando Aspose.Email para .NET. Guía paso a paso con código fuente para una gestión eficiente del correo electrónico.

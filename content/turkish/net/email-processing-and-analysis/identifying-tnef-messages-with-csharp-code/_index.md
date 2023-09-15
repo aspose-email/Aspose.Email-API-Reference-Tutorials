@@ -16,7 +16,7 @@ Aspose.Email for .NET, C#'ta çeşitli e-posta formatları ve protokolleriyle ç
 
 ## Geliştirme Ortamını Kurma
 
-Kodu derinlemesine incelemeden önce Aspose.Email for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net). İndirdikten sonra geliştirme ortamınızı ayarlamak için şu adımları izleyin:
+ Kodu derinlemesine incelemeden önce Aspose.Email for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net). İndirdikten sonra geliştirme ortamınızı ayarlamak için şu adımları izleyin:
 
 1. Tercih ettiğiniz geliştirme ortamında yeni bir C# projesi oluşturun.
 2. İndirilen Aspose.Email kütüphanesine bir referans ekleyin.
@@ -37,8 +37,8 @@ var message = MailMessage.Load("path_to_email.eml");
  Artık e-posta mesajını yüklediğimize göre bunun bir TNEF mesajı olup olmadığını belirlememiz gerekiyor. Aspose.Email şunları sağlar:`MailMessage.IsTnef` Bu amaç için mülk. Bunu nasıl kullanabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
-// Mesajın bir TNEF mesajı olup olmadığını kontrol edin
-if (message.IsTnef)
+//Mesajın bir TNEF mesajı olup olmadığını kontrol edin
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,30 +48,22 @@ else
 }
 ```
 
-## TNEF Mesajlarından Veri Çıkarma
-
-Mesaj gerçekten bir TNEF mesajıysa, ondan çeşitli verileri çıkarabilirsiniz. Örneğin düz metin içeriğini şu şekilde çıkarabilirsiniz:
-
-```csharp
-if (message.IsTnef)
-{
-    // Düz metin içeriğini TNEF'ten çıkarın
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
 
 ## TNEF Mesajlarındaki Ekleri İşleme
 
 TNEF mesajları genellikle ekler içerir. Bu ekleri çıkarmak ve kaydetmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
-if (message.IsTnef)
+// Ekler aracılığıyla yineleme
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // TNEF ekini çıkarın
+        var tnefAttachment = attachment;
+
+        //TNEF özelliklerine erişin ve gerekirse değiştirin
+        // tnefAttachment.Özellikler...
     }
 }
 ```

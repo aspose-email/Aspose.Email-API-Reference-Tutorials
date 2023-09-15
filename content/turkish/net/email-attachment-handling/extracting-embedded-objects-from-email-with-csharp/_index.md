@@ -14,7 +14,7 @@ E-postalardaki gömülü nesneler, ayrı olarak eklenmek yerine doğrudan e-post
 
 ## Aspose.Email for .NET'e Başlarken
 
-Aspose.Email for .NET, e-posta mesajlarının ayrıştırılması, oluşturulması ve değiştirilmesi dahil, e-postalarla çalışmak için çeşitli özellikler sağlayan güçlü bir kütüphanedir. Başlamak için Aspose.Email for .NET kütüphanesinin projenizde kurulu olması gerekir. Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya NuGet gibi bir paket yöneticisi kullanın.
+ Aspose.Email for .NET, e-posta mesajlarının ayrıştırılması, oluşturulması ve değiştirilmesi dahil, e-postalarla çalışmak için çeşitli özellikler sağlayan güçlü bir kütüphanedir. Başlamak için Aspose.Email for .NET kütüphanesinin projenizde kurulu olması gerekir. Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya NuGet gibi bir paket yöneticisi kullanın.
 
 ## E-posta Yükleme ve Ayrıştırma
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Gömülü nesneleri HTML içeriğinden çıkarın
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
+            // Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Gömülü nesneleri HTML içeriğinden çıkarın
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
+                        // Bağlantılı kaynağı (katıştırılmış nesne) çıkarın ve kaydedin
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

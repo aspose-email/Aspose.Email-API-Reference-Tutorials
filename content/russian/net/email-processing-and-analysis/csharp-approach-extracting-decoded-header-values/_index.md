@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Загрузите сообщение электронной почты
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Извлеките и декодируйте заголовок темы.
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Распечатайте декодированный заголовок темы.
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ class Program
 
 1. Импортируем необходимые пространства имен (`Aspose.Email` и`Aspose.Email.Mail`).
 2.  Мы создаем`Main` метод в качестве точки входа нашего приложения.
-3.  В рамках`Main` метод, мы используем`MailMessage.Load` метод для загрузки сообщения электронной почты из файла. Заменять`"path/to/your/email.eml"` с фактическим путем к сообщению электронной почты, которое вы хотите обработать.
-4.  Мы используем`HeaderDecoder.DecodeHeader` метод для декодирования заголовка темы.
+3.  В рамках`Main`метод, мы используем`MailMessage.Load` метод для загрузки сообщения электронной почты из файла. Заменять`"path/to/your/email.eml"` с фактическим путем к сообщению электронной почты, которое вы хотите обработать.
+4.  Мы используем`Headers.GetDecodedValue` метод для декодирования заголовка темы.
 5. Мы выводим расшифрованный заголовок «Тема» на консоль.
 
 ## Шаг 5: Запустите приложение
@@ -68,7 +64,7 @@ class Program
 
 ### Как я могу декодировать другие заголовки электронной почты с помощью Aspose.Email для .NET?
 
- Вы можете декодировать различные заголовки электронных писем, такие как «От», «Кому», «Дата» и т. д., используя команду`HeaderDecoder.DecodeHeader` метод. Просто укажите значение заголовка в качестве параметра метода.
+ Вы можете декодировать различные заголовки электронных писем, такие как «От», «Кому», «Дата» и т. д., используя команду`Headers.GetDecodedValue` метод. Просто укажите значение заголовка в качестве параметра метода.
 
 ### Где я могу найти дополнительную информацию об Aspose.Email для .NET?
 

@@ -1,6 +1,6 @@
 ---
-title:Gestione della codifica del testo predefinita: implementazione C#
-linktitle:Gestione della codifica del testo predefinita: implementazione C#
+title: Gestione della codifica del testo predefinita implementazione C#
+linktitle: Gestione della codifica del testo predefinita implementazione C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come gestire la codifica del testo predefinita in C# utilizzando Aspose.Email per .NET. Segui le istruzioni passo passo con il codice sorgente e assicurati una comunicazione accurata dei dati.
 type: docs
@@ -23,11 +23,11 @@ La codifica del testo predefinita si riferisce alla codifica dei caratteri che v
 
 Utilizzare la codifica corretta del testo è fondamentale per vari motivi:
 ### Integrità dei dati:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Una codifica errata può causare il danneggiamento dei dati durante la memorizzazione o la trasmissione.
 ### Supporto multilingue: 
-	Different languages require different encodings to display characters correctly.
+Lingue diverse richiedono codifiche diverse per visualizzare correttamente i caratteri.
 ### Compatibilità:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Una codifica corretta garantisce che i dati possano essere scambiati senza problemi tra diversi sistemi.
 
 ## Presentazione di Aspose.Email per .NET
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Passaggio 3: impostazione della codifica del testo predefinita
-
-Per impostare la codifica del testo predefinita per le tue email, puoi utilizzare il seguente snippet di codice. In questo esempio, impostiamo la codifica su UTF-16.
-
-```csharp
-// Imposta la codifica del testo predefinita su UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## Passaggio 4: invio di un'e-mail con codifica personalizzata
+## Passaggio 3: invio di un'e-mail con codifica personalizzata
 
 Quando invii un'e-mail, puoi specificare una codifica di testo personalizzata per il corpo dell'e-mail. Ciò può essere utile quando si inviano e-mail in lingue che richiedono codifiche specifiche.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Passaggio 4: impostazione della codifica del testo predefinita
+
+Per impostare la codifica del testo predefinita per le tue email, puoi utilizzare il seguente snippet di codice. In questo esempio, impostiamo la codifica su UTF-16.
+
+```csharp
+// Imposta la codifica del testo predefinita su UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Passaggio 5: ricezione e decodifica delle email
 
 Quando ricevi email, potresti dover decodificare il corpo dell'email se è stato inviato utilizzando una codifica specifica. Ecco come puoi decodificare il corpo di un'e-mail in arrivo:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Sfide comuni nella codifica del testo
 
 ### Codifiche non corrispondenti: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+L'utilizzo di codifiche diverse per l'invio e la ricezione di e-mail può portare a testi confusi.
 ### Caratteri non supportati:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Alcune codifiche potrebbero non supportare determinati caratteri, con conseguente sostituzione o perdita dei caratteri.
 ### Corruzione del file: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+Una codifica errata durante il salvataggio dei messaggi di posta elettronica come file può causare file danneggiati.
 
 ## Migliori pratiche per la codifica del testo
 

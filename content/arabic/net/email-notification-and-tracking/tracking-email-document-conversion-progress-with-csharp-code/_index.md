@@ -8,101 +8,96 @@ weight: 12
 url: /ar/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من حياتنا، سواء للأغراض الشخصية أو المهنية. عند التعامل مع رسائل البريد الإلكتروني الهامة، من المهم التأكد من تلقي الإشعارات على الفور وأن آليات التتبع موجودة. يوفر Aspose.Email for .NET حلاً قويًا لتحقيق الإخطار والتتبع الفعالين عبر البريد الإلكتروني. في هذا الدليل، سنرشدك خلال العملية خطوة بخطوة، مع تقديم أمثلة على التعليمات البرمجية المصدر لكل مرحلة.
+في العصر الرقمي الحالي، تلعب الاتصالات عبر البريد الإلكتروني دورًا حاسمًا في المجالات الشخصية والمهنية. كمبرمج، ربما واجهت الحاجة إلى التعامل مع رسائل البريد الإلكتروني ومعالجتها برمجيًا. إحدى المهام الشائعة هي تتبع التقدم المحرز في تحويل مستند البريد الإلكتروني، وفي هذه المقالة، سنرشدك خلال العملية خطوة بخطوة باستخدام C# وAspose.Email لـ .NET.
 
-## مقدمة لإشعارات البريد الإلكتروني وتتبعه
+## مقدمة إلى Aspose.Email لـ .NET
 
-يتطلب التواصل الفعال غالبًا إشعارات في الوقت المناسب والقدرة على تتبع تفاعل المستلمين مع المحتوى. سواء كان ذلك اقتراحًا تجاريًا مهمًا أو عرضًا ترويجيًا، فإن معرفة متى يتم فتح البريد الإلكتروني والقدرة على التعامل مع الردود يمكن أن يؤثر بشكل كبير على نتائجك.
+قبل الغوص في التعليمات البرمجية، دعونا نلقي مقدمة مختصرة عن Aspose.Email لـ .NET. توفر هذه المكتبة القوية مجموعة واسعة من الميزات للعمل مع رسائل البريد الإلكتروني، بما في ذلك القراءة والكتابة وتحويل رسائل البريد الإلكتروني بتنسيقات مختلفة. في حالتنا، سنركز على تحويل مستند البريد الإلكتروني.
 
-## تهيئة بيئة التطوير
+## إعداد بيئتك
 
-قبل أن نتعمق في التنفيذ، تأكد من تثبيت Aspose.Email for .NET في بيئة التطوير لديك. إذا لم يكن الأمر كذلك، فيمكنك تنزيله من إصدارات Aspose:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
+للبدء، ستحتاج إلى إعداد بيئة التطوير الخاصة بك. تأكد من توفر المتطلبات الأساسية التالية:
 
-قم بإنشاء مشروع جديد في Visual Studio باستخدام لغة .NET المفضلة لديك (C# أو VB.NET).
+-  تم تثبيت Aspose.Email لمكتبة .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net/).
 
-## إرسال إشعارات البريد الإلكتروني
+الآن، دعنا ندخل في الكود. سنقوم بإنشاء دليل خطوة بخطوة حول تتبع تقدم تحويل مستند البريد الإلكتروني باستخدام كود مصدر C# المقدم.
 
-لنبدأ بإرسال إشعارات البريد الإلكتروني إلى المستلمين. فيما يلي مثال أساسي لكيفية إنشاء وإرسال بريد إلكتروني باستخدام Aspose.Email لـ .NET:
+## الخطوة 1: تحميل رسالة البريد الإلكتروني
+
+ نبدأ بتحميل رسالة البريد الإلكتروني من ملف. تأكد من استبدال`"Your Document Directory"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
 
 ```csharp
-using Aspose.Email;
-
-// إنشاء رسالة بريد إلكتروني جديدة
-MailMessage message = new MailMessage();
-
-// إضافة المستلمين
-message.To.Add("recipient@example.com");
-
-// ضبط محتوى البريد الإلكتروني
-message.Subject = "Important Update";
-message.Body = "Dear recipient, we have an important update for you.";
-
-// تحديد أولوية البريد الإلكتروني
-message.Priority = MailPriority.High;
-
-// أرسل البريد الإلكتروني
-SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
-client.Send(message);
+string dataDir = "Your Document Directory";
+var fileName = dataDir + "test.eml";
+MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## تنفيذ تتبع البريد الإلكتروني
+## الخطوة 2: تحديد معالج التقدم المخصص
 
-لتتبع عمليات فتح البريد الإلكتروني، يمكننا تضمين وحدات بكسل التتبع في محتوى البريد الإلكتروني. عندما يتم تحميل البيكسل، يمكننا تسجيل أن البريد الإلكتروني قد تم فتحه. فيما يلي كيفية تنفيذ تتبع البريد الإلكتروني باستخدام Aspose.Email لـ .NET:
-
-```csharp
-// قم بإنشاء بكسل التتبع
-string trackingPixel = "<img src='https://your-tracking-server.com/track?id=123456' alt='' width='1' height='1' />";
-
-// أضف البيكسل إلى نص البريد الإلكتروني
-message.HtmlBody = $"Dear recipient, {trackingPixel} we have an important update for you.";
-```
-
-## التعامل مع ردود البريد الإلكتروني
-
-للتعامل مع ردود البريد الإلكتروني برمجيًا، يمكنك مراقبة البريد الوارد حيث يُتوقع الردود واستخراج محتواها. إليك مثال مبسط:
+ في هذه الخطوة، قمنا بإعداد معالج تقدم مخصص لمراقبة تقدم التحويل. ال`ShowEmlConversionProgress` سيتم استدعاء الطريقة أثناء عملية التحويل لتوفير معلومات حول التقدم.
 
 ```csharp
-using Aspose.Email;
-
-// الاتصال بصندوق البريد
-ImapClient client = new ImapClient("imap.example.com", "username", "password");
-client.SelectFolder(ImapFolderInfo.InBox);
-
-// البحث عن رسائل البريد الإلكتروني الرد
-MailQueryBuilder queryBuilder = new MailQueryBuilder();
-queryBuilder.HasFlags(ImapMessageFlags.Answered);
-MailQuery query = queryBuilder.GetQuery();
-
-// استرداد ومعالجة رسائل البريد الإلكتروني الرد
-ImapMessageInfoCollection replyEmails = client.ListMessages(query);
-foreach (ImapMessageInfo reply in replyEmails)
+private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 {
-    MailMessage replyMessage = client.FetchMessage(reply.UniqueId);
-    // معالجة محتوى الرد هنا
+    int total;
+    int saved;
+    switch (info.EventType)
+    {
+        case ProgressEventType.MimeStructureCreated:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimeStructureCreated - TotalMimePartCount: " + total);
+            Console.WriteLine("MimeStructureCreated - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.MimePartSaved:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimePartSaved - TotalMimePartCount: " + total);
+            Console.WriteLine("MimePartSaved - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.SavedToStream:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("SavedToStream - TotalMimePartCount: " + total);
+            Console.WriteLine("SavedToStream - SavedMimePartCount: " + saved);
+            break;
+    }
 }
 ```
 
-## أمثلة على كود المصدر
+## الخطوة 3: حفظ رسالة البريد الإلكتروني مع تتبع التقدم
 
- للحصول على أمثلة التعليمات البرمجية المصدر كاملة، راجع[Aspose.Email لوثائق .NET](https://reference.aspose.com/email/net).
+ الآن، دعونا نحفظ رسالة البريد الإلكتروني أثناء تتبع التقدم. نحن نستخدم ال`EmlSaveOptions` فئة مع معالج التقدم المخصص.
+
+```csharp
+MemoryStream ms = new MemoryStream();
+EmlSaveOptions opt = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+opt.CustomProgressHandler = new ConversionProgressEventHandler(ShowEmlConversionProgress);
+msg.Save(ms, opt);
+```
 
 ## خاتمة
 
-لا يقتصر التواصل الفعال عبر البريد الإلكتروني على إرسال الرسائل فحسب، بل يشمل أيضًا ضمان استلامها وتتبعها على الفور. باستخدام Aspose.Email for .NET، لديك أداة قوية لتنفيذ إشعارات البريد الإلكتروني والتتبع بسلاسة في تطبيقاتك. بدءًا من إرسال الإشعارات وحتى تتبع عمليات الفتح والتعامل مع الردود، غطى هذا الدليل الجوانب الرئيسية للعملية.
+تهانينا! لقد نجحت في تنفيذ تتبع تقدم تحويل مستند البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET. يمكن أن تكون هذه الإمكانية ذات قيمة عند التعامل مع كميات كبيرة من رسائل البريد الإلكتروني وتحويلات المستندات في تطبيقاتك.
+
+ لمزيد من المعلومات والوثائق التفصيلية، قم بزيارة[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/).
+
 
 ## الأسئلة الشائعة
 
-### كيف أقوم بتثبيت Aspose.Email لـ .NET؟
- يمكنك تنزيل المكتبة من إصدارات Aspose:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
+### ما هو Aspose.Email لـ .NET؟
+Aspose.Email for .NET هي مكتبة قوية للتعامل مع رسائل البريد الإلكتروني في تطبيقات .NET. يوفر ميزات لقراءة رسائل البريد الإلكتروني وكتابتها وتحويلها.
 
-### هل يمكنني تتبع عمليات فتح رسائل البريد الإلكتروني المتعددة باستخدام بكسل واحد؟
-نعم، يمكنك استخدام معرف فريد في عنوان URL الخاص ببكسل التتبع للتمييز بين رسائل البريد الإلكتروني المختلفة وتتبع عمليات الفتح الخاصة بها بشكل فردي.
+### هل يمكنني تتبع تقدم تحويل مستند البريد الإلكتروني باستخدام Aspose.Email لـ .NET؟
+نعم، يمكنك تتبع تقدم تحويل مستند البريد الإلكتروني باستخدام معالجات التقدم المخصصة، كما هو موضح في هذه المقالة.
 
-### هل من الممكن تتبع فتح البريد الإلكتروني دون استخدام بكسلات التتبع؟
-على الرغم من أن وحدات البكسل التتبعية تعد طريقة شائعة، فقد يقوم بعض عملاء البريد الإلكتروني بحظرها. وبدلاً من ذلك، يمكنك تضمين روابط لموارد خارجية، والتي يمكنها أيضًا توفير معلومات التتبع عند النقر عليها.
+### هل من السهل دمج Aspose.Email for .NET في مشروع C# الخاص بي؟
+نعم، من السهل دمج Aspose.Email for .NET في مشاريع C#. يمكنك تنزيل المكتبة وتثبيتها من الموقع.
 
-### كيف يمكنني التأكد من خصوصية تتبع البريد الإلكتروني؟
-من المهم إبلاغ المستلمين بتتبع البريد الإلكتروني في سياسة الخصوصية أو شروط الاستخدام الخاصة بك. بالإضافة إلى ذلك، فكر في توفير خيار للمستلمين لإلغاء الاشتراك في التتبع.
+### هل هناك مكتبات أخرى للعمل مع رسائل البريد الإلكتروني في C#؟
+نعم، هناك مكتبات أخرى، ولكن Aspose.Email for .NET معروف بميزاته الشاملة وسهولة استخدامه.
 
-### هل يدعم Aspose.Email for .NET بروتوكولات البريد الإلكتروني الأخرى إلى جانب SMTP وIMAP؟
-نعم، يدعم Aspose.Email for .NET البروتوكولات الأخرى مثل POP3 وExchange Web Services (EWS) لمختلف المهام المتعلقة بالبريد الإلكتروني.
+### أين يمكنني العثور على المزيد من البرامج التعليمية والأمثلة حول Aspose.Email for .NET؟
+يمكنك استكشاف[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/)للحصول على البرامج التعليمية والأمثلة والوثائق التفصيلية.
+
+أنت الآن مجهز جيدًا للتعامل مع تقدم تحويل مستندات البريد الإلكتروني في تطبيقات C# الخاصة بك بثقة. ترميز سعيد!

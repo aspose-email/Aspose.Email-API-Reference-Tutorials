@@ -45,7 +45,7 @@ string filePath = "sample.docx";
 
 // Dosya formatını algıla
 FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-FileFormatType formatType = fileInfo.FormatType;
+FileFormatType formatType = fileInfo.FileFormatType;
 
 // Sonucu göster
 Console.WriteLine($"Detected File Format: {formatType}");
@@ -85,7 +85,7 @@ namespace FileFormatDetectionDemo
 
             // Dosya formatını algıla
             FileFormatInfo fileInfo = FileFormatUtil.DetectFileFormat(filePath);
-            FileFormatType formatType = fileInfo.FormatType;
+            FileFormatType formatType = fileInfo.FileFormatType;
 
             // Sonucu göster
             Console.WriteLine($"Detected File Format: {formatType}");
@@ -110,7 +110,7 @@ Evet, Aspose.Email çok çeşitli yaygın ve özel dosya formatları için kapsa
 
 ### Bir dosya formatının sürümünü tespit etmek mümkün mü?
 
- Evet`FileFormatInfo`tarafından döndürülen nesne`FileFormatUtil.DetectFileFormat` dosya biçimi sürümü de dahil olmak üzere ek bilgiler sağlar.
+ Evet`FileFormatInfo` tarafından döndürülen nesne`FileFormatUtil.DetectFileFormat` dosya biçimi sürümü de dahil olmak üzere ek bilgiler sağlar.
 
 ### Aspose.Email'i web uygulamalarında dosya formatı tespiti için kullanabilir miyim?
 

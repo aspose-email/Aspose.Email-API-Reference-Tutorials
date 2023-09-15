@@ -94,7 +94,7 @@ In questa guida, abbiamo esplorato come includere allegati nelle tue e-mail util
 
 ### Come posso scaricare la libreria Aspose.Email?
 
- È possibile scaricare la libreria Aspose.Email da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) utilizzando Gestione pacchetti NuGet in Visual Studio.
+ È possibile scaricare la libreria Aspose.Email da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilizzando Gestione pacchetti NuGet in Visual Studio.
 
 ### Posso allegare più file ad una singola email?
 

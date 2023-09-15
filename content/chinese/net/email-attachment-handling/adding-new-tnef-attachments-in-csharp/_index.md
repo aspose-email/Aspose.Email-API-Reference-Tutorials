@@ -32,7 +32,9 @@ TNEF（传输中性封装格式）附件是 Microsoft Outlook 用于在电子邮
 using Aspose.Email.Mail;
 
 //加载带有 TNEF 附件的电子邮件
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## 提取和修改 TNEF 附件
@@ -46,7 +48,7 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         //提取 TNEF 附件
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
         //访问 TNEF 属性并根据需要进行修改
         //tnefAttachment.属性...
@@ -60,7 +62,9 @@ foreach (var attachment in message.Attachments)
 
 ```csharp
 //保存修改后的邮箱
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## 结论

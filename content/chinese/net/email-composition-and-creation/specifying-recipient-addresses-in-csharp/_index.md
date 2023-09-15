@@ -16,7 +16,7 @@ url: /zh/net/email-composition-and-creation/specifying-recipient-addresses-in-cs
 在开始之前，请确保您具备以下条件：
 
 1. 安装了 Visual Studio 或任何 C# 开发环境。
-2. Aspose.Email for .NET 库。您可以从[Aspose.Email for .NET 版本](https://releases.aspose.com/email/net/).
+2.  Aspose.Email for .NET 库。您可以从[Aspose.Email for .NET 版本](https://releases.aspose.com/email/net/).
 
 ## 脚步
 
@@ -85,7 +85,7 @@ client.Send(message);
 
 ### 如何将多个收件人添加到`To`, `Cc`, or `Bcc` fields?
 
-您可以通过调用添加多个收件人`Add`对各自的方法多次`MailAddressCollection`：
+您可以通过调用添加多个收件人`Add`对各自的方法多次`MailAddressCollection`:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));

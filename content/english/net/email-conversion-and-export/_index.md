@@ -20,8 +20,6 @@ The email conversion tutorials provide in-depth insights into transforming email
 
 The email export tutorials focus on enabling developers to export email messages from different email client storage formats. Whether it's exporting emails from Microsoft Exchange Server or Microsoft Outlook, these tutorials provide clear instructions on retrieving and exporting email data. This functionality is essential for data migration, backup, and synchronization purposes. The tutorials offer a step-by-step guide to accessing email data from various sources and exporting it to desired formats, ensuring that data remains accessible and usable across different systems.
 
-For detailed insights and practical implementation examples, you can explore the [Aspose.Email for .NET Email Conversion and Export tutorials](https://reference2.aspose.com/tutorials/email/net/email-conversion-and-export/). Elevate your email data management capabilities with Aspose.Email for .NET and unlock the potential for efficient email conversion and export, ultimately enhancing your development endeavors.
-
 ## Email Conversion and Export Tutorials
 ### [Customizing MHTML Conversion - C# Implementation](./customizing-mhtml-conversion-csharp-implementation/)
 Learn how to customize MHTML conversion using Aspose.Email for .NET. Step-by-step guide with C# source code.
@@ -33,8 +31,6 @@ Convert emails to MHT format with accurate timezones using Aspose.Email for .NET
 Learn how to handle EML files in C# using Aspose.Email for .NET. Step-by-step guide with code examples for loading, modifying, and saving email messages.
 ### [Converting EML to MSG Format using C#](./converting-eml-to-msg-format-using-csharp/)
 Learn how to convert EML to MSG using C# and Aspose.Email for .NET. A comprehensive guide with code examples for efficient email format conversion.
-### [Preserving TNEF Attachments when Reading Messages - C# Approach](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
-Learn how to preserve TNEF attachments using Aspose.Email for .NET in this step-by-step guide with source code.
 ### [C# Guide - Saving Email as MHTML File](./csharp-guide-saving-email-as-mhtml-file/)
 Learn how to save emails as MHTML files using C# and Aspose.Email for .NET. Step-by-step guide with code examples and FAQs.
 ### [Draft Message Handling in C# - Saving Email as Draft](./draft-message-handling-in-csharp-saving-email-as-draft/)

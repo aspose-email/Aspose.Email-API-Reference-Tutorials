@@ -23,11 +23,11 @@ Le codage de texte par défaut fait référence au codage de caractères qui est
 
 Utiliser le bon encodage de texte est crucial pour diverses raisons :
 ### Intégrité des données:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Un codage incorrect peut entraîner une corruption des données lors du stockage ou de la transmission.
 ### Prise en charge multilingue : 
-	Different languages require different encodings to display characters correctly.
+Différentes langues nécessitent des encodages différents pour afficher correctement les caractères.
 ### Compatibilité:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Un codage approprié garantit que les données peuvent être échangées de manière transparente entre différents systèmes.
 
 ## Présentation d'Aspose.Email pour .NET
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Étape 3 : Définition du codage de texte par défaut
-
-Pour définir le codage de texte par défaut pour vos e-mails, vous pouvez utiliser l'extrait de code suivant. Dans cet exemple, nous définissons l'encodage sur UTF-16.
-
-```csharp
-// Définir le codage de texte par défaut sur UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## Étape 4 : Envoi d'un e-mail avec un encodage personnalisé
+## Étape 3 : Envoi d'un e-mail avec un encodage personnalisé
 
 Lors de l'envoi d'un e-mail, vous pouvez spécifier un encodage de texte personnalisé pour le corps de l'e-mail. Cela peut être utile lors de l’envoi d’e-mails dans des langues nécessitant des encodages spécifiques.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Étape 4 : Définition du codage de texte par défaut
+
+Pour définir le codage de texte par défaut pour vos e-mails, vous pouvez utiliser l'extrait de code suivant. Dans cet exemple, nous définissons l'encodage sur UTF-16.
+
+```csharp
+// Définir le codage de texte par défaut sur UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Étape 5 : Réception et décodage des e-mails
 
 Lors de la réception d'e-mails, vous devrez peut-être décoder le corps de l'e-mail s'il a été envoyé à l'aide d'un encodage spécifique. Voici comment décoder le corps d’un e-mail entrant :
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Défis courants dans l’encodage de texte
 
 ### Encodages incompatibles : 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+L’utilisation de différents encodages pour l’envoi et la réception d’e-mails peut conduire à un texte tronqué.
 ### Caractères non pris en charge :
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Certains encodages peuvent ne pas prendre en charge certains caractères, ce qui entraîne leur remplacement ou leur perte.
 ### Corruption de fichiers : 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+Un encodage incorrect lors de l’enregistrement des e-mails sous forme de fichiers peut entraîner des fichiers corrompus.
 
 ## Meilleures pratiques pour l'encodage de texte
 

@@ -16,7 +16,7 @@ Questa guida ti guiderà attraverso il processo di specifica degli indirizzi dei
 Prima di iniziare, assicurati di avere quanto segue:
 
 1. Visual Studio o qualsiasi ambiente di sviluppo C# installato.
-2. Aspose.Email per la libreria .NET. Puoi ottenerlo da[Aspose.Email per le versioni .NET](https://releases.aspose.com/email/net/).
+2.  Aspose.Email per la libreria .NET. Puoi ottenerlo da[Aspose.Email per le versioni .NET](https://releases.aspose.com/email/net/).
 
 ## Passi
 

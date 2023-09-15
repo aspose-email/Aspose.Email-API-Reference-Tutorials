@@ -23,11 +23,11 @@ Standardtextkodning avser den teckenkodning som automatiskt används vid kodning
 
 Att använda rätt textkodning är avgörande av olika anledningar:
 ### Dataintegritet:
-	Incorrect encoding can lead to data corruption during storage or transmission.
+Felaktig kodning kan leda till datakorruption under lagring eller överföring.
 ### Flerspråkig support: 
-	Different languages require different encodings to display characters correctly.
+Olika språk kräver olika kodningar för att tecken ska visas korrekt.
 ### Kompatibilitet:
-	Proper encoding ensures that data can be exchanged seamlessly between different systems.
+Korrekt kodning säkerställer att data kan utbytas sömlöst mellan olika system.
 
 ## Vi presenterar Aspose.Email för .NET
 
@@ -54,16 +54,7 @@ using Aspose.Email.Clients.Smtp;
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ```
 
-## Steg 3: Ställ in standardtextkodning
-
-För att ställa in standardtextkodningen för dina e-postmeddelanden kan du använda följande kodavsnitt. I det här exemplet ställer vi in kodningen till UTF-16.
-
-```csharp
-// Ställ in standardtextkodningen till UTF-16
-client.Encoding = Encoding.Unicode;
-```
-
-## Steg 4: Skicka ett e-postmeddelande med anpassad kodning
+## Steg 3: Skicka ett e-postmeddelande med anpassad kodning
 
 När du skickar ett e-postmeddelande kan du ange en anpassad textkodning för e-postmeddelandet. Detta kan vara användbart när du skickar e-postmeddelanden på språk som kräver specifika kodningar.
 
@@ -81,6 +72,15 @@ message.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 client.Send(message);
 ```
 
+## Steg 4: Ställ in standardtextkodning
+
+För att ställa in standardtextkodningen för dina e-postmeddelanden kan du använda följande kodavsnitt. I det här exemplet ställer vi in kodningen till UTF-16.
+
+```csharp
+// Ställ in standardtextkodningen till UTF-16
+ message.PreferredTextEncoding = Encoding.Unicode;
+```
+
 ## Steg 5: Ta emot och avkoda e-postmeddelanden
 
 När du tar emot e-postmeddelanden kan du behöva avkoda e-postmeddelandet om det skickades med en specifik kodning. Så här kan du avkoda brödtexten i ett inkommande e-postmeddelande:
@@ -93,11 +93,11 @@ string decodedBody = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncodi
 ## Vanliga utmaningar i textkodning
 
 ### Felaktiga kodningar: 
-	Using different encodings for sending and receiving emails can lead to garbled text.
+Att använda olika kodningar för att skicka och ta emot e-postmeddelanden kan leda till förvrängd text.
 ### Tecken som inte stöds:
-	Some encodings may not support certain characters, leading to character replacement or loss.
+Vissa kodningar kanske inte stöder vissa tecken, vilket leder till att tecken byts ut eller förloras.
 ### Filkorruption: 
-	Incorrect encoding when saving emails as files can result in corrupted files.
+Felaktig kodning när du sparar e-postmeddelanden som filer kan resultera i skadade filer.
 
 ## Bästa metoder för textkodning
 

@@ -72,31 +72,6 @@ mhtStream.Seek(0, SeekOrigin.Begin);
 mhtStream.CopyTo(fileStream);
 ```
 
-## Ejemplo de código fuente completo
-
-Aquí está el ejemplo de código completo que reúne todos los pasos:
-
-```csharp
-// Agregue declaraciones de uso necesarias
-
-namespace EmailConversionApp
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Cargar y analizar el mensaje de correo electrónico
-
-            // Manejar información de zona horaria
-
-            // Convertir correo electrónico a formato MHT
-
-            // Guarde el archivo MHT
-        }
-    }
-}
-```
-
 ## Explorando personalizaciones adicionales
 
 Aspose.Email para .NET ofrece varias opciones de personalización. Puede explorar cómo agregar archivos adjuntos, modificar las propiedades del mensaje y más para satisfacer las necesidades de su aplicación.
@@ -121,7 +96,7 @@ Sí, Aspose.Email para .NET admite varios formatos, incluidos MSG, EML, PST y m�
 
 ### ¿Se conserva la información de la zona horaria en formato MHT?
 
-Sí, la información de la zona horaria se conserva durante el proceso de conversión. Al manejar las compensaciones de zona horaria y utilizar el sistema apropiado`TimeZoneInfo` métodos, puede garantizar una representación precisa de la zona horaria en el archivo MHT.
+ Sí, la información de la zona horaria se conserva durante el proceso de conversión. Al manejar las compensaciones de zona horaria y utilizar el sistema apropiado`TimeZoneInfo` métodos, puede garantizar una representación precisa de la zona horaria en el archivo MHT.
 
 ### ¿Dónde puedo encontrar más documentación y actualizaciones sobre Aspose.Email para .NET?
 

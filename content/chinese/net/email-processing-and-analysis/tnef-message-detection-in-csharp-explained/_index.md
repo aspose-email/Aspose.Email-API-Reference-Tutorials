@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1. 使用以下命令加载电子邮件消息`MapiMessage`班级：
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+//加载带有 TNEF 附件的电子邮件
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. 确定加载的电子邮件是否为 TNEF 邮件：
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
 代替`"path/to/your/email.msg"`与您的电子邮件文件的实际路径。
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 如果加载的电子邮件确实是 TNEF 邮件，您可以提取并处理其附件：
 
 ```csharp
-if (isTnefMessage)
+//遍历附件
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //处理 TNEF 附件
-        //例如，将附件保存到磁盘
-        attachment.Save("path/to/save/" + attachment.FileName);
+        //提取 TNEF 附件
+        var tnefAttachment = attachment;
+
+        //访问 TNEF 属性并根据需要进行修改
+        //tnefAttachment.属性...
     }
 }
 ```
 
 ## 常见问题解答
 
-## 如何检查电子邮件是否为 TNEF 邮件？
+### 如何检查电子邮件是否为 TNEF 邮件？
 
 要检查电子邮件是否为 TNEF 邮件，请使用`IsTnefMessage()`的方法`MapiMessage`班级：
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## 如何从 TNEF 邮件中提取附件？
+### 如何从 TNEF 邮件中提取附件？
 
 要从 TNEF 邮件中提取附件，请执行以下步骤：
 
 1. 使用加载电子邮件`MapiMessage.FromFile()`.
-2. 使用以下命令检查电子邮件是否为 TNEF 邮件`IsTnefMessage()`.
-3. 如果是 TNEF 邮件，请使用以下命令提取附件`ExtractTnefAttachments()`.
+2. 使用以下命令检查电子邮件是否为 TNEF 邮件`OriginalIsTnef`.
+3. 如果是 TNEF 消息，则通过迭代 ContentType.MediaType 等于“application/ms-tnef”的附件来提取附件。
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+//遍历附件
+foreach (var attachment in message.Attachments)
 {
-    //处理 TNEF 附件
-    //例如，将附件保存到磁盘
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        //提取 TNEF 附件
+        var tnefAttachment = attachment;
+
+        //访问 TNEF 属性并根据需要进行修改
+        //tnefAttachment.属性...
+    }
 }
 ```
 

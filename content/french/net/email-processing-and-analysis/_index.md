@@ -36,7 +36,10 @@ Apprenez à détecter et traiter les messages TNEF en C# à l'aide d'Aspose.Emai
 ### [Gestion sécurisée des messages - Chiffrement et déchiffrement en C#](./secure-message-handling-encryption-and-decryption-in-csharp/)
 Découvrez comment implémenter une gestion sécurisée des messages avec chiffrement et déchiffrement en C# à l'aide d'Aspose.Email pour .NET. Protégez efficacement les données sensibles.
 ### [Approche C# - Extraction des valeurs d'en-tête décodées](./csharp-approach-extracting-decoded-header-values/)
+Apprenez à extraire les valeurs d'en-tête d'e-mail décodées en C# à l'aide d'Aspose.Email pour .NET. Guide complet avec des exemples de code.
 ### [Récupération des notifications d'état de livraison avec C#](./retrieving-delivery-status-notifications-with-csharp/)
 Découvrez comment récupérer les notifications d'état de livraison par courrier électronique à l'aide de C# et Aspose.Email pour .NET.
 ### [Technique C# - Conversion du corps HTML en texte brut](./csharp-technique-converting-html-body-to-plain-text/)
 Apprenez à convertir sans effort le contenu des e-mails HTML en texte brut à l'aide d'Aspose.Email pour .NET. Guide et code détaillés. Explorez maintenant !
+### [Préserver les limites d'origine à l'aide du code C#](./preserving-original-boundaries-using-csharp-code/)
+Découvrez comment préserver les limites d'origine des pièces jointes aux e-mails à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.

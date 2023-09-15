@@ -25,8 +25,6 @@ Aspose.Email for .NET 关于“电子邮件标头和操作”的教程为开发�
 了解如何在 Aspose.Email for .NET 的帮助下使用 C# 修改电子邮件地址。请按照此分步指南有效地操作电子邮件地址。
 ### [使用 C# 在 MHT 转换期间更改字体](./changing-fonts-during-mht-conversion-using-csharp/)
 了解如何使用 Aspose.Email for .NET 在 MHT 转换期间更改字体。带有源代码的分步指南。非常适合电子邮件归档和文档管理。
-### [使用 C# 更改 ICS 文件中的 ProdID](./altering-prodid-in-ics-files-with-csharp/)
-了解使用 C# 和 Aspose.Email for .NET 更改 ICS 文件中的 ProdID。分步指南和代码。确保数据完整性和兼容性。 
 ### [ C# 中的自定义超链接渲染](./custom-hyperlink-rendering-in-csharp/)
 了解使用 Aspose.Email for .NET 在 C# 中自定义超链接呈现。使用自定义超链接样式创建个性化电子邮件内容。
 ### [使用 C# 定义 MHTML 中信息的自定义顺序](./defining-custom-order-of-information-in-mhtml-with-csharp/)

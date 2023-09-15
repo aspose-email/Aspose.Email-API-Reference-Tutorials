@@ -94,7 +94,7 @@ Bu kılavuzda Aspose.Email for .NET'i kullanarak e-postalarınıza ekleri nasıl
 
 ### Aspose.Email kütüphanesini nasıl indirebilirim?
 
- Aspose.Email kütüphanesini Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/)veya Visual Studio'da NuGet Paket Yöneticisi'ni kullanarak.
+ Aspose.Email kütüphanesini Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya Visual Studio'da NuGet Paket Yöneticisi'ni kullanarak.
 
 ### Tek bir e-postaya birden fazla dosya ekleyebilir miyim?
 

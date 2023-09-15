@@ -32,7 +32,9 @@ url: /ru/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 using Aspose.Email.Mail;
 
 // Загрузите электронное письмо с вложением TNEF.
-var message = MailMessage.Load("path/to/email.eml");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 ## Извлечение и изменение вложений TNEF
@@ -46,9 +48,9 @@ foreach (var attachment in message.Attachments)
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
         // Извлечь вложение TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        var tnefAttachment = attachment;
 
-        // Получите доступ к свойствам TNEF и измените их при необходимости.
+        //Получите доступ к свойствам TNEF и измените их при необходимости.
         // tnefAttachment.Свойства...
     }
 }
@@ -60,7 +62,9 @@ foreach (var attachment in message.Attachments)
 
 ```csharp
 // Сохраните измененный адрес электронной почты.
-message.Save("path/to/modified_email.eml");
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
 ## Заключение

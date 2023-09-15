@@ -69,7 +69,6 @@ foreach (AlternateView alternateView in message.AlternateViews)
         foreach (LinkedResource linkedResource in alternateView.LinkedResources)
         {
             // Gömülü mesajı işle
-            MailMessage embeddedMessage = linkedResource.GetLinkedMessage();
             // İstediğiniz işlemleri gerçekleştirin
         }
     }

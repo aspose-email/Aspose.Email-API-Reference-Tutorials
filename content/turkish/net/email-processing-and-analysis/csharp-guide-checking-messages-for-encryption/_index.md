@@ -35,7 +35,7 @@ Kodlama konusuna dalmadan önce uygun bir geliştirme ortamının kurulduğundan
 
 ## E-posta Mesajlarını Yükleme
 
-E-posta mesajlarıyla çalışmaya başlamak için bunları uygulamanıza yüklemeniz gerekir. Aspose.Email bu görevi kusursuz hale getiriyor:
+E-posta mesajlarıyla çalışmaya başlamak için bunları uygulamanıza yüklemeniz gerekir. Aspose.Email bu görevi kusursuz hale getirir:
 
 ```csharp
 using Aspose.Email;
@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### İleti Şifrelemesinin Doğrulanması
-
-Ayrıca bir mesajın dijital olarak imzalanıp şifrelenmediğini de doğrulayabilirsiniz:
-
-```csharp
-using Aspose.Email.Security;
-// Diğer ilgili kullanım ifadeleri
-
-// Bir e-posta mesajı yükleyin
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// İletinin imzalanmış ve şifrelenmiş olup olmadığını doğrulayın
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Şifrelemeyi kontrol edin
-if (isSigned && isEncrypted)
-{
-    // Mesaj imzalandı ve şifrelendi
-}
-```
-
 ## Şifrelenmiş Mesajların Şifresini Çözme
 
 Şifrelenmiş bir mesajın şifresini çözmek, uygun anahtarları ve sertifikaları gerektirir. Aspose.Email'i kullanarak bunu şu şekilde yapabilirsiniz:
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 // Şifre çözme anahtarını ve sertifikayı sağlayın
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 // Mesajın şifresini çöz
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## İstisnaları İşleme

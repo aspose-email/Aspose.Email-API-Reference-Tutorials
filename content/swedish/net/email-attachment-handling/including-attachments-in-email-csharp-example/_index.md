@@ -2,7 +2,7 @@
 title: Inkludera bilagor i e-post - C# Exempel
 linktitle: Inkludera bilagor i e-post - C# Exempel
 second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du inkluderar bilagor i e-post med Aspose.Email för .NET. Steg-för-steg-guide med C#-kodexempel.
+description: Lär dig hur du inkluderar bilagor i e-post med Aspose.Email för .NET. Steg-för-steg guide med C#-kodexempel.
 type: docs
 weight: 10
 url: /sv/net/email-attachment-handling/including-attachments-in-email-csharp-example/
@@ -10,7 +10,7 @@ url: /sv/net/email-attachment-handling/including-attachments-in-email-csharp-exa
 
 ## Introduktion till att inkludera bilagor i e-post
 
-dagens snabba digitala värld är e-postkommunikation fortfarande en hörnsten för företag och privatpersoner. Att lägga till bilagor till dina e-postmeddelanden ökar värdet av dina meddelanden genom att du kan dela dokument, bilder och filer utan ansträngning. Den här steg-för-steg-guiden leder dig genom processen att inkludera bilagor i din e-post med hjälp av Aspose.Email-biblioteket för .NET.
+I dagens snabba digitala värld är e-postkommunikation fortfarande en hörnsten för företag och privatpersoner. Att lägga till bilagor till dina e-postmeddelanden ökar värdet av dina meddelanden genom att du kan dela dokument, bilder och filer utan ansträngning. Den här steg-för-steg-guiden leder dig genom processen att inkludera bilagor i din e-post med hjälp av Aspose.Email-biblioteket för .NET.
 
 ## Konfigurera din utvecklingsmiljö
 
@@ -88,13 +88,13 @@ class Program
 
 ## Slutsats
 
-I den här guiden undersökte vi hur du inkluderar bilagor i dina e-postmeddelanden med Aspose.Email för .NET. Genom att följa stegen ovan kan du förbättra din e-postkommunikation med bifogade filer. Aspose.Email-biblioteket förenklar denna process, vilket gör det enklare än någonsin att skapa och skicka e-postmeddelanden med bilagor programmatiskt.
+den här guiden undersökte vi hur du inkluderar bilagor i dina e-postmeddelanden med Aspose.Email för .NET. Genom att följa stegen ovan kan du förbättra din e-postkommunikation med bifogade filer. Aspose.Email-biblioteket förenklar denna process, vilket gör det enklare än någonsin att skapa och skicka e-postmeddelanden med bilagor programmatiskt.
 
 ## FAQ's
 
 ### Hur kan jag ladda ner Aspose.Email-biblioteket?
 
- Du kan ladda ner Aspose.Email-biblioteket från Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/)eller genom att använda NuGet Package Manager i Visual Studio.
+ Du kan ladda ner Aspose.Email-biblioteket från Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) eller genom att använda NuGet Package Manager i Visual Studio.
 
 ### Kan jag bifoga flera filer till ett enda e-postmeddelande?
 

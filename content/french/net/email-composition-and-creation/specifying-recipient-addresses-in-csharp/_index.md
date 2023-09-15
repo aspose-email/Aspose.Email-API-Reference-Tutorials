@@ -16,7 +16,7 @@ Ce guide vous guidera tout au long du processus de spécification des adresses d
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 1. Visual Studio ou tout environnement de développement C# installé.
-2. Aspose.Email pour la bibliothèque .NET. Vous pouvez l'obtenir auprès du[Aspose.Email pour les versions .NET](https://releases.aspose.com/email/net/).
+2.  Aspose.Email pour la bibliothèque .NET. Vous pouvez l'obtenir auprès du[Aspose.Email pour les versions .NET](https://releases.aspose.com/email/net/).
 
 ## Pas
 

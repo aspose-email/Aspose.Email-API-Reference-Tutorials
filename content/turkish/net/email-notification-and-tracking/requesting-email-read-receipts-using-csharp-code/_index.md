@@ -8,99 +8,128 @@ weight: 11
 url: /tr/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-E-posta iletişimi, modern iş ve kişisel etkileşimlerin ayrılmaz bir parçasıdır. Çoğu zaman gönderdiğiniz e-postaların alıcılar tarafından okunup okunmadığını bilmek önemlidir. E-posta okundu bilgilerinin devreye girdiği yer burasıdır. Bu makalede, Aspose.Email for .NET kütüphanesinin gücünden yararlanarak C# kodunu kullanarak e-posta okundu bilgilerinin nasıl talep edileceğini inceleyeceğiz.
+Günümüzün dijital çağında e-posta yoluyla iletişim, kişisel ve profesyonel hayatımızın ayrılmaz bir parçası haline geldi. Çoğu zaman önemli e-postalar gönderirken alıcının mesajımızı okuyup onayladığından emin olmak isteriz. E-posta okundu bilgilerinin devreye girdiği yer burasıdır. Bu adım adım eğitimde, Aspose.Email for .NET ile C# kullanarak e-posta okundu bilgisi isteme sürecinde size rehberlik edeceğiz.
 
 ## E-posta Okundu Bilgilerine Giriş
 
-E-posta okundu bilgileri, alıcı bir e-postayı açtığında alıcının e-posta istemcisi tarafından gönderilen bildirimlerdir. Gönderene, e-postanın başarıyla teslim edildiğine ve okunduğuna dair onay sağlar. Bu özellik, müşterilerin veya iş arkadaşlarının önemli iletişimlerle olan etkileşimlerini takip etmek için özellikle iş bağlamlarında yararlı olabilir.
+E-posta izleme veya iade alındı bilgileri olarak da bilinen e-posta okundu bilgileri, alıcı e-postanızı açıp okuduğunda bildirim almanızı sağlar. Mesaj tesliminin ve etkileşimin onaylanmasını sağladığı için özellikle iş iletişimlerinde değerli bir özelliktir.
 
-## Geliştirme Ortamınızı Kurma
+## Önkoşullar
 
-Kodlama sürecine dalmadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olun. İhtiyacın olacak:
+Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-- Visual Studio veya başka herhangi bir C# geliştirme IDE'si
-- .NET Framework veya .NET Core yüklü
-- Aspose.Email for .NET kütüphanesi
+- Sisteminizde Visual Studio yüklü.
+- Aspose.Email for .NET kütüphanesini indirip projenizde referans olarak kullanabilirsiniz.
 
-## Aspose.Email for .NET'in Kurulumu
+## 1. Adım: MailMessage Örneği Oluşturma
 
- Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Şuradan indirebilirsiniz[Sürümleri Aspose](https://releases.aspose.com/email/net/). Kütüphaneyi projenize entegre etmek için sağlanan kurulum talimatlarını izleyin.
-
-## Yeni Bir C# Projesi Oluşturma
-
-Geliştirme ortamınızı açın ve yeni bir C# projesi oluşturun. Uygulama türünüze (Konsol, Windows Forms vb.) göre uygun bir proje şablonu seçin.
-
-## Okundu bilgisi istemek için kodun yazılması
-
-Şimdi e-postalarımıza okundu bilgisi istemek için C# kodunu yazalım.
-
-### E-posta Mesajı Yükleniyor
-
-Öncelikle, okundu bilgisi isteğiyle göndermek istediğimiz e-posta mesajını yüklememiz gerekiyor.
+ E-posta okundu bilgilerini uygulamanın ilk adımı, e-posta okundu bilgilerinin bir örneğini oluşturmaktır.`MailMessage` sınıf. Bu sınıf bir e-posta mesajını temsil eder ve e-postanın çeşitli özelliklerini ayarlamanıza olanak tanır.
 
 ```csharp
-using Aspose.Email;
-using Aspose.Email.Mime;
-
-// E-posta mesajını yükle
 MailMessage message = new MailMessage();
-message.Subject = "Your Subject";
-message.Body = "Your Email Content";
-message.From = "your@email.com";
-message.To = "recipient@email.com";
 ```
 
-### Okundu Bilgisi İsteği Ekleme
+## Adım 2: Mesaj Ayrıntılarını Belirleme
 
-Daha sonra, e-posta mesajına okundu bilgisi isteği ekleyeceğiz.
+Şimdi gönderen, alıcı, HTML gövdesi ve teslimat bildirimi seçenekleri de dahil olmak üzere e-posta mesajının ayrıntılarını belirtelim.
 
 ```csharp
-// Okundu bilgisi isteği ekle
-ReadReceiptRequest readReceiptRequest = new ReadReceiptRequest();
-message.AddCustomHeader(readReceiptRequest.HeaderName, readReceiptRequest.HeaderValue);
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-### E-postayı Gönderme
+## 3. Adım: SmtpClient Örneği Oluşturma
 
-Artık okundu bilgisi isteği eklendiğine göre e-postayı gönderelim.
+ E-postayı göndermek için bir örneğini oluşturmamız gerekir.`SmtpClient` Mesajın gönderilmesinden sorumlu olan sınıf.
 
 ```csharp
-using SmtpClient client = new SmtpClient("smtp.server.com", "username", "password");
-client.Send(message);
+SmtpClient client = new SmtpClient();
 ```
 
-## Okundu Bilgilerini İşleme
+## Adım 4: SMTP Ayarlarını Yapılandırma
 
-Bir alıcı e-postayı açıp okundu bilgisi isteğini kabul ettiğinde bir okundu bilgisi bildirimi alırsınız. Ancak okundu bilgilerinin işlenmesi, tüm e-posta istemcilerinin bunları desteklememesi nedeniyle biraz zor olabilir. Okundu bilgilerini toplamak ve bunları uygun şekilde işlemek için özel bir e-posta adresi kullanmanız önerilir.
+Ana sunucuyu, kullanıcı adını, parolayı ve bağlantı noktası numarasını belirterek SMTP sunucu ayarlarınızı yapılandırın.
 
-## E-posta Okundu Bilgilerini Kullanmaya İlişkin En İyi Uygulamalar
+```csharp
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+```
 
-- Okundu bilgilerini dikkatli bir şekilde ve yalnızca kritik e-postalar için kullanın.
-- Alıcının mahremiyetine ve tercihlerine saygı gösterin. Bazı kişiler okundu bilgilerini müdahaleci bulabilir.
-- E-posta istemcisi sınırlamaları nedeniyle okundu bilgilerinin oluşturulamayabileceği durumlara hazırlıklı olun.
+## Adım 5: E-postayı Gönderme
 
+ Son olarak şunu kullanın:`client.Send` e-posta mesajını gönderme yöntemi. Mesaj başarılı bir şekilde gönderilirse "Mesaj Gönderildi" bildirimi görüntülenecektir.
+
+```csharp
+try
+{
+    client.Send(message);
+    Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+    System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
+
+Bu beş basit adımla, C# ve Aspose.Email for .NET kullanarak e-posta gönderirken e-posta okundu bilgisi talep edebilirsiniz. Bu özellik, e-posta iletişimlerinize bir güvence katmanı ekleyerek önemli mesajlarınızın ne zaman okunduğunu bilmenizi sağlar.
+
+## Kaynak Kodunu Tamamlayın
+```csharp
+// MailMessage sınıfının bir örneğini oluşturun
+MailMessage message = new MailMessage();
+
+// Kimden, Kime, HtmlBody, DeliveryNotificationOptions alanını belirtin
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+
+// SmtpClient Sınıfının bir örneğini oluşturun
+SmtpClient client = new SmtpClient();
+
+// Posta ana makine sunucunuzu, Kullanıcı Adınızı, Parolanızı ve Bağlantı Noktası No'nuzu belirtin
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+
+try
+{
+	// Client.Send bu mesajı gönderecek
+	client.Send(message);
+	// 'Mesaj Gönderildi' seçeneğini yalnızca mesaj başarıyla gönderildiyse görüntüle
+	Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+	System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
 ## Çözüm
 
-Bu makalede, Aspose.Email for .NET kütüphanesinin yardımıyla C# kodunu kullanarak e-posta okundu bilgilerinin nasıl talep edileceğini araştırdık. Bu özellik, özellikle profesyonel iletişimlerde olmak üzere çeşitli senaryolarda e-posta alıcılarınızın etkileşimini izlemek için değerli olabilir.
+Bu eğitimde, Aspose.Email for .NET ile C# kullanarak e-posta okundu bilgilerinin nasıl talep edileceğini araştırdık. E-posta izleme, özellikle profesyonel ortamlarda mesajlarınızın hedeflenen alıcılara iletilmesini ve okunmasını sağlamak için güçlü bir araçtır. Burada özetlenen adımları izleyerek bu işlevi e-posta uygulamanıza kolayca uygulayabilirsiniz.
 
-## SSS
+## Sıkça Sorulan Sorular (SSS)
 
-### C#'ta okundu bilgilerini nasıl izleyebilirim?
+1. ### E-posta okundu bilgilerinin amacı nedir?
+   E-posta okundu bilgileri, bir e-postanın alıcı tarafından açıldığı ve okunduğuna dair onay sağlar. Genellikle önemli veya zamana duyarlı mesajları izlemek için kullanılırlar.
 
-C#'ta okundu bilgilerini izlemek için Aspose.Email for .NET kitaplığını kullanarak e-posta mesajlarınıza okundu bilgisi istekleri ekleyebilirsiniz. Okundu bilgisi işleminin alıcının e-posta istemcisine bağlı olarak değişebileceğini unutmayın.
+2. ### E-posta okundu bilgileri alıcı tarafından devre dışı bırakılabilir mi?
+   Evet, e-posta istemcileri genellikle kullanıcıların okundu bilgilerinin gönderilmesini devre dışı bırakmasına olanak tanır. Bu nedenle bunları her zaman alacağınız garanti edilmez.
 
-### Okundu bilgileri güvenilir mi?
+3. ### E-posta okundu bilgileri tüm e-posta istemcilerinde standart bir özellik midir?
+   Hayır, e-posta okundu bilgileri evrensel olarak desteklenmez. Çalışıp çalışmamaları e-posta istemcisine ve alıcının ayarlarına bağlıdır.
 
-Okundu bilgilerinin oluşturulması alıcının e-posta istemcisine ve ayarlarına bağlı olduğundan okundu bilgileri her zaman güvenilir değildir. Bazı e-posta istemcileri okundu bilgilerini desteklemeyebilir ve bu durum izlemenin tutarsız olmasına yol açabilir.
+4. ### Mobil cihazda bir e-postanın ne zaman açıldığını takip etmek mümkün müdür?
+   E-posta izleme genellikle alıcının e-posta istemcisine ve ayarlarına bağlıdır, dolayısıyla çeşitli faktörlere bağlı olarak mobil cihazlarda çalışabilir veya çalışmayabilir.
 
-### Herhangi bir e-posta türü için okundu bilgisi istekleri gönderebilir miyim?
-
-Evet, düz metin ve HTML e-postaları da dahil olmak üzere çoğu e-posta mesajı türü için okundu bilgisi istekleri gönderebilirsiniz. Ancak alıcının e-posta istemcisinin etkili bir şekilde çalışması için okundu bilgisi işlemeyi desteklemesi gerekir.
-
-### Okundu bilgisi ile birden fazla alıcının yanıtını takip etmek mümkün müdür?
-
-Evet, e-posta mesajına uygun başlıkları ekleyerek her alıcı için ayrı ayrı okundu bilgisi isteyebilirsiniz. Bu şekilde, bireysel alıcıların e-postayla olan etkileşimlerini izleyebilirsiniz.
-
-### Okundu bilgilerinin oluşturulmadığı durumları nasıl ele alacağım?
-
-Okundu bilgilerinin oluşturulmadığı senaryolara hazırlıklı olmak önemlidir. Bunun nedeni alıcı tercihleri, e-posta istemcisi sınırlamaları veya diğer faktörler olabilir. E-posta etkileşimini izlemek için her zaman alternatif yöntemlere sahip olun.
+5. ### E-posta okundu bilgilerini kullanırken gizlilik hususları var mı?
+   Evet, e-posta izlemeyle ilgili gizlilik endişeleri vardır. Bazı alıcılar bunun istilacı olduğunu düşünebilir, bu nedenle bu özelliğin sorumlu bir şekilde kullanılması ve gizlilik tercihlerine saygı gösterilmesi önemlidir.

@@ -89,7 +89,7 @@ In questa guida hai imparato come generare file TNEF EML da file MSG utilizzando
 
 ### Come posso ottenere la libreria Aspose.Email per .NET?
 
- È possibile ottenere la libreria Aspose.Email per .NET dalle versioni Aspose:[Scarica Aspose.Email per .NET](https://releases.aspose.com/email/net).
+È possibile ottenere la libreria Aspose.Email per .NET dalle versioni Aspose:[Scarica Aspose.Email per .NET](https://releases.aspose.com/email/net).
 
 ### Posso utilizzare Aspose.Email per formati diversi da MSG?
 

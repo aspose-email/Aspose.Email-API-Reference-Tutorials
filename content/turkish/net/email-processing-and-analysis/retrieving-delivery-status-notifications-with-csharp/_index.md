@@ -8,102 +8,66 @@ weight: 18
 url: /tr/net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
 
-## giriiş
+E-posta iletişiminin hızlı dünyasında, gönderdiğiniz e-postaların başarıyla iletilmesini sağlamak çok önemlidir. E-postalarınızın teslim durumunu takip etmenin bir yolu Aspose.Email for C#'ı kullanmaktır. Bu kapsamlı kılavuzda, güçlü Aspose.Email kütüphanesini kullanarak C# ile teslimat durumu bildirimlerini (DSN'ler) alma sürecinde size yol göstereceğiz.
 
-E-posta iletişiminde Teslim Durumu Bildirimleri (DSN'ler), gönderenleri e-postalarının teslim durumu hakkında bilgilendirmede çok önemli bir rol oynar. Aspose.Email for .NET, e-postalarla çalışmak için DSN'leri almak da dahil olmak üzere işlevler sağlayan güçlü bir kitaplıktır. Bu kılavuzda, C# ve Aspose.Email for .NET kütüphanesini kullanarak Teslimat Durumu Bildirimlerini alma sürecini anlatacağız.
+## 1. Giriş
 
-## Önkoşullar
+Günümüzün dijital çağında e-posta iletişimimizin ayrılmaz bir parçasıdır. İster önemli iş belgeleri ister kişisel mesajlar gönderiyor olun, gönderdiğiniz e-postaların durumunu bilmek çok önemlidir. Aspose.Email for C#, teslimat durumu bildirimlerinin alınması da dahil olmak üzere, e-postayla ilgili görevlerin yerine getirilmesi için güçlü ve esnek bir çözüm sunar.
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+## 2. Teslimat Durumu Bildirimlerini Anlama
 
-1. Visual Studio kuruldu.
-2.  Aspose.Email for .NET kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net).
-3. C# programlamanın temel anlayışı.
+Teknik detaylara dalmadan önce Teslimat Durumu Bildirimlerinin (DSN) ne olduğunu anlayalım. DSN'ler, gönderenleri e-postalarının teslim durumu hakkında bilgilendirmek için posta sunucuları tarafından oluşturulan otomatik mesajlardır. Bu bildirimler bir e-postanın başarılı bir şekilde teslim edildiğini, geciktiğini veya başarısız olduğunu belirtebilir.
 
-## Adımlar
+## 3. Geliştirme Ortamınızı Kurma
 
-Aspose.Email for .NET'i kullanarak Teslimat Durumu Bildirimlerini almak için şu adımları izleyin:
+ Başlamak için geliştirme ortamınızı ayarlamanız gerekir. Visual Studio'nun ve Aspose.Email kütüphanesinin kurulu olduğundan emin olun. Aspose.Email for C#'ı web sitesinden indirebilirsiniz.[Burada](https://www.aspose.com/downloads/email/net).
 
-### Adım 1: Yeni Bir Proje Oluşturun
+## 4. C# için Aspose.Email'in başlatılması
 
-Visual Studio'yu açın ve yeni bir C# konsol uygulama projesi oluşturun.
-
-### Adım 2: Aspose.Email Referansını Ekleyin
-
-İndirdiğiniz Aspose.Email DLL dosyasını projenizin dizinine kopyalayın. Ardından Solution Explorer'da projeye sağ tıklayın, "Ekle" > "Referans"ı seçin ve Aspose.Email DLL dosyasına göz atın. Referansı projenize eklemek için "Tamam"ı tıklayın.
-
-### 3. Adım: DSN'leri Almak için Kod Yazma
-
- Aç`Program.cs` projenize dosya ekleyin ve gerekli ad alanlarını içe aktarın:
+C# projenize Aspose.Email kütüphanesine bir referans ekleyerek başlayın. Ardından e-postalar ve DSN'lerle çalışmaya başlamak için Aspose.Email'i başlatın.
 
 ```csharp
+// Aspose.Email'e referans ekle
 using Aspose.Email;
-using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
+// Aspose.Email'i başlat
+var emailClient = new SmtpClient();
 ```
 
- İçinde`Main` yöntemini kullanarak e-posta sunucusuna bağlanmak, DSN'leri almak ve bunları işlemek için gereken kodu yazın:
+## 5. DSN Talebi ile E-posta Gönderme
+
+DSN'leri almak için e-posta gönderirken bunları talep etmeniz gerekir. DSN'leri istemek için e-posta mesajınızda uygun başlıkları ayarlayın.
 
 ```csharp
-class Program
-{
-    static void Main(string[] args)
-    {
-        // IMAP sunucusu kimlik bilgilerinizi ve ana makinenizi ayarlayın
-        string host = "your_imap_host";
-        int port = 993;
-        string username = "your_email";
-        string password = "your_password";
+// Bir e-posta mesajı oluşturun
+var message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");
 
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            // Gelen Kutusu klasörünü seçin
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            // DSN'leri olan mesajları arayın
-            MailQueryBuilder queryBuilder = new MailQueryBuilder();
-            queryBuilder.HasFlags(Aspose.Email.Mail.MessageFlags.DeliveryNotification);
-            MailQuery query = queryBuilder.GetQuery();
-            ImapMessageInfoCollection messages = client.ListMessages(query);
-
-            // Alınan DSN'leri işle
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                MailMessage message = client.FetchMessage(messageInfo.SequenceNumber);
-
-                // DSN ayrıntılarını işle
-                Console.WriteLine("Subject: " + message.Subject);
-                Console.WriteLine("From: " + message.From);
-                // ... Diğer DSN ayrıntılarını işleyin
-
-                // Mesajı okundu olarak işaretleyin veya silin
-                client.DeleteMessage(messageInfo.SequenceNumber);
-            }
-        }
-    }
-}
+//DSN'leri isteyin
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
- Yer değiştirmek`"your_imap_host"`, `"your_email"` , Ve`"your_password"` gerçek IMAP sunucusu ayrıntılarınızla.
 
-### Adım 4: Uygulamayı Çalıştırın
+## 8. DSN İşlemenin Özelleştirilmesi
 
-Uygulamanızı oluşturun ve çalıştırın. E-posta sunucunuza bağlanacak, Gelen Kutusu klasöründen DSN'leri alacak, ayrıntılarını işleyecek ve isteğe bağlı olarak bunları silecek veya okundu olarak işaretleyecektir.
+Aspose.Email, uygulamanızın ihtiyaçlarına uyacak şekilde DSN işlemeyi özelleştirmenize olanak tanır. DSN'lerden ayrıntılı bilgi çıkarabilir ve uygun önlemleri alabilirsiniz.
 
-## SSS
+## 9. Sorun Giderme ve SSS
 
-### IMAP sunucusu ana bilgisayarını nasıl bulurum?
+### S1: DSN'leri almazsam ne olur?
+Cevap1: E-posta sunucunuzun DSN'leri desteklediğinden emin olun ve DSN istemek için e-posta istemcinizin ayarlarını kontrol edin.
 
- IMAP sunucusu ana bilgisayarını e-posta servis sağlayıcınızın belgelerinden veya ayarlarından bulabilirsiniz. Genellikle şu formattadır:`imap.yourdomain.com`.
+### S2: Aspose.Email'i e-postayla ilgili diğer görevler için kullanabilir miyim?
+C2: Evet, Aspose.Email, e-postalarla çalışmak için e-postaların gönderilmesi, alınması ve işlenmesi de dahil olmak üzere çok çeşitli özellikler sunar.
 
-### Konu ve gönderen dışındaki DSN ayrıntılarını nasıl işleyebilirim?
+### S3: DSN'ler tüm e-posta sağlayıcıları için destekleniyor mu?
+Cevap3: DSN desteği e-posta sağlayıcıları arasında değişiklik gösterebilir. Uyumluluk için sağlayıcınıza danışın.
 
- Çeşitli özelliklerine erişebilirsiniz.`MailMessage` Alıcı adresleri, teslimat durumu, zaman damgası ve daha fazlası gibi DSN ayrıntılarını almak için nesne. Bakın[Aspose.Email belgeleri](https://reference.aspose.com/email/net/) daha fazla bilgi için.
+### S4: Aspose.Email'i diğer programlama dilleriyle kullanabilir miyim?
+Cevap4: Aspose.Email öncelikli olarak C# için tasarlanmıştır ancak diğer diller için de API'ler sunmaktadır.
 
-### DSN'leri silmek veya okundu olarak işaretlemek gerekli mi?
+### S5: Daha fazla kaynak ve belgeyi nerede bulabilirim?
+ A5: ziyaret edin[C# API belgeleri için Aspose.Email](https://reference.aspose.com/email/net/) Kapsamlı kılavuzlar ve örnekler için.
 
-Hayır, gerekli değil. DSN'lerin silinmesi veya okundu olarak işaretlenmesi uygulamanızın gereksinimlerine bağlıdır. Sağlanan kod her iki seçeneği de gösterir, ancak bunu ihtiyaçlarınıza göre özelleştirebilirsiniz.
+### 10. Sonuç
 
-## Çözüm
-
-C# ve Aspose.Email for .NET kullanarak Teslimat Durumu Bildirimlerini almak basit bir işlemdir. Aspose.Email kütüphanesi, IMAP sunucusuyla iletişimi basitleştirir ve e-posta mesajlarını işlemek için kullanımı kolay API'ler sağlar. Bu kılavuzla artık DSN alma işlevini C# uygulamalarınıza dahil edebilirsiniz.
+Bu kılavuzda, Aspose.Email for C# kullanarak C# ile teslimat durumu bildirimlerinin nasıl alınacağını araştırdık. E-posta teslimatlarınızı takip etmek etkili iletişim için çok önemlidir ve Aspose.Email bu süreci basitleştirir.

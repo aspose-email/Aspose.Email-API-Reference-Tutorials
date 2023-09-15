@@ -43,7 +43,10 @@ Per crittografare un messaggio, utilizzare il seguente snippet di codice:
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Message body");
 
 // Crittografare il messaggio
-message.Encrypt();
+var publicCertFile = "YourCertificateFile.cer";
+var publicCert = new X509Certificate2(publicCertFile);
+
+message.Encrypt(publicCert);
 
 // Salva il messaggio crittografato in un file o invialo
 message.Save("encrypted.eml");

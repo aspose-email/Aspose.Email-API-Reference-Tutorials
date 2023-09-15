@@ -112,4 +112,4 @@ Oui, Aspose.Email prend en charge .NET Core, vous permettant de créer des appli
 
 ### Où puis-je trouver plus d’exemples et de documentation ?
 
-Vous pouvez explorer des exemples complets et une documentation détaillée sur le[Documentation Aspose.Email](https://reference.aspose.com/email/net) page.
+ Vous pouvez explorer des exemples complets et une documentation détaillée sur le[Documentation Aspose.Email](https://reference.aspose.com/email/net) page.

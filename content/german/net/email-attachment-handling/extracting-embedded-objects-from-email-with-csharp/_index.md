@@ -14,7 +14,7 @@ Eingebettete Objekte in E-Mails beziehen sich auf Dateien, die direkt in den E-M
 
 ## Erste Schritte mit Aspose.Email für .NET
 
-Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die verschiedene Funktionen für die Arbeit mit E-Mails bereitstellt, einschließlich Parsen, Erstellen und Bearbeiten von E-Mail-Nachrichten. Um zu beginnen, muss die Aspose.Email für .NET-Bibliothek in Ihrem Projekt installiert sein. Sie können es entweder von Aspose.Releases herunterladen:[Aspose.Releases](https://releases.aspose.com/email/net/) oder verwenden Sie einen Paketmanager wie NuGet.
+ Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die verschiedene Funktionen für die Arbeit mit E-Mails bereitstellt, einschließlich Parsen, Erstellen und Bearbeiten von E-Mail-Nachrichten. Um zu beginnen, muss die Aspose.Email für .NET-Bibliothek in Ihrem Projekt installiert sein. Sie können es entweder von Aspose.Releases herunterladen:[Aspose.Releases](https://releases.aspose.com/email/net/) oder verwenden Sie einen Paketmanager wie NuGet.
 
 ## Laden und Analysieren einer E-Mail
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Extrahieren Sie eingebettete Objekte aus HTML-Inhalten
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Extrahieren und speichern Sie die verknüpfte Ressource (eingebettetes Objekt)
+            // Extrahieren und speichern Sie die verknüpfte Ressource (eingebettetes Objekt)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Extrahieren Sie eingebettete Objekte aus HTML-Inhalten
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Extrahieren und speichern Sie die verknüpfte Ressource (eingebettetes Objekt)
+                        // Extrahieren und speichern Sie die verknüpfte Ressource (eingebettetes Objekt)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

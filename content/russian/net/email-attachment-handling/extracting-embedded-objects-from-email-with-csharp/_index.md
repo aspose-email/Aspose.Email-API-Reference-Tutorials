@@ -14,7 +14,7 @@ url: /ru/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 
 ## Начало работы с Aspose.Email для .NET
 
-Aspose.Email для .NET — это мощная библиотека, предоставляющая различные функции для работы с электронной почтой, включая анализ, создание и манипулирование сообщениями электронной почты. Для начала вам необходимо, чтобы в вашем проекте была установлена библиотека Aspose.Email for .NET. Вы можете скачать его с сайта Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/) или используйте менеджер пакетов, например NuGet.
+ Aspose.Email для .NET — это мощная библиотека, предоставляющая различные функции для работы с электронной почтой, включая анализ, создание и манипулирование сообщениями электронной почты. Для начала вам необходимо, чтобы в вашем проекте была установлена библиотека Aspose.Email for .NET. Вы можете скачать его с сайта Aspose.Релизы:[Aspose.Releases](https://releases.aspose.com/email/net/) или используйте менеджер пакетов, например NuGet.
 
 ## Загрузка и анализ электронной почты
 
@@ -42,7 +42,7 @@ foreach (var view in message.AlternateViews)
         // Извлечение внедренных объектов из HTML-контента
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Извлеките и сохраните связанный ресурс (внедренный объект)
+            // Извлеките и сохраните связанный ресурс (внедренный объект)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -78,7 +78,7 @@ namespace EmbeddedObjectExtractor
                     // Извлечение внедренных объектов из HTML-контента
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Извлеките и сохраните связанный ресурс (внедренный объект)
+                        // Извлеките и сохраните связанный ресурс (внедренный объект)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }

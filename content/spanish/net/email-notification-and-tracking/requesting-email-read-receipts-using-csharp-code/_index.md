@@ -8,99 +8,128 @@ weight: 11
 url: /es/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-La comunicación por correo electrónico es una parte integral de las interacciones personales y comerciales modernas. A menudo, es esencial saber si los destinatarios han leído los correos electrónicos enviados. Aquí es donde entran en juego los recibos de lectura de correo electrónico. En este artículo, exploraremos cómo solicitar confirmaciones de lectura de correo electrónico utilizando código C#, aprovechando el poder de Aspose.Email para la biblioteca .NET.
+En la era digital actual, la comunicación por correo electrónico se ha convertido en una parte integral de nuestra vida personal y profesional. A menudo, al enviar correos electrónicos importantes, queremos asegurarnos de que el destinatario haya leído y aceptado nuestro mensaje. Aquí es donde entran en juego los recibos de lectura de correo electrónico. En este tutorial paso a paso, lo guiaremos a través del proceso de solicitar confirmaciones de lectura de correo electrónico usando C# con Aspose.Email para .NET.
 
 ## Introducción a los recibos de lectura de correo electrónico
 
-Los recibos de lectura de correo electrónico son notificaciones enviadas por el cliente de correo electrónico del destinatario cuando abre un correo electrónico. Proporciona al remitente la confirmación de que el correo electrónico se ha entregado y leído correctamente. Esta característica puede resultar particularmente útil en contextos empresariales para realizar un seguimiento de la participación de clientes o colegas en comunicaciones importantes.
+Los recibos de lectura de correo electrónico, también conocidos como seguimiento de correo electrónico o recibos de devolución, le permiten recibir notificaciones cuando el destinatario abre y lee su correo electrónico. Es una característica valiosa, especialmente en las comunicaciones comerciales, ya que proporciona confirmación de la entrega y la participación del mensaje.
 
-## Configurar su entorno de desarrollo
+## Requisitos previos
 
-Antes de sumergirnos en el proceso de codificación, asegúrese de tener un entorno de desarrollo adecuado. Necesitarás:
+Antes de profundizar en el código, asegúrese de cumplir con los siguientes requisitos previos:
 
-- Visual Studio o cualquier otro IDE de desarrollo de C#
-- .NET Framework o .NET Core instalado
-- Aspose.Email para la biblioteca .NET
+- Visual Studio instalado en su sistema.
+- Aspose.Email para la biblioteca .NET descargada y referenciada en su proyecto.
 
-## Instalación de Aspose.Email para .NET
+## Paso 1: crear una instancia de MailMessage
 
- Para comenzar, debe instalar la biblioteca Aspose.Email para .NET. Puedes descargarlo desde[Lanzamientos de Aspose](https://releases.aspose.com/email/net/). Siga las instrucciones de instalación proporcionadas para integrar la biblioteca en su proyecto.
-
-## Crear un nuevo proyecto C#
-
-Abra su entorno de desarrollo y cree un nuevo proyecto de C#. Elija una plantilla de proyecto adecuada según su tipo de aplicación (Consola, Windows Forms, etc.).
-
-## Escribir el código para solicitar recibos de lectura
-
-Ahora, escribamos el código C# para solicitar confirmaciones de lectura de nuestros correos electrónicos.
-
-### Cargando mensaje de correo electrónico
-
-Primero, debemos cargar el mensaje de correo electrónico que queremos enviar con una solicitud de confirmación de lectura.
+ El primer paso para implementar confirmaciones de lectura de correo electrónico es crear una instancia del`MailMessage` clase. Esta clase representa un mensaje de correo electrónico y le permite configurar varias propiedades del correo electrónico.
 
 ```csharp
-using Aspose.Email;
-using Aspose.Email.Mime;
-
-// Cargar el mensaje de correo electrónico
 MailMessage message = new MailMessage();
-message.Subject = "Your Subject";
-message.Body = "Your Email Content";
-message.From = "your@email.com";
-message.To = "recipient@email.com";
 ```
 
-### Agregar solicitud de recibo de lectura
+## Paso 2: especificar los detalles del mensaje
 
-A continuación, agregaremos una solicitud de confirmación de lectura al mensaje de correo electrónico.
+Ahora, especifiquemos los detalles del mensaje de correo electrónico, incluido el remitente, el destinatario, el cuerpo HTML y las opciones de notificación de entrega.
 
 ```csharp
-// Agregar solicitud de recibo de lectura
-ReadReceiptRequest readReceiptRequest = new ReadReceiptRequest();
-message.AddCustomHeader(readReceiptRequest.HeaderName, readReceiptRequest.HeaderValue);
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-### Enviando el correo electrónico
+## Paso 3: crear una instancia de SmtpClient
 
-Ahora que se agregó la solicitud de confirmación de lectura, enviemos el correo electrónico.
+ Para enviar el correo electrónico, necesitamos crear una instancia del`SmtpClient` clase, que es responsable de enviar el mensaje.
 
 ```csharp
-using SmtpClient client = new SmtpClient("smtp.server.com", "username", "password");
-client.Send(message);
+SmtpClient client = new SmtpClient();
 ```
 
-## Manejo de recibos de lectura
+## Paso 4: Configurar los ajustes SMTP
 
-Cuando un destinatario abre el correo electrónico y acepta la solicitud de confirmación de lectura, recibirá una notificación de confirmación de lectura. Sin embargo, manejar los recibos de lectura puede ser un poco complicado ya que no todos los clientes de correo electrónico los admiten. Es recomendable utilizar una dirección de correo electrónico dedicada para recopilar los recibos de lectura y procesarlos en consecuencia.
+Configure los ajustes de su servidor SMTP especificando el servidor host, el nombre de usuario, la contraseña y el número de puerto.
 
-## Mejores prácticas para utilizar recibos de lectura de correo electrónico
+```csharp
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+```
 
-- Utilice los recibos de lectura con moderación y sólo para correos electrónicos críticos.
-- Respetar la privacidad y preferencias del destinatario. Algunas personas pueden encontrar intrusivos los recibos de lectura.
-- Esté preparado para casos en los que es posible que no se generen confirmaciones de lectura debido a limitaciones del cliente de correo electrónico.
+## Paso 5: enviar el correo electrónico
 
+ Finalmente, utiliza el`client.Send` método para enviar el mensaje de correo electrónico. Si el mensaje se envía correctamente, se mostrará una notificación de "Mensaje enviado".
+
+```csharp
+try
+{
+    client.Send(message);
+    Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+    System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
+
+Con estos cinco sencillos pasos, puede solicitar confirmaciones de lectura de correo electrónico al enviar correos electrónicos utilizando C# y Aspose.Email para .NET. Esta característica agrega una capa de seguridad a sus comunicaciones por correo electrónico, asegurando que sepa cuándo se leen sus mensajes importantes.
+
+## Código fuente completo
+```csharp
+// Crear una instancia de la clase MailMessage
+MailMessage message = new MailMessage();
+
+// Especifique el campo De, A, HtmlBody, DeliveryNotificationOptions
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+
+// Crear una instancia de la clase SmtpClient
+SmtpClient client = new SmtpClient();
+
+// Especifique su servidor host de correo, nombre de usuario, contraseña y número de puerto
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+
+try
+{
+	// Client.Send enviará este mensaje
+	client.Send(message);
+	// Mostrar 'Mensaje enviado', solo si el mensaje se envió correctamente
+	Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+	System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
 ## Conclusión
 
-En este artículo, exploramos cómo solicitar confirmaciones de lectura de correo electrónico utilizando código C# con la ayuda de la biblioteca Aspose.Email para .NET. Esta función puede resultar valiosa para realizar un seguimiento de la participación de los destinatarios de su correo electrónico en diversos escenarios, especialmente en comunicaciones profesionales.
+En este tutorial, exploramos cómo solicitar recibos de lectura de correo electrónico usando C# con Aspose.Email para .NET. El seguimiento del correo electrónico es una herramienta poderosa para garantizar que sus mensajes sean entregados y leídos por los destinatarios previstos, especialmente en entornos profesionales. Si sigue los pasos descritos aquí, podrá implementar fácilmente esta funcionalidad en su aplicación de correo electrónico.
 
-## Preguntas frecuentes
+## Preguntas frecuentes (FAQ)
 
-### ¿Cómo puedo realizar un seguimiento de los recibos de lectura en C#?
+1. ### ¿Cuál es el propósito de los recibos de lectura de correo electrónico?
+   Los recibos de lectura de correo electrónico brindan confirmación de que el destinatario abrió y leyó un correo electrónico. A menudo se utilizan para rastrear mensajes importantes o urgentes.
 
-Para realizar un seguimiento de los recibos de lectura en C#, puede utilizar la biblioteca Aspose.Email para .NET para agregar solicitudes de recibo de lectura a sus mensajes de correo electrónico. Tenga en cuenta que el manejo de la confirmación de lectura puede variar según el cliente de correo electrónico del destinatario.
+2. ### ¿El destinatario puede desactivar los recibos de lectura de correo electrónico?
+   Sí, los clientes de correo electrónico suelen permitir a los usuarios desactivar el envío de confirmaciones de lectura. Por lo tanto, no se garantiza que los reciba siempre.
 
-### ¿Son confiables los recibos de lectura?
+3. ### ¿Las confirmaciones de lectura de correo electrónico son una característica estándar en todos los clientes de correo electrónico?
+   No, las confirmaciones de lectura de correo electrónico no son universalmente compatibles. Si funcionan o no depende del cliente de correo electrónico y de la configuración del destinatario.
 
-Los recibos de lectura no siempre son confiables, ya que su generación depende del cliente de correo electrónico y de la configuración del destinatario. Es posible que algunos clientes de correo electrónico no admitan confirmaciones de lectura, lo que genera un seguimiento inconsistente.
+4. ### ¿Es posible rastrear cuándo se abre un correo electrónico en un dispositivo móvil?
+   El seguimiento del correo electrónico generalmente se basa en la configuración y el cliente de correo electrónico del destinatario, por lo que puede funcionar o no en dispositivos móviles, dependiendo de varios factores.
 
-### ¿Puedo enviar solicitudes de confirmación de lectura para cualquier tipo de correo electrónico?
-
-Sí, puede enviar solicitudes de confirmación de lectura para la mayoría de los tipos de mensajes de correo electrónico, incluidos los correos electrónicos de texto sin formato y HTML. Sin embargo, el cliente de correo electrónico del destinatario debe admitir el procesamiento de confirmación de lectura para que funcione de forma eficaz.
-
-### ¿Es posible realizar un seguimiento de las respuestas de varios destinatarios con confirmaciones de lectura?
-
-Sí, puede solicitar confirmaciones de lectura para cada destinatario por separado agregando los encabezados correspondientes al mensaje de correo electrónico. De esta manera, puede realizar un seguimiento de las interacciones de los destinatarios individuales con el correo electrónico.
-
-### ¿Cómo manejo los casos en los que no se generan confirmaciones de lectura?
-
-Es esencial estar preparado para escenarios en los que no se generan confirmaciones de lectura. Esto podría suceder debido a las preferencias del destinatario, limitaciones del cliente de correo electrónico u otros factores. Tenga siempre métodos alternativos para realizar un seguimiento de la participación del correo electrónico.
+5. ### ¿Existen consideraciones de privacidad al utilizar confirmaciones de lectura de correo electrónico?
+   Sí, existen preocupaciones de privacidad relacionadas con el seguimiento del correo electrónico. Algunos destinatarios pueden considerarlo invasivo, por lo que es fundamental utilizar esta función de forma responsable y respetar las preferencias de privacidad.

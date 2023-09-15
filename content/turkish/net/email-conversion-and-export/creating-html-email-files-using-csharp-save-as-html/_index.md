@@ -112,4 +112,4 @@ Evet, Aspose.Email .NET Core'u destekleyerek platformlar arası uygulamalar olu�
 
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
 
-Kapsamlı örnekleri ve ayrıntılı belgeleri inceleyebilirsiniz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net) sayfa.
+ Kapsamlı örnekleri ve ayrıntılı belgeleri inceleyebilirsiniz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net) sayfa.

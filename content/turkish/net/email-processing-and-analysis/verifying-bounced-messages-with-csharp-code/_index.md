@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // ImapClient'in bir örneğini oluşturun
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Sunucuya bağlanın
-    client.Connect(host, port, true);
-
-    // Giriş yapmak
-    client.Login(username, password);
-    
+   
     // Geri dönen iletileri almaya ve analiz etmeye yönelik kodunuz buraya gelecek
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // Geri dönen mesajları arayın
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // Geri dönen bildirimleri analiz etmeye yönelik kodunuz buraya gelecek
 }
@@ -89,7 +84,7 @@ Geri dönme bildirimleri, bir e-postanın neden geri döndüğüne ilişkin değ
 // Mesajı getir
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Geri dönen başlıkları kontrol edin
+// Geri dönen başlıkları kontrol edin
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

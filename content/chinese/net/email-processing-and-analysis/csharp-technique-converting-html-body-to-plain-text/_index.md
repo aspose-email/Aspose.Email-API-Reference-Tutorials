@@ -8,119 +8,70 @@ weight: 19
 url: /zh/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
 
-在现代电子邮件通信中，HTML 格式增强了消息的视觉吸引力。但是，在某些情况下您可能需要将 HTML 内容转换为纯文本。 Aspose.Email for .NET 提供了一个简单的解决方案来实现这一目标。在本指南中，我们将提供分步教程以及源代码，介绍如何使用 Aspose.Email for .NET 将电子邮件的 HTML 正文转换为纯文本。
+在当今的数字时代，电子邮件通信在我们的个人和职业生活中发挥着至关重要的作用。通常，电子邮件包含 HTML 格式的内容，以便更好地呈现。但是，在某些情况下，您可能需要从电子邮件的 HTML 正文中提取纯文本。本文将指导您使用 C#、Aspose.Email 和 Aspose.Words for .NET 高效地完成此任务。
 
-## Aspose.Email for .NET 简介
+## 一、简介
 
-Aspose.Email for .NET 是一个功能强大的库，有助于在 .NET 应用程序中处理各种电子邮件格式和功能。
+HTML 电子邮件很普遍，但在某些情况下您需要使用纯文本。例如，您可能想要分析内容、执行文本分析或将其集成到另一个系统中。 Aspose.Email 和 Aspose.Words for .NET 发挥了作用，使其成为一个简单的过程。
 
-## 为什么将 HTML 转换为纯文本？
+## 2. 前提条件
 
-将 HTML 内容转换为纯文本对于以简化格式显示电子邮件内容或提取重要信息以进行进一步处理等场景非常有用。
+在我们深入研究代码之前，请确保您具备以下先决条件：
+- Visual Studio 或任何 C# 开发环境。
+-  Aspose.Email 和 Aspose.Words 库。您可以从以下位置下载它们[这里](https://releases.aspose.com/email/net/)和[这里](https://releases.aspose.com/words/net/).
 
-## 入门
+## 3. 设置项目
 
-### 设置您的开发环境
+首先在开发环境中创建一个新的 C# 项目。然后，添加对您之前下载的 Aspose.Email 和 Aspose.Words 库的引用。
 
-确保您具备以下条件：
-- Visual Studio 或首选 IDE
-- 安装了 .NET Framework 或 .NET Core
+## 4. 将 HTML 转换为纯文本
 
-### 通过 NuGet 安装 Aspose.Email
-
-1. 在 Visual Studio 中打开您的项目。
-2. 导航到“工具”>“NuGet 包管理器”>“管理解决方案的 NuGet 包”。
-3. 搜索“Aspose.Email”并安装该软件包。
-
-## 加载电子邮件
-
-在将 HTML 转换为纯文本之前，您需要使用 Aspose.Email 加载电子邮件：
+以下是将 HTML 内容转换为纯文本的示例代码片段：
 
 ```csharp
 using Aspose.Email;
-//其他相关使用语句
+using Aspose.Email.Mime;
+using Aspose.Words;
+using Aspose.Words.Saving;
 
 //加载电子邮件消息
-MailMessage message = MailMessage.Load("email.eml");
+MailMessage message = MailMessage.Load("sample.html");
+
+//提取 HTML 正文
+string htmlBody = message.HtmlBody;
+
+//使用 Aspose.Words 将 HTML 转换为纯文本
+Document doc = new Document();
+doc.RemoveAllChildren();
+doc.AppendDocument(new DocumentBuilder().InsertHtml(htmlBody).Document, ImportFormatMode.KeepSourceFormatting);
+
+//保存纯文本
+doc.Save("plain_text.txt", SaveFormat.Text);
 ```
 
-## 将 HTML 正文转换为纯文本
+## 5. 处理复杂的 HTML 结构
 
-Aspose.Email 简化了转换过程：
+有时，电子邮件包含复杂的 HTML 结构，例如表格、图像或链接。 Aspose.Words for .NET 擅长处理这些元素，确保您获得准确的纯文本提取。
 
-```csharp
-using Aspose.Email.Text;
-//其他相关使用语句
+## 六，结论
 
-//将 HTML 正文转换为纯文本
-string plainText = HtmlPlainTextConverter.Convert(message.HtmlBody);
-```
+在本教程中，您学习了如何使用 C#、Aspose.Email 和 Aspose.Words for .NET 将 HTML 电子邮件内容转换为纯文本。在处理自动文本分析、归档或其他与文本相关的任务时，这项技能非常宝贵。
 
-## 处理异常
+## 常见问题 (FAQ)
 
-在进行转换时，可能会由于各种原因而发生异常。处理异常以确保流畅的体验：
+### Q1：Aspose.Email 是否兼容各种电子邮件格式？
+A1：是的，Aspose.Email 支持流行的电子邮件格式，包括 PST、EML、MSG 等。
 
-```csharp
-try
-{
-    //涉及转换的代码
-}
-catch (Exception ex)
-{
-    //处理异常
-}
-```
+### Q2：我可以进一步自定义纯文本输出吗？
+A2：当然！提取后您可以根据需要操作纯文本。
 
-## 示例代码
+### Q3：处理大型 HTML 电子邮件时有什么限制吗？
+A3：Aspose.Words 旨在高效处理大型文档，即使处理大量 HTML 内容也能确保性能。
 
-下面是一个示例代码片段，演示了使用 Aspose.Email for .NET 将 HTML 正文转换为纯文本：
+### Q4：Aspose.Email 适合电子邮件自动化任务吗？
+A4：是的，Aspose.Email 提供了广泛的电子邮件自动化功能，使其成为此类任务的可靠选择。
 
-```csharp
-using System;
-using Aspose.Email;
+### Q5：在哪里可以找到有关 Aspose.Email 和 Aspose.Words 的更多资源和文档？
+ A5：您可以在 Aspose 网站上浏览 API 文档和资源：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/)和[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
-namespace HtmlToPlainTextDemo
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //加载电子邮件消息
-            MailMessage message = MailMessage.Load("email.eml");
-
-            //将 HTML 正文转换为纯文本
-            string plainText = HtmlPlainTextConverter.Convert(message.HtmlBody);
-
-            //显示结果
-            Console.WriteLine("Plain Text Content:");
-            Console.WriteLine(plainText);
-        }
-    }
-}
-```
-
-## 结论
-
-在本指南中，我们探讨了如何使用 Aspose.Email for .NET 将电子邮件的 HTML 正文转换为纯文本。该技术为管理各种目的的电子邮件内容提供了灵活性。 Aspose.Email 的功能简化了转换过程，使其成为 .NET 开发库中的一个有价值的工具。
-
-## 常见问题解答
-
-### 在转换过程中我可以保留任何格式吗？
-
-不会，转换过程会去除 HTML 格式以生成纯文本。任何格式（例如字体或颜色）都将丢失。
-
-### Aspose.Email 适合其他电子邮件相关任务吗？
-
-绝对地。 Aspose.Email 提供了广泛的功能，包括发送、接收、解析和操作各种格式的电子邮件消息。
-
-### 我可以批量转换多封电子邮件吗？
-
-是的，您可以循环浏览一组电子邮件并对每封电子邮件应用转换过程。
-
-### Aspose.Email 是否支持其他基于文本的转换？
-
-是的，Aspose.Email 支持各种基于文本的转换，包括纯文本到 HTML 和 RTF 的转换。
-
-### 在哪里可以找到 Aspose.Email 的更多示例和文档？
-
-有关全面的示例、API 文档和资源，请访问[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net)页。
+现在您已经掌握了将 HTML 电子邮件内容转换为纯文本的技巧，您可以增强 C# 中的电子邮件处理能力。快乐编码！

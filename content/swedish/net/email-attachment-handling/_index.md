@@ -21,7 +21,7 @@ Handledningarna för hantering av e-postbilagor fokuserar på att effektivt hant
 
 ## Handledning för hantering av e-postbilagor
 ### [Inkludera bilagor i e-post - C# Exempel](./including-attachments-in-email-csharp-example/)
-Lär dig hur du inkluderar bilagor i e-post med Aspose.Email för .NET. Steg-för-steg-guide med C#-kodexempel.
+Lär dig hur du inkluderar bilagor i e-post med Aspose.Email för .NET. Steg-för-steg guide med C#-kodexempel.
 ### [Lägga till e-postbilagor med C#](./adding-email-attachments-using-csharp/)
 Lär dig hur du lägger till e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg-guide med kodexempel för sömlös integration.
 ### [Lägga till nya TNEF-bilagor i C#](./adding-new-tnef-attachments-in-csharp/)
@@ -40,3 +40,9 @@ Lär dig hur du skiljer mellan inline och vanliga e-postbilagor med Aspose.Email
 Lär dig hur du tar bort e-postbilagor med Aspose.Email för .NET. Steg-för-steg-guide med C#-källkod.
 ### [Skydda TNEF-bilagor - C#-metod](./safeguarding-tnef-attachments-csharp-method/)
 Lär dig hur du skyddar TNEF-bilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod ingår.
+### [Extrahera inbäddade bilagor från MSG-filer med C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
+Lär dig hur du extraherar inbäddade bilagor från MSG-filer med C# och Aspose.Email för .NET. En omfattande guide med exempel på källkod.
+### [Bevara inbäddat MSG-format under laddning med C#](./preserving-embedded-msg-format-during-load-with-csharp/)
+Lär dig hur du bevarar inbäddat MSG-format med Aspose.Email för .NET. Steg-för-steg guide med källkod.
+### [Bevara TNEF-bilagor när du läser meddelanden - C#-metoden](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
+Lär dig hur du bevarar TNEF-bilagor med Aspose.Email för .NET i denna steg-för-steg-guide med källkod.

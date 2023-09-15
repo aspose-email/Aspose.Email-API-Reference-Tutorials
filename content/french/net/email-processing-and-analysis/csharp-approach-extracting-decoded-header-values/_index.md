@@ -18,7 +18,7 @@ Dans ce didacticiel, nous vous guiderons tout au long du processus d'utilisation
 
 Commencez par créer un nouveau projet C# dans votre environnement de développement intégré (IDE) ou éditeur de texte préféré.
 
-## Étape 3 : ajouter une référence à Aspose.Email
+## Étape 3 : Ajouter une référence à Aspose.Email
 
  Pour utiliser Aspose.Email dans votre projet, vous devez ajouter une référence au`Aspose.Email` assemblée. Voici comment:
 
@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         // Charger le message électronique
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Extraire et décoder l'en-tête Sujet
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Imprimer l'en-tête Objet décodé
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -56,8 +52,8 @@ Dans l'extrait de code ci-dessus, nous effectuons les étapes suivantes :
 
 1. Nous importons les espaces de noms nécessaires (`Aspose.Email` et`Aspose.Email.Mail`).
 2.  Nous créons un`Main` méthode comme point d’entrée de notre application.
-3.  Au sein du`Main` méthode, nous utilisons la`MailMessage.Load` méthode pour charger un message électronique à partir d’un fichier. Remplacer`"path/to/your/email.eml"` avec le chemin réel vers le message électronique que vous souhaitez traiter.
-4.  Nous utilisons le`HeaderDecoder.DecodeHeader` méthode pour décoder l’en-tête Sujet.
+3.  Au sein du`Main`méthode, nous utilisons la`MailMessage.Load` méthode pour charger un message électronique à partir d’un fichier. Remplacer`"path/to/your/email.eml"` avec le chemin réel vers le message électronique que vous souhaitez traiter.
+4.  Nous utilisons le`Headers.GetDecodedValue` méthode pour décoder l’en-tête Sujet.
 5. Nous imprimons l'en-tête Sujet décodé sur la console.
 
 ## Étape 5 : Exécutez l'application
@@ -68,7 +64,7 @@ Dans l'extrait de code ci-dessus, nous effectuons les étapes suivantes :
 
 ### Comment puis-je décoder d’autres en-têtes de courrier électronique à l’aide d’Aspose.Email pour .NET ?
 
- Vous pouvez décoder divers en-têtes de courrier électronique tels que « De », « À », « Date », etc., à l'aide du`HeaderDecoder.DecodeHeader` méthode. Fournissez simplement la valeur d’en-tête en tant que paramètre à la méthode.
+ Vous pouvez décoder divers en-têtes de courrier électronique tels que « De », « À », « Date », etc., à l'aide du`Headers.GetDecodedValue` méthode. Fournissez simplement la valeur d’en-tête en tant que paramètre à la méthode.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Email pour .NET ?
 

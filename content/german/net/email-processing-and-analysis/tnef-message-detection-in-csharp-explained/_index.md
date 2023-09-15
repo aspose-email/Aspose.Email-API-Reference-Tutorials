@@ -43,13 +43,16 @@ using Aspose.Email.Mail;
 1.  Laden Sie die E-Mail-Nachricht mit`MapiMessage` Klasse:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// Laden Sie die E-Mail mit dem TNEF-Anhang
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
 2. Stellen Sie fest, ob es sich bei der geladenen E-Mail um eine TNEF-Nachricht handelt:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
  Ersetzen`"path/to/your/email.msg"` mit dem tatsächlichen Pfad zu Ihrer E-Mail-Nachrichtendatei.
@@ -59,44 +62,51 @@ bool isTnefMessage = message.IsTnefMessage();
 Wenn es sich bei der geladenen E-Mail tatsächlich um eine TNEF-Nachricht handelt, können Sie deren Anhänge extrahieren und verarbeiten:
 
 ```csharp
-if (isTnefMessage)
+// Durchlaufen Sie Anhänge
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // TNEF-Anhang verarbeiten
-        // Speichern Sie beispielsweise den Anhang auf der Festplatte
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // Extrahieren Sie den TNEF-Anhang
+        var tnefAttachment = attachment;
+
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        // tnefAttachment.Properties...
     }
 }
 ```
 
 ## FAQs
 
-## Wie kann ich überprüfen, ob eine E-Mail eine TNEF-Nachricht ist?
+### Wie kann ich überprüfen, ob eine E-Mail eine TNEF-Nachricht ist?
 
  Um zu überprüfen, ob es sich bei einer E-Mail um eine TNEF-Nachricht handelt, verwenden Sie die`IsTnefMessage()` Methode der`MapiMessage` Klasse:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## Wie extrahiere ich Anhänge aus einer TNEF-Nachricht?
+### Wie extrahiere ich Anhänge aus einer TNEF-Nachricht?
 
 Um Anhänge aus einer TNEF-Nachricht zu extrahieren, gehen Sie folgendermaßen vor:
 
 1.  Laden Sie die E-Mail mit`MapiMessage.FromFile()`.
-2.  Überprüfen Sie, ob es sich bei der E-Mail um eine TNEF-Nachricht handelt`IsTnefMessage()`.
-3.  Wenn es sich um eine TNEF-Nachricht handelt, extrahieren Sie Anhänge mit`ExtractTnefAttachments()`.
+2.  Überprüfen Sie, ob es sich bei der E-Mail um eine TNEF-Nachricht handelt`OriginalIsTnef`.
+3. Wenn es sich um eine TNEF-Nachricht handelt, extrahieren Sie Anhänge, indem Sie Anhänge mit ContentType iterieren. MediaType ist gleich „application/ms-tnef“.
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Durchlaufen Sie Anhänge
+foreach (var attachment in message.Attachments)
 {
-    // TNEF-Anhang verarbeiten
-    // Speichern Sie beispielsweise den Anhang auf der Festplatte
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // Extrahieren Sie den TNEF-Anhang
+        var tnefAttachment = attachment;
+
+        //Greifen Sie auf die TNEF-Eigenschaften zu und ändern Sie sie bei Bedarf
+        // tnefAttachment.Properties...
+    }
 }
 ```
 

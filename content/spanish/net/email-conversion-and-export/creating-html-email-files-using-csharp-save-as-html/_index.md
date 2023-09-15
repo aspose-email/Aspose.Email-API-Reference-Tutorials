@@ -112,4 +112,4 @@ Sí, Aspose.Email es compatible con .NET Core, lo que le permite crear aplicacio
 
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
 
-Puede explorar ejemplos completos y documentación detallada sobre el[Aspose.Documentación por correo electrónico](https://reference.aspose.com/email/net) página.
+ Puede explorar ejemplos completos y documentación detallada sobre el[Aspose.Documentación por correo electrónico](https://reference.aspose.com/email/net) página.

@@ -40,14 +40,10 @@ class Program
     static void Main(string[] args)
     {
         //加载电子邮件消息
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            //提取并解码主题标头
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            //打印解码后的主题标头
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
@@ -57,7 +53,7 @@ class Program
 1. 我们导入必要的命名空间（`Aspose.Email`和`Aspose.Email.Mail`）。
 2. 我们创建一个`Main`方法作为我们应用程序的入口点。
 3. 内`Main`方法，我们使用`MailMessage.Load`从文件加载电子邮件消息的方法。代替`"path/to/your/email.eml"`与您要处理的电子邮件的实际路径。
-4. 我们使用`HeaderDecoder.DecodeHeader`方法来解码主题标头。
+4. 我们使用`Headers.GetDecodedValue`方法来解码主题标头。
 5. 我们将解码后的主题标头打印到控制台。
 
 ## 第 5 步：运行应用程序
@@ -68,7 +64,7 @@ class Program
 
 ### 如何使用 Aspose.Email for .NET 解码其他电子邮件标头？
 
-您可以使用以下命令解码各种电子邮件标头，例如“发件人”、“收件人”、“日期”等`HeaderDecoder.DecodeHeader`方法。只需提供标头值作为该方法的参数即可。
+您可以使用以下命令解码各种电子邮件标头，例如“发件人”、“收件人”、“日期”等`Headers.GetDecodedValue`方法。只需提供标头值作为该方法的参数即可。
 
 ### 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
 

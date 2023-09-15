@@ -25,8 +25,6 @@ Los tutoriales sobre manipulación de encabezados de correo electrónico se cent
 Aprenda a modificar direcciones de correo electrónico usando C# con la ayuda de Aspose.Email para .NET. Siga esta guía paso a paso para manipular direcciones de correo electrónico de forma eficaz.
 ### [Cambiar fuentes durante la conversión MHT usando C#](./changing-fonts-during-mht-conversion-using-csharp/)
 Aprenda cómo cambiar fuentes durante la conversión MHT usando Aspose.Email para .NET. Guía paso a paso con código fuente. Perfecto para archivar correos electrónicos y gestionar documentos.
-### [Modificación de ProdID en archivos ICS con C#](./altering-prodid-in-ics-files-with-csharp/)
-Aprenda a modificar ProdID en archivos ICS usando C# y Aspose.Email para .NET. Guía y código paso a paso. Garantizar la integridad y compatibilidad de los datos. 
 ### [ Representación de hipervínculos personalizados en C#](./custom-hyperlink-rendering-in-csharp/)
 Aprenda a personalizar la representación de hipervínculos en C# usando Aspose.Email para .NET. Cree contenido de correo electrónico personalizado con estilos de hipervínculos personalizados.
 ### [Definición de orden personalizado de información en MHTML con C#](./defining-custom-order-of-information-in-mhtml-with-csharp/)

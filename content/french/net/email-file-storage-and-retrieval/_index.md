@@ -21,9 +21,9 @@ Les didacticiels sur le stockage de fichiers de courrier électronique approfond
 Les didacticiels de récupération d'e-mails visent à permettre aux développeurs de récupérer efficacement les fichiers liés aux e-mails à l'aide d'Aspose.Email pour .NET. Les développeurs peuvent explorer des techniques pour accéder par programmation aux e-mails et aux pièces jointes stockés, garantissant ainsi une récupération et une utilisation transparentes. Ces didacticiels proposent des instructions étape par étape sur l'intégration de la logique de récupération, la recherche de contenu de courrier électronique spécifique et l'incorporation des données récupérées dans les applications. Aspose.Email for .NET simplifie les tâches de récupération de fichiers de courrier électronique, permettant aux développeurs d'optimiser leurs applications pour un accès et une utilisation efficaces des données.
 
 ## Didacticiels sur le stockage et la récupération de fichiers par courrier électronique
-## [Lire tous les messages du stockage Zimbra TGZ avec C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Lire tous les messages du stockage Zimbra TGZ avec C#](./reading-all-messages-from-zimbra-tgz-storage-with-csharp/)
 Découvrez comment lire les messages de stockage Zimbra TGZ à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec code source inclus.
-## [Lire des messages à partir du stockage NSF à l'aide de C#](./reading-messages-from-nsf-storage-using-csharp/)
+### [Lire des messages à partir du stockage NSF à l'aide de C#](./reading-messages-from-nsf-storage-using-csharp/)
 Découvrez comment lire les messages de stockage NSF à l'aide de C# et Aspose.Email pour .NET. Un guide étape par étape avec des exemples de code.
-## [Enregistrement des messages du stockage Zimbra TGZ avec C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
+### [Enregistrement des messages du stockage Zimbra TGZ avec C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Découvrez comment extraire les e-mails Zimbra TGZ à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source pour une gestion efficace des e-mails.

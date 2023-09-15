@@ -44,37 +44,17 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Crear una instancia del`MhtmlMessageFormatter`clase para formatear el mensaje:
-
-```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
-```
-
 3. Cargue el contenido HTML del mensaje de correo electrónico:
 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Paso 5: agregue texto alternativo a las imágenes
+## Paso 5: agregue AlternativeView para texto alternativo a las imágenes
 
-1.  Localice el`AlternateView` que contiene el cuerpo HTML y las imágenes:
-
+Agregue htmlview para texto alternativo a imagen como vista alternativa en el mensaje. 
 ```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Localice el`LinkedResource` representando la imagen:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Establezca el texto alternativo para la imagen:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
+message.AlternateViews.Add(htmlView);
 ```
 
 ## Paso 6: guarde y envíe el correo electrónico
@@ -97,7 +77,7 @@ Puede descargar la biblioteca Aspose.Email desde las versiones de Aspose o insta
 
 ### ¿Cómo agrego imágenes como recursos vinculados en un correo electrónico?
 
- Para agregar imágenes como recursos vinculados en un correo electrónico, puede utilizar el`LinkedResource`clase. Asigne un ID de contenido al recurso vinculado y luego haga referencia a este ID de contenido en el cuerpo HTML utilizando el`cid:` esquema. Para obtener información detallada, consulte la[Documentación de recursos vinculados](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Para agregar imágenes como recursos vinculados en un correo electrónico, puede utilizar el`LinkedResource` clase. Asigne un ID de contenido al recurso vinculado y luego haga referencia a este ID de contenido en el cuerpo HTML utilizando el`cid:` esquema. Para obtener información detallada, consulte la[Documentación de recursos vinculados](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Email para .NET?
 
  Puede encontrar documentación más detallada, tutoriales y ejemplos sobre cómo trabajar con Aspose.Email para .NET en el[Referencia de API](https://reference.aspose.com/email/net/).

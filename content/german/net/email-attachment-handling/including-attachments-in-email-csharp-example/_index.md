@@ -94,7 +94,7 @@ In diesem Leitfaden haben wir untersucht, wie Sie mit Aspose.Email für .NET Anh
 
 ### Wie kann ich die Aspose.Email-Bibliothek herunterladen?
 
- Sie können die Aspose.Email-Bibliothek von Aspose.Releases herunterladen:[Aspose.Releases](https://releases.aspose.com/email/net/)oder mithilfe des NuGet-Paket-Managers in Visual Studio.
+ Sie können die Aspose.Email-Bibliothek von Aspose.Releases herunterladen:[Aspose.Releases](https://releases.aspose.com/email/net/) oder mithilfe des NuGet-Paket-Managers in Visual Studio.
 
 ### Kann ich mehrere Dateien an eine einzelne E-Mail anhängen?
 

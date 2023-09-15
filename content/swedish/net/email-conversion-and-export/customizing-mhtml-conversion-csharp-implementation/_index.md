@@ -17,7 +17,7 @@ Om du funderar på att anpassa MHTML-konvertering med Aspose.Email för .NET, ä
 Innan du dyker in i att anpassa MHTML-konvertering, se till att du har Aspose.Email för .NET installerat och ett nytt C#-projekt redo att börja.
 
 1. Installera Aspose.Email för .NET:
- För att komma igång, ladda ner och installera Aspose.Email för .NET från[nedladdningslänk](https://releases.aspose.com/email/net). Följ installationsinstruktionerna i dokumentationen.
+För att komma igång, ladda ner och installera Aspose.Email för .NET från[nedladdningslänk](https://releases.aspose.com/email/net). Följ installationsinstruktionerna i dokumentationen.
 
 2. Skapa ett nytt C#-projekt:
 Öppna Visual Studio och skapa ett nytt C#-projekt. Se till att du har refererat till Aspose.Email-biblioteket i ditt projekt genom att lägga till lämplig DLL-referens.
@@ -32,53 +32,14 @@ Använd följande kod för att ladda en MHTML-fil i din applikation:
 ```csharp
 using Aspose.Email.Mime;
 // Ladda MHTML-fil
-var message = MhtmlMessage.Load("path/to/your/file.mhtml");
-```
-
-2. Få åtkomst till HTML-innehåll och resurser:
-Extrahera HTML-innehåll och tillhörande resurser med följande kod:
-
-```csharp
-foreach (var resource in message.Resources)
-{
-   if (resource.ContentType.MediaType == "text/html")
-   {
-	   // Få åtkomst till HTML-innehåll
-	   var htmlContent = resource.GetContent();
-	   // Ändra HTML-innehåll efter behov
-   }
-   else if (resource.ContentType.MediaType.StartsWith("image/"))
-   {
-	   // Få tillgång till bildresurser
-	   var imageData = resource.GetContent();
-	   //Ändra eller bädda in bilder
-   }
-   // Hantera andra resurstyper
-}
+var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
 ## Anpassa konverteringsalternativ
 
 Anpassa din MHTML-konverteringsprocess genom att ange olika utdataformat och justera inställningar.
 
-1. Välja utdataformat:
-Bestäm utdataformatet för din konvertering, som PDF, DOCX eller andra:
-
-```csharp
-var options = new MhtSaveOptions(MhtFormat.Mht);
-options.Format = MhtFormat.Pdf; // Konvertera till PDF
-// Ställ in andra konverteringsalternativ
-```
-
-2. Ange sidmarginaler och orientering:
-Justera sidmarginaler och orientering för utdatadokumentet:
-
-```csharp
-options.PageSetup.MarginBottom = 20;
-options.PageSetup.Orientation = PageOrientation.Landscape;
-```
-
-3. Kontrollera bildkvalitet:
+1. Kontrollera bildkvalitet:
 Kontrollera kvaliteten på inbäddade bilder:
 
 ```csharp
@@ -87,7 +48,7 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 
 ## Slutsats
 
-I den här guiden har vi täckt steg-för-steg-processen för att anpassa MHTML-konvertering med Aspose.Email för .NET. Genom att följa dessa instruktioner och använda de medföljande kodexemplen kan du skräddarsy din MHTML-konvertering för att möta dina specifika projektbehov. Oavsett om du bäddar in bilder, ändrar text eller lägger till rubriker, erbjuder Aspose.Email för .NET de verktyg du behöver för att skapa högkvalitativa konverteringar effektivt.
+den här guiden har vi täckt steg-för-steg-processen för att anpassa MHTML-konvertering med Aspose.Email för .NET. Genom att följa dessa instruktioner och använda de medföljande kodexemplen kan du skräddarsy din MHTML-konvertering för att möta dina specifika projektbehov. Oavsett om du bäddar in bilder, ändrar text eller lägger till rubriker, erbjuder Aspose.Email för .NET de verktyg du behöver för att skapa högkvalitativa konverteringar effektivt.
 
 ## FAQ's
 

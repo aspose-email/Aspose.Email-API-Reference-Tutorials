@@ -141,7 +141,7 @@ Install-Package Aspose.Email
 
 ### ¿Puedo extraer varias instancias del mismo encabezado de un correo electrónico?
 
- Sí, puedes extraer varias instancias del mismo encabezado usando el`GetValues` método:
+Sí, puedes extraer varias instancias del mismo encabezado usando el`GetValues` método:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
@@ -162,4 +162,4 @@ if (subject.Contains("urgent"))
 
 ### ¿Dónde puedo acceder a la documentación de Aspose.Email y descargar la biblioteca?
 
-Puedes encontrar la documentación en[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Para descargar la biblioteca, visite[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+ Puedes encontrar la documentación en[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Para descargar la biblioteca, visite[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

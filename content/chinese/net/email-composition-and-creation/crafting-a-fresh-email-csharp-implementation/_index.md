@@ -10,33 +10,20 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
 在现代通信世界中，电子邮件仍然是主要的通信方式。以编程方式制作和发送电子邮件可以极大地简化各种业务流程，例如发送交易通知、营销活动等。在本文中，我们将探索如何在 Aspose.Email for .NET 库的帮助下使用 C# 创建新电子邮件。我们将逐步介绍从设置环境到发送电子邮件的所有内容，并附有源代码示例。
 
-## 大纲
 
-1. 介绍
-2. 先决条件
-3. 设置项目
-4. 创建电子邮件内容
-5. 配置 SMTP 设置
-6. 发送电子邮件
-7. 处理异常
-8. 结论
-9. 常见问题解答
-
-## 分步指南
-
-### 先决条件
+## 先决条件
 
 在我们深入实施之前，请确保您具备以下先决条件：
 
 - Visual Studio 或任何 C# 开发环境
 - Aspose.Email for .NET 库（您可以从 NuGet 下载）
 
-### 设置项目
+## 设置项目
 
 1. 在您选择的开发环境中创建一个新的 C# 项目。
 2. 添加对 Aspose.Email for .NET 库的引用。
 
-### 创建电子邮件内容
+## 创建电子邮件内容
 
 1. 导入必要的命名空间：
 
@@ -60,7 +47,7 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
    message.Body = "This is the content of the email.";
    ```
 
-### 配置 SMTP 设置
+## 配置 SMTP 设置
 
 1. 创建一个实例`SmtpClient`班级：
 
@@ -78,7 +65,7 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
    client.SecurityOptions = SecurityOptions.Auto;
    ```
 
-### 发送电子邮件
+## 发送电子邮件
 
 1. 使用`client`发送电子邮件的实例：
 
@@ -86,7 +73,7 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
    client.Send(message);
    ```
 
-### 处理异常
+## 处理异常
 
 1. 将电子邮件发送代码封装在`try-catch`块来处理异常：
 
@@ -110,7 +97,7 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
 ### 我可以使用 Aspose.Email 发送电子邮件中的附件吗？
 
-是的，您可以使用以下方式轻松将文件附加到电子邮件中`Attachment`Aspose.Email for .NET 提供的类。
+是的，您可以使用以下方式轻松将文件附加到电子邮件中`Attachment` Aspose.Email for .NET 提供的类。
 
 ### Aspose.Email 适合个人和企业级电子邮件自动化吗？
 

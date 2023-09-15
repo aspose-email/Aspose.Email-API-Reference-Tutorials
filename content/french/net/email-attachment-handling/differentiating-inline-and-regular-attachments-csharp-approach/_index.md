@@ -47,7 +47,7 @@ AttachmentCollection attachments = emailMessage.Attachments;
 
 ## 6. Distinguer les pièces jointes en ligne et régulières
 
- Pour faire la différence entre les pièces jointes en ligne et les pièces jointes régulières, vous devez inspecter les pièces jointes de chaque pièce jointe.`ContentDisposition` propriété. Si la`ContentDisposition` est défini sur « en ligne », la pièce jointe est une pièce jointe en ligne.
+Pour faire la différence entre les pièces jointes en ligne et les pièces jointes régulières, vous devez inspecter les pièces jointes de chaque pièce jointe.`ContentDisposition` propriété. Si la`ContentDisposition` est défini sur « en ligne », la pièce jointe est une pièce jointe en ligne.
 
 ## 7. Travailler avec des pièces jointes en ligne
 
@@ -90,7 +90,7 @@ Dans ce guide, nous avons exploré le monde des pièces jointes aux e-mails, en 
 
 ### Comment puis-je installer la bibliothèque Aspose.Email pour .NET ?
 
-Vous pouvez installer la bibliothèque Aspose.Email pour .NET à l'aide de NuGet Package Manager. Exécutez simplement la commande suivante dans la console du gestionnaire de packages :`Install-Package Aspose.Email`.
+ Vous pouvez installer la bibliothèque Aspose.Email pour .NET à l'aide de NuGet Package Manager. Exécutez simplement la commande suivante dans la console du gestionnaire de packages :`Install-Package Aspose.Email`.
 
 ### Puis-je faire la différence entre les pièces jointes en ligne et les pièces jointes régulières par programmation ?
 

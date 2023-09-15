@@ -66,28 +66,6 @@ MailMessage message = MailMessage.Load("encrypted.eml");
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### 验证消息加密
-
-您还可以验证消息是否经过数字签名和加密：
-
-```csharp
-using Aspose.Email.Security;
-//其他相关使用语句
-
-//加载电子邮件消息
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-//验证消息是否已签名和加密
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-//检查加密
-if (isSigned && isEncrypted)
-{
-    //消息已签名并加密
-}
-```
-
 ## 解密加密消息
 
 解密加密消息需要正确的密钥和证书。以下是使用 Aspose.Email 执行此操作的方法：
@@ -100,12 +78,11 @@ using Aspose.Email.Security.Cryptography;
 MailMessage message = MailMessage.Load("encrypted.eml");
 
 //提供解密密钥和证书
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
+
 
 //解密消息
-message.Decrypt(algorithm);
+message.Decrypt(privateCert);
 ```
 
 ## 处理异常

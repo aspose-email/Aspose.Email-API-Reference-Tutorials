@@ -53,14 +53,9 @@ string username = "your-username";
 string password = "your-password";
 
 // قم بإنشاء مثيل لـ ImapClient
-using (ImapClient client = new ImapClient())
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // الاتصال بالخادم
-    client.Connect(host, port, true);
-
-    // تسجيل الدخول
-    client.Login(username, password);
-    
+   
     // سيتم وضع الكود الخاص بك لاسترداد الرسائل المرتدة وتحليلها هنا
 }
 ```
@@ -75,7 +70,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 
 // البحث عن الرسائل المرتدة
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
     // سيتم وضع الكود الخاص بك لتحليل الإشعارات المرتدة هنا
 }
@@ -89,7 +84,7 @@ foreach (MessageInfo messageInfo in messages)
 // جلب الرسالة
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//تحقق من وجود رؤوس ترتد
+// تحقق من وجود رؤوس ترتد
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];

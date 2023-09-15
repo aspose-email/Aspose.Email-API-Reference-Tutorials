@@ -116,10 +116,10 @@ catch (Exception ex)
 ### ¿Aspose.Email admite el envío de correos electrónicos de texto sin formato?
    Sí, puede enviar fácilmente correos electrónicos HTML y de texto sin formato utilizando Aspose.Email.
 
-### ¿Es posible programar correos electrónicos utilizando esta biblioteca?
+### ¿Es posible programar correos electrónicos usando esta biblioteca?
    Aspose.Email se centra en la creación y manipulación de correos electrónicos. Para programar correos electrónicos, deberá integrarse con un sistema de programación de tareas independiente.
 
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
-    Puede encontrar documentación completa y ejemplos de código en[Referencia de API de Aspose.Email](https://reference.aspose.com/email/net/).
+   Puede encontrar documentación completa y ejemplos de código en[Referencia de API de Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---

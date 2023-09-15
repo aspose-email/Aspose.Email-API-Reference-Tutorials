@@ -21,9 +21,9 @@ Handledningarna för e-postmeddelanden gräver ner sig i krångligheterna med at
 Handledningarna för e-postspårning fokuserar på att göra det möjligt för utvecklare att implementera e-postspårningsfunktioner med Aspose.Email för .NET. Utvecklare kan utforska tekniker för att övervaka e-postinteraktioner, som öppningsfrekvenser och länkklick, för att få insikter om mottagarens engagemang. Dessa handledningar erbjuder steg-för-steg-instruktioner om hur du bäddar in spårningselement i e-postinnehåll, samlar in spårningsdata och genererar rapporter. Aspose.Email för .NET förenklar e-postspårningsuppgifter, vilket gör att utvecklare kan förbättra sina applikationer med datadrivna insikter om e-postmottagares beteenden.
 
 ## E-postmeddelanden och självstudier för spårning
-## [Ta emot e-postmeddelanden med C#-kod](./receiving-email-notifications-with-csharp-code/)
+### [Ta emot e-postmeddelanden med C#-kod](./receiving-email-notifications-with-csharp-code/)
 Lär dig att ta emot e-postmeddelanden i C# med Aspose.Email för .NET. Effektivt kodexempel tillhandahålls.
-## [Begär läskvitton för e-post med C#-kod](./requesting-email-read-receipts-using-csharp-code/)
+### [Begär läskvitton för e-post med C#-kod](./requesting-email-read-receipts-using-csharp-code/)
 Lär dig hur du använder C#-kod för att begära läskvitton via e-post med Aspose.Email för .NET, vilket förbättrar kommunikationsspårningen.
-## [Spåra e-postdokumentkonvertering med C#-kod](./tracking-email-document-conversion-progress-with-csharp-code/)
+### [Spåra e-postdokumentkonvertering med C#-kod](./tracking-email-document-conversion-progress-with-csharp-code/)
 Lär dig hur du implementerar e-postmeddelanden och spårning med Aspose.Email för .NET. Steg-för-steg guide med kodexempel. Förbättra din e-postkommunikation idag!
