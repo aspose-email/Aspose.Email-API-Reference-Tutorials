@@ -39,3 +39,5 @@ Learn how to configure custom email headers in C# using Aspose.Email for .NET. S
 Learn how to enhance email content using HTML in Aspose.Email for .NET. Step-by-step guide with C# examples. Elevate your email communication!
 ### [Specifying Recipient Addresses in C#](./specifying-recipient-addresses-in-csharp/)
 Learn how to specify recipient addresses in C# using Aspose.Email for .NET. Create, configure, and send emails efficiently.
+### [Loading Email Messages with Load Options in C#](./loading-email-messages-with-load-options-in-csharp/)
+Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.

@@ -5,7 +5,7 @@ second_title: Aspose.Email .NET Email Processing API
 description: Learn how to preserve embedded MSG format using Aspose.Email for .NET. Step-by-step guide with source code.
 type: docs
 weight: 12
-url: /net/email-event-and-calendar-handling/preserving-embedded-msg-format-during-load-with-csharp/
+url: /net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
 
 In today's digital world, email communication plays a pivotal role in both personal and professional spheres. Many times, we need to work with email files programmatically, and preserving the original boundaries of an EML (Email) file can be crucial. In this step-by-step guide, we will explore how to achieve this using C# code with Aspose.Email for .NET.

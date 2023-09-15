@@ -5,7 +5,7 @@ second_title: Aspose.Email .NET Email Processing API
 description: Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.
 type: docs
 weight: 11
-url: /net/email-event-and-calendar-handling/loading-email-messages-with-load-options-in-csharp/
+url: /net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
 
 ## Introduction to Aspose.Email for .NET

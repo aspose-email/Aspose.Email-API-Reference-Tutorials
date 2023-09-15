@@ -5,7 +5,7 @@ second_title: Aspose.Email .NET Email Processing API
 description: Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples.
 type: docs
 weight: 10
-url: /net/email-event-and-calendar-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+url: /net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
 
 ## Introduction to Embedded Attachments

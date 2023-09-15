@@ -5,7 +5,7 @@ second_title: Aspose.Email .NET Email Processing API
 description: Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
 type: docs
 weight: 13
-url: /net/email-event-and-calendar-handling/preserving-original-boundaries-using-csharp-code/
+url: /net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
 
 ## Introduction to Preserving Original Boundaries

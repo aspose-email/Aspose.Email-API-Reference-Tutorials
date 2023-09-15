@@ -21,14 +21,7 @@ The email event handling tutorials delve into the intricacies of managing email-
 The email calendar handling tutorials focus on effectively managing calendar-related functionalities using Aspose.Email for .NET. Developers can explore techniques to create, modify, and synchronize calendar events and appointments programmatically. These tutorials offer step-by-step instructions on integrating calendar features into applications, ensuring seamless scheduling and management of events. Aspose.Email for .NET simplifies calendar handling tasks, enabling developers to enhance their applications with efficient event organization and management.
 
 ## Email Event and Calendar Handling Tutorials
-### [Extracting Embedded Attachments from MSG Files using C#](./extracting-embedded-attachments-from-msg-files-using-csharp/)
-Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples.
-### [Loading Email Messages with Load Options in C#](./loading-email-messages-with-load-options-in-csharp/)
-Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.
-### [Preserving Embedded MSG Format during Load with C#](./preserving-embedded-msg-format-during-load-with-csharp/)
-Learn how to preserve embedded MSG format using Aspose.Email for .NET. Step-by-step guide with source code.
-### [Preserving Original Boundaries using C# Code](./preserving-original-boundaries-using-csharp-code/)
-Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+
 ### [Reading Multiple Events from ICS Files with C#](./reading-multiple-events-from-ics-files-with-csharp/)
 Learn to extract multiple events from ICS files using Aspose.Email for .NET. A step-by-step guide with code examples for efficient event management.
 ### [Rendering Calendar Events using C# Code](./rendering-calendar-events-using-csharp-code/)
