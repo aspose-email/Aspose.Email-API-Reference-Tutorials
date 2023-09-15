@@ -1,41 +1,41 @@
 ---
-title: 设置图像的替代文本 - C# 指南
-linktitle: 设置图像的替代文本 - C# 指南
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本。使用清晰的替代文本确保可访问性。包含文档和代码。
+title: 加载电子邮件消息
+linktitle: 检查 S/MIME 加密
+second_title: 显示结果
+description: 结论
 type: docs
 weight: 15
 url: /zh/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
 
-本指南将引导您完成使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本的过程。替代文本（也称为“替代文本”）用于在图像无法显示的情况下提供图像的文本描述。 Aspose.Email for .NET 是一个功能强大的库，允许您处理各种格式的电子邮件和附件。在本指南中，我们将重点介绍使用 C# 设置电子邮件中的图像的替代文本。
+在本指南中，我们探讨了如何利用 Aspose.Email for .NET 的功能来检查邮件的加密情况。通过检测和验证 S/MIME 加密、解密消息和处理异常，您可以确保应用程序中的安全通信。 Aspose.Email 简化了流程，让您能够专注于构建强大且安全的电子邮件功能。
 
-## 先决条件
+## 常见问题解答
 
-在开始之前，请确保您具备以下先决条件：
+Aspose.Email 如何处理加密附件？
 
-1. 安装了 Visual Studio 或任何兼容的 C# 开发环境。
-2. Aspose.Email for .NET 库。您可以在 Visual Studio 中使用 NuGet 包管理器。
+1.  Aspose.Email 提供了从加密电子邮件中提取和解密附件的方法。您可以使用
+2. 解密消息后将附件保存到磁盘的方法。
 
-## 第 1 步：创建一个新项目
+## 我可以将 Aspose.Email 与 .NET Core 应用程序一起使用吗？
 
-1. 启动 Visual Studio 并创建一个新的 C# 控制台应用程序项目。
+1. 是的，Aspose.Email 与 .NET Framework 和 .NET Core 应用程序兼容，为您的开发项目提供灵活性。
 
-## 第2步：通过NuGet安装Aspose.Email
+## Aspose.Email支持哪些加密算法？
 
-1. 在解决方案资源管理器中右键单击您的项目，然后选择“管理 NuGet 包”。
-2. 搜索“Aspose.Email”并安装最新版本的软件包。
+1. Aspose.Email支持多种加密算法，包括AES、RSA和TripleDES，以确保电子邮件的安全。
+2. 是否可以仅加密电子邮件的特定部分？
 
-## 第 3 步：添加 using 语句
+## 是的，Aspose.Email 允许您有选择地加密电子邮件的某些部分，例如附件或电子邮件正文的特定部分。
 
 ```csharp
 using Aspose.Email.Mail;
 using Aspose.Email.Mime;
 ```
 
-## 第 4 步：加载并修改电子邮件消息
+## 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
 
-1. 使用以下命令加载电子邮件消息`MailMessage`班级：
+1. 有关更多详细信息、示例和文档，请访问`MailMessage`Aspose.Email for .NET 文档
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -44,60 +44,40 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2. 创建一个实例`MhtmlMessageFormatter`格式化消息的类：
+3. 页。
 
 ```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-3. 加载电子邮件的 HTML 内容：
+## C# 技术 - 将 HTML 正文转换为纯文本
 
+C# 技术 - 将 HTML 正文转换为纯文本 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+message.AlternateViews.Add(htmlView);
 ```
 
-## 第 5 步：向图像添加替代文本
+## Aspose.Email .NET 电子邮件处理 API
 
-1. 找到`AlternateView`包含 HTML 正文和图像：
-
-```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2. 找到`LinkedResource`代表图像：
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. 设置图像的替代文本：
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
-```
-
-## 第 6 步：保存并发送电子邮件
-
-1. 将修改后的消息保存到文件或使用您想要的方法发送：
+1. 了解使用 Aspose.Email for .NET 轻松将 HTML 电子邮件内容转换为纯文本。详细指南和代码。立即探索！
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
 ```
 
-## 结论
+## 在现代电子邮件通信中，HTML 格式增强了消息的视觉吸引力。但是，在某些情况下您可能需要将 HTML 内容转换为纯文本。 Aspose.Email for .NET 提供了一个简单的解决方案来实现这一目标。在本指南中，我们将提供分步教程以及源代码，介绍如何使用 Aspose.Email for .NET 将电子邮件的 HTML 正文转换为纯文本。
 
-在本指南中，您学习了如何使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本。通过执行上述步骤，即使无法显示图像，您也可以确保您的电子邮件内容仍然可访问且信息丰富。
+Aspose.Email for .NET 简介
 
-## 常问问题
+## Aspose.Email for .NET 是一个功能强大的库，有助于在 .NET 应用程序中处理各种电子邮件格式和功能。
 
-## 如何下载 Aspose.Email 库？
+## 为什么将 HTML 转换为纯文本？
 
-您可以从 Aspose Releases 下载 Aspose.Email 库，或通过 Visual Studio 中的 NuGet 包管理器安装它。
+将 HTML 内容转换为纯文本对于以简化格式显示电子邮件内容或提取重要信息以进行进一步处理等场景非常有用。
 
-### 如何在电子邮件中添加图像作为链接资源？
+### 入门
 
-要将图像添加为电子邮件中的链接资源，您可以使用`LinkedResource`班级。将内容 ID 分配给链接的资源，然后使用 HTML 正文中引用此内容 ID`cid:`方案。有关详细信息，请参阅[链接资源文档](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### 在哪里可以找到有关 Aspose.Email for .NET 的更多文档？
+设置您的开发环境`LinkedResource`确保您具备以下条件：`cid:`Visual Studio 或首选 IDE[安装了 .NET Framework 或 .NET Core](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+### 通过 NuGet 安装 Aspose.Email
 
-您可以在以下位置找到有关使用 Aspose.Email for .NET 的更多详细文档、教程和示例：[API参考](https://reference.aspose.com/email/net/).
+在 Visual Studio 中打开您的项目。[导航到“工具”>“NuGet 包管理器”>“管理解决方案的 NuGet 包”。](https://reference.aspose.com/email/net/).

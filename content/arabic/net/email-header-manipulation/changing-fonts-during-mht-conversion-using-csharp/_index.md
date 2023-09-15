@@ -1,137 +1,108 @@
 ---
-title: تغيير الخطوط أثناء تحويل MHT باستخدام C#
-linktitle: تغيير الخطوط أثناء تحويل MHT باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تغيير الخطوط أثناء تحويل MHT باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر. مثالي لأرشفة البريد الإلكتروني وإدارة المستندات.
+title: Changing Fonts during MHT Conversion using C#
+linktitle: Changing Fonts during MHT Conversion using C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to change fonts during MHT conversion using Aspose.Email for .NET. Step-by-step guide with source code. Perfect for email archiving and document management.
 type: docs
 weight: 11
 url: /ar/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
 
-هل سبق لك أن واجهت الحاجة إلى تحويل رسالة بريد إلكتروني إلى تنسيق MHT مع الحفاظ على أنماط الخطوط الخاصة بها؟ سيرشدك هذا الدليل خلال عملية تغيير الخطوط أثناء تحويل MHT باستخدام مكتبة Aspose.Email for .NET القوية. سواء كنت تعمل على أرشفة البريد الإلكتروني، أو إدارة المستندات، أو أي مشروع آخر يتضمن تحويل البريد الإلكتروني، فإن هذا الدليل التفصيلي سيساعدك على تحقيق هدفك بسلاسة.
+In today's digital era, document formatting and presentation play a crucial role in conveying information effectively. When it comes to email communication, ensuring that your emails appear consistent and professional is of utmost importance. This article will guide you through the process of changing fonts during MHT (MIME HTML) conversion using C# with the Aspose.Email for .NET library.
 
-## مقدمة لتحويل MHT وAspose.Email لـ .NET
+## Introduction to MHT Conversion
 
-### ما هو MHT؟
+Before diving into the specifics of changing fonts, let's briefly understand what MHT conversion is and why it matters. MHT, short for MIME HTML, is a widely-used format for saving web pages with all the multimedia elements, including images and stylesheets, embedded in a single file. This format ensures that the email or web page appears exactly as intended, regardless of the recipient's email client or web browser.
 
-MHT (MIME HTML) هو تنسيق ملف يسمح لك بحفظ صفحة ويب، بما في ذلك جميع مواردها، في مستند واحد. يتم استخدامه غالبًا لأرشفة صفحات الويب ورسائل البريد الإلكتروني، حيث يحتفظ ببنية المحتوى الأصلي ومظهره.
+### The Power of MHT Conversion
 
-### حول Aspose.Email لـ .NET
+MHT conversion is a powerful tool for businesses and individuals alike. It allows you to:
 
-Aspose.Email for .NET هي مكتبة قوية توفر وظائف للعمل مع تنسيقات البريد الإلكتروني، بما في ذلك تحميل رسائل البريد الإلكتروني وتحليلها وتحويلها. إنه خيار مثالي للمطورين الذين يحتاجون إلى التعامل مع المهام المختلفة المتعلقة بالبريد الإلكتروني بكفاءة.
+1. Preserve Formatting: Maintain the original formatting of your emails, ensuring they look professional and consistent across different platforms.
 
-## إعداد مشروعك
+2. Enhance Compatibility: Ensure that your emails are readable and visually appealing to recipients using various email clients.
 
-### تثبيت Aspose.Email لـ .NET
+3. Streamline Communication: Simplify the sharing of web content, making it easier for others to view and interact with your information.
 
- للبدء، تحتاج إلى تثبيت Aspose.Email لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases](https://releases.aspose.com/email/net) أو استخدم NuGet Package Manager في Visual Studio.
+Now that we've established the significance of MHT conversion, let's proceed to the steps for changing fonts during this process using C# and Aspose.Email for .NET.
 
-### إنشاء مشروع .NET جديد
+## Step 1: Setting Up the Environment
 
-1. افتح Visual Studio وقم بإنشاء مشروع .NET جديد.
-2. قم بتثبيت Aspose.Email لمكتبة .NET باستخدام NuGet Package Manager.
-3. أنت الآن جاهز لبدء البرمجة!
+To get started with changing fonts during MHT conversion, you'll need to set up your development environment. Here are the initial steps:
 
-## تحميل وتحليل رسالة البريد الإلكتروني
+1. Install Aspose.Email for .NET: If you haven't already, download and install the Aspose.Email for .NET library from the website.
 
-### تحميل رسالة بريد إلكتروني
+2. Create a C# Project: Open your favorite C# development environment, such as Visual Studio, and create a new C# project.
 
-قبل أن نتمكن من تعديل الخطوط في البريد الإلكتروني، نحتاج إلى تحميل رسالة بريد إلكتروني. يمكنك تحميل بريد إلكتروني من مصادر مختلفة، مثل ملف أو دفق أو حتى خادم بريد.
+## Step 2: Importing Aspose.Email
 
-```csharp
-// قم بتحميل رسالة البريد الإلكتروني
-var message = MailMessage.Load("sample.eml");
-```
-
-### تحليل نص الرسالة
-
-بمجرد تحميل البريد الإلكتروني، يمكنك الوصول إلى أجزائه المختلفة، بما في ذلك نص HTML. يتيح لنا تحليل نص HTML إجراء تغييرات على الخط.
-
-```csharp
-// تحليل نص HTML
-var htmlBody = message.HtmlBody;
-```
-
-## تعديل الخطوط في البريد الإلكتروني
-
-### فهم أنماط الخطوط
-
-يتم تعريف الخطوط في رسائل البريد الإلكتروني بتنسيق HTML باستخدام أنماط CSS. لتغيير الخطوط، تحتاج إلى تعديل أنماط CSS المرتبطة بمحتوى HTML الخاص بالبريد الإلكتروني.
-
-### تغيير الخطوط برمجيا
-
-لنفترض أنك تريد تغيير خط الفقرة في نص HTML للبريد الإلكتروني. وإليك كيف يمكنك القيام بذلك:
-
-```csharp
-// تغيير خط الفقرة
-htmlBody = htmlBody.Replace("<p>", "<p style=\"font-family: Arial;\">");
-```
-
-## التحويل إلى تنسيق MHT
-
-### إنشاء رسالة MHT
-
-لتحويل البريد الإلكتروني إلى تنسيق MHT، تحتاج إلى إنشاء رسالة بريد إلكتروني بتنسيق MHT باستخدام Aspose.Email.
-
-```csharp
-// إنشاء رسالة بريد إلكتروني بتنسيق MHT
-var mhtMessage = MhtMessage.FromMailMessage(message);
-```
-
-### حفظ الرسالة بتنسيق MHT
-
-وأخيرًا، احفظ الرسالة بتنسيق MHT في ملف.
-
-```csharp
-// احفظ الرسالة بتنسيق MHT
-mhtMessage.Save("output.mht", SaveOptions.DefaultMhtml);
-```
-
-## كود المصدر الكامل
-
-إليك كود المصدر الكامل الذي يجمع كل شيء معًا:
+Next, you'll need to import the Aspose.Email namespace into your C# project. This is essential for accessing the library's features for MHT conversion and font manipulation.
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mime;
-using Aspose.Email.Mhtml;
-
-class Program
-{
-    static void Main()
-    {
-        var message = MailMessage.Load("sample.eml");
-        var htmlBody = message.HtmlBody;
-        htmlBody = htmlBody.Replace("<p>", "<p style=\"font-family: Arial;\">");
-
-        var mhtMessage = MhtMessage.FromMailMessage(message);
-        mhtMessage.Save("output.mht", SaveOptions.DefaultMhtml);
-    }
-}
+using Aspose.Email.Tools;
 ```
 
-## خاتمة
+## Step 3: Changing Fonts
 
-في هذا الدليل، اكتشفنا كيفية تغيير الخطوط أثناء تحويل MHT باستخدام Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك تحويل رسائل البريد الإلكتروني بسلاسة إلى تنسيق MHT مع الحفاظ على أنماط الخط المطلوبة.
+Now comes the exciting part – changing fonts during MHT conversion. You can use Aspose.Email's powerful features to customize fonts in your MHT files. Here's a sample code snippet to get you started:
 
+```csharp
+// Load the MHT file
+MailMessage message = MailMessage.Load("input.mht", new MhtmlLoadOptions());
 
-## الأسئلة الشائعة
+// Customize fonts
+foreach (var alternateView in message.AlternateViews)
+{
+    if (alternateView.ContentType.MediaType == "text/html")
+    {
+        var htmlView = (AlternateView)alternateView;
+        var linkedResources = htmlView.LinkedResources;
 
+        foreach (var linkedResource in linkedResources)
+        {
+            // Check if this linked resource represents a font
+            if (linkedResource.ContentType.MediaType == "application/x-font-ttf")
+            {
+                // Customize the font as needed
+                linkedResource.ContentType.Name = "Arial";
+                linkedResource.TransferEncoding = TransferEncoding.Base64;
+            }
+        }
+    }
+}
 
-### هل يمكنني تحويل عدة رسائل بريد إلكتروني إلى تنسيق MHT دفعة واحدة؟
+// Save the updated MHT file
+message.Save("output.mht", SaveOptions.DefaultMhtml);
+```
 
-نعم، يمكنك التنقل عبر مجموعة من رسائل البريد الإلكتروني وتطبيق نفس تغييرات الخط على كل رسالة قبل تحويلها إلى تنسيق MHT.
+In this code snippet, we first load the MHT file using `MailMessage.Load` with `MhtmlLoadOptions`. Then, we iterate through the alternate views to find the HTML view and customize fonts within it by manipulating linked resources.
 
-### هل يدعم Aspose.Email تنسيقات البريد الإلكتروني الأخرى أيضًا؟
+## Conclusion
 
-نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة، بما في ذلك EML وMSG وPST والمزيد.
+In this article, we've explored the world of changing fonts during MHT conversion using C# and the Aspose.Email for .NET library. With the power of MHT conversion, you can ensure that your emails and web content are visually appealing and consistent, regardless of the recipient's email client or web browser.
 
-### هل من الممكن تخصيص تغييرات الخط بشكل أكبر؟
+Now that you have the knowledge and tools to manipulate fonts in your MHT files, you can enhance the presentation of your emails and web content. So go ahead, create visually stunning emails that leave a lasting impression!
 
-قطعاً! يمكنك استكشاف المزيد من أنماط CSS لتخصيص الخطوط، مثل حجم الخط واللون والمحاذاة.
+## Frequently Asked Questions (FAQs)
 
-### هل يمكنني استخدام Aspose.Email للمشاريع التجارية؟
+### 1. Can I change fonts for specific sections of my email?
 
-نعم، يمكن استخدام Aspose.Email لكل من المشاريع الشخصية والتجارية، وفقًا لشروط الترخيص.
+   Yes, you can. By customizing the font styles within your MHT file, you have the flexibility to change fonts for specific sections or even individual elements.
 
- تذكر أن هذا الدليل يقدم نظرة عامة، ويمكنك استكشاف المزيد من خلال الرجوع إلى[مرجع Aspose.Email API](https://reference.aspose.com/email/net/)وتجربة تقنيات تخصيص الخطوط المختلفة. ترميز سعيد!
+### 2. Does Aspose.Email for .NET support other formatting options?
+
+   Absolutely! Aspose.Email for .NET offers a wide range of formatting options, including text alignment, styles, and more. You can tailor your emails to meet your exact requirements.
+
+### 3. Is MHT conversion compatible with all email clients?
+
+   MHT conversion enhances compatibility across a variety of email clients, but it's essential to test your emails in different clients to ensure optimal rendering.
+
+### 4. Are there any licensing requirements for Aspose.Email for .NET?
+
+   Yes, Aspose.Email for .NET is a commercial library, and you will need an appropriate license to use it in your projects. Visit the website for licensing details.
+
+### 5. Can I automate the font-changing process in my applications?
+
+   Yes, you can automate font changes in your applications by integrating Aspose.Email for .NET into your code. This allows for dynamic font customization based on your application's logic.

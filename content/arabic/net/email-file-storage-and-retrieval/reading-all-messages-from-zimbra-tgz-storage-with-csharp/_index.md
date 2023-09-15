@@ -1,101 +1,98 @@
 ---
-title: قراءة جميع الرسائل من Zimbra TGZ Storage باستخدام C#
-linktitle: قراءة جميع الرسائل من Zimbra TGZ Storage باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية قراءة رسائل تخزين Zimbra TGZ باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن.
+title: Reading All Messages from Zimbra TGZ Storage with C#
+linktitle: Reading All Messages from Zimbra TGZ Storage with C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to read Zimbra TGZ storage messages using C# and Aspose.Email for .NET. Step-by-step guide with source code included.
 type: docs
 weight: 10
 url: /ar/net/email-file-storage-and-retrieval/reading-all-messages-from-zimbra-tgz-storage-with-csharp/
 ---
 
-## مقدمة لقراءة جميع الرسائل من Zimbra TGZ Storage باستخدام C#
+In today's digital age, efficient data management and retrieval are crucial for businesses and individuals alike. When dealing with email messages stored in the Zimbra TGZ format, having a reliable method to read and access these messages programmatically can significantly streamline your workflow. This article will guide you step by step on how to achieve this using C# and the powerful Aspose.Email for .NET library.
 
-في هذا البرنامج التعليمي، سنستكشف كيفية قراءة جميع الرسائل من وحدة تخزين Zimbra TGZ باستخدام لغة C# ومكتبة Aspose.Email لـ .NET. يعد Zimbra نظامًا أساسيًا شائعًا للتعاون عبر البريد الإلكتروني، وقد نحتاج أحيانًا إلى استخراج الرسائل من ملفات التخزين الخاصة به لأغراض التحليل أو الترحيل. توفر مكتبة Aspose.Email for .NET مجموعة قوية من الميزات للعمل مع رسائل البريد الإلكتروني، بما في ذلك قراءة الرسائل من تنسيقات مختلفة مثل TGZ. سنذهب خطوة بخطوة لفهم كيفية تحقيق هذه المهمة.
+## Introduction to Aspose.Email for .NET
 
-## المتطلبات الأساسية
+Before we dive into the code, let's take a moment to introduce Aspose.Email for .NET. It is a robust and feature-rich API that enables developers to work with various email formats, including MSG, PST, EML, and, of course, the Zimbra TGZ format. With Aspose.Email, you can perform a wide range of operations on email messages, making it an invaluable tool for email-related tasks.
 
-قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
+## Setting Up Your Development Environment
 
-1. Visual Studio: سنستخدم Visual Studio كبيئة التطوير الخاصة بنا.
-2.  Aspose.Email لمكتبة .NET: يمكنك تنزيله من[هنا](https://downloads.aspose.com/email/net).
+Before we start coding, make sure you have the necessary tools and libraries installed:
 
-## 1. قم بإنشاء مشروع C# جديد
+1. Visual Studio: If you don't have it already, download and install Visual Studio, a popular integrated development environment (IDE) for C#.
 
-افتح Visual Studio وقم بإنشاء مشروع C# جديد. يمكنك اختيار نوع المشروع الذي يناسب متطلباتك.
+2. Aspose.Email for .NET: You can obtain Aspose.Email for .NET from the website or via NuGet Package Manager in Visual Studio.
 
-## 2. قم بتثبيت مكتبة Aspose.Email
+3. Zimbra TGZ Sample Data: Ensure you have a sample TGZ file to work with. You can use the provided "ZimbraSample.tgz" file for this tutorial.
 
-بمجرد إنشاء المشروع، تحتاج إلى إضافة مرجع إلى مكتبة Aspose.Email. يمكنك القيام بذلك عن طريق النقر بزر الماوس الأيمن على المشروع في Solution Explorer، وتحديد "إدارة حزم NuGet"، ثم البحث عن "Aspose.Email". قم بتثبيت الحزمة في مشروعك.
+Let's get down to the code! We'll break it down into steps, ensuring clarity and ease of understanding.
 
-## 3. قم باستيراد مساحات الأسماء الضرورية
-
-في ملف التعليمات البرمجية C# الخاص بك، قم باستيراد مساحات الأسماء اللازمة للعمل مع Aspose.Email:
+## Step 1: Import Necessary Libraries
 
 ```csharp
+// Import the required namespaces
 using Aspose.Email;
 using Aspose.Email.Storage.Tgz;
 ```
 
-## 4. قم بتحميل ملف TGZ
-
-بعد ذلك، تحتاج إلى تحميل ملف Zimbra TGZ الذي يحتوي على رسائل البريد الإلكتروني:
+## Step 2: Define the Directory Path
 
 ```csharp
-using (var tgzReader = new TgzReader("path/to/your/zimbrafile.tgz"))
+// Specify the path to the directory containing your TGZ file
+string dataDir = "Your Document Directory";
+```
+
+## Step 3: Create a TgzReader
+
+```csharp
+// Create a TgzReader instance and provide the path to your TGZ file
+TgzReader reader = new TgzReader(dataDir + "ZimbraSample.tgz");
+```
+
+## Step 4: Read and Process Messages
+
+```csharp
+// Loop through each message in the TGZ file
+while (reader.ReadNextMessage())
 {
-    foreach (var entry in tgzReader)
-    {
-        if (entry.Name.EndsWith(".eml"))
-        {
-            // معالجة كل رسالة بريد إلكتروني
-            using (var stream = entry.Open())
-            {
-                // قراءة ومعالجة رسالة البريد الإلكتروني
-                var message = MailMessage.Load(stream);
-                // تنفيذ العمليات المطلوبة على الرسالة
-            }
-        }
-    }
+    string directoryName = reader.CurrentDirectory;
+    Console.WriteLine(directoryName);
+    MailMessage eml = reader.CurrentMessage;
+    Console.WriteLine(eml.Subject);
 }
 ```
 
-## 5. الوصول إلى محتوى الرسالة
+The code above does the following:
 
-داخل الحلقة، يمكنك الوصول إلى خصائص مختلفة لرسالة البريد الإلكتروني، مثل المرسل والمستلمين والموضوع والنص والمرفقات والمزيد:
+- Imports the necessary Aspose.Email namespaces.
+- Specifies the directory path where your TGZ file is located.
+- Creates a TgzReader instance and points it to your TGZ file.
+- Reads each message in the TGZ file, displaying the directory name and email subject.
 
-```csharp
-var sender = message.From.Address;
-var subject = message.Subject;
-var body = message.HtmlBody; // يمكنك أيضًا استخدام TextBody لرسائل البريد الإلكتروني ذات النص العادي
+## Conclusion
 
-foreach (var attachment in message.Attachments)
-{
-    // مرفقات العملية
-}
-```
+In this article, we've explored how to read messages from a Zimbra TGZ storage file using C# and Aspose.Email for .NET. This step-by-step guide provides a solid foundation for handling email messages stored in the Zimbra format efficiently. With Aspose.Email's powerful features, you can extend this code to suit your specific needs and integrate it seamlessly into your applications.
 
-## خاتمة
+Now that you have the tools and knowledge, go ahead and explore the world of email data management with Aspose.Email for .NET!
 
-في هذا البرنامج التعليمي، تعلمنا كيفية قراءة جميع الرسائل من وحدة تخزين Zimbra TGZ باستخدام لغة C# ومكتبة Aspose.Email لـ .NET. لقد قمنا بتغطية الخطوات اللازمة لتحميل ملف TGZ والوصول إلى رسائل البريد الإلكتروني واسترداد محتواها. يمكن أن تكون هذه المعرفة ذات قيمة لسيناريوهات مثل ترحيل البريد الإلكتروني أو التحليل أو التكامل مع الأنظمة الأخرى.
 
-## الأسئلة الشائعة
+## FAQs
 
-### كيف يمكنني تنزيل Aspose.Email لمكتبة .NET؟
+### Q1: Is Aspose.Email for .NET a paid library?
 
- يمكنك تنزيل Aspose.Email لمكتبة .NET من[هنا](https://downloads.aspose.com/email/net).
+A1: Yes, Aspose.Email for .NET is a commercial library. However, it offers a free trial version, allowing you to evaluate its features before making a purchase.
 
-### هل يمكنني استخدام Aspose.Email للعمل مع تنسيقات البريد الإلكتروني الأخرى؟
+### Q2: Can I use Aspose.Email for .NET with other programming languages?
 
-نعم، يوفر Aspose.Email الدعم لتنسيقات البريد الإلكتروني المختلفة، بما في ذلك MSG وEML وPST والمزيد.
+A2: Aspose.Email for .NET is designed specifically for the .NET framework. If you're working with other languages, you may want to explore Aspose.Email's other offerings for Java and other platforms.
 
-### هل هناك أي وثائق متاحة لـ Aspose.Email؟
+### Q3: Are there any limitations on the size of the TGZ file that can be processed?
 
- نعم، يمكنك العثور على وثائق وأمثلة مفصلة في[Aspose.وثائق البريد الإلكتروني](https://reference.aspose.com/email/net).
+A3: Aspose.Email for .NET can handle TGZ files of varying sizes. However, performance may vary depending on the file size and system resources.
 
-### ما هي إصدارات .NET التي يدعمها Aspose.Email؟
+### Q4: Can I extract attachments from email messages using Aspose.Email for .NET?
 
-يدعم Aspose.Email إصدارات .NET Framework و.NET Core و.NET 5 والإصدارات الأحدث.
+A4: Yes, Aspose.Email for .NET provides features to easily extract attachments from email messages, making it a versatile tool for managing email data.
 
-### كيف يمكنني الحصول على الدعم إذا واجهت مشكلات أثناء استخدام Aspose.Email؟
+### Q5: Is technical support available for Aspose.Email for .NET?
 
- يمكنك الحصول على الدعم الفني من خلال زيارة[Aspose منتديات الدعم](https://forum.aspose.com/c/email) أو تقديم تذكرة دعم من خلال[Aspose نظام الدعم](https://www.aspose.com/support/contact-us).
+A5: Yes, Aspose provides technical support for its products, including Aspose.Email for .NET. You can reach out to their support team for assistance with any questions or issues you may encounter.

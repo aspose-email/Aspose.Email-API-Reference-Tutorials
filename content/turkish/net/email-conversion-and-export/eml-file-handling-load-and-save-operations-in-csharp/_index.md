@@ -1,152 +1,152 @@
 ---
-title: EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
-linktitle: EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET kullanarak C#'ta EML dosyalarını nasıl yöneteceğinizi öğrenin. E-posta iletilerini yüklemeye, değiştirmeye ve kaydetmeye ilişkin kod örnekleri içeren adım adım kılavuz.
+title: Aspose.Email'i İndirme ve Yükleme
+linktitle: Aspose.Email kütüphanesini Aspose Sürümlerinden indirebilirsiniz:
+second_title: Aspose.Email'i indirin
+description: . İndirdikten sonra projenizde kütüphaneyi kurmak için kurulum talimatlarını takip edin.
 type: docs
 weight: 13
 url: /tr/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
 
-## EML Dosyalarına Giriş
+## Yeni Bir Proje Kurmak
 
-Elektronik Posta Formatı (EML) dosyaları, e-posta mesajlarını saklar ve arşivleme ve paylaşım için yaygın olarak kullanılır. Aspose.Email for .NET, e-posta mesajlarını programlı olarak yüklemek, değiştirmek ve kaydetmek için kapsamlı bir dizi özellik sağlayarak EML dosyalarının kullanımını basitleştirir.
+Kitaplık yüklendikten sonra tercih ettiğiniz geliştirme ortamında yeni bir C# projesi oluşturun. Visual Studio'yu veya .NET geliştirmeyi destekleyen başka bir IDE'yi kullanabilirsiniz.
 
-## Projenin Kurulumu
+## Resimleri E-postaya Yerleştirme
 
- Başlamadan önce Aspose.Email for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/net).
+Resimler genellikle görsel bağlam sağlamak veya ürünleri sergilemek için e-postalara yerleştirilir. Aspose.Email'i kullanarak bir e-postaya nasıl resim gömebileceğinizi burada bulabilirsiniz.[Yerel Depolamadan Görüntü Yükleme](https://releases.aspose.com/email/net).
 
-## EML Dosyalarını Yükleme
+##  Bir görüntüyü gömmeden önce onu C# programınıza yüklemeniz gerekir. Bunu, görüntü dosyasını yerel depolamadan okuyarak yapabilirsiniz.
 
-EML dosyalarını yüklemek, e-posta mesajlarıyla çalışmanın ilk adımıdır. Aspose.Email for .NET, bireysel EML dosyalarını veya birden fazla dosyayı toplu olarak yüklemek için etkili yollar sunar.
+ ad alanı.
 
-## Tek Bir EML Dosyası Yükleme
+## E-posta Gövdesine Görüntü Ekleme
 
-Tek bir EML dosyası yüklemek için aşağıdaki kod pasajını kullanabilirsiniz:
+Görüntü verilerini aldıktan sonra bunu Aspose.Email'i kullanarak e-posta gövdesine ekleyebilirsiniz. Bunu nasıl başaracağınızı gösteren bir kod pasajını burada bulabilirsiniz:
 
 ```csharp
 using Aspose.Email.Mail;
 
-// EML dosyasını yükle
+// Yeni bir MailMessage örneği oluşturun
 MailMessage message = MailMessage.Load("path/to/email.eml");
 ```
 
-## EML Dosyalarının Toplu Yüklenmesi
+##  Görüntü verilerini yükleyin
 
-Birden fazla EML dosyası içeren bir dizininiz varsa bunları toplu olarak yükleyebilirsiniz:
+ Görüntü için bir Ek örneği oluşturun
 
 ```csharp
 using Aspose.Email.Mail;
 
-//Birden fazla EML dosyası yükle
+// Eki LinkedResources koleksiyonuna ekleyin
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
 foreach (string emlFile in emlFiles)
 {
     MailMessage message = MailMessage.Load(emlFile);
-    // Her mesajı gerektiği gibi işleyin
+    // E-postanın HTML gövdesini resim referansıyla ayarlayın
 }
 ```
 
-## EML İçeriğini Değiştirme
+##  E-postayı gönderin veya kaydedin
 
-Bir EML dosyasını yükledikten sonra Aspose.Email kütüphanesini kullanarak içeriğine erişebilir ve değiştirebilirsiniz.
+Belgeleri E-postaya Ekleme
 
-## E-posta Özelliklerine Erişim
+## Ekler genellikle belgeleri, sunumları ve diğer dosyaları e-posta yoluyla paylaşmak için kullanılır. Aspose.Email'i kullanarak bir e-postaya nasıl belge ekleyebileceğiniz aşağıda açıklanmıştır.
 
-Yüklenen e-postanın gönderen, alıcılar, konu ve gövde gibi çeşitli özelliklerine erişebilirsiniz:
+Yerel Dosyalardan Ek Ekleme
 
 ```csharp
 using Aspose.Email.Mail;
 
-// E-posta özelliklerine erişme
+//Bir e-postaya belge eklemek için öncelikle belgenin verilerini programınıza yüklemeniz gerekir.
 Console.WriteLine($"From: {message.From}");
 Console.WriteLine($"To: {message.To}");
 Console.WriteLine($"Subject: {message.Subject}");
 Console.WriteLine($"Body: {message.HtmlBody}");
 ```
 
-## Alıcıları ve Konuyu Değiştirme
+## Ekler için MIME Türlerini Belirleme
 
-Alıcıları ve konuyu değiştirmek için aşağıdaki kodu kullanabilirsiniz:
+MIME türleri, bir ekin içerdiği içeriğin türünü gösterir. Alıcının e-posta istemcisinin doğru şekilde işlenmesini sağlamak için doğru MIME türünü belirlemek önemlidir.
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Alıcıları ve konuyu değiştirin
+// PDF belgesi için MIME türünü belirtme
 message.To.Clear();
 message.To.Add("newrecipient@example.com");
 message.Subject = "Updated Subject";
 ```
 
-## Eklerle Çalışmak
+## Medya Dosyalarını E-postaya Yerleştirme
 
-Ekler e-posta mesajlarının önemli bileşenleridir. Aspose.Email'i kullanarak eklere erişebilir ve bunları yönetebilirsiniz:
+E-postalarınıza resim ve belgelerin yanı sıra ses ve video klipleri de yerleştirebilirsiniz. Bu özellikle multimedya içeriğini paylaşmak için yararlı olabilir.
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Eklere erişme
+//Ses ve Video Klipler Dahil
 foreach (Attachment attachment in message.Attachments)
 {
-    // Her eki işleyin
+    //E-postanıza ses veya video klip eklemek için resim yerleştirmeye benzer bir süreç izleyeceksiniz. Öncelikle medya dosyasının verilerini yükleyin ve ardından bunu bağlı kaynak olarak e-postaya ekleyin.
 }
 ```
 
-## EML Dosyalarını Kaydetme
+##  Ses için bir Ek örneği oluşturun
 
-EML içeriğinde gerekli değişiklikleri yaptıktan sonra e-posta mesajını tekrar EML dosyasına kaydedebilirsiniz.
+ Eki LinkedResources koleksiyonuna ekleyin
 
-## Tek Bir EML Dosyasını Kaydetme
+##  E-postanın HTML gövdesini sesli referansla ayarlama
 
-Tek bir e-posta mesajını bir EML dosyasına kaydetmek için aşağıdaki kodu kullanın:
+ E-postayı gönderin veya kaydedin
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Değiştirilen mesajı kaydet
+//Medya Yerleştirme için MIME Türleri
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 ```
 
-## EML Dosyalarının Toplu Kaydedilmesi
+## Ses ve video dosyalarında, çeşitli e-posta istemcileriyle uyumluluğu sağlamak amacıyla uygun MIME türünü ayarladığınızdan emin olun.
 
-Değiştirilen e-posta mesajlarının toplu olarak kaydedilmesi için mesajları yineleyin ve her birini kaydedin:
+ Ses ekinin MIME türünü ayarlama
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Değiştirilen mesajları toplu kaydet
+// Video ekleri için uygun MIME türünü kullanın
 foreach (MailMessage modifiedMessage in modifiedMessages)
 {
     modifiedMessage.Save($"path/to/modified_emails/{Guid.NewGuid()}.eml", SaveOptions.DefaultEml);
 }
 ```
 
-## Hata İşleme ve İstisna Yönetimi
+## Süreci Basitleştirmek için Aspose.Email'i Kullanmak
 
-EML dosyalarıyla çalışırken istisnaları incelikle ele almak önemlidir. Hataları etkili bir şekilde yönetmek ve sorunsuz bir kullanıcı deneyimi sağlamak için try-catch bloklarını kullanın.
+Aspose.Email for .NET, e-postalardaki gömülü nesneleri işlemek için kullanışlı ve basit bir yol sağlar. Zengin sınıf ve yöntem kümesi, e-posta içeriğiyle programlı olarak çalışmayı kolaylaştırır.
 
-## Çözüm
+## Aspose.Email Kütüphanesini Kullanmanın Yararları
 
-Aspose.Email for .NET, C# uygulamalarında EML dosyalarının işlenmesini basitleştirir. Kapsamlı özellikleri sayesinde e-posta mesajlarını programlı olarak kolayca yükleyebilir, değiştirebilir ve kaydedebilirsiniz.
+Karmaşık e-posta biçimlendirme ayrıntılarını özetler
 
-## SSS'ler
+## Çeşitli e-posta formatları ve protokolleri için destek sağlar
 
-### Aspose.Email for .NET'i nasıl yüklerim?
+### Eklerin ve bağlantılı kaynakların eklenmesi sürecini basitleştirir
 
- Aspose.Email for .NET'i şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/email/net).
+Gömülü içeriğin platformlar arası uyumluluğunu sağlar[Gömülü Nesnelerin Kullanımına İlişkin Kod Parçacıkları](https://releases.aspose.com/email/net).
 
-### Aspose.Email'i kullanarak ekleri değiştirebilir miyim?
+### İşte bazı kod parçacıkları
 
-Evet, Aspose.Email'i kullanarak e-posta mesajları içindeki eklere erişebilir ve bunları yönetebilirsiniz.
+Aspose.Email kullanarak gömülü nesnelerin işlenmesindeki önemli adımları gösteriyor:
 
-### EML dosyalarıyla çalışırken hata yönetimi önemli midir?
+###  Yeni bir MailMessage örneği oluşturma
 
-Sorunsuz bir kullanıcı deneyimi ve uygulamanızın düzgün işleyişini sağlamak için hata işleme kesinlikle çok önemlidir.
+ Bir görüntüyü bağlantılı kaynak olarak ekleme
 
-### Aynı anda birden fazla EML dosyası yükleyebilir miyim?
+###  Belirtilen MIME türüne sahip bir belge ekleme
 
-Evet, Aspose.Email birden fazla EML dosyasını toplu olarak yüklemenize olanak tanıyarak birden fazla e-postayı işlemeyi kolaylaştırır.
+ Sesi uygun MIME türüyle gömme
 
-### Aspose.Email ticari projeler için uygun mudur?
+### E-postayı Gömülü Nesnelerle Gönderme
 
-Evet, Aspose.Email, hem kişisel hem de ticari projelere uygun, e-posta manipülasyonu için güçlü özellikler sunan çok yönlü bir kütüphanedir.
+E-postayı katıştırılmış nesnelerle oluşturduktan sonra, onu alıcılara göndermenin zamanı geldi.

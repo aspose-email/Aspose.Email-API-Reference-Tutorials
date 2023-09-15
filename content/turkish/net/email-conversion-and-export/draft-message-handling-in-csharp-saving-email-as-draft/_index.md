@@ -1,105 +1,105 @@
 ---
-title: C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme
-linktitle: C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak C#'ta taslak e-posta işlemeyi nasıl uygulayacağınızı öğrenin. Taslakları sorunsuz bir şekilde oluşturun, düzenleyin ve kaydedin.
+title: C#'ta TNEF Mesaj Algılama - Açıklandı
+linktitle: Aspose.Email .NET E-Posta İşleme API'si
+second_title: Aspose.Email for .NET'i kullanarak C#'ta TNEF mesajlarını algılamayı ve işlemeyi öğrenin. Zengin metin ve eklerle e-posta yönetimini geliştirin.
+description: Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Taşıma Nötr Kapsülleme Formatı) mesajlarının nasıl tespit edileceğine dair ayrıntılı adım adım açıklama sağlayacaktır. TNEF, Microsoft Outlook tarafından e-posta iletilerindeki zengin metni ve ekleri kapsüllemek için kullanılan bir biçimdir. Aspose.Email for .NET, TNEF mesajları da dahil olmak üzere e-postalar ve eklerle çalışmak için güçlü bir API seti sunar.
 type: docs
 weight: 17
 url: /tr/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
 
-## giriiş
-
-Taslak mesaj işleme, e-posta istemcileri için çok önemli bir işlevselliktir. Kullanıcılar genellikle bir e-posta oluşturmaya başlama, onu taslak olarak kaydetme ve daha sonra düzenleme veya nihai gönderim için geri dönme olanağına ihtiyaç duyar. Bu makale, Aspose.Email for .NET kütüphanesini kullanarak bu özelliğin nasıl uygulanacağını göstermektedir.
-
 ## Önkoşullar
 
-Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Visual Studio (veya herhangi bir C# geliştirme ortamı)
-- Aspose.Email for .NET kütüphanesi
+## C# için bir geliştirme ortamı (örneğin, Visual Studio).
 
- Aspose.Email kütüphanesini şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/email/net).
+ Aspose.Email for .NET kütüphanesi kuruldu. Şuradan indirebilirsiniz
 
-## Projenin Kurulumu
+- Burada
+- 1. Adım: Yeni bir C# Projesi Oluşturun
 
-1. Geliştirme ortamınızda yeni bir C# projesi oluşturun.
-2. Projenizdeki Aspose.Email DLL'lerine referanslar ekleyin.
+Seçtiğiniz geliştirme ortamında yeni bir C# projesi oluşturarak başlayın.[Adım 2: Aspose.Email for .NET'i yükleyin](https://releases.aspose.com/email/net).
 
-## E-posta Taslağı Oluşturma
+## NuGet Paket Yöneticisini kullanarak Aspose.Email for .NET kitaplığını yükleyin. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırın:
 
-Taslak mesaj oluşturmak için şu adımları izleyin:
+1. 3. Adım: Gerekli Ad Alanlarını İçe Aktarın
+2. C# kodunuzda gerekli ad alanlarını içe aktarın:
 
-## Alıcı ve Konu Ekleme
+## Adım 4: TNEF Mesajını Yükleyin ve Algılayın
+
+ E-posta mesajını kullanarak yükleyin.
+
+##  sınıf:
 
 ```csharp
-// Yeni bir MailMessage örneği oluşturun
+//Yüklenen e-postanın bir TNEF mesajı olup olmadığını belirleyin:
 MailMessage draft = new MailMessage();
 
-// Alıcı ekle
+// Yer değiştirmek
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// E-posta konusunu ayarlayın
+// e-posta mesajı dosyanızın gerçek yolunu içerir.
 draft.Subject = "Draft Email Demo";
 ```
 
-## E-posta Gövdesi Oluşturma
+## Adım 5: TNEF Eklerini İşleyin
 
 ```csharp
-// E-posta gövdesini ayarla
+//Yüklenen e-posta gerçekten bir TNEF mesajıysa, eklerini çıkarabilir ve işleyebilirsiniz:
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## Taslak olarak kaydediliyor
+##  TNEF ekini işle
 
 ```csharp
-// E-postayı taslak olarak kaydedin
+// Örneğin, eki diske kaydedin
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Taslakları Yükleme ve Düzenleme
+## SSS
 
-Taslak mesajları yüklemek ve düzenlemek için şu adımları izleyin:
+Bir E-postanın TNEF Mesajı olup olmadığını Nasıl Kontrol Edebilirim?
 
 ```csharp
-// Taslak e-posta yükle
+// Bir e-postanın TNEF mesajı olup olmadığını kontrol etmek için
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-// Alıcıları düzenle
+// yöntemi
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// E-posta gövdesini düzenle
+// sınıf:
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-// Değişiklikleri Kaydet
+//Bir TNEF Mesajından Ekleri Nasıl Çıkarırım?
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Çözüm
+## Bir TNEF mesajından ekleri çıkarmak için şu adımları izleyin:
 
-Bu makalede, Aspose.Email for .NET kütüphanesini kullanarak C#'ta taslak mesajların nasıl işleneceğini araştırdık. Taslak e-postaların nasıl oluşturulacağını, düzenleneceğini ve kaydedileceğini öğrendik, böylece kullanıcılara mesaj yazarken kusursuz bir deneyim sağladık. Bu kılavuzda özetlenen adımları izleyerek e-posta istemcisi uygulamanızı taslak mesaj işleviyle geliştirebilirsiniz.
+ E-postayı kullanarak yükleyin
 
-## SSS'ler
+##  kullanarak e-postanın bir TNEF mesajı olup olmadığını kontrol edin.
 
-### Aspose.Email for .NET kütüphanesini nasıl indirebilirim?
+###  Bu bir TNEF mesajıysa, ekleri kullanarak çıkarın.
 
- Aspose.Email for .NET kütüphanesini şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/email/net).
+ TNEF ekini işle[ Örneğin, eki diske kaydedin](https://releases.aspose.com/email/net).
 
-### Kaydedilmiş bir taslağın alıcılarını ve konusunu düzenleyebilir miyim?
+###  Daha ayrıntılı bilgi ve API referansları için bkz.
 
-Evet, kayıtlı bir taslağı yükleyebilir, alıcılarını, konusunu ve içeriğini düzenleyebilir ve ardından değişiklikleri güncellenmiş bir taslak olarak kaydedebilirsiniz.
+Aspose.Email for .NET belgeleri
 
-### Taslak e-posta belirli bir biçimde mi kaydedildi?
+### Çözüm
 
-Evet, taslak e-posta, e-posta mesajları için yaygın olarak kullanılan bir format olan EML formatında kaydedilir.
+Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Transport Neutral Encapsulation Format) mesajlarını nasıl tespit edeceğinizi öğrendiniz. Microsoft Outlook tarafından sıklıkla kullanılan TNEF mesajları, e-postaların içindeki zengin metinleri ve ekleri kapsüller. Bu kılavuzda özetlenen adımları izleyerek, TNEF mesajlarını verimli bir şekilde tanımlayabilir ve daha sonraki işlemler için eklerini çıkarabilirsiniz.
 
-### Taslak mesaj işlemeyi mevcut e-posta uygulamama entegre edebilir miyim?
+###  Geri Dönen İletileri C# Koduyla Doğrulama
 
-Kesinlikle, bu kılavuzda verilen adımları izleyerek taslak mesaj işlemeyi mevcut e-posta istemci uygulamanıza sorunsuz bir şekilde entegre edebilirsiniz.
+ Geri Dönen İletileri C# Koduyla Doğrulama
 
-### Aspose.Email kütüphanesi e-postayla ilgili diğer işlevleri destekliyor mu?
+###  Aspose.Email .NET E-Posta İşleme API'si
 
- Evet, Aspose.Email kütüphanesi, e-posta mesajlarıyla çalışmak için, e-postaları ve ekleri gönderme, alma ve değiştirme de dahil olmak üzere çok çeşitli özellikler sunar. Daha fazla ayrıntı için belgelere başvurabilirsiniz:[Burada](https://reference.aspose.com)
+ C# ve Aspose.Email for .NET'i kullanarak geri dönen ileti doğrulamasını otomatikleştirin. E-posta listelerini zahmetsizce yönetin ve kampanyanın etkinliğini artırın.[Geri dönen e-posta mesajlarıyla uğraşmaktan yoruldunuz mu? Geri dönen e-postaları yönetmek, özellikle bir e-posta kampanyası yürüttüğünüzde veya büyük bir posta listesi tuttuğunuzda gerçek bir baş ağrısı olabilir. Neyse ki, C# kodunu ve Aspose.Email for .NET kütüphanesini kullanarak geri dönen mesajları verimli bir şekilde doğrulamanıza ve işlemenize yardımcı olabilecek bir çözüm var. Bu adım adım kılavuzda, geri dönen mesajları doğrulama sürecinde size yol göstereceğiz ve e-posta iletişiminizin etkili ve sorunsuz kalmasını sağlayacağız.](https://reference.aspose.com)

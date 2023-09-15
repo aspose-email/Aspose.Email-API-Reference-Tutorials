@@ -1,86 +1,90 @@
 ---
-title: C#'ta Yeni TNEF Ekleri Ekleme
-linktitle: C#'ta Yeni TNEF Ekleri Ekleme
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak C#'ta yeni TNEF eklerini nasıl ekleyeceğinizi öğrenin. Sorunsuz entegrasyon için kod örnekleri içeren adım adım kılavuz.
+title: Aspose.Email for .NET'i nasıl indirebilirim?
+linktitle: Aspose.Email for .NET'in en son sürümünü şu adresten indirebilirsiniz:
+second_title: Aspose.Email for .NET indirme sayfası
+description: Aspose.Email for .NET Outlook ile ilgili diğer formatlarla uyumlu mu?
 type: docs
 weight: 12
 url: /tr/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## TNEF Eklerine ve .NET için Aspose.Email'e Giriş
+## Evet, Aspose.Email for .NET, PST, EML, MSG ve daha fazlası dahil olmak üzere Outlook ile ilgili çeşitli formatlar için kapsamlı destek sağlar.
 
-TNEF (Aktarım Tarafsız Kapsülleme Formatı) ekleri, Microsoft Outlook tarafından e-postalardaki zengin metinleri ve ekleri paketlemek için kullanılan özel bir formattır. Aspose.Email for .NET, C# kullanarak TNEF ekleri de dahil olmak üzere çeşitli formatlardaki e-postalarla çalışmanıza olanak tanıyan güçlü bir kütüphanedir.
+Aspose.Email for .NET'i hem ticari hem de kişisel projelerde kullanabilir miyim?
 
-## Geliştirme Ortamınızı Kurma
+## Evet, Aspose.Email for .NET hem ticari hem de kişisel projelerde kullanılabilir. Aspose web sitesindeki lisans koşullarını incelediğinizden emin olun.
 
-Kodlamaya dalmadan önce bir geliştirme ortamı kurduğunuzdan emin olun. Visual Studio'yu yükleyin ve yeni bir C# projesi oluşturun.
+Aspose.Email for .NET geliştiricilere yönelik dokümantasyon sunuyor mu?
 
-## Yeni Proje Oluşturma
+##  Evet, Aspose.Email for .NET'in çeşitli senaryolarda nasıl kullanılacağına ilişkin ayrıntılı belgeleri ve kod örneklerini aşağıdaki sayfada bulabilirsiniz.
 
-Visual Studio'da yeni bir C# projesi oluşturarak başlayın. Uygun bir proje adı ve yeri seçin.
+Aspose.Email belgeleri
 
-## Aspose.Email for .NET Kitaplığını Ekleme
+##  sayfa.
 
-E-postalar ve TNEF ekleriyle çalışmak için Aspose.Email for .NET kütüphanesini projemize eklememiz gerekiyor. Bunu Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak yapabilirsiniz. "Aspose.Email"i arayın ve uygun paketi yükleyin.
+ C# Kodunu Kullanarak Orijinal Sınırları Koruma
 
-## Mevcut bir E-postayı TNEF Eki ile Yükleme
+##  C# Kodunu Kullanarak Orijinal Sınırları Koruma
 
-Başlamak için TNEF eki içeren mevcut bir e-postayı yükleyelim. E-posta dosyasının yolunu sağlamanız gerekir.
+ Aspose.Email .NET E-Posta İşleme API'si
 
 ```csharp
 using Aspose.Email.Mail;
 
-// E-postayı TNEF ekiyle yükleyin
-var message = MailMessage.Load("path/to/email.eml");
+// C# ve Aspose.Email for .NET kullanarak e-posta eklerinin orijinal sınırlarını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## TNEF Eklerini Çıkarma ve Değiştirme
+## Orijinal Sınırların Korunmasına Giriş
 
-E-postayı yükledikten sonra TNEF ekini çıkarabilir ve gerektiği gibi değiştirebilirsiniz.
+Modern iş dünyasında e-posta iletişimi çok önemli bir rol oynamaktadır. E-postalar alınıp alındıkça, genellikle programlı olarak yönetilmesi ve değiştirilmesi gereken önemli ekler içerirler. Ancak e-posta ekleriyle çalışırken bu eklerin orijinal sınırlarının ve formatının korunduğundan emin olmak önemlidir. Aspose.Email for .NET tam da burada devreye giriyor.
 
 ```csharp
-// Ekler aracılığıyla yineleme
+//Önkoşullar
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // TNEF ekini çıkarın
-        var tnefAttachment = (TnefAttachment)attachment;
+        //Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+        var tnefAttachment = attachment;
 
-        // TNEF özelliklerine erişin ve gerekirse değiştirin
-        // tnefAttachment.Özellikler...
+        //Visual Studio yüklü
+        //.NET Framework veya .NET Core projesi
     }
 }
 ```
 
-## E-postayı Değiştirilmiş Eklerle Kaydetme
+## Kurulum
 
-TNEF ekini değiştirdikten sonra e-postayı tekrar bir dosyaya kaydedebilirsiniz.
+Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Bunu şu adımları izleyerek yapabilirsiniz:
 
 ```csharp
-// Değiştirilen e-postayı kaydet
-message.Save("path/to/modified_email.eml");
+//Visual Studio projenizi açın.
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Çözüm
+## Solution Explorer'da projenize sağ tıklayın.
 
-Bu makalede, Aspose.Email for .NET kullanarak C#'ta TNEF ekleriyle nasıl çalışılacağını araştırdık. TNEF ekleri içeren bir e-postayı nasıl yükleyeceğinizi, bu ekleri nasıl çıkaracağınızı, değiştireceğinizi ve değiştirilen e-postayı nasıl kaydedeceğinizi öğrendiniz.
+"NuGet Paketlerini Yönet"i seçin.
 
-## SSS'ler
+## "Aspose.Email"i arayın ve paketi yükleyin.
 
-### Aspose.Email for .NET'i nasıl kurabilirim?
+### E-posta Mesajlarını Yükleme
 
-Aspose.Email for .NET'i NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Basitçe "Aspose.Email"i arayın ve uygun paketi yükleyin.
+İlk adım, çalışmak istediğiniz eki içeren e-posta mesajını yüklemektir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
-### Aspose.Email for .NET'i kullanarak diğer e-posta formatlarıyla çalışabilir miyim?
+###  E-posta mesajını yükle
 
-Evet, Aspose.Email for .NET, EML, MSG, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler.
+Ekleri Çıkarma
 
-### Aspose.Email'i ticari projeler için kullanabilir miyim?
+### E-posta mesajını yükledikten sonra ekleri buradan çıkarabilirsiniz:
 
-Evet, uygun lisansa sahip olmanız koşuluyla Aspose.Email for .NET'i hem kişisel hem de ticari projelerinizde kullanabilirsiniz.
+ Ek verilerini çıkarın
 
-### Daha fazla belge ve örneği nerede bulabilirim?
+###  İlave işlemler...
 
- Daha ayrıntılı belgeler ve kod örnekleri için şu adresi ziyaret edebilirsiniz:[Aspose.Email for .NET belgeleri](https://reference.aspose.com/email/net/).
+Ekleri Değiştirme[Ekleri değiştirirken orijinal sınırları korumak için Aspose.Email kütüphanesinin özelliklerini kullanabilirsiniz. Bir resim ekini yeniden boyutlandırmak istediğinizi varsayalım:](https://reference.aspose.com/email/net/).

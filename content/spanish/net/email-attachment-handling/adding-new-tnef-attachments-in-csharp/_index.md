@@ -1,86 +1,90 @@
 ---
-title: Agregar nuevos archivos adjuntos TNEF en C#
-linktitle: Agregar nuevos archivos adjuntos TNEF en C#
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda cómo agregar nuevos archivos adjuntos TNEF en C# usando Aspose.Email para .NET. Guía paso a paso con ejemplos de código para una integración perfecta.
+title: ¿Cómo descargo Aspose.Email para .NET?
+linktitle: Puede descargar la última versión de Aspose.Email para .NET desde
+second_title: Aspose.Email para la página de descarga de .NET
+description: ¿Aspose.Email para .NET es compatible con otros formatos relacionados con Outlook?
 type: docs
 weight: 12
 url: /es/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## Introducción a los archivos adjuntos TNEF y Aspose.Email para .NET
+## Sí, Aspose.Email para .NET brinda soporte integral para varios formatos relacionados con Outlook, incluidos PST, EML, MSG y más.
 
-Los archivos adjuntos TNEF (formato de encapsulación neutral de transporte) son un formato propietario utilizado por Microsoft Outlook para empaquetar texto enriquecido y archivos adjuntos en correos electrónicos. Aspose.Email para .NET es una potente biblioteca que le permite trabajar con correos electrónicos en varios formatos, incluidos archivos adjuntos TNEF, utilizando C#.
+¿Puedo utilizar Aspose.Email para .NET tanto en proyectos comerciales como personales?
 
-## Configurar su entorno de desarrollo
+## Sí, Aspose.Email para .NET se puede utilizar tanto en proyectos comerciales como personales. Asegúrese de revisar los términos de la licencia en el sitio web de Aspose.
 
-Antes de sumergirnos en la codificación, asegúrese de tener configurado un entorno de desarrollo. Instale Visual Studio y cree un nuevo proyecto de C#.
+¿Aspose.Email para .NET ofrece documentación para desarrolladores?
 
-## Creando un nuevo proyecto
+##  Sí, puede encontrar documentación detallada y ejemplos de código sobre cómo usar Aspose.Email para .NET en varios escenarios en
 
-Comience creando un nuevo proyecto de C# en Visual Studio. Elija un nombre y ubicación de proyecto adecuados.
+Aspose.Documentación por correo electrónico
 
-## Agregar la biblioteca Aspose.Email para .NET
+##  página.
 
-Para trabajar con correos electrónicos y archivos adjuntos TNEF, necesitamos agregar la biblioteca Aspose.Email para .NET a nuestro proyecto. Puede hacerlo utilizando el Administrador de paquetes NuGet en Visual Studio. Busque "Aspose.Email" e instale el paquete apropiado.
+ Preservar los límites originales usando código C#
 
-## Carga de un correo electrónico existente con un archivo adjunto TNEF
+##  Preservar los límites originales usando código C#
 
-Para comenzar, carguemos un correo electrónico existente que contenga un archivo adjunto TNEF. Deberá proporcionar la ruta al archivo de correo electrónico.
+ Aspose.Email API de procesamiento de correo electrónico .NET
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Cargue el correo electrónico con el archivo adjunto TNEF
-var message = MailMessage.Load("path/to/email.eml");
+// Aprenda cómo preservar los límites originales de los archivos adjuntos de correo electrónico usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente.
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Extracción y modificación de archivos adjuntos TNEF
+## Introducción a la preservación de los límites originales
 
-Una vez que haya cargado el correo electrónico, puede extraer el archivo adjunto TNEF y modificarlo según sea necesario.
+En el mundo empresarial moderno, la comunicación por correo electrónico juega un papel fundamental. A medida que se intercambian correos electrónicos, a menudo contienen archivos adjuntos cruciales que deben administrarse y manipularse mediante programación. Sin embargo, cuando se trabaja con archivos adjuntos de correo electrónico, es esencial asegurarse de que se conserven los límites y el formato originales de estos archivos adjuntos. Aquí es donde entra en juego Aspose.Email para .NET.
 
 ```csharp
-// Iterar a través de archivos adjuntos
+//Requisitos previos
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extraer el archivo adjunto TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        //Antes de profundizar en el código, asegúrese de cumplir con los siguientes requisitos previos:
+        var tnefAttachment = attachment;
 
-        // Acceda a las propiedades de TNEF y modifíquelas si es necesario
-        // tnefAttachment.Propiedades...
+        //Visual Studio instalado
+        //Proyecto .NET Framework o .NET Core
     }
 }
 ```
 
-## Guardar el correo electrónico con archivos adjuntos modificados
+## Instalación
 
-Después de modificar el archivo adjunto TNEF, puede guardar el correo electrónico en un archivo.
+Para comenzar, debe instalar la biblioteca Aspose.Email para .NET. Puedes hacerlo siguiendo estos pasos:
 
 ```csharp
-// Guardar el correo electrónico modificado
-message.Save("path/to/modified_email.eml");
+//Abra su proyecto de Visual Studio.
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Conclusión
+## Haga clic derecho en su proyecto en el Explorador de soluciones.
 
-En este artículo, exploramos cómo trabajar con archivos adjuntos TNEF en C# usando Aspose.Email para .NET. Ha aprendido a cargar un correo electrónico con archivos adjuntos TNEF, extraer y modificar esos archivos adjuntos y guardar el correo electrónico modificado.
+Seleccione "Administrar paquetes NuGet".
 
-## Preguntas frecuentes
+## Busque "Aspose.Email" e instale el paquete.
 
-### ¿Cómo puedo instalar Aspose.Email para .NET?
+### Cargando mensajes de correo electrónico
 
-Puede instalar Aspose.Email para .NET usando NuGet Package Manager. Simplemente busque "Aspose.Email" e instale el paquete apropiado.
+El primer paso es cargar el mensaje de correo electrónico que contiene el archivo adjunto con el que desea trabajar. Así es como puedes hacerlo:
 
-### ¿Puedo trabajar con otros formatos de correo electrónico usando Aspose.Email para .NET?
+###  Cargar el mensaje de correo electrónico
 
-Sí, Aspose.Email para .NET admite varios formatos de correo electrónico, incluidos EML, MSG, PST y más.
+Extracción de archivos adjuntos
 
-### ¿Puedo utilizar Aspose.Email para proyectos comerciales?
+### Una vez que haya cargado el mensaje de correo electrónico, puede extraer los archivos adjuntos:
 
-Sí, puede utilizar Aspose.Email para .NET tanto en proyectos personales como comerciales, siempre que tenga la licencia adecuada.
+ Extraer datos adjuntos
 
-### ¿Dónde puedo encontrar más documentación y ejemplos?
+###  Más procesamiento...
 
- Para obtener documentación más detallada y ejemplos de código, puede visitar el[Aspose.Email para la documentación de .NET](https://reference.aspose.com/email/net/).
+Modificar archivos adjuntos[Para preservar los límites originales al modificar archivos adjuntos, puede utilizar las funciones de la biblioteca Aspose.Email. Supongamos que desea cambiar el tamaño de una imagen adjunta:](https://reference.aspose.com/email/net/).

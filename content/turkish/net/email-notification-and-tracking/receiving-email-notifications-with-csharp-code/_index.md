@@ -1,100 +1,90 @@
 ---
-title: C# Koduyla E-posta Bildirimleri Alma
-linktitle: C# Koduyla E-posta Bildirimleri Alma
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak C#'ta e-posta bildirimleri almayı öğrenin. Verimli kod örneği sağlandı.
+title: Receiving Email Notifications with C# Code
+linktitle: Receiving Email Notifications with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to receive email notifications in C# using Aspose.Email for .NET. Efficient code example provided.
 type: docs
 weight: 10
 url: /tr/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
 
-Bu kılavuz, C# kodunu ve Aspose.Email for .NET kitaplığını kullanarak e-posta bildirimlerinin nasıl alınacağına ilişkin kapsamlı, adım adım bir eğitim sağlar. Aspose.Email, .NET uygulamalarında e-posta ile ilgili çeşitli işlemleri kolaylaştırmak için tasarlanmış sağlam bir kütüphanedir. Bu eğitimde e-posta bildirimleri alma sürecine odaklanacağız.
 
-## Önkoşullar
+In the digital age, communication is essential, and email remains one of the most popular means of exchanging information. As a developer, you might find yourself needing to send and receive email notifications in your applications. In this step-by-step tutorial, we will explore how to receive email notifications with C# using Aspose.Email for .NET.
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+## Introduction
 
-- C# destekli bir geliştirme ortamı (örneğin, Visual Studio).
--  Aspose.Email for .NET kitaplığı. Şuradan indirebilirsiniz[bu bağlantı](https://releases.aspose.com/email/net).
-- C# programlama ve temel e-posta kavramlarına ilişkin temel bilgi.
+Email notifications are crucial for keeping users informed about important events or updates in your application. Aspose.Email for .NET provides a powerful and easy-to-use solution for handling email-related tasks in your C# applications. In this tutorial, we will focus on receiving email notifications.
 
-## Adım 1: Proje Kurulumu
+## Setting up Aspose.Email
 
-1. Geliştirme ortamınızda yeni bir C# projesi oluşturun.
-2. Aspose.Email.dll kütüphanesine bir referans ekleyin. Bunu, DLL'yi projenizin bin dizinine kopyalayarak veya Aspose.Email paketini yüklemek için NuGet Paket Yöneticisi'ni kullanarak yapabilirsiniz.
+Before we dive into the code, you need to set up Aspose.Email for .NET in your project. Here's how you can do it:
 
-## Adım 2: Kodu Yazma
+1. Install Aspose.Email: Begin by installing the Aspose.Email for .NET library in your project. You can do this via NuGet Package Manager.
 
-Bu adımda bir e-posta sunucusuna bağlanmak ve e-posta bildirimlerini almak için gerekli C# kodunu yazacağız.
+2. Import Aspose.Email Namespace: In your C# code, make sure to include the necessary namespace: `using Aspose.Email;`.
+
+## Creating the Email Message
+
+Now that we have Aspose.Email set up, let's create an email message. In this example, we will create a basic email message with a sender, recipient, subject, and body.
 
 ```csharp
-using System;
-using Aspose.Email.Client;
-using Aspose.Email.Imap;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // E-posta sunucusu ayarlarını yapılandırma
-        string host = "your-email-server.com";
-        int port = 993; // IMAP bağlantı noktası
-        string username = "your-username";
-        string password = "your-password";
-
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            // E-posta sunucusuna bağlanın ve gelen kutusu klasörünü seçin
-            client.Connect();
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            // Arama kriterlerini tanımlayın
-            ImapQueryBuilder builder = new ImapQueryBuilder();
-            builder.Subject.Contains("notification"); // Arama kriterlerini özelleştirin
-
-            // E-posta bildirimlerini arayın
-            ImapMessageInfoCollection messages = client.ListMessages(builder.GetQuery());
-            
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                Console.WriteLine("Subject: " + messageInfo.Subject);
-                Console.WriteLine("Date: " + messageInfo.Date);
-                // Diğer e-posta özelliklerine buradan erişebilirsiniz
-            }
-
-            // E-posta sunucusuyla bağlantıyı kesin
-            client.Disconnect();
-        }
-    }
-}
+// Create the message
+MailMessage msg = new MailMessage();
+msg.From = "sender@sender.com";
+msg.To = "receiver@receiver.com";
+msg.Subject = "the subject of the message";
 ```
 
-Yer tutucu değerlerini değiştirmeyi unutmayın (`your-email-server.com`, `your-username`, `your-password`) gerçek e-posta sunucusu ayrıntılarınızla birlikte.
+## Configuring Notifications
 
-## 3. Adım: Arama Kriterlerini Özelleştirme
+To ensure that you receive notifications about the delivery status of your email, you can configure delivery notification options. You can specify whether you want to be notified on success, failure, or both.
 
-Sağlanan kod, "bildirim" terimini içeren konulara sahip e-posta bildirimlerini bulmak için temel bir arama kriteri kullanır. gibi özellikleri değiştirerek arama kriterlerini özelleştirebilirsiniz.`From`, `To` , Ve`Date`.
+```csharp
+// Set delivery notifications for success and failed messages
+msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
+```
 
-## Adım 4: Kodu Çalıştırma
+## Adding MIME Headers
 
-C# projenizi oluşturun ve çalıştırın. Doğru yapılandırılırsa kod, e-posta sunucusuyla bağlantı kuracak, e-posta bildirimlerini arayacak ve bunların konularını ve tarihlerini konsolda görüntüleyecektir.
+MIME headers provide additional information about the email message. You can add custom MIME headers as needed.
 
-## Sıkça Sorulan Sorular
+```csharp
+// Add the MIME headers
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+```
 
-### E-posta eklerini nasıl yönetebilirim?
+## Sending the Email
 
- E-posta eklerini yönetmek için`Attachments` mülkiyeti`ImapMessageInfo` nesne. Ekler arasında dolaşın ve bunları istediğiniz konuma kaydedin. Ayrıntılı rehberlik için bkz.[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
+Once you've configured your email message, it's time to send it. Aspose.Email provides a convenient way to send emails using the SMTP client.
 
-## Bildirimleri tarih aralığına göre filtreleyebilir miyim?
+```csharp
+// Send the message
+SmtpClient client = new SmtpClient("host", "username", "password");
+client.Send(msg);
+```
 
- Kesinlikle. Belirli bir tarih aralığını kullanarak bildirimleri filtreleyebilirsiniz. kullanarak arama kriterlerini ayarlayın.`Date` içindeki mülk`ImapQueryBuilder` . Bakın[dokümantasyon](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapquerybuilder/) kapsamlı örnekler için.
+## Conclusion
 
-## Bildirimleri işlendikten sonra okundu olarak nasıl işaretleyebilirim?
+In this tutorial, we've explored how to receive email notifications with C# using Aspose.Email for .NET. We've covered setting up Aspose.Email, creating an email message, configuring notifications, adding MIME headers, and sending the email.
 
-Her mesajı işledikten sonra,`MarkMessageRead` yöntemi`ImapClient` Mesajları okundu olarak işaretlemek için Danışmak[dokümantasyon](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapclient/) detaylı bilgi için.
+By following these steps, you can seamlessly integrate email notifications into your C# applications, enhancing user communication and keeping them informed.
 
- Gelişmiş özellikler ve seçenekler için bkz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net).
+## FAQs
 
-## Çözüm
+### 1. Can I use Aspose.Email for .NET in my .NET Core project?
+   Yes, Aspose.Email for .NET is compatible with both .NET Framework and .NET Core.
 
-Bu eğitimde, C# kodunu ve Aspose.Email for .NET kütüphanesini kullanarak e-posta bildirimleri alma sürecini inceledik. Aspose.Email, .NET uygulamalarında e-postayla ilgili işlemlerle çalışmayı kolaylaştıran güçlü bir araç olduğunu kanıtladı.
+### 2. How can I handle email attachments in my notifications?
+   You can use the `Attachment` class provided by Aspose.Email to handle email attachments easily.
+
+### 3. Is Aspose.Email for .NET a paid library?
+   Aspose.Email offers both a free trial and a paid version. The paid version provides additional features and support.
+
+### 4. Can I customize the email notification templates?
+   Yes, you can create custom email templates and use Aspose.Email to populate them with dynamic content.
+
+### 5. Are there any limitations on the number of emails I can send/receive with Aspose.Email?
+   Aspose.Email does not impose strict limitations on the number of emails you can send or receive, but it may be subject to your email server's limitations.
+
+That concludes our tutorial on receiving email notifications with C# using Aspose.Email for .NET. We hope you found this guide helpful in implementing email notifications in your applications. 

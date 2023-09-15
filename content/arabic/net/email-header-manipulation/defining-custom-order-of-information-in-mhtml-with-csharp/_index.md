@@ -1,89 +1,82 @@
 ---
-title: تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
-linktitle: تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تخصيص ترتيب MHTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع التعليمات البرمجية لترتيب المعلومات بكفاءة. تعزيز تجربة المستخدم الآن!
+title: Defining Custom Order of Information in MHTML with C#
+linktitle: Defining Custom Order of Information in MHTML with C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-step guide with code for efficient information arrangement. Boost user experience now!
 type: docs
 weight: 14
 url: /ar/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
 
-في العصر الرقمي الحالي، أصبحت الحاجة إلى إدارة وتخصيص ترتيب المعلومات بتنسيقات مختلفة أمرًا بالغ الأهمية. MHTML، أو MIME HTML، هو تنسيق مستخدم على نطاق واسع يجمع بين محتوى HTML والموارد الإضافية مثل الصور في ملف واحد. في هذه المقالة، سوف نستكشف كيفية تحديد ترتيب مخصص للمعلومات داخل ملف MHTML باستخدام C# ومكتبة Aspose.Email القوية لـ .NET.
+In the realm of email management, the ability to customize the order of information in MHTML emails is a valuable feature. Aspose.Email for .NET offers a robust solution for achieving this. In this article, we will guide you through the process step by step.
 
-## مقدمة
+## Step 1: Understanding the Scenario
 
-تعمل ملفات MHTML كحاويات لموارد الويب المختلفة، مما يسمح بأرشفتها أو مشاركتها بسهولة. ومع ذلك، هناك سيناريوهات قد تحتاج فيها إلى إعادة ترتيب ترتيب المعلومات داخل ملف MHTML لتحسين تجربة المستخدم أو تلبية متطلبات محددة. وهنا يأتي دور مكتبة Aspose.Email، حيث توفر طريقة سلسة لمعالجة ملفات MHTML برمجيًا.
+Before delving into the technical details, let's grasp the scenario. Imagine you have an email message, and you want to save it in MHTML format with specific headers and in a custom order. The headers you want to include are 'From,' 'Subject,' 'To,' 'Sent,' and 'Attachments.'
 
-## فهم ملفات MHTML
+## Step 2: Setting Up the Development Environment
 
-تقوم ملفات MHTML بتغليف محتوى HTML مع الصور وأوراق الأنماط والموارد الأخرى في ملف واحد. ويضمن ذلك تجميع كافة المكونات الضرورية معًا، مما يسهل مشاركة محتوى الويب أو أرشفته. لتعديل ترتيب المعلومات في ملف MHTML، سنحتاج إلى تشريح هيكله وإعادة ترتيب المكونات وفقًا لذلك.
+To begin, ensure that Aspose.Email for .NET is installed in your development environment. If you haven't done this already, you can download it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
 
-## تهيئة البيئة
+Once the installation is complete, create a new C# project and add a reference to the Aspose.Email assembly. This step is crucial to access the functionality we need.
 
-قبل أن نتعمق في عملية البرمجة، نحتاج إلى إعداد بيئة التطوير الخاصة بنا. تأكد من توفر المتطلبات الأساسية التالية:
+## Step 3: Writing the Code
 
-- Visual Studio أو أي برنامج C# IDE مفضل
--  Aspose.Email لمكتبة .NET (التنزيل من[هنا](https://releases.aspose.com/email/net))
-- المعرفة الأساسية ببرمجة C#
-
-## تحميل ومعالجة ملفات MHTML
-
-للبدء، قم بإنشاء مشروع C# جديد في IDE الخاص بك. قم باستيراد مكتبة Aspose.Email وقم بتحميل ملف MHTML الهدف إلى مشروعك. فيما يلي مقتطف التعليمات البرمجية لمساعدتك في فهم العملية:
+Now, let's dive into the code implementation. Below is the code that accomplishes our goal:
 
 ```csharp
-using Aspose.Email.Mht;
+string dataDir = "Your Data Directory";
 
-// قم بتحميل ملف MHTML
-MhtMessageReader reader = new MhtMessageReader("path/to/your/file.mhtml");
+MailMessage eml = MailMessage.Load(dataDir + "Attachments.eml");
+MhtSaveOptions opt = SaveOptions.DefaultMhtml;
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_1.mhtml", opt);
+
+opt.RenderingHeaders.Add(MhtTemplateName.From);
+opt.RenderingHeaders.Add(MhtTemplateName.Subject);
+opt.RenderingHeaders.Add(MhtTemplateName.To);
+opt.RenderingHeaders.Add(MhtTemplateName.Sent);
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_2.mhtml", opt);
+
+opt.RenderingHeaders.Clear();
+opt.RenderingHeaders.Add(MhtTemplateName.Attachments);
+opt.RenderingHeaders.Add(MhtTemplateName.Cc);
+opt.RenderingHeaders.Add(MhtTemplateName.Subject);
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ```
 
-## تحديد الترتيب المخصص للمعلومات
+In this code, we first load the email message and configure the MHTML save options. Then, we save the email in MHTML format multiple times, each time specifying the desired rendering headers. This process ensures the custom order of information in the MHTML file.
 
-بمجرد تحميل ملف MHTML، حان الوقت لتحديد الترتيب المخصص للمعلومات. يمكن أن يتضمن ذلك إعادة ترتيب الصور، أو ضبط تسلسل محتوى HTML، أو أي تعديلات أخرى تحتاجها. فيما يلي مثال لكيفية تحقيق ذلك:
+## Step 4: Conclusion
 
-```csharp
-// إجراء التلاعبات اللازمة
-// على سبيل المثال، إعادة ترتيب الصور أو تعديل محتوى HTML
-```
+To sum it up, Aspose.Email for .NET empowers developers to efficiently manage email content, including customizing the order of information in MHTML emails. The code snippet provided simplifies this task, making it accessible and effective.
 
-## تنظيم الموارد
+In a world where effective email handling is paramount, Aspose.Email for .NET proves to be an invaluable tool for developers.
 
-عند إعادة ترتيب المعلومات، تذكر أن تأخذ في الاعتبار الموارد المرتبطة بكل مكون. يجب أن تظل الصور وأوراق الأنماط والموارد الأخرى مرتبطة بشكل صحيح بعناصر HTML المقابلة لها. وهذا يضمن أن يظل ملف MHTML المعدل فعالاً ومتسقًا بصريًا.
+For comprehensive documentation and more details, you can visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
 
-## حفظ MHTML المعدل
+---
 
-بمجرد تحديد الترتيب المخصص للمعلومات بنجاح، فقد حان الوقت لحفظ التغييرات في ملف MHTML:
+## Step 5: FAQs
 
-```csharp
-using Aspose.Email.Mime;
+### 1. What is MHTML, and why is it important?
 
-// احفظ ملف MHTML المعدل
-MimeMessage modifiedMessage = reader.ToMimeMessage();
-modifiedMessage.Save("path/to/modified/file.mhtml", SaveOptions.DefaultMhtml);
-```
+- MHTML, short for MIME HTML, is a format used to archive web pages with all their elements. It's crucial for preserving web content and structure.
 
-## خاتمة
+### 2. Can I customize the order of other email headers using Aspose.Email for .NET?
 
-في هذه المقالة، استكشفنا عملية تحديد ترتيب مخصص للمعلومات داخل ملف MHTML باستخدام C# وAspose.Email لمكتبة .NET. لقد تعلمنا كيفية تحميل ملفات MHTML ومعالجتها وحفظها مع ضمان بقاء جميع الموارد منظمة بشكل صحيح. يمكّن هذا النهج المطورين من تصميم عرض محتوى الويب وفقًا لاحتياجاتهم، مما يعزز تجربة المستخدم وسهولة الاستخدام.
+- Yes, you can tailor the order of various email headers according to your specific requirements, as demonstrated in the article.
 
-## الأسئلة الشائعة
+### 3. What other tasks can Aspose.Email for .NET handle in email processing?
 
-### كيف يمكنني تنزيل Aspose.Email لمكتبة .NET؟
+- Aspose.Email for .NET offers a wide range of features, including email creation, conversion, and manipulation, making it a comprehensive solution for various email-related tasks.
 
- يمكنك تنزيل مكتبة Aspose.Email for .NET من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/).
+### 4. Is Aspose.Email for .NET suitable for both small-scale and enterprise-level projects?
 
-### هل يمكنني استخدام Aspose.Email لتعديل التنسيقات الأخرى المتعلقة بالبريد الإلكتروني؟
+- Absolutely. It's versatile and can be applied in projects of all sizes, from small applications to large-scale enterprise solutions.
 
-نعم، يوفر Aspose.Email دعمًا شاملاً لمختلف التنسيقات المتعلقة بالبريد الإلكتروني، بما في ذلك MSG وEML وPST والمزيد.
+### 5. Where can I find additional resources and support for Aspose.Email for .NET?
 
-### هل Aspose.Email مناسب لتطبيقات الويب وسطح المكتب؟
-
-قطعاً! يمكن دمج Aspose.Email بسلاسة في كل من تطبيقات الويب وسطح المكتب، مما يجعله متعدد الاستخدامات لسيناريوهات التطوير المختلفة.
-
-### هل يقدم Aspose.Email وثائق وأمثلة للمبتدئين؟
-
-نعم، توفر Aspose وثائق شاملة وأمثلة برمجية لمساعدة المبتدئين في البدء في مكتبتهم. يمكنك العثور على موارد مفصلة[هنا](https://reference.aspose.com/email/net/).
-
-### ما المزايا التي يوفرها تعديل ملفات MHTML برمجيًا مقارنة بالتحرير اليدوي؟
-
-يوفر التعديل البرمجي لملفات MHTML الأتمتة وقابلية التوسع، مما يسمح لك بمعالجة عدد كبير من الملفات بكفاءة. كما أنه يضمن الاتساق ويقلل من فرص الخطأ البشري مقارنة بالتحرير اليدوي.
+- You can access extensive documentation, code examples, and support on the [Aspose.Email for .NET API Documentation](https://reference.aspose.com/email/net/).

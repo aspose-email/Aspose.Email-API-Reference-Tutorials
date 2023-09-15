@@ -1,108 +1,103 @@
 ---
-title: 使用 C# 代码跟踪电子邮件文档转换进度
-linktitle: 使用 C# 代码跟踪电子邮件文档转换进度
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 Aspose.Email for .NET 实现电子邮件通知和跟踪。带有代码示例的分步指南。立即增强您的电子邮件沟通！
+title: Tracking Email Document Conversion Progress with C# Code
+linktitle: Tracking Email Document Conversion Progress with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!
 type: docs
 weight: 12
 url: /zh/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
 
-无论出于个人还是职业目的，电子邮件通信已成为我们生活中不可或缺的一部分。处理关键电子邮件时，确保及时收到通知并建立跟踪机制非常重要。 Aspose.Email for .NET 提供了一个强大的解决方案来实现高效的电子邮件通知和跟踪。在本指南中，我们将逐步引导您完成该过程，并提供每个阶段的源代码示例。
+In today's digital age, email communication plays a crucial role in both personal and professional spheres. As a programmer, you might have encountered the need to handle and manipulate email messages programmatically. One common task is tracking the progress of email document conversion, and in this article, we will guide you through the process step by step using C# and Aspose.Email for .NET.
 
-## 电子邮件通知和跟踪简介
+## Introduction to Aspose.Email for .NET
 
-有效的沟通通常需要及时的通知以及跟踪收件人对内容的参与情况的能力。无论是重要的商业提案还是促销优惠，了解电子邮件何时打开并能够处理回复都可以显着影响您的结果。
+Before diving into the code, let's have a brief introduction to Aspose.Email for .NET. This powerful library provides a wide range of features for working with email messages, including reading, writing, and converting emails in various formats. In our case, we will focus on email document conversion.
 
-## 设置开发环境
+## Setting up Your Environment
 
-在我们深入实施之前，请确保您的开发环境中安装了 Aspose.Email for .NET。如果没有，您可以从 Aspose Releases 下载它：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net).
+To get started, you'll need to set up your development environment. Ensure you have the following prerequisites in place:
 
-使用您首选的 .NET 语言（C# 或 VB.NET）在 Visual Studio 中创建一个新项目。
+- Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net/).
 
-## 发送电子邮件通知
+Now, let's get into the code. We'll create a step-by-step guide on tracking email document conversion progress using the provided C# source code.
 
-让我们首先向收件人发送电子邮件通知。以下是如何使用 Aspose.Email for .NET 创建和发送电子邮件的基本示例：
+## Step 1: Loading the Email Message
+
+We begin by loading the email message from a file. Make sure to replace `"Your Document Directory"` with the actual path to your document directory.
 
 ```csharp
-using Aspose.Email;
-
-//创建新电子邮件
-MailMessage message = new MailMessage();
-
-//添加收件人
-message.To.Add("recipient@example.com");
-
-//设置邮件内容
-message.Subject = "Important Update";
-message.Body = "Dear recipient, we have an important update for you.";
-
-//指定电子邮件优先级
-message.Priority = MailPriority.High;
-
-//发送电子邮件
-SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
-client.Send(message);
+string dataDir = "Your Document Directory";
+var fileName = dataDir + "test.eml";
+MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## 实施电子邮件跟踪
+## Step 2: Defining a Custom Progress Handler
 
-要跟踪电子邮件的打开情况，我们可以在电子邮件内容中嵌入跟踪像素。加载像素后，我们可以记录电子邮件已被打开。以下是如何使用 Aspose.Email for .NET 实现电子邮件跟踪：
-
-```csharp
-//创建跟踪像素
-string trackingPixel = "<img src='https://your-tracking-server.com/track?id=123456' alt='' width='1' height='1' />";
-
-//将像素添加到电子邮件正文
-message.HtmlBody = $"Dear recipient, {trackingPixel} we have an important update for you.";
-```
-
-## 处理电子邮件回复
-
-要以编程方式处理电子邮件回复，您可以监视预期回复的收件箱并提取其内容。这是一个简化的示例：
+In this step, we set up a custom progress handler to monitor the conversion progress. The `ShowEmlConversionProgress` method will be called during the conversion process to provide information about the progress.
 
 ```csharp
-using Aspose.Email;
-
-//连接到邮箱
-ImapClient client = new ImapClient("imap.example.com", "username", "password");
-client.SelectFolder(ImapFolderInfo.InBox);
-
-//搜索回复电子邮件
-MailQueryBuilder queryBuilder = new MailQueryBuilder();
-queryBuilder.HasFlags(ImapMessageFlags.Answered);
-MailQuery query = queryBuilder.GetQuery();
-
-//检索并处理回复电子邮件
-ImapMessageInfoCollection replyEmails = client.ListMessages(query);
-foreach (ImapMessageInfo reply in replyEmails)
+private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 {
-    MailMessage replyMessage = client.FetchMessage(reply.UniqueId);
-    //在此处理回复内容
+    int total;
+    int saved;
+    switch (info.EventType)
+    {
+        case ProgressEventType.MimeStructureCreated:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimeStructureCreated - TotalMimePartCount: " + total);
+            Console.WriteLine("MimeStructureCreated - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.MimePartSaved:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("MimePartSaved - TotalMimePartCount: " + total);
+            Console.WriteLine("MimePartSaved - SavedMimePartCount: " + saved);
+            break;
+        case ProgressEventType.SavedToStream:
+            total = info.TotalMimePartCount;
+            saved = info.SavedMimePartCount;
+            Console.WriteLine("SavedToStream - TotalMimePartCount: " + total);
+            Console.WriteLine("SavedToStream - SavedMimePartCount: " + saved);
+            break;
+    }
 }
 ```
 
-## 源代码示例
+## Step 3: Saving the Email Message with Progress Tracking
 
-完整的源代码示例，请参考[Aspose.Email for .NET 文档](https://reference.aspose.com/email/net).
+Now, let's save the email message while tracking the progress. We use the `EmlSaveOptions` class with a custom progress handler.
 
-## 结论
+```csharp
+MemoryStream ms = new MemoryStream();
+EmlSaveOptions opt = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+opt.CustomProgressHandler = new ConversionProgressEventHandler(ShowEmlConversionProgress);
+msg.Save(ms, opt);
+```
 
-高效的电子邮件通信不仅涉及发送消息，还涉及确保及时接收和跟踪消息。借助 Aspose.Email for .NET，您拥有了一个强大的工具，可以在您的应用程序中无缝地实现电子邮件通知和跟踪。从发送通知到跟踪打开和处理回复，本指南涵盖了该过程的关键方面。
+## Conclusion
 
-## 常见问题解答
+Congratulations! You've successfully implemented email document conversion progress tracking using C# and Aspose.Email for .NET. This capability can be valuable when dealing with large volumes of emails and document conversions in your applications.
 
-### 如何安装 Aspose.Email for .NET？
-您可以从 Aspose 版本下载该库：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net).
+For more information and detailed documentation, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
 
-### 我可以使用单个像素跟踪多封电子邮件的打开情况吗？
-是的，您可以在跟踪像素 URL 中使用唯一标识符来区分不同的电子邮件并单独跟踪其打开情况。
 
-### 是否可以在不使用跟踪像素的情况下跟踪电子邮件的打开情况？
-虽然跟踪像素是一种常见方法，但某些电子邮件客户端可能会阻止它们。或者，您可以嵌入外部资源的链接，这些链接也可以在单击时提供跟踪信息。
+## FAQs
 
-### 如何确保电子邮件跟踪的隐私？
-请务必在隐私政策或使用条款中告知收件人有关电子邮件跟踪的信息。此外，请考虑为收件人提供选择退出跟踪的选项。
+### What is Aspose.Email for .NET?
+Aspose.Email for .NET is a powerful library for working with email messages in .NET applications. It provides features for reading, writing, and converting emails.
 
-### 除了 SMTP 和 IMAP 之外，Aspose.Email for .NET 是否支持其他电子邮件协议？
-是的，Aspose.Email for .NET 支持其他协议，例如 POP3 和 Exchange Web Services (EWS)，以执行各种与电子邮件相关的任务。
+### Can I track email document conversion progress with Aspose.Email for .NET?
+Yes, you can track email document conversion progress using custom progress handlers, as demonstrated in this article.
+
+### Is Aspose.Email for .NET easy to integrate into my C# project?
+Yes, Aspose.Email for .NET is easy to integrate into C# projects. You can download and install the library from the website.
+
+### Are there other libraries for working with emails in C#?
+Yes, there are other libraries, but Aspose.Email for .NET is known for its comprehensive features and ease of use.
+
+### Where can I find more tutorials and examples for Aspose.Email for .NET?
+You can explore the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) for tutorials, examples, and detailed documentation.
+
+Now, you're well-equipped to handle email document conversion progress in your C# applications with confidence. Happy coding!

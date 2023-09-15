@@ -1,131 +1,125 @@
 ---
-title: 使用 C# 代码通过 DKIM 签署电子邮件
-linktitle: 使用 C# 代码通过 DKIM 签署电子邮件
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解使用 C# 和 Aspose.Email for .NET 通过 DKIM 保护电子邮件。带有源代码的分步指南。增强电子邮件的信任度和真实性。
+title: Signing Emails with DKIM using C# Code
+linktitle: Signing Emails with DKIM using C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to secure emails with DKIM using C# & Aspose.Email for .NET. Step-by-step guide with source code. Enhance email trust & authenticity.
 type: docs
 weight: 11
 url: /zh/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
 
-在当今的数字世界中，确保电子邮件的真实性和安全性对于维持信任和防止恶意活动至关重要。实现此目的的一种有效方法是使用 DKIM（域名密钥识别邮件）签名。在本指南中，我们将引导您完成使用 C# 代码通过 DKIM 签署电子邮件的过程，并利用 Aspose.Email for .NET 的强大功能。
+In today's digital world, ensuring the authenticity and integrity of email communications is of paramount importance. One way to achieve this is by using DomainKeys Identified Mail (DKIM) signatures. In this step-by-step guide, we will explore how to sign emails with DKIM using C# and the powerful Aspose.Email for .NET library.
 
-## 介绍
+## Introduction to DKIM
 
-DKIM（DomainKeys Identified Mail）的缩写，是一种电子邮件身份验证技术，允许发件人对其电子邮件进行数字签名，从而提供额外的安全层并确保消息的完整性。通过实施 DKIM 签名，收件人可以验证电子邮件确实是由所声明的域发送的，并且在传输过程中没有被篡改。
+### What is DKIM?
+DKIM stands for DomainKeys Identified Mail. It is an email authentication method that allows the sender to digitally sign an email, providing a cryptographic signature that verifies the email's authenticity.
 
-## 先决条件
+### Why is DKIM Important?
+DKIM helps in preventing email spoofing and phishing attacks by ensuring that incoming emails are from legitimate sources and haven't been tampered with during transit.
 
-在我们深入研究代码之前，请确保您具备以下先决条件：
+## Prerequisites
 
-- 您的系统上安装了 Visual Studio
-- C# 编程基础知识
--  Aspose.Email for .NET 库（您可以从[这里](https://releases.aspose.com/email/net）)
+Before we begin, make sure you have the following prerequisites in place:
 
-## 设置项目
+1. Aspose.Email for .NET: Ensure you have the Aspose.Email for .NET library installed in your project. You can download it from [here](https://releases.aspose.com/email/net/).
 
-1. 在 Visual Studio 中创建一个新的 C# 项目。
-2. 使用 NuGet 包管理器安装 Aspose.Email for .NET 库：
-   ```
-   Install-Package Aspose.Email
-   ```
+2. DKIM Private Key: You will need a DKIM private key to sign your emails. Make sure you have it ready. 
 
-## 生成 DKIM 密钥
-
-DKIM 签名需要公钥-私钥对。您可以使用各种工具或库生成这些密钥，但为了本指南的目的，我们使用以下 C# 代码片段：
+## Step 1: Initialize DKIM Parameters
 
 ```csharp
-//添加必要的 using 语句
-using Aspose.Email.Tools.DKIM;
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
 
-//生成 DKIM 密钥对
-var keyPair = DkimKeyPair.Generate();
-string privateKey = keyPair.PrivateKey;
-string publicKey = keyPair.PublicKey;
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 ```
 
-## 创建电子邮件消息
+In this step, we initialize the DKIM parameters. We load the private key from the file, specify the selector and domain, and list the headers that should be included in the DKIM signature.
 
-在签署电子邮件之前，让我们创建一个示例电子邮件：
+## Step 2: Create and Prepare the Email
 
 ```csharp
-//创建新电子邮件
-var message = new MailMessage
-{
-    From = "sender@example.com",
-    To = "recipient@example.com",
-    Subject = "Sample Email with DKIM Signature",
-    Body = "This is the content of the email."
-};
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-## 添加 DKIM 签名
+Here, we create an instance of the `MailMessage` class and set the sender, recipient, subject, and body of the email.
 
-现在，让我们使用之前生成的密钥将 DKIM 签名添加到电子邮件中：
+## Step 3: Sign the Email
 
 ```csharp
-//创建新的 DKIM 签名
-var dkimSignature = new DkimSignature("example.com")
-{
-    PrivateKey = privateKey,
-    Selector = "default"
-};
-
-//将 DKIM 签名添加到电子邮件
-message.AddDkimSignature(dkimSignature);
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-## 发送电子邮件
+Now, we sign the email using the DKIM parameters and private key we initialized earlier.
 
-添加 DKIM 签名后，您现在可以使用 SMTP 客户端发送电子邮件：
+## Step 4: Send the Signed Email
 
 ```csharp
-//创建 SmtpClient 实例
-using (SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password"))
+try
 {
-    //发送电子邮件
-    client.Send(message);
+    SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+    client.Send(signedMsg);                
+}
+finally
+{
+    // Cleanup code, if any
 }
 ```
+In this step, we send the signed email using an SMTP client. Ensure you replace `"your.email@gmail.com"` and `"your.password"` with your Gmail credentials.
 
-## DKIM 签名验证
+## Compelete Source Code
+```csharp
 
-接收邮件服务器可以验证DKIM签名以确保电子邮件的真实性。验证成功确认电子邮件未被更改并且确实是从所声明的域发送的。
+string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP()+ "key2.pem");
 
-## 处理错误和异常
+RSACryptoServiceProvider rsa = PemReader.GetPrivateKey(privateKeyFile);
+DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test", "yandex.ru");
+signInfo.Headers.Add("From");
+signInfo.Headers.Add("Subject");
 
-在 DKIM 签名过程中，处理可能发生的任何错误或异常非常重要。这可确保您的应用程序获得流畅可靠的电子邮件签名体验。
+MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
+mailMessage.Subject = "Signed DKIM message text body";
+mailMessage.Body = "This is a text body signed DKIM message";
+MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 
-## DKIM 最佳实践
+try
+{
+	SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
+	client.Send(signedMsg);                
+}
+finally
+{}
+```
 
-- 确保您的私钥安全并受到良好保护。
-- 定期轮换您的 DKIM 密钥以增强安全性。
-- 请遵循您的电子邮件服务提供商提供的 DKIM 签名指南。
+## Conclusion
 
-## 结论
+Signing emails with DKIM is a crucial step in ensuring the security and authenticity of your email communications. With the help of Aspose.Email for .NET and C#, you can easily implement DKIM signatures in your email sending process.
 
-在您的电子邮件通信中实施 DKIM 签名可增加一层强大的安全性和信任。通过遵循本分步指南，您已了解如何使用 C# 代码和 Aspose.Email for .NET 通过 DKIM 签署电子邮件。
+---
 
-## 常见问题解答
+## Frequently Asked Questions
 
-### DKIM 如何帮助防止电子邮件欺骗？
+### Q1: What is DKIM, and why is it important for email security?
 
-DKIM 允许发件人对其电子邮件进行数字签名，从而使恶意行为者难以冒充发件人的域并发送欺诈性电子邮件。
+DKIM stands for DomainKeys Identified Mail, and it is important for email security because it verifies the authenticity of email messages, preventing spoofing and phishing.
 
-### 我可以对多个域使用相同的 DKIM 密钥吗？
+### Q2: How do I obtain a DKIM private key?
 
-不，DKIM 密钥是特定于域的。您需要为要从中发送签名电子邮件的每个域生成唯一的密钥对。
+You can obtain a DKIM private key through your email service provider or by generating one using cryptographic tools.
 
-### DKIM 是电子邮件身份验证的唯一方法吗？
+### Q3: Can I use Aspose.Email for .NET with other email providers besides Gmail?
 
-不，还有其他方法，如 SPF（发件人策略框架）和 DMARC（基于域的消息身份验证、报告和一致性），可以与 DKIM 配合使用来增强电子邮件安全性。
+Yes, Aspose.Email for .NET can be used with various email providers, not limited to Gmail.
 
-### 如果 DKIM 签名验证失败会发生什么？
+### Q4: What headers should I include in the DKIM signature?
 
-如果 DKIM 签名验证失败，收件人的邮件服务器可能会将电子邮件视为可疑或完全拒绝。
+Common headers to include in the DKIM signature are "From," "Subject," and any other headers that are important for email authentication.
 
-### 我可以用 C# 以外的语言实现 DKIM 吗？
+### Q5: Is DKIM the only method for email authentication?
 
-是的，DKIM 可以用多种编程语言实现。本指南重点介绍使用适用于 .NET 的 Aspose.Email 库的 C#。
-
-现在您已经掌握了使用 C# 代码通过 DKIM 签署电子邮件的技巧，您可以增强电子邮件通信的安全性并确保收件人放心地收到合法消息。
+No, there are other methods like SPF and DMARC that are used in conjunction with DKIM for enhanced email security.

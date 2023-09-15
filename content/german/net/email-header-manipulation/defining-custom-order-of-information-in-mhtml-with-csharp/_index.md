@@ -1,89 +1,82 @@
 ---
-title: Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHTML mit C#
-linktitle: Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHTML mit C#
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie die MHTML-Reihenfolge mit C# und Aspose.Email für .NET anpassen. Schritt-für-Schritt-Anleitung mit Code zur effizienten Informationsanordnung. Steigern Sie jetzt das Benutzererlebnis!
+title: Defining Custom Order of Information in MHTML with C#
+linktitle: Defining Custom Order of Information in MHTML with C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-step guide with code for efficient information arrangement. Boost user experience now!
 type: docs
 weight: 14
 url: /de/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
 
-Im heutigen digitalen Zeitalter ist die Verwaltung und Anpassung der Reihenfolge von Informationen in verschiedenen Formaten von entscheidender Bedeutung. MHTML oder MIME HTML ist ein weit verbreitetes Format, das HTML-Inhalte und zusätzliche Ressourcen wie Bilder in einer einzigen Datei kombiniert. In diesem Artikel erfahren Sie, wie Sie mithilfe von C# und der leistungsstarken Aspose.Email-Bibliothek für .NET eine benutzerdefinierte Reihenfolge von Informationen in einer MHTML-Datei definieren.
+In the realm of email management, the ability to customize the order of information in MHTML emails is a valuable feature. Aspose.Email for .NET offers a robust solution for achieving this. In this article, we will guide you through the process step by step.
 
-## Einführung
+## Step 1: Understanding the Scenario
 
-MHTML-Dateien dienen als Container für verschiedene Webressourcen, sodass diese bequem archiviert oder geteilt werden können. Es gibt jedoch Situationen, in denen Sie möglicherweise die Reihenfolge der Informationen in einer MHTML-Datei neu anordnen müssen, um die Benutzererfahrung zu verbessern oder bestimmte Anforderungen zu erfüllen. Hier kommt die Aspose.Email-Bibliothek ins Spiel, die eine nahtlose Möglichkeit bietet, MHTML-Dateien programmgesteuert zu bearbeiten.
+Before delving into the technical details, let's grasp the scenario. Imagine you have an email message, and you want to save it in MHTML format with specific headers and in a custom order. The headers you want to include are 'From,' 'Subject,' 'To,' 'Sent,' and 'Attachments.'
 
-## MHTML-Dateien verstehen
+## Step 2: Setting Up the Development Environment
 
-MHTML-Dateien kapseln HTML-Inhalte zusammen mit Bildern, Stylesheets und anderen Ressourcen in einer einzigen Datei. Dadurch wird sichergestellt, dass alle notwendigen Komponenten gebündelt sind und Webinhalte einfacher geteilt oder archiviert werden können. Um die Reihenfolge der Informationen in einer MHTML-Datei zu ändern, müssen wir ihre Struktur zerlegen und die Komponenten entsprechend neu anordnen.
+To begin, ensure that Aspose.Email for .NET is installed in your development environment. If you haven't done this already, you can download it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
 
-## Einrichten der Umgebung
+Once the installation is complete, create a new C# project and add a reference to the Aspose.Email assembly. This step is crucial to access the functionality we need.
 
-Bevor wir in den Codierungsprozess eintauchen, müssen wir unsere Entwicklungsumgebung einrichten. Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+## Step 3: Writing the Code
 
-- Visual Studio oder eine beliebige C#-IDE
--  Aspose.Email für .NET-Bibliothek (Download von[Hier](https://releases.aspose.com/email/net))
-- Grundkenntnisse der C#-Programmierung
-
-## Laden und Bearbeiten von MHTML-Dateien
-
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer IDE. Importieren Sie die Aspose.Email-Bibliothek und laden Sie die Ziel-MHTML-Datei in Ihr Projekt. Hier ist ein Codeausschnitt, der Ihnen hilft, den Prozess zu verstehen:
+Now, let's dive into the code implementation. Below is the code that accomplishes our goal:
 
 ```csharp
-using Aspose.Email.Mht;
+string dataDir = "Your Data Directory";
 
-// Laden Sie die MHTML-Datei
-MhtMessageReader reader = new MhtMessageReader("path/to/your/file.mhtml");
+MailMessage eml = MailMessage.Load(dataDir + "Attachments.eml");
+MhtSaveOptions opt = SaveOptions.DefaultMhtml;
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_1.mhtml", opt);
+
+opt.RenderingHeaders.Add(MhtTemplateName.From);
+opt.RenderingHeaders.Add(MhtTemplateName.Subject);
+opt.RenderingHeaders.Add(MhtTemplateName.To);
+opt.RenderingHeaders.Add(MhtTemplateName.Sent);
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_2.mhtml", opt);
+
+opt.RenderingHeaders.Clear();
+opt.RenderingHeaders.Add(MhtTemplateName.Attachments);
+opt.RenderingHeaders.Add(MhtTemplateName.Cc);
+opt.RenderingHeaders.Add(MhtTemplateName.Subject);
+
+eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ```
 
-## Definieren einer benutzerdefinierten Reihenfolge von Informationen
+In this code, we first load the email message and configure the MHTML save options. Then, we save the email in MHTML format multiple times, each time specifying the desired rendering headers. This process ensures the custom order of information in the MHTML file.
 
-Sobald die MHTML-Datei geladen ist, ist es an der Zeit, die benutzerdefinierte Reihenfolge der Informationen zu definieren. Dies kann das Neuanordnen von Bildern, das Anpassen der Reihenfolge von HTML-Inhalten oder andere erforderliche Änderungen umfassen. Hier ist ein Beispiel, wie Sie dies erreichen könnten:
+## Step 4: Conclusion
 
-```csharp
-// Führen Sie die erforderlichen Manipulationen durch
-// Ordnen Sie beispielsweise Bilder neu an oder ändern Sie HTML-Inhalte
-```
+To sum it up, Aspose.Email for .NET empowers developers to efficiently manage email content, including customizing the order of information in MHTML emails. The code snippet provided simplifies this task, making it accessible and effective.
 
-## Ressourcen organisieren
+In a world where effective email handling is paramount, Aspose.Email for .NET proves to be an invaluable tool for developers.
 
-Denken Sie beim Neuordnen von Informationen daran, die mit jeder Komponente verbundenen Ressourcen zu berücksichtigen. Bilder, Stylesheets und andere Ressourcen sollten korrekt mit den entsprechenden HTML-Elementen verknüpft bleiben. Dadurch wird sichergestellt, dass die geänderte MHTML-Datei funktionsfähig und optisch konsistent bleibt.
+For comprehensive documentation and more details, you can visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
 
-## Speichern des geänderten MHTML
+---
 
-Sobald Sie die benutzerdefinierte Reihenfolge der Informationen erfolgreich definiert haben, ist es an der Zeit, Ihre Änderungen in der MHTML-Datei zu speichern:
+## Step 5: FAQs
 
-```csharp
-using Aspose.Email.Mime;
+### 1. What is MHTML, and why is it important?
 
-// Speichern Sie das geänderte MHTML
-MimeMessage modifiedMessage = reader.ToMimeMessage();
-modifiedMessage.Save("path/to/modified/file.mhtml", SaveOptions.DefaultMhtml);
-```
+- MHTML, short for MIME HTML, is a format used to archive web pages with all their elements. It's crucial for preserving web content and structure.
 
-## Abschluss
+### 2. Can I customize the order of other email headers using Aspose.Email for .NET?
 
-In diesem Artikel haben wir den Prozess der Definition einer benutzerdefinierten Reihenfolge von Informationen innerhalb einer MHTML-Datei mithilfe von C# und der Aspose.Email für .NET-Bibliothek untersucht. Wir haben gelernt, wie man MHTML-Dateien lädt, manipuliert und speichert und dabei sicherstellt, dass alle Ressourcen korrekt organisiert bleiben. Dieser Ansatz ermöglicht es Entwicklern, die Präsentation von Webinhalten an ihre Bedürfnisse anzupassen und so das Benutzererlebnis und die Benutzerfreundlichkeit zu verbessern.
+- Yes, you can tailor the order of various email headers according to your specific requirements, as demonstrated in the article.
 
-## FAQs
+### 3. What other tasks can Aspose.Email for .NET handle in email processing?
 
-### Wie kann ich die Aspose.Email für .NET-Bibliothek herunterladen?
+- Aspose.Email for .NET offers a wide range of features, including email creation, conversion, and manipulation, making it a comprehensive solution for various email-related tasks.
 
- Sie können die Aspose.Email für .NET-Bibliothek aus den Aspose.Releases herunterladen:[Aspose.Releases](https://releases.aspose.com/email/net/).
+### 4. Is Aspose.Email for .NET suitable for both small-scale and enterprise-level projects?
 
-### Kann ich Aspose.Email verwenden, um andere E-Mail-bezogene Formate zu ändern?
+- Absolutely. It's versatile and can be applied in projects of all sizes, from small applications to large-scale enterprise solutions.
 
-Ja, Aspose.Email bietet umfassende Unterstützung für verschiedene E-Mail-Formate, einschließlich MSG, EML, PST und mehr.
+### 5. Where can I find additional resources and support for Aspose.Email for .NET?
 
-### Ist Aspose.Email sowohl für Web- als auch für Desktop-Anwendungen geeignet?
-
-Absolut! Aspose.Email lässt sich nahtlos sowohl in Web- als auch in Desktop-Anwendungen integrieren und ist somit vielseitig für verschiedene Entwicklungsszenarien geeignet.
-
-### Bietet Aspose.Email Dokumentation und Beispiele für Anfänger?
-
-Ja, Aspose bietet umfangreiche Dokumentation und Codebeispiele, um Anfängern den Einstieg in ihre Bibliothek zu erleichtern. Detaillierte Ressourcen finden Sie hier[Hier](https://reference.aspose.com/email/net/).
-
-### Welche Vorteile bietet die programmgesteuerte Änderung von MHTML-Dateien gegenüber der manuellen Bearbeitung?
-
-Die programmgesteuerte Änderung von MHTML-Dateien bietet Automatisierung und Skalierbarkeit, sodass Sie eine große Anzahl von Dateien effizient verarbeiten können. Es sorgt außerdem für Konsistenz und verringert das Risiko menschlicher Fehler im Vergleich zur manuellen Bearbeitung.
+- You can access extensive documentation, code examples, and support on the [Aspose.Email for .NET API Documentation](https://reference.aspose.com/email/net/).

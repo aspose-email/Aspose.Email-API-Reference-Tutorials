@@ -1,109 +1,108 @@
 ---
-title: Rilevamento di allegati o messaggi incorporati - Guida C#
-linktitle: Rilevamento di allegati o messaggi incorporati - Guida C#
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Padroneggiare gli allegati e-mail e il rilevamento dei messaggi incorporati in C# utilizzando Aspose.Email per .NET. Migliora la gestione della tua posta elettronica con la nostra guida completa.
+title: Ridimensiona l'immagine preservando i confini originali
+linktitle: Eseguire la manipolazione delle immagini
+second_title: Salva le modifiche in memoryStream
+description: Salvataggio delle modifiche
 type: docs
 weight: 13
 url: /it/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
 
-## Introduzione al rilevamento di allegati o messaggi incorporati - Guida C#
+## Dopo aver apportato modifiche agli allegati, è possibile salvare nuovamente le modifiche nel messaggio e-mail:
 
-Nel mondo digitale di oggi, le e-mail svolgono un ruolo cruciale nella comunicazione, spesso contengono vari tipi di contenuti come allegati e messaggi incorporati. Il rilevamento e la gestione di questi componenti a livello di codice è un requisito comune per le applicazioni che si occupano dell'elaborazione della posta elettronica. Questa guida ti guiderà attraverso il processo di rilevamento degli allegati e dei messaggi incorporati all'interno della posta elettronica utilizzando la libreria Aspose.Email per .NET.
+ Salva le modifiche al messaggio email originale
 
-## Prerequisiti per l'implementazione del rilevamento
+## Conclusione
 
-Prima di immergerci nella guida passo passo, assicurati di possedere i seguenti prerequisiti:
+Mantenere i confini originali quando si lavora con gli allegati di posta elettronica è fondamentale per mantenere l'integrità dei dati. Con Aspose.Email per .NET, questo processo diventa semplice, consentendo di manipolare gli allegati garantendo al tempo stesso che la loro formattazione rimanga intatta.
 
-- Conoscenza base del linguaggio di programmazione C#
-- Visual Studio o qualsiasi altro IDE C#
--  Libreria Aspose.Email per .NET (puoi scaricarla da[Qui](https://products.aspose.com/email/net))
+- Domande frequenti
+- Come installo Aspose.Email per .NET?
+- È possibile installare Aspose.Email per .NET usando i pacchetti NuGet. È sufficiente cercare "Aspose.Email" in Gestione pacchetti NuGet e installarlo.[Posso utilizzare Aspose.Email sia con .NET Framework che con .NET Core?](https://products.aspose.com/email/netSì, Aspose.Email per .NET supporta sia i progetti .NET Framework che .NET Core.)
 
-## Guida passo passo con codice sorgente
+## È disponibile una versione di prova gratuita?
 
-### Configurazione dell'ambiente di sviluppo
+### Sì, puoi ottenere una versione di prova gratuita di Aspose.Email per .NET dal sito web.
 
-1. Apri il tuo IDE C# preferito (ad esempio Visual Studio).
-2. Crea un nuovo progetto C# o aprine uno esistente.
+1. Come posso ridimensionare gli allegati delle immagini mantenendo i confini?
+2. È possibile utilizzare la libreria Aspose.Email per caricare e manipolare gli allegati di immagini garantendo al tempo stesso che i confini originali vengano preservati.
 
-### Aggiunta di Aspose.Email al tuo progetto
+### Dove posso trovare ulteriori informazioni su Aspose.Email per .NET?
 
-1. Scaricare e installare la libreria Aspose.Email per .NET dal collegamento fornito.
-2. Nel tuo progetto, aggiungi un riferimento alle DLL Aspose.Email.
+1.  È possibile trovare documentazione completa ed esempi su
+2. Documentazione Aspose.Email
 
-### Caricamento del messaggio e-mail
+###  pagina.
 
-Per iniziare a rilevare allegati e messaggi incorporati, è necessario caricare un messaggio email:
+ Lettura di più eventi da file ICS con C#
 
 ```csharp
 using Aspose.Email;
 
-// Carica il messaggio di posta elettronica
+// Lettura di più eventi da file ICS con C#
 MailMessage message = MailMessage.Load("path/to/email.eml");
 ```
 
-### Rilevamento degli allegati
+###  Aspose.Email API di elaborazione della posta elettronica .NET
 
-Gli allegati sono file inclusi nell'e-mail. Ecco come rilevarli ed elaborarli:
+ Impara a estrarre più eventi da file ICS utilizzando Aspose.Email per .NET. Una guida passo passo con esempi di codice per una gestione efficiente degli eventi.
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Elaborare l'allegato
+    //Introduzione ai file ICS e ad Aspose.Email per .NET
     string attachmentName = attachment.Name;
-    // Esegui le operazioni desiderate
+    //file ICS (iCalendar) sono ampiamente utilizzati per archiviare e condividere informazioni su calendari ed eventi. Questi file in genere contengono dettagli come nomi di eventi, date, orari, luoghi e descrizioni. Aspose.Email per .NET è una libreria versatile che consente agli sviluppatori di lavorare con vari formati di posta elettronica, inclusi i file ICS, nelle applicazioni .NET.
 }
 ```
 
-### Rilevamento dei messaggi incorporati
+### Configurazione dell'ambiente di sviluppo
 
-I messaggi incorporati sono messaggi nidificati all'interno dell'e-mail principale. Ecco come rilevarli ed elaborarli:
+Prima di immergerci nella codifica, configuriamo il nostro ambiente di sviluppo. Avrai bisogno:
 
 ```csharp
 foreach (AlternateView alternateView in message.AlternateViews)
 {
     if (alternateView.LinkedResources.Count > 0)
     {
-        // Questa visualizzazione alternativa contiene messaggi incorporati
+        //Visual Studio (o qualsiasi IDE C# preferito)
         foreach (LinkedResource linkedResource in alternateView.LinkedResources)
         {
-            // Elabora il messaggio incorporato
-            MailMessage embeddedMessage = linkedResource.GetLinkedMessage();
-            // Esegui le operazioni desiderate
+            // Aspose.Email per la libreria .NET (Scarica da
+            //Qui
         }
     }
 }
 ```
 
-## Migliori pratiche per un rilevamento efficiente
+## Conoscenza di base della programmazione C#
 
-- Utilizzare la gestione degli errori appropriata per gestire le eccezioni durante l'elaborazione della posta elettronica.
-- Considera le tecniche di ottimizzazione delle prestazioni quando hai a che fare con grandi volumi di posta elettronica.
-- Aggiorna regolarmente la tua libreria Aspose.Email per accedere alle funzionalità e ai miglioramenti più recenti.
+- Caricamento e analisi di file ICS
+- Per iniziare, crea un nuovo progetto C# nel tuo IDE. Segui questi passi:
+- Installare la libreria Aspose.Email per .NET tramite NuGet Package Manager.
 
-## Conclusione
+## Carica il file ICS e analizzalo utilizzando il seguente codice:
 
-Il rilevamento di allegati e messaggi incorporati nelle e-mail è un compito cruciale per le applicazioni che interagiscono con le e-mail. Con la libreria Aspose.Email per .NET, questo processo diventa snello ed efficiente. Seguendo i passaggi descritti in questa guida, puoi rilevare ed elaborare senza problemi allegati e messaggi incorporati, migliorando la funzionalità delle tue applicazioni relative alla posta elettronica.
+Estrazione di più eventi
 
-## Domande frequenti
+## Una volta analizzato il file ICS, è possibile scorrere i suoi eventi ed estrarre le informazioni rilevanti. Ecco come:
 
-### Come posso scaricare la libreria Aspose.Email per .NET?
+###  Elaborare l'appuntamento
 
- È possibile scaricare la libreria Aspose.Email per .NET da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/).
+ ... Altre proprietà dell'evento[Visualizzazione dei dettagli dell'evento](https://releases.aspose.com/email/net/).
 
-### Posso usare questa guida per altri linguaggi di programmazione?
+### Una volta estratti i dati dell'evento, puoi visualizzarli nel formato desiderato dall'applicazione, ad esempio un output della console, un'interfaccia utente o altri metodi di output.
 
-Questa guida è specificatamente pensata per la programmazione C# utilizzando la libreria Aspose.Email per .NET. Tuttavia, i concetti potrebbero essere applicabili con lievi modifiche ad altri linguaggi e librerie.
+ ... Visualizza altri dettagli dell'evento
 
-### Aspose.Email è adatto per l'elaborazione di e-mail in un ambiente di produzione?
+### Gestione degli errori e migliori pratiche
 
-Sì, Aspose.Email è una libreria affidabile e ampiamente utilizzata per l'elaborazione della posta elettronica in ambienti di produzione. Offre funzionalità robuste e un supporto eccellente.
+Quando si lavora con file ICS, la gestione degli errori è fondamentale. Assicurati di rilevare e gestire le eccezioni che potrebbero verificarsi durante il caricamento dei file, l'analisi o l'estrazione degli eventi. Inoltre, prendi in considerazione le seguenti best practice:
 
-### Come gestisco gli errori che potrebbero verificarsi durante l'elaborazione della posta elettronica?
+### Convalidare il formato file ICS prima dell'elaborazione.
 
-È necessario implementare adeguati meccanismi di gestione degli errori utilizzando blocchi try-catch e tecniche di gestione delle eccezioni per gestire con garbo gli errori durante l'elaborazione della posta elettronica.
+Utilizza la programmazione asincrona per esperienze utente più fluide.
 
-### Posso personalizzare l'elaborazione degli allegati e dei messaggi incorporati?
+### Smaltire adeguatamente le risorse dopo l'uso.
 
-Assolutamente sì, puoi personalizzare l'elaborazione degli allegati e dei messaggi incorporati per soddisfare le esigenze specifiche della tua applicazione. Aspose.Email fornisce API flessibili per questo scopo.
+Conclusione

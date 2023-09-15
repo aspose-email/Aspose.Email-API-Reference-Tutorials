@@ -1,105 +1,105 @@
 ---
-title: Gestione delle bozze dei messaggi in C# salvataggio della posta elettronica come bozza
-linktitle: Gestione delle bozze dei messaggi in C# salvataggio della posta elettronica come bozza
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Scopri come implementare la gestione delle bozze di posta elettronica in C# utilizzando Aspose.Email per .NET. Crea, modifica e salva bozze senza problemi.
+title: Rilevamento dei messaggi TNEF in C#: spiegazione
+linktitle: Aspose.Email API di elaborazione della posta elettronica .NET
+second_title: Impara a rilevare ed elaborare i messaggi TNEF in C# utilizzando Aspose.Email per .NET. Migliora la gestione delle e-mail con rich text e allegati.
+description: Questa guida ti fornirà una spiegazione dettagliata passo passo su come rilevare i messaggi TNEF (Transport Neutral Encapsulation Format) utilizzando la libreria Aspose.Email per .NET. TNEF è un formato utilizzato da Microsoft Outlook per incapsulare rich text e allegati all'interno dei messaggi di posta elettronica. Aspose.Email per .NET offre un potente set di API per lavorare con e-mail e allegati, inclusi i messaggi TNEF.
 type: docs
 weight: 17
 url: /it/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
 
-## introduzione
-
-La gestione delle bozze dei messaggi è una funzionalità cruciale per i client di posta elettronica. Gli utenti spesso necessitano della possibilità di iniziare a comporre un'e-mail, salvarla come bozza e riprenderla in un secondo momento per ulteriori modifiche o un eventuale invio. In questo articolo viene illustrato come implementare questa funzionalità utilizzando la libreria Aspose.Email per .NET.
-
 ## Prerequisiti
 
-Prima di approfondire l'implementazione, assicurati di disporre dei seguenti prerequisiti:
+Prima di iniziare, assicurati di avere quanto segue:
 
-- Visual Studio (o qualsiasi ambiente di sviluppo C#)
-- Aspose.Email per la libreria .NET
+## Un ambiente di sviluppo (ad esempio Visual Studio) per C#.
 
- È possibile scaricare la libreria Aspose.Email da[Qui](https://releases.aspose.com/email/net).
+ Aspose.Email per la libreria .NET installata. Puoi scaricarlo da
 
-## Impostazione del progetto
+- Qui
+- Passaggio 1: crea un nuovo progetto C#
 
-1. Crea un nuovo progetto C# nel tuo ambiente di sviluppo.
-2. Aggiungi riferimenti alle DLL Aspose.Email nel tuo progetto.
+Inizia creando un nuovo progetto C# nell'ambiente di sviluppo scelto.[Passaggio 2: installare Aspose.Email per .NET](https://releases.aspose.com/email/net).
 
-## Creazione della bozza dell'e-mail
+## Installare la libreria Aspose.Email per .NET utilizzando NuGet Package Manager. Esegui il comando seguente nella Console di gestione pacchetti:
 
-Per creare una bozza di messaggio, attenersi alla seguente procedura:
+1. Passaggio 3: importa gli spazi dei nomi necessari
+2. Nel codice C# importa gli spazi dei nomi necessari:
 
-## Aggiunta di destinatari e oggetto
+## Passaggio 4: caricare e rilevare il messaggio TNEF
+
+ Caricare il messaggio e-mail utilizzando il file
+
+##  classe:
 
 ```csharp
-// Crea una nuova istanza di MailMessage
+//Determina se l'e-mail caricata è un messaggio TNEF:
 MailMessage draft = new MailMessage();
 
-// Aggiungi destinatari
+// Sostituire
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// Imposta l'oggetto dell'e-mail
+// con il percorso effettivo del file dei messaggi di posta elettronica.
 draft.Subject = "Draft Email Demo";
 ```
 
-## Composizione del corpo dell'e-mail
+## Passaggio 5: elaborazione degli allegati TNEF
 
 ```csharp
-// Imposta il corpo dell'e-mail
+//Se l'e-mail caricata è effettivamente un messaggio TNEF, puoi estrarre ed elaborare i suoi allegati:
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## Salvataggio come bozza
+##  Elaborare l'allegato TNEF
 
 ```csharp
-// Salva l'e-mail come bozza
+// Ad esempio, salva l'allegato su disco
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Caricamento e modifica di bozze
+## Domande frequenti
 
-Per caricare e modificare le bozze dei messaggi, attenersi alla seguente procedura:
+Come posso verificare se un'e-mail è un messaggio TNEF?
 
 ```csharp
-// Carica una bozza di email
+// Per verificare se un'e-mail è un messaggio TNEF, utilizzare il file
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-// Modifica destinatari
+// metodo del
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// Modifica il corpo dell'e-mail
+// classe:
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-// Salvare le modifiche
+//Come posso estrarre gli allegati da un messaggio TNEF?
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Conclusione
+## Per estrarre gli allegati da un messaggio TNEF, attenersi alla seguente procedura:
 
-In questo articolo abbiamo esplorato come gestire le bozze dei messaggi in C# utilizzando la libreria Aspose.Email per .NET. Abbiamo imparato come creare, modificare e salvare bozze di email, offrendo agli utenti un'esperienza fluida durante la composizione dei messaggi. Seguendo i passaggi descritti in questa guida, puoi migliorare la tua applicazione client di posta elettronica con la funzionalità di bozza dei messaggi.
+ Carica l'e-mail utilizzando
 
-## Domande frequenti
+##  Controlla se l'e-mail è un messaggio TNEF utilizzato
 
-### Come posso scaricare la libreria Aspose.Email per .NET?
+###  Se si tratta di un messaggio TNEF, estrarre gli allegati utilizzando
 
- È possibile scaricare la libreria Aspose.Email per .NET da[Qui](https://releases.aspose.com/email/net).
+ Elaborare l'allegato TNEF[ Ad esempio, salva l'allegato su disco](https://releases.aspose.com/email/net).
 
-### Posso modificare i destinatari e l'oggetto di una bozza salvata?
+###  Per informazioni più dettagliate e riferimenti API, fare riferimento a
 
-Sì, puoi caricare una bozza salvata, modificarne i destinatari, l'oggetto e il contenuto, quindi salvare le modifiche come bozza aggiornata.
+Aspose.Email per la documentazione .NET
 
-### La bozza dell'e-mail viene salvata in un formato specifico?
+### Conclusione
 
-Sì, la bozza dell'e-mail viene salvata nel formato EML, che è un formato ampiamente utilizzato per i messaggi e-mail.
+In questa guida hai imparato come rilevare i messaggi TNEF (Transport Neutral Encapsulation Format) utilizzando la libreria Aspose.Email per .NET. I messaggi TNEF, spesso utilizzati da Microsoft Outlook, incapsulano rich text e allegati all'interno dei messaggi di posta elettronica. Seguendo i passaggi descritti in questa guida, puoi identificare in modo efficiente i messaggi TNEF ed estrarre i relativi allegati per un'ulteriore elaborazione.
 
-### Posso integrare la gestione delle bozze dei messaggi nella mia applicazione di posta elettronica esistente?
+###  Verifica dei messaggi restituiti con codice C#
 
-Assolutamente sì, seguendo i passaggi forniti in questa guida, puoi integrare perfettamente la gestione delle bozze dei messaggi nella tua applicazione client di posta elettronica esistente.
+ Verifica dei messaggi restituiti con codice C#
 
-### La libreria Aspose.Email supporta altre funzionalità relative alla posta elettronica?
+###  Aspose.Email API di elaborazione della posta elettronica .NET
 
- Sì, la libreria Aspose.Email offre un'ampia gamma di funzionalità per lavorare con i messaggi di posta elettronica, inclusi l'invio, la ricezione e la manipolazione di e-mail e allegati. È possibile fare riferimento alla documentazione per maggiori dettagli:[Qui](https://reference.aspose.com)
+ Automatizza la verifica dei messaggi di mancato recapito utilizzando C# e Aspose.Email per .NET. Gestisci facilmente gli elenchi di posta elettronica e migliora l'efficacia delle campagne.[Sei stanco di avere a che fare con messaggi di posta elettronica respinti? Gestire le email respinte può essere un vero grattacapo, soprattutto quando gestisci una campagna email o mantieni una mailing list di grandi dimensioni. Fortunatamente, esiste una soluzione che può aiutarti a verificare e gestire in modo efficiente i messaggi restituiti al mittente utilizzando il codice C# e la libreria Aspose.Email per .NET. In questa guida passo passo ti guideremo attraverso il processo di verifica dei messaggi respinti e di garantire che la tua comunicazione e-mail rimanga efficace e senza problemi.](https://reference.aspose.com)

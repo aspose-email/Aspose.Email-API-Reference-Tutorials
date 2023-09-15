@@ -29,3 +29,21 @@ Questi sono i link ad alcune risorse utili:
 - [Convalida e verifica della posta elettronica](./net/email-validation-and-verification/)
 - [Archiviazione e recupero di file via e-mail](./net/email-file-storage-and-retrieval/)
 - [Sicurezza e firme della posta elettronica](./net/email-security-and-signatures/)
+
+##  Composizione, conversione ed elaborazione delle e-mail con i tutorial Aspose.Email
+{{% alert color="primary" %}}
+
+ Aspose.Email per .NET Tutorial
+
+
+{{% /alert %}}
+
+ Ottimizza le funzionalità di posta elettronica con Aspose.Email per tutorial .NET. Scopri la composizione, la conversione e l'elaborazione per la gestione avanzata della posta elettronica.
+- [introduzione](./java/sending-emails/)
+- [tutorial Aspose.Email per .NET offrono agli sviluppatori una risorsa completa per migliorare le proprie capacità di posta elettronica. Questi tutorial coprono tre aspetti cruciali della gestione della posta elettronica: composizione, conversione ed elaborazione. Con istruzioni dettagliate ed esempi pratici di codice, gli sviluppatori possono integrare Aspose.Email per .NET perfettamente nelle loro applicazioni, sbloccando funzionalità avanzate per creare, convertire ed elaborare messaggi di posta elettronica.](./java/receiving-emails/)
+- [Composizione e-mail](./java/configuring-smtp-servers/)
+- [I tutorial sulla composizione delle e-mail approfondiscono l'arte di creare messaggi e-mail personalizzati e coinvolgenti a livello di codice. Gli sviluppatori possono imparare come creare e-mail con contenuti dinamici, allegati e formattazione. Questi tutorial guidano gli sviluppatori attraverso il processo di aggiunta di destinatari, impostazione delle righe dell'oggetto e incorporazione di testo RTF e contenuto HTML. Seguendo questi tutorial, gli sviluppatori possono migliorare le proprie applicazioni offrendo agli utenti la possibilità di generare contenuti e-mail personalizzati e visivamente accattivanti.](./java/advanced-email-attachments/)
+- [Conversione e-mail](./java/securing-email-communications/)
+- [I tutorial sulla conversione della posta elettronica si concentrano sulla trasformazione fluida dei messaggi di posta elettronica tra diversi formati, come MSG, EML e HTML. Gli sviluppatori possono esplorare tecniche per convertire le email preservando metadati, allegati e formattazione. Questi tutorial forniscono istruzioni dettagliate sulla conversione delle e-mail in vari formati, consentendo la condivisione e l'archiviazione flessibile dei dati. Seguendo questi tutorial, gli sviluppatori possono ottimizzare le proprie applicazioni per un efficiente scambio di dati tra diversi formati di posta elettronica.](./java/email-analytics-and-tracking/)
+- [Elaborazione della posta elettronica](./java/customizing-email-headers/)
+- [tutorial sull'elaborazione della posta elettronica consentono agli sviluppatori di gestire e analizzare in modo efficiente il contenuto della posta elettronica in modo programmatico. Gli sviluppatori possono apprendere tecniche per recuperare, filtrare e classificare i messaggi di posta elettronica in base a criteri specifici. Questi tutorial guidano gli sviluppatori attraverso il processo di accesso al contenuto della posta elettronica, estrazione di informazioni rilevanti e organizzazione delle email per un'elaborazione efficiente. Seguendo questi tutorial, gli sviluppatori possono migliorare le proprie applicazioni con la gestione automatizzata della posta elettronica e funzionalità di analisi approfondita dei dati.](./java/exploring-email-security/)

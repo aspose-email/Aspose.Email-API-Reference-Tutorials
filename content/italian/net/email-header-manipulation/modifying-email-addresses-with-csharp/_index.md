@@ -1,77 +1,77 @@
 ---
-title: Modificare indirizzi email con C#
-linktitle: Modificare indirizzi email con C#
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Scopri come modificare gli indirizzi e-mail utilizzando C# con l'aiuto di Aspose.Email per .NET. Segui questa guida passo passo per manipolare gli indirizzi email in modo efficace.
+title: Modifying Email Addresses with C#
+linktitle: Modifying Email Addresses with C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to modify email addresses using C# with the help of Aspose.Email for .NET. Follow this step-by-step guide to manipulate email addresses effectively. 
 type: docs
 weight: 10
 url: /it/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
 
-## introduzione
+## Introduction
 
-Nell’ambito dello sviluppo software moderno, gli indirizzi e-mail svolgono un ruolo fondamentale nella comunicazione e nell’elaborazione dei dati. Essere in grado di manipolare e modificare gli indirizzi e-mail a livello di codice può offrire vantaggi significativi. In questa guida completa, approfondiremo il processo di modifica degli indirizzi e-mail utilizzando il linguaggio di programmazione C#, sfruttando la potenza di Aspose.Email per .NET. Che tu stia sviluppando un sistema di gestione della posta elettronica o gestendo grandi quantità di dati di posta elettronica, questa guida ti fornirà le conoscenze e il codice sorgente necessari per gestire in modo efficiente le modifiche degli indirizzi e-mail.
+In the realm of modern software development, email addresses play a pivotal role in communication and data processing. Being able to manipulate and modify email addresses programmatically can offer significant advantages. In this comprehensive guide, we will delve into the process of modifying email addresses using C# programming language, leveraging the power of Aspose.Email for .NET. Whether you are developing an email management system or dealing with large sets of email data, this guide will equip you with the knowledge and source code needed to efficiently handle email address modifications.
 
 
-## 1. Impostazione dell'ambiente di sviluppo
+## 1. Setting Up the Development Environment
 
-Prima di addentrarci nella complessità della modifica dell'indirizzo email, assicuriamoci che il nostro ambiente di sviluppo sia configurato correttamente. Segui questi passi:
+Before we dive into the intricacies of email address modification, let's ensure that our development environment is properly set up. Follow these steps:
 
-1.  Scarica e installa Visual Studio se non lo hai già fatto. È possibile trovare il collegamento per il download[Qui](https://visualstudio.microsoft.com/downloads/).
+1. Download and install Visual Studio if you haven't already. You can find the download link [here](https://visualstudio.microsoft.com/downloads/).
 
-2. Creare un nuovo progetto C# in Visual Studio.
+2. Create a new C# project in Visual Studio.
 
-3. Installare Aspose.Email per .NET utilizzando NuGet Package Manager. Apri la console di gestione pacchetti NuGet ed esegui il comando seguente:
+3. Install Aspose.Email for .NET using NuGet Package Manager. Open the NuGet Package Manager Console and run the following command:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-## 2. Importazione degli spazi dei nomi richiesti
+## 2. Importing the Required Namespaces
 
-Per manipolare gli indirizzi email, dobbiamo importare gli spazi dei nomi rilevanti dalla libreria Aspose.Email. Ecco come puoi farlo:
+To manipulate email addresses, we need to import the relevant namespaces from the Aspose.Email library. Here's how you can do it:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 ```
 
-## 3. Caricamento di un messaggio e-mail
+## 3. Loading an Email Message
 
-In questo passaggio, caricheremo un messaggio email esistente che contiene l'indirizzo email che vogliamo modificare. Ecco come puoi raggiungere questo obiettivo:
+In this step, we'll load an existing email message that contains the email address we want to modify. Here's how you can achieve this:
 
 ```csharp
-// Carica un messaggio email esistente
+// Load an existing email message
 var message = MailMessage.Load("path_to_email.eml");
 ```
 
-## 4. Modifica dell'indirizzo e-mail
+## 4. Modifying the Email Address
 
-Ora arriva la parte in cui modifichiamo l'indirizzo email. Diciamo che vogliamo cambiare il dominio dell'indirizzo email. Ecco uno snippet di codice per fare proprio questo:
+Now comes the part where we modify the email address. Let's say we want to change the domain of the email address. Here's a snippet of code to do just that:
 
 ```csharp
-// Ottieni l'indirizzo email del mittente
+// Get the sender's email address
 var senderAddress = message.From.Address;
 
-// Modifica il dominio
+// Modify the domain
 senderAddress = senderAddress.Replace("@old-domain.com", "@new-domain.com");
 
-// Aggiorna l'indirizzo email del mittente
+// Update the sender's email address
 message.From.Address = senderAddress;
 ```
 
-## 5. Salvataggio dell'e-mail modificata
+## 5. Saving the Modified Email
 
-Dopo aver modificato con successo l'indirizzo e-mail, dobbiamo salvare le modifiche nel messaggio e-mail. Ecco come puoi farlo:
+After successfully modifying the email address, we need to save the changes to the email message. Here's how you can do it:
 
 ```csharp
-// Salva l'e-mail modificata
+// Save the modified email
 message.Save("path_to_modified_email.eml", SaveOptions.DefaultEml);
 ```
 
-## 6. Codice sorgente completo
+## 6. Full Source Code
 
-Per tua comodità, ecco il codice sorgente completo che comprende tutti i passaggi sopra menzionati:
+For your convenience, here's the complete source code that encompasses all the steps mentioned above:
 
 ```csharp
 using System;
@@ -84,51 +84,51 @@ namespace EmailAddressModification
     {
         static void Main(string[] args)
         {
-            // Carica un messaggio email esistente
+            // Load an existing email message
             var message = MailMessage.Load("path_to_email.eml");
 
-            // Ottieni l'indirizzo email del mittente
+            // Get the sender's email address
             var senderAddress = message.From.Address;
 
-            // Modifica il dominio
+            // Modify the domain
             senderAddress = senderAddress.Replace("@old-domain.com", "@new-domain.com");
 
-            // Aggiorna l'indirizzo email del mittente
+            // Update the sender's email address
             message.From.Address = senderAddress;
 
-            // Salva l'e-mail modificata
+            // Save the modified email
             message.Save("path_to_modified_email.eml", SaveOptions.DefaultEml);
         }
     }
 }
 ```
 
-## Domande frequenti
+## FAQs
 
-### In che modo Aspose.Email per .NET aiuta nella modifica dell'indirizzo e-mail?
+### How does Aspose.Email for .NET help in email address modification?
 
-Aspose.Email per .NET fornisce un ricco set di classi e metodi che facilitano le attività di manipolazione della posta elettronica, inclusa la modifica degli indirizzi e-mail. Offre un'API intuitiva che semplifica il processo.
+Aspose.Email for .NET provides a rich set of classes and methods that facilitate email manipulation tasks, including modifying email addresses. It offers an intuitive API that simplifies the process.
 
-### Posso modificare altre parti di un'e-mail utilizzando Aspose.Email?
+### Can I modify other parts of an email using Aspose.Email?
 
-Assolutamente! Aspose.Email ti consente di modificare vari aspetti di un'e-mail, come oggetto, corpo, allegati e destinatari. La sua versatilità consente agli sviluppatori di creare soluzioni personalizzate per la gestione della posta elettronica.
+Absolutely! Aspose.Email enables you to modify various aspects of an email, such as subject, body, attachments, and recipients. Its versatility empowers developers to create customized email management solutions.
 
-### Aspose.Email è adatto sia per attività semplici che complesse di manipolazione della posta elettronica?
+### Is Aspose.Email suitable for both simple and complex email manipulation tasks?
 
-Sì, Aspose.Email è progettato per gestire un'ampia gamma di attività di manipolazione della posta elettronica, da semplici modifiche a operazioni complesse. Le sue funzionalità complete soddisfano diverse esigenze.
+Yes, Aspose.Email is designed to handle a wide range of email manipulation tasks, from simple modifications to complex operations. Its comprehensive features cater to diverse requirements.
 
-### Dove posso trovare ulteriori esempi e documentazione per Aspose.Email?
+### Where can I find more examples and documentation for Aspose.Email?
 
-Puoi esplorare il[Riferimento API Aspose.Email](https://reference.aspose.com/email/net/) per esempi dettagliati, riferimento API e linee guida sull'utilizzo. È una risorsa preziosa per padroneggiare la manipolazione della posta elettronica con Aspose.Email.
+You can explore the [Aspose.Email API Reference](https://reference.aspose.com/email/net/) for detailed examples, API reference, and usage guidelines. It's a valuable resource for mastering email manipulation with Aspose.Email.
 
-### Posso utilizzare Aspose.Email in progetti commerciali?
+### Can I use Aspose.Email in commercial projects?
 
-Sì, Aspose.Email offre opzioni di licenza flessibili che ti consentono di utilizzarlo sia in progetti personali che commerciali. Assicurati di rivedere i termini di licenza per ulteriori informazioni.
+Yes, Aspose.Email offers flexible licensing options that allow you to use it in both personal and commercial projects. Make sure to review their licensing terms for more information.
 
-### Esistono alternative ad Aspose.Email per la manipolazione della posta elettronica?
+### Are there any alternatives to Aspose.Email for email manipulation?
 
-Sebbene Aspose.Email sia una scelta affidabile, anche altre librerie come MimeKit e OpenPop.NET offrono funzionalità di manipolazione della posta elettronica. Tuttavia, Aspose.Email si distingue per la sua API ricca di funzionalità e un'ampia documentazione.
+While Aspose.Email is a robust choice, other libraries like MimeKit and OpenPop.NET also offer email manipulation capabilities. However, Aspose.Email stands out with its feature-rich API and extensive documentation.
 
-## Conclusione
+## Conclusion
 
-In questa guida, abbiamo intrapreso un viaggio per esplorare il mondo della modifica degli indirizzi e-mail utilizzando C# e Aspose.Email per .NET. Seguendo le istruzioni passo passo e utilizzando il codice sorgente fornito, ora possiedi le competenze per modificare in modo efficace gli indirizzi email nelle tue applicazioni. Le funzionalità di Aspose.Email combinate con le tue nuove conoscenze semplificheranno senza dubbio i tuoi sforzi di manipolazione della posta elettronica.
+In this guide, we embarked on a journey to explore the world of email address modification using C# and Aspose.Email for .NET. By following the step-by-step instructions and utilizing the provided source code, you now possess the skills to effectively modify email addresses in your applications. Aspose.Email's capabilities combined with your newfound knowledge will undoubtedly streamline your email manipulation endeavors.

@@ -1,86 +1,90 @@
 ---
-title: 在 C# 中添加新的 TNEF 附件
-linktitle: 在 C# 中添加新的 TNEF 附件
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 Aspose.Email for .NET 在 C# 中添加新的 TNEF 附件。带有代码示例的分步指南，可实现无缝集成。
+title: 如何下载 .NET 版 Aspose.Email？
+linktitle: 您可以从以下位置下载最新版本的 Aspose.Email for .NET
+second_title: Aspose.Email for .NET 下载页面
+description: Aspose.Email for .NET 是否与其他 Outlook 相关格式兼容？
 type: docs
 weight: 12
 url: /zh/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## TNEF 附件和 Aspose.Email for .NET 简介
+## 是的，Aspose.Email for .NET 提供对各种 Outlook 相关格式的全面支持，包括 PST、EML、MSG 等。
 
-TNEF（传输中性封装格式）附件是 Microsoft Outlook 用于在电子邮件中打包富文本和附件的专有格式。 Aspose.Email for .NET 是一个功能强大的库，允许您使用 C# 处理各种格式的电子邮件，包括 TNEF 附件。
+我可以在商业和个人项目中使用 Aspose.Email for .NET 吗？
 
-## 设置您的开发环境
+## 是的，Aspose.Email for .NET 可用于商业和个人项目。请务必查看 Aspose 网站上的许可条款。
 
-在我们深入编码之前，请确保您已设置好开发环境。安装 Visual Studio 并创建一个新的 C# 项目。
+Aspose.Email for .NET 是否为开发人员提供文档？
 
-## 创建一个新项目
+## 是的，您可以在以下位置找到有关如何在各种场景中使用 Aspose.Email for .NET 的详细文档和代码示例：
 
-首先在 Visual Studio 中创建一个新的 C# 项目。选择合适的项目名称和位置。
+Aspose.Email 文档
 
-## 添加 Aspose.Email for .NET 库
+## 页。
 
-要处理电子邮件和 TNEF 附件，我们需要将 Aspose.Email for .NET 库添加到我们的项目中。您可以使用 Visual Studio 中的 NuGet 包管理器来执行此操作。搜索“Aspose.Email”并安装适当的包。
+使用 C# 代码保留原始边界
 
-## 加载带有 TNEF 附件的现有电子邮件
+## 使用 C# 代码保留原始边界
 
-首先，我们加载一封包含 TNEF 附件的现有电子邮件。您需要提供电子邮件文件的路径。
+Aspose.Email .NET 电子邮件处理 API
 
 ```csharp
 using Aspose.Email.Mail;
 
-//加载带有 TNEF 附件的电子邮件
-var message = MailMessage.Load("path/to/email.eml");
+//了解如何使用 C# 和 Aspose.Email for .NET 保留电子邮件附件的原始边界。带有源代码的分步指南。
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## 提取和修改 TNEF 附件
+## 保护原始边界简介
 
-加载电子邮件后，您可以提取 TNEF 附件并根据需要进行修改。
+在现代商业世界中，电子邮件通信起着举足轻重的作用。在交换电子邮件时，它们通常包含需要以编程方式管理和操作的重要附件。但是，在处理电子邮件附件时，必须确保保留这些附件的原始边界和格式。这就是 Aspose.Email for .NET 发挥作用的地方。
 
 ```csharp
-//遍历附件
+//先决条件
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        //提取 TNEF 附件
-        var tnefAttachment = (TnefAttachment)attachment;
+        //在我们深入研究代码之前，请确保您具备以下先决条件：
+        var tnefAttachment = attachment;
 
-        //访问 TNEF 属性并根据需要进行修改
-        //tnefAttachment.属性...
+        //安装了 Visual Studio
+        //.NET Framework 或 .NET Core 项目
     }
 }
 ```
 
-## 保存带有修改后的附件的电子邮件
+## 安装
 
-修改 TNEF 附件后，您可以将电子邮件保存回文件。
+首先，您需要安装 Aspose.Email for .NET 库。您可以按照以下步骤执行此操作：
 
 ```csharp
-//保存修改后的邮箱
-message.Save("path/to/modified_email.eml");
+//打开您的 Visual Studio 项目。
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## 结论
+## 在解决方案资源管理器中右键单击您的项目。
 
-在本文中，我们探讨了如何使用 Aspose.Email for .NET 在 C# 中处理 TNEF 附件。您已了解如何加载带有 TNEF 附件的电子邮件、提取和修改这些附件以及保存修改后的电子邮件。
+选择“管理 NuGet 包”。
 
-## 常见问题解答
+## 搜索“Aspose.Email”并安装该软件包。
 
-### 如何安装 Aspose.Email for .NET？
+### 加载电子邮件消息
 
-您可以使用 NuGet Package Manager 安装 Aspose.Email for .NET。只需搜索“Aspose.Email”并安装适当的软件包。
+第一步是加载包含您要使用的附件的电子邮件。您可以这样做：
 
-### 我可以使用 Aspose.Email for .NET 处理其他电子邮件格式吗？
+### 加载电子邮件消息
 
-是的，Aspose.Email for .NET 支持各种电子邮件格式，包括 EML、MSG、PST 等。
+提取附件
 
-### 我可以将 Aspose.Email 用于商业项目吗？
+### 加载电子邮件后，您可以从中提取附件：
 
-是的，只要您拥有适当的许可证，您就可以在个人和商业项目中使用 Aspose.Email for .NET。
+提取附件数据
 
-### 在哪里可以找到更多文档和示例？
+### 进一步处理...
 
-如需更详细的文档和代码示例，您可以访问[Aspose.Email for .NET 文档](https://reference.aspose.com/email/net/).
+修改附件[要在修改附件时保留原始边界，您可以使用 Aspose.Email 库的功能。假设您要调整图像附件的大小：](https://reference.aspose.com/email/net/).

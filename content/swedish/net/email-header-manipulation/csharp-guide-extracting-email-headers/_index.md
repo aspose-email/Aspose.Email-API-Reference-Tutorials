@@ -1,112 +1,112 @@
 ---
-title: C# Guide - Extrahera e-posthuvuden
-linktitle: C# Guide - Extrahera e-posthuvuden
+title: C# Guide - Extracting Email Headers
+linktitle: C# Guide - Extracting Email Headers
 second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du extraherar e-postrubriker i C# med Aspose.Email för .NET. Steg-för-steg-guide med källkod för effektiv e-postanalys.
+description: Learn how to extract email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code for efficient email analysis. 
 type: docs
 weight: 15
 url: /sv/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
 
-Har du någonsin undrat hur man extraherar e-postrubriker med C#? E-postrubriker innehåller värdefull information om avsändaren, mottagaren, ämnet och diverse andra detaljer. I den här guiden går vi igenom steg-för-steg-processen för att extrahera e-postrubriker med det kraftfulla Aspose.Email for .NET-biblioteket. Det här biblioteket tillhandahåller en omfattande uppsättning funktioner för att arbeta med e-postmeddelanden i dina .NET-program.
+Have you ever wondered how to extract email headers using C#? Email headers contain valuable information about the sender, receiver, subject, and various other details. In this guide, we will walk you through the step-by-step process of extracting email headers using the powerful Aspose.Email for .NET library. This library provides a comprehensive set of features for working with emails in your .NET applications.
 
-## Introduktion till e-posthuvuden
+## Introduction to Email Headers
 
-E-postrubriker är viktiga komponenter i ett e-postmeddelande som tillhandahåller metadata om själva meddelandet. De inkluderar information som avsändarens e-postadress, mottagarens e-postadress, ämne, datum och mer. Att extrahera e-postrubriker är användbart för olika ändamål, inklusive att analysera äktheten av e-postmeddelanden, spåra e-postens sökväg och kategorisera meddelanden.
+Email headers are essential components of an email message that provide metadata about the message itself. They include information such as the sender's email address, recipient's email address, subject, date, and more. Extracting email headers is useful for various purposes, including analyzing the authenticity of emails, tracking the email's path, and categorizing messages.
 
-## Komma igång med Aspose.Email för .NET
+## Getting Started with Aspose.Email for .NET
 
-Aspose.Email för .NET är ett mångsidigt bibliotek som ger .NET-utvecklare möjlighet att arbeta med e-post sömlöst. Den erbjuder ett brett utbud av funktioner för att skapa, manipulera och extrahera data från e-postmeddelanden. Följ dessa steg för att komma igång:
+Aspose.Email for .NET is a versatile library that empowers .NET developers to work with emails seamlessly. It offers a wide range of features for creating, manipulating, and extracting data from email messages. To get started, follow these steps:
 
-### Installera Aspose.Email via NuGet
+### Installing Aspose.Email via NuGet
 
-För att inkludera Aspose.Email i ditt projekt måste du installera paketet Aspose.Email NuGet. Öppna din pakethanterarkonsol och kör följande kommando:
+To include Aspose.Email in your project, you need to install the Aspose.Email NuGet package. Open your package manager console and run the following command:
 
 ```csharp
 Install-Package Aspose.Email
 ```
 
-### Laddar ett e-postmeddelande
+### Loading an Email Message
 
-När du har lagt till Aspose.Email-biblioteket till ditt projekt kan du börja ladda e-postmeddelanden. Biblioteket stöder olika e-postformat, såsom EML och MSG. Så här kan du ladda ett e-postmeddelande:
+Once you've added the Aspose.Email library to your project, you can start loading email messages. The library supports various email formats, such as EML and MSG. Here's how you can load an email message:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-// Ladda ett e-postmeddelande
+// Load an email message
 var message = MailMessage.Load("path/to/email.eml");
 ```
 
-### Få åtkomst till e-postrubriker
+### Accessing Email Headers
 
- Det är enkelt att komma åt e-postrubriker med Aspose.Email. E-postrubriker representeras som en samling nyckel-värdepar. Du kan komma åt dem med hjälp av`Headers` egendom av`MailMessage` objekt:
+Accessing email headers using Aspose.Email is straightforward. Email headers are represented as a collection of key-value pairs. You can access them using the `Headers` property of the `MailMessage` object:
 
 ```csharp
-// Få åtkomst till e-postrubriker
+// Access email headers
 foreach (var header in message.Headers)
 {
     Console.WriteLine($"{header.Key}: {header.Value}");
 }
 ```
 
-## Extrahera specifik huvudinformation
+## Extracting Specific Header Information
 
-Medan e-postrubriker innehåller olika detaljer, kanske du är intresserad av att extrahera specifik information. Låt oss utforska hur man extraherar vanliga rubriker:
+While email headers contain various details, you might be interested in extracting specific information. Let's explore how to extract commonly used headers:
 
-### Från och till rubriker
+### From and To Headers
 
-Rubriken "Från" representerar avsändarens e-postadress, medan rubriken "Till" innehåller mottagarens adress. Du kan extrahera dem så här:
+The "From" header represents the sender's email address, while the "To" header contains the recipient's address. You can extract them like this:
 
 ```csharp
 string from = message.Headers["From"];
 string to = message.Headers["To"];
 ```
 
-### Ämnesrubrik
+### Subject Header
 
-Ämnesrubriken innehåller ämnet för e-postmeddelandet. Extrahera det med:
+The subject header holds the subject of the email. Extract it using:
 
 ```csharp
 string subject = message.Headers["Subject"];
 ```
 
-### Datumhuvud
+### Date Header
 
-Datumhuvudet anger när e-postmeddelandet skickades. Extrahera det enligt följande:
+The date header indicates when the email was sent. Extract it as follows:
 
 ```csharp
 string date = message.Headers["Date"];
 ```
 
-## Hantera komplexa scenarier
+## Handling Complex Scenarios
 
-I vissa fall kan e-postmeddelanden ha flera rubriker eller rubriker med komplexa strukturer. Aspose.Email-biblioteket förenklar hanteringen av sådana scenarier:
+In some cases, emails can have multiple headers or headers with complex structures. The Aspose.Email library simplifies handling such scenarios:
 
-### Flera e-postrubriker
+### Multiple Email Headers
 
-E-postmeddelanden kan ha flera instanser av samma rubrik. För att hämta alla "Mottagna" rubriker, till exempel:
+Emails might have multiple instances of the same header. To retrieve all "Received" headers, for instance:
 
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
 
-### MIME-version och innehållstyp rubriker
+### MIME-Version and Content-Type Headers
 
-Rubrikerna "MIME-version" och "Content-Type" är avgörande för rendering av e-postinnehåll. Få tillgång till dem så här:
+The "MIME-Version" and "Content-Type" headers are crucial for email content rendering. Access them like this:
 
 ```csharp
 string mimeVersion = message.Headers["MIME-Version"];
 string contentType = message.Headers["Content-Type"];
 ```
 
-## Använder extraherade huvuddata
+## Utilizing Extracted Header Data
 
-När du har extraherat rubrikinformationen kan du använda den på bästa sätt:
+Once you've extracted the header information, you can put it to good use:
 
-### Loggningshuvudinformation
+### Logging Header Information
 
-Du kan logga de extraherade rubrikdetaljerna för analys eller felsökningsändamål:
+You can log the extracted header details for analysis or debugging purposes:
 
 ```csharp
 foreach (var header in message.Headers)
@@ -115,9 +115,9 @@ foreach (var header in message.Headers)
 }
 ```
 
-### Anpassad rubrikanalys
+### Custom Header Analysis
 
-Du kan utföra anpassad analys av rubrikerna, som att kategorisera e-postmeddelanden baserat på specifika rubriker:
+You can perform custom analysis on the headers, such as categorizing emails based on specific headers:
 
 ```csharp
 if (subject.Contains("urgent"))
@@ -126,33 +126,33 @@ if (subject.Contains("urgent"))
 }
 ```
 
-## Slutsats
+## Conclusion
 
-Att extrahera e-postrubriker är en värdefull färdighet för att arbeta med e-postmeddelanden programmatiskt. Aspose.Email för .NET förenklar denna process och ger en robust uppsättning verktyg för att hantera e-postmeddelanden effektivt. Genom att följa stegen som beskrivs i den här guiden kan du med säkerhet extrahera och använda e-posthuvudinformation i dina C#-applikationer.
+Extracting email headers is a valuable skill for working with emails programmatically. Aspose.Email for .NET simplifies this process and provides a robust set of tools for handling email messages efficiently. By following the steps outlined in this guide, you can confidently extract and utilize email header information in your C# applications.
 
-## Vanliga frågor
+## FAQs
 
-### Hur kan jag installera Aspose.Email för .NET?
+### How can I install Aspose.Email for .NET?
 
-För att installera Aspose.Email via NuGet, använd följande kommando:
+To install Aspose.Email via NuGet, use the following command:
 ```csharp
 Install-Package Aspose.Email
 ```
 
-### Kan jag extrahera flera instanser av samma rubrik från ett e-postmeddelande?
+### Can I extract multiple instances of the same header from an email?
 
- Ja, du kan extrahera flera instanser av samma rubrik med hjälp av`GetValues` metod:
+Yes, you can extract multiple instances of the same header using the `GetValues` method:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
 
-### Vilka är några vanliga rubriker att extrahera från ett e-postmeddelande?
+### What are some common headers to extract from an email?
 
-Vanligt extraherade rubriker inkluderar "Från", "Till", "Ämne" och "Datum".
+Commonly extracted headers include "From," "To," "Subject," and "Date."
 
-### Hur kan jag kategorisera e-postmeddelanden baserat på specifika rubriker?
+### How can I categorize emails based on specific headers?
 
-Du kan analysera rubrikinformation med villkorliga uttalanden. Till exempel, för att kategorisera brådskande e-postmeddelanden:
+You can analyze header information using conditional statements. For example, to categorize urgent emails:
 ```csharp
 if (subject.Contains("urgent"))
 {
@@ -160,6 +160,6 @@ if (subject.Contains("urgent"))
 }
 ```
 
-### Var kan jag komma åt Aspose.Email-dokumentationen och ladda ner biblioteket?
+### Where can I access the Aspose.Email documentation and download the library?
 
-Du hittar dokumentationen på[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . För att ladda ner biblioteket, besök[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+You can find the documentation at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). To download the library, visit [https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).

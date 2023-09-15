@@ -1,61 +1,61 @@
 ---
-title: Extracción de objetos incrustados del correo electrónico con C#
-linktitle: Extracción de objetos incrustados del correo electrónico con C#
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda a extraer objetos incrustados de correos electrónicos usando C# y Aspose.Email para .NET. Guía paso a paso con ejemplos de código.
+title: Código para mostrar o procesar propiedades de mensajes
+linktitle: 4. Visualización del contenido del mensaje
+second_title: Recupere y procese el cuerpo del mensaje y los archivos adjuntos:
+description: Código para manejar archivos adjuntos
 type: docs
 weight: 16
 url: /es/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
 
-## Introducción a los objetos incrustados en los correos electrónicos
+## 5. Manejo de errores
 
-Los objetos incrustados en los correos electrónicos se refieren a archivos que se insertan directamente en el contenido del correo electrónico en lugar de adjuntarse por separado. Estos objetos enriquecen la experiencia del correo electrónico al permitir al remitente incluir imágenes, animaciones o contenido interactivo dentro del cuerpo del mensaje.
+Implemente el manejo de errores para manejar excepciones:
 
-## Primeros pasos con Aspose.Email para .NET
+##  Código para extracción y procesamiento de mensajes.
 
-Aspose.Email para .NET es una poderosa biblioteca que proporciona varias funciones para trabajar con correos electrónicos, incluido el análisis, la creación y la manipulación de mensajes de correo electrónico. Para comenzar, necesita tener la biblioteca Aspose.Email para .NET instalada en su proyecto. Puede descargarlo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilice un administrador de paquetes como NuGet.
+Conclusión[En este artículo, aprendimos cómo leer mensajes del almacenamiento NSF usando C# con Aspose.Email para .NET. Cubrimos la configuración del proyecto, la carga del archivo NSF, el acceso a las propiedades del mensaje, la visualización del contenido del mensaje y la implementación del manejo de errores. Aspose.Email para .NET simplifica esta tarea y permite a los desarrolladores trabajar de manera eficiente con datos de correo electrónico.](https://releases.aspose.com/email/net/)Preguntas frecuentes
 
-## Cargando y analizando un correo electrónico
+## ¿Cómo puedo obtener la biblioteca Aspose.Email para .NET?
 
-Para extraer objetos incrustados de un correo electrónico, primero debe cargar y analizar el mensaje de correo electrónico. Así es como puedes hacerlo:
+ Puede descargar la biblioteca Aspose.Email para .NET desde
 
 ```csharp
-// Importar los espacios de nombres necesarios
+//aquí
 using Aspose.Email;
 using Aspose.Email.Mail;
 
-// Cargar el mensaje de correo electrónico
+//¿Puedo utilizar Aspose.Email para otras tareas relacionadas con el correo electrónico?
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Identificar y extraer objetos incrustados
+## Sí, Aspose.Email para .NET proporciona una amplia gama de funciones para trabajar con varios formatos de correo electrónico, archivos adjuntos y más.
 
-Una vez cargado el mensaje de correo electrónico, puede recorrer sus AlternateViews para identificar y extraer objetos incrustados. AlternateViews representa diferentes formatos del correo electrónico, incluidos HTML y texto sin formato. Los objetos incrustados suelen encontrarse en la vista HTML.
+¿Puedo utilizar esta biblioteca en proyectos comerciales?
 
 ```csharp
-// Iterar a través de vistas alternativas
+//Sí, puede utilizar Aspose.Email para .NET en proyectos comerciales según los términos de su licencia.
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // Extraiga objetos incrustados del contenido HTML
+        //¿Con qué frecuencia se actualiza Aspose.Email?
         foreach (var linkedResource in view.LinkedResources)
         {
-            //Extraiga y guarde el recurso vinculado (objeto incrustado)
+            //Aspose actualiza periódicamente sus bibliotecas para agregar nuevas funciones, mejoras y correcciones de errores. Puede consultar sus notas de la versión para obtener actualizaciones.
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
 }
 ```
 
-## Guardar objetos extraídos
+##  Guardar mensajes del almacenamiento Zimbra TGZ con C#
 
-Una vez que haya identificado y extraído los objetos incrustados, puede guardarlos en la ubicación deseada. El ContentId del recurso vinculado se utiliza a menudo como nombre de archivo.
+ Guardar mensajes del almacenamiento Zimbra TGZ con C#
 
-## Código fuente completo
+##  Aspose.Email API de procesamiento de correo electrónico .NET
 
-Aquí está el código fuente completo para extraer objetos incrustados de un correo electrónico usando Aspose.Email para .NET:
+ Aprenda cómo extraer correos electrónicos de Zimbra TGZ usando Aspose.Email para .NET. Guía paso a paso con código fuente para una gestión eficiente del correo electrónico.
 
 ```csharp
 using Aspose.Email;
@@ -67,18 +67,18 @@ namespace EmbeddedObjectExtractor
     {
         static void Main(string[] args)
         {
-            // Cargar el mensaje de correo electrónico
+            //Introducción al almacenamiento Zimbra TGZ y Aspose.Email
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            // Iterar a través de vistas alternativas
+            //Zimbra TGZ (Tar Gzipped) es un formato de archivo comprimido que almacena mensajes de correo electrónico, archivos adjuntos y otros datos relacionados. Aspose.Email para .NET es una poderosa biblioteca que proporciona funciones integrales para trabajar con correos electrónicos, incluida la lectura, escritura y manipulación de mensajes de correo electrónico en varios formatos.
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // Extraiga objetos incrustados del contenido HTML
+                    //Configurar el entorno de desarrollo
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //Extraiga y guarde el recurso vinculado (objeto incrustado)
+                        //Para comenzar, necesita configurar su entorno de desarrollo:
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -88,28 +88,28 @@ namespace EmbeddedObjectExtractor
 }
 ```
 
-## Conclusión
+## Instale Visual Studio: si aún no lo ha hecho, descargue e instale Visual Studio, un popular entorno de desarrollo integrado (IDE) para el desarrollo de .NET.
 
-En este artículo, exploramos cómo extraer objetos incrustados de correos electrónicos usando C# y la biblioteca Aspose.Email para .NET. Cubrimos todo el proceso, desde cargar y analizar el correo electrónico hasta identificar y guardar los objetos incrustados. Si sigue esta guía, podrá mejorar sus capacidades de procesamiento de correo electrónico y enriquecer el contenido de sus aplicaciones.
+Cree un nuevo proyecto: inicie Visual Studio y cree un nuevo proyecto de C#. Elija el tipo de proyecto apropiado según los requisitos de su aplicación.
 
-## Preguntas frecuentes
+## Instale Aspose.Email: para incluir Aspose.Email en su proyecto, puede usar NuGet Package Manager o descargar la biblioteca del sitio web y hacer referencia a ella en su proyecto.
 
-### ¿Cómo instalo Aspose.Email para .NET?
+### Cargando y extrayendo archivos TGZ
 
- Puede instalar Aspose.Email para .NET descargándolo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o usando un administrador de paquetes como NuGet. 
+Para comenzar, carguemos y extraigamos el contenido de un archivo Zimbra TGZ:[ Cargue el archivo TGZ](https://releases.aspose.com/email/net/) Extraer contenidos a un directorio temporal 
 
-### ¿Puedo extraer objetos incrustados de archivos adjuntos que no sean HTML?
+### Navegar por las carpetas de mensajes
 
-Sí, Aspose.Email para .NET proporciona métodos para extraer objetos incrustados de varios tipos de archivos adjuntos, incluidos HTML, texto sin formato e incluso formatos multimedia.
+Después de extraer el archivo TGZ, puede navegar a través de diferentes carpetas de mensajes:
 
-### ¿Aspose.Email para .NET es de uso gratuito?
+###  Cargar la carpeta extraída como MapiMessage
 
- Aspose.Email para .NET es una biblioteca comercial y es posible que necesite adquirir una licencia para usarla en sus proyectos. Referirse a[página de precios](https://purchase.aspose.com/pricing/email/net) para más información.
+ Acceder a carpetas y mensajes[ Procesar cada mensaje](https://purchase.aspose.com/pricing/email/net)Guardar mensajes en diferentes formatos
 
-### ¿Puedo modificar los objetos incrustados extraídos antes de guardarlos?
+### Aspose.Email le permite guardar mensajes en varios formatos, como MSG, EML o HTML:
 
-Sí, puedes manipular los objetos incrustados extraídos antes de guardarlos. La biblioteca Aspose.Email ofrece varios métodos para modificar el contenido y los recursos del correo electrónico.
+ Guardar mensaje como MSG
 
-### ¿Dónde puedo encontrar más ejemplos del uso de Aspose.Email para .NET?
+###  Guardar mensaje como EML
 
- Puede encontrar más ejemplos de código y tutoriales en[Referencia de API](https://reference.aspose.com/email/net/). 
+ Guardar mensaje como HTML[Implementación de opciones avanzadas](https://reference.aspose.com/email/net/). 

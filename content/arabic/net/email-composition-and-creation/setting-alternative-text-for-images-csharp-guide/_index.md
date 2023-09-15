@@ -1,41 +1,41 @@
 ---
-title: إعداد نص بديل للصور - دليل C#
-linktitle: إعداد نص بديل للصور - دليل C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. تأكد من إمكانية الوصول بنص بديل واضح. الوثائق والكود المدرجة.
+title: قم بتحميل رسالة البريد الإلكتروني
+linktitle: تحقق من تشفير S/MIME
+second_title: عرض النتيجة
+description: خاتمة
 type: docs
 weight: 15
 url: /ar/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
 
-سيرشدك هذا الدليل خلال عملية إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET. يتم استخدام النص البديل، المعروف أيضًا باسم "النص البديل"، لتوفير وصف نصي للصورة في حالة تعذر عرض الصورة. Aspose.Email for .NET هي مكتبة قوية تسمح لك بالعمل مع رسائل البريد الإلكتروني والمرفقات بتنسيقات مختلفة. سنركز في هذا الدليل على إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام لغة C#.
+في هذا الدليل، اكتشفنا كيفية الاستفادة من إمكانيات Aspose.Email لـ .NET للتحقق من تشفير الرسائل. من خلال اكتشاف تشفير S/MIME والتحقق منه، وفك تشفير الرسائل، ومعالجة الاستثناءات، يمكنك ضمان الاتصال الآمن في تطبيقاتك. يعمل Aspose.Email على تبسيط العملية، مما يسمح لك بالتركيز على بناء وظائف بريد إلكتروني قوية وآمنة.
 
-## المتطلبات الأساسية
+## الأسئلة الشائعة
 
-قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
+كيف يتعامل Aspose.Email مع المرفقات المشفرة؟
 
-1. تم تثبيت Visual Studio أو أي بيئة تطوير متوافقة مع C#.
-2. Aspose.Email لمكتبة .NET. يمكنك استخدام NuGet Package Manager في Visual Studio.
+1.  يوفر Aspose.Email طرقًا لاستخراج وفك تشفير المرفقات من رسائل البريد الإلكتروني المشفرة. يمكنك استخدام ال
+2.  الطريقة بعد فك تشفير الرسالة لحفظ المرفقات على القرص.
 
-## الخطوة 1: إنشاء مشروع جديد
+## هل يمكنني استخدام Aspose.Email مع تطبيقات .NET Core؟
 
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع تطبيق وحدة تحكم C# جديد.
+1. نعم، Aspose.Email متوافق مع كل من تطبيقات .NET Framework و.NET Core، مما يمنحك المرونة في مشاريع التطوير الخاصة بك.
 
-## الخطوة 2: تثبيت Aspose.Email عبر NuGet
+## ما هي خوارزميات التشفير التي يدعمها Aspose.Email؟
 
-1. انقر بزر الماوس الأيمن على مشروعك في Solution Explorer وحدد "إدارة حزم NuGet".
-2. ابحث عن "Aspose.Email" وقم بتثبيت أحدث إصدار من الحزمة.
+1. يدعم Aspose.Email مجموعة واسعة من خوارزميات التشفير، بما في ذلك AES وRSA وTripleDES، لضمان أمان رسائل البريد الإلكتروني الخاصة بك.
+2. هل من الممكن تشفير أجزاء محددة فقط من البريد الإلكتروني؟
 
-## الخطوة 3: إضافة استخدام البيانات
+## نعم، يتيح لك Aspose.Email تشفير أجزاء معينة من رسالة البريد الإلكتروني بشكل انتقائي، مثل المرفقات أو أقسام معينة من نص البريد الإلكتروني.
 
 ```csharp
 using Aspose.Email.Mail;
 using Aspose.Email.Mime;
 ```
 
-## الخطوة 4: تحميل وتعديل رسالة البريد الإلكتروني
+## أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
 
-1.  قم بتحميل رسالة البريد الإلكتروني باستخدام`MailMessage` فصل:
+1.  لمزيد من المعلومات التفصيلية والأمثلة والوثائق، قم بزيارة`MailMessage`Aspose.Email لوثائق .NET
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -44,60 +44,40 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  إنشاء مثيل لـ`MhtmlMessageFormatter`فئة تنسيق الرسالة:
+3.  صفحة.
 
 ```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-3. قم بتحميل محتوى HTML لرسالة البريد الإلكتروني:
+##  تقنية C# - تحويل نص HTML إلى نص عادي
 
+ تقنية C# - تحويل نص HTML إلى نص عادي 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+message.AlternateViews.Add(htmlView);
 ```
 
-## الخطوة 5: إضافة نص بديل للصور
+##  Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 
-1.  تحديد موقع`AlternateView` تحتوي على نص HTML والصور:
-
-```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  تحديد موقع`LinkedResource` تمثل الصورة:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. قم بتعيين النص البديل للصورة:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
-```
-
-## الخطوة 6: حفظ وإرسال البريد الإلكتروني
-
-1. احفظ الرسالة المعدلة في ملف أو أرسلها باستخدام الطريقة التي تريدها:
+1.  تعلم كيفية تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي بسهولة باستخدام Aspose.Email for .NET. دليل مفصل والكود. اكتشف الآن!
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
 ```
 
-## خاتمة
+## في اتصالات البريد الإلكتروني الحديثة، يعمل تنسيق HTML على تحسين المظهر المرئي للرسائل. ومع ذلك، هناك مواقف قد تحتاج فيها إلى تحويل محتوى HTML إلى نص عادي. يقدم Aspose.Email for .NET حلاً مباشرًا لتحقيق ذلك. في هذا الدليل، سنقدم برنامجًا تعليميًا خطوة بخطوة بالإضافة إلى التعليمات البرمجية المصدر حول كيفية تحويل نص HTML لرسالة بريد إلكتروني إلى نص عادي باستخدام Aspose.Email لـ .NET.
 
-تعلمت في هذا الدليل كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET. باتباع الخطوات الموضحة أعلاه، يمكنك التأكد من أن محتوى بريدك الإلكتروني يظل سهل الوصول إليه وغني بالمعلومات حتى عندما لا يمكن عرض الصور.
+مقدمة إلى Aspose.Email لـ .NET
 
-## التعليمات
+## Aspose.Email for .NET هي مكتبة قوية تسهل العمل مع تنسيقات ووظائف البريد الإلكتروني المختلفة داخل تطبيقات .NET.
 
-## كيف يمكنني تنزيل مكتبة Aspose.Email؟
+## لماذا تحويل HTML إلى نص عادي؟
 
-يمكنك تنزيل مكتبة Aspose.Email من إصدارات Aspose أو تثبيتها عبر NuGet Package Manager في Visual Studio.
+يعد تحويل محتوى HTML إلى نص عادي مفيدًا لسيناريوهات مثل عرض محتوى البريد الإلكتروني بتنسيق مبسط أو استخراج معلومات مهمة لمزيد من المعالجة.
 
-### كيف أقوم بإضافة الصور كموارد مرتبطة في رسالة بريد إلكتروني؟
+### ابدء
 
- لإضافة صور كموارد مرتبطة في رسالة بريد إلكتروني، يمكنك استخدام`LinkedResource`فصل. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام`cid:` مخطط. للحصول على معلومات مفصلة، راجع[وثائق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email لـ .NET؟
+إعداد بيئة التطوير الخاصة بك`LinkedResource`تأكد من أن لديك ما يلي:`cid:`Visual Studio أو IDE المفضل[تم تثبيت .NET Framework أو .NET Core](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+### تثبيت Aspose.Email عبر NuGet
 
- يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في[مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).
+افتح مشروعك في Visual Studio.[انتقل إلى "الأدوات" > "مدير حزم NuGet" > "إدارة حزم NuGet للحل."](https://reference.aspose.com/email/net/).

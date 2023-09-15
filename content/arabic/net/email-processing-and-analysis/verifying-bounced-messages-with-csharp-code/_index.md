@@ -1,39 +1,39 @@
 ---
-title: التحقق من الرسائل المرتدة باستخدام رمز C#
-linktitle: التحقق من الرسائل المرتدة باستخدام رمز C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: أتمتة التحقق من الرسائل المرتدة باستخدام C# وAspose.Email لـ .NET. إدارة قوائم البريد الإلكتروني بسهولة وتعزيز فعالية الحملة.
+title: Verifying Bounced Messages with C# Code
+linktitle: Verifying Bounced Messages with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Automate bounce message verification using C# & Aspose.Email for .NET. Effortlessly manage email lists & enhance campaign effectiveness. 
 type: docs
 weight: 11
 url: /ar/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
 ---
 
-هل سئمت من التعامل مع رسائل البريد الإلكتروني المرتدة؟ يمكن أن تشكل إدارة رسائل البريد الإلكتروني المرتدة مشكلة حقيقية، خاصة عند تشغيل حملة بريد إلكتروني أو الاحتفاظ بقائمة بريدية كبيرة. لحسن الحظ، هناك حل يمكنه مساعدتك في التحقق من الرسائل المرتدة والتعامل معها بكفاءة باستخدام كود C# ومكتبة Aspose.Email لـ .NET. في هذا الدليل التفصيلي، سنرشدك خلال عملية التحقق من الرسائل المرتدة والتأكد من أن اتصالاتك عبر البريد الإلكتروني تظل فعالة وخالية من المتاعب.
+Are you tired of dealing with bounced email messages? Managing bounced emails can be a real headache, especially when you're running an email campaign or maintaining a large mailing list. Fortunately, there's a solution that can help you efficiently verify and handle bounced messages using C# code and the Aspose.Email for .NET library. In this step-by-step guide, we'll walk you through the process of verifying bounced messages and ensuring that your email communication remains effective and hassle-free.
 
-## التثبيت والإعداد
+## Installation and Setup
 
-قبل أن نتعمق في التعليمات البرمجية، دعونا نتأكد من إعداد كل شيء للبدء.
+Before we dive into the code, let's ensure that you have everything set up to get started.
 
-### تثبيت Aspose.Email لـ .NET
+### Installing Aspose.Email for .NET
 
-Aspose.Email for .NET هي مكتبة قوية تعمل على تبسيط المهام المتعلقة بالبريد الإلكتروني في تطبيقات C#. لتثبيته، اتبع الخطوات التالية:
+Aspose.Email for .NET is a powerful library that simplifies email-related tasks in C# applications. To install it, follow these steps:
 
-1. افتح مشروع Visual Studio الخاص بك.
-2. انتقل إلى "الأدوات" > "مدير حزم NuGet" > "إدارة حزم NuGet للحل."
-3. ابحث عن "Aspose.Email" وقم بتثبيت الحزمة.
+1. Open your Visual Studio project.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-### إنشاء مشروع C# جديد
+### Creating a New C# Project
 
-إذا لم يكن لديك مشروع C# حتى الآن، فإليك كيفية إنشاء واحد:
+If you don't have a C# project yet, here's how you can create one:
 
-1. افتح فيجوال ستوديو.
-2. انقر على "إنشاء مشروع جديد".
-3. حدد "تطبيق وحدة التحكم (.NET Core)" أو "تطبيق وحدة التحكم (.NET Framework)" حسب تفضيلاتك.
-4. اختر اسمًا وموقعًا لمشروعك.
+1. Open Visual Studio.
+2. Click on "Create a new project."
+3. Select "Console App (.NET Core)" or "Console App (.NET Framework)" depending on your preference.
+4. Choose a name and location for your project.
 
-### إضافة المراجع ومساحات الأسماء
+### Adding References and Namespaces
 
-بمجرد الانتهاء من إعداد مشروعك، ستحتاج إلى إضافة المراجع ومساحات الأسماء اللازمة لبدء استخدام Aspose.Email:
+Once you have your project set up, you'll need to add the necessary references and namespaces to start using Aspose.Email:
 
 ```csharp
 using Aspose.Email;
@@ -41,103 +41,98 @@ using Aspose.Email.Imap;
 using Aspose.Email.Mail;
 ```
 
-## الاتصال بخادم البريد الإلكتروني
+## Connecting to the Email Server
 
-للاتصال بخادم البريد الإلكتروني، ستحتاج إلى تكوين إعدادات الخادم وإنشاء اتصال.
+To connect to the email server, you'll need to configure the server settings and establish a connection.
 
 ```csharp
-// تكوين الخادم
+// Server configuration
 string host = "your-email-server.com";
 int port = 993;
 string username = "your-username";
 string password = "your-password";
 
-// قم بإنشاء مثيل لـ ImapClient
-using (ImapClient client = new ImapClient())
+// Create an instance of the ImapClient
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // الاتصال بالخادم
-    client.Connect(host, port, true);
-
-    // تسجيل الدخول
-    client.Login(username, password);
-    
-    // سيتم وضع الكود الخاص بك لاسترداد الرسائل المرتدة وتحليلها هنا
+   
+    // Your code for retrieving and analyzing bounced messages will go here
 }
 ```
 
-## استرجاع الرسائل المرتدة
+## Retrieving Bounced Messages
 
-بمجرد الاتصال، يمكنك جلب رسائل البريد الوارد وتحديد رسائل البريد الإلكتروني المرتدة.
+Once connected, you can fetch inbox messages and identify bounced emails.
 
 ```csharp
-// حدد مجلد البريد الوارد
+// Select the inbox folder
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// البحث عن الرسائل المرتدة
+// Search for bounced messages
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
-    // سيتم وضع الكود الخاص بك لتحليل الإشعارات المرتدة هنا
+    // Your code to analyze bounce notifications will go here
 }
 ```
 
-## تحليل الإخطارات المرتدة
+## Analyzing Bounce Notifications
 
-تحتوي الإشعارات المرتدة على معلومات قيمة حول سبب ارتداد رسالة البريد الإلكتروني. يمكنك استخراج هذه التفاصيل وتصنيف أنواع الارتداد.
+Bounce notifications contain valuable information about why an email bounced. You can extract these details and classify bounce types.
 
 ```csharp
-// جلب الرسالة
+// Fetch the message
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//تحقق من وجود رؤوس ترتد
+// Check for bounce headers
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
     string bounceReason = message.Headers["X-Failure-Reason"];
     
-    // سيتم وضع الكود الخاص بك للتعامل مع أنواع الارتداد المختلفة هنا
+    // Your code to handle different bounce types will go here
 }
 ```
 
-## تحديث قائمة البريد الإلكتروني الخاصة بك
+## Updating Your Email List
 
-بناءً على تحليل الارتداد، يمكنك تحديث قائمة بريدك الإلكتروني لإزالة العناوين المرتدة وإدارة عمليات إلغاء الاشتراك.
+Based on the bounce analysis, you can update your email list to remove bounced addresses and manage unsubscribes.
 
 ```csharp
-// قم بإزالة العناوين المرتدة من قائمتك
+// Remove bounced addresses from your list
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {
-    // قم بإزالة العنوان من قائمتك
+    // Remove the address from your list
 }
 
-// التعامل مع إلغاء الاشتراك
+// Handle unsubscribes
 if (bounceReason.Contains("unsubscribe"))
 {
-    // قم بتحديث قائمة إلغاء الاشتراك الخاصة بك
+    // Update your unsubscribe list
 }
 ```
 
-## خاتمة
+## Conclusion
 
-تعد أتمتة عملية التحقق من الرسائل المرتدة أمرًا بالغ الأهمية للحفاظ على قائمة بريد إلكتروني سليمة وتحسين حملات البريد الإلكتروني الخاصة بك. باستخدام Aspose.Email for .NET وكود C# المتوفر في هذا الدليل، يمكنك تبسيط العملية بأكملها والتركيز على تقديم محتوى قيم للمشتركين لديك.
+Automating the process of verifying bounced messages is crucial for maintaining a healthy email list and optimizing your email campaigns. With Aspose.Email for .NET and the C# code provided in this guide, you can streamline the entire process and focus on delivering valuable content to your subscribers.
 
-## الأسئلة الشائعة
+## FAQs
 
-### ما مدى دقة تحليل الارتداد؟
+### How accurate is the bounce analysis?
 
-تحليل الارتداد الذي يوفره الكود دقيق تمامًا. فهو يصنف أنواع الارتداد بناءً على رؤوس البريد الإلكتروني القياسية ويساعدك على فهم سبب ارتداد رسائل البريد الإلكتروني.
+The bounce analysis provided by the code is quite accurate. It categorizes bounce types based on standard email headers and helps you understand why emails bounced.
 
-### هل يمكنني استخدام هذا الأسلوب لأي خدمة بريد إلكتروني؟
+### Can I use this approach for any email service?
 
-نعم، يمكنك استخدام هذا الأسلوب مع أي خدمة بريد إلكتروني تدعم IMAP. فقط تأكد من تحديث إعدادات الخادم وفقًا لذلك.
+Yes, you can use this approach with any email service that supports IMAP. Just make sure to update the server settings accordingly.
 
-### ماذا لو كان لدي مزيج من الارتدادات الناعمة والصلبة؟
+### What if I have a mix of soft and hard bounces?
 
-يسمح لك الكود بالتمييز بين أنواع الارتداد المختلفة، سواء كانت ارتدادات ناعمة (مشاكل مؤقتة) أو ارتدادات ثابتة (مشاكل دائمة).
+The code allows you to differentiate between different bounce types, whether they are soft bounces (temporary issues) or hard bounces (permanent issues).
 
-## خاتمة
+## Conclusion
 
-في الختام، يمكن أن تكون إدارة رسائل البريد الإلكتروني المرتدة مهمة صعبة تتطلب في كثير من الأحيان اهتمامًا دقيقًا ومعالجة فعالة. يمكن أن تنتج رسائل البريد الإلكتروني المرتدة عن أسباب مختلفة، بما في ذلك العناوين غير الصالحة، أو صناديق البريد الممتلئة، أو مشكلات مؤقتة في الخادم. قد يؤدي الفشل في معالجة هذه الإشعارات المرتدة على الفور إلى حملات بريد إلكتروني غير فعالة، وانخفاض معدلات التسليم، والإضرار المحتمل بسمعة المرسل.
+In conclusion, managing bounced email messages can be a challenging task that often requires careful attention and efficient handling. Bounced emails can result from various reasons, including invalid addresses, full mailboxes, or temporary server issues. Failing to address these bounce notifications promptly can lead to ineffective email campaigns, decreased deliverability rates, and potential damage to your sender reputation.
 
-ومع ذلك، بفضل قوة كود C# ومكتبة Aspose.Email لـ .NET، تصبح عملية التحقق من الرسائل المرتدة أكثر قابلية للإدارة والأتمتة. باتباع الدليل التفصيلي الموضح في هذه المقالة، يمكنك الاتصال بخادم البريد الإلكتروني الخاص بك بسلاسة واسترداد الرسائل المرتدة وتحليل إشعارات الارتداد بدقة. تمكنك مقتطفات التعليمات البرمجية المقدمة من استخراج المعلومات ذات الصلة، وتصنيف أنواع الارتداد، وتحديث قوائم البريد الإلكتروني الخاصة بك وفقًا لذلك.
+However, with the power of C# code and the Aspose.Email for .NET library, the process of verifying bounced messages becomes more manageable and automated. By following the step-by-step guide outlined in this article, you can seamlessly connect to your email server, retrieve bounced messages, and analyze bounce notifications with precision. The code snippets provided enable you to extract relevant information, categorize bounce types, and update your email lists accordingly.

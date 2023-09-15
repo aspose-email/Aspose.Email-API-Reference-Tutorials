@@ -1,39 +1,39 @@
 ---
-title: Verifiera avvisade meddelanden med C#-kod
-linktitle: Verifiera avvisade meddelanden med C#-kod
+title: Verifying Bounced Messages with C# Code
+linktitle: Verifying Bounced Messages with C# Code
 second_title: Aspose.Email .NET Email Processing API
-description: Automatisera verifiering av avvisningsmeddelanden med C# & Aspose.Email för .NET. Hantera e-postlistor utan ansträngning och förbättra kampanjens effektivitet.
+description: Automate bounce message verification using C# & Aspose.Email for .NET. Effortlessly manage email lists & enhance campaign effectiveness. 
 type: docs
 weight: 11
 url: /sv/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
 ---
 
-Är du trött på att hantera studsade e-postmeddelanden? Att hantera studsade e-postmeddelanden kan vara en verklig huvudvärk, särskilt när du kör en e-postkampanj eller har en stor e-postlista. Lyckligtvis finns det en lösning som kan hjälpa dig att effektivt verifiera och hantera avvisade meddelanden med hjälp av C#-koden och Aspose.Email för .NET-biblioteket. I den här steg-för-steg-guiden går vi igenom processen för att verifiera avvisade meddelanden och se till att din e-postkommunikation förblir effektiv och problemfri.
+Are you tired of dealing with bounced email messages? Managing bounced emails can be a real headache, especially when you're running an email campaign or maintaining a large mailing list. Fortunately, there's a solution that can help you efficiently verify and handle bounced messages using C# code and the Aspose.Email for .NET library. In this step-by-step guide, we'll walk you through the process of verifying bounced messages and ensuring that your email communication remains effective and hassle-free.
 
-## Installation och installation
+## Installation and Setup
 
-Innan vi dyker in i koden, låt oss se till att du har allt inställt för att komma igång.
+Before we dive into the code, let's ensure that you have everything set up to get started.
 
-### Installera Aspose.Email för .NET
+### Installing Aspose.Email for .NET
 
-Aspose.Email för .NET är ett kraftfullt bibliotek som förenklar e-postrelaterade uppgifter i C#-applikationer. För att installera det, följ dessa steg:
+Aspose.Email for .NET is a powerful library that simplifies email-related tasks in C# applications. To install it, follow these steps:
 
-1. Öppna ditt Visual Studio-projekt.
-2. Gå till "Verktyg" > "NuGet Package Manager" > "Hantera NuGet-paket för lösning."
-3. Sök efter "Aspose.Email" och installera paketet.
+1. Open your Visual Studio project.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-### Skapa ett nytt C#-projekt
+### Creating a New C# Project
 
-Om du inte har ett C#-projekt ännu, så här kan du skapa ett:
+If you don't have a C# project yet, here's how you can create one:
 
-1. Öppna Visual Studio.
-2. Klicka på "Skapa ett nytt projekt."
-3. Välj "Console App (.NET Core)" eller "Console App (.NET Framework)" beroende på vad du föredrar.
-4. Välj ett namn och en plats för ditt projekt.
+1. Open Visual Studio.
+2. Click on "Create a new project."
+3. Select "Console App (.NET Core)" or "Console App (.NET Framework)" depending on your preference.
+4. Choose a name and location for your project.
 
-### Lägga till referenser och namnområden
+### Adding References and Namespaces
 
-När du har konfigurerat ditt projekt måste du lägga till nödvändiga referenser och namnutrymmen för att börja använda Aspose.Email:
+Once you have your project set up, you'll need to add the necessary references and namespaces to start using Aspose.Email:
 
 ```csharp
 using Aspose.Email;
@@ -41,103 +41,98 @@ using Aspose.Email.Imap;
 using Aspose.Email.Mail;
 ```
 
-## Ansluter till e-postservern
+## Connecting to the Email Server
 
-För att ansluta till e-postservern måste du konfigurera serverinställningarna och upprätta en anslutning.
+To connect to the email server, you'll need to configure the server settings and establish a connection.
 
 ```csharp
-// Serverkonfiguration
+// Server configuration
 string host = "your-email-server.com";
 int port = 993;
 string username = "your-username";
 string password = "your-password";
 
-// Skapa en instans av ImapClient
-using (ImapClient client = new ImapClient())
+// Create an instance of the ImapClient
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Anslut till servern
-    client.Connect(host, port, true);
-
-    // Logga in
-    client.Login(username, password);
-    
-    // Din kod för att hämta och analysera avvisade meddelanden kommer hit
+   
+    // Your code for retrieving and analyzing bounced messages will go here
 }
 ```
 
-## Hämtar avvisade meddelanden
+## Retrieving Bounced Messages
 
-När du är ansluten kan du hämta meddelanden i inkorgen och identifiera avvisade e-postmeddelanden.
+Once connected, you can fetch inbox messages and identify bounced emails.
 
 ```csharp
-// Välj inkorgsmappen
+// Select the inbox folder
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// Sök efter avvisade meddelanden
+// Search for bounced messages
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
-    // Din kod för att analysera avvisningsmeddelanden kommer hit
+    // Your code to analyze bounce notifications will go here
 }
 ```
 
-## Analysera avvisningsmeddelanden
+## Analyzing Bounce Notifications
 
-Avvisningsmeddelanden innehåller värdefull information om varför ett e-postmeddelande studsade. Du kan extrahera dessa detaljer och klassificera avvisningstyper.
+Bounce notifications contain valuable information about why an email bounced. You can extract these details and classify bounce types.
 
 ```csharp
-// Hämta meddelandet
+// Fetch the message
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Kontrollera om det finns studsrubriker
+// Check for bounce headers
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
     string bounceReason = message.Headers["X-Failure-Reason"];
     
-    // Din kod för att hantera olika avvisningstyper kommer hit
+    // Your code to handle different bounce types will go here
 }
 ```
 
-## Uppdatera din e-postlista
+## Updating Your Email List
 
-Baserat på avvisningsanalysen kan du uppdatera din e-postlista för att ta bort avvisade adresser och hantera avregistreringar.
+Based on the bounce analysis, you can update your email list to remove bounced addresses and manage unsubscribes.
 
 ```csharp
-// Ta bort avvisade adresser från din lista
+// Remove bounced addresses from your list
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {
-    // Ta bort adressen från din lista
+    // Remove the address from your list
 }
 
-// Hantera avanmälan
+// Handle unsubscribes
 if (bounceReason.Contains("unsubscribe"))
 {
-    // Uppdatera din avregistreringslista
+    // Update your unsubscribe list
 }
 ```
 
-## Slutsats
+## Conclusion
 
-Att automatisera processen för att verifiera avvisade meddelanden är avgörande för att upprätthålla en sund e-postlista och optimera dina e-postkampanjer. Med Aspose.Email för .NET och C#-koden som finns i den här guiden kan du effektivisera hela processen och fokusera på att leverera värdefullt innehåll till dina prenumeranter.
+Automating the process of verifying bounced messages is crucial for maintaining a healthy email list and optimizing your email campaigns. With Aspose.Email for .NET and the C# code provided in this guide, you can streamline the entire process and focus on delivering valuable content to your subscribers.
 
-## Vanliga frågor
+## FAQs
 
-### Hur exakt är avvisningsanalysen?
+### How accurate is the bounce analysis?
 
-Avvisningsanalysen som tillhandahålls av koden är ganska korrekt. Den kategoriserar avvisningstyper baserat på vanliga e-postrubriker och hjälper dig att förstå varför e-postmeddelanden studsade.
+The bounce analysis provided by the code is quite accurate. It categorizes bounce types based on standard email headers and helps you understand why emails bounced.
 
-### Kan jag använda detta tillvägagångssätt för vilken e-posttjänst som helst?
+### Can I use this approach for any email service?
 
-Ja, du kan använda detta tillvägagångssätt med alla e-posttjänster som stöder IMAP. Se bara till att uppdatera serverinställningarna därefter.
+Yes, you can use this approach with any email service that supports IMAP. Just make sure to update the server settings accordingly.
 
-### Vad händer om jag har en blandning av mjuka och hårda studsar?
+### What if I have a mix of soft and hard bounces?
 
-Koden låter dig skilja på olika studstyper, oavsett om det är mjuka studsar (tillfälliga problem) eller hårda studsar (permanenta problem).
+The code allows you to differentiate between different bounce types, whether they are soft bounces (temporary issues) or hard bounces (permanent issues).
 
-## Slutsats
+## Conclusion
 
-Sammanfattningsvis kan det vara en utmanande uppgift att hantera avvisade e-postmeddelanden som ofta kräver noggrann uppmärksamhet och effektiv hantering. Avvisade e-postmeddelanden kan bero på olika orsaker, inklusive ogiltiga adresser, fulla brevlådor eller tillfälliga serverproblem. Om du inte åtgärdar dessa avvisningsmeddelanden omedelbart kan det leda till ineffektiva e-postkampanjer, minskade leveranshastigheter och potentiell skada på ditt avsändarrykte.
+In conclusion, managing bounced email messages can be a challenging task that often requires careful attention and efficient handling. Bounced emails can result from various reasons, including invalid addresses, full mailboxes, or temporary server issues. Failing to address these bounce notifications promptly can lead to ineffective email campaigns, decreased deliverability rates, and potential damage to your sender reputation.
 
-Men med kraften i C#-koden och Aspose.Email för .NET-biblioteket blir processen att verifiera avvisade meddelanden mer hanterbar och automatiserad. Genom att följa den steg-för-steg-guide som beskrivs i den här artikeln kan du sömlöst ansluta till din e-postserver, hämta avvisade meddelanden och analysera avvisningsmeddelanden med precision. De tillhandahållna kodavsnitten gör att du kan extrahera relevant information, kategorisera avvisningstyper och uppdatera dina e-postlistor därefter.
+However, with the power of C# code and the Aspose.Email for .NET library, the process of verifying bounced messages becomes more manageable and automated. By following the step-by-step guide outlined in this article, you can seamlessly connect to your email server, retrieve bounced messages, and analyze bounce notifications with precision. The code snippets provided enable you to extract relevant information, categorize bounce types, and update your email lists accordingly.

@@ -1,160 +1,92 @@
 ---
-title: C# Kodunu Kullanarak Takvim Etkinliklerini İşleme
-linktitle: C# Kodunu Kullanarak Takvim Etkinliklerini İşleme
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: C# ve Aspose.Email for .NET kullanarak takvim etkinliklerini işlemeyi öğrenin. Kolaylıkla etkileşimli programlar oluşturun.
+title:3. Adım: E-posta Adreslerini Doğrulamak için Kod Yazın
+linktitle: Aç
+second_title: Aspose.Email'i kullanarak e-posta adreslerini doğrulamak için aşağıdaki kodu dosyalayın ve yazın:
+description: Doğrulanacak e-posta adresi
 type: docs
 weight: 15
 url: /tr/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
 
-## Aspose.Email NuGet Paketinin Kurulumu
 
-Başlamak için bir .NET projenizin kurulu olduğundan emin olun. Aspose.Email NuGet paketini projenizin Paket Yönetici Konsolunda aşağıdaki komutu kullanarak kurabilirsiniz:
+ EmailValidator sınıfının bir örneğini oluşturun
 
-```csharp
-Install-Package Aspose.Email
-```
+##  E-posta adresini doğrula
 
-## Uygulamanın Başlatılması
+Adım 4: Uygulamayı Çalıştırın
 
- Gerekli kullanma yönergesini ekleyerek ve örneğini oluşturarak Aspose.Email kütüphanesini uygulamanızda başlatın.`MailMessage` sınıf:
+## F5 tuşuna basarak veya Visual Studio'da "Başlat" düğmesine tıklayarak uygulamanızı oluşturun ve çalıştırın. Uygulama yürütülecek ve sağlanan e-posta adresinin geçerli olup olmadığını gösterecektir.
 
-```csharp
-using Aspose.Email;
+SSS
 
-// Uygulamayı başlat
-MailMessage message = new MailMessage();
-```
+1. Aspose.Email e-posta adreslerini nasıl doğrular?[Aspose.Email, e-posta adreslerini doğrulamak için normal ifadeler ve sözdizimi kontrollerinin bir kombinasyonunu kullanır. Geçerli bir e-posta adresini oluşturan uygun biçimlendirmeyi, geçerli alan adlarını ve diğer özellikleri kontrol eder.](https://releases.aspose.com/email/net/).
 
-## Takvim Verilerini Yükleme
+2. Doğrulama kurallarını özelleştirebilir miyim?
 
-## Takvim Örneği Oluşturma
+3.  Evet, doğrulama kurallarını, tarafından sağlanan özellikleri ve yöntemleri kullanarak özelleştirebilirsiniz.
 
- Takvim etkinlikleriyle çalışmak için bir örneğini oluşturmanız gerekir.`Calendar` Aspose.Email kütüphanesinden sınıf:
+##  Aspose.Email kütüphanesinden sınıf. Bakın
+
+Aspose.Email for .NET API Referansı
 
 ```csharp
-Calendar calendar = new Calendar();
-```
-
-## ICS Dosyasından Takvim Verilerini Yükleme
-
- Takvim verilerini bir ICS (iCalendar) dosyasından yükleyebilirsiniz.`CalendarReader` sınıf:
-
-```csharp
-CalendarReader reader = new CalendarReader("path/to/your/calendar.ics");
-Calendar loadedCalendar = reader.Read();
-```
-
-## Takvim Etkinliklerini Oluşturma
-
-## İşlenmiş Çıktı Kapsayıcı Oluşturma
-
-Takvim etkinliklerini oluşturmak için çıktıyı tutacak bir kaba ihtiyacınız vardır. Kullanarak bir HTML kapsayıcısı oluşturabilirsiniz.`HtmlView` sınıf:
-
-```csharp
-HtmlView htmlView = new HtmlView();
-```
-
-## Oluşturma Seçeneklerini Uygulama
-
-Oluşturmadan önce çıktının görünümünü özelleştirmek için çeşitli seçenekler uygulayabilirsiniz. Örneğin, oluşturmanın başlangıç ve bitiş tarihlerini ayarlayabilirsiniz:
-
-```csharp
-htmlView.CalendarStart = DateTime.Today;
-htmlView.CalendarEnd = DateTime.Today.AddDays(7);
-```
-
-## Takvim Etkinliklerini Oluşturma
-
- Takvim etkinliklerini kullanarak işleme`Render` yöntem:
-
-```csharp
-string renderedOutput = htmlView.Render(calendar);
-```
-
-## Özelleştirme
-
-## İşlenen Çıktıyı Şekillendirme
-
-HTML kabının CSS özelliklerini değiştirerek oluşturulan çıktıya stil verebilirsiniz:
-
-```csharp
-htmlView.Styles = "body { font-family: Arial, sans-serif; }";
-```
-
-## Etkinlik Ayrıntılarını Ekleme
-
-Etkinlik adları ve açıklamaları gibi etkinlik ayrıntılarını ekleyerek oluşturulan çıktıyı geliştirin:
-
-```csharp
-htmlView.EventFormatter = (eventInfo) =>
+//daha fazla ayrıntı için.
+string dataDir = "Your Data Directory";
+string fileName = "Meeting with Recurring Occurrences.msg";
+MailMessage msg = MailMessage.Load(dataDir + fileName);
+MhtSaveOptions options = new MhtSaveOptions();
 {
-    return $"<b>{eventInfo.StartDate}: {eventInfo.Summary}</b><br>{eventInfo.Description}<br><br>";
+    options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent;
+
+    //Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
+
+    // Aspose.Email for .NET'e ilişkin kapsamlı belgeleri ve kod örneklerini şu adreste bulabilirsiniz:
+    if (options.FormatTemplates.ContainsKey(MhtTemplateName.Start))
+        options.FormatTemplates[MhtTemplateName.Start] = @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>"; 
+    else
+        options.FormatTemplates.Add(MhtTemplateName.Start, @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
+
+    //Aspose.Email for .NET API Referansı
 };
+
+msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
 ```
 
-## Kullanıcı Etkileşimini Yönetme
+##  İnternet sitesi.
 
-## Kullanıcı Tıklamalarına Yanıt Verme
+Çözüm
 
-Kullanıcı tıklamalarına yanıt vererek oluşturulan etkinlikleri etkileşimli hale getirebilirsiniz. Örneğin, bir etkinliğe tıklandığında etkinlik ayrıntılarının açılması:
+- Bu kılavuzda, C# kodunu ve Aspose.Email for .NET'i kullanarak e-posta adreslerini nasıl doğrulayacağınızı öğrendiniz. Verilen adımları takip ederek e-posta adresi doğrulamasını uygulamalarınıza kolayca entegre edebilir, kullanıcılar tarafından sağlanan e-posta adreslerinin doğru biçimlendirilmiş ve geçerli olmasını sağlayabilirsiniz.`MailMessage.Load` method.
 
-```csharp
-htmlView.EventClick += (sender, eventArgs) =>
-{
-    EventInfo clickedEvent = eventArgs.Event;
-    // Olay tıklama mantığını burada yönetin
-};
-```
+- We create an `MhtSaveOptions` object to specify how we want to save the output.
 
-## Etkinlikler Arasında Gezinme
+- In the `options.MhtFormatOptions`, we specify that we want to render calendar event information.
 
-Kullanıcıların gezinme düğmelerini kullanarak etkinlikler arasında gezinmesine olanak tanıyın:
+- We then have the option to format the output details for various properties like Start, End, Recurrence, RecurrencePattern, Organizer, and RequiredAttendees.
 
-```csharp
-htmlView.ShowNavigation = true;
-```
+- Finally, we save the rendered calendar event as an MHTML file.
 
-## Hata yönetimi
+## Conclusion
 
-## Yükleme ve İşleme Hatalarını Ele Alma
+In this tutorial, we've explored how to render calendar events using C# code with Aspose.Email for .NET. Aspose.Email provides a straightforward and efficient way to work with calendar events, making it an excellent choice for managing scheduling tasks in your applications.
 
-Takvim verilerini yüklerken ve işlerken olası hataları ele almak önemlidir:
+Now you can harness the power of Aspose.Email for .NET to handle calendar events seamlessly, improving your productivity and enhancing your scheduling capabilities.
 
-```csharp
-try
-{
-    Calendar loadedCalendar = reader.Read();
-    string renderedOutput = htmlView.Render(loadedCalendar);
-}
-catch (Exception ex)
-{
-    // Yükleme veya işleme hatalarını işleme
-}
-```
+## FAQs
 
-## Çözüm
+1. What is Aspose.Email for .NET?
+   Aspose.Email for .NET is an API that allows developers to work with email messages and calendar events in various formats within .NET applications.
 
-Bu makalede, C# kodunu ve Aspose.Email for .NET kitaplığını kullanarak takvim etkinliklerinin nasıl oluşturulacağını araştırdık. Uygulamayı nasıl başlatacağınızı, bir ICS dosyasından takvim verilerini nasıl yükleyeceğinizi, oluşturmayı nasıl özelleştireceğinizi, kullanıcı etkileşimini nasıl yöneteceğinizi ve olası hataları nasıl yöneteceğinizi öğrendiniz. Bu adımları izleyerek takvim işlevini sorunsuz bir şekilde uygulamalarınıza entegre edebilir, kullanıcılara zengin ve etkileşimli bir deneyim sunabilirsiniz.
+2. Where can I download Aspose.Email for .NET?
+   You can download Aspose.Email for .NET from [here](https://releases.aspose.com/email/net/).
 
-## SSS'ler
+3. Can I customize the formatting of calendar event details?
+   Yes, you can customize the formatting of calendar event details as shown in the code example.
 
-### Aspose.Email NuGet paketini nasıl kurarım?
+4. Is Aspose.Email suitable for working with Outlook data?
+   Yes, Aspose.Email is ideal for working with Outlook PST files and Exchange Server data.
 
-Aspose.Email NuGet paketini aşağıdaki komutu kullanarak yükleyebilirsiniz:
-```csharp
-Install-Package Aspose.Email
-```
+5. Are there any other features in Aspose.Email for .NET?
+   Yes, Aspose.Email offers a wide range of features for email management, including sending, receiving, and processing emails.
 
-### İşlenen çıktının stilini özelleştirebilir miyim?
-
-Evet, HTML kabının CSS özelliklerini değiştirerek oluşturulan çıktının stilini özelleştirebilirsiniz.
-
-### İşlenen takvim etkinliklerini etkileşimli hale getirmek mümkün müdür?
-
-Kesinlikle! Kullanıcı tıklamalarına yanıt vererek ve gezinme işlevi ekleyerek, oluşturulan takvim etkinliklerini etkileşimli hale getirebilirsiniz.
-
-### Takvim verilerini yüklerken veya işlerken hataları nasıl ele alabilirim?
-
-Takvim verilerini yüklerken veya işlerken olası hataları işlemek için try-catch bloklarını kullanabilirsiniz. Bu, beklenmeyen sorunlar durumunda bile sorunsuz bir kullanıcı deneyimi sağlar.
+Feel free to explore the [Aspose.Email API documentation](https://reference.aspose.com/email/net/) for more details and advanced usage scenarios. Happy coding!

@@ -1,52 +1,52 @@
 ---
-title: C# Guide - Spara e-post som MHTML-fil
-linktitle: C# Guide - Spara e-post som MHTML-fil
-second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du sparar e-postmeddelanden som MHTML-filer med C# och Aspose.Email för .NET. Steg-för-steg guide med kodexempel och vanliga frågor.
+title: Följ dessa steg för att hämta leveransstatusmeddelanden med Aspose.Email för .NET:
+linktitle:Steg 1: Skapa ett nytt projekt
+second_title: Öppna Visual Studio och skapa ett nytt C#-konsolapplikationsprojekt.
+description:Steg 2: Lägg till Aspose.Email-referens
 type: docs
 weight: 16
 url: /sv/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
 
-## Introduktion till att spara e-post som MHTML-fil
+## Kopiera den nedladdade Aspose.Email DLL till ditt projekts katalog. Högerklicka sedan på projektet i Solution Explorer, välj "Lägg till" > "Referens" och bläddra efter Aspose.Email DLL. Klicka på "OK" för att lägga till referensen till ditt projekt.
 
-Aspose.Email för .NET är ett funktionsrikt bibliotek som ger utvecklare möjlighet att arbeta med e-postmeddelanden, kalendrar, kontakter och uppgifter programmatiskt. Oavsett om du skapar e-postrelaterade applikationer, bearbetar meddelanden eller extraherar data från e-postmeddelanden, förenklar Aspose.Email uppgiften.
+Steg 3: Skriv kod för att hämta DSN:er
 
-## Installation och installation
+##  Öppna
 
-För att börja måste du installera Aspose.Email för .NET. Följ dessa steg:
+ fil i ditt projekt och importera de nödvändiga namnrymden:
 
-1.  Ladda ner biblioteket från[här](https://releases.aspose.com/email/net).
-2. Referera till Aspose.Email DLL i ditt projekt.
+1.  Inuti[ metod, skriv koden för att ansluta till e-postservern, hämta DSN:er och bearbeta dem:](https://releases.aspose.com/email/net).
+2.  Ställ in dina IMAP-serveruppgifter och värd
 
-## Laddar e-postmeddelanden
+##  Välj mappen Inkorg
 
-Innan du sparar e-postmeddelanden som MHTML-filer måste du ladda e-postmeddelandena. Använd följande kodavsnitt:
+ Sök efter meddelanden med DSN
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Ladda e-postmeddelandet
+// Bearbeta hämtade DSN:er
 var message = MailMessage.Load("path/to/your/email.msg");
 ```
 
-## Förstå MHTML-format
+##  Bearbeta DSN-detaljer
 
-MHTML (MIME HTML) är ett format som används för att arkivera webbsidor och e-postmeddelanden. Den kapslar in alla resurser, såsom bilder och stilmallar, i en enda fil. Genom att spara e-postmeddelanden som MHTML säkerställer du att e-postens innehåll förblir intakt och tillgängligt även utan en aktiv internetanslutning.
+ ... Bearbeta andra DSN-detaljer
 
-## Sparar e-post som MHTML
+##  Markera meddelandet som läst eller ta bort det
 
-Nu kommer den spännande delen: att spara ett e-postmeddelande som en MHTML-fil. Så här kan du göra det:
+ Byta ut
 
 ```csharp
-// Spara e-postmeddelandet som MHTML
+// , och
 message.Save("path/to/save/email.mhtml", SaveOptions.DefaultMhtml);
 ```
 
-## Anpassa processen
+##  med din faktiska IMAP-serverinformation.
 
-Aspose.Email låter dig anpassa sparprocessen ytterligare. Du kan styra olika alternativ, som att spara bilagor och utesluta onödig information.
+Steg 4: Kör applikationen
 
 ```csharp
 var options = SaveOptions.DefaultMhtml;
@@ -54,9 +54,9 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 message.Save("path/to/save/customized-email.mhtml", options);
 ```
 
-## Hantering av bilagor
+## Bygg och kör din applikation. Den kommer att ansluta till din e-postserver, hämta DSN:er från mappen Inkorg, bearbeta deras uppgifter och eventuellt radera dem eller markera dem som lästa.
 
-Bilagor är avgörande komponenter i e-postmeddelanden. Du kan spara e-postbilagor bredvid MHTML-filen. Här är hur:
+Vanliga frågor
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -65,43 +65,43 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## Hantera e-postmetadata
+## Hur hittar jag IMAP-servervärden?
 
-MHTML-filer kan också behålla e-postmetadata, vilket säkerställer e-postens äkthet och sammanhang. Metadata innehåller information som avsändare, mottagare, ämne och mer.
+ Du kan hitta IMAP-servervärden från din e-postleverantörs dokumentation eller inställningar. Det är vanligtvis i formatet
 
-## Felhantering
+## Hur kan jag behandla andra DSN-uppgifter än ämne och avsändare?
 
-Vid hantering av e-posthantering är felhantering avgörande. Använd try-catch-block för att fånga undantag och ge lämplig feedback till användare eller logga problemen för felsökning.
+ Du kan komma åt olika egenskaper hos
 
-## Bästa metoder
+##  objekt för att hämta DSN-detaljer som mottagaradresser, leveransstatus, tidsstämpel och mer. Referera till
 
-- Uppdatera regelbundet till den senaste versionen av Aspose.Email för .NET för att få tillgång till nya funktioner och förbättringar.
-- Kassera resurser på rätt sätt efter användning för att förhindra minnesläckor.
+- Aspose.Email dokumentation
+-  för mer information.
 
-## Verkliga användningsfall
+## Är det nödvändigt att ta bort eller markera DSN som lästa?
 
-- Arkivera viktiga e-postmeddelanden för juridiska eller efterlevnadsändamål.
-- Skapa offlineversioner av nyhetsbrev eller marknadsföringsmejl.
-- Lagring av e-postmeddelanden i ett format som enkelt kan delas mellan olika plattformar.
+- Nej, det är inte nödvändigt. Om du vill ta bort eller markera DSN:er som lästa beror på din applikations krav. Den medföljande koden visar båda alternativen, men du kan anpassa den efter dina behov.
+- Slutsats
+- Att hämta leveransstatusmeddelanden med C# och Aspose.Email för .NET är en enkel process. Aspose.Email-biblioteket förenklar kommunikationen med IMAP-servern och tillhandahåller lättanvända API:er för att behandla e-postmeddelanden. Med den här guiden kan du nu införliva DSN-hämtningsfunktionalitet i dina C#-applikationer.
 
-## Slutsats
+##  Säker meddelandehantering - Kryptering och dekryptering i C#
 
-den här guiden utforskade vi hur man sparar e-postmeddelanden som MHTML-filer med C# och Aspose.Email för .NET. Bibliotekets kapacitet ger utvecklare möjlighet att effektivt hantera e-postrelaterade uppgifter samtidigt som innehållets integritet och tillgänglighet bibehålls. Oavsett om du bygger e-postrelaterade applikationer eller behöver effektivisera ditt e-arbetsflöde är Aspose.Email din pålitliga partner.
+ Säker meddelandehantering - Kryptering och dekryptering i C#
 
-## FAQ's
+##  Aspose.Email .NET Email Processing API
 
-### Hur kan jag få den senaste versionen av Aspose.Email för .NET?
+###  Lär dig hur du implementerar säker meddelandehantering med kryptering och dekryptering i C# med Aspose.Email för .NET. Skydda känsliga uppgifter effektivt.
 
- Du kan ladda ner den senaste versionen av Aspose.Email för .NET från[här](https://releases.aspose.com/email/net).
+I dagens digitala tidsålder är det av största vikt att säkerställa säkerheten för känslig information under kommunikation. Cyberhot utvecklas ständigt, vilket gör det avgörande att implementera robusta kryptering och dekrypteringsmekanismer för att skydda vår data. Den här artikeln guidar dig genom processen att säkert hantera meddelanden med kryptering och dekryptering i C# med hjälp av Aspose.Email för .NET.[Introduktion till säker meddelandehantering](https://releases.aspose.com/email/net).
 
-### Kan jag anpassa utseendet på den sparade MHTML-filen?
+### Säker meddelandehantering innebär användning av kryptering och dekrypteringsteknik för att skydda konfidentialitet och integritet för meddelanden som utbyts mellan parter. Kryptering konverterar vanliga textmeddelanden till chiffertext, vilket gör det oläsligt för obehöriga. Dekryptering, å andra sidan, konverterar chiffertexten tillbaka till sin ursprungliga vanlig textform.
 
-Ja, du kan anpassa utseendet genom att ändra MHTFormatOptions under sparningsprocessen.
+Förstå kryptering och dekryptering
 
-### Är Aspose.Email lämplig för både personlig e-posthantering och e-posthantering på företagsnivå?
+### Symmetrisk kryptering
 
-Absolut! Aspose.Email är utformad för att tillgodose behoven hos både individer och företag, och erbjuder mångsidiga lösningar för olika scenarier.
+Symmetrisk kryptering använder en enda hemlig nyckel för att både kryptera och dekryptera meddelanden. Samma nyckel delas mellan avsändare och mottagare. Även om denna metod är effektiv för snabbare krypterings- och dekrypteringsprocesser, ligger utmaningen i att säkert dela och hantera den hemliga nyckeln.
 
-### Finns det några licensavgifter förknippade med att använda Aspose.Email för .NET?
+### Asymmetrisk kryptering
 
-Ja, Aspose.Email är ett kommersiellt bibliotek. Du kan hitta detaljerad information om licensiering och prissättning på[Aspose.Email webbplats](https://www.aspose.com/purchase/default.aspx).
+Asymmetrisk kryptering använder ett par nycklar: en offentlig nyckel för kryptering och en privat nyckel för dekryptering. Den offentliga nyckeln kan delas öppet, medan den privata nyckeln förblir konfidentiell. Detta tillvägagångssätt eliminerar behovet av nyckeldelning men är relativt långsammare jämfört med symmetrisk kryptering.[Använder Aspose.Email för .NET](https://www.aspose.com/purchase/default.aspx).

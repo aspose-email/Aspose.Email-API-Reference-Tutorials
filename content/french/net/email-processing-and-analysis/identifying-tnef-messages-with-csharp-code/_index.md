@@ -1,44 +1,44 @@
 ---
-title: Identification des messages TNEF avec du code C#
-linktitle: Identification des messages TNEF avec du code C#
-second_title: API de traitement des e-mails Aspose.Email .NET
-description: Découvrez comment identifier les messages TNEF à l'aide de C# et Aspose.Email pour .NET. Un guide étape par étape avec le code source et la FAQ incluse.
+title: Identifying TNEF Messages with C# Code
+linktitle: Identifying TNEF Messages with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to identify TNEF messages using C# and Aspose.Email for .NET. A step-by-step guide with source code and FAQs included.
 type: docs
 weight: 14
 url: /fr/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
 
-Aspose.Email for .NET est une bibliothèque puissante qui fournit une prise en charge complète pour travailler avec divers formats et protocoles de messagerie en C#. Dans ce guide étape par étape, nous explorerons comment identifier les messages TNEF (Transport Neutral Encapsulation Format) à l'aide du code C# et de la bibliothèque Aspose.Email. TNEF est un format de courrier électronique propriétaire utilisé par Microsoft Outlook pour encapsuler du texte enrichi et des pièces jointes dans des messages électroniques.
+Aspose.Email for .NET is a powerful library that provides comprehensive support for working with various email formats and protocols in C#. In this step-by-step guide, we will explore how to identify TNEF (Transport Neutral Encapsulation Format) messages using C# code and the Aspose.Email library. TNEF is a proprietary email format used by Microsoft Outlook to encapsulate rich text and attachments within email messages.
 
-## Introduction aux messages TNEF
+## Introduction to TNEF Messages
 
-Les messages TNEF, également appelés pièces jointes « winmail.dat », peuvent entraîner des problèmes de compatibilité lors de la tentative d'affichage ou de traitement du contenu d'un courrier électronique sur des clients de messagerie non Microsoft. Ces messages encapsulent divers types d'informations, notamment du texte formaté, des pièces jointes et des métadonnées, ce qui rend crucial leur détection et leur traitement correct.
+TNEF messages, also known as "winmail.dat" attachments, can cause compatibility issues when trying to view or process email content on non-Microsoft email clients. These messages encapsulate various types of information, including formatted text, attachments, and metadata, making it crucial to detect and handle them correctly.
 
-## Configuration de l'environnement de développement
+## Setting Up the Development Environment
 
-Avant d'entrer dans le code, assurez-vous que la bibliothèque Aspose.Email pour .NET est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/email/net). Une fois téléchargé, suivez ces étapes pour configurer votre environnement de développement :
+Before we delve into the code, make sure you have the Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net). Once downloaded, follow these steps to set up your development environment:
 
-1. Créez un nouveau projet C# dans votre environnement de développement préféré.
-2. Ajoutez une référence à la bibliothèque Aspose.Email téléchargée.
+1. Create a new C# project in your preferred development environment.
+2. Add a reference to the downloaded Aspose.Email library.
 
-## Chargement des messages électroniques
+## Loading Email Messages
 
-Pour commencer, chargeons un e-mail à l'aide d'Aspose.Email. L'extrait de code suivant montre comment charger un e-mail à partir d'un fichier :
+To begin, let's load an email message using Aspose.Email. The following code snippet demonstrates how to load an email message from a file:
 
 ```csharp
 using Aspose.Email;
 
-// Charger le message électronique
+// Load the email message
 var message = MailMessage.Load("path_to_email.eml");
 ```
 
-## Identifier les messages TNEF
+## Identifying TNEF Messages
 
- Maintenant que nous avons chargé le message électronique, nous devons déterminer s'il s'agit d'un message TNEF. Aspose.Email fournit le`MailMessage.IsTnef` propriété à cet effet. Voici comment vous pouvez l'utiliser :
+Now that we have loaded the email message, we need to determine whether it is a TNEF message. Aspose.Email provides the `MailMessage.IsTnef` property for this purpose. Here's how you can use it:
 
 ```csharp
-// Vérifiez si le message est un message TNEF
-if (message.IsTnef)
+// Check if the message is a TNEF message
+if (message.OriginalIsTnef)
 {
     Console.WriteLine("This is a TNEF message.");
 }
@@ -48,42 +48,34 @@ else
 }
 ```
 
-## Extraction de données à partir de messages TNEF
 
-Si le message est bien un message TNEF, vous pouvez en extraire diverses données. Par exemple, vous pouvez extraire le contenu du texte brut comme suit :
+## Handling Attachments within TNEF Messages
 
-```csharp
-if (message.IsTnef)
-{
-    // Extraire le contenu en texte brut de TNEF
-    var plainText = message.TnefBody.Text;
-    Console.WriteLine("Plain text content: " + plainText);
-}
-```
-
-## Gestion des pièces jointes dans les messages TNEF
-
-Les messages TNEF contiennent souvent des pièces jointes. Pour extraire et enregistrer ces pièces jointes, vous pouvez utiliser le code suivant :
+TNEF messages often contain attachments. To extract and save these attachments, you can use the following code:
 
 ```csharp
-if (message.IsTnef)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    foreach (var attachment in message.TnefBody.Attachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        attachment.Save("path_to_save/" + attachment.FileName);
-        Console.WriteLine("Attachment saved: " + attachment.FileName);
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
     }
 }
 ```
 
-## Conversion du TNEF aux formats standard
+## Converting TNEF to Standard Formats
 
-Dans certains cas, vous souhaiterez peut-être convertir le message TNEF dans un format de courrier électronique standard pour une meilleure compatibilité. Aspose.Email vous permet de convertir les messages TNEF vers d'autres formats, tels que MHTML :
+In some cases, you might want to convert the TNEF message to a standard email format for better compatibility. Aspose.Email allows you to convert TNEF messages to other formats, such as MHTML:
 
 ```csharp
 if (message.IsTnef)
 {
-    // Convertir TNEF au format MHTML
+    // Convert TNEF to MHTML format
     var mhtmlStream = new MemoryStream();
     message.Save(mhtmlStream, SaveOptions.DefaultMhtml);
     Console.WriteLine("TNEF message converted to MHTML format.");
@@ -92,23 +84,23 @@ if (message.IsTnef)
 
 ## Conclusion
 
-Dans ce guide, nous avons exploré comment identifier les messages TNEF à l'aide du code C# et de la bibliothèque Aspose.Email pour .NET. Nous avons appris à charger des messages électroniques, à déterminer s'il s'agit de messages TNEF, à extraire du texte et des pièces jointes et même à convertir des TNEF aux formats standard. En suivant ces étapes, vous pouvez travailler efficacement avec les messages TNEF et garantir la compatibilité entre différents clients de messagerie.
+In this guide, we've explored how to identify TNEF messages using C# code and the Aspose.Email for .NET library. We've learned how to load email messages, determine if they are TNEF messages, extract text and attachments, and even convert TNEF to standard formats. By following these steps, you can effectively work with TNEF messages and ensure compatibility across different email clients.
 
 
-## FAQ
+## FAQs
 
-### Comment puis-je installer la bibliothèque Aspose.Email pour .NET ?
+### How can I install the Aspose.Email for .NET library?
 
- Vous pouvez télécharger la bibliothèque Aspose.Email à partir de[https://releases.aspose.com/email/net](https://releases.aspose.com/email/net) et suivez les instructions d'installation fournies dans la documentation.
+You can download the Aspose.Email library from [https://releases.aspose.com/email/net](https://releases.aspose.com/email/net) and follow the installation instructions provided in the documentation.
 
-### Puis-je utiliser Aspose.Email pour travailler avec d’autres formats de courrier électronique ?
+### Can I use Aspose.Email to work with other email formats?
 
-Oui, Aspose.Email prend en charge un large éventail de formats et de protocoles de messagerie, ce qui en fait un choix polyvalent pour les tâches liées à la messagerie.
+Yes, Aspose.Email supports a wide range of email formats and protocols, making it a versatile choice for email-related tasks.
 
-### Aspose.Email fournit-il de la documentation et des exemples de code ?
+### Does Aspose.Email provide documentation and code samples?
 
- Oui, vous pouvez trouver une documentation détaillée et des exemples de code sur la façon d'utiliser Aspose.Email pour diverses tâches sur le site Web.[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/) page.
+Yes, you can find detailed documentation and code samples on how to use Aspose.Email for various tasks on the [Aspose.Email API Reference](https://reference.aspose.com/email/net/) page.
 
-### Aspose.Email peut-il gérer le traitement des e-mails sur différentes plateformes ?
+### Can Aspose.Email handle email processing on different platforms?
 
-Absolument, Aspose.Email est une bibliothèque multiplateforme qui peut être utilisée pour développer des applications sur diverses plates-formes, notamment Windows, macOS et Linux.
+Absolutely, Aspose.Email is a cross-platform library that can be used to develop applications on various platforms, including Windows, macOS, and Linux.

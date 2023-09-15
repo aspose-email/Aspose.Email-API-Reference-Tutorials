@@ -1,52 +1,52 @@
 ---
-title: Guida C# salvataggio della posta elettronica come file MHTML
-linktitle: Guida C# salvataggio della posta elettronica come file MHTML
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Scopri come salvare le e-mail come file MHTML utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice e domande frequenti.
+title: Seguire questi passaggi per recuperare le notifiche sullo stato di consegna utilizzando Aspose.Email per .NET:
+linktitle:Passaggio 1: crea un nuovo progetto
+second_title: Apri Visual Studio e crea un nuovo progetto di applicazione console C#.
+description:Passaggio 2: aggiungere il riferimento Aspose.Email
 type: docs
 weight: 16
 url: /it/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
 
-## Introduzione al salvataggio della posta elettronica come file MHTML
+## Copia la DLL Aspose.Email scaricata nella directory del tuo progetto. Quindi, fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegli "Aggiungi" > "Riferimento" e cerca la DLL Aspose.Email. Fai clic su "OK" per aggiungere il riferimento al tuo progetto.
 
-Aspose.Email per .NET è una libreria ricca di funzionalità che consente agli sviluppatori di lavorare con messaggi di posta elettronica, calendari, contatti e attività a livello di codice. Che tu stia creando applicazioni relative alla posta elettronica, elaborando messaggi o estraendo dati dalle e-mail, Aspose.Email semplifica l'attività.
+Passaggio 3: scrivere il codice per recuperare i DSN
 
-## Installazione e configurazione
+##  Apri il
 
-Per iniziare, è necessario installare Aspose.Email per .NET. Segui questi passi:
+ file nel tuo progetto e importa gli spazi dei nomi necessari:
 
-1.  Scarica la libreria da[Qui](https://releases.aspose.com/email/net).
-2. Fai riferimento alla DLL Aspose.Email nel tuo progetto.
+1.  Dentro il[ metodo, scrivere il codice per connettersi al server di posta elettronica, recuperare i DSN ed elaborarli:](https://releases.aspose.com/email/net).
+2.  Imposta le credenziali e l'host del tuo server IMAP
 
-## Caricamento messaggi e-mail
+##  Seleziona la cartella Posta in arrivo
 
-Prima di salvare le e-mail come file MHTML, è necessario caricare i messaggi e-mail. Utilizza il seguente snippet di codice:
+ Cerca messaggi con DSN
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Carica il messaggio di posta elettronica
+// Elabora i DSN recuperati
 var message = MailMessage.Load("path/to/your/email.msg");
 ```
 
-## Comprendere il formato MHTML
+##  Elabora i dettagli DSN
 
-MHTML (MIME HTML) è un formato utilizzato per archiviare pagine Web ed e-mail. Incapsula tutte le risorse, come immagini e fogli di stile, in un unico file. Salvando le e-mail come MHTML, ti assicuri che il contenuto dell'e-mail rimanga intatto e accessibile anche senza una connessione Internet attiva.
+ ... Elabora altri dettagli DSN
 
-## Salvataggio dell'e-mail come MHTML
+##  Contrassegna il messaggio come letto o eliminalo
 
-Ora arriva la parte emozionante: salvare un'e-mail come file MHTML. Ecco come puoi farlo:
+ Sostituire
 
 ```csharp
-// Salva l'e-mail come MHTML
+// , E
 message.Save("path/to/save/email.mhtml", SaveOptions.DefaultMhtml);
 ```
 
-## Personalizzazione del processo
+##  con i dettagli effettivi del server IMAP.
 
-Aspose.Email consente di personalizzare ulteriormente il processo di salvataggio. Puoi controllare varie opzioni, come il salvataggio degli allegati e l'esclusione delle informazioni non necessarie.
+Passaggio 4: eseguire l'applicazione
 
 ```csharp
 var options = SaveOptions.DefaultMhtml;
@@ -54,9 +54,9 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 message.Save("path/to/save/customized-email.mhtml", options);
 ```
 
-## Gestione degli allegati
+## Costruisci ed esegui la tua applicazione. Si collegherà al tuo server di posta elettronica, recupererà i DSN dalla cartella Posta in arrivo, elaborerà i loro dettagli e, facoltativamente, li eliminerà o li contrassegnerà come letti.
 
-Gli allegati sono componenti cruciali delle e-mail. Puoi salvare gli allegati e-mail insieme al file MHTML. Ecco come:
+Domande frequenti
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -65,43 +65,43 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## Gestione dei metadati delle e-mail
+## Come posso trovare l'host del server IMAP?
 
-I file MHTML possono anche conservare i metadati dell'e-mail, garantendo l'autenticità e il contesto dell'e-mail. I metadati includono informazioni come mittente, destinatario, oggetto e altro.
+ Puoi trovare l'host del server IMAP nella documentazione o nelle impostazioni del tuo fornitore di servizi di posta elettronica. Di solito è nel formato di
 
-## Gestione degli errori
+## Come posso elaborare i dettagli DSN diversi dall'oggetto e dal mittente?
 
-Quando si ha a che fare con l'elaborazione della posta elettronica, la gestione degli errori è essenziale. Utilizza i blocchi try-catch per rilevare eccezioni e fornire feedback appropriato agli utenti o registrare i problemi per il debug.
+ È possibile accedere a varie proprietà del
 
-## Migliori pratiche
+##  oggetto per recuperare dettagli DSN come indirizzi dei destinatari, stato di consegna, timestamp e altro. Fare riferimento al
 
-- Aggiorna regolarmente all'ultima versione di Aspose.Email per .NET per accedere a nuove funzionalità e miglioramenti.
-- Smaltire correttamente le risorse dopo l'uso per evitare perdite di memoria.
+- Documentazione Aspose.Email
+-  per maggiori informazioni.
 
-## Casi d'uso nel mondo reale
+## È necessario eliminare o contrassegnare i DSN come letti?
 
-- Archiviazione di e-mail importanti per scopi legali o di conformità.
-- Creazione di versioni offline di newsletter o e-mail di marketing.
-- Archiviazione delle e-mail in un formato che possa essere facilmente condiviso su diverse piattaforme.
+- No, non è necessario. Se eliminare o contrassegnare i DSN come letti dipende dai requisiti dell'applicazione. Il codice fornito mostra entrambe le opzioni, ma puoi personalizzarlo in base alle tue esigenze.
+- Conclusione
+- Il recupero delle notifiche sullo stato della consegna utilizzando C# e Aspose.Email per .NET è un processo semplice. La libreria Aspose.Email semplifica la comunicazione con il server IMAP e fornisce API facili da usare per elaborare i messaggi di posta elettronica. Con questa guida ora puoi incorporare la funzionalità di recupero DSN nelle tue applicazioni C#.
 
-## Conclusione
+##  Gestione sicura dei messaggi: crittografia e decrittografia in C#
 
-In questa guida, abbiamo esplorato come salvare le e-mail come file MHTML utilizzando C# e Aspose.Email per .NET. Le funzionalità della libreria consentono agli sviluppatori di gestire in modo efficiente le attività relative alla posta elettronica mantenendo l'integrità e l'accessibilità dei contenuti. Che tu stia creando applicazioni relative alla posta elettronica o abbia bisogno di semplificare il flusso di lavoro della posta elettronica, Aspose.Email è il tuo partner affidabile.
+ Gestione sicura dei messaggi: crittografia e decrittografia in C#
 
-## Domande frequenti
+##  Aspose.Email API di elaborazione della posta elettronica .NET
 
-### Come posso ottenere l'ultima versione di Aspose.Email per .NET?
+###  Scopri come implementare la gestione sicura dei messaggi con crittografia e decrittografia in C# utilizzando Aspose.Email per .NET. Proteggi i dati sensibili in modo efficace.
 
- È possibile scaricare l'ultima versione di Aspose.Email per .NET da[Qui](https://releases.aspose.com/email/net).
+Nell'era digitale di oggi, garantire la sicurezza delle informazioni sensibili durante la comunicazione è di fondamentale importanza. Le minacce informatiche sono in continua evoluzione, rendendo fondamentale implementare robusti meccanismi di crittografia e decrittografia per proteggere i nostri dati. Questo articolo ti guiderà attraverso il processo di gestione sicura dei messaggi utilizzando la crittografia e la decrittografia in C# con l'aiuto di Aspose.Email per .NET.[Introduzione alla gestione sicura dei messaggi](https://releases.aspose.com/email/net).
 
-### Posso personalizzare l'aspetto del file MHTML salvato?
+### La gestione sicura dei messaggi prevede l'uso di tecniche di crittografia e decrittografia per salvaguardare la riservatezza e l'integrità dei messaggi scambiati tra le parti. La crittografia converte i messaggi di testo semplice in testo cifrato, rendendolo illeggibile per persone non autorizzate. La decrittazione, d'altro canto, riconverte il testo cifrato nella sua forma originale di testo semplice.
 
-Sì, puoi personalizzare l'aspetto modificando MHTFormatOptions durante il processo di salvataggio.
+Comprendere la crittografia e la decrittografia
 
-### Aspose.Email è adatto sia per la gestione della posta elettronica personale che a livello aziendale?
+### Crittografia simmetrica
 
-Assolutamente! Aspose.Email è progettato per soddisfare le esigenze di privati e aziende, offrendo soluzioni versatili per vari scenari.
+La crittografia simmetrica utilizza un'unica chiave segreta sia per crittografare che per decrittografare i messaggi. La stessa chiave è condivisa tra il mittente e il destinatario. Sebbene questo metodo sia efficiente per processi di crittografia e decrittografia più rapidi, la sfida risiede nella condivisione e nella gestione sicura della chiave segreta.
 
-### Sono previsti costi di licenza associati all'utilizzo di Aspose.Email per .NET?
+### Crittografia asimmetrica
 
-Sì, Aspose.Email è una libreria commerciale. Puoi trovare informazioni dettagliate su licenze e prezzi su[Sito web Aspose.E-mail](https://www.aspose.com/purchase/default.aspx).
+La crittografia asimmetrica utilizza una coppia di chiavi: una chiave pubblica per la crittografia e una chiave privata per la decrittografia. La chiave pubblica può essere condivisa apertamente, mentre la chiave privata rimane riservata. Questo approccio elimina la necessità della condivisione delle chiavi ma è relativamente più lento rispetto alla crittografia simmetrica.[Utilizzando Aspose.Email per .NET](https://www.aspose.com/purchase/default.aspx).

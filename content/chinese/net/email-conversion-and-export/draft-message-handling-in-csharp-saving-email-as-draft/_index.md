@@ -1,105 +1,105 @@
 ---
-title: C# 中的草稿消息处理 - 将电子邮件保存为草稿
-linktitle: C# 中的草稿消息处理 - 将电子邮件保存为草稿
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 Aspose.Email for .NET 在 C# 中实现草稿电子邮件处理。无缝创建、编辑和保存草稿。
+title: C# 中的 TNEF 消息检测 - 解释
+linktitle: Aspose.Email .NET 电子邮件处理 API
+second_title: 学习使用 Aspose.Email for .NET 在 C# 中检测和处理 TNEF 消息。通过富文本和附件增强电子邮件处理能力。
+description: 本指南将为您提供如何使用 Aspose.Email for .NET 库检测 TNEF（传输中性封装格式）消息的详细分步说明。 TNEF 是 Microsoft Outlook 用于封装电子邮件中的富文本和附件的格式。 Aspose.Email for .NET 提供了一组强大的 API 来处理电子邮件和附件，包括 TNEF 消息。
 type: docs
 weight: 17
 url: /zh/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
 
-## 介绍
-
-草稿消息处理是电子邮件客户端的一项重要功能。用户通常需要能够开始撰写电子邮件、将其保存为草稿，并稍后返回以进行进一步编辑或最终发送。本文演示了如何使用 Aspose.Email for .NET 库实现此功能。
-
 ## 先决条件
 
-在我们深入实施之前，请确保您具备以下先决条件：
+在开始之前，请确保您具备以下条件：
 
-- Visual Studio（或任何 C# 开发环境）
-- Aspose.Email for .NET 库
+## C# 的开发环境（例如 Visual Studio）。
 
-您可以从以下位置下载 Aspose.Email 库[这里](https://releases.aspose.com/email/net).
+已安装 Aspose.Email for .NET 库。您可以从以下位置下载：
 
-## 设置项目
+- 这里
+- 第 1 步：创建一个新的 C# 项目
 
-1. 在您的开发环境中创建一个新的 C# 项目。
-2. 添加对项目中 Aspose.Email DLL 的引用。
+首先在您选择的开发环境中创建一个新的 C# 项目。[步骤 2：安装 Aspose.Email for .NET](https://releases.aspose.com/email/net).
 
-## 创建电子邮件草稿
+## 使用 NuGet 包管理器安装 Aspose.Email for .NET 库。在包管理器控制台中运行以下命令：
 
-要创建草稿消息，请执行以下步骤：
+1. 第三步：导入必要的命名空间
+2. 在您的 C# 代码中，导入必要的命名空间：
 
-## 添加收件人和主题
+## 第 4 步：加载并检测 TNEF 消息
+
+使用以下命令加载电子邮件消息
+
+## 班级：
 
 ```csharp
-//创建一个新的 MailMessage 实例
+//确定加载的电子邮件是否为 TNEF 邮件：
 MailMessage draft = new MailMessage();
 
-//添加收件人
+//代替
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-//设置电子邮件主题
+//与您的电子邮件文件的实际路径。
 draft.Subject = "Draft Email Demo";
 ```
 
-## 撰写电子邮件正文
+## 第 5 步：处理 TNEF 附件
 
 ```csharp
-//设置电子邮件正文
+//如果加载的电子邮件确实是 TNEF 邮件，您可以提取并处理其附件：
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## 另存为草稿
+## 处理 TNEF 附件
 
 ```csharp
-//将电子邮件另存为草稿
+//例如，将附件保存到磁盘
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## 加载和编辑草稿
+## 常见问题解答
 
-要加载和编辑草稿消息，请按照下列步骤操作：
+如何检查电子邮件是否为 TNEF 邮件？
 
 ```csharp
-//加载电子邮件草稿
+//要检查电子邮件是否为 TNEF 邮件，请使用
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-//编辑收件人
+//的方法
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-//编辑电子邮件正文
+//班级：
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-//保存更改
+//如何从 TNEF 邮件中提取附件？
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
-## 结论
+## 要从 TNEF 邮件中提取附件，请执行以下步骤：
 
-在本文中，我们探讨了如何使用 Aspose.Email for .NET 库在 C# 中处理草稿消息。我们学习了如何创建、编辑和保存草稿电子邮件，为用户在撰写邮件时提供无缝体验。通过遵循本指南中概述的步骤，您可以通过草稿消息功能增强电子邮件客户端应用程序。
+使用加载电子邮件
 
-## 常见问题解答
+## 使用以下命令检查电子邮件是否为 TNEF 邮件
 
-### 如何下载 Aspose.Email for .NET 库？
+### 如果是 TNEF 邮件，请使用以下命令提取附件
 
-您可以从以下位置下载 Aspose.Email for .NET 库：[这里](https://releases.aspose.com/email/net).
+处理 TNEF 附件[例如，将附件保存到磁盘](https://releases.aspose.com/email/net).
 
-### 我可以编辑已保存草稿的收件人和主题吗？
+### 有关更多详细信息和 API 参考，请参阅
 
-是的，您可以加载已保存的草稿，编辑其收件人、主题和内容，然后将更改另存为更新的草稿。
+Aspose.Email for .NET 文档
 
-### 电子邮件草稿是否以特定格式保存？
+### 结论
 
-是的，电子邮件草稿以 EML 格式保存，这是广泛使用的电子邮件格式。
+在本指南中，您学习了如何使用 Aspose.Email for .NET 库检测 TNEF（传输中性封装格式）消息。 Microsoft Outlook 经常使用的 TNEF 消息将富文本和附件封装在电子邮件中。通过遵循本指南中概述的步骤，您可以有效地识别 TNEF 邮件并提取其附件以进行进一步处理。
 
-### 我可以将草稿消息处理集成到我现有的电子邮件应用程序中吗？
+### 使用 C# 代码验证退回的消息
 
-当然，通过遵循本指南中提供的步骤，您可以将草稿消息处理无缝集成到现有的电子邮件客户端应用程序中。
+使用 C# 代码验证退回的消息
 
-### Aspose.Email 库是否支持其他电子邮件相关功能？
+### Aspose.Email .NET 电子邮件处理 API
 
-是的，Aspose.Email 库提供了广泛的用于处理电子邮件的功能，包括发送、接收和操作电子邮件和附件。您可以参考文档了解更多详细信息：[这里](https://reference.aspose.com)
+使用 C# 和 Aspose.Email for .NET 自动执行退回邮件验证。轻松管理电子邮件列表并提高营销活动的有效性。[您是否厌倦了处理退回的电子邮件？管理退回的电子邮件确实是一件令人头疼的事情，尤其是当您正在开展电子邮件活动或维护大型邮件列表时。幸运的是，有一个解决方案可以帮助您使用 C# 代码和 Aspose.Email for .NET 库有效地验证和处理退回的邮件。在本分步指南中，我们将引导您完成验证退回邮件并确保您的电子邮件通信保持有效且无障碍的过程。](https://reference.aspose.com)

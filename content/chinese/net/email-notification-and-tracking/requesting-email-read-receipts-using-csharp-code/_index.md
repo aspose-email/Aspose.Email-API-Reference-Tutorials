@@ -1,106 +1,135 @@
 ---
-title: 使用 C# 代码请求电子邮件已读回执
-linktitle: 使用 C# 代码请求电子邮件已读回执
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 C# 代码使用 Aspose.Email for .NET 请求电子邮件阅读回执，从而增强通信跟踪。
+title: Requesting Email Read Receipts using C# Code
+linktitle: Requesting Email Read Receipts using C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
 type: docs
 weight: 11
 url: /zh/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
 
-电子邮件通信是现代商务和个人互动不可或缺的一部分。通常，了解收件人是否已阅读您发送的电子邮件非常重要。这就是电子邮件阅读回执发挥作用的地方。在本文中，我们将探索如何使用 C# 代码请求电子邮件阅读回执，利用 Aspose.Email for .NET 库的强大功能。
+In today's digital age, communication via email has become an integral part of our personal and professional lives. Often, when sending important emails, we want to ensure that the recipient has read and acknowledged our message. This is where email read receipts come into play. In this step-by-step tutorial, we will guide you through the process of requesting email read receipts using C# with Aspose.Email for .NET.
 
-## 电子邮件已读回执简介
+## Introduction to Email Read Receipts
 
-电子邮件已读回执是收件人的电子邮件客户端在打开电子邮件时发送的通知。它向发件人提供电子邮件已成功发送并阅读的确认。此功能在业务环境中特别有用，可以跟踪客户或同事进行重要通信的情况。
+Email read receipts, also known as email tracking or return receipts, allow you to receive notifications when the recipient opens and reads your email. It's a valuable feature, especially in business communications, as it provides confirmation of message delivery and engagement.
 
-## 设置您的开发环境
+## Prerequisites
 
-在我们深入编码过程之前，请确保您拥有合适的开发环境。你需要：
+Before we dive into the code, make sure you have the following prerequisites in place:
 
-- Visual Studio 或任何其他 C# 开发 IDE
-- 安装了 .NET Framework 或 .NET Core
-- Aspose.Email for .NET 库
+- Visual Studio installed on your system.
+- Aspose.Email for .NET library downloaded and referenced in your project.
 
-## 安装 Aspose.Email for .NET
+## Step 1: Creating a MailMessage Instance
 
-首先，您需要安装 Aspose.Email for .NET 库。您可以从以下位置下载：[Aspose 发布](https://releases.aspose.com/email/net/)。按照提供的安装说明将库集成到您的项目中。
-
-## 创建新的 C# 项目
-
-打开您的开发环境并创建一个新的 C# 项目。根据您的应用程序类型（控制台、Windows 窗体等）选择合适的项目模板。
-
-## 编写代码来请求已读回执
-
-现在，让我们编写 C# 代码来请求电子邮件的已读回执。
-
-### 正在加载电子邮件消息
-
-首先，我们需要加载要发送的带有已读回执请求的电子邮件。
+The first step in implementing email read receipts is to create an instance of the `MailMessage` class. This class represents an email message and allows you to set various properties of the email.
 
 ```csharp
-using Aspose.Email;
-using Aspose.Email.Mime;
-
-//加载电子邮件消息
 MailMessage message = new MailMessage();
-message.Subject = "Your Subject";
-message.Body = "Your Email Content";
-message.From = "your@email.com";
-message.To = "recipient@email.com";
 ```
 
-### 添加已读回执请求
+## Step 2: Specifying Message Details
 
-接下来，我们将在电子邮件中添加已读回执请求。
+Now, let's specify the details of the email message, including the sender, recipient, HTML body, and delivery notification options.
 
 ```csharp
-//添加已读回执请求
-ReadReceiptRequest readReceiptRequest = new ReadReceiptRequest();
-message.AddCustomHeader(readReceiptRequest.HeaderName, readReceiptRequest.HeaderValue);
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
-### 发送电子邮件
+## Step 3: Creating an SmtpClient Instance
 
-现在已添加已读回执请求，让我们发送电子邮件。
+To send the email, we need to create an instance of the `SmtpClient` class, which is responsible for sending the message.
 
 ```csharp
-using SmtpClient client = new SmtpClient("smtp.server.com", "username", "password");
-client.Send(message);
+SmtpClient client = new SmtpClient();
 ```
 
-## 处理已读回执
+## Step 4: Configuring SMTP Settings
 
-当收件人打开电子邮件并接受已读回执请求时，您将收到已读回执通知。然而，处理已读回执可能有点棘手，因为并非所有电子邮件客户端都支持它们。建议使用专用电子邮件地址来收集已读回执并进行相应处理。
+Configure your SMTP server settings by specifying the host server, username, password, and port number.
 
-## 使用电子邮件已读回执的最佳实践
+```csharp
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
+```
 
-- 谨慎使用已读回执，并且仅针对关键电子邮件。
-- 尊重收件人的隐私和偏好。有些人可能会觉得已读回执具有侵扰性。
-- 请做好准备，应对因电子邮件客户端限制而可能无法生成已读回执的情况。
+## Step 5: Sending the Email
 
-## 结论
+Finally, use the `client.Send` method to send the email message. If the message is sent successfully, a "Message Sent" notification will be displayed.
 
-在本文中，我们探讨了如何在 Aspose.Email for .NET 库的帮助下使用 C# 代码请求电子邮件已读回执。此功能对于跟踪电子邮件收件人在各种情况下的参与度非常有价值，尤其是在专业通信中。
+```csharp
+try
+{
+    client.Send(message);
+    Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+    System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
 
-## 常见问题解答
+With these five simple steps, you can request email read receipts when sending emails using C# and Aspose.Email for .NET. This feature adds a layer of assurance to your email communications, ensuring that you know when your important messages are read.
 
-### 如何在 C# 中跟踪已读回执？
+## Complete Source Code
+```csharp
+// Create an Instance of MailMessage class
+MailMessage message = new MailMessage();
 
-要在 C# 中跟踪已读回执，您可以使用 Aspose.Email for .NET 库将已读回执请求添加到您的电子邮件中。请注意，已读回执处理可能会因收件人的电子邮件客户端而异。
+// Specify From, To, HtmlBody, DeliveryNotificationOptions field
+message.From = "sender@sender.com";
+message.To.Add("receiver@receiver.com");
+message.HtmlBody = "<html><body>This is the Html body</body></html>";
+message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess;
+message.Headers.Add("Return-Receipt-To", "sender@sender.com");
+message.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 
-### 已读回执可靠吗？
+// Create an instance of SmtpClient Class
+SmtpClient client = new SmtpClient();
 
-已读回执并不总是可靠，因为它们的生成取决于收件人的电子邮件客户端和设置。某些电子邮件客户端可能不支持已读回执，从而导致跟踪不一致。
+// Specify your mailing host server, Username, Password and Port No
+client.Host = "smtp.server.com";
+client.Username = "Username";
+client.Password = "Password";
+client.Port = 25;
 
-### 我可以发送任何类型电子邮件的已读回执请求吗？
+try
+{
+	// Client.Send will send this message
+	client.Send(message);
+	// Display ‘Message Sent’, only if message sent successfully
+	Console.WriteLine("Message sent");
+}
+catch (Exception ex)
+{
+	System.Diagnostics.Trace.WriteLine(ex.ToString());
+}
+```
+## Conclusion
 
-是的，您可以发送大多数类型电子邮件的阅读回执请求，包括纯文本和 HTML 电子邮件。但是，收件人的电子邮件客户端必须支持已读回执处理才能有效工作。
+In this tutorial, we've explored how to request email read receipts using C# with Aspose.Email for .NET. Email tracking is a powerful tool for ensuring your messages are delivered and read by the intended recipients, particularly in professional settings. By following the steps outlined here, you can easily implement this functionality in your email application.
 
-### 是否可以通过已读回执跟踪多个收件人的回复？
+## Frequently Asked Questions (FAQs)
 
-是的，您可以通过在电子邮件中添加适当的标头来分别请求每个收件人的已读回执。这样，您就可以跟踪各个收件人与电子邮件的交互。
+1. ### What is the purpose of email read receipts?
+   Email read receipts provide confirmation that an email has been opened and read by the recipient. They are often used for tracking important or time-sensitive messages.
 
-### 如何处理未生成已读回执的情况？
+2. ### Can email read receipts be disabled by the recipient?
+   Yes, email clients often allow users to disable the sending of read receipts. Therefore, it's not guaranteed that you will always receive them.
 
-必须为不生成已读回执的情况做好准备。这可能是由于收件人偏好、电子邮件客户端限制或其他因素造成的。始终有其他方法来跟踪电子邮件参与度。
+3. ### Are email read receipts a standard feature in all email clients?
+   No, email read receipts are not universally supported. Whether they work or not depends on the email client and the recipient's settings.
+
+4. ### Is it possible to track when an email is opened on a mobile device?
+   Email tracking is typically based on the recipient's email client and settings, so it may or may not work on mobile devices, depending on various factors.
+
+5. ### Are there privacy considerations when using email read receipts?
+   Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.

@@ -1,52 +1,52 @@
 ---
-title: C#-Leitfaden – E-Mail als MHTML-Datei speichern
-linktitle: C#-Leitfaden – E-Mail als MHTML-Datei speichern
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie E-Mails mit C# und Aspose.Email für .NET als MHTML-Dateien speichern. Schritt-für-Schritt-Anleitung mit Codebeispielen und FAQs.
+title: Befolgen Sie diese Schritte, um Benachrichtigungen zum Lieferstatus mit Aspose.Email für .NET abzurufen:
+linktitle:Schritt 1: Erstellen Sie ein neues Projekt
+second_title: Öffnen Sie Visual Studio und erstellen Sie ein neues C#-Konsolenanwendungsprojekt.
+description:Schritt 2: Aspose.Email-Referenz hinzufügen
 type: docs
 weight: 16
 url: /de/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
 
-## Einführung in das Speichern von E-Mails als MHTML-Datei
+## Kopieren Sie die heruntergeladene Aspose.Email-DLL in das Verzeichnis Ihres Projekts. Klicken Sie dann im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt, wählen Sie „Hinzufügen“ > „Referenz“ und suchen Sie nach der Aspose.Email-DLL. Klicken Sie auf „OK“, um die Referenz zu Ihrem Projekt hinzuzufügen.
 
-Aspose.Email für .NET ist eine funktionsreiche Bibliothek, die es Entwicklern ermöglicht, programmgesteuert mit E-Mail-Nachrichten, Kalendern, Kontakten und Aufgaben zu arbeiten. Ob Sie E-Mail-Anwendungen erstellen, Nachrichten verarbeiten oder Daten aus E-Mails extrahieren, Aspose.Email vereinfacht die Aufgabe.
+Schritt 3: Schreiben Sie Code zum Abrufen von DSNs
 
-## Installation und Einrichtung
+##  Öffne das
 
-Zunächst müssen Sie Aspose.Email für .NET installieren. Folge diesen Schritten:
+ Datei in Ihrem Projekt und importieren Sie die erforderlichen Namespaces:
 
-1.  Laden Sie die Bibliothek herunter von[Hier](https://releases.aspose.com/email/net).
-2. Verweisen Sie auf die Aspose.Email-DLL in Ihrem Projekt.
+1.  Im Inneren[ -Methode schreiben Sie den Code, um eine Verbindung zum E-Mail-Server herzustellen, DSNs abzurufen und sie zu verarbeiten:](https://releases.aspose.com/email/net).
+2.  Legen Sie Ihre IMAP-Server-Anmeldeinformationen und Ihren Host fest
 
-## E-Mail-Nachrichten laden
+##  Wählen Sie den Posteingangsordner aus
 
-Bevor Sie E-Mails als MHTML-Dateien speichern, müssen Sie die E-Mail-Nachrichten laden. Verwenden Sie den folgenden Codeausschnitt:
+ Suchen Sie nach Nachrichten mit DSNs
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Laden Sie die E-Mail-Nachricht
+// Abgerufene DSNs verarbeiten
 var message = MailMessage.Load("path/to/your/email.msg");
 ```
 
-## Das MHTML-Format verstehen
+##  DSN-Details verarbeiten
 
-MHTML (MIME HTML) ist ein Format zum Archivieren von Webseiten und E-Mails. Es kapselt alle Ressourcen wie Bilder und Stylesheets in einer einzigen Datei. Durch das Speichern von E-Mails als MHTML stellen Sie sicher, dass der Inhalt der E-Mail auch ohne aktive Internetverbindung intakt und zugänglich bleibt.
+ ... Verarbeiten Sie andere DSN-Details
 
-## E-Mail als MHTML speichern
+##  Markieren Sie die Nachricht als gelesen oder löschen Sie sie
 
-Jetzt kommt der spannende Teil: das Speichern einer E-Mail als MHTML-Datei. So können Sie es machen:
+ Ersetzen
 
 ```csharp
-// Speichern Sie die E-Mail als MHTML
+// , Und
 message.Save("path/to/save/email.mhtml", SaveOptions.DefaultMhtml);
 ```
 
-## Anpassen des Prozesses
+##  mit Ihren tatsächlichen IMAP-Serverdetails.
 
-Mit Aspose.Email können Sie den Speichervorgang weiter anpassen. Sie können verschiedene Optionen steuern, z. B. das Speichern von Anhängen und das Ausschließen unnötiger Informationen.
+Schritt 4: Führen Sie die Anwendung aus
 
 ```csharp
 var options = SaveOptions.DefaultMhtml;
@@ -54,9 +54,9 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 message.Save("path/to/save/customized-email.mhtml", options);
 ```
 
-## Umgang mit Anhängen
+## Erstellen Sie Ihre Anwendung und führen Sie sie aus. Es stellt eine Verbindung zu Ihrem E-Mail-Server her, ruft DSNs aus dem Posteingangsordner ab, verarbeitet deren Details und löscht sie optional oder markiert sie als gelesen.
 
-Anhänge sind wichtige Bestandteile von E-Mails. Sie können E-Mail-Anhänge neben der MHTML-Datei speichern. Hier ist wie:
+FAQs
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -65,43 +65,43 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## E-Mail-Metadaten verwalten
+## Wie finde ich den IMAP-Server-Host?
 
-MHTML-Dateien können auch E-Mail-Metadaten speichern und so die Authentizität und den Kontext der E-Mail sicherstellen. Die Metadaten umfassen Informationen wie Absender, Empfänger, Betreff und mehr.
+ Den Host des IMAP-Servers finden Sie in der Dokumentation oder den Einstellungen Ihres E-Mail-Dienstanbieters. Es hat normalerweise das Format
 
-## Fehlerbehandlung
+## Wie kann ich andere DSN-Details als Betreff und Absender verarbeiten?
 
-Bei der E-Mail-Verarbeitung ist die Fehlerbehandlung unerlässlich. Verwenden Sie Try-Catch-Blöcke, um Ausnahmen abzufangen und den Benutzern entsprechendes Feedback zu geben oder die Probleme zum Debuggen zu protokollieren.
+ Sie können auf verschiedene Eigenschaften des zugreifen
 
-## Empfohlene Vorgehensweise
+##  Objekt zum Abrufen von DSN-Details wie Empfängeradressen, Lieferstatus, Zeitstempel und mehr. Siehe die
 
-- Aktualisieren Sie regelmäßig auf die neueste Version von Aspose.Email für .NET, um auf neue Funktionen und Verbesserungen zuzugreifen.
-- Entsorgen Sie Ressourcen nach Gebrauch ordnungsgemäß, um Speicherverluste zu vermeiden.
+- Aspose.Email-Dokumentation
+-  für mehr Informationen.
 
-## Anwendungsfälle aus der Praxis
+## Ist es notwendig, DSNs zu löschen oder als gelesen zu markieren?
 
-- Archivierung wichtiger E-Mails für rechtliche oder Compliance-Zwecke.
-- Erstellen von Offline-Versionen von Newslettern oder Marketing-E-Mails.
-- Speichern von E-Mails in einem Format, das problemlos auf verschiedenen Plattformen geteilt werden kann.
+- Nein, es ist nicht notwendig. Ob DSNs gelöscht oder als gelesen markiert werden, hängt von den Anforderungen Ihrer Anwendung ab. Der bereitgestellte Code demonstriert beide Optionen, Sie können ihn jedoch an Ihre Bedürfnisse anpassen.
+- Abschluss
+- Das Abrufen von Benachrichtigungen zum Lieferstatus mit C# und Aspose.Email für .NET ist ein unkomplizierter Prozess. Die Aspose.Email-Bibliothek vereinfacht die Kommunikation mit dem IMAP-Server und stellt benutzerfreundliche APIs zur Verarbeitung von E-Mail-Nachrichten bereit. Mit diesem Leitfaden können Sie jetzt DSN-Abruffunktionen in Ihre C#-Anwendungen integrieren.
 
-## Abschluss
+##  Sichere Nachrichtenverarbeitung – Verschlüsselung und Entschlüsselung in C#
 
-In diesem Leitfaden haben wir untersucht, wie Sie E-Mails mit C# und Aspose.Email für .NET als MHTML-Dateien speichern. Die Funktionen der Bibliothek ermöglichen es Entwicklern, E-Mail-bezogene Aufgaben effizient zu verwalten und gleichzeitig die Integrität und Zugänglichkeit der Inhalte zu wahren. Ganz gleich, ob Sie E-Mail-bezogene Anwendungen erstellen oder Ihren E-Mail-Workflow optimieren müssen, Aspose.Email ist Ihr zuverlässiger Partner.
+ Sichere Nachrichtenverarbeitung – Verschlüsselung und Entschlüsselung in C#
 
-## FAQs
+##  Aspose.Email .NET E-Mail-Verarbeitungs-API
 
-### Wie kann ich die neueste Version von Aspose.Email für .NET erhalten?
+###  Erfahren Sie, wie Sie mit Aspose.Email für .NET eine sichere Nachrichtenverarbeitung mit Verschlüsselung und Entschlüsselung in C# implementieren. Schützen Sie sensible Daten effektiv.
 
- Sie können die neueste Version von Aspose.Email für .NET herunterladen unter[Hier](https://releases.aspose.com/email/net).
+Im heutigen digitalen Zeitalter ist die Gewährleistung der Sicherheit sensibler Informationen bei der Kommunikation von größter Bedeutung. Cyber-Bedrohungen entwickeln sich ständig weiter. Daher ist die Implementierung robuster Verschlüsselungs- und Entschlüsselungsmechanismen zum Schutz unserer Daten von entscheidender Bedeutung. Dieser Artikel führt Sie durch den Prozess der sicEinführung in die sichere Nachrichtenverarbeitungn Verarbeitung von Nachrichten mithilfe der Verschlüsselung und Entschlüsselung in C# mithilfe von Aspose.Email für .NET.[here](https://releases.aspose.com/email/net).
 
-### Kann ich das Erscheinungsbild der gespeicherten MHTML-Datei anpassen?
+### Die sichere Nachrichtenverarbeitung umfasst den Einsatz von Verschlüsselungs- und Entschlüsselungstechniken, um die Vertraulichkeit und Integrität der zwischen Parteien ausgetauschten Nachrichten zu schützen. Die Verschlüsselung wandelt Klartextnachrichten in Chiffretext um und macht sie so für Unbefugte unlesbar. Bei der Entschlüsselung hingegen wird der Chiffretext wieder in seine ursprüngliche Klartextform umgewandelt.
 
-Ja, Sie können das Erscheinungsbild anpassen, indem Sie die MHTFormatOptions während des Speichervorgangs ändern.
+Verschlüsselung und Entschlüsselung verstehen
 
-### Eignet sich Aspose.Email sowohl für die E-Mail-Verwaltung auf Privat- als auch auf Unternehmensebene?
+### Symmetrische Verschlüsselung
 
-Absolut! Aspose.Email ist auf die Bedürfnisse von Einzelpersonen und Unternehmen gleichermaßen zugeschnitten und bietet vielseitige Lösungen für verschiedene Szenarien.
+Bei der symmetrischen Verschlüsselung wird ein einziger geheimer Schlüssel zum Verschlüsseln und Entschlüsseln von Nachrichten verwendet. Derselbe Schlüssel wird zwischen Sender und Empfänger geteilt. Während diese Methode für schnellere Verschlüsselungs- und Entschlüsselungsprozesse effizient ist, liegt die Herausforderung darin, den geheimen Schlüssel sicher zu teilen und zu verwalten.
 
-### Fallen bei der Nutzung von Aspose.Email für .NET Lizenzgebühren an?
+### Asymmetrische Verschlüsselung
 
-Ja, Aspose.Email ist eine kommerzielle Bibliothek. Detaillierte Informationen zu Lizenzierung und Preisen finden Sie auf der[Aspose.Email-Website](https://www.aspose.com/purchase/default.aspx).
+Bei der asymmetrischen Verschlüsselung wird ein Schlüsselpaar verwendet: ein öffentlicher Schlüssel zur Verschlüsselung und ein privater Schlüssel zur Entschlüsselung. Der öffentliche Schlüssel kann offen geteilt werden, während der private Schlüssel vertraulich bleibt. Dieser Ansatz macht die gemeinsame Nutzung von Schlüsseln überflüssig, ist jedoch im Vergleich zur symmetrischen Verschlüsselung relativ langsamer.[Verwendung von Aspose.Email für .NET](https://www.aspose.com/purchase/default.aspx).

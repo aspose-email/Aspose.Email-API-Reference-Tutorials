@@ -1,104 +1,120 @@
 ---
-title: Representación de hipervínculos personalizados en C#
-linktitle: Representación de hipervínculos personalizados en C#
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda a personalizar la representación de hipervínculos en C# usando Aspose.Email para .NET. Cree contenido de correo electrónico personalizado con estilos de hipervínculos personalizados.
+title: Custom Hyperlink Rendering in C#
+linktitle: Custom Hyperlink Rendering in C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to customize hyperlink rendering in C# using Aspose.Email for .NET. Create personalized email content with custom hyperlink styles.
 type: docs
 weight: 13
 url: /es/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/
 ---
 
-Esta guía lo guiará a través del proceso de representación de hipervínculos personalizados en C# usando Aspose.Email para .NET. Aspose.Email para .NET es una poderosa biblioteca que le permite trabajar con correos electrónicos, incluidas varias funciones como crear, leer y manipular mensajes de correo electrónico. En este tutorial, nos centraremos en cómo personalizar la representación de hipervínculos en mensajes de correo electrónico utilizando la biblioteca.
+In the world of email communications, making hyperlinks stand out and look appealing is crucial for grabbing the reader's attention. As a proficient SEO writer, I will guide you through the process of custom hyperlink rendering in C# using Aspose.Email for .NET. We'll explore how to enhance the appearance of hyperlinks in your email messages, making them more engaging for your recipients.
 
-## Requisitos previos
+## Introduction
 
-Antes de comenzar, asegúrese de cumplir con los siguientes requisitos previos:
+Emails often contain hyperlinks that direct users to websites or other resources. By default, these hyperlinks appear as plain text in the email body. However, with Aspose.Email for .NET, you can customize the rendering of hyperlinks, adding style and enhancing their visibility.
 
-- Visual Studio o cualquier otro entorno de desarrollo C#
--  Aspose.Email para la biblioteca .NET (puede descargarlo desde[aquí](https://releases.aspose.com/email/net))
-- Conocimientos básicos de programación C# y conceptos de correo electrónico.
+## Setting Up the Environment
 
-## Pasos
-
-Siga los pasos a continuación para implementar la representación de hipervínculos personalizada en C# usando Aspose.Email para .NET:
-
-### Paso 1: crear un nuevo proyecto C#
-
-Abra su entorno de desarrollo C# (por ejemplo, Visual Studio) y cree un nuevo proyecto.
-
-### Paso 2: agregar referencia a Aspose.Email
-
-Agregue una referencia a la biblioteca Aspose.Email para .NET en su proyecto. Puede hacer esto haciendo clic derecho en su proyecto en el Explorador de soluciones, seleccionando "Agregar" > "Referencia" y luego navegando hasta la ubicación donde guardó la DLL Aspose.Email.
-
-### Paso 3: Inicialice el objeto MailMessage
-
- Crear una nueva instancia del`MailMessage` clase de la biblioteca Aspose.Email. Esta clase representa un mensaje de correo electrónico.
+Before we dive into the code, let's ensure we have everything set up correctly. You'll need to have Aspose.Email for .NET installed and create a C# project. Make sure to include the necessary Aspose.Email references.
 
 ```csharp
 using Aspose.Email;
+using System;
+using System.IO;
 
-// ...
-
-MailMessage message = new MailMessage();
-```
-
-### Paso 4: cree un hipervínculo
-
- Crear un`Hyperlink` objeto y establecer sus propiedades, como URL y texto para mostrar.
-
-```csharp
-Hyperlink hyperlink = new Hyperlink("https://www.example.com", "Visite nuestro sitio web");
-```
-
-### Paso 5: personalizar la representación de hipervínculos
-
- Personalice la representación del hipervínculo utilizando el`TextFormattingCallback` propiedad. Esta propiedad le permite especificar una función de devolución de llamada que se invocará al representar el hipervínculo.
-
-```csharp
-message.TextFormattingCallback = (sender, args) =>
+namespace CustomHyperlinkRendering
 {
-    if (args.Hyperlink != null)
+    class Program
     {
-        // Personalice la representación del hipervínculo aquí
-        string formattedText = $"[CustomLink: {args.Hyperlink.Text}]({args.Hyperlink.Uri})";
-        args.FormattedText = formattedText;
-        args.IsHandled = true; //Indicar que se realizó el renderizado personalizado
+        static void Main(string[] args)
+        {
+            // Set your data directory path
+            string dataDir = "Your Data Directory";
+            var fileName = dataDir + "LinksSample.eml";
+            MailMessage msg = MailMessage.Load(fileName);
+
+            // Render hyperlinks with href
+            string renderedHtmlWithHref = RenderHyperlinkWithHref(msg.GetHtmlBodyText());
+
+            // Render hyperlinks without href
+            string renderedHtmlWithoutHref = RenderHyperlinkWithoutHref(msg.GetHtmlBodyText());
+
+            Console.WriteLine("Hyperlinks with Href:");
+            Console.WriteLine(renderedHtmlWithHref);
+
+            Console.WriteLine("Hyperlinks without Href:");
+            Console.WriteLine(renderedHtmlWithoutHref);
+        }
+
+        // Custom hyperlink rendering methods will be implemented here
     }
-};
+}
 ```
 
- En el código anterior, la función de devolución de llamada recibe el`Hyperlink` objeto y puede manipular sus propiedades para personalizar la representación. En este ejemplo, estamos formateando el hipervínculo usando una sintaxis de estilo Markdown.
+## Rendering Hyperlinks with Href
 
-### Paso 6: agregue un hipervínculo al cuerpo del correo electrónico
-
-Agregue el hipervínculo personalizado al cuerpo del correo electrónico.
+In the provided source code, we have two methods: `RenderHyperlinkWithHref` and `RenderHyperlinkWithoutHref`. Let's begin with the first one, which renders hyperlinks along with the `href` attribute.
 
 ```csharp
-message.HtmlBody = "Please click the following link: [CustomLink: Visit our website](https://www.ejemplo.com)";
+private static string RenderHyperlinkWithHref(string source)
+{
+    int start = source.IndexOf("href=\"") + "href=\"".Length;
+    int end = source.IndexOf("\"", start + "href=\"".Length);
+    string href = source.Substring(start, end - start);
+    start = source.IndexOf(">") + 1;
+    end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    string link = string.Format("{0}<{1}>", text, href);
+    return link;
+}
 ```
 
-### Paso 7: guarde o envíe el correo electrónico
+This method extracts the `href` attribute and the link text from the HTML source and combines them to create a custom hyperlink.
 
-Ahora puede guardar el correo electrónico en un archivo o enviarlo utilizando el servidor SMTP de su elección.
+## Rendering Hyperlinks without Href
+
+Now, let's move on to the `RenderHyperlinkWithoutHref` method, which renders hyperlinks without the `href` attribute.
 
 ```csharp
-message.Save("custom_hyperlink_email.eml", SaveOptions.DefaultEml);
+private static string RenderHyperlinkWithoutHref(string source)
+{
+    int start = source.IndexOf(">") + 1;
+    int end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    return text;
+}
 ```
 
-## Preguntas frecuentes
+This method extracts the link text directly from the HTML source, excluding the `href` attribute.
 
-### ¿Cómo personalizo aún más la representación del hipervínculo?
+## Conclusion
 
-Puede personalizar aún más la representación del hipervínculo modificando la función de devolución de llamada en el Paso 5. Puede cambiar el formato, aplicar estilos CSS o incluso crear estructuras HTML complejas para representar hipervínculos.
+Custom hyperlink rendering in C# using Aspose.Email for .NET allows you to add style and uniqueness to the hyperlinks in your email messages. Whether you want to make hyperlinks more visually appealing or simply extract the text, Aspose.Email provides the tools you need.
 
-### ¿Puedo personalizar hipervínculos en correos electrónicos de texto sin formato?
+Enhance your email communications by customizing hyperlinks with Aspose.Email for .NET, and engage your recipients more effectively.
 
- Sí tu puedes. En el paso 5, puede comprobar el`args.IsHtml`propiedad para determinar si la representación es para un correo electrónico HTML o un correo electrónico de texto sin formato. Luego, puede aplicar su personalización en consecuencia.
+For more information and access to the source code, visit the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
 
-### ¿Dónde puedo encontrar más información sobre Aspose.Email para .NET?
+---
 
- Puede encontrar documentación detallada y ejemplos de código para Aspose.Email para .NET en el[Aspose.Email para referencia de API .NET](https://reference.aspose.com/email/net).
+## FAQs
 
-## Conclusión
+### 1. What is Aspose.Email for .NET?
+   Aspose.Email for .NET is a powerful library that enables developers to work with email messages in their .NET applications. It provides a wide range of features for creating, parsing, and manipulating emails.
 
- En este tutorial, aprendió cómo personalizar la representación de hipervínculos en C# usando Aspose.Email para .NET. Aprovechando el`TextFormattingCallback` propiedad, puede tener control total sobre cómo se muestran los hipervínculos en sus mensajes de correo electrónico. Esto le permite crear contenido de correo electrónico visualmente atractivo y personalizado.
+### 2. Can I customize the appearance of hyperlinks in email messages with Aspose.Email for .NET?
+   Yes, you can customize the rendering of hyperlinks in email messages using Aspose.Email for .NET, as demonstrated in this article.
+
+### 3. Are there any limitations to custom hyperlink rendering in Aspose.Email for .NET?
+   While you can enhance the appearance of hyperlinks, keep in mind that excessive customization may not be supported by all email clients. Test your email messages in various clients to ensure compatibility.
+
+### 4. Where can I find more resources and examples for using Aspose.Email for .NET?
+   You can explore additional resources and code examples in the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+### 5. How can I access the sample source code used in this article?
+   You can access the sample source code for custom hyperlink rendering in C# using Aspose.Email for .NET by visiting the provided documentation link: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+---
+
+In this comprehensive guide, we've explored custom hyperlink rendering in C# using Aspose.Email for .NET, enabling you to create engaging email messages with beautifully styled hyperlinks. Don't miss the opportunity to enhance your email communications and make your messages stand out. Access the provided link to get started on your journey to more captivating emails.

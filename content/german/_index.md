@@ -29,3 +29,21 @@ Dies sind Links zu einigen nützlichen Ressourcen:
 - [E-Mail-Validierung und -Verifizierung](./net/email-validation-and-verification/)
 - [Speicherung und Abruf von E-Mail-Dateien](./net/email-file-storage-and-retrieval/)
 - [E-Mail-Sicherheit und Signaturen](./net/email-security-and-signatures/)
+
+##  E-Mail-Erstellung, Konvertierung und Verarbeitung mit Aspose.Email-Tutorials
+{{% alert color="primary" %}}
+
+ Aspose.Email für .NET-Tutorials
+
+
+{{% /alert %}}
+
+ Optimieren Sie die E-Mail-Funktionen mit Aspose.Email für .NET-Tutorials. Lernen Sie die Erstellung, Konvertierung und Verarbeitung für eine erweiterte E-Mail-Verwaltung.
+- [Einführung](./java/sending-emails/)
+- [Die Aspose.Email für .NET-Tutorials bieten Entwicklern eine umfassende Ressource zur Verbesserung ihrer E-Mail-Funktionen. Diese Tutorials decken drei wichtige Aspekte der E-Mail-Verwaltung ab: Erstellung, Konvertierung und Verarbeitung. Mit Schritt-für-Schritt-Anleitungen und praktischen Codebeispielen können Entwickler Aspose.Email für .NET nahtlos in ihre Anwendungen integrieren und so erweiterte Funktionen zum Erstellen, Konvertieren und Verarbeiten von E-Mail-Nachrichten freischalten.](./java/receiving-emails/)
+- [E-Mail-Zusammensetzung](./java/configuring-smtp-servers/)
+- [Die Tutorials zum Verfassen von E-Mails befassen sich mit der Kunst, programmgesteuert individuelle und ansprechende E-Mail-Nachrichten zu erstellen. Entwickler können lernen, wie sie E-Mails mit dynamischen Inhalten, Anhängen und Formatierungen erstellen. Diese Tutorials führen Entwickler durch den Prozess des Hinzufügens von Empfängern, des Festlegens von Betreffzeilen und des Einbindens von Rich-Text- und HTML-Inhalten. Durch das Befolgen dieser Tutorials können Entwickler ihre Anwendungen verbessern, indem sie Benutzern die Möglichkeit bieten, personalisierte und optisch ansprechende E-Mail-Inhalte zu generieren.](./java/advanced-email-attachments/)
+- [E-Mail-Konvertierung](./java/securing-email-communications/)
+- [Die E-Mail-Konvertierungs-Tutorials konzentrieren sich auf die nahtlose Umwandlung von E-Mail-Nachrichten zwischen verschiedenen Formaten wie MSG, EML und HTML. Entwickler können Techniken zum Konvertieren von E-Mails unter Beibehaltung von Metadaten, Anhängen und Formatierungen erkunden. Diese Tutorials bieten Schritt-für-Schritt-Anleitungen zum Konvertieren von E-Mails in verschiedene Formate und ermöglichen so eine flexible Datenfreigabe und -archivierung. Durch Befolgen dieser Tutorials können Entwickler ihre Anwendungen für einen effizienten Datenaustausch über verschiedene E-Mail-Formate hinweg optimieren.](./java/email-analytics-and-tracking/)
+- [E-Mail-Verarbeitung](./java/customizing-email-headers/)
+- [Die Tutorials zur E-Mail-Verarbeitung ermöglichen Entwicklern die effiziente Verwaltung und Analyse von E-Mail-Inhalten programmgesteuert. Entwickler können Techniken zum Abrufen, Filtern und Kategorisieren von E-Mail-Nachrichten anhand bestimmter Kriterien erlernen. Diese Tutorials führen Entwickler durch den Prozess des Zugriffs auf E-Mail-Inhalte, der Extraktion relevanter Informationen und der Organisation von E-Mails für eine effiziente Verarbeitung. Durch das Befolgen dieser Tutorials können Entwickler ihre Anwendungen mit automatisierter E-Mail-Verwaltung und aufschlussreichen Datenanalysefunktionen erweitern.](./java/exploring-email-security/)

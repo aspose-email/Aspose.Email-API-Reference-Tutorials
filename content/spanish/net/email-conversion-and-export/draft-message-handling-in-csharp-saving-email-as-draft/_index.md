@@ -1,105 +1,105 @@
 ---
-title: Manejo de borradores de mensajes en C# guardar correo electrónico como borrador
-linktitle: Manejo de borradores de mensajes en C# guardar correo electrónico como borrador
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda a implementar el manejo de borradores de correo electrónico en C# usando Aspose.Email para .NET. Cree, edite y guarde borradores sin problemas.
+title: Detección de mensajes TNEF en C#: explicado
+linktitle: Aspose.Email API de procesamiento de correo electrónico .NET
+second_title: Aprenda a detectar y procesar mensajes TNEF en C# usando Aspose.Email para .NET. Mejore el manejo del correo electrónico con texto enriquecido y archivos adjuntos.
+description: Esta guía le proporcionará una explicación detallada paso a paso de cómo detectar mensajes TNEF (formato de encapsulación neutral de transporte) utilizando la biblioteca Aspose.Email para .NET. TNEF es un formato utilizado por Microsoft Outlook para encapsular texto enriquecido y archivos adjuntos en mensajes de correo electrónico. Aspose.Email para .NET ofrece un potente conjunto de API para trabajar con correos electrónicos y archivos adjuntos, incluidos los mensajes TNEF.
 type: docs
 weight: 17
 url: /es/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
 
-## Introducción
-
-El manejo de borradores de mensajes es una funcionalidad crucial para los clientes de correo electrónico. Los usuarios a menudo necesitan la capacidad de comenzar a redactar un correo electrónico, guardarlo como borrador y volver a él más tarde para editarlo o enviarlo eventualmente. Este artículo demuestra cómo implementar esta función utilizando la biblioteca Aspose.Email para .NET.
-
 ## Requisitos previos
 
-Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-- Visual Studio (o cualquier entorno de desarrollo C#)
-- Aspose.Email para la biblioteca .NET
+## Un entorno de desarrollo (por ejemplo, Visual Studio) para C#.
 
- Puede descargar la biblioteca Aspose.Email desde[aquí](https://releases.aspose.com/email/net).
+ Aspose.Email para la biblioteca .NET instalada. Puedes descargarlo desde
 
-## Configurando el proyecto
+- aquí
+- Paso 1: crear un nuevo proyecto C#
 
-1. Cree un nuevo proyecto de C# en su entorno de desarrollo.
-2. Agregue referencias a las DLL de Aspose.Email en su proyecto.
+Comience creando un nuevo proyecto C# en el entorno de desarrollo elegido.[Paso 2: Instale Aspose.Email para .NET](https://releases.aspose.com/email/net).
 
-## Crear el borrador del correo electrónico
+## Instale la biblioteca Aspose.Email para .NET utilizando el Administrador de paquetes NuGet. Ejecute el siguiente comando en la Consola del Administrador de paquetes:
 
-Para crear un borrador de mensaje, siga estos pasos:
+1. Paso 3: importar los espacios de nombres necesarios
+2. En su código C#, importe los espacios de nombres necesarios:
 
-## Agregar destinatarios y asunto
+## Paso 4: cargar y detectar mensajes TNEF
+
+ Cargue el mensaje de correo electrónico usando el
+
+##  clase:
 
 ```csharp
-// Crear una nueva instancia de MailMessage
+//Determine si el correo electrónico cargado es un mensaje TNEF:
 MailMessage draft = new MailMessage();
 
-// Agregar recipientes
+// Reemplazar
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// Establecer asunto de correo electrónico
+// con la ruta real a su archivo de mensajes de correo electrónico.
 draft.Subject = "Draft Email Demo";
 ```
 
-## Redactar el cuerpo del correo electrónico
+## Paso 5: Procesar los archivos adjuntos TNEF
 
 ```csharp
-// Establecer cuerpo de correo electrónico
+//Si el correo electrónico cargado es efectivamente un mensaje TNEF, puede extraer y procesar sus archivos adjuntos:
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## Guardar como borrador
+##  Procesar archivo adjunto TNEF
 
 ```csharp
-// Guarde el correo electrónico como borrador
+// Por ejemplo, guardar el archivo adjunto en el disco
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Cargando y editando borradores
+## Preguntas frecuentes
 
-Para cargar y editar borradores de mensajes, siga estos pasos:
+¿Cómo puedo comprobar si un correo electrónico es un mensaje TNEF?
 
 ```csharp
-// Cargar un borrador de correo electrónico
+// Para comprobar si un correo electrónico es un mensaje TNEF, utilice el
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-// Editar destinatarios
+// método de la
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// Editar cuerpo del correo electrónico
+// clase:
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-// Guardar cambios
+//¿Cómo extraigo archivos adjuntos de un mensaje TNEF?
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Conclusión
+## Para extraer archivos adjuntos de un mensaje TNEF, siga estos pasos:
 
-En este artículo, exploramos cómo manejar borradores de mensajes en C# usando la biblioteca Aspose.Email para .NET. Aprendimos cómo crear, editar y guardar borradores de correos electrónicos, brindando a los usuarios una experiencia perfecta al redactar mensajes. Si sigue los pasos descritos en esta guía, puede mejorar su aplicación de cliente de correo electrónico con la funcionalidad de borrador de mensajes.
+ Cargue el correo electrónico usando
 
-## Preguntas frecuentes
+##  Compruebe si el correo electrónico es un mensaje TNEF utilizando
 
-### ¿Cómo descargo la biblioteca Aspose.Email para .NET?
+###  Si es un mensaje TNEF, extraiga los archivos adjuntos usando
 
- Puede descargar la biblioteca Aspose.Email para .NET desde[aquí](https://releases.aspose.com/email/net).
+ Procesar archivo adjunto TNEF[ Por ejemplo, guardar el archivo adjunto en el disco](https://releases.aspose.com/email/net).
 
-### ¿Puedo editar los destinatarios y el asunto de un borrador guardado?
+###  Para obtener información más detallada y referencias de API, consulte la
 
-Sí, puede cargar un borrador guardado, editar sus destinatarios, tema y contenido, y luego guardar los cambios como un borrador actualizado.
+Aspose.Email para la documentación de .NET
 
-### ¿El borrador del correo electrónico se guarda en un formato específico?
+### Conclusión
 
-Sí, el borrador del correo electrónico se guarda en formato EML, que es un formato ampliamente utilizado para mensajes de correo electrónico.
+En esta guía, ha aprendido cómo detectar mensajes TNEF (formato de encapsulación neutral de transporte) utilizando la biblioteca Aspose.Email para .NET. Los mensajes TNEF, utilizados a menudo por Microsoft Outlook, encapsulan texto enriquecido y archivos adjuntos dentro de los correos electrónicos. Si sigue los pasos descritos en esta guía, podrá identificar de manera eficiente los mensajes TNEF y extraer sus archivos adjuntos para su posterior procesamiento.
 
-### ¿Puedo integrar el manejo de borradores de mensajes en mi aplicación de correo electrónico existente?
+###  Verificar mensajes devueltos con código C#
 
-Por supuesto, siguiendo los pasos proporcionados en esta guía, puede integrar sin problemas el manejo de borradores de mensajes en su aplicación cliente de correo electrónico existente.
+ Verificar mensajes devueltos con código C#
 
-### ¿La biblioteca Aspose.Email admite otras funcionalidades relacionadas con el correo electrónico?
+###  Aspose.Email API de procesamiento de correo electrónico .NET
 
- Sí, la biblioteca Aspose.Email ofrece una amplia gama de funciones para trabajar con mensajes de correo electrónico, incluido el envío, la recepción y la manipulación de correos electrónicos y archivos adjuntos. Puede consultar la documentación para obtener más detalles:[aquí](https://reference.aspose.com)
+ Automatice la verificación de mensajes devueltos utilizando C# y Aspose.Email para .NET. Administre listas de correo electrónico sin esfuerzo y mejore la efectividad de las campañas.[¿Estás cansado de lidiar con mensajes de correo electrónico rebotados? Administrar los correos electrónicos devueltos puede ser un verdadero dolor de cabeza, especialmente cuando ejecuta una campaña de correo electrónico o mantiene una lista de correo grande. Afortunadamente, existe una solución que puede ayudarle a verificar y manejar eficientemente los mensajes devueltos utilizando código C# y la biblioteca Aspose.Email para .NET. En esta guía paso a paso, lo guiaremos a través del proceso de verificar los mensajes devueltos y garantizar que su comunicación por correo electrónico siga siendo efectiva y sin complicaciones.](https://reference.aspose.com)

@@ -1,135 +1,112 @@
 ---
-title: C# Kılavuzu - Mesajları Şifreleme Açısından Kontrol Etme
-linktitle: C# Kılavuzu - Mesajları Şifreleme Açısından Kontrol Etme
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET ile e-posta güvenliğini nasıl sağlayacağınızı öğrenin. Şifrelemeyi kontrol edin, mesajların şifresini çözün ve daha fazlasını yapın.
+title: C# Guide - Checking Messages for Encryption
+linktitle: C# Guide - Checking Messages for Encryption
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to ensure email security with Aspose.Email for .NET. Check for encryption, decrypt messages, and more.
 type: docs
 weight: 12
 url: /tr/net/email-processing-and-analysis/csharp-guide-checking-messages-for-encryption/
 ---
 
-Günümüzün dijital çağında hassas bilgilerin güvenliğinin sağlanması her şeyden önemlidir. Şifreleme, verilerin meraklı gözlerden korunmasında çok önemli bir rol oynar. E-posta iletişimiyle çalışan bir .NET geliştiricisiyseniz Aspose.Email'in mesaj şifrelemeyi kolaylaştıracak güçlü araçlar sağladığını bilmek sizi memnun edecektir. Bu kılavuzda, Aspose.Email for .NET kullanarak mesajları şifreleme açısından kontrol etme sürecini adım adım anlatacağız. O halde hadi dalalım!
+In today's digital age, ensuring the security of sensitive information is paramount. Encryption plays a pivotal role in safeguarding data from prying eyes. If you're a .NET developer working with email communication, you'll be pleased to know that Aspose.Email provides powerful tools to facilitate message encryption. In this guide, we'll take you through the step-by-step process of checking messages for encryption using Aspose.Email for .NET. So, let's dive in!
 
-## Aspose.Email for .NET'e giriş
+## Introduction to Aspose.Email for .NET
 
-Aspose.Email for .NET, .NET geliştiricilerinin çeşitli e-posta formatları ve protokolleriyle çalışmasını sağlayan güçlü bir kütüphanedir. E-posta mesajlarını, ekleri, kişileri, takvimleri ve çok daha fazlasını yönetme yeteneği de dahil olmak üzere çok çeşitli özellikler sunar.
+Aspose.Email for .NET is a robust library that empowers .NET developers to work with various email formats and protocols. It offers a wide array of features, including the ability to manage email messages, attachments, contacts, calendars, and much more.
 
-## Mesaj Şifreleme Neden Önemlidir?
+## Why Message Encryption Matters
 
-Mesaj şifreleme, e-posta içeriğinizin iletim sırasında gizli ve güvenli kalmasını sağlar. Yetkisiz erişimi önler ve hassas verileri potansiyel tehditlere karşı korur.
+Message encryption ensures that your email content remains confidential and secure during transmission. It prevents unauthorized access and protects sensitive data from potential threats.
 
-## Başlarken
+## Getting Started
 
-### Geliştirme Ortamınızı Kurma
+### Setting Up Your Development Environment
 
-Kodlama konusuna dalmadan önce uygun bir geliştirme ortamının kurulduğundan emin olun. İhtiyacın olacak:
+Before we dive into the coding aspect, make sure you have a suitable development environment set up. You'll need:
 
-- Visual Studio (veya tercih edilen herhangi bir IDE)
-- .NET Framework veya .NET Core
+- Visual Studio (or any other preferred IDE)
+- .NET Framework or .NET Core
 
-### Aspose.Email'i NuGet aracılığıyla yükleme
+### Installing Aspose.Email via NuGet
 
-1. Projenizi Visual Studio'da açın.
-2. "Araçlar" > "NuGet Paket Yöneticisi" > "Çözüm için NuGet Paketlerini Yönet" seçeneğine gidin.
-3. "Aspose.Email"i arayın ve projeniz için paketi yükleyin.
+1. Open your project in Visual Studio.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package for your project.
 
-## E-posta Mesajlarını Yükleme
+## Loading Email Messages
 
-E-posta mesajlarıyla çalışmaya başlamak için bunları uygulamanıza yüklemeniz gerekir. Aspose.Email bu görevi kusursuz hale getiriyor:
+To start working with email messages, you need to load them into your application. Aspose.Email makes this task seamless:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
-// Diğer ilgili kullanım ifadeleri
+// Other relevant using statements
 
-// PST dosyasını yükle
+// Load PST file
 using (PersonalStorage pst = PersonalStorage.FromFile("sample.pst"))
 {
-    // Klasörlere ve mesajlara erişme
+    // Access folders and messages
 }
 ```
 
-## Şifrelemeyi Kontrol Etme
+## Checking for Encryption
 
-### S/MIME Şifrelemesini Algılama
+### Detecting S/MIME Encryption
 
-Aspose.Email, e-posta mesajlarındaki S/MIME şifrelemesini tespit etmenizi sağlar:
+Aspose.Email allows you to detect S/MIME encryption in email messages:
 
 ```csharp
 using Aspose.Email;
-// Diğer ilgili kullanım ifadeleri
+// Other relevant using statements
 
-// Bir e-posta mesajı yükleyin
+// Load an email message
 MailMessage message = MailMessage.Load("encrypted.eml");
 
-// S/MIME şifrelemesini kontrol edin
+// Check for S/MIME encryption
 bool isEncrypted = message.IsEncrypted;
 ```
 
-### İleti Şifrelemesinin Doğrulanması
+## Decrypting Encrypted Messages
 
-Ayrıca bir mesajın dijital olarak imzalanıp şifrelenmediğini de doğrulayabilirsiniz:
-
-```csharp
-using Aspose.Email.Security;
-// Diğer ilgili kullanım ifadeleri
-
-// Bir e-posta mesajı yükleyin
-MailMessage message = MailMessage.Load("encrypted.eml");
-
-// İletinin imzalanmış ve şifrelenmiş olup olmadığını doğrulayın
-DigitalSignatureCollection signatures = message.DigitalSignatures;
-bool isSigned = signatures.Count > 0;
-
-// Şifrelemeyi kontrol edin
-if (isSigned && isEncrypted)
-{
-    // Mesaj imzalandı ve şifrelendi
-}
-```
-
-## Şifrelenmiş Mesajların Şifresini Çözme
-
-Şifrelenmiş bir mesajın şifresini çözmek, uygun anahtarları ve sertifikaları gerektirir. Aspose.Email'i kullanarak bunu şu şekilde yapabilirsiniz:
+Decrypting an encrypted message requires the proper keys and certificates. Here's how you can do it using Aspose.Email:
 
 ```csharp
 using Aspose.Email.Security.Cryptography;
-// Diğer ilgili kullanım ifadeleri
+// Other relevant using statements
 
-// Şifrelenmiş e-postayı yükleyin
+// Load the encrypted email
 MailMessage message = MailMessage.Load("encrypted.eml");
 
-// Şifre çözme anahtarını ve sertifikayı sağlayın
-AsymmetricKeyAlgorithm algorithm = new AsymmetricKeyAlgorithm(EncryptionAlgorithm.Rsa);
-algorithm.Parameters.Add("PrivateKey", privateKey);
-algorithm.Parameters.Add("Certificate", certificate);
+// Provide the decryption key and certificate
+X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_File" );
 
-// Mesajın şifresini çöz
-message.Decrypt(algorithm);
+
+// Decrypt the message
+message.Decrypt(privateCert);
 ```
 
-## İstisnaları İşleme
+## Handling Exceptions
 
-Şifrelemeyle çalışırken yanlış anahtarlar veya bozuk mesajlar gibi çeşitli nedenlerden dolayı istisnalar ortaya çıkabilir. Sorunsuz bir kullanıcı deneyimi sağlamak için bu istisnaları incelikle ele almak çok önemlidir.
+When working with encryption, exceptions may arise due to various reasons, such as incorrect keys or corrupted messages. It's crucial to handle these exceptions gracefully to ensure a smooth user experience.
 
 ```csharp
 try
 {
-    // Şifreleme içeren kod
+    // Code that involves encryption
 }
 catch (EncryptionException ex)
 {
-    // Şifrelemeyle ilgili istisnaları ele alın
+    // Handle encryption-related exceptions
 }
 catch (Exception ex)
 {
-    // Diğer istisnaları ele alın
+    // Handle other exceptions
 }
 ```
 
-## Basit kod
+## Sample Code
 
-Aspose.Email for .NET kullanarak mesajları şifreleme açısından kontrol etme sürecini gösteren örnek kod parçasını burada bulabilirsiniz:
+Here's a snippet of sample code that demonstrates the process of checking messages for encryption using Aspose.Email for .NET:
 
 ```csharp
 using System;
@@ -141,41 +118,41 @@ namespace EmailEncryptionDemo
     {
         static void Main(string[] args)
         {
-            // E-posta mesajını yükle
+            // Load the email message
             MailMessage message = MailMessage.Load("encrypted.eml");
 
-            // S/MIME şifrelemesini kontrol edin
+            // Check for S/MIME encryption
             bool isEncrypted = message.IsEncrypted;
 
-            // Sonucu göster
+            // Display the result
             Console.WriteLine($"Is Encrypted: {isEncrypted}");
         }
     }
 }
 ```
 
-## Çözüm
+## Conclusion
 
-Bu kılavuzda, mesajları şifreleme açısından kontrol etmek için Aspose.Email for .NET'in özelliklerinden nasıl yararlanılabileceğini araştırdık. S/MIME şifrelemesini tespit edip doğrulayarak, mesajların şifresini çözerek ve istisnaları ele alarak uygulamalarınızda güvenli iletişim sağlayabilirsiniz. Aspose.Email süreci basitleştirerek sağlam ve güvenli e-posta işlevleri oluşturmaya odaklanmanıza olanak tanır.
+In this guide, we explored how to leverage the capabilities of Aspose.Email for .NET to check messages for encryption. By detecting and verifying S/MIME encryption, decrypting messages, and handling exceptions, you can ensure secure communication in your applications. Aspose.Email simplifies the process, allowing you to focus on building robust and secure email functionalities.
 
-## SSS
+## FAQs
 
-### Aspose.Email şifrelenmiş ekleri nasıl yönetir?
+### How does Aspose.Email handle encrypted attachments?
 
- Aspose.Email, şifrelenmiş e-posta mesajlarındaki ekleri ayıklamak ve şifrelerini çözmek için yöntemler sağlar. Şunu kullanabilirsiniz:`Attachment.Save` Ekleri diske kaydetmek için mesajın şifresini çözdükten sonra yöntem.
+Aspose.Email provides methods to extract and decrypt attachments from encrypted email messages. You can use the `Attachment.Save` method after decrypting the message to save the attachments to disk.
 
-### Aspose.Email'i .NET Core uygulamalarıyla kullanabilir miyim?
+### Can I use Aspose.Email with .NET Core applications?
 
-Evet, Aspose.Email hem .NET Framework hem de .NET Core uygulamalarıyla uyumludur ve geliştirme projelerinizde size esneklik sağlar.
+Yes, Aspose.Email is compatible with both .NET Framework and .NET Core applications, giving you flexibility in your development projects.
 
-### Aspose.Email hangi şifreleme algoritmalarını destekliyor?
+### What encryption algorithms does Aspose.Email support?
 
-Aspose.Email, e-posta mesajlarınızın güvenliğini sağlamak için AES, RSA ve TripleDES dahil olmak üzere çok çeşitli şifreleme algoritmalarını destekler.
+Aspose.Email supports a wide range of encryption algorithms, including AES, RSA, and TripleDES, to ensure the security of your email messages.
 
-### Bir e-postanın yalnızca belirli bölümlerini şifrelemek mümkün mü?
+### Is it possible to encrypt only specific parts of an email?
 
-Evet, Aspose.Email, bir e-posta mesajının ekler veya e-posta gövdesinin belirli bölümleri gibi belirli bölümlerini seçerek şifrelemenize olanak tanır.
+Yes, Aspose.Email allows you to selectively encrypt certain parts of an email message, such as attachments or specific sections of the email body.
 
-### Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
+### Where can I find more information about Aspose.Email for .NET?
 
- Daha ayrıntılı bilgi, örnekler ve belgeler için şu adresi ziyaret edin:[Aspose.Email for .NET Belgelendirmesi](https://reference.aspose.com/email/net) sayfa.
+For more detailed information, examples, and documentation, visit the [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net) page.

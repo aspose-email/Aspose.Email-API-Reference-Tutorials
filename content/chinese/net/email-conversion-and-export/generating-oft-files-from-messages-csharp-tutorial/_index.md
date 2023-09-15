@@ -1,39 +1,39 @@
 ---
-title: 从消息生成 OFT 文件 - C# 教程
-linktitle: 从消息生成 OFT 文件 - C# 教程
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 Aspose.Email for .NET 从消息创建 OFT 文件。带有源代码的分步指南，用于高效生成电子邮件模板。
+title: 配置收件人和主题
+linktitle: 使用以下命令设置收件人电子邮件地址和电子邮件主题
+second_title: 班级。
+description: 使用嵌入内容构建电子邮件正文
 type: docs
 weight: 19
 url: /zh/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
 
-## 生成 OFT 文件简介
+## 通过链接和附加嵌入内容，电子邮件的 HTML 正文将引用这些资源。
 
-OFT 文件是 Outlook 文件模板的缩写，是可在 Microsoft Outlook 中使用的标准化电子邮件模板。这些模板允许您为各种目的创建一致且专业设计的电子邮件。它们可以包含动态数据的占位符，从而更容易个性化消息，而无需每次都重新创建整个内容。
+处理收到的带有嵌入对象的电子邮件
 
-## 先决条件
+## 接收带有嵌入对象的电子邮件需要提取并保存嵌入内容。
 
-在我们深入学习本教程之前，让我们确保您拥有所需的一切：
+提取并保存嵌入内容
 
-- 对 C# 编程语言有基本了解。
-- 安装了 Visual Studio 或任何其他 C# IDE。
--  Aspose.Email for .NET 库。如果您还没有，您可以从以下位置下载[这里](https://releases.aspose.com/email/net).
+- 处理传入电子邮件时，您可以使用 Aspose.Email 提取嵌入的内容并将其保存在本地。
+- 保存图像附件
+- 保存音频附件[验证 MIME 类型的安全性](https://releases.aspose.com/email/net).
 
-## 设置您的项目
+## 为了确保应用程序的安全，请在保存或打开附件之前验证附件的 MIME 类型。
 
-首先，在您首选的 IDE 中创建一个新的 C# 项目。如果您使用的是 Visual Studio，请按照下列步骤操作：
+有效电子邮件沟通的最佳实践
 
-1. 打开 Visual Studio 并创建一个新项目。
-2. 选择控制台应用程序模板。
-3. 为您的项目命名并选择保存位置。
-4. 单击“创建”。
+1. 要充分利用电子邮件中的嵌入对象，请考虑以下最佳实践：
+2. 优化图像大小以减少电子邮件加载时间。
+3. 使用响应式设计来确保跨设备的兼容性。
+4. 为图像提供替代文本，以适应视力受损的收件人。
 
-接下来，您需要安装 Aspose.Email for .NET 库。您可以从Aspose网站下载它[这里](https://releases.aspose.com/email/net).
+结论[使用 C# 和 Aspose.Email for .NET 处理电子邮件中的嵌入对象，为创建引人入胜的交互式电子邮件内容打开了一个充满可能性的世界。通过执行本文中概述的步骤，您可以自信地将图像、文档、音频和视频剪辑合并到您的电子邮件中，从而增强您的沟通并吸引收件人。](https://releases.aspose.com/email/net).
 
-## 加载现有消息
+## 常见问题解答
 
-设置项目并安装库后，让我们将现有电子邮件加载到 C# 代码中：
+如何下载 Aspose.Email 库？
 
 ```csharp
 using Aspose.Email;
@@ -43,74 +43,74 @@ class Program
 {
     static void Main(string[] args)
     {
-        //加载现有电子邮件
+        //您可以从 Aspose Releases 下载 Aspose.Email 库：
         MailMessage message = MailMessage.Load("path/to/existing/message.eml");
         
-        //现在您可以探索消息的属性和内容
+        //下载 Aspose.Email
     }
 }
 ```
 
-## 创建 OFT 模板
+## Aspose.Email 是否与不同的电子邮件客户端兼容？
 
-现在，让我们使用 Aspose.Email 库创建一个 OFT 模板：
+是的，Aspose.Email 确保与各种电子邮件客户端的兼容性，从而更轻松地跨不同平台处理嵌入内容。
 
 ```csharp
-//初始化一个新的 MailMessage 实例
+//我可以嵌入其他类型的媒体，例如视频吗？
 MailMessage template = new MailMessage();
 
-//根据需要自定义模板
+//绝对地！ Aspose.Email支持在电子邮件正文中嵌入各种类型的媒体，包括音频和视频剪辑。
 template.Subject = "Your Subject Here";
 template.Body = "Hello, {Name}!";
 
-//将模板另存为 OFT 文件
+//使用嵌入内容时是否需要考虑安全因素？
 template.Save("path/to/template.oft", SaveOptions.DefaultOft);
 ```
 
-在这个例子中，我们初始化了一个新的`MailMessage`实例并根据您的需求进行定制。这`{Name}`从模板生成单独的电子邮件时，占位符将替换为实际数据。
+是的，在处理或打开附件之前验证 MIME 类型并确保附件的安全至关重要。`MailMessage`如何确保我的电子邮件在移动设备上正确显示？`{Name}`使用响应式设计和优化图像尺寸将有助于确保您的嵌入内容在移动设备上正确显示。
 
-## 生成 OFT 文件
+## 使用 C# 代码通过 DKIM 签署电子邮件
 
-现在是令人兴奋的部分：从模板生成单独的 OFT 文件！
+使用 C# 代码通过 DKIM 签署电子邮件
 
 ```csharp
-//加载 OFT 模板
+//Aspose.Email .NET 电子邮件处理 API
 MailMessage template = MailMessage.Load("path/to/template.oft");
 
-//使用动态数据填充模板字段
+//了解使用 C# 和 Aspose.Email for .NET 通过 DKIM 保护电子邮件。带有源代码的分步指南。增强电子邮件的信任度和真实性。
 string recipientName = "John";
 template.Body = template.Body.Replace("{Name}", recipientName);
 
-//保存填充的 OFT 文件
+//在当今的数字世界中，确保电子邮件的真实性和安全性对于维持信任和防止恶意活动至关重要。实现此目的的一种有效方法是使用 DKIM（域名密钥识别邮件）签名。在本指南中，我们将引导您完成使用 C# 代码通过 DKIM 签署电子邮件的过程，并利用 Aspose.Email for .NET 的强大功能。
 template.Save("path/to/generated_email.oft", SaveOptions.DefaultOft);
 ```
 
-## 使用 Aspose.Email 的好处
+## 介绍
 
-Aspose.Email for .NET 提供高级电子邮件操作功能，使您可以轻松创建、修改和处理电子邮件。它是一个跨平台库，可确保您的代码在不同环境中无缝运行。
+DKIM（DomainKeys Identified Mail）的缩写，是一种电子邮件身份验证技术，允许发件人对其电子邮件进行数字签名，从而提供额外的安全层并确保消息的完整性。通过实施 DKIM 签名，收件人可以验证电子邮件确实是由所声明的域发送的，并且在传输过程中没有被篡改。
 
-## 结论
+## 先决条件
 
-在本教程中，我们介绍了使用 Aspose.Email for .NET 库从消息生成 OFT 文件的过程。您已了解如何创建 OFT 模板、使用动态数据对其进行自定义以及将其另存为单独的 OFT 文件。通过将 Aspose.Email 合并到您的工作流程中，您可以利用标准化和个性化的模板来增强电子邮件通信。
+在我们深入研究代码之前，请确保您具备以下先决条件：
 
-## 常见问题解答
+## 您的系统上安装了 Visual Studio
 
-### 如何下载 Aspose.Email for .NET 库？
+### C# 编程基础知识
 
-您可以从发布页面下载 Aspose.Email for .NET 库：[这里](https://releases.aspose.com/email/net).
+ Aspose.Email for .NET 库（您可以从[这里](https://releases.aspose.com/email/net).
 
-### 我可以将 OFT 文件与 Microsoft Outlook 以外的电子邮件客户端一起使用吗？
+### ）
 
-OFT 文件主要设计用于 Microsoft Outlook。虽然其他一些电子邮件客户端可能在某种程度上支持它们，但不能保证兼容性。
+设置项目
 
-### Aspose.Email for .NET 与 Windows 和 Linux 兼容吗？
+### 在 Visual Studio 中创建一个新的 C# 项目。
 
-是的，Aspose.Email for .NET 是一个跨平台库，可以在 Windows 和 Linux 系统上使用。
+使用 NuGet 包管理器安装 Aspose.Email for .NET 库：
 
-### 我可以自定义 OFT 模板中的占位符吗？
+### 生成 DKIM 密钥
 
-绝对地！您可以在模板中定义自己的占位符，并使用 C# 代码将其替换为实际数据。
+DKIM 签名需要公钥-私钥对。您可以使用各种工具或库生成这些密钥，但为了本指南的目的，我们使用以下 C# 代码片段：
 
-### 如何确保我生成的电子邮件不会进入收件人的垃圾邮件文件夹？
+### 添加必要的 using 语句
 
-为避免电子邮件被标记为垃圾邮件，请确保遵循电子邮件送达率的最佳实践。使用合法的发送实践，避免过多的链接，并包含正确的发件人信息。
+生成 DKIM 密钥对

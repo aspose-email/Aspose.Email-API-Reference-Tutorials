@@ -1,26 +1,26 @@
 ---
-title: 将 HTML 正文添加到电子邮件 - C# 示例
-linktitle: 将 HTML 正文添加到电子邮件 - C# 示例
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何在 Aspose.Email for .NET 中使用 HTML 增强电子邮件内容。包含 C# 示例的分步指南。提升您的电子邮件沟通！
+title: 如何进一步自定义超链接呈现？
+linktitle: 您可以通过修改步骤 5 中的回调函数来进一步自定义超链接呈现。您可以更改格式、应用 CSS 样式，甚至创建复杂的 HTML 结构来呈现超链接。
+second_title: 我可以自定义纯文本电子邮件中的超链接吗？
+description: 是的你可以。在第 5 步中，您可以检查
 type: docs
 weight: 18
 url: /zh/net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
 
-电子邮件通信已成为现代商业和个人互动不可或缺的一部分。虽然纯文本电子邮件可以达到其目的，但将 HTML 内容合并到电子邮件中可以极大地增强其视觉吸引力和功能。在本文中，我们将为您提供全面的分步指南，并附有 C# 源代码示例，介绍如何使用 Aspose.Email for .NET 将 HTML 正文添加到电子邮件中。
+属性来确定呈现的是 HTML 电子邮件还是纯文本电子邮件。然后，您可以相应地应用您的自定义。
 
-## Aspose.Email for .NET 简介
+## 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
 
-Aspose.Email for .NET 是一个功能强大的库，允许开发人员在其 .NET 应用程序中使用电子邮件和相关功能。无论您是构建电子邮件客户端、自动化电子邮件相关任务，还是自定义电子邮件模板，Aspose.Email 都能简化流程并提供丰富的功能。
+您可以在以下位置找到 Aspose.Email for .NET 的详细文档和代码示例
 
-## 设置您的开发环境
+## Aspose.Email for .NET API 参考
 
-在我们深入编码之前，请确保您已将 Aspose.Email for .NET 库集成到您的项目中。您可以通过 NuGet 包管理器执行此操作。
+结论
 
-## 创建新电子邮件
+## 在本教程中，您学习了如何使用 Aspose.Email for .NET 在 C# 中自定义超链接呈现。通过利用
 
-首先，创建一个新实例`MailMessage`班级。此类允许您定义电子邮件的各种属性，例如发件人、收件人、主题和附件。
+属性，您可以完全控制超链接在电子邮件中的显示方式。这使您可以创建具有视觉吸引力和个性化的电子邮件内容。`MailMessage`使用 C# 定义 MHTML 中信息的自定义顺序
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -29,54 +29,54 @@ message.To.Add("recipient@example.com");
 message.Subject = "Hello from Aspose.Email!";
 ```
 
-## 将 HTML 正文添加到电子邮件
+## 使用 C# 定义 MHTML 中信息的自定义顺序
 
-现在是令人兴奋的部分 - 将 HTML 正文添加到您的电子邮件中。您可以利用`HtmlBody`的财产`MailMessage`类来设置电子邮件的 HTML 内容。
+Aspose.Email .NET 电子邮件处理 API`HtmlBody`了解如何使用 C# 和 Aspose.Email for .NET 自定义 MHTML 订单。带有代码的分步指南，可实现高效的信息安排。立即提升用户体验！`MailMessage`在当今的数字时代，管理和定制各种格式的信息顺序的需求变得至关重要。 MHTML（或 MIME HTML）是一种广泛使用的格式，它将 HTML 内容和图像等附加资源组合到一个文件中。在本文中，我们将探讨如何使用 C# 和适用于 .NET 的强大 Aspose.Email 库在 MHTML 文件中定义自定义信息顺序。
 
 ```csharp
 string htmlContent = "<html><body><h1>Welcome to our Newsletter!</h1><p>This is a sample HTML email body.</p></body></html>";
 message.HtmlBody = htmlContent;
 ```
 
-## 在 HTML 正文中嵌入图像
+## 介绍
 
-为了使您的电子邮件在视觉上更具吸引力，您可能需要在 HTML 正文中嵌入图像。您可以通过使用带有 Base64 编码图像数据的 HTML 标签引用图像或提供图像源的 URL 来实现此目的。
+MHTML 文件作为各种 Web 资源的容器，使它们可以方便地存档或共享。但是，在某些情况下，您可能需要重新排列 MHTML 文件中的信息顺序，以增强用户体验或满足特定要求。这就是 Aspose.Email 库发挥作用的地方，它提供了一种以编程方式操作 MHTML 文件的无缝方法。
 
 ```csharp
 string htmlContentWithImage = "<html><body><h1>Check out our New Product!</h1><img src='data:image/jpeg;base64,/9j...'></body></html>";
 message.HtmlBody = htmlContentWithImage;
 ```
 
-## 发送电子邮件
+## 了解 MHTML 文件
 
-一旦您完美地制作了电子邮件，就可以发送了。使用您首选的电子邮件服务器的设置或第三方服务来发送电子邮件。
+MHTML 文件将 HTML 内容与图像、样式表和其他资源封装到一个文件中。这可确保将所有必要的组件捆绑在一起，从而更轻松地共享或存档 Web 内容。要修改 MHTML 文件中的信息顺序，我们需要剖析其结构并相应地重新排列组件。
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 client.Send(message);
 ```
 
-## 处理异常
+## 设置环境
 
-请记住，网络问题和服务器问题可能会导致发送电子邮件时出现异常。确保实施适当的异常处理，以确保流畅的用户体验。
+在我们深入编码过程之前，我们需要设置开发环境。确保您具备以下先决条件：
 
-## 结论
+## Visual Studio 或任何首选的 C# IDE
 
-使用 Aspose.Email for .NET 将 HTML 内容合并到您的电子邮件中，为制作具有视觉吸引力的交互式电子邮件开辟了一个可能性的世界。从时事通讯到促销活动，您现在可以以前所未有的方式与收件人互动。
+ Aspose.Email for .NET 库（从
 
-## 常见问题解答
+## 这里
 
-### 我可以在 Windows 窗体和 ASP.NET 应用程序中使用 Aspose.Email for .NET 吗？
-   是的，Aspose.Email for .NET 用途广泛，可用于各种类型的 .NET 应用程序。
+### ）
+   C# 编程基础知识
 
-### Aspose.Email for .NET 支持电子邮件附件吗？
-   绝对地！您可以使用该库轻松地将文件附加到电子邮件中。
+### 加载和操作 MHTML 文件
+   首先，在 IDE 中创建一个新的 C# 项目。导入 Aspose.Email 库并将目标 MHTML 文件加载到您的项目中。下面是一个代码片段，可以帮助您理解该过程：
 
-### 是否可以使用 Aspose.Email for .NET 异步发送电子邮件？
-   是的，该库提供了发送电子邮件的异步方法，这可以提高某些场景下的性能。
+### 加载 MHTML 文件
+   定义信息的自定义顺序
 
-### 我可以自定义 HTML 电子邮件中嵌入图像的外观吗？
-   当然！您可以使用 HTML 和 CSS 控制嵌入图像的大小、对齐方式和其他属性。
+### 加载 MHTML 文件后，就可以定义信息的自定义顺序了。这可能涉及重新排序图像、调整 HTML 内容的顺序或您需要的任何其他修改。以下是如何实现此目标的示例：
+   执行必要的操作
 
-### 在哪里可以找到 Aspose.Email for .NET 的综合文档？
-   您可以访问 Aspose 文档：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+### 例如，重新排列图像或修改 HTML 内容
+   组织资源[对信息重新排序时，请记住考虑与每个组件关联的资源。图像、样式表和其他资源应保持与其相应 HTML 元素的正确链接。这可确保修改后的 MHTML 文件在功能和视觉上保持一致。](https://reference.aspose.com/email/net/).

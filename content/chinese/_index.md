@@ -29,3 +29,21 @@ is_root: true
 - [电子邮件验证和验证](./net/email-validation-and-verification/)
 - [电子邮件文件存储和检索](./net/email-file-storage-and-retrieval/)
 - [电子邮件安全和签名](./net/email-security-and-signatures/)
+
+## 使用 Aspose.Email 教程撰写、转换和处理电子邮件
+{{% alert color="primary" %}}
+
+Aspose.Email for .NET 教程
+
+
+{{% /alert %}}
+
+使用 Aspose.Email for .NET 教程优化电子邮件功能。了解高级电子邮件管理的撰写、转换和处理。
+- [介绍](./java/sending-emails/)
+- [Aspose.Email for .NET 教程为开发人员提供了全面的资源来增强他们的电子邮件功能。这些教程涵盖了电子邮件管理的三个关键方面：撰写、转换和处理。通过分步说明和实用代码示例，开发人员可以将 Aspose.Email for .NET 无缝集成到他们的应用程序中，从而解锁用于制作、转换和处理电子邮件的高级功能。](./java/receiving-emails/)
+- [电子邮件撰写](./java/configuring-smtp-servers/)
+- [电子邮件撰写教程深入探讨以编程方式创建定制且引人入胜的电子邮件消息的艺术。开发人员可以学习如何制作具有动态内容、附件和格式的电子邮件。这些教程指导开发人员完成添加收件人、设置主题行以及合并富文本和 HTML 内容的过程。通过遵循这些教程，开发人员可以通过为用户提供生成个性化且具有视觉吸引力的电子邮件内容的能力来提升其应用程序。](./java/advanced-email-attachments/)
+- [电子邮件转换](./java/securing-email-communications/)
+- [电子邮件转换教程重点关注在不同格式（例如 MSG、EML 和 HTML）之间无缝转换电子邮件。开发人员可以探索在保留元数据、附件和格式的同时转换电子邮件的技术。这些教程提供了有关将电子邮件转换为各种格式的分步说明，从而实现灵活的数据共享和归档。通过遵循这些教程，开发人员可以优化其应用程序，以实现跨不同电子邮件格式的高效数据交换。](./java/email-analytics-and-tracking/)
+- [电子邮件处理](./java/customizing-email-headers/)
+- [电子邮件处理教程使开发人员能够以编程方式有效地管理和分析电子邮件内容。开发人员可以学习根据特定标准检索、过滤和分类电子邮件的技术。这些教程指导开发人员完成访问电子邮件内容、提取相关信息以及组织电子邮件以进行高效处理的过程。通过遵循这些教程，开发人员可以通过自动化电子邮件管理和富有洞察力的数据分析功能来增强他们的应用程序。](./java/exploring-email-security/)

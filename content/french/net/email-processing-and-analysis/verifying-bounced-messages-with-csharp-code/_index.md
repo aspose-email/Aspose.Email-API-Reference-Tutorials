@@ -1,39 +1,39 @@
 ---
-title: Vérification des messages rejetés avec le code C#
-linktitle: Vérification des messages rejetés avec le code C#
-second_title: API de traitement des e-mails Aspose.Email .NET
-description: Automatisez la vérification des messages renvoyés à l'aide de C# et Aspose.Email pour .NET. Gérez sans effort les listes de diffusion et améliorez l'efficacité des campagnes.
+title: Verifying Bounced Messages with C# Code
+linktitle: Verifying Bounced Messages with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Automate bounce message verification using C# & Aspose.Email for .NET. Effortlessly manage email lists & enhance campaign effectiveness. 
 type: docs
 weight: 11
 url: /fr/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
 ---
 
-Vous en avez assez de gérer les e-mails renvoyés ? La gestion des e-mails renvoyés peut être un véritable casse-tête, surtout lorsque vous lancez une campagne par e-mail ou gérez une grande liste de diffusion. Heureusement, il existe une solution qui peut vous aider à vérifier et gérer efficacement les messages rejetés à l'aide du code C# et de la bibliothèque Aspose.Email pour .NET. Dans ce guide étape par étape, nous vous guiderons tout au long du processus de vérification des messages renvoyés et garantirons que votre communication par courrier électronique reste efficace et sans tracas.
+Are you tired of dealing with bounced email messages? Managing bounced emails can be a real headache, especially when you're running an email campaign or maintaining a large mailing list. Fortunately, there's a solution that can help you efficiently verify and handle bounced messages using C# code and the Aspose.Email for .NET library. In this step-by-step guide, we'll walk you through the process of verifying bounced messages and ensuring that your email communication remains effective and hassle-free.
 
-## Installation et configuration
+## Installation and Setup
 
-Avant de plonger dans le code, assurons-nous que tout est configuré pour commencer.
+Before we dive into the code, let's ensure that you have everything set up to get started.
 
-### Installation d'Aspose.Email pour .NET
+### Installing Aspose.Email for .NET
 
-Aspose.Email pour .NET est une bibliothèque puissante qui simplifie les tâches liées au courrier électronique dans les applications C#. Pour l'installer, suivez ces étapes :
+Aspose.Email for .NET is a powerful library that simplifies email-related tasks in C# applications. To install it, follow these steps:
 
-1. Ouvrez votre projet Visual Studio.
-2. Accédez à « Outils » > « Gestionnaire de packages NuGet » > « Gérer les packages NuGet pour la solution ».
-3. Recherchez « Aspose.Email » et installez le package.
+1. Open your Visual Studio project.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-### Création d'un nouveau projet C#
+### Creating a New C# Project
 
-Si vous n'avez pas encore de projet C#, voici comment en créer un :
+If you don't have a C# project yet, here's how you can create one:
 
-1. Ouvrez Visual Studio.
-2. Cliquez sur "Créer un nouveau projet".
-3. Sélectionnez « Application console (.NET Core) » ou « Application console (.NET Framework) » selon vos préférences.
-4. Choisissez un nom et un emplacement pour votre projet.
+1. Open Visual Studio.
+2. Click on "Create a new project."
+3. Select "Console App (.NET Core)" or "Console App (.NET Framework)" depending on your preference.
+4. Choose a name and location for your project.
 
-### Ajout de références et d'espaces de noms
+### Adding References and Namespaces
 
-Une fois votre projet configuré, vous devrez ajouter les références et les espaces de noms nécessaires pour commencer à utiliser Aspose.Email :
+Once you have your project set up, you'll need to add the necessary references and namespaces to start using Aspose.Email:
 
 ```csharp
 using Aspose.Email;
@@ -41,103 +41,98 @@ using Aspose.Email.Imap;
 using Aspose.Email.Mail;
 ```
 
-## Connexion au serveur de messagerie
+## Connecting to the Email Server
 
-Pour vous connecter au serveur de messagerie, vous devrez configurer les paramètres du serveur et établir une connexion.
+To connect to the email server, you'll need to configure the server settings and establish a connection.
 
 ```csharp
-// Configuration du serveur
+// Server configuration
 string host = "your-email-server.com";
 int port = 993;
 string username = "your-username";
 string password = "your-password";
 
-// Créer une instance de ImapClient
-using (ImapClient client = new ImapClient())
+// Create an instance of the ImapClient
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Connectez-vous au serveur
-    client.Connect(host, port, true);
-
-    // Se connecter
-    client.Login(username, password);
-    
-    // Votre code pour récupérer et analyser les messages renvoyés ira ici
+   
+    // Your code for retrieving and analyzing bounced messages will go here
 }
 ```
 
-## Récupération des messages rejetés
+## Retrieving Bounced Messages
 
-Une fois connecté, vous pouvez récupérer les messages de la boîte de réception et identifier les e-mails rejetés.
+Once connected, you can fetch inbox messages and identify bounced emails.
 
 ```csharp
-// Sélectionnez le dossier de la boîte de réception
+// Select the inbox folder
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// Rechercher des messages rejetés
+// Search for bounced messages
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
-    // Votre code pour analyser les notifications de rebond ira ici
+    // Your code to analyze bounce notifications will go here
 }
 ```
 
-## Analyse des notifications de rebond
+## Analyzing Bounce Notifications
 
-Les notifications de rebond contiennent des informations précieuses sur la raison du rebond d'un e-mail. Vous pouvez extraire ces détails et classer les types de rebonds.
+Bounce notifications contain valuable information about why an email bounced. You can extract these details and classify bounce types.
 
 ```csharp
-// Récupérer le message
+// Fetch the message
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Vérifier les en-têtes de rebond
+// Check for bounce headers
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
     string bounceReason = message.Headers["X-Failure-Reason"];
     
-    // Votre code pour gérer différents types de rebonds ira ici
+    // Your code to handle different bounce types will go here
 }
 ```
 
-## Mise à jour de votre liste de diffusion
+## Updating Your Email List
 
-Sur la base de l'analyse des rebonds, vous pouvez mettre à jour votre liste de diffusion pour supprimer les adresses renvoyées et gérer les désabonnements.
+Based on the bounce analysis, you can update your email list to remove bounced addresses and manage unsubscribes.
 
 ```csharp
-// Supprimez les adresses renvoyées de votre liste
+// Remove bounced addresses from your list
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {
-    // Supprimez l'adresse de votre liste
+    // Remove the address from your list
 }
 
-// Gérer les désabonnements
+// Handle unsubscribes
 if (bounceReason.Contains("unsubscribe"))
 {
-    // Mettez à jour votre liste de désabonnement
+    // Update your unsubscribe list
 }
 ```
 
 ## Conclusion
 
-L'automatisation du processus de vérification des messages renvoyés est cruciale pour maintenir une liste de diffusion saine et optimiser vos campagnes par courrier électronique. Avec Aspose.Email pour .NET et le code C# fourni dans ce guide, vous pouvez rationaliser l'ensemble du processus et vous concentrer sur la fourniture d'un contenu précieux à vos abonnés.
+Automating the process of verifying bounced messages is crucial for maintaining a healthy email list and optimizing your email campaigns. With Aspose.Email for .NET and the C# code provided in this guide, you can streamline the entire process and focus on delivering valuable content to your subscribers.
 
-## FAQ
+## FAQs
 
-### Quelle est la précision de l’analyse des rebonds ?
+### How accurate is the bounce analysis?
 
-L'analyse des rebonds fournie par le code est assez précise. Il catégorise les types de rebonds en fonction des en-têtes d'e-mails standard et vous aide à comprendre pourquoi les e-mails ont rebondi.
+The bounce analysis provided by the code is quite accurate. It categorizes bounce types based on standard email headers and helps you understand why emails bounced.
 
-### Puis-je utiliser cette approche pour n’importe quel service de messagerie ?
+### Can I use this approach for any email service?
 
-Oui, vous pouvez utiliser cette approche avec n'importe quel service de messagerie prenant en charge IMAP. Assurez-vous simplement de mettre à jour les paramètres du serveur en conséquence.
+Yes, you can use this approach with any email service that supports IMAP. Just make sure to update the server settings accordingly.
 
-### Que se passe-t-il si j'ai un mélange de rebonds doux et durs ?
+### What if I have a mix of soft and hard bounces?
 
-Le code vous permet de différencier les différents types de rebonds, qu'il s'agisse de rebonds légers (problèmes temporaires) ou de rebonds durs (problèmes permanents).
+The code allows you to differentiate between different bounce types, whether they are soft bounces (temporary issues) or hard bounces (permanent issues).
 
 ## Conclusion
 
-En conclusion, la gestion des e-mails renvoyés peut être une tâche difficile qui nécessite souvent une attention particulière et une gestion efficace. Les e-mails renvoyés peuvent résulter de diverses raisons, notamment des adresses invalides, des boîtes aux lettres pleines ou des problèmes de serveur temporaires. Ne pas traiter rapidement ces notifications de rebond peut entraîner des campagnes par e-mail inefficaces, une diminution des taux de délivrabilité et des dommages potentiels à votre réputation d'expéditeur.
+In conclusion, managing bounced email messages can be a challenging task that often requires careful attention and efficient handling. Bounced emails can result from various reasons, including invalid addresses, full mailboxes, or temporary server issues. Failing to address these bounce notifications promptly can lead to ineffective email campaigns, decreased deliverability rates, and potential damage to your sender reputation.
 
-Cependant, grâce à la puissance du code C# et de la bibliothèque Aspose.Email pour .NET, le processus de vérification des messages rejetés devient plus gérable et automatisé. En suivant le guide étape par étape décrit dans cet article, vous pouvez vous connecter de manière transparente à votre serveur de messagerie, récupérer les messages rejetés et analyser les notifications de rebond avec précision. Les extraits de code fournis vous permettent d'extraire des informations pertinentes, de catégoriser les types de rebonds et de mettre à jour vos listes de diffusion en conséquence.
+However, with the power of C# code and the Aspose.Email for .NET library, the process of verifying bounced messages becomes more manageable and automated. By following the step-by-step guide outlined in this article, you can seamlessly connect to your email server, retrieve bounced messages, and analyze bounce notifications with precision. The code snippets provided enable you to extract relevant information, categorize bounce types, and update your email lists accordingly.

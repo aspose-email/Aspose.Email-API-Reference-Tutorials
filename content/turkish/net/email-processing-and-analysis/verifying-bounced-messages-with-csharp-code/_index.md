@@ -1,39 +1,39 @@
 ---
-title: Geri Dönen İletileri C# Koduyla Doğrulama
-linktitle: Geri Dönen İletileri C# Koduyla Doğrulama
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: C# ve Aspose.Email for .NET'i kullanarak geri dönen ileti doğrulamasını otomatikleştirin. E-posta listelerini zahmetsizce yönetin ve kampanyanın etkinliğini artırın.
+title: Verifying Bounced Messages with C# Code
+linktitle: Verifying Bounced Messages with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Automate bounce message verification using C# & Aspose.Email for .NET. Effortlessly manage email lists & enhance campaign effectiveness. 
 type: docs
 weight: 11
 url: /tr/net/email-processing-and-analysis/verifying-bounced-messages-with-csharp-code/
 ---
 
-Geri dönen e-posta mesajlarıyla uğraşmaktan yoruldunuz mu? Geri dönen e-postaları yönetmek, özellikle bir e-posta kampanyası yürüttüğünüzde veya büyük bir posta listesi tuttuğunuzda gerçek bir baş ağrısı olabilir. Neyse ki, C# kodunu ve Aspose.Email for .NET kütüphanesini kullanarak geri dönen mesajları verimli bir şekilde doğrulamanıza ve işlemenize yardımcı olabilecek bir çözüm var. Bu adım adım kılavuzda, geri dönen mesajları doğrulama sürecinde size yol göstereceğiz ve e-posta iletişiminizin etkili ve sorunsuz kalmasını sağlayacağız.
+Are you tired of dealing with bounced email messages? Managing bounced emails can be a real headache, especially when you're running an email campaign or maintaining a large mailing list. Fortunately, there's a solution that can help you efficiently verify and handle bounced messages using C# code and the Aspose.Email for .NET library. In this step-by-step guide, we'll walk you through the process of verifying bounced messages and ensuring that your email communication remains effective and hassle-free.
 
-## Kurulum ve Kurulum
+## Installation and Setup
 
-Koda dalmadan önce, başlamak için her şeyin ayarlandığından emin olalım.
+Before we dive into the code, let's ensure that you have everything set up to get started.
 
-### Aspose.Email for .NET'in Kurulumu
+### Installing Aspose.Email for .NET
 
-Aspose.Email for .NET, C# uygulamalarındaki e-postayla ilgili görevleri basitleştiren güçlü bir kütüphanedir. Yüklemek için şu adımları izleyin:
+Aspose.Email for .NET is a powerful library that simplifies email-related tasks in C# applications. To install it, follow these steps:
 
-1. Visual Studio projenizi açın.
-2. "Araçlar" > "NuGet Paket Yöneticisi" > "Çözüm için NuGet Paketlerini Yönet" seçeneğine gidin.
-3. "Aspose.Email"i arayın ve paketi yükleyin.
+1. Open your Visual Studio project.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-### Yeni Bir C# Projesi Oluşturma
+### Creating a New C# Project
 
-Henüz bir C# projeniz yoksa şu şekilde oluşturabilirsiniz:
+If you don't have a C# project yet, here's how you can create one:
 
-1. Visual Studio'yu açın.
-2. "Yeni bir proje oluştur"a tıklayın.
-3. Tercihinize bağlı olarak "Konsol Uygulaması (.NET Core)" veya "Konsol Uygulaması (.NET Framework)" seçeneğini seçin.
-4. Projeniz için bir ad ve konum seçin.
+1. Open Visual Studio.
+2. Click on "Create a new project."
+3. Select "Console App (.NET Core)" or "Console App (.NET Framework)" depending on your preference.
+4. Choose a name and location for your project.
 
-### Referanslar ve Ad Alanları Ekleme
+### Adding References and Namespaces
 
-Projenizi kurduktan sonra Aspose.Email'i kullanmaya başlamak için gerekli referansları ve ad alanlarını eklemeniz gerekecek:
+Once you have your project set up, you'll need to add the necessary references and namespaces to start using Aspose.Email:
 
 ```csharp
 using Aspose.Email;
@@ -41,103 +41,98 @@ using Aspose.Email.Imap;
 using Aspose.Email.Mail;
 ```
 
-## E-posta Sunucusuna Bağlanma
+## Connecting to the Email Server
 
-E-posta sunucusuna bağlanmak için sunucu ayarlarını yapılandırmanız ve bir bağlantı kurmanız gerekir.
+To connect to the email server, you'll need to configure the server settings and establish a connection.
 
 ```csharp
-// Sunucu yapılandırması
+// Server configuration
 string host = "your-email-server.com";
 int port = 993;
 string username = "your-username";
 string password = "your-password";
 
-// ImapClient'in bir örneğini oluşturun
-using (ImapClient client = new ImapClient())
+// Create an instance of the ImapClient
+using (ImapClient client = new ImapClient((host, port, username, password))
 {
-    // Sunucuya bağlanın
-    client.Connect(host, port, true);
-
-    // Giriş yapmak
-    client.Login(username, password);
-    
-    // Geri dönen iletileri almaya ve analiz etmeye yönelik kodunuz buraya gelecek
+   
+    // Your code for retrieving and analyzing bounced messages will go here
 }
 ```
 
-## Geri Dönen Mesajları Alma
+## Retrieving Bounced Messages
 
-Bağlandıktan sonra gelen kutusu mesajlarını alabilir ve geri dönen e-postaları tanımlayabilirsiniz.
+Once connected, you can fetch inbox messages and identify bounced emails.
 
 ```csharp
-// Gelen kutusu klasörünü seçin
+// Select the inbox folder
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// Geri dönen mesajları arayın
+// Search for bounced messages
 MessageInfoCollection messages = client.ListMessages();
-foreach (MessageInfo messageInfo in messages)
+foreach (var messageInfo in messages)
 {
-    // Geri dönen bildirimleri analiz etmeye yönelik kodunuz buraya gelecek
+    // Your code to analyze bounce notifications will go here
 }
 ```
 
-## Geri Dönme Bildirimlerini Analiz Etme
+## Analyzing Bounce Notifications
 
-Geri dönme bildirimleri, bir e-postanın neden geri döndüğüne ilişkin değerli bilgiler içerir. Bu ayrıntıları çıkarabilir ve hemen çıkma türlerini sınıflandırabilirsiniz.
+Bounce notifications contain valuable information about why an email bounced. You can extract these details and classify bounce types.
 
 ```csharp
-// Mesajı getir
+// Fetch the message
 MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 
-//Geri dönen başlıkları kontrol edin
+// Check for bounce headers
 if (message.Headers.Contains("X-Failed-Recipients"))
 {
     string failedRecipients = message.Headers["X-Failed-Recipients"];
     string bounceReason = message.Headers["X-Failure-Reason"];
     
-    // Farklı hemen çıkma türlerini ele alacak kodunuz buraya gelecek
+    // Your code to handle different bounce types will go here
 }
 ```
 
-## E-posta Listenizi Güncelleme
+## Updating Your Email List
 
-Geri dönme analizine dayanarak, geri dönen adresleri kaldırmak ve abonelikten çıkma işlemlerini yönetmek için e-posta listenizi güncelleyebilirsiniz.
+Based on the bounce analysis, you can update your email list to remove bounced addresses and manage unsubscribes.
 
 ```csharp
-// Geri dönen adresleri listenizden kaldırın
+// Remove bounced addresses from your list
 string bouncedAddress = "bounced@example.com";
 if (failedRecipients.Contains(bouncedAddress))
 {
-    // Adresi listenizden kaldırın
+    // Remove the address from your list
 }
 
-// Abonelikten çıkma işlemlerini yönetin
+// Handle unsubscribes
 if (bounceReason.Contains("unsubscribe"))
 {
-    // Abonelikten çıkma listenizi güncelleyin
+    // Update your unsubscribe list
 }
 ```
 
-## Çözüm
+## Conclusion
 
-Geri dönen mesajları doğrulama sürecinin otomatikleştirilmesi, sağlıklı bir e-posta listesi sağlamak ve e-posta kampanyalarınızı optimize etmek için çok önemlidir. Aspose.Email for .NET ve bu kılavuzda verilen C# koduyla tüm süreci kolaylaştırabilir ve abonelerinize değerli içerik sunmaya odaklanabilirsiniz.
+Automating the process of verifying bounced messages is crucial for maintaining a healthy email list and optimizing your email campaigns. With Aspose.Email for .NET and the C# code provided in this guide, you can streamline the entire process and focus on delivering valuable content to your subscribers.
 
-## SSS
+## FAQs
 
-### Sıçrama analizi ne kadar doğrudur?
+### How accurate is the bounce analysis?
 
-Kodun sağladığı hemen çıkma analizi oldukça doğrudur. Geri dönen türlerini standart e-posta başlıklarına göre kategorilere ayırır ve e-postaların neden geri döndüğünü anlamanıza yardımcı olur.
+The bounce analysis provided by the code is quite accurate. It categorizes bounce types based on standard email headers and helps you understand why emails bounced.
 
-### Bu yaklaşımı herhangi bir e-posta hizmeti için kullanabilir miyim?
+### Can I use this approach for any email service?
 
-Evet, bu yaklaşımı IMAP'yi destekleyen herhangi bir e-posta hizmetiyle kullanabilirsiniz. Sunucu ayarlarını uygun şekilde güncellediğinizden emin olun.
+Yes, you can use this approach with any email service that supports IMAP. Just make sure to update the server settings accordingly.
 
-### Peki ya yumuşak ve sert sıçramaların bir karışımı varsa?
+### What if I have a mix of soft and hard bounces?
 
-Kod, ister geçici geri dönüşler (geçici sorunlar) ister sert geri dönüşler (kalıcı sorunlar) olsun, farklı geri dönme türleri arasında ayrım yapmanıza olanak tanır.
+The code allows you to differentiate between different bounce types, whether they are soft bounces (temporary issues) or hard bounces (permanent issues).
 
-## Çözüm
+## Conclusion
 
-Sonuç olarak, geri dönen e-posta iletilerini yönetmek, genellikle dikkatli dikkat ve etkili bir şekilde ele alınmasını gerektiren zorlu bir görev olabilir. Geri dönen e-postalar, geçersiz adresler, dolu posta kutuları veya geçici sunucu sorunları gibi çeşitli nedenlerden kaynaklanabilir. Bu geri dönen bildirimleri derhal ele almamak, etkisiz e-posta kampanyalarına, teslim edilebilirlik oranlarının düşmesine ve gönderenin itibarının zarar görmesine neden olabilir.
+In conclusion, managing bounced email messages can be a challenging task that often requires careful attention and efficient handling. Bounced emails can result from various reasons, including invalid addresses, full mailboxes, or temporary server issues. Failing to address these bounce notifications promptly can lead to ineffective email campaigns, decreased deliverability rates, and potential damage to your sender reputation.
 
-Ancak C# kodunun ve Aspose.Email for .NET kütüphanesinin gücüyle, geri dönen mesajları doğrulama süreci daha yönetilebilir ve otomatik hale geliyor. Bu makalede özetlenen adım adım kılavuzu izleyerek e-posta sunucunuza sorunsuz bir şekilde bağlanabilir, geri dönen iletileri alabilir ve geri dönen bildirimleri hassas bir şekilde analiz edebilirsiniz. Sağlanan kod parçacıkları, ilgili bilgileri çıkarmanıza, geri dönme türlerini kategorilere ayırmanıza ve e-posta listelerinizi buna göre güncellemenize olanak tanır.
+However, with the power of C# code and the Aspose.Email for .NET library, the process of verifying bounced messages becomes more manageable and automated. By following the step-by-step guide outlined in this article, you can seamlessly connect to your email server, retrieve bounced messages, and analyze bounce notifications with precision. The code snippets provided enable you to extract relevant information, categorize bounce types, and update your email lists accordingly.

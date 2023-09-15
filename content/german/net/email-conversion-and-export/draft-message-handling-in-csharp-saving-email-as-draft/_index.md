@@ -1,105 +1,105 @@
 ---
-title: Umgang mit Nachrichtenentwürfen in C# – E-Mail als Entwurf speichern
-linktitle: Umgang mit Nachrichtenentwürfen in C# – E-Mail als Entwurf speichern
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie die Bearbeitung von E-Mail-Entwürfen in C# mit Aspose.Email für .NET implementieren. Erstellen, bearbeiten und speichern Sie Entwürfe nahtlos.
+title: TNEF-Nachrichtenerkennung in C# – erklärt
+linktitle: Aspose.Email .NET E-Mail-Verarbeitungs-API
+second_title: Erfahren Sie, wie Sie TNEF-Nachrichten in C# mit Aspose.Email für .NET erkennen und verarbeiten. Verbessern Sie die E-Mail-Verarbeitung mit Rich Text und Anhängen.
+description: In dieser Anleitung erhalten Sie eine detaillierte Schritt-für-Schritt-Erklärung, wie Sie TNEF-Nachrichten (Transport Neutral Encapsulation Format) mithilfe der Aspose.Email für .NET-Bibliothek erkennen. TNEF ist ein Format, das von Microsoft Outlook verwendet wird, um Rich Text und Anhänge in E-Mail-Nachrichten zu kapseln. Aspose.Email für .NET bietet einen leistungsstarken Satz APIs für die Arbeit mit E-Mails und Anhängen, einschließlich TNEF-Nachrichten.
 type: docs
 weight: 17
 url: /de/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
 
-## Einführung
-
-Die Bearbeitung von Nachrichtenentwürfen ist eine entscheidende Funktionalität für E-Mail-Clients. Benutzer benötigen häufig die Möglichkeit, mit dem Verfassen einer E-Mail zu beginnen, sie als Entwurf zu speichern und später zur weiteren Bearbeitung oder zum eventuellen Versenden darauf zurückzukommen. In diesem Artikel wird gezeigt, wie Sie diese Funktion mithilfe der Aspose.Email für .NET-Bibliothek implementieren.
-
 ## Voraussetzungen
 
-Bevor wir uns mit der Implementierung befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-- Visual Studio (oder eine beliebige C#-Entwicklungsumgebung)
-- Aspose.Email für .NET-Bibliothek
+## Eine Entwicklungsumgebung (z. B. Visual Studio) für C#.
 
- Sie können die Aspose.Email-Bibliothek unter herunterladen[Hier](https://releases.aspose.com/email/net).
+ Aspose.Email für .NET-Bibliothek installiert. Sie können es herunterladen unter
 
-## Einrichten des Projekts
+- Hier
+- Schritt 1: Erstellen Sie ein neues C#-Projekt
 
-1. Erstellen Sie ein neues C#-Projekt in Ihrer Entwicklungsumgebung.
-2. Fügen Sie Verweise auf die Aspose.Email-DLLs in Ihrem Projekt hinzu.
+Beginnen Sie mit der Erstellung eines neuen C#-Projekts in der von Ihnen gewählten Entwicklungsumgebung.[Schritt 2: Installieren Sie Aspose.Email für .NET](https://releases.aspose.com/email/net).
 
-## Erstellen des E-Mail-Entwurfs
+## Installieren Sie die Aspose.Email für .NET-Bibliothek mit dem NuGet Package Manager. Führen Sie den folgenden Befehl in der Package Manager-Konsole aus:
 
-Um einen Nachrichtenentwurf zu erstellen, gehen Sie folgendermaßen vor:
+1. Schritt 3: Erforderliche Namespaces importieren
+2. Importieren Sie in Ihren C#-Code die erforderlichen Namespaces:
 
-## Empfänger und Betreff hinzufügen
+## Schritt 4: TNEF-Nachricht laden und erkennen
+
+ Laden Sie die E-Mail-Nachricht mit
+
+##  Klasse:
 
 ```csharp
-// Erstellen Sie eine neue MailMessage-Instanz
+//Stellen Sie fest, ob es sich bei der geladenen E-Mail um eine TNEF-Nachricht handelt:
 MailMessage draft = new MailMessage();
 
-// Empfänger hinzufügen
+// Ersetzen
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// E-Mail-Betreff festlegen
+// mit dem tatsächlichen Pfad zu Ihrer E-Mail-Nachrichtendatei.
 draft.Subject = "Draft Email Demo";
 ```
 
-## E-Mail-Text verfassen
+## Schritt 5: TNEF-Anhänge verarbeiten
 
 ```csharp
-// E-Mail-Text festlegen
+//Wenn es sich bei der geladenen E-Mail tatsächlich um eine TNEF-Nachricht handelt, können Sie deren Anhänge extrahieren und verarbeiten:
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## Als Entwurf speichern
+##  TNEF-Anhang verarbeiten
 
 ```csharp
-// Speichern Sie die E-Mail als Entwurf
+// Speichern Sie beispielsweise den Anhang auf der Festplatte
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Entwürfe laden und bearbeiten
+## FAQs
 
-Um Nachrichtenentwürfe zu laden und zu bearbeiten, gehen Sie folgendermaßen vor:
+Wie kann ich überprüfen, ob eine E-Mail eine TNEF-Nachricht ist?
 
 ```csharp
-// Laden Sie einen E-Mail-Entwurf
+// Um zu überprüfen, ob es sich bei einer E-Mail um eine TNEF-Nachricht handelt, verwenden Sie die
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-// Empfänger bearbeiten
+// Methode der
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// E-Mail-Text bearbeiten
+// Klasse:
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-// Änderungen speichern
+//Wie extrahiere ich Anhänge aus einer TNEF-Nachricht?
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Abschluss
+## Um Anhänge aus einer TNEF-Nachricht zu extrahieren, gehen Sie folgendermaßen vor:
 
-In diesem Artikel haben wir untersucht, wie Entwurfsnachrichten in C# mithilfe der Aspose.Email für .NET-Bibliothek verarbeitet werden. Wir haben gelernt, wie man E-Mail-Entwürfe erstellt, bearbeitet und speichert, um Benutzern ein nahtloses Erlebnis beim Verfassen von Nachrichten zu bieten. Indem Sie die in dieser Anleitung beschriebenen Schritte befolgen, können Sie Ihre E-Mail-Client-Anwendung mit der Funktionalität für Nachrichtenentwürfe erweitern.
+ Laden Sie die E-Mail mit
 
-## FAQs
+##  Überprüfen Sie, ob es sich bei der E-Mail um eine TNEF-Nachricht handelt
 
-### Wie lade ich die Aspose.Email für .NET-Bibliothek herunter?
+###  Wenn es sich um eine TNEF-Nachricht handelt, extrahieren Sie Anhänge mit
 
- Sie können die Aspose.Email für .NET-Bibliothek unter herunterladen[Hier](https://releases.aspose.com/email/net).
+ TNEF-Anhang verarbeiten[ Speichern Sie beispielsweise den Anhang auf der Festplatte](https://releases.aspose.com/email/net).
 
-### Kann ich die Empfänger und den Betreff eines gespeicherten Entwurfs bearbeiten?
+###  Ausführlichere Informationen und API-Referenzen finden Sie im
 
-Ja, Sie können einen gespeicherten Entwurf laden, dessen Empfänger, Betreff und Inhalt bearbeiten und die Änderungen dann als aktualisierten Entwurf speichern.
+Aspose.Email für .NET-Dokumentation
 
-### Wird der E-Mail-Entwurf in einem bestimmten Format gespeichert?
+### Abschluss
 
-Ja, der E-Mail-Entwurf wird im EML-Format gespeichert, einem weit verbreiteten Format für E-Mail-Nachrichten.
+In diesem Handbuch haben Sie erfahren, wie Sie TNEF-Nachrichten (Transport Neutral Encapsulation Format) mithilfe der Aspose.Email für .NET-Bibliothek erkennen. TNEF-Nachrichten, die häufig von Microsoft Outlook verwendet werden, kapseln Rich Text und Anhänge in E-Mails. Indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen, können Sie TNEF-Nachrichten effizient identifizieren und ihre Anhänge zur weiteren Verarbeitung extrahieren.
 
-### Kann ich die Bearbeitung von Nachrichtenentwürfen in meine bestehende E-Mail-Anwendung integrieren?
+###  Überprüfen zurückgesendeter Nachrichten mit C#-Code
 
-Auf jeden Fall können Sie die Bearbeitung von Nachrichtenentwürfen nahtlos in Ihre bestehende E-Mail-Client-Anwendung integrieren, indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen.
+ Überprüfen zurückgesendeter Nachrichten mit C#-Code
 
-### Unterstützt die Aspose.Email-Bibliothek andere E-Mail-bezogene Funktionen?
+###  Aspose.Email .NET E-Mail-Verarbeitungs-API
 
- Ja, die Aspose.Email-Bibliothek bietet eine breite Palette von Funktionen für die Arbeit mit E-Mail-Nachrichten, einschließlich des Sendens, Empfangens und Bearbeitens von E-Mails und Anhängen. Weitere Einzelheiten finden Sie in der Dokumentation:[Hier](https://reference.aspose.com)
+ Automatisieren Sie die Überprüfung von Bounce-Nachrichten mit C# und Aspose.Email für .NET. Verwalten Sie mühelos E-Mail-Listen und steigern Sie die Wirksamkeit Ihrer Kampagnen.[Sind Sie es leid, sich mit zurückgesendeten E-Mail-Nachrichten herumzuschlagen? Die Verwaltung zurückgesendeter E-Mails kann echte Kopfschmerzen bereiten, insbesondere wenn Sie eine E-Mail-Kampagne durchführen oder eine große Mailingliste verwalten. Glücklicherweise gibt es eine Lösung, die Ihnen dabei helfen kann, zurückgesendete Nachrichten mithilfe von C#-Code und der Aspose.Email for .NET-Bibliothek effizient zu überprüfen und zu verarbeiten. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch den Prozess der Überprüfung zurückgesendeter Nachrichten und stellen sicher, dass Ihre E-Mail-Kommunikation effektiv und problemlos bleibt.](https://reference.aspose.com)

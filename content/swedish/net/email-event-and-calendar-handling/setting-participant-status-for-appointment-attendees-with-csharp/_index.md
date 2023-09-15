@@ -1,111 +1,111 @@
 ---
-title: Ställa in deltagarstatus för mötesdeltagare med C#
-linktitle: Ställa in deltagarstatus för mötesdeltagare med C#
+title: Setting Participant Status for Appointment Attendees with C#
+linktitle: Setting Participant Status for Appointment Attendees with C#
 second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du hanterar mötesdeltagares status med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
+description: Learn how to manage appointment attendees' status using C# and Aspose.Email for .NET. Step-by-step guide with source code.
 type: docs
 weight: 16
 url: /sv/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
 
-## Introduktion till Aspose.Email för .NET
+## Introduction to Aspose.Email for .NET
 
-Aspose.Email för .NET är ett mångsidigt bibliotek som gör det möjligt för utvecklare att arbeta med e-postmeddelanden, möten, kontakter och mer i sina .NET-applikationer. Med dess intuitiva API kan utvecklare enkelt manipulera olika aspekter av e-postkommunikation, vilket gör det till ett utmärkt val för att hantera mötesrelaterade uppgifter.
+Aspose.Email for .NET is a versatile library that enables developers to work with email messages, appointments, contacts, and more within their .NET applications. With its intuitive API, developers can effortlessly manipulate various aspects of email communication, making it an excellent choice for handling appointment-related tasks.
 
-## Förutsättningar
+## Prerequisites
 
-Innan vi dyker in i implementeringen, se till att du har följande förutsättningar på plats:
+Before we dive into the implementation, make sure you have the following prerequisites in place:
 
-- Visual Studio (eller någon C# IDE)
-- Aspose.Email för .NET-biblioteket
-- Grundläggande förståelse för C#-programmering
+- Visual Studio (or any C# IDE)
+- Aspose.Email for .NET library
+- Basic understanding of C# programming
 
-## Skapa ett möte
+## Creating an Appointment
 
-För att komma igång måste du skapa en mötesinstans med Aspose.Email för .NET. Ett möte representerar en schemalagd händelse, och du kan ställa in olika egenskaper som starttid, sluttid, plats och mer.
+To get started, you need to create an appointment instance using Aspose.Email for .NET. An appointment represents a scheduled event, and you can set various properties like start time, end time, location, and more.
 
 ```csharp
-// Lägg till nödvändiga med hjälp av uttalanden
+// Add necessary using statements
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Skapa en instans av klassen Möte
+// Create an instance of the Appointment class
 var appointment = new Appointment();
 
-// Ställ in mötesegenskaper
+// Set appointment properties
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 ```
 
-## Lägger till deltagare
+## Adding Attendees
 
- Därefter kan du lägga till deltagare till mötet med hjälp av`Attendees` samling. Deltagare är de personer som kommer att delta i mötet. Du kan ange deras e-postadresser och namn.
+Next, you can add attendees to the appointment using the `Attendees` collection. Attendees are the individuals who will be participating in the appointment. You can specify their email addresses and names.
 
 ```csharp
-// Lägg till deltagare till mötet
+// Add attendees to the appointment
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Ställa in deltagarstatus
+## Setting Participant Status
 
-Nu kommer den avgörande delen: att ställa in deltagarstatus för deltagarna. Deltagarstatus anger om en deltagare har accepterat, tackat nej eller preliminärt accepterat mötesinbjudan. Aspose.Email för .NET erbjuder olika statusalternativ att välja mellan.
+Now comes the crucial part: setting the participant status for the attendees. Participant status indicates whether an attendee has accepted, declined, or tentatively accepted the appointment invitation. Aspose.Email for .NET provides different status options to choose from.
 
 ```csharp
-// Ställ in deltagarstatus för deltagare
+// Set participant status for attendees
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Komplett källkod
+## Complete Source Code
 
-Här är den fullständiga källkoden som visar processen för att skapa ett möte, lägga till deltagare och ställa in deltagarstatus:
+Here's the complete source code that demonstrates the process of creating an appointment, adding attendees, and setting participant status:
 
 ```csharp
-// Lägg till nödvändiga med hjälp av uttalanden
+// Add necessary using statements
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Skapa en instans av klassen Möte
+// Create an instance of the Appointment class
 var appointment = new Appointment();
 
-// Ställ in mötesegenskaper
+// Set appointment properties
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 
-// Lägg till deltagare till mötet
+// Add attendees to the appointment
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 
-// Ställ in deltagarstatus för deltagare
+// Set participant status for attendees
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Slutsats
+## Conclusion
 
-I den här guiden har vi utforskat processen för att hantera mötesdeltagare och ställa in deltagarstatus med C# och Aspose.Email för .NET. Bibliotekets omfattande funktioner gör det till ett värdefullt verktyg för utvecklare som behöver arbeta med e-postrelaterade uppgifter effektivt.
+In this guide, we've explored the process of managing appointment attendees and setting participant status using C# and Aspose.Email for .NET. The library's comprehensive features make it a valuable tool for developers who need to work with email-related tasks efficiently.
 
 ## FAQ's
 
-### Hur får jag Aspose.Email för .NET-biblioteket?
+### How can I obtain the Aspose.Email for .NET library?
 
- Du kan ladda ner Aspose.Email for .NET-biblioteket från webbplatsen:[Ladda ner Aspose.Email för .NET](https://releases.aspose.com).
+You can download the Aspose.Email for .NET library from the website: [Download Aspose.Email for .NET](https://releases.aspose.com).
 
-### Kan jag anpassa alternativen för deltagarstatus?
+### Can I customize the participant status options?
 
- Ja, du kan anpassa alternativen för deltagarstatus efter din applikations behov genom att använda`AppointmentParticipantStatus` uppräkning tillhandahållen av Aspose.Email för .NET.
+Yes, you can customize the participant status options according to your application's needs by using the `AppointmentParticipantStatus` enumeration provided by Aspose.Email for .NET.
 
-### Är Aspose.Email för .NET lämplig för att hantera andra e-postrelaterade uppgifter?
+### Is Aspose.Email for .NET suitable for handling other email-related tasks?
 
-Absolut! Aspose.Email för .NET erbjuder ett brett utbud av funktioner för att arbeta med e-postmeddelanden, bilagor, möten och mer, vilket gör det till ett mångsidigt val för olika e-postrelaterade uppgifter.
+Absolutely! Aspose.Email for .NET offers a wide range of features for working with emails, attachments, appointments, and more, making it a versatile choice for various email-related tasks.
 
-### Kan jag integrera den här funktionen i min befintliga .NET-applikation?
+### Can I integrate this functionality into my existing .NET application?
 
-Ja, du kan enkelt integrera den funktionalitet som diskuteras i den här guiden i dina befintliga .NET-applikationer genom att referera till Aspose.Email for .NET-biblioteket och följa de medföljande kodexemplen.
+Yes, you can easily integrate the functionality discussed in this guide into your existing .NET applications by referencing the Aspose.Email for .NET library and following the provided code examples.
 
-### Var kan jag hitta mer dokumentation och resurser?
+### Where can I find more documentation and resources?
 
- För mer detaljerad dokumentation och resurser, se Aspose.Email for .NET-dokumentationen:[Aspose.Email för .NET-dokumentation](https://reference.aspose.com/email/net).
+For more detailed documentation and resources, refer to the Aspose.Email for .NET documentation: [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net).

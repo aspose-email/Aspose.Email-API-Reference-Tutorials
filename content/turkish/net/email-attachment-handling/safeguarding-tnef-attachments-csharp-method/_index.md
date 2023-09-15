@@ -1,95 +1,97 @@
 ---
-title: TNEF Eklerini Koruma - C# Yöntemi
-linktitle: TNEF Eklerini Koruma - C# Yöntemi
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: C# ve Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin. Kaynak kodu içeren adım adım kılavuz.
+title: Belgeleri şu adreste bulabilirsiniz:
+linktitle: https://reference.aspose.com/email/net/
+second_title: . Kütüphaneyi indirmek için şu adresi ziyaret edin:
+description: https://releases.aspose.com/email/net/
 type: docs
 weight: 19
 url: /tr/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
 
-## TNEF Eklerinin Korunmasına Giriş
+##  C#'ta Özel Köprü Oluşturma
 
-"winmail.dat" ekleri olarak da bilinen TNEF, Microsoft Outlook tarafından kullanılan özel bir e-posta eki biçimidir. Zengin metin biçimlendirmesi, takvim öğeleri ve ekler gibi çeşitli öğeleri kapsayabilirler. Ancak benzersiz yapıları nedeniyle TNEF ekleriyle uğraşmak zor olabilir. Bu kılavuzda TNEF dosyalarındaki eklerin çıkarılmasına ve korunmasına odaklanacağız.
+ C#'ta Özel Köprü Oluşturma
 
-## Projenin Kurulumu
+##  Aspose.Email .NET E-Posta İşleme API'si
 
-Başlamadan önce bir çalışma ortamı oluşturduğunuzdan emin olun. Bu adımları takip et:
+ Aspose.Email for .NET'i kullanarak C#'ta köprü oluşturmayı özelleştirmeyi öğrenin. Özel köprü stilleriyle kişiselleştirilmiş e-posta içeriği oluşturun.
 
-1. Aspose.Email Kütüphanesini Kurun: C# projenizi Visual Studio'da açın ve Aspose.Email kütüphanesini kurmak için NuGet Paket Yöneticisini kullanın:
+1. Bu kılavuz, Aspose.Email for .NET kullanarak C#'ta özel köprü oluşturma sürecinde size yol gösterecektir. Aspose.Email for .NET, e-posta mesajlarını oluşturma, okuma ve düzenleme gibi çeşitli özellikleri de içeren, e-postalarla çalışmanıza olanak tanıyan güçlü bir kütüphanedir. Bu eğitimde, kitaplığı kullanarak e-posta iletilerinde köprü oluşturmanın nasıl özelleştirileceğine odaklanacağız.
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-2. Gerekli Ad Alanlarını İçe Aktarın: C# kod dosyanızda gerekli ad alanlarını içe aktarın:
+2. Önkoşullar
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mapi;
 ```
 
-## TNEF Eklerini Yükleme ve Çıkarma
+## Başlamadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
 
-TNEF eklerini korumak için öncelikle bunları yüklememiz ve çıkarmamız gerekir. Bu adımları takip et:
+Visual Studio veya başka herhangi bir C# geliştirme ortamı
 
-1.  TNEF Dosyasını Yükle: TNEF dosyasını kullanarak yükleyin.`MapiMessage` sınıf:
+1.  Aspose.Email for .NET kütüphanesi (Şu adresten indirebilirsiniz:`MapiMessage`Burada
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat");
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
-2. Ekleri Çıkart: Ekleri yineleyin ve çıkarın:
+2. )
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
-   // Ek verilerini çıkarın
+   //C# programlama ve e-posta kavramları hakkında temel bilgi
    byte[] attachmentData = attachment.GetContent();
-   // Koruma mantığınızı burada uygulayın
+   //Adımlar
 }
 ```
 
-## TNEF Verilerini Kullanma
+## Aspose.Email for .NET kullanarak C#'ta özel köprü oluşturmayı uygulamak için aşağıdaki adımları izleyin:
 
-Ekler çıkarıldıktan sonra koruma önlemlerinizi uygulayabilirsiniz. Bu, kötü amaçlı yazılımlara karşı taramayı, dosya türlerini doğrulamayı veya ekleri şifrelemeyi içerebilir.
+1. Adım: Yeni bir C# Projesi Oluşturun
 
-## Ekleri Güvenli Bir Şekilde Kaydetme
+## C# geliştirme ortamınızı (örneğin, Visual Studio) açın ve yeni bir proje oluşturun.
 
-Koruma önlemlerinizi uyguladıktan sonra ekleri güvenli bir şekilde kaydedebilirsiniz:
+Adım 2: Aspose.Email'e Referans Ekle
 
 ```csharp
-foreach (MapiAttachment attachment in message.Attachments)
+foreach (Attachment attachment in message.Attachments)
 {
-    // Koruma mantığı
-    // ...
-    // Eki kaydet
+    //Projenize Aspose.Email for .NET kütüphanesine bir referans ekleyin. Bunu, Solution Explorer'da projenize sağ tıklayarak, "Ekle" > "Referans"ı seçerek ve ardından Aspose.Email DLL dosyasını kaydettiğiniz konuma göz atarak yapabilirsiniz.
+    //3. Adım: MailMessage Nesnesini Başlatın
+    // Yeni bir örneğini oluşturun
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
 
-## Çözüm
+##  Aspose.Email kütüphanesinden sınıf. Bu sınıf bir e-posta mesajını temsil eder.
 
-Bu kılavuzda, C# programlama dilini ve .NET için Aspose.Email kütüphanesini kullanarak TNEF eklerini nasıl koruyacağımızı öğrendik. Bu adımları takip ederek TNEF eklentilerini güvenle kullanabilir ve uygulamanızdaki eklentilerin güvenliğini sağlayabilirsiniz.
+ ...
 
-## SSS'ler
+## 4. Adım: Köprü Oluşturun
 
-### Bir TNEF ekini nasıl tanımlayabilirim?
+###  Oluşturmak
 
-TNEF ekleri genellikle "winmail.dat" olarak adlandırılır ve kapsüllenmiş veriler içerir. Microsoft Outlook kullanıcılarından e-posta alırken sıklıkla karşılaşılırlar.
+ nesneyi seçin ve URL ve görünen metin gibi özelliklerini ayarlayın.
 
-### Aspose.Email'i e-postayla ilgili diğer görevler için kullanabilir miyim?
+### www.example.com", "Web sitemizi ziyaret edin");
 
- Evet, Aspose.Email, e-posta mesajları, ekler, takvimler ve daha fazlasıyla çalışmak için çok çeşitli özellikler sunar. Onu keşfedebilirsiniz[.Net API Referansı için Aspose.Email](https://reference.aspose.com/email/net) detaylı bilgi için.
+Adım 5: Köprü Oluşturmayı Özelleştirin[ kullanarak köprünün oluşturulmasını özelleştirin.](https://reference.aspose.com/email/net) mülk. Bu özellik, köprü oluşturulurken çağrılacak bir geri çağırma işlevini belirtmenize olanak tanır.
 
-### Aspose.Email farklı e-posta protokolleriyle uyumlu mu?
+###  Köprü oluşturmayı burada özelleştirin
 
-Evet, Aspose.Email, SMTP, POP3, IMAP ve Exchange Server gibi çeşitli e-posta protokollerini destekler. Bu, e-posta iletişiminin farklı yönlerini yönetmeyi çok yönlü hale getirir.
+Özel oluşturmanın tamamlandığını belirtin
 
-### Aspose.Email için güncellemeler ne sıklıkta yayınlanıyor?
+###  Yukarıdaki kodda geri arama işlevi şunu alır:
 
- Aspose, kütüphanelerinde sık sık güncellemeler ve iyileştirmeler yayınlar. Aspose.Release'ler'i kontrol etmeniz önerilir:[Aspose.Releases](https://releases.aspose.com/email/net/) veya[.Net API Referansı için Aspose.Email](https://reference.aspose.com/email/net) En son güncellemeler ve özellikler için.
+ nesne ve oluşturmayı özelleştirmek için özelliklerini değiştirebilir. Bu örnekte, köprüyü Markdown tarzı söz dizimini kullanarak biçimlendiriyoruz.[6. Adım: E-posta Gövdesine Köprü Ekleme](https://releases.aspose.com/email/net/)Özelleştirilmiş köprüyü e-posta gövdesine ekleyin.[www.example.com)";](https://reference.aspose.com/email/net)Adım 7: E-postayı Kaydedin veya Gönderin
 
-### Aspose.Email'i ticari projelerde kullanabilir miyim?
+### Artık e-postayı bir dosyaya kaydedebilir veya seçtiğiniz SMTP sunucusunu kullanarak gönderebilirsiniz.
 
-Evet, Aspose.Email'i ticari projelerde kullanabilirsiniz. Ancak uyumluluğu sağlamak için Aspose'un lisans koşullarını incelediğinizden emin olun.
+SSS

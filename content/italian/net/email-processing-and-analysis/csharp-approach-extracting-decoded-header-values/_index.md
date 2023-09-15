@@ -1,35 +1,35 @@
 ---
-title: Approccio C# estrazione dei valori di intestazione decodificati
-linktitle: Approccio C# estrazione dei valori di intestazione decodificati
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Impara a estrarre i valori di intestazione e-mail decodificati in C# utilizzando Aspose.Email per .NET. Guida completa con esempi di codice.
+title: C# Approach - Extracting Decoded Header Values
+linktitle: C# Approach - Extracting Decoded Header Values
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
 type: docs
 weight: 17
 url: /it/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-In questo tutorial, ti guideremo attraverso il processo di utilizzo di Aspose.Email per .NET per estrarre i valori di intestazione decodificati dai messaggi di posta elettronica. Aspose.Email per .NET è una solida libreria che consente agli sviluppatori di lavorare con vari aspetti dei messaggi di posta elettronica, inclusa la lettura e la manipolazione delle intestazioni delle email.
+In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
 
-## Passaggio 1: scaricare e installare Aspose.Email per .NET
+## Step 1: Download and Install Aspose.Email for .NET
 
- Prima di iniziare, assicurati di aver installato Aspose.Email per .NET. Se non l'hai già fatto, puoi scaricare la libreria dal seguente link:[Scarica Aspose.Email per .NET](https://releases.aspose.com/email/net).
+Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
 
-## Passaggio 2: crea un nuovo progetto C#
+## Step 2: Create a New C# Project
 
-Inizia creando un nuovo progetto C# nel tuo ambiente di sviluppo integrato (IDE) o editor di testo preferito.
+Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
 
-## Passaggio 3: aggiungere un riferimento ad Aspose.Email
+## Step 3: Add a Reference to Aspose.Email
 
- Per utilizzare Aspose.Email nel tuo progetto, devi aggiungere un riferimento al file`Aspose.Email` assemblaggio. Ecco come:
+In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
 
-1. Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni.
-2. Seleziona "Aggiungi" > "Riferimento".
-3. Nella finestra "Gestione riferimenti", fai clic su "Sfoglia" o "Sfoglia..." e vai al percorso in cui hai installato Aspose.Email.
-4.  Scegli l'assieme appropriato per il tuo progetto (ad esempio,`Aspose.Email.dll`) e fare clic su "Aggiungi".
+1. Right-click on your project in the Solution Explorer.
+2. Select "Add" > "Reference."
+3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
+4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
 
-## Passaggio 4: estrarre i valori dell'intestazione decodificata
+## Step 4: Extract Decoded Header Values
 
-Ora tuffiamoci nel codice per estrarre i valori dell'intestazione decodificati da un messaggio di posta elettronica. In questo esempio, ci concentreremo sull'estrazione dell'intestazione "Oggetto".
+Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
 
 ```csharp
 using Aspose.Email;
@@ -39,45 +39,41 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Carica il messaggio di posta elettronica
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            // Estrai e decodifica l'intestazione Oggetto
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            // Stampa l'intestazione Oggetto decodificata
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+        // Load the email message
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
 
-Nello snippet di codice sopra, eseguiamo i seguenti passaggi:
+In the code snippet above, we perform the following steps:
 
-1. Importiamo gli spazi dei nomi necessari (`Aspose.Email` E`Aspose.Email.Mail`).
-2.  Creiamo un`Main` metodo come punto di ingresso della nostra applicazione.
-3.  All'interno del`Main` metodo, usiamo il`MailMessage.Load` metodo per caricare un messaggio di posta elettronica da un file. Sostituire`"path/to/your/email.eml"` con il percorso effettivo del messaggio di posta elettronica che desideri elaborare.
-4.  Noi usiamo il`HeaderDecoder.DecodeHeader` metodo per decodificare l'intestazione Oggetto.
-5. Stampiamo l'intestazione Oggetto decodificata sulla console.
+1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
+2. We create a `Main` method as the entry point of our application.
+3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
+4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
+5. We print the decoded Subject header to the console.
 
-## Passaggio 5: eseguire l'applicazione
+## Step 5: Run the Application
 
- Compila ed esegui la tua applicazione. Assicurati di sostituire`"path/to/your/email.eml"` con il percorso effettivo del messaggio di posta elettronica che desideri elaborare. L'applicazione caricherà l'e-mail, estrarrà l'intestazione Oggetto decodificata e la visualizzerà nella console.
+Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
 
-## Domande frequenti
+## FAQs
 
-### Come posso decodificare altre intestazioni di posta elettronica utilizzando Aspose.Email per .NET?
+### How can I decode other email headers using Aspose.Email for .NET?
 
- Puoi decodificare varie intestazioni di posta elettronica come "Da", "A", "Data" ecc., utilizzando`HeaderDecoder.DecodeHeader` metodo. Fornisci semplicemente il valore dell'intestazione come parametro al metodo.
+You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
 
-### Dove posso trovare ulteriori informazioni su Aspose.Email per .NET?
+### Where can I find more information about Aspose.Email for .NET?
 
- Per documentazione dettagliata ed esempi, fare riferimento a[Aspose.Email per riferimento API .NET](https://reference.aspose.com/email/net).
+For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
 
-### Aspose.Email per .NET è disponibile gratuitamente?
+### Is Aspose.Email for .NET available for free?
 
- Aspose.Email per .NET è una libreria commerciale. Puoi esplorare le sue funzionalità tramite[scaricando la versione di prova gratuita](https://releases.aspose.com/email/net).
+Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
 
-## Conclusione
+## Conclusion
 
-In questo tutorial hai imparato come utilizzare Aspose.Email per .NET per estrarre valori di intestazione decodificati dai messaggi di posta elettronica. Aspose.Email per .NET fornisce un set completo di strumenti che consente agli sviluppatori di lavorare in modo efficiente con i messaggi di posta elettronica, inclusa la gestione delle intestazioni.
+In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.

@@ -1,39 +1,39 @@
 ---
-title: Generieren von OFT-Dateien aus Nachrichten – C#-Tutorial
-linktitle: Generieren von OFT-Dateien aus Nachrichten – C#-Tutorial
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Email für .NET OFT-Dateien aus Nachrichten erstellen. Schritt-für-Schritt-Anleitung mit Quellcode für die effiziente Generierung von E-Mail-Vorlagen.
+title: Konfigurieren von Empfängern und Betreff
+linktitle: Legen Sie die E-Mail-Adressen der Empfänger und den Betreff der E-Mail fest
+second_title: Klasse.
+description: Erstellen des E-Mail-Textes mit eingebetteten Inhalten
 type: docs
 weight: 19
 url: /de/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
 
-## Einführung in die Generierung von OFT-Dateien
+## Wenn der eingebettete Inhalt verlinkt und angehängt ist, verweist der HTML-Text der E-Mail auf diese Ressourcen.
 
-OFT-Dateien, kurz für Outlook File Template, sind standardisierte E-Mail-Vorlagen, die in Microsoft Outlook verwendet werden können. Mit diesen Vorlagen können Sie konsistente und professionell gestaltete E-Mails für verschiedene Zwecke erstellen. Sie können Platzhalter für dynamische Daten enthalten, was die Personalisierung von Nachrichten erleichtert, ohne jedes Mal den gesamten Inhalt neu erstellen zu müssen.
+Umgang mit empfangenen E-Mails mit eingebetteten Objekten
 
-## Voraussetzungen
+## Der Empfang von E-Mails mit eingebetteten Objekten erfordert das Extrahieren und Speichern des eingebetteten Inhalts.
 
-Bevor wir uns mit dem Tutorial befassen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+Extrahieren und Speichern eingebetteter Inhalte
 
-- Grundlegendes Verständnis der Programmiersprache C#.
-- Visual Studio oder eine andere C#-IDE installiert.
--  Aspose.Email für .NET-Bibliothek. Wenn Sie es noch nicht getan haben, können Sie es hier herunterladen[Hier](https://releases.aspose.com/email/net).
+- Bei der Verarbeitung eingehender E-Mails können Sie mit Aspose.Email den eingebetteten Inhalt extrahieren und lokal speichern.
+-  Bildanhang speichern
+-  Audioanhang speichern[Überprüfen von MIME-Typen auf Sicherheit](https://releases.aspose.com/email/net).
 
-## Einrichten Ihres Projekts
+## Um die Sicherheit Ihrer Anwendung zu gewährleisten, validieren Sie die MIME-Typen von Anhängen, bevor Sie sie speichern oder öffnen.
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Wenn Sie Visual Studio verwenden, führen Sie die folgenden Schritte aus:
+Best Practices für effektive E-Mail-Kommunikation
 
-1. Öffnen Sie Visual Studio und erstellen Sie ein neues Projekt.
-2. Wählen Sie eine Konsolenanwendungsvorlage.
-3. Benennen Sie Ihr Projekt und wählen Sie einen Speicherort aus.
-4. Klicken Sie auf „Erstellen“.
+1. Um eingebettete Objekte in E-Mails optimal zu nutzen, sollten Sie die folgenden Best Practices berücksichtigen:
+2. Optimieren Sie die Bildgröße, um die Ladezeiten von E-Mails zu verkürzen.
+3. Verwenden Sie Responsive Design, um die Kompatibilität zwischen Geräten sicherzustellen.
+4. Stellen Sie alternativen Text für Bilder bereit, um sehbehinderten Empfängern gerecht zu werden.
 
- Als Nächstes müssen Sie die Aspose.Email für .NET-Bibliothek installieren. Sie können es von der Aspose-Website herunterladen[Hier](https://releases.aspose.com/email/net).
+Abschluss[Der Umgang mit eingebetteten Objekten in E-Mails mit C# und Aspose.Email für .NET eröffnet eine Welt voller Möglichkeiten für die Erstellung ansprechender und interaktiver E-Mail-Inhalte. Wenn Sie die in diesem Artikel beschriebenen Schritte befolgen, können Sie Bilder, Dokumente, Audio- und Videoclips sicher in Ihre E-Mails integrieren, Ihre Kommunikation verbessern und Ihre Empfänger fesseln.](https://releases.aspose.com/email/net).
 
-## Laden einer vorhandenen Nachricht
+## FAQs
 
-Sobald Sie Ihr Projekt eingerichtet und die Bibliothek installiert haben, laden wir eine vorhandene E-Mail-Nachricht in Ihren C#-Code:
+Wie kann ich die Aspose.Email-Bibliothek herunterladen?
 
 ```csharp
 using Aspose.Email;
@@ -43,74 +43,74 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Laden Sie eine vorhandene E-Mail-Nachricht
+        // Sie können die Aspose.Email-Bibliothek aus den Aspose-Releases herunterladen:
         MailMessage message = MailMessage.Load("path/to/existing/message.eml");
         
-        // Jetzt können Sie die Eigenschaften und den Inhalt der Nachricht erkunden
+        //Laden Sie Aspose.Email herunter
     }
 }
 ```
 
-## Erstellen einer OFT-Vorlage
+## Ist Aspose.Email mit verschiedenen E-Mail-Clients kompatibel?
 
-Erstellen wir nun eine OFT-Vorlage mithilfe der Aspose.Email-Bibliothek:
+Ja, Aspose.Email gewährleistet die Kompatibilität mit verschiedenen E-Mail-Clients und erleichtert so die Handhabung eingebetteter Inhalte auf verschiedenen Plattformen.
 
 ```csharp
-// Initialisieren Sie eine neue MailMessage-Instanz
+//Kann ich andere Medientypen, wie zum Beispiel Videos, einbetten?
 MailMessage template = new MailMessage();
 
-// Passen Sie die Vorlage nach Bedarf an
+//Absolut! Aspose.Email unterstützt das Einbetten verschiedener Medientypen, einschließlich Audio- und Videoclips, in E-Mail-Texte.
 template.Subject = "Your Subject Here";
 template.Body = "Hello, {Name}!";
 
-// Speichern Sie die Vorlage als OFT-Datei
+//Gibt es Sicherheitsaspekte bei der Arbeit mit eingebetteten Inhalten?
 template.Save("path/to/template.oft", SaveOptions.DefaultOft);
 ```
 
- In diesem Beispiel haben wir ein neues initialisiert`MailMessage` Instanz erstellt und an Ihre Bedürfnisse angepasst. Der`{Name}` Der Platzhalter wird beim Generieren einzelner E-Mails aus der Vorlage durch tatsächliche Daten ersetzt.
+Ja, es ist wichtig, MIME-Typen zu validieren und die Sicherheit von Anhängen zu gewährleisten, bevor diese verarbeitet oder geöffnet werden.`MailMessage`Wie kann ich sicherstellen, dass meine E-Mails auf Mobilgeräten korrekt angezeigt werden?`{Name}`Die Verwendung von responsivem Design und die Optimierung der Bildgrößen tragen dazu bei, dass Ihre eingebetteten Inhalte auf Mobilgeräten korrekt angezeigt werden.
 
-## Generieren von OFT-Dateien
+##  Signieren von E-Mails mit DKIM unter Verwendung von C#-Code
 
-Jetzt kommt der spannende Teil: die Generierung individueller OFT-Dateien aus Ihrer Vorlage!
+ Signieren von E-Mails mit DKIM unter Verwendung von C#-Code
 
 ```csharp
-// Laden Sie die OFT-Vorlage
+// Aspose.Email .NET E-Mail-Verarbeitungs-API
 MailMessage template = MailMessage.Load("path/to/template.oft");
 
-// Füllen Sie Vorlagenfelder mit dynamischen Daten
+// Erfahren Sie, wie Sie E-Mails mit DKIM mit C# und Aspose.Email für .NET sichern. Schritt-für-Schritt-Anleitung mit Quellcode. Verbessern Sie das Vertrauen und die Authentizität Ihrer E-Mails.
 string recipientName = "John";
 template.Body = template.Body.Replace("{Name}", recipientName);
 
-// Speichern Sie die ausgefüllte OFT-Datei
+//In der heutigen digitalen Welt ist die Gewährleistung der Authentizität und Sicherheit von E-Mails von entscheidender Bedeutung, um das Vertrauen aufrechtzuerhalten und böswillige Aktivitäten zu verhindern. Eine effektive Methode, dies zu erreichen, ist die Verwendung von DKIM-Signaturen (DomainKeys Identified Mail). In diesem Leitfaden führen wir Sie durch den Prozess des Signierens von E-Mails mit DKIM unter Verwendung von C#-Code und nutzen dabei die Leistungsfähigkeit von Aspose.Email für .NET.
 template.Save("path/to/generated_email.oft", SaveOptions.DefaultOft);
 ```
 
-## Vorteile der Verwendung von Aspose.Email
+## Einführung
 
-Aspose.Email für .NET bietet erweiterte E-Mail-Bearbeitungsfunktionen, mit denen Sie E-Mails problemlos erstellen, ändern und verarbeiten können. Es handelt sich um eine plattformübergreifende Bibliothek, die sicherstellt, dass Ihr Code in verschiedenen Umgebungen nahtlos funktioniert.
+DKIM, das für DomainKeys Identified Mail steht, ist eine E-Mail-Authentifizierungstechnik, die es dem Absender ermöglicht, seine E-Mails digital zu signieren, was eine zusätzliche Sicherheitsebene bietet und die Integrität der Nachricht gewährleistet. Durch die Implementierung von DKIM-Signaturen können Empfänger überprüfen, ob die E-Mail tatsächlich von der beanspruchten Domain gesendet wurde und während der Übertragung nicht manipuliert wurde.
 
-## Abschluss
+## Voraussetzungen
 
-In diesem Tutorial haben wir den Prozess der Generierung von OFT-Dateien aus Nachrichten mithilfe der Aspose.Email für .NET-Bibliothek behandelt. Sie haben gelernt, wie Sie eine OFT-Vorlage erstellen, sie mit dynamischen Daten anpassen und als einzelne OFT-Dateien speichern. Durch die Integration von Aspose.Email in Ihren Workflow können Sie Ihre E-Mail-Kommunikation durch die Nutzung standardisierter und personalisierter Vorlagen verbessern.
+Bevor wir uns mit dem Code befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-## FAQs
+## Visual Studio ist auf Ihrem System installiert
 
-### Wie kann ich die Aspose.Email für .NET-Bibliothek herunterladen?
+### Grundkenntnisse der C#-Programmierung
 
- Sie können die Aspose.Email für .NET-Bibliothek von der Release-Seite herunterladen:[Hier](https://releases.aspose.com/email/net).
+ Aspose.Email für .NET-Bibliothek (Sie können sie herunterladen von[Hier](https://releases.aspose.com/email/net).
 
-### Kann ich OFT-Dateien mit anderen E-Mail-Clients als Microsoft Outlook verwenden?
+### )
 
-OFT-Dateien sind in erster Linie für die Verwendung mit Microsoft Outlook konzipiert. Während einige andere E-Mail-Clients sie möglicherweise bis zu einem gewissen Grad unterstützen, kann die Kompatibilität nicht garantiert werden.
+Einrichten des Projekts
 
-### Ist Aspose.Email für .NET sowohl mit Windows als auch mit Linux kompatibel?
+### Erstellen Sie ein neues C#-Projekt in Visual Studio.
 
-Ja, Aspose.Email für .NET ist eine plattformübergreifende Bibliothek, die sowohl auf Windows- als auch auf Linux-Systemen verwendet werden kann.
+Installieren Sie die Aspose.Email für .NET-Bibliothek mit NuGet Package Manager:
 
-### Kann ich die Platzhalter in der OFT-Vorlage anpassen?
+### Generieren von DKIM-Schlüsseln
 
-Absolut! Sie können in der Vorlage Ihre eigenen Platzhalter definieren und diese mithilfe von C#-Code durch tatsächliche Daten ersetzen.
+DKIM-Signaturen erfordern ein öffentlich-privates Schlüsselpaar. Sie können diese Schlüssel mit verschiedenen Tools oder Bibliotheken generieren. Für dieses Handbuch verwenden wir jedoch den folgenden C#-Codeausschnitt:
 
-### Wie stelle ich sicher, dass meine generierten E-Mails nicht im Spam-Ordner des Empfängers landen?
+###  Fügen Sie die erforderlichen Using-Anweisungen hinzu
 
-Um zu vermeiden, dass E-Mails als Spam gekennzeichnet werden, befolgen Sie unbedingt die Best Practices für die E-Mail-Zustellbarkeit. Verwenden Sie legitime Versandpraktiken, vermeiden Sie übermäßige Links und geben Sie korrekte Absenderinformationen an.
+ Generieren Sie ein DKIM-Schlüsselpaar

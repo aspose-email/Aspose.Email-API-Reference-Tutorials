@@ -1,111 +1,111 @@
 ---
-title: Impostazione dello stato partecipante per i partecipanti all'appuntamento con C#
-linktitle: Impostazione dello stato partecipante per i partecipanti all'appuntamento con C#
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Scopri come gestire lo stato dei partecipanti all'appuntamento utilizzando C# e Aspose.Email per .NET. Guida passo passo con il codice sorgente.
+title: Setting Participant Status for Appointment Attendees with C#
+linktitle: Setting Participant Status for Appointment Attendees with C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to manage appointment attendees' status using C# and Aspose.Email for .NET. Step-by-step guide with source code.
 type: docs
 weight: 16
 url: /it/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
 
-## Introduzione ad Aspose.Email per .NET
+## Introduction to Aspose.Email for .NET
 
-Aspose.Email per .NET è una libreria versatile che consente agli sviluppatori di lavorare con messaggi di posta elettronica, appuntamenti, contatti e altro all'interno delle loro applicazioni .NET. Con la sua API intuitiva, gli sviluppatori possono manipolare facilmente vari aspetti della comunicazione e-mail, rendendolo una scelta eccellente per gestire le attività relative agli appuntamenti.
+Aspose.Email for .NET is a versatile library that enables developers to work with email messages, appointments, contacts, and more within their .NET applications. With its intuitive API, developers can effortlessly manipulate various aspects of email communication, making it an excellent choice for handling appointment-related tasks.
 
-## Prerequisiti
+## Prerequisites
 
-Prima di approfondire l'implementazione, assicurati di disporre dei seguenti prerequisiti:
+Before we dive into the implementation, make sure you have the following prerequisites in place:
 
-- Visual Studio (o qualsiasi IDE C#)
-- Aspose.Email per la libreria .NET
-- Conoscenza di base della programmazione C#
+- Visual Studio (or any C# IDE)
+- Aspose.Email for .NET library
+- Basic understanding of C# programming
 
-## Creazione di un appuntamento
+## Creating an Appointment
 
-Per iniziare, è necessario creare un'istanza di appuntamento utilizzando Aspose.Email per .NET. Un appuntamento rappresenta un evento pianificato ed è possibile impostare varie proprietà come l'ora di inizio, l'ora di fine, la posizione e altro.
+To get started, you need to create an appointment instance using Aspose.Email for .NET. An appointment represents a scheduled event, and you can set various properties like start time, end time, location, and more.
 
 ```csharp
-// Aggiungi le istruzioni using necessarie
+// Add necessary using statements
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Crea un'istanza della classe Appuntamento
+// Create an instance of the Appointment class
 var appointment = new Appointment();
 
-// Imposta le proprietà dell'appuntamento
+// Set appointment properties
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 ```
 
-## Aggiunta di partecipanti
+## Adding Attendees
 
- Successivamente, puoi aggiungere partecipanti all'appuntamento utilizzando`Attendees` collezione. I partecipanti sono le persone che parteciperanno all'appuntamento. È possibile specificare i loro indirizzi email e nomi.
+Next, you can add attendees to the appointment using the `Attendees` collection. Attendees are the individuals who will be participating in the appointment. You can specify their email addresses and names.
 
 ```csharp
-// Aggiungi partecipanti all'appuntamento
+// Add attendees to the appointment
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Impostazione dello stato del partecipante
+## Setting Participant Status
 
-Ora arriva la parte cruciale: impostare lo stato di partecipante per i partecipanti. Lo stato del partecipante indica se un partecipante ha accettato, rifiutato o accettato provvisoriamente l'invito all'appuntamento. Aspose.Email per .NET fornisce diverse opzioni di stato tra cui scegliere.
+Now comes the crucial part: setting the participant status for the attendees. Participant status indicates whether an attendee has accepted, declined, or tentatively accepted the appointment invitation. Aspose.Email for .NET provides different status options to choose from.
 
 ```csharp
-// Imposta lo stato partecipante per i partecipanti
+// Set participant status for attendees
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Codice sorgente completo
+## Complete Source Code
 
-Ecco il codice sorgente completo che dimostra il processo di creazione di un appuntamento, aggiunta di partecipanti e impostazione dello stato del partecipante:
+Here's the complete source code that demonstrates the process of creating an appointment, adding attendees, and setting participant status:
 
 ```csharp
-// Aggiungi le istruzioni using necessarie
+// Add necessary using statements
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Crea un'istanza della classe Appuntamento
+// Create an instance of the Appointment class
 var appointment = new Appointment();
 
-// Imposta le proprietà dell'appuntamento
+// Set appointment properties
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 
-// Aggiungi partecipanti all'appuntamento
+// Add attendees to the appointment
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 
-// Imposta lo stato partecipante per i partecipanti
+// Set participant status for attendees
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Conclusione
+## Conclusion
 
-In questa guida abbiamo esplorato il processo di gestione dei partecipanti agli appuntamenti e di impostazione dello stato dei partecipanti utilizzando C# e Aspose.Email per .NET. Le funzionalità complete della libreria la rendono uno strumento prezioso per gli sviluppatori che devono lavorare in modo efficiente con le attività relative alla posta elettronica.
+In this guide, we've explored the process of managing appointment attendees and setting participant status using C# and Aspose.Email for .NET. The library's comprehensive features make it a valuable tool for developers who need to work with email-related tasks efficiently.
 
-## Domande frequenti
+## FAQ's
 
-### Come posso ottenere la libreria Aspose.Email per .NET?
+### How can I obtain the Aspose.Email for .NET library?
 
- È possibile scaricare la libreria Aspose.Email per .NET dal sito Web:[Scarica Aspose.Email per .NET](https://releases.aspose.com).
+You can download the Aspose.Email for .NET library from the website: [Download Aspose.Email for .NET](https://releases.aspose.com).
 
-### Posso personalizzare le opzioni relative allo stato del partecipante?
+### Can I customize the participant status options?
 
- Sì, puoi personalizzare le opzioni dello stato del partecipante in base alle esigenze della tua candidatura utilizzando il`AppointmentParticipantStatus` enumerazione fornita da Aspose.Email per .NET.
+Yes, you can customize the participant status options according to your application's needs by using the `AppointmentParticipantStatus` enumeration provided by Aspose.Email for .NET.
 
-### Aspose.Email per .NET è adatto per gestire altre attività relative alla posta elettronica?
+### Is Aspose.Email for .NET suitable for handling other email-related tasks?
 
-Assolutamente! Aspose.Email per .NET offre un'ampia gamma di funzionalità per lavorare con e-mail, allegati, appuntamenti e altro, rendendolo una scelta versatile per varie attività relative alla posta elettronica.
+Absolutely! Aspose.Email for .NET offers a wide range of features for working with emails, attachments, appointments, and more, making it a versatile choice for various email-related tasks.
 
-### Posso integrare questa funzionalità nella mia applicazione .NET esistente?
+### Can I integrate this functionality into my existing .NET application?
 
-Sì, puoi facilmente integrare le funzionalità discusse in questa guida nelle tue applicazioni .NET esistenti facendo riferimento alla libreria Aspose.Email per .NET e seguendo gli esempi di codice forniti.
+Yes, you can easily integrate the functionality discussed in this guide into your existing .NET applications by referencing the Aspose.Email for .NET library and following the provided code examples.
 
-### Dove posso trovare ulteriore documentazione e risorse?
+### Where can I find more documentation and resources?
 
- Per documentazione e risorse più dettagliate, fare riferimento alla documentazione Aspose.Email per .NET:[Aspose.Email per la documentazione .NET](https://reference.aspose.com/email/net).
+For more detailed documentation and resources, refer to the Aspose.Email for .NET documentation: [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net).

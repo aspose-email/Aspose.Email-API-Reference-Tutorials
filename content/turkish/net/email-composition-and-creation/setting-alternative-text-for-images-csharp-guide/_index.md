@@ -1,41 +1,41 @@
 ---
-title: Görseller için Alternatif Metin Ayarlama - C# Kılavuzu
-linktitle: Görseller için Alternatif Metin Ayarlama - C# Kılavuzu
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET kullanarak e-postalardaki görseller için alternatif metin ayarlamayı öğrenin. Net alternatif metinle erişilebilirliği sağlayın. Belgeler ve kod dahildir.
+title: E-posta mesajını yükle
+linktitle: S/MIME şifrelemesini kontrol edin
+second_title: Sonucu göster
+description: Çözüm
 type: docs
 weight: 15
 url: /tr/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
 
-Bu kılavuz, Aspose.Email for .NET kullanarak e-postalardaki görseller için alternatif metin ayarlama sürecinde size yol gösterecektir. "Alternatif metin" olarak da bilinen alternatif metin, görselin görüntülenememesi durumunda görselin metinsel açıklamasını sağlamak için kullanılır. Aspose.Email for .NET, çeşitli formatlardaki e-postalar ve eklerle çalışmanıza olanak tanıyan güçlü bir kütüphanedir. Bu kılavuzda C# kullanarak e-posta iletilerindeki görseller için alternatif metin ayarlamaya odaklanacağız.
+Bu kılavuzda, mesajları şifreleme açısından kontrol etmek için Aspose.Email for .NET'in özelliklerinden nasıl yararlanılabileceğini araştırdık. S/MIME şifrelemesini tespit edip doğrulayarak, mesajların şifresini çözerek ve istisnaları ele alarak uygulamalarınızda güvenli iletişim sağlayabilirsiniz. Aspose.Email süreci basitleştirerek sağlam ve güvenli e-posta işlevleri oluşturmaya odaklanmanıza olanak tanır.
 
-## Önkoşullar
+## SSS
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Aspose.Email şifrelenmiş ekleri nasıl yönetir?
 
-1. Visual Studio veya herhangi bir uyumlu C# geliştirme ortamı yüklü.
-2. Aspose.Email for .NET kütüphanesi. NuGet Paket Yöneticisini Visual Studio'da kullanabilirsiniz.
+1.  Aspose.Email, şifrelenmiş e-posta mesajlarındaki ekleri ayıklamak ve şifrelerini çözmek için yöntemler sağlar. Şunu kullanabilirsiniz:
+2.  Ekleri diske kaydetmek için mesajın şifresini çözdükten sonra yöntem.
 
-## Adım 1: Yeni Bir Proje Oluşturun
+## Aspose.Email'i .NET Core uygulamalarıyla kullanabilir miyim?
 
-1. Visual Studio'yu başlatın ve yeni bir C# konsol uygulaması projesi oluşturun.
+1. Evet, Aspose.Email hem .NET Framework hem de .NET Core uygulamalarıyla uyumludur ve geliştirme projelerinizde size esneklik sağlar.
 
-## Adım 2: Aspose.Email'i NuGet aracılığıyla yükleyin
+## Aspose.Email hangi şifreleme algoritmalarını destekliyor?
 
-1. Çözüm Gezgini'nde projenize sağ tıklayın ve "NuGet Paketlerini Yönet"i seçin.
-2. "Aspose.Email"i arayın ve paketin en son sürümünü yükleyin.
+1. Aspose.Email, e-posta mesajlarınızın güvenliğini sağlamak için AES, RSA ve TripleDES dahil olmak üzere çok çeşitli şifreleme algoritmalarını destekler.
+2. Bir e-postanın yalnızca belirli bölümlerini şifrelemek mümkün mü?
 
-## 3. Adım: Kullanarak İfadeleri Ekleme
+## Evet, Aspose.Email, bir e-posta mesajının ekler veya e-posta gövdesinin belirli bölümleri gibi belirli bölümlerini seçerek şifrelemenize olanak tanır.
 
 ```csharp
 using Aspose.Email.Mail;
 using Aspose.Email.Mime;
 ```
 
-## Adım 4: E-posta Mesajını Yükleyin ve Değiştirin
+## Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
-1.  E-posta mesajını kullanarak yükleyin.`MailMessage` sınıf:
+1.  Daha ayrıntılı bilgi, örnekler ve belgeler için şu adresi ziyaret edin:`MailMessage`Aspose.Email for .NET Belgelendirmesi
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -44,60 +44,40 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-2.  Bir örneğini oluşturun`MhtmlMessageFormatter`mesajı biçimlendirmek için sınıf:
+3.  sayfa.
 
 ```csharp
-MhtmlMessageFormatter formatter = new MhtmlMessageFormatter();
+var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-3. E-posta mesajının HTML içeriğini yükleyin:
+##  C# Tekniği - HTML Gövdesini Düz Metne Dönüştürme
 
+ C# Tekniği - HTML Gövdesini Düz Metne Dönüştürme 
 ```csharp
-string htmlContent = "<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>";
-formatter.SetBodyContent(htmlContent, "text/html");
+message.AlternateViews.Add(htmlView);
 ```
 
-## Adım 5: Görsellere Alternatif Metin Ekleyin
+##  Aspose.Email .NET E-Posta İşleme API'si
 
-1.  Bulun`AlternateView` HTML gövdesini ve resimlerini içeren:
-
-```csharp
-AlternateView htmlView = message.AlternateViews.GetHtmlView();
-```
-
-2.  Bulun`LinkedResource` görüntüyü temsil eden:
-
-```csharp
-LinkedResource linkedResource = htmlView.LinkedResources.GetLinkedResourceByContentId("logo.jpg");
-```
-
-3. Görselin alternatif metnini ayarlayın:
-
-```csharp
-linkedResource.AlternateText = "Company Logo";
-```
-
-## Adım 6: E-postayı Kaydedin ve Gönderin
-
-1. Değiştirilen mesajı bir dosyaya kaydedin veya istediğiniz yöntemi kullanarak gönderin:
+1.  Aspose.Email for .NET'i kullanarak HTML e-posta içeriğini zahmetsizce düz metne dönüştürmeyi öğrenin. Ayrıntılı kılavuz ve kod. Şimdi keşfedin!
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
 ```
 
-## Çözüm
+## Modern e-posta iletişiminde HTML biçimlendirmesi mesajların görsel çekiciliğini artırır. Ancak HTML içeriğini düz metne dönüştürmeniz gerekebilecek durumlar vardır. Aspose.Email for .NET bunu başarmak için basit bir çözüm sunuyor. Bu kılavuzda, Aspose.Email for .NET kullanarak bir e-postanın HTML gövdesinin nasıl düz metne dönüştürüleceğine ilişkin kaynak koduyla birlikte adım adım bir eğitim sunacağız.
 
-Bu kılavuzda Aspose.Email for .NET kullanarak e-posta mesajlarındaki görseller için alternatif metni nasıl ayarlayacağınızı öğrendiniz. Yukarıda özetlenen adımları izleyerek, e-posta içeriğinizin, resimler görüntülenemediğinde bile erişilebilir ve bilgilendirici kalmasını sağlayabilirsiniz.
+Aspose.Email for .NET'e giriş
 
-## SSS
+## Aspose.Email for .NET, .NET uygulamaları içindeki çeşitli e-posta formatları ve işlevleriyle çalışmayı kolaylaştıran güçlü bir kütüphanedir.
 
-## Aspose.Email kütüphanesini nasıl indirebilirim?
+## HTML'yi Neden Düz Metne Dönüştürmelisiniz?
 
-Aspose.Email kütüphanesini Aspose Sürümlerinden indirebilir veya Visual Studio'daki NuGet Paket Yöneticisi aracılığıyla kurabilirsiniz.
+HTML içeriğini düz metne dönüştürmek, e-posta içeriğini basitleştirilmiş bir biçimde görüntülemek veya daha ileri işlemler için önemli bilgilerin çıkarılması gibi senaryolar için kullanışlıdır.
 
-### Resimleri bir e-postaya bağlantılı kaynaklar olarak nasıl eklerim?
+### Başlarken
 
- Resimleri bir e-postaya bağlantılı kaynaklar olarak eklemek için`LinkedResource`sınıf. Bağlantılı kaynağa bir içerik kimliği atayın ve ardından HTML gövdesinde bu içerik kimliğine başvuruda bulunun.`cid:` şeması. Ayrıntılı bilgi için bkz.[LinkedResource belgeleri](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### Aspose.Email for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+Geliştirme Ortamınızı Kurma`LinkedResource`Aşağıdakilere sahip olduğunuzdan emin olun:`cid:`Visual Studio veya tercih edilen IDE[.NET Framework veya .NET Core yüklü](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+### Aspose.Email'i NuGet aracılığıyla yükleme
 
- Aspose.Email for .NET ile çalışmaya ilişkin daha ayrıntılı belgeleri, eğitimleri ve örnekleri şu adreste bulabilirsiniz:[API Referansı](https://reference.aspose.com/email/net/).
+Projenizi Visual Studio'da açın.["Araçlar" > "NuGet Paket Yöneticisi" > "Çözüm için NuGet Paketlerini Yönet" seçeneğine gidin.](https://reference.aspose.com/email/net/).

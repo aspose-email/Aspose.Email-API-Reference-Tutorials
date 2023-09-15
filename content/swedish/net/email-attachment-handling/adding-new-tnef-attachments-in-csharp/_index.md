@@ -1,86 +1,90 @@
 ---
-title: Lägga till nya TNEF-bilagor i C#
-linktitle: Lägga till nya TNEF-bilagor i C#
-second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du lägger till nya TNEF-bilagor i C# med Aspose.Email för .NET. Steg-för-steg-guide med kodexempel för sömlös integration.
+title: Hur laddar jag ner Aspose.Email för .NET?
+linktitle: Du kan ladda ner den senaste versionen av Aspose.Email för .NET från
+second_title: Aspose.Email för .NET nedladdningssida
+description: Är Aspose.Email för .NET kompatibelt med andra Outlook-relaterade format?
 type: docs
 weight: 12
 url: /sv/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## Introduktion till TNEF Attachments och Aspose.Email för .NET
+## Ja, Aspose.Email för .NET ger omfattande stöd för olika Outlook-relaterade format, inklusive PST, EML, MSG och mer.
 
-TNEF (Transport Neutral Encapsulation Format) bilagor är ett proprietärt format som används av Microsoft Outlook för att paketera rik text och bilagor i e-postmeddelanden. Aspose.Email för .NET är ett kraftfullt bibliotek som låter dig arbeta med e-postmeddelanden i olika format, inklusive TNEF-bilagor, med C#.
+Kan jag använda Aspose.Email för .NET i både kommersiella och personliga projekt?
 
-## Konfigurera din utvecklingsmiljö
+## Ja, Aspose.Email för .NET kan användas i både kommersiella och personliga projekt. Se till att läsa licensvillkoren på Asposes webbplats.
 
-Innan vi dyker in i kodning, se till att du har en utvecklingsmiljö inrättad. Installera Visual Studio och skapa ett nytt C#-projekt.
+Erbjuder Aspose.Email för .NET dokumentation för utvecklare?
 
-## Skapa ett nytt projekt
+##  Ja, du kan hitta detaljerad dokumentation och kodexempel om hur du använder Aspose.Email för .NET i olika scenarier på
 
-Börja med att skapa ett nytt C#-projekt i Visual Studio. Välj ett lämpligt projektnamn och plats.
+Aspose.Email dokumentation
 
-## Lägger till Aspose.Email för .NET-biblioteket
+##  sida.
 
-För att arbeta med e-postmeddelanden och TNEF-bilagor måste vi lägga till Aspose.Email for .NET-biblioteket i vårt projekt. Du kan göra detta genom att använda NuGet Package Manager i Visual Studio. Sök efter "Aspose.Email" och installera lämpligt paket.
+ Bevara ursprungliga gränser med C#-kod
 
-## Laddar en befintlig e-post med TNEF-bilaga
+##  Bevara ursprungliga gränser med C#-kod
 
-Till att börja med, låt oss ladda ett befintligt e-postmeddelande som innehåller en TNEF-bilaga. Du måste ange sökvägen till e-postfilen.
+ Aspose.Email .NET Email Processing API
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Ladda e-postmeddelandet med TNEF-bilaga
-var message = MailMessage.Load("path/to/email.eml");
+// Lär dig hur du bevarar ursprungliga gränser för e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Extrahera och modifiera TNEF-bilagor
+## Introduktion till att bevara ursprungliga gränser
 
-När du har laddat e-postmeddelandet kan du extrahera TNEF-bilagan och ändra den efter behov.
+den moderna affärsvärlden spelar e-postkommunikation en avgörande roll. När e-postmeddelanden utbyts innehåller de ofta viktiga bilagor som måste hanteras och manipuleras programmatiskt. Men när du arbetar med e-postbilagor är det viktigt att se till att de ursprungliga gränserna och formateringen av dessa bilagor bevaras. Det är här Aspose.Email för .NET kommer in i bilden.
 
 ```csharp
-// Iterera genom bilagor
+//Förutsättningar
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extrahera TNEF-tillbehör
-        var tnefAttachment = (TnefAttachment)attachment;
+        //Innan vi dyker in i koden, se till att du har följande förutsättningar på plats:
+        var tnefAttachment = attachment;
 
-        // Få tillgång till TNEF-egenskaper och ändra vid behov
-        // tnefAttachment.Properties...
+        //Visual Studio installerat
+        //.NET Framework eller .NET Core-projekt
     }
 }
 ```
 
-## Spara e-postmeddelandet med modifierade bilagor
+## Installation
 
-Efter att ha ändrat TNEF-bilagan kan du spara tillbaka e-postmeddelandet till en fil.
+För att komma igång måste du installera Aspose.Email for .NET-biblioteket. Du kan göra detta genom att följa dessa steg:
 
 ```csharp
-// Spara det ändrade e-postmeddelandet
-message.Save("path/to/modified_email.eml");
+//Öppna ditt Visual Studio-projekt.
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Slutsats
+## Högerklicka på ditt projekt i Solution Explorer.
 
-I den här artikeln har vi utforskat hur man arbetar med TNEF-bilagor i C# med Aspose.Email för .NET. Du har lärt dig hur du laddar ett e-postmeddelande med TNEF-bilagor, extraherar och ändrar dessa bilagor och sparar det ändrade e-postmeddelandet.
+Välj "Hantera NuGet-paket."
 
-## FAQ's
+## Sök efter "Aspose.Email" och installera paketet.
 
-### Hur kan jag installera Aspose.Email för .NET?
+### Laddar e-postmeddelanden
 
-Du kan installera Aspose.Email för .NET med NuGet Package Manager. Sök helt enkelt efter "Aspose.Email" och installera lämpligt paket.
+Det första steget är att ladda e-postmeddelandet som innehåller den bilaga du vill arbeta med. Så här kan du göra det:
 
-### Kan jag arbeta med andra e-postformat med Aspose.Email för .NET?
+###  Ladda e-postmeddelandet
 
-Ja, Aspose.Email för .NET stöder olika e-postformat, inklusive EML, MSG, PST och mer.
+Extrahera bilagor
 
-### Kan jag använda Aspose.Email för kommersiella projekt?
+### När du har laddat e-postmeddelandet kan du extrahera bilagorna från det:
 
-Ja, du kan använda Aspose.Email för .NET i både personliga och kommersiella projekt, förutsatt att du har rätt licens.
+ Extrahera bifogade data
 
-### Var kan jag hitta mer dokumentation och exempel?
+###  Ytterligare bearbetning...
 
- För mer detaljerad dokumentation och kodexempel kan du besöka[Aspose.Email för .NET-dokumentation](https://reference.aspose.com/email/net/).
+Ändra bilagor[För att bevara de ursprungliga gränserna medan du ändrar bilagor kan du använda funktionerna i biblioteket Aspose.Email. Låt oss säga att du vill ändra storlek på en bildbilaga:](https://reference.aspose.com/email/net/).

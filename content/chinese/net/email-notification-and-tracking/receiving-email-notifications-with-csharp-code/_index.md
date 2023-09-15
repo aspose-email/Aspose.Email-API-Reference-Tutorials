@@ -1,100 +1,90 @@
 ---
-title: 使用 C# 代码接收电子邮件通知
-linktitle: 使用 C# 代码接收电子邮件通知
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解使用 Aspose.Email for .NET 在 C# 中接收电子邮件通知。提供了高效的代码示例。
+title: Receiving Email Notifications with C# Code
+linktitle: Receiving Email Notifications with C# Code
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to receive email notifications in C# using Aspose.Email for .NET. Efficient code example provided.
 type: docs
 weight: 10
 url: /zh/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
 
-本指南提供了有关如何使用 C# 代码和 Aspose.Email for .NET 库接收电子邮件通知的全面分步教程。 Aspose.Email 是一个强大的库，旨在促进 .NET 应用程序中各种与电子邮件相关的操作。在本教程中，我们将重点介绍接收电子邮件通知的过程。
 
-## 先决条件
+In the digital age, communication is essential, and email remains one of the most popular means of exchanging information. As a developer, you might find yourself needing to send and receive email notifications in your applications. In this step-by-step tutorial, we will explore how to receive email notifications with C# using Aspose.Email for .NET.
 
-在开始之前，请确保您具备以下先决条件：
+## Introduction
 
-- 支持 C# 的开发环境（例如 Visual Studio）。
--  Aspose.Email for .NET 库。您可以从以下位置下载：[这个链接](https://releases.aspose.com/email/net).
-- 基本熟悉 C# 编程和基本电子邮件概念。
+Email notifications are crucial for keeping users informed about important events or updates in your application. Aspose.Email for .NET provides a powerful and easy-to-use solution for handling email-related tasks in your C# applications. In this tutorial, we will focus on receiving email notifications.
 
-## 第 1 步：项目设置
+## Setting up Aspose.Email
 
-1. 在您的开发环境中创建一个新的 C# 项目。
-2. 添加对 Aspose.Email.dll 库的引用。您可以通过将 DLL 复制到项目的 bin 目录或使用 NuGet 包管理器安装 Aspose.Email 包来完成此操作。
+Before we dive into the code, you need to set up Aspose.Email for .NET in your project. Here's how you can do it:
 
-## 第 2 步：编写代码
+1. Install Aspose.Email: Begin by installing the Aspose.Email for .NET library in your project. You can do this via NuGet Package Manager.
 
-在此步骤中，我们将编写连接到电子邮件服务器并检索电子邮件通知所需的 C# 代码。
+2. Import Aspose.Email Namespace: In your C# code, make sure to include the necessary namespace: `using Aspose.Email;`.
+
+## Creating the Email Message
+
+Now that we have Aspose.Email set up, let's create an email message. In this example, we will create a basic email message with a sender, recipient, subject, and body.
 
 ```csharp
-using System;
-using Aspose.Email.Client;
-using Aspose.Email.Imap;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        //配置电子邮件服务器设置
-        string host = "your-email-server.com";
-        int port = 993; //IMAP 端口
-        string username = "your-username";
-        string password = "your-password";
-
-        using (ImapClient client = new ImapClient(host, port, username, password))
-        {
-            //连接到电子邮件服务器并选择收件箱文件夹
-            client.Connect();
-            client.SelectFolder(ImapFolderInfo.InBox);
-
-            //定义搜索条件
-            ImapQueryBuilder builder = new ImapQueryBuilder();
-            builder.Subject.Contains("notification"); //自定义搜索条件
-
-            //搜索电子邮件通知
-            ImapMessageInfoCollection messages = client.ListMessages(builder.GetQuery());
-            
-            foreach (ImapMessageInfo messageInfo in messages)
-            {
-                Console.WriteLine("Subject: " + messageInfo.Subject);
-                Console.WriteLine("Date: " + messageInfo.Date);
-                //您可以在此处访问其他电子邮件属性
-            }
-
-            //断开与电子邮件服务器的连接
-            client.Disconnect();
-        }
-    }
-}
+// Create the message
+MailMessage msg = new MailMessage();
+msg.From = "sender@sender.com";
+msg.To = "receiver@receiver.com";
+msg.Subject = "the subject of the message";
 ```
 
-请记住替换占位符值 (`your-email-server.com`, `your-username`, `your-password`）与您的实际电子邮件服务器详细信息。
+## Configuring Notifications
 
-## 第 3 步：自定义搜索条件
+To ensure that you receive notifications about the delivery status of your email, you can configure delivery notification options. You can specify whether you want to be notified on success, failure, or both.
 
-提供的代码使用基本搜索条件来查找主题包含术语“通知”的电子邮件通知。您可以通过修改属性来自定义搜索条件，例如`From`, `To`， 和`Date`.
+```csharp
+// Set delivery notifications for success and failed messages
+msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
+```
 
-## 第四步：执行代码
+## Adding MIME Headers
 
-构建并运行您的 C# 项目。如果配置正确，代码将与电子邮件服务器建立连接，搜索电子邮件通知，并在控制台中显示其主题和日期。
+MIME headers provide additional information about the email message. You can add custom MIME headers as needed.
 
-## 经常问的问题
+```csharp
+// Add the MIME headers
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
+```
 
-### 如何处理电子邮件附件？
+## Sending the Email
 
-要管理电子邮件附件，请使用`Attachments`的财产`ImapMessageInfo`目的。循环浏览附件并将其保存到所需位置。如需详细指导，请参阅[Aspose.Email API 参考](https://reference.aspose.com/email/net/).
+Once you've configured your email message, it's time to send it. Aspose.Email provides a convenient way to send emails using the SMTP client.
 
-## 我可以根据日期范围过滤通知吗？
+```csharp
+// Send the message
+SmtpClient client = new SmtpClient("host", "username", "password");
+client.Send(msg);
+```
 
-当然。您可以使用特定日期范围过滤通知。利用调整搜索条件`Date`财产在`ImapQueryBuilder`。请参阅[文档](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapquerybuilder/)获取综合示例。
+## Conclusion
 
-## 如何在处理后将通知标记为已读？
+In this tutorial, we've explored how to receive email notifications with C# using Aspose.Email for .NET. We've covered setting up Aspose.Email, creating an email message, configuring notifications, adding MIME headers, and sending the email.
 
-处理完每条消息后，使用`MarkMessageRead`的方法`ImapClient`将消息标记为已读。咨询[文档](https://reference.aspose.com/email/net/aspose.email.clients.imap/imapclient/)获取详细信息。
+By following these steps, you can seamlessly integrate email notifications into your C# applications, enhancing user communication and keeping them informed.
 
-有关高级功能和选项，请参阅[Aspose.Email 文档](https://reference.aspose.com/email/net).
+## FAQs
 
-## 结论
+### 1. Can I use Aspose.Email for .NET in my .NET Core project?
+   Yes, Aspose.Email for .NET is compatible with both .NET Framework and .NET Core.
 
-在本教程中，我们探索了使用 C# 代码和 Aspose.Email for .NET 库接收电子邮件通知的过程。 Aspose.Email 被证明是一个强大的工具，可以简化 .NET 应用程序中与电子邮件相关的操作。
+### 2. How can I handle email attachments in my notifications?
+   You can use the `Attachment` class provided by Aspose.Email to handle email attachments easily.
+
+### 3. Is Aspose.Email for .NET a paid library?
+   Aspose.Email offers both a free trial and a paid version. The paid version provides additional features and support.
+
+### 4. Can I customize the email notification templates?
+   Yes, you can create custom email templates and use Aspose.Email to populate them with dynamic content.
+
+### 5. Are there any limitations on the number of emails I can send/receive with Aspose.Email?
+   Aspose.Email does not impose strict limitations on the number of emails you can send or receive, but it may be subject to your email server's limitations.
+
+That concludes our tutorial on receiving email notifications with C# using Aspose.Email for .NET. We hope you found this guide helpful in implementing email notifications in your applications. 

@@ -1,109 +1,119 @@
 ---
-title: TNEF-Nachrichtenerkennung in C# – erklärt
-linktitle: TNEF-Nachrichtenerkennung in C# – erklärt
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie TNEF-Nachrichten in C# mit Aspose.Email für .NET erkennen und verarbeiten. Verbessern Sie die E-Mail-Verarbeitung mit Rich Text und Anhängen.
+title: TNEF Message Detection in C# - Explained
+linktitle: TNEF Message Detection in C# - Explained
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to detect & process TNEF messages in C# using Aspose.Email for .NET. Enhance email handling with rich text & attachments.
 type: docs
 weight: 15
 url: /de/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
 
-In dieser Anleitung erhalten Sie eine detaillierte Schritt-für-Schritt-Erklärung, wie Sie TNEF-Nachrichten (Transport Neutral Encapsulation Format) mithilfe der Aspose.Email für .NET-Bibliothek erkennen. TNEF ist ein Format, das von Microsoft Outlook verwendet wird, um Rich Text und Anhänge in E-Mail-Nachrichten zu kapseln. Aspose.Email für .NET bietet einen leistungsstarken Satz APIs für die Arbeit mit E-Mails und Anhängen, einschließlich TNEF-Nachrichten.
+This guide will provide you with a detailed step-by-step explanation of how to detect TNEF (Transport Neutral Encapsulation Format) messages using the Aspose.Email for .NET library. TNEF is a format used by Microsoft Outlook to encapsulate rich text and attachments within email messages. Aspose.Email for .NET offers a powerful set of APIs to work with emails and attachments, including TNEF messages.
 
-## Voraussetzungen
+## Prerequisites
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Before you begin, ensure you have the following:
 
-- Eine Entwicklungsumgebung (z. B. Visual Studio) für C#.
--  Aspose.Email für .NET-Bibliothek installiert. Sie können es herunterladen unter[Hier](https://releases.aspose.com/email/net).
+- A development environment (e.g., Visual Studio) for C#.
+- Aspose.Email for .NET library installed. You can download it from [here](https://releases.aspose.com/email/net).
 
-## Schritt 1: Erstellen Sie ein neues C#-Projekt
+## Step 1: Create a New C# Project
 
-Beginnen Sie mit der Erstellung eines neuen C#-Projekts in der von Ihnen gewählten Entwicklungsumgebung.
+Start by creating a new C# project in your chosen development environment.
 
-## Schritt 2: Installieren Sie Aspose.Email für .NET
+## Step 2: Install Aspose.Email for .NET
 
-Installieren Sie die Aspose.Email für .NET-Bibliothek mit dem NuGet Package Manager. Führen Sie den folgenden Befehl in der Package Manager-Konsole aus:
+Install the Aspose.Email for .NET library using the NuGet Package Manager. Run the following command in the Package Manager Console:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## Schritt 3: Erforderliche Namespaces importieren
+## Step 3: Import Necessary Namespaces
 
-Importieren Sie in Ihren C#-Code die erforderlichen Namespaces:
+In your C# code, import the necessary namespaces:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mail;
 ```
 
-## Schritt 4: TNEF-Nachricht laden und erkennen
+## Step 4: Load and Detect TNEF Message
 
-1.  Laden Sie die E-Mail-Nachricht mit`MapiMessage` Klasse:
+1. Load the email message using the `MapiMessage` class:
 
 ```csharp
-MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
+// Load the email with TNEF attachment
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-2. Stellen Sie fest, ob es sich bei der geladenen E-Mail um eine TNEF-Nachricht handelt:
+2. Determine whether the loaded email is a TNEF message:
 
 ```csharp
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
- Ersetzen`"path/to/your/email.msg"` mit dem tatsächlichen Pfad zu Ihrer E-Mail-Nachrichtendatei.
+Replace `"path/to/your/email.msg"` with the actual path to your email message file.
 
-## Schritt 5: TNEF-Anhänge verarbeiten
+## Step 5: Process TNEF Attachments
 
-Wenn es sich bei der geladenen E-Mail tatsächlich um eine TNEF-Nachricht handelt, können Sie deren Anhänge extrahieren und verarbeiten:
+If the loaded email is indeed a TNEF message, you can extract and process its attachments:
 
 ```csharp
-if (isTnefMessage)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-    foreach (TnefAttachment attachment in tnefAttachments)
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // TNEF-Anhang verarbeiten
-        // Speichern Sie beispielsweise den Anhang auf der Festplatte
-        attachment.Save("path/to/save/" + attachment.FileName);
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
     }
 }
 ```
 
 ## FAQs
 
-## Wie kann ich überprüfen, ob eine E-Mail eine TNEF-Nachricht ist?
+### How Can I Check if an Email is a TNEF Message?
 
- Um zu überprüfen, ob es sich bei einer E-Mail um eine TNEF-Nachricht handelt, verwenden Sie die`IsTnefMessage()` Methode der`MapiMessage` Klasse:
+To check if an email is a TNEF message, use the `IsTnefMessage()` method of the `MapiMessage` class:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
-bool isTnefMessage = message.IsTnefMessage();
+bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-## Wie extrahiere ich Anhänge aus einer TNEF-Nachricht?
+### How Do I Extract Attachments from a TNEF Message?
 
-Um Anhänge aus einer TNEF-Nachricht zu extrahieren, gehen Sie folgendermaßen vor:
+To extract attachments from a TNEF message, follow these steps:
 
-1.  Laden Sie die E-Mail mit`MapiMessage.FromFile()`.
-2.  Überprüfen Sie, ob es sich bei der E-Mail um eine TNEF-Nachricht handelt`IsTnefMessage()`.
-3.  Wenn es sich um eine TNEF-Nachricht handelt, extrahieren Sie Anhänge mit`ExtractTnefAttachments()`.
+1. Load the email using `MapiMessage.FromFile()`.
+2. Check if the email is a TNEF message using `OriginalIsTnef`.
+3. If it is a TNEF message, extract attachments using by iterating Attachments with ContentType.MediaType is equal to "application/ms-tnef".
 
 ```csharp
-TnefAttachmentCollection tnefAttachments = message.ExtractTnefAttachments();
-foreach (TnefAttachment attachment in tnefAttachments)
+// Iterate through attachments
+foreach (var attachment in message.Attachments)
 {
-    // TNEF-Anhang verarbeiten
-    // Speichern Sie beispielsweise den Anhang auf der Festplatte
-    attachment.Save("path/to/save/" + attachment.FileName);
+    if (attachment.ContentType.MediaType == "application/ms-tnef")
+    {
+        // Extract TNEF attachment
+        var tnefAttachment = attachment;
+
+        // Access TNEF properties and modify if necessary
+        // tnefAttachment.Properties...
+    }
 }
 ```
 
- Ausführlichere Informationen und API-Referenzen finden Sie im[Aspose.Email für .NET-Dokumentation](https://reference.aspose.com/email/net/).
+For more detailed information and API references, refer to the [Aspose.Email for .NET documentation](https://reference.aspose.com/email/net/).
 
-## Abschluss
+## Conclusion
 
-In diesem Handbuch haben Sie erfahren, wie Sie TNEF-Nachrichten (Transport Neutral Encapsulation Format) mithilfe der Aspose.Email für .NET-Bibliothek erkennen. TNEF-Nachrichten, die häufig von Microsoft Outlook verwendet werden, kapseln Rich Text und Anhänge in E-Mails. Indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen, können Sie TNEF-Nachrichten effizient identifizieren und ihre Anhänge zur weiteren Verarbeitung extrahieren.
+In this guide, you have learned how to detect TNEF (Transport Neutral Encapsulation Format) messages using the Aspose.Email for .NET library. TNEF messages, often used by Microsoft Outlook, encapsulate rich text and attachments within emails. By following the steps outlined in this guide, you can efficiently identify TNEF messages and extract their attachments for further processing.
 
 

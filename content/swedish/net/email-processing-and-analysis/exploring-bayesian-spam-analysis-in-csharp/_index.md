@@ -1,98 +1,99 @@
 ---
-title: Utforska Bayesian Spam Analysis i C#
-linktitle: Utforska Bayesian Spam Analysis i C#
+title: Exploring Bayesian Spam Analysis in C#
+linktitle: Exploring Bayesian Spam Analysis in C#
 second_title: Aspose.Email .NET Email Processing API
-description: Implementera Bayesiansk skräppostanalys i C# med Aspose.Email för .NET. Exakt e-postfiltrering. Steg-för-steg guide & kod.
+description: Implement Bayesian spam analysis in C# with Aspose.Email for .NET. Accurate email filtering. Step-by-step guide & code.
 type: docs
 weight: 10
 url: /sv/net/email-processing-and-analysis/exploring-bayesian-spam-analysis-in-csharp/
 ---
 
-Att bekämpa spam är avgörande för e-postkommunikation. Bayesiansk skräppostanalys är en kraftfull teknik för att filtrera oönskade e-postmeddelanden. Den här guiden presenterar en omfattande handledning med källkod om implementering av Bayesiansk skräppostanalys i C# med Aspose.Email för .NET.
+Combatting spam is vital for email communication. Bayesian spam analysis is a powerful technique to filter unwanted emails. This guide presents a comprehensive tutorial with source code on implementing Bayesian spam analysis in C# using Aspose.Email for .NET.
 
-## Introduktion till Bayesian Spam Analysis
+## Introduction to Bayesian Spam Analysis
 
-Bayesiansk spamanalys använder sannolikhet för att avgöra om ett e-postmeddelande är spam eller inte. Det är effektivt och kan anpassas till olika typer av spam.
+Bayesian spam analysis employs probability to determine whether an email is spam or not. It's effective and adaptable to different types of spam.
 
-## Varför använda Bayesiansk analys?
+## Why Use Bayesian Analysis?
 
-Bayesiansk analys ger exakt skräppostdetektering genom att ta hänsyn till förekomsten av ord och fraser i e-postmeddelanden.
+Bayesian analysis provides accurate spam detection by considering the occurrence of words and phrases in emails.
 
-## Komma igång
+## Getting Started
 
-### Konfigurera din utvecklingsmiljö
+### Setting Up Your Development Environment
 
-Se till att du har:
-- Visual Studio eller föredragen IDE
-- .NET Framework eller .NET Core
+Ensure you have:
+- Visual Studio or preferred IDE
+- .NET Framework or .NET Core
 
-### Installera Aspose.Email via NuGet
+### Installing Aspose.Email via NuGet
 
-1. Öppna ditt projekt i Visual Studio.
-2. Gå till "Verktyg" > "NuGet Package Manager" > "Hantera NuGet-paket för lösning."
-3. Sök efter "Aspose.Email" och installera paketet.
+1. Open your project in Visual Studio.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-## Laddar e-postmeddelanden
+## Loading Email Messages
 
-Ladda e-postmeddelanden med Aspose.Email:
+Load emails using Aspose.Email:
 
 ```csharp
 using Aspose.Email;
-// Andra relevanta med påståenden
+// Other relevant using statements
 
-// Ladda ett e-postmeddelande
+// Load an email
 MailMessage message = MailMessage.Load("email.eml");
 ```
 
-## Implementera Bayesian Spam Analysis
+## Implementing Bayesian Spam Analysis
 
-Skapa en Bayesiansk skräppostanalysmodell:
+Create a Bayesian spam analysis model:
 
 ```csharp
-using Aspose.Email.Spam;
-
-// Skapa en skräppostanalysator
-BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
+using Aspose.Email.AntiSpam;
+string spamFilterDatabase = "SpamFilterDatabase.txt";
+// Create a spam analyzer
+SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 ```
 
-## Utbildning av modellen
+## Training the Model
 
-Träna modellen med exempel på spam och skinka (icke-spam) e-postmeddelanden:
+Train the model with sample spam and ham (non-spam) emails:
 
 ```csharp
-// Träna med spam och skinka mejl
-spamAnalyzer.Train("spam1.eml", true);
-spamAnalyzer.Train("ham1.eml", false);
+// Train with spam and ham emails
+spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+spamAnalyzer.SaveDatabase(spamFilterDatabase);
 ```
 
-## Tillämpa Bayesiansk analys
+## Applying Bayesian Analysis
 
-Använd Bayesiansk analys för att bedöma om ett e-postmeddelande är spam:
+Apply Bayesian analysis to assess if an email is spam:
 
 ```csharp
-// Analysera ett mejl
-double spamProbability = spamAnalyzer.Analyze(message);
+// Analyze an email
+double spamProbability = spamAnalyzer.Test(message);
 bool isSpam = spamProbability > 0.5;
 ```
 
-## Hantering av undantag
+## Handling Exceptions
 
-Hantera undantag under analysprocessen:
+Handle exceptions during the analysis process:
 
 ```csharp
 try
 {
-    // Bayesiansk analyskod
+    // Bayesian analysis code
 }
 catch (Exception ex)
 {
-    // Hantera undantag
+    // Handle exceptions
 }
 ```
 
-## Exempelkod
+## Sample Code
 
-Här är ett exempel på ett kodavsnitt som visar Bayesiansk skräppostanalys i C# med Aspose.Email för .NET:
+Here's a sample code snippet demonstrating Bayesian spam analysis in C# using Aspose.Email for .NET:
 
 ```csharp
 using System;
@@ -104,49 +105,50 @@ namespace BayesianSpamAnalysisDemo
     {
         static void Main(string[] args)
         {
-            // Ladda ett e-postmeddelande
+            // Load an email
             MailMessage message = MailMessage.Load("email.eml");
+			string spamFilterDatabase = "SpamFilterDatabase.txt";
+            // Create a spam analyzer
+            SpamAnalyzer spamAnalyzer = new SpamAnalyzer();
 
-            // Skapa en skräppostanalysator
-            BayesianSpamAnalyzer spamAnalyzer = new BayesianSpamAnalyzer();
-
-            // Träna modellen
-            spamAnalyzer.Train("spam1.eml", true);
-            spamAnalyzer.Train("ham1.eml", false);
-
-            // Analysera mejlet
-            double spamProbability = spamAnalyzer.Analyze(message);
+            // Train the model
+			spamAnalyzer.TrainFilter( MailMessage.Load("spam1.eml"), true);
+			spamAnalyzer.TrainFilter( MailMessage.Load("ham1.eml"), false);
+			spamAnalyzer.SaveDatabase(spamFilterDatabase);
+            // Analyze the email
+			spamAnalyzer.LoadDatabase(spamFilterDatabase);
+            double spamProbability = spamAnalyzer.Test(message);
             bool isSpam = spamProbability > 0.5;
 
-            // Visa resultatet
+            // Display the result
             Console.WriteLine($"Is Spam: {isSpam}");
         }
     }
 }
 ```
 
-## Slutsats
+## Conclusion
 
-den här guiden undersökte vi hur man implementerar Bayesiansk skräppostanalys i C# med Aspose.Email för .NET. Den här tekniken förbättrar e-postfiltreringen och separerar effektivt skräppost från legitima meddelanden.
+In this guide, we explored how to implement Bayesian spam analysis in C# using Aspose.Email for .NET. This technique enhances email filtering, effectively separating spam from legitimate messages.
 
-## Vanliga frågor
+## FAQs
 
-### Är Bayesiansk skräppostanalys korrekt för olika språk?
+### Is Bayesian spam analysis accurate for different languages?
 
-Ja, Bayesiansk analys kan anpassas för olika språk genom att träna modellen med lämpliga språkspecifika spam- och hamexempel.
+Yes, Bayesian analysis can be adapted for different languages by training the model with appropriate language-specific spam and ham examples.
 
-### Kan jag finjustera modellen för specifika e-postdomäner?
+### Can I fine-tune the model for specific email domains?
 
-Absolut, utbildning av modellen med domänspecifika e-postmeddelanden kan förbättra noggrannheten för upptäckt av skräppost.
+Absolutely, training the model with domain-specific emails can improve spam detection accuracy.
 
-### Är Aspose.Email lämplig för massbearbetning av e-post?
+### Is Aspose.Email suitable for bulk email processing?
 
-Ja, Aspose.Email kan effektivt hantera massbearbetning av e-post, inklusive Bayesiansk skräppostanalys.
+Yes, Aspose.Email can efficiently handle bulk email processing, including Bayesian spam analysis.
 
-### Vad händer om mina e-postmeddelanden har bilagor?
+### What if my emails have attachments?
 
-Aspose.Emails Bayesianska skräppostanalys tar hänsyn till både e-postinnehåll och bilagor.
+Aspose.Email's Bayesian spam analysis considers both email content and attachments.
 
-### Var kan jag hitta omfattande dokumentation för Aspose.Email för .NET?
+### Where can I find comprehensive documentation for Aspose.Email for .NET?
 
- För omfattande dokumentation, exempel och resurser, besök[Aspose.Email för .NET API-referens](https://reference.aspose.com/email/net) sida.
+For comprehensive documentation, examples, and resources, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net) page.

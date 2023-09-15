@@ -1,107 +1,75 @@
 ---
-title: 使用 C# 从 NSF 存储读取消息
-linktitle: 使用 C# 从 NSF 存储读取消息
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解如何使用 C# 和 Aspose.Email for .NET 读取 NSF 存储消息。带有代码示例的分步指南。
+title: Reading Messages from NSF Storage using C#
+linktitle: Reading Messages from NSF Storage using C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn how to read NSF storage messages using C# and Aspose.Email for .NET. A step-by-step guide with code examples.
 type: docs
 weight: 11
 url: /zh/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
 
-## 使用 C# 从 NSF 存储读取消息的简介
+## Introduction to Reading Messages from NSF Storage using C#
 
-在软件开发领域，高效的数据处理至关重要。当涉及到电子邮件管理时，特别是处理 Notes 存储格式 (NSF) 文件时，拥有可靠的方法来读取消息至关重要。本文将逐步指导您如何在 Aspose.Email for .NET 的帮助下使用 C# 从 NSF 存储中读取消息。 Aspose.Email 是一个功能强大的库，可以简化电子邮件文件格式的处理，使其成为此任务的绝佳选择。
+In the world of software development, efficient data handling is paramount. When it comes to email management, particularly dealing with Notes Storage Format (NSF) files, having a reliable method to read messages is essential. This article will guide you step by step on how to read messages from NSF storage using C# with the help of Aspose.Email for .NET. Aspose.Email is a powerful library that simplifies working with email file formats, making it an excellent choice for this task.
 
-## 先决条件
+## Prerequisites
 
-在我们深入编码过程之前，请确保您已设置以下先决条件：
+Before we dive into the coding process, ensure that you have the following prerequisites set up:
 
-1. Visual Studio 或任何首选的 C# 开发环境。
-2.  Aspose.Email for .NET 库。您可以从以下位置下载：[这里](https://releases.aspose.com/email/net).
+1. Visual Studio or any preferred C# development environment.
+2. Aspose.Email for .NET library. You can download it from [here](https://releases.aspose.com/email/net).
 
-## 1. 设置项目
 
-首先在您选择的开发环境中创建一个新的 C# 控制台应用程序项目。然后，按照下列步骤操作：
+## Import Necessary Libraries
+- In your C# project, import the Aspose.Email and Aspose.Email.Storage.Nsf namespace:
+    ```csharp
+    using Aspose.Email;
+	Aspose.Email.Storage.Nsf;
+    ```
+
+## Step 3: Read Messages from Zimbra TGZ Storage
+Now, let's dive into the code. We'll use the provided sample code as a reference.
 
 ```csharp
-using Aspose.Email.Storage.Pst;
-```
+// The path to the File directory.
+string dataDir = "Your Document Directory";
 
-## 2. 加载NSF文件
-
-使用以下代码加载 NSF 文件：
-
-```csharp
-string nsfFilePath = "path/to/your/nsf/file.nsf";
-using (PersonalStorage nsf = PersonalStorage.FromFile(nsfFilePath))
+// Initialize the NotesStorageFacility with the path to your Zimbra TGZ storage.
+using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.nsf"))
 {
-    //访问消息的代码将位于此处
+    foreach (MailMessage eml in nsf.EnumerateMessages())
+    {
+        Console.WriteLine(eml.Subject);
+    }
 }
 ```
 
-## 3. 访问消息
+In this code snippet:
+- Replace `"Your Document Directory"` with the actual path to your Zimbra TGZ storage directory.
+- We use the `NotesStorageFacility` class to work with the Zimbra TGZ storage.
+- The `EnumerateMessages` method allows you to iterate through all the messages in the storage.
+- We print the subject of each message to the console. You can perform any desired operations with the messages at this point.
 
-迭代 NSF 文件中的消息并提取属性：
+## Step 4: Run Your Application
+Build and run your C# application. It will read and display the subjects of all messages from the Zimbra TGZ storage.
 
-```csharp
-FolderInfo inboxFolder = nsf.RootFolder.GetSubFolder("Inbox");
-foreach (MessageInfo messageInfo in inboxFolder.EnumerateMessages())
-{
-    string subject = messageInfo.Subject;
-    string sender = messageInfo.SenderEmailAddress;
-    DateTime date = messageInfo.DateTime;
-    
-    //显示或处理消息属性的代码
-}
-```
+## Conclusion
 
-## 4. 显示消息内容
+In this tutorial, you've learned how to read messages from a Zimbra TGZ storage using C# and Aspose.Email for .NET. It's a straightforward process that can be customized to suit your specific needs. Now you can efficiently work with Zimbra email data in your .NET applications.
 
-检索并处理邮件正文和附件：
+## FAQs
 
-```csharp
-MapiMessage message = nsf.ExtractMessage(messageInfo);
-string messageBody = message.BodyText;
-AttachmentCollection attachments = message.Attachments;
-foreach (var attachment in attachments)
-{
-    //处理附件的代码
-}
-```
+### 1. Can I use Aspose.Email for .NET with other email storage formats?
+Yes, Aspose.Email for .NET supports various email storage formats, including PST, MSG, EML, and more.
 
-## 5. 错误处理
+### 2. How do I handle attachments when reading Zimbra TGZ messages?
+You can access and process email attachments using Aspose.Email's API methods.
 
-实现错误处理来处理异常：
+### 3. Is there a trial version available for Aspose.Email for .NET?
+Yes, you can download a free trial version from the Aspose website.
 
-```csharp
-try
-{
-    //消息提取和处理代码
-}
-catch (Exception ex)
-{
-    Console.WriteLine("An error occurred: " + ex.Message);
-}
-```
+### 4. Can I use Aspose.Email for .NET in both Windows and .NET Core applications?
+Yes, Aspose.Email for .NET is compatible with both Windows and .NET Core.
 
-## 结论
-
-在本文中，我们学习了如何使用 C# 和 Aspose.Email for .NET 从 NSF 存储中读取消息。我们介绍了设置项目、加载 NSF 文件、访问消息属性、显示消息内容以及实现错误处理。 Aspose.Email for .NET 简化了这项任务，并使开发人员能够高效地处理电子邮件数据。
-
-## 常见问题解答
-
-### 如何获取 Aspose.Email for .NET 库？
-
-您可以从以下位置下载 Aspose.Email for .NET 库：[这里](https://releases.aspose.com/email/net).
-
-### 我可以使用 Aspose.Email 执行其他电子邮件相关任务吗？
-
-是的，Aspose.Email for .NET 提供了广泛的功能来处理各种电子邮件格式、附件等。
-
-### 我可以在商业项目中使用这个库吗？
-
-是的，您可以根据其许可条款在商业项目中使用 Aspose.Email for .NET。
-
-### Aspose.Email 多久更新一次？
-
-Aspose 定期更新其库以添加新功能、改进和错误修复。您可以查看他们的发行说明以获取更新。
+### 5. Are there any limitations when working with Zimbra TGZ storage using Aspose.Email for .NET?
+Aspose.Email for .NET provides robust capabilities for working with Zimbra TGZ storage, but be aware of the specific limitations mentioned in the documentation.

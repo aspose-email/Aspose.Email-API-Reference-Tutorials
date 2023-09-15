@@ -1,35 +1,35 @@
 ---
-title: C# 方法 - 提取解码的标头值
-linktitle: C# 方法 - 提取解码的标头值
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解使用 Aspose.Email for .NET 在 C# 中提取解码的电子邮件标头值。带有代码示例的综合指南。
+title: C# Approach - Extracting Decoded Header Values
+linktitle: C# Approach - Extracting Decoded Header Values
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
 type: docs
 weight: 17
 url: /zh/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-在本教程中，我们将指导您完成使用 Aspose.Email for .NET 从电子邮件中提取解码的标头值的过程。 Aspose.Email for .NET 是一个强大的库，使开发人员能够处理电子邮件的各个方面，包括阅读和操作电子邮件标头。
+In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
 
-## 第 1 步：下载并安装 Aspose.Email for .NET
+## Step 1: Download and Install Aspose.Email for .NET
 
-在开始之前，请确保您已安装 Aspose.Email for .NET。如果您还没有下载该库，您可以从以下链接下载该库：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net).
+Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [Download Aspose.Email for .NET](https://releases.aspose.com/email/net).
 
-## 第 2 步：创建一个新的 C# 项目
+## Step 2: Create a New C# Project
 
-首先在您首选的集成开发环境 (IDE) 或文本编辑器中创建一个新的 C# 项目。
+Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
 
-## 第 3 步：添加对 Aspose.Email 的引用
+## Step 3: Add a Reference to Aspose.Email
 
-为了在您的项目中使用Aspose.Email，您需要添加对`Aspose.Email`集会。就是这样：
+In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
 
-1. 在解决方案资源管理器中右键单击您的项目。
-2. 选择“添加”>“参考”。
-3. 在“参考管理器”窗口中，单击“浏览”或“浏览...”并导航到安装 Aspose.Email 的位置。
-4. 为您的项目选择适当的程序集（例如，`Aspose.Email.dll`）并单击“添加”。
+1. Right-click on your project in the Solution Explorer.
+2. Select "Add" > "Reference."
+3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
+4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
 
-## 步骤 4：提取解码后的标头值
+## Step 4: Extract Decoded Header Values
 
-现在让我们深入研究从电子邮件中提取解码后的标头值的代码。在此示例中，我们将重点提取“Subject”标头。
+Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
 
 ```csharp
 using Aspose.Email;
@@ -39,45 +39,41 @@ class Program
 {
     static void Main(string[] args)
     {
-        //加载电子邮件消息
-        using (var message = MailMessage.Load("path/to/your/email.eml"))
-        {
-            //提取并解码主题标头
-            string decodedSubject = HeaderDecoder.DecodeHeader(message.Subject);
-            
-            //打印解码后的主题标头
-            Console.WriteLine($"Decoded Subject: {decodedSubject}");
-        }
+        // Load the email message
+		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
+		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
+		Console.WriteLine(decodedValue);
+
     }
 }
 ```
 
-在上面的代码片段中，我们执行以下步骤：
+In the code snippet above, we perform the following steps:
 
-1. 我们导入必要的命名空间（`Aspose.Email`和`Aspose.Email.Mail`）。
-2. 我们创建一个`Main`方法作为我们应用程序的入口点。
-3. 内`Main`方法，我们使用`MailMessage.Load`从文件加载电子邮件消息的方法。代替`"path/to/your/email.eml"`与您要处理的电子邮件的实际路径。
-4. 我们使用`HeaderDecoder.DecodeHeader`方法来解码主题标头。
-5. 我们将解码后的主题标头打印到控制台。
+1. We import necessary namespaces (`Aspose.Email` and `Aspose.Email.Mail`).
+2. We create a `Main` method as the entry point of our application.
+3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
+4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
+5. We print the decoded Subject header to the console.
 
-## 第 5 步：运行应用程序
+## Step 5: Run the Application
 
-编译并运行您的应用程序。确保更换`"path/to/your/email.eml"`与您要处理的电子邮件的实际路径。应用程序将加载电子邮件，提取解码的主题标头，并将其显示在控制台中。
+Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
 
-## 常见问题解答
+## FAQs
 
-### 如何使用 Aspose.Email for .NET 解码其他电子邮件标头？
+### How can I decode other email headers using Aspose.Email for .NET?
 
-您可以使用以下命令解码各种电子邮件标头，例如“发件人”、“收件人”、“日期”等`HeaderDecoder.DecodeHeader`方法。只需提供标头值作为该方法的参数即可。
+You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
 
-### 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
+### Where can I find more information about Aspose.Email for .NET?
 
-有关详细文档和示例，请参阅[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net).
+For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
 
-### Aspose.Email for .NET 是否免费提供？
+### Is Aspose.Email for .NET available for free?
 
- Aspose.Email for .NET 是一个商业库。您可以通过以下方式探索其功能[下载免费试用版](https://releases.aspose.com/email/net).
+Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
 
-## 结论
+## Conclusion
 
-在本教程中，您学习了如何利用 Aspose.Email for .NET 从电子邮件中提取已解码的标头值。 Aspose.Email for .NET 提供了一套全面的工具，使开发人员能够有效地处理电子邮件，包括处理标头。
+In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.

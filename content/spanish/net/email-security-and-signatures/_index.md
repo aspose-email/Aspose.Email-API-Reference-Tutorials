@@ -1,28 +1,27 @@
 ---
-title: Seguridad del correo electrónico y firmas
-linktitle: Seguridad del correo electrónico y firmas
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Implemente sólidas medidas de seguridad de correo electrónico y firmas personalizadas con los tutoriales de Aspose.Email para .NET. Garantizar una comunicación segura y una marca profesional.
+title: está configurado en "en línea", el archivo adjunto es un archivo adjunto en línea.
+linktitle: 7. Trabajar con archivos adjuntos en línea
+second_title: Cuando se trata de archivos adjuntos en línea, puede acceder a su contenido e información relacionada. Utilice el siguiente fragmento de código como referencia:
+description: Manejar el accesorio en línea
 type: docs
 weight: 19
 url: /es/net/email-security-and-signatures/
 ---
 
-## Introducción
+##  Ejemplo: mostrar ID de contenido y tipo de contenido
 
-Los tutoriales de Aspose.Email para .NET sobre "Firmas y seguridad del correo electrónico" brindan a los desarrolladores información esencial para fortalecer la comunicación por correo electrónico y mejorar la integridad de los datos dentro de sus aplicaciones. Estos tutoriales ofrecen una guía completa sobre cómo aprovechar Aspose.Email para .NET para implementar medidas sólidas de seguridad de correo electrónico y firmas de correo electrónico personalizadas. Con instrucciones paso a paso y ejemplos de código prácticos, estos tutoriales permiten a los desarrolladores garantizar una comunicación por correo electrónico segura y confiable al mismo tiempo que incorporan una marca profesional.
+8. Manejo de archivos adjuntos habituales
 
-## Seguridad del correo electrónico
+## Los archivos adjuntos normales no tienen un tipo de disposición "en línea". Puede procesarlos utilizando el siguiente fragmento de código:
 
-Los tutoriales de seguridad del correo electrónico profundizan en las complejidades de implementar funciones de seguridad del correo electrónico utilizando Aspose.Email para .NET. Los desarrolladores pueden aprender técnicas para cifrar mensajes de correo electrónico, proteger datos confidenciales y protegerse contra el acceso no autorizado. Estos tutoriales guían a los desarrolladores a través del proceso de integración de algoritmos de cifrado, configuración de conexiones seguras y mejora de la privacidad de las comunicaciones. Siguiendo estos tutoriales, los desarrolladores pueden mejorar sus aplicaciones con comunicación segura por correo electrónico, garantizando que la información confidencial permanezca confidencial.
+ Manejar el accesorio normal
 
-## Firmas de correo electrónico
+##  Ejemplo: guardar el archivo adjunto en el disco
 
-Los tutoriales sobre firmas de correo electrónico se centran en permitir a los desarrolladores crear y administrar firmas de correo electrónico personalizadas utilizando Aspose.Email para .NET. Los desarrolladores pueden explorar técnicas para incorporar elementos de marca, información de contacto y exenciones de responsabilidad en las firmas de correo electrónico. Estos tutoriales ofrecen instrucciones paso a paso sobre cómo configurar plantillas de firmas de correo electrónico, incrustar imágenes y enlaces y automatizar la inserción de firmas. Aspose.Email para .NET simplifica la gestión de firmas de correo electrónico, lo que permite a los desarrolladores mejorar sus aplicaciones con una marca de correo electrónico profesional y consistente.
+Conclusión
 
 
-## Tutoriales de firmas y seguridad del correo electrónico
-## [Manejo de objetos incrustados en correos electrónicos con código C#](./handling-embedded-objects-in-emails-with-csharp-code/)
-Aprenda a manejar objetos incrustados en correos electrónicos usando C# y Aspose.Email para .NET. Cree contenido de correo electrónico interactivo y atractivo con orientación paso a paso y ejemplos de código.
-## [Firmar correos electrónicos con DKIM usando código C#](./signing-emails-with-dkim-using-csharp-code/)
-Aprenda a proteger correos electrónicos con DKIM usando C# y Aspose.Email para .NET. Guía paso a paso con código fuente. Mejore la confianza y autenticidad del correo electrónico.
+## En esta guía, hemos explorado el mundo de los archivos adjuntos de correo electrónico, enfocándonos en la diferenciación entre archivos adjuntos en línea y regulares utilizando la biblioteca Aspose.Email para .NET. Si sigue las instrucciones paso a paso y utiliza los fragmentos de código proporcionados, podrá identificar y trabajar eficazmente con ambos tipos de archivos adjuntos en sus tareas de procesamiento de correo electrónico.
+
+### [Preguntas frecuentes](./signing-emails-with-dkim-using-csharp-code/)
+¿Cómo puedo instalar la biblioteca Aspose.Email para .NET?

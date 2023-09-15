@@ -1,160 +1,92 @@
 ---
-title: 使用 C# 代码渲染日历事件
-linktitle: 使用 C# 代码渲染日历事件
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 学习使用 C# 和 Aspose.Email for .NET 呈现日历事件。轻松创建交互式时间表。
+title: 第 3 步：编写代码来验证电子邮件地址
+linktitle: 打开
+second_title: 文件并编写以下代码以使用 Aspose.Email 验证电子邮件地址：
+description: 用于验证的电子邮件地址
 type: docs
 weight: 15
 url: /zh/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
 
-## Aspose.Email NuGet 包的安装
 
-首先，请确保您已设置一个 .NET 项目。您可以在项目的包管理器控制台中使用以下命令来安装 Aspose.Email NuGet 包：
+创建 EmailValidator 类的实例
 
-```csharp
-Install-Package Aspose.Email
-```
+## 验证电子邮件地址
 
-## 初始化应用程序
+第 4 步：运行应用程序
 
-通过添加必要的 using 指令并创建一个实例来初始化应用程序中的 Aspose.Email 库`MailMessage`班级：
+## 通过按 F5 或单击 Visual Studio 中的“开始”按钮来构建并运行您的应用程序。该应用程序将执行并显示所提供的电子邮件地址是否有效。
 
-```csharp
-using Aspose.Email;
+常见问题解答
 
-//初始化应用程序
-MailMessage message = new MailMessage();
-```
+1. Aspose.Email 如何验证电子邮件地址？[Aspose.Email 使用正则表达式和语法检查的组合来验证电子邮件地址。它检查格式是否正确、域名有效以及构成有效电子邮件地址的其他特征。](https://releases.aspose.com/email/net/).
 
-## 加载日历数据
+2. 我可以自定义验证规则吗？
 
-## 创建日历实例
+3. 是的，您可以使用提供的属性和方法来自定义验证规则
 
-要使用日历事件，您需要创建一个实例`Calendar`Aspose.Email 库中的类：
+## 来自 Aspose.Email 库的类。请参阅
+
+Aspose.Email for .NET API 参考
 
 ```csharp
-Calendar calendar = new Calendar();
-```
-
-## 从 ICS 文件加载日历数据
-
-您可以使用以下命令从 ICS (iCalendar) 文件加载日历数据`CalendarReader`班级：
-
-```csharp
-CalendarReader reader = new CalendarReader("path/to/your/calendar.ics");
-Calendar loadedCalendar = reader.Read();
-```
-
-## 渲染日历事件
-
-## 创建渲染输出容器
-
-要呈现日历事件，您需要一个容器来保存输出。您可以使用以下命令创建 HTML 容器`HtmlView`班级：
-
-```csharp
-HtmlView htmlView = new HtmlView();
-```
-
-## 应用渲染选项
-
-在渲染之前，您可以应用各种选项来自定义输出的外观。例如，您可以设置渲染的开始和结束日期：
-
-```csharp
-htmlView.CalendarStart = DateTime.Today;
-htmlView.CalendarEnd = DateTime.Today.AddDays(7);
-```
-
-## 渲染日历事件
-
-使用渲染日历事件`Render`方法：
-
-```csharp
-string renderedOutput = htmlView.Render(calendar);
-```
-
-## 定制化
-
-## 设置渲染输出的样式
-
-您可以通过修改 HTML 容器的 CSS 属性来设置渲染输出的样式：
-
-```csharp
-htmlView.Styles = "body { font-family: Arial, sans-serif; }";
-```
-
-## 添加事件详细信息
-
-通过添加事件详细信息（例如事件名称和描述）来增强渲染输出：
-
-```csharp
-htmlView.EventFormatter = (eventInfo) =>
+//更多细节。
+string dataDir = "Your Data Directory";
+string fileName = "Meeting with Recurring Occurrences.msg";
+MailMessage msg = MailMessage.Load(dataDir + fileName);
+MhtSaveOptions options = new MhtSaveOptions();
 {
-    return $"<b>{eventInfo.StartDate}: {eventInfo.Summary}</b><br>{eventInfo.Description}<br><br>";
+    options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent;
+
+    //在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
+
+    //您可以在以下位置找到 Aspose.Email for .NET 的综合文档和代码示例：
+    if (options.FormatTemplates.ContainsKey(MhtTemplateName.Start))
+        options.FormatTemplates[MhtTemplateName.Start] = @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>"; 
+    else
+        options.FormatTemplates.Add(MhtTemplateName.Start, @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
+
+    //Aspose.Email for .NET API 参考
 };
+
+msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
 ```
 
-## 处理用户交互
+## 网站。
 
-## 响应用户点击
+结论
 
-您可以通过响应用户单击来使呈现的事件具有交互性。例如，单击事件时打开事件详细信息：
+- 在本指南中，您学习了如何使用 C# 代码和 Aspose.Email for .NET 验证电子邮件地址。通过遵循提供的步骤，您可以轻松地将电子邮件地址验证集成到您的应用程序中，确保用户提供的电子邮件地址格式正确且有效。`MailMessage.Load` method.
 
-```csharp
-htmlView.EventClick += (sender, eventArgs) =>
-{
-    EventInfo clickedEvent = eventArgs.Event;
-    //在这里处理事件点击逻辑
-};
-```
+- We create an `MhtSaveOptions` object to specify how we want to save the output.
 
-## 浏览事件
+- In the `options.MhtFormatOptions`, we specify that we want to render calendar event information.
 
-使用户能够使用导航按钮浏览事件：
+- We then have the option to format the output details for various properties like Start, End, Recurrence, RecurrencePattern, Organizer, and RequiredAttendees.
 
-```csharp
-htmlView.ShowNavigation = true;
-```
+- Finally, we save the rendered calendar event as an MHTML file.
 
-## 错误处理
+## Conclusion
 
-## 处理加载和渲染错误
+In this tutorial, we've explored how to render calendar events using C# code with Aspose.Email for .NET. Aspose.Email provides a straightforward and efficient way to work with calendar events, making it an excellent choice for managing scheduling tasks in your applications.
 
-加载和呈现日历数据时处理潜在错误非常重要：
+Now you can harness the power of Aspose.Email for .NET to handle calendar events seamlessly, improving your productivity and enhancing your scheduling capabilities.
 
-```csharp
-try
-{
-    Calendar loadedCalendar = reader.Read();
-    string renderedOutput = htmlView.Render(loadedCalendar);
-}
-catch (Exception ex)
-{
-    //处理加载或渲染错误
-}
-```
+## FAQs
 
-## 结论
+1. What is Aspose.Email for .NET?
+   Aspose.Email for .NET is an API that allows developers to work with email messages and calendar events in various formats within .NET applications.
 
-在本文中，我们探讨了如何使用 C# 代码和 Aspose.Email for .NET 库呈现日历事件。您已经了解了如何初始化应用程序、从 ICS 文件加载日历数据、自定义呈现、处理用户交互以及管理潜在错误。通过执行这些步骤，您可以将日历功能无缝集成到您的应用程序中，为用户提供丰富的交互式体验。
+2. Where can I download Aspose.Email for .NET?
+   You can download Aspose.Email for .NET from [here](https://releases.aspose.com/email/net/).
 
-## 常见问题解答
+3. Can I customize the formatting of calendar event details?
+   Yes, you can customize the formatting of calendar event details as shown in the code example.
 
-### 如何安装 Aspose.Email NuGet 包？
+4. Is Aspose.Email suitable for working with Outlook data?
+   Yes, Aspose.Email is ideal for working with Outlook PST files and Exchange Server data.
 
-您可以使用以下命令安装 Aspose.Email NuGet 包：
-```csharp
-Install-Package Aspose.Email
-```
+5. Are there any other features in Aspose.Email for .NET?
+   Yes, Aspose.Email offers a wide range of features for email management, including sending, receiving, and processing emails.
 
-### 我可以自定义渲染输出的样式吗？
-
-是的，您可以通过修改 HTML 容器的 CSS 属性来自定义呈现输出的样式。
-
-### 是否可以使渲染的日历事件具有交互性？
-
-绝对地！您可以通过响应用户点击和添加导航功能来使呈现的日历事件具有交互性。
-
-### 加载或呈现日历数据时如何处理错误？
-
-您可以使用 try-catch 块来处理加载或呈现日历数据时的潜在错误。即使出现意外问题，这也可确保流畅的用户体验。
+Feel free to explore the [Aspose.Email API documentation](https://reference.aspose.com/email/net/) for more details and advanced usage scenarios. Happy coding!

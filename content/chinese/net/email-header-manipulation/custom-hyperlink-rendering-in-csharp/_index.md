@@ -1,104 +1,120 @@
 ---
-title: C# 中的自定义超链接渲染
-linktitle: C# 中的自定义超链接渲染
-second_title: Aspose.Email .NET 电子邮件处理 API
-description: 了解使用 Aspose.Email for .NET 在 C# 中自定义超链接呈现。使用自定义超链接样式创建个性化电子邮件内容。
+title: Custom Hyperlink Rendering in C#
+linktitle: Custom Hyperlink Rendering in C#
+second_title: Aspose.Email .NET Email Processing API
+description: Learn to customize hyperlink rendering in C# using Aspose.Email for .NET. Create personalized email content with custom hyperlink styles.
 type: docs
 weight: 13
 url: /zh/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/
 ---
 
-本指南将引导您使用 Aspose.Email for .NET 在 C# 中完成自定义超链接渲染的过程。 Aspose.Email for .NET 是一个功能强大的库，使您能够处理电子邮件，包括创建、阅读和操作电子邮件等各种功能。在本教程中，我们将重点介绍如何使用该库自定义电子邮件中的超链接呈现。
+In the world of email communications, making hyperlinks stand out and look appealing is crucial for grabbing the reader's attention. As a proficient SEO writer, I will guide you through the process of custom hyperlink rendering in C# using Aspose.Email for .NET. We'll explore how to enhance the appearance of hyperlinks in your email messages, making them more engaging for your recipients.
 
-## 先决条件
+## Introduction
 
-在开始之前，请确保您具备以下先决条件：
+Emails often contain hyperlinks that direct users to websites or other resources. By default, these hyperlinks appear as plain text in the email body. However, with Aspose.Email for .NET, you can customize the rendering of hyperlinks, adding style and enhancing their visibility.
 
-- Visual Studio 或任何其他 C# 开发环境
--  Aspose.Email for .NET 库（您可以从[这里](https://releases.aspose.com/email/net）)
-- C# 编程和电子邮件概念的基础知识
+## Setting Up the Environment
 
-## 脚步
-
-请按照以下步骤使用 Aspose.Email for .NET 在 C# 中实现自定义超链接渲染：
-
-### 第 1 步：创建一个新的 C# 项目
-
-打开 C# 开发环境（例如 Visual Studio）并创建一个新项目。
-
-### 第2步：添加对Aspose.Email的引用
-
-在项目中添加对 Aspose.Email for .NET 库的引用。您可以通过在解决方案资源管理器中右键单击您的项目，选择“添加”>“引用”，然后浏览到保存 Aspose.Email DLL 的位置来完成此操作。
-
-### 第 3 步：初始化 MailMessage 对象
-
-创建一个新实例`MailMessage`来自 Aspose.Email 库的类。此类代表一封电子邮件。
+Before we dive into the code, let's ensure we have everything set up correctly. You'll need to have Aspose.Email for .NET installed and create a C# project. Make sure to include the necessary Aspose.Email references.
 
 ```csharp
 using Aspose.Email;
+using System;
+using System.IO;
 
-//...
-
-MailMessage message = new MailMessage();
-```
-
-### 第 4 步：创建超链接
-
-创建一个`Hyperlink`对象并设置其属性，例如 URL 和显示文本。
-
-```csharp
-Hyperlink hyperlink = new Hyperlink("https://www.example.com”、“访问我们的网站”）；
-```
-
-### 第 5 步：自定义超链接渲染
-
-使用以下命令自定义超链接的呈现`TextFormattingCallback`财产。此属性允许您指定渲染超链接时将调用的回调函数。
-
-```csharp
-message.TextFormattingCallback = (sender, args) =>
+namespace CustomHyperlinkRendering
 {
-    if (args.Hyperlink != null)
+    class Program
     {
-        //在此自定义超链接呈现
-        string formattedText = $"[CustomLink: {args.Hyperlink.Text}]({args.Hyperlink.Uri})";
-        args.FormattedText = formattedText;
-        args.IsHandled = true; //表明自定义渲染完成
+        static void Main(string[] args)
+        {
+            // Set your data directory path
+            string dataDir = "Your Data Directory";
+            var fileName = dataDir + "LinksSample.eml";
+            MailMessage msg = MailMessage.Load(fileName);
+
+            // Render hyperlinks with href
+            string renderedHtmlWithHref = RenderHyperlinkWithHref(msg.GetHtmlBodyText());
+
+            // Render hyperlinks without href
+            string renderedHtmlWithoutHref = RenderHyperlinkWithoutHref(msg.GetHtmlBodyText());
+
+            Console.WriteLine("Hyperlinks with Href:");
+            Console.WriteLine(renderedHtmlWithHref);
+
+            Console.WriteLine("Hyperlinks without Href:");
+            Console.WriteLine(renderedHtmlWithoutHref);
+        }
+
+        // Custom hyperlink rendering methods will be implemented here
     }
-};
+}
 ```
 
-在上面的代码中，回调函数接收`Hyperlink`对象并可以操纵其属性来自定义渲染。在此示例中，我们使用 Markdown 样式语法来格式化超链接。
+## Rendering Hyperlinks with Href
 
-### 步骤 6：将超链接添加到电子邮件正文
-
-将自定义的超链接添加到电子邮件正文。
+In the provided source code, we have two methods: `RenderHyperlinkWithHref` and `RenderHyperlinkWithoutHref`. Let's begin with the first one, which renders hyperlinks along with the `href` attribute.
 
 ```csharp
-message.HtmlBody = "Please click the following link: [CustomLink: Visit our website](https://www.example.com）”；
+private static string RenderHyperlinkWithHref(string source)
+{
+    int start = source.IndexOf("href=\"") + "href=\"".Length;
+    int end = source.IndexOf("\"", start + "href=\"".Length);
+    string href = source.Substring(start, end - start);
+    start = source.IndexOf(">") + 1;
+    end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    string link = string.Format("{0}<{1}>", text, href);
+    return link;
+}
 ```
 
-### 第 7 步：保存或发送电子邮件
+This method extracts the `href` attribute and the link text from the HTML source and combines them to create a custom hyperlink.
 
-您现在可以将电子邮件保存到文件或使用您选择的 SMTP 服务器发送。
+## Rendering Hyperlinks without Href
+
+Now, let's move on to the `RenderHyperlinkWithoutHref` method, which renders hyperlinks without the `href` attribute.
 
 ```csharp
-message.Save("custom_hyperlink_email.eml", SaveOptions.DefaultEml);
+private static string RenderHyperlinkWithoutHref(string source)
+{
+    int start = source.IndexOf(">") + 1;
+    int end = source.IndexOf("<", start);
+    string text = source.Substring(start, end - start);
+    return text;
+}
 ```
 
-## 常见问题解答
+This method extracts the link text directly from the HTML source, excluding the `href` attribute.
 
-### 如何进一步自定义超链接呈现？
+## Conclusion
 
-您可以通过修改步骤 5 中的回调函数来进一步自定义超链接呈现。您可以更改格式、应用 CSS 样式，甚至创建复杂的 HTML 结构来呈现超链接。
+Custom hyperlink rendering in C# using Aspose.Email for .NET allows you to add style and uniqueness to the hyperlinks in your email messages. Whether you want to make hyperlinks more visually appealing or simply extract the text, Aspose.Email provides the tools you need.
 
-### 我可以自定义纯文本电子邮件中的超链接吗？
+Enhance your email communications by customizing hyperlinks with Aspose.Email for .NET, and engage your recipients more effectively.
 
-是的你可以。在第 5 步中，您可以检查`args.IsHtml`属性来确定呈现的是 HTML 电子邮件还是纯文本电子邮件。然后，您可以相应地应用您的自定义。
+For more information and access to the source code, visit the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
 
-### 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
+---
 
-您可以在以下位置找到 Aspose.Email for .NET 的详细文档和代码示例[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net).
+## FAQs
 
-## 结论
+### 1. What is Aspose.Email for .NET?
+   Aspose.Email for .NET is a powerful library that enables developers to work with email messages in their .NET applications. It provides a wide range of features for creating, parsing, and manipulating emails.
 
-在本教程中，您学习了如何使用 Aspose.Email for .NET 在 C# 中自定义超链接呈现。通过利用`TextFormattingCallback`属性，您可以完全控制超链接在电子邮件中的显示方式。这使您可以创建具有视觉吸引力和个性化的电子邮件内容。
+### 2. Can I customize the appearance of hyperlinks in email messages with Aspose.Email for .NET?
+   Yes, you can customize the rendering of hyperlinks in email messages using Aspose.Email for .NET, as demonstrated in this article.
+
+### 3. Are there any limitations to custom hyperlink rendering in Aspose.Email for .NET?
+   While you can enhance the appearance of hyperlinks, keep in mind that excessive customization may not be supported by all email clients. Test your email messages in various clients to ensure compatibility.
+
+### 4. Where can I find more resources and examples for using Aspose.Email for .NET?
+   You can explore additional resources and code examples in the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+### 5. How can I access the sample source code used in this article?
+   You can access the sample source code for custom hyperlink rendering in C# using Aspose.Email for .NET by visiting the provided documentation link: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+---
+
+In this comprehensive guide, we've explored custom hyperlink rendering in C# using Aspose.Email for .NET, enabling you to create engaging email messages with beautifully styled hyperlinks. Don't miss the opportunity to enhance your email communications and make your messages stand out. Access the provided link to get started on your journey to more captivating emails.

@@ -1,86 +1,90 @@
 ---
-title: Ajout de nouvelles pièces jointes TNEF en C#
-linktitle: Ajout de nouvelles pièces jointes TNEF en C#
-second_title: API de traitement des e-mails Aspose.Email .NET
-description: Découvrez comment ajouter de nouvelles pièces jointes TNEF en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec des exemples de code pour une intégration transparente.
+title: Comment télécharger Aspose.Email pour .NET ?
+linktitle: Vous pouvez télécharger la dernière version d'Aspose.Email pour .NET à partir du
+second_title: Page de téléchargement d'Aspose.Email pour .NET
+description: Aspose.Email pour .NET est-il compatible avec d’autres formats liés à Outlook ?
 type: docs
 weight: 12
 url: /fr/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
-## Introduction aux pièces jointes TNEF et à Aspose.Email pour .NET
+## Oui, Aspose.Email pour .NET offre une prise en charge complète de divers formats liés à Outlook, notamment PST, EML, MSG, etc.
 
-Les pièces jointes TNEF (Transport Neutral Encapsulation Format) sont un format propriétaire utilisé par Microsoft Outlook pour regrouper du texte enrichi et des pièces jointes dans les e-mails. Aspose.Email for .NET est une bibliothèque puissante qui vous permet de travailler avec des e-mails dans différents formats, y compris les pièces jointes TNEF, en utilisant C#.
+Puis-je utiliser Aspose.Email pour .NET dans des projets commerciaux et personnels ?
 
-## Configuration de votre environnement de développement
+## Oui, Aspose.Email pour .NET peut être utilisé dans des projets commerciaux et personnels. Assurez-vous de consulter les conditions de licence sur le site Web Aspose.
 
-Avant de nous lancer dans le codage, assurez-vous d’avoir configuré un environnement de développement. Installez Visual Studio et créez un nouveau projet C#.
+Aspose.Email for .NET propose-t-il une documentation aux développeurs ?
 
-## Créer un nouveau projet
+##  Oui, vous pouvez trouver une documentation détaillée et des exemples de code sur la façon d'utiliser Aspose.Email pour .NET dans divers scénarios sur le site Web.
 
-Commencez par créer un nouveau projet C# dans Visual Studio. Choisissez un nom et un emplacement de projet appropriés.
+Documentation Aspose.Email
 
-## Ajout de la bibliothèque Aspose.Email pour .NET
+##  page.
 
-Pour travailler avec des e-mails et des pièces jointes TNEF, nous devons ajouter la bibliothèque Aspose.Email for .NET à notre projet. Vous pouvez le faire en utilisant NuGet Package Manager dans Visual Studio. Recherchez « Aspose.Email » et installez le package approprié.
+ Préserver les limites d'origine à l'aide du code C#
 
-## Chargement d'un e-mail existant avec une pièce jointe TNEF
+##  Préserver les limites d'origine à l'aide du code C#
 
-Pour commencer, chargeons un e-mail existant contenant une pièce jointe TNEF. Vous devrez fournir le chemin d'accès au fichier de courrier électronique.
+ API de traitement des e-mails Aspose.Email .NET
 
 ```csharp
 using Aspose.Email.Mail;
 
-// Charger l'e-mail avec la pièce jointe TNEF
-var message = MailMessage.Load("path/to/email.eml");
+// Découvrez comment préserver les limites d'origine des pièces jointes aux e-mails à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.
+MsgLoadOptions options = new MsgLoadOptions();
+options.PreserveTnefAttachments = true;
+var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Extraction et modification des pièces jointes TNEF
+## Introduction à la préservation des limites d'origine
 
-Une fois l'e-mail chargé, vous pouvez extraire la pièce jointe TNEF et la modifier si nécessaire.
+Dans le monde des affaires moderne, la communication par courrier électronique joue un rôle central. Au fur et à mesure que les e-mails sont échangés, ils contiennent souvent des pièces jointes cruciales qui doivent être gérées et manipulées par programme. Cependant, lorsque vous travaillez avec des pièces jointes à des e-mails, il est essentiel de garantir que les limites et le formatage d'origine de ces pièces jointes sont préservés. C'est là qu'Aspose.Email pour .NET entre en jeu.
 
 ```csharp
-// Parcourir les pièces jointes
+//Conditions préalables
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extraire la pièce jointe TNEF
-        var tnefAttachment = (TnefAttachment)attachment;
+        //Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
+        var tnefAttachment = attachment;
 
-        // Accéder aux propriétés du TNEF et modifier si nécessaire
-        // tnefAttachment.Propriétés...
+        //Visual Studio installé
+        //Projet .NET Framework ou .NET Core
     }
 }
 ```
 
-## Enregistrement de l'e-mail avec les pièces jointes modifiées
+## Installation
 
-Après avoir modifié la pièce jointe TNEF, vous pouvez réenregistrer l'e-mail dans un fichier.
+Pour commencer, vous devez installer la bibliothèque Aspose.Email pour .NET. Vous pouvez le faire en suivant ces étapes :
 
 ```csharp
-// Enregistrez l'e-mail modifié
-message.Save("path/to/modified_email.eml");
+//Ouvrez votre projet Visual Studio.
+EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
+emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
+message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Conclusion
+## Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions.
 
-Dans cet article, nous avons expliqué comment utiliser les pièces jointes TNEF en C# à l'aide d'Aspose.Email pour .NET. Vous avez appris à charger un e-mail avec des pièces jointes TNEF, à extraire et modifier ces pièces jointes, puis à enregistrer l'e-mail modifié.
+Sélectionnez « Gérer les packages NuGet ».
 
-## FAQ
+## Recherchez « Aspose.Email » et installez le package.
 
-### Comment puis-je installer Aspose.Email pour .NET ?
+### Chargement des messages électroniques
 
-Vous pouvez installer Aspose.Email pour .NET à l'aide de NuGet Package Manager. Recherchez simplement « Aspose.Email » et installez le package approprié.
+La première étape consiste à charger le message électronique contenant la pièce jointe avec laquelle vous souhaitez travailler. Voici comment procéder :
 
-### Puis-je travailler avec d’autres formats de courrier électronique à l’aide d’Aspose.Email pour .NET ?
+###  Charger le message électronique
 
-Oui, Aspose.Email pour .NET prend en charge divers formats de courrier électronique, notamment EML, MSG, PST, etc.
+Extraction des pièces jointes
 
-### Puis-je utiliser Aspose.Email pour des projets commerciaux ?
+### Une fois le message électronique chargé, vous pouvez en extraire les pièces jointes :
 
-Oui, vous pouvez utiliser Aspose.Email pour .NET dans des projets personnels et commerciaux, à condition que vous disposiez de la licence appropriée.
+ Extraire les données des pièces jointes
 
-### Où puis-je trouver plus de documentation et d'exemples ?
+###  Traitement ultérieur...
 
- Pour une documentation plus détaillée et des exemples de code, vous pouvez visiter le[Aspose.Email pour la documentation .NET](https://reference.aspose.com/email/net/).
+Modification des pièces jointes[Pour conserver les limites d'origine lors de la modification des pièces jointes, vous pouvez utiliser les fonctionnalités de la bibliothèque Aspose.Email. Supposons que vous souhaitiez redimensionner une pièce jointe :](https://reference.aspose.com/email/net/).
