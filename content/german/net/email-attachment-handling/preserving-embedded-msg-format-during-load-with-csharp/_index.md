@@ -12,7 +12,7 @@ In der heutigen digitalen Welt spielt die E-Mail-Kommunikation sowohl im private
 
 ## Einführung
 
-Bei der Arbeit mit EML-Dateien ist es wichtig, deren ursprüngliche Grenzen beizubehalten, um die Integrität des E-Mail-Inhalts sicherzustellen. Aspose.Email für .NET bietet hierfür eine einfache und effiziente Möglichkeit. Wir führen Sie durch den Prozess, beginnend mit dem erforderlichen Code-Snippet.
+Bei der Arbeit mit EML-Dateien ist es wichtig, ihre ursprünglichen Grenzen beizubehalten, um die Integrität des E-Mail-Inhalts sicherzustellen. Aspose.Email für .NET bietet hierfür eine einfache und effiziente Möglichkeit. Wir führen Sie durch den Prozess, beginnend mit dem erforderlichen Code-Snippet.
 
 ## Voraussetzungen
 
@@ -55,7 +55,7 @@ Jetzt können Sie sicher mit EML-Dateien arbeiten, ihre ursprünglichen Grenzen 
 
 ### Warum ist es wichtig, die ursprünglichen Grenzen von EML-Dateien beizubehalten?
    
-Durch die Beibehaltung der ursprünglichen Grenzen wird sichergestellt, dass die Struktur der E-Mail, einschließlich Anhängen und Formatierung, bei der programmgesteuerten Arbeit mit EML-Dateien erhalten bleibt.
+Durch die Beibehaltung der ursprünglichen Grenzen wird sichergestellt, dass die Struktur der E-Mail, einschließlich Anhängen und Formatierung, bei der programmgesteuerten Arbeit mit EML-Dateien intakt bleibt.
 
 ### Kann ich Aspose.Email für .NET mit anderen Programmiersprachen verwenden?
 

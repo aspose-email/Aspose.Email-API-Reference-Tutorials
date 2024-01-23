@@ -65,7 +65,7 @@ import com.aspose.email.*;
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Crea una nuova istanza di SmtpClient
+            // Creare una nuova istanza di SmtpClient
             SmtpClient client = new SmtpClient();
 
             //Specificare le impostazioni del server SMTP

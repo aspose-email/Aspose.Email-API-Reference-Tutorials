@@ -20,7 +20,7 @@ Başlamak için Aspose.Email for .NET'in geliştirme ortamınızda kurulu olduğ
 
 Kurulum tamamlandıktan sonra yeni bir C# projesi oluşturun ve Aspose.Email derlemesine bir referans ekleyin. Bu adım, ihtiyacımız olan işlevselliğe erişmek için çok önemlidir.
 
-## Adım 3: Kodu Yazma
+## 3. Adım: Kodu Yazma
 
 Şimdi kod uygulamasına geçelim. Amacımızı gerçekleştiren kod aşağıdadır:
 
@@ -51,7 +51,7 @@ Bu kodda öncelikle e-posta mesajını yükleyip MHTML kaydetme seçeneklerini y
 
 ## Adım 4: Sonuç
 
-Özetlemek gerekirse, Aspose.Email for .NET, geliştiricilere, MHTML e-postalarındaki bilgilerin sırasını özelleştirme de dahil olmak üzere, e-posta içeriğini verimli bir şekilde yönetme olanağı sağlar. Sağlanan kod pasajı bu görevi basitleştirerek onu erişilebilir ve etkili hale getirir.
+Özetlemek gerekirse, Aspose.Email for .NET geliştiricilere, MHTML e-postalarındaki bilgilerin sırasını özelleştirme de dahil olmak üzere, e-posta içeriğini verimli bir şekilde yönetme olanağı sağlar. Sağlanan kod pasajı bu görevi basitleştirerek onu erişilebilir ve etkili hale getirir.
 
 Etkili e-posta yönetiminin çok önemli olduğu bir dünyada Aspose.Email for .NET, geliştiriciler için paha biçilmez bir araç olduğunu kanıtlıyor.
 

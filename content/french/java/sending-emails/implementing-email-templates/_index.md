@@ -109,7 +109,7 @@ public class EmailTemplate {
    - Un modèle d'e-mail est une structure d'e-mail prédéfinie avec des espaces réservés pour le contenu dynamique. Il permet une communication par courrier électronique personnalisée et cohérente.
 
 ### 2. Comment puis-je utiliser des espaces réservés dans un modèle d'e-mail ?
-   -  Vous pouvez utiliser des espaces réservés comme`{{variable_name}}` dans votre modèle d'e-mail, puis remplacez-les par le contenu réel dans votre code Java.
+   -  Vous pouvez utiliser des espaces réservés comme`{{variable_name}}` dans votre modèle d'e-mail, puis remplacez-les par le contenu réel de votre code Java.
 
 ### 3. Puis-je utiliser une logique conditionnelle dans les modèles d'e-mails ?
    - Oui, vous pouvez utiliser des instructions conditionnelles et des boucles dans votre code Java pour générer du contenu dynamique et appliquer une logique dans les modèles d'e-mails.

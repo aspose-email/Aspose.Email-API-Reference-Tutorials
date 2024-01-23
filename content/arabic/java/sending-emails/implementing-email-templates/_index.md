@@ -20,7 +20,7 @@ url: /ar/java/sending-emails/implementing-email-templates/
 
 2. **Aspose.Email for Java Library**: قم بتنزيل مكتبة Aspose.Email for Java من رابط التنزيل:
 
-   [Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
    أضف ملفات JAR التي تم تنزيلها إلى مسار فئة مشروع Java الخاص بك لمعالجة البريد الإلكتروني.
 

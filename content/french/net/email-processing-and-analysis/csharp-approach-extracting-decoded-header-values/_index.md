@@ -18,7 +18,7 @@ Dans ce didacticiel, nous vous guiderons tout au long du processus d'utilisation
 
 Commencez par créer un nouveau projet C# dans votre environnement de développement intégré (IDE) ou éditeur de texte préféré.
 
-## Étape 3 : Ajouter une référence à Aspose.Email
+## Étape 3 : ajouter une référence à Aspose.Email
 
  Pour utiliser Aspose.Email dans votre projet, vous devez ajouter une référence au`Aspose.Email` assemblée. Voici comment:
 

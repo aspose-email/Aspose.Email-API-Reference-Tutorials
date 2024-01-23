@@ -76,7 +76,7 @@ double spamProbability = spamAnalyzer.Test(message);
 bool isSpam = spamProbability > 0.5;
 ```
 
-## Ausnahmen behandeln
+## Umgang mit Ausnahmen
 
 Behandeln Sie Ausnahmen während des Analyseprozesses:
 

@@ -24,7 +24,7 @@ E-postexporthandledningarna fokuserar på att göra det möjligt för utvecklare
 ### [Anpassa MHTML-konvertering - C#-implementering](./customizing-mhtml-conversion-csharp-implementation/)
 Lär dig hur du anpassar MHTML-konvertering med Aspose.Email för .NET. Steg-för-steg-guide med C#-källkod.
 ### [Enkel e-postexport till EML med C#](./effortless-email-export-to-eml-using-csharp/)
-Exportera e-postmeddelanden enkelt till EML-format med C# och Aspose.Email för .NET. Lär dig steg för steg med exempel på källkod.
+Exportera e-postmeddelanden enkelt till EML-format med C# och Aspose.Email för .NET. Lär dig steg för steg med källkodsexempel.
 ### [Konvertera e-post till MHT med tidszon i C#](./converting-email-to-mht-with-timezone-in-csharp/)
 Konvertera e-post till MHT-format med exakta tidszoner med Aspose.Email för .NET. Steg-för-steg-guide och kodexempel tillhandahålls.
 ### [EML-filhantering - Ladda och spara operationer i C#](./eml-file-handling-load-and-save-operations-in-csharp/)

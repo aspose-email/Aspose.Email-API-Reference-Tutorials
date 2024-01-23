@@ -97,11 +97,11 @@ Den här guiden är speciellt anpassad för C#-programmering med Aspose.Email f�
 
 ### Är Aspose.Email lämplig för att behandla e-postmeddelanden i en produktionsmiljö?
 
-Ja, Aspose.Email är ett pålitligt och allmänt använt bibliotek för e-postbearbetning i produktionsmiljöer. Den erbjuder robusta funktioner och utmärkt support.
+Ja, Aspose.Email är ett pålitligt och allmänt använt bibliotek för e-postbearbetning i produktionsmiljöer. Den erbjuder robusta funktioner och utmärkt stöd.
 
 ### Hur hanterar jag fel som kan uppstå under e-postbearbetning?
 
-Du bör implementera korrekta felhanteringsmekanismer med hjälp av försök-fångst-block och undantagshanteringstekniker för att på ett elegant sätt hantera fel under e-postbearbetning.
+Du bör implementera korrekta felhanteringsmekanismer med hjälp av försöksfångstblock och undantagshanteringstekniker för att på ett elegant sätt hantera fel under e-postbearbetning.
 
 ### Kan jag anpassa behandlingen av bilagor och inbäddade meddelanden?
 

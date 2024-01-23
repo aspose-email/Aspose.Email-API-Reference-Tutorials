@@ -55,7 +55,7 @@ A volte le e-mail contengono strutture HTML complesse, come tabelle, immagini o 
 
 ## 6. Conclusione
 
-In questo tutorial hai imparato come convertire il contenuto di posta elettronica HTML in testo semplice utilizzando C#, Aspose.Email e Aspose.Words per .NET. Questa abilità può essere preziosa quando si ha a che fare con l'analisi automatizzata del testo, l'archiviazione o altre attività correlate al testo.
+In questo tutorial hai imparato come convertire il contenuto di posta elettronica HTML in testo semplice utilizzando C#, Aspose.Email e Aspose.Words per .NET. Questa abilità può essere preziosa quando si ha a che fare con l'analisi automatizzata del testo, l'archiviazione o altre attività relative al testo.
 
 ## Domande frequenti (FAQ)
 

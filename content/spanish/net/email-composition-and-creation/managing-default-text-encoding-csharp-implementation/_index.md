@@ -13,7 +13,7 @@ En el ámbito del desarrollo de software, la gestión de la codificación de tex
 
 ## Introducción a la codificación de texto en el desarrollo de software
 
-La codificación de texto es el proceso de convertir texto legible por humanos a un formato que las computadoras puedan comprender y procesar. Implica asignar valores numéricos a caracteres, símbolos y caracteres especiales. En el desarrollo de software, la codificación de texto adecuada garantiza que los datos se almacenen, transmitan y muestren con precisión en diferentes plataformas.
+La codificación de texto es el proceso de convertir texto legible por humanos a un formato que las computadoras puedan entender y procesar. Implica asignar valores numéricos a caracteres, símbolos y caracteres especiales. En el desarrollo de software, la codificación de texto adecuada garantiza que los datos se almacenen, transmitan y muestren con precisión en diferentes plataformas.
 
 ## Comprender la codificación de texto predeterminada
 

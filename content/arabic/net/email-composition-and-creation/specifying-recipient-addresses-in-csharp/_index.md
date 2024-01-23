@@ -2,7 +2,7 @@
 title: تحديد عناوين المستلمين في C#
 linktitle: تحديد عناوين المستلمين في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تحديد عناوين المستلمين في لغة C# باستخدام Aspose.Email لـ .NET. إنشاء وتكوين وإرسال رسائل البريد الإلكتروني بكفاءة.
+description: تعرف على كيفية تحديد عناوين المستلمين في لغة C# باستخدام Aspose.Email لـ .NET. إنشاء رسائل البريد الإلكتروني وتكوينها وإرسالها بكفاءة.
 type: docs
 weight: 19
 url: /ar/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/

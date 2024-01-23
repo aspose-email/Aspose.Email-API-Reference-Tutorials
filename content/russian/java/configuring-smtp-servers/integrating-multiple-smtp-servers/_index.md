@@ -62,7 +62,7 @@ message.setSubject("Hello, Aspose.Email!");
 message.setBody("This is a test email sent using Aspose.Email for Java.");
 message.setTo("recipient@example.com");
 
-// Выберите SMTP-сервер (например, первый сервер в массиве).
+// Выберите SMTP-сервер (например, первый сервер в массиве)
 SmtpClient selectedSmtpClient = smtpClients[0];
 
 try {

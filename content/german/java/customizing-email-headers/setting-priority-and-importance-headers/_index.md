@@ -10,7 +10,7 @@ url: /de/java/customizing-email-headers/setting-priority-and-importance-headers/
 
 ## Einführung
 
-In dieser umfassenden Anleitung führen wir Sie durch die Schritte zur Verwendung von Aspose.Email für Java, um Prioritäts- und Wichtigkeitsheader in Ihren E-Mails festzulegen. Ganz gleich, ob Sie wichtige Geschäftsvorschläge versenden oder einfach nur die Dringlichkeit Ihrer Nachricht betonen möchten, mit diesem Tutorial sind Sie bestens gerüstet.
+In dieser umfassenden Anleitung führen wir Sie durch die Schritte zur Verwendung von Aspose.Email für Java, um Prioritäts- und Wichtigkeitsheader in Ihren E-Mails festzulegen. Ganz gleich, ob Sie wichtige Geschäftsvorschläge versenden oder einfach nur die Dringlichkeit Ihrer Nachricht hervorheben möchten, mit diesem Tutorial sind Sie bestens aufgehoben.
 
 ## Voraussetzungen
 

@@ -15,7 +15,7 @@ I den här guiden kommer du att lära dig hur du genererar TNEF (Transport Neutr
 Innan du börjar, se till att du har följande:
 
 Visual Studio eller någon C#-utvecklingsmiljö installerad.
- Aspose.Email för .NET-biblioteket. Du kan ladda ner den från[Aspose släpper](https://releases.aspose.com/email/net).
+ Aspose.Email för .NET-bibliotek. Du kan ladda ner den från[Aspose släpper](https://releases.aspose.com/email/net).
 
 ##  Steg-för-steg-guide
 

@@ -69,7 +69,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions();
 message.Save("email.html", saveOptions);
 ```
 
-## Skickar HTML-e-postmeddelandet
+## Skickar HTML-e-post
 
 Om du vill skicka HTML-e-postmeddelandet direkt kan du använda Aspose.Emails SMTP-klient.
 

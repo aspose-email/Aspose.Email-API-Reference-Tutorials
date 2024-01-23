@@ -10,7 +10,7 @@ url: /sv/net/email-conversion-and-export/converting-eml-to-msg-format-using-csha
 
 ## Introduktion
 
-dagens digitala värld, där e-postkommunikation spelar en avgörande roll, blir förmågan att manipulera olika e-postformat effektivt avgörande. EML och MSG är två vanliga format som används för att lagra e-postmeddelanden. EML används ofta för att exportera och arkivera enskilda e-postmeddelanden, medan MSG är mer lämpat för att lagra e-postmeddelanden tillsammans med deras bilagor. Den här steg-för-steg-guiden leder dig genom processen att konvertera EML-filer till MSG-format med C# och Aspose.Email för .NET, ett kraftfullt bibliotek för hantering av e-postrelaterade uppgifter.
+dagens digitala värld, där e-postkommunikation spelar en central roll, blir förmågan att manipulera olika e-postformat effektivt avgörande. EML och MSG är två vanliga format som används för att lagra e-postmeddelanden. EML används ofta för att exportera och arkivera enskilda e-postmeddelanden, medan MSG är mer lämpat för att lagra e-postmeddelanden tillsammans med deras bilagor. Den här steg-för-steg-guiden leder dig genom processen att konvertera EML-filer till MSG-format med C# och Aspose.Email för .NET, ett kraftfullt bibliotek för hantering av e-postrelaterade uppgifter.
 
 ## Förutsättningar
 

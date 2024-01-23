@@ -94,7 +94,85 @@ defaultContentLang = 'en'
     languageCode = "tr"
     flag = "flag-tr"
     weight = 19
-
+  [languages.pt]
+    contentDir = 'content/portuguese'
+    languageName = "Português"
+    languageCode = "pt"
+    flag = "flag-br"
+    weight = 20
+  [languages.ko]
+    contentDir = 'content/korean'
+    languageName = "한국인"
+    languageCode = "ko"
+    flag = "flag-kr"
+    weight = 21
+  [languages.vi]
+    contentDir = 'content/vietnamese'
+    languageName = "Tiếng Việt"
+    languageCode = "vi"
+    flag = "flag-vn"
+    weight = 22
+  [languages.id]
+    contentDir = 'content/indonesian'
+    languageName = "Indonesian"
+    languageCode = "id"
+    flag = "flag-id"
+    weight = 23
+  [languages.ja]
+    contentDir = 'content/japanese'
+    languageName = "日本語"
+    languageCode = "ja"
+    flag = "flag-jp"
+    weight = 24
+  [languages.pl]
+    contentDir = 'content/polish'
+    languageName = "Polski"
+    languageCode = "pl"
+    flag = "flag-pl"
+    weight = 25
+  [languages.nl]
+    contentDir = 'content/dutch'
+    languageName = "Nederlands"
+    languageCode = "nl"
+    flag = "flag-nl"
+    weight = 26
+  [languages.hu]
+    contentDir = 'content/hungarian'
+    languageName = "Magyar"
+    languageCode = "hu"
+    flag = "flag-hu"
+    weight = 27
+  [languages.hi]
+    contentDir = 'content/hindi'
+    languageName = "हिन्दी"
+    languageCode = "hi"
+    flag = "flag-in"
+    weight = 28
+  [languages.th]
+    contentDir = 'content/thai'
+    languageName = "ไทย"
+    languageCode = "th"
+    flag = "flag-th"
+    weight = 29
+  [languages.el]
+    contentDir = 'content/greek'
+    languageName = "Ελληνικά"
+    languageCode = "el"
+    flag = "flag-gr"
+    weight = 30
+  [languages.cs]
+    contentDir = 'content/czech'
+    languageName = "čeština"
+    languageCode = "cs"
+    flag = "flag-cz"
+    weight = 31
+  [languages.zh-hant]
+    contentDir = 'content/hongkong'
+    languageName = "繁體中文"
+    languageCode = "zh-hant"
+    flag = "flag-tw"
+    weight = 32
+	
 ignoreFiles = ["(?i:readme.md)", '\.spin$']
 
 # Image processing configuration.

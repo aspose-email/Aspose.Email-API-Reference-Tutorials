@@ -62,7 +62,7 @@ string[] attachments = { "path/to/file1.pdf", "path/to/file2.docx" };
 
 ##  生成电子邮件草稿
 
-现在，让我们使用 Aspose.Email 创建包含约会详细信息的电子邮件草稿。
+现在，让我们使用 Aspose.Email 创建包含约会详细信息的草稿电子邮件。
 
 ```csharp
 using Aspose.Email;

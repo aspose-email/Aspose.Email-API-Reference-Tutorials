@@ -27,7 +27,7 @@ Börja med att skapa ett nytt C#-projekt i din föredragna integrerade utvecklin
 3. I fönstret "Reference Manager", klicka på "Bläddra" eller "Bläddra..." och navigera till platsen där du installerade Aspose.Email.
 4.  Välj lämplig montering för ditt projekt (t.ex.`Aspose.Email.dll`) och klicka på "Lägg till".
 
-## Steg 4: Extrahera avkodade huvudvärden
+## Steg 4: Extrahera avkodade rubrikvärden
 
 Låt oss nu dyka in i koden för att extrahera avkodade rubrikvärden från ett e-postmeddelande. I det här exemplet kommer vi att fokusera på att extrahera rubriken "Ämne".
 

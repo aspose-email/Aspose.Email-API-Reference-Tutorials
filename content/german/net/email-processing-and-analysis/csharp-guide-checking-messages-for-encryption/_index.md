@@ -85,7 +85,7 @@ X509Certificate2 privateCert = new X509Certificate2("Your_Private_Certificate_Fi
 message.Decrypt(privateCert);
 ```
 
-## Ausnahmen behandeln
+## Umgang mit Ausnahmen
 
 Bei der Arbeit mit Verschlüsselung kann es aus verschiedenen Gründen zu Ausnahmen kommen, beispielsweise aufgrund falscher Schlüssel oder beschädigter Nachrichten. Es ist wichtig, diese Ausnahmen ordnungsgemäß zu behandeln, um ein reibungsloses Benutzererlebnis zu gewährleisten.
 

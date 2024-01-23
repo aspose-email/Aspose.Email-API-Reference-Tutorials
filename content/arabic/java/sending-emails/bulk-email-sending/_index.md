@@ -20,7 +20,7 @@ url: /ar/java/sending-emails/bulk-email-sending/
 
 2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:
 
-   [Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
    بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروع Java الخاص بك. هذه المكتبة ضرورية لإرسال رسائل البريد الإلكتروني المجمعة باستخدام Aspose.Email.
 
@@ -36,7 +36,7 @@ url: /ar/java/sending-emails/bulk-email-sending/
 
 قم بتنزيل مكتبة Aspose.Email for Java من رابط التنزيل:
 
-[Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
 أضف ملفات JAR التي تم تنزيلها إلى مسار الفصل الخاص بمشروعك.
 

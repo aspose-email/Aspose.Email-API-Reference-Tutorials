@@ -20,7 +20,7 @@ url: /ar/java/sending-emails/adding-custom-headers-in-aspose-email/
 
 1. بيئة تطوير Java: تأكد من إعداد بيئة تطوير Java على نظامك. ستحتاج إلى Java لتجميع أمثلة تعليمات Java البرمجية وتشغيلها في هذا الدليل.
 
-2.  Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:[Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+2.  Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
    بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروع Java الخاص بك. هذه المكتبة ضرورية للعمل مع رسائل البريد الإلكتروني باستخدام Aspose.Email.
 
@@ -40,7 +40,7 @@ url: /ar/java/sending-emails/adding-custom-headers-in-aspose-email/
 
 تحتاج إلى إضافة مكتبة Aspose.Email for Java إلى مشروعك. يمكنك القيام بذلك عن طريق تنزيل المكتبة من رابط التنزيل المقدم:
 
-[Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
 بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروعك.
 
@@ -113,7 +113,7 @@ public class AddCustomHeadersExample {
 
 ## خاتمة
 
-في هذا الدليل، تعلمت كيفية إضافة رؤوس مخصصة إلى البريد الإلكتروني باستخدام Aspose.Email لـ Java. يمكنك تخصيص رسائل البريد الإلكتروني الخاصة بك برؤوس مختلفة لتلبية متطلباتك المحددة.
+في هذا الدليل، تعلمت كيفية إضافة رؤوس مخصصة إلى رسالة بريد إلكتروني باستخدام Aspose.Email لـ Java. يمكنك تخصيص رسائل البريد الإلكتروني الخاصة بك برؤوس مختلفة لتلبية متطلباتك المحددة.
 
 
 ## الأسئلة الشائعة (الأسئلة المتداولة)

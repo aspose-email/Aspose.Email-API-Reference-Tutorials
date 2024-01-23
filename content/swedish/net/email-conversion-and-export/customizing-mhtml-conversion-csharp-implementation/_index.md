@@ -10,7 +10,7 @@ url: /sv/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-imp
 
 ## Introduktion till anpassning av MHTML-konvertering
 
-Om du funderar på att anpassa MHTML-konvertering med Aspose.Email för .NET, är du på rätt plats. Den här omfattande guiden leder dig genom processen steg för steg och ger dig källkoden du behöver för framgångsrik implementering. MHTML (MIME HTML) är ett webbarkivformat som kombinerar HTML-innehåll och dess resurser till en enda fil. Aspose.Email för .NET erbjuder kraftfulla verktyg för att arbeta med MHTML-filer, och med några få justeringar kan du skräddarsy konverteringsprocessen efter dina specifika krav.
+Om du funderar på att anpassa MHTML-konvertering med Aspose.Email för .NET, är du på rätt plats. Den här omfattande guiden leder dig genom processen steg för steg och ger dig källkoden du behöver för framgångsrik implementering. MHTML (MIME HTML) är ett webbarkivformat som kombinerar HTML-innehåll och dess resurser till en enda fil. Aspose.Email för .NET erbjuder kraftfulla verktyg för att arbeta med MHTML-filer, och med några justeringar kan du skräddarsy konverteringsprocessen efter dina specifika krav.
 
 ## Konfigurera din utvecklingsmiljö
 

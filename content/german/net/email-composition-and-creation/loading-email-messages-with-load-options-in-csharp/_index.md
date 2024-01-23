@@ -22,7 +22,7 @@ Bevor wir uns mit den Details befassen, müssen Sie die folgenden Voraussetzunge
 
 ## Installieren der Aspose.Email für .NET-Bibliothek
 
-Um zu beginnen, müssen Sie die Aspose.Email für .NET-Bibliothek installieren. Sie können es entweder von der Website herunterladen oder den NuGet Package Manager in Visual Studio verwenden. Suchen Sie einfach nach „Aspose.Email“ und installieren Sie das passende Paket für Ihr Projekt.
+Um zu beginnen, müssen Sie die Aspose.Email für .NET-Bibliothek installieren. Sie können es entweder von der Website herunterladen oder den NuGet Package Manager in Visual Studio verwenden. Suchen Sie einfach nach „Aspose.Email“ und installieren Sie das entsprechende Paket für Ihr Projekt.
 
 ## E-Mail-Nachrichten laden: Schritt für Schritt
 

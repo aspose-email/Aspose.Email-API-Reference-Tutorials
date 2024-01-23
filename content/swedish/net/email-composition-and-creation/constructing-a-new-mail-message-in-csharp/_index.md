@@ -110,7 +110,7 @@ Grattis! Du har framgångsrikt lärt dig hur du skapar ett nytt e-postmeddelande
 ### Är Aspose.Email ett gratis bibliotek
    Aspose.Email erbjuder både gratis och betalda versioner. Gratisversionen ger begränsade funktioner, medan den betalda versionen låser upp bibliotekets fulla potential.
 
-### Kan jag skicka bilagor av vilken storlek som helst?
+### Kan jag skicka bilagor oavsett storlek?
    Även om det inte finns några strikta begränsningar, rekommenderas det att ta hänsyn till e-postleverantörens storleksgränser för bilagor och mottagarens brevlådekapacitet.
 
 ### Har Aspose.Email stöd för att skicka e-postmeddelanden med vanlig text?

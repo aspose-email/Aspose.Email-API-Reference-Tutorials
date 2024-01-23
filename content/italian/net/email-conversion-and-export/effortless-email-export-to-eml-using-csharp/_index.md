@@ -82,7 +82,7 @@ foreach (Attachment attachment in email.Attachments)
 }
 ```
 
-## Aggiunta di metadati e-mail aggiuntivi
+## Aggiunta di ulteriori metadati e-mail
 
 Puoi anche aggiungere ulteriori metadati all'e-mail esportata utilizzando Aspose.Email. Ciò include intestazioni, proprietà personalizzate e altro:
 

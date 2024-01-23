@@ -128,7 +128,7 @@ Bu eğitimde, Aspose.Email for .NET ile C# kullanarak e-posta okundu bilgilerini
 3. ### E-posta okundu bilgileri tüm e-posta istemcilerinde standart bir özellik midir?
    Hayır, e-posta okundu bilgileri evrensel olarak desteklenmez. Çalışıp çalışmamaları e-posta istemcisine ve alıcının ayarlarına bağlıdır.
 
-4. ### Mobil cihazda bir e-postanın ne zaman açıldığını takip etmek mümkün müdür?
+4. ### Mobil cihazda bir e-postanın ne zaman açıldığını takip etmek mümkün mü?
    E-posta izleme genellikle alıcının e-posta istemcisine ve ayarlarına bağlıdır, dolayısıyla çeşitli faktörlere bağlı olarak mobil cihazlarda çalışabilir veya çalışmayabilir.
 
 5. ### E-posta okundu bilgilerini kullanırken gizlilik hususları var mı?

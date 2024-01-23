@@ -51,7 +51,7 @@ class Program
 Im obigen Codeausschnitt führen wir die folgenden Schritte aus:
 
 1. Wir importieren notwendige Namespaces (`Aspose.Email` Und`Aspose.Email.Mail`).
-2.  Wir erstellen ein`Main` Methode als Einstiegspunkt unserer Anwendung.
+2.  Wir erstellen eine`Main` Methode als Einstiegspunkt unserer Anwendung.
 3.  Innerhalb der`Main`Methode verwenden wir die`MailMessage.Load` Methode zum Laden einer E-Mail-Nachricht aus einer Datei. Ersetzen`"path/to/your/email.eml"` mit dem tatsächlichen Pfad zu der E-Mail-Nachricht, die Sie verarbeiten möchten.
 4.  Wir benutzen das`Headers.GetDecodedValue` Methode zum Dekodieren des Subject-Headers.
 5. Wir geben den entschlüsselten Subject-Header an die Konsole aus.

@@ -137,7 +137,7 @@ bool ValidateEmail(string email)
 
     string domain = address.Host;
     
-    // Verifica dell'esistenza del record MX e del dominio
+    // Controllo dell'esistenza dei record MX e del dominio
     bool hasMxRecord = Dns.GetHostAddresses(domain).Any(address => address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork);
     if (!hasMxRecord) return false;
     
@@ -197,7 +197,7 @@ protected void ValidateButton_Click(object sender, EventArgs e)
 
 ## Conclusione
 
-L'implementazione di tecniche efficaci di convalida della posta elettronica è essenziale per mantenere la qualità dei dati, l'esperienza utente e la sicurezza nelle tue applicazioni. Aspose.Email per .NET offre potenti strumenti per semplificare il processo di convalida e garantire indirizzi e-mail accurati.
+L'implementazione di tecniche efficaci di convalida della posta elettronica è essenziale per mantenere la qualità dei dati, l'esperienza utente e la sicurezza nelle applicazioni. Aspose.Email per .NET offre potenti strumenti per semplificare il processo di convalida e garantire indirizzi e-mail accurati.
 
 ## Domande frequenti
 

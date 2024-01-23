@@ -11,7 +11,7 @@ url: /tr/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 
 ## giriiş
 
-E-posta iletişimi alanında, başlıkları kişiselleştirme yeteneği, kullanıcı katılımını artırmada ve etkili mesaj iletimi sağlamada çok önemli bir rol oynayabilir. C#'ta e-posta manipülasyonunu kolaylaştıran güçlü bir kütüphane olan Aspose.Email for .NET ile geliştiriciler, e-postalarını uyarlamak için kolaylıkla özel başlıklar oluşturabilir ve değiştirebilirler. Bu kapsamlı kılavuz, Aspose.Email for .NET'i kullanarak C#'ta özel başlıklar belirleme sürecinde size yol gösterecek, adım adım talimatlar, kaynak kodu örnekleri ve e-posta iletişim çabalarınızı güçlendirecek bilgiler sunacaktır.
+E-posta iletişimi alanında, başlıkları kişiselleştirme yeteneği, kullanıcı katılımını artırmada ve etkili mesaj iletimi sağlamada çok önemli bir rol oynayabilir. C#'ta e-posta manipülasyonunu basitleştiren güçlü bir kütüphane olan Aspose.Email for .NET ile geliştiriciler, e-postalarını uyarlamak için kolaylıkla özel başlıklar oluşturabilir ve değiştirebilirler. Bu kapsamlı kılavuz, Aspose.Email for .NET'i kullanarak C#'ta özel başlıklar belirleme sürecinde size yol gösterecek, adım adım talimatlar, kaynak kodu örnekleri ve e-posta iletişim çabalarınızı güçlendirecek bilgiler sunacaktır.
 
 ## C#'ta Özel Başlıkları belirten adım adım kılavuz
 

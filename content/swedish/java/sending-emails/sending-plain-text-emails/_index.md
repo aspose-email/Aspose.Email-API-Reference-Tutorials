@@ -102,7 +102,7 @@ public class PlainTextEmail {
    - Även om e-postmeddelanden med vanlig text inte stöder inbäddade bilagor, kan du skicka filbilagor separat med Aspose.Email för Java.
 
 ### 4. Vilka är fördelarna med att använda Aspose.Email för Java för att skicka e-postmeddelanden med vanlig text?
-   - Aspose.Email för Java förenklar processen att skicka e-postmeddelanden med vanlig text, vilket ger tillförlitliga och effektiva e-postsändningsmöjligheter i Java-applikationer.
+   - Aspose.Email för Java förenklar processen att skicka e-postmeddelanden i vanlig text, vilket ger tillförlitliga och effektiva e-postsändningsmöjligheter i Java-applikationer.
 
 ### 5. Hur kan jag hantera e-postleveransstatus och spårning när jag skickar e-postmeddelanden med vanlig text?
    - Du kan implementera logik för att hantera meddelanden om e-postleveransstatus (DSN) och spåra e-postöppningar och klick med hjälp av ytterligare verktyg eller tjänster.

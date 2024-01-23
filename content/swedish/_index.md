@@ -24,7 +24,7 @@ Det här är länkar till några användbara resurser:
 - [Hantering av e-postbilagor](./net/email-attachment-handling/)
 - [E-postbearbetning och analys](./net/email-processing-and-analysis/)
 - [Manipulering av e-posthuvud](./net/email-header-manipulation/)
-- [E-posthantering och kalenderhantering](./net/email-event-and-calendar-handling/)
+- [E-posthändelse och kalenderhantering](./net/email-event-and-calendar-handling/)
 - [E-postmeddelande och spårning](./net/email-notification-and-tracking/)
 - [E-postvalidering och verifiering](./net/email-validation-and-verification/)
 - [Lagring och hämtning av e-postfiler](./net/email-file-storage-and-retrieval/)

@@ -10,7 +10,7 @@ url: /tr/net/email-conversion-and-export/draft-message-handling-in-csharp-saving
 
 ## giriiş
 
-Taslak mesaj işleme, e-posta istemcileri için çok önemli bir işlevselliktir. Kullanıcılar genellikle bir e-posta oluşturmaya başlama, onu taslak olarak kaydetme ve daha sonra düzenleme veya nihai gönderim için geri dönme olanağına ihtiyaç duyar. Bu makale, Aspose.Email for .NET kütüphanesini kullanarak bu özelliğin nasıl uygulanacağını gösterir.
+Taslak mesaj işleme, e-posta istemcileri için çok önemli bir işlevselliktir. Kullanıcılar genellikle bir e-posta oluşturmaya başlama, onu taslak olarak kaydetme ve daha sonra düzenleme veya nihai gönderim için geri dönme olanağına ihtiyaç duyar. Bu makale, Aspose.Email for .NET kütüphanesini kullanarak bu özelliğin nasıl uygulanacağını göstermektedir.
 
 ## Önkoşullar
 

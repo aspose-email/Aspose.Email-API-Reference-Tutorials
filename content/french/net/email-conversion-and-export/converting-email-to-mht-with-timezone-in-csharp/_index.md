@@ -92,7 +92,7 @@ Dans ce guide, nous avons appris comment convertir des e-mails au format MHT tou
 
 ### Puis-je convertir des e-mails vers d'autres formats à l'aide d'Aspose.Email pour .NET ?
 
-Oui, Aspose.Email pour .NET prend en charge divers formats, notamment MSG, EML, PST, etc. Vous pouvez adapter les exemples de code fournis en fonction du format de sortie souhaité.
+Oui, Aspose.Email pour .NET prend en charge différents formats, notamment MSG, EML, PST, etc. Vous pouvez adapter les exemples de code fournis en fonction du format de sortie souhaité.
 
 ### Les informations de fuseau horaire sont-elles conservées au format MHT ?
 

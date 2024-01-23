@@ -77,7 +77,7 @@ foreach (var alternateView in message.AlternateViews)
 message.Save("output.mht", SaveOptions.DefaultMhtml);
 ```
 
- في مقتطف الكود هذا، نقوم أولاً بتحميل ملف MHT باستخدام`MailMessage.Load` مع`MhtmlLoadOptions`. بعد ذلك، نقوم بالتكرار عبر طرق العرض البديلة للعثور على عرض HTML وتخصيص الخطوط داخله من خلال معالجة الموارد المرتبطة.
+ في مقتطف التعليمات البرمجية هذا، نقوم أولاً بتحميل ملف MHT باستخدام`MailMessage.Load` مع`MhtmlLoadOptions`. بعد ذلك، نقوم بالتكرار عبر طرق العرض البديلة للعثور على عرض HTML وتخصيص الخطوط داخله من خلال معالجة الموارد المرتبطة.
 
 ## خاتمة
 

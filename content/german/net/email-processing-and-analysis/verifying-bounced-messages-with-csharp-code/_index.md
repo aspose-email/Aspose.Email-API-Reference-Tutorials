@@ -121,7 +121,7 @@ Die Automatisierung des Prozesses zur Überprüfung zurückgesendeter Nachrichte
 
 ### Wie genau ist die Bounce-Analyse?
 
-Die vom Code bereitgestellte Bounce-Analyse ist ziemlich genau. Es kategorisiert Bounce-Typen basierend auf Standard-E-Mail-Headern und hilft Ihnen zu verstehen, warum E-Mails zurückgesendet wurden.
+Die vom Code bereitgestellte Bounce-Analyse ist ziemlich genau. Es kategorisiert Bounce-Typen basierend auf Standard-E-Mail-Headern und hilft Ihnen zu verstehen, warum E-Mails zurückgesendet werden.
 
 ### Kann ich diesen Ansatz für jeden E-Mail-Dienst verwenden?
 

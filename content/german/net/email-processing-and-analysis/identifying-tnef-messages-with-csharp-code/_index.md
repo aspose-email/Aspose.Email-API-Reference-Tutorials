@@ -51,7 +51,7 @@ else
 
 ## Umgang mit Anhängen in TNEF-Nachrichten
 
-TNEF-Nachrichten enthalten häufig Anhänge. Um diese Anhänge zu extrahieren und zu speichern, können Sie den folgenden Code verwenden:
+TNEF-Nachrichten enthalten oft Anhänge. Um diese Anhänge zu extrahieren und zu speichern, können Sie den folgenden Code verwenden:
 
 ```csharp
 // Durchlaufen Sie Anhänge

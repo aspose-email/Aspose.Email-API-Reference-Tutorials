@@ -73,7 +73,7 @@ emlMessage.Save(outputPath, SaveOptions.DefaultEml);
 
 ## Umgang mit Anhängen
 
-E-Mail-Nachrichten enthalten oft Anhänge, die zusammen mit der Nachricht exportiert werden müssen. So können Sie Anhänge mit Aspose.Email verarbeiten:
+E-Mail-Nachrichten enthalten häufig Anhänge, die zusammen mit der Nachricht exportiert werden müssen. So können Sie Anhänge mit Aspose.Email verarbeiten:
 
 ```csharp
 foreach (Attachment attachment in email.Attachments)

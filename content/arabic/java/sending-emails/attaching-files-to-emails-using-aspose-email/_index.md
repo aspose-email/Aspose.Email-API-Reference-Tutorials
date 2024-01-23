@@ -21,7 +21,7 @@ url: /ar/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 
 2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:
 
-   [Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
    بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروع Java الخاص بك. هذه المكتبة ضرورية للعمل مع رسائل البريد الإلكتروني باستخدام Aspose.Email.
 
@@ -39,7 +39,7 @@ url: /ar/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 
 قم بتنزيل مكتبة Aspose.Email for Java من رابط التنزيل:
 
-[Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
 أضف ملفات JAR التي تم تنزيلها إلى مسار الفصل الخاص بمشروعك.
 

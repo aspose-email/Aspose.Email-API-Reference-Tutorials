@@ -17,7 +17,7 @@ Hantering av utkastmeddelanden är en avgörande funktion för e-postklienter. A
 Innan vi dyker in i implementeringen, se till att du har följande förutsättningar på plats:
 
 - Visual Studio (eller någon C#-utvecklingsmiljö)
-- Aspose.Email för .NET-bibliotek
+- Aspose.Email för .NET-biblioteket
 
  Du kan ladda ner Aspose.Email-biblioteket från[här](https://releases.aspose.com/email/net).
 

@@ -56,7 +56,7 @@ Utilizzare Aspose.Email per le funzionalità di invio e-mail di Java per inviare
 // Crea un client SMTP con i dettagli del tuo server SMTP
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 
-// Invia la notifica e-mail
+// Invia la notifica via email
 client.send(message);
 ```
 
@@ -80,7 +80,7 @@ public class EmailNotification {
         SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 
         try {
-            // Invia la notifica e-mail
+            // Invia la notifica via email
             client.send(message);
             System.out.println("Email notification sent successfully.");
         } catch (Exception ex) {
