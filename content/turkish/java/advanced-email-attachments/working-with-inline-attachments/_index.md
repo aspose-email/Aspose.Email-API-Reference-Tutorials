@@ -30,7 +30,7 @@ E-postalarınızda satır içi eklerin kullanılması çeşitli avantajlar sunar
 
 ## Java için Aspose.Email'i Kurma
 
-Satır içi eklerle çalışmaya başlamadan önce projenizde Aspose.Email for Java'yı kurmanız gerekir. Başlamak için adımlar şunlardır:
+Satır içi eklerle çalışmaya başlamadan önce projenizde Aspose.Email for Java'yı kurmanız gerekir. İşte başlama adımları:
 
 1.  Aspose.Email for Java'yı indirin:[Java belgeleri için Aspose.Email](https://reference.aspose.com/email/java/) İndirme bağlantısına erişmek için.
 

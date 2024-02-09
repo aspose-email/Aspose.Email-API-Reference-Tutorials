@@ -16,7 +16,7 @@ Aspose.Email for .NET est une bibliothèque puissante qui vous permet de travail
 
 ## 2. Mise en place de votre projet
 
-Avant de commencer, assurez-vous d'avoir configuré un environnement de développement C# sur votre machine. Vous pouvez utiliser Visual Studio ou tout autre IDE C# de votre choix.
+Avant de commencer, assurez-vous d'avoir configuré un environnement de développement C# sur votre ordinateur. Vous pouvez utiliser Visual Studio ou tout autre IDE C# de votre choix.
 
 ## 3. Ajout d'Aspose.Email à votre projet
 

@@ -10,7 +10,7 @@ url: /tr/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 
 ## giriiş
 
-Modern yazılım geliştirme alanında, e-posta adresleri iletişim ve veri işlemede çok önemli bir rol oynamaktadır. E-posta adreslerini programlı olarak yönetebilmek ve değiştirebilmek önemli avantajlar sağlayabilir. Bu kapsamlı kılavuzda, Aspose.Email for .NET'in gücünden yararlanarak C# programlama dilini kullanarak e-posta adreslerini değiştirme sürecini derinlemesine inceleyeceğiz. İster bir e-posta yönetim sistemi geliştiriyor olun ister büyük e-posta verileriyle uğraşıyor olun, bu kılavuz sizi e-posta adresi değişikliklerini verimli bir şekilde yönetmek için gereken bilgi ve kaynak koduyla donatacaktır.
+Modern yazılım geliştirme alanında, e-posta adresleri iletişim ve veri işlemede çok önemli bir rol oynamaktadır. E-posta adreslerini programlı olarak yönetebilmek ve değiştirebilmek önemli avantajlar sağlayabilir. Bu kapsamlı kılavuzda, Aspose.Email for .NET'in gücünden yararlanarak C# programlama dilini kullanarak e-posta adreslerini değiştirme sürecini derinlemesine inceleyeceğiz. İster bir e-posta yönetim sistemi geliştiriyor olun ister büyük e-posta verileriyle uğraşıyor olun, bu kılavuz sizi e-posta adresi değişikliklerini etkili bir şekilde yönetmek için gereken bilgi ve kaynak koduyla donatacaktır.
 
 
 ## 1. Geliştirme Ortamını Kurmak

@@ -9,7 +9,7 @@ url: /tr/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
 # Aspose.Email for Java ile Birden Çok SMTP Sunucusunu Entegrasyona Giriş
 
-Bu adım adım kılavuzda, Aspose.Email for Java kullanarak birden fazla SMTP sunucusunu entegre etme sürecinde size yol göstereceğiz. Aspose.Email for Java, SMTP sunucuları aracılığıyla göndermek de dahil olmak üzere e-posta mesajlarıyla çalışmanıza olanak tanıyan güçlü bir API'dir. Birden fazla SMTP sunucusunun entegre edilmesi, yük dengeleme, yük devretme ve e-posta gönderme işleminizde artıklığa ihtiyaç duyduğunuz diğer senaryolar için yararlı olabilir.
+Bu adım adım kılavuzda, Aspose.Email for Java kullanarak birden fazla SMTP sunucusunu entegre etme sürecinde size yol göstereceğiz. Aspose.Email for Java, SMTP sunucuları aracılığıyla göndermek de dahil olmak üzere e-posta mesajlarıyla çalışmanıza olanak tanıyan güçlü bir API'dir. Birden fazla SMTP sunucusunun entegre edilmesi, yük dengeleme, yük devretme ve e-posta gönderme işleminizde yedekliliğe ihtiyaç duyduğunuz diğer senaryolar için yararlı olabilir.
 
 ## Önkoşullar
 

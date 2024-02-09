@@ -20,7 +20,7 @@ url: /ar/java/sending-emails/sending-email-notifications/
 
 2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:
 
-   [Aspose.Email لتنزيل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
 
    أضف ملفات JAR التي تم تنزيلها إلى مسار فئة مشروع Java الخاص بك لمعالجة البريد الإلكتروني.
 

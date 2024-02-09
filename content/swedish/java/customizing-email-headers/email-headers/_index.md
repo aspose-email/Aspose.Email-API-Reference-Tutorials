@@ -8,13 +8,13 @@ weight: 10
 url: /sv/java/customizing-email-headers/email-headers/
 ---
 
-## Introduktion till e-postrubriker
+## Introduktion till e-posthuvuden
 
 E-postrubriker är som kuvert av digitala meddelanden. De innehåller viktig metadata som guidar ett e-postmeddelande genom dess resa från avsändaren till mottagaren. Att förstå e-postrubriker kan hjälpa dig att spåra vägen ett e-postmeddelande tog, identifiera potentiella problem och säkerställa säker och pålitlig e-postkommunikation.
 
 ### Vad är e-postrubriker?
 
-E-postrubriker är rader med metadata i början av ett e-postmeddelande. De ger information om meddelandets ursprung, rutt och hantering. Vanliga fält för e-posthuvud inkluderar:
+E-postrubriker är rader med metadata i början av ett e-postmeddelande. De ger information om meddelandets ursprung, rutt och hantering. Vanliga fält för e-postrubriker inkluderar:
 
 - Från: Avsändarens e-postadress.
 - Till: Mottagarens e-postadress.

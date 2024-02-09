@@ -16,7 +16,7 @@ Den här guiden leder dig genom processen att ange mottagaradresser i C# med hj�
 Innan du börjar, se till att du har följande:
 
 1. Visual Studio eller någon C#-utvecklingsmiljö installerad.
-2.  Aspose.Email för .NET-bibliotek. Du kan få det från[Aspose.Email för .NET-versioner](https://releases.aspose.com/email/net/).
+2.  Aspose.Email för .NET-biblioteket. Du kan få det från[Aspose.Email för .NET-versioner](https://releases.aspose.com/email/net/).
 
 ## Steg
 
@@ -33,7 +33,7 @@ Börja med att skapa ett nytt C#-projekt i din utvecklingsmiljö.
 3. Högerklicka på "Referenser" i Solution Explorer och välj "Lägg till referens".
 4. Bläddra och välj Aspose.Email DLL-filerna som du laddade ner.
 
-### 3. Importera nödvändiga namnutrymmen
+### 3. Importera nödvändiga namnrymder
 
 I din C#-kodfil, importera de nödvändiga namnrymden för att använda Aspose.Email-klasser:
 

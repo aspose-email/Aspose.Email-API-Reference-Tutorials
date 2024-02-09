@@ -26,7 +26,7 @@ Innan vi dyker in i kodningsprocessen, se till att du har följande förutsättn
 
 2. Namnge projektet och välj önskad plats för att spara det.
 
-## Installera Aspose.Email Library
+## Installera Aspose.Email-biblioteket
 
 1. Högerklicka på ditt projekt i Solution Explorer och välj "Hantera NuGet-paket."
 
@@ -74,7 +74,7 @@ foreach (Attachment attachment in message.Attachments)
 }
 ```
 
-## Hantera olika tillbehörstyper
+## Hanterar olika tillbehörstyper
 
 Bilagor kan komma i olika format, såsom PDF-filer, bilder, dokument etc. Du kan skräddarsy din kod för att hantera olika bilagatyper efter det.
 

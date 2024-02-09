@@ -10,7 +10,7 @@ url: /tr/java/customizing-email-headers/dkim-signatures-implementation/
 
 ## Aspose.Email ile DKIM İmzalarının Uygulanması
 
-Günümüzün dijital çağında e-posta güvenliği büyük önem taşıyor. E-posta güvenliğinin en önemli yönlerinden biri, gönderilen ve alınan e-postaların orijinalliğini ve bütünlüğünü sağlamaktır. DomainKeys Tanımlanmış Posta (DKIM) imzaları bunu başarmada hayati bir rol oynamaktadır. Bu makalede, e-posta mesajlarıyla çalışmak için güçlü bir kütüphane olan Aspose.Email for Java'yı kullanarak DKIM imzalarının nasıl uygulanacağını inceleyeceğiz.
+Günümüzün dijital çağında e-posta güvenliği büyük önem taşıyor. E-posta güvenliğinin en önemli yönlerinden biri, gönderilen ve alınan e-postaların orijinalliğini ve bütünlüğünü sağlamaktır. DomainKeys Tanımlanmış Posta (DKIM) imzaları bunu başarmada hayati bir rol oynar. Bu makalede, e-posta mesajlarıyla çalışmak için güçlü bir kütüphane olan Aspose.Email for Java'yı kullanarak DKIM imzalarının nasıl uygulanacağını inceleyeceğiz.
 
 ## DKIM İmzalarını Anlamak
 

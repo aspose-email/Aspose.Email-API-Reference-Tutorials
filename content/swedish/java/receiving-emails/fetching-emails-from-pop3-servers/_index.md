@@ -7,7 +7,7 @@ type: docs
 weight: 11
 url: /sv/java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
-I den här omfattande guiden kommer vi att leda dig genom processen att hämta e-postmeddelanden från POP3-servrar med hjälp av det kraftfulla Aspose.Email for Java-biblioteket. Oavsett om du bygger en e-postklient, automatiserar e-postbearbetning eller helt enkelt behöver hämta e-postmeddelanden från en POP3-server, kommer denna steg-för-steg-handledning att ge dig den kunskap och källkod du behöver.
+I den här omfattande guiden går vi igenom processen att hämta e-postmeddelanden från POP3-servrar med hjälp av det kraftfulla Aspose.Email for Java-biblioteket. Oavsett om du bygger en e-postklient, automatiserar e-postbearbetning eller helt enkelt behöver hämta e-post från en POP3-server, kommer denna steg-för-steg-handledning att ge dig den kunskap och källkod du behöver.
 
 ## 1. Introduktion
 

@@ -100,7 +100,7 @@ Ja, Aspose.Email unterstützt die Arbeit mit PST-Dateien und ermöglicht Ihnen d
 
 ### Kann ich Aspose.Email in meiner ASP.NET-Webanwendung verwenden?
 
-Absolut! Aspose.Email für .NET ist mit ASP.NET-Webanwendungen, Desktop-Anwendungen und anderen Arten von .NET-Projekten kompatibel.
+Absolut! Aspose.Email für .NET ist mit ASP.NET-Webanwendungen, Desktopanwendungen und anderen Arten von .NET-Projekten kompatibel.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Email?
 

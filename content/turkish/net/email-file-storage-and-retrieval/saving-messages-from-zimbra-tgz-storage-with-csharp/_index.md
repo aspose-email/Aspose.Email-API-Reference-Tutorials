@@ -8,7 +8,7 @@ weight: 12
 url: /tr/net/email-file-storage-and-retrieval/saving-messages-from-zimbra-tgz-storage-with-csharp/
 ---
 
-Modern teknoloji dünyasında verilerin korunması ve yönetimi çok önemlidir. İşletmeler çeşitli amaçlar için e-posta iletişimine büyük ölçüde güvenmektedir ve bir geliştirici olarak Zimbra TGZ depolama alanından mesaj çıkarma ihtiyacıyla karşılaşabilirsiniz. Bu makale, Aspose.Email for .NET API kullanılarak bunun nasıl başarılacağına dair adım adım bir kılavuz sunmaktadır. Zimbra TGZ depolama alanından mesajları kaydetme sürecini kolaylıkla gerçekleştireceğiz.
+Modern teknoloji dünyasında verilerin korunması ve yönetimi çok önemlidir. İşletmeler çeşitli amaçlar için büyük ölçüde e-posta iletişimine güvenmektedir ve bir geliştirici olarak Zimbra TGZ depolama alanından mesaj çıkarma ihtiyacıyla karşılaşabilirsiniz. Bu makale, Aspose.Email for .NET API kullanılarak bunun nasıl başarılacağına dair adım adım bir kılavuz sunmaktadır. Zimbra TGZ depolama alanından mesajları kaydetme sürecini kolaylıkla gerçekleştireceğiz.
 
 ## Aspose.Email for .NET'e giriş
 

@@ -123,4 +123,4 @@ Vous pouvez lire les X-Headers à partir des e-mails reçus à l'aide d'Aspose.E
 
 ### Aspose.Email est-il adapté à la gestion des e-mails au niveau de l’entreprise ?
 
-Oui, Aspose.Email est une bibliothèque robuste qui peut être utilisée pour la gestion des e-mails au niveau de l'entreprise. Il offre un large éventail de fonctionnalités pour créer, envoyer, recevoir et traiter des e-mails, ce qui le rend adapté à divers scénarios commerciaux.
+Oui, Aspose.Email est une bibliothèque robuste qui peut être utilisée pour la gestion des e-mails au niveau de l'entreprise. Il offre un large éventail de fonctionnalités pour créer, envoyer, recevoir et traiter des e-mails, ce qui le rend adapté à divers scénarios professionnels.

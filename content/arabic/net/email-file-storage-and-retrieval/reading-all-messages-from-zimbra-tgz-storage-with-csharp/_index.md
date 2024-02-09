@@ -18,7 +18,7 @@ url: /ar/net/email-file-storage-and-retrieval/reading-all-messages-from-zimbra-t
 
 قبل أن نبدأ البرمجة، تأكد من تثبيت الأدوات والمكتبات اللازمة:
 
-1. Visual Studio: إذا لم يكن لديك بالفعل، فقم بتنزيل Visual Studio وتثبيته، وهو بيئة تطوير متكاملة شائعة (IDE) لـ C#.
+1. Visual Studio: إذا لم يكن لديك بالفعل، فقم بتنزيل Visual Studio وتثبيته، وهي بيئة تطوير متكاملة شائعة (IDE) لـ C#.
 
 2. Aspose.Email لـ .NET: يمكنك الحصول على Aspose.Email لـ .NET من موقع الويب أو عبر NuGet Package Manager في Visual Studio.
 

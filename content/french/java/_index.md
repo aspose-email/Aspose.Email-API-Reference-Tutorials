@@ -12,7 +12,7 @@ Aspose.Email pour Java est une API puissante qui permet aux développeurs de man
 
 ## Introduction à Aspose.Email pour Java
 
-Aspose.Email for Java est une bibliothèque riche en fonctionnalités qui simplifie la gestion des e-mails dans les applications Java. Il permet aux développeurs de créer, lire et manipuler des messages électroniques dans différents formats, ce qui en fait un atout précieux pour les entreprises et les développeurs à la recherche de solutions efficaces de gestion des e-mails. Grâce à ses fonctionnalités étendues, vous pouvez automatiser les tâches liées au courrier électronique, générer des rapports et même mettre en œuvre des fonctionnalités avancées de traitement du courrier électronique.
+Aspose.Email for Java est une bibliothèque riche en fonctionnalités qui simplifie la gestion des e-mails dans les applications Java. Il permet aux développeurs de créer, lire et manipuler des messages électroniques dans différents formats, ce qui en fait un atout précieux pour les entreprises et les développeurs à la recherche de solutions efficaces de gestion des e-mails. Grâce à ses capacités étendues, vous pouvez automatiser les tâches liées au courrier électronique, générer des rapports et même mettre en œuvre des fonctionnalités avancées de traitement du courrier électronique.
 
 ## Tutoriels complets pour les développeurs
 

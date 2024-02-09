@@ -1,6 +1,6 @@
 ---
 title: Composizione, conversione ed elaborazione delle e-mail con i tutorial Aspose.Email
-linktitle: Aspose.Email per .NET Tutorial
+linktitle: Aspose.Email per esercitazioni .NET
 type: docs
 weight: 10
 url: /it/net/
@@ -14,7 +14,7 @@ I tutorial Aspose.Email per .NET offrono agli sviluppatori una risorsa completa 
 
 ## Composizione e-mail
 
-tutorial sulla composizione delle e-mail approfondiscono l'arte di creare messaggi e-mail personalizzati e coinvolgenti a livello di programmazione. Gli sviluppatori possono imparare come creare e-mail con contenuti dinamici, allegati e formattazione. Questi tutorial guidano gli sviluppatori attraverso il processo di aggiunta di destinatari, impostazione delle righe dell'oggetto e incorporazione di testo RTF e contenuto HTML. Seguendo questi tutorial, gli sviluppatori possono migliorare le proprie applicazioni offrendo agli utenti la possibilità di generare contenuti e-mail personalizzati e visivamente accattivanti.
+tutorial sulla composizione delle e-mail approfondiscono l'arte di creare messaggi e-mail personalizzati e coinvolgenti a livello di codice. Gli sviluppatori possono imparare come creare e-mail con contenuti dinamici, allegati e formattazione. Questi tutorial guidano gli sviluppatori attraverso il processo di aggiunta di destinatari, impostazione delle righe dell'oggetto e incorporazione di testo RTF e contenuto HTML. Seguendo questi tutorial, gli sviluppatori possono migliorare le proprie applicazioni offrendo agli utenti la possibilità di generare contenuti e-mail personalizzati e visivamente accattivanti.
 
 ## Conversione e-mail
 

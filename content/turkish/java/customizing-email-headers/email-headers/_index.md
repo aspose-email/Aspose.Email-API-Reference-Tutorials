@@ -69,7 +69,7 @@ String sender = message.getHeaders().get("From");
 
 ## Çözüm
 
-E-posta başlıkları, e-posta iletişiminin isimsiz kahramanlarıdır ve e-postaların hedeflenen alıcılara ulaşmasını sağlayan hayati bilgileri taşır. Aspose.Email for Java, e-posta başlıklarıyla çalışma görevini basitleştirerek geliştiricilerin bu meta verilerin gücünden çeşitli amaçlar için yararlanmasına olanak tanır. Özel başlıklar ayarlamanız, bilgi almanız veya e-posta rotalarını analiz etmeniz gerekiyorsa Aspose.Email, etkili e-posta başlığı yönetimi için ihtiyacınız olan araçları sağlar.
+E-posta başlıkları, e-posta iletişiminin isimsiz kahramanlarıdır ve e-postaların hedeflenen alıcılara ulaşmasını sağlayan hayati bilgileri taşır. Aspose.Email for Java, e-posta başlıklarıyla çalışma görevini basitleştirerek geliştiricilerin bu meta verilerin gücünden çeşitli amaçlarla yararlanmasına olanak tanır. Özel başlıklar ayarlamanız, bilgi almanız veya e-posta rotalarını analiz etmeniz gerekiyorsa Aspose.Email, etkili e-posta başlığı yönetimi için ihtiyacınız olan araçları sağlar.
 
 ## SSS'ler
 

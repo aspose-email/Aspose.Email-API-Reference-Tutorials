@@ -77,7 +77,7 @@ Nu kommer den spännande delen: generera individuella OFT-filer från din mall!
 // Ladda OFT-mallen
 MailMessage template = MailMessage.Load("path/to/template.oft");
 
-// Fyll mallfält med dynamiska data
+// Fyll mallfält med dynamisk data
 string recipientName = "John";
 template.Body = template.Body.Replace("{Name}", recipientName);
 

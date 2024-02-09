@@ -83,7 +83,7 @@ Puede organizar y almacenar correos electrónicos según sea necesario, como gua
 
 ## 6. Manejo de errores
 
-### Manejar las excepciones con gracia
+### Manejar las excepciones con elegancia
 Cuando se trabaja con servicios externos como servidores POP3, es crucial manejar excepciones para garantizar la solidez de su aplicación:
 
 ```java

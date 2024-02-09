@@ -1,6 +1,6 @@
 ---
-title:Diferenciación de archivos adjuntos en línea y regulares: enfoque C#
-linktitle:Diferenciación de archivos adjuntos en línea y regulares: enfoque C#
+title: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
+linktitle: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a diferenciar entre archivos adjuntos de correo electrónico regulares y en línea utilizando Aspose.Email para .NET. Guía completa con ejemplos de código.
 type: docs
@@ -10,7 +10,7 @@ url: /es/net/email-attachment-handling/differentiating-inline-and-regular-attach
 
 ## Introducción a la diferenciación de archivos adjuntos en línea y regulares: enfoque C#
 
-En el mundo del procesamiento de correo electrónico, los archivos adjuntos desempeñan un papel fundamental a la hora de transmitir información adicional junto con el contenido del correo electrónico. Los archivos adjuntos pueden presentarse en diferentes formas, pero los dos tipos más comunes son los archivos adjuntos en línea y los archivos adjuntos regulares. En este artículo, profundizaremos en el ámbito de los archivos adjuntos de correo electrónico, centrándonos específicamente en cómo diferenciar entre archivos adjuntos en línea y regulares usando la biblioteca Aspose.Email para .NET. Esta guía paso a paso le proporcionará la información y los fragmentos de código necesarios para trabajar eficazmente con ambos tipos de archivos adjuntos.
+En el mundo del procesamiento de correo electrónico, los archivos adjuntos desempeñan un papel fundamental a la hora de transmitir información adicional junto con el contenido del correo electrónico. Los archivos adjuntos pueden presentarse en diferentes formas, pero los dos tipos más comunes son los archivos adjuntos en línea y los archivos adjuntos regulares. En este artículo, profundizaremos en el ámbito de los archivos adjuntos de correo electrónico, centrándonos específicamente en cómo diferenciar entre archivos adjuntos en línea y regulares utilizando la biblioteca Aspose.Email para .NET. Esta guía paso a paso le proporcionará la información y los fragmentos de código necesarios para trabajar eficazmente con ambos tipos de archivos adjuntos.
 
 ## Guía paso por paso
 

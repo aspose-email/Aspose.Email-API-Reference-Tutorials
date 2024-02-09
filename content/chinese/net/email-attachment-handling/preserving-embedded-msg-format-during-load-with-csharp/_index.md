@@ -59,7 +59,7 @@ mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions)
 
 ### 我可以将 Aspose.Email for .NET 与其他编程语言一起使用吗？
 
-Aspose.Email for .NET 主要是为 C# 设计的，但它可以集成到用其他 .NET 语言（例如 VB.NET）开发的应用程序中。
+Aspose.Email for .NET 主要是为 C# 设计的，但它可以集成到使用其他 .NET 语言（例如 VB.NET）开发的应用程序中。
 
 ### Aspose.Email for .NET 适合个人和企业使用吗？
 

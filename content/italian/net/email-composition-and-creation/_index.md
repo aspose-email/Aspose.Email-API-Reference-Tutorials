@@ -22,7 +22,7 @@ L'arte della creazione di e-mail è al centro di questo tutorial, in cui Aspose.
 ### [Creazione di una nuova email: implementazione C#](./crafting-a-fresh-email-csharp-implementation/)
 Scopri come creare e-mail dinamiche utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice per un'implementazione senza problemi. Potenzia la tua automazione della comunicazione oggi stesso!
 ### [Costruire un nuovo messaggio di posta in C#](./constructing-a-new-mail-message-in-csharp/)
-Master nella creazione di e-mail in C# utilizzando Aspose.Email per .NET. Una guida completa con esempi di codice. Migliora la tua app ora
+Master nella creazione di e-mail in C# utilizzando Aspose.Email per .NET. Una guida completa con esempi di codice. Migliora la tua app adesso
 ### [Generazione di EML TNEF da MSG in C#](./generating-tnef-eml-from-msg-in-csharp/)
 Impara a generare TNEF EML da MSG utilizzando Aspose.Email per .NET. Guida dettagliata con codice C#. Conversione efficiente del formato e-mail.
 ### [Formazione del formato TNEF da MSG con C#](./forming-tnef-format-from-msg-with-csharp/)

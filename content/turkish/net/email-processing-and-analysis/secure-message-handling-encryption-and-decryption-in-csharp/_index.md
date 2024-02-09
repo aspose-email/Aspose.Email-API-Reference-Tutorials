@@ -18,7 +18,7 @@ Güvenli mesaj işleme, taraflar arasında alınıp verilen mesajların gizlili�
 
 ### Simetrik Şifreleme
 
-Simetrik şifreleme, mesajları hem şifrelemek hem de şifresini çözmek için tek bir gizli anahtar kullanır. Gönderici ve alıcı arasında aynı anahtar paylaşılır. Bu yöntem daha hızlı şifreleme ve şifre çözme süreçleri için etkili olsa da zorluk, gizli anahtarın güvenli bir şekilde paylaşılması ve yönetilmesinde yatmaktadır.
+Simetrik şifreleme, mesajları hem şifrelemek hem de şifresini çözmek için tek bir gizli anahtar kullanır. Gönderici ve alıcı arasında aynı anahtar paylaşılır. Bu yöntem daha hızlı şifreleme ve şifre çözme süreçleri için etkili olsa da buradaki zorluk, gizli anahtarın güvenli bir şekilde paylaşılması ve yönetilmesinde yatmaktadır.
 
 ### Asimetrik Şifreleme
 

@@ -113,7 +113,7 @@ public class BulkEmailSender {
 
 ## Conclusión
 
-En esta guía, aprendió cómo enviar correos electrónicos masivos usando Aspose.Email para Java. Puede personalizar sus mensajes de correo electrónico, agregar destinatarios y enviarlos de manera eficiente a varios destinatarios, lo que la convierte en una herramienta valiosa para la comunicación y el marketing por correo electrónico.
+En esta guía, aprendió cómo enviar correos electrónicos masivos usando Aspose.Email para Java. Puede personalizar sus mensajes de correo electrónico, agregar destinatarios y enviarlos de manera eficiente a múltiples destinatarios, lo que la convierte en una herramienta valiosa para la comunicación y el marketing por correo electrónico.
 
 
 ## Preguntas frecuentes (Preguntas frecuentes)

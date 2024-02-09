@@ -10,7 +10,7 @@ url: /sv/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 
 Har du någonsin undrat hur man extraherar e-postrubriker med C#? E-postrubriker innehåller värdefull information om avsändaren, mottagaren, ämnet och diverse andra detaljer. I den här guiden går vi igenom steg-för-steg-processen för att extrahera e-postrubriker med det kraftfulla Aspose.Email for .NET-biblioteket. Det här biblioteket tillhandahåller en omfattande uppsättning funktioner för att arbeta med e-postmeddelanden i dina .NET-program.
 
-## Introduktion till e-postrubriker
+## Introduktion till e-posthuvuden
 
 E-postrubriker är viktiga komponenter i ett e-postmeddelande som tillhandahåller metadata om själva meddelandet. De inkluderar information som avsändarens e-postadress, mottagarens e-postadress, ämne, datum och mer. Att extrahera e-postrubriker är användbart för olika ändamål, inklusive att analysera äktheten av e-postmeddelanden, spåra e-postens sökväg och kategorisera meddelanden.
 

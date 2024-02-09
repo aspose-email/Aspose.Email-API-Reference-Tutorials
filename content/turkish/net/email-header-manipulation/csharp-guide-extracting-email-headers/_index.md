@@ -12,7 +12,7 @@ C# kullanarak e-posta başlıklarını nasıl çıkaracağınızı hiç merak et
 
 ## E-posta Başlıklarına Giriş
 
-E-posta başlıkları, bir e-posta mesajının, mesajın kendisi hakkında meta veriler sağlayan temel bileşenleridir. Bunlar, gönderenin e-posta adresi, alıcının e-posta adresi, konu, tarih ve daha fazlası gibi bilgileri içerir. E-posta başlıklarını çıkarmak, e-postaların doğruluğunu analiz etmek, e-postanın yolunu izlemek ve mesajları kategorilere ayırmak dahil olmak üzere çeşitli amaçlar için kullanışlıdır.
+E-posta başlıkları, bir e-posta mesajının, mesajın kendisi hakkında meta veriler sağlayan temel bileşenleridir. Bunlar, gönderenin e-posta adresi, alıcının e-posta adresi, konu, tarih ve daha fazlası gibi bilgileri içerir. E-posta başlıklarını ayıklamak, e-postaların doğruluğunu analiz etmek, e-postanın yolunu izlemek ve mesajları kategorilere ayırmak gibi çeşitli amaçlar için kullanışlıdır.
 
 ## Aspose.Email for .NET'e Başlarken
 

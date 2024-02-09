@@ -91,7 +91,7 @@ Il rilevamento di allegati e messaggi incorporati nelle e-mail è un compito cru
 
  È possibile scaricare la libreria Aspose.Email per .NET da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/).
 
-### Posso usare questa guida per altri linguaggi di programmazione?
+### Posso utilizzare questa guida per altri linguaggi di programmazione?
 
 Questa guida è specificatamente pensata per la programmazione C# utilizzando la libreria Aspose.Email per .NET. Tuttavia, i concetti potrebbero essere applicabili con lievi modifiche ad altri linguaggi e librerie.
 

@@ -10,7 +10,7 @@ url: /it/java/securing-email-communications/
 
 In un'era in cui la comunicazione e-mail gioca un ruolo fondamentale sia in ambito personale che professionale, garantire la sicurezza delle informazioni sensibili condivise tramite e-mail è diventato fondamentale. Aspose.Email per Java consente agli sviluppatori di rafforzare le comunicazioni e-mail, fornendo crittografia solida, firme digitali e altre funzionalità di sicurezza. In questo tutorial completo, approfondiamo i vari aspetti della protezione delle comunicazioni e-mail con Aspose.Email per Java.
 
-## Comprendere la crittografia della posta elettronica
+## Comprendere la crittografia delle e-mail
 La crittografia delle e-mail è la prima linea di difesa quando si tratta di proteggere le comunicazioni e-mail. Con Aspose.Email per Java, puoi facilmente implementare potenti algoritmi di crittografia per proteggere il contenuto delle tue e-mail da occhi indiscreti. Ti guidiamo attraverso il processo di configurazione della crittografia, scegliendo i giusti algoritmi di crittografia e garantendo la sicurezza end-to-end per i tuoi messaggi e-mail.
 
 ## Implementazione delle firme digitali

@@ -18,7 +18,7 @@ Innan vi går in i detaljerna måste du ha följande förutsättningar på plats
 
 - Grundläggande förståelse för programmeringsspråket C#
 - Visual Studio installerat på ditt system
-- Aspose.Email för .NET-bibliotek
+- Aspose.Email för .NET-biblioteket
 
 ## Installera Aspose.Email för .NET-biblioteket
 

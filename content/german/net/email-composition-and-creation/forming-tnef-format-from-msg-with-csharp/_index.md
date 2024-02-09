@@ -10,7 +10,7 @@ url: /de/net/email-composition-and-creation/forming-tnef-format-from-msg-with-cs
 
 ##  Einführung in das TNEF-Format und MSG-Dateien
 
-Bei der E-Mail-Kommunikation und dem Datenaustausch spielt das TNEF-Format (Transport Neutral Encapsulation Format) eine entscheidende Rolle. TNEF ist ein proprietäres E-Mail-Anhangformat, das von Microsoft Outlook verwendet wird, um Rich-Text und andere Multimedia-Elemente in einer E-Mail-Nachricht einzukapseln. Andererseits sind MSG-Dateien spezifisch für Outlook und enthalten Informationen wie E-Mails, Anhänge und Metadaten. In diesem Artikel erfahren Sie, wie Sie mit der Leistungsfähigkeit von Aspose.Email für .NET das TNEF-Format aus MSG-Dateien erstellen.
+Bei der E-Mail-Kommunikation und dem Datenaustausch spielt das TNEF-Format (Transport Neutral Encapsulation Format) eine entscheidende Rolle. TNEF ist ein proprietäres E-Mail-Anhangsformat, das von Microsoft Outlook verwendet wird, um Rich-Text und andere Multimedia-Elemente in einer E-Mail-Nachricht einzukapseln. Andererseits sind MSG-Dateien spezifisch für Outlook und enthalten Informationen wie E-Mails, Anhänge und Metadaten. In diesem Artikel erfahren Sie, wie Sie mit der Leistungsfähigkeit von Aspose.Email für .NET das TNEF-Format aus MSG-Dateien erstellen.
 
 ##  Aspose.Email für .NET verstehen
 
@@ -79,7 +79,7 @@ Bevor Sie Ihre Anwendung bereitstellen, ist es wichtig, den Konvertierungsprozes
 
 ##  Abschluss
 
-In diesem Artikel haben wir untersucht, wie man mit Aspose.Email für .NET das TNEF-Format aus MSG-Dateien erstellt. Wir lernten die Bedeutung des TNEF-Formats kennen, diskutierten die Fähigkeiten von Aspose.Email für .NET und gingen Schritt für Schritt durch den Prozess der Konvertierung von MSG-Dateien in das TNEF-Format.
+In diesem Artikel haben wir untersucht, wie man mit Aspose.Email für .NET das TNEF-Format aus MSG-Dateien erstellt. Wir lernten die Bedeutung des TNEF-Formats kennen, diskutierten die Möglichkeiten von Aspose.Email für .NET und gingen Schritt für Schritt durch den Prozess der Konvertierung von MSG-Dateien in das TNEF-Format.
 
 ## FAQs
 

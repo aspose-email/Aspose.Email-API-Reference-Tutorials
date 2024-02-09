@@ -103,7 +103,7 @@ Innan du skickar e-postmeddelanden är det viktigt att verifiera att rubrikerna 
 
 ## 10. Felsökning av rubrikrelaterade problem
 
-Om du stöter på rubrikrelaterade problem, se till att rubriker är korrekt formaterade och följer e-poststandarder. Kontrollera också om det finns konflikter mellan rubriker.
+Om du stöter på rubrikrelaterade problem, se till att rubriker är korrekt formaterade och följer e-poststandarder. Kontrollera även om det finns några konflikter mellan rubriker.
 
 ## 11. Slutsats
 

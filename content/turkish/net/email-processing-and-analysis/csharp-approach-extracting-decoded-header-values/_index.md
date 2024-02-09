@@ -8,7 +8,7 @@ weight: 17
 url: /tr/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
 
-Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i kullanma sürecinde size rehberlik edeceğiz. Aspose.Email for .NET, geliştiricilerin e-posta başlıklarını okuma ve değiştirme de dahil olmak üzere e-posta mesajlarının çeşitli yönleriyle çalışmasına olanak tanıyan güçlü bir kitaplıktır.
+Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i kullanma sürecinde size rehberlik edeceğiz. Aspose.Email for .NET, geliştiricilerin e-posta başlıklarını okumak ve değiştirmek de dahil olmak üzere e-posta mesajlarının çeşitli yönleriyle çalışmasını sağlayan güçlü bir kitaplıktır.
 
 ## Adım 1: Aspose.Email for .NET'i indirin ve yükleyin
 

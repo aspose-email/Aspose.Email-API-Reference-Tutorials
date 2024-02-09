@@ -83,7 +83,7 @@ foreach (AlternateView alternateView in message.AlternateViews)
 
 ## Çözüm
 
-E-postalardaki ekleri ve gömülü mesajları tespit etmek, e-postalarla etkileşime giren uygulamalar için çok önemli bir görevdir. .NET için Aspose.Email kütüphanesi ile bu süreç kolaylaştırılmış ve verimli hale geliyor. Bu kılavuzda özetlenen adımları izleyerek, ekleri ve gömülü mesajları sorunsuz bir şekilde algılayıp işleyebilir, e-postayla ilgili uygulamalarınızın işlevselliğini artırabilirsiniz.
+E-postalardaki ekleri ve gömülü mesajları tespit etmek, e-postalarla etkileşime giren uygulamalar için çok önemli bir görevdir. .NET için Aspose.Email kütüphanesi ile bu süreç kolaylaştırılmış ve verimli hale gelir. Bu kılavuzda özetlenen adımları izleyerek, ekleri ve gömülü mesajları sorunsuz bir şekilde algılayıp işleyebilir, e-postayla ilgili uygulamalarınızın işlevselliğini artırabilirsiniz.
 
 ## SSS'ler
 

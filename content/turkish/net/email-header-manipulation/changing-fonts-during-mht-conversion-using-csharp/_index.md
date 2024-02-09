@@ -97,7 +97,7 @@ Artık MHT dosyalarınızdaki yazı tiplerini değiştirecek bilgi ve araçlara 
 
 ### 3. MHT dönüşümü tüm e-posta istemcileriyle uyumlu mudur?
 
-   MHT dönüşümü, çeşitli e-posta istemcileri arasındaki uyumluluğu artırır, ancak en iyi şekilde görüntülenmesini sağlamak için e-postalarınızı farklı istemcilerde test etmeniz önemlidir.
+   MHT dönüştürme, çeşitli e-posta istemcileri arasındaki uyumluluğu artırır, ancak en iyi şekilde görüntülenmesini sağlamak için e-postalarınızı farklı istemcilerde test etmeniz önemlidir.
 
 ### 4. Aspose.Email for .NET için herhangi bir lisans gereksinimi var mı?
 

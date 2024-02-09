@@ -130,7 +130,7 @@ bool ValidateEmail(string email)
     bool isValidFormat = System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
     if (!isValidFormat) return false;
 
-    // Validation du domaine
+    // Validation de domaine
     var address = new Aspose.Email.Mail.MailAddress(email);
     bool isSyntaxValid = address.IsValidAddress;
     if (!isSyntaxValid) return false;

@@ -73,7 +73,7 @@ Bevor wir uns mit der Implementierung befassen, stellen Sie sicher, dass die fol
    client.Send(message);
    ```
 
-## Ausnahmen behandeln
+## Umgang mit Ausnahmen
 
 1.  Wickeln Sie den E-Mail-Versandcode in a ein`try-catch` Block zur Behandlung von Ausnahmen:
 
@@ -99,7 +99,7 @@ Das Erstellen einer neuen E-Mail mit C# und der Aspose.Email for .NET-Bibliothek
 
  Ja, Sie können ganz einfach Dateien an Ihre E-Mails anhängen`Attachment` Von Aspose.Email für .NET bereitgestellte Klasse.
 
-### Eignet sich Aspose.Email sowohl für die E-Mail-Automatisierung auf Privat- als auch auf Unternehmensebene?
+### Ist Aspose.Email sowohl für die E-Mail-Automatisierung auf Privat- als auch auf Unternehmensebene geeignet?
 
 Absolut! Aspose.Email ist vielseitig und kann sowohl für private als auch für geschäftliche E-Mail-Automatisierungsanforderungen verwendet werden. Aufgrund seiner robusten Eigenschaften eignet es sich für ein breites Anwendungsspektrum.
 

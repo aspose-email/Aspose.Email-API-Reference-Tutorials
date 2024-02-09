@@ -106,7 +106,7 @@ E-postaları DKIM ile imzalamak, e-posta iletişimlerinizin güvenliğini ve ori
 
 ### S1: DKIM nedir ve e-posta güvenliği açısından neden önemlidir?
 
-DKIM, DomainKeys Tanımlanmış Posta anlamına gelir ve e-posta güvenliği açısından önemlidir, çünkü e-posta mesajlarının orijinalliğini doğrulayarak sahtecilik ve kimlik avını önler.
+DKIM, DomainKeys Tanımlanmış Posta anlamına gelir ve e-posta iletilerinin orijinalliğini doğrulayarak sahtecilik ve kimlik avını önlediği için e-posta güvenliği açısından önemlidir.
 
 ### S2: DKIM özel anahtarını nasıl edinebilirim?
 

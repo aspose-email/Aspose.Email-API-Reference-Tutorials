@@ -8,7 +8,7 @@ weight: 12
 url: /es/net/email-event-and-calendar-handling/altering-prodid-in-ics-files-with-csharp/
 ---
 
-Si está trabajando con eventos de calendario en su aplicación C#, es posible que haya tenido que modificar el identificador de producto (ProdID) en los archivos ICS (iCalendar). El ProdID es un componente crítico de un archivo ICS ya que identifica la fuente de los datos del calendario. En este artículo, lo guiaremos a través del proceso de cambiar el ProdID en archivos ICS usando C# con la ayuda de Aspose.Email para .NET.
+Si está trabajando con eventos de calendario en su aplicación C#, es posible que haya tenido que modificar el identificador de producto (ProdID) en archivos ICS (iCalendar). El ProdID es un componente crítico de un archivo ICS ya que identifica la fuente de los datos del calendario. En este artículo, lo guiaremos a través del proceso de cambiar el ProdID en archivos ICS usando C# con la ayuda de Aspose.Email para .NET.
 
 ## Comprender la importancia de ProdID
 

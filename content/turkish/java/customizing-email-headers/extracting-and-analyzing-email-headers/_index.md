@@ -8,7 +8,7 @@ weight: 12
 url: /tr/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
 
-## Aspose.Email ile E-posta Başlıklarını Çıkarmaya ve Analiz Etmeye Giriş
+## Aspose.Email ile E-posta Başlıklarını Çıkarma ve Analiz Etmeye Giriş
 
 Bu makalede, Aspose.Email for Java kullanarak e-posta başlıklarının nasıl çıkarılıp analiz edileceğini inceleyeceğiz. Aspose.Email, geliştiricilerin e-posta başlıklarını ayrıştırma ve değiştirme de dahil olmak üzere e-posta mesajlarıyla çalışmasına olanak tanıyan güçlü bir Java kitaplığıdır. Başlamak için ihtiyaç duyduğunuz kaynak kodunu sağlayarak süreci adım adım ilerleteceğiz.
 

@@ -11,7 +11,7 @@ url: /sv/java/receiving-emails/working-with-imap-protocol/
 den här omfattande guiden går vi igenom processen att arbeta med IMAP (Internet Message Access Protocol) i Aspose.Email för Java. IMAP är ett allmänt använt protokoll för att komma åt och hantera e-postmeddelanden på en e-postserver. Med Aspose.Email för Java kan du enkelt integrera IMAP-funktionalitet i dina Java-applikationer. Låt oss börja!
 
 
-## 1. Introduktion till IMAP-protokoll
+## 1. Introduktion till IMAP-protokollet
 
 IMAP är ett kraftfullt e-postprotokoll som låter dig komma åt och hantera dina e-postmeddelanden på en fjärransluten e-postserver. Det tillhandahåller funktioner för att läsa, söka och organisera e-postmeddelanden, vilket gör det till ett viktigt verktyg för e-postkommunikation.
 

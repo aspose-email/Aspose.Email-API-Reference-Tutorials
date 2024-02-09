@@ -25,7 +25,7 @@ Per iniziare, è necessario installare la libreria Aspose.Email per .NET. È pos
 Prima di poter estrarre gli oggetti incorporati, dobbiamo caricare i messaggi di posta elettronica nella nostra applicazione. Aspose.Email fornisce classi e metodi per caricare e manipolare in modo efficiente i messaggi di posta elettronica in vari formati come EML, MSG e PST.
 
 ```csharp
-// Caricare un messaggio e-mail da un file
+// Caricare un messaggio di posta elettronica da un file
 var message = MailMessage.Load("path/to/email.eml");
 ```
 

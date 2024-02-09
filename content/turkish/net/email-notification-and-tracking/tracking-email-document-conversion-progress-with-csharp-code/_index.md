@@ -12,7 +12,7 @@ Günümüzün dijital çağında, e-posta iletişimi hem kişisel hem de profesy
 
 ## Aspose.Email for .NET'e giriş
 
-Koda dalmadan önce Aspose.Email for .NET'e kısa bir giriş yapalım. Bu güçlü kitaplık, e-posta iletileriyle çalışmak için çeşitli biçimlerdeki e-postaları okumak, yazmak ve dönüştürmek de dahil olmak üzere çok çeşitli özellikler sağlar. Bizim durumumuzda e-posta belgesi dönüşümüne odaklanacağız.
+Koda dalmadan önce Aspose.Email for .NET'e kısa bir giriş yapalım. Bu güçlü kitaplık, e-posta iletileriyle çalışmak için çeşitli biçimlerdeki e-postaları okuma, yazma ve dönüştürme dahil olmak üzere çok çeşitli özellikler sağlar. Bizim durumumuzda e-posta belgesi dönüşümüne odaklanacağız.
 
 ## Ortamınızı Kurma
 

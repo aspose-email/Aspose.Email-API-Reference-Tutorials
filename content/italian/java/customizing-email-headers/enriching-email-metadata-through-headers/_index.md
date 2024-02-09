@@ -23,7 +23,7 @@ I metadati delle e-mail, noti anche come intestazioni delle e-mail, sono come il
 - Message-ID: un identificatore univoco per l'e-mail.
 - Ricevuto: informazioni sul routing dell'e-mail e sui server attraverso i quali è passata.
 
-Le intestazioni delle e-mail sono fondamentali per consentire ai client e ai server di posta elettronica di elaborare e visualizzare correttamente i messaggi. Aiutano a prevenire lo spam, garantiscono una consegna corretta e forniscono contesto al destinatario.
+Le intestazioni delle e-mail sono fondamentali affinché client e server di posta elettronica elaborino e visualizzino correttamente i messaggi. Aiutano a prevenire lo spam, garantiscono una consegna corretta e forniscono contesto al destinatario.
 
 ## Arricchimento dei metadati delle e-mail tramite intestazioni
 
@@ -58,7 +58,7 @@ import com.aspose.email.*;
 Per lavorare con un messaggio e-mail, devi prima caricarlo. Puoi caricare un messaggio email da un file o crearne uno nuovo da zero.
 
 ```java
-// Caricare un messaggio e-mail da un file
+// Caricare un messaggio di posta elettronica da un file
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 

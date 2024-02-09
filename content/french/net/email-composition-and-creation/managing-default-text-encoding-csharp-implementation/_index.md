@@ -33,7 +33,7 @@ Un codage approprié garantit que les données peuvent être échangées de mani
 
 Aspose.Email for .NET est une bibliothèque puissante qui offre des fonctionnalités complètes de traitement des e-mails pour les applications .NET. Il vous permet de créer, manipuler et envoyer des e-mails en utilisant une variété de formats et de protocoles.
 
-## Étape 1 : Installation d'Aspose.Email via NuGet
+## Étape 1 : Installation d'Aspose.Email via NuGet
 
 Pour commencer, vous devez installer la bibliothèque Aspose.Email via NuGet. Ouvrez votre projet dans Visual Studio et utilisez le gestionnaire de packages NuGet pour rechercher et installer le package « Aspose.Email ».
 

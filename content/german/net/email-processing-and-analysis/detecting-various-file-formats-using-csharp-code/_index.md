@@ -51,7 +51,7 @@ FileFormatType formatType = fileInfo.FileFormatType;
 Console.WriteLine($"Detected File Format: {formatType}");
 ```
 
-## Ausnahmen behandeln
+## Umgang mit Ausnahmen
 
 Bei der Arbeit mit Dateiformaten kann es aufgrund falscher oder nicht unterstützter Dateien zu Ausnahmen kommen. Behandeln Sie Ausnahmen, um eine reibungslose Ausführung sicherzustellen:
 

@@ -56,7 +56,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 client.Send(message);
 ```
 
-## Ausnahmen behandeln
+## Umgang mit Ausnahmen
 
 Denken Sie daran, dass Netzwerkprobleme und Serverprobleme zu Ausnahmen beim E-Mail-Versand führen können. Stellen Sie sicher, dass Sie eine ordnungsgemäße Ausnahmebehandlung implementieren, um ein reibungsloses Benutzererlebnis zu gewährleisten.
 

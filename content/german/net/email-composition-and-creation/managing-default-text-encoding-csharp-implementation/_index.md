@@ -17,7 +17,7 @@ Bei der Textkodierung handelt es sich um den Prozess der Umwandlung von für Men
 
 ## Grundlegendes zur Standardtextkodierung
 
-Die Standardtextkodierung bezieht sich auf die Zeichenkodierung, die beim Kodieren oder Dekodieren von Text automatisch verwendet wird, wenn keine spezifische Kodierung angegeben ist. In C# ist die Standardkodierung normalerweise UTF-8, das eine Vielzahl von Zeichen aus verschiedenen Sprachen unterstützt.
+Die Standardtextkodierung bezieht sich auf die Zeichenkodierung, die automatisch beim Kodieren oder Dekodieren von Text verwendet wird, wenn keine spezifische Kodierung angegeben ist. In C# ist die Standardkodierung normalerweise UTF-8, das eine Vielzahl von Zeichen aus verschiedenen Sprachen unterstützt.
 
 ## Bedeutung der richtigen Textkodierung
 

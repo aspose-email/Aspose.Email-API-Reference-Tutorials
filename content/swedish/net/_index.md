@@ -35,7 +35,7 @@ Förbättra appens e-postfunktioner med Aspose.Email för .NET tutorials. Hanter
 Öka e-posthanteringen med Aspose.Email för .NET tutorials. Lär dig strömlinjeformad bearbetning, analys och datadrivna insikter. Steg för steg guide tillhandahålls.
 ### [Manipulering av e-posthuvud](./email-header-manipulation/)
 Hantera e-postrubriker effektivt med Aspose.Email för .NET tutorials. Lär dig att extrahera, modifiera och anpassa rubriker för förbättrad kommunikation.
-### [E-posthantering och kalenderhantering](./email-event-and-calendar-handling/)
+### [E-posthändelse och kalenderhantering](./email-event-and-calendar-handling/)
 Effektivisera hantering av e-posthändelser och kalenderhantering med Aspose.Email för .NET-tutorials. Lär dig att automatisera e-posthändelser och sömlöst integrera kalenderfunktioner.
 ### [E-postmeddelande och spårning](./email-notification-and-tracking/)
 Implementera e-postmeddelanden och spårningsfunktioner med Aspose.Email för .NET-tutorials. Automatisera aviseringar och få insikter i e-postmottagarnas interaktioner.

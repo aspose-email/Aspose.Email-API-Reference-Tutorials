@@ -28,7 +28,7 @@ Låt oss börja med att skapa ett nytt Java-projekt i din föredragna IDE. När 
 
 ## Steg 2: Analysera e-postrubriker
 
- Nu när vi har satt upp vårt projekt kan vi börja analysera e-postrubriker. E-postrubriker lagras vanligtvis i`Message` klass av Aspose.Email-biblioteket. Här är ett enkelt kodavsnitt för att extrahera och skriva ut e-postrubriker från ett e-postmeddelande:
+ Nu när vi har satt upp vårt projekt kan vi börja analysera e-postrubriker. E-postrubriker lagras vanligtvis i`Message` klass i Aspose.Email-biblioteket. Här är ett enkelt kodavsnitt för att extrahera och skriva ut e-postrubriker från ett e-postmeddelande:
 
 ```java
 // Ladda e-postmeddelandet
