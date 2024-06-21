@@ -33,7 +33,7 @@ Passons maintenant au code pour extraire les valeurs d'en-tête décodées d'un 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

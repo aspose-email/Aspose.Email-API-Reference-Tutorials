@@ -39,7 +39,7 @@ Tout d’abord, vous avez besoin d’un e-mail avec lequel travailler. Chargez l
 Utilisez l'extrait de code ci-dessous pour récupérer toutes les pièces jointes du message électronique chargé :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Charger le message électronique (supposé : 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

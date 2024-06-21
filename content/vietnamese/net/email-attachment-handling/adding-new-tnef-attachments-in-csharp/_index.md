@@ -29,7 +29,7 @@ Bắt đầu bằng cách tạo một dự án C# mới trong Visual Studio. Ch�
 Để bắt đầu, hãy tải một email hiện có có chứa tệp đính kèm TNEF. Bạn sẽ cần cung cấp đường dẫn đến tệp email.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Tải email có tệp đính kèm TNEF
 MsgLoadOptions options = new MsgLoadOptions();

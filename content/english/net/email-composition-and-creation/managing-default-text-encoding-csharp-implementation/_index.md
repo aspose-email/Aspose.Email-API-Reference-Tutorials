@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 When sending an email, you can specify a custom text encoding for the email body. This can be useful when sending emails in languages that require specific encodings.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Create a new email message
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

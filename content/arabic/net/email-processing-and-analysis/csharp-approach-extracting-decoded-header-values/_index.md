@@ -33,7 +33,7 @@ url: /ar/net/email-processing-and-analysis/csharp-approach-extracting-decoded-he
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

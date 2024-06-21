@@ -37,7 +37,7 @@ Sau khi bạn đã thiết lập dự án và cài đặt thư viện, hãy tả
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

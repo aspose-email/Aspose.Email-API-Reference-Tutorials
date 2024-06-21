@@ -33,7 +33,7 @@ Ora tuffiamoci nel codice per estrarre i valori dell'intestazione decodificati d
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

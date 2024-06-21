@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 عند إرسال بريد إلكتروني، يمكنك تحديد ترميز نص مخصص لنص البريد الإلكتروني. يمكن أن يكون هذا مفيدًا عند إرسال رسائل البريد الإلكتروني باللغات التي تتطلب ترميزات معينة.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // إنشاء رسالة بريد إلكتروني جديدة
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

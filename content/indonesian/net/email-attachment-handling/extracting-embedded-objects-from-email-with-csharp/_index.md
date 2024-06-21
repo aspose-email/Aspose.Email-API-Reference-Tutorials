@@ -23,7 +23,7 @@ Untuk mengekstrak objek yang disematkan dari email, Anda harus memuat dan mengur
 ```csharp
 // Impor namespace yang diperlukan
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Muat pesan email
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Berikut kode sumber lengkap untuk mengekstrak objek yang disematkan dari email m
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

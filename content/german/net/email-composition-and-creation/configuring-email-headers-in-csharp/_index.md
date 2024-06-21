@@ -40,7 +40,7 @@ Gehen Sie folgendermaßen vor, um eine E-Mail mit benutzerdefinierten Headern zu
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Erstellen Sie eine neue Instanz der MailMessage-Klasse
 MailMessage message = new MailMessage();

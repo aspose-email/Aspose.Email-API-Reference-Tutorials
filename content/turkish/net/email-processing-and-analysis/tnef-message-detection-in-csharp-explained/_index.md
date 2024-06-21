@@ -35,7 +35,7 @@ C# kodunuzda gerekli ad alanlarını içe aktarın:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Adım 4: TNEF Mesajını Yükleyin ve Algılayın

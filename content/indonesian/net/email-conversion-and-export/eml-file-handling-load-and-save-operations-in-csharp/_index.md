@@ -25,7 +25,7 @@ Memuat file EML adalah langkah pertama dalam menangani pesan email. Aspose.Email
 Untuk memuat satu file EML, Anda dapat menggunakan cuplikan kode berikut:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Muat berkas EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Jika Anda memiliki direktori yang berisi beberapa file EML, Anda dapat memuatnya dalam satu batch:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Muat beberapa file EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Setelah memuat file EML, Anda dapat mengakses dan mengubah kontennya menggunakan
 Anda dapat mengakses berbagai properti email yang dimuat, seperti pengirim, penerima, subjek, dan isi:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Akses properti email
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Untuk mengubah penerima dan subjek, Anda dapat menggunakan kode berikut:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Ubah penerima dan subjek
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Lampiran adalah komponen penting dari pesan email. Anda dapat mengakses dan mengelola lampiran menggunakan Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Akses lampiran
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Setelah melakukan modifikasi yang diperlukan pada konten EML, Anda dapat menyimp
 Untuk menyimpan satu pesan email ke file EML, gunakan kode berikut:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Simpan pesan yang diubah
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Untuk menyimpan pesan email yang dimodifikasi secara massal, ulangi pesan-pesan tersebut dan simpan masing-masing pesan:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Simpan pesan yang diubah secara massal
 foreach (MailMessage modifiedMessage in modifiedMessages)

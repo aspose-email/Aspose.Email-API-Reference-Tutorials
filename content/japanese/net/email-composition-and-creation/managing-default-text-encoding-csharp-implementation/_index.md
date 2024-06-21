@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 電子メールを送信するときに、電子メール本文のカスタム テキスト エンコーディングを指定できます。これは、特定のエンコードを必要とする言語で電子メールを送信する場合に便利です。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //新しい電子メール メッセージを作成する
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

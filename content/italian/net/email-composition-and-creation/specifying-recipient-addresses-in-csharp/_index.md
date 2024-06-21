@@ -39,7 +39,7 @@ Nel file di codice C#, importa gli spazi dei nomi necessari per l'utilizzo delle
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Creare e configurare il messaggio e-mail

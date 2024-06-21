@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Při odesílání e-mailu můžete zadat vlastní kódování textu pro tělo e-mailu. To může být užitečné při odesílání e-mailů v jazycích, které vyžadují specifické kódování.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Vytvořte novou e-mailovou zprávu
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

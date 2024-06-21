@@ -35,7 +35,7 @@ Importieren Sie in Ihren C#-Code die erforderlichen Namespaces:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Schritt 4: TNEF-Nachricht laden und erkennen

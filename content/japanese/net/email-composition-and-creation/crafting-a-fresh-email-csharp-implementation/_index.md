@@ -29,7 +29,7 @@ url: /ja/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2. のインスタンスを作成します。`MailMessage`クラス：

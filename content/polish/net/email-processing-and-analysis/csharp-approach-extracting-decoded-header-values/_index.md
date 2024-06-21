@@ -33,7 +33,7 @@ Zagłębmy się teraz w kod, aby wyodrębnić zdekodowane wartości nagłówka z
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

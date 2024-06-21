@@ -25,7 +25,7 @@ Le chargement de fichiers EML est la première étape pour travailler avec des m
 Pour charger un seul fichier EML, vous pouvez utiliser l'extrait de code suivant :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Charger le fichier EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Si vous disposez d'un répertoire contenant plusieurs fichiers EML, vous pouvez les charger par lots :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Charger plusieurs fichiers EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Après avoir chargé un fichier EML, vous pouvez accéder et modifier son conten
 Vous pouvez accéder à diverses propriétés de l'e-mail chargé, telles que l'expéditeur, les destinataires, l'objet et le corps :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Accéder aux propriétés de messagerie
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Pour modifier les destinataires et le sujet, vous pouvez utiliser le code suivant :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Modifier les destinataires et le sujet
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Les pièces jointes sont des éléments cruciaux des messages électroniques. Vous pouvez accéder et gérer les pièces jointes à l'aide d'Aspose.Email :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Accéder aux pièces jointes
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Après avoir apporté les modifications nécessaires au contenu EML, vous pouvez
 Pour enregistrer un seul e-mail dans un fichier EML, utilisez le code suivant :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Enregistrer le message modifié
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Pour enregistrer en masse les e-mails modifiés, parcourez les messages et enregistrez chacun d'entre eux :
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Enregistrer en masse les messages modifiés
 foreach (MailMessage modifiedMessage in modifiedMessages)

@@ -38,7 +38,7 @@ Aspose.Email for .NET은 C# 애플리케이션에서 이메일 관련 작업을 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## 이메일 서버에 연결

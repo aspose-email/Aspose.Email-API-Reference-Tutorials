@@ -36,7 +36,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. Utwórz nową instancję MailMessage.

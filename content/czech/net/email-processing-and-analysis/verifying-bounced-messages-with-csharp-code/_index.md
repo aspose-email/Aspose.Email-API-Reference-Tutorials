@@ -38,7 +38,7 @@ Jakmile budete mít svůj projekt nastaven, budete muset přidat potřebné refe
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Připojování k e-mailovému serveru

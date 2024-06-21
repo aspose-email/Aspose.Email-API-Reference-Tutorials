@@ -29,7 +29,7 @@ Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin 
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  Bir örneğini oluşturun`MailMessage` sınıf:

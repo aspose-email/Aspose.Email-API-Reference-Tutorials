@@ -39,7 +39,7 @@ url: /el/net/email-composition-and-creation/specifying-recipient-addresses-in-cs
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Δημιουργήστε και διαμορφώστε το μήνυμα email

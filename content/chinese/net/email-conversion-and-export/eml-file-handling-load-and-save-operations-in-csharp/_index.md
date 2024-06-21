@@ -25,7 +25,7 @@ url: /zh/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 要加载单个 EML 文件，您可以使用以下代码片段：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //加载 EML 文件
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 如果你的目录包含多个EML文件，你可以批量加载它们：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //加载多个 EML 文件
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 您可以访问已加载电子邮件的各种属性，例如发件人、收件人、主题和正文：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //访问电子邮件属性
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 要修改收件人和主题，可以使用以下代码：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //修改收件人和主题
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 附件是电子邮件的重要组成部分。您可以使用 Aspose.Email 访问和管理附件：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //访问附件
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 要将单封电子邮件保存到 EML 文件，请使用以下代码：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //保存修改后的消息
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 要批量保存修改后的电子邮件，请迭代消息并保存每一条：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //批量保存修改的消息
 foreach (MailMessage modifiedMessage in modifiedMessages)

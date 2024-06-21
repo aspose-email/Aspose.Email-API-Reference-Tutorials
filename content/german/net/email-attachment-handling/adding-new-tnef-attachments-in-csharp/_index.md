@@ -29,7 +29,7 @@ Um mit E-Mails und TNEF-Anhängen arbeiten zu können, müssen wir die Aspose.Em
 Laden wir zunächst eine vorhandene E-Mail, die einen TNEF-Anhang enthält. Sie müssen den Pfad zur E-Mail-Datei angeben.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Laden Sie die E-Mail mit dem TNEF-Anhang
 MsgLoadOptions options = new MsgLoadOptions();

@@ -25,7 +25,7 @@ url: /el/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 Για να φορτώσετε ένα μεμονωμένο αρχείο EML, μπορείτε να χρησιμοποιήσετε το ακόλουθο απόσπασμα κώδικα:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Φόρτωση αρχείου EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Εάν έχετε έναν κατάλογο που περιέχει πολλά αρχεία EML, μπορείτε να τα φορτώσετε σε μια δέσμη:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Φόρτωση πολλών αρχείων EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 Μπορείτε να αποκτήσετε πρόσβαση σε διάφορες ιδιότητες του φορτωμένου email, όπως αποστολέα, παραλήπτες, θέμα και σώμα:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Πρόσβαση στις ιδιότητες email
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Για να τροποποιήσετε τους παραλήπτες και το θέμα, μπορείτε να χρησιμοποιήσετε τον ακόλουθο κώδικα:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Τροποποίηση παραληπτών και θέματος
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Τα συνημμένα είναι κρίσιμα στοιχεία των μηνυμάτων email. Μπορείτε να αποκτήσετε πρόσβαση και να διαχειριστείτε συνημμένα χρησιμοποιώντας το Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Πρόσβαση σε συνημμένα
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 Για να αποθηκεύσετε ένα μόνο μήνυμα email σε ένα αρχείο EML, χρησιμοποιήστε τον ακόλουθο κώδικα:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Αποθήκευση τροποποιημένου μηνύματος
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Για μαζική αποθήκευση τροποποιημένων μηνυμάτων email, επαναλάβετε τα μηνύματα και αποθηκεύστε το καθένα:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Μαζική αποθήκευση τροποποιημένων μηνυμάτων
 foreach (MailMessage modifiedMessage in modifiedMessages)

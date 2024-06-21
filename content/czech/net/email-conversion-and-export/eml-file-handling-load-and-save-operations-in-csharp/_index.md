@@ -25,7 +25,7 @@ Načítání souborů EML je prvním krokem při práci s e-mailovými zprávami
 Chcete-li načíst jeden soubor EML, můžete použít následující fragment kódu:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Načtěte soubor EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Pokud máte adresář obsahující více souborů EML, můžete je načíst v dávce:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Načtěte více souborů EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Po načtení souboru EML můžete přistupovat k jeho obsahu a upravovat jej pom
 Máte přístup k různým vlastnostem načteného e-mailu, jako je odesílatel, příjemci, předmět a tělo:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Přístup k vlastnostem e-mailu
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Chcete-li upravit příjemce a předmět, můžete použít následující kód:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Upravte příjemce a předmět
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Přílohy jsou zásadní součástí e-mailových zpráv. K přílohám můžete přistupovat a spravovat je pomocí Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Přístup k přílohám
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Po provedení nezbytných úprav obsahu EML můžete e-mailovou zprávu uložit 
 Chcete-li uložit jednu e-mailovou zprávu do souboru EML, použijte následující kód:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Uložit upravenou zprávu
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Pro hromadné ukládání upravených e-mailových zpráv procházejte zprávy a každou z nich uložte:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Hromadné ukládání upravených zpráv
 foreach (MailMessage modifiedMessage in modifiedMessages)

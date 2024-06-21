@@ -33,7 +33,7 @@ Nyní se pojďme ponořit do kódu pro extrahování dekódovaných hodnot záhl
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

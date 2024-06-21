@@ -39,7 +39,7 @@ C# 코드 파일에서 Aspose.Email 클래스를 사용하는 데 필요한 네�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. 이메일 메시지 생성 및 구성

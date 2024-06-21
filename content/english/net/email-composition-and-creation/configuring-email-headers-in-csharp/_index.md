@@ -40,7 +40,7 @@ To send an email with custom headers, follow these steps:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Create a new instance of the MailMessage class
 MailMessage message = new MailMessage();

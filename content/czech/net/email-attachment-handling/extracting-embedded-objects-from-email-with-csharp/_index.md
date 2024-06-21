@@ -23,7 +23,7 @@ Chcete-li extrahovat vložené objekty z e-mailu, musíte nejprve načíst a ana
 ```csharp
 // Importujte potřebné jmenné prostory
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Načtěte e-mailovou zprávu
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Zde je kompletní zdrojový kód pro extrahování vložených objektů z e-mail
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

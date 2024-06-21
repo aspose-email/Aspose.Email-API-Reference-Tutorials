@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 استخدم مقتطف الشفرة أدناه لاسترداد جميع المرفقات من رسالة البريد الإلكتروني المحملة:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // قم بتحميل رسالة البريد الإلكتروني (المفترض: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

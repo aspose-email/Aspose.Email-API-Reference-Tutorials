@@ -34,7 +34,7 @@ Der erste Schritt besteht darin, die E-Mail-Nachricht zu laden, die den Anhang e
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Laden Sie die E-Mail-Nachricht
 MailMessage message = MailMessage.Load("path/to/email.msg");

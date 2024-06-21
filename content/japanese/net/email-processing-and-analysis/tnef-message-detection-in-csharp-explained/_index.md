@@ -35,7 +35,7 @@ C# コードで、必要な名前空間をインポートします。
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## ステップ 4: TNEF メッセージのロードと検出

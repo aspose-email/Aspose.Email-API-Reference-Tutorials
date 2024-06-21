@@ -29,7 +29,7 @@ url: /ja/net/email-composition-and-creation/setting-alternative-text-for-images-
 ## ステップ 3: using ステートメントを追加する
 
 ```csharp
-using Aspose.Email.Mail;
+
 using Aspose.Email.Mime;
 ```
 

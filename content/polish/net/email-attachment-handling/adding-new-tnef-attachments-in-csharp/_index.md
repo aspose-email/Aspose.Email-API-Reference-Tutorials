@@ -29,7 +29,7 @@ Aby pracować z wiadomościami e-mail i załącznikami TNEF, musimy dodać do na
 Na początek załadujmy istniejącą wiadomość e-mail zawierającą załącznik w formacie TNEF. Musisz podać ścieżkę do pliku e-mail.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Załaduj wiadomość e-mail z załącznikiem TNEF
 MsgLoadOptions options = new MsgLoadOptions();

@@ -38,7 +38,7 @@ När du har konfigurerat ditt projekt måste du lägga till nödvändiga referen
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Ansluter till e-postservern

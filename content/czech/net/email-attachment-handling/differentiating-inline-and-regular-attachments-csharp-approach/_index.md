@@ -39,7 +39,7 @@ Nejprve potřebujete e-mailovou zprávu, se kterou budete pracovat. Načtěte e-
 Pomocí níže uvedeného fragmentu kódu načtěte všechny přílohy z načtené e-mailové zprávy:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Načtěte e-mailovou zprávu (předpokládá se: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

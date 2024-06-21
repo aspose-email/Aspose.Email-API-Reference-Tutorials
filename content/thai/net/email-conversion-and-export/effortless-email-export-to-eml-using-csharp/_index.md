@@ -37,7 +37,7 @@ Aspose.Email สำหรับ .NET เป็นไลบรารี่ที�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // โหลดข้อความอีเมลต้นฉบับ
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

@@ -38,7 +38,7 @@ url: /hi/net/email-processing-and-analysis/verifying-bounced-messages-with-cshar
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## ईमेल सर्वर से कनेक्ट हो रहा है

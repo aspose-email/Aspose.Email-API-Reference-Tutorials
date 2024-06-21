@@ -35,7 +35,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## ขั้นตอนที่ 4: โหลดและตรวจจับข้อความ TNEF

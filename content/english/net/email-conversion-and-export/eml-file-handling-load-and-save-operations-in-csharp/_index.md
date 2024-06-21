@@ -25,7 +25,7 @@ Loading EML files is the first step in working with email messages. Aspose.Email
 To load a single EML file, you can use the following code snippet:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Load EML file
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 If you have a directory containing multiple EML files, you can load them in a batch:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Load multiple EML files
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ After loading an EML file, you can access and modify its content using the Aspos
 You can access various properties of the loaded email, such as sender, recipients, subject, and body:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Access email properties
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 To modify recipients and subject, you can use the following code:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Modify recipients and subject
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Attachments are crucial components of email messages. You can access and manage attachments using Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Access attachments
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ After making necessary modifications to the EML content, you can save the email 
 To save a single email message to an EML file, use the following code:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Save modified message
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 For bulk saving of modified email messages, iterate through the messages and save each one:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Bulk save modified messages
 foreach (MailMessage modifiedMessage in modifiedMessages)

@@ -35,7 +35,7 @@ In your C# code, import the necessary namespaces:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Step 4: Load and Detect TNEF Message

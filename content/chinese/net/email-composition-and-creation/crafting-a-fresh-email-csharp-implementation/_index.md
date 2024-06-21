@@ -29,7 +29,7 @@ url: /zh/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2. 创建一个实例`MailMessage`班级：

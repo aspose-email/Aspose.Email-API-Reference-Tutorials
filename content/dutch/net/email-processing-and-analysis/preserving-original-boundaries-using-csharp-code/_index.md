@@ -34,7 +34,7 @@ De eerste stap is het laden van het e-mailbericht met de bijlage waarmee u wilt 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Laad het e-mailbericht
 MailMessage message = MailMessage.Load("path/to/email.msg");

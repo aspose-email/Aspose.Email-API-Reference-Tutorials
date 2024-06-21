@@ -37,7 +37,7 @@ Una volta configurato il progetto e installata la libreria, carichiamo un messag
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

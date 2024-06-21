@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Lors de l'envoi d'un e-mail, vous pouvez spécifier un encodage de texte personnalisé pour le corps de l'e-mail. Cela peut être utile lors de l’envoi d’e-mails dans des langues nécessitant des encodages spécifiques.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Créer un nouveau message électronique
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

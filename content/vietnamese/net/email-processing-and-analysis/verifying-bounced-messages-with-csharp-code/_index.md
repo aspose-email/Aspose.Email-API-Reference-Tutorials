@@ -38,7 +38,7 @@ Sau khi thiết lập dự án của mình, bạn sẽ cần thêm các tham chi
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Kết nối với máy chủ Email

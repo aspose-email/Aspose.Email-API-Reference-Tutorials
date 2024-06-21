@@ -39,7 +39,7 @@ Zunächst benötigen Sie eine E-Mail-Nachricht, mit der Sie arbeiten können. La
 Verwenden Sie den folgenden Codeausschnitt, um alle Anhänge der geladenen E-Mail-Nachricht abzurufen:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Laden Sie die E-Mail-Nachricht (angenommen: „emailMessage“).
 AttachmentCollection attachments = emailMessage.Attachments;

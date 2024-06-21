@@ -29,7 +29,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő el�
 ## 3. lépés: Adjon hozzá utasításokat
 
 ```csharp
-using Aspose.Email.Mail;
+
 using Aspose.Email.Mime;
 ```
 

@@ -40,7 +40,7 @@ Pour envoyer un e-mail avec des en-têtes personnalisés, procédez comme suit 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Créer une nouvelle instance de la classe MailMessage
 MailMessage message = new MailMessage();

@@ -23,7 +23,7 @@ Các đối tượng được nhúng trong email đề cập đến các tệp �
 ```csharp
 // Nhập các không gian tên cần thiết
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Tải tin nhắn email
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Khi bạn đã xác định và trích xuất các đối tượng được nhú
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Quando invii un'e-mail, puoi specificare una codifica di testo personalizzata per il corpo dell'e-mail. Ciò può essere utile quando si inviano e-mail in lingue che richiedono codifiche specifiche.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Crea un nuovo messaggio di posta elettronica
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

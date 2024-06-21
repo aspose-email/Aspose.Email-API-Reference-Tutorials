@@ -25,7 +25,7 @@ Carregar arquivos EML é a primeira etapa para trabalhar com mensagens de e-mail
 Para carregar um único arquivo EML, você pode usar o seguinte trecho de código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carregar arquivo EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Se você tiver um diretório contendo vários arquivos EML, poderá carregá-los em lote:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Carregar vários arquivos EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Depois de carregar um arquivo EML, você pode acessar e modificar seu conteúdo 
 Você pode acessar várias propriedades do email carregado, como remetente, destinatários, assunto e corpo:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Acessar propriedades de e-mail
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Para modificar destinatários e assunto, você pode usar o seguinte código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Modificar destinatários e assunto
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Anexos são componentes cruciais de mensagens de e-mail. Você pode acessar e gerenciar anexos usando Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Acesse anexos
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Depois de fazer as modificações necessárias no conteúdo EML, você pode salv
 Para salvar uma única mensagem de e-mail em um arquivo EML, use o seguinte código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Salvar mensagem modificada
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Para salvar em massa mensagens de e-mail modificadas, percorra as mensagens e salve cada uma delas:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Salvar mensagens modificadas em massa
 foreach (MailMessage modifiedMessage in modifiedMessages)

@@ -40,7 +40,7 @@ Para enviar um e-mail com cabeçalhos personalizados, siga estas etapas:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Crie uma nova instância da classe MailMessage
 MailMessage message = new MailMessage();

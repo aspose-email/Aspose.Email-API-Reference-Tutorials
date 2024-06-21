@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Beim Senden einer E-Mail können Sie eine benutzerdefinierte Textcodierung für den E-Mail-Text festlegen. Dies kann nützlich sein, wenn Sie E-Mails in Sprachen senden, die bestimmte Kodierungen erfordern.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Erstellen Sie eine neue E-Mail-Nachricht
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

@@ -35,7 +35,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Βήμα 4: Φόρτωση και ανίχνευση μηνύματος TNEF

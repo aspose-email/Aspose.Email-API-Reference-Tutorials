@@ -39,7 +39,7 @@ Először is szüksége van egy e-mail üzenetre. Töltse be az e-mail üzenetet
 Az alábbi kódrészlet segítségével lekérheti a betöltött e-mail üzenet összes mellékletét:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Töltse be az e-mail üzenetet (feltételezett: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

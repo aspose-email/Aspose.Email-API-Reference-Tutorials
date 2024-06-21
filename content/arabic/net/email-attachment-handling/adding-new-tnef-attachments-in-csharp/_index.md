@@ -29,7 +29,7 @@ url: /ar/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 للبدء، لنقم بتحميل بريد إلكتروني موجود يحتوي على مرفق TNEF. ستحتاج إلى توفير المسار إلى ملف البريد الإلكتروني.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // قم بتحميل البريد الإلكتروني بمرفق TNEF
 MsgLoadOptions options = new MsgLoadOptions();

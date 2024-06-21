@@ -34,7 +34,7 @@ The first step is to load the email message that contains the attachment you wan
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Load the email message
 MailMessage message = MailMessage.Load("path/to/email.msg");

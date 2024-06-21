@@ -36,7 +36,7 @@ url: /ja/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. 新しい MailMessage インスタンスを作成します。

@@ -40,7 +40,7 @@ Följ dessa steg för att skicka ett e-postmeddelande med anpassade rubriker:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Skapa en ny instans av klassen MailMessage
 MailMessage message = new MailMessage();

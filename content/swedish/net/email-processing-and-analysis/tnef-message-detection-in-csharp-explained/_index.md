@@ -35,7 +35,7 @@ Importera de nödvändiga namnrymden i din C#-kod:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Steg 4: Ladda och identifiera TNEF-meddelande

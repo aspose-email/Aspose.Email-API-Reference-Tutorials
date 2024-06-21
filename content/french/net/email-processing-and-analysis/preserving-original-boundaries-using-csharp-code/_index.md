@@ -34,7 +34,7 @@ La première étape consiste à charger le message électronique contenant la pi
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Charger le message électronique
 MailMessage message = MailMessage.Load("path/to/email.msg");

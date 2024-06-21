@@ -40,7 +40,7 @@ Egyéni fejléceket tartalmazó e-mail küldéséhez kövesse az alábbi lépés
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Hozzon létre egy új példányt a MailMessage osztályból
 MailMessage message = new MailMessage();

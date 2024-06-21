@@ -37,7 +37,7 @@ Aspose.Email for .NET은 개발자가 .NET 애플리케이션에서 이메일 �
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // 원본 이메일 메시지 로드
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

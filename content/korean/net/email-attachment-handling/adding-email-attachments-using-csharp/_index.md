@@ -36,7 +36,7 @@ url: /ko/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. 새 MailMessage 인스턴스를 만듭니다.

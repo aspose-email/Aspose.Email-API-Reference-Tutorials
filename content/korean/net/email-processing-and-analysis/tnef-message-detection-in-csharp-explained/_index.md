@@ -35,7 +35,7 @@ C# 코드에서 필요한 네임스페이스를 가져옵니다.
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## 4단계: TNEF 메시지 로드 및 감지

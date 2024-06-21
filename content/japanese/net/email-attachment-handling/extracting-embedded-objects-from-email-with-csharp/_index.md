@@ -23,7 +23,7 @@ url: /ja/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 ```csharp
 //必要な名前空間をインポートする
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 //電子メールメッセージをロードする
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Aspose.Email for .NET を使用して電子メールから埋め込みオブジ�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

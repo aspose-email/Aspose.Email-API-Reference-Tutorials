@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 發送電子郵件時，您可以為電子郵件正文指定自訂文字編碼。當以需要特定編碼的語言發送電子郵件時，這非常有用。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //建立新電子郵件
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

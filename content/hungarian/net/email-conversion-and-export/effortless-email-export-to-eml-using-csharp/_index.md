@@ -37,7 +37,7 @@ Az e-mailek EML formátumba exportálásához először be kell töltenünk az e
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Töltse be a forrás e-mail üzenetet
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

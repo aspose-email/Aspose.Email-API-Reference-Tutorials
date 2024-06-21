@@ -40,7 +40,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // MailMessage वर्ग का एक नया उदाहरण बनाएँ
 MailMessage message = new MailMessage();

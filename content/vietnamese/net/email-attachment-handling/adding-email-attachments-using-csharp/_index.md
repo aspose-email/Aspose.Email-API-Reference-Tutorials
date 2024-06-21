@@ -36,7 +36,7 @@ Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những đi�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. Tạo một phiên bản MailMessage mới.

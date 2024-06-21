@@ -25,7 +25,7 @@ Das Laden von EML-Dateien ist der erste Schritt bei der Arbeit mit E-Mail-Nachri
 Um eine einzelne EML-Datei zu laden, können Sie den folgenden Codeausschnitt verwenden:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EML-Datei laden
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Wenn Sie über ein Verzeichnis verfügen, das mehrere EML-Dateien enthält, können Sie diese in einem Stapel laden:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Laden Sie mehrere EML-Dateien
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Nach dem Laden einer EML-Datei können Sie mithilfe der Aspose.Email-Bibliothek 
 Sie können auf verschiedene Eigenschaften der geladenen E-Mail zugreifen, z. B. Absender, Empfänger, Betreff und Text:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Greifen Sie auf die E-Mail-Eigenschaften zu
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Um Empfänger und Betreff zu ändern, können Sie den folgenden Code verwenden:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Empfänger und Betreff ändern
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Anhänge sind wichtige Bestandteile von E-Mail-Nachrichten. Mit Aspose.Email können Sie auf Anhänge zugreifen und diese verwalten:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Auf Anhänge zugreifen
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Nachdem Sie die erforderlichen Änderungen am EML-Inhalt vorgenommen haben, kön
 Um eine einzelne E-Mail-Nachricht in einer EML-Datei zu speichern, verwenden Sie den folgenden Code:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Geänderte Nachricht speichern
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Um eine Massenspeicherung geänderter E-Mail-Nachrichten durchzuführen, durchlaufen Sie die Nachrichten und speichern Sie jede einzelne:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Geänderte Nachrichten in großen Mengen speichern
 foreach (MailMessage modifiedMessage in modifiedMessages)

@@ -38,7 +38,7 @@ Sobald Sie Ihr Projekt eingerichtet haben, müssen Sie die erforderlichen Refere
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Verbindung zum E-Mail-Server herstellen

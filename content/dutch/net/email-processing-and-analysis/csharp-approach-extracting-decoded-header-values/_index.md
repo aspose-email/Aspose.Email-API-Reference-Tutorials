@@ -33,7 +33,7 @@ Laten we nu eens in de code duiken om gedecodeerde headerwaarden uit een e-mailb
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

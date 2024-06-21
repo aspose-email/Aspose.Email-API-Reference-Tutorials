@@ -29,7 +29,7 @@ url: /hi/net/email-composition-and-creation/setting-alternative-text-for-images-
 ## चरण 3: कथनों का उपयोग करके जोड़ें
 
 ```csharp
-using Aspose.Email.Mail;
+
 using Aspose.Email.Mime;
 ```
 

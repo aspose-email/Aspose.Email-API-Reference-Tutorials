@@ -23,7 +23,7 @@ Bir e-postadan katıştırılmış nesneleri çıkarmak için öncelikle e-posta
 ```csharp
 // Gerekli ad alanlarını içe aktarın
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // E-posta mesajını yükle
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Aspose.Email for .NET kullanarak bir e-postadan gömülü nesneleri çıkarmak i
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

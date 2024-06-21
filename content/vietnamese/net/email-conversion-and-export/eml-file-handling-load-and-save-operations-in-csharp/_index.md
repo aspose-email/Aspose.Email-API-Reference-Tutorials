@@ -25,7 +25,7 @@ Tải tệp EML là bước đầu tiên khi làm việc với email. Aspose.Ema
 Để tải một tệp EML, bạn có thể sử dụng đoạn mã sau:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Tải tệp EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Nếu bạn có một thư mục chứa nhiều tệp EML, bạn có thể tải chúng theo đợt:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Tải nhiều tệp EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Sau khi tải tệp EML, bạn có thể truy cập và sửa đổi nội dung 
 Bạn có thể truy cập các thuộc tính khác nhau của email đã tải, chẳng hạn như người gửi, người nhận, chủ đề và nội dung:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Truy cập thuộc tính email
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Để sửa đổi người nhận và chủ đề, bạn có thể sử dụng đoạn mã sau:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Sửa đổi người nhận và chủ đề
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Tệp đính kèm là thành phần quan trọng của email. Bạn có thể truy cập và quản lý tệp đính kèm bằng Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Truy cập tệp đính kèm
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Sau khi thực hiện các sửa đổi cần thiết đối với nội dung EM
 Để lưu một email vào tệp EML, hãy sử dụng mã sau:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Lưu tin nhắn đã sửa đổi
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Để lưu hàng loạt các email đã sửa đổi, hãy lặp lại các tin nhắn và lưu từng tin nhắn:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Lưu hàng loạt tin nhắn đã sửa đổi
 foreach (MailMessage modifiedMessage in modifiedMessages)

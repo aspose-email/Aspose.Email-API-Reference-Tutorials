@@ -34,7 +34,7 @@ url: /ar/net/email-processing-and-analysis/preserving-original-boundaries-using-
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // قم بتحميل رسالة البريد الإلكتروني
 MailMessage message = MailMessage.Load("path/to/email.msg");

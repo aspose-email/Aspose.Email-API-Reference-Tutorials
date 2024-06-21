@@ -39,7 +39,7 @@ Innanzitutto, hai bisogno di un messaggio e-mail con cui lavorare. Caricare il m
 Utilizza lo snippet di codice riportato di seguito per recuperare tutti gli allegati dal messaggio e-mail caricato:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carica il messaggio email (presunto: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

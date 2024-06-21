@@ -38,7 +38,7 @@ Aspose.Email for .NET 是一個功能強大的程式庫，可以簡化 C# 應用
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## 連接到電子郵件伺服器

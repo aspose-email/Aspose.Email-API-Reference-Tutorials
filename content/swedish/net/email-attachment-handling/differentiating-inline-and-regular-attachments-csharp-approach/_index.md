@@ -39,7 +39,7 @@ Först behöver du ett e-postmeddelande att arbeta med. Ladda e-postmeddelandet 
 Använd kodavsnittet nedan för att hämta alla bilagor från det inlästa e-postmeddelandet:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Ladda e-postmeddelandet (antaget: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

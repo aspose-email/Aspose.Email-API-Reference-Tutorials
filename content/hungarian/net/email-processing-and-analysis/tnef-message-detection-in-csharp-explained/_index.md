@@ -35,7 +35,7 @@ A C# kódban importálja a szükséges névtereket:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## 4. lépés: TNEF üzenet betöltése és észlelése

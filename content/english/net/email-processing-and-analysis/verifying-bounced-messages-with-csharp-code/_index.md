@@ -38,7 +38,7 @@ Once you have your project set up, you'll need to add the necessary references a
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Connecting to the Email Server

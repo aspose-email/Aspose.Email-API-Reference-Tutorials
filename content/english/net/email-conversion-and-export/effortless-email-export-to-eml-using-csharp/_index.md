@@ -37,7 +37,7 @@ To export emails to the EML format, we first need to load the email messages fro
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Load the source email message
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ Here's the complete source code for exporting emails to the EML format using Asp
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

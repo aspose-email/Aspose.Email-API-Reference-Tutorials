@@ -33,7 +33,7 @@ Låt oss nu dyka in i koden för att extrahera avkodade rubrikvärden från ett 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

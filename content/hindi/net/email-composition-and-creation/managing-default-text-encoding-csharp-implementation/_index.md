@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 ईमेल भेजते समय, आप ईमेल के मुख्य भाग के लिए एक कस्टम टेक्स्ट एन्कोडिंग निर्दिष्ट कर सकते हैं। यह उन भाषाओं में ईमेल भेजते समय उपयोगी हो सकता है जिनके लिए विशिष्ट एन्कोडिंग की आवश्यकता होती है।
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // एक नया ईमेल संदेश बनाएं
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

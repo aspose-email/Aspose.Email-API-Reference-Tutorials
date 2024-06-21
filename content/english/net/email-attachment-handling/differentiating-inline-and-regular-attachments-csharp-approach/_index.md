@@ -39,7 +39,7 @@ First, you need an email message to work with. Load the email message using the 
 Use the code snippet below to retrieve all attachments from the loaded email message:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Load the email message (assumed: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

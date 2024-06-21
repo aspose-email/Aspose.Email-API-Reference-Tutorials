@@ -37,7 +37,7 @@ OFT 文件是 Outlook 文件模板的缩写，是可在 Microsoft Outlook 中使
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

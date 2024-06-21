@@ -33,7 +33,7 @@ Sekarang mari selami kode untuk mengekstrak nilai header yang didekodekan dari p
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

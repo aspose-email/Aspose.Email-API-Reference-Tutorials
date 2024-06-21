@@ -25,7 +25,7 @@ url: /hi/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 एकल ईएमएल फ़ाइल लोड करने के लिए, आप निम्नलिखित कोड स्निपेट का उपयोग कर सकते हैं:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // ईएमएल फ़ाइल लोड करें
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 यदि आपके पास एक निर्देशिका है जिसमें एकाधिक ईएमएल फ़ाइलें हैं, तो आप उन्हें एक बैच में लोड कर सकते हैं:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //एकाधिक ईएमएल फ़ाइलें लोड करें
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 आप लोड किए गए ईमेल के विभिन्न गुणों तक पहुंच सकते हैं, जैसे प्रेषक, प्राप्तकर्ता, विषय और मुख्य भाग:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // ईमेल संपत्तियों तक पहुंचें
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 प्राप्तकर्ताओं और विषय को संशोधित करने के लिए, आप निम्नलिखित कोड का उपयोग कर सकते हैं:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // प्राप्तकर्ताओं और विषय को संशोधित करें
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 अनुलग्नक ईमेल संदेशों के महत्वपूर्ण घटक हैं। आप Aspose.Email का उपयोग करके अनुलग्नकों तक पहुंच और प्रबंधन कर सकते हैं:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // अनुलग्नकों तक पहुंचें
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 किसी एकल ईमेल संदेश को ईएमएल फ़ाइल में सहेजने के लिए, निम्नलिखित कोड का उपयोग करें:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // संशोधित संदेश सहेजें
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 संशोधित ईमेल संदेशों को बड़ी मात्रा में सहेजने के लिए, संदेशों को दोबारा दोहराएं और प्रत्येक को सहेजें:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // संशोधित संदेशों को थोक में सहेजें
 foreach (MailMessage modifiedMessage in modifiedMessages)

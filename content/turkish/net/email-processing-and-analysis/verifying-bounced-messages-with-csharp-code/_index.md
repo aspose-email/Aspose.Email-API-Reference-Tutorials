@@ -38,7 +38,7 @@ Projenizi kurduktan sonra Aspose.Email'i kullanmaya başlamak için gerekli refe
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## E-posta Sunucusuna Bağlanma

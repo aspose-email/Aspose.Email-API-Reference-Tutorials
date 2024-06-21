@@ -25,7 +25,7 @@ EML 파일을 로드하는 것은 이메일 메시지 작업의 첫 번째 단�
 단일 EML 파일을 로드하려면 다음 코드 조각을 사용할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EML 파일 로드
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 여러 EML 파일이 포함된 디렉터리가 있는 경우 해당 파일을 일괄적으로 로드할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //여러 EML 파일 로드
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ EML 파일을 로드한 후 Aspose.Email 라이브러리를 사용하여 해당 
 보낸 사람, 받는 사람, 제목, 본문 등 로드된 이메일의 다양한 속성에 액세스할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 이메일 속성에 액세스
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 수신자와 제목을 수정하려면 다음 코드를 사용할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 수신자 및 제목 수정
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 첨부 파일은 이메일 메시지의 중요한 구성 요소입니다. Aspose.Email을 사용하여 첨부 파일에 액세스하고 관리할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 첨부파일에 액세스
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ EML 콘텐츠를 필요에 따라 수정한 후 이메일 메시지를 EML 파�
 단일 이메일 메시지를 EML 파일에 저장하려면 다음 코드를 사용하십시오.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 수정된 메시지 저장
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 수정된 이메일 메시지를 대량으로 저장하려면 메시지를 반복하고 각 메시지를 저장하세요.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 수정된 메시지 대량 저장
 foreach (MailMessage modifiedMessage in modifiedMessages)

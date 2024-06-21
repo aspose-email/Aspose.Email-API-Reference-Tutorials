@@ -34,7 +34,7 @@ Az első lépés az, hogy betöltse azt az e-mail üzenetet, amely tartalmazza a
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Töltse be az e-mail üzenetet
 MailMessage message = MailMessage.Load("path/to/email.msg");

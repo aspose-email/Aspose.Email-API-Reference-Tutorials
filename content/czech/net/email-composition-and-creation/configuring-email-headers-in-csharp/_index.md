@@ -40,7 +40,7 @@ Chcete-li odeslat e-mail s vlastními záhlavími, postupujte takto:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Vytvořte novou instanci třídy MailMessage
 MailMessage message = new MailMessage();

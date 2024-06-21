@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 이메일을 보낼 때 이메일 본문에 대한 사용자 정의 텍스트 인코딩을 지정할 수 있습니다. 이는 특정 인코딩이 필요한 언어로 이메일을 보낼 때 유용할 수 있습니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 새 이메일 메시지 만들기
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

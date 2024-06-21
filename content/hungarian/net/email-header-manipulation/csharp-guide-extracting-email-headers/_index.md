@@ -32,7 +32,7 @@ Miután hozzáadta az Aspose.Email könyvtárat a projekthez, megkezdheti az e-m
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // E-mail üzenet betöltése
 var message = MailMessage.Load("path/to/email.eml");

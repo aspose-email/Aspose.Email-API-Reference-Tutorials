@@ -37,7 +37,7 @@ Aspose.Email for .NET 是一个强大且功能丰富的库，使开发人员能�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 //加载源电子邮件
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

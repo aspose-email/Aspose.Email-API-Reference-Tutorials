@@ -23,7 +23,7 @@ Om ingesloten objecten uit een e-mail te extraheren, moet u eerst het e-mailberi
 ```csharp
 // Importeer de benodigde naamruimten
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Laad het e-mailbericht
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Hier is de volledige broncode voor het extraheren van ingesloten objecten uit ee
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

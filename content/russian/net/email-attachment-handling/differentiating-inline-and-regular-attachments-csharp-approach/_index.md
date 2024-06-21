@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 Используйте приведенный ниже фрагмент кода, чтобы получить все вложения из загруженного сообщения электронной почты:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Загрузите сообщение электронной почты (предполагается: «emailMessage»)
 AttachmentCollection attachments = emailMessage.Attachments;

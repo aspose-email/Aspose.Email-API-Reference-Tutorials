@@ -40,7 +40,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Δημιουργήστε μια νέα παρουσία της κλάσης MailMessage
 MailMessage message = new MailMessage();

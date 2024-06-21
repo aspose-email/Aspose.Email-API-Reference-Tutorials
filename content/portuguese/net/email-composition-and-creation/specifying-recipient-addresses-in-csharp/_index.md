@@ -39,7 +39,7 @@ Em seu arquivo de código C#, importe os namespaces necessários para usar as cl
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Crie e configure a mensagem de email

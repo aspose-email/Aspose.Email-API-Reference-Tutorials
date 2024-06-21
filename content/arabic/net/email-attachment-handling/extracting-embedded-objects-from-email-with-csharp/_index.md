@@ -23,7 +23,7 @@ url: /ar/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 ```csharp
 // قم باستيراد مساحات الأسماء الضرورية
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // قم بتحميل رسالة البريد الإلكتروني
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

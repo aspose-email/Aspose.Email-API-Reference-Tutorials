@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 När du skickar ett e-postmeddelande kan du ange en anpassad textkodning för e-postmeddelandet. Detta kan vara användbart när du skickar e-postmeddelanden på språk som kräver specifika kodningar.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Skapa ett nytt e-postmeddelande
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

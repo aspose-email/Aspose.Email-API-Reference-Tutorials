@@ -29,7 +29,7 @@ Untuk bekerja dengan email dan lampiran TNEF, kita perlu menambahkan perpustakaa
 Untuk memulai, mari muat email yang sudah ada yang berisi lampiran TNEF. Anda harus memberikan jalur ke file email.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Muat email dengan lampiran TNEF
 MsgLoadOptions options = new MsgLoadOptions();

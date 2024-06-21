@@ -25,7 +25,7 @@ Att ladda EML-filer är det första steget i att arbeta med e-postmeddelanden. A
 För att ladda en enda EML-fil kan du använda följande kodavsnitt:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Ladda EML-fil
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Om du har en katalog som innehåller flera EML-filer kan du ladda dem i en batch:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Ladda flera EML-filer
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Efter att ha laddat en EML-fil kan du komma åt och ändra dess innehåll med As
 Du kan komma åt olika egenskaper för det inlästa e-postmeddelandet, såsom avsändare, mottagare, ämne och text:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Få tillgång till e-postegenskaper
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 För att ändra mottagare och ämne kan du använda följande kod:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Ändra mottagare och ämne
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Bilagor är avgörande komponenter i e-postmeddelanden. Du kan komma åt och hantera bilagor med Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Få tillgång till bilagor
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Efter att ha gjort nödvändiga ändringar av EML-innehållet kan du spara tillb
 För att spara ett enstaka e-postmeddelande till en EML-fil, använd följande kod:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Spara ändrat meddelande
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 För masssparande av ändrade e-postmeddelanden, iterera igenom meddelandena och spara vart och ett:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Massspara ändrade meddelanden
 foreach (MailMessage modifiedMessage in modifiedMessages)
