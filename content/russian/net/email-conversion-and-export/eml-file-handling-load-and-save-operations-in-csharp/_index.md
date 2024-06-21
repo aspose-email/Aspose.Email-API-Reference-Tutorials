@@ -25,7 +25,7 @@ url: /ru/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 Чтобы загрузить один файл EML, вы можете использовать следующий фрагмент кода:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Загрузить EML-файл
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Если у вас есть каталог, содержащий несколько файлов EML, вы можете загрузить их пакетно:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Загрузить несколько файлов EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 Вы можете получить доступ к различным свойствам загруженного электронного письма, таким как отправитель, получатели, тема и тело:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Доступ к свойствам электронной почты
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Чтобы изменить получателей и тему, вы можете использовать следующий код:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Изменить получателей и тему
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Вложения являются важными компонентами сообщений электронной почты. Вы можете получить доступ к вложениям и управлять ими с помощью Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Доступ к вложениям
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 Чтобы сохранить одно сообщение электронной почты в файл EML, используйте следующий код:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Сохранить измененное сообщение
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Для массового сохранения измененных сообщений электронной почты просмотрите сообщения и сохраните каждое:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Массовое сохранение измененных сообщений
 foreach (MailMessage modifiedMessage in modifiedMessages)

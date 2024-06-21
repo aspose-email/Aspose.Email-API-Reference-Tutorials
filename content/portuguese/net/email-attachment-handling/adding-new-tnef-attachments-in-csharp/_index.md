@@ -29,7 +29,7 @@ Para trabalhar com emails e anexos TNEF, precisamos adicionar a biblioteca Aspos
 Para começar, vamos carregar um email existente que contém um anexo TNEF. Você precisará fornecer o caminho para o arquivo de e-mail.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carregue o e-mail com anexo TNEF
 MsgLoadOptions options = new MsgLoadOptions();

@@ -35,7 +35,7 @@ Trong mã C# của bạn, hãy nhập các vùng tên cần thiết:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Bước 4: Tải và phát hiện tin nhắn TNEF

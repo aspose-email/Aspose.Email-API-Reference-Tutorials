@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 로드된 이메일 메시지에서 모든 첨부 파일을 검색하려면 아래 코드 조각을 사용하세요.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // 이메일 메시지 로드(가정: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

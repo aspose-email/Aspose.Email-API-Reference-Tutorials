@@ -38,7 +38,7 @@ Setelah proyek Anda disiapkan, Anda harus menambahkan referensi dan namespace ya
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Menghubungkan ke Server Email

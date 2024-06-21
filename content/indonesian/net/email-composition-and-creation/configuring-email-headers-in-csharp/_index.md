@@ -40,7 +40,7 @@ Untuk mengirim email dengan header khusus, ikuti langkah-langkah berikut:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Buat instance baru dari kelas MailMessage
 MailMessage message = new MailMessage();

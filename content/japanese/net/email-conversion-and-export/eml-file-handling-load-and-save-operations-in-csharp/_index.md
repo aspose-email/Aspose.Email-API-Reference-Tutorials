@@ -25,7 +25,7 @@ EML ファイルの読み込みは、電子メール メッセージを処理す
 単一の EML ファイルをロードするには、次のコード スニペットを使用できます。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EMLファイルをロードする
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 複数の EML ファイルを含むディレクトリがある場合は、それらをバッチでロードできます。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //複数のEMLファイルをロードする
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ EML ファイルをロードした後、Aspose.Email ライブラリを使用し
 ロードされた電子メールのさまざまなプロパティ (送信者、受信者、件名、本文など) にアクセスできます。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //電子メールのプロパティにアクセスする
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 受信者と件名を変更するには、次のコードを使用できます。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //受信者と件名を変更する
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 添付ファイルは電子メール メッセージの重要なコンポーネントです。 Aspose.Email を使用して添付ファイルにアクセスし、管理できます。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //添付ファイルにアクセスする
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ EML コンテンツに必要な変更を加えた後、電子メール メッセ
 単一の電子メール メッセージを EML ファイルに保存するには、次のコードを使用します。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //変更したメッセージを保存する
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 変更された電子メール メッセージを一括保存するには、メッセージを繰り返して各メッセージを保存します。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //変更されたメッセージを一括保存する
 foreach (MailMessage modifiedMessage in modifiedMessages)

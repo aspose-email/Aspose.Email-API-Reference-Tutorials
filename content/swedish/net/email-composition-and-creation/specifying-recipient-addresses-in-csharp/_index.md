@@ -39,7 +39,7 @@ I din C#-kodfil, importera de nödvändiga namnrymden för att använda Aspose.E
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Skapa och konfigurera e-postmeddelandet

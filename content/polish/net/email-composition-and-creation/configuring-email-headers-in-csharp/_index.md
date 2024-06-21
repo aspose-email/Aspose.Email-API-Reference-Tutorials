@@ -40,7 +40,7 @@ Aby wysłać wiadomość e-mail z niestandardowymi nagłówkami, wykonaj następ
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Utwórz nową instancję klasy MailMessage
 MailMessage message = new MailMessage();

@@ -39,7 +39,7 @@ Trong tệp mã C# của bạn, hãy nhập các vùng tên cần thiết để 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Tạo và cấu hình email

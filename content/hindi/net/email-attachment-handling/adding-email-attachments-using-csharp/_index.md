@@ -36,7 +36,7 @@ url: /hi/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. एक नया मेलमैसेज इंस्टेंस बनाएं।

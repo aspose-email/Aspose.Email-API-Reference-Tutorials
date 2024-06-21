@@ -33,7 +33,7 @@ Lassen Sie uns nun in den Code eintauchen, um dekodierte Header-Werte aus einer 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

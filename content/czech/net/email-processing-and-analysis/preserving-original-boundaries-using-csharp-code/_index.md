@@ -34,7 +34,7 @@ Prvním krokem je načtení e-mailové zprávy, která obsahuje přílohu, se kt
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Načtěte e-mailovou zprávu
 MailMessage message = MailMessage.Load("path/to/email.msg");

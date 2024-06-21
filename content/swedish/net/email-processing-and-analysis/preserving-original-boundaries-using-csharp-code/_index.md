@@ -34,7 +34,7 @@ Det första steget är att ladda e-postmeddelandet som innehåller den bilaga du
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Ladda e-postmeddelandet
 MailMessage message = MailMessage.Load("path/to/email.msg");

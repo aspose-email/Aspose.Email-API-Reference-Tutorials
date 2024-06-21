@@ -39,7 +39,7 @@ Primeiro, você precisa de uma mensagem de e-mail para trabalhar. Carregue a men
 Use o snippet de código abaixo para recuperar todos os anexos da mensagem de e-mail carregada:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carregue a mensagem de e-mail (assumida: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

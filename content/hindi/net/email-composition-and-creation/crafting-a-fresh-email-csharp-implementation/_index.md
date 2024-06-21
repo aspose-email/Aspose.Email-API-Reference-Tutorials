@@ -29,7 +29,7 @@ url: /hi/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  का एक उदाहरण बनाएं`MailMessage` कक्षा:

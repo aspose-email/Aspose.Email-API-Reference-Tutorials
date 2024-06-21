@@ -39,7 +39,7 @@ Po pierwsze, potrzebujesz wiadomości e-mail, z którą będziesz pracować. Za�
 Użyj poniższego fragmentu kodu, aby pobrać wszystkie załączniki z załadowanej wiadomości e-mail:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Załaduj wiadomość e-mail (zakładając: „emailMessage”)
 AttachmentCollection attachments = emailMessage.Attachments;

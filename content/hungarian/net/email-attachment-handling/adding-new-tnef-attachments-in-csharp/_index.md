@@ -29,7 +29,7 @@ Az e-mailek és a TNEF mellékletek kezeléséhez hozzá kell adnunk az Aspose.E
 Kezdésként töltsünk be egy meglévő e-mailt, amely TNEF-mellékletet tartalmaz. Meg kell adnia az e-mail fájl elérési útját.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Töltse be az e-mailt TNEF melléklettel
 MsgLoadOptions options = new MsgLoadOptions();

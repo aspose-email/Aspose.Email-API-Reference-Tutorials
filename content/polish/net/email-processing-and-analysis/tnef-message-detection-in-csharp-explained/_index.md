@@ -35,7 +35,7 @@ W kodzie C# zaimportuj niezbędne przestrzenie nazw:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Krok 4: Załaduj i wykryj wiadomość TNEF

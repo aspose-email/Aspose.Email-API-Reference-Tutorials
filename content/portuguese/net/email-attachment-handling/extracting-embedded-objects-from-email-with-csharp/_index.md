@@ -23,7 +23,7 @@ Para extrair objetos incorporados de um email, primeiro você precisa carregar e
 ```csharp
 // Importe os namespaces necessários
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Carregar a mensagem de e-mail
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Aqui está o código-fonte completo para extrair objetos incorporados de um e-ma
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

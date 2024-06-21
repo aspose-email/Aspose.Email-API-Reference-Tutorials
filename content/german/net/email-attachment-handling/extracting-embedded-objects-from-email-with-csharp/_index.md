@@ -23,7 +23,7 @@ Um eingebettete Objekte aus einer E-Mail zu extrahieren, müssen Sie zunächst d
 ```csharp
 // Importieren Sie die erforderlichen Namespaces
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Laden Sie die E-Mail-Nachricht
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Hier ist der vollständige Quellcode zum Extrahieren eingebetteter Objekte aus e
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

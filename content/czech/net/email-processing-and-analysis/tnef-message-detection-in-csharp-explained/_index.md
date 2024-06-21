@@ -35,7 +35,7 @@ Do kódu C# importujte potřebné jmenné prostory:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Krok 4: Načtěte a zjistěte zprávu TNEF

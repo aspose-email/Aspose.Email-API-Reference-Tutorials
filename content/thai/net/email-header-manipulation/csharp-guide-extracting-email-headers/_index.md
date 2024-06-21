@@ -32,7 +32,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // โหลดข้อความอีเมล
 var message = MailMessage.Load("path/to/email.eml");

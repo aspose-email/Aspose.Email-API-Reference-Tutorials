@@ -34,7 +34,7 @@ Bước đầu tiên là tải email có chứa tệp đính kèm mà bạn mu�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Tải tin nhắn email
 MailMessage message = MailMessage.Load("path/to/email.msg");

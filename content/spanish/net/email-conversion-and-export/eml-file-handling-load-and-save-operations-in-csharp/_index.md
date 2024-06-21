@@ -25,7 +25,7 @@ Cargar archivos EML es el primer paso para trabajar con mensajes de correo elect
 Para cargar un único archivo EML, puede utilizar el siguiente fragmento de código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Cargar archivo EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Si tiene un directorio que contiene varios archivos EML, puede cargarlos en un lote:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Cargar múltiples archivos EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Después de cargar un archivo EML, puede acceder y modificar su contenido utiliz
 Puede acceder a varias propiedades del correo electrónico cargado, como remitente, destinatarios, asunto y cuerpo:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Acceder a las propiedades del correo electrónico
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Para modificar los destinatarios y el asunto, puede utilizar el siguiente código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Modificar destinatarios y asunto
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Los archivos adjuntos son componentes cruciales de los mensajes de correo electrónico. Puede acceder y administrar archivos adjuntos utilizando Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Acceder a archivos adjuntos
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Después de realizar las modificaciones necesarias en el contenido EML, puede gu
 Para guardar un único mensaje de correo electrónico en un archivo EML, utilice el siguiente código:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Guardar mensaje modificado
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Para guardar en masa mensajes de correo electrónico modificados, repita los mensajes y guarde cada uno de ellos:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Guardar mensajes modificados de forma masiva
 foreach (MailMessage modifiedMessage in modifiedMessages)

@@ -35,7 +35,7 @@ Importeer in uw C#-code de benodigde naamruimten:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Stap 4: TNEF-bericht laden en detecteren

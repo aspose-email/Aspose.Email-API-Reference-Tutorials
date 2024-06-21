@@ -35,7 +35,7 @@ Nel codice C# importa gli spazi dei nomi necessari:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Passaggio 4: caricare e rilevare il messaggio TNEF

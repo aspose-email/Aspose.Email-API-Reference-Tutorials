@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Bir e-posta gönderirken e-posta gövdesi için özel bir metin kodlaması belirleyebilirsiniz. Bu, belirli kodlamalar gerektiren dillerde e-posta gönderirken yararlı olabilir.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Yeni bir e-posta mesajı oluştur
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

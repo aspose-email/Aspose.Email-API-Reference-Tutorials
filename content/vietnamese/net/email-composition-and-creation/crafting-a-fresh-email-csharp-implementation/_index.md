@@ -29,7 +29,7 @@ Trước khi chúng ta đi sâu vào triển khai, hãy đảm bảo bạn có s
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  Tạo một thể hiện của`MailMessage` lớp học:

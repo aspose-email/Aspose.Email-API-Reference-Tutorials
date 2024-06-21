@@ -37,7 +37,7 @@ url: /ar/net/email-conversion-and-export/generating-oft-files-from-messages-csha
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

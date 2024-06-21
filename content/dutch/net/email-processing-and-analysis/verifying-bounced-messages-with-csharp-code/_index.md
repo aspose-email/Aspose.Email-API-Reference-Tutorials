@@ -38,7 +38,7 @@ Zodra u uw project heeft opgezet, moet u de benodigde referenties en naamruimten
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Verbinding maken met de e-mailserver

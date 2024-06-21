@@ -37,7 +37,7 @@ För att exportera e-postmeddelanden till EML-formatet måste vi först ladda e-
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Ladda källe-postmeddelandet
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ Här är den fullständiga källkoden för att exportera e-postmeddelanden till 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

@@ -29,7 +29,7 @@ TNEF（傳輸中性封裝格式）附件是 Microsoft Outlook 用於在電子郵
 首先，我們載入一封包含 TNEF 附件的現有電子郵件。您需要提供電子郵件文件的路徑。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //載入帶有 TNEF 附件的電子郵件
 MsgLoadOptions options = new MsgLoadOptions();

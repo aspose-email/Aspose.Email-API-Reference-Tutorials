@@ -38,7 +38,7 @@ url: /el/net/email-processing-and-analysis/verifying-bounced-messages-with-cshar
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Σύνδεση με τον διακομιστή email

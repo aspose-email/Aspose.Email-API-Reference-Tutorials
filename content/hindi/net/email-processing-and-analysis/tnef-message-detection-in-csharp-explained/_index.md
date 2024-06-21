@@ -35,7 +35,7 @@ Install-Package Aspose.Email
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## चरण 4: टीएनईएफ संदेश को लोड करें और उसका पता लगाएं

@@ -37,7 +37,7 @@ Aspose.Email for .NET هي مكتبة قوية وغنية بالميزات تم�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // قم بتحميل رسالة البريد الإلكتروني المصدر
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

@@ -25,7 +25,7 @@ Az EML fájlok betöltése az e-mail üzenetekkel való munka első lépése. Az
 Egyetlen EML-fájl betöltéséhez a következő kódrészletet használhatja:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EML fájl betöltése
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Ha több EML-fájlt tartalmazó könyvtárral rendelkezik, akkor azokat köteggel töltheti be:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Több EML fájl betöltése
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Az EML-fájl betöltése után az Aspose.Email könyvtár segítségével hozzá
 Hozzáférhet a betöltött e-mail különféle tulajdonságaihoz, például a feladóhoz, a címzettekhez, a tárgyhoz és a törzshöz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Hozzáférés az e-mail tulajdonságaihoz
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 A címzettek és a tárgy módosításához a következő kódot használhatja:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Módosítsa a címzetteket és a tárgyat
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 A mellékletek az e-mail üzenetek alapvető összetevői. Az Aspose.Email használatával elérheti és kezelheti a mellékleteket:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Hozzáférés a mellékletekhez
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Az EML-tartalom szükséges módosításainak elvégzése után az e-mail üzene
 Egyetlen e-mail üzenet EML-fájlba mentéséhez használja a következő kódot:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Módosított üzenet mentése
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 A módosított e-mail üzenetek tömeges mentéséhez ismételje meg az üzeneteket, és mentse el mindegyiket:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // A módosított üzenetek tömeges mentése
 foreach (MailMessage modifiedMessage in modifiedMessages)

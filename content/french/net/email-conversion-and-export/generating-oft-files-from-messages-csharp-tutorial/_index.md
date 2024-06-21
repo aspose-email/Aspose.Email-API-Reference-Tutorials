@@ -37,7 +37,7 @@ Une fois votre projet configuré et la bibliothèque installée, chargeons un me
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

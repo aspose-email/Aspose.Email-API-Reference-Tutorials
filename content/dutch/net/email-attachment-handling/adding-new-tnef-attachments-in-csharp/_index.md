@@ -29,7 +29,7 @@ Om met e-mails en TNEF-bijlagen te werken, moeten we de Aspose.Email voor .NET-b
 Laten we om te beginnen een bestaande e-mail laden die een TNEF-bijlage bevat. U moet het pad naar het e-mailbestand opgeven.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Laad de e-mail met TNEF-bijlage
 MsgLoadOptions options = new MsgLoadOptions();

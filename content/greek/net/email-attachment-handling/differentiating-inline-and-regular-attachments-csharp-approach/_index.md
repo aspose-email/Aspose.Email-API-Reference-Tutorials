@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 Χρησιμοποιήστε το παρακάτω απόσπασμα κώδικα για να ανακτήσετε όλα τα συνημμένα από το φορτωμένο μήνυμα ηλεκτρονικού ταχυδρομείου:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Φόρτωση του μηνύματος email (υποτίθεται: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

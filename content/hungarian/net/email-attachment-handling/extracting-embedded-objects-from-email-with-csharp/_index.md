@@ -23,7 +23,7 @@ Ha beágyazott objektumokat szeretne kivonni egy e-mailből, először be kell t
 ```csharp
 // Importálja a szükséges névtereket
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Töltse be az e-mail üzenetet
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Miután azonosította és kicsomagolta a beágyazott objektumokat, elmentheti ő
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

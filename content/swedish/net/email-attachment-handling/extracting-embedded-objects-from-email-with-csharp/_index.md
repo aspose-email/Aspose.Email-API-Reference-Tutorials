@@ -23,7 +23,7 @@ För att extrahera inbäddade objekt från ett e-postmeddelande måste du först
 ```csharp
 // Importera de nödvändiga namnrymden
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Ladda e-postmeddelandet
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Här är den fullständiga källkoden för att extrahera inbäddade objekt från
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

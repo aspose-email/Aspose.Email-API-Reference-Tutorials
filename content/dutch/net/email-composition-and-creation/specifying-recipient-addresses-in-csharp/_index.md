@@ -39,7 +39,7 @@ Importeer in uw C#-codebestand de benodigde naamruimten voor het gebruik van Asp
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Maak en configureer het e-mailbericht

@@ -37,7 +37,7 @@ Outlook File Template의 약자인 OFT 파일은 Microsoft Outlook 내에서 사
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

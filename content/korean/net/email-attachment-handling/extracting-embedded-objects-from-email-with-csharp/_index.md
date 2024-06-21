@@ -23,7 +23,7 @@ url: /ko/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 ```csharp
 // 필요한 네임스페이스 가져오기
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // 이메일 메시지 로드
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

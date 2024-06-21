@@ -37,7 +37,7 @@ url: /el/net/email-conversion-and-export/effortless-email-export-to-eml-using-cs
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Φορτώστε το μήνυμα ηλεκτρονικού ταχυδρομείου προέλευσης
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

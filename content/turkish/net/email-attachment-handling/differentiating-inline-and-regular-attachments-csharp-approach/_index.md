@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 Yüklenen e-posta mesajındaki tüm ekleri almak için aşağıdaki kod parçacığını kullanın:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // E-posta mesajını yükleyin (varsayılan: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

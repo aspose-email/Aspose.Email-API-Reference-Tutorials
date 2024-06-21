@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Κατά την αποστολή ενός email, μπορείτε να καθορίσετε μια προσαρμοσμένη κωδικοποίηση κειμένου για το σώμα του email. Αυτό μπορεί να είναι χρήσιμο κατά την αποστολή μηνυμάτων ηλεκτρονικού ταχυδρομείου σε γλώσσες που απαιτούν συγκεκριμένες κωδικοποιήσεις.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Δημιουργήστε ένα νέο μήνυμα email
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

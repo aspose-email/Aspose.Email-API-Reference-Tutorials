@@ -33,7 +33,7 @@ Agora vamos mergulhar no código para extrair valores de cabeçalho decodificado
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

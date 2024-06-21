@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 以下のコード スニペットを使用して、ロードされた電子メール メッセージからすべての添付ファイルを取得します。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //電子メール メッセージをロードします (想定: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

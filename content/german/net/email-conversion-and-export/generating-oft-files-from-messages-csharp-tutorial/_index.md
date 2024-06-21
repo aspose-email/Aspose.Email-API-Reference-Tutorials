@@ -37,7 +37,7 @@ Sobald Sie Ihr Projekt eingerichtet und die Bibliothek installiert haben, laden 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

@@ -37,7 +37,7 @@ Setelah proyek Anda disiapkan dan perpustakaan diinstal, mari muat pesan email y
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

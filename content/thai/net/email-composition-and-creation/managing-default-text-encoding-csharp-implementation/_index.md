@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 เมื่อส่งอีเมล คุณสามารถระบุการเข้ารหัสข้อความแบบกำหนดเองสำหรับเนื้อหาอีเมลได้ สิ่งนี้มีประโยชน์เมื่อส่งอีเมลในภาษาที่ต้องมีการเข้ารหัสเฉพาะ
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // สร้างข้อความอีเมลใหม่
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

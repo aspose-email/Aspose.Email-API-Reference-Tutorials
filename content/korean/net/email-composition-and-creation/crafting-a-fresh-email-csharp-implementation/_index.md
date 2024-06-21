@@ -29,7 +29,7 @@ url: /ko/net/email-composition-and-creation/crafting-a-fresh-email-csharp-implem
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  인스턴스를 생성합니다.`MailMessage` 수업:

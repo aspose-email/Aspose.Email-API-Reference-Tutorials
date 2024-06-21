@@ -38,7 +38,7 @@ Po skonfigurowaniu projektu musisz dodać niezbędne odniesienia i przestrzenie 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Łączenie z serwerem e-mail

@@ -34,7 +34,7 @@ url: /ko/net/email-processing-and-analysis/preserving-original-boundaries-using-
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // 이메일 메시지 로드
 MailMessage message = MailMessage.Load("path/to/email.msg");

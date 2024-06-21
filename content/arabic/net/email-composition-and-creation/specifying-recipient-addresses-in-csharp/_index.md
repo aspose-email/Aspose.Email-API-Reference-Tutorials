@@ -39,7 +39,7 @@ url: /ar/net/email-composition-and-creation/specifying-recipient-addresses-in-cs
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. إنشاء وتكوين رسالة البريد الإلكتروني

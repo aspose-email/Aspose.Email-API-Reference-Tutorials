@@ -39,7 +39,7 @@ Pertama, Anda memerlukan pesan email untuk digunakan. Muat pesan email menggunak
 Gunakan cuplikan kode di bawah ini untuk mengambil semua lampiran dari pesan email yang dimuat:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Muat pesan email (diasumsikan: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

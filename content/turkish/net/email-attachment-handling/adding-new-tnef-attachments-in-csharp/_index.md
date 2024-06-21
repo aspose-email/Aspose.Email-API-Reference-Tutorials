@@ -29,7 +29,7 @@ E-postalar ve TNEF ekleriyle çalışmak için Aspose.Email for .NET kütüphane
 Başlamak için TNEF eki içeren mevcut bir e-postayı yükleyelim. E-posta dosyasının yolunu sağlamanız gerekir.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // E-postayı TNEF ekiyle yükleyin
 MsgLoadOptions options = new MsgLoadOptions();

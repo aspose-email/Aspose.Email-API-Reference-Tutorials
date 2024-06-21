@@ -39,7 +39,7 @@ Dans votre fichier de code C#, importez les espaces de noms nécessaires à l'ut
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Créez et configurez le message électronique

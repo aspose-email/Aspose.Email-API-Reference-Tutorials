@@ -29,7 +29,7 @@ Mielőtt belevágnánk a megvalósításba, győződjön meg arról, hogy a köv
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  Hozzon létre egy példányt a`MailMessage` osztály:

@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Khi gửi email, bạn có thể chỉ định mã hóa văn bản tùy chỉnh cho nội dung email. Điều này có thể hữu ích khi gửi email bằng các ngôn ngữ yêu cầu mã hóa cụ thể.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Tạo một tin nhắn email mới
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

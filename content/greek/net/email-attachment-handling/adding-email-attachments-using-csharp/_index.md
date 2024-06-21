@@ -36,7 +36,7 @@ url: /el/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. Δημιουργήστε μια νέα παρουσία του MailMessage.

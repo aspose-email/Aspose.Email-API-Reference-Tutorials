@@ -25,7 +25,7 @@ url: /ar/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 لتحميل ملف EML واحد، يمكنك استخدام مقتطف التعليمات البرمجية التالي:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // قم بتحميل ملف إمل
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 إذا كان لديك دليل يحتوي على ملفات EML متعددة، فيمكنك تحميلها دفعة واحدة:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //تحميل ملفات EML متعددة
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 يمكنك الوصول إلى خصائص مختلفة للبريد الإلكتروني الذي تم تحميله، مثل المرسل والمستلمين والموضوع والنص:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // الوصول إلى خصائص البريد الإلكتروني
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 لتعديل المستلمين والموضوع، يمكنك استخدام الكود التالي:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // تعديل المستلمين والموضوع
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 تعتبر المرفقات مكونات مهمة لرسائل البريد الإلكتروني. يمكنك الوصول إلى المرفقات وإدارتها باستخدام Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // الوصول إلى المرفقات
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 لحفظ رسالة بريد إلكتروني واحدة في ملف EML، استخدم الكود التالي:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // حفظ الرسالة المعدلة
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 للحفظ المجمع لرسائل البريد الإلكتروني المعدلة، قم بالتكرار عبر الرسائل واحفظ كل واحدة منها:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // حفظ الرسائل المعدلة بشكل جماعي
 foreach (MailMessage modifiedMessage in modifiedMessages)

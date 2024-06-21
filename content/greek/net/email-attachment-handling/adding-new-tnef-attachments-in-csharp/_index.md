@@ -29,7 +29,7 @@ url: /el/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 Για να ξεκινήσουμε, ας φορτώσουμε ένα υπάρχον email που περιέχει ένα συνημμένο TNEF. Θα χρειαστεί να δώσετε τη διαδρομή προς το αρχείο email.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Φορτώστε το email με συνημμένο TNEF
 MsgLoadOptions options = new MsgLoadOptions();

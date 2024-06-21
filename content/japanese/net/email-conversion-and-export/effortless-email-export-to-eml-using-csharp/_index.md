@@ -37,7 +37,7 @@ Aspose.Email for .NET ライブラリをプロジェクトにインストール�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 //ソース電子メールメッセージをロードします
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ Aspose.Email for .NET を使用して電子メールを EML 形式にエクス�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

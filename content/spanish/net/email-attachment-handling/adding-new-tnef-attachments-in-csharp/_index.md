@@ -29,7 +29,7 @@ Para trabajar con correos electrónicos y archivos adjuntos TNEF, necesitamos ag
 Para comenzar, carguemos un correo electrónico existente que contenga un archivo adjunto TNEF. Deberá proporcionar la ruta al archivo de correo electrónico.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Cargue el correo electrónico con el archivo adjunto TNEF
 MsgLoadOptions options = new MsgLoadOptions();

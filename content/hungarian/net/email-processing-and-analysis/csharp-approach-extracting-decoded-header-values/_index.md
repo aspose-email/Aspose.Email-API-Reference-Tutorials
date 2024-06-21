@@ -33,7 +33,7 @@ Most merüljünk el a kódban, amellyel dekódolt fejlécértékeket nyerhetünk
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

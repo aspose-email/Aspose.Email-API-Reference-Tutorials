@@ -39,7 +39,7 @@ W pliku kodu C# zaimportuj niezbędne przestrzenie nazw do używania klas Aspose
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Utwórz i skonfiguruj wiadomość e-mail

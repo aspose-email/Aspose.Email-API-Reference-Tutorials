@@ -38,7 +38,7 @@ Aspose.Email для .NET — это мощная библиотека, кото�
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Подключение к почтовому серверу

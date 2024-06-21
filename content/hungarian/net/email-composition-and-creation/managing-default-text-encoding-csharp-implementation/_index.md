@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 E-mail küldésekor egyéni szövegkódolást adhat meg az e-mail törzséhez. Ez akkor lehet hasznos, ha speciális kódolást igénylő nyelveken küld e-maileket.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Hozzon létre egy új e-mail üzenetet
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

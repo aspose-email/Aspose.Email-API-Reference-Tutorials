@@ -29,7 +29,7 @@ TNEF (Transport Neutral Encapsulation Format) 添付ファイルは、Microsoft 
 まず、TNEF 添付ファイルを含む既存の電子メールをロードしましょう。電子メール ファイルへのパスを指定する必要があります。
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // TNEF が添付された電子メールをロードします
 MsgLoadOptions options = new MsgLoadOptions();

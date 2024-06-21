@@ -38,7 +38,7 @@ Miután beállította a projektet, hozzá kell adnia a szükséges hivatkozások
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## Csatlakozás az e-mail szerverhez

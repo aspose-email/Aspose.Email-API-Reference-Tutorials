@@ -25,7 +25,7 @@ Il caricamento di file EML è il primo passo per lavorare con i messaggi di post
 Per caricare un singolo file EML, puoi utilizzare il seguente snippet di codice:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carica il file EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Se disponi di una directory contenente più file EML, puoi caricarli in batch:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Carica più file EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Dopo aver caricato un file EML, puoi accedere e modificarne il contenuto utilizz
 Puoi accedere a varie proprietà dell'e-mail caricata, come mittente, destinatari, oggetto e corpo:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Accedi alle proprietà della posta elettronica
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Per modificare destinatari e oggetto è possibile utilizzare il seguente codice:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Modifica destinatari e oggetto
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Gli allegati sono componenti cruciali dei messaggi di posta elettronica. È possibile accedere e gestire gli allegati utilizzando Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Accedi agli allegati
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Dopo aver apportato le modifiche necessarie al contenuto EML, puoi salvare nuova
 Per salvare un singolo messaggio e-mail in un file EML, utilizzare il seguente codice:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Salva messaggio modificato
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Per il salvataggio in blocco dei messaggi e-mail modificati, scorrere i messaggi e salvarli ciascuno:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Salvataggio in blocco dei messaggi modificati
 foreach (MailMessage modifiedMessage in modifiedMessages)

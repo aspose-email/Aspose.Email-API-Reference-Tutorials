@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Saat mengirim email, Anda dapat menentukan pengkodean teks khusus untuk badan email. Ini dapat berguna saat mengirim email dalam bahasa yang memerlukan penyandian tertentu.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Buat pesan email baru
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

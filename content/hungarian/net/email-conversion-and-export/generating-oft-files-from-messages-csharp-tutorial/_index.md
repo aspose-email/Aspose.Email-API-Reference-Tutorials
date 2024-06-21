@@ -37,7 +37,7 @@ Miután beállította a projektet és telepítette a könyvtárat, töltsünk be
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

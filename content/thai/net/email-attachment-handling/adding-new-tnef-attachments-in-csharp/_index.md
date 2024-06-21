@@ -29,7 +29,7 @@ url: /th/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ในการเริ่มต้น ให้โหลดอีเมลที่มีอยู่ซึ่งมีไฟล์แนบ TNEF คุณจะต้องระบุเส้นทางไปยังไฟล์อีเมล
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // โหลดอีเมลพร้อมไฟล์แนบ TNEF
 MsgLoadOptions options = new MsgLoadOptions();

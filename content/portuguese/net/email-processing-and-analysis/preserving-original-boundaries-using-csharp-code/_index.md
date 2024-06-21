@@ -34,7 +34,7 @@ A primeira etapa é carregar a mensagem de e-mail que contém o anexo com o qual
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Carregar a mensagem de e-mail
 MailMessage message = MailMessage.Load("path/to/email.msg");

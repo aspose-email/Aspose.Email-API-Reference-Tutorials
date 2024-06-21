@@ -39,7 +39,7 @@ Aspose.Email sınıflarını kullanmak için gerekli ad alanlarını C# kod dosy
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. E-posta mesajını oluşturun ve yapılandırın

@@ -36,7 +36,7 @@ url: /zh-hant/net/email-attachment-handling/adding-email-attachments-using-cshar
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. 建立一個新的 MailMessage 實例。

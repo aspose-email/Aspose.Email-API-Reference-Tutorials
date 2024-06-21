@@ -37,7 +37,7 @@ Once you have your project set up and the library installed, let's load an exist
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

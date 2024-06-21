@@ -25,7 +25,7 @@ Het laden van EML-bestanden is de eerste stap bij het werken met e-mailberichten
 Om één EML-bestand te laden, kunt u het volgende codefragment gebruiken:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EML-bestand laden
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Als u een map heeft die meerdere EML-bestanden bevat, kunt u deze in batch laden:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Laad meerdere EML-bestanden
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Nadat u een EML-bestand hebt geladen, kunt u de inhoud ervan openen en wijzigen 
 U hebt toegang tot verschillende eigenschappen van de geladen e-mail, zoals afzender, ontvangers, onderwerp en hoofdtekst:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Toegang tot e-maileigenschappen
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Om ontvangers en onderwerp te wijzigen, kunt u de volgende code gebruiken:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Wijzig ontvangers en onderwerp
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Bijlagen zijn cruciale onderdelen van e-mailberichten. U kunt bijlagen openen en beheren met Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Toegang tot bijlagen
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Nadat u de nodige wijzigingen in de EML-inhoud heeft aangebracht, kunt u het e-m
 Gebruik de volgende code om één e-mailbericht in een EML-bestand op te slaan:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Gewijzigd bericht opslaan
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Voor het bulksgewijs opslaan van gewijzigde e-mailberichten, herhaalt u de berichten en slaat u ze allemaal op:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Gewijzigde berichten in bulk opslaan
 foreach (MailMessage modifiedMessage in modifiedMessages)

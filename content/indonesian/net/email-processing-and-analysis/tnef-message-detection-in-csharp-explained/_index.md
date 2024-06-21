@@ -35,7 +35,7 @@ Dalam kode C# Anda, impor namespace yang diperlukan:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ## Langkah 4: Muat dan Deteksi Pesan TNEF

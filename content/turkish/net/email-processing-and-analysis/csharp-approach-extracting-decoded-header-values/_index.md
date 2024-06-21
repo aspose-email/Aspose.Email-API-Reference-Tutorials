@@ -33,7 +33,7 @@ Tercih ettiğiniz tümleşik geliştirme ortamında (IDE) veya metin düzenleyic
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

@@ -29,7 +29,7 @@ Visual Studio에서 새 C# 프로젝트를 만드는 것부터 시작하세요. 
 시작하려면 TNEF 첨부 파일이 포함된 기존 이메일을 로드해 보겠습니다. 이메일 파일의 경로를 제공해야 합니다.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // TNEF 첨부 파일이 포함된 이메일 로드
 MsgLoadOptions options = new MsgLoadOptions();

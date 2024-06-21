@@ -36,7 +36,7 @@ Before we begin, ensure you have the following:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. Create a new MailMessage instance.

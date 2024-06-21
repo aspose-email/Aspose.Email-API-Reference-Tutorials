@@ -29,7 +29,7 @@ Než se pustíme do implementace, ujistěte se, že máte splněny následujíc�
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2.  Vytvořte instanci souboru`MailMessage` třída:

@@ -40,7 +40,7 @@ Volg deze stappen om een e-mail met aangepaste kopteksten te verzenden:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Maak een nieuw exemplaar van de klasse MailMessage
 MailMessage message = new MailMessage();

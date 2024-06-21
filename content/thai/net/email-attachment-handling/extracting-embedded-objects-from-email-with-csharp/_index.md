@@ -23,7 +23,7 @@ url: /th/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 ```csharp
 // นำเข้าเนมสเปซที่จำเป็น
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // โหลดข้อความอีเมล
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

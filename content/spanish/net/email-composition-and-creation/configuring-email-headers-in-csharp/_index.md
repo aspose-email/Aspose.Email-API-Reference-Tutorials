@@ -40,7 +40,7 @@ Para enviar un correo electrónico con encabezados personalizados, siga estos pa
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Crea una nueva instancia de la clase MailMessage
 MailMessage message = new MailMessage();

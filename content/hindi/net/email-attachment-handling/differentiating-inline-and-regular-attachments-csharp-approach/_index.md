@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 लोड किए गए ईमेल संदेश से सभी अनुलग्नकों को पुनः प्राप्त करने के लिए नीचे दिए गए कोड स्निपेट का उपयोग करें:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // ईमेल संदेश लोड करें (माना गया: 'ईमेल संदेश')
 AttachmentCollection attachments = emailMessage.Attachments;

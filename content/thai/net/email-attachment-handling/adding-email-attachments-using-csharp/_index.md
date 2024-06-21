@@ -36,7 +36,7 @@ url: /th/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. สร้างอินสแตนซ์ MailMessage ใหม่

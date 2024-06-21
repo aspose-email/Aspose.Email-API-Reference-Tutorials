@@ -29,7 +29,7 @@ Pour travailler avec des e-mails et des pièces jointes TNEF, nous devons ajoute
 Pour commencer, chargeons un e-mail existant contenant une pièce jointe TNEF. Vous devrez fournir le chemin d'accès au fichier de courrier électronique.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Charger l'e-mail avec la pièce jointe TNEF
 MsgLoadOptions options = new MsgLoadOptions();

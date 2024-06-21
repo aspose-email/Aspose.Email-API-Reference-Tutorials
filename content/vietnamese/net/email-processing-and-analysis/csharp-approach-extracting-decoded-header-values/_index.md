@@ -33,7 +33,7 @@ Bây giờ, hãy đi sâu vào mã để trích xuất các giá trị tiêu đ�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

@@ -37,7 +37,7 @@ Projenizi ayarladıktan ve kitaplığı yükledikten sonra mevcut bir e-posta il
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

@@ -29,7 +29,7 @@ För att arbeta med e-postmeddelanden och TNEF-bilagor måste vi lägga till Asp
 Till att börja med, låt oss ladda ett befintligt e-postmeddelande som innehåller en TNEF-bilaga. Du måste ange sökvägen till e-postfilen.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Ladda e-postmeddelandet med TNEF-bilaga
 MsgLoadOptions options = new MsgLoadOptions();

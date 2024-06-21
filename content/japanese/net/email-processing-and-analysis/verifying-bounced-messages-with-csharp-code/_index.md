@@ -38,7 +38,7 @@ C# プロジェクトをまだ持っていない場合は、次の方法で作�
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## 電子メールサーバーへの接続

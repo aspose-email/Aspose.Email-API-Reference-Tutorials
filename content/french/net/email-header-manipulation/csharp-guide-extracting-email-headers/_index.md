@@ -32,7 +32,7 @@ Une fois que vous avez ajouté la bibliothèque Aspose.Email à votre projet, vo
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Charger un e-mail
 var message = MailMessage.Load("path/to/email.eml");

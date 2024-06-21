@@ -37,7 +37,7 @@ Jakmile máte projekt nastaven a knihovnu nainstalovánu, načtěte existující
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

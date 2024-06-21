@@ -37,7 +37,7 @@ Chcete-li exportovat e-maily do formátu EML, musíme nejprve načíst e-mailov�
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Načtěte zdrojovou e-mailovou zprávu
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ Zde je kompletní zdrojový kód pro export e-mailů do formátu EML pomocí Asp
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

@@ -29,7 +29,7 @@ Per lavorare con e-mail e allegati TNEF, dobbiamo aggiungere la libreria Aspose.
 Per iniziare, carichiamo un'e-mail esistente che contiene un allegato TNEF. Dovrai fornire il percorso del file di posta elettronica.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Carica l'e-mail con l'allegato TNEF
 MsgLoadOptions options = new MsgLoadOptions();

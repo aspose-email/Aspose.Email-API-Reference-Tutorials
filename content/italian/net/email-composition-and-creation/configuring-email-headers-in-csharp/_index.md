@@ -40,7 +40,7 @@ Per inviare un'e-mail con intestazioni personalizzate, attenersi alla seguente p
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Crea una nuova istanza della classe MailMessage
 MailMessage message = new MailMessage();

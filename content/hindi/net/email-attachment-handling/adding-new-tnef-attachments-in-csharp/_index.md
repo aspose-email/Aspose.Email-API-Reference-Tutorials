@@ -29,7 +29,7 @@ url: /hi/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 आरंभ करने के लिए, आइए एक मौजूदा ईमेल लोड करें जिसमें TNEF अनुलग्नक शामिल है। आपको ईमेल फ़ाइल का पथ प्रदान करना होगा.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // ईमेल को टीएनईएफ अनुलग्नक के साथ लोड करें
 MsgLoadOptions options = new MsgLoadOptions();

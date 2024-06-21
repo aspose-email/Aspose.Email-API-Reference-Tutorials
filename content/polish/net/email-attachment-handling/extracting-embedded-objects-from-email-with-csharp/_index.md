@@ -23,7 +23,7 @@ Aby wyodrębnić osadzone obiekty z wiadomości e-mail, należy najpierw załado
 ```csharp
 // Zaimportuj niezbędne przestrzenie nazw
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Załaduj wiadomość e-mail
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Oto kompletny kod źródłowy do wyodrębniania osadzonych obiektów z wiadomoś
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

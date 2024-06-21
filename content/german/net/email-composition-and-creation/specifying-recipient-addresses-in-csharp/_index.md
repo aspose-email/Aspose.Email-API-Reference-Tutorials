@@ -39,7 +39,7 @@ Importieren Sie in Ihre C#-Codedatei die erforderlichen Namespaces für die Verw
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Erstellen und konfigurieren Sie die E-Mail-Nachricht

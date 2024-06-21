@@ -34,7 +34,7 @@ El primer paso es cargar el mensaje de correo electrónico que contiene el archi
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Cargar el mensaje de correo electrónico
 MailMessage message = MailMessage.Load("path/to/email.msg");

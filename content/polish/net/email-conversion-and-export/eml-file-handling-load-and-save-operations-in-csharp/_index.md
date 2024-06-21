@@ -25,7 +25,7 @@ Pliki w formacie poczty elektronicznej (EML) służą do przechowywania wiadomo�
 Aby załadować pojedynczy plik EML, możesz użyć następującego fragmentu kodu:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Załaduj plik EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Jeśli masz katalog zawierający wiele plików EML, możesz załadować je partiami:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Załaduj wiele plików EML
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Po załadowaniu pliku EML możesz uzyskać dostęp do jego zawartości i modyfik
 Możesz uzyskać dostęp do różnych właściwości załadowanej wiadomości e-mail, takich jak nadawca, odbiorcy, temat i treść:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Uzyskaj dostęp do właściwości poczty e-mail
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Aby zmodyfikować odbiorców i temat, możesz użyć następującego kodu:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Zmień odbiorców i temat
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Załączniki są kluczowymi składnikami wiadomości e-mail. Możesz uzyskać dostęp do załączników i zarządzać nimi za pomocą Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Dostęp do załączników
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ Po dokonaniu niezbędnych modyfikacji treści EML możesz zapisać wiadomość e
 Aby zapisać pojedynczą wiadomość e-mail w pliku EML, użyj następującego kodu:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Zapisz zmodyfikowaną wiadomość
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Aby zbiorczo zapisać zmodyfikowane wiadomości e-mail, przeglądaj wiadomości i zapisz każdą z nich:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Zbiorcze zapisywanie zmodyfikowanych wiadomości
 foreach (MailMessage modifiedMessage in modifiedMessages)

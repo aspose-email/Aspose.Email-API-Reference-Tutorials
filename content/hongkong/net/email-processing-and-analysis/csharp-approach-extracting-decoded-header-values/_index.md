@@ -33,7 +33,7 @@ url: /zh-hant/net/email-processing-and-analysis/csharp-approach-extracting-decod
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

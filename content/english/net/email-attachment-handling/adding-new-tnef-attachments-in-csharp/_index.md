@@ -29,7 +29,7 @@ To work with emails and TNEF attachments, we need to add the Aspose.Email for .N
 To begin, let's load an existing email that contains a TNEF attachment. You'll need to provide the path to the email file.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Load the email with TNEF attachment
 MsgLoadOptions options = new MsgLoadOptions();

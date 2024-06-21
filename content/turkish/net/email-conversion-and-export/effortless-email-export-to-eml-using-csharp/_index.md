@@ -37,7 +37,7 @@ E-postaları EML formatına aktarmak için öncelikle e-posta mesajlarını kayn
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Kaynak e-posta mesajını yükleyin
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ Aspose.Email for .NET kullanarak e-postaları EML formatına aktarmak için gere
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

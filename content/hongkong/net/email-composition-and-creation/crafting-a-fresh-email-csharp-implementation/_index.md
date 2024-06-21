@@ -29,7 +29,7 @@ url: /zh-hant/net/email-composition-and-creation/crafting-a-fresh-email-csharp-i
 
    ```csharp
    using Aspose.Email;
-   using Aspose.Email.Mail;
+   
    ```
 
 2. 建立一個實例`MailMessage`班級：

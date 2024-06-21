@@ -36,7 +36,7 @@ url: /ar/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. إنشاء مثيل MailMessage جديد.

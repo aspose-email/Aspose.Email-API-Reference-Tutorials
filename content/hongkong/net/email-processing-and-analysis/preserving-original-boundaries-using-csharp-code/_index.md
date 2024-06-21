@@ -34,7 +34,7 @@ url: /zh-hant/net/email-processing-and-analysis/preserving-original-boundaries-u
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 //載入電子郵件訊息
 MailMessage message = MailMessage.Load("path/to/email.msg");

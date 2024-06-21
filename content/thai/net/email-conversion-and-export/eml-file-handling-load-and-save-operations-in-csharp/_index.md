@@ -25,7 +25,7 @@ url: /th/net/email-conversion-and-export/eml-file-handling-load-and-save-operati
 หากต้องการโหลดไฟล์ EML ไฟล์เดียว คุณสามารถใช้ข้อมูลโค้ดต่อไปนี้:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // โหลดไฟล์ EML
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 หากคุณมีไดเรกทอรีที่มีไฟล์ EML หลายไฟล์ คุณสามารถโหลดเป็นชุดได้:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //โหลดไฟล์ EML หลายไฟล์
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ foreach (string emlFile in emlFiles)
 คุณสามารถเข้าถึงคุณสมบัติต่างๆ ของอีเมลที่โหลดได้ เช่น ผู้ส่ง ผู้รับ หัวเรื่อง และเนื้อหา:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // เข้าถึงคุณสมบัติอีเมล
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 หากต้องการแก้ไขผู้รับและหัวเรื่อง คุณสามารถใช้รหัสต่อไปนี้:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // แก้ไขผู้รับและหัวเรื่อง
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 ไฟล์แนบเป็นองค์ประกอบสำคัญของข้อความอีเมล คุณสามารถเข้าถึงและจัดการไฟล์แนบโดยใช้ Aspose.Email:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // เข้าถึงไฟล์แนบ
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ foreach (Attachment attachment in message.Attachments)
 หากต้องการบันทึกข้อความอีเมลเดียวลงในไฟล์ EML ให้ใช้รหัสต่อไปนี้:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // บันทึกข้อความที่แก้ไข
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 สำหรับการบันทึกข้อความอีเมลที่แก้ไขจำนวนมาก ให้วนซ้ำข้อความและบันทึกแต่ละข้อความ:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // บันทึกข้อความที่แก้ไขจำนวนมาก
 foreach (MailMessage modifiedMessage in modifiedMessages)

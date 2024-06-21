@@ -33,7 +33,7 @@ Now let's dive into the code to extract decoded header values from an email mess
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 class Program
 {

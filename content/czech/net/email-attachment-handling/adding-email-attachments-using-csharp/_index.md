@@ -36,7 +36,7 @@ Než začneme, ujistěte se, že máte následující:
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 2. Vytvořte novou instanci MailMessage.

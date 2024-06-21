@@ -34,7 +34,7 @@ Başlamak için Aspose.Email for .NET kitaplığını yüklemeniz gerekir. Bunu 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // E-posta mesajını yükle
 MailMessage message = MailMessage.Load("path/to/email.msg");

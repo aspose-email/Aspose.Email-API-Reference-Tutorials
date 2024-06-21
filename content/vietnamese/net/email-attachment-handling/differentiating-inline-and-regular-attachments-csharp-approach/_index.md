@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 Sử dụng đoạn mã bên dưới để truy xuất tất cả tệp đính kèm từ thư email đã tải:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Tải thư email (giả sử: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

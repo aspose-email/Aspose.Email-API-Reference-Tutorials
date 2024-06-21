@@ -23,7 +23,7 @@ url: /el/net/email-attachment-handling/extracting-embedded-objects-from-email-wi
 ```csharp
 // Εισαγάγετε τους απαραίτητους χώρους ονομάτων
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Φορτώστε το μήνυμα email
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

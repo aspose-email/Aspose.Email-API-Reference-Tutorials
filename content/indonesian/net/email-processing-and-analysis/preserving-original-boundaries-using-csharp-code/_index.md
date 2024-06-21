@@ -34,7 +34,7 @@ Langkah pertama adalah memuat pesan email yang berisi lampiran yang ingin Anda g
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Muat pesan email
 MailMessage message = MailMessage.Load("path/to/email.msg");

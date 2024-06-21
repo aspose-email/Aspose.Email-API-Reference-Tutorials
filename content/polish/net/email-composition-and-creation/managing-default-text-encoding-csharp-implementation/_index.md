@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Wysyłając wiadomość e-mail, możesz określić niestandardowe kodowanie tekstu dla treści wiadomości e-mail. Może to być przydatne podczas wysyłania wiadomości e-mail w językach wymagających określonego kodowania.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Utwórz nową wiadomość e-mail
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

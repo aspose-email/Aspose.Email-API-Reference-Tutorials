@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 Wanneer u een e-mail verzendt, kunt u een aangepaste tekstcodering voor de hoofdtekst van de e-mail opgeven. Dit kan handig zijn bij het verzenden van e-mails in talen waarvoor specifieke coderingen vereist zijn.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Maak een nieuw e-mailbericht
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

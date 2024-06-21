@@ -38,7 +38,7 @@ Aspose.Email for .NET هي مكتبة قوية تعمل على تبسيط الم
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Imap;
-using Aspose.Email.Mail;
+
 ```
 
 ## الاتصال بخادم البريد الإلكتروني

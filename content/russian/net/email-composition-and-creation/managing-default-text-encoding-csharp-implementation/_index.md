@@ -59,7 +59,7 @@ SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 При отправке электронного письма вы можете указать собственную кодировку текста для тела электронного письма. Это может быть полезно при отправке электронных писем на языках, требующих определенных кодировок.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Создать новое сообщение электронной почты
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body");

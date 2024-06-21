@@ -32,7 +32,7 @@ Jakmile do projektu přidáte knihovnu Aspose.Email, můžete začít načítat 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Načíst e-mailovou zprávu
 var message = MailMessage.Load("path/to/email.eml");

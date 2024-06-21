@@ -39,7 +39,7 @@ Do souboru kódu C# importujte potřebné jmenné prostory pro použití tříd 
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. Vytvořte a nakonfigurujte e-mailovou zprávu

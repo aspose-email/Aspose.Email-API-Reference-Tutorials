@@ -39,7 +39,7 @@ url: /zh-hant/net/email-composition-and-creation/specifying-recipient-addresses-
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 ```
 
 ### 4. 建立並設定電子郵件

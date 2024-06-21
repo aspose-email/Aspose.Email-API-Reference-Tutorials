@@ -25,7 +25,7 @@ EML dosyalarını yüklemek, e-posta mesajlarıyla çalışmanın ilk adımıdı
 Tek bir EML dosyası yüklemek için aşağıdaki kod pasajını kullanabilirsiniz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // EML dosyasını yükle
 MailMessage message = MailMessage.Load("path/to/email.eml");
@@ -36,7 +36,7 @@ MailMessage message = MailMessage.Load("path/to/email.eml");
 Birden fazla EML dosyası içeren bir dizininiz varsa bunları toplu olarak yükleyebilirsiniz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //Birden fazla EML dosyası yükle
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
@@ -56,7 +56,7 @@ Bir EML dosyasını yükledikten sonra Aspose.Email kütüphanesini kullanarak i
 Yüklenen e-postanın gönderen, alıcılar, konu ve gövde gibi çeşitli özelliklerine erişebilirsiniz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // E-posta özelliklerine erişme
 Console.WriteLine($"From: {message.From}");
@@ -70,7 +70,7 @@ Console.WriteLine($"Body: {message.HtmlBody}");
 Alıcıları ve konuyu değiştirmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Alıcıları ve konuyu değiştirin
 message.To.Clear();
@@ -83,7 +83,7 @@ message.Subject = "Updated Subject";
 Ekler e-posta mesajlarının önemli bileşenleridir. Aspose.Email'i kullanarak eklere erişebilir ve bunları yönetebilirsiniz:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Eklere erişme
 foreach (Attachment attachment in message.Attachments)
@@ -101,7 +101,7 @@ EML içeriğinde gerekli değişiklikleri yaptıktan sonra e-posta mesajını te
 Tek bir e-posta mesajını bir EML dosyasına kaydetmek için aşağıdaki kodu kullanın:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Değiştirilen mesajı kaydet
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
@@ -112,7 +112,7 @@ message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 Değiştirilen e-posta mesajlarının toplu olarak kaydedilmesi için mesajları yineleyin ve her birini kaydedin:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Değiştirilen mesajları toplu kaydet
 foreach (MailMessage modifiedMessage in modifiedMessages)

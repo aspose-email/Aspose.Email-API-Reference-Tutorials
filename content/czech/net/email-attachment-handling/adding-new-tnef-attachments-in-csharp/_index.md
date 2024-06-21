@@ -29,7 +29,7 @@ Abychom mohli pracovat s e-maily a přílohami TNEF, musíme do našeho projektu
 Pro začátek načteme existující e-mail, který obsahuje přílohu TNEF. Budete muset zadat cestu k souboru e-mailu.
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Vložte e-mail s přílohou TNEF
 MsgLoadOptions options = new MsgLoadOptions();

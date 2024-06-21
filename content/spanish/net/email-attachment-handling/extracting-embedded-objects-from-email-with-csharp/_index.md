@@ -23,7 +23,7 @@ Para extraer objetos incrustados de un correo electrónico, primero debe cargar 
 ```csharp
 // Importar los espacios de nombres necesarios
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Cargar el mensaje de correo electrónico
 var message = MailMessage.Load("path/to/your/email.eml");
@@ -59,7 +59,7 @@ Aquí está el código fuente completo para extraer objetos incrustados de un co
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmbeddedObjectExtractor
 {

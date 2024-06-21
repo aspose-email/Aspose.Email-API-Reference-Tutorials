@@ -37,7 +37,7 @@ Aspose.Email для .NET — это надежная и многофункцио
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Загрузите исходное сообщение электронной почты
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {

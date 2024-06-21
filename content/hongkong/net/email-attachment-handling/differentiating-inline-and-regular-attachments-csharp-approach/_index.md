@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 使用下面的程式碼片段從已載入的電子郵件中檢索所有附件：
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 //載入電子郵件訊息（假設：'emailMessage'）
 AttachmentCollection attachments = emailMessage.Attachments;

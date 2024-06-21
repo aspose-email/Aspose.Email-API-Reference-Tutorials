@@ -39,7 +39,7 @@ Ten eerste heeft u een e-mailbericht nodig om mee te werken. Laad het e-mailberi
 Gebruik het onderstaande codefragment om alle bijlagen uit het geladen e-mailbericht op te halen:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // Laad het e-mailbericht (verondersteld: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

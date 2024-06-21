@@ -39,7 +39,7 @@ Install-Package Aspose.Email
 ใช้ข้อมูลโค้ดด้านล่างเพื่อเรียกเอกสารแนบทั้งหมดจากข้อความอีเมลที่โหลด:
 
 ```csharp
-using Aspose.Email.Mail;
+
 
 // โหลดข้อความอีเมล (ถือว่า: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;

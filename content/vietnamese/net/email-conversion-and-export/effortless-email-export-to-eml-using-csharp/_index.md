@@ -37,7 +37,7 @@ Hãy làm theo các bước sau để cài đặt thư viện Aspose.Email for .
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 // Tải thư email nguồn
 string sourcePath = "path/to/source/email.msg";
@@ -113,7 +113,7 @@ catch (Exception ex)
 
 ```csharp
 using Aspose.Email;
-using Aspose.Email.Mail;
+
 
 namespace EmailExportApp
 {
