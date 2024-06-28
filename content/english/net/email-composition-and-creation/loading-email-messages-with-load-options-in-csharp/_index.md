@@ -71,16 +71,6 @@ var client = EWSClient.GetEWSClient("https://exchangeserver.com/ews/exchange.asm
 var email = client.FetchMessage("messageId");
 ```
 
-## Loading Password-Protected Emails
-
-If you're dealing with password-protected emails, Aspose.Email for .NET has you covered. You can provide the password while loading the email.
-
-```csharp
-// Load password-protected email
-loadOptions.Password = "emailPassword";
-var email = MailMessage.Load(filePath, loadOptions);
-```
-
 ## Handling Load Errors
 
 It's essential to handle errors when loading emails. Aspose.Email for .NET provides exceptions that can help you identify and resolve any loading issues.
