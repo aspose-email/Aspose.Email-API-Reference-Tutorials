@@ -1,9 +1,0 @@
-baseURL = "https://reference.aspose.com/tutorials/email"
-
-# Google Tag Manager settings
-[params.gtm]
-gtm_id = "GTM-NJMHSH"
-
-[[deployment.targets]]
-name = "Production"
-URL = "s3://reference.aspose.com/?prefix=tutorials/email/&region=us-west-2"
