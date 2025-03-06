@@ -3,10 +3,16 @@ title: Generování souborů OFT ze zpráv - C# Tutorial
 linktitle: Generování souborů OFT ze zpráv - C# Tutorial
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se vytvářet soubory OFT ze zpráv pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem pro efektivní generování e-mailových šablon.
-type: docs
 weight: 19
 url: /cs/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Generování souborů OFT ze zpráv - C# Tutorial
+
 
 ## Úvod do generování souborů OFT
 
@@ -114,3 +120,9 @@ Absolutně! V šabloně můžete definovat své vlastní zástupné symboly a na
 ### Jak zajistím, aby mé vygenerované e-maily neskončily ve složce se spamem příjemce?
 
 Chcete-li předejít tomu, aby byly e-maily označeny jako spam, dodržujte osvědčené postupy pro doručování e-mailů. Používejte legitimní postupy odesílání, vyhněte se přebytečným odkazům a uveďte správné informace o odesílateli.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

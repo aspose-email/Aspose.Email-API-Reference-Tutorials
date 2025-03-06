@@ -3,10 +3,16 @@ title: Domine el manejo de archivos adjuntos de correo electrónico con Aspose.E
 linktitle: Manejo de archivos adjuntos de correo electrónico
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Impulse la gestión del correo electrónico utilizando los tutoriales de Aspose.Email para .NET. Aprenda procesamiento, análisis y conocimientos basados en datos optimizados. Se proporciona una guía paso a paso.
-type: docs
 weight: 12
 url: /es/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Domine el manejo de archivos adjuntos de correo electrónico con Aspose.Email para .NET
+
 ## Introducción
 
 Los tutoriales de Aspose.Email para .NET sobre "Adjuntos de correo electrónico y manejo de archivos adjuntos" ofrecen a los desarrolladores una guía completa para administrar y manipular eficazmente los archivos adjuntos de correo electrónico dentro de sus aplicaciones. Estos tutoriales brindan información valiosa sobre cómo aprovechar el poder de Aspose.Email para .NET para manejar archivos adjuntos sin problemas, mejorando el intercambio de datos y la colaboración. Con instrucciones paso a paso y fragmentos de código ilustrativos, los desarrolladores pueden integrar con confianza funcionalidades relacionadas con archivos adjuntos en sus aplicaciones, optimizando los flujos de trabajo de comunicación por correo electrónico y las experiencias de los usuarios.
@@ -46,3 +52,10 @@ Aprenda a extraer archivos adjuntos incrustados de archivos MSG usando C# y Aspo
 Aprenda cómo conservar el formato MSG incrustado usando Aspose.Email para .NET. Guía paso a paso con código fuente.
 ### [Preservar archivos adjuntos TNEF al leer mensajes: enfoque C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Aprenda cómo conservar archivos adjuntos TNEF usando Aspose.Email para .NET en esta guía paso a paso con código fuente.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

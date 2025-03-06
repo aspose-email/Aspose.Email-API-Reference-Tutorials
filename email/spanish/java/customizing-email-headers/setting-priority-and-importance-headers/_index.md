@@ -3,10 +3,16 @@ title: Configuración de encabezados de prioridad e importancia con Aspose.Email
 linktitle: Configuración de encabezados de prioridad e importancia con Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aumente el impacto de su correo electrónico estableciendo encabezados de prioridad e importancia con Aspose.Email para Java. Aprenda cómo hacerlo en esta guía paso a paso.
-type: docs
 weight: 14
 url: /es/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configuración de encabezados de prioridad e importancia con Aspose.Email
+
 
 ## Introducción
 
@@ -94,3 +100,9 @@ Si bien puedes establecer encabezados de importancia, ten en cuenta que el impac
 ### ¿Cómo manejo los archivos adjuntos de correo electrónico con Aspose.Email?
 
  Manejar archivos adjuntos de correo electrónico con Aspose.Email es sencillo. Puedes usar el`Attachment` class para agregar archivos adjuntos a sus mensajes de correo electrónico. Para obtener una guía detallada, consulte la documentación de Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

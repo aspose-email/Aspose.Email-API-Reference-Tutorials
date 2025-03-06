@@ -3,10 +3,16 @@ title: تحديد رسائل TNEF برمز C#
 linktitle: تحديد رسائل TNEF برمز C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية التعرف على رسائل TNEF باستخدام C# وAspose.Email لـ .NET. تم تضمين دليل خطوة بخطوة مع التعليمات البرمجية المصدر والأسئلة الشائعة.
-type: docs
 weight: 14
 url: /ar/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد رسائل TNEF برمز C#
+
 
 Aspose.Email for .NET هي مكتبة قوية توفر دعمًا شاملاً للعمل مع تنسيقات وبروتوكولات البريد الإلكتروني المختلفة في C#. في هذا الدليل التفصيلي، سنستكشف كيفية تحديد رسائل TNEF (تنسيق تغليف النقل المحايد) باستخدام رمز C# ومكتبة Aspose.Email. TNEF هو تنسيق بريد إلكتروني خاص يستخدمه Microsoft Outlook لتغليف النص المنسق والمرفقات داخل رسائل البريد الإلكتروني.
 
@@ -104,3 +110,9 @@ if (message.IsTnef)
 ### هل يستطيع Aspose.Email التعامل مع معالجة البريد الإلكتروني على منصات مختلفة؟
 
 بالتأكيد، Aspose.Email عبارة عن مكتبة مشتركة بين الأنظمة الأساسية يمكن استخدامها لتطوير التطبيقات على منصات مختلفة، بما في ذلك Windows وmacOS وLinux.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

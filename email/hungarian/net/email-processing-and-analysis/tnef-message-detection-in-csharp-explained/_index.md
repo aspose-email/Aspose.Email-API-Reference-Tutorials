@@ -3,10 +3,16 @@ title: TNEF üzenetészlelés C#-ban – magyarázat
 linktitle: TNEF üzenetészlelés C#-ban – magyarázat
 second_title: Aspose.Email .NET Email Processing API
 description: Tanulja meg a TNEF üzenetek észlelését és feldolgozását C# nyelven az Aspose.Email for .NET használatával. Javítsa az e-mailek kezelését formázott szöveggel és mellékletekkel.
-type: docs
 weight: 15
 url: /hu/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF üzenetészlelés C#-ban – magyarázat
+
 
 Ez az útmutató részletes, lépésről lépésre magyarázatot ad a TNEF (Transport Neutral Encapsulation Format) üzenetek észlelésére az Aspose.Email for .NET könyvtár használatával. A TNEF egy olyan formátum, amelyet a Microsoft Outlook használ formázott szövegek és mellékletek e-mail üzenetekbe való beágyazására. Az Aspose.Email for .NET hatékony API-készletet kínál az e-mailekkel és mellékletekkel, köztük a TNEF-üzenetekkel való együttműködéshez.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 Ebből az útmutatóból megtanulta, hogyan észlelheti a TNEF (Transport Neutral Encapsulation Format) üzeneteket az Aspose.Email for .NET könyvtár használatával. A Microsoft Outlook által gyakran használt TNEF üzenetek formázott szöveget és mellékleteket tartalmaznak az e-mailekben. Az ebben az útmutatóban ismertetett lépések követésével hatékonyan azonosíthatja a TNEF-üzeneteket, és kibonthatja a mellékleteiket további feldolgozás céljából.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

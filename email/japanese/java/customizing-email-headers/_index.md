@@ -3,10 +3,16 @@ title: Aspose.Email for Java を使用した電子メール ヘッダーのカ�
 linktitle: Aspose.Email for Java を使用した電子メール ヘッダーのカスタマイズ
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール ヘッダーを簡単にカスタマイズする方法を学びます。チュートリアルに進んで、電子メール ヘッダーのカスタマイズ機能を活用してください。
-type: docs
 weight: 16
 url: /ja/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java を使用した電子メール ヘッダーのカスタマイズ
+
 
 電子メール ヘッダーは電子メール通信において重要な役割を果たし、メッセージの送信元と配信に関する重要な情報を提供します。 Aspose.Email for Java を使用すると、電子メール ヘッダーのカスタマイズが簡単な作業になり、ユーザーは電子メールのメタデータを特定のニーズや要件に合わせて調整できるようになります。
 
@@ -37,3 +43,9 @@ Aspose.Email for Java を使用して、DKIM 署名による電子メールの�
 Aspose.Email for Java を使用して、電子メールの X-Header の力を解き放ちます。カスタム メタデータの管理と電子メール処理の強化について学びます。
 ### [Aspose.Email を使用してヘッダーを通じて電子メールのメタデータを強化する](./enriching-email-metadata-through-headers/)
 Aspose.Email for Java を使用して電子メールのメタデータを強化します。 Aspose.Email を使用して追跡とカスタマイズを改善するために電子メール ヘッダーを強化する方法を学びます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

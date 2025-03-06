@@ -3,10 +3,16 @@ title: Gestione delle intestazioni X nei messaggi e-mail con Aspose.Email
 linktitle: Gestione delle intestazioni X nei messaggi e-mail con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Sblocca la potenza degli X-Headers nelle e-mail con Aspose.Email per Java. Impara a gestire i metadati personalizzati e a migliorare l'elaborazione della posta elettronica.
-type: docs
 weight: 16
 url: /it/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestione delle intestazioni X nei messaggi e-mail con Aspose.Email
+
 
 ## introduzione
 
@@ -124,3 +130,9 @@ Puoi leggere X-Headers dalle e-mail ricevute utilizzando Aspose.Email per Java. 
 ### Aspose.Email è adatto per la gestione della posta elettronica a livello aziendale?
 
 Sì, Aspose.Email è una solida libreria che può essere utilizzata per la gestione della posta elettronica a livello aziendale. Offre un'ampia gamma di funzionalità per creare, inviare, ricevere ed elaborare e-mail, rendendolo adatto a vari scenari aziendali.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

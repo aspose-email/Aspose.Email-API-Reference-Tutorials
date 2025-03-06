@@ -3,10 +3,16 @@ title: Beibehaltung ursprünglicher Grenzen mithilfe von C#-Code
 linktitle: Beibehaltung ursprünglicher Grenzen mithilfe von C#-Code
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit C# und Aspose.Email für .NET die ursprünglichen Grenzen von E-Mail-Anhängen beibehalten. Schritt-für-Schritt-Anleitung mit Quellcode.
-type: docs
 weight: 13
 url: /de/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beibehaltung ursprünglicher Grenzen mithilfe von C#-Code
+
 
 ## Einführung in die Wahrung ursprünglicher Grenzen
 
@@ -107,3 +113,9 @@ Mit der Aspose.Email-Bibliothek können Sie Bildanhänge laden und bearbeiten un
 ### Wo finde ich weitere Informationen zu Aspose.Email für .NET?
 
  Eine ausführliche Dokumentation und Beispiele finden Sie auf der[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net/) Seite.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

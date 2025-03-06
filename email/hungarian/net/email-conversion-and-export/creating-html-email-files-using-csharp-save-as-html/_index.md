@@ -3,10 +3,16 @@ title: HTML e-mail fájlok létrehozása C# használatával - Mentés HTML-ként
 linktitle: HTML e-mail fájlok létrehozása C# használatával - Mentés HTML-ként
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan hozhat létre HTML e-mail fájlokat C# és Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a zökkenőmentes e-mailek testreszabásához.
-type: docs
 weight: 18
 url: /hu/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# HTML e-mail fájlok létrehozása C# használatával - Mentés HTML-ként
+
 
 ## Bevezetés a HTML e-mail fájlok létrehozásába
 
@@ -113,3 +119,9 @@ Igen, az Aspose.Email támogatja a .NET Core-t, amely lehetővé teszi többplat
 ### Hol találok további példákat és dokumentációt?
 
  Átfogó példákat és részletes dokumentációt fedezhet fel a[Aspose.E-mail dokumentáció](https://reference.aspose.com/email/net) oldalon.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tạo email có định dạng HTML bằng Aspose.Email
 linktitle: Tạo email có định dạng HTML bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách tạo email HTML tuyệt đẹp với Aspose.Email cho Java. Hướng dẫn từng bước với các ví dụ về mã để giao tiếp qua email hiệu quả.
-type: docs
 weight: 11
 url: /vi/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo email có định dạng HTML bằng Aspose.Email
+
 
 ## Giới thiệu
 
@@ -121,3 +127,10 @@ Aspose.Email for Java cung cấp các tính năng để xử lý thông báo tr�
 ### Tôi có thể tìm tài nguyên và tài liệu bổ sung cho Aspose.Email cho Java ở đâu?
  Bạn có thể tìm thấy tài liệu, hướng dẫn và ví dụ toàn diện trên trang tài liệu API Aspose.Email dành cho Java:[Aspose.Email cho Tài liệu API Java](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

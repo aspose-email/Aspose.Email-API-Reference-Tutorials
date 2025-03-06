@@ -3,10 +3,16 @@ title: إضافة مرفقات البريد الإلكتروني باستخدا�
 linktitle: إضافة مرفقات البريد الإلكتروني باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إضافة مرفقات البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية للتكامل السلس.
-type: docs
 weight: 11
 url: /ar/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إضافة مرفقات البريد الإلكتروني باستخدام C#
+
 
 ## مقدمة لمرفقات البريد الإلكتروني وAspose.Email لـ .NET
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### هل تتوفر نسخة تجريبية مجانية من Aspose.Email لـ .NET؟
 
 نعم، يمكنك تنزيل نسخة تجريبية مجانية من Aspose.Email لـ .NET لاستكشاف ميزاته قبل إجراء عملية شراء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

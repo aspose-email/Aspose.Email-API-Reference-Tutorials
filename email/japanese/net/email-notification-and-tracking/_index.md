@@ -3,10 +3,16 @@ title: 電子メール通知と追跡でコミュニケーションを強化
 linktitle: 電子メール通知と追跡
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して、電子メール通知と追跡機能を実装します。通知を自動化し、電子メール受信者のやり取りについての洞察を取得します。
-type: docs
 weight: 16
 url: /ja/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メール通知と追跡でコミュニケーションを強化
+
 
 ## 導入
 
@@ -27,3 +33,9 @@ Aspose.Email for .NET を使用して C# で電子メール通知を受信する
 C# コードを使用して、Aspose.Email for .NET を使用して電子メール開封確認を要求し、通信追跡を強化する方法を学びます。
 ### [C# コードを使用した電子メール ドキュメント変換の進行状況の追跡](./tracking-email-document-conversion-progress-with-csharp-code/)
 Aspose.Email for .NET を使用して電子メール通知と追跡を実装する方法を学びます。コード例を含むステップバイステップのガイド。今すぐメールコミュニケーションを強化しましょう!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

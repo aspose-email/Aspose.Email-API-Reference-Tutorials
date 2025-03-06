@@ -3,10 +3,16 @@ title: 检测附件或嵌入消息 - C# 指南
 linktitle: 检测附件或嵌入消息 - C# 指南
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 使用 Aspose.Email for .NET 在 C# 中掌握电子邮件附件和嵌入式消息检测。通过我们的综合指南提升您的电子邮件处理能力。
-type: docs
 weight: 13
 url: /zh/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 检测附件或嵌入消息 - C# 指南
+
 
 ## 检测附件或嵌入消息简介 - C# 指南
 
@@ -106,3 +112,9 @@ foreach (AlternateView alternateView in message.AlternateViews)
 ### 我可以自定义附件和嵌入消息的处理吗？
 
 当然，您可以定制附件和嵌入消息的处理以满足您特定应用程序的需求。 Aspose.Email 为此提供了灵活的 API。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

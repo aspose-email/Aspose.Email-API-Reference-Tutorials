@@ -3,10 +3,16 @@ title: 從訊息產生 OFT 檔案 - C# 教程
 linktitle: 從訊息產生 OFT 檔案 - C# 教程
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 從訊息建立 OFT 檔案。帶有原始程式碼的逐步指南，用於高效生成電子郵件範本。
-type: docs
 weight: 19
 url: /zh-hant/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 從訊息產生 OFT 檔案 - C# 教程
+
 
 ## 產生 OFT 檔案簡介
 
@@ -114,3 +120,9 @@ OFT 檔案主要設計用於 Microsoft Outlook。雖然其他一些電子郵件�
 ### 如何確保我產生的電子郵件不會進入收件者的垃圾郵件資料夾？
 
 為避免電子郵件被標記為垃圾郵件，請確保遵循電子郵件送達率的最佳實務。使用合法的發送實踐，避免過多的鏈接，並包含正確的發件人信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

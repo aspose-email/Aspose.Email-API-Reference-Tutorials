@@ -3,10 +3,16 @@ title: Skickar vanlig text-e-post med Aspose.Email
 linktitle: Skickar vanlig text-e-post med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lär dig att skicka e-postmeddelanden i vanlig text effektivt med Aspose.Email för Java. En omfattande guide med kodexempel och vanliga frågor för sömlös kommunikation.
-type: docs
 weight: 10
 url: /sv/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skickar vanlig text-e-post med Aspose.Email
+
 
 ## Introduktion
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Finns det några begränsningar när du skickar e-postmeddelanden med vanlig text med Aspose.Email för Java?
    - Begränsningarna kan bero på din e-postleverantör och SMTP-server. Se till att du följer alla sändningsgränser och policyer för sändning av e-post.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

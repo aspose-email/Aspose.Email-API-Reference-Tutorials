@@ -3,10 +3,16 @@ title: Διαχείριση X-Header σε μηνύματα ηλεκτρονικ�
 linktitle: Διαχείριση X-Header σε μηνύματα ηλεκτρονικού ταχυδρομείου με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Ξεκλειδώστε τη δύναμη των X-Headers στα μηνύματα ηλεκτρονικού ταχυδρομείου με το Aspose.Email για Java. Μάθετε να διαχειρίζεστε προσαρμοσμένα μεταδεδομένα και να βελτιώνετε την επεξεργασία email.
-type: docs
 weight: 16
 url: /el/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διαχείριση X-Header σε μηνύματα ηλεκτρονικού ταχυδρομείου με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -124,3 +130,9 @@ String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ### Είναι το Aspose.Email κατάλληλο για διαχείριση email σε εταιρικό επίπεδο;
 
 Ναι, το Aspose.Email είναι μια ισχυρή βιβλιοθήκη που μπορεί να χρησιμοποιηθεί για διαχείριση email σε εταιρικό επίπεδο. Προσφέρει ένα ευρύ φάσμα δυνατοτήτων για τη δημιουργία, αποστολή, λήψη και επεξεργασία email, καθιστώντας το κατάλληλο για διάφορα επιχειρηματικά σενάρια.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

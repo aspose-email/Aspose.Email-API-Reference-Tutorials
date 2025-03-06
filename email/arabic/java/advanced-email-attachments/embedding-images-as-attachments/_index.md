@@ -3,10 +3,16 @@ title: تضمين الصور كمرفقات في Aspose.Email
 linktitle: تضمين الصور كمرفقات في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية تضمين الصور كمرفقات في Aspose.Email لـ Java. ارفع مستوى تواصلك عبر البريد الإلكتروني من خلال محتوى جذاب بصريًا.
-type: docs
 weight: 14
 url: /ar/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تضمين الصور كمرفقات في Aspose.Email
+
 
 ## تضمين الصور كمرفقات في Aspose.Email
 
@@ -97,3 +103,9 @@ client.send(message);
 ### هل هناك أي قيود على حجم الصور المضمنة؟
 
 قد يؤثر حجم الصور المضمنة على إمكانية تسليم البريد الإلكتروني وتجربة المستلم. يُنصح بتحسين الصور للبريد الإلكتروني لتجنب أحجام الملفات الكبيرة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

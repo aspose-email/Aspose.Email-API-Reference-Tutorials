@@ -3,10 +3,16 @@ title: C# 코드로 이메일 알림 수신
 linktitle: C# 코드로 이메일 알림 수신
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 이메일 알림을 받는 방법을 알아보세요. 효율적인 코드 예제가 제공됩니다.
-type: docs
 weight: 10
 url: /ko/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드로 이메일 알림 수신
+
 
 
 디지털 시대에는 의사소통이 필수적이며, 이메일은 여전히 가장 널리 사용되는 정보 교환 수단 중 하나입니다. 개발자는 애플리케이션에서 이메일 알림을 보내고 받아야 할 수도 있습니다. 이 단계별 튜토리얼에서는 .NET용 Aspose.Email을 사용하여 C#으로 이메일 알림을 받는 방법을 살펴보겠습니다.
@@ -88,3 +94,9 @@ client.Send(msg);
    Aspose.Email은 보내거나 받을 수 있는 이메일 수에 엄격한 제한을 두지 않지만 이메일 서버의 제한이 적용될 수 있습니다.
 
 이것으로 .NET용 Aspose.Email을 사용하여 C#으로 이메일 알림을 받는 방법에 대한 튜토리얼을 마칩니다. 이 가이드가 귀하의 애플리케이션에서 이메일 알림을 구현하는 데 도움이 되기를 바랍니다. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

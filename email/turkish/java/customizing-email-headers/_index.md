@@ -3,10 +3,16 @@ title: Aspose.Email for Java ile E-posta Başlıklarını Özelleştirme
 linktitle: Aspose.Email for Java ile E-posta Başlıklarını Özelleştirme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile e-posta başlıklarını zahmetsizce nasıl özelleştireceğinizi öğrenin. Eğiticilere dalın ve e-posta başlığı özelleştirmesinin gücünden yararlanın.
-type: docs
 weight: 16
 url: /tr/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java ile E-posta Başlıklarını Özelleştirme
+
 
 E-posta başlıkları, e-posta iletişiminde çok önemli bir rol oynar ve mesajın kaynağı ve teslimi hakkında önemli bilgiler sağlar. Aspose.Email for Java ile e-posta başlıklarını özelleştirmek basit bir iş haline geliyor ve kullanıcıların e-posta meta verilerini belirli ihtiyaç ve gereksinimlere göre uyarlamasına olanak tanıyor.
 
@@ -37,3 +43,9 @@ Aspose.Email for Java'yı kullanarak DKIM imzalarıyla e-posta güvenliğini sa�
 Aspose.Email for Java ile E-postalarda X Başlıklarının Gücünün Kilidini Açın. Özel Meta Verileri Yönetmeyi ve E-posta İşlemeyi Geliştirmeyi öğrenin.
 ### [Aspose.Email ile E-posta Meta Verilerini Başlıklar Aracılığıyla Zenginleştirme](./enriching-email-metadata-through-headers/)
 Aspose.Email for Java ile E-posta Meta Verilerini geliştirin. Aspose.Email ile gelişmiş izleme ve özelleştirme için e-posta başlıklarını nasıl zenginleştireceğinizi öğrenin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

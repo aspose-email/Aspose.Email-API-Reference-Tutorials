@@ -3,10 +3,16 @@ title: Especificando endereços de destinatários em C#
 linktitle: Especificando endereços de destinatários em C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como especificar endereços de destinatários em C# usando Aspose.Email para .NET. Crie, configure e envie e-mails com eficiência.
-type: docs
 weight: 19
 url: /pt/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Especificando endereços de destinatários em C#
+
 
 
 Este guia orientará você no processo de especificação de endereços de destinatários em C# usando a biblioteca Aspose.Email para .NET. Aspose.Email é uma API .NET poderosa que permite trabalhar com mensagens de email e várias tarefas relacionadas a email. Neste tutorial, abordaremos como adicionar endereços de destinatários a uma mensagem de e-mail usando a biblioteca.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Para obter mais informações e recursos avançados do Aspose.Email for .NET, consulte o[Aspose Referências de API](https://reference.aspose.com/email/net/).
 
 Isso conclui o guia sobre como especificar endereços de destinatários em C# usando Aspose.Email para .NET. Você aprendeu como criar uma mensagem de e-mail, adicionar endereços de destinatários e enviar e-mail usando os recursos da biblioteca.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 이메일 헤더 추출 및 분석
 linktitle: Aspose.Email을 사용하여 이메일 헤더 추출 및 분석
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 이메일 헤더 분석의 힘을 활용하세요. 향상된 이메일 추적 및 보안을 위해 이메일 헤더를 추출하고 분석하는 방법을 알아보세요.
-type: docs
 weight: 12
 url: /ko/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 이메일 헤더 추출 및 분석
+
 
 ## Aspose.Email을 사용한 이메일 헤더 추출 및 분석 소개
 
@@ -107,3 +113,9 @@ SPF 및 DKIM 레코드를 확인하려면 이메일 헤더에서 "Received-SPF" 
 ### Aspose.Email을 사용하여 이메일 헤더 분석을 자동화할 수 있나요?
 
 예, Aspose.Email을 Java 애플리케이션에 통합하여 이메일 헤더 분석을 자동화할 수 있습니다. 라이브러리는 이메일 헤더 작업을 위한 편리한 방법을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

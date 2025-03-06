@@ -3,10 +3,16 @@ title: Bijlagen opnemen in e-mail - C#-voorbeeld
 linktitle: Bijlagen opnemen in e-mail - C#-voorbeeld
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u bijlagen in e-mail kunt opnemen met Aspose.Email voor .NET. Stapsgewijze handleiding met C#-codevoorbeeld.
-type: docs
 weight: 10
 url: /nl/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bijlagen opnemen in e-mail - C#-voorbeeld
+
 
 ## Inleiding tot het opnemen van bijlagen in e-mail
 
@@ -111,3 +117,9 @@ Ja, u kunt Aspose.Email configureren om e-mails te verzenden via beveiligde verb
 ### Waar kan ik meer informatie vinden over de mogelijkheden van Aspose.Email?
 
  Voor meer gedetailleerde informatie over de functies, klassen en methoden van Aspose.Email raadpleegt u de[Aspose.Email API-referentie](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-posta Başlığının Değiştirilmesi
 linktitle: E-posta Başlığının Değiştirilmesi
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimlerini kullanarak e-posta başlıklarını verimli bir şekilde yönetin. Gelişmiş iletişim için başlıkları çıkarmayı, değiştirmeyi ve kişiselleştirmeyi öğrenin.
-type: docs
 weight: 14
 url: /tr/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-posta Başlığının Değiştirilmesi
+
 
 ## giriiş
 
@@ -33,3 +39,9 @@ C# ve Aspose.Email for .NET kullanarak MHTML sırasını nasıl özelleştirece�
 Aspose.Email for .NET'i kullanarak C#'ta e-posta başlıklarını nasıl çıkaracağınızı öğrenin. Etkili e-posta analizi için kaynak kodlu adım adım kılavuz. 
 ### [C#'ta Özel Başlıkları Belirtme](./specifying-custom-headers-in-csharp/)
 E-posta iletişimini geliştirmek için Aspose.Email for .NET'i kullanarak C#'ta özel başlıkları nasıl belirleyeceğinizi öğrenin. Bu adım adım kılavuz, daha iyi etkileşim için kişiselleştirilmiş e-posta başlıkları oluşturmaya ilişkin bilgiler sağlar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

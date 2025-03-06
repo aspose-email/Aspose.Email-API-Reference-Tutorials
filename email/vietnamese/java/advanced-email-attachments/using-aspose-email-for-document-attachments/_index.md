@@ -3,10 +3,16 @@ title: Sử dụng Aspose.Email để đính kèm tài liệu
 linktitle: Sử dụng Aspose.Email để đính kèm tài liệu
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách quản lý tệp đính kèm tài liệu trong email Java bằng Aspose.Email for Java. Tạo, gửi và trích xuất tệp đính kèm tài liệu một cách dễ dàng.
-type: docs
 weight: 16
 url: /vi/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sử dụng Aspose.Email để đính kèm tài liệu
+
 
 ## Giới thiệu về cách sử dụng Aspose.Email để đính kèm tài liệu trong Java
 
@@ -104,3 +110,9 @@ Có, Aspose.Email for Java hỗ trợ nhiều loại tệp đính kèm, bao gồ
 ### Làm cách nào để xử lý các tệp đính kèm tài liệu lớn?
 
 Nếu bạn cần xử lý các tệp đính kèm tài liệu lớn, hãy cân nhắc sử dụng kỹ thuật truyền trực tuyến để tránh tải toàn bộ tệp đính kèm vào bộ nhớ. Aspose.Email cung cấp các tùy chọn để truyền trực tuyến tệp đính kèm, cho phép bạn xử lý chúng một cách hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Προσέγγιση C# - Εξαγωγή αποκωδικοποιημέν
 linktitle: Προσέγγιση C# - Εξαγωγή αποκωδικοποιημένων τιμών κεφαλίδας
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε να εξάγετε αποκωδικοποιημένες τιμές κεφαλίδας email στο C# χρησιμοποιώντας το Aspose.Email για .NET. Περιεκτικός οδηγός με παραδείγματα κώδικα.
-type: docs
 weight: 17
 url: /el/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσέγγιση C# - Εξαγωγή αποκωδικοποιημένων τιμών κεφαλίδας
+
 
 Σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στη διαδικασία χρήσης του Aspose.Email για .NET για την εξαγωγή αποκωδικοποιημένων τιμών κεφαλίδας από μηνύματα email. Το Aspose.Email για .NET είναι μια ισχυρή βιβλιοθήκη που δίνει τη δυνατότητα στους προγραμματιστές να εργάζονται με διάφορες πτυχές των μηνυμάτων email, συμπεριλαμβανομένης της ανάγνωσης και του χειρισμού κεφαλίδων email.
 
@@ -77,3 +83,9 @@ class Program
 ## συμπέρασμα
 
 Σε αυτό το σεμινάριο, μάθατε πώς να χρησιμοποιείτε το Aspose.Email για .NET για την εξαγωγή αποκωδικοποιημένων τιμών κεφαλίδας από μηνύματα email. Το Aspose.Email για .NET παρέχει ένα ολοκληρωμένο σύνολο εργαλείων που δίνει τη δυνατότητα στους προγραμματιστές να εργάζονται αποτελεσματικά με μηνύματα email, συμπεριλαμβανομένου του χειρισμού κεφαλίδων.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

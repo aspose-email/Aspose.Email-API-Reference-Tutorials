@@ -1,12 +1,17 @@
 ---
 title: Составление, преобразование и обработка электронной почты с помощью учебных пособий Aspose.Email
 linktitle: Учебные пособия по Aspose.Email для .NET
-type: docs
 weight: 10
 url: /ru/net/
 description: Оптимизируйте возможности электронной почты с помощью руководств Aspose.Email для .NET. Изучите состав, преобразование и обработку для расширенного управления электронной почтой.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Составление, преобразование и обработка электронной почты с помощью учебных пособий Aspose.Email
+
 
 ## Введение
 
@@ -45,3 +50,9 @@ is_root: true
 Оптимизируйте хранение и извлечение файлов электронной почты с помощью руководств Aspose.Email для .NET. Научитесь управлять сообщениями электронной почты и вложениями и получать к ним доступ программными средствами.
 ### [Безопасность электронной почты и подписи](./email-security-and-signatures/)
 Внедрите надежные меры безопасности электронной почты и персонализированные подписи с помощью учебных пособий Aspose.Email для .NET. Обеспечьте безопасную связь и профессиональный брендинг.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

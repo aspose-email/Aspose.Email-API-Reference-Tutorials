@@ -3,10 +3,16 @@ title: Master hantering av e-postbilagor med Aspose.Email för .NET
 linktitle: Hantering av e-postbilagor
 second_title: Aspose.Email .NET Email Processing API
 description: Öka e-posthanteringen med Aspose.Email för .NET tutorials. Lär dig strömlinjeformad bearbetning, analys och datadrivna insikter. Steg för steg guide tillhandahålls.
-type: docs
 weight: 12
 url: /sv/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Master hantering av e-postbilagor med Aspose.Email för .NET
+
 ## Introduktion
 
 Aspose.Email för .NET-handledningarna om "E-postbilagor och hantering av bilagor" erbjuder utvecklare en omfattande guide för att effektivt hantera och manipulera e-postbilagor i sina applikationer. Dessa handledningar ger värdefulla insikter om att utnyttja kraften i Aspose.Email för .NET för att sömlöst hantera bilagor, vilket förbättrar datautbyte och samarbete. Med steg-för-steg-instruktioner och illustrativa kodavsnitt kan utvecklare med säkerhet integrera bilagarelaterade funktioner i sina applikationer, vilket optimerar arbetsflöden för e-postkommunikation och användarupplevelser.
@@ -46,3 +52,10 @@ Lär dig hur du extraherar inbäddade bilagor från MSG-filer med C# och Aspose.
 Lär dig hur du bevarar inbäddat MSG-format med Aspose.Email för .NET. Steg-för-steg guide med källkod.
 ### [Bevara TNEF-bilagor när du läser meddelanden - C#-metoden](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Lär dig hur du bevarar TNEF-bilagor med Aspose.Email för .NET i denna steg-för-steg-guide med källkod.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

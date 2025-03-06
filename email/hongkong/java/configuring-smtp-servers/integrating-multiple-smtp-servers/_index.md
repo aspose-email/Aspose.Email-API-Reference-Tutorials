@@ -3,10 +3,16 @@ title: 將多個 SMTP 伺服器與 Aspose.Email 集成
 linktitle: 將多個 SMTP 伺服器與 Aspose.Email 集成
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何將多個 SMTP 伺服器與 Aspose.Email for Java 無縫整合。透過我們的逐步指南增強電子郵件發送可靠性和故障轉移支援。
-type: docs
 weight: 18
 url: /zh-hant/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將多個 SMTP 伺服器與 Aspose.Email 集成
+
 # 將多個 SMTP 伺服器與 Aspose.Email for Java 整合的簡介
 
 在本逐步指南中，我們將引導您完成使用 Aspose.Email for Java 整合多個 SMTP 伺服器的過程。 Aspose.Email for Java 是一個功能強大的 API，可讓您處理電子郵件，包括透過 SMTP 伺服器發送電子郵件。整合多個 SMTP 伺服器對於負載平衡、故障轉移以及在電子郵件發送過程中需要冗餘的其他場景非常有用。
@@ -96,3 +102,9 @@ Aspose.Email for Java 支援 SSL/TLS 以實現安全電子郵件通訊。您可�
 ### 如何測試 SMTP 伺服器整合？
 
 您可以透過傳送測試電子郵件並檢查是否成功傳送來測試 SMTP 伺服器整合。在此過程中監視應用程式日誌中是否存在任何錯誤或異常。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

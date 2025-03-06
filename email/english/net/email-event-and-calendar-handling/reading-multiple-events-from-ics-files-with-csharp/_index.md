@@ -3,10 +3,16 @@ title: Reading Multiple Events from ICS Files with C#
 linktitle: Reading Multiple Events from ICS Files with C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn to extract multiple events from ICS files using Aspose.Email for .NET. A step-by-step guide with code examples for efficient event management.
-type: docs
 weight: 14
 url: /net/email-event-and-calendar-handling/reading-multiple-events-from-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Reading Multiple Events from ICS Files with C#
+
 
 In today's digital age, managing events and appointments efficiently is crucial for businesses and individuals alike. If you're working with calendar data in your C# application, you'll often come across ICS (iCalendar) files. These files contain event information in a standardized format, making them easy to share and process. In this step-by-step guide, we will explore how to read multiple events from ICS files using C# and the powerful Aspose.Email for .NET library.
 
@@ -73,3 +79,10 @@ Yes, you will need a valid license to use Aspose.Email for .NET in a production 
 
 5. ### Where can I find more examples and resources for Aspose.Email for .NET?
 You can explore the API documentation and code samples at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

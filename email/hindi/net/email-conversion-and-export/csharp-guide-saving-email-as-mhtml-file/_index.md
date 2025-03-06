@@ -3,10 +3,16 @@ title: सी# गाइड - ईमेल को एमएचटीएमएल
 linktitle: सी# गाइड - ईमेल को एमएचटीएमएल फ़ाइल के रूप में सहेजना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए C# और Aspose.Email का उपयोग करके ईमेल को MHTML फ़ाइलों के रूप में सहेजना सीखें। कोड उदाहरणों और अक्सर पूछे जाने वाले प्रश्नों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 16
 url: /hi/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# गाइड - ईमेल को एमएचटीएमएल फ़ाइल के रूप में सहेजना
+
 
 ## ईमेल को एमएचटीएमएल फ़ाइल के रूप में सहेजने का परिचय
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### क्या .NET के लिए Aspose.Email का उपयोग करने से जुड़ी कोई लाइसेंस फीस है?
 
 हाँ, Aspose.Email एक व्यावसायिक लाइब्रेरी है। आप लाइसेंसिंग और मूल्य निर्धारण के बारे में विस्तृत जानकारी पा सकते हैं[Aspose.ईमेल वेबसाइट](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

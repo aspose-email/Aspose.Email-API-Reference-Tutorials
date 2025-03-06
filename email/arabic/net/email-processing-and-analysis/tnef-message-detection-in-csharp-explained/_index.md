@@ -3,10 +3,16 @@ title: كشف رسائل TNEF في C# - موضح
 linktitle: كشف رسائل TNEF في C# - موضح
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية اكتشاف رسائل TNEF ومعالجتها في لغة C# باستخدام Aspose.Email لـ .NET. تحسين التعامل مع البريد الإلكتروني باستخدام النصوص الغنية والمرفقات.
-type: docs
 weight: 15
 url: /ar/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# كشف رسائل TNEF في C# - موضح
+
 
 سيزودك هذا الدليل بشرح مفصل خطوة بخطوة حول كيفية اكتشاف رسائل TNEF (تنسيق تغليف النقل المحايد) باستخدام مكتبة Aspose.Email لـ .NET. TNEF هو تنسيق يستخدمه Microsoft Outlook لتغليف النص المنسق والمرفقات داخل رسائل البريد الإلكتروني. يقدم Aspose.Email for .NET مجموعة قوية من واجهات برمجة التطبيقات (API) للعمل مع رسائل البريد الإلكتروني والمرفقات، بما في ذلك رسائل TNEF.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 في هذا الدليل، تعلمت كيفية اكتشاف رسائل TNEF (تنسيق تغليف النقل المحايد) باستخدام مكتبة Aspose.Email لـ .NET. تقوم رسائل TNEF، التي يستخدمها Microsoft Outlook غالبًا، بتغليف النص المنسق والمرفقات داخل رسائل البريد الإلكتروني. باتباع الخطوات الموضحة في هذا الدليل، يمكنك التعرف على رسائل TNEF بكفاءة واستخراج مرفقاتها لمزيد من المعالجة.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

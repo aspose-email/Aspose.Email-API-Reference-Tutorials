@@ -3,10 +3,16 @@ title: Sicurezza e firme della posta elettronica
 linktitle: Sicurezza e firme della posta elettronica
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Implementa solide misure di sicurezza della posta elettronica e firme personalizzate con i tutorial Aspose.Email per .NET. Garantire una comunicazione sicura e un branding professionale.
-type: docs
 weight: 19
 url: /it/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sicurezza e firme della posta elettronica
+
 
 ## introduzione
 
@@ -25,3 +31,9 @@ Le esercitazioni sulla firma di posta elettronica si concentrano sull'abilitazio
 
 ### [Firma di e-mail con DKIM utilizzando il codice C#](./signing-emails-with-dkim-using-csharp-code/)
 Impara a proteggere le e-mail con DKIM utilizzando C# e Aspose.Email per .NET. Guida passo passo con il codice sorgente. Migliora la fiducia e l'autenticità delle e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ekspor Email yang Mudah ke EML menggunakan C#
 linktitle: Ekspor Email yang Mudah ke EML menggunakan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Ekspor email ke format EML dengan mudah menggunakan C# dan Aspose.Email untuk .NET. Pelajari langkah demi langkah dengan contoh kode sumber.
-type: docs
 weight: 11
 url: /id/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ekspor Email yang Mudah ke EML menggunakan C#
+
 
 ## Pengantar Ekspor Email yang Mudah ke EML
 
@@ -175,3 +181,9 @@ Ya, Anda dapat mengekspor lampiran email beserta pesan email menggunakan Aspose.
 ### Apakah source code yang diberikan pada tutorial sudah lengkap?
 
 Ya, tutorial menyediakan kode sumber lengkap yang menunjukkan cara mengekspor email ke format EML menggunakan Aspose.Email untuk .NET. Anda dapat menggunakan kode ini sebagai titik awal
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

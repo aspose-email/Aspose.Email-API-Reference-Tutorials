@@ -3,10 +3,16 @@ title: Preservar archivos adjuntos TNEF al leer mensajes enfoque C#
 linktitle: Preservar archivos adjuntos TNEF al leer mensajes enfoque C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda cómo conservar archivos adjuntos TNEF usando Aspose.Email para .NET en esta guía paso a paso con código fuente.
-type: docs
 weight: 15
 url: /es/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Preservar archivos adjuntos TNEF al leer mensajes enfoque C#
+
 
 ## Introducción a los archivos adjuntos TNEF
 
@@ -132,3 +138,9 @@ Sí, Aspose.Email admite varios formatos de correo electrónico, incluidos PST, 
 ### ¿Aspose.Email se actualiza periódicamente?
 
 Sí, Aspose mantiene actualizaciones periódicas para garantizar la compatibilidad con las últimas tecnologías y plataformas.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

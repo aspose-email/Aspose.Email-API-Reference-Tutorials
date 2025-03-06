@@ -3,10 +3,16 @@ title: Καθορισμός προσαρμοσμένης σειράς πληρο
 linktitle: Καθορισμός προσαρμοσμένης σειράς πληροφοριών σε MHTML με C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να προσαρμόζετε την παραγγελία MHTML χρησιμοποιώντας C# & Aspose.Email για .NET. Οδηγός βήμα προς βήμα με κώδικα για αποτελεσματική διευθέτηση πληροφοριών. Ενισχύστε την εμπειρία χρήστη τώρα!
-type: docs
 weight: 14
 url: /el/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορισμός προσαρμοσμένης σειράς πληροφοριών σε MHTML με C#
+
 
 Στον τομέα της διαχείρισης email, η δυνατότητα προσαρμογής της σειράς των πληροφοριών στα μηνύματα ηλεκτρονικού ταχυδρομείου MHTML είναι ένα πολύτιμο χαρακτηριστικό. Το Aspose.Email για .NET προσφέρει μια ισχυρή λύση για την επίτευξη αυτού του στόχου. Σε αυτό το άρθρο, θα σας καθοδηγήσουμε στη διαδικασία βήμα προς βήμα.
 
@@ -80,3 +86,10 @@ eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ### 5. Πού μπορώ να βρω πρόσθετους πόρους και υποστήριξη για το Aspose.Email για .NET;
 
 -  Μπορείτε να αποκτήσετε πρόσβαση σε εκτενή τεκμηρίωση, παραδείγματα κώδικα και υποστήριξη στο[Aspose.Email για τεκμηρίωση API .NET](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

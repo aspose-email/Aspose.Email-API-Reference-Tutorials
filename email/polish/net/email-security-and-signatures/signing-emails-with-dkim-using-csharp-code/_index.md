@@ -3,10 +3,16 @@ title: Podpisywanie wiadomości e-mail za pomocą DKIM przy użyciu kodu C#
 linktitle: Podpisywanie wiadomości e-mail za pomocą DKIM przy użyciu kodu C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Naucz się zabezpieczać wiadomości e-mail za pomocą DKIM przy użyciu C# i Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym. Zwiększ zaufanie i autentyczność poczty e-mail.
-type: docs
 weight: 11
 url: /pl/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Podpisywanie wiadomości e-mail za pomocą DKIM przy użyciu kodu C#
+
 
 W dzisiejszym cyfrowym świecie zapewnienie autentyczności i integralności komunikacji e-mailowej ma ogromne znaczenie. Jednym ze sposobów osiągnięcia tego jest użycie podpisów DomainKeys Identified Mail (DKIM). W tym przewodniku krok po kroku odkryjemy, jak podpisywać wiadomości e-mail za pomocą DKIM przy użyciu języka C# i potężnej biblioteki Aspose.Email dla .NET.
 
@@ -123,3 +129,9 @@ Typowe nagłówki, które należy uwzględnić w podpisie DKIM, to „Od”, „
 ### P5: Czy DKIM to jedyna metoda uwierzytelniania poczty e-mail?
 
 Nie, istnieją inne metody, takie jak SPF i DMARC, które są używane w połączeniu z DKIM w celu zwiększenia bezpieczeństwa poczty e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

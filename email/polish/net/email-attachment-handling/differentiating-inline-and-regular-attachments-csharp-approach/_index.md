@@ -3,10 +3,16 @@ title: Różnicowanie załączników wbudowanych i regularnych — podejście C#
 linktitle: Różnicowanie załączników wbudowanych i regularnych — podejście C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak odróżnić wbudowane i zwykłe załączniki do wiadomości e-mail za pomocą Aspose.Email dla .NET. Obszerny przewodnik z przykładami kodu.
-type: docs
 weight: 17
 url: /pl/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Różnicowanie załączników wbudowanych i regularnych — podejście C#
+
 
 ## Wprowadzenie do różnicowania załączników wbudowanych i regularnych — podejście C#
 
@@ -107,3 +113,9 @@ Dostęp do zawartości załącznika wbudowanego można uzyskać, korzystając z 
 ### Czy mogę zapisywać zwykłe załączniki w określonej lokalizacji na dysku?
 
  Absolutnie! Możesz zapisywać zwykłe załączniki w określonej lokalizacji na dysku, korzystając z opcji`Save` metodę obiektu załącznika i podanie żądanej ścieżki pliku.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

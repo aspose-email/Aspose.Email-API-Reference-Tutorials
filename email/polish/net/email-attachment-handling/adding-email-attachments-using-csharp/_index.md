@@ -3,10 +3,16 @@ title: Dodawanie załączników do wiadomości e-mail przy użyciu języka C#
 linktitle: Dodawanie załączników do wiadomości e-mail przy użyciu języka C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak dodawać załączniki do wiadomości e-mail przy użyciu języka C# i Aspose.Email dla platformy .NET. Przewodnik krok po kroku z przykładami kodu zapewniającymi bezproblemową integrację.
-type: docs
 weight: 11
 url: /pl/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dodawanie załączników do wiadomości e-mail przy użyciu języka C#
+
 
 ## Wprowadzenie do załączników do wiadomości e-mail i Aspose.Email dla .NET
 
@@ -92,3 +98,9 @@ Absolutnie! Możesz ustawić różne właściwości klasy MailMessage, takie jak
 ### Czy dostępna jest bezpłatna wersja próbna Aspose.Email dla .NET?
 
 Tak, możesz pobrać bezpłatną wersję próbną Aspose.Email dla .NET, aby zapoznać się z jej funkcjami przed dokonaniem zakupu.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

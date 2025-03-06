@@ -3,10 +3,16 @@ title: Extrahování vložených objektů - C# Tutorial
 linktitle: Extrahování vložených objektů - C# Tutorial
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se extrahovat vložené objekty z e-mailových zpráv pomocí Aspose.Email for .NET. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 15
 url: /cs/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahování vložených objektů - C# Tutorial
+
 
 ## Úvod do extrahování vložených objektů - C# Tutoriál
 
@@ -105,3 +111,9 @@ Absolutně! Aspose.Email for .NET je kompatibilní s webovými aplikacemi ASP.NE
 ### Kde najdu další dokumentaci o Aspose.Email?
 
  Podrobnou dokumentaci a příklady kódu pro Aspose.Email najdete na[Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) strana.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

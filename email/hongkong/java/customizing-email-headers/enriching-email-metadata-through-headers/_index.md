@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 透過標頭豐富電子郵件元數據
 linktitle: 使用 Aspose.Email 透過標頭豐富電子郵件元數據
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 使用 Aspose.Email for Java 增強電子郵件元資料。了解如何使用 Aspose.Email 豐富電子郵件標頭以改善追蹤和自訂。
-type: docs
 weight: 18
 url: /zh-hant/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 透過標頭豐富電子郵件元數據
+
 
 ## 使用 Aspose.Email 透過標頭豐富電子郵件元資料簡介
 
@@ -107,3 +113,9 @@ message.save("path/to/modified/email.eml");
 ### 在哪裡可以找到更多有關 Aspose.Email for Java 的資源？
 
 您可以在以下位置瀏覽文件：[這裡](https://reference.aspose.com/email/java/)獲取全面的資源和範例。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

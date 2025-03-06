@@ -3,10 +3,16 @@ title: Aspose.Email'deki E-posta Başlıkları
 linktitle: Aspose.Email'deki E-posta Başlıkları
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile E-posta Başlıklarının Gücünün Kilidini Açın. E-posta başlıklarını zahmetsizce nasıl ayarlayıp alacağınızı öğrenin.
-type: docs
 weight: 10
 url: /tr/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email'deki E-posta Başlıkları
+
 
 ## E-posta Başlıklarına Giriş
 
@@ -92,3 +98,9 @@ Bir e-posta gönderildiğinde başlıkları genellikle değişmezdir. E-postayı
 ### Büyük bir e-posta grubundan e-posta başlıklarını nasıl çıkarabilirim?
 
 Aspose.Email'in toplu işleme yeteneklerini birden fazla e-postadan başlıkları verimli bir şekilde çıkarmak için kullanabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

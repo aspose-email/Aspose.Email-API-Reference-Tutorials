@@ -3,10 +3,16 @@ title: Obsługa wiadomości roboczych w języku C# — zapisywanie wiadomości e
 linktitle: Obsługa wiadomości roboczych w języku C# — zapisywanie wiadomości e-mail jako wersji roboczej
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak zaimplementować obsługę wersji roboczej wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET. Bezproblemowo twórz, edytuj i zapisuj wersje robocze.
-type: docs
 weight: 17
 url: /pl/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obsługa wiadomości roboczych w języku C# — zapisywanie wiadomości e-mail jako wersji roboczej
+
 
 ## Wstęp
 
@@ -103,3 +109,9 @@ Oczywiście, wykonując kroki opisane w tym przewodniku, możesz bezproblemowo z
 ### Czy biblioteka Aspose.Email obsługuje inne funkcje związane z pocztą elektroniczną?
 
  Tak, biblioteka Aspose.Email oferuje szeroką gamę funkcji do pracy z wiadomościami e-mail, w tym wysyłanie, odbieranie i manipulowanie wiadomościami e-mail i załącznikami. Więcej szczegółów można znaleźć w dokumentacji:[Tutaj](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

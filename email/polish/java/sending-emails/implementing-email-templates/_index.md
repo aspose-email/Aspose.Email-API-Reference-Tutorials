@@ -3,10 +3,16 @@ title: Implementowanie szablonów e-maili za pomocą Aspose.Email
 linktitle: Implementowanie szablonów e-maili za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Naucz się tworzyć dynamiczne szablony e-maili za pomocą Aspose.Email dla Java. Obszerny przewodnik z przykładami kodu i często zadawanymi pytaniami dotyczącymi skutecznej komunikacji e-mailowej.
-type: docs
 weight: 13
 url: /pl/java/sending-emails/implementing-email-templates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Implementowanie szablonów e-maili za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -122,3 +128,10 @@ public class EmailTemplate {
 
 ### 6. Czy istnieją dobre praktyki projektowania skutecznych szablonów wiadomości e-mail?
    - Tak, istnieją najlepsze praktyki dotyczące projektowania szablonów wiadomości e-mail, w tym projektowanie responsywne, unikanie nadmiernych obrazów i optymalizacja pod kątem różnych klientów poczty e-mail. Weź je pod uwagę podczas tworzenia szablonów.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

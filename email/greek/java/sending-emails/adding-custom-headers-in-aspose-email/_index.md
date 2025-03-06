@@ -3,10 +3,16 @@ title: Προσθήκη προσαρμοσμένων κεφαλίδων στο A
 linktitle: Προσθήκη προσαρμοσμένων κεφαλίδων στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να βελτιώσετε τα μηνύματα ηλεκτρονικού ταχυδρομείου σας προσθέτοντας προσαρμοσμένες κεφαλίδες χρησιμοποιώντας το Aspose.Email για Java. Βελτιώστε τα μεταδεδομένα και την οργάνωση του email.
-type: docs
 weight: 15
 url: /el/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσθήκη προσαρμοσμένων κεφαλίδων στο Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### Πώς μπορώ να εξαγάγω προσαρμοσμένες κεφαλίδες από λαμβανόμενα email;
     Μπορείτε να χρησιμοποιήσετε το`getHeaders` μέθοδο στα ληφθέντα email`MailMessage` αντικείμενο για ανάκτηση και επεξεργασία προσαρμοσμένων κεφαλίδων.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

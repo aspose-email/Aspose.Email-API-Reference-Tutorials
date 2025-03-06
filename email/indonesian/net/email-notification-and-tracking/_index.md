@@ -3,10 +3,16 @@ title: Tingkatkan Komunikasi dengan Pemberitahuan dan Pelacakan Email
 linktitle: Pemberitahuan dan Pelacakan Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Menerapkan fitur pemberitahuan dan pelacakan email menggunakan tutorial Aspose.Email untuk .NET. Otomatiskan notifikasi dan dapatkan wawasan tentang interaksi penerima email.
-type: docs
 weight: 16
 url: /id/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tingkatkan Komunikasi dengan Pemberitahuan dan Pelacakan Email
+
 
 ## Perkenalan
 
@@ -27,3 +33,9 @@ Pelajari cara menerima notifikasi email di C# menggunakan Aspose.Email untuk .NE
 Pelajari cara menggunakan kode C# untuk meminta tanda terima email telah dibaca menggunakan Aspose.Email untuk .NET, sehingga meningkatkan pelacakan komunikasi.
 ### [Melacak Kemajuan Konversi Dokumen Email dengan Kode C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Pelajari cara menerapkan pemberitahuan dan pelacakan email menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode. Tingkatkan komunikasi email Anda hari ini!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

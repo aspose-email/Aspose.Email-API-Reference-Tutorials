@@ -3,10 +3,16 @@ title: C# で MSG から TNEF EML を生成する
 linktitle: C# で MSG から TNEF EML を生成する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して MSG から TNEF EML を生成する方法を学びます。 C# コードを含むステップバイステップのガイド。効率的な電子メール形式変換。
-type: docs
 weight: 12
 url: /ja/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# で MSG から TNEF EML を生成する
+
 
 このガイドでは、Aspose.Email for .NET ライブラリを使用して MSG (Outlook Message) ファイルから TNEF (Transport Neutral Encapsulation Format) EML ファイルを生成する方法を学習します。 TNEF は、Microsoft Outlook で使用される独自の電子メール添付形式です。 Aspose.Email for .NET は、C# アプリケーションでさまざまな電子メール形式を操作できるようにする強力なライブラリです。
 
@@ -100,3 +106,10 @@ Aspose.Email for .NET ライブラリは、Aspose リリースから入手でき
 標準の C# 例外処理手法を使用できます。 Aspose.Email はそのライブラリに固有の例外をスローするため、コード内で例外をキャッチして適切に処理するようにしてください。
 
 気軽に探索してみてください[Aspose.Email for .NET ドキュメント](https://reference.aspose.com/email/net)より高度な機能と例については、
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

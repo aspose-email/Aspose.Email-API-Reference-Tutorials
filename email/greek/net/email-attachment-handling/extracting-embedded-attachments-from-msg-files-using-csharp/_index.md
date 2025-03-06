@@ -3,10 +3,16 @@ title: Εξαγωγή ενσωματωμένων συνημμένων από α�
 linktitle: Εξαγωγή ενσωματωμένων συνημμένων από αρχεία MSG χρησιμοποιώντας C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να εξάγετε ενσωματωμένα συνημμένα από αρχεία MSG χρησιμοποιώντας C# και Aspose.Email για .NET. Ένας περιεκτικός οδηγός με παραδείγματα πηγαίου κώδικα.
-type: docs
 weight: 10
 url: /el/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή ενσωματωμένων συνημμένων από αρχεία MSG χρησιμοποιώντας C#
+
 
 ## Εισαγωγή στα ενσωματωμένα συνημμένα
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### Πού μπορώ να βρω περισσότερα παραδείγματα και τεκμηρίωση;
 
  Μπορείτε να βρείτε λεπτομερή παραδείγματα και τεκμηρίωση σχετικά με τη χρήση του Aspose.Email για .NET στο[τεκμηρίωση](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

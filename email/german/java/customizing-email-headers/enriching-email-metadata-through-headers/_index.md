@@ -3,10 +3,16 @@ title: Anreicherung von E-Mail-Metadaten durch Header mit Aspose.Email
 linktitle: Anreicherung von E-Mail-Metadaten durch Header mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Verbessern Sie E-Mail-Metadaten mit Aspose.Email für Java. Erfahren Sie, wie Sie mit Aspose.Email E-Mail-Header für eine verbesserte Nachverfolgung und Anpassung anreichern.
-type: docs
 weight: 18
 url: /de/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Anreicherung von E-Mail-Metadaten durch Header mit Aspose.Email
+
 
 ## Einführung in die Anreicherung von E-Mail-Metadaten durch Header mit Aspose.Email
 
@@ -107,3 +113,9 @@ Ja, Aspose.Email unterstützt mehrere Programmiersprachen, darunter Java, .NET u
 ### Wo finde ich weitere Ressourcen zu Aspose.Email für Java?
 
  Sie können die Dokumentation unter erkunden[Hier](https://reference.aspose.com/email/java/) für umfassende Ressourcen und Beispiele.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

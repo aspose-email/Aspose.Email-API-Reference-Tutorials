@@ -3,10 +3,16 @@ title: C# 가이드 - 이메일 헤더 추출
 linktitle: C# 가이드 - 이메일 헤더 추출
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 이메일 헤더를 추출하는 방법을 알아보세요. 효율적인 이메일 분석을 위한 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 15
 url: /ko/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 가이드 - 이메일 헤더 추출
+
 
 C#을 사용하여 이메일 헤더를 추출하는 방법이 궁금하신가요? 이메일 헤더에는 보낸 사람, 받는 사람, 제목 및 기타 다양한 세부 정보에 대한 귀중한 정보가 포함되어 있습니다. 이 가이드에서는 강력한 .NET용 Aspose.Email 라이브러리를 사용하여 이메일 헤더를 추출하는 단계별 프로세스를 안내합니다. 이 라이브러리는 .NET 애플리케이션에서 이메일 작업을 위한 포괄적인 기능 세트를 제공합니다.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Aspose.Email 문서에 액세스하고 라이브러리를 다운로드할 수 있는 곳은 어디입니까?
 
  문서는 다음에서 찾을 수 있습니다.[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . 라이브러리를 다운로드하려면 다음을 방문하세요.[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

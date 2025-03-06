@@ -3,10 +3,16 @@ title: Vytváření HTML e-mailových souborů pomocí C# - Uložit jako HTML
 linktitle: Vytváření HTML e-mailových souborů pomocí C# - Uložit jako HTML
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se vytvářet HTML e-mailové soubory pomocí C# a Aspose.Email pro .NET. Podrobný průvodce se zdrojovým kódem pro bezproblémové přizpůsobení e-mailu.
-type: docs
 weight: 18
 url: /cs/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytváření HTML e-mailových souborů pomocí C# - Uložit jako HTML
+
 
 ## Úvod do vytváření HTML e-mailových souborů
 
@@ -113,3 +119,9 @@ Ano, Aspose.Email podporuje .NET Core, což vám umožňuje vytvářet aplikace 
 ### Kde najdu další příklady a dokumentaci?
 
  Komplexní příklady a podrobnou dokumentaci můžete prozkoumat na[Dokumentace Aspose.Email](https://reference.aspose.com/email/net) strana.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

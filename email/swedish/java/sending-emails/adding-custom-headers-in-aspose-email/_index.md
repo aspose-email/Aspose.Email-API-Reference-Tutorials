@@ -3,10 +3,16 @@ title: Lägga till anpassade rubriker i Aspose.Email
 linktitle: Lägga till anpassade rubriker i Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du förbättrar dina e-postmeddelanden genom att lägga till anpassade rubriker med Aspose.Email för Java. Förbättra e-postmetadata och organisation.
-type: docs
 weight: 15
 url: /sv/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lägga till anpassade rubriker i Aspose.Email
+
 
 ## Introduktion
 
@@ -132,3 +138,9 @@ I den här guiden har du lärt dig hur du lägger till anpassade rubriker i ett 
 
 ### Hur kan jag extrahera anpassade rubriker från mottagna e-postmeddelanden?
     Du kan använda`getHeaders` metod på mottagna e-postmeddelanden`MailMessage` objekt för att hämta och bearbeta anpassade rubriker.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: soron belüli és a szokásos mellékletek megkülönböztetése – C# m
 linktitle: soron belüli és a szokásos mellékletek megkülönböztetése – C# megközelítés
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan tehet különbséget a beágyazott és a normál e-mail mellékletek között az Aspose.Email for .NET használatával. Átfogó útmutató kódpéldákkal.
-type: docs
 weight: 17
 url: /hu/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# soron belüli és a szokásos mellékletek megkülönböztetése – C# megközelítés
+
 
 ## Bevezetés a soros és szabályos mellékletek megkülönböztetésébe – C# megközelítés
 
@@ -107,3 +113,9 @@ A soron belüli mellékletek tartalmát az Aspose.Email könyvtár által biztos
 ### Menthetem-e a rendszeres mellékleteket egy adott helyre a lemezen?
 
  Teljesen! A rendszeres mellékleteket a lemez egy adott helyére mentheti a`Save` a csatolási objektum metódusát, és megadja a kívánt fájl elérési utat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تشفير وفك تشفير البريد الإلكتروني باستخ
 linktitle: تشفير وفك تشفير البريد الإلكتروني باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية تأمين رسائل البريد الإلكتروني الخاصة بك باستخدام تشفير وفك تشفير البريد الإلكتروني باستخدام Aspose.Email لـ Java. تم تضمين دليل خطوة بخطوة وكود المصدر والأسئلة الشائعة.
-type: docs
 weight: 11
 url: /ar/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تشفير وفك تشفير البريد الإلكتروني باستخدام Aspose.Email
+
 
 ## مقدمة
 
@@ -95,3 +101,9 @@ String decryptedBody = encryptedMessage.getBodyText();
  قم بزيارة وثائق API[هنا](https://reference.aspose.com/email/java/) للحصول على معلومات وأمثلة مفصلة.
 
 الآن لديك فهم شامل لتشفير البريد الإلكتروني وفك التشفير باستخدام Aspose.Email لـ Java. ابدأ بتأمين رسائل البريد الإلكتروني الخاصة بك اليوم!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

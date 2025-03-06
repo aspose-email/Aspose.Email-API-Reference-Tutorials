@@ -3,10 +3,16 @@ title: Triển khai chữ ký DKIM với Aspose.Email
 linktitle: Triển khai chữ ký DKIM với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Đảm bảo bảo mật email bằng chữ ký DKIM bằng Aspose.Email for Java. Hướng dẫn từng bước và mã để triển khai DKIM.
-type: docs
 weight: 15
 url: /vi/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Triển khai chữ ký DKIM với Aspose.Email
+
 
 ## Triển khai chữ ký DKIM với Aspose.Email
 
@@ -112,3 +118,9 @@ Có, Aspose.Email for Java tương thích với nhiều máy chủ email khác n
 ### Tôi có thể tìm thêm tài nguyên trên Aspose.Email cho Java ở đâu?
 
 Để biết thêm thông tin và tài nguyên, hãy truy cập tài liệu Aspose.Email for Java tại[đây](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

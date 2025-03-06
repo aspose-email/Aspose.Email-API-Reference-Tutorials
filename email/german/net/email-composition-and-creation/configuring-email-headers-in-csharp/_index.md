@@ -3,10 +3,16 @@ title: Konfigurieren von E-Mail-Headern in C#
 linktitle: Konfigurieren von E-Mail-Headern in C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für .NET benutzerdefinierte E-Mail-Header in C# konfigurieren. Schritt-für-Schritt-Anleitung mit Quellcode im Lieferumfang enthalten. Verbessern Sie die E-Mail-Kontrolle und -Sicherheit.
-type: docs
 weight: 17
 url: /de/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konfigurieren von E-Mail-Headern in C#
+
 
 E-Mail-Kommunikation ist zu einem integralen Bestandteil moderner geschäftlicher und persönlicher Interaktionen geworden. Während der Inhalt einer E-Mail von entscheidender Bedeutung ist, sind die der E-Mail beigefügten Kopfzeilen ebenso wichtig. E-Mail-Header liefern wertvolle Informationen über die Nachricht, den Absender, den Empfänger und mehr. Das Konfigurieren von E-Mail-Headern in C# mit Aspose.Email für .NET bietet eine leistungsstarke Möglichkeit, die in E-Mail-Nachrichten eingebetteten Informationen anzupassen und zu steuern. In diesem Artikel erfahren Sie Schritt für Schritt, wie Sie E-Mail-Header mithilfe der Aspose.Email für .NET-Bibliothek konfigurieren.
 
@@ -133,3 +139,9 @@ Aspose.Email bietet Validierungsfunktionen, um sicherzustellen, dass E-Mail-Head
 ### Wird in E-Mail-Headern die Groß-/Kleinschreibung beachtet?
 
 Ja, bei E-Mail-Headern wird die Groß-/Kleinschreibung nicht beachtet. Es empfiehlt sich jedoch, für eine bessere Kompatibilität eine konsistente Groß- und Kleinschreibung beizubehalten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

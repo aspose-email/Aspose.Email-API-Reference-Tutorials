@@ -3,10 +3,16 @@ title: 在 Aspose.Email 中从电子邮件中提取附件
 linktitle: 在 Aspose.Email 中从电子邮件中提取附件
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 轻松提取电子邮件附件。 Java 开发人员的分步指南。
-type: docs
 weight: 13
 url: /zh/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Email 中从电子邮件中提取附件
+
 
 ## Java 版 Aspose.Email 简介
 
@@ -83,3 +89,9 @@ Aspose.Email for Java 支持各种电子邮件格式，包括 MSG、EML 等。�
 ### 在哪里可以获得 Aspose.Email for Java 的支持？
 
 如需任何技术帮助或询问，您可以通过 Aspose 的支持渠道联系他们的支持团队。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

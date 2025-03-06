@@ -3,10 +3,16 @@ title: Mempertahankan Format MSG Tertanam selama Pemuatan dengan C#
 linktitle: Mempertahankan Format MSG Tertanam selama Pemuatan dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mempertahankan format MSG tersemat menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber.
-type: docs
 weight: 12
 url: /id/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mempertahankan Format MSG Tertanam selama Pemuatan dengan C#
+
 
 Di dunia digital saat ini, komunikasi email memainkan peran penting baik dalam bidang pribadi maupun profesional. Seringkali, kita perlu bekerja dengan file email secara terprogram, dan menjaga batas asli file EML (Email) sangatlah penting. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara mencapainya menggunakan kode C# dengan Aspose.Email untuk .NET.
 
@@ -74,3 +80,9 @@ Ya, Aspose.Email untuk .NET serbaguna dan dapat digunakan untuk berbagai tugas t
  Untuk mengakses pembaruan dan rilis terkini Aspose.Email untuk .NET, kunjungi halaman rilis:[Aspose.Email untuk Rilis .NET](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 C# 在 MHT 转换期间更改字体
 linktitle: 使用 C# 在 MHT 转换期间更改字体
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 MHT 转换期间更改字体。带有源代码的分步指南。非常适合电子邮件归档和文档管理。
-type: docs
 weight: 11
 url: /zh/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 在 MHT 转换期间更改字体
+
 
 在当今的数字时代，文档格式和演示文稿在有效传达信息方面发挥着至关重要的作用。在电子邮件通信方面，确保您的电子邮件显得一致且专业至关重要。本文将指导您使用 C# 和 Aspose.Email for .NET 库完成 MHT (MIME HTML) 转换期间更改字体的过程。
 
@@ -106,3 +112,9 @@ message.Save("output.mht", SaveOptions.DefaultMhtml);
 ### 5. 我可以在我的应用程序中自动执行字体更改过程吗？
 
    是的，您可以通过将 Aspose.Email for .NET 集成到代码中来自动更改应用程序中的字体。这允许根据应用程序的逻辑进行动态字体定制。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

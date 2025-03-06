@@ -3,10 +3,16 @@ title: C# での新しいメール メッセージの構築
 linktitle: C# での新しいメール メッセージの構築
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して、C# で電子メールの作成をマスターします。コード例を含む包括的なガイド。今すぐアプリをレベルアップしましょう
-type: docs
 weight: 11
 url: /ja/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# での新しいメール メッセージの構築
+
 
 プログラムで電子メールを送信する機能を追加して、C# アプリケーションを強化したいと考えていますか? Aspose.Email for .NET の機能を利用すると、電子メール機能をアプリケーションにシームレスに統合できます。このステップバイステップ ガイドでは、Aspose.Email for .NET を使用して新しいメール メッセージを作成するプロセスを、ソース コードの例とともに説明します。
 
@@ -123,3 +129,9 @@ catch (Exception ex)
    包括的なドキュメントとコード例は、[Aspose.Email API リファレンス](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

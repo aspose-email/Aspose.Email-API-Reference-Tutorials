@@ -3,10 +3,16 @@ title: Penanganan File EML - Operasi Muat dan Simpan di C#
 linktitle: Penanganan File EML - Operasi Muat dan Simpan di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menangani file EML di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk memuat, memodifikasi, dan menyimpan pesan email.
-type: docs
 weight: 13
 url: /id/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penanganan File EML - Operasi Muat dan Simpan di C#
+
 
 ## Pengantar File EML
 
@@ -150,3 +156,9 @@ Ya, Aspose.Email memungkinkan Anda memuat beberapa file EML secara batch, sehing
 ### Apakah Aspose.Email cocok untuk proyek komersial?
 
 Ya, Aspose.Email adalah perpustakaan serbaguna yang cocok untuk proyek pribadi dan komersial, menawarkan fitur canggih untuk manipulasi email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

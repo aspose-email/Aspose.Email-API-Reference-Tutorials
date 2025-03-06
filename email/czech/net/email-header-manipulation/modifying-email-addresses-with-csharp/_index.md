@@ -3,10 +3,16 @@ title: Úprava e-mailových adres pomocí C#
 linktitle: Úprava e-mailových adres pomocí C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se upravovat e-mailové adresy pomocí C# s pomocí Aspose.Email for .NET. Chcete-li efektivně manipulovat s e-mailovými adresami, postupujte podle tohoto podrobného průvodce.
-type: docs
 weight: 10
 url: /cs/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Úprava e-mailových adres pomocí C#
+
 
 ## Úvod
 
@@ -132,3 +138,9 @@ Zatímco Aspose.Email je robustní volbou, další knihovny jako MimeKit a OpenP
 ## Závěr
 
 tomto průvodci jsme se vydali na cestu za poznáním světa úpravy e-mailových adres pomocí C# a Aspose.Email pro .NET. Dodržováním pokynů krok za krokem a používáním poskytnutého zdrojového kódu nyní máte dovednosti efektivně upravovat e-mailové adresy ve svých aplikacích. Možnosti Aspose.Email v kombinaci s vašimi nově získanými znalostmi nepochybně zefektivní vaše úsilí o manipulaci s e-maily.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

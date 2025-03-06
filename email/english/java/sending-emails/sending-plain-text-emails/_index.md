@@ -3,10 +3,16 @@ title: Sending Plain Text Emails with Aspose.Email
 linktitle: Sending Plain Text Emails with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn to send plain text emails efficiently with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
-type: docs
 weight: 10
 url: /java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sending Plain Text Emails with Aspose.Email
+
 
 ## Introduction
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Are there any limitations when sending plain text emails with Aspose.Email for Java?
    - The limitations may depend on your email service provider and SMTP server. Ensure you are compliant with any sending limits and email sending policies.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

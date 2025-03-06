@@ -3,10 +3,16 @@ title: C# Kodunu Kullanarak Orijinal Sınırları Koruma
 linktitle: C# Kodunu Kullanarak Orijinal Sınırları Koruma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak e-posta eklerinin orijinal sınırlarını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
-type: docs
 weight: 13
 url: /tr/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Kodunu Kullanarak Orijinal Sınırları Koruma
+
 
 ## Orijinal Sınırların Korunmasına Giriş
 
@@ -107,3 +113,9 @@ Orijinal sınırların korunmasını sağlarken görüntü eklerini yüklemek ve
 ### Aspose.Email for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
  Kapsamlı belgeleri ve örnekleri şurada bulabilirsiniz:[Aspose.Email belgeleri](https://reference.aspose.com/email/net/) sayfa.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

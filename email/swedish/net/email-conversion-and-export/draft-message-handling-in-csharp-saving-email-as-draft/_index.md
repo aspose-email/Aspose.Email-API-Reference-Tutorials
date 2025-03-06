@@ -3,10 +3,16 @@ title: Hantering av utkastmeddelande i C# - Spara e-post som utkast
 linktitle: Hantering av utkastmeddelande i C# - Spara e-post som utkast
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du implementerar utkast till e-posthantering i C# med Aspose.Email för .NET. Skapa, redigera och spara utkast sömlöst.
-type: docs
 weight: 17
 url: /sv/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hantering av utkastmeddelande i C# - Spara e-post som utkast
+
 
 ## Introduktion
 
@@ -103,3 +109,9 @@ Absolut, genom att följa stegen i den här guiden, kan du sömlöst integrera h
 ### Stöder Aspose.Email-biblioteket andra e-postrelaterade funktioner?
 
  Ja, Aspose.Email-biblioteket erbjuder ett brett utbud av funktioner för att arbeta med e-postmeddelanden, inklusive att skicka, ta emot och manipulera e-postmeddelanden och bilagor. Du kan se dokumentationen för mer information:[här](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Validación y verificación de correo electrónico
 linktitle: Validación y verificación de correo electrónico
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Implemente mecanismos sólidos de validación y verificación de correo electrónico utilizando los tutoriales de Aspose.Email para .NET. Mejore la precisión y la seguridad de las comunicaciones.
-type: docs
 weight: 17
 url: /es/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Validación y verificación de correo electrónico
+
 
 ## Introducción
 
@@ -23,3 +29,9 @@ Los tutoriales de verificación de correo electrónico se centran en permitir a 
 ## Tutoriales de validación y verificación de correo electrónico
 ### [Técnicas de validación de correo electrónico en código C#](./email-validation-techniques-in-csharp-code/)
 Aprenda cómo validar direcciones de correo electrónico de manera efectiva en C# usando Aspose.Email para .NET. Guía paso a paso con código fuente proporcionado. Mejore la precisión de los datos y la experiencia del usuario.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

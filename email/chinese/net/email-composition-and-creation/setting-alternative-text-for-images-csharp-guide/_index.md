@@ -3,10 +3,16 @@ title: 设置图像的替代文本 - C# 指南
 linktitle: 设置图像的替代文本 - C# 指南
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本。使用清晰的替代文本确保可访问性。包含文档和代码。
-type: docs
 weight: 15
 url: /zh/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 设置图像的替代文本 - C# 指南
+
 
 本指南将引导您完成使用 Aspose.Email for .NET 设置电子邮件中图像的替代文本的过程。替代文本（也称为“替代文本”）用于在图像无法显示的情况下提供图像的文本描述。 Aspose.Email for .NET 是一个功能强大的库，允许您处理各种格式的电子邮件和附件。在本指南中，我们将重点介绍使用 C# 设置电子邮件中的图像的替代文本。
 
@@ -81,3 +87,9 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 ### 在哪里可以找到有关 Aspose.Email for .NET 的更多文档？
 
 您可以在以下位置找到有关使用 Aspose.Email for .NET 的更多详细文档、教程和示例：[API参考](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Manipulace se soubory EML – operace načítání a ukládání v C#
 linktitle: Manipulace se soubory EML – operace načítání a ukládání v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak zacházet se soubory EML v C# pomocí Aspose.Email pro .NET. Podrobný průvodce s příklady kódu pro načítání, úpravy a ukládání e-mailových zpráv.
-type: docs
 weight: 13
 url: /cs/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulace se soubory EML – operace načítání a ukládání v C#
+
 
 ## Úvod do souborů EML
 
@@ -150,3 +156,9 @@ Ano, Aspose.Email vám umožňuje načíst více souborů EML v dávkách, což 
 ### Je Aspose.Email vhodný pro komerční projekty?
 
 Ano, Aspose.Email je všestranná knihovna vhodná pro osobní i komerční projekty a nabízí výkonné funkce pro manipulaci s e-maily.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

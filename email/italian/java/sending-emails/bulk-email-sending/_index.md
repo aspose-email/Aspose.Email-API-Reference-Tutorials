@@ -3,10 +3,16 @@ title: Invio di e-mail in blocco con Aspose.Email
 linktitle: Invio di e-mail in blocco con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come inviare e-mail in blocco in modo efficiente utilizzando Aspose.Email per Java. Una guida passo passo con esempi di codice per l'email marketing e la comunicazione.
-type: docs
 weight: 14
 url: /it/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Invio di e-mail in blocco con Aspose.Email
+
 
 ## introduzione
 
@@ -132,3 +138,9 @@ In questa guida hai imparato come inviare e-mail in blocco utilizzando Aspose.Em
 
 ### Come posso gestire le e-mail respinte o non riuscite nell'invio in blocco?
    Aspose.Email fornisce funzionalità per la gestione delle notifiche sullo stato di consegna (DSN) e il monitoraggio dello stato di consegna della posta elettronica. È possibile implementare la logica per elaborare le e-mail respinte o non riuscite in base alle esigenze.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

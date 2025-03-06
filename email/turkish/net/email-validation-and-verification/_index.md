@@ -3,10 +3,16 @@ title: E-posta Doğrulaması ve Doğrulaması
 linktitle: E-posta Doğrulaması ve Doğrulaması
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimlerini kullanarak güçlü e-posta doğrulama ve doğrulama mekanizmaları uygulayın. İletişim doğruluğunu ve güvenliğini artırın.
-type: docs
 weight: 17
 url: /tr/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-posta Doğrulaması ve Doğrulaması
+
 
 ## giriiş
 
@@ -23,3 +29,9 @@ E-posta doğrulama eğitimleri, geliştiricilerin Aspose.Email for .NET kullanar
 ## E-posta Doğrulama ve Doğrulama Eğitimleri
 ### [C# Kodunda E-posta Doğrulama Teknikleri](./email-validation-techniques-in-csharp-code/)
 Aspose.Email for .NET'i kullanarak C#'ta e-posta adreslerini etkili bir şekilde nasıl doğrulayacağınızı öğrenin. Sağlanan kaynak koduyla birlikte adım adım kılavuz. Veri doğruluğunu ve kullanıcı deneyimini geliştirin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

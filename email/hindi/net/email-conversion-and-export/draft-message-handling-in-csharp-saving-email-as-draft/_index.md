@@ -3,10 +3,16 @@ title: C# में ड्राफ्ट संदेश प्रबंधन 
 linktitle: C# में ड्राफ्ट संदेश प्रबंधन - ईमेल को ड्राफ्ट के रूप में सहेजना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में ड्राफ्ट ईमेल हैंडलिंग को लागू करना सीखें। ड्राफ्ट को निर्बाध रूप से बनाएं, संपादित करें और सहेजें।
-type: docs
 weight: 17
 url: /hi/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# में ड्राफ्ट संदेश प्रबंधन - ईमेल को ड्राफ्ट के रूप में सहेजना
+
 
 ## परिचय
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### क्या Aspose.Email लाइब्रेरी अन्य ईमेल-संबंधित कार्यात्मकताओं का समर्थन करती है?
 
  हाँ, Aspose.Email लाइब्रेरी ईमेल संदेशों के साथ काम करने के लिए कई प्रकार की सुविधाएँ प्रदान करती है, जिसमें ईमेल और अनुलग्नक भेजना, प्राप्त करना और हेरफेर करना शामिल है। आप अधिक विवरण के लिए दस्तावेज़ का संदर्भ ले सकते हैं:[यहाँ](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

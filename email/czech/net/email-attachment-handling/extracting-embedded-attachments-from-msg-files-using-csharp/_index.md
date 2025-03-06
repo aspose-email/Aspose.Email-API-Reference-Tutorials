@@ -3,10 +3,16 @@ title: Extrahování vložených příloh ze souborů MSG pomocí C#
 linktitle: Extrahování vložených příloh ze souborů MSG pomocí C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak extrahovat vložené přílohy ze souborů MSG pomocí C# a Aspose.Email pro .NET. Komplexní průvodce s příklady zdrojového kódu.
-type: docs
 weight: 10
 url: /cs/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahování vložených příloh ze souborů MSG pomocí C#
+
 
 ## Úvod do vložených příloh
 
@@ -103,3 +109,9 @@ Absolutně! Aspose.Email for .NET lze použít v desktopových i webových aplik
 ### Kde najdu další příklady a dokumentaci?
 
  Podrobné příklady a dokumentaci k používání Aspose.Email pro .NET naleznete v[dokumentace](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Trabalhando com anexos embutidos em Aspose.Email
 linktitle: Trabalhando com anexos embutidos em Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Otimize sua comunicação por e-mail com Aspose.Email para Java. Aprenda a trabalhar com anexos embutidos neste guia completo.
-type: docs
 weight: 10
 url: /pt/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trabalhando com anexos embutidos em Aspose.Email
+
 
 ## Introdução ao trabalho com anexos embutidos em Aspose.Email
 
@@ -135,3 +141,9 @@ Para lidar com anexos embutidos em e-mails HTML, use o`LinkedResource` class par
 ### O Aspose.Email for Java é compatível com diferentes servidores de e-mail?
 
 Sim, Aspose.Email for Java é compatível com vários servidores de e-mail. Certifique-se de definir as configurações SMTP corretamente para o seu servidor de e-mail ao enviar e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

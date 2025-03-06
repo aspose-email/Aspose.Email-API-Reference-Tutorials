@@ -3,10 +3,16 @@ title: Včetně příloh v e-mailu – příklad C#
 linktitle: Včetně příloh v e-mailu – příklad C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se vkládat přílohy do e-mailu pomocí Aspose.Email pro .NET. Podrobný průvodce s příkladem kódu C#.
-type: docs
 weight: 10
 url: /cs/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Včetně příloh v e-mailu – příklad C#
+
 
 ## Úvod do vkládání příloh do e-mailu
 
@@ -111,3 +117,9 @@ Ano, můžete nakonfigurovat Aspose.Email pro odesílání e-mailů přes zabezp
 ### Kde najdu další informace o možnostech Aspose.Email?
 
  Podrobnější informace o funkcích, třídách a metodách Aspose.Email naleznete na[Aspose.Email API Reference](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

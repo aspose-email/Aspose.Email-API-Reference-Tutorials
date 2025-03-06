@@ -3,10 +3,16 @@ title: Prioritási és fontossági fejlécek beállítása az Aspose.Email segí
 linktitle: Prioritási és fontossági fejlécek beállítása az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Fokozza az e-mailek hatását a prioritási és fontossági fejlécek beállításával az Aspose.Email for Java segítségével. Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan.
-type: docs
 weight: 14
 url: /hu/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Prioritási és fontossági fejlécek beállítása az Aspose.Email segítségével
+
 
 ## Bevezetés
 
@@ -94,3 +100,9 @@ Bár beállíthat fontos fejléceket, ne feledje, hogy a címzett postaládájá
 ### Hogyan kezelhetem az e-mail mellékleteket az Aspose.Email segítségével?
 
  Az e-mail mellékletek kezelése az Aspose.Email segítségével egyszerű. Használhatja a`Attachment` osztályt, hogy mellékleteket adhasson e-mail üzeneteihez. Részletes útmutatót az Aspose.Email dokumentációban talál.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

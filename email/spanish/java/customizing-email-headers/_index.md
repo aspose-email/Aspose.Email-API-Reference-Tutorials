@@ -3,10 +3,16 @@ title: Personalización de encabezados de correo electrónico con Aspose.Email p
 linktitle: Personalización de encabezados de correo electrónico con Aspose.Email para Java
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a personalizar los encabezados de los correos electrónicos sin esfuerzo con Aspose.Email para Java. Sumérgete en tutoriales y aprovecha el poder de la personalización del encabezado del correo electrónico.
-type: docs
 weight: 16
 url: /es/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalización de encabezados de correo electrónico con Aspose.Email para Java
+
 
 Los encabezados de correo electrónico desempeñan un papel crucial en la comunicación por correo electrónico, ya que proporcionan información esencial sobre el origen y la entrega del mensaje. Con Aspose.Email para Java, personalizar los encabezados de correo electrónico se convierte en una tarea sencilla, lo que permite a los usuarios adaptar sus metadatos de correo electrónico a necesidades y requisitos específicos.
 
@@ -37,3 +43,9 @@ Garantice la seguridad del correo electrónico con firmas DKIM utilizando Aspose
 Desbloquee el poder de X-Headers en correos electrónicos con Aspose.Email para Java. Aprenda a administrar metadatos personalizados y mejorar el procesamiento de correo electrónico.
 ### [Enriquecimiento de metadatos de correo electrónico a través de encabezados con Aspose.Email](./enriching-email-metadata-through-headers/)
 Mejore los metadatos del correo electrónico con Aspose.Email para Java. Aprenda cómo enriquecer los encabezados de correo electrónico para mejorar el seguimiento y la personalización con Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-mails verzenden met Aspose.Email voor Java
 linktitle: E-mails verzenden met Aspose.Email voor Java
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Beheers de kunst van het verzenden van e-mails met Aspose.Email voor Java met deze uitgebreide tutorials. Leer moeiteloos e-mails maken en verzenden.
-type: docs
 weight: 10
 url: /nl/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mails verzenden met Aspose.Email voor Java
+
 
 
 ## Aan de slag met Aspose.Email voor Java
@@ -38,3 +44,9 @@ Leer hoe u efficiënt bulk-e-mails kunt verzenden met Aspose.Email voor Java. Ee
 Leer hoe u uw e-mailberichten kunt verbeteren door aangepaste kopteksten toe te voegen met Aspose.Email voor Java. Verbeter de metagegevens en organisatie van e-mails.
 ### [E-mailmeldingen verzenden met Aspose.Email](./sending-email-notifications/)
 Leer effectief e-mailmeldingen verzenden met Aspose.Email voor Java. Een uitgebreide gids met codevoorbeelden en veelgestelde vragen voor naadloze communicatie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

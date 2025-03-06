@@ -3,10 +3,16 @@ title: Extracting and Analyzing Email Headers with Aspose.Email
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Unlock the Power of Email Header Analysis with Aspose.Email for Java. Learn How to Extract and Analyze Email Headers for Enhanced Email Tracking and Security.
-type: docs
 weight: 12
 url: /java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting and Analyzing Email Headers with Aspose.Email
+
 
 ## Introduction to Extracting and Analyzing Email Headers with Aspose.Email
 
@@ -107,3 +113,10 @@ Analyzing email headers is crucial for various reasons, such as email tracking, 
 ### Can I automate email header analysis with Aspose.Email?
 
 Yes, you can automate email header analysis with Aspose.Email by integrating it into your Java applications. The library provides convenient methods for working with email headers.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

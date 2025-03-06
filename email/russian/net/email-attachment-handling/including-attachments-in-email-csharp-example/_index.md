@@ -3,10 +3,16 @@ title: Включение вложений в электронное письм�
 linktitle: Включение вложений в электронное письмо — пример C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как включать вложения в электронную почту с помощью Aspose.Email для .NET. Пошаговое руководство с примером кода C#.
-type: docs
 weight: 10
 url: /ru/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Включение вложений в электронное письмо — пример C#
+
 
 ## Введение в включение вложений в электронную почту
 
@@ -111,3 +117,9 @@ class Program
 ### Где я могу найти дополнительную информацию о возможностях Aspose.Email?
 
  Для получения более подробной информации о функциях, классах и методах Aspose.Email см.[Справочник по API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

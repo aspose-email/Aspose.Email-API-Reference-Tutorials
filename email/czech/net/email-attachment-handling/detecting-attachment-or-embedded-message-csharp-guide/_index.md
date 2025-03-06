@@ -3,10 +3,16 @@ title: Detekce přílohy nebo vložené zprávy - Průvodce C#
 linktitle: Detekce přílohy nebo vložené zprávy - Průvodce C#
 second_title: Aspose.Email .NET Email Processing API
 description: Ovládněte přílohy e-mailů a vnořenou detekci zpráv v C# pomocí Aspose.Email pro .NET. Vylepšete práci se svými e-maily pomocí našeho komplexního průvodce.
-type: docs
 weight: 13
 url: /cs/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Detekce přílohy nebo vložené zprávy - Průvodce C#
+
 
 ## Úvod do detekce přílohy nebo vložené zprávy - Průvodce C#
 
@@ -106,3 +112,9 @@ Měli byste implementovat správné mechanismy zpracování chyb pomocí bloků 
 ### Mohu přizpůsobit zpracování příloh a vložených zpráv?
 
 Zpracování příloh a vložených zpráv můžete samozřejmě přizpůsobit potřebám vaší konkrétní aplikace. Aspose.Email poskytuje flexibilní API pro tento účel.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

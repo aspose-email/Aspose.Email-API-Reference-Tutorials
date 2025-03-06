@@ -3,10 +3,16 @@ title: تحديد الرؤوس المخصصة في C#
 linktitle: تحديد الرؤوس المخصصة في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تحديد رؤوس مخصصة في لغة C# باستخدام Aspose.Email لـ .NET لتحسين الاتصال عبر البريد الإلكتروني. يوفر هذا الدليل التفصيلي رؤى حول إنشاء رؤوس بريد إلكتروني مخصصة لتحسين التفاعل.
-type: docs
 weight: 16
 url: /ar/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد الرؤوس المخصصة في C#
+
 
 
 ## مقدمة
@@ -97,3 +103,9 @@ client.Send(message);
 في العالم الديناميكي للاتصالات عبر البريد الإلكتروني، يمكن للترويسات المخصصة أن تغير قواعد اللعبة، مما يتيح تفاعلات مخصصة وفعالة. باستخدام Aspose.Email for .NET، تصبح عملية تحديد الرؤوس المخصصة في لغة C# مبسطة وفعالة. باتباع الخطوات الموضحة في هذا الدليل، يمكنك الاستفادة من قوة الرؤوس المخصصة لتحسين التصنيف والتخصيص والمشاركة في جهود التواصل عبر البريد الإلكتروني.
 
 إذا كنت مستعدًا للارتقاء باتصالاتك عبر البريد الإلكتروني إلى المستوى التالي، فتعمق في عالم الرؤوس المخصصة باستخدام Aspose.Email for .NET. من خلال إتقان هذه التقنية، يمكنك تسليم رسائل البريد الإلكتروني التي يتردد صداها مع المستلمين وتوفر تجربة سلسة وجذابة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

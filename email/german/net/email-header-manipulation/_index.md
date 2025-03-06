@@ -3,10 +3,16 @@ title: Manipulation von E-Mail-Headern
 linktitle: Manipulation von E-Mail-Headern
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Bearbeiten Sie E-Mail-Header effizient mit Aspose.Email für .NET-Tutorials. Erfahren Sie, wie Sie Header für eine verbesserte Kommunikation extrahieren, ändern und personalisieren.
-type: docs
 weight: 14
 url: /de/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulation von E-Mail-Headern
+
 
 ## Einführung
 
@@ -33,3 +39,9 @@ Erfahren Sie, wie Sie die MHTML-Reihenfolge mit C# und Aspose.Email für .NET an
 Erfahren Sie, wie Sie E-Mail-Header in C# mit Aspose.Email für .NET extrahieren. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente E-Mail-Analyse. 
 ### [Angeben benutzerdefinierter Header in C#](./specifying-custom-headers-in-csharp/)
 Erfahren Sie, wie Sie mit Aspose.Email für .NET benutzerdefinierte Header in C# angeben, um die E-Mail-Kommunikation zu verbessern. Diese Schritt-für-Schritt-Anleitung bietet Einblicke in die Erstellung personalisierter E-Mail-Header für ein verbessertes Engagement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

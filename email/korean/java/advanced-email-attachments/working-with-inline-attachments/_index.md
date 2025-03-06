@@ -3,10 +3,16 @@ title: Aspose.Email에서 인라인 첨부 파일 작업
 linktitle: Aspose.Email에서 인라인 첨부 파일 작업
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java로 이메일 통신을 최적화하세요. 이 종합 가이드에서 인라인 첨부 파일 작업 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email에서 인라인 첨부 파일 작업
+
 
 ## Aspose.Email의 인라인 첨부 파일 작업 소개
 
@@ -135,3 +141,9 @@ HTML 이메일의 인라인 첨부 파일을 처리하려면`LinkedResource` HTM
 ### Aspose.Email for Java는 다른 이메일 서버와 호환됩니까?
 
 예, Aspose.Email for Java는 다양한 이메일 서버와 호환됩니다. 이메일을 보낼 때 이메일 서버에 대한 SMTP 설정을 올바르게 구성했는지 확인하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# 코드를 사용하여 달력 이벤트 렌더링
 linktitle: C# 코드를 사용하여 달력 이벤트 렌더링
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 캘린더 이벤트를 렌더링하는 방법을 알아보세요. 대화형 일정을 쉽게 만드세요.
-type: docs
 weight: 15
 url: /ko/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드를 사용하여 달력 이벤트 렌더링
+
 
 
 오늘날의 디지털 시대에 캘린더 이벤트를 효율적으로 관리하는 것은 기업과 개인 모두에게 중요합니다. .NET용 Aspose.Email은 달력 이벤트를 처리하고 일정 요구 사항을 최대한 활용할 수 있는 강력한 도구 세트를 제공합니다. 이 단계별 가이드에서는 .NET용 Aspose.Email과 함께 C# 코드를 사용하여 캘린더 이벤트를 렌더링하는 과정을 안내합니다.
@@ -90,3 +96,9 @@ msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
    예, Aspose.Email은 이메일 보내기, 받기, 처리를 포함하여 이메일 관리를 위한 광범위한 기능을 제공합니다.
 
  자유롭게 탐색해 보세요.[Aspose.Email API 문서](https://reference.aspose.com/email/net/) 자세한 내용과 고급 사용 시나리오를 확인하세요. 즐거운 코딩하세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

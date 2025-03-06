@@ -3,10 +3,16 @@ title: تغيير الخطوط أثناء تحويل MHT باستخدام C#
 linktitle: تغيير الخطوط أثناء تحويل MHT باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تغيير الخطوط أثناء تحويل MHT باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر. مثالي لأرشفة البريد الإلكتروني وإدارة المستندات.
-type: docs
 weight: 11
 url: /ar/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تغيير الخطوط أثناء تحويل MHT باستخدام C#
+
 
 في العصر الرقمي الحالي، يلعب تنسيق المستندات وعرضها دورًا حاسمًا في نقل المعلومات بشكل فعال. عندما يتعلق الأمر بالتواصل عبر البريد الإلكتروني، فإن التأكد من أن رسائل البريد الإلكتروني الخاصة بك تبدو متسقة واحترافية أمر في غاية الأهمية. سترشدك هذه المقالة خلال عملية تغيير الخطوط أثناء تحويل MHT (MIME HTML) باستخدام لغة C# مع مكتبة Aspose.Email لـ .NET.
 
@@ -106,3 +112,9 @@ message.Save("output.mht", SaveOptions.DefaultMhtml);
 ### 5. هل يمكنني أتمتة عملية تغيير الخط في تطبيقاتي؟
 
    نعم، يمكنك أتمتة تغييرات الخطوط في تطبيقاتك من خلال دمج Aspose.Email for .NET في التعليمات البرمجية الخاصة بك. يسمح هذا بتخصيص الخط الديناميكي بناءً على منطق التطبيق الخاص بك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

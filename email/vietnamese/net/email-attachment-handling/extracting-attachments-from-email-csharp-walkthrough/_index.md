@@ -3,10 +3,16 @@ title: Trích xuất tệp đính kèm từ email - Hướng dẫn C#
 linktitle: Trích xuất tệp đính kèm từ email - Hướng dẫn C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách trích xuất tệp đính kèm email từng bước bằng cách sử dụng Aspose.Email cho .NET. Xử lý các định dạng khác nhau và lưu một cách dễ dàng.
-type: docs
 weight: 14
 url: /vi/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất tệp đính kèm từ email - Hướng dẫn C#
+
 
 ## Giới thiệu về trích xuất tệp đính kèm từ email - Hướng dẫn C# sử dụng Aspose.Email cho .NET
 
@@ -114,3 +120,9 @@ Aspose.Email hỗ trợ .NET Framework và .NET Core.
 ### Tôi có thể tìm thêm thông tin về Aspose.Email ở đâu?
 
  Để biết tài liệu chi tiết và ví dụ, hãy tham khảo[Tài liệu Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

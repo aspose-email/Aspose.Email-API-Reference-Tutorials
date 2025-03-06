@@ -3,10 +3,16 @@ title: Vytvoření nové poštovní zprávy v C#
 linktitle: Vytvoření nové poštovní zprávy v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Ovládněte vytváření e-mailů v C# pomocí Aspose.Email pro .NET. Komplexní průvodce s příklady kódu. Pozvedněte svou aplikaci nyní
-type: docs
 weight: 11
 url: /cs/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvoření nové poštovní zprávy v C#
+
 
 Chcete vylepšit svou aplikaci C# přidáním možnosti programově odesílat e-maily? S výkonem Aspose.Email pro .NET můžete bezproblémově integrovat e-mailové funkce do vaší aplikace. V tomto podrobném průvodci vás provedeme procesem vytváření nové e-mailové zprávy pomocí Aspose.Email pro .NET, včetně příkladů zdrojového kódu.
 
@@ -123,3 +129,9 @@ Gratulujeme! Úspěšně jste se naučili, jak vytvořit novou poštovní zpráv
    Komplexní dokumentaci a příklady kódu naleznete na webu[Aspose.Email API Reference](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

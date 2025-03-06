@@ -3,10 +3,16 @@ title: Tiêu đề email trong Aspose.Email
 linktitle: Tiêu đề email trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Khai phá sức mạnh của tiêu đề email bằng Aspose.Email for Java. Tìm hiểu cách đặt và truy xuất tiêu đề email một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tiêu đề email trong Aspose.Email
+
 
 ## Giới thiệu về Tiêu đề Email
 
@@ -92,3 +98,9 @@ Tiêu đề "Đã nhận" là một chuỗi các mục theo dõi đường dẫn
 ### Làm cách nào tôi có thể trích xuất tiêu đề email từ một loạt email lớn?
 
 Bạn có thể sử dụng khả năng xử lý hàng loạt của Aspose.Email để trích xuất tiêu đề từ nhiều email một cách hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

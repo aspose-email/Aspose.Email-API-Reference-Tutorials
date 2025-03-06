@@ -3,10 +3,16 @@ title: C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme
 linktitle: C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak e-postaları MHTML dosyaları olarak nasıl kaydedeceğinizi öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
-type: docs
 weight: 16
 url: /tr/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Kılavuzu - E-postayı MHTML Dosyası Olarak Kaydetme
+
 
 ## E-postayı MHTML Dosyası Olarak Kaydetmeye Giriş
 
@@ -105,3 +111,9 @@ Kesinlikle! Aspose.Email, bireylerin ve işletmelerin ihtiyaçlarını karşıla
 ### Aspose.Email for .NET kullanımıyla ilgili herhangi bir lisans ücreti var mı?
 
 Evet, Aspose.Email ticari bir kütüphanedir. Lisanslama ve fiyatlandırma ile ilgili detaylı bilgiye web sitemizden ulaşabilirsiniz.[Aspose.Email web sitesi](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

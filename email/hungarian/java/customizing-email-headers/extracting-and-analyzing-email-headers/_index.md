@@ -3,10 +3,16 @@ title: E-mail fejlécek kibontása és elemzése az Aspose.Email segítségével
 linktitle: E-mail fejlécek kibontása és elemzése az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Fedezze fel az e-mail fejlécelemzés erejét az Aspose.Email for Java segítségével. Ismerje meg, hogyan bonthatja ki és elemezheti az e-mail fejléceket a továbbfejlesztett e-mail-követés és -biztonság érdekében.
-type: docs
 weight: 12
 url: /hu/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail fejlécek kibontása és elemzése az Aspose.Email segítségével
+
 
 ## Bevezetés az e-mail fejlécek kibontásába és elemzésébe az Aspose.Email segítségével
 
@@ -107,3 +113,9 @@ Az e-mailek fejléceinek elemzése számos okból kulcsfontosságú, például a
 ### Automatizálhatom az e-mail fejlécelemzést az Aspose.Email segítségével?
 
 Igen, az Aspose.Email segítségével automatizálhatja az e-mail fejlécelemzést, ha integrálja azt Java-alkalmazásaiba. A könyvtár kényelmes módszereket kínál az e-mail fejlécekkel való munkavégzéshez.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

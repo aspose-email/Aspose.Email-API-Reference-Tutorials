@@ -3,10 +3,16 @@ title: Extraction des pièces jointes des messages électroniques dans Aspose.Em
 linktitle: Extraction des pièces jointes des messages électroniques dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment extraire facilement des pièces jointes à des e-mails à l'aide d'Aspose.Email pour Java. Guide étape par étape pour les développeurs Java.
-type: docs
 weight: 13
 url: /fr/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraction des pièces jointes des messages électroniques dans Aspose.Email
+
 
 ## Introduction à Aspose.Email pour Java
 
@@ -83,3 +89,9 @@ Aspose.Email pour Java prend en charge divers formats de courrier électronique,
 ### Où puis-je obtenir de l'aide pour Aspose.Email pour Java ?
 
 Pour toute assistance technique ou demande de renseignements, vous pouvez contacter l'équipe d'assistance d'Aspose via leurs canaux d'assistance.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

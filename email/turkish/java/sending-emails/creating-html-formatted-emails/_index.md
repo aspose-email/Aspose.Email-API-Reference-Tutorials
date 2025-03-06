@@ -3,10 +3,16 @@ title: Aspose.Email ile HTML Formatlı E-postalar Oluşturma
 linktitle: Aspose.Email ile HTML Formatlı E-postalar Oluşturma
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile etkileyici HTML e-postaları oluşturmayı öğrenin. Etkili e-posta iletişimi için kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 11
 url: /tr/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile HTML Formatlı E-postalar Oluşturma
+
 
 ## giriiş
 
@@ -121,3 +127,10 @@ Aspose.Email for Java, e-posta teslim durumu bildirimlerini (DSN'ler) yönetme v
 ### Aspose.Email for Java için ek kaynakları ve belgeleri nerede bulabilirim?
  Aspose.Email for Java API dokümantasyon sayfasında kapsamlı belgeler, eğitimler ve örnekler bulabilirsiniz:[Java API Belgelendirmesi için Aspose.Email](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Mellékletek eltávolítása e-mailekből – C# implementáció
 linktitle: Mellékletek eltávolítása e-mailekből – C# implementáció
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan távolíthat el e-mail mellékleteket az Aspose.Email for .NET használatával. Lépésről lépésre útmutató C# forráskóddal.
-type: docs
 weight: 18
 url: /hu/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mellékletek eltávolítása e-mailekből – C# implementáció
+
 
 ## Bevezetés az e-mailek mellékleteinek eltávolításába
 
@@ -97,3 +103,9 @@ Teljesen. Az Aspose.Emailt úgy tervezték, hogy méretezhető legyen, és kül�
 ### Tesztelhetem az Aspose.Email könyvtárat, mielőtt integrálnám a projektembe?
 
 Igen, az Aspose próbaverziókat biztosít a könyvtáraihoz, amelyeket letölthet és tesztelhet, mielőtt döntést hozna a vásárlásról. További információért látogassa meg weboldalukat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

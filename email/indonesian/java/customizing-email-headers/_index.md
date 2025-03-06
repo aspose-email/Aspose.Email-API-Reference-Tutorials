@@ -3,10 +3,16 @@ title: Menyesuaikan Header Email dengan Aspose.Email untuk Java
 linktitle: Menyesuaikan Header Email dengan Aspose.Email untuk Java
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara menyesuaikan header email dengan mudah dengan Aspose.Email untuk Java. Selami tutorial dan manfaatkan kekuatan penyesuaian header email.
-type: docs
 weight: 16
 url: /id/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menyesuaikan Header Email dengan Aspose.Email untuk Java
+
 
 Header email memainkan peran penting dalam komunikasi email, memberikan informasi penting tentang asal dan pengiriman pesan. Dengan Aspose.Email untuk Java, menyesuaikan header email menjadi tugas yang mudah, memungkinkan pengguna menyesuaikan metadata email mereka dengan kebutuhan dan persyaratan tertentu.
 
@@ -37,3 +43,9 @@ Pastikan keamanan email dengan tanda tangan DKIM menggunakan Aspose.Email for Ja
 Buka Kekuatan X-Headers dalam Email dengan Aspose.Email untuk Java. Pelajari Cara Mengelola Metadata Khusus dan Meningkatkan Pemrosesan Email.
 ### [Memperkaya Metadata Email melalui Header dengan Aspose.Email](./enriching-email-metadata-through-headers/)
 Tingkatkan Metadata Email dengan Aspose.Email untuk Java. Pelajari cara memperkaya header email untuk meningkatkan pelacakan dan penyesuaian dengan Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# コードを使用した元の境界の保持
 linktitle: C# コードを使用した元の境界の保持
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して電子メール添付ファイルの元の境界を保持する方法を学びます。ソースコード付きのステップバイステップガイド。
-type: docs
 weight: 13
 url: /ja/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# コードを使用した元の境界の保持
+
 
 ## 元の境界の保持の概要
 
@@ -107,3 +113,9 @@ Aspose.Email ライブラリを使用すると、元の境界を確実に保持�
 ### Aspose.Email for .NET に関する詳細情報はどこで入手できますか?
 
 包括的なドキュメントと例は、[Aspose.Email ドキュメント](https://reference.aspose.com/email/net/)ページ。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Menentukan Header Kustom di C#
 linktitle: Menentukan Header Kustom di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menentukan header khusus di C# menggunakan Aspose.Email untuk .NET guna meningkatkan komunikasi email. Panduan langkah demi langkah ini memberikan wawasan tentang cara membuat header email yang dipersonalisasi untuk meningkatkan interaksi.
-type: docs
 weight: 16
 url: /id/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menentukan Header Kustom di C#
+
 
 
 ## Perkenalan
@@ -97,3 +103,9 @@ Tentu saja, Aspose.Email untuk .NET melayani berbagai kebutuhan manipulasi email
 Dalam dunia komunikasi email yang dinamis, header khusus dapat menjadi terobosan baru, memungkinkan interaksi yang disesuaikan dan efektif. Dengan Aspose.Email untuk .NET, proses menentukan header khusus di C# menjadi efisien dan efisien. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat memanfaatkan kekuatan header khusus untuk meningkatkan kategorisasi, personalisasi, dan keterlibatan dalam upaya komunikasi email Anda.
 
 Jika Anda siap untuk meningkatkan komunikasi email Anda, selami dunia header khusus menggunakan Aspose.Email untuk .NET. Dengan menguasai teknik ini, Anda dapat mengirimkan email yang sesuai dengan penerimanya dan memberikan pengalaman yang lancar dan menarik.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

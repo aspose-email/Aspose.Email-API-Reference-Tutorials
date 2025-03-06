@@ -3,10 +3,16 @@ title: Κρυπτογράφηση και αποκρυπτογράφηση email 
 linktitle: Κρυπτογράφηση και αποκρυπτογράφηση email με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να ασφαλίζετε τα email σας με την κρυπτογράφηση και την αποκρυπτογράφηση email χρησιμοποιώντας το Aspose.Email για Java. Περιλαμβάνεται οδηγός βήμα προς βήμα, πηγαίος κώδικας και συχνές ερωτήσεις.
-type: docs
 weight: 11
 url: /el/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Κρυπτογράφηση και αποκρυπτογράφηση email με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -95,3 +101,9 @@ String decryptedBody = encryptedMessage.getBodyText();
  Επισκεφτείτε την τεκμηρίωση του API[εδώ](https://reference.aspose.com/email/java/) για λεπτομερείς πληροφορίες και παραδείγματα.
 
 Τώρα έχετε πλήρη κατανόηση της κρυπτογράφησης και της αποκρυπτογράφησης email χρησιμοποιώντας το Aspose.Email για Java. Ξεκινήστε να προστατεύετε τα email σας σήμερα!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

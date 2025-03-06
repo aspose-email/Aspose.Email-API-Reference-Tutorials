@@ -3,10 +3,16 @@ title: Определение пользовательского порядка 
 linktitle: Определение пользовательского порядка информации в MHTML с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как настроить порядок MHTML с помощью C# и Aspose.Email для .NET. Пошаговое руководство с кодом для эффективного размещения информации. Улучшите пользовательский опыт прямо сейчас!
-type: docs
 weight: 14
 url: /ru/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Определение пользовательского порядка информации в MHTML с помощью C#
+
 
 В сфере управления электронной почтой ценной функцией является возможность настраивать порядок информации в электронных письмах MHTML. Aspose.Email для .NET предлагает надежное решение для достижения этой цели. В этой статье мы шаг за шагом проведем вас через этот процесс.
 
@@ -80,3 +86,10 @@ eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ### 5. Где я могу найти дополнительные ресурсы и поддержку Aspose.Email для .NET?
 
 -  Вы можете получить доступ к обширной документации, примерам кода и поддержке на сайте[Документация Aspose.Email для .NET API](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

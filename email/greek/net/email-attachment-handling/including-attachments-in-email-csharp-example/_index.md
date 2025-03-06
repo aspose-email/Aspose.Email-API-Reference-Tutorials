@@ -3,10 +3,16 @@ title: Συμπεριλαμβανομένων των συνημμένων στο
 linktitle: Συμπεριλαμβανομένων των συνημμένων στο ηλεκτρονικό ταχυδρομείο - Παράδειγμα C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς μπορείτε να συμπεριλάβετε συνημμένα στο email χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με παράδειγμα κώδικα C#.
-type: docs
 weight: 10
 url: /el/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Συμπεριλαμβανομένων των συνημμένων στο ηλεκτρονικό ταχυδρομείο - Παράδειγμα C#
+
 
 ## Εισαγωγή στη συμπερίληψη συνημμένων στο email
 
@@ -111,3 +117,9 @@ class Program
 ### Πού μπορώ να βρω περισσότερες πληροφορίες σχετικά με τις δυνατότητες του Aspose.Email;
 
  Για πιο λεπτομερείς πληροφορίες σχετικά με τις δυνατότητες, τις κλάσεις και τις μεθόδους του Aspose.Email, ανατρέξτε στο[Aspose.Αναφορά API email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

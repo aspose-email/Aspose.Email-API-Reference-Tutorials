@@ -3,10 +3,16 @@ title: Χειρισμός κεφαλίδας email
 linktitle: Χειρισμός κεφαλίδας email
 second_title: Aspose.Email .NET Email Processing API
 description: Χειριστείτε αποτελεσματικά τις κεφαλίδες email χρησιμοποιώντας μαθήματα Aspose.Email για .NET. Μάθετε να εξάγετε, να τροποποιείτε και να εξατομικεύετε κεφαλίδες για βελτιωμένη επικοινωνία.
-type: docs
 weight: 14
 url: /el/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Χειρισμός κεφαλίδας email
+
 
 ## Εισαγωγή
 
@@ -33,3 +39,9 @@ url: /el/net/email-header-manipulation/
 Μάθετε πώς να εξάγετε κεφαλίδες email στο C# χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με πηγαίο κώδικα για αποτελεσματική ανάλυση email. 
 ### [Καθορισμός προσαρμοσμένων κεφαλίδων σε C#](./specifying-custom-headers-in-csharp/)
 Μάθετε πώς να προσδιορίζετε προσαρμοσμένες κεφαλίδες στο C# χρησιμοποιώντας το Aspose.Email για .NET για να βελτιώσετε την επικοινωνία μέσω email. Αυτός ο οδηγός βήμα προς βήμα παρέχει πληροφορίες για τη δημιουργία εξατομικευμένων κεφαλίδων email για βελτιωμένη αφοσίωση.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

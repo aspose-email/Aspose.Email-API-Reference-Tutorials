@@ -3,10 +3,16 @@ title: Руководство по C#. Сохранение электронно
 linktitle: Руководство по C#. Сохранение электронной почты в виде файла MHTML
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как сохранять электронные письма в виде файлов MHTML с помощью C# и Aspose.Email для .NET. Пошаговое руководство с примерами кода и часто задаваемыми вопросами.
-type: docs
 weight: 16
 url: /ru/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Руководство по C#. Сохранение электронной почты в виде файла MHTML
+
 
 ## Введение в сохранение электронной почты в виде файла MHTML
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### Взимаются ли какие-либо лицензионные сборы за использование Aspose.Email для .NET?
 
 Да, Aspose.Email — это коммерческая библиотека. Подробную информацию о лицензировании и ценах можно найти на странице[Веб-сайт Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

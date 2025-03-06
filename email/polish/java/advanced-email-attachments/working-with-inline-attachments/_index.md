@@ -3,10 +3,16 @@ title: Praca z załącznikami wbudowanymi w Aspose.Email
 linktitle: Praca z załącznikami wbudowanymi w Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Zoptymalizuj komunikację e-mailową za pomocą Aspose.Email dla Java. Z tego obszernego przewodnika dowiesz się, jak pracować z załącznikami wbudowanymi.
-type: docs
 weight: 10
 url: /pl/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Praca z załącznikami wbudowanymi w Aspose.Email
+
 
 ## Wprowadzenie do pracy z załącznikami wbudowanymi w Aspose.Email
 
@@ -135,3 +141,9 @@ Aby obsługiwać załączniki wbudowane w wiadomościach e-mail w formacie HTML,
 ### Czy Aspose.Email dla Java jest kompatybilny z różnymi serwerami e-mail?
 
 Tak, Aspose.Email dla Java jest kompatybilny z różnymi serwerami pocztowymi. Podczas wysyłania wiadomości e-mail upewnij się, że prawidłowo skonfigurowałeś ustawienia SMTP dla swojego serwera poczty e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 보안 메시지 처리 - C#의 암호화 및 암호 해독
 linktitle: 보안 메시지 처리 - C#의 암호화 및 암호 해독
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 암호화 및 암호 해독을 통해 보안 메시지 처리를 구현하는 방법을 알아보세요. 민감한 데이터를 효과적으로 보호하세요.
-type: docs
 weight: 16
 url: /ko/net/email-processing-and-analysis/secure-message-handling-encryption-and-decryption-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 보안 메시지 처리 - C#의 암호화 및 암호 해독
+
 
 오늘날의 디지털 시대에는 통신 중 민감한 정보의 보안을 보장하는 것이 무엇보다 중요합니다. 사이버 위협은 끊임없이 진화하고 있으므로 데이터를 보호하기 위해 강력한 암호화 및 암호 해독 메커니즘을 구현하는 것이 중요합니다. 이 문서에서는 .NET용 Aspose.Email을 사용하여 C#에서 암호화 및 암호 해독을 사용하여 메시지를 안전하게 처리하는 과정을 안내합니다.
 
@@ -98,3 +104,9 @@ string decryptedBody = encryptedMessage.Body;
 ### .NET용 Aspose.Email 사용에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
  .NET용 Aspose.Email 사용에 대한 포괄적인 문서와 예제는 다음에서 찾을 수 있습니다.[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

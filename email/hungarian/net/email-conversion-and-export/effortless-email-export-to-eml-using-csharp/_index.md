@@ -3,10 +3,16 @@ title: Könnyű e-mail exportálás EML-be C# használatával
 linktitle: Könnyű e-mail exportálás EML-be C# használatával
 second_title: Aspose.Email .NET Email Processing API
 description: Könnyedén exportálhatja az e-maileket EML formátumba a C# és az Aspose.Email for .NET használatával. Tanuljon lépésről lépésre a forráskód példáival.
-type: docs
 weight: 11
 url: /hu/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Könnyű e-mail exportálás EML-be C# használatával
+
 
 ## Bevezetés az egyszerű e-mail-exportálásba EML-be
 
@@ -175,3 +181,9 @@ Igen, exportálhatja az e-mail mellékleteket az e-mail üzenetekkel együtt az 
 ### Az oktatóanyagban található forráskód kész?
 
 Igen, az oktatóanyag teljes forráskódot tartalmaz, amely bemutatja, hogyan exportálhat e-maileket EML formátumba az Aspose.Email for .NET használatával. Ezt a kódot használhatja kiindulási pontként
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

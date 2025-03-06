@@ -3,11 +3,16 @@ title: Aspose.Email Tutorials for Email Management & Manipulation
 linktitle: Aspose.Email Tutorials
 additionalTitle: Aspose API References
 description: Unlock efficient email management with Aspose.Email tutorials. From composition to security, master diverse aspects for enhanced workflows and user experiences.
-type: docs
 weight: 10
 url: /
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email Tutorials for Email Management & Manipulation
+
 Discover a wealth of knowledge and expertise through the Aspose.Email tutorials, your gateway to mastering efficient email management and manipulation. These tutorials cover a diverse range of topics, from email composition to validation, conversion, and security, enabling developers to seamlessly integrate powerful features into their applications. With clear instructions and practical examples, you can enhance email workflows, ensure data accuracy, and elevate communication strategies, ultimately delivering enhanced user experiences and streamlined processes.
 
 ## Aspose.Email For .NET: The Email Processing API Tutorials
@@ -46,3 +51,10 @@ These are links to some useful resources:
 - [Securing Email Communications with Aspose.Email for Java](./java/securing-email-communications/)
 - [Customizing Email Headers with Aspose.Email for Java](./java/customizing-email-headers/)
 - [Exploring Email Security with Aspose.Email for Java](./java/exploring-email-security/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

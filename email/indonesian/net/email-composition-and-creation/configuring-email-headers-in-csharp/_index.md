@@ -3,10 +3,16 @@ title: Mengonfigurasi Header Email di C#
 linktitle: Mengonfigurasi Header Email di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengonfigurasi header email khusus di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber disertakan. Tingkatkan kontrol dan keamanan email.
-type: docs
 weight: 17
 url: /id/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengonfigurasi Header Email di C#
+
 
 Komunikasi email telah menjadi bagian integral dari interaksi bisnis dan pribadi modern. Meskipun isi email sangat penting, header yang menyertai email juga sama pentingnya. Header email memberikan informasi berharga tentang pesan, pengirim, penerima, dan lainnya. Mengonfigurasi header email di C# menggunakan Aspose.Email untuk .NET menawarkan cara yang ampuh untuk menyesuaikan dan mengontrol informasi yang tertanam dalam pesan email. Pada artikel ini, kita akan mempelajari cara mengonfigurasi header email langkah demi langkah menggunakan Aspose.Email untuk pustaka .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email menawarkan fitur validasi untuk memastikan bahwa header email difor
 ### Apakah header email peka huruf besar-kecil?
 
 Ya, header email tidak peka huruf besar-kecil. Namun, merupakan praktik yang baik untuk mempertahankan kapitalisasi yang konsisten untuk kompatibilitas yang lebih baik.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

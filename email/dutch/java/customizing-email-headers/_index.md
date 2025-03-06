@@ -3,10 +3,16 @@ title: E-mailheaders aanpassen met Aspose.Email voor Java
 linktitle: E-mailheaders aanpassen met Aspose.Email voor Java
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u moeiteloos e-mailheaders kunt aanpassen met Aspose.Email voor Java. Duik in de tutorials en benut de kracht van het aanpassen van e-mailheaders.
-type: docs
 weight: 16
 url: /nl/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailheaders aanpassen met Aspose.Email voor Java
+
 
 E-mailheaders spelen een cruciale rol in e-mailcommunicatie en bieden essentiële informatie over de herkomst en bezorging van het bericht. Met Aspose.Email voor Java wordt het aanpassen van e-mailheaders een eenvoudige taak, waardoor gebruikers hun e-mailmetagegevens kunnen afstemmen op specifieke behoeften en vereisten.
 
@@ -37,3 +43,9 @@ Zorg voor e-mailbeveiliging met DKIM-handtekeningen met Aspose.Email voor Java. 
 Ontgrendel de kracht van X-Headers in e-mails met Aspose.Email voor Java. Leer hoe u aangepaste metagegevens beheert en de e-mailverwerking verbetert.
 ### [Verrijk e-mailmetagegevens via headers met Aspose.Email](./enriching-email-metadata-through-headers/)
 Verbeter e-mailmetagegevens met Aspose.Email voor Java. Leer hoe u e-mailheaders kunt verrijken voor verbeterde tracking en aanpassing met Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Mengekstrak Lampiran Tertanam dari File MSG menggunakan C#
 linktitle: Mengekstrak Lampiran Tertanam dari File MSG menggunakan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak lampiran tersemat dari file MSG menggunakan C# dan Aspose.Email untuk .NET. Panduan komprehensif dengan contoh kode sumber.
-type: docs
 weight: 10
 url: /id/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengekstrak Lampiran Tertanam dari File MSG menggunakan C#
+
 
 ## Pengantar Lampiran Tertanam
 
@@ -103,3 +109,9 @@ Sangat! Aspose.Email untuk .NET dapat digunakan di aplikasi desktop dan web, men
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
 
  Anda dapat menemukan contoh dan dokumentasi mendetail tentang penggunaan Aspose.Email untuk .NET di[dokumentasi](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

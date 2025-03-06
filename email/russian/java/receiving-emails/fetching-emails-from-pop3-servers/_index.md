@@ -3,10 +3,16 @@ title: Получение электронной почты с POP3-сервер
 linktitle: Получение электронной почты с POP3-серверов с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Узнайте, как получать электронную почту с серверов POP3 с помощью Aspose.Email для Java. Пошаговое руководство с исходным кодом и часто задаваемыми вопросами.
-type: docs
 weight: 11
 url: /ru/java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Получение электронной почты с POP3-серверов с помощью Aspose.Email
+
 В этом подробном руководстве мы покажем вам процесс получения электронной почты с серверов POP3 с использованием мощной библиотеки Aspose.Email для Java. Независимо от того, создаете ли вы почтовый клиент, автоматизируете обработку электронной почты или просто хотите получать электронные письма с сервера POP3, это пошаговое руководство предоставит вам необходимые знания и исходный код.
 
 ## 1. Введение
@@ -159,3 +165,9 @@ public class EmailFetcher {
 
 ### 4. Могу ли я запланировать задачи получения электронной почты с помощью Aspose.Email для Java?
 Да, вы можете планировать задачи получения электронной почты, используя библиотеки планирования Java или платформы, такие как Quartz Scheduler.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

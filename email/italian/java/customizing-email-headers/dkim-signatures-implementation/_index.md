@@ -3,10 +3,16 @@ title: Implementazione delle firme DKIM con Aspose.Email
 linktitle: Implementazione delle firme DKIM con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Garantisci la sicurezza della posta elettronica con le firme DKIM utilizzando Aspose.Email per Java. Guida passo passo e codice per l'implementazione DKIM.
-type: docs
 weight: 15
 url: /it/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Implementazione delle firme DKIM con Aspose.Email
+
 
 ## Implementazione delle firme DKIM con Aspose.Email
 
@@ -112,3 +118,9 @@ Sì, Aspose.Email per Java è compatibile con vari server di posta elettronica e
 ### Dove posso trovare più risorse su Aspose.Email per Java?
 
 Per ulteriori informazioni e risorse, visitare la documentazione di Aspose.Email per Java all'indirizzo[Qui](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

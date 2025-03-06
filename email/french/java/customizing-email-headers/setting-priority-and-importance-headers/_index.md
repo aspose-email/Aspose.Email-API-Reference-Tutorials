@@ -3,10 +3,16 @@ title: Définition des en-têtes de priorité et d'importance avec Aspose.Email
 linktitle: Définition des en-têtes de priorité et d'importance avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Augmentez l'impact de votre courrier électronique en définissant des en-têtes de priorité et d'importance avec Aspose.Email pour Java. Découvrez comment procéder dans ce guide étape par étape.
-type: docs
 weight: 14
 url: /fr/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Définition des en-têtes de priorité et d'importance avec Aspose.Email
+
 
 ## Introduction
 
@@ -94,3 +100,9 @@ Bien que vous puissiez définir des en-têtes d'importance, gardez à l'esprit q
 ### Comment gérer les pièces jointes aux e-mails avec Aspose.Email ?
 
  La gestion des pièces jointes aux e-mails avec Aspose.Email est simple. Vous pouvez utiliser le`Attachment` classe pour ajouter des pièces jointes à vos messages électroniques. Pour un guide détaillé, reportez-vous à la documentation Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

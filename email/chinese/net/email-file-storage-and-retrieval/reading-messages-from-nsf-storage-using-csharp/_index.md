@@ -3,10 +3,16 @@ title: 使用 C# 从 NSF 存储读取消息
 linktitle: 使用 C# 从 NSF 存储读取消息
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 读取 NSF 存储消息。带有代码示例的分步指南。
-type: docs
 weight: 11
 url: /zh/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 从 NSF 存储读取消息
+
 
 ## 使用 C# 从 NSF 存储读取消息的简介
 
@@ -73,3 +79,9 @@ using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.
 
 ### 5. 使用 Aspose.Email for .NET 处理 Zimbra TGZ 存储时是否有任何限制？
 Aspose.Email for .NET 提供了使用 Zimbra TGZ 存储的强大功能，但请注意文档中提到的具体限制。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

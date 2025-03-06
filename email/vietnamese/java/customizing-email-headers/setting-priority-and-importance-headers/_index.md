@@ -3,10 +3,16 @@ title: Đặt tiêu đề mức độ ưu tiên và tầm quan trọng với Asp
 linktitle: Đặt tiêu đề mức độ ưu tiên và tầm quan trọng với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tăng tác động của email của bạn bằng cách đặt tiêu đề mức độ ưu tiên và tầm quan trọng với Aspose.Email for Java. Tìm hiểu cách thực hiện trong hướng dẫn từng bước này.
-type: docs
 weight: 14
 url: /vi/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt tiêu đề mức độ ưu tiên và tầm quan trọng với Aspose.Email
+
 
 ## Giới thiệu
 
@@ -94,3 +100,9 @@ Mặc dù bạn có thể đặt tiêu đề quan trọng nhưng hãy nhớ rằ
 ### Làm cách nào để xử lý tệp đính kèm email bằng Aspose.Email?
 
  Xử lý tệp đính kèm email bằng Aspose.Email rất đơn giản. Bạn có thể dùng`Attachment` class để thêm tệp đính kèm vào email của bạn. Để biết hướng dẫn chi tiết, hãy tham khảo tài liệu Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

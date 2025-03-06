@@ -3,10 +3,16 @@ title: Ta emot e-postmeddelanden med Aspose.Email för Java
 linktitle: Ta emot e-postmeddelanden med Aspose.Email för Java
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du tar emot e-post utan ansträngning med Aspose.Email för Java Tutorials. Börja hantera din inkorg som ett proffs!
-type: docs
 weight: 11
 url: /sv/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ta emot e-postmeddelanden med Aspose.Email för Java
+
 
 ## Ta emot e-post utan ansträngning
 
@@ -29,3 +35,9 @@ Börja bemästra konsten att ta emot e-post i Java med Aspose.Email för Java Tu
 Lär dig hur du arbetar med IMAP-protokollet i Aspose.Email för Java för att effektivt hantera din e-postkommunikation.
 ### [Hantera e-postbilagor i Aspose.Email](./handling-email-attachments/)
 Lär dig att hantera e-postbilagor i Aspose.Email för Java. Steg-för-steg-guide med källkod och vanliga frågor för effektiv hantering av e-postbilagor.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Khám phá chuyển đổi và xuất email
 linktitle: Chuyển đổi và xuất email
 second_title: API xử lý email Aspose.Email .NET
 description: Quản lý dữ liệu email thành thạo bằng cách sử dụng Aspose.Email cho các hướng dẫn của .NET. Chuyển đổi, xuất email, duy trì tính toàn vẹn, xử lý tệp đính kèm. Nâng cao bằng các ví dụ.
-type: docs
 weight: 11
 url: /vi/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Khám phá chuyển đổi và xuất email
+
 
 ## Giới thiệu
 
@@ -39,3 +45,9 @@ Tìm hiểu cách triển khai xử lý email nháp trong C# bằng Aspose.Email
 Tìm hiểu cách tạo tệp email HTML bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn để tùy chỉnh email liền mạch.
 ### [Tạo tập tin OFT từ tin nhắn - Hướng dẫn C#](./generating-oft-files-from-messages-csharp-tutorial/)
 Tìm hiểu cách tạo tệp OFT từ thư bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn để tạo mẫu email hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

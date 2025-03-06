@@ -3,10 +3,16 @@ title: การใช้งานลายเซ็น DKIM ด้วย Aspose
 linktitle: การใช้งานลายเซ็น DKIM ด้วย Aspose.Email
 second_title: Aspose.Email Java API การจัดการอีเมล
 description: รับประกันความปลอดภัยของอีเมลด้วยลายเซ็น DKIM โดยใช้ Aspose.Email สำหรับ Java คำแนะนำและโค้ดทีละขั้นตอนสำหรับการใช้งาน DKIM
-type: docs
 weight: 15
 url: /th/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การใช้งานลายเซ็น DKIM ด้วย Aspose.Email
+
 
 ## การใช้งานลายเซ็น DKIM ด้วย Aspose.Email
 
@@ -112,3 +118,9 @@ Aspose.Email for Java เป็นไลบรารีแบบสแตนด�
 ### ฉันจะหาแหล่งข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Email สำหรับ Java ได้ที่ไหน
 
 สำหรับข้อมูลและทรัพยากรเพิ่มเติม โปรดไปที่เอกสารประกอบ Aspose.Email สำหรับ Java ที่[ที่นี่](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

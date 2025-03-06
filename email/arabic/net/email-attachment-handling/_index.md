@@ -3,10 +3,16 @@ title: التعامل مع مرفقات البريد الإلكتروني الر
 linktitle: التعامل مع مرفقات البريد الإلكتروني
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعزيز إدارة البريد الإلكتروني باستخدام Aspose.Email لبرامج .NET التعليمية. تعلم المعالجة المبسطة والتحليل والرؤى المستندة إلى البيانات. دليل خطوة بخطوة المقدمة.
-type: docs
 weight: 12
 url: /ar/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التعامل مع مرفقات البريد الإلكتروني الرئيسية باستخدام Aspose.Email لـ .NET
+
 ## مقدمة
 
 توفر البرامج التعليمية لـ Aspose.Email for .NET حول "مرفقات البريد الإلكتروني ومعالجة المرفقات" للمطورين دليلاً شاملاً لإدارة مرفقات البريد الإلكتروني ومعالجتها بشكل فعال داخل تطبيقاتهم. توفر هذه البرامج التعليمية رؤى قيمة حول تسخير قوة Aspose.Email لـ .NET للتعامل مع المرفقات بسلاسة، وتعزيز تبادل البيانات والتعاون. من خلال الإرشادات خطوة بخطوة ومقتطفات التعليمات البرمجية التوضيحية، يمكن للمطورين دمج الوظائف المرتبطة بالمرفقات في تطبيقاتهم بثقة، مما يؤدي إلى تحسين سير عمل اتصالات البريد الإلكتروني وتجارب المستخدم.
@@ -46,3 +52,10 @@ url: /ar/net/email-attachment-handling/
 تعرف على كيفية الحفاظ على تنسيق MSG المضمن باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
 ### [الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 تعرف على كيفية الحفاظ على مرفقات TNEF باستخدام Aspose.Email لـ .NET في هذا الدليل خطوة بخطوة مع التعليمات البرمجية المصدر.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

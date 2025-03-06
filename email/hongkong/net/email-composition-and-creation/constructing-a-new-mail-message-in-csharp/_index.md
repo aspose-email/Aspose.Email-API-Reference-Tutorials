@@ -3,10 +3,16 @@ title: 用 C# 建立新郵件訊息
 linktitle: 用 C# 建立新郵件訊息
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 在 C# 中掌握電子郵件建立。帶有程式碼範例的綜合指南。立即提升您的應用
-type: docs
 weight: 11
 url: /zh-hant/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 用 C# 建立新郵件訊息
+
 
 您是否希望透過添加以程式設計方式發送電子郵件的功能來增強您的 C# 應用程式？透過 Aspose.Email for .NET 的強大功能，您可以將電子郵件功能無縫整合到您的應用程式中。在本逐步指南中，我們將引導您完成使用 Aspose.Email for .NET 建立新郵件訊息的過程，並附有原始程式碼範例。
 
@@ -123,3 +129,9 @@ catch (Exception ex)
    您可以在以下位置找到全面的文件和程式碼範例[Aspose.Email API 參考](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

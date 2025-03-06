@@ -3,10 +3,16 @@ title: Ricezione di e-mail con Aspose.Email per Java
 linktitle: Ricezione di e-mail con Aspose.Email per Java
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come ricevere e-mail senza sforzo con Aspose.Email per Java Tutorials. Inizia a gestire la tua casella di posta come un professionista!
-type: docs
 weight: 11
 url: /it/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ricezione di e-mail con Aspose.Email per Java
+
 
 ## Ricevi e-mail senza sforzo
 
@@ -29,3 +35,9 @@ Inizia oggi a padroneggiare l'arte di ricevere e-mail in Java con Aspose.Email f
 Scopri come lavorare con il protocollo IMAP in Aspose.Email per Java per gestire in modo efficiente la tua comunicazione e-mail.
 ### [Gestione degli allegati e-mail in Aspose.Email](./handling-email-attachments/)
 Impara a gestire gli allegati e-mail in Aspose.Email per Java. Guida passo passo con codice sorgente e domande frequenti per una gestione efficiente degli allegati e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

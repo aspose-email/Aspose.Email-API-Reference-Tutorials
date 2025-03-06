@@ -3,10 +3,16 @@ title: 在 C# 中指定收件人地址
 linktitle: 在 C# 中指定收件人地址
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中指定收件人地址。高效地创建、配置和发送电子邮件。
-type: docs
 weight: 19
 url: /zh/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 C# 中指定收件人地址
+
 
 
 本指南将引导您完成使用 Aspose.Email for .NET 库在 C# 中指定收件人地址的过程。 Aspose.Email 是一个功能强大的 .NET API，允许您处理电子邮件和各种与电子邮件相关的任务。在本教程中，我们将介绍如何使用该库将收件人地址添加到电子邮件中。
@@ -119,3 +125,9 @@ catch (Exception ex)
 有关 Aspose.Email for .NET 的更多信息和高级功能，请参阅[Aspose API 参考](https://reference.aspose.com/email/net/).
 
 关于使用 Aspose.Email for .NET 在 C# 中指定收件人地址的指南到此结束。您已了解如何创建电子邮件、添加收件人地址以及使用库的功能发送电子邮件。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

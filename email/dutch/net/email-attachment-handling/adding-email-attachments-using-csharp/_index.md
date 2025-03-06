@@ -3,10 +3,16 @@ title: E-mailbijlagen toevoegen met C#
 linktitle: E-mailbijlagen toevoegen met C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u e-mailbijlagen kunt toevoegen met C# en Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden voor naadloze integratie.
-type: docs
 weight: 11
 url: /nl/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailbijlagen toevoegen met C#
+
 
 ## Inleiding tot e-mailbijlagen en Aspose.Email voor .NET
 
@@ -92,3 +98,9 @@ Absoluut! U kunt verschillende eigenschappen van de klasse MailMessage instellen
 ### Is er een gratis proefversie van Aspose.Email voor .NET beschikbaar?
 
 Ja, u kunt een gratis proefversie van Aspose.Email voor .NET downloaden om de functies ervan te verkennen voordat u een aankoop doet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

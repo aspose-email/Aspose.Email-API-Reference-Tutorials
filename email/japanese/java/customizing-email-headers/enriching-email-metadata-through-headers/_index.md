@@ -3,10 +3,16 @@ title: Aspose.Email を使用してヘッダーを通じて電子メールのメ
 linktitle: Aspose.Email を使用してヘッダーを通じて電子メールのメタデータを強化する
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メールのメタデータを強化します。 Aspose.Email を使用して追跡とカスタマイズを改善するために電子メール ヘッダーを強化する方法を学びます。
-type: docs
 weight: 18
 url: /ja/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用してヘッダーを通じて電子メールのメタデータを強化する
+
 
 ## Aspose.Email を使用したヘッダーによる電子メール メタデータの強化の概要
 
@@ -107,3 +113,9 @@ Aspose.Email for Java を使用してヘッダーを通じて電子メールの�
 ### Aspose.Email for Java に関するその他のリソースはどこで見つけられますか?
 
 ドキュメントは次の場所で参照できます。[ここ](https://reference.aspose.com/email/java/)包括的なリソースと例については、こちらをご覧ください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

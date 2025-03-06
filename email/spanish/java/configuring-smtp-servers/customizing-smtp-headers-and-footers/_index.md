@@ -3,10 +3,16 @@ title: Personalización de encabezados y pies de página SMTP con Aspose.Email
 linktitle: Personalización de encabezados y pies de página SMTP con Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a personalizar encabezados y pies de página SMTP con Aspose.Email para Java. Mejore su comunicación por correo electrónico con mensajes y marcas personalizados.
-type: docs
 weight: 16
 url: /es/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalización de encabezados y pies de página SMTP con Aspose.Email
+
 
 ## Introducción
 
@@ -107,3 +113,9 @@ Sí, puede utilizar el formato HTML en el contenido del correo electrónico, inc
 ### ¿Qué configuración SMTP debo utilizar para enviar correos electrónicos personalizados?
 
 Debe utilizar la configuración SMTP proporcionada por su proveedor de servicios de correo electrónico o el departamento de TI de su organización. Estas configuraciones normalmente incluyen la dirección del servidor SMTP, el número de puerto y las credenciales de autenticación.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 設定優先順序和重要性標頭
 linktitle: 使用 Aspose.Email 設定優先順序和重要性標頭
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 透過使用 Aspose.Email for Java 設定優先順序和重要性標頭來提高電子郵件的影響力。透過本逐步指南了解具體操作方法。
-type: docs
 weight: 14
 url: /zh-hant/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 設定優先順序和重要性標頭
+
 
 ## 介紹
 
@@ -94,3 +100,9 @@ client.send(message);
 ### 如何使用 Aspose.Email 處理電子郵件附件？
 
 使用 Aspose.Email 處理電子郵件附件非常簡單。您可以使用`Attachment`類別將附件新增至您的電子郵件。有關詳細指南，請參閱 Aspose.Email 文件。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

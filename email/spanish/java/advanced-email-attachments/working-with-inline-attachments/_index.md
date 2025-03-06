@@ -3,10 +3,16 @@ title: Trabajar con archivos adjuntos en línea en Aspose.Email
 linktitle: Trabajar con archivos adjuntos en línea en Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Optimice su comunicación por correo electrónico con Aspose.Email para Java. Aprenda a trabajar con archivos adjuntos en línea en esta guía completa.
-type: docs
 weight: 10
 url: /es/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trabajar con archivos adjuntos en línea en Aspose.Email
+
 
 ## Introducción al trabajo con archivos adjuntos en línea en Aspose.Email
 
@@ -135,3 +141,9 @@ Para manejar archivos adjuntos en línea en correos electrónicos HTML, use el`L
 ### ¿Aspose.Email para Java es compatible con diferentes servidores de correo electrónico?
 
 Sí, Aspose.Email para Java es compatible con varios servidores de correo electrónico. Asegúrese de configurar correctamente los ajustes SMTP para su servidor de correo electrónico al enviar correos electrónicos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

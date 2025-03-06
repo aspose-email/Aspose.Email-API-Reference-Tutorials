@@ -3,10 +3,16 @@ title: Requesting Email Read Receipts using C# Code
 linktitle: Requesting Email Read Receipts using C# Code
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
-type: docs
 weight: 11
 url: /net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Requesting Email Read Receipts using C# Code
+
 
 In today's digital age, communication via email has become an integral part of our personal and professional lives. Often, when sending important emails, we want to ensure that the recipient has read and acknowledged our message. This is where email read receipts come into play. In this step-by-step tutorial, we will guide you through the process of requesting email read receipts using C# with Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ In this tutorial, we've explored how to request email read receipts using C# wit
 
 5. ### Are there privacy considerations when using email read receipts?
    Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Moeiteloze e-mailexport naar EML met C#
 linktitle: Moeiteloze e-mailexport naar EML met C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Exporteer moeiteloos e-mails naar EML-indeling met C# en Aspose.Email voor .NET. Leer stap voor stap met broncodevoorbeelden.
-type: docs
 weight: 11
 url: /nl/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Moeiteloze e-mailexport naar EML met C#
+
 
 ## Inleiding tot moeiteloze e-mailexport naar EML
 
@@ -175,3 +181,9 @@ Ja, u kunt e-mailbijlagen samen met het e-mailbericht exporteren met Aspose.Emai
 ### Is de broncode in de tutorial compleet?
 
 Ja, de tutorial biedt volledige broncode die laat zien hoe u e-mails naar het EML-formaat kunt exporteren met Aspose.Email voor .NET. U kunt deze code als uitgangspunt gebruiken
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

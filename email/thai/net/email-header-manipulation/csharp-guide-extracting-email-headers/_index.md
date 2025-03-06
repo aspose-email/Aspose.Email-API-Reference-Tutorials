@@ -3,10 +3,16 @@ title: คู่มือ C# - แยกส่วนหัวอีเมล
 linktitle: คู่มือ C# - แยกส่วนหัวอีเมล
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้วิธีแยกส่วนหัวอีเมลใน C# โดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมซอร์สโค้ดเพื่อการวิเคราะห์อีเมลที่มีประสิทธิภาพ
-type: docs
 weight: 15
 url: /th/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# คู่มือ C# - แยกส่วนหัวอีเมล
+
 
 คุณเคยสงสัยหรือไม่ว่าจะแยกส่วนหัวของอีเมลโดยใช้ C# ได้อย่างไร? ส่วนหัวของอีเมลประกอบด้วยข้อมูลอันมีค่าเกี่ยวกับผู้ส่ง ผู้รับ หัวเรื่อง และรายละเอียดอื่นๆ มากมาย ในคู่มือนี้ เราจะแนะนำคุณตลอดกระบวนการแยกส่วนหัวอีเมลแบบทีละขั้นตอนโดยใช้ไลบรารี Aspose.Email สำหรับ .NET อันทรงพลัง ไลบรารีนี้มีชุดคุณลักษณะที่ครอบคลุมสำหรับการทำงานกับอีเมลในแอปพลิเคชัน .NET ของคุณ
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### ฉันจะเข้าถึงเอกสาร Aspose.Email และดาวน์โหลดไลบรารีได้ที่ไหน
 
  คุณสามารถค้นหาเอกสารได้ที่[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . ดาวน์โหลดห้องสมุดได้ที่[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

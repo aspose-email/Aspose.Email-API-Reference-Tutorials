@@ -3,10 +3,16 @@ title: Personalizando cabeçalhos e rodapés SMTP com Aspose.Email
 linktitle: Personalizando cabeçalhos e rodapés SMTP com Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aprenda como personalizar cabeçalhos e rodapés SMTP com Aspose.Email para Java. Aprimore sua comunicação por e-mail com marcas e mensagens personalizadas.
-type: docs
 weight: 16
 url: /pt/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalizando cabeçalhos e rodapés SMTP com Aspose.Email
+
 
 ## Introdução
 
@@ -107,3 +113,9 @@ Sim, você pode usar formatação HTML no conteúdo do email, incluindo cabeçal
 ### Quais configurações SMTP devo usar para enviar e-mails personalizados?
 
 Você deve usar as configurações de SMTP fornecidas pelo seu provedor de serviços de e-mail ou pelo departamento de TI da sua organização. Essas configurações normalmente incluem o endereço do servidor SMTP, o número da porta e as credenciais de autenticação.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: قراءة أحداث متعددة من ملفات ICS باستخدام C
 linktitle: قراءة أحداث متعددة من ملفات ICS باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية استخراج أحداث متعددة من ملفات ICS باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية لإدارة الأحداث بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/email-event-and-calendar-handling/reading-multiple-events-from-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قراءة أحداث متعددة من ملفات ICS باستخدام C#
+
 
 في العصر الرقمي الحالي، تعد إدارة الأحداث والمواعيد بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حدٍ سواء. إذا كنت تعمل مع بيانات التقويم في تطبيق C# الخاص بك، فغالبًا ما ستجد ملفات ICS (iCalendar). تحتوي هذه الملفات على معلومات الأحداث بتنسيق موحد، مما يسهل مشاركتها ومعالجتها. في هذا الدليل التفصيلي، سنستكشف كيفية قراءة أحداث متعددة من ملفات ICS باستخدام لغة C# ومكتبة Aspose.Email القوية لـ .NET.
 
@@ -73,3 +79,9 @@ iCalendar (يُشار إليه غالبًا باسم ICS) هو تنسيق ملف
 
 5. ### أين يمكنني العثور على المزيد من الأمثلة والموارد لـ Aspose.Email for .NET؟
  يمكنك استكشاف وثائق API ونماذج التعليمات البرمجية على[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

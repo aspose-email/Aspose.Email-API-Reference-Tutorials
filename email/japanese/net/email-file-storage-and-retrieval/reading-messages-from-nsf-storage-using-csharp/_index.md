@@ -3,10 +3,16 @@ title: C# を使用した NSF ストレージからのメッセージの読み�
 linktitle: C# を使用した NSF ストレージからのメッセージの読み取り
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して NSF ストレージ メッセージを読み取る方法を学びます。コード例を含むステップバイステップのガイド。
-type: docs
 weight: 11
 url: /ja/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用した NSF ストレージからのメッセージの読み取り
+
 
 ## C# を使用した NSF ストレージからのメッセージの読み取りの概要
 
@@ -73,3 +79,9 @@ Aspose.Email の API メソッドを使用して、電子メールの添付フ�
 
 ### 5. Aspose.Email for .NET を使用して Zimbra TGZ ストレージを操作する場合、制限はありますか?
 Aspose.Email for .NET は、Zimbra TGZ ストレージを操作するための堅牢な機能を提供しますが、ドキュメントに記載されている特定の制限事項に注意してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

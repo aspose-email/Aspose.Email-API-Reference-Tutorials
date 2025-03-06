@@ -3,10 +3,16 @@ title: دليل C# - حفظ البريد الإلكتروني كملف MHTML
 linktitle: دليل C# - حفظ البريد الإلكتروني كملف MHTML
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية حفظ رسائل البريد الإلكتروني كملفات MHTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية والأسئلة الشائعة.
-type: docs
 weight: 16
 url: /ar/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# دليل C# - حفظ البريد الإلكتروني كملف MHTML
+
 
 ## مقدمة لحفظ البريد الإلكتروني كملف MHTML
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### هل هناك أي رسوم ترخيص مرتبطة باستخدام Aspose.Email لـ .NET؟
 
 نعم، Aspose.Email هي مكتبة تجارية. يمكنك العثور على معلومات مفصلة حول الترخيص والتسعير على الموقع[موقع Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

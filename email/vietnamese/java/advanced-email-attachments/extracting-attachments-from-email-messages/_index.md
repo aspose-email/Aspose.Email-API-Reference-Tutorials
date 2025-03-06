@@ -3,10 +3,16 @@ title: Trích xuất tệp đính kèm từ thư email trong Aspose.Email
 linktitle: Trích xuất tệp đính kèm từ thư email trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách trích xuất tệp đính kèm email một cách dễ dàng bằng Aspose.Email cho Java. Hướng dẫn từng bước dành cho nhà phát triển Java.
-type: docs
 weight: 13
 url: /vi/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất tệp đính kèm từ thư email trong Aspose.Email
+
 
 ## Giới thiệu về Aspose.Email cho Java
 
@@ -83,3 +89,9 @@ Aspose.Email for Java hỗ trợ nhiều định dạng email khác nhau, bao g�
 ### Tôi có thể nhận hỗ trợ cho Aspose.Email cho Java ở đâu?
 
 Nếu có bất kỳ yêu cầu hoặc hỗ trợ kỹ thuật nào, bạn có thể liên hệ với nhóm hỗ trợ của Aspose thông qua các kênh hỗ trợ của họ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

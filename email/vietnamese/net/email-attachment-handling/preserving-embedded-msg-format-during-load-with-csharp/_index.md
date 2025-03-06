@@ -3,10 +3,16 @@ title: Giữ nguyên định dạng MSG nhúng trong khi tải bằng C#
 linktitle: Giữ nguyên định dạng MSG nhúng trong khi tải bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách duy trì định dạng MSG được nhúng bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn.
-type: docs
 weight: 12
 url: /vi/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giữ nguyên định dạng MSG nhúng trong khi tải bằng C#
+
 
 Trong thế giới kỹ thuật số ngày nay, giao tiếp qua email đóng một vai trò then chốt trong cả lĩnh vực cá nhân và nghề nghiệp. Nhiều khi, chúng ta cần làm việc với các tệp email theo chương trình và việc duy trì ranh giới ban đầu của tệp EML (Email) có thể rất quan trọng. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách đạt được điều này bằng cách sử dụng mã C# với Aspose.Email cho .NET.
 
@@ -74,3 +80,9 @@ Có, Aspose.Email for .NET rất linh hoạt và có thể được sử dụng 
  Để truy cập các bản cập nhật và bản phát hành mới nhất của Aspose.Email cho .NET, hãy truy cập trang phát hành:[Aspose.Email cho các bản phát hành .NET](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

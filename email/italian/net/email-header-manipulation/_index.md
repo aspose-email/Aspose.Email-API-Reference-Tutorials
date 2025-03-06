@@ -3,10 +3,16 @@ title: Manipolazione dell'intestazione dell'e-mail
 linktitle: Manipolazione dell'intestazione dell'e-mail
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Manipolare in modo efficiente le intestazioni delle e-mail utilizzando Aspose.Email per i tutorial .NET. Impara a estrarre, modificare e personalizzare le intestazioni per migliorare la comunicazione.
-type: docs
 weight: 14
 url: /it/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipolazione dell'intestazione dell'e-mail
+
 
 ## introduzione
 
@@ -33,3 +39,9 @@ Scopri come personalizzare l'ordine MHTML utilizzando C# e Aspose.Email per .NET
 Scopri come estrarre le intestazioni di posta elettronica in C# utilizzando Aspose.Email per .NET. Guida passo passo con codice sorgente per un'analisi efficiente della posta elettronica. 
 ### [Specificare intestazioni personalizzate in C#](./specifying-custom-headers-in-csharp/)
 Scopri come specificare intestazioni personalizzate in C# utilizzando Aspose.Email per .NET per migliorare la comunicazione tramite posta elettronica. Questa guida passo passo fornisce approfondimenti sulla creazione di intestazioni e-mail personalizzate per un migliore coinvolgimento.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

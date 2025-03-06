@@ -3,10 +3,16 @@ title: Beágyazott objektumok kibontása e-mailből C# segítségével
 linktitle: Beágyazott objektumok kibontása e-mailből C# segítségével
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan bonthat ki beágyazott objektumokat az e-mailekből a C# és az Aspose.Email for .NET használatával. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 16
 url: /hu/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beágyazott objektumok kibontása e-mailből C# segítségével
+
 
 ## Bevezetés az e-mailek beágyazott objektumaiba
 
@@ -113,3 +119,9 @@ Igen, a kicsomagolt beágyazott objektumokat a mentés előtt manipulálhatja. A
 ### Hol találhatok további példákat az Aspose.Email használatára .NET-hez?
 
  További kódpéldákat és oktatóanyagokat találhat a[API-referencia](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

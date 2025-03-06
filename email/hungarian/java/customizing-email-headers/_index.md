@@ -3,10 +3,16 @@ title: E-mail fejlécek testreszabása az Aspose.Email for Java segítségével
 linktitle: E-mail fejlécek testreszabása az Aspose.Email for Java segítségével
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan szabhatja testre az e-mail fejléceket az Aspose.Email for Java segítségével. Merüljön el az oktatóanyagokban, és használja ki az e-mail fejlécek testreszabásának erejét.
-type: docs
 weight: 16
 url: /hu/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail fejlécek testreszabása az Aspose.Email for Java segítségével
+
 
 Az e-mail fejlécek kulcsfontosságú szerepet játszanak az e-mail kommunikációban, alapvető információkat szolgáltatva az üzenet eredetéről és kézbesítéséről. Az Aspose.Email for Java segítségével az e-mail fejlécek testreszabása egyszerű feladattá válik, lehetővé téve a felhasználók számára, hogy e-mailjeik metaadatait a konkrét igényekhez és követelményekhez igazítsák.
 
@@ -37,3 +43,9 @@ Az Aspose.Email for Java használatával DKIM-aláírásokkal biztosíthatja az 
 Fedezze fel az X-Headers erejét az e-mailekben az Aspose.Email for Java segítségével. Ismerje meg az egyéni metaadatok kezelését és az e-mailek feldolgozásának javítását.
 ### [Az e-mail metaadatok gazdagítása fejléceken keresztül az Aspose.Email segítségével](./enriching-email-metadata-through-headers/)
 Javítsa az e-mail metaadatokat az Aspose.Email for Java segítségével. Ismerje meg, hogyan gazdagíthatja az e-mail fejléceket a jobb nyomon követés és testreszabás érdekében az Aspose.Email segítségével.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

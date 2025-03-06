@@ -3,10 +3,16 @@ title: Xử lý lịch và sự kiện email hiệu quả
 linktitle: Xử lý sự kiện và lịch email
 second_title: API xử lý email Aspose.Email .NET
 description: Hợp lý hóa việc xử lý sự kiện email và quản lý lịch với hướng dẫn Aspose.Email for .NET. Tìm hiểu cách tự động hóa các sự kiện email và tích hợp liền mạch các chức năng lịch.
-type: docs
 weight: 15
 url: /vi/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý lịch và sự kiện email hiệu quả
+
 
 ## Giới thiệu
 
@@ -32,3 +38,9 @@ Tìm hiểu cách quản lý trạng thái của người tham dự cuộc hẹn
 Tìm hiểu cách sử dụng Aspose.Email cho .NET để tạo email yêu cầu cuộc hẹn nháp trong C#. Tăng cường giao tiếp và hiệu quả kinh doanh.
 ### [Thay đổi ProdID trong tệp ICS bằng C#](./altering-prodid-in-ics-files-with-csharp/)
 Tìm hiểu cách thay đổi ProdID trong tệp ICS bằng C# & Aspose.Email cho .NET. Hướng dẫn từng bước và mã. Đảm bảo tính toàn vẹn và tương thích dữ liệu. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

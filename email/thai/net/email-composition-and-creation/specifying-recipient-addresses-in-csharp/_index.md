@@ -3,10 +3,16 @@ title: การระบุที่อยู่ผู้รับใน C #
 linktitle: การระบุที่อยู่ผู้รับใน C #
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้วิธีระบุที่อยู่ผู้รับใน C# โดยใช้ Aspose.Email สำหรับ .NET สร้าง กำหนดค่า และส่งอีเมลอย่างมีประสิทธิภาพ
-type: docs
 weight: 19
 url: /th/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การระบุที่อยู่ผู้รับใน C
+
 
 
 คู่มือนี้จะแนะนำคุณตลอดกระบวนการระบุที่อยู่ผู้รับใน C# โดยใช้ไลบรารี Aspose.Email สำหรับ .NET Aspose.Email เป็น .NET API ที่ทรงพลังซึ่งช่วยให้คุณทำงานกับข้อความอีเมลและงานที่เกี่ยวข้องกับอีเมลต่างๆ ได้ ในบทช่วยสอนนี้ เราจะกล่าวถึงวิธีการเพิ่มที่อยู่ผู้รับลงในข้อความอีเมลโดยใช้ไลบรารี
@@ -119,3 +125,9 @@ catch (Exception ex)
  สำหรับข้อมูลเพิ่มเติมและคุณสมบัติขั้นสูงของ Aspose.Email สำหรับ .NET โปรดดูที่[กำหนดการอ้างอิง API](https://reference.aspose.com/email/net/).
 
 นี่เป็นการสรุปคำแนะนำในการระบุที่อยู่ผู้รับใน C# โดยใช้ Aspose.Email สำหรับ .NET คุณได้เรียนรู้วิธีสร้างข้อความอีเมล เพิ่มที่อยู่ผู้รับ และส่งอีเมลโดยใช้คุณลักษณะของไลบรารี
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

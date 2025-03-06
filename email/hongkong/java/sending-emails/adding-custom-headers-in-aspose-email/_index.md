@@ -3,10 +3,16 @@ title: 在 Aspose.Email 中新增自訂標頭
 linktitle: 在 Aspose.Email 中新增自訂標頭
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 新增自訂標頭來增強您的電子郵件。改進電子郵件元資料和組織。
-type: docs
 weight: 15
 url: /zh-hant/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Email 中新增自訂標頭
+
 
 ## 介紹
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### 如何從收到的電子郵件中提取自訂標頭？
    您可以使用`getHeaders`收到電子郵件的方法`MailMessage`物件來檢索和處理自訂標頭。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: الحفاظ على تنسيق MSG المضمن أثناء التحميل
 linktitle: الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية الحفاظ على تنسيق MSG المضمن باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
-type: docs
 weight: 12
 url: /ar/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#
+
 
 في العالم الرقمي اليوم، تلعب الاتصالات عبر البريد الإلكتروني دورًا محوريًا في المجالات الشخصية والمهنية. في كثير من الأحيان، نحتاج إلى التعامل مع ملفات البريد الإلكتروني برمجيًا، وقد يكون الحفاظ على الحدود الأصلية لملف EML (البريد الإلكتروني) أمرًا بالغ الأهمية. في هذا الدليل التفصيلي، سنستكشف كيفية تحقيق ذلك باستخدام كود C# مع Aspose.Email for .NET.
 
@@ -74,3 +80,9 @@ mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions)
  للوصول إلى آخر التحديثات والإصدارات الخاصة بـ Aspose.Email for .NET، قم بزيارة صفحة الإصدار:[Aspose.Email لإصدارات .NET](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

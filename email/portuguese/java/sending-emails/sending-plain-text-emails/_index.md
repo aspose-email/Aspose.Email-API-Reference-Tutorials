@@ -3,10 +3,16 @@ title: Envio de e-mails de texto simples com Aspose.Email
 linktitle: Envio de e-mails de texto simples com Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aprenda a enviar e-mails de texto simples de forma eficiente com Aspose.Email para Java. Um guia completo com exemplos de código e perguntas frequentes para uma comunicação perfeita.
-type: docs
 weight: 10
 url: /pt/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Envio de e-mails de texto simples com Aspose.Email
+
 
 ## Introdução
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Há alguma limitação ao enviar e-mails de texto simples com Aspose.Email for Java?
    - As limitações podem depender do seu provedor de serviços de e-mail e do servidor SMTP. Certifique-se de estar em conformidade com quaisquer limites de envio e políticas de envio de e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

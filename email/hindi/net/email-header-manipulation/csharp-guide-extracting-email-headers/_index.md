@@ -3,10 +3,16 @@ title: सी# गाइड - ईमेल हेडर निकालना
 linktitle: सी# गाइड - ईमेल हेडर निकालना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में ईमेल हेडर निकालने का तरीका जानें। कुशल ईमेल विश्लेषण के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 15
 url: /hi/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# गाइड - ईमेल हेडर निकालना
+
 
 क्या आपने कभी सोचा है कि C# का उपयोग करके ईमेल हेडर कैसे निकालें? ईमेल हेडर में प्रेषक, प्राप्तकर्ता, विषय और विभिन्न अन्य विवरणों के बारे में बहुमूल्य जानकारी होती है। इस गाइड में, हम आपको .NET लाइब्रेरी के लिए शक्तिशाली Aspose.Email का उपयोग करके ईमेल हेडर निकालने की चरण-दर-चरण प्रक्रिया के बारे में बताएंगे। यह लाइब्रेरी आपके .NET अनुप्रयोगों में ईमेल के साथ काम करने के लिए सुविधाओं का एक व्यापक सेट प्रदान करती है।
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### मैं Aspose.Email दस्तावेज़ कहां से एक्सेस कर सकता हूं और लाइब्रेरी डाउनलोड कर सकता हूं?
 
  आप दस्तावेज़ यहाँ पा सकते हैं[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . लाइब्रेरी डाउनलोड करने के लिए, पर जाएँ[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

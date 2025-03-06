@@ -3,10 +3,16 @@ title: Ρύθμιση της κατάστασης συμμετέχοντα γι�
 linktitle: Ρύθμιση της κατάστασης συμμετέχοντα για τους συμμετέχοντες στο ραντεβού με C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να διαχειρίζεστε την κατάσταση των συμμετεχόντων στα ραντεβού χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα.
-type: docs
 weight: 16
 url: /el/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ρύθμιση της κατάστασης συμμετέχοντα για τους συμμετέχοντες στο ραντεβού με C#
+
 
 ## Εισαγωγή στο Aspose.Email για .NET
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### Πού μπορώ να βρω περισσότερα έγγραφα και πόρους;
 
  Για πιο λεπτομερή τεκμηρίωση και πόρους, ανατρέξτε στην τεκμηρίωση του Aspose.Email για .NET:[Aspose.Email για .NET Documentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

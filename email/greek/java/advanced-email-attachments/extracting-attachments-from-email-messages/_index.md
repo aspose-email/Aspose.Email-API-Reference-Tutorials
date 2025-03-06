@@ -3,10 +3,16 @@ title: Εξαγωγή συνημμένων από μηνύματα ηλεκτρ�
 linktitle: Εξαγωγή συνημμένων από μηνύματα ηλεκτρονικού ταχυδρομείου στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να εξάγετε συνημμένα email χωρίς κόπο χρησιμοποιώντας το Aspose.Email για Java. Οδηγός βήμα προς βήμα για προγραμματιστές Java.
-type: docs
 weight: 13
 url: /el/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή συνημμένων από μηνύματα ηλεκτρονικού ταχυδρομείου στο Aspose.Email
+
 
 ## Εισαγωγή στο Aspose.Email για Java
 
@@ -83,3 +89,9 @@ public class ExtractAttachments {
 ### Πού μπορώ να λάβω υποστήριξη για το Aspose.Email για Java;
 
 Για οποιαδήποτε τεχνική βοήθεια ή απορίες, μπορείτε να επικοινωνήσετε με την ομάδα υποστήριξης της Aspose μέσω των καναλιών υποστήριξής της.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Verimli E-posta Dosya Depolama ve Alma
 linktitle: E-posta Dosya Depolama ve Alma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimlerini kullanarak e-posta dosya depolama ve alma işlemlerini kolaylaştırın. E-posta mesajlarını ve eklerini programlı olarak yönetmeyi ve bunlara erişmeyi öğrenin.
-type: docs
 weight: 18
 url: /tr/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verimli E-posta Dosya Depolama ve Alma
+
 
 ## giriiş
 
@@ -27,3 +33,9 @@ C# ve Aspose.Email for .NET kullanarak Zimbra TGZ depolama mesajlarını nasıl 
 C# ve Aspose.Email for .NET kullanarak NSF depolama mesajlarını nasıl okuyacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 ### [C# ile Zimbra TGZ Depolama Alanından Mesajları Kaydetme](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Aspose.Email for .NET'i kullanarak Zimbra TGZ e-postalarını nasıl çıkaracağınızı öğrenin. Etkin e-posta yönetimi için kaynak kodlu adım adım kılavuz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

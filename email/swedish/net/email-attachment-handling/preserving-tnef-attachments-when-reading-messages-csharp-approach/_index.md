@@ -3,10 +3,16 @@ title: Bevara TNEF-bilagor när du läser meddelanden - C#-metoden
 linktitle: Bevara TNEF-bilagor när du läser meddelanden - C#-metoden
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du bevarar TNEF-bilagor med Aspose.Email för .NET i denna steg-för-steg-guide med källkod.
-type: docs
 weight: 15
 url: /sv/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bevara TNEF-bilagor när du läser meddelanden - C#-metoden
+
 
 ## Introduktion till TNEF-bilagor
 
@@ -132,3 +138,9 @@ Absolut! Aspose.Email är utformad för att tillgodose ett brett utbud av applik
 ### Uppdateras Aspose.Email regelbundet?
 
 Ja, Aspose upprätthåller regelbundna uppdateringar för att säkerställa kompatibilitet med de senaste teknologierna och plattformarna.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

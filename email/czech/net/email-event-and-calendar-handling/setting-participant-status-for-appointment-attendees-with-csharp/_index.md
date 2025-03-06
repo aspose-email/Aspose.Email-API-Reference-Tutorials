@@ -3,10 +3,16 @@ title: Nastavení statusu účastníka pro účastníky schůzky s C#
 linktitle: Nastavení statusu účastníka pro účastníky schůzky s C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se spravovat stav účastníků schůzky pomocí C# a Aspose.Email pro .NET. Průvodce krok za krokem se zdrojovým kódem.
-type: docs
 weight: 16
 url: /cs/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nastavení statusu účastníka pro účastníky schůzky s C#
+
 
 ## Úvod do Aspose.Email pro .NET
 
@@ -109,3 +115,9 @@ Ano, funkce popsané v této příručce můžete snadno integrovat do svých st
 ### Kde najdu další dokumentaci a zdroje?
 
  Podrobnější dokumentaci a zdroje naleznete v dokumentaci Aspose.Email for .NET:[Aspose.Email pro dokumentaci .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

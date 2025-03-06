@@ -3,10 +3,16 @@ title: Gestion efficace des événements par courrier électronique et du calend
 linktitle: Gestion des événements de courrier électronique et du calendrier
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Rationalisez la gestion des événements de courrier électronique et la gestion du calendrier avec les didacticiels Aspose.Email pour .NET. Apprenez à automatiser les événements par courrier électronique et à intégrer de manière transparente les fonctionnalités de calendrier.
-type: docs
 weight: 15
 url: /fr/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestion efficace des événements par courrier électronique et du calendrier
+
 
 ## Introduction
 
@@ -32,3 +38,9 @@ Découvrez comment gérer le statut des participants aux rendez-vous à l'aide d
 Découvrez comment utiliser Aspose.Email pour .NET pour créer des brouillons d'e-mails de demande de rendez-vous en C#. Améliorez la communication et l’efficacité de l’entreprise.
 ### [Modification de ProdID dans les fichiers ICS avec C#](./altering-prodid-in-ics-files-with-csharp/)
 Apprenez à modifier ProdID dans les fichiers ICS à l'aide de C# et Aspose.Email pour .NET. Guide et code étape par étape. Assurer l’intégrité et la compatibilité des données. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

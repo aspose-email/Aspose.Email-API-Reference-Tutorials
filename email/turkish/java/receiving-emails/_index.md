@@ -3,10 +3,16 @@ title: Aspose.Email for Java ile E-posta Alma
 linktitle: Aspose.Email for Java ile E-posta Alma
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java Eğitimleri ile e-postaları zahmetsizce nasıl alacağınızı öğrenin. Gelen kutunuzu bir profesyonel gibi yönetmeye başlayın!
-type: docs
 weight: 11
 url: /tr/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java ile E-posta Alma
+
 
 ## E-postaları Zahmetsizce Alın
 
@@ -29,3 +35,9 @@ Aspose.Email for Java Tutorials ile bugün Java'da e-posta alma sanatında ustal
 E-posta iletişiminizi verimli bir şekilde yönetmek için Aspose.Email for Java'da IMAP protokolüyle nasıl çalışacağınızı öğrenin.
 ### [Aspose.Email'de E-posta Eklerini Yönetme](./handling-email-attachments/)
 Aspose.Email for Java'da e-posta eklerini yönetmeyi öğrenin. Etkin e-posta eki yönetimi için kaynak kodu ve SSS'leri içeren adım adım kılavuz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

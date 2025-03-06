@@ -3,10 +3,16 @@ title: E-postalardan Ekleri Kaldırma - C# Uygulaması
 linktitle: E-postalardan Ekleri Kaldırma - C# Uygulaması
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak e-posta eklerini nasıl kaldıracağınızı öğrenin. C# kaynak koduyla adım adım kılavuz.
-type: docs
 weight: 18
 url: /tr/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-postalardan Ekleri Kaldırma - C# Uygulaması
+
 
 ## E-postalardan Ekleri Kaldırmaya Giriş
 
@@ -97,3 +103,9 @@ Kesinlikle. Aspose.Email ölçeklenebilir olacak şekilde tasarlanmıştır ve k
 ### Aspose.Email kütüphanesini projeme entegre etmeden önce test edebilir miyim?
 
 Evet, Aspose, satın almaya karar vermeden önce indirebileceğiniz ve test edebileceğiniz kitaplıklarının deneme sürümlerini sağlar. Daha fazla bilgi için web sitelerini ziyaret edin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Xác định tin nhắn TNEF bằng mã C#
 linktitle: Xác định tin nhắn TNEF bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách xác định thông báo TNEF bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước có mã nguồn và Câu hỏi thường gặp đi kèm.
-type: docs
 weight: 14
 url: /vi/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xác định tin nhắn TNEF bằng mã C#
+
 
 Aspose.Email for .NET là một thư viện mạnh mẽ cung cấp hỗ trợ toàn diện để làm việc với nhiều định dạng và giao thức email khác nhau trong C#. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách xác định các thông báo TNEF (Định dạng đóng gói trung lập vận chuyển) bằng mã C# và thư viện Aspose.Email. TNEF là định dạng email độc quyền được Microsoft Outlook sử dụng để đóng gói văn bản đa dạng thức và tệp đính kèm trong thư email.
 
@@ -104,3 +110,9 @@ Có, Aspose.Email hỗ trợ nhiều định dạng và giao thức email, khi�
 ### Aspose.Email có thể xử lý việc xử lý email trên các nền tảng khác nhau không?
 
 Hoàn toàn có thể, Aspose.Email là một thư viện đa nền tảng có thể được sử dụng để phát triển ứng dụng trên nhiều nền tảng khác nhau, bao gồm Windows, macOS và Linux.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

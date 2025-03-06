@@ -3,10 +3,16 @@ title: Detecting Attachment or Embedded Message - C# Guide
 linktitle: Detecting Attachment or Embedded Message - C# Guide
 second_title: Aspose.Email .NET Email Processing API
 description: Master email attachment and embedded message detection in C# using Aspose.Email for .NET. Elevate your email handling with our comprehensive guide.
-type: docs
 weight: 13
 url: /net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Detecting Attachment or Embedded Message - C# Guide
+
 
 ## Introduction to Detecting Attachment or Embedded Message - C# Guide
 
@@ -106,3 +112,10 @@ You should implement proper error handling mechanisms using try-catch blocks and
 ### Can I customize the processing of attachments and embedded messages?
 
 Absolutely, you can tailor the processing of attachments and embedded messages to meet your specific application's needs. Aspose.Email provides flexible APIs for this purpose.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

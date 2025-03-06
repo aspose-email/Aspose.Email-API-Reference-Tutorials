@@ -3,10 +3,16 @@ title: Extrahera bilagor från e-post - C# Walkthrough
 linktitle: Extrahera bilagor från e-post - C# Walkthrough
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig att extrahera e-postbilagor steg för steg med Aspose.Email för .NET. Hantera olika format och spara enkelt.
-type: docs
 weight: 14
 url: /sv/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahera bilagor från e-post - C# Walkthrough
+
 
 ## Introduktion till att extrahera bilagor från e-post - C# Walkthrough med Aspose.Email för .NET
 
@@ -114,3 +120,9 @@ Aspose.Email stöder .NET Framework och .NET Core.
 ### Var kan jag hitta mer information om Aspose.Email?
 
  För detaljerad dokumentation och exempel, se[Aspose.Email dokumentation](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

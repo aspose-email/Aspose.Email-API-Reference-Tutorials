@@ -3,10 +3,16 @@ title: C# を使用して電子メールの添付ファイルを追加する
 linktitle: C# を使用して電子メールの添付ファイルを追加する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して電子メールの添付ファイルを追加する方法を学びます。シームレスな統合のためのコード例を含むステップバイステップのガイド。
-type: docs
 weight: 11
 url: /ja/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用して電子メールの添付ファイルを追加する
+
 
 ## 電子メールの添付ファイルと .NET 用の Aspose.Email の概要
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### Aspose.Email for .NET の無料試用版は利用できますか?
 
 はい、Aspose.Email for .NET の無料試用版をダウンロードして、購入前にその機能を試すことができます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

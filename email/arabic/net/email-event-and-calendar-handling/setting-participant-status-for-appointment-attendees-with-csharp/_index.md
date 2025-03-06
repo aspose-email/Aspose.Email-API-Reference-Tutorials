@@ -3,10 +3,16 @@ title: تعيين حالة المشارك لحضور الموعد باستخدا
 linktitle: تعيين حالة المشارك لحضور الموعد باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إدارة حالة الحضور في الموعد باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
-type: docs
 weight: 16
 url: /ar/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تعيين حالة المشارك لحضور الموعد باستخدام C#
+
 
 ## مقدمة إلى Aspose.Email لـ .NET
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### أين يمكنني العثور على المزيد من الوثائق والموارد؟
 
  لمزيد من الوثائق والموارد التفصيلية، راجع Aspose.Email لوثائق .NET:[Aspose.Email لوثائق .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Modificación de ProdID en archivos ICS con C#
 linktitle: Modificación de ProdID en archivos ICS con C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a modificar ProdID en archivos ICS usando C# y Aspose.Email para .NET. Guía y código paso a paso. Garantizar la integridad y compatibilidad de los datos.
-type: docs
 weight: 12
 url: /es/net/email-event-and-calendar-handling/altering-prodid-in-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Modificación de ProdID en archivos ICS con C#
+
 
 Si está trabajando con eventos de calendario en su aplicación C#, es posible que haya tenido que modificar el identificador de producto (ProdID) en archivos ICS (iCalendar). El ProdID es un componente crítico de un archivo ICS ya que identifica la fuente de los datos del calendario. En este artículo, lo guiaremos a través del proceso de cambiar el ProdID en archivos ICS usando C# con la ayuda de Aspose.Email para .NET.
 
@@ -86,3 +92,9 @@ No existen limitaciones significativas al modificar el ProdID en archivos ICS us
 ### 4. ¿Dónde puedo encontrar más información sobre Aspose.Email para .NET?
 
 Para obtener documentación completa, recursos y detalles sobre Aspose.Email para .NET, visite el sitio web de Aspose. También puede acceder a la referencia de API para obtener información detallada.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

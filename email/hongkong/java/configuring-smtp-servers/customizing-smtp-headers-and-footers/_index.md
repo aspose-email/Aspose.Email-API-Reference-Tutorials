@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 自訂 SMTP 頁首和頁尾
 linktitle: 使用 Aspose.Email 自訂 SMTP 頁首和頁尾
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 自訂 SMTP 頁首和頁尾。透過個人化的品牌和訊息增強您的電子郵件通訊。
-type: docs
 weight: 16
 url: /zh-hant/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 自訂 SMTP 頁首和頁尾
+
 
 ## 介紹
 
@@ -107,3 +113,9 @@ client.send(message);
 ### 我應該使用什麼 SMTP 設定來發送自訂電子郵件？
 
 您應該使用電子郵件服務提供者或組織的 IT 部門提供的 SMTP 設定。這些設定通常包括 SMTP 伺服器位址、連接埠號碼和驗證憑證。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

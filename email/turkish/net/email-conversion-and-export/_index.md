@@ -3,10 +3,16 @@ title: E-posta Dönüşümünü ve Dışa Aktarmayı Keşfetmek
 linktitle: E-posta Dönüştürme ve Dışa Aktarma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimlerini kullanarak e-posta veri yönetiminde uzmanlaşın. E-postaları dönüştürün, dışa aktarın, bütünlüğü koruyun, ekleri yönetin. Örneklerle zenginleştirin.
-type: docs
 weight: 11
 url: /tr/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-posta Dönüşümünü ve Dışa Aktarmayı Keşfetmek
+
 
 ## giriiş
 
@@ -39,3 +45,9 @@ Aspose.Email for .NET'i kullanarak C#'ta taslak e-posta işlemeyi nasıl uygulay
 C# ve Aspose.Email for .NET kullanarak HTML e-posta dosyalarını nasıl oluşturacağınızı öğrenin. Sorunsuz e-posta özelleştirmesi için kaynak kodlu adım adım kılavuz.
 ### [Mesajlardan OFT Dosyaları Oluşturma - C# Eğitimi](./generating-oft-files-from-messages-csharp-tutorial/)
 Aspose.Email for .NET kullanarak mesajlardan OFT dosyalarını nasıl oluşturacağınızı öğrenin. Verimli e-posta şablonu oluşturmak için kaynak kodlu adım adım kılavuz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

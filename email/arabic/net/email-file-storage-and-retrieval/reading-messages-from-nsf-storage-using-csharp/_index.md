@@ -3,10 +3,16 @@ title: قراءة الرسائل من تخزين NSF باستخدام C#
 linktitle: قراءة الرسائل من تخزين NSF باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية قراءة رسائل تخزين NSF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 11
 url: /ar/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قراءة الرسائل من تخزين NSF باستخدام C#
+
 
 ## مقدمة لقراءة الرسائل من تخزين NSF باستخدام C#
 
@@ -73,3 +79,9 @@ using (NotesStorageFacility nsf = new NotesStorageFacility(dataDir + "SampleNSF.
 
 ### 5. هل هناك أي قيود عند العمل مع وحدة تخزين Zimbra TGZ باستخدام Aspose.Email لـ .NET؟
 يوفر Aspose.Email for .NET إمكانات قوية للعمل مع تخزين Zimbra TGZ، ولكن كن على دراية بالقيود المحددة المذكورة في الوثائق.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

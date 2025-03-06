@@ -3,10 +3,16 @@ title: 使用 C# 修改电子邮件地址
 linktitle: 使用 C# 修改电子邮件地址
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何在 Aspose.Email for .NET 的帮助下使用 C# 修改电子邮件地址。请按照此分步指南有效地操作电子邮件地址。
-type: docs
 weight: 10
 url: /zh/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 修改电子邮件地址
+
 
 ## 介绍
 
@@ -132,3 +138,9 @@ Aspose.Email for .NET 提供了一组丰富的类和方法，可以促进电子�
 ## 结论
 
 在本指南中，我们踏上了探索使用 C# 和 Aspose.Email for .NET 修改电子邮件地址的世界的旅程。通过遵循分步说明并利用提供的源代码，您现在拥有有效修改应用程序中的电子邮件地址的技能。 Aspose.Email 的功能与您新发现的知识相结合无疑将简化您的电子邮件操作工作。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

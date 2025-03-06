@@ -3,10 +3,16 @@ title: Afbeeldingen insluiten als bijlagen in Aspose.Email
 linktitle: Afbeeldingen insluiten als bijlagen in Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u afbeeldingen insluit als bijlagen in Aspose.Email voor Java. Verbeter uw e-mailcommunicatie met visueel aantrekkelijke inhoud.
-type: docs
 weight: 14
 url: /nl/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Afbeeldingen insluiten als bijlagen in Aspose.Email
+
 
 ## Afbeeldingen insluiten als bijlagen in Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email voor Java ondersteunt verschillende afbeeldingsformaten, waaronder 
 ### Zijn er beperkingen op de grootte van ingesloten afbeeldingen?
 
 De grootte van ingesloten afbeeldingen kan van invloed zijn op de afleverbaarheid van e-mails en de ervaring van de ontvanger. Het is raadzaam om afbeeldingen voor e-mail te optimaliseren om grote bestandsgroottes te voorkomen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

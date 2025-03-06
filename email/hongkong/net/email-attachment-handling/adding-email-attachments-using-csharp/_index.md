@@ -3,10 +3,16 @@ title: 使用 C# 新增電子郵件附件
 linktitle: 使用 C# 新增電子郵件附件
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 新增電子郵件附件。具有程式碼範例的逐步指南，可實現無縫整合。
-type: docs
 weight: 11
 url: /zh-hant/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 新增電子郵件附件
+
 
 ## 電子郵件附件和 Aspose.Email for .NET 簡介
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### 是否有 Aspose.Email for .NET 的免費試用版？
 
 是的，您可以在購買之前下載 Aspose.Email for .NET 的免費試用版來探索其功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

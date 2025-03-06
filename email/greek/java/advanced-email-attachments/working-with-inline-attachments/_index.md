@@ -3,10 +3,16 @@ title: Εργασία με Inline Attachments στο Aspose.Email
 linktitle: Εργασία με Inline Attachments στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Βελτιστοποιήστε την επικοινωνία μέσω email με το Aspose.Email για Java. Μάθετε να εργάζεστε με ενσωματωμένα συνημμένα σε αυτόν τον αναλυτικό οδηγό.
-type: docs
 weight: 10
 url: /el/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εργασία με Inline Attachments στο Aspose.Email
+
 
 ## Εισαγωγή στην εργασία με ενσωματωμένα συνημμένα στο Aspose.Email
 
@@ -135,3 +141,9 @@ LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources(
 ### Είναι το Aspose.Email για Java συμβατό με διαφορετικούς διακομιστές email;
 
 Ναι, το Aspose.Email για Java είναι συμβατό με διάφορους διακομιστές email. Βεβαιωθείτε ότι έχετε διαμορφώσει σωστά τις ρυθμίσεις SMTP για τον διακομιστή email σας κατά την αποστολή email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

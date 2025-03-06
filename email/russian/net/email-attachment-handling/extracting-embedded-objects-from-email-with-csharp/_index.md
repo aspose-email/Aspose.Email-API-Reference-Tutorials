@@ -3,10 +3,16 @@ title: Извлечение встроенных объектов из элек�
 linktitle: Извлечение встроенных объектов из электронной почты с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как извлекать внедренные объекты из электронных писем с помощью C# и Aspose.Email для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 16
 url: /ru/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение встроенных объектов из электронной почты с помощью C#
+
 
 ## Введение во встроенные объекты в электронных письмах
 
@@ -113,3 +119,9 @@ namespace EmbeddedObjectExtractor
 ### Где я могу найти больше примеров использования Aspose.Email для .NET?
 
  Дополнительные примеры кода и руководства можно найти в разделе[Справочник по API](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Generera OFT-filer från meddelanden - C# Tutorial
 linktitle: Generera OFT-filer från meddelanden - C# Tutorial
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du skapar OFT-filer från meddelanden med Aspose.Email för .NET. Steg-för-steg-guide med källkod för effektiv generering av e-postmall.
-type: docs
 weight: 19
 url: /sv/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Generera OFT-filer från meddelanden - C# Tutorial
+
 
 ## Introduktion till generering av OFT-filer
 
@@ -114,3 +120,9 @@ Absolut! Du kan definiera dina egna platshållare i mallen och ersätta dem med 
 ### Hur säkerställer jag att mina genererade e-postmeddelanden inte hamnar i mottagarens skräppostmapp?
 
 För att undvika att e-post flaggas som skräppost, se till att följa bästa praxis för e-postleverans. Använd legitima sändningsmetoder, undvik överdrivna länkar och inkludera korrekt avsändarinformation.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

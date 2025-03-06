@@ -3,10 +3,16 @@ title: EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
 linktitle: EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET kullanarak C#'ta EML dosyalarını nasıl yöneteceğinizi öğrenin. E-posta iletilerini yüklemeye, değiştirmeye ve kaydetmeye ilişkin kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 13
 url: /tr/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# EML Dosya İşleme - C#'ta Yükleme ve Kaydetme İşlemleri
+
 
 ## EML Dosyalarına Giriş
 
@@ -150,3 +156,9 @@ Evet, Aspose.Email birden fazla EML dosyasını toplu olarak yüklemenize olanak
 ### Aspose.Email ticari projeler için uygun mudur?
 
 Evet, Aspose.Email, hem kişisel hem de ticari projelere uygun, e-posta manipülasyonu için güçlü özellikler sunan çok yönlü bir kütüphanedir.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

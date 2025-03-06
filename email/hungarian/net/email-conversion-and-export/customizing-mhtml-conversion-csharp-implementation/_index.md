@@ -3,10 +3,16 @@ title: MHTML-konverzió testreszabása – C# implementáció
 linktitle: MHTML-konverzió testreszabása – C# implementáció
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan szabhatja személyre az MHTML-konverziót az Aspose.Email for .NET használatával. Lépésről lépésre útmutató C# forráskóddal.
-type: docs
 weight: 10
 url: /hu/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# MHTML-konverzió testreszabása – C# implementáció
+
 
 ## Bevezetés az MHTML-konverzió testreszabásába
 
@@ -67,3 +73,9 @@ Teljesen! Az Aspose.Email for .NET számos kimeneti formátumot támogat, péld�
 ### Az Aspose.Email for .NET alkalmas kis és nagy projektekhez?
 
 Igen, az Aspose.Email for .NET méretezhető, így alkalmas különféle méretű projektekhez. Széles körben használják kis alkalmazásokban és nagyvállalati szintű megoldásokban egyaránt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

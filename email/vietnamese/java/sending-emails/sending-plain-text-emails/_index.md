@@ -3,10 +3,16 @@ title: Gửi email văn bản đơn giản bằng Aspose.Email
 linktitle: Gửi email văn bản đơn giản bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách gửi email văn bản đơn giản một cách hiệu quả với Aspose.Email for Java. Hướng dẫn toàn diện với các ví dụ về mã và Câu hỏi thường gặp để giao tiếp liền mạch.
-type: docs
 weight: 10
 url: /vi/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gửi email văn bản đơn giản bằng Aspose.Email
+
 
 ## Giới thiệu
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Có bất kỳ hạn chế nào khi gửi email văn bản đơn giản bằng Aspose.Email cho Java không?
    - Các giới hạn có thể phụ thuộc vào nhà cung cấp dịch vụ email và máy chủ SMTP của bạn. Đảm bảo bạn tuân thủ mọi giới hạn gửi và chính sách gửi email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

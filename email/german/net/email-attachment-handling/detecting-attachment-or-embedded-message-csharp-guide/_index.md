@@ -3,10 +3,16 @@ title: Erkennen von Anhängen oder eingebetteten Nachrichten – C#-Handbuch
 linktitle: Erkennen von Anhängen oder eingebetteten Nachrichten – C#-Handbuch
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Beherrschen Sie die Erkennung von E-Mail-Anhängen und eingebetteten Nachrichten in C# mit Aspose.Email für .NET. Verbessern Sie Ihr E-Mail-Handling mit unserem umfassenden Leitfaden.
-type: docs
 weight: 13
 url: /de/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erkennen von Anhängen oder eingebetteten Nachrichten – C#-Handbuch
+
 
 ## Einführung in die Erkennung von Anhängen oder eingebetteten Nachrichten – C#-Handbuch
 
@@ -106,3 +112,9 @@ Sie sollten geeignete Fehlerbehandlungsmechanismen mithilfe von Try-Catch-Blöck
 ### Kann ich die Verarbeitung von Anhängen und eingebetteten Nachrichten anpassen?
 
 Sie können die Verarbeitung von Anhängen und eingebetteten Nachrichten auf jeden Fall an die Anforderungen Ihrer spezifischen Anwendung anpassen. Aspose.Email stellt hierfür flexible APIs zur Verfügung.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

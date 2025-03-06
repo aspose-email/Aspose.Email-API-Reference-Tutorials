@@ -3,10 +3,16 @@ title: แยกไฟล์แนบจากอีเมล - C# Walkthrough
 linktitle: แยกไฟล์แนบจากอีเมล - C# Walkthrough
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้การแยกไฟล์แนบอีเมลทีละขั้นตอนโดยใช้ Aspose.Email สำหรับ .NET จัดการรูปแบบต่างๆ และบันทึกได้อย่างง่ายดาย
-type: docs
 weight: 14
 url: /th/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แยกไฟล์แนบจากอีเมล - C# Walkthrough
+
 
 ## ข้อมูลเบื้องต้นเกี่ยวกับการแตกไฟล์แนบจากอีเมล - C# Walkthrough โดยใช้ Aspose.Email สำหรับ .NET
 
@@ -114,3 +120,9 @@ Aspose.Email รองรับ .NET Framework และ .NET Core
 ### ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Email ได้ที่ไหน
 
  สำหรับเอกสารประกอบโดยละเอียดและตัวอย่าง โปรดดูที่[เอกสาร Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

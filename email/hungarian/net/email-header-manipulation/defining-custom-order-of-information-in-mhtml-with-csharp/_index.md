@@ -3,10 +3,16 @@ title: Egyéni információsorrend meghatározása MHTML-ben C# segítségével
 linktitle: Egyéni információsorrend meghatározása MHTML-ben C# segítségével
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan szabhatja testre az MHTML-rendelést a C# és Aspose.Email for .NET használatával. Lépésről lépésre útmutató kóddal a hatékony információrendezés érdekében. Növelje a felhasználói élményt most!
-type: docs
 weight: 14
 url: /hu/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Egyéni információsorrend meghatározása MHTML-ben C# segítségével
+
 
 Az e-mailek kezelésében az MHTML e-mailekben található információk sorrendjének testreszabása értékes szolgáltatás. Az Aspose.Email for .NET robusztus megoldást kínál ennek elérésére. Ebben a cikkben lépésről lépésre végigvezetjük a folyamaton.
 
@@ -80,3 +86,10 @@ Egy olyan világban, ahol a hatékony e-mail-kezelés a legfontosabb, az Aspose.
 ### 5. Hol találhatok további forrásokat és támogatást az Aspose.Email for .NET-hez?
 
 -  Széleskörű dokumentációt, kódpéldákat és támogatást érhet el a webhelyen[Aspose.Email a .NET API dokumentációhoz](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Especificación de encabezados personalizados en C#
 linktitle: Especificación de encabezados personalizados en C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a especificar encabezados personalizados en C# usando Aspose.Email para .NET para mejorar la comunicación por correo electrónico. Esta guía paso a paso proporciona información sobre cómo crear encabezados de correo electrónico personalizados para mejorar la participación.
-type: docs
 weight: 16
 url: /es/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Especificación de encabezados personalizados en C#
+
 
 
 ## Introducción
@@ -97,3 +103,9 @@ Por supuesto, Aspose.Email para .NET satisface una amplia gama de necesidades de
 En el dinámico mundo de la comunicación por correo electrónico, los encabezados personalizados pueden cambiar las reglas del juego, permitiendo interacciones personalizadas y efectivas. Con Aspose.Email para .NET, el proceso de especificar encabezados personalizados en C# se simplifica y es eficiente. Si sigue los pasos descritos en esta guía, puede aprovechar el poder de los encabezados personalizados para mejorar la categorización, personalización y participación en sus esfuerzos de comunicación por correo electrónico.
 
 Si está listo para llevar su comunicación por correo electrónico al siguiente nivel, sumérjase en el mundo de los encabezados personalizados usando Aspose.Email para .NET. Al dominar esta técnica, puede enviar correos electrónicos que resuenen en los destinatarios y brinden una experiencia fluida y atractiva.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

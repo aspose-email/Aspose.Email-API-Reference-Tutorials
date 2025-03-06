@@ -3,10 +3,16 @@ title: C# を使用して電子メール アドレスを変更する
 linktitle: C# を使用して電子メール アドレスを変更する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を利用して C# を使用して電子メール アドレスを変更する方法を学びます。電子メール アドレスを効果的に操作するには、このステップバイステップ ガイドに従ってください。
-type: docs
 weight: 10
 url: /ja/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用して電子メール アドレスを変更する
+
 
 ## 導入
 
@@ -132,3 +138,9 @@ Aspose.Email は強力な選択肢ですが、MimeKit や OpenPop.NET などの�
 ## 結論
 
 このガイドでは、C# と Aspose.Email for .NET を使用して電子メール アドレス変更の世界を探索する旅に乗り出しました。段階的な手順に従い、提供されているソース コードを利用することで、アプリケーション内の電子メール アドレスを効果的に変更するスキルを身につけることができます。 Aspose.Email の機能と新しく得た知識を組み合わせることで、間違いなく電子メール操作の作業が効率化されます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

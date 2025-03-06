@@ -3,10 +3,16 @@ title: 使用 C# 创建 HTML 电子邮件文件 - 另存为 HTML
 linktitle: 使用 C# 创建 HTML 电子邮件文件 - 另存为 HTML
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 创建 HTML 电子邮件文件。带有源代码的分步指南，可实现无缝电子邮件定制。
-type: docs
 weight: 18
 url: /zh/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 创建 HTML 电子邮件文件 - 另存为 HTML
+
 
 ## 创建 HTML 电子邮件文件简介
 
@@ -113,3 +119,9 @@ Aspose.Email for .NET 提供了广泛的高级功能，例如添加附件、嵌�
 ### 在哪里可以找到更多示例和文档？
 
 您可以探索有关的全面示例和详细文档[Aspose.Email 文档](https://reference.aspose.com/email/net)页。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

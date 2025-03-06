@@ -3,10 +3,16 @@ title: E-posta Bildirimi ve İzleme ile İletişimi Geliştirin
 linktitle: E-posta Bildirimi ve Takibi
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimlerini kullanarak e-posta bildirimi ve izleme özelliklerini uygulayın. Bildirimleri otomatikleştirin ve e-posta alıcısı etkileşimlerine ilişkin öngörüler elde edin.
-type: docs
 weight: 16
 url: /tr/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-posta Bildirimi ve İzleme ile İletişimi Geliştirin
+
 
 ## giriiş
 
@@ -27,3 +33,9 @@ Aspose.Email for .NET'i kullanarak C#'ta e-posta bildirimleri almayı öğrenin.
 İletişim izlemeyi geliştiren Aspose.Email for .NET'i kullanarak e-posta okundu bilgilerini istemek için C# kodunu nasıl kullanacağınızı öğrenin.
 ### [C# Koduyla E-posta Belgesi Dönüştürme İlerlemesini İzleme](./tracking-email-document-conversion-progress-with-csharp-code/)
 Aspose.Email for .NET'i kullanarak e-posta bildirimini ve izlemeyi nasıl uygulayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz. E-posta iletişiminizi bugün geliştirin!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Extracting Attachments from Email Messages in Aspose.Email
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to extract email attachments effortlessly using Aspose.Email for Java. Step-by-step guide for Java developers.
-type: docs
 weight: 13
 url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting Attachments from Email Messages in Aspose.Email
+
 
 ## Introduction to Aspose.Email for Java
 
@@ -83,3 +89,10 @@ Aspose.Email for Java supports various email formats, including MSG, EML, and mo
 ### Where can I get support for Aspose.Email for Java?
 
 For any technical assistance or inquiries, you can reach out to Aspose's support team through their support channels.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

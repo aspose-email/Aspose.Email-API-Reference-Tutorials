@@ -3,10 +3,16 @@ title: Managing X-Headers in Email Messages with Aspose.Email
 linktitle: Managing X-Headers in Email Messages with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Unlock the Power of X-Headers in Emails with Aspose.Email for Java. Learn to Manage Custom Metadata and Enhance Email Processing.
-type: docs
 weight: 16
 url: /java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Managing X-Headers in Email Messages with Aspose.Email
+
 
 ## Introduction
 
@@ -124,3 +130,10 @@ You can read X-Headers from received emails using Aspose.Email for Java. Load th
 ### Is Aspose.Email suitable for enterprise-level email management?
 
 Yes, Aspose.Email is a robust library that can be used for enterprise-level email management. It offers a wide range of features for creating, sending, receiving, and processing emails, making it suitable for various business scenarios.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

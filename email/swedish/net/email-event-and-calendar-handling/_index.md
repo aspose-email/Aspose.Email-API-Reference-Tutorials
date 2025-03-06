@@ -3,10 +3,16 @@ title: Effektiv hantering av e-postevenemang och kalender
 linktitle: E-posthändelse och kalenderhantering
 second_title: Aspose.Email .NET Email Processing API
 description: Effektivisera hantering av e-posthändelser och kalenderhantering med Aspose.Email för .NET-tutorials. Lär dig att automatisera e-posthändelser och sömlöst integrera kalenderfunktioner.
-type: docs
 weight: 15
 url: /sv/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Effektiv hantering av e-postevenemang och kalender
+
 
 ## Introduktion
 
@@ -32,3 +38,9 @@ Lär dig hur du hanterar mötesdeltagares status med C# och Aspose.Email för .N
 Lär dig hur du använder Aspose.Email för .NET för att skapa utkast till e-postmeddelanden om mötesförfrågan i C#. Förbättra affärskommunikation och effektivitet.
 ### [Ändra ProdID i ICS-filer med C#](./altering-prodid-in-ics-files-with-csharp/)
 Lär dig att ändra ProdID i ICS-filer med C# & Aspose.Email för .NET. Steg-för-steg guide & kod. Säkerställ dataintegritet och kompatibilitet. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

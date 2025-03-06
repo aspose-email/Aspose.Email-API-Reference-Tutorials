@@ -3,10 +3,16 @@ title: Vytváření e-mailů ve formátu HTML pomocí Aspose.Email
 linktitle: Vytváření e-mailů ve formátu HTML pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se vytvářet úžasné HTML e-maily s Aspose.Email pro Java. Podrobný průvodce s příklady kódu pro efektivní e-mailovou komunikaci.
-type: docs
 weight: 11
 url: /cs/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytváření e-mailů ve formátu HTML pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -121,3 +127,10 @@ Aspose.Email for Java nabízí funkce pro zpracování oznámení o stavu doruč
 ### Kde najdu další zdroje a dokumentaci k Aspose.Email for Java?
  Komplexní dokumentaci, výukové programy a příklady naleznete na stránce dokumentace Aspose.Email for Java API:[Aspose.Email pro dokumentaci Java API](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

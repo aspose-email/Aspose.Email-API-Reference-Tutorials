@@ -3,10 +3,16 @@ title: Différencier les pièces jointes en ligne et régulières - Approche C#
 linktitle: Différencier les pièces jointes en ligne et régulières - Approche C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment faire la différence entre les pièces jointes en ligne et les pièces jointes classiques à l'aide d'Aspose.Email pour .NET. Guide complet avec des exemples de code.
-type: docs
 weight: 17
 url: /fr/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Différencier les pièces jointes en ligne et régulières - Approche C#
+
 
 ## Introduction à la différenciation des pièces jointes en ligne et régulières - Approche C#
 
@@ -107,3 +113,9 @@ Vous pouvez accéder au contenu d'une pièce jointe en ligne en utilisant les pr
 ### Puis-je enregistrer des pièces jointes régulières dans un emplacement spécifique du disque ?
 
  Absolument! Vous pouvez enregistrer des pièces jointes régulières dans un emplacement spécifique du disque en utilisant le`Save` méthode de l’objet de pièce jointe et en fournissant le chemin de fichier souhaité.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

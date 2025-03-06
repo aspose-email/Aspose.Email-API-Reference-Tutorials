@@ -3,10 +3,16 @@ title: Extrahera inbäddade bilagor från MSG-filer med C#
 linktitle: Extrahera inbäddade bilagor från MSG-filer med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du extraherar inbäddade bilagor från MSG-filer med C# och Aspose.Email för .NET. En omfattande guide med exempel på källkod.
-type: docs
 weight: 10
 url: /sv/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahera inbäddade bilagor från MSG-filer med C#
+
 
 ## Introduktion till inbäddade bilagor
 
@@ -103,3 +109,9 @@ Absolut! Aspose.Email för .NET kan användas i både skrivbords- och webbapplik
 ### Var kan jag hitta fler exempel och dokumentation?
 
  Du kan hitta detaljerade exempel och dokumentation om hur du använder Aspose.Email för .NET i[dokumentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

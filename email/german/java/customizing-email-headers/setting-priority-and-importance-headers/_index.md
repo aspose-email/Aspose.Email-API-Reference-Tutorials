@@ -3,10 +3,16 @@ title: Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
 linktitle: Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Steigern Sie die Wirkung Ihrer E-Mails, indem Sie mit Aspose.Email für Java Prioritäts- und Wichtigkeitsheader festlegen. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie es geht.
-type: docs
 weight: 14
 url: /de/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
+
 
 ## Einführung
 
@@ -94,3 +100,9 @@ Sie können zwar Wichtigkeitsüberschriften festlegen, bedenken Sie jedoch, dass
 ### Wie gehe ich mit E-Mail-Anhängen mit Aspose.Email um?
 
  Der Umgang mit E-Mail-Anhängen ist mit Aspose.Email unkompliziert. Du kannst den ... benutzen`Attachment` Klasse zum Hinzufügen von Anhängen zu Ihren E-Mail-Nachrichten. Eine detaillierte Anleitung finden Sie in der Aspose.Email-Dokumentation.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

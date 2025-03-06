@@ -3,10 +3,16 @@ title: 使用 C# 輕鬆將電子郵件匯出到 EML
 linktitle: 使用 C# 輕鬆將電子郵件匯出到 EML
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 C# 和 Aspose.Email for .NET 輕鬆將電子郵件匯出為 EML 格式。透過原始碼範例逐步學習。
-type: docs
 weight: 11
 url: /zh-hant/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 輕鬆將電子郵件匯出到 EML
+
 
 ## 輕鬆將電子郵件匯出到 EML 簡介
 
@@ -175,3 +181,9 @@ namespace EmailExportApp
 ### 教程中提供的原始碼是否完整？
 
 是的，本教學提供了完整的原始程式碼，示範如何使用 Aspose.Email for .NET 將電子郵件匯出為 EML 格式。您可以使用此程式碼作為起點
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

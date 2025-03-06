@@ -3,10 +3,16 @@ title: Główna obsługa załączników e-mail za pomocą Aspose.Email dla .NET
 linktitle: Obsługa załączników e-mail
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Usprawnij zarządzanie pocztą e-mail za pomocą samouczków Aspose.Email dla .NET. Poznaj usprawnione przetwarzanie, analizę i spostrzeżenia oparte na danych. Dostarczony przewodnik krok po kroku.
-type: docs
 weight: 12
 url: /pl/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Główna obsługa załączników e-mail za pomocą Aspose.Email dla .NET
+
 ## Wstęp
 
 Samouczki Aspose.Email dla .NET na temat „Załączników do wiadomości e-mail i obsługi załączników” oferują programistom kompleksowy przewodnik umożliwiający skuteczne zarządzanie załącznikami do wiadomości e-mail i manipulowanie nimi w ich aplikacjach. Te samouczki dostarczają cennych informacji na temat wykorzystania mocy Aspose.Email dla .NET do płynnej obsługi załączników, usprawnienia wymiany danych i współpracy. Dzięki instrukcjom krok po kroku i ilustracyjnym fragmentom kodu programiści mogą bez obaw integrować funkcje związane z załącznikami w swoich aplikacjach, optymalizując przepływ pracy w komunikacji e-mailowej i wygodę użytkowników.
@@ -46,3 +52,10 @@ Dowiedz się, jak wyodrębnić osadzone załączniki z plików MSG przy użyciu 
 Dowiedz się, jak zachować osadzony format MSG za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym.
 ### [Zachowywanie załączników TNEF podczas odczytywania wiadomości — podejście C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Dowiedz się, jak zachować załączniki TNEF za pomocą Aspose.Email dla .NET w tym przewodniku krok po kroku z kodem źródłowym.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

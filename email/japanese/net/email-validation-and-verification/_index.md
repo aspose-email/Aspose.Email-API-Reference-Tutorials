@@ -3,10 +3,16 @@ title: 電子メールの検証と検証
 linktitle: 電子メールの検証と検証
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して、堅牢な電子メールの検証および検証メカニズムを実装します。通信の精度とセキュリティを強化します。
-type: docs
 weight: 17
 url: /ja/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールの検証と検証
+
 
 ## 導入
 
@@ -23,3 +29,9 @@ url: /ja/net/email-validation-and-verification/
 ## 電子メールの検証と検証のチュートリアル
 ### [C# コードでの電子メール検証テクニック](./email-validation-techniques-in-csharp-code/)
 Aspose.Email for .NET を使用して C# で電子メール アドレスを効果的に検証する方法を学びます。ソースコード付きのステップバイステップガイドが提供されます。データの精度とユーザー エクスペリエンスを向上させます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

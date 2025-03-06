@@ -3,10 +3,16 @@ title: Эффективное хранение и поиск файлов эле
 linktitle: Хранение и извлечение файлов электронной почты
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Оптимизируйте хранение и извлечение файлов электронной почты с помощью руководств Aspose.Email для .NET. Научитесь управлять сообщениями электронной почты и вложениями и получать к ним доступ программными средствами.
-type: docs
 weight: 18
 url: /ru/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Эффективное хранение и поиск файлов электронной почты
+
 
 ## Введение
 
@@ -27,3 +33,9 @@ url: /ru/net/email-file-storage-and-retrieval/
 Узнайте, как читать сообщения хранилища NSF с помощью C# и Aspose.Email для .NET. Пошаговое руководство с примерами кода.
 ### [Сохранение сообщений из хранилища Zimbra TGZ с помощью C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Узнайте, как извлечь электронные письма Zimbra TGZ с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом для эффективного управления электронной почтой.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

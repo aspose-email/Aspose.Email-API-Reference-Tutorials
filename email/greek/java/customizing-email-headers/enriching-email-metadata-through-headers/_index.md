@@ -3,10 +3,16 @@ title: Εμπλουτισμός μεταδεδομένων email μέσω κεφ
 linktitle: Εμπλουτισμός μεταδεδομένων email μέσω κεφαλίδων με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Βελτιώστε τα Μεταδεδομένα Email με το Aspose.Email για Java. Μάθετε πώς να εμπλουτίζετε τις κεφαλίδες email για βελτιωμένη παρακολούθηση και προσαρμογή με το Aspose.Email.
-type: docs
 weight: 18
 url: /el/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εμπλουτισμός μεταδεδομένων email μέσω κεφαλίδων με το Aspose.Email
+
 
 ## Εισαγωγή στον εμπλουτισμό των μεταδεδομένων ηλεκτρονικού ταχυδρομείου μέσω κεφαλίδων με το Aspose.Email
 
@@ -107,3 +113,9 @@ message.save("path/to/modified/email.eml");
 ### Πού μπορώ να βρω περισσότερους πόρους στο Aspose.Email για Java;
 
  Μπορείτε να εξερευνήσετε την τεκμηρίωση στο[εδώ](https://reference.aspose.com/email/java/) για ολοκληρωμένους πόρους και παραδείγματα.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

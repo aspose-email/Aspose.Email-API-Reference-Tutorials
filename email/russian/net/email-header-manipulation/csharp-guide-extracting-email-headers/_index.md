@@ -3,10 +3,16 @@ title: Руководство по C#. Извлечение заголовков
 linktitle: Руководство по C#. Извлечение заголовков электронной почты
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как извлечь заголовки электронной почты на C# с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом для эффективного анализа электронной почты.
-type: docs
 weight: 15
 url: /ru/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Руководство по C#. Извлечение заголовков электронной почты
+
 
 Вы когда-нибудь задумывались, как извлечь заголовки электронных писем с помощью C#? Заголовки электронных писем содержат ценную информацию об отправителе, получателе, теме и другие сведения. В этом руководстве мы покажем вам пошаговый процесс извлечения заголовков электронной почты с помощью мощной библиотеки Aspose.Email для .NET. Эта библиотека предоставляет полный набор функций для работы с электронной почтой в ваших .NET-приложениях.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Где я могу получить доступ к документации Aspose.Email и загрузить библиотеку?
 
  Вы можете найти документацию по адресу[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Чтобы загрузить библиотеку, посетите[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

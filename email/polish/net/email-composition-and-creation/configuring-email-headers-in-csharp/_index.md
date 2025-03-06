@@ -3,10 +3,16 @@ title: Konfigurowanie nagłówków wiadomości e-mail w języku C#
 linktitle: Konfigurowanie nagłówków wiadomości e-mail w języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak skonfigurować niestandardowe nagłówki wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET. Przewodnik krok po kroku z dołączonym kodem źródłowym. Zwiększ kontrolę i bezpieczeństwo poczty e-mail.
-type: docs
 weight: 17
 url: /pl/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konfigurowanie nagłówków wiadomości e-mail w języku C#
+
 
 Komunikacja e-mailowa stała się integralną częścią współczesnych interakcji biznesowych i osobistych. Choć treść wiadomości e-mail jest kluczowa, nagłówki towarzyszące wiadomości są równie istotne. Nagłówki wiadomości e-mail dostarczają cennych informacji o wiadomości, nadawcy, odbiorcy i nie tylko. Konfigurowanie nagłówków wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET oferuje skuteczny sposób dostosowywania i kontrolowania informacji osadzonych w wiadomościach e-mail. W tym artykule przyjrzymy się, jak krok po kroku skonfigurować nagłówki wiadomości e-mail przy użyciu biblioteki Aspose.Email dla .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email oferuje funkcje sprawdzania poprawności, które zapewniają, że n
 ### Czy w nagłówkach wiadomości e-mail rozróżniana jest wielkość liter?
 
 Tak, w nagłówkach wiadomości e-mail nie jest rozróżniana wielkość liter. Jednak dobrą praktyką jest utrzymywanie spójnej wielkości liter w celu zapewnienia lepszej kompatybilności.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#에서 로드 옵션을 사용하여 전자 메일 메시지 로드
 linktitle: C#에서 로드 옵션을 사용하여 전자 메일 메시지 로드
 second_title: Aspose.Email .NET 이메일 처리 API
 description: C#에서 .NET용 Aspose.Email을 사용하여 이메일 메시지를 로드하는 방법을 알아보세요. 효과적인 이메일 처리를 위한 단계별 가이드와 소스 코드 예제를 살펴보세요.
-type: docs
 weight: 11
 url: /ko/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#에서 로드 옵션을 사용하여 전자 메일 메시지 로드
+
 
 ## .NET용 Aspose.Email 소개
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### 이메일을 로드하는 동안 오류가 발생하면 어떻게 해야 합니까?
 
 이메일 로딩 중에 오류가 발생하면 예외를 처리하기 위해 로딩 코드를 try-catch 블록으로 래핑해야 합니다. 이는 발생하는 모든 문제를 식별하고 해결하는 데 도움이 됩니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

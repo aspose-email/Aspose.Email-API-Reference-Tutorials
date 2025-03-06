@@ -3,10 +3,16 @@ title: C# 코드를 사용하여 다양한 파일 형식 감지
 linktitle: C# 코드를 사용하여 다양한 파일 형식 감지
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 파일 형식을 쉽게 감지합니다. 단계별 가이드 및 코드 예제. 지금 탐험해보세요!
-type: docs
 weight: 13
 url: /ko/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드를 사용하여 다양한 파일 형식 감지
+
 
 개발자로서 파일 형식을 식별하는 것은 처리 및 조작에 매우 중요합니다. .NET용 Aspose.Email을 사용하면 파일 형식을 정확하게 감지할 수 있습니다. 이 가이드는 .NET용 C# 및 Aspose.Email을 사용하여 다양한 파일 형식을 감지하는 방법에 대한 소스 코드가 포함된 단계별 튜토리얼을 제공합니다.
 
@@ -119,3 +125,9 @@ namespace FileFormatDetectionDemo
 ### .NET용 Aspose.Email에 대한 자세한 문서는 어디서 찾을 수 있나요?
 
  포괄적인 문서, 코드 샘플 및 리소스를 보려면 다음을 방문하세요.[.NET API 참조용 Aspose.Email](https://reference.aspose.com/email/net) 페이지.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Xử lý tệp đính kèm email chính với Aspose.Email cho .NET
 linktitle: Xử lý tệp đính kèm email
 second_title: API xử lý email Aspose.Email .NET
 description: Tăng cường quản lý email bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tìm hiểu quy trình xử lý, phân tích hợp lý và hiểu biết dựa trên dữ liệu. Hướng dẫn từng bước được cung cấp.
-type: docs
 weight: 12
 url: /vi/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý tệp đính kèm email chính với Aspose.Email cho .NET
+
 ## Giới thiệu
 
 Hướng dẫn Aspose.Email for .NET về "Xử lý tệp đính kèm và tệp đính kèm email" cung cấp cho nhà phát triển hướng dẫn toàn diện để quản lý và thao tác hiệu quả các tệp đính kèm email trong ứng dụng của họ. Các hướng dẫn này cung cấp những hiểu biết sâu sắc có giá trị về việc khai thác sức mạnh của Aspose.Email dành cho .NET để xử lý liền mạch các tệp đính kèm, tăng cường trao đổi và cộng tác dữ liệu. Với hướng dẫn từng bước và đoạn mã minh họa, nhà phát triển có thể tự tin tích hợp các chức năng liên quan đến tệp đính kèm vào ứng dụng của mình, tối ưu hóa quy trình giao tiếp qua email và trải nghiệm người dùng.
@@ -46,3 +52,10 @@ Tìm hiểu cách trích xuất tệp đính kèm được nhúng từ tệp MSG
 Tìm hiểu cách duy trì định dạng MSG được nhúng bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn.
 ### [Bảo quản tệp đính kèm TNEF khi đọc tin nhắn - Phương pháp tiếp cận C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Tìm hiểu cách lưu giữ tệp đính kèm TNEF bằng Aspose.Email cho .NET trong hướng dẫn từng bước kèm theo mã nguồn này.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-postadan Ekleri Çıkarma - C# Çözüm Yolu
 linktitle: E-postadan Ekleri Çıkarma - C# Çözüm Yolu
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak e-posta eklerini adım adım çıkarmayı öğrenin. Çeşitli formatları kullanın ve kolaylıkla kaydedin.
-type: docs
 weight: 14
 url: /tr/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-postadan Ekleri Çıkarma - C# Çözüm Yolu
+
 
 ## E-postadan Ek Çıkarmaya Giriş - Aspose.Email for .NET kullanarak C# Çözüm Yolu
 
@@ -114,3 +120,9 @@ Aspose.Email, .NET Framework ve .NET Core'u destekler.
 ### Aspose.Email hakkında daha fazla bilgiyi nerede bulabilirim?
 
  Ayrıntılı belgeler ve örnekler için bkz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

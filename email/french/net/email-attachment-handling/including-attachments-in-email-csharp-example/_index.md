@@ -3,10 +3,16 @@ title: Inclure des pièces jointes dans un e-mail - Exemple C#
 linktitle: Inclure des pièces jointes dans un e-mail - Exemple C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment inclure des pièces jointes dans un courrier électronique à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec exemple de code C#.
-type: docs
 weight: 10
 url: /fr/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Inclure des pièces jointes dans un e-mail - Exemple C#
+
 
 ## Introduction à l'inclusion de pièces jointes dans un e-mail
 
@@ -111,3 +117,9 @@ Oui, vous pouvez configurer Aspose.Email pour envoyer des e-mails via des connex
 ### Où puis-je trouver plus d’informations sur les fonctionnalités d’Aspose.Email ?
 
  Pour des informations plus détaillées sur les fonctionnalités, classes et méthodes d'Aspose.Email, reportez-vous au[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

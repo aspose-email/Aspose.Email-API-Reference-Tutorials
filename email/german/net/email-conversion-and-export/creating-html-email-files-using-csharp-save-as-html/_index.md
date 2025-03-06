@@ -3,10 +3,16 @@ title: HTML-E-Mail-Dateien mit C# erstellen – Als HTML speichern
 linktitle: HTML-E-Mail-Dateien mit C# erstellen – Als HTML speichern
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie HTML-E-Mail-Dateien mit C# und Aspose.Email für .NET erstellen. Schritt-für-Schritt-Anleitung mit Quellcode für eine nahtlose E-Mail-Anpassung.
-type: docs
 weight: 18
 url: /de/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# HTML-E-Mail-Dateien mit C# erstellen – Als HTML speichern
+
 
 ## Einführung in die Erstellung von HTML-E-Mail-Dateien
 
@@ -113,3 +119,9 @@ Ja, Aspose.Email unterstützt .NET Core, sodass Sie plattformübergreifende Anwe
 ### Wo finde ich weitere Beispiele und Dokumentation?
 
  Sie können umfassende Beispiele und eine detaillierte Dokumentation dazu erkunden[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net) Seite.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

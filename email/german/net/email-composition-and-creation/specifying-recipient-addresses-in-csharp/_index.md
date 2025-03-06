@@ -3,10 +3,16 @@ title: Angeben von Empfängeradressen in C#
 linktitle: Angeben von Empfängeradressen in C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie Empfängeradressen in C# mit Aspose.Email für .NET angeben. E-Mails effizient erstellen, konfigurieren und versenden.
-type: docs
 weight: 19
 url: /de/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Angeben von Empfängeradressen in C#
+
 
 
 Dieser Leitfaden führt Sie durch den Prozess der Angabe von Empfängeradressen in C# mithilfe der Aspose.Email für .NET-Bibliothek. Aspose.Email ist eine leistungsstarke .NET-API, die Ihnen die Arbeit mit E-Mail-Nachrichten und verschiedenen E-Mail-bezogenen Aufgaben ermöglicht. In diesem Tutorial erfahren Sie, wie Sie mithilfe der Bibliothek Empfängeradressen zu einer E-Mail-Nachricht hinzufügen.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Weitere Informationen und erweiterte Funktionen von Aspose.Email für .NET finden Sie im[Aspose API-Referenzen](https://reference.aspose.com/email/net/).
 
 Damit ist die Anleitung zum Angeben von Empfängeradressen in C# mit Aspose.Email für .NET abgeschlossen. Sie haben gelernt, wie Sie mithilfe der Bibliotheksfunktionen eine E-Mail-Nachricht erstellen, Empfängeradressen hinzufügen und die E-Mail versenden.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

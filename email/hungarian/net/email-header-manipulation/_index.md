@@ -3,10 +3,16 @@ title: E-mail fejléc manipuláció
 linktitle: E-mail fejléc manipuláció
 second_title: Aspose.Email .NET Email Processing API
 description: Hatékonyan kezelheti az e-mail fejléceket az Aspose.Email for .NET oktatóanyagával. Tanulja meg a fejlécek kinyerését, módosítását és személyre szabását a továbbfejlesztett kommunikáció érdekében.
-type: docs
 weight: 14
 url: /hu/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail fejléc manipuláció
+
 
 ## Bevezetés
 
@@ -33,3 +39,9 @@ Ismerje meg, hogyan szabhatja testre az MHTML-rendelést a C# és Aspose.Email f
 Ismerje meg, hogyan bonthatja ki az e-mail fejléceket C# nyelven az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a hatékony e-mail elemzéshez. 
 ### [Egyéni fejlécek megadása C#-ban](./specifying-custom-headers-in-csharp/)
 Ismerje meg, hogyan adhat meg egyéni fejléceket C# nyelven az Aspose.Email for .NET használatával az e-mail kommunikáció javítása érdekében. Ez a lépésenkénti útmutató betekintést nyújt a személyre szabott e-mail fejlécek létrehozásába a jobb elköteleződés érdekében.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

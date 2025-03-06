@@ -3,10 +3,16 @@ title: Aspose.Email과 여러 SMTP 서버 통합
 linktitle: Aspose.Email과 여러 SMTP 서버 통합
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 여러 SMTP 서버를 원활하게 통합하는 방법을 알아보세요. 단계별 가이드를 통해 이메일 전송 안정성과 장애 조치 지원을 강화하세요.
-type: docs
 weight: 18
 url: /ko/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email과 여러 SMTP 서버 통합
+
 # Java용 Aspose.Email을 사용하여 여러 SMTP 서버 통합 소개
 
 이 단계별 가이드에서는 Aspose.Email for Java를 사용하여 여러 SMTP 서버를 통합하는 과정을 안내합니다. Aspose.Email for Java는 SMTP 서버를 통한 이메일 전송을 포함하여 이메일 메시지 작업을 할 수 있는 강력한 API입니다. 여러 SMTP 서버를 통합하면 부하 분산, 장애 조치 및 이메일 전송 프로세스에 중복성이 필요한 기타 시나리오에 유용할 수 있습니다.
@@ -96,3 +102,9 @@ Aspose.Email for Java는 안전한 이메일 통신을 위해 SSL/TLS를 지원�
 ### SMTP 서버 통합을 어떻게 테스트할 수 있나요?
 
 테스트 이메일을 보내고 성공적인 전달을 확인하여 SMTP 서버 통합을 테스트할 수 있습니다. 프로세스 중에 오류나 예외가 있는지 애플리케이션 로그를 모니터링하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

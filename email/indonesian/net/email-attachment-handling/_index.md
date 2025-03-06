@@ -3,10 +3,16 @@ title: Penanganan Lampiran Email Utama dengan Aspose.Email untuk .NET
 linktitle: Penanganan Lampiran Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Tingkatkan manajemen email menggunakan tutorial Aspose.Email untuk .NET. Pelajari pemrosesan yang disederhanakan, analisis, dan wawasan berdasarkan data. Panduan langkah demi langkah disediakan.
-type: docs
 weight: 12
 url: /id/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penanganan Lampiran Email Utama dengan Aspose.Email untuk .NET
+
 ## Perkenalan
 
 Tutorial Aspose.Email untuk .NET tentang "Lampiran Email dan Penanganan Lampiran" menawarkan kepada pengembang panduan komprehensif untuk mengelola dan memanipulasi lampiran email secara efektif dalam aplikasi mereka. Tutorial ini memberikan wawasan berharga dalam memanfaatkan kekuatan Aspose.Email untuk .NET untuk menangani lampiran dengan lancar, meningkatkan pertukaran data dan kolaborasi. Dengan petunjuk langkah demi langkah dan cuplikan kode ilustratif, pengembang dapat dengan percaya diri mengintegrasikan fungsi terkait lampiran ke dalam aplikasi mereka, mengoptimalkan alur kerja komunikasi email dan pengalaman pengguna.
@@ -46,3 +52,10 @@ Pelajari cara mengekstrak lampiran tersemat dari file MSG menggunakan C# dan Asp
 Pelajari cara mempertahankan format MSG tersemat menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber.
 ### [Mempertahankan Lampiran TNEF saat Membaca Pesan - Pendekatan C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Pelajari cara menyimpan lampiran TNEF menggunakan Aspose.Email untuk .NET dalam panduan langkah demi langkah dengan kode sumber ini.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

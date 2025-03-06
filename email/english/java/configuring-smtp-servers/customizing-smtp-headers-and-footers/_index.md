@@ -3,10 +3,16 @@ title: Customizing SMTP Headers and Footers with Aspose.Email
 linktitle: Customizing SMTP Headers and Footers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to customize SMTP headers and footers with Aspose.Email for Java. Enhance your email communication with personalized branding and messages.
-type: docs
 weight: 16
 url: /java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Customizing SMTP Headers and Footers with Aspose.Email
+
 
 ## Introduction
 
@@ -107,3 +113,10 @@ Yes, you can use HTML formatting in the email content, including headers and foo
 ### What SMTP settings should I use to send customized emails?
 
 You should use the SMTP settings provided by your email service provider or your organization's IT department. These settings typically include the SMTP server address, port number, and authentication credentials.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

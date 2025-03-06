@@ -3,10 +3,16 @@ title: التحقق من صحة البريد الإلكتروني والتحقق
 linktitle: التحقق من صحة البريد الإلكتروني والتحقق منه
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتنفيذ آليات قوية للتحقق من صحة البريد الإلكتروني والتحقق منه باستخدام Aspose.Email لبرامج .NET التعليمية. تعزيز دقة الاتصال والأمن.
-type: docs
 weight: 17
 url: /ar/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التحقق من صحة البريد الإلكتروني والتحقق منه
+
 
 ## مقدمة
 
@@ -23,3 +29,9 @@ url: /ar/net/email-validation-and-verification/
 ## البرامج التعليمية للتحقق من صحة البريد الإلكتروني والتحقق منه
 ### [تقنيات التحقق من صحة البريد الإلكتروني في كود C#](./email-validation-techniques-in-csharp-code/)
 تعرف على كيفية التحقق من صحة عناوين البريد الإلكتروني بشكل فعال في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر المقدم. تعزيز دقة البيانات وتجربة المستخدم.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

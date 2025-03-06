@@ -3,10 +3,16 @@ title: Hatékony e-mail esemény- és naptárkezelés
 linktitle: E-mail esemény- és naptárkezelés
 second_title: Aspose.Email .NET Email Processing API
 description: Egyszerűsítse az e-mail eseménykezelést és a naptárkezelést az Aspose.Email for .NET oktatóanyaggal. Tanulja meg az e-mail események automatizálását és a naptárfunkciók zökkenőmentes integrálását.
-type: docs
 weight: 15
 url: /hu/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hatékony e-mail esemény- és naptárkezelés
+
 
 ## Bevezetés
 
@@ -32,3 +38,9 @@ Ismerje meg, hogyan kezelheti a találkozó résztvevőinek állapotát a C# és
 Ismerje meg, hogyan használhatja az Aspose.Email for .NET-et találkozókérés-tervezetek létrehozásához C# nyelven. Növelje az üzleti kommunikációt és a hatékonyságot.
 ### [ProdID módosítása ICS-fájlokban C#-val](./altering-prodid-in-ics-files-with-csharp/)
 Ismerje meg a ProdID módosítását az ICS-fájlokban a C# és az Aspose.Email for .NET használatával. Lépésről lépésre útmutató és kód. Biztosítsa az adatok integritását és kompatibilitását. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

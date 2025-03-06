@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 接收電子郵件
 linktitle: 使用 Aspose.Email for Java 接收電子郵件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 教學輕鬆接收電子郵件。開始像專業人士一樣管理您的收件匣！
-type: docs
 weight: 11
 url: /zh-hant/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 接收電子郵件
+
 
 ## 輕鬆接收電子郵件
 
@@ -29,3 +35,9 @@ Aspose.Email for Java 提供了處理電子郵件的進階功能，包括支援�
 了解如何在 Aspose.Email for Java 中使用 IMAP 協定來有效管理您的電子郵件通訊。
 ### [在 Aspose.Email 中處理電子郵件附件](./handling-email-attachments/)
 了解在 Aspose.Email for Java 中處理電子郵件附件。包含原始碼和常見問題解答的逐步指南，可實現高效的電子郵件附件管理。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

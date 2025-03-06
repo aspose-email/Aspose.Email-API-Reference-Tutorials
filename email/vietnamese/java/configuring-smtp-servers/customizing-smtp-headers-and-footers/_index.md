@@ -3,10 +3,16 @@ title: Tùy chỉnh đầu trang và chân trang SMTP bằng Aspose.Email
 linktitle: Tùy chỉnh đầu trang và chân trang SMTP bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách tùy chỉnh đầu trang và chân trang SMTP bằng Aspose.Email cho Java. Tăng cường giao tiếp qua email của bạn với thương hiệu và tin nhắn được cá nhân hóa.
-type: docs
 weight: 16
 url: /vi/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tùy chỉnh đầu trang và chân trang SMTP bằng Aspose.Email
+
 
 ## Giới thiệu
 
@@ -107,3 +113,9 @@ Có, bạn có thể sử dụng định dạng HTML trong nội dung email, bao
 ### Tôi nên sử dụng cài đặt SMTP nào để gửi email tùy chỉnh?
 
 Bạn nên sử dụng cài đặt SMTP do nhà cung cấp dịch vụ email hoặc bộ phận CNTT của tổ chức của bạn cung cấp. Các cài đặt này thường bao gồm địa chỉ máy chủ SMTP, số cổng và thông tin xác thực.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email ile DKIM İmzalarının Uygulanması
 linktitle: Aspose.Email ile DKIM İmzalarının Uygulanması
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java'yı kullanarak DKIM imzalarıyla e-posta güvenliğini sağlayın. DKIM uygulaması için adım adım kılavuz ve kod.
-type: docs
 weight: 15
 url: /tr/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile DKIM İmzalarının Uygulanması
+
 
 ## Aspose.Email ile DKIM İmzalarının Uygulanması
 
@@ -112,3 +118,9 @@ Evet, Aspose.Email for Java çeşitli e-posta sunucularıyla uyumludur ve SMTP, 
 ### Aspose.Email for Java'da daha fazla kaynağı nerede bulabilirim?
 
 Daha fazla bilgi ve kaynak için Aspose.Email for Java belgelerini ziyaret edin:[Burada](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

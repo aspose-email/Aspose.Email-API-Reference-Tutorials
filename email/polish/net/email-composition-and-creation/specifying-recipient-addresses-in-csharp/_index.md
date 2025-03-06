@@ -3,10 +3,16 @@ title: Określanie adresów odbiorców w C#
 linktitle: Określanie adresów odbiorców w C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak określić adresy odbiorców w języku C# przy użyciu Aspose.Email dla .NET. Efektywnie twórz, konfiguruj i wysyłaj wiadomości e-mail.
-type: docs
 weight: 19
 url: /pl/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Określanie adresów odbiorców w C#
+
 
 
 Ten przewodnik przeprowadzi Cię przez proces określania adresów odbiorców w języku C# przy użyciu biblioteki Aspose.Email dla .NET. Aspose.Email to potężny interfejs API .NET, który umożliwia pracę z wiadomościami e-mail i różnymi zadaniami związanymi z pocztą e-mail. W tym samouczku omówimy, jak dodać adresy odbiorców do wiadomości e-mail za pomocą biblioteki.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Aby uzyskać więcej informacji i zaawansowanych funkcji Aspose.Email dla .NET, zobacz[Aspose Referencje API](https://reference.aspose.com/email/net/).
 
 Na tym kończy się przewodnik dotyczący określania adresów odbiorców w języku C# przy użyciu Aspose.Email dla .NET. Wiesz już, jak utworzyć wiadomość e-mail, dodać adresy odbiorców i wysłać wiadomość e-mail, korzystając z funkcji biblioteki.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

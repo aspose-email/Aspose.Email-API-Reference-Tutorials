@@ -3,10 +3,16 @@ title: C# Guide - Extracting Email Headers
 linktitle: C# Guide - Extracting Email Headers
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to extract email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code for efficient email analysis. 
-type: docs
 weight: 15
 url: /net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Extracting Email Headers
+
 
 Have you ever wondered how to extract email headers using C#? Email headers contain valuable information about the sender, receiver, subject, and various other details. In this guide, we will walk you through the step-by-step process of extracting email headers using the powerful Aspose.Email for .NET library. This library provides a comprehensive set of features for working with emails in your .NET applications.
 
@@ -163,3 +169,10 @@ if (subject.Contains("urgent"))
 ### Where can I access the Aspose.Email documentation and download the library?
 
 You can find the documentation at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). To download the library, visit [https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: TNEF 첨부 파일 보호 - C# 방법
 linktitle: TNEF 첨부 파일 보호 - C# 방법
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 TNEF 첨부 파일을 보호하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 19
 url: /ko/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF 첨부 파일 보호 - C# 방법
+
 
 ## TNEF 첨부 파일 보호 소개
 
@@ -95,3 +101,9 @@ Aspose는 라이브러리에 대한 업데이트와 개선 사항을 자주 출�
 ### 상업용 프로젝트에서 Aspose.Email을 사용할 수 있나요?
 
 예, 상업용 프로젝트에서 Aspose.Email을 사용할 수 있습니다. 그러나 준수 여부를 확인하려면 Aspose의 라이선스 조건을 검토하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

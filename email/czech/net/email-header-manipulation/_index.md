@@ -3,10 +3,16 @@ title: Manipulace s hlavičkou e-mailu
 linktitle: Manipulace s hlavičkou e-mailu
 second_title: Aspose.Email .NET Email Processing API
 description: Efektivně manipulujte se záhlavími e-mailů pomocí výukových programů Aspose.Email for .NET. Naučte se extrahovat, upravovat a přizpůsobovat záhlaví pro lepší komunikaci.
-type: docs
 weight: 14
 url: /cs/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulace s hlavičkou e-mailu
+
 
 ## Úvod
 
@@ -33,3 +39,9 @@ Naučte se, jak přizpůsobit MHTML objednávku pomocí C# & Aspose.Email pro .N
 Naučte se extrahovat hlavičky e-mailů v C# pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem pro efektivní analýzu e-mailů. 
 ### [Určení vlastních záhlaví v C#](./specifying-custom-headers-in-csharp/)
 Zjistěte, jak specifikovat vlastní záhlaví v C# pomocí Aspose.Email for .NET ke zlepšení e-mailové komunikace. Tento podrobný průvodce poskytuje informace o vytváření personalizovaných záhlaví e-mailů pro lepší zapojení.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

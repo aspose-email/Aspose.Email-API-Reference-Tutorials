@@ -3,10 +3,16 @@ title: Convertendo Email em MHT com Fuso Horário em C#
 linktitle: Convertendo Email em MHT com Fuso Horário em C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Converta e-mails para o formato MHT com fusos horários precisos usando Aspose.Email for .NET. Guia passo a passo e exemplo de código fornecidos.
-type: docs
 weight: 12
 url: /pt/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Convertendo Email em MHT com Fuso Horário em C#
+
 
 ## Introdução à conversão de e-mail de e-mail para MHT com fuso horário
 
@@ -105,3 +111,9 @@ Sim, Aspose.Email for .NET suporta vários formatos, incluindo MSG, EML, PST e m
 ### Como posso baixar a versão mais recente do Aspose.Email for .NET?
 
  Você pode baixar a versão mais recente na página de lançamentos:[Baixe Aspose.Email para .NET](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

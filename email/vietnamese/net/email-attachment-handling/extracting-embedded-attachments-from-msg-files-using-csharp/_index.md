@@ -3,10 +3,16 @@ title: Trích xuất tệp đính kèm nhúng từ tệp MSG bằng C#
 linktitle: Trích xuất tệp đính kèm nhúng từ tệp MSG bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách trích xuất tệp đính kèm được nhúng từ tệp MSG bằng C# và Aspose.Email cho .NET. Hướng dẫn toàn diện với các ví dụ về mã nguồn.
-type: docs
 weight: 10
 url: /vi/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất tệp đính kèm nhúng từ tệp MSG bằng C#
+
 
 ## Giới thiệu về tệp đính kèm nhúng
 
@@ -103,3 +109,9 @@ Tuyệt đối! Aspose.Email for .NET có thể được sử dụng trong cả 
 ### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
 
  Bạn có thể tìm thấy các ví dụ và tài liệu chi tiết về cách sử dụng Aspose.Email cho .NET trong[tài liệu](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

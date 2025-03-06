@@ -3,10 +3,16 @@ title: معالجة أخطاء SMTP واستكشاف الأخطاء وإصلاح
 linktitle: معالجة أخطاء SMTP واستكشاف الأخطاء وإصلاحها باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تحسين التواصل عبر البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعلم كيفية التعامل مع أخطاء SMTP واستكشاف الأخطاء وإصلاحها بشكل فعال.
-type: docs
 weight: 14
 url: /ar/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# معالجة أخطاء SMTP واستكشاف الأخطاء وإصلاحها باستخدام Aspose.Email
+
 
 ## مقدمة لأخطاء SMTP
 
@@ -107,3 +113,9 @@ try {
 ### هل Aspose.Email for Java مناسب للتعامل مع كميات كبيرة من رسائل البريد الإلكتروني؟
 
 نعم، تم تصميم Aspose.Email for Java للتعامل مع أحجام البريد الإلكتروني الصغيرة والكبيرة بكفاءة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

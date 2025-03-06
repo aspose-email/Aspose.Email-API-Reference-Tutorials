@@ -3,10 +3,16 @@ title: تشكيل تنسيق TNEF من MSG باستخدام C#
 linktitle: تشكيل تنسيق TNEF من MSG باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تحويل ملفات MSG إلى تنسيق TNEF باستخدام Aspose.Email لـ .NET. قم بإنشاء محتوى بريد إلكتروني غني بسلاسة.
-type: docs
 weight: 13
 url: /ar/net/email-composition-and-creation/forming-tnef-format-from-msg-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تشكيل تنسيق TNEF من MSG باستخدام C#
+
 
 ##  مقدمة إلى تنسيق TNEF وملفات MSG
 
@@ -102,3 +108,9 @@ catch (Exception ex)
 ### أين يمكنني معرفة المزيد حول Aspose.Email لـ .NET؟
 
  يمكنك العثور على وثائق وموارد تفصيلية لـ Aspose.Email for .NET على[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). ستساعدك هذه الوثائق في استكشاف ميزات المكتبة وإمكانياتها.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

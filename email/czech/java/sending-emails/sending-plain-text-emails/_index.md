@@ -3,10 +3,16 @@ title: Odesílání e-mailů ve formátu prostého textu pomocí Aspose.Email
 linktitle: Odesílání e-mailů ve formátu prostého textu pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se efektivně odesílat e-maily ve formátu prostého textu s Aspose.Email pro Java. Komplexní průvodce s příklady kódu a často kladenými dotazy pro bezproblémovou komunikaci.
-type: docs
 weight: 10
 url: /cs/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odesílání e-mailů ve formátu prostého textu pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Existují nějaká omezení při odesílání e-mailů ve formátu prostého textu pomocí Aspose.Email for Java?
    - Omezení mohou záviset na vašem poskytovateli e-mailových služeb a serveru SMTP. Ujistěte se, že dodržujete všechny limity odesílání a zásady odesílání e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

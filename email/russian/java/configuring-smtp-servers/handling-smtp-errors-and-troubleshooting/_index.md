@@ -3,10 +3,16 @@ title: Обработка ошибок SMTP и устранение непола
 linktitle: Обработка ошибок SMTP и устранение неполадок с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Оптимизируйте общение по электронной почте с помощью Aspose.Email для Java. Научитесь обрабатывать ошибки SMTP и эффективно устранять неполадки.
-type: docs
 weight: 14
 url: /ru/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Обработка ошибок SMTP и устранение неполадок с помощью Aspose.Email
+
 
 ## Введение в ошибки SMTP
 
@@ -107,3 +113,9 @@ try {
 ### Подходит ли Aspose.Email для Java для обработки больших объемов электронной почты?
 
 Да, Aspose.Email для Java предназначен для эффективной обработки как небольших, так и больших объемов электронной почты.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Efektivní zpracování e-mailových událostí a kalendářů
 linktitle: Vyřizování e-mailových událostí a kalendářů
 second_title: Aspose.Email .NET Email Processing API
 description: Zjednodušte práci s e-mailovými událostmi a správu kalendáře pomocí výukových programů Aspose.Email pro .NET. Naučte se automatizovat e-mailové události a hladce integrovat funkce kalendáře.
-type: docs
 weight: 15
 url: /cs/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efektivní zpracování e-mailových událostí a kalendářů
+
 
 ## Úvod
 
@@ -32,3 +38,9 @@ Naučte se spravovat stav účastníků schůzky pomocí C# a Aspose.Email pro .
 Naučte se používat Aspose.Email pro .NET k vytváření konceptů e-mailů s žádostí o schůzku v C#. Zlepšete obchodní komunikaci a efektivitu.
 ### [Změna ProdID v souborech ICS pomocí C#](./altering-prodid-in-ics-files-with-csharp/)
 Naučte se měnit ProdID v souborech ICS pomocí C# & Aspose.Email pro .NET. Návod a kód krok za krokem. Zajistěte integritu a kompatibilitu dat. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

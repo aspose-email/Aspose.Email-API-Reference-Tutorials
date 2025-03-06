@@ -3,10 +3,16 @@ title: सी# तकनीक - HTML बॉडी को सादे टेक
 linktitle: सी# तकनीक - HTML बॉडी को सादे टेक्स्ट में परिवर्तित करना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके आसानी से HTML ईमेल सामग्री को सादे पाठ में परिवर्तित करना सीखें। विस्तृत गाइड और कोड. अभी अन्वेषण करें!
-type: docs
 weight: 19
 url: /hi/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# तकनीक - HTML बॉडी को सादे टेक्स्ट में परिवर्तित करना
+
 
 आज के डिजिटल युग में, ईमेल संचार हमारे व्यक्तिगत और व्यावसायिक जीवन में महत्वपूर्ण भूमिका निभाता है। अक्सर, बेहतर प्रस्तुति के लिए ईमेल में HTML-स्वरूपित सामग्री होती है। हालाँकि, ऐसी स्थितियाँ हैं जहाँ आपको ईमेल के HTML मुख्य भाग से सादा पाठ निकालने की आवश्यकता हो सकती है। यह आलेख .NET के लिए C#, Aspose.Email और Aspose.Words का उपयोग करके इस कार्य को कुशलतापूर्वक प्राप्त करने की प्रक्रिया में आपका मार्गदर्शन करेगा।
 
@@ -75,3 +81,9 @@ A4: हां, Aspose.Email ईमेल स्वचालन के लिए 
  A5: आप Aspose वेबसाइट पर एपीआई दस्तावेज़ और संसाधनों का पता लगा सकते हैं[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) और[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 अब जब आपने HTML ईमेल सामग्री को सादे पाठ में परिवर्तित करने की कला में महारत हासिल कर ली है, तो आप C# में अपनी ईमेल प्रसंस्करण क्षमताओं को बढ़ा सकते हैं। हैप्पी कोडिंग!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: العمل مع بروتوكول IMAP في Aspose.Email
 linktitle: العمل مع بروتوكول IMAP في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية العمل مع بروتوكول IMAP في Aspose.Email لـ Java لإدارة اتصالات البريد الإلكتروني بكفاءة.
-type: docs
 weight: 12
 url: /ar/java/receiving-emails/working-with-imap-protocol/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# العمل مع بروتوكول IMAP في Aspose.Email
+
 
 في هذا الدليل الشامل، سنرشدك خلال عملية العمل مع IMAP (بروتوكول الوصول إلى الرسائل عبر الإنترنت) في Aspose.Email لـ Java. IMAP هو بروتوكول يستخدم على نطاق واسع للوصول إلى رسائل البريد الإلكتروني وإدارتها على خادم البريد. باستخدام Aspose.Email for Java، يمكنك بسهولة دمج وظيفة IMAP في تطبيقات Java الخاصة بك. هيا بنا نبدأ!
 
@@ -182,3 +188,9 @@ try {
     تفضل بزيارة وثائق Aspose.Email for Java API على[https://reference.aspose.com/email/Java/](https://reference.aspose.com/email/java/) للحصول على أدلة شاملة ومراجع واجهة برمجة التطبيقات ونماذج التعليمات البرمجية.
 
 الآن بعد أن أصبح لديك فهم قوي للعمل مع بروتوكول IMAP في Aspose.Email لـ Java، يمكنك إنشاء حلول قوية لإدارة البريد الإلكتروني مصممة خصيصًا لتلبية احتياجاتك الخاصة. ترميز سعيد!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

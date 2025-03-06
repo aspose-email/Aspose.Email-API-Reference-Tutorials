@@ -3,10 +3,16 @@ title: E-Mail-Header in Aspose.Email
 linktitle: E-Mail-Header in Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Nutzen Sie die Leistungsfähigkeit von E-Mail-Headern mit Aspose.Email für Java. Erfahren Sie, wie Sie E-Mail-Header mühelos festlegen und abrufen.
-type: docs
 weight: 10
 url: /de/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-Mail-Header in Aspose.Email
+
 
 ## Einführung in E-Mail-Header
 
@@ -92,3 +98,9 @@ Der „Received“-Header besteht aus einer Reihe von Einträgen, die den Weg de
 ### Wie kann ich E-Mail-Header aus einem großen E-Mail-Stapel extrahieren?
 
 Sie können die Stapelverarbeitungsfunktionen von Aspose.Email nutzen, um Header aus mehreren E-Mails effizient zu extrahieren.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

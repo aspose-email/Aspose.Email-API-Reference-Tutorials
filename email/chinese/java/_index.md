@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email for Java 教程 - 掌握电子邮件操作
 linktitle: Aspose.Email Java 教程
-type: docs
 weight: 10
 url: /zh/java/
 description: 通过全面的教程释放 Aspose.Email for Java 的强大功能。学习电子邮件操作、管理等。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java 教程 - 掌握电子邮件操作
+
 
 Aspose.Email for Java 是一个功能强大的 API，使开发人员能够轻松操作和管理电子邮件。无论您是希望自动化电子邮件相关任务、增强电子邮件安全性，还是将电子邮件功能集成到您的 Java 应用程序中，Aspose.Email 都能提供您所需的工具和资源。在本文中，我们将探索 Aspose.Email for Java 教程的世界以及它们如何帮助您掌握电子邮件操作。
 
@@ -38,3 +43,9 @@ Aspose.Email for Java 是一个功能丰富的库，可以简化 Java 应用程�
 了解如何使用 Aspose.Email for Java 轻松自定义电子邮件标头。深入学习教程并利用电子邮件标头自定义的强大功能。
 ### [使用 Aspose.Email for Java 探索电子邮件安全](./exploring-email-security/)
 了解如何使用 Aspose.Email for Java 增强电子邮件安全性。探索分步教程和最佳实践。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

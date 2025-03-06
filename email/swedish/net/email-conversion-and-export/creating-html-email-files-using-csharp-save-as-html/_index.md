@@ -3,10 +3,16 @@ title: Skapa HTML-e-postfiler med C# - Spara som HTML
 linktitle: Skapa HTML-e-postfiler med C# - Spara som HTML
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du skapar HTML-e-postfiler med C# och Aspose.Email för .NET. Steg-för-steg-guide med källkod för sömlös e-postanpassning.
-type: docs
 weight: 18
 url: /sv/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa HTML-e-postfiler med C# - Spara som HTML
+
 
 ## Introduktion till att skapa HTML-e-postfiler
 
@@ -113,3 +119,9 @@ Ja, Aspose.Email stöder .NET Core, vilket gör att du kan bygga plattformsobero
 ### Var kan jag hitta fler exempel och dokumentation?
 
  Du kan utforska omfattande exempel och detaljerad dokumentation om[Aspose.Email dokumentation](https://reference.aspose.com/email/net) sida.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

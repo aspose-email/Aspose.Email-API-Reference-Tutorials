@@ -3,10 +3,16 @@ title: Adjuntar archivos a correos electrónicos usando Aspose.Email
 linktitle: Adjuntar archivos a correos electrónicos usando Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a adjuntar archivos a mensajes de correo electrónico utilizando Aspose.Email para Java. Mejore sus correos electrónicos con facilidad utilizando esta guía paso a paso.
-type: docs
 weight: 12
 url: /es/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adjuntar archivos a correos electrónicos usando Aspose.Email
+
 ## Introducción
 
 En el mundo de la comunicación por correo electrónico, la capacidad de enviar archivos adjuntos es crucial. Ya sea que envíe documentos importantes, imágenes o cualquier otro tipo de archivo, el proceso debe ser sencillo y confiable. Aspose.Email para Java simplifica este proceso al proporcionar potentes herramientas para adjuntar archivos a mensajes de correo electrónico.
@@ -134,3 +140,9 @@ Si tiene más preguntas o necesita ayuda, no dude en comunicarse.
 
 ### ¿Existen limitaciones de tamaño para los archivos adjuntos de correo electrónico?
    Los servidores y clientes de correo electrónico pueden tener limitaciones en el tamaño de los archivos adjuntos. Asegúrese de que sus archivos adjuntos estén dentro de los límites de tamaño aceptables para evitar problemas al enviar o recibir correos electrónicos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

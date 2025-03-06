@@ -3,10 +3,16 @@ title: Header Email di Aspose.Email
 linktitle: Header Email di Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Buka Kekuatan Header Email dengan Aspose.Email untuk Java. Pelajari cara mengatur dan mengambil header email dengan mudah.
-type: docs
 weight: 10
 url: /id/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Header Email di Aspose.Email
+
 
 ## Pengantar Header Email
 
@@ -92,3 +98,9 @@ Header "Diterima" adalah serangkaian entri yang melacak jalur email dari pengiri
 ### Bagaimana cara mengekstrak header email dari sejumlah besar email?
 
 Anda dapat menggunakan kemampuan pemrosesan batch Aspose.Email untuk mengekstrak header dari beberapa email secara efisien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

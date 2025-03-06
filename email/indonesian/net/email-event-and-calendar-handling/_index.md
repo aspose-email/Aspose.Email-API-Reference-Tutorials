@@ -3,10 +3,16 @@ title: Penanganan Acara dan Kalender Email yang Efisien
 linktitle: Penanganan Acara Email dan Kalender
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Sederhanakan penanganan acara email dan manajemen kalender dengan tutorial Aspose.Email untuk .NET. Pelajari cara mengotomatiskan acara email dan mengintegrasikan fungsi kalender dengan lancar.
-type: docs
 weight: 15
 url: /id/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penanganan Acara dan Kalender Email yang Efisien
+
 
 ## Perkenalan
 
@@ -32,3 +38,9 @@ Pelajari cara mengelola status peserta janji temu menggunakan C# dan Aspose.Emai
 Pelajari cara menggunakan Aspose.Email untuk .NET untuk membuat draf email permintaan janji temu di C#. Meningkatkan komunikasi dan efisiensi bisnis.
 ### [Mengubah ProdID di File ICS dengan C#](./altering-prodid-in-ics-files-with-csharp/)
 Pelajari cara mengubah ProdID di file ICS menggunakan C# & Aspose.Email untuk .NET. Panduan & kode langkah demi langkah. Pastikan integritas & kompatibilitas data. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

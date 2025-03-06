@@ -3,10 +3,16 @@ title: Extracción de objetos incrustados - Tutorial de C#
 linktitle: Extracción de objetos incrustados - Tutorial de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a extraer objetos incrustados de mensajes de correo electrónico utilizando Aspose.Email para .NET. Guía paso a paso con ejemplos de código.
-type: docs
 weight: 15
 url: /es/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracción de objetos incrustados - Tutorial de C#
+
 
 ## Introducción a la extracción de objetos incrustados - Tutorial de C#
 
@@ -105,3 +111,9 @@ Sí, Aspose.Email admite trabajar con archivos PST, lo que le permite cargar, ma
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Email?
 
  Puede encontrar documentación detallada y ejemplos de código para Aspose.Email en[Aspose.Email para referencia de API .NET](https://reference.aspose.com/email/net/) página.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

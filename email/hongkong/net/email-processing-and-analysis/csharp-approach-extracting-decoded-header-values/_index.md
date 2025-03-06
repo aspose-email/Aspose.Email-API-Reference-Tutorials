@@ -3,10 +3,16 @@ title: C# 方法 - 提取解碼的標頭值
 linktitle: C# 方法 - 提取解碼的標頭值
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解使用 Aspose.Email for .NET 在 C# 中提取解碼的電子郵件標頭值。帶有程式碼範例的綜合指南。
-type: docs
 weight: 17
 url: /zh-hant/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 方法 - 提取解碼的標頭值
+
 
 在本教學中，我們將引導您完成使用 Aspose.Email for .NET 從電子郵件中提取解碼的標頭值的過程。 Aspose.Email for .NET 是一個強大的程式庫，使開發人員能夠處理電子郵件的各個方面，包括閱讀和操作電子郵件標頭。
 
@@ -77,3 +83,9 @@ class Program
 ## 結論
 
 在本教學中，您學習如何利用 Aspose.Email for .NET 從電子郵件中提取已解碼的標頭值。 Aspose.Email for .NET 提供了一套全面的工具，使開發人員能夠有效地處理電子郵件，包括處理標頭。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

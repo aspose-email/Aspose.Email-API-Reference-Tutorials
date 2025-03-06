@@ -3,10 +3,16 @@ title: Especificando cabeçalhos personalizados em C#
 linktitle: Especificando cabeçalhos personalizados em C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como especificar cabeçalhos personalizados em C# usando Aspose.Email for .NET para aprimorar a comunicação por email. Este guia passo a passo fornece insights sobre como criar cabeçalhos de e-mail personalizados para melhorar o envolvimento.
-type: docs
 weight: 16
 url: /pt/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Especificando cabeçalhos personalizados em C#
+
 
 
 ## Introdução
@@ -97,3 +103,9 @@ Com certeza, Aspose.Email for .NET atende a uma ampla gama de necessidades de ma
 No mundo dinâmico da comunicação por e-mail, os cabeçalhos personalizados podem mudar o jogo, permitindo interações personalizadas e eficazes. Com Aspose.Email for .NET, o processo de especificação de cabeçalhos personalizados em C# torna-se simplificado e eficiente. Seguindo as etapas descritas neste guia, você pode aproveitar o poder dos cabeçalhos personalizados para aprimorar a categorização, a personalização e o envolvimento em seus esforços de comunicação por e-mail.
 
 Se você estiver pronto para levar sua comunicação por e-mail para o próximo nível, mergulhe no mundo dos cabeçalhos personalizados usando Aspose.Email for .NET. Ao dominar essa técnica, você pode entregar e-mails que atraiam os destinatários e forneçam uma experiência integrada e envolvente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

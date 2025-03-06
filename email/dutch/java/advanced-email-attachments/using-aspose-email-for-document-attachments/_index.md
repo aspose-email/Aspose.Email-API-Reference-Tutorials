@@ -3,10 +3,16 @@ title: Aspose.Email gebruiken voor documentbijlagen
 linktitle: Aspose.Email gebruiken voor documentbijlagen
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u documentbijlagen in Java-e-mails beheert met Aspose.Email voor Java. Maak, verzend en extraheer eenvoudig documentbijlagen.
-type: docs
 weight: 16
 url: /nl/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email gebruiken voor documentbijlagen
+
 
 ## Inleiding tot het gebruik van Aspose.Email voor documentbijlagen in Java
 
@@ -104,3 +110,9 @@ Ja, Aspose.Email voor Java ondersteunt een breed scala aan bijlagetypen, waarond
 ### Hoe ga ik om met grote documentbijlagen?
 
 Als u grote documentbijlagen moet verwerken, overweeg dan om streamingtechnieken te gebruiken om te voorkomen dat de hele bijlage in het geheugen wordt geladen. Aspose.Email biedt opties voor het streamen van bijlagen, zodat u deze efficiënt kunt verwerken.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

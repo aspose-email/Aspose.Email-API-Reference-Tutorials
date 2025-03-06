@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 HTML 형식의 이메일 만들기
 linktitle: Aspose.Email을 사용하여 HTML 형식의 이메일 만들기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 멋진 HTML 이메일을 만드는 방법을 알아보세요. 효과적인 이메일 커뮤니케이션을 위한 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 11
 url: /ko/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 HTML 형식의 이메일 만들기
+
 
 ## 소개
 
@@ -121,3 +127,10 @@ Aspose.Email for Java는 이메일 배달 상태 알림(DSN)을 처리하고 이
 ### Java용 Aspose.Email에 대한 추가 리소스와 문서는 어디서 찾을 수 있나요?
  Java API 문서 페이지에 대한 Aspose.Email에서 포괄적인 문서, 튜토리얼 및 예제를 찾을 수 있습니다.[Java API 문서용 Aspose.Email](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

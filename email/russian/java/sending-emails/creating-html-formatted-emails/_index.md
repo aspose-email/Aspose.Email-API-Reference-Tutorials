@@ -3,10 +3,16 @@ title: Создание электронных писем в формате HTML
 linktitle: Создание электронных писем в формате HTML с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Научитесь создавать потрясающие электронные письма в формате HTML с помощью Aspose.Email для Java. Пошаговое руководство с примерами кода для эффективного общения по электронной почте.
-type: docs
 weight: 11
 url: /ru/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создание электронных писем в формате HTML с помощью Aspose.Email
+
 
 ## Введение
 
@@ -121,3 +127,10 @@ Aspose.Email для Java предлагает функции для обрабо
 ### Где я могу найти дополнительные ресурсы и документацию по Aspose.Email для Java?
  Вы можете найти подробную документацию, учебные пособия и примеры на странице документации Aspose.Email для Java API:[Документация Aspose.Email для Java API](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

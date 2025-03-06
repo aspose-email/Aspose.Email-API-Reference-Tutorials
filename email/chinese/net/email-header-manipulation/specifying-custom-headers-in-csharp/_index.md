@@ -3,10 +3,16 @@ title: 在 C# 中指定自定义标头
 linktitle: 在 C# 中指定自定义标头
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中指定自定义标头以增强电子邮件通信。本分步指南提供了有关创建个性化电子邮件标题以提高参与度的见解。
-type: docs
 weight: 16
 url: /zh/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 C# 中指定自定义标头
+
 
 
 ## 介绍
@@ -97,3 +103,9 @@ client.Send(message);
 在电子邮件通信的动态世界中，自定义标头可以改变游戏规则，实现定制且有效的交互。借助 Aspose.Email for .NET，在 C# 中指定自定义标头的过程变得简化且高效。通过遵循本指南中概述的步骤，您可以利用自定义标头的强大功能来增强电子邮件通信工作的分类、个性化和参与度。
 
 如果您准备好将电子邮件通信提升到一个新的水平，请使用 Aspose.Email for .NET 深入了解自定义标头的世界。通过掌握这项技术，您可以发送与收件人产生共鸣的电子邮件，并提供无缝且引人入胜的体验。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

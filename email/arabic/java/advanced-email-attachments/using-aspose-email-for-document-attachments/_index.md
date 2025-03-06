@@ -3,10 +3,16 @@ title: استخدام Aspose.Email لمرفقات المستندات
 linktitle: استخدام Aspose.Email لمرفقات المستندات
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية إدارة مرفقات المستندات في رسائل البريد الإلكتروني الخاصة بـ Java باستخدام Aspose.Email لـ Java. قم بإنشاء وإرسال واستخراج مرفقات المستندات بسهولة.
-type: docs
 weight: 16
 url: /ar/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخدام Aspose.Email لمرفقات المستندات
+
 
 ## مقدمة لاستخدام Aspose.Email لمرفقات المستندات في Java
 
@@ -104,3 +110,9 @@ public class ExtractAttachments {
 ### كيف أتعامل مع مرفقات المستندات الكبيرة؟
 
 إذا كنت بحاجة إلى التعامل مع مرفقات المستندات الكبيرة، ففكر في استخدام تقنيات الدفق لتجنب تحميل المرفق بأكمله في الذاكرة. يوفر Aspose.Email خيارات لتدفق المرفقات، مما يسمح لك بمعالجتها بكفاءة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

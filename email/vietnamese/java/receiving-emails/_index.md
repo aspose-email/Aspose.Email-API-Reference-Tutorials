@@ -3,10 +3,16 @@ title: Nhận email bằng Aspose.Email cho Java
 linktitle: Nhận email bằng Aspose.Email cho Java
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách nhận email dễ dàng với Aspose.Email for Java Tutorials. Bắt đầu quản lý hộp thư đến của bạn như một người chuyên nghiệp!
-type: docs
 weight: 11
 url: /vi/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhận email bằng Aspose.Email cho Java
+
 
 ## Nhận email dễ dàng
 
@@ -29,3 +35,9 @@ Hãy bắt đầu nắm vững nghệ thuật nhận email bằng Java với Hư
 Tìm hiểu cách làm việc với giao thức IMAP trong Aspose.Email for Java để quản lý hiệu quả giao tiếp email của bạn.
 ### [Xử lý tệp đính kèm email trong Aspose.Email](./handling-email-attachments/)
 Tìm hiểu cách xử lý tệp đính kèm email trong Aspose.Email for Java. Hướng dẫn từng bước với mã nguồn và Câu hỏi thường gặp để quản lý tệp đính kèm email hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

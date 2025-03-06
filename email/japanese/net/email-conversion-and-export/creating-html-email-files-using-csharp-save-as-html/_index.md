@@ -3,10 +3,16 @@ title: C# を使用した HTML 電子メール ファイルの作成 - HTML と�
 linktitle: C# を使用した HTML 電子メール ファイルの作成 - HTML として保存
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して HTML 電子メール ファイルを作成する方法を学びます。シームレスな電子メールのカスタマイズのためのソース コードを含むステップバイステップ ガイド。
-type: docs
 weight: 18
 url: /ja/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用した HTML 電子メール ファイルの作成 - HTML として保存
+
 
 ## HTML 電子メール ファイルの作成の概要
 
@@ -113,3 +119,9 @@ C# と Aspose.Email for .NET を使用して HTML 電子メール ファイル�
 ### 他の例やドキュメントはどこで入手できますか?
 
 包括的な例と詳細なドキュメントを参照できます。[Aspose.Email ドキュメント](https://reference.aspose.com/email/net)ページ。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

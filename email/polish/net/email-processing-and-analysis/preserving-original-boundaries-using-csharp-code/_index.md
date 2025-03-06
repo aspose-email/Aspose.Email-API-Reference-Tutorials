@@ -3,10 +3,16 @@ title: Zachowywanie oryginalnych granic przy użyciu kodu C#
 linktitle: Zachowywanie oryginalnych granic przy użyciu kodu C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak zachować oryginalne granice załączników wiadomości e-mail przy użyciu języka C# i Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym.
-type: docs
 weight: 13
 url: /pl/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zachowywanie oryginalnych granic przy użyciu kodu C#
+
 
 ## Wprowadzenie do zachowania pierwotnych granic
 
@@ -107,3 +113,9 @@ Możesz użyć biblioteki Aspose.Email do ładowania załączników obrazów i m
 ### Gdzie mogę znaleźć więcej informacji o Aspose.Email dla .NET?
 
  Obszerną dokumentację i przykłady można znaleźć na stronie[Dokumentacja Aspose.Wyślij e-mailem](https://reference.aspose.com/email/net/) strona.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

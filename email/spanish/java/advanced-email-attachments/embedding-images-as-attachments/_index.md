@@ -3,10 +3,16 @@ title: Incrustar imágenes como archivos adjuntos en Aspose.Email
 linktitle: Incrustar imágenes como archivos adjuntos en Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda cómo incrustar imágenes como archivos adjuntos en Aspose.Email para Java. Mejore su comunicación por correo electrónico con contenido visualmente atractivo.
-type: docs
 weight: 14
 url: /es/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Incrustar imágenes como archivos adjuntos en Aspose.Email
+
 
 ## Incrustar imágenes como archivos adjuntos en Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email para Java admite varios formatos de imagen, incluidos JPEG, PNG, GI
 ### ¿Existe alguna limitación en el tamaño de las imágenes incrustadas?
 
 El tamaño de las imágenes incrustadas puede afectar la capacidad de entrega del correo electrónico y la experiencia del destinatario. Es recomendable optimizar las imágenes para el correo electrónico para evitar archivos de gran tamaño.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Bảo vệ tệp đính kèm TNEF - Phương pháp C#
 linktitle: Bảo vệ tệp đính kèm TNEF - Phương pháp C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách bảo vệ tệp đính kèm TNEF bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước có kèm theo mã nguồn.
-type: docs
 weight: 19
 url: /vi/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo vệ tệp đính kèm TNEF - Phương pháp C#
+
 
 ## Giới thiệu về Bảo vệ Tệp đính kèm TNEF
 
@@ -95,3 +101,9 @@ Aspose thường xuyên phát hành các bản cập nhật và cải tiến cho
 ### Tôi có thể sử dụng Aspose.Email trong các dự án thương mại không?
 
 Có, bạn có thể sử dụng Aspose.Email trong các dự án thương mại. Tuy nhiên, hãy nhớ xem lại các điều khoản cấp phép của Aspose để đảm bảo tuân thủ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

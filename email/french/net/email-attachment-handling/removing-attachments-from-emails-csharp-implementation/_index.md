@@ -3,10 +3,16 @@ title: Suppression des pièces jointes des e-mails - Implémentation C#
 linktitle: Suppression des pièces jointes des e-mails - Implémentation C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment supprimer les pièces jointes des e-mails à l’aide d’Aspose.Email pour .NET. Guide étape par étape avec le code source C#.
-type: docs
 weight: 18
 url: /fr/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Suppression des pièces jointes des e-mails - Implémentation C#
+
 
 ## Introduction à la suppression des pièces jointes des e-mails
 
@@ -97,3 +103,9 @@ Absolument. Aspose.Email est conçu pour être évolutif et peut être utilisé 
 ### Puis-je tester la bibliothèque Aspose.Email avant de l'intégrer dans mon projet ?
 
 Oui, Aspose propose des versions d'essai de ses bibliothèques que vous pouvez télécharger et tester avant de prendre une décision d'achat. Visitez leur site Web pour plus d’informations.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

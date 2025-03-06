@@ -3,10 +3,16 @@ title: 이메일 검증 및 확인
 linktitle: 이메일 검증 및 확인
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 강력한 이메일 검증 및 검증 메커니즘을 구현하세요. 통신의 정확성과 보안을 강화합니다.
-type: docs
 weight: 17
 url: /ko/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일 검증 및 확인
+
 
 ## 소개
 
@@ -23,3 +29,9 @@ url: /ko/net/email-validation-and-verification/
 ## 이메일 검증 및 검증 튜토리얼
 ### [C# 코드의 이메일 유효성 검사 기술](./email-validation-techniques-in-csharp-code/)
 .NET용 Aspose.Email을 사용하여 C#에서 이메일 주소의 유효성을 효과적으로 검사하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 데이터 정확성과 사용자 경험을 향상시킵니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

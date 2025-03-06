@@ -3,10 +3,16 @@ title: C# Guide - Extrahování e-mailových záhlaví
 linktitle: C# Guide - Extrahování e-mailových záhlaví
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se extrahovat hlavičky e-mailů v C# pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem pro efektivní analýzu e-mailů.
-type: docs
 weight: 15
 url: /cs/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Extrahování e-mailových záhlaví
+
 
 Přemýšleli jste někdy, jak extrahovat hlavičky e-mailů pomocí C#? Hlavičky e-mailů obsahují cenné informace o odesílateli, příjemci, předmětu a různé další podrobnosti. V této příručce vás provedeme krok za krokem procesem extrahování hlaviček e-mailů pomocí výkonné knihovny Aspose.Email for .NET. Tato knihovna poskytuje komplexní sadu funkcí pro práci s e-maily ve vašich aplikacích .NET.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Kde mohu získat přístup k dokumentaci Aspose.Email a stáhnout si knihovnu?
 
  Dokumentaci najdete na[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Chcete-li si knihovnu stáhnout, navštivte[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

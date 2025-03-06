@@ -3,10 +3,16 @@ title: Bestanden aan e-mails toevoegen met Aspose.Email
 linktitle: Bestanden aan e-mails toevoegen met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u bestanden bij e-mailberichten kunt voegen met Aspose.Email voor Java. Verbeter uw e-mails eenvoudig met deze stapsgewijze handleiding.
-type: docs
 weight: 12
 url: /nl/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bestanden aan e-mails toevoegen met Aspose.Email
+
 ## Invoering
 
 In de wereld van e-mailcommunicatie is de mogelijkheid om bijlagen te verzenden cruciaal. Of u nu belangrijke documenten, afbeeldingen of een ander type bestand verzendt, het proces moet eenvoudig en betrouwbaar zijn. Aspose.Email voor Java vereenvoudigt dit proces door krachtige tools te bieden voor het toevoegen van bestanden aan e-mailberichten.
@@ -134,3 +140,9 @@ Als u nog vragen heeft of hulp nodig heeft, neem dan gerust contact met ons op.
 
 ### Zijn er beperkingen qua grootte voor e-mailbijlagen?
    E-mailservers en -clients kunnen beperkingen hebben op de grootte van bijlagen. Zorg ervoor dat uw bijlagen binnen aanvaardbare groottelimieten vallen om problemen met het verzenden of ontvangen van e-mails te voorkomen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Эффективная обработка событий электрон
 linktitle: Обработка событий электронной почты и календаря
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Оптимизируйте обработку событий электронной почты и управление календарем с помощью руководств Aspose.Email для .NET. Научитесь автоматизировать события электронной почты и легко интегрировать функции календаря.
-type: docs
 weight: 15
 url: /ru/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Эффективная обработка событий электронной почты и календаря
+
 
 ## Введение
 
@@ -32,3 +38,9 @@ url: /ru/net/email-event-and-calendar-handling/
 Узнайте, как использовать Aspose.Email для .NET для создания проектов электронных писем с запросами о встрече на C#. Повышайте деловое общение и эффективность.
 ### [Изменение ProdID в файлах ICS с помощью C#](./altering-prodid-in-ics-files-with-csharp/)
 Научитесь изменять ProdID в файлах ICS с помощью C# и Aspose.Email для .NET. Пошаговое руководство и код. Обеспечьте целостность и совместимость данных. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

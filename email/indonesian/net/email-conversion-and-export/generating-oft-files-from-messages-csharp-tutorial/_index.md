@@ -3,10 +3,16 @@ title: Menghasilkan File OFT dari Pesan - Tutorial C#
 linktitle: Menghasilkan File OFT dari Pesan - Tutorial C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara membuat file OFT dari pesan menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk pembuatan template email yang efisien.
-type: docs
 weight: 19
 url: /id/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menghasilkan File OFT dari Pesan - Tutorial C#
+
 
 ## Pengantar Menghasilkan File OFT
 
@@ -114,3 +120,9 @@ Sangat! Anda dapat menentukan placeholder Anda sendiri di templat dan menggantin
 ### Bagaimana cara memastikan email yang saya buat tidak masuk ke folder spam penerima?
 
 Untuk menghindari email ditandai sebagai spam, pastikan untuk mengikuti praktik terbaik untuk kemampuan pengiriman email. Gunakan praktik pengiriman yang sah, hindari tautan berlebihan, dan sertakan informasi pengirim yang tepat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# で受信者アドレスを指定する
 linktitle: C# で受信者アドレスを指定する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# で受信者アドレスを指定する方法を学習します。電子メールを効率的に作成、構成、送信します。
-type: docs
 weight: 19
 url: /ja/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# で受信者アドレスを指定する
+
 
 
 このガイドでは、Aspose.Email for .NET ライブラリを使用して C# で受信者アドレスを指定するプロセスについて説明します。 Aspose.Email は、電子メール メッセージや電子メール関連のさまざまなタスクを操作できる強力な .NET API です。このチュートリアルでは、ライブラリを使用して電子メール メッセージに受信者アドレスを追加する方法について説明します。
@@ -119,3 +125,9 @@ catch (Exception ex)
  Aspose.Email for .NET の詳細および高度な機能については、「[Aspose API リファレンス](https://reference.aspose.com/email/net/).
 
 これで、Aspose.Email for .NET を使用して C# で受信者アドレスを指定するガイドは終了です。ライブラリの機能を使用して電子メール メッセージを作成し、受信者アドレスを追加し、電子メールを送信する方法を学習しました。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

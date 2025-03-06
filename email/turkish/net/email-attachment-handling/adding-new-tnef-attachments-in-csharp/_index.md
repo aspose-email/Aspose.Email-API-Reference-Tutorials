@@ -3,10 +3,16 @@ title: C#'ta Yeni TNEF Ekleri Ekleme
 linktitle: C#'ta Yeni TNEF Ekleri Ekleme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta yeni TNEF eklerini nasıl ekleyeceğinizi öğrenin. Sorunsuz entegrasyon için kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta Yeni TNEF Ekleri Ekleme
+
 
 ## TNEF Eklerine ve .NET için Aspose.Email'e Giriş
 
@@ -88,3 +94,9 @@ Evet, uygun lisansa sahip olmanız koşuluyla Aspose.Email for .NET'i hem kişis
 ### Daha fazla belge ve örneği nerede bulabilirim?
 
  Daha ayrıntılı belgeler ve kod örnekleri için şu adresi ziyaret edebilirsiniz:[Aspose.Email for .NET belgeleri](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

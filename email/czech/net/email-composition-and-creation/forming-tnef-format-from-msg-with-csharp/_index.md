@@ -3,10 +3,16 @@ title: Vytvoření formátu TNEF z MSG pomocí C#
 linktitle: Vytvoření formátu TNEF z MSG pomocí C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se převádět soubory MSG do formátu TNEF pomocí Aspose.Email for .NET. Bezproblémově vytvářejte bohatý e-mailový obsah.
-type: docs
 weight: 13
 url: /cs/net/email-composition-and-creation/forming-tnef-format-from-msg-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvoření formátu TNEF z MSG pomocí C#
+
 
 ##  Úvod do formátu TNEF a souborů MSG
 
@@ -102,3 +108,9 @@ Ano, testování a ověřování jsou zásadní kroky k zajištění toho, aby s
 ### Kde se mohu dozvědět více o Aspose.Email pro .NET?
 
  Podrobnou dokumentaci a zdroje pro Aspose.Email pro .NET naleznete na adrese[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). Tato dokumentace vám pomůže při prozkoumávání funkcí a možností knihovny.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

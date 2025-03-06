@@ -3,10 +3,16 @@ title: Zadání adres příjemců v C#
 linktitle: Zadání adres příjemců v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak zadat adresy příjemců v C# pomocí Aspose.Email for .NET. Vytvářejte, konfigurujte a posílejte e-maily efektivně.
-type: docs
 weight: 19
 url: /cs/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zadání adres příjemců v C#
+
 
 
 Tato příručka vás provede procesem zadávání adres příjemců v jazyce C# pomocí knihovny Aspose.Email for .NET. Aspose.Email je výkonné rozhraní .NET API, které vám umožňuje pracovat s e-mailovými zprávami a různými úkoly souvisejícími s e-mailem. V tomto tutoriálu se budeme zabývat tím, jak přidat adresy příjemců do e-mailové zprávy pomocí knihovny.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Další informace a pokročilé funkce Aspose.Email pro .NET naleznete na[Aspose API Reference](https://reference.aspose.com/email/net/).
 
 Tím končí příručka o zadávání adres příjemců v C# pomocí Aspose.Email pro .NET. Naučili jste se vytvořit e-mailovou zprávu, přidat adresy příjemců a odeslat e-mail pomocí funkcí knihovny.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Добавление вложений электронной почты �
 linktitle: Добавление вложений электронной почты с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как добавлять вложения к электронной почте с помощью C# и Aspose.Email для .NET. Пошаговое руководство с примерами кода для бесшовной интеграции.
-type: docs
 weight: 11
 url: /ru/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Добавление вложений электронной почты с помощью C#
+
 
 ## Введение в вложения электронной почты и Aspose.Email для .NET
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### Доступна ли бесплатная пробная версия Aspose.Email для .NET?
 
 Да, вы можете загрузить бесплатную пробную версию Aspose.Email для .NET, чтобы изучить ее возможности перед покупкой.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

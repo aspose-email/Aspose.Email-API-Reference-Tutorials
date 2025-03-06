@@ -3,10 +3,16 @@ title: تحديد الترتيب المخصص للمعلومات في MHTML با
 linktitle: تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تخصيص ترتيب MHTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع التعليمات البرمجية لترتيب المعلومات بكفاءة. تعزيز تجربة المستخدم الآن!
-type: docs
 weight: 14
 url: /ar/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
+
 
 في مجال إدارة البريد الإلكتروني، تعد القدرة على تخصيص ترتيب المعلومات في رسائل البريد الإلكتروني MHTML ميزة قيمة. يقدم Aspose.Email for .NET حلاً قويًا لتحقيق ذلك. في هذه المقالة، سنرشدك خلال العملية خطوة بخطوة.
 
@@ -80,3 +86,10 @@ eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ### 5. أين يمكنني العثور على موارد ودعم إضافيين لـ Aspose.Email لـ .NET؟
 
 -  يمكنك الوصول إلى الوثائق الشاملة وأمثلة التعليمات البرمجية والدعم على الموقع[Aspose.Email لتوثيق .NET API](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

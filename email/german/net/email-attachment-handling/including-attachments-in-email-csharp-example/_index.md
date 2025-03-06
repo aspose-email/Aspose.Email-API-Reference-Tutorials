@@ -3,10 +3,16 @@ title: Einbinden von Anhängen in E-Mails – C#-Beispiel
 linktitle: Einbinden von Anhängen in E-Mails – C#-Beispiel
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für .NET Anhänge in E-Mails einfügen. Schritt-für-Schritt-Anleitung mit C#-Codebeispiel.
-type: docs
 weight: 10
 url: /de/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Einbinden von Anhängen in E-Mails – C#-Beispiel
+
 
 ## Einführung in das Einfügen von Anhängen in E-Mails
 
@@ -111,3 +117,9 @@ Ja, Sie können Aspose.Email so konfigurieren, dass E-Mails über sichere Verbin
 ### Wo finde ich weitere Informationen zu den Funktionen von Aspose.Email?
 
  Ausführlichere Informationen zu den Funktionen, Klassen und Methoden von Aspose.Email finden Sie im[Aspose.Email API-Referenz](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

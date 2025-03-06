@@ -3,10 +3,16 @@ title: Извлечение встроенных вложений из файл�
 linktitle: Извлечение встроенных вложений из файлов MSG с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как извлечь встроенные вложения из файлов MSG с помощью C# и Aspose.Email для .NET. Подробное руководство с примерами исходного кода.
-type: docs
 weight: 10
 url: /ru/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение встроенных вложений из файлов MSG с помощью C#
+
 
 ## Введение во встроенные вложения
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### Где я могу найти больше примеров и документации?
 
  Вы можете найти подробные примеры и документацию по использованию Aspose.Email для .NET в[документация](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

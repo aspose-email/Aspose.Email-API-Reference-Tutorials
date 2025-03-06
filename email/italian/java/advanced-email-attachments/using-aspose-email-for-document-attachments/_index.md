@@ -3,10 +3,16 @@ title: Utilizzo di Aspose.Email per gli allegati ai documenti
 linktitle: Utilizzo di Aspose.Email per gli allegati ai documenti
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come gestire gli allegati dei documenti nelle e-mail Java utilizzando Aspose.Email per Java. Crea, invia ed estrai allegati di documenti con facilità.
-type: docs
 weight: 16
 url: /it/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utilizzo di Aspose.Email per gli allegati ai documenti
+
 
 ## Introduzione all'utilizzo di Aspose.Email per gli allegati di documenti in Java
 
@@ -104,3 +110,9 @@ Sì, Aspose.Email per Java supporta un'ampia gamma di tipi di allegati, inclusi 
 ### Come gestisco gli allegati di documenti di grandi dimensioni?
 
 Se è necessario gestire allegati di documenti di grandi dimensioni, valutare l'utilizzo di tecniche di streaming per evitare di caricare l'intero allegato in memoria. Aspose.Email fornisce opzioni per lo streaming degli allegati, consentendo di elaborarli in modo efficiente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

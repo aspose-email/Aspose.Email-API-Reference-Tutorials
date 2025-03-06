@@ -3,10 +3,16 @@ title: Efektywne przechowywanie i odzyskiwanie plików e-mail
 linktitle: Przechowywanie i pobieranie plików e-mail
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Usprawnij przechowywanie i pobieranie plików e-mail za pomocą samouczków Aspose.Email dla .NET. Dowiedz się, jak programowo zarządzać wiadomościami e-mail i załącznikami oraz uzyskiwać do nich dostęp.
-type: docs
 weight: 18
 url: /pl/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efektywne przechowywanie i odzyskiwanie plików e-mail
+
 
 ## Wstęp
 
@@ -27,3 +33,9 @@ Dowiedz się, jak czytać wiadomości pamięci Zimbra TGZ przy użyciu C# i Aspo
 Dowiedz się, jak czytać wiadomości pamięci NSF przy użyciu C# i Aspose.Email dla .NET. Przewodnik krok po kroku z przykładami kodu.
 ### [Zapisywanie wiadomości z pamięci Zimbra TGZ za pomocą C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Dowiedz się, jak wyodrębnić wiadomości e-mail Zimbra TGZ za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym umożliwiający efektywne zarządzanie pocztą e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

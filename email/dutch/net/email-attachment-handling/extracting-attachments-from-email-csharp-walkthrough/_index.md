@@ -3,10 +3,16 @@ title: Bijlagen uit e-mail extraheren - C# Walkthrough
 linktitle: Bijlagen uit e-mail extraheren - C# Walkthrough
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer stap voor stap e-mailbijlagen uitpakken met Aspose.Email voor .NET. Verwerk verschillende formaten en sla gemakkelijk op.
-type: docs
 weight: 14
 url: /nl/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bijlagen uit e-mail extraheren - C# Walkthrough
+
 
 ## Inleiding tot het extraheren van bijlagen uit e-mail - C# Walkthrough met Aspose.Email voor .NET
 
@@ -114,3 +120,9 @@ Aspose.Email ondersteunt .NET Framework en .NET Core.
 ### Waar kan ik meer informatie vinden over Aspose.Email?
 
  Voor gedetailleerde documentatie en voorbeelden raadpleegt u de[Aspose.E-maildocumentatie](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

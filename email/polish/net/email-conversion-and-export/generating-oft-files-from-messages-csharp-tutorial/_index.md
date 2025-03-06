@@ -3,10 +3,16 @@ title: Generowanie plików OFT z wiadomości - samouczek C#
 linktitle: Generowanie plików OFT z wiadomości - samouczek C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak tworzyć pliki OFT z wiadomości za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym umożliwiający skuteczne generowanie szablonów wiadomości e-mail.
-type: docs
 weight: 19
 url: /pl/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Generowanie plików OFT z wiadomości - samouczek C#
+
 
 ## Wprowadzenie do generowania plików OFT
 
@@ -114,3 +120,9 @@ Absolutnie! Możesz zdefiniować własne symbole zastępcze w szablonie i zastą
 ### Jak mogę mieć pewność, że wygenerowane e-maile nie trafią do folderu ze spamem odbiorcy?
 
 Aby uniknąć oznaczania wiadomości e-mail jako spam, pamiętaj o przestrzeganiu najlepszych praktyk dotyczących dostarczalności wiadomości e-mail. Stosuj legalne praktyki wysyłania, unikaj nadmiernej liczby linków i dołączaj odpowiednie informacje o nadawcy.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# での新しい TNEF 添付ファイルの追加
 linktitle: C# での新しい TNEF 添付ファイルの追加
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# で新しい TNEF 添付ファイルを追加する方法を学びます。シームレスな統合のためのコード例を含むステップバイステップのガイド。
-type: docs
 weight: 12
 url: /ja/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# での新しい TNEF 添付ファイルの追加
+
 
 ## .NET 用の TNEF 添付ファイルと Aspose.Email の概要
 
@@ -88,3 +94,9 @@ NuGet パッケージ マネージャーを使用して、Aspose.Email for .NET 
 ### さらに詳しいドキュメントや例はどこで入手できますか?
 
 より詳細なドキュメントとコード例については、次のサイトを参照してください。[Aspose.Email for .NET ドキュメント](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

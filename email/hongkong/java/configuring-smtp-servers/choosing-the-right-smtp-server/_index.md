@@ -3,10 +3,16 @@ title: 為 Aspose.Email 選擇正確的 SMTP 伺服器
 linktitle: 為 Aspose.Email 選擇正確的 SMTP 伺服器
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 使用 Aspose.Email for Java 優化您的電子郵件功能。了解如何選擇正確的 SMTP 伺服器並輕鬆發送電子郵件。
-type: docs
 weight: 10
 url: /zh-hant/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 為 Aspose.Email 選擇正確的 SMTP 伺服器
+
 
 ## 介紹
 
@@ -100,3 +106,9 @@ public class EmailSender {
 ### 如果我的 SMTP 伺服器需要 OAuth2 驗證，我該怎麼辦？
 
 您可以透過提供必要的 OAuth2 令牌和設置，使用 Aspose.Email for Java 配置 OAuth2 身份驗證。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

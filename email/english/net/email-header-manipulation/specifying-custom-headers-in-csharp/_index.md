@@ -3,10 +3,16 @@ title: Specifying Custom Headers in C#
 linktitle: Specifying Custom Headers in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to specify custom headers in C# using Aspose.Email for .NET to enhance email communication. This step-by-step guide provides insights into creating personalized email headers for improved engagement.
-type: docs
 weight: 16
 url: /net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specifying Custom Headers in C#
+
 
 
 ## Introduction
@@ -97,3 +103,10 @@ Absolutely, Aspose.Email for .NET caters to a wide range of email manipulation n
 In the dynamic world of email communication, custom headers can be a game-changer, enabling tailored and effective interactions. With Aspose.Email for .NET, the process of specifying custom headers in C# becomes streamlined and efficient. By following the steps outlined in this guide, you can harness the power of custom headers to enhance categorization, personalization, and engagement in your email communication efforts.
 
 If you're ready to take your email communication to the next level, dive into the world of custom headers using Aspose.Email for .NET. By mastering this technique, you can deliver emails that resonate with recipients and provide a seamless and engaging experience.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

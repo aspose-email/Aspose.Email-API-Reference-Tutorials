@@ -3,10 +3,16 @@ title: Lưu trữ và truy xuất tệp email hiệu quả
 linktitle: Lưu trữ và truy xuất tệp email
 second_title: API xử lý email Aspose.Email .NET
 description: Hợp lý hóa việc lưu trữ và truy xuất tệp email bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tìm hiểu cách quản lý và truy cập thư email cũng như tệp đính kèm theo chương trình.
-type: docs
 weight: 18
 url: /vi/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lưu trữ và truy xuất tệp email hiệu quả
+
 
 ## Giới thiệu
 
@@ -27,3 +33,9 @@ Tìm hiểu cách đọc tin nhắn lưu trữ Zimbra TGZ bằng C# và Aspose.E
 Tìm hiểu cách đọc thư lưu trữ NSF bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 ### [Lưu tin nhắn từ bộ lưu trữ Zimbra TGZ bằng C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Tìm hiểu cách trích xuất email Zimbra TGZ bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn để quản lý email hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

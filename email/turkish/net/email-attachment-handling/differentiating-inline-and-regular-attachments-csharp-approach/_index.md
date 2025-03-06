@@ -3,10 +3,16 @@ title: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
 linktitle: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak satır içi ve normal e-posta eklerini nasıl ayırt edeceğinizi öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
-type: docs
 weight: 17
 url: /tr/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
+
 
 ## Satır İçi ve Normal Ekleri Ayırmaya Giriş - C# Yaklaşımı
 
@@ -107,3 +113,9 @@ Aspose.Email kütüphanesinin sağladığı uygun özellikleri kullanarak satır
 ### Düzenli ekleri diskte belirli bir konuma kaydedebilir miyim?
 
  Kesinlikle! Kullanarak düzenli ekleri diskte belirli bir konuma kaydedebilirsiniz.`Save` ek nesnesinin yöntemi ve istenen dosya yolunun sağlanması.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

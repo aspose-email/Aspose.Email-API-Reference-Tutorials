@@ -3,10 +3,16 @@ title: 高效的电子邮件事件和日历处理
 linktitle: 电子邮件事件和日历处理
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 使用 Aspose.Email for .NET 教程简化电子邮件事件处理和日历管理。了解自动化电子邮件事件并无缝集成日历功能。
-type: docs
 weight: 15
 url: /zh/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 高效的电子邮件事件和日历处理
+
 
 ## 介绍
 
@@ -32,3 +38,9 @@ Aspose.Email for .NET 关于“电子邮件事件和日历处理”的教程使�
 了解如何使用 Aspose.Email for .NET 在 C# 中创建草稿预约请求电子邮件。增强业务沟通和效率。
 ### [使用 C# 更改 ICS 文件中的 ProdID](./altering-prodid-in-ics-files-with-csharp/)
 了解使用 C# 和 Aspose.Email for .NET 更改 ICS 文件中的 ProdID。分步指南和代码。确保数据完整性和兼容性。 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

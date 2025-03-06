@@ -3,10 +3,16 @@ title: Přizpůsobení MHTML konverze - C# Implementace
 linktitle: Přizpůsobení MHTML konverze - C# Implementace
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak přizpůsobit převod MHTML pomocí Aspose.Email pro .NET. Podrobný průvodce se zdrojovým kódem C#.
-type: docs
 weight: 10
 url: /cs/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přizpůsobení MHTML konverze - C# Implementace
+
 
 ## Úvod do přizpůsobení konverze MHTML
 
@@ -67,3 +73,9 @@ Absolutně! Aspose.Email for .NET podporuje různé výstupní formáty, jako je
 ### Je Aspose.Email for .NET vhodný pro malé i velké projekty?
 
 Ano, Aspose.Email for .NET je navržen tak, aby byl škálovatelný, takže je vhodný pro projekty různých velikostí. Je široce používán v malých aplikacích i velkých podnikových řešeních.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

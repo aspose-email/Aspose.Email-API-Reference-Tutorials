@@ -3,10 +3,16 @@ title: Utforska e-postkonvertering och export
 linktitle: E-postkonvertering och export
 second_title: Aspose.Email .NET Email Processing API
 description: Bemästra e-postdatahantering med Aspose.Email för .NETs handledning. Konvertera, exportera e-post, bibehåll integritet, hantera bilagor. Lyft med exempel.
-type: docs
 weight: 11
 url: /sv/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utforska e-postkonvertering och export
+
 
 ## Introduktion
 
@@ -39,3 +45,9 @@ Lär dig hur du implementerar utkast till e-posthantering i C# med Aspose.Email 
 Lär dig hur du skapar HTML-e-postfiler med C# och Aspose.Email för .NET. Steg-för-steg-guide med källkod för sömlös e-postanpassning.
 ### [Generera OFT-filer från meddelanden - C# Tutorial](./generating-oft-files-from-messages-csharp-tutorial/)
 Lär dig hur du skapar OFT-filer från meddelanden med Aspose.Email för .NET. Steg-för-steg-guide med källkod för effektiv generering av e-postmall.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Skydda TNEF-bilagor - C#-metod
 linktitle: Skydda TNEF-bilagor - C#-metod
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du skyddar TNEF-bilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod ingår.
-type: docs
 weight: 19
 url: /sv/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skydda TNEF-bilagor - C#-metod
+
 
 ## Introduktion till att skydda TNEF-bilagor
 
@@ -95,3 +101,9 @@ Aspose släpper ofta uppdateringar och förbättringar av sina bibliotek. Det re
 ### Kan jag använda Aspose.Email i kommersiella projekt?
 
 Ja, du kan använda Aspose.Email i kommersiella projekt. Se dock till att granska Asposes licensvillkor för att säkerställa efterlevnad.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

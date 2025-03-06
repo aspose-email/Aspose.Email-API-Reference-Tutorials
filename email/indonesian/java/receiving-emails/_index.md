@@ -3,10 +3,16 @@ title: Menerima Email dengan Aspose.Email untuk Java
 linktitle: Menerima Email dengan Aspose.Email untuk Java
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara menerima email dengan mudah dengan Aspose.Email untuk Tutorial Java. Mulailah mengelola kotak masuk Anda seperti seorang profesional!
-type: docs
 weight: 11
 url: /id/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menerima Email dengan Aspose.Email untuk Java
+
 
 ## Menerima Email dengan Mudah
 
@@ -29,3 +35,9 @@ Mulailah menguasai seni menerima email di Java dengan Aspose.Email untuk Tutoria
 Pelajari cara bekerja dengan protokol IMAP di Aspose.Email untuk Java guna mengelola komunikasi email Anda secara efisien.
 ### [Menangani Lampiran Email di Aspose.Email](./handling-email-attachments/)
 Pelajari cara menangani lampiran email di Aspose.Email untuk Java. Panduan langkah demi langkah dengan kode sumber dan FAQ untuk manajemen lampiran email yang efisien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

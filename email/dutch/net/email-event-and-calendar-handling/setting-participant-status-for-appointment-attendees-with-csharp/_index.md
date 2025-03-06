@@ -3,10 +3,16 @@ title: Deelnemersstatus instellen voor deelnemers aan afspraken met C#
 linktitle: Deelnemersstatus instellen voor deelnemers aan afspraken met C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u de status van deelnemers aan afspraken beheert met C# en Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode.
-type: docs
 weight: 16
 url: /nl/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Deelnemersstatus instellen voor deelnemers aan afspraken met C#
+
 
 ## Inleiding tot Aspose.Email voor .NET
 
@@ -109,3 +115,9 @@ Ja, u kunt de functionaliteit die in deze handleiding wordt besproken eenvoudig 
 ### Waar kan ik meer documentatie en bronnen vinden?
 
  Voor meer gedetailleerde documentatie en bronnen raadpleegt u de Aspose.Email voor .NET-documentatie:[Aspose.Email voor .NET-documentatie](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

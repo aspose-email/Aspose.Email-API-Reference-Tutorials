@@ -3,10 +3,16 @@ title: Aspose.Email ile E-posta Şifreleme ve Şifre Çözme
 linktitle: Aspose.Email ile E-posta Şifreleme ve Şifre Çözme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java kullanarak e-postalarınızı E-posta Şifreleme ve Şifre Çözme ile nasıl güvence altına alacağınızı öğrenin. Adım adım kılavuz, kaynak kodu ve SSS'ler dahildir.
-type: docs
 weight: 11
 url: /tr/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile E-posta Şifreleme ve Şifre Çözme
+
 
 ## giriiş
 
@@ -95,3 +101,9 @@ Evet, ölçeklenebilirlik için tasarlandığı için hem küçük hem de büyü
  API belgelerini ziyaret edin[Burada](https://reference.aspose.com/email/java/) detaylı bilgi ve örnekler için.
 
 Artık Aspose.Email for Java'yı kullanarak E-posta Şifreleme ve Şifre Çözme konusunda kapsamlı bir anlayışa sahipsiniz. E-postalarınızı korumaya bugün başlayın!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

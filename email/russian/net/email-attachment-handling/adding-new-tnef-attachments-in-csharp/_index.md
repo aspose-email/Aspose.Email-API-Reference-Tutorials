@@ -3,10 +3,16 @@ title: Добавление новых вложений TNEF в C#
 linktitle: Добавление новых вложений TNEF в C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как добавлять новые вложения TNEF в C# с помощью Aspose.Email для .NET. Пошаговое руководство с примерами кода для бесшовной интеграции.
-type: docs
 weight: 12
 url: /ru/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Добавление новых вложений TNEF в C#
+
 
 ## Введение в вложения TNEF и Aspose.Email для .NET
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### Где я могу найти дополнительную документацию и примеры?
 
  Более подробную документацию и примеры кода можно найти на странице[Документация Aspose.Email для .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

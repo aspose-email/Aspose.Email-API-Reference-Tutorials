@@ -3,10 +3,16 @@ title: Gửi thông báo qua email với Aspose.Email
 linktitle: Gửi thông báo qua email với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách gửi thông báo email hiệu quả với Aspose.Email for Java. Hướng dẫn toàn diện với các ví dụ về mã và Câu hỏi thường gặp để giao tiếp liền mạch.
-type: docs
 weight: 17
 url: /vi/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gửi thông báo qua email với Aspose.Email
+
 
 ## Giới thiệu
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### Làm cách nào tôi có thể xử lý trạng thái gửi và theo dõi thông báo qua email?
    - Bạn có thể triển khai logic để xử lý thông báo trạng thái gửi email (DSN) và theo dõi số lần mở email cũng như số lần nhấp bằng cách sử dụng các công cụ hoặc dịch vụ bổ sung.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

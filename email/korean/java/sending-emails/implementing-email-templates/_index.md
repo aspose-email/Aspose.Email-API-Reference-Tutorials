@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 이메일 템플릿 구현
 linktitle: Aspose.Email을 사용하여 이메일 템플릿 구현
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 동적 이메일 템플릿을 만드는 방법을 알아보세요. 효과적인 이메일 커뮤니케이션을 위한 코드 예제와 FAQ가 포함된 종합 가이드입니다.
-type: docs
 weight: 13
 url: /ko/java/sending-emails/implementing-email-templates/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 이메일 템플릿 구현
+
 
 ## 소개
 
@@ -122,3 +128,10 @@ public class EmailTemplate {
 
 ### 6. 효과적인 이메일 템플릿을 디자인하기 위한 모범 사례가 있습니까?
    - 예, 반응형 디자인, 과도한 이미지 방지, 다양한 이메일 클라이언트에 대한 최적화 등 이메일 템플릿 디자인에 대한 모범 사례가 있습니다. 템플릿을 생성할 때 다음 사항을 고려하십시오.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Επιλογή του σωστού διακομιστή SMTP για το 
 linktitle: Επιλογή του σωστού διακομιστή SMTP για το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Βελτιστοποιήστε τη λειτουργικότητα του email σας με το Aspose.Email για Java. Μάθετε πώς να επιλέγετε τον σωστό διακομιστή SMTP και να στέλνετε email χωρίς κόπο.
-type: docs
 weight: 10
 url: /el/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Επιλογή του σωστού διακομιστή SMTP για το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -100,3 +106,9 @@ public class EmailSender {
 ### Τι πρέπει να κάνω εάν ο διακομιστής SMTP μου απαιτεί έλεγχο ταυτότητας OAuth2;
 
 Μπορείτε να διαμορφώσετε τον έλεγχο ταυτότητας OAuth2 με το Aspose.Email για Java παρέχοντας τα απαραίτητα διακριτικά και ρυθμίσεις OAuth2.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

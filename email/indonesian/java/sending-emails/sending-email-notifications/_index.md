@@ -3,10 +3,16 @@ title: Mengirim Notifikasi Email dengan Aspose.Email
 linktitle: Mengirim Notifikasi Email dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara mengirim pemberitahuan email secara efektif dengan Aspose.Email untuk Java. Panduan komprehensif dengan contoh kode dan FAQ untuk komunikasi yang lancar.
-type: docs
 weight: 17
 url: /id/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengirim Notifikasi Email dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### Bagaimana cara menangani status dan pelacakan pengiriman notifikasi email?
    - Anda dapat menerapkan logika untuk menangani pemberitahuan status pengiriman email (DSN) dan melacak pembukaan dan klik email menggunakan alat atau layanan tambahan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

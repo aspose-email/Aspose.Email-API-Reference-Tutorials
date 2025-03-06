@@ -3,10 +3,16 @@ title: 使用 C# 代码通过 DKIM 签署电子邮件
 linktitle: 使用 C# 代码通过 DKIM 签署电子邮件
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解使用 C# 和 Aspose.Email for .NET 通过 DKIM 保护电子邮件。带有源代码的分步指南。增强电子邮件的信任度和真实性。
-type: docs
 weight: 11
 url: /zh/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 代码通过 DKIM 签署电子邮件
+
 
 在当今的数字世界中，确保电子邮件通信的真实性和完整性至关重要。实现此目的的一种方法是使用域名密钥识别邮件 (DKIM) 签名。在本分步指南中，我们将探索如何使用 C# 和强大的 Aspose.Email for .NET 库通过 DKIM 签署电子邮件。
 
@@ -123,3 +129,9 @@ DKIM 签名中包含的常见标头包括“发件人”、“主题”以及对
 ### Q5：DKIM 是电子邮件身份验证的唯一方法吗？
 
 不，还有其他方法（如 SPF 和 DMARC）与 DKIM 结合使用以增强电子邮件安全性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

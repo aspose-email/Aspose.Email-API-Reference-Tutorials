@@ -3,10 +3,16 @@ title: Definizione dell'ordine personalizzato delle informazioni in MHTML con C#
 linktitle: Definizione dell'ordine personalizzato delle informazioni in MHTML con C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come personalizzare l'ordine MHTML utilizzando C# e Aspose.Email per .NET. Guida passo passo con codice per una disposizione efficiente delle informazioni. Migliora subito l'esperienza dell'utente!
-type: docs
 weight: 14
 url: /it/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definizione dell'ordine personalizzato delle informazioni in MHTML con C#
+
 
 Nell'ambito della gestione della posta elettronica, la possibilità di personalizzare l'ordine delle informazioni nelle e-mail MHTML è una funzionalità preziosa. Aspose.Email per .NET offre una soluzione solida per raggiungere questo obiettivo. In questo articolo ti guideremo attraverso il processo passo dopo passo.
 
@@ -80,3 +86,10 @@ In un mondo in cui la gestione efficace della posta elettronica è fondamentale,
 ### 5. Dove posso trovare risorse aggiuntive e supporto per Aspose.Email per .NET?
 
 -  È possibile accedere a documentazione estesa, esempi di codice e supporto su[Aspose.Email per la documentazione dell'API .NET](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Извлечение встроенных объектов — Учебн
 linktitle: Извлечение встроенных объектов — Учебное пособие по C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Научитесь извлекать внедренные объекты из сообщений электронной почты с помощью Aspose.Email для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 15
 url: /ru/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение встроенных объектов — Учебное пособие по C#
+
 
 ## Введение в извлечение встроенных объектов — Учебное пособие по C#
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### Где я могу найти дополнительную документацию по Aspose.Email?
 
  Подробную документацию и примеры кода для Aspose.Email вы можете найти на сайте[Справочник по API Aspose.Email для .NET](https://reference.aspose.com/email/net/) страница.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

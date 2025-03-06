@@ -3,10 +3,16 @@ title: Aspose.Email में छवियों को अनुलग्नक
 linktitle: Aspose.Email में छवियों को अनुलग्नक के रूप में एम्बेड करना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email में छवियों को अनुलग्नक के रूप में एम्बेड करना सीखें। आकर्षक सामग्री के साथ अपने ईमेल संचार को उन्नत करें।
-type: docs
 weight: 14
 url: /hi/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email में छवियों को अनुलग्नक के रूप में एम्बेड करना
+
 
 ## Aspose.Email में छवियों को अनुलग्नक के रूप में एम्बेड करना
 
@@ -97,3 +103,9 @@ client.send(message);
 ### क्या एम्बेडेड छवियों के आकार पर कोई सीमाएँ हैं?
 
 एम्बेडेड छवियों का आकार ईमेल वितरण क्षमता और प्राप्तकर्ता अनुभव को प्रभावित कर सकता है। बड़े फ़ाइल आकार से बचने के लिए ईमेल के लिए छवियों को अनुकूलित करने की सलाह दी जाती है।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

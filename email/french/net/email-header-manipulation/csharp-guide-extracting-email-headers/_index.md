@@ -3,10 +3,16 @@ title: Guide C# - Extraction des en-têtes d'e-mails
 linktitle: Guide C# - Extraction des en-têtes d'e-mails
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment extraire les en-têtes d'e-mails en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source pour une analyse efficace des e-mails.
-type: docs
 weight: 15
 url: /fr/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Guide C# - Extraction des en-têtes d'e-mails
+
 
 Vous êtes-vous déjà demandé comment extraire les en-têtes d’e-mails en utilisant C# ? Les en-têtes d'e-mails contiennent des informations précieuses sur l'expéditeur, le destinataire, l'objet et divers autres détails. Dans ce guide, nous vous guiderons pas à pas à travers le processus d'extraction des en-têtes d'e-mails à l'aide de la puissante bibliothèque Aspose.Email pour .NET. Cette bibliothèque fournit un ensemble complet de fonctionnalités pour travailler avec des e-mails dans vos applications .NET.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Où puis-je accéder à la documentation Aspose.Email et télécharger la bibliothèque ?
 
  Vous pouvez trouver la documentation sur[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Pour télécharger la bibliothèque, visitez[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

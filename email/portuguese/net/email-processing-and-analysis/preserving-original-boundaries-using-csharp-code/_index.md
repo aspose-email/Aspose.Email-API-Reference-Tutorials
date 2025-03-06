@@ -3,10 +3,16 @@ title: Preservando limites originais usando código C#
 linktitle: Preservando limites originais usando código C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como preservar os limites originais de anexos de email usando C# e Aspose.Email for .NET. Guia passo a passo com código-fonte.
-type: docs
 weight: 13
 url: /pt/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Preservando limites originais usando código C#
+
 
 ## Introdução à preservação dos limites originais
 
@@ -107,3 +113,9 @@ Você pode usar a biblioteca Aspose.Email para carregar e manipular anexos de im
 ### Onde posso encontrar mais informações sobre Aspose.Email para .NET?
 
  Você pode encontrar documentação abrangente e exemplos no[Documentação Aspose.Email](https://reference.aspose.com/email/net/) página.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

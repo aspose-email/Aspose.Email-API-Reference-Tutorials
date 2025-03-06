@@ -3,10 +3,16 @@ title: Personalizando cabeçalhos de e-mail com Aspose.Email para Java
 linktitle: Personalizando cabeçalhos de e-mail com Aspose.Email para Java
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aprenda como personalizar cabeçalhos de e-mail sem esforço com Aspose.Email para Java. Mergulhe nos tutoriais e aproveite o poder da personalização do cabeçalho do e-mail.
-type: docs
 weight: 16
 url: /pt/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalizando cabeçalhos de e-mail com Aspose.Email para Java
+
 
 Os cabeçalhos de email desempenham um papel crucial na comunicação por email, fornecendo informações essenciais sobre a origem e entrega da mensagem. Com Aspose.Email for Java, personalizar cabeçalhos de e-mail torna-se uma tarefa simples, permitindo aos usuários adaptar seus metadados de e-mail a necessidades e requisitos específicos.
 
@@ -37,3 +43,9 @@ Garanta a segurança do e-mail com assinaturas DKIM usando Aspose.Email para Jav
 Desbloqueie o poder dos cabeçalhos X em e-mails com Aspose.Email para Java. Aprenda a gerenciar metadados personalizados e aprimorar o processamento de e-mail.
 ### [Enriquecendo metadados de email por meio de cabeçalhos com Aspose.Email](./enriching-email-metadata-through-headers/)
 Aprimore os metadados de e-mail com Aspose.Email para Java. Aprenda como enriquecer cabeçalhos de e-mail para melhor rastreamento e personalização com Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#에서 사용자 정의 헤더 지정
 linktitle: C#에서 사용자 정의 헤더 지정
 second_title: Aspose.Email .NET 이메일 처리 API
 description: 이메일 통신을 향상시키기 위해 .NET용 Aspose.Email을 사용하여 C#에서 사용자 정의 헤더를 지정하는 방법을 알아보세요. 이 단계별 가이드는 참여도 향상을 위해 개인화된 이메일 헤더를 만드는 방법에 대한 통찰력을 제공합니다.
-type: docs
 weight: 16
 url: /ko/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#에서 사용자 정의 헤더 지정
+
 
 
 ## 소개
@@ -97,3 +103,9 @@ client.Send(message);
 이메일 커뮤니케이션의 역동적인 세계에서 맞춤형 헤더는 맞춤형의 효과적인 상호 작용을 가능하게 하여 판도를 바꿀 수 있습니다. .NET용 Aspose.Email을 사용하면 C#에서 사용자 정의 헤더를 지정하는 프로세스가 간소화되고 효율적이 됩니다. 이 가이드에 설명된 단계를 수행하면 사용자 정의 헤더의 기능을 활용하여 이메일 커뮤니케이션 활동의 분류, 개인화 및 참여를 향상할 수 있습니다.
 
 이메일 커뮤니케이션을 한 단계 더 발전시킬 준비가 되었다면 .NET용 Aspose.Email을 사용하여 사용자 정의 헤더의 세계를 살펴보세요. 이 기술을 익히면 수신자의 공감을 불러일으키고 원활하고 매력적인 경험을 제공하는 이메일을 전달할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

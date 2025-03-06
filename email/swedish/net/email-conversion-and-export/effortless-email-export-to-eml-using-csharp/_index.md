@@ -3,10 +3,16 @@ title: Enkel e-postexport till EML med C#
 linktitle: Enkel e-postexport till EML med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Exportera e-postmeddelanden enkelt till EML-format med C# och Aspose.Email för .NET. Lär dig steg för steg med källkodsexempel.
-type: docs
 weight: 11
 url: /sv/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enkel e-postexport till EML med C#
+
 
 ## Introduktion till enkel e-postexport till EML
 
@@ -175,3 +181,9 @@ Ja, du kan exportera e-postbilagor tillsammans med e-postmeddelandet med Aspose.
 ### Är källkoden i handledningen komplett?
 
 Ja, handledningen tillhandahåller fullständig källkod som visar hur man exporterar e-postmeddelanden till EML-formatet med Aspose.Email för .NET. Du kan använda den här koden som utgångspunkt
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

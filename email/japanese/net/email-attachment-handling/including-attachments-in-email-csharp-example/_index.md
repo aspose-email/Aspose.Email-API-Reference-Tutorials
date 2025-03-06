@@ -3,10 +3,16 @@ title: 電子メールに添付ファイルを含める - C# の例
 linktitle: 電子メールに添付ファイルを含める - C# の例
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して電子メールに添付ファイルを含める方法を学びます。 C# コード例を含むステップバイステップのガイド。
-type: docs
 weight: 10
 url: /ja/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールに添付ファイルを含める - C# の例
+
 
 ## 電子メールに添付ファイルを含める方法の概要
 
@@ -111,3 +117,9 @@ class Program
 ### Aspose.Email の機能に関する詳細情報はどこで入手できますか?
 
  Aspose.Email の機能、クラス、メソッドの詳細については、「[Aspose.Email API リファレンス](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

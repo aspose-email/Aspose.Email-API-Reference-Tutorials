@@ -3,10 +3,16 @@ title: Menyertakan Lampiran dalam Email - Contoh C#
 linktitle: Menyertakan Lampiran dalam Email - Contoh C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menyertakan lampiran dalam email menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode C#.
-type: docs
 weight: 10
 url: /id/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menyertakan Lampiran dalam Email - Contoh C#
+
 
 ## Pengantar Menyertakan Lampiran dalam Email
 
@@ -111,3 +117,9 @@ Ya, Anda dapat mengonfigurasi Aspose.Email untuk mengirim email melalui koneksi 
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang kemampuan Aspose.Email?
 
  Untuk informasi lebih rinci tentang fitur, kelas, dan metode Aspose.Email, lihat[Referensi API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

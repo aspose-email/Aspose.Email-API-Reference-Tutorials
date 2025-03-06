@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 批次發送電子郵件
 linktitle: 使用 Aspose.Email 批次發送電子郵件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 有效率地傳送大量電子郵件。包含電子郵件行銷和通訊程式碼範例的逐步指南。
-type: docs
 weight: 14
 url: /zh-hant/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 批次發送電子郵件
+
 
 ## 介紹
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### 如何處理大量發送郵件被退回或失敗的情況？
    Aspose.Email 提供了處理傳遞狀態通知（DSN）和追蹤電子郵件傳遞狀態的功能。您可以根據需要實施邏輯來處理退回或失敗的電子郵件。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Processamento e análise eficiente de e-mail com Aspose.Email para .NET
 linktitle: Processamento e análise de e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Otimize o gerenciamento de e-mail e a tomada de decisões do seu aplicativo com os tutoriais do Aspose.Email for .NET sobre processamento simplificado de e-mail e análise criteriosa. Aprenda a recuperar, organizar e analisar conteúdo de e-mail de forma programática. Explore exemplos práticos para melhorar a comunicação e estratégias baseadas em dados.
-type: docs
 weight: 13
 url: /pt/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Processamento e análise eficiente de e-mail com Aspose.Email para .NET
+
 
 ## Introdução
 
@@ -43,3 +49,9 @@ Aprenda como recuperar notificações de status de entrega de e-mail usando C# e
 Aprenda a converter facilmente conteúdo de e-mail HTML em texto simples usando Aspose.Email for .NET. Guia detalhado e código. Explore agora!
 ### [Preservando limites originais usando código C#](./preserving-original-boundaries-using-csharp-code/)
 Aprenda como preservar os limites originais de anexos de email usando C# e Aspose.Email for .NET. Guia passo a passo com código-fonte.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

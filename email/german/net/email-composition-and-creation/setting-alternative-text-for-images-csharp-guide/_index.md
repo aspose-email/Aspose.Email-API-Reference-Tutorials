@@ -3,10 +3,16 @@ title: Alternativtext für Bilder festlegen – C#-Handbuch
 linktitle: Alternativtext für Bilder festlegen – C#-Handbuch
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für .NET alternativen Text für Bilder in E-Mails festlegen. Stellen Sie die Barrierefreiheit mit klarem Alt-Text sicher. Dokumentation und Code enthalten.
-type: docs
 weight: 15
 url: /de/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Alternativtext für Bilder festlegen – C#-Handbuch
+
 
 Dieser Leitfaden führt Sie durch den Prozess des Festlegens alternativer Texte für Bilder in E-Mails mit Aspose.Email für .NET. Alternativer Text, auch „Alt-Text“ genannt, wird verwendet, um eine Textbeschreibung eines Bildes bereitzustellen, falls das Bild nicht angezeigt werden kann. Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die es Ihnen ermöglicht, mit E-Mails und Anhängen in verschiedenen Formaten zu arbeiten. In diesem Leitfaden konzentrieren wir uns auf das Festlegen alternativer Texte für Bilder in E-Mail-Nachrichten mit C#.
 
@@ -81,3 +87,9 @@ Um Bilder als verknüpfte Ressourcen in einer E-Mail hinzuzufügen, können Sie 
 ### Wo finde ich weitere Dokumentation zu Aspose.Email für .NET?
 
  Ausführlichere Dokumentation, Tutorials und Beispiele zum Arbeiten mit Aspose.Email für .NET finden Sie im[API-Referenz](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

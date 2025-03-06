@@ -3,10 +3,16 @@ title: Ontvangeradressen opgeven in C#
 linktitle: Ontvangeradressen opgeven in C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u ontvangersadressen kunt opgeven in C# met behulp van Aspose.Email voor .NET. E-mails efficiënt maken, configureren en verzenden.
-type: docs
 weight: 19
 url: /nl/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ontvangeradressen opgeven in C#
+
 
 
 Deze handleiding leidt u door het proces van het opgeven van ontvangersadressen in C# met behulp van de Aspose.Email voor .NET-bibliotheek. Aspose.Email is een krachtige .NET API waarmee u kunt werken met e-mailberichten en verschillende e-mailgerelateerde taken. In deze zelfstudie bespreken we hoe u ontvangersadressen kunt toevoegen aan een e-mailbericht met behulp van de bibliotheek.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Voor meer informatie en geavanceerde functies van Aspose.Email voor .NET raadpleegt u de[Stel API-referenties voor](https://reference.aspose.com/email/net/).
 
 Hiermee wordt de handleiding afgesloten over het opgeven van ontvangersadressen in C# met behulp van Aspose.Email voor .NET. U hebt geleerd hoe u een e-mailbericht maakt, adressen van ontvangers toevoegt en de e-mail verzendt met behulp van de functies van de bibliotheek.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Εξαγωγή και ανάλυση κεφαλίδων email με το A
 linktitle: Εξαγωγή και ανάλυση κεφαλίδων email με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Ξεκλειδώστε τη δύναμη της ανάλυσης κεφαλίδων email με το Aspose.Email για Java. Μάθετε πώς να εξάγετε και να αναλύετε κεφαλίδες email για βελτιωμένη παρακολούθηση και ασφάλεια email.
-type: docs
 weight: 12
 url: /el/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή και ανάλυση κεφαλίδων email με το Aspose.Email
+
 
 ## Εισαγωγή στην εξαγωγή και ανάλυση κεφαλίδων email με το Aspose.Email
 
@@ -107,3 +113,9 @@ for (Header header : headers) {
 ### Μπορώ να αυτοματοποιήσω την ανάλυση κεφαλίδων email με το Aspose.Email;
 
 Ναι, μπορείτε να αυτοματοποιήσετε την ανάλυση κεφαλίδων email με το Aspose.Email ενσωματώνοντάς το στις εφαρμογές σας Java. Η βιβλιοθήκη παρέχει βολικές μεθόδους για εργασία με κεφαλίδες email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
 linktitle: Diferenciación de archivos adjuntos en línea y regulares enfoque C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a diferenciar entre archivos adjuntos de correo electrónico regulares y en línea utilizando Aspose.Email para .NET. Guía completa con ejemplos de código.
-type: docs
 weight: 17
 url: /es/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Diferenciación de archivos adjuntos en línea y regulares enfoque C#
+
 
 ## Introducción a la diferenciación de archivos adjuntos en línea y regulares: enfoque C#
 
@@ -107,3 +113,9 @@ Puede acceder al contenido de un archivo adjunto en línea utilizando las propie
 ### ¿Puedo guardar archivos adjuntos normales en una ubicación específica del disco?
 
  ¡Absolutamente! Puede guardar archivos adjuntos regulares en una ubicación específica del disco utilizando el`Save` método del objeto adjunto y proporcionando la ruta de archivo deseada.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

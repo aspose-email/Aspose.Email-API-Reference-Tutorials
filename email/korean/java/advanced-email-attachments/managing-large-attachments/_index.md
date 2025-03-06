@@ -3,10 +3,16 @@ title: Aspose.Email에서 대용량 첨부 파일 관리
 linktitle: Aspose.Email에서 대용량 첨부 파일 관리
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 대용량 이메일 첨부 파일을 효율적으로 관리하세요. Java 애플리케이션에서 첨부 파일 처리를 간소화하기 위한 단계별 가이드 및 소스 코드입니다.
-type: docs
 weight: 11
 url: /ko/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email에서 대용량 첨부 파일 관리
+
 
 ## Java용 Aspose.Email의 대용량 첨부 파일 관리 소개
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### 첨부 파일을 압축하여 크기를 줄일 수 있나요?
 
 예. 첨부 파일을 보내기 전에 압축하여 크기를 줄일 수 있습니다. Aspose.Email은 첨부 파일을 프로그래밍 방식으로 압축 및 압축 해제하는 기능을 제공합니다. 이를 구현하여 이메일 첨부 파일의 크기를 최적화할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Χειρισμός πρόχειρων μηνυμάτων σε C# - Απο
 linktitle: Χειρισμός πρόχειρων μηνυμάτων σε C# - Αποθήκευση email ως πρόχειρο
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να εφαρμόζετε τη διαχείριση πρόχειρων μηνυμάτων ηλεκτρονικού ταχυδρομείου σε C# χρησιμοποιώντας το Aspose.Email για .NET. Δημιουργήστε, επεξεργαστείτε και αποθηκεύστε πρόχειρα απρόσκοπτα.
-type: docs
 weight: 17
 url: /el/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Χειρισμός πρόχειρων μηνυμάτων σε C# - Αποθήκευση email ως πρόχειρο
+
 
 ## Εισαγωγή
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### Υποστηρίζει η βιβλιοθήκη Aspose.Email άλλες λειτουργίες που σχετίζονται με το email;
 
  Ναι, η βιβλιοθήκη Aspose.Email προσφέρει ένα ευρύ φάσμα δυνατοτήτων για εργασία με μηνύματα email, συμπεριλαμβανομένης της αποστολής, λήψης και χειρισμού email και συνημμένων. Μπορείτε να ανατρέξετε στην τεκμηρίωση για περισσότερες λεπτομέρειες:[εδώ](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

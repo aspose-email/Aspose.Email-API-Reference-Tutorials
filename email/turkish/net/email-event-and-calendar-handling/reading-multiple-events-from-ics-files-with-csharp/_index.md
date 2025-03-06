@@ -3,10 +3,16 @@ title: C# ile ICS Dosyalarından Çoklu Olayları Okumak
 linktitle: C# ile ICS Dosyalarından Çoklu Olayları Okumak
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak ICS dosyalarından birden fazla olayı çıkarmayı öğrenin. Verimli etkinlik yönetimi için kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 14
 url: /tr/net/email-event-and-calendar-handling/reading-multiple-events-from-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile ICS Dosyalarından Çoklu Olayları Okumak
+
 
 Günümüzün dijital çağında etkinlikleri ve randevuları verimli bir şekilde yönetmek hem işletmeler hem de bireyler için çok önemlidir. C# uygulamanızda takvim verileriyle çalışıyorsanız sıklıkla ICS (iCalendar) dosyalarıyla karşılaşırsınız. Bu dosyalar, olay bilgilerini standart bir biçimde içerir; bu da bunların paylaşılmasını ve işlenmesini kolaylaştırır. Bu adım adım kılavuzda, C# ve güçlü Aspose.Email for .NET kütüphanesini kullanarak ICS dosyalarından birden fazla olayın nasıl okunacağını keşfedeceğiz.
 
@@ -73,3 +79,9 @@ Evet, Aspose.Email for .NET'i üretim ortamında kullanmak için geçerli bir li
 
 5. ### Aspose.Email for .NET için daha fazla örneği ve kaynağı nerede bulabilirim?
  API belgelerini ve kod örneklerini şu adreste inceleyebilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

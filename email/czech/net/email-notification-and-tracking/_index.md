@@ -3,10 +3,16 @@ title: Vylepšete komunikaci pomocí e-mailových upozornění a sledování
 linktitle: E-mailové upozornění a sledování
 second_title: Aspose.Email .NET Email Processing API
 description: Implementujte e-mailové upozornění a funkce sledování pomocí výukových programů Aspose.Email for .NET. Automatizujte oznámení a získejte přehled o interakcích s příjemci e-mailu.
-type: docs
 weight: 16
 url: /cs/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vylepšete komunikaci pomocí e-mailových upozornění a sledování
+
 
 ## Úvod
 
@@ -27,3 +33,9 @@ Naučte se přijímat e-mailová upozornění v C# pomocí Aspose.Email pro .NET
 Naučte se používat kód C# k vyžádání potvrzení o přečtení e-mailu pomocí Aspose.Email pro .NET, což zlepšuje sledování komunikace.
 ### [Sledování průběhu převodu e-mailových dokumentů pomocí kódu C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Naučte se implementovat e-mailové upozornění a sledování pomocí Aspose.Email pro .NET. Podrobný průvodce s příklady kódu. Vylepšete svou e-mailovou komunikaci ještě dnes!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

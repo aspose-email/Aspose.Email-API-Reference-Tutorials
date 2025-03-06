@@ -3,10 +3,16 @@ title: Lägga till nya TNEF-bilagor i C#
 linktitle: Lägga till nya TNEF-bilagor i C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du lägger till nya TNEF-bilagor i C# med Aspose.Email för .NET. Steg-för-steg-guide med kodexempel för sömlös integration.
-type: docs
 weight: 12
 url: /sv/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lägga till nya TNEF-bilagor i C#
+
 
 ## Introduktion till TNEF Attachments och Aspose.Email för .NET
 
@@ -88,3 +94,9 @@ Ja, du kan använda Aspose.Email för .NET i både personliga och kommersiella p
 ### Var kan jag hitta mer dokumentation och exempel?
 
  För mer detaljerad dokumentation och kodexempel kan du besöka[Aspose.Email för .NET-dokumentation](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

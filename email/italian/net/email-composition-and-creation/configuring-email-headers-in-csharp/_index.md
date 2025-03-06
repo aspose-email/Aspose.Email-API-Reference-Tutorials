@@ -3,10 +3,16 @@ title: Configurazione delle intestazioni di posta elettronica in C#
 linktitle: Configurazione delle intestazioni di posta elettronica in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come configurare intestazioni di posta elettronica personalizzate in C# utilizzando Aspose.Email per .NET. Guida passo passo con codice sorgente incluso. Migliora il controllo e la sicurezza della posta elettronica.
-type: docs
 weight: 17
 url: /it/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configurazione delle intestazioni di posta elettronica in C#
+
 
 La comunicazione e-mail è diventata parte integrante delle moderne interazioni personali e aziendali. Sebbene il contenuto di un’e-mail sia fondamentale, le intestazioni che accompagnano l’e-mail sono altrettanto significative. Le intestazioni delle email forniscono informazioni preziose sul messaggio, sul mittente, sul destinatario e altro ancora. La configurazione delle intestazioni di posta elettronica in C# utilizzando Aspose.Email per .NET offre un modo potente per personalizzare e controllare le informazioni incorporate nei messaggi di posta elettronica. In questo articolo, esploreremo come configurare le intestazioni delle e-mail passo dopo passo utilizzando la libreria Aspose.Email per .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email offre funzionalità di convalida per garantire che le intestazioni 
 ### Le intestazioni delle email fanno distinzione tra maiuscole e minuscole?
 
 Sì, le intestazioni delle email non fanno distinzione tra maiuscole e minuscole. Tuttavia, è consigliabile mantenere le maiuscole coerenti per una migliore compatibilità.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

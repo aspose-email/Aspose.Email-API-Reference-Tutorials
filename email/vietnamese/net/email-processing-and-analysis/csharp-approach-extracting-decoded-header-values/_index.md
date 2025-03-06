@@ -3,10 +3,16 @@ title: Cách tiếp cận C# - Trích xuất các giá trị tiêu đề đượ
 linktitle: Cách tiếp cận C# - Trích xuất các giá trị tiêu đề được giải mã
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách trích xuất các giá trị tiêu đề email đã giải mã trong C# bằng Aspose.Email for .NET. Hướng dẫn toàn diện với các ví dụ về mã.
-type: docs
 weight: 17
 url: /vi/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Cách tiếp cận C# - Trích xuất các giá trị tiêu đề được giải mã
+
 
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình sử dụng Aspose.Email cho .NET để trích xuất các giá trị tiêu đề được giải mã từ thư email. Aspose.Email for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều khía cạnh khác nhau của email, bao gồm đọc và thao tác các tiêu đề email.
 
@@ -77,3 +83,9 @@ Trong đoạn mã trên, chúng tôi thực hiện các bước sau:
 ## Phần kết luận
 
 Trong hướng dẫn này, bạn đã học cách sử dụng Aspose.Email cho .NET để trích xuất các giá trị tiêu đề được giải mã từ các email. Aspose.Email for .NET cung cấp một bộ công cụ toàn diện cho phép các nhà phát triển làm việc hiệu quả với các email, bao gồm cả việc xử lý các tiêu đề.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

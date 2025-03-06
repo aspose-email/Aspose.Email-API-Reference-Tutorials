@@ -3,10 +3,16 @@ title: Extrahování a analýza e-mailových záhlaví pomocí Aspose.Email
 linktitle: Extrahování a analýza e-mailových záhlaví pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Odemkněte sílu analýzy záhlaví e-mailu s Aspose.Email pro Java. Zjistěte, jak extrahovat a analyzovat záhlaví e-mailů pro vylepšené sledování a zabezpečení e-mailů.
-type: docs
 weight: 12
 url: /cs/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahování a analýza e-mailových záhlaví pomocí Aspose.Email
+
 
 ## Úvod do extrahování a analýzy e-mailových záhlaví pomocí Aspose.Email
 
@@ -107,3 +113,9 @@ Analýza hlaviček e-mailů je zásadní z různých důvodů, jako je sledován
 ### Mohu automatizovat analýzu hlaviček e-mailů pomocí Aspose.Email?
 
 Ano, můžete automatizovat analýzu hlaviček e-mailů pomocí Aspose.Email integrací do vašich aplikací Java. Knihovna poskytuje pohodlné metody pro práci s hlavičkami e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Menetapkan Header Prioritas dan Pentingnya dengan Aspose.Email
 linktitle: Menetapkan Header Prioritas dan Pentingnya dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Tingkatkan dampak email Anda dengan menetapkan header prioritas dan kepentingan dengan Aspose.Email untuk Java. Pelajari caranya dalam panduan langkah demi langkah ini.
-type: docs
 weight: 14
 url: /id/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menetapkan Header Prioritas dan Pentingnya dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -94,3 +100,9 @@ Meskipun Anda dapat mengatur tajuk penting, perlu diingat bahwa dampak sebenarny
 ### Bagaimana cara menangani lampiran email dengan Aspose.Email?
 
  Menangani lampiran email dengan Aspose.Email sangatlah mudah. Anda dapat menggunakan`Attachment` kelas untuk menambahkan lampiran ke pesan email Anda. Untuk panduan mendetail, lihat dokumentasi Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

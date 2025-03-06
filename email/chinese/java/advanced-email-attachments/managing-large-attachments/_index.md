@@ -3,10 +3,16 @@ title: 在 Aspose.Email 中管理大型附件
 linktitle: 在 Aspose.Email 中管理大型附件
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 使用 Aspose.Email for Java 高效管理大型电子邮件附件。用于简化 Java 应用程序中附件处理的分步指南和源代码。
-type: docs
 weight: 11
 url: /zh/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Email 中管理大型附件
+
 
 ## 在 Aspose.Email for Java 中管理大型附件简介
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### 我可以压缩附件以减小其大小吗？
 
 是的，您可以在发送附件之前对其进行压缩以减小其大小。 Aspose.Email 提供了以编程方式压缩和解压缩附件的功能。您可以实施此操作来优化电子邮件附件的大小。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

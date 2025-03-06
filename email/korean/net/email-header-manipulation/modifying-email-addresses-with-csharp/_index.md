@@ -3,10 +3,16 @@ title: C#을 사용하여 이메일 주소 수정
 linktitle: C#을 사용하여 이메일 주소 수정
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email의 도움으로 C#을 사용하여 이메일 주소를 수정하는 방법을 알아보세요. 이메일 주소를 효과적으로 조작하려면 이 단계별 가이드를 따르세요.
-type: docs
 weight: 10
 url: /ko/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 이메일 주소 수정
+
 
 ## 소개
 
@@ -132,3 +138,9 @@ Aspose.Email은 강력한 선택이지만 MimeKit 및 OpenPop.NET과 같은 다�
 ## 결론
 
 이 가이드에서는 C# 및 .NET용 Aspose.Email을 사용하여 이메일 주소 수정의 세계를 탐색하는 여정을 시작했습니다. 단계별 지침을 따르고 제공된 소스 코드를 활용함으로써 이제 애플리케이션에서 이메일 주소를 효과적으로 수정할 수 있는 기술을 갖추게 되었습니다. 새로 발견한 지식과 결합된 Aspose.Email의 기능은 의심할 여지 없이 이메일 조작 노력을 간소화할 것입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

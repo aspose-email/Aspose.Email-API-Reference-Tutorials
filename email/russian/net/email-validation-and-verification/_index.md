@@ -3,10 +3,16 @@ title: Проверка и проверка электронной почты
 linktitle: Проверка и проверка электронной почты
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Внедрите надежные механизмы проверки и проверки электронной почты, используя руководства Aspose.Email для .NET. Повысьте точность и безопасность связи.
-type: docs
 weight: 17
 url: /ru/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Проверка и проверка электронной почты
+
 
 ## Введение
 
@@ -23,3 +29,9 @@ url: /ru/net/email-validation-and-verification/
 ## Учебные пособия по проверке и подтверждению электронной почты
 ### [Методы проверки электронной почты в коде C#](./email-validation-techniques-in-csharp-code/)
 Узнайте, как эффективно проверять адреса электронной почты на C# с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом. Повысьте точность данных и удобство для пользователей.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

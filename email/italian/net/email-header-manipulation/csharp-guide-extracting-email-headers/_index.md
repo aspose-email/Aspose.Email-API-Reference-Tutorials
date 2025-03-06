@@ -3,10 +3,16 @@ title: Guida C# estrazione delle intestazioni dei messaggi di posta elettronica
 linktitle: Guida C# estrazione delle intestazioni dei messaggi di posta elettronica
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come estrarre le intestazioni di posta elettronica in C# utilizzando Aspose.Email per .NET. Guida passo passo con codice sorgente per un'analisi efficiente della posta elettronica.
-type: docs
 weight: 15
 url: /it/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Guida C# estrazione delle intestazioni dei messaggi di posta elettronica
+
 
 Ti sei mai chiesto come estrarre le intestazioni delle email usando C#? Le intestazioni delle email contengono informazioni preziose sul mittente, sul destinatario, sull'oggetto e su vari altri dettagli. In questa guida ti guideremo attraverso il processo passo passo di estrazione delle intestazioni delle email utilizzando la potente libreria Aspose.Email per .NET. Questa libreria fornisce un set completo di funzionalità per lavorare con i messaggi di posta elettronica nelle applicazioni .NET.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Dove posso accedere alla documentazione di Aspose.Email e scaricare la libreria?
 
  Puoi trovare la documentazione su[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Per scaricare la libreria, visitare[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

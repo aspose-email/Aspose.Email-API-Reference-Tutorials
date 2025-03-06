@@ -3,10 +3,16 @@ title: Vkládání obrázků jako příloh do Aspose.Email
 linktitle: Vkládání obrázků jako příloh do Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se vkládat obrázky jako přílohy do Aspose.Email for Java. Povyšte svou e-mailovou komunikaci pomocí vizuálně poutavého obsahu.
-type: docs
 weight: 14
 url: /cs/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vkládání obrázků jako příloh do Aspose.Email
+
 
 ## Vkládání obrázků jako příloh do Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email for Java podporuje různé formáty obrázků, včetně JPEG, PNG, 
 ### Existují nějaká omezení velikosti vložených obrázků?
 
 Velikost vložených obrázků může ovlivnit doručování e-mailů a zážitek příjemce. Je vhodné optimalizovat obrázky pro e-mail, abyste se vyhnuli velkým velikostem souborů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

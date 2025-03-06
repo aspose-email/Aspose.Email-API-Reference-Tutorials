@@ -3,10 +3,16 @@ title: Mengatur Teks Alternatif untuk Gambar - Panduan C#
 linktitle: Mengatur Teks Alternatif untuk Gambar - Panduan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengatur teks alternatif untuk gambar dalam email menggunakan Aspose.Email untuk .NET. Pastikan aksesibilitas dengan teks alternatif yang jelas. Dokumentasi dan kode disertakan.
-type: docs
 weight: 15
 url: /id/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengatur Teks Alternatif untuk Gambar - Panduan C#
+
 
 Panduan ini akan memandu Anda melalui proses pengaturan teks alternatif untuk gambar dalam email menggunakan Aspose.Email untuk .NET. Teks alternatif, juga dikenal sebagai "teks alternatif", digunakan untuk memberikan deskripsi tekstual suatu gambar jika gambar tidak dapat ditampilkan. Aspose.Email untuk .NET adalah perpustakaan canggih yang memungkinkan Anda bekerja dengan email dan lampiran dalam berbagai format. Dalam panduan ini, kami akan fokus pada pengaturan teks alternatif untuk gambar dalam pesan email menggunakan C#.
 
@@ -81,3 +87,9 @@ Untuk menambahkan gambar sebagai sumber tertaut dalam email, Anda dapat mengguna
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Email untuk .NET?
 
  Anda dapat menemukan dokumentasi, tutorial, dan contoh lebih detail tentang cara bekerja dengan Aspose.Email untuk .NET di[Referensi API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

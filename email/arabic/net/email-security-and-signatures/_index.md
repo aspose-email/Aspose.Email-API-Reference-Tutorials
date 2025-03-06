@@ -3,10 +3,16 @@ title: أمن البريد الإلكتروني والتوقيعات
 linktitle: أمن البريد الإلكتروني والتوقيعات
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتنفيذ إجراءات أمان قوية للبريد الإلكتروني وتوقيعات مخصصة باستخدام Aspose.Email لبرامج .NET التعليمية. ضمان التواصل الآمن والعلامات التجارية المهنية.
-type: docs
 weight: 19
 url: /ar/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# أمن البريد الإلكتروني والتوقيعات
+
 
 ## مقدمة
 
@@ -25,3 +31,9 @@ url: /ar/net/email-security-and-signatures/
 
 ### [توقيع رسائل البريد الإلكتروني مع DKIM باستخدام رمز C#](./signing-emails-with-dkim-using-csharp-code/)
 تعلم كيفية تأمين رسائل البريد الإلكتروني باستخدام DKIM باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر. تعزيز الثقة والأصالة في البريد الإلكتروني.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

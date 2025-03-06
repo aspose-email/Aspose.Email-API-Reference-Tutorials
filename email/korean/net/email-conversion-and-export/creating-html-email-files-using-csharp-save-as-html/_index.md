@@ -3,10 +3,16 @@ title: C#을 사용하여 HTML 이메일 파일 만들기 - HTML로 저장
 linktitle: C#을 사용하여 HTML 이메일 파일 만들기 - HTML로 저장
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 HTML 이메일 파일을 만드는 방법을 알아보세요. 원활한 이메일 사용자 정의를 위한 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 18
 url: /ko/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 HTML 이메일 파일 만들기 - HTML로 저장
+
 
 ## HTML 이메일 파일 생성 소개
 
@@ -113,3 +119,9 @@ C# 및 .NET용 Aspose.Email을 사용하여 HTML 이메일 파일을 생성하�
 ### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
 
  포괄적인 예제와 자세한 문서를 탐색할 수 있습니다.[Aspose.이메일 문서](https://reference.aspose.com/email/net) 페이지.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

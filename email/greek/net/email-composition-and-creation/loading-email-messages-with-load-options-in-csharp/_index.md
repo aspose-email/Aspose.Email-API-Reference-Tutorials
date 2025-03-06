@@ -3,10 +3,16 @@ title: Φόρτωση μηνυμάτων email με επιλογές φόρτω�
 linktitle: Φόρτωση μηνυμάτων email με επιλογές φόρτωσης σε C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να φορτώνετε μηνύματα email με το Aspose.Email για .NET σε C#. Εξερευνήστε βήμα προς βήμα οδηγίες και παραδείγματα πηγαίου κώδικα για αποτελεσματικό χειρισμό email.
-type: docs
 weight: 11
 url: /el/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Φόρτωση μηνυμάτων email με επιλογές φόρτωσης σε C#
+
 
 ## Εισαγωγή στο Aspose.Email για .NET
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### Τι πρέπει να κάνω εάν συναντήσω σφάλματα κατά τη φόρτωση μηνυμάτων ηλεκτρονικού ταχυδρομείου;
 
 Εάν αντιμετωπίσετε σφάλματα κατά τη φόρτωση του email, φροντίστε να τυλίξετε τον κωδικό φόρτωσης σε ένα μπλοκ δοκιμής για να χειριστείτε τις εξαιρέσεις. Αυτό θα σας βοηθήσει να εντοπίσετε και να αντιμετωπίσετε τυχόν προβλήματα που προκύπτουν.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

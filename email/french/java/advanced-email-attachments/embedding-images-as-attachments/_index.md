@@ -3,10 +3,16 @@ title: Incorporation d'images en tant que pièces jointes dans Aspose.Email
 linktitle: Incorporation d'images en tant que pièces jointes dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment intégrer des images en tant que pièces jointes dans Aspose.Email pour Java. Améliorez votre communication par courrier électronique avec un contenu visuellement attrayant.
-type: docs
 weight: 14
 url: /fr/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Incorporation d'images en tant que pièces jointes dans Aspose.Email
+
 
 ## Incorporation d'images en tant que pièces jointes dans Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email pour Java prend en charge divers formats d'image, notamment JPEG, P
 ### Existe-t-il des limitations sur la taille des images intégrées ?
 
 La taille des images intégrées peut avoir un impact sur la délivrabilité des e-mails et sur l'expérience du destinataire. Il est conseillé d'optimiser les images pour le courrier électronique afin d'éviter les fichiers de grande taille.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# 코드를 사용하여 이메일 문서 변환 진행 상황 추적
 linktitle: C# 코드를 사용하여 이메일 문서 변환 진행 상황 추적
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 이메일 알림 및 추적을 구현하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다. 오늘 이메일 커뮤니케이션을 강화해보세요!
-type: docs
 weight: 12
 url: /ko/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드를 사용하여 이메일 문서 변환 진행 상황 추적
+
 
 오늘날의 디지털 시대에 이메일 커뮤니케이션은 개인적 영역과 업무 영역 모두에서 중요한 역할을 합니다. 프로그래머라면 이메일 메시지를 프로그래밍 방식으로 처리하고 조작해야 하는 상황에 직면했을 것입니다. 일반적인 작업 중 하나는 이메일 문서 변환 진행 상황을 추적하는 것입니다. 이 문서에서는 C# 및 .NET용 Aspose.Email을 사용하여 프로세스를 단계별로 안내합니다.
 
@@ -101,3 +107,9 @@ Aspose.Email for .NET은 .NET 애플리케이션에서 이메일 메시지 작�
 당신은 탐색 할 수 있습니다[.NET API 참조용 Aspose.Email](https://reference.aspose.com/email/net/)튜토리얼, 예시, 자세한 문서를 확인하세요.
 
 이제 C# 애플리케이션에서 전자 메일 문서 변환 진행 상황을 자신 있게 처리할 수 있는 준비가 완료되었습니다. 즐거운 코딩하세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

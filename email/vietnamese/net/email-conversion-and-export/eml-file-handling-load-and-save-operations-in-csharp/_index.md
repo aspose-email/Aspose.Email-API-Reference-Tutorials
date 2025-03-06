@@ -3,10 +3,16 @@ title: Xử lý tệp EML - Thao tác tải và lưu trong C#
 linktitle: Xử lý tệp EML - Thao tác tải và lưu trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách xử lý tệp EML trong C# bằng Aspose.Email for .NET. Hướng dẫn từng bước với các ví dụ về mã để tải, sửa đổi và lưu email.
-type: docs
 weight: 13
 url: /vi/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý tệp EML - Thao tác tải và lưu trong C#
+
 
 ## Giới thiệu về tệp EML
 
@@ -150,3 +156,9 @@ Có, Aspose.Email cho phép bạn tải nhiều tệp EML theo đợt, giúp vi�
 ### Aspose.Email có phù hợp với các dự án thương mại không?
 
 Có, Aspose.Email là một thư viện đa năng phù hợp cho cả dự án cá nhân và thương mại, cung cấp các tính năng mạnh mẽ để thao tác với email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

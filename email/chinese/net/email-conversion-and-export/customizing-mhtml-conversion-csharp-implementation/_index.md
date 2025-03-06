@@ -3,10 +3,16 @@ title: 自定义 MHTML 转换 - C# 实现
 linktitle: 自定义 MHTML 转换 - C# 实现
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 自定义 MHTML 转换。包含 C# 源代码的分步指南。
-type: docs
 weight: 10
 url: /zh/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 自定义 MHTML 转换 - C# 实现
+
 
 ## 自定义 MHTML 转换简介
 
@@ -67,3 +73,9 @@ Aspose.Email for .NET 提供了一套全面的类和方法，允许开发人员�
 ### Aspose.Email for .NET 适合小型和大型项目吗？
 
 是的，Aspose.Email for .NET 被设计为可扩展的，使其适合各种规模的项目。它广泛应用于小型应用程序和大型企业级解决方案。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

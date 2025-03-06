@@ -3,10 +3,16 @@ title: EML konvertálása MSG formátumba C# használatával
 linktitle: EML konvertálása MSG formátumba C# használatával
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan lehet az EML-t MSG-vé konvertálni C# és Aspose.Email for .NET használatával. Átfogó útmutató kódpéldákkal a hatékony e-mail formátum konvertáláshoz.
-type: docs
 weight: 14
 url: /hu/net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# EML konvertálása MSG formátumba C# használatával
+
 
 ## Bevezetés
 
@@ -84,3 +90,9 @@ Igen, a mellékelt kód megőrzi a mellékleteket, miközben az EML-t MSG formá
 ### Testreszabhatom az MSG kimeneti formátumot az Aspose.Email használatával?
 
 Természetesen az Aspose.Email for .NET különféle lehetőségeket kínál a kimeneti MSG formátum testreszabására az Ön igényei alapján.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

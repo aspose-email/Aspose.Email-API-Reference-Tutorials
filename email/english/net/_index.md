@@ -1,12 +1,17 @@
 ---
 title: Email Composition, Conversion & Processing with Aspose.Email Tutorials 
 linktitle: Aspose.Email for .NET Tutorials
-type: docs
 weight: 10
 url: /net/
 description: Optimize email capabilities with Aspose.Email for .NET tutorials. Learn composition, conversion, and processing for advanced email management.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Email Composition, Conversion & Processing with Aspose.Email Tutorials
+
 
 ## Introduction
 
@@ -45,3 +50,9 @@ Implement robust email validation and verification mechanisms using Aspose.Email
 Streamline email file storage and retrieval using Aspose.Email for .NET tutorials. Learn to manage and access email messages and attachments programmatically.
 ### [Email Security and Signatures](./email-security-and-signatures/)
 Implement robust email security measures and personalized signatures with Aspose.Email for .NET tutorials. Ensure secure communication and professional branding.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Mempertahankan Batas Asli menggunakan Kode C#
 linktitle: Mempertahankan Batas Asli menggunakan Kode C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mempertahankan batasan asli lampiran email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber.
-type: docs
 weight: 13
 url: /id/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mempertahankan Batas Asli menggunakan Kode C#
+
 
 ## Pengantar Melestarikan Batasan Asli
 
@@ -107,3 +113,9 @@ Anda dapat menggunakan perpustakaan Aspose.Email untuk memuat dan memanipulasi l
 ### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Email untuk .NET?
 
  Anda dapat menemukan dokumentasi dan contoh yang komprehensif di[Dokumentasi Aspose.Email](https://reference.aspose.com/email/net/) halaman.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

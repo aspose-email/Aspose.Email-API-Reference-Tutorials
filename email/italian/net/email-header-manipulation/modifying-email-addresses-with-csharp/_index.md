@@ -3,10 +3,16 @@ title: Modificare indirizzi email con C#
 linktitle: Modificare indirizzi email con C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come modificare gli indirizzi e-mail utilizzando C# con l'aiuto di Aspose.Email per .NET. Segui questa guida passo passo per manipolare gli indirizzi email in modo efficace.
-type: docs
 weight: 10
 url: /it/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Modificare indirizzi email con C#
+
 
 ## introduzione
 
@@ -132,3 +138,9 @@ Sebbene Aspose.Email sia una scelta affidabile, anche altre librerie come MimeKi
 ## Conclusione
 
 In questa guida, abbiamo intrapreso un viaggio per esplorare il mondo della modifica degli indirizzi e-mail utilizzando C# e Aspose.Email per .NET. Seguendo le istruzioni passo passo e utilizzando il codice sorgente fornito, ora possiedi le competenze per modificare in modo efficace gli indirizzi email nelle tue applicazioni. Le funzionalità di Aspose.Email combinate con le tue nuove conoscenze semplificheranno senza dubbio i tuoi sforzi di manipolazione della posta elettronica.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

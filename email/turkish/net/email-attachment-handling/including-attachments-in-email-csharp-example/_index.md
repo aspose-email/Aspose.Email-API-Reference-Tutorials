@@ -3,10 +3,16 @@ title: E-postaya Ekleri Ekleme - C# Örneği
 linktitle: E-postaya Ekleri Ekleme - C# Örneği
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak e-postaya ekleri nasıl ekleyeceğinizi öğrenin. C# kod örneğiyle adım adım kılavuz.
-type: docs
 weight: 10
 url: /tr/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-postaya Ekleri Ekleme - C# Örneği
+
 
 ## E-postaya Ek Eklemeye Giriş
 
@@ -111,3 +117,9 @@ Evet, Aspose.Email'i SMTPS veya STARTTLS gibi protokolleri kullanarak güvenli b
 ### Aspose.Email'in yetenekleri hakkında daha fazla bilgiyi nerede bulabilirim?
 
  Aspose.Email'in özellikleri, sınıfları ve yöntemleri hakkında daha ayrıntılı bilgi için bkz.[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Mengekstrak Lampiran dari Email - Panduan C#
 linktitle: Mengekstrak Lampiran dari Email - Panduan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak lampiran email langkah demi langkah menggunakan Aspose.Email untuk .NET. Tangani berbagai format & simpan dengan mudah.
-type: docs
 weight: 14
 url: /id/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengekstrak Lampiran dari Email - Panduan C#
+
 
 ## Pengantar Mengekstrak Lampiran dari Email - Panduan C# menggunakan Aspose.Email untuk .NET
 
@@ -114,3 +120,9 @@ Aspose.Email mendukung .NET Framework dan .NET Core.
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Email?
 
  Untuk dokumentasi dan contoh terperinci, lihat[Dokumentasi Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

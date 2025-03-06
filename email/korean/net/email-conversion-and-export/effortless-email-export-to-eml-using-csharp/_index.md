@@ -3,10 +3,16 @@ title: C#을 사용하여 EML로 손쉽게 이메일 내보내기
 linktitle: C#을 사용하여 EML로 손쉽게 이메일 내보내기
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 이메일을 EML 형식으로 쉽게 내보낼 수 있습니다. 소스 코드 예제를 통해 단계별로 알아보세요.
-type: docs
 weight: 11
 url: /ko/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 EML로 손쉽게 이메일 내보내기
+
 
 ## EML로 간편한 이메일 내보내기 소개
 
@@ -175,3 +181,9 @@ C# 및 .NET용 Aspose.Email을 사용하여 이메일을 EML 형식으로 내보
 ### 튜토리얼에서 제공하는 소스코드가 완성되었나요?
 
 예, 튜토리얼에서는 .NET용 Aspose.Email을 사용하여 이메일을 EML 형식으로 내보내는 방법을 보여주는 완전한 소스 코드를 제공합니다. 이 코드를 시작점으로 사용할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

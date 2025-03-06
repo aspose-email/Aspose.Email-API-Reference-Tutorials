@@ -3,10 +3,16 @@ title: Aspose.Email の電子メール ヘッダー
 linktitle: Aspose.Email の電子メール ヘッダー
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java で電子メール ヘッダーの力を解き放ちます。電子メール ヘッダーを簡単に設定および取得する方法を学びます。
-type: docs
 weight: 10
 url: /ja/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email の電子メール ヘッダー
+
 
 ## 電子メールヘッダーの概要
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### 大量の電子メールのバッチから電子メール ヘッダーを抽出するにはどうすればよいですか?
 
 Aspose.Email のバッチ処理機能を使用して、複数の電子メールからヘッダーを効率的に抽出できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

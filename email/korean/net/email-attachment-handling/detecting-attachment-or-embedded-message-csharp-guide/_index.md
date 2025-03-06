@@ -3,10 +3,16 @@ title: 첨부 파일 또는 포함된 메시지 감지 - C# 가이드
 linktitle: 첨부 파일 또는 포함된 메시지 감지 - C# 가이드
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 마스터 이메일 첨부 및 포함된 메시지 감지를 수행합니다. 당사의 종합 가이드를 통해 귀하의 이메일 처리 능력을 향상시키십시오.
-type: docs
 weight: 13
 url: /ko/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 첨부 파일 또는 포함된 메시지 감지 - C# 가이드
+
 
 ## 첨부 파일 또는 포함된 메시지 감지 소개 - C# 가이드
 
@@ -106,3 +112,9 @@ foreach (AlternateView alternateView in message.AlternateViews)
 ### 첨부 파일 및 포함된 메시지의 처리를 사용자 정의할 수 있습니까?
 
 물론 특정 애플리케이션의 요구 사항에 맞게 첨부 파일 및 포함된 메시지의 처리를 맞춤화할 수 있습니다. Aspose.Email은 이러한 목적을 위해 유연한 API를 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

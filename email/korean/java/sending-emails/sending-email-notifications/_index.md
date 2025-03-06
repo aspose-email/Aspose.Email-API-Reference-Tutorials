@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 이메일 알림 보내기
 linktitle: Aspose.Email을 사용하여 이메일 알림 보내기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 이메일 알림을 효과적으로 보내는 방법을 알아보세요. 원활한 의사소통을 위한 코드 예제와 FAQ가 포함된 종합 가이드입니다.
-type: docs
 weight: 17
 url: /ko/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 이메일 알림 보내기
+
 
 ## 소개
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### 이메일 알림 전달 상태 및 추적을 어떻게 처리할 수 있나요?
    - 추가 도구나 서비스를 사용하여 이메일 DSN(배달 상태 알림)을 처리하고 이메일 열기 및 클릭을 추적하는 논리를 구현할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

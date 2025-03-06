@@ -3,10 +3,16 @@ title: C# 접근 방식 - 디코딩된 헤더 값 추출
 linktitle: C# 접근 방식 - 디코딩된 헤더 값 추출
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 디코딩된 이메일 헤더 값을 추출하는 방법을 알아보세요. 코드 예제가 포함된 종합 가이드입니다.
-type: docs
 weight: 17
 url: /ko/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 접근 방식 - 디코딩된 헤더 값 추출
+
 
 이 튜토리얼에서는 .NET용 Aspose.Email을 사용하여 이메일 메시지에서 디코딩된 헤더 값을 추출하는 과정을 안내합니다. Aspose.Email for .NET은 개발자가 이메일 헤더 읽기 및 조작을 포함하여 이메일 메시지의 다양한 측면을 작업할 수 있도록 지원하는 강력한 라이브러리입니다.
 
@@ -77,3 +83,9 @@ class Program
 ## 결론
 
 이 튜토리얼에서는 .NET용 Aspose.Email을 활용하여 이메일 메시지에서 디코딩된 헤더 값을 추출하는 방법을 배웠습니다. .NET용 Aspose.Email은 개발자가 헤더 처리를 포함하여 이메일 메시지를 효율적으로 작업할 수 있도록 지원하는 포괄적인 도구 세트를 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

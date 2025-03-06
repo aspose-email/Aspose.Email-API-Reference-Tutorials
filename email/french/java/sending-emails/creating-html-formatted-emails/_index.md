@@ -3,10 +3,16 @@ title: Création d'e-mails au format HTML avec Aspose.Email
 linktitle: Création d'e-mails au format HTML avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Apprenez à créer de superbes e-mails HTML avec Aspose.Email pour Java. Guide étape par étape avec des exemples de code pour une communication efficace par e-mail.
-type: docs
 weight: 11
 url: /fr/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Création d'e-mails au format HTML avec Aspose.Email
+
 
 ## Introduction
 
@@ -121,3 +127,10 @@ Aspose.Email pour Java offre des fonctionnalités permettant de gérer les notif
 ### Où puis-je trouver des ressources et de la documentation supplémentaires pour Aspose.Email pour Java ?
  Vous pouvez trouver une documentation complète, des didacticiels et des exemples sur la page de documentation de l'API Aspose.Email pour Java :[Aspose.Email pour la documentation de l'API Java](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email
 linktitle: Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak dostosować nagłówki i stopki SMTP za pomocą Aspose.Email dla Java. Ulepsz swoją komunikację e-mailową dzięki spersonalizowanemu brandingowi i przekazom.
-type: docs
 weight: 16
 url: /pl/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -107,3 +113,9 @@ Tak, możesz używać formatowania HTML w treści wiadomości e-mail, w tym w na
 ### Jakich ustawień SMTP powinienem używać, aby wysyłać spersonalizowane e-maile?
 
 Powinieneś użyć ustawień SMTP dostarczonych przez dostawcę usług e-mail lub dział IT Twojej organizacji. Ustawienia te zazwyczaj obejmują adres serwera SMTP, numer portu i poświadczenia uwierzytelniania.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-postrubriker i Aspose.Email
 linktitle: E-postrubriker i Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lås upp kraften i e-postrubriker med Aspose.Email för Java. Lär dig hur du ställer in och hämtar e-postrubriker utan ansträngning.
-type: docs
 weight: 10
 url: /sv/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-postrubriker i Aspose.Email
+
 
 ## Introduktion till e-posthuvuden
 
@@ -92,3 +98,9 @@ Rubriken "Mottaget" är en serie poster som spårar e-postmeddelandets väg frå
 ### Hur kan jag extrahera e-postrubriker från ett stort antal e-postmeddelanden?
 
 Du kan använda Aspose.Emails batchbehandlingsfunktioner för att effektivt extrahera rubriker från flera e-postmeddelanden.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

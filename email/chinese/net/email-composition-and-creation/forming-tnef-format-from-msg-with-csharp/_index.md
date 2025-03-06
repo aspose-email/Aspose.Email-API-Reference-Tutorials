@@ -3,10 +3,16 @@ title: 使用 C# 从 MSG 形成 TNEF 格式
 linktitle: 使用 C# 从 MSG 形成 TNEF 格式
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 将 MSG 文件转换为 TNEF 格式。无缝创建丰富的电子邮件内容。
-type: docs
 weight: 13
 url: /zh/net/email-composition-and-creation/forming-tnef-format-from-msg-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 从 MSG 形成 TNEF 格式
+
 
 ##  TNEF 格式和 MSG 文件简介
 
@@ -102,3 +108,9 @@ TNEF 格式允许在电子邮件中封装丰富的文本和多媒体元素，从
 ### 在哪里可以了解有关 Aspose.Email for .NET 的更多信息？
 
 您可以在以下位置找到 Aspose.Email for .NET 的详细文档和资源：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/)。本文档将帮助您探索该库的特性和功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 이메일에 첨부 파일 포함 - C# 예
 linktitle: 이메일에 첨부 파일 포함 - C# 예
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 이메일에 첨부 파일을 포함하는 방법을 알아보세요. C# 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 10
 url: /ko/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일에 첨부 파일 포함 - C# 예
+
 
 ## 이메일에 첨부 파일을 포함하는 방법 소개
 
@@ -111,3 +117,9 @@ class Program
 ### Aspose.Email의 기능에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
  Aspose.Email의 기능, 클래스, 메서드에 대한 자세한 내용은 다음을 참조하세요.[Aspose.Email API 참조](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

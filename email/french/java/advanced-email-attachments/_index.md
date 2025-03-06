@@ -3,10 +3,16 @@ title: Pièces jointes avancées avec Aspose.Email pour Java
 linktitle: Pièces jointes avancées avec Aspose.Email pour Java
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Maîtrisez les techniques avancées de pièces jointes aux e-mails avec Aspose.Email pour Java. Explorez des didacticiels pour gérer efficacement les pièces jointes.
-type: docs
 weight: 13
 url: /fr/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Pièces jointes avancées avec Aspose.Email pour Java
+
 
 Les pièces jointes aux e-mails jouent un rôle central dans la communication moderne, permettant aux utilisateurs de partager des documents, des images et des fichiers de manière transparente. Aspose.Email for Java permet aux développeurs de prendre le contrôle des pièces jointes aux e-mails et de mettre en œuvre efficacement des techniques avancées.
 
@@ -35,3 +41,9 @@ Découvrez comment extraire facilement des pièces jointes à des e-mails à l'a
 Découvrez comment intégrer des images en tant que pièces jointes dans Aspose.Email pour Java. Améliorez votre communication par courrier électronique avec un contenu visuellement attrayant.
 ### [Utilisation d'Aspose.Email pour les pièces jointes de documents](./using-aspose-email-for-document-attachments/)
 Découvrez comment gérer les pièces jointes aux documents dans les e-mails Java à l'aide d'Aspose.Email pour Java. Créez, envoyez et extrayez facilement des pièces jointes à des documents.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

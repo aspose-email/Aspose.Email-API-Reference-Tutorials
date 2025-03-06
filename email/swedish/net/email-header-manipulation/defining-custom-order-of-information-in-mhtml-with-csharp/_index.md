@@ -3,10 +3,16 @@ title: Definiera anpassad informationsordning i MHTML med C#
 linktitle: Definiera anpassad informationsordning i MHTML med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du anpassar MHTML-ordning med C# & Aspose.Email för .NET. Steg-för-steg-guide med kod för effektivt informationsarrangemang. Öka användarupplevelsen nu!
-type: docs
 weight: 14
 url: /sv/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definiera anpassad informationsordning i MHTML med C#
+
 
 När det gäller e-posthantering är möjligheten att anpassa informationsordningen i MHTML-e-postmeddelanden en värdefull funktion. Aspose.Email för .NET erbjuder en robust lösning för att uppnå detta. I den här artikeln guidar vi dig genom processen steg för steg.
 
@@ -80,3 +86,10 @@ en värld där effektiv e-posthantering är av största vikt, visar sig Aspose.E
 ### 5. Var kan jag hitta ytterligare resurser och support för Aspose.Email för .NET?
 
 -  Du kan få tillgång till omfattande dokumentation, kodexempel och support på[Aspose.Email för .NET API-dokumentation](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

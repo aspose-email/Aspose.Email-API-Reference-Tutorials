@@ -3,10 +3,16 @@ title: Extrahování příloh z e-mailu - C# Návod
 linktitle: Extrahování příloh z e-mailu - C# Návod
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se extrahovat e-mailové přílohy krok za krokem pomocí Aspose.Email pro .NET. Zvládněte různé formáty a snadno ukládejte.
-type: docs
 weight: 14
 url: /cs/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahování příloh z e-mailu - C# Návod
+
 
 ## Úvod do extrahování příloh z e-mailu - C# Návod pomocí Aspose.Email pro .NET
 
@@ -114,3 +120,9 @@ Aspose.Email podporuje .NET Framework a .NET Core.
 ### Kde najdu více informací o Aspose.Email?
 
  Podrobnou dokumentaci a příklady naleznete na[Dokumentace Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Manipulatie van e-mailheaders
 linktitle: Manipulatie van e-mailheaders
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Bewerk e-mailheaders efficiënt met behulp van Aspose.Email voor .NET-tutorials. Leer headers extraheren, wijzigen en personaliseren voor verbeterde communicatie.
-type: docs
 weight: 14
 url: /nl/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulatie van e-mailheaders
+
 
 ## Invoering
 
@@ -33,3 +39,9 @@ Leer hoe u de MHTML-volgorde kunt aanpassen met C# en Aspose.Email voor .NET. St
 Leer hoe u e-mailheaders kunt extraheren in C# met behulp van Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode voor efficiënte e-mailanalyse. 
 ### [Aangepaste headers opgeven in C#](./specifying-custom-headers-in-csharp/)
 Leer hoe u aangepaste headers kunt opgeven in C# met behulp van Aspose.Email voor .NET om de e-mailcommunicatie te verbeteren. Deze stapsgewijze handleiding biedt inzicht in het maken van gepersonaliseerde e-mailheaders voor verbeterde betrokkenheid.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

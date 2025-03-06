@@ -3,10 +3,16 @@ title: Enrichir les métadonnées des e-mails via les en-têtes avec Aspose.Emai
 linktitle: Enrichir les métadonnées des e-mails via les en-têtes avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Améliorez les métadonnées des e-mails avec Aspose.Email pour Java. Découvrez comment enrichir les en-têtes d'e-mails pour un suivi et une personnalisation améliorés avec Aspose.Email.
-type: docs
 weight: 18
 url: /fr/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enrichir les métadonnées des e-mails via les en-têtes avec Aspose.Email
+
 
 ## Introduction à l'enrichissement des métadonnées de courrier électronique via des en-têtes avec Aspose.Email
 
@@ -107,3 +113,9 @@ Oui, Aspose.Email prend en charge plusieurs langages de programmation, notamment
 ### Où puis-je trouver plus de ressources sur Aspose.Email pour Java ?
 
  Vous pouvez explorer la documentation sur[ici](https://reference.aspose.com/email/java/) pour des ressources complètes et des exemples.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

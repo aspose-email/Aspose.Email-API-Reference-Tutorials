@@ -3,10 +3,16 @@ title: Aspose.Email'de Satır İçi Eklerle Çalışmak
 linktitle: Aspose.Email'de Satır İçi Eklerle Çalışmak
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile e-posta iletişiminizi optimize edin. Bu kapsamlı kılavuzda satır içi eklerle çalışmayı öğrenin.
-type: docs
 weight: 10
 url: /tr/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email'de Satır İçi Eklerle Çalışmak
+
 
 ## Aspose.Email'de Satır İçi Eklerle Çalışmaya Giriş
 
@@ -135,3 +141,9 @@ HTML e-postalarındaki satır içi ekleri yönetmek için`LinkedResource` HTML g
 ### Aspose.Email for Java farklı e-posta sunucularıyla uyumlu mu?
 
 Evet, Aspose.Email for Java çeşitli e-posta sunucularıyla uyumludur. E-posta gönderirken e-posta sunucunuz için SMTP ayarlarını doğru şekilde yapılandırdığınızdan emin olun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

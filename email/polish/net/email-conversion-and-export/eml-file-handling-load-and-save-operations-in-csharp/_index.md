@@ -3,10 +3,16 @@ title: Obsługa plików EML — operacje ładowania i zapisywania w języku C#
 linktitle: Obsługa plików EML — operacje ładowania i zapisywania w języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak obsługiwać pliki EML w języku C# przy użyciu Aspose.Email dla .NET. Przewodnik krok po kroku z przykładami kodu umożliwiającymi ładowanie, modyfikowanie i zapisywanie wiadomości e-mail.
-type: docs
 weight: 13
 url: /pl/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obsługa plików EML — operacje ładowania i zapisywania w języku C#
+
 
 ## Wprowadzenie do plików EML
 
@@ -150,3 +156,9 @@ Tak, Aspose.Email umożliwia ładowanie wielu plików EML partiami, co ułatwia 
 ### Czy Aspose.Email nadaje się do projektów komercyjnych?
 
 Tak, Aspose.Email to wszechstronna biblioteka odpowiednia zarówno do projektów osobistych, jak i komercyjnych, oferująca zaawansowane funkcje do manipulowania pocztą e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

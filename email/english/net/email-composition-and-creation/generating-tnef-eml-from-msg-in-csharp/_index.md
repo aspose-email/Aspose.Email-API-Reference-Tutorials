@@ -3,10 +3,16 @@ title: Generating TNEF EML from MSG in C#
 linktitle: Generating TNEF EML from MSG in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Convert MSG to TNEF EML in C# with Aspose.Email. Easy, step-by-step guide. Boost your email processing projects.
-type: docs
 weight: 12
 url: /net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Generating TNEF EML from MSG in C#
+
 
 ## Introduction
 
@@ -97,3 +103,10 @@ Aspose.Email for .NET supports .NET Framework as well as .NET Core and .NET 5/6.
 
 ### 5. Where can I find more documentation?
 You can find detailed API documentation on the Aspose.Email for .NET [here](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

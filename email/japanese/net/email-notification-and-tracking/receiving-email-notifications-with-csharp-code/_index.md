@@ -3,10 +3,16 @@ title: C# コードを使用して電子メール通知を受信する
 linktitle: C# コードを使用して電子メール通知を受信する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# で電子メール通知を受信する方法を学びます。効率的なコード例が提供されています。
-type: docs
 weight: 10
 url: /ja/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# コードを使用して電子メール通知を受信する
+
 
 
 デジタル時代ではコミュニケーションが不可欠であり、電子メールは依然として情報交換の最も一般的な手段の 1 つです。開発者は、アプリケーションで電子メール通知を送受信する必要があるかもしれません。このステップバイステップのチュートリアルでは、Aspose.Email for .NET を使用して C# で電子メール通知を受信する方法を説明します。
@@ -88,3 +94,9 @@ client.Send(msg);
    Aspose.Email では、送受信できる電子メールの数に厳密な制限はありませんが、電子メール サーバーの制限を受ける可能性があります。
 
 Aspose.Email for .NET を使用して C# で電子メール通知を受信するチュートリアルはこれで終わりです。このガイドがアプリケーションに電子メール通知を実装する際に役立つことを願っています。 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

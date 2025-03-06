@@ -3,10 +3,16 @@ title: メッセージから OFT ファイルを生成する - C# チュート�
 linktitle: メッセージから OFT ファイルを生成する - C# チュートリアル
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用してメッセージから OFT ファイルを作成する方法を学習します。電子メール テンプレートを効率的に生成するためのソース コードを含むステップバイステップ ガイド。
-type: docs
 weight: 19
 url: /ja/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# メッセージから OFT ファイルを生成する - C# チュートリアル
+
 
 ## OFT ファイルの生成の概要
 
@@ -114,3 +120,9 @@ OFT ファイルは主に Microsoft Outlook で使用するように設計され
 ### 生成した電子メールが受信者のスパム フォルダーに入らないようにするにはどうすればよいですか?
 
 電子メールがスパムとしてフラグ付けされるのを回避するには、電子メールの到達性に関するベスト プラクティスに従ってください。正当な送信方法を使用し、過剰なリンクを避け、適切な送信者情報を含めてください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

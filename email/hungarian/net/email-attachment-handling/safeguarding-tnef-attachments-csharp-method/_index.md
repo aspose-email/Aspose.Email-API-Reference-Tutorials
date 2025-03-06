@@ -3,10 +3,16 @@ title: TNEF mellékletek védelme – C# módszer
 linktitle: TNEF mellékletek védelme – C# módszer
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan védheti meg a TNEF-mellékleteket C# és Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal.
-type: docs
 weight: 19
 url: /hu/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF mellékletek védelme – C# módszer
+
 
 ## Bevezetés a TNEF mellékletek védelmébe
 
@@ -95,3 +101,9 @@ Az Aspose gyakran ad ki frissítéseket és fejlesztéseket a könyvtáraihoz. J
 ### Használhatom az Aspose.Email-t kereskedelmi projektekben?
 
 Igen, az Aspose.Email használható kereskedelmi projektekben. A megfelelőség biztosítása érdekében azonban feltétlenül tekintse át az Aspose licencfeltételeit.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

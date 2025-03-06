@@ -3,10 +3,16 @@ title: Określanie niestandardowych nagłówków w języku C#
 linktitle: Określanie niestandardowych nagłówków w języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak określić niestandardowe nagłówki w języku C# przy użyciu Aspose.Email dla .NET, aby usprawnić komunikację e-mail. Ten przewodnik krok po kroku zawiera szczegółowe informacje na temat tworzenia spersonalizowanych nagłówków wiadomości e-mail w celu zwiększenia zaangażowania.
-type: docs
 weight: 16
 url: /pl/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Określanie niestandardowych nagłówków w języku C#
+
 
 
 ## Wstęp
@@ -97,3 +103,9 @@ Absolutnie Aspose.Email dla .NET zaspokaja szeroki zakres potrzeb w zakresie man
 W dynamicznym świecie komunikacji e-mailowej niestandardowe nagłówki mogą zmienić reguły gry, umożliwiając dostosowane i skuteczne interakcje. Dzięki Aspose.Email dla .NET proces określania niestandardowych nagłówków w C# staje się usprawniony i wydajny. Postępując zgodnie z instrukcjami opisanymi w tym przewodniku, możesz wykorzystać możliwości niestandardowych nagłówków, aby usprawnić kategoryzację, personalizację i zaangażowanie w komunikację e-mailową.
 
 Jeśli jesteś gotowy, aby przenieść komunikację e-mailową na wyższy poziom, zanurz się w świat niestandardowych nagłówków za pomocą Aspose.Email dla .NET. Opanowując tę technikę, możesz dostarczać e-maile, które przemówią do odbiorców i zapewnią bezproblemową i wciągającą obsługę.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

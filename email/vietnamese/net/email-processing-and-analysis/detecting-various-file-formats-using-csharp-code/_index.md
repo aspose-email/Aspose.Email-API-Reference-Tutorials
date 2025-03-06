@@ -3,10 +3,16 @@ title: Phát hiện các định dạng tệp khác nhau bằng mã C#
 linktitle: Phát hiện các định dạng tệp khác nhau bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Dễ dàng phát hiện các định dạng tệp bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước và ví dụ về mã. Khám phá ngay bây giờ!
-type: docs
 weight: 13
 url: /vi/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Phát hiện các định dạng tệp khác nhau bằng mã C#
+
 
 Là một nhà phát triển, việc xác định định dạng của tệp là rất quan trọng để xử lý và thao tác. Với Aspose.Email for .NET, bạn có thể phát hiện chính xác các định dạng tệp. Hướng dẫn này cung cấp hướng dẫn từng bước, hoàn chỉnh với mã nguồn, về cách phát hiện các định dạng tệp khác nhau bằng C# và Aspose.Email cho .NET.
 
@@ -119,3 +125,9 @@ Hoàn toàn có thể, Aspose.Email có thể được tích hợp liền mạch
 ### Tôi có thể tìm tài liệu chi tiết về Aspose.Email cho .NET ở đâu?
 
  Để có tài liệu toàn diện, mẫu mã và tài nguyên, hãy truy cập[Aspose.Email để tham khảo API .NET](https://reference.aspose.com/email/net) trang.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

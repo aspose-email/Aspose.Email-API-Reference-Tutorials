@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 管理電子郵件中的 X 標頭
 linktitle: 使用 Aspose.Email 管理電子郵件中的 X 標頭
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 使用 Aspose.Email for Java 釋放電子郵件中 X 標頭的威力。了解管理自訂元資料並增強電子郵件處理。
-type: docs
 weight: 16
 url: /zh-hant/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 管理電子郵件中的 X 標頭
+
 
 ## 介紹
 
@@ -124,3 +130,9 @@ String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ### Aspose.Email適合企業級電子郵件管理嗎？
 
 是的，Aspose.Email 是一個強大的函式庫，可用於企業級電子郵件管理。它提供了廣泛的創建、發送、接收和處理電子郵件的功能，使其適合各種業務場景。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

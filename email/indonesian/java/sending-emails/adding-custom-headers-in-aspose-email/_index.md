@@ -3,10 +3,16 @@ title: Menambahkan Header Kustom di Aspose.Email
 linktitle: Menambahkan Header Kustom di Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara menyempurnakan pesan email Anda dengan menambahkan header khusus menggunakan Aspose.Email untuk Java. Tingkatkan metadata dan organisasi email.
-type: docs
 weight: 15
 url: /id/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menambahkan Header Kustom di Aspose.Email
+
 
 ## Perkenalan
 
@@ -132,3 +138,9 @@ Dalam panduan ini, Anda telah mempelajari cara menambahkan header khusus ke emai
 
 ### Bagaimana cara mengekstrak header khusus dari email yang diterima?
     Anda dapat menggunakan`getHeaders` metode pada email yang diterima`MailMessage` objek untuk mengambil dan memproses header khusus.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

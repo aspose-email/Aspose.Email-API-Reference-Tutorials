@@ -3,10 +3,16 @@ title: Memodifikasi Alamat Email dengan C#
 linktitle: Memodifikasi Alamat Email dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengubah alamat email menggunakan C# dengan bantuan Aspose.Email untuk .NET. Ikuti panduan langkah demi langkah ini untuk memanipulasi alamat email secara efektif.
-type: docs
 weight: 10
 url: /id/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Memodifikasi Alamat Email dengan C#
+
 
 ## Perkenalan
 
@@ -132,3 +138,9 @@ Meskipun Aspose.Email adalah pilihan yang tepat, perpustakaan lain seperti MimeK
 ## Kesimpulan
 
 Dalam panduan ini, kami memulai perjalanan menjelajahi dunia modifikasi alamat email menggunakan C# dan Aspose.Email untuk .NET. Dengan mengikuti petunjuk langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda kini memiliki keterampilan untuk mengubah alamat email di aplikasi Anda secara efektif. Kemampuan Aspose.Email dikombinasikan dengan pengetahuan baru Anda pasti akan menyederhanakan upaya manipulasi email Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

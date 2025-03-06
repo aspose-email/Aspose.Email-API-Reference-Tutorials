@@ -3,10 +3,16 @@ title: Hướng dẫn C# - Lưu email dưới dạng tệp MHTML
 linktitle: Hướng dẫn C# - Lưu email dưới dạng tệp MHTML
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách lưu email dưới dạng tệp MHTML bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã và Câu hỏi thường gặp.
-type: docs
 weight: 16
 url: /vi/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn C# - Lưu email dưới dạng tệp MHTML
+
 
 ## Giới thiệu về Lưu Email dưới dạng Tệp MHTML
 
@@ -105,3 +111,9 @@ Tuyệt đối! Aspose.Email được thiết kế để đáp ứng nhu cầu c
 ### Có bất kỳ khoản phí cấp phép nào liên quan đến việc sử dụng Aspose.Email cho .NET không?
 
 Có, Aspose.Email là thư viện thương mại. Bạn có thể tìm thấy thông tin chi tiết về cấp phép và giá cả trên[Trang web Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

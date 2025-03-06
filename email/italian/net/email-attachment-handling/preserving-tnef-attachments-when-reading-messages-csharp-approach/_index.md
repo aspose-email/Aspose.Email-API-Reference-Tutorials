@@ -3,10 +3,16 @@ title: Conservazione degli allegati TNEF durante la lettura dei messaggi approcc
 linktitle: Conservazione degli allegati TNEF durante la lettura dei messaggi approccio C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come preservare gli allegati TNEF utilizzando Aspose.Email per .NET in questa guida passo passo con il codice sorgente.
-type: docs
 weight: 15
 url: /it/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Conservazione degli allegati TNEF durante la lettura dei messaggi approccio C#
+
 
 ## Introduzione agli allegati TNEF
 
@@ -132,3 +138,9 @@ Assolutamente! Aspose.Email è progettato per soddisfare un'ampia gamma di appli
 ### Aspose.Email viene aggiornato regolarmente?
 
 Sì, Aspose mantiene aggiornamenti regolari per garantire la compatibilità con le tecnologie e le piattaforme più recenti.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

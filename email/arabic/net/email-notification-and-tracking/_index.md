@@ -3,10 +3,16 @@ title: تعزيز التواصل مع إشعارات البريد الإلكتر
 linktitle: إشعار وتتبع البريد الإلكتروني
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتنفيذ ميزات الإشعارات والتتبع عبر البريد الإلكتروني باستخدام Aspose.Email لبرامج .NET التعليمية. قم بأتمتة الإشعارات واحصل على رؤى حول تفاعلات مستلمي البريد الإلكتروني.
-type: docs
 weight: 16
 url: /ar/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تعزيز التواصل مع إشعارات البريد الإلكتروني وتتبعه
+
 
 ## مقدمة
 
@@ -27,3 +33,9 @@ url: /ar/net/email-notification-and-tracking/
 تعرف على كيفية استخدام كود C# لطلب إيصالات قراءة البريد الإلكتروني باستخدام Aspose.Email for .NET، مما يعزز تتبع الاتصالات.
 ### [تتبع التقدم المحرز في تحويل مستند البريد الإلكتروني باستخدام رمز C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 تعرف على كيفية تنفيذ إشعار البريد الإلكتروني وتتبعه باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية. تعزيز الاتصالات البريد الإلكتروني الخاص بك اليوم!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

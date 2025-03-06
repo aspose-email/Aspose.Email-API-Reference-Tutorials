@@ -3,10 +3,16 @@ title: 使用 C# 代码识别 TNEF 消息
 linktitle: 使用 C# 代码识别 TNEF 消息
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 识别 TNEF 消息。包含源代码和常见问题解答的分步指南。
-type: docs
 weight: 14
 url: /zh/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 代码识别 TNEF 消息
+
 
 Aspose.Email for .NET 是一个功能强大的库，为在 C# 中使用各种电子邮件格式和协议提供全面支持。在本分步指南中，我们将探索如何使用 C# 代码和 Aspose.Email 库识别 TNEF（传输中性封装格式）消息。 TNEF 是 Microsoft Outlook 使用的一种专有电子邮件格式，用于在电子邮件中封装富文本和附件。
 
@@ -104,3 +110,9 @@ if (message.IsTnef)
 ### Aspose.Email可以在不同平台上处理电子邮件吗？
 
 当然，Aspose.Email 是一个跨平台库，可用于在各种平台上开发应用程序，包括 Windows、macOS 和 Linux。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

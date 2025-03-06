@@ -3,10 +3,16 @@ title: Convalida e verifica della posta elettronica
 linktitle: Convalida e verifica della posta elettronica
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Implementare robusti meccanismi di convalida e verifica della posta elettronica utilizzando Aspose.Email per tutorial .NET. Migliorare la precisione e la sicurezza della comunicazione.
-type: docs
 weight: 17
 url: /it/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Convalida e verifica della posta elettronica
+
 
 ## introduzione
 
@@ -23,3 +29,9 @@ tutorial sulla verifica della posta elettronica si concentrano su come consentir
 ## Esercitazioni sulla convalida e verifica della posta elettronica
 ### [Tecniche di convalida della posta elettronica nel codice C#](./email-validation-techniques-in-csharp-code/)
 Scopri come convalidare gli indirizzi e-mail in modo efficace in C# utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente fornito. Migliora l'accuratezza dei dati e l'esperienza dell'utente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

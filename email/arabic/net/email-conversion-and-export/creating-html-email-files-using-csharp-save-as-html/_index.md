@@ -3,10 +3,16 @@ title: إنشاء ملفات بريد إلكتروني بتنسيق HTML باس�
 linktitle: إنشاء ملفات بريد إلكتروني بتنسيق HTML باستخدام C# - حفظ بتنسيق HTML
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إنشاء ملفات بريد إلكتروني بتنسيق HTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لتخصيص البريد الإلكتروني بسلاسة.
-type: docs
 weight: 18
 url: /ar/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء ملفات بريد إلكتروني بتنسيق HTML باستخدام C# - حفظ بتنسيق HTML
+
 
 ## مقدمة لإنشاء ملفات البريد الإلكتروني بتنسيق HTML
 
@@ -113,3 +119,9 @@ client.Send(message);
 ### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
 
  يمكنك استكشاف أمثلة شاملة ووثائق مفصلة عن[Aspose.وثائق البريد الإلكتروني](https://reference.aspose.com/email/net) صفحة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

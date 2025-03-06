@@ -3,10 +3,16 @@ title: Setting Priority and Importance Headers with Aspose.Email
 linktitle: Setting Priority and Importance Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Boost your email impact by setting priority and importance headers with Aspose.Email for Java. Learn how in this step-by-step guide.
-type: docs
 weight: 14
 url: /java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Setting Priority and Importance Headers with Aspose.Email
+
 
 ## Introduction
 
@@ -94,3 +100,10 @@ While you can set importance headers, keep in mind that the actual impact on the
 ### How do I handle email attachments with Aspose.Email?
 
 Handling email attachments with Aspose.Email is straightforward. You can use the `Attachment` class to add attachments to your email messages. For a detailed guide, refer to the Aspose.Email documentation.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

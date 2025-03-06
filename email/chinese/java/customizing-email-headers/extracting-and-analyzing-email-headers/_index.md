@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 提取和分析电子邮件标头
 linktitle: 使用 Aspose.Email 提取和分析电子邮件标头
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 使用 Aspose.Email for Java 释放电子邮件标头分析的强大功能。了解如何提取和分析电子邮件标头以增强电子邮件跟踪和安全性。
-type: docs
 weight: 12
 url: /zh/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 提取和分析电子邮件标头
+
 
 ## 使用 Aspose.Email 提取和分析电子邮件标头简介
 
@@ -107,3 +113,9 @@ for (Header header : headers) {
 ### 我可以使用 Aspose.Email 自动进行电子邮件标头分析吗？
 
 是的，您可以通过将 Aspose.Email 集成到您的 Java 应用程序中来自动进行电子邮件标头分析。该库提供了处理电子邮件标题的便捷方法。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: EML ファイル処理 - C# での読み込みおよび保存操作
 linktitle: EML ファイル処理 - C# での読み込みおよび保存操作
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# で EML ファイルを処理する方法を学習します。電子メール メッセージのロード、変更、保存のためのコード例を含むステップバイステップのガイド。
-type: docs
 weight: 13
 url: /ja/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# EML ファイル処理 - C# での読み込みおよび保存操作
+
 
 ## EML ファイルの概要
 
@@ -150,3 +156,9 @@ Aspose.Email for .NET は、C# アプリケーションでの EML ファイル�
 ### Aspose.Email は商用プロジェクトに適していますか?
 
 はい、Aspose.Email は個人プロジェクトと商業プロジェクトの両方に適した多用途ライブラリであり、電子メール操作のための強力な機能を提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

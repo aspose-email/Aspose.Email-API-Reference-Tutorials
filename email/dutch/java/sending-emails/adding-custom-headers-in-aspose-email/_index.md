@@ -3,10 +3,16 @@ title: Aangepaste headers toevoegen in Aspose.Email
 linktitle: Aangepaste headers toevoegen in Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u uw e-mailberichten kunt verbeteren door aangepaste kopteksten toe te voegen met Aspose.Email voor Java. Verbeter de metagegevens en organisatie van e-mails.
-type: docs
 weight: 15
 url: /nl/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aangepaste headers toevoegen in Aspose.Email
+
 
 ## Invoering
 
@@ -132,3 +138,9 @@ In deze handleiding hebt u geleerd hoe u aangepaste kopteksten aan een e-mail ku
 
 ### Hoe kan ik aangepaste headers extraheren uit ontvangen e-mails?
     U kunt gebruik maken van de`getHeaders` methode op de ontvangen e-mails`MailMessage` object om aangepaste headers op te halen en te verwerken.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

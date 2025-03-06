@@ -3,10 +3,16 @@ title: Создание нового почтового сообщения на 
 linktitle: Создание нового почтового сообщения на C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Мастер создания электронной почты на C# с использованием Aspose.Email для .NET. Подробное руководство с примерами кода. Улучшите свое приложение прямо сейчас
-type: docs
 weight: 11
 url: /ru/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создание нового почтового сообщения на C#
+
 
 Хотите улучшить свое приложение C#, добавив возможность программной отправки электронной почты? Благодаря возможностям Aspose.Email для .NET вы можете легко интегрировать функции электронной почты в свое приложение. В этом пошаговом руководстве мы покажем вам процесс создания нового почтового сообщения с помощью Aspose.Email для .NET, а также приведем примеры исходного кода.
 
@@ -123,3 +129,9 @@ catch (Exception ex)
    Подробную документацию и примеры кода можно найти на странице[Справочник по API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

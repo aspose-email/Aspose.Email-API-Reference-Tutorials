@@ -3,10 +3,16 @@ title: Dodawanie niestandardowych nagłówków w Aspose.Email
 linktitle: Dodawanie niestandardowych nagłówków w Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak ulepszyć swoje wiadomości e-mail, dodając niestandardowe nagłówki za pomocą Aspose.Email dla Java. Popraw metadane i organizację poczty e-mail.
-type: docs
 weight: 15
 url: /pl/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dodawanie niestandardowych nagłówków w Aspose.Email
+
 
 ## Wstęp
 
@@ -132,3 +138,9 @@ W tym przewodniku dowiedziałeś się, jak dodawać niestandardowe nagłówki do
 
 ### Jak mogę wyodrębnić niestandardowe nagłówki z otrzymanych wiadomości e-mail?
     Możesz skorzystać z`getHeaders` metodę w otrzymanych wiadomościach e-mail`MailMessage` obiekt do pobierania i przetwarzania niestandardowych nagłówków.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

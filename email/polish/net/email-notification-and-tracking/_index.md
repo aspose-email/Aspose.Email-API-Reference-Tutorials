@@ -3,10 +3,16 @@ title: Usprawnij komunikację dzięki powiadomieniom e-mailowym i śledzeniu
 linktitle: Powiadomienia e-mail i śledzenie
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Zaimplementuj powiadomienia e-mail i funkcje śledzenia, korzystając z samouczków Aspose.Email dla .NET. Automatyzuj powiadomienia i uzyskaj wgląd w interakcje z odbiorcami wiadomości e-mail.
-type: docs
 weight: 16
 url: /pl/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Usprawnij komunikację dzięki powiadomieniom e-mailowym i śledzeniu
+
 
 ## Wstęp
 
@@ -27,3 +33,9 @@ Dowiedz się, jak otrzymywać powiadomienia e-mail w języku C# przy użyciu Asp
 Dowiedz się, jak używać kodu C# do żądania potwierdzeń przeczytania wiadomości e-mail za pomocą Aspose.Email dla .NET, usprawniając śledzenie komunikacji.
 ### [Śledzenie postępu konwersji dokumentów e-mail za pomocą kodu C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Dowiedz się, jak wdrożyć powiadomienia e-mail i śledzenie za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z przykładami kodu. Popraw swoją komunikację e-mailową już dziś!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Extracting Embedded Attachments from MSG Files using C#
 linktitle: Extracting Embedded Attachments from MSG Files using C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples.
-type: docs
 weight: 10
 url: /net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting Embedded Attachments from MSG Files using C#
+
 
 ## Introduction to Embedded Attachments
 
@@ -103,3 +109,10 @@ Yes, Aspose.Email is a commercial library. You can find detailed licensing infor
 ### Where can I find more examples and documentation?
 
 You can find detailed examples and documentation on using Aspose.Email for .NET in the [documentation](https://reference.aspose.com/email/net).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

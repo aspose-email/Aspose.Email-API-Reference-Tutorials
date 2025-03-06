@@ -3,10 +3,16 @@ title: Diferenciando anexos in-line e regulares – abordagem C#
 linktitle: Diferenciando anexos in-line e regulares – abordagem C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como diferenciar anexos de email embutidos e regulares usando Aspose.Email for .NET. Guia abrangente com exemplos de código.
-type: docs
 weight: 17
 url: /pt/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Diferenciando anexos in-line e regulares – abordagem C#
+
 
 ## Introdução à diferenciação de anexos in-line e regulares – abordagem C#
 
@@ -107,3 +113,9 @@ Você pode acessar o conteúdo de um anexo embutido usando as propriedades aprop
 ### Posso salvar anexos regulares em um local específico do disco?
 
  Absolutamente! Você pode salvar anexos regulares em um local específico no disco utilizando o`Save` método do objeto de anexo e fornecendo o caminho do arquivo desejado.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

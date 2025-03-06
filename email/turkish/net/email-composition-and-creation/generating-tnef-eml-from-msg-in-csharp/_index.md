@@ -3,10 +3,16 @@ title: C# dilinde MSG'den TNEF EML oluşturuluyor
 linktitle: C# dilinde MSG'den TNEF EML oluşturuluyor
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak MSG'den TNEF EML oluşturmayı öğrenin. C# koduyla adım adım kılavuz. Verimli e-posta biçimi dönüştürme.
-type: docs
 weight: 12
 url: /tr/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# dilinde MSG'den TNEF EML oluşturuluyor
+
 
 Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak MSG (Outlook Mesajı) dosyalarından TNEF (Transport Neutral Encapsulation Format) EML dosyalarını nasıl oluşturacağınızı öğreneceksiniz. TNEF, Microsoft Outlook tarafından kullanılan özel bir e-posta eki biçimidir. Aspose.Email for .NET, C# uygulamalarınızda çeşitli e-posta formatlarıyla çalışmanıza olanak tanıyan güçlü bir kütüphanedir.
 
@@ -100,3 +106,10 @@ Aspose.Email for .NET kütüphanesini Aspose Sürümlerinden edinebilirsiniz:[.N
 Standart C# istisna işleme tekniklerini kullanabilirsiniz. Aspose.Email, kütüphanesine özel istisnalar oluşturur; bu nedenle bunları kodunuzda uygun şekilde yakalayıp işlediğinizden emin olun.
 
  Keşfetmekten çekinmeyin[Aspose.Email for .NET belgeleri](https://reference.aspose.com/email/net) daha gelişmiş özellikler ve örnekler için.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

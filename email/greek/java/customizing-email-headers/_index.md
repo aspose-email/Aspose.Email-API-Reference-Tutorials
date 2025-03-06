@@ -3,10 +3,16 @@ title: Προσαρμογή κεφαλίδων email με το Aspose.Email γι
 linktitle: Προσαρμογή κεφαλίδων email με το Aspose.Email για Java
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να προσαρμόζετε τις κεφαλίδες email χωρίς κόπο με το Aspose.Email για Java. Βουτήξτε σε σεμινάρια και αξιοποιήστε τη δύναμη της προσαρμογής κεφαλίδων email.
-type: docs
 weight: 16
 url: /el/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσαρμογή κεφαλίδων email με το Aspose.Email για Java
+
 
 Οι κεφαλίδες email διαδραματίζουν κρίσιμο ρόλο στην επικοινωνία μέσω email, παρέχοντας ουσιαστικές πληροφορίες σχετικά με την προέλευση και την παράδοση του μηνύματος. Με το Aspose.Email για Java, η προσαρμογή των κεφαλίδων email γίνεται μια απλή εργασία, επιτρέποντας στους χρήστες να προσαρμόσουν τα μεταδεδομένα email τους σε συγκεκριμένες ανάγκες και απαιτήσεις.
 
@@ -37,3 +43,9 @@ url: /el/java/customizing-email-headers/
 Ξεκλειδώστε τη δύναμη των X-Headers στα μηνύματα ηλεκτρονικού ταχυδρομείου με το Aspose.Email για Java. Μάθετε να διαχειρίζεστε προσαρμοσμένα μεταδεδομένα και να βελτιώνετε την επεξεργασία email.
 ### [Εμπλουτισμός μεταδεδομένων email μέσω κεφαλίδων με το Aspose.Email](./enriching-email-metadata-through-headers/)
 Βελτιώστε τα Μεταδεδομένα Email με το Aspose.Email για Java. Μάθετε πώς να εμπλουτίζετε τις κεφαλίδες email για βελτιωμένη παρακολούθηση και προσαρμογή με το Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

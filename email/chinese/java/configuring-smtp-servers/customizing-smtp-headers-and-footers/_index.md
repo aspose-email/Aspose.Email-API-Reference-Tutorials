@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 自定义 SMTP 页眉和页脚
 linktitle: 使用 Aspose.Email 自定义 SMTP 页眉和页脚
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 自定义 SMTP 页眉和页脚。通过个性化的品牌和消息增强您的电子邮件通信。
-type: docs
 weight: 16
 url: /zh/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 自定义 SMTP 页眉和页脚
+
 
 ## 介绍
 
@@ -107,3 +113,9 @@ client.send(message);
 ### 我应该使用什么 SMTP 设置来发送自定义电子邮件？
 
 您应该使用电子邮件服务提供商或组织的 IT 部门提供的 SMTP 设置。这些设置通常包括 SMTP 服务器地址、端口号和身份验证凭据。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

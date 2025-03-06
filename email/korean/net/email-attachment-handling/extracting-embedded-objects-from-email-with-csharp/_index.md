@@ -3,10 +3,16 @@ title: C#을 사용하여 이메일에서 포함된 개체 추출
 linktitle: C#을 사용하여 이메일에서 포함된 개체 추출
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 이메일에서 포함된 개체를 추출하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 16
 url: /ko/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 이메일에서 포함된 개체 추출
+
 
 ## 이메일에 포함된 개체 소개
 
@@ -113,3 +119,9 @@ namespace EmbeddedObjectExtractor
 ### .NET용 Aspose.Email 사용에 대한 추가 예제는 어디서 찾을 수 있나요?
 
  다음에서 더 많은 코드 예제와 튜토리얼을 찾을 수 있습니다.[API 참조](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

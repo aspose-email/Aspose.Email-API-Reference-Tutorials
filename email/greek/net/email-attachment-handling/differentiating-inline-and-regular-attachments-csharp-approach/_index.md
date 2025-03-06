@@ -3,10 +3,16 @@ title: Διαφοροποίηση ενσωματωμένων και κανονι
 linktitle: Διαφοροποίηση ενσωματωμένων και κανονικών συνημμένων - Προσέγγιση C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να διαφοροποιείτε τα ενσωματωμένα και τα κανονικά συνημμένα email χρησιμοποιώντας το Aspose.Email για .NET. Περιεκτικός οδηγός με παραδείγματα κώδικα.
-type: docs
 weight: 17
 url: /el/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διαφοροποίηση ενσωματωμένων και κανονικών συνημμένων - Προσέγγιση C#
+
 
 ## Εισαγωγή στη Διαφοροποίηση Ενσωματωμένων και Κανονικών Συνημμένων - Προσέγγιση C#
 
@@ -107,3 +113,9 @@ foreach (Attachment attachment in attachments)
 ### Μπορώ να αποθηκεύσω τακτικά συνημμένα σε μια συγκεκριμένη θέση στο δίσκο;
 
  Απολύτως! Μπορείτε να αποθηκεύσετε τακτικά συνημμένα σε μια συγκεκριμένη θέση στο δίσκο χρησιμοποιώντας το`Save` μέθοδο του αντικειμένου συνημμένου και παροχή της επιθυμητής διαδρομής αρχείου.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

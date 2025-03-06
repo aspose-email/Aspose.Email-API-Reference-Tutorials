@@ -3,10 +3,16 @@ title: 在 Aspose.Email 中使用內嵌附件
 linktitle: 在 Aspose.Email 中使用內嵌附件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 使用 Aspose.Email for Java 優化您的電子郵件通訊。在這份綜合指南中學習如何使用內嵌附件。
-type: docs
 weight: 10
 url: /zh-hant/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Email 中使用內嵌附件
+
 
 ## 在 Aspose.Email 中使用內嵌附件簡介
 
@@ -135,3 +141,9 @@ Aspose.Email for Java 支援內嵌附件的各種文件格式，包括圖片（�
 ### Aspose.Email for Java 是否與不同的電子郵件伺服器相容？
 
 是的，Aspose.Email for Java 與各種電子郵件伺服器相容。確保在傳送電子郵件時正確配置電子郵件伺服器的 SMTP 設定。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

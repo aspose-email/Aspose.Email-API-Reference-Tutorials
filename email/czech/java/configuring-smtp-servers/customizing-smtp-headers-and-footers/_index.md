@@ -3,10 +3,16 @@ title: Přizpůsobení záhlaví a zápatí SMTP pomocí Aspose.Email
 linktitle: Přizpůsobení záhlaví a zápatí SMTP pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se, jak přizpůsobit záhlaví a zápatí SMTP pomocí Aspose.Email pro Java. Vylepšete svou e-mailovou komunikaci pomocí personalizovaného brandingu a zpráv.
-type: docs
 weight: 16
 url: /cs/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přizpůsobení záhlaví a zápatí SMTP pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -107,3 +113,9 @@ Ano, můžete použít formátování HTML v obsahu e-mailu, včetně záhlaví 
 ### Jaká nastavení SMTP bych měl použít k odesílání přizpůsobených e-mailů?
 
 Měli byste použít nastavení SMTP poskytnuté vaším poskytovatelem e-mailových služeb nebo IT oddělením vaší organizace. Tato nastavení obvykle zahrnují adresu serveru SMTP, číslo portu a ověřovací údaje.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

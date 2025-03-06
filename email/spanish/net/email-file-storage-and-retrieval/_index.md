@@ -3,10 +3,16 @@ title: Almacenamiento y recuperación eficiente de archivos de correo electróni
 linktitle: Almacenamiento y recuperación de archivos de correo electrónico
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Optimice el almacenamiento y la recuperación de archivos de correo electrónico utilizando los tutoriales de Aspose.Email para .NET. Aprenda a administrar y acceder a mensajes de correo electrónico y archivos adjuntos mediante programación.
-type: docs
 weight: 18
 url: /es/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Almacenamiento y recuperación eficiente de archivos de correo electrónico
+
 
 ## Introducción
 
@@ -27,3 +33,9 @@ Aprenda a leer mensajes de almacenamiento Zimbra TGZ usando C# y Aspose.Email pa
 Aprenda a leer mensajes de almacenamiento NSF usando C# y Aspose.Email para .NET. Una guía paso a paso con ejemplos de código.
 ### [Guardar mensajes del almacenamiento Zimbra TGZ con C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Aprenda cómo extraer correos electrónicos de Zimbra TGZ usando Aspose.Email para .NET. Guía paso a paso con código fuente para una gestión eficiente del correo electrónico.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

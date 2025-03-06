@@ -3,10 +3,16 @@ title: Hướng dẫn C# - Trích xuất tiêu đề email
 linktitle: Hướng dẫn C# - Trích xuất tiêu đề email
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách trích xuất tiêu đề email trong C# bằng Aspose.Email for .NET. Hướng dẫn từng bước với mã nguồn để phân tích email hiệu quả.
-type: docs
 weight: 15
 url: /vi/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn C# - Trích xuất tiêu đề email
+
 
 Bạn đã bao giờ tự hỏi làm thế nào để trích xuất tiêu đề email bằng C# chưa? Tiêu đề email chứa thông tin có giá trị về người gửi, người nhận, chủ đề và nhiều chi tiết khác. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước trích xuất tiêu đề email bằng thư viện Aspose.Email cho .NET mạnh mẽ. Thư viện này cung cấp một bộ tính năng toàn diện để làm việc với email trong các ứng dụng .NET của bạn.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Tôi có thể truy cập tài liệu Aspose.Email và tải xuống thư viện ở đâu?
 
  Bạn có thể tìm thấy tài liệu tại[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Để tải xuống thư viện, hãy truy cập[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

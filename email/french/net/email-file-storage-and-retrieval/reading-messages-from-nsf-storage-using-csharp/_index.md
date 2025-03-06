@@ -3,10 +3,16 @@ title: Lire des messages à partir du stockage NSF à l'aide de C#
 linktitle: Lire des messages à partir du stockage NSF à l'aide de C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment lire les messages de stockage NSF à l'aide de C# et Aspose.Email pour .NET. Un guide étape par étape avec des exemples de code.
-type: docs
 weight: 11
 url: /fr/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lire des messages à partir du stockage NSF à l'aide de C#
+
 
 ## Introduction à la lecture de messages à partir du stockage NSF à l'aide de C#
 
@@ -73,3 +79,9 @@ Oui, Aspose.Email pour .NET est compatible avec Windows et .NET Core.
 
 ### 5. Existe-t-il des limitations lorsque vous travaillez avec le stockage Zimbra TGZ à l'aide d'Aspose.Email pour .NET ?
 Aspose.Email pour .NET offre des fonctionnalités robustes pour travailler avec le stockage Zimbra TGZ, mais soyez conscient des limitations spécifiques mentionnées dans la documentation.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

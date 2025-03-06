@@ -3,10 +3,16 @@ title: Rendering Calendar Events using C# Code
 linktitle: Rendering Calendar Events using C# Code
 second_title: Aspose.Email .NET Email Processing API
 description: Learn to render calendar events using C# and Aspose.Email for .NET. Create interactive schedules with ease.
-type: docs
 weight: 15
 url: /net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rendering Calendar Events using C# Code
+
 
 
 In today's digital age, managing calendar events efficiently is crucial for businesses and individuals alike. Aspose.Email for .NET provides a powerful set of tools to work with calendar events and make the most of your scheduling needs. In this step-by-step guide, we will walk you through the process of rendering calendar events using C# code with Aspose.Email for .NET.
@@ -90,3 +96,10 @@ Now you can harness the power of Aspose.Email for .NET to handle calendar events
    Yes, Aspose.Email offers a wide range of features for email management, including sending, receiving, and processing emails.
 
 Feel free to explore the [Aspose.Email API documentation](https://reference.aspose.com/email/net/) for more details and advanced usage scenarios. Happy coding!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Including Attachments in Email - C# Example
 linktitle: Including Attachments in Email - C# Example
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to including attachments in email using Aspose.Email for .NET. Step-by-step guide with C# code example.
-type: docs
 weight: 10
 url: /net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Including Attachments in Email - C# Example
+
 
 ## Introduction to Including Attachments in Email
 
@@ -111,3 +117,10 @@ Yes, you can configure Aspose.Email to send emails over secure connections using
 ### Where can I find more information about Aspose.Email's capabilities?
 
 For more detailed information about Aspose.Email's features, classes, and methods, refer to the [Aspose.Email API Reference](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

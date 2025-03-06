@@ -3,10 +3,16 @@ title: Beveiliging van TNEF-bijlagen - C#-methode
 linktitle: Beveiliging van TNEF-bijlagen - C#-methode
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u TNEF-bijlagen kunt beveiligen met C# en Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode inbegrepen.
-type: docs
 weight: 19
 url: /nl/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beveiliging van TNEF-bijlagen - C#-methode
+
 
 ## Inleiding tot het beveiligen van TNEF-bijlagen
 
@@ -95,3 +101,9 @@ Aspose brengt regelmatig updates en verbeteringen uit voor zijn bibliotheken. He
 ### Kan ik Aspose.Email gebruiken in commerciële projecten?
 
 Ja, u kunt Aspose.Email gebruiken in commerciële projecten. Zorg er echter voor dat u de licentievoorwaarden van Aspose leest om naleving ervan te garanderen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

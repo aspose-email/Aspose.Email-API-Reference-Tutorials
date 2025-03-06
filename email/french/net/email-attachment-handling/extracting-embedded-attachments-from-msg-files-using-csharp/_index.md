@@ -3,10 +3,16 @@ title: Extraction de pièces jointes intégrées à partir de fichiers MSG à l'
 linktitle: Extraction de pièces jointes intégrées à partir de fichiers MSG à l'aide de C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment extraire des pièces jointes intégrées à partir de fichiers MSG à l'aide de C# et Aspose.Email pour .NET. Un guide complet avec des exemples de code source.
-type: docs
 weight: 10
 url: /fr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraction de pièces jointes intégrées à partir de fichiers MSG à l'aide de C#
+
 
 ## Introduction aux pièces jointes intégrées
 
@@ -103,3 +109,9 @@ Absolument! Aspose.Email for .NET peut être utilisé à la fois dans des applic
 ### Où puis-je trouver plus d’exemples et de documentation ?
 
  Vous pouvez trouver des exemples détaillés et de la Documentation sur l'utilisation d'Aspose.Email pour .NET dans le[documentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Eredeti határok megőrzése C# kóddal
 linktitle: Eredeti határok megőrzése C# kóddal
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan őrizheti meg az e-mail mellékletek eredeti határait a C# és az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal.
-type: docs
 weight: 13
 url: /hu/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Eredeti határok megőrzése C# kóddal
+
 
 ## Bevezetés az eredeti határok megőrzésébe
 
@@ -107,3 +113,9 @@ Az Aspose.Email könyvtár segítségével töltheti be és kezelheti a képmell
 ### Hol találhatok további információt az Aspose.Email for .NET-ről?
 
  Részletes dokumentációt és példákat találhat az oldalon[Aspose.E-mail dokumentáció](https://reference.aspose.com/email/net/) oldalon.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

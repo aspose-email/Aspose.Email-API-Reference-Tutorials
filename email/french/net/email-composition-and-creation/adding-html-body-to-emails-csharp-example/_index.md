@@ -3,10 +3,16 @@ title: Ajout d'un corps HTML aux e-mails - Exemple C#
 linktitle: Ajout d'un corps HTML aux e-mails - Exemple C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment améliorer le contenu des e-mails à l'aide de HTML dans Aspose.Email pour .NET. Guide étape par étape avec des exemples C#. Élevez votre communication par courrier électronique !
-type: docs
 weight: 18
 url: /fr/net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ajout d'un corps HTML aux e-mails - Exemple C#
+
 
 La communication par courrier électronique est devenue partie intégrante des interactions professionnelles et personnelles modernes. Bien que les e-mails en texte brut remplissent leur fonction, l'incorporation de contenu HTML dans les e-mails peut grandement améliorer leur attrait visuel et leurs fonctionnalités. Dans cet article, nous vous fournirons un guide complet étape par étape, complet avec des exemples de code source en C#, sur la façon d'ajouter un corps HTML aux e-mails à l'aide d'Aspose.Email pour .NET.
 
@@ -80,3 +86,9 @@ L'intégration de contenu HTML dans vos messages électroniques à l'aide d'Aspo
 
 ### Où puis-je trouver une documentation complète sur Aspose.Email pour .NET ?
     Vous pouvez visiter la documentation Aspose à l'adresse[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

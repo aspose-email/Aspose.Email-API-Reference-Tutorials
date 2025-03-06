@@ -3,10 +3,16 @@ title: Mellékletek kibontása az Aspose.Email e-mail üzeneteiből
 linktitle: Mellékletek kibontása az Aspose.Email e-mail üzeneteiből
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan bonthatja ki könnyedén az e-mail mellékleteket az Aspose.Email for Java segítségével. Lépésről lépésre útmutató Java fejlesztőknek.
-type: docs
 weight: 13
 url: /hu/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mellékletek kibontása az Aspose.Email e-mail üzeneteiből
+
 
 ## Az Aspose.Email for Java bemutatása
 
@@ -83,3 +89,9 @@ Az Aspose.Email for Java különféle e-mail-formátumokat támogat, beleértve 
 ### Hol kaphatok támogatást az Aspose.Email for Java számára?
 
 Bármilyen technikai segítséggel vagy kérdéssel forduljon az Aspose ügyfélszolgálati csapatához a támogatási csatornákon keresztül.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

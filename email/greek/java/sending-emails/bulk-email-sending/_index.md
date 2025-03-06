@@ -3,10 +3,16 @@ title: Μαζική αποστολή email με το Aspose.Email
 linktitle: Μαζική αποστολή email με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να στέλνετε μαζικά email αποτελεσματικά χρησιμοποιώντας το Aspose.Email για Java. Ένας βήμα προς βήμα οδηγός με παραδείγματα κώδικα για το μάρκετινγκ και την επικοινωνία μέσω email.
-type: docs
 weight: 14
 url: /el/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Μαζική αποστολή email με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### Πώς μπορώ να χειριστώ μαζική αποστολή email που έχουν αναπηδήσει ή αποτύχει;
    Το Aspose.Email παρέχει λειτουργίες για το χειρισμό των ειδοποιήσεων κατάστασης παράδοσης (DSN) και την παρακολούθηση της κατάστασης παράδοσης email. Μπορείτε να εφαρμόσετε τη λογική για να επεξεργαστείτε τα email που έχουν αναπηδήσει ή αποτύχει, όπως απαιτείται.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

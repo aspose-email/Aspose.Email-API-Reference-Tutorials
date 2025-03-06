@@ -3,10 +3,16 @@ title: Manipulação mestre de anexos de e-mail com Aspose.Email para .NET
 linktitle: Tratamento de anexos de e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aumente o gerenciamento de e-mail usando os tutoriais Aspose.Email for .NET. Aprenda processamento simplificado, análise e insights baseados em dados. Guia passo a passo fornecido.
-type: docs
 weight: 12
 url: /pt/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulação mestre de anexos de e-mail com Aspose.Email para .NET
+
 ## Introdução
 
 Os tutoriais do Aspose.Email for .NET sobre "Anexos de e-mail e tratamento de anexos" oferecem aos desenvolvedores um guia abrangente para gerenciar e manipular com eficácia anexos de e-mail em seus aplicativos. Esses tutoriais fornecem informações valiosas sobre como aproveitar o poder do Aspose.Email for .NET para lidar perfeitamente com anexos, aprimorando a troca de dados e a colaboração. Com instruções passo a passo e trechos de código ilustrativos, os desenvolvedores podem integrar com segurança funcionalidades relacionadas a anexos em seus aplicativos, otimizando os fluxos de trabalho de comunicação por e-mail e as experiências do usuário.
@@ -46,3 +52,10 @@ Aprenda como extrair anexos incorporados de arquivos MSG usando C# e Aspose.Emai
 Aprenda como preservar o formato MSG incorporado usando Aspose.Email for .NET. Guia passo a passo com código-fonte.
 ### [Preservando anexos TNEF ao ler mensagens – abordagem C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Aprenda como preservar anexos TNEF usando Aspose.Email for .NET neste guia passo a passo com código-fonte.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

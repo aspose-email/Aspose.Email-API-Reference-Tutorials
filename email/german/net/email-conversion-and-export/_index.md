@@ -3,10 +3,16 @@ title: Erkundung der E-Mail-Konvertierung und des Exports
 linktitle: E-Mail-Konvertierung und -Export
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Beherrschen Sie die E-Mail-Datenverwaltung mit den Tutorials von Aspose.Email für .NET. Konvertieren und exportieren Sie E-Mails, wahren Sie die Integrität und verarbeiten Sie Anhänge. Mit Beispielen aufwerten.
-type: docs
 weight: 11
 url: /de/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Erkundung der E-Mail-Konvertierung und des Exports
+
 
 ## Einführung
 
@@ -39,3 +45,9 @@ Erfahren Sie, wie Sie die Bearbeitung von E-Mail-Entwürfen in C# mit Aspose.Ema
 Erfahren Sie, wie Sie HTML-E-Mail-Dateien mit C# und Aspose.Email für .NET erstellen. Schritt-für-Schritt-Anleitung mit Quellcode für eine nahtlose E-Mail-Anpassung.
 ### [Generieren von OFT-Dateien aus Nachrichten – C#-Tutorial](./generating-oft-files-from-messages-csharp-tutorial/)
 Erfahren Sie, wie Sie mit Aspose.Email für .NET OFT-Dateien aus Nachrichten erstellen. Schritt-für-Schritt-Anleitung mit Quellcode für die effiziente Generierung von E-Mail-Vorlagen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

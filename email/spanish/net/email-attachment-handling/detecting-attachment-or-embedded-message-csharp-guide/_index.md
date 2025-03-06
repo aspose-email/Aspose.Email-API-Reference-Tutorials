@@ -3,10 +3,16 @@ title: Detección de archivos adjuntos o mensajes incrustados - Guía de C#
 linktitle: Detección de archivos adjuntos o mensajes incrustados - Guía de C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Domine los archivos adjuntos de correo electrónico y la detección de mensajes incrustados en C# utilizando Aspose.Email para .NET. Mejore su manejo de correo electrónico con nuestra guía completa.
-type: docs
 weight: 13
 url: /es/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Detección de archivos adjuntos o mensajes incrustados - Guía de C#
+
 
 ## Introducción a la detección de archivos adjuntos o mensajes incrustados - Guía de C#
 
@@ -106,3 +112,9 @@ Debe implementar mecanismos adecuados de manejo de errores utilizando bloques tr
 ### ¿Puedo personalizar el procesamiento de archivos adjuntos y mensajes incrustados?
 
 Por supuesto, puede personalizar el procesamiento de archivos adjuntos y mensajes incrustados para satisfacer las necesidades específicas de su aplicación. Aspose.Email proporciona API flexibles para este propósito.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

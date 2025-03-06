@@ -3,10 +3,16 @@ title: Mengelola Lampiran Besar di Aspose.Email
 linktitle: Mengelola Lampiran Besar di Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Kelola lampiran email berukuran besar secara efisien dengan Aspose.Email untuk Java. Panduan langkah demi langkah dan kode sumber untuk penanganan lampiran yang efisien dalam aplikasi Java.
-type: docs
 weight: 11
 url: /id/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengelola Lampiran Besar di Aspose.Email
+
 
 ## Pengantar Mengelola Lampiran Besar di Aspose.Email untuk Java
 
@@ -145,3 +151,9 @@ Batasan ukuran lampiran email dapat bervariasi tergantung pada penyedia layanan 
 ### Bisakah saya mengompres lampiran untuk memperkecil ukurannya?
 
 Ya, Anda dapat mengompresi lampiran untuk memperkecil ukurannya sebelum mengirimnya. Aspose.Email menyediakan fitur untuk mengompresi dan mendekompresi lampiran secara terprogram. Anda dapat menerapkan ini untuk mengoptimalkan ukuran lampiran email Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Envoi d'e-mails en texte brut avec Aspose.Email
 linktitle: Envoi d'e-mails en texte brut avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Apprenez à envoyer efficacement des e-mails en texte brut avec Aspose.Email pour Java. Un guide complet avec des exemples de code et des FAQ pour une communication transparente.
-type: docs
 weight: 10
 url: /fr/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Envoi d'e-mails en texte brut avec Aspose.Email
+
 
 ## Introduction
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Existe-t-il des limitations lors de l'envoi d'e-mails en texte brut avec Aspose.Email pour Java ?
    - Les limitations peuvent dépendre de votre fournisseur de services de messagerie et de votre serveur SMTP. Assurez-vous de respecter les limites d'envoi et les politiques d'envoi d'e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Címzett címének megadása C#-ban
 linktitle: Címzett címének megadása C#-ban
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan adhat meg címzett címeket C# nyelven az Aspose.Email for .NET használatával. Hatékonyan hozhat létre, konfigurálhat és küldhet e-maileket.
-type: docs
 weight: 19
 url: /hu/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Címzett címének megadása C#-ban
+
 
 
 Ez az útmutató végigvezeti a címzettek címének C# nyelven történő megadásának folyamatán az Aspose.Email for .NET könyvtár használatával. Az Aspose.Email egy hatékony .NET API, amely lehetővé teszi az e-mail üzenetek kezelését és a különféle e-mailekkel kapcsolatos feladatokat. Ebben az oktatóanyagban bemutatjuk, hogyan adhatunk címzett címeket egy e-mail üzenethez a könyvtár használatával.
@@ -119,3 +125,9 @@ catch (Exception ex)
  További információkért és az Aspose.Email for .NET speciális funkcióiért tekintse meg a[Aspose API referenciák](https://reference.aspose.com/email/net/).
 
 Ezzel a címzettek címének C# nyelven történő meghatározásáról szóló útmutatót az Aspose.Email for .NET használatával zárja. Megtanulta, hogyan hozhat létre e-mail üzenetet, hogyan adhat hozzá címzett címeket, és hogyan küldheti el az e-mailt a könyvtár funkcióival.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

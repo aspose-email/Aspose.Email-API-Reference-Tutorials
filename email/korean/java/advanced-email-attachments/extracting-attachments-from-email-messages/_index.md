@@ -3,10 +3,16 @@ title: Aspose.Email의 이메일 메시지에서 첨부 파일 추출
 linktitle: Aspose.Email의 이메일 메시지에서 첨부 파일 추출
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 손쉽게 이메일 첨부 파일을 추출하는 방법을 알아보세요. Java 개발자를 위한 단계별 가이드입니다.
-type: docs
 weight: 13
 url: /ko/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email의 이메일 메시지에서 첨부 파일 추출
+
 
 ## Java용 Aspose.Email 소개
 
@@ -83,3 +89,9 @@ Aspose.Email for Java는 MSG, EML 등을 포함한 다양한 이메일 형식을
 ### Java용 Aspose.Email에 대한 지원은 어디서 받을 수 있나요?
 
 기술 지원이나 문의 사항이 있는 경우 지원 채널을 통해 Aspose 지원팀에 문의할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

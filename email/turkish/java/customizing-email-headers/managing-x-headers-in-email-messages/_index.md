@@ -3,10 +3,16 @@ title: Aspose.Email ile E-posta Mesajlarındaki X Başlıklarını Yönetme
 linktitle: Aspose.Email ile E-posta Mesajlarındaki X Başlıklarını Yönetme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile E-postalarda X Başlıklarının Gücünün Kilidini Açın. Özel Meta Verileri Yönetmeyi ve E-posta İşlemeyi Geliştirmeyi öğrenin.
-type: docs
 weight: 16
 url: /tr/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile E-posta Mesajlarındaki X Başlıklarını Yönetme
+
 
 ## giriiş
 
@@ -124,3 +130,9 @@ Aspose.Email for Java'yı kullanarak alınan e-postalardan X-Headers'ı okuyabil
 ### Aspose.Email kurumsal düzeyde e-posta yönetimine uygun mu?
 
 Evet, Aspose.Email kurumsal düzeyde e-posta yönetimi için kullanılabilecek sağlam bir kütüphanedir. E-posta oluşturmaya, göndermeye, almaya ve işlemeye yönelik çok çeşitli özellikler sunarak çeşitli iş senaryolarına uygun hale getirir.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

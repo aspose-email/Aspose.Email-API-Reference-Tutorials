@@ -3,10 +3,16 @@ title: Effortless Email Export to EML using C#
 linktitle: Effortless Email Export to EML using C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to export email messages to EML using C# with Aspose.Email for .NET. Follow our step-by-step guide for effortless email conversion.
-type: docs
 weight: 11
 url: /net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Effortless Email Export to EML using C#
+
 
 In this tutorial, we'll explore how to export email messages to EML format using C# with Aspose.Email for .NET. EML files are widely used for storing and archiving email messages, making this process essential for various applications.
 
@@ -91,3 +97,10 @@ Exporting email messages to EML format using C# with Aspose.Email for .NET is st
 
 ### 5. Where can I get support for Aspose.Email?
    For support and community help, visit the [Aspose.Email forum](https://forum.aspose.com/c/email/12).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

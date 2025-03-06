@@ -3,10 +3,16 @@ title: C#의 초안 메시지 처리 - 이메일을 초안으로 저장
 linktitle: C#의 초안 메시지 처리 - 이메일을 초안으로 저장
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 초안 이메일 처리를 구현하는 방법을 알아보세요. 초안을 원활하게 생성, 편집, 저장하세요.
-type: docs
 weight: 17
 url: /ko/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#의 초안 메시지 처리 - 이메일을 초안으로 저장
+
 
 ## 소개
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### Aspose.Email 라이브러리는 다른 이메일 관련 기능을 지원합니까?
 
  예, Aspose.Email 라이브러리는 이메일 및 첨부 파일 보내기, 받기, 조작을 포함하여 이메일 메시지 작업을 위한 다양한 기능을 제공합니다. 자세한 내용은 설명서를 참조하세요.[여기](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

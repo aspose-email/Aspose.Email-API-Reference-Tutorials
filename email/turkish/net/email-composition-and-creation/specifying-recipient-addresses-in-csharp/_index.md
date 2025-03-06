@@ -3,10 +3,16 @@ title: C#'ta Alıcı Adreslerini Belirleme
 linktitle: C#'ta Alıcı Adreslerini Belirleme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET kullanarak C#'ta alıcı adreslerini nasıl belirleyeceğinizi öğrenin. E-postaları verimli bir şekilde oluşturun, yapılandırın ve gönderin.
-type: docs
 weight: 19
 url: /tr/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta Alıcı Adreslerini Belirleme
+
 
 
 Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak C#'ta alıcı adreslerini belirleme sürecinde size yol gösterecektir. Aspose.Email, e-posta mesajlarıyla ve e-postayla ilgili çeşitli görevlerle çalışmanıza olanak tanıyan güçlü bir .NET API'sidir. Bu eğitimde, kütüphaneyi kullanarak bir e-posta mesajına alıcı adreslerinin nasıl ekleneceğini ele alacağız.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Aspose.Email for .NET hakkında daha fazla bilgi ve gelişmiş özellikler için bkz.[API Referanslarını Aspose Edin](https://reference.aspose.com/email/net/).
 
 Bu, Aspose.Email for .NET kullanılarak C#'ta alıcı adreslerinin belirlenmesine ilişkin kılavuzun sonuncusudur. Kütüphanenin özelliklerini kullanarak e-posta mesajı oluşturmayı, alıcı adreslerini eklemeyi ve e-postayı göndermeyi öğrendiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

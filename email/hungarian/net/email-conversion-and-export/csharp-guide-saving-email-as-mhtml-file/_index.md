@@ -3,10 +3,16 @@ title: C# útmutató - E-mail mentése MHTML fájlként
 linktitle: C# útmutató - E-mail mentése MHTML fájlként
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan mentheti az e-maileket MHTML-fájlként a C# és az Aspose.Email for .NET használatával. Lépésről lépésre, kódpéldákkal és GYIK-vel.
-type: docs
 weight: 16
 url: /hu/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# útmutató - E-mail mentése MHTML fájlként
+
 
 ## Az e-mailek MHTML-fájlként való mentésének bemutatása
 
@@ -105,3 +111,9 @@ Teljesen! Az Aspose.Email úgy készült, hogy megfeleljen az egyének és a vá
 ### Vannak-e licencdíjak az Aspose.Email for .NET használatához?
 
 Igen, az Aspose.Email egy kereskedelmi könyvtár. Az engedélyezésről és az árakról részletes információkat talál a[Aspose.Email weboldal](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

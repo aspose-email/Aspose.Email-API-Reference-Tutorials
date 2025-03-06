@@ -3,10 +3,16 @@ title: Đặt văn bản thay thế cho hình ảnh - Hướng dẫn C#
 linktitle: Đặt văn bản thay thế cho hình ảnh - Hướng dẫn C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách đặt văn bản thay thế cho hình ảnh trong email bằng Aspose.Email for .NET. Đảm bảo khả năng truy cập bằng văn bản thay thế rõ ràng. Bao gồm tài liệu và mã.
-type: docs
 weight: 15
 url: /vi/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt văn bản thay thế cho hình ảnh - Hướng dẫn C#
+
 
 Hướng dẫn này sẽ hướng dẫn bạn quy trình đặt văn bản thay thế cho hình ảnh trong email bằng Aspose.Email for .NET. Văn bản thay thế, còn được gọi là "văn bản thay thế", được sử dụng để cung cấp mô tả bằng văn bản về hình ảnh trong trường hợp hình ảnh đó không thể hiển thị. Aspose.Email for .NET là một thư viện mạnh mẽ cho phép bạn làm việc với email và tệp đính kèm ở nhiều định dạng khác nhau. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc đặt văn bản thay thế cho hình ảnh trong email bằng C#.
 
@@ -81,3 +87,9 @@ Bạn có thể tải xuống thư viện Aspose.Email từ Bản phát hành As
 ### Tôi có thể tìm thêm tài liệu về Aspose.Email cho .NET ở đâu?
 
  Bạn có thể tìm thấy tài liệu, hướng dẫn và ví dụ chi tiết hơn về cách làm việc với Aspose.Email cho .NET trong[Tham chiếu API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

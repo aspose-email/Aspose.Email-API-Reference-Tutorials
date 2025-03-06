@@ -3,10 +3,16 @@ title: C# テクニック - HTML 本文をプレーン テキストに変換す�
 linktitle: C# テクニック - HTML 本文をプレーン テキストに変換する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して、HTML 電子メール コンテンツをプレーン テキストに簡単に変換する方法を学びます。詳細なガイドとコード。今すぐ探索してみよう！
-type: docs
 weight: 19
 url: /ja/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# テクニック - HTML 本文をプレーン テキストに変換する
+
 
 今日のデジタル時代では、電子メールによるコミュニケーションは私たちの私生活や仕事において重要な役割を果たしています。多くの場合、電子メールには、見栄えを良くするために HTML 形式のコンテンツが含まれます。ただし、電子メールの HTML 本文からプレーン テキストを抽出する必要がある状況もあります。この記事では、C#、Aspose.Email、および Aspose.Words for .NET を使用してこのタスクを効率的に達成するプロセスについて説明します。
 
@@ -75,3 +81,9 @@ A4: はい、Aspose.Email は電子メール自動化のための広範な機能
  A5: Aspose Web サイトの API ドキュメントとリソースを参照できます。[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/)そして[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 HTML 電子メールのコンテンツをプレーン テキストに変換する技術を習得したので、C# で電子メールの処理機能を強化できます。コーディングを楽しんでください!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

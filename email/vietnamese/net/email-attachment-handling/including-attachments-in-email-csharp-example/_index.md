@@ -3,10 +3,16 @@ title: Bao gồm tệp đính kèm trong email - Ví dụ C#
 linktitle: Bao gồm tệp đính kèm trong email - Ví dụ C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách đưa tệp đính kèm vào email bằng Aspose.Email for .NET. Hướng dẫn từng bước với ví dụ về mã C#.
-type: docs
 weight: 10
 url: /vi/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bao gồm tệp đính kèm trong email - Ví dụ C#
+
 
 ## Giới thiệu về Bao gồm tệp đính kèm trong email
 
@@ -111,3 +117,9 @@ Có, bạn có thể định cấu hình Aspose.Email để gửi email qua kế
 ### Tôi có thể tìm thêm thông tin về khả năng của Aspose.Email ở đâu?
 
  Để biết thêm thông tin chi tiết về các tính năng, lớp và phương thức của Aspose.Email, hãy tham khảo[Tài liệu tham khảo API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

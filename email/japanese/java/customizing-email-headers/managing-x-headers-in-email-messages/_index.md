@@ -3,10 +3,16 @@ title: Aspose.Email を使用した電子メール メッセージ内の X-Heade
 linktitle: Aspose.Email を使用した電子メール メッセージ内の X-Header の管理
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して、電子メールの X-Header の力を解き放ちます。カスタム メタデータの管理と電子メール処理の強化について学びます。
-type: docs
 weight: 16
 url: /ja/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した電子メール メッセージ内の X-Header の管理
+
 
 ## 導入
 
@@ -124,3 +130,9 @@ Aspose.Email for Java を使用して、受信した電子メールから X-Head
 ### Aspose.Email はエンタープライズ レベルの電子メール管理に適していますか?
 
 はい、Aspose.Email はエンタープライズ レベルの電子メール管理に使用できる堅牢なライブラリです。電子メールの作成、送信、受信、処理のための幅広い機能を提供し、さまざまなビジネス シナリオに適しています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

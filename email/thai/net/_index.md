@@ -1,12 +1,17 @@
 ---
 title: องค์ประกอบอีเมล การแปลง และการประมวลผลด้วย Aspose บทช่วยสอนอีเมล
 linktitle: Aspose.Email สำหรับบทช่วยสอน .NET
-type: docs
 weight: 10
 url: /th/net/
 description: ปรับความสามารถอีเมลให้เหมาะสมด้วย Aspose.Email สำหรับบทช่วยสอน .NET เรียนรู้องค์ประกอบ การแปลง และการประมวลผลสำหรับการจัดการอีเมลขั้นสูง
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# องค์ประกอบอีเมล การแปลง และการประมวลผลด้วย Aspose บทช่วยสอนอีเมล
+
 
 ## การแนะนำ
 
@@ -45,3 +50,9 @@ is_root: true
 ปรับปรุงการจัดเก็บและการเรียกค้นไฟล์อีเมลโดยใช้ Aspose.Email สำหรับบทช่วยสอน .NET เรียนรู้วิธีจัดการและเข้าถึงข้อความอีเมลและไฟล์แนบโดยทางโปรแกรม
 ### [ความปลอดภัยของอีเมลและลายเซ็น](./email-security-and-signatures/)
 ใช้มาตรการรักษาความปลอดภัยอีเมลที่แข็งแกร่งและลายเซ็นส่วนบุคคลด้วยบทช่วยสอน Aspose.Email สำหรับ .NET รับประกันการสื่อสารที่ปลอดภัยและการสร้างแบรนด์ระดับมืออาชีพ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

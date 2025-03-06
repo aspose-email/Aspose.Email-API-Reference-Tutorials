@@ -3,10 +3,16 @@ title: C# Guide - Extrahera e-posthuvuden
 linktitle: C# Guide - Extrahera e-posthuvuden
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du extraherar e-postrubriker i C# med Aspose.Email för .NET. Steg-för-steg-guide med källkod för effektiv e-postanalys.
-type: docs
 weight: 15
 url: /sv/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Extrahera e-posthuvuden
+
 
 Har du någonsin undrat hur man extraherar e-postrubriker med C#? E-postrubriker innehåller värdefull information om avsändaren, mottagaren, ämnet och diverse andra detaljer. I den här guiden går vi igenom steg-för-steg-processen för att extrahera e-postrubriker med det kraftfulla Aspose.Email for .NET-biblioteket. Det här biblioteket tillhandahåller en omfattande uppsättning funktioner för att arbeta med e-postmeddelanden i dina .NET-program.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Var kan jag komma åt Aspose.Email-dokumentationen och ladda ner biblioteket?
 
  Du hittar dokumentationen på[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . För att ladda ner biblioteket, besök[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

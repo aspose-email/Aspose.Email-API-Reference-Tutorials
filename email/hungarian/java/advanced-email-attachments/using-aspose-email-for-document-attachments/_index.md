@@ -3,10 +3,16 @@ title: Az Aspose.Email használata dokumentummellékletekhez
 linktitle: Az Aspose.Email használata dokumentummellékletekhez
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan kezelheti a Java e-mailek dokumentummellékleteit az Aspose.Email for Java segítségével. Könnyedén hozhat létre, küldhet és bonthat ki dokumentummellékleteket.
-type: docs
 weight: 16
 url: /hu/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Az Aspose.Email használata dokumentummellékletekhez
+
 
 ## Bevezetés az Aspose.Email használatába dokumentummellékletekhez Java nyelven
 
@@ -104,3 +110,9 @@ Igen, az Aspose.Email for Java a melléklettípusok széles skáláját támogat
 ### Hogyan kezelhetem a nagy dokumentummellékleteket?
 
 Ha nagy dokumentummellékleteket kell kezelnie, fontolja meg a streaming technikák használatát, hogy elkerülje a teljes melléklet memóriába való betöltését. Az Aspose.Email lehetőséget biztosít a mellékletek streamelésére, lehetővé téve azok hatékony feldolgozását.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

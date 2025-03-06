@@ -3,10 +3,16 @@ title: 문서 첨부를 위해 Aspose.Email 사용하기
 linktitle: 문서 첨부를 위해 Aspose.Email 사용하기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 Java 이메일의 문서 첨부 파일을 관리하는 방법을 알아보세요. 문서 첨부 파일을 쉽게 만들고, 보내고, 추출하세요.
-type: docs
 weight: 16
 url: /ko/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 문서 첨부를 위해 Aspose.Email 사용하기
+
 
 ## Java에서 문서 첨부에 Aspose.Email을 사용하는 방법 소개
 
@@ -104,3 +110,9 @@ public class ExtractAttachments {
 ### 대용량 문서 첨부 파일을 어떻게 처리하나요?
 
 대용량 문서 첨부 파일을 처리해야 하는 경우 전체 첨부 파일이 메모리에 로드되지 않도록 스트리밍 기술을 사용하는 것이 좋습니다. Aspose.Email은 첨부 파일 스트리밍 옵션을 제공하여 첨부 파일을 효율적으로 처리할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

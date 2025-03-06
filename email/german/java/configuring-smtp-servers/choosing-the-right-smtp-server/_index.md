@@ -3,10 +3,16 @@ title: Auswahl des richtigen SMTP-Servers für Aspose.Email
 linktitle: Auswahl des richtigen SMTP-Servers für Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Optimieren Sie Ihre E-Mail-Funktionalität mit Aspose.Email für Java. Erfahren Sie, wie Sie den richtigen SMTP-Server auswählen und E-Mails mühelos versenden.
-type: docs
 weight: 10
 url: /de/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Auswahl des richtigen SMTP-Servers für Aspose.Email
+
 
 ## Einführung
 
@@ -100,3 +106,9 @@ Ja, Sie können Aspose.Email für Java so konfigurieren, dass es basierend auf I
 ### Was soll ich tun, wenn mein SMTP-Server eine OAuth2-Authentifizierung erfordert?
 
 Sie können die OAuth2-Authentifizierung mit Aspose.Email für Java konfigurieren, indem Sie die erforderlichen OAuth2-Tokens und -Einstellungen bereitstellen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

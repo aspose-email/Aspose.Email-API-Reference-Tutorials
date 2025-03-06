@@ -3,10 +3,16 @@ title: C# में नए TNEF अनुलग्नक जोड़ना
 linktitle: C# में नए TNEF अनुलग्नक जोड़ना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में नए TNEF अटैचमेंट जोड़ने का तरीका जानें। निर्बाध एकीकरण के लिए कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 12
 url: /hi/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# में नए TNEF अनुलग्नक जोड़ना
+
 
 ## .NET के लिए TNEF अटैचमेंट और Aspose.Email का परिचय
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### मुझे और अधिक दस्तावेज़ और उदाहरण कहां मिल सकते हैं?
 
  अधिक विस्तृत दस्तावेज़ीकरण और कोड उदाहरणों के लिए, आप यहां जा सकते हैं[.NET दस्तावेज़ीकरण के लिए Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

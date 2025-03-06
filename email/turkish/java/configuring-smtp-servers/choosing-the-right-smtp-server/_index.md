@@ -3,10 +3,16 @@ title: Aspose.Email için Doğru SMTP Sunucusunu Seçmek
 linktitle: Aspose.Email için Doğru SMTP Sunucusunu Seçmek
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile e-posta işlevselliğinizi optimize edin. Doğru SMTP sunucusunu nasıl seçeceğinizi ve e-postaları zahmetsizce nasıl göndereceğinizi öğrenin.
-type: docs
 weight: 10
 url: /tr/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email için Doğru SMTP Sunucusunu Seçmek
+
 
 ## giriiş
 
@@ -100,3 +106,9 @@ Evet, Aspose.Email for Java'yı, e-posta gönderme gereksinimlerinize göre bird
 ### SMTP sunucum OAuth2 kimlik doğrulamasını gerektiriyorsa ne yapmalıyım?
 
 Gerekli OAuth2 belirteçlerini ve ayarlarını sağlayarak Aspose.Email for Java ile OAuth2 kimlik doğrulamasını yapılandırabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

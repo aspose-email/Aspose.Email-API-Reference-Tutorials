@@ -3,10 +3,16 @@ title: مرفقات البريد الإلكتروني المتقدمة مع Aspo
 linktitle: مرفقات البريد الإلكتروني المتقدمة مع Aspose.Email لجافا
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: إتقان التقنيات المتقدمة لمرفقات البريد الإلكتروني باستخدام Aspose.Email لـ Java. استكشف البرامج التعليمية للتعامل مع المرفقات بكفاءة.
-type: docs
 weight: 13
 url: /ar/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# مرفقات البريد الإلكتروني المتقدمة مع Aspose.Email لجافا
+
 
 تلعب مرفقات البريد الإلكتروني دورًا محوريًا في الاتصالات الحديثة، مما يسمح للمستخدمين بمشاركة المستندات والصور والملفات بسلاسة. يعمل Aspose.Email for Java على تمكين المطورين من التحكم في مرفقات البريد الإلكتروني وتنفيذ التقنيات المتقدمة بكفاءة.
 
@@ -35,3 +41,9 @@ url: /ar/java/advanced-email-attachments/
 تعرف على كيفية تضمين الصور كمرفقات في Aspose.Email لـ Java. ارفع مستوى تواصلك عبر البريد الإلكتروني من خلال محتوى جذاب بصريًا.
 ### [استخدام Aspose.Email لمرفقات المستندات](./using-aspose-email-for-document-attachments/)
 تعرف على كيفية إدارة مرفقات المستندات في رسائل البريد الإلكتروني الخاصة بـ Java باستخدام Aspose.Email لـ Java. قم بإنشاء وإرسال واستخراج مرفقات المستندات بسهولة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

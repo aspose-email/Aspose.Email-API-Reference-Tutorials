@@ -3,10 +3,16 @@ title: Aspose.Email に画像を添付ファイルとして埋め込む
 linktitle: Aspose.Email に画像を添付ファイルとして埋め込む
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java に画像を添付ファイルとして埋め込む方法を学習します。視覚的に魅力的なコンテンツで電子メールコミュニケーションを強化します。
-type: docs
 weight: 14
 url: /ja/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email に画像を添付ファイルとして埋め込む
+
 
 ## Aspose.Email に画像を添付ファイルとして埋め込む
 
@@ -97,3 +103,9 @@ Aspose.Email for Java は、JPEG、PNG、GIF などを含むさまざまな画�
 ### 埋め込む画像のサイズに制限はありますか?
 
 埋め込まれた画像のサイズは、電子メールの到達性と受信者のエクスペリエンスに影響を与える可能性があります。ファイル サイズが大きくならないように、画像を電子メール用に最適化することをお勧めします。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

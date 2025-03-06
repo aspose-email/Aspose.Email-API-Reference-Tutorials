@@ -3,10 +3,16 @@ title: Настройка заголовков электронной почты
 linktitle: Настройка заголовков электронной почты с помощью Aspose.Email для Java
 second_title: Aspose.Email Java API управления электронной почтой
 description: Узнайте, как легко настраивать заголовки электронных писем с помощью Aspose.Email для Java. Погрузитесь в руководства и используйте возможности настройки заголовка электронной почты.
-type: docs
 weight: 16
 url: /ru/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Настройка заголовков электронной почты с помощью Aspose.Email для Java
+
 
 Заголовки электронных писем играют решающую роль в общении по электронной почте, предоставляя важную информацию о происхождении и доставке сообщения. С Aspose.Email для Java настройка заголовков электронной почты становится простой задачей, позволяя пользователям адаптировать метаданные электронной почты к конкретным потребностям и требованиям.
 
@@ -37,3 +43,9 @@ Aspose.Email для Java предоставляет полный набор фу
 Раскройте возможности X-заголовков в электронных письмах с помощью Aspose.Email для Java. Научитесь управлять пользовательскими метаданными и улучшать обработку электронной почты.
 ### [Расширение метаданных электронной почты с помощью заголовков с помощью Aspose.Email](./enriching-email-metadata-through-headers/)
 Улучшите метаданные электронной почты с помощью Aspose.Email для Java. Узнайте, как обогатить заголовки электронных писем для улучшения отслеживания и настройки с помощью Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

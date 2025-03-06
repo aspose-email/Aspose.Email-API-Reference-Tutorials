@@ -3,10 +3,16 @@ title: حفظ الرسائل من Zimbra TGZ Storage باستخدام C#
 linktitle: حفظ الرسائل من Zimbra TGZ Storage باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية استخراج رسائل البريد الإلكتروني الخاصة بـ Zimbra TGZ باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لإدارة البريد الإلكتروني بكفاءة.
-type: docs
 weight: 12
 url: /ar/net/email-file-storage-and-retrieval/saving-messages-from-zimbra-tgz-storage-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حفظ الرسائل من Zimbra TGZ Storage باستخدام C#
+
 
 في عالم التكنولوجيا الحديثة، يعد الحفاظ على البيانات وإدارتها أمرًا بالغ الأهمية. تعتمد الشركات بشكل كبير على التواصل عبر البريد الإلكتروني لأغراض مختلفة، وباعتبارك مطورًا، قد تواجه الحاجة إلى استخراج الرسائل من وحدة تخزين Zimbra TGZ. توفر هذه المقالة دليلاً خطوة بخطوة حول كيفية تحقيق ذلك باستخدام Aspose.Email لـ .NET API. سنتعرف على عملية حفظ الرسائل من وحدة تخزين Zimbra TGZ بسهولة.
 
@@ -78,3 +84,9 @@ using (TgzReader reader = new TgzReader(dataDir + "ZimbraSample.tgz"))
 ### 5. أين يمكنني العثور على موارد ودعم إضافيين لـ Aspose.Email لـ .NET؟
 
 يمكنك استكشاف الوثائق الشاملة والوصول إلى الدعم على الموقع[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

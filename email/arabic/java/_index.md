@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email لبرامج Java التعليمية - التحكم الرئيسي في البريد الإلكتروني
 linktitle: Aspose.Email لدروس جافا
-type: docs
 weight: 10
 url: /ar/java/
 description: أطلق العنان لقوة Aspose.Email لـ Java من خلال البرامج التعليمية الشاملة. تعلم كيفية التعامل مع البريد الإلكتروني وإدارته والمزيد.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email لبرامج Java التعليمية - التحكم الرئيسي في البريد الإلكتروني
+
 
 Aspose.Email for Java عبارة عن واجهة برمجة تطبيقات قوية تمكن المطورين من التعامل مع رسائل البريد الإلكتروني وإدارتها بسهولة. سواء كنت تتطلع إلى أتمتة المهام المتعلقة بالبريد الإلكتروني، أو تعزيز أمان البريد الإلكتروني، أو دمج وظائف البريد الإلكتروني في تطبيقات Java الخاصة بك، فإن Aspose.Email يوفر الأدوات والموارد التي تحتاجها. في هذه المقالة، سنستكشف عالم دروس Aspose.Email لـ Java وكيف يمكن أن تساعدك في إتقان التعامل مع البريد الإلكتروني.
 
@@ -38,3 +43,9 @@ Aspose.Email for Java هي مكتبة غنية بالميزات تعمل على 
 تعرف على كيفية تخصيص رؤوس البريد الإلكتروني بسهولة باستخدام Aspose.Email لـ Java. انغمس في البرامج التعليمية واستفد من قوة تخصيص رأس البريد الإلكتروني.
 ### [استكشاف أمان البريد الإلكتروني باستخدام Aspose.Email لـ Java](./exploring-email-security/)
 اكتشف كيفية تحسين أمان البريد الإلكتروني باستخدام Aspose.Email لـ Java. استكشف البرامج التعليمية خطوة بخطوة وأفضل الممارسات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

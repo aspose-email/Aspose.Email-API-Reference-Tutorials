@@ -3,10 +3,16 @@ title: Xác thực và xác minh email
 linktitle: Xác thực và xác minh email
 second_title: API xử lý email Aspose.Email .NET
 description: Triển khai các cơ chế xác minh và xác thực email mạnh mẽ bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tăng cường độ chính xác và bảo mật truyền thông.
-type: docs
 weight: 17
 url: /vi/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xác thực và xác minh email
+
 
 ## Giới thiệu
 
@@ -23,3 +29,9 @@ Hướng dẫn xác minh email tập trung vào việc cho phép các nhà phát
 ## Hướng dẫn xác thực và xác minh email
 ### [Kỹ thuật xác thực email trong mã C#](./email-validation-techniques-in-csharp-code/)
 Tìm hiểu cách xác thực địa chỉ email một cách hiệu quả trong C# bằng Aspose.Email for .NET. Hướng dẫn từng bước với mã nguồn được cung cấp. Nâng cao độ chính xác của dữ liệu và trải nghiệm người dùng.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

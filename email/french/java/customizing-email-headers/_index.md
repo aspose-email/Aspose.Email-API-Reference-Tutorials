@@ -3,10 +3,16 @@ title: Personnalisation des en-têtes de courrier électronique avec Aspose.Emai
 linktitle: Personnalisation des en-têtes de courrier électronique avec Aspose.Email pour Java
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Apprenez à personnaliser les en-têtes d'e-mails sans effort avec Aspose.Email pour Java. Plongez dans des didacticiels et exploitez la puissance de la personnalisation des en-têtes d’e-mails.
-type: docs
 weight: 16
 url: /fr/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personnalisation des en-têtes de courrier électronique avec Aspose.Email pour Java
+
 
 Les en-têtes d'e-mails jouent un rôle crucial dans la communication par courrier électronique, fournissant des informations essentielles sur l'origine et la livraison du message. Avec Aspose.Email pour Java, la personnalisation des en-têtes de courrier électronique devient une tâche simple, permettant aux utilisateurs d'adapter leurs métadonnées de courrier électronique à des besoins et exigences spécifiques.
 
@@ -37,3 +43,9 @@ Garantissez la sécurité des e-mails avec les signatures DKIM à l'aide d'Aspos
 Libérez la puissance des X-Headers dans les e-mails avec Aspose.Email pour Java. Apprenez à gérer les métadonnées personnalisées et à améliorer le traitement des e-mails.
 ### [Enrichir les métadonnées des e-mails via les en-têtes avec Aspose.Email](./enriching-email-metadata-through-headers/)
 Améliorez les métadonnées des e-mails avec Aspose.Email pour Java. Découvrez comment enrichir les en-têtes d'e-mails pour un suivi et une personnalisation améliorés avec Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

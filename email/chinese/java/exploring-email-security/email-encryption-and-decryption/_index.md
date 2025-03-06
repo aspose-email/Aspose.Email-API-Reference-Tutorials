@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 进行电子邮件加密和解密
 linktitle: 使用 Aspose.Email 进行电子邮件加密和解密
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 通过电子邮件加密和解密来保护您的电子邮件。包括分步指南、源代码和常见问题解答。
-type: docs
 weight: 11
 url: /zh/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 进行电子邮件加密和解密
+
 
 ## 介绍
 
@@ -95,3 +101,9 @@ Aspose.Email支持各种加密算法，允许您选择您需要的安全级别�
 访问 API 文档[这里](https://reference.aspose.com/email/java/)获取详细信息和示例。
 
 现在您已经全面了解了使用 Aspose.Email for Java 进行电子邮件加密和解密。从今天开始保护您的电子邮件！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Costruire un nuovo messaggio di posta in C#
 linktitle: Costruire un nuovo messaggio di posta in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Master nella creazione di e-mail in C# utilizzando Aspose.Email per .NET. Una guida completa con esempi di codice. Migliora la tua app adesso
-type: docs
 weight: 11
 url: /it/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Costruire un nuovo messaggio di posta in C#
+
 
 Desideri migliorare la tua applicazione C# aggiungendo la funzionalità di inviare e-mail a livello di codice? Con la potenza di Aspose.Email per .NET, puoi integrare perfettamente le funzionalità di posta elettronica nella tua applicazione. In questa guida passo passo ti guideremo attraverso il processo di creazione di un nuovo messaggio di posta utilizzando Aspose.Email per .NET, completo di esempi di codice sorgente.
 
@@ -123,3 +129,9 @@ Congratulazioni! Hai imparato con successo come costruire un nuovo messaggio di 
    È possibile trovare documentazione completa ed esempi di codice su[Riferimento API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

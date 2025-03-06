@@ -3,10 +3,16 @@ title: Chỉ định địa chỉ người nhận trong C#
 linktitle: Chỉ định địa chỉ người nhận trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách chỉ định địa chỉ người nhận trong C# bằng Aspose.Email for .NET. Tạo, cấu hình và gửi email hiệu quả.
-type: docs
 weight: 19
 url: /vi/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định địa chỉ người nhận trong C#
+
 
 
 Hướng dẫn này sẽ hướng dẫn bạn quy trình chỉ định địa chỉ người nhận trong C# bằng thư viện Aspose.Email for .NET. Aspose.Email là một API .NET mạnh mẽ cho phép bạn làm việc với các email và các tác vụ khác nhau liên quan đến email. Trong hướng dẫn này, chúng tôi sẽ đề cập đến cách thêm địa chỉ người nhận vào email bằng thư viện.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Để biết thêm thông tin và các tính năng nâng cao của Aspose.Email cho .NET, hãy tham khảo[Tham khảo API Aspose](https://reference.aspose.com/email/net/).
 
 Phần này kết thúc hướng dẫn về cách chỉ định địa chỉ người nhận trong C# bằng Aspose.Email cho .NET. Bạn đã học cách tạo email, thêm địa chỉ người nhận và gửi email bằng các tính năng của thư viện.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

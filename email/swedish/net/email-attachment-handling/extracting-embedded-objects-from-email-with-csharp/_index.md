@@ -3,10 +3,16 @@ title: Extrahera inbäddade objekt från e-post med C#
 linktitle: Extrahera inbäddade objekt från e-post med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du extraherar inbäddade objekt från e-postmeddelanden med C# och Aspose.Email för .NET. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 16
 url: /sv/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahera inbäddade objekt från e-post med C#
+
 
 ## Introduktion till inbäddade objekt i e-postmeddelanden
 
@@ -113,3 +119,9 @@ Ja, du kan manipulera de extraherade inbäddade objekten innan du sparar dem. As
 ### Var kan jag hitta fler exempel på att använda Aspose.Email för .NET?
 
  Du kan hitta fler kodexempel och handledningar i[API-referens](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

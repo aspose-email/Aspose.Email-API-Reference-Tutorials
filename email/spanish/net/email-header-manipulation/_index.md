@@ -3,10 +3,16 @@ title: Manipulación del encabezado de correo electrónico
 linktitle: Manipulación del encabezado de correo electrónico
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Manipule eficientemente los encabezados de correo electrónico utilizando los tutoriales de Aspose.Email para .NET. Aprenda a extraer, modificar y personalizar encabezados para mejorar la comunicación.
-type: docs
 weight: 14
 url: /es/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulación del encabezado de correo electrónico
+
 
 ## Introducción
 
@@ -33,3 +39,9 @@ Aprenda a personalizar el orden MHTML usando C# y Aspose.Email para .NET. Guía 
 Aprenda a extraer encabezados de correo electrónico en C# usando Aspose.Email para .NET. Guía paso a paso con código fuente para un análisis eficiente del correo electrónico. 
 ### [Especificación de encabezados personalizados en C#](./specifying-custom-headers-in-csharp/)
 Aprenda a especificar encabezados personalizados en C# usando Aspose.Email para .NET para mejorar la comunicación por correo electrónico. Esta guía paso a paso proporciona información sobre cómo crear encabezados de correo electrónico personalizados para mejorar la participación.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

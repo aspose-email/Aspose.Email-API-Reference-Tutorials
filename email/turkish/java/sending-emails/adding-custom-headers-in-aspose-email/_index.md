@@ -3,10 +3,16 @@ title: Aspose.Email'e Özel Başlıklar Ekleme
 linktitle: Aspose.Email'e Özel Başlıklar Ekleme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java'yı kullanarak özel başlıklar ekleyerek e-posta mesajlarınızı nasıl geliştireceğinizi öğrenin. E-posta meta verilerini ve organizasyonunu iyileştirin.
-type: docs
 weight: 15
 url: /tr/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email'e Özel Başlıklar Ekleme
+
 
 ## giriiş
 
@@ -132,3 +138,9 @@ Bu kılavuzda Aspose.Email for Java kullanarak bir e-postaya nasıl özel başl�
 
 ### Alınan e-postalardan özel başlıkları nasıl çıkarabilirim?
     Şunu kullanabilirsiniz:`getHeaders` Alınan e-postanın yöntemi`MailMessage` özel başlıkları almak ve işlemek için nesne.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

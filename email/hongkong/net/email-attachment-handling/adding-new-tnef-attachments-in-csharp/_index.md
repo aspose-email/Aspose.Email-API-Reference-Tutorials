@@ -3,10 +3,16 @@ title: 在 C# 中新增的 TNEF 附件
 linktitle: 在 C# 中新增的 TNEF 附件
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中新增新的 TNEF 附件。具有程式碼範例的逐步指南，可實現無縫整合。
-type: docs
 weight: 12
 url: /zh-hant/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 C# 中新增的 TNEF 附件
+
 
 ## TNEF 附件和 Aspose.Email for .NET 簡介
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### 在哪裡可以找到更多文件和範例？
 
 如需更詳細的文件和程式碼範例，您可以訪問[Aspose.Email for .NET 文檔](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

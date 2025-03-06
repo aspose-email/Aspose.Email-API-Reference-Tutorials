@@ -3,10 +3,16 @@ title: التمييز بين المرفقات المضمنة والعادية - 
 linktitle: التمييز بين المرفقات المضمنة والعادية - نهج C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية التمييز بين مرفقات البريد الإلكتروني المضمنة والعادية باستخدام Aspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 17
 url: /ar/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التمييز بين المرفقات المضمنة والعادية - نهج C#
+
 
 ## مقدمة للتمييز بين المرفقات المضمنة والعادية - نهج C#
 
@@ -107,3 +113,9 @@ foreach (Attachment attachment in attachments)
 ### هل يمكنني حفظ المرفقات العادية في موقع محدد على القرص؟
 
  قطعاً! يمكنك حفظ المرفقات العادية في موقع محدد على القرص باستخدام ملف`Save` طريقة كائن المرفق وتوفير مسار الملف المطلوب.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

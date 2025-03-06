@@ -3,10 +3,16 @@ title: 將圖像作為附件嵌入 Aspose.Email
 linktitle: 將圖像作為附件嵌入 Aspose.Email
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何在 Aspose.Email for Java 中將圖像作為附件嵌入。透過視覺吸引力的內容提升您的電子郵件通訊。
-type: docs
 weight: 14
 url: /zh-hant/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將圖像作為附件嵌入 Aspose.Email
+
 
 ## 將圖像作為附件嵌入 Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email for Java 支援各種圖片格式，包括 JPEG、PNG、GIF 等。�
 ### 嵌入圖像的大小有限制嗎？
 
 嵌入圖像的大小可能會影響電子郵件的送達率和收件者體驗。建議優化電子郵件圖片以避免文件過大。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Verwendung von Aspose.Email für Dokumentanhänge
 linktitle: Verwendung von Aspose.Email für Dokumentanhänge
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Erfahren Sie, wie Sie Dokumentanhänge in Java-E-Mails mit Aspose.Email für Java verwalten. Erstellen, versenden und extrahieren Sie ganz einfach Dokumentanhänge.
-type: docs
 weight: 16
 url: /de/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verwendung von Aspose.Email für Dokumentanhänge
+
 
 ## Einführung in die Verwendung von Aspose.Email für Dokumentanhänge in Java
 
@@ -104,3 +110,9 @@ Ja, Aspose.Email für Java unterstützt eine Vielzahl von Anhangstypen, darunter
 ### Wie gehe ich mit großen Dokumentanhängen um?
 
 Wenn Sie große Dokumentanhänge verarbeiten müssen, sollten Sie Streaming-Techniken in Betracht ziehen, um zu vermeiden, dass der gesamte Anhang in den Speicher geladen wird. Aspose.Email bietet Optionen zum Streamen von Anhängen, sodass Sie diese effizient verarbeiten können.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

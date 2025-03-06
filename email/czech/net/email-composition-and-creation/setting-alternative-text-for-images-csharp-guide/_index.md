@@ -3,10 +3,16 @@ title: Nastavení alternativního textu pro obrázky - Průvodce C#
 linktitle: Nastavení alternativního textu pro obrázky - Průvodce C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se nastavit alternativní text pro obrázky v e-mailech pomocí Aspose.Email for .NET. Zajistěte přístupnost pomocí jasného alternativního textu. Součástí je dokumentace a kód.
-type: docs
 weight: 15
 url: /cs/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nastavení alternativního textu pro obrázky - Průvodce C#
+
 
 Tato příručka vás provede procesem nastavení alternativního textu pro obrázky v e-mailech pomocí Aspose.Email for .NET. Alternativní text, také známý jako „alt text“, se používá k poskytnutí textového popisu obrázku v případě, že obrázek nelze zobrazit. Aspose.Email for .NET je výkonná knihovna, která vám umožní pracovat s e-maily a přílohami v různých formátech. V této příručce se zaměříme na nastavení alternativního textu pro obrázky v e-mailových zprávách pomocí C#.
 
@@ -81,3 +87,9 @@ Chcete-li přidat obrázky jako propojené zdroje v e-mailu, můžete použít`L
 ### Kde najdu další dokumentaci k Aspose.Email pro .NET?
 
  Podrobnější dokumentaci, návody a příklady práce s Aspose.Email pro .NET naleznete v[Reference API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dołączanie załączników do wiadomości e-mail — przykład C#
 linktitle: Dołączanie załączników do wiadomości e-mail — przykład C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak dołączać załączniki do wiadomości e-mail za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z przykładem kodu C#.
-type: docs
 weight: 10
 url: /pl/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dołączanie załączników do wiadomości e-mail — przykład C#
+
 
 ## Wprowadzenie do dołączania załączników do wiadomości e-mail
 
@@ -111,3 +117,9 @@ Tak, możesz skonfigurować Aspose.Email do wysyłania wiadomości e-mail przez 
 ### Gdzie mogę znaleźć więcej informacji o możliwościach Aspose.Email?
 
  Aby uzyskać bardziej szczegółowe informacje na temat funkcji, klas i metod Aspose.Email, zobacz[Dokumentacja API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# का उपयोग करके ईमेल अनुलग्न
 linktitle: C# का उपयोग करके ईमेल अनुलग्नक जोड़ना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: जानें कि .NET के लिए C# और Aspose.Email का उपयोग करके ईमेल अटैचमेंट कैसे जोड़ें। निर्बाध एकीकरण के लिए कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 11
 url: /hi/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# का उपयोग करके ईमेल अनुलग्नक जोड़ना
+
 
 ## .NET के लिए ईमेल अटैचमेंट और Aspose.Email का परिचय
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### क्या .NET के लिए Aspose.Email का निःशुल्क परीक्षण संस्करण उपलब्ध है?
 
 हाँ, आप खरीदारी करने से पहले इसकी विशेषताओं का पता लगाने के लिए .NET के लिए Aspose.Email का निःशुल्क परीक्षण संस्करण डाउनलोड कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

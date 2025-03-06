@@ -3,10 +3,16 @@ title: Mengelola X-Header di Pesan Email dengan Aspose.Email
 linktitle: Mengelola X-Header di Pesan Email dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Buka Kekuatan X-Headers dalam Email dengan Aspose.Email untuk Java. Pelajari Cara Mengelola Metadata Khusus dan Meningkatkan Pemrosesan Email.
-type: docs
 weight: 16
 url: /id/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengelola X-Header di Pesan Email dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -124,3 +130,9 @@ Anda dapat membaca X-Headers dari email yang diterima menggunakan Aspose.Email u
 ### Apakah Aspose.Email cocok untuk manajemen email tingkat perusahaan?
 
 Ya, Aspose.Email adalah perpustakaan tangguh yang dapat digunakan untuk manajemen email tingkat perusahaan. Ini menawarkan berbagai fitur untuk membuat, mengirim, menerima, dan memproses email, sehingga cocok untuk berbagai skenario bisnis.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

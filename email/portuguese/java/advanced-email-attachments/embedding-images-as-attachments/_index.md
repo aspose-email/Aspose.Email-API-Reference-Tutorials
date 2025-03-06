@@ -3,10 +3,16 @@ title: Incorporando imagens como anexos em Aspose.Email
 linktitle: Incorporando imagens como anexos em Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aprenda como incorporar imagens como anexos em Aspose.Email para Java. Eleve sua comunicação por e-mail com conteúdo visualmente envolvente.
-type: docs
 weight: 14
 url: /pt/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Incorporando imagens como anexos em Aspose.Email
+
 
 ## Incorporando imagens como anexos em Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email for Java suporta vários formatos de imagem, incluindo JPEG, PNG, G
 ### Há alguma limitação quanto ao tamanho das imagens incorporadas?
 
 O tamanho das imagens incorporadas pode afetar a capacidade de entrega do email e a experiência do destinatário. É aconselhável otimizar imagens para e-mail para evitar arquivos grandes.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

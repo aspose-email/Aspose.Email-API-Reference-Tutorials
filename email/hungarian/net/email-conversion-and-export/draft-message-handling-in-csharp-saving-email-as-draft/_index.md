@@ -3,10 +3,16 @@ title: Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
 linktitle: Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan valósíthatja meg a piszkozatos e-mailek kezelését C# nyelven az Aspose.Email for .NET használatával. A piszkozatok zökkenőmentes létrehozása, szerkesztése és mentése.
-type: docs
 weight: 17
 url: /hu/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
+
 
 ## Bevezetés
 
@@ -103,3 +109,9 @@ Az ebben az útmutatóban ismertetett lépések követésével zökkenőmentesen
 ### Támogat az Aspose.Email könyvtár egyéb e-mailekkel kapcsolatos funkciókat?
 
  Igen, az Aspose.Email könyvtár funkciók széles skáláját kínálja az e-mail üzenetek kezeléséhez, beleértve az e-mailek és mellékletek küldését, fogadását és kezelését. További részletekért tekintse meg a dokumentációt:[itt](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

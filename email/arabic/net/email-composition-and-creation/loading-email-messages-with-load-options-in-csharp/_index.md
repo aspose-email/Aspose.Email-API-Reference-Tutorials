@@ -3,10 +3,16 @@ title: تحميل رسائل البريد الإلكتروني مع خيارات
 linktitle: تحميل رسائل البريد الإلكتروني مع خيارات التحميل في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تحميل رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET في لغة C#. استكشف الدليل التفصيلي وأمثلة التعليمات البرمجية المصدر للتعامل الفعال مع البريد الإلكتروني.
-type: docs
 weight: 11
 url: /ar/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحميل رسائل البريد الإلكتروني مع خيارات التحميل في C#
+
 
 ## مقدمة إلى Aspose.Email لـ .NET
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### ماذا علي أن أفعل إذا واجهت أخطاء أثناء تحميل رسائل البريد الإلكتروني؟
 
 إذا واجهت أخطاء أثناء تحميل البريد الإلكتروني، فتأكد من تغليف كود التحميل الخاص بك في كتلة محاولة الالتقاط للتعامل مع الاستثناءات. سيساعدك هذا على تحديد ومعالجة أي مشكلات قد تنشأ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

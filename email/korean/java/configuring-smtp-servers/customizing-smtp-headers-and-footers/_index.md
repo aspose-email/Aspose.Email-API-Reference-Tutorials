@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 SMTP 머리글 및 바닥글 사용자 정�
 linktitle: Aspose.Email을 사용하여 SMTP 머리글 및 바닥글 사용자 정의
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 SMTP 머리글과 바닥글을 사용자 정의하는 방법을 알아보세요. 개인화된 브랜딩과 메시지로 이메일 커뮤니케이션을 강화하세요.
-type: docs
 weight: 16
 url: /ko/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 SMTP 머리글 및 바닥글 사용자 정의
+
 
 ## 소개
 
@@ -107,3 +113,9 @@ Aspose.Email for Java를 사용하여 SMTP 머리글과 바닥글을 사용자 �
 ### 맞춤형 이메일을 보내려면 어떤 SMTP 설정을 사용해야 합니까?
 
 이메일 서비스 제공업체 또는 조직의 IT 부서에서 제공한 SMTP 설정을 사용해야 합니다. 이러한 설정에는 일반적으로 SMTP 서버 주소, 포트 번호 및 인증 자격 증명이 포함됩니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

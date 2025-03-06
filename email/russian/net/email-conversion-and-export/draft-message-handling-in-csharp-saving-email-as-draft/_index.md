@@ -3,10 +3,16 @@ title: Обработка черновика сообщения в C# – сох
 linktitle: Обработка черновика сообщения в C# – сохранение электронного письма как черновика
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как реализовать обработку черновиков электронной почты на C# с помощью Aspose.Email для .NET. Легко создавайте, редактируйте и сохраняйте черновики.
-type: docs
 weight: 17
 url: /ru/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Обработка черновика сообщения в C# – сохранение электронного письма как черновика
+
 
 ## Введение
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### Поддерживает ли библиотека Aspose.Email другие функции, связанные с электронной почтой?
 
  Да, библиотека Aspose.Email предлагает широкий спектр функций для работы с сообщениями электронной почты, включая отправку, получение и управление электронными письмами и вложениями. Вы можете обратиться к документации для более подробной информации:[здесь](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

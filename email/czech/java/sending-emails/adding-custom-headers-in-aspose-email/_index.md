@@ -3,10 +3,16 @@ title: Přidání vlastních záhlaví v Aspose.Email
 linktitle: Přidání vlastních záhlaví v Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se, jak vylepšit své e-mailové zprávy přidáním vlastních záhlaví pomocí Aspose.Email for Java. Vylepšete metadata a organizaci e-mailů.
-type: docs
 weight: 15
 url: /cs/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přidání vlastních záhlaví v Aspose.Email
+
 
 ## Úvod
 
@@ -132,3 +138,9 @@ V této příručce jste se naučili, jak přidat vlastní záhlaví do e-mailu 
 
 ### Jak mohu extrahovat vlastní záhlaví z přijatých e-mailů?
     Můžete použít`getHeaders` způsob na přijatém e-mailu`MailMessage` objekt pro načtení a zpracování vlastních záhlaví.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Efficiënte opslag en ophalen van e-mailbestanden
 linktitle: Opslaan en ophalen van e-mailbestanden
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Stroomlijn de opslag en het ophalen van e-mailbestanden met Aspose.Email voor .NET-tutorials. Leer hoe u e-mailberichten en bijlagen programmatisch beheert en opent.
-type: docs
 weight: 18
 url: /nl/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efficiënte opslag en ophalen van e-mailbestanden
+
 
 ## Invoering
 
@@ -27,3 +33,9 @@ Leer hoe u Zimbra TGZ-opslagberichten leest met C# en Aspose.Email voor .NET. St
 Leer hoe u NSF-opslagberichten leest met C# en Aspose.Email voor .NET. Een stapsgewijze handleiding met codevoorbeelden.
 ### [Berichten opslaan vanuit Zimbra TGZ Storage met C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Leer hoe u Zimbra TGZ-e-mails kunt extraheren met Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode voor efficiënt e-mailbeheer.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

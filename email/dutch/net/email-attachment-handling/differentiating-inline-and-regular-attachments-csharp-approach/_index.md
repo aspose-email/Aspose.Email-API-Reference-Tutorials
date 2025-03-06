@@ -3,10 +3,16 @@ title: Differentiëren van inline en reguliere bijlagen - C#-aanpak
 linktitle: Differentiëren van inline en reguliere bijlagen - C#-aanpak
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u onderscheid kunt maken tussen inline en gewone e-mailbijlagen met behulp van Aspose.Email voor .NET. Uitgebreide handleiding met codevoorbeelden.
-type: docs
 weight: 17
 url: /nl/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Differentiëren van inline en reguliere bijlagen - C#-aanpak
+
 
 ## Inleiding tot het differentiëren van inline en reguliere bijlagen - C#-aanpak
 
@@ -107,3 +113,9 @@ U kunt toegang krijgen tot de inhoud van een inlinebijlage door de juiste eigens
 ### Kan ik gewone bijlagen op een specifieke locatie op schijf opslaan?
 
  Absoluut! U kunt gewone bijlagen op een specifieke locatie op schijf opslaan door gebruik te maken van de`Save` methode van het bijlageobject en het gewenste bestandspad opgeven.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

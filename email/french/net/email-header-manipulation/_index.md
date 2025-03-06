@@ -3,10 +3,16 @@ title: Manipulation de l'en-tête d'e-mail
 linktitle: Manipulation de l'en-tête d'e-mail
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Manipulez efficacement les en-têtes d’e-mails à l’aide des didacticiels Aspose.Email pour .NET. Apprenez à extraire, modifier et personnaliser les en-têtes pour une communication améliorée.
-type: docs
 weight: 14
 url: /fr/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulation de l'en-tête d'e-mail
+
 
 ## Introduction
 
@@ -33,3 +39,9 @@ Découvrez comment personnaliser l'ordre MHTML à l'aide de C# et Aspose.Email p
 Découvrez comment extraire les en-têtes d'e-mails en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source pour une analyse efficace des e-mails. 
 ### [Spécification des en-têtes personnalisés en C#](./specifying-custom-headers-in-csharp/)
 Découvrez comment spécifier des en-têtes personnalisés en C# à l'aide d'Aspose.Email pour .NET pour améliorer la communication par courrier électronique. Ce guide étape par étape fournit des informations sur la création d'en-têtes d'e-mails personnalisés pour un engagement amélioré.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ส่วนหัวของอีเมลใน Aspose.Email
 linktitle: ส่วนหัวของอีเมลใน Aspose.Email
 second_title: Aspose.Email Java API การจัดการอีเมล
 description: ปลดล็อกพลังของส่วนหัวอีเมลด้วย Aspose.Email สำหรับ Java เรียนรู้วิธีตั้งค่าและเรียกข้อมูลส่วนหัวของอีเมลได้อย่างง่ายดาย
-type: docs
 weight: 10
 url: /th/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ส่วนหัวของอีเมลใน Aspose.Email
+
 
 ## รู้เบื้องต้นเกี่ยวกับส่วนหัวของอีเมล
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### ฉันจะแยกส่วนหัวอีเมลออกจากอีเมลจำนวนมากได้อย่างไร
 
 คุณสามารถใช้ความสามารถในการประมวลผลเป็นชุดของ Aspose.Email เพื่อแยกส่วนหัวจากอีเมลหลายฉบับได้อย่างมีประสิทธิภาพ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

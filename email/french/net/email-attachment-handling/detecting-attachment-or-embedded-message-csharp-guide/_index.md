@@ -3,10 +3,16 @@ title: Détection d'une pièce jointe ou d'un message intégré - Guide C#
 linktitle: Détection d'une pièce jointe ou d'un message intégré - Guide C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Maîtrisez les pièces jointes aux e-mails et la détection de messages intégrée en C# à l'aide d'Aspose.Email pour .NET. Améliorez votre gestion des e-mails grâce à notre guide complet.
-type: docs
 weight: 13
 url: /fr/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Détection d'une pièce jointe ou d'un message intégré - Guide C#
+
 
 ## Introduction à la détection d'une pièce jointe ou d'un message intégré - Guide C#
 
@@ -106,3 +112,9 @@ Vous devez implémenter des mécanismes de gestion des erreurs appropriés à l'
 ### Puis-je personnaliser le traitement des pièces jointes et des messages intégrés ?
 
 Absolument, vous pouvez adapter le traitement des pièces jointes et des messages intégrés pour répondre aux besoins spécifiques de votre application. Aspose.Email fournit des API flexibles à cet effet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email に適切な SMTP サーバーの選択
 linktitle: Aspose.Email に適切な SMTP サーバーの選択
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール機能を最適化します。適切な SMTP サーバーを選択し、簡単に電子メールを送信する方法を学びましょう。
-type: docs
 weight: 10
 url: /ja/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email に適切な SMTP サーバーの選択
+
 
 ## 導入
 
@@ -100,3 +106,9 @@ Aspose.Email を使用してテスト電子メールを送信することで、S
 ### SMTP サーバーで OAuth2 認証が必要な場合はどうすればよいですか?
 
 必要な OAuth2 トークンと設定を指定することで、Aspose.Email for Java で OAuth2 認証を構成できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Menambahkan Lampiran Email menggunakan C#
 linktitle: Menambahkan Lampiran Email menggunakan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menambahkan lampiran email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk integrasi yang lancar.
-type: docs
 weight: 11
 url: /id/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menambahkan Lampiran Email menggunakan C#
+
 
 ## Pengantar Lampiran Email dan Aspose.Email untuk .NET
 
@@ -92,3 +98,9 @@ Sangat! Anda dapat mengatur berbagai properti kelas MailMessage, seperti Isi, Su
 ### Apakah ada versi uji coba gratis Aspose.Email untuk .NET yang tersedia?
 
 Ya, Anda dapat mengunduh Aspose.Email untuk .NET versi uji coba gratis untuk menjelajahi fitur-fiturnya sebelum melakukan pembelian.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

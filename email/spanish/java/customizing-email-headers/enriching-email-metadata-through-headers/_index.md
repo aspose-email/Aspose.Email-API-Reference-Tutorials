@@ -3,10 +3,16 @@ title: Enriquecimiento de metadatos de correo electrónico a través de encabeza
 linktitle: Enriquecimiento de metadatos de correo electrónico a través de encabezados con Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Mejore los metadatos del correo electrónico con Aspose.Email para Java. Aprenda cómo enriquecer los encabezados de correo electrónico para mejorar el seguimiento y la personalización con Aspose.Email.
-type: docs
 weight: 18
 url: /es/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enriquecimiento de metadatos de correo electrónico a través de encabezados con Aspose.Email
+
 
 ## Introducción al enriquecimiento de metadatos de correo electrónico a través de encabezados con Aspose.Email
 
@@ -107,3 +113,9 @@ Sí, Aspose.Email admite múltiples lenguajes de programación, incluidos Java, 
 ### ¿Dónde puedo encontrar más recursos sobre Aspose.Email para Java?
 
  Puede explorar la documentación en[aquí](https://reference.aspose.com/email/java/) para obtener recursos y ejemplos completos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

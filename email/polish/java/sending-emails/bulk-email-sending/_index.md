@@ -3,10 +3,16 @@ title: Masowe wysyłanie wiadomości e-mail za pomocą Aspose.Email
 linktitle: Masowe wysyłanie wiadomości e-mail za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak efektywnie wysyłać masowe wiadomości e-mail za pomocą Aspose.Email dla Java. Przewodnik krok po kroku z przykładami kodu do marketingu i komunikacji e-mailowej.
-type: docs
 weight: 14
 url: /pl/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Masowe wysyłanie wiadomości e-mail za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -132,3 +138,9 @@ tym przewodniku nauczyłeś się, jak wysyłać masowe wiadomości e-mail za pom
 
 ### Jak mogę poradzić sobie z odbitymi lub nieudanymi e-mailami podczas wysyłania zbiorczego?
    Aspose.Email udostępnia funkcje umożliwiające obsługę powiadomień o stanie dostarczenia (DSN) i śledzenie statusu dostarczenia wiadomości e-mail. W razie potrzeby możesz zaimplementować logikę przetwarzania odesłanych lub nieudanych wiadomości e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email 中的电子邮件标头
 linktitle: Aspose.Email 中的电子邮件标头
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 使用 Aspose.Email for Java 释放电子邮件标头的威力。了解如何轻松设置和检索电子邮件标头。
-type: docs
 weight: 10
 url: /zh/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email 中的电子邮件标头
+
 
 ## 电子邮件标头简介
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### 如何从大量电子邮件中提取电子邮件标头？
 
 您可以使用Aspose.Email的批处理功能有效地从多封电子邮件中提取标头。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: إضافة رؤوس مخصصة في Aspose.Email
 linktitle: إضافة رؤوس مخصصة في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية تحسين رسائل البريد الإلكتروني الخاصة بك عن طريق إضافة رؤوس مخصصة باستخدام Aspose.Email لـ Java. تحسين البيانات الوصفية للبريد الإلكتروني وتنظيمه.
-type: docs
 weight: 15
 url: /ar/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إضافة رؤوس مخصصة في Aspose.Email
+
 
 ## مقدمة
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### كيف يمكنني استخراج رؤوس مخصصة من رسائل البريد الإلكتروني المستلمة؟
     يمكنك استخدام ال`getHeaders` الطريقة على رسائل البريد الإلكتروني المستلمة`MailMessage` كائن لاسترداد ومعالجة الرؤوس المخصصة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

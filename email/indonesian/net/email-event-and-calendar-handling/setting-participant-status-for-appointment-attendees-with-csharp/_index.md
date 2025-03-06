@@ -3,10 +3,16 @@ title: Menetapkan Status Peserta untuk Peserta Janji Temu dengan C#
 linktitle: Menetapkan Status Peserta untuk Peserta Janji Temu dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengelola status peserta janji temu menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber.
-type: docs
 weight: 16
 url: /id/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menetapkan Status Peserta untuk Peserta Janji Temu dengan C#
+
 
 ## Pengantar Aspose.Email untuk .NET
 
@@ -109,3 +115,9 @@ Ya, Anda dapat dengan mudah mengintegrasikan fungsionalitas yang dibahas dalam p
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan sumber daya?
 
  Untuk dokumentasi dan sumber daya yang lebih detail, lihat dokumentasi Aspose.Email untuk .NET:[Aspose.Email untuk Dokumentasi .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

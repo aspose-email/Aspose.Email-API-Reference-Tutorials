@@ -3,10 +3,16 @@ title: C#의 TNEF 메시지 감지 - 설명
 linktitle: C#의 TNEF 메시지 감지 - 설명
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 TNEF 메시지를 감지하고 처리하는 방법을 알아보세요. 서식 있는 텍스트 및 첨부 파일을 사용하여 이메일 처리를 강화하세요.
-type: docs
 weight: 15
 url: /ko/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#의 TNEF 메시지 감지 - 설명
+
 
 이 가이드는 .NET 라이브러리용 Aspose.Email을 사용하여 TNEF(Transport Neutral Encapsulation Format) 메시지를 탐지하는 방법에 대한 자세한 단계별 설명을 제공합니다. TNEF는 Microsoft Outlook에서 전자 메일 메시지 내의 서식 있는 텍스트와 첨부 파일을 캡슐화하기 위해 사용하는 형식입니다. .NET용 Aspose.Email은 TNEF 메시지를 포함하여 이메일과 첨부 파일을 작업할 수 있는 강력한 API 세트를 제공합니다.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 이 가이드에서는 .NET용 Aspose.Email 라이브러리를 사용하여 TNEF(Transport Neutral Encapsulation Format) 메시지를 감지하는 방법을 배웠습니다. Microsoft Outlook에서 자주 사용되는 TNEF 메시지는 전자 메일 내의 서식 있는 텍스트와 첨부 파일을 캡슐화합니다. 이 가이드에 설명된 단계를 수행하면 TNEF 메시지를 효율적으로 식별하고 추가 처리를 위해 첨부 파일을 추출할 수 있습니다.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

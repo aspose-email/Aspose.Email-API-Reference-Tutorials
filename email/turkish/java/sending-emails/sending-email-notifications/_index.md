@@ -3,10 +3,16 @@ title: Aspose.Email ile E-posta Bildirimleri Gönderme
 linktitle: Aspose.Email ile E-posta Bildirimleri Gönderme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile e-posta bildirimlerini etkili bir şekilde göndermeyi öğrenin. Sorunsuz iletişim için kod örnekleri ve SSS içeren kapsamlı bir kılavuz.
-type: docs
 weight: 17
 url: /tr/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile E-posta Bildirimleri Gönderme
+
 
 ## giriiş
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### E-posta bildirimi teslim durumunu ve takibini nasıl halledebilirim?
    - Ek araçları veya hizmetleri kullanarak e-posta teslim durumu bildirimlerini (DSN'ler) yönetmek ve e-posta açılışlarını ve tıklamalarını izlemek için mantığı uygulayabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

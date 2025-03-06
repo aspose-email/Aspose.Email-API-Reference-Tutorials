@@ -3,10 +3,16 @@ title: Aspose.Email ile E-posta Meta Verilerini Başlıklar Aracılığıyla Zen
 linktitle: Aspose.Email ile E-posta Meta Verilerini Başlıklar Aracılığıyla Zenginleştirme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile E-posta Meta Verilerini geliştirin. Aspose.Email ile gelişmiş izleme ve özelleştirme için e-posta başlıklarını nasıl zenginleştireceğinizi öğrenin.
-type: docs
 weight: 18
 url: /tr/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile E-posta Meta Verilerini Başlıklar Aracılığıyla Zenginleştirme
+
 
 ## Aspose.Email ile E-posta Meta Verilerini Başlıklar Aracılığıyla Zenginleştirmeye Giriş
 
@@ -107,3 +113,9 @@ Evet, Aspose.Email, Java, .NET ve daha fazlasını içeren birden fazla programl
 ### Aspose.Email for Java'da daha fazla kaynağı nerede bulabilirim?
 
  Belgeleri şu adreste inceleyebilirsiniz:[Burada](https://reference.aspose.com/email/java/) Kapsamlı kaynaklar ve örnekler için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#을 사용하여 Zimbra TGZ 저장소의 메시지 저장
 linktitle: C#을 사용하여 Zimbra TGZ 저장소의 메시지 저장
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 Zimbra TGZ 이메일을 추출하는 방법을 알아보세요. 효율적인 이메일 관리를 위한 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 12
 url: /ko/net/email-file-storage-and-retrieval/saving-messages-from-zimbra-tgz-storage-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 Zimbra TGZ 저장소의 메시지 저장
+
 
 현대 기술의 세계에서는 데이터 보존과 관리가 무엇보다 중요합니다. 기업은 다양한 목적으로 이메일 통신에 크게 의존하고 있으며, 개발자로서 Zimbra TGZ 스토리지에서 메시지를 추출해야 하는 경우가 있을 수 있습니다. 이 문서에서는 .NET API용 Aspose.Email을 사용하여 이를 달성하는 방법에 대한 단계별 가이드를 제공합니다. Zimbra TGZ 스토리지에서 메시지를 저장하는 과정을 쉽게 살펴보겠습니다.
 
@@ -78,3 +84,9 @@ Aspose.Email for .NET은 .NET 애플리케이션을 위해 특별히 설계되�
 ### 5. .NET용 Aspose.Email에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
 
 다음에서 포괄적인 문서를 탐색하고 지원에 액세스할 수 있습니다.[.NET API 참조용 Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

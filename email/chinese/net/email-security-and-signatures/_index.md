@@ -3,10 +3,16 @@ title: 电子邮件安全和签名
 linktitle: 电子邮件安全和签名
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 使用 Aspose.Email for .NET 教程实施强大的电子邮件安全措施和个性化签名。确保安全的沟通和专业的品牌塑造。
-type: docs
 weight: 19
 url: /zh/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 电子邮件安全和签名
+
 
 ## 介绍
 
@@ -25,3 +31,9 @@ url: /zh/net/email-security-and-signatures/
 
 ### [使用 C# 代码通过 DKIM 签署电子邮件](./signing-emails-with-dkim-using-csharp-code/)
 了解使用 C# 和 Aspose.Email for .NET 通过 DKIM 保护电子邮件。带有源代码的分步指南。增强电子邮件的信任度和真实性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

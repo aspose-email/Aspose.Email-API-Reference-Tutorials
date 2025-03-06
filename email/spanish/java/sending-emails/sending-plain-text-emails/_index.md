@@ -3,10 +3,16 @@ title: Envío de correos electrónicos de texto sin formato con Aspose.Email
 linktitle: Envío de correos electrónicos de texto sin formato con Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a enviar correos electrónicos de texto sin formato de manera eficiente con Aspose.Email para Java. Una guía completa con ejemplos de código y preguntas frecuentes para una comunicación fluida.
-type: docs
 weight: 10
 url: /es/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Envío de correos electrónicos de texto sin formato con Aspose.Email
+
 
 ## Introducción
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. ¿Existe alguna limitación al enviar correos electrónicos de texto sin formato con Aspose.Email para Java?
    - Las limitaciones pueden depender de su proveedor de servicios de correo electrónico y de su servidor SMTP. Asegúrese de cumplir con los límites de envío y las políticas de envío de correo electrónico.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

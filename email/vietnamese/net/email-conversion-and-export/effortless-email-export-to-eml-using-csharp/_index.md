@@ -3,10 +3,16 @@ title: Xuất email dễ dàng sang EML bằng C#
 linktitle: Xuất email dễ dàng sang EML bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Dễ dàng xuất email sang định dạng EML bằng C# và Aspose.Email cho .NET. Tìm hiểu từng bước với các ví dụ về mã nguồn.
-type: docs
 weight: 11
 url: /vi/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xuất email dễ dàng sang EML bằng C#
+
 
 ## Giới thiệu về Xuất email dễ dàng sang EML
 
@@ -175,3 +181,9 @@ Có, bạn có thể xuất tệp đính kèm email cùng với thư email bằn
 ### Mã nguồn được cung cấp trong hướng dẫn có đầy đủ không?
 
 Có, hướng dẫn này cung cấp mã nguồn hoàn chỉnh trình bày cách xuất email sang định dạng EML bằng Aspose.Email cho .NET. Bạn có thể sử dụng mã này làm điểm bắt đầu
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

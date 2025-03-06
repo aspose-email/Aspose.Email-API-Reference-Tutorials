@@ -3,10 +3,16 @@ title: Сохранение вложений TNEF при чтении сообщ
 linktitle: Сохранение вложений TNEF при чтении сообщений — подход C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как сохранить вложения TNEF с помощью Aspose.Email для .NET, в этом пошаговом руководстве с исходным кодом.
-type: docs
 weight: 15
 url: /ru/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сохранение вложений TNEF при чтении сообщений — подход C#
+
 
 ## Знакомство с вложениями TNEF
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### Регулярно ли обновляется Aspose.Email?
 
 Да, Aspose регулярно выпускает обновления для обеспечения совместимости с новейшими технологиями и платформами.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Αποστολή email με το Aspose.Email για Java
 linktitle: Αποστολή email με το Aspose.Email για Java
 second_title: Aspose.Email Java Email Management API
 description: Κατακτήστε την τέχνη της αποστολής email χρησιμοποιώντας το Aspose.Email για Java με αυτά τα περιεκτικά σεμινάρια. Μάθετε να δημιουργείτε και να στέλνετε email χωρίς κόπο.
-type: docs
 weight: 10
 url: /el/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποστολή email με το Aspose.Email για Java
+
 
 
 ## Ξεκινώντας με το Aspose.Email για Java
@@ -38,3 +44,9 @@ url: /el/java/sending-emails/
 Μάθετε πώς να βελτιώσετε τα μηνύματα ηλεκτρονικού ταχυδρομείου σας προσθέτοντας προσαρμοσμένες κεφαλίδες χρησιμοποιώντας το Aspose.Email για Java. Βελτιώστε τα μεταδεδομένα και την οργάνωση του email.
 ### [Αποστολή ειδοποιήσεων μέσω email με το Aspose.Email](./sending-email-notifications/)
 Μάθετε να στέλνετε ειδοποιήσεις email αποτελεσματικά με το Aspose.Email για Java. Ένας περιεκτικός οδηγός με παραδείγματα κώδικα και συχνές ερωτήσεις για απρόσκοπτη επικοινωνία.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

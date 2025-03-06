@@ -3,10 +3,16 @@ title: 从电子邮件中删除附件 - C# 实现
 linktitle: 从电子邮件中删除附件 - C# 实现
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 删除电子邮件附件。包含 C# 源代码的分步指南。
-type: docs
 weight: 18
 url: /zh/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 从电子邮件中删除附件 - C# 实现
+
 
 ## 从电子邮件中删除附件简介
 
@@ -97,3 +103,9 @@ message.Save("path/to/save/modified/email.eml");
 ### 我可以在将 Aspose.Email 库集成到我的项目之前对其进行测试吗？
 
 是的，Aspose 提供了其库的试用版，您可以在决定购买之前下载和测试。访问他们的网站了解更多信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

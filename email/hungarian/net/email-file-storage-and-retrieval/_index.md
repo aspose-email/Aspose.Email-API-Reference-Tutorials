@@ -3,10 +3,16 @@ title: Hatékony e-mail fájlok tárolása és visszakeresése
 linktitle: E-mail fájlok tárolása és visszakeresése
 second_title: Aspose.Email .NET Email Processing API
 description: Egyszerűsítse az e-mail fájlok tárolását és visszakeresését az Aspose.Email for .NET oktatóprogramjaival. Ismerje meg az e-mail üzenetek és mellékletek programozott kezelését és elérését.
-type: docs
 weight: 18
 url: /hu/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hatékony e-mail fájlok tárolása és visszakeresése
+
 
 ## Bevezetés
 
@@ -27,3 +33,9 @@ Ismerje meg, hogyan olvassa el a Zimbra TGZ tárolóüzeneteit C# és Aspose.Ema
 Ismerje meg, hogyan olvashat NSF tárolóüzeneteket a C# és az Aspose.Email for .NET használatával. Lépésről lépésre, kódpéldákkal.
 ### [Üzenetek mentése a Zimbra TGZ tárhelyről a C# segítségével](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Ismerje meg, hogyan bonthatja ki a Zimbra TGZ e-maileket az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a hatékony e-mail-kezeléshez.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: الحفاظ على مرفقات TNEF عند قراءة الرسائل - 
 linktitle: الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية الحفاظ على مرفقات TNEF باستخدام Aspose.Email لـ .NET في هذا الدليل خطوة بخطوة مع التعليمات البرمجية المصدر.
-type: docs
 weight: 15
 url: /ar/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#
+
 
 ## مقدمة إلى مرفقات TNEF
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### هل يتم تحديث Aspose.Email بانتظام؟
 
 نعم، يحتفظ Aspose بتحديثات منتظمة لضمان التوافق مع أحدث التقنيات والمنصات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

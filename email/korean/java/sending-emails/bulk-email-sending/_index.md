@@ -3,10 +3,16 @@ title: Aspose.Email을 사용한 대량 이메일 전송
 linktitle: Aspose.Email을 사용한 대량 이메일 전송
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 대량 이메일을 효율적으로 보내는 방법을 알아보세요. 이메일 마케팅 및 커뮤니케이션을 위한 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 14
 url: /ko/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용한 대량 이메일 전송
+
 
 ## 소개
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### 대량 전송 시 이메일이 반송되거나 실패한 경우 어떻게 처리할 수 있나요?
    Aspose.Email은 배달 상태 알림(DSN)을 처리하고 이메일 배달 상태를 추적하는 기능을 제공합니다. 필요에 따라 반송되거나 실패한 이메일을 처리하는 논리를 구현할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

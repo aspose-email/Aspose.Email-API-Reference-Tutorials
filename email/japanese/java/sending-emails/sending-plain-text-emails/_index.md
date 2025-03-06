@@ -3,10 +3,16 @@ title: Aspose.Email を使用したプレーンテキストメールの送信
 linktitle: Aspose.Email を使用したプレーンテキストメールの送信
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用してプレーン テキスト メールを効率的に送信する方法を学びます。シームレスなコミュニケーションのためのコード例と FAQ を含む包括的なガイド。
-type: docs
 weight: 10
 url: /ja/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用したプレーンテキストメールの送信
+
 
 ## 導入
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Aspose.Email for Java を使用してプレーン テキストの電子メールを送信する場合、制限はありますか?
    - 制限は、電子メール サービス プロバイダーと SMTP サーバーによって異なる場合があります。送信制限と電子メール送信ポリシーに準拠していることを確認してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

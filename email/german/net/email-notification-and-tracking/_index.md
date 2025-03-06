@@ -3,10 +3,16 @@ title: Verbessern Sie die Kommunikation mit E-Mail-Benachrichtigung und -Verfolg
 linktitle: E-Mail-Benachrichtigung und Nachverfolgung
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Implementieren Sie E-Mail-Benachrichtigungs- und Tracking-Funktionen mithilfe von Aspose.Email für .NET-Tutorials. Automatisieren Sie Benachrichtigungen und gewinnen Sie Einblicke in die Interaktionen mit E-Mail-Empfängern.
-type: docs
 weight: 16
 url: /de/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verbessern Sie die Kommunikation mit E-Mail-Benachrichtigung und -Verfolgung
+
 
 ## Einführung
 
@@ -27,3 +33,9 @@ Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in C# mit Aspose.Email für .NET
 Erfahren Sie, wie Sie C#-Code verwenden, um E-Mail-Lesebestätigungen mit Aspose.Email für .NET anzufordern und so die Kommunikationsverfolgung zu verbessern.
 ### [Verfolgen des Konvertierungsfortschritts von E-Mail-Dokumenten mit C#-Code](./tracking-email-document-conversion-progress-with-csharp-code/)
 Erfahren Sie, wie Sie E-Mail-Benachrichtigung und -Verfolgung mit Aspose.Email für .NET implementieren. Schritt-für-Schritt-Anleitung mit Codebeispielen. Verbessern Sie noch heute Ihre E-Mail-Kommunikation!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

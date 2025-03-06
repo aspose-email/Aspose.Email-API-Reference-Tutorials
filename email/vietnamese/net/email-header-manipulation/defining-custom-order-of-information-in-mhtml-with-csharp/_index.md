@@ -3,10 +3,16 @@ title: Xác định thứ tự thông tin tùy chỉnh trong MHTML bằng C#
 linktitle: Xác định thứ tự thông tin tùy chỉnh trong MHTML bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách tùy chỉnh thứ tự MHTML bằng C# & Aspose.Email cho .NET. Hướng dẫn từng bước kèm theo mã để sắp xếp thông tin hiệu quả. Tăng trải nghiệm người dùng ngay bây giờ!
-type: docs
 weight: 14
 url: /vi/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xác định thứ tự thông tin tùy chỉnh trong MHTML bằng C#
+
 
 Trong lĩnh vực quản lý email, khả năng tùy chỉnh thứ tự thông tin trong email MHTML là một tính năng có giá trị. Aspose.Email for .NET cung cấp một giải pháp mạnh mẽ để đạt được điều này. Trong bài viết này, chúng tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình.
 
@@ -80,3 +86,10 @@ Trong một thế giới mà việc xử lý email hiệu quả là điều tố
 ### 5. Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Email cho .NET ở đâu?
 
 -  Bạn có thể truy cập tài liệu mở rộng, ví dụ về mã và hỗ trợ trên[Aspose.Email cho tài liệu API .NET](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

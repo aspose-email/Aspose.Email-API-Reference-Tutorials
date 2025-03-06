@@ -3,10 +3,16 @@ title: Segurança e assinaturas de e-mail
 linktitle: Segurança e assinaturas de e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Implemente medidas robustas de segurança de e-mail e assinaturas personalizadas com os tutoriais Aspose.Email for .NET. Garanta uma comunicação segura e uma marca profissional.
-type: docs
 weight: 19
 url: /pt/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Segurança e assinaturas de e-mail
+
 
 ## Introdução
 
@@ -25,3 +31,9 @@ Os tutoriais de assinatura de email se concentram em permitir que os desenvolved
 
 ### [Assinando e-mails com DKIM usando código C#](./signing-emails-with-dkim-using-csharp-code/)
 Aprenda a proteger e-mails com DKIM usando C# e Aspose.Email para .NET. Guia passo a passo com código-fonte. Aumente a confiança e a autenticidade do e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma
 linktitle: C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta kodu çözülmüş e-posta başlığı değerlerini çıkarmayı öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
-type: docs
 weight: 17
 url: /tr/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Yaklaşımı - Kodu Çözülmüş Başlık Değerlerini Çıkarma
+
 
 Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i kullanma sürecinde size rehberlik edeceğiz. Aspose.Email for .NET, geliştiricilerin e-posta başlıklarını okumak ve değiştirmek de dahil olmak üzere e-posta mesajlarının çeşitli yönleriyle çalışmasını sağlayan güçlü bir kitaplıktır.
 
@@ -77,3 +83,9 @@ Yukarıdaki kod parçacığında aşağıdaki adımları gerçekleştiriyoruz:
 ## Çözüm
 
 Bu eğitimde, e-posta mesajlarından kodu çözülmüş başlık değerlerini çıkarmak için Aspose.Email for .NET'i nasıl kullanacağınızı öğrendiniz. Aspose.Email for .NET, geliştiricilerin e-posta mesajlarıyla verimli bir şekilde çalışmasını sağlayan, başlıkların işlenmesi de dahil olmak üzere kapsamlı bir araç seti sağlar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Email Header Manipulation
 linktitle: Email Header Manipulation
 second_title: Aspose.Email .NET Email Processing API
 description: Efficiently manipulate email headers using Aspose.Email for .NET tutorials. Learn to extract, modify, and personalize headers for enhanced communication.
-type: docs
 weight: 14
 url: /net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Email Header Manipulation
+
 
 ## Introduction
 
@@ -33,3 +39,9 @@ Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-ste
 Learn how to extract email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code for efficient email analysis. 
 ### [Specifying Custom Headers in C#](./specifying-custom-headers-in-csharp/)
 Learn how to specify custom headers in C# using Aspose.Email for .NET to enhance email communication. This step-by-step guide provides insights into creating personalized email headers for improved engagement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

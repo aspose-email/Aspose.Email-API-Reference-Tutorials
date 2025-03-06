@@ -3,10 +3,16 @@ title: Указание адресов получателей в C#
 linktitle: Указание адресов получателей в C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как указать адреса получателей на C# с помощью Aspose.Email для .NET. Эффективно создавайте, настраивайте и отправляйте электронные письма.
-type: docs
 weight: 19
 url: /ru/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Указание адресов получателей в C#
+
 
 
 Это руководство проведет вас через процесс указания адресов получателей на C# с использованием библиотеки Aspose.Email для .NET. Aspose.Email — это мощный .NET API, который позволяет вам работать с сообщениями электронной почты и выполнять различные задачи, связанные с электронной почтой. В этом уроке мы расскажем, как добавить адреса получателей в сообщение электронной почты с помощью библиотеки.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Для получения дополнительной информации и расширенных функций Aspose.Email для .NET см.[Ссылки на API Aspose](https://reference.aspose.com/email/net/).
 
 На этом завершается руководство по указанию адресов получателей на C# с использованием Aspose.Email для .NET. Вы узнали, как создать сообщение электронной почты, добавить адреса получателей и отправить электронное письмо, используя функции библиотеки.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

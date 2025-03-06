@@ -3,10 +3,16 @@ title: .NET용 Aspose.Email을 사용한 마스터 이메일 첨부 파일 처�
 linktitle: 이메일 첨부파일 처리
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 관리를 강화하세요. 간소화된 처리, 분석 및 데이터 기반 통찰력을 알아보세요. 단계별 가이드가 제공됩니다.
-type: docs
 weight: 12
 url: /ko/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Email을 사용한 마스터 이메일 첨부 파일 처리
+
 ## 소개
 
 "이메일 첨부 및 첨부 파일 처리"에 대한 Aspose.Email for .NET 튜토리얼은 개발자에게 애플리케이션 내에서 이메일 첨부 파일을 효과적으로 관리하고 조작하기 위한 포괄적인 가이드를 제공합니다. 이 튜토리얼은 .NET용 Aspose.Email의 기능을 활용하여 첨부 파일을 원활하게 처리하고 데이터 교환 및 협업을 향상시키는 데 대한 귀중한 통찰력을 제공합니다. 단계별 지침과 예시 코드 조각을 통해 개발자는 첨부 파일 관련 기능을 자신의 애플리케이션에 자신있게 통합하여 이메일 커뮤니케이션 워크플로와 사용자 경험을 최적화할 수 있습니다.
@@ -46,3 +52,10 @@ url: /ko/net/email-attachment-handling/
 .NET용 Aspose.Email을 사용하여 포함된 MSG 형식을 보존하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
 ### [메시지를 읽을 때 TNEF 첨부 파일 유지 - C# 접근 방식](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 소스 코드가 포함된 이 단계별 가이드에서 .NET용 Aspose.Email을 사용하여 TNEF 첨부 파일을 보존하는 방법을 알아보세요.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Loading Email Messages with Load Options in C#
 linktitle: Loading Email Messages with Load Options in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.
-type: docs
 weight: 11
 url: /net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Loading Email Messages with Load Options in C#
+
 
 ## Introduction to Aspose.Email for .NET
 
@@ -157,3 +163,10 @@ Absolutely! Aspose.Email for .NET supports loading and handling password-protect
 ### What should I do if I encounter errors while loading emails?
 
 If you encounter errors during email loading, make sure to wrap your loading code in a try-catch block to handle exceptions. This will help you identify and address any issues that arise.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

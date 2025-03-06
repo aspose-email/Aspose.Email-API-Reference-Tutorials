@@ -3,10 +3,16 @@ title: EML-bestandsverwerking - Bewerkingen laden en opslaan in C#
 linktitle: EML-bestandsverwerking - Bewerkingen laden en opslaan in C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u met EML-bestanden in C# omgaat met Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden voor het laden, wijzigen en opslaan van e-mailberichten.
-type: docs
 weight: 13
 url: /nl/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# EML-bestandsverwerking - Bewerkingen laden en opslaan in C#
+
 
 ## Inleiding tot EML-bestanden
 
@@ -150,3 +156,9 @@ Ja, met Aspose.Email kunt u meerdere EML-bestanden in batches laden, waardoor u 
 ### Is Aspose.Email geschikt voor commerciële projecten?
 
 Ja, Aspose.Email is een veelzijdige bibliotheek die geschikt is voor zowel persoonlijke als commerciële projecten en krachtige functies biedt voor e-mailmanipulatie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

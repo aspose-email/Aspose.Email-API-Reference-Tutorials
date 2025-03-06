@@ -3,10 +3,16 @@ title: Отправка электронных писем в виде обычн
 linktitle: Отправка электронных писем в виде обычного текста с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Научитесь эффективно отправлять текстовые электронные письма с помощью Aspose.Email для Java. Подробное руководство с примерами кода и часто задаваемыми вопросами для беспрепятственного общения.
-type: docs
 weight: 10
 url: /ru/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Отправка электронных писем в виде обычного текста с помощью Aspose.Email
+
 
 ## Введение
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Существуют ли какие-либо ограничения при отправке электронных писем в виде обычного текста с помощью Aspose.Email для Java?
    - Ограничения могут зависеть от вашего поставщика услуг электронной почты и SMTP-сервера. Убедитесь, что вы соблюдаете все ограничения на отправку и политику отправки электронной почты.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

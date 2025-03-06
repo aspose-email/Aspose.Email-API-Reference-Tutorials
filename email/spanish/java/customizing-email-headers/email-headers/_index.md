@@ -3,10 +3,16 @@ title: Encabezados de correo electrónico en Aspose.Email
 linktitle: Encabezados de correo electrónico en Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Desbloquee el poder de los encabezados de correo electrónico con Aspose.Email para Java. Aprenda a configurar y recuperar encabezados de correo electrónico sin esfuerzo.
-type: docs
 weight: 10
 url: /es/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Encabezados de correo electrónico en Aspose.Email
+
 
 ## Introducción a los encabezados de correo electrónico
 
@@ -92,3 +98,9 @@ El encabezado "Recibido" es una serie de entradas que rastrean la ruta del corre
 ### ¿Cómo puedo extraer encabezados de correo electrónico de un gran lote de correos electrónicos?
 
 Puede utilizar las capacidades de procesamiento por lotes de Aspose.Email para extraer encabezados de varios correos electrónicos de manera eficiente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

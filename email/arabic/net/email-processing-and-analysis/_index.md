@@ -3,10 +3,16 @@ title: معالجة وتحليل فعال للبريد الإلكتروني با
 linktitle: معالجة البريد الإلكتروني وتحليله
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتحسين إدارة البريد الإلكتروني للتطبيق الخاص بك واتخاذ القرار من خلال البرامج التعليمية الخاصة بـ Aspose.Email for .NET حول معالجة البريد الإلكتروني المبسطة والتحليل الثاقب. تعلم كيفية استرداد محتوى البريد الإلكتروني وتنظيمه وتحليله برمجيًا. استكشف الأمثلة العملية لتعزيز التواصل والاستراتيجيات القائمة على البيانات.
-type: docs
 weight: 13
 url: /ar/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# معالجة وتحليل فعال للبريد الإلكتروني باستخدام Aspose.Email لـ .NET
+
 
 ## مقدمة
 
@@ -43,3 +49,9 @@ url: /ar/net/email-processing-and-analysis/
 تعلم كيفية تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي بسهولة باستخدام Aspose.Email for .NET. دليل مفصل والكود. اكتشف الآن!
 ### [الحفاظ على الحدود الأصلية باستخدام كود C#](./preserving-original-boundaries-using-csharp-code/)
 تعرف على كيفية الحفاظ على الحدود الأصلية لمرفقات البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

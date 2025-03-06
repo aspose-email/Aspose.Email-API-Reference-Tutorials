@@ -3,10 +3,16 @@ title: C# 中的草稿消息处理 - 将电子邮件保存为草稿
 linktitle: C# 中的草稿消息处理 - 将电子邮件保存为草稿
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中实现草稿电子邮件处理。无缝创建、编辑和保存草稿。
-type: docs
 weight: 17
 url: /zh/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 中的草稿消息处理 - 将电子邮件保存为草稿
+
 
 ## 介绍
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### Aspose.Email 库是否支持其他电子邮件相关功能？
 
 是的，Aspose.Email 库提供了广泛的用于处理电子邮件的功能，包括发送、接收和操作电子邮件和附件。您可以参考文档了解更多详细信息：[这里](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

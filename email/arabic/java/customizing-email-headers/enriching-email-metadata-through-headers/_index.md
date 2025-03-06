@@ -3,10 +3,16 @@ title: إثراء البيانات التعريفية للبريد الإلكت�
 linktitle: إثراء البيانات التعريفية للبريد الإلكتروني من خلال الرؤوس باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تحسين بيانات تعريف البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعرف على كيفية إثراء رؤوس البريد الإلكتروني لتحسين التتبع والتخصيص باستخدام Aspose.Email.
-type: docs
 weight: 18
 url: /ar/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إثراء البيانات التعريفية للبريد الإلكتروني من خلال الرؤوس باستخدام Aspose.Email
+
 
 ## مقدمة لإثراء بيانات تعريف البريد الإلكتروني من خلال الرؤوس باستخدام Aspose.Email
 
@@ -107,3 +113,9 @@ message.save("path/to/modified/email.eml");
 ### أين يمكنني العثور على المزيد من الموارد على Aspose.Email لـ Java؟
 
  يمكنك استكشاف الوثائق في[هنا](https://reference.aspose.com/email/java/) للحصول على موارد وأمثلة شاملة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

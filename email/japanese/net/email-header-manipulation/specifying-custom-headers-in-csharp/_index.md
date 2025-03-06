@@ -3,10 +3,16 @@ title: C# でのカスタム ヘッダーの指定
 linktitle: C# でのカスタム ヘッダーの指定
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# でカスタム ヘッダーを指定し、電子メール通信を強化する方法を学びます。このステップバイステップのガイドでは、エンゲージメントを向上させるためにパーソナライズされた電子メール ヘッダーを作成する方法について説明します。
-type: docs
 weight: 16
 url: /ja/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# でのカスタム ヘッダーの指定
+
 
 
 ## 導入
@@ -97,3 +103,9 @@ client.Send(message);
 電子メール通信の動的な世界では、カスタム ヘッダーが状況を大きく変える可能性があり、カスタマイズされた効果的な対話を可能にします。 Aspose.Email for .NET を使用すると、C# でカスタム ヘッダーを指定するプロセスが合理化され、効率的になります。このガイドで概説されている手順に従うことで、カスタム ヘッダーの力を活用して、電子メール コミュニケーションの取り組みにおける分類、パーソナライゼーション、エンゲージメントを強化できます。
 
 電子メール コミュニケーションを次のレベルに引き上げる準備ができている場合は、Aspose.Email for .NET を使用してカスタム ヘッダーの世界に飛び込んでください。このテクニックをマスターすると、受信者の心に響くメールを配信し、シームレスで魅力的なエクスペリエンスを提供できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

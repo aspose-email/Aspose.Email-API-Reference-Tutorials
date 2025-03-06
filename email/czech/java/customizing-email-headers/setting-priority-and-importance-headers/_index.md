@@ -3,10 +3,16 @@ title: Nastavení priorit a důležitosti záhlaví pomocí Aspose.Email
 linktitle: Nastavení priorit a důležitosti záhlaví pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Zvyšte dopad svého e-mailu nastavením priorit a důležitosti záhlaví s Aspose.Email pro Java. Jak na to se dozvíte v tomto podrobném průvodci.
-type: docs
 weight: 14
 url: /cs/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nastavení priorit a důležitosti záhlaví pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -94,3 +100,9 @@ I když můžete nastavit záhlaví důležitosti, mějte na paměti, že skute�
 ### Jak naložím s e-mailovými přílohami pomocí Aspose.Email?
 
  Manipulace s e-mailovými přílohami pomocí Aspose.Email je přímočará. Můžete použít`Attachment` třídy a přidávat přílohy k vašim e-mailovým zprávám. Podrobný návod naleznete v dokumentaci Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

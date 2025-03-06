@@ -3,10 +3,16 @@ title: Memperkaya Metadata Email melalui Header dengan Aspose.Email
 linktitle: Memperkaya Metadata Email melalui Header dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Tingkatkan Metadata Email dengan Aspose.Email untuk Java. Pelajari cara memperkaya header email untuk meningkatkan pelacakan dan penyesuaian dengan Aspose.Email.
-type: docs
 weight: 18
 url: /id/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Memperkaya Metadata Email melalui Header dengan Aspose.Email
+
 
 ## Pengantar Pengayaan Metadata Email melalui Header dengan Aspose.Email
 
@@ -107,3 +113,9 @@ Ya, Aspose.Email mendukung berbagai bahasa pemrograman, termasuk Java, .NET, dan
 ### Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Email untuk Java?
 
  Anda dapat menjelajahi dokumentasinya di[Di Sini](https://reference.aspose.com/email/java/) untuk sumber daya dan contoh yang komprehensif.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

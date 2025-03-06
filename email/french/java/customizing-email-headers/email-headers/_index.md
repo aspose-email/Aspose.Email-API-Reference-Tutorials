@@ -3,10 +3,16 @@ title: En-têtes de courrier électronique dans Aspose.Email
 linktitle: En-têtes de courrier électronique dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Libérez la puissance des en-têtes de courrier électronique avec Aspose.Email pour Java. Découvrez comment définir et récupérer les en-têtes d'e-mails sans effort.
-type: docs
 weight: 10
 url: /fr/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# En-têtes de courrier électronique dans Aspose.Email
+
 
 ## Introduction aux en-têtes de courrier électronique
 
@@ -92,3 +98,9 @@ L'en-tête « Reçu » est une série d'entrées qui suivent le chemin de l'e-
 ### Comment puis-je extraire les en-têtes d’e-mails d’un grand lot d’e-mails ?
 
 Vous pouvez utiliser les capacités de traitement par lots d'Aspose.Email pour extraire efficacement les en-têtes de plusieurs e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

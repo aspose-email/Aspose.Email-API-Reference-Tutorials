@@ -3,10 +3,16 @@ title: Arbeiten mit Inline-Anhängen in Aspose.Email
 linktitle: Arbeiten mit Inline-Anhängen in Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Optimieren Sie Ihre E-Mail-Kommunikation mit Aspose.Email für Java. Erfahren Sie in diesem umfassenden Leitfaden, wie Sie mit Inline-Anhängen arbeiten.
-type: docs
 weight: 10
 url: /de/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Arbeiten mit Inline-Anhängen in Aspose.Email
+
 
 ## Einführung in die Arbeit mit Inline-Anhängen in Aspose.Email
 
@@ -135,3 +141,9 @@ Um Inline-Anhänge in HTML-E-Mails zu verarbeiten, verwenden Sie die`LinkedResou
 ### Ist Aspose.Email für Java mit verschiedenen E-Mail-Servern kompatibel?
 
 Ja, Aspose.Email für Java ist mit verschiedenen E-Mail-Servern kompatibel. Stellen Sie sicher, dass Sie beim Senden von E-Mails die SMTP-Einstellungen für Ihren E-Mail-Server korrekt konfigurieren.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

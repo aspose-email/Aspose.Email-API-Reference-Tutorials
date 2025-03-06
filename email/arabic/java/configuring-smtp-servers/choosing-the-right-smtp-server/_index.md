@@ -3,10 +3,16 @@ title: اختيار خادم SMTP المناسب لـ Aspose.Email
 linktitle: اختيار خادم SMTP المناسب لـ Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: قم بتحسين وظائف بريدك الإلكتروني باستخدام Aspose.Email لـ Java. تعرف على كيفية اختيار خادم SMTP المناسب وإرسال رسائل البريد الإلكتروني بسهولة.
-type: docs
 weight: 10
 url: /ar/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# اختيار خادم SMTP المناسب لـ Aspose.Email
+
 
 ## مقدمة
 
@@ -100,3 +106,9 @@ public class EmailSender {
 ### ماذا علي أن أفعل إذا كان خادم SMTP الخاص بي يتطلب مصادقة OAuth2؟
 
 يمكنك تكوين مصادقة OAuth2 باستخدام Aspose.Email لـ Java من خلال توفير رموز وإعدادات OAuth2 الضرورية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

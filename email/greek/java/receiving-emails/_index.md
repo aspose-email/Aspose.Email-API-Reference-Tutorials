@@ -3,10 +3,16 @@ title: Λήψη email με το Aspose.Email για Java
 linktitle: Λήψη email με το Aspose.Email για Java
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να λαμβάνετε email χωρίς κόπο με το Aspose.Email for Java Tutorials. Ξεκινήστε να διαχειρίζεστε τα εισερχόμενά σας σαν επαγγελματίας!
-type: docs
 weight: 11
 url: /el/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Λήψη email με το Aspose.Email για Java
+
 
 ## Λήψη email χωρίς κόπο
 
@@ -29,3 +35,9 @@ url: /el/java/receiving-emails/
 Μάθετε πώς να εργάζεστε με το πρωτόκολλο IMAP στο Aspose.Email για Java για να διαχειρίζεστε αποτελεσματικά την επικοινωνία email σας.
 ### [Χειρισμός συνημμένων email στο Aspose.Email](./handling-email-attachments/)
 Μάθετε να χειρίζεστε συνημμένα email στο Aspose.Email για Java. Οδηγός βήμα προς βήμα με πηγαίο κώδικα και συχνές ερωτήσεις για αποτελεσματική διαχείριση συνημμένων email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

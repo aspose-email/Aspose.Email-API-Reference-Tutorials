@@ -3,10 +3,16 @@ title: Διατήρηση αρχικών ορίων με χρήση κώδικα
 linktitle: Διατήρηση αρχικών ορίων με χρήση κώδικα C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να διατηρείτε τα αρχικά όρια των συνημμένων email χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα.
-type: docs
 weight: 13
 url: /el/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διατήρηση αρχικών ορίων με χρήση κώδικα C#
+
 
 ## Εισαγωγή στη διατήρηση των αρχικών ορίων
 
@@ -107,3 +113,9 @@ message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ### Πού μπορώ να βρω περισσότερες πληροφορίες σχετικά με το Aspose.Email για .NET;
 
  Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση και παραδείγματα στο[Aspose.Email τεκμηρίωση](https://reference.aspose.com/email/net/) σελίδα.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

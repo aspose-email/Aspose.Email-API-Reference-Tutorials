@@ -3,10 +3,16 @@ title: Sauvegarde des pièces jointes TNEF - Méthode C#
 linktitle: Sauvegarde des pièces jointes TNEF - Méthode C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment sauvegarder les pièces jointes TNEF à l’aide de C# et Aspose.Email pour .NET. Guide étape par étape avec code source inclus.
-type: docs
 weight: 19
 url: /fr/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sauvegarde des pièces jointes TNEF - Méthode C#
+
 
 ## Introduction à la sauvegarde des pièces jointes TNEF
 
@@ -95,3 +101,9 @@ Aspose publie fréquemment des mises à jour et des améliorations de ses biblio
 ### Puis-je utiliser Aspose.Email dans des projets commerciaux ?
 
 Oui, vous pouvez utiliser Aspose.Email dans des projets commerciaux. Cependant, assurez-vous de consulter les conditions de licence d'Aspose pour garantir leur conformité.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Bijlagen uit e-mails verwijderen - C#-implementatie
 linktitle: Bijlagen uit e-mails verwijderen - C#-implementatie
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u e-mailbijlagen verwijdert met Aspose.Email voor .NET. Stap-voor-stap handleiding met C#-broncode.
-type: docs
 weight: 18
 url: /nl/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bijlagen uit e-mails verwijderen - C#-implementatie
+
 
 ## Inleiding tot het verwijderen van bijlagen uit e-mails
 
@@ -97,3 +103,9 @@ Absoluut. Aspose.Email is ontworpen om schaalbaar te zijn en kan worden gebruikt
 ### Kan ik de Aspose.Email-bibliotheek testen voordat ik deze in mijn project integreer?
 
 Ja, Aspose biedt proefversies van zijn bibliotheken die u kunt downloaden en testen voordat u besluit tot aankoop. Bezoek hun website voor meer informatie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Thao tác tiêu đề email
 linktitle: Thao tác tiêu đề email
 second_title: API xử lý email Aspose.Email .NET
 description: Thao tác hiệu quả các tiêu đề email bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tìm hiểu cách trích xuất, sửa đổi và cá nhân hóa các tiêu đề để nâng cao khả năng giao tiếp.
-type: docs
 weight: 14
 url: /vi/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Thao tác tiêu đề email
+
 
 ## Giới thiệu
 
@@ -33,3 +39,9 @@ Tìm hiểu cách tùy chỉnh thứ tự MHTML bằng C# & Aspose.Email cho .NE
 Tìm hiểu cách trích xuất tiêu đề email trong C# bằng Aspose.Email for .NET. Hướng dẫn từng bước với mã nguồn để phân tích email hiệu quả. 
 ### [Chỉ định tiêu đề tùy chỉnh trong C#](./specifying-custom-headers-in-csharp/)
 Tìm hiểu cách chỉ định tiêu đề tùy chỉnh trong C# bằng cách sử dụng Aspose.Email for .NET để nâng cao khả năng giao tiếp qua email. Hướng dẫn từng bước này cung cấp thông tin chi tiết về cách tạo tiêu đề email được cá nhân hóa để cải thiện mức độ tương tác.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

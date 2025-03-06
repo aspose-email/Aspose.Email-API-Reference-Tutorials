@@ -3,10 +3,16 @@ title: Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
 linktitle: Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menerapkan penanganan draf email di C# menggunakan Aspose.Email untuk .NET. Buat, edit, dan simpan draf dengan lancar.
-type: docs
 weight: 17
 url: /id/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
+
 
 ## Perkenalan
 
@@ -103,3 +109,9 @@ Tentu saja, dengan mengikuti langkah-langkah yang disediakan dalam panduan ini, 
 ### Apakah perpustakaan Aspose.Email mendukung fungsi terkait email lainnya?
 
  Ya, perpustakaan Aspose.Email menawarkan berbagai fitur untuk bekerja dengan pesan email, termasuk mengirim, menerima, dan memanipulasi email dan lampiran. Anda dapat merujuk ke dokumentasi untuk lebih jelasnya:[Di Sini](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

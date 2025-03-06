@@ -3,10 +3,16 @@ title: MHTML 변환 사용자 정의 - C# 구현
 linktitle: MHTML 변환 사용자 정의 - C# 구현
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 MHTML 변환을 사용자 정의하는 방법을 알아보세요. C# 소스 코드를 사용한 단계별 가이드입니다.
-type: docs
 weight: 10
 url: /ko/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# MHTML 변환 사용자 정의 - C# 구현
+
 
 ## MHTML 변환 사용자 정의 소개
 
@@ -67,3 +73,9 @@ MHTML(MIME HTML)은 HTML 콘텐츠와 해당 리소스를 단일 파일로 결�
 ### Aspose.Email for .NET은 소규모 프로젝트와 대규모 프로젝트 모두에 적합합니까?
 
 예, .NET용 Aspose.Email은 확장 가능하도록 설계되어 다양한 규모의 프로젝트에 적합합니다. 소규모 애플리케이션과 대규모 엔터프라이즈 수준 솔루션 모두에서 널리 사용됩니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

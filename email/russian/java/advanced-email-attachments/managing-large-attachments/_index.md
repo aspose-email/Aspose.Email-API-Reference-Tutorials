@@ -3,10 +3,16 @@ title: Управление большими вложениями в Aspose.Emai
 linktitle: Управление большими вложениями в Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Эффективно управляйте большими вложениями электронной почты с помощью Aspose.Email для Java. Пошаговое руководство и исходный код для упрощенной обработки вложений в приложениях Java.
-type: docs
 weight: 11
 url: /ru/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Управление большими вложениями в Aspose.Email
+
 
 ## Введение в управление большими вложениями в Aspose.Email для Java
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### Могу ли я сжимать вложения, чтобы уменьшить их размер?
 
 Да, вы можете сжимать вложения, чтобы уменьшить их размер перед отправкой. Aspose.Email предоставляет функции программного сжатия и распаковки вложений. Вы можете реализовать это, чтобы оптимизировать размер вложений электронной почты.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

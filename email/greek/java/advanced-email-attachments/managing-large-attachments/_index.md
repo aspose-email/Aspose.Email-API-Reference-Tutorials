@@ -3,10 +3,16 @@ title: Διαχείριση μεγάλων συνημμένων στο Aspose.Em
 linktitle: Διαχείριση μεγάλων συνημμένων στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Διαχειριστείτε αποτελεσματικά μεγάλα συνημμένα email με το Aspose.Email για Java. Βήμα προς βήμα οδηγός και πηγαίος κώδικας για βελτιωμένο χειρισμό συνημμένων σε εφαρμογές Java.
-type: docs
 weight: 11
 url: /el/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διαχείριση μεγάλων συνημμένων στο Aspose.Email
+
 
 ## Εισαγωγή στη διαχείριση μεγάλων συνημμένων στο Aspose.Email για Java
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### Μπορώ να συμπιέσω τα προσαρτήματα για να μειώσω το μέγεθός τους;
 
 Ναι, μπορείτε να συμπιέσετε τα συνημμένα για να μειώσετε το μέγεθός τους πριν τα στείλετε. Το Aspose.Email παρέχει δυνατότητες συμπίεσης και αποσυμπίεσης συνημμένων μέσω προγραμματισμού. Μπορείτε να το εφαρμόσετε για να βελτιστοποιήσετε το μέγεθος των συνημμένων email σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

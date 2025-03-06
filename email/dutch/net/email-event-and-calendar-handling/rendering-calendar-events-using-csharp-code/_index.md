@@ -3,10 +3,16 @@ title: Agendagebeurtenissen weergeven met C#-code
 linktitle: Agendagebeurtenissen weergeven met C#-code
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer agenda-evenementen weergeven met C# en Aspose.Email voor .NET. Maak eenvoudig interactieve schema's.
-type: docs
 weight: 15
 url: /nl/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Agendagebeurtenissen weergeven met C#-code
+
 
 
 In het huidige digitale tijdperk is het efficiënt beheren van agenda-evenementen van cruciaal belang voor zowel bedrijven als particulieren. Aspose.Email voor .NET biedt een krachtige set tools om met agenda-evenementen te werken en het meeste uit uw planningsbehoeften te halen. In deze stapsgewijze handleiding leiden we u door het proces van het weergeven van agenda-afspraken met behulp van C#-code met Aspose.Email voor .NET.
@@ -90,3 +96,9 @@ Nu kunt u de kracht van Aspose.Email voor .NET benutten om agenda-evenementen na
    Ja, Aspose.Email biedt een breed scala aan functies voor e-mailbeheer, waaronder het verzenden, ontvangen en verwerken van e-mails.
 
  Ontdek gerust de[Aspose.Email API-documentatie](https://reference.aspose.com/email/net/) voor meer details en geavanceerde gebruiksscenario's. Veel codeerplezier!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

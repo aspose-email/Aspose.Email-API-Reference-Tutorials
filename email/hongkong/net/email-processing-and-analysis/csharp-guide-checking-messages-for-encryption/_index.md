@@ -3,10 +3,16 @@ title: C# 指南 - 檢查訊息是否加密
 linktitle: C# 指南 - 檢查訊息是否加密
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 確保電子郵件安全。檢查加密、解密訊息等。
-type: docs
 weight: 12
 url: /zh-hant/net/email-processing-and-analysis/csharp-guide-checking-messages-for-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 指南 - 檢查訊息是否加密
+
 
 在當今的數位時代，確保敏感資訊的安全至關重要。加密在保護資料免遭窺探方面發揮關鍵作用。如果您是從事電子郵件通訊的 .NET 開發人員，您會很高興知道 Aspose.Email 提供了強大的工具來促進訊息加密。在本指南中，我們將引導您逐步完成使用 Aspose.Email for .NET 檢查郵件是否已加密的過程。那麼，讓我們深入了解一下吧！
 
@@ -156,3 +162,9 @@ Aspose.Email支援多種加密演算法，包括AES、RSA和TripleDES，以確�
 ### 在哪裡可以找到有關 Aspose.Email for .NET 的更多資訊？
 
 有關更多詳細資訊、範例和文檔，請訪問[Aspose.Email for .NET 文檔](https://reference.aspose.com/email/net)頁。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

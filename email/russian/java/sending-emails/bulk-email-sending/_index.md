@@ -3,10 +3,16 @@ title: Массовая отправка электронной почты с п
 linktitle: Массовая отправка электронной почты с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Узнайте, как эффективно отправлять массовые электронные письма с помощью Aspose.Email для Java. Пошаговое руководство с примерами кода для электронного маркетинга и коммуникации.
-type: docs
 weight: 14
 url: /ru/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Массовая отправка электронной почты с помощью Aspose.Email
+
 
 ## Введение
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### Как я могу обрабатывать возвращенные или неудавшиеся электронные письма при массовой рассылке?
    Aspose.Email предоставляет функции для обработки уведомлений о статусе доставки (DSN) и отслеживания статуса доставки электронной почты. При необходимости вы можете реализовать логику для обработки возвращенных или ошибочных писем.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

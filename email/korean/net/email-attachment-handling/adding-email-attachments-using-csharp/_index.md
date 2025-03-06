@@ -3,10 +3,16 @@ title: C#을 사용하여 이메일 첨부 파일 추가
 linktitle: C#을 사용하여 이메일 첨부 파일 추가
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 이메일 첨부 파일을 추가하는 방법을 알아보세요. 원활한 통합을 위한 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 11
 url: /ko/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 이메일 첨부 파일 추가
+
 
 ## .NET용 이메일 첨부 파일 및 Aspose.Email 소개
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### .NET용 Aspose.Email의 무료 평가판이 있습니까?
 
 예, .NET용 Aspose.Email 무료 평가판을 다운로드하여 구매하기 전에 기능을 살펴볼 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Améliorez la communication avec la notification et le suivi par e-mail
 linktitle: Notification et suivi par e-mail
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Implémentez des fonctionnalités de notification et de suivi par e-mail à l'aide des didacticiels Aspose.Email pour .NET. Automatisez les notifications et obtenez des informations sur les interactions des destinataires de courrier électronique.
-type: docs
 weight: 16
 url: /fr/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Améliorez la communication avec la notification et le suivi par e-mail
+
 
 ## Introduction
 
@@ -27,3 +33,9 @@ Apprenez à recevoir des notifications par e-mail en C# à l'aide d'Aspose.Email
 Découvrez comment utiliser le code C# pour demander des accusés de lecture d'e-mails à l'aide d'Aspose.Email pour .NET, améliorant ainsi le suivi des communications.
 ### [Suivi de la progression de la conversion des documents électroniques avec le code C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Découvrez comment implémenter la notification et le suivi par e-mail à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec des exemples de code. Améliorez votre communication par e-mail dès aujourd'hui !
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

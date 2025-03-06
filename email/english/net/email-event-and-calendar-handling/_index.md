@@ -3,10 +3,16 @@ title: Efficient Email Event and Calendar Handling
 linktitle: Email Event and Calendar Handling
 second_title: Aspose.Email .NET Email Processing API
 description: Streamline email event handling and calendar management with Aspose.Email for .NET tutorials. Learn to automate email events and seamlessly integrate calendar functionalities.
-type: docs
 weight: 15
 url: /net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efficient Email Event and Calendar Handling
+
 
 ## Introduction
 
@@ -32,3 +38,10 @@ Learn how to manage appointment attendees' status using C# and Aspose.Email for 
 Learn how to use Aspose.Email for .NET to create draft appointment request emails in C#. Enhance business communication and efficiency.
 ### [Altering ProdID in ICS Files with C#](./altering-prodid-in-ics-files-with-csharp/)
 Learn to alter ProdID in ICS files using C# & Aspose.Email for .NET. Step-by-step guide & code. Ensure data integrity & compatibility. 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

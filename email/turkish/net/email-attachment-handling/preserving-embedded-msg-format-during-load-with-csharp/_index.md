@@ -3,10 +3,16 @@ title: C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma
 linktitle: C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak gömülü MSG formatını nasıl koruyacağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile Yükleme Sırasında Gömülü MSG Formatını Koruma
+
 
 Günümüzün dijital dünyasında, e-posta iletişimi hem kişisel hem de profesyonel alanlarda çok önemli bir rol oynamaktadır. Çoğu zaman e-posta dosyalarıyla programlı olarak çalışmamız gerekir ve bir EML (E-posta) dosyasının orijinal sınırlarını korumak çok önemli olabilir. Bu adım adım kılavuzda, Aspose.Email for .NET ile C# kodunu kullanarak bunu nasıl başaracağımızı keşfedeceğiz.
 
@@ -74,3 +80,9 @@ Evet, Aspose.Email for .NET çok yönlüdür ve e-posta ile ilgili çok çeşitl
  Aspose.Email for .NET'in en son güncellemeleri ve sürümlerine erişmek için sürüm sayfasını ziyaret edin:[.NET Sürümleri için Aspose.Email](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Gestione delle bozze dei messaggi in C# salvataggio della posta elettroni
 linktitle: Gestione delle bozze dei messaggi in C# salvataggio della posta elettronica come bozza
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come implementare la gestione delle bozze di posta elettronica in C# utilizzando Aspose.Email per .NET. Crea, modifica e salva bozze senza problemi.
-type: docs
 weight: 17
 url: /it/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestione delle bozze dei messaggi in C# salvataggio della posta elettronica come bozza
+
 
 ## introduzione
 
@@ -103,3 +109,9 @@ Assolutamente sì, seguendo i passaggi forniti in questa guida, puoi integrare p
 ### La libreria Aspose.Email supporta altre funzionalità relative alla posta elettronica?
 
  Sì, la libreria Aspose.Email offre un'ampia gamma di funzionalità per lavorare con i messaggi di posta elettronica, inclusi l'invio, la ricezione e la manipolazione di e-mail e allegati. È possibile fare riferimento alla documentazione per maggiori dettagli:[Qui](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

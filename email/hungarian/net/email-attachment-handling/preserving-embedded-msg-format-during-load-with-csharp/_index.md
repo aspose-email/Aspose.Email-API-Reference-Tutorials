@@ -3,10 +3,16 @@ title: A beágyazott MSG formátum megőrzése a C# segítségével történő b
 linktitle: A beágyazott MSG formátum megőrzése a C# segítségével történő betöltés közben
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan őrizheti meg a beágyazott MSG formátumot az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal.
-type: docs
 weight: 12
 url: /hu/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# A beágyazott MSG formátum megőrzése a C# segítségével történő betöltés közben
+
 
 A mai digitális világban az e-mailes kommunikáció kulcsszerepet játszik személyes és szakmai téren egyaránt. Sokszor programozottan kell dolgoznunk az e-mail fájlokkal, és az EML (Email) fájlok eredeti határainak megőrzése kulcsfontosságú lehet. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan érhetjük el ezt a C# kóddal az Aspose.Email for .NET segítségével.
 
@@ -74,3 +80,9 @@ Igen, az Aspose.Email for .NET sokoldalú, és az e-mailekkel kapcsolatos felada
  Az Aspose.Email for .NET legújabb frissítéseinek és kiadásainak eléréséhez keresse fel a kiadási oldalt:[Aspose.Email .NET-kiadásokhoz](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

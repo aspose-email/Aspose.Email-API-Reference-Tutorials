@@ -3,10 +3,16 @@ title: Aggiunta di nuovi allegati TNEF in C#
 linktitle: Aggiunta di nuovi allegati TNEF in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come aggiungere nuovi allegati TNEF in C# utilizzando Aspose.Email per .NET. Guida passo passo con esempi di codice per un'integrazione perfetta.
-type: docs
 weight: 12
 url: /it/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aggiunta di nuovi allegati TNEF in C#
+
 
 ## Introduzione agli allegati TNEF e Aspose.Email per .NET
 
@@ -88,3 +94,9 @@ Sì, puoi utilizzare Aspose.Email per .NET sia in progetti personali che commerc
 ### Dove posso trovare ulteriore documentazione ed esempi?
 
  Per documentazione più dettagliata ed esempi di codice, è possibile visitare il sito[Aspose.Email per la documentazione .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

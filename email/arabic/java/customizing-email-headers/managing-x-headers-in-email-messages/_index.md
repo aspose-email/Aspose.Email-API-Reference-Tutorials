@@ -3,10 +3,16 @@ title: إدارة X-Headers في رسائل البريد الإلكتروني ب
 linktitle: إدارة X-Headers في رسائل البريد الإلكتروني باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: أطلق العنان لقوة X-Headers في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعلم كيفية إدارة البيانات التعريفية المخصصة وتحسين معالجة البريد الإلكتروني.
-type: docs
 weight: 16
 url: /ar/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إدارة X-Headers في رسائل البريد الإلكتروني باستخدام Aspose.Email
+
 
 ## مقدمة
 
@@ -124,3 +130,9 @@ String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ### هل Aspose.Email مناسب لإدارة البريد الإلكتروني على مستوى المؤسسة؟
 
 نعم، Aspose.Email هي مكتبة قوية يمكن استخدامها لإدارة البريد الإلكتروني على مستوى المؤسسة. فهو يقدم مجموعة واسعة من الميزات لإنشاء رسائل البريد الإلكتروني وإرسالها واستلامها ومعالجتها، مما يجعله مناسبًا لسيناريوهات الأعمال المختلفة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

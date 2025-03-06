@@ -3,10 +3,16 @@ title: Verwalten von X-Headern in E-Mail-Nachrichten mit Aspose.Email
 linktitle: Verwalten von X-Headern in E-Mail-Nachrichten mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Nutzen Sie die Leistungsfähigkeit von X-Headern in E-Mails mit Aspose.Email für Java. Erfahren Sie, wie Sie benutzerdefinierte Metadaten verwalten und die E-Mail-Verarbeitung verbessern.
-type: docs
 weight: 16
 url: /de/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verwalten von X-Headern in E-Mail-Nachrichten mit Aspose.Email
+
 
 ## Einführung
 
@@ -124,3 +130,9 @@ Sie können X-Header aus empfangenen E-Mails mit Aspose.Email für Java lesen. L
 ### Ist Aspose.Email für die E-Mail-Verwaltung auf Unternehmensebene geeignet?
 
 Ja, Aspose.Email ist eine robuste Bibliothek, die für die E-Mail-Verwaltung auf Unternehmensebene verwendet werden kann. Es bietet zahlreiche Funktionen zum Erstellen, Senden, Empfangen und Verarbeiten von E-Mails und eignet sich daher für verschiedene Geschäftsszenarien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

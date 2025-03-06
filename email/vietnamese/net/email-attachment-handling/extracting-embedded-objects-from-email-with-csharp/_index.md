@@ -3,10 +3,16 @@ title: Trích xuất các đối tượng nhúng từ email bằng C#
 linktitle: Trích xuất các đối tượng nhúng từ email bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách trích xuất các đối tượng được nhúng từ email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 16
 url: /vi/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất các đối tượng nhúng từ email bằng C#
+
 
 ## Giới thiệu về các đối tượng được nhúng trong email
 
@@ -113,3 +119,9 @@ Có, bạn có thể thao tác với các đối tượng được nhúng đã t
 ### Tôi có thể tìm thêm ví dụ về cách sử dụng Aspose.Email cho .NET ở đâu?
 
  Bạn có thể tìm thêm các ví dụ về mã và hướng dẫn trong[Tham chiếu API](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

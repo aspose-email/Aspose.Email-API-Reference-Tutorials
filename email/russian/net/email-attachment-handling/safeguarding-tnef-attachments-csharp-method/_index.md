@@ -3,10 +3,16 @@ title: Защита вложений TNEF — метод C#
 linktitle: Защита вложений TNEF — метод C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как защитить вложения TNEF с помощью C# и Aspose.Email для .NET. Пошаговое руководство с исходным кодом.
-type: docs
 weight: 19
 url: /ru/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Защита вложений TNEF — метод C#
+
 
 ## Введение в защиту вложений TNEF
 
@@ -95,3 +101,9 @@ Aspose часто выпускает обновления и улучшения 
 ### Могу ли я использовать Aspose.Email в коммерческих проектах?
 
 Да, вы можете использовать Aspose.Email в коммерческих проектах. Однако обязательно ознакомьтесь с условиями лицензирования Aspose, чтобы убедиться в их соответствии.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

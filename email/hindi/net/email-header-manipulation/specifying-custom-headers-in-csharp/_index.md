@@ -3,10 +3,16 @@ title: C# में कस्टम हेडर निर्दिष्ट क
 linktitle: C# में कस्टम हेडर निर्दिष्ट करना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: ईमेल संचार को बढ़ाने के लिए .NET के लिए Aspose.Email का उपयोग करके C# में कस्टम हेडर निर्दिष्ट करने का तरीका जानें। यह चरण-दर-चरण मार्गदर्शिका बेहतर सहभागिता के लिए वैयक्तिकृत ईमेल हेडर बनाने में अंतर्दृष्टि प्रदान करती है।
-type: docs
 weight: 16
 url: /hi/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# में कस्टम हेडर निर्दिष्ट करना
+
 
 
 ## परिचय
@@ -97,3 +103,9 @@ client.Send(message);
 ईमेल संचार की गतिशील दुनिया में, कस्टम हेडर गेम-चेंजर हो सकते हैं, जो अनुरूप और प्रभावी इंटरैक्शन को सक्षम करते हैं। .NET के लिए Aspose.Email के साथ, C# में कस्टम हेडर निर्दिष्ट करने की प्रक्रिया सुव्यवस्थित और कुशल हो जाती है। इस गाइड में उल्लिखित चरणों का पालन करके, आप अपने ईमेल संचार प्रयासों में वर्गीकरण, वैयक्तिकरण और सहभागिता को बढ़ाने के लिए कस्टम हेडर की शक्ति का उपयोग कर सकते हैं।
 
 यदि आप अपने ईमेल संचार को अगले स्तर पर ले जाने के लिए तैयार हैं, तो .NET के लिए Aspose.Email का उपयोग करके कस्टम हेडर की दुनिया में उतरें। इस तकनीक में महारत हासिल करके, आप ऐसे ईमेल वितरित कर सकते हैं जो प्राप्तकर्ताओं को पसंद आते हैं और एक सहज और आकर्षक अनुभव प्रदान करते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Chọn máy chủ SMTP phù hợp cho Aspose.Email
 linktitle: Chọn máy chủ SMTP phù hợp cho Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tối ưu hóa chức năng email của bạn với Aspose.Email for Java. Tìm hiểu cách chọn đúng máy chủ SMTP và gửi email dễ dàng.
-type: docs
 weight: 10
 url: /vi/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chọn máy chủ SMTP phù hợp cho Aspose.Email
+
 
 ## Giới thiệu
 
@@ -100,3 +106,9 @@ Có, bạn có thể định cấu hình Aspose.Email để Java hoạt động 
 ### Tôi nên làm gì nếu máy chủ SMTP của tôi yêu cầu xác thực OAuth2?
 
 Bạn có thể định cấu hình xác thực OAuth2 bằng Aspose.Email cho Java bằng cách cung cấp cài đặt và mã thông báo OAuth2 cần thiết.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

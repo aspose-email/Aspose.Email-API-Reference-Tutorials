@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email ट्यूटोरियल के साथ ईमेल संरचना, रूपांतरण और प्रसंस्करण
 linktitle: .NET ट्यूटोरियल के लिए Aspose.Email
-type: docs
 weight: 10
 url: /hi/net/
 description: .NET ट्यूटोरियल के लिए Aspose.Email के साथ ईमेल क्षमताओं को अनुकूलित करें। उन्नत ईमेल प्रबंधन के लिए संरचना, रूपांतरण और प्रसंस्करण सीखें।
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ट्यूटोरियल के साथ ईमेल संरचना, रूपांतरण और प्रसंस्करण
+
 
 ## परिचय
 
@@ -45,3 +50,9 @@ is_root: true
 .NET ट्यूटोरियल के लिए Aspose.Email का उपयोग करके ईमेल फ़ाइल भंडारण और पुनर्प्राप्ति को सुव्यवस्थित करें। ईमेल संदेशों और अनुलग्नकों को प्रोग्रामेटिक रूप से प्रबंधित और एक्सेस करना सीखें।
 ### [ईमेल सुरक्षा और हस्ताक्षर](./email-security-and-signatures/)
 .NET ट्यूटोरियल के लिए Aspose.Email के साथ मजबूत ईमेल सुरक्षा उपाय और वैयक्तिकृत हस्ताक्षर लागू करें। सुरक्षित संचार और पेशेवर ब्रांडिंग सुनिश्चित करें।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

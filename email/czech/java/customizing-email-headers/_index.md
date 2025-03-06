@@ -3,10 +3,16 @@ title: Přizpůsobení e-mailových záhlaví pomocí Aspose.Email pro Java
 linktitle: Přizpůsobení e-mailových záhlaví pomocí Aspose.Email pro Java
 second_title: Aspose.Email Java Email Management API
 description: Naučte se, jak snadno přizpůsobit hlavičky e-mailů pomocí Aspose.Email pro Java. Ponořte se do výukových programů a využijte sílu přizpůsobení hlavičky e-mailu.
-type: docs
 weight: 16
 url: /cs/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přizpůsobení e-mailových záhlaví pomocí Aspose.Email pro Java
+
 
 Záhlaví e-mailů hraje klíčovou roli v e-mailové komunikaci, poskytuje základní informace o původu a doručení zprávy. S Aspose.Email for Java se přizpůsobení hlaviček e-mailů stává přímočarým úkolem a umožňuje uživatelům přizpůsobit metadata e-mailů konkrétním potřebám a požadavkům.
 
@@ -37,3 +43,9 @@ Zajistěte zabezpečení e-mailu pomocí podpisů DKIM pomocí Aspose.Email for 
 Odemkněte sílu X-Headers v e-mailech s Aspose.Email pro Java. Naučte se spravovat vlastní metadata a vylepšit zpracování e-mailů.
 ### [Obohacení e-mailových metadat prostřednictvím záhlaví s Aspose.Email](./enriching-email-metadata-through-headers/)
 Vylepšete e-mailová metadata pomocí Aspose.Email pro Java. Naučte se, jak obohatit hlavičky e-mailů pro lepší sledování a přizpůsobení pomocí Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

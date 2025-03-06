@@ -3,10 +3,16 @@ title: Aspose.Email के लिए सही SMTP सर्वर चुनन
 linktitle: Aspose.Email के लिए सही SMTP सर्वर चुनना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email के साथ अपनी ईमेल कार्यक्षमता को अनुकूलित करें। जानें कि सही एसएमटीपी सर्वर कैसे चुनें और सहजता से ईमेल कैसे भेजें।
-type: docs
 weight: 10
 url: /hi/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email के लिए सही SMTP सर्वर चुनना
+
 
 ## परिचय
 
@@ -100,3 +106,9 @@ public class EmailSender {
 ### यदि मेरे SMTP सर्वर को OAuth2 प्रमाणीकरण की आवश्यकता हो तो मुझे क्या करना चाहिए?
 
 आप आवश्यक OAuth2 टोकन और सेटिंग्स प्रदान करके जावा के लिए Aspose.Email के साथ OAuth2 प्रमाणीकरण को कॉन्फ़िगर कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aangepaste volgorde van informatie definiëren in MHTML met C#
 linktitle: Aangepaste volgorde van informatie definiëren in MHTML met C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u de MHTML-volgorde kunt aanpassen met C# en Aspose.Email voor .NET. Stap-voor-stap handleiding met code voor een efficiënte informatievoorziening. Verbeter de gebruikerservaring nu!
-type: docs
 weight: 14
 url: /nl/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aangepaste volgorde van informatie definiëren in MHTML met C#
+
 
 Op het gebied van e-mailbeheer is de mogelijkheid om de volgorde van informatie in MHTML-e-mails aan te passen een waardevolle functie. Aspose.Email voor .NET biedt een robuuste oplossing om dit te bereiken. In dit artikel begeleiden wij u stap voor stap door het proces.
 
@@ -80,3 +86,10 @@ In een wereld waar effectieve e-mailafhandeling van het grootste belang is, blij
 ### 5. Waar kan ik aanvullende bronnen en ondersteuning vinden voor Aspose.Email voor .NET?
 
 -  U heeft toegang tot uitgebreide documentatie, codevoorbeelden en ondersteuning op de[Aspose.Email voor .NET API-documentatie](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

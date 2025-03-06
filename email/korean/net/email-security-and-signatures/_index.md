@@ -3,10 +3,16 @@ title: 이메일 보안 및 서명
 linktitle: 이메일 보안 및 서명
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 강력한 이메일 보안 조치와 개인화된 서명을 구현하세요. 안전한 커뮤니케이션과 전문적인 브랜딩을 보장합니다.
-type: docs
 weight: 19
 url: /ko/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일 보안 및 서명
+
 
 ## 소개
 
@@ -25,3 +31,9 @@ url: /ko/net/email-security-and-signatures/
 
 ### [C# 코드를 사용하여 DKIM으로 이메일 서명](./signing-emails-with-dkim-using-csharp-code/)
 .NET용 C# 및 Aspose.Email을 사용하여 DKIM으로 이메일을 보호하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 이메일 신뢰도와 신뢰성을 강화하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

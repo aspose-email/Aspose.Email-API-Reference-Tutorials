@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 配置 SMTP 服务器
 linktitle: 使用 Aspose.Email for Java 配置 SMTP 服务器
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 轻松配置 SMTP 服务器。无缝电子邮件传送的分步教程。
-type: docs
 weight: 12
 url: /zh/java/configuring-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 配置 SMTP 服务器
+
 
 
 配置 SMTP 服务器是确保应用程序和服务可靠发送电子邮件的关键步骤。借助 Aspose.Email for Java，这个过程变得毫不费力，使开发人员能够专注于交付内容，而不是费力处理复杂的服务器设置。
@@ -34,3 +40,9 @@ Aspose.Email for Java 为开发人员提供了一种简化的方法来配置 SMT
 了解如何使用 Aspose.Email for Java 自定义 SMTP 页眉和页脚。通过个性化的品牌和消息增强您的电子邮件通信。
 ### [将多个 SMTP 服务器与 Aspose.Email 集成](./integrating-multiple-smtp-servers/)
 了解如何将多个 SMTP 服务器与 Aspose.Email for Java 无缝集成。通过我们的分步指南增强电子邮件发送可靠性和故障转移支持。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

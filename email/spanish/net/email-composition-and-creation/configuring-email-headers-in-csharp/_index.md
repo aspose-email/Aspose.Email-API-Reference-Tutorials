@@ -3,10 +3,16 @@ title: Configurar encabezados de correo electrónico en C#
 linktitle: Configurar encabezados de correo electrónico en C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a configurar encabezados de correo electrónico personalizados en C# usando Aspose.Email para .NET. Guía paso a paso con código fuente incluido. Mejore el control y la seguridad del correo electrónico.
-type: docs
 weight: 17
 url: /es/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configurar encabezados de correo electrónico en C#
+
 
 La comunicación por correo electrónico se ha convertido en una parte integral de las interacciones personales y comerciales modernas. Si bien el contenido de un correo electrónico es crucial, los encabezados que lo acompañan son igualmente importantes. Los encabezados de correo electrónico brindan información valiosa sobre el mensaje, el remitente, el destinatario y más. La configuración de encabezados de correo electrónico en C# usando Aspose.Email para .NET ofrece una manera poderosa de personalizar y controlar la información incrustada en los mensajes de correo electrónico. En este artículo, exploraremos cómo configurar encabezados de correo electrónico paso a paso usando la biblioteca Aspose.Email para .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email ofrece funciones de validación para garantizar que los encabezados
 ### ¿Los encabezados de los correos electrónicos distinguen entre mayúsculas y minúsculas?
 
 Sí, los encabezados de los correos electrónicos no distinguen entre mayúsculas y minúsculas. Sin embargo, es una buena práctica mantener un uso constante de las mayúsculas para lograr una mejor compatibilidad.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

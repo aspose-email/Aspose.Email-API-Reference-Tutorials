@@ -1,12 +1,17 @@
 ---
 title: Hướng dẫn Aspose.Email cho Java - Thao tác email chính
 linktitle: Aspose.Email cho các hướng dẫn Java
-type: docs
 weight: 10
 url: /vi/java/
 description: Khai phá sức mạnh của Aspose.Email dành cho Java bằng các hướng dẫn toàn diện. Tìm hiểu thao tác, quản lý email và hơn thế nữa.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn Aspose.Email cho Java - Thao tác email chính
+
 
 Aspose.Email for Java là một API mạnh mẽ cho phép các nhà phát triển thao tác và quản lý email một cách dễ dàng. Cho dù bạn đang tìm cách tự động hóa các tác vụ liên quan đến email, tăng cường bảo mật email hay tích hợp chức năng email vào các ứng dụng Java của mình, Aspose.Email đều cung cấp các công cụ và tài nguyên bạn cần. Trong bài viết này, chúng ta sẽ khám phá thế giới hướng dẫn của Aspose.Email dành cho Java và cách chúng có thể giúp bạn thành thạo thao tác email.
 
@@ -38,3 +43,9 @@ Tìm hiểu cách tăng cường bảo mật email với Aspose.Email cho Java. 
 Tìm hiểu cách tùy chỉnh tiêu đề email một cách dễ dàng với Aspose.Email for Java. Đi sâu vào các hướng dẫn và khai thác sức mạnh của việc tùy chỉnh tiêu đề email.
 ### [Khám phá bảo mật email với Aspose.Email cho Java](./exploring-email-security/)
 Khám phá cách tăng cường bảo mật email với Aspose.Email cho Java. Khám phá các hướng dẫn từng bước và các phương pháp hay nhất.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

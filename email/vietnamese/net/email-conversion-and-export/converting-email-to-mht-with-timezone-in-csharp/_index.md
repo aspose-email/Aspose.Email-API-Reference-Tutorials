@@ -3,10 +3,16 @@ title: Chuyển đổi Email sang MHT bằng Múi giờ trong C#
 linktitle: Chuyển đổi Email sang MHT bằng Múi giờ trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Chuyển đổi email sang định dạng MHT với múi giờ chính xác bằng Aspose.Email for .NET. Hướng dẫn từng bước và ví dụ về mã được cung cấp.
-type: docs
 weight: 12
 url: /vi/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chuyển đổi Email sang MHT bằng Múi giờ trong C#
+
 
 ## Giới thiệu Chuyển đổi Email Email sang MHT bằng Timezone
 
@@ -105,3 +111,9 @@ Có, Aspose.Email for .NET hỗ trợ nhiều định dạng khác nhau, bao g�
 ### Làm cách nào tôi có thể tải xuống phiên bản Aspose.Email mới nhất cho .NET?
 
  Bạn có thể tải xuống phiên bản mới nhất từ trang phát hành:[Tải xuống Aspose.Email cho .NET](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

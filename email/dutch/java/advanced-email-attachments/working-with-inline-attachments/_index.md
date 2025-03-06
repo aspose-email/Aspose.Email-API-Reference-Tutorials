@@ -3,10 +3,16 @@ title: Werken met inline bijlagen in Aspose.Email
 linktitle: Werken met inline bijlagen in Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Optimaliseer uw e-mailcommunicatie met Aspose.Email voor Java. Leer werken met inline bijlagen in deze uitgebreide handleiding.
-type: docs
 weight: 10
 url: /nl/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Werken met inline bijlagen in Aspose.Email
+
 
 ## Inleiding tot het werken met inline bijlagen in Aspose.Email
 
@@ -135,3 +141,9 @@ Om inline bijlagen in HTML-e-mails te verwerken, gebruikt u de`LinkedResource` c
 ### Is Aspose.Email voor Java compatibel met verschillende e-mailservers?
 
 Ja, Aspose.Email voor Java is compatibel met verschillende e-mailservers. Zorg ervoor dat u de SMTP-instellingen correct configureert voor uw e-mailserver wanneer u e-mails verzendt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

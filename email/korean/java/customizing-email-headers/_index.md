@@ -3,10 +3,16 @@ title: Java용 Aspose.Email을 사용하여 이메일 헤더 사용자 정의
 linktitle: Java용 Aspose.Email을 사용하여 이메일 헤더 사용자 정의
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 손쉽게 이메일 헤더를 사용자 정의하는 방법을 알아보세요. 튜토리얼을 살펴보고 이메일 헤더 사용자 정의 기능을 활용해 보세요.
-type: docs
 weight: 16
 url: /ko/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java용 Aspose.Email을 사용하여 이메일 헤더 사용자 정의
+
 
 이메일 헤더는 이메일 통신에서 중요한 역할을 하며 메시지의 출처와 전달에 대한 필수 정보를 제공합니다. Aspose.Email for Java를 사용하면 이메일 헤더를 사용자 정의하는 작업이 간단해지며 사용자는 이메일 메타데이터를 특정 요구 사항에 맞게 조정할 수 있습니다.
 
@@ -37,3 +43,9 @@ Java용 Aspose.Email을 사용하여 DKIM 서명으로 이메일 보안을 보�
 Java용 Aspose.Email을 사용하여 이메일에서 X-헤더의 강력한 기능을 활용하세요. 사용자 정의 메타데이터를 관리하고 이메일 처리를 강화하는 방법을 알아보세요.
 ### [Aspose.Email을 사용하여 헤더를 통해 이메일 메타데이터 강화](./enriching-email-metadata-through-headers/)
 Java용 Aspose.Email을 사용하여 이메일 메타데이터를 강화하세요. Aspose.Email을 사용하여 향상된 추적 및 사용자 정의를 위해 이메일 헤더를 강화하는 방법을 알아보세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

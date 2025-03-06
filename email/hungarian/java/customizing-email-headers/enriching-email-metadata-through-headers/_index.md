@@ -3,10 +3,16 @@ title: Az e-mail metaadatok gazdagítása fejléceken keresztül az Aspose.Email
 linktitle: Az e-mail metaadatok gazdagítása fejléceken keresztül az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Javítsa az e-mail metaadatokat az Aspose.Email for Java segítségével. Ismerje meg, hogyan gazdagíthatja az e-mail fejléceket a jobb nyomon követés és testreszabás érdekében az Aspose.Email segítségével.
-type: docs
 weight: 18
 url: /hu/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Az e-mail metaadatok gazdagítása fejléceken keresztül az Aspose.Email segítségével
+
 
 ## Bevezetés az e-mail metaadatok fejléceken keresztül történő gazdagításába az Aspose.Email segítségével
 
@@ -107,3 +113,9 @@ Igen, az Aspose.Email több programozási nyelvet is támogat, beleértve a Java
 ### Hol találok további forrásokat az Aspose.Email for Java webhelyen?
 
  A dokumentációt a címen tekintheti meg[itt](https://reference.aspose.com/email/java/) átfogó forrásokért és példákért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

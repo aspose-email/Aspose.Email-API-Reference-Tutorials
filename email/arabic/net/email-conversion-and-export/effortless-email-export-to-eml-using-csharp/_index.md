@@ -3,10 +3,16 @@ title: تصدير البريد الإلكتروني بسهولة إلى EML با
 linktitle: تصدير البريد الإلكتروني بسهولة إلى EML باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتصدير رسائل البريد الإلكتروني بسهولة إلى تنسيق EML باستخدام C# وAspose.Email لـ .NET. تعلم خطوة بخطوة مع أمثلة التعليمات البرمجية المصدر.
-type: docs
 weight: 11
 url: /ar/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تصدير البريد الإلكتروني بسهولة إلى EML باستخدام C#
+
 
 ## مقدمة لتصدير البريد الإلكتروني بسهولة إلى EML
 
@@ -175,3 +181,9 @@ namespace EmailExportApp
 ### هل كود المصدر المقدم في البرنامج التعليمي كامل؟
 
 نعم، يوفر البرنامج التعليمي كود المصدر الكامل الذي يوضح كيفية تصدير رسائل البريد الإلكتروني إلى تنسيق EML باستخدام Aspose.Email for .NET. يمكنك استخدام هذا الرمز كنقطة بداية
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#을 사용하여 MHT 변환 중 글꼴 변경
 linktitle: C#을 사용하여 MHT 변환 중 글꼴 변경
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 MHT 변환 중에 글꼴을 변경하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 이메일 보관 및 문서 관리에 적합합니다.
-type: docs
 weight: 11
 url: /ko/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 MHT 변환 중 글꼴 변경
+
 
 오늘날의 디지털 시대에 문서 형식과 프레젠테이션은 정보를 효과적으로 전달하는 데 중요한 역할을 합니다. 이메일 커뮤니케이션의 경우 이메일이 일관되고 전문적으로 보이도록 하는 것이 가장 중요합니다. 이 문서에서는 .NET용 Aspose.Email 라이브러리와 함께 C#을 사용하여 MHT(MIME HTML) 변환 중에 글꼴을 변경하는 과정을 안내합니다.
 
@@ -106,3 +112,9 @@ message.Save("output.mht", SaveOptions.DefaultMhtml);
 ### 5. 내 애플리케이션에서 글꼴 변경 프로세스를 자동화할 수 있습니까?
 
    예, .NET용 Aspose.Email을 코드에 통합하여 애플리케이션에서 글꼴 변경을 자동화할 수 있습니다. 이를 통해 애플리케이션의 논리에 따라 동적 글꼴 사용자 정의가 가능합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email での大きな添付ファイルの管理
 linktitle: Aspose.Email での大きな添付ファイルの管理
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して、大きな電子メールの添付ファイルを効率的に管理します。 Java アプリケーションで添付ファイルを合理的に処理するためのステップバイステップのガイドとソース コード。
-type: docs
 weight: 11
 url: /ja/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email での大きな添付ファイルの管理
+
 
 ## Aspose.Email for Java での大きな添付ファイルの管理の概要
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### 添付ファイルを圧縮してサイズを小さくできますか?
 
 はい、添付ファイルを送信する前に圧縮してサイズを減らすことができます。 Aspose.Email は、添付ファイルをプログラムで圧縮および解凍する機能を提供します。これを実装すると、電子メールの添付ファイルのサイズを最適化できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

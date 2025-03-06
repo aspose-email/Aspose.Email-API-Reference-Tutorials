@@ -3,10 +3,16 @@ title: SMTP fejlécek és láblécek testreszabása az Aspose.Email segítségé
 linktitle: SMTP fejlécek és láblécek testreszabása az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan szabhatja testre az SMTP-fejlécet és láblécet az Aspose.Email for Java segítségével. Fokozza e-mail kommunikációját személyre szabott márkaépítéssel és üzenetekkel.
-type: docs
 weight: 16
 url: /hu/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SMTP fejlécek és láblécek testreszabása az Aspose.Email segítségével
+
 
 ## Bevezetés
 
@@ -107,3 +113,9 @@ Igen, használhat HTML formázást az e-mail tartalmában, beleértve a fejléce
 ### Milyen SMTP-beállításokat használjak személyre szabott e-mailek küldéséhez?
 
 Használja az e-mail szolgáltatója vagy a szervezete informatikai osztálya által megadott SMTP-beállításokat. Ezek a beállítások általában magukban foglalják az SMTP-kiszolgáló címét, portszámát és hitelesítési adatait.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

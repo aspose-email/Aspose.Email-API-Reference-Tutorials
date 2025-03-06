@@ -3,10 +3,16 @@ title: Bảo quản tệp đính kèm TNEF khi đọc tin nhắn - Phương phá
 linktitle: Bảo quản tệp đính kèm TNEF khi đọc tin nhắn - Phương pháp tiếp cận C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách lưu giữ tệp đính kèm TNEF bằng Aspose.Email cho .NET trong hướng dẫn từng bước kèm theo mã nguồn này.
-type: docs
 weight: 15
 url: /vi/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo quản tệp đính kèm TNEF khi đọc tin nhắn - Phương pháp tiếp cận C#
+
 
 ## Giới thiệu về Tệp đính kèm TNEF
 
@@ -132,3 +138,9 @@ Tuyệt đối! Aspose.Email được thiết kế để phục vụ nhiều ứ
 ### Aspose.Email có được cập nhật thường xuyên không?
 
 Có, Aspose duy trì các bản cập nhật thường xuyên để đảm bảo khả năng tương thích với các công nghệ và nền tảng mới nhất.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

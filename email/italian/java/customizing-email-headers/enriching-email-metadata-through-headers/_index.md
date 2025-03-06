@@ -3,10 +3,16 @@ title: Arricchire i metadati delle e-mail tramite intestazioni con Aspose.Email
 linktitle: Arricchire i metadati delle e-mail tramite intestazioni con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Migliora i metadati delle e-mail con Aspose.Email per Java. Scopri come arricchire le intestazioni delle e-mail per un migliore monitoraggio e personalizzazione con Aspose.Email.
-type: docs
 weight: 18
 url: /it/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Arricchire i metadati delle e-mail tramite intestazioni con Aspose.Email
+
 
 ## Introduzione all'arricchimento dei metadati delle e-mail tramite intestazioni con Aspose.Email
 
@@ -107,3 +113,9 @@ Sì, Aspose.Email supporta più linguaggi di programmazione, inclusi Java, .NET 
 ### Dove posso trovare più risorse su Aspose.Email per Java?
 
  È possibile esplorare la documentazione su[Qui](https://reference.aspose.com/email/java/) per risorse ed esempi completi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

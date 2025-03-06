@@ -3,10 +3,16 @@ title: Zabezpečení příloh TNEF – metoda C#
 linktitle: Zabezpečení příloh TNEF – metoda C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se chránit přílohy TNEF pomocí C# a Aspose.Email pro .NET. Podrobný průvodce včetně zdrojového kódu.
-type: docs
 weight: 19
 url: /cs/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zabezpečení příloh TNEF – metoda C#
+
 
 ## Úvod do zabezpečení příloh TNEF
 
@@ -95,3 +101,9 @@ Aspose často vydává aktualizace a vylepšení svých knihoven. Doporučuje se
 ### Mohu používat Aspose.Email v komerčních projektech?
 
 Ano, Aspose.Email můžete používat v komerčních projektech. Nezapomeňte si však přečíst licenční podmínky společnosti Aspose, abyste zajistili soulad.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

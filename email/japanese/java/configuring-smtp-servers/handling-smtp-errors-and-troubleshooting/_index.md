@@ -3,10 +3,16 @@ title: SMTP エラーの処理と Aspose.Email によるトラブルシューテ
 linktitle: SMTP エラーの処理と Aspose.Email によるトラブルシューティング
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール通信を最適化します。 SMTP エラーを処理し、効果的にトラブルシューティングを行う方法を学びます。
-type: docs
 weight: 14
 url: /ja/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SMTP エラーの処理と Aspose.Email によるトラブルシューティング
+
 
 ## SMTP エラーの概要
 
@@ -107,3 +113,9 @@ try-catch ブロックを使用すると、SMTP 例外をキャッチできま�
 ### Aspose.Email for Java は大量の電子メールの処理に適していますか?
 
 はい、Aspose.Email for Java は、少量の電子メールと大量の電子メールの両方を効率的に処理できるように設計されています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

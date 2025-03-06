@@ -3,10 +3,16 @@ title: SMTP-kop- en voetteksten aanpassen met Aspose.Email
 linktitle: SMTP-kop- en voetteksten aanpassen met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u SMTP-kop- en voetteksten kunt aanpassen met Aspose.Email voor Java. Verbeter uw e-mailcommunicatie met gepersonaliseerde branding en berichten.
-type: docs
 weight: 16
 url: /nl/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SMTP-kop- en voetteksten aanpassen met Aspose.Email
+
 
 ## Invoering
 
@@ -107,3 +113,9 @@ Ja, u kunt HTML-opmaak gebruiken in de e-mailinhoud, inclusief kop- en voettekst
 ### Welke SMTP-instellingen moet ik gebruiken om aangepaste e-mails te verzenden?
 
 U moet de SMTP-instellingen gebruiken die zijn verstrekt door uw e-mailserviceprovider of de IT-afdeling van uw organisatie. Deze instellingen omvatten doorgaans het SMTP-serveradres, het poortnummer en de verificatiereferenties.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

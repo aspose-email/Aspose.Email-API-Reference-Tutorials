@@ -3,10 +3,16 @@ title: Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı
 linktitle: Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Kaynak kodlu bu adım adım kılavuzdan Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin.
-type: docs
 weight: 15
 url: /tr/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mesajları Okurken TNEF Eklerini Koruma - C# Yaklaşımı
+
 
 ## TNEF Eklerine Giriş
 
@@ -132,3 +138,9 @@ Kesinlikle! Aspose.Email, küçük projelerden kurumsal düzeydeki çözümlere 
 ### Aspose.Email düzenli olarak güncelleniyor mu?
 
 Evet, Aspose en son teknolojiler ve platformlarla uyumluluğu sağlamak için düzenli güncellemeler sağlar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

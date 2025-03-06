@@ -3,10 +3,16 @@ title: 使用 C# 程式碼追蹤電子郵件文件轉換進度
 linktitle: 使用 C# 程式碼追蹤電子郵件文件轉換進度
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 實作電子郵件通知和追蹤。帶有程式碼範例的分步指南。立即增強您的電子郵件溝通！
-type: docs
 weight: 12
 url: /zh-hant/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 程式碼追蹤電子郵件文件轉換進度
+
 
 在當今的數位時代，電子郵件通訊在個人和專業領域都發揮著至關重要的作用。作為一名程式設計師，您可能遇到過以程式設計方式處理和操作電子郵件的需要。一項常見任務是追蹤電子郵件文件轉換的進度，在本文中，我們將使用 C# 和 Aspose.Email for .NET 逐步指導您完成該過程。
 
@@ -101,3 +107,9 @@ Aspose.Email for .NET 是一個功能強大的程式庫，用於在 .NET 應用�
 您可以探索[Aspose.Email for .NET API 參考](https://reference.aspose.com/email/net/)有關教程、範例和詳細文件。
 
 現在，您已做好充分準備，可以自信地在 C# 應用程式中處理電子郵件文件轉換進度。快樂編碼！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

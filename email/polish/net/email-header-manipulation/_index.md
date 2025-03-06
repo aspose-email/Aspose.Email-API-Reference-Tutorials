@@ -3,10 +3,16 @@ title: Manipulacja nagłówkiem wiadomości e-mail
 linktitle: Manipulacja nagłówkiem wiadomości e-mail
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Efektywnie manipuluj nagłówkami wiadomości e-mail za pomocą samouczków Aspose.Email for .NET. Dowiedz się, jak wyodrębniać, modyfikować i personalizować nagłówki w celu usprawnienia komunikacji.
-type: docs
 weight: 14
 url: /pl/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulacja nagłówkiem wiadomości e-mail
+
 
 ## Wstęp
 
@@ -33,3 +39,9 @@ Dowiedz się, jak dostosować kolejność MHTML za pomocą C# i Aspose.Email dla
 Dowiedz się, jak wyodrębnić nagłówki wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym umożliwiający skuteczną analizę wiadomości e-mail. 
 ### [Określanie niestandardowych nagłówków w języku C#](./specifying-custom-headers-in-csharp/)
 Dowiedz się, jak określić niestandardowe nagłówki w języku C# przy użyciu Aspose.Email dla .NET, aby usprawnić komunikację e-mail. Ten przewodnik krok po kroku zawiera szczegółowe informacje na temat tworzenia spersonalizowanych nagłówków wiadomości e-mail w celu zwiększenia zaangażowania.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

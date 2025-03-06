@@ -3,10 +3,16 @@ title: Membedakan Lampiran Inline dan Reguler - Pendekatan C#
 linktitle: Membedakan Lampiran Inline dan Reguler - Pendekatan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara membedakan antara lampiran email sebaris dan biasa menggunakan Aspose.Email untuk .NET. Panduan komprehensif dengan contoh kode.
-type: docs
 weight: 17
 url: /id/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membedakan Lampiran Inline dan Reguler - Pendekatan C#
+
 
 ## Pengantar Membedakan Lampiran Inline dan Reguler - Pendekatan C#
 
@@ -107,3 +113,9 @@ Anda dapat mengakses konten lampiran sebaris dengan menggunakan properti yang se
 ### Bisakah saya menyimpan lampiran biasa ke lokasi tertentu di disk?
 
  Sangat! Anda dapat menyimpan lampiran biasa ke lokasi tertentu pada disk dengan memanfaatkan`Save` metode objek lampiran dan menyediakan jalur file yang diinginkan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 埋め込みオブジェクトの抽出 - C# チュートリアル
 linktitle: 埋め込みオブジェクトの抽出 - C# チュートリアル
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して電子メール メッセージから埋め込みオブジェクトを抽出する方法を学習します。コード例を含むステップバイステップのガイド。
-type: docs
 weight: 15
 url: /ja/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 埋め込みオブジェクトの抽出 - C# チュートリアル
+
 
 ## 埋め込みオブジェクトの抽出の概要 - C# チュートリアル
 
@@ -105,3 +111,9 @@ Visual Studio の NuGet パッケージ マネージャーを使用して、Aspo
 ### Aspose.Email に関するその他のドキュメントはどこで見つけられますか?
 
  Aspose.Email の詳細なドキュメントとコード例は、次のサイトで見つけることができます。[Aspose.Email for .NET API リファレンス](https://reference.aspose.com/email/net/)ページ。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

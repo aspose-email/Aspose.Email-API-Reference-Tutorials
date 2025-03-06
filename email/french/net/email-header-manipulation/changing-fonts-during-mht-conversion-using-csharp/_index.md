@@ -3,10 +3,16 @@ title: Modification des polices lors de la conversion MHT à l'aide de C#
 linktitle: Modification des polices lors de la conversion MHT à l'aide de C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment modifier les polices lors de la conversion MHT à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec le code source. Parfait pour l'archivage des e-mails et la gestion des documents.
-type: docs
 weight: 11
 url: /fr/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Modification des polices lors de la conversion MHT à l'aide de C#
+
 
 À l'ère numérique d'aujourd'hui, le formatage et la présentation des documents jouent un rôle crucial dans la transmission efficace des informations. Lorsqu'il s'agit de communication par courrier électronique, il est de la plus haute importance de garantir que vos e-mails semblent cohérents et professionnels. Cet article vous guidera tout au long du processus de modification des polices lors de la conversion MHT (MIME HTML) à l'aide de C# avec la bibliothèque Aspose.Email pour .NET.
 
@@ -106,3 +112,9 @@ Maintenant que vous disposez des connaissances et des outils nécessaires pour m
 ### 5. Puis-je automatiser le processus de changement de police dans mes applications ?
 
    Oui, vous pouvez automatiser les modifications de polices dans vos applications en intégrant Aspose.Email for .NET dans votre code. Cela permet une personnalisation dynamique des polices en fonction de la logique de votre application.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

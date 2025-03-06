@@ -3,10 +3,16 @@ title: Создание файлов электронной почты в фор
 linktitle: Создание файлов электронной почты в формате HTML с использованием C# — Сохранить как HTML
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как создавать файлы электронной почты в формате HTML с помощью C# и Aspose.Email для .NET. Пошаговое руководство с исходным кодом для плавной настройки электронной почты.
-type: docs
 weight: 18
 url: /ru/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создание файлов электронной почты в формате HTML с использованием C# — Сохранить как HTML
+
 
 ## Введение в создание файлов электронной почты в формате HTML
 
@@ -113,3 +119,9 @@ client.Send(message);
 ### Где я могу найти больше примеров и документации?
 
  Вы можете изучить подробные примеры и подробную документацию по[Документация Aspose.Email](https://reference.aspose.com/email/net) страница.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Thay đổi phông chữ trong khi chuyển đổi MHT bằng C#
 linktitle: Thay đổi phông chữ trong khi chuyển đổi MHT bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách thay đổi phông chữ trong quá trình chuyển đổi MHT bằng Aspose.Email for .NET. Hướng dẫn từng bước với mã nguồn. Hoàn hảo cho việc lưu trữ email và quản lý tài liệu.
-type: docs
 weight: 11
 url: /vi/net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Thay đổi phông chữ trong khi chuyển đổi MHT bằng C#
+
 
 Trong thời đại kỹ thuật số ngày nay, việc định dạng và trình bày tài liệu đóng vai trò quan trọng trong việc truyền tải thông tin một cách hiệu quả. Khi nói đến giao tiếp qua email, việc đảm bảo rằng email của bạn xuất hiện nhất quán và chuyên nghiệp là điều quan trọng nhất. Bài viết này sẽ hướng dẫn bạn quy trình thay đổi phông chữ trong quá trình chuyển đổi MHT (MIME HTML) bằng C# với thư viện Aspose.Email for .NET.
 
@@ -106,3 +112,9 @@ Giờ đây, bạn đã có kiến thức và công cụ để thao tác phông 
 ### 5. Tôi có thể tự động hóa quá trình thay đổi phông chữ trong ứng dụng của mình không?
 
    Có, bạn có thể tự động hóa các thay đổi phông chữ trong ứng dụng của mình bằng cách tích hợp Aspose.Email for .NET vào mã của bạn. Điều này cho phép tùy chỉnh phông chữ động dựa trên logic của ứng dụng của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

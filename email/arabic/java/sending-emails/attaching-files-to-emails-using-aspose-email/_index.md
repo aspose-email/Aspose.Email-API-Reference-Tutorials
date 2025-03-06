@@ -3,10 +3,16 @@ title: إرفاق الملفات برسائل البريد الإلكتروني 
 linktitle: إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعلم كيفية إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. قم بتحسين رسائل البريد الإلكتروني الخاصة بك بسهولة باستخدام هذا الدليل المفصّل خطوة بخطوة.
-type: docs
 weight: 12
 url: /ar/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email
+
 ## مقدمة
 
 في عالم التواصل عبر البريد الإلكتروني، تعد القدرة على إرسال المرفقات أمرًا بالغ الأهمية. سواء كنت ترسل مستندات أو صورًا مهمة أو أي نوع آخر من الملفات، يجب أن تكون العملية واضحة وموثوقة. يعمل Aspose.Email for Java على تبسيط هذه العملية من خلال توفير أدوات قوية لإرفاق الملفات برسائل البريد الإلكتروني.
@@ -134,3 +140,9 @@ public class EmailWithAttachments {
 
 ### هل هناك قيود على حجم مرفقات البريد الإلكتروني؟
    قد يكون لخوادم البريد الإلكتروني والعملاء قيود على حجم المرفقات. تأكد من أن مرفقاتك ضمن حدود الحجم المقبولة لتجنب مشكلات إرسال رسائل البريد الإلكتروني أو تلقيها.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

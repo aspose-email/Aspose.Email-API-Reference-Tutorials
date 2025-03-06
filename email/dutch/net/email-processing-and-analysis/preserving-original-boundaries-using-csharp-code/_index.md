@@ -3,10 +3,16 @@ title: Originele grenzen behouden met behulp van C#-code
 linktitle: Originele grenzen behouden met behulp van C#-code
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u de oorspronkelijke grenzen van e-mailbijlagen kunt behouden met C# en Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode.
-type: docs
 weight: 13
 url: /nl/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Originele grenzen behouden met behulp van C#-code
+
 
 ## Inleiding tot het behouden van oorspronkelijke grenzen
 
@@ -107,3 +113,9 @@ U kunt de Aspose.Email-bibliotheek gebruiken om afbeeldingsbijlagen te laden en 
 ### Waar kan ik meer informatie vinden over Aspose.Email voor .NET?
 
  Uitgebreide documentatie en voorbeelden vindt u op de website[Aspose.E-maildocumentatie](https://reference.aspose.com/email/net/) bladzijde.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

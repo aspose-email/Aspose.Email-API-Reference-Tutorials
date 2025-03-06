@@ -3,10 +3,16 @@ title: Διατήρηση ενσωματωμένης μορφής MSG κατά �
 linktitle: Διατήρηση ενσωματωμένης μορφής MSG κατά τη φόρτωση με C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να διατηρείτε την ενσωματωμένη μορφή MSG χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα.
-type: docs
 weight: 12
 url: /el/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διατήρηση ενσωματωμένης μορφής MSG κατά τη φόρτωση με C#
+
 
 Στον σημερινό ψηφιακό κόσμο, η επικοινωνία μέσω email διαδραματίζει κεντρικό ρόλο τόσο στον προσωπικό όσο και στον επαγγελματικό τομέα. Πολλές φορές, χρειάζεται να δουλέψουμε με αρχεία email μέσω προγραμματισμού και η διατήρηση των αρχικών ορίων ενός αρχείου EML (Email) μπορεί να είναι ζωτικής σημασίας. Σε αυτόν τον οδηγό βήμα προς βήμα, θα διερευνήσουμε πώς να το πετύχετε αυτό χρησιμοποιώντας κώδικα C# με το Aspose.Email για .NET.
 
@@ -74,3 +80,9 @@ mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions)
  Για πρόσβαση στις πιο πρόσφατες ενημερώσεις και εκδόσεις του Aspose.Email για .NET, επισκεφτείτε τη σελίδα έκδοσης:[Aspose.Email για εκδόσεις .NET](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

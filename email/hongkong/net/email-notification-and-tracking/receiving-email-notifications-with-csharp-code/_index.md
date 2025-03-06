@@ -3,10 +3,16 @@ title: 使用 C# 程式碼接收電子郵件通知
 linktitle: 使用 C# 程式碼接收電子郵件通知
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解使用 Aspose.Email for .NET 在 C# 中接收電子郵件通知。提供了高效的程式碼範例。
-type: docs
 weight: 10
 url: /zh-hant/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 程式碼接收電子郵件通知
+
 
 
 在數位時代，溝通至關重要，電子郵件仍然是最受歡迎的訊息交換方式之一。作為開發人員，您可能會發現自己需要在應用程式中發送和接收電子郵件通知。在本逐步教學中，我們將探索如何使用 Aspose.Email for .NET 透過 C# 接收電子郵件通知。
@@ -88,3 +94,9 @@ client.Send(msg);
    Aspose.Email 對您可以發送或接收的電子郵件數量沒有嚴格的限制，但可能會受到您的電子郵件伺服器的限制。
 
 關於使用 Aspose.Email for .NET 透過 C# 接收電子郵件通知的教學到此結束。我們希望您發現本指南有助於在您的應用程式中實現電子郵件通知。 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

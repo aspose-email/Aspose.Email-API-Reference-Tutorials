@@ -3,10 +3,16 @@ title: Adicionando cabeçalhos personalizados em Aspose.Email
 linktitle: Adicionando cabeçalhos personalizados em Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aprenda como aprimorar suas mensagens de e-mail adicionando cabeçalhos personalizados usando Aspose.Email para Java. Melhore os metadados e a organização do e-mail.
-type: docs
 weight: 15
 url: /pt/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adicionando cabeçalhos personalizados em Aspose.Email
+
 
 ## Introdução
 
@@ -132,3 +138,9 @@ Neste guia, você aprendeu como adicionar cabeçalhos personalizados a um e-mail
 
 ### Como posso extrair cabeçalhos personalizados de emails recebidos?
     Você pode usar o`getHeaders` método no e-mail recebido`MailMessage` objeto para recuperar e processar cabeçalhos personalizados.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

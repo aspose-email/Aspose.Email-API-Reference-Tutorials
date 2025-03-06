@@ -3,10 +3,16 @@ title: การส่งอีเมลจำนวนมากด้วย Asp
 linktitle: การส่งอีเมลจำนวนมากด้วย Aspose.Email
 second_title: Aspose.Email Java API การจัดการอีเมล
 description: เรียนรู้วิธีส่งอีเมลจำนวนมากอย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดสำหรับการตลาดผ่านอีเมลและการสื่อสาร
-type: docs
 weight: 14
 url: /th/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การส่งอีเมลจำนวนมากด้วย Aspose.Email
+
 
 ## การแนะนำ
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### ฉันจะจัดการกับอีเมลตีกลับหรือล้มเหลวในการส่งจำนวนมากได้อย่างไร
    Aspose.Email มีคุณสมบัติสำหรับการจัดการการแจ้งเตือนสถานะการจัดส่ง (DSN) และการติดตามสถานะการส่งอีเมล คุณสามารถใช้ตรรกะเพื่อประมวลผลอีเมลตีกลับหรือล้มเหลวได้ตามต้องการ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

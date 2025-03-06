@@ -3,10 +3,16 @@ title: Bezproblémový export e-mailu do EML pomocí C#
 linktitle: Bezproblémový export e-mailu do EML pomocí C#
 second_title: Aspose.Email .NET Email Processing API
 description: Bez námahy exportujte e-maily do formátu EML pomocí C# a Aspose.Email pro .NET. Naučte se krok za krokem s příklady zdrojového kódu.
-type: docs
 weight: 11
 url: /cs/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bezproblémový export e-mailu do EML pomocí C#
+
 
 ## Úvod do snadného exportu e-mailů do EML
 
@@ -175,3 +181,9 @@ Ano, můžete exportovat e-mailové přílohy spolu s e-mailovou zprávou pomoc�
 ### Je zdrojový kód uvedený v tutoriálu úplný?
 
 Ano, tutoriál poskytuje kompletní zdrojový kód, který ukazuje, jak exportovat e-maily do formátu EML pomocí Aspose.Email for .NET. Tento kód můžete použít jako výchozí bod
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Récupération des notifications d'état de livraison avec C#
 linktitle: Récupération des notifications d'état de livraison avec C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment récupérer les notifications d'état de livraison par courrier électronique à l'aide de C# et Aspose.Email pour .NET.
-type: docs
 weight: 18
 url: /fr/net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Récupération des notifications d'état de livraison avec C#
+
 
 Dans le monde trépidant de la communication par courrier électronique, il est crucial de garantir que vos e-mails envoyés soient livrés avec succès. Une façon de suivre l’état de livraison de vos e-mails consiste à utiliser Aspose.Email pour C#. Dans ce guide complet, nous vous guiderons tout au long du processus de récupération des notifications d'état de livraison (DSN) avec C# à l'aide de la puissante bibliothèque Aspose.Email.
 
@@ -71,3 +77,9 @@ A4 : Aspose.Email est principalement conçu pour C#, mais il propose également 
 ### 10. Conclusion
 
 Dans ce guide, nous avons expliqué comment récupérer les notifications d'état de livraison avec C# à l'aide d'Aspose.Email pour C#. Garder une trace de vos livraisons d'e-mails est essentiel pour une communication efficace, et Aspose.Email simplifie ce processus.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

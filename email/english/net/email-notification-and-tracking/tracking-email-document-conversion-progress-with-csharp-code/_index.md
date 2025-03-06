@@ -3,10 +3,16 @@ title: Tracking Email Document Conversion Progress with C# Code
 linktitle: Tracking Email Document Conversion Progress with C# Code
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!
-type: docs
 weight: 12
 url: /net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tracking Email Document Conversion Progress with C# Code
+
 
 In today's digital age, email communication plays a crucial role in both personal and professional spheres. As a programmer, you might have encountered the need to handle and manipulate email messages programmatically. One common task is tracking the progress of email document conversion, and in this article, we will guide you through the process step by step using C# and Aspose.Email for .NET.
 
@@ -101,3 +107,10 @@ Yes, there are other libraries, but Aspose.Email for .NET is known for its compr
 You can explore the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) for tutorials, examples, and detailed documentation.
 
 Now, you're well-equipped to handle email document conversion progress in your C# applications with confidence. Happy coding!
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Verwalten großer Anhänge in Aspose.Email
 linktitle: Verwalten großer Anhänge in Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Verwalten Sie große E-Mail-Anhänge effizient mit Aspose.Email für Java. Schritt-für-Schritt-Anleitung und Quellcode für eine optimierte Handhabung von Anhängen in Java-Anwendungen.
-type: docs
 weight: 11
 url: /de/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verwalten großer Anhänge in Aspose.Email
+
 
 ## Einführung in die Verwaltung großer Anhänge in Aspose.Email für Java
 
@@ -145,3 +151,9 @@ Die Größenbeschränkungen für E-Mail-Anhänge können je nach E-Mail-Dienstan
 ### Kann ich Anhänge komprimieren, um ihre Größe zu reduzieren?
 
 Ja, Sie können Anhänge vor dem Senden komprimieren, um ihre Größe zu reduzieren. Aspose.Email bietet Funktionen zum programmgesteuerten Komprimieren und Dekomprimieren von Anhängen. Sie können dies implementieren, um die Größe Ihrer E-Mail-Anhänge zu optimieren.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

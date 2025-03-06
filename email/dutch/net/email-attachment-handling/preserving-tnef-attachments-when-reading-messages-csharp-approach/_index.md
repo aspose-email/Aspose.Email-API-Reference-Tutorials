@@ -3,10 +3,16 @@ title: TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
 linktitle: TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u TNEF-bijlagen kunt bewaren met Aspose.Email voor .NET in deze stapsgewijze handleiding met broncode.
-type: docs
 weight: 15
 url: /nl/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
+
 
 ## Inleiding tot TNEF-bijlagen
 
@@ -132,3 +138,9 @@ Absoluut! Aspose.Email is ontworpen voor een breed scala aan toepassingen, van k
 ### Wordt Aspose.Email regelmatig bijgewerkt?
 
 Ja, Aspose onderhoudt regelmatig updates om compatibiliteit met de nieuwste technologieën en platforms te garanderen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

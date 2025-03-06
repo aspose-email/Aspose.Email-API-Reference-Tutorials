@@ -3,10 +3,16 @@ title: C# コードを使用した DKIM での電子メールの署名
 linktitle: C# コードを使用した DKIM での電子メールの署名
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して DKIM で電子メールを保護する方法を学びます。ソースコード付きのステップバイステップガイド。電子メールの信頼性と信頼性を強化します。
-type: docs
 weight: 11
 url: /ja/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# コードを使用した DKIM での電子メールの署名
+
 
 今日のデジタル世界では、電子メール通信の信頼性と整合性を確保することが最も重要です。これを実現する 1 つの方法は、DomainKeys Identified Mail (DKIM) 署名を使用することです。このステップバイステップ ガイドでは、C# と強力な Aspose.Email for .NET ライブラリを使用して DKIM で電子メールに署名する方法を説明します。
 
@@ -123,3 +129,9 @@ DKIM 署名に含める一般的なヘッダーは、「From」、「Subject」�
 ### Q5: 電子メール認証の方法は DKIM だけですか?
 
 いいえ、電子メールのセキュリティを強化するために DKIM と組み合わせて使用される SPF や DMARC などの他の方法もあります。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

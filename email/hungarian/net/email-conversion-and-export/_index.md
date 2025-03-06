@@ -3,10 +3,16 @@ title: Az e-mailek konvertálása és exportálása
 linktitle: E-mail konvertálás és exportálás
 second_title: Aspose.Email .NET Email Processing API
 description: Sajátítsa el az e-mail adatkezelést az Aspose.Email for .NET oktatóanyagaival. E-mailek konvertálása, exportálása, integritás megőrzése, mellékletek kezelése. Emeld fel példákkal.
-type: docs
 weight: 11
 url: /hu/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Az e-mailek konvertálása és exportálása
+
 
 ## Bevezetés
 
@@ -39,3 +45,9 @@ Ismerje meg, hogyan valósíthatja meg a piszkozatos e-mailek kezelését C# nye
 Ismerje meg, hogyan hozhat létre HTML e-mail fájlokat C# és Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a zökkenőmentes e-mailek testreszabásához.
 ### [OFT-fájlok generálása üzenetekből - C# oktatóanyag](./generating-oft-files-from-messages-csharp-tutorial/)
 Ismerje meg, hogyan hozhat létre OFT-fájlokat üzenetekből az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a hatékony e-mail sablonok generálásához.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

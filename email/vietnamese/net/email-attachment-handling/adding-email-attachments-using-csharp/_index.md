@@ -3,10 +3,16 @@ title: Thêm tệp đính kèm email bằng C#
 linktitle: Thêm tệp đính kèm email bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách thêm tệp đính kèm email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã để tích hợp liền mạch.
-type: docs
 weight: 11
 url: /vi/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Thêm tệp đính kèm email bằng C#
+
 
 ## Giới thiệu về Tệp đính kèm email và Aspose.Email cho .NET
 
@@ -92,3 +98,9 @@ Tuyệt đối! Bạn có thể đặt các thuộc tính khác nhau của lớp
 ### Có phiên bản dùng thử miễn phí của Aspose.Email cho .NET không?
 
 Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.Email dành cho .NET để khám phá các tính năng của nó trước khi mua hàng.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

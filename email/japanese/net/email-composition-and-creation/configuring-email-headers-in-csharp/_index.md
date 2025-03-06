@@ -3,10 +3,16 @@ title: C# での電子メールヘッダーの構成
 linktitle: C# での電子メールヘッダーの構成
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して C# でカスタム電子メール ヘッダーを構成する方法を学びます。ソースコードを含むステップバイステップのガイド。電子メールの制御とセキュリティを強化します。
-type: docs
 weight: 17
 url: /ja/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# での電子メールヘッダーの構成
+
 
 電子メールによるコミュニケーションは、現代のビジネスや個人的なやり取りに不可欠な部分となっています。電子メールの内容は重要ですが、電子メールに付随するヘッダーも同様に重要です。電子メールのヘッダーは、メッセージ、送信者、受信者などに関する貴重な情報を提供します。 Aspose.Email for .NET を使用して C# で電子メール ヘッダーを構成すると、電子メール メッセージ内に埋め込まれた情報をカスタマイズおよび制御する強力な方法が提供されます。この記事では、Aspose.Email for .NET ライブラリを使用して電子メール ヘッダーを構成する方法を段階的に説明します。
 
@@ -133,3 +139,9 @@ Aspose.Email は、電子メール ヘッダーが正しくフォーマットさ
 ### 電子メールのヘッダーでは大文字と小文字が区別されますか?
 
 はい、電子メールのヘッダーでは大文字と小文字が区別されません。ただし、互換性を高めるために、大文字と小文字の区別を一貫して維持することをお勧めします。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

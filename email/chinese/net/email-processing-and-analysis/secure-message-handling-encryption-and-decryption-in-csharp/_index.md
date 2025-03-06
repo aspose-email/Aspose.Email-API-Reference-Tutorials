@@ -3,10 +3,16 @@ title: 安全消息处理 - C# 中的加密和解密
 linktitle: 安全消息处理 - C# 中的加密和解密
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中通过加密和解密来实现安全消息处理。有效保护敏感数据。
-type: docs
 weight: 16
 url: /zh/net/email-processing-and-analysis/secure-message-handling-encryption-and-decryption-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 安全消息处理 - C# 中的加密和解密
+
 
 在当今的数字时代，确保通信过程中敏感信息的安全至关重要。网络威胁不断发展，因此实施强大的加密和解密机制来保护我们的数据至关重要。本文将指导您在 Aspose.Email for .NET 的帮助下完成在 C# 中使用加密和解密来安全处理消息的过程。
 
@@ -98,3 +104,9 @@ Aspose.Email for .NET 主要是为 C# 编程而设计的。然而，Aspose 为�
 ### 在哪里可以找到有关使用 Aspose.Email for .NET 的更多信息？
 
 您可以在以下位置找到有关使用 Aspose.Email for .NET 的综合文档和示例：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

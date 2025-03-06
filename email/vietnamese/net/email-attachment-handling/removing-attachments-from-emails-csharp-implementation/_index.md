@@ -3,10 +3,16 @@ title: Xóa tệp đính kèm khỏi email - Triển khai C#
 linktitle: Xóa tệp đính kèm khỏi email - Triển khai C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách xóa tệp đính kèm email bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn C#.
-type: docs
 weight: 18
 url: /vi/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xóa tệp đính kèm khỏi email - Triển khai C#
+
 
 ## Giới thiệu về Xóa tệp đính kèm khỏi email
 
@@ -97,3 +103,9 @@ Tuyệt đối. Aspose.Email được thiết kế để có khả năng mở r�
 ### Tôi có thể kiểm tra thư viện Aspose.Email trước khi tích hợp nó vào dự án của mình không?
 
 Có, Aspose cung cấp các phiên bản dùng thử của thư viện mà bạn có thể tải xuống và kiểm tra trước khi đưa ra quyết định mua. Truy cập trang web của họ để biết thêm thông tin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

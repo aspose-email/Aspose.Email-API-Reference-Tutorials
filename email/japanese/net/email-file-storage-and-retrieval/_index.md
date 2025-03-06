@@ -3,10 +3,16 @@ title: 効率的な電子メール ファイルの保存と取得
 linktitle: 電子メール ファイルの保存と取得
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して、電子メール ファイルの保存と取得を効率化します。電子メール メッセージと添付ファイルをプログラムで管理し、アクセスする方法を学びます。
-type: docs
 weight: 18
 url: /ja/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 効率的な電子メール ファイルの保存と取得
+
 
 ## 導入
 
@@ -27,3 +33,9 @@ C# と Aspose.Email for .NET を使用して Zimbra TGZ ストレージ メッ�
 C# と Aspose.Email for .NET を使用して NSF ストレージ メッセージを読み取る方法を学びます。コード例を含むステップバイステップのガイド。
 ### [C# を使用して Zimbra TGZ ストレージからメッセージを保存する](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Aspose.Email for .NET を使用して Zimbra TGZ 電子メールを抽出する方法を学びます。効率的な電子メール管理のためのソースコードを含むステップバイステップのガイド。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

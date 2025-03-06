@@ -3,10 +3,16 @@ title: Đính kèm tệp vào email bằng Aspose.Email
 linktitle: Đính kèm tệp vào email bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách đính kèm tệp vào email bằng Aspose.Email cho Java. Cải thiện email của bạn một cách dễ dàng bằng cách sử dụng hướng dẫn từng bước này.
-type: docs
 weight: 12
 url: /vi/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đính kèm tệp vào email bằng Aspose.Email
+
 ## Giới thiệu
 
 Trong thế giới giao tiếp qua email, khả năng gửi tệp đính kèm là rất quan trọng. Cho dù bạn đang gửi tài liệu, hình ảnh quan trọng hay bất kỳ loại tệp nào khác, quy trình này phải đơn giản và đáng tin cậy. Aspose.Email for Java đơn giản hóa quy trình này bằng cách cung cấp các công cụ mạnh mẽ để đính kèm tệp vào thư email.
@@ -134,3 +140,9 @@ Nếu bạn có thêm bất kỳ câu hỏi nào hoặc cần hỗ trợ, vui l�
 
 ### Có giới hạn kích thước cho tệp đính kèm email không?
    Máy chủ email và máy khách có thể có giới hạn về kích thước tệp đính kèm. Đảm bảo rằng tệp đính kèm của bạn nằm trong giới hạn kích thước có thể chấp nhận được để tránh các vấn đề khi gửi hoặc nhận email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

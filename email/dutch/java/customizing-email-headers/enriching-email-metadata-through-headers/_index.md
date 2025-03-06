@@ -3,10 +3,16 @@ title: Verrijk e-mailmetagegevens via headers met Aspose.Email
 linktitle: Verrijk e-mailmetagegevens via headers met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Verbeter e-mailmetagegevens met Aspose.Email voor Java. Leer hoe u e-mailheaders kunt verrijken voor verbeterde tracking en aanpassing met Aspose.Email.
-type: docs
 weight: 18
 url: /nl/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verrijk e-mailmetagegevens via headers met Aspose.Email
+
 
 ## Inleiding tot het verrijken van e-mailmetagegevens via headers met Aspose.Email
 
@@ -107,3 +113,9 @@ Ja, Aspose.Email ondersteunt meerdere programmeertalen, waaronder Java, .NET en 
 ### Waar kan ik meer bronnen vinden over Aspose.Email voor Java?
 
  U kunt de documentatie verkennen op[hier](https://reference.aspose.com/email/java/) voor uitgebreide bronnen en voorbeelden.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

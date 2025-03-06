@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 自訂電子郵件標頭
 linktitle: 使用 Aspose.Email for Java 自訂電子郵件標頭
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 輕鬆自訂電子郵件標頭。深入學習教學課程並利用電子郵件標頭自訂的強大功能。
-type: docs
 weight: 16
 url: /zh-hant/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 自訂電子郵件標頭
+
 
 電子郵件標頭在電子郵件通訊中發揮著至關重要的作用，提供有關郵件來源和傳遞的基本資訊。透過 Aspose.Email for Java，自訂電子郵件標頭成為一項簡單的任務，允許使用者根據特定需求和要求自訂電子郵件元資料。
 
@@ -37,3 +43,9 @@ Aspose.Email for Java 提供了一整套用於電子郵件標頭客製化的功�
 使用 Aspose.Email for Java 釋放電子郵件中 X 標頭的威力。了解管理自訂元資料並增強電子郵件處理。
 ### [使用 Aspose.Email 透過標頭豐富電子郵件元數據](./enriching-email-metadata-through-headers/)
 使用 Aspose.Email for Java 增強電子郵件元資料。了解如何使用 Aspose.Email 豐富電子郵件標頭以改善追蹤和自訂。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

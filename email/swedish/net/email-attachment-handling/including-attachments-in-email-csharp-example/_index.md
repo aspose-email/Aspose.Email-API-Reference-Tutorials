@@ -3,10 +3,16 @@ title: Inkludera bilagor i e-post - C# Exempel
 linktitle: Inkludera bilagor i e-post - C# Exempel
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du inkluderar bilagor i e-post med Aspose.Email för .NET. Steg-för-steg guide med C#-kodexempel.
-type: docs
 weight: 10
 url: /sv/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Inkludera bilagor i e-post - C# Exempel
+
 
 ## Introduktion till att inkludera bilagor i e-post
 
@@ -111,3 +117,9 @@ Ja, du kan konfigurera Aspose.Email för att skicka e-post via säkra anslutning
 ### Var kan jag hitta mer information om Aspose.Emails möjligheter?
 
  För mer detaljerad information om Aspose.Emails funktioner, klasser och metoder, se[Aspose.Email API Referens](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

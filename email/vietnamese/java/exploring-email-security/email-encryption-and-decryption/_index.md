@@ -3,10 +3,16 @@ title: Mã hóa và giải mã email với Aspose.Email
 linktitle: Mã hóa và giải mã email với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách bảo mật email của bạn bằng Mã hóa và giải mã email bằng Aspose.Email cho Java. Bao gồm hướng dẫn từng bước, mã nguồn và Câu hỏi thường gặp.
-type: docs
 weight: 11
 url: /vi/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mã hóa và giải mã email với Aspose.Email
+
 
 ## Giới thiệu
 
@@ -95,3 +101,9 @@ Có, nó được thiết kế để có khả năng mở rộng, giúp nó phù
  Truy cập tài liệu API[đây](https://reference.aspose.com/email/java/) để biết thông tin chi tiết và ví dụ.
 
 Bây giờ bạn đã hiểu toàn diện về Mã hóa và Giải mã Email bằng Aspose.Email cho Java. Hãy bắt đầu bảo mật email của bạn ngay hôm nay!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

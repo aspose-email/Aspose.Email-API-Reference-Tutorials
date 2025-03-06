@@ -3,10 +3,16 @@ title: Menghasilkan TNEF EML dari MSG di C#
 linktitle: Menghasilkan TNEF EML dari MSG di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menghasilkan TNEF EML dari MSG menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode C#. Konversi format email yang efisien.
-type: docs
 weight: 12
 url: /id/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menghasilkan TNEF EML dari MSG di C#
+
 
 Dalam panduan ini, Anda akan mempelajari cara membuat file EML TNEF (Transport Neutral Encapsulation Format) dari file MSG (Outlook Message) menggunakan perpustakaan Aspose.Email untuk .NET. TNEF adalah format lampiran email milik yang digunakan oleh Microsoft Outlook. Aspose.Email untuk .NET adalah perpustakaan canggih yang memungkinkan Anda bekerja dengan berbagai format email di aplikasi C# Anda.
 
@@ -100,3 +106,10 @@ Anda dapat memperoleh perpustakaan Aspose.Email untuk .NET dari Rilis Aspose:[Un
 Anda dapat menggunakan teknik penanganan pengecualian C# standar. Aspose.Email memunculkan pengecualian yang khusus untuk perpustakaannya, jadi pastikan untuk menangkap dan menanganinya dengan tepat dalam kode Anda.
 
  Jangan ragu untuk menjelajahinya[Aspose.Email untuk dokumentasi .NET](https://reference.aspose.com/email/net) untuk fitur dan contoh lebih lanjut.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

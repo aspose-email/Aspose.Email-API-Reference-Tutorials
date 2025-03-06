@@ -3,10 +3,16 @@ title: C#을 사용하여 NSF 저장소에서 메시지 읽기
 linktitle: C#을 사용하여 NSF 저장소에서 메시지 읽기
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 NSF 저장소 메시지를 읽는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 11
 url: /ko/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 NSF 저장소에서 메시지 읽기
+
 
 ## C#을 사용하여 NSF 저장소에서 메시지 읽기 소개
 
@@ -73,3 +79,9 @@ Aspose.Email의 API 메소드를 사용하여 이메일 첨부 파일에 액세�
 
 ### 5. .NET용 Aspose.Email을 사용하여 Zimbra TGZ 스토리지로 작업할 때 제한 사항이 있습니까?
 .NET용 Aspose.Email은 Zimbra TGZ 스토리지 작업을 위한 강력한 기능을 제공하지만 문서에 언급된 특정 제한 사항에 유의하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

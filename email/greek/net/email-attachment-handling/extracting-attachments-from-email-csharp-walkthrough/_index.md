@@ -3,10 +3,16 @@ title: Εξαγωγή συνημμένων από email - C# Walkthrough
 linktitle: Εξαγωγή συνημμένων από email - C# Walkthrough
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε να εξάγετε συνημμένα email βήμα προς βήμα χρησιμοποιώντας το Aspose.Email για .NET. Χειριστείτε διάφορες μορφές και αποθηκεύστε εύκολα.
-type: docs
 weight: 14
 url: /el/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή συνημμένων από email - C# Walkthrough
+
 
 ## Εισαγωγή στην εξαγωγή συνημμένων από email - C# Walkthrough χρησιμοποιώντας Aspose.Email για .NET
 
@@ -114,3 +120,9 @@ foreach (Attachment attachment in message.Attachments)
 ### Πού μπορώ να βρω περισσότερες πληροφορίες για το Aspose.Email;
 
  Για λεπτομερή τεκμηρίωση και παραδείγματα, ανατρέξτε στο[Aspose.Email τεκμηρίωση](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

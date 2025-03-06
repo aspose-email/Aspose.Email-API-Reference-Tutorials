@@ -3,10 +3,16 @@ title: Aspose.Email에 적합한 SMTP 서버 선택
 linktitle: Aspose.Email에 적합한 SMTP 서버 선택
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java로 이메일 기능을 최적화하세요. 올바른 SMTP 서버를 선택하고 손쉽게 이메일을 보내는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email에 적합한 SMTP 서버 선택
+
 
 ## 소개
 
@@ -100,3 +106,9 @@ Aspose.Email을 사용하여 테스트 이메일을 보내 SMTP 서버 설정을
 ### 내 SMTP 서버에 OAuth2 인증이 필요한 경우 어떻게 해야 합니까?
 
 필요한 OAuth2 토큰 및 설정을 제공하여 Java용 Aspose.Email로 OAuth2 인증을 구성할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email を使用した SMTP ヘッダーとフッターのカスタ
 linktitle: Aspose.Email を使用した SMTP ヘッダーとフッターのカスタマイズ
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して SMTP ヘッダーとフッターをカスタマイズする方法を学びます。パーソナライズされたブランディングとメッセージを使用して電子メール コミュニケーションを強化します。
-type: docs
 weight: 16
 url: /ja/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した SMTP ヘッダーとフッターのカスタマイズ
+
 
 ## 導入
 
@@ -107,3 +113,9 @@ Aspose.Email for Java を使用して SMTP ヘッダーとフッターをカス�
 ### カスタマイズされた電子メールを送信するにはどの SMTP 設定を使用する必要がありますか?
 
 電子メール サービス プロバイダーまたは組織の IT 部門が提供する SMTP 設定を使用する必要があります。これらの設定には通常、SMTP サーバーのアドレス、ポート番号、認証資格情報が含まれます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

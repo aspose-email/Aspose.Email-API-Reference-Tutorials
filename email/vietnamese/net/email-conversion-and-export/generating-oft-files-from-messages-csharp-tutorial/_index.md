@@ -3,10 +3,16 @@ title: Tạo tập tin OFT từ tin nhắn - Hướng dẫn C#
 linktitle: Tạo tập tin OFT từ tin nhắn - Hướng dẫn C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách tạo tệp OFT từ thư bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn để tạo mẫu email hiệu quả.
-type: docs
 weight: 19
 url: /vi/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo tập tin OFT từ tin nhắn - Hướng dẫn C#
+
 
 ## Giới thiệu về tạo tập tin OFT
 
@@ -114,3 +120,9 @@ Tuyệt đối! Bạn có thể xác định phần giữ chỗ của riêng mì
 ### Làm cách nào để đảm bảo email tôi tạo không nằm trong thư mục thư rác của người nhận?
 
 Để tránh email bị gắn cờ là thư rác, hãy đảm bảo thực hiện theo các phương pháp hay nhất về khả năng gửi email. Sử dụng các phương pháp gửi hợp pháp, tránh liên kết quá nhiều và bao gồm thông tin người gửi phù hợp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

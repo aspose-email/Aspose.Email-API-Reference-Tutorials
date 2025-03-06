@@ -3,10 +3,16 @@ title: Hiển thị các sự kiện lịch bằng mã C#
 linktitle: Hiển thị các sự kiện lịch bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách hiển thị các sự kiện lịch bằng C# và Aspose.Email cho .NET. Tạo lịch trình tương tác một cách dễ dàng.
-type: docs
 weight: 15
 url: /vi/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hiển thị các sự kiện lịch bằng mã C#
+
 
 
 Trong thời đại kỹ thuật số ngày nay, việc quản lý các sự kiện lịch một cách hiệu quả là rất quan trọng đối với các doanh nghiệp cũng như cá nhân. Aspose.Email for .NET cung cấp một bộ công cụ mạnh mẽ để làm việc với các sự kiện lịch và tận dụng tối đa nhu cầu lập lịch của bạn. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn quy trình hiển thị các sự kiện lịch bằng mã C# với Aspose.Email cho .NET.
@@ -90,3 +96,9 @@ Giờ đây, bạn có thể khai thác sức mạnh của Aspose.Email dành ch
    Có, Aspose.Email cung cấp nhiều tính năng để quản lý email, bao gồm gửi, nhận và xử lý email.
 
  Hãy thoải mái khám phá[Tài liệu API Aspose.Email](https://reference.aspose.com/email/net/) để biết thêm chi tiết và các tình huống sử dụng nâng cao. Chúc mừng mã hóa!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

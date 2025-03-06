@@ -3,10 +3,16 @@ title: إرسال رسائل البريد الإلكتروني مع Aspose.Email
 linktitle: إرسال رسائل البريد الإلكتروني مع Aspose.Email لجافا
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: أتقن فن إرسال رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java من خلال هذه البرامج التعليمية الشاملة. تعلم كيفية صياغة رسائل البريد الإلكتروني وإرسالها بسهولة.
-type: docs
 weight: 10
 url: /ar/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إرسال رسائل البريد الإلكتروني مع Aspose.Email لجافا
+
 
 
 ## الشروع في العمل مع Aspose.Email لجافا
@@ -38,3 +44,9 @@ url: /ar/java/sending-emails/
 تعرف على كيفية تحسين رسائل البريد الإلكتروني الخاصة بك عن طريق إضافة رؤوس مخصصة باستخدام Aspose.Email لـ Java. تحسين البيانات الوصفية للبريد الإلكتروني وتنظيمه.
 ### [إرسال إشعارات البريد الإلكتروني باستخدام Aspose.Email](./sending-email-notifications/)
 تعلم كيفية إرسال إشعارات البريد الإلكتروني بشكل فعال باستخدام Aspose.Email لـ Java. دليل شامل يحتوي على أمثلة التعليمات البرمجية والأسئلة الشائعة للتواصل السلس.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

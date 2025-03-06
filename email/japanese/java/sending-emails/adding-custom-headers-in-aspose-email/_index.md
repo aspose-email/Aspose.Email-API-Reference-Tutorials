@@ -3,10 +3,16 @@ title: Aspose.Email へのカスタム ヘッダーの追加
 linktitle: Aspose.Email へのカスタム ヘッダーの追加
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用してカスタム ヘッダーを追加し、電子メール メッセージを強化する方法を学びます。電子メールのメタデータと構成を改善します。
-type: docs
 weight: 15
 url: /ja/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email へのカスタム ヘッダーの追加
+
 
 ## 導入
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### 受信したメールからカスタムヘッダーを抽出するにはどうすればよいですか?
    使用できます`getHeaders`受信したメールのメソッド`MailMessage`オブジェクトを使用してカスタム ヘッダーを取得して処理します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

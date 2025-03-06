@@ -3,10 +3,16 @@ title: Aspose.Email for Java ile E-posta Gönderme
 linktitle: Aspose.Email for Java ile E-posta Gönderme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Bu kapsamlı eğitimlerle Aspose.Email for Java'yı kullanarak e-posta gönderme sanatında ustalaşın. Zahmetsizce e-posta oluşturmayı ve göndermeyi öğrenin.
-type: docs
 weight: 10
 url: /tr/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java ile E-posta Gönderme
+
 
 
 ## Aspose.Email for Java'ya Başlarken
@@ -38,3 +44,9 @@ Aspose.Email for Java'yı kullanarak toplu e-postaları verimli bir şekilde nas
 Aspose.Email for Java'yı kullanarak özel başlıklar ekleyerek e-posta mesajlarınızı nasıl geliştireceğinizi öğrenin. E-posta meta verilerini ve organizasyonunu geliştirin.
 ### [Aspose.Email ile E-posta Bildirimleri Gönderme](./sending-email-notifications/)
 Aspose.Email for Java ile e-posta bildirimlerini etkili bir şekilde göndermeyi öğrenin. Sorunsuz iletişim için kod örnekleri ve SSS içeren kapsamlı bir kılavuz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

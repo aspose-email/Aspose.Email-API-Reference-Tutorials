@@ -3,10 +3,16 @@ title: عرض أحداث التقويم باستخدام كود C#
 linktitle: عرض أحداث التقويم باستخدام كود C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية عرض أحداث التقويم باستخدام C# وAspose.Email لـ .NET. إنشاء جداول تفاعلية بكل سهولة.
-type: docs
 weight: 15
 url: /ar/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# عرض أحداث التقويم باستخدام كود C#
+
 
 
 في العصر الرقمي الحالي، تعد إدارة أحداث التقويم بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حدٍ سواء. يوفر Aspose.Email for .NET مجموعة قوية من الأدوات للتعامل مع أحداث التقويم وتحقيق أقصى استفادة من احتياجات الجدولة الخاصة بك. في هذا الدليل المفصّل خطوة بخطوة، سنرشدك خلال عملية عرض أحداث التقويم باستخدام كود C# مع Aspose.Email for .NET.
@@ -90,3 +96,9 @@ msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
    نعم، يقدم Aspose.Email مجموعة واسعة من الميزات لإدارة البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني واستلامها ومعالجتها.
 
  لا تتردد في استكشاف[وثائق Aspose.Email API](https://reference.aspose.com/email/net/) لمزيد من التفاصيل وسيناريوهات الاستخدام المتقدمة. ترميز سعيد!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

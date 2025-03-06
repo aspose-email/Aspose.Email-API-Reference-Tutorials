@@ -3,10 +3,16 @@ title: 保护 TNEF 附件 - C# 方法
 linktitle: 保护 TNEF 附件 - C# 方法
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 保护 TNEF 附件。包含源代码的分步指南。
-type: docs
 weight: 19
 url: /zh/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 保护 TNEF 附件 - C# 方法
+
 
 ## 保护 TNEF 附件简介
 
@@ -95,3 +101,9 @@ Aspose 经常发布对其库的更新和改进。建议检查 Aspose. 发布：[
 ### 我可以在商业项目中使用Aspose.Email吗？
 
 是的，您可以在商业项目中使用Aspose.Email。但是，请务必查看 Aspose 的许可条款以确保合规性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

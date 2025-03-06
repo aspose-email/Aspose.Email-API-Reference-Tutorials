@@ -3,10 +3,16 @@ title: Korzystanie z Aspose.Email do załączników dokumentów
 linktitle: Korzystanie z Aspose.Email do załączników dokumentów
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak zarządzać załącznikami dokumentów w wiadomościach e-mail w języku Java za pomocą Aspose.Email dla Java. Z łatwością twórz, wysyłaj i wyodrębniaj załączniki do dokumentów.
-type: docs
 weight: 16
 url: /pl/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Korzystanie z Aspose.Email do załączników dokumentów
+
 
 ## Wprowadzenie do używania Aspose.Email do załączników dokumentów w Javie
 
@@ -104,3 +110,9 @@ Tak, Aspose.Email dla Java obsługuje szeroką gamę typów załączników, w ty
 ### Jak postępować z załącznikami o dużych dokumentach?
 
 Jeśli musisz obsługiwać duże załączniki dokumentów, rozważ zastosowanie technik przesyłania strumieniowego, aby uniknąć ładowania całego załącznika do pamięci. Aspose.Email zapewnia opcje przesyłania strumieniowego załączników, umożliwiając ich efektywne przetwarzanie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email ile Toplu Email Gönderimi
 linktitle: Aspose.Email ile Toplu Email Gönderimi
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java'yı kullanarak toplu e-postaları verimli bir şekilde nasıl göndereceğinizi öğrenin. E-postayla pazarlama ve iletişim için kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 14
 url: /tr/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile Toplu Email Gönderimi
+
 
 ## giriiş
 
@@ -132,3 +138,9 @@ Bu kılavuzda Aspose.Email for Java kullanarak toplu e-postaların nasıl gönde
 
 ### Geri dönen veya başarısız olan e-postaları toplu gönderimde nasıl ele alabilirim?
    Aspose.Email, teslimat durumu bildirimlerinin (DSN'ler) yönetilmesi ve e-posta teslimat durumunun izlenmesi için özellikler sağlar. Gerektiğinde geri dönen veya başarısız e-postaları işlemek için mantık uygulayabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

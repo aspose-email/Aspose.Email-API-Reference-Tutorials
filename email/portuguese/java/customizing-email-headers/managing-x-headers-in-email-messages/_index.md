@@ -3,10 +3,16 @@ title: Gerenciando cabeçalhos X em mensagens de e-mail com Aspose.Email
 linktitle: Gerenciando cabeçalhos X em mensagens de e-mail com Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Desbloqueie o poder dos cabeçalhos X em e-mails com Aspose.Email para Java. Aprenda a gerenciar metadados personalizados e aprimorar o processamento de e-mail.
-type: docs
 weight: 16
 url: /pt/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gerenciando cabeçalhos X em mensagens de e-mail com Aspose.Email
+
 
 ## Introdução
 
@@ -124,3 +130,9 @@ Você pode ler X-Headers de e-mails recebidos usando Aspose.Email para Java. Car
 ### O Aspose.Email é adequado para gerenciamento de e-mail de nível empresarial?
 
 Sim, Aspose.Email é uma biblioteca robusta que pode ser usada para gerenciamento de email em nível empresarial. Oferece uma ampla gama de recursos para criar, enviar, receber e processar e-mails, tornando-o adequado para diversos cenários de negócios.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

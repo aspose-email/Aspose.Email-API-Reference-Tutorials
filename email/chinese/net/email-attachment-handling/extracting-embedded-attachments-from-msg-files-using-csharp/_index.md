@@ -3,10 +3,16 @@ title: 使用 C# 从 MSG 文件中提取嵌入式附件
 linktitle: 使用 C# 从 MSG 文件中提取嵌入式附件
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 从 MSG 文件中提取嵌入附件。包含源代码示例的综合指南。
-type: docs
 weight: 10
 url: /zh/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 从 MSG 文件中提取嵌入式附件
+
 
 ## 嵌入式附件简介
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### 在哪里可以找到更多示例和文档？
 
 您可以在以下位置找到有关使用 Aspose.Email for .NET 的详细示例和文档[文档](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

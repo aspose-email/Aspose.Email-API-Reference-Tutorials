@@ -3,10 +3,16 @@ title: Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Ema
 linktitle: Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Odblokuj moc nagłówków X w wiadomościach e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak zarządzać niestandardowymi metadanymi i usprawniać przetwarzanie wiadomości e-mail.
-type: docs
 weight: 16
 url: /pl/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -124,3 +130,9 @@ Możesz czytać nagłówki X z otrzymanych wiadomości e-mail za pomocą Aspose.
 ### Czy Aspose.Email nadaje się do zarządzania pocztą e-mail na poziomie przedsiębiorstwa?
 
 Tak, Aspose.Email to solidna biblioteka, której można używać do zarządzania pocztą e-mail na poziomie przedsiębiorstwa. Oferuje szeroką gamę funkcji tworzenia, wysyłania, odbierania i przetwarzania wiadomości e-mail, dzięki czemu nadaje się do różnych scenariuszy biznesowych.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

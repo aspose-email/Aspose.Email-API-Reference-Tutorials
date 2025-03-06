@@ -3,10 +3,16 @@ title: 将 HTML 正文添加到电子邮件 - C# 示例
 linktitle: 将 HTML 正文添加到电子邮件 - C# 示例
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何在 Aspose.Email for .NET 中使用 HTML 增强电子邮件内容。包含 C# 示例的分步指南。提升您的电子邮件沟通！
-type: docs
 weight: 18
 url: /zh/net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将 HTML 正文添加到电子邮件 - C# 示例
+
 
 电子邮件通信已成为现代商业和个人互动不可或缺的一部分。虽然纯文本电子邮件可以达到其目的，但将 HTML 内容合并到电子邮件中可以极大地增强其视觉吸引力和功能。在本文中，我们将为您提供全面的分步指南，并附有 C# 源代码示例，介绍如何使用 Aspose.Email for .NET 将 HTML 正文添加到电子邮件中。
 
@@ -80,3 +86,9 @@ client.Send(message);
 
 ### 在哪里可以找到 Aspose.Email for .NET 的综合文档？
    您可以访问 Aspose 文档：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

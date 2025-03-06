@@ -3,10 +3,16 @@ title: EML 檔案處理 - C# 中的載入與儲存操作
 linktitle: EML 檔案處理 - C# 中的載入與儲存操作
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中處理 EML 檔案。包含用於載入、修改和保存電子郵件的程式碼範例的逐步指南。
-type: docs
 weight: 13
 url: /zh-hant/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# EML 檔案處理 - C# 中的載入與儲存操作
+
 
 ## EML 文件簡介
 
@@ -150,3 +156,9 @@ Aspose.Email for .NET 簡化了 C# 應用程式中 EML 檔案的處理。憑藉�
 ### Aspose.Email適合商業項目嗎？
 
 是的，Aspose.Email 是一個多功能庫，適用於個人和商業項目，為電子郵件操作提供強大的功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: एंबेडेड ऑब्जेक्ट निकालना - C#
 linktitle: एंबेडेड ऑब्जेक्ट निकालना - C# ट्यूटोरियल
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके ईमेल संदेशों से एम्बेडेड ऑब्जेक्ट निकालना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 15
 url: /hi/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# एंबेडेड ऑब्जेक्ट निकालना - C# ट्यूटोरियल
+
 
 ## एंबेडेड ऑब्जेक्ट निकालने का परिचय - सी# ट्यूटोरियल
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### मुझे Aspose.Email के बारे में अधिक दस्तावेज़ कहां मिल सकते हैं?
 
  आप Aspose.Email पर विस्तृत दस्तावेज़ और कोड उदाहरण पा सकते हैं[.NET API संदर्भ के लिए Aspose.Email](https://reference.aspose.com/email/net/) पृष्ठ।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

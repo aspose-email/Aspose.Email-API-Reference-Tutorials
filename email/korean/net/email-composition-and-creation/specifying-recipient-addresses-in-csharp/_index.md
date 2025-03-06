@@ -3,10 +3,16 @@ title: C#에서 수신자 주소 지정
 linktitle: C#에서 수신자 주소 지정
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 수신자 주소를 지정하는 방법을 알아보세요. 이메일을 효율적으로 생성, 구성 및 전송하세요.
-type: docs
 weight: 19
 url: /ko/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#에서 수신자 주소 지정
+
 
 
 이 가이드는 .NET용 Aspose.Email 라이브러리를 사용하여 C#에서 수신자 주소를 지정하는 과정을 안내합니다. Aspose.Email은 이메일 메시지 및 다양한 이메일 관련 작업을 수행할 수 있는 강력한 .NET API입니다. 이 튜토리얼에서는 라이브러리를 사용하여 이메일 메시지에 수신자 주소를 추가하는 방법을 다룹니다.
@@ -119,3 +125,9 @@ catch (Exception ex)
  .NET용 Aspose.Email의 자세한 내용과 고급 기능은 다음을 참조하세요.[Aspose API 참조](https://reference.aspose.com/email/net/).
 
 이것으로 .NET용 Aspose.Email을 사용하여 C#에서 수신자 주소를 지정하는 방법에 대한 가이드를 마칩니다. 이메일 메시지를 작성하고, 수신자 주소를 추가하고, 라이브러리 기능을 사용하여 이메일을 보내는 방법을 배웠습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

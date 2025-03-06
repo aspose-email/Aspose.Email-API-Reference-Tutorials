@@ -3,10 +3,16 @@ title: Удаление вложений из электронных писем 
 linktitle: Удаление вложений из электронных писем — реализация на C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как удалить вложения электронной почты с помощью Aspose.Email для .NET. Пошаговое руководство с исходным кодом C#.
-type: docs
 weight: 18
 url: /ru/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Удаление вложений из электронных писем — реализация на C#
+
 
 ## Введение в удаление вложений из электронных писем
 
@@ -97,3 +103,9 @@ message.Save("path/to/save/modified/email.eml");
 ### Могу ли я протестировать библиотеку Aspose.Email перед ее интеграцией в свой проект?
 
 Да, Aspose предоставляет пробные версии своих библиотек, которые вы можете скачать и протестировать, прежде чем принять решение о покупке. Посетите их сайт для получения дополнительной информации.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

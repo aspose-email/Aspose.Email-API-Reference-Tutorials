@@ -3,10 +3,16 @@ title: Java용 Aspose.Email을 사용한 고급 이메일 첨부 파일
 linktitle: Java용 Aspose.Email을 사용한 고급 이메일 첨부 파일
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 고급 이메일 첨부 기술을 마스터하세요. 첨부 파일을 효율적으로 처리하기 위한 튜토리얼을 살펴보세요.
-type: docs
 weight: 13
 url: /ko/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java용 Aspose.Email을 사용한 고급 이메일 첨부 파일
+
 
 이메일 첨부 파일은 현대 커뮤니케이션에서 중추적인 역할을 하며 사용자가 문서, 이미지 및 파일을 원활하게 공유할 수 있도록 해줍니다. Aspose.Email for Java는 개발자가 이메일 첨부 파일을 제어하고 고급 기술을 효율적으로 구현할 수 있도록 지원합니다.
 
@@ -35,3 +41,9 @@ Aspose.Email for Java를 사용하여 손쉽게 이메일 첨부 파일을 추�
 Java용 Aspose.Email에 이미지를 첨부 파일로 포함하는 방법을 알아보세요. 시각적으로 매력적인 콘텐츠로 이메일 커뮤니케이션의 수준을 높이세요.
 ### [문서 첨부를 위해 Aspose.Email 사용하기](./using-aspose-email-for-document-attachments/)
 Aspose.Email for Java를 사용하여 Java 이메일의 문서 첨부 파일을 관리하는 방법을 알아보세요. 문서 첨부 파일을 쉽게 만들고, 보내고, 추출하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

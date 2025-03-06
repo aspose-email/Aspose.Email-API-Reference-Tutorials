@@ -3,10 +3,16 @@ title: Alternatív szöveg beállítása képekhez - C# útmutató
 linktitle: Alternatív szöveg beállítása képekhez - C# útmutató
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan állíthat be alternatív szöveget az e-mailekben lévő képekhez az Aspose.Email for .NET segítségével. Biztosítsa a hozzáférhetőséget tiszta alternatív szöveggel. Dokumentáció és kód mellékelve.
-type: docs
 weight: 15
 url: /hu/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Alternatív szöveg beállítása képekhez - C# útmutató
+
 
 Ez az útmutató végigvezeti Önt az Aspose.Email for .NET segítségével az e-mailek képeinek alternatív szövegének beállításán. Az alternatív szöveg, más néven "alt szöveg" a kép szöveges leírására szolgál arra az esetre, ha a kép nem jeleníthető meg. Az Aspose.Email for .NET egy hatékony könyvtár, amely lehetővé teszi a különféle formátumú e-mailek és mellékletek kezelését. Ebben az útmutatóban az e-mail üzenetekben lévő képek alternatív szövegének beállítására összpontosítunk C# használatával.
 
@@ -81,3 +87,9 @@ Ha képeket szeretne csatolt forrásként hozzáadni egy e-mailben, használja a
 ### Hol találok további dokumentációt az Aspose.Email for .NET-hez?
 
  Részletesebb dokumentációt, oktatóanyagokat és példákat találhat az Aspose.Email for .NET használatáról a következő helyen:[API-referencia](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

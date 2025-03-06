@@ -3,10 +3,16 @@ title: Đọc tin nhắn từ bộ lưu trữ NSF bằng C#
 linktitle: Đọc tin nhắn từ bộ lưu trữ NSF bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách đọc thư lưu trữ NSF bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 11
 url: /vi/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đọc tin nhắn từ bộ lưu trữ NSF bằng C#
+
 
 ## Giới thiệu về Đọc tin nhắn từ bộ lưu trữ NSF bằng C#
 
@@ -73,3 +79,9 @@ Có, Aspose.Email for .NET tương thích với cả Windows và .NET Core.
 
 ### 5. Có hạn chế nào khi làm việc với bộ lưu trữ Zimbra TGZ bằng Aspose.Email for .NET không?
 Aspose.Email for .NET cung cấp các khả năng mạnh mẽ để làm việc với bộ lưu trữ Zimbra TGZ, nhưng hãy lưu ý đến những hạn chế cụ thể được đề cập trong tài liệu.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

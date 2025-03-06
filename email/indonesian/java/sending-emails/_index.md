@@ -3,10 +3,16 @@ title: Mengirim Email dengan Aspose.Email untuk Java
 linktitle: Mengirim Email dengan Aspose.Email untuk Java
 second_title: API Manajemen Email Java Aspose.Email
 description: Kuasai seni mengirim email menggunakan Aspose.Email untuk Java dengan tutorial komprehensif ini. Belajar membuat dan mengirim email dengan mudah.
-type: docs
 weight: 10
 url: /id/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengirim Email dengan Aspose.Email untuk Java
+
 
 
 ## Memulai dengan Aspose.Email untuk Java
@@ -38,3 +44,9 @@ Pelajari cara mengirim email massal secara efisien menggunakan Aspose.Email untu
 Pelajari cara menyempurnakan pesan email Anda dengan menambahkan header khusus menggunakan Aspose.Email untuk Java. Tingkatkan metadata dan organisasi email.
 ### [Mengirim Notifikasi Email dengan Aspose.Email](./sending-email-notifications/)
 Pelajari cara mengirim pemberitahuan email secara efektif dengan Aspose.Email untuk Java. Panduan komprehensif dengan contoh kode dan FAQ untuk komunikasi yang lancar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: सी# के साथ लोड के दौरान एंबेड
 linktitle: सी# के साथ लोड के दौरान एंबेडेड एमएसजी प्रारूप को संरक्षित करना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके एम्बेडेड MSG प्रारूप को संरक्षित करना सीखें। स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 12
 url: /hi/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# के साथ लोड के दौरान एंबेडेड एमएसजी प्रारूप को संरक्षित करना
+
 
 आज की डिजिटल दुनिया में, ईमेल संचार व्यक्तिगत और व्यावसायिक दोनों क्षेत्रों में महत्वपूर्ण भूमिका निभाता है। कई बार, हमें ईमेल फ़ाइलों के साथ प्रोग्रामेटिक रूप से काम करने की आवश्यकता होती है, और ईएमएल (ईमेल) फ़ाइल की मूल सीमाओं को संरक्षित करना महत्वपूर्ण हो सकता है। इस चरण-दर-चरण मार्गदर्शिका में, हम यह पता लगाएंगे कि .NET के लिए Aspose.Email के साथ C# कोड का उपयोग करके इसे कैसे प्राप्त किया जाए।
 
@@ -74,3 +80,9 @@ mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions)
  .NET के लिए Aspose.Email के नवीनतम अपडेट और रिलीज़ तक पहुँचने के लिए, रिलीज़ पृष्ठ पर जाएँ:[.NET रिलीज़ के लिए Aspose.Email](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

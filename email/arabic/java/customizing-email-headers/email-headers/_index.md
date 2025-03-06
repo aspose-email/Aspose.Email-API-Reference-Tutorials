@@ -3,10 +3,16 @@ title: رؤوس البريد الإلكتروني في Aspose.Email
 linktitle: رؤوس البريد الإلكتروني في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: أطلق العنان لقوة رؤوس البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعرف على كيفية تعيين رؤوس البريد الإلكتروني واستردادها بسهولة.
-type: docs
 weight: 10
 url: /ar/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# رؤوس البريد الإلكتروني في Aspose.Email
+
 
 ## مقدمة لرؤوس البريد الإلكتروني
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### كيف يمكنني استخراج رؤوس البريد الإلكتروني من مجموعة كبيرة من رسائل البريد الإلكتروني؟
 
 يمكنك استخدام إمكانات المعالجة المجمعة في Aspose.Email لاستخراج الرؤوس من رسائل البريد الإلكتروني المتعددة بكفاءة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تخصيص رؤوس البريد الإلكتروني باستخدام As
 linktitle: تخصيص رؤوس البريد الإلكتروني باستخدام Aspose.Email لـ Java
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية تخصيص رؤوس البريد الإلكتروني بسهولة باستخدام Aspose.Email لـ Java. انغمس في البرامج التعليمية واستفد من قوة تخصيص رأس البريد الإلكتروني.
-type: docs
 weight: 16
 url: /ar/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تخصيص رؤوس البريد الإلكتروني باستخدام Aspose.Email لـ Java
+
 
 تلعب رؤوس البريد الإلكتروني دورًا حاسمًا في التواصل عبر البريد الإلكتروني، حيث توفر معلومات أساسية حول أصل الرسالة وتسليمها. باستخدام Aspose.Email لـ Java، يصبح تخصيص رؤوس البريد الإلكتروني مهمة واضحة، مما يسمح للمستخدمين بتخصيص بيانات تعريف البريد الإلكتروني الخاصة بهم وفقًا لاحتياجات ومتطلبات محددة.
 
@@ -37,3 +43,9 @@ url: /ar/java/customizing-email-headers/
 أطلق العنان لقوة X-Headers في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعلم كيفية إدارة البيانات التعريفية المخصصة وتحسين معالجة البريد الإلكتروني.
 ### [إثراء البيانات التعريفية للبريد الإلكتروني من خلال الرؤوس باستخدام Aspose.Email](./enriching-email-metadata-through-headers/)
 تحسين بيانات تعريف البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعرف على كيفية إثراء رؤوس البريد الإلكتروني لتحسين التتبع والتخصيص باستخدام Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

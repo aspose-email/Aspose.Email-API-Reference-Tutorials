@@ -3,10 +3,16 @@ title: Technika C# – Převod HTML těla na prostý text
 linktitle: Technika C# – Převod HTML těla na prostý text
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se snadno převádět obsah HTML e-mailů na prostý text pomocí Aspose.Email for .NET. Podrobný návod a kód. Prozkoumat nyní!
-type: docs
 weight: 19
 url: /cs/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Technika C# – Převod HTML těla na prostý text
+
 
 dnešní digitální době hraje e-mailová komunikace zásadní roli v našem osobním i pracovním životě. E-maily často obsahují obsah ve formátu HTML pro lepší prezentaci. Existují však situace, kdy možná budete muset extrahovat prostý text z těla HTML e-mailu. Tento článek vás provede procesem efektivního dosažení tohoto úkolu pomocí jazyků C#, Aspose.Email a Aspose.Words for .NET.
 
@@ -75,3 +81,9 @@ A4: Ano, Aspose.Email poskytuje rozsáhlé možnosti pro automatizaci e-mailu, c
  Odpověď 5: Dokumentaci a zdroje API můžete prozkoumat na webu Aspose na adrese[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) a[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 Nyní, když jste zvládli umění převodu obsahu HTML e-mailů na prostý text, můžete vylepšit své možnosti zpracování e-mailů v C#. Šťastné kódování!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

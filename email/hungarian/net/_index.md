@@ -1,12 +1,17 @@
 ---
 title: E-mail összeállítás, átalakítás és feldolgozás az Aspose.Email oktatóanyagok segítségével
 linktitle: Aspose.Email a .NET oktatóanyagokhoz
-type: docs
 weight: 10
 url: /hu/net/
 description: Optimalizálja az e-mail képességeket az Aspose.Email for .NET oktatóanyaggal. Ismerje meg az összetételt, az átalakítást és a feldolgozást a fejlett e-mail-kezeléshez.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail összeállítás, átalakítás és feldolgozás az Aspose.Email oktatóanyagok segítségével
+
 
 ## Bevezetés
 
@@ -45,3 +50,9 @@ Az Aspose.Email for .NET oktatóanyag használatával robusztus e-mail-ellenőrz
 Egyszerűsítse az e-mail fájlok tárolását és visszakeresését az Aspose.Email for .NET oktatóprogramjaival. Ismerje meg az e-mail üzenetek és mellékletek programozott kezelését és elérését.
 ### [E-mail biztonság és aláírások](./email-security-and-signatures/)
 Az Aspose.Email for .NET oktatóprogramjaival robusztus e-mail biztonsági intézkedéseket és személyre szabott aláírásokat hajthat végre. Biztosítsa a biztonságos kommunikációt és a professzionális márkaépítést.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

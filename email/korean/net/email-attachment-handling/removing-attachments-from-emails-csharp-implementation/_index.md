@@ -3,10 +3,16 @@ title: 이메일에서 첨부 파일 제거 - C# 구현
 linktitle: 이메일에서 첨부 파일 제거 - C# 구현
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 이메일 첨부 파일을 제거하는 방법을 알아보세요. C# 소스 코드를 사용한 단계별 가이드입니다.
-type: docs
 weight: 18
 url: /ko/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일에서 첨부 파일 제거 - C# 구현
+
 
 ## 이메일에서 첨부 파일 제거 소개
 
@@ -97,3 +103,9 @@ Aspose.Email NuGet 패키지를 설치하려면 다음 단계를 따르세요.
 ### 내 프로젝트에 통합하기 전에 Aspose.Email 라이브러리를 테스트할 수 있나요?
 
 예, Aspose는 구매 결정을 내리기 전에 다운로드하고 테스트할 수 있는 라이브러리의 평가판을 제공합니다. 자세한 내용은 해당 웹사이트를 방문하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

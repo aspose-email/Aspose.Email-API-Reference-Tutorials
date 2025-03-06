@@ -3,10 +3,16 @@ title: 从电子邮件中提取附件 - C# 演练
 linktitle: 从电子邮件中提取附件 - C# 演练
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解使用 Aspose.Email for .NET 逐步提取电子邮件附件。处理各种格式并轻松保存。
-type: docs
 weight: 14
 url: /zh/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 从电子邮件中提取附件 - C# 演练
+
 
 ## 从电子邮件中提取附件的简介 - 使用 Aspose.Email for .NET 的 C# 演练
 
@@ -114,3 +120,9 @@ Aspose.Email支持.NET Framework和.NET Core。
 ### 在哪里可以找到有关 Aspose.Email 的更多信息？
 
 有关详细文档和示例，请参阅[Aspose.Email 文档](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

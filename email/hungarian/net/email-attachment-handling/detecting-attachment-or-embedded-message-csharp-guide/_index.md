@@ -3,10 +3,16 @@ title: Melléklet vagy beágyazott üzenet észlelése - C# útmutató
 linktitle: Melléklet vagy beágyazott üzenet észlelése - C# útmutató
 second_title: Aspose.Email .NET Email Processing API
 description: Fő e-mail melléklet és beágyazott üzenetérzékelés C# nyelven az Aspose.Email for .NET használatával. Növelje e-mailek kezelését átfogó útmutatónkkal.
-type: docs
 weight: 13
 url: /hu/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Melléklet vagy beágyazott üzenet észlelése - C# útmutató
+
 
 ## Bevezetés a mellékletek vagy beágyazott üzenetek észlelésébe - C# útmutató
 
@@ -106,3 +112,9 @@ Megfelelő hibakezelési mechanizmusokat kell bevezetnie try-catch blokkokkal é
 ### Testreszabhatom a mellékletek és a beágyazott üzenetek feldolgozását?
 
 A mellékletek és a beágyazott üzenetek feldolgozását teljesen az adott alkalmazás igényeihez igazíthatja. Az Aspose.Email rugalmas API-kat biztosít erre a célra.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

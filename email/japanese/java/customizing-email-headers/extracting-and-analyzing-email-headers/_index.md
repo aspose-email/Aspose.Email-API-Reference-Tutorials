@@ -3,10 +3,16 @@ title: Aspose.Email を使用した電子メール ヘッダーの抽出と分�
 linktitle: Aspose.Email を使用した電子メール ヘッダーの抽出と分析
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール ヘッダー分析の力を解き放ちます。電子メールの追跡とセキュリティを強化するために電子メール ヘッダーを抽出および分析する方法を学びます。
-type: docs
 weight: 12
 url: /ja/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した電子メール ヘッダーの抽出と分析
+
 
 ## Aspose.Email を使用した電子メール ヘッダーの抽出と分析の概要
 
@@ -107,3 +113,9 @@ SPF および DKIM レコードを確認するには、電子メール ヘッダ
 ### Aspose.Email を使用して電子メール ヘッダー分析を自動化できますか?
 
 はい、Aspose.Email を Java アプリケーションに統合することで、電子メール ヘッダー分析を自動化できます。このライブラリは、電子メール ヘッダーを操作するための便利なメソッドを提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

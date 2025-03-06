@@ -3,10 +3,16 @@ title: Ασφάλεια email και υπογραφές
 linktitle: Ασφάλεια email και υπογραφές
 second_title: Aspose.Email .NET Email Processing API
 description: Εφαρμόστε ισχυρά μέτρα ασφαλείας email και εξατομικευμένες υπογραφές με το Aspose.Email for .NET tutorials. Εξασφαλίστε ασφαλή επικοινωνία και επαγγελματικό branding.
-type: docs
 weight: 19
 url: /el/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ασφάλεια email και υπογραφές
+
 
 ## Εισαγωγή
 
@@ -25,3 +31,9 @@ url: /el/net/email-security-and-signatures/
 
 ### [Υπογραφή email με DKIM με χρήση κώδικα C#](./signing-emails-with-dkim-using-csharp-code/)
 Μάθετε να ασφαλίζετε τα email με το DKIM χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα. Βελτιώστε την εμπιστοσύνη και την αυθεντικότητα των email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

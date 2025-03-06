@@ -3,10 +3,16 @@ title: ドキュメントの添付ファイルとして Aspose.Email を使用�
 linktitle: ドキュメントの添付ファイルとして Aspose.Email を使用する
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して Java 電子メールのドキュメント添付ファイルを管理する方法を学びます。添付文書を簡単に作成、送信、抽出できます。
-type: docs
 weight: 16
 url: /ja/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ドキュメントの添付ファイルとして Aspose.Email を使用する
+
 
 ## Java でのドキュメント添付ファイルとしての Aspose.Email の使用の概要
 
@@ -104,3 +110,9 @@ public class ExtractAttachments {
 ### 大きな添付文書はどのように処理すればよいですか?
 
 大きなドキュメントの添付ファイルを処理する必要がある場合は、添付ファイル全体がメモリに読み込まれるのを避けるために、ストリーミング技術の使用を検討してください。 Aspose.Email には添付ファイルをストリーミングするためのオプションが用意されており、添付ファイルを効率的に処理できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

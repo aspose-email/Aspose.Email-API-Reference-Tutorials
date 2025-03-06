@@ -3,10 +3,16 @@ title: 使用 C# 載入期間保留嵌入的 MSG 格式
 linktitle: 使用 C# 載入期間保留嵌入的 MSG 格式
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 保留嵌入的 MSG 格式。帶有原始程式碼的分步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 載入期間保留嵌入的 MSG 格式
+
 
 在當今的數位世界中，電子郵件通訊在個人和專業領域都發揮著關鍵作用。很多時候，我們需要以程式設計方式處理電子郵件文件，並且保留 EML（電子郵件）文件的原始邊界至關重要。在本逐步指南中，我們將探索如何使用 C# 程式碼和 Aspose.Email for .NET 來實現這一目標。
 
@@ -74,3 +80,9 @@ Aspose.Email for .NET 主要是為 C# 設計的，但它可以整合到使用其
 若要存取 Aspose.Email for .NET 的最新更新和版本，請造訪發布頁面：[Aspose.Email for .NET 版本](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

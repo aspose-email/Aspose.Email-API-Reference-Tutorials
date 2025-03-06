@@ -3,10 +3,16 @@ title: Java용 Aspose.Email을 사용하여 이메일 보안 살펴보기
 linktitle: Java용 Aspose.Email을 사용하여 이메일 보안 살펴보기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 이메일 보안을 강화하는 방법을 알아보세요. 단계별 튜토리얼과 모범 사례를 살펴보세요.
-type: docs
 weight: 18
 url: /ko/java/exploring-email-security/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java용 Aspose.Email을 사용하여 이메일 보안 살펴보기
+
 
 이메일 보안은 오늘날 디지털 시대의 가장 중요한 관심사입니다. 사이버 위협이 점점 더 정교해짐에 따라 민감한 정보를 보호하고 이메일 통신의 기밀성을 보장하는 것이 중요해졌습니다. 이 기사에서는 이메일 관리 및 보안을 위한 포괄적인 솔루션을 제공하는 강력한 API인 Aspose.Email for Java를 사용하여 이메일 보안 튜토리얼의 세계를 탐구합니다.
 
@@ -27,3 +33,9 @@ Aspose.Email for Java는 이메일 보안 문제를 효과적으로 해결하기
 ## Java 튜토리얼용 Aspose.Email을 사용하여 이메일 보안 탐색
 ### [Aspose.Email을 사용한 이메일 암호화 및 복호화](./email-encryption-and-decryption/)
 Aspose.Email for Java를 사용하여 이메일 암호화 및 암호 해독으로 이메일을 보호하는 방법을 알아보세요. 단계별 가이드, 소스 코드, FAQ가 포함되어 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

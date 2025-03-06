@@ -3,10 +3,16 @@ title: Použití Aspose.Email pro přílohy dokumentů
 linktitle: Použití Aspose.Email pro přílohy dokumentů
 second_title: Aspose.Email Java Email Management API
 description: Zjistěte, jak spravovat přílohy dokumentů v e-mailech Java pomocí Aspose.Email for Java. Snadno vytvářejte, posílejte a extrahujte přílohy dokumentů.
-type: docs
 weight: 16
 url: /cs/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Použití Aspose.Email pro přílohy dokumentů
+
 
 ## Úvod do používání Aspose.Email pro přílohy dokumentů v Javě
 
@@ -104,3 +110,9 @@ Ano, Aspose.Email for Java podporuje širokou škálu typů příloh, včetně d
 ### Jak zacházet s velkými přílohami dokumentů?
 
 Pokud potřebujete zpracovávat velké přílohy dokumentů, zvažte použití technik streamování, abyste se vyhnuli načítání celé přílohy do paměti. Aspose.Email poskytuje možnosti pro streamování příloh a umožňuje vám je efektivně zpracovávat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

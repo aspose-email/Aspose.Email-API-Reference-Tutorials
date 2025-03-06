@@ -3,10 +3,16 @@ title: Email Headers in Aspose.Email
 linktitle: Email Headers in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Unlock the Power of Email Headers with Aspose.Email for Java. Learn how to set and retrieve email headers effortlessly.
-type: docs
 weight: 10
 url: /java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Email Headers in Aspose.Email
+
 
 ## Introduction to Email Headers
 
@@ -92,3 +98,10 @@ The "Received" header is a series of entries that track the email's path from se
 ### How can I extract email headers from a large batch of emails?
 
 You can use Aspose.Email's batch processing capabilities to extract headers from multiple emails efficiently.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

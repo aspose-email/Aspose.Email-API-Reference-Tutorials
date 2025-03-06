@@ -3,10 +3,16 @@ title: Exportation d'e-mails sans effort vers EML à l'aide de C#
 linktitle: Exportation d'e-mails sans effort vers EML à l'aide de C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Exportez sans effort des e-mails au format EML à l'aide de C# et Aspose.Email pour .NET. Apprenez étape par étape avec des exemples de code source.
-type: docs
 weight: 11
 url: /fr/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Exportation d'e-mails sans effort vers EML à l'aide de C#
+
 
 ## Introduction à l'exportation d'e-mails sans effort vers EML
 
@@ -175,3 +181,9 @@ Oui, vous pouvez exporter les pièces jointes d'un e-mail avec le message élect
 ### Le code source fourni dans le tutoriel est-il complet ?
 
 Oui, le didacticiel fournit un code source complet qui montre comment exporter des e-mails au format EML à l'aide d'Aspose.Email pour .NET. Vous pouvez utiliser ce code comme point de départ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

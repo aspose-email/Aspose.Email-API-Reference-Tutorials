@@ -3,10 +3,16 @@ title: Schutz von TNEF-Anhängen – C#-Methode
 linktitle: Schutz von TNEF-Anhängen – C#-Methode
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie TNEF-Anhänge mit C# und Aspose.Email für .NET schützen. Schritt-für-Schritt-Anleitung mit Quellcode im Lieferumfang enthalten.
-type: docs
 weight: 19
 url: /de/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Schutz von TNEF-Anhängen – C#-Methode
+
 
 ## Einführung in den Schutz von TNEF-Anhängen
 
@@ -95,3 +101,9 @@ Aspose veröffentlicht regelmäßig Updates und Verbesserungen für seine Biblio
 ### Kann ich Aspose.Email in kommerziellen Projekten verwenden?
 
 Ja, Sie können Aspose.Email in kommerziellen Projekten verwenden. Lesen Sie sich jedoch unbedingt die Lizenzbedingungen von Aspose durch, um die Einhaltung sicherzustellen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

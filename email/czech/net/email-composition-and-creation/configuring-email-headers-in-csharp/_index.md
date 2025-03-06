@@ -3,10 +3,16 @@ title: Konfigurace e-mailových hlaviček v C#
 linktitle: Konfigurace e-mailových hlaviček v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se konfigurovat vlastní e-mailové hlavičky v C# pomocí Aspose.Email for .NET. Podrobný průvodce včetně zdrojového kódu. Vylepšete kontrolu a zabezpečení e-mailů.
-type: docs
 weight: 17
 url: /cs/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konfigurace e-mailových hlaviček v C#
+
 
 E-mailová komunikace se stala nedílnou součástí moderních obchodních i osobních interakcí. Zatímco obsah e-mailu je zásadní, záhlaví doprovázející e-mail jsou stejně důležité. Záhlaví e-mailu poskytuje cenné informace o zprávě, odesílateli, příjemci a další. Konfigurace hlaviček e-mailů v C# pomocí Aspose.Email for .NET nabízí účinný způsob, jak přizpůsobit a ovládat informace vložené do e-mailových zpráv. V tomto článku prozkoumáme, jak konfigurovat hlavičky e-mailů krok za krokem pomocí knihovny Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email nabízí ověřovací funkce, které zajistí, že hlavičky e-mail
 ### Rozlišují se v hlavičkách e-mailů malá a velká písmena?
 
 Ano, v hlavičkách e-mailů se nerozlišují malá a velká písmena. Je však vhodné udržovat konzistentní používání velkých písmen pro lepší kompatibilitu.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

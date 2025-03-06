@@ -3,10 +3,16 @@ title: Approccio C# estrazione dei valori di intestazione decodificati
 linktitle: Approccio C# estrazione dei valori di intestazione decodificati
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Impara a estrarre i valori di intestazione e-mail decodificati in C# utilizzando Aspose.Email per .NET. Guida completa con esempi di codice.
-type: docs
 weight: 17
 url: /it/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Approccio C# estrazione dei valori di intestazione decodificati
+
 
 In questo tutorial, ti guideremo attraverso il processo di utilizzo di Aspose.Email per .NET per estrarre i valori di intestazione decodificati dai messaggi di posta elettronica. Aspose.Email per .NET è una solida libreria che consente agli sviluppatori di lavorare con vari aspetti dei messaggi di posta elettronica, inclusa la lettura e la manipolazione delle intestazioni delle email.
 
@@ -77,3 +83,9 @@ Nello snippet di codice sopra, eseguiamo i seguenti passaggi:
 ## Conclusione
 
 In questo tutorial hai imparato come utilizzare Aspose.Email per .NET per estrarre valori di intestazione decodificati dai messaggi di posta elettronica. Aspose.Email per .NET fornisce un set completo di strumenti che consente agli sviluppatori di lavorare in modo efficiente con i messaggi di posta elettronica, inclusa la gestione delle intestazioni.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

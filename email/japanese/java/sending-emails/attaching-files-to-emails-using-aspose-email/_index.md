@@ -3,10 +3,16 @@ title: Aspose.Email を使用して電子メールにファイルを添付する
 linktitle: Aspose.Email を使用して電子メールにファイルを添付する
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール メッセージにファイルを添付する方法を学習します。このステップバイステップのガイドを使用して、メールを簡単に強化できます。
-type: docs
 weight: 12
 url: /ja/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用して電子メールにファイルを添付する
+
 ## 導入
 
 電子メール通信の世界では、添付ファイルを送信できる機能が非常に重要です。重要なドキュメント、画像、その他の種類のファイルを送信する場合、プロセスは簡単で信頼性が高い必要があります。 Aspose.Email for Java は、電子メール メッセージにファイルを添付するための強力なツールを提供することで、このプロセスを簡素化します。
@@ -134,3 +140,9 @@ public class EmailWithAttachments {
 
 ### 電子メールの添付ファイルにサイズ制限はありますか?
    電子メール サーバーとクライアントには添付ファイルのサイズ制限がある場合があります。電子メールの送受信に関する問題を避けるために、添付ファイルが許容可能なサイズ制限内であることを確認してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

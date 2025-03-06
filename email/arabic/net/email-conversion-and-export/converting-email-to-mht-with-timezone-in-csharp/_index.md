@@ -3,10 +3,16 @@ title: تحويل البريد الإلكتروني إلى MHT باستخدام 
 linktitle: تحويل البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتحويل رسائل البريد الإلكتروني إلى تنسيق MHT بمناطق زمنية دقيقة باستخدام Aspose.Email لـ .NET. تم توفير دليل خطوة بخطوة ومثال التعليمات البرمجية.
-type: docs
 weight: 12
 url: /ar/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية في C#
+
 
 ## مقدمة لتحويل البريد الإلكتروني من البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية
 
@@ -105,3 +111,9 @@ mhtStream.CopyTo(fileStream);
 ### كيف يمكنني تنزيل أحدث إصدار من Aspose.Email لـ .NET؟
 
  يمكنك تنزيل أحدث إصدار من صفحة الإصدارات:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

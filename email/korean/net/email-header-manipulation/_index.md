@@ -3,10 +3,16 @@ title: 이메일 헤더 조작
 linktitle: 이메일 헤더 조작
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 헤더를 효율적으로 조작합니다. 향상된 커뮤니케이션을 위해 헤더를 추출, 수정 및 개인화하는 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일 헤더 조작
+
 
 ## 소개
 
@@ -33,3 +39,9 @@ url: /ko/net/email-header-manipulation/
 .NET용 Aspose.Email을 사용하여 C#에서 이메일 헤더를 추출하는 방법을 알아보세요. 효율적인 이메일 분석을 위한 소스 코드가 포함된 단계별 가이드입니다. 
 ### [C#에서 사용자 정의 헤더 지정](./specifying-custom-headers-in-csharp/)
 이메일 통신을 향상시키기 위해 .NET용 Aspose.Email을 사용하여 C#에서 사용자 정의 헤더를 지정하는 방법을 알아보세요. 이 단계별 가이드는 참여도 향상을 위해 개인화된 이메일 헤더를 만드는 방법에 대한 통찰력을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

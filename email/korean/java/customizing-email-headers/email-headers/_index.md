@@ -3,10 +3,16 @@ title: Aspose.Email의 이메일 헤더
 linktitle: Aspose.Email의 이메일 헤더
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 이메일 헤더의 기능을 활용하세요. 손쉽게 이메일 헤더를 설정하고 검색하는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email의 이메일 헤더
+
 
 ## 이메일 헤더 소개
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### 대량의 이메일에서 이메일 헤더를 어떻게 추출할 수 있나요?
 
 Aspose.Email의 일괄 처리 기능을 사용하여 여러 이메일에서 헤더를 효율적으로 추출할 수 있습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

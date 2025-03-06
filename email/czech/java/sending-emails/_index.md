@@ -3,10 +3,16 @@ title: Odesílání e-mailů pomocí Aspose.Email pro Java
 linktitle: Odesílání e-mailů pomocí Aspose.Email pro Java
 second_title: Aspose.Email Java Email Management API
 description: Osvojte si umění odesílání e-mailů pomocí Aspose.Email pro Java pomocí těchto komplexních výukových programů. Naučte se vytvářet a odesílat e-maily bez námahy.
-type: docs
 weight: 10
 url: /cs/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odesílání e-mailů pomocí Aspose.Email pro Java
+
 
 
 ## Začínáme s Aspose.Email pro Javu
@@ -38,3 +44,9 @@ Naučte se efektivně odesílat hromadné e-maily pomocí Aspose.Email for Java.
 Naučte se, jak vylepšit své e-mailové zprávy přidáním vlastních záhlaví pomocí Aspose.Email for Java. Vylepšete metadata a organizaci e-mailů.
 ### [Odesílání e-mailových upozornění pomocí Aspose.Email](./sending-email-notifications/)
 Naučte se efektivně odesílat e-mailová upozornění s Aspose.Email pro Java. Komplexní průvodce s příklady kódu a často kladenými dotazy pro bezproblémovou komunikaci.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

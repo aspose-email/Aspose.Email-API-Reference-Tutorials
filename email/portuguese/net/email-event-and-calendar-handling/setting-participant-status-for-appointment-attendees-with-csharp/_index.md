@@ -3,10 +3,16 @@ title: Configurando o status do participante para participantes do compromisso c
 linktitle: Configurando o status do participante para participantes do compromisso com C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como gerenciar o status dos participantes do compromisso usando C# e Aspose.Email for .NET. Guia passo a passo com código-fonte.
-type: docs
 weight: 16
 url: /pt/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configurando o status do participante para participantes do compromisso com C#
+
 
 ## Introdução ao Aspose.Email para .NET
 
@@ -109,3 +115,9 @@ Sim, você pode integrar facilmente a funcionalidade discutida neste guia em seu
 ### Onde posso encontrar mais documentação e recursos?
 
  Para obter documentação e recursos mais detalhados, consulte a documentação do Aspose.Email for .NET:[Documentação Aspose.Email para .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

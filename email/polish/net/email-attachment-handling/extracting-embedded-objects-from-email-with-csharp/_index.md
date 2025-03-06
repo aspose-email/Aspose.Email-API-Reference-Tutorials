@@ -3,10 +3,16 @@ title: Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języ
 linktitle: Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języka C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak wyodrębnić osadzone obiekty z wiadomości e-mail przy użyciu języka C# i Aspose.Email dla .NET. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 16
 url: /pl/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języka C#
+
 
 ## Wprowadzenie do obiektów osadzonych w wiadomościach e-mail
 
@@ -113,3 +119,9 @@ Tak, możesz manipulować wyodrębnionymi osadzonymi obiektami przed ich zapisan
 ### Gdzie mogę znaleźć więcej przykładów użycia Aspose.Email dla .NET?
 
  Więcej przykładów kodu i samouczków można znaleźć w pliku[Dokumentacja API](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

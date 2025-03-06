@@ -3,10 +3,16 @@ title: TNEF mellékletek megőrzése üzenetek olvasásakor – C# megközelít�
 linktitle: TNEF mellékletek megőrzése üzenetek olvasásakor – C# megközelítés
 second_title: Aspose.Email .NET Email Processing API
 description: Ebből a forráskódot tartalmazó, lépésenkénti útmutatóból megtudhatja, hogyan őrizheti meg a TNEF-mellékleteket az Aspose.Email for .NET használatával.
-type: docs
 weight: 15
 url: /hu/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF mellékletek megőrzése üzenetek olvasásakor – C# megközelítés
+
 
 ## A TNEF mellékletek bemutatása
 
@@ -132,3 +138,9 @@ Teljesen! Az Aspose.Email az alkalmazások széles skáláját szolgálja, a kis
 ### Az Aspose.Email rendszeresen frissül?
 
 Igen, az Aspose rendszeres frissítéseket tart fenn, hogy biztosítsa a kompatibilitást a legújabb technológiákkal és platformokkal.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

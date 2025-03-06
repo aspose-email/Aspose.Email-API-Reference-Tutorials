@@ -3,10 +3,16 @@ title: E-mailek fogadása az Aspose.Email for Java segítségével
 linktitle: E-mailek fogadása az Aspose.Email for Java segítségével
 second_title: Aspose.Email Java Email Management API
 description: Tanulja meg, hogyan fogadhat könnyedén e-maileket az Aspose.Email for Java Tutorials segítségével. Kezdje el profiként kezelni postaládáját!
-type: docs
 weight: 11
 url: /hu/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailek fogadása az Aspose.Email for Java segítségével
+
 
 ## Könnyedén fogadjon e-maileket
 
@@ -29,3 +35,9 @@ Kezdje el elsajátítani az e-mailek Java nyelven történő fogadásának műv�
 Ismerje meg, hogyan dolgozhat az Aspose.Email for Java IMAP protokolljával az e-mail kommunikáció hatékony kezeléséhez.
 ### [E-mail mellékletek kezelése az Aspose.Emailben](./handling-email-attachments/)
 Ismerje meg az e-mail mellékletek kezelését az Aspose.Email for Java alkalmazásban. Lépésről lépésre, forráskóddal és GYIK-vel az e-mail mellékletek hatékony kezeléséhez.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

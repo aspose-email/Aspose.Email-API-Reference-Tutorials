@@ -3,10 +3,16 @@ title: Advanced Email Attachments with Aspose.Email for Java
 linktitle: Advanced Email Attachments with Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 description: Master advanced email attachment techniques with Aspose.Email for Java. Explore tutorials for handling attachments efficiently.
-type: docs
 weight: 13
 url: /java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Advanced Email Attachments with Aspose.Email for Java
+
 
 Email attachments play a pivotal role in modern communication, allowing users to share documents, images, and files seamlessly. Aspose.Email for Java empowers developers to take control of email attachments and implement advanced techniques efficiently.
 
@@ -35,3 +41,10 @@ Learn how to extract email attachments effortlessly using Aspose.Email for Java.
 Learn how to embed images as attachments in Aspose.Email for Java. Elevate your email communication with visually engaging content.
 ### [Using Aspose.Email for Document Attachments](./using-aspose-email-for-document-attachments/)
 Learn how to manage document attachments in Java emails using Aspose.Email for Java. Create, send, and extract document attachments with ease.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

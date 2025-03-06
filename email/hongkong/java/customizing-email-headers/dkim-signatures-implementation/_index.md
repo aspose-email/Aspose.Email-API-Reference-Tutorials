@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 實作 DKIM 簽名
 linktitle: 使用 Aspose.Email 實作 DKIM 簽名
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 使用 Aspose.Email for Java 透過 DKIM 簽章確保電子郵件安全。 DKIM 實施的逐步指南和代碼。
-type: docs
 weight: 15
 url: /zh-hant/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 實作 DKIM 簽名
+
 
 ## 使用 Aspose.Email 實作 DKIM 簽名
 
@@ -112,3 +118,9 @@ Aspose.Email for Java 是一個獨立的程式庫，但您可以根據需要將�
 ### 在哪裡可以找到更多有關 Aspose.Email for Java 的資源？
 
 如需更多資訊和資源，請造訪 Aspose.Email for Java 文件：[這裡](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

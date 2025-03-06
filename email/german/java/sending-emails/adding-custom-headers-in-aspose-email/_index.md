@@ -3,10 +3,16 @@ title: Hinzufügen benutzerdefinierter Header in Aspose.Email
 linktitle: Hinzufügen benutzerdefinierter Header in Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Erfahren Sie, wie Sie Ihre E-Mail-Nachrichten verbessern, indem Sie mit Aspose.Email für Java benutzerdefinierte Header hinzufügen. Verbessern Sie E-Mail-Metadaten und -Organisation.
-type: docs
 weight: 15
 url: /de/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hinzufügen benutzerdefinierter Header in Aspose.Email
+
 
 ## Einführung
 
@@ -132,3 +138,9 @@ In dieser Anleitung haben Sie erfahren, wie Sie mit Aspose.Email für Java benut
 
 ### Wie kann ich benutzerdefinierte Header aus empfangenen E-Mails extrahieren?
     Du kannst den ... benutzen`getHeaders` Methode für die empfangenen E-Mails`MailMessage` Objekt zum Abrufen und Verarbeiten benutzerdefinierter Header.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

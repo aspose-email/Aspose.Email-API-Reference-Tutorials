@@ -3,10 +3,16 @@ title: Personalizzazione delle intestazioni e-mail con Aspose.Email per Java
 linktitle: Personalizzazione delle intestazioni e-mail con Aspose.Email per Java
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come personalizzare le intestazioni delle e-mail senza sforzo con Aspose.Email per Java. Tuffati nei tutorial e sfrutta la potenza della personalizzazione dell'intestazione delle email.
-type: docs
 weight: 16
 url: /it/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalizzazione delle intestazioni e-mail con Aspose.Email per Java
+
 
 Le intestazioni delle e-mail svolgono un ruolo cruciale nella comunicazione e-mail, fornendo informazioni essenziali sull'origine e sulla consegna del messaggio. Con Aspose.Email per Java, la personalizzazione delle intestazioni delle e-mail diventa un compito semplice, consentendo agli utenti di personalizzare i metadati delle e-mail in base a esigenze e requisiti specifici.
 
@@ -37,3 +43,9 @@ Garantisci la sicurezza della posta elettronica con le firme DKIM utilizzando As
 Sblocca la potenza degli X-Headers nelle e-mail con Aspose.Email per Java. Impara a gestire i metadati personalizzati e a migliorare l'elaborazione della posta elettronica.
 ### [Arricchire i metadati delle e-mail tramite intestazioni con Aspose.Email](./enriching-email-metadata-through-headers/)
 Migliora i metadati delle e-mail con Aspose.Email per Java. Scopri come arricchire le intestazioni delle e-mail per un migliore monitoraggio e personalizzazione con Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

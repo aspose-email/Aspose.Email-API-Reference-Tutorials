@@ -3,10 +3,16 @@ title: TNEF Eklerini Koruma - C# Yöntemi
 linktitle: TNEF Eklerini Koruma - C# Yöntemi
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak TNEF eklerini nasıl koruyacağınızı öğrenin. Kaynak kodu içeren adım adım kılavuz.
-type: docs
 weight: 19
 url: /tr/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF Eklerini Koruma - C# Yöntemi
+
 
 ## TNEF Eklerinin Korunmasına Giriş
 
@@ -95,3 +101,9 @@ Aspose, kütüphanelerinde sık sık güncellemeler ve iyileştirmeler yayınlar
 ### Aspose.Email'i ticari projelerde kullanabilir miyim?
 
 Evet, Aspose.Email'i ticari projelerde kullanabilirsiniz. Ancak uyumluluğu sağlamak için Aspose'un lisans koşullarını incelediğinizden emin olun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

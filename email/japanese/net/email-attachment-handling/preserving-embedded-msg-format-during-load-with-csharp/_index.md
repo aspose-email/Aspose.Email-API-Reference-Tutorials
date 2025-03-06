@@ -3,10 +3,16 @@ title: C# での読み込み中に埋め込み MSG 形式を保持する
 linktitle: C# での読み込み中に埋め込み MSG 形式を保持する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して埋め込み MSG 形式を保存する方法を学びます。ソースコード付きのステップバイステップガイド。
-type: docs
 weight: 12
 url: /ja/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# での読み込み中に埋め込み MSG 形式を保持する
+
 
 今日のデジタル世界では、電子メールによるコミュニケーションは個人的な領域でも仕事上の領域でも極めて重要な役割を果たしています。多くの場合、電子メール ファイルをプログラムで操作する必要があり、EML (電子メール) ファイルの元の境界を保持することが重要になる場合があります。このステップバイステップ ガイドでは、C# コードと Aspose.Email for .NET を使用してこれを実現する方法を説明します。
 
@@ -74,3 +80,9 @@ Aspose.Email for .NET は主に C# 用に設計されていますが、VB.NET �
  Aspose.Email for .NET の最新のアップデートとリリースにアクセスするには、次のリリース ページにアクセスしてください。[Aspose.Email for .NET リリース](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

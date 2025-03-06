@@ -3,10 +3,16 @@ title: Připojování souborů k e-mailům pomocí Aspose.Email
 linktitle: Připojování souborů k e-mailům pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se připojovat soubory k e-mailovým zprávám pomocí Aspose.Email for Java. Vylepšete své e-maily snadno pomocí tohoto podrobného průvodce.
-type: docs
 weight: 12
 url: /cs/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Připojování souborů k e-mailům pomocí Aspose.Email
+
 ## Úvod
 
 Ve světě emailové komunikace je schopnost posílat přílohy zásadní. Ať už posíláte důležité dokumenty, obrázky nebo jakýkoli jiný typ souboru, proces by měl být přímý a spolehlivý. Aspose.Email for Java tento proces zjednodušuje tím, že poskytuje výkonné nástroje pro připojování souborů k e-mailovým zprávám.
@@ -134,3 +140,9 @@ Pokud máte další otázky nebo potřebujete pomoc, neváhejte se na nás obrá
 
 ### Existují omezení velikosti e-mailových příloh?
    E-mailové servery a klienti mohou mít omezení velikosti příloh. Ujistěte se, že vaše přílohy jsou v přijatelných limitech velikosti, abyste předešli problémům s odesíláním nebo přijímáním e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

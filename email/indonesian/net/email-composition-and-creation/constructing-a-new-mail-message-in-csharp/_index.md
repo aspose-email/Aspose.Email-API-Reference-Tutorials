@@ -3,10 +3,16 @@ title: Membuat Pesan Email Baru di C#
 linktitle: Membuat Pesan Email Baru di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Kuasai pembuatan email di C# menggunakan Aspose.Email untuk .NET. Panduan komprehensif dengan contoh kode. Tingkatkan aplikasi Anda sekarang
-type: docs
 weight: 11
 url: /id/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membuat Pesan Email Baru di C#
+
 
 Apakah Anda ingin meningkatkan aplikasi C# Anda dengan menambahkan kemampuan untuk mengirim email secara terprogram? Dengan kecanggihan Aspose.Email untuk .NET, Anda dapat mengintegrasikan fungsi email ke dalam aplikasi Anda dengan lancar. Dalam panduan langkah demi langkah ini, kami akan memandu Anda melalui proses pembuatan pesan email baru menggunakan Aspose.Email untuk .NET, lengkap dengan contoh kode sumber.
 
@@ -123,3 +129,9 @@ Selamat! Anda telah berhasil mempelajari cara membuat pesan email baru menggunak
    Anda dapat menemukan dokumentasi lengkap dan contoh kode di[Referensi API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

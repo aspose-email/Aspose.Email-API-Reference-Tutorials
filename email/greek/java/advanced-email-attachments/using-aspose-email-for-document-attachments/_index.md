@@ -3,10 +3,16 @@ title: Χρήση του Aspose.Email για συνημμένα εγγράφων
 linktitle: Χρήση του Aspose.Email για συνημμένα εγγράφων
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να διαχειρίζεστε συνημμένα έγγραφα σε μηνύματα ηλεκτρονικού ταχυδρομείου Java χρησιμοποιώντας το Aspose.Email για Java. Δημιουργήστε, στείλτε και εξάγετε συνημμένα εγγράφων με ευκολία.
-type: docs
 weight: 16
 url: /el/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Χρήση του Aspose.Email για συνημμένα εγγράφων
+
 
 ## Εισαγωγή στη χρήση του Aspose.Email για συνημμένα εγγράφων σε Java
 
@@ -104,3 +110,9 @@ public class ExtractAttachments {
 ### Πώς μπορώ να χειριστώ τα μεγάλα συνημμένα έγγραφα;
 
 Εάν χρειάζεται να χειριστείτε μεγάλα συνημμένα έγγραφα, σκεφτείτε να χρησιμοποιήσετε τεχνικές ροής για να αποφύγετε τη φόρτωση ολόκληρου του συνημμένου στη μνήμη. Το Aspose.Email παρέχει επιλογές για ροή συνημμένων, επιτρέποντάς σας να τα επεξεργαστείτε αποτελεσματικά.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

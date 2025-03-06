@@ -3,10 +3,16 @@ title: Using Aspose.Email for Document Attachments
 linktitle: Using Aspose.Email for Document Attachments
 second_title: Aspose.Email Java Email Management API
 description: Learn how to manage document attachments in Java emails using Aspose.Email for Java. Create, send, and extract document attachments with ease.
-type: docs
 weight: 16
 url: /java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Using Aspose.Email for Document Attachments
+
 
 ## Introduction to Using Aspose.Email for Document Attachments in Java
 
@@ -104,3 +110,10 @@ Yes, Aspose.Email for Java supports a wide range of attachment types, including 
 ### How do I handle large document attachments?
 
 If you need to handle large document attachments, consider using streaming techniques to avoid loading the entire attachment into memory. Aspose.Email provides options for streaming attachments, allowing you to process them efficiently.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

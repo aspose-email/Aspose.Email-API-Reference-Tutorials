@@ -3,10 +3,16 @@ title: การตรวจจับข้อความ TNEF ใน C # - อ
 linktitle: การตรวจจับข้อความ TNEF ใน C # - อธิบายแล้ว
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้การตรวจจับและประมวลผลข้อความ TNEF ใน C# โดยใช้ Aspose.Email สำหรับ .NET ปรับปรุงการจัดการอีเมลด้วยข้อความและไฟล์แนบ
-type: docs
 weight: 15
 url: /th/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การตรวจจับข้อความ TNEF ใน C
+
 
 คู่มือนี้จะอธิบายคำอธิบายโดยละเอียดทีละขั้นตอนเกี่ยวกับวิธีตรวจหาข้อความ TNEF (Transport Neutral Encapsulation Format) โดยใช้ไลบรารี Aspose.Email สำหรับ .NET TNEF เป็นรูปแบบที่ Microsoft Outlook ใช้เพื่อห่อหุ้ม Rich Text และไฟล์แนบภายในข้อความอีเมล Aspose.Email สำหรับ .NET นำเสนอชุด API อันทรงพลังเพื่อทำงานกับอีเมลและไฟล์แนบ รวมถึงข้อความ TNEF
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 ในคู่มือนี้ คุณได้เรียนรู้วิธีตรวจจับข้อความ TNEF (Transport Neutral Encapsulation Format) โดยใช้ไลบรารี Aspose.Email สำหรับ .NET ข้อความ TNEF ซึ่ง Microsoft Outlook มักใช้ จะห่อหุ้ม Rich Text และไฟล์แนบภายในอีเมล เมื่อทำตามขั้นตอนที่ระบุไว้ในคู่มือนี้ คุณจะสามารถระบุข้อความ TNEF และแยกไฟล์แนบเพื่อการประมวลผลต่อไปได้อย่างมีประสิทธิภาพ
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

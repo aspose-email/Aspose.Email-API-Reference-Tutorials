@@ -3,10 +3,16 @@ title: Sửa đổi địa chỉ email bằng C#
 linktitle: Sửa đổi địa chỉ email bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách sửa đổi địa chỉ email bằng C# với sự trợ giúp của Aspose.Email cho .NET. Hãy làm theo hướng dẫn từng bước này để thao tác địa chỉ email một cách hiệu quả.
-type: docs
 weight: 10
 url: /vi/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sửa đổi địa chỉ email bằng C#
+
 
 ## Giới thiệu
 
@@ -132,3 +138,9 @@ Trong khi Aspose.Email là một lựa chọn mạnh mẽ, các thư viện khá
 ## Phần kết luận
 
 Trong hướng dẫn này, chúng tôi bắt đầu hành trình khám phá thế giới sửa đổi địa chỉ email bằng C# và Aspose.Email cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có kỹ năng sửa đổi địa chỉ email trong ứng dụng của mình một cách hiệu quả. Khả năng của Aspose.Email kết hợp với kiến thức mới tìm thấy của bạn chắc chắn sẽ hợp lý hóa nỗ lực thao tác email của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

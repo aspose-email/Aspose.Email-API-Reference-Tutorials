@@ -3,10 +3,16 @@ title: عرض الارتباط التشعبي المخصص في C#
 linktitle: عرض الارتباط التشعبي المخصص في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية تخصيص عرض الارتباط التشعبي في لغة C# باستخدام Aspose.Email لـ .NET. قم بإنشاء محتوى بريد إلكتروني مخصص باستخدام أنماط الارتباط التشعبي المخصصة.
-type: docs
 weight: 13
 url: /ar/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# عرض الارتباط التشعبي المخصص في C#
+
 
 في عالم اتصالات البريد الإلكتروني، يعد جعل الارتباطات التشعبية بارزة ومظهرها جذابًا أمرًا بالغ الأهمية لجذب انتباه القارئ. باعتباري كاتبًا ماهرًا في تحسين محركات البحث، سأرشدك خلال عملية عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET. سنستكشف كيفية تحسين مظهر الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك، مما يجعلها أكثر جاذبية للمستلمين.
 
@@ -118,3 +124,9 @@ private static string RenderHyperlinkWithoutHref(string source)
 ---
 
 في هذا الدليل الشامل، اكتشفنا عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email for .NET، مما يتيح لك إنشاء رسائل بريد إلكتروني جذابة مع ارتباطات تشعبية ذات تصميم جميل. لا تفوت فرصة تحسين اتصالاتك عبر البريد الإلكتروني وإبراز رسائلك. قم بالوصول إلى الرابط المقدم للبدء في رحلتك إلى المزيد من رسائل البريد الإلكتروني الجذابة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

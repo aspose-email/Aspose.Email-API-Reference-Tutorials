@@ -3,10 +3,16 @@ title: Usuwanie załączników z wiadomości e-mail - implementacja C#
 linktitle: Usuwanie załączników z wiadomości e-mail - implementacja C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak usunąć załączniki do wiadomości e-mail za pomocą Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym C#.
-type: docs
 weight: 18
 url: /pl/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Usuwanie załączników z wiadomości e-mail - implementacja C#
+
 
 ## Wprowadzenie do usuwania załączników z wiadomości e-mail
 
@@ -97,3 +103,9 @@ Absolutnie. Aspose.Email został zaprojektowany z myślą o skalowalności i mo�
 ### Czy mogę przetestować bibliotekę Aspose.Email przed zintegrowaniem jej z moim projektem?
 
 Tak, Aspose udostępnia wersje próbne swoich bibliotek, które można pobrać i przetestować przed podjęciem decyzji o zakupie. Odwiedź ich stronę internetową, aby uzyskać więcej informacji.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

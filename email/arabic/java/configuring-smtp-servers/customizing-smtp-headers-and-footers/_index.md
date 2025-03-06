@@ -3,10 +3,16 @@ title: تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email
 linktitle: تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email لـ Java. عزز اتصالاتك عبر البريد الإلكتروني من خلال العلامات التجارية والرسائل المخصصة.
-type: docs
 weight: 16
 url: /ar/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email
+
 
 ## مقدمة
 
@@ -107,3 +113,9 @@ client.send(message);
 ### ما هي إعدادات SMTP التي يجب أن أستخدمها لإرسال رسائل بريد إلكتروني مخصصة؟
 
 يجب عليك استخدام إعدادات SMTP التي يوفرها لك موفر خدمة البريد الإلكتروني أو قسم تكنولوجيا المعلومات في مؤسستك. تتضمن هذه الإعدادات عادةً عنوان خادم SMTP ورقم المنفذ وبيانات اعتماد المصادقة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

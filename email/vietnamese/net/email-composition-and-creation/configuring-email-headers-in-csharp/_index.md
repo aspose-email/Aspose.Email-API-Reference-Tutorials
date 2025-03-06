@@ -3,10 +3,16 @@ title: Định cấu hình tiêu đề email trong C#
 linktitle: Định cấu hình tiêu đề email trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách định cấu hình tiêu đề email tùy chỉnh trong C# bằng Aspose.Email for .NET. Hướng dẫn từng bước có kèm theo mã nguồn. Tăng cường kiểm soát và bảo mật email.
-type: docs
 weight: 17
 url: /vi/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Định cấu hình tiêu đề email trong C#
+
 
 Giao tiếp qua email đã trở thành một phần không thể thiếu trong các tương tác cá nhân và kinh doanh hiện đại. Mặc dù nội dung của email rất quan trọng nhưng các tiêu đề đi kèm email cũng quan trọng không kém. Tiêu đề email cung cấp thông tin có giá trị về thư, người gửi, người nhận, v.v. Định cấu hình tiêu đề email trong C# bằng Aspose.Email cho .NET cung cấp một cách mạnh mẽ để tùy chỉnh và kiểm soát thông tin được nhúng trong thư email. Trong bài viết này, chúng ta sẽ khám phá cách định cấu hình tiêu đề email từng bước bằng thư viện Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email cung cấp các tính năng xác thực để đảm bảo rằng t
 ### Tiêu đề email có phân biệt chữ hoa chữ thường không?
 
 Có, tiêu đề email không phân biệt chữ hoa chữ thường. Tuy nhiên, bạn nên duy trì cách viết hoa nhất quán để có khả năng tương thích tốt hơn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

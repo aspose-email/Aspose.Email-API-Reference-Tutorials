@@ -3,10 +3,16 @@ title: Wyodrębnianie i analizowanie nagłówków wiadomości e-mail za pomocą 
 linktitle: Wyodrębnianie i analizowanie nagłówków wiadomości e-mail za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Odblokuj moc analizy nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak wyodrębniać i analizować nagłówki wiadomości e-mail w celu lepszego śledzenia wiadomości e-mail i ich bezpieczeństwa.
-type: docs
 weight: 12
 url: /pl/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnianie i analizowanie nagłówków wiadomości e-mail za pomocą Aspose.Email
+
 
 ## Wprowadzenie do wyodrębniania i analizowania nagłówków wiadomości e-mail za pomocą Aspose.Email
 
@@ -107,3 +113,9 @@ Analizowanie nagłówków wiadomości e-mail jest kluczowe z różnych powodów,
 ### Czy mogę zautomatyzować analizę nagłówków wiadomości e-mail za pomocą Aspose.Email?
 
 Tak, możesz zautomatyzować analizę nagłówków wiadomości e-mail za pomocą Aspose.Email, integrując go z aplikacjami Java. Biblioteka zapewnia wygodne metody pracy z nagłówkami wiadomości e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

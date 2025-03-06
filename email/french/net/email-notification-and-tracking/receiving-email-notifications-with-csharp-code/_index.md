@@ -3,10 +3,16 @@ title: Réception de notifications par e-mail avec le code C#
 linktitle: Réception de notifications par e-mail avec le code C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à recevoir des notifications par e-mail en C# à l'aide d'Aspose.Email pour .NET. Exemple de code efficace fourni.
-type: docs
 weight: 10
 url: /fr/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Réception de notifications par e-mail avec le code C#
+
 
 
 À l’ère du numérique, la communication est essentielle et le courrier électronique reste l’un des moyens d’échange d’informations les plus populaires. En tant que développeur, vous devrez peut-être envoyer et recevoir des notifications par e-mail dans vos applications. Dans ce didacticiel étape par étape, nous explorerons comment recevoir des notifications par e-mail avec C# à l'aide d'Aspose.Email pour .NET.
@@ -88,3 +94,9 @@ En suivant ces étapes, vous pouvez intégrer de manière transparente les notif
    Aspose.Email n'impose pas de limitations strictes sur le nombre d'e-mails que vous pouvez envoyer ou recevoir, mais cela peut être soumis aux limitations de votre serveur de messagerie.
 
 Ceci conclut notre didacticiel sur la réception de notifications par e-mail avec C# à l'aide d'Aspose.Email pour .NET. Nous espérons que vous avez trouvé ce guide utile pour implémenter les notifications par e-mail dans vos applications. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

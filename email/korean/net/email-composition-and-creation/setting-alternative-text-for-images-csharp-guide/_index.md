@@ -3,10 +3,16 @@ title: 이미지에 대한 대체 텍스트 설정 - C# 가이드
 linktitle: 이미지에 대한 대체 텍스트 설정 - C# 가이드
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 이메일의 이미지에 대한 대체 텍스트를 설정하는 방법을 알아보세요. 명확한 대체 텍스트로 접근성을 보장하세요. 문서와 코드가 포함되어 있습니다.
-type: docs
 weight: 15
 url: /ko/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이미지에 대한 대체 텍스트 설정 - C# 가이드
+
 
 이 가이드는 .NET용 Aspose.Email을 사용하여 이메일의 이미지에 대한 대체 텍스트를 설정하는 과정을 안내합니다. "대체 텍스트"라고도 하는 대체 텍스트는 이미지를 표시할 수 없는 경우 이미지에 대한 텍스트 설명을 제공하는 데 사용됩니다. Aspose.Email for .NET은 다양한 형식의 이메일과 첨부 파일을 작업할 수 있는 강력한 라이브러리입니다. 이 가이드에서는 C#을 사용하여 전자 메일 메시지의 이미지에 대한 대체 텍스트를 설정하는 방법에 중점을 둡니다.
 
@@ -81,3 +87,9 @@ Aspose 릴리스에서 Aspose.Email 라이브러리를 다운로드하거나 Vis
 ### .NET용 Aspose.Email에 대한 추가 문서는 어디서 찾을 수 있나요?
 
  .NET용 Aspose.Email 작업에 대한 자세한 문서, 튜토리얼 및 예제는 다음에서 찾을 수 있습니다.[API 참조](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

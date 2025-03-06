@@ -3,10 +3,16 @@ title: 画像の代替テキストを設定する - C# ガイド
 linktitle: 画像の代替テキストを設定する - C# ガイド
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して電子メール内の画像の代替テキストを設定する方法を学びます。明確な代替テキストでアクセシビリティを確保します。ドキュメントとコードが含まれています。
-type: docs
 weight: 15
 url: /ja/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 画像の代替テキストを設定する - C# ガイド
+
 
 このガイドでは、Aspose.Email for .NET を使用して電子メール内の画像の代替テキストを設定するプロセスについて説明します。 「代替テキスト」とも呼ばれる代替テキストは、画像を表示できない場合に画像の説明をテキストで提供するために使用されます。 Aspose.Email for .NET は、さまざまな形式の電子メールや添付ファイルを処理できる強力なライブラリです。このガイドでは、C# を使用して電子メール メッセージ内の画像の代替テキストを設定することに焦点を当てます。
 
@@ -81,3 +87,9 @@ Aspose.Email ライブラリは、Aspose リリースからダウンロードす
 ### Aspose.Email for .NET に関するその他のドキュメントはどこで見つけられますか?
 
  Aspose.Email for .NET の操作に関する詳細なドキュメント、チュートリアル、例は、次の場所にあります。[APIリファレンス](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

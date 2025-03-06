@@ -3,10 +3,16 @@ title: Uso de Aspose.Email para archivos adjuntos de documentos
 linktitle: Uso de Aspose.Email para archivos adjuntos de documentos
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a administrar documentos adjuntos en correos electrónicos de Java utilizando Aspose.Email para Java. Cree, envíe y extraiga documentos adjuntos con facilidad.
-type: docs
 weight: 16
 url: /es/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Uso de Aspose.Email para archivos adjuntos de documentos
+
 
 ## Introducción al uso de Aspose.Email para archivos adjuntos de documentos en Java
 
@@ -104,3 +110,9 @@ Sí, Aspose.Email para Java admite una amplia gama de tipos de archivos adjuntos
 ### ¿Cómo manejo documentos adjuntos de gran tamaño?
 
 Si necesita manejar documentos adjuntos de gran tamaño, considere utilizar técnicas de transmisión para evitar cargar el archivo adjunto completo en la memoria. Aspose.Email ofrece opciones para transmitir archivos adjuntos, lo que le permite procesarlos de manera eficiente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

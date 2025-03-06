@@ -3,10 +3,16 @@ title: Реализация подписей DKIM с помощью Aspose.Email
 linktitle: Реализация подписей DKIM с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Обеспечьте безопасность электронной почты с помощью подписей DKIM, используя Aspose.Email для Java. Пошаговое руководство и код для реализации DKIM.
-type: docs
 weight: 15
 url: /ru/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Реализация подписей DKIM с помощью Aspose.Email
+
 
 ## Реализация подписей DKIM с помощью Aspose.Email
 
@@ -112,3 +118,9 @@ Aspose.Email для Java — это отдельная библиотека, н�
 ### Где я могу найти дополнительные ресурсы по Aspose.Email для Java?
 
 Для получения дополнительной информации и ресурсов посетите документацию Aspose.Email для Java по адресу:[здесь](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Kỹ thuật C# - Chuyển đổi nội dung HTML thành văn bản thu�
 linktitle: Kỹ thuật C# - Chuyển đổi nội dung HTML thành văn bản thuần túy
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách dễ dàng chuyển đổi nội dung email HTML thành văn bản thuần túy bằng Aspose.Email for .NET. Hướng dẫn chi tiết & mã. Khám phá ngay bây giờ!
-type: docs
 weight: 19
 url: /vi/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kỹ thuật C# - Chuyển đổi nội dung HTML thành văn bản thuần túy
+
 
 Trong thời đại kỹ thuật số ngày nay, giao tiếp qua email đóng một vai trò quan trọng trong cuộc sống cá nhân và nghề nghiệp của chúng ta. Thông thường, email chứa nội dung có định dạng HTML để trình bày tốt hơn. Tuy nhiên, có những trường hợp bạn có thể cần trích xuất văn bản thuần túy từ nội dung HTML của email. Bài viết này sẽ hướng dẫn bạn quy trình thực hiện nhiệm vụ này một cách hiệu quả bằng cách sử dụng C#, Aspose.Email và Aspose.Words cho .NET.
 
@@ -75,3 +81,9 @@ Câu trả lời 4: Có, Aspose.Email cung cấp các khả năng tự động h
  Câu trả lời 5: Bạn có thể khám phá tài liệu và tài nguyên API trên trang web Aspose tại[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) Và[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 Bây giờ bạn đã nắm vững nghệ thuật chuyển đổi nội dung email HTML thành văn bản thuần túy, bạn có thể nâng cao khả năng xử lý email của mình trong C#. Chúc mừng mã hóa!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

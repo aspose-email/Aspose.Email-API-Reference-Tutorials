@@ -3,10 +3,16 @@ title: Phát hiện tệp đính kèm hoặc tin nhắn nhúng - Hướng dẫn 
 linktitle: Phát hiện tệp đính kèm hoặc tin nhắn nhúng - Hướng dẫn C#
 second_title: API xử lý email Aspose.Email .NET
 description: Làm chủ tệp đính kèm email và phát hiện thư được nhúng trong C# bằng cách sử dụng Aspose.Email for .NET. Nâng cao khả năng xử lý email của bạn với hướng dẫn toàn diện của chúng tôi.
-type: docs
 weight: 13
 url: /vi/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Phát hiện tệp đính kèm hoặc tin nhắn nhúng - Hướng dẫn C#
+
 
 ## Giới thiệu về Phát hiện tệp đính kèm hoặc tin nhắn nhúng - Hướng dẫn C#
 
@@ -106,3 +112,9 @@ Bạn nên triển khai các cơ chế xử lý lỗi thích hợp bằng cách 
 ### Tôi có thể tùy chỉnh việc xử lý tệp đính kèm và tin nhắn được nhúng không?
 
 Hoàn toàn có thể, bạn có thể điều chỉnh việc xử lý tệp đính kèm và tin nhắn được nhúng để đáp ứng nhu cầu ứng dụng cụ thể của mình. Aspose.Email cung cấp các API linh hoạt cho mục đích này.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

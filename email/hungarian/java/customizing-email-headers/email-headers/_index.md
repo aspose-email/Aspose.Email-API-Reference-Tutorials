@@ -3,10 +3,16 @@ title: E-mail fejlécek az Aspose.Emailben
 linktitle: E-mail fejlécek az Aspose.Emailben
 second_title: Aspose.Email Java Email Management API
 description: Fedezze fel az e-mail fejlécek erejét az Aspose.Email for Java segítségével. Ismerje meg, hogyan állíthat be és tölthet le könnyedén e-mail fejléceket.
-type: docs
 weight: 10
 url: /hu/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail fejlécek az Aspose.Emailben
+
 
 ## Az e-mail fejlécek bemutatása
 
@@ -92,3 +98,9 @@ A „Fogadott” fejléc olyan bejegyzések sorozata, amelyek nyomon követik az
 ### Hogyan bonthatom ki az e-mailek fejlécét nagy mennyiségű e-mailből?
 
 Az Aspose.Email kötegelt feldolgozási képességeivel több e-mail fejlécét is hatékonyan kinyerheti.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

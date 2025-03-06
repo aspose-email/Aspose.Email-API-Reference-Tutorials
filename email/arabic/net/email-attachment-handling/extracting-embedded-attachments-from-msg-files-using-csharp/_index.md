@@ -3,10 +3,16 @@ title: استخراج المرفقات المضمنة من ملفات MSG باس
 linktitle: استخراج المرفقات المضمنة من ملفات MSG باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية استخراج المرفقات المضمنة من ملفات MSG باستخدام C# وAspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية المصدر.
-type: docs
 weight: 10
 url: /ar/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج المرفقات المضمنة من ملفات MSG باستخدام C#
+
 
 ## مقدمة إلى المرفقات المضمنة
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
 
  يمكنك العثور على أمثلة ووثائق تفصيلية حول استخدام Aspose.Email لـ .NET في[توثيق](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# ile Gömülü Nesneleri E-postadan Çıkarma
 linktitle: C# ile Gömülü Nesneleri E-postadan Çıkarma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak e-postalardan gömülü nesneleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 16
 url: /tr/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile Gömülü Nesneleri E-postadan Çıkarma
+
 
 ## E-postalardaki Gömülü Nesnelere Giriş
 
@@ -113,3 +119,9 @@ Evet, çıkartılan gömülü nesneleri kaydetmeden önce değiştirebilirsiniz.
 ### Aspose.Email for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
 
  Daha fazla kod örneği ve öğreticiyi şurada bulabilirsiniz:[API Referansı](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Extraindo e analisando cabeçalhos de email com Aspose.Email
 linktitle: Extraindo e analisando cabeçalhos de email com Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Desbloqueie o poder da análise de cabeçalho de e-mail com Aspose.Email para Java. Aprenda como extrair e analisar cabeçalhos de e-mail para rastreamento e segurança aprimorados de e-mail.
-type: docs
 weight: 12
 url: /pt/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraindo e analisando cabeçalhos de email com Aspose.Email
+
 
 ## Introdução à extração e análise de cabeçalhos de email com Aspose.Email
 
@@ -107,3 +113,9 @@ A análise de cabeçalhos de e-mail é crucial por vários motivos, como rastrea
 ### Posso automatizar a análise de cabeçalho de e-mail com Aspose.Email?
 
 Sim, você pode automatizar a análise de cabeçalho de e-mail com Aspose.Email integrando-o em seus aplicativos Java. A biblioteca fornece métodos convenientes para trabalhar com cabeçalhos de e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

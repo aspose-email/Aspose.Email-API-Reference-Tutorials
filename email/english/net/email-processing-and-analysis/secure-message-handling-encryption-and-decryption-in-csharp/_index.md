@@ -3,10 +3,16 @@ title: Secure Message Handling - Encryption and Decryption in C#
 linktitle: Secure Message Handling - Encryption and Decryption in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to implement secure message handling with encryption and decryption in C# using Aspose.Email for .NET. Protect sensitive data effectively.
-type: docs
 weight: 16
 url: /net/email-processing-and-analysis/secure-message-handling-encryption-and-decryption-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Secure Message Handling - Encryption and Decryption in C#
+
 
 In today's digital age, ensuring the security of sensitive information during communication is of paramount importance. Cyber threats are constantly evolving, making it crucial to implement robust encryption and decryption mechanisms to protect our data. This article will guide you through the process of securely handling messages using encryption and decryption in C# with the help of Aspose.Email for .NET.
 
@@ -98,3 +104,10 @@ It's recommended to stay updated with the latest encryption standards and best p
 ### Where can I find more information about using Aspose.Email for .NET?
 
 You can find comprehensive documentation and examples on using Aspose.Email for .NET at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

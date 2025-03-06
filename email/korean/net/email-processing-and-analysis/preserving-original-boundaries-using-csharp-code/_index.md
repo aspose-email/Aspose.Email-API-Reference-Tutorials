@@ -3,10 +3,16 @@ title: C# 코드를 사용하여 원래 경계 유지
 linktitle: C# 코드를 사용하여 원래 경계 유지
 second_title: Aspose.Email .NET 이메일 처리 API
 description: C# 및 .NET용 Aspose.Email을 사용하여 이메일 첨부 파일의 원래 경계를 유지하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 13
 url: /ko/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드를 사용하여 원래 경계 유지
+
 
 ## 원래 경계 유지 소개
 
@@ -107,3 +113,9 @@ Aspose.Email 라이브러리를 사용하면 원래 경계가 유지되도록 �
 ### .NET용 Aspose.Email에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
  다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[Aspose.이메일 문서](https://reference.aspose.com/email/net/) 페이지.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

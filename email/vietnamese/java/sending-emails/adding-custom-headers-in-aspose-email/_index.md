@@ -3,10 +3,16 @@ title: Thêm tiêu đề tùy chỉnh trong Aspose.Email
 linktitle: Thêm tiêu đề tùy chỉnh trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách cải thiện thông điệp email của bạn bằng cách thêm tiêu đề tùy chỉnh bằng Aspose.Email for Java. Cải thiện siêu dữ liệu và tổ chức email.
-type: docs
 weight: 15
 url: /vi/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Thêm tiêu đề tùy chỉnh trong Aspose.Email
+
 
 ## Giới thiệu
 
@@ -132,3 +138,9 @@ Trong hướng dẫn này, bạn đã học cách thêm tiêu đề tùy chỉnh
 
 ### Làm cách nào tôi có thể trích xuất các tiêu đề tùy chỉnh từ các email đã nhận?
     Bạn có thể dùng`getHeaders` phương pháp trên email đã nhận`MailMessage` đối tượng để truy xuất và xử lý các tiêu đề tùy chỉnh.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

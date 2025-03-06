@@ -3,10 +3,16 @@ title: การจัดการส่วนหัวอีเมล
 linktitle: การจัดการส่วนหัวอีเมล
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: จัดการส่วนหัวของอีเมลอย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับบทช่วยสอน .NET เรียนรู้การแยก แก้ไข และปรับแต่งส่วนหัวเพื่อการสื่อสารที่ดียิ่งขึ้น
-type: docs
 weight: 14
 url: /th/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การจัดการส่วนหัวอีเมล
+
 
 ## การแนะนำ
 
@@ -33,3 +39,9 @@ url: /th/net/email-header-manipulation/
 เรียนรู้วิธีแยกส่วนหัวอีเมลใน C# โดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมซอร์สโค้ดเพื่อการวิเคราะห์อีเมลที่มีประสิทธิภาพ 
 ### [การระบุส่วนหัวที่กำหนดเองใน C #](./specifying-custom-headers-in-csharp/)
 เรียนรู้วิธีระบุส่วนหัวที่กำหนดเองใน C# โดยใช้ Aspose.Email สำหรับ .NET เพื่อปรับปรุงการสื่อสารทางอีเมล คำแนะนำทีละขั้นตอนนี้ให้ข้อมูลเชิงลึกเกี่ยวกับการสร้างส่วนหัวอีเมลส่วนบุคคลเพื่อการมีส่วนร่วมที่ดีขึ้น
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

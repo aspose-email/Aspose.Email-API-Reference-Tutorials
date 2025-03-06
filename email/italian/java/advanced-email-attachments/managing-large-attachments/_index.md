@@ -3,10 +3,16 @@ title: Gestione di allegati di grandi dimensioni in Aspose.Email
 linktitle: Gestione di allegati di grandi dimensioni in Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Gestisci in modo efficiente allegati e-mail di grandi dimensioni con Aspose.Email per Java. Guida passo passo e codice sorgente per la gestione semplificata degli allegati nelle applicazioni Java.
-type: docs
 weight: 11
 url: /it/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestione di allegati di grandi dimensioni in Aspose.Email
+
 
 ## Introduzione alla gestione degli allegati di grandi dimensioni in Aspose.Email per Java
 
@@ -145,3 +151,9 @@ limiti di dimensione per gli allegati e-mail possono variare a seconda dei forni
 ### Posso comprimere gli allegati per ridurne le dimensioni?
 
 Sì, puoi comprimere gli allegati per ridurne le dimensioni prima di inviarli. Aspose.Email fornisce funzionalità per comprimere e decomprimere gli allegati a livello di codice. Puoi implementarlo per ottimizzare la dimensione dei tuoi allegati e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

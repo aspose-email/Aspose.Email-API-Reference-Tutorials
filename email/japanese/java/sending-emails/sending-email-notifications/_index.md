@@ -3,10 +3,16 @@ title: Aspose.Email を使用した電子メール通知の送信
 linktitle: Aspose.Email を使用した電子メール通知の送信
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール通知を効果的に送信する方法を学びます。シームレスなコミュニケーションのためのコード例と FAQ を含む包括的なガイド。
-type: docs
 weight: 17
 url: /ja/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した電子メール通知の送信
+
 
 ## 導入
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### 電子メール通知の配信ステータスと追跡をどのように処理できますか?
    - 追加のツールやサービスを使用して、電子メール配信ステータス通知 (DSN) を処理し、電子メールの開封とクリックを追跡するロジックを実装できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

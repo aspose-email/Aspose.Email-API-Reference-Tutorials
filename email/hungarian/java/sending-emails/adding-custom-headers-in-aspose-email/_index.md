@@ -3,10 +3,16 @@ title: Egyéni fejlécek hozzáadása az Aspose.Emailben
 linktitle: Egyéni fejlécek hozzáadása az Aspose.Emailben
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan javíthatja e-mail üzeneteit egyéni fejlécek hozzáadásával az Aspose.Email for Java használatával. Javítsa az e-mail metaadatokat és a rendszerezést.
-type: docs
 weight: 15
 url: /hu/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Egyéni fejlécek hozzáadása az Aspose.Emailben
+
 
 ## Bevezetés
 
@@ -132,3 +138,9 @@ Ebből az útmutatóból megtanulta, hogyan adhat egyéni fejléceket egy e-mail
 
 ### Hogyan bonthatok ki egyéni fejléceket a fogadott e-mailekből?
     Használhatja a`getHeaders` módszert a kapott e-mailben`MailMessage` objektum az egyéni fejlécek lekéréséhez és feldolgozásához.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

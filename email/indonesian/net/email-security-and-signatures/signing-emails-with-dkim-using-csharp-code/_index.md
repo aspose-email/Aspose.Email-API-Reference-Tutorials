@@ -3,10 +3,16 @@ title: Menandatangani Email dengan DKIM menggunakan Kode C#
 linktitle: Menandatangani Email dengan DKIM menggunakan Kode C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengamankan email dengan DKIM menggunakan C# & Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber. Tingkatkan kepercayaan & keaslian email.
-type: docs
 weight: 11
 url: /id/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menandatangani Email dengan DKIM menggunakan Kode C#
+
 
 Di dunia digital saat ini, memastikan keaslian dan integritas komunikasi email sangatlah penting. Salah satu cara untuk mencapai hal ini adalah dengan menggunakan tanda tangan DomainKeys Identified Mail (DKIM). Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menandatangani email dengan DKIM menggunakan C# dan pustaka Aspose.Email untuk .NET yang canggih.
 
@@ -123,3 +129,9 @@ Header umum yang disertakan dalam tanda tangan DKIM adalah "Dari", "Subjek", dan
 ### Q5: Apakah DKIM satu-satunya metode autentikasi email?
 
 Tidak, ada metode lain seperti SPF dan DMARC yang digunakan bersama dengan DKIM untuk meningkatkan keamanan email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Xử lý thư nháp trong C# - Lưu email dưới dạng thư nháp
 linktitle: Xử lý thư nháp trong C# - Lưu email dưới dạng thư nháp
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách triển khai xử lý email nháp trong C# bằng Aspose.Email for .NET. Tạo, chỉnh sửa và lưu bản nháp một cách liền mạch.
-type: docs
 weight: 17
 url: /vi/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý thư nháp trong C# - Lưu email dưới dạng thư nháp
+
 
 ## Giới thiệu
 
@@ -103,3 +109,9 @@ Hoàn toàn có thể, bằng cách làm theo các bước được cung cấp t
 ### Thư viện Aspose.Email có hỗ trợ các chức năng khác liên quan đến email không?
 
  Có, thư viện Aspose.Email cung cấp nhiều tính năng để làm việc với email, bao gồm gửi, nhận và thao tác email cũng như tệp đính kèm. Bạn có thể tham khảo tài liệu để biết thêm chi tiết:[đây](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

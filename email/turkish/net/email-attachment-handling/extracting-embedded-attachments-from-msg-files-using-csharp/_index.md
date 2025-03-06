@@ -3,10 +3,16 @@ title: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
 linktitle: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
-type: docs
 weight: 10
 url: /tr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
+
 
 ## Gömülü Eklere Giriş
 
@@ -103,3 +109,9 @@ Kesinlikle! Aspose.Email for .NET hem masaüstü hem de web uygulamalarında kul
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
 
  Aspose.Email for .NET kullanımına ilişkin ayrıntılı örnekleri ve belgeleri şu adreste bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

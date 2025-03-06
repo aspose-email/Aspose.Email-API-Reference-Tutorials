@@ -3,10 +3,16 @@ title: Zpracování konceptů zpráv v C# - Uložení e-mailu jako konceptu
 linktitle: Zpracování konceptů zpráv v C# - Uložení e-mailu jako konceptu
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se implementovat zpracování konceptů e-mailů v C# pomocí Aspose.Email for .NET. Bezproblémově vytvářejte, upravujte a ukládejte koncepty.
-type: docs
 weight: 17
 url: /cs/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zpracování konceptů zpráv v C# - Uložení e-mailu jako konceptu
+
 
 ## Úvod
 
@@ -103,3 +109,9 @@ Rozhodně, podle kroků uvedených v této příručce můžete bezproblémově 
 ### Podporuje knihovna Aspose.Email další funkce související s e-mailem?
 
  Ano, knihovna Aspose.Email nabízí širokou škálu funkcí pro práci s e-mailovými zprávami, včetně odesílání, přijímání a manipulace s e-maily a přílohami. Další podrobnosti naleznete v dokumentaci:[tady](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

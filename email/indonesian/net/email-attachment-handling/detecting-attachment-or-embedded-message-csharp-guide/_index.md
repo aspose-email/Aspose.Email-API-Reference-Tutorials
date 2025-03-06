@@ -3,10 +3,16 @@ title: Mendeteksi Lampiran atau Pesan Tersemat - Panduan C#
 linktitle: Mendeteksi Lampiran atau Pesan Tersemat - Panduan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Lampiran email master dan deteksi pesan tersemat di C# menggunakan Aspose.Email untuk .NET. Tingkatkan penanganan email Anda dengan panduan komprehensif kami.
-type: docs
 weight: 13
 url: /id/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendeteksi Lampiran atau Pesan Tersemat - Panduan C#
+
 
 ## Pengantar Mendeteksi Lampiran atau Pesan Tersemat - Panduan C#
 
@@ -106,3 +112,9 @@ Anda harus menerapkan mekanisme penanganan kesalahan yang tepat menggunakan blok
 ### Bisakah saya menyesuaikan pemrosesan lampiran dan pesan tersemat?
 
 Tentu saja, Anda dapat menyesuaikan pemrosesan lampiran dan pesan yang disematkan untuk memenuhi kebutuhan spesifik aplikasi Anda. Aspose.Email menyediakan API yang fleksibel untuk tujuan ini.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 이메일에 HTML 본문 추가 - C# 예
 linktitle: 이메일에 HTML 본문 추가 - C# 예
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email에서 HTML을 사용하여 이메일 콘텐츠를 향상시키는 방법을 알아보세요. C# 예제가 포함된 단계별 가이드입니다. 이메일 커뮤니케이션을 향상시키세요!
-type: docs
 weight: 18
 url: /ko/net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일에 HTML 본문 추가 - C# 예
+
 
 이메일 커뮤니케이션은 현대 비즈니스 및 개인 상호 작용의 필수적인 부분이 되었습니다. 일반 텍스트 이메일도 목적에 부합하지만 HTML 콘텐츠를 이메일에 통합하면 시각적 매력과 기능이 크게 향상될 수 있습니다. 이 기사에서는 .NET용 Aspose.Email을 사용하여 이메일에 HTML 본문을 추가하는 방법에 대한 C#의 소스 코드 예제가 포함된 포괄적인 단계별 가이드를 제공합니다.
 
@@ -80,3 +86,9 @@ client.Send(message);
 
 ### .NET용 Aspose.Email에 대한 포괄적인 문서는 어디서 찾을 수 있나요?
     Aspose 문서를 방문할 수 있습니다.[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

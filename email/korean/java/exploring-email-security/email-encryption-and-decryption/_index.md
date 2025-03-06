@@ -3,10 +3,16 @@ title: Aspose.Email을 사용한 이메일 암호화 및 복호화
 linktitle: Aspose.Email을 사용한 이메일 암호화 및 복호화
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 이메일 암호화 및 암호 해독으로 이메일을 보호하는 방법을 알아보세요. 단계별 가이드, 소스 코드, FAQ가 포함되어 있습니다.
-type: docs
 weight: 11
 url: /ko/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용한 이메일 암호화 및 복호화
+
 
 ## 소개
 
@@ -95,3 +101,9 @@ Aspose.Email은 다양한 암호화 알고리즘을 지원하므로 필요한 �
  API 문서를 방문하세요[여기](https://reference.aspose.com/email/java/) 자세한 정보와 예시를 확인하세요.
 
 이제 Aspose.Email for Java를 사용하여 이메일 암호화 및 암호 해독에 대해 포괄적으로 이해했습니다. 지금 바로 이메일 보안을 시작하세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

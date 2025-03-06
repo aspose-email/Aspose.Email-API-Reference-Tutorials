@@ -3,10 +3,16 @@ title: C#에서 이메일 헤더 구성
 linktitle: C#에서 이메일 헤더 구성
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 C#에서 사용자 정의 이메일 헤더를 구성하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 이메일 제어 및 보안을 강화하세요.
-type: docs
 weight: 17
 url: /ko/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#에서 이메일 헤더 구성
+
 
 이메일 커뮤니케이션은 현대 비즈니스 및 개인 상호 작용의 필수적인 부분이 되었습니다. 이메일의 내용도 중요하지만, 이메일에 첨부된 헤더도 마찬가지로 중요합니다. 이메일 헤더는 메시지, 보낸 사람, 받는 사람 등에 대한 귀중한 정보를 제공합니다. .NET용 Aspose.Email을 사용하여 C#에서 이메일 헤더를 구성하면 이메일 메시지에 포함된 정보를 사용자 정의하고 제어할 수 있는 강력한 방법을 제공합니다. 이 기사에서는 .NET 라이브러리용 Aspose.Email을 사용하여 이메일 헤더를 단계별로 구성하는 방법을 살펴보겠습니다.
 
@@ -133,3 +139,9 @@ Aspose.Email은 이메일 헤더의 형식이 올바른지, 표준을 준수하�
 ### 이메일 헤더는 대소문자를 구분하나요?
 
 예, 이메일 헤더는 대소문자를 구분하지 않습니다. 그러나 더 나은 호환성을 위해 일관된 대소문자를 유지하는 것이 좋습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

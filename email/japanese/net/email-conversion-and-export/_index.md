@@ -3,10 +3,16 @@ title: 電子メールの変換とエクスポートについて調べる
 linktitle: 電子メールの変換とエクスポート
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET のチュートリアルを使用して電子メール データ管理をマスターします。電子メールの変換、エクスポート、整合性の維持、添付ファイルの処理。例を挙げてレベルを高めます。
-type: docs
 weight: 11
 url: /ja/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールの変換とエクスポートについて調べる
+
 
 ## 導入
 
@@ -39,3 +45,9 @@ Aspose.Email for .NET を使用して、C# でドラフト電子メールの処�
 C# と Aspose.Email for .NET を使用して HTML 電子メール ファイルを作成する方法を学びます。シームレスな電子メールのカスタマイズのためのソース コードを含むステップバイステップ ガイド。
 ### [メッセージから OFT ファイルを生成する - C# チュートリアル](./generating-oft-files-from-messages-csharp-tutorial/)
 Aspose.Email for .NET を使用してメッセージから OFT ファイルを作成する方法を学習します。電子メール テンプレートを効率的に生成するためのソース コードを含むステップバイステップ ガイド。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Sending Email Notifications with Aspose.Email
 linktitle: Sending Email Notifications with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn to send email notifications effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
-type: docs
 weight: 17
 url: /java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sending Email Notifications with Aspose.Email
+
 
 ## Introduction
 
@@ -109,3 +115,10 @@ public class EmailNotification {
 
 ### How can I handle email notification delivery status and tracking?
    - You can implement logic to handle email delivery status notifications (DSNs) and track email opens and clicks using additional tools or services.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

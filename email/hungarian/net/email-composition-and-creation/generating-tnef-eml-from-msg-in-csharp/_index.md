@@ -3,10 +3,16 @@ title: TNEF EML előállítása MSG-ből C#-ban
 linktitle: TNEF EML előállítása MSG-ből C#-ban
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan hozhat létre TNEF EML-t az MSG-ből az Aspose.Email for .NET használatával. Lépésről lépésre útmutató C# kóddal. Hatékony e-mail formátum konvertálás.
-type: docs
 weight: 12
 url: /hu/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# TNEF EML előállítása MSG-ből C#-ban
+
 
 Ebből az útmutatóból megtudhatja, hogyan hozhat létre TNEF (Transport Neutral Encapsulation Format) EML-fájlokat MSG (Outlook Message) fájlokból az Aspose.Email for .NET könyvtár használatával. A TNEF egy szabadalmaztatott e-mail-mellékletformátum, amelyet a Microsoft Outlook használ. Az Aspose.Email for .NET egy hatékony könyvtár, amely lehetővé teszi, hogy különféle e-mail formátumokkal dolgozzon C# alkalmazásaiban.
 
@@ -100,3 +106,10 @@ Az Aspose.Email for .NET könyvtárat az Aspose kiadásaiból szerezheti be:[Az 
 Használhat szabványos C# kivételkezelési technikákat. Az Aspose.Email a saját könyvtárára jellemző kivételeket dob ki, ezért ügyeljen arra, hogy ezeket megfelelően rögzítse és kezelje a kódban.
 
  Nyugodtan fedezze fel a[Aspose.Email a .NET dokumentációhoz](https://reference.aspose.com/email/net) fejlettebb funkciókért és példákért.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

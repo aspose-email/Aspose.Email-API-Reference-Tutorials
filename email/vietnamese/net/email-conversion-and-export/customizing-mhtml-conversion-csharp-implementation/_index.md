@@ -3,10 +3,16 @@ title: Tùy chỉnh chuyển đổi MHTML - Triển khai C#
 linktitle: Tùy chỉnh chuyển đổi MHTML - Triển khai C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách tùy chỉnh chuyển đổi MHTML bằng Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn C#.
-type: docs
 weight: 10
 url: /vi/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tùy chỉnh chuyển đổi MHTML - Triển khai C#
+
 
 ## Giới thiệu về Tùy chỉnh chuyển đổi MHTML
 
@@ -67,3 +73,9 @@ Tuyệt đối! Aspose.Email for .NET hỗ trợ nhiều định dạng đầu r
 ### Aspose.Email for .NET có phù hợp cho cả dự án quy mô nhỏ và quy mô lớn không?
 
 Có, Aspose.Email for .NET được thiết kế để có thể mở rộng, phù hợp với các dự án có quy mô khác nhau. Nó được sử dụng rộng rãi trong cả ứng dụng nhỏ và giải pháp cấp doanh nghiệp lớn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

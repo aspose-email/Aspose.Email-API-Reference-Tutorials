@@ -3,10 +3,16 @@ title: Keamanan Email dan Tanda Tangan
 linktitle: Keamanan Email dan Tanda Tangan
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Terapkan langkah-langkah keamanan email yang kuat dan tanda tangan yang dipersonalisasi dengan tutorial Aspose.Email untuk .NET. Pastikan komunikasi yang aman dan branding profesional.
-type: docs
 weight: 19
 url: /id/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Keamanan Email dan Tanda Tangan
+
 
 ## Perkenalan
 
@@ -25,3 +31,9 @@ Tutorial tanda tangan email berfokus pada memungkinkan pengembang membuat dan me
 
 ### [Menandatangani Email dengan DKIM menggunakan Kode C#](./signing-emails-with-dkim-using-csharp-code/)
 Pelajari cara mengamankan email dengan DKIM menggunakan C# & Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber. Tingkatkan kepercayaan & keaslian email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

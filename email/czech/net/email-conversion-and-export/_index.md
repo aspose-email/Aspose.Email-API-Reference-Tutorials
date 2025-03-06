@@ -3,10 +3,16 @@ title: Zkoumání převodu a exportu e-mailů
 linktitle: E-mailová konverze a export
 second_title: Aspose.Email .NET Email Processing API
 description: Ovládněte správu e-mailových dat pomocí výukových programů Aspose.Email pro .NET. Převádějte, exportujte e-maily, udržujte integritu, manipulujte s přílohami. Pozvedněte příklady.
-type: docs
 weight: 11
 url: /cs/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zkoumání převodu a exportu e-mailů
+
 
 ## Úvod
 
@@ -39,3 +45,9 @@ Naučte se implementovat zpracování konceptů e-mailů v C# pomocí Aspose.Ema
 Naučte se vytvářet HTML e-mailové soubory pomocí C# a Aspose.Email pro .NET. Podrobný průvodce se zdrojovým kódem pro bezproblémové přizpůsobení e-mailu.
 ### [Generování souborů OFT ze zpráv - C# Tutorial](./generating-oft-files-from-messages-csharp-tutorial/)
 Naučte se vytvářet soubory OFT ze zpráv pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem pro efektivní generování e-mailových šablon.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

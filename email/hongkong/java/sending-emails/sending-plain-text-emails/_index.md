@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 發送純文字電子郵件
 linktitle: 使用 Aspose.Email 發送純文字電子郵件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 學習使用 Aspose.Email for Java 高效發送純文字電子郵件。包含程式碼範例和常見問題的綜合指南，可實現無縫溝通。
-type: docs
 weight: 10
 url: /zh-hant/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 發送純文字電子郵件
+
 
 ## 介紹
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. 使用Aspose.Email for Java發送純文字電子郵件有什麼限制嗎？
    - 這些限制可能取決於您的電子郵件服務提供者和 SMTP 伺服器。確保您遵守任何發送限制和電子郵件發送政策。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

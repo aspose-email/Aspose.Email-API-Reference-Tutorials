@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email を使用した電子メールの作成、変換、処理のチュートリアル
 linktitle: Aspose.Email for .NET のチュートリアル
-type: docs
 weight: 10
 url: /ja/net/
 description: Aspose.Email for .NET チュートリアルを使用して電子メール機能を最適化します。高度な電子メール管理のための構成、変換、処理について学びます。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した電子メールの作成、変換、処理のチュートリアル
+
 
 ## 導入
 
@@ -45,3 +50,9 @@ Aspose.Email for .NET チュートリアルを使用して、堅牢な電子メ�
 Aspose.Email for .NET チュートリアルを使用して、電子メール ファイルの保存と取得を効率化します。電子メール メッセージと添付ファイルをプログラムで管理し、アクセスする方法を学びます。
 ### [電子メールのセキュリティと署名](./email-security-and-signatures/)
 Aspose.Email for .NET チュートリアルを使用して、堅牢な電子メール セキュリティ対策とパーソナライズされた署名を実装します。安全なコミュニケーションとプロフェッショナルなブランディングを確保します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

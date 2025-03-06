@@ -3,10 +3,16 @@ title: Přijímání e-mailů pomocí Aspose.Email pro Java
 linktitle: Přijímání e-mailů pomocí Aspose.Email pro Java
 second_title: Aspose.Email Java Email Management API
 description: Naučte se, jak bez námahy přijímat e-maily pomocí výukových programů Aspose.Email for Java. Začněte spravovat svou doručenou poštu jako profesionál!
-type: docs
 weight: 11
 url: /cs/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přijímání e-mailů pomocí Aspose.Email pro Java
+
 
 ## Příjem e-mailů bez námahy
 
@@ -29,3 +35,9 @@ Začněte ovládat umění přijímání e-mailů v Javě pomocí výukových pr
 Naučte se pracovat s protokolem IMAP v Aspose.Email for Java, abyste mohli efektivně spravovat svou e-mailovou komunikaci.
 ### [Manipulace s e-mailovými přílohami v Aspose.Email](./handling-email-attachments/)
 Naučte se pracovat s e-mailovými přílohami v Aspose.Email pro Java. Podrobný průvodce se zdrojovým kódem a často kladenými dotazy pro efektivní správu e-mailových příloh.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

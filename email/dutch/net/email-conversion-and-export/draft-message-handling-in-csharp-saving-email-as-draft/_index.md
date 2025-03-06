@@ -3,10 +3,16 @@ title: Behandeling van conceptberichten in C# - E-mail opslaan als concept
 linktitle: Behandeling van conceptberichten in C# - E-mail opslaan als concept
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u concept-e-mailverwerking in C# implementeert met behulp van Aspose.Email voor .NET. Creëer, bewerk en bewaar concepten naadloos.
-type: docs
 weight: 17
 url: /nl/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Behandeling van conceptberichten in C# - E-mail opslaan als concept
+
 
 ## Invoering
 
@@ -103,3 +109,9 @@ Absoluut, door de stappen in deze handleiding te volgen, kunt u de verwerking va
 ### Ondersteunt de Aspose.Email-bibliotheek andere e-mailgerelateerde functionaliteiten?
 
  Ja, de Aspose.Email-bibliotheek biedt een breed scala aan functies voor het werken met e-mailberichten, waaronder het verzenden, ontvangen en manipuleren van e-mails en bijlagen. U kunt de documentatie raadplegen voor meer details:[hier](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

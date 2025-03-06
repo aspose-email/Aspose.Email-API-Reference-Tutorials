@@ -3,10 +3,16 @@ title: Modification des adresses e-mail avec C#
 linktitle: Modification des adresses e-mail avec C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment modifier les adresses e-mail à l'aide de C# à l'aide d'Aspose.Email pour .NET. Suivez ce guide étape par étape pour manipuler efficacement les adresses e-mail.
-type: docs
 weight: 10
 url: /fr/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Modification des adresses e-mail avec C#
+
 
 ## Introduction
 
@@ -132,3 +138,9 @@ Bien qu'Aspose.Email soit un choix robuste, d'autres bibliothèques comme MimeKi
 ## Conclusion
 
 Dans ce guide, nous nous sommes lancés dans un voyage pour explorer le monde de la modification d'adresses e-mail à l'aide de C# et Aspose.Email pour .NET. En suivant les instructions étape par étape et en utilisant le code source fourni, vous possédez désormais les compétences nécessaires pour modifier efficacement les adresses e-mail dans vos applications. Les capacités d'Aspose.Email combinées à vos nouvelles connaissances rationaliseront sans aucun doute vos efforts de manipulation de courrier électronique.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

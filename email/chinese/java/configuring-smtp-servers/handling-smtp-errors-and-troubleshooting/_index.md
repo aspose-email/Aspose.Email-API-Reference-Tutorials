@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 处理 SMTP 错误和故障排除
 linktitle: 使用 Aspose.Email 处理 SMTP 错误和故障排除
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 使用 Aspose.Email for Java 优化电子邮件通信。了解如何处理 SMTP 错误并有效排除故障。
-type: docs
 weight: 14
 url: /zh/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 处理 SMTP 错误和故障排除
+
 
 ## SMTP 错误简介
 
@@ -107,3 +113,9 @@ try {
 ### Aspose.Email for Java 适合处理大量电子邮件吗？
 
 是的，Aspose.Email for Java 旨在有效处理小型和大型电子邮件量。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

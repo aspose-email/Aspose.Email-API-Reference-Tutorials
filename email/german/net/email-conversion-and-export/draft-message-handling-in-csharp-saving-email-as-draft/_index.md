@@ -3,10 +3,16 @@ title: Umgang mit Nachrichtenentwürfen in C# – E-Mail als Entwurf speichern
 linktitle: Umgang mit Nachrichtenentwürfen in C# – E-Mail als Entwurf speichern
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie die Bearbeitung von E-Mail-Entwürfen in C# mit Aspose.Email für .NET implementieren. Erstellen, bearbeiten und speichern Sie Entwürfe nahtlos.
-type: docs
 weight: 17
 url: /de/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Umgang mit Nachrichtenentwürfen in C# – E-Mail als Entwurf speichern
+
 
 ## Einführung
 
@@ -103,3 +109,9 @@ Auf jeden Fall können Sie die Bearbeitung von Nachrichtenentwürfen nahtlos in 
 ### Unterstützt die Aspose.Email-Bibliothek andere E-Mail-bezogene Funktionen?
 
  Ja, die Aspose.Email-Bibliothek bietet eine breite Palette von Funktionen für die Arbeit mit E-Mail-Nachrichten, einschließlich des Sendens, Empfangens und Bearbeitens von E-Mails und Anhängen. Weitere Einzelheiten finden Sie in der Dokumentation:[Hier](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

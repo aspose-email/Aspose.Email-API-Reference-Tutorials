@@ -3,10 +3,16 @@ title: C# Approach - Extrakce dekódovaných hodnot záhlaví
 linktitle: C# Approach - Extrakce dekódovaných hodnot záhlaví
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se extrahovat dekódované hodnoty záhlaví e-mailu v C# pomocí Aspose.Email pro .NET. Komplexní průvodce s příklady kódu.
-type: docs
 weight: 17
 url: /cs/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Approach - Extrakce dekódovaných hodnot záhlaví
+
 
 V tomto tutoriálu vás provedeme procesem používání Aspose.Email pro .NET k extrahování dekódovaných hodnot záhlaví z e-mailových zpráv. Aspose.Email for .NET je robustní knihovna, která umožňuje vývojářům pracovat s různými aspekty e-mailových zpráv, včetně čtení a manipulace s hlavičkami e-mailů.
 
@@ -77,3 +83,9 @@ Ve výše uvedeném fragmentu kódu provedeme následující kroky:
 ## Závěr
 
 tomto tutoriálu jste se naučili, jak využít Aspose.Email pro .NET k extrahování dekódovaných hodnot záhlaví z e-mailových zpráv. Aspose.Email for .NET poskytuje komplexní sadu nástrojů, které umožňují vývojářům efektivně pracovat s e-mailovými zprávami, včetně zpracování hlaviček.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

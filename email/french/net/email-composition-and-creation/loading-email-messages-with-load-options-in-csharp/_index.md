@@ -3,10 +3,16 @@ title: Chargement des messages électroniques avec les options de chargement en 
 linktitle: Chargement des messages électroniques avec les options de chargement en C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment charger des e-mails avec Aspose.Email pour .NET en C#. Explorez un guide étape par étape et des exemples de code source pour une gestion efficace des e-mails.
-type: docs
 weight: 11
 url: /fr/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chargement des messages électroniques avec les options de chargement en C#
+
 
 ## Introduction à Aspose.Email pour .NET
 
@@ -167,3 +173,9 @@ Absolument! Aspose.Email pour .NET prend en charge le chargement et la gestion d
 ### Que dois-je faire si je rencontre des erreurs lors du chargement des e-mails ?
 
 Si vous rencontrez des erreurs lors du chargement des e-mails, assurez-vous d'envelopper votre code de chargement dans un bloc try-catch pour gérer les exceptions. Cela vous aidera à identifier et à résoudre tous les problèmes qui surviennent.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

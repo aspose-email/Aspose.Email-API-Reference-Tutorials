@@ -3,10 +3,16 @@ title: Bädda in bilder som bilagor i Aspose.Email
 linktitle: Bädda in bilder som bilagor i Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du bäddar in bilder som bilagor i Aspose.Email för Java. Lyft din e-postkommunikation med visuellt engagerande innehåll.
-type: docs
 weight: 14
 url: /sv/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bädda in bilder som bilagor i Aspose.Email
+
 
 ## Bädda in bilder som bilagor i Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email för Java stöder olika bildformat, inklusive JPEG, PNG, GIF och me
 ### Finns det några begränsningar för storleken på inbäddade bilder?
 
 Storleken på inbäddade bilder kan påverka e-postleveransen och mottagarupplevelsen. Det är tillrådligt att optimera bilder för e-post för att undvika stora filstorlekar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

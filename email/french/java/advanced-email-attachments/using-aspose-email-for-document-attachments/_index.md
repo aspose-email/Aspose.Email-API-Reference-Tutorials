@@ -3,10 +3,16 @@ title: Utilisation d'Aspose.Email pour les pièces jointes de documents
 linktitle: Utilisation d'Aspose.Email pour les pièces jointes de documents
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment gérer les pièces jointes aux documents dans les e-mails Java à l'aide d'Aspose.Email pour Java. Créez, envoyez et extrayez facilement des pièces jointes à des documents.
-type: docs
 weight: 16
 url: /fr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Utilisation d'Aspose.Email pour les pièces jointes de documents
+
 
 ## Introduction à l'utilisation d'Aspose.Email pour les pièces jointes de documents en Java
 
@@ -104,3 +110,9 @@ Oui, Aspose.Email pour Java prend en charge un large éventail de types de pièc
 ### Comment gérer les pièces jointes volumineuses ?
 
 Si vous devez gérer des pièces jointes volumineuses, envisagez d'utiliser des techniques de diffusion en continu pour éviter de charger l'intégralité de la pièce jointe en mémoire. Aspose.Email propose des options de diffusion en continu des pièces jointes, vous permettant de les traiter efficacement.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

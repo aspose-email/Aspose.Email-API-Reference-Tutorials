@@ -3,10 +3,16 @@ title: Intestazioni e-mail in Aspose.Email
 linktitle: Intestazioni e-mail in Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Sblocca la potenza delle intestazioni e-mail con Aspose.Email per Java. Scopri come impostare e recuperare le intestazioni delle email senza sforzo.
-type: docs
 weight: 10
 url: /it/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Intestazioni e-mail in Aspose.Email
+
 
 ## Introduzione alle intestazioni delle email
 
@@ -92,3 +98,9 @@ L'intestazione "Ricevuto" è una serie di voci che tracciano il percorso dell'e-
 ### Come posso estrarre le intestazioni delle email da un grande batch di email?
 
 È possibile utilizzare le funzionalità di elaborazione batch di Aspose.Email per estrarre in modo efficiente le intestazioni da più e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Walidacja i weryfikacja adresu e-mail
 linktitle: Walidacja i weryfikacja adresu e-mail
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Zaimplementuj niezawodne mechanizmy sprawdzania poprawności i weryfikacji wiadomości e-mail, korzystając z samouczków Aspose.Email dla .NET. Zwiększ dokładność i bezpieczeństwo komunikacji.
-type: docs
 weight: 17
 url: /pl/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Walidacja i weryfikacja adresu e-mail
+
 
 ## Wstęp
 
@@ -23,3 +29,9 @@ Samouczki dotyczące weryfikacji poczty e-mail skupiają się na umożliwieniu p
 ## Samouczki dotyczące sprawdzania poprawności i weryfikacji poczty e-mail
 ### [Techniki sprawdzania poprawności wiadomości e-mail w kodzie C#](./email-validation-techniques-in-csharp-code/)
 Dowiedz się, jak skutecznie sprawdzać poprawność adresów e-mail w języku C# przy użyciu Aspose.Email dla .NET. Przewodnik krok po kroku z dostarczonym kodem źródłowym. Zwiększ dokładność danych i wygodę użytkownika.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Xây dựng một thư mới trong C#
 linktitle: Xây dựng một thư mới trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tạo email thành thạo trong C# bằng Aspose.Email for .NET. Hướng dẫn toàn diện với các ví dụ về mã. Nâng cao ứng dụng của bạn ngay bây giờ
-type: docs
 weight: 11
 url: /vi/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xây dựng một thư mới trong C#
+
 
 Bạn đang tìm cách nâng cao ứng dụng C# của mình bằng cách thêm khả năng gửi email theo chương trình? Với sức mạnh của Aspose.Email dành cho .NET, bạn có thể tích hợp liền mạch các chức năng email vào ứng dụng của mình. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn quy trình tạo thư mới bằng Aspose.Email cho .NET, kèm theo các ví dụ về mã nguồn.
 
@@ -123,3 +129,9 @@ Chúc mừng! Bạn đã học thành công cách tạo thư mới bằng Aspose
    Bạn có thể tìm thấy tài liệu toàn diện và các ví dụ về mã trên[Tài liệu tham khảo API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

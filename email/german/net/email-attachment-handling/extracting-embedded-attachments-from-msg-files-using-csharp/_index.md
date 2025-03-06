@@ -3,10 +3,16 @@ title: Extrahieren eingebetteter Anhänge aus MSG-Dateien mit C#
 linktitle: Extrahieren eingebetteter Anhänge aus MSG-Dateien mit C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie eingebettete Anhänge aus MSG-Dateien mit C# und Aspose.Email für .NET extrahieren. Eine umfassende Anleitung mit Quellcode-Beispielen.
-type: docs
 weight: 10
 url: /de/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahieren eingebetteter Anhänge aus MSG-Dateien mit C#
+
 
 ## Einführung in eingebettete Anhänge
 
@@ -103,3 +109,9 @@ Absolut! Aspose.Email für .NET kann sowohl in Desktop- als auch in Webanwendung
 ### Wo finde ich weitere Beispiele und Dokumentation?
 
  Ausführliche Beispiele und Dokumentation zur Verwendung von Aspose.Email für .NET finden Sie im[Dokumentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

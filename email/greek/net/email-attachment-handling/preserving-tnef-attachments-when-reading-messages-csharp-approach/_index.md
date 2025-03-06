@@ -3,10 +3,16 @@ title: Διατήρηση συνημμένων TNEF κατά την ανάγνω
 linktitle: Διατήρηση συνημμένων TNEF κατά την ανάγνωση μηνυμάτων - Προσέγγιση C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να διατηρείτε τα συνημμένα TNEF χρησιμοποιώντας το Aspose.Email για .NET σε αυτόν τον αναλυτικό οδηγό με τον πηγαίο κώδικα.
-type: docs
 weight: 15
 url: /el/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Διατήρηση συνημμένων TNEF κατά την ανάγνωση μηνυμάτων - Προσέγγιση C#
+
 
 ## Εισαγωγή στα Συνημμένα TNEF
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### Το Aspose.Email ενημερώνεται τακτικά;
 
 Ναι, το Aspose διατηρεί τακτικές ενημερώσεις για να διασφαλίζει τη συμβατότητα με τις πιο πρόσφατες τεχνολογίες και πλατφόρμες.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

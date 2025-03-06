@@ -3,10 +3,16 @@ title: X-fejlécek kezelése e-mail üzenetekben az Aspose.Email segítségével
 linktitle: X-fejlécek kezelése e-mail üzenetekben az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Fedezze fel az X-Headers erejét az e-mailekben az Aspose.Email for Java segítségével. Ismerje meg az egyéni metaadatok kezelését és az e-mailek feldolgozásának javítását.
-type: docs
 weight: 16
 url: /hu/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# X-fejlécek kezelése e-mail üzenetekben az Aspose.Email segítségével
+
 
 ## Bevezetés
 
@@ -124,3 +130,9 @@ Az Aspose.Email for Java használatával X-fejléceket olvashat beérkezett e-ma
 ### Az Aspose.Email alkalmas vállalati szintű e-mail kezelésre?
 
 Igen, az Aspose.Email egy robusztus könyvtár, amely vállalati szintű e-mail-kezelésre használható. A funkciók széles skáláját kínálja az e-mailek létrehozásához, küldéséhez, fogadásához és feldolgozásához, így alkalmas különféle üzleti helyzetekre.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Προσθήκη νέων συνημμένων TNEF σε C#
 linktitle: Προσθήκη νέων συνημμένων TNEF σε C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να προσθέτετε νέα συνημμένα TNEF στη C# χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 12
 url: /el/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσθήκη νέων συνημμένων TNEF σε C#
+
 
 ## Εισαγωγή στα Συνημμένα TNEF και στο Aspose.Email για .NET
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### Πού μπορώ να βρω περισσότερα έγγραφα και παραδείγματα;
 
  Για πιο λεπτομερή τεκμηρίωση και παραδείγματα κώδικα, μπορείτε να επισκεφθείτε το[Aspose.Email για τεκμηρίωση .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

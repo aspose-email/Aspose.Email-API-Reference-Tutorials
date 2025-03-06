@@ -3,10 +3,16 @@ title: إرسال البريد الإلكتروني بالجملة مع Aspose.E
 linktitle: إرسال البريد الإلكتروني بالجملة مع Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية إرسال رسائل البريد الإلكتروني المجمعة بكفاءة باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية للتسويق عبر البريد الإلكتروني والاتصالات.
-type: docs
 weight: 14
 url: /ar/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إرسال البريد الإلكتروني بالجملة مع Aspose.Email
+
 
 ## مقدمة
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### كيف يمكنني التعامل مع رسائل البريد الإلكتروني المرتدة أو الفاشلة في الإرسال المجمع؟
    يوفر Aspose.Email ميزات للتعامل مع إشعارات حالة التسليم (DSNs) وتتبع حالة تسليم البريد الإلكتروني. يمكنك تنفيذ المنطق لمعالجة رسائل البريد الإلكتروني المرتدة أو الفاشلة حسب الحاجة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

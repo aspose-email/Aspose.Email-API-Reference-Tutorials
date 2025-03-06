@@ -3,10 +3,16 @@ title: DKIM aláírások megvalósítása az Aspose.Email segítségével
 linktitle: DKIM aláírások megvalósítása az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Az Aspose.Email for Java használatával DKIM-aláírásokkal biztosíthatja az e-mailek biztonságát. Lépésről lépésre útmutató és kód a DKIM megvalósításához.
-type: docs
 weight: 15
 url: /hu/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# DKIM aláírások megvalósítása az Aspose.Email segítségével
+
 
 ## DKIM aláírások megvalósítása az Aspose.Email segítségével
 
@@ -112,3 +118,9 @@ Igen, az Aspose.Email for Java kompatibilis különféle e-mail szerverekkel, é
 ### Hol találok további forrásokat az Aspose.Email for Java webhelyen?
 
 További információkért és forrásokért keresse fel az Aspose.Email for Java dokumentációt a címen[itt](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Manipulação de arquivos EML - operações de carregamento e salvamento 
 linktitle: Manipulação de arquivos EML - operações de carregamento e salvamento em C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como lidar com arquivos EML em C# usando Aspose.Email for .NET. Guia passo a passo com exemplos de código para carregar, modificar e salvar mensagens de e-mail.
-type: docs
 weight: 13
 url: /pt/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulação de arquivos EML - operações de carregamento e salvamento em C#
+
 
 ## Introdução aos arquivos EML
 
@@ -150,3 +156,9 @@ Sim, Aspose.Email permite carregar vários arquivos EML em lotes, tornando conve
 ### O Aspose.Email é adequado para projetos comerciais?
 
 Sim, Aspose.Email é uma biblioteca versátil adequada para projetos pessoais e comerciais, oferecendo recursos poderosos para manipulação de e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

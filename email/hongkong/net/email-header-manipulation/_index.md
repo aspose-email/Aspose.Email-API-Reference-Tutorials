@@ -3,10 +3,16 @@ title: 電子郵件標頭操作
 linktitle: 電子郵件標頭操作
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 教學課程有效地操作電子郵件標頭。學習提取、修改和個性化標題以增強溝通。
-type: docs
 weight: 14
 url: /zh-hant/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子郵件標頭操作
+
 
 ## 介紹
 
@@ -33,3 +39,9 @@ Aspose.Email for .NET 關於「電子郵件標頭和操作」的教學課程為�
 了解如何使用 Aspose.Email for .NET 在 C# 中擷取電子郵件標頭。具有原始程式碼的分步指南，可實現高效的電子郵件分析。 
 ### [在 C# 中指定自訂標頭](./specifying-custom-headers-in-csharp/)
 了解如何使用 Aspose.Email for .NET 在 C# 中指定自訂標頭以增強電子郵件通訊。本逐步指南提供了有關建立個人化電子郵件標題以提高參與度的見解。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

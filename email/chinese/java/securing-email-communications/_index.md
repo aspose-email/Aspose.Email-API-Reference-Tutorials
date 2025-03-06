@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 保护电子邮件通信
 linktitle: 使用 Aspose.Email for Java 保护电子邮件通信
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 增强电子邮件安全性。我们的教程涵盖加密、数字签名等安全电子邮件通信的内容。
-type: docs
 weight: 14
 url: /zh/java/securing-email-communications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 保护电子邮件通信
+
 
 在电子邮件通信在个人和专业领域都发挥着关键作用的时代，确保通过电子邮件共享的敏感信息的安全性变得至关重要。 Aspose.Email for Java 使开发人员能够强化电子邮件通信，提供强大的加密、数字签名和其他安全功能。在这个综合教程中，我们深入研究了使用 Aspose.Email for Java 保护电子邮件通信的各个方面。
 
@@ -24,3 +30,9 @@ url: /zh/java/securing-email-communications/
 ## 使用 Aspose.Email for Java 教程保护电子邮件通信
 ### [使用 Aspose.Email 进行 TLS 加密](./tls-encryption/)
 了解如何使用 Aspose.Email for Java 实现 TLS 加密。请按照我们的分步指南（包含源代码和常见问题解答）进行安全电子邮件通信。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

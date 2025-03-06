@@ -3,10 +3,16 @@ title: Aggiunta di intestazioni personalizzate in Aspose.Email
 linktitle: Aggiunta di intestazioni personalizzate in Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come migliorare i tuoi messaggi e-mail aggiungendo intestazioni personalizzate utilizzando Aspose.Email per Java. Migliora i metadati e l'organizzazione della posta elettronica.
-type: docs
 weight: 15
 url: /it/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aggiunta di intestazioni personalizzate in Aspose.Email
+
 
 ## introduzione
 
@@ -132,3 +138,9 @@ In questa guida hai imparato come aggiungere intestazioni personalizzate a un'e-
 
 ### Come posso estrarre intestazioni personalizzate dalle e-mail ricevute?
     Puoi usare il`getHeaders` metodo sulle e-mail ricevute`MailMessage` oggetto per recuperare ed elaborare intestazioni personalizzate.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

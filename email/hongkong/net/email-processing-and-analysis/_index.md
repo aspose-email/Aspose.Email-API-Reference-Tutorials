@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for .NET 進行高效能電子郵件處理和分析
 linktitle: 電子郵件處理和分析
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 有關簡化電子郵件處理和深入分析的教學課程來優化應用程式的電子郵件管理和決策。學習以程式設計方式檢索、組織和分析電子郵件內容。探索增強溝通和數據驅動策略的實際範例。
-type: docs
 weight: 13
 url: /zh-hant/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for .NET 進行高效能電子郵件處理和分析
+
 
 ## 介紹
 
@@ -43,3 +49,9 @@ Aspose.Email for .NET 關於「電子郵件處理和分析」的教學課程為�
 了解使用 Aspose.Email for .NET 輕鬆將 HTML 電子郵件內容轉換為純文字。詳細指南和代碼。立即探索！
 ### [使用 C# 程式碼保留原始邊界](./preserving-original-boundaries-using-csharp-code/)
 了解如何使用 C# 和 Aspose.Email for .NET 保留電子郵件附件的原始邊界。帶有原始程式碼的分步指南。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

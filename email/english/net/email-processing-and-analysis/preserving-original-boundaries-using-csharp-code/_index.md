@@ -3,10 +3,16 @@ title: Preserving Original Boundaries using C# Code
 linktitle: Preserving Original Boundaries using C# Code
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
-type: docs
 weight: 13
 url: /net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Preserving Original Boundaries using C# Code
+
 
 ## Introduction to Preserving Original Boundaries
 
@@ -107,3 +113,10 @@ You can use the Aspose.Email library to load and manipulate image attachments wh
 ### Where can I find more information about Aspose.Email for .NET?
 
 You can find comprehensive documentation and examples on the [Aspose.Email documentation](https://reference.aspose.com/email/net/) page.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

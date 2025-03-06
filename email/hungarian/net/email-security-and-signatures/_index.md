@@ -3,10 +3,16 @@ title: E-mail biztonság és aláírások
 linktitle: E-mail biztonság és aláírások
 second_title: Aspose.Email .NET Email Processing API
 description: Az Aspose.Email for .NET oktatóprogramjaival robusztus e-mail biztonsági intézkedéseket és személyre szabott aláírásokat hajthat végre. Biztosítsa a biztonságos kommunikációt és a professzionális márkaépítést.
-type: docs
 weight: 19
 url: /hu/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail biztonság és aláírások
+
 
 ## Bevezetés
 
@@ -25,3 +31,9 @@ Az e-mail aláírásokról szóló oktatóanyagok arra összpontosítanak, hogy 
 
 ### [E-mailek aláírása DKIM-mel C# kóddal](./signing-emails-with-dkim-using-csharp-code/)
 Ismerje meg az e-mailek védelmét a DKIM segítségével a C# és az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal. Növelje az e-mailek bizalmát és hitelességét.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

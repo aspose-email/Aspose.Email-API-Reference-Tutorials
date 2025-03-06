@@ -3,10 +3,16 @@ title: C# Guide - Uložení e-mailu jako souboru MHTML
 linktitle: C# Guide - Uložení e-mailu jako souboru MHTML
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se ukládat e-maily jako soubory MHTML pomocí C# a Aspose.Email pro .NET. Podrobný průvodce s příklady kódu a často kladenými dotazy.
-type: docs
 weight: 16
 url: /cs/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Uložení e-mailu jako souboru MHTML
+
 
 ## Úvod do ukládání e-mailu jako souboru MHTML
 
@@ -105,3 +111,9 @@ Absolutně! Aspose.Email je navržen tak, aby vyhovoval potřebám jednotlivců 
 ### Existují nějaké licenční poplatky spojené s používáním Aspose.Email pro .NET?
 
 Ano, Aspose.Email je komerční knihovna. Podrobné informace o licencování a cenách naleznete na[Web Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

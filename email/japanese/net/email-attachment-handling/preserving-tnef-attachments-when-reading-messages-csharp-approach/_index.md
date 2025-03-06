@@ -3,10 +3,16 @@ title: メッセージを読み取るときに TNEF 添付ファイルを保持�
 linktitle: メッセージを読み取るときに TNEF 添付ファイルを保持する - C# アプローチ
 second_title: Aspose.Email .NET 電子メール処理 API
 description: ソース コードを含むこのステップバイステップ ガイドでは、Aspose.Email for .NET を使用して TNEF 添付ファイルを保存する方法を学びます。
-type: docs
 weight: 15
 url: /ja/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# メッセージを読み取るときに TNEF 添付ファイルを保持する - C# アプローチ
+
 
 ## TNEF アタッチメントの概要
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### Aspose.Email は定期的に更新されますか?
 
 はい、Aspose は最新のテクノロジーやプラットフォームとの互換性を確保するために定期的な更新を維持しています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

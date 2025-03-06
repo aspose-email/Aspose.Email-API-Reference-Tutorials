@@ -3,10 +3,16 @@ title: Membaca Banyak Acara dari File ICS dengan C#
 linktitle: Membaca Banyak Acara dari File ICS dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak beberapa peristiwa dari file ICS menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk manajemen acara yang efisien.
-type: docs
 weight: 14
 url: /id/net/email-event-and-calendar-handling/reading-multiple-events-from-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membaca Banyak Acara dari File ICS dengan C#
+
 
 Di era digital saat ini, mengelola acara dan janji temu secara efisien sangatlah penting bagi bisnis dan individu. Jika Anda bekerja dengan data kalender di aplikasi C#, Anda akan sering menemukan file ICS (iCalendar). File-file ini berisi informasi acara dalam format standar, sehingga mudah dibagikan dan diproses. Dalam panduan langkah demi langkah ini, kita akan menjelajahi cara membaca beberapa peristiwa dari file ICS menggunakan C# dan pustaka Aspose.Email untuk .NET yang canggih.
 
@@ -73,3 +79,9 @@ Ya, Anda memerlukan lisensi yang valid untuk menggunakan Aspose.Email untuk .NET
 
 5. ### Di mana saya dapat menemukan lebih banyak contoh dan sumber daya untuk Aspose.Email untuk .NET?
  Anda dapat menjelajahi dokumentasi API dan contoh kode di[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

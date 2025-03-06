@@ -3,10 +3,16 @@ title: Ställa in prioritets- och betydelserubriker med Aspose.Email
 linktitle: Ställa in prioritets- och betydelserubriker med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Öka din e-posteffekt genom att ställa in prioritets- och betydelserubriker med Aspose.Email för Java. Lär dig hur i denna steg-för-steg-guide.
-type: docs
 weight: 14
 url: /sv/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ställa in prioritets- och betydelserubriker med Aspose.Email
+
 
 ## Introduktion
 
@@ -94,3 +100,9 @@ Absolut! Du kan ställa in både prioritets- och betydelserubriker för att skr�
 ### Hur hanterar jag e-postbilagor med Aspose.Email?
 
  Att hantera e-postbilagor med Aspose.Email är enkelt. Du kan använda`Attachment` klass för att lägga till bilagor till dina e-postmeddelanden. För en detaljerad guide, se Aspose.Email-dokumentationen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

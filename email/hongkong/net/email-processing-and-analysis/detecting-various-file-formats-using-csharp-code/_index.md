@@ -3,10 +3,16 @@ title: 使用 C# 程式碼檢測各種文件格式
 linktitle: 使用 C# 程式碼檢測各種文件格式
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 C# 和 Aspose.Email for .NET 輕鬆偵測檔案格式。逐步指南和程式碼範例。立即探索！
-type: docs
 weight: 13
 url: /zh-hant/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 程式碼檢測各種文件格式
+
 
 作為開發人員，識別文件的格式對於處理和操作至關重要。使用 Aspose.Email for .NET，您可以準確地偵測檔案格式。本指南提供了包含原始程式碼的逐步教學課程，介紹如何使用 C# 和 Aspose.Email for .NET 來偵測各種檔案格式。
 
@@ -119,3 +125,9 @@ namespace FileFormatDetectionDemo
 ### 在哪裡可以找到 Aspose.Email for .NET 的詳細文件？
 
 如需全面的文件、程式碼範例和資源，請訪問[Aspose.Email for .NET API 參考](https://reference.aspose.com/email/net)頁。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

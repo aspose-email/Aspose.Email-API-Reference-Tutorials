@@ -3,10 +3,16 @@ title: Melampirkan File ke Email Menggunakan Aspose.Email
 linktitle: Melampirkan File ke Email Menggunakan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara melampirkan file ke pesan email menggunakan Aspose.Email untuk Java. Sempurnakan email Anda dengan mudah menggunakan panduan langkah demi langkah ini.
-type: docs
 weight: 12
 url: /id/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Melampirkan File ke Email Menggunakan Aspose.Email
+
 ## Perkenalan
 
 Dalam dunia komunikasi email, kemampuan mengirim lampiran sangatlah penting. Baik Anda mengirim dokumen penting, gambar, atau jenis file lainnya, prosesnya harus mudah dan dapat diandalkan. Aspose.Email untuk Java menyederhanakan proses ini dengan menyediakan alat canggih untuk melampirkan file ke pesan email.
@@ -134,3 +140,9 @@ Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan bantuan, silakan meng
 
 ### Apakah ada batasan ukuran untuk lampiran email?
    Server email dan klien mungkin memiliki batasan ukuran lampiran. Pastikan lampiran Anda berada dalam batas ukuran yang dapat diterima untuk menghindari masalah pengiriman atau penerimaan email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

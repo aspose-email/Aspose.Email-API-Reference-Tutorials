@@ -3,10 +3,16 @@ title: ईमेल में अनुलग्नक शामिल करन
 linktitle: ईमेल में अनुलग्नक शामिल करना - C# उदाहरण
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके ईमेल में अनुलग्नक शामिल करने का तरीका जानें। C# कोड उदाहरण के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 10
 url: /hi/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ईमेल में अनुलग्नक शामिल करना - C# उदाहरण
+
 
 ## ईमेल में अनुलग्नक शामिल करने का परिचय
 
@@ -111,3 +117,9 @@ class Program
 ### मुझे Aspose.Email की क्षमताओं के बारे में अधिक जानकारी कहां मिल सकती है?
 
  Aspose.Email की विशेषताओं, कक्षाओं और विधियों के बारे में अधिक विस्तृत जानकारी के लिए, देखें[Aspose.ईमेल एपीआई संदर्भ](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

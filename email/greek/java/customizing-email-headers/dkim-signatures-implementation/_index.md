@@ -3,10 +3,16 @@ title: Υλοποίηση υπογραφών DKIM με Aspose.Email
 linktitle: Υλοποίηση υπογραφών DKIM με Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Εξασφαλίστε την ασφάλεια email με τις υπογραφές DKIM χρησιμοποιώντας το Aspose.Email για Java. Οδηγός βήμα προς βήμα και κώδικας για την υλοποίηση του DKIM.
-type: docs
 weight: 15
 url: /el/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Υλοποίηση υπογραφών DKIM με Aspose.Email
+
 
 ## Υλοποίηση υπογραφών DKIM με Aspose.Email
 
@@ -112,3 +118,9 @@ client.send(message);
 ### Πού μπορώ να βρω περισσότερους πόρους στο Aspose.Email για Java;
 
 Για περισσότερες πληροφορίες και πόρους, επισκεφθείτε την τεκμηρίωση Aspose.Email for Java στη διεύθυνση[εδώ](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

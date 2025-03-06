@@ -3,10 +3,16 @@ title: Gestione principale degli allegati e-mail con Aspose.Email per .NET
 linktitle: Gestione degli allegati e-mail
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Migliora la gestione della posta elettronica utilizzando Aspose.Email per i tutorial .NET. Scopri l'elaborazione semplificata, l'analisi e gli insight basati sui dati. Guida passo passo fornita.
-type: docs
 weight: 12
 url: /it/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestione principale degli allegati e-mail con Aspose.Email per .NET
+
 ## introduzione
 
 tutorial Aspose.Email per .NET su "Allegati e-mail e gestione degli allegati" offrono agli sviluppatori una guida completa per gestire e manipolare in modo efficace gli allegati e-mail all'interno delle loro applicazioni. Questi tutorial forniscono preziose informazioni su come sfruttare la potenza di Aspose.Email per .NET per gestire senza problemi gli allegati, migliorando lo scambio di dati e la collaborazione. Con istruzioni dettagliate e frammenti di codice illustrativi, gli sviluppatori possono integrare con sicurezza le funzionalità relative agli allegati nelle loro applicazioni, ottimizzando i flussi di lavoro delle comunicazioni e-mail e le esperienze utente.
@@ -46,3 +52,10 @@ Scopri come estrarre allegati incorporati da file MSG utilizzando C# e Aspose.Em
 Scopri come preservare il formato MSG incorporato utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente.
 ### [Conservazione degli allegati TNEF durante la lettura dei messaggi: approccio C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Scopri come preservare gli allegati TNEF utilizzando Aspose.Email per .NET in questa guida passo passo con il codice sorgente.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

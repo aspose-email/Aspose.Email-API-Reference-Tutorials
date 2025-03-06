@@ -3,10 +3,16 @@ title: Impostazione dello stato partecipante per i partecipanti all'appuntamento
 linktitle: Impostazione dello stato partecipante per i partecipanti all'appuntamento con C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come gestire lo stato dei partecipanti all'appuntamento utilizzando C# e Aspose.Email per .NET. Guida passo passo con il codice sorgente.
-type: docs
 weight: 16
 url: /it/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Impostazione dello stato partecipante per i partecipanti all'appuntamento con C#
+
 
 ## Introduzione ad Aspose.Email per .NET
 
@@ -109,3 +115,9 @@ Sì, puoi facilmente integrare le funzionalità discusse in questa guida nelle t
 ### Dove posso trovare ulteriore documentazione e risorse?
 
  Per documentazione e risorse più dettagliate, fare riferimento alla documentazione Aspose.Email per .NET:[Aspose.Email per la documentazione .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

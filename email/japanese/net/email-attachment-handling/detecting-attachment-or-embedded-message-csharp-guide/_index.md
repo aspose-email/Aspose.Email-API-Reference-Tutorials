@@ -3,10 +3,16 @@ title: 添付ファイルまたは埋め込みメッセージの検出 - C# ガ�
 linktitle: 添付ファイルまたは埋め込みメッセージの検出 - C# ガイド
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して、C# で電子メールの添付ファイルと埋め込みメッセージの検出をマスターします。当社の包括的なガイドを使用して、電子メールの処理を向上させます。
-type: docs
 weight: 13
 url: /ja/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 添付ファイルまたは埋め込みメッセージの検出 - C# ガイド
+
 
 ## 添付ファイルまたは埋め込みメッセージの検出の概要 - C# ガイド
 
@@ -106,3 +112,9 @@ foreach (AlternateView alternateView in message.AlternateViews)
 ### 添付ファイルや埋め込みメッセージの処理をカスタマイズできますか?
 
 もちろん、特定のアプリケーションのニーズに合わせて添付ファイルや埋め込みメッセージの処理を調整することもできます。 Aspose.Email は、この目的のために柔軟な API を提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

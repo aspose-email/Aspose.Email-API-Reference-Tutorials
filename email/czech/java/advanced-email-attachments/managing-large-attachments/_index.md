@@ -3,10 +3,16 @@ title: Správa velkých příloh v Aspose.Email
 linktitle: Správa velkých příloh v Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Efektivně spravujte velké e-mailové přílohy s Aspose.Email pro Java. Podrobný průvodce a zdrojový kód pro zjednodušené zpracování příloh v aplikacích Java.
-type: docs
 weight: 11
 url: /cs/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Správa velkých příloh v Aspose.Email
+
 
 ## Úvod do správy velkých příloh v Aspose.Email pro Java
 
@@ -145,3 +151,9 @@ Omezení velikosti e-mailových příloh se mohou lišit v závislosti na poskyt
 ### Mohu komprimovat přílohy, abych zmenšil jejich velikost?
 
 Ano, přílohy můžete před odesláním zkomprimovat a zmenšit tak jejich velikost. Aspose.Email poskytuje funkce pro programovou kompresi a dekompresi příloh. Můžete to implementovat, abyste optimalizovali velikost svých e-mailových příloh.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

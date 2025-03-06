@@ -3,10 +3,16 @@ title: Arbeta med inline-bilagor i Aspose.Email
 linktitle: Arbeta med inline-bilagor i Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Optimera din e-postkommunikation med Aspose.Email för Java. Lär dig att arbeta med inline-bilagor i den här omfattande guiden.
-type: docs
 weight: 10
 url: /sv/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Arbeta med inline-bilagor i Aspose.Email
+
 
 ## Introduktion till att arbeta med inline-bilagor i Aspose.Email
 
@@ -135,3 +141,9 @@ För att hantera inline-bilagor i HTML-e-postmeddelanden, använd`LinkedResource
 ### Är Aspose.Email for Java kompatibel med olika e-postservrar?
 
 Ja, Aspose.Email för Java är kompatibel med olika e-postservrar. Se till att du konfigurerar SMTP-inställningarna korrekt för din e-postserver när du skickar e-post.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

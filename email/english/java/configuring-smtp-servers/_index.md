@@ -3,10 +3,16 @@ title: Configuring SMTP Servers with Aspose.Email for Java
 linktitle: Configuring SMTP Servers with Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 description: Learn how to configure SMTP servers effortlessly with Aspose.Email for Java. Step-by-step tutorials for seamless email delivery.
-type: docs
 weight: 12
 url: /java/configuring-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configuring SMTP Servers with Aspose.Email for Java
+
 
 
 Configuring SMTP servers is a crucial step in ensuring reliable email delivery for applications and services. With Aspose.Email for Java, this process becomes effortless, allowing developers to focus on delivering content rather than wrestling with server setup intricacies.
@@ -34,3 +40,9 @@ Optimize email communication with Aspose.Email for Java. Learn to handle SMTP er
 Learn how to customize SMTP headers and footers with Aspose.Email for Java. Enhance your email communication with personalized branding and messages.
 ### [Integrating Multiple SMTP Servers with Aspose.Email](./integrating-multiple-smtp-servers/)
 Learn how to integrate multiple SMTP servers seamlessly with Aspose.Email for Java. Enhance email sending reliability and failover support with our step-by-step guide.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

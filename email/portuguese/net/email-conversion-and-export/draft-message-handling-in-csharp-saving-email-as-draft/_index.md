@@ -3,10 +3,16 @@ title: Tratamento de mensagens de rascunho em C# - Salvando e-mail como rascunho
 linktitle: Tratamento de mensagens de rascunho em C# - Salvando e-mail como rascunho
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como implementar o tratamento de rascunhos de e-mail em C# usando Aspose.Email for .NET. Crie, edite e salve rascunhos com facilidade.
-type: docs
 weight: 17
 url: /pt/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tratamento de mensagens de rascunho em C# - Salvando e-mail como rascunho
+
 
 ## Introdução
 
@@ -103,3 +109,9 @@ Com certeza, seguindo as etapas fornecidas neste guia, você pode integrar perfe
 ### A biblioteca Aspose.Email oferece suporte a outras funcionalidades relacionadas a email?
 
  Sim, a biblioteca Aspose.Email oferece uma ampla gama de recursos para trabalhar com mensagens de email, incluindo envio, recebimento e manipulação de emails e anexos. Você pode consultar a documentação para obter mais detalhes:[aqui](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

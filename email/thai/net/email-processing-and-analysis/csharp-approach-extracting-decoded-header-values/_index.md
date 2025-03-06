@@ -3,10 +3,16 @@ title: วิธี C # - แยกค่าส่วนหัวที่ถอ
 linktitle: วิธี C # - แยกค่าส่วนหัวที่ถอดรหัสแล้ว
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้วิธีแยกค่าส่วนหัวอีเมลที่ถอดรหัสใน C# โดยใช้ Aspose.Email สำหรับ .NET คู่มือที่ครอบคลุมพร้อมตัวอย่างโค้ด
-type: docs
 weight: 17
 url: /th/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# วิธี C
+
 
 ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการใช้ Aspose.Email สำหรับ .NET เพื่อแยกค่าส่วนหัวที่ถอดรหัสออกจากข้อความอีเมล Aspose.Email สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถทำงานกับข้อความอีเมลในแง่มุมต่างๆ รวมถึงการอ่านและจัดการส่วนหัวของอีเมล
 
@@ -77,3 +83,9 @@ class Program
 ## บทสรุป
 
 ในบทช่วยสอนนี้ คุณได้เรียนรู้วิธีใช้ Aspose.Email สำหรับ .NET เพื่อแยกค่าส่วนหัวที่ถอดรหัสออกจากข้อความอีเมล Aspose.Email สำหรับ .NET มอบชุดเครื่องมือที่ครอบคลุมที่ช่วยให้นักพัฒนาสามารถทำงานกับข้อความอีเมลได้อย่างมีประสิทธิภาพ รวมถึงการจัดการส่วนหัวด้วย
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

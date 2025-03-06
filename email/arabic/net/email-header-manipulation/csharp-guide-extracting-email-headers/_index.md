@@ -3,10 +3,16 @@ title: دليل C# - استخراج رؤوس البريد الإلكتروني
 linktitle: دليل C# - استخراج رؤوس البريد الإلكتروني
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية استخراج رؤوس البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لتحليل البريد الإلكتروني بكفاءة.
-type: docs
 weight: 15
 url: /ar/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# دليل C# - استخراج رؤوس البريد الإلكتروني
+
 
 هل سبق لك أن تساءلت عن كيفية استخراج رؤوس البريد الإلكتروني باستخدام C#؟ تحتوي رؤوس البريد الإلكتروني على معلومات قيمة حول المرسل والمستلم والموضوع وتفاصيل أخرى متنوعة. في هذا الدليل، سنرشدك خلال عملية استخراج رؤوس البريد الإلكتروني خطوة بخطوة باستخدام مكتبة Aspose.Email for .NET القوية. توفر هذه المكتبة مجموعة شاملة من الميزات للتعامل مع رسائل البريد الإلكتروني في تطبيقات .NET الخاصة بك.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### أين يمكنني الوصول إلى وثائق Aspose.Email وتنزيل المكتبة؟
 
  يمكنك العثور على الوثائق في[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . لتحميل المكتبة قم بزيارة[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Theo dõi tiến trình chuyển đổi tài liệu email bằng mã C#
 linktitle: Theo dõi tiến trình chuyển đổi tài liệu email bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách triển khai thông báo và theo dõi email bằng Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Hãy nâng cao khả năng giao tiếp qua email của bạn ngay hôm nay!
-type: docs
 weight: 12
 url: /vi/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Theo dõi tiến trình chuyển đổi tài liệu email bằng mã C#
+
 
 Trong thời đại kỹ thuật số ngày nay, giao tiếp qua email đóng một vai trò quan trọng trong cả lĩnh vực cá nhân và nghề nghiệp. Là một lập trình viên, bạn có thể gặp phải nhu cầu xử lý và thao tác các email theo chương trình. Một nhiệm vụ phổ biến là theo dõi tiến trình chuyển đổi tài liệu email và trong bài viết này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng C# và Aspose.Email cho .NET.
 
@@ -101,3 +107,9 @@ Có, còn có các thư viện khác, nhưng Aspose.Email for .NET được bi�
 Bạn có thể khám phá[Aspose.Email để tham khảo API .NET](https://reference.aspose.com/email/net/)để biết hướng dẫn, ví dụ và tài liệu chi tiết.
 
 Giờ đây, bạn đã được trang bị đầy đủ để tự tin xử lý tiến trình chuyển đổi tài liệu email trong các ứng dụng C# của mình. Chúc mừng mã hóa!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

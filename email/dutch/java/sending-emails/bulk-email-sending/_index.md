@@ -3,10 +3,16 @@ title: Bulk-e-mail verzenden met Aspose.Email
 linktitle: Bulk-e-mail verzenden met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer hoe u efficiënt bulk-e-mails kunt verzenden met Aspose.Email voor Java. Een stap-voor-stap handleiding met codevoorbeelden voor e-mailmarketing en communicatie.
-type: docs
 weight: 14
 url: /nl/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bulk-e-mail verzenden met Aspose.Email
+
 
 ## Invoering
 
@@ -132,3 +138,9 @@ In deze handleiding hebt u geleerd hoe u bulk-e-mails kunt verzenden met Aspose.
 
 ### Hoe kan ik omgaan met teruggestuurde of mislukte e-mails bij bulkverzending?
    Aspose.Email biedt functies voor het afhandelen van bezorgingsstatusmeldingen (DSN's) en het volgen van de bezorgingsstatus van e-mail. U kunt indien nodig logica implementeren om teruggestuurde of mislukte e-mails te verwerken.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

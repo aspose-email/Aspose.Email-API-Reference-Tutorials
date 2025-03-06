@@ -3,10 +3,16 @@ title: Κεφαλίδες ηλεκτρονικού ταχυδρομείου στ
 linktitle: Κεφαλίδες ηλεκτρονικού ταχυδρομείου στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Ξεκλειδώστε τη δύναμη των κεφαλίδων email με το Aspose.Email για Java. Μάθετε πώς να ορίζετε και να ανακτάτε κεφαλίδες email χωρίς κόπο.
-type: docs
 weight: 10
 url: /el/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Κεφαλίδες ηλεκτρονικού ταχυδρομείου στο Aspose.Email
+
 
 ## Εισαγωγή στις κεφαλίδες ηλεκτρονικού ταχυδρομείου
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### Πώς μπορώ να εξαγάγω κεφαλίδες email από μια μεγάλη παρτίδα email;
 
 Μπορείτε να χρησιμοποιήσετε τις δυνατότητες ομαδικής επεξεργασίας του Aspose.Email για να εξαγάγετε κεφαλίδες από πολλά μηνύματα ηλεκτρονικού ταχυδρομείου αποτελεσματικά.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

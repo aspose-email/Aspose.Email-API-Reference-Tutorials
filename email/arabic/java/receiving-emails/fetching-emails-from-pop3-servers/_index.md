@@ -3,10 +3,16 @@ title: جلب رسائل البريد الإلكتروني من خوادم POP3 
 linktitle: جلب رسائل البريد الإلكتروني من خوادم POP3 باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية جلب رسائل البريد الإلكتروني من خوادم POP3 باستخدام Aspose.Email لـ Java. تم تضمين دليل خطوة بخطوة مع التعليمات البرمجية المصدر والأسئلة الشائعة.
-type: docs
 weight: 11
 url: /ar/java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# جلب رسائل البريد الإلكتروني من خوادم POP3 باستخدام Aspose.Email
+
 في هذا الدليل الشامل، سنرشدك خلال عملية جلب رسائل البريد الإلكتروني من خوادم POP3 باستخدام مكتبة Aspose.Email for Java القوية. سواء كنت تقوم بإنشاء عميل بريد إلكتروني، أو أتمتة معالجة البريد الإلكتروني، أو تحتاج ببساطة إلى استرداد رسائل البريد الإلكتروني من خادم POP3، فإن هذا البرنامج التعليمي خطوة بخطوة سيزودك بالمعرفة وكود المصدر الذي تحتاجه.
 
 ## 1 المقدمة
@@ -159,3 +165,9 @@ public class EmailFetcher {
 
 ### 4. هل يمكنني جدولة مهام جلب البريد الإلكتروني باستخدام Aspose.Email لـ Java؟
 نعم، يمكنك جدولة مهام جلب البريد الإلكتروني باستخدام مكتبات الجدولة أو أطر العمل في Java مثل Quartz Scholer.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

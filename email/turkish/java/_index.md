@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email for Java Dersleri - E-Posta İşleme Ana
 linktitle: Java Eğitimleri için Aspose.Email
-type: docs
 weight: 10
 url: /tr/java/
 description: Kapsamlı eğitimlerle Aspose.Email for Java'nın gücünü ortaya çıkarın. E-posta manipülasyonunu, yönetimini ve daha fazlasını öğrenin.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java Dersleri - E-Posta İşleme Ana
+
 
 Aspose.Email for Java, geliştiricilerin e-posta mesajlarını kolaylıkla işlemesine ve yönetmesine olanak tanıyan güçlü bir API'dir. İster e-postayla ilgili görevleri otomatikleştirmek, ister e-posta güvenliğini artırmak veya e-posta işlevselliğini Java uygulamalarınıza entegre etmek istiyor olun, Aspose.Email ihtiyacınız olan araçları ve kaynakları sağlar. Bu makalede Aspose.Email for Java eğitimlerinin dünyasını ve bunların e-posta manipülasyonunda uzmanlaşmanıza nasıl yardımcı olabileceğini keşfedeceğiz.
 
@@ -38,3 +43,9 @@ Aspose.Email for Java ile e-posta güvenliğini nasıl geliştireceğinizi öğr
 Aspose.Email for Java ile e-posta başlıklarını zahmetsizce nasıl özelleştireceğinizi öğrenin. Eğiticilere dalın ve e-posta başlığı özelleştirmesinin gücünden yararlanın.
 ### [Aspose.Email for Java ile E-posta Güvenliğini Keşfetmek](./exploring-email-security/)
 Aspose.Email for Java ile e-posta güvenliğini nasıl geliştirebileceğinizi keşfedin. Adım adım eğitimleri ve en iyi uygulamaları keşfedin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

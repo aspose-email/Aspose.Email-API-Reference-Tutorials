@@ -3,10 +3,16 @@ title: Προσθήκη συνημμένων email με χρήση C#
 linktitle: Προσθήκη συνημμένων email με χρήση C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να προσθέτετε συνημμένα email χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 11
 url: /el/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσθήκη συνημμένων email με χρήση C#
+
 
 ## Εισαγωγή στα Συνημμένα Email και στο Aspose.Email για .NET
 
@@ -92,3 +98,9 @@ client.Send(message);
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμαστική έκδοση του Aspose.Email για .NET;
 
 Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμαστικής έκδοσης του Aspose.Email για .NET για να εξερευνήσετε τις δυνατότητές του πριν κάνετε μια αγορά.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تضمين المرفقات في البريد الإلكتروني - مث
 linktitle: تضمين المرفقات في البريد الإلكتروني - مثال C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تضمين المرفقات في البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع مثال على كود C#.
-type: docs
 weight: 10
 url: /ar/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تضمين المرفقات في البريد الإلكتروني - مثال C#
+
 
 ## مقدمة لتضمين المرفقات في البريد الإلكتروني
 
@@ -111,3 +117,9 @@ class Program
 ### أين يمكنني العثور على مزيد من المعلومات حول إمكانيات Aspose.Email؟
 
  للحصول على معلومات أكثر تفصيلاً حول ميزات Aspose.Email وفئاته وأساليبه، راجع[مرجع Aspose.Email API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Gửi email hàng loạt bằng Aspose.Email
 linktitle: Gửi email hàng loạt bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách gửi email hàng loạt một cách hiệu quả bằng Aspose.Email cho Java. Hướng dẫn từng bước với các ví dụ về mã để tiếp thị và liên lạc qua email.
-type: docs
 weight: 14
 url: /vi/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gửi email hàng loạt bằng Aspose.Email
+
 
 ## Giới thiệu
 
@@ -132,3 +138,9 @@ Trong hướng dẫn này, bạn đã học cách gửi email hàng loạt bằn
 
 ### Làm cách nào tôi có thể xử lý các email bị trả lại hoặc không thành công khi gửi hàng loạt?
    Aspose.Email cung cấp các tính năng để xử lý thông báo trạng thái gửi (DSN) và theo dõi trạng thái gửi email. Bạn có thể triển khai logic để xử lý các email bị trả lại hoặc không thành công nếu cần.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

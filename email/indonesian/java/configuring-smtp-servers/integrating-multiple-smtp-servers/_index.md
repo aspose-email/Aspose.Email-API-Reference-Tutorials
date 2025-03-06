@@ -3,10 +3,16 @@ title: Mengintegrasikan Beberapa Server SMTP dengan Aspose.Email
 linktitle: Mengintegrasikan Beberapa Server SMTP dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara mengintegrasikan beberapa server SMTP secara lancar dengan Aspose.Email untuk Java. Tingkatkan keandalan pengiriman email dan dukungan failover dengan panduan langkah demi langkah kami.
-type: docs
 weight: 18
 url: /id/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengintegrasikan Beberapa Server SMTP dengan Aspose.Email
+
 # Pengantar Mengintegrasikan Beberapa Server SMTP dengan Aspose.Email untuk Java
 
 Dalam panduan langkah demi langkah ini, kami akan memandu Anda melalui proses mengintegrasikan beberapa server SMTP menggunakan Aspose.Email untuk Java. Aspose.Email untuk Java adalah API canggih yang memungkinkan Anda bekerja dengan pesan email, termasuk mengirimkannya melalui server SMTP. Mengintegrasikan beberapa server SMTP dapat berguna untuk penyeimbangan beban, failover, dan skenario lain yang memerlukan redundansi dalam proses pengiriman email.
@@ -96,3 +102,9 @@ Aspose.Email untuk Java mendukung SSL/TLS untuk komunikasi email yang aman. Anda
 ### Bagaimana cara menguji integrasi server SMTP?
 
 Anda dapat menguji integrasi server SMTP dengan mengirimkan email percobaan dan memeriksa keberhasilan pengiriman. Pantau log aplikasi Anda untuk menemukan kesalahan atau pengecualian apa pun selama proses tersebut.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email के साथ SMTP शीर्षलेख और पा
 linktitle: Aspose.Email के साथ SMTP शीर्षलेख और पादलेख को अनुकूलित करना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email के साथ SMTP शीर्षलेख और पाद लेख को अनुकूलित करना सीखें। वैयक्तिकृत ब्रांडिंग और संदेशों के साथ अपना ईमेल संचार बढ़ाएँ।
-type: docs
 weight: 16
 url: /hi/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email के साथ SMTP शीर्षलेख और पादलेख को अनुकूलित करना
+
 
 ## परिचय
 
@@ -107,3 +113,9 @@ client.send(message);
 ### अनुकूलित ईमेल भेजने के लिए मुझे किस एसएमटीपी सेटिंग्स का उपयोग करना चाहिए?
 
 आपको अपने ईमेल सेवा प्रदाता या अपने संगठन के आईटी विभाग द्वारा प्रदान की गई एसएमटीपी सेटिंग्स का उपयोग करना चाहिए। इन सेटिंग्स में आम तौर पर एसएमटीपी सर्वर पता, पोर्ट नंबर और प्रमाणीकरण क्रेडेंशियल शामिल होते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

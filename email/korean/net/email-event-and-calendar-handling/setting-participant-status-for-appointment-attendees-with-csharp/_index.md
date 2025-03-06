@@ -3,10 +3,16 @@ title: C#을 사용하여 약속 참석자의 참가자 상태 설정
 linktitle: C#을 사용하여 약속 참석자의 참가자 상태 설정
 second_title: Aspose.Email .NET 이메일 처리 API
 description: C# 및 .NET용 Aspose.Email을 사용하여 약속 참석자의 상태를 관리하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 16
 url: /ko/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 약속 참석자의 참가자 상태 설정
+
 
 ## .NET용 Aspose.Email 소개
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### 추가 문서와 리소스는 어디에서 찾을 수 있나요?
 
  더 자세한 문서 및 리소스는 .NET 문서용 Aspose.Email을 참조하세요.[.NET 문서용 Aspose.Email](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

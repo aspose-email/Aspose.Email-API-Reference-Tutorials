@@ -3,10 +3,16 @@ title: Nhận thông báo qua email bằng mã C#
 linktitle: Nhận thông báo qua email bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách nhận thông báo qua email trong C# bằng Aspose.Email for .NET. Ví dụ mã hiệu quả được cung cấp.
-type: docs
 weight: 10
 url: /vi/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhận thông báo qua email bằng mã C#
+
 
 
 Trong thời đại kỹ thuật số, giao tiếp là điều cần thiết và email vẫn là một trong những phương tiện trao đổi thông tin phổ biến nhất. Là nhà phát triển, bạn có thể thấy mình cần gửi và nhận thông báo qua email trong ứng dụng của mình. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách nhận thông báo qua email bằng C# bằng cách sử dụng Aspose.Email cho .NET.
@@ -88,3 +94,9 @@ Bằng cách làm theo các bước này, bạn có thể tích hợp liền m�
    Aspose.Email không áp đặt các giới hạn nghiêm ngặt về số lượng email bạn có thể gửi hoặc nhận, nhưng nó có thể tuân theo các giới hạn của máy chủ email của bạn.
 
 Điều đó kết thúc hướng dẫn của chúng tôi về cách nhận thông báo qua email bằng C# bằng Aspose.Email cho .NET. Chúng tôi hy vọng bạn thấy hướng dẫn này hữu ích trong việc triển khai thông báo qua email trong ứng dụng của mình. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

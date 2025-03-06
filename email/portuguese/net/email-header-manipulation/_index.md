@@ -3,10 +3,16 @@ title: Manipulação de cabeçalho de e-mail
 linktitle: Manipulação de cabeçalho de e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Manipule cabeçalhos de e-mail com eficiência usando os tutoriais Aspose.Email for .NET. Aprenda a extrair, modificar e personalizar cabeçalhos para melhorar a comunicação.
-type: docs
 weight: 14
 url: /pt/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulação de cabeçalho de e-mail
+
 
 ## Introdução
 
@@ -33,3 +39,9 @@ Aprenda como personalizar o pedido MHTML usando C# e Aspose.Email para .NET. Gui
 Aprenda como extrair cabeçalhos de e-mail em C# usando Aspose.Email for .NET. Guia passo a passo com código-fonte para análise eficiente de e-mail. 
 ### [Especificando cabeçalhos personalizados em C#](./specifying-custom-headers-in-csharp/)
 Aprenda como especificar cabeçalhos personalizados em C# usando Aspose.Email for .NET para aprimorar a comunicação por email. Este guia passo a passo fornece insights sobre como criar cabeçalhos de e-mail personalizados para melhorar o envolvimento.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

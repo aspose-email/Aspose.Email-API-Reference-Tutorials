@@ -3,10 +3,16 @@ title: Lavorare con allegati in linea in Aspose.Email
 linktitle: Lavorare con allegati in linea in Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Ottimizza la tua comunicazione e-mail con Aspose.Email per Java. Impara a lavorare con gli allegati in linea in questa guida completa.
-type: docs
 weight: 10
 url: /it/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lavorare con allegati in linea in Aspose.Email
+
 
 ## Introduzione all'utilizzo degli allegati in linea in Aspose.Email
 
@@ -135,3 +141,9 @@ Per gestire gli allegati in linea nelle e-mail HTML, utilizzare il file`LinkedRe
 ### Aspose.Email per Java è compatibile con diversi server di posta elettronica?
 
 Sì, Aspose.Email per Java è compatibile con vari server di posta elettronica. Assicurati di configurare correttamente le impostazioni SMTP per il tuo server di posta elettronica quando invii e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# útmutató – E-mail fejlécek kibontása
 linktitle: C# útmutató – E-mail fejlécek kibontása
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan bonthatja ki az e-mail fejléceket C# nyelven az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal a hatékony e-mail elemzéshez.
-type: docs
 weight: 15
 url: /hu/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# útmutató – E-mail fejlécek kibontása
+
 
 Gondolkozott már azon, hogyan lehet e-mail fejléceket kibontani C# használatával? Az e-mail fejlécek értékes információkat tartalmaznak a feladóról, a címzettről, a tárgyról és számos egyéb részletről. Ebben az útmutatóban lépésről lépésre végigvezetjük az e-mail fejlécek kibontásának folyamatán a hatékony Aspose.Email for .NET könyvtár használatával. Ez a könyvtár a szolgáltatások átfogó készletét kínálja az e-mailekkel való munkavégzéshez a .NET-alkalmazásokban.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Hol érhetem el az Aspose.Email dokumentációját és tölthetem le a könyvtárat?
 
  A dokumentációt megtalálod a címen[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . A könyvtár letöltéséhez látogasson el ide[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

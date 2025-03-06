@@ -3,10 +3,16 @@ title: Préserver les pièces jointes TNEF lors de la lecture des messages - App
 linktitle: Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment conserver les pièces jointes TNEF à l'aide d'Aspose.Email pour .NET dans ce guide étape par étape avec le code source.
-type: docs
 weight: 15
 url: /fr/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#
+
 
 ## Introduction aux pièces jointes TNEF
 
@@ -132,3 +138,9 @@ Absolument! Aspose.Email est conçu pour répondre à un large éventail d'appli
 ### Aspose.Email est-il régulièrement mis à jour ?
 
 Oui, Aspose maintient des mises à jour régulières pour garantir la compatibilité avec les dernières technologies et plateformes.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

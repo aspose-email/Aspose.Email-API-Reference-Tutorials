@@ -3,10 +3,16 @@ title: التعامل الفعال مع أحداث البريد الإلكترو
 linktitle: التعامل مع حدث البريد الإلكتروني والتقويم
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتبسيط التعامل مع أحداث البريد الإلكتروني وإدارة التقويم باستخدام Aspose.Email لبرامج .NET التعليمية. تعلم كيفية أتمتة أحداث البريد الإلكتروني ودمج وظائف التقويم بسلاسة.
-type: docs
 weight: 15
 url: /ar/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التعامل الفعال مع أحداث البريد الإلكتروني والتقويم
+
 
 ## مقدمة
 
@@ -32,3 +38,9 @@ url: /ar/net/email-event-and-calendar-handling/
 تعرف على كيفية استخدام Aspose.Email لـ .NET لإنشاء مسودة رسائل بريد إلكتروني لطلب موعد في C#. تعزيز الاتصالات التجارية والكفاءة.
 ### [تغيير ProdID في ملفات ICS باستخدام C#](./altering-prodid-in-ics-files-with-csharp/)
 تعلم كيفية تغيير ProdID في ملفات ICS باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة والكود. ضمان سلامة البيانات والتوافق. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

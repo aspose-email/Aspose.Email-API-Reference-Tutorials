@@ -3,10 +3,16 @@ title: Gestion des brouillons de messages en C# - Enregistrement d'un e-mail en 
 linktitle: Gestion des brouillons de messages en C# - Enregistrement d'un e-mail en tant que brouillon
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment implémenter la gestion des brouillons de courrier électronique en C# à l'aide d'Aspose.Email pour .NET. Créez, modifiez et enregistrez des brouillons en toute transparence.
-type: docs
 weight: 17
 url: /fr/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestion des brouillons de messages en C# - Enregistrement d'un e-mail en tant que brouillon
+
 
 ## Introduction
 
@@ -103,3 +109,9 @@ Absolument, en suivant les étapes fournies dans ce guide, vous pouvez intégrer
 ### La bibliothèque Aspose.Email prend-elle en charge d'autres fonctionnalités liées au courrier électronique ?
 
  Oui, la bibliothèque Aspose.Email offre un large éventail de fonctionnalités pour travailler avec des messages électroniques, notamment l'envoi, la réception et la manipulation d'e-mails et de pièces jointes. Vous pouvez vous référer à la documentation pour plus de détails :[ici](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

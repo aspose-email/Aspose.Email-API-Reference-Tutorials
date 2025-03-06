@@ -3,10 +3,16 @@ title: OFT-bestanden genereren uit berichten - C#-zelfstudie
 linktitle: OFT-bestanden genereren uit berichten - C#-zelfstudie
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u OFT-bestanden kunt maken van berichten met Aspose.Email voor .NET. Stapsgewijze handleiding met broncode voor het efficiënt genereren van e-mailsjablonen.
-type: docs
 weight: 19
 url: /nl/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# OFT-bestanden genereren uit berichten - C#-zelfstudie
+
 
 ## Inleiding tot het genereren van OFT-bestanden
 
@@ -114,3 +120,9 @@ Absoluut! U kunt uw eigen tijdelijke aanduidingen in de sjabloon definiëren en 
 ### Hoe zorg ik ervoor dat mijn gegenereerde e-mails niet in de spammap van de ontvanger terechtkomen?
 
 Om te voorkomen dat e-mails als spam worden gemarkeerd, moet u de best practices voor de bezorging van e-mail volgen. Gebruik legitieme verzendmethoden, vermijd buitensporige links en vermeld de juiste afzenderinformatie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

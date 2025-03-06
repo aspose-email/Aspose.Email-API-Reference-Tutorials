@@ -3,10 +3,16 @@ title: Προστασία συνημμένων TNEF - Μέθοδος C#
 linktitle: Προστασία συνημμένων TNEF - Μέθοδος C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να προστατεύετε τα συνημμένα TNEF χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα που περιλαμβάνεται.
-type: docs
 weight: 19
 url: /el/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προστασία συνημμένων TNEF - Μέθοδος C#
+
 
 ## Εισαγωγή στη Διασφάλιση των Συνημμένων TNEF
 
@@ -95,3 +101,9 @@ foreach (Attachment attachment in message.Attachments)
 ### Μπορώ να χρησιμοποιήσω το Aspose.Email σε εμπορικά έργα;
 
 Ναι, μπορείτε να χρησιμοποιήσετε το Aspose.Email σε εμπορικά έργα. Ωστόσο, φροντίστε να διαβάσετε τους όρους αδειοδότησης της Aspose για να διασφαλίσετε τη συμμόρφωση.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

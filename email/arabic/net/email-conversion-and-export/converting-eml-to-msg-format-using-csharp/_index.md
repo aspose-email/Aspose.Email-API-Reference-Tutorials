@@ -3,10 +3,16 @@ title: تحويل EML إلى تنسيق MSG باستخدام C#
 linktitle: تحويل EML إلى تنسيق MSG باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تحويل EML إلى MSG باستخدام C# وAspose.Email لـ .NET. دليل شامل يحتوي على أمثلة التعليمات البرمجية لتحويل تنسيق البريد الإلكتروني بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحويل EML إلى تنسيق MSG باستخدام C#
+
 
 ## مقدمة
 
@@ -84,3 +90,9 @@ class Program
 ### هل يمكنني تخصيص تنسيق إخراج MSG باستخدام Aspose.Email؟
 
 من المؤكد أن Aspose.Email for .NET يوفر خيارات متنوعة لتخصيص تنسيق MSG الناتج بناءً على متطلباتك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

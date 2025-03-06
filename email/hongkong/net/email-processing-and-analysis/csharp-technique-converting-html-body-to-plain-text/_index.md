@@ -3,10 +3,16 @@ title: C# 技術 - 將 HTML 正文轉換為純文字
 linktitle: C# 技術 - 將 HTML 正文轉換為純文字
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解使用 Aspose.Email for .NET 輕鬆將 HTML 電子郵件內容轉換為純文字。詳細指南和代碼。立即探索！
-type: docs
 weight: 19
 url: /zh-hant/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 技術 - 將 HTML 正文轉換為純文字
+
 
 在當今的數位時代，電子郵件通訊在我們的個人和職業生活中發揮著至關重要的作用。通常，電子郵件包含 HTML 格式的內容，以便更好地呈現。但是，在某些情況下，您可能需要從電子郵件的 HTML 正文中提取純文字。本文將指導您使用 C#、Aspose.Email 和 Aspose.Words for .NET 有效率地完成此任務。
 
@@ -75,3 +81,9 @@ A4：是的，Aspose.Email 提供了廣泛的電子郵件自動化功能，使�
  A5：您可以在 Aspose 網站上瀏覽 API 文件和資源：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/)和[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 現在您已經掌握了將 HTML 電子郵件內容轉換為純文字的技巧，您可以增強 C# 中的電子郵件處理能力。快樂編碼！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

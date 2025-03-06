@@ -3,10 +3,16 @@ title: كفاءة تخزين ملفات البريد الإلكتروني واس
 linktitle: تخزين ملفات البريد الإلكتروني واسترجاعها
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: قم بتبسيط عملية تخزين ملفات البريد الإلكتروني واسترجاعها باستخدام Aspose.Email لبرامج .NET التعليمية. تعلم كيفية إدارة رسائل البريد الإلكتروني والمرفقات والوصول إليها برمجياً.
-type: docs
 weight: 18
 url: /ar/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# كفاءة تخزين ملفات البريد الإلكتروني واسترجاعها
+
 
 ## مقدمة
 
@@ -27,3 +33,9 @@ url: /ar/net/email-file-storage-and-retrieval/
 تعرف على كيفية قراءة رسائل تخزين NSF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 ### [حفظ الرسائل من Zimbra TGZ Storage باستخدام C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 تعرف على كيفية استخراج رسائل البريد الإلكتروني الخاصة بـ Zimbra TGZ باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لإدارة البريد الإلكتروني بكفاءة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

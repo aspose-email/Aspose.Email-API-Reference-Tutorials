@@ -3,10 +3,16 @@ title: Differenziare gli allegati in linea e quelli regolari - Approccio C#
 linktitle: Differenziare gli allegati in linea e quelli regolari - Approccio C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come distinguere tra allegati di posta elettronica in linea e normali utilizzando Aspose.Email per .NET. Guida completa con esempi di codice.
-type: docs
 weight: 17
 url: /it/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Differenziare gli allegati in linea e quelli regolari - Approccio C#
+
 
 ## Introduzione alla differenziazione degli allegati in linea e regolari - Approccio C#
 
@@ -107,3 +113,9 @@ Sì, Aspose.Email fornisce librerie per vari linguaggi di programmazione, renden
 ### Posso salvare gli allegati regolari in una posizione specifica sul disco?
 
  Assolutamente! È possibile salvare gli allegati regolari in una posizione specifica sul disco utilizzando il file`Save` metodo dell'oggetto allegato e fornendo il percorso del file desiderato.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

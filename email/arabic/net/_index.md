@@ -1,12 +1,17 @@
 ---
 title: تكوين البريد الإلكتروني وتحويله ومعالجته باستخدام Aspose.Email البرامج التعليمية
 linktitle: Aspose.Email لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description: قم بتحسين إمكانيات البريد الإلكتروني باستخدام Aspose.Email لبرامج .NET التعليمية. تعرف على التركيب والتحويل والمعالجة لإدارة البريد الإلكتروني المتقدمة.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تكوين البريد الإلكتروني وتحويله ومعالجته باستخدام Aspose.Email البرامج التعليمية
+
 
 ## مقدمة
 
@@ -45,3 +50,9 @@ is_root: true
 قم بتبسيط عملية تخزين ملفات البريد الإلكتروني واسترجاعها باستخدام Aspose.Email لبرامج .NET التعليمية. تعلم كيفية إدارة رسائل البريد الإلكتروني والمرفقات والوصول إليها برمجياً.
 ### [أمن البريد الإلكتروني والتوقيعات](./email-security-and-signatures/)
 قم بتنفيذ إجراءات أمان قوية للبريد الإلكتروني وتوقيعات مخصصة باستخدام Aspose.Email لبرامج .NET التعليمية. ضمان التواصل الآمن والعلامات التجارية المهنية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

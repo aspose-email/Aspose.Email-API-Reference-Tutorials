@@ -3,10 +3,16 @@ title: Chỉ định tiêu đề tùy chỉnh trong C#
 linktitle: Chỉ định tiêu đề tùy chỉnh trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách chỉ định tiêu đề tùy chỉnh trong C# bằng cách sử dụng Aspose.Email for .NET để nâng cao khả năng giao tiếp qua email. Hướng dẫn từng bước này cung cấp thông tin chi tiết về cách tạo tiêu đề email được cá nhân hóa để cải thiện mức độ tương tác.
-type: docs
 weight: 16
 url: /vi/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Chỉ định tiêu đề tùy chỉnh trong C#
+
 
 
 ## Giới thiệu
@@ -97,3 +103,9 @@ Hoàn toàn có thể, Aspose.Email for .NET đáp ứng nhiều nhu cầu thao 
 Trong thế giới năng động của giao tiếp qua email, các tiêu đề tùy chỉnh có thể thay đổi cuộc chơi, cho phép tương tác phù hợp và hiệu quả. Với Aspose.Email dành cho .NET, quá trình chỉ định tiêu đề tùy chỉnh trong C# trở nên hợp lý và hiệu quả. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể khai thác sức mạnh của tiêu đề tùy chỉnh để nâng cao khả năng phân loại, cá nhân hóa và mức độ tương tác trong nỗ lực liên lạc qua email của mình.
 
 Nếu bạn đã sẵn sàng đưa khả năng giao tiếp qua email của mình lên một tầm cao mới, hãy đi sâu vào thế giới của các tiêu đề tùy chỉnh bằng cách sử dụng Aspose.Email for .NET. Bằng cách nắm vững kỹ thuật này, bạn có thể gửi email gây được tiếng vang với người nhận và mang lại trải nghiệm liền mạch và hấp dẫn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

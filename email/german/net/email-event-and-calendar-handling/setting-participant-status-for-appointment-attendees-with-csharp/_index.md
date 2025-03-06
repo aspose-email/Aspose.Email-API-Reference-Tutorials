@@ -3,10 +3,16 @@ title: Festlegen des Teilnehmerstatus für Terminteilnehmer mit C#
 linktitle: Festlegen des Teilnehmerstatus für Terminteilnehmer mit C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie den Status von Terminteilnehmern mit C# und Aspose.Email für .NET verwalten. Schritt-für-Schritt-Anleitung mit Quellcode.
-type: docs
 weight: 16
 url: /de/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Festlegen des Teilnehmerstatus für Terminteilnehmer mit C#
+
 
 ## Einführung in Aspose.Email für .NET
 
@@ -109,3 +115,9 @@ Ja, Sie können die in diesem Handbuch besprochenen Funktionen problemlos in Ihr
 ### Wo finde ich weitere Dokumentation und Ressourcen?
 
  Ausführlichere Dokumentation und Ressourcen finden Sie in der Dokumentation zu Aspose.Email für .NET:[Aspose.Email für .NET-Dokumentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

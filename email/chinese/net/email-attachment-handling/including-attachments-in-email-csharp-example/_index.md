@@ -3,10 +3,16 @@ title: 在电子邮件中包含附件 - C# 示例
 linktitle: 在电子邮件中包含附件 - C# 示例
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在电子邮件中包含附件。包含 C# 代码示例的分步指南。
-type: docs
 weight: 10
 url: /zh/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在电子邮件中包含附件 - C# 示例
+
 
 ## 在电子邮件中包含附件简介
 
@@ -111,3 +117,9 @@ class Program
 ### 在哪里可以找到有关 Aspose.Email 功能的更多信息？
 
 有关 Aspose.Email 的功能、类和方法的更多详细信息，请参阅[Aspose.Email API 参考](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

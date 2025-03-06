@@ -3,10 +3,16 @@ title: 探索電子郵件轉換和匯出
 linktitle: 電子郵件轉換和匯出
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 掌握電子郵件資料管理的教學課程。轉換、匯出電子郵件、保持完整性、處理附件。用例子來提升。
-type: docs
 weight: 11
 url: /zh-hant/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 探索電子郵件轉換和匯出
+
 
 ## 介紹
 
@@ -39,3 +45,9 @@ Aspose.Email for .NET 提供的電子郵件轉換和匯出教學課程為開發�
 了解如何使用 C# 和 Aspose.Email for .NET 建立 HTML 電子郵件檔案。具有原始程式碼的逐步指南，可實現無縫電子郵件客製化。
 ### [從訊息產生 OFT 檔案 - C# 教程](./generating-oft-files-from-messages-csharp-tutorial/)
 了解如何使用 Aspose.Email for .NET 從訊息建立 OFT 檔案。帶有原始程式碼的逐步指南，用於高效生成電子郵件範本。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: إدارة المرفقات الكبيرة في Aspose.Email
 linktitle: إدارة المرفقات الكبيرة في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: يمكنك إدارة مرفقات البريد الإلكتروني الكبيرة بكفاءة باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة والكود المصدري للتعامل المبسط مع المرفقات في تطبيقات Java.
-type: docs
 weight: 11
 url: /ar/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إدارة المرفقات الكبيرة في Aspose.Email
+
 
 ## مقدمة لإدارة المرفقات الكبيرة في Aspose.Email لـ Java
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### هل يمكنني ضغط المرفقات لتقليل حجمها؟
 
 نعم، يمكنك ضغط المرفقات لتقليل حجمها قبل إرسالها. يوفر Aspose.Email ميزات لضغط المرفقات وفك ضغطها برمجيًا. يمكنك تنفيذ ذلك لتحسين حجم مرفقات بريدك الإلكتروني.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

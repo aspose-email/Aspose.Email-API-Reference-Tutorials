@@ -3,10 +3,16 @@ title: Personalizzazione di intestazioni e piè di pagina SMTP con Aspose.Email
 linktitle: Personalizzazione di intestazioni e piè di pagina SMTP con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Scopri come personalizzare intestazioni e piè di pagina SMTP con Aspose.Email per Java. Migliora la tua comunicazione e-mail con branding e messaggi personalizzati.
-type: docs
 weight: 16
 url: /it/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personalizzazione di intestazioni e piè di pagina SMTP con Aspose.Email
+
 
 ## introduzione
 
@@ -107,3 +113,9 @@ Sì, puoi utilizzare la formattazione HTML nel contenuto dell'email, incluse int
 ### Quali impostazioni SMTP devo utilizzare per inviare e-mail personalizzate?
 
 Dovresti utilizzare le impostazioni SMTP fornite dal tuo fornitore di servizi di posta elettronica o dal reparto IT della tua organizzazione. Queste impostazioni includono in genere l'indirizzo del server SMTP, il numero di porta e le credenziali di autenticazione.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

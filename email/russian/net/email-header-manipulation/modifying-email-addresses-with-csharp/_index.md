@@ -3,10 +3,16 @@ title: Изменение адресов электронной почты с п
 linktitle: Изменение адресов электронной почты с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как изменить адреса электронной почты с помощью C# с помощью Aspose.Email для .NET. Следуйте этому пошаговому руководству, чтобы эффективно манипулировать адресами электронной почты.
-type: docs
 weight: 10
 url: /ru/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Изменение адресов электронной почты с помощью C#
+
 
 ## Введение
 
@@ -132,3 +138,9 @@ Aspose.Email для .NET предоставляет богатый набор к
 ## Заключение
 
 В этом руководстве мы отправились в путешествие, чтобы исследовать мир модификации адресов электронной почты с помощью C# и Aspose.Email для .NET. Следуя пошаговым инструкциям и используя предоставленный исходный код, вы теперь обладаете навыками эффективного изменения адресов электронной почты в своих приложениях. Возможности Aspose.Email в сочетании с вашими новыми знаниями, несомненно, упростят ваши усилия по манипулированию электронной почтой.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

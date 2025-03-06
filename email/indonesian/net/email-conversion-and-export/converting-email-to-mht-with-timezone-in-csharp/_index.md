@@ -3,10 +3,16 @@ title: Mengonversi Email ke MHT dengan Timezone di C#
 linktitle: Mengonversi Email ke MHT dengan Timezone di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Konversikan email ke format MHT dengan zona waktu yang akurat menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dan contoh kode disediakan.
-type: docs
 weight: 12
 url: /id/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengonversi Email ke MHT dengan Timezone di C#
+
 
 ## Pengenalan Email Konversi Email ke MHT dengan Timezone
 
@@ -105,3 +111,9 @@ Ya, Aspose.Email untuk .NET mendukung berbagai format, termasuk MSG, EML, PST, d
 ### Bagaimana cara mengunduh Aspose.Email versi terbaru untuk .NET?
 
  Anda dapat mengunduh versi terbaru dari halaman rilis:[Unduh Aspose.Email untuk .NET](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

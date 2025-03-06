@@ -3,10 +3,16 @@ title: Changing Fonts during MHT Conversion using C#
 linktitle: Changing Fonts during MHT Conversion using C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to change fonts during MHT conversion using Aspose.Email for .NET. Step-by-step guide with source code. Perfect for email archiving and document management.
-type: docs
 weight: 11
 url: /net/email-header-manipulation/changing-fonts-during-mht-conversion-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Changing Fonts during MHT Conversion using C#
+
 
 In today's digital era, document formatting and presentation play a crucial role in conveying information effectively. When it comes to email communication, ensuring that your emails appear consistent and professional is of utmost importance. This article will guide you through the process of changing fonts during MHT (MIME HTML) conversion using C# with the Aspose.Email for .NET library.
 
@@ -106,3 +112,10 @@ Now that you have the knowledge and tools to manipulate fonts in your MHT files,
 ### 5. Can I automate the font-changing process in my applications?
 
    Yes, you can automate font changes in your applications by integrating Aspose.Email for .NET into your code. This allows for dynamic font customization based on your application's logic.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

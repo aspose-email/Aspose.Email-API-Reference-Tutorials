@@ -3,10 +3,16 @@ title: Przewodnik po języku C# — zapisywanie wiadomości e-mail jako pliku MH
 linktitle: Przewodnik po języku C# — zapisywanie wiadomości e-mail jako pliku MHTML
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak zapisywać wiadomości e-mail jako pliki MHTML przy użyciu języka C# i Aspose.Email dla platformy .NET. Przewodnik krok po kroku z przykładami kodu i często zadawanymi pytaniami.
-type: docs
 weight: 16
 url: /pl/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Przewodnik po języku C# — zapisywanie wiadomości e-mail jako pliku MHTML
+
 
 ## Wprowadzenie do zapisywania wiadomości e-mail jako pliku MHTML
 
@@ -105,3 +111,9 @@ Absolutnie! Aspose.Email został zaprojektowany, aby zaspokoić potrzeby zarówn
 ### Czy są jakieś opłaty licencyjne związane z używaniem Aspose.Email dla .NET?
 
 Tak, Aspose.Email jest biblioteką komercyjną. Szczegółowe informacje na temat licencji i cen można znaleźć na stronie[Witryna Aspose.E-mail](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

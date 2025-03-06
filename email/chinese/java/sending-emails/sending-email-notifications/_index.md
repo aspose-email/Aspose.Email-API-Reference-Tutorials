@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 发送电子邮件通知
 linktitle: 使用 Aspose.Email 发送电子邮件通知
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 有效发送电子邮件通知。包含代码示例和常见问题解答的综合指南，可实现无缝沟通。
-type: docs
 weight: 17
 url: /zh/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 发送电子邮件通知
+
 
 ## 介绍
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### 如何处理电子邮件通知传送状态和跟踪？
    - 您可以实施逻辑来处理电子邮件传送状态通知 (DSN) 并使用其他工具或服务跟踪电子邮件的打开和点击情况。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

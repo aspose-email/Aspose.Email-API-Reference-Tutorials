@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 的高级电子邮件附件
 linktitle: 使用 Aspose.Email for Java 的高级电子邮件附件
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 使用 Aspose.Email for Java 掌握高级电子邮件附件技术。探索有效处理附件的教程。
-type: docs
 weight: 13
 url: /zh/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 的高级电子邮件附件
+
 
 电子邮件附件在现代通信中发挥着关键作用，允许用户无缝共享文档、图像和文件。 Aspose.Email for Java 使开发人员能够控制电子邮件附件并有效地实施先进技术。
 
@@ -35,3 +41,9 @@ Aspose.Email for Java 为开发人员提供了一个强大的工具包来处理�
 了解如何在 Aspose.Email for Java 中将图像作为附件嵌入。通过具有视觉吸引力的内容提升您的电子邮件通信。
 ### [使用 Aspose.Email 作为文档附件](./using-aspose-email-for-document-attachments/)
 了解如何使用 Aspose.Email for Java 管理 Java 电子邮件中的文档附件。轻松创建、发送和提取文档附件。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

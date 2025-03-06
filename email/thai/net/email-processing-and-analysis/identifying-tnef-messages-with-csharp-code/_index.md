@@ -3,10 +3,16 @@ title: การระบุข้อความ TNEF ด้วยรหัส 
 linktitle: การระบุข้อความ TNEF ด้วยรหัส C #
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้วิธีระบุข้อความ TNEF โดยใช้ C# และ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมซอร์สโค้ดและคำถามที่พบบ่อย
-type: docs
 weight: 14
 url: /th/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การระบุข้อความ TNEF ด้วยรหัส C
+
 
 Aspose.Email สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งให้การสนับสนุนที่ครอบคลุมสำหรับการทำงานกับรูปแบบอีเมลและโปรโตคอลต่างๆ ใน C# ในคำแนะนำทีละขั้นตอนนี้ เราจะสำรวจวิธีระบุข้อความ TNEF (Transport Neutral Encapsulation Format) โดยใช้โค้ด C# และไลบรารี Aspose.Email TNEF เป็นรูปแบบอีเมลที่เป็นกรรมสิทธิ์ซึ่ง Microsoft Outlook ใช้เพื่อห่อหุ้ม Rich Text และไฟล์แนบภายในข้อความอีเมล
 
@@ -104,3 +110,9 @@ if (message.IsTnef)
 ### Aspose.Email สามารถจัดการการประมวลผลอีเมลบนแพลตฟอร์มต่างๆ ได้หรือไม่
 
 แน่นอนว่า Aspose.Email เป็นไลบรารีข้ามแพลตฟอร์มที่สามารถใช้ในการพัฒนาแอปพลิเคชันบนแพลตฟอร์มต่าง ๆ รวมถึง Windows, macOS และ Linux
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-mailconversie en -export verkennen
 linktitle: E-mailconversie en export
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Beheers het beheer van e-mailgegevens met behulp van Aspose.Email voor de tutorials van .NET. E-mails converteren, exporteren, integriteit behouden, bijlagen verwerken. Verhoog met voorbeelden.
-type: docs
 weight: 11
 url: /nl/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailconversie en -export verkennen
+
 
 ## Invoering
 
@@ -39,3 +45,9 @@ Leer hoe u concept-e-mailverwerking in C# implementeert met behulp van Aspose.Em
 Leer hoe u HTML-e-mailbestanden maakt met C# en Aspose.Email voor .NET. Stapsgewijze handleiding met broncode voor naadloos e-mailaanpassing.
 ### [OFT-bestanden genereren uit berichten - C#-zelfstudie](./generating-oft-files-from-messages-csharp-tutorial/)
 Leer hoe u OFT-bestanden kunt maken van berichten met Aspose.Email voor .NET. Stapsgewijze handleiding met broncode voor het efficiënt genereren van e-mailsjablonen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

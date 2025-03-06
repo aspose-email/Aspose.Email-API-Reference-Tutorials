@@ -3,10 +3,16 @@ title: Ange mottagaradresser i C#
 linktitle: Ange mottagaradresser i C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du anger mottagaradresser i C# med Aspose.Email för .NET. Skapa, konfigurera och skicka e-post effektivt.
-type: docs
 weight: 19
 url: /sv/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ange mottagaradresser i C#
+
 
 
 Den här guiden leder dig genom processen att ange mottagaradresser i C# med hjälp av Aspose.Email for .NET-biblioteket. Aspose.Email är ett kraftfullt .NET API som låter dig arbeta med e-postmeddelanden och olika e-postrelaterade uppgifter. I den här handledningen kommer vi att täcka hur man lägger till mottagaradresser i ett e-postmeddelande med hjälp av biblioteket.
@@ -119,3 +125,9 @@ catch (Exception ex)
  För mer information och avancerade funktioner i Aspose.Email för .NET, se[Aspose API-referenser](https://reference.aspose.com/email/net/).
 
 Detta avslutar guiden om att ange mottagaradresser i C# med Aspose.Email för .NET. Du har lärt dig hur du skapar ett e-postmeddelande, lägger till mottagaradresser och skickar e-postmeddelandet med hjälp av bibliotekets funktioner.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

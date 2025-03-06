@@ -3,10 +3,16 @@ title: 電子メールからの添付ファイルの抽出 - C# チュートリ�
 linktitle: 電子メールからの添付ファイルの抽出 - C# チュートリアル
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して電子メールの添付ファイルを抽出する方法を段階的に学習します。さまざまな形式に対応し、簡単に保存できます。
-type: docs
 weight: 14
 url: /ja/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールからの添付ファイルの抽出 - C# チュートリアル
+
 
 ## 電子メールからの添付ファイルの抽出の概要 - Aspose.Email for .NET を使用した C# チュートリアル
 
@@ -114,3 +120,9 @@ Aspose.Email は .NET Framework と .NET Core をサポートします。
 ### Aspose.Email に関する詳細情報はどこで入手できますか?
 
 詳細なドキュメントと例については、以下を参照してください。[Aspose.Email ドキュメント](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

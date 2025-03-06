@@ -3,10 +3,16 @@ title: Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHT
 linktitle: Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHTML mit C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie die MHTML-Reihenfolge mit C# und Aspose.Email für .NET anpassen. Schritt-für-Schritt-Anleitung mit Code zur effizienten Informationsanordnung. Steigern Sie jetzt das Benutzererlebnis!
-type: docs
 weight: 14
 url: /de/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definieren einer benutzerdefinierten Reihenfolge von Informationen in MHTML mit C#
+
 
 Im Bereich der E-Mail-Verwaltung ist die Möglichkeit, die Reihenfolge der Informationen in MHTML-E-Mails anzupassen, eine wertvolle Funktion. Aspose.Email für .NET bietet hierfür eine robuste Lösung. In diesem Artikel führen wir Sie Schritt für Schritt durch den Prozess.
 
@@ -80,3 +86,10 @@ In einer Welt, in der eine effektive E-Mail-Verarbeitung von größter Bedeutung
 ### 5. Wo finde ich zusätzliche Ressourcen und Support für Aspose.Email für .NET?
 
 -  Sie können auf umfangreiche Dokumentation, Codebeispiele und Support zugreifen[Aspose.Email für .NET API-Dokumentation](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

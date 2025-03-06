@@ -3,10 +3,16 @@ title: Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama
 linktitle: Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile öncelik ve önem başlıklarını ayarlayarak e-posta etkinizi artırın. Bu adım adım kılavuzda nasıl yapılacağını öğrenin.
-type: docs
 weight: 14
 url: /tr/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama
+
 
 ## giriiş
 
@@ -94,3 +100,9 @@ Kesinlikle! Mesajınızın aciliyetini ve önemini uyarlamak için hem öncelik 
 ### Aspose.Email ile e-posta eklerini nasıl yönetirim?
 
  Aspose.Email ile e-posta eklerini yönetmek oldukça basittir. Şunu kullanabilirsiniz:`Attachment` E-posta mesajlarınıza ekler eklemek için sınıf. Ayrıntılı bir kılavuz için Aspose.Email belgelerine bakın.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

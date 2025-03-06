@@ -3,10 +3,16 @@ title: Manipulering av e-posthuvud
 linktitle: Manipulering av e-posthuvud
 second_title: Aspose.Email .NET Email Processing API
 description: Hantera e-postrubriker effektivt med Aspose.Email för .NET tutorials. Lär dig att extrahera, modifiera och anpassa rubriker för förbättrad kommunikation.
-type: docs
 weight: 14
 url: /sv/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulering av e-posthuvud
+
 
 ## Introduktion
 
@@ -33,3 +39,9 @@ Lär dig hur du anpassar MHTML-ordning med C# & Aspose.Email för .NET. Steg-fö
 Lär dig hur du extraherar e-postrubriker i C# med Aspose.Email för .NET. Steg-för-steg-guide med källkod för effektiv e-postanalys. 
 ### [Ange anpassade rubriker i C#](./specifying-custom-headers-in-csharp/)
 Lär dig hur du anger anpassade rubriker i C# med Aspose.Email för .NET för att förbättra e-postkommunikation. Denna steg-för-steg-guide ger insikter i hur du skapar personliga e-postrubriker för förbättrat engagemang.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

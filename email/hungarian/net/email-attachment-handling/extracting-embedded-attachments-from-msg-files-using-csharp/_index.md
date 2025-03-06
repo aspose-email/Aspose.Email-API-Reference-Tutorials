@@ -3,10 +3,16 @@ title: Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
 linktitle: Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan bonthat ki beágyazott mellékleteket MSG-fájlokból C# és Aspose.Email for .NET használatával. Átfogó útmutató forráskód-példákkal.
-type: docs
 weight: 10
 url: /hu/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
+
 
 ## A beágyazott mellékletek bemutatása
 
@@ -103,3 +109,9 @@ Teljesen! Az Aspose.Email for .NET asztali és webes alkalmazásokban is haszná
 ### Hol találok további példákat és dokumentációt?
 
  Részletes példákat és dokumentációt találhat az Aspose.Email for .NET használatára vonatkozóan a következő helyen:[dokumentáció](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ईमेल रूपांतरण और निर्यात की
 linktitle: ईमेल रूपांतरण और निर्यात
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के ट्यूटोरियल के लिए Aspose.Email का उपयोग करके ईमेल डेटा प्रबंधन में महारत हासिल करें। ईमेल परिवर्तित करें, निर्यात करें, अखंडता बनाए रखें, अनुलग्नक संभालें। उदाहरण सहित उन्नति करें।
-type: docs
 weight: 11
 url: /hi/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ईमेल रूपांतरण और निर्यात की खोज
+
 
 ## परिचय
 
@@ -39,3 +45,9 @@ url: /hi/net/email-conversion-and-export/
 .NET के लिए C# और Aspose.Email का उपयोग करके HTML ईमेल फ़ाइलें बनाना सीखें। निर्बाध ईमेल अनुकूलन के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
 ### [संदेशों से ओएफटी फ़ाइलें उत्पन्न करना - सी# ट्यूटोरियल](./generating-oft-files-from-messages-csharp-tutorial/)
 .NET के लिए Aspose.Email का उपयोग करके संदेशों से OFT फ़ाइलें बनाने का तरीका जानें। कुशल ईमेल टेम्पलेट निर्माण के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

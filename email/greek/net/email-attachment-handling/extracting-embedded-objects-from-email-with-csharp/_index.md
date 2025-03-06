@@ -3,10 +3,16 @@ title: Εξαγωγή ενσωματωμένων αντικειμένων από
 linktitle: Εξαγωγή ενσωματωμένων αντικειμένων από email με C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να εξάγετε ενσωματωμένα αντικείμενα από μηνύματα ηλεκτρονικού ταχυδρομείου χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 16
 url: /el/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή ενσωματωμένων αντικειμένων από email με C#
+
 
 ## Εισαγωγή στα ενσωματωμένα αντικείμενα σε μηνύματα ηλεκτρονικού ταχυδρομείου
 
@@ -113,3 +119,9 @@ namespace EmbeddedObjectExtractor
 ### Πού μπορώ να βρω περισσότερα παραδείγματα χρήσης του Aspose.Email για .NET;
 
  Μπορείτε να βρείτε περισσότερα παραδείγματα κώδικα και σεμινάρια στο[Αναφορά API](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

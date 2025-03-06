@@ -3,10 +3,16 @@ title: Đang tải tin nhắn email với tùy chọn tải trong C#
 linktitle: Đang tải tin nhắn email với tùy chọn tải trong C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách tải email bằng Aspose.Email for .NET trong C#. Khám phá hướng dẫn từng bước và ví dụ về mã nguồn để xử lý email hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đang tải tin nhắn email với tùy chọn tải trong C#
+
 
 ## Giới thiệu về Aspose.Email cho .NET
 
@@ -167,3 +173,9 @@ Tuyệt đối! Aspose.Email for .NET hỗ trợ tải và xử lý các email �
 ### Tôi nên làm gì nếu gặp lỗi khi tải email?
 
 Nếu bạn gặp lỗi trong quá trình tải email, hãy đảm bảo bọc mã tải của bạn trong khối try-catch để xử lý các trường hợp ngoại lệ. Điều này sẽ giúp bạn xác định và giải quyết mọi vấn đề phát sinh.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

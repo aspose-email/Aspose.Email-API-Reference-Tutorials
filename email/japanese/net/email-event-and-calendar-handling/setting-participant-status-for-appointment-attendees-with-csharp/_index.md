@@ -3,10 +3,16 @@ title: C# を使用して予約出席者の参加者ステータスを設定す�
 linktitle: C# を使用して予約出席者の参加者ステータスを設定する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して予定の出席者のステータスを管理する方法を学びます。ソースコード付きのステップバイステップガイド。
-type: docs
 weight: 16
 url: /ja/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用して予約出席者の参加者ステータスを設定する
+
 
 ## Aspose.Email for .NET の概要
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### その他のドキュメントやリソースはどこで入手できますか?
 
 詳細なドキュメントとリソースについては、Aspose.Email for .NET ドキュメントを参照してください。[Aspose.Email for .NET ドキュメント](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

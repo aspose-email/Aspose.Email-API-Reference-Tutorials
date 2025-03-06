@@ -3,10 +3,16 @@ title: إنشاء رسالة بريدية جديدة في C#
 linktitle: إنشاء رسالة بريدية جديدة في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: إتقان إنشاء البريد الإلكتروني في C# باستخدام Aspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية. ارفع مستوى تطبيقك الآن
-type: docs
 weight: 11
 url: /ar/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء رسالة بريدية جديدة في C#
+
 
 هل تتطلع إلى تحسين تطبيق C# الخاص بك عن طريق إضافة القدرة على إرسال رسائل البريد الإلكتروني برمجيًا؟ بفضل قوة Aspose.Email لـ .NET، يمكنك دمج وظائف البريد الإلكتروني بسلاسة في تطبيقك. في هذا الدليل خطوة بخطوة، سنرشدك خلال عملية إنشاء رسالة بريد جديدة باستخدام Aspose.Email لـ .NET، مع استكمال أمثلة التعليمات البرمجية المصدر.
 
@@ -123,3 +129,9 @@ catch (Exception ex)
    يمكنك العثور على وثائق شاملة وأمثلة على التعليمات البرمجية على[مرجع Aspose.Email API](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

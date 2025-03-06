@@ -3,10 +3,16 @@ title: C# megközelítés – Dekódolt fejlécértékek kinyerése
 linktitle: C# megközelítés – Dekódolt fejlécértékek kinyerése
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg a dekódolt e-mail fejlécértékek kibontását C# nyelven az Aspose.Email for .NET segítségével. Átfogó útmutató kódpéldákkal.
-type: docs
 weight: 17
 url: /hu/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# megközelítés – Dekódolt fejlécértékek kinyerése
+
 
 Ebben az oktatóanyagban végigvezetjük az Aspose.Email for .NET használatával a dekódolt fejlécértékek e-mail üzenetekből való kinyeréséhez. Az Aspose.Email for .NET egy robusztus könyvtár, amely felhatalmazza a fejlesztőket az e-mail üzenetek különféle aspektusainak kezelésére, beleértve az e-mailek fejléceinek olvasását és kezelését.
 
@@ -77,3 +83,9 @@ A fenti kódrészletben a következő lépéseket hajtjuk végre:
 ## Következtetés
 
 Ebben az oktatóanyagban megtanulta, hogyan használhatja az Aspose.Email for .NET szolgáltatást dekódolt fejlécértékek kinyerésére az e-mail üzenetekből. Az Aspose.Email for .NET olyan átfogó eszközkészletet kínál, amely felhatalmazza a fejlesztőket az e-mail üzenetek hatékony kezelésére, beleértve a fejlécek kezelését is.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

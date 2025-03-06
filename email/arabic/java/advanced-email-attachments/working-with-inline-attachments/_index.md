@@ -3,10 +3,16 @@ title: العمل مع المرفقات المضمنة في Aspose.Email
 linktitle: العمل مع المرفقات المضمنة في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: قم بتحسين اتصالات البريد الإلكتروني الخاصة بك مع Aspose.Email لـ Java. تعلم كيفية التعامل مع المرفقات المضمنة في هذا الدليل الشامل.
-type: docs
 weight: 10
 url: /ar/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# العمل مع المرفقات المضمنة في Aspose.Email
+
 
 ## مقدمة للعمل مع المرفقات المضمنة في Aspose.Email
 
@@ -135,3 +141,9 @@ LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources(
 ### هل Aspose.Email for Java متوافق مع خوادم البريد الإلكتروني المختلفة؟
 
 نعم، Aspose.Email for Java متوافق مع خوادم البريد الإلكتروني المختلفة. تأكد من تكوين إعدادات SMTP بشكل صحيح لخادم البريد الإلكتروني الخاص بك عند إرسال رسائل البريد الإلكتروني.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

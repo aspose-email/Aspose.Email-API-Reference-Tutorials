@@ -3,10 +3,16 @@ title: Extracción y análisis de encabezados de correo electrónico con Aspose.
 linktitle: Extracción y análisis de encabezados de correo electrónico con Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Desbloquee el poder del análisis de encabezados de correo electrónico con Aspose.Email para Java. Aprenda a extraer y analizar encabezados de correo electrónico para mejorar el seguimiento y la seguridad del correo electrónico.
-type: docs
 weight: 12
 url: /es/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracción y análisis de encabezados de correo electrónico con Aspose.Email
+
 
 ## Introducción a la extracción y análisis de encabezados de correo electrónico con Aspose.Email
 
@@ -107,3 +113,9 @@ Analizar los encabezados de los correos electrónicos es crucial por varias razo
 ### ¿Puedo automatizar el análisis de encabezados de correo electrónico con Aspose.Email?
 
 Sí, puede automatizar el análisis de encabezados de correo electrónico con Aspose.Email integrándolo en sus aplicaciones Java. La biblioteca proporciona métodos convenientes para trabajar con encabezados de correo electrónico.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

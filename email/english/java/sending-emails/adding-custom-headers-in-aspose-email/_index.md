@@ -3,10 +3,16 @@ title: Adding Custom Headers in Aspose.Email
 linktitle: Adding Custom Headers in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to enhance your email messages by adding custom headers using Aspose.Email for Java. Improve email metadata and organization.
-type: docs
 weight: 15
 url: /java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adding Custom Headers in Aspose.Email
+
 
 ## Introduction
 
@@ -132,3 +138,10 @@ In this guide, you've learned how to add custom headers to an email using Aspose
 
 ### How can I extract custom headers from received emails?
    You can use the `getHeaders` method on the received email's `MailMessage` object to retrieve and process custom headers.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

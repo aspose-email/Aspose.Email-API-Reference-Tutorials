@@ -3,10 +3,16 @@ title: 이메일에서 첨부 파일 추출 - C# 연습
 linktitle: 이메일에서 첨부 파일 추출 - C# 연습
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 이메일 첨부 파일을 단계별로 추출하는 방법을 알아보세요. 다양한 형식을 처리하고 쉽게 저장하세요.
-type: docs
 weight: 14
 url: /ko/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일에서 첨부 파일 추출 - C# 연습
+
 
 ## 이메일에서 첨부 파일 추출 소개 - .NET용 Aspose.Email을 사용한 C# 연습
 
@@ -114,3 +120,9 @@ Aspose.Email은 .NET Framework 및 .NET Core를 지원합니다.
 ### Aspose.Email에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
  자세한 문서와 예시는 다음을 참조하세요.[Aspose.이메일 문서](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Τροποποίηση διευθύνσεων email με C#
 linktitle: Τροποποίηση διευθύνσεων email με C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να τροποποιείτε διευθύνσεις email χρησιμοποιώντας C# με τη βοήθεια του Aspose.Email για .NET. Ακολουθήστε αυτόν τον οδηγό βήμα προς βήμα για να χειριστείτε αποτελεσματικά τις διευθύνσεις email.
-type: docs
 weight: 10
 url: /el/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Τροποποίηση διευθύνσεων email με C#
+
 
 ## Εισαγωγή
 
@@ -132,3 +138,9 @@ namespace EmailAddressModification
 ## συμπέρασμα
 
 Σε αυτόν τον οδηγό, ξεκινήσαμε ένα ταξίδι για να εξερευνήσουμε τον κόσμο της τροποποίησης διεύθυνσης email χρησιμοποιώντας C# και Aspose.Email για .NET. Ακολουθώντας τις οδηγίες βήμα προς βήμα και χρησιμοποιώντας τον παρεχόμενο πηγαίο κώδικα, έχετε πλέον τις δεξιότητες να τροποποιείτε αποτελεσματικά τις διευθύνσεις email στις εφαρμογές σας. Οι δυνατότητες του Aspose.Email σε συνδυασμό με τις νέες γνώσεις σας θα βελτιστοποιήσουν αναμφίβολα τις προσπάθειες χειραγώγησης email σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

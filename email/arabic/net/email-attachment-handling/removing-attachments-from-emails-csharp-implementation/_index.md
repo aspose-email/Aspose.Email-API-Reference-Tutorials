@@ -3,10 +3,16 @@ title: إزالة المرفقات من رسائل البريد الإلكترو
 linktitle: إزالة المرفقات من رسائل البريد الإلكتروني - تنفيذ C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إزالة مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود مصدر C#.
-type: docs
 weight: 18
 url: /ar/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إزالة المرفقات من رسائل البريد الإلكتروني - تنفيذ C#
+
 
 ## مقدمة لإزالة المرفقات من رسائل البريد الإلكتروني
 
@@ -97,3 +103,9 @@ message.Save("path/to/save/modified/email.eml");
 ### هل يمكنني اختبار مكتبة Aspose.Email قبل دمجها في مشروعي؟
 
 نعم، يوفر موقع Aspose إصدارات تجريبية من مكتباته التي يمكنك تنزيلها واختبارها قبل اتخاذ قرار الشراء. قم بزيارة موقعهم على الانترنت لمزيد من المعلومات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Menyesuaikan Header dan Footer SMTP dengan Aspose.Email
 linktitle: Menyesuaikan Header dan Footer SMTP dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara menyesuaikan header dan footer SMTP dengan Aspose.Email untuk Java. Tingkatkan komunikasi email Anda dengan pencitraan merek dan pesan yang dipersonalisasi.
-type: docs
 weight: 16
 url: /id/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menyesuaikan Header dan Footer SMTP dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -107,3 +113,9 @@ Ya, Anda dapat menggunakan format HTML di konten email, termasuk header dan foot
 ### Setelan SMTP apa yang harus saya gunakan untuk mengirim email khusus?
 
 Anda harus menggunakan pengaturan SMTP yang disediakan oleh penyedia layanan email atau departemen TI organisasi Anda. Pengaturan ini biasanya mencakup alamat server SMTP, nomor port, dan kredensial autentikasi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

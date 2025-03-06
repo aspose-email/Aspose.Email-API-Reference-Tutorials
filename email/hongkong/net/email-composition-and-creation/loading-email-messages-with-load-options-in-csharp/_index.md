@@ -3,10 +3,16 @@ title: 使用 C# 中的載入選項載入電子郵件
 linktitle: 使用 C# 中的載入選項載入電子郵件
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何在 C# 中使用 Aspose.Email for .NET 載入電子郵件。探索有效電子郵件處理的逐步指南和原始程式碼範例。
-type: docs
 weight: 11
 url: /zh-hant/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 中的載入選項載入電子郵件
+
 
 ## Aspose.Email for .NET 簡介
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### 如果在載入電子郵件時遇到錯誤，我該怎麼辦？
 
 如果您在電子郵件載入過程中遇到錯誤，請確保將載入程式碼包裝在 try-catch 區塊中以處理異常。這將幫助您識別並解決出現的任何問題。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

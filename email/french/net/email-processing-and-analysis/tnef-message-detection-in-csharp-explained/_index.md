@@ -3,10 +3,16 @@ title: Détection de messages TNEF en C# - Explication
 linktitle: Détection de messages TNEF en C# - Explication
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à détecter et traiter les messages TNEF en C# à l'aide d'Aspose.Email pour .NET. Améliorez la gestion des e-mails avec du texte enrichi et des pièces jointes.
-type: docs
 weight: 15
 url: /fr/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Détection de messages TNEF en C# - Explication
+
 
 Ce guide vous fournira une explication détaillée étape par étape sur la façon de détecter les messages TNEF (Transport Neutral Encapsulation Format) à l'aide de la bibliothèque Aspose.Email pour .NET. TNEF est un format utilisé par Microsoft Outlook pour encapsuler du texte enrichi et des pièces jointes dans des messages électroniques. Aspose.Email for .NET propose un ensemble puissant d'API pour travailler avec les e-mails et les pièces jointes, y compris les messages TNEF.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 Dans ce guide, vous avez appris à détecter les messages TNEF (Transport Neutral Encapsulation Format) à l'aide de la bibliothèque Aspose.Email pour .NET. Les messages TNEF, souvent utilisés par Microsoft Outlook, encapsulent du texte enrichi et des pièces jointes dans les e-mails. En suivant les étapes décrites dans ce guide, vous pouvez identifier efficacement les messages TNEF et extraire leurs pièces jointes pour un traitement ultérieur.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

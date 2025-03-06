@@ -3,10 +3,16 @@ title: Administrar archivos adjuntos grandes en Aspose.Email
 linktitle: Administrar archivos adjuntos grandes en Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Administre eficientemente grandes archivos adjuntos de correo electrónico con Aspose.Email para Java. Guía paso a paso y código fuente para un manejo optimizado de archivos adjuntos en aplicaciones Java.
-type: docs
 weight: 11
 url: /es/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Administrar archivos adjuntos grandes en Aspose.Email
+
 
 ## Introducción a la gestión de archivos adjuntos grandes en Aspose.Email para Java
 
@@ -145,3 +151,9 @@ Las limitaciones de tamaño de los archivos adjuntos de correo electrónico pued
 ### ¿Puedo comprimir los archivos adjuntos para reducir su tamaño?
 
 Sí, puedes comprimir los archivos adjuntos para reducir su tamaño antes de enviarlos. Aspose.Email proporciona funciones para comprimir y descomprimir archivos adjuntos mediante programación. Puede implementar esto para optimizar el tamaño de los archivos adjuntos de su correo electrónico.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

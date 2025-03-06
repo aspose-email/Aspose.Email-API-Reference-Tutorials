@@ -3,10 +3,16 @@ title: Envoi massif d'e-mails avec Aspose.Email
 linktitle: Envoi massif d'e-mails avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment envoyer efficacement des e-mails en masse à l'aide d'Aspose.Email pour Java. Un guide étape par étape avec des exemples de code pour le marketing et la communication par e-mail.
-type: docs
 weight: 14
 url: /fr/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Envoi massif d'e-mails avec Aspose.Email
+
 
 ## Introduction
 
@@ -132,3 +138,9 @@ Dans ce guide, vous avez appris à envoyer des e-mails en masse à l'aide d'Aspo
 
 ### Comment puis-je gérer les e-mails rejetés ou ayant échoué lors d’un envoi groupé ?
    Aspose.Email fournit des fonctionnalités permettant de gérer les notifications d'état de livraison (DSN) et de suivre l'état de livraison des e-mails. Vous pouvez implémenter une logique pour traiter les e-mails rejetés ou ayant échoué selon vos besoins.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Wyodrębnianie załączników z wiadomości e-mail — przewodnik po jęz
 linktitle: Wyodrębnianie załączników z wiadomości e-mail — przewodnik po języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Naucz się krok po kroku wyodrębniać załączniki do wiadomości e-mail za pomocą Aspose.Email dla .NET. Obsługuj różne formaty i zapisuj z łatwością.
-type: docs
 weight: 14
 url: /pl/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnianie załączników z wiadomości e-mail — przewodnik po języku C#
+
 
 ## Wprowadzenie do wyodrębniania załączników z wiadomości e-mail — przewodnik po języku C# przy użyciu Aspose.Email dla .NET
 
@@ -114,3 +120,9 @@ Aspose.Email obsługuje .NET Framework i .NET Core.
 ### Gdzie mogę znaleźć więcej informacji o Aspose.Email?
 
  Szczegółową dokumentację i przykłady można znaleźć w dokumencie[Dokumentacja Aspose.Wyślij e-mailem](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

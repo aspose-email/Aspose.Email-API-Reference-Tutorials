@@ -3,10 +3,16 @@ title: Извлечение вложений из сообщений элект�
 linktitle: Извлечение вложений из сообщений электронной почты в Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Узнайте, как легко извлекать вложения электронной почты с помощью Aspose.Email для Java. Пошаговое руководство для разработчиков Java.
-type: docs
 weight: 13
 url: /ru/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение вложений из сообщений электронной почты в Aspose.Email
+
 
 ## Введение в Aspose.Email для Java
 
@@ -83,3 +89,9 @@ Aspose.Email для Java поддерживает различные форма�
 ### Где я могу получить поддержку Aspose.Email для Java?
 
 Для получения любой технической помощи или вопросов вы можете обратиться в службу поддержки Aspose по их каналам поддержки.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

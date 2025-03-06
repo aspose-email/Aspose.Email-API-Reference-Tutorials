@@ -3,10 +3,16 @@ title: Zachování příloh TNEF při čtení zpráv – přístup C#
 linktitle: Zachování příloh TNEF při čtení zpráv – přístup C#
 second_title: Aspose.Email .NET Email Processing API
 description: V tomto podrobném průvodci se zdrojovým kódem se dozvíte, jak zachovat přílohy TNEF pomocí Aspose.Email pro .NET.
-type: docs
 weight: 15
 url: /cs/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zachování příloh TNEF při čtení zpráv – přístup C#
+
 
 ## Úvod do příloh TNEF
 
@@ -132,3 +138,9 @@ Absolutně! Aspose.Email je navržen tak, aby vyhovoval široké škále aplikac
 ### Je Aspose.Email pravidelně aktualizován?
 
 Ano, Aspose udržuje pravidelné aktualizace, aby byla zajištěna kompatibilita s nejnovějšími technologiemi a platformami.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

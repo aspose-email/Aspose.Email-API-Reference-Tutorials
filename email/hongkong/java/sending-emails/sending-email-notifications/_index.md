@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 發送電子郵件通知
 linktitle: 使用 Aspose.Email 發送電子郵件通知
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 有效傳送電子郵件通知。包含程式碼範例和常見問題的綜合指南，可實現無縫溝通。
-type: docs
 weight: 17
 url: /zh-hant/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 發送電子郵件通知
+
 
 ## 介紹
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### 如何處理電子郵件通知傳送狀態和追蹤？
    - 您可以實施邏輯來處理電子郵件傳送狀態通知 (DSN) 並使用其他工具或服務追蹤電子郵件的開啟和點擊情況。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

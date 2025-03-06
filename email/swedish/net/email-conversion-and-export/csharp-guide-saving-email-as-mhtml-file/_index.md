@@ -3,10 +3,16 @@ title: C# Guide - Spara e-post som MHTML-fil
 linktitle: C# Guide - Spara e-post som MHTML-fil
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du sparar e-postmeddelanden som MHTML-filer med C# och Aspose.Email för .NET. Steg-för-steg guide med kodexempel och vanliga frågor.
-type: docs
 weight: 16
 url: /sv/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Spara e-post som MHTML-fil
+
 
 ## Introduktion till att spara e-post som MHTML-fil
 
@@ -105,3 +111,9 @@ Absolut! Aspose.Email är utformad för att tillgodose behoven hos både individ
 ### Finns det några licensavgifter förknippade med att använda Aspose.Email för .NET?
 
 Ja, Aspose.Email är ett kommersiellt bibliotek. Du kan hitta detaljerad information om licensiering och prissättning på[Aspose.Email webbplats](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

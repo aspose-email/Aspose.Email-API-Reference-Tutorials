@@ -3,10 +3,16 @@ title: Invio di notifiche e-mail con Aspose.Email
 linktitle: Invio di notifiche e-mail con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Impara a inviare notifiche e-mail in modo efficace con Aspose.Email per Java. Una guida completa con esempi di codice e domande frequenti per una comunicazione senza interruzioni.
-type: docs
 weight: 17
 url: /it/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Invio di notifiche e-mail con Aspose.Email
+
 
 ## introduzione
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### Come posso gestire lo stato di consegna e il monitoraggio delle notifiche via email?
    - È possibile implementare la logica per gestire le notifiche sullo stato di recapito delle e-mail (DSN) e tenere traccia delle aperture e dei clic delle e-mail utilizzando strumenti o servizi aggiuntivi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

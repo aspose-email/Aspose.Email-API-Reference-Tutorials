@@ -3,10 +3,16 @@ title: Αποτελεσματικός χειρισμός συμβάντων emai
 linktitle: Χειρισμός συμβάντων email και ημερολογίου
 second_title: Aspose.Email .NET Email Processing API
 description: Βελτιώστε τον χειρισμό συμβάντων email και τη διαχείριση ημερολογίου με το Aspose.Email for .NET tutorials. Μάθετε να αυτοματοποιείτε συμβάντα email και να ενσωματώνετε απρόσκοπτα τις λειτουργίες του ημερολογίου.
-type: docs
 weight: 15
 url: /el/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποτελεσματικός χειρισμός συμβάντων email και ημερολογίου
+
 
 ## Εισαγωγή
 
@@ -32,3 +38,9 @@ url: /el/net/email-event-and-calendar-handling/
 Μάθετε πώς να χρησιμοποιείτε το Aspose.Email για .NET για τη δημιουργία πρόχειρων email αιτημάτων συνάντησης σε C#. Βελτιώστε την επιχειρηματική επικοινωνία και αποτελεσματικότητα.
 ### [Αλλαγή ProdID σε αρχεία ICS με C#](./altering-prodid-in-ics-files-with-csharp/)
 Μάθετε να αλλάζετε το ProdID σε αρχεία ICS χρησιμοποιώντας C# & Aspose.Email για .NET. Οδηγός και κώδικας βήμα προς βήμα. Εξασφαλίστε την ακεραιότητα και τη συμβατότητα των δεδομένων. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Улучшите общение с помощью уведомлений 
 linktitle: Уведомление по электронной почте и отслеживание
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Внедрите функции уведомления и отслеживания по электронной почте с помощью учебных пособий Aspose.Email для .NET. Автоматизируйте уведомления и получайте представление о взаимодействии получателей электронной почты.
-type: docs
 weight: 16
 url: /ru/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Улучшите общение с помощью уведомлений и отслеживания по электронной почте
+
 
 ## Введение
 
@@ -27,3 +33,9 @@ url: /ru/net/email-notification-and-tracking/
 Узнайте, как использовать код C# для запроса уведомлений о прочтении электронной почты с помощью Aspose.Email для .NET, улучшая отслеживание общения.
 ### [Отслеживание хода преобразования документов электронной почты с помощью кода C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Узнайте, как реализовать уведомление и отслеживание по электронной почте с помощью Aspose.Email для .NET. Пошаговое руководство с примерами кода. Улучшите свое общение по электронной почте сегодня!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

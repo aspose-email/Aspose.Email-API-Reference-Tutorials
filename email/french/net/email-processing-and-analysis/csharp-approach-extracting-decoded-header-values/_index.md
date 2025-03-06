@@ -3,10 +3,16 @@ title: Approche C# - Extraction des valeurs d'en-tête décodées
 linktitle: Approche C# - Extraction des valeurs d'en-tête décodées
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à extraire les valeurs d'en-tête d'e-mail décodées en C# à l'aide d'Aspose.Email pour .NET. Guide complet avec des exemples de code.
-type: docs
 weight: 17
 url: /fr/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Approche C# - Extraction des valeurs d'en-tête décodées
+
 
 Dans ce didacticiel, nous vous guiderons tout au long du processus d'utilisation d'Aspose.Email pour .NET pour extraire les valeurs d'en-tête décodées des messages électroniques. Aspose.Email pour .NET est une bibliothèque robuste qui permet aux développeurs de travailler avec divers aspects des messages électroniques, notamment la lecture et la manipulation des en-têtes de courrier électronique.
 
@@ -77,3 +83,9 @@ Dans l'extrait de code ci-dessus, nous effectuons les étapes suivantes :
 ## Conclusion
 
 Dans ce didacticiel, vous avez appris à utiliser Aspose.Email pour .NET pour extraire les valeurs d'en-tête décodées des messages électroniques. Aspose.Email for .NET fournit un ensemble complet d'outils qui permettent aux développeurs de travailler efficacement avec les messages électroniques, y compris la gestion des en-têtes.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

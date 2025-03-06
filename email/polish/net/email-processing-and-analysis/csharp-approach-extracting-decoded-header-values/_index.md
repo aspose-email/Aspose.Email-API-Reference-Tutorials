@@ -3,10 +3,16 @@ title: Podejście C# — wyodrębnianie zdekodowanych wartości nagłówka
 linktitle: Podejście C# — wyodrębnianie zdekodowanych wartości nagłówka
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak wyodrębnić zdekodowane wartości nagłówków wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET. Obszerny przewodnik z przykładami kodu.
-type: docs
 weight: 17
 url: /pl/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Podejście C# — wyodrębnianie zdekodowanych wartości nagłówka
+
 
 W tym samouczku przeprowadzimy Cię przez proces używania Aspose.Email dla .NET do wyodrębniania zdekodowanych wartości nagłówków z wiadomości e-mail. Aspose.Email dla .NET to solidna biblioteka, która umożliwia programistom pracę z różnymi aspektami wiadomości e-mail, w tym czytanie i manipulowanie nagłówkami wiadomości e-mail.
 
@@ -77,3 +83,9 @@ W powyższym fragmencie kodu wykonujemy następujące kroki:
 ## Wniosek
 
 tym samouczku nauczyłeś się używać Aspose.Email dla .NET do wyodrębniania zdekodowanych wartości nagłówków z wiadomości e-mail. Aspose.Email dla .NET zapewnia kompleksowy zestaw narzędzi, które umożliwiają programistom efektywną pracę z wiadomościami e-mail, w tym obsługę nagłówków.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Setting Participant Status for Appointment Attendees with C#
 linktitle: Setting Participant Status for Appointment Attendees with C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to manage appointment attendees' status using C# and Aspose.Email for .NET. Step-by-step guide with source code.
-type: docs
 weight: 16
 url: /net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Setting Participant Status for Appointment Attendees with C#
+
 
 ## Introduction to Aspose.Email for .NET
 
@@ -109,3 +115,10 @@ Yes, you can easily integrate the functionality discussed in this guide into you
 ### Where can I find more documentation and resources?
 
 For more detailed documentation and resources, refer to the Aspose.Email for .NET documentation: [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

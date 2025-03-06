@@ -3,10 +3,16 @@ title: Görseller için Alternatif Metin Ayarlama - C# Kılavuzu
 linktitle: Görseller için Alternatif Metin Ayarlama - C# Kılavuzu
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET kullanarak e-postalardaki görseller için alternatif metin ayarlamayı öğrenin. Net alternatif metinle erişilebilirliği sağlayın. Belgeler ve kod dahildir.
-type: docs
 weight: 15
 url: /tr/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Görseller için Alternatif Metin Ayarlama - C# Kılavuzu
+
 
 Bu kılavuz, Aspose.Email for .NET kullanarak e-postalardaki görseller için alternatif metin ayarlama sürecinde size yol gösterecektir. "Alternatif metin" olarak da bilinen alternatif metin, görselin görüntülenememesi durumunda görselin metinsel açıklamasını sağlamak için kullanılır. Aspose.Email for .NET, çeşitli formatlardaki e-postalar ve eklerle çalışmanıza olanak tanıyan güçlü bir kütüphanedir. Bu kılavuzda C# kullanarak e-posta iletilerindeki görseller için alternatif metin ayarlamaya odaklanacağız.
 
@@ -81,3 +87,9 @@ Resimleri bir e-postaya bağlantılı kaynaklar olarak eklemek için`LinkedResou
 ### Aspose.Email for .NET hakkında daha fazla belgeyi nerede bulabilirim?
 
  Aspose.Email for .NET ile çalışmaya ilişkin daha ayrıntılı belgeleri, eğitimleri ve örnekleri şu adreste bulabilirsiniz:[API Referansı](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

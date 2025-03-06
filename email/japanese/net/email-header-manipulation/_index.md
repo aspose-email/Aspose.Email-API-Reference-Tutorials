@@ -3,10 +3,16 @@ title: 電子メールヘッダーの操作
 linktitle: 電子メールヘッダーの操作
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して電子メール ヘッダーを効率的に操作します。コミュニケーションを強化するためにヘッダーを抽出、変更、カスタマイズする方法を学びます。
-type: docs
 weight: 14
 url: /ja/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールヘッダーの操作
+
 
 ## 導入
 
@@ -33,3 +39,9 @@ C# と Aspose.Email for .NET を使用して MHTML の順序をカスタマイ�
 Aspose.Email for .NET を使用して C# で電子メール ヘッダーを抽出する方法を学びます。効率的な電子メール分析のためのソース コードを含むステップバイステップ ガイド。 
 ### [C# でのカスタム ヘッダーの指定](./specifying-custom-headers-in-csharp/)
 Aspose.Email for .NET を使用して C# でカスタム ヘッダーを指定し、電子メール通信を強化する方法を学びます。このステップバイステップのガイドでは、エンゲージメントを向上させるためにパーソナライズされた電子メール ヘッダーを作成する方法について説明します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

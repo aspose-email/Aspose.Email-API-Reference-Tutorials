@@ -3,10 +3,16 @@ title: Odesílání e-mailových upozornění pomocí Aspose.Email
 linktitle: Odesílání e-mailových upozornění pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se efektivně odesílat e-mailová upozornění s Aspose.Email pro Java. Komplexní průvodce s příklady kódu a často kladenými dotazy pro bezproblémovou komunikaci.
-type: docs
 weight: 17
 url: /cs/java/sending-emails/sending-email-notifications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odesílání e-mailových upozornění pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -109,3 +115,9 @@ public class EmailNotification {
 
 ### Jak mohu zacházet se stavem doručení e-mailových upozornění a sledováním?
    - Můžete implementovat logiku pro zpracování oznámení o stavu doručení e-mailu (DSN) a sledování otevření e-mailu a kliknutí pomocí dalších nástrojů nebo služeb.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

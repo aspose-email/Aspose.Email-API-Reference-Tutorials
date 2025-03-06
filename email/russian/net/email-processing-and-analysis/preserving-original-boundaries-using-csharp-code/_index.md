@@ -3,10 +3,16 @@ title: Сохранение исходных границ с помощью ко
 linktitle: Сохранение исходных границ с помощью кода C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как сохранить исходные границы вложений электронной почты с помощью C# и Aspose.Email для .NET. Пошаговое руководство с исходным кодом.
-type: docs
 weight: 13
 url: /ru/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сохранение исходных границ с помощью кода C#
+
 
 ## Введение в сохранение исходных границ
 
@@ -107,3 +113,9 @@ message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ### Где я могу найти дополнительную информацию об Aspose.Email для .NET?
 
  Подробную документацию и примеры можно найти на странице[Документация Aspose.Email](https://reference.aspose.com/email/net/) страница.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

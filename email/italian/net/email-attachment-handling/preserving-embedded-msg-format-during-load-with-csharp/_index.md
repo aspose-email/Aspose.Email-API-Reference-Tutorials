@@ -3,10 +3,16 @@ title: Conservazione del formato MSG incorporato durante il caricamento con C#
 linktitle: Conservazione del formato MSG incorporato durante il caricamento con C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come preservare il formato MSG incorporato utilizzando Aspose.Email per .NET. Guida passo passo con il codice sorgente.
-type: docs
 weight: 12
 url: /it/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Conservazione del formato MSG incorporato durante il caricamento con C#
+
 
 Nel mondo digitale di oggi, la comunicazione via e-mail gioca un ruolo fondamentale sia nella sfera personale che in quella professionale. Molte volte è necessario lavorare con i file di posta elettronica a livello di programmazione e preservare i confini originali di un file EML (e-mail) può essere cruciale. In questa guida passo passo, esploreremo come ottenere questo risultato utilizzando il codice C# con Aspose.Email per .NET.
 
@@ -74,3 +80,9 @@ Sì, Aspose.Email per .NET è versatile e può essere utilizzato per un'ampia ga
  Per accedere agli ultimi aggiornamenti e versioni di Aspose.Email per .NET, visitare la pagina di rilascio:[Aspose.Email per le versioni .NET](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

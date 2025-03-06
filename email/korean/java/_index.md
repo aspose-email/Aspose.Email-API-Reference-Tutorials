@@ -1,12 +1,17 @@
 ---
 title: Java 튜토리얼용 Aspose.Email - 마스터 이메일 조작
 linktitle: Java 튜토리얼을 위한 Aspose.Email
-type: docs
 weight: 10
 url: /ko/java/
 description: 포괄적인 튜토리얼을 통해 Java용 Aspose.Email의 강력한 기능을 활용해 보세요. 이메일 조작, 관리 등에 대해 알아보세요.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java 튜토리얼용 Aspose.Email - 마스터 이메일 조작
+
 
 Aspose.Email for Java는 개발자가 이메일 메시지를 쉽게 조작하고 관리할 수 있게 해주는 강력한 API입니다. 이메일 관련 작업을 자동화하거나 이메일 보안을 강화하거나 이메일 기능을 Java 애플리케이션에 통합하려는 경우 Aspose.Email은 필요한 도구와 리소스를 제공합니다. 이 기사에서는 Java 튜토리얼용 Aspose.Email의 세계와 이메일 조작을 마스터하는 데 어떻게 도움이 되는지 살펴보겠습니다.
 
@@ -38,3 +43,9 @@ Aspose.Email for Java를 사용하여 이메일 보안을 강화하는 방법을
 Aspose.Email for Java를 사용하여 손쉽게 이메일 헤더를 사용자 정의하는 방법을 알아보세요. 튜토리얼을 살펴보고 이메일 헤더 사용자 정의 기능을 활용해 보세요.
 ### [Java용 Aspose.Email을 사용하여 이메일 보안 살펴보기](./exploring-email-security/)
 Aspose.Email for Java를 사용하여 이메일 보안을 강화하는 방법을 알아보세요. 단계별 튜토리얼과 모범 사례를 살펴보세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#-aanpak gedecodeerde headerwaarden extraheren
 linktitle: C#-aanpak gedecodeerde headerwaarden extraheren
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer gedecodeerde e-mailheaderwaarden extraheren in C# met Aspose.Email voor .NET. Uitgebreide handleiding met codevoorbeelden.
-type: docs
 weight: 17
 url: /nl/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#-aanpak gedecodeerde headerwaarden extraheren
+
 
 In deze zelfstudie begeleiden we u bij het gebruik van Aspose.Email voor .NET om gedecodeerde headerwaarden uit e-mailberichten te extraheren. Aspose.Email voor .NET is een robuuste bibliotheek waarmee ontwikkelaars met verschillende aspecten van e-mailberichten kunnen werken, waaronder het lezen en manipuleren van e-mailheaders.
 
@@ -77,3 +83,9 @@ In het bovenstaande codefragment voeren we de volgende stappen uit:
 ## Conclusie
 
 In deze zelfstudie hebt u geleerd hoe u Aspose.Email voor .NET kunt gebruiken om gedecodeerde headerwaarden uit e-mailberichten te extraheren. Aspose.Email voor .NET biedt een uitgebreide set tools waarmee ontwikkelaars efficiënt met e-mailberichten kunnen werken, inclusief het verwerken van headers.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Výběr správného serveru SMTP pro Aspose.Email
 linktitle: Výběr správného serveru SMTP pro Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Optimalizujte své e-mailové funkce pomocí Aspose.Email pro Java. Naučte se, jak vybrat správný server SMTP a odesílat e-maily bez námahy.
-type: docs
 weight: 10
 url: /cs/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Výběr správného serveru SMTP pro Aspose.Email
+
 
 ## Úvod
 
@@ -100,3 +106,9 @@ Ano, můžete nakonfigurovat Aspose.Email pro Java tak, aby fungoval s více ser
 ### Co mám dělat, když můj SMTP server vyžaduje ověření OAuth2?
 
 Ověření OAuth2 můžete nakonfigurovat pomocí Aspose.Email pro Java poskytnutím nezbytných tokenů a nastavení OAuth2.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

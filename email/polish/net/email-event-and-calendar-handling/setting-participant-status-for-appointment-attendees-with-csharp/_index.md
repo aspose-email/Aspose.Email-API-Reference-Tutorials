@@ -3,10 +3,16 @@ title: Ustawianie statusu uczestnika dla uczestników spotkania w języku C#
 linktitle: Ustawianie statusu uczestnika dla uczestników spotkania w języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak zarządzać statusem uczestników spotkań za pomocą C# i Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym.
-type: docs
 weight: 16
 url: /pl/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ustawianie statusu uczestnika dla uczestników spotkania w języku C#
+
 
 ## Wprowadzenie do Aspose.Email dla .NET
 
@@ -109,3 +115,9 @@ Tak, możesz łatwo zintegrować funkcjonalność omówioną w tym przewodniku z
 ### Gdzie mogę znaleźć więcej dokumentacji i zasobów?
 
  Bardziej szczegółową dokumentację i zasoby można znaleźć w dokumentacji Aspose.Email dla .NET:[Aspose.Email dla dokumentacji .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

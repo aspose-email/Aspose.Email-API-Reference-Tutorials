@@ -3,10 +3,16 @@ title: تنفيذ توقيعات DKIM مع Aspose.Email
 linktitle: تنفيذ توقيعات DKIM مع Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تأكد من أمان البريد الإلكتروني باستخدام توقيعات DKIM باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة ورمز لتنفيذ DKIM.
-type: docs
 weight: 15
 url: /ar/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تنفيذ توقيعات DKIM مع Aspose.Email
+
 
 ## تنفيذ توقيعات DKIM مع Aspose.Email
 
@@ -112,3 +118,9 @@ Aspose.Email for Java هي مكتبة مستقلة، ولكن يمكنك دمج�
 ### أين يمكنني العثور على المزيد من الموارد على Aspose.Email لـ Java؟
 
 لمزيد من المعلومات والموارد، قم بزيارة Aspose.Email لوثائق Java على[هنا](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

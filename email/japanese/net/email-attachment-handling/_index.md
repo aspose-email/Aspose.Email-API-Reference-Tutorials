@@ -3,10 +3,16 @@ title: Aspose.Email for .NET を使用した電子メール添付ファイルの
 linktitle: 電子メールの添付ファイルの処理
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して電子メール管理を強化します。合理化された処理、分析、データ駆動型の洞察を学びます。ステップバイステップのガイドが提供されます。
-type: docs
 weight: 12
 url: /ja/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for .NET を使用した電子メール添付ファイルの処理をマスターする
+
 ## 導入
 
 「電子メールの添付ファイルと添付ファイルの処理」に関する Aspose.Email for .NET チュートリアルは、アプリケーション内で電子メールの添付ファイルを効果的に管理および操作するための包括的なガイドを開発者に提供します。これらのチュートリアルは、Aspose.Email for .NET の機能を利用して添付ファイルをシームレスに処理し、データ交換とコラボレーションを強化するための貴重な洞察を提供します。段階的な手順とコード スニペットの例により、開発者は自信を持って添付ファイル関連の機能をアプリケーションに統合し、電子メール通信のワークフローとユーザー エクスペリエンスを最適化できます。
@@ -46,3 +52,10 @@ C# と Aspose.Email for .NET を使用して、MSG ファイルから埋め込�
 Aspose.Email for .NET を使用して埋め込み MSG 形式を保存する方法を学びます。ソースコード付きのステップバイステップガイド。
 ### [メッセージを読み取るときに TNEF 添付ファイルを保持する - C# アプローチ](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 ソース コードを含むこのステップバイステップ ガイドでは、Aspose.Email for .NET を使用して TNEF 添付ファイルを保存する方法を学びます。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

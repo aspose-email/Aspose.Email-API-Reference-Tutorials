@@ -3,10 +3,16 @@ title: C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme
 linktitle: C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta taslak e-posta işlemeyi nasıl uygulayacağınızı öğrenin. Taslakları sorunsuz bir şekilde oluşturun, düzenleyin ve kaydedin.
-type: docs
 weight: 17
 url: /tr/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta Taslak Mesaj İşleme - E-postayı Taslak Olarak Kaydetme
+
 
 ## giriiş
 
@@ -103,3 +109,9 @@ Kesinlikle, bu kılavuzda verilen adımları izleyerek taslak mesaj işlemeyi me
 ### Aspose.Email kütüphanesi e-postayla ilgili diğer işlevleri destekliyor mu?
 
  Evet, Aspose.Email kütüphanesi, e-posta mesajlarıyla çalışmak için, e-postaları ve ekleri gönderme, alma ve değiştirme de dahil olmak üzere çok çeşitli özellikler sunar. Daha fazla ayrıntı için belgelere başvurabilirsiniz:[Burada](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

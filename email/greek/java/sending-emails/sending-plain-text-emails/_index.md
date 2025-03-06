@@ -3,10 +3,16 @@ title: Αποστολή μηνυμάτων ηλεκτρονικού ταχυδρ
 linktitle: Αποστολή μηνυμάτων ηλεκτρονικού ταχυδρομείου απλού κειμένου με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε να στέλνετε μηνύματα ηλεκτρονικού ταχυδρομείου απλού κειμένου αποτελεσματικά με το Aspose.Email για Java. Ένας περιεκτικός οδηγός με παραδείγματα κώδικα και συχνές ερωτήσεις για απρόσκοπτη επικοινωνία.
-type: docs
 weight: 10
 url: /el/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποστολή μηνυμάτων ηλεκτρονικού ταχυδρομείου απλού κειμένου με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Υπάρχουν περιορισμοί κατά την αποστολή μηνυμάτων ηλεκτρονικού ταχυδρομείου απλού κειμένου με το Aspose.Email για Java;
    - Οι περιορισμοί ενδέχεται να εξαρτώνται από τον πάροχο υπηρεσιών email και τον διακομιστή SMTP. Βεβαιωθείτε ότι συμμορφώνεστε με τυχόν όρια αποστολής και πολιτικές αποστολής email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

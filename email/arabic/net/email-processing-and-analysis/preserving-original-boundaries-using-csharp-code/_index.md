@@ -3,10 +3,16 @@ title: الحفاظ على الحدود الأصلية باستخدام كود C
 linktitle: الحفاظ على الحدود الأصلية باستخدام كود C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية الحفاظ على الحدود الأصلية لمرفقات البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر.
-type: docs
 weight: 13
 url: /ar/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحفاظ على الحدود الأصلية باستخدام كود C#
+
 
 ## مقدمة للحفاظ على الحدود الأصلية
 
@@ -107,3 +113,9 @@ message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
 
  يمكنك العثور على وثائق وأمثلة شاملة على الموقع[Aspose.وثائق البريد الإلكتروني](https://reference.aspose.com/email/net/) صفحة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

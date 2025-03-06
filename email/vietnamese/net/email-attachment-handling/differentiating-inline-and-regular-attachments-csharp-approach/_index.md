@@ -3,10 +3,16 @@ title: Phân biệt tệp đính kèm nội tuyến và tệp đính kèm thông
 linktitle: Phân biệt tệp đính kèm nội tuyến và tệp đính kèm thông thường - Phương pháp tiếp cận C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách phân biệt giữa tệp đính kèm email nội tuyến và tệp đính kèm email thông thường bằng Aspose.Email cho .NET. Hướng dẫn toàn diện với các ví dụ về mã.
-type: docs
 weight: 17
 url: /vi/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Phân biệt tệp đính kèm nội tuyến và tệp đính kèm thông thường - Phương pháp tiếp cận C#
+
 
 ## Giới thiệu về cách phân biệt tệp đính kèm nội tuyến và tệp đính kèm thông thường - Phương pháp tiếp cận C#
 
@@ -107,3 +113,9 @@ Bạn có thể truy cập nội dung của tệp đính kèm nội tuyến bằ
 ### Tôi có thể lưu các tệp đính kèm thông thường vào một vị trí cụ thể trên đĩa không?
 
  Tuyệt đối! Bạn có thể lưu các tệp đính kèm thông thường vào một vị trí cụ thể trên đĩa bằng cách sử dụng`Save` phương thức của đối tượng đính kèm và cung cấp đường dẫn tệp mong muốn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

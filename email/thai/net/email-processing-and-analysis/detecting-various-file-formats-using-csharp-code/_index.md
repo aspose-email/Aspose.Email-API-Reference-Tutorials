@@ -3,10 +3,16 @@ title: การตรวจจับรูปแบบไฟล์ต่าง 
 linktitle: การตรวจจับรูปแบบไฟล์ต่าง ๆ โดยใช้รหัส C#
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: ตรวจจับรูปแบบไฟล์ได้อย่างง่ายดายโดยใช้ C# และ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนและตัวอย่างโค้ด สำรวจตอนนี้!
-type: docs
 weight: 13
 url: /th/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การตรวจจับรูปแบบไฟล์ต่าง ๆ โดยใช้รหัส C#
+
 
 ในฐานะนักพัฒนา การระบุรูปแบบของไฟล์ถือเป็นสิ่งสำคัญสำหรับการประมวลผลและการจัดการ ด้วย Aspose.Email สำหรับ .NET คุณสามารถตรวจจับรูปแบบไฟล์ได้อย่างแม่นยำ คู่มือนี้มีบทช่วยสอนแบบทีละขั้นตอนพร้อมซอร์สโค้ดเกี่ยวกับวิธีการตรวจจับรูปแบบไฟล์ต่างๆ โดยใช้ C# และ Aspose.Email สำหรับ .NET
 
@@ -119,3 +125,9 @@ namespace FileFormatDetectionDemo
 ### ฉันจะหาเอกสารโดยละเอียดสำหรับ Aspose.Email สำหรับ .NET ได้ที่ไหน
 
  สำหรับเอกสารที่ครอบคลุม ตัวอย่างโค้ด และทรัพยากร โปรดไปที่[Aspose.Email สำหรับการอ้างอิง .NET API](https://reference.aspose.com/email/net) หน้าหนังสือ.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

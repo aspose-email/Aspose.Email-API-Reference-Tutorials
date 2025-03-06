@@ -3,10 +3,16 @@ title: Aspose.Email में बड़े अटैचमेंट प्रब
 linktitle: Aspose.Email में बड़े अटैचमेंट प्रबंधित करना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email के साथ बड़े ईमेल अनुलग्नकों को कुशलतापूर्वक प्रबंधित करें। जावा अनुप्रयोगों में सुव्यवस्थित अटैचमेंट हैंडलिंग के लिए चरण-दर-चरण मार्गदर्शिका और स्रोत कोड।
-type: docs
 weight: 11
 url: /hi/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email में बड़े अटैचमेंट प्रबंधित करना
+
 
 ## जावा के लिए Aspose.Email में बड़े अटैचमेंट को प्रबंधित करने का परिचय
 
@@ -145,3 +151,9 @@ public class DownloadAttachmentFromEmail {
 ### क्या मैं अनुलग्नकों का आकार कम करने के लिए उन्हें संपीड़ित कर सकता हूँ?
 
 हाँ, आप अनुलग्नकों को भेजने से पहले उनका आकार कम करने के लिए उन्हें संपीड़ित कर सकते हैं। Aspose.Email प्रोग्रामेटिक रूप से अटैचमेंट को संपीड़ित और डीकंप्रेस करने की सुविधाएँ प्रदान करता है। आप अपने ईमेल अनुलग्नकों के आकार को अनुकूलित करने के लिए इसे लागू कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

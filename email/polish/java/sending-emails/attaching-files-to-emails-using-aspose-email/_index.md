@@ -3,10 +3,16 @@ title: Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
 linktitle: Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak dołączać pliki do wiadomości e-mail za pomocą Aspose.Email dla Java. Z łatwością ulepszaj swoje e-maile, korzystając z tego przewodnika krok po kroku.
-type: docs
 weight: 12
 url: /pl/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
+
 ## Wstęp
 
 W świecie komunikacji e-mailowej możliwość wysyłania załączników jest kluczowa. Niezależnie od tego, czy wysyłasz ważne dokumenty, obrazy, czy jakikolwiek inny typ pliku, proces powinien być prosty i niezawodny. Aspose.Email dla Java upraszcza ten proces, udostępniając potężne narzędzia do dołączania plików do wiadomości e-mail.
@@ -134,3 +140,9 @@ Jeśli masz dodatkowe pytania lub potrzebujesz pomocy, skontaktuj się z nami.
 
 ### Czy istnieją ograniczenia rozmiaru załączników do wiadomości e-mail?
    Serwery i klienci poczty e-mail mogą mieć ograniczenia rozmiaru załączników. Upewnij się, że rozmiar załączników mieści się w akceptowalnym zakresie, aby uniknąć problemów z wysyłaniem lub odbieraniem wiadomości e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

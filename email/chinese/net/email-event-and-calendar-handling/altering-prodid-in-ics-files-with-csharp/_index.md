@@ -3,10 +3,16 @@ title: 使用 C# 更改 ICS 文件中的 ProdID
 linktitle: 使用 C# 更改 ICS 文件中的 ProdID
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解使用 C# 和 Aspose.Email for .NET 更改 ICS 文件中的 ProdID。分步指南和代码。确保数据完整性和兼容性。
-type: docs
 weight: 12
 url: /zh/net/email-event-and-calendar-handling/altering-prodid-in-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 更改 ICS 文件中的 ProdID
+
 
 如果您在 C# 应用程序中处理日历事件，您可能会遇到需要修改 ICS (iCalendar) 文件中的产品标识符 (ProdID) 的情况。 ProdID 是 ICS 文件的关键组成部分，因为它标识日历数据的来源。在本文中，我们将指导您在 Aspose.Email for .NET 的帮助下完成使用 C# 更改 ICS 文件中的 ProdID 的过程。
 
@@ -86,3 +92,9 @@ ICS 文件中的 ProdID 用作生成日历数据的软件或实体的标识符�
 ### 4. 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
 
 有关 Aspose.Email for .NET 的全面文档、资源和详细信息，请访问 Aspose 网站。您还可以访问 API 参考以获取深入信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

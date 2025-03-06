@@ -3,10 +3,16 @@ title: Efektivní ukládání a načítání e-mailových souborů
 linktitle: Ukládání a načítání souborů e-mailem
 second_title: Aspose.Email .NET Email Processing API
 description: Zjednodušte ukládání a načítání e-mailových souborů pomocí výukových programů Aspose.Email for .NET. Naučte se spravovat a přistupovat k e-mailovým zprávám a přílohám programově.
-type: docs
 weight: 18
 url: /cs/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efektivní ukládání a načítání e-mailových souborů
+
 
 ## Úvod
 
@@ -27,3 +33,9 @@ Naučte se číst zprávy úložiště Zimbra TGZ pomocí C# a Aspose.Email pro 
 Naučte se číst zprávy úložiště NSF pomocí C# a Aspose.Email pro .NET. Podrobný průvodce s příklady kódu.
 ### [Ukládání zpráv z úložiště Zimbra TGZ pomocí C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Naučte se extrahovat e-maily Zimbra TGZ pomocí Aspose.Email pro .NET. Podrobný průvodce se zdrojovým kódem pro efektivní správu e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

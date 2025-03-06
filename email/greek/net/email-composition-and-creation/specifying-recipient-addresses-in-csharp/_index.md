@@ -3,10 +3,16 @@ title: Καθορισμός διευθύνσεων παραληπτών σε C#
 linktitle: Καθορισμός διευθύνσεων παραληπτών σε C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να προσδιορίζετε διευθύνσεις παραληπτών στο C# χρησιμοποιώντας το Aspose.Email για .NET. Δημιουργήστε, διαμορφώστε και στείλτε email αποτελεσματικά.
-type: docs
 weight: 19
 url: /el/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καθορισμός διευθύνσεων παραληπτών σε C#
+
 
 
 Αυτός ο οδηγός θα σας καθοδηγήσει στη διαδικασία καθορισμού διευθύνσεων παραληπτών σε C# χρησιμοποιώντας τη βιβλιοθήκη Aspose.Email για .NET. Το Aspose.Email είναι ένα ισχυρό API .NET που σας επιτρέπει να εργάζεστε με μηνύματα email και διάφορες εργασίες που σχετίζονται με email. Σε αυτό το σεμινάριο, θα καλύψουμε τον τρόπο προσθήκης διευθύνσεων παραληπτών σε ένα μήνυμα ηλεκτρονικού ταχυδρομείου χρησιμοποιώντας τη βιβλιοθήκη.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Για περισσότερες πληροφορίες και προηγμένες δυνατότητες του Aspose.Email για .NET, ανατρέξτε στο[Aspose API References](https://reference.aspose.com/email/net/).
 
 Αυτό ολοκληρώνει τον οδηγό για τον καθορισμό διευθύνσεων παραληπτών σε C# χρησιμοποιώντας το Aspose.Email για .NET. Έχετε μάθει πώς να δημιουργείτε ένα μήνυμα email, να προσθέτετε διευθύνσεις παραληπτών και να στέλνετε το email χρησιμοποιώντας τις δυνατότητες της βιβλιοθήκης.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

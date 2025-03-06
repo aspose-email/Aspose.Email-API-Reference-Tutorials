@@ -3,10 +3,16 @@ title: E-mails in platte tekst verzenden met Aspose.Email
 linktitle: E-mails in platte tekst verzenden met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Leer efficiënt e-mails in platte tekst verzenden met Aspose.Email voor Java. Een uitgebreide gids met codevoorbeelden en veelgestelde vragen voor naadloze communicatie.
-type: docs
 weight: 10
 url: /nl/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mails in platte tekst verzenden met Aspose.Email
+
 
 ## Invoering
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Zijn er beperkingen bij het verzenden van platte-tekst-e-mails met Aspose.Email voor Java?
    - De beperkingen kunnen afhankelijk zijn van uw e-mailserviceprovider en SMTP-server. Zorg ervoor dat u voldoet aan eventuele verzendlimieten en het beleid voor het verzenden van e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

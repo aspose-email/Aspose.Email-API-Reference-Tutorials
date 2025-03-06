@@ -3,10 +3,16 @@ title: Efficiënte afhandeling van e-mailgebeurtenissen en agenda's
 linktitle: Afhandeling van e-mailevenementen en agenda's
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Stroomlijn de afhandeling van e-mailgebeurtenissen en agendabeheer met Aspose.Email voor .NET-tutorials. Leer hoe u e-mailgebeurtenissen kunt automatiseren en agendafunctionaliteiten naadloos kunt integreren.
-type: docs
 weight: 15
 url: /nl/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efficiënte afhandeling van e-mailgebeurtenissen en agenda's
+
 
 ## Invoering
 
@@ -32,3 +38,9 @@ Leer hoe u de status van deelnemers aan afspraken beheert met C# en Aspose.Email
 Leer hoe u Aspose.Email voor .NET kunt gebruiken om concept-e-mails met afspraakverzoeken te maken in C#. Verbeter de zakelijke communicatie en efficiëntie.
 ### [ProdID in ICS-bestanden wijzigen met C#](./altering-prodid-in-ics-files-with-csharp/)
 Leer hoe u ProdID in ICS-bestanden kunt wijzigen met C# en Aspose.Email voor .NET. Stap-voor-stap handleiding en code. Zorg voor gegevensintegriteit en compatibiliteit. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

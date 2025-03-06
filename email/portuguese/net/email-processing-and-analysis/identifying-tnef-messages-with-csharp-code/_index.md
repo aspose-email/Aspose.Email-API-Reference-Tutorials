@@ -3,10 +3,16 @@ title: Identificando mensagens TNEF com código C#
 linktitle: Identificando mensagens TNEF com código C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como identificar mensagens TNEF usando C# e Aspose.Email para .NET. Um guia passo a passo com código-fonte e perguntas frequentes incluídas.
-type: docs
 weight: 14
 url: /pt/net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Identificando mensagens TNEF com código C#
+
 
 Aspose.Email for .NET é uma biblioteca poderosa que fornece suporte abrangente para trabalhar com vários formatos e protocolos de e-mail em C#. Neste guia passo a passo, exploraremos como identificar mensagens TNEF (Transport Neutral Encapsulation Format) usando código C# e a biblioteca Aspose.Email. TNEF é um formato de e-mail proprietário usado pelo Microsoft Outlook para encapsular rich text e anexos em mensagens de e-mail.
 
@@ -104,3 +110,9 @@ Sim, Aspose.Email oferece suporte a uma ampla variedade de formatos e protocolos
 ### O Aspose.Email pode lidar com o processamento de e-mail em diferentes plataformas?
 
 Com certeza, Aspose.Email é uma biblioteca multiplataforma que pode ser usada para desenvolver aplicativos em várias plataformas, incluindo Windows, macOS e Linux.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

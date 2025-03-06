@@ -3,10 +3,16 @@ title: Working with IMAP Protocol in Aspose.Email
 linktitle: Working with IMAP Protocol in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to work with the IMAP protocol in Aspose.Email for Java to efficiently manage your email communication.
-type: docs
 weight: 12
 url: /java/receiving-emails/working-with-imap-protocol/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Working with IMAP Protocol in Aspose.Email
+
 
 In this comprehensive guide, we'll walk you through the process of working with the IMAP (Internet Message Access Protocol) in Aspose.Email for Java. IMAP is a widely used protocol for accessing and managing email messages on a mail server. With Aspose.Email for Java, you can easily integrate IMAP functionality into your Java applications. Let's get started!
 
@@ -182,3 +188,9 @@ You've learned how to work with the IMAP protocol in Aspose.Email for Java. This
    Visit the Aspose.Email for Java API documentation at [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) for comprehensive guides, API references, and code samples.
 
 Now that you have a solid understanding of working with the IMAP protocol in Aspose.Email for Java, you can build robust email management solutions tailored to your specific needs. Happy coding!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

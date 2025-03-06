@@ -3,10 +3,16 @@ title: सी# के साथ आईसीएस फाइलों से ए
 linktitle: सी# के साथ आईसीएस फाइलों से एकाधिक घटनाओं को पढ़ना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके ICS फ़ाइलों से एकाधिक ईवेंट निकालना सीखें। कुशल इवेंट प्रबंधन के लिए कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 14
 url: /hi/net/email-event-and-calendar-handling/reading-multiple-events-from-ics-files-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# के साथ आईसीएस फाइलों से एकाधिक घटनाओं को पढ़ना
+
 
 आज के डिजिटल युग में, घटनाओं और नियुक्तियों को कुशलतापूर्वक प्रबंधित करना व्यवसायों और व्यक्तियों दोनों के लिए महत्वपूर्ण है। यदि आप अपने C# एप्लिकेशन में कैलेंडर डेटा के साथ काम कर रहे हैं, तो आपको अक्सर ICS (iCalendar) फ़ाइलें मिलेंगी। इन फ़ाइलों में मानकीकृत प्रारूप में घटना की जानकारी होती है, जिससे उन्हें साझा करना और संसाधित करना आसान हो जाता है। इस चरण-दर-चरण मार्गदर्शिका में, हम यह पता लगाएंगे कि C# और .NET लाइब्रेरी के लिए शक्तिशाली Aspose.Email का उपयोग करके ICS फ़ाइलों से कई घटनाओं को कैसे पढ़ा जाए।
 
@@ -73,3 +79,9 @@ iCalendar (अक्सर ICS के रूप में जाना जात
 
 5. ### मुझे .NET के लिए Aspose.Email के लिए और अधिक उदाहरण और संसाधन कहां मिल सकते हैं?
  आप यहां एपीआई दस्तावेज़ और कोड नमूने देख सकते हैं[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Een nieuw e-mailbericht samenstellen in C#
 linktitle: Een nieuw e-mailbericht samenstellen in C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Beheers het maken van e-mail in C# met Aspose.Email voor .NET. Een uitgebreide handleiding met codevoorbeelden. Verbeter uw app nu
-type: docs
 weight: 11
 url: /nl/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een nieuw e-mailbericht samenstellen in C#
+
 
 Wilt u uw C#-applicatie verbeteren door de mogelijkheid toe te voegen om e-mails programmatisch te verzenden? Met de kracht van Aspose.Email voor .NET kunt u e-mailfunctionaliteiten naadloos in uw applicatie integreren. In deze stapsgewijze handleiding leiden we u door het proces van het samenstellen van een nieuw e-mailbericht met Aspose.Email voor .NET, compleet met broncodevoorbeelden.
 
@@ -123,3 +129,9 @@ Gefeliciteerd! U hebt met succes geleerd hoe u een nieuw e-mailbericht kunt same
    Uitgebreide documentatie en codevoorbeelden vindt u op de[Aspose.Email API-referentie](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

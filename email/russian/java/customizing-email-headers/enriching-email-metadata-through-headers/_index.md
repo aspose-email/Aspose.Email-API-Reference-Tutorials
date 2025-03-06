@@ -3,10 +3,16 @@ title: Расширение метаданных электронной почт
 linktitle: Расширение метаданных электронной почты с помощью заголовков с помощью Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Улучшите метаданные электронной почты с помощью Aspose.Email для Java. Узнайте, как обогатить заголовки электронных писем для улучшения отслеживания и настройки с помощью Aspose.Email.
-type: docs
 weight: 18
 url: /ru/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Расширение метаданных электронной почты с помощью заголовков с помощью Aspose.Email
+
 
 ## Введение в расширение метаданных электронной почты с помощью заголовков с помощью Aspose.Email
 
@@ -107,3 +113,9 @@ message.save("path/to/modified/email.eml");
 ### Где я могу найти дополнительные ресурсы по Aspose.Email для Java?
 
  Вы можете изучить документацию по адресу[здесь](https://reference.aspose.com/email/java/) для полных ресурсов и примеров.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

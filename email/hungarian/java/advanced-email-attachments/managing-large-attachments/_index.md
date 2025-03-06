@@ -3,10 +3,16 @@ title: Nagy mellékletek kezelése az Aspose.Emailben
 linktitle: Nagy mellékletek kezelése az Aspose.Emailben
 second_title: Aspose.Email Java Email Management API
 description: Hatékonyan kezelheti a nagy e-mail mellékleteket az Aspose.Email for Java segítségével. Lépésről lépésre útmutató és forráskód az egyszerűsített mellékletkezeléshez Java alkalmazásokban.
-type: docs
 weight: 11
 url: /hu/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nagy mellékletek kezelése az Aspose.Emailben
+
 
 ## Bevezetés a nagy mellékletek kezelésébe az Aspose.Email for Java alkalmazásban
 
@@ -145,3 +151,9 @@ Az e-mail mellékletek méretkorlátozása az e-mail szolgáltatóktól és e-ma
 ### Tömöríthetem a mellékleteket méretük csökkentése érdekében?
 
 Igen, elküldés előtt tömörítheti a mellékleteket, hogy csökkentse méretüket. Az Aspose.Email funkciókat kínál a mellékletek programozott tömörítésére és kicsomagolására. Ezt megvalósíthatja az e-mail mellékletek méretének optimalizálása érdekében.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ověření a ověření e-mailu
 linktitle: Ověření a ověření e-mailu
 second_title: Aspose.Email .NET Email Processing API
 description: Implementujte robustní mechanismy ověřování a ověřování e-mailů pomocí výukových programů Aspose.Email for .NET. Zvyšte přesnost a bezpečnost komunikace.
-type: docs
 weight: 17
 url: /cs/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ověření a ověření e-mailu
+
 
 ## Úvod
 
@@ -23,3 +29,9 @@ Výukové programy pro ověřování e-mailů se zaměřují na to, aby umožnil
 ## Výukové programy pro ověřování a ověřování e-mailem
 ### [E-mailové validační techniky v C# kódu](./email-validation-techniques-in-csharp-code/)
 Naučte se, jak efektivně ověřovat e-mailové adresy v C# pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem. Zvyšte přesnost dat a uživatelskou zkušenost.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

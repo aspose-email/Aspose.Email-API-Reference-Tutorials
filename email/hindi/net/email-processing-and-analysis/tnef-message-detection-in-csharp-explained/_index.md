@@ -3,10 +3,16 @@ title: सी# में टीएनईएफ संदेश का पता 
 linktitle: सी# में टीएनईएफ संदेश का पता लगाना - समझाया गया
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में TNEF संदेशों का पता लगाना और संसाधित करना सीखें। समृद्ध टेक्स्ट और अनुलग्नकों के साथ ईमेल प्रबंधन को बेहतर बनाएं।
-type: docs
 weight: 15
 url: /hi/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# में टीएनईएफ संदेश का पता लगाना - समझाया गया
+
 
 यह मार्गदर्शिका आपको .NET लाइब्रेरी के लिए Aspose.Email का उपयोग करके TNEF (ट्रांसपोर्ट न्यूट्रल एनकैप्सुलेशन फॉर्मेट) संदेशों का पता लगाने के तरीके का विस्तृत चरण-दर-चरण विवरण प्रदान करेगी। टीएनईएफ एक प्रारूप है जिसका उपयोग माइक्रोसॉफ्ट आउटलुक द्वारा ईमेल संदेशों के भीतर समृद्ध पाठ और अनुलग्नकों को समाहित करने के लिए किया जाता है। .NET के लिए Aspose.Email, TNEF संदेशों सहित ईमेल और अनुलग्नकों के साथ काम करने के लिए एपीआई का एक शक्तिशाली सेट प्रदान करता है।
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 इस गाइड में, आपने सीखा है कि .NET लाइब्रेरी के लिए Aspose.Email का उपयोग करके TNEF (ट्रांसपोर्ट न्यूट्रल एनकैप्सुलेशन फॉर्मेट) संदेशों का पता कैसे लगाया जाए। टीएनईएफ संदेश, जो अक्सर माइक्रोसॉफ्ट आउटलुक द्वारा उपयोग किए जाते हैं, ईमेल के भीतर समृद्ध पाठ और अनुलग्नकों को समाहित करते हैं। इस गाइड में उल्लिखित चरणों का पालन करके, आप टीएनईएफ संदेशों को कुशलतापूर्वक पहचान सकते हैं और आगे की प्रक्रिया के लिए उनके अनुलग्नकों को निकाल सकते हैं।
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

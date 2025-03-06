@@ -3,10 +3,16 @@ title: Ajout de nouvelles pièces jointes TNEF en C#
 linktitle: Ajout de nouvelles pièces jointes TNEF en C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment ajouter de nouvelles pièces jointes TNEF en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec des exemples de code pour une intégration transparente.
-type: docs
 weight: 12
 url: /fr/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ajout de nouvelles pièces jointes TNEF en C#
+
 
 ## Introduction aux pièces jointes TNEF et à Aspose.Email pour .NET
 
@@ -88,3 +94,9 @@ Oui, vous pouvez utiliser Aspose.Email pour .NET dans des projets personnels et 
 ### Où puis-je trouver plus de documentation et d'exemples ?
 
  Pour une documentation plus détaillée et des exemples de code, vous pouvez visiter le[Aspose.Email pour la documentation .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

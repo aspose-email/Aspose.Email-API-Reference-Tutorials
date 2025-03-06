@@ -3,10 +3,16 @@ title: Java용 Aspose.Email을 사용하여 이메일 보내기
 linktitle: Java용 Aspose.Email을 사용하여 이메일 보내기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: 이 포괄적인 튜토리얼을 통해 Java용 Aspose.Email을 사용하여 이메일을 보내는 기술을 마스터하세요. 손쉽게 이메일을 작성하고 보내는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java용 Aspose.Email을 사용하여 이메일 보내기
+
 
 
 ## Java용 Aspose.Email 시작하기
@@ -38,3 +44,9 @@ Java용 Aspose.Email을 사용하여 대량 이메일을 효율적으로 보내�
 Aspose.Email for Java를 사용하여 사용자 정의 헤더를 추가하여 이메일 메시지를 향상시키는 방법을 알아보세요. 이메일 메타데이터 및 구성을 개선합니다.
 ### [Aspose.Email을 사용하여 이메일 알림 보내기](./sending-email-notifications/)
 Java용 Aspose.Email을 사용하여 이메일 알림을 효과적으로 보내는 방법을 알아보세요. 원활한 의사소통을 위한 코드 예제와 FAQ가 포함된 종합 가이드입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

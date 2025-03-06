@@ -3,10 +3,16 @@ title: Mempertahankan Lampiran TNEF saat Membaca Pesan - Pendekatan C#
 linktitle: Mempertahankan Lampiran TNEF saat Membaca Pesan - Pendekatan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menyimpan lampiran TNEF menggunakan Aspose.Email untuk .NET dalam panduan langkah demi langkah dengan kode sumber ini.
-type: docs
 weight: 15
 url: /id/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mempertahankan Lampiran TNEF saat Membaca Pesan - Pendekatan C#
+
 
 ## Pengantar Lampiran TNEF
 
@@ -132,3 +138,9 @@ Sangat! Aspose.Email dirancang untuk melayani berbagai aplikasi, mulai dari proy
 ### Apakah Aspose.Email diperbarui secara berkala?
 
 Ya, Aspose melakukan pembaruan rutin untuk memastikan kompatibilitas dengan teknologi dan platform terbaru.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

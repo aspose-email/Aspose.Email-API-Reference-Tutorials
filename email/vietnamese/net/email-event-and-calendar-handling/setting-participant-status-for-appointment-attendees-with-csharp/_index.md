@@ -3,10 +3,16 @@ title: Đặt trạng thái người tham gia cho người tham dự cuộc hẹ
 linktitle: Đặt trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách quản lý trạng thái của người tham dự cuộc hẹn bằng C# và Aspose.Email dành cho .NET. Hướng dẫn từng bước với mã nguồn.
-type: docs
 weight: 16
 url: /vi/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Đặt trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
+
 
 ## Giới thiệu về Aspose.Email cho .NET
 
@@ -109,3 +115,9 @@ Có, bạn có thể dễ dàng tích hợp chức năng được thảo luận 
 ### Tôi có thể tìm thêm tài liệu và tài nguyên ở đâu?
 
  Để biết thêm tài liệu và tài nguyên chi tiết, hãy tham khảo tài liệu Aspose.Email for .NET:[Aspose.Email cho tài liệu .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

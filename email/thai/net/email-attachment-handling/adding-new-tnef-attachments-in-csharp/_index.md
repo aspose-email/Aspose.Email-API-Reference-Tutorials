@@ -3,10 +3,16 @@ title: การเพิ่มไฟล์แนบ TNEF ใหม่ใน C #
 linktitle: การเพิ่มไฟล์แนบ TNEF ใหม่ใน C #
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้วิธีเพิ่มไฟล์แนบ TNEF ใหม่ใน C# โดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดเพื่อการผสานรวมที่ราบรื่น
-type: docs
 weight: 12
 url: /th/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การเพิ่มไฟล์แนบ TNEF ใหม่ใน C
+
 
 ## ข้อมูลเบื้องต้นเกี่ยวกับไฟล์แนบ TNEF และ Aspose.Email สำหรับ .NET
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### ฉันจะหาเอกสารและตัวอย่างเพิ่มเติมได้ที่ไหน
 
  สำหรับเอกสารประกอบและตัวอย่างโค้ดโดยละเอียดเพิ่มเติม คุณสามารถไปที่[Aspose.Email สำหรับเอกสาร .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Removing Attachments from Emails - C# Implementation
 linktitle: Removing Attachments from Emails - C# Implementation
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to remove email attachments using Aspose.Email for .NET. Step-by-step guide with C# source code.
-type: docs
 weight: 18
 url: /net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Removing Attachments from Emails - C# Implementation
+
 
 ## Introduction to Removing Attachments from Emails
 
@@ -97,3 +103,10 @@ For more detailed information and documentation about Aspose.Email for .NET, vis
 ### Can I test the Aspose.Email library before integrating it into my project?
 
 Yes, Aspose provides trial versions of its libraries that you can download and test before making a decision to purchase. Visit their website for more information.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

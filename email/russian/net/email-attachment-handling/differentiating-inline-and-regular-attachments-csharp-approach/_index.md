@@ -3,10 +3,16 @@ title: Различие встроенных и обычных вложений 
 linktitle: Различие встроенных и обычных вложений — подход C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как различать встроенные и обычные вложения электронной почты с помощью Aspose.Email для .NET. Подробное руководство с примерами кода.
-type: docs
 weight: 17
 url: /ru/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Различие встроенных и обычных вложений — подход C#
+
 
 ## Введение в различие встроенных и обычных вложений — подход C#
 
@@ -107,3 +113,9 @@ foreach (Attachment attachment in attachments)
 ### Могу ли я сохранять обычные вложения в определенное место на диске?
 
  Абсолютно! Вы можете сохранять обычные вложения в определенном месте на диске, используя`Save` метод объекта вложения и предоставление желаемого пути к файлу.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

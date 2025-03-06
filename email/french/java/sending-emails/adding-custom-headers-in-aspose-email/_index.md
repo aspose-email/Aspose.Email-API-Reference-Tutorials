@@ -3,10 +3,16 @@ title: Ajout d'en-têtes personnalisés dans Aspose.Email
 linktitle: Ajout d'en-têtes personnalisés dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment améliorer vos e-mails en ajoutant des en-têtes personnalisés à l'aide d'Aspose.Email pour Java. Améliorez les métadonnées et l’organisation des e-mails.
-type: docs
 weight: 15
 url: /fr/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ajout d'en-têtes personnalisés dans Aspose.Email
+
 
 ## Introduction
 
@@ -132,3 +138,9 @@ Dans ce guide, vous avez appris à ajouter des en-têtes personnalisés à un e-
 
 ### Comment puis-je extraire les en-têtes personnalisés des e-mails reçus ?
     Vous pouvez utiliser le`getHeaders` méthode sur les emails reçus`MailMessage` objet pour récupérer et traiter les en-têtes personnalisés.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

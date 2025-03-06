@@ -3,10 +3,16 @@ title: Aspose.Email के साथ DKIM हस्ताक्षर कार�
 linktitle: Aspose.Email के साथ DKIM हस्ताक्षर कार्यान्वयन
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: Java के लिए Aspose.Email का उपयोग करके DKIM हस्ताक्षरों के साथ ईमेल सुरक्षा सुनिश्चित करें। डीकेआईएम कार्यान्वयन के लिए चरण-दर-चरण मार्गदर्शिका और कोड।
-type: docs
 weight: 15
 url: /hi/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email के साथ DKIM हस्ताक्षर कार्यान्वयन
+
 
 ## Aspose.Email के साथ DKIM हस्ताक्षर कार्यान्वयन
 
@@ -112,3 +118,9 @@ client.send(message);
 ### जावा के लिए Aspose.Email पर मुझे और संसाधन कहां मिल सकते हैं?
 
 अधिक जानकारी और संसाधनों के लिए, जावा दस्तावेज़ के लिए Aspose.Email पर जाएँ[यहाँ](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

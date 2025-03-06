@@ -3,10 +3,16 @@ title: Detectando anexo ou mensagem incorporada – Guia C#
 linktitle: Detectando anexo ou mensagem incorporada – Guia C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Domine anexos de e-mail e detecção de mensagens incorporadas em C# usando Aspose.Email para .NET. Eleve o seu tratamento de e-mail com nosso guia completo.
-type: docs
 weight: 13
 url: /pt/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Detectando anexo ou mensagem incorporada – Guia C#
+
 
 ## Introdução à detecção de anexo ou mensagem incorporada – Guia C#
 
@@ -106,3 +112,9 @@ Você deve implementar mecanismos adequados de tratamento de erros usando blocos
 ### Posso personalizar o processamento de anexos e mensagens incorporadas?
 
 Com certeza, você pode personalizar o processamento de anexos e mensagens incorporadas para atender às necessidades específicas do seu aplicativo. Aspose.Email fornece APIs flexíveis para essa finalidade.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

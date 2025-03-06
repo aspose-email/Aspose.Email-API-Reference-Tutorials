@@ -3,10 +3,16 @@ title: Specifying Recipient Addresses in C#
 linktitle: Specifying Recipient Addresses in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to specify recipient addresses in C# using Aspose.Email for .NET. Create, configure, and send emails efficiently.
-type: docs
 weight: 19
 url: /net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specifying Recipient Addresses in C#
+
 
 
 This guide will walk you through the process of specifying recipient addresses in C# using the Aspose.Email for .NET library. Aspose.Email is a powerful .NET API that allows you to work with email messages and various email-related tasks. In this tutorial, we will cover how to add recipient addresses to an email message using the library.
@@ -119,3 +125,9 @@ catch (Exception ex)
 For more information and advanced features of Aspose.Email for .NET, refer to the [Aspose API References](https://reference.aspose.com/email/net/).
 
 This concludes the guide on specifying recipient addresses in C# using Aspose.Email for .NET. You've learned how to create an email message, add recipient addresses, and send the email using the library's features.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

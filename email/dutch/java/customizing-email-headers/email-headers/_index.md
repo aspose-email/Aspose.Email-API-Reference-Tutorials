@@ -3,10 +3,16 @@ title: E-mailheaders in Aspose.Email
 linktitle: E-mailheaders in Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Ontgrendel de kracht van e-mailheaders met Aspose.Email voor Java. Leer hoe u moeiteloos e-mailheaders kunt instellen en ophalen.
-type: docs
 weight: 10
 url: /nl/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailheaders in Aspose.Email
+
 
 ## Inleiding tot e-mailheaders
 
@@ -92,3 +98,9 @@ De kop 'Ontvangen' is een reeks vermeldingen die het pad van de e-mail van afzen
 ### Hoe kan ik e-mailheaders uit een grote batch e-mails extraheren?
 
 U kunt de batchverwerkingsmogelijkheden van Aspose.Email gebruiken om kopteksten efficiënt uit meerdere e-mails te extraheren.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

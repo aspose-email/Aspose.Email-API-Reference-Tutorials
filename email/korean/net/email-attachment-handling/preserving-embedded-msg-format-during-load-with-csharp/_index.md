@@ -3,10 +3,16 @@ title: C#을 사용하여 로드하는 동안 포함된 MSG 형식 유지
 linktitle: C#을 사용하여 로드하는 동안 포함된 MSG 형식 유지
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 포함된 MSG 형식을 보존하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
-type: docs
 weight: 12
 url: /ko/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 로드하는 동안 포함된 MSG 형식 유지
+
 
 오늘날의 디지털 세계에서 이메일 커뮤니케이션은 개인적 영역과 업무 영역 모두에서 중추적인 역할을 합니다. 프로그래밍 방식으로 이메일 파일을 작업해야 하는 경우가 많으며 EML(이메일) 파일의 원래 경계를 유지하는 것이 중요할 수 있습니다. 이 단계별 가이드에서는 .NET용 Aspose.Email과 함께 C# 코드를 사용하여 이를 달성하는 방법을 살펴보겠습니다.
 
@@ -74,3 +80,9 @@ Aspose.Email for .NET은 주로 C#용으로 설계되었지만 VB.NET과 같은 
  .NET용 Aspose.Email의 최신 업데이트 및 릴리스에 액세스하려면 릴리스 페이지를 방문하십시오.[.NET 릴리스용 Aspose.Email](https://releases.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

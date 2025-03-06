@@ -3,10 +3,16 @@ title: Aspose.Email'e Görüntüleri Ek Olarak Gömme
 linktitle: Aspose.Email'e Görüntüleri Ek Olarak Gömme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java'da görüntüleri ek olarak nasıl yerleştireceğinizi öğrenin. E-posta iletişiminizi görsel olarak ilgi çekici içerikle geliştirin.
-type: docs
 weight: 14
 url: /tr/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email'e Görüntüleri Ek Olarak Gömme
+
 
 ## Aspose.Email'e Görüntüleri Ek Olarak Gömme
 
@@ -97,3 +103,9 @@ Aspose.Email for Java, JPEG, PNG, GIF ve daha fazlası dahil olmak üzere çeşi
 ### Gömülü görüntülerin boyutunda herhangi bir sınırlama var mı?
 
 Gömülü görsellerin boyutu, e-posta teslim edilebilirliğini ve alıcı deneyimini etkileyebilir. Büyük dosya boyutlarından kaçınmak için resimlerin e-posta için optimize edilmesi önerilir.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

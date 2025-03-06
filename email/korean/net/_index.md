@@ -1,12 +1,17 @@
 ---
 title: Aspose.Email 튜토리얼을 사용한 이메일 구성, 변환 및 처리
 linktitle: .NET 튜토리얼용 Aspose.Email
-type: docs
 weight: 10
 url: /ko/net/
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 기능을 최적화하세요. 고급 이메일 관리를 위한 구성, 변환 및 처리에 대해 알아보세요.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email 튜토리얼을 사용한 이메일 구성, 변환 및 처리
+
 
 ## 소개
 
@@ -45,3 +50,9 @@ is_root: true
 .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 파일 저장 및 검색을 간소화합니다. 이메일 메시지와 첨부 파일을 프로그래밍 방식으로 관리하고 액세스하는 방법을 알아보세요.
 ### [이메일 보안 및 서명](./email-security-and-signatures/)
 .NET 튜토리얼용 Aspose.Email을 사용하여 강력한 이메일 보안 조치와 개인화된 서명을 구현하세요. 안전한 커뮤니케이션과 전문적인 브랜딩을 보장합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

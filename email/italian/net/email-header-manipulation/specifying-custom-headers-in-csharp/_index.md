@@ -3,10 +3,16 @@ title: Specificare intestazioni personalizzate in C#
 linktitle: Specificare intestazioni personalizzate in C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come specificare intestazioni personalizzate in C# utilizzando Aspose.Email per .NET per migliorare la comunicazione tramite posta elettronica. Questa guida passo passo fornisce approfondimenti sulla creazione di intestazioni e-mail personalizzate per un migliore coinvolgimento.
-type: docs
 weight: 16
 url: /it/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Specificare intestazioni personalizzate in C#
+
 
 
 ## introduzione
@@ -97,3 +103,9 @@ Assolutamente, Aspose.Email per .NET soddisfa un'ampia gamma di esigenze di mani
 Nel dinamico mondo della comunicazione e-mail, le intestazioni personalizzate possono rappresentare un punto di svolta, consentendo interazioni su misura ed efficaci. Con Aspose.Email per .NET, il processo di specifica delle intestazioni personalizzate in C# diventa snello ed efficiente. Seguendo i passaggi descritti in questa guida, puoi sfruttare la potenza delle intestazioni personalizzate per migliorare la categorizzazione, la personalizzazione e il coinvolgimento nelle tue attività di comunicazione via email.
 
 Se sei pronto a portare la tua comunicazione e-mail al livello successivo, tuffati nel mondo delle intestazioni personalizzate utilizzando Aspose.Email per .NET. Padroneggiando questa tecnica, puoi inviare e-mail che risuonano con i destinatari e forniscono un'esperienza fluida e coinvolgente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

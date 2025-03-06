@@ -3,10 +3,16 @@ title: การตรวจสอบและยืนยันอีเมล
 linktitle: การตรวจสอบและยืนยันอีเมล
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: ใช้กลไกการตรวจสอบและยืนยันอีเมลที่มีประสิทธิภาพโดยใช้บทช่วยสอน Aspose.Email สำหรับ .NET เพิ่มความแม่นยำและความปลอดภัยในการสื่อสาร
-type: docs
 weight: 17
 url: /th/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การตรวจสอบและยืนยันอีเมล
+
 
 ## การแนะนำ
 
@@ -23,3 +29,9 @@ url: /th/net/email-validation-and-verification/
 ## การตรวจสอบความถูกต้องและบทช่วยสอนการยืนยันอีเมล
 ### [เทคนิคการตรวจสอบอีเมลในโค้ด C#](./email-validation-techniques-in-csharp-code/)
 เรียนรู้วิธีตรวจสอบความถูกต้องของที่อยู่อีเมลอย่างมีประสิทธิภาพใน C# โดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมซอร์สโค้ดที่ให้ไว้ ปรับปรุงความถูกต้องของข้อมูลและประสบการณ์ผู้ใช้
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

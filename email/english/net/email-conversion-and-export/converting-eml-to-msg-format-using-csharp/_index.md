@@ -3,10 +3,16 @@ title: Converting EML to MSG Format using C#
 linktitle: Converting EML to MSG Format using C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to convert EML to MSG using C# and Aspose.Email for .NET. A comprehensive guide with code examples for efficient email format conversion.
-type: docs
 weight: 14
 url: /net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Converting EML to MSG Format using C#
+
 
 ## Introduction
 
@@ -84,3 +90,10 @@ Yes, the provided code retains attachments while converting EML to MSG format.
 ### Can I customize the MSG output format using Aspose.Email?
 
 Certainly, Aspose.Email for .NET provides various options for customizing the output MSG format based on your requirements.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

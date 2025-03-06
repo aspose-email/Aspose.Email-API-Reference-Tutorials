@@ -3,10 +3,16 @@ title: संदेश पढ़ते समय टीएनईएफ अनु
 linktitle: संदेश पढ़ते समय टीएनईएफ अनुलग्नकों को संरक्षित करना - सी# दृष्टिकोण
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: स्रोत कोड के साथ इस चरण-दर-चरण मार्गदर्शिका में जानें कि .NET के लिए Aspose.Email का उपयोग करके TNEF अनुलग्नकों को कैसे संरक्षित किया जाए।
-type: docs
 weight: 15
 url: /hi/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# संदेश पढ़ते समय टीएनईएफ अनुलग्नकों को संरक्षित करना - सी# दृष्टिकोण
+
 
 ## टीएनईएफ अनुलग्नकों का परिचय
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### क्या Aspose.Email नियमित रूप से अपडेट किया जाता है?
 
 हाँ, Aspose नवीनतम तकनीकों और प्लेटफ़ॉर्म के साथ अनुकूलता सुनिश्चित करने के लिए नियमित अपडेट बनाए रखता है।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

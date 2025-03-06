@@ -3,10 +3,16 @@ title: Beépített mellékletekkel való munka az Aspose.Emailben
 linktitle: Beépített mellékletekkel való munka az Aspose.Emailben
 second_title: Aspose.Email Java Email Management API
 description: Optimalizálja e-mail kommunikációját az Aspose.Email for Java segítségével. Ebben az átfogó útmutatóban tanulja meg, hogyan kell dolgozni a soron belüli mellékletekkel.
-type: docs
 weight: 10
 url: /hu/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beépített mellékletekkel való munka az Aspose.Emailben
+
 
 ## Bevezetés az Aspose.Email beépített mellékleteivel való munkavégzésbe
 
@@ -135,3 +141,9 @@ Az Aspose.Email for Java különféle fájlformátumokat támogat a soron belül
 ### Az Aspose.Email for Java kompatibilis a különböző e-mail szerverekkel?
 
 Igen, az Aspose.Email for Java kompatibilis különféle e-mail szerverekkel. Győződjön meg róla, hogy megfelelően konfigurálta az e-mail szerver SMTP-beállításait e-mailek küldésekor.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

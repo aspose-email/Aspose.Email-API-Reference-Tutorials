@@ -3,10 +3,16 @@ title: C# の読み込みオプションを使用した電子メール メッセ
 linktitle: C# の読み込みオプションを使用した電子メール メッセージの読み込み
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# で Aspose.Email for .NET を使用して電子メール メッセージを読み込む方法を学習します。効果的な電子メール処理のためのステップバイステップのガイドとソース コードの例を確認してください。
-type: docs
 weight: 11
 url: /ja/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# の読み込みオプションを使用した電子メール メッセージの読み込み
+
 
 ## Aspose.Email for .NET の概要
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### メールのロード中にエラーが発生した場合はどうすればよいですか?
 
 電子メールの読み込み中にエラーが発生した場合は、読み込みコードを try-catch ブロックでラップして例外を処理してください。これは、発生した問題を特定して対処するのに役立ちます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Enfoque C# extracción de valores de encabezado decodificados
 linktitle: Enfoque C# extracción de valores de encabezado decodificados
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a extraer valores de encabezado de correo electrónico decodificados en C# usando Aspose.Email para .NET. Guía completa con ejemplos de código.
-type: docs
 weight: 17
 url: /es/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enfoque C# extracción de valores de encabezado decodificados
+
 
 En este tutorial, lo guiaremos a través del proceso de uso de Aspose.Email para .NET para extraer valores de encabezado decodificados de mensajes de correo electrónico. Aspose.Email para .NET es una biblioteca sólida que permite a los desarrolladores trabajar con diversos aspectos de los mensajes de correo electrónico, incluida la lectura y manipulación de encabezados de correo electrónico.
 
@@ -77,3 +83,9 @@ En el fragmento de código anterior, realizamos los siguientes pasos:
 ## Conclusión
 
 En este tutorial, aprendió cómo utilizar Aspose.Email para .NET para extraer valores de encabezado decodificados de mensajes de correo electrónico. Aspose.Email para .NET proporciona un conjunto completo de herramientas que permite a los desarrolladores trabajar de manera eficiente con mensajes de correo electrónico, incluido el manejo de encabezados.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

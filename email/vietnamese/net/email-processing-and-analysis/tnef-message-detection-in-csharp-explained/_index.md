@@ -3,10 +3,16 @@ title: Phát hiện thông báo TNEF trong C# - Giải thích
 linktitle: Phát hiện thông báo TNEF trong C# - Giải thích
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách phát hiện và xử lý thông báo TNEF trong C# bằng Aspose.Email for .NET. Tăng cường xử lý email với văn bản phong phú và tệp đính kèm.
-type: docs
 weight: 15
 url: /vi/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Phát hiện thông báo TNEF trong C# - Giải thích
+
 
 Hướng dẫn này sẽ cung cấp cho bạn giải thích chi tiết từng bước về cách phát hiện thông báo TNEF (Định dạng đóng gói trung lập vận chuyển) bằng thư viện Aspose.Email cho .NET. TNEF là định dạng được Microsoft Outlook sử dụng để đóng gói văn bản đa dạng thức và tệp đính kèm trong thư email. Aspose.Email for .NET cung cấp một bộ API mạnh mẽ để hoạt động với email và tệp đính kèm, bao gồm cả thư TNEF.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 Trong hướng dẫn này, bạn đã học cách phát hiện các thông báo TNEF (Định dạng đóng gói trung tính truyền tải) bằng thư viện Aspose.Email cho .NET. Tin nhắn TNEF, thường được Microsoft Outlook sử dụng, gói gọn văn bản đa dạng thức và tệp đính kèm trong email. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể xác định hiệu quả các thư TNEF và trích xuất phần đính kèm của chúng để xử lý thêm.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

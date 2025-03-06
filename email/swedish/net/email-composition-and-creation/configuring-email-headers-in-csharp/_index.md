@@ -3,10 +3,16 @@ title: Konfigurera e-posthuvuden i C#
 linktitle: Konfigurera e-posthuvuden i C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du konfigurerar anpassade e-postrubriker i C# med Aspose.Email för .NET. Steg-för-steg guide med källkod ingår. Förbättra e-postkontroll och säkerhet.
-type: docs
 weight: 17
 url: /sv/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Konfigurera e-posthuvuden i C#
+
 
 E-postkommunikation har blivit en integrerad del av modern affärs- och personlig interaktion. Även om innehållet i ett e-postmeddelande är avgörande, är rubrikerna som medföljer e-postmeddelandet lika viktiga. E-postrubriker ger värdefull information om meddelandet, avsändare, mottagare och mer. Att konfigurera e-posthuvuden i C# med Aspose.Email för .NET erbjuder ett kraftfullt sätt att anpassa och kontrollera informationen som är inbäddad i e-postmeddelanden. I den här artikeln kommer vi att utforska hur du konfigurerar e-posthuvuden steg för steg med hjälp av Aspose.Email för .NET-biblioteket.
 
@@ -133,3 +139,9 @@ Aspose.Email erbjuder valideringsfunktioner för att säkerställa att e-posthuv
 ### Är e-postrubriker skiftlägeskänsliga?
 
 Ja, e-postrubriker är skiftlägesokänsliga. Det är dock en god praxis att bibehålla konsekvent användning av stora bokstäver för bättre kompatibilitet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

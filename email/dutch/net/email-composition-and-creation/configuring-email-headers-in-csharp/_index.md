@@ -3,10 +3,16 @@ title: E-mailheaders configureren in C#
 linktitle: E-mailheaders configureren in C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u aangepaste e-mailheaders in C# configureert met Aspose.Email voor .NET. Stap-voor-stap handleiding met broncode inbegrepen. Verbeter het e-mailbeheer en de beveiliging.
-type: docs
 weight: 17
 url: /nl/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailheaders configureren in C#
+
 
 E-mailcommunicatie is een integraal onderdeel geworden van moderne zakelijke en persoonlijke interacties. Hoewel de inhoud van een e-mail cruciaal is, zijn de kopteksten bij de e-mail even belangrijk. E-mailheaders bieden waardevolle informatie over het bericht, de afzender, de ontvanger en meer. Het configureren van e-mailheaders in C# met behulp van Aspose.Email voor .NET biedt een krachtige manier om de informatie die is ingesloten in e-mailberichten aan te passen en te beheren. In dit artikel onderzoeken we stap voor stap hoe u e-mailheaders kunt configureren met behulp van de Aspose.Email voor .NET-bibliotheek.
 
@@ -133,3 +139,9 @@ Aspose.Email biedt validatiefuncties om ervoor te zorgen dat e-mailheaders corre
 ### Zijn e-mailheaders hoofdlettergevoelig?
 
 Ja, e-mailheaders zijn hoofdlettergevoelig. Het is echter een goede gewoonte om consistent hoofdlettergebruik te handhaven voor een betere compatibiliteit.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 提取嵌入对象 - C# 教程
 linktitle: 提取嵌入对象 - C# 教程
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解使用 Aspose.Email for .NET 从电子邮件中提取嵌入对象。带有代码示例的分步指南。
-type: docs
 weight: 15
 url: /zh/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 提取嵌入对象 - C# 教程
+
 
 ## 提取嵌入对象简介 - C# 教程
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### 在哪里可以找到有关 Aspose.Email 的更多文档？
 
 您可以在以下位置找到 Aspose.Email 的详细文档和代码示例[Aspose.Email for .NET API 参考](https://reference.aspose.com/email/net/)页。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

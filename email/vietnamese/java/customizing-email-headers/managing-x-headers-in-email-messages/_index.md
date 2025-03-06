@@ -3,10 +3,16 @@ title: Quản lý tiêu đề X trong tin nhắn email bằng Aspose.Email
 linktitle: Quản lý tiêu đề X trong tin nhắn email bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Giải phóng sức mạnh của tiêu đề X trong email bằng Aspose.Email for Java. Tìm hiểu cách quản lý siêu dữ liệu tùy chỉnh và nâng cao khả năng xử lý email.
-type: docs
 weight: 16
 url: /vi/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Quản lý tiêu đề X trong tin nhắn email bằng Aspose.Email
+
 
 ## Giới thiệu
 
@@ -124,3 +130,9 @@ Bạn có thể đọc X-Headers từ các email đã nhận bằng Aspose.Email
 ### Aspose.Email có phù hợp để quản lý email cấp doanh nghiệp không?
 
 Có, Aspose.Email là một thư viện mạnh mẽ có thể được sử dụng để quản lý email cấp doanh nghiệp. Nó cung cấp nhiều tính năng để tạo, gửi, nhận và xử lý email, giúp nó phù hợp với nhiều tình huống kinh doanh khác nhau.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

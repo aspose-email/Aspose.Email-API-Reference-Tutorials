@@ -3,10 +3,16 @@ title: إضافة مرفقات TNEF جديدة في C#
 linktitle: إضافة مرفقات TNEF جديدة في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إضافة مرفقات TNEF جديدة في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية للتكامل السلس.
-type: docs
 weight: 12
 url: /ar/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إضافة مرفقات TNEF جديدة في C#
+
 
 ## مقدمة إلى مرفقات TNEF وAspose.Email لـ .NET
 
@@ -88,3 +94,9 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 ### أين يمكنني العثور على المزيد من الوثائق والأمثلة؟
 
  لمزيد من الوثائق التفصيلية وأمثلة التعليمات البرمجية، يمكنك زيارة[Aspose.Email للحصول على وثائق .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

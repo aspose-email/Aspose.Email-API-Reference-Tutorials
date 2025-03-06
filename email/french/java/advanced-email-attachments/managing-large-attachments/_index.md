@@ -3,10 +3,16 @@ title: Gestion des pièces jointes volumineuses dans Aspose.Email
 linktitle: Gestion des pièces jointes volumineuses dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Gérez efficacement les pièces jointes volumineuses avec Aspose.Email pour Java. Guide étape par étape et code source pour une gestion rationalisée des pièces jointes dans les applications Java.
-type: docs
 weight: 11
 url: /fr/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestion des pièces jointes volumineuses dans Aspose.Email
+
 
 ## Introduction à la gestion des pièces jointes volumineuses dans Aspose.Email pour Java
 
@@ -145,3 +151,9 @@ Les limites de taille des pièces jointes aux e-mails peuvent varier en fonction
 ### Puis-je compresser les pièces jointes pour réduire leur taille ?
 
 Oui, vous pouvez compresser les pièces jointes pour réduire leur taille avant de les envoyer. Aspose.Email fournit des fonctionnalités pour compresser et décompresser les pièces jointes par programme. Vous pouvez implémenter cela pour optimiser la taille de vos pièces jointes.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

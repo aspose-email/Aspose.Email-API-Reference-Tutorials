@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for Java 发送电子邮件
 linktitle: 使用 Aspose.Email for Java 发送电子邮件
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 通过这些综合教程掌握使用 Aspose.Email for Java 发送电子邮件的艺术。学习轻松制作和发送电子邮件。
-type: docs
 weight: 10
 url: /zh/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for Java 发送电子邮件
+
 
 
 ## Java 版 Aspose.Email 入门
@@ -38,3 +44,9 @@ url: /zh/java/sending-emails/
 了解如何使用 Aspose.Email for Java 添加自定义标头来增强您的电子邮件。改进电子邮件元数据和组织。
 ### [使用 Aspose.Email 发送电子邮件通知](./sending-email-notifications/)
 了解如何使用 Aspose.Email for Java 有效发送电子邮件通知。包含代码示例和常见问题解答的综合指南，可实现无缝沟通。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email でのインライン添付ファイルの操作
 linktitle: Aspose.Email でのインライン添付ファイルの操作
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して電子メール通信を最適化します。この包括的なガイドで、インライン添付ファイルの操作方法を学習してください。
-type: docs
 weight: 10
 url: /ja/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email でのインライン添付ファイルの操作
+
 
 ## Aspose.Email でのインライン添付ファイルの操作の概要
 
@@ -135,3 +141,9 @@ HTML メールのインライン添付ファイルを処理するには、`Linke
 ### Aspose.Email for Java はさまざまな電子メール サーバーと互換性がありますか?
 
 はい、Aspose.Email for Java はさまざまな電子メール サーバーと互換性があります。電子メールを送信するときは、電子メール サーバーの SMTP 設定が正しく構成されていることを確認してください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

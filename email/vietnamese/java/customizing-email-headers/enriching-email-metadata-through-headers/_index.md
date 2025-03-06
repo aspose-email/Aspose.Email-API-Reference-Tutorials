@@ -3,10 +3,16 @@ title: Làm phong phú siêu dữ liệu email thông qua các tiêu đề với
 linktitle: Làm phong phú siêu dữ liệu email thông qua các tiêu đề với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Nâng cao siêu dữ liệu email với Aspose.Email cho Java. Tìm hiểu cách làm phong phú tiêu đề email để cải thiện khả năng theo dõi và tùy chỉnh với Aspose.Email.
-type: docs
 weight: 18
 url: /vi/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm phong phú siêu dữ liệu email thông qua các tiêu đề với Aspose.Email
+
 
 ## Giới thiệu về Làm phong phú siêu dữ liệu email thông qua tiêu đề với Aspose.Email
 
@@ -107,3 +113,9 @@ Có, Aspose.Email hỗ trợ nhiều ngôn ngữ lập trình, bao gồm Java, .
 ### Tôi có thể tìm thêm tài nguyên trên Aspose.Email cho Java ở đâu?
 
  Bạn có thể khám phá tài liệu tại[đây](https://reference.aspose.com/email/java/) để có các tài nguyên và ví dụ toàn diện.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

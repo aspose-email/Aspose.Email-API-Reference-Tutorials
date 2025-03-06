@@ -3,10 +3,16 @@ title: Rendu des événements du calendrier à l'aide du code C#
 linktitle: Rendu des événements du calendrier à l'aide du code C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à restituer les événements de calendrier à l'aide de C# et Aspose.Email pour .NET. Créez facilement des horaires interactifs.
-type: docs
 weight: 15
 url: /fr/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rendu des événements du calendrier à l'aide du code C#
+
 
 
 À l’ère numérique d’aujourd’hui, la gestion efficace des événements du calendrier est cruciale pour les entreprises comme pour les particuliers. Aspose.Email pour .NET fournit un ensemble d'outils puissants pour gérer les événements du calendrier et tirer le meilleur parti de vos besoins de planification. Dans ce guide étape par étape, nous vous guiderons tout au long du processus de rendu des événements de calendrier à l'aide du code C# avec Aspose.Email pour .NET.
@@ -90,3 +96,9 @@ Vous pouvez désormais exploiter la puissance d'Aspose.Email pour .NET pour gér
    Oui, Aspose.Email offre un large éventail de fonctionnalités pour la gestion des e-mails, notamment l'envoi, la réception et le traitement des e-mails.
 
  N'hésitez pas à explorer le[Documentation de l'API Aspose.Email](https://reference.aspose.com/email/net/) pour plus de détails et des scénarios d’utilisation avancés. Bon codage !
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

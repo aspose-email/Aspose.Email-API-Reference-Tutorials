@@ -3,10 +3,16 @@ title: E-mail címek módosítása C# segítségével
 linktitle: E-mail címek módosítása C# segítségével
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan módosíthatja az e-mail címeket C# használatával az Aspose.Email for .NET segítségével. Kövesse ezt a lépésről lépésre szóló útmutatót az e-mail címek hatékony kezeléséhez.
-type: docs
 weight: 10
 url: /hu/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail címek módosítása C# segítségével
+
 
 ## Bevezetés
 
@@ -132,3 +138,9 @@ Míg az Aspose.Email robusztus választás, más könyvtárak, például a MimeK
 ## Következtetés
 
 Ebben az útmutatóban az e-mail-címek C# és Aspose.Email for .NET használatával történő módosításának világának felfedezésére indultunk. A lépésenkénti utasítások követésével és a mellékelt forráskód használatával most már rendelkezik azokkal a készségekkel, amelyekkel hatékonyan módosíthatja az e-mail címeket az alkalmazásokban. Az Aspose.Email képességei az Ön újonnan megszerzett tudásával kombinálva kétségtelenül leegyszerűsítik az e-mailek manipulálására irányuló törekvéseit.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

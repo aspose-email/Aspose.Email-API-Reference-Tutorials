@@ -3,10 +3,16 @@ title: การสร้าง TNEF EML จากผงชูรสใน C #
 linktitle: การสร้าง TNEF EML จากผงชูรสใน C #
 second_title: Aspose.Email .NET API การประมวลผลอีเมล
 description: เรียนรู้การสร้าง TNEF EML จากผงชูรสโดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมรหัส C# การแปลงรูปแบบอีเมลที่มีประสิทธิภาพ
-type: docs
 weight: 12
 url: /th/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การสร้าง TNEF EML จากผงชูรสใน C
+
 
 ในคู่มือนี้ คุณจะได้เรียนรู้วิธีสร้างไฟล์ EML TNEF (Transport Neutral Encapsulation Format) จากไฟล์ MSG (ข้อความ Outlook) โดยใช้ไลบรารี Aspose.Email สำหรับ .NET TNEF เป็นรูปแบบไฟล์แนบอีเมลที่เป็นกรรมสิทธิ์ซึ่งใช้โดย Microsoft Outlook Aspose.Email สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้คุณสามารถทำงานกับรูปแบบอีเมลต่างๆ ในแอปพลิเคชัน C# ของคุณได้
 
@@ -100,3 +106,10 @@ url: /th/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csha
 คุณสามารถใช้เทคนิคการจัดการข้อยกเว้น C# มาตรฐานได้ Aspose.Email ส่งข้อยกเว้นที่เฉพาะเจาะจงสำหรับไลบรารี ดังนั้นโปรดตรวจสอบให้แน่ใจว่าได้จับและจัดการอย่างเหมาะสมในโค้ดของคุณ
 
  รู้สึกอิสระที่จะสำรวจ[Aspose.Email สำหรับเอกสาร .NET](https://reference.aspose.com/email/net) สำหรับคุณสมบัติและตัวอย่างขั้นสูงเพิ่มเติม
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

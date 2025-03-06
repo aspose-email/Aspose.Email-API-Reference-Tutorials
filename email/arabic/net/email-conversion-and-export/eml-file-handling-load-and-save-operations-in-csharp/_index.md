@@ -3,10 +3,16 @@ title: معالجة ملفات EML - تحميل العمليات وحفظها ف
 linktitle: معالجة ملفات EML - تحميل العمليات وحفظها في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية التعامل مع ملفات EML في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية لتحميل رسائل البريد الإلكتروني وتعديلها وحفظها.
-type: docs
 weight: 13
 url: /ar/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# معالجة ملفات EML - تحميل العمليات وحفظها في C#
+
 
 ## مقدمة إلى ملفات EML
 
@@ -150,3 +156,9 @@ foreach (MailMessage modifiedMessage in modifiedMessages)
 ### هل Aspose.Email مناسب للمشاريع التجارية؟
 
 نعم، Aspose.Email هي مكتبة متعددة الاستخدامات مناسبة لكل من المشاريع الشخصية والتجارية، وتقدم ميزات قوية لمعالجة البريد الإلكتروني.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

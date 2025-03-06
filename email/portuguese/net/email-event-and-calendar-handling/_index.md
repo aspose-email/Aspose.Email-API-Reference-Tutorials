@@ -3,10 +3,16 @@ title: Tratamento eficiente de eventos de e-mail e calendário
 linktitle: Tratamento de eventos de e-mail e calendário
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Simplifique o tratamento de eventos de e-mail e o gerenciamento de calendário com os tutoriais Aspose.Email for .NET. Aprenda a automatizar eventos de email e integrar perfeitamente funcionalidades de calendário.
-type: docs
 weight: 15
 url: /pt/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tratamento eficiente de eventos de e-mail e calendário
+
 
 ## Introdução
 
@@ -32,3 +38,9 @@ Aprenda como gerenciar o status dos participantes do compromisso usando C# e Asp
 Aprenda como usar Aspose.Email for .NET para criar rascunhos de e-mails de solicitação de compromisso em C#. Melhore a comunicação e a eficiência empresarial.
 ### [Alterando ProdID em arquivos ICS com C#](./altering-prodid-in-ics-files-with-csharp/)
 Aprenda a alterar ProdID em arquivos ICS usando C# e Aspose.Email para .NET. Guia passo a passo e código. Garanta a integridade e compatibilidade dos dados. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

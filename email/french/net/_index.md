@@ -1,12 +1,17 @@
 ---
 title: Composition, conversion et traitement des e-mails avec les didacticiels Aspose.Email
 linktitle: Aspose.Email pour les didacticiels .NET
-type: docs
 weight: 10
 url: /fr/net/
 description: Optimisez les capacités de messagerie avec les didacticiels Aspose.Email pour .NET. Apprenez la composition, la conversion et le traitement pour une gestion avancée des e-mails.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Composition, conversion et traitement des e-mails avec les didacticiels Aspose.Email
+
 
 ## Introduction
 
@@ -45,3 +50,9 @@ Implémentez des mécanismes robustes de validation et de vérification des e-ma
 Rationalisez le stockage et la récupération des fichiers de courrier électronique à l’aide des didacticiels Aspose.Email pour .NET. Apprenez à gérer et à accéder aux messages électroniques et aux pièces jointes par programmation.
 ### [Sécurité des e-mails et signatures](./email-security-and-signatures/)
 Mettez en œuvre des mesures de sécurité de messagerie robustes et des signatures personnalisées avec les didacticiels Aspose.Email pour .NET. Garantissez une communication sécurisée et une image de marque professionnelle.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

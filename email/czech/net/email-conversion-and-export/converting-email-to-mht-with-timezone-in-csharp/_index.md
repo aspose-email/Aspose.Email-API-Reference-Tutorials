@@ -3,10 +3,16 @@ title: Převod e-mailu na MHT s časovým pásmem v C#
 linktitle: Převod e-mailu na MHT s časovým pásmem v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Převeďte e-maily do formátu MHT s přesnými časovými pásmy pomocí Aspose.Email pro .NET. Poskytuje se podrobný průvodce a příklad kódu.
-type: docs
 weight: 12
 url: /cs/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Převod e-mailu na MHT s časovým pásmem v C#
+
 
 ## Úvod do e-mailové konverze E-mail na MHT s časovým pásmem
 
@@ -105,3 +111,9 @@ Ano, Aspose.Email pro .NET podporuje různé formáty, včetně MSG, EML, PST a 
 ### Jak si mohu stáhnout nejnovější verzi Aspose.Email pro .NET?
 
  Nejnovější verzi si můžete stáhnout ze stránky vydání:[Stáhněte si Aspose.Email pro .NET](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

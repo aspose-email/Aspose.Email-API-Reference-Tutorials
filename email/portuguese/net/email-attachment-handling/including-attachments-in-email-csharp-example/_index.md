@@ -3,10 +3,16 @@ title: Incluindo anexos em e-mail – exemplo C#
 linktitle: Incluindo anexos em e-mail – exemplo C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como incluir anexos em e-mail usando Aspose.Email for .NET. Guia passo a passo com exemplo de código C#.
-type: docs
 weight: 10
 url: /pt/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Incluindo anexos em e-mail – exemplo C#
+
 
 ## Introdução à inclusão de anexos em e-mail
 
@@ -111,3 +117,9 @@ Sim, você pode configurar o Aspose.Email para enviar e-mails por meio de conex�
 ### Onde posso encontrar mais informações sobre os recursos do Aspose.Email?
 
  Para obter informações mais detalhadas sobre os recursos, classes e métodos do Aspose.Email, consulte o[Referência da API Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

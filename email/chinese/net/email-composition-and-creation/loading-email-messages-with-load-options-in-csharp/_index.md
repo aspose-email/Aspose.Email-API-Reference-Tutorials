@@ -3,10 +3,16 @@ title: 使用 C# 中的加载选项加载电子邮件
 linktitle: 使用 C# 中的加载选项加载电子邮件
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何在 C# 中使用 Aspose.Email for .NET 加载电子邮件。探索有效电子邮件处理的分步指南和源代码示例。
-type: docs
 weight: 11
 url: /zh/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 中的加载选项加载电子邮件
+
 
 ## Aspose.Email for .NET 简介
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### 如果在加载电子邮件时遇到错误，我该怎么办？
 
 如果您在电子邮件加载过程中遇到错误，请确保将加载代码包装在 try-catch 块中以处理异常。这将帮助您识别并解决出现的任何问题。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

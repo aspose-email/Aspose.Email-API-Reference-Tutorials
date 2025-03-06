@@ -3,10 +3,16 @@ title: Draft Message Handling in C# - Saving Email as Draft
 linktitle: Draft Message Handling in C# - Saving Email as Draft
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to implement draft email handling in C# using Aspose.Email for .NET. Create, edit, and save drafts seamlessly.
-type: docs
 weight: 17
 url: /net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Draft Message Handling in C# - Saving Email as Draft
+
 
 ## Introduction
 
@@ -103,3 +109,10 @@ Absolutely, by following the steps provided in this guide, you can seamlessly in
 ### Does the Aspose.Email library support other email-related functionalities?
 
 Yes, the Aspose.Email library offers a wide range of features for working with email messages, including sending, receiving, and manipulating emails and attachments. You can refer to the documentation for more details: [here](https://reference.aspose.com)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

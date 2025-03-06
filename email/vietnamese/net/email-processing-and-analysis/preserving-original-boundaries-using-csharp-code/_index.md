@@ -3,10 +3,16 @@ title: Bảo tồn ranh giới ban đầu bằng mã C#
 linktitle: Bảo tồn ranh giới ban đầu bằng mã C#
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách duy trì ranh giới ban đầu của tệp đính kèm email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn.
-type: docs
 weight: 13
 url: /vi/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo tồn ranh giới ban đầu bằng mã C#
+
 
 ## Giới thiệu về bảo tồn ranh giới ban đầu
 
@@ -107,3 +113,9 @@ Bạn có thể sử dụng thư viện Aspose.Email để tải và thao tác v
 ### Tôi có thể tìm thêm thông tin về Aspose.Email cho .NET ở đâu?
 
  Bạn có thể tìm thấy tài liệu và ví dụ toàn diện về[Tài liệu Aspose.Email](https://reference.aspose.com/email/net/) trang.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

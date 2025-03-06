@@ -3,10 +3,16 @@ title: Carga de mensajes de correo electrónico con opciones de carga en C#
 linktitle: Carga de mensajes de correo electrónico con opciones de carga en C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a cargar mensajes de correo electrónico con Aspose.Email para .NET en C#. Explore la guía paso a paso y ejemplos de código fuente para un manejo eficaz del correo electrónico.
-type: docs
 weight: 11
 url: /es/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Carga de mensajes de correo electrónico con opciones de carga en C#
+
 
 ## Introducción a Aspose.Email para .NET
 
@@ -167,3 +173,9 @@ Sí, puede cargar correos electrónicos directamente desde un servidor Exchange 
 ### ¿Qué debo hacer si encuentro errores al cargar correos electrónicos?
 
 Si encuentra errores durante la carga del correo electrónico, asegúrese de incluir su código de carga en un bloque try-catch para manejar las excepciones. Esto le ayudará a identificar y abordar cualquier problema que surja.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

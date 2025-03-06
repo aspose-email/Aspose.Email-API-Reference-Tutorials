@@ -3,10 +3,16 @@ title: Mellékletek kinyerése e-mailből – C# végigjátszás
 linktitle: Mellékletek kinyerése e-mailből – C# végigjátszás
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg az e-mail mellékletek kibontását lépésről lépésre az Aspose.Email for .NET segítségével. Különféle formátumok kezelése és mentése könnyedén.
-type: docs
 weight: 14
 url: /hu/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mellékletek kinyerése e-mailből – C# végigjátszás
+
 
 ## Bevezetés a mellékletek e-mailből történő kibontásába – C# végigjátszás az Aspose.Email for .NET használatával
 
@@ -114,3 +120,9 @@ Az Aspose.Email támogatja a .NET-keretrendszert és a .NET Core-t.
 ### Hol találhatok további információt az Aspose.Email-ről?
 
  A részletes dokumentációért és példákért lásd a[Aspose.E-mail dokumentáció](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

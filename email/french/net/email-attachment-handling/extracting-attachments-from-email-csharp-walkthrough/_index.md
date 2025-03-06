@@ -3,10 +3,16 @@ title: Extraire des pièces jointes d'un e-mail - Procédure pas à pas C#
 linktitle: Extraire des pièces jointes d'un e-mail - Procédure pas à pas C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à extraire les pièces jointes des e-mails étape par étape à l'aide d'Aspose.Email pour .NET. Gérez différents formats et enregistrez facilement.
-type: docs
 weight: 14
 url: /fr/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraire des pièces jointes d'un e-mail - Procédure pas à pas C#
+
 
 ## Introduction à l'extraction de pièces jointes d'un courrier électronique - Procédure pas à pas en C# à l'aide d'Aspose.Email pour .NET
 
@@ -114,3 +120,9 @@ Aspose.Email prend en charge .NET Framework et .NET Core.
 ### Où puis-je trouver plus d’informations sur Aspose.Email ?
 
  Pour une documentation détaillée et des exemples, reportez-vous au[Documentation Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

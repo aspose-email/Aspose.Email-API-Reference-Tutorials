@@ -3,10 +3,16 @@ title: Mengekstrak Objek Tersemat dari Email dengan C#
 linktitle: Mengekstrak Objek Tersemat dari Email dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak objek yang disematkan dari email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 16
 url: /id/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengekstrak Objek Tersemat dari Email dengan C#
+
 
 ## Pengantar Objek Tersemat di Email
 
@@ -113,3 +119,9 @@ Ya, Anda dapat memanipulasi objek tertanam yang diekstraksi sebelum menyimpannya
 ### Di mana saya dapat menemukan lebih banyak contoh penggunaan Aspose.Email untuk .NET?
 
  Anda dapat menemukan lebih banyak contoh kode dan tutorial di[Referensi API](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

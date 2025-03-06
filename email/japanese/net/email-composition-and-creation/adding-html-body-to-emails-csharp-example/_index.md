@@ -3,10 +3,16 @@ title: HTML 本文をメールに追加する - C# の例
 linktitle: HTML 本文をメールに追加する - C# の例
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET で HTML を使用して電子メール コンテンツを強化する方法を学びます。 C# の例を含むステップバイステップのガイド。メールコミュニケーションを向上させましょう！
-type: docs
 weight: 18
 url: /ja/net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# HTML 本文をメールに追加する - C# の例
+
 
 電子メールによるコミュニケーションは、現代のビジネスや個人的なやり取りに不可欠な部分となっています。プレーン テキストの電子メールは本来の目的を果たしますが、HTML コンテンツを電子メールに組み込むと、電子メールの視覚的な魅力と機能が大幅に向上します。この記事では、Aspose.Email for .NET を使用して電子メールに HTML 本文を追加する方法について、C# のソース コード例を含む包括的なステップバイステップ ガイドを提供します。
 
@@ -80,3 +86,9 @@ Aspose.Email for .NET を使用して HTML コンテンツを電子メール メ
 
 ### Aspose.Email for .NET の包括的なドキュメントはどこで見つけられますか?
     Aspose のドキュメントには次の場所からアクセスできます。[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

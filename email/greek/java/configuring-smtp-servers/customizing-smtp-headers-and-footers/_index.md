@@ -3,10 +3,16 @@ title: Προσαρμογή κεφαλίδων και υποσέλιδων SMTP 
 linktitle: Προσαρμογή κεφαλίδων και υποσέλιδων SMTP με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να προσαρμόζετε τις κεφαλίδες και τα υποσέλιδα SMTP με το Aspose.Email για Java. Βελτιώστε την επικοινωνία μέσω email με εξατομικευμένη επωνυμία και μηνύματα.
-type: docs
 weight: 16
 url: /el/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προσαρμογή κεφαλίδων και υποσέλιδων SMTP με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -107,3 +113,9 @@ client.send(message);
 ### Ποιες ρυθμίσεις SMTP πρέπει να χρησιμοποιήσω για να στείλω προσαρμοσμένα μηνύματα ηλεκτρονικού ταχυδρομείου;
 
 Θα πρέπει να χρησιμοποιήσετε τις ρυθμίσεις SMTP που παρέχονται από τον πάροχο υπηρεσιών email ή το τμήμα IT του οργανισμού σας. Αυτές οι ρυθμίσεις περιλαμβάνουν συνήθως τη διεύθυνση διακομιστή SMTP, τον αριθμό θύρας και τα διαπιστευτήρια ελέγχου ταυτότητας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: استخراج المرفقات من رسائل البريد الإلكت
 linktitle: استخراج المرفقات من رسائل البريد الإلكتروني في Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعرف على كيفية استخراج مرفقات البريد الإلكتروني بسهولة باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة لمطوري جافا.
-type: docs
 weight: 13
 url: /ar/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج المرفقات من رسائل البريد الإلكتروني في Aspose.Email
+
 
 ## مقدمة إلى Aspose.Email لجافا
 
@@ -83,3 +89,9 @@ public class ExtractAttachments {
 ### أين يمكنني الحصول على الدعم لـ Aspose.Email لـ Java؟
 
 للحصول على أي مساعدة فنية أو استفسارات، يمكنك التواصل مع فريق دعم Aspose من خلال قنوات الدعم الخاصة بهم.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

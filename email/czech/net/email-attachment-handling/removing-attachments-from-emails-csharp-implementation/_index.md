@@ -3,10 +3,16 @@ title: Odebírání příloh z e-mailů - C# Implementace
 linktitle: Odebírání příloh z e-mailů - C# Implementace
 second_title: Aspose.Email .NET Email Processing API
 description: Přečtěte si, jak odstranit přílohy e-mailů pomocí Aspose.Email for .NET. Podrobný průvodce se zdrojovým kódem C#.
-type: docs
 weight: 18
 url: /cs/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Odebírání příloh z e-mailů - C# Implementace
+
 
 ## Úvod do odstraňování příloh z e-mailů
 
@@ -97,3 +103,9 @@ Absolutně. Aspose.Email je navržen tak, aby byl škálovatelný a mohl být po
 ### Mohu otestovat knihovnu Aspose.Email, než ji integruji do svého projektu?
 
 Ano, Aspose poskytuje zkušební verze svých knihoven, které si můžete stáhnout a vyzkoušet, než se rozhodnete pro nákup. Navštivte jejich webové stránky pro více informací.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

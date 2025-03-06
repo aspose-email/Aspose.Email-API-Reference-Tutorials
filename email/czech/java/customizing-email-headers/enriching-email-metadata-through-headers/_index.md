@@ -3,10 +3,16 @@ title: Obohacení e-mailových metadat prostřednictvím záhlaví s Aspose.Emai
 linktitle: Obohacení e-mailových metadat prostřednictvím záhlaví s Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Vylepšete e-mailová metadata pomocí Aspose.Email pro Java. Naučte se, jak obohatit hlavičky e-mailů pro lepší sledování a přizpůsobení pomocí Aspose.Email.
-type: docs
 weight: 18
 url: /cs/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Obohacení e-mailových metadat prostřednictvím záhlaví s Aspose.Email
+
 
 ## Úvod do obohacování e-mailových metadat prostřednictvím záhlaví s Aspose.Email
 
@@ -107,3 +113,9 @@ Ano, Aspose.Email podporuje více programovacích jazyků, včetně Javy, .NET a
 ### Kde najdu další zdroje na Aspose.Email for Java?
 
  Dokumentaci si můžete prohlédnout na[tady](https://reference.aspose.com/email/java/) pro komplexní zdroje a příklady.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

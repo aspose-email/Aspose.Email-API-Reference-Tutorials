@@ -3,10 +3,16 @@ title: 在 C# 中配置电子邮件标头
 linktitle: 在 C# 中配置电子邮件标头
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中配置自定义电子邮件标头。包含源代码的分步指南。增强电子邮件控制和安全性。
-type: docs
 weight: 17
 url: /zh/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 C# 中配置电子邮件标头
+
 
 电子邮件通信已成为现代商业和个人互动不可或缺的一部分。虽然电子邮件的内容至关重要，但电子邮件附带的标题也同样重要。电子邮件标头提供有关邮件、发件人、收件人等的宝贵信息。使用 Aspose.Email for .NET 在 C# 中配置电子邮件标头提供了一种强大的方法来自定义和控制电子邮件中嵌入的信息。在本文中，我们将探讨如何使用 Aspose.Email for .NET 库逐步配置电子邮件标头。
 
@@ -133,3 +139,9 @@ Aspose.Email 提供验证功能，以确保电子邮件标头格式正确且符�
 ### 电子邮件标头区分大小写吗？
 
 是的，电子邮件标题不区分大小写。但是，保持大小写一致以获得更好的兼容性是一个很好的做法。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

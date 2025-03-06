@@ -3,10 +3,16 @@ title: C# Approach - Extracting Decoded Header Values
 linktitle: C# Approach - Extracting Decoded Header Values
 second_title: Aspose.Email .NET Email Processing API
 description: Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples.
-type: docs
 weight: 17
 url: /net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Approach - Extracting Decoded Header Values
+
 
 In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
 
@@ -77,3 +83,10 @@ Aspose.Email for .NET is a commercial library. You can explore its features by [
 ## Conclusion
 
 In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

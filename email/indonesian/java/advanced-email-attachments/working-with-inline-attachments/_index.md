@@ -3,10 +3,16 @@ title: Bekerja dengan Lampiran Inline di Aspose.Email
 linktitle: Bekerja dengan Lampiran Inline di Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Optimalkan komunikasi email Anda dengan Aspose.Email untuk Java. Pelajari cara bekerja dengan lampiran inline dalam panduan komprehensif ini.
-type: docs
 weight: 10
 url: /id/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bekerja dengan Lampiran Inline di Aspose.Email
+
 
 ## Pengantar Bekerja dengan Lampiran Inline di Aspose.Email
 
@@ -135,3 +141,9 @@ Untuk menangani lampiran sebaris dalam email HTML, gunakan`LinkedResource` kelas
 ### Apakah Aspose.Email untuk Java kompatibel dengan server email yang berbeda?
 
 Ya, Aspose.Email untuk Java kompatibel dengan berbagai server email. Pastikan Anda mengonfigurasi pengaturan SMTP dengan benar untuk server email Anda saat mengirim email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Verimli E-posta Etkinliği ve Takvim Kullanımı
 linktitle: E-posta Etkinliği ve Takvim İşleme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimleriyle e-posta olay yönetimini ve takvim yönetimini kolaylaştırın. E-posta etkinliklerini otomatikleştirmeyi ve takvim işlevlerini sorunsuz bir şekilde entegre etmeyi öğrenin.
-type: docs
 weight: 15
 url: /tr/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verimli E-posta Etkinliği ve Takvim Kullanımı
+
 
 ## giriiş
 
@@ -32,3 +38,9 @@ Randevu katılımcılarının durumunu C# ve Aspose.Email for .NET kullanarak na
 C#'ta taslak randevu isteği e-postaları oluşturmak için Aspose.Email for .NET'i nasıl kullanacağınızı öğrenin. İş iletişimini ve verimliliği artırın.
 ### [ICS Dosyalarındaki ProdID'yi C# ile Değiştirme](./altering-prodid-in-ics-files-with-csharp/)
 C# ve Aspose.Email for .NET kullanarak ICS dosyalarındaki ProdID'yi değiştirmeyi öğrenin. Adım adım kılavuz ve kod. Veri bütünlüğünü ve uyumluluğunu sağlayın. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

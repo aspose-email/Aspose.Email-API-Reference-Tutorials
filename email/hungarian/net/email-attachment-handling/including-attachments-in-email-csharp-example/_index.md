@@ -3,10 +3,16 @@ title: Mellékletek felvétele az e-mailbe – C# példa
 linktitle: Mellékletek felvétele az e-mailbe – C# példa
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan helyezhet el mellékleteket az e-mailekbe az Aspose.Email for .NET használatával. Lépésről lépésre útmutató C# kód példával.
-type: docs
 weight: 10
 url: /hu/net/email-attachment-handling/including-attachments-in-email-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mellékletek felvétele az e-mailbe – C# példa
+
 
 ## Bevezetés a mellékletek e-mailbe való belefoglalásába
 
@@ -111,3 +117,9 @@ Igen, beállíthatja az Aspose.Emailt úgy, hogy biztonságos kapcsolatokon kere
 ### Hol találhatok további információt az Aspose.Email képességeiről?
 
  Az Aspose.Email szolgáltatásaival, osztályaival és módszereivel kapcsolatos részletesebb információkért tekintse meg a[Aspose.Email API-referencia](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# を使用した EML から MSG 形式への変換
 linktitle: C# を使用した EML から MSG 形式への変換
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して EML を MSG に変換する方法を学びます。効率的な電子メール形式変換のためのコード例を含む包括的なガイド。
-type: docs
 weight: 14
 url: /ja/net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用した EML から MSG 形式への変換
+
 
 ## 導入
 
@@ -84,3 +90,9 @@ class Program
 ### Aspose.Email を使用して MSG 出力形式をカスタマイズできますか?
 
 確かに、Aspose.Email for .NET には、要件に基づいて出力 MSG 形式をカスタマイズするためのさまざまなオプションが用意されています。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

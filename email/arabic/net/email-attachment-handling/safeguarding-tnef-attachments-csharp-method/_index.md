@@ -3,10 +3,16 @@ title: حماية مرفقات TNEF - طريقة C#
 linktitle: حماية مرفقات TNEF - طريقة C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية حماية مرفقات TNEF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن.
-type: docs
 weight: 19
 url: /ar/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حماية مرفقات TNEF - طريقة C#
+
 
 ## مقدمة لحماية مرفقات TNEF
 
@@ -95,3 +101,9 @@ foreach (Attachment attachment in message.Attachments)
 ### هل يمكنني استخدام Aspose.Email في المشاريع التجارية؟
 
 نعم، يمكنك استخدام Aspose.Email في المشاريع التجارية. ومع ذلك، تأكد من مراجعة شروط ترخيص Aspose لضمان الامتثال.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

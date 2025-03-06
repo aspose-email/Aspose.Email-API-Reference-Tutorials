@@ -3,10 +3,16 @@ title: Definování vlastního pořadí informací v MHTML s C#
 linktitle: Definování vlastního pořadí informací v MHTML s C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak přizpůsobit MHTML objednávku pomocí C# & Aspose.Email pro .NET. Podrobný průvodce s kódem pro efektivní uspořádání informací. Zvyšte uživatelský zážitek hned teď!
-type: docs
 weight: 14
 url: /cs/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definování vlastního pořadí informací v MHTML s C#
+
 
 V oblasti správy e-mailů je cennou funkcí možnost přizpůsobit pořadí informací v e-mailech MHTML. Aspose.Email pro .NET nabízí robustní řešení, jak toho dosáhnout. V tomto článku vás provedeme procesem krok za krokem.
 
@@ -80,3 +86,10 @@ Ve světě, kde je efektivní zpracování e-mailů prvořadé, se Aspose.Email 
 ### 5. Kde najdu další zdroje a podporu pro Aspose.Email pro .NET?
 
 -  Na webu máte přístup k rozsáhlé dokumentaci, příkladům kódu a podpoře[Dokumentace Aspose.Email pro .NET API](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

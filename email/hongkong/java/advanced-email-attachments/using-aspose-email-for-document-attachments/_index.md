@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 作為文件附件
 linktitle: 使用 Aspose.Email 作為文件附件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解如何使用 Aspose.Email for Java 管理 Java 電子郵件中的文件附件。輕鬆建立、傳送和提取文件附件。
-type: docs
 weight: 16
 url: /zh-hant/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 作為文件附件
+
 
 ## 在 Java 中使用 Aspose.Email 處理文件附件的簡介
 
@@ -104,3 +110,9 @@ public class ExtractAttachments {
 ### 如何處理大文件附件？
 
 如果您需要處理大型文件附件，請考慮使用串流技術以避免將整個附件載入記憶體。 Aspose.Email 提供了流附件的選項，使您能夠有效地處理它們。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

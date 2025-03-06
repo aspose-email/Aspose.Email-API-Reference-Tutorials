@@ -3,10 +3,16 @@ title: Aspose.Email에 사용자 정의 헤더 추가하기
 linktitle: Aspose.Email에 사용자 정의 헤더 추가하기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 사용자 정의 헤더를 추가하여 이메일 메시지를 향상시키는 방법을 알아보세요. 이메일 메타데이터 및 구성을 개선합니다.
-type: docs
 weight: 15
 url: /ko/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email에 사용자 정의 헤더 추가하기
+
 
 ## 소개
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### 수신된 이메일에서 사용자 정의 헤더를 추출하려면 어떻게 해야 합니까?
     당신은 사용할 수 있습니다`getHeaders` 수신된 이메일에 대한 메소드`MailMessage` 사용자 정의 헤더를 검색하고 처리하는 개체입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

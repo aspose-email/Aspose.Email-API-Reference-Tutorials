@@ -3,10 +3,16 @@ title: Správa X-Headers v e-mailových zprávách pomocí Aspose.Email
 linktitle: Správa X-Headers v e-mailových zprávách pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Odemkněte sílu X-Headers v e-mailech s Aspose.Email pro Java. Naučte se spravovat vlastní metadata a vylepšit zpracování e-mailů.
-type: docs
 weight: 16
 url: /cs/java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Správa X-Headers v e-mailových zprávách pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -124,3 +130,9 @@ X-Headers můžete číst z přijatých e-mailů pomocí Aspose.Email for Java. 
 ### Je Aspose.Email vhodný pro správu e-mailů na podnikové úrovni?
 
 Ano, Aspose.Email je robustní knihovna, kterou lze použít pro správu e-mailů na podnikové úrovni. Nabízí širokou škálu funkcí pro vytváření, odesílání, přijímání a zpracování e-mailů, takže je vhodný pro různé obchodní scénáře.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

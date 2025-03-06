@@ -3,10 +3,16 @@ title: Zarządzanie dużymi załącznikami w Aspose.Email
 linktitle: Zarządzanie dużymi załącznikami w Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Efektywnie zarządzaj dużymi załącznikami e-mail za pomocą Aspose.Email dla Java. Przewodnik krok po kroku i kod źródłowy usprawniający obsługę załączników w aplikacjach Java.
-type: docs
 weight: 11
 url: /pl/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zarządzanie dużymi załącznikami w Aspose.Email
+
 
 ## Wprowadzenie do zarządzania dużymi załącznikami w Aspose.Email dla Java
 
@@ -145,3 +151,9 @@ Ograniczenia rozmiaru załączników do wiadomości e-mail mogą się różnić 
 ### Czy mogę skompresować załączniki, aby zmniejszyć ich rozmiar?
 
 Tak, możesz kompresować załączniki, aby zmniejszyć ich rozmiar przed ich wysłaniem. Aspose.Email udostępnia funkcje programowej kompresji i dekompresji załączników. Możesz to zaimplementować, aby zoptymalizować rozmiar załączników do wiadomości e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

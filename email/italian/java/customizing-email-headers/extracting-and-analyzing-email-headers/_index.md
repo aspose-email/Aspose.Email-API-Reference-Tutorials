@@ -3,10 +3,16 @@ title: Estrazione e analisi delle intestazioni delle e-mail con Aspose.Email
 linktitle: Estrazione e analisi delle intestazioni delle e-mail con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Sblocca la potenza dell'analisi delle intestazioni e-mail con Aspose.Email per Java. Scopri come estrarre e analizzare le intestazioni delle e-mail per migliorare il monitoraggio e la sicurezza delle e-mail.
-type: docs
 weight: 12
 url: /it/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Estrazione e analisi delle intestazioni delle e-mail con Aspose.Email
+
 
 ## Introduzione all'estrazione e all'analisi delle intestazioni delle e-mail con Aspose.Email
 
@@ -107,3 +113,9 @@ L'analisi delle intestazioni delle e-mail è fondamentale per vari motivi, come 
 ### Posso automatizzare l'analisi dell'intestazione della posta elettronica con Aspose.Email?
 
 Sì, puoi automatizzare l'analisi dell'intestazione delle e-mail con Aspose.Email integrandolo nelle tue applicazioni Java. La libreria fornisce metodi convenienti per lavorare con le intestazioni dei messaggi di posta elettronica.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

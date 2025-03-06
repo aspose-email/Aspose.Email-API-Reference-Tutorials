@@ -3,10 +3,16 @@ title: 读取消息时保留 TNEF 附件 - C# 方法
 linktitle: 读取消息时保留 TNEF 附件 - C# 方法
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 在此包含源代码的分步指南中，了解如何使用 Aspose.Email for .NET 保留 TNEF 附件。
-type: docs
 weight: 15
 url: /zh/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 读取消息时保留 TNEF 附件 - C# 方法
+
 
 ## TNEF 附件简介
 
@@ -132,3 +138,9 @@ namespace TnefAttachmentExample
 ### Aspose.Email 定期更新吗？
 
 是的，Aspose 保持定期更新，以确保与最新技术和平台的兼容性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

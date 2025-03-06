@@ -3,10 +3,16 @@ title: Trích xuất và phân tích tiêu đề email bằng Aspose.Email
 linktitle: Trích xuất và phân tích tiêu đề email bằng Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Khai phá sức mạnh của phân tích tiêu đề email với Aspose.Email for Java. Tìm hiểu cách trích xuất và phân tích tiêu đề email để theo dõi và bảo mật email nâng cao.
-type: docs
 weight: 12
 url: /vi/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất và phân tích tiêu đề email bằng Aspose.Email
+
 
 ## Giới thiệu về trích xuất và phân tích tiêu đề email với Aspose.Email
 
@@ -107,3 +113,9 @@ Việc phân tích tiêu đề email rất quan trọng vì nhiều lý do, ch�
 ### Tôi có thể tự động hóa việc phân tích tiêu đề email bằng Aspose.Email không?
 
 Có, bạn có thể tự động hóa việc phân tích tiêu đề email bằng Aspose.Email bằng cách tích hợp nó vào các ứng dụng Java của bạn. Thư viện cung cấp các phương pháp thuận tiện để làm việc với tiêu đề email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

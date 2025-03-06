@@ -3,10 +3,16 @@ title: Extracting Embedded Objects from Email with C#
 linktitle: Extracting Embedded Objects from Email with C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to extract embedded objects from emails using C# and Aspose.Email for .NET. Step-by-step guide with code examples.
-type: docs
 weight: 16
 url: /net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting Embedded Objects from Email with C#
+
 
 ## Introduction to Embedded Objects in Emails
 
@@ -113,3 +119,10 @@ Yes, you can manipulate the extracted embedded objects before saving them. The A
 ### Where can I find more examples of using Aspose.Email for .NET?
 
 You can find more code examples and tutorials in the [API Reference](https://reference.aspose.com/email/net/). 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

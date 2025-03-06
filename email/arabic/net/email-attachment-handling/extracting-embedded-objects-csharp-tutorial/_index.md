@@ -3,10 +3,16 @@ title: استخراج الكائنات المضمنة - البرنامج الت�
 linktitle: استخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية استخراج الكائنات المضمنة من رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 15
 url: /ar/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
+
 
 ## مقدمة لاستخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email؟
 
  يمكنك العثور على وثائق مفصلة وأمثلة التعليمات البرمجية لـ Aspose.Email على[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/) صفحة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

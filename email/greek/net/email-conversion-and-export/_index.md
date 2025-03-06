@@ -3,10 +3,16 @@ title: Εξερεύνηση μετατροπής και εξαγωγής email
 linktitle: Μετατροπή και εξαγωγή email
 second_title: Aspose.Email .NET Email Processing API
 description: Κατακτήστε τη διαχείριση δεδομένων email χρησιμοποιώντας το Aspose.Email για τα σεμινάρια του .NET. Μετατροπή, εξαγωγή email, διατήρηση της ακεραιότητας, διαχείριση συνημμένων. Ανυψώστε με παραδείγματα.
-type: docs
 weight: 11
 url: /el/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξερεύνηση μετατροπής και εξαγωγής email
+
 
 ## Εισαγωγή
 
@@ -39,3 +45,9 @@ url: /el/net/email-conversion-and-export/
 Μάθετε πώς να δημιουργείτε αρχεία email HTML χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με πηγαίο κώδικα για απρόσκοπτη προσαρμογή email.
 ### [Δημιουργία αρχείων OFT από Messages - Εκμάθηση C#](./generating-oft-files-from-messages-csharp-tutorial/)
 Μάθετε πώς να δημιουργείτε αρχεία OFT από μηνύματα χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με πηγαίο κώδικα για αποτελεσματική δημιουργία προτύπων email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

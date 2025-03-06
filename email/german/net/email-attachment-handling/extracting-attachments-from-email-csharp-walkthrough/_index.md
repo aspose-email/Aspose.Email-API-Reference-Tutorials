@@ -3,10 +3,16 @@ title: Extrahieren von Anhängen aus E-Mails – Exemplarische Vorgehensweise f�
 linktitle: Extrahieren von Anhängen aus E-Mails – Exemplarische Vorgehensweise für C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie Schritt für Schritt, wie Sie E-Mail-Anhänge mit Aspose.Email für .NET extrahieren. Behandeln Sie verschiedene Formate und speichern Sie sie problemlos.
-type: docs
 weight: 14
 url: /de/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahieren von Anhängen aus E-Mails – Exemplarische Vorgehensweise für C#
+
 
 ## Einführung in das Extrahieren von Anhängen aus E-Mails – C#-Komplettlösung mit Aspose.Email für .NET
 
@@ -114,3 +120,9 @@ Aspose.Email unterstützt .NET Framework und .NET Core.
 ### Wo finde ich weitere Informationen zu Aspose.Email?
 
  Ausführliche Dokumentation und Beispiele finden Sie im[Aspose.Email-Dokumentation](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

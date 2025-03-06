@@ -3,10 +3,16 @@ title: Birden Fazla SMTP Sunucusunu Aspose.Email ile Entegre Etme
 linktitle: Birden Fazla SMTP Sunucusunu Aspose.Email ile Entegre Etme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile birden fazla SMTP sunucusunu sorunsuz bir şekilde nasıl entegre edeceğinizi öğrenin. Adım adım kılavuzumuzla e-posta gönderme güvenilirliğini ve yük devretme desteğini geliştirin.
-type: docs
 weight: 18
 url: /tr/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Birden Fazla SMTP Sunucusunu Aspose.Email ile Entegre Etme
+
 # Aspose.Email for Java ile Birden Çok SMTP Sunucusunu Entegrasyona Giriş
 
 Bu adım adım kılavuzda, Aspose.Email for Java kullanarak birden fazla SMTP sunucusunu entegre etme sürecinde size yol göstereceğiz. Aspose.Email for Java, SMTP sunucuları aracılığıyla göndermek de dahil olmak üzere e-posta mesajlarıyla çalışmanıza olanak tanıyan güçlü bir API'dir. Birden fazla SMTP sunucusunun entegre edilmesi, yük dengeleme, yük devretme ve e-posta gönderme işleminizde yedekliliğe ihtiyaç duyduğunuz diğer senaryolar için yararlı olabilir.
@@ -96,3 +102,9 @@ Aspose.Email for Java, güvenli e-posta iletişimi için SSL/TLS'yi destekler. S
 ### SMTP sunucu entegrasyonunu nasıl test edebilirim?
 
 Test e-postaları göndererek ve başarılı teslimatı kontrol ederek SMTP sunucusu entegrasyonunu test edebilirsiniz. İşlem sırasında herhangi bir hata veya istisna için uygulamanızın günlüklerini izleyin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

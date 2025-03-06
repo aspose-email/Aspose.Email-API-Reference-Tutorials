@@ -3,10 +3,16 @@ title: E-mail mellékletek hozzáadása C# használatával
 linktitle: E-mail mellékletek hozzáadása C# használatával
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan adhat hozzá e-mail mellékleteket a C# és az Aspose.Email for .NET használatával. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes integráció érdekében.
-type: docs
 weight: 11
 url: /hu/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail mellékletek hozzáadása C# használatával
+
 
 ## Az e-mail mellékletek és az Aspose.Email bemutatása .NET-hez
 
@@ -92,3 +98,9 @@ Teljesen! Beállíthatja a MailMessage osztály különféle tulajdonságait, p�
 ### Elérhető az Aspose.Email ingyenes próbaverziója .NET-hez?
 
 Igen, letöltheti az Aspose.Email for .NET ingyenes próbaverzióját, hogy vásárlás előtt felfedezze annak funkcióit.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

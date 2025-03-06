@@ -3,10 +3,16 @@ title: Lesen von Nachrichten aus dem NSF-Speicher mit C#
 linktitle: Lesen von Nachrichten aus dem NSF-Speicher mit C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie NSF-Speichernachrichten mit C# und Aspose.Email für .NET lesen. Eine Schritt-für-Schritt-Anleitung mit Codebeispielen.
-type: docs
 weight: 11
 url: /de/net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lesen von Nachrichten aus dem NSF-Speicher mit C#
+
 
 ## Einführung in das Lesen von Nachrichten aus dem NSF-Speicher mit C#
 
@@ -73,3 +79,9 @@ Ja, Aspose.Email für .NET ist sowohl mit Windows als auch mit .NET Core kompati
 
 ### 5. Gibt es Einschränkungen bei der Arbeit mit Zimbra TGZ-Speicher unter Verwendung von Aspose.Email für .NET?
 Aspose.Email für .NET bietet robuste Funktionen für die Arbeit mit Zimbra TGZ-Speicher. Beachten Sie jedoch die in der Dokumentation genannten spezifischen Einschränkungen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

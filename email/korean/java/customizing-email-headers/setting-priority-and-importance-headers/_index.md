@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 우선순위 및 중요도 헤더 설정
 linktitle: Aspose.Email을 사용하여 우선순위 및 중요도 헤더 설정
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 우선순위 및 중요도 헤더를 설정하여 이메일 영향을 강화하세요. 이 단계별 가이드에서 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 우선순위 및 중요도 헤더 설정
+
 
 ## 소개
 
@@ -94,3 +100,9 @@ client.send(message);
 ### Aspose.Email로 이메일 첨부 파일을 어떻게 처리합니까?
 
  Aspose.Email을 사용하여 이메일 첨부 파일을 처리하는 것은 간단합니다. 당신은 사용할 수 있습니다`Attachment` 이메일 메시지에 첨부 파일을 추가하는 클래스입니다. 자세한 가이드는 Aspose.Email 문서를 참고하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

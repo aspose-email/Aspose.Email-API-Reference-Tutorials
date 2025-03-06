@@ -3,10 +3,16 @@ title: Aspose.Email ile E-posta Başlıklarını Çıkarma ve Analiz Etme
 linktitle: Aspose.Email ile E-posta Başlıklarını Çıkarma ve Analiz Etme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile E-posta Başlık Analizinin Gücünün Kilidini Açın. Gelişmiş E-posta Takibi ve Güvenliği için E-posta Başlıklarını Nasıl Çıkaracağınızı ve Analiz Edeceğinizi Öğrenin.
-type: docs
 weight: 12
 url: /tr/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile E-posta Başlıklarını Çıkarma ve Analiz Etme
+
 
 ## Aspose.Email ile E-posta Başlıklarını Çıkarma ve Analiz Etmeye Giriş
 
@@ -107,3 +113,9 @@ E-posta başlıklarını analiz etmek, e-posta izleme, güvenlik ve kimlik doğr
 ### Aspose.Email ile e-posta başlığı analizini otomatikleştirebilir miyim?
 
 Evet, Aspose.Email'i Java uygulamalarınıza entegre ederek e-posta başlığı analizini otomatikleştirebilirsiniz. Kitaplık, e-posta başlıklarıyla çalışmak için uygun yöntemler sağlar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

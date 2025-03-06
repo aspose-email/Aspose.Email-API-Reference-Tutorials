@@ -3,10 +3,16 @@ title: Menyematkan Gambar sebagai Lampiran di Aspose.Email
 linktitle: Menyematkan Gambar sebagai Lampiran di Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara menyematkan gambar sebagai lampiran di Aspose.Email untuk Java. Tingkatkan komunikasi email Anda dengan konten yang menarik secara visual.
-type: docs
 weight: 14
 url: /id/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menyematkan Gambar sebagai Lampiran di Aspose.Email
+
 
 ## Menyematkan Gambar sebagai Lampiran di Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email untuk Java mendukung berbagai format gambar, termasuk JPEG, PNG, GI
 ### Apakah ada batasan ukuran gambar yang disematkan?
 
 Ukuran gambar yang disematkan dapat memengaruhi kemampuan pengiriman email dan pengalaman penerima. Disarankan untuk mengoptimalkan gambar untuk email untuk menghindari ukuran file yang besar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

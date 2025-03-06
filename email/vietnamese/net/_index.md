@@ -1,12 +1,17 @@
 ---
 title: Soạn, chuyển đổi và xử lý email với Hướng dẫn Aspose.Email
 linktitle: Aspose.Email cho hướng dẫn .NET
-type: docs
 weight: 10
 url: /vi/net/
 description: Tối ưu hóa khả năng email với hướng dẫn Aspose.Email for .NET. Tìm hiểu thành phần, chuyển đổi và xử lý để quản lý email nâng cao.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Soạn, chuyển đổi và xử lý email với Hướng dẫn Aspose.Email
+
 
 ## Giới thiệu
 
@@ -45,3 +50,9 @@ Triển khai các cơ chế xác minh và xác thực email mạnh mẽ bằng c
 Hợp lý hóa việc lưu trữ và truy xuất tệp email bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tìm hiểu cách quản lý và truy cập thư email cũng như tệp đính kèm theo chương trình.
 ### [Bảo mật và chữ ký email](./email-security-and-signatures/)
 Triển khai các biện pháp bảo mật email mạnh mẽ và chữ ký được cá nhân hóa với hướng dẫn Aspose.Email for .NET. Đảm bảo giao tiếp an toàn và xây dựng thương hiệu chuyên nghiệp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

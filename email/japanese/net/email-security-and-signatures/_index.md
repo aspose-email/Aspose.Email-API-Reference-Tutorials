@@ -3,10 +3,16 @@ title: 電子メールのセキュリティと署名
 linktitle: 電子メールのセキュリティと署名
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して、堅牢な電子メール セキュリティ対策とパーソナライズされた署名を実装します。安全なコミュニケーションとプロフェッショナルなブランディングを確保します。
-type: docs
 weight: 19
 url: /ja/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールのセキュリティと署名
+
 
 ## 導入
 
@@ -25,3 +31,9 @@ url: /ja/net/email-security-and-signatures/
 
 ### [C# コードを使用した DKIM での電子メールの署名](./signing-emails-with-dkim-using-csharp-code/)
 C# と Aspose.Email for .NET を使用して DKIM で電子メールを保護する方法を学びます。ソースコード付きのステップバイステップガイド。電子メールの信頼性と信頼性を強化します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

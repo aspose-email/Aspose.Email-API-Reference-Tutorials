@@ -3,10 +3,16 @@ title: Anpassa SMTP sidhuvuden och sidfötter med Aspose.Email
 linktitle: Anpassa SMTP sidhuvuden och sidfötter med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du anpassar SMTP sidhuvuden och sidfötter med Aspose.Email för Java. Förbättra din e-postkommunikation med personligt anpassat varumärke och meddelanden.
-type: docs
 weight: 16
 url: /sv/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Anpassa SMTP sidhuvuden och sidfötter med Aspose.Email
+
 
 ## Introduktion
 
@@ -107,3 +113,9 @@ Ja, du kan använda HTML-formatering i e-postinnehållet, inklusive sidhuvuden o
 ### Vilka SMTP-inställningar ska jag använda för att skicka anpassade e-postmeddelanden?
 
 Du bör använda SMTP-inställningarna som tillhandahålls av din e-postleverantör eller din organisations IT-avdelning. Dessa inställningar inkluderar vanligtvis SMTP-serveradress, portnummer och autentiseringsuppgifter.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

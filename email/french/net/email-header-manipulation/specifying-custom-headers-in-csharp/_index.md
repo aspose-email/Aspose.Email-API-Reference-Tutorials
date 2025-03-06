@@ -3,10 +3,16 @@ title: Spécification des en-têtes personnalisés en C#
 linktitle: Spécification des en-têtes personnalisés en C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment spécifier des en-têtes personnalisés en C# à l'aide d'Aspose.Email pour .NET pour améliorer la communication par courrier électronique. Ce guide étape par étape fournit des informations sur la création d'en-têtes d'e-mails personnalisés pour un engagement amélioré.
-type: docs
 weight: 16
 url: /fr/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Spécification des en-têtes personnalisés en C#
+
 
 
 ## Introduction
@@ -97,3 +103,9 @@ Absolument, Aspose.Email pour .NET répond à un large éventail de besoins en m
 Dans le monde dynamique de la communication par courrier électronique, les en-têtes personnalisés peuvent changer la donne, permettant des interactions personnalisées et efficaces. Avec Aspose.Email pour .NET, le processus de spécification des en-têtes personnalisés en C# devient rationalisé et efficace. En suivant les étapes décrites dans ce guide, vous pouvez exploiter la puissance des en-têtes personnalisés pour améliorer la catégorisation, la personnalisation et l'engagement dans vos efforts de communication par courrier électronique.
 
 Si vous êtes prêt à faire passer votre communication par courrier électronique au niveau supérieur, plongez dans le monde des en-têtes personnalisés à l'aide d'Aspose.Email pour .NET. En maîtrisant cette technique, vous pouvez envoyer des e-mails qui trouvent un écho auprès des destinataires et offrir une expérience transparente et engageante.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

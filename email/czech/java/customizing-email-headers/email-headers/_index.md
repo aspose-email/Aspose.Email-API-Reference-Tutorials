@@ -3,10 +3,16 @@ title: Záhlaví e-mailu v Aspose.Email
 linktitle: Záhlaví e-mailu v Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Odemkněte sílu e-mailových záhlaví s Aspose.Email pro Java. Naučte se, jak snadno nastavit a načíst záhlaví e-mailů.
-type: docs
 weight: 10
 url: /cs/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Záhlaví e-mailu v Aspose.Email
+
 
 ## Úvod do záhlaví e-mailů
 
@@ -92,3 +98,9 @@ Záhlaví „Received“ je řada záznamů, které sledují cestu e-mailu od od
 ### Jak mohu extrahovat záhlaví e-mailů z velké dávky e-mailů?
 
 Můžete využít možnosti dávkového zpracování Aspose.Email k efektivnímu extrahování záhlaví z více e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

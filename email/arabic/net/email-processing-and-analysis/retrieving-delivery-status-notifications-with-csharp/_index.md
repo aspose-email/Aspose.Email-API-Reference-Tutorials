@@ -3,10 +3,16 @@ title: استرداد إخطارات حالة التسليم باستخدام C#
 linktitle: استرداد إخطارات حالة التسليم باستخدام C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية استرداد إشعارات حالة تسليم البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET.
-type: docs
 weight: 18
 url: /ar/net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استرداد إخطارات حالة التسليم باستخدام C#
+
 
 في عالم التواصل عبر البريد الإلكتروني سريع الخطى، يعد ضمان تسليم رسائل البريد الإلكتروني المرسلة بنجاح أمرًا بالغ الأهمية. إحدى الطرق لتتبع حالة تسليم رسائل البريد الإلكتروني الخاصة بك هي استخدام Aspose.Email for C#. في هذا الدليل الشامل، سنرشدك خلال عملية استرداد إشعارات حالة التسليم (DSNs) باستخدام لغة C# باستخدام مكتبة Aspose.Email القوية.
 
@@ -71,3 +77,9 @@ message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | De
 ### 10. الاستنتاج
 
 في هذا الدليل، اكتشفنا كيفية استرداد إشعارات حالة التسليم باستخدام لغة C# باستخدام Aspose.Email لـ C#. يعد تتبع عمليات تسليم البريد الإلكتروني أمرًا ضروريًا للتواصل الفعال، ويعمل Aspose.Email على تبسيط هذه العملية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

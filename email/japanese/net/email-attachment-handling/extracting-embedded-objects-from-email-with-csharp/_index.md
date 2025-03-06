@@ -3,10 +3,16 @@ title: C# を使用して電子メールから埋め込みオブジェクトを�
 linktitle: C# を使用して電子メールから埋め込みオブジェクトを抽出する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して電子メールから埋め込みオブジェクトを抽出する方法を学びます。コード例を含むステップバイステップのガイド。
-type: docs
 weight: 16
 url: /ja/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用して電子メールから埋め込みオブジェクトを抽出する
+
 
 ## 電子メールの埋め込みオブジェクトの概要
 
@@ -113,3 +119,9 @@ namespace EmbeddedObjectExtractor
 ### Aspose.Email for .NET の使用例を他にどこで見つけることができますか?
 
 さらに多くのコード例とチュートリアルは、[APIリファレンス](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

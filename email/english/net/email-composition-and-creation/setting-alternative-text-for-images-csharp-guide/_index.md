@@ -3,10 +3,16 @@ title: Setting Alternative Text for Images - C# Guide
 linktitle: Setting Alternative Text for Images - C# Guide
 second_title: Aspose.Email .NET Email Processing API
 description: Learn to set alternative text for images in emails using Aspose.Email for .NET. Ensure accessibility with clear alt text. Documentation and code included.
-type: docs
 weight: 15
 url: /net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Setting Alternative Text for Images - C# Guide
+
 
 This guide will walk you through the process of setting alternative text for images in emails using Aspose.Email for .NET. Alternative text, also known as "alt text," is used to provide a textual description of an image in case the image cannot be displayed. Aspose.Email for .NET is a powerful library that allows you to work with emails and attachments in various formats. In this guide, we will focus on setting alternative text for images in email messages using C#.
 
@@ -81,3 +87,9 @@ To add images as linked resources in an email, you can use the `LinkedResource` 
 ### Where can I find more documentation on Aspose.Email for .NET?
 
 You can find more detailed documentation, tutorials, and examples on working with Aspose.Email for .NET in the [API Reference](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

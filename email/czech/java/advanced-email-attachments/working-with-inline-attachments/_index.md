@@ -3,10 +3,16 @@ title: Práce s vloženými přílohami v Aspose.Email
 linktitle: Práce s vloženými přílohami v Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Optimalizujte svou e-mailovou komunikaci s Aspose.Email pro Java. Naučte se pracovat s vloženými přílohami v této obsáhlé příručce.
-type: docs
 weight: 10
 url: /cs/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Práce s vloženými přílohami v Aspose.Email
+
 
 ## Úvod do práce s vloženými přílohami v Aspose.Email
 
@@ -135,3 +141,9 @@ Pro zpracování vložených příloh v HTML e-mailech použijte`LinkedResource`
 ### Je Aspose.Email for Java kompatibilní s různými e-mailovými servery?
 
 Ano, Aspose.Email for Java je kompatibilní s různými e-mailovými servery. Ujistěte se, že jste při odesílání e-mailů správně nakonfigurovali nastavení SMTP pro váš e-mailový server.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

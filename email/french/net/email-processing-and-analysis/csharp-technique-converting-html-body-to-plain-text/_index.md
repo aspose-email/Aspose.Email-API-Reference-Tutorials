@@ -3,10 +3,16 @@ title: Technique C# - Conversion du corps HTML en texte brut
 linktitle: Technique C# - Conversion du corps HTML en texte brut
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à convertir sans effort le contenu des e-mails HTML en texte brut à l'aide d'Aspose.Email pour .NET. Guide et code détaillés. Explorez maintenant !
-type: docs
 weight: 19
 url: /fr/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Technique C# - Conversion du corps HTML en texte brut
+
 
 À l’ère numérique d’aujourd’hui, la communication par courrier électronique joue un rôle crucial dans nos vies personnelles et professionnelles. Souvent, les e-mails contiennent du contenu au format HTML pour une meilleure présentation. Cependant, il existe des situations dans lesquelles vous devrez peut-être extraire le texte brut du corps HTML d'un e-mail. Cet article vous guidera tout au long du processus permettant de réaliser cette tâche efficacement à l'aide de C#, Aspose.Email et Aspose.Words pour .NET.
 
@@ -75,3 +81,9 @@ A4 : Oui, Aspose.Email offre des fonctionnalités étendues pour l'automatisatio
  A5 : Vous pouvez explorer la documentation et les ressources de l'API sur le site Web Aspose à l'adresse[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) et[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 Maintenant que vous maîtrisez l’art de convertir le contenu des e-mails HTML en texte brut, vous pouvez améliorer vos capacités de traitement des e-mails en C#. Bon codage !
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

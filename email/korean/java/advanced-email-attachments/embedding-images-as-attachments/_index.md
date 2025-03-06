@@ -3,10 +3,16 @@ title: Aspose.Email에 이미지를 첨부 파일로 포함
 linktitle: Aspose.Email에 이미지를 첨부 파일로 포함
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email에 이미지를 첨부 파일로 포함하는 방법을 알아보세요. 시각적으로 매력적인 콘텐츠로 이메일 커뮤니케이션의 수준을 높이세요.
-type: docs
 weight: 14
 url: /ko/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email에 이미지를 첨부 파일로 포함
+
 
 ## Aspose.Email에 이미지를 첨부 파일로 포함
 
@@ -97,3 +103,9 @@ Aspose.Email for Java는 JPEG, PNG, GIF 등을 포함한 다양한 이미지 형
 ### 삽입된 이미지의 크기에 제한이 있나요?
 
 포함된 이미지의 크기는 이메일 전달 및 수신자 경험에 영향을 미칠 수 있습니다. 파일 크기가 커지는 것을 방지하려면 이메일용 이미지를 최적화하는 것이 좋습니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# を使用して MSG ファイルから埋め込み添付ファイル�
 linktitle: C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して、MSG ファイルから埋め込み添付ファイルを抽出する方法を学びます。ソースコード例を含む包括的なガイド。
-type: docs
 weight: 10
 url: /ja/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する
+
 
 ## 埋め込み添付ファイルの概要
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### 他の例やドキュメントはどこで入手できますか?
 
  Aspose.Email for .NET の使用に関する詳細な例とドキュメントは、[ドキュメンテーション](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

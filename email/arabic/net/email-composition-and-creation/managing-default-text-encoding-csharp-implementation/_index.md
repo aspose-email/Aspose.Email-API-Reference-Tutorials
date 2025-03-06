@@ -3,10 +3,16 @@ title: إدارة ترميز النص الافتراضي - تنفيذ C#
 linktitle: إدارة ترميز النص الافتراضي - تنفيذ C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية إدارة ترميز النص الافتراضي في C# باستخدام Aspose.Email لـ .NET. اتبع التعليمات خطوة بخطوة باستخدام الكود المصدري وتأكد من دقة توصيل البيانات.
-type: docs
 weight: 16
 url: /ar/net/email-composition-and-creation/managing-default-text-encoding-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إدارة ترميز النص الافتراضي - تنفيذ C#
+
 
 في مجال تطوير البرمجيات، تعد إدارة ترميز النص جانبًا حاسمًا لضمان سلامة البيانات والتواصل السليم بين الأنظمة المختلفة. عند العمل مع C# وAspose.Email لـ .NET، تصبح معالجة ترميز النص الافتراضي مهمة أساسية. سترشدك هذه المقالة خلال العملية خطوة بخطوة لإدارة ترميز النص الافتراضي في تطبيق C# باستخدام مكتبة Aspose.Email.
 
@@ -136,3 +142,9 @@ UTF-8 هو ترميز متعدد الاستخدامات يدعم نطاقًا و
 ### كيف يمكنني التعامل مع ترميز النص عند تلقي رسائل البريد الإلكتروني؟
 
 عند تلقي رسائل البريد الإلكتروني، يجب عليك التحقق من التشفير المستخدم في رؤوس البريد الإلكتروني. ثم قم بفك تشفير نص البريد الإلكتروني باستخدام الترميز المقابل لضمان العرض المناسب.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ustawianie priorytetów i ważności nagłówków za pomocą Aspose.Email
 linktitle: Ustawianie priorytetów i ważności nagłówków za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Zwiększ wpływ swojej poczty e-mail, ustawiając priorytety i ważność nagłówków za pomocą Aspose.Email dla Java. Dowiedz się, jak to zrobić, z tego przewodnika krok po kroku.
-type: docs
 weight: 14
 url: /pl/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ustawianie priorytetów i ważności nagłówków za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -94,3 +100,9 @@ Chociaż możesz ustawić nagłówki ważności, pamiętaj, że rzeczywisty wpł
 ### Jak obsługiwać załączniki do wiadomości e-mail za pomocą Aspose.Email?
 
  Obsługa załączników e-mail za pomocą Aspose.Email jest prosta. Możesz skorzystać z`Attachment` class, aby dodawać załączniki do wiadomości e-mail. Szczegółowy przewodnik można znaleźć w dokumentacji Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

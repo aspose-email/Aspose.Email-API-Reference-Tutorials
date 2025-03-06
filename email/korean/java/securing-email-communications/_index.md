@@ -3,10 +3,16 @@ title: Java용 Aspose.Email을 사용하여 이메일 통신 보안
 linktitle: Java용 Aspose.Email을 사용하여 이메일 통신 보안
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Aspose.Email for Java를 사용하여 이메일 보안을 강화하는 방법을 알아보세요. 우리 튜토리얼에서는 안전한 이메일 통신을 위한 암호화, 디지털 서명 등을 다룹니다.
-type: docs
 weight: 14
 url: /ko/java/securing-email-communications/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Java용 Aspose.Email을 사용하여 이메일 통신 보안
+
 
 이메일 통신이 개인 및 직업 영역 모두에서 중추적인 역할을 하는 시대에는 이메일을 통해 공유되는 민감한 정보의 보안을 보장하는 것이 무엇보다 중요해졌습니다. Aspose.Email for Java는 개발자가 강력한 암호화, 디지털 서명 및 기타 보안 기능을 제공하여 이메일 통신을 강화할 수 있도록 지원합니다. 이 포괄적인 튜토리얼에서는 Aspose.Email for Java를 사용하여 이메일 통신을 보호하는 다양한 측면을 탐구합니다.
 
@@ -24,3 +30,9 @@ url: /ko/java/securing-email-communications/
 ## Java 튜토리얼용 Aspose.Email을 사용하여 이메일 통신 보안
 ### [Aspose.Email을 사용한 TLS 암호화](./tls-encryption/)
 Java용 Aspose.Email을 사용하여 TLS 암호화를 구현하는 방법을 알아보세요. 안전한 이메일 커뮤니케이션을 위해 소스 코드와 FAQ가 포함된 단계별 가이드를 따르세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

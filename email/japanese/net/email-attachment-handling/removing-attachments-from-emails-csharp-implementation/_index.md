@@ -3,10 +3,16 @@ title: 電子メールからの添付ファイルの削除 - C# の実装
 linktitle: 電子メールからの添付ファイルの削除 - C# の実装
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して電子メールの添付ファイルを削除する方法を学習します。 C# ソース コードを含むステップバイステップ ガイド。
-type: docs
 weight: 18
 url: /ja/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子メールからの添付ファイルの削除 - C# の実装
+
 
 ## メールからの添付ファイルの削除の概要
 
@@ -97,3 +103,9 @@ Aspose.Email NuGet パッケージをインストールするには、次の手�
 ### Aspose.Email ライブラリをプロジェクトに統合する前にテストできますか?
 
 はい、Aspose は、購入を決定する前にダウンロードしてテストできるライブラリの試用版を提供しています。詳細については、Web サイトをご覧ください。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

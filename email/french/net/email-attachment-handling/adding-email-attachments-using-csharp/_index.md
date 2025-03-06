@@ -3,10 +3,16 @@ title: Ajout de pièces jointes à un e-mail à l'aide de C#
 linktitle: Ajout de pièces jointes à un e-mail à l'aide de C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment ajouter des pièces jointes à des e-mails à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec des exemples de code pour une intégration transparente.
-type: docs
 weight: 11
 url: /fr/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ajout de pièces jointes à un e-mail à l'aide de C#
+
 
 ## Introduction aux pièces jointes aux e-mails et à Aspose.Email pour .NET
 
@@ -92,3 +98,9 @@ Absolument! Vous pouvez définir diverses propriétés de la classe MailMessage,
 ### Existe-t-il une version d’essai gratuite d’Aspose.Email pour .NET disponible ?
 
 Oui, vous pouvez télécharger une version d'essai gratuite d'Aspose.Email pour .NET pour explorer ses fonctionnalités avant de faire un achat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

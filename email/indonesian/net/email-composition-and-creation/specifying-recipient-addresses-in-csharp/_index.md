@@ -3,10 +3,16 @@ title: Menentukan Alamat Penerima di C#
 linktitle: Menentukan Alamat Penerima di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menentukan alamat penerima di C# menggunakan Aspose.Email untuk .NET. Buat, konfigurasikan, dan kirim email secara efisien.
-type: docs
 weight: 19
 url: /id/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menentukan Alamat Penerima di C#
+
 
 
 Panduan ini akan memandu Anda melalui proses menentukan alamat penerima di C# menggunakan perpustakaan Aspose.Email untuk .NET. Aspose.Email adalah .NET API yang kuat yang memungkinkan Anda bekerja dengan pesan email dan berbagai tugas terkait email. Dalam tutorial ini, kita akan membahas cara menambahkan alamat penerima ke pesan email menggunakan perpustakaan.
@@ -119,3 +125,9 @@ catch (Exception ex)
  Untuk informasi lebih lanjut dan fitur lanjutan Aspose.Email untuk .NET, lihat[Asumsikan Referensi API](https://reference.aspose.com/email/net/).
 
 Ini menyimpulkan panduan dalam menentukan alamat penerima di C# menggunakan Aspose.Email untuk .NET. Anda telah mempelajari cara membuat pesan email, menambahkan alamat penerima, dan mengirim email menggunakan fitur perpustakaan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

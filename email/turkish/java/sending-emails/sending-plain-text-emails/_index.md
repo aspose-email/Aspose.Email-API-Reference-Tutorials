@@ -3,10 +3,16 @@ title: Aspose.Email ile Düz Metin E-postaları Gönderme
 linktitle: Aspose.Email ile Düz Metin E-postaları Gönderme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile düz metin e-postalarını verimli bir şekilde göndermeyi öğrenin. Sorunsuz iletişim için kod örnekleri ve SSS içeren kapsamlı bir kılavuz.
-type: docs
 weight: 10
 url: /tr/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile Düz Metin E-postaları Gönderme
+
 
 ## giriiş
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Aspose.Email for Java ile düz metin e-posta gönderirken herhangi bir sınırlama var mı?
    - Sınırlamalar e-posta servis sağlayıcınıza ve SMTP sunucunuza bağlı olabilir. Gönderme sınırlarına ve e-posta gönderme politikalarına uyduğunuzdan emin olun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

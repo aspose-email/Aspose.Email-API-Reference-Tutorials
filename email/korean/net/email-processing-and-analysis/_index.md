@@ -3,10 +3,16 @@ title: .NET용 Aspose.Email을 사용한 효율적인 이메일 처리 및 분�
 linktitle: 이메일 처리 및 분석
 second_title: Aspose.Email .NET 이메일 처리 API
 description: 간소화된 이메일 처리 및 통찰력 있는 분석에 대한 .NET용 Aspose.Email 튜토리얼을 통해 애플리케이션의 이메일 관리 및 의사 결정을 최적화하세요. 프로그래밍 방식으로 이메일 콘텐츠를 검색, 구성 및 분석하는 방법을 알아보세요. 향상된 커뮤니케이션 및 데이터 기반 전략에 대한 실제 사례를 살펴보세요.
-type: docs
 weight: 13
 url: /ko/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Email을 사용한 효율적인 이메일 처리 및 분석
+
 
 ## 소개
 
@@ -43,3 +49,9 @@ url: /ko/net/email-processing-and-analysis/
 .NET용 Aspose.Email을 사용하여 HTML 이메일 콘텐츠를 일반 텍스트로 쉽게 변환하는 방법을 알아보세요. 자세한 가이드 및 코드. 지금 탐험해보세요!
 ### [C# 코드를 사용하여 원래 경계 유지](./preserving-original-boundaries-using-csharp-code/)
 C# 및 .NET용 Aspose.Email을 사용하여 이메일 첨부 파일의 원래 경계를 유지하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

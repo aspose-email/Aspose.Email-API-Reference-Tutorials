@@ -3,10 +3,16 @@ title: Aspose.Email में ईमेल हेडर
 linktitle: Aspose.Email में ईमेल हेडर
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email के साथ ईमेल हेडर की शक्ति को अनलॉक करें। ईमेल हेडर को आसानी से सेट और पुनर्प्राप्त करना सीखें।
-type: docs
 weight: 10
 url: /hi/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email में ईमेल हेडर
+
 
 ## ईमेल हेडर का परिचय
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### मैं ईमेल के एक बड़े बैच से ईमेल हेडर कैसे निकाल सकता हूँ?
 
 आप एकाधिक ईमेल से हेडर को कुशलतापूर्वक निकालने के लिए Aspose.Email की बैच प्रोसेसिंग क्षमताओं का उपयोग कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

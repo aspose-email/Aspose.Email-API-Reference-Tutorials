@@ -3,10 +3,16 @@ title: Eki veya Katıştırılmış Mesajı Algılama - C# Kılavuzu
 linktitle: Eki veya Katıştırılmış Mesajı Algılama - C# Kılavuzu
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta e-posta eki ve gömülü mesaj algılama konusunda uzmanlaşın. Kapsamlı kılavuzumuzla e-posta yönetiminizi geliştirin.
-type: docs
 weight: 13
 url: /tr/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Eki veya Katıştırılmış Mesajı Algılama - C# Kılavuzu
+
 
 ## Eki veya Gömülü Mesajı Algılamaya Giriş - C# Kılavuzu
 
@@ -106,3 +112,9 @@ E-posta işleme sırasında hataları zarif bir şekilde yönetmek için try-cat
 ### Eklerin ve gömülü mesajların işlenmesini özelleştirebilir miyim?
 
 Kesinlikle, özel uygulamanızın ihtiyaçlarını karşılamak için eklerin ve gömülü mesajların işlenmesini özelleştirebilirsiniz. Aspose.Email bu amaç için esnek API'ler sağlar.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

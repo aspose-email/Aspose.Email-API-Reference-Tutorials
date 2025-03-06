@@ -3,10 +3,16 @@ title: 電子郵件驗證和驗證
 linktitle: 電子郵件驗證和驗證
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 教學課程實現強大的電子郵件驗證和驗證機制。提高通訊準確性和安全性。
-type: docs
 weight: 17
 url: /zh-hant/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 電子郵件驗證和驗證
+
 
 ## 介紹
 
@@ -23,3 +29,9 @@ Aspose.Email for .NET 關於「電子郵件驗證和驗證」的教學課程為�
 ## 電子郵件驗證和驗證教程
 ### [C# 程式碼中的電子郵件驗證技術](./email-validation-techniques-in-csharp-code/)
 了解如何使用 Aspose.Email for .NET 在 C# 中有效驗證電子郵件地址。提供原始碼的分步指南。提高數據準確性和使用者體驗。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Přidávání e-mailových příloh pomocí C#
 linktitle: Přidávání e-mailových příloh pomocí C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se přidávat e-mailové přílohy pomocí C# a Aspose.Email pro .NET. Podrobný průvodce s příklady kódu pro bezproblémovou integraci.
-type: docs
 weight: 11
 url: /cs/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Přidávání e-mailových příloh pomocí C#
+
 
 ## Úvod do e-mailových příloh a Aspose.Email pro .NET
 
@@ -92,3 +98,9 @@ Absolutně! Můžete nastavit různé vlastnosti třídy MailMessage, jako je t�
 ### Je k dispozici bezplatná zkušební verze Aspose.Email pro .NET?
 
 Ano, před nákupem si můžete stáhnout bezplatnou zkušební verzi Aspose.Email pro .NET a prozkoumat její funkce.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

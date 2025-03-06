@@ -3,10 +3,16 @@ title: C# Guide - Checking Messages for Encryption
 linktitle: C# Guide - Checking Messages for Encryption
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to ensure email security with Aspose.Email for .NET. Check for encryption, decrypt messages, and more.
-type: docs
 weight: 12
 url: /net/email-processing-and-analysis/csharp-guide-checking-messages-for-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Guide - Checking Messages for Encryption
+
 
 In today's digital age, ensuring the security of sensitive information is paramount. Encryption plays a pivotal role in safeguarding data from prying eyes. If you're a .NET developer working with email communication, you'll be pleased to know that Aspose.Email provides powerful tools to facilitate message encryption. In this guide, we'll take you through the step-by-step process of checking messages for encryption using Aspose.Email for .NET. So, let's dive in!
 
@@ -156,3 +162,10 @@ Yes, Aspose.Email allows you to selectively encrypt certain parts of an email me
 ### Where can I find more information about Aspose.Email for .NET?
 
 For more detailed information, examples, and documentation, visit the [Aspose.Email for .NET Documentation](https://reference.aspose.com/email/net) page.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

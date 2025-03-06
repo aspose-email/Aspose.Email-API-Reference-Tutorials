@@ -3,10 +3,16 @@ title: Tăng cường giao tiếp với thông báo và theo dõi qua email
 linktitle: Thông báo và theo dõi email
 second_title: API xử lý email Aspose.Email .NET
 description: Triển khai các tính năng theo dõi và thông báo email bằng cách sử dụng hướng dẫn Aspose.Email for .NET. Tự động hóa thông báo và hiểu rõ hơn về tương tác của người nhận email.
-type: docs
 weight: 16
 url: /vi/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tăng cường giao tiếp với thông báo và theo dõi qua email
+
 
 ## Giới thiệu
 
@@ -27,3 +33,9 @@ Tìm hiểu cách nhận thông báo qua email trong C# bằng Aspose.Email for 
 Tìm hiểu cách sử dụng mã C# để yêu cầu biên nhận đã đọc email bằng Aspose.Email for .NET, nâng cao khả năng theo dõi liên lạc.
 ### [Theo dõi tiến trình chuyển đổi tài liệu email bằng mã C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Tìm hiểu cách triển khai thông báo và theo dõi email bằng Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Hãy nâng cao khả năng giao tiếp qua email của bạn ngay hôm nay!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

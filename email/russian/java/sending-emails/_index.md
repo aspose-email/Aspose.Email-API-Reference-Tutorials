@@ -3,10 +3,16 @@ title: Отправка электронной почты с помощью Aspo
 linktitle: Отправка электронной почты с помощью Aspose.Email для Java
 second_title: Aspose.Email Java API управления электронной почтой
 description: Овладейте искусством отправки электронных писем с помощью Aspose.Email для Java с помощью этих подробных руководств. Научитесь создавать и отправлять электронные письма без особых усилий.
-type: docs
 weight: 10
 url: /ru/java/sending-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Отправка электронной почты с помощью Aspose.Email для Java
+
 
 
 ## Начало работы с Aspose.Email для Java
@@ -38,3 +44,9 @@ url: /ru/java/sending-emails/
 Узнайте, как улучшить ваши сообщения электронной почты, добавив собственные заголовки с помощью Aspose.Email для Java. Улучшите метаданные и организацию электронной почты.
 ### [Отправка уведомлений по электронной почте с помощью Aspose.Email](./sending-email-notifications/)
 Научитесь эффективно отправлять уведомления по электронной почте с помощью Aspose.Email для Java. Подробное руководство с примерами кода и часто задаваемыми вопросами для беспрепятственного общения.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

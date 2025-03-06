@@ -3,10 +3,16 @@ title: Xử lý lỗi SMTP và khắc phục sự cố với Aspose.Email
 linktitle: Xử lý lỗi SMTP và khắc phục sự cố với Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tối ưu hóa giao tiếp qua email với Aspose.Email for Java. Tìm hiểu cách xử lý lỗi SMTP và khắc phục sự cố hiệu quả.
-type: docs
 weight: 14
 url: /vi/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý lỗi SMTP và khắc phục sự cố với Aspose.Email
+
 
 ## Giới thiệu về lỗi SMTP
 
@@ -107,3 +113,9 @@ Lỗi này thường xảy ra khi máy chủ SMTP chậm hoặc không thể tru
 ### Aspose.Email for Java có phù hợp để xử lý khối lượng email lớn không?
 
 Có, Aspose.Email for Java được thiết kế để xử lý cả khối lượng email nhỏ và lớn một cách hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

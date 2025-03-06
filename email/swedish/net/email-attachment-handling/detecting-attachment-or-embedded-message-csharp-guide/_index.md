@@ -3,10 +3,16 @@ title: Upptäcker bilaga eller inbäddat meddelande - C#-guide
 linktitle: Upptäcker bilaga eller inbäddat meddelande - C#-guide
 second_title: Aspose.Email .NET Email Processing API
 description: Master e-postbilaga och inbäddad meddelandedetektering i C# med Aspose.Email för .NET. Lyft din e-posthantering med vår omfattande guide.
-type: docs
 weight: 13
 url: /sv/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Upptäcker bilaga eller inbäddat meddelande - C#-guide
+
 
 ## Introduktion till att upptäcka bilagor eller inbäddat meddelande - C#-guide
 
@@ -106,3 +112,9 @@ Du bör implementera korrekta felhanteringsmekanismer med hjälp av försöksfå
 ### Kan jag anpassa behandlingen av bilagor och inbäddade meddelanden?
 
 Absolut, du kan skräddarsy behandlingen av bilagor och inbäddade meddelanden för att möta din specifika applikations behov. Aspose.Email tillhandahåller flexibla API:er för detta ändamål.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

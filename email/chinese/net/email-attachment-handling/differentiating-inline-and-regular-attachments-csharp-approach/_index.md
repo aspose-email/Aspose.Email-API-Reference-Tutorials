@@ -3,10 +3,16 @@ title: 区分内联附件和常规附件 - C# 方法
 linktitle: 区分内联附件和常规附件 - C# 方法
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 Aspose.Email for .NET 区分内联电子邮件附件和常规电子邮件附件。带有代码示例的综合指南。
-type: docs
 weight: 17
 url: /zh/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 区分内联附件和常规附件 - C# 方法
+
 
 ## 区分内联附件和常规附件简介 - C# 方法
 
@@ -107,3 +113,9 @@ foreach (Attachment attachment in attachments)
 ### 我可以将常规附件保存到磁盘上的特定位置吗？
 
 绝对地！您可以使用以下命令将常规附件保存到磁盘上的特定位置`Save`附件对象的方法并提供所需的文件路径。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

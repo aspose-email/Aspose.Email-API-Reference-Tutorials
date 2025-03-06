@@ -3,10 +3,16 @@ title: Pendekatan C# - Mengekstraksi Nilai Header yang Didekodekan
 linktitle: Pendekatan C# - Mengekstraksi Nilai Header yang Didekodekan
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak nilai header email yang didekodekan di C# menggunakan Aspose.Email untuk .NET. Panduan komprehensif dengan contoh kode.
-type: docs
 weight: 17
 url: /id/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Pendekatan C# - Mengekstraksi Nilai Header yang Didekodekan
+
 
 Dalam tutorial ini, kami akan memandu Anda melalui proses penggunaan Aspose.Email untuk .NET guna mengekstrak nilai header yang didekodekan dari pesan email. Aspose.Email untuk .NET adalah perpustakaan tangguh yang memberdayakan pengembang untuk bekerja dengan berbagai aspek pesan email, termasuk membaca dan memanipulasi header email.
 
@@ -77,3 +83,9 @@ Pada cuplikan kode di atas, kita melakukan langkah-langkah berikut:
 ## Kesimpulan
 
 Dalam tutorial ini, Anda telah mempelajari cara memanfaatkan Aspose.Email untuk .NET untuk mengekstrak nilai header yang didekodekan dari pesan email. Aspose.Email untuk .NET menyediakan seperangkat alat komprehensif yang memberdayakan pengembang untuk bekerja secara efisien dengan pesan email, termasuk menangani header.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

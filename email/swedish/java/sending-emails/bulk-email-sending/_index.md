@@ -3,10 +3,16 @@ title: Bulk e-postsändning med Aspose.Email
 linktitle: Bulk e-postsändning med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du skickar massmeddelanden effektivt med Aspose.Email för Java. En steg-för-steg-guide med kodexempel för e-postmarknadsföring och kommunikation.
-type: docs
 weight: 14
 url: /sv/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bulk e-postsändning med Aspose.Email
+
 
 ## Introduktion
 
@@ -132,3 +138,9 @@ den här guiden har du lärt dig hur du skickar massmeddelanden med Aspose.Email
 
 ### Hur kan jag hantera avvisade eller misslyckade e-postmeddelanden i masssändning?
    Aspose.Email tillhandahåller funktioner för att hantera leveransstatusmeddelanden (DSN) och spåra e-postleveransstatus. Du kan implementera logik för att behandla avvisade eller misslyckade e-postmeddelanden efter behov.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

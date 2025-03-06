@@ -3,10 +3,16 @@ title: Solicitando recibos de leitura de e-mail usando código C#
 linktitle: Solicitando recibos de leitura de e-mail usando código C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como usar o código C# para solicitar confirmações de leitura de e-mail usando Aspose.Email for .NET, aprimorando o rastreamento de comunicação.
-type: docs
 weight: 11
 url: /pt/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Solicitando recibos de leitura de e-mail usando código C#
+
 
 Na era digital de hoje, a comunicação via e-mail tornou-se parte integrante da nossa vida pessoal e profissional. Muitas vezes, ao enviar e-mails importantes, queremos garantir que o destinatário leu e reconheceu a nossa mensagem. É aqui que entram em jogo os recibos de leitura de e-mail. Neste tutorial passo a passo, orientaremos você no processo de solicitação de recibos de leitura de e-mail usando C# com Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ Neste tutorial, exploramos como solicitar confirmações de leitura de e-mail us
 
 5. ### Existem considerações de privacidade ao usar confirmações de leitura de e-mail?
    Sim, existem preocupações de privacidade relacionadas ao rastreamento de e-mail. Alguns destinatários podem considerá-lo invasivo, por isso é essencial usar esse recurso com responsabilidade e respeitar as preferências de privacidade.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

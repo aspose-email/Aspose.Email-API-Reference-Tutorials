@@ -3,10 +3,16 @@ title: Alternatieve tekst voor afbeeldingen instellen - C#-handleiding
 linktitle: Alternatieve tekst voor afbeeldingen instellen - C#-handleiding
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u alternatieve tekst voor afbeeldingen in e-mails kunt instellen met Aspose.Email voor .NET. Zorg voor toegankelijkheid met duidelijke alt-tekst. Documentatie en code inbegrepen.
-type: docs
 weight: 15
 url: /nl/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Alternatieve tekst voor afbeeldingen instellen - C#-handleiding
+
 
 Deze handleiding begeleidt u bij het instellen van alternatieve tekst voor afbeeldingen in e-mails met behulp van Aspose.Email voor .NET. Alternatieve tekst, ook wel 'alt-tekst' genoemd, wordt gebruikt om een tekstuele beschrijving van een afbeelding te geven voor het geval de afbeelding niet kan worden weergegeven. Aspose.Email voor .NET is een krachtige bibliotheek waarmee u met e-mails en bijlagen in verschillende formaten kunt werken. In deze handleiding zullen we ons concentreren op het instellen van alternatieve tekst voor afbeeldingen in e-mailberichten met behulp van C#.
 
@@ -81,3 +87,9 @@ Om afbeeldingen als gekoppelde bronnen aan een e-mail toe te voegen, kunt u de`L
 ### Waar kan ik meer documentatie vinden over Aspose.Email voor .NET?
 
  Meer gedetailleerde documentatie, tutorials en voorbeelden over het werken met Aspose.Email voor .NET vindt u in de[API-referentie](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

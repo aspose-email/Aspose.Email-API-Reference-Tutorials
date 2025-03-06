@@ -3,10 +3,16 @@ title: Cabeçalhos de e-mail em Aspose.Email
 linktitle: Cabeçalhos de e-mail em Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Desbloqueie o poder dos cabeçalhos de e-mail com Aspose.Email para Java. Aprenda como definir e recuperar cabeçalhos de e-mail sem esforço.
-type: docs
 weight: 10
 url: /pt/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Cabeçalhos de e-mail em Aspose.Email
+
 
 ## Introdução aos cabeçalhos de e-mail
 
@@ -92,3 +98,9 @@ O cabeçalho “Recebido” é uma série de entradas que rastreiam o caminho do
 ### Como posso extrair cabeçalhos de e-mail de um grande lote de e-mails?
 
 Você pode usar os recursos de processamento em lote do Aspose.Email para extrair cabeçalhos de vários e-mails com eficiência.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

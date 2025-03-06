@@ -3,10 +3,16 @@ title: Pengiriman Email Massal dengan Aspose.Email
 linktitle: Pengiriman Email Massal dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara mengirim email massal secara efisien menggunakan Aspose.Email untuk Java. Panduan langkah demi langkah dengan contoh kode untuk pemasaran dan komunikasi email.
-type: docs
 weight: 14
 url: /id/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Pengiriman Email Massal dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -132,3 +138,9 @@ Dalam panduan ini, Anda telah mempelajari cara mengirim email massal menggunakan
 
 ### Bagaimana cara menangani email yang terpental atau gagal dalam pengiriman massal?
    Aspose.Email menyediakan fitur untuk menangani pemberitahuan status pengiriman (DSN) dan melacak status pengiriman email. Anda dapat menerapkan logika untuk memproses email yang terpental atau gagal sesuai kebutuhan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

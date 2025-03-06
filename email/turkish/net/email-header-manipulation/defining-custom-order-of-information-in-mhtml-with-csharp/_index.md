@@ -3,10 +3,16 @@ title: C# ile MHTML'de Özel Bilgi Sırasını Tanımlama
 linktitle: C# ile MHTML'de Özel Bilgi Sırasını Tanımlama
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak MHTML sırasını nasıl özelleştireceğinizi öğrenin. Etkili bilgi düzenlemesi için kod içeren adım adım kılavuz. Kullanıcı deneyimini şimdi artırın!
-type: docs
 weight: 14
 url: /tr/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile MHTML'de Özel Bilgi Sırasını Tanımlama
+
 
 E-posta yönetimi alanında, MHTML e-postalarındaki bilgilerin sırasını özelleştirme yeteneği değerli bir özelliktir. Aspose.Email for .NET bunu başarmak için güçlü bir çözüm sunuyor. Bu yazımızda süreç boyunca size adım adım rehberlik edeceğiz.
 
@@ -80,3 +86,10 @@ Etkili e-posta yönetiminin çok önemli olduğu bir dünyada Aspose.Email for .
 ### 5. Aspose.Email for .NET için ek kaynakları ve desteği nerede bulabilirim?
 
 -  Kapsamlı belgelere, kod örneklerine ve desteğe şu adresten erişebilirsiniz:[Aspose.Email for .NET API Belgeleri](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

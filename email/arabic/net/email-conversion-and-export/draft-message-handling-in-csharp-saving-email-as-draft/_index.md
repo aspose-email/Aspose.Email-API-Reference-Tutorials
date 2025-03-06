@@ -3,10 +3,16 @@ title: التعامل مع مسودة الرسائل في C# - حفظ البري
 linktitle: التعامل مع مسودة الرسائل في C# - حفظ البريد الإلكتروني كمسودة
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تنفيذ معالجة مسودة البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. قم بإنشاء المسودات وتحريرها وحفظها بسلاسة.
-type: docs
 weight: 17
 url: /ar/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# التعامل مع مسودة الرسائل في C# - حفظ البريد الإلكتروني كمسودة
+
 
 ## مقدمة
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### هل تدعم مكتبة Aspose.Email الوظائف الأخرى المتعلقة بالبريد الإلكتروني؟
 
  نعم، توفر مكتبة Aspose.Email مجموعة واسعة من الميزات للتعامل مع رسائل البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني والمرفقات واستلامها ومعالجتها. يمكنك الرجوع إلى الوثائق لمزيد من التفاصيل:[هنا](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

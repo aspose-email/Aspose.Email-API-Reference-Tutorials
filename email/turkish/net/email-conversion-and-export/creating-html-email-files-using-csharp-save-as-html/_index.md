@@ -3,10 +3,16 @@ title: C# kullanarak HTML E-posta Dosyaları Oluşturma - HTML olarak kaydet
 linktitle: C# kullanarak HTML E-posta Dosyaları Oluşturma - HTML olarak kaydet
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak HTML e-posta dosyalarını nasıl oluşturacağınızı öğrenin. Sorunsuz e-posta özelleştirmesi için kaynak kodlu adım adım kılavuz.
-type: docs
 weight: 18
 url: /tr/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# kullanarak HTML E-posta Dosyaları Oluşturma - HTML olarak kaydet
+
 
 ## HTML E-posta Dosyaları Oluşturmaya Giriş
 
@@ -113,3 +119,9 @@ Evet, Aspose.Email .NET Core'u destekleyerek platformlar arası uygulamalar olu�
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
 
  Kapsamlı örnekleri ve ayrıntılı belgeleri inceleyebilirsiniz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net) sayfa.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

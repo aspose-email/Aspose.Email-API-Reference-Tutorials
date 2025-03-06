@@ -3,10 +3,16 @@ title: Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dl
 linktitle: Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak bez wysiłku dostosowywać nagłówki wiadomości e-mail za pomocą Aspose.Email dla Java. Zapoznaj się z samouczkami i wykorzystaj możliwości dostosowywania nagłówków wiadomości e-mail.
-type: docs
 weight: 16
 url: /pl/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java
+
 
 Nagłówki wiadomości e-mail odgrywają kluczową rolę w komunikacji e-mailowej, dostarczając niezbędnych informacji o pochodzeniu i dostarczeniu wiadomości. Dzięki Aspose.Email dla Java dostosowywanie nagłówków wiadomości e-mail staje się prostym zadaniem, umożliwiając użytkownikom dostosowanie metadanych wiadomości e-mail do konkretnych potrzeb i wymagań.
 
@@ -37,3 +43,9 @@ Zapewnij bezpieczeństwo poczty e-mail dzięki podpisom DKIM za pomocą Aspose.E
 Odblokuj moc nagłówków X w wiadomościach e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak zarządzać niestandardowymi metadanymi i usprawniać przetwarzanie wiadomości e-mail.
 ### [Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email](./enriching-email-metadata-through-headers/)
 Ulepsz metadane poczty e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak wzbogacać nagłówki wiadomości e-mail w celu lepszego śledzenia i dostosowywania za pomocą Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

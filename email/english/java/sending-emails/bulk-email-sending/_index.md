@@ -3,10 +3,16 @@ title: Bulk Email Sending with Aspose.Email
 linktitle: Bulk Email Sending with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to send bulk emails efficiently using Aspose.Email for Java. A step-by-step guide with code examples for email marketing and communication.
-type: docs
 weight: 14
 url: /java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bulk Email Sending with Aspose.Email
+
 
 ## Introduction
 
@@ -132,3 +138,10 @@ In this guide, you've learned how to send bulk emails using Aspose.Email for Jav
 
 ### How can I handle bounced or failed emails in bulk sending?
    Aspose.Email provides features for handling delivery status notifications (DSNs) and tracking email delivery status. You can implement logic to process bounced or failed emails as needed.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

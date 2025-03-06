@@ -3,10 +3,16 @@ title: تحديد عناوين المستلمين في C#
 linktitle: تحديد عناوين المستلمين في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تحديد عناوين المستلمين في لغة C# باستخدام Aspose.Email لـ .NET. إنشاء رسائل البريد الإلكتروني وتكوينها وإرسالها بكفاءة.
-type: docs
 weight: 19
 url: /ar/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد عناوين المستلمين في C#
+
 
 
 سيرشدك هذا الدليل خلال عملية تحديد عناوين المستلمين في لغة C# باستخدام مكتبة Aspose.Email for .NET. Aspose.Email عبارة عن واجهة برمجة تطبيقات .NET قوية تتيح لك العمل مع رسائل البريد الإلكتروني والمهام المتنوعة المتعلقة بالبريد الإلكتروني. في هذا البرنامج التعليمي، سنغطي كيفية إضافة عناوين المستلمين إلى رسالة بريد إلكتروني باستخدام المكتبة.
@@ -119,3 +125,9 @@ catch (Exception ex)
  لمزيد من المعلومات والميزات المتقدمة لـ Aspose.Email for .NET، راجع[Aspose API المراجع](https://reference.aspose.com/email/net/).
 
 بهذا نختتم الدليل حول تحديد عناوين المستلمين في C# باستخدام Aspose.Email لـ .NET. لقد تعلمت كيفية إنشاء رسالة بريد إلكتروني وإضافة عناوين المستلمين وإرسال البريد الإلكتروني باستخدام ميزات المكتبة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

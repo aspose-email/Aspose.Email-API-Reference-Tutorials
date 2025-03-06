@@ -3,10 +3,16 @@ title: Résztvevői státusz beállítása a C#-val rendelkező résztvevők sz�
 linktitle: Résztvevői státusz beállítása a C#-val rendelkező résztvevők számára
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan kezelheti a találkozó résztvevőinek állapotát a C# és az Aspose.Email for .NET használatával. Lépésről lépésre útmutató forráskóddal.
-type: docs
 weight: 16
 url: /hu/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Résztvevői státusz beállítása a C#-val rendelkező résztvevők számára
+
 
 ## Az Aspose.Email bemutatása .NET-hez
 
@@ -109,3 +115,9 @@ Igen, az ebben az útmutatóban tárgyalt funkciókat egyszerűen integrálhatja
 ### Hol találok további dokumentumokat és forrásokat?
 
  Részletesebb dokumentációt és forrásokat az Aspose.Email for .NET dokumentációjában talál:[Aspose.Email a .NET dokumentációhoz](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

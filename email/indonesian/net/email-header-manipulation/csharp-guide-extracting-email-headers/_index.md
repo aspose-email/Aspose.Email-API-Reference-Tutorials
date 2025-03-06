@@ -3,10 +3,16 @@ title: Panduan C# - Mengekstrak Header Email
 linktitle: Panduan C# - Mengekstrak Header Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara mengekstrak header email di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk analisis email yang efisien.
-type: docs
 weight: 15
 url: /id/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Panduan C# - Mengekstrak Header Email
+
 
 Pernahkah Anda bertanya-tanya bagaimana cara mengekstrak header email menggunakan C#? Header email berisi informasi berharga tentang pengirim, penerima, subjek, dan berbagai detail lainnya. Dalam panduan ini, kami akan memandu Anda melalui proses langkah demi langkah mengekstrak header email menggunakan pustaka Aspose.Email untuk .NET yang canggih. Pustaka ini menyediakan serangkaian fitur lengkap untuk bekerja dengan email di aplikasi .NET Anda.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Di mana saya dapat mengakses dokumentasi Aspose.Email dan mengunduh perpustakaannya?
 
  Anda dapat menemukan dokumentasinya di[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Untuk mengunduh perpustakaan, kunjungi[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

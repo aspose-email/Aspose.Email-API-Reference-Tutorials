@@ -3,10 +3,16 @@ title: Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomo
 linktitle: Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Ulepsz metadane poczty e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak wzbogacać nagłówki wiadomości e-mail w celu lepszego śledzenia i dostosowywania za pomocą Aspose.Email.
-type: docs
 weight: 18
 url: /pl/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email
+
 
 ## Wprowadzenie do wzbogacania metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email
 
@@ -107,3 +113,9 @@ Tak, Aspose.Email obsługuje wiele języków programowania, w tym Java, .NET i i
 ### Gdzie mogę znaleźć więcej zasobów na temat Aspose.Email dla Java?
 
  Możesz zapoznać się z dokumentacją pod adresem[Tutaj](https://reference.aspose.com/email/java/) w celu uzyskania wyczerpujących zasobów i przykładów.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Membuat File Email HTML menggunakan C# - Simpan sebagai HTML
 linktitle: Membuat File Email HTML menggunakan C# - Simpan sebagai HTML
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara membuat file email HTML menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk penyesuaian email yang lancar.
-type: docs
 weight: 18
 url: /id/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membuat File Email HTML menggunakan C# - Simpan sebagai HTML
+
 
 ## Pengantar Membuat File Email HTML
 
@@ -113,3 +119,9 @@ Ya, Aspose.Email mendukung .NET Core, memungkinkan Anda membangun aplikasi linta
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
 
  Anda dapat menjelajahi contoh komprehensif dan dokumentasi terperinci di[Dokumentasi Aspose.Email](https://reference.aspose.com/email/net) halaman.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

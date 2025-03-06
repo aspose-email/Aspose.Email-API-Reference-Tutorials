@@ -3,10 +3,16 @@ title: Ingesloten objecten extraheren - C#-zelfstudie
 linktitle: Ingesloten objecten extraheren - C#-zelfstudie
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u ingesloten objecten uit e-mailberichten kunt extraheren met Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden.
-type: docs
 weight: 15
 url: /nl/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ingesloten objecten extraheren - C#-zelfstudie
+
 
 ## Inleiding tot het extraheren van ingebedde objecten - C#-zelfstudie
 
@@ -105,3 +111,9 @@ Absoluut! Aspose.Email voor .NET is compatibel met ASP.NET-webapplicaties, deskt
 ### Waar kan ik meer documentatie over Aspose.Email vinden?
 
  U kunt gedetailleerde documentatie en codevoorbeelden voor Aspose.Email vinden op[Aspose.Email voor .NET API-referentie](https://reference.aspose.com/email/net/) bladzijde.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

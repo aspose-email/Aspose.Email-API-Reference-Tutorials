@@ -3,10 +3,16 @@ title: إعداد نص بديل للصور - دليل C#
 linktitle: إعداد نص بديل للصور - دليل C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. تأكد من إمكانية الوصول بنص بديل واضح. الوثائق والكود المدرجة.
-type: docs
 weight: 15
 url: /ar/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إعداد نص بديل للصور - دليل C#
+
 
 سيرشدك هذا الدليل خلال عملية إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET. يتم استخدام النص البديل، المعروف أيضًا باسم "النص البديل"، لتوفير وصف نصي للصورة في حالة تعذر عرض الصورة. Aspose.Email for .NET هي مكتبة قوية تسمح لك بالعمل مع رسائل البريد الإلكتروني والمرفقات بتنسيقات مختلفة. سنركز في هذا الدليل على إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام لغة C#.
 
@@ -81,3 +87,9 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email لـ .NET؟
 
  يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في[مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

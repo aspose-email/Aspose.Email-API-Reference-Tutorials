@@ -3,10 +3,16 @@ title: Ορισμός κεφαλίδων προτεραιότητας και σ�
 linktitle: Ορισμός κεφαλίδων προτεραιότητας και σημασίας με το Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Ενισχύστε τον αντίκτυπο του email σας ορίζοντας κεφαλίδες προτεραιότητας και σημασίας με το Aspose.Email για Java. Μάθετε πώς σε αυτόν τον οδηγό βήμα προς βήμα.
-type: docs
 weight: 14
 url: /el/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ορισμός κεφαλίδων προτεραιότητας και σημασίας με το Aspose.Email
+
 
 ## Εισαγωγή
 
@@ -94,3 +100,9 @@ client.send(message);
 ### Πώς μπορώ να χειριστώ τα συνημμένα email με το Aspose.Email;
 
  Ο χειρισμός των συνημμένων email με το Aspose.Email είναι απλός. Μπορείτε να χρησιμοποιήσετε το`Attachment` τάξη για να προσθέσετε συνημμένα στα μηνύματα ηλεκτρονικού ταχυδρομείου σας. Για λεπτομερή οδηγό, ανατρέξτε στην τεκμηρίωση του Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

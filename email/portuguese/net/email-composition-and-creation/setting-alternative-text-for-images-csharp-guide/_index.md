@@ -3,10 +3,16 @@ title: Configurando texto alternativo para imagens – Guia C#
 linktitle: Configurando texto alternativo para imagens – Guia C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda a definir texto alternativo para imagens em e-mails usando Aspose.Email for .NET. Garanta a acessibilidade com texto alternativo claro. Documentação e código incluídos.
-type: docs
 weight: 15
 url: /pt/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configurando texto alternativo para imagens – Guia C#
+
 
 Este guia orientará você no processo de configuração de texto alternativo para imagens em e-mails usando Aspose.Email for .NET. O texto alternativo, também conhecido como “texto alternativo”, é usado para fornecer uma descrição textual de uma imagem caso ela não possa ser exibida. Aspose.Email for .NET é uma biblioteca poderosa que permite trabalhar com e-mails e anexos em vários formatos. Neste guia, focaremos na configuração de texto alternativo para imagens em mensagens de e-mail usando C#.
 
@@ -81,3 +87,9 @@ Para adicionar imagens como recursos vinculados em um e-mail, você pode usar o`
 ### Onde posso encontrar mais documentação sobre Aspose.Email for .NET?
 
  Você pode encontrar documentação mais detalhada, tutoriais e exemplos sobre como trabalhar com Aspose.Email for .NET no[Referência de API](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

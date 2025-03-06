@@ -3,10 +3,16 @@ title: Configurando cabeçalhos de e-mail em C#
 linktitle: Configurando cabeçalhos de e-mail em C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como configurar cabeçalhos de e-mail personalizados em C# usando Aspose.Email for .NET. Guia passo a passo com código-fonte incluído. Melhore o controle e a segurança de e-mail.
-type: docs
 weight: 17
 url: /pt/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configurando cabeçalhos de e-mail em C#
+
 
 comunicação por e-mail tornou-se parte integrante das interações pessoais e comerciais modernas. Embora o conteúdo de um e-mail seja crucial, os cabeçalhos que o acompanham são igualmente importantes. Os cabeçalhos de e-mail fornecem informações valiosas sobre a mensagem, o remetente, o destinatário e muito mais. Configurar cabeçalhos de e-mail em C# usando Aspose.Email for .NET oferece uma maneira poderosa de personalizar e controlar as informações incorporadas nas mensagens de e-mail. Neste artigo, exploraremos como configurar cabeçalhos de e-mail passo a passo usando a biblioteca Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email oferece recursos de validação para garantir que os cabeçalhos de
 ### Os cabeçalhos de e-mail diferenciam maiúsculas de minúsculas?
 
 Sim, os cabeçalhos de e-mail não diferenciam maiúsculas de minúsculas. No entanto, é uma boa prática manter letras maiúsculas consistentes para melhor compatibilidade.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

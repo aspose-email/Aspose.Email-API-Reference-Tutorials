@@ -3,10 +3,16 @@ title: जावा के लिए Aspose.Email के साथ ईमेल 
 linktitle: जावा के लिए Aspose.Email के साथ ईमेल प्राप्त करना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा ट्यूटोरियल के लिए Aspose.Email के साथ आसानी से ईमेल प्राप्त करना सीखें। एक पेशेवर की तरह अपना इनबॉक्स प्रबंधित करना शुरू करें!
-type: docs
 weight: 11
 url: /hi/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# जावा के लिए Aspose.Email के साथ ईमेल प्राप्त करना
+
 
 ## सहजता से ईमेल प्राप्त करें
 
@@ -29,3 +35,9 @@ url: /hi/java/receiving-emails/
 अपने ईमेल संचार को कुशलतापूर्वक प्रबंधित करने के लिए जावा के लिए Aspose.Email में IMAP प्रोटोकॉल के साथ काम करना सीखें।
 ### [Aspose.Email में ईमेल अनुलग्नकों को संभालना](./handling-email-attachments/)
 Java के लिए Aspose.Email में ईमेल अटैचमेंट को संभालना सीखें। कुशल ईमेल अनुलग्नक प्रबंधन के लिए स्रोत कोड और अक्सर पूछे जाने वाले प्रश्नों के साथ चरण-दर-चरण मार्गदर्शिका।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

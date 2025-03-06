@@ -3,10 +3,16 @@ title: Melhore a comunicação com notificação e rastreamento por e-mail
 linktitle: Notificação e rastreamento por e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Implemente recursos de notificação e rastreamento por e-mail usando os tutoriais do Aspose.Email for .NET. Automatize notificações e obtenha insights sobre as interações dos destinatários de e-mail.
-type: docs
 weight: 16
 url: /pt/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Melhore a comunicação com notificação e rastreamento por e-mail
+
 
 ## Introdução
 
@@ -27,3 +33,9 @@ Aprenda a receber notificações por email em C# usando Aspose.Email for .NET. E
 Aprenda como usar o código C# para solicitar confirmações de leitura de e-mail usando Aspose.Email for .NET, aprimorando o rastreamento de comunicação.
 ### [Acompanhamento do progresso da conversão de documentos por e-mail com código C#](./tracking-email-document-conversion-progress-with-csharp-code/)
 Aprenda como implementar notificação e rastreamento por e-mail usando Aspose.Email for .NET. Guia passo a passo com exemplos de código. Melhore sua comunicação por e-mail hoje!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email을 사용한 DKIM 서명 구현
 linktitle: Aspose.Email을 사용한 DKIM 서명 구현
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 DKIM 서명으로 이메일 보안을 보장하세요. DKIM 구현을 위한 단계별 가이드 및 코드입니다.
-type: docs
 weight: 15
 url: /ko/java/customizing-email-headers/dkim-signatures-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용한 DKIM 서명 구현
+
 
 ## Aspose.Email을 사용한 DKIM 서명 구현
 
@@ -112,3 +118,9 @@ DNS 레코드 및 키 관리를 포함한 DKIM 구성을 확인하여 모든 것
 ### Java용 Aspose.Email에 대한 추가 리소스는 어디에서 찾을 수 있나요?
 
 자세한 내용과 리소스를 보려면 Aspose.Email for Java 문서를 방문하세요.[여기](https://reference.aspose.com/email/java/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

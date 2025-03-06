@@ -3,10 +3,16 @@ title: Extraction et analyse des en-têtes d'e-mails avec Aspose.Email
 linktitle: Extraction et analyse des en-têtes d'e-mails avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Libérez la puissance de l’analyse des en-têtes d’e-mails avec Aspose.Email pour Java. Découvrez comment extraire et analyser les en-têtes d'e-mails pour un suivi et une sécurité améliorés des e-mails.
-type: docs
 weight: 12
 url: /fr/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraction et analyse des en-têtes d'e-mails avec Aspose.Email
+
 
 ## Introduction à l'extraction et à l'analyse des en-têtes d'e-mails avec Aspose.Email
 
@@ -107,3 +113,9 @@ L'analyse des en-têtes d'e-mails est cruciale pour diverses raisons, telles que
 ### Puis-je automatiser l’analyse des en-têtes d’e-mails avec Aspose.Email ?
 
 Oui, vous pouvez automatiser l'analyse des en-têtes d'e-mails avec Aspose.Email en l'intégrant dans vos applications Java. La bibliothèque fournit des méthodes pratiques pour travailler avec les en-têtes de courrier électronique.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

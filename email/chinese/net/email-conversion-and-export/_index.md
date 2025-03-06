@@ -3,10 +3,16 @@ title: 探索电子邮件转换和导出
 linktitle: 电子邮件转换和导出
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 使用 Aspose.Email for .NET 掌握电子邮件数据管理的教程。转换、导出电子邮件、保持完整性、处理附件。用例子来提升。
-type: docs
 weight: 11
 url: /zh/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 探索电子邮件转换和导出
+
 
 ## 介绍
 
@@ -39,3 +45,9 @@ Aspose.Email for .NET 提供的电子邮件转换和导出教程为开发人员�
 了解如何使用 C# 和 Aspose.Email for .NET 创建 HTML 电子邮件文件。带有源代码的分步指南，可实现无缝电子邮件定制。
 ### [从消息生成 OFT 文件 - C# 教程](./generating-oft-files-from-messages-csharp-tutorial/)
 了解如何使用 Aspose.Email for .NET 从消息创建 OFT 文件。带有源代码的分步指南，用于高效生成电子邮件模板。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 이메일 변환 및 내보내기 탐색
 linktitle: 이메일 변환 및 내보내기
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 데이터 관리를 마스터하세요. 이메일을 변환하고, 내보내고, 무결성을 유지하고, 첨부 파일을 처리하세요. 예시를 통해 향상하세요.
-type: docs
 weight: 11
 url: /ko/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일 변환 및 내보내기 탐색
+
 
 ## 소개
 
@@ -39,3 +45,9 @@ url: /ko/net/email-conversion-and-export/
 .NET용 C# 및 Aspose.Email을 사용하여 HTML 이메일 파일을 만드는 방법을 알아보세요. 원활한 이메일 사용자 정의를 위한 소스 코드가 포함된 단계별 가이드입니다.
 ### [메시지에서 OFT 파일 생성 - C# 자습서](./generating-oft-files-from-messages-csharp-tutorial/)
 .NET용 Aspose.Email을 사용하여 메시지에서 OFT 파일을 만드는 방법을 알아보세요. 효율적인 이메일 템플릿 생성을 위한 소스 코드가 포함된 단계별 가이드입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

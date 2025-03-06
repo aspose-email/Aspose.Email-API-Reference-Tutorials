@@ -3,10 +3,16 @@ title: معالجة رأس البريد الإلكتروني
 linktitle: معالجة رأس البريد الإلكتروني
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعامل بكفاءة مع رؤوس البريد الإلكتروني باستخدام Aspose.Email لبرامج .NET التعليمية. تعلم كيفية استخراج الرؤوس وتعديلها وتخصيصها لتعزيز الاتصال.
-type: docs
 weight: 14
 url: /ar/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# معالجة رأس البريد الإلكتروني
+
 
 ## مقدمة
 
@@ -33,3 +39,9 @@ url: /ar/net/email-header-manipulation/
 تعرف على كيفية استخراج رؤوس البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لتحليل البريد الإلكتروني بكفاءة. 
 ### [تحديد الرؤوس المخصصة في C#](./specifying-custom-headers-in-csharp/)
 تعرف على كيفية تحديد رؤوس مخصصة في لغة C# باستخدام Aspose.Email لـ .NET لتحسين الاتصال عبر البريد الإلكتروني. يوفر هذا الدليل التفصيلي رؤى حول إنشاء رؤوس بريد إلكتروني مخصصة لتحسين التفاعل.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

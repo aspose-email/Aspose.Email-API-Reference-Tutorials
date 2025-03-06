@@ -3,10 +3,16 @@ title: 使用 C# 设置约会与会者的参与者状态
 linktitle: 使用 C# 设置约会与会者的参与者状态
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 管理约会参加者的状态。带有源代码的分步指南。
-type: docs
 weight: 16
 url: /zh/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 设置约会与会者的参与者状态
+
 
 ## Aspose.Email for .NET 简介
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### 在哪里可以找到更多文档和资源？
 
 有关更详细的文档和资源，请参阅 Aspose.Email for .NET 文档：[Aspose.Email for .NET 文档](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

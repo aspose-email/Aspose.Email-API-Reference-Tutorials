@@ -3,10 +3,16 @@ title: Aspose.Email for Java を使用した電子メールの受信
 linktitle: Aspose.Email for Java を使用した電子メールの受信
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java チュートリアルで電子メールを簡単に受信する方法を学びましょう。プロのように受信トレイの管理を始めましょう!
-type: docs
 weight: 11
 url: /ja/java/receiving-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java を使用した電子メールの受信
+
 
 ## メールを簡単に受信
 
@@ -29,3 +35,9 @@ Aspose.Email for Java は、IMAP、POP3、SMTP などのさまざまな電子メ
 Aspose.Email for Java で IMAP プロトコルを使用して電子メール通信を効率的に管理する方法を学びます。
 ### [Aspose.Email での電子メール添付ファイルの処理](./handling-email-attachments/)
 Aspose.Email for Java で電子メールの添付ファイルを処理する方法を学びます。電子メールの添付ファイルを効率的に管理するためのソース コードと FAQ を含むステップバイステップ ガイド。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

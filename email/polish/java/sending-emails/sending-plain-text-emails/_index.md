@@ -3,10 +3,16 @@ title: Wysyłanie wiadomości e-mail w postaci zwykłego tekstu za pomocą Aspos
 linktitle: Wysyłanie wiadomości e-mail w postaci zwykłego tekstu za pomocą Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Naucz się efektywnie wysyłać wiadomości e-mail w postaci zwykłego tekstu za pomocą Aspose.Email dla Java. Obszerny przewodnik z przykładami kodu i często zadawanymi pytaniami dotyczącymi bezproblemowej komunikacji.
-type: docs
 weight: 10
 url: /pl/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wysyłanie wiadomości e-mail w postaci zwykłego tekstu za pomocą Aspose.Email
+
 
 ## Wstęp
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Czy są jakieś ograniczenia podczas wysyłania wiadomości e-mail w postaci zwykłego tekstu za pomocą Aspose.Email dla Java?
    - Ograniczenia mogą zależeć od dostawcy usług e-mail i serwera SMTP. Upewnij się, że przestrzegasz wszelkich limitów wysyłania i zasad wysyłania wiadomości e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

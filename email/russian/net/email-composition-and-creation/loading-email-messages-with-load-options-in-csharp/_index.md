@@ -3,10 +3,16 @@ title: Загрузка сообщений электронной почты с 
 linktitle: Загрузка сообщений электронной почты с параметрами загрузки в C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как загружать сообщения электронной почты с помощью Aspose.Email для .NET на C#. Изучите пошаговое руководство и примеры исходного кода для эффективной обработки электронной почты.
-type: docs
 weight: 11
 url: /ru/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Загрузка сообщений электронной почты с параметрами загрузки в C#
+
 
 ## Введение в Aspose.Email для .NET
 
@@ -167,3 +173,9 @@ var email = MailMessage.Load(filePath, loadOptions);
 ### Что делать, если при загрузке писем возникают ошибки?
 
 Если вы столкнулись с ошибками во время загрузки электронной почты, обязательно поместите код загрузки в блок try-catch для обработки исключений. Это поможет вам выявить и решить любые возникающие проблемы.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

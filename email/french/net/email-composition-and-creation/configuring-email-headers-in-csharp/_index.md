@@ -3,10 +3,16 @@ title: Configuration des en-têtes de courrier électronique en C#
 linktitle: Configuration des en-têtes de courrier électronique en C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment configurer des en-têtes de courrier électronique personnalisés en C# à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source inclus. Améliorez le contrôle et la sécurité des e-mails.
-type: docs
 weight: 17
 url: /fr/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configuration des en-têtes de courrier électronique en C#
+
 
 La communication par courrier électronique est devenue partie intégrante des interactions professionnelles et personnelles modernes. Si le contenu d’un e-mail est crucial, les en-têtes qui l’accompagnent sont tout aussi importants. Les en-têtes d'e-mail fournissent des informations précieuses sur le message, l'expéditeur, le destinataire, etc. La configuration des en-têtes de courrier électronique en C# à l'aide d'Aspose.Email pour .NET offre un moyen puissant de personnaliser et de contrôler les informations intégrées dans les messages électroniques. Dans cet article, nous explorerons comment configurer les en-têtes de courrier électronique étape par étape à l'aide de la bibliothèque Aspose.Email pour .NET.
 
@@ -133,3 +139,9 @@ Aspose.Email offre des fonctionnalités de validation pour garantir que les en-t
 ### Les en-têtes des e-mails sont-ils sensibles à la casse ?
 
 Oui, les en-têtes des e-mails ne sont pas sensibles à la casse. Toutefois, il est recommandé de conserver une capitalisation cohérente pour une meilleure compatibilité.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

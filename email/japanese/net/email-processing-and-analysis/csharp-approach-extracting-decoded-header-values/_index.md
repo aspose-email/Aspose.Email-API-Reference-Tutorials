@@ -3,10 +3,16 @@ title: C# アプローチ - デコードされたヘッダー値の抽出
 linktitle: C# アプローチ - デコードされたヘッダー値の抽出
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して、C# でデコードされた電子メール ヘッダー値を抽出する方法を学びます。コード例を含む包括的なガイド。
-type: docs
 weight: 17
 url: /ja/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# アプローチ - デコードされたヘッダー値の抽出
+
 
 このチュートリアルでは、Aspose.Email for .NET を使用して電子メール メッセージからデコードされたヘッダー値を抽出するプロセスを説明します。 Aspose.Email for .NET は、開発者が電子メール ヘッダーの読み取りや操作など、電子メール メッセージのさまざまな側面を操作できるようにする堅牢なライブラリです。
 
@@ -77,3 +83,9 @@ class Program
 ## 結論
 
 このチュートリアルでは、Aspose.Email for .NET を利用して電子メール メッセージからデコードされたヘッダー値を抽出する方法を学習しました。 Aspose.Email for .NET は、開発者がヘッダーの処理など電子メール メッセージを効率的に操作できるようにする包括的なツール セットを提供します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

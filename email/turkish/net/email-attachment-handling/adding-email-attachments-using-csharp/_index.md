@@ -3,10 +3,16 @@ title: C# kullanarak E-posta Ekleri Ekleme
 linktitle: C# kullanarak E-posta Ekleri Ekleme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak e-posta eklerini nasıl ekleyeceğinizi öğrenin. Sorunsuz entegrasyon için kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 11
 url: /tr/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# kullanarak E-posta Ekleri Ekleme
+
 
 ## E-posta Eklerine ve Aspose.Email for .NET'e Giriş
 
@@ -92,3 +98,9 @@ Kesinlikle! E-postayı gereksinimlerinize göre özelleştirmek için MailMessag
 ### Aspose.Email for .NET'in ücretsiz deneme sürümü mevcut mu?
 
 Evet, satın almadan önce özelliklerini keşfetmek için Aspose.Email for .NET'in ücretsiz deneme sürümünü indirebilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

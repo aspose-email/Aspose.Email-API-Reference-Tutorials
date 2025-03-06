@@ -3,10 +3,16 @@ title: Enregistrement des messages du stockage Zimbra TGZ avec C#
 linktitle: Enregistrement des messages du stockage Zimbra TGZ avec C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment extraire les e-mails Zimbra TGZ à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec code source pour une gestion efficace des e-mails.
-type: docs
 weight: 12
 url: /fr/net/email-file-storage-and-retrieval/saving-messages-from-zimbra-tgz-storage-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enregistrement des messages du stockage Zimbra TGZ avec C#
+
 
 Dans le monde de la technologie moderne, la préservation et la gestion des données sont primordiales. Les entreprises s'appuient fortement sur la communication par courrier électronique à diverses fins et, en tant que développeur, vous devrez peut-être extraire des messages du stockage Zimbra TGZ. Cet article fournit un guide étape par étape sur la façon d'y parvenir à l'aide de l'API Aspose.Email pour .NET. Nous passerons facilement en revue le processus de sauvegarde des messages du stockage Zimbra TGZ.
 
@@ -78,3 +84,9 @@ Oui, Aspose.Email pour .NET convient aux projets de toutes tailles. Il fournit d
 ### 5. Où puis-je trouver des ressources supplémentaires et une assistance pour Aspose.Email pour .NET ?
 
 Vous pouvez explorer une documentation complète et accéder à l'assistance sur le[Aspose.Email pour la référence de l'API .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

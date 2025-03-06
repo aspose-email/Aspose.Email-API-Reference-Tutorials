@@ -3,10 +3,16 @@ title: ईमेल हेडर हेरफेर
 linktitle: ईमेल हेडर हेरफेर
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET ट्यूटोरियल के लिए Aspose.Email का उपयोग करके ईमेल हेडर में कुशलतापूर्वक हेरफेर करें। उन्नत संचार के लिए हेडर निकालना, संशोधित करना और वैयक्तिकृत करना सीखें।
-type: docs
 weight: 14
 url: /hi/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ईमेल हेडर हेरफेर
+
 
 ## परिचय
 
@@ -33,3 +39,9 @@ url: /hi/net/email-header-manipulation/
 .NET के लिए Aspose.Email का उपयोग करके C# में ईमेल हेडर निकालने का तरीका जानें। कुशल ईमेल विश्लेषण के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका। 
 ### [C# में कस्टम हेडर निर्दिष्ट करना](./specifying-custom-headers-in-csharp/)
 ईमेल संचार को बढ़ाने के लिए .NET के लिए Aspose.Email का उपयोग करके C# में कस्टम हेडर निर्दिष्ट करने का तरीका जानें। यह चरण-दर-चरण मार्गदर्शिका बेहतर सहभागिता के लिए वैयक्तिकृत ईमेल हेडर बनाने में अंतर्दृष्टि प्रदान करती है।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

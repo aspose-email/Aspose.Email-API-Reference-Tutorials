@@ -3,10 +3,16 @@ title: Lägga till e-postbilagor med C#
 linktitle: Lägga till e-postbilagor med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du lägger till e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg-guide med kodexempel för sömlös integration.
-type: docs
 weight: 11
 url: /sv/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lägga till e-postbilagor med C#
+
 
 ## Introduktion till e-postbilagor och Aspose.Email för .NET
 
@@ -92,3 +98,9 @@ Absolut! Du kan ställa in olika egenskaper för klassen MailMessage, som brödt
 ### Finns det en gratis testversion av Aspose.Email för .NET?
 
 Ja, du kan ladda ner en gratis testversion av Aspose.Email för .NET för att utforska dess funktioner innan du gör ett köp.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

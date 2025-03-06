@@ -3,10 +3,16 @@ title: Récupérer des e-mails à partir de serveurs POP3 avec Aspose.Email
 linktitle: Récupérer des e-mails à partir de serveurs POP3 avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment récupérer des e-mails à partir de serveurs POP3 à l'aide d'Aspose.Email pour Java. Guide étape par étape avec code source et FAQ inclus.
-type: docs
 weight: 11
 url: /fr/java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Récupérer des e-mails à partir de serveurs POP3 avec Aspose.Email
+
 Dans ce guide complet, nous vous guiderons tout au long du processus de récupération des e-mails à partir des serveurs POP3 à l'aide de la puissante bibliothèque Aspose.Email pour Java. Que vous construisiez un client de messagerie, automatisiez le traitement des e-mails ou que vous ayez simplement besoin de récupérer des e-mails à partir d'un serveur POP3, ce didacticiel étape par étape vous fournira les connaissances et le code source dont vous avez besoin.
 
 ## 1. Introduction
@@ -159,3 +165,9 @@ Oui, Aspose.Email for Java est compatible avec une large gamme de versions Java,
 
 ### 4. Puis-je planifier des tâches de récupération d'e-mails avec Aspose.Email pour Java ?
 Oui, vous pouvez planifier des tâches de récupération d'e-mails à l'aide des bibliothèques de planification ou des frameworks Java tels que Quartz Scheduler.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

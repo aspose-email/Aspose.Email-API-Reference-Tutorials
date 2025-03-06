@@ -3,10 +3,16 @@ title: 使用 C# 代码渲染日历事件
 linktitle: 使用 C# 代码渲染日历事件
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 学习使用 C# 和 Aspose.Email for .NET 呈现日历事件。轻松创建交互式时间表。
-type: docs
 weight: 15
 url: /zh/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 代码渲染日历事件
+
 
 
 在当今的数字时代，有效管理日历事件对于企业和个人都至关重要。 Aspose.Email for .NET 提供了一组强大的工具来处理日历事件并充分满足您的日程安排需求。在本分步指南中，我们将引导您完成使用 C# 代码和 Aspose.Email for .NET 呈现日历事件的过程。
@@ -90,3 +96,9 @@ msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
    是的，Aspose.Email 提供了广泛的电子邮件管理功能，包括发送、接收和处理电子邮件。
 
 随意探索[Aspose.Email API 文档](https://reference.aspose.com/email/net/)了解更多详细信息和高级使用场景。快乐编码！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

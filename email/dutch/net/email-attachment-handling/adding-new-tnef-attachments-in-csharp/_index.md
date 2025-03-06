@@ -3,10 +3,16 @@ title: Nieuwe TNEF-bijlagen toevoegen in C#
 linktitle: Nieuwe TNEF-bijlagen toevoegen in C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u nieuwe TNEF-bijlagen kunt toevoegen in C# met behulp van Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden voor naadloze integratie.
-type: docs
 weight: 12
 url: /nl/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nieuwe TNEF-bijlagen toevoegen in C#
+
 
 ## Inleiding tot TNEF-bijlagen en Aspose.Email voor .NET
 
@@ -88,3 +94,9 @@ Ja, u kunt Aspose.Email voor .NET gebruiken in zowel persoonlijke als commercië
 ### Waar kan ik meer documentatie en voorbeelden vinden?
 
  Voor meer gedetailleerde documentatie en codevoorbeelden kunt u terecht op de website[Aspose.Email voor .NET-documentatie](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

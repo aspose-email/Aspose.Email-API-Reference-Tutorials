@@ -3,10 +3,16 @@ title: Wyodrębnianie osadzonych załączników z plików MSG przy użyciu języ
 linktitle: Wyodrębnianie osadzonych załączników z plików MSG przy użyciu języka C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak wyodrębnić osadzone załączniki z plików MSG przy użyciu C# i Aspose.Email dla .NET. Obszerny przewodnik z przykładami kodu źródłowego.
-type: docs
 weight: 10
 url: /pl/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnianie osadzonych załączników z plików MSG przy użyciu języka C#
+
 
 ## Wprowadzenie do osadzonych załączników
 
@@ -103,3 +109,9 @@ Absolutnie! Aspose.Email dla .NET może być używany zarówno w aplikacjach sta
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji?
 
  Szczegółowe przykłady i dokumentację dotyczącą korzystania z Aspose.Email dla .NET można znaleźć w pliku[dokumentacja](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

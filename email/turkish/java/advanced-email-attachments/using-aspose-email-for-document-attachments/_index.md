@@ -3,10 +3,16 @@ title: Belge Ekleri için Aspose.Email Kullanımı
 linktitle: Belge Ekleri için Aspose.Email Kullanımı
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java kullanarak Java e-postalarındaki belge eklerini nasıl yöneteceğinizi öğrenin. Belge eklerini kolaylıkla oluşturun, gönderin ve çıkarın.
-type: docs
 weight: 16
 url: /tr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Belge Ekleri için Aspose.Email Kullanımı
+
 
 ## Java'da Belge Ekleri için Aspose.Email Kullanımına Giriş
 
@@ -104,3 +110,9 @@ Evet, Aspose.Email for Java, Word belgeleri, Excel elektronik tabloları, resiml
 ### Büyük belge eklerini nasıl halledebilirim?
 
 Büyük belge ekleriyle uğraşmanız gerekiyorsa, ekin tamamının belleğe yüklenmesini önlemek için akış tekniklerini kullanmayı düşünün. Aspose.Email, eklerin akışı için seçenekler sunarak bunları verimli bir şekilde işlemenize olanak tanır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

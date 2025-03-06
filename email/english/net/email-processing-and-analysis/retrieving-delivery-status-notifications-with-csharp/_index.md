@@ -3,10 +3,16 @@ title: Retrieving Delivery Status Notifications with C#
 linktitle: Retrieving Delivery Status Notifications with C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to retrieve email Delivery Status Notifications using C# and Aspose.Email for .NET.
-type: docs
 weight: 18
 url: /net/email-processing-and-analysis/retrieving-delivery-status-notifications-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Retrieving Delivery Status Notifications with C#
+
 
 In the fast-paced world of email communication, ensuring that your sent emails are successfully delivered is crucial. One way to keep track of your emails' delivery status is by using Aspose.Email for C#. In this comprehensive guide, we'll walk you through the process of retrieving delivery status notifications (DSNs) with C# using the powerful Aspose.Email library.
 
@@ -71,3 +77,9 @@ A5: Visit the [Aspose.Email for C# API documentation](https://reference.aspose.c
 ### 10. Conclusion
 
 In this guide, we've explored how to retrieve delivery status notifications with C# using Aspose.Email for C#. Keeping track of your email deliveries is essential for effective communication, and Aspose.Email simplifies this process.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

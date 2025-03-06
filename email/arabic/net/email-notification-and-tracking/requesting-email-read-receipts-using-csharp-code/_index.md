@@ -3,10 +3,16 @@ title: طلب إيصالات قراءة البريد الإلكتروني باس
 linktitle: طلب إيصالات قراءة البريد الإلكتروني باستخدام رمز C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية استخدام كود C# لطلب إيصالات قراءة البريد الإلكتروني باستخدام Aspose.Email for .NET، مما يعزز تتبع الاتصالات.
-type: docs
 weight: 11
 url: /ar/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# طلب إيصالات قراءة البريد الإلكتروني باستخدام رمز C#
+
 
 في العصر الرقمي الحالي، أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من حياتنا الشخصية والمهنية. في كثير من الأحيان، عند إرسال رسائل بريد إلكتروني مهمة، نريد التأكد من أن المستلم قد قرأ رسالتنا واعترف بها. هذا هو المكان الذي تلعب فيه إيصالات قراءة البريد الإلكتروني. في هذا البرنامج التعليمي خطوة بخطوة، سنرشدك خلال عملية طلب إيصالات قراءة البريد الإلكتروني باستخدام C# مع Aspose.Email for .NET.
 
@@ -133,3 +139,9 @@ catch (Exception ex)
 
 5. ### هل هناك اعتبارات تتعلق بالخصوصية عند استخدام إيصالات قراءة البريد الإلكتروني؟
    نعم، هناك مخاوف تتعلق بالخصوصية تتعلق بتتبع البريد الإلكتروني. قد يعتبرها بعض المستلمين متطفلة، لذلك من الضروري استخدام هذه الميزة بمسؤولية واحترام تفضيلات الخصوصية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

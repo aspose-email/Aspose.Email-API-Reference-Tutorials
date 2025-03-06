@@ -3,10 +3,16 @@ title: Signature d'e-mails avec DKIM à l'aide du code C#
 linktitle: Signature d'e-mails avec DKIM à l'aide du code C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Apprenez à sécuriser les e-mails avec DKIM en utilisant C# et Aspose.Email pour .NET. Guide étape par étape avec le code source. Améliorez la confiance et l’authenticité des e-mails.
-type: docs
 weight: 11
 url: /fr/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Signature d'e-mails avec DKIM à l'aide du code C#
+
 
 Dans le monde numérique d'aujourd'hui, garantir l'authenticité et l'intégrité des communications par courrier électronique est d'une importance primordiale. Une façon d’y parvenir consiste à utiliser les signatures DomainKeys Identified Mail (DKIM). Dans ce guide étape par étape, nous explorerons comment signer des e-mails avec DKIM en utilisant C# et la puissante bibliothèque Aspose.Email pour .NET.
 
@@ -123,3 +129,9 @@ Les en-têtes courants à inclure dans la signature DKIM sont « De », « Objet
 ### Q5 : DKIM est-il la seule méthode d'authentification des e-mails ?
 
 Non, il existe d'autres méthodes comme SPF et DMARC qui sont utilisées conjointement avec DKIM pour améliorer la sécurité des e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

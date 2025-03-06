@@ -3,10 +3,16 @@ title: C# Kodunu Kullanarak DKIM ile E-postaları İmzalama
 linktitle: C# Kodunu Kullanarak DKIM ile E-postaları İmzalama
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C# ve Aspose.Email for .NET kullanarak DKIM ile e-postalarınızın güvenliğini sağlamayı öğrenin. Kaynak koduyla adım adım kılavuz. E-posta güvenini ve orijinalliğini artırın.
-type: docs
 weight: 11
 url: /tr/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Kodunu Kullanarak DKIM ile E-postaları İmzalama
+
 
 Günümüzün dijital dünyasında, e-posta iletişimlerinin orijinalliğini ve bütünlüğünü sağlamak büyük önem taşıyor. Bunu başarmanın bir yolu Etki Alanı Anahtarları Tanımlanmış Posta (DKIM) imzalarını kullanmaktır. Bu adım adım kılavuzda, C# ve güçlü Aspose.Email for .NET kitaplığını kullanarak DKIM ile e-postaların nasıl imzalanacağını keşfedeceğiz.
 
@@ -123,3 +129,9 @@ DKIM imzasına dahil edilecek genel başlıklar "Kimden", "Konu" ve e-posta kiml
 ### S5: E-posta kimlik doğrulaması için tek yöntem DKIM midir?
 
 Hayır, gelişmiş e-posta güvenliği için DKIM ile birlikte kullanılan SPF ve DMARC gibi başka yöntemler de vardır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

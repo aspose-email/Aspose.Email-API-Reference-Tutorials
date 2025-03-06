@@ -3,10 +3,16 @@ title: Extrahieren und Analysieren von E-Mail-Headern mit Aspose.Email
 linktitle: Extrahieren und Analysieren von E-Mail-Headern mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Nutzen Sie die Leistungsfähigkeit der E-Mail-Header-Analyse mit Aspose.Email für Java. Erfahren Sie, wie Sie E-Mail-Header extrahieren und analysieren, um die E-Mail-Verfolgung und -Sicherheit zu verbessern.
-type: docs
 weight: 12
 url: /de/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahieren und Analysieren von E-Mail-Headern mit Aspose.Email
+
 
 ## Einführung in das Extrahieren und Analysieren von E-Mail-Headern mit Aspose.Email
 
@@ -107,3 +113,9 @@ Die Analyse von E-Mail-Headern ist aus verschiedenen Gründen von entscheidender
 ### Kann ich die E-Mail-Header-Analyse mit Aspose.Email automatisieren?
 
 Ja, Sie können die E-Mail-Header-Analyse mit Aspose.Email automatisieren, indem Sie es in Ihre Java-Anwendungen integrieren. Die Bibliothek bietet praktische Methoden zum Arbeiten mit E-Mail-Headern.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

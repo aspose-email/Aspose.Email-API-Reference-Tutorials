@@ -3,10 +3,16 @@ title: Validasi dan Verifikasi Email
 linktitle: Validasi dan Verifikasi Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Terapkan mekanisme validasi dan verifikasi email yang kuat menggunakan tutorial Aspose.Email untuk .NET. Meningkatkan akurasi dan keamanan komunikasi.
-type: docs
 weight: 17
 url: /id/net/email-validation-and-verification/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Validasi dan Verifikasi Email
+
 
 ## Perkenalan
 
@@ -23,3 +29,9 @@ Tutorial verifikasi email fokus untuk memungkinkan pengembang memverifikasi kebe
 ## Tutorial Validasi dan Verifikasi Email
 ### [Teknik Validasi Email dalam Kode C#](./email-validation-techniques-in-csharp-code/)
 Pelajari cara memvalidasi alamat email secara efektif di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber disediakan. Meningkatkan akurasi data dan pengalaman pengguna.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

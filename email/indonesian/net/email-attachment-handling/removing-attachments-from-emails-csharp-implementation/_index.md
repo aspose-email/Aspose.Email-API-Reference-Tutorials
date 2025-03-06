@@ -3,10 +3,16 @@ title: Menghapus Lampiran dari Email - Implementasi C#
 linktitle: Menghapus Lampiran dari Email - Implementasi C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menghapus lampiran email menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber C#.
-type: docs
 weight: 18
 url: /id/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menghapus Lampiran dari Email - Implementasi C#
+
 
 ## Pengantar Menghapus Lampiran dari Email
 
@@ -97,3 +103,9 @@ Sangat. Aspose.Email dirancang agar dapat diskalakan dan dapat digunakan dalam p
 ### Bisakah saya menguji perpustakaan Aspose.Email sebelum mengintegrasikannya ke dalam proyek saya?
 
 Ya, Aspose menyediakan versi uji coba perpustakaannya yang dapat Anda unduh dan uji sebelum mengambil keputusan untuk membeli. Kunjungi situs web mereka untuk informasi lebih lanjut.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

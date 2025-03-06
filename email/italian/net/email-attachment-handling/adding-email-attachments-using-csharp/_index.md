@@ -3,10 +3,16 @@ title: Aggiunta di allegati e-mail utilizzando C#
 linktitle: Aggiunta di allegati e-mail utilizzando C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come aggiungere allegati e-mail utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice per un'integrazione perfetta.
-type: docs
 weight: 11
 url: /it/net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aggiunta di allegati e-mail utilizzando C#
+
 
 ## Introduzione agli allegati e-mail e ad Aspose.Email per .NET
 
@@ -92,3 +98,9 @@ Assolutamente! Puoi impostare varie proprietà della classe MailMessage, come Co
 ### È disponibile una versione di prova gratuita di Aspose.Email per .NET?
 
 Sì, puoi scaricare una versione di prova gratuita di Aspose.Email per .NET per esplorarne le funzionalità prima di effettuare un acquisto.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

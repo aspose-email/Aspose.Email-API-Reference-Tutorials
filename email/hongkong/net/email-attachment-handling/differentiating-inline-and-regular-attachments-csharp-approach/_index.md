@@ -3,10 +3,16 @@ title: 區分內嵌附件和常規附件 - C# 方法
 linktitle: 區分內嵌附件和常規附件 - C# 方法
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 區分內嵌電子郵件附件和常規電子郵件附件。帶有程式碼範例的綜合指南。
-type: docs
 weight: 17
 url: /zh-hant/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 區分內嵌附件和常規附件 - C# 方法
+
 
 ## 區分內嵌附件和常規附件簡介 - C# 方法
 
@@ -107,3 +113,9 @@ foreach (Attachment attachment in attachments)
 ### 我可以將常規附件儲存到磁碟上的特定位置嗎？
 
 絕對地！您可以使用以下命令將常規附件儲存到磁碟上的特定位置`Save`附件物件的方法並提供所需的檔案路徑。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

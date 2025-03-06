@@ -3,10 +3,16 @@ title: Nagłówki e-maili w Aspose.Email
 linktitle: Nagłówki e-maili w Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Odblokuj moc nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak bez wysiłku ustawiać i pobierać nagłówki wiadomości e-mail.
-type: docs
 weight: 10
 url: /pl/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nagłówki e-maili w Aspose.Email
+
 
 ## Wprowadzenie do nagłówków wiadomości e-mail
 
@@ -92,3 +98,9 @@ Nagłówek „Odebrane” to seria wpisów śledzących ścieżkę wiadomości e
 ### Jak wyodrębnić nagłówki wiadomości e-mail z dużej partii wiadomości e-mail?
 
 Możesz wykorzystać możliwości przetwarzania wsadowego Aspose.Email, aby efektywnie wyodrębnić nagłówki z wielu e-maili.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

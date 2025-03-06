@@ -3,10 +3,16 @@ title: Aspose.Email के साथ थोक ईमेल भेजना
 linktitle: Aspose.Email के साथ थोक ईमेल भेजना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email का उपयोग करके कुशलतापूर्वक बल्क ईमेल भेजने का तरीका जानें। ईमेल मार्केटिंग और संचार के लिए कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 14
 url: /hi/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email के साथ थोक ईमेल भेजना
+
 
 ## परिचय
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### मैं थोक में भेजे जाने वाले बाउंस या विफल ईमेल को कैसे संभाल सकता हूँ?
    Aspose.Email डिलीवरी स्थिति सूचनाओं (डीएसएन) को संभालने और ईमेल डिलीवरी स्थिति को ट्रैक करने के लिए सुविधाएँ प्रदान करता है। आप आवश्यकतानुसार बाउंस या विफल ईमेल को संसाधित करने के लिए तर्क लागू कर सकते हैं।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

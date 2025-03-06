@@ -3,10 +3,16 @@ title: Nhúng hình ảnh dưới dạng tệp đính kèm trong Aspose.Email
 linktitle: Nhúng hình ảnh dưới dạng tệp đính kèm trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách nhúng hình ảnh dưới dạng tệp đính kèm trong Aspose.Email cho Java. Nâng cao khả năng giao tiếp qua email của bạn với nội dung hấp dẫn trực quan.
-type: docs
 weight: 14
 url: /vi/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nhúng hình ảnh dưới dạng tệp đính kèm trong Aspose.Email
+
 
 ## Nhúng hình ảnh dưới dạng tệp đính kèm trong Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email for Java hỗ trợ nhiều định dạng hình ảnh khác nhau, 
 ### Có bất kỳ hạn chế nào về kích thước của hình ảnh được nhúng không?
 
 Kích thước của hình ảnh được nhúng có thể ảnh hưởng đến khả năng gửi email và trải nghiệm của người nhận. Nên tối ưu hóa hình ảnh cho email để tránh kích thước file lớn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# ile E-posta Adreslerini Değiştirme
 linktitle: C# ile E-posta Adreslerini Değiştirme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'in yardımıyla C# kullanarak e-posta adreslerini nasıl değiştireceğinizi öğrenin. E-posta adreslerini etkili bir şekilde yönetmek için bu adım adım kılavuzu izleyin.
-type: docs
 weight: 10
 url: /tr/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile E-posta Adreslerini Değiştirme
+
 
 ## giriiş
 
@@ -132,3 +138,9 @@ Aspose.Email sağlam bir seçim olsa da MimeKit ve OpenPop.NET gibi diğer küt�
 ## Çözüm
 
 Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak e-posta adresi değiştirme dünyasını keşfetmek için bir yolculuğa çıktık. Adım adım talimatları izleyerek ve sağlanan kaynak kodunu kullanarak artık uygulamalarınızdaki e-posta adreslerini etkili bir şekilde değiştirme becerisine sahipsiniz. Aspose.Email'in yetenekleri, yeni keşfettiğiniz bilgilerle birleştiğinde, şüphesiz e-posta manipülasyon çabalarınızı kolaylaştıracaktır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

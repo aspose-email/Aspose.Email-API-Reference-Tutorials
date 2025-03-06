@@ -3,10 +3,16 @@ title: 在 C# 中将电子邮件转换为带时区的 MHT
 linktitle: 在 C# 中将电子邮件转换为带时区的 MHT
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 使用 Aspose.Email for .NET 将电子邮件转换为具有准确时区的 MHT 格式。提供了分步指南和代码示例。
-type: docs
 weight: 12
 url: /zh/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 C# 中将电子邮件转换为带时区的 MHT
+
 
 ## 电子邮件转换简介 电子邮件到带时区的 MHT
 
@@ -105,3 +111,9 @@ Aspose.Email for .NET 简化了复杂的电子邮件相关任务，使开发人�
 ### 如何下载最新版本的 Aspose.Email for .NET？
 
 您可以从发布页面下载最新版本：[下载 .NET 版 Aspose.Email](https://releases.aspose.com/email/net/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

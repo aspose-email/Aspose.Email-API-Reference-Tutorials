@@ -3,10 +3,16 @@ title: Aspose.Email for Java を使用した高度な電子メール添付ファ
 linktitle: Aspose.Email for Java を使用した高度な電子メール添付ファイル
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して高度な電子メール添付テクニックをマスターしてください。添付ファイルを効率的に処理するためのチュートリアルを参照してください。
-type: docs
 weight: 13
 url: /ja/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for Java を使用した高度な電子メール添付ファイル
+
 
 電子メールの添付ファイルは現代のコミュニケーションにおいて極めて重要な役割を果たしており、ユーザーはドキュメント、画像、ファイルをシームレスに共有できます。 Aspose.Email for Java を使用すると、開発者は電子メールの添付ファイルを制御し、高度なテクニックを効率的に実装できます。
 
@@ -35,3 +41,9 @@ Aspose.Email for Java を使用して電子メールの添付ファイルを簡�
 Aspose.Email for Java に画像を添付ファイルとして埋め込む方法を学習します。視覚的に魅力的なコンテンツで電子メールコミュニケーションを強化します。
 ### [ドキュメントの添付ファイルとして Aspose.Email を使用する](./using-aspose-email-for-document-attachments/)
 Aspose.Email for Java を使用して Java 電子メールのドキュメント添付ファイルを管理する方法を学びます。添付文書を簡単に作成、送信、抽出できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Ενσωμάτωση εικόνων ως συνημμένων στο Aspo
 linktitle: Ενσωμάτωση εικόνων ως συνημμένων στο Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Μάθετε πώς να ενσωματώνετε εικόνες ως συνημμένα στο Aspose.Email για Java. Αυξήστε την επικοινωνία μέσω email με οπτικά ελκυστικό περιεχόμενο.
-type: docs
 weight: 14
 url: /el/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ενσωμάτωση εικόνων ως συνημμένων στο Aspose.Email
+
 
 ## Ενσωμάτωση εικόνων ως συνημμένων στο Aspose.Email
 
@@ -97,3 +103,9 @@ client.send(message);
 ### Υπάρχουν περιορισμοί στο μέγεθος των ενσωματωμένων εικόνων;
 
 Το μέγεθος των ενσωματωμένων εικόνων μπορεί να επηρεάσει την παράδοση των email και την εμπειρία του παραλήπτη. Συνιστάται να βελτιστοποιήσετε τις εικόνες για email για να αποφύγετε μεγάλα μεγέθη αρχείων.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

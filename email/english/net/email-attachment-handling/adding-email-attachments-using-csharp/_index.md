@@ -3,10 +3,16 @@ title: Adding Email Attachments using C#
 linktitle: Adding Email Attachments using C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to add email attachments using C# and Aspose.Email for .NET. Step-by-step guide with code examples for seamless integration.
-type: docs
 weight: 11
 url: /net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adding Email Attachments using C#
+
 
 ## Introduction to Email Attachments and Aspose.Email for .NET
 
@@ -92,3 +98,10 @@ Absolutely! You can set various properties of the MailMessage class, such as Bod
 ### Is there a free trial version of Aspose.Email for .NET available?
 
 Yes, you can download a free trial version of Aspose.Email for .NET to explore its features before making a purchase.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

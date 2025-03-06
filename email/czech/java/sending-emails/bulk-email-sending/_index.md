@@ -3,10 +3,16 @@ title: Hromadné odesílání e-mailů pomocí Aspose.Email
 linktitle: Hromadné odesílání e-mailů pomocí Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Naučte se efektivně odesílat hromadné e-maily pomocí Aspose.Email for Java. Podrobný průvodce s příklady kódu pro e-mailový marketing a komunikaci.
-type: docs
 weight: 14
 url: /cs/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hromadné odesílání e-mailů pomocí Aspose.Email
+
 
 ## Úvod
 
@@ -132,3 +138,9 @@ této příručce jste se naučili odesílat hromadné e-maily pomocí Aspose.Em
 
 ### Jak mohu zpracovat vrácené nebo neúspěšné e-maily při hromadném odesílání?
    Aspose.Email poskytuje funkce pro zpracování oznámení o stavu doručení (DSN) a sledování stavu doručení e-mailu. Můžete implementovat logiku pro zpracování vrácených nebo neúspěšných e-mailů podle potřeby.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

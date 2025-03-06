@@ -3,10 +3,16 @@ title: Menggunakan Aspose.Email untuk Lampiran Dokumen
 linktitle: Menggunakan Aspose.Email untuk Lampiran Dokumen
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara mengelola lampiran dokumen di email Java menggunakan Aspose.Email untuk Java. Buat, kirim, dan ekstrak lampiran dokumen dengan mudah.
-type: docs
 weight: 16
 url: /id/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menggunakan Aspose.Email untuk Lampiran Dokumen
+
 
 ## Pengantar Menggunakan Aspose.Email untuk Lampiran Dokumen di Java
 
@@ -104,3 +110,9 @@ Ya, Aspose.Email untuk Java mendukung berbagai jenis lampiran, termasuk dokumen 
 ### Bagaimana cara menangani lampiran dokumen berukuran besar?
 
 Jika Anda perlu menangani lampiran dokumen berukuran besar, pertimbangkan untuk menggunakan teknik streaming untuk menghindari memuat seluruh lampiran ke dalam memori. Aspose.Email menyediakan opsi untuk streaming lampiran, memungkinkan Anda memprosesnya secara efisien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

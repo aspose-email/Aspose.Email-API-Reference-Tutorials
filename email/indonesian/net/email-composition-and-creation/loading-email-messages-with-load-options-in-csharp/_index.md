@@ -3,10 +3,16 @@ title: Memuat Pesan Email dengan Opsi Muat di C#
 linktitle: Memuat Pesan Email dengan Opsi Muat di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara memuat pesan email dengan Aspose.Email untuk .NET di C#. Jelajahi panduan langkah demi langkah dan contoh kode sumber untuk penanganan email yang efektif.
-type: docs
 weight: 11
 url: /id/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Memuat Pesan Email dengan Opsi Muat di C#
+
 
 ## Pengantar Aspose.Email untuk .NET
 
@@ -167,3 +173,9 @@ Sangat! Aspose.Email untuk .NET mendukung pemuatan dan penanganan email yang dil
 ### Apa yang harus saya lakukan jika saya mengalami kesalahan saat memuat email?
 
 Jika Anda mengalami kesalahan saat memuat email, pastikan untuk menggabungkan kode pemuatan Anda dalam blok coba-tangkap untuk menangani pengecualian. Ini akan membantu Anda mengidentifikasi dan mengatasi masalah apa pun yang muncul.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

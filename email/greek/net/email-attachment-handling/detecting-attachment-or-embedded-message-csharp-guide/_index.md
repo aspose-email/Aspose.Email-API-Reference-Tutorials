@@ -3,10 +3,16 @@ title: Ανίχνευση συνημμένου ή ενσωματωμένου μ�
 linktitle: Ανίχνευση συνημμένου ή ενσωματωμένου μηνύματος - Οδηγός C#
 second_title: Aspose.Email .NET Email Processing API
 description: Κύριο συνημμένο email και ενσωματωμένος εντοπισμός μηνυμάτων σε C# χρησιμοποιώντας το Aspose.Email για .NET. Βελτιώστε τον χειρισμό των email σας με τον ολοκληρωμένο οδηγό μας.
-type: docs
 weight: 13
 url: /el/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ανίχνευση συνημμένου ή ενσωματωμένου μηνύματος - Οδηγός C#
+
 
 ## Εισαγωγή στην ανίχνευση συνημμένου ή ενσωματωμένου μηνύματος - Οδηγός C#
 
@@ -106,3 +112,9 @@ foreach (AlternateView alternateView in message.AlternateViews)
 ### Μπορώ να προσαρμόσω την επεξεργασία των συνημμένων και των ενσωματωμένων μηνυμάτων;
 
 Οπωσδήποτε, μπορείτε να προσαρμόσετε την επεξεργασία των συνημμένων και των ενσωματωμένων μηνυμάτων για να καλύψετε τις ανάγκες της συγκεκριμένης εφαρμογής σας. Το Aspose.Email παρέχει ευέλικτα API για αυτόν τον σκοπό.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

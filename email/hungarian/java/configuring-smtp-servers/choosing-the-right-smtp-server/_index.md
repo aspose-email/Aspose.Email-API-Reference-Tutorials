@@ -3,10 +3,16 @@ title: A megfelelő SMTP-kiszolgáló kiválasztása az Aspose.Email számára
 linktitle: A megfelelő SMTP-kiszolgáló kiválasztása az Aspose.Email számára
 second_title: Aspose.Email Java Email Management API
 description: Optimalizálja e-mail funkcióit az Aspose.Email for Java segítségével. Ismerje meg, hogyan választhatja ki a megfelelő SMTP-kiszolgálót, és hogyan küldhet könnyedén e-maileket.
-type: docs
 weight: 10
 url: /hu/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# A megfelelő SMTP-kiszolgáló kiválasztása az Aspose.Email számára
+
 
 ## Bevezetés
 
@@ -100,3 +106,9 @@ Igen, az Aspose.Email for Java beállítható úgy, hogy több SMTP-kiszolgáló
 ### Mi a teendő, ha az SMTP-kiszolgálóm OAuth2-hitelesítést igényel?
 
 A szükséges OAuth2-jogkivonatok és beállítások megadásával az Aspose.Email for Java segítségével konfigurálhatja az OAuth2-hitelesítést.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

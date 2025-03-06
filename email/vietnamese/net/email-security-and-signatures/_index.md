@@ -3,10 +3,16 @@ title: Bảo mật và chữ ký email
 linktitle: Bảo mật và chữ ký email
 second_title: API xử lý email Aspose.Email .NET
 description: Triển khai các biện pháp bảo mật email mạnh mẽ và chữ ký được cá nhân hóa với hướng dẫn Aspose.Email for .NET. Đảm bảo giao tiếp an toàn và xây dựng thương hiệu chuyên nghiệp.
-type: docs
 weight: 19
 url: /vi/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo mật và chữ ký email
+
 
 ## Giới thiệu
 
@@ -25,3 +31,9 @@ Hướng dẫn về chữ ký email tập trung vào việc cho phép các nhà 
 
 ### [Ký email bằng DKIM bằng mã C#](./signing-emails-with-dkim-using-csharp-code/)
 Tìm hiểu cách bảo mật email bằng DKIM bằng C# & Aspose.Email for .NET. Hướng dẫn từng bước với mã nguồn. Tăng cường độ tin cậy và tính xác thực của email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

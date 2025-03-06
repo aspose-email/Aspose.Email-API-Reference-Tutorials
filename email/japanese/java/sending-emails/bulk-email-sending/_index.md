@@ -3,10 +3,16 @@ title: Aspose.Email を使用した一括メール送信
 linktitle: Aspose.Email を使用した一括メール送信
 second_title: Aspose.Email Java 電子メール管理 API
 description: Aspose.Email for Java を使用して大量の電子メールを効率的に送信する方法を学びます。電子メール マーケティングとコミュニケーションのためのコード例を含むステップバイステップ ガイド。
-type: docs
 weight: 14
 url: /ja/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email を使用した一括メール送信
+
 
 ## 導入
 
@@ -132,3 +138,9 @@ public class BulkEmailSender {
 
 ### 一括送信でバウンスまたは失敗したメールを処理するにはどうすればよいですか?
    Aspose.Email は、配信ステータス通知 (DSN) を処理し、電子メール配信ステータスを追跡するための機能を提供します。必要に応じて、返送されたメールや失敗したメールを処理するロジックを実装できます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

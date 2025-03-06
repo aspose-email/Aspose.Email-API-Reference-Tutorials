@@ -3,10 +3,16 @@ title: Définition du statut de participant pour les participants à un rendez-v
 linktitle: Définition du statut de participant pour les participants à un rendez-vous avec C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment gérer le statut des participants aux rendez-vous à l'aide de C# et Aspose.Email pour .NET. Guide étape par étape avec le code source.
-type: docs
 weight: 16
 url: /fr/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Définition du statut de participant pour les participants à un rendez-vous avec C#
+
 
 ## Introduction à Aspose.Email pour .NET
 
@@ -109,3 +115,9 @@ Oui, vous pouvez facilement intégrer les fonctionnalités décrites dans ce gui
 ### Où puis-je trouver plus de documentation et de ressources ?
 
  Pour une documentation et des ressources plus détaillées, reportez-vous à la documentation Aspose.Email pour .NET :[Aspose.Email pour .NET Documentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

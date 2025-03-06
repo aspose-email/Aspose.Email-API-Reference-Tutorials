@@ -3,10 +3,16 @@ title: Extrahera och analysera e-postrubriker med Aspose.Email
 linktitle: Extrahera och analysera e-postrubriker med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Lås upp kraften i e-posthuvudanalys med Aspose.Email för Java. Lär dig hur du extraherar och analyserar e-postrubriker för förbättrad e-postspårning och säkerhet.
-type: docs
 weight: 12
 url: /sv/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahera och analysera e-postrubriker med Aspose.Email
+
 
 ## Introduktion till att extrahera och analysera e-postrubriker med Aspose.Email
 
@@ -107,3 +113,9 @@ Att analysera e-postrubriker är avgörande av olika anledningar, såsom e-posts
 ### Kan jag automatisera e-posthuvudanalys med Aspose.Email?
 
 Ja, du kan automatisera e-posthuvudanalys med Aspose.Email genom att integrera den i dina Java-applikationer. Biblioteket erbjuder bekväma metoder för att arbeta med e-posthuvuden.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

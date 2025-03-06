@@ -3,10 +3,16 @@ title: Hantera stora bilagor i Aspose.Email
 linktitle: Hantera stora bilagor i Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Hantera stora e-postbilagor effektivt med Aspose.Email för Java. Steg-för-steg-guide och källkod för strömlinjeformad hantering av bilagor i Java-applikationer.
-type: docs
 weight: 11
 url: /sv/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hantera stora bilagor i Aspose.Email
+
 
 ## Introduktion till hantering av stora bilagor i Aspose.Email för Java
 
@@ -145,3 +151,9 @@ Storleksbegränsningarna för e-postbilagor kan variera beroende på e-postlever
 ### Kan jag komprimera bilagor för att minska storleken?
 
 Ja, du kan komprimera bilagor för att minska storleken innan du skickar dem. Aspose.Email tillhandahåller funktioner för att komprimera och dekomprimera bilagor programmatiskt. Du kan implementera detta för att optimera storleken på dina e-postbilagor.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

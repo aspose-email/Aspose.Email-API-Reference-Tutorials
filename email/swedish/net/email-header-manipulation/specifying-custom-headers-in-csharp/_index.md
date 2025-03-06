@@ -3,10 +3,16 @@ title: Ange anpassade rubriker i C#
 linktitle: Ange anpassade rubriker i C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du anger anpassade rubriker i C# med Aspose.Email för .NET för att förbättra e-postkommunikation. Denna steg-för-steg-guide ger insikter i hur du skapar personliga e-postrubriker för förbättrat engagemang.
-type: docs
 weight: 16
 url: /sv/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ange anpassade rubriker i C#
+
 
 
 ## Introduktion
@@ -97,3 +103,9 @@ Absolut, Aspose.Email för .NET tillgodoser ett brett utbud av e-postmanipulerin
 I den dynamiska världen av e-postkommunikation kan anpassade rubriker vara en spelomvandlare, vilket möjliggör skräddarsydda och effektiva interaktioner. Med Aspose.Email för .NET blir processen att specificera anpassade rubriker i C# strömlinjeformad och effektiv. Genom att följa stegen som beskrivs i den här guiden kan du utnyttja kraften i anpassade rubriker för att förbättra kategorisering, anpassning och engagemang i din e-postkommunikation.
 
 Om du är redo att ta din e-postkommunikation till nästa nivå, dyk in i världen av anpassade rubriker med Aspose.Email för .NET. Genom att behärska den här tekniken kan du leverera e-postmeddelanden som resonerar hos mottagarna och ger en sömlös och engagerande upplevelse.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

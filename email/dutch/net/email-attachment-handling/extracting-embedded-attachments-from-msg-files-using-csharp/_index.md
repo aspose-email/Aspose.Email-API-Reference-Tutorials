@@ -3,10 +3,16 @@ title: Ingesloten bijlagen uit MSG-bestanden extraheren met C#
 linktitle: Ingesloten bijlagen uit MSG-bestanden extraheren met C#
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Leer hoe u ingesloten bijlagen uit MSG-bestanden kunt extraheren met C# en Aspose.Email voor .NET. Een uitgebreide handleiding met broncodevoorbeelden.
-type: docs
 weight: 10
 url: /nl/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ingesloten bijlagen uit MSG-bestanden extraheren met C#
+
 
 ## Inleiding tot ingebedde bijlagen
 
@@ -103,3 +109,9 @@ Absoluut! Aspose.Email voor .NET kan worden gebruikt in zowel desktop- als webap
 ### Waar kan ik meer voorbeelden en documentatie vinden?
 
  Gedetailleerde voorbeelden en documentatie over het gebruik van Aspose.Email voor .NET vindt u in de[documentatie](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

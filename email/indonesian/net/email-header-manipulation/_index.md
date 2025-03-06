@@ -3,10 +3,16 @@ title: Manipulasi Header Email
 linktitle: Manipulasi Header Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Memanipulasi header email secara efisien menggunakan tutorial Aspose.Email untuk .NET. Pelajari cara mengekstrak, memodifikasi, dan mempersonalisasi header untuk meningkatkan komunikasi.
-type: docs
 weight: 14
 url: /id/net/email-header-manipulation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Manipulasi Header Email
+
 
 ## Perkenalan
 
@@ -33,3 +39,9 @@ Pelajari cara menyesuaikan pesanan MHTML menggunakan C# & Aspose.Email untuk .NE
 Pelajari cara mengekstrak header email di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk analisis email yang efisien. 
 ### [Menentukan Header Kustom di C#](./specifying-custom-headers-in-csharp/)
 Pelajari cara menentukan header khusus di C# menggunakan Aspose.Email untuk .NET guna meningkatkan komunikasi email. Panduan langkah demi langkah ini memberikan wawasan tentang cara membuat header email yang dipersonalisasi untuk meningkatkan interaksi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

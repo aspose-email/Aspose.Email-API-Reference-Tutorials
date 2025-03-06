@@ -3,10 +3,16 @@ title: 使用 C# 代码保留原始边界
 linktitle: 使用 C# 代码保留原始边界
 second_title: Aspose.Email .NET 电子邮件处理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 保留电子邮件附件的原始边界。带有源代码的分步指南。
-type: docs
 weight: 13
 url: /zh/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 代码保留原始边界
+
 
 ## 保护原始边界简介
 
@@ -107,3 +113,9 @@ message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ### 在哪里可以找到有关 Aspose.Email for .NET 的更多信息？
 
 您可以在以下位置找到全面的文档和示例[Aspose.Email 文档](https://reference.aspose.com/email/net/)页。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

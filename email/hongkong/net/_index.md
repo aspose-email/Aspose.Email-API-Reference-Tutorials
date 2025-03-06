@@ -1,12 +1,17 @@
 ---
 title: 使用 Aspose.Email 教學撰寫、轉換和處理電子郵件
 linktitle: Aspose.Email for .NET 教學課程
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 使用 Aspose.Email for .NET 教學優化電子郵件功能。了解高階電子郵件管理的撰寫、轉換和處理。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 教學撰寫、轉換和處理電子郵件
+
 
 ## 介紹
 
@@ -45,3 +50,9 @@ Aspose.Email for .NET 教學課程為開發人員提供了全面的資源來增�
 使用 Aspose.Email for .NET 教學簡化電子郵件文件儲存和檢索。了解以程式方式管理和存取電子郵件和附件。
 ### [電子郵件安全和簽名](./email-security-and-signatures/)
 使用 Aspose.Email for .NET 教學實作強大的電子郵件安全措施和個人化簽章。確保安全的溝通和專業的品牌塑造。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Οδηγός C# - Αποθήκευση email ως αρχείο MHTML
 linktitle: Οδηγός C# - Αποθήκευση email ως αρχείο MHTML
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να αποθηκεύετε μηνύματα ηλεκτρονικού ταχυδρομείου ως αρχεία MHTML χρησιμοποιώντας C# και Aspose.Email για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα και συχνές ερωτήσεις.
-type: docs
 weight: 16
 url: /el/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Οδηγός C# - Αποθήκευση email ως αρχείο MHTML
+
 
 ## Εισαγωγή στην αποθήκευση email ως αρχείου MHTML
 
@@ -105,3 +111,9 @@ foreach (var attachment in message.Attachments)
 ### Υπάρχουν χρεώσεις αδειοδότησης που σχετίζονται με τη χρήση του Aspose.Email για .NET;
 
 Ναι, το Aspose.Email είναι μια εμπορική βιβλιοθήκη. Μπορείτε να βρείτε αναλυτικές πληροφορίες σχετικά με την αδειοδότηση και την τιμολόγηση στο[Ιστότοπος Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

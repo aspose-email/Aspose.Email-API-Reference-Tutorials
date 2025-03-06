@@ -3,10 +3,16 @@ title: Extraindo objetos incorporados - Tutorial C#
 linktitle: Extraindo objetos incorporados - Tutorial C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda a extrair objetos incorporados de mensagens de e-mail usando Aspose.Email for .NET. Guia passo a passo com exemplos de código.
-type: docs
 weight: 15
 url: /pt/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraindo objetos incorporados - Tutorial C#
+
 
 ## Introdução à extração de objetos incorporados - Tutorial C#
 
@@ -105,3 +111,9 @@ Absolutamente! Aspose.Email for .NET é compatível com aplicativos da web ASP.N
 ### Onde posso encontrar mais documentação sobre Aspose.Email?
 
  Você pode encontrar documentação detalhada e exemplos de código para Aspose.Email em[Referência da API Aspose.Email para .NET](https://reference.aspose.com/email/net/) página.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

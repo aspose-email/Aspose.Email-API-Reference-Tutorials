@@ -3,10 +3,16 @@ title: 이메일 알림 및 추적을 통해 커뮤니케이션 강화
 linktitle: 이메일 알림 및 추적
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET 튜토리얼용 Aspose.Email을 사용하여 이메일 알림 및 추적 기능을 구현합니다. 알림을 자동화하고 이메일 수신자 상호 작용에 대한 통찰력을 얻으세요.
-type: docs
 weight: 16
 url: /ko/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 이메일 알림 및 추적을 통해 커뮤니케이션 강화
+
 
 ## 소개
 
@@ -27,3 +33,9 @@ url: /ko/net/email-notification-and-tracking/
 C# 코드를 사용하여 .NET용 Aspose.Email을 사용하여 이메일 읽음 확인을 요청하고 통신 추적을 향상시키는 방법을 알아보세요.
 ### [C# 코드를 사용하여 이메일 문서 변환 진행 상황 추적](./tracking-email-document-conversion-progress-with-csharp-code/)
 .NET용 Aspose.Email을 사용하여 이메일 알림 및 추적을 구현하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다. 오늘 이메일 커뮤니케이션을 강화해보세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

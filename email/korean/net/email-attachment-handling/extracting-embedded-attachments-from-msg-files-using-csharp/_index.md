@@ -3,10 +3,16 @@ title: C#을 사용하여 MSG 파일에서 포함된 첨부 파일 추출
 linktitle: C#을 사용하여 MSG 파일에서 포함된 첨부 파일 추출
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 C# 및 Aspose.Email을 사용하여 MSG 파일에서 포함된 첨부 파일을 추출하는 방법을 알아보세요. 소스 코드 예제가 포함된 종합 가이드입니다.
-type: docs
 weight: 10
 url: /ko/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#을 사용하여 MSG 파일에서 포함된 첨부 파일 추출
+
 
 ## 내장된 첨부 파일 소개
 
@@ -103,3 +109,9 @@ foreach (var attachment in embeddedMsg.Attachments)
 ### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
 
  .NET용 Aspose.Email 사용에 대한 자세한 예제와 문서는 다음에서 찾을 수 있습니다.[선적 서류 비치](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

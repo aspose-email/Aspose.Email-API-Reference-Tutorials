@@ -3,10 +3,16 @@ title: Använda Aspose.Email för dokumentbilagor
 linktitle: Använda Aspose.Email för dokumentbilagor
 second_title: Aspose.Email Java Email Management API
 description: Lär dig hur du hanterar dokumentbilagor i Java-e-postmeddelanden med Aspose.Email för Java. Skapa, skicka och extrahera dokumentbilagor med lätthet.
-type: docs
 weight: 16
 url: /sv/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Använda Aspose.Email för dokumentbilagor
+
 
 ## Introduktion till att använda Aspose.Email för dokumentbilagor i Java
 
@@ -104,3 +110,9 @@ Ja, Aspose.Email för Java stöder ett brett utbud av bilagatyper, inklusive Wor
 ### Hur hanterar jag stora dokumentbilagor?
 
 Om du behöver hantera stora dokumentbilagor, överväg att använda streamingtekniker för att undvika att ladda hela bilagan i minnet. Aspose.Email ger alternativ för att streama bilagor, så att du kan bearbeta dem effektivt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

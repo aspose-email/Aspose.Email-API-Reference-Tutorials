@@ -3,10 +3,16 @@ title: Zachování původních hranic pomocí kódu C#
 linktitle: Zachování původních hranic pomocí kódu C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se, jak zachovat původní hranice e-mailových příloh pomocí C# a Aspose.Email for .NET. Průvodce krok za krokem se zdrojovým kódem.
-type: docs
 weight: 13
 url: /cs/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zachování původních hranic pomocí kódu C#
+
 
 ## Úvod do zachování původních hranic
 
@@ -107,3 +113,9 @@ Knihovnu Aspose.Email můžete použít k načítání a manipulaci s obrázkov�
 ### Kde najdu další informace o Aspose.Email pro .NET?
 
  Kompletní dokumentaci a příklady naleznete na[Dokumentace Aspose.Email](https://reference.aspose.com/email/net/) strana.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

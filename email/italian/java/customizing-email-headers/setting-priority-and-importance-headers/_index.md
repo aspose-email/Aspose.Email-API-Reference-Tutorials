@@ -3,10 +3,16 @@ title: Impostazione delle intestazioni di priorità e importanza con Aspose.Emai
 linktitle: Impostazione delle intestazioni di priorità e importanza con Aspose.Email
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Aumenta l'impatto della tua posta elettronica impostando intestazioni di priorità e importanza con Aspose.Email per Java. Scopri come in questa guida passo passo.
-type: docs
 weight: 14
 url: /it/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Impostazione delle intestazioni di priorità e importanza con Aspose.Email
+
 
 ## introduzione
 
@@ -94,3 +100,9 @@ Sebbene sia possibile impostare intestazioni di importanza, tieni presente che l
 ### Come posso gestire gli allegati e-mail con Aspose.Email?
 
  La gestione degli allegati e-mail con Aspose.Email è semplice. Puoi usare il`Attachment` classe per aggiungere allegati ai tuoi messaggi di posta elettronica. Per una guida dettagliata, fare riferimento alla documentazione di Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

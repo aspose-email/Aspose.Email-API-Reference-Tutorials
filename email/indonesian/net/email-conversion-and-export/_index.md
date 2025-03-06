@@ -3,10 +3,16 @@ title: Menjelajahi Konversi dan Ekspor Email
 linktitle: Konversi dan Ekspor Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Master manajemen data email menggunakan Aspose.Email untuk tutorial .NET. Konversi, ekspor email, pertahankan integritas, tangani lampiran. Tinggikan dengan contoh.
-type: docs
 weight: 11
 url: /id/net/email-conversion-and-export/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menjelajahi Konversi dan Ekspor Email
+
 
 ## Perkenalan
 
@@ -39,3 +45,9 @@ Pelajari cara menerapkan penanganan draf email di C# menggunakan Aspose.Email un
 Pelajari cara membuat file email HTML menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk penyesuaian email yang lancar.
 ### [Menghasilkan File OFT dari Pesan - Tutorial C#](./generating-oft-files-from-messages-csharp-tutorial/)
 Pelajari cara membuat file OFT dari pesan menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk pembuatan template email yang efisien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

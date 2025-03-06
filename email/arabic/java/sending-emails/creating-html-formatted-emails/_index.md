@@ -3,10 +3,16 @@ title: إنشاء رسائل بريد إلكتروني بتنسيق HTML باس�
 linktitle: إنشاء رسائل بريد إلكتروني بتنسيق HTML باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: تعلم كيفية إنشاء رسائل بريد إلكتروني مذهلة بتنسيق HTML باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية للتواصل الفعال عبر البريد الإلكتروني.
-type: docs
 weight: 11
 url: /ar/java/sending-emails/creating-html-formatted-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء رسائل بريد إلكتروني بتنسيق HTML باستخدام Aspose.Email
+
 
 ## مقدمة
 
@@ -121,3 +127,10 @@ public class HTMLFormattedEmail {
 ### أين يمكنني العثور على موارد ووثائق إضافية لـ Aspose.Email لـ Java؟
  يمكنك العثور على وثائق شاملة وبرامج تعليمية وأمثلة على صفحة وثائق Aspose.Email for Java API:[Aspose.Email لتوثيق Java API](https://reference.aspose.com/email/java/)
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

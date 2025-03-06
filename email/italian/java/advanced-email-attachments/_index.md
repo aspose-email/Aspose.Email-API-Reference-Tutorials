@@ -3,10 +3,16 @@ title: Allegati e-mail avanzati con Aspose.Email per Java
 linktitle: Allegati e-mail avanzati con Aspose.Email per Java
 second_title: Aspose.Email API di gestione della posta elettronica Java
 description: Padroneggia le tecniche avanzate di allegato e-mail con Aspose.Email per Java. Esplora i tutorial per gestire gli allegati in modo efficiente.
-type: docs
 weight: 13
 url: /it/java/advanced-email-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Allegati e-mail avanzati con Aspose.Email per Java
+
 
 Gli allegati e-mail svolgono un ruolo fondamentale nella comunicazione moderna, consentendo agli utenti di condividere documenti, immagini e file senza problemi. Aspose.Email per Java consente agli sviluppatori di assumere il controllo degli allegati di posta elettronica e implementare in modo efficiente tecniche avanzate.
 
@@ -35,3 +41,9 @@ Scopri come estrarre gli allegati e-mail senza sforzo utilizzando Aspose.Email p
 Scopri come incorporare immagini come allegati in Aspose.Email per Java. Migliora la tua comunicazione e-mail con contenuti visivamente accattivanti.
 ### [Utilizzo di Aspose.Email per gli allegati ai documenti](./using-aspose-email-for-document-attachments/)
 Scopri come gestire gli allegati dei documenti nelle e-mail Java utilizzando Aspose.Email per Java. Crea, invia ed estrai allegati di documenti con facilità.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

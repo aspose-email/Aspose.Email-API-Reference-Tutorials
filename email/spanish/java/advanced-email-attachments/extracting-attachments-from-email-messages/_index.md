@@ -3,10 +3,16 @@ title: Extracción de archivos adjuntos de mensajes de correo electrónico en As
 linktitle: Extracción de archivos adjuntos de mensajes de correo electrónico en Aspose.Email
 second_title: Aspose.Email API de gestión de correo electrónico Java
 description: Aprenda a extraer archivos adjuntos de correo electrónico sin esfuerzo utilizando Aspose.Email para Java. Guía paso a paso para desarrolladores de Java.
-type: docs
 weight: 13
 url: /es/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracción de archivos adjuntos de mensajes de correo electrónico en Aspose.Email
+
 
 ## Introducción a Aspose.Email para Java
 
@@ -83,3 +89,9 @@ Aspose.Email para Java admite varios formatos de correo electrónico, incluidos 
 ### ¿Dónde puedo obtener soporte para Aspose.Email para Java?
 
 Para cualquier asistencia técnica o consulta, puede comunicarse con el equipo de soporte de Aspose a través de sus canales de soporte.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

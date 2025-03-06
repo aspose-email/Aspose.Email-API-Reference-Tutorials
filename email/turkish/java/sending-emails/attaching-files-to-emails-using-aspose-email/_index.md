@@ -3,10 +3,16 @@ title: Aspose.Email Kullanarak E-postalara Dosya Ekleme
 linktitle: Aspose.Email Kullanarak E-postalara Dosya Ekleme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java kullanarak e-posta mesajlarına dosya eklemeyi öğrenin. Bu adım adım kılavuzu kullanarak e-postalarınızı kolaylıkla geliştirin.
-type: docs
 weight: 12
 url: /tr/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email Kullanarak E-postalara Dosya Ekleme
+
 ## giriiş
 
 E-posta iletişimi dünyasında ek gönderme yeteneği çok önemlidir. İster önemli belgeler, resimler veya başka türde bir dosya gönderiyor olun, süreç basit ve güvenilir olmalıdır. Aspose.Email for Java, e-posta mesajlarına dosya eklemek için güçlü araçlar sağlayarak bu süreci basitleştirir.
@@ -134,3 +140,9 @@ Başka sorularınız varsa veya yardıma ihtiyacınız varsa lütfen bizimle ile
 
 ### E-posta ekleri için boyut sınırlamaları var mı?
    E-posta sunucuları ve istemcilerinde ek boyutu sınırlamaları olabilir. E-posta gönderme veya almayla ilgili sorunları önlemek için eklerinizin kabul edilebilir boyut sınırları dahilinde olduğundan emin olun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Berika e-postmetadata genom rubriker med Aspose.Email
 linktitle: Berika e-postmetadata genom rubriker med Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Förbättra e-postmetadata med Aspose.Email för Java. Lär dig hur du berikar e-postrubriker för förbättrad spårning och anpassning med Aspose.Email.
-type: docs
 weight: 18
 url: /sv/java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Berika e-postmetadata genom rubriker med Aspose.Email
+
 
 ## Introduktion till att berika e-postmetadata genom rubriker med Aspose.Email
 
@@ -107,3 +113,9 @@ Ja, Aspose.Email stöder flera programmeringsspråk, inklusive Java, .NET och me
 ### Var kan jag hitta fler resurser på Aspose.Email för Java?
 
  Du kan utforska dokumentationen på[här](https://reference.aspose.com/email/java/) för omfattande resurser och exempel.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

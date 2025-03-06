@@ -3,10 +3,16 @@ title: Zabezpečení e-mailu a podpisy
 linktitle: Zabezpečení e-mailu a podpisy
 second_title: Aspose.Email .NET Email Processing API
 description: Implementujte robustní e-mailová bezpečnostní opatření a personalizované podpisy pomocí výukových programů Aspose.Email for .NET. Zajistěte bezpečnou komunikaci a profesionální branding.
-type: docs
 weight: 19
 url: /cs/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zabezpečení e-mailu a podpisy
+
 
 ## Úvod
 
@@ -25,3 +31,9 @@ Výukové programy pro e-mailové podpisy se zaměřují na to, aby umožnili v�
 
 ### [Podepisování e-mailů pomocí DKIM pomocí kódu C#](./signing-emails-with-dkim-using-csharp-code/)
 Naučte se zabezpečit e-maily pomocí DKIM pomocí C# & Aspose.Email pro .NET. Průvodce krok za krokem se zdrojovým kódem. Zvyšte důvěryhodnost a autenticitu e-mailů.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

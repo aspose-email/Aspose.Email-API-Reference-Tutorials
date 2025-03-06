@@ -3,10 +3,16 @@ title: 인라인 첨부와 일반 첨부 차별화 - C# 접근 방식
 linktitle: 인라인 첨부와 일반 첨부 차별화 - C# 접근 방식
 second_title: Aspose.Email .NET 이메일 처리 API
 description: .NET용 Aspose.Email을 사용하여 인라인 첨부 파일과 일반 이메일 첨부 파일을 구별하는 방법을 알아보세요. 코드 예제가 포함된 종합 가이드입니다.
-type: docs
 weight: 17
 url: /ko/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 인라인 첨부와 일반 첨부 차별화 - C# 접근 방식
+
 
 ## 인라인 첨부와 일반 첨부 차별화 소개 - C# 접근 방식
 
@@ -107,3 +113,9 @@ Aspose.Email 라이브러리에서 제공하는 적절한 속성을 사용하여
 ### 일반 첨부 파일을 디스크의 특정 위치에 저장할 수 있나요?
 
  전적으로! 다음을 활용하여 일반 첨부 파일을 디스크의 특정 위치에 저장할 수 있습니다.`Save` 첨부 객체의 메서드를 사용하고 원하는 파일 경로를 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

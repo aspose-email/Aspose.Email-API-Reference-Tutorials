@@ -3,10 +3,16 @@ title: Definindo cabeçalhos de prioridade e importância com Aspose.Email
 linktitle: Definindo cabeçalhos de prioridade e importância com Aspose.Email
 second_title: API de gerenciamento de e-mail Java Aspose.Email
 description: Aumente o impacto do seu e-mail definindo cabeçalhos de prioridade e importância com Aspose.Email para Java. Aprenda como neste guia passo a passo.
-type: docs
 weight: 14
 url: /pt/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Definindo cabeçalhos de prioridade e importância com Aspose.Email
+
 
 ## Introdução
 
@@ -94,3 +100,9 @@ Embora você possa definir cabeçalhos de importância, lembre-se de que o impac
 ### Como lidar com anexos de e-mail com Aspose.Email?
 
  Lidar com anexos de e-mail com Aspose.Email é simples. Você pode usar o`Attachment` class para adicionar anexos às suas mensagens de e-mail. Para obter um guia detalhado, consulte a documentação do Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

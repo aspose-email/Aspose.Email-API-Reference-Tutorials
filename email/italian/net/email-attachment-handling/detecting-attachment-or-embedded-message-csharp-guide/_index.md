@@ -3,10 +3,16 @@ title: Rilevamento di allegati o messaggi incorporati - Guida C#
 linktitle: Rilevamento di allegati o messaggi incorporati - Guida C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Padroneggiare gli allegati e-mail e il rilevamento dei messaggi incorporati in C# utilizzando Aspose.Email per .NET. Migliora la gestione della tua posta elettronica con la nostra guida completa.
-type: docs
 weight: 13
 url: /it/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rilevamento di allegati o messaggi incorporati - Guida C#
+
 
 ## Introduzione al rilevamento di allegati o messaggi incorporati - Guida C#
 
@@ -106,3 +112,9 @@ Sì, Aspose.Email è una libreria affidabile e ampiamente utilizzata per l'elabo
 ### Posso personalizzare l'elaborazione degli allegati e dei messaggi incorporati?
 
 Assolutamente sì, puoi personalizzare l'elaborazione degli allegati e dei messaggi incorporati per soddisfare le esigenze specifiche della tua applicazione. Aspose.Email fornisce API flessibili per questo scopo.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

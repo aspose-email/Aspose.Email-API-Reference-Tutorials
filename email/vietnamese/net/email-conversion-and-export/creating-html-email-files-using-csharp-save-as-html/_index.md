@@ -3,10 +3,16 @@ title: Tạo tệp email HTML bằng C# - Lưu dưới dạng HTML
 linktitle: Tạo tệp email HTML bằng C# - Lưu dưới dạng HTML
 second_title: API xử lý email Aspose.Email .NET
 description: Tìm hiểu cách tạo tệp email HTML bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn để tùy chỉnh email liền mạch.
-type: docs
 weight: 18
 url: /vi/net/email-conversion-and-export/creating-html-email-files-using-csharp-save-as-html/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo tệp email HTML bằng C# - Lưu dưới dạng HTML
+
 
 ## Giới thiệu về tạo tệp email HTML
 
@@ -113,3 +119,9 @@ Có, Aspose.Email hỗ trợ .NET Core, cho phép bạn xây dựng các ứng d
 ### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
 
  Bạn có thể khám phá các ví dụ toàn diện và tài liệu chi tiết về[Tài liệu Aspose.Email](https://reference.aspose.com/email/net) trang.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

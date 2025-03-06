@@ -3,10 +3,16 @@ title: Xử lý và phân tích email hiệu quả với Aspose.Email for .NET
 linktitle: Xử lý và phân tích email
 second_title: API xử lý email Aspose.Email .NET
 description: Tối ưu hóa việc quản lý email và ra quyết định trong ứng dụng của bạn với các hướng dẫn của Aspose.Email for .NET về xử lý email hợp lý và phân tích sâu sắc. Tìm hiểu cách truy xuất, sắp xếp và phân tích nội dung email theo chương trình. Khám phá các ví dụ thực tế để tăng cường giao tiếp và chiến lược dựa trên dữ liệu.
-type: docs
 weight: 13
 url: /vi/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Xử lý và phân tích email hiệu quả với Aspose.Email for .NET
+
 
 ## Giới thiệu
 
@@ -43,3 +49,9 @@ Tìm hiểu cách truy xuất Thông báo trạng thái gửi email bằng C# v�
 Tìm hiểu cách dễ dàng chuyển đổi nội dung email HTML thành văn bản thuần túy bằng Aspose.Email for .NET. Hướng dẫn chi tiết & mã. Khám phá ngay bây giờ!
 ### [Bảo tồn ranh giới ban đầu bằng mã C#](./preserving-original-boundaries-using-csharp-code/)
 Tìm hiểu cách duy trì ranh giới ban đầu của tệp đính kèm email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với mã nguồn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

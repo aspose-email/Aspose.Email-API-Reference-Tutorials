@@ -3,10 +3,16 @@ title: 使用 C# 從電子郵件中提取嵌入對象
 linktitle: 使用 C# 從電子郵件中提取嵌入對象
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 C# 和 Aspose.Email for .NET 從電子郵件中擷取嵌入物件。帶有程式碼範例的分步指南。
-type: docs
 weight: 16
 url: /zh-hant/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 C# 從電子郵件中提取嵌入對象
+
 
 ## 電子郵件中嵌入物件簡介
 
@@ -113,3 +119,9 @@ namespace EmbeddedObjectExtractor
 ### 在哪裡可以找到更多使用 Aspose.Email for .NET 的範例？
 
 您可以在以下位置找到更多程式碼範例和教程[API參考](https://reference.aspose.com/email/net/). 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

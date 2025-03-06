@@ -3,10 +3,16 @@ title: Adding HTML Body to Emails - C# Example
 linktitle: Adding HTML Body to Emails - C# Example
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to enhance email content using HTML in Aspose.Email for .NET. Step-by-step guide with C# examples. Elevate your email communication!
-type: docs
 weight: 18
 url: /net/email-composition-and-creation/adding-html-body-to-emails-csharp-example/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Adding HTML Body to Emails - C# Example
+
 
 Email communication has become an integral part of modern business and personal interactions. While plain text emails serve their purpose, incorporating HTML content into emails can greatly enhance their visual appeal and functionality. In this article, we will provide you with a comprehensive step-by-step guide, complete with source code examples in C#, on how to add an HTML body to emails using Aspose.Email for .NET.
 
@@ -80,3 +86,10 @@ Incorporating HTML content into your email messages using Aspose.Email for .NET 
 
 ### Where can I find comprehensive documentation for Aspose.Email for .NET?
    You can visit the Aspose documentation at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

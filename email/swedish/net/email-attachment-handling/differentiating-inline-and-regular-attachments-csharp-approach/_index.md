@@ -3,10 +3,16 @@ title: Att skilja inline och vanliga bilagor åt - C#-metoden
 linktitle: Att skilja inline och vanliga bilagor åt - C#-metoden
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du skiljer mellan inline och vanliga e-postbilagor med Aspose.Email för .NET. Omfattande guide med kodexempel.
-type: docs
 weight: 17
 url: /sv/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Att skilja inline och vanliga bilagor åt - C#-metoden
+
 
 ## Introduktion till att skilja inline och vanliga bilagor - C#-metoden
 
@@ -107,3 +113,9 @@ Du kan komma åt innehållet i en inline-bilaga genom att använda lämpliga ege
 ### Kan jag spara vanliga bilagor till en specifik plats på disken?
 
  Absolut! Du kan spara vanliga bilagor till en specifik plats på disken genom att använda`Save` metod för det bifogade objektet och tillhandahåller den önskade sökvägen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Osadzanie obrazów jako załączników w Aspose.Email
 linktitle: Osadzanie obrazów jako załączników w Aspose.Email
 second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
 description: Dowiedz się, jak osadzać obrazy jako załączniki w Aspose.Email dla Java. Ulepsz swoją komunikację e-mailową dzięki angażującym wizualnie treściom.
-type: docs
 weight: 14
 url: /pl/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Osadzanie obrazów jako załączników w Aspose.Email
+
 
 ## Osadzanie obrazów jako załączników w Aspose.Email
 
@@ -97,3 +103,9 @@ Aspose.Email dla Java obsługuje różne formaty obrazów, w tym JPEG, PNG, GIF 
 ### Czy są jakieś ograniczenia dotyczące rozmiaru osadzonych obrazów?
 
 Rozmiar osadzonych obrazów może mieć wpływ na dostarczanie wiadomości e-mail i wygodę odbiorcy. Zaleca się optymalizację obrazów do wiadomości e-mail, aby uniknąć dużych rozmiarów plików.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

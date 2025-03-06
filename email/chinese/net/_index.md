@@ -1,12 +1,17 @@
 ---
 title: 使用 Aspose.Email 教程撰写、转换和处理电子邮件
 linktitle: Aspose.Email for .NET 教程
-type: docs
 weight: 10
 url: /zh/net/
 description: 使用 Aspose.Email for .NET 教程优化电子邮件功能。了解高级电子邮件管理的撰写、转换和处理。
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 教程撰写、转换和处理电子邮件
+
 
 ## 介绍
 
@@ -45,3 +50,9 @@ Aspose.Email for .NET 教程为开发人员提供了全面的资源来增强他�
 使用 Aspose.Email for .NET 教程简化电子邮件文件存储和检索。了解以编程方式管理和访问电子邮件和附件。
 ### [电子邮件安全和签名](./email-security-and-signatures/)
 使用 Aspose.Email for .NET 教程实施强大的电子邮件安全措施和个性化签名。确保安全的沟通和专业的品牌塑造。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

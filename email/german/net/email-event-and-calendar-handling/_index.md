@@ -3,10 +3,16 @@ title: Effiziente E-Mail-Ereignis- und Kalenderverwaltung
 linktitle: E-Mail-Ereignis- und Kalenderverwaltung
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Optimieren Sie die Handhabung von E-Mail-Ereignissen und die Kalenderverwaltung mit Aspose.Email für .NET-Tutorials. Erfahren Sie, wie Sie E-Mail-Ereignisse automatisieren und Kalenderfunktionen nahtlos integrieren.
-type: docs
 weight: 15
 url: /de/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Effiziente E-Mail-Ereignis- und Kalenderverwaltung
+
 
 ## Einführung
 
@@ -32,3 +38,9 @@ Erfahren Sie, wie Sie den Status von Terminteilnehmern mit C# und Aspose.Email f
 Erfahren Sie, wie Sie mit Aspose.Email für .NET Entwürfe für Terminanfrage-E-Mails in C# erstellen. Verbessern Sie die Geschäftskommunikation und Effizienz.
 ### [ProdID in ICS-Dateien mit C# ändern](./altering-prodid-in-ics-files-with-csharp/)
 Erfahren Sie, wie Sie ProdID in ICS-Dateien mit C# und Aspose.Email für .NET ändern. Schritt-für-Schritt-Anleitung und Code. Stellen Sie Datenintegrität und -kompatibilität sicher. 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

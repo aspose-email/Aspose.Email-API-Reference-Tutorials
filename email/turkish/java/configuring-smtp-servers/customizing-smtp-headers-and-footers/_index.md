@@ -3,10 +3,16 @@ title: Aspose.Email ile SMTP Üstbilgilerini ve Altbilgilerini Özelleştirme
 linktitle: Aspose.Email ile SMTP Üstbilgilerini ve Altbilgilerini Özelleştirme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile SMTP üstbilgilerini ve altbilgilerini nasıl özelleştireceğinizi öğrenin. Kişiselleştirilmiş markalama ve mesajlarla e-posta iletişiminizi geliştirin.
-type: docs
 weight: 16
 url: /tr/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email ile SMTP Üstbilgilerini ve Altbilgilerini Özelleştirme
+
 
 ## giriiş
 
@@ -107,3 +113,9 @@ Evet, e-posta içeriğinde üstbilgiler ve altbilgiler de dahil olmak üzere HTM
 ### Özelleştirilmiş e-postalar göndermek için hangi SMTP ayarlarını kullanmalıyım?
 
 E-posta servis sağlayıcınız veya kuruluşunuzun BT departmanı tarafından sağlanan SMTP ayarlarını kullanmalısınız. Bu ayarlar genellikle SMTP sunucu adresini, bağlantı noktası numarasını ve kimlik doğrulama bilgilerini içerir.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

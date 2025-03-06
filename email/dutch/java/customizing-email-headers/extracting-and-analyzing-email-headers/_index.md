@@ -3,10 +3,16 @@ title: E-mailheaders extraheren en analyseren met Aspose.Email
 linktitle: E-mailheaders extraheren en analyseren met Aspose.Email
 second_title: Aspose.Email Java-e-mailbeheer-API
 description: Ontgrendel de kracht van analyse van e-mailheaders met Aspose.Email voor Java. Leer hoe u e-mailheaders kunt extraheren en analyseren voor verbeterde e-mailtracking en beveiliging.
-type: docs
 weight: 12
 url: /nl/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mailheaders extraheren en analyseren met Aspose.Email
+
 
 ## Inleiding tot het extraheren en analyseren van e-mailheaders met Aspose.Email
 
@@ -107,3 +113,9 @@ Het analyseren van e-mailheaders is om verschillende redenen cruciaal, zoals het
 ### Kan ik de analyse van e-mailheaders automatiseren met Aspose.Email?
 
 Ja, u kunt de analyse van e-mailheaders automatiseren met Aspose.Email door het in uw Java-applicaties te integreren. De bibliotheek biedt handige methoden voor het werken met e-mailheaders.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Určení vlastních záhlaví v C#
 linktitle: Určení vlastních záhlaví v C#
 second_title: Aspose.Email .NET Email Processing API
 description: Zjistěte, jak specifikovat vlastní záhlaví v C# pomocí Aspose.Email for .NET ke zlepšení e-mailové komunikace. Tento podrobný průvodce poskytuje informace o vytváření personalizovaných záhlaví e-mailů pro lepší zapojení.
-type: docs
 weight: 16
 url: /cs/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Určení vlastních záhlaví v C#
+
 
 
 ## Úvod
@@ -97,3 +103,9 @@ Aspose.Email for .NET rozhodně vyhovuje široké škále potřeb manipulace s e
 V dynamickém světě e-mailové komunikace mohou vlastní hlavičky změnit hru a umožnit přizpůsobené a efektivní interakce. S Aspose.Email for .NET se proces zadávání vlastních hlaviček v C# stává efektivním a efektivním. Podle kroků uvedených v této příručce můžete využít sílu vlastních hlaviček ke zlepšení kategorizace, personalizace a zapojení do vaší e-mailové komunikace.
 
 Pokud jste připraveni posunout svou e-mailovou komunikaci na další úroveň, ponořte se do světa vlastních hlaviček pomocí Aspose.Email for .NET. Když si osvojíte tuto techniku, můžete doručovat e-maily, které s příjemci rezonují a poskytují bezproblémový a poutavý zážitek.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

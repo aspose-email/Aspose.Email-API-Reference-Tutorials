@@ -3,10 +3,16 @@ title: Mendefinisikan Urutan Informasi Khusus di MHTML dengan C#
 linktitle: Mendefinisikan Urutan Informasi Khusus di MHTML dengan C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menyesuaikan pesanan MHTML menggunakan C# & Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode untuk pengaturan informasi yang efisien. Tingkatkan pengalaman pengguna sekarang!
-type: docs
 weight: 14
 url: /id/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendefinisikan Urutan Informasi Khusus di MHTML dengan C#
+
 
 Dalam bidang manajemen email, kemampuan untuk menyesuaikan urutan informasi dalam email MHTML adalah fitur yang berharga. Aspose.Email untuk .NET menawarkan solusi tangguh untuk mencapai hal ini. Pada artikel ini, kami akan memandu Anda melalui proses langkah demi langkah.
 
@@ -80,3 +86,10 @@ Di dunia yang mengutamakan penanganan email yang efektif, Aspose.Email untuk .NE
 ### 5. Di mana saya dapat menemukan sumber daya tambahan dan dukungan untuk Aspose.Email untuk .NET?
 
 -  Anda dapat mengakses dokumentasi ekstensif, contoh kode, dan dukungan di[Aspose.Email untuk Dokumentasi .NET API](https://reference.aspose.com/email/net/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

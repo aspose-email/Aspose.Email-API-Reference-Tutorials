@@ -3,10 +3,16 @@ title: Construire un nouveau message électronique en C#
 linktitle: Construire un nouveau message électronique en C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Maîtrisez la création d'e-mails en C# à l'aide d'Aspose.Email pour .NET. Un guide complet avec des exemples de code. Améliorez votre application maintenant
-type: docs
 weight: 11
 url: /fr/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Construire un nouveau message électronique en C#
+
 
 Cherchez-vous à améliorer votre application C# en ajoutant la possibilité d’envoyer des e-mails par programmation ? Grâce à la puissance d'Aspose.Email pour .NET, vous pouvez intégrer de manière transparente des fonctionnalités de messagerie dans votre application. Dans ce guide étape par étape, nous vous guiderons tout au long du processus de création d'un nouveau message électronique à l'aide d'Aspose.Email pour .NET, accompagné d'exemples de code source.
 
@@ -123,3 +129,9 @@ Toutes nos félicitations! Vous avez appris avec succès comment créer un nouve
    Vous pouvez trouver une documentation complète et des exemples de code sur le[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
 
 ---
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

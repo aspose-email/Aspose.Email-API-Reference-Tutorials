@@ -3,10 +3,16 @@ title: Pemrosesan dan Analisis Email yang Efisien dengan Aspose.Email untuk .NET
 linktitle: Pemrosesan dan Analisis Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Optimalkan manajemen email aplikasi Anda dan pengambilan keputusan dengan tutorial Aspose.Email untuk .NET tentang pemrosesan email yang efisien dan analisis mendalam. Pelajari cara mengambil, mengatur, dan menganalisis konten email secara terprogram. Jelajahi contoh-contoh praktis untuk meningkatkan komunikasi dan strategi berbasis data.
-type: docs
 weight: 13
 url: /id/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Pemrosesan dan Analisis Email yang Efisien dengan Aspose.Email untuk .NET
+
 
 ## Perkenalan
 
@@ -43,3 +49,9 @@ Pelajari cara mengambil Pemberitahuan Status Pengiriman email menggunakan C# dan
 Pelajari cara mengonversi konten email HTML menjadi teks biasa dengan mudah menggunakan Aspose.Email untuk .NET. Panduan & kode terperinci. Jelajahi sekarang!
 ### [Mempertahankan Batas Asli menggunakan Kode C#](./preserving-original-boundaries-using-csharp-code/)
 Pelajari cara mempertahankan batasan asli lampiran email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

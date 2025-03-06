@@ -3,10 +3,16 @@ title: تقنية C# - تحويل نص HTML إلى نص عادي
 linktitle: تقنية C# - تحويل نص HTML إلى نص عادي
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي بسهولة باستخدام Aspose.Email for .NET. دليل مفصل والكود. اكتشف الآن!
-type: docs
 weight: 19
 url: /ar/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تقنية C# - تحويل نص HTML إلى نص عادي
+
 
 في العصر الرقمي الحالي، يلعب التواصل عبر البريد الإلكتروني دورًا حاسمًا في حياتنا الشخصية والمهنية. في كثير من الأحيان، تحتوي رسائل البريد الإلكتروني على محتوى بتنسيق HTML لتقديم عرض أفضل. ومع ذلك، هناك مواقف قد تحتاج فيها إلى استخراج النص العادي من نص HTML للبريد الإلكتروني. سترشدك هذه المقالة خلال عملية تحقيق هذه المهمة بكفاءة باستخدام C# وAspose.Email وAspose.Words لـ .NET.
 
@@ -75,3 +81,9 @@ doc.Save("plain_text.txt", SaveFormat.Text);
  ج5: يمكنك استكشاف وثائق API ومواردها على موقع Aspose على الويب[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) و[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 الآن بعد أن أتقنت فن تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي، يمكنك تحسين قدرات معالجة البريد الإلكتروني لديك في لغة C#. ترميز سعيد!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

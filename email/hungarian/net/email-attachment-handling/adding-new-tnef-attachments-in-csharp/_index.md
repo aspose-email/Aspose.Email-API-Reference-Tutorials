@@ -3,10 +3,16 @@ title: Új TNEF-mellékletek hozzáadása a C#-ban
 linktitle: Új TNEF-mellékletek hozzáadása a C#-ban
 second_title: Aspose.Email .NET Email Processing API
 description: Ismerje meg, hogyan adhat hozzá új TNEF-mellékleteket C# nyelven az Aspose.Email for .NET használatával. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes integráció érdekében.
-type: docs
 weight: 12
 url: /hu/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Új TNEF-mellékletek hozzáadása a C#-ban
+
 
 ## A TNEF Attachments és Aspose.Email bemutatása .NET-hez
 
@@ -88,3 +94,9 @@ Igen, az Aspose.Email for .NET használható személyes és kereskedelmi projekt
 ### Hol találok további dokumentációt és példákat?
 
  Részletesebb dokumentációért és kódpéldákért keresse fel a[Aspose.Email a .NET dokumentációhoz](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Massen-E-Mail-Versand mit Aspose.Email
 linktitle: Massen-E-Mail-Versand mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für Java effizient Massen-E-Mails versenden. Eine Schritt-für-Schritt-Anleitung mit Codebeispielen für E-Mail-Marketing und Kommunikation.
-type: docs
 weight: 14
 url: /de/java/sending-emails/bulk-email-sending/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Massen-E-Mail-Versand mit Aspose.Email
+
 
 ## Einführung
 
@@ -132,3 +138,9 @@ In dieser Anleitung haben Sie erfahren, wie Sie Massen-E-Mails mit Aspose.Email 
 
 ### Wie kann ich mit zurückgesendeten oder fehlgeschlagenen E-Mails beim Massenversand umgehen?
    Aspose.Email bietet Funktionen zum Verarbeiten von Zustellungsstatusbenachrichtigungen (DSNs) und zum Verfolgen des E-Mail-Zustellungsstatus. Sie können bei Bedarf Logik implementieren, um zurückgesendete oder fehlgeschlagene E-Mails zu verarbeiten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

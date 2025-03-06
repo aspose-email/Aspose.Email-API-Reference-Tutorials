@@ -3,10 +3,16 @@ title: Menambahkan Lampiran TNEF Baru di C#
 linktitle: Menambahkan Lampiran TNEF Baru di C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara menambahkan lampiran TNEF baru di C# menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk integrasi yang lancar.
-type: docs
 weight: 12
 url: /id/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menambahkan Lampiran TNEF Baru di C#
+
 
 ## Pengantar Lampiran TNEF dan Aspose.Email untuk .NET
 
@@ -88,3 +94,9 @@ Ya, Anda dapat menggunakan Aspose.Email untuk .NET baik dalam proyek pribadi mau
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan contoh?
 
  Untuk dokumentasi lebih rinci dan contoh kode, Anda dapat mengunjungi[Aspose.Email untuk dokumentasi .NET](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

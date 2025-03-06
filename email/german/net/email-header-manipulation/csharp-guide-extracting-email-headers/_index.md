@@ -3,10 +3,16 @@ title: C#-Leitfaden – Extrahieren von E-Mail-Headern
 linktitle: C#-Leitfaden – Extrahieren von E-Mail-Headern
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie E-Mail-Header in C# mit Aspose.Email für .NET extrahieren. Schritt-für-Schritt-Anleitung mit Quellcode für eine effiziente E-Mail-Analyse.
-type: docs
 weight: 15
 url: /de/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#-Leitfaden – Extrahieren von E-Mail-Headern
+
 
 Haben Sie sich jemals gefragt, wie man E-Mail-Header mit C# extrahiert? E-Mail-Header enthalten wertvolle Informationen über Absender, Empfänger, Betreff und verschiedene andere Details. In dieser Anleitung führen wir Sie Schritt für Schritt durch den Prozess des Extrahierens von E-Mail-Headern mithilfe der leistungsstarken Aspose.Email für .NET-Bibliothek. Diese Bibliothek bietet umfassende Funktionen für die Arbeit mit E-Mails in Ihren .NET-Anwendungen.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Wo kann ich auf die Aspose.Email-Dokumentation zugreifen und die Bibliothek herunterladen?
 
  Die Dokumentation finden Sie unter[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Um die Bibliothek herunterzuladen, besuchen Sie[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

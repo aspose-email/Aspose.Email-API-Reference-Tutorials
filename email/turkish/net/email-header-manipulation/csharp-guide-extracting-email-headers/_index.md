@@ -3,10 +3,16 @@ title: C# Kılavuzu - E-posta Başlıklarını Çıkarma
 linktitle: C# Kılavuzu - E-posta Başlıklarını Çıkarma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta e-posta başlıklarını nasıl çıkaracağınızı öğrenin. Etkili e-posta analizi için kaynak kodlu adım adım kılavuz.
-type: docs
 weight: 15
 url: /tr/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Kılavuzu - E-posta Başlıklarını Çıkarma
+
 
 C# kullanarak e-posta başlıklarını nasıl çıkaracağınızı hiç merak ettiniz mi? E-posta başlıkları gönderen, alıcı, konu ve diğer çeşitli ayrıntılar hakkında değerli bilgiler içerir. Bu kılavuzda, güçlü Aspose.Email for .NET kütüphanesini kullanarak e-posta başlıklarını çıkarma işleminde size adım adım yol göstereceğiz. Bu kitaplık, .NET uygulamalarınızda e-postalarla çalışmak için kapsamlı bir dizi özellik sağlar.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Aspose.Email belgelerine nereden erişebilir ve kütüphaneyi indirebilirim?
 
  Belgeleri şu adreste bulabilirsiniz:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Kütüphaneyi indirmek için şu adresi ziyaret edin:[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

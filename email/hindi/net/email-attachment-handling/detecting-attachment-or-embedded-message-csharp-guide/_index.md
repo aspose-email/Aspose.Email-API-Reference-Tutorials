@@ -3,10 +3,16 @@ title: अनुलग्नक या एंबेडेड संदेश क
 linktitle: अनुलग्नक या एंबेडेड संदेश का पता लगाना - सी# गाइड
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में मास्टर ईमेल अटैचमेंट और एम्बेडेड संदेश का पता लगाना। हमारे व्यापक गाइड के साथ अपने ईमेल प्रबंधन को उन्नत करें।
-type: docs
 weight: 13
 url: /hi/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# अनुलग्नक या एंबेडेड संदेश का पता लगाना - सी# गाइड
+
 
 ## अनुलग्नक या एंबेडेड संदेश का पता लगाने का परिचय - सी# गाइड
 
@@ -106,3 +112,9 @@ foreach (AlternateView alternateView in message.AlternateViews)
 ### क्या मैं अनुलग्नकों और एम्बेडेड संदेशों की प्रोसेसिंग को अनुकूलित कर सकता हूँ?
 
 बिल्कुल, आप अपने विशिष्ट एप्लिकेशन की आवश्यकताओं को पूरा करने के लिए अनुलग्नकों और एम्बेडेड संदेशों की प्रोसेसिंग को अनुकूलित कर सकते हैं। Aspose.Email इस उद्देश्य के लिए लचीली एपीआई प्रदान करता है।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

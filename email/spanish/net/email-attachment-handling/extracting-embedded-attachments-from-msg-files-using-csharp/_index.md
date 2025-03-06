@@ -3,10 +3,16 @@ title: Extracción de archivos adjuntos incrustados de archivos MSG usando C#
 linktitle: Extracción de archivos adjuntos incrustados de archivos MSG usando C#
 second_title: Aspose.Email API de procesamiento de correo electrónico .NET
 description: Aprenda a extraer archivos adjuntos incrustados de archivos MSG usando C# y Aspose.Email para .NET. Una guía completa con ejemplos de código fuente.
-type: docs
 weight: 10
 url: /es/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracción de archivos adjuntos incrustados de archivos MSG usando C#
+
 
 ## Introducción a los archivos adjuntos integrados
 
@@ -103,3 +109,9 @@ Sí, Aspose.Email brinda soporte completo para varios formatos de correo electr�
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
 
  Puede encontrar ejemplos detallados y documentación sobre el uso de Aspose.Email para .NET en el[documentación](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

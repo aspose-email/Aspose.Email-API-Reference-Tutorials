@@ -3,10 +3,16 @@ title: सी# दृष्टिकोण - डिकोडेड हेडर 
 linktitle: सी# दृष्टिकोण - डिकोडेड हेडर मान निकालना
 second_title: Aspose.Email .NET ईमेल प्रोसेसिंग एपीआई
 description: .NET के लिए Aspose.Email का उपयोग करके C# में डिकोड किए गए ईमेल हेडर मान निकालना सीखें। कोड उदाहरणों के साथ व्यापक मार्गदर्शिका।
-type: docs
 weight: 17
 url: /hi/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सी# दृष्टिकोण - डिकोडेड हेडर मान निकालना
+
 
 इस ट्यूटोरियल में, हम आपको ईमेल संदेशों से डिकोडेड हेडर मान निकालने के लिए .NET के लिए Aspose.Email का उपयोग करने की प्रक्रिया के बारे में मार्गदर्शन करेंगे। .NET के लिए Aspose.Email एक मजबूत लाइब्रेरी है जो डेवलपर्स को ईमेल हेडर को पढ़ने और हेरफेर करने सहित ईमेल संदेशों के विभिन्न पहलुओं के साथ काम करने में सक्षम बनाती है।
 
@@ -77,3 +83,9 @@ class Program
 ## निष्कर्ष
 
 इस ट्यूटोरियल में, आपने सीखा कि ईमेल संदेशों से डिकोडेड हेडर मान निकालने के लिए .NET के लिए Aspose.Email का उपयोग कैसे करें। .NET के लिए Aspose.Email टूल का एक व्यापक सेट प्रदान करता है जो डेवलपर्स को हेडर को संभालने सहित ईमेल संदेशों के साथ कुशलतापूर्वक काम करने में सक्षम बनाता है।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

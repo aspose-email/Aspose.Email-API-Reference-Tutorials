@@ -3,10 +3,16 @@ title: C# Approach - Extrahera avkodade huvudvärden
 linktitle: C# Approach - Extrahera avkodade huvudvärden
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig att extrahera avkodade e-posthuvudvärden i C# med Aspose.Email för .NET. Omfattande guide med kodexempel.
-type: docs
 weight: 17
 url: /sv/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# Approach - Extrahera avkodade huvudvärden
+
 
 I den här handledningen kommer vi att guida dig genom processen att använda Aspose.Email för .NET för att extrahera avkodade rubrikvärden från e-postmeddelanden. Aspose.Email för .NET är ett robust bibliotek som ger utvecklare möjlighet att arbeta med olika aspekter av e-postmeddelanden, inklusive att läsa och manipulera e-postrubriker.
 
@@ -77,3 +83,9 @@ I kodavsnittet ovan utför vi följande steg:
 ## Slutsats
 
 den här handledningen har du lärt dig hur du använder Aspose.Email för .NET för att extrahera avkodade rubrikvärden från e-postmeddelanden. Aspose.Email för .NET tillhandahåller en omfattande uppsättning verktyg som ger utvecklare möjlighet att effektivt arbeta med e-postmeddelanden, inklusive hantering av rubriker.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

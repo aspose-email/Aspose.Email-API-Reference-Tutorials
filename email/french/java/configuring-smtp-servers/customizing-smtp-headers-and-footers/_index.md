@@ -3,10 +3,16 @@ title: Personnalisation des en-têtes et pieds de page SMTP avec Aspose.Email
 linktitle: Personnalisation des en-têtes et pieds de page SMTP avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Découvrez comment personnaliser les en-têtes et pieds de page SMTP avec Aspose.Email pour Java. Améliorez votre communication par e-mail avec une image de marque et des messages personnalisés.
-type: docs
 weight: 16
 url: /fr/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Personnalisation des en-têtes et pieds de page SMTP avec Aspose.Email
+
 
 ## Introduction
 
@@ -107,3 +113,9 @@ Oui, vous pouvez utiliser le formatage HTML dans le contenu de l'e-mail, y compr
 ### Quels paramètres SMTP dois-je utiliser pour envoyer des e-mails personnalisés ?
 
 Vous devez utiliser les paramètres SMTP fournis par votre fournisseur de services de messagerie ou le service informatique de votre organisation. Ces paramètres incluent généralement l'adresse du serveur SMTP, le numéro de port et les informations d'authentification.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

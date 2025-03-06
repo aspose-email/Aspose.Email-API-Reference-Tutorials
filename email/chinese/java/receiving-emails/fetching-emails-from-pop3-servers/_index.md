@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 从 POP3 服务器获取电子邮件
 linktitle: 使用 Aspose.Email 从 POP3 服务器获取电子邮件
 second_title: Aspose.Email Java 电子邮件管理 API
 description: 了解如何使用 Aspose.Email for Java 从 POP3 服务器获取电子邮件。包含源代码和常见问题解答的分步指南。
-type: docs
 weight: 11
 url: /zh/java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 从 POP3 服务器获取电子邮件
+
 在本综合指南中，我们将引导您完成使用强大的 Aspose.Email for Java 库从 POP3 服务器获取电子邮件的过程。无论您是构建电子邮件客户端、自动化电子邮件处理，还是只是需要从 POP3 服务器检索电子邮件，本分步教程都将为您提供所需的知识和源代码。
 
 ## 一、简介
@@ -159,3 +165,9 @@ public class EmailFetcher {
 
 ### 4. 我可以使用 Aspose.Email for Java 安排电子邮件获取任务吗？
 是的，您可以使用 Java 的调度库或 Quartz Scheduler 等框架来调度电子邮件获取任务。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

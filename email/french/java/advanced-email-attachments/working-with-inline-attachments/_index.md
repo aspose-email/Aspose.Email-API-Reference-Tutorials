@@ -3,10 +3,16 @@ title: Travailler avec des pièces jointes en ligne dans Aspose.Email
 linktitle: Travailler avec des pièces jointes en ligne dans Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Optimisez votre communication par courrier électronique avec Aspose.Email pour Java. Apprenez à travailler avec des pièces jointes en ligne dans ce guide complet.
-type: docs
 weight: 10
 url: /fr/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Travailler avec des pièces jointes en ligne dans Aspose.Email
+
 
 ## Introduction à l'utilisation des pièces jointes en ligne dans Aspose.Email
 
@@ -135,3 +141,9 @@ Pour gérer les pièces jointes en ligne dans les e-mails HTML, utilisez l'optio
 ### Aspose.Email pour Java est-il compatible avec différents serveurs de messagerie ?
 
 Oui, Aspose.Email pour Java est compatible avec différents serveurs de messagerie. Assurez-vous de configurer correctement les paramètres SMTP de votre serveur de messagerie lors de l'envoi d'e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

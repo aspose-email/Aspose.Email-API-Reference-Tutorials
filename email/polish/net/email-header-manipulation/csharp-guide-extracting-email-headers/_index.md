@@ -3,10 +3,16 @@ title: Przewodnik po języku C# — wyodrębnianie nagłówków wiadomości e-ma
 linktitle: Przewodnik po języku C# — wyodrębnianie nagłówków wiadomości e-mail
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak wyodrębnić nagłówki wiadomości e-mail w języku C# przy użyciu Aspose.Email dla .NET. Przewodnik krok po kroku z kodem źródłowym umożliwiający skuteczną analizę wiadomości e-mail.
-type: docs
 weight: 15
 url: /pl/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Przewodnik po języku C# — wyodrębnianie nagłówków wiadomości e-mail
+
 
 Czy zastanawiałeś się kiedyś, jak wyodrębnić nagłówki wiadomości e-mail za pomocą języka C#? Nagłówki wiadomości e-mail zawierają cenne informacje o nadawcy, odbiorcy, temacie i różne inne szczegóły. W tym przewodniku przeprowadzimy Cię krok po kroku przez proces wyodrębniania nagłówków wiadomości e-mail przy użyciu potężnej biblioteki Aspose.Email dla .NET. Ta biblioteka zapewnia kompleksowy zestaw funkcji do pracy z wiadomościami e-mail w aplikacjach .NET.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Email i pobrać bibliotekę?
 
  Dokumentację można znaleźć pod adresem[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Aby pobrać bibliotekę, odwiedź stronę[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Rimozione degli allegati dai messaggi di posta elettronica implementazion
 linktitle: Rimozione degli allegati dai messaggi di posta elettronica implementazione C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come rimuovere gli allegati di posta elettronica utilizzando Aspose.Email per .NET. Guida dettagliata con codice sorgente C#.
-type: docs
 weight: 18
 url: /it/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rimozione degli allegati dai messaggi di posta elettronica implementazione C#
+
 
 ## Introduzione alla rimozione degli allegati dalle e-mail
 
@@ -97,3 +103,9 @@ Assolutamente. Aspose.Email è progettato per essere scalabile e può essere uti
 ### Posso testare la libreria Aspose.Email prima di integrarla nel mio progetto?
 
 Sì, Aspose fornisce versioni di prova delle sue librerie che puoi scaricare e testare prima di decidere di acquistarle. Visitate il loro sito web per ulteriori informazioni.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

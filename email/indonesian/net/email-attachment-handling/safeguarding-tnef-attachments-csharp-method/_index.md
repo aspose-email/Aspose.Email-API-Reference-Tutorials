@@ -3,10 +3,16 @@ title: Menjaga Lampiran TNEF - Metode C#
 linktitle: Menjaga Lampiran TNEF - Metode C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Pelajari cara melindungi lampiran TNEF menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber disertakan.
-type: docs
 weight: 19
 url: /id/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menjaga Lampiran TNEF - Metode C#
+
 
 ## Pengantar Pengamanan Lampiran TNEF
 
@@ -95,3 +101,9 @@ Aspose sering merilis pembaruan dan peningkatan pada perpustakaannya. Disarankan
 ### Bisakah saya menggunakan Aspose.Email dalam proyek komersial?
 
 Ya, Anda dapat menggunakan Aspose.Email dalam proyek komersial. Namun, pastikan untuk meninjau persyaratan lisensi Aspose untuk memastikan kepatuhan.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

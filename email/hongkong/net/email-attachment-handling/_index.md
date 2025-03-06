@@ -3,10 +3,16 @@ title: 使用 Aspose.Email for .NET 掌握電子郵件附件處理
 linktitle: 電子郵件附件處理
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 教學增強電子郵件管理。了解簡化的處理、分析和資料驅動的見解。提供逐步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email for .NET 掌握電子郵件附件處理
+
 ## 介紹
 
 Aspose.Email for .NET 關於「電子郵件附件和附件處理」的教學課程為開發人員提供了一個全面的指南，幫助他們在應用程式中有效地管理和操作電子郵件附件。這些教學課程提供了有關如何利用 Aspose.Email for .NET 的強大功能來無縫處理附件、增強資料交換和協作的寶貴見解。透過逐步說明和說明性程式碼片段，開發人員可以自信地將附件相關功能整合到其應用程式中，從而優化電子郵件通訊工作流程和使用者體驗。
@@ -46,3 +52,10 @@ Aspose.Email for .NET 關於「電子郵件附件和附件處理」的教學課�
 了解如何使用 Aspose.Email for .NET 保留嵌入的 MSG 格式。帶有原始程式碼的分步指南。
 ### [讀取訊息時保留 TNEF 附件 - C# 方法](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 在此包含原始程式碼的逐步指南中，請了解如何使用 Aspose.Email for .NET 保留 TNEF 附件。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

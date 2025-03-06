@@ -3,10 +3,16 @@ title: Demander des accusés de lecture d'e-mails à l'aide du code C#
 linktitle: Demander des accusés de lecture d'e-mails à l'aide du code C#
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Découvrez comment utiliser le code C# pour demander des accusés de lecture d'e-mails à l'aide d'Aspose.Email pour .NET, améliorant ainsi le suivi des communications.
-type: docs
 weight: 11
 url: /fr/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Demander des accusés de lecture d'e-mails à l'aide du code C#
+
 
 À l'ère du numérique d'aujourd'hui, la communication par courrier électronique est devenue une partie intégrante de nos vies personnelles et professionnelles. Souvent, lors de l'envoi d'e-mails importants, nous voulons nous assurer que le destinataire a lu et accusé réception de notre message. C’est là que les confirmations de lecture des e-mails entrent en jeu. Dans ce didacticiel étape par étape, nous vous guiderons tout au long du processus de demande de confirmations de lecture par courrier électronique à l'aide de C# avec Aspose.Email pour .NET.
 
@@ -133,3 +139,9 @@ Dans ce didacticiel, nous avons expliqué comment demander des accusés de lectu
 
 5. ### Existe-t-il des considérations en matière de confidentialité lors de l'utilisation des accusés de lecture par courrier électronique ?
    Oui, il existe des problèmes de confidentialité liés au suivi des e-mails. Certains destinataires peuvent le considérer comme invasif, il est donc essentiel d'utiliser cette fonctionnalité de manière responsable et de respecter les préférences en matière de confidentialité.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

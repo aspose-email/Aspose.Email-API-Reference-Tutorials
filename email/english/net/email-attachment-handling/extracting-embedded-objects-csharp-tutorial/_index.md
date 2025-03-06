@@ -3,10 +3,16 @@ title: Extracting Embedded Objects - C# Tutorial
 linktitle: Extracting Embedded Objects - C# Tutorial
 second_title: Aspose.Email .NET Email Processing API
 description: Learn to extract embedded objects from email messages using Aspose.Email for .NET. Step-by-step guide with code examples.
-type: docs
 weight: 15
 url: /net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting Embedded Objects - C# Tutorial
+
 
 ## Introduction to Extracting Embedded Objects - C# Tutorial
 
@@ -105,3 +111,10 @@ Absolutely! Aspose.Email for .NET is compatible with ASP.NET web applications, d
 ### Where can I find more documentation about Aspose.Email?
 
 You can find detailed documentation and code examples for Aspose.Email on [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) page.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

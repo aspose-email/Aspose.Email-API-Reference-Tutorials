@@ -3,10 +3,16 @@ title: Configuring Email Headers in C#
 linktitle: Configuring Email Headers in C#
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to configure custom email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code included. Enhance email control and security.
-type: docs
 weight: 17
 url: /net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Configuring Email Headers in C#
+
 
 Email communication has become an integral part of modern business and personal interactions. While the content of an email is crucial, the headers accompanying the email are equally significant. Email headers provide valuable information about the message, sender, recipient, and more. Configuring email headers in C# using Aspose.Email for .NET offers a powerful way to customize and control the information embedded within email messages. In this article, we'll explore how to configure email headers step by step using Aspose.Email for .NET library.
 
@@ -133,3 +139,10 @@ Aspose.Email offers validation features to ensure that email headers are correct
 ### Are email headers case-sensitive?
 
 Yes, email headers are case-insensitive. However, it's a good practice to maintain consistent capitalization for better compatibility.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

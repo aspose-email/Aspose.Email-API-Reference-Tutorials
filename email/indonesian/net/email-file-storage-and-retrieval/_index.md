@@ -3,10 +3,16 @@ title: Penyimpanan dan Pengambilan File Email yang Efisien
 linktitle: Penyimpanan dan Pengambilan File Email
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Sederhanakan penyimpanan dan pengambilan file email menggunakan tutorial Aspose.Email untuk .NET. Pelajari cara mengelola dan mengakses pesan email dan lampiran secara terprogram.
-type: docs
 weight: 18
 url: /id/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Penyimpanan dan Pengambilan File Email yang Efisien
+
 
 ## Perkenalan
 
@@ -27,3 +33,9 @@ Pelajari cara membaca pesan penyimpanan Zimbra TGZ menggunakan C# dan Aspose.Ema
 Pelajari cara membaca pesan penyimpanan NSF menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode.
 ### [Menyimpan Pesan dari Penyimpanan Zimbra TGZ dengan C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Pelajari cara mengekstrak email Zimbra TGZ menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan kode sumber untuk pengelolaan email yang efisien.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

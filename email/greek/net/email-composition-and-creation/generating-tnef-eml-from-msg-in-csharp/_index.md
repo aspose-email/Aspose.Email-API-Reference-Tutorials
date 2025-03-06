@@ -3,10 +3,16 @@ title: Δημιουργία TNEF EML από MSG σε C#
 linktitle: Δημιουργία TNEF EML από MSG σε C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε να δημιουργείτε TNEF EML από το MSG χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με κώδικα C#. Αποτελεσματική μετατροπή μορφής email.
-type: docs
 weight: 12
 url: /el/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργία TNEF EML από MSG σε C#
+
 
 Σε αυτόν τον οδηγό, θα μάθετε πώς να δημιουργείτε αρχεία EML TNEF (Transport Neutral Encapsulation Format) από αρχεία MSG (Outlook Message) χρησιμοποιώντας τη βιβλιοθήκη Aspose.Email για .NET. Το TNEF είναι μια ιδιόκτητη μορφή συνημμένου email που χρησιμοποιείται από το Microsoft Outlook. Το Aspose.Email για .NET είναι μια ισχυρή βιβλιοθήκη που σας επιτρέπει να εργάζεστε με διάφορες μορφές email στις εφαρμογές σας C#.
 
@@ -100,3 +106,10 @@ url: /el/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csha
 Μπορείτε να χρησιμοποιήσετε τυπικές τεχνικές χειρισμού εξαιρέσεων C#. Το Aspose.Email εισάγει εξαιρέσεις που είναι συγκεκριμένες για τη βιβλιοθήκη του, επομένως φροντίστε να τις εντοπίσετε και να τις χειριστείτε κατάλληλα στον κώδικά σας.
 
  Μη διστάσετε να εξερευνήσετε το[Aspose.Email για τεκμηρίωση .NET](https://reference.aspose.com/email/net) για πιο προηγμένα χαρακτηριστικά και παραδείγματα.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

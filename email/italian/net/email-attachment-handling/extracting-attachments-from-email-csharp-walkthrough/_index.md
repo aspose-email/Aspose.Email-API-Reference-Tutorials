@@ -3,10 +3,16 @@ title: Estrazione di allegati da messaggi di posta elettronica procedura dettagl
 linktitle: Estrazione di allegati da messaggi di posta elettronica procedura dettagliata per C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Impara a estrarre gli allegati e-mail passo dopo passo utilizzando Aspose.Email per .NET. Gestisci vari formati e salva con facilità.
-type: docs
 weight: 14
 url: /it/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Estrazione di allegati da messaggi di posta elettronica procedura dettagliata per C#
+
 
 ## Introduzione all'estrazione di allegati da e-mail: procedura dettagliata in C# utilizzando Aspose.Email per .NET
 
@@ -114,3 +120,9 @@ Aspose.Email supporta .NET Framework e .NET Core.
 ### Dove posso trovare ulteriori informazioni su Aspose.Email?
 
  Per documentazione dettagliata ed esempi, fare riferimento a[Documentazione Aspose.Email](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 일반 텍스트 이메일 보내기
 linktitle: Aspose.Email을 사용하여 일반 텍스트 이메일 보내기
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 일반 텍스트 이메일을 효율적으로 보내는 방법을 알아보세요. 원활한 의사소통을 위한 코드 예제와 FAQ가 포함된 종합 가이드입니다.
-type: docs
 weight: 10
 url: /ko/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 일반 텍스트 이메일 보내기
+
 
 ## 소개
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Aspose.Email for Java를 사용하여 일반 텍스트 이메일을 보낼 때 제한 사항이 있나요?
    - 제한 사항은 이메일 서비스 제공업체 및 SMTP 서버에 따라 다를 수 있습니다. 전송 한도 및 이메일 전송 정책을 준수하는지 확인하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

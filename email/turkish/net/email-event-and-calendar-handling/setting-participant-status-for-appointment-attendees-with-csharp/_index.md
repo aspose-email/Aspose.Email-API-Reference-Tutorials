@@ -3,10 +3,16 @@ title: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
 linktitle: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Randevu katılımcılarının durumunu C# ve Aspose.Email for .NET kullanarak nasıl yöneteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
-type: docs
 weight: 16
 url: /tr/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
+
 
 ## Aspose.Email for .NET'e giriş
 
@@ -109,3 +115,9 @@ Evet, Aspose.Email for .NET kütüphanesine başvurarak ve verilen kod örnekler
 ### Daha fazla belge ve kaynağı nerede bulabilirim?
 
  Daha ayrıntılı belgeler ve kaynaklar için Aspose.Email for .NET belgelerine bakın:[Aspose.Email for .NET Belgelendirmesi](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

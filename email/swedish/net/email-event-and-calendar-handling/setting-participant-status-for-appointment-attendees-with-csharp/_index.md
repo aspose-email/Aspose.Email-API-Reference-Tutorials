@@ -3,10 +3,16 @@ title: Ställa in deltagarstatus för mötesdeltagare med C#
 linktitle: Ställa in deltagarstatus för mötesdeltagare med C#
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du hanterar mötesdeltagares status med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
-type: docs
 weight: 16
 url: /sv/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ställa in deltagarstatus för mötesdeltagare med C#
+
 
 ## Introduktion till Aspose.Email för .NET
 
@@ -109,3 +115,9 @@ Ja, du kan enkelt integrera den funktionalitet som diskuteras i den här guiden 
 ### Var kan jag hitta mer dokumentation och resurser?
 
  För mer detaljerad dokumentation och resurser, se Aspose.Email for .NET-dokumentationen:[Aspose.Email för .NET-dokumentation](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: Tutoriels Aspose.Email pour Java - Manipulation principale des e-mails
 linktitle: Aspose.Email pour les didacticiels Java
-type: docs
 weight: 10
 url: /fr/java/
 description: Libérez la puissance d’Aspose.Email pour Java avec des didacticiels complets. Apprenez la manipulation, la gestion des e-mails et bien plus encore.
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tutoriels Aspose.Email pour Java - Manipulation principale des e-mails
+
 
 Aspose.Email pour Java est une API puissante qui permet aux développeurs de manipuler et de gérer facilement les messages électroniques. Que vous cherchiez à automatiser les tâches liées au courrier électronique, à améliorer la sécurité du courrier électronique ou à intégrer des fonctionnalités de courrier électronique dans vos applications Java, Aspose.Email fournit les outils et les ressources dont vous avez besoin. Dans cet article, nous explorerons le monde des didacticiels Aspose.Email pour Java et comment ils peuvent vous aider à maîtriser la manipulation des e-mails.
 
@@ -38,3 +43,9 @@ Découvrez comment améliorer la sécurité de la messagerie avec Aspose.Email p
 Apprenez à personnaliser les en-têtes d'e-mails sans effort avec Aspose.Email pour Java. Plongez dans des didacticiels et exploitez la puissance de la personnalisation des en-têtes d’e-mails.
 ### [Explorer la sécurité de la messagerie avec Aspose.Email pour Java](./exploring-email-security/)
 Découvrez comment améliorer la sécurité de la messagerie avec Aspose.Email pour Java. Explorez des didacticiels étape par étape et les meilleures pratiques.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

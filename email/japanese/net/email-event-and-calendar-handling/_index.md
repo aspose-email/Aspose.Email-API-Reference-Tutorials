@@ -3,10 +3,16 @@ title: 効率的な電子メールイベントとカレンダーの処理
 linktitle: 電子メールによるイベントとカレンダーの処理
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET チュートリアルを使用して、電子メール イベントの処理とカレンダー管理を合理化します。電子メール イベントを自動化し、カレンダー機能をシームレスに統合する方法を学びます。
-type: docs
 weight: 15
 url: /ja/net/email-event-and-calendar-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 効率的な電子メールイベントとカレンダーの処理
+
 
 ## 導入
 
@@ -32,3 +38,9 @@ C# と Aspose.Email for .NET を使用して予定の出席者のステータス
 Aspose.Email for .NET を使用して、C# で下書きの予定リクエスト電子メールを作成する方法を学びます。ビジネスコミュニケーションと効率を向上させます。
 ### [C# を使用した ICS ファイルの ProdID の変更](./altering-prodid-in-ics-files-with-csharp/)
 C# と Aspose.Email for .NET を使用して ICS ファイル内の ProdID を変更する方法を学びます。ステップバイステップのガイドとコード。データの整合性と互換性を確保します。 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 透過電子郵件通知和追蹤增強溝通
 linktitle: 電子郵件通知和追蹤
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 教學實作電子郵件通知和追蹤功能。自動傳送通知並深入了解電子郵件收件者的互動。
-type: docs
 weight: 16
 url: /zh-hant/net/email-notification-and-tracking/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 透過電子郵件通知和追蹤增強溝通
+
 
 ## 介紹
 
@@ -27,3 +33,9 @@ url: /zh-hant/net/email-notification-and-tracking/
 了解如何使用 C# 程式碼使用 Aspose.Email for .NET 要求電子郵件閱讀回執，從而增強通訊追蹤。
 ### [使用 C# 程式碼追蹤電子郵件文件轉換進度](./tracking-email-document-conversion-progress-with-csharp-code/)
 了解如何使用 Aspose.Email for .NET 實作電子郵件通知和追蹤。帶有程式碼範例的分步指南。立即增強您的電子郵件溝通！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

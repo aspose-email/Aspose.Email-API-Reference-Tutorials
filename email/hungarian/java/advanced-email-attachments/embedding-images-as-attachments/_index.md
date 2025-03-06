@@ -3,10 +3,16 @@ title: Képek beágyazása mellékletként az Aspose.Email-be
 linktitle: Képek beágyazása mellékletként az Aspose.Email-be
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan ágyazhat be képeket mellékletként az Aspose.Email for Java alkalmazásba. Növelje e-mail kommunikációját vizuálisan vonzó tartalommal.
-type: docs
 weight: 14
 url: /hu/java/advanced-email-attachments/embedding-images-as-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Képek beágyazása mellékletként az Aspose.Email-be
+
 
 ## Képek beágyazása mellékletként az Aspose.Email-be
 
@@ -97,3 +103,9 @@ Az Aspose.Email for Java különféle képformátumokat támogat, beleértve a J
 ### Vannak korlátozások a beágyazott képek méretére vonatkozóan?
 
 A beágyazott képek mérete befolyásolhatja az e-mailek kézbesítését és a címzettek élményét. A nagy fájlméret elkerülése érdekében ajánlatos a képeket e-mailekhez optimalizálni.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

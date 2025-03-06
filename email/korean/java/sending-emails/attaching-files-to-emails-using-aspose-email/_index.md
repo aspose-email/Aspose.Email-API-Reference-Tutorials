@@ -3,10 +3,16 @@ title: Aspose.Email을 사용하여 이메일에 파일 첨부
 linktitle: Aspose.Email을 사용하여 이메일에 파일 첨부
 second_title: Aspose.Email 자바 이메일 관리 API
 description: Java용 Aspose.Email을 사용하여 이메일 메시지에 파일을 첨부하는 방법을 알아보세요. 이 단계별 가이드를 사용하여 쉽게 이메일을 개선하세요.
-type: docs
 weight: 12
 url: /ko/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email을 사용하여 이메일에 파일 첨부
+
 ## 소개
 
 이메일 통신의 세계에서는 첨부 파일을 보내는 기능이 매우 중요합니다. 중요한 문서, 이미지 또는 기타 유형의 파일을 보내더라도 프로세스는 간단하고 안정적이어야 합니다. Aspose.Email for Java는 이메일 메시지에 파일을 첨부하는 강력한 도구를 제공하여 이 프로세스를 단순화합니다.
@@ -134,3 +140,9 @@ public class EmailWithAttachments {
 
 ### 이메일 첨부 파일에 크기 제한이 있나요?
    이메일 서버와 클라이언트에는 첨부 파일 크기 제한이 있을 수 있습니다. 이메일을 보내거나 받을 때 문제가 발생하지 않도록 첨부 파일이 허용 가능한 크기 제한 내에 있는지 확인하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

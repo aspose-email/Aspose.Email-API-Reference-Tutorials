@@ -3,10 +3,16 @@ title: Angeben benutzerdefinierter Header in C#
 linktitle: Angeben benutzerdefinierter Header in C#
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für .NET benutzerdefinierte Header in C# angeben, um die E-Mail-Kommunikation zu verbessern. Diese Schritt-für-Schritt-Anleitung bietet Einblicke in die Erstellung personalisierter E-Mail-Header für ein verbessertes Engagement.
-type: docs
 weight: 16
 url: /de/net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Angeben benutzerdefinierter Header in C#
+
 
 
 ## Einführung
@@ -97,3 +103,9 @@ Absolut, Aspose.Email für .NET deckt ein breites Spektrum an E-Mail-Manipulatio
 In der dynamischen Welt der E-Mail-Kommunikation können benutzerdefinierte Header bahnbrechend sein und maßgeschneiderte und effektive Interaktionen ermöglichen. Mit Aspose.Email für .NET wird der Prozess der Angabe benutzerdefinierter Header in C# rationalisiert und effizient. Indem Sie die in diesem Leitfaden beschriebenen Schritte befolgen, können Sie die Leistungsfähigkeit benutzerdefinierter Header nutzen, um die Kategorisierung, Personalisierung und das Engagement in Ihren E-Mail-Kommunikationsbemühungen zu verbessern.
 
 Wenn Sie bereit sind, Ihre E-Mail-Kommunikation auf die nächste Stufe zu heben, tauchen Sie mit Aspose.Email für .NET in die Welt der benutzerdefinierten Header ein. Wenn Sie diese Technik beherrschen, können Sie E-Mails versenden, die bei den Empfängern Anklang finden und ein nahtloses und ansprechendes Erlebnis bieten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

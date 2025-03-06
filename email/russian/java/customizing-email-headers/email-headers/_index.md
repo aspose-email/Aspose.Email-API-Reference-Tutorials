@@ -3,10 +3,16 @@ title: Заголовки электронной почты в Aspose.Email
 linktitle: Заголовки электронной почты в Aspose.Email
 second_title: Aspose.Email Java API управления электронной почтой
 description: Раскройте возможности заголовков электронной почты с помощью Aspose.Email для Java. Узнайте, как легко устанавливать и получать заголовки электронных писем.
-type: docs
 weight: 10
 url: /ru/java/customizing-email-headers/email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Заголовки электронной почты в Aspose.Email
+
 
 ## Введение в заголовки электронных писем
 
@@ -92,3 +98,9 @@ String sender = message.getHeaders().get("From");
 ### Как я могу извлечь заголовки электронных писем из большого пакета электронных писем?
 
 Вы можете использовать возможности пакетной обработки Aspose.Email для эффективного извлечения заголовков из нескольких электронных писем.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

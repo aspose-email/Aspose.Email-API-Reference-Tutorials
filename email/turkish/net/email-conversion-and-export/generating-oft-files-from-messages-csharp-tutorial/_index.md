@@ -3,10 +3,16 @@ title: Mesajlardan OFT Dosyaları Oluşturma - C# Eğitimi
 linktitle: Mesajlardan OFT Dosyaları Oluşturma - C# Eğitimi
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET kullanarak mesajlardan OFT dosyalarını nasıl oluşturacağınızı öğrenin. Verimli e-posta şablonu oluşturmak için kaynak kodlu adım adım kılavuz.
-type: docs
 weight: 19
 url: /tr/net/email-conversion-and-export/generating-oft-files-from-messages-csharp-tutorial/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mesajlardan OFT Dosyaları Oluşturma - C# Eğitimi
+
 
 ## OFT Dosyaları Oluşturmaya Giriş
 
@@ -114,3 +120,9 @@ Kesinlikle! Şablonda kendi yer tutucularınızı tanımlayabilir ve C# kodunu k
 ### Oluşturulan e-postalarımın alıcının spam klasörüne düşmemesini nasıl sağlarım?
 
 E-postaların spam olarak işaretlenmesini önlemek için e-posta teslimine ilişkin en iyi uygulamaları izlediğinizden emin olun. Meşru gönderme uygulamalarını kullanın, aşırı bağlantılardan kaçının ve gönderen bilgilerini doğru şekilde ekleyin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

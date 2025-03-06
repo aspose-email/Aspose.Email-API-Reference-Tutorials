@@ -3,10 +3,16 @@ title: Efficient Email File Storage and Retrieval
 linktitle: Email File Storage and Retrieval
 second_title: Aspose.Email .NET Email Processing API
 description: Streamline email file storage and retrieval using Aspose.Email for .NET tutorials. Learn to manage and access email messages and attachments programmatically.
-type: docs
 weight: 18
 url: /net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Efficient Email File Storage and Retrieval
+
 
 ## Introduction
 
@@ -27,3 +33,9 @@ Learn how to read Zimbra TGZ storage messages using C# and Aspose.Email for .NET
 Learn how to read NSF storage messages using C# and Aspose.Email for .NET. A step-by-step guide with code examples.
 ### [Saving Messages from Zimbra TGZ Storage with C#](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 Learn how to extract Zimbra TGZ emails using Aspose.Email for .NET. Step-by-step guide with source code for efficient email management.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تحديد رؤوس الأولوية والأهمية باستخدام As
 linktitle: تحديد رؤوس الأولوية والأهمية باستخدام Aspose.Email
 second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
 description: عزز تأثير بريدك الإلكتروني من خلال تحديد رؤوس الأولوية والأهمية باستخدام Aspose.Email لـ Java. تعرف على كيفية القيام بذلك في هذا الدليل خطوة بخطوة.
-type: docs
 weight: 14
 url: /ar/java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تحديد رؤوس الأولوية والأهمية باستخدام Aspose.Email
+
 
 ## مقدمة
 
@@ -94,3 +100,9 @@ client.send(message);
 ### كيف أتعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email؟
 
  يعد التعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email أمرًا بسيطًا. يمكنك استخدام ال`Attachment` فئة لإضافة مرفقات إلى رسائل البريد الإلكتروني الخاصة بك. للحصول على دليل تفصيلي، راجع وثائق Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme
 linktitle: C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: C#'ta Aspose.Email for .NET ile e-posta mesajlarını nasıl yükleyeceğinizi öğrenin. Etkili e-posta yönetimi için adım adım kılavuzu ve kaynak kodu örneklerini keşfedin.
-type: docs
 weight: 11
 url: /tr/net/email-composition-and-creation/loading-email-messages-with-load-options-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta Yükleme Seçenekleri ile E-posta Mesajlarını Yükleme
+
 
 ## Aspose.Email for .NET'e giriş
 
@@ -167,3 +173,9 @@ Kesinlikle! Aspose.Email for .NET, parola korumalı e-postaların yüklenmesini 
 ### E-postaları yüklerken hatalarla karşılaşırsam ne yapmalıyım?
 
 E-posta yükleme sırasında hatalarla karşılaşırsanız istisnaları işlemek için yükleme kodunuzu bir try-catch bloğuna sardığınızdan emin olun. Bu, ortaya çıkan sorunları tanımlamanıza ve çözmenize yardımcı olacaktır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Removendo Anexos de Emails – Implementação C#
 linktitle: Removendo Anexos de Emails – Implementação C#
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como remover anexos de e-mail usando Aspose.Email for .NET. Guia passo a passo com código-fonte C#.
-type: docs
 weight: 18
 url: /pt/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Removendo Anexos de Emails – Implementação C#
+
 
 ## Introdução à remoção de anexos de e-mails
 
@@ -97,3 +103,9 @@ Absolutamente. Aspose.Email foi projetado para ser escalável e pode ser usado e
 ### Posso testar a biblioteca Aspose.Email antes de integrá-la ao meu projeto?
 
 Sim, o Aspose oferece versões de teste de suas bibliotecas que você pode baixar e testar antes de decidir comprar. Visite o site deles para mais informações.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

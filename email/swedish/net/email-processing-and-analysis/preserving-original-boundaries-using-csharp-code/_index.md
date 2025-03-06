@@ -3,10 +3,16 @@ title: Bevara ursprungliga gränser med C#-kod
 linktitle: Bevara ursprungliga gränser med C#-kod
 second_title: Aspose.Email .NET Email Processing API
 description: Lär dig hur du bevarar ursprungliga gränser för e-postbilagor med C# och Aspose.Email för .NET. Steg-för-steg guide med källkod.
-type: docs
 weight: 13
 url: /sv/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bevara ursprungliga gränser med C#-kod
+
 
 ## Introduktion till att bevara ursprungliga gränser
 
@@ -107,3 +113,9 @@ Du kan använda Aspose.Email-biblioteket för att ladda och manipulera bildbilag
 ### Var kan jag hitta mer information om Aspose.Email för .NET?
 
  Du kan hitta omfattande dokumentation och exempel på[Aspose.Email dokumentation](https://reference.aspose.com/email/net/) sida.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

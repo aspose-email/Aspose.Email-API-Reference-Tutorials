@@ -3,10 +3,16 @@ title: 使用 Aspose.Email 將文件附加到電子郵件
 linktitle: 使用 Aspose.Email 將文件附加到電子郵件
 second_title: Aspose.Email Java 電子郵件管理 API
 description: 了解使用 Aspose.Email for Java 將文件附加到電子郵件。使用此逐步指南輕鬆增強您的電子郵件。
-type: docs
 weight: 12
 url: /zh-hant/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Email 將文件附加到電子郵件
+
 ## 介紹
 
 在電子郵件通訊領域，發送附件的能力至關重要。無論您是發送重要文件、圖像還是任何其他類型的文件，該過程都應該簡單可靠。 Aspose.Email for Java 透過提供將文件附加到電子郵件訊息的強大工具來簡化此過程。
@@ -134,3 +140,9 @@ public class EmailWithAttachments {
 
 ### 電子郵件附件的大小有限制嗎？
    電子郵件伺服器和客戶端可能有附件大小限制。確保您的附件在可接受的大小限制內，以避免發送或接收電子郵件出現問題。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

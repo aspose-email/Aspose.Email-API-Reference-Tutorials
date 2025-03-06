@@ -3,10 +3,16 @@ title: Differentiating Inline and Regular Attachments - C# Approach
 linktitle: Differentiating Inline and Regular Attachments - C# Approach
 second_title: Aspose.Email .NET Email Processing API
 description: Learn how to differentiate between inline and regular email attachments using Aspose.Email for .NET. Comprehensive guide with code examples.
-type: docs
 weight: 17
 url: /net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Differentiating Inline and Regular Attachments - C# Approach
+
 
 ## Introduction to Differentiating Inline and Regular Attachments - C# Approach
 
@@ -107,3 +113,10 @@ You can access the content of an inline attachment by using the appropriate prop
 ### Can I save regular attachments to a specific location on disk?
 
 Absolutely! You can save regular attachments to a specific location on disk by utilizing the `Save` method of the attachment object and providing the desired file path.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: E-posta Güvenliği ve İmzalar
 linktitle: E-posta Güvenliği ve İmzalar
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET eğitimleriyle güçlü e-posta güvenlik önlemleri ve kişiselleştirilmiş imzalar uygulayın. Güvenli iletişim ve profesyonel markalama sağlayın.
-type: docs
 weight: 19
 url: /tr/net/email-security-and-signatures/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-posta Güvenliği ve İmzalar
+
 
 ## giriiş
 
@@ -25,3 +31,9 @@ E-posta imzası eğitimleri, geliştiricilerin Aspose.Email for .NET'i kullanara
 
 ### [C# Kodunu Kullanarak DKIM ile E-postaları İmzalama](./signing-emails-with-dkim-using-csharp-code/)
 C# ve Aspose.Email for .NET kullanarak DKIM ile e-postalarınızın güvenliğini sağlamayı öğrenin. Kaynak koduyla adım adım kılavuz. E-posta güvenini ve orijinalliğini artırın.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

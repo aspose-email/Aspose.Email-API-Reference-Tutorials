@@ -3,10 +3,16 @@ title: Aspose.Email for .NET による効率的な電子メールの処理と分
 linktitle: 電子メールの処理と分析
 second_title: Aspose.Email .NET 電子メール処理 API
 description: 合理化された電子メール処理と洞察に満ちた分析に関する Aspose.Email for .NET のチュートリアルを使用して、アプリケーションの電子メール管理と意思決定を最適化します。電子メールのコンテンツをプログラムで取得、整理、分析する方法を学びます。コミュニケーションとデータドリブン戦略を強化するための実践的な例を調べてください。
-type: docs
 weight: 13
 url: /ja/net/email-processing-and-analysis/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email for .NET による効率的な電子メールの処理と分析
+
 
 ## 導入
 
@@ -43,3 +49,9 @@ C# と Aspose.Email for .NET を使用して電子メール配信ステータス
 Aspose.Email for .NET を使用して、HTML 電子メール コンテンツをプレーン テキストに簡単に変換する方法を学びます。詳細なガイドとコード。今すぐ探索してみよう！
 ### [C# コードを使用した元の境界の保持](./preserving-original-boundaries-using-csharp-code/)
 C# と Aspose.Email for .NET を使用して電子メール添付ファイルの元の境界を保持する方法を学びます。ソースコード付きのステップバイステップガイド。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

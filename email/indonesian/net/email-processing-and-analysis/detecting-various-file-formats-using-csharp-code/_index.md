@@ -3,10 +3,16 @@ title: Mendeteksi Berbagai Format File menggunakan Kode C#
 linktitle: Mendeteksi Berbagai Format File menggunakan Kode C#
 second_title: API Pemrosesan Email Aspose.Email .NET
 description: Deteksi format file dengan mudah menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dan contoh kode. Jelajahi sekarang!
-type: docs
 weight: 13
 url: /id/net/email-processing-and-analysis/detecting-various-file-formats-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendeteksi Berbagai Format File menggunakan Kode C#
+
 
 Sebagai pengembang, mengidentifikasi format file sangat penting untuk pemrosesan dan manipulasi. Dengan Aspose.Email untuk .NET, Anda dapat mendeteksi format file secara akurat. Panduan ini memberikan tutorial langkah demi langkah, lengkap dengan kode sumber, tentang cara mendeteksi berbagai format file menggunakan C# dan Aspose.Email untuk .NET.
 
@@ -119,3 +125,9 @@ Tentu saja, Aspose.Email dapat diintegrasikan dengan mulus ke dalam aplikasi web
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk Aspose.Email untuk .NET?
 
  Untuk dokumentasi komprehensif, contoh kode, dan sumber daya, kunjungi[Aspose.Email untuk Referensi .NET API](https://reference.aspose.com/email/net) halaman.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

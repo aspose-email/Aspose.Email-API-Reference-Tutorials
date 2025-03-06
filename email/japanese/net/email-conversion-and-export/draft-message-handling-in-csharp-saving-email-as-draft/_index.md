@@ -3,10 +3,16 @@ title: C# での下書きメッセージ処理 - 電子メールを下書きと�
 linktitle: C# での下書きメッセージ処理 - 電子メールを下書きとして保存する
 second_title: Aspose.Email .NET 電子メール処理 API
 description: Aspose.Email for .NET を使用して、C# でドラフト電子メールの処理を実装する方法を学びます。ドラフトをシームレスに作成、編集、保存します。
-type: docs
 weight: 17
 url: /ja/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# での下書きメッセージ処理 - 電子メールを下書きとして保存する
+
 
 ## 導入
 
@@ -103,3 +109,9 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ### Aspose.Email ライブラリは他の電子メール関連の機能をサポートしていますか?
 
 はい、Aspose.Email ライブラリは、電子メールや添付ファイルの送信、受信、操作など、電子メール メッセージを操作するための幅広い機能を提供します。詳細については、ドキュメントを参照してください。[ここ](https://reference.aspose.com)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

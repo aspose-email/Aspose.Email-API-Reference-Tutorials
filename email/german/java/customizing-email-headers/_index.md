@@ -3,10 +3,16 @@ title: Anpassen von E-Mail-Headern mit Aspose.Email für Java
 linktitle: Anpassen von E-Mail-Headern mit Aspose.Email für Java
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Erfahren Sie, wie Sie E-Mail-Header mit Aspose.Email für Java mühelos anpassen. Tauchen Sie ein in Tutorials und nutzen Sie die Möglichkeiten der E-Mail-Header-Anpassung.
-type: docs
 weight: 16
 url: /de/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Anpassen von E-Mail-Headern mit Aspose.Email für Java
+
 
 E-Mail-Header spielen eine entscheidende Rolle in der E-Mail-Kommunikation und liefern wichtige Informationen über den Ursprung und die Zustellung der Nachricht. Mit Aspose.Email für Java wird das Anpassen von E-Mail-Headern zu einer unkomplizierten Aufgabe, sodass Benutzer ihre E-Mail-Metadaten an spezifische Bedürfnisse und Anforderungen anpassen können.
 
@@ -37,3 +43,9 @@ Sorgen Sie mit Aspose.Email für Java für E-Mail-Sicherheit mit DKIM-Signaturen
 Nutzen Sie die Leistungsfähigkeit von X-Headern in E-Mails mit Aspose.Email für Java. Erfahren Sie, wie Sie benutzerdefinierte Metadaten verwalten und die E-Mail-Verarbeitung verbessern.
 ### [Anreicherung von E-Mail-Metadaten durch Header mit Aspose.Email](./enriching-email-metadata-through-headers/)
 Verbessern Sie E-Mail-Metadaten mit Aspose.Email für Java. Erfahren Sie, wie Sie mit Aspose.Email E-Mail-Header für eine verbesserte Nachverfolgung und Anpassung anreichern.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

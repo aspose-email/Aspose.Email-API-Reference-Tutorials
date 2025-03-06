@@ -3,10 +3,16 @@ title: Αφαίρεση συνημμένων από email - Εφαρμογή C#
 linktitle: Αφαίρεση συνημμένων από email - Εφαρμογή C#
 second_title: Aspose.Email .NET Email Processing API
 description: Μάθετε πώς να αφαιρείτε συνημμένα email χρησιμοποιώντας το Aspose.Email για .NET. Οδηγός βήμα προς βήμα με τον πηγαίο κώδικα C#.
-type: docs
 weight: 18
 url: /el/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αφαίρεση συνημμένων από email - Εφαρμογή C#
+
 
 ## Εισαγωγή στην αφαίρεση συνημμένων από μηνύματα ηλεκτρονικού ταχυδρομείου
 
@@ -97,3 +103,9 @@ message.Save("path/to/save/modified/email.eml");
 ### Μπορώ να δοκιμάσω τη βιβλιοθήκη Aspose.Email πριν την ενσωματώσω στο έργο μου;
 
 Ναι, η Aspose παρέχει δοκιμαστικές εκδόσεις των βιβλιοθηκών της που μπορείτε να κατεβάσετε και να δοκιμάσετε πριν αποφασίσετε να αγοράσετε. Επισκεφτείτε την ιστοσελίδα τους για περισσότερες πληροφορίες.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

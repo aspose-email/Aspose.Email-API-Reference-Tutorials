@@ -3,10 +3,16 @@ title: Rozlišení vkládaných a pravidelných příloh – přístup C#
 linktitle: Rozlišení vkládaných a pravidelných příloh – přístup C#
 second_title: Aspose.Email .NET Email Processing API
 description: Naučte se rozlišovat mezi vloženými a běžnými e-mailovými přílohami pomocí Aspose.Email pro .NET. Komplexní průvodce s příklady kódu.
-type: docs
 weight: 17
 url: /cs/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Rozlišení vkládaných a pravidelných příloh – přístup C#
+
 
 ## Úvod do rozlišování vkládaných a pravidelných příloh - C# přístup
 
@@ -107,3 +113,9 @@ K obsahu vložené přílohy můžete přistupovat pomocí příslušných vlast
 ### Mohu ukládat běžné přílohy na konkrétní místo na disku?
 
  Absolutně! Běžné přílohy můžete uložit na určité místo na disku pomocí`Save` metodu objektu přílohy a poskytnutí požadované cesty k souboru.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

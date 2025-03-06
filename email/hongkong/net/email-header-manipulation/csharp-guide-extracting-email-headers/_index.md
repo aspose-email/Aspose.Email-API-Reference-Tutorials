@@ -3,10 +3,16 @@ title: C# 指南 - 擷取電子郵件標頭
 linktitle: C# 指南 - 擷取電子郵件標頭
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 了解如何使用 Aspose.Email for .NET 在 C# 中擷取電子郵件標頭。具有原始程式碼的分步指南，可實現高效的電子郵件分析。
-type: docs
 weight: 15
 url: /zh-hant/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 指南 - 擷取電子郵件標頭
+
 
 您是否想過如何使用 C# 提取電子郵件標頭？電子郵件標頭包含有關寄件者、收件者、主題和各種其他詳細資訊的有價值的資訊。在本指南中，我們將引導您逐步完成使用強大的 Aspose.Email for .NET 程式庫提取電子郵件標頭的過程。該庫提供了一組全面的功能，用於在 .NET 應用程式中處理電子郵件。
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### 我在哪裡可以存取 Aspose.Email 文件並下載該庫？
 
 您可以在以下位置找到文件：[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) 。要下載該庫，請訪問[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

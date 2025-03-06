@@ -3,10 +3,16 @@ title: Salvaguardia degli allegati TNEF - Metodo C#
 linktitle: Salvaguardia degli allegati TNEF - Metodo C#
 second_title: Aspose.Email API di elaborazione della posta elettronica .NET
 description: Scopri come salvaguardare gli allegati TNEF utilizzando C# e Aspose.Email per .NET. Guida passo passo con codice sorgente incluso.
-type: docs
 weight: 19
 url: /it/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Salvaguardia degli allegati TNEF - Metodo C#
+
 
 ## Introduzione alla salvaguardia degli allegati TNEF
 
@@ -95,3 +101,9 @@ Aspose rilascia frequentemente aggiornamenti e miglioramenti alle sue librerie. 
 ### Posso utilizzare Aspose.Email in progetti commerciali?
 
 Sì, puoi utilizzare Aspose.Email in progetti commerciali. Tuttavia, assicurati di rivedere i termini di licenza di Aspose per garantire la conformità.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

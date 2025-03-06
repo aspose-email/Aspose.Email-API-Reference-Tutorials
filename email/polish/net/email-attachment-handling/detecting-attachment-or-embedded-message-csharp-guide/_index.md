@@ -3,10 +3,16 @@ title: Wykrywanie załącznika lub osadzonej wiadomości — przewodnik po języ
 linktitle: Wykrywanie załącznika lub osadzonej wiadomości — przewodnik po języku C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Główny załącznik do wiadomości e-mail i wykrywanie osadzonych wiadomości w języku C# przy użyciu Aspose.Email dla .NET. Usprawnij obsługę poczty e-mail dzięki naszemu obszernemu przewodnikowi.
-type: docs
 weight: 13
 url: /pl/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wykrywanie załącznika lub osadzonej wiadomości — przewodnik po języku C#
+
 
 ## Wprowadzenie do wykrywania załącznika lub osadzonej wiadomości — przewodnik po języku C#
 
@@ -106,3 +112,9 @@ Powinieneś wdrożyć odpowiednie mechanizmy obsługi błędów, korzystając z 
 ### Czy mogę dostosować przetwarzanie załączników i osadzonych wiadomości?
 
 Oczywiście możesz dostosować przetwarzanie załączników i osadzonych wiadomości do potrzeb konkretnej aplikacji. Aspose.Email udostępnia w tym celu elastyczne interfejsy API.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

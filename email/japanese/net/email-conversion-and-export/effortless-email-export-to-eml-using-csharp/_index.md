@@ -3,10 +3,16 @@ title: C# を使用した EML への電子メールの簡単なエクスポー�
 linktitle: C# を使用した EML への電子メールの簡単なエクスポート
 second_title: Aspose.Email .NET 電子メール処理 API
 description: C# と Aspose.Email for .NET を使用して、電子メールを EML 形式に簡単にエクスポートします。ソースコードの例を使って段階的に学習してください。
-type: docs
 weight: 11
 url: /ja/net/email-conversion-and-export/effortless-email-export-to-eml-using-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# を使用した EML への電子メールの簡単なエクスポート
+
 
 ## EML への簡単な電子メール エクスポートの概要
 
@@ -175,3 +181,9 @@ C# と Aspose.Email for .NET を使用して電子メールを EML 形式にエ�
 ### チュートリアルで提供されるソース コードは完成していますか?
 
 はい、このチュートリアルでは、Aspose.Email for .NET を使用して電子メールを EML 形式にエクスポートする方法を示す完全なソース コードが提供されています。このコードを開始点として使用できます
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: C# 코드를 사용하여 이메일 읽음 확인 요청
 linktitle: C# 코드를 사용하여 이메일 읽음 확인 요청
 second_title: Aspose.Email .NET 이메일 처리 API
 description: C# 코드를 사용하여 .NET용 Aspose.Email을 사용하여 이메일 읽음 확인을 요청하고 통신 추적을 향상시키는 방법을 알아보세요.
-type: docs
 weight: 11
 url: /ko/net/email-notification-and-tracking/requesting-email-read-receipts-using-csharp-code/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C# 코드를 사용하여 이메일 읽음 확인 요청
+
 
 오늘날의 디지털 시대에 이메일을 통한 커뮤니케이션은 개인 생활과 직업 생활에서 필수적인 부분이 되었습니다. 중요한 이메일을 보낼 때 수신자가 메시지를 읽고 확인했는지 확인하려는 경우가 많습니다. 여기에서 이메일 읽음 확인이 작동합니다. 이 단계별 튜토리얼에서는 .NET용 Aspose.Email과 함께 C#을 사용하여 이메일 읽음 확인을 요청하는 과정을 안내합니다.
 
@@ -133,3 +139,9 @@ catch (Exception ex)
 
 5. ### 이메일 수신 확인을 사용할 때 개인 정보 보호 고려 사항이 있습니까?
    예, 이메일 추적과 관련된 개인 정보 보호 문제가 있습니다. 일부 수신자는 이를 침해적이라고 생각할 수 있으므로 이 기능을 책임감 있게 사용하고 개인 정보 보호 기본 설정을 존중하는 것이 중요합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

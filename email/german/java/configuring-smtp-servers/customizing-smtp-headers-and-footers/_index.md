@@ -3,10 +3,16 @@ title: Anpassen von SMTP-Kopf- und Fußzeilen mit Aspose.Email
 linktitle: Anpassen von SMTP-Kopf- und Fußzeilen mit Aspose.Email
 second_title: Aspose.Email Java E-Mail-Management-API
 description: Erfahren Sie, wie Sie SMTP-Kopf- und -Fußzeilen mit Aspose.Email für Java anpassen. Verbessern Sie Ihre E-Mail-Kommunikation mit personalisiertem Branding und personalisierten Nachrichten.
-type: docs
 weight: 16
 url: /de/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Anpassen von SMTP-Kopf- und Fußzeilen mit Aspose.Email
+
 
 ## Einführung
 
@@ -107,3 +113,9 @@ Ja, Sie können HTML-Formatierungen im E-Mail-Inhalt verwenden, einschließlich 
 ### Welche SMTP-Einstellungen sollte ich zum Versenden benutzerdefinierter E-Mails verwenden?
 
 Sie sollten die SMTP-Einstellungen verwenden, die von Ihrem E-Mail-Dienstanbieter oder der IT-Abteilung Ihres Unternehmens bereitgestellt werden. Zu diesen Einstellungen gehören normalerweise die SMTP-Serveradresse, die Portnummer und die Authentifizierungsdaten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

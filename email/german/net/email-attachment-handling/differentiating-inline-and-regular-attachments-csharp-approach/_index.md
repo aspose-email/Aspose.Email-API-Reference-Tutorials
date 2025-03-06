@@ -3,10 +3,16 @@ title: Unterscheiden von Inline- und regulären Anhängen – C#-Ansatz
 linktitle: Unterscheiden von Inline- und regulären Anhängen – C#-Ansatz
 second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Email für .NET zwischen Inline- und regulären E-Mail-Anhängen unterscheiden. Umfassende Anleitung mit Codebeispielen.
-type: docs
 weight: 17
 url: /de/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Unterscheiden von Inline- und regulären Anhängen – C#-Ansatz
+
 
 ## Einführung in die Unterscheidung von Inline- und regulären Anhängen – C#-Ansatz
 
@@ -107,3 +113,9 @@ Sie können auf den Inhalt eines Inline-Anhangs zugreifen, indem Sie die entspre
 ### Kann ich reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern?
 
  Absolut! Sie können reguläre Anhänge an einem bestimmten Ort auf der Festplatte speichern, indem Sie die Funktion verwenden`Save` Methode des Anhangobjekts und Angabe des gewünschten Dateipfads.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

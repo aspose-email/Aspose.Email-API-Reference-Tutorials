@@ -3,10 +3,16 @@ title: C#'ta E-posta Başlıklarını Yapılandırma
 linktitle: C#'ta E-posta Başlıklarını Yapılandırma
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta özel e-posta başlıklarını nasıl yapılandıracağınızı öğrenin. Kaynak kodu içeren adım adım kılavuz. E-posta kontrolünü ve güvenliğini geliştirin.
-type: docs
 weight: 17
 url: /tr/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta E-posta Başlıklarını Yapılandırma
+
 
 E-posta iletişimi, modern iş ve kişisel etkileşimlerin ayrılmaz bir parçası haline geldi. Bir e-postanın içeriği çok önemli olsa da, e-postaya eşlik eden başlıklar da aynı derecede önemlidir. E-posta başlıkları mesaj, gönderen, alıcı ve daha fazlası hakkında değerli bilgiler sağlar. Aspose.Email for .NET'i kullanarak C#'ta e-posta başlıklarını yapılandırmak, e-posta mesajlarına gömülü bilgileri özelleştirmenin ve kontrol etmenin güçlü bir yolunu sunar. Bu makalede, Aspose.Email for .NET kütüphanesini kullanarak e-posta başlıklarının adım adım nasıl yapılandırılacağını inceleyeceğiz.
 
@@ -133,3 +139,9 @@ Aspose.Email, e-posta başlıklarının doğru şekilde biçimlendirildiğinden 
 ### E-posta başlıkları büyük/küçük harfe duyarlı mıdır?
 
 Evet, e-posta başlıkları büyük/küçük harfe duyarlı değildir. Ancak daha iyi uyumluluk için tutarlı büyük harf kullanımını sürdürmek iyi bir uygulamadır.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

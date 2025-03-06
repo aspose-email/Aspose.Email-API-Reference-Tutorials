@@ -3,10 +3,16 @@ title: Aspose.Email'de Büyük Ekleri Yönetme
 linktitle: Aspose.Email'de Büyük Ekleri Yönetme
 second_title: Aspose.Email Java E-posta Yönetimi API'si
 description: Aspose.Email for Java ile büyük e-posta eklerini verimli bir şekilde yönetin. Java uygulamalarında kolaylaştırılmış ek yönetimi için adım adım kılavuz ve kaynak kodu.
-type: docs
 weight: 11
 url: /tr/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email'de Büyük Ekleri Yönetme
+
 
 ## Aspose.Email for Java'da Büyük Ekleri Yönetmeye Giriş
 
@@ -145,3 +151,9 @@ E-posta eklerinin boyut sınırlamaları, e-posta servis sağlayıcılarına ve 
 ### Ekleri boyutlarını küçültmek için sıkıştırabilir miyim?
 
 Evet, ekleri göndermeden önce boyutlarını küçültmek için sıkıştırabilirsiniz. Aspose.Email, ekleri programlı olarak sıkıştırmak ve açmak için özellikler sağlar. E-posta eklerinizin boyutunu optimize etmek için bunu uygulayabilirsiniz.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

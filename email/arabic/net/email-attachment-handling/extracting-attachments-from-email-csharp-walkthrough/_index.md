@@ -3,10 +3,16 @@ title: استخراج المرفقات من البريد الإلكتروني - 
 linktitle: استخراج المرفقات من البريد الإلكتروني - إرشادات C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعلم كيفية استخراج مرفقات البريد الإلكتروني خطوة بخطوة باستخدام Aspose.Email لـ .NET. تعامل مع التنسيقات المختلفة واحفظها بسهولة.
-type: docs
 weight: 14
 url: /ar/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج المرفقات من البريد الإلكتروني - إرشادات C#
+
 
 ## مقدمة لاستخراج المرفقات من البريد الإلكتروني - إرشادات حول C# باستخدام Aspose.Email لـ .NET
 
@@ -114,3 +120,9 @@ foreach (Attachment attachment in message.Attachments)
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email؟
 
  للحصول على وثائق وأمثلة مفصلة، راجع[Aspose.وثائق البريد الإلكتروني](https://reference.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

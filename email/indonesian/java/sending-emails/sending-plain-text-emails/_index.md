@@ -3,10 +3,16 @@ title: Mengirim Email Teks Biasa dengan Aspose.Email
 linktitle: Mengirim Email Teks Biasa dengan Aspose.Email
 second_title: API Manajemen Email Java Aspose.Email
 description: Pelajari cara mengirim email teks biasa secara efisien dengan Aspose.Email untuk Java. Panduan komprehensif dengan contoh kode dan FAQ untuk komunikasi yang lancar.
-type: docs
 weight: 10
 url: /id/java/sending-emails/sending-plain-text-emails/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengirim Email Teks Biasa dengan Aspose.Email
+
 
 ## Perkenalan
 
@@ -109,3 +115,9 @@ public class PlainTextEmail {
 
 ### 6. Apakah ada batasan saat mengirim email teks biasa dengan Aspose.Email untuk Java?
    - Batasannya mungkin bergantung pada penyedia layanan email dan server SMTP Anda. Pastikan Anda mematuhi batasan pengiriman dan kebijakan pengiriman email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

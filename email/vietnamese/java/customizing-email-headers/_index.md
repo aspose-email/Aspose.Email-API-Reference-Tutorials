@@ -3,10 +3,16 @@ title: Tùy chỉnh tiêu đề email với Aspose.Email cho Java
 linktitle: Tùy chỉnh tiêu đề email với Aspose.Email cho Java
 second_title: Aspose.Email API quản lý email Java
 description: Tìm hiểu cách tùy chỉnh tiêu đề email một cách dễ dàng với Aspose.Email for Java. Đi sâu vào các hướng dẫn và khai thác sức mạnh của việc tùy chỉnh tiêu đề email.
-type: docs
 weight: 16
 url: /vi/java/customizing-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tùy chỉnh tiêu đề email với Aspose.Email cho Java
+
 
 Tiêu đề email đóng một vai trò quan trọng trong giao tiếp qua email, cung cấp thông tin cần thiết về nguồn gốc và cách gửi thư. Với Aspose.Email dành cho Java, việc tùy chỉnh tiêu đề email trở thành một nhiệm vụ đơn giản, cho phép người dùng điều chỉnh siêu dữ liệu email của họ theo nhu cầu và yêu cầu cụ thể.
 
@@ -37,3 +43,9 @@ Tăng tác động của email của bạn bằng cách đặt tiêu đề mức
 Giải phóng sức mạnh của tiêu đề X trong email bằng Aspose.Email for Java. Tìm hiểu cách quản lý siêu dữ liệu tùy chỉnh và nâng cao khả năng xử lý email.
 ### [Làm phong phú siêu dữ liệu email thông qua các tiêu đề với Aspose.Email](./enriching-email-metadata-through-headers/)
 Nâng cao siêu dữ liệu email với Aspose.Email cho Java. Tìm hiểu cách làm phong phú tiêu đề email để cải thiện khả năng theo dõi và tùy chỉnh với Aspose.Email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

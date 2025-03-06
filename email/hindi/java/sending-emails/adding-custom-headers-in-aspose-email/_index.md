@@ -3,10 +3,16 @@ title: Aspose.Email में कस्टम हेडर जोड़ना
 linktitle: Aspose.Email में कस्टम हेडर जोड़ना
 second_title: Aspose.Email जावा ईमेल प्रबंधन एपीआई
 description: जावा के लिए Aspose.Email का उपयोग करके कस्टम हेडर जोड़कर अपने ईमेल संदेशों को बेहतर बनाने का तरीका जानें। ईमेल मेटाडेटा और संगठन में सुधार करें.
-type: docs
 weight: 15
 url: /hi/java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Email में कस्टम हेडर जोड़ना
+
 
 ## परिचय
 
@@ -132,3 +138,9 @@ public class AddCustomHeadersExample {
 
 ### मैं प्राप्त ईमेल से कस्टम हेडर कैसे निकाल सकता हूँ?
     आप इसका उपयोग कर सकते हैं`getHeaders` प्राप्त ईमेल पर विधि`MailMessage` कस्टम हेडर को पुनः प्राप्त करने और संसाधित करने के लिए ऑब्जेक्ट।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

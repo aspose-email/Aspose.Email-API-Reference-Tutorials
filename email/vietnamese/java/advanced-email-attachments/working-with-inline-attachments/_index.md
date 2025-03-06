@@ -3,10 +3,16 @@ title: Làm việc với tệp đính kèm nội tuyến trong Aspose.Email
 linktitle: Làm việc với tệp đính kèm nội tuyến trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Tối ưu hóa giao tiếp email của bạn với Aspose.Email for Java. Tìm hiểu cách làm việc với các tệp đính kèm nội tuyến trong hướng dẫn toàn diện này.
-type: docs
 weight: 10
 url: /vi/java/advanced-email-attachments/working-with-inline-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm việc với tệp đính kèm nội tuyến trong Aspose.Email
+
 
 ## Giới thiệu về Làm việc với các tệp đính kèm nội tuyến trong Aspose.Email
 
@@ -135,3 +141,9 @@ Aspose.Email for Java hỗ trợ nhiều định dạng tệp khác nhau cho t�
 ### Aspose.Email for Java có tương thích với các máy chủ email khác nhau không?
 
 Có, Aspose.Email for Java tương thích với nhiều máy chủ email khác nhau. Đảm bảo bạn định cấu hình chính xác cài đặt SMTP cho máy chủ email của mình khi gửi email.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

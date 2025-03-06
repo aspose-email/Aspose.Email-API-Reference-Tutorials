@@ -3,10 +3,16 @@ title: Gestion des erreurs SMTP et dépannage avec Aspose.Email
 linktitle: Gestion des erreurs SMTP et dépannage avec Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Optimisez la communication par courrier électronique avec Aspose.Email pour Java. Apprenez à gérer les erreurs SMTP et à résoudre efficacement les problèmes.
-type: docs
 weight: 14
 url: /fr/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Gestion des erreurs SMTP et dépannage avec Aspose.Email
+
 
 ## Introduction aux erreurs SMTP
 
@@ -107,3 +113,9 @@ Cette erreur se produit généralement lorsque le serveur SMTP est lent ou inacc
 ### Aspose.Email for Java est-il adapté au traitement de gros volumes d’e-mails ?
 
 Oui, Aspose.Email pour Java est conçu pour gérer efficacement les petits et grands volumes de courrier électronique.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

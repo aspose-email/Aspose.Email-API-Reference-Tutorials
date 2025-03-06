@@ -3,10 +3,16 @@ title: Настройка статуса участника для посети�
 linktitle: Настройка статуса участника для посетителей встречи с помощью C#
 second_title: Aspose.Email .NET API обработки электронной почты
 description: Узнайте, как управлять статусом участников встреч с помощью C# и Aspose.Email для .NET. Пошаговое руководство с исходным кодом.
-type: docs
 weight: 16
 url: /ru/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Настройка статуса участника для посетителей встречи с помощью C#
+
 
 ## Введение в Aspose.Email для .NET
 
@@ -109,3 +115,9 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 ### Где я могу найти дополнительную документацию и ресурсы?
 
  Более подробную документацию и ресурсы можно найти в документации Aspose.Email for .NET:[Документация Aspose.Email для .NET](https://reference.aspose.com/email/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Guia C# – Extraindo cabeçalhos de e-mail
 linktitle: Guia C# – Extraindo cabeçalhos de e-mail
 second_title: API de processamento de e-mail Aspose.Email .NET
 description: Aprenda como extrair cabeçalhos de e-mail em C# usando Aspose.Email for .NET. Guia passo a passo com código-fonte para análise eficiente de e-mail.
-type: docs
 weight: 15
 url: /pt/net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Guia C# – Extraindo cabeçalhos de e-mail
+
 
 Você já se perguntou como extrair cabeçalhos de e-mail usando C#? Os cabeçalhos de e-mail contêm informações valiosas sobre o remetente, destinatário, assunto e vários outros detalhes. Neste guia, orientaremos você no processo passo a passo de extração de cabeçalhos de e-mail usando a poderosa biblioteca Aspose.Email for .NET. Esta biblioteca fornece um conjunto abrangente de recursos para trabalhar com emails em seus aplicativos .NET.
 
@@ -163,3 +169,9 @@ if (subject.Contains("urgent"))
 ### Onde posso acessar a documentação do Aspose.Email e baixar a biblioteca?
 
  Você pode encontrar a documentação em[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . Para baixar a biblioteca, visite[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

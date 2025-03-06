@@ -3,10 +3,16 @@ title: C#'ta TNEF Mesaj Algılama - Açıklandı
 linktitle: C#'ta TNEF Mesaj Algılama - Açıklandı
 second_title: Aspose.Email .NET E-Posta İşleme API'si
 description: Aspose.Email for .NET'i kullanarak C#'ta TNEF mesajlarını algılamayı ve işlemeyi öğrenin. Zengin metin ve eklerle e-posta yönetimini geliştirin.
-type: docs
 weight: 15
 url: /tr/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# C#'ta TNEF Mesaj Algılama - Açıklandı
+
 
 Bu kılavuz, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Taşıma Nötr Kapsülleme Formatı) mesajlarının nasıl tespit edileceğine dair ayrıntılı adım adım açıklama sağlayacaktır. TNEF, Microsoft Outlook tarafından e-posta iletilerindeki zengin metni ve ekleri kapsüllemek için kullanılan bir biçimdir. Aspose.Email for .NET, TNEF mesajları da dahil olmak üzere e-postalar ve eklerle çalışmak için güçlü bir API seti sunar.
 
@@ -117,3 +123,10 @@ foreach (var attachment in message.Attachments)
 Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak TNEF (Transport Neutral Encapsulation Format) mesajlarını nasıl tespit edeceğinizi öğrendiniz. Microsoft Outlook tarafından sıklıkla kullanılan TNEF mesajları, e-postaların içindeki zengin metinleri ve ekleri kapsüller. Bu kılavuzda özetlenen adımları izleyerek, TNEF mesajlarını verimli bir şekilde tanımlayabilir ve daha sonraki işlemler için eklerini çıkarabilirsiniz.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

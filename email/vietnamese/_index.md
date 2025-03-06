@@ -3,11 +3,16 @@ title: Hướng dẫn Aspose.Email để quản lý và thao tác email
 linktitle: Hướng dẫn về Aspose.Email
 additionalTitle: Tham khảo API Aspose
 description: Mở khóa quản lý email hiệu quả với hướng dẫn Aspose.Email. Từ thành phần đến bảo mật, nắm vững các khía cạnh đa dạng để nâng cao quy trình làm việc và trải nghiệm người dùng.
-type: docs
 weight: 10
 url: /vi/
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn Aspose.Email để quản lý và thao tác email
+
 Khám phá kiến thức và kiến thức chuyên môn phong phú thông qua các hướng dẫn của Aspose.Email, cánh cổng giúp bạn thành thạo việc quản lý và thao tác email hiệu quả. Những hướng dẫn này bao gồm nhiều chủ đề khác nhau, từ soạn email đến xác thực, chuyển đổi và bảo mật, cho phép các nhà phát triển tích hợp liền mạch các tính năng mạnh mẽ vào ứng dụng của họ. Với hướng dẫn rõ ràng và ví dụ thực tế, bạn có thể nâng cao quy trình làm việc qua email, đảm bảo độ chính xác của dữ liệu và nâng cao chiến lược liên lạc, cuối cùng là mang lại trải nghiệm nâng cao cho người dùng và quy trình hợp lý.
 
 ## Aspose.Email For .NET: Hướng dẫn API xử lý email
@@ -46,3 +51,9 @@ Các hướng dẫn của Aspose.Email for Java cung cấp một nguồn tài ng
 - [Bảo mật liên lạc qua email với Aspose.Email cho Java](./java/securing-email-communications/)
 - [Tùy chỉnh tiêu đề email với Aspose.Email cho Java](./java/customizing-email-headers/)
 - [Khám phá bảo mật email với Aspose.Email cho Java](./java/exploring-email-security/)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

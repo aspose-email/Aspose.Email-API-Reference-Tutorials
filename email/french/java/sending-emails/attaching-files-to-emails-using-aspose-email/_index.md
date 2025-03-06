@@ -3,10 +3,16 @@ title: Joindre des fichiers à des e-mails à l'aide d'Aspose.Email
 linktitle: Joindre des fichiers à des e-mails à l'aide d'Aspose.Email
 second_title: API de gestion de courrier électronique Java Aspose.Email
 description: Apprenez à joindre des fichiers à des e-mails à l'aide d'Aspose.Email pour Java. Améliorez facilement vos e-mails à l’aide de ce guide étape par étape.
-type: docs
 weight: 12
 url: /fr/java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Joindre des fichiers à des e-mails à l'aide d'Aspose.Email
+
 ## Introduction
 
 Dans le monde de la communication par courrier électronique, la possibilité d’envoyer des pièces jointes est cruciale. Que vous envoyiez des documents importants, des images ou tout autre type de fichier, le processus doit être simple et fiable. Aspose.Email pour Java simplifie ce processus en fournissant des outils puissants pour joindre des fichiers aux messages électroniques.
@@ -134,3 +140,9 @@ Si vous avez d'autres questions ou avez besoin d'aide, n'hésitez pas à nous co
 
 ### Existe-t-il des limites de taille pour les pièces jointes des e-mails ?
    Les serveurs et clients de messagerie peuvent avoir des limites de taille de pièce jointe. Assurez-vous que vos pièces jointes respectent des limites de taille acceptables pour éviter les problèmes d'envoi ou de réception d'e-mails.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

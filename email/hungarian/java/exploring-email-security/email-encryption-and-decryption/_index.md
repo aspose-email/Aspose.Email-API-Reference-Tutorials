@@ -3,10 +3,16 @@ title: E-mail titkosítás és visszafejtés az Aspose.Email segítségével
 linktitle: E-mail titkosítás és visszafejtés az Aspose.Email segítségével
 second_title: Aspose.Email Java Email Management API
 description: Ismerje meg, hogyan védheti meg e-mailjeit e-mail titkosítással és visszafejtéssel az Aspose.Email for Java használatával. Lépésről lépésre útmutató, forráskód és GYIK mellékelve.
-type: docs
 weight: 11
 url: /hu/java/exploring-email-security/email-encryption-and-decryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# E-mail titkosítás és visszafejtés az Aspose.Email segítségével
+
 
 ## Bevezetés
 
@@ -95,3 +101,9 @@ Igen, méretezhetőségre tervezték, így alkalmas kis és nagy volumenű e-mai
  Tekintse meg az API dokumentációját[itt](https://reference.aspose.com/email/java/) részletes információkért és példákért.
 
 Most már átfogó ismeretekkel rendelkezik az e-mail titkosításról és visszafejtésről az Aspose.Email for Java használatával. Kezdje el e-mailjei védelmét még ma!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

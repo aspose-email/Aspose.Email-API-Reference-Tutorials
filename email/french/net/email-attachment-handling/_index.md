@@ -3,10 +3,16 @@ title: Maîtriser la gestion des pièces jointes aux e-mails avec Aspose.Email p
 linktitle: Gestion des pièces jointes aux e-mails
 second_title: API de traitement des e-mails Aspose.Email .NET
 description: Améliorez la gestion des e-mails à l’aide des didacticiels Aspose.Email pour .NET. Découvrez un traitement rationalisé, des analyses et des informations basées sur les données. Guide étape par étape fourni.
-type: docs
 weight: 12
 url: /fr/net/email-attachment-handling/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maîtriser la gestion des pièces jointes aux e-mails avec Aspose.Email pour .NET
+
 ## Introduction
 
 Les didacticiels Aspose.Email pour .NET sur « Pièces jointes aux e-mails et gestion des pièces jointes » offrent aux développeurs un guide complet pour gérer et manipuler efficacement les pièces jointes aux e-mails dans leurs applications. Ces didacticiels fournissent des informations précieuses sur la manière d'exploiter la puissance d'Aspose.Email pour .NET pour gérer de manière transparente les pièces jointes, améliorant ainsi l'échange de données et la collaboration. Grâce à des instructions étape par étape et des extraits de code illustratifs, les développeurs peuvent intégrer en toute confiance des fonctionnalités liées aux pièces jointes dans leurs applications, optimisant ainsi les flux de travail de communication par courrier électronique et l'expérience utilisateur.
@@ -46,3 +52,10 @@ Découvrez comment extraire des pièces jointes intégrées à partir de fichier
 Découvrez comment conserver le format MSG intégré à l’aide d’Aspose.Email pour .NET. Guide étape par étape avec le code source.
 ### [Préserver les pièces jointes TNEF lors de la lecture des messages - Approche C#](./preserving-tnef-attachments-when-reading-messages-csharp-approach/)
 Découvrez comment conserver les pièces jointes TNEF à l'aide d'Aspose.Email pour .NET dans ce guide étape par étape avec le code source.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

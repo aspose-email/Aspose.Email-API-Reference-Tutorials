@@ -3,10 +3,16 @@ title: Quản lý tệp đính kèm lớn trong Aspose.Email
 linktitle: Quản lý tệp đính kèm lớn trong Aspose.Email
 second_title: Aspose.Email API quản lý email Java
 description: Quản lý hiệu quả các tệp đính kèm email lớn với Aspose.Email cho Java. Hướng dẫn từng bước và mã nguồn để xử lý tệp đính kèm được hợp lý hóa trong các ứng dụng Java.
-type: docs
 weight: 11
 url: /vi/java/advanced-email-attachments/managing-large-attachments/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Quản lý tệp đính kèm lớn trong Aspose.Email
+
 
 ## Giới thiệu về Quản lý tệp đính kèm lớn trong Aspose.Email cho Java
 
@@ -145,3 +151,9 @@ Giới hạn kích thước đối với tệp đính kèm email có thể khác
 ### Tôi có thể nén tệp đính kèm để giảm kích thước của chúng không?
 
 Có, bạn có thể nén tệp đính kèm để giảm kích thước trước khi gửi. Aspose.Email cung cấp các tính năng nén và giải nén tệp đính kèm theo chương trình. Bạn có thể triển khai điều này để tối ưu hóa kích thước tệp đính kèm email của mình.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Bijlage of ingesloten bericht detecteren - C#-handleiding
 linktitle: Bijlage of ingesloten bericht detecteren - C#-handleiding
 second_title: Aspose.Email .NET E-mailverwerkings-API
 description: Beheers de detectie van e-mailbijlagen en ingebedde berichten in C# met behulp van Aspose.Email voor .NET. Verbeter uw e-mailverwerking met onze uitgebreide gids.
-type: docs
 weight: 13
 url: /nl/net/email-attachment-handling/detecting-attachment-or-embedded-message-csharp-guide/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bijlage of ingesloten bericht detecteren - C#-handleiding
+
 
 ## Inleiding tot het detecteren van bijlagen of ingesloten berichten - C#-handleiding
 
@@ -106,3 +112,9 @@ U moet de juiste foutafhandelingsmechanismen implementeren met behulp van try-ca
 ### Kan ik de verwerking van bijlagen en ingesloten berichten aanpassen?
 
 Absoluut, u kunt de verwerking van bijlagen en ingesloten berichten afstemmen op de behoeften van uw specifieke toepassing. Aspose.Email biedt hiervoor flexibele API's.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

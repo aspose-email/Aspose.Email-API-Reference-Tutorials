@@ -3,10 +3,16 @@ title: 高效率的電子郵件文件儲存和檢索
 linktitle: 電子郵件文件儲存和檢索
 second_title: Aspose.Email .NET 電子郵件處理 API
 description: 使用 Aspose.Email for .NET 教學簡化電子郵件文件儲存和檢索。了解以程式方式管理和存取電子郵件和附件。
-type: docs
 weight: 18
 url: /zh-hant/net/email-file-storage-and-retrieval/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 高效率的電子郵件文件儲存和檢索
+
 
 ## 介紹
 
@@ -27,3 +33,9 @@ Aspose.Email for .NET 關於「電子郵件檔案儲存和檢索」的教學課�
 了解如何使用 C# 和 Aspose.Email for .NET 讀取 NSF 儲存訊息。帶有程式碼範例的分步指南。
 ### [使用 C# 保存來自 Zimbra TGZ 儲存的訊息](./saving-messages-from-zimbra-tgz-storage-with-csharp/)
 了解如何使用 Aspose.Email for .NET 擷取 Zimbra TGZ 電子郵件。具有原始程式碼的逐步指南，可實現高效的電子郵件管理。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

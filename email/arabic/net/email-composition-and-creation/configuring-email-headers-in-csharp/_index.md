@@ -3,10 +3,16 @@ title: تكوين رؤوس البريد الإلكتروني في C#
 linktitle: تكوين رؤوس البريد الإلكتروني في C#
 second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
 description: تعرف على كيفية تكوين رؤوس البريد الإلكتروني المخصصة في C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن. تعزيز التحكم في البريد الإلكتروني وأمنه.
-type: docs
 weight: 17
 url: /ar/net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تكوين رؤوس البريد الإلكتروني في C#
+
 
 أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من التفاعلات التجارية والشخصية الحديثة. في حين أن محتوى البريد الإلكتروني أمر بالغ الأهمية، فإن العناوين المصاحبة للبريد الإلكتروني لها نفس القدر من الأهمية. توفر رؤوس البريد الإلكتروني معلومات قيمة حول الرسالة والمرسل والمستلم والمزيد. يوفر تكوين رؤوس البريد الإلكتروني في لغة C# باستخدام Aspose.Email for .NET طريقة قوية لتخصيص المعلومات المضمنة في رسائل البريد الإلكتروني والتحكم فيها. في هذه المقالة، سنستكشف كيفية تكوين رؤوس البريد الإلكتروني خطوة بخطوة باستخدام Aspose.Email لمكتبة .NET.
 
@@ -133,3 +139,9 @@ Install-Package Aspose.Email
 ### هل رؤوس البريد الإلكتروني حساسة لحالة الأحرف؟
 
 نعم، رؤوس البريد الإلكتروني حساسة لحالة الأحرف. ومع ذلك، من الممارسات الجيدة الحفاظ على الحروف الكبيرة بشكل متناسق لتحقيق توافق أفضل.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

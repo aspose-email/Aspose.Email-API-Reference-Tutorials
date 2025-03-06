@@ -3,10 +3,16 @@ title: Modyfikowanie adresów e-mail za pomocą języka C#
 linktitle: Modyfikowanie adresów e-mail za pomocą języka C#
 second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
 description: Dowiedz się, jak modyfikować adresy e-mail za pomocą języka C# za pomocą Aspose.Email dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby skutecznie manipulować adresami e-mail.
-type: docs
 weight: 10
 url: /pl/net/email-header-manipulation/modifying-email-addresses-with-csharp/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Modyfikowanie adresów e-mail za pomocą języka C#
+
 
 ## Wstęp
 
@@ -132,3 +138,9 @@ Chociaż Aspose.Email to solidny wybór, inne biblioteki, takie jak MimeKit i Op
 ## Wniosek
 
 tym przewodniku wyruszyliśmy w podróż mającą na celu poznanie świata modyfikacji adresów e-mail przy użyciu C# i Aspose.Email dla .NET. Postępując zgodnie ze szczegółowymi instrukcjami i wykorzystując dostarczony kod źródłowy, posiadasz teraz umiejętności skutecznego modyfikowania adresów e-mail w swoich aplikacjach. Możliwości Aspose.Email w połączeniu z Twoją nowo zdobytą wiedzą niewątpliwie usprawnią Twoje wysiłki związane z manipulacją pocztą e-mail.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
