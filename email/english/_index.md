@@ -1,5 +1,5 @@
 ---
-title: Aspose.Email Tutorials: C# .NET & Java API for Email Management
+title: "Aspose.Email Tutorials&#58; C# .NET & Java API for Email Management"
 linktitle: Aspose.Email Tutorials
 additionalTitle: Aspose API References
 description: Master efficient email management and manipulation with comprehensive Aspose.Email tutorials for C# .NET and Java. Learn email composition, conversion, security, parsing, and more for robust application development.
