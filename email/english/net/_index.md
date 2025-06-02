@@ -68,9 +68,6 @@ Here are some of our most popular tutorials to get you started and beyond:
 * ### [Email Security & Authentication in .NET Applications](./security-authentication/)
     Our security and authentication tutorials demonstrate how to protect email communications using **Aspose.Email for .NET**. Implement email encryption, add digital signatures, configure DKIM signing, and set up secure authentication.
 
-* ### [Third-Party Service Integration with Aspose.Email for .NET](./third-party-service-integration/)
-    Learn to integrate with popular email services using our **Aspose.Email for .NET** tutorials. Connect to Gmail, Office 365, Google Workspace, and other email providers with OAuth authentication and specialized API features.
-
 * ### [Email Parsing & Analysis Techniques in .NET](./email-parsing-analysis/)
     Our email parsing and analysis tutorials show you how to extract valuable information from email messages using **Aspose.Email in .NET**. Parse email headers, extract recipient information, and analyze message content programmatically.
 
