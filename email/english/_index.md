@@ -34,7 +34,6 @@ Explore our Aspose.Email for .NET tutorials:
 - [Working with Outlook PST & OST Files in .NET](./net/outlook-pst-ost-operations/)
 - [MAPI Operations for Outlook Data in .NET](./net/mapi-operations/)
 - [Email Security & Authentication in .NET Applications](./net/security-authentication/)
-- [Third-Party Service Integration with Aspose.Email for .NET](./net/third-party-service-integration/)
 - [Email Parsing & Analysis Techniques in .NET](./net/email-parsing-analysis/)
 - [Email Conversion & Rendering to Various Formats (.NET)](./net/email-conversion-rendering/)
 - [Advanced Email Composition and Creation with .NET](./net/email-composition-and-creation/)
