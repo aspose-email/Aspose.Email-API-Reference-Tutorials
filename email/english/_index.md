@@ -24,6 +24,21 @@ Dive into the world of advanced email management with the Aspose.Email for .NET 
 {{% /alert %}}
 
 These are links to some useful resources:
+- [Getting Started](./net/getting-started/)
+- [Email Message Operations](./net/email-message-operations/)
+- [Message Formatting & Customization](./net/message-formatting-customization/)
+- [Attachments Handling](./net/attachments-handling/)
+- [Calendar & Appointments](./net/calendar-appointments/)
+- [Exchange Server Integration](./net/exchange-server-integration/)
+- [IMAP Client Operations](./net/imap-client-operations/)
+- [POP3 Client Operations](./net/pop3-client-operations/)
+- [SMTP Client Operations](./net/smtp-client-operations/)
+- [Outlook PST & OST Operations](./net/outlook-pst-ost-operations/)
+- [MAPI Operations](./net/mapi-operations/)
+- [Security & Authentication](./net/security-authentication/)
+- [Third-Party Service Integration](./net/third-party-service-integration/)
+- [Email Parsing & Analysis](./net/email-parsing-analysis/)
+- [Email Conversion & Rendering](./net/email-conversion-rendering/)
 - [Email Composition and Creation](./net/email-composition-and-creation/)
 - [Email Conversion and Export](./net/email-conversion-and-export/)
 - [Email Attachment Handling](./net/email-attachment-handling/)
@@ -44,6 +59,21 @@ Aspose.Email for Java tutorials offer an invaluable resource for developers seek
 {{% /alert %}}
 
 These are links to some useful resources:
+- [Getting Started](./java/getting-started/)
+- [Email Message Operations](./java/email-message-operations/)
+- [Message Formatting & Customization](./java/message-formatting-customization/)
+- [Attachments Handling](./java/attachments-handling/)
+- [Calendar & Appointments](./java/calendar-appointments/)
+- [Exchange Server Integration](./java/exchange-server-integration/)
+- [IMAP Client Operations](./java/imap-client-operations/)
+- [POP3 Client Operations](./java/pop3-client-operations/)
+- [SMTP Client Operations](./java/smtp-client-operations/)
+- [Outlook PST & OST Operations](./java/outlook-pst-ost-operations/)
+- [MAPI Operations](./java/mapi-operations/)
+- [Security & Authentication](./java/security-authentication/)
+- [Email Parsing & Analysis](./java/email-parsing-analysis/)
+- [Email Conversion & Rendering](./java/email-conversion-rendering/)
+- [Thunderbird & MBOX Operations](./java/thunderbird-mbox-operations/)
 - [Sending Emails with Aspose.Email for Java](./java/sending-emails/)
 - [Receiving Emails with Aspose.Email for Java](./java/receiving-emails/)
 - [Configuring SMTP Servers with Aspose.Email for Java](./java/configuring-smtp-servers/)
