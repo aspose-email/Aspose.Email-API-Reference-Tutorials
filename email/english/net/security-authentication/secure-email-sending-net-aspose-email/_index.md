@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Secure Emails in .NET Using Aspose.Email: An SSL SMTP Client Guide
 
@@ -193,6 +195,9 @@ Certainly! You can configure and loop through a list of recipients or messages t
 Embark on your secure email journey with Aspose.Email for .NET today and enhance the security of your applications!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

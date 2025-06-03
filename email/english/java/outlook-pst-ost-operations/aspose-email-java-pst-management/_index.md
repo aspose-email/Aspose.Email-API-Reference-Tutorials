@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement Aspose.Email Java: Create and Manage PST Files
 
@@ -211,7 +213,11 @@ A: Common issues include incorrect file paths, insufficient permissions, or unma
 - **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
 - **Download Aspose.Email for Java**: [Releases Page](https://releases.aspose.com/email/java/)
 - **Purchase or Trial License**: [Aspose Purchase](https://purchase.aspose.com/buy)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Client Operations in .NET with Aspose.Email: A Comprehensive Guide
 
@@ -188,7 +190,11 @@ By following this tutorial, you have equipped yourself with the knowledge to ini
 ## Resources
 - [Aspose.Email Documentation](https://reference.aspose.com/email/net/)
 - [Download Aspose.Email](https://releases.aspose.com/email/net/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

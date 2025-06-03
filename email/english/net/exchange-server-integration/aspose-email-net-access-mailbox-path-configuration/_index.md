@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Accessing & Configuring Mailbox Paths with Aspose.Email for .NET
 
@@ -169,6 +171,9 @@ You've now learned how to access another mailbox using EWS and configure path pl
 Explore these resources to deepen your understanding and implementation of Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

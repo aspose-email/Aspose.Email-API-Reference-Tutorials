@@ -1,52 +1,54 @@
 ---
-title: تخصيص تحويل MHTML - تنفيذ C#
-linktitle: تخصيص تحويل MHTML - تنفيذ C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تخصيص تحويل MHTML باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود مصدر C#.
-weight: 10
-url: /ar/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/
+"description": "Learn how to customize MHTML conversion using Aspose.Email for .NET. Step-by-step guide with C# source code."
+"linktitle": "Customizing MHTML Conversion - C# Implementation"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Customizing MHTML Conversion - C# Implementation"
+"url": "/ar/net/email-conversion-and-export/customizing-mhtml-conversion-csharp-implementation/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تخصيص تحويل MHTML - تنفيذ C#
+# Customizing MHTML Conversion - C# Implementation
 
 
-## مقدمة لتخصيص تحويل MHTML
+## Introduction to Customizing MHTML Conversion
 
-إذا كنت تتطلع إلى تخصيص تحويل MHTML باستخدام Aspose.Email لـ .NET، فأنت في المكان الصحيح. سيرشدك هذا الدليل الشامل خلال العملية خطوة بخطوة، ويزودك بكود المصدر الذي تحتاجه للتنفيذ الناجح. MHTML (MIME HTML) هو تنسيق أرشيف ويب يجمع محتوى HTML وموارده في ملف واحد. يوفر Aspose.Email for .NET أدوات قوية للعمل مع ملفات MHTML، ومع بعض التعديلات، يمكنك تخصيص عملية التحويل وفقًا لمتطلباتك المحددة.
+If you're looking to customize MHTML conversion using Aspose.Email for .NET, you're in the right place. This comprehensive guide will walk you through the process step by step, providing you with the source code you need for successful implementation. MHTML (MIME HTML) is a web archive format that combines HTML content and its resources into a single file. Aspose.Email for .NET offers powerful tools to work with MHTML files, and with a few tweaks, you can tailor the conversion process to your specific requirements.
 
-## إعداد بيئة التطوير الخاصة بك
+## Setting Up Your Development Environment
 
-قبل أن تتعمق في تخصيص تحويل MHTML، تأكد من تثبيت Aspose.Email for .NET وجاهزية مشروع C# جديد للبدء.
+Before you dive into customizing MHTML conversion, ensure you have Aspose.Email for .NET installed and a new C# project ready to go.
 
-1. تثبيت Aspose.Email لـ .NET:
-للبدء، قم بتنزيل Aspose.Email for .NET وتثبيته من[رابط التحميل](https://releases.aspose.com/email/net). اتبع تعليمات التثبيت المتوفرة في الوثائق.
+1. Installing Aspose.Email for .NET:
+To get started, download and install Aspose.Email for .NET from the [download link](https://releases.aspose.com/email/net). Follow the installation instructions provided in the documentation.
 
-2. إنشاء مشروع C# جديد:
-افتح Visual Studio وقم بإنشاء مشروع C# جديد. تأكد من أنك قمت بالرجوع إلى مكتبة Aspose.Email في مشروعك عن طريق إضافة مرجع DLL المناسب.
+2. Creating a New C# Project:
+Open Visual Studio and create a new C# project. Ensure that you've referenced the Aspose.Email library in your project by adding the appropriate DLL reference.
 
-## تحميل وتعديل ملفات MHTML
+## Loading and Modifying MHTML Files
 
-بمجرد إعداد بيئتك، يمكنك البدء في تحميل ملفات MHTML وتعديلها باستخدام Aspose.Email لـ .NET.
+Once your environment is set up, you can start loading and modifying MHTML files using Aspose.Email for .NET.
 
-1. تحميل ملف MHTML:
-استخدم الكود التالي لتحميل ملف MHTML في التطبيق الخاص بك:
+1. Loading an MHTML File:
+Use the following code to load an MHTML file into your application:
 
 ```csharp
 using Aspose.Email.Mime;
-// قم بتحميل ملف MHTML
+// Load MHTML file
 var message = MailMessage.Load("path/to/your/file.mhtml");
 ```
 
-## تخصيص خيارات التحويل
+## Customizing Conversion Options
 
-قم بتخصيص عملية تحويل MHTML الخاصة بك عن طريق تحديد تنسيقات الإخراج المختلفة وضبط الإعدادات.
+Customize your MHTML conversion process by specifying various output formats and adjusting settings.
 
-1. التحكم في جودة الصورة:
-التحكم في جودة الصور المضمنة:
+1. Controlling Image Quality:
+Control the quality of embedded images:
 
 ```csharp
 options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideExtraPrintHeader;
@@ -54,28 +56,30 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 
 ## خاتمة
 
-في هذا الدليل، قمنا بتغطية العملية خطوة بخطوة لتخصيص تحويل MHTML باستخدام Aspose.Email لـ .NET. باتباع هذه الإرشادات واستخدام أمثلة التعليمات البرمجية المتوفرة، يمكنك تخصيص تحويل MHTML الخاص بك لتلبية احتياجات مشروعك المحددة. سواء كنت تقوم بتضمين صور، أو تعديل نص، أو إضافة رؤوس، فإن Aspose.Email for .NET يوفر الأدوات التي تحتاجها لإنشاء تحويلات عالية الجودة بكفاءة.
+In this guide, we've covered the step-by-step process of customizing MHTML conversion using Aspose.Email for .NET. By following these instructions and utilizing the provided code examples, you can tailor your MHTML conversion to meet your specific project needs. Whether you're embedding images, modifying text, or adding headers, Aspose.Email for .NET offers the tools you need to create high-quality conversions efficiently.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### ما هو لغة HTML؟
+### What is MHTML?
 
-MHTML (MIME HTML) هو تنسيق أرشيف ويب يجمع محتوى HTML وموارده في ملف واحد. يتم استخدامه بشكل شائع لحفظ صفحات الويب مع جميع عناصر الوسائط المرتبطة بها.
+MHTML (MIME HTML) is a web archive format that combines HTML content and its resources into a single file. It's commonly used to save web pages along with all associated media elements.
 
-### كيف يعمل Aspose.Email for .NET على تبسيط عملية تحويل MHTML؟
+### How does Aspose.Email for .NET simplify MHTML conversion?
 
-يوفر Aspose.Email for .NET مجموعة شاملة من الفئات والأساليب التي تسمح للمطورين بتحميل ملفات MHTML وتعديلها وتحويلها بسهولة. تعمل واجهة برمجة التطبيقات البديهية والوثائق التفصيلية على تبسيط عملية التخصيص.
+Aspose.Email for .NET provides a comprehensive set of classes and methods that allow developers to easily load, modify, and convert MHTML files. Its intuitive API and detailed documentation streamline the customization process.
 
-### هل يمكنني تحويل MHTML إلى تنسيقات إخراج مختلفة باستخدام هذا التنفيذ؟
+### Can I convert MHTML to different output formats using this implementation?
 
-قطعاً! يدعم Aspose.Email for .NET مجموعة متنوعة من تنسيقات الإخراج، مثل PDF وDOCX والمزيد. يمكنك ضبط خيارات التحويل لتحقيق تنسيق الإخراج المطلوب.
+Absolutely! Aspose.Email for .NET supports a variety of output formats, such as PDF, DOCX, and more. You can adjust conversion options to achieve the desired output format.
 
-### هل Aspose.Email for .NET مناسب لكل من المشاريع الصغيرة والكبيرة الحجم؟
+### Is Aspose.Email for .NET suitable for both small and large-scale projects?
 
-نعم، تم تصميم Aspose.Email for .NET ليكون قابلاً للتطوير، مما يجعله مناسبًا للمشاريع ذات الأحجام المختلفة. يتم استخدامه على نطاق واسع في كل من التطبيقات الصغيرة والحلول الكبيرة على مستوى المؤسسات.
+Yes, Aspose.Email for .NET is designed to be scalable, making it suitable for projects of various sizes. It's widely used in both small applications and large enterprise-level solutions.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Preserve TNEF Attachments Using Aspose.Email for .NET: A Complete Guide
 
@@ -150,7 +152,11 @@ Ready to put this into practice? Try implementing these solutions and see how th
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 We hope this guide empowers you to effectively manage TNEF attachments in your .NET projects using Aspose.Email. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Configure an IMAP Client Using Aspose.Email for .NET
 
@@ -183,6 +185,9 @@ By following this guide, you've learned how to connect to an IMAP server using A
 - Purchase: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

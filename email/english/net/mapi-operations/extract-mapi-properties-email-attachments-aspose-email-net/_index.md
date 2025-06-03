@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Named MAPI Properties from Email Attachments Using Aspose.Email for .NET
 
@@ -181,7 +183,11 @@ A: They're often utilized for custom metadata in attachments, aiding in tracking
 - **Support Forum**: [Aspose.Email Support](https://forum.aspose.com/c/email/10)
 
 Explore these resources to deepen your understanding and get the most out of Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

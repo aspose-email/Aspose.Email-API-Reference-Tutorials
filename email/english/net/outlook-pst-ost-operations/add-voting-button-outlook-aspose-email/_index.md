@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Add Voting Buttons to Outlook Emails Using Aspose.Email .NET
 
@@ -168,7 +170,11 @@ For further reading and tools, visit:
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 With these resources and your new skills, you're well-equipped to enhance your email communications using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

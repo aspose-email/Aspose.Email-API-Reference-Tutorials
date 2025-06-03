@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Manage EWS Clients with Aspose.Email for Java
 
@@ -167,7 +169,11 @@ Optimize your code by managing object lifecycles effectively and using efficient
 ## Resources
 - **Documentation**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
 - **Download**: [Latest Releases of Aspose.Email for Java](https://releases.aspose.com/email/java)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

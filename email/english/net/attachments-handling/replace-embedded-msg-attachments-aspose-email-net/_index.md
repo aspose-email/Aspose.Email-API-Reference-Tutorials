@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Replace Embedded MSG Attachments Using Aspose.Email for .NET
 
@@ -173,6 +175,9 @@ Ready to implement this solution? Head over to our resources section, and start 
 Embark on your journey to master email processing in .NET with Aspose.Email, and take your application development skills to the next level!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

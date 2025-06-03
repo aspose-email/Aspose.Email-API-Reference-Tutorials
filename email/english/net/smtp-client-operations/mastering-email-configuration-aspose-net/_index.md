@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Aspose.Email for .NET: Configure Email Properties Effortlessly
 
@@ -216,7 +218,11 @@ You can set the email's priority by assigning `MailPriority.High`, `MailPriority
 
 ### Can I configure delivery notifications for emails?
 Yes, you can enable delivery notification options such as `OnSuccess` and `OnError` using the `DeliveryNotificationOptions` property.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

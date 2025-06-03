@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Aspose.Email .NET: Implement EWS Restore with Custom Exceptions
 
@@ -201,7 +203,11 @@ Ready to take the next step? Implement these strategies in your projects and exp
    - Use NuGet Package Manager or the .NET CLI to add the package to your project.
 3. **Can I use Aspose.Email with older versions of .NET Framework?**
    - Yes, but ensure compatibility by checking the library’s documentation.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

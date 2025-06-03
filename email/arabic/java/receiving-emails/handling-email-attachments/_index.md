@@ -1,57 +1,59 @@
 ---
-title: التعامل مع مرفقات البريد الإلكتروني في Aspose.Email
-linktitle: التعامل مع مرفقات البريد الإلكتروني في Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعلم كيفية التعامل مع مرفقات البريد الإلكتروني في Aspose.Email لـ Java. دليل خطوة بخطوة مع التعليمات البرمجية المصدر والأسئلة الشائعة لإدارة مرفقات البريد الإلكتروني بكفاءة.
-weight: 15
-url: /ar/java/receiving-emails/handling-email-attachments/
+"description": "Learn to handle email attachments in Aspose.Email for Java. Step-by-step guide with source code and FAQs for efficient email attachment management."
+"linktitle": "Handling Email Attachments in Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Handling Email Attachments in Aspose.Email"
+"url": "/ar/java/receiving-emails/handling-email-attachments/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# التعامل مع مرفقات البريد الإلكتروني في Aspose.Email
+# Handling Email Attachments in Aspose.Email
 
 
-إذا كنت تتعامل مع رسائل البريد الإلكتروني بلغة Java، فإن المعالجة الفعالة للمرفقات أمر بالغ الأهمية. يوفر Aspose.Email for Java أدوات قوية لإدارة مرفقات البريد الإلكتروني بسلاسة. في هذا الدليل، سنرشدك خلال عملية التعامل مع مرفقات البريد الإلكتروني خطوة بخطوة، مع استكمال أمثلة التعليمات البرمجية المصدر والأسئلة الشائعة لضمان فهمك للمفهوم تمامًا.
+If you're working with emails in Java, efficient attachment handling is crucial. Aspose.Email for Java provides powerful tools to manage email attachments seamlessly. In this guide, we'll walk you through the process of handling email attachments step by step, complete with source code examples and FAQs to ensure you grasp the concept thoroughly.
 
-## 1 المقدمة
+## 1. Introduction
 
-تعد مرفقات البريد الإلكتروني جزءًا أساسيًا من الاتصالات الحديثة. يعمل Aspose.Email for Java على تبسيط مهمة العمل مع المرفقات في رسائل البريد الإلكتروني، مما يسمح لك بتبسيط مهام معالجة البريد الإلكتروني لديك.
+Email attachments are a fundamental part of modern communication. Aspose.Email for Java simplifies the task of working with attachments in email messages, allowing you to streamline your email processing tasks.
 
-## 2. إعداد Aspose.Email لجافا
+## 2. Setting Up Aspose.Email for Java
 
-قبل الغوص في التعامل مع المرفقات، تحتاج إلى إعداد Aspose.Email لـ Java. اتبع الخطوات التالية:
+Before diving into attachment handling, you need to set up Aspose.Email for Java. Follow these steps:
 
--  الخطوة 1: تنزيل Aspose.Email لـ Java من موقع الويب:[تحميل Aspose.Email لجافا](https://releases.aspose.com/email/java/)
+- Step 1: Download Aspose.Email for Java from the website: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
 
-- الخطوة 2: قم بتثبيت المكتبة باتباع تعليمات التثبيت المتوفرة على الموقع.
+- Step 2: Install the library by following the installation instructions provided on the website.
 
-- الخطوة 3: قم بإنشاء مشروع Java جديد في IDE المفضل لديك.
+- Step 3: Create a new Java project in your favorite IDE.
 
-- الخطوة 4: أضف مكتبة Aspose.Email for Java إلى مشروعك.
+- Step 4: Add the Aspose.Email for Java library to your project.
 
-## 3. تحميل رسالة بريد إلكتروني
+## 3. Loading an Email Message
 
-للعمل مع مرفقات البريد الإلكتروني، تحتاج أولاً إلى تحميل رسالة بريد إلكتروني. إليك الطريقة:
+To work with email attachments, you first need to load an email message. Here's how:
 
 ```java
-// تحميل رسالة بريد إلكتروني من ملف أو خادم
+// Load an email message from a file or server
 MailMessage message = MailMessage.load("email.eml");
 ```
 
-## 4. الوصول إلى مرفقات البريد الإلكتروني
+## 4. Accessing Email Attachments
 
- يمكنك الوصول إلى المرفقات في رسالة بريد إلكتروني باستخدام`Attachments` مجموعة:
+You can access attachments in an email message using the `Attachments` collection:
 
 ```java
 AttachmentCollection attachments = message.getAttachments();
 ```
 
-## 5. حفظ مرفقات البريد الإلكتروني
+## 5. Saving Email Attachments
 
-لحفظ المرفقات في نظامك المحلي، استخدم مقتطف التعليمات البرمجية التالي:
+To save attachments to your local system, use the following code snippet:
 
 ```java
 for (Attachment attachment : attachments) {
@@ -59,48 +61,50 @@ for (Attachment attachment : attachments) {
 }
 ```
 
-## 6. تعديل المرفقات
+## 6. Modifying Attachments
 
-يمكنك تعديل المرفقات حسب الحاجة. على سبيل المثال، يمكنك استخراج النص من المرفقات أو ضغطها.
+You can modify attachments as needed. For example, you can extract text from attachments or compress them.
 
-## 7. حذف المرفقات
+## 7. Deleting Attachments
 
- لإزالة المرفقات من رسالة بريد إلكتروني، استخدم`remove` طريقة:
+To remove attachments from an email message, use the `remove` طريقة:
 
 ```java
-attachments.remove(0); // قم بإزالة المرفق الأول
+attachments.remove(0); // Remove the first attachment
 ```
 
-## 8. الأسئلة الشائعة
+## 8. FAQs
 
-### س1: هل يمكنني التعامل مع عدة مرفقات في بريد إلكتروني واحد؟
+### Q1: Can I handle multiple attachments in one email?
 
-نعم، يتيح لك Aspose.Email for Java العمل مع عدة مرفقات في بريد إلكتروني واحد.
+Yes, Aspose.Email for Java allows you to work with multiple attachments within a single email.
 
-### س2: كيف يمكنني استخراج النص من مرفقات PDF؟
+### Q2: How can I extract text from PDF attachments?
 
-يمكنك استخراج النص من مرفقات PDF باستخدام Aspose.PDF لـ Java بالاشتراك مع Aspose.Email.
+You can extract text from PDF attachments using Aspose.PDF for Java in conjunction with Aspose.Email.
 
-### س3: هل يمكن إعادة تسمية المرفقات؟
+### Q3: Is it possible to rename attachments?
 
- نعم، يمكنك إعادة تسمية المرفقات عن طريق تعديل`Name` خاصية المرفق .
+Yes, you can rename attachments by modifying the `Name` property of the attachment.
 
-### س 4: هل يمكنني التعامل مع المرفقات في ملفات Outlook MSG؟
+### Q4: Can I handle attachments in Outlook MSG files?
 
-بالتأكيد، يدعم Aspose.Email for Java ملفات Outlook MSG، ويمكنك التعامل مع مرفقاتها دون عناء.
+Absolutely, Aspose.Email for Java supports Outlook MSG files, and you can handle their attachments effortlessly.
 
-### س5: هل هناك أي قيود على حجم المرفقات؟
+### Q5: Are there any limitations on attachment size?
 
-تعتمد قيود حجم المرفقات على خادم البريد الإلكتروني وعميل البريد الإلكتروني. لا يفرض Aspose.Email الخاص بـ Java بحد ذاته قيودًا على الحجم.
+Attachment size limitations depend on your email server and email client. Aspose.Email for Java itself doesn't impose size restrictions.
 
-## 9. الاستنتاج
+## 9. Conclusion
 
-يعد التعامل مع مرفقات البريد الإلكتروني بكفاءة أمرًا حيويًا للعديد من التطبيقات. يعمل Aspose.Email for Java على تبسيط هذه المهمة ويوفر نطاقًا واسعًا من الإمكانات لإدارة المرفقات. باستخدام هذا الدليل، يمكنك العمل بثقة مع مرفقات البريد الإلكتروني في مشاريع Java الخاصة بك.
+Efficiently handling email attachments is vital for many applications. Aspose.Email for Java simplifies this task and provides a wide range of capabilities for attachment management. With this guide, you can confidently work with email attachments in your Java projects.
 
-في الختام، فإن إتقان التعامل مع المرفقات في Aspose.Email for Java يفتح عالمًا من الإمكانيات لتلبية احتياجات معالجة البريد الإلكتروني لديك. ابدأ في دمج هذه الميزات في مشاريعك واستمتع بإدارة المرفقات بسلاسة.
+In conclusion, mastering attachment handling in Aspose.Email for Java opens up a world of possibilities for your email processing needs. Start integrating these features into your projects and enjoy seamless attachment management.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

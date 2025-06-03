@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Query Exchange Server Using Aspose.Email for .NET
 
@@ -187,7 +189,11 @@ To continue your journey with Aspose.Email, explore other features like calendar
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
 We hope this guide has been helpful. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

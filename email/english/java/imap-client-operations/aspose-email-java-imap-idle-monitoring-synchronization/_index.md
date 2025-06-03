@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Idle Monitoring in Java with Aspose.Email
 
@@ -191,6 +193,9 @@ You've now mastered setting up IMAP Idle Monitoring and Email Synchronization us
 Ready to take your Java applications to the next level? Implement these solutions today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

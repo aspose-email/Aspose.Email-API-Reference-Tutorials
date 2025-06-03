@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/setting-participant-status-for-appoi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Setting Participant Status for Appointment Attendees with C#
@@ -119,6 +121,7 @@ For more detailed documentation and resources, refer to the Aspose.Email for .NE
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create a .NET PST Distribution List Using Aspose.Email: A Step-by-Step Guide
 
@@ -153,7 +155,11 @@ A: Ensure your system meets the .NET framework version requirements specified by
 - **Support**: Visit the [Aspose Forum](https://forum.aspose.com/c/email/10) for more help.
 
 With this guide, you should be well-equipped to implement PST distribution lists using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

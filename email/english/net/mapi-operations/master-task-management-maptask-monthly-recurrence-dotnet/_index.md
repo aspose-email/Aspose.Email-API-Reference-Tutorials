@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Task Management in .NET: Create MapiTask with Monthly Recurrence Using Aspose.Email
 
@@ -192,6 +194,9 @@ By following this tutorial, you've learned how to leverage Aspose.Email for .NET
 By integrating Aspose.Email for .NET into your project, you can streamline task management processes efficiently. Try implementing these features today to see the benefits firsthand!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

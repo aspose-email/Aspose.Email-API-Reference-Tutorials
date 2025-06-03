@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Insert MSG Attachments at a Specific Location Using Aspose.Email for .NET
 
@@ -188,6 +190,9 @@ Evaluate your project's scope, including the number of users and volume of email
 By integrating these practices into your projects, you’ll be well-equipped to manage email attachments with precision and efficiency using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

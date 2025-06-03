@@ -8,7 +8,9 @@ url: /net/email-conversion-and-export/generating-oft-files-from-messages-csharp-
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Generating OFT Files from Messages - C# Tutorial
@@ -124,6 +126,7 @@ To avoid emails being flagged as spam, make sure to follow best practices for em
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

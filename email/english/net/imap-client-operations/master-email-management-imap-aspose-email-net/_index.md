@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Management with Aspose.Email .NET: Connecting and Filtering IMAP Emails
 
@@ -116,7 +118,11 @@ using Aspose.Email.Tools.Search;
 
 ImapQueryBuilder builder = new ImapQueryBuilder();
 builder.Subject.Contains("Newsletter\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

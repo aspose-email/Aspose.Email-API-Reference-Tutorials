@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Automate Outlook MSG Creation with Aspose.Email for Java
 ## Comprehensive Guide to Creating and Managing Outlook Message Files with Aspose.Email for Java
@@ -160,7 +162,11 @@ Ready to take action? Start implementing what you've learned today!
 - **Download Aspose.Email:** [Aspose Releases](https://releases.aspose.com/email/java/)
 - **Purchase License:** [Buy Now](https://purchase.aspose.com/buy)
 - **Free Trial:** [Start Your Free Trial](https://startaspose.com/free-email-trial)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

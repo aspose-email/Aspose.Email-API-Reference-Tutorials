@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Creating and Configuring Appointments with Aspose.Email .NET: A Step-by-Step Guide
 
@@ -159,6 +161,9 @@ This guide has equipped you with the knowledge to create and configure appointme
 With this comprehensive guide, you're now ready to harness the power of Aspose.Email for .NET in your applications. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

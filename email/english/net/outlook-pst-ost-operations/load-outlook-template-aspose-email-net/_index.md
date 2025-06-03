@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Tutorial: How to Load an Outlook Template File in .NET Using Aspose.Email
 
@@ -151,7 +153,11 @@ Explore further features of Aspose.Email for .NET to expand your application's c
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 With this knowledge, you're now equipped to efficiently load and manage Outlook templates in your .NET applications using Aspose.Email. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

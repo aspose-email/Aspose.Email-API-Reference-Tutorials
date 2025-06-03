@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Client Operations in .NET with Aspose.Email
 
@@ -210,7 +212,11 @@ You've now learned how to connect, delete, and rename folders using the Aspose.E
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 By following this guide, you're now equipped to handle IMAP client operations with confidence using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

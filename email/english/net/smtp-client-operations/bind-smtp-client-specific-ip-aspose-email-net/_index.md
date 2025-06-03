@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement a Bind SMTP Client with Specific IP using Aspose.Email for .NET
 
@@ -165,6 +167,9 @@ In this tutorial, you learned how to set up an SMTP client with a specific IP ad
 By following this guide, you can confidently implement a bind SMTP client with specific IP using Aspose.Email for .NET in your applications. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

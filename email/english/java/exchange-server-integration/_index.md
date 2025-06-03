@@ -4,8 +4,11 @@ description: "Complete tutorials for connecting to Exchange Server, accessing ma
 weight: 6
 url: "/java/exchange-server-integration/"
 ---
+
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Exchange Server Integration Tutorials for Aspose.Email Java
 
@@ -186,7 +189,11 @@ Learn how to send emails through Microsoft's Exchange server using Aspose.Email 
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

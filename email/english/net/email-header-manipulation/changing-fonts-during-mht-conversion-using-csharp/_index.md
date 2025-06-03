@@ -8,7 +8,9 @@ url: /net/email-header-manipulation/changing-fonts-during-mht-conversion-using-c
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Changing Fonts during MHT Conversion using C#
@@ -116,6 +118,7 @@ Now that you have the knowledge and tools to manipulate fonts in your MHT files,
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

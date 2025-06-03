@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Configure an SMTP Client for Multi-Connection Email Sending with Aspose.Email for .NET
 
@@ -192,7 +194,11 @@ Ready to put your new knowledge into practice? Dive into more complex scenarios 
    - Multiple connections can reduce the time needed to send large volumes of emails by allowing concurrent dispatches.
 2. **Can I use Aspose.Email for applications beyond .NET?**
    - Yes, Aspose offers libraries for Java, C++, and other platforms, each with similar features.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

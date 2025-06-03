@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Delete Exchange Distribution Lists with Aspose.Email for .NET
 
@@ -165,7 +167,11 @@ Ready to implement this solution? Try it out today and streamline your Exchange 
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Explore these resources for more detailed information and support on using **Aspose.Email .NET** effectively.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

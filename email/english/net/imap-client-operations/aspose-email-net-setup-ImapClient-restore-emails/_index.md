@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email .NET: Setting Up ImapClient and Restoring Emails from PST Files
 
@@ -166,7 +168,11 @@ Ready to take your email automation skills to the next level? Implement these so
 - **Free Trial**: [Start a Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Request Now](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

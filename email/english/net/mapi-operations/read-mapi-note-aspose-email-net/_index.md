@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read a MAPI Note Using Aspose.Email for .NET
 
@@ -167,6 +169,9 @@ Ready to try it out? Experiment with different types of messages and see what el
 This guide should empower you to effectively implement and extend the functionality of reading MAPI notes with Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

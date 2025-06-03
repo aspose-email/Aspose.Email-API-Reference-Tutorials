@@ -1,59 +1,61 @@
 ---
-title: استخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
-linktitle: استخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعلم كيفية استخراج الكائنات المضمنة من رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-weight: 15
-url: /ar/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
+"description": "Learn to extract embedded objects from email messages using Aspose.Email for .NET. Step-by-step guide with code examples."
+"linktitle": "Extracting Embedded Objects - C# Tutorial"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Extracting Embedded Objects - C# Tutorial"
+"url": "/ar/net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# استخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
+# Extracting Embedded Objects - C# Tutorial
 
 
-## مقدمة لاستخراج الكائنات المضمنة - البرنامج التعليمي لـ C#
+## Introduction to Extracting Embedded Objects - C# Tutorial
 
-في هذا البرنامج التعليمي، سنستكشف كيفية استخراج الكائنات المضمنة من رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email for .NET. Aspose.Email هي مكتبة قوية ومتعددة الاستخدامات تمكن المطورين من العمل مع رسائل البريد الإلكتروني والمرفقات والجوانب المختلفة الأخرى للاتصالات عبر البريد الإلكتروني ضمن تطبيقات .NET الخاصة بهم.
+In this tutorial, we'll explore how to extract embedded objects from email messages using the Aspose.Email for .NET library. Aspose.Email is a powerful and versatile library that enables developers to work with email messages, attachments, and various other aspects of email communication within their .NET applications.
 
-## المتطلبات الأساسية:
+## Prerequisites:
 
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك فهم أساسي لبرمجة C# وإطار عمل .NET. بالإضافة إلى ذلك، تأكد من إعداد Visual Studio أو بيئة تطوير مناسبة أخرى على جهازك.
+To follow along with this tutorial, you should have a basic understanding of C# programming and the .NET framework. Additionally, make sure you have Visual Studio or another suitable development environment set up on your machine.
 
-## تثبيت Aspose.Email لـ .NET:
+## Installing Aspose.Email for .NET:
 
-للبدء، تحتاج إلى تثبيت Aspose.Email لمكتبة .NET. يمكنك القيام بذلك باستخدام NuGet Package Manager في Visual Studio. افتح مشروعك، وانقر بزر الماوس الأيمن على اسم المشروع في Solution Explorer، ثم حدد "إدارة حزم NuGet". ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
+To get started, you need to install the Aspose.Email for .NET library. You can do this using NuGet Package Manager in Visual Studio. Open your project, right-click on the project name in the Solution Explorer, and select "Manage NuGet Packages." Search for "Aspose.Email" and install the latest version.
 
-## تحميل رسائل البريد الإلكتروني:
+## Loading Email Messages:
 
-قبل أن نتمكن من استخراج الكائنات المضمنة، نحتاج إلى تحميل رسائل البريد الإلكتروني في تطبيقنا. يوفر Aspose.Email فئات وطرقًا لتحميل رسائل البريد الإلكتروني ومعالجتها بكفاءة بتنسيقات مختلفة مثل EML وMSG وPST.
+Before we can extract embedded objects, we need to load email messages into our application. Aspose.Email provides classes and methods to efficiently load and manipulate email messages in various formats such as EML, MSG, and PST.
 
 ```csharp
-// تحميل رسالة بريد إلكتروني من ملف
+// Load an email message from a file
 var message = MailMessage.Load("path/to/email.eml");
 ```
 
-## استخراج الكائنات المضمنة من رسائل البريد الإلكتروني:
+## Extracting Embedded Objects from Email Messages:
 
-بمجرد تحميل رسالة البريد الإلكتروني، يمكننا المتابعة لاستخراج الكائنات المضمنة، مثل الصور والمرفقات، من الرسالة. يوفر Aspose.Email طرقًا للوصول إلى المرفقات والصور المضمنة داخل الرسالة.
+Once we have the email message loaded, we can proceed to extract embedded objects, such as images and attachments, from the message. Aspose.Email offers methods to access the attachments and embedded images within the message.
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
-    // استخراج ومعالجة المرفق
+    // Extract and process the attachment
 }
 
 foreach (var embeddedImage in message.LinkedResources)
 {
-    // استخراج ومعالجة الصورة المدمجة
+    // Extract and process the embedded image
 }
 ```
 
-## حفظ الكائنات المستخرجة:
+## Saving Extracted Objects:
 
-بعد استخراج الكائنات المضمنة، قد ترغب في حفظها في موقع محدد على نظامك. يوفر Aspose.Email طرقًا لحفظ الكائنات المستخرجة، مما يسمح لك بتنظيم المحتوى المستخرج وإدارته.
+After extracting the embedded objects, you might want to save them to a specific location on your system. Aspose.Email provides methods to save the extracted objects, allowing you to organize and manage the extracted content.
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -67,53 +69,55 @@ foreach (var embeddedImage in message.LinkedResources)
 }
 ```
 
-## التعامل مع أنواع مختلفة من الكائنات المضمنة:
+## Handling Different Types of Embedded Objects:
 
-يمكن أن تحتوي رسائل البريد الإلكتروني على مجموعة متنوعة من الكائنات المضمنة، بما في ذلك الصور والملفات الصوتية والمستندات. يمكّنك Aspose.Email من تحديد نوع الكائن المضمن ومعالجته وفقًا لذلك.
+Email messages can contain a variety of embedded objects, including images, audio files, and documents. Aspose.Email enables you to identify the type of embedded object and process it accordingly.
 
 ```csharp
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // عملية إرفاق الصورة
+        // Process image attachment
     }
     else if (attachment.ContentType.MediaType == "audio/mpeg")
     {
-        // معالجة المرفقات الصوتية
+        // Process audio attachment
     }
-    // إضافة المزيد من الشروط لأنواع مختلفة
+    // Add more conditions for different types
 }
 ```
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، تعلمنا كيفية استخدام مكتبة Aspose.Email for .NET لاستخراج الكائنات المضمنة من رسائل البريد الإلكتروني. لقد قمنا بتغطية تحميل رسائل البريد الإلكتروني، واستخراج المرفقات والصور المضمنة، وحفظ المحتوى المستخرج، والتعامل مع أنواع مختلفة من الكائنات المضمنة. يمكن أن تكون هذه الوظيفة مفيدة بشكل لا يصدق عند إنشاء التطبيقات التي تتضمن التواصل عبر البريد الإلكتروني واستخراج المحتوى.
+In this tutorial, we've learned how to use the Aspose.Email for .NET library to extract embedded objects from email messages. We covered loading email messages, extracting attachments and embedded images, saving the extracted content, and handling different types of embedded objects. This functionality can be incredibly useful when building applications that involve email communication and content extraction.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني تثبيت Aspose.Email لـ .NET؟
+### How can I install Aspose.Email for .NET?
 
-يمكنك تثبيت Aspose.Email لـ .NET باستخدام NuGet Package Manager في Visual Studio. ما عليك سوى البحث عن "Aspose.Email" وتثبيت الإصدار الأحدث.
+You can install Aspose.Email for .NET using NuGet Package Manager in Visual Studio. Simply search for "Aspose.Email" and install the latest version.
 
-### هل يمكنني استخراج الملفات الصوتية باستخدام هذه المكتبة؟
+### Can I extract audio files using this library?
 
-نعم، يمكنك استخراج أنواع مختلفة من الكائنات المضمنة، بما في ذلك الملفات الصوتية، باستخدام Aspose.Email. تأكد من تحديد نوع المحتوى ومعالجته وفقًا لذلك.
+Yes, you can extract various types of embedded objects, including audio files, using Aspose.Email. Make sure to identify the content type and process it accordingly.
 
-### هل Aspose.Email مناسب للعمل مع ملفات PST؟
+### Is Aspose.Email suitable for working with PST files?
 
-نعم، يدعم Aspose.Email العمل مع ملفات PST، مما يسمح لك بتحميل المحتوى ومعالجته واستخراجه من مجلدات Outlook الشخصية.
+Yes, Aspose.Email supports working with PST files, allowing you to load, manipulate, and extract content from Outlook Personal Folders.
 
-### هل يمكنني استخدام Aspose.Email في تطبيق الويب ASP.NET الخاص بي؟
+### Can I use Aspose.Email in my ASP.NET web application?
 
-قطعاً! Aspose.Email for .NET متوافق مع تطبيقات الويب ASP.NET وتطبيقات سطح المكتب وأنواع أخرى من مشاريع .NET.
+Absolutely! Aspose.Email for .NET is compatible with ASP.NET web applications, desktop applications, and other types of .NET projects.
 
-### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email؟
+### Where can I find more documentation about Aspose.Email?
 
- يمكنك العثور على وثائق مفصلة وأمثلة التعليمات البرمجية لـ Aspose.Email على[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/) صفحة.
+You can find detailed documentation and code examples for Aspose.Email on [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/) صفحة.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

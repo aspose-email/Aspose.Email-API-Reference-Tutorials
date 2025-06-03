@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Creation and Saving of Calendar Items with Aspose.Email for Java
 
@@ -113,7 +115,11 @@ This feature demonstrates how to programmatically create a calendar item, such a
    ```java
    String dataDir = "YOUR_OUTPUT_DIRECTORY/";
    appointment.save(dataDir + "CalendarItem_out.ics\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

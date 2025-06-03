@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master MAPI Tasks with Monthly Recurrence Using Aspose.Email for .NET
 
@@ -165,7 +167,11 @@ A5: You can access community forums and professional support through [Aspose's S
 - **Purchase:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial:** [Try Aspose.Email](https://releases.aspose.com/email/net/)
 - **Temporary License:** [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

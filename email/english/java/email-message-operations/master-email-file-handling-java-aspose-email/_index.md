@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email File Handling in Java with Aspose.Email
 
@@ -166,7 +168,11 @@ Experiment by implementing this solution in your Java applications and see how i
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Explore these resources to expand your understanding and capabilities with Aspose.Email for Java.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

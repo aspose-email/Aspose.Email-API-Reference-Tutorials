@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load and Modify an MSG File Using Aspose.Email for .NET
 
@@ -192,7 +194,11 @@ In this tutorial, you've learned how to load, modify, and save MSG files using A
 - **Free Trial**: [Start Your Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Obtain a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Email Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

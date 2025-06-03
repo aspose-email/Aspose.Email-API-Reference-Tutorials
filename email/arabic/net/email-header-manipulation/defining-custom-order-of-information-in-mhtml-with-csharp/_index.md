@@ -1,34 +1,36 @@
 ---
-title: تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
-linktitle: تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تخصيص ترتيب MHTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع التعليمات البرمجية لترتيب المعلومات بكفاءة. تعزيز تجربة المستخدم الآن!
-weight: 14
-url: /ar/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/
+"description": "Learn how to customize MHTML order using C# & Aspose.Email for .NET. Step-by-step guide with code for efficient information arrangement. Boost user experience now!"
+"linktitle": "Defining Custom Order of Information in MHTML with C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Defining Custom Order of Information in MHTML with C#"
+"url": "/ar/net/email-header-manipulation/defining-custom-order-of-information-in-mhtml-with-csharp/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحديد الترتيب المخصص للمعلومات في MHTML باستخدام C#
+# Defining Custom Order of Information in MHTML with C#
 
 
-في مجال إدارة البريد الإلكتروني، تعد القدرة على تخصيص ترتيب المعلومات في رسائل البريد الإلكتروني MHTML ميزة قيمة. يقدم Aspose.Email for .NET حلاً قويًا لتحقيق ذلك. في هذه المقالة، سنرشدك خلال العملية خطوة بخطوة.
+In the realm of email management, the ability to customize the order of information in MHTML emails is a valuable feature. Aspose.Email for .NET offers a robust solution for achieving this. In this article, we will guide you through the process step by step.
 
-## الخطوة 1: فهم السيناريو
+## Step 1: Understanding the Scenario
 
-قبل الخوض في التفاصيل الفنية، دعونا نفهم السيناريو. تخيل أن لديك رسالة بريد إلكتروني، وتريد حفظها بتنسيق MHTML مع رؤوس محددة وبترتيب مخصص. الرؤوس التي تريد تضمينها هي "من"، و"الموضوع"، و"إلى"، و"المرسل"، و"المرفقات".
+Before delving into the technical details, let's grasp the scenario. Imagine you have an email message, and you want to save it in MHTML format with specific headers and in a custom order. The headers you want to include are 'From,' 'Subject,' 'To,' 'Sent,' and 'Attachments.'
 
-## الخطوة 2: إعداد بيئة التطوير
+## Step 2: Setting Up the Development Environment
 
-للبدء، تأكد من تثبيت Aspose.Email for .NET في بيئة التطوير لديك. إذا لم تكن قد قمت بذلك بالفعل، فيمكنك تنزيله من[Aspose.Email لإصدارات .NET](https://releases.aspose.com/email/net/).
+To begin, ensure that Aspose.Email for .NET is installed in your development environment. If you haven't done this already, you can download it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
 
-بمجرد اكتمال التثبيت، قم بإنشاء مشروع C# جديد وأضف مرجعًا إلى مجموعة Aspose.Email. هذه الخطوة ضرورية للوصول إلى الوظائف التي نحتاجها.
+Once the installation is complete, create a new C# project and add a reference to the Aspose.Email assembly. This step is crucial to access the functionality we need.
 
-## الخطوة 3: كتابة الكود
+## Step 3: Writing the Code
 
-الآن، دعونا نتعمق في تنفيذ التعليمات البرمجية. فيما يلي الكود الذي يحقق هدفنا:
+Now, let's dive into the code implementation. Below is the code that accomplishes our goal:
 
 ```csharp
 string dataDir = "Your Data Directory";
@@ -53,43 +55,45 @@ opt.RenderingHeaders.Add(MhtTemplateName.Subject);
 eml.Save(dataDir + "CustomOrderOfInformationInMHTML_3.mhtml", opt);
 ```
 
-في هذا الكود، نقوم أولاً بتحميل رسالة البريد الإلكتروني وتكوين خيارات حفظ MHTML. بعد ذلك، نقوم بحفظ البريد الإلكتروني بتنسيق MHTML عدة مرات، وفي كل مرة نحدد رؤوس العرض المطلوبة. تضمن هذه العملية الترتيب المخصص للمعلومات في ملف MHTML.
+In this code, we first load the email message and configure the MHTML save options. Then, we save the email in MHTML format multiple times, each time specifying the desired rendering headers. This process ensures the custom order of information in the MHTML file.
 
-## الخطوة 4: الاستنتاج
+## Step 4: Conclusion
 
-لتلخيص ذلك، يعمل Aspose.Email for .NET على تمكين المطورين من إدارة محتوى البريد الإلكتروني بكفاءة، بما في ذلك تخصيص ترتيب المعلومات في رسائل البريد الإلكتروني MHTML. يعمل مقتطف الشفرة المقدم على تبسيط هذه المهمة، مما يجعلها سهلة الوصول وفعالة.
+To sum it up, Aspose.Email for .NET empowers developers to efficiently manage email content, including customizing the order of information in MHTML emails. The code snippet provided simplifies this task, making it accessible and effective.
 
-في عالم تعتبر فيه المعالجة الفعالة للبريد الإلكتروني أمرًا بالغ الأهمية، أثبت Aspose.Email for .NET أنه أداة لا تقدر بثمن للمطورين.
+In a world where effective email handling is paramount, Aspose.Email for .NET proves to be an invaluable tool for developers.
 
- للحصول على وثائق شاملة ومزيد من التفاصيل، يمكنك زيارة[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/).
+For comprehensive documentation and more details, you can visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
 
 ---
 
-## الخطوة 5: الأسئلة الشائعة
+## Step 5: FAQs
 
-### 1. ما هو MHTML، وما أهميته؟
+### 1. What is MHTML, and why is it important?
 
-- MHTML، اختصار لـ MIME HTML، هو تنسيق يستخدم لأرشفة صفحات الويب بكل عناصرها. إنه أمر بالغ الأهمية للحفاظ على محتوى الويب وبنيته.
+- MHTML, short for MIME HTML, is a format used to archive web pages with all their elements. It's crucial for preserving web content and structure.
 
-### 2. هل يمكنني تخصيص ترتيب رؤوس البريد الإلكتروني الأخرى باستخدام Aspose.Email لـ .NET؟
+### 2. Can I customize the order of other email headers using Aspose.Email for .NET?
 
-- نعم، يمكنك تخصيص ترتيب رؤوس البريد الإلكتروني المختلفة وفقًا لمتطلباتك المحددة، كما هو موضح في المقالة.
+- Yes, you can tailor the order of various email headers according to your specific requirements, as demonstrated in the article.
 
-### 3. ما هي المهام الأخرى التي يمكن لـ Aspose.Email لـ .NET التعامل معها أثناء معالجة البريد الإلكتروني؟
+### 3. What other tasks can Aspose.Email for .NET handle in email processing?
 
-- يوفر Aspose.Email for .NET مجموعة واسعة من الميزات، بما في ذلك إنشاء البريد الإلكتروني وتحويله ومعالجته، مما يجعله حلاً شاملاً لمختلف المهام المتعلقة بالبريد الإلكتروني.
+- Aspose.Email for .NET offers a wide range of features, including email creation, conversion, and manipulation, making it a comprehensive solution for various email-related tasks.
 
-### 4. هل Aspose.Email for .NET مناسب لكل من المشاريع الصغيرة والمشاريع على مستوى المؤسسات؟
+### 4. Is Aspose.Email for .NET suitable for both small-scale and enterprise-level projects?
 
-- قطعاً. إنه متعدد الاستخدامات ويمكن تطبيقه في المشاريع بجميع أحجامها، بدءًا من التطبيقات الصغيرة وحتى حلول المؤسسات واسعة النطاق.
+- Absolutely. It's versatile and can be applied in projects of all sizes, from small applications to large-scale enterprise solutions.
 
-### 5. أين يمكنني العثور على موارد ودعم إضافيين لـ Aspose.Email لـ .NET؟
+### 5. Where can I find additional resources and support for Aspose.Email for .NET?
 
--  يمكنك الوصول إلى الوثائق الشاملة وأمثلة التعليمات البرمجية والدعم على الموقع[Aspose.Email لتوثيق .NET API](https://reference.aspose.com/email/net/).
+- You can access extensive documentation, code examples, and support on the [Aspose.Email for .NET API Documentation](https://reference.aspose.com/email/net/).
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

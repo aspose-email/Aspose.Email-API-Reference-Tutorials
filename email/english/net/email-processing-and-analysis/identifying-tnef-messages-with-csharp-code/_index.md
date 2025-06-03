@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/identifying-tnef-messages-with-csharp-co
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Identifying TNEF Messages with C# Code
@@ -110,9 +112,11 @@ Yes, you can find detailed documentation and code samples on how to use Aspose.E
 ### Can Aspose.Email handle email processing on different platforms?
 
 Absolutely, Aspose.Email is a cross-platform library that can be used to develop applications on various platforms, including Windows, macOS, and Linux.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

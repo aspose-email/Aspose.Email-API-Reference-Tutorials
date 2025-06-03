@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Management: Connect and Filter Emails Using Aspose.Email for .NET
 ## Introduction
@@ -126,7 +128,11 @@ To further explore the capabilities of Aspose.Email, consider experimenting with
 - [Purchase a License](https://purchase.aspose.com/buy)
 - [Free Trial and Temporary License](https://releases.aspose.com/email/net/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

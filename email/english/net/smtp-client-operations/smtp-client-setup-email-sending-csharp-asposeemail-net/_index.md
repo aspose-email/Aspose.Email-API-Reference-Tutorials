@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up SMTP Client and Send Emails in C# Using Aspose.Email for .NET
 
@@ -191,6 +193,9 @@ Experiment with additional features of Aspose.Email like attachments, HTML conte
 By following this guide, you're well on your way to implementing efficient email solutions in your .NET applications with Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Management with Aspose.Email .NET: Create, Append, and Manage Custom Flags in IMAP Mailboxes
 
@@ -209,7 +211,11 @@ A5: Visit the [Aspose.Email .NET documentation](https://reference.aspose.com/ema
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to mastering email management with Aspose.Email for .NET and transform how you handle emails in your organization.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

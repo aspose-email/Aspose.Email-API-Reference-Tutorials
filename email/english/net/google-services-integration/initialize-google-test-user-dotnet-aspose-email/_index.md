@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Initialize a Google Test User in .NET Using Aspose.Email for Seamless Email Integration
 
@@ -203,7 +205,11 @@ For further exploration, consider delving deeper into Aspose.Email's comprehensi
 - Support: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your journey with Aspose.Email for .NET today and unlock new possibilities in email integration!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

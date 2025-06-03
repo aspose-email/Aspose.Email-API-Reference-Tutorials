@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extracting HTML Body Text from Emails Using Aspose.Email for Java
 
@@ -166,7 +168,11 @@ Ready to implement this solution in your projects? Head over to the resources be
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your email processing journey with Aspose.Email for Java and unlock new possibilities in data extraction and analysis!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

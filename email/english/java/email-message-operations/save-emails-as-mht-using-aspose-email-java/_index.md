@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -197,6 +199,9 @@ A: Check file paths for correctness, ensure proper library setup in your project
 Explore, implement, and transform your email handling with Aspose.Email for Java today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

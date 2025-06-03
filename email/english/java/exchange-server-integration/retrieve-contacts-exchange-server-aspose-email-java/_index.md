@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve Contacts from an Exchange Server Using Aspose.Email for Java
 
@@ -137,7 +139,11 @@ Consider extending your knowledge by experimenting with different features offer
 - **Download:** Get started with Aspose.Email by downloading from [their releases page](https://releases.aspose.com/email/java/).
 - **Purchase & Trial:** Consider purchasing a license or trying out the free trial via [Aspose's purchase portal](https://purchase.aspose.com/buy).
 - **Support:** For any queries, visit the [Aspose forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load and Inspect Email Attachments Using Aspose.Email for Java: A Developer's Guide
 
@@ -143,7 +145,11 @@ To further your knowledge, explore the [Aspose Documentation](https://reference.
 - **Temporary License**: [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 
 By following this guide, you're now equipped to tackle email attachment challenges using Aspose.Email for Java. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

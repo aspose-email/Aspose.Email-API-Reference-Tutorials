@@ -8,7 +8,9 @@ url: /net/email-file-storage-and-retrieval/saving-messages-from-zimbra-tgz-stora
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Saving Messages from Zimbra TGZ Storage with C#
@@ -88,6 +90,7 @@ You can explore comprehensive documentation and access support on the [Aspose.Em
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

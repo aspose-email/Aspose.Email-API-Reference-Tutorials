@@ -8,7 +8,9 @@ url: /java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Customizing SMTP Headers and Footers with Aspose.Email
@@ -117,6 +119,7 @@ You should use the SMTP settings provided by your email service provider or your
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

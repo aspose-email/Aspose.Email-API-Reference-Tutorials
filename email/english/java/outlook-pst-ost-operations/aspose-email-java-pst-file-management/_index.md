@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email Java for Outlook PST & OST Operations
 
@@ -121,7 +123,11 @@ A: Absolutely! The library provides methods to retrieve and save email attachmen
 - **Free Trial**: [Get Started with Free Version](https://releases.aspose.com/email/java/)
 
 By following this guide, you’re well on your way to mastering email management in Java applications using Aspose.Email. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

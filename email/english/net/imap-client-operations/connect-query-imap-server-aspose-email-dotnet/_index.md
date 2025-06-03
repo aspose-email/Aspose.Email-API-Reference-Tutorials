@@ -14,7 +14,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connecting and Querying an IMAP Server with Aspose.Email for .NET
 
@@ -245,6 +247,9 @@ We encourage you to try implementing these solutions in your projects and share 
 By following this tutorial, you're well-equipped to start integrating IMAP functionalities into your .NET applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

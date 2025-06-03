@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Sending Emails with Alternate Text Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -204,7 +206,11 @@ Ready to implement this solution in your projects? Head over to the resources se
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Now that you're equipped with the knowledge, start experimenting with Aspose.Email for .NET to enhance your email functionalities. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

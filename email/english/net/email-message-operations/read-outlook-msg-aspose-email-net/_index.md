@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read Outlook .msg Files Using Aspose.Email for .NET: A Complete Guide
 
@@ -156,6 +158,9 @@ Ready to start? Try out the steps in this guide and see how Aspose.Email transfo
 Feel free to reach out on the support forum if you encounter any issues. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

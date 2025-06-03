@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/preserving-original-boundaries-using-csh
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Preserving Original Boundaries using C# Code
@@ -117,6 +119,7 @@ You can find comprehensive documentation and examples on the [Aspose.Email docum
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

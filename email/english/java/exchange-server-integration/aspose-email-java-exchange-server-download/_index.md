@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Download Emails from Exchange Server Using Aspose.Email Java
 
@@ -180,7 +182,11 @@ For more detailed information and support, refer to the resources below.
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Implement this solution today and streamline your email management workflow with ease!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

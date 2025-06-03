@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create & Save Draft Emails Using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -155,7 +157,11 @@ A: Yes, you can manipulate message properties before converting and saving them 
 - **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 Take the next step today and start implementing this powerful email management solution in your .NET applications!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

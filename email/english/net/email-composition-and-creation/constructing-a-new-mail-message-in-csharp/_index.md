@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/constructing-a-new-mail-message-in-csha
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Constructing a New Mail Message in C#
@@ -129,9 +131,11 @@ Congratulations! You've successfully learned how to construct a new mail message
    You can find comprehensive documentation and code examples on the [Aspose.Email API Reference](https://reference.aspose.com/email/net/).
 
 ---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

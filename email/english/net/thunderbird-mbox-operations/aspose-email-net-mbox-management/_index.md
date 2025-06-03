@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering MBOX File Management with Aspose.Email for .NET
 
@@ -195,7 +197,11 @@ A5: Check the [Aspose Support Forum](https://forum.aspose.com/c/email/10) for tr
 - **Free Trial**: Test features with a free trial [here](https://releases.aspose.com/email/net/).
 - **Temporary License**: Obtain a temporary license for comprehensive testing [here](https://purchase.aspose.com/temporary-license/).
 - **Support**: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10) for help.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

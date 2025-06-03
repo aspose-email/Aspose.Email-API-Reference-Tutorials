@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Insert & Replace MSG Attachments Using Aspose.Email Java: A Comprehensive Guide
 
@@ -221,7 +223,11 @@ To deepen your understanding, try experimenting with different scenarios and exp
 - **Documentation**: Explore detailed guides at [Aspose Documentation](https://reference.aspose.com/email/java/).
 - **Download**: Access the latest release at [Aspose Releases](https://releases.aspose.com/email/java/).
 - **Purchase**: Learn about purchasing options on the [Aspose Purchase Page](https://purchase.aspose.com/buy).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

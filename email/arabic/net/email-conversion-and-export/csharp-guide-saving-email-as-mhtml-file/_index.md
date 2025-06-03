@@ -1,58 +1,60 @@
 ---
-title: دليل C# - حفظ البريد الإلكتروني كملف MHTML
-linktitle: دليل C# - حفظ البريد الإلكتروني كملف MHTML
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية حفظ رسائل البريد الإلكتروني كملفات MHTML باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية والأسئلة الشائعة.
-weight: 16
-url: /ar/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/
+"description": "Learn how to save emails as MHTML files using C# and Aspose.Email for .NET. Step-by-step guide with code examples and FAQs."
+"linktitle": "C# Guide - Saving Email as MHTML File"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "C# Guide - Saving Email as MHTML File"
+"url": "/ar/net/email-conversion-and-export/csharp-guide-saving-email-as-mhtml-file/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# دليل C# - حفظ البريد الإلكتروني كملف MHTML
+# C# Guide - Saving Email as MHTML File
 
 
-## مقدمة لحفظ البريد الإلكتروني كملف MHTML
+## Introduction to Saving Email as MHTML File
 
-Aspose.Email for .NET عبارة عن مكتبة غنية بالميزات تمكن المطورين من العمل مع رسائل البريد الإلكتروني والتقويمات وجهات الاتصال والمهام برمجيًا. سواء كنت تقوم بإنشاء تطبيقات متعلقة بالبريد الإلكتروني، أو معالجة الرسائل، أو استخراج البيانات من رسائل البريد الإلكتروني، فإن Aspose.Email يبسط المهمة.
+Aspose.Email for .NET is a feature-rich library that empowers developers to work with email messages, calendars, contacts, and tasks programmatically. Whether you're creating email-related applications, processing messages, or extracting data from emails, Aspose.Email simplifies the task.
 
-## التثبيت والإعداد
+## Installation and Setup
 
-للبدء، تحتاج إلى تثبيت Aspose.Email لـ .NET. اتبع الخطوات التالية:
+To begin, you need to install Aspose.Email for .NET. Follow these steps:
 
-1.  تحميل المكتبة من[هنا](https://releases.aspose.com/email/net).
-2. قم بالإشارة إلى Aspose.Email DLL في مشروعك.
+1. Download the library from [هنا](https://releases.aspose.com/email/net).
+2. Reference the Aspose.Email DLL in your project.
 
-## تحميل رسائل البريد الإلكتروني
+## Loading Email Messages
 
-قبل حفظ رسائل البريد الإلكتروني كملفات MHTML، تحتاج إلى تحميل رسائل البريد الإلكتروني. استخدم مقتطف الكود التالي:
+Before saving emails as MHTML files, you need to load the email messages. Use the following code snippet:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// قم بتحميل رسالة البريد الإلكتروني
+// Load the email message
 var message = MailMessage.Load("path/to/your/email.msg");
 ```
 
-## فهم تنسيق MHTML
+## Understanding MHTML Format
 
-MHTML (MIME HTML) هو تنسيق يستخدم لأرشفة صفحات الويب ورسائل البريد الإلكتروني. فهو يجمع جميع الموارد، مثل الصور وأوراق الأنماط، في ملف واحد. من خلال حفظ رسائل البريد الإلكتروني بتنسيق MHTML، فإنك تضمن بقاء محتوى البريد الإلكتروني سليمًا ويمكن الوصول إليه حتى بدون اتصال نشط بالإنترنت.
+MHTML (MIME HTML) is a format used to archive web pages and emails. It encapsulates all the resources, such as images and stylesheets, into a single file. By saving emails as MHTML, you ensure that the email's content remains intact and accessible even without an active internet connection.
 
-## حفظ البريد الإلكتروني بتنسيق MHTML
+## Saving Email as MHTML
 
-الآن يأتي الجزء المثير: حفظ البريد الإلكتروني كملف MHTML. وإليك كيف يمكنك القيام بذلك:
+Now comes the exciting part: saving an email as an MHTML file. Here's how you can do it:
 
 ```csharp
-// احفظ البريد الإلكتروني باسم MHTML
+// Save the email as MHTML
 message.Save("path/to/save/email.mhtml", SaveOptions.DefaultMhtml);
 ```
 
-## تخصيص العملية
+## Customizing the Process
 
-يتيح لك Aspose.Email تخصيص عملية الحفظ بشكل أكبر. يمكنك التحكم في خيارات متعددة، مثل حفظ المرفقات واستبعاد المعلومات غير الضرورية.
+Aspose.Email allows you to customize the saving process further. You can control various options, such as saving attachments and excluding unnecessary information.
 
 ```csharp
 var options = SaveOptions.DefaultMhtml;
@@ -60,9 +62,9 @@ options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.HideE
 message.Save("path/to/save/customized-email.mhtml", options);
 ```
 
-## التعامل مع المرفقات
+## Handling Attachments
 
-تعتبر المرفقات مكونات مهمة في رسائل البريد الإلكتروني. يمكنك حفظ مرفقات البريد الإلكتروني بجانب ملف MHTML. إليك الطريقة:
+Attachments are crucial components of emails. You can save email attachments alongside the MHTML file. Here's how:
 
 ```csharp
 foreach (var attachment in message.Attachments)
@@ -71,49 +73,51 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## إدارة البيانات الوصفية للبريد الإلكتروني
+## Managing Email Metadata
 
-يمكن لملفات MHTML أيضًا الاحتفاظ بالبيانات التعريفية للبريد الإلكتروني، مما يضمن صحة وسياق البريد الإلكتروني. تتضمن البيانات التعريفية معلومات مثل المرسل والمستلم والموضوع والمزيد.
+MHTML files can also retain email metadata, ensuring the authenticity and context of the email. The metadata includes information like sender, recipient, subject, and more.
 
 ## معالجة الأخطاء
 
-عند التعامل مع معالجة البريد الإلكتروني، تعد معالجة الأخطاء أمرًا ضروريًا. استخدم كتل محاولة الالتقاط لاكتشاف الاستثناءات وتقديم التعليقات المناسبة للمستخدمين أو تسجيل المشكلات لتصحيح الأخطاء.
+When dealing with email processing, error handling is essential. Use try-catch blocks to catch exceptions and provide appropriate feedback to users or log the issues for debugging.
 
 ## أفضل الممارسات
 
-- قم بالتحديث بانتظام إلى أحدث إصدار من Aspose.Email لـ .NET للوصول إلى الميزات والتحسينات الجديدة.
-- تخلص من الموارد بشكل صحيح بعد الاستخدام لمنع تسرب الذاكرة.
+- Regularly update to the latest version of Aspose.Email for .NET to access new features and enhancements.
+- Dispose of resources properly after use to prevent memory leaks.
 
 ## حالات الاستخدام في العالم الحقيقي
 
-- أرشفة رسائل البريد الإلكتروني المهمة لأغراض قانونية أو تتعلق بالامتثال.
-- إنشاء إصدارات غير متصلة بالإنترنت من النشرات الإخبارية أو رسائل البريد الإلكتروني التسويقية.
-- تخزين رسائل البريد الإلكتروني بتنسيق يمكن مشاركته بسهولة عبر منصات مختلفة.
+- Archiving important emails for legal or compliance purposes.
+- Creating offline versions of newsletters or marketing emails.
+- Storing emails in a format that can be easily shared across different platforms.
 
 ## خاتمة
 
-في هذا الدليل، اكتشفنا كيفية حفظ رسائل البريد الإلكتروني كملفات MHTML باستخدام C# وAspose.Email لـ .NET. تعمل إمكانيات المكتبة على تمكين المطورين من إدارة المهام المتعلقة بالبريد الإلكتروني بكفاءة مع الحفاظ على سلامة المحتوى وإمكانية الوصول إليه. سواء كنت تقوم بإنشاء تطبيقات متعلقة بالبريد الإلكتروني أو تحتاج إلى تبسيط سير عمل البريد الإلكتروني الخاص بك، فإن Aspose.Email هو شريكك الموثوق به.
+In this guide, we explored how to save emails as MHTML files using C# and Aspose.Email for .NET. The library's capabilities empower developers to efficiently manage email-related tasks while maintaining content integrity and accessibility. Whether you're building email-related applications or need to streamline your email workflow, Aspose.Email is your reliable partner.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني الحصول على أحدث إصدار من Aspose.Email لـ .NET؟
+### How can I get the latest version of Aspose.Email for .NET?
 
- يمكنك تنزيل أحدث إصدار من Aspose.Email لـ .NET من[هنا](https://releases.aspose.com/email/net).
+You can download the latest version of Aspose.Email for .NET from [هنا](https://releases.aspose.com/email/net).
 
-### هل يمكنني تخصيص مظهر ملف MHTML المحفوظ؟
+### Can I customize the appearance of the saved MHTML file?
 
-نعم، يمكنك تخصيص المظهر عن طريق تعديل MHTFormatOptions أثناء عملية الحفظ.
+Yes, you can customize the appearance by modifying the MHTFormatOptions during the saving process.
 
-### هل Aspose.Email مناسب لإدارة البريد الإلكتروني على المستوى الشخصي وعلى مستوى المؤسسة؟
+### Is Aspose.Email suitable for both personal and enterprise-level email management?
 
-قطعاً! تم تصميم Aspose.Email لتلبية احتياجات الأفراد والشركات على حدٍ سواء، حيث يقدم حلولاً متعددة الاستخدامات لمختلف السيناريوهات.
+Absolutely! Aspose.Email is designed to cater to the needs of individuals and businesses alike, offering versatile solutions for various scenarios.
 
-### هل هناك أي رسوم ترخيص مرتبطة باستخدام Aspose.Email لـ .NET؟
+### Are there any licensing fees associated with using Aspose.Email for .NET?
 
-نعم، Aspose.Email هي مكتبة تجارية. يمكنك العثور على معلومات مفصلة حول الترخيص والتسعير على الموقع[موقع Aspose.Email](https://www.aspose.com/purchase/default.aspx).
+Yes, Aspose.Email is a commercial library. You can find detailed information about licensing and pricing on the [Aspose.Email website](https://www.aspose.com/purchase/default.aspx).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

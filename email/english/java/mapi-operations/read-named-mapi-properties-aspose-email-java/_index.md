@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read Named MAPI Properties Using Aspose.Email in Java
 
@@ -204,7 +206,11 @@ Why not give it a try? Implementing this solution can significantly enhance how 
    - Yes, iterate over the attachment collection and apply similar property extraction logic for each item.
 3. **What if my application needs to handle emails in formats other than MSG or EML?**
    - Aspose.Email supports various email formats; refer to [Aspose's documentation](https://docs.aspose.com/email/java/) for details.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

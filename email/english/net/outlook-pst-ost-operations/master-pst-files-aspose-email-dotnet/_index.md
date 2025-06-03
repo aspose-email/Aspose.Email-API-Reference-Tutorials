@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master PST File Management with Aspose.Email for .NET
 ## How to Load and Process PST Files with Aspose.Email for .NET
@@ -167,7 +169,11 @@ To further your expertise, consider exploring more advanced features of Aspose.E
    - Use exception handling to catch `FolderNotFoundException` and manage it gracefully within your application.
 4. **Is Aspose.Email free to use?**
    - It offers a free trial, but purchasing a license is required for long-term or commercial use.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

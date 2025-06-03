@@ -14,7 +14,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Email Management in Java: Create PST Files & Manage Distribution Lists with Aspose.Email
 
@@ -79,7 +81,11 @@ Once set up, initialize your project by importing necessary classes and configur
        public static void main(String[] args) throws Exception {
            // Create a new PST file in Unicode format
            PersonalStorage personalStorage = PersonalStorage.create("YOUR_OUTPUT_DIRECTORY/testDL.pst\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

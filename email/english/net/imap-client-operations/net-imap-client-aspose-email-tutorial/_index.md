@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Securely Retrieve Emails with .NET IMAP Client Using Aspose.Email
 
@@ -173,7 +175,11 @@ Next steps: Experiment by integrating the IMAP client setup into your existing a
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Embrace the power of Aspose.Email for .NET and revolutionize how you handle email communications in your applications!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

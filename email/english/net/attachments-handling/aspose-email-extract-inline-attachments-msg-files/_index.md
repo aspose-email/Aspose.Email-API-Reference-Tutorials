@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Inline Attachments from MSG Files Using Aspose.Email for .NET
 
@@ -184,6 +186,9 @@ A: Consider using asynchronous methods and optimizing your file handling logic.
 By following this tutorial, you've unlocked a powerful tool for managing email data within your .NET applications. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

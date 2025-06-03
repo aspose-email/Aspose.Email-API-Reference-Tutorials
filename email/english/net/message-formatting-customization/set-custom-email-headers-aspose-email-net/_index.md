@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Custom Email Headers Using Aspose.Email for .NET: A Complete Guide
 
@@ -177,6 +179,9 @@ A: Absolutely! You can add attachments using the `Attachments.Add()` method on y
 With this guide, you're well-equipped to handle custom email headers using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/csharp-technique-converting-html-body-to
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# Technique - Converting HTML Body to Plain Text
@@ -81,9 +83,11 @@ A4: Yes, Aspose.Email provides extensive capabilities for email automation, maki
 A5: You can explore the API documentation and resources on the Aspose website at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) and [https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
 Now that you have mastered the art of converting HTML email content to plain text, you can enhance your email processing capabilities in C#. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

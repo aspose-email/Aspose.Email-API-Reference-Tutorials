@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Set Multiple MAPI Properties in Java with Aspose.Email: A Comprehensive Guide
 
@@ -297,7 +299,11 @@ This section covers setting and validating multiple properties in MAPI messages.
 ## Conclusion
 
 This guide provided a comprehensive approach to managing multiple properties in MAPI messages using Aspose.Email for Java. By following these steps, you can efficiently store and manage various data types within your applications.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

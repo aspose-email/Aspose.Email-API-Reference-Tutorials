@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage MAPI Journal Entries with Aspose.Email for Java
 
@@ -198,7 +200,11 @@ Consider exploring other features of Aspose.Email, such as manipulating calendar
 - **Purchase License**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial**: [Temporary License for Evaluation](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

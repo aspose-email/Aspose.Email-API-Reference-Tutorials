@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Preserve TNEF Attachments in EML Files Using Aspose.Email for Java
 
@@ -177,7 +179,11 @@ A5: Visit the Aspose forum or contact their support team for assistance.
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 Implement these steps today and streamline your email handling with Aspose.Email for Java!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

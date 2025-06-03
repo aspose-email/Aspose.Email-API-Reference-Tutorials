@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Automate Email Management with Aspose.Email .NET: Connect and Search IMAP Servers Efficiently
 
@@ -157,7 +159,11 @@ Use batching and optimize your queries to process emails in manageable chunks.
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Start automating your email management tasks today with Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

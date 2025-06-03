@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Retrieval with Aspose.Email Java: Using Sequence Numbers and Unique URIs
 
@@ -175,7 +177,11 @@ Implementing email retrieval using Aspose.Email Java has several practical appli
 2. **Data Migration**: Transfer emails between servers or platforms, preserving their structure and metadata.
 3. **Spam Filtering Systems**: Pre-process emails to identify and filter out unwanted messages before they reach users.
 4. **Customer Support Automation**: Extract necessary data from emails for streamlined customer support processes.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

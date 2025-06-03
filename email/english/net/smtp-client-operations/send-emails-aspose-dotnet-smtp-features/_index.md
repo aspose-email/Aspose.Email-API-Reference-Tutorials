@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails with Aspose.Email for .NET Using SMTP
 
@@ -189,7 +191,11 @@ A: Yes, use the `Attachments.Add()` method on a `MailMessage` object to include 
 - **Free Trial**: [Try Aspose Email](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Get Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

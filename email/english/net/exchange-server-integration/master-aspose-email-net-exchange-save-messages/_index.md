@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Save Exchange Emails as MSG Using Aspose.Email .NET: A Complete Guide
 
@@ -170,7 +172,11 @@ Ready to take your email automation skills to the next level? Try implementing t
 - **Purchase**: Buy licenses directly via [Aspose Purchase Page](https://purchase.aspose.com/buy)
 - **Free Trial**: Start with a free trial at [Aspose Free Trial](https://releases.aspose.com/email/net/)
 - **Support**: Seek help and share insights on the [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

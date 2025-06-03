@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Google Calendar Appointments Using Aspose.Email for .NET
 
@@ -178,6 +180,9 @@ For further exploration, consult these resources:
 By following this tutorial, you're now equipped to manage Google Calendar appointments using Aspose.Email for .NET effectively. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

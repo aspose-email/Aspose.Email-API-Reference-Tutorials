@@ -1,36 +1,38 @@
 ---
-title: تحويل EML إلى تنسيق MSG باستخدام C#
-linktitle: تحويل EML إلى تنسيق MSG باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تحويل EML إلى MSG باستخدام C# وAspose.Email لـ .NET. دليل شامل يحتوي على أمثلة التعليمات البرمجية لتحويل تنسيق البريد الإلكتروني بكفاءة.
-weight: 14
-url: /ar/net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
+"description": "Learn how to convert EML to MSG using C# and Aspose.Email for .NET. A comprehensive guide with code examples for efficient email format conversion."
+"linktitle": "Converting EML to MSG Format using C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Converting EML to MSG Format using C#"
+"url": "/ar/net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحويل EML إلى تنسيق MSG باستخدام C#
+# Converting EML to MSG Format using C#
 
 
 ## مقدمة
 
-في العالم الرقمي اليوم، حيث يلعب التواصل عبر البريد الإلكتروني دورًا محوريًا، تصبح القدرة على التعامل مع تنسيقات البريد الإلكتروني المختلفة بكفاءة أمرًا بالغ الأهمية. EML وMSG هما تنسيقان شائعان يستخدمان لتخزين رسائل البريد الإلكتروني. يُستخدم EML على نطاق واسع لتصدير رسائل البريد الإلكتروني الفردية وأرشفتها، بينما يعد MSG أكثر ملاءمة لتخزين رسائل البريد الإلكتروني مع مرفقاتها. سيرشدك هذا الدليل خطوة بخطوة خلال عملية تحويل ملفات EML إلى تنسيق MSG باستخدام C# وAspose.Email for .NET، وهي مكتبة قوية للتعامل مع المهام المتعلقة بالبريد الإلكتروني.
+In today's digital world, where email communication plays a pivotal role, the ability to manipulate different email formats efficiently becomes crucial. EML and MSG are two common formats used for storing email messages. EML is widely used for exporting and archiving individual emails, while MSG is more suitable for storing emails along with their attachments. This step-by-step guide will walk you through the process of converting EML files to MSG format using C# and Aspose.Email for .NET, a powerful library for handling email-related tasks.
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في الكود، تأكد من أن لديك المتطلبات الأساسية التالية:
+Before we dive into the code, make sure you have the following prerequisites:
 
-- Visual Studio أو أي بيئة تطوير C#
--  Aspose.Email لمكتبة .NET (التنزيل من[هنا](https://releases.aspose.com/email/net)
+- Visual Studio or any C# development environment
+- Aspose.Email for .NET library (download from [هنا](https://releases.aspose.com/email/net)
 
-## الخطوة 1: إعداد المشروع
+## Step 1: Setting Up the Project
 
-1. قم بإنشاء مشروع C# جديد في بيئة التطوير المفضلة لديك.
-2. قم بتثبيت Aspose.Email لمكتبة .NET عن طريق إضافة المرجع إليها.
+1. Create a new C# project in your preferred development environment.
+2. Install the Aspose.Email for .NET library by adding the reference to it.
 
-## الخطوة الثانية: كتابة رمز التحويل
+## Step 2: Writing the Conversion Code
 
 ```csharp
 using Aspose.Email;
@@ -41,11 +43,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        // قم بتحميل ملف إمل
+        // Load the EML file
         string emlFilePath = "path_to_your_eml_file.eml";
         MailMessage emlMessage = MailMessage.Load(emlFilePath);
 
-        // احفظ الرسالة بتنسيق MSG
+        // حفظ الرسالة بصيغة MSG
         string msgFilePath = "converted_message.msg";
         emlMessage.Save(msgFilePath, SaveOptions.DefaultMsgUnicode);
         
@@ -54,45 +56,47 @@ class Program
 }
 ```
 
-## الخطوة 3: الشرح
+## Step 3: Explanation
 
-- نبدأ باستيراد مساحات الأسماء الضرورية من مكتبة Aspose.Email.
-- في ال`Main` الطريقة، نقوم بتحميل ملف EML باستخدام`MailMessage.Load` طريقة.
--  ثم نقوم بحفظ الرسالة المحملة بتنسيق MSG باستخدام ملف`Save` الطريقة وتحديد الشكل المطلوب.
+- We start by importing necessary namespaces from the Aspose.Email library.
+- In the `Main` method, we load the EML file using `MailMessage.Load` طريقة.
+- Then, we save the loaded message in MSG format using the `Save` method and specifying the desired format.
 
-## الخطوة 4: تشغيل الكود
+## Step 4: Running the Code
 
-1.  يستبدل`"path_to_your_eml_file.eml"` بالمسار الفعلي لملف EML الخاص بك.
-2. قم بتشغيل الكود.
+1. يستبدل `"path_to_your_eml_file.eml"` with the actual path of your EML file.
+2. Run the code.
 
 ## خاتمة
 
-تعلمنا في هذه المقالة كيفية تحويل ملفات EML إلى تنسيق MSG باستخدام C# وAspose.Email لـ .NET. يعمل مقتطف الكود المقدم على تبسيط العملية وتمكين المطورين من إدارة تحويلات تنسيق البريد الإلكتروني بكفاءة في تطبيقاتهم.
+In this article, we've learned how to convert EML files to MSG format using C# and Aspose.Email for .NET. The provided code snippet simplifies the process and empowers developers to efficiently manage email format conversions in their applications.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني الحصول على Aspose.Email لـ .NET؟
+### How do I obtain Aspose.Email for .NET?
 
- يمكنك تنزيل Aspose.Email لمكتبة .NET من[هذا الرابط](https://releases.aspose.com/email/net).
+You can download the Aspose.Email for .NET library from [هذا الرابط](https://releases.aspose.com/email/net).
 
-### هل يمكنني تحويل ملفات EML متعددة بشكل مجمّع باستخدام هذا الأسلوب؟
+### Can I convert multiple EML files in bulk using this approach?
 
-نعم، يمكنك التكرار عبر مجموعة من ملفات EML وتطبيق رمز التحويل على كل منها.
+Yes, you can iterate through a collection of EML files and apply the conversion code to each one.
 
-### هل Aspose.Email for .NET مناسب للمهام الأخرى المتعلقة بالبريد الإلكتروني؟
+### Is Aspose.Email for .NET suitable for other email-related tasks?
 
-بالتأكيد، يوفر Aspose.Email for .NET نطاقًا واسعًا من الميزات للتعامل مع رسائل البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني واستلامها ومعالجتها.
+Absolutely, Aspose.Email for .NET offers a wide range of features for working with emails, including sending, receiving, and manipulating email messages.
 
-### هل يتعامل الكود مع المرفقات أثناء التحويل؟
+### Does the code handle attachments during the conversion?
 
-نعم، يحتفظ الكود المقدم بالمرفقات أثناء تحويل EML إلى تنسيق MSG.
+Yes, the provided code retains attachments while converting EML to MSG format.
 
-### هل يمكنني تخصيص تنسيق إخراج MSG باستخدام Aspose.Email؟
+### Can I customize the MSG output format using Aspose.Email?
 
-من المؤكد أن Aspose.Email for .NET يوفر خيارات متنوعة لتخصيص تنسيق MSG الناتج بناءً على متطلباتك.
+Certainly, Aspose.Email for .NET provides various options for customizing the output MSG format based on your requirements.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extract Vote Results from MAPI Messages Using Aspose.Email for .NET
 
@@ -143,7 +145,11 @@ As a next step, consider exploring other functionalities of Aspose.Email, such a
 - **Free Trial**: [Aspose Email Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Apply for Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Community Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

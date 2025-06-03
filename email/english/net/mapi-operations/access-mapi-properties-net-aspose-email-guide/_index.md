@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Accessing MAPI Properties in .NET with Aspose.Email: A Comprehensive Guide
 
@@ -200,6 +202,9 @@ Yes, manage file operations efficiently and use proper memory management techniq
 - **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/net/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

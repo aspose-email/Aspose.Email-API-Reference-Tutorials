@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Automation with Aspose.Email for Java: Sending and Synchronizing Messages
 
@@ -168,6 +170,9 @@ Ready to take your Java email automation skills to the next level? Head over to 
 By following this guide, you can harness the full potential of Aspose.Email Java to automate your email processes efficiently. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

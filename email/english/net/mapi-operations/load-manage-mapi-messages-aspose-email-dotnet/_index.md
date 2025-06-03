@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Load and Manage MAPI Messages with Aspose.Email for .NET: A Comprehensive Guide
 
@@ -139,7 +141,11 @@ using (PersonalStorage personalStorage = PersonalStorage.Create(outputPath, File
 {
     // Create a 'Notes' folder to store your notes.
     FolderInfo notesFolder = personalStorage.CreatePredefinedFolder("Notes\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

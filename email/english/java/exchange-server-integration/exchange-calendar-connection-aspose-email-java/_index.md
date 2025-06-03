@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect an Exchange Calendar Using Aspose.Email for Java
 
@@ -216,7 +218,11 @@ To ensure efficient performance when working with large volumes of calendar data
 
 ## Conclusion
 Throughout this tutorial, we've explored how to connect to an Exchange server and manage calendar items using Aspose.Email for Java. By following these steps, you can effectively integrate Exchange calendar functionalities into your Java applications, enhancing productivity and automation capabilities.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

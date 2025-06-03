@@ -4,8 +4,11 @@ description: "Complete tutorials for formatting email content, working with HTML
 weight: 3
 url: "/net/message-formatting-customization/"
 ---
+
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Email Formatting and Customization Tutorials for Aspose.Email Java
 
@@ -66,7 +69,11 @@ Learn how to ensure consistent text encoding for emails in .NET using Aspose.Ema
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

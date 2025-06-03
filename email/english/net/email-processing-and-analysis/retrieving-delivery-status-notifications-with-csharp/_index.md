@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/retrieving-delivery-status-notifications
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Retrieving Delivery Status Notifications with C#
@@ -77,9 +79,11 @@ A5: Visit the [Aspose.Email for C# API documentation](https://reference.aspose.c
 ### 10. Conclusion
 
 In this guide, we've explored how to retrieve delivery status notifications with C# using Aspose.Email for C#. Keeping track of your email deliveries is essential for effective communication, and Aspose.Email simplifies this process.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

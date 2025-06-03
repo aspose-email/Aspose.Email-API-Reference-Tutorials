@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Load and Access Outlook PST Files Using Java with Aspose.Email
 
@@ -150,7 +152,11 @@ In this tutorial, you've learned how to load and access Outlook PST files using 
    - Yes, manage multiple PST files by creating separate `PersonalStorage` instances for each file and processing them independently.
 3. **How do I handle large PST files without running out of memory?**
    - Implement lazy loading strategies and optimize your code to process data in smaller chunks rather than loading everything into memory at once.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

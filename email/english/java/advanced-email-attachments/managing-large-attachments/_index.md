@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/managing-large-attachments/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Managing Large Attachments in Aspose.Email
@@ -155,6 +157,7 @@ Yes, you can compress attachments to reduce their size before sending them. Aspo
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

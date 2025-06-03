@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/using-aspose-email-for-document-attachment
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Using Aspose.Email for Document Attachments
@@ -114,6 +116,7 @@ If you need to handle large document attachments, consider using streaming techn
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage MAPI Contacts Using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -172,6 +174,9 @@ Feel free to explore further and implement these solutions into your projects!
 Leverage these resources to deepen your understanding and enhance your implementation of Aspose.Email for .NET in managing MAPI contacts. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

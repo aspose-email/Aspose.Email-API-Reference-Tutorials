@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Save an Outlook MSG File Using Aspose.Email for .NET
 
@@ -161,7 +163,11 @@ A: Ensure your .NET environment is correctly set up. Check for version compatibi
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 Experiment with the code and explore further to leverage all that Aspose.Email for .NET has to offer!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

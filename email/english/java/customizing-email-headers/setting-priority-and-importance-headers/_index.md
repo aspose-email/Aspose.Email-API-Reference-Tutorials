@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/setting-priority-and-importance-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Setting Priority and Importance Headers with Aspose.Email
@@ -104,6 +106,7 @@ Handling email attachments with Aspose.Email is straightforward. You can use the
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

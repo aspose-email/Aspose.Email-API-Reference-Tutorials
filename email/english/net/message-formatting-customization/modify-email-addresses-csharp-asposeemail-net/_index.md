@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Modify Email Addresses in C# Using Aspose.Email for .NET
 
@@ -169,7 +171,11 @@ To take this further, explore additional features of Aspose.Email such as attach
 - **Support**: For questions, visit the [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 We hope this tutorial has helped you get started with Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -4,8 +4,11 @@ description: "Step-by-step tutorials for working with Thunderbird emails, MBOX f
 weight: 16
 url: "/java/thunderbird-mbox-operations/"
 ---
+
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Thunderbird and MBOX File Operations Tutorials for Aspose.Email Java
 
@@ -30,7 +33,11 @@ Learn to efficiently read from and write to MBOX files using Aspose.Email for Ja
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

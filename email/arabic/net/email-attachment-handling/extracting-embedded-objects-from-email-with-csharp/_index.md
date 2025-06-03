@@ -1,67 +1,69 @@
 ---
-title: استخراج الكائنات المضمنة من البريد الإلكتروني باستخدام C#
-linktitle: استخراج الكائنات المضمنة من البريد الإلكتروني باستخدام C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية استخراج الكائنات المضمنة من رسائل البريد الإلكتروني باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-weight: 16
-url: /ar/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Learn how to extract embedded objects from emails using C# and Aspose.Email for .NET. Step-by-step guide with code examples."
+"linktitle": "Extracting Embedded Objects from Email with C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Extracting Embedded Objects from Email with C#"
+"url": "/ar/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# استخراج الكائنات المضمنة من البريد الإلكتروني باستخدام C#
+# Extracting Embedded Objects from Email with C#
 
 
-## مقدمة إلى الكائنات المضمنة في رسائل البريد الإلكتروني
+## Introduction to Embedded Objects in Emails
 
-تشير الكائنات المضمنة في رسائل البريد الإلكتروني إلى الملفات التي تم إدراجها مباشرة في محتوى البريد الإلكتروني بدلاً من إرفاقها بشكل منفصل. تعمل هذه الكائنات على إثراء تجربة البريد الإلكتروني من خلال السماح للمرسل بتضمين الصور أو الرسوم المتحركة أو المحتوى التفاعلي داخل نص الرسالة.
+Embedded objects in emails refer to files that are directly inserted into the email content rather than being attached separately. These objects enrich the email experience by allowing the sender to include images, animations, or interactive content within the message body.
 
-## الشروع في العمل مع Aspose.Email لـ .NET
+## Getting Started with Aspose.Email for .NET
 
- Aspose.Email for .NET هي مكتبة قوية توفر ميزات متنوعة للعمل مع رسائل البريد الإلكتروني، بما في ذلك تحليل رسائل البريد الإلكتروني وإنشائها ومعالجتها. للبدء، تحتاج إلى تثبيت مكتبة Aspose.Email for .NET في مشروعك. يمكنك إما تنزيله من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو استخدم مدير الحزم مثل NuGet.
+Aspose.Email for .NET is a powerful library that provides various features for working with emails, including parsing, creation, and manipulation of email messages. To get started, you need to have the Aspose.Email for .NET library installed in your project. You can either download it from the Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or use a package manager like NuGet.
 
-## تحميل وتحليل البريد الإلكتروني
+## Loading and Parsing an Email
 
-لاستخراج الكائنات المضمنة من رسالة بريد إلكتروني، تحتاج أولاً إلى تحميل رسالة البريد الإلكتروني وتحليلها. وإليك كيف يمكنك القيام بذلك:
+To extract embedded objects from an email, you first need to load and parse the email message. Here's how you can do it:
 
 ```csharp
-// قم باستيراد مساحات الأسماء الضرورية
+// Import the necessary namespaces
 using Aspose.Email;
 
 
-// قم بتحميل رسالة البريد الإلكتروني
+// Load the email message
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## تحديد واستخراج الكائنات المضمنة
+## Identifying and Extracting Embedded Objects
 
-بمجرد تحميل رسالة البريد الإلكتروني، يمكنك التكرار من خلال AlternateViews الخاصة بها لتحديد الكائنات المضمنة واستخراجها. تمثل AlternateViews تنسيقات مختلفة للبريد الإلكتروني، بما في ذلك HTML والنص العادي. غالبًا ما يتم العثور على الكائنات المضمنة في طريقة عرض HTML.
+Once the email message is loaded, you can iterate through its AlternateViews to identify and extract embedded objects. AlternateViews represent different formats of the email, including HTML and plain text. Embedded objects are often found in the HTML view.
 
 ```csharp
-// التكرار من خلال وجهات النظر البديلة
+// Iterate through alternate views
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // استخراج الكائنات المضمنة من محتوى HTML
+        // Extract embedded objects from HTML content
         foreach (var linkedResource in view.LinkedResources)
         {
-            // استخراج وحفظ المورد المرتبط (كائن مضمن)
+            // Extract and save the linked resource (embedded object)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
 }
 ```
 
-## حفظ الكائنات المستخرجة
+## Saving Extracted Objects
 
-بمجرد تحديد الكائنات المضمنة واستخراجها، يمكنك حفظها في الموقع الذي تريده. غالبًا ما يتم استخدام ContentId الخاص بالمورد المرتبط كاسم ملف.
+Once you've identified and extracted the embedded objects, you can save them to your desired location. The ContentId of the linked resource is often used as the filename.
 
-## كود المصدر الكامل
+## Complete Source Code
 
-إليك الكود المصدري الكامل لاستخراج الكائنات المضمنة من البريد الإلكتروني باستخدام Aspose.Email for .NET:
+Here's the complete source code for extracting embedded objects from an email using Aspose.Email for .NET:
 
 ```csharp
 using Aspose.Email;
@@ -73,18 +75,18 @@ namespace EmbeddedObjectExtractor
     {
         static void Main(string[] args)
         {
-            // قم بتحميل رسالة البريد الإلكتروني
+            // Load the email message
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            // التكرار من خلال وجهات النظر البديلة
+            // Iterate through alternate views
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // استخراج الكائنات المضمنة من محتوى HTML
+                    // Extract embedded objects from HTML content
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        // استخراج وحفظ المورد المرتبط (كائن مضمن)
+                        // Extract and save the linked resource (embedded object)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,32 +98,34 @@ namespace EmbeddedObjectExtractor
 
 ## خاتمة
 
-في هذه المقالة، اكتشفنا كيفية استخراج الكائنات المضمنة من رسائل البريد الإلكتروني باستخدام C# ومكتبة Aspose.Email for .NET. لقد قمنا بتغطية العملية بأكملها، بدءًا من تحميل البريد الإلكتروني وتحليله وحتى تحديد الكائنات المضمنة وحفظها. باتباع هذا الدليل، يمكنك تعزيز قدرات معالجة البريد الإلكتروني لديك وإثراء محتوى تطبيقاتك.
+In this article, we explored how to extract embedded objects from emails using C# and the Aspose.Email for .NET library. We covered the entire process, from loading and parsing the email to identifying and saving the embedded objects. By following this guide, you can enhance your email processing capabilities and enrich the content of your applications.
 
-## الأسئلة الشائعة
+## FAQ's
 
 ### كيف أقوم بتثبيت Aspose.Email لـ .NET؟
 
- يمكنك تثبيت Aspose.Email لـ .NET عن طريق تنزيله من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو باستخدام مدير الحزم مثل NuGet. 
+You can install Aspose.Email for .NET by downloading it from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or using a package manager like NuGet. 
 
-### هل يمكنني استخراج الكائنات المضمنة من مرفقات بخلاف HTML؟
+### Can I extract embedded objects from attachments other than HTML?
 
-نعم، يوفر Aspose.Email for .NET طرقًا لاستخراج الكائنات المضمنة من أنواع المرفقات المختلفة، بما في ذلك HTML والنص العادي وحتى تنسيقات الوسائط المتعددة.
+Yes, Aspose.Email for .NET provides methods to extract embedded objects from various attachment types, including HTML, plain text, and even multimedia formats.
 
-### هل Aspose.Email لـ .NET مجاني للاستخدام؟
+### Is Aspose.Email for .NET free to use?
 
- Aspose.Email for .NET هي مكتبة تجارية، وقد تحتاج إلى الحصول على ترخيص لاستخدامها في مشاريعك. الرجوع إلى[صفحة التسعير](https://purchase.aspose.com/pricing/email/net) للمزيد من المعلومات.
+Aspose.Email for .NET is a commercial library, and you may need to acquire a license to use it in your projects. Refer to the [pricing page](https://purchase.aspose.com/pricing/email/net) لمزيد من المعلومات.
 
-### هل يمكنني تعديل الكائنات المضمنة المستخرجة قبل الحفظ؟
+### Can I modify the extracted embedded objects before saving?
 
-نعم، يمكنك التعامل مع الكائنات المضمنة المستخرجة قبل حفظها. توفر مكتبة Aspose.Email طرقًا مختلفة لتعديل محتوى وموارد البريد الإلكتروني.
+Yes, you can manipulate the extracted embedded objects before saving them. The Aspose.Email library offers various methods for modifying email content and resources.
 
-### أين يمكنني العثور على المزيد من الأمثلة لاستخدام Aspose.Email لـ .NET؟
+### Where can I find more examples of using Aspose.Email for .NET?
 
- يمكنك العثور على المزيد من أمثلة التعليمات البرمجية والبرامج التعليمية في[مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/). 
+You can find more code examples and tutorials in the [API Reference](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

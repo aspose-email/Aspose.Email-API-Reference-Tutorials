@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Add TNEF Attachments to Emails Using Aspose.Email for .NET
 
@@ -149,6 +151,9 @@ For further exploration, consider these resources:
 Engage with the community or seek support on the [Aspose Forum](https://forum.aspose.com/c/email/10) for any queries. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/detecting-various-file-formats-using-csh
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Detecting Various File Formats using C# Code
@@ -125,9 +127,11 @@ Absolutely, Aspose.Email can be seamlessly integrated into web applications to d
 ### Where can I find detailed documentation for Aspose.Email for .NET?
 
 For comprehensive documentation, code samples, and resources, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net) page.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

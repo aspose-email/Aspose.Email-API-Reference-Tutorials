@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement Daily Recurrence Patterns with Aspose.Email for .NET
 
@@ -57,7 +59,11 @@ Install-Package Aspose.Email
 
 **NuGet Package Manager UI:**
 - Open the NuGet Package Manager in Visual Studio, search for "Aspose.Email\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

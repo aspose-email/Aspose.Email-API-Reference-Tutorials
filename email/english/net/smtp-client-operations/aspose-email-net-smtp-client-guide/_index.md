@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Build and Send Emails Using Aspose.Email .NET: A Comprehensive SMTP Client Guide
 
@@ -168,7 +170,11 @@ Absolutely. Use `message.To.Add()` for each recipient address.
 - **Support Forum**: [Aspose.Email Support](https://forum.aspose.com/c/email/10)
 
 Dive into Aspose.Email for .NET today and streamline your email communication processes. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

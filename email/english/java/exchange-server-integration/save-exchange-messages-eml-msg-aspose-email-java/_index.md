@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Save Exchange Messages as EML/MSG with Aspose.Email for Java
 
@@ -237,7 +239,11 @@ A2: Use the `saveMessage` method from the `IEWSClient` class to save messages in
 
 **Q3: Can I use Aspose.Email for non-Microsoft email servers?**
 A3: Yes, Aspose.Email supports multiple protocols including IMAP, POP3, SMTP, and more, making it versatile for various email systems.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

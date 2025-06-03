@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Embed an Email as an Attachment Using Aspose.Email for .NET
 
@@ -172,6 +174,9 @@ Explore these resources to deepen your understanding and make the most out of **
 By following this comprehensive guide, you're well-equipped to implement email embedding features effectively in your applications. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Alternate Text in Emails with Aspose.Email for .NET
 
@@ -146,7 +148,11 @@ You can add more than one alternate view to your `MailMessage`, allowing for dif
 - **Free Trial**: [Try Aspose.Email for Free](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Apply for a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

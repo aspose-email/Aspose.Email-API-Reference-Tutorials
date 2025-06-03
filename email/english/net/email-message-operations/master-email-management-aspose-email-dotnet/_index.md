@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Management in .NET: Import EML Files and Configure SMTP with Aspose.Email
 
@@ -166,6 +168,9 @@ A5: Absolutely. The `MailMessage` class provides methods for editing subject lin
 This guide provides all the tools and information needed to start managing email files and configuring SMTP clients using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

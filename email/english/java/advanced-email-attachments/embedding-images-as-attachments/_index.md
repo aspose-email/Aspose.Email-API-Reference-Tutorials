@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/embedding-images-as-attachments/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Embedding Images as Attachments in Aspose.Email
@@ -107,6 +109,7 @@ The size of embedded images may impact email deliverability and recipient experi
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

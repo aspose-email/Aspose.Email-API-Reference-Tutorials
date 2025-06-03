@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/csharp-guide-checking-messages-for-encry
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# Guide - Checking Messages for Encryption
@@ -166,6 +168,7 @@ For more detailed information, examples, and documentation, visit the [Aspose.Em
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

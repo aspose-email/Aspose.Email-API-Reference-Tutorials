@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Automation: Aspose.Email Java & EWS for Exchange Server Integration
 
@@ -204,7 +206,11 @@ A: Visit the [Purchase Page](https://purchase.aspose.com/buy) to acquire a full 
 - **Purchase**: For licensing options, visit [Aspose Purchase](https://purchase.aspose.com/buy).
 - **Free Trial**: Get started with a free trial at [Aspose Email Java Free Trial](https://releases.aspose.com/email/java/).
 - **Temporary License**: Evaluate the full features of Aspose.Email by acquiring a temporary license from [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

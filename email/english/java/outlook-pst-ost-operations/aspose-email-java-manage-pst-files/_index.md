@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage Outlook PST Files Using Aspose.Email for Java
 
@@ -180,7 +182,11 @@ By mastering these techniques, you can enhance your Java applications' email man
 - **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
 - **Temporary License**: [Aspose Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

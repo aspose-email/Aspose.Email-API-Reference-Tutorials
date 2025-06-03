@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Attachments from Outlook PST Files Using Aspose.Email .NET: A Step-by-Step Guide
 
@@ -176,7 +178,11 @@ Explore the [Aspose Documentation](https://reference.aspose.com/email/net/) and 
 - **Support**: Visit the [Aspose Forum](https://forum.aspose.com/c/email/10) for support and community discussions.
 
 With this comprehensive guide, you are now equipped to extract attachments from PST files using Aspose.Email .NET efficiently. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

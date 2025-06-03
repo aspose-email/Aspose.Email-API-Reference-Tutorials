@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficiently Reading Zimbra TGZ Emails with Aspose.Email for .NET
 
@@ -172,7 +174,11 @@ Ready to implement? Start enhancing your email management solutions today!
 - **Free Trial & Temporary License**: Access trial versions at [Aspose Releases](https://releases.aspose.com/email/net/)
 
 Dive into the world of email management with Aspose.Email for .NET, and transform your data handling capabilities!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

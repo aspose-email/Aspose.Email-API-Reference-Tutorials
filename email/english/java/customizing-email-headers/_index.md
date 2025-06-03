@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Customizing Email Headers with Aspose.Email for Java
@@ -43,9 +45,11 @@ Ensure email security with DKIM signatures using Aspose.Email for Java. Step-by-
 Unlock the Power of X-Headers in Emails with Aspose.Email for Java. Learn to Manage Custom Metadata and Enhance Email Processing.
 ### [Enriching Email Metadata through Headers with Aspose.Email](./enriching-email-metadata-through-headers/)
 Enhance Email Metadata with Aspose.Email for Java. Learn how to enrich email headers for improved tracking and customization with Aspose.Email.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

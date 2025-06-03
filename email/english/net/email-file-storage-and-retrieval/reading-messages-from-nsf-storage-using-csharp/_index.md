@@ -8,7 +8,9 @@ url: /net/email-file-storage-and-retrieval/reading-messages-from-nsf-storage-usi
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Reading Messages from NSF Storage using C#
@@ -83,6 +85,7 @@ Aspose.Email for .NET provides robust capabilities for working with Zimbra TGZ s
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

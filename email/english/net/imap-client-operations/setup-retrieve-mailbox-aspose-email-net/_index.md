@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up and Retrieve Mailbox Information Using Aspose.Email .NET for IMAP Clients
 
@@ -177,7 +179,11 @@ A5: Use the .NET CLI or Package Manager Console commands shown earlier. Ensure c
 - **Free Trial:** [Try Aspose.Email](https://releases.aspose.com/email/net/)
 - **Temporary License:** [Request Here](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Aspose Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

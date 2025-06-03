@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manipulate PST Files Using Aspose.Email for Java
 
@@ -180,7 +182,11 @@ A: Process them in smaller batches and ensure proper resource management to opti
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 By leveraging the Aspose.Email library, you can efficiently manage your PST files in Java. Start experimenting and integrate these powerful features into your applications today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

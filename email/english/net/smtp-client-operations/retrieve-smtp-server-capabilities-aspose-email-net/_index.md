@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve SMTP Server Capabilities Using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -190,7 +192,11 @@ Ready to enhance your application? Try implementing this solution today!
 - **Documentation**: Explore comprehensive guides and API references at [Aspose.Email Documentation](https://reference.aspose.com/email/net/).
 - **Download Aspose.Email for .NET**: Access the latest version from [Releases Page](https://releases.aspose.com/email/net/).
 - **Purchase a License**: Obtain your license through the [Aspose Purchase Portal](https://purchase.aspose.com/buy).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-conversion-and-export/converting-eml-to-msg-format-using-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Converting EML to MSG Format using C#
@@ -94,6 +96,7 @@ Certainly, Aspose.Email for .NET provides various options for customizing the ou
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

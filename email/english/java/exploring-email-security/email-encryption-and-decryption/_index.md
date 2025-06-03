@@ -8,7 +8,9 @@ url: /java/exploring-email-security/email-encryption-and-decryption/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Email Encryption and Decryption with Aspose.Email
@@ -101,9 +103,11 @@ Yes, it's designed for scalability, making it suitable for both small-scale and 
 Visit the API documentation [here](https://reference.aspose.com/email/java/) for detailed information and examples.
 
 Now you have a comprehensive understanding of Email Encryption and Decryption using Aspose.Email for Java. Start securing your emails today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

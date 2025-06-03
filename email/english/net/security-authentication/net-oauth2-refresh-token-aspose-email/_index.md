@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Implementing Refresh Token Access in .NET with Aspose.Email
 
@@ -213,7 +215,11 @@ Ensure you catch exceptions when making HTTP requests. Implement retry logic if 
 
 ### Can Aspose.Email be used for both sending and receiving emails?
 Yes! It supports a wide range of protocols including SMTP, IMAP, and POP3.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

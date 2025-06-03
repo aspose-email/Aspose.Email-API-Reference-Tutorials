@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master IMAP Operations in Java Using Aspose.Email Library
 
@@ -248,7 +250,11 @@ For optimal performance while using Aspose.Email:
 - "IMAP Operations in Java"
 - "Aspose.Email for Java"
 - "Java Email Management"
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

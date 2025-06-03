@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/managing-default-text-encoding-csharp-i
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Managing Default Text Encoding - C# Implementation
@@ -146,6 +148,7 @@ When receiving emails, you should check the encoding used in the email's headers
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

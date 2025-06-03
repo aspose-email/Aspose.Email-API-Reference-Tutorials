@@ -1,44 +1,46 @@
 ---
-title: إنشاء رسالة بريدية جديدة في C#
-linktitle: إنشاء رسالة بريدية جديدة في C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: إتقان إنشاء البريد الإلكتروني في C# باستخدام Aspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية. ارفع مستوى تطبيقك الآن
-weight: 11
-url: /ar/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/
+"description": "Master email creation in C# using Aspose.Email for .NET. A comprehensive guide with code examples. Elevate your app now"
+"linktitle": "Constructing a New Mail Message in C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Constructing a New Mail Message in C#"
+"url": "/ar/net/email-composition-and-creation/constructing-a-new-mail-message-in-csharp/"
+"weight": 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إنشاء رسالة بريدية جديدة في C#
+# Constructing a New Mail Message in C#
 
 
-هل تتطلع إلى تحسين تطبيق C# الخاص بك عن طريق إضافة القدرة على إرسال رسائل البريد الإلكتروني برمجيًا؟ بفضل قوة Aspose.Email لـ .NET، يمكنك دمج وظائف البريد الإلكتروني بسلاسة في تطبيقك. في هذا الدليل خطوة بخطوة، سنرشدك خلال عملية إنشاء رسالة بريد جديدة باستخدام Aspose.Email لـ .NET، مع استكمال أمثلة التعليمات البرمجية المصدر.
+Are you looking to enhance your C# application by adding the capability to send emails programmatically? With the power of Aspose.Email for .NET, you can seamlessly integrate email functionalities into your application. In this step-by-step guide, we'll walk you through the process of constructing a new mail message using Aspose.Email for .NET, complete with source code examples.
 
-## 1. مقدمة إلى Aspose.Email لـ .NET
+## 1. Introduction to Aspose.Email for .NET
 
-Aspose.Email for .NET هي مكتبة قوية تسمح لك بالعمل مع رسائل البريد الإلكتروني في تطبيقات C# الخاصة بك. فهو يوفر مجموعة واسعة من الميزات، بما في ذلك إنشاء رسائل البريد الإلكتروني وإرسالها واستلامها ومعالجتها. في هذا البرنامج التعليمي، سنركز على إنشاء رسالة بريد جديدة من البداية.
+Aspose.Email for .NET is a powerful library that allows you to work with emails in your C# applications. It provides a wide range of features, including creating, sending, receiving, and manipulating emails. In this tutorial, we'll focus on constructing a new mail message from scratch.
 
-## 2. إعداد مشروعك
+## 2. Setting Up Your Project
 
-قبل أن تبدأ، تأكد من إعداد بيئة تطوير C# على جهازك. يمكنك استخدام Visual Studio أو أي C# IDE آخر من اختيارك.
+Before you begin, make sure you have a C# development environment set up on your machine. You can use Visual Studio or any other C# IDE of your choice.
 
-## 3. إضافة Aspose.Email إلى مشروعك
+## 3. Adding Aspose.Email to Your Project
 
-للبدء، تحتاج إلى إضافة مكتبة Aspose.Email إلى مشروعك. يمكنك القيام بذلك باستخدام NuGet Package Manager. افتح NuGet Package Manager وابحث عن "Aspose.Email" لتثبيت الحزمة المطلوبة.
+To get started, you need to add the Aspose.Email library to your project. You can do this by using NuGet Package Manager. Open the NuGet Package Manager and search for "Aspose.Email" to install the required package.
 
-## 4. إنشاء رسالة بريدية جديدة
+## 4. Creating a New Mail Message
 
- لنبدأ بإنشاء مثيل جديد لـ`MailMessage` الفئة المقدمة من Aspose.Email. يمثل هذا الفصل رسالة بريد إلكتروني.
+Let's start by creating a new instance of the `MailMessage` class provided by Aspose.Email. This class represents an email message.
 
 ```csharp
 MailMessage message = new MailMessage();
 ```
 
-## 5. تحديد مستلمي البريد الإلكتروني
+## 5. Specifying Email Recipients
 
-بعد ذلك، ستحتاج إلى تحديد مستلمي البريد الإلكتروني. استخدم ال`To`, `Cc` ، و`Bcc` خصائص`MailMessage` فئة لإضافة عناوين البريد الإلكتروني.
+Next, you'll need to specify the recipients of the email. Use the `To`، `Cc`، و `Bcc` خصائص `MailMessage` class to add email addresses.
 
 ```csharp
 message.To.Add("recipient@example.com");
@@ -46,52 +48,52 @@ message.Cc.Add("cc@example.com");
 message.Bcc.Add("bcc@example.com");
 ```
 
-## 6. تحديد موضوع البريد الإلكتروني ونصه
+## 6. Setting the Email Subject and Body
 
- قم بتعيين موضوع ونص البريد الإلكتروني باستخدام`Subject` و`HtmlBody` ملكيات.
+Set the subject and body of the email using the `Subject` و `HtmlBody` properties.
 
 ```csharp
 message.Subject = "Hello from Aspose.Email!";
 message.HtmlBody = "<p>This is the <b>HTML</b> body of the email.</p>";
 ```
 
-## 7. إضافة المرفقات
+## 7. Adding Attachments
 
- يمكنك إرفاق الملفات بالبريد الإلكتروني باستخدام`Attachments` ملكية.
+You can attach files to the email using the `Attachments` ملكية.
 
 ```csharp
 Attachment attachment = new Attachment("path/to/attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-## 8. إضافة الارتباطات التشعبية
+## 8. Adding Hyperlinks
 
- لإضافة ارتباطات تشعبية داخل نص البريد الإلكتروني، استخدم HTML`<a>` بطاقة شعار.
+To add hyperlinks within the email body, use the HTML `<a>` tag.
 
 ```csharp
-message.HtmlBody += "<p>Click <a href='https://example.com'>هنا</a> لزيارة موقعنا.</p>";
+message.HtmlBody += "<p>Click <a href='https://example.com'>here</a> to visit our website.</p>";
 ```
 
-## 9. تنسيق البريد الإلكتروني
+## 9. Formatting the Email
 
-يتيح لك Aspose.Email تنسيق محتوى البريد الإلكتروني باستخدام HTML وCSS.
+Aspose.Email allows you to format the email content using HTML and CSS.
 
 ```csharp
 message.HtmlBody += "<p style='color: blue;'>This text is blue.</p>";
 ```
 
-## 10. إرسال البريد الإلكتروني
+## 10. Sending the Email
 
- بمجرد إنشاء رسالة البريد الإلكتروني، فقد حان الوقت لإرسالها باستخدام`SmtpClient` فصل.
+Once you've constructed the email message, it's time to send it using the `SmtpClient` فصل.
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 client.Send(message);
 ```
 
-## 11. معالجة الأخطاء
+## 11. Error Handling
 
-عند إرسال رسائل البريد الإلكتروني، من المهم التعامل مع الأخطاء بأمان. استخدم كتل محاولة الالتقاط لالتقاط أي استثناءات قد تحدث أثناء عملية الإرسال.
+When sending emails, it's important to handle errors gracefully. Use try-catch blocks to capture any exceptions that may occur during the sending process.
 
 ```csharp
 try
@@ -105,33 +107,35 @@ catch (Exception ex)
 }
 ```
 
-## 12. الاستنتاج
+## 12. Conclusion
 
-تهانينا! لقد تعلمت بنجاح كيفية إنشاء رسالة بريد جديدة باستخدام Aspose.Email لـ .NET. تعمل هذه المكتبة القوية على تبسيط عملية إضافة وظائف البريد الإلكتروني إلى تطبيقات C# الخاصة بك.
+Congratulations! You've successfully learned how to construct a new mail message using Aspose.Email for .NET. This powerful library simplifies the process of adding email functionality to your C# applications.
 
 ---
 
 ## الأسئلة الشائعة
 
-### هل Aspose.Email مكتبة مجانية
-   يقدم Aspose.Email الإصدارات المجانية والمدفوعة. توفر النسخة المجانية ميزات محدودة، بينما تفتح النسخة المدفوعة الإمكانات الكاملة للمكتبة.
+### Is Aspose.Email a free library
+   Aspose.Email offers both free and paid versions. The free version provides limited features, while the paid version unlocks the full potential of the library.
 
-### هل يمكنني إرسال مرفقات بأي حجم؟
-   على الرغم من عدم وجود قيود صارمة، فمن المستحسن مراعاة حدود حجم المرفقات الخاصة بموفر البريد الإلكتروني وسعة صندوق البريد الخاص بالمستلم.
+### Can I send attachments of any size?
+   While there are no strict limitations, it's recommended to consider the email provider's attachment size limits and the recipient's mailbox capacity.
 
-### هل يدعم Aspose.Email إرسال رسائل بريد إلكتروني بنص عادي؟
-   نعم، يمكنك بسهولة إرسال رسائل بريد إلكتروني بتنسيق HTML ونص عادي باستخدام Aspose.Email.
+### Does Aspose.Email support sending plain text emails?
+   Yes, you can easily send both HTML and plain text emails using Aspose.Email.
 
-### هل من الممكن جدولة رسائل البريد الإلكتروني باستخدام هذه المكتبة؟
-   يركز Aspose.Email على إنشاء البريد الإلكتروني ومعالجته. لجدولة رسائل البريد الإلكتروني، ستحتاج إلى التكامل مع نظام جدولة مهام منفصل.
+### Is it possible to schedule emails using this library?
+   Aspose.Email focuses on email creation and manipulation. For scheduling emails, you would need to integrate with a separate task scheduling system.
 
-### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
-   يمكنك العثور على وثائق شاملة وأمثلة على التعليمات البرمجية على[مرجع Aspose.Email API](https://reference.aspose.com/email/net/).
+### Where can I find more examples and documentation?
+   You can find comprehensive documentation and code examples on the [Aspose.Email API Reference](https://reference.aspose.com/email/net/).
 
 ---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

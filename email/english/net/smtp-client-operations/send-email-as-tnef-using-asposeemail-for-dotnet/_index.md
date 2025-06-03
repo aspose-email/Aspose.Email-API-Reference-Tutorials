@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails as TNEF Using Aspose.Email for .NET: A Developer’s Guide
 
@@ -187,7 +189,11 @@ You've now mastered sending emails as TNEF with Aspose.Email for .NET. This guid
 - **Temporary License**: Obtain a temporary license via [Aspose’s Temporary License Page](https://purchase.aspose.com/temporary-license/)
 
 Ready to try it out? Implementing this solution in your projects will elevate how you handle email communications, ensuring rich content is delivered accurately and effectively.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

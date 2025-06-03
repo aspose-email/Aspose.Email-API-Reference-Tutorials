@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve Email Message Summaries Using Aspose.Email for Java
 ## Introduction
@@ -133,7 +135,11 @@ Next steps include exploring more advanced features of Aspose.Email, such as sen
 - **Free Trial:** [Try It Out](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Request Here](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Ask Questions](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

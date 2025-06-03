@@ -1,72 +1,74 @@
 ---
-title: رؤوس البريد الإلكتروني في Aspose.Email
-linktitle: رؤوس البريد الإلكتروني في Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: أطلق العنان لقوة رؤوس البريد الإلكتروني باستخدام Aspose.Email لـ Java. تعرف على كيفية تعيين رؤوس البريد الإلكتروني واستردادها بسهولة.
-weight: 10
-url: /ar/java/customizing-email-headers/email-headers/
+"description": "Unlock the Power of Email Headers with Aspose.Email for Java. Learn how to set and retrieve email headers effortlessly."
+"linktitle": "Email Headers in Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Email Headers in Aspose.Email"
+"url": "/ar/java/customizing-email-headers/email-headers/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# رؤوس البريد الإلكتروني في Aspose.Email
+# Email Headers in Aspose.Email
 
 
-## مقدمة لرؤوس البريد الإلكتروني
+## Introduction to Email Headers
 
-رؤوس البريد الإلكتروني تشبه مظاريف الرسائل الرقمية. وهي تحتوي على بيانات وصفية أساسية توجه البريد الإلكتروني خلال رحلته من المرسل إلى المستلم. يمكن أن يساعدك فهم رؤوس البريد الإلكتروني في تتبع المسار الذي سلكته رسالة البريد الإلكتروني، وتحديد المشكلات المحتملة، وضمان الاتصال الآمن والموثوق عبر البريد الإلكتروني.
+Email headers are like the envelopes of digital messages. They contain essential metadata that guides an email through its journey from the sender to the recipient. Understanding email headers can help you trace the path an email took, identify potential issues, and ensure secure and reliable email communication.
 
-### ما هي رؤوس البريد الإلكتروني؟
+### What Are Email Headers?
 
-رؤوس البريد الإلكتروني هي سطور من البيانات التعريفية في بداية رسالة البريد الإلكتروني. أنها توفر معلومات حول أصل الرسالة ومسارها ومعالجتها. تتضمن حقول رأس البريد الإلكتروني الشائعة ما يلي:
+Email headers are lines of metadata at the beginning of an email message. They provide information about the message's origin, route, and handling. Common email header fields include:
 
-- من: عنوان البريد الإلكتروني للمرسل.
-- إلى: عنوان البريد الإلكتروني للمستلم.
-- الموضوع: موضوع البريد الإلكتروني.
-- التاريخ: تاريخ ووقت إرسال البريد الإلكتروني.
-- تم الاستلام: سلسلة من الإدخالات توضح بالتفصيل رحلة البريد الإلكتروني من المرسل إلى المستلم.
-- معرف الرسالة: معرف فريد لرسالة البريد الإلكتروني.
+- From: The sender's email address.
+- To: The recipient's email address.
+- Subject: The subject of the email.
+- Date: The date and time the email was sent.
+- Received: A series of entries detailing the email's journey from sender to recipient.
+- Message-ID: A unique identifier for the email message.
 
-## العمل مع رؤوس البريد الإلكتروني في Aspose.Email
+## Working with Email Headers in Aspose.Email
 
-الآن بعد أن فهمنا أهمية رؤوس البريد الإلكتروني، دعنا نستكشف كيفية التعامل معها باستخدام Aspose.Email لـ Java. Aspose.Email هي مكتبة قوية تتيح للمطورين إنشاء المعلومات ومعالجتها واستخراجها من رسائل البريد الإلكتروني، بما في ذلك رؤوسها.
+Now that we understand the significance of email headers, let's explore how to work with them using Aspose.Email for Java. Aspose.Email is a powerful library that allows developers to create, manipulate, and extract information from email messages, including their headers.
 
-### ضبط رؤوس البريد الإلكتروني
+### إعداد رؤوس البريد الإلكتروني
 
-لتعيين رؤوس البريد الإلكتروني برمجيًا باستخدام Aspose.Email، اتبع الخطوات التالية:
+To set email headers programmatically using Aspose.Email, follow these steps:
 
-1.  تهيئة رسالة بريد إلكتروني: قم بإنشاء مثيل لـ`MailMessage` فصل.
+1. Initialize an Email Message: Create an instance of the `MailMessage` فصل.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2.  تعيين قيم الرأس: استخدم`Headers` مجموعة لتعيين قيم الرأس.
+2. Set Header Values: Use the `Headers` collection to set header values.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. إرسال البريد الإلكتروني: أرسل البريد الإلكتروني كما تفعل عادةً.
+3. Send the Email: Send the email as you normally would.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### استرداد رؤوس البريد الإلكتروني
+### Retrieving Email Headers
 
-لاسترداد رؤوس البريد الإلكتروني من بريد إلكتروني وارد باستخدام Aspose.Email، يمكنك اتباع الخطوات التالية:
+To retrieve email headers from an incoming email using Aspose.Email, you can follow these steps:
 
-1. تحميل رسالة البريد الإلكتروني: قم بتحميل رسالة البريد الإلكتروني الواردة.
+1. Load the Email Message: Load the incoming email message.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. الوصول إلى قيم الرأس: قم بالوصول إلى قيم الرأس باستخدام ملف`Headers` مجموعة.
+2. Access Header Values: Access header values using the `Headers` collection.
 
 ```java
 String subject = message.getHeaders().get("Subject");
@@ -75,32 +77,34 @@ String sender = message.getHeaders().get("From");
 
 ## خاتمة
 
-رؤوس البريد الإلكتروني هي الأبطال المجهولون في التواصل عبر البريد الإلكتروني، فهي تحمل معلومات حيوية تضمن وصول رسائل البريد الإلكتروني إلى المستلمين المقصودين. يعمل Aspose.Email for Java على تبسيط مهمة العمل مع رؤوس البريد الإلكتروني، مما يسمح للمطورين بتسخير قوة بيانات التعريف هذه لأغراض مختلفة. سواء كنت بحاجة إلى تعيين رؤوس مخصصة، أو استرداد المعلومات، أو تحليل مسارات البريد الإلكتروني، فإن Aspose.Email يوفر الأدوات التي تحتاجها لمعالجة رؤوس البريد الإلكتروني بكفاءة.
+Email headers are the unsung heroes of email communication, carrying vital information that ensures emails reach their intended recipients. Aspose.Email for Java simplifies the task of working with email headers, allowing developers to harness the power of this metadata for various purposes. Whether you need to set custom headers, retrieve information, or analyze email routes, Aspose.Email provides the tools you need for efficient email header manipulation.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني عرض رؤوس البريد الإلكتروني في عملاء البريد الإلكتروني المشهورين؟
+### How can I view email headers in popular email clients?
 
-في معظم برامج البريد الإلكتروني، يمكنك عرض رؤوس البريد الإلكتروني عن طريق فتح البريد الإلكتروني والبحث عن خيار مثل "عرض المصدر" أو "إظهار الأصل".
+In most email clients, you can view email headers by opening the email and looking for an option like "View Source" or "Show Original."
 
-### هل رؤوس البريد الإلكتروني مشفرة؟
+### Are email headers encrypted?
 
-لا، رؤوس البريد الإلكتروني غير مشفرة. وهي جزء من البيانات التعريفية للبريد الإلكتروني وتكون عادةً بنص عادي.
+No, email headers are not encrypted. They are part of the email's metadata and are typically in plain text.
 
-### هل يمكنني تعديل رؤوس البريد الإلكتروني بعد إرسال البريد الإلكتروني؟
+### Can I modify email headers after sending an email?
 
-بمجرد إرسال رسالة بريد إلكتروني، تكون رؤوسها عادةً غير قابلة للتغيير. من الضروري تعيين العناوين المطلوبة قبل إرسال البريد الإلكتروني.
+Once an email is sent, its headers are usually immutable. It's essential to set the desired headers before sending the email.
 
-### ما هو الغرض من الرأس "المستلم"؟
+### What is the purpose of the "Received" header?
 
-رأس "المستلم" عبارة عن سلسلة من الإدخالات التي تتتبع مسار البريد الإلكتروني من المرسل إلى المستلم. فهو يساعد في تشخيص مشكلات التسليم وتتبع مسار البريد الإلكتروني.
+The "Received" header is a series of entries that track the email's path from sender to recipient. It helps diagnose delivery issues and trace the email's route.
 
-### كيف يمكنني استخراج رؤوس البريد الإلكتروني من مجموعة كبيرة من رسائل البريد الإلكتروني؟
+### How can I extract email headers from a large batch of emails?
 
-يمكنك استخدام إمكانات المعالجة المجمعة في Aspose.Email لاستخراج الرؤوس من رسائل البريد الإلكتروني المتعددة بكفاءة.
+You can use Aspose.Email's batch processing capabilities to extract headers from multiple emails efficiently.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

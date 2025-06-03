@@ -13,7 +13,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficiently Load and Process Outlook PST Files Using Aspose.Email for Java
 
@@ -234,7 +236,11 @@ A5: Issues like corrupted files or unsupported formats can arise; ensure proper 
 - **Free Trial:** [Aspose Email Free Trials](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Get Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Aspose Community Support](https://forum.aspose.com/c/email)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

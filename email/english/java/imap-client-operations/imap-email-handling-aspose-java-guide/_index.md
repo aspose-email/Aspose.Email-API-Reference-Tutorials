@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficient IMAP Email Handling in Java using Aspose.Email: A Guide to Paginated Retrieval and Display
 
@@ -169,7 +171,11 @@ Ready to try it out? Implement what you've learned today in a test project and e
 - **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
 - **Temporary License**: [Acquire Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum for Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

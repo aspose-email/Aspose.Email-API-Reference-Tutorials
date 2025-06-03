@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Appointment Filtering in Exchange Web Service (EWS) Using Aspose.Email for .NET
 
@@ -183,6 +185,9 @@ You've now learned how to connect to EWS using Aspose.Email for .NET, filter app
 With these resources and knowledge, you're well-equipped to implement efficient appointment filtering solutions using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connecting to Exchange Server Using Aspose.Email .NET: Comprehensive ImapClient Guide
 
@@ -185,6 +187,9 @@ Consider integrating these capabilities into larger projects for increased produ
 - *Answer*: Aspose.Email .NET is a library for handling email tasks programmatically in .NET applications. It supports various protocols including IMAP for connecting to Exchange Servers.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

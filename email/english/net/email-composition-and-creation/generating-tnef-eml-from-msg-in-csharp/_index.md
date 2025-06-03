@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Generating TNEF EML from MSG in C#
@@ -107,6 +109,7 @@ You can find detailed API documentation on the Aspose.Email for .NET [here](http
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

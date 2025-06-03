@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails Using Aspose.Email for .NET via an Exchange Server
 
@@ -158,7 +160,11 @@ In this tutorial, we've explored how to send emails through an Exchange server u
    - Ensure your network settings allow connections to the server URL. Verify authentication credentials are correct.
 3. **Can I use Aspose.Email for .NET in a commercial application?**
    - Yes, but ensure you have an appropriate license from Aspose.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

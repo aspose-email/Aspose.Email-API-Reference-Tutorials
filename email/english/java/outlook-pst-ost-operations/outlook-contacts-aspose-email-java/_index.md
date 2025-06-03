@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Creating and Managing Outlook Contacts with Aspose.Email for Java: A Comprehensive Guide
 
@@ -168,7 +170,11 @@ Ready to get started? Try implementing these solutions in your projects and see 
    - Ensure your license file path is correct and that it has been applied before creating any objects.
 4. **How do I handle exceptions when saving contacts?**
    - Wrap your save operation in a try-catch block to manage `IOException` or other related exceptions.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

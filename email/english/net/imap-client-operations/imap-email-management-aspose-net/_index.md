@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Email Management with Aspose.Email .NET: Connect and Retrieve Mailbox Information
 
@@ -171,6 +173,9 @@ Ready to take it further? Try implementing these solutions in your projects and 
 By exploring these resources, you can dive deeper into the capabilities of Aspose.Email and leverage its full potential in your email management solutions.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

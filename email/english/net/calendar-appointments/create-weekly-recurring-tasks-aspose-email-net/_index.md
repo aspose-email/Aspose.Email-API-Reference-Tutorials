@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create Weekly Recurring Tasks Using Aspose.Email .NET for Calendar & Appointments
 
@@ -199,7 +201,11 @@ By following this guide, you've learned how to automate weekly recurring tasks e
 - Experiment with different recurrence patterns.
 - Explore other features of Aspose.Email for additional functionalities.
 - Share this solution within your team or organization to scale its impact.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

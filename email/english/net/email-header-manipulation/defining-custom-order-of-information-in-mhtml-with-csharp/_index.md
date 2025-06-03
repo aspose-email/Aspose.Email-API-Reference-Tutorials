@@ -8,7 +8,9 @@ url: /net/email-header-manipulation/defining-custom-order-of-information-in-mhtm
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Defining Custom Order of Information in MHTML with C#
@@ -91,6 +93,7 @@ For comprehensive documentation and more details, you can visit the [Aspose.Emai
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Integrating Multiple SMTP Servers with Aspose.Email
@@ -106,6 +108,7 @@ You can test the SMTP server integration by sending test emails and checking for
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

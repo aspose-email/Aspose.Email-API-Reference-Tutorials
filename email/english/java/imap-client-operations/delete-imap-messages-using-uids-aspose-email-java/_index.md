@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficient Deletion of IMAP Messages Using UIDs with Aspose.Email for Java
 
@@ -216,6 +218,9 @@ You now have a solid understanding of how to use Aspose.Email for Java for effic
 For further assistance, visit the [Aspose Forum](https://forum.aspose.com/c/email/10) to connect with other users and experts. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

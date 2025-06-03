@@ -8,7 +8,9 @@ url: /java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Handling SMTP Errors and Troubleshooting with Aspose.Email
@@ -117,6 +119,7 @@ Yes, Aspose.Email for Java is designed to handle both small and large email volu
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

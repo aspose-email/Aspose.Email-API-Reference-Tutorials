@@ -1,41 +1,43 @@
 ---
-title: تضمين المرفقات في البريد الإلكتروني - مثال C#
-linktitle: تضمين المرفقات في البريد الإلكتروني - مثال C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تضمين المرفقات في البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع مثال على كود C#.
-weight: 10
-url: /ar/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Learn how to including attachments in email using Aspose.Email for .NET. Step-by-step guide with C# code example."
+"linktitle": "Including Attachments in Email - C# Example"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Including Attachments in Email - C# Example"
+"url": "/ar/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تضمين المرفقات في البريد الإلكتروني - مثال C#
+# Including Attachments in Email - C# Example
 
 
-## مقدمة لتضمين المرفقات في البريد الإلكتروني
+## Introduction to Including Attachments in Email
 
-في عالم اليوم الرقمي سريع الخطى، يظل التواصل عبر البريد الإلكتروني حجر الزاوية للشركات والأفراد على حد سواء. تؤدي إضافة مرفقات إلى رسائل البريد الإلكتروني الخاصة بك إلى تحسين قيمة رسائلك من خلال السماح لك بمشاركة المستندات والصور والملفات دون عناء. سيرشدك هذا الدليل خطوة بخطوة خلال عملية تضمين المرفقات في بريدك الإلكتروني باستخدام مكتبة Aspose.Email لـ .NET.
+In today's fast-paced digital world, email communication remains a cornerstone for businesses and individuals alike. Adding attachments to your emails enhances the value of your messages by allowing you to share documents, images, and files effortlessly. This step-by-step guide will walk you through the process of including attachments in your email using the Aspose.Email library for .NET.
 
-## إعداد بيئة التطوير الخاصة بك
+## Setting Up Your Development Environment
 
-قبل أن نتعمق في تفاصيل البرمجة، تأكد من أن لديك بيئة تطوير مناسبة. انك سوف تحتاج:
+Before we dive into the coding details, ensure you have a suitable development environment. You'll need:
 
-- Visual Studio (أو أي C# IDE من اختيارك)
-- تم تثبيت .NET Framework أو .NET Core
+- Visual Studio (or any C# IDE of your choice)
+- .NET Framework or .NET Core installed
 
-## إضافة Aspose.Email إلى مشروعك
+## Adding Aspose.Email to Your Project
 
-Aspose.Email هي مكتبة قوية تعمل على تبسيط العمل مع رسائل البريد الإلكتروني بتنسيقات مختلفة. للبدء، اتبع الخطوات التالية:
+Aspose.Email is a powerful library that simplifies working with emails in various formats. To get started, follow these steps:
 
-1. إنشاء مشروع جديد: افتح Visual Studio وقم بإنشاء مشروع C# جديد.
+1. Create a New Project: Open Visual Studio and create a new C# project.
 
-2. تثبيت Aspose.Email: انقر بزر الماوس الأيمن على مشروعك في Solution Explorer، وحدد "إدارة حزم NuGet"، وابحث عن "Aspose.Email"، ثم قم بتثبيت الحزمة.
+2. Install Aspose.Email: Right-click on your project in the Solution Explorer, select "Manage NuGet Packages," search for "Aspose.Email," and install the package.
 
-## إنشاء رسالة بريد إلكتروني
+## Creating an Email Message
 
-الآن بعد أن تم دمج Aspose.Email في مشروعك، فلنبدأ في إنشاء رسالة بريد إلكتروني:
+Now that Aspose.Email is integrated into your project, let's begin creating an email message:
 
 ```csharp
 using Aspose.Email;
@@ -44,35 +46,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        // إنشاء رسالة بريد إلكتروني جديدة
+        // Create a new email message
         MailMessage message = new MailMessage();
 
-        // تعيين عناوين المرسل والمستلم
+        // Set sender and recipient addresses
         message.From = new MailAddress("sender@example.com");
         message.To.Add("recipient@example.com");
 
-        // تعيين موضوع البريد الإلكتروني والنص
+        // Set email subject and body
         message.Subject = "Check out this attachment!";
         message.Body = "Hello, I've attached an important document for you.";
 
-        // بقية الكود الخاص بك...
+        // Rest of your code...
     }
 }
 ```
 
-## إضافة المرفقات إلى البريد الإلكتروني
+## Adding Attachments to the Email
 
-توفر المرفقات سياقًا إضافيًا لرسائل البريد الإلكتروني الخاصة بك. دعونا نضيف مرفقا إلى البريد الإلكتروني:
+Attachments provide additional context to your emails. Let's add an attachment to the email:
 
 ```csharp
-// إضافة مرفق إلى البريد الإلكتروني
+// Adding an attachment to the email
 Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
 ## إرسال البريد الإلكتروني
 
-بمجرد أن يصبح بريدك الإلكتروني جاهزًا، فقد حان الوقت لإرساله:
+Once your email is ready, it's time to send it:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
@@ -81,9 +83,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        // بقية الكود الخاص بك...
+        // Rest of your code...
 
-        // إرسال البريد الإلكتروني باستخدام عميل SMTP
+        // Sending the email using an SMTP client
         SmtpClient client = new SmtpClient("smtp.example.com", 587);
         client.Username = "your_username";
         client.Password = "your_password";
@@ -94,32 +96,34 @@ class Program
 
 ## خاتمة
 
-في هذا الدليل، اكتشفنا كيفية تضمين المرفقات في رسائل البريد الإلكتروني الخاصة بك باستخدام Aspose.Email لـ .NET. باتباع الخطوات الموضحة أعلاه، يمكنك تحسين اتصالات البريد الإلكتروني الخاصة بك باستخدام مرفقات المحتوى الغني. تعمل مكتبة Aspose.Email على تبسيط هذه العملية، مما يجعل إنشاء وإرسال رسائل البريد الإلكتروني مع المرفقات برمجيًا أسهل من أي وقت مضى.
+In this guide, we explored how to include attachments in your emails using Aspose.Email for .NET. By following the steps outlined above, you can enhance your email communications with rich content attachments. The Aspose.Email library simplifies this process, making it easier than ever to create and send emails with attachments programmatically.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني تنزيل مكتبة Aspose.Email؟
+### How can I download the Aspose.Email library?
 
- يمكنك تنزيل مكتبة Aspose.Email من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو باستخدام NuGet Package Manager في Visual Studio.
+You can download the Aspose.Email library from Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) or by using NuGet Package Manager in Visual Studio.
 
-### هل يمكنني إرفاق ملفات متعددة ببريد إلكتروني واحد؟
+### Can I attach multiple files to a single email?
 
- قطعاً! يمكنك إضافة عدة مرفقات إلى بريد إلكتروني واحد عن طريق إنشاء عدة مرفقات وإضافتها`Attachment` كائنات إلى`Attachments` جمع الخاص بك`MailMessage`.
+Absolutely! You can add multiple attachments to a single email by creating and adding multiple `Attachment` objects to the `Attachments` collection of your `MailMessage`.
 
-### هل Aspose.Email مناسب لكل من .NET Framework و .NET Core؟
+### Is Aspose.Email suitable for both .NET Framework and .NET Core?
 
-نعم، Aspose.Email متوافق مع كل من .NET Framework و.NET Core، مما يوفر المرونة في اختيارك للنظام الأساسي.
+Yes, Aspose.Email is compatible with both .NET Framework and .NET Core, offering flexibility in your choice of platform.
 
-### هل يدعم Aspose.Email إرسال رسائل البريد الإلكتروني عبر اتصالات آمنة؟
+### Does Aspose.Email support sending emails over secure connections?
 
-نعم، يمكنك تكوين Aspose.Email لإرسال رسائل البريد الإلكتروني عبر اتصالات آمنة باستخدام بروتوكولات مثل SMTPS أو STARTTLS. تأكد من توفير إعدادات الخادم المناسبة.
+Yes, you can configure Aspose.Email to send emails over secure connections using protocols like SMTPS or STARTTLS. Make sure to provide the appropriate server settings.
 
-### أين يمكنني العثور على مزيد من المعلومات حول إمكانيات Aspose.Email؟
+### Where can I find more information about Aspose.Email's capabilities?
 
- للحصول على معلومات أكثر تفصيلاً حول ميزات Aspose.Email وفئاته وأساليبه، راجع[مرجع Aspose.Email API](https://reference.aspose.com/email/net/).
+For more detailed information about Aspose.Email's features, classes, and methods, refer to the [Aspose.Email API Reference](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

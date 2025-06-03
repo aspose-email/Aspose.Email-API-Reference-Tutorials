@@ -14,7 +14,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage Appointments in ICS Format Using Aspose.Email for .NET
 
@@ -201,7 +203,11 @@ A5: Ensure that the file path is correct, the file format is valid, and you have
 - **Support**: [Aspose Forum - Email Section](https://forum.aspose.com/c/email/10)
 
 With this comprehensive guide, you’re well-equipped to implement and manage ICS appointments using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

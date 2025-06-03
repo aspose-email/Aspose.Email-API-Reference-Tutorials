@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Save Calendar Items as ICS Files Using Aspose.Email for .NET
 
@@ -166,6 +168,9 @@ In this tutorial, you've learned how to create and save calendar appointments us
 We hope this guide empowers you to enhance your calendar management with Aspose.Email for .NET. Try implementing these steps and explore the library's full potential!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

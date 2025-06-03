@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Aspose.Email for .NET: Connect & Monitor IMAP Server - Comprehensive Guide
 
@@ -216,7 +218,11 @@ For more information and resources on Aspose.Email for .NET:
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Take the next step and start building powerful email solutions with Aspose.Email for .NET today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

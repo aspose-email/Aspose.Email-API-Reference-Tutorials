@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve Extended Attributes in Calendar Items Using Aspose.Email for .NET | EWS Integration Guide
 
@@ -159,6 +161,9 @@ Visit [Aspose's website](https://purchase.aspose.com/temporary-license/) to requ
 Explore these resources to deepen your understanding of Aspose.Email and its capabilities. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

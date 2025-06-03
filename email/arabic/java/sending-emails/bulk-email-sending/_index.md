@@ -1,62 +1,64 @@
 ---
-title: إرسال البريد الإلكتروني بالجملة مع Aspose.Email
-linktitle: إرسال البريد الإلكتروني بالجملة مع Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعرف على كيفية إرسال رسائل البريد الإلكتروني المجمعة بكفاءة باستخدام Aspose.Email لـ Java. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية للتسويق عبر البريد الإلكتروني والاتصالات.
-weight: 14
-url: /ar/java/sending-emails/bulk-email-sending/
+"description": "Learn how to send bulk emails efficiently using Aspose.Email for Java. A step-by-step guide with code examples for email marketing and communication."
+"linktitle": "Bulk Email Sending with Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Bulk Email Sending with Aspose.Email"
+"url": "/ar/java/sending-emails/bulk-email-sending/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إرسال البريد الإلكتروني بالجملة مع Aspose.Email
+# Bulk Email Sending with Aspose.Email
 
 
 ## مقدمة
 
-يعد إرسال رسائل البريد الإلكتروني المجمعة بكفاءة وموثوقية أمرًا ضروريًا للعديد من المؤسسات والشركات. يوفر Aspose.Email for Java حلاً قويًا لإرسال رسائل البريد الإلكتروني المجمعة برمجيًا. في هذا الدليل المفصّل خطوة بخطوة، سنرشدك خلال عملية إرسال رسائل البريد الإلكتروني المجمعة باستخدام Aspose.Email for Java.
+Sending bulk emails efficiently and reliably is essential for many organizations and businesses. Aspose.Email for Java provides a powerful solution for sending bulk emails programmatically. In this step-by-step guide, we'll walk you through the process of sending bulk emails using Aspose.Email for Java.
 
 ## المتطلبات الأساسية
 
-قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
+Before you begin, make sure you have the following prerequisites in place:
 
-1. بيئة تطوير Java: تأكد من إعداد بيئة تطوير Java على نظامك. ستحتاج إلى Java لتجميع أمثلة تعليمات Java البرمجية وتشغيلها في هذا الدليل.
+1. Java Development Environment: Ensure that you have a Java development environment set up on your system. You'll need Java to compile and run the Java code examples in this guide.
 
-2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:
+2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the download link:
 
-   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
-   بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروع Java الخاص بك. هذه المكتبة ضرورية لإرسال رسائل البريد الإلكتروني المجمعة باستخدام Aspose.Email.
+   Once downloaded, add the Aspose.Email JAR files to your Java project's classpath. This library is essential for sending bulk emails using Aspose.Email.
 
-## الخطوة 1: إعداد بيئة جافا الخاصة بك
+## Step 1: Set up your Java environment
 
-تأكد من تثبيت Java وAspose.Email for Java وتكوينهما في بيئة التطوير لديك.
+Make sure you have Java and Aspose.Email for Java installed and configured in your development environment.
 
-## الخطوة 2: إنشاء مشروع جافا جديد
+## Step 2: Create a new Java project
 
-قم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) التي اخترتها.
+Create a new Java project in your chosen Integrated Development Environment (IDE).
 
-## الخطوة 3: إضافة Aspose.Email لمكتبة Java
+## Step 3: Add Aspose.Email for Java library
 
-قم بتنزيل مكتبة Aspose.Email for Java من رابط التنزيل:
+Download the Aspose.Email for Java library from the download link:
 
-[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
+[Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
-أضف ملفات JAR التي تم تنزيلها إلى مسار الفصل الخاص بمشروعك.
+Add the downloaded JAR files to your project's classpath.
 
-## الخطوة 4: استيراد فئات Aspose.Email
+## Step 4: Import Aspose.Email classes
 
-في كود Java الخاص بك، قم باستيراد فئات Aspose.Email الضرورية:
+In your Java code, import the necessary Aspose.Email classes:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## الخطوة 5: إنشاء رسالة بريد إلكتروني
+## Step 5: Create an Email message
 
-قم بإنشاء رسالة بريد إلكتروني جديدة باستخدام Aspose.Email. قم بتخصيص موضوع الرسالة والمرسل والمستلمين والمحتوى حسب الحاجة. على سبيل المثال:
+Create a new email message using Aspose.Email. Customize the message subject, sender, recipients, and content as needed. For example:
 
 ```java
 MailMessage message = new MailMessage();
@@ -67,9 +69,9 @@ message.getTo().add("recipient2@example.com");
 message.setHtmlBody("<p>This is a bulk email test.</p>");
 ```
 
-## الخطوة 6: إرسال رسائل البريد الإلكتروني بكميات كبيرة
+## Step 6: Send emails in bulk
 
-لإرسال رسائل البريد الإلكتروني بشكل مجمّع، يمكنك استخدام حلقة لإرسال نفس الرسالة إلى عدة مستلمين. هنا مثال:
+To send emails in bulk, you can use a loop to send the same message to multiple recipients. Here's an example:
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
@@ -82,18 +84,18 @@ for (String recipient : recipientsList) {
 }
 ```
 
- يستبدل`"smtp.example.com"`, `"username"` ، و`"password"` مع تفاصيل خادم SMTP الخاص بك.
+يستبدل `"smtp.example.com"`، `"username"`، و `"password"` مع تفاصيل خادم SMTP الخاص بك.
 
-## الخطوة 7: أكمل البرنامج
+## Step 7: Complete the program
 
-إليك برنامج جافا الكامل:
+Here's the complete Java program:
 
 ```java
 import com.aspose.email.*;
 
 public class BulkEmailSender {
     public static void main(String[] args) {
-        // إنشاء رسالة بريد إلكتروني جديدة
+        // Create a new email message
         MailMessage message = new MailMessage();
         message.setSubject("Bulk Email Test");
         message.setFrom("sender@example.com");
@@ -101,7 +103,7 @@ public class BulkEmailSender {
         message.getTo().add("recipient2@example.com");
         message.setHtmlBody("<p>This is a bulk email test.</p>");
         
-        // قم بإنشاء عميل SMTP وإرسال رسائل البريد الإلكتروني بكميات كبيرة
+        // Create an SMTP client and send emails in bulk
         SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
         String[] recipientsList = {"recipient1@example.com", "recipient2@example.com", /* Add more recipients */};
         
@@ -119,28 +121,30 @@ public class BulkEmailSender {
 
 ## خاتمة
 
-في هذا الدليل، تعلمت كيفية إرسال رسائل البريد الإلكتروني المجمعة باستخدام Aspose.Email لـ Java. يمكنك تخصيص رسائل البريد الإلكتروني الخاصة بك وإضافة مستلمين وإرسالها بكفاءة إلى عدة مستلمين، مما يجعلها أداة قيمة للتسويق والتواصل عبر البريد الإلكتروني.
+In this guide, you've learned how to send bulk emails using Aspose.Email for Java. You can customize your email messages, add recipients, and send them efficiently to multiple recipients, making it a valuable tool for email marketing and communication.
 
 
-## الأسئلة الشائعة (الأسئلة المتداولة)
+## FAQs (Frequently Asked Questions)
 
-### هل يمكنني إرسال رسائل بريد إلكتروني إلى عدد كبير من المستلمين باستخدام Aspose.Email لـ Java؟
-   نعم، يمكنك إرسال رسائل البريد الإلكتروني إلى عدد كبير من المستلمين بشكل جماعي باستخدام Aspose.Email لـ Java. فهو يوفر إمكانات إرسال بريد إلكتروني فعالة وموثوقة.
+### Can I send emails to a large number of recipients using Aspose.Email for Java?
+   Yes, you can send emails to a large number of recipients in bulk using Aspose.Email for Java. It provides efficient and reliable email sending capabilities.
 
-### ما هي تفاصيل خادم SMTP التي يجب أن أستخدمها لإرسال رسائل البريد الإلكتروني المجمعة؟
-    يجب عليك استخدام تفاصيل خادم SMTP التي يقدمها مزود خدمة البريد الإلكتروني الخاص بك أو خادم البريد الإلكتروني الخاص بمؤسستك. يستبدل`"smtp.example.com"`, `"username"` ، و`"password"` في الكود الذي يحتوي على معلومات خادم SMTP الخاص بك.
+### What SMTP server details should I use for sending bulk emails?
+   You should use the SMTP server details provided by your email service provider or your organization's email server. Replace `"smtp.example.com"`، `"username"`، و `"password"` in the code with your SMTP server information.
 
-### هل هناك حد لعدد المستلمين في رسائل البريد الإلكتروني المجمعة؟
-   قد يعتمد عدد المستلمين الذين يمكنك إرسال رسائل بريد إلكتروني مجمعة إليهم على قيود خادم SMTP الخاص بك وسياسات موفر خدمة البريد الإلكتروني لديك. ضع في اعتبارك أي حدود للإرسال لتجنب المشكلات.
+### Is there a limit to the number of recipients in bulk emails?
+   The number of recipients you can send bulk emails to may depend on your SMTP server's limitations and your email service provider's policies. Be mindful of any sending limits to avoid issues.
 
-### هل يمكنني تخصيص محتوى كل بريد إلكتروني في عملية إرسال بريد إلكتروني مجمعة؟
-   نعم، يمكنك تخصيص محتوى كل رسالة بريد إلكتروني داخل الحلقة قبل إرسالها إلى المستلمين الفرديين.
+### Can I customize the content of each email in a bulk email sending process?
+   Yes, you can customize the content of each email message within the loop before sending it to individual recipients.
 
-### كيف يمكنني التعامل مع رسائل البريد الإلكتروني المرتدة أو الفاشلة في الإرسال المجمع؟
-   يوفر Aspose.Email ميزات للتعامل مع إشعارات حالة التسليم (DSNs) وتتبع حالة تسليم البريد الإلكتروني. يمكنك تنفيذ المنطق لمعالجة رسائل البريد الإلكتروني المرتدة أو الفاشلة حسب الحاجة.
+### How can I handle bounced or failed emails in bulk sending?
+   Aspose.Email provides features for handling delivery status notifications (DSNs) and tracking email delivery status. You can implement logic to process bounced or failed emails as needed.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

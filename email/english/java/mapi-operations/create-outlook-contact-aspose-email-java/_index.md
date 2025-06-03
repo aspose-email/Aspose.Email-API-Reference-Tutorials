@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create an Outlook Contact Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -163,7 +165,11 @@ A5: Use Maven or Gradle dependencies to include Aspose.Email in your project. In
 - **Purchase**: To buy a license, visit [Aspose Purchase Page](https://purchase.aspose.com/buy).
 - **Free Trial & Temporary License**: Try out features with limited functionality via the [Free Trial](https://releases.aspose.com/email/java/) or obtain a temporary license at [Temporary License](https://purchase.aspose.com/temporary-license/).
 - **Support**: For any queries, visit the [Aspose Support Forum](https://forum.aspose.com/c/email)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email in Java: A Comprehensive Guide to Metered Licenses and Email Handling
 
@@ -163,6 +165,9 @@ Ready to take your skills further? Implement what you’ve learned today and see
 Dive into the world of email management with Aspose.Email for Java and unlock new possibilities in your applications today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

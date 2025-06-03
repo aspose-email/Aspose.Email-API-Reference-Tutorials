@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email Java: Efficient Email Management with EWS
 
@@ -187,7 +189,11 @@ In this tutorial, you've learned how to connect to Microsoft Exchange Web Servic
 - Free Trial: [Temporary License and Trials](https://releases.aspose.com/email/java/)
 - Temporary License: [Apply for a Temporary License](https://purchase.aspose.com/temporary-license/)
 - Support: [Aspose Forum](https://forum.aspose.com/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

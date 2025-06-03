@@ -1,117 +1,121 @@
 ---
-title: التعامل مع مسودة الرسائل في C# - حفظ البريد الإلكتروني كمسودة
-linktitle: التعامل مع مسودة الرسائل في C# - حفظ البريد الإلكتروني كمسودة
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تنفيذ معالجة مسودة البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. قم بإنشاء المسودات وتحريرها وحفظها بسلاسة.
-weight: 17
-url: /ar/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
+"description": "Learn how to implement draft email handling in C# using Aspose.Email for .NET. Create, edit, and save drafts seamlessly."
+"linktitle": "Draft Message Handling in C# - Saving Email as Draft"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Draft Message Handling in C# - Saving Email as Draft"
+"url": "/ar/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# التعامل مع مسودة الرسائل في C# - حفظ البريد الإلكتروني كمسودة
+# Draft Message Handling in C# - Saving Email as Draft
 
 
 ## مقدمة
 
-تعد معالجة مسودة الرسالة وظيفة مهمة لعملاء البريد الإلكتروني. غالبًا ما يحتاج المستخدمون إلى القدرة على البدء في إنشاء رسالة بريد إلكتروني وحفظها كمسودة والعودة إليها لاحقًا لإجراء المزيد من التحرير أو الإرسال في نهاية المطاف. توضح هذه المقالة كيفية تنفيذ هذه الميزة باستخدام مكتبة Aspose.Email لـ .NET.
+Draft message handling is a crucial functionality for email clients. Users often need the ability to start composing an email, save it as a draft, and return to it later for further editing or eventual sending. This article demonstrates how to implement this feature using the Aspose.Email for .NET library.
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في التنفيذ، تأكد من توفر المتطلبات الأساسية التالية:
+Before we dive into the implementation, ensure that you have the following prerequisites in place:
 
-- Visual Studio (أو أي بيئة تطوير C#)
-- Aspose.Email لمكتبة .NET
+- Visual Studio (or any C# development environment)
+- مكتبة Aspose.Email لـ .NET
 
- يمكنك تنزيل مكتبة Aspose.Email من[هنا](https://releases.aspose.com/email/net).
+You can download the Aspose.Email library from [هنا](https://releases.aspose.com/email/net).
 
-## إعداد المشروع
+## Setting Up the Project
 
-1. قم بإنشاء مشروع C# جديد في بيئة التطوير الخاصة بك.
-2. أضف مراجع إلى ملفات Aspose.Email DLL في مشروعك.
+1. Create a new C# project in your development environment.
+2. Add references to the Aspose.Email DLLs in your project.
 
-## إنشاء مسودة البريد الإلكتروني
+## Creating the Email Draft
 
-لإنشاء مسودة رسالة، اتبع الخطوات التالية:
+To create a draft message, follow these steps:
 
-## إضافة المستلمين والموضوع
+## Adding Recipients and Subject
 
 ```csharp
 // إنشاء مثيل MailMessage جديد
 MailMessage draft = new MailMessage();
 
-// إضافة المستلمين
+// Add recipients
 draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// تعيين موضوع البريد الإلكتروني
+// Set email subject
 draft.Subject = "Draft Email Demo";
 ```
 
-## تأليف نص البريد الإلكتروني
+## Composing Email Body
 
 ```csharp
-// ضبط نص البريد الإلكتروني
+// Set email body
 draft.Body = new TextBody("Hello, this is a draft email.");
 ```
 
-## الحفظ كمسودة
+## Saving as Draft
 
 ```csharp
-// احفظ البريد الإلكتروني كمسودة
+// Save the email as a draft
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## تحميل وتحرير المسودات
+## Loading and Editing Drafts
 
-لتحميل مسودات الرسائل وتحريرها، اتبع الخطوات التالية:
+To load and edit draft messages, follow these steps:
 
 ```csharp
-// قم بتحميل مسودة البريد الإلكتروني
+// Load a draft email
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
-// تحرير المستلمين
+// Edit recipients
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// تحرير نص البريد الإلكتروني
+// Edit email body
 loadedDraft.Body = new TextBody("Updated draft content.");
 
-// حفظ التغييرات
+// Save changes
 loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 ```
 
 ## خاتمة
 
-في هذه المقالة، اكتشفنا كيفية التعامل مع مسودات الرسائل في لغة C# باستخدام مكتبة Aspose.Email for .NET. لقد تعلمنا كيفية إنشاء مسودات رسائل البريد الإلكتروني وتحريرها وحفظها، مما يوفر للمستخدمين تجربة سلسة أثناء إنشاء الرسائل. باتباع الخطوات الموضحة في هذا الدليل، يمكنك تحسين تطبيق عميل البريد الإلكتروني الخاص بك من خلال وظيفة مسودة الرسالة.
+In this article, we explored how to handle draft messages in C# using the Aspose.Email for .NET library. We learned how to create, edit, and save draft emails, providing users with a seamless experience while composing messages. By following the steps outlined in this guide, you can enhance your email client application with draft message functionality.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني تنزيل Aspose.Email لمكتبة .NET؟
+### How do I download the Aspose.Email for .NET library?
 
- يمكنك تنزيل Aspose.Email لمكتبة .NET من[هنا](https://releases.aspose.com/email/net).
+You can download the Aspose.Email for .NET library from [هنا](https://releases.aspose.com/email/net).
 
-### هل يمكنني تعديل المستلمين وموضوع المسودة المحفوظة؟
+### Can I edit the recipients and subject of a saved draft?
 
-نعم، يمكنك تحميل مسودة محفوظة وتحرير المستلمين والموضوع والمحتوى، ثم حفظ التغييرات كمسودة محدثة.
+Yes, you can load a saved draft, edit its recipients, subject, and content, and then save the changes as an updated draft.
 
-### هل تم حفظ مسودة البريد الإلكتروني بتنسيق معين؟
+### Is the draft email saved in a specific format?
 
-نعم، يتم حفظ مسودة البريد الإلكتروني بتنسيق EML، وهو تنسيق يستخدم على نطاق واسع لرسائل البريد الإلكتروني.
+Yes, the draft email is saved in the EML format, which is a widely used format for email messages.
 
-### هل يمكنني دمج التعامل مع مسودة الرسالة في تطبيق البريد الإلكتروني الحالي الخاص بي؟
+### Can I integrate draft message handling into my existing email application?
 
-بالتأكيد، باتباع الخطوات الواردة في هذا الدليل، يمكنك دمج معالجة مسودة الرسالة بسلاسة في تطبيق عميل البريد الإلكتروني الحالي لديك.
+Absolutely, by following the steps provided in this guide, you can seamlessly integrate draft message handling into your existing email client application.
 
-### هل تدعم مكتبة Aspose.Email الوظائف الأخرى المتعلقة بالبريد الإلكتروني؟
+### Does the Aspose.Email library support other email-related functionalities?
 
- نعم، توفر مكتبة Aspose.Email مجموعة واسعة من الميزات للتعامل مع رسائل البريد الإلكتروني، بما في ذلك إرسال رسائل البريد الإلكتروني والمرفقات واستلامها ومعالجتها. يمكنك الرجوع إلى الوثائق لمزيد من التفاصيل:[هنا](https://reference.aspose.com)
+Yes, the Aspose.Email library offers a wide range of features for working with email messages, including sending, receiving, and manipulating emails and attachments. You can refer to the documentation for more details: [هنا](https://reference.aspose.com)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

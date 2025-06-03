@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/preserving-tnef-attachments-when-reading-mes
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Preserving TNEF Attachments when Reading Messages - C# Approach
@@ -142,6 +144,7 @@ Yes, Aspose maintains regular updates to ensure compatibility with the latest te
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

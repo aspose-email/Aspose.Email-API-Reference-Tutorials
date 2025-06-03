@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement IMAP Backup with Aspose.Email for .NET: A Developer's Guide
 
@@ -221,7 +223,11 @@ By following this guide, you've learned how to connect to an IMAP server and bac
 - **Support Forum:** [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 Start implementing these powerful email management capabilities in your .NET applications today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

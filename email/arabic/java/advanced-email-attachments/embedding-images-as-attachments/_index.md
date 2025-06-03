@@ -1,64 +1,66 @@
 ---
-title: تضمين الصور كمرفقات في Aspose.Email
-linktitle: تضمين الصور كمرفقات في Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعرف على كيفية تضمين الصور كمرفقات في Aspose.Email لـ Java. ارفع مستوى تواصلك عبر البريد الإلكتروني من خلال محتوى جذاب بصريًا.
-weight: 14
-url: /ar/java/advanced-email-attachments/embedding-images-as-attachments/
+"description": "Learn how to embed images as attachments in Aspose.Email for Java. Elevate your email communication with visually engaging content."
+"linktitle": "Embedding Images as Attachments in Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Embedding Images as Attachments in Aspose.Email"
+"url": "/ar/java/advanced-email-attachments/embedding-images-as-attachments/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تضمين الصور كمرفقات في Aspose.Email
+# Embedding Images as Attachments in Aspose.Email
 
 
-## تضمين الصور كمرفقات في Aspose.Email
+## Embedding Images as Attachments in Aspose.Email
 
-في العصر الرقمي الحالي، غالبًا ما يعتمد التواصل الفعال على أكثر من مجرد النص. تلعب العناصر المرئية، مثل الصور، دورًا حاسمًا في نقل المعلومات، وعندما يتعلق الأمر بالاتصالات عبر البريد الإلكتروني، يعد تضمين الصور كمرفقات ممارسة شائعة. في هذه المقالة، سنستكشف كيفية تحقيق ذلك باستخدام Aspose.Email لـ Java. سيرشدك هذا الدليل خطوة بخطوة خلال العملية، مما يضمن أن رسائل البريد الإلكتروني الخاصة بك ليست مفيدة فقط ولكنها جذابة بصريًا أيضًا.
+In today's digital age, effective communication often relies on more than just text. Visual elements, such as images, play a crucial role in conveying information, and when it comes to email communication, embedding images as attachments is a common practice. In this article, we'll explore how to achieve this using Aspose.Email for Java. This step-by-step guide will walk you through the process, ensuring that your emails are not only informative but visually appealing as well.
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في التنفيذ، تأكد من توفر المتطلبات الأساسية التالية:
+Before we dive into the implementation, make sure you have the following prerequisites in place:
 
--  Aspose.Email لـ Java: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيل Aspose.Email لـ Java وتثبيته من[هنا](https://releases.aspose.com/email/java/).
+- Aspose.Email for Java: If you haven't already, download and install Aspose.Email for Java from [هنا](https://releases.aspose.com/email/java/).
 
-## إنشاء رسالة بريد إلكتروني
+## Creating an Email Message
 
- لإنشاء رسالة بريد إلكتروني باستخدام Aspose.Email، ستحتاج إلى استيراد المكتبات الضرورية وتهيئة الملف`MailMessage`هدف. إليك مقتطف الشفرة للبدء:
+To create an email message using Aspose.Email, you'll need to import the necessary libraries and initialize the `MailMessage` object. Here's a code snippet to get you started:
 
 ```java
-// استيراد المكتبات اللازمة
+// Import necessary libraries
 import com.aspose.email.*;
 
-// إنشاء رسالة بريد إلكتروني جديدة
+// Create a new email message
 MailMessage message = new MailMessage();
 ```
 
-## إضافة صورة كمرفق
+## Adding Image as Attachment
 
-لإرفاق صورة بالبريد الإلكتروني الخاص بك، ستحتاج إلى تحديد مسار ملف الصورة وإضافته كمرفق. وإليك كيف يمكنك القيام بذلك:
+To attach an image to your email, you'll need to specify the image file's path and add it as an attachment. Here's how you can do it:
 
 ```java
-// حدد المسار إلى ملف الصورة
+// Specify the path to the image file
 String imagePath = "path/to/your/image.jpg";
 
-// إرفاق الصورة إلى البريد الإلكتروني
+// Attach the image to the email
 Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## تضمين الصورة المرفقة
+## Embedding the Attached Image
 
- لتضمين الصورة المرفقة في نص البريد الإلكتروني، يمكنك استخدام`LinkedResource` فصل. يسمح لك هذا بالإشارة إلى المرفق داخل نص HTML للبريد الإلكتروني:
+To embed the attached image within the email body, you can use the `LinkedResource` class. This allows you to reference the attachment within the email's HTML body:
 
 ```java
-// قم بإنشاء LinkedResource للصورة المرفقة
+// Create a LinkedResource for the attached image
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// قم بإنشاء نص HTML مع الصورة المضمنة
+// Create an HTML body with the embedded image
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
@@ -66,46 +68,48 @@ message.getLinkedResources().addItem(linkedImage);
 
 ## إرسال البريد الإلكتروني
 
- الآن بعد أن قمت بإنشاء رسالة بريد إلكتروني تحتوي على الصورة المضمنة، يمكنك إرسالها باستخدام Aspose.Email's`SmtpClient`:
+Now that you have created an email message with the embedded image, you can send it using Aspose.Email's `SmtpClient`:
 
 ```java
-// تهيئة SmtpClient
+// Initialize the SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
 // أرسل البريد الإلكتروني
 client.send(message);
 ```
 
-تهانينا! لقد قمت بنجاح بتضمين صورة كمرفق في رسالة بريد إلكتروني باستخدام Aspose.Email لـ Java. ستصبح رسائل البريد الإلكتروني الخاصة بك الآن أكثر جاذبية وغنية بالمعلومات.
+Congratulations! You've successfully embedded an image as an attachment in an email using Aspose.Email for Java. Your emails will now be more visually engaging and informative.
 
 ## خاتمة
 
-في هذا الدليل، قمنا بتغطية الخطوات الأساسية لتضمين الصور كمرفقات في Aspose.Email لـ Java. باتباع هذه الخطوات، يمكنك تحسين التواصل عبر البريد الإلكتروني الخاص بك عن طريق إضافة عناصر مرئية تأسر جمهورك.
+In this guide, we've covered the essential steps to embed images as attachments in Aspose.Email for Java. By following these steps, you can enhance your email communication by adding visual elements that captivate your audience.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني تضمين صور متعددة في بريد إلكتروني واحد؟
+### How can I embed multiple images in a single email?
 
-يمكنك تضمين صور متعددة باتباع نفس العملية لكل صورة والتأكد من أن كل صورة لها معرف محتوى فريد.
+You can embed multiple images by following the same process for each image and ensuring each has a unique content ID.
 
-### هل يمكنني تضمين الصور في رسائل البريد الإلكتروني ذات النص العادي؟
+### Can I embed images in plain text emails?
 
-لا يعد تضمين الصور في رسائل البريد الإلكتروني ذات النص العادي ممارسة قياسية، حيث أن رسائل البريد الإلكتروني ذات النص العادي لا تدعم الصور المضمنة. ومع ذلك، يمكنك تضمين عناوين URL للصور في رسائل البريد الإلكتروني ذات النص العادي.
+Embedding images in plain text emails is not a standard practice, as plain text emails do not support embedded images. You can, however, include image URLs in plain text emails.
 
-### ما هي تنسيقات الصور المدعومة للتضمين؟
+### What image formats are supported for embedding?
 
-يدعم Aspose.Email for Java تنسيقات صور متنوعة، بما في ذلك JPEG وPNG وGIF والمزيد. تأكد من أن صورتك بتنسيق متوافق.
+Aspose.Email for Java supports various image formats, including JPEG, PNG, GIF, and more. Ensure your image is in a compatible format.
 
-### هل من الممكن تغيير حجم الصور المضمنة داخل البريد الإلكتروني؟
+### Is it possible to resize embedded images within the email?
 
- نعم، يمكنك التحكم في حجم الصور المضمنة عن طريق ضبط HTML`<img>` وضع علامة على السمات داخل نص HTML الخاص ببريدك الإلكتروني.
+Yes, you can control the size of embedded images by adjusting the HTML `<img>` tag attributes within your email's HTML body.
 
-### هل هناك أي قيود على حجم الصور المضمنة؟
+### Are there any limitations on the size of embedded images?
 
-قد يؤثر حجم الصور المضمنة على إمكانية تسليم البريد الإلكتروني وتجربة المستلم. يُنصح بتحسين الصور للبريد الإلكتروني لتجنب أحجام الملفات الكبيرة.
+The size of embedded images may impact email deliverability and recipient experience. It's advisable to optimize images for email to avoid large file sizes.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

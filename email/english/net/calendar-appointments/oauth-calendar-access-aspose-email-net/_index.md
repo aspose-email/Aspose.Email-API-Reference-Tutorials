@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering OAuth Authentication and Calendar Access Management with Aspose.Email for .NET
 
@@ -181,7 +183,11 @@ A5: Define rules using `AccessControlRule` with specific scopes targeting the ev
 - **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 By following this guide, you should now be well-equipped to implement OAuth authentication and manage calendar access rules using Aspose.Email for .NET in your projects. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

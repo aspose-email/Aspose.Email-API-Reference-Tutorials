@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Change the Container Class of an Outlook PST Folder Using Aspose.Email for .NET
 
@@ -161,6 +163,9 @@ A: Process data in manageable chunks, use efficient memory management practices,
 Begin your journey with Aspose.Email for .NET today, and transform how you handle Outlook PST files!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

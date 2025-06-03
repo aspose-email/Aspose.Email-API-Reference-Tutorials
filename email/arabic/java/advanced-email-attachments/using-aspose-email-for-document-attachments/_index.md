@@ -1,43 +1,45 @@
 ---
-title: استخدام Aspose.Email لمرفقات المستندات
-linktitle: استخدام Aspose.Email لمرفقات المستندات
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعرف على كيفية إدارة مرفقات المستندات في رسائل البريد الإلكتروني الخاصة بـ Java باستخدام Aspose.Email لـ Java. قم بإنشاء وإرسال واستخراج مرفقات المستندات بسهولة.
-weight: 16
-url: /ar/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
+"description": "Learn how to manage document attachments in Java emails using Aspose.Email for Java. Create, send, and extract document attachments with ease."
+"linktitle": "Using Aspose.Email for Document Attachments"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Using Aspose.Email for Document Attachments"
+"url": "/ar/java/advanced-email-attachments/using-aspose-email-for-document-attachments/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# استخدام Aspose.Email لمرفقات المستندات
+# Using Aspose.Email for Document Attachments
 
 
-## مقدمة لاستخدام Aspose.Email لمرفقات المستندات في Java
+## Introduction to Using Aspose.Email for Document Attachments in Java
 
-في هذا البرنامج التعليمي، سوف نستكشف كيفية التعامل مع مرفقات المستندات باستخدام Aspose.Email لـ Java. Aspose.Email عبارة عن واجهة برمجة تطبيقات Java قوية تتيح لك التعامل مع رسائل البريد الإلكتروني ومرفقاتها بسهولة. وسوف نتناول المواضيع التالية:
+In this tutorial, we will explore how to work with document attachments using Aspose.Email for Java. Aspose.Email is a powerful Java API that allows you to manipulate email messages and their attachments with ease. We will cover the following topics:
 
 ## المتطلبات الأساسية
 
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+Before we begin, make sure you have the following prerequisites in place:
 
-- تم تثبيت Java Development Kit (JDK) على نظامك.
--  Aspose.Email لمكتبة جافا. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) installed on your system.
+- Aspose.Email for Java library. You can download it from [هنا](https://releases.aspose.com/email/java/).
 
-## إضافة Aspose.Email إلى مشروعك
+## Adding Aspose.Email to Your Project
 
-للبدء، تحتاج إلى إضافة مكتبة Aspose.Email إلى مشروع Java الخاص بك. اتبع الخطوات التالية:
+To get started, you need to add the Aspose.Email library to your Java project. Follow these steps:
 
-1. قم بتنزيل مكتبة Aspose.Email لـ Java من الرابط المقدم.
+1. Download the Aspose.Email for Java library from the provided link.
 
-2. قم باستخراج ملف ZIP الذي تم تنزيله إلى دليل من اختيارك.
+2. Extract the downloaded ZIP file to a directory of your choice.
 
-3. في مشروع Java الخاص بك، أضف ملفات Aspose.Email JAR إلى مسار الفصل الدراسي الخاص بك. يمكنك القيام بذلك في بيئة التطوير المتكاملة المفضلة لديك (IDE) أو باستخدام سطر الأوامر.
+3. In your Java project, add the Aspose.Email JAR files to your classpath. You can do this in your favorite integrated development environment (IDE) or by using the command line.
 
 ## إنشاء رسالة بريد إلكتروني جديدة
 
-لنبدأ بإنشاء رسالة بريد إلكتروني جديدة تحتوي على مستند مرفق. وسنستخدم مثالاً بسيطًا لتوضيح ذلك:
+Let's start by creating a new email message with a document attachment. We'll use a simple example to illustrate this:
 
 ```java
 import com.aspose.email.Attachment;
@@ -45,32 +47,32 @@ import com.aspose.email.MailMessage;
 
 public class CreateEmailWithAttachment {
     public static void main(String[] args) {
-        // إنشاء رسالة بريد إلكتروني جديدة
+        // Create a new email message
         MailMessage message = new MailMessage();
 
-        //قم بتعيين عناوين البريد الإلكتروني للمرسل والمستلم
+        // Set the sender and recipient email addresses
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
 
-        // قم بتعيين موضوع ونص البريد الإلكتروني
+        // Set the subject and body of the email
         message.setSubject("Document Attachment Example");
         message.setBody("Please find the attached document.");
 
-        // إرفاق ملف مستند إلى البريد الإلكتروني
+        // Attach a document file to the email
         Attachment attachment = new Attachment("path/to/your/document.pdf");
         message.addAttachment(attachment);
 
-        // احفظ رسالة البريد الإلكتروني في ملف أو أرسلها باستخدام SMTP
+        // Save the email message to a file or send it using SMTP
         message.save("attachment_email.eml");
     }
 }
 ```
 
- في هذا المثال، نقوم بإنشاء جديد`MailMessage` كائن، وقم بتعيين عناوين البريد الإلكتروني للمرسل والمستلم، وحدد موضوع ونص البريد الإلكتروني، وأرفق ملف مستند به.
+In this example, we create a new `MailMessage` object, set the sender and recipient email addresses, specify the subject and body of the email, and attach a document file to it.
 
-## استرجاع مرفقات المستندات
+## Retrieving Document Attachments
 
-قد تحتاج إلى استخراج مرفقات المستندات من رسائل البريد الإلكتروني الواردة والتعامل معها. وإليك كيف يمكنك القيام بذلك:
+You may need to extract and work with document attachments from incoming emails. Here's how you can do it:
 
 ```java
 import com.aspose.email.Attachment;
@@ -78,10 +80,10 @@ import com.aspose.email.MailMessage;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        // قم بتحميل رسالة بريد إلكتروني من ملف أو استقبلها باستخدام SMTP
+        // Load an email message from a file or receive it using SMTP
         MailMessage message = MailMessage.load("received_email.eml");
 
-        // التكرار من خلال المرفقات وحفظ مرفقات المستندات
+        // Iterate through attachments and save document attachments
         for (Attachment attachment : message.getAttachments()) {
             if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
@@ -91,28 +93,30 @@ public class ExtractAttachments {
 }
 ```
 
-في هذا المثال، نقوم بتحميل رسالة بريد إلكتروني من ملف (يمكنك أيضًا استلامها باستخدام SMTP)، والتكرار عبر المرفقات، وحفظ أي مرفقات مستند بنوع محتوى PDF.
+In this example, we load an email message from a file (you can also receive it using SMTP), iterate through the attachments, and save any document attachments with a PDF content type.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا كيفية التعامل مع مرفقات المستندات باستخدام Aspose.Email لـ Java. لقد تعلمت كيفية إنشاء وإرسال رسائل البريد الإلكتروني مع مرفقات المستندات وكيفية استخراج مرفقات المستندات من رسائل البريد الإلكتروني الواردة. يوفر Aspose.Email إمكانات قوية للعمل مع أنواع مختلفة من المرفقات، مما يجعله أداة قيمة لأتمتة البريد الإلكتروني في تطبيقات Java.
+In this tutorial, we've explored how to work with document attachments using Aspose.Email for Java. You've learned how to create and send emails with document attachments and how to extract document attachments from incoming emails. Aspose.Email provides powerful capabilities for working with various types of attachments, making it a valuable tool for email automation in Java applications.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني إرسال بريد إلكتروني يحتوي على عدة مستندات مرفقة؟
+### How can I send an email with multiple document attachments?
 
- لإرسال بريد إلكتروني يحتوي على عدة مرفقات للمستندات، يمكنك ببساطة إضافة المزيد`Attachment` كائنات إلى`MailMessage` كما هو موضح في المثال أعلاه. كل`Attachment` يمثل مرفق منفصل.
+To send an email with multiple document attachments, you can simply add more `Attachment` objects to the `MailMessage` as shown in the example above. Each `Attachment` represents a separate attachment.
 
-### هل يمكنني العمل مع مرفقات غير مستندات PDF؟
+### Can I work with attachments other than PDF documents?
 
-نعم، يدعم Aspose.Email for Java مجموعة واسعة من أنواع المرفقات، بما في ذلك مستندات Word وجداول بيانات Excel والصور والمزيد. يمكنك التحقق من نوع محتوى المرفق والتعامل معه وفقًا لذلك في التعليمات البرمجية الخاصة بك.
+Yes, Aspose.Email for Java supports a wide range of attachment types, including Word documents, Excel spreadsheets, images, and more. You can check the attachment's content type and handle it accordingly in your code.
 
-### كيف أتعامل مع مرفقات المستندات الكبيرة؟
+### How do I handle large document attachments?
 
-إذا كنت بحاجة إلى التعامل مع مرفقات المستندات الكبيرة، ففكر في استخدام تقنيات الدفق لتجنب تحميل المرفق بأكمله في الذاكرة. يوفر Aspose.Email خيارات لتدفق المرفقات، مما يسمح لك بمعالجتها بكفاءة.
+If you need to handle large document attachments, consider using streaming techniques to avoid loading the entire attachment into memory. Aspose.Email provides options for streaming attachments, allowing you to process them efficiently.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

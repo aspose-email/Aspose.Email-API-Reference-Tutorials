@@ -8,7 +8,9 @@ url: /net/email-conversion-and-export/draft-message-handling-in-csharp-saving-em
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Draft Message Handling in C# - Saving Email as Draft
@@ -113,6 +115,7 @@ Yes, the Aspose.Email library offers a wide range of features for working with e
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

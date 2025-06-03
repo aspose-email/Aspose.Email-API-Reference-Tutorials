@@ -1,38 +1,40 @@
 ---
-title: تقنية C# - تحويل نص HTML إلى نص عادي
-linktitle: تقنية C# - تحويل نص HTML إلى نص عادي
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعلم كيفية تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي بسهولة باستخدام Aspose.Email for .NET. دليل مفصل والكود. اكتشف الآن!
-weight: 19
-url: /ar/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/
+"description": "Learn to effortlessly convert HTML email content to plain text using Aspose.Email for .NET. Detailed guide & code. Explore now!"
+"linktitle": "C# Technique - Converting HTML Body to Plain Text"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "C# Technique - Converting HTML Body to Plain Text"
+"url": "/ar/net/email-processing-and-analysis/csharp-technique-converting-html-body-to-plain-text/"
+"weight": 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تقنية C# - تحويل نص HTML إلى نص عادي
+# C# Technique - Converting HTML Body to Plain Text
 
 
-في العصر الرقمي الحالي، يلعب التواصل عبر البريد الإلكتروني دورًا حاسمًا في حياتنا الشخصية والمهنية. في كثير من الأحيان، تحتوي رسائل البريد الإلكتروني على محتوى بتنسيق HTML لتقديم عرض أفضل. ومع ذلك، هناك مواقف قد تحتاج فيها إلى استخراج النص العادي من نص HTML للبريد الإلكتروني. سترشدك هذه المقالة خلال عملية تحقيق هذه المهمة بكفاءة باستخدام C# وAspose.Email وAspose.Words لـ .NET.
+In today's digital age, email communication plays a crucial role in our personal and professional lives. Often, emails contain HTML-formatted content for better presentation. However, there are situations where you might need to extract the plain text from the HTML body of an email. This article will guide you through the process of achieving this task efficiently using C#, Aspose.Email, and Aspose.Words for .NET.
 
-## 1 المقدمة
+## 1. Introduction
 
-تعد رسائل البريد الإلكتروني بتنسيق HTML سائدة، ولكن هناك سيناريوهات تحتاج فيها إلى العمل باستخدام نص عادي. على سبيل المثال، قد ترغب في تحليل المحتوى، أو إجراء تحليل النص، أو دمجه في نظام آخر. يأتي كل من Aspose.Email وAspose.Words for .NET للإنقاذ، مما يجعلها عملية مباشرة.
+HTML emails are prevalent, but there are scenarios where you need to work with plain text. For instance, you might want to analyze the content, perform text analysis, or integrate it into another system. Aspose.Email and Aspose.Words for .NET come to the rescue, making it a straightforward process.
 
-## 2. المتطلبات الأساسية
+## 2. Prerequisites
 
-قبل أن نتعمق في الكود، تأكد من توفر المتطلبات الأساسية التالية:
-- Visual Studio أو أي بيئة تطوير C#.
--  مكتبات Aspose.Email وAspose.Words. يمكنك تنزيلها من[هنا](https://releases.aspose.com/email/net/) و[هنا](https://releases.aspose.com/words/net/).
+Before we dive into the code, make sure you have the following prerequisites in place:
+- Visual Studio or any C# development environment.
+- Aspose.Email and Aspose.Words libraries. You can download them from [هنا](https://releases.aspose.com/email/net/) و [هنا](https://releases.aspose.com/words/net/).
 
-## 3. إعداد المشروع
+## 3. Setting Up the Project
 
-ابدأ بإنشاء مشروع C# جديد في بيئة التطوير الخاصة بك. بعد ذلك، قم بإضافة مراجع إلى مكتبتي Aspose.Email وAspose.Words التي قمت بتنزيلها مسبقًا.
+Start by creating a new C# project in your development environment. Then, add references to the Aspose.Email and Aspose.Words libraries you downloaded earlier.
 
-## 4. تحويل HTML إلى نص عادي
+## 4. Converting HTML to Plain Text
 
-فيما يلي نموذج لمقتطف التعليمات البرمجية لتحويل محتوى HTML إلى نص عادي:
+Here's a sample code snippet to convert HTML content to plain text:
 
 ```csharp
 using Aspose.Email;
@@ -40,50 +42,52 @@ using Aspose.Email.Mime;
 using Aspose.Words;
 using Aspose.Words.Saving;
 
-// قم بتحميل رسالة البريد الإلكتروني
+// Load the email message
 MailMessage message = MailMessage.Load("sample.html");
 
-// استخراج نص HTML
+// Extract the HTML body
 string htmlBody = message.HtmlBody;
 
-// استخدم Aspose.Words لتحويل HTML إلى نص عادي
+// Use Aspose.Words to convert HTML to plain text
 Document doc = new Document();
 doc.RemoveAllChildren();
 doc.AppendDocument(new DocumentBuilder().InsertHtml(htmlBody).Document, ImportFormatMode.KeepSourceFormatting);
 
-// احفظ النص العادي
+// Save the plain text
 doc.Save("plain_text.txt", SaveFormat.Text);
 ```
 
-## 5. التعامل مع هياكل HTML المعقدة
+## 5. Handling Complex HTML Structures
 
-في بعض الأحيان، تحتوي رسائل البريد الإلكتروني على هياكل HTML معقدة، مثل الجداول أو الصور أو الروابط. يتميز Aspose.Words for .NET ببراعة في التعامل مع هذه العناصر، مما يضمن حصولك على استخراج دقيق للنص العادي.
+Sometimes, emails contain complex HTML structures, such as tables, images, or links. Aspose.Words for .NET is proficient at handling these elements, ensuring you get accurate plain text extraction.
 
-## 6. الاستنتاج
+## 6. Conclusion
 
-في هذا البرنامج التعليمي، تعلمت كيفية تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي باستخدام C# وAspose.Email وAspose.Words لـ .NET. يمكن أن تكون هذه المهارة لا تقدر بثمن عند التعامل مع تحليل النص الآلي أو الأرشفة أو المهام الأخرى المتعلقة بالنص.
+In this tutorial, you learned how to convert HTML email content to plain text using C#, Aspose.Email, and Aspose.Words for .NET. This skill can be invaluable when dealing with automated text analysis, archiving, or other text-related tasks.
 
-## الأسئلة المتداولة (الأسئلة الشائعة)
+## Frequently Asked Questions (FAQs)
 
-### س1: هل Aspose.Email متوافق مع تنسيقات البريد الإلكتروني المختلفة؟
-ج1: نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني الشائعة، بما في ذلك PST وEML وMSG والمزيد.
+### Q1: Is Aspose.Email compatible with various email formats?
+A1: Yes, Aspose.Email supports popular email formats, including PST, EML, MSG, and more.
 
-### س2: هل يمكنني تخصيص إخراج النص العادي بشكل أكبر؟
-ج2: بالتأكيد! يمكنك التعامل مع النص العادي حسب الحاجة بعد الاستخراج.
+### Q2: Can I customize the plain text output further?
+A2: Absolutely! You can manipulate the plain text as needed after extraction.
 
-### س3: هل توجد أية قيود عند التعامل مع رسائل البريد الإلكتروني كبيرة الحجم بتنسيق HTML؟
-ج3: تم تصميم Aspose.Words للتعامل مع المستندات الكبيرة بكفاءة، مما يضمن الأداء حتى مع محتوى HTML الشامل.
+### Q3: Are there any limitations when handling large HTML emails?
+A3: Aspose.Words is designed to handle large documents efficiently, ensuring performance even with extensive HTML content.
 
-### س 4: هل Aspose.Email مناسب لمهام أتمتة البريد الإلكتروني؟
-ج4: نعم، يوفر Aspose.Email إمكانات واسعة النطاق لأتمتة البريد الإلكتروني، مما يجعله خيارًا قويًا لمثل هذه المهام.
+### Q4: Is Aspose.Email suitable for email automation tasks?
+A4: Yes, Aspose.Email provides extensive capabilities for email automation, making it a robust choice for such tasks.
 
-### س5: أين يمكنني العثور على المزيد من الموارد والوثائق الخاصة بـ Aspose.Email وAspose.Words؟
- ج5: يمكنك استكشاف وثائق API ومواردها على موقع Aspose على الويب[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) و[https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
+### Q5: Where can I find more resources and documentation for Aspose.Email and Aspose.Words?
+A5: You can explore the API documentation and resources on the Aspose website at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) و [https://reference.aspose.com/words/net/](https://reference.aspose.com/words/net/).
 
-الآن بعد أن أتقنت فن تحويل محتوى البريد الإلكتروني بتنسيق HTML إلى نص عادي، يمكنك تحسين قدرات معالجة البريد الإلكتروني لديك في لغة C#. ترميز سعيد!
+Now that you have mastered the art of converting HTML email content to plain text, you can enhance your email processing capabilities in C#. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

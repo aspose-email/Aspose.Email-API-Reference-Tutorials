@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load and Display Email Properties Using Aspose.Email for .NET
 
@@ -160,7 +162,11 @@ A5: Absolutely! Aspose.Email can handle batch operations efficiently, making it 
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Feel free to explore these resources as you continue your journey with Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

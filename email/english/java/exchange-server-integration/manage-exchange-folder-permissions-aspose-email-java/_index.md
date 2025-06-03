@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Comprehensive Guide to Managing Exchange Folder Permissions with Aspose.Email for Java
 
@@ -70,7 +72,11 @@ import com.aspose.email.IEWSClient;
 
 IEWSClient client = EWSClient.getEWSClient(
     "https://outlook.office365.com/exchangeews/exchange.asmx\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

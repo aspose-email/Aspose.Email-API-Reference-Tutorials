@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Creating Yearly Recurring MAPI Tasks Using Aspose.Email for .NET
 
@@ -140,7 +142,11 @@ You have now learned how to create and save MAPI tasks with yearly recurrence us
    - Double-check your `DayOfMonth` and `MonthOfYear` settings to ensure they match your intended schedule.
 5. **Where can I find more resources on MapiTasks?**
    - Visit the [Aspose.Email Documentation](https://reference.aspose.com/email/net/) for comprehensive guides and API references.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

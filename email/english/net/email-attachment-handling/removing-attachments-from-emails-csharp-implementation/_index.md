@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/removing-attachments-from-emails-csharp-impl
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Removing Attachments from Emails - C# Implementation
@@ -107,6 +109,7 @@ Yes, Aspose provides trial versions of its libraries that you can download and t
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load a PST File in .NET Using Aspose.Email: A Comprehensive Developer's Guide
 
@@ -148,7 +150,11 @@ Ready to try it out? Start implementing these solutions in your projects today!
 - **Download**: Get the latest version of Aspose.Email from [Aspose Releases](https://releases.aspose.com/email/net/).
 - **Purchase & Licensing**: Acquire a license or trial through [Aspose Purchase](https://purchase.aspose.com/buy) and [Temporary License](https://purchase.aspose.com/temporary-license/).
 - **Support**: For questions, visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

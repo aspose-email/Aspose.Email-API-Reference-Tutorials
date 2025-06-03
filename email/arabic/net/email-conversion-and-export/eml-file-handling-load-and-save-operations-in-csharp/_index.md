@@ -1,164 +1,168 @@
 ---
-title: معالجة ملفات EML - تحميل العمليات وحفظها في C#
-linktitle: معالجة ملفات EML - تحميل العمليات وحفظها في C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية التعامل مع ملفات EML في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية لتحميل رسائل البريد الإلكتروني وتعديلها وحفظها.
-weight: 13
-url: /ar/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/
+"description": "Learn how to handle EML files in C# using Aspose.Email for .NET. Step-by-step guide with code examples for loading, modifying, and saving email messages."
+"linktitle": "EML File Handling - Load and Save Operations in C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "EML File Handling - Load and Save Operations in C#"
+"url": "/ar/net/email-conversion-and-export/eml-file-handling-load-and-save-operations-in-csharp/"
+"weight": 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# معالجة ملفات EML - تحميل العمليات وحفظها في C#
+# EML File Handling - Load and Save Operations in C#
 
 
-## مقدمة إلى ملفات EML
+## Introduction to EML Files
 
-تقوم ملفات تنسيق البريد الإلكتروني (EML) بتخزين رسائل البريد الإلكتروني وتستخدم على نطاق واسع للأرشفة والمشاركة. يعمل Aspose.Email for .NET على تبسيط التعامل مع ملفات EML من خلال توفير مجموعة شاملة من الميزات لتحميل رسائل البريد الإلكتروني وتعديلها وحفظها برمجيًا.
+Electronic Mail Format (EML) files store email messages and are widely used for archiving and sharing. Aspose.Email for .NET simplifies the handling of EML files by providing a comprehensive set of features to load, modify, and save email messages programmatically.
 
-## إعداد المشروع
+## Setting Up the Project
 
- قبل أن نبدأ، تأكد من تثبيت مكتبة Aspose.Email for .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/email/net).
+Before we begin, make sure you have the Aspose.Email for .NET library installed. You can download it from [هنا](https://releases.aspose.com/email/net).
 
-## تحميل ملفات إمل
+## Loading EML Files
 
-يعد تحميل ملفات EML الخطوة الأولى في التعامل مع رسائل البريد الإلكتروني. يوفر Aspose.Email for .NET طرقًا فعالة لتحميل ملفات EML الفردية أو ملفات متعددة على دفعات.
+Loading EML files is the first step in working with email messages. Aspose.Email for .NET offers efficient ways to load individual EML files or multiple files in batches.
 
-## تحميل ملف EML واحد
+## Loading a Single EML File
 
-لتحميل ملف EML واحد، يمكنك استخدام مقتطف التعليمات البرمجية التالي:
+To load a single EML file, you can use the following code snippet:
 
 ```csharp
 
 
-// قم بتحميل ملف إمل
+// Load EML file
 MailMessage message = MailMessage.Load("path/to/email.eml");
 ```
 
-## تحميل دفعة من ملفات EML
+## Batch Loading of EML Files
 
-إذا كان لديك دليل يحتوي على ملفات EML متعددة، فيمكنك تحميلها دفعة واحدة:
+If you have a directory containing multiple EML files, you can load them in a batch:
 
 ```csharp
 
 
-//تحميل ملفات EML متعددة
+// Load multiple EML files
 string[] emlFiles = Directory.GetFiles("path/to/eml/directory", "*.eml");
 foreach (string emlFile in emlFiles)
 {
     MailMessage message = MailMessage.Load(emlFile);
-    // معالجة كل رسالة حسب الحاجة
+    // Process each message as needed
 }
 ```
 
-## تعديل محتوى EML
+## Modifying EML Content
 
-بعد تحميل ملف EML، يمكنك الوصول إلى محتواه وتعديله باستخدام مكتبة Aspose.Email.
+After loading an EML file, you can access and modify its content using the Aspose.Email library.
 
-## الوصول إلى خصائص البريد الإلكتروني
+## Accessing Email Properties
 
-يمكنك الوصول إلى خصائص مختلفة للبريد الإلكتروني الذي تم تحميله، مثل المرسل والمستلمين والموضوع والنص:
+You can access various properties of the loaded email, such as sender, recipients, subject, and body:
 
 ```csharp
 
 
-// الوصول إلى خصائص البريد الإلكتروني
+// Access email properties
 Console.WriteLine($"From: {message.From}");
 Console.WriteLine($"To: {message.To}");
 Console.WriteLine($"Subject: {message.Subject}");
 Console.WriteLine($"Body: {message.HtmlBody}");
 ```
 
-## تعديل المستلمين والموضوع
+## Modifying Recipients and Subject
 
-لتعديل المستلمين والموضوع، يمكنك استخدام الكود التالي:
+To modify recipients and subject, you can use the following code:
 
 ```csharp
 
 
-// تعديل المستلمين والموضوع
+// Modify recipients and subject
 message.To.Clear();
 message.To.Add("newrecipient@example.com");
 message.Subject = "Updated Subject";
 ```
 
-## العمل مع المرفقات
+## Working with Attachments
 
-تعتبر المرفقات مكونات مهمة لرسائل البريد الإلكتروني. يمكنك الوصول إلى المرفقات وإدارتها باستخدام Aspose.Email:
+Attachments are crucial components of email messages. You can access and manage attachments using Aspose.Email:
 
 ```csharp
 
 
-// الوصول إلى المرفقات
+// Access attachments
 foreach (Attachment attachment in message.Attachments)
 {
-    // معالجة كل مرفق
+    // Process each attachment
 }
 ```
 
-## حفظ ملفات EML
+## Saving EML Files
 
-بعد إجراء التعديلات اللازمة على محتوى EML، يمكنك حفظ رسالة البريد الإلكتروني مرة أخرى في ملف EML.
+After making necessary modifications to the EML content, you can save the email message back to an EML file.
 
-## حفظ ملف EML واحد
+## Saving a Single EML File
 
-لحفظ رسالة بريد إلكتروني واحدة في ملف EML، استخدم الكود التالي:
+To save a single email message to an EML file, use the following code:
 
 ```csharp
 
 
-// حفظ الرسالة المعدلة
+// Save modified message
 message.Save("path/to/modified_email.eml", SaveOptions.DefaultEml);
 ```
 
-## الحفظ بالجملة لملفات EML
+## Bulk Saving of EML Files
 
-للحفظ المجمع لرسائل البريد الإلكتروني المعدلة، قم بالتكرار عبر الرسائل واحفظ كل واحدة منها:
+For bulk saving of modified email messages, iterate through the messages and save each one:
 
 ```csharp
 
 
-// حفظ الرسائل المعدلة بشكل جماعي
+// Bulk save modified messages
 foreach (MailMessage modifiedMessage in modifiedMessages)
 {
     modifiedMessage.Save($"path/to/modified_emails/{Guid.NewGuid()}.eml", SaveOptions.DefaultEml);
 }
 ```
 
-## معالجة الأخطاء وإدارة الاستثناءات
+## Error Handling and Exception Management
 
-عند العمل مع ملفات EML، من المهم التعامل مع الاستثناءات بأمان. استخدم كتل محاولة الالتقاط لإدارة الأخطاء بفعالية وضمان تجربة مستخدم سلسة.
+When working with EML files, it's important to handle exceptions gracefully. Use try-catch blocks to manage errors effectively and ensure a smooth user experience.
 
 ## خاتمة
 
-يعمل Aspose.Email for .NET على تبسيط التعامل مع ملفات EML في تطبيقات C#. بفضل مجموعة الميزات الشاملة، يمكنك بسهولة تحميل رسائل البريد الإلكتروني وتعديلها وحفظها برمجيًا.
+Aspose.Email for .NET simplifies the handling of EML files in C# applications. With its comprehensive set of features, you can easily load, modify, and save email messages programmatically.
 
-## الأسئلة الشائعة
+## FAQ's
 
 ### كيف أقوم بتثبيت Aspose.Email لـ .NET؟
 
- يمكنك تنزيل Aspose.Email لـ .NET من[هنا](https://releases.aspose.com/email/net).
+You can download Aspose.Email for .NET from [هنا](https://releases.aspose.com/email/net).
 
-### هل يمكنني تعديل المرفقات باستخدام Aspose.Email؟
+### Can I modify attachments using Aspose.Email?
 
-نعم، يمكنك الوصول إلى المرفقات وإدارتها داخل رسائل البريد الإلكتروني باستخدام Aspose.Email.
+Yes, you can access and manage attachments within email messages using Aspose.Email.
 
-### هل معالجة الأخطاء مهمة عند العمل مع ملفات EML؟
+### Is error handling important when working with EML files?
 
-من المؤكد أن معالجة الأخطاء أمر بالغ الأهمية لضمان تجربة مستخدم سلسة والأداء السليم لتطبيقك.
+Absolutely, error handling is crucial to ensure a smooth user experience and proper functioning of your application.
 
-### هل يمكنني تحميل ملفات EML متعددة في وقت واحد؟
+### Can I load multiple EML files at once?
 
-نعم، Aspose.Email يسمح لك بتحميل ملفات EML متعددة على دفعات، مما يجعل من السهل معالجة رسائل البريد الإلكتروني المتعددة.
+Yes, Aspose.Email allows you to load multiple EML files in batches, making it convenient to process multiple emails.
 
-### هل Aspose.Email مناسب للمشاريع التجارية؟
+### Is Aspose.Email suitable for commercial projects?
 
-نعم، Aspose.Email هي مكتبة متعددة الاستخدامات مناسبة لكل من المشاريع الشخصية والتجارية، وتقدم ميزات قوية لمعالجة البريد الإلكتروني.
+Yes, Aspose.Email is a versatile library suitable for both personal and commercial projects, offering powerful features for email manipulation.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

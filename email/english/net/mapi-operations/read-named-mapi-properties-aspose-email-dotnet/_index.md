@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read Named MAPI Properties Using Aspose.Email for .NET
 
@@ -163,6 +165,9 @@ Ready to put these skills into practice? Try implementing this solution in your 
 By mastering the technique of reading named MAPI properties, you're now equipped to handle complex email processing tasks efficiently. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

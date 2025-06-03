@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage MAPI Distribution Lists in PST Files with Aspose.Email Java
 Managing email distribution lists is vital for businesses aiming to streamline communication processes, especially when handling extensive contact volumes or dynamic teams. This tutorial will guide you through creating and adding MAPI (Messaging Application Programming Interface) distribution lists to a PST (Personal Storage Table) file using the powerful Aspose.Email library in Java.
@@ -167,7 +169,11 @@ A: Utilize efficient data handling techniques like batch processing to manage la
 
 **Q: Is it possible to import existing contacts into a new PST?**
 A: Absolutely. You can read contacts from various sources and add them programmatically.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

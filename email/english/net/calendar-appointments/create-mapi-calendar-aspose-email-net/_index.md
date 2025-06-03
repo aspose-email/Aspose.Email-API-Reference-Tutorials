@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage MAPI Calendar Appointments with Aspose.Email for .NET
 
@@ -90,7 +92,11 @@ string dataDir = \@"YOUR_DOCUMENT_DIRECTORY";
 // Create a MAPI calendar appointment
 MapiCalendar appointment = new MapiCalendar(
     "LAKE ARGYLE WA 6743\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

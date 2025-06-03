@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create Interactive MAPI Messages with Polls Using Aspose.Email for .NET
 
@@ -173,7 +175,11 @@ A5: Yes, MAPI messages can be integrated into various systems like CRM or projec
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 We hope this guide has been helpful. If you have any questions or need further assistance, feel free to reach out in the Aspose community forums!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

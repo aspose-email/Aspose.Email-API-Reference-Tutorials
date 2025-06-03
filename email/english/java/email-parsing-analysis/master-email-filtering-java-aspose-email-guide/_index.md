@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Filtering in Java with Aspose.Email: A Developer's Guide to Automation
 
@@ -249,6 +251,9 @@ Explore further by integrating these filters into larger applications or experim
 - Use `ImapClient` with your server details and credentials, then select the folder you wish to access (e.g., Inbox).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

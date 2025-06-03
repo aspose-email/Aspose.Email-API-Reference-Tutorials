@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails Using Aspose.Email for Java through an Exchange Server
 
@@ -193,7 +195,11 @@ For optimal performance:
 
 ## Conclusion
 By following this guide, you’ve learned how to initialize an `ExchangeClient`, create a `MailMessage`, and send emails through Microsoft's Exchange server using Aspose.Email for Java. This knowledge enables reliable email automation within your Java applications, enhancing communication efficiency in various use cases.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

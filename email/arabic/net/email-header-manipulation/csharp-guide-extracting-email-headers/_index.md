@@ -1,118 +1,120 @@
 ---
-title: دليل C# - استخراج رؤوس البريد الإلكتروني
-linktitle: دليل C# - استخراج رؤوس البريد الإلكتروني
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية استخراج رؤوس البريد الإلكتروني في لغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري لتحليل البريد الإلكتروني بكفاءة.
-weight: 15
-url: /ar/net/email-header-manipulation/csharp-guide-extracting-email-headers/
+"description": "Learn how to extract email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code for efficient email analysis."
+"linktitle": "C# Guide - Extracting Email Headers"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "C# Guide - Extracting Email Headers"
+"url": "/ar/net/email-header-manipulation/csharp-guide-extracting-email-headers/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# دليل C# - استخراج رؤوس البريد الإلكتروني
+# C# Guide - Extracting Email Headers
 
 
-هل سبق لك أن تساءلت عن كيفية استخراج رؤوس البريد الإلكتروني باستخدام C#؟ تحتوي رؤوس البريد الإلكتروني على معلومات قيمة حول المرسل والمستلم والموضوع وتفاصيل أخرى متنوعة. في هذا الدليل، سنرشدك خلال عملية استخراج رؤوس البريد الإلكتروني خطوة بخطوة باستخدام مكتبة Aspose.Email for .NET القوية. توفر هذه المكتبة مجموعة شاملة من الميزات للتعامل مع رسائل البريد الإلكتروني في تطبيقات .NET الخاصة بك.
+Have you ever wondered how to extract email headers using C#? Email headers contain valuable information about the sender, receiver, subject, and various other details. In this guide, we will walk you through the step-by-step process of extracting email headers using the powerful Aspose.Email for .NET library. This library provides a comprehensive set of features for working with emails in your .NET applications.
 
-## مقدمة لرؤوس البريد الإلكتروني
+## Introduction to Email Headers
 
-تعد رؤوس البريد الإلكتروني مكونات أساسية لرسالة البريد الإلكتروني التي توفر بيانات التعريف حول الرسالة نفسها. وهي تتضمن معلومات مثل عنوان البريد الإلكتروني للمرسل وعنوان البريد الإلكتروني للمستلم والموضوع والتاريخ والمزيد. يُعد استخراج رؤوس البريد الإلكتروني مفيدًا لأغراض متعددة، بما في ذلك تحليل صحة رسائل البريد الإلكتروني وتتبع مسار البريد الإلكتروني وتصنيف الرسائل.
+Email headers are essential components of an email message that provide metadata about the message itself. They include information such as the sender's email address, recipient's email address, subject, date, and more. Extracting email headers is useful for various purposes, including analyzing the authenticity of emails, tracking the email's path, and categorizing messages.
 
-## الشروع في العمل مع Aspose.Email لـ .NET
+## Getting Started with Aspose.Email for .NET
 
-Aspose.Email for .NET هي مكتبة متعددة الاستخدامات تمكن مطوري .NET من العمل مع رسائل البريد الإلكتروني بسلاسة. فهو يقدم مجموعة واسعة من الميزات لإنشاء البيانات ومعالجتها واستخراجها من رسائل البريد الإلكتروني. للبدء، اتبع الخطوات التالية:
+Aspose.Email for .NET is a versatile library that empowers .NET developers to work with emails seamlessly. It offers a wide range of features for creating, manipulating, and extracting data from email messages. To get started, follow these steps:
 
-### تثبيت Aspose.Email عبر NuGet
+### Installing Aspose.Email via NuGet
 
-لتضمين Aspose.Email في مشروعك، تحتاج إلى تثبيت حزمة Aspose.Email NuGet. افتح وحدة تحكم مدير الحزم لديك وقم بتشغيل الأمر التالي:
+To include Aspose.Email in your project, you need to install the Aspose.Email NuGet package. Open your package manager console and run the following command:
 
 ```csharp
 Install-Package Aspose.Email
 ```
 
-### تحميل رسالة بريد إلكتروني
+### Loading an Email Message
 
-بمجرد إضافة مكتبة Aspose.Email إلى مشروعك، يمكنك البدء في تحميل رسائل البريد الإلكتروني. تدعم المكتبة تنسيقات البريد الإلكتروني المختلفة، مثل EML وMSG. إليك كيفية تحميل رسالة بريد إلكتروني:
+Once you've added the Aspose.Email library to your project, you can start loading email messages. The library supports various email formats, such as EML and MSG. Here's how you can load an email message:
 
 ```csharp
 using Aspose.Email;
 
 
-// تحميل رسالة بريد إلكتروني
+// Load an email message
 var message = MailMessage.Load("path/to/email.eml");
 ```
 
-### الوصول إلى رؤوس البريد الإلكتروني
+### Accessing Email Headers
 
- يعد الوصول إلى رؤوس البريد الإلكتروني باستخدام Aspose.Email أمرًا سهلاً. يتم تمثيل رؤوس البريد الإلكتروني كمجموعة من أزواج القيمة الرئيسية. يمكنك الوصول إليهم باستخدام`Headers` ملكية`MailMessage` هدف:
+Accessing email headers using Aspose.Email is straightforward. Email headers are represented as a collection of key-value pairs. You can access them using the `Headers` property of the `MailMessage` هدف:
 
 ```csharp
-// الوصول إلى رؤوس البريد الإلكتروني
+// Access email headers
 foreach (var header in message.Headers)
 {
     Console.WriteLine($"{header.Key}: {header.Value}");
 }
 ```
 
-## استخراج معلومات رأس محددة
+## Extracting Specific Header Information
 
-على الرغم من أن رؤوس البريد الإلكتروني تحتوي على تفاصيل مختلفة، فقد تكون مهتمًا باستخراج معلومات محددة. دعنا نستكشف كيفية استخراج الرؤوس شائعة الاستخدام:
+While email headers contain various details, you might be interested in extracting specific information. Let's explore how to extract commonly used headers:
 
-### من وإلى الرؤوس
+### From and To Headers
 
-يمثل الرأس "من" عنوان البريد الإلكتروني للمرسل، بينما يحتوي الرأس "إلى" على عنوان المستلم. يمكنك استخراجها مثل هذا:
+The "From" header represents the sender's email address, while the "To" header contains the recipient's address. You can extract them like this:
 
 ```csharp
 string from = message.Headers["From"];
 string to = message.Headers["To"];
 ```
 
-### رأس الموضوع
+### Subject Header
 
-يحمل رأس الموضوع موضوع البريد الإلكتروني. استخرجها باستخدام:
+The subject header holds the subject of the email. Extract it using:
 
 ```csharp
 string subject = message.Headers["Subject"];
 ```
 
-### رأس التاريخ
+### Date Header
 
-يشير رأس التاريخ إلى وقت إرسال البريد الإلكتروني. استخراجه على النحو التالي:
+The date header indicates when the email was sent. Extract it as follows:
 
 ```csharp
 string date = message.Headers["Date"];
 ```
 
-## التعامل مع السيناريوهات المعقدة
+## Handling Complex Scenarios
 
-في بعض الحالات، يمكن أن تحتوي رسائل البريد الإلكتروني على رؤوس متعددة أو رؤوس ذات هياكل معقدة. تعمل مكتبة Aspose.Email على تبسيط التعامل مع مثل هذه السيناريوهات:
+In some cases, emails can have multiple headers or headers with complex structures. The Aspose.Email library simplifies handling such scenarios:
 
-### رؤوس البريد الإلكتروني المتعددة
+### Multiple Email Headers
 
-قد تحتوي رسائل البريد الإلكتروني على مثيلات متعددة لنفس الرأس. لاسترداد كافة الرؤوس "المستلمة"، على سبيل المثال:
+Emails might have multiple instances of the same header. To retrieve all "Received" headers, for instance:
 
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
 
-### إصدار MIME ورؤوس نوع المحتوى
+### MIME-Version and Content-Type Headers
 
-تعد رؤوس "MIME-Version" و"Content-Type" ضرورية لعرض محتوى البريد الإلكتروني. الوصول إليهم مثل هذا:
+The "MIME-Version" and "Content-Type" headers are crucial for email content rendering. Access them like this:
 
 ```csharp
 string mimeVersion = message.Headers["MIME-Version"];
 string contentType = message.Headers["Content-Type"];
 ```
 
-## الاستفادة من بيانات الرأس المستخرجة
+## Utilizing Extracted Header Data
 
-بمجرد استخراج معلومات الرأس، يمكنك استخدامها بشكل جيد:
+Once you've extracted the header information, you can put it to good use:
 
-### تسجيل معلومات الرأس
+### Logging Header Information
 
-يمكنك تسجيل تفاصيل الرأس المستخرجة لأغراض التحليل أو التصحيح:
+You can log the extracted header details for analysis or debugging purposes:
 
 ```csharp
 foreach (var header in message.Headers)
@@ -121,9 +123,9 @@ foreach (var header in message.Headers)
 }
 ```
 
-### تحليل الرأس المخصص
+### Custom Header Analysis
 
-يمكنك إجراء تحليل مخصص على الرؤوس، مثل تصنيف رسائل البريد الإلكتروني بناءً على رؤوس محددة:
+You can perform custom analysis on the headers, such as categorizing emails based on specific headers:
 
 ```csharp
 if (subject.Contains("urgent"))
@@ -134,31 +136,31 @@ if (subject.Contains("urgent"))
 
 ## خاتمة
 
-يعد استخراج رؤوس البريد الإلكتروني مهارة قيمة للتعامل مع رسائل البريد الإلكتروني برمجيًا. يعمل Aspose.Email for .NET على تبسيط هذه العملية ويوفر مجموعة قوية من الأدوات للتعامل مع رسائل البريد الإلكتروني بكفاءة. باتباع الخطوات الموضحة في هذا الدليل، يمكنك بكل ثقة استخراج معلومات رأس البريد الإلكتروني واستخدامها في تطبيقات C# الخاصة بك.
+Extracting email headers is a valuable skill for working with emails programmatically. Aspose.Email for .NET simplifies this process and provides a robust set of tools for handling email messages efficiently. By following the steps outlined in this guide, you can confidently extract and utilize email header information in your C# applications.
 
 ## الأسئلة الشائعة
 
-### كيف يمكنني تثبيت Aspose.Email لـ .NET؟
+### How can I install Aspose.Email for .NET?
 
-لتثبيت Aspose.Email عبر NuGet، استخدم الأمر التالي:
+To install Aspose.Email via NuGet, use the following command:
 ```csharp
 Install-Package Aspose.Email
 ```
 
-### هل يمكنني استخراج مثيلات متعددة لنفس الرأس من رسالة بريد إلكتروني؟
+### Can I extract multiple instances of the same header from an email?
 
-نعم، يمكنك استخراج مثيلات متعددة لنفس الرأس باستخدام ملف`GetValues` طريقة:
+Yes, you can extract multiple instances of the same header using the `GetValues` طريقة:
 ```csharp
 var receivedHeaders = message.Headers.GetValues("Received");
 ```
 
-### ما هي بعض الرؤوس الشائعة التي يجب استخراجها من البريد الإلكتروني؟
+### What are some common headers to extract from an email?
 
-تتضمن الرؤوس المستخرجة بشكل شائع "من"، و"إلى"، و"الموضوع"، و"التاريخ".
+Commonly extracted headers include "From," "To," "Subject," and "Date."
 
-### كيف يمكنني تصنيف رسائل البريد الإلكتروني بناءً على رؤوس محددة؟
+### How can I categorize emails based on specific headers?
 
-يمكنك تحليل معلومات الرأس باستخدام البيانات الشرطية. على سبيل المثال، لتصنيف رسائل البريد الإلكتروني العاجلة:
+You can analyze header information using conditional statements. For example, to categorize urgent emails:
 ```csharp
 if (subject.Contains("urgent"))
 {
@@ -166,12 +168,14 @@ if (subject.Contains("urgent"))
 }
 ```
 
-### أين يمكنني الوصول إلى وثائق Aspose.Email وتنزيل المكتبة؟
+### Where can I access the Aspose.Email documentation and download the library?
 
- يمكنك العثور على الوثائق في[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/) . لتحميل المكتبة قم بزيارة[https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+You can find the documentation at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). To download the library, visit [https://releases.aspose.com/email/net/](https://releases.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

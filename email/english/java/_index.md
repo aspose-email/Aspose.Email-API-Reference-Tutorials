@@ -7,7 +7,9 @@ description: Unlock the power of Aspose.Email for Java with comprehensive tutori
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Aspose.Email for Java Tutorials: Master Email Manipulation & Management
@@ -105,6 +107,7 @@ Here are some of our most popular tutorials to get you started and beyond:
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Text and Links from HTML Anchor Tags Using Aspose.Email for .NET
 
@@ -185,7 +187,11 @@ Experiment with different HTML structures or extend the functionality by integra
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 By following this guide, you've equipped yourself with the knowledge to efficiently extract and manage hyperlink data in .NET applications using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

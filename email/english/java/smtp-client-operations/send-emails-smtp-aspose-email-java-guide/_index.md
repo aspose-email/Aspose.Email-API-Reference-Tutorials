@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails via SMTP Using Aspose.Email for Java
 
@@ -177,7 +179,11 @@ To take the next step, explore more features offered by Aspose.Email for Java an
 - [Free Trial Download](https://releases.aspose.com/email/java/)
 - [Temporary License Request](https://purchase.aspose.com/temporary-license/)
 - [Community Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

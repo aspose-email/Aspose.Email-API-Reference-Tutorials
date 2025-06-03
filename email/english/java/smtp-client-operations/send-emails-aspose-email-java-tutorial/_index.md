@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails Using Aspose.Email in Java: A Comprehensive Guide
 
@@ -74,7 +76,11 @@ After adding the dependency, initialize Aspose.Email with your credentials:
 ```java
 import com.aspose.email.EWSClient;
 IEWSClient client = EWSClient.getEWSClient("https://exchange.aspose.com/exchangeews/Exchange.asmx\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

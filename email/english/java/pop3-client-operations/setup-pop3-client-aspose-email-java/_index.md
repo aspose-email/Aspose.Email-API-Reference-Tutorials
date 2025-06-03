@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up a POP3 Client in Java Using Aspose.Email Library
 
@@ -163,7 +165,11 @@ Try implementing the solution in your projects today, and explore the full poten
 - **Temporary License**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 
 With these resources, you're well-equipped to start integrating and optimizing email handling in your Java applications using Aspose.Email. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

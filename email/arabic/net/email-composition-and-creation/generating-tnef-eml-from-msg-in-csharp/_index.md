@@ -1,115 +1,115 @@
 ---
-title: إنشاء TNEF EML من MSG في C#
-linktitle: إنشاء TNEF EML من MSG في C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعلم كيفية إنشاء TNEF EML من MSG باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع كود C#. تحويل تنسيق البريد الإلكتروني بكفاءة.
-weight: 12
-url: /ar/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
+"description": "Convert MSG to TNEF EML in C# with Aspose.Email. Easy, step-by-step guide. Boost your email processing projects."
+"linktitle": "Generating TNEF EML from MSG in C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Generating TNEF EML from MSG in C#"
+"url": "/ar/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إنشاء TNEF EML من MSG في C#
+# Generating TNEF EML from MSG in C#
 
 
-في هذا الدليل، ستتعلم كيفية إنشاء ملفات EML TNEF (تنسيق النقل المحايد) من ملفات MSG (رسالة Outlook) باستخدام مكتبة Aspose.Email لـ .NET. TNEF هو تنسيق مرفق بريد إلكتروني خاص يستخدمه Microsoft Outlook. Aspose.Email for .NET هي مكتبة قوية تمكنك من العمل مع تنسيقات البريد الإلكتروني المختلفة في تطبيقات C# الخاصة بك.
+## مقدمة
 
-##  المتطلبات الأساسية
+Hey there, fellow coder! Ever found yourself needing to convert MSG files to TNEF EML in your C# projects? Well, you're in the right place. Today, we'll dive into how you can use Aspose.Email for .NET to make this conversion smooth as butter. Whether you're a seasoned developer or just starting, this step-by-step guide will walk you through everything you need to know. Let's get started!
 
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+## المتطلبات الأساسية
 
-تم تثبيت Visual Studio أو أي بيئة تطوير C#.
- Aspose.Email لمكتبة .NET. يمكنك تنزيله من[إصدارات Aspose](https://releases.aspose.com/email/net).
+Before we jump into the coding part, let's make sure you have everything set up:
 
-##  دليل خطوة بخطوة
+1. Visual Studio Installed: Make sure you have Visual Studio installed on your machine. If not, you can download it [هنا](https://visualstudio.microsoft.com/downloads/).
+2. Aspose.Email for .NET: You'll need the Aspose.Email for .NET library. You can download it from [هنا](https://releases.aspose.com/email/net/).
+3. Basic Understanding of C#: This tutorial assumes you have a basic understanding of C# programming.
+4. A Sample MSG File: Have an MSG file ready that you want to convert.
 
-اتبع هذه الخطوات لإنشاء ملفات TNEF EML من ملفات MSG باستخدام Aspose.Email لـ .NET:
+Alright, if you have all these ready, we’re good to go!
 
-### إنشاء مشروع C# جديد:
+## Import Namespaces
 
-   قم بإنشاء مشروع C# جديد في بيئة التطوير المفضلة لديك.
+First things first, let's import the necessary namespaces. These are essential for accessing the classes and methods we'll be using.
 
-### تثبيت Aspose.Email لـ .NET:
+```csharp
+using Aspose.Email;
+```
 
-   قم بتثبيت Aspose.Email لمكتبة .NET عن طريق إضافة المرجع إلى مشروعك. يمكنك القيام بذلك إما عن طريق إضافة DLL كمرجع أو باستخدام NuGet Package Manager.
+## Why Load the MSG File?
 
-### تحميل ملف MSG:
+Before we can convert anything, we need to load the MSG file into our application. Think of it as opening a book before reading it.
 
-   استخدم الكود التالي لتحميل ملف MSG باستخدام Aspose.Email:
+## How to Load the MSG File
 
-   ```csharp
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+Here's how you do it:
 
-   // قم بتحميل ملف MSG
-   MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-   ```
+```csharp
+MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
+```
 
-### إنشاء ملف TNEF EML:
+يستبدل `"path/to/your/msg/file.msg"` with the actual path to your MSG file. This line of code loads the MSG file into a `MapiMessage` هدف.
 
-   لإنشاء ملف TNEF EML، تحتاج إلى حفظ كائن MapiMessage في تنسيق EML. سيتم إنشاء تنسيق TNEF تلقائيًا:
+## Step 2: Convert to TNEF EML
 
-   ```csharp
-   using Aspose.Email;
-   
-   // تحويل وحفظ باسم TNEF EML
-   msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-   ```
+### Why Convert to TNEF EML?
 
-### مثال الكود الكامل:
+Now that we have our MSG file loaded, the next step is to convert it to TNEF EML. TNEF (Transport Neutral Encapsulation Format) is a format used to encapsulate rich content in email messages.
 
-   إليك مثال التعليمات البرمجية الكامل الذي يجمع كل شيء معًا:
+### How to Convert to TNEF EML
 
-   ```csharp
-   using Aspose.Email;
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+Here's the code snippet for conversion:
 
-   namespace TnefGenerationExample
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               // قم بتحميل ملف MSG
-               MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-               
-               // تحويل وحفظ باسم TNEF EML
-               msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-           }
-       }
-   }
-   ```
+```csharp
+MailMessage eml = msg.ToMailMessage(new MailConversionOptions { ConvertAsTnef = true });
+```
 
-### تشغيل التطبيق:
+This line converts the `MapiMessage` to a `MailMessage` object with the TNEF format enabled.
 
-   قم بتشغيل التطبيق الخاص بك، وسوف يقوم بإنشاء ملف TNEF EML من ملف MSG المقدم.
+## Step 3: Save the Converted EML File
 
-##  خاتمة
+### Why Save the EML File?
 
-في هذا الدليل، تعلمت كيفية إنشاء ملفات TNEF EML من ملفات MSG باستخدام مكتبة Aspose.Email لـ .NET. توفر لك هذه المكتبة القوية الأدوات التي تحتاجها للعمل مع تنسيقات البريد الإلكتروني المختلفة في تطبيقات C# الخاصة بك.
+After converting the file, we need to save it so it can be used or shared. Saving the file is like putting a bookmark in our book after we've read it.
 
-##  الأسئلة الشائعة
+### How to Save the EML File
 
-### كيف يمكنني الحصول على Aspose.Email لمكتبة .NET؟
+Here's how you save the converted file:
 
-يمكنك الحصول على مكتبة Aspose.Email for .NET من إصدارات Aspose:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
+```csharp
+eml.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
+```
 
-### هل يمكنني استخدام Aspose.Email لتنسيقات أخرى غير MSG؟
+يستبدل `"path/to/save/tnef.eml"` with the path where you want to save the EML file. This line saves the EML file in the specified location.
 
- نعم، يدعم Aspose.Email for .NET العديد من تنسيقات البريد الإلكتروني، بما في ذلك MSG وEML وPST وOST والمزيد. يمكنك الرجوع إلى[Aspose.Email للحصول على وثائق .NET](https://reference.aspose.com/email/net) لمزيد من المعلومات حول التنسيقات والميزات المدعومة.
+## خاتمة
 
-### كيف أتعامل مع الاستثناءات عند العمل مع Aspose.Email؟
+And there you have it! You’ve just learned how to convert an MSG file to TNEF EML using Aspose.Email for .NET. It’s as simple as loading the file, converting it, and saving the output. This process can come in handy for email processing, migration, or any project where you need to manipulate email formats.
 
-يمكنك استخدام تقنيات معالجة الاستثناءات القياسية في C#. يطرح Aspose.Email استثناءات خاصة بمكتبته، لذا تأكد من التقاطها والتعامل معها بشكل مناسب في التعليمات البرمجية الخاصة بك.
+## الأسئلة الشائعة
 
- لا تتردد في استكشاف[Aspose.Email للحصول على وثائق .NET](https://reference.aspose.com/email/net) لمزيد من الميزات والأمثلة المتقدمة.
+### 1. What is TNEF EML?
+TNEF EML is a format used to encapsulate rich email content, often used in email applications for preserving formatting and attachments.
+
+### 2. Can I convert multiple MSG files at once?
+Yes, you can loop through a directory of MSG files and apply the same conversion process to each file.
+
+### 3. Do I need a license to use Aspose.Email for .NET?
+Yes, Aspose.Email for .NET requires a license for full functionality. You can get a temporary license [هنا](https://purchase.aspose.com/temporary-license/).
+
+### 4. Is Aspose.Email for .NET compatible with all versions of .NET?
+Aspose.Email for .NET supports .NET Framework as well as .NET Core and .NET 5/6.
+
+### 5. Where can I find more documentation?
+You can find detailed API documentation on the Aspose.Email for .NET [هنا](https://reference.aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

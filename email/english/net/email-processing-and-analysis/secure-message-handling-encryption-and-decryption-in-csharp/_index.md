@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/secure-message-handling-encryption-and-d
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Secure Message Handling - Encryption and Decryption in C#
@@ -108,6 +110,7 @@ You can find comprehensive documentation and examples on using Aspose.Email for 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

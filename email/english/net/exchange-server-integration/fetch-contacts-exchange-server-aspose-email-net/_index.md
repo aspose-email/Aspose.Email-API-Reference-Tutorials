@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Fetch Contacts from Exchange Server Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -165,7 +167,11 @@ Ready to take it further? Explore the official documentation to dive deeper into
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Take the next step in your journey with Aspose.Email for .NET and unlock new possibilities in email management today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

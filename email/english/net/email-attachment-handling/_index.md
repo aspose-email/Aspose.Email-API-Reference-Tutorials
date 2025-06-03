@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Master Email Attachment Handling with Aspose.Email for .NET
@@ -57,6 +59,7 @@ Learn how to preserve TNEF attachments using Aspose.Email for .NET in this step-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

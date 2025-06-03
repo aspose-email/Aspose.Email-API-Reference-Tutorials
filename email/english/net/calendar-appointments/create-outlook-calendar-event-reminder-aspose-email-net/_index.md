@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Save an Outlook Calendar Event with Reminder Using Aspose.Email for .NET
 
@@ -169,7 +171,11 @@ Ready to take your calendar management skills to the next level? Try implementin
 - [Support](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to efficient calendar management today with Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

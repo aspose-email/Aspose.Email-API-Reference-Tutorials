@@ -1,88 +1,90 @@
 ---
-title: التمييز بين المرفقات المضمنة والعادية - نهج C#
-linktitle: التمييز بين المرفقات المضمنة والعادية - نهج C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية التمييز بين مرفقات البريد الإلكتروني المضمنة والعادية باستخدام Aspose.Email لـ .NET. دليل شامل مع أمثلة التعليمات البرمجية.
-weight: 17
-url: /ar/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
+"description": "Learn how to differentiate between inline and regular email attachments using Aspose.Email for .NET. Comprehensive guide with code examples."
+"linktitle": "Differentiating Inline and Regular Attachments - C# Approach"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Differentiating Inline and Regular Attachments - C# Approach"
+"url": "/ar/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# التمييز بين المرفقات المضمنة والعادية - نهج C#
+# Differentiating Inline and Regular Attachments - C# Approach
 
 
-## مقدمة للتمييز بين المرفقات المضمنة والعادية - نهج C#
+## Introduction to Differentiating Inline and Regular Attachments - C# Approach
 
-في عالم معالجة البريد الإلكتروني، تلعب المرفقات دورًا محوريًا في نقل المعلومات الإضافية إلى جانب محتوى البريد الإلكتروني. يمكن أن تأتي المرفقات بأشكال مختلفة، ولكن النوعين الأكثر شيوعًا هما المرفقات المضمنة والمرفقات العادية. في هذه المقالة، سنتعمق في مجال مرفقات البريد الإلكتروني، مع التركيز بشكل خاص على كيفية التمييز بين المرفقات المضمنة والعادية باستخدام مكتبة Aspose.Email for .NET. سيزودك هذا الدليل المفصّل خطوة بخطوة بالرؤى الضرورية ومقتطفات التعليمات البرمجية للعمل بفعالية مع كلا النوعين من المرفقات.
+In the world of email processing, attachments play a pivotal role in conveying additional information along with the email content. Attachments can come in different forms, but the two most common types are inline attachments and regular attachments. In this article, we'll delve into the realm of email attachments, specifically focusing on how to differentiate between inline and regular attachments using the Aspose.Email for .NET library. This step-by-step guide will provide you with the necessary insights and code snippets to effectively work with both attachment types.
 
 ## دليل خطوة بخطوة
 
-## 1. إعداد بيئة التطوير الخاصة بك
+## 1. Setting up your development environment
 
-قبل أن نتعمق في الكود، من الضروري أن يكون لديك بيئة تطوير مناسبة. تأكد من تثبيت Visual Studio على نظامك.
+Before we dive into the code, it's essential to have a suitable development environment. Make sure you have Visual Studio installed on your system.
 
-## 2. إنشاء مشروع جديد في Visual Studio
+## 2. Creating a new project in Visual Studio
 
-افتح Visual Studio وقم بإنشاء مشروع جديد. اختر نوع المشروع والقالب المناسبين بناءً على متطلباتك.
+Open Visual Studio and create a new project. Choose the appropriate project type and template based on your requirements.
 
-## 3. تثبيت Aspose.Email لمكتبة .NET
+## 3. Installing the Aspose.Email for .NET library
 
-للعمل مع مرفقات البريد الإلكتروني، سنستخدم مكتبة Aspose.Email for .NET. يمكنك تثبيته عبر NuGet Package Manager عن طريق تشغيل الأمر التالي في وحدة تحكم إدارة الحزم:
+To work with email attachments, we'll use the Aspose.Email for .NET library. You can install it via NuGet Package Manager by running the following command in the Package Manager Console:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## 4. تحميل رسالة بريد إلكتروني
+## 4. Loading an email message
 
-أولاً، تحتاج إلى رسالة بريد إلكتروني للتعامل معها. قم بتحميل رسالة البريد الإلكتروني باستخدام فئات مكتبة Aspose.Email.
+First, you need an email message to work with. Load the email message using the Aspose.Email library's classes.
 
-## 5. استرجاع المرفقات من البريد الإلكتروني
+## 5. Retrieving attachments from the email
 
-استخدم مقتطف الشفرة أدناه لاسترداد جميع المرفقات من رسالة البريد الإلكتروني المحملة:
+Use the code snippet below to retrieve all attachments from the loaded email message:
 
 ```csharp
 
 
-// قم بتحميل رسالة البريد الإلكتروني (المفترض: 'emailMessage')
+// Load the email message (assumed: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## 6. التمييز بين المرفقات المضمنة والعادية
+## 6. Distinguishing between inline and regular attachments
 
-للتمييز بين المرفقات المضمنة والعادية، تحتاج إلى فحص كل مرفق`ContentDisposition` ملكية. إذا`ContentDisposition` تم تعيينه على "مضمن"، فالمرفق عبارة عن مرفق مضمن.
+To differentiate between inline and regular attachments, you need to inspect each attachment's `ContentDisposition` property. If the `ContentDisposition` is set to "inline," the attachment is an inline attachment.
 
-## 7. العمل مع المرفقات المضمنة
+## 7. Working with inline attachments
 
-عند التعامل مع المرفقات المضمنة، يمكنك الوصول إلى محتواها والمعلومات ذات الصلة. استخدم مقتطف الشفرة التالي كمرجع:
+When dealing with inline attachments, you can access their content and related information. Use the following code snippet as a reference:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // التعامل مع المرفقات المضمنة
-        // مثال: عرض معرف المحتوى ونوع المحتوى
+        // Handle inline attachment
+        // Example: Display content ID and content type
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
 }
 ```
 
-## 8. التعامل مع المرفقات العادية
+## 8. Handling regular attachments
 
-لا تحتوي المرفقات العادية على نوع ترتيب "مضمّن". يمكنك معالجتها باستخدام مقتطف الشفرة التالي:
+Regular attachments don't have a "inline" disposition type. You can process them using the following code snippet:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // التعامل مع المرفقات العادية
-        // مثال: حفظ المرفق على القرص
+        // Handle regular attachment
+        // Example: Save attachment to disk
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
@@ -90,32 +92,34 @@ foreach (Attachment attachment in attachments)
 
 ## خاتمة
 
-في هذا الدليل، اكتشفنا عالم مرفقات البريد الإلكتروني، مع التركيز على التمييز بين المرفقات المضمنة والعادية باستخدام مكتبة Aspose.Email for .NET. من خلال اتباع التعليمات خطوة بخطوة واستخدام مقتطفات التعليمات البرمجية المتوفرة، يمكنك التعرف على كلا النوعين من المرفقات والتعامل معهما بشكل فعال في مهام معالجة البريد الإلكتروني لديك.
+In this guide, we've explored the world of email attachments, focusing on the differentiation between inline and regular attachments using the Aspose.Email for .NET library. By following the step-by-step instructions and utilizing the provided code snippets, you can effectively identify and work with both types of attachments in your email processing tasks.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف يمكنني تثبيت Aspose.Email لمكتبة .NET؟
+### How can I install the Aspose.Email for .NET library?
 
- يمكنك تثبيت Aspose.Email لمكتبة .NET باستخدام NuGet Package Manager. ما عليك سوى تشغيل الأمر التالي في وحدة تحكم إدارة الحزم:`Install-Package Aspose.Email`.
+You can install the Aspose.Email for .NET library using NuGet Package Manager. Simply run the following command in the Package Manager Console: `Install-Package Aspose.Email`.
 
-### هل يمكنني التمييز بين المرفقات المضمنة والعادية برمجياً؟
+### Can I differentiate between inline and regular attachments programmatically?
 
- نعم، يمكنك التمييز بين المرفقات المضمنة والعادية من خلال فحص الملف`ContentDisposition` خاصية كل مرفق المرفقات ذات نوع التصرف "المضمنة" هي مرفقات مضمنة.
+Yes, you can differentiate between inline and regular attachments by inspecting the `ContentDisposition` property of each attachment. Attachments with a disposition type of "inline" are inline attachments.
 
-### هل Aspose.Email مناسب للتعامل مع مرفقات البريد الإلكتروني بلغات البرمجة الأخرى؟
+### Is Aspose.Email suitable for handling email attachments in other programming languages?
 
-نعم، يوفر Aspose.Email مكتبات لمختلف لغات البرمجة، مما يجعله مناسبًا للتعامل مع مرفقات البريد الإلكتروني في مجموعة واسعة من بيئات التطوير.
+Yes, Aspose.Email provides libraries for various programming languages, making it suitable for handling email attachments in a wide range of development environments.
 
-### كيف يمكنني الوصول إلى محتوى المرفق المضمن؟
+### How can I access the content of an inline attachment?
 
-يمكنك الوصول إلى محتوى المرفق المضمن باستخدام الخصائص المناسبة التي توفرها مكتبة Aspose.Email. على سبيل المثال، يمكنك استرداد معرف المحتوى ونوع محتوى المرفق المضمن.
+You can access the content of an inline attachment by using the appropriate properties provided by the Aspose.Email library. For example, you can retrieve the content ID and content type of the inline attachment.
 
-### هل يمكنني حفظ المرفقات العادية في موقع محدد على القرص؟
+### Can I save regular attachments to a specific location on disk?
 
- قطعاً! يمكنك حفظ المرفقات العادية في موقع محدد على القرص باستخدام ملف`Save` طريقة كائن المرفق وتوفير مسار الملف المطلوب.
+Absolutely! You can save regular attachments to a specific location on disk by utilizing the `Save` method of the attachment object and providing the desired file path.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

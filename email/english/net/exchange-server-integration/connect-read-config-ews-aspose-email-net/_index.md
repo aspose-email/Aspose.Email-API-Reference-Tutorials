@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Read Configurations from Exchange Web Services Using Aspose.Email for .NET
 
@@ -199,7 +201,11 @@ By following this guide, you've learned how to connect to Microsoft Exchange Web
 - **Purchase**: Buy a license for full features on their [purchase page](https://purchase.aspose.com/buy)
 - **Free Trial**: Start experimenting with a free trial available at [Aspose Downloads](https://releases.aspose.com/email/net/)
 - **Temporary License**: Obtain one for more extensive testing from the Aspose website
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

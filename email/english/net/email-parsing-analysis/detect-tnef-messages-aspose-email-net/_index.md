@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Detecting TNEF Format Messages with Aspose.Email .NET: A Comprehensive Guide
 
@@ -172,7 +174,11 @@ Visit [Aspose's support forum](https://forum.aspose.com/c/email/10) for assistan
 - **Purchase**: [Buy Now](https://purchase.aspose.com/buy)
 - **Free Trial**: [Try Aspose.Email for Free](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Apply Here](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

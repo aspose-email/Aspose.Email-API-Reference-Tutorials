@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect to Exchange Server Using EWS with Aspose.Email for Java
 
@@ -182,6 +184,9 @@ A5: Aspose.Email offers a wide range of features including calendar management a
 Dive into implementing your Exchange server connection with confidence, and consider joining Aspose's community forum if you have further questions. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

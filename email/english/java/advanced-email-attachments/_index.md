@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Advanced Email Attachments with Aspose.Email for Java
@@ -45,6 +47,7 @@ Learn how to manage document attachments in Java emails using Aspose.Email for J
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

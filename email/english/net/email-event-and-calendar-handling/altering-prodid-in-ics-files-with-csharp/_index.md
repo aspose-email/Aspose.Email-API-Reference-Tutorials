@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/altering-prodid-in-ics-files-with-cs
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Altering ProdID in ICS Files with C#
@@ -96,6 +98,7 @@ For comprehensive documentation, resources, and details about Aspose.Email for .
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

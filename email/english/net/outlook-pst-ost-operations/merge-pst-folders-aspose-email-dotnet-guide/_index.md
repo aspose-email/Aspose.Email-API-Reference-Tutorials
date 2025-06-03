@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Merge PST Folders Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -171,6 +173,9 @@ While this tutorial focuses on .NET, Aspose.Email is also available for Java, C+
 We hope this guide empowers you to efficiently manage your PST files using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

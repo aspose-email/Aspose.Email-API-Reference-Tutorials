@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/configuring-email-headers-in-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Configuring Email Headers in C#
@@ -143,6 +145,7 @@ Yes, email headers are case-insensitive. However, it's a good practice to mainta
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

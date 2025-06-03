@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create a Draft Email Appointment in Java with Aspose.Email
 
@@ -179,6 +181,9 @@ Consider exploring further capabilities of Aspose.Email such as sending emails, 
 Happy coding, and feel free to reach out through Aspose's support channels if you have further questions!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

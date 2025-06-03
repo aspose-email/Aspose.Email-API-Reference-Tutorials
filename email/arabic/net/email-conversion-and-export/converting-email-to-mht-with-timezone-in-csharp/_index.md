@@ -1,66 +1,68 @@
 ---
-title: تحويل البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية في C#
-linktitle: تحويل البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية في C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: قم بتحويل رسائل البريد الإلكتروني إلى تنسيق MHT بمناطق زمنية دقيقة باستخدام Aspose.Email لـ .NET. تم توفير دليل خطوة بخطوة ومثال التعليمات البرمجية.
-weight: 12
-url: /ar/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
+"description": "Convert emails to MHT format with accurate timezones using Aspose.Email for .NET. Step-by-step guide and code example provided."
+"linktitle": "Converting Email to MHT with Timezone in C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Converting Email to MHT with Timezone in C#"
+"url": "/ar/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# تحويل البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية في C#
+# Converting Email to MHT with Timezone in C#
 
 
-## مقدمة لتحويل البريد الإلكتروني من البريد الإلكتروني إلى MHT باستخدام المنطقة الزمنية
+## Introduction to Email Conversion Email to MHT with Timezone
 
-يعد تحويل رسائل البريد الإلكتروني إلى تنسيقات مختلفة مطلبًا شائعًا في العديد من التطبيقات. في السيناريوهات التي تلعب فيها معلومات الوقت والمنطقة الزمنية دورًا حاسمًا، من المهم التأكد من الحفاظ على هذه المعلومات بدقة أثناء عملية التحويل. سنركز في هذا الدليل على تحويل رسائل البريد الإلكتروني إلى تنسيق MHT أثناء التعامل مع بيانات المنطقة الزمنية بشكل صحيح.
+Converting email messages to various formats is a common requirement in many applications. In scenarios where time and timezone information plays a crucial role, it's important to ensure that this information is accurately preserved during the conversion process. In this guide, we'll focus on converting emails to MHT format while correctly handling timezone data.
 
-## إعداد بيئة التطوير الخاصة بك
+## Setting Up Your Development Environment
 
-قبل أن نتعمق في عملية البرمجة، دعونا نتأكد من أن بيئة التطوير الخاصة بك جاهزة للعمل. تأكد من تثبيت إصدار متوافق من Visual Studio، وقم بإنشاء مشروع C# جديد للبدء.
+Before we dive into the coding process, let's ensure that your development environment is ready for action. Make sure you have a compatible version of Visual Studio installed, and create a new C# project to begin.
 
 ## تثبيت Aspose.Email لـ .NET
 
-Aspose.Email for .NET هي مكتبة غنية بالميزات تعمل على تبسيط المهام المتعلقة بالبريد الإلكتروني. لتثبيته، اتبع الخطوات التالية:
+Aspose.Email for .NET is a feature-rich library that simplifies email-related tasks. To install it, follow these steps:
 
 1. افتح مشروعك في Visual Studio.
-2. انتقل إلى "الأدوات" > "مدير حزم NuGet" > "إدارة حزم NuGet للحل."
-3. ابحث عن "Aspose.Email" وقم بتثبيت الحزمة.
+2. Go to "Tools" > "NuGet Package Manager" > "Manage NuGet Packages for Solution."
+3. Search for "Aspose.Email" and install the package.
 
-## تحميل وتحليل رسائل البريد الإلكتروني
+## Loading and Parsing Email Messages
 
-في هذه الخطوة، سنقوم بتحميل وتحليل رسالة البريد الإلكتروني التي نريد تحويلها. استخدم مقتطف الشفرة التالي كنقطة بداية:
+In this step, we'll load and parse the email message that we want to convert. Use the following code snippet as a starting point:
 
 ```csharp
-// أضف عبارات الاستخدام الضرورية
+// Add necessary using statements
 using Aspose.Email;
 
-// قم بتحميل رسالة البريد الإلكتروني
+// Load the email message
 var message = MailMessage.Load("path/to/your/email.eml");
 
-// الآن لديك حق الوصول إلى خصائص الرسالة
+// Now you have access to message properties
 var subject = message.Subject;
 var sender = message.From.Address;
-// ... خصائص أخرى
+// ... other properties
 ```
 
-## التعامل مع معلومات المنطقة الزمنية
+## Handling Timezone Information
 
-يعد التعامل مع معلومات المنطقة الزمنية بشكل صحيح أمرًا بالغ الأهمية. يوضح مقتطف التعليمات البرمجية التالي كيفية استخراج بيانات المنطقة الزمنية وإدارتها من رسالة بريد إلكتروني:
+Dealing with timezone information correctly is crucial. The following code snippet demonstrates how to extract and manage timezone data from an email message:
 
 ```csharp
 var timezone = message.TimezoneOffset;
 var timezoneId = Timezone.GetIdFromOffset(timezone);
 var timezoneInfo = TimeZoneInfo.FindSystemTimeZoneById(timezoneId);
-// يمكنك الآن استخدام timezoneInfo للتعامل مع تحويلات المنطقة الزمنية
+// You can now use timezoneInfo to handle timezone conversions
 ```
 
-## تحويل البريد الإلكتروني إلى تنسيق MHT
+## Converting Email to MHT Format
 
-الآن تأتي خطوة التحويل الأساسية. سنستخدم Aspose.Email لإجراء التحويل إلى تنسيق MHT:
+Now comes the core conversion step. We'll use Aspose.Email to perform the conversion to MHT format:
 
 ```csharp
 var mhtOptions = MhtSaveOptions.DefaultMhtml;
@@ -68,9 +70,9 @@ var mhtStream = new MemoryStream();
 message.Save(mhtStream, mhtOptions);
 ```
 
-## حفظ ملف MHT
+## Saving the MHT File
 
-بعد تحويل رسالة البريد الإلكتروني إلى تنسيق MHT، حان الوقت لحفظها كملف:
+With the email message converted to MHT format, it's time to save it as a file:
 
 ```csharp
 using var fileStream = new FileStream("output.mht", FileMode.Create);
@@ -78,42 +80,44 @@ mhtStream.Seek(0, SeekOrigin.Begin);
 mhtStream.CopyTo(fileStream);
 ```
 
-## استكشاف التخصيصات الإضافية
+## Exploring Additional Customizations
 
-يوفر Aspose.Email for .NET خيارات تخصيص متنوعة. يمكنك استكشاف إضافة المرفقات وتعديل خصائص الرسالة والمزيد بما يناسب احتياجات التطبيق الخاص بك.
+Aspose.Email for .NET offers various customization options. You can explore adding attachments, modifying message properties, and more to suit your application's needs.
 
-## فوائد استخدام Aspose.Email لـ .NET
+## Benefits of Using Aspose.Email for .NET
 
-يعمل Aspose.Email for .NET على تبسيط المهام المعقدة المتعلقة بالبريد الإلكتروني، مما يسمح للمطورين بالتركيز على الوظائف الأساسية. فهو يوفر دعمًا قويًا لتنسيقات البريد الإلكتروني المختلفة، مما يضمن تحويلات دقيقة وفعالة.
+Aspose.Email for .NET simplifies complex email-related tasks, allowing developers to focus on core functionality. It provides robust support for various email formats, ensuring accurate and efficient conversions.
 
 ## خاتمة
 
-في هذا الدليل، تعلمنا كيفية تحويل رسائل البريد الإلكتروني إلى تنسيق MHT أثناء التعامل مع معلومات المنطقة الزمنية باستخدام Aspose.Email for .NET. باتباع هذه الخطوات واستكشاف المزيد من خيارات التخصيص، يمكنك دمج وظيفة تحويل البريد الإلكتروني في تطبيقاتك بسلاسة.
+In this guide, we've learned how to convert email messages to MHT format while handling timezone information using Aspose.Email for .NET. By following these steps and exploring further customization options, you can seamlessly integrate email conversion functionality into your applications.
 
-## الأسئلة الشائعة
+## FAQ's
 
-### كيف أتعامل مع المرفقات أثناء تحويل البريد الإلكتروني؟
+### How do I handle attachments during email conversion?
 
- للتعامل مع المرفقات، يمكنك استخدام`Attachments` ملكية`MailMessage` فصل. قم بالتكرار عبر المرفقات وحفظها حسب الحاجة أثناء عملية التحويل.
+To handle attachments, you can use the `Attachments` property of the `MailMessage` class. Iterate through the attachments and save them as needed during the conversion process.
 
-### هل يمكنني تحويل رسائل البريد الإلكتروني إلى تنسيقات أخرى باستخدام Aspose.Email لـ .NET؟
+### Can I convert emails to other formats using Aspose.Email for .NET?
 
-نعم، يدعم Aspose.Email for .NET العديد من التنسيقات، بما في ذلك MSG وEML وPST والمزيد. يمكنك تكييف أمثلة التعليمات البرمجية المقدمة لتناسب تنسيق الإخراج المطلوب.
+Yes, Aspose.Email for .NET supports various formats, including MSG, EML, PST, and more. You can adapt the provided code examples to suit your desired output format.
 
-### هل يتم حفظ معلومات المنطقة الزمنية بتنسيق MHT؟
+### Is timezone information preserved in the MHT format?
 
- نعم، يتم الاحتفاظ بمعلومات المنطقة الزمنية أثناء عملية التحويل. من خلال التعامل مع إزاحات المنطقة الزمنية واستخدام المناسب`TimeZoneInfo` الطرق، يمكنك ضمان التمثيل الدقيق للمنطقة الزمنية في ملف MHT.
+Yes, the timezone information is preserved during the conversion process. By handling timezone offsets and using the appropriate `TimeZoneInfo` methods, you can ensure accurate timezone representation in the MHT file.
 
-### أين يمكنني العثور على مزيد من الوثائق والتحديثات حول Aspose.Email لـ .NET؟
+### Where can I find further documentation and updates about Aspose.Email for .NET?
 
- يمكنك الرجوع إلى الوثائق للحصول على معلومات وتحديثات شاملة:[Aspose.Email لمرجع .NET API](https://reference.aspose.com/email/net/)
+You can refer to the documentation for comprehensive information and updates: [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/)
 
-### كيف يمكنني تنزيل أحدث إصدار من Aspose.Email لـ .NET؟
+### How can I download the latest version of Aspose.Email for .NET?
 
- يمكنك تنزيل أحدث إصدار من صفحة الإصدارات:[تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net/)
+You can download the latest version from the releases page: [تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

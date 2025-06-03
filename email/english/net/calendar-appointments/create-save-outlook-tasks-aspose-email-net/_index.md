@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Save Outlook Tasks Using Aspose.Email for .NET
 
@@ -175,7 +177,11 @@ In this guide, we've explored how to create and save Outlook tasks using Aspose.
 - **Support:** [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 With these resources, you're all set to harness the power of Aspose.Email for .NET in your task management workflows!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

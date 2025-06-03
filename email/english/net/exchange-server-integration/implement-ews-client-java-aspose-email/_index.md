@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Implement Exchange Web Services (EWS) Client in Java Using Aspose.Email
 
@@ -229,7 +231,11 @@ A5: Visit [Aspose's Temporary License page](https://purchase.aspose.com/temporar
 - **Documentation:** [Aspose.Email .NET Documentation](https://reference.aspose.com/email/net/)
 - **Download:** [Aspose.Email Releases](https://releases.aspose.com/email/net/)
 - **Purchase:** [Buy Aspose Email for .NET License](https://purchase.aspose.com/buy)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

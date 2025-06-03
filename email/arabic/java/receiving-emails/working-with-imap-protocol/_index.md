@@ -1,79 +1,81 @@
 ---
-title: العمل مع بروتوكول IMAP في Aspose.Email
-linktitle: العمل مع بروتوكول IMAP في Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعرف على كيفية العمل مع بروتوكول IMAP في Aspose.Email لـ Java لإدارة اتصالات البريد الإلكتروني بكفاءة.
-weight: 12
-url: /ar/java/receiving-emails/working-with-imap-protocol/
+"description": "Learn how to work with the IMAP protocol in Aspose.Email for Java to efficiently manage your email communication."
+"linktitle": "Working with IMAP Protocol in Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Working with IMAP Protocol in Aspose.Email"
+"url": "/ar/java/receiving-emails/working-with-imap-protocol/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# العمل مع بروتوكول IMAP في Aspose.Email
+# Working with IMAP Protocol in Aspose.Email
 
 
-في هذا الدليل الشامل، سنرشدك خلال عملية العمل مع IMAP (بروتوكول الوصول إلى الرسائل عبر الإنترنت) في Aspose.Email لـ Java. IMAP هو بروتوكول يستخدم على نطاق واسع للوصول إلى رسائل البريد الإلكتروني وإدارتها على خادم البريد. باستخدام Aspose.Email for Java، يمكنك بسهولة دمج وظيفة IMAP في تطبيقات Java الخاصة بك. هيا بنا نبدأ!
+In this comprehensive guide, we'll walk you through the process of working with the IMAP (Internet Message Access Protocol) in Aspose.Email for Java. IMAP is a widely used protocol for accessing and managing email messages on a mail server. With Aspose.Email for Java, you can easily integrate IMAP functionality into your Java applications. Let's get started!
 
 
-## 1. مقدمة لبروتوكول IMAP
+## 1. Introduction to IMAP Protocol
 
-IMAP هو بروتوكول بريد إلكتروني قوي يسمح لك بالوصول إلى رسائل البريد الإلكتروني وإدارتها على خادم بريد بعيد. فهو يوفر ميزات لقراءة رسائل البريد الإلكتروني والبحث فيها وتنظيمها، مما يجعله أداة أساسية للتواصل عبر البريد الإلكتروني.
+IMAP is a powerful email protocol that allows you to access and manage your email messages on a remote mail server. It provides features for reading, searching, and organizing emails, making it an essential tool for email communication.
 
-## 2. إعداد Aspose.Email لجافا
+## 2. Setting up Aspose.Email for Java
 
- للبدء، قم بتنزيل وتثبيت Aspose.Email لـ Java من[هنا](https://releases.aspose.com/email/java/). اتبع تعليمات التثبيت لإعداد المكتبة في بيئة Java الخاصة بك.
+To get started, download and install Aspose.Email for Java from [هنا](https://releases.aspose.com/email/java/). Follow the installation instructions to set up the library in your Java environment.
 
-## 3. الاتصال بخادم IMAP
+## 3. Connecting to an IMAP Server
 
-لاستخدام بروتوكول IMAP، تحتاج إلى إنشاء اتصال بخادم البريد الإلكتروني الخاص بك. فيما يلي نموذج لمقتطف التعليمات البرمجية للاتصال بخادم IMAP باستخدام Aspose.Email لـ Java:
+To use the IMAP protocol, you need to establish a connection to your email server. Here's a sample code snippet to connect to an IMAP server using Aspose.Email for Java:
 
 ```java
 // إنشاء مثيل لفئة ImapClient
 ImapClient client = new ImapClient("imap.example.com", "username", "password");
 
-// الاتصال بالخادم
+// Connect to the server
 client.connect();
 ```
 
-## 4. قائمة صناديق البريد والمجلدات
+## 4. List Mailboxes and Folders
 
-بمجرد الاتصال، يمكنك إدراج كافة صناديق البريد والمجلدات الموجودة على الخادم. يساعدك هذا على التنقل في التسلسل الهرمي للبريد الإلكتروني بكفاءة.
+Once connected, you can list all the mailboxes and folders on the server. This helps you navigate the email hierarchy efficiently.
 
 ```java
-// قائمة كافة صناديق البريد
+// List all mailboxes
 MailboxInfo[] mailboxes = client.listMailboxes();
 ```
 
-## 5. قراءة رسائل البريد الإلكتروني
+## 5. Reading Emails
 
-لقراءة رسائل البريد الإلكتروني من صندوق البريد الخاص بك، يمكنك استخدام الكود التالي:
+To read emails from your mailbox, you can use the following code:
 
 ```java
-// حدد صندوق بريد
+// Select a mailbox
 client.selectMailbox("inbox");
 
-// استرداد رسائل البريد الإلكتروني
+// Retrieve emails
 ImapMessageInfo[] messages = client.listMessages();
 ```
 
-## 6. تنزيل مرفقات البريد الإلكتروني
+## 6. Downloading Email Attachments
 
-يمكنك تنزيل مرفقات البريد الإلكتروني بسهولة:
+You can download email attachments with ease:
 
 ```java
-// تنزيل المرفقات من بريد إلكتروني محدد
+// Download attachments from a specific email
 MailMessage message = client.fetchMessage(1);
 AttachmentCollection attachments = message.getAttachments();
 ```
 
-## 7. إرسال رسائل البريد الإلكتروني عبر IMAP
+## 7. Sending Emails via IMAP
 
-يتيح لك Aspose.Email for Java إرسال رسائل البريد الإلكتروني من خلال بروتوكول IMAP. هنا مثال:
+Aspose.Email for Java allows you to send emails through the IMAP protocol. Here's an example:
 
 ```java
-// إنشاء رسالة بريد إلكتروني جديدة
+// Create a new email message
 MailMessage message = new MailMessage();
 message.setSubject("Hello, IMAP!");
 message.setBody("This is a test email sent via IMAP.");
@@ -82,115 +84,117 @@ message.setBody("This is a test email sent via IMAP.");
 client.appendMessage("Sent Items", message);
 ```
 
-## 8. حذف رسائل البريد الإلكتروني
+## 8. Deleting Emails
 
-يمكنك حذف رسائل البريد الإلكتروني غير المرغوب فيها بسهولة:
+You can delete unwanted emails easily:
 
 ```java
-// حذف بريد إلكتروني بواسطة معرفه الفريد
+// Delete an email by its unique ID
 client.deleteMessage(1);
 ```
 
-## 9. إدارة المجلدات
+## 9. Managing Folders
 
-إدارة مجلدات البريد الإلكتروني الخاصة بك برمجيا:
+Manage your email folders programmatically:
 
 ```java
-// انشاء مجلد جديد
+// Create a new folder
 client.createFolder("MyFolder");
 
-// إعادة تسمية مجلد
+// Rename a folder
 client.renameFolder("MyFolder", "NewFolderName");
 
-// حذف مجلد
+// Delete a folder
 client.deleteFolder("NewFolderName");
 ```
 
-## 10. البحث في رسائل البريد الإلكتروني
+## 10. Searching Emails
 
-البحث بكفاءة عن رسائل بريد إلكتروني محددة:
+Efficiently search for specific emails:
 
 ```java
-// البحث عن رسائل البريد الإلكتروني التي تحتوي على كلمة رئيسية محددة
+// Search for emails containing a specific keyword
 ImapQueryBuilder builder = new ImapQueryBuilder();
 builder.getSubject().contains("important");
 
 ImapMessageInfo[] searchResults = client.listMessages(builder.getQuery());
 ```
 
-## 11. العمل مع الأعلام
+## 11. Working with Flags
 
-إدارة علامات البريد الإلكتروني لوضع علامة على رسائل البريد الإلكتروني كمقروءة أو غير مقروءة أو تم وضع علامة عليها:
+Manage email flags to mark emails as read, unread, or flagged:
 
 ```java
-// وضع علامة على البريد الإلكتروني كمقروءة
+// Mark an email as read
 client.setMessageFlags(1, MessageFlag.SEEN, true);
 
-// ضع علامة على بريد إلكتروني
+// Flag an email
 client.setMessageFlags(1, MessageFlag.FLAGGED, true);
 ```
 
-## 12. التعامل مع أحداث IMAP
+## 12. Handling IMAP Events
 
-يتيح لك Aspose.Email for Java التعامل مع أحداث IMAP مثل وصول البريد الإلكتروني الجديد:
+Aspose.Email for Java allows you to handle IMAP events such as new email arrival:
 
 ```java
-// تنفيذ معالج الحدث الخاص بك
+// Implement your event handler
 class MyImapEventHandler implements ImapEventHandler {
-    // تنفيذ أساليب التعامل مع الأحداث
+    // Implement event handling methods
 }
 
-// قم بتسجيل معالج الحدث
+// Register the event handler
 client.addImapEventHandler(new MyImapEventHandler());
 ```
 
-## 13. معالجة الأخطاء
+## 13. Error Handling
 
-قم دائمًا بتنفيذ معالجة الأخطاء للتعامل مع الاستثناءات بأمان:
+Always implement error handling to gracefully handle exceptions:
 
 ```java
 try {
-    // رمز IMAP الخاص بك هنا
+    // Your IMAP code here
 } catch (ImapException ex) {
     // التعامل مع الاستثناءات
 }
 ```
 
-## 14. أفضل الممارسات
+## 14. Best Practices
 
-اتبع أفضل الممارسات لاستخدام IMAP بكفاءة وأمان:
+Follow best practices for efficient and secure IMAP usage:
 
-- استخدم SSL/TLS للاتصالات الآمنة.
-- أغلق الاتصال بعد الاستخدام.
-- تخلص من الأشياء بشكل صحيح لتحرير الموارد.
+- Use SSL/TLS for secure connections.
+- Close the connection after use.
+- Dispose of objects properly to free up resources.
 
-## 15. الاستنتاج
+## 15. Conclusion
 
-لقد تعلمت كيفية العمل مع بروتوكول IMAP في Aspose.Email لـ Java. تمكّنك هذه المكتبة متعددة الاستخدامات من إدارة اتصالات البريد الإلكتروني بكفاءة. اكتشف المزيد من الميزات وقم بتخصيص حلول البريد الإلكتروني الخاصة بك باستخدام Aspose.Email.
+You've learned how to work with the IMAP protocol in Aspose.Email for Java. This versatile library empowers you to manage email communication efficiently. Explore more features and customize your email solutions with Aspose.Email.
 
 ---
 
-## الأسئلة الشائعة (الأسئلة المتداولة)
+## FAQs (Frequently Asked Questions)
 
 ### ما هو IMAP، وكيف يختلف عن POP3؟
-   يعد كل من IMAP (بروتوكول الوصول إلى الرسائل عبر الإنترنت) وPOP3 (بروتوكول مكتب البريد) بروتوكولين لاسترداد البريد الإلكتروني، لكنهما يعملان بشكل مختلف. يسمح لك بروتوكول IMAP بإدارة رسائل البريد الإلكتروني على الخادم، بينما يقوم بروتوكول POP3 بتنزيلها على جهازك المحلي.
+   IMAP (Internet Message Access Protocol) and POP3 (Post Office Protocol) are both email retrieval protocols, but they work differently. IMAP allows you to manage emails on the server, while POP3 downloads them to your local device.
 
-### هل Aspose.Email for Java متوافق مع بروتوكولات البريد الإلكتروني الأخرى؟
-   نعم، يدعم Aspose.Email for Java بروتوكولات البريد الإلكتروني المختلفة، بما في ذلك SMTP وPOP3 وIMAP، مما يجعله مكتبة متعددة الاستخدامات لمعالجة البريد الإلكتروني.
+### Is Aspose.Email for Java compatible with other email protocols?
+   Yes, Aspose.Email for Java supports various email protocols, including SMTP, POP3, and IMAP, making it a versatile email manipulation library.
 
-### هل يمكنني استخدام Aspose.Email لـ Java في مشاريعي التجارية؟
-   نعم، يمكن استخدام Aspose.Email for Java في كل من المشاريع التجارية والشخصية. تحقق من تفاصيل الترخيص على موقع Aspose لمزيد من المعلومات.
+### Can I use Aspose.Email for Java in my commercial projects?
+   Yes, Aspose.Email for Java can be used in both commercial and personal projects. Check the licensing details on the Aspose website for more information.
 
-### كيف يمكنني التعامل مع مرفقات البريد الإلكتروني في Aspose.Email لـ Java؟
-   يمكنك بسهولة التعامل مع مرفقات البريد الإلكتروني باستخدام فئة AttachmentCollection التي يوفرها Aspose.Email لـ Java. راجع الوثائق للحصول على أمثلة مفصلة.
+### How can I handle email attachments in Aspose.Email for Java?
+   You can easily handle email attachments using the AttachmentCollection class provided by Aspose.Email for Java. Refer to the documentation for detailed examples.
 
-### أين يمكنني العثور على المزيد من الموارد والوثائق الخاصة بـ Aspose.Email لـ Java؟
-    تفضل بزيارة وثائق Aspose.Email for Java API على[https://reference.aspose.com/email/Java/](https://reference.aspose.com/email/java/) للحصول على أدلة شاملة ومراجع واجهة برمجة التطبيقات ونماذج التعليمات البرمجية.
+### Where can I find more resources and documentation for Aspose.Email for Java?
+   Visit the Aspose.Email for Java API documentation at [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) for comprehensive guides, API references, and code samples.
 
-الآن بعد أن أصبح لديك فهم قوي للعمل مع بروتوكول IMAP في Aspose.Email لـ Java، يمكنك إنشاء حلول قوية لإدارة البريد الإلكتروني مصممة خصيصًا لتلبية احتياجاتك الخاصة. ترميز سعيد!
+Now that you have a solid understanding of working with the IMAP protocol in Aspose.Email for Java, you can build robust email management solutions tailored to your specific needs. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

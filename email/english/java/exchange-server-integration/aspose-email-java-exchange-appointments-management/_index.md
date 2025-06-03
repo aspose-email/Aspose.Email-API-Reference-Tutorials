@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Exchange Appointments with Aspose.Email for Java
 
@@ -186,7 +188,11 @@ This guide covered managing Exchange appointments using Aspose.Email for Java. B
    Use the `setTimeZone` method on your appointment object to specify the appropriate time zone.
 2. **Can I update multiple appointments at once?**
    Yes, batch operations can be performed using Aspose.Email's batch processing features.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

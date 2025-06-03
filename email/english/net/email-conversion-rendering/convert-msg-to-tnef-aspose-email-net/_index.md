@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Convert MSG to TNEF Multipart Email Using Aspose.Email .NET
 
@@ -166,7 +168,11 @@ Ready to start implementing? Dive deeper into the [Aspose.Email documentation](h
 - **Temporary License**: [Apply for Temporary License](https://purchase.aspose.com/temporary-license/)
 
 Embark on your journey to mastering email conversions and enhance your system's interoperability today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

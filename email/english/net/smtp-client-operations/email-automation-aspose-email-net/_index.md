@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Automation: Connecting and Managing Messages with Aspose.Email .NET
 
@@ -166,7 +168,11 @@ Next steps could include exploring additional features offered by Aspose.Email, 
 - **Support Forum**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 Take advantage of these resources to deepen your understanding and skills with Aspose.Email for .NET.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

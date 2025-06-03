@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email .NET: Efficiently Fetch Unread Emails via IMAP
 
@@ -208,7 +210,11 @@ To further enhance your skills, consider exploring additional features offered b
 
 4. **Is it possible to download attachments with Aspose.Email .NET?**
    - Absolutely! You can fetch and save email attachments using Aspose.Email's API.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

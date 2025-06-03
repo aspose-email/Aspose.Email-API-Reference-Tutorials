@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master .NET PST File Management with Aspose.Email
 
@@ -93,7 +95,11 @@ Use the Aspose.Email library to create a new PST file with an Inbox folder.
 using (PersonalStorage personalStorage = PersonalStorage.Create(pstFilePath, FileFormatVersion.Unicode))
 {
     FolderInfo inboxFolder = personalStorage.CreatePredefinedFolder("Inbox\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

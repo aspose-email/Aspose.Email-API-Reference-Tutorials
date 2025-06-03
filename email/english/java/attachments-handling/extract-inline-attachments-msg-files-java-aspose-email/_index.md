@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extract Inline Attachments from MSG Files Using Aspose.Email in Java
 
@@ -208,6 +210,9 @@ Consider using APIs or middleware to connect Aspose.Email functionalities with y
 - **Documentation:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

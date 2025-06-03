@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/extracting-and-analyzing-email-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting and Analyzing Email Headers with Aspose.Email
@@ -117,6 +119,7 @@ Yes, you can automate email header analysis with Aspose.Email by integrating it 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

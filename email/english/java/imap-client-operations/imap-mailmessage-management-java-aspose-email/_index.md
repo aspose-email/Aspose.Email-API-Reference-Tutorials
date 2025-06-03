@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Comprehensive Guide to IMAP MailMessage Management in Java with Aspose.Email
 
@@ -221,6 +223,9 @@ This guide explored how to use Aspose.Email for Java to effectively manage IMAP 
    - Yes, it's designed to scale with business needs and supports various advanced features.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

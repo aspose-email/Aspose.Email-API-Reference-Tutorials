@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Voting Buttons from MapiMessage Using Aspose.Email for .NET
 
@@ -202,6 +204,9 @@ A: Yes, you can access support through their forums or contact customer service 
 By leveraging these resources, you'll have everything you need to master Aspose.Email for .NET and enhance your email processing workflows. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

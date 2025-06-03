@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connect to Exchange Server Using Aspose.Email for Java
 ## Introduction
@@ -136,7 +138,11 @@ A: Yes, Aspose provides a dedicated forum where you can seek help from the commu
 - **Download:** Access latest releases at [Aspose Email Downloads](https://releases.aspose.com/email/java/).
 - **Purchase or Free Trial:** Decide on your usage needs by visiting the respective links provided earlier.
 - **Support:** For further queries, head to the Aspose forum or contact their support directly.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Management in .NET with Aspose.Email: A Comprehensive ImapClient Guide
 
@@ -166,7 +168,11 @@ Aspose offers comprehensive documentation and a community forum for troubleshoot
 ## Resources
 - **Documentation**: [Aspose.Email Documentation](https://reference.aspose.com/email/net/)
 - **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/net)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

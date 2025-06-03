@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load and Save Outlook PST Contacts Using Aspose.Email for .NET
 
@@ -196,7 +198,11 @@ Ready to put your newfound skills into practice? Experiment with different PST f
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 This tutorial serves as your gateway to efficient email contact management with Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

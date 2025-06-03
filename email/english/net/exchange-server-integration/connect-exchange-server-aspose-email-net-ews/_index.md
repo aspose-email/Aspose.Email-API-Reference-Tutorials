@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Integrate Exchange Server with Aspose.Email .NET EWS: A Step-by-Step Guide
 
@@ -166,7 +168,11 @@ A: Visit the [Aspose documentation](https://reference.aspose.com/email/net/) for
 - **Download:** Get the latest version of Aspose.Email from [this link](https://releases.aspose.com/email/net/).
 - **Purchase and Licensing:** Explore purchasing options or obtain a temporary license [here](https://purchase.aspose.com/buy) and [here](https://purchase.aspose.com/temporary-license/), respectively.
 - **Support:** If you encounter any issues, reach out to the support forum at [Aspose Support](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

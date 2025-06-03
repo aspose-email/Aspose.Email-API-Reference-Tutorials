@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create and Manage Outlook Notes Using Aspose.Email for Java
 
@@ -196,7 +198,11 @@ By now, you should have a solid understanding of how to create and read Outlook 
 - **Free Trial**: Download and test the library without limitations from [Aspose Free Trials](https://releases.aspose.com/email/java/)
 - **Temporary License**: Apply for a temporary license on [Aspose's Licensing Page](https://purchase.aspose.com/temporary-license/)
 - **Support**: Join discussions or seek help on the [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

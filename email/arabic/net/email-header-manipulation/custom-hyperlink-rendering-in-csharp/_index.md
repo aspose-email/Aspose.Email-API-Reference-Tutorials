@@ -1,28 +1,30 @@
 ---
-title: عرض الارتباط التشعبي المخصص في C#
-linktitle: عرض الارتباط التشعبي المخصص في C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعلم كيفية تخصيص عرض الارتباط التشعبي في لغة C# باستخدام Aspose.Email لـ .NET. قم بإنشاء محتوى بريد إلكتروني مخصص باستخدام أنماط الارتباط التشعبي المخصصة.
-weight: 13
-url: /ar/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/
+"description": "Learn to customize hyperlink rendering in C# using Aspose.Email for .NET. Create personalized email content with custom hyperlink styles."
+"linktitle": "Custom Hyperlink Rendering in C#"
+"second_title": "Aspose.Email .NET Email Processing API"
+"title": "Custom Hyperlink Rendering in C#"
+"url": "/ar/net/email-header-manipulation/custom-hyperlink-rendering-in-csharp/"
+"weight": 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# عرض الارتباط التشعبي المخصص في C#
+# Custom Hyperlink Rendering in C#
 
 
-في عالم اتصالات البريد الإلكتروني، يعد جعل الارتباطات التشعبية بارزة ومظهرها جذابًا أمرًا بالغ الأهمية لجذب انتباه القارئ. باعتباري كاتبًا ماهرًا في تحسين محركات البحث، سأرشدك خلال عملية عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET. سنستكشف كيفية تحسين مظهر الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك، مما يجعلها أكثر جاذبية للمستلمين.
+In the world of email communications, making hyperlinks stand out and look appealing is crucial for grabbing the reader's attention. As a proficient SEO writer, I will guide you through the process of custom hyperlink rendering in C# using Aspose.Email for .NET. We'll explore how to enhance the appearance of hyperlinks in your email messages, making them more engaging for your recipients.
 
 ## مقدمة
 
-تحتوي رسائل البريد الإلكتروني غالبًا على ارتباطات تشعبية توجه المستخدمين إلى مواقع الويب أو الموارد الأخرى. افتراضيًا، تظهر هذه الارتباطات التشعبية كنص عادي في نص البريد الإلكتروني. ومع ذلك، باستخدام Aspose.Email for .NET، يمكنك تخصيص عرض الارتباطات التشعبية وإضافة نمط وتحسين رؤيتها.
+Emails often contain hyperlinks that direct users to websites or other resources. By default, these hyperlinks appear as plain text in the email body. However, with Aspose.Email for .NET, you can customize the rendering of hyperlinks, adding style and enhancing their visibility.
 
-## تهيئة البيئة
+## Setting Up the Environment
 
-قبل أن نتعمق في التعليمات البرمجية، دعونا نتأكد من إعداد كل شيء بشكل صحيح. ستحتاج إلى تثبيت Aspose.Email for .NET وإنشاء مشروع C#. تأكد من تضمين مراجع Aspose.Email الضرورية.
+Before we dive into the code, let's ensure we have everything set up correctly. You'll need to have Aspose.Email for .NET installed and create a C# project. Make sure to include the necessary Aspose.Email references.
 
 ```csharp
 using Aspose.Email;
@@ -35,15 +37,15 @@ namespace CustomHyperlinkRendering
     {
         static void Main(string[] args)
         {
-            // قم بتعيين مسار دليل البيانات الخاص بك
+            // Set your data directory path
             string dataDir = "Your Data Directory";
             var fileName = dataDir + "LinksSample.eml";
             MailMessage msg = MailMessage.Load(fileName);
 
-            // عرض الارتباطات التشعبية باستخدام href
+            // Render hyperlinks with href
             string renderedHtmlWithHref = RenderHyperlinkWithHref(msg.GetHtmlBodyText());
 
-            //عرض الارتباطات التشعبية بدون href
+            // Render hyperlinks without href
             string renderedHtmlWithoutHref = RenderHyperlinkWithoutHref(msg.GetHtmlBodyText());
 
             Console.WriteLine("Hyperlinks with Href:");
@@ -53,14 +55,14 @@ namespace CustomHyperlinkRendering
             Console.WriteLine(renderedHtmlWithoutHref);
         }
 
-        // سيتم هنا تنفيذ طرق عرض الارتباط التشعبي المخصصة
+        // Custom hyperlink rendering methods will be implemented here
     }
 }
 ```
 
-## عرض الارتباطات التشعبية باستخدام Href
+## Rendering Hyperlinks with Href
 
- في الكود المصدري المقدم، لدينا طريقتان:`RenderHyperlinkWithHref` و`RenderHyperlinkWithoutHref` . لنبدأ بالأول، الذي يعرض الارتباطات التشعبية مع ملف`href` يصف.
+In the provided source code, we have two methods: `RenderHyperlinkWithHref` و `RenderHyperlinkWithoutHref`. Let's begin with the first one, which renders hyperlinks along with the `href` attribute.
 
 ```csharp
 private static string RenderHyperlinkWithHref(string source)
@@ -76,11 +78,11 @@ private static string RenderHyperlinkWithHref(string source)
 }
 ```
 
- تقوم هذه الطريقة باستخراج`href` السمة ونص الارتباط من مصدر HTML ويجمعهما لإنشاء ارتباط تشعبي مخصص.
+This method extracts the `href` attribute and the link text from the HTML source and combines them to create a custom hyperlink.
 
-## عرض الارتباطات التشعبية بدون Href
+## Rendering Hyperlinks without Href
 
- والآن دعنا ننتقل إلى`RenderHyperlinkWithoutHref` الطريقة، التي تعرض الارتباطات التشعبية بدون`href` يصف.
+Now, let's move on to the `RenderHyperlinkWithoutHref` method, which renders hyperlinks without the `href` attribute.
 
 ```csharp
 private static string RenderHyperlinkWithoutHref(string source)
@@ -92,41 +94,43 @@ private static string RenderHyperlinkWithoutHref(string source)
 }
 ```
 
- تقوم هذه الطريقة باستخراج نص الارتباط مباشرة من مصدر HTML، باستثناء`href` يصف.
+This method extracts the link text directly from the HTML source, excluding the `href` attribute.
 
 ## خاتمة
 
-يتيح لك عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email لـ .NET إضافة نمط وتفرد إلى الارتباطات التشعبية في رسائل البريد الإلكتروني الخاصة بك. سواء كنت تريد جعل الارتباطات التشعبية أكثر جاذبية من الناحية المرئية أو ببساطة استخراج النص، فإن Aspose.Email يوفر الأدوات التي تحتاجها.
+Custom hyperlink rendering in C# using Aspose.Email for .NET allows you to add style and uniqueness to the hyperlinks in your email messages. Whether you want to make hyperlinks more visually appealing or simply extract the text, Aspose.Email provides the tools you need.
 
-قم بتحسين اتصالات البريد الإلكتروني الخاصة بك عن طريق تخصيص الارتباطات التشعبية باستخدام Aspose.Email for .NET، وإشراك المستلمين بشكل أكثر فعالية.
+Enhance your email communications by customizing hyperlinks with Aspose.Email for .NET, and engage your recipients more effectively.
 
- لمزيد من المعلومات والوصول إلى الكود المصدري، قم بزيارة وثائق Aspose.Email API:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+For more information and access to the source code, visit the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
 
 ---
 
 ## الأسئلة الشائعة
 
 ### 1. ما هو Aspose.Email لـ .NET؟
-   Aspose.Email for .NET هي مكتبة قوية تمكن المطورين من العمل مع رسائل البريد الإلكتروني في تطبيقات .NET الخاصة بهم. يوفر مجموعة واسعة من الميزات لإنشاء رسائل البريد الإلكتروني وتحليلها ومعالجتها.
+   Aspose.Email for .NET is a powerful library that enables developers to work with email messages in their .NET applications. It provides a wide range of features for creating, parsing, and manipulating emails.
 
-### 2. هل يمكنني تخصيص مظهر الارتباطات التشعبية في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET؟
-   نعم، يمكنك تخصيص عرض الارتباطات التشعبية في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET، كما هو موضح في هذه المقالة.
+### 2. Can I customize the appearance of hyperlinks in email messages with Aspose.Email for .NET?
+   Yes, you can customize the rendering of hyperlinks in email messages using Aspose.Email for .NET, as demonstrated in this article.
 
-### 3. هل هناك أي قيود على عرض الارتباط التشعبي المخصص في Aspose.Email لـ .NET؟
-   بينما يمكنك تحسين مظهر الارتباطات التشعبية، ضع في اعتبارك أن التخصيص المفرط قد لا يكون مدعومًا من قبل جميع عملاء البريد الإلكتروني. اختبر رسائل البريد الإلكتروني الخاصة بك في عملاء مختلفين لضمان التوافق.
+### 3. Are there any limitations to custom hyperlink rendering in Aspose.Email for .NET?
+   While you can enhance the appearance of hyperlinks, keep in mind that excessive customization may not be supported by all email clients. Test your email messages in various clients to ensure compatibility.
 
-### 4. أين يمكنني العثور على المزيد من الموارد والأمثلة لاستخدام Aspose.Email لـ .NET؟
-    يمكنك استكشاف موارد إضافية وأمثلة التعليمات البرمجية في وثائق Aspose.Email API:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+### 4. Where can I find more resources and examples for using Aspose.Email for .NET?
+   You can explore additional resources and code examples in the Aspose.Email API documentation: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
 
-### 5. كيف يمكنني الوصول إلى نموذج التعليمات البرمجية المصدر المستخدم في هذه المقالة؟
-    يمكنك الوصول إلى نموذج التعليمات البرمجية المصدر لعرض الارتباط التشعبي المخصص في C# باستخدام Aspose.Email لـ .NET من خلال زيارة رابط الوثائق المقدم:[https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
+### 5. How can I access the sample source code used in this article?
+   You can access the sample source code for custom hyperlink rendering in C# using Aspose.Email for .NET by visiting the provided documentation link: [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/).
 
 ---
 
-في هذا الدليل الشامل، اكتشفنا عرض الارتباط التشعبي المخصص في لغة C# باستخدام Aspose.Email for .NET، مما يتيح لك إنشاء رسائل بريد إلكتروني جذابة مع ارتباطات تشعبية ذات تصميم جميل. لا تفوت فرصة تحسين اتصالاتك عبر البريد الإلكتروني وإبراز رسائلك. قم بالوصول إلى الرابط المقدم للبدء في رحلتك إلى المزيد من رسائل البريد الإلكتروني الجذابة.
+In this comprehensive guide, we've explored custom hyperlink rendering in C# using Aspose.Email for .NET, enabling you to create engaging email messages with beautifully styled hyperlinks. Don't miss the opportunity to enhance your email communications and make your messages stand out. Access the provided link to get started on your journey to more captivating emails.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

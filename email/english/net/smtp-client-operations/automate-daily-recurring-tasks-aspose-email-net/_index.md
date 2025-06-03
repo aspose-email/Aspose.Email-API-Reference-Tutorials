@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Automate Daily Recurring Tasks with Aspose.Email for .NET
 
@@ -210,6 +212,9 @@ Ready to put this into practice? Try implementing a daily recurring task in your
    Ensure that your Outlook client supports MAPI tasks and verify that the file path is correct when saving.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

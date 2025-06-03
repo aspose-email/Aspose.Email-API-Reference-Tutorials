@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/email-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Email Headers in Aspose.Email
@@ -102,6 +104,7 @@ You can use Aspose.Email's batch processing capabilities to extract headers from
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

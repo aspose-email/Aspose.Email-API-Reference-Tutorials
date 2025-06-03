@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Efficient Email Processing and Analysis with Aspose.Email for .NET
@@ -49,9 +51,11 @@ Learn how to retrieve email Delivery Status Notifications using C# and Aspose.Em
 Learn to effortlessly convert HTML email content to plain text using Aspose.Email for .NET. Detailed guide & code. Explore now!
 ### [Preserving Original Boundaries using C# Code](./preserving-original-boundaries-using-csharp-code/)
 Learn how to preserve original boundaries of email attachments using C# and Aspose.Email for .NET. Step-by-step guide with source code.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

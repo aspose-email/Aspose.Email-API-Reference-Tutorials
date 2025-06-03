@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Exchange Messages Using Aspose.Email Java
 
@@ -223,7 +225,11 @@ When working with Aspose.Email and Java, consider these tips for optimal perform
 By following this guide, you've learned how to use Aspose.Email with SAAJ API to connect to an Exchange server and manage messages efficiently. Experiment further by integrating these techniques into your applications or exploring other features offered by Aspose.Email.
 
 **Next Steps**: Try extending the functionality of your integration for more complex workflows and automations.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

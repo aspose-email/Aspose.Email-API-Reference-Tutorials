@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/differentiating-inline-and-regular-attachmen
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Differentiating Inline and Regular Attachments - C# Approach
@@ -117,6 +119,7 @@ Absolutely! You can save regular attachments to a specific location on disk by u
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

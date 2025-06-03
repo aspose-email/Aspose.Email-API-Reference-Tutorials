@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extract HTML Body Text as Plain Text Using Aspose.Email .NET for Email Data Processing
 
@@ -152,7 +154,11 @@ Ready to take your project further? Explore more features in the [Aspose.Email d
 - **Support:** [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your journey with Aspose.Email .NET today and streamline your email processing tasks!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

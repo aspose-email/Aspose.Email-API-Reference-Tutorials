@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Setting Up Aspose.Email IMAP Client in C#: A Complete Guide for .NET Developers
 
@@ -103,7 +105,11 @@ Create and configure an instance of `ImapClient`:
 static void Main()
 {
     using (ImapClient client = new ImapClient("imap.gmail.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

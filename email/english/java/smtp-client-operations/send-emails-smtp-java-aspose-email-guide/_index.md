@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails via SMTP in Java Using Aspose.Email
 
@@ -70,7 +72,11 @@ import com.aspose.email.SmtpClient;
 
 // Initialize the SmtpClient.
 SmtpClient client = new SmtpClient("smtp.gmail.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

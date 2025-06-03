@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master IMAP Connections and Queries with Aspose.Email for .NET
 
@@ -236,7 +238,11 @@ A: Yes, after fetching messages, use the `DownloadAttachment()` method provided 
 - **Download Library**: [Aspose Email Releases](https://releases.aspose.com/email/net/)
 - **Purchase License**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial and Temporary Licensing**: [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Convert VCF Contacts to MHTML Using Aspose.Email for Java
 
@@ -170,7 +172,11 @@ A: Consider processing contacts in batches and using asynchronous operations to 
 - **Free Trial:** [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Apply for Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Aspose Email Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

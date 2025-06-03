@@ -1,65 +1,67 @@
 ---
-title: إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email
-linktitle: إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email
-second_title: Aspose.Email واجهة برمجة تطبيقات إدارة البريد الإلكتروني لجافا
-description: تعلم كيفية إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. قم بتحسين رسائل البريد الإلكتروني الخاصة بك بسهولة باستخدام هذا الدليل المفصّل خطوة بخطوة.
-weight: 12
-url: /ar/java/sending-emails/attaching-files-to-emails-using-aspose-email/
+"description": "Learn to attach files to email messages using Aspose.Email for Java. Enhance your emails with ease using this step-by-step guide."
+"linktitle": "Attaching Files to Emails Using Aspose.Email"
+"second_title": "Aspose.Email Java Email Management API"
+"title": "Attaching Files to Emails Using Aspose.Email"
+"url": "/ar/java/sending-emails/attaching-files-to-emails-using-aspose-email/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email
+# Attaching Files to Emails Using Aspose.Email
 
 ## مقدمة
 
-في عالم التواصل عبر البريد الإلكتروني، تعد القدرة على إرسال المرفقات أمرًا بالغ الأهمية. سواء كنت ترسل مستندات أو صورًا مهمة أو أي نوع آخر من الملفات، يجب أن تكون العملية واضحة وموثوقة. يعمل Aspose.Email for Java على تبسيط هذه العملية من خلال توفير أدوات قوية لإرفاق الملفات برسائل البريد الإلكتروني.
+In the world of email communication, the ability to send attachments is crucial. Whether you're sending important documents, images, or any other type of file, the process should be straightforward and reliable. Aspose.Email for Java simplifies this process by providing powerful tools for attaching files to email messages.
 
-في هذا الدليل المفصّل خطوة بخطوة، سنرشدك خلال عملية إرفاق الملفات برسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. ستتعلم كيفية إنشاء رسائل البريد الإلكتروني وتخصيصها، وإضافة مرفقات من أنواع مختلفة، وحفظ بريدك الإلكتروني أو إرساله بكل ثقة.
+In this step-by-step guide, we'll walk you through the process of attaching files to email messages using Aspose.Email for Java. You'll learn how to create and customize email messages, add attachments of various types, and save or send your email with confidence.
 
 ## المتطلبات الأساسية
 
-قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
+Before you begin, make sure you have the following prerequisites in place:
 
-1. بيئة تطوير Java: تأكد من إعداد بيئة تطوير Java على نظامك. ستحتاج إلى Java لتجميع أمثلة تعليمات Java البرمجية وتشغيلها في هذا الدليل.
+1. Java Development Environment: Ensure that you have a Java development environment set up on your system. You'll need Java to compile and run the Java code examples in this guide.
 
-2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لـ Java من رابط التنزيل:
+2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the download link:
 
-   [Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
+   [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
-   بمجرد التنزيل، قم بإضافة ملفات Aspose.Email JAR إلى مسار فئة مشروع Java الخاص بك. هذه المكتبة ضرورية للعمل مع رسائل البريد الإلكتروني باستخدام Aspose.Email.
+   Once downloaded, add the Aspose.Email JAR files to your Java project's classpath. This library is essential for working with email messages using Aspose.Email.
 
-مع توفر هذه المتطلبات الأساسية، تصبح جاهزًا لبدء إرفاق الملفات برسائل البريد الإلكتروني الخاصة بك باستخدام Aspose.Email for Java. اتبع الدليل أدناه خطوة بخطوة لمعرفة كيفية القيام بذلك.
+With these prerequisites in place, you're ready to start attaching files to your email messages using Aspose.Email for Java. Follow the step-by-step guide below to learn how to do this.
 
-## الخطوة 1: إعداد بيئة جافا الخاصة بك
+## Step 1: Set up your Java environment
 
-تأكد من تثبيت Java وAspose.Email for Java وتكوينهما في بيئة التطوير لديك.
+Make sure you have Java and Aspose.Email for Java installed and configured in your development environment.
 
-## الخطوة 2: إنشاء مشروع جافا جديد
+## Step 2: Create a new Java project
 
-قم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) التي اخترتها.
+Create a new Java project in your chosen Integrated Development Environment (IDE).
 
-## الخطوة 3: إضافة Aspose.Email لمكتبة Java
+## Step 3: Add Aspose.Email for Java library
 
-قم بتنزيل مكتبة Aspose.Email for Java من رابط التنزيل:
+Download the Aspose.Email for Java library from the download link:
 
-[Aspose.Email لتحميل جافا](https://releases.aspose.com/email/java/)
+[Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
 
-أضف ملفات JAR التي تم تنزيلها إلى مسار الفصل الخاص بمشروعك.
+Add the downloaded JAR files to your project's classpath.
 
-## الخطوة 4: استيراد فئات Aspose.Email
+## Step 4: Import Aspose.Email classes
 
-في كود Java الخاص بك، قم باستيراد فئات Aspose.Email الضرورية:
+In your Java code, import the necessary Aspose.Email classes:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## الخطوة 5: إنشاء رسالة بريد إلكتروني
+## Step 5: Create an Email message
 
-قم بإنشاء رسالة بريد إلكتروني جديدة باستخدام Aspose.Email. على سبيل المثال:
+Create a new email message using Aspose.Email. For example:
 
 ```java
 MailMessage message = new MailMessage();
@@ -69,48 +71,48 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This email contains attachments.</p>");
 ```
 
-## الخطوة 6: إرفاق الملفات بالبريد الإلكتروني
+## Step 6: Attach files to the email
 
- يمكنك إرفاق الملفات بالبريد الإلكتروني باستخدام`Attachment` فصل. فيما يلي مثال على إرفاق ملف:
+You can attach files to the email using the `Attachment` class. Here's an example of attaching a file:
 
 ```java
 Attachment attachment = new Attachment("path/to/attachment.pdf");
 message.getAttachments().add(attachment);
 ```
 
-يمكنك إضافة عدة مرفقات حسب الحاجة.
+You can add multiple attachments as needed.
 
-## الخطوة 7: احفظ أو أرسل البريد الإلكتروني
+## Step 7: Save or send the email
 
-بعد إرفاق الملفات، يمكنك إما حفظ البريد الإلكتروني في ملف أو إرساله. لحفظه في ملف:
+After attaching files, you can either save the email to a file or send it. To save it to a file:
 
 ```java
 message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 ```
 
-لإرسال البريد الإلكتروني، يمكنك استخدام إمكانيات إرسال البريد الإلكتروني في Aspose.Email. راجع وثائق Aspose.Email للحصول على تفاصيل حول إرسال رسائل البريد الإلكتروني.
+To send the email, you can use Aspose.Email's email sending capabilities. Consult the Aspose.Email documentation for details on sending emails.
 
-## الخطوة 8: أكمل البرنامج
+## Step 8: Complete the program
 
-إليك برنامج جافا الكامل:
+Here's the complete Java program:
 
 ```java
 import com.aspose.email.*;
 
 public class EmailWithAttachments {
     public static void main(String[] args) {
-        // إنشاء رسالة بريد إلكتروني جديدة
+        // Create a new email message
         MailMessage message = new MailMessage();
         message.setSubject("Sending an Email with Attachments");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This email contains attachments.</p>");
 
-        // إرفاق ملف
+        // Attach a file
         Attachment attachment = new Attachment("path/to/attachment.pdf");
         message.getAttachments().add(attachment);
 
-        // احفظ البريد الإلكتروني في ملف
+        // Save the email to a file
         message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with attachments saved successfully.");
@@ -120,29 +122,31 @@ public class EmailWithAttachments {
 
 ## خاتمة
 
-في هذا الدليل، تعلمت كيفية إرفاق الملفات برسالة بريد إلكتروني باستخدام Aspose.Email لـ Java. يمكنك تخصيص رسائل البريد الإلكتروني الخاصة بك عن طريق إرفاق أنواع مختلفة من الملفات لتلبية احتياجاتك الخاصة.
+In this guide, you've learned how to attach files to an email using Aspose.Email for Java. You can customize your email messages by attaching various types of files to meet your specific needs.
 
-إذا كان لديك أي أسئلة أخرى أو كنت بحاجة إلى المساعدة، فلا تتردد في التواصل معنا.
+If you have any further questions or need assistance, please feel free to reach out.
 
-## الأسئلة الشائعة (الأسئلة المتداولة)
+## FAQs (Frequently Asked Questions)
 
-### هل يمكنني إرفاق ملفات متعددة برسالة بريد إلكتروني واحدة؟
-    نعم، يمكنك إرفاق ملفات متعددة برسالة بريد إلكتروني عن طريق إضافة ملفات متعددة`Attachment` كائنات إلى`MailMessage` أشياء`getAttachments()` مجموعة.
+### Can I attach multiple files to a single email message?
+   Yes, you can attach multiple files to an email message by adding multiple `Attachment` objects to the `MailMessage` object's `getAttachments()` collection.
 
-### ما أنواع الملفات التي يمكنني إرفاقها برسالة بريد إلكتروني باستخدام Aspose.Email؟
-   يمكنك إرفاق مجموعة واسعة من أنواع الملفات، بما في ذلك المستندات والصور وملفات PDF والمزيد. يوفر Aspose.Email المرونة في التعامل مع المرفقات.
+### What types of files can I attach to an email using Aspose.Email?
+   You can attach a wide range of file types, including documents, images, PDFs, and more. Aspose.Email provides flexibility in handling attachments.
 
-### كيف يمكنني إرسال البريد الإلكتروني مع المرفقات؟
-   لإرسال البريد الإلكتروني مع المرفقات، يمكنك استخدام إمكانات إرسال البريد الإلكتروني الخاصة بـ Aspose.Email، والتي تتضمن تكوين خادم بريد إلكتروني وتحديد تفاصيل المستلم. ارجع إلى وثائق Aspose.Email لإرسال رسائل البريد الإلكتروني.
+### How can I send the email with attachments?
+   To send the email with attachments, you can use Aspose.Email's email sending capabilities, which involve configuring an email server and specifying recipient details. Refer to Aspose.Email documentation for sending emails.
 
-### هل يمكنني إرفاق ملفات من عنوان URL بعيد؟
-   نعم، يمكنك إرفاق ملفات من عنوان URL بعيد عن طريق تنزيلها على نظامك المحلي ثم إرفاقها بالبريد الإلكتروني باستخدام Aspose.Email.
+### Can I attach files from a remote URL?
+   Yes, you can attach files from a remote URL by downloading them to your local system and then attaching them to the email using Aspose.Email.
 
-### هل هناك قيود على حجم مرفقات البريد الإلكتروني؟
-   قد يكون لخوادم البريد الإلكتروني والعملاء قيود على حجم المرفقات. تأكد من أن مرفقاتك ضمن حدود الحجم المقبولة لتجنب مشكلات إرسال رسائل البريد الإلكتروني أو تلقيها.
+### Are there size limitations for email attachments?
+   Email servers and clients may have attachment size limitations. Ensure that your attachments are within acceptable size limits to avoid issues with sending or receiving emails.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/extracting-embedded-attachments-from-msg-fil
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting Embedded Attachments from MSG Files using C#
@@ -113,6 +115,7 @@ You can find detailed examples and documentation on using Aspose.Email for .NET 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

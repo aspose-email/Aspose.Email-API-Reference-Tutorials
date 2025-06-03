@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage Outlook PST Files Using Aspose.Email for .NET
 
@@ -186,7 +188,11 @@ By following this guide, you now have the tools to create, modify, and enhance P
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 With this comprehensive guide, you're well-equipped to start creating and managing PST files using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

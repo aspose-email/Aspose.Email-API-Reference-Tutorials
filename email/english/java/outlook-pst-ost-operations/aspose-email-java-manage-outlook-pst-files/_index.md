@@ -13,7 +13,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Outlook PST File Management with Aspose.Email for Java
 
@@ -201,6 +203,9 @@ public class RetrieveParentFolderInformation {
 **Explanation**: This example iterates through messages in a specific folder, printing out each message's subject and parent folder information.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

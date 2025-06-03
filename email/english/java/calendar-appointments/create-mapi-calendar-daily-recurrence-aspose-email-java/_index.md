@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create a MAPI Calendar with Daily Recurrence and Exceptions Using Aspose.Email for Java
 
@@ -202,7 +204,11 @@ Experiment by integrating these functionalities into your applications or explor
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Try implementing these solutions today and streamline your event management processes with Aspose.Email for Java!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

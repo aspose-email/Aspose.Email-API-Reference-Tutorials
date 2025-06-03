@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Securely Connect to Exchange Server Using Aspose.Email for .NET
 
@@ -62,7 +64,11 @@ using Aspose.Email.Clients.Imap;
 
 // Initialize ImapClient with server credentials
 ImapClient imapClient = new ImapClient("server\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

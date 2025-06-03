@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails to a Private Distribution List Using Aspose.Email for .NET
 
@@ -120,7 +122,11 @@ Select a distribution list and prepare your email message:
 ```csharp
 MailAddress distributionListAddress = distributionLists[0].ToMailAddress();
 MailMessage message = new MailMessage("from@host.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

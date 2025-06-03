@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Append Emails with Aspose.Email for .NET
 
@@ -194,6 +196,9 @@ To continue exploring Aspose.Email's features, consider delving into additional 
 Explore these resources to deepen your understanding and maximize the potential of Aspose.Email in your .NET applications.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

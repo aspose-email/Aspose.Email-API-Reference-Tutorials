@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Java MAPI Message Iteration with Aspose.Email: A Comprehensive Guide
 
@@ -229,7 +231,11 @@ class PatternFileFilter implements FilenameFilter {
 ### Conclusion
 
 This guide provided a comprehensive walkthrough on setting up Aspose.Email for Java and implementing an iterable collection of MAPI messages. By following these steps, you can enhance your email automation processes effectively.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}
