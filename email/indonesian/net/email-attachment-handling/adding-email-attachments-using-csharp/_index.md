@@ -1,14 +1,16 @@
 ---
-title: Menambahkan Lampiran Email menggunakan C#
-linktitle: Menambahkan Lampiran Email menggunakan C#
-second_title: API Pemrosesan Email Aspose.Email .NET
-description: Pelajari cara menambahkan lampiran email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk integrasi yang lancar.
-weight: 11
-url: /id/net/email-attachment-handling/adding-email-attachments-using-csharp/
+"description": "Pelajari cara menambahkan lampiran email menggunakan C# dan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode untuk integrasi yang lancar."
+"linktitle": "Menambahkan Lampiran Email menggunakan C#"
+"second_title": "API Pemrosesan Email Aspose.Email .NET"
+"title": "Menambahkan Lampiran Email menggunakan C#"
+"url": "/id/net/email-attachment-handling/adding-email-attachments-using-csharp/"
+"weight": 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Menambahkan Lampiran Email menggunakan C#
@@ -16,21 +18,21 @@ url: /id/net/email-attachment-handling/adding-email-attachments-using-csharp/
 
 ## Pengantar Lampiran Email dan Aspose.Email untuk .NET
 
-Lampiran email merupakan bagian integral dari komunikasi elektronik. Mereka memungkinkan kita berbagi file dengan orang lain dengan nyaman. Aspose.Email untuk .NET adalah perpustakaan canggih yang menyederhanakan tugas terkait email dalam aplikasi C#.
+Lampiran email merupakan bagian penting dari komunikasi elektronik. Lampiran memungkinkan kita untuk berbagi berkas dengan orang lain dengan mudah. Aspose.Email untuk .NET adalah pustaka canggih yang menyederhanakan tugas-tugas terkait email dalam aplikasi C#.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-- Visual Studio diinstal
+- Visual Studio terinstal
 - Pemahaman dasar tentang C#
--  Aspose.Email untuk perpustakaan .NET (Anda bisa mendapatkannya dari[Di Sini](https://products.aspose.com/email/net))
+- Aspose.Email untuk pustaka .NET (Anda bisa mendapatkannya dari [Di Sini](https://products.aspose.com/email/net))
 
-## Menyiapkan Lingkungan Pembangunan
+## Menyiapkan Lingkungan Pengembangan
 
 1. Luncurkan Visual Studio.
 2. Buat aplikasi konsol C# baru.
-3. Instal perpustakaan Aspose.Email untuk .NET menggunakan NuGet Package Manager.
+3. Instal pustaka Aspose.Email untuk .NET menggunakan NuGet Package Manager.
 
 ```csharp
 // Kode Anda untuk menyiapkan lingkungan pengembangan
@@ -45,7 +47,7 @@ using Aspose.Email;
 
 ```
 
-2. Buat instans MailMessage baru.
+2. Buat instance MailMessage baru.
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -55,7 +57,7 @@ message.Body = "Please find the attached files.";
 
 ## Menambahkan Lampiran ke Email
 
-1. Gunakan kelas Attachment untuk menambahkan lampiran.
+1. Gunakan kelas Lampiran untuk menambahkan lampiran.
 
 ```csharp
 Attachment attachment = new Attachment("path_to_attachment.pdf");
@@ -75,13 +77,13 @@ client.Send(message);
 
 ## Kesimpulan
 
-Dalam panduan ini, kita telah mempelajari cara menambahkan lampiran email menggunakan C# dengan pustaka Aspose.Email untuk .NET. Anda kini dapat menyempurnakan aplikasi Anda dengan menggabungkan kemampuan untuk mengirim file dan dokumen penting dengan lancar.
+Dalam panduan ini, kita telah mempelajari cara menambahkan lampiran email menggunakan C# dengan pustaka Aspose.Email for .NET. Kini Anda dapat menyempurnakan aplikasi dengan menggabungkan kemampuan untuk mengirim file dan dokumen penting dengan mudah.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara mengunduh perpustakaan Aspose.Email untuk .NET?
+### Bagaimana cara mengunduh pustaka Aspose.Email untuk .NET?
 
- Anda dapat mengunduh perpustakaan Aspose.Email untuk .NET dari Aspose.Rilis:[Aspose.Releases](https://releases.aspose.com/email/net/)
+Anda dapat mengunduh pustaka Aspose.Email untuk .NET dari Aspose.Releases: [Aspose.Rilis](https://releases.aspose.com/email/net/)
 
 ### Bisakah saya menambahkan beberapa lampiran ke satu email?
 
@@ -91,16 +93,18 @@ Ya, Anda dapat menambahkan beberapa lampiran ke satu email dengan membuat bebera
 
 Ya, Aspose.Email untuk .NET mendukung berbagai protokol email, termasuk SMTP, POP3, IMAP, dan Exchange.
 
-### Bisakah saya menyesuaikan isi email sebelum mengirim?
+### Dapatkah saya menyesuaikan isi email sebelum mengirim?
 
-Sangat! Anda dapat mengatur berbagai properti kelas MailMessage, seperti Isi, Subjek, dan lampiran, untuk menyesuaikan email sesuai kebutuhan Anda.
+Tentu saja! Anda dapat mengatur berbagai properti kelas MailMessage, seperti Body, Subject, dan attachment, untuk menyesuaikan email sesuai dengan kebutuhan Anda.
 
 ### Apakah ada versi uji coba gratis Aspose.Email untuk .NET yang tersedia?
 
-Ya, Anda dapat mengunduh Aspose.Email untuk .NET versi uji coba gratis untuk menjelajahi fitur-fiturnya sebelum melakukan pembelian.
+Ya, Anda dapat mengunduh versi uji coba gratis Aspose.Email untuk .NET untuk menjelajahi fitur-fiturnya sebelum melakukan pembelian.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

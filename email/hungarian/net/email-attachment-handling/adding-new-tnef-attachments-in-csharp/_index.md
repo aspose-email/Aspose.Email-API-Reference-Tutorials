@@ -1,63 +1,65 @@
 ---
-title: Új TNEF-mellékletek hozzáadása a C#-ban
-linktitle: Új TNEF-mellékletek hozzáadása a C#-ban
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg, hogyan adhat hozzá új TNEF-mellékleteket C# nyelven az Aspose.Email for .NET használatával. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes integráció érdekében.
-weight: 12
-url: /hu/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
+"description": "Tanuld meg, hogyan adhatsz hozzá új TNEF mellékleteket C#-ban az Aspose.Email for .NET használatával. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes integrációhoz."
+"linktitle": "Új TNEF mellékletek hozzáadása C#-ban"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Új TNEF mellékletek hozzáadása C#-ban"
+"url": "/hu/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Új TNEF-mellékletek hozzáadása a C#-ban
+# Új TNEF mellékletek hozzáadása C#-ban
 
 
-## A TNEF Attachments és Aspose.Email bemutatása .NET-hez
+## Bevezetés a TNEF mellékletekbe és az Aspose.Email .NET-hez használatába
 
-A TNEF (Transport Neutral Encapsulation Format) mellékletek egy szabadalmaztatott formátum, amelyet a Microsoft Outlook használ formázott szövegek és mellékletek e-mailekbe való csomagolására. Az Aspose.Email for .NET egy hatékony könyvtár, amely lehetővé teszi a különböző formátumú e-mailek kezelését, beleértve a TNEF-mellékleteket is, C# használatával.
+A TNEF (Transport Neutral Encapsulation Format) mellékletek a Microsoft Outlook által használt, gazdag szövegek és mellékletek e-mailekben való csomagolására szolgáló saját formátumok. Az Aspose.Email for .NET egy hatékony függvénytár, amely lehetővé teszi a különféle formátumú e-mailek, többek között a TNEF mellékletek C# használatával történő kezelését.
 
-## Fejlesztői környezet beállítása
+## A fejlesztői környezet beállítása
 
-Mielőtt belemerülnénk a kódolásba, győződjön meg arról, hogy be van állítva egy fejlesztői környezet. Telepítse a Visual Studio-t, és hozzon létre egy új C#-projektet.
+Mielőtt belevágnánk a kódolásba, győződjünk meg arról, hogy van beállítva egy fejlesztői környezet. Telepítsük a Visual Studio-t, és hozzunk létre egy új C# projektet.
 
 ## Új projekt létrehozása
 
-Kezdje egy új C#-projekt létrehozásával a Visual Studióban. Válasszon egy megfelelő projektnevet és helyszínt.
+Kezdésként hozz létre egy új C# projektet a Visual Studio-ban. Válassz egy megfelelő projektnevet és helyet.
 
-## Az Aspose.Email hozzáadása a .NET-könyvtárhoz
+## Az Aspose.Email for .NET könyvtár hozzáadása
 
-Az e-mailek és a TNEF mellékletek kezeléséhez hozzá kell adnunk az Aspose.Email for .NET könyvtárat a projektünkhöz. Ezt a Visual Studio NuGet Package Manager használatával teheti meg. Keresse meg az "Aspose.Email" kifejezést, és telepítse a megfelelő csomagot.
+Az e-mailek és a TNEF mellékletek kezeléséhez hozzá kell adnunk az Aspose.Email for .NET könyvtárat a projektünkhöz. Ezt a Visual Studio NuGet csomagkezelőjével teheted meg. Keresd meg az „Aspose.Email” kifejezést, és telepítsd a megfelelő csomagot.
 
 ## Meglévő e-mail betöltése TNEF melléklettel
 
-Kezdésként töltsünk be egy meglévő e-mailt, amely TNEF-mellékletet tartalmaz. Meg kell adnia az e-mail fájl elérési útját.
+Kezdésként töltsünk be egy meglévő e-mailt, amely TNEF mellékletet tartalmaz. Meg kell adnia az e-mail fájl elérési útját.
 
 ```csharp
 
 
-// Töltse be az e-mailt TNEF melléklettel
+// E-mail betöltése TNEF melléklettel
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## TNEF mellékletek kibontása és módosítása
+## TNEF-mellékletek kibontása és módosítása
 
-Az e-mail betöltése után kibonthatja a TNEF mellékletet, és szükség szerint módosíthatja.
+Miután betöltötte az e-mailt, kibonthatja a TNEF mellékletet, és szükség szerint módosíthatja.
 
 ```csharp
-// Iterálás a mellékleteken keresztül
+// Mellékleteken keresztüli iteráció
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Bontsa ki a TNEF mellékletet
+        // TNEF melléklet kibontása
         var tnefAttachment = attachment;
 
-        //Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosíthatja
-        // tnefAttachment.Properties...
+        // Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosítások
+        // tnefCsatolás.Tulajdonságok...
     }
 }
 ```
@@ -75,28 +77,30 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk, hogyan dolgozhatunk TNEF-mellékletekkel C# nyelven az Aspose.Email for .NET használatával. Megtanulta, hogyan tölthet be egy e-mailt TNEF-mellékletekkel, hogyan bonthatja ki és módosíthatja a mellékleteket, és hogyan mentheti el a módosított e-mailt.
+Ebben a cikkben azt vizsgáltuk meg, hogyan lehet TNEF mellékletekkel dolgozni C#-ban az Aspose.Email for .NET használatával. Megtanultad, hogyan tölthetsz be egy TNEF mellékleteket tartalmazó e-mailt, hogyan kinyerheted és módosíthatod ezeket a mellékleteket, és hogyan mentheted el a módosított e-mailt.
 
 ## GYIK
 
-### Hogyan telepíthetem az Aspose.Email-t .NET-hez?
+### Hogyan telepíthetem az Aspose.Emailt .NET-hez?
 
-Az Aspose.Email for .NET a NuGet Package Manager segítségével telepíthető. Egyszerűen keresse meg az "Aspose.Email" kifejezést, és telepítse a megfelelő csomagot.
+Az Aspose.Email for .NET csomagot a NuGet csomagkezelővel telepítheted. Egyszerűen keresd meg az „Aspose.Email” kifejezést, és telepítsd a megfelelő csomagot.
 
-### Működhetek más e-mail formátumokkal az Aspose.Email for .NET használatával?
+### Dolgozhatok más e-mail formátumokkal az Aspose.Email for .NET használatával?
 
-Igen, az Aspose.Email for .NET különféle e-mail-formátumokat támogat, beleértve az EML-t, az MSG-t, a PST-t és egyebeket.
+Igen, az Aspose.Email for .NET számos e-mail formátumot támogat, beleértve az EML-t, MSG-t, PST-t és egyebeket.
 
-### Használhatom az Aspose.Email-t kereskedelmi projektekhez?
+### Használhatom az Aspose.Emailt kereskedelmi projektekhez?
 
-Igen, az Aspose.Email for .NET használható személyes és kereskedelmi projektekben is, feltéve, hogy rendelkezik a megfelelő licenccel.
+Igen, az Aspose.Email for .NET használható mind személyes, mind kereskedelmi projektekben, feltéve, hogy rendelkezik a megfelelő licenccel.
 
 ### Hol találok további dokumentációt és példákat?
 
- Részletesebb dokumentációért és kódpéldákért keresse fel a[Aspose.Email a .NET dokumentációhoz](https://reference.aspose.com/email/net/).
+Részletesebb dokumentációért és kódpéldákért látogassa meg a következőt: [Aspose.Email .NET dokumentációhoz](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,54 +1,56 @@
 ---
-title: Beágyazott objektumok kibontása e-mailből C# segítségével
-linktitle: Beágyazott objektumok kibontása e-mailből C# segítségével
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg, hogyan bonthat ki beágyazott objektumokat az e-mailekből a C# és az Aspose.Email for .NET használatával. Útmutató lépésről lépésre kódpéldákkal.
-weight: 16
-url: /hu/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Tanuld meg, hogyan lehet beágyazott objektumokat kinyerni e-mailekből C# és Aspose.Email for .NET használatával. Lépésről lépésre útmutató kódpéldákkal."
+"linktitle": "Beágyazott objektumok kinyerése e-mailből C#-val"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Beágyazott objektumok kinyerése e-mailből C#-val"
+"url": "/hu/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beágyazott objektumok kibontása e-mailből C# segítségével
+# Beágyazott objektumok kinyerése e-mailből C#-val
 
 
-## Bevezetés az e-mailek beágyazott objektumaiba
+## Bevezetés az e-mailekbe ágyazott objektumokba
 
-Az e-mailekben lévő beágyazott objektumok olyan fájlokra vonatkoznak, amelyeket közvetlenül az e-mail tartalmába illesztenek be, nem pedig külön csatolva. Ezek az objektumok gazdagítják az e-mail élményt azáltal, hogy lehetővé teszik a feladó számára, hogy képeket, animációkat vagy interaktív tartalmat helyezzen el az üzenet törzsében.
+Az e-mailekben található beágyazott objektumok olyan fájlok, amelyeket közvetlenül az e-mail tartalmába illesztenek be, ahelyett, hogy külön csatolnák őket. Ezek az objektumok gazdagítják az e-mail élményt azáltal, hogy lehetővé teszik a feladó számára, hogy képeket, animációkat vagy interaktív tartalmat helyezzen el az üzenet törzsében.
 
-## Az Aspose.Email használatának megkezdése .NET-hez
+## Első lépések az Aspose.Email .NET-hez való használatához
 
- Az Aspose.Email for .NET egy hatékony könyvtár, amely különféle funkciókat biztosít az e-mailek kezeléséhez, beleértve az e-mail üzenetek elemzését, létrehozását és kezelését. A kezdéshez telepítenie kell az Aspose.Email for .NET könyvtárat a projektben. Letöltheti az Aspose.Releases oldalról:[Aspose.Releases](https://releases.aspose.com/email/net/) vagy használjon csomagkezelőt, például a NuGetet.
+Az Aspose.Email for .NET egy hatékony függvénytár, amely különféle funkciókat biztosít az e-mailek kezeléséhez, beleértve az e-mail üzenetek elemzését, létrehozását és kezelését. A kezdéshez telepíteni kell az Aspose.Email for .NET függvénytárat a projektedben. Letöltheted az Aspose.Releases oldalról: [Aspose.Releases](https://releases.aspose.com/email/net/) vagy használj egy csomagkezelőt, például a NuGet-et.
 
 ## E-mail betöltése és elemzése
 
-Ha beágyazott objektumokat szeretne kivonni egy e-mailből, először be kell töltenie és elemeznie kell az e-mail üzenetet. A következőképpen teheti meg:
+Beágyazott objektumok kinyeréséhez egy e-mailből először be kell töltenie és elemeznie kell az e-mailt. Így teheti meg:
 
 ```csharp
 // Importálja a szükséges névtereket
 using Aspose.Email;
 
 
-// Töltse be az e-mail üzenetet
+// Töltsd be az e-mail üzenetet
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Beágyazott objektumok azonosítása és kibontása
+## Beágyazott objektumok azonosítása és kinyerése
 
-Az e-mail üzenet betöltése után ismételheti az AlternateView-t a beágyazott objektumok azonosításához és kibontásához. Az AlternateView az e-mail különböző formátumait képviseli, beleértve a HTML-t és az egyszerű szöveget. A beágyazott objektumok gyakran megtalálhatók a HTML nézetben.
+Miután az e-mail betöltődött, végiglépkedhet az AlternateView nézetein a beágyazott objektumok azonosításához és kinyeréséhez. Az AlternateView nézetei az e-mail különböző formátumait képviselik, beleértve a HTML-t és a sima szöveget. A beágyazott objektumok gyakran a HTML nézetben találhatók.
 
 ```csharp
-// Ismételje meg az alternatív nézeteket
+// Alternatív nézetek ismétlése
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // A beágyazott objektumok kibontása HTML-tartalomból
+        // Beágyazott objektumok kinyerése HTML tartalomból
         foreach (var linkedResource in view.LinkedResources)
         {
-            // A csatolt erőforrás kibontása és mentése (beágyazott objektum)
+            // A csatolt erőforrás (beágyazott objektum) kinyerése és mentése
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -57,11 +59,11 @@ foreach (var view in message.AlternateViews)
 
 ## Kivont objektumok mentése
 
-Miután azonosította és kicsomagolta a beágyazott objektumokat, elmentheti őket a kívánt helyre. A hivatkozott erőforrás ContentId-jét gyakran használják fájlnévként.
+Miután azonosította és kibontotta a beágyazott objektumokat, mentheti azokat a kívánt helyre. A hivatkozott erőforrás ContentId azonosítóját gyakran használják fájlnévként.
 
 ## Teljes forráskód
 
-Íme a teljes forráskód a beágyazott objektumok e-mailekből való kinyeréséhez az Aspose.Email for .NET használatával:
+Íme a beágyazott objektumok kinyerésének teljes forráskódja egy e-mailből az Aspose.Email for .NET használatával:
 
 ```csharp
 using Aspose.Email;
@@ -73,18 +75,18 @@ namespace EmbeddedObjectExtractor
     {
         static void Main(string[] args)
         {
-            // Töltse be az e-mail üzenetet
+            // Töltsd be az e-mail üzenetet
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            // Ismételje meg az alternatív nézeteket
+            // Alternatív nézetek ismétlése
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // A beágyazott objektumok kibontása HTML-tartalomból
+                    // Beágyazott objektumok kinyerése HTML tartalomból
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        // A csatolt erőforrás kibontása és mentése (beágyazott objektum)
+                        // A csatolt erőforrás (beágyazott objektum) kinyerése és mentése
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,32 +98,34 @@ namespace EmbeddedObjectExtractor
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk, hogyan lehet beágyazott objektumokat kivonni az e-mailekből a C# és az Aspose.Email for .NET könyvtár használatával. A teljes folyamatot lefedtük, az e-mailek betöltésétől és elemzésétől a beágyazott objektumok azonosításáig és mentéséig. Az útmutató követésével javíthatja e-mail-feldolgozási képességeit és gazdagíthatja alkalmazásai tartalmát.
+Ebben a cikkben azt vizsgáltuk meg, hogyan lehet beágyazott objektumokat kinyerni e-mailekből C# és az Aspose.Email for .NET könyvtár használatával. Áttekintettük a teljes folyamatot, az e-mail betöltésétől és elemzésétől kezdve a beágyazott objektumok azonosításáig és mentéséig. Az útmutató követésével javíthatja e-mail-feldolgozási képességeit és gazdagíthatja alkalmazásai tartalmát.
 
 ## GYIK
 
-### Hogyan telepíthetem az Aspose.Email-t .NET-hez?
+### Hogyan telepíthetem az Aspose.Emailt .NET-hez?
 
- Az Aspose.Email for .NET telepítéséhez töltse le az Aspose.Releases webhelyről:[Aspose.Releases](https://releases.aspose.com/email/net/) vagy csomagkezelő, például a NuGet használatával. 
+Az Aspose.Email for .NET programot az Aspose.Releases oldalról töltheti le: [Aspose.Releases](https://releases.aspose.com/email/net/) vagy egy csomagkezelő, például a NuGet használatával. 
 
-### Kivonhatok beágyazott objektumokat a HTML-től eltérő mellékletekből?
+### Ki tudok kinyerni beágyazott objektumokat HTML-en kívüli mellékletekből?
 
-Igen, az Aspose.Email for .NET módszereket biztosít a beágyazott objektumok kinyerésére különböző típusú mellékletekből, beleértve a HTML-t, az egyszerű szöveget és még a multimédiás formátumokat is.
+Igen, az Aspose.Email for .NET metódusokat kínál beágyazott objektumok kinyerésére különféle melléklettípusokból, beleértve a HTML-t, az egyszerű szöveget és akár a multimédiás formátumokat is.
 
 ### Ingyenesen használható az Aspose.Email for .NET?
 
- Az Aspose.Email for .NET egy kereskedelmi könyvtár, és előfordulhat, hogy licencet kell szereznie a projektekben való használatához. Utal[árképzési oldal](https://purchase.aspose.com/pricing/email/net) további információért.
+Az Aspose.Email for .NET egy kereskedelmi forgalomban kapható könyvtár, ezért előfordulhat, hogy licencet kell beszereznie a projektjeiben való használatához. Lásd a [árképzési oldal](https://purchase.aspose.com/pricing/email/net) további információkért.
 
 ### Módosíthatom a kibontott beágyazott objektumokat mentés előtt?
 
-Igen, a kicsomagolt beágyazott objektumokat a mentés előtt manipulálhatja. Az Aspose.Email könyvtár különféle módszereket kínál az e-mailek tartalmának és erőforrásainak módosítására.
+Igen, a kibontott beágyazott objektumokat a mentés előtt módosíthatja. Az Aspose.Email könyvtár különféle módszereket kínál az e-mailek tartalmának és erőforrásainak módosítására.
 
-### Hol találhatok további példákat az Aspose.Email használatára .NET-hez?
+### Hol találok további példákat az Aspose.Email .NET-hez való használatára?
 
- További kódpéldákat és oktatóanyagokat találhat a[API-referencia](https://reference.aspose.com/email/net/). 
+További kódpéldákat és oktatóanyagokat találhatsz a [API-referencia](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

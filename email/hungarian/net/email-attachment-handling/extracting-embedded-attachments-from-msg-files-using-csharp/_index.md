@@ -1,46 +1,48 @@
 ---
-title: Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
-linktitle: Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg, hogyan bonthat ki beágyazott mellékleteket MSG-fájlokból C# és Aspose.Email for .NET használatával. Átfogó útmutató forráskód-példákkal.
-weight: 10
-url: /hu/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+"description": "Tanuld meg, hogyan lehet beágyazott mellékleteket kinyerni MSG fájlokból C# és Aspose.Email for .NET használatával. Átfogó útmutató forráskód példákkal."
+"linktitle": "Beágyazott mellékletek kinyerése MSG fájlokból C# használatával"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Beágyazott mellékletek kinyerése MSG fájlokból C# használatával"
+"url": "/hu/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beágyazott mellékletek kibontása MSG-fájlokból C# használatával
+# Beágyazott mellékletek kinyerése MSG fájlokból C# használatával
 
 
-## A beágyazott mellékletek bemutatása
+## Bevezetés a beágyazott mellékletekbe
 
-A beágyazott mellékletek olyan fájlok, amelyek egy e-mail üzenetbe vannak beágyazva, lehetővé téve a címzett számára, hogy külső hivatkozások nélkül hozzáférjen a fájlokhoz. Ezek a mellékletek különösen hasznosak lehetnek dokumentumok megosztása során, miközben megőrzik az e-mailes beszélgetés kontextusát.
+beágyazott mellékletek olyan fájlok, amelyek egy e-mail üzenetbe vannak beágyazva, lehetővé téve a címzett számára, hogy külső hivatkozások nélkül is hozzáférjen a fájlokhoz. Ezek a mellékletek különösen hasznosak lehetnek dokumentumok megosztásakor, miközben megőrzik az e-mail beszélgetés kontextusát.
 
-## Az Aspose.Email használatának megkezdése .NET-hez
+## Első lépések az Aspose.Email .NET-hez való használatához
 
-Az Aspose.Email for .NET egy hatékony könyvtár, amely leegyszerűsíti az e-mail-feldolgozási feladatokat a .NET-alkalmazásokban. Átfogó támogatást nyújt a különféle e-mail formátumokkal, beleértve az MSG fájlokat is. A kezdéshez kövesse az alábbi lépéseket:
+Az Aspose.Email for .NET egy hatékony függvénytár, amely leegyszerűsíti az e-mail-feldolgozási feladatokat a .NET alkalmazásokban. Átfogó támogatást nyújt a különféle e-mail-formátumok, köztük az MSG-fájlok kezeléséhez. A kezdéshez kövesse az alábbi lépéseket:
 
-1. Töltse le és telepítse az Aspose.Email-t .NET-hez
+1. Aspose.Email letöltése és telepítése .NET-hez
 
-    A könyvtár letölthető a[Aspose.Email a .NET webhelyhez](https://releases.aspose.com/email/net) vagy használja a NuGet csomagkezelőt:
+   A könyvtárat letöltheted innen: [Aspose.Email .NET weboldalhoz](https://releases.aspose.com/email/net) vagy használd a NuGet csomagkezelőt:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2. Hozzon létre egy új C# projektet
+2. Új C# projekt létrehozása
 
-   Kezdje egy új C# projekt létrehozásával a kívánt fejlesztői környezetben.
+   Kezd azzal, hogy létrehozol egy új C# projektet a kívánt fejlesztői környezetben.
 
-3. Hivatkozás hozzáadása az Aspose.Email címhez
+3. Hivatkozás hozzáadása az Aspose.Emailhez
 
-   Adjon hozzá hivatkozást az Aspose.Email DLL-re a projektben.
+   Adj hozzá egy hivatkozást az Aspose.Email DLL-hez a projektedben.
 
 ## MSG fájlok betöltése és elemzése
 
-A beágyazott mellékletek kibontása előtt be kell töltenünk és elemezni kell az MSG fájlt az Aspose.Email segítségével. A következőképpen teheti meg:
+beágyazott mellékletek kibontása előtt be kell töltenünk és elemeznünk kell az MSG fájlt az Aspose.Email használatával. Íme, hogyan teheti meg:
 
 ```csharp
 using Aspose.Email;
@@ -49,7 +51,7 @@ using Aspose.Email.Storage.Pst;
 // MSG fájl betöltése
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // Az üzenet tulajdonságainak elérése
+    // Hozzáférés üzenettulajdonságaihoz
     string subject = message.Subject;
     string sender = message.From.Address;
     // ...
@@ -61,7 +63,7 @@ using (var message = MailMessage.Load("sample.msg"))
 Most, hogy betöltöttük az MSG fájlt, bontsuk ki a beágyazott mellékleteket:
 
 ```csharp
-// A beágyazott mellékletek kibontása
+// Beágyazott mellékletek kinyerése
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
@@ -72,12 +74,12 @@ foreach (var attachment in message.Attachments)
 }
 ```
 
-## A kibontott mellékletek mentése
+## Kibontott mellékletek mentése
 
-Miután feldolgoztuk a beágyazott mellékleteket, elmenthetjük őket a kívánt helyre:
+Miután feldolgoztuk a beágyazott mellékleteket, elmenthetjük azokat a kívánt helyre:
 
 ```csharp
-// Mentse a beágyazott mellékleteket
+// Beágyazott mellékletek mentése
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
@@ -86,32 +88,34 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk, hogyan lehet beágyazott mellékleteket kibontani MSG-fájlokból a C# és az Aspose.Email for .NET könyvtár használatával. Az itt vázolt lépések követésével zökkenőmentesen integrálhatja a melléklet-kibontási képességeket .NET-alkalmazásaiba, javítva ezzel az e-mailek tartalomkezelését.
+Ebben az oktatóanyagban azt vizsgáltuk meg, hogyan lehet beágyazott mellékleteket kinyerni MSG fájlokból C# és az Aspose.Email for .NET könyvtár használatával. Az itt vázolt lépéseket követve zökkenőmentesen integrálhatja a mellékletek kinyerésének képességeit .NET alkalmazásaiba, javítva ezzel az e-mail tartalmak kezelésének módját.
 
 ## GYIK
 
-### Hogyan tölthetem le az Aspose.Email-t .NET-hez?
+### Hogyan tudom letölteni az Aspose.Emailt .NET-hez?
 
- Az Aspose.Email for .NET letölthető a[Aspose.Email weboldal](https://releases.aspose.com/email/net).
+Az Aspose.Email .NET-hez verzióját letöltheti innen: [Aspose.Email weboldal](https://releases.aspose.com/email/net).
 
 ### Az Aspose.Email kompatibilis a különböző e-mail formátumokkal?
 
-Igen, az Aspose.Email széleskörű támogatást nyújt a különféle e-mail-formátumokhoz, beleértve az MSG-t, az EML-t, a PST-t és egyebeket.
+Igen, az Aspose.Email széleskörű támogatást nyújt különféle e-mail formátumokhoz, beleértve az MSG-t, EML-t, PST-t és egyebeket.
 
 ### Használhatom az Aspose.Emailt asztali és webes alkalmazásokban is?
 
-Teljesen! Az Aspose.Email for .NET asztali és webes alkalmazásokban is használható, így sokoldalú választás az e-mail-feldolgozási igényekhez.
+Abszolút! Az Aspose.Email for .NET asztali és webes alkalmazásokban is használható, így sokoldalú választás az e-mail-feldolgozási igényekhez.
 
 ### Vannak-e engedélyezési szempontok?
 
- Igen, az Aspose.Email egy kereskedelmi könyvtár. Részletes licencinformációkat találhat a[Aspose honlapja](https://purchase.aspose.com).
+Igen, az Aspose.Email egy kereskedelmi célú könyvtár. Részletes licencelési információkat a következő címen talál: [Aspose weboldal](https://purchase.aspose.com).
 
 ### Hol találok további példákat és dokumentációt?
 
- Részletes példákat és dokumentációt találhat az Aspose.Email for .NET használatára vonatkozóan a következő helyen:[dokumentáció](https://reference.aspose.com/email/net).
+Részletes példákat és dokumentációt talál az Aspose.Email .NET-hez való használatáról a következő helyen: [dokumentáció](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

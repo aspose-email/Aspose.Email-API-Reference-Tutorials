@@ -1,45 +1,47 @@
 ---
-title: Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
-linktitle: Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg, hogyan valósíthatja meg a piszkozatos e-mailek kezelését C# nyelven az Aspose.Email for .NET használatával. A piszkozatok zökkenőmentes létrehozása, szerkesztése és mentése.
-weight: 17
-url: /hu/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
+"description": "Tanuld meg, hogyan valósíthatsz meg vázlatok e-mail kezelését C#-ban az Aspose.Email for .NET használatával. Zökkenőmentesen hozhatsz létre, szerkeszthetsz és menthetsz vázlatokat."
+"linktitle": "Vázlatkezelés C#-ban - E-mail mentése vázlatként"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Vázlatkezelés C#-ban - E-mail mentése vázlatként"
+"url": "/hu/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Üzenetvázlatok kezelése C#-ban – E-mail mentése piszkozatként
+# Vázlatkezelés C#-ban - E-mail mentése vázlatként
 
 
 ## Bevezetés
 
-piszkozatok kezelése kulcsfontosságú funkció az e-mail kliensek számára. A felhasználóknak gyakran el kell kezdeniük az e-mail írását, elmenthetik piszkozatként, majd később visszatérhetnek hozzá további szerkesztés vagy esetleges elküldés céljából. Ez a cikk bemutatja, hogyan valósítható meg ez a funkció az Aspose.Email for .NET könyvtár használatával.
+vázlatok kezelése kulcsfontosságú funkció az e-mail kliensek számára. A felhasználóknak gyakran szükségük van arra, hogy elkezdjenek e-maileket írni, vázlatként mentsék azokat, majd később visszatérhessenek hozzá további szerkesztés vagy esetleges elküldés céljából. Ez a cikk bemutatja, hogyan valósítható meg ez a funkció az Aspose.Email for .NET könyvtár használatával.
 
 ## Előfeltételek
 
-Mielőtt belevágnánk a megvalósításba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+Mielőtt belevágnánk a megvalósításba, győződjünk meg arról, hogy a következő előfeltételek teljesülnek:
 
 - Visual Studio (vagy bármilyen C# fejlesztői környezet)
-- Aspose.Email a .NET könyvtárhoz
+- Aspose.Email .NET könyvtárhoz
 
- Letöltheti az Aspose.Email könyvtárat innen[itt](https://releases.aspose.com/email/net).
+Az Aspose.Email könyvtárat letöltheted innen: [itt](https://releases.aspose.com/email/net).
 
 ## A projekt beállítása
 
-1. Hozzon létre egy új C# projektet a fejlesztői környezetben.
-2. Adjon hozzá hivatkozásokat az Aspose.Email DLL-ekhez a projektben.
+1. Hozz létre egy új C# projektet a fejlesztői környezetedben.
+2. Adj hozzá hivatkozásokat az Aspose.Email DLL-ekre a projektedben.
 
-## E-mail vázlat létrehozása
+## E-mail tervezet létrehozása
 
-Üzenetpiszkozat létrehozásához kövesse az alábbi lépéseket:
+Vázlatüzenet létrehozásához kövesse az alábbi lépéseket:
 
 ## Címzettek és tárgy hozzáadása
 
 ```csharp
-// Hozzon létre egy új MailMessage példányt
+// Új MailMessage-példány létrehozása
 MailMessage draft = new MailMessage();
 
 // Címzettek hozzáadása
@@ -47,11 +49,11 @@ draft.To.Add("recipient@example.com");
 draft.Cc.Add("cc@example.com");
 draft.Bcc.Add("bcc@example.com");
 
-// Állítsa be az e-mail tárgyát
+// E-mail tárgyának beállítása
 draft.Subject = "Draft Email Demo";
 ```
 
-## E-mail törzs összeállítása
+## E-mail törzsének írása
 
 ```csharp
 // E-mail törzsének beállítása
@@ -61,23 +63,23 @@ draft.Body = new TextBody("Hello, this is a draft email.");
 ## Mentés piszkozatként
 
 ```csharp
-// Mentse az e-mailt piszkozatként
+// Mentse el az e-mailt piszkozatként
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
-## Piszkozatok betöltése és szerkesztése
+## Vázlatok betöltése és szerkesztése
 
-Üzenetek piszkozatainak betöltéséhez és szerkesztéséhez kövesse az alábbi lépéseket:
+A vázlatüzenetek betöltéséhez és szerkesztéséhez kövesse az alábbi lépéseket:
 
 ```csharp
-// E-mail piszkozat betöltése
+// Piszkozat betöltése e-mailben
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
 // Címzettek szerkesztése
 loadedDraft.To.Clear();
 loadedDraft.To.Add("newrecipient@example.com");
 
-// Szerkessze az e-mail törzsét
+// E-mail törzsének szerkesztése
 loadedDraft.Body = new TextBody("Updated draft content.");
 
 // Változtatások mentése
@@ -86,32 +88,34 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk, hogyan kezelhetjük a piszkozatüzeneteket C# nyelven az Aspose.Email for .NET könyvtár használatával. Megtanultuk, hogyan hozhatunk létre, szerkeszthetünk és menthetünk piszkozatú e-maileket, így a felhasználók zökkenőmentesen írhatnak üzeneteket. Az ebben az útmutatóban ismertetett lépések követésével e-mail kliens alkalmazását vázlatos üzenet funkcióval bővítheti.
+Ebben a cikkben azt vizsgáltuk meg, hogyan kezelhetjük a vázlatüzeneteket C#-ban az Aspose.Email for .NET könyvtár használatával. Megtanultuk, hogyan hozhatunk létre, szerkeszthetünk és menthetünk vázlatüzeneteket, zökkenőmentes felhasználói élményt nyújtva a felhasználóknak az üzenetek írása során. Az útmutatóban ismertetett lépéseket követve bővíthetjük e-mail kliens alkalmazásunkat a vázlatüzenetek funkciójával.
 
 ## GYIK
 
 ### Hogyan tölthetem le az Aspose.Email for .NET könyvtárat?
 
- Letöltheti az Aspose.Email for .NET könyvtárat innen[itt](https://releases.aspose.com/email/net).
+Az Aspose.Email for .NET könyvtárat letöltheti innen: [itt](https://releases.aspose.com/email/net).
 
-### Szerkeszthetem a mentett piszkozat címzettjeit és tárgyát?
+### Szerkeszthetem egy mentett vázlat címzettjeit és tárgyát?
 
-Igen, betölthet egy mentett piszkozatot, szerkesztheti annak címzettjeit, tárgyát és tartalmát, majd mentheti a módosításokat frissített piszkozatként.
+Igen, betölthet egy mentett vázlatot, szerkesztheti a címzetteket, a tárgyat és a tartalmat, majd mentheti a módosításokat frissített vázlatként.
 
-### Az e-mail piszkozata meghatározott formátumban van mentve?
+### A vázlat e-mail egy adott formátumban van elmentve?
 
-Igen, a piszkozat e-mailt EML formátumban menti, amely egy széles körben használt formátum az e-mail üzenetekhez.
+Igen, az e-mail tervezetét EML formátumban menti a rendszer, amely egy széles körben használt formátum az e-mail üzenetekhez.
 
-### Integrálhatom a piszkozatok kezelését a meglévő e-mail alkalmazásomba?
+### Integrálhatom a vázlatüzenetek kezelését a meglévő e-mail alkalmazásomba?
 
-Az ebben az útmutatóban ismertetett lépések követésével zökkenőmentesen integrálhatja a piszkozatok kezelését meglévő e-mail kliens alkalmazásába.
+Természetesen, az útmutatóban leírt lépéseket követve zökkenőmentesen integrálhatja a vázlatüzenetek kezelését a meglévő e-mail kliens alkalmazásába.
 
-### Támogat az Aspose.Email könyvtár egyéb e-mailekkel kapcsolatos funkciókat?
+### Az Aspose.Email könyvtár támogat más, e-mailhez kapcsolódó funkciókat is?
 
- Igen, az Aspose.Email könyvtár funkciók széles skáláját kínálja az e-mail üzenetek kezeléséhez, beleértve az e-mailek és mellékletek küldését, fogadását és kezelését. További részletekért tekintse meg a dokumentációt:[itt](https://reference.aspose.com)
+Igen, az Aspose.Email könyvtár számos funkciót kínál az e-mail üzenetekkel való munkához, beleértve az e-mailek és mellékletek küldését, fogadását és kezelését. További részletekért tekintse meg a dokumentációt: [itt](https://reference.aspose.com)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
