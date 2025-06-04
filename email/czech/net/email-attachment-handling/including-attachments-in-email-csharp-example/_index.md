@@ -1,29 +1,31 @@
 ---
-title: Včetně příloh v e-mailu – příklad C#
-linktitle: Včetně příloh v e-mailu – příklad C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se vkládat přílohy do e-mailu pomocí Aspose.Email pro .NET. Podrobný průvodce s příkladem kódu C#.
-weight: 10
-url: /cs/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Naučte se, jak vkládat přílohy do e-mailů pomocí Aspose.Email pro .NET. Podrobný návod s příkladem kódu C#."
+"linktitle": "Vložení příloh do e-mailu - příklad v C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Vložení příloh do e-mailu - příklad v C#"
+"url": "/cs/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Včetně příloh v e-mailu – příklad C#
+# Vložení příloh do e-mailu - příklad v C#
 
 
-## Úvod do vkládání příloh do e-mailu
+## Úvod do vkládání příloh do e-mailů
 
-V dnešním uspěchaném digitálním světě zůstává e-mailová komunikace základním kamenem pro firmy i jednotlivce. Přidávání příloh k vašim e-mailům zvyšuje hodnotu vašich zpráv tím, že vám umožňuje bez námahy sdílet dokumenty, obrázky a soubory. Tento podrobný průvodce vás provede procesem vkládání příloh do vašeho e-mailu pomocí knihovny Aspose.Email pro .NET.
+dnešním rychle se měnícím digitálním světě zůstává e-mailová komunikace základním kamenem pro firmy i jednotlivce. Přidávání příloh k e-mailům zvyšuje hodnotu vašich zpráv tím, že vám umožňuje bez námahy sdílet dokumenty, obrázky a soubory. Tento podrobný návod vás provede procesem přidávání příloh do e-mailů pomocí knihovny Aspose.Email pro .NET.
 
 ## Nastavení vývojového prostředí
 
-Než se ponoříme do podrobností o kódování, ujistěte se, že máte vhodné vývojové prostředí. Budeš potřebovat:
+Než se ponoříme do detailů kódování, ujistěte se, že máte vhodné vývojové prostředí. Budete potřebovat:
 
-- Visual Studio (nebo libovolné C# IDE dle vašeho výběru)
-- Nainstalované rozhraní .NET Framework nebo .NET Core
+- Visual Studio (nebo jakékoli C# IDE dle vašeho výběru)
+- Nainstalovaný .NET Framework nebo .NET Core
 
 ## Přidání Aspose.Email do vašeho projektu
 
@@ -31,7 +33,7 @@ Aspose.Email je výkonná knihovna, která zjednodušuje práci s e-maily v růz
 
 1. Vytvoření nového projektu: Otevřete Visual Studio a vytvořte nový projekt C#.
 
-2. Instalace Aspose.Email: Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“, vyhledejte „Aspose.Email“ a nainstalujte balíček.
+2. Instalace Aspose.Email: V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt, vyberte možnost „Spravovat balíčky NuGet“, vyhledejte „Aspose.Email“ a balíček nainstalujte.
 
 ## Vytvoření e-mailové zprávy
 
@@ -44,25 +46,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Vytvořte novou e-mailovou zprávu
+        // Vytvořit novou e-mailovou zprávu
         MailMessage message = new MailMessage();
 
-        // Nastavte adresy odesílatele a příjemce
+        // Nastavení adres odesílatele a příjemce
         message.From = new MailAddress("sender@example.com");
         message.To.Add("recipient@example.com");
 
-        // Nastavte předmět a tělo e-mailu
+        // Nastavení předmětu a těla e-mailu
         message.Subject = "Check out this attachment!";
         message.Body = "Hello, I've attached an important document for you.";
 
-        // Zbytek kódu...
+        // Zbytek vašeho kódu...
     }
 }
 ```
 
-## Přidání příloh k e-mailu
+## Přidávání příloh k e-mailu
 
-Přílohy poskytují dodatečný kontext k vašim e-mailům. K e-mailu přidáme přílohu:
+Přílohy poskytují vašim e-mailům další kontext. Přidejme k e-mailu přílohu:
 
 ```csharp
 // Přidání přílohy k e-mailu
@@ -72,7 +74,7 @@ message.Attachments.Add(attachment);
 
 ## Odeslání e-mailu
 
-Jakmile bude váš e-mail připraven, je čas jej odeslat:
+Jakmile je váš e-mail připravený, je čas ho odeslat:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
@@ -81,9 +83,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Zbytek kódu...
+        // Zbytek vašeho kódu...
 
-        // Odeslání e-mailu pomocí klienta SMTP
+        // Odeslání e-mailu pomocí SMTP klienta
         SmtpClient client = new SmtpClient("smtp.example.com", 587);
         client.Username = "your_username";
         client.Password = "your_password";
@@ -94,32 +96,34 @@ class Program
 
 ## Závěr
 
-této příručce jsme prozkoumali, jak zahrnout přílohy do vašich e-mailů pomocí Aspose.Email pro .NET. Podle výše uvedených kroků můžete vylepšit svou e-mailovou komunikaci pomocí příloh s bohatým obsahem. Knihovna Aspose.Email tento proces zjednodušuje, takže vytváření a odesílání e-mailů s přílohami je snazší než kdy dříve.
+této příručce jsme prozkoumali, jak přidávat přílohy do e-mailů pomocí Aspose.Email pro .NET. Dodržením výše uvedených kroků můžete vylepšit svou e-mailovou komunikaci pomocí příloh s bohatým obsahem. Knihovna Aspose.Email tento proces zjednodušuje a usnadňuje programově vytvářet a odesílat e-maily s přílohami více než kdy dříve.
 
-## FAQ
+## Často kladené otázky
 
 ### Jak si mohu stáhnout knihovnu Aspose.Email?
 
- Knihovnu Aspose.Email si můžete stáhnout z Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) nebo pomocí NuGet Package Manager v sadě Visual Studio.
+Knihovnu Aspose.Email si můžete stáhnout z Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) nebo pomocí Správce balíčků NuGet ve Visual Studiu.
 
-### Mohu k jednomu e-mailu připojit více souborů?
+### Mohu k jednomu e-mailu přiložit více souborů?
 
- Absolutně! K jednomu e-mailu můžete přidat více příloh vytvořením a přidáním více příloh`Attachment` objekty k`Attachments` sbírka vašich`MailMessage`.
+Rozhodně! K jednomu e-mailu můžete přidat více příloh vytvořením a přidáním více `Attachment` namítá proti `Attachments` sbírka tvých `MailMessage`.
 
 ### Je Aspose.Email vhodný pro .NET Framework i .NET Core?
 
-Ano, Aspose.Email je kompatibilní s .NET Framework i .NET Core a nabízí flexibilitu při výběru platformy.
+Ano, Aspose.Email je kompatibilní s .NET Framework i .NET Core, což nabízí flexibilitu ve výběru platformy.
 
-### Podporuje Aspose.Email odesílání e-mailů přes zabezpečené připojení?
+### Podporuje Aspose.Email odesílání e-mailů přes zabezpečená připojení?
 
-Ano, můžete nakonfigurovat Aspose.Email pro odesílání e-mailů přes zabezpečené připojení pomocí protokolů jako SMTPS nebo STARTTLS. Ujistěte se, že poskytujete příslušná nastavení serveru.
+Ano, Aspose.Email můžete nakonfigurovat tak, aby odesílal e-maily přes zabezpečená připojení pomocí protokolů, jako je SMTPS nebo STARTTLS. Nezapomeňte zadat správná nastavení serveru.
 
-### Kde najdu další informace o možnostech Aspose.Email?
+### Kde najdu více informací o možnostech Aspose.Email?
 
- Podrobnější informace o funkcích, třídách a metodách Aspose.Email naleznete na[Aspose.Email API Reference](https://reference.aspose.com/email/net/).
+Podrobnější informace o funkcích, třídách a metodách Aspose.Email naleznete v [Referenční informace k API Aspose.Email](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

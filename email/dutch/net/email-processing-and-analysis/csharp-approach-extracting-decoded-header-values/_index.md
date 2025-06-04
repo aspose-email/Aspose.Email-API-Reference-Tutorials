@@ -1,41 +1,43 @@
 ---
-title: C#-aanpak gedecodeerde headerwaarden extraheren
-linktitle: C#-aanpak gedecodeerde headerwaarden extraheren
-second_title: Aspose.Email .NET E-mailverwerkings-API
-description: Leer gedecodeerde e-mailheaderwaarden extraheren in C# met Aspose.Email voor .NET. Uitgebreide handleiding met codevoorbeelden.
-weight: 17
-url: /nl/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/
+"description": "Leer hoe je gedecodeerde e-mailheaderwaarden in C# kunt extraheren met Aspose.Email voor .NET. Uitgebreide handleiding met codevoorbeelden."
+"linktitle": "C#-aanpak - Gedecodeerde headerwaarden extraheren"
+"second_title": "Aspose.Email .NET e-mailverwerkings-API"
+"title": "C#-aanpak - Gedecodeerde headerwaarden extraheren"
+"url": "/nl/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C#-aanpak gedecodeerde headerwaarden extraheren
+# C#-aanpak - Gedecodeerde headerwaarden extraheren
 
 
-In deze zelfstudie begeleiden we u bij het gebruik van Aspose.Email voor .NET om gedecodeerde headerwaarden uit e-mailberichten te extraheren. Aspose.Email voor .NET is een robuuste bibliotheek waarmee ontwikkelaars met verschillende aspecten van e-mailberichten kunnen werken, waaronder het lezen en manipuleren van e-mailheaders.
+In deze tutorial begeleiden we je door het proces van het gebruik van Aspose.Email voor .NET om gedecodeerde headerwaarden uit e-mailberichten te extraheren. Aspose.Email voor .NET is een robuuste bibliotheek waarmee ontwikkelaars met verschillende aspecten van e-mailberichten kunnen werken, waaronder het lezen en bewerken van e-mailheaders.
 
-## Stap 1: Download en installeer Aspose.Email voor .NET
+## Stap 1: Aspose.Email voor .NET downloaden en installeren
 
- Voordat we beginnen, zorg ervoor dat Aspose.Email voor .NET is geïnstalleerd. Als u dat nog niet heeft gedaan, kunt u de bibliotheek downloaden via de volgende link:[Download Aspose.E-mail voor .NET](https://releases.aspose.com/email/net).
+Voordat we beginnen, zorg ervoor dat je Aspose.Email voor .NET hebt geïnstalleerd. Als je dat nog niet hebt gedaan, kun je de bibliotheek downloaden via de volgende link: [Download Aspose.Email voor .NET](https://releases.aspose.com/email/net).
 
-## Stap 2: Maak een nieuw C#-project
+## Stap 2: Een nieuw C#-project maken
 
-Begin met het maken van een nieuw C#-project in de geïntegreerde ontwikkelomgeving (IDE) of teksteditor van uw voorkeur.
+Begin met het maken van een nieuw C#-project in uw favoriete Integrated Development Environment (IDE) of teksteditor.
 
 ## Stap 3: Voeg een verwijzing toe naar Aspose.Email
 
- Om Aspose.Email in uw project te gebruiken, moet u een verwijzing toevoegen naar het`Aspose.Email` montage. Hier is hoe:
+Om Aspose.Email in uw project te kunnen gebruiken, moet u een verwijzing naar de `Aspose.Email` Montage. Zo doe je dat:
 
-1. Klik met de rechtermuisknop op uw project in de Solution Explorer.
+1. Klik met de rechtermuisknop op uw project in Solution Explorer.
 2. Selecteer 'Toevoegen' > 'Referentie'.
-3. In het venster "Reference Manager" klikt u op "Browse" of "Browse..." en navigeert u naar de locatie waar u Aspose.Email hebt geïnstalleerd.
-4.  Kies de juiste montage voor uw project (bijvoorbeeld`Aspose.Email.dll`) en klik op 'Toevoegen'.
+3. Klik in het venster "Reference Manager" op "Bladeren" of "Bladeren..." en navigeer naar de locatie waar u Aspose.Email hebt geïnstalleerd.
+4. Kies de juiste assemblage voor uw project (bijvoorbeeld `Aspose.Email.dll`) en klik op 'Toevoegen'.
 
-## Stap 4: Extraheer gedecodeerde koptekstwaarden
+## Stap 4: Gedecodeerde headerwaarden extraheren
 
-Laten we nu eens in de code duiken om gedecodeerde headerwaarden uit een e-mailbericht te extraheren. In dit voorbeeld zullen we ons concentreren op het extraheren van de kop 'Onderwerp'.
+Laten we nu eens kijken naar de code om gedecodeerde headerwaarden uit een e-mailbericht te extraheren. In dit voorbeeld concentreren we ons op het extraheren van de header 'Onderwerp'.
 
 ```csharp
 using Aspose.Email;
@@ -56,36 +58,38 @@ class Program
 
 In het bovenstaande codefragment voeren we de volgende stappen uit:
 
-1. We importeren de benodigde naamruimten (`Aspose.Email` En`Aspose.Email.Mail`).
-2.  Wij creëren een`Main` methode als startpunt van onze applicatie.
-3.  Binnen de`Main`methode gebruiken wij de`MailMessage.Load` methode om een e-mailbericht uit een bestand te laden. Vervangen`"path/to/your/email.eml"` met het daadwerkelijke pad naar het e-mailbericht dat u wilt verwerken.
-4.  Wij gebruiken de`Headers.GetDecodedValue` methode om de onderwerpkop te decoderen.
-5. We printen de gedecodeerde onderwerpkop naar de console.
+1. We importeren de benodigde naamruimten (`Aspose.Email` En `Aspose.Email.Mail`).
+2. Wij creëren een `Main` methode als toegangspunt van onze applicatie.
+3. Binnen de `Main` methode, we gebruiken de `MailMessage.Load` Methode om een e-mailbericht uit een bestand te laden. Vervangen `"path/to/your/email.eml"` met het werkelijke pad naar het e-mailbericht dat u wilt verwerken.
+4. Wij gebruiken de `Headers.GetDecodedValue` Methode om de onderwerpheader te decoderen.
+5. We printen de gedecodeerde Subject-header naar de console.
 
-## Stap 5: Voer de applicatie uit
+## Stap 5: De applicatie uitvoeren
 
- Compileer en voer uw toepassing uit. Zorg ervoor dat u vervangt`"path/to/your/email.eml"` met het daadwerkelijke pad naar het e-mailbericht dat u wilt verwerken. De applicatie laadt de e-mail, extraheert de gedecodeerde onderwerpkop en geeft deze weer in de console.
+Compileer en voer uw applicatie uit. Zorg ervoor dat u `"path/to/your/email.eml"` met het daadwerkelijke pad naar het e-mailbericht dat u wilt verwerken. De applicatie laadt de e-mail, extraheert de gedecodeerde onderwerpregel en geeft deze weer in de console.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik andere e-mailheaders decoderen met Aspose.Email voor .NET?
 
- U kunt verschillende e-mailkoppen decoderen, zoals 'Van', 'Aan', 'Datum', enz., met behulp van de`Headers.GetDecodedValue` methode. Geef gewoon de headerwaarde op als parameter voor de methode.
+U kunt verschillende e-mailheaders decoderen, zoals 'Van', 'Aan', 'Datum', enz., met behulp van de `Headers.GetDecodedValue` methode. Geef gewoon de headerwaarde als parameter aan de methode.
 
 ### Waar kan ik meer informatie vinden over Aspose.Email voor .NET?
 
- Voor gedetailleerde documentatie en voorbeelden raadpleegt u de[Aspose.Email voor .NET API-referentie](https://reference.aspose.com/email/net).
+Voor gedetailleerde documentatie en voorbeelden, zie de [Aspose.Email voor .NET API-referentie](https://reference.aspose.com/email/net).
 
 ### Is Aspose.Email voor .NET gratis beschikbaar?
 
- Aspose.Email voor .NET is een commerciële bibliotheek. U kunt de functies ervan verkennen door[het downloaden van de gratis proefversie](https://releases.aspose.com/email/net).
+Aspose.Email voor .NET is een commerciële bibliotheek. U kunt de functies ervan verkennen door [de gratis proefversie downloaden](https://releases.aspose.com/email/net).
 
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u Aspose.Email voor .NET kunt gebruiken om gedecodeerde headerwaarden uit e-mailberichten te extraheren. Aspose.Email voor .NET biedt een uitgebreide set tools waarmee ontwikkelaars efficiënt met e-mailberichten kunnen werken, inclusief het verwerken van headers.
+In deze tutorial heb je geleerd hoe je Aspose.Email voor .NET kunt gebruiken om gedecodeerde headerwaarden uit e-mailberichten te halen. Aspose.Email voor .NET biedt een uitgebreide set tools waarmee ontwikkelaars efficiënt met e-mailberichten kunnen werken, inclusief het verwerken van headers.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

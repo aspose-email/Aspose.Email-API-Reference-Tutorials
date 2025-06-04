@@ -1,36 +1,38 @@
 ---
-title: Sledování průběhu převodu e-mailových dokumentů pomocí kódu C#
-linktitle: Sledování průběhu převodu e-mailových dokumentů pomocí kódu C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se implementovat e-mailové upozornění a sledování pomocí Aspose.Email pro .NET. Podrobný průvodce s příklady kódu. Vylepšete svou e-mailovou komunikaci ještě dnes!
-weight: 12
-url: /cs/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/
+"description": "Naučte se, jak implementovat e-mailová upozornění a sledování pomocí Aspose.Email pro .NET. Podrobný návod s příklady kódu. Vylepšete svou e-mailovou komunikaci ještě dnes!"
+"linktitle": "Sledování průběhu konverze e-mailových dokumentů pomocí kódu C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Sledování průběhu konverze e-mailových dokumentů pomocí kódu C#"
+"url": "/cs/net/email-notification-and-tracking/tracking-email-document-conversion-progress-with-csharp-code/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Sledování průběhu převodu e-mailových dokumentů pomocí kódu C#
+# Sledování průběhu konverze e-mailových dokumentů pomocí kódu C#
 
 
-dnešní digitální době hraje e-mailová komunikace zásadní roli v osobní i profesní sféře. Jako programátor jste se mohli setkat s potřebou programově zpracovávat a manipulovat s e-mailovými zprávami. Jedním z běžných úkolů je sledování průběhu převodu e-mailových dokumentů a v tomto článku vás provedeme procesem krok za krokem pomocí C# a Aspose.Email pro .NET.
+V dnešní digitální době hraje e-mailová komunikace klíčovou roli v osobní i profesní sféře. Jako programátor jste se možná setkali s potřebou programově zpracovávat a manipulovat s e-mailovými zprávami. Jedním z běžných úkolů je sledování průběhu konverze e-mailových dokumentů a v tomto článku vás tímto procesem krok za krokem provedeme pomocí C# a Aspose.Email pro .NET.
 
 ## Úvod do Aspose.Email pro .NET
 
-Než se ponoříme do kódu, pojďme si krátce představit Aspose.Email pro .NET. Tato výkonná knihovna poskytuje širokou škálu funkcí pro práci s e-mailovými zprávami, včetně čtení, psaní a převodu e-mailů v různých formátech. V našem případě se zaměříme na konverzi emailových dokumentů.
+Než se ponoříme do kódu, pojďme si krátce představit Aspose.Email pro .NET. Tato výkonná knihovna nabízí širokou škálu funkcí pro práci s e-mailovými zprávami, včetně čtení, psaní a konverze e-mailů v různých formátech. V našem případě se zaměříme na konverzi e-mailových dokumentů.
 
-## Nastavení vašeho prostředí
+## Nastavení prostředí
 
-Chcete-li začít, budete muset nastavit vývojové prostředí. Ujistěte se, že máte splněny následující předpoklady:
+Abyste mohli začít, budete muset nastavit vývojové prostředí. Ujistěte se, že máte splněny následující předpoklady:
 
--  Nainstalovaná knihovna Aspose.Email pro .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/email/net/).
+- Je nainstalována knihovna Aspose.Email pro .NET. Můžete si ji stáhnout z [zde](https://releases.aspose.com/email/net/).
 
-Nyní se pustíme do kódu. Vytvoříme podrobného průvodce sledováním průběhu konverze e-mailových dokumentů pomocí poskytnutého zdrojového kódu C#.
+Nyní se pojďme pustit do kódu. Vytvoříme podrobný návod, jak sledovat průběh konverze e-mailových dokumentů pomocí poskytnutého zdrojového kódu C#.
 
 ## Krok 1: Načtení e-mailové zprávy
 
- Začneme načtením e-mailové zprávy ze souboru. Nezapomeňte vyměnit`"Your Document Directory"` se skutečnou cestou k vašemu adresáři dokumentů.
+Začneme načtením e-mailové zprávy ze souboru. Nezapomeňte nahradit `"Your Document Directory"` se skutečnou cestou k adresáři dokumentů.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -38,9 +40,9 @@ var fileName = dataDir + "test.eml";
 MailMessage msg = MailMessage.Load(fileName);
 ```
 
-## Krok 2: Definování vlastního popisovače průběhu
+## Krok 2: Definování vlastního obslužného rutiny průběhu
 
- V tomto kroku nastavíme vlastní obslužný program pro sledování průběhu převodu. The`ShowEmlConversionProgress` Během procesu převodu bude volána metoda, která poskytne informace o průběhu.
+tomto kroku nastavíme vlastní obslužnou rutinu průběhu pro sledování průběhu konverze. `ShowEmlConversionProgress` Metoda bude volána během procesu převodu, aby poskytla informace o průběhu.
 
 ```csharp
 private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
@@ -73,7 +75,7 @@ private static void ShowEmlConversionProgress(ProgressEventHandlerInfo info)
 
 ## Krok 3: Uložení e-mailové zprávy se sledováním průběhu
 
- Nyní uložme e-mailovou zprávu při sledování průběhu. Používáme`EmlSaveOptions` třídy s vlastním obslužným programem průběhu.
+Nyní si uložme e-mailovou zprávu a zároveň sledujme její průběh. Použijeme `EmlSaveOptions` třída s vlastním obslužným rutinou průběhu.
 
 ```csharp
 MemoryStream ms = new MemoryStream();
@@ -84,32 +86,34 @@ msg.Save(ms, opt);
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste implementovali sledování průběhu konverze e-mailových dokumentů pomocí C# a Aspose.Email pro .NET. Tato schopnost může být cenná při zpracovávání velkých objemů e-mailů a převodů dokumentů ve vašich aplikacích.
+Gratulujeme! Úspěšně jste implementovali sledování průběhu konverze e-mailových dokumentů pomocí jazyka C# a Aspose.Email pro .NET. Tato funkce může být cenná při práci s velkým objemem e-mailů a konverzí dokumentů ve vašich aplikacích.
 
- Pro více informací a podrobnou dokumentaci navštivte[Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/).
+Pro více informací a podrobnou dokumentaci navštivte [Referenční příručka k Aspose.Email pro .NET API](https://reference.aspose.com/email/net/).
 
 
-## Nejčastější dotazy
+## Často kladené otázky
 
 ### Co je Aspose.Email pro .NET?
-Aspose.Email for .NET je výkonná knihovna pro práci s e-mailovými zprávami v aplikacích .NET. Poskytuje funkce pro čtení, psaní a konverzi e-mailů.
+Aspose.Email pro .NET je výkonná knihovna pro práci s e-mailovými zprávami v .NET aplikacích. Poskytuje funkce pro čtení, psaní a konverzi e-mailů.
 
-### Mohu sledovat průběh převodu e-mailových dokumentů pomocí Aspose.Email pro .NET?
-Ano, můžete sledovat průběh převodu e-mailových dokumentů pomocí vlastních obslužných rutin postupu, jak je ukázáno v tomto článku.
+### Mohu sledovat průběh konverze e-mailových dokumentů pomocí Aspose.Email pro .NET?
+Ano, průběh konverze e-mailových dokumentů můžete sledovat pomocí vlastních obslužných rutin průběhu, jak je ukázáno v tomto článku.
 
-### Lze Aspose.Email for .NET snadno integrovat do mého projektu v jazyce C#?
-Ano, Aspose.Email pro .NET lze snadno integrovat do projektů C#. Knihovnu si můžete stáhnout a nainstalovat z webu.
+### Je snadné integrovat Aspose.Email pro .NET do mého projektu v C#?
+Ano, Aspose.Email pro .NET se snadno integruje do C# projektů. Knihovnu si můžete stáhnout a nainstalovat z webových stránek.
 
-### Existují další knihovny pro práci s e-maily v C#?
-Ano, existují i jiné knihovny, ale Aspose.Email pro .NET je známý pro své komplexní funkce a snadné použití.
+### Existují i jiné knihovny pro práci s e-maily v C#?
+Ano, existují i jiné knihovny, ale Aspose.Email pro .NET je známá svými komplexními funkcemi a snadným použitím.
 
 ### Kde najdu další návody a příklady pro Aspose.Email pro .NET?
-Můžete prozkoumat[Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net/)pro výukové programy, příklady a podrobnou dokumentaci.
+Můžete prozkoumat [Referenční příručka k Aspose.Email pro .NET API](https://reference.aspose.com/email/net/) pro návody, příklady a podrobnou dokumentaci.
 
-Nyní jste dobře vybaveni, abyste s jistotou zvládli průběh převodu e-mailových dokumentů ve vašich aplikacích C#. Šťastné kódování!
+Nyní jste dobře vybaveni k tomu, abyste s jistotou zvládli průběh konverze e-mailových dokumentů ve svých aplikacích v C#. Přeji vám šťastné programování!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

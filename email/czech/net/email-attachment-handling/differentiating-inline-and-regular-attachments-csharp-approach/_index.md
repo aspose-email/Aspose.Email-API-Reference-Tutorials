@@ -1,71 +1,73 @@
 ---
-title: Rozlišení vkládaných a pravidelných příloh – přístup C#
-linktitle: Rozlišení vkládaných a pravidelných příloh – přístup C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se rozlišovat mezi vloženými a běžnými e-mailovými přílohami pomocí Aspose.Email pro .NET. Komplexní průvodce s příklady kódu.
-weight: 17
-url: /cs/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
+"description": "Naučte se, jak rozlišovat mezi vloženými a běžnými e-mailovými přílohami pomocí Aspose.Email pro .NET. Komplexní průvodce s příklady kódu."
+"linktitle": "Rozlišování vložených a regulárních příloh - přístup v C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Rozlišování vložených a regulárních příloh - přístup v C#"
+"url": "/cs/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Rozlišení vkládaných a pravidelných příloh – přístup C#
+# Rozlišování vložených a regulárních příloh - přístup v C#
 
 
-## Úvod do rozlišování vkládaných a pravidelných příloh - C# přístup
+## Úvod do rozlišování vložených a regulárních příloh - přístup v C#
 
-Ve světě zpracování e-mailů hrají přílohy klíčovou roli při předávání dalších informací spolu s obsahem e-mailu. Přílohy mohou mít různé formy, ale dva nejběžnější typy jsou vložené přílohy a běžné přílohy. V tomto článku se ponoříme do oblasti e-mailových příloh, konkrétně se zaměříme na to, jak pomocí knihovny Aspose.Email for .NET rozlišit mezi vloženými a běžnými přílohami. Tento podrobný průvodce vám poskytne potřebné informace a úryvky kódu, abyste mohli efektivně pracovat s oběma typy příloh.
+Ve světě zpracování e-mailů hrají přílohy klíčovou roli v předávání dalších informací spolu s obsahem e-mailu. Přílohy mohou mít různou formu, ale dva nejběžnější typy jsou vložené přílohy a běžné přílohy. V tomto článku se ponoříme do oblasti e-mailových příloh a zaměříme se konkrétně na to, jak rozlišovat mezi vloženými a běžnými přílohami pomocí knihovny Aspose.Email pro .NET. Tato podrobná příručka vám poskytne potřebné informace a úryvky kódu pro efektivní práci s oběma typy příloh.
 
-## Průvodce krok za krokem
+## Podrobný průvodce
 
 ## 1. Nastavení vývojového prostředí
 
-Než se ponoříme do kódu, je nezbytné mít vhodné vývojové prostředí. Ujistěte se, že máte v systému nainstalované Visual Studio.
+Než se pustíme do kódu, je nezbytné mít vhodné vývojové prostředí. Ujistěte se, že máte v systému nainstalované Visual Studio.
 
 ## 2. Vytvoření nového projektu ve Visual Studiu
 
-Otevřete Visual Studio a vytvořte nový projekt. Vyberte si vhodný typ projektu a šablonu na základě vašich požadavků.
+Otevřete Visual Studio a vytvořte nový projekt. Vyberte vhodný typ projektu a šablonu na základě vašich požadavků.
 
-## 3. Instalace knihovny Aspose.Email for .NET
+## 3. Instalace knihovny Aspose.Email pro .NET
 
-Pro práci s přílohami e-mailů použijeme knihovnu Aspose.Email for .NET. Můžete jej nainstalovat přes NuGet Package Manager spuštěním následujícího příkazu v konzole Package Manager:
+Pro práci s e-mailovými přílohami použijeme knihovnu Aspose.Email pro .NET. Můžete ji nainstalovat pomocí Správce balíčků NuGet spuštěním následujícího příkazu v konzoli Správce balíčků:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## 4. Načtení e-mailové zprávy
+## 4. Načítání e-mailové zprávy
 
 Nejprve potřebujete e-mailovou zprávu, se kterou budete pracovat. Načtěte e-mailovou zprávu pomocí tříd knihovny Aspose.Email.
 
-## 5. Načítání příloh z e-mailu
+## 5. Načtení příloh z e-mailu
 
-Pomocí níže uvedeného fragmentu kódu načtěte všechny přílohy z načtené e-mailové zprávy:
+Pomocí níže uvedeného úryvku kódu načtěte všechny přílohy z načtené e-mailové zprávy:
 
 ```csharp
 
 
-// Načtěte e-mailovou zprávu (předpokládá se: 'emailMessage')
+// Načíst e-mailovou zprávu (předpokládá se: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## 6. Rozlišení mezi inline a běžnými přílohami
+## 6. Rozlišování mezi inline a regulárními přílohami
 
-Chcete-li rozlišit mezi vloženými a běžnými přílohami, musíte zkontrolovat každou přílohu`ContentDisposition` vlastnictví. Pokud`ContentDisposition` je nastavena na "inline", příloha je vloženou přílohou.
+Abyste rozlišili mezi vloženými a běžnými přílohami, je třeba zkontrolovat každou přílohu `ContentDisposition` majetek. Pokud `ContentDisposition` je nastaveno na „inline“, příloha je inline přílohou.
 
-## 7. Práce s inline přílohami
+## 7. Práce s vloženými přílohami
 
-Při práci s vloženými přílohami máte přístup k jejich obsahu a souvisejícím informacím. Jako referenci použijte následující fragment kódu:
+Při práci s vloženými přílohami můžete přistupovat k jejich obsahu a souvisejícím informacím. Jako referenci použijte následující úryvek kódu:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Rukojeť inline nástavce
-        // Příklad: Zobrazit ID obsahu a typ obsahu
+        // Rukojeť inline nástavec
+        // Příklad: Zobrazení ID obsahu a typu obsahu
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
@@ -74,15 +76,15 @@ foreach (Attachment attachment in attachments)
 
 ## 8. Manipulace s běžnými přílohami
 
-Běžné přílohy nemají „inline“ typ uspořádání. Můžete je zpracovat pomocí následujícího fragmentu kódu:
+Běžné přílohy nemají typ dispozice „inline“. Můžete je zpracovat pomocí následujícího úryvku kódu:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Manipulujte s běžným upevněním
-        // Příklad: Uložte přílohu na disk
+        // Zvládněte běžné příslušenství
+        // Příklad: Uložení přílohy na disk
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
@@ -90,32 +92,34 @@ foreach (Attachment attachment in attachments)
 
 ## Závěr
 
-této příručce jsme prozkoumali svět e-mailových příloh a zaměřili jsme se na rozlišení mezi vloženými a běžnými přílohami pomocí knihovny Aspose.Email for .NET. Dodržováním pokynů krok za krokem a používáním poskytnutých úryvků kódu můžete efektivně identifikovat oba typy příloh a pracovat s nimi v úlohách zpracování e-mailů.
+V této příručce jsme prozkoumali svět e-mailových příloh se zaměřením na rozlišení mezi vloženými a běžnými přílohami pomocí knihovny Aspose.Email pro .NET. Dodržováním podrobných pokynů a využitím poskytnutých úryvků kódu můžete efektivně identifikovat a pracovat s oběma typy příloh při zpracování e-mailů.
 
-## FAQ
+## Často kladené otázky
 
-### Jak mohu nainstalovat knihovnu Aspose.Email for .NET?
+### Jak mohu nainstalovat knihovnu Aspose.Email pro .NET?
 
- Knihovnu Aspose.Email for .NET můžete nainstalovat pomocí NuGet Package Manager. Jednoduše spusťte následující příkaz v konzole Správce balíčků:`Install-Package Aspose.Email`.
+Knihovnu Aspose.Email pro .NET můžete nainstalovat pomocí Správce balíčků NuGet. Jednoduše spusťte následující příkaz v konzoli Správce balíčků: `Install-Package Aspose.Email`.
 
-### Mohu programově rozlišovat mezi vloženými a běžnými přílohami?
+### Mohu programově rozlišit mezi vloženými a běžnými přílohami?
 
- Ano, můžete rozlišit mezi vloženými a běžnými přílohami kontrolou`ContentDisposition` vlastnost každé přílohy. Přílohy s dispozičním typem "inline" jsou vložené přílohy.
+Ano, mezi vloženými a běžnými přílohami můžete rozlišit kontrolou `ContentDisposition` vlastnost každé přílohy. Přílohy s typem uspořádání „inline“ jsou inline přílohy.
 
-### Je Aspose.Email vhodný pro zpracování e-mailových příloh v jiných programovacích jazycích?
+### Je Aspose.Email vhodný pro práci s e-mailovými přílohami v jiných programovacích jazycích?
 
-Ano, Aspose.Email poskytuje knihovny pro různé programovací jazyky, takže je vhodný pro práci s e-mailovými přílohami v široké řadě vývojových prostředí.
+Ano, Aspose.Email poskytuje knihovny pro různé programovací jazyky, takže je vhodný pro práci s e-mailovými přílohami v široké škále vývojových prostředí.
 
-### Jak získám přístup k obsahu vložené přílohy?
+### Jak mohu přistupovat k obsahu vložené přílohy?
 
 K obsahu vložené přílohy můžete přistupovat pomocí příslušných vlastností poskytovaných knihovnou Aspose.Email. Můžete například načíst ID obsahu a typ obsahu vložené přílohy.
 
-### Mohu ukládat běžné přílohy na konkrétní místo na disku?
+### Mohu ukládat běžné přílohy na určité místo na disku?
 
- Absolutně! Běžné přílohy můžete uložit na určité místo na disku pomocí`Save` metodu objektu přílohy a poskytnutí požadované cesty k souboru.
+Rozhodně! Běžné přílohy můžete ukládat na určité místo na disku pomocí `Save` metodu objektu přílohy a poskytnutí požadované cesty k souboru.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

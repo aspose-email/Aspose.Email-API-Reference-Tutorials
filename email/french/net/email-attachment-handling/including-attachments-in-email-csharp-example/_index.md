@@ -1,39 +1,41 @@
 ---
-title: Inclure des pièces jointes dans un e-mail - Exemple C#
-linktitle: Inclure des pièces jointes dans un e-mail - Exemple C#
-second_title: API de traitement des e-mails Aspose.Email .NET
-description: Découvrez comment inclure des pièces jointes dans un courrier électronique à l'aide d'Aspose.Email pour .NET. Guide étape par étape avec exemple de code C#.
-weight: 10
-url: /fr/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Découvrez comment inclure des pièces jointes dans vos e-mails avec Aspose.Email pour .NET. Guide étape par étape avec un exemple de code C#."
+"linktitle": "Inclure des pièces jointes dans un e-mail – Exemple C#"
+"second_title": "API de traitement des e-mails Aspose.Email .NET"
+"title": "Inclure des pièces jointes dans un e-mail – Exemple C#"
+"url": "/fr/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Inclure des pièces jointes dans un e-mail - Exemple C#
+# Inclure des pièces jointes dans un e-mail – Exemple C#
 
 
-## Introduction à l'inclusion de pièces jointes dans un e-mail
+## Introduction à l'inclusion de pièces jointes dans les e-mails
 
-Dans le monde numérique en évolution rapide d’aujourd’hui, la communication par courrier électronique reste une pierre angulaire pour les entreprises et les particuliers. L'ajout de pièces jointes à vos e-mails améliore la valeur de vos messages en vous permettant de partager des documents, des images et des fichiers sans effort. Ce guide étape par étape vous guidera tout au long du processus d'inclusion de pièces jointes dans votre courrier électronique à l'aide de la bibliothèque Aspose.Email pour .NET.
+Dans le monde numérique actuel, en constante évolution, la communication par e-mail reste essentielle pour les entreprises comme pour les particuliers. L'ajout de pièces jointes à vos e-mails optimise la valeur de vos messages en vous permettant de partager facilement des documents, des images et des fichiers. Ce guide étape par étape vous guidera pas à pas dans l'intégration de pièces jointes à vos e-mails grâce à la bibliothèque Aspose.Email pour .NET.
 
 ## Configuration de votre environnement de développement
 
-Avant de plonger dans les détails du codage, assurez-vous de disposer d’un environnement de développement approprié. Tu auras besoin:
+Avant d'aborder les détails du codage, assurez-vous de disposer d'un environnement de développement adapté. Vous aurez besoin de :
 
 - Visual Studio (ou tout autre IDE C# de votre choix)
 - .NET Framework ou .NET Core installé
 
-## Ajout d'Aspose.Email à votre projet
+## Ajouter Aspose.Email à votre projet
 
-Aspose.Email est une bibliothèque puissante qui simplifie le travail avec des e-mails dans différents formats. Pour commencer, procédez comme suit :
+Aspose.Email est une bibliothèque puissante qui simplifie la gestion des e-mails dans différents formats. Pour commencer, suivez ces étapes :
 
 1. Créer un nouveau projet : ouvrez Visual Studio et créez un nouveau projet C#.
 
-2. Installez Aspose.Email : cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, sélectionnez "Gérer les packages NuGet", recherchez "Aspose.Email" et installez le package.
+2. Installez Aspose.Email : cliquez avec le bouton droit sur votre projet dans l’Explorateur de solutions, sélectionnez « Gérer les packages NuGet », recherchez « Aspose.Email » et installez le package.
 
-## Créer un message électronique
+## Création d'un message électronique
 
 Maintenant qu'Aspose.Email est intégré à votre projet, commençons à créer un message électronique :
 
@@ -60,9 +62,9 @@ class Program
 }
 ```
 
-## Ajouter des pièces jointes à l'e-mail
+## Ajout de pièces jointes à l'e-mail
 
-Les pièces jointes fournissent un contexte supplémentaire à vos e-mails. Ajoutons une pièce jointe à l'e-mail :
+Les pièces jointes apportent un contexte supplémentaire à vos e-mails. Ajoutons une pièce jointe à l'e-mail :
 
 ```csharp
 // Ajouter une pièce jointe à l'e-mail
@@ -94,32 +96,34 @@ class Program
 
 ## Conclusion
 
-Dans ce guide, nous avons exploré comment inclure des pièces jointes dans vos e-mails à l'aide d'Aspose.Email pour .NET. En suivant les étapes décrites ci-dessus, vous pouvez améliorer vos communications par courrier électronique avec des pièces jointes au contenu riche. La bibliothèque Aspose.Email simplifie ce processus, rendant plus facile que jamais la création et l'envoi d'e-mails avec pièces jointes par programmation.
+Dans ce guide, nous avons découvert comment inclure des pièces jointes à vos e-mails avec Aspose.Email pour .NET. En suivant les étapes décrites ci-dessus, vous pouvez enrichir vos communications par e-mail avec des pièces jointes riches en contenu. La bibliothèque Aspose.Email simplifie ce processus, facilitant ainsi la création et l'envoi d'e-mails avec pièces jointes par programmation.
 
 ## FAQ
 
 ### Comment puis-je télécharger la bibliothèque Aspose.Email ?
 
- Vous pouvez télécharger la bibliothèque Aspose.Email depuis Aspose.Releases :[Aspose.Releases](https://releases.aspose.com/email/net/) ou en utilisant NuGet Package Manager dans Visual Studio.
+Vous pouvez télécharger la bibliothèque Aspose.Email depuis Aspose.Releases : [Aspose.Releases](https://releases.aspose.com/email/net/) ou en utilisant NuGet Package Manager dans Visual Studio.
 
-### Puis-je joindre plusieurs fichiers à un seul e-mail ?
+### Puis-je joindre plusieurs fichiers à un seul e-mail ?
 
- Absolument! Vous pouvez ajouter plusieurs pièces jointes à un seul e-mail en créant et en ajoutant plusieurs`Attachment` objets à la`Attachments` collecte de votre`MailMessage`.
+Absolument ! Vous pouvez ajouter plusieurs pièces jointes à un même e-mail en créant et en ajoutant plusieurs `Attachment` objets à la `Attachments` collection de votre `MailMessage`.
 
-### Aspose.Email convient-il à la fois à .NET Framework et à .NET Core ?
+### Aspose.Email est-il adapté à la fois à .NET Framework et à .NET Core ?
 
 Oui, Aspose.Email est compatible avec .NET Framework et .NET Core, offrant une flexibilité dans votre choix de plate-forme.
 
 ### Aspose.Email prend-il en charge l'envoi d'e-mails via des connexions sécurisées ?
 
-Oui, vous pouvez configurer Aspose.Email pour envoyer des e-mails via des connexions sécurisées à l'aide de protocoles tels que SMTPS ou STARTTLS. Assurez-vous de fournir les paramètres de serveur appropriés.
+Oui, vous pouvez configurer Aspose.Email pour envoyer des e-mails via des connexions sécurisées utilisant des protocoles comme SMTPS ou STARTTLS. Assurez-vous de fournir les paramètres de serveur appropriés.
 
-### Où puis-je trouver plus d’informations sur les fonctionnalités d’Aspose.Email ?
+### Où puis-je trouver plus d'informations sur les fonctionnalités d'Aspose.Email ?
 
- Pour des informations plus détaillées sur les fonctionnalités, classes et méthodes d'Aspose.Email, reportez-vous au[Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
+Pour des informations plus détaillées sur les fonctionnalités, les classes et les méthodes d'Aspose.Email, reportez-vous à la [Référence de l'API Aspose.Email](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,14 +1,16 @@
 ---
-title: Zachování původních hranic pomocí kódu C#
-linktitle: Zachování původních hranic pomocí kódu C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se, jak zachovat původní hranice e-mailových příloh pomocí C# a Aspose.Email for .NET. Průvodce krok za krokem se zdrojovým kódem.
-weight: 13
-url: /cs/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/
+"description": "Naučte se, jak zachovat původní hranice e-mailových příloh pomocí C# a Aspose.Email pro .NET. Podrobný návod se zdrojovým kódem."
+"linktitle": "Zachování původních hranic pomocí kódu C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Zachování původních hranic pomocí kódu C#"
+"url": "/cs/net/email-processing-and-analysis/preserving-original-boundaries-using-csharp-code/"
+"weight": 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Zachování původních hranic pomocí kódu C#
@@ -16,44 +18,44 @@ url: /cs/net/email-processing-and-analysis/preserving-original-boundaries-using-
 
 ## Úvod do zachování původních hranic
 
-moderním obchodním světě hraje e-mailová komunikace klíčovou roli. Při výměně e-mailů často obsahují důležité přílohy, které je třeba spravovat a manipulovat s nimi programově. Při práci s přílohami e-mailů je však nezbytné zajistit, aby byly zachovány původní hranice a formátování těchto příloh. Zde vstupuje do hry Aspose.Email for .NET.
+moderním obchodním světě hraje e-mailová komunikace klíčovou roli. Při výměně e-mailů často obsahují důležité přílohy, které je třeba programově spravovat a upravovat. Při práci s e-mailovými přílohami je však nezbytné zajistit zachování původních hranic a formátování těchto příloh. A zde přichází na řadu Aspose.Email for .NET.
 
 ## Předpoklady
 
-Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
+Než se pustíme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
-- Visual Studio nainstalováno
-- .NET Framework nebo projekt .NET Core
+- Nainstalované Visual Studio
+- Projekt .NET Framework nebo .NET Core
 
 ## Instalace
 
-Chcete-li začít, musíte nainstalovat knihovnu Aspose.Email for .NET. Můžete to provést následujícím způsobem:
+Chcete-li začít, musíte si nainstalovat knihovnu Aspose.Email pro .NET. Můžete to provést pomocí těchto kroků:
 
-1. Otevřete projekt sady Visual Studio.
-2. Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
-3. Vyberte „Spravovat balíčky NuGet“.
-4. Vyhledejte "Aspose.Email" a nainstalujte balíček.
+1. Otevřete svůj projekt ve Visual Studiu.
+2. Klikněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+3. Vyberte možnost „Spravovat balíčky NuGet“.
+4. Vyhledejte „Aspose.Email“ a nainstalujte balíček.
 
 ## Načítání e-mailových zpráv
 
-Prvním krokem je načtení e-mailové zprávy, která obsahuje přílohu, se kterou chcete pracovat. Můžete to udělat takto:
+Prvním krokem je načtení e-mailové zprávy obsahující přílohu, se kterou chcete pracovat. Zde je návod, jak to udělat:
 
 ```csharp
 using Aspose.Email;
 
 
-// Načtěte e-mailovou zprávu
+// Načíst e-mailovou zprávu
 MailMessage message = MailMessage.Load("path/to/email.msg");
 ```
 
 ## Extrahování příloh
 
-Jakmile budete mít e-mailovou zprávu načtenou, můžete z ní extrahovat přílohy:
+Jakmile máte e-mailovou zprávu načtenou, můžete z ní extrahovat přílohy:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Extrahujte data přílohy
+    // Extrahovat data příloh
     byte[] attachmentData = attachment.ContentStream.ToByteArray();
     string fileName = attachment.Name;
     // Další zpracování...
@@ -62,18 +64,18 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Úprava příloh
 
-Chcete-li zachovat původní hranice při úpravě příloh, můžete použít funkce knihovny Aspose.Email. Řekněme, že chcete změnit velikost obrázkové přílohy:
+Chcete-li při úpravě příloh zachovat původní hranice, můžete použít funkce knihovny Aspose.Email. Řekněme, že chcete změnit velikost obrázkové přílohy:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType.StartsWith("image/"))
     {
-        // Změňte velikost obrázku při zachování původních hranic
+        // Změna velikosti obrázku se zachováním původních okrajů
         using (MemoryStream memoryStream = new MemoryStream(attachmentData))
         {
-            // Proveďte manipulaci s obrázky
-            // Uložte změny do memoryStream
+            // Provádějte manipulaci s obrázky
+            // Uložit změny do souboru memoryStream
         }
     }
 }
@@ -81,18 +83,18 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Ukládání změn
 
-Po provedení úprav v přílohách můžete změny uložit zpět do e-mailové zprávy:
+Po provedení úprav příloh můžete změny uložit zpět do e-mailové zprávy:
 
 ```csharp
-// Uložte změny do původní e-mailové zprávy
+// Uložit změny v původní e-mailové zprávě
 message.Save("path/to/modified-email.msg", SaveOptions.DefaultMsg);
 ```
 
 ## Závěr
 
-Zachování původních hranic při práci s e-mailovými přílohami je zásadní pro zachování integrity dat. S Aspose.Email for .NET se tento proces stává bezproblémovým a umožňuje vám manipulovat s přílohami a zároveň zajistit, že jejich formátování zůstane nedotčeno.
+Zachování původních hranic při práci s e-mailovými přílohami je klíčové pro zachování integrity dat. S Aspose.Email pro .NET se tento proces stává bezproblémovým a umožňuje vám manipulovat s přílohami a zároveň zajistit, aby jejich formátování zůstalo neporušené.
 
-## FAQ
+## Často kladené otázky
 
 ### Jak nainstaluji Aspose.Email pro .NET?
 
@@ -104,18 +106,20 @@ Ano, Aspose.Email pro .NET podporuje projekty .NET Framework i .NET Core.
 
 ### Je k dispozici bezplatná zkušební verze?
 
-Ano, z webové stránky můžete získat bezplatnou zkušební verzi Aspose.Email pro .NET.
+Ano, zkušební verzi Aspose.Email pro .NET si můžete stáhnout zdarma z webových stránek.
 
-### Jak mohu změnit velikost obrazových příloh při zachování hranic?
+### Jak mohu změnit velikost obrázkových příloh a zároveň zachovat okraje?
 
-Knihovnu Aspose.Email můžete použít k načítání a manipulaci s obrázkovými přílohami a zároveň zajistit zachování původních hranic.
+Knihovnu Aspose.Email můžete použít k načítání a manipulaci s obrazovými přílohami a zároveň zajistit zachování původních hranic.
 
-### Kde najdu další informace o Aspose.Email pro .NET?
+### Kde najdu více informací o Aspose.Email pro .NET?
 
- Kompletní dokumentaci a příklady naleznete na[Dokumentace Aspose.Email](https://reference.aspose.com/email/net/) strana.
+Komplexní dokumentaci a příklady naleznete na [Dokumentace k Aspose.Email](https://reference.aspose.com/email/net/) strana.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

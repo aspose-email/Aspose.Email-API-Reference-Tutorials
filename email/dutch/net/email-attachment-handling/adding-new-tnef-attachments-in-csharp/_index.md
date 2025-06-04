@@ -1,14 +1,16 @@
 ---
-title: Nieuwe TNEF-bijlagen toevoegen in C#
-linktitle: Nieuwe TNEF-bijlagen toevoegen in C#
-second_title: Aspose.Email .NET E-mailverwerkings-API
-description: Leer hoe u nieuwe TNEF-bijlagen kunt toevoegen in C# met behulp van Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden voor naadloze integratie.
-weight: 12
-url: /nl/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
+"description": "Leer hoe u nieuwe TNEF-bijlagen toevoegt in C# met Aspose.Email voor .NET. Stapsgewijze handleiding met codevoorbeelden voor naadloze integratie."
+"linktitle": "Nieuwe TNEF-bijlagen toevoegen in C#"
+"second_title": "Aspose.Email .NET e-mailverwerkings-API"
+"title": "Nieuwe TNEF-bijlagen toevoegen in C#"
+"url": "/nl/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Nieuwe TNEF-bijlagen toevoegen in C#
@@ -16,23 +18,23 @@ url: /nl/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 
 ## Inleiding tot TNEF-bijlagen en Aspose.Email voor .NET
 
-TNEF-bijlagen (Transport Neutral Encapsulation Format) zijn een eigen indeling die door Microsoft Outlook wordt gebruikt om rijke tekst en bijlagen in e-mails te verpakken. Aspose.Email voor .NET is een krachtige bibliotheek waarmee u kunt werken met e-mails in verschillende formaten, inclusief TNEF-bijlagen, met behulp van C#.
+TNEF-bijlagen (Transport Neutral Encapsulation Format) zijn een eigen formaat dat door Microsoft Outlook wordt gebruikt om tekst met opmaak en bijlagen in e-mails te verpakken. Aspose.Email voor .NET is een krachtige bibliotheek waarmee u met C# kunt werken met e-mails in verschillende formaten, waaronder TNEF-bijlagen.
 
 ## Uw ontwikkelomgeving instellen
 
-Voordat we ingaan op coderen, moet je ervoor zorgen dat je een ontwikkelomgeving hebt ingesteld. Installeer Visual Studio en maak een nieuw C#-project.
+Voordat we beginnen met coderen, zorg ervoor dat je een ontwikkelomgeving hebt ingesteld. Installeer Visual Studio en maak een nieuw C#-project.
 
-## Een nieuw project creëren
+## Een nieuw project maken
 
-Begin met het maken van een nieuw C#-project in Visual Studio. Kies een passende projectnaam en locatie.
+Begin met het maken van een nieuw C#-project in Visual Studio. Kies een geschikte projectnaam en -locatie.
 
 ## De Aspose.Email voor .NET-bibliotheek toevoegen
 
-Om met e-mails en TNEF-bijlagen te werken, moeten we de Aspose.Email voor .NET-bibliotheek aan ons project toevoegen. U kunt dit doen door NuGet Package Manager in Visual Studio te gebruiken. Zoek naar "Aspose.Email" en installeer het juiste pakket.
+Om met e-mails en TNEF-bijlagen te kunnen werken, moeten we de Aspose.Email voor .NET-bibliotheek aan ons project toevoegen. U kunt dit doen met NuGet Package Manager in Visual Studio. Zoek naar 'Aspose.Email' en installeer het juiste pakket.
 
-## Een bestaande e-mail met TNEF-bijlage laden
+## Een bestaande e-mail laden met een TNEF-bijlage
 
-Laten we om te beginnen een bestaande e-mail laden die een TNEF-bijlage bevat. U moet het pad naar het e-mailbestand opgeven.
+Laten we beginnen met het laden van een bestaande e-mail met een TNEF-bijlage. U moet het pad naar het e-mailbestand opgeven.
 
 ```csharp
 
@@ -45,26 +47,26 @@ var message = MailMessage.Load("path/to/email.eml", options);
 
 ## TNEF-bijlagen extraheren en wijzigen
 
-Zodra u de e-mail heeft geladen, kunt u de TNEF-bijlage uitpakken en indien nodig wijzigen.
+Nadat u de e-mail hebt geladen, kunt u de TNEF-bijlage extraheren en indien nodig wijzigen.
 
 ```csharp
-// Herhaal bijlagen
+// Door bijlagen itereren
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Pak de TNEF-bijlage uit
+        // TNEF-bijlage extraheren
         var tnefAttachment = attachment;
 
-        //Krijg toegang tot TNEF-eigenschappen en wijzig deze indien nodig
+        // Toegang tot TNEF-eigenschappen en indien nodig wijzigen
         // tnefAttachment.Eigenschappen...
     }
 }
 ```
 
-## De e-mail opslaan met gewijzigde bijlagen
+## De e-mail met gewijzigde bijlagen opslaan
 
-Nadat u de TNEF-bijlage hebt gewijzigd, kunt u de e-mail weer opslaan in een bestand.
+Nadat u de TNEF-bijlage hebt gewijzigd, kunt u de e-mail weer in een bestand opslaan.
 
 ```csharp
 // Sla de gewijzigde e-mail op
@@ -75,7 +77,7 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 
 ## Conclusie
 
-In dit artikel hebben we onderzocht hoe u met TNEF-bijlagen in C# kunt werken met Aspose.Email voor .NET. U hebt geleerd hoe u een e-mail met TNEF-bijlagen kunt laden, deze bijlagen kunt extraheren en wijzigen, en de gewijzigde e-mail kunt opslaan.
+In dit artikel hebben we besproken hoe je met TNEF-bijlagen in C# kunt werken met Aspose.Email voor .NET. Je hebt geleerd hoe je een e-mail met TNEF-bijlagen kunt laden, deze bijlagen kunt extraheren en wijzigen, en de gewijzigde e-mail kunt opslaan.
 
 ## Veelgestelde vragen
 
@@ -89,14 +91,16 @@ Ja, Aspose.Email voor .NET ondersteunt verschillende e-mailformaten, waaronder E
 
 ### Kan ik Aspose.Email gebruiken voor commerciële projecten?
 
-Ja, u kunt Aspose.Email voor .NET gebruiken in zowel persoonlijke als commerciële projecten, op voorwaarde dat u over de juiste licentie beschikt.
+Ja, u kunt Aspose.Email voor .NET gebruiken voor zowel persoonlijke als commerciële projecten, op voorwaarde dat u over de juiste licentie beschikt.
 
 ### Waar kan ik meer documentatie en voorbeelden vinden?
 
- Voor meer gedetailleerde documentatie en codevoorbeelden kunt u terecht op de website[Aspose.Email voor .NET-documentatie](https://reference.aspose.com/email/net/).
+Voor meer gedetailleerde documentatie en codevoorbeelden kunt u terecht op de [Aspose.Email voor .NET-documentatie](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
