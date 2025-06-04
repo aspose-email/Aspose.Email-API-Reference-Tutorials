@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to create and manage MAPI contacts efficiently with Aspose.Email for Java. This guide covers everything from basic contact creation to detailed management, including adding professional information."
-"title": "Create MAPI Contacts in Java Using Aspose.Email&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية إنشاء جهات اتصال MAPI وإدارتها بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل كل شيء، بدءًا من إنشاء جهات الاتصال الأساسية ووصولًا إلى إدارتها التفصيلية، بما في ذلك إضافة معلومات احترافية."
+"title": "إنشاء جهات اتصال MAPI في Java باستخدام Aspose.Email - دليل خطوة بخطوة"
 "url": "/ar/java/mapi-operations/create-mapi-contacts-aspose-email-java/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create MAPI Contacts in Java Using Aspose.Email: A Step-by-Step Guide
+# كيفية إنشاء جهات اتصال MAPI في Java باستخدام Aspose.Email: دليل خطوة بخطوة
 
 ## مقدمة
 
-Managing contacts is essential for applications that require robust email and address book integration. This comprehensive guide demonstrates how to create MAPI (Messaging Application Programming Interface) contacts using the powerful Aspose.Email library in Java. By following this tutorial, you'll automate contact creation, enhance data organization, and seamlessly integrate contact management into your Java applications.
+إدارة جهات الاتصال ضرورية للتطبيقات التي تتطلب تكاملاً قوياً بين البريد الإلكتروني ودفتر العناوين. يوضح هذا الدليل الشامل كيفية إنشاء جهات اتصال MAPI (واجهة برمجة تطبيقات المراسلة) باستخدام مكتبة Aspose.Email القوية في جافا. باتباع هذا البرنامج التعليمي، ستتمكن من أتمتة إنشاء جهات الاتصال، وتحسين تنظيم البيانات، ودمج إدارة جهات الاتصال بسلاسة في تطبيقات جافا.
 
 **ما سوف تتعلمه:**
-- Create basic and detailed MAPI contacts
-- Manage professional information, addresses, and emails with Aspose.Email for Java
-- Set up a Personal Storage Table (PST) file to efficiently store contacts
+- إنشاء جهات اتصال MAPI أساسية ومفصلة
+- إدارة المعلومات المهنية والعناوين ورسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java
+- إعداد ملف جدول التخزين الشخصي (PST) لتخزين جهات الاتصال بكفاءة
 
 ## المتطلبات الأساسية
 
-Before diving into contact creation, ensure you have the following:
+قبل الغوص في إنشاء جهة اتصال، تأكد من أن لديك ما يلي:
 
 ### المكتبات المطلوبة:
-- Aspose.Email for Java library (Version 25.4 or later)
+- Aspose.Email لمكتبة Java (الإصدار 25.4 أو أحدث)
 
 ### متطلبات إعداد البيئة:
-- JDK version 16 or higher
-- An IDE of your choice (IntelliJ IDEA, Eclipse, etc.)
+- JDK الإصدار 16 أو أعلى
+- بيئة التطوير المتكاملة (IDE) حسب اختيارك (IntelliJ IDEA، Eclipse، وما إلى ذلك)
 
 ### المتطلبات المعرفية:
-A basic understanding of Java programming and familiarity with handling third-party libraries.
+فهم أساسي لبرمجة جافا والمعرفة بكيفية التعامل مع مكتبات الطرف الثالث.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To begin, include the Aspose.Email library in your project. If you're using Maven, add the following dependency to your `pom.xml`:
+للبدء، أدرج مكتبة Aspose.Email في مشروعك. إذا كنت تستخدم Maven، فأضف التبعية التالية إلى مشروعك: `pom.xml`:
 
 ```xml
 <dependency>
@@ -50,21 +50,21 @@ To begin, include the Aspose.Email library in your project. If you're using Mave
 ```
 
 ### خطوات الحصول على الترخيص:
-- **نسخة تجريبية مجانية:** Download a trial version from the [موقع Aspose](https://releases.aspose.com/email/java/) لاستكشاف ميزاته.
-- **رخصة مؤقتة:** Apply for a temporary license via the [صفحة الشراء](https://purchase.aspose.com/temporary-license/).
-- **شراء:** Consider purchasing a full license from their [buy page](https://purchase.aspose.com/buy) if Aspose.Email meets your needs.
+- **نسخة تجريبية مجانية:** قم بتنزيل النسخة التجريبية من [موقع Aspose](https://releases.aspose.com/email/java/) لاستكشاف ميزاته.
+- **رخصة مؤقتة:** التقدم بطلب للحصول على رخصة مؤقتة عبر [صفحة الشراء](https://purchase.aspose.com/temporary-license/).
+- **شراء:** فكر في شراء ترخيص كامل منهم [صفحة الشراء](https://purchase.aspose.com/buy) إذا كان Aspose.Email يلبي احتياجاتك.
 
 ### التهيئة الأساسية:
-Once installed, initialize Aspose.Email in your Java application to start creating and managing MAPI contacts.
+بمجرد التثبيت، قم بتشغيل Aspose.Email في تطبيق Java الخاص بك لبدء إنشاء جهات اتصال MAPI وإدارتها.
 
 ## دليل التنفيذ
 
-We'll cover three main features: basic contact creation, professional information inclusion, and comprehensive detail management.
+سنغطي ثلاث ميزات رئيسية: إنشاء جهات اتصال أساسية، وإدراج المعلومات الاحترافية، وإدارة التفاصيل الشاملة.
 
-### Creating a Basic MAPI Contact
+### إنشاء جهة اتصال MAPI أساسية
 
 #### ملخص
-This feature allows you to create simple contacts with just first name, last name, and email address, suitable for applications requiring minimal data.
+تتيح لك هذه الميزة إنشاء جهات اتصال بسيطة باستخدام الاسم الأول واسم العائلة وعنوان البريد الإلكتروني فقط، وهي مناسبة للتطبيقات التي تتطلب الحد الأدنى من البيانات.
 
 #### خطوات التنفيذ
 
@@ -73,31 +73,31 @@ This feature allows you to create simple contacts with just first name, last nam
 import com.aspose.email.MapiContact;
 ```
 
-##### Step 2: Create the MAPI Contact
-Here's how to create a basic MAPI contact:
+##### الخطوة 2: إنشاء جهة اتصال MAPI
+فيما يلي كيفية إنشاء جهة اتصال MAPI أساسية:
 ```java
 public static MapiContact createBasicMapiContact(String firstName, String lastName, String emailAddress) {
     return new MapiContact(firstName + " " + lastName, emailAddress);
 }
 ```
-**توضيح:** This method initializes a `MapiContact` object using the provided name and email address. The contact is stored with minimal information.
+**توضيح:** هذه الطريقة تعمل على تهيئة `MapiContact` باستخدام الاسم وعنوان البريد الإلكتروني المُقدَّمين. تُخزَّن جهة الاتصال بأقل قدر من المعلومات.
 
-### Creating a MAPI Contact with Professional Information
+### إنشاء جهة اتصال MAPI بالمعلومات المهنية
 
 #### ملخص
-Enhance your contacts by adding professional details such as company name, job title, and phone numbers.
+قم بتعزيز جهات الاتصال الخاصة بك عن طريق إضافة تفاصيل مهنية مثل اسم الشركة والمسمى الوظيفي وأرقام الهواتف.
 
 #### خطوات التنفيذ
 
-##### Step 1: Import Additional Classes
+##### الخطوة 1: استيراد فئات إضافية
 ```java
 import com.aspose.email.MapiContactNamePropertySet;
 import com.aspose.email.MapiContactProfessionalPropertySet;
 import com.aspose.email.MapiContactTelephonePropertySet;
 ```
 
-##### Step 2: Create the MAPI Contact with Professional Details
-Here's how to include professional information:
+##### الخطوة 2: إنشاء جهة اتصال MAPI مع التفاصيل المهنية
+إليك كيفية تضمين المعلومات المهنية:
 ```java
 public static MapiContact createProfessionalMapiContact(String firstName, String middleName, String lastName,
         String company, String jobTitle, String businessPhone, String mobilePhone) {
@@ -109,16 +109,16 @@ public static MapiContact createProfessionalMapiContact(String firstName, String
     return contact;
 }
 ```
-**توضيح:** This method initializes a `MapiContact` object with extended details, including company name and job title. It also sets business-related phone numbers.
+**توضيح:** هذه الطريقة تعمل على تهيئة `MapiContact` كائن بتفاصيل مُفصّلة، بما في ذلك اسم الشركة والمسمى الوظيفي. كما يُحدّد أرقام هواتف مُتعلّقة بالعمل.
 
-### Creating a MAPI Contact with Detailed Information
+### إنشاء جهة اتصال MAPI بمعلومات مفصلة
 
 #### ملخص
-Create comprehensive contacts by adding physical addresses, email information, and gender attributes for detailed management.
+قم بإنشاء جهات اتصال شاملة عن طريق إضافة عناوين فعلية ومعلومات البريد الإلكتروني وسمات الجنس لإدارة مفصلة.
 
 #### خطوات التنفيذ
 
-##### Step 1: Import Additional Classes
+##### الخطوة 1: استيراد فئات إضافية
 ```java
 import com.aspose.email.MapiContactNamePropertySet;
 import com.aspose.email.MapiContactProfessionalPropertySet;
@@ -127,8 +127,8 @@ import com.aspose.email.MapiContactElectronicAddress;
 import com.aspose.email.MapiContactGender;
 ```
 
-##### Step 2: Create a Detailed MAPI Contact
-Here's how to create a detailed contact:
+##### الخطوة 2: إنشاء جهة اتصال MAPI مفصلة
+إليك كيفية إنشاء جهة اتصال مفصلة:
 ```java
 public static MapiContact createDetailedMapiContact(String firstName, String middleName, String lastName,
         MapiContactGender gender, String company, String jobTitle, String email, String workAddress) {
@@ -141,12 +141,12 @@ public static MapiContact createDetailedMapiContact(String firstName, String mid
     return contact;
 }
 ```
-**توضيح:** This method initializes a `MapiContact` with detailed information, including gender and physical addresses. It ensures all relevant data is captured.
+**توضيح:** هذه الطريقة تعمل على تهيئة `MapiContact` مع معلومات مفصلة، بما في ذلك الجنس والعنوان الفعلي. ويضمن ذلك جمع جميع البيانات ذات الصلة.
 
-### Creating a PST File and Adding Contacts
+### إنشاء ملف PST وإضافة جهات اتصال
 
 #### ملخص
-Store multiple contacts in a Personal Storage Table (PST) file for centralized management.
+قم بتخزين جهات اتصال متعددة في ملف جدول التخزين الشخصي (PST) للإدارة المركزية.
 
 #### خطوات التنفيذ
 
@@ -159,8 +159,8 @@ import com.aspose.email.PersonalStorage;
 import com.aspose.email.StandardIpmFolder;
 ```
 
-##### Step 2: Create PST and Add Contacts
-Here's how you can create a PST file and add contacts:
+##### الخطوة 2: إنشاء PST وإضافة جهات اتصال
+إليك كيفية إنشاء ملف PST وإضافة جهات اتصال:
 ```java
 public static void createPstAndAddContacts(MapiContact[] contacts) {
     String pstPath = "YOUR_OUTPUT_DIRECTORY/MapiContactToPST_out.pst";
@@ -171,13 +171,13 @@ public static void createPstAndAddContacts(MapiContact[] contacts) {
     }
 }
 ```
-**توضيح:** This method creates a PST file and adds multiple `MapiContact` objects into it, organizing them under a "Contacts" folder.
+**توضيح:** تعمل هذه الطريقة على إنشاء ملف PST وإضافة ملفات متعددة `MapiContact` قم بجمع الكائنات فيه، وتنظيمها ضمن مجلد "جهات الاتصال".
 
 ## التطبيقات العملية
 
-1. **أنظمة إدارة علاقات العملاء:** Automate contact creation in customer relationship management software.
-2. **عملاء البريد الإلكتروني:** Enhance email clients by integrating robust contact management features.
-3. **Address Book Synchronization:** Use this functionality to synchronize contacts across different platforms and devices.
+1. **أنظمة إدارة علاقات العملاء:** أتمتة إنشاء جهات الاتصال في برنامج إدارة علاقات العملاء.
+2. **عملاء البريد الإلكتروني:** قم بتعزيز عملاء البريد الإلكتروني من خلال دمج ميزات إدارة جهات الاتصال القوية.
+3. **مزامنة دفتر العناوين:** استخدم هذه الوظيفة لمزامنة جهات الاتصال عبر منصات وأجهزة مختلفة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

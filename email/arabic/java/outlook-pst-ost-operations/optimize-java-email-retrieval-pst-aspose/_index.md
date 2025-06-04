@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently retrieve emails from PST files using Aspose.Email for Java. Filter by importance, size, and more with this comprehensive guide."
-"title": "Java Email Retrieval from PST Files&#58; Optimize Using Aspose.Email for Java"
+"description": "تعرّف على كيفية استرداد رسائل البريد الإلكتروني بكفاءة من ملفات PST باستخدام Aspose.Email لجافا. حدّد الأهمية والحجم والمزيد باستخدام هذا الدليل الشامل."
+"title": "استرجاع البريد الإلكتروني من ملفات PST باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/outlook-pst-ost-operations/optimize-java-email-retrieval-pst-aspose/"
 "weight": 1
 ---
@@ -11,28 +11,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java Email Retrieval from PST Files: Optimize Using Aspose.Email
+# استرجاع البريد الإلكتروني من ملفات PST باستخدام Java: تحسين الأداء باستخدام Aspose.Email
 
 ## مقدمة
-Managing and retrieving emails efficiently from large PST files is a common challenge. Whether you're an IT professional or developer, leveraging the right tools can streamline these processes. This tutorial demonstrates how to use **Aspose.Email for Java** to optimize email retrieval by filtering based on importance, message class, size, and more.
+تُعدّ إدارة رسائل البريد الإلكتروني واسترجاعها بكفاءة من ملفات PST كبيرة تحديًا شائعًا. سواء كنتَ متخصصًا في تكنولوجيا المعلومات أو مطورًا، فإن استخدام الأدوات المناسبة يُسهّل هذه العمليات. يوضح هذا البرنامج التعليمي كيفية استخدام **Aspose.Email لـ Java** لتحسين استرجاع البريد الإلكتروني عن طريق التصفية بناءً على الأهمية وفئة الرسالة والحجم والمزيد.
 
-By the end of this guide, you'll be able to:
-- Load and parse PST files efficiently
-- Retrieve high-importance messages
-- Filter emails based on specific criteria such as message class or size
-- Extract unread messages and those with attachments
-- Identify subfolders within your email system
+بحلول نهاية هذا الدليل، ستكون قادرًا على:
+- تحميل ملفات PST وتحليلها بكفاءة
+- استرداد الرسائل ذات الأهمية العالية
+- تصفية رسائل البريد الإلكتروني استنادًا إلى معايير محددة مثل فئة الرسالة أو حجمها
+- استخراج الرسائل غير المقروءة والرسائل التي تحتوي على مرفقات
+- تحديد المجلدات الفرعية داخل نظام البريد الإلكتروني الخاص بك
 
-Let's ensure all prerequisites are met before diving in.
+دعونا نتأكد من استيفاء جميع المتطلبات الأساسية قبل الغوص فيها.
 
 ## المتطلبات الأساسية
-To follow along, you’ll need:
-- **Aspose.Email for Java** library (version 25.4 or later)
-- Basic knowledge of Java and Maven project setup
-- Access to a PST file for testing
+للمتابعة، ستحتاج إلى:
+- **Aspose.Email لـ Java** المكتبة (الإصدار 25.4 أو أحدث)
+- المعرفة الأساسية بإعداد مشروع Java وMaven
+- الوصول إلى ملف PST للاختبار
 
 ### متطلبات إعداد البيئة
-1. **Maven Dependency**: Add the following dependency in your `pom.xml`:
+1. **تبعية Maven**:أضف التبعية التالية في ملفك `pom.xml`:
    ```xml
    <dependency>
        <groupId>com.aspose</groupId>
@@ -41,36 +41,36 @@ To follow along, you’ll need:
        <classifier>jdk16</classifier>
    </dependency>
    ```
-2. **الحصول على الترخيص**: Obtain a [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/) أو أ [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/). For production use, purchase a full license on the [صفحة شراء Aspose](https://purchase.aspose.com/buy).
-3. **Initial Setup**: Set up your development environment with Maven and ensure JDK 16 or later is installed.
+2. **الحصول على الترخيص**:احصل على [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/) أو أ [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/). للاستخدام الإنتاجي، قم بشراء ترخيص كامل على [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+3. **الإعداد الأولي**:قم بإعداد بيئة التطوير الخاصة بك باستخدام Maven وتأكد من تثبيت JDK 16 أو إصدار أحدث.
 
-## Setting Up Aspose.Email for Java
-To begin using Aspose.Email, follow these steps:
-1. **Add Maven Dependency**:تأكد من `pom.xml` file includes the dependency mentioned above.
-2. **إعداد الترخيص** (Optional): Load your license to unlock all features:
+## إعداد Aspose.Email لـ Java
+للبدء في استخدام Aspose.Email، اتبع الخطوات التالية:
+1. **إضافة تبعية Maven**:تأكد من `pom.xml` يتضمن الملف التبعية المذكورة أعلاه.
+2. **إعداد الترخيص** (اختياري): قم بتحميل الترخيص الخاص بك لفتح جميع الميزات:
    ```java
    License license = new License();
    license.setLicense("path/to/your/license.lic");
    ```
-3. **التهيئة الأساسية**: Import necessary classes and initialize your PST file processing environment.
+3. **التهيئة الأساسية**:استيراد الفئات الضرورية وتهيئة بيئة معالجة ملف PST الخاص بك.
 
 ## دليل التنفيذ
-Let's explore each feature of Aspose.Email for Java step-by-step.
+دعونا نستكشف كل ميزة من ميزات Aspose.Email لـ Java خطوة بخطوة.
 
-### Load a PST File
+### تحميل ملف PST
 #### ملخص
-Loading a PST file is the first step in email retrieval:
+يعد تحميل ملف PST الخطوة الأولى في استرجاع البريد الإلكتروني:
 ```java
 import com.aspose.email.PersonalStorage;
 
-// Loads a PST file from the specified directory.
+// يقوم بتحميل ملف PST من الدليل المحدد.
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/Outlook.pst");
 ```
-**توضيح**: ال `fromFile` method loads your PST file, enabling operations like reading emails or accessing folders.
+**توضيح**: ال `fromFile` تقوم الطريقة بتحميل ملف PST الخاص بك، مما يتيح عمليات مثل قراءة رسائل البريد الإلكتروني أو الوصول إلى المجلدات.
 
-### Retrieve High-Importance Messages
+### استرداد الرسائل ذات الأهمية العالية
 #### ملخص
-Filtering messages by importance helps prioritize critical communications:
+تساعد تصفية الرسائل حسب الأهمية في تحديد أولويات الاتصالات المهمة:
 ```java
 import com.aspose.email.FolderInfo;
 import com.aspose.email.MessageInfoCollection;
@@ -82,11 +82,11 @@ PersonalStorageQueryBuilder builder = new PersonalStorageQueryBuilder();
 builder.getImportance().equals((int) MapiImportance.High);
 MessageInfoCollection highImportanceMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: ال `getImportance` method filters messages marked as high importance, returning a collection of relevant emails.
+**توضيح**: ال `getImportance` تقوم الطريقة بتصفية الرسائل التي تم وضع علامة عليها باعتبارها ذات أهمية عالية، مما يؤدي إلى إرجاع مجموعة من رسائل البريد الإلكتروني ذات الصلة.
 
-### Retrieve Messages with Specific Message Class (e.g., 'IPM.Note')
+### استرداد الرسائل باستخدام فئة رسالة محددة (على سبيل المثال، 'IPM.Note')
 #### ملخص
-Filtering by message class allows focusing on specific email types:
+يتيح لك التصفية حسب فئة الرسالة التركيز على أنواع بريد إلكتروني محددة:
 ```java
 import com.aspose.email.MessageClass;
 
@@ -94,11 +94,11 @@ builder = new PersonalStorageQueryBuilder();
 builder.getMessageClass().equals("IPM.Note");
 MessageInfoCollection noteMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: Specifying "IPM.Note" retrieves standard email messages.
+**توضيح**:يؤدي تحديد "IPM.Note" إلى استرداد رسائل البريد الإلكتروني القياسية.
 
-### Retrieve Messages with Attachments and High Importance
+### استرجاع الرسائل التي تحتوي على مرفقات وأهمية عالية
 #### ملخص
-Combining filters narrows down the search to crucial emails:
+يؤدي دمج المرشحات إلى تضييق نطاق البحث إلى رسائل البريد الإلكتروني المهمة:
 ```java
 import com.aspose.email.MapiMessageFlags;
 
@@ -107,11 +107,11 @@ builder.getImportance().equals((int) MapiImportance.High);
 builder.hasFlags(MapiMessageFlags.MSGFLAG_HASATTACH);
 MessageInfoCollection importantWithAttachmentsMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: This query looks for emails that are both high importance and contain attachments.
+**توضيح**:يبحث هذا الاستعلام عن رسائل البريد الإلكتروني ذات الأهمية العالية والتي تحتوي على مرفقات.
 
-### Retrieve Messages Larger than 15 KB
+### استرداد الرسائل التي يزيد حجمها عن 15 كيلو بايت
 #### ملخص
-Large email messages can be filtered based on size:
+يمكن تصفية رسائل البريد الإلكتروني الكبيرة استنادًا إلى الحجم:
 ```java
 import com.aspose.email.MessageSize;
 
@@ -119,11 +119,11 @@ builder = new PersonalStorageQueryBuilder();
 builder.getMessageSize().greater(15000);
 MessageInfoCollection largeMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: This method filters out emails larger than 15 KB, identifying sizable attachments or documents.
+**توضيح**:تقوم هذه الطريقة بتصفية رسائل البريد الإلكتروني التي يزيد حجمها عن 15 كيلو بايت، وتحديد المرفقات أو المستندات ذات الحجم الكبير.
 
-### Retrieve Unread Messages
+### استرداد الرسائل غير المقروءة
 #### ملخص
-Accessing unread messages helps track new communications:
+يساعد الوصول إلى الرسائل غير المقروءة على تتبع الاتصالات الجديدة:
 ```java
 import com.aspose.email.MessageFlags;
 
@@ -131,21 +131,21 @@ builder = new PersonalStorageQueryBuilder();
 builder.hasNoFlags(MapiMessageFlags.MSGFLAG_READ);
 MessageInfoCollection unreadMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: This query fetches all unread emails from the inbox.
+**توضيح**:يقوم هذا الاستعلام بجلب جميع رسائل البريد الإلكتروني غير المقروءة من صندوق الوارد.
 
-### Retrieve Unread Messages with Attachments
+### استرداد الرسائل غير المقروءة مع المرفقات
 #### ملخص
-Combining filters for unread messages and attachments provides a targeted view:
+يؤدي الجمع بين المرشحات للرسائل غير المقروءة والمرفقات إلى توفير عرض مستهدف:
 ```java
 builder.hasNoFlags(MapiMessageFlags.MSGFLAG_READ);
 builder.hasFlags(MapiMessageFlags.MSGFLAG_HASATTACH);
 MessageInfoCollection unreadWithAttachmentsMessages = inboxFolder.getContents(builder.getQuery());
 ```
-**توضيح**: This approach refines the search to include only unread messages with attachments.
+**توضيح**:يعمل هذا النهج على تحسين عملية البحث لتشمل فقط الرسائل غير المقروءة التي تحتوي على مرفقات.
 
-### Retrieve Folders Named 'SubInbox'
+### استرداد المجلدات المسماة "SubInbox"
 #### ملخص
-Organizing or accessing specific folders can be streamlined:
+يمكن تبسيط تنظيم مجلدات معينة أو الوصول إليها من خلال:
 ```java
 import com.aspose.email.FolderName;
 import com.aspose.email.FolderInfoCollection;
@@ -154,11 +154,11 @@ builder = new PersonalStorageQueryBuilder();
 builder.getFolderName().equals("SubInbox");
 FolderInfoCollection subinboxFolders = inboxFolder.getSubFolders(builder.getQuery());
 ```
-**توضيح**: This query retrieves folders named 'SubInbox' within the main folder.
+**توضيح**:يستعيد هذا الاستعلام المجلدات المسماة "SubInbox" داخل المجلد الرئيسي.
 
-### Retrieve Folders with Subfolders
+### استرداد المجلدات التي تحتوي على مجلدات فرعية
 #### ملخص
-Identifying folders that contain subfolders helps organize your email structure:
+يساعد تحديد المجلدات التي تحتوي على مجلدات فرعية في تنظيم بنية البريد الإلكتروني الخاص بك:
 ```java
 import com.aspose.email.HasSubfolders;
 
@@ -166,19 +166,19 @@ builder = new PersonalStorageQueryBuilder();
 builder.hasSubfolders();
 FolderInfoCollection foldersWithSubFolders = inboxFolder.getSubFolders(builder.getQuery());
 ```
-**توضيح**: This filter finds all parent folders with nested subfolders.
+**توضيح**:يبحث هذا الفلتر عن جميع المجلدات الرئيسية التي تحتوي على مجلدات فرعية متداخلة.
 
 ## التطبيقات العملية
-Here are some practical use cases for these features:
-1. **Email Archiving and Prioritization**: Automatically archive emails based on importance or size.
-2. **Automated Email Responses**: Trigger responses to unread messages containing attachments.
-3. **تحليل البيانات**: Extract large files or specific email types for analysis.
+فيما يلي بعض حالات الاستخدام العملية لهذه الميزات:
+1. **أرشفة البريد الإلكتروني وتحديد أولوياته**:أرشفة رسائل البريد الإلكتروني تلقائيًا استنادًا إلى الأهمية أو الحجم.
+2. **الردود الآلية على البريد الإلكتروني**:تفعيل الاستجابات للرسائل غير المقروءة التي تحتوي على مرفقات.
+3. **تحليل البيانات**:استخراج الملفات الكبيرة أو أنواع محددة من رسائل البريد الإلكتروني للتحليل.
 
 ## اعتبارات الأداء
-Optimizing performance when working with PST files is crucial:
-- Use filters wisely to reduce the number of processed emails.
-- Manage memory by closing streams and objects after use.
-- Regularly update Aspose.Email for Java to benefit from improvements and bug fixes.
+يعد تحسين الأداء عند العمل مع ملفات PST أمرًا بالغ الأهمية:
+- استخدم المرشحات بحكمة لتقليل عدد رسائل البريد الإلكتروني المعالجة.
+- إدارة الذاكرة عن طريق إغلاق التدفقات والكائنات بعد الاستخدام.
+- قم بتحديث Aspose.Email لـ Java بانتظام للاستفادة من التحسينات وإصلاحات الأخطاء.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

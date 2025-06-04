@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently manage email tasks using Aspose.Email for .NET. This guide covers setting up the EWS client, creating Exchange tasks, and optimizing workflows."
-"title": "How to Implement and Configure EWS Client with Aspose.Email .NET for Exchange Server Integration"
+"description": "تعرّف على كيفية إدارة مهام البريد الإلكتروني بكفاءة باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إعداد عميل EWS، وإنشاء مهام Exchange، وتحسين سير العمل."
+"title": "كيفية تنفيذ وتكوين عميل EWS باستخدام Aspose.Email .NET للتكامل مع Exchange Server"
 "url": "/ar/net/exchange-server-integration/implement-ews-client-aspose-email-net/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Implement and Configure EWS Client with Aspose.Email .NET for Exchange Server Integration
+# كيفية تنفيذ وتكوين عميل EWS باستخدام Aspose.Email .NET للتكامل مع Exchange Server
 
 ## مقدمة
 
-Managing multiple email accounts and complex workflows can be daunting. Aspose.Email for .NET offers a powerful solution for interacting with Microsoft Exchange Web Services (EWS), simplifying the automation of task creation and email management.
+قد تكون إدارة حسابات بريد إلكتروني متعددة وسير عمل معقدة أمرًا شاقًا. يوفر Aspose.Email لـ .NET حلاً فعالاً للتفاعل مع خدمات Microsoft Exchange Web Services (EWS)، مما يُبسط أتمتة إنشاء المهام وإدارة البريد الإلكتروني.
 
-This tutorial will guide you through setting up an EWS client, creating Exchange tasks using Aspose.Email for .NET. By the end, you'll know:
-- How to set up and initialize Aspose.Email in your .NET application.
-- The process of creating an instance of the `EWSClient` class with appropriate credentials.
-- Steps to create an Exchange task object and upload it to a server.
+سيرشدك هذا البرنامج التعليمي خلال إعداد عميل EWS، وإنشاء مهام Exchange باستخدام Aspose.Email لـ .NET. في النهاية، ستعرف:
+- كيفية إعداد Aspose.Email وتشغيله في تطبيق .NET الخاص بك.
+- عملية إنشاء مثيل لـ `EWSClient` الصف مع المؤهلات المناسبة.
+- خطوات إنشاء كائن مهمة Exchange وتحميله إلى الخادم.
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك:
-- **المكتبات**: Aspose.Email for .NET version 21.3 or later.
-- **بيئة**: A development environment set up with Visual Studio or another compatible IDE supporting .NET applications.
-- **معرفة**: Basic understanding of C# and familiarity with Exchange Web Services (EWS).
+- **المكتبات**:Aspose.Email لإصدار .NET 21.3 أو أحدث.
+- **بيئة**:بيئة تطوير تم إعدادها باستخدام Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة تدعم تطبيقات .NET.
+- **معرفة**:فهم أساسيات لغة C# والتعرف على خدمات Exchange Web Services (EWS).
 
 ## إعداد Aspose.Email لـ .NET
 
-To use Aspose.Email in your project, install the library using one of these methods:
+لاستخدام Aspose.Email في مشروعك، قم بتثبيت المكتبة باستخدام إحدى الطرق التالية:
 
 ### تثبيت
 
@@ -53,17 +53,17 @@ Install-Package Aspose.Email
 ### الحصول على الترخيص
 
 - **نسخة تجريبية مجانية**:تحميل من [الإصدارات](https://releases.aspose.com/email/net/).
-- **رخصة مؤقتة**: Request via [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**: Head over to the [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
+- **رخصة مؤقتة**:طلب عبر [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
+- **شراء**:توجه إلى [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
 
 ### التهيئة الأساسية
 
-After installation, set up Aspose.Email in your project by importing necessary namespaces:
+بعد التثبيت، قم بإعداد Aspose.Email في مشروعك عن طريق استيراد المساحات الأساسية الضرورية:
 
 ```csharp
 using Aspose.Email.Clients.Exchange.WebService;
 
-// Initialize EWS client with credentials.\IEWSClient client = EWSClient.GetEWSClient(
+// قم بتهيئة عميل EWS باستخدام بيانات الاعتماد.\IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

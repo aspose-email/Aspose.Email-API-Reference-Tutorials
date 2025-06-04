@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to connect, list folders, and manage emails on Microsoft Exchange Server using Aspose.Email for .NET. This guide covers step-by-step instructions, code examples, and best practices."
-"title": "Exchange Server Connectivity with Aspose.Email for .NET&#58; A Complete Guide"
+"description": "تعرّف على كيفية الاتصال، وعرض المجلدات، وإدارة رسائل البريد الإلكتروني على Microsoft Exchange Server باستخدام Aspose.Email لـ .NET. يتضمن هذا الدليل تعليمات خطوة بخطوة، وأمثلة برمجية، وأفضل الممارسات."
+"title": "الاتصال بخادم Exchange Server باستخدام Aspose.Email لـ .NET - دليل كامل"
 "url": "/ar/net/exchange-server-integration/exchange-server-connectivity-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,36 +11,36 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Exchange Server Connectivity with Aspose.Email for .NET: A Comprehensive Guide
+# إتقان الاتصال بخادم Exchange باستخدام Aspose.Email لـ .NET: دليل شامل
 
 ## مقدمة
 
-Navigating server connectivity can be challenging, especially with critical infrastructure like Microsoft's Exchange Server. **Aspose.Email لـ .NET** simplifies this process by enabling seamless connections and efficient email management. This guide provides a step-by-step approach to connecting to an Exchange server using Aspose.Email for .NET, including recursive folder listing.
+قد يكون التنقل عبر اتصال الخادم أمرًا صعبًا، خاصةً مع البنية التحتية الحيوية مثل Microsoft Exchange Server. **Aspose.Email لـ .NET** يُبسّط هذا الإجراء من خلال تمكين اتصالات سلسة وإدارة بريد إلكتروني فعّالة. يُقدّم هذا الدليل شرحًا خطوة بخطوة للاتصال بخادم Exchange باستخدام Aspose.Email لـ .NET، بما في ذلك قائمة المجلدات المتكررة.
 
 في هذا البرنامج التعليمي سوف تتعلم:
-- How to connect to an Exchange Server with Aspose.Email for .NET
-- Methods for listing all folders and subfolders on your Exchange server
-- Techniques for recursively traversing through subfolders
+- كيفية الاتصال بخادم Exchange باستخدام Aspose.Email لـ .NET
+- طرق إدراج جميع المجلدات والمجلدات الفرعية على خادم Exchange الخاص بك
+- تقنيات التنقل بشكل متكرر عبر المجلدات الفرعية
 
-Let's first review the prerequisites before diving into the code!
+دعونا أولاً نراجع المتطلبات الأساسية قبل الغوص في الكود!
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: Install this library using one of the methods below.
+- **Aspose.Email لـ .NET**:قم بتثبيت هذه المكتبة باستخدام إحدى الطرق الموضحة أدناه.
 
 ### متطلبات إعداد البيئة
-- A development environment with either .NET Framework or .NET Core.
+- بيئة تطوير باستخدام .NET Framework أو .NET Core.
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with Exchange Server operations.
+- المعرفة بعمليات Exchange Server.
 
 ## إعداد Aspose.Email لـ .NET
 
-To begin, install the **Aspose.Email** library using one of these methods:
+للبدء، قم بتثبيت **Aspose.Email** المكتبة باستخدام إحدى هذه الطرق:
 
 ### استخدام .NET CLI
 ```bash
@@ -56,27 +56,27 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث المتاح.
 
 #### خطوات الحصول على الترخيص
-Start with a free trial license to explore Aspose.Email's full capabilities. Consider purchasing or applying for a temporary license if you find it useful.
+ابدأ بإصدار تجريبي مجاني لاستكشاف كامل إمكانيات Aspose.Email. فكّر في شراء ترخيص مؤقت أو التقدم بطلب للحصول عليه إذا وجدته مفيدًا.
 
-**التهيئة الأساسية**: After installation, initialize your project as shown in the code snippets below.
+**التهيئة الأساسية**:بعد التثبيت، قم بتهيئة مشروعك كما هو موضح في مقتطفات التعليمات البرمجية أدناه.
 
 ## دليل التنفيذ
 
-Let's break down the implementation into distinct features and steps.
+دعونا نقسم التنفيذ إلى ميزات وخطوات مميزة.
 
-### Feature 1: Connect to Exchange Server
+### الميزة 1: الاتصال بخادم Exchange
 
 #### ملخص
-Connecting to an Exchange server is the first step. This section demonstrates how to authenticate and establish a connection using Aspose.Email.
+الاتصال بخادم Exchange هو الخطوة الأولى. يوضح هذا القسم كيفية المصادقة وإنشاء اتصال باستخدام Aspose.Email.
 
-##### Step 1: Initialize Connection Parameters
+##### الخطوة 1: تهيئة معلمات الاتصال
 ```csharp
 using Aspose.Email.Clients.Exchange;
 
 public static void ConnectToExchangeServer()
 {
-    // Create an instance of ExchangeClient with credentials and URI
-    ExchangeClient client = new ExchangeClient("http://ex07sp1/exchange/Administrator\
+    // إنشاء مثيل لـ ExchangeClient باستخدام بيانات الاعتماد وURI
+    ExchangeClient client = new ExchangeClient("http://ex07sp1/exchange/المسؤول\
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

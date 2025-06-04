@@ -16,20 +16,20 @@
 
 ## البرامج التعليمية المتاحة
 
-### [Count Messages in MBOX File Using Aspose.Email Java: A Comprehensive Guide for Thunderbird & MBOX Operations](./count-messages-mbox-aspose-email-java/)
-Learn how to efficiently count messages in an MBOX file using the Aspose.Email library in Java. This guide covers setup, implementation, and practical applications.
+### [عدّ الرسائل في ملف MBOX باستخدام Aspose.Email Java: دليل شامل لعمليات Thunderbird وMBOX](./count-messages-mbox-aspose-email-java/)
+تعرّف على كيفية حساب الرسائل بكفاءة في ملف MBOX باستخدام مكتبة Aspose.Email في جافا. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية.
 
-### [How to Read MBOX Files in Java with Aspose.Email: A Comprehensive Guide](./reading-mbox-files-java-aspose-email/)
-Learn how to efficiently read and process MBOX files using Aspose.Email for Java. This guide covers setup, implementation, and troubleshooting tips.
+### [كيفية قراءة ملفات MBOX في Java باستخدام Aspose.Email: دليل شامل](./reading-mbox-files-java-aspose-email/)
+تعرّف على كيفية قراءة ملفات MBOX ومعالجتها بكفاءة باستخدام Aspose.Email لـ Java. يتناول هذا الدليل نصائح الإعداد والتنفيذ واستكشاف الأخطاء وإصلاحها.
 
-### [Master Aspose.Email Java for MBOX Files: Read and Write Efficiently in Your Applications](./master-aspose-email-java-mbox-files/)
-Learn to efficiently read from and write to MBOX files using Aspose.Email for Java. This guide covers setting up, implementing, and optimizing your Java email applications.
+### [إتقان استخدام Aspose.Email Java لملفات MBOX: القراءة والكتابة بكفاءة في تطبيقاتك](./master-aspose-email-java-mbox-files/)
+تعلم كيفية قراءة ملفات MBOX والكتابة إليها بكفاءة باستخدام Aspose.Email لجافا. يغطي هذا الدليل إعداد تطبيقات البريد الإلكتروني الخاصة بجافا وتنفيذها وتحسينها.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

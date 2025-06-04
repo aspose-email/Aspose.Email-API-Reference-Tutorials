@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to preserve TNEF attachments when processing emails with Aspose.Email for .NET. This guide covers setup, implementation, and troubleshooting tips."
-"title": "How to Preserve TNEF Attachments in Emails Using Aspose.Email for .NET"
+"description": "تعرّف على كيفية حفظ مرفقات TNEF عند معالجة رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل نصائح الإعداد والتنفيذ واستكشاف الأخطاء وإصلاحها."
+"title": "كيفية حفظ مرفقات TNEF في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/attachments-handling/preserve-tnef-attachments-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,26 +11,26 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Preserve TNEF Attachments in Email Messages Using Aspose.Email for .NET
+# كيفية حفظ مرفقات TNEF في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Have you ever faced the challenge of losing important email attachments encoded in Transport Neutral Encapsulation Format (TNEF) when transferring messages from clients like Microsoft Outlook? With Aspose.Email for .NET, preserving these attachments during message processing is seamless. This tutorial will guide you through configuring your environment and implementing a solution to preserve TNEF attachments.
+هل سبق لك أن واجهت مشكلة فقدان مرفقات بريد إلكتروني مهمة مُرمّزة بتنسيق تغليف محايد النقل (TNEF) عند نقل رسائل من برامج مثل Microsoft Outlook؟ مع Aspose.Email لـ .NET، أصبح حفظ هذه المرفقات أثناء معالجة الرسائل أمرًا سهلاً. سيرشدك هذا البرنامج التعليمي خلال تهيئة بيئتك وتطبيق حل لحفظ مرفقات TNEF.
 
-By following this guide, you'll:
-- Configure your environment with Aspose.Email for .NET
-- Learn how to retain TNEF attachments while loading emails
-- Discover practical applications and performance optimization tips
+من خلال اتباع هذا الدليل، ستتمكن من:
+- قم بتكوين بيئتك باستخدام Aspose.Email لـ .NET
+- تعرف على كيفية الاحتفاظ بمرفقات TNEF أثناء تحميل رسائل البريد الإلكتروني
+- اكتشف التطبيقات العملية ونصائح تحسين الأداء
 
-Let's begin by reviewing the prerequisites.
+دعونا نبدأ بمراجعة المتطلبات الأساسية.
 
 ### المتطلبات الأساسية
 
-To get started, ensure you meet these requirements:
+للبدء، تأكد من تلبية المتطلبات التالية:
 
-- **المكتبات والتبعيات**: Install Aspose.Email for .NET, which offers robust email processing features.
-- **إعداد البيئة**: Use a C# development environment such as Visual Studio.
-- **متطلبات المعرفة**: Have basic knowledge of C# programming and experience handling email files.
+- **المكتبات والتبعيات**:قم بتثبيت Aspose.Email لـ .NET، والذي يوفر ميزات معالجة بريد إلكتروني قوية.
+- **إعداد البيئة**:استخدم بيئة تطوير C# مثل Visual Studio.
+- **متطلبات المعرفة**:لدي معرفة أساسية ببرمجة C# وخبرة في التعامل مع ملفات البريد الإلكتروني.
 
 ## إعداد Aspose.Email لـ .NET
 
@@ -53,14 +53,14 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-You can obtain a trial or purchase a license from Aspose:
+يمكنك الحصول على نسخة تجريبية أو شراء ترخيص من Aspose:
 - **نسخة تجريبية مجانية**:قم بتنزيل حزمة تجريبية من [تنزيلات Aspose](https://releases.aspose.com/email/net/).
-- **رخصة مؤقتة**: Request temporary full feature access at [ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**: Buy a license to remove limitations permanently at [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+- **رخصة مؤقتة**:اطلب الوصول المؤقت إلى الميزة الكاملة في [ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/).
+- **شراء**:شراء ترخيص لإزالة القيود بشكل دائم في [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة والإعداد الأساسي
 
-After installation, initialize Aspose.Email by adding these namespaces in your C# project:
+بعد التثبيت، قم بتهيئة Aspose.Email عن طريق إضافة هذه المساحات الأساسية في مشروع C# الخاص بك:
 ```csharp
 using System;
 using Aspose.Email.Mime;
@@ -68,72 +68,72 @@ using Aspose.Email.Mime;
 
 ## دليل التنفيذ
 
-In this section, we will guide you on preserving TNEF attachments when loading email messages.
+في هذا القسم، سنرشدك إلى كيفية الحفاظ على مرفقات TNEF عند تحميل رسائل البريد الإلكتروني.
 
-### Preserving TNEF Attachments
+### الحفاظ على مرفقات TNEF
 
 #### ملخص
 
-The goal is to ensure that TNEF-encoded attachments are retained during the message load process. This feature is crucial for developers needing to maintain data integrity while processing Outlook emails.
+الهدف هو ضمان حفظ المرفقات المُرمَّزة بـ TNEF أثناء تحميل الرسائل. تُعد هذه الميزة بالغة الأهمية للمطورين الذين يحتاجون إلى الحفاظ على سلامة البيانات أثناء معالجة رسائل البريد الإلكتروني في Outlook.
 
 #### التنفيذ خطوة بخطوة
 
-**Define Document Directory**
-Set up your directory path where email files will be stored:
+**تعريف دليل المستندات**
+قم بإعداد مسار الدليل الذي سيتم تخزين ملفات البريد الإلكتروني فيه:
 ```csharp
 string dataDir = @"YOUR_DOCUMENT_DIRECTORY";
 ```
 
-This variable holds the path to your document directory, essential for locating email files during processing.
+يحتوي هذا المتغير على المسار إلى دليل المستند الخاص بك، وهو أمر ضروري لتحديد موقع ملفات البريد الإلكتروني أثناء المعالجة.
 
-**Configure Load Options**
-Setup options to preserve TNEF attachments:
+**تكوين خيارات التحميل**
+خيارات الإعداد للحفاظ على مرفقات TNEF:
 ```csharp
 MsgLoadOptions options = new MsgLoadOptions();
-options.PreserveTnefAttachments = true; // Ensures preservation of TNEF attachments
+options.PreserveTnefAttachments = true; // يضمن الحفاظ على مرفقات TNEF
 ```
-هنا، `PreserveTnefAttachments` is set to `true`, enabling the retention of TNEF attachments.
+هنا، `PreserveTnefAttachments` تم ضبطه على `true`، مما يتيح الاحتفاظ بمرفقات TNEF.
 
-**Load Email Message**
-Use these options to load your email message:
+**تحميل رسالة البريد الإلكتروني**
+استخدم هذه الخيارات لتحميل رسالة البريد الإلكتروني الخاصة بك:
 ```csharp
 MailMessage eml = MailMessage.Load(dataDir + "EmbeddedImage1.msg");
 ```
-This step loads the email file using Aspose.Email, ensuring all configurations are respected during processing.
+تؤدي هذه الخطوة إلى تحميل ملف البريد الإلكتروني باستخدام Aspose.Email، مما يضمن احترام كافة التكوينات أثناء المعالجة.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **Missing Attachments**: Verify that `PreserveTnefAttachments` is set to true.
-- **File Path Errors**: Ensure your document directory path is correct and accessible.
+- **المرفقات المفقودة**:تأكد من ذلك `PreserveTnefAttachments` تم ضبطه على true.
+- **أخطاء مسار الملف**:تأكد من أن مسار دليل المستند الخاص بك صحيح ويمكن الوصول إليه.
 
 ## التطبيقات العملية
 
-Here are some scenarios where preserving TNEF attachments can be beneficial:
-1. **حلول أرشفة البريد الإلكتروني**: Maintaining data integrity in archived emails from Outlook is crucial.
-2. **مشاريع الهجرة**: Ensures no data loss during migrations between email clients or systems.
-3. **Legal and Compliance**: Essential for industries requiring strict adherence to document preservation laws, maintaining complete email records including attachments.
+فيما يلي بعض السيناريوهات حيث يمكن أن يكون الحفاظ على مرفقات TNEF مفيدًا:
+1. **حلول أرشفة البريد الإلكتروني**:إن الحفاظ على سلامة البيانات في رسائل البريد الإلكتروني المؤرشفة من Outlook أمر بالغ الأهمية.
+2. **مشاريع الهجرة**:يضمن عدم فقدان البيانات أثناء عمليات الترحيل بين عملاء البريد الإلكتروني أو الأنظمة.
+3. **الشؤون القانونية والامتثال**:ضروري للصناعات التي تتطلب الالتزام الصارم بقوانين حفظ المستندات، والحفاظ على سجلات البريد الإلكتروني كاملة بما في ذلك المرفقات.
 
 ## اعتبارات الأداء
-When working with Aspose.Email for .NET, consider these tips:
-- Optimize memory usage by disposing of `MailMessage` objects after use.
-- Utilize efficient data structures and algorithms when processing large volumes of emails to enhance performance.
+عند العمل مع Aspose.Email لـ .NET، ضع النصائح التالية في الاعتبار:
+- تحسين استخدام الذاكرة عن طريق التخلص منها `MailMessage` الأشياء بعد الاستخدام.
+- استخدم هياكل البيانات والخوارزميات الفعالة عند معالجة كميات كبيرة من رسائل البريد الإلكتروني لتحسين الأداء.
 
 ## خاتمة
-Preserving TNEF attachments in email messages is vital for developers dealing with Outlook emails. By following this tutorial, you can ensure your application maintains data integrity during email processing.
+يُعدّ الحفاظ على مرفقات TNEF في رسائل البريد الإلكتروني أمرًا بالغ الأهمية للمطورين الذين يتعاملون مع رسائل Outlook. باتباع هذا الدليل، يمكنك ضمان حفاظ تطبيقك على سلامة البيانات أثناء معالجة البريد الإلكتروني.
 
 ### الخطوات التالية
-Explore additional features offered by Aspose.Email for .NET and consider integrating them into your projects to enhance functionality further.
+استكشف الميزات الإضافية التي يقدمها Aspose.Email لـ .NET وفكر في دمجها في مشاريعك لتحسين الوظائف بشكل أكبر.
 
 ## قسم الأسئلة الشائعة
 1. **ما هو TNEF؟**
-   - TNEF stands for Transport Neutral Encapsulation Format, used primarily in Outlook emails to encapsulate attachments.
+   - TNEF هو اختصار لـ Transport Neutral Encapsulation Format، والذي يستخدم بشكل أساسي في رسائل البريد الإلكتروني في Outlook لتغليف المرفقات.
 2. **كيف أقوم بتثبيت Aspose.Email لـ .NET؟**
-   - Use the .NET CLI, Package Manager Console, or NuGet Package Manager UI as described earlier.
-3. **Can I use a free trial of Aspose.Email?**
-   - Yes, download and test a free trial from the Aspose website.
-4. **What should I do if attachments are still missing after setting PreserveTnefAttachments to true?**
-   - Double-check your directory paths and ensure all configurations are correctly applied.
-5. **Are there alternatives to using Aspose.Email for preserving TNEF attachments?**
-   - While other libraries may offer similar functionality, Aspose.Email provides a comprehensive solution with robust support and documentation.
+   - استخدم .NET CLI أو Package Manager Console أو NuGet Package Manager UI كما هو موضح سابقًا.
+3. **هل يمكنني استخدام نسخة تجريبية مجانية من Aspose.Email؟**
+   - نعم، قم بتنزيل وتجربة نسخة تجريبية مجانية من موقع Aspose.
+4. **ماذا يجب أن أفعل إذا كانت المرفقات لا تزال مفقودة بعد تعيين PreserveTnefAttachments على true؟**
+   - تأكد من مسارات الدليل لديك وتأكد من تطبيق كافة التكوينات بشكل صحيح.
+5. **هل هناك بدائل لاستخدام Aspose.Email للحفاظ على مرفقات TNEF؟**
+   - على الرغم من أن المكتبات الأخرى قد توفر وظائف مماثلة، فإن Aspose.Email يوفر حلاً شاملاً مع دعم قوي ووثائق.
 
 ## موارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/net/)

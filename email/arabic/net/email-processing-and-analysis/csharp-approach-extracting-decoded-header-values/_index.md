@@ -1,8 +1,8 @@
 ---
-"description": "Learn to extract decoded email header values in C# using Aspose.Email for .NET. Comprehensive guide with code examples."
-"linktitle": "C# Approach - Extracting Decoded Header Values"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "C# Approach - Extracting Decoded Header Values"
+"description": "تعلم كيفية استخراج قيم رؤوس رسائل البريد الإلكتروني المُفككة بلغة C# باستخدام Aspose.Email لـ .NET. دليل شامل مع أمثلة برمجية."
+"linktitle": "نهج C# - استخراج قيم الرأس المفككة"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "نهج C# - استخراج قيم الرأس المفككة"
 "url": "/ar/net/email-processing-and-analysis/csharp-approach-extracting-decoded-header-values/"
 "weight": 17
 ---
@@ -13,31 +13,31 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C# Approach - Extracting Decoded Header Values
+# نهج C# - استخراج قيم الرأس المفككة
 
 
-In this tutorial, we will guide you through the process of using Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET is a robust library that empowers developers to work with various aspects of email messages, including reading and manipulating email headers.
+في هذا البرنامج التعليمي، سنرشدك خلال عملية استخدام Aspose.Email لـ .NET لاستخراج قيم الرؤوس المفكوكة من رسائل البريد الإلكتروني. Aspose.Email لـ .NET هي مكتبة قوية تُمكّن المطورين من التعامل مع جوانب مختلفة من رسائل البريد الإلكتروني، بما في ذلك قراءة رؤوس الرسائل ومعالجتها.
 
-## Step 1: Download and Install Aspose.Email for .NET
+## الخطوة 1: تنزيل وتثبيت Aspose.Email لـ .NET
 
-Before we begin, ensure that you have Aspose.Email for .NET installed. If you haven't already, you can download the library from the following link: [تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
+قبل أن نبدأ، تأكد من تثبيت Aspose.Email لـ .NET. إذا لم تكن قد قمت بذلك بالفعل، يمكنك تنزيل المكتبة من الرابط التالي: [تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net).
 
-## Step 2: Create a New C# Project
+## الخطوة 2: إنشاء مشروع C# جديد
 
-Start by creating a new C# project in your preferred integrated development environment (IDE) or text editor.
+ابدأ بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) أو محرر النصوص المفضل لديك.
 
-## Step 3: Add a Reference to Aspose.Email
+## الخطوة 3: إضافة مرجع إلى Aspose.Email
 
-In order to use Aspose.Email in your project, you need to add a reference to the `Aspose.Email` assembly. Here's how:
+لكي تتمكن من استخدام Aspose.Email في مشروعك، تحتاج إلى إضافة مرجع إلى `Aspose.Email` التجميع. إليك الطريقة:
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Add" > "Reference."
-3. In the "Reference Manager" window, click "Browse" or "Browse..." and navigate to the location where you installed Aspose.Email.
-4. Choose the appropriate assembly for your project (for example, `Aspose.Email.dll`) and click "Add."
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول.
+2. حدد "إضافة" > "مرجع".
+3. في نافذة "مدير المراجع"، انقر فوق "استعراض" أو "استعراض..." وانتقل إلى الموقع الذي قمت بتثبيت Aspose.Email فيه.
+4. اختر التجميع المناسب لمشروعك (على سبيل المثال، `Aspose.Email.dll`) ثم انقر فوق "إضافة".
 
-## Step 4: Extract Decoded Header Values
+## الخطوة 4: استخراج قيم الرأس المفككة
 
-Now let's dive into the code to extract decoded header values from an email message. In this example, we will focus on extracting the "Subject" header.
+لنبدأ الآن بشرح كيفية استخراج قيم رأس الرسالة المُفككة من رسالة بريد إلكتروني. في هذا المثال، سنركز على استخراج رأس "الموضوع".
 
 ```csharp
 using Aspose.Email;
@@ -47,7 +47,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Load the email message
+        // تحميل رسالة البريد الإلكتروني
 		MailMessage mailMessage = MailMessage.Load("path/to/your/email.eml");
 		string decodedValue = mailMessage.Headers.GetDecodedValue("Thread-Topic");
 		Console.WriteLine(decodedValue);
@@ -56,35 +56,35 @@ class Program
 }
 ```
 
-In the code snippet above, we perform the following steps:
+في مقتطف التعليمات البرمجية أعلاه، نقوم بتنفيذ الخطوات التالية:
 
-1. We import necessary namespaces (`Aspose.Email` و `Aspose.Email.Mail`).
-2. We create a `Main` method as the entry point of our application.
-3. Within the `Main` method, we use the `MailMessage.Load` method to load an email message from a file. Replace `"path/to/your/email.eml"` with the actual path to the email message you want to process.
-4. We use the `Headers.GetDecodedValue` method to decode the Subject header.
-5. We print the decoded Subject header to the console.
+1. نقوم باستيراد مساحات الأسماء الضرورية (`Aspose.Email` و `Aspose.Email.Mail`).
+2. نحن ننشئ `Main` الطريقة كنقطة دخول لتطبيقنا.
+3. ضمن `Main` الطريقة التي نستخدمها `MailMessage.Load` طريقة لتحميل رسالة بريد إلكتروني من ملف. استبدل `"path/to/your/email.eml"` مع المسار الفعلي لرسالة البريد الإلكتروني التي تريد معالجتها.
+4. نحن نستخدم `Headers.GetDecodedValue` طريقة فك تشفير رأس الموضوع.
+5. نقوم بطباعة رأس الموضوع المفكك إلى وحدة التحكم.
 
-## Step 5: Run the Application
+## الخطوة 5: تشغيل التطبيق
 
-Compile and run your application. Make sure to replace `"path/to/your/email.eml"` with the actual path to the email message you want to process. The application will load the email, extract the decoded Subject header, and display it in the console.
+قم بتجميع تطبيقك وتشغيله. تأكد من استبدال `"path/to/your/email.eml"` مع المسار الفعلي لرسالة البريد الإلكتروني التي تريد معالجتها. سيقوم التطبيق بتحميل البريد الإلكتروني، واستخراج رأس الموضوع المُفكك، وعرضه في وحدة التحكم.
 
 ## الأسئلة الشائعة
 
-### How can I decode other email headers using Aspose.Email for .NET?
+### كيف يمكنني فك تشفير رؤوس البريد الإلكتروني الأخرى باستخدام Aspose.Email لـ .NET؟
 
-You can decode various email headers such as "From," "To," "Date," etc., using the `Headers.GetDecodedValue` method. Just provide the header value as a parameter to the method.
+يمكنك فك تشفير عناوين البريد الإلكتروني المختلفة مثل "من"، "إلى"، "التاريخ"، وما إلى ذلك، باستخدام `Headers.GetDecodedValue` الطريقة. ما عليك سوى توفير قيمة الرأس كمعامل للطريقة.
 
-### Where can I find more information about Aspose.Email for .NET?
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email لـ .NET؟
 
-For detailed documentation and examples, refer to the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net).
+للحصول على توثيقات وأمثلة مفصلة، راجع [مرجع Aspose.Email لـ .NET API](https://reference.aspose.com/email/net).
 
-### Is Aspose.Email for .NET available for free?
+### هل Aspose.Email لـ .NET متاح مجانًا؟
 
-Aspose.Email for .NET is a commercial library. You can explore its features by [downloading the free trial version](https://releases.aspose.com/email/net).
+Aspose.Email لـ .NET هي مكتبة تجارية. يمكنك استكشاف ميزاتها من خلال [تنزيل النسخة التجريبية المجانية](https://releases.aspose.com/email/net).
 
 ## خاتمة
 
-In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract decoded header values from email messages. Aspose.Email for .NET provides a comprehensive set of tools that empowers developers to efficiently work with email messages, including handling headers.
+في هذا البرنامج التعليمي، تعلمت كيفية استخدام Aspose.Email لـ .NET لاستخراج قيم الرؤوس المفكوكة من رسائل البريد الإلكتروني. يوفر Aspose.Email لـ .NET مجموعة شاملة من الأدوات التي تُمكّن المطورين من العمل بكفاءة مع رسائل البريد الإلكتروني، بما في ذلك معالجة الرؤوس.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

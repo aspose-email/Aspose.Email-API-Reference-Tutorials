@@ -16,83 +16,83 @@
 
 ## البرامج التعليمية المتاحة
 
-### [Aspose.Email Java: Comprehensive Guide to PST File Management and Operations](./aspose-email-java-pst-file-management/)
-Learn how to manage Outlook PST files with Aspose.Email for Java. This guide covers accessing, navigating, extracting data, and optimizing performance in your Java applications.
+### [Aspose.Email Java: دليل شامل لإدارة ملفات PST والعمليات الخاصة بها](./aspose-email-java-pst-file-management/)
+تعرّف على كيفية إدارة ملفات Outlook PST باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الوصول إلى البيانات وتصفحها واستخراجها وتحسين أدائها في تطبيقات Java.
 
-### [Aspose.Email Java: Read and Convert OST Files Efficiently for Outlook Management](./aspose-email-java-read-convert-ost-files/)
-Learn how to use Aspose.Email for Java to read and convert OST files into PST format, streamlining your email management process with ease.
+### [Aspose.Email Java: قراءة ملفات OST وتحويلها بكفاءة لإدارة Outlook](./aspose-email-java-read-convert-ost-files/)
+تعرف على كيفية استخدام Aspose.Email لـ Java لقراءة ملفات OST وتحويلها إلى تنسيق PST، مما يسهل عملية إدارة البريد الإلكتروني لديك بسهولة.
 
-### [Bulk Update PST Messages with Aspose.Email for Java: A Comprehensive Guide](./aspose-email-java-bulk-update-pst-messages/)
-Learn how to efficiently bulk update Outlook PST messages using Aspose.Email for Java. This guide covers updating subjects, importance levels, and custom properties.
+### [تحديث رسائل PST بشكل مجمع باستخدام Aspose.Email لـ Java: دليل شامل](./aspose-email-java-bulk-update-pst-messages/)
+تعرّف على كيفية تحديث رسائل Outlook PST بشكل جماعي بكفاءة باستخدام Aspose.Email لـ Java. يتناول هذا الدليل تحديث المواضيع ومستويات الأهمية والخصائص المخصصة.
 
-### [Check PST Password Protection Using Aspose.Email for Java: A Complete Guide](./check-pst-password-protection-aspose-email-java/)
-Learn how to programmatically check and validate PST file password protection using Aspose.Email in Java, ensuring secure email data management.
+### [التحقق من حماية كلمة مرور PST باستخدام Aspose.Email لـ Java: دليل كامل](./check-pst-password-protection-aspose-email-java/)
+تعرف على كيفية التحقق من صحة حماية كلمة مرور ملف PST برمجيًا باستخدام Aspose.Email في Java، مما يضمن إدارة بيانات البريد الإلكتروني بشكل آمن.
 
-### [Create PST Files with Nested Folder Hierarchy Using Aspose.Email for Java](./aspose-email-java-create-pst-folders-hierarchy/)
-Learn how to use Aspose.Email for Java to create and organize PST files with nested folder hierarchies in your Java applications.
+### [إنشاء ملفات PST باستخدام تسلسل هرمي للمجلدات المتداخلة باستخدام Aspose.Email لـ Java](./aspose-email-java-create-pst-folders-hierarchy/)
+تعرف على كيفية استخدام Aspose.Email لـ Java لإنشاء ملفات PST وتنظيمها باستخدام تسلسلات هرمية للمجلدات المتداخلة في تطبيقات Java الخاصة بك.
 
-### [Delete Emails from PST Files Using Aspose.Email for Java: A Comprehensive Guide](./delete-emails-pst-aspose-java/)
-Learn how to efficiently delete emails from PST files using Aspose.Email for Java. This guide covers both single and bulk deletions with step-by-step instructions.
+### [حذف رسائل البريد الإلكتروني من ملفات PST باستخدام Aspose.Email لـ Java: دليل شامل](./delete-emails-pst-aspose-java/)
+تعرّف على كيفية حذف رسائل البريد الإلكتروني بكفاءة من ملفات PST باستخدام Aspose.Email لجافا. يغطي هذا الدليل عمليات الحذف الفردية والجماعية، مع تعليمات خطوة بخطوة.
 
-### [Efficiently Load and Process Outlook PST Files Using Aspose.Email for Java](./aspose-email-java-outlook-pst-processing/)
-Learn how to manage Outlook PST files with Aspose.Email for Java. This guide covers loading, accessing contacts, extracting information, and saving in vCard format.
+### [تحميل ومعالجة ملفات Outlook PST بكفاءة باستخدام Aspose.Email لـ Java](./aspose-email-java-outlook-pst-processing/)
+تعرّف على كيفية إدارة ملفات Outlook PST باستخدام Aspose.Email لـ Java. يغطي هذا الدليل تحميل جهات الاتصال والوصول إليها واستخراج المعلومات وحفظها بتنسيق vCard.
 
-### [Email Management in Java: Create PST Files & Distribution Lists with Aspose.Email](./email-management-java-aspose-pst-lists/)
-Learn how to manage emails programmatically in Java using Aspose.Email. This guide covers creating PST files, adding contacts, and managing distribution lists.
+### [إدارة البريد الإلكتروني في Java: إنشاء ملفات PST وقوائم التوزيع باستخدام Aspose.Email](./email-management-java-aspose-pst-lists/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني برمجيًا في جافا باستخدام Aspose.Email. يتناول هذا الدليل إنشاء ملفات PST، وإضافة جهات اتصال، وإدارة قوائم التوزيع.
 
-### [How to Create PST Files with Locale Settings Using Aspose.Email for Java](./aspose-email-java-set-locale-create-pst-files/)
-Learn how to set locale and create PST files in Java using Aspose.Email. This guide covers setting up, code examples, and practical applications.
+### [كيفية إنشاء ملفات PST بإعدادات محلية باستخدام Aspose.Email لـ Java](./aspose-email-java-set-locale-create-pst-files/)
+تعرّف على كيفية ضبط الإعدادات المحلية وإنشاء ملفات PST في جافا باستخدام Aspose.Email. يغطي هذا الدليل الإعداد، وأمثلة التعليمات البرمجية، والتطبيقات العملية.
 
-### [How to Create and Manage Outlook PST Files Using Aspose.Email for Java](./aspose-email-java-manage-pst-files/)
-Learn how to efficiently manage Outlook PST files using Aspose.Email for Java. This guide covers creating, organizing, and optimizing PST files with step-by-step instructions.
+### [كيفية إنشاء ملفات Outlook PST وإدارتها باستخدام Aspose.Email لـ Java](./aspose-email-java-manage-pst-files/)
+تعرّف على كيفية إدارة ملفات Outlook PST بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إنشاء ملفات PST وتنظيمها وتحسينها من خلال تعليمات خطوة بخطوة.
 
-### [How to Create and Manage PST Files Using Aspose.Email for Java: A Comprehensive Guide](./aspose-email-java-pst-management/)
-Learn how to create and manage Outlook PST files with Aspose.Email for Java. This guide covers setup, creating PST files, adding folders, and inserting documents.
+### [كيفية إنشاء ملفات PST وإدارتها باستخدام Aspose.Email لـ Java: دليل شامل](./aspose-email-java-pst-management/)
+تعرّف على كيفية إنشاء ملفات Outlook PST وإدارتها باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وإنشاء ملفات PST، وإضافة المجلدات، وإدراج المستندات.
 
-### [How to Extract Outlook PST Messages Using Aspose.Email for Java: A Complete Guide](./extract-outlook-pst-messages-aspose-email-java/)
-Learn how to efficiently extract messages from Outlook PST files using Aspose.Email for Java. This guide covers setup, code examples, and practical applications.
+### [كيفية استخراج رسائل Outlook PST باستخدام Aspose.Email لـ Java: دليل شامل](./extract-outlook-pst-messages-aspose-email-java/)
+تعرّف على كيفية استخراج الرسائل بكفاءة من ملفات Outlook PST باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وأمثلة التعليمات البرمجية، والتطبيقات العملية.
 
-### [How to Query and Display User-Created Folders in Outlook PST Using Aspose.Email for Java](./query-display-folders-outlook-pst-aspose-email-java/)
-Learn how to efficiently manage and query user-created folders in Outlook PST files using the Aspose.Email library with this comprehensive guide.
+### [كيفية الاستعلام عن المجلدات التي أنشأها المستخدم وعرضها في Outlook PST باستخدام Aspose.Email لـ Java](./query-display-folders-outlook-pst-aspose-email-java/)
+تعرف على كيفية إدارة المجلدات التي ينشئها المستخدمون والاستعلام عنها بكفاءة في ملفات Outlook PST باستخدام مكتبة Aspose.Email من خلال هذا الدليل الشامل.
 
-### [Java Email Retrieval from PST Files: Optimize Using Aspose.Email for Java](./optimize-java-email-retrieval-pst-aspose/)
-Learn how to efficiently retrieve emails from PST files using Aspose.Email for Java. Filter by importance, size, and more with this comprehensive guide.
+### [استرجاع البريد الإلكتروني من ملفات PST باستخدام Java: تحسين الأداء باستخدام Aspose.Email لـ Java](./optimize-java-email-retrieval-pst-aspose/)
+تعرّف على كيفية استرداد رسائل البريد الإلكتروني بكفاءة من ملفات PST باستخدام Aspose.Email لجافا. حدّد الأهمية والحجم والمزيد باستخدام هذا الدليل الشامل.
 
-### [Java Tutorial: Read OLM Files Using Aspose.Email for Effective Email Management](./java-read-olm-files-aspose-email-guide/)
-Master reading and managing OLM files in Java with Aspose.Email. This guide provides a step-by-step tutorial on loading, processing, and extracting data from OLM files.
+### [برنامج تعليمي في Java: قراءة ملفات OLM باستخدام Aspose.Email لإدارة البريد الإلكتروني بفعالية](./java-read-olm-files-aspose-email-guide/)
+أتقن قراءة وإدارة ملفات OLM في جافا باستخدام Aspose.Email. يقدم هذا الدليل شرحًا تفصيليًا لتحميل البيانات ومعالجتها واستخراجها من ملفات OLM.
 
-### [Load and Access Outlook PST Files Using Java with Aspose.Email](./email-management-java-load-access-pst-files/)
-Learn how to efficiently load and access Outlook PST files using Java with Aspose.Email. Master email management tasks in your applications.
+### [تحميل ملفات Outlook PST والوصول إليها باستخدام Java مع Aspose.Email](./email-management-java-load-access-pst-files/)
+تعرّف على كيفية تحميل ملفات Outlook PST والوصول إليها بكفاءة باستخدام Java مع Aspose.Email. أتقن مهام إدارة البريد الإلكتروني في تطبيقاتك.
 
-### [Manipulate PST Files Using Aspose.Email for Java: A Comprehensive Guide](./manipulate-pst-files-aspose-email-java/)
-Learn how to programmatically manage Outlook PST files using Aspose.Email for Java. This guide covers loading, navigating, and modifying PST file structures effectively.
+### [التعامل مع ملفات PST باستخدام Aspose.Email لـ Java: دليل شامل](./manipulate-pst-files-aspose-email-java/)
+تعرّف على كيفية إدارة ملفات Outlook PST برمجيًا باستخدام Aspose.Email لـ Java. يغطي هذا الدليل تحميل ملفات PST وتصفحها وتعديل هياكلها بفعالية.
 
-### [Master Aspose.Email for Java: Efficiently Manage Outlook PST Files](./aspose-email-java-manage-outlook-pst-files/)
-Learn how to efficiently manage Outlook PST files using Aspose.Email for Java. This guide covers setup, loading, exploring, and retrieving message details with ease.
+### [إتقان Aspose.Email لـ Java: إدارة ملفات Outlook PST بكفاءة](./aspose-email-java-manage-outlook-pst-files/)
+تعرّف على كيفية إدارة ملفات Outlook PST بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إعداد الرسائل وتحميلها واستكشافها واسترجاع تفاصيلها بسهولة.
 
-### [Master Creating and Managing Outlook Contacts with Aspose.Email for Java](./outlook-contacts-aspose-email-java/)
-Learn how to efficiently create and manage Outlook contacts using Aspose.Email for Java. Enhance your email workflows with this comprehensive guide.
+### [إتقان إنشاء جهات اتصال Outlook وإدارتها باستخدام Aspose.Email لنظام Java](./outlook-contacts-aspose-email-java/)
+تعرّف على كيفية إنشاء جهات اتصال Outlook وإدارتها بكفاءة باستخدام Aspose.Email لـ Java. حسّن سير عمل بريدك الإلكتروني مع هذا الدليل الشامل.
 
-### [Master Load and Print OLM Hierarchy Using Aspose.Email for Java](./load-print-olm-hierarchy-aspose-email-java/)
-Learn how to efficiently manage Outlook Personal Folders (OLM) files with Aspose.Email for Java. This guide covers loading, retrieving, and printing OLM folder hierarchies.
+### [تحميل رئيسي وطباعة التسلسل الهرمي OLM باستخدام Aspose.Email لـ Java](./load-print-olm-hierarchy-aspose-email-java/)
+تعرّف على كيفية إدارة ملفات مجلدات Outlook الشخصية (OLM) بكفاءة باستخدام Aspose.Email لـ Java. يتناول هذا الدليل تحميل واسترجاع وطباعة تسلسلات مجلدات OLM.
 
-### [Mastering Aspose.Email Java: Split and Merge PST Files for Outlook Management](./master-aspose-email-java-split-merge-pst-files/)
-Learn how to efficiently split large Outlook PST files and merge multiple ones using Aspose.Email for Java, enhancing your email management process.
+### [إتقان استخدام Aspose.Email في Java: تقسيم ملفات PST ودمجها لإدارة Outlook](./master-aspose-email-java-split-merge-pst-files/)
+تعرف على كيفية تقسيم ملفات Outlook PST الكبيرة بكفاءة ودمج ملفات متعددة باستخدام Aspose.Email لـ Java، مما يعزز عملية إدارة البريد الإلكتروني لديك.
 
-### [Mastering OLM File Management with Aspose.Email for Java: A Comprehensive Guide](./mastering-olm-file-management-aspose-email-java/)
-Learn how to manage Outlook Offline Storage Files (OLM) with ease using Aspose.Email for Java. This guide covers loading, retrieving folder hierarchies, and best practices.
+### [إتقان إدارة ملفات OLM باستخدام Aspose.Email لـ Java: دليل شامل](./mastering-olm-file-management-aspose-email-java/)
+تعرّف على كيفية إدارة ملفات التخزين غير المتصلة بـ Outlook (OLM) بسهولة باستخدام Aspose.Email لـ Java. يتناول هذا الدليل تحميل واسترجاع تسلسلات المجلدات، وأفضل الممارسات.
 
-### [Save PST Messages to Streams & Files with Aspose.Email for Java: Comprehensive Guide](./save-pst-messages-aspose-email-java/)
-Learn how to save and manage PST messages using Aspose.Email for Java. This guide covers saving emails as streams or files, enhancing your email management workflow.
+### [حفظ رسائل PST في التدفقات والملفات باستخدام Aspose.Email لـ Java: دليل شامل](./save-pst-messages-aspose-email-java/)
+تعرّف على كيفية حفظ رسائل PST وإدارتها باستخدام Aspose.Email لـ Java. يتناول هذا الدليل حفظ رسائل البريد الإلكتروني كملفات أو تدفقات، مما يُحسّن سير عمل إدارة بريدك الإلكتروني.
 
-### [Transfer Messages Between PST Files Using Aspose.Email for Java: A Comprehensive Guide](./transfer-messages-between-pst-files-using-aspose-email-for-java/)
-Learn how to seamlessly transfer messages between Outlook PST files using Aspose.Email for Java. This guide provides step-by-step instructions, best practices, and troubleshooting tips.
+### [نقل الرسائل بين ملفات PST باستخدام Aspose.Email لـ Java: دليل شامل](./transfer-messages-between-pst-files-using-aspose-email-for-java/)
+تعرّف على كيفية نقل الرسائل بسلاسة بين ملفات Outlook PST باستخدام Aspose.Email لـ Java. يوفر هذا الدليل إرشادات خطوة بخطوة، وأفضل الممارسات، ونصائح لاستكشاف الأخطاء وإصلاحها.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

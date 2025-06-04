@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Master creating and sending calendar invitations using Aspose.Email for Java. Learn to manage delegate access, permissions, and optimize your workflow effectively."
-"title": "Create & Send Calendar Invitations with Aspose.Email for Java&#58; A Step-by-Step Guide"
+"description": "أتقن إنشاء وإرسال دعوات التقويم باستخدام Aspose.Email لجافا. تعلم كيفية إدارة وصول المفوضين وأذوناتهم، وتحسين سير عملك بفعالية."
+"title": "إنشاء دعوات التقويم وإرسالها باستخدام Aspose.Email لـ Java - دليل خطوة بخطوة"
 "url": "/ar/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/"
 "weight": 1
 ---
@@ -11,36 +11,36 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Create & Send Calendar Invitations with Aspose.Email for Java: A Step-by-Step Guide
+# إنشاء دعوات التقويم وإرسالها باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة
 ## مقدمة
-Managing calendar sharing invitations can be a complex task, especially when dealing with multiple users across different platforms. Aspose.Email for Java provides an efficient way to handle these tasks seamlessly within your applications. This tutorial will guide you through creating and sending calendar sharing invitations using Aspose.Email for Java, making it easier for you to manage delegate access and permissions.
+قد تكون إدارة دعوات مشاركة التقويم مهمة معقدة، خاصةً عند التعامل مع عدة مستخدمين عبر منصات مختلفة. يوفر Aspose.Email لـ Java طريقة فعّالة لإدارة هذه المهام بسلاسة داخل تطبيقاتك. سيرشدك هذا البرنامج التعليمي خلال إنشاء وإرسال دعوات مشاركة التقويم باستخدام Aspose.Email لـ Java، مما يُسهّل عليك إدارة وصول المفوضين وأذوناتهم.
 
 **ما سوف تتعلمه:**
-- How to initialize the EWS client with Aspose.Email for Java
-- Creating a delegate user and setting calendar folder permissions
-- Sending calendar sharing invitations via email
+- كيفية تهيئة عميل EWS باستخدام Aspose.Email لـ Java
+- إنشاء مستخدم مفوض وتعيين أذونات مجلد التقويم
+- إرسال دعوات مشاركة التقويم عبر البريد الإلكتروني
 - التطبيقات العملية لهذه الميزات في سيناريوهات العالم الحقيقي
 
-Before we dive into the implementation, let’s cover the prerequisites you need to get started.
+قبل أن نتعمق في التنفيذ، دعنا نغطي المتطلبات الأساسية التي تحتاجها للبدء.
 ## المتطلبات الأساسية
 لمتابعة هذا البرنامج التعليمي بشكل فعال، تأكد من أن لديك:
 
-- **Java Development Kit (JDK):** Version 16 or later.
-- **Maven:** For managing project dependencies and building your Java application.
-- **Aspose.Email for Java Library:** Specifically version 25.4 with JDK 16 support.
+- **مجموعة تطوير Java (JDK):** الإصدار 16 أو أحدث.
+- **مافن:** لإدارة تبعيات المشروع وإنشاء تطبيق Java الخاص بك.
+- **Aspose.Email لمكتبة Java:** على وجه التحديد الإصدار 25.4 مع دعم JDK 16.
 ### متطلبات إعداد البيئة
-Ensure that your development environment is set up correctly:
-1. Install JDK if you haven't already. You can download it from [Oracle's official site](https://www.oracle.com/java/technologies/javase-downloads.html).
-2. Make sure Maven is installed and configured on your machine.
-3. Set up an IDE like IntelliJ IDEA or Eclipse for ease of development.
+تأكد من إعداد بيئة التطوير الخاصة بك بشكل صحيح:
+1. ثبّت JDK إذا لم تقم بذلك بالفعل. يمكنك تنزيله من [الموقع الرسمي لشركة أوراكل](https://www.oracle.com/java/technologies/javase-downloads.html).
+2. تأكد من تثبيت Maven وتكوينه على جهازك.
+3. قم بإعداد IDE مثل IntelliJ IDEA أو Eclipse لتسهيل التطوير.
 ### متطلبات المعرفة
-- Basic understanding of Java programming
-- Familiarity with handling dependencies using Maven
-- Experience with Exchange Web Services (EWS) can be beneficial but not mandatory
-## Setting Up Aspose.Email for Java
-To begin, you'll need to set up your project with the necessary dependencies. We will use Maven for this purpose.
-### Maven Configuration
-Add the following dependency to your `pom.xml` file:
+- فهم أساسي لبرمجة جافا
+- المعرفة بكيفية التعامل مع التبعيات باستخدام Maven
+- يمكن أن تكون الخبرة في خدمات Exchange Web Services (EWS) مفيدة ولكنها ليست إلزامية
+## إعداد Aspose.Email لـ Java
+للبدء، ستحتاج إلى إعداد مشروعك بالتبعيات اللازمة. سنستخدم Maven لهذا الغرض.
+### تكوين Maven
+أضف التبعية التالية إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -50,37 +50,37 @@ Add the following dependency to your `pom.xml` file:
 </dependency>
 ```
 ### الحصول على الترخيص
-Aspose.Email for Java requires a license to unlock its full potential. Here’s how you can get started:
-- **نسخة تجريبية مجانية:** You can download a trial version from [صفحة إصدار Aspose](https://releases.aspose.com/email/java/).
-- **رخصة مؤقتة:** If you need more time, apply for a temporary license on the Aspose website.
-- **شراء:** For long-term use, consider purchasing a full license.
+يتطلب Aspose.Email لجافا ترخيصًا للاستفادة من كامل إمكاناته. إليك كيفية البدء:
+- **نسخة تجريبية مجانية:** يمكنك تنزيل النسخة التجريبية من [صفحة إصدار Aspose](https://releases.aspose.com/email/java/).
+- **رخصة مؤقتة:** إذا كنت بحاجة إلى مزيد من الوقت، قم بالتقدم بطلب للحصول على ترخيص مؤقت على موقع Aspose.
+- **شراء:** للاستخدام طويل الأمد، فكر في شراء ترخيص كامل.
 ### التهيئة والإعداد الأساسي
-Once your project is set up with Maven, initialize the EWS client as shown below:
+بمجرد إعداد مشروعك باستخدام Maven، قم بتهيئة عميل EWS كما هو موضح أدناه:
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
+IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
 ## دليل التنفيذ
-This section will guide you through two main features: creating and sending calendar sharing invitations, and setting delegate calendar access permissions.
-### Feature 1: Create and Send Calendar Sharing Invitation
+سيرشدك هذا القسم خلال ميزتين رئيسيتين: إنشاء دعوات مشاركة التقويم وإرسالها، وتعيين أذونات الوصول إلى التقويم للمفوضين.
+### الميزة 1: إنشاء دعوة لمشاركة التقويم وإرسالها
 #### ملخص
-Creating a calendar sharing invitation involves initializing the EWS client, configuring delegate permissions, and sending an email invitation.
+تتضمن عملية إنشاء دعوة لمشاركة التقويم تهيئة عميل EWS، وتكوين أذونات المندوب، وإرسال دعوة عبر البريد الإلكتروني.
 #### التنفيذ خطوة بخطوة
 ##### تهيئة عميل EWS
-First, set up your connection to Exchange Online using the `IEWSClient`:
+أولاً، قم بإعداد اتصالك بـ Exchange Online باستخدام `IEWSClient`:
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
+IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
-This snippet connects you to the Outlook service, allowing further operations on calendar and emails.
-##### Create Delegate User
-Next, create a delegate user with specific folder permissions:
+يتيح لك هذا المقطع الاتصال بخدمة Outlook، مما يسمح بإجراء المزيد من العمليات على التقويم والبريد الإلكتروني.
+##### إنشاء مستخدم مفوض
+بعد ذلك، قم بإنشاء مستخدم مفوض بأذونات مجلد محددة:
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
-This code assigns the `Reviewer` permission level to your delegate user, granting them access to view calendar details.
-##### Send Calendar Sharing Invitation
-Finally, create and send the invitation:
+هذا الكود يعين `Reviewer` مستوى الأذونات لمستخدم المفوض الخاص بك، مما يمنحه حق الوصول لعرض تفاصيل التقويم.
+##### إرسال دعوة لمشاركة التقويم
+وأخيرًا، قم بإنشاء الدعوة وإرسالها:
 ```java
 MapiMessage mapiMessage = client.createCalendarSharingInvitationMessage("sharingfrom@domain.com");
 
@@ -90,52 +90,52 @@ options.setConvertAsTnef(true);
 MailMessage mail = mapiMessage.toMailMessage(options);
 client.send(mail);
 ```
-This converts the `MapiMessage` to a format suitable for sending as an email and dispatches it using the EWS client.
-### Feature 2: Delegate Calendar Access Permission
+هذا يحول `MapiMessage` إلى تنسيق مناسب للإرسال كبريد إلكتروني وإرساله باستخدام عميل EWS.
+### الميزة 2: تفويض أذونات الوصول إلى التقويم
 #### ملخص
-Setting delegate permissions involves initializing your client, creating a delegate user, and assigning appropriate permission levels.
+يتضمن إعداد أذونات المفوض تهيئة العميل وإنشاء مستخدم مفوض وتعيين مستويات الأذونات المناسبة.
 #### خطوات التنفيذ
 ##### تهيئة عميل EWS
-Reuse the initialization step from above to connect to Exchange Online:
+أعد استخدام خطوة التهيئة المذكورة أعلاه للاتصال بـ Exchange Online:
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
+IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
-##### Create and Set Delegate Permissions
-Create a delegate user and set the permission level:
+##### إنشاء وتعيين أذونات المندوب
+إنشاء مستخدم مفوض وتعيين مستوى الأذونات:
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
-This code snippet ensures your delegate has `Reviewer` access to the calendar.
+يضمن مقتطف التعليمات البرمجية هذا أن المندوب الخاص بك لديه `Reviewer` الوصول إلى التقويم.
 ## التطبيقات العملية
 فيما يلي بعض حالات الاستخدام الواقعية لهذه الميزات:
-1. **Corporate Meetings:** Enable team members to view and manage meeting schedules without full access.
-2. **إدارة المشاريع:** Allow project leads to monitor timelines while delegating specific tasks.
-3. **تخطيط الحدث:** Event coordinators can share calendars with vendors to coordinate logistics.
-These integrations help streamline workflows across various organizational needs.
+1. **الاجتماعات المؤسسية:** تمكين أعضاء الفريق من عرض جداول الاجتماعات وإدارتها دون الوصول الكامل إليها.
+2. **إدارة المشاريع:** السماح لمسؤولي المشروع بمراقبة الجداول الزمنية أثناء تفويض مهام محددة.
+3. **تخطيط الحدث:** يمكن لمنسقي الأحداث مشاركة التقويمات مع البائعين لتنسيق الخدمات اللوجستية.
+تساعد هذه التكاملات في تبسيط سير العمل عبر احتياجات المؤسسة المختلفة.
 ## اعتبارات الأداء
-To optimize performance when using Aspose.Email for Java:
-- Manage memory efficiently, especially in large-scale applications.
-- Use appropriate exception handling to ensure smooth operation even during network issues or service interruptions.
-- Regularly update your library versions to benefit from performance improvements and bug fixes.
-Best practices include monitoring resource usage within your JVM and employing efficient data structures for email processing tasks.
+لتحسين الأداء عند استخدام Aspose.Email لـ Java:
+- إدارة الذاكرة بكفاءة، وخاصة في التطبيقات واسعة النطاق.
+- استخدم معالجة الاستثناءات المناسبة لضمان التشغيل السلس حتى أثناء حدوث مشكلات في الشبكة أو انقطاع الخدمة.
+- قم بتحديث إصدارات مكتبتك بانتظام للاستفادة من تحسينات الأداء وإصلاحات الأخطاء.
+تتضمن أفضل الممارسات مراقبة استخدام الموارد داخل JVM الخاص بك واستخدام هياكل بيانات فعالة لمهام معالجة البريد الإلكتروني.
 ## خاتمة
-In this tutorial, you've learned how to use Aspose.Email for Java to create and send calendar sharing invitations and set delegate permissions. These features can significantly enhance the way teams collaborate on shared calendars in an enterprise setting.
+في هذا البرنامج التعليمي، تعلمت كيفية استخدام Aspose.Email لجافا لإنشاء وإرسال دعوات مشاركة التقويمات وتعيين أذونات المفوضين. تُحسّن هذه الميزات بشكل كبير طريقة تعاون الفرق على التقويمات المشتركة في بيئة مؤسسية.
 **الخطوات التالية:**
-- Explore further functionalities of Aspose.Email for Java.
-- Experiment with integrating these features into your existing applications.
-Ready to take your skills to the next level? Implement this solution today!
+- استكشف المزيد من الوظائف الخاصة بـ Aspose.Email لـJava.
+- جرّب دمج هذه الميزات في تطبيقاتك الحالية.
+هل أنت مستعد للارتقاء بمهاراتك إلى مستوى أعلى؟ طبّق هذا الحل اليوم!
 ## قسم الأسئلة الشائعة
-1. **What is Aspose.Email for Java used for?**
-   - It’s a library for managing emails and calendars in Java applications, supporting various email clients like Outlook.
-2. **How do I set up my environment for using Aspose.Email?**
-   - Install JDK and Maven, then add the Aspose.Email dependency to your `pom.xml`.
-3. **Can I use this code with other versions of Exchange Online?**
-   - Yes, but ensure you verify URL endpoints and permission levels as per your organization's configuration.
-4. **What if my calendar sharing invitation fails to send?**
-   - Check network connectivity, email credentials, and permissions. Ensure your delegate user has valid access rights.
+1. **ما هو استخدام Aspose.Email لـ Java؟**
+   - إنها مكتبة لإدارة رسائل البريد الإلكتروني والتقويمات في تطبيقات Java، وتدعم عملاء البريد الإلكتروني المتنوعين مثل Outlook.
+2. **كيف أقوم بإعداد بيئتي لاستخدام Aspose.Email؟**
+   - قم بتثبيت JDK وMaven، ثم أضف تبعية Aspose.Email إلى `pom.xml`.
+3. **هل يمكنني استخدام هذا الكود مع إصدارات أخرى من Exchange Online؟**
+   - نعم، ولكن تأكد من التحقق من نقاط نهاية عناوين URL ومستويات الأذونات وفقًا لتكوين مؤسستك.
+4. **ماذا لو فشلت دعوة مشاركة التقويم الخاصة بي في الإرسال؟**
+   - تحقق من اتصال الشبكة، وبيانات اعتماد البريد الإلكتروني، والأذونات. تأكد من أن المستخدم المُفوّض لديه صلاحيات وصول صالحة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

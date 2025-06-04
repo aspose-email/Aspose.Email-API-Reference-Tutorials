@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
 "description": "برنامج تعليمي لبرمجة Aspose.Email Net"
-"title": "Fetch Messages with Aspose.Email .NET and EWS"
+"title": "جلب الرسائل باستخدام Aspose.Email .NET وEWS"
 "url": "/ar/net/exchange-server-integration/fetch-messages-aspose-email-net-ews/"
 "weight": 1
 ---
@@ -11,43 +11,43 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Fetch Messages from Exchange Web Service Using Aspose.Email .NET
+# كيفية جلب الرسائل من خدمة Exchange Web Service باستخدام Aspose.Email .NET
 
 ## مقدمة
 
-In today's fast-paced digital environment, efficiently managing email communications is crucial for businesses and individuals alike. Whether it’s retrieving emails or handling attachments, having a robust solution can save time and streamline operations. This comprehensive guide focuses on using Aspose.Email .NET to fetch messages from an Exchange server via the Exchange Web Service (EWS). By leveraging Aspose.Email, you’ll gain seamless access to your inbox, allowing for efficient email management.
+في ظل بيئة رقمية سريعة التطور اليوم، تُعدّ إدارة اتصالات البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حد سواء. سواءً كان الأمر يتعلق باسترجاع رسائل البريد الإلكتروني أو معالجة المرفقات، فإن وجود حل فعّال يُوفّر الوقت ويُبسّط العمليات. يُركّز هذا الدليل الشامل على استخدام Aspose.Email .NET لجلب الرسائل من خادم Exchange عبر خدمة Exchange Web Service (EWS). باستخدام Aspose.Email، ستتمكن من الوصول بسلاسة إلى صندوق الوارد، مما يُتيح لك إدارة بريدك الإلكتروني بكفاءة.
 
 ### ما سوف تتعلمه
-- **Connect to an Exchange Server:** Set up a connection using Aspose.Email.
-- **List Inbox Messages:** Retrieve and display messages from your inbox.
-- **Fetch Message Details:** Access full message content including attachments.
-- **Set Directory Paths:** Organize document paths for consistent use across applications.
+- **الاتصال بخادم Exchange:** إعداد اتصال باستخدام Aspose.Email.
+- **قائمة رسائل البريد الوارد:** استرداد وعرض الرسائل من صندوق الوارد الخاص بك.
+- **جلب تفاصيل الرسالة:** الوصول إلى محتوى الرسالة بالكامل بما في ذلك المرفقات.
+- **تعيين مسارات الدليل:** تنظيم مسارات المستندات للاستخدام المتسق عبر التطبيقات.
 
-Let's begin by addressing the prerequisites needed to implement this solution effectively.
+دعونا نبدأ بمعالجة المتطلبات الأساسية اللازمة لتنفيذ هذا الحل بشكل فعال.
 
 ## المتطلبات الأساسية
 
 قبل البدء في التنفيذ، تأكد من أن لديك ما يلي:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: This library will be central to our operations. It’s crucial to install it via NuGet or another package manager.
-- **Exchange Web Service (EWS) Access**: You need access credentials to an Exchange server.
+- **Aspose.Email لـ .NET**ستكون هذه المكتبة أساسيةً لعملياتنا. من الضروري تثبيتها عبر NuGet أو أي مدير حزم آخر.
+- **الوصول إلى خدمة الويب Exchange (EWS)**:تحتاج إلى بيانات اعتماد الوصول إلى خادم Exchange.
 
 ### متطلبات إعداد البيئة
-- A compatible development environment like Visual Studio with support for C# and .NET Framework.
-- Administrative rights on the machine if necessary, especially for setting up directories.
+- بيئة تطوير متوافقة مثل Visual Studio مع دعم C# و.NET Framework.
+- حقوق إدارية على الجهاز إذا لزم الأمر، وخاصة لإعداد الدلائل.
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with email protocols such as EWS is beneficial but not mandatory.
+- إن المعرفة ببروتوكولات البريد الإلكتروني مثل EWS مفيدة ولكنها ليست إلزامية.
 
 ## إعداد Aspose.Email لـ .NET
 
-Setting up Aspose.Email involves integrating it into your development environment. Follow these steps to get started:
+يتطلب إعداد Aspose.Email دمجه في بيئة التطوير لديك. اتبع الخطوات التالية للبدء:
 
 ### معلومات التثبيت
 
-You can install Aspose.Email using one of the following methods:
+يمكنك تثبيت Aspose.Email باستخدام إحدى الطرق التالية:
 
 **.NET CLI:**
 ```bash
@@ -64,9 +64,9 @@ Install-Package Aspose.Email
 
 ### خطوات الحصول على الترخيص
 
-To fully utilize Aspose.Email, you might need a license. Here's how to proceed:
-- **نسخة تجريبية مجانية:** Download a temporary free license from [موقع Aspose](https://purchase.aspose.com/temporary-license/) لاستكشاف الميزات.
-- **شراء:** For long-term usage, consider purchasing a full license.
+للاستفادة الكاملة من Aspose.Email، قد تحتاج إلى ترخيص. إليك كيفية المتابعة:
+- **نسخة تجريبية مجانية:** تنزيل ترخيص مجاني مؤقت من [موقع Aspose](https://purchase.aspose.com/temporary-license/) لاستكشاف الميزات.
+- **شراء:** للاستخدام طويل الأمد، فكر في شراء ترخيص كامل.
 
 ### التهيئة والإعداد الأساسي
 
@@ -78,7 +78,7 @@ To fully utilize Aspose.Email, you might need a license. Here's how to proceed:
    using Aspose.Email.Clients.Exchange.WebService;
    ```
 
-2. Initialize the Exchange client with appropriate credentials:
+2. قم بتهيئة عميل Exchange باستخدام بيانات الاعتماد المناسبة:
    ```csharp
    IEWSClient client = EWSClient.GetEWSClient(
        "https://outlook.office365.com/ews/exchange.asmx،
@@ -90,14 +90,14 @@ To fully utilize Aspose.Email, you might need a license. Here's how to proceed:
 
 ## دليل التنفيذ
 
-This section will walk you through the implementation of key features using Aspose.Email.
+سيرشدك هذا القسم خلال تنفيذ الميزات الرئيسية باستخدام Aspose.Email.
 
-### Fetch Messages from Exchange Web Service Using EWS
+### جلب الرسائل من خدمة Exchange Web Service باستخدام EWS
 
 **ملخص:**  
-Connecting to an Exchange server and retrieving email messages is streamlined with Aspose.Email. This feature allows you to list messages in your inbox and fetch detailed content, including attachments.
+يُسهّل Aspose.Email الاتصال بخادم Exchange واسترجاع رسائل البريد الإلكتروني. تتيح لك هذه الميزة إدراج الرسائل في صندوق الوارد وجلب محتوى مُفصّل، بما في ذلك المرفقات.
 
-#### Step 1: Create the Exchange Client
+#### الخطوة 1: إنشاء عميل Exchange
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx،
@@ -107,16 +107,16 @@ IEWSClient client = EWSClient.GetEWSClient(
 );
 ```
 **توضيح:**  
-This code initializes a connection to your Exchange server using provided credentials. Ensure you replace the placeholders with actual data.
+يُنشئ هذا الكود اتصالاً بخادم Exchange الخاص بك باستخدام بيانات الاعتماد المُدخلة. تأكد من استبدال العناصر النائبة بالبيانات الفعلية.
 
-#### Step 2: List Messages in Inbox
+#### الخطوة 2: إدراج الرسائل في صندوق الوارد
 ```csharp
 ExchangeMessageInfoCollection msgCollection = client.ListMessages(client.MailboxInfo.InboxUri);
 ```
 **توضيح:**  
-Retrieve all messages from your inbox using `ListMessages`. This method returns a collection of message information objects.
+استرداد جميع الرسائل من صندوق الوارد الخاص بك باستخدام `ListMessages`تقوم هذه الطريقة بإرجاع مجموعة من كائنات معلومات الرسالة.
 
-#### Step 3: Fetch Message Details
+#### الخطوة 3: جلب تفاصيل الرسالة
 ```csharp
 foreach (ExchangeMessageInfo msgInfo in msgCollection)
 {
@@ -130,14 +130,14 @@ foreach (ExchangeMessageInfo msgInfo in msgCollection)
 }
 ```
 **توضيح:**  
-For each message, use `FetchMessage` to get the full content. Iterate through attachments if necessary.
+لكل رسالة، استخدم `FetchMessage` للحصول على المحتوى الكامل. راجع المرفقات إذا لزم الأمر.
 
-### Set Document and Output Directories
+### تعيين أدلة المستندات والإخراج
 
 **ملخص:**  
-Organizing directory paths helps maintain consistency across your application. Define these directories as constants for easy reference.
+يُساعد تنظيم مسارات المجلدات على الحفاظ على الاتساق في تطبيقك. عرّف هذه المجلدات كثوابت لسهولة الرجوع إليها.
 
-#### Step 1: Define Path Constants
+#### الخطوة 1: تحديد ثوابت المسار
 ```csharp
 public static class DirectoryPaths
 {
@@ -146,50 +146,50 @@ public static class DirectoryPaths
 }
 ```
 **توضيح:**  
-Replace placeholders with actual directory paths to ensure your application correctly references these locations.
+استبدل العناصر النائبة بمسارات الدليل الفعلية للتأكد من أن تطبيقك يشير إلى هذه المواقع بشكل صحيح.
 
 ## التطبيقات العملية
 
-Here are several real-world applications for fetching messages using Aspose.Email:
+فيما يلي العديد من التطبيقات الواقعية لجلب الرسائل باستخدام Aspose.Email:
 
-1. **معالجة البريد الإلكتروني الآلية**: Automatically sort and categorize emails into folders based on content.
-2. **حلول النسخ الاحتياطي للبيانات**: Regularly backup important emails and attachments to a secure location.
-3. **التكامل مع أنظمة إدارة علاقات العملاء**: Sync email communications directly within your customer relationship management (CRM) tools for enhanced tracking.
-4. **Content Aggregation**: Gather specific types of messages, such as invoices or notifications, for centralized review.
+1. **معالجة البريد الإلكتروني الآلية**:فرز وتصنيف رسائل البريد الإلكتروني تلقائيًا في مجلدات استنادًا إلى المحتوى.
+2. **حلول النسخ الاحتياطي للبيانات**:قم بعمل نسخة احتياطية منتظمة لرسائل البريد الإلكتروني والمرفقات المهمة إلى مكان آمن.
+3. **التكامل مع أنظمة إدارة علاقات العملاء**:قم بمزامنة اتصالات البريد الإلكتروني مباشرةً داخل أدوات إدارة علاقات العملاء (CRM) لديك لتحسين عملية التتبع.
+4. **تجميع المحتوى**:تجميع أنواع محددة من الرسائل، مثل الفواتير أو الإشعارات، لمراجعتها بشكل مركزي.
 
 ## اعتبارات الأداء
 
 لضمان الأداء الأمثل عند استخدام Aspose.Email:
 
-- **معالجة الدفعات:** Retrieve and process emails in batches to reduce server load.
+- **معالجة الدفعات:** استرداد رسائل البريد الإلكتروني ومعالجتها على دفعات لتقليل تحميل الخادم.
 - **إدارة الذاكرة:** تخلص من الأشياء بشكل صحيح بعد استخدامها لتحرير الموارد.
-- **Network Optimization:** Minimize the number of requests by fetching only necessary data, such as headers initially.
+- **تحسين الشبكة:** قم بتقليل عدد الطلبات عن طريق جلب البيانات الضرورية فقط، مثل الرؤوس في البداية.
 
 ## خاتمة
 
-By following this tutorial, you've learned how to effectively connect to an Exchange server using Aspose.Email for .NET. You can now list and fetch messages from your inbox with ease, enhancing your email management capabilities. For further exploration, consider integrating these functionalities into larger applications or automating specific workflows.
+باتباع هذا البرنامج التعليمي، ستتعلم كيفية الاتصال بفعالية بخادم Exchange باستخدام Aspose.Email لـ .NET. يمكنك الآن عرض الرسائل وجلبها من صندوق الوارد بسهولة، مما يُحسّن من إمكانيات إدارة بريدك الإلكتروني. لمزيد من الاستكشاف، فكّر في دمج هذه الوظائف في تطبيقات أكبر أو أتمتة سير عمل مُحددة.
 
 ### الخطوات التالية
-- Explore other features of Aspose.Email.
-- Implement the fetched message functionalities in a full-scale application.
-- Experiment with different types of email servers and configurations.
+- استكشف الميزات الأخرى لـ Aspose.Email.
+- تنفيذ وظائف الرسالة المسترجعة في تطبيق كامل النطاق.
+- تجربة أنواع مختلفة من خوادم البريد الإلكتروني وتكويناتها.
 
 ## قسم الأسئلة الشائعة
 
 1. **كيف أتعامل مع أخطاء المصادقة؟**  
-   Ensure your credentials are correct and that your account has access to EWS.
+   تأكد من صحة بيانات الاعتماد الخاصة بك ومن أن حسابك لديه حق الوصول إلى EWS.
 
-2. **Can I fetch messages from subfolders?**  
-   Yes, specify the folder URI in `ListMessages` طريقة.
+2. **هل يمكنني جلب الرسائل من المجلدات الفرعية؟**  
+   نعم، حدد عنوان URI للمجلد في `ListMessages` طريقة.
 
-3. **What if my connection times out?**  
-   Check network connectivity and consider increasing timeout settings.
+3. **ماذا لو انتهت مهلة الاتصال الخاصة بي؟**  
+   تحقق من اتصال الشبكة وفكر في زيادة إعدادات مهلة الانتظار.
 
-4. **How do I filter emails by date or sender?**  
-   Use EWS filtering options to narrow down the list before fetching messages.
+4. **كيف أقوم بتصفية رسائل البريد الإلكتروني حسب التاريخ أو المرسل؟**  
+   استخدم خيارات تصفية EWS لتضييق نطاق القائمة قبل جلب الرسائل.
 
 5. **هل Aspose.Email متوافق مع كافة إصدارات .NET؟**  
-   Yes, it supports a range of .NET frameworks from 2.0 onwards.
+   نعم، فهو يدعم مجموعة واسعة من أطر عمل .NET من 2.0 وما بعده.
 
 ## موارد
 
@@ -200,7 +200,7 @@ By following this tutorial, you've learned how to effectively connect to an Exch
 - **رخصة مؤقتة:** [تقدم هنا](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم:** [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
 
-By following this guide, you should now be equipped to implement a robust solution for fetching messages from an Exchange server using Aspose.Email in .NET. Happy coding!
+باتباع هذا الدليل، ستكون الآن جاهزًا لتطبيق حلٍّ فعّال لجلب الرسائل من خادم Exchange باستخدام Aspose.Email في .NET. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

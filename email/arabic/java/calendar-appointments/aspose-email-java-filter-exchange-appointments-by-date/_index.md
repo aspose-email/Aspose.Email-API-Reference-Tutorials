@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to filter Microsoft Exchange Web Services (EWS) appointments by date using Aspose.Email for Java. This guide covers setup, configuration, and best practices."
-"title": "How to Filter Exchange Server Appointments by Date Using Aspose.Email Java"
+"description": "تعرّف على كيفية تصفية مواعيد خدمات Microsoft Exchange Web Services (EWS) حسب التاريخ باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد والتكوين وأفضل الممارسات."
+"title": "كيفية تصفية مواعيد Exchange Server حسب التاريخ باستخدام Aspose.Email Java"
 "url": "/ar/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/"
 "weight": 1
 ---
@@ -11,39 +11,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Filter Exchange Server Appointments by Date Using Aspose.Email Java
+# كيفية تصفية مواعيد Exchange Server حسب التاريخ باستخدام Aspose.Email Java
 
 ## مقدمة
 
-Effective appointment management is crucial in today's business environment, where efficient scheduling enhances organizational productivity. By filtering appointments from an Exchange server based on specific date ranges using Aspose.Email for Java, businesses can streamline operations and improve time management. This tutorial guides you through implementing this feature with Microsoft Exchange Web Services (EWS).
+تُعدّ إدارة المواعيد الفعّالة أمرًا بالغ الأهمية في بيئة الأعمال الحالية، حيث يُحسّن الجدولة الفعّالة إنتاجية المؤسسة. من خلال تصفية المواعيد من خادم Exchange بناءً على نطاقات زمنية مُحدّدة باستخدام Aspose.Email لـ Java، يُمكن للشركات تبسيط العمليات وتحسين إدارة الوقت. يُرشدك هذا البرنامج التعليمي إلى كيفية تطبيق هذه الميزة مع خدمات Microsoft Exchange Web Services (EWS).
 
 **ما سوف تتعلمه:**
-- Setting up your environment with necessary dependencies
-- Initializing and configuring Aspose.Email for Java
-- Filtering appointments within a specific date range
-- Best practices for optimizing performance and memory management
+- إعداد بيئتك بالتبعيات الضرورية
+- تهيئة وتكوين Aspose.Email لـ Java
+- تصفية المواعيد ضمن نطاق تاريخ محدد
+- أفضل الممارسات لتحسين الأداء وإدارة الذاكرة
 
-With an understanding of the problem this solution addresses, let's explore the prerequisites needed before diving into implementation.
+بعد فهم المشكلة التي يعالجها هذا الحل، دعونا نستكشف المتطلبات الأساسية اللازمة قبل الغوص في التنفيذ.
 
 ## المتطلبات الأساسية
 
-To follow along with this tutorial, ensure you have these tools and knowledge:
+لمتابعة هذا البرنامج التعليمي، تأكد من أن لديك الأدوات والمعرفة التالية:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email for Java**: Version 25.4 or later.
-- **Java Development Kit (JDK)**: Use JDK 16 or newer.
+- **Aspose.Email لـ Java**:الإصدار 25.4 أو أحدث.
+- **مجموعة تطوير جافا (JDK)**:استخدم JDK 16 أو أحدث.
 
 ### متطلبات إعداد البيئة
-- A configured IDE like IntelliJ IDEA, Eclipse, or NetBeans.
-- Access to an Exchange server with EWS enabled.
+- بيئة تطوير متكاملة مُهيأة مثل IntelliJ IDEA، أو Eclipse، أو NetBeans.
+- الوصول إلى خادم Exchange مع تمكين EWS.
 
 ### متطلبات المعرفة
-- Basic understanding of Java programming.
-- Familiarity with Maven for dependency management.
+- فهم أساسيات برمجة جافا.
+- المعرفة بـ Maven لإدارة التبعيات.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started, add the Aspose.Email library as a dependency in your project. If you're using Maven, include this XML snippet in your `pom.xml`:
+للبدء، أضف مكتبة Aspose.Email كاعتمادية في مشروعك. إذا كنت تستخدم Maven، فأدرج مقتطف XML هذا في `pom.xml`:
 
 ```xml
 <dependency>
@@ -56,35 +56,35 @@ To get started, add the Aspose.Email library as a dependency in your project. If
 
 ### الحصول على الترخيص
 
-Aspose.Email for Java offers a free trial to evaluate its features. For continued use, consider acquiring a temporary license or purchasing a full version:
-- **نسخة تجريبية مجانية**: Available through the [Aspose Email Download](https://releases.aspose.com/email/java/) صفحة.
-- **رخصة مؤقتة**: Obtain it from the [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**:للاستخدام طويل الأمد، قم بشراء ترخيص عبر [Purchase Aspose](https://purchase.aspose.com/buy) site.
+يُقدّم Aspose.Email لجافا نسخة تجريبية مجانية لتقييم ميزاته. لمواصلة الاستخدام، فكّر في الحصول على ترخيص مؤقت أو شراء نسخة كاملة.
+- **نسخة تجريبية مجانية**:متوفر من خلال [تنزيل البريد الإلكتروني Aspose](https://releases.aspose.com/email/java/) صفحة.
+- **رخصة مؤقتة**:احصل عليه من [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
+- **شراء**:للاستخدام طويل الأمد، قم بشراء ترخيص عبر [شراء Aspose](https://purchase.aspose.com/buy) موقع.
 
 ### التهيئة والإعداد الأساسي
 
-Configure your Exchange server credentials to initialize Aspose.Email for Java. Set up the `IEWSClient` as follows:
+قم بتكوين بيانات اعتماد خادم Exchange الخاص بك لتهيئة Aspose.Email لـ Java. قم بإعداد `IEWSClient` على النحو التالي:
 
 ```java
-String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // Your Exchange Server URI
+String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // عنوان URI الخاص بخادم Exchange الخاص بك
 String username = "YOUR_USERNAME";               // اسم المستخدم للمصادقة
 String password = "YOUR_PASSWORD";               // كلمة المرور
-String domain = "YOUR_DOMAIN";                   // Domain if required
+String domain = "YOUR_DOMAIN";                   // المجال إذا لزم الأمر
 
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, username, password, domain);
 ```
 
-This establishes a connection to your Exchange server using the Aspose.Email library.
+يؤدي هذا إلى إنشاء اتصال بخادم Exchange الخاص بك باستخدام مكتبة Aspose.Email.
 
 ## دليل التنفيذ
 
-### Filtering Appointments by Date
+### تصفية المواعيد حسب التاريخ
 
-The core feature of this tutorial is filtering appointments between specific dates. Here's how you can achieve that:
+الميزة الأساسية لهذا البرنامج التعليمي هي تصفية المواعيد بين تواريخ محددة. إليك كيفية تحقيق ذلك:
 
-#### Step 1: Configure Date Formats
+#### الخطوة 1: تكوين تنسيقات التاريخ
 
-Start by setting up a `SimpleDateFormat` object for parsing date strings into Java `Date` أشياء.
+ابدأ بإعداد `SimpleDateFormat` كائن لتحليل سلاسل التاريخ في Java `Date` أشياء.
 
 ```java
 import java.text.ParseException;
@@ -93,27 +93,27 @@ import java.text.SimpleDateFormat;
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 ```
 
-This format will be used to interpret the start and end dates of your appointments.
+سيتم استخدام هذا التنسيق لتفسير تواريخ البداية والنهاية لمواعيدك.
 
-#### Step 2: Build a Query with ExchangeQueryBuilder
+#### الخطوة 2: إنشاء استعلام باستخدام ExchangeQueryBuilder
 
-إنشاء مثيل لـ `ExchangeQueryBuilder` and set up your date range criteria:
+إنشاء مثيل لـ `ExchangeQueryBuilder` وإعداد معايير نطاق التاريخ الخاص بك:
 
 ```java
 import com.aspose.email.ExchangeQueryBuilder;
 
 ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
 
-// Specify the start date for filtering appointments
+// حدد تاريخ البدء لتصفية المواعيد
 builder.getAppointment().getStart().since(sdf.parse("10/05/2016 10:00:00"));
 
-// Define the end date to include all appointments before or equal to this time
+// قم بتحديد تاريخ الانتهاء ليشمل جميع المواعيد قبل هذا الوقت أو مساويًا له
 builder.getAppointment().getEnd().beforeOrEqual(sdf.parse("10/15/2016 10:00:00"));
 ```
 
 #### الخطوة 3: تنفيذ الاستعلام
 
-استخدم `IEWSClient` instance to execute your query and retrieve appointments:
+استخدم `IEWSClient` مثال لتنفيذ استعلامك واسترداد المواعيد:
 
 ```java
 import com.aspose.email.MailQuery;
@@ -122,52 +122,52 @@ com.aspose.email.MailQuery query = builder.getQuery();
 Appointment[] appointments = client.listAppointments(query);
 ```
 
-This retrieves all appointments within the specified date range.
+يؤدي هذا إلى استرداد جميع المواعيد ضمن نطاق التاريخ المحدد.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **Date Parsing Errors**: Ensure your date strings match the format defined in `SimpleDateFormat`.
-- **مشاكل المصادقة**: Double-check your Exchange server credentials and network connectivity.
-- **Query Results Empty**: Verify that there are actual appointments within the given date range on the server.
+- **أخطاء تحليل التاريخ**:تأكد من أن سلاسل التاريخ الخاصة بك تتطابق مع التنسيق المحدد في `SimpleDateFormat`.
+- **مشاكل المصادقة**:تأكد من بيانات اعتماد خادم Exchange لديك واتصال الشبكة.
+- **نتائج الاستعلام فارغة**:تأكد من وجود مواعيد فعلية ضمن نطاق التاريخ المحدد على الخادم.
 
 ## التطبيقات العملية
 
-This feature can be used in various real-world scenarios:
-1. **Business Calendar Management**: Automatically filter meetings and events for a specific month.
-2. **Resource Scheduling**: Identify available time slots by filtering past or future bookings.
-3. **التقارير والتحليلات**: Generate reports based on appointment data within certain periods.
+يمكن استخدام هذه الميزة في سيناريوهات مختلفة في العالم الحقيقي:
+1. **إدارة تقويم الأعمال**:تصفية الاجتماعات والأحداث تلقائيًا لشهر معين.
+2. **جدولة الموارد**:تحديد الفترات الزمنية المتاحة عن طريق تصفية الحجوزات السابقة أو المستقبلية.
+3. **التقارير والتحليلات**:إنشاء تقارير استنادًا إلى بيانات المواعيد خلال فترات زمنية معينة.
 
 ## اعتبارات الأداء
 
 عند العمل مع Aspose.Email، ضع في اعتبارك النصائح التالية لتحسين الأداء:
-- Limit the scope of your queries to reduce data transfer.
-- Use efficient date formats and parsing methods to minimize processing time.
-- Manage Java memory effectively by disposing of objects that are no longer needed.
+- قم بتحديد نطاق استعلاماتك لتقليل نقل البيانات.
+- استخدم تنسيقات التاريخ وطرق التحليل الفعالة لتقليل وقت المعالجة.
+- إدارة ذاكرة Java بشكل فعال عن طريق التخلص من الكائنات التي لم تعد هناك حاجة إليها.
 
 ## خاتمة
 
-Filtering Exchange server appointments by date using Aspose.Email for Java simplifies calendar management, enhances productivity, and provides valuable insights into scheduling patterns. By following this tutorial, you've learned how to set up your environment, configure the library, and implement a feature to filter appointments based on specific criteria.
+تصفية مواعيد خادم Exchange حسب التاريخ باستخدام Aspose.Email لـ Java تُبسط إدارة التقويم، وتُحسّن الإنتاجية، وتُقدم رؤى قيّمة حول أنماط الجدولة. باتباع هذا البرنامج التعليمي، ستتعلم كيفية إعداد بيئتك، وتكوين المكتبة، وتطبيق ميزة لتصفية المواعيد بناءً على معايير محددة.
 
 **الخطوات التالية:**
-- Explore other features offered by Aspose.Email for Java.
-- Integrate appointment filtering with existing applications or workflows.
+- استكشف الميزات الأخرى التي يقدمها Aspose.Email لـJava.
+- دمج تصفية المواعيد مع التطبيقات أو سير العمل الموجودة.
 
-Try implementing these solutions in your projects to experience their benefits firsthand!
+حاول تطبيق هذه الحلول في مشاريعك لتجربة فوائدها بشكل مباشر!
 
 ## قسم الأسئلة الشائعة
 
-1. **Can I use Aspose.Email without a purchase?**
-   - Yes, you can start with the free trial and explore its features before purchasing.
+1. **هل يمكنني استخدام Aspose.Email دون شراء؟**
+   - نعم، يمكنك البدء بالتجربة المجانية واستكشاف ميزاتها قبل الشراء.
 2. **كيف أتعامل مع أخطاء المصادقة عند الاتصال بخادم Exchange؟**
-   - Verify your credentials and network settings; ensure that the Exchange server allows EWS access.
-3. **What formats are supported for date parsing in this feature?**
-   - ال `SimpleDateFormat` class supports various patterns, but you must specify them correctly (e.g., `"dd/MM/yyyy HH:mm:ss"`).
-4. **How can I filter appointments by a different time range dynamically?**
-   - Adjust the date strings passed to the `since()` و `beforeOrEqual()` methods as needed.
-5. **Is there documentation for additional Aspose.Email functionalities?**
-   - Comprehensive documentation is available at [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/).
+   - تحقق من بيانات الاعتماد وإعدادات الشبكة لديك؛ وتأكد من أن خادم Exchange يسمح بالوصول إلى EWS.
+3. **ما هي التنسيقات المدعومة لتحليل التاريخ في هذه الميزة؟**
+   - ال `SimpleDateFormat` تدعم الفئة أنماطًا مختلفة، ولكن يجب تحديدها بشكل صحيح (على سبيل المثال، `"dd/MM/yyyy HH:mm:ss"`).
+4. **كيف يمكنني تصفية المواعيد حسب نطاق زمني مختلف بشكل ديناميكي؟**
+   - ضبط سلاسل التاريخ المرسلة إلى `since()` و `beforeOrEqual()` الأساليب حسب الحاجة.
+5. **هل هناك توثيق لوظائف Aspose.Email الإضافية؟**
+   - التوثيق الشامل متاح في [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/).
 
 ## موارد
-- **التوثيق**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)
+- **التوثيق**: [مستندات Java الخاصة بـ Aspose Email](https://reference.aspose.com/email/java/)
 - **تحميل**: [إصدارات البريد الإلكتروني من Aspose](https://releases.aspose.com/email/java/)
 - **شراء**: [شراء البريد الإلكتروني Aspose](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية**: [احصل على نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)

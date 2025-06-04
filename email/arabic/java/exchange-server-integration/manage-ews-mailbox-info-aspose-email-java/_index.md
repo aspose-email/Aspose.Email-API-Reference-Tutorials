@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect and retrieve mailbox information from Exchange Web Services using Aspose.Email for Java. Master automation of mailbox size retrieval and URI management."
-"title": "Manage EWS Mailbox Information Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية ربط واسترجاع معلومات صندوق البريد من خدمات Exchange Web Services باستخدام Aspose.Email لـ Java. أتقن أتمتة استرجاع حجم صندوق البريد وإدارة عناوين URI."
+"title": "إدارة معلومات صندوق بريد EWS باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/exchange-server-integration/manage-ews-mailbox-info-aspose-email-java/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Manage EWS Mailbox Information with Aspose.Email for Java
+# إدارة معلومات صندوق بريد EWS باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Are you looking to efficiently manage mailbox information within your Exchange Web Services (EWS)? Whether you're a developer working on enterprise applications or an IT professional seeking seamless integration, this comprehensive guide will equip you with the knowledge to connect and retrieve mailbox details using Aspose.Email for Java. By mastering these techniques, you can automate retrieving mailbox sizes and various URI details such as inbox, sent items, and drafts.
+هل تبحث عن إدارة معلومات صندوق البريد بكفاءة ضمن خدمات Exchange Web Services (EWS)؟ سواء كنت مطورًا يعمل على تطبيقات المؤسسات أو متخصصًا في تكنولوجيا المعلومات يسعى إلى التكامل السلس، سيزودك هذا الدليل الشامل بالمعرفة اللازمة لربط واسترجاع تفاصيل صندوق البريد باستخدام Aspose.Email لـ Java. بإتقان هذه التقنيات، يمكنك أتمتة استرجاع أحجام صناديق البريد وتفاصيل عناوين URI المختلفة، مثل البريد الوارد والرسائل المرسلة والمسودات.
 
 في هذا البرنامج التعليمي، سنغطي:
-- Connecting to Exchange Web Services using Aspose.Email
-- Retrieving mailbox size in bytes
-- Fetching detailed mailbox URI information
+- الاتصال بخدمات Exchange Web Services باستخدام Aspose.Email
+- استرداد حجم صندوق البريد بالبايت
+- جلب معلومات مفصلة عن عنوان URI لصندوق البريد الإلكتروني
 
-Let's enhance your email management capabilities with Java. Before diving in, ensure you're ready with the prerequisites and environment setup.
+دعنا نُحسّن إمكانيات إدارة بريدك الإلكتروني باستخدام جافا. قبل البدء، تأكد من جاهزيتك بالمتطلبات الأساسية وإعدادات البيئة.
 
 ## المتطلبات الأساسية
 
-To follow along effectively, you'll need:
-- **المكتبات والتبعيات**: Ensure Aspose.Email for Java is added to your project via Maven or manually.
-- **إعداد البيئة**: A working Java development environment (preferably JDK 16).
-- **متطلبات المعرفة**: Basic understanding of Java and familiarity with Exchange Web Services.
+لمتابعة الأمر بفعالية، ستحتاج إلى:
+- **المكتبات والتبعيات**:تأكد من إضافة Aspose.Email for Java إلى مشروعك عبر Maven أو يدويًا.
+- **إعداد البيئة**:بيئة تطوير Java عاملة (يفضل JDK 16).
+- **متطلبات المعرفة**:فهم أساسيات لغة Java والمعرفة بخدمات Exchange Web Services.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To begin, include the necessary library in your project. If you're using Maven, add the following dependency:
+للبدء، أدرج المكتبة اللازمة في مشروعك. إذا كنت تستخدم Maven، فأضف التبعية التالية:
 
 ```xml
 <dependency>
@@ -46,53 +46,53 @@ To begin, include the necessary library in your project. If you're using Maven, 
 
 ### الحصول على الترخيص
 
-Aspose.Email offers a free trial, and you can also acquire a temporary license for extended evaluation:
-- **نسخة تجريبية مجانية**: Start without any cost to explore basic functionalities.
-- **رخصة مؤقتة**: Request a temporary license for full access during your testing phase.
-- **شراء**: Consider purchasing a license for production use.
+يقدم Aspose.Email نسخة تجريبية مجانية، ويمكنك أيضًا الحصول على ترخيص مؤقت للتقييم الموسع:
+- **نسخة تجريبية مجانية**:ابدأ باستكشاف الوظائف الأساسية دون أي تكلفة.
+- **رخصة مؤقتة**:اطلب ترخيصًا مؤقتًا للوصول الكامل أثناء مرحلة الاختبار.
+- **شراء**:فكر في شراء ترخيص للاستخدام الإنتاجي.
 
-After setting up the library, initialize it as follows:
+بعد إعداد المكتبة، قم بتهيئتها على النحو التالي:
 
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://exchange.name.com/exchangeews/Exchange.asmx/", "username", "password", "");
+IEWSClient client = EWSClient.getEWSClient("https://exchange.name.com/exchangeews/Exchange.asmx/"، "اسم المستخدم"، "كلمة المرور"، "");
 ```
 
-Here, replace `"username"` و `"password"` with your actual credentials. This sets up your connection to the Exchange server.
+هنا، استبدل `"username"` و `"password"` باستخدام بيانات اعتمادك الفعلية. سيؤدي هذا إلى إعداد اتصالك بخادم Exchange.
 
 ## دليل التنفيذ
 
-### Feature 1: Connect to Exchange Web Services
+### الميزة 1: الاتصال بخدمات الويب Exchange
 
-Connecting to EWS is straightforward using Aspose.Email for Java. Here's how you can establish a connection:
+الاتصال بخدمة EWS سهل للغاية باستخدام Aspose.Email لـ Java. إليك كيفية إنشاء اتصال:
 
 #### الخطوة 1: إنشاء مثيل لـ `EWSClient`
 
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://exchange.name.com/exchangeews/Exchange.asmx/", "username", "password", "");
+IEWSClient client = EWSClient.getEWSClient("https://exchange.name.com/exchangeews/Exchange.asmx/"، "اسم المستخدم"، "كلمة المرور"، "");
 ```
 
 - **حدود**:
-  - URL: The endpoint for the Exchange Web Services.
-  - Username and Password: Credentials to authenticate your connection.
+  - عنوان URL: نقطة النهاية لخدمات الويب Exchange.
+  - اسم المستخدم وكلمة المرور: بيانات الاعتماد للتحقق من صحة اتصالك.
 
-### Feature 2: Retrieve Mailbox Size from Exchange Web Services
+### الميزة 2: استرداد حجم صندوق البريد من خدمات Exchange Web Services
 
-Once connected, retrieving the mailbox size becomes a breeze:
+بمجرد الاتصال، يصبح استرداد حجم صندوق البريد أمرًا سهلاً:
 
-#### Step 1: Get Mailbox Size in Bytes
+#### الخطوة 1: الحصول على حجم صندوق البريد بالبايت
 
 ```java
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox size (bytes): " + mailboxSize);
 ```
 
-- **Return Value**: The size of the mailbox measured in bytes.
+- **قيمة الإرجاع**:حجم صندوق البريد المقاس بالبايت.
 
-### Feature 3: Get Mailbox Information from Exchange Web Services
+### الميزة 3: الحصول على معلومات صندوق البريد من خدمات Exchange Web Services
 
-Fetching URI details for different mailbox sections is essential for managing email workflows:
+يعد جلب تفاصيل URI لأقسام صندوق البريد المختلفة أمرًا ضروريًا لإدارة سير عمل البريد الإلكتروني:
 
-#### Step 1: Fetch Various URI Details
+#### الخطوة 1: جلب تفاصيل URI المختلفة
 
 ```java
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
@@ -107,40 +107,40 @@ System.out.println("Sent Items URI: " + sentItemsUri);
 System.out.println("Drafts URI: " + draftsUri);
 ```
 
-- **قيم الإرجاع**: URIs for different sections of the mailbox.
+- **قيم الإرجاع**:عناوين URI لأقسام مختلفة من صندوق البريد.
 
 ## التطبيقات العملية
 
-Integrating these features can greatly enhance your applications. Here are some real-world use cases:
-1. **إدارة البريد الإلكتروني الآلية**: Automate email sorting and archiving based on size or date.
-2. **Resource Monitoring**: Track mailbox sizes to manage server resources efficiently.
-3. **User Activity Reporting**: Generate reports on user activities by analyzing sent items and drafts.
+دمج هذه الميزات يُحسّن تطبيقاتك بشكل كبير. إليك بعض حالات الاستخدام الواقعية:
+1. **إدارة البريد الإلكتروني الآلية**:أتمتة فرز البريد الإلكتروني وأرشفته استنادًا إلى الحجم أو التاريخ.
+2. **مراقبة الموارد**:تتبع أحجام صناديق البريد لإدارة موارد الخادم بكفاءة.
+3. **إعداد تقارير نشاط المستخدم**:إنشاء تقارير حول أنشطة المستخدم من خلال تحليل العناصر المرسلة والمسودات.
 
 ## اعتبارات الأداء
 
 للحصول على الأداء الأمثل مع Aspose.البريد الإلكتروني:
-- **تحسين مكالمات الشبكة**: Minimize the number of requests by batching operations where possible.
-- **إدارة الموارد**: Monitor memory usage to ensure efficient Java memory management.
-- **أفضل الممارسات**: Regularly update your library version for bug fixes and enhancements.
+- **تحسين مكالمات الشبكة**:تقليل عدد الطلبات عن طريق تجميع العمليات حيثما أمكن ذلك.
+- **إدارة الموارد**:راقب استخدام الذاكرة لضمان إدارة ذاكرة Java بكفاءة.
+- **أفضل الممارسات**:قم بتحديث إصدار المكتبة الخاص بك بانتظام لإصلاح الأخطاء والتحسينات.
 
 ## خاتمة
 
-You now have a comprehensive understanding of connecting to EWS using Aspose.Email for Java, retrieving mailbox sizes, and fetching URI details. With these skills, you can build robust email management solutions tailored to your needs.
+لديك الآن فهم شامل للاتصال بـ EWS باستخدام Aspose.Email لـ Java، واسترداد أحجام صناديق البريد، وتفاصيل URI. بفضل هذه المهارات، يمكنك بناء حلول إدارة بريد إلكتروني فعّالة ومُصممة خصيصًا لتلبية احتياجاتك.
 
-To further explore the capabilities of Aspose.Email, consider diving into additional features and integrating them with other systems in your environment.
+لاستكشاف قدرات Aspose.Email بشكل أكبر، فكر في الغوص في ميزات إضافية ودمجها مع أنظمة أخرى في بيئتك.
 
 ## قسم الأسئلة الشائعة
 
-1. **What are the system requirements for using Aspose.Email for Java?**
-   - A compatible JDK (preferably 16 or later) and Maven for dependency management.
-2. **How do I handle authentication errors when connecting to EWS?**
-   - Verify your credentials and ensure they have the necessary permissions on the Exchange server.
-3. **Can I manage multiple mailboxes simultaneously?**
+1. **ما هي متطلبات النظام لاستخدام Aspose.Email لـ Java؟**
+   - JDK متوافق (يفضل 16 أو أحدث) وMaven لإدارة التبعيات.
+2. **كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟**
+   - قم بالتحقق من بيانات الاعتماد الخاصة بك وتأكد من أن لديك الأذونات اللازمة على خادم Exchange.
+3. **هل يمكنني إدارة صناديق بريد متعددة في نفس الوقت؟**
    - نعم، عن طريق إنشاء منفصلة `EWSClient` حالات لكل صندوق بريد.
-4. **What should I do if my application experiences slow performance?**
-   - Optimize network calls and review your Java memory management practices.
-5. **How can I keep up with updates to Aspose.Email for Java?**
-   - Regularly check the official documentation and download new releases from their site.
+4. **ماذا يجب أن أفعل إذا كان تطبيقي يعاني من بطء الأداء؟**
+   - قم بتحسين مكالمات الشبكة ومراجعة ممارسات إدارة ذاكرة Java الخاصة بك.
+5. **كيف يمكنني متابعة التحديثات الخاصة بـ Aspose.Email لـ Java؟**
+   - قم بالتحقق بانتظام من الوثائق الرسمية وتنزيل الإصدارات الجديدة من موقعها.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/java/)
@@ -150,7 +150,7 @@ To further explore the capabilities of Aspose.Email, consider diving into additi
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - [منتدى الدعم](https://forum.aspose.com/c/email/10)
 
-By following this guide, you'll be well-equipped to harness the power of Aspose.Email for Java in managing and automating your email workflows efficiently. Happy coding!
+باتباع هذا الدليل، ستكون جاهزًا تمامًا للاستفادة من قوة Aspose.Email لجافا في إدارة سير عمل بريدك الإلكتروني وأتمتته بكفاءة. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

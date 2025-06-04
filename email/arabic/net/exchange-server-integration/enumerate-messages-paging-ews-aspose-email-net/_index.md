@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently manage large email datasets by paginating messages from an Exchange Web Services (EWS) inbox using Aspose.Email for .NET."
-"title": "Efficient Email Management&#58; Enumerate Messages with Paging in EWS using Aspose.Email for .NET"
+"description": "تعرف على كيفية إدارة مجموعات بيانات البريد الإلكتروني الكبيرة بكفاءة من خلال تقسيم الرسائل من صندوق الوارد الخاص بخدمات Exchange Web Services (EWS) باستخدام Aspose.Email لـ .NET."
+"title": "إدارة البريد الإلكتروني بكفاءة - ترقيم الرسائل باستخدام الترقيم في EWS باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/exchange-server-integration/enumerate-messages-paging-ews-aspose-email-net/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Efficient Email Management: Enumerate Messages with Paging in EWS Using Aspose.Email for .NET
+# إدارة البريد الإلكتروني بكفاءة: ترقيم الرسائل باستخدام الترقيم في EWS باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
-Handling large volumes of emails efficiently is a common challenge when integrating with Exchange Web Services (EWS). This tutorial demonstrates how to use Aspose.Email for .NET for efficient email enumeration using paging—a crucial technique for optimizing performance. Whether you're developing enterprise applications or exploring EWS capabilities, mastering this method is essential.
+يُعد التعامل بكفاءة مع كميات كبيرة من رسائل البريد الإلكتروني تحديًا شائعًا عند التكامل مع خدمات Exchange Web Services (EWS). يوضح هذا البرنامج التعليمي كيفية استخدام Aspose.Email لـ .NET لترقيم رسائل البريد الإلكتروني بكفاءة باستخدام الترقيم، وهو أسلوب أساسي لتحسين الأداء. سواء كنت تُطوّر تطبيقات مؤسسية أو تستكشف إمكانيات خدمات Exchange Web Services، فإن إتقان هذه الطريقة ضروري.
 
 **ما سوف تتعلمه:**
 - إعداد واستخدام Aspose.Email لـ .NET.
-- Techniques for paginating emails with EWS.
-- Best practices for handling large email datasets.
-- Error handling and troubleshooting tips specific to paging in EWS.
+- تقنيات تقسيم رسائل البريد الإلكتروني باستخدام EWS.
+- أفضل الممارسات للتعامل مع مجموعات بيانات البريد الإلكتروني الكبيرة.
+- نصائح حول التعامل مع الأخطاء واستكشاف الأخطاء وإصلاحها فيما يتعلق بالترقيم في EWS.
 
 ## المتطلبات الأساسية
 قبل البدء، تأكد من أن لديك ما يلي:
 
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: The core library used in this tutorial.
-- **.NET Framework أو .NET Core**: Your development environment should support at least .NET 4.6 or later.
+- **Aspose.Email لـ .NET**:المكتبة الأساسية المستخدمة في هذا البرنامج التعليمي.
+- **.NET Framework أو .NET Core**:يجب أن تدعم بيئة التطوير الخاصة بك .NET 4.6 أو الإصدار الأحدث على الأقل.
 
 ### متطلبات إعداد البيئة
-- A working IDE like Visual Studio.
-- Access to an Exchange server with EWS enabled, such as Microsoft Office 365.
+- بيئة تطوير متكاملة مثل Visual Studio.
+- الوصول إلى خادم Exchange مع تمكين EWS، مثل Microsoft Office 365.
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C# و.NET.
-- Familiarity with RESTful services and SOAP protocols is beneficial but not mandatory.
+- إن المعرفة بخدمات RESTful وبروتوكولات SOAP مفيدة ولكنها ليست إلزامية.
 
 ## إعداد Aspose.Email لـ .NET
-To begin using Aspose.Email for .NET, you'll need to install the library. You can do this through several methods:
+لبدء استخدام Aspose.Email لـ .NET، ستحتاج إلى تثبيت المكتبة. يمكنك القيام بذلك بعدة طرق:
 
 **استخدام .NET CLI:**
 ```bash
@@ -54,10 +54,10 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-To use Aspose.Email, you can start with a free trial or obtain a temporary license to evaluate its full features. For long-term projects, consider purchasing a subscription from [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+لاستخدام Aspose.Email، يمكنك البدء بفترة تجريبية مجانية أو الحصول على ترخيص مؤقت لتقييم جميع ميزاته. للمشاريع طويلة الأمد، فكّر في شراء اشتراك من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
 **التهيئة الأساسية:**
-After installation, initialize your project by creating an instance of `IEWSClient` with appropriate credentials:
+بعد التثبيت، قم بتهيئة مشروعك عن طريق إنشاء مثيل لـ `IEWSClient` مع المؤهلات المناسبة:
 
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx، "اسم المستخدم"، "كلمة المرور");
@@ -65,29 +65,29 @@ IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/ex
 
 ## دليل التنفيذ
 
-### Enumerate Messages with Paging in EWS
+### إحصاء الرسائل باستخدام الترحيل في EWS
 
 **ملخص:**
-Paging is crucial when handling large datasets to prevent excessive memory usage and improve performance. This feature allows you to retrieve a subset of messages at a time from the inbox, making it easier to manage and process emails efficiently.
+يُعدّ الترقيم أمرًا بالغ الأهمية عند التعامل مع مجموعات البيانات الكبيرة، وذلك لمنع الاستخدام المفرط للذاكرة وتحسين الأداء. تتيح لك هذه الميزة استرجاع مجموعة فرعية من الرسائل دفعةً واحدة من صندوق الوارد، مما يُسهّل إدارة رسائل البريد الإلكتروني ومعالجتها بكفاءة.
 
 #### الخطوة 1: إنشاء الاتصال
-أولاً، قم بإنشاء مثيل لـ `IEWSClient` using your Exchange server credentials:
+أولاً، قم بإنشاء مثيل لـ `IEWSClient` باستخدام بيانات اعتماد خادم Exchange الخاص بك:
 
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx، "اسم المستخدم"، "كلمة المرور");
 ```
-**لماذا هذه الخطوة؟** Establishing a secure connection to the Exchange server is essential for authenticating and accessing mailbox data.
+**لماذا هذه الخطوة؟** يعد إنشاء اتصال آمن بخادم Exchange أمرًا ضروريًا للمصادقة على بيانات صندوق البريد والوصول إليها.
 
-#### Step 2: Configure Paging Parameters
-Define how many items you want per page. Adjust this based on your application's performance requirements:
+#### الخطوة 2: تكوين معلمات الترحيل
+حدد عدد العناصر التي تريدها في كل صفحة. اضبط هذا العدد بناءً على متطلبات أداء تطبيقك:
 
 ```csharp
 int itemsPerPage = 5;
 ```
-**لماذا هذه الخطوة؟** Setting a limit helps control memory usage by fetching only the required number of emails in each request.
+**لماذا هذه الخطوة؟** يساعد تعيين حد على التحكم في استخدام الذاكرة من خلال جلب العدد المطلوب فقط من رسائل البريد الإلكتروني في كل طلب.
 
-#### Step 3: Retrieve Messages with Paging
-Start retrieving messages from the inbox using paging:
+#### الخطوة 3: استرداد الرسائل باستخدام الترحيل
+ابدأ في استرداد الرسائل من صندوق الوارد باستخدام الترقيم:
 
 ```csharp
 List<PageInfo> pages = new List<PageInfo>();
@@ -100,53 +100,53 @@ while (!pagedMessageInfoCol.LastPage)
     pages.Add(pagedMessageInfoCol);
 }
 ```
-**لماذا هذه الخطوة؟** Iteratively fetching pages until all messages are enumerated ensures efficient handling of large volumes of data.
+**لماذا هذه الخطوة؟** يضمن جلب الصفحات بشكل متكرر حتى يتم تعداد جميع الرسائل التعامل الفعال مع كميات كبيرة من البيانات.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **مشاكل الاتصال**: Verify your credentials and server URL.
-- **Memory Errors**: يُعدِّل `itemsPerPage` to a lower number if memory issues persist.
-- **Last Page Check**: Ensure the loop condition checks for `LastPage` correctly to avoid infinite loops.
+- **مشاكل الاتصال**:تحقق من بيانات الاعتماد الخاصة بك وعنوان URL للخادم.
+- **أخطاء الذاكرة**: يُعدِّل `itemsPerPage` إلى رقم أقل إذا استمرت مشكلات الذاكرة.
+- **التحقق من الصفحة الأخيرة**:تأكد من التحقق من حالة الحلقة `LastPage` بشكل صحيح لتجنب الحلقات اللانهائية.
 
 ## التطبيقات العملية
-Here are some real-world use cases where paging through messages can be beneficial:
-1. **أنظمة أرشفة البريد الإلكتروني**: Efficiently archive emails without overloading server resources.
-2. **منصات دعم العملاء**: Paginate through customer queries to manage responses efficiently.
-3. **Data Analysis Tools**: Process large datasets of emails for analysis and reporting.
+فيما يلي بعض حالات الاستخدام في العالم الحقيقي حيث يمكن أن يكون التنقل عبر الرسائل مفيدًا:
+1. **أنظمة أرشفة البريد الإلكتروني**:أرشفة رسائل البريد الإلكتروني بكفاءة دون زيادة تحميل موارد الخادم.
+2. **منصات دعم العملاء**:قم بتقسيم استعلامات العملاء إلى صفحات لإدارة الاستجابات بكفاءة.
+3. **أدوات تحليل البيانات**:معالجة مجموعات كبيرة من البيانات من رسائل البريد الإلكتروني للتحليل وإعداد التقارير.
 
 ## اعتبارات الأداء
-When implementing paging, consider these tips to optimize performance:
-- يُعدِّل `itemsPerPage` based on your system's capabilities.
-- Monitor resource usage and adjust as needed.
-- Implement asynchronous methods where possible to improve responsiveness.
+عند تنفيذ عملية الترحيل، ضع في اعتبارك النصائح التالية لتحسين الأداء:
+- يُعدِّل `itemsPerPage` بناءً على قدرات نظامك.
+- راقب استخدام الموارد وقم بالتعديل حسب الحاجة.
+- تنفيذ أساليب غير متزامنة حيثما أمكن لتحسين الاستجابة.
 
 ## خاتمة
-You now have a solid understanding of how to paginate through messages using Aspose.Email for .NET with EWS. By implementing these techniques, you can efficiently manage large email datasets in your applications. Explore further by integrating additional features offered by Aspose.Email and refining your implementation based on specific use cases.
+لديك الآن فهمٌ متعمقٌ لكيفية ترقيم الرسائل باستخدام Aspose.Email لـ .NET مع EWS. بتطبيق هذه التقنيات، يمكنك إدارة مجموعات بيانات البريد الإلكتروني الكبيرة بكفاءة في تطبيقاتك. استكشف المزيد من خلال دمج الميزات الإضافية التي يقدمها Aspose.Email وتحسين تطبيقك بناءً على حالات استخدام محددة.
 
 **الخطوات التالية:**
-- Experiment with different paging configurations.
-- Integrate with other systems like CRM or analytics tools for enhanced functionality.
+- تجربة تكوينات الترحيل المختلفة.
+- التكامل مع أنظمة أخرى مثل CRM أو أدوات التحليلات لتحسين الوظائف.
 
 ## قسم الأسئلة الشائعة
-1. **What is the maximum number of items I can set per page?**
-The limit depends on your Exchange server configuration, but setting a reasonable number like 10-50 helps manage performance effectively.
-2. **How do I handle network interruptions during paging?**
-Implement retry logic and exception handling to ensure robustness in case of temporary connectivity issues.
-3. **Can I use Aspose.Email with other email protocols besides EWS?**
-Yes, Aspose.Email supports IMAP, POP3, and more, allowing for versatile integration options.
-4. **Is paging necessary if my mailbox is small?**
-While not always required, paging can still offer benefits in terms of consistent performance management.
-5. **What happens if the server URL changes after initial setup?**
-Update your `IEWSClient` instance with the new URL to maintain connectivity.
+1. **ما هو الحد الأقصى لعدد العناصر التي يمكنني تعيينها في كل صفحة؟**
+يعتمد الحد على تكوين خادم Exchange الخاص بك، ولكن تعيين عدد معقول مثل 10-50 يساعد في إدارة الأداء بشكل فعال.
+2. **كيف أتعامل مع انقطاعات الشبكة أثناء الترحيل؟**
+تنفيذ منطق إعادة المحاولة ومعالجة الاستثناءات لضمان المتانة في حالة حدوث مشكلات اتصال مؤقتة.
+3. **هل يمكنني استخدام Aspose.Email مع بروتوكولات البريد الإلكتروني الأخرى بالإضافة إلى EWS؟**
+نعم، يدعم Aspose.Email بروتوكولات IMAP وPOP3 والمزيد، مما يسمح بخيارات تكامل متعددة الاستخدامات.
+4. **هل الترحيل ضروري إذا كان صندوق البريد الخاص بي صغيرًا؟**
+رغم أنه ليس ضروريًا دائمًا، لا يزال بإمكان الترقيم أن يوفر فوائد من حيث إدارة الأداء المتسقة.
+5. **ماذا يحدث إذا تغير عنوان URL الخاص بالخادم بعد الإعداد الأولي؟**
+تحديث الخاص بك `IEWSClient` مثيل مع عنوان URL الجديد للحفاظ على الاتصال.
 
 ## موارد
 - **التوثيق**: [توثيق Aspose.Email .NET](https://reference.aspose.com/email/net/)
-- **تحميل**: [Aspose.Email Releases for .NET](https://releases.aspose.com/email/net/)
+- **تحميل**: [إصدارات Aspose.Email لـ .NET](https://releases.aspose.com/email/net/)
 - **شراء**: [شراء Aspose.Email](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية**: [جرب Aspose.Email مجانًا](https://releases.aspose.com/email/net/)
 - **رخصة مؤقتة**: [الحصول على ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
-- **يدعم**: قم بزيارة [Aspose Forum for Email](https://forum.aspose.com/c/email/10)
+- **يدعم**: قم بزيارة [منتدى Aspose للبريد الإلكتروني](https://forum.aspose.com/c/email/10)
 
-Embark on your journey to mastering email management with Aspose.Email for .NET, and transform how you handle large datasets in your applications.
+ابدأ رحلتك نحو إتقان إدارة البريد الإلكتروني باستخدام Aspose.Email لـ .NET، وقم بتحويل طريقة تعاملك مع مجموعات البيانات الكبيرة في تطبيقاتك.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

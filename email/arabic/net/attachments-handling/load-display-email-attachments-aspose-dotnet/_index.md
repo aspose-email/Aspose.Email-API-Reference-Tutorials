@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently load and display email attachments using Aspose.Email for .NET. This guide covers setup, loading emails, and handling attachments with practical examples."
-"title": "How to Load and Display Email Attachments Using Aspose.Email for .NET (Attachments Handling)"
+"description": "تعرّف على كيفية تحميل وعرض مرفقات البريد الإلكتروني بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد، وتحميل رسائل البريد الإلكتروني، ومعالجة المرفقات مع أمثلة عملية."
+"title": "كيفية تحميل وعرض مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET (معالجة المرفقات)"
 "url": "/ar/net/attachments-handling/load-display-email-attachments-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Load and Display Email Attachments Using Aspose.Email for .NET
+# كيفية تحميل وعرض مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Efficiently processing a large number of emails to extract valuable attachments is essential for analysis or archiving tasks. With Aspose.Email for .NET, this becomes seamless. In this tutorial, you'll learn how to load email messages and display their attachment names effectively.
+معالجة عدد كبير من رسائل البريد الإلكتروني بكفاءة لاستخراج المرفقات القيّمة أمرٌ أساسي لمهام التحليل والأرشفة. مع Aspose.Email لـ .NET، يصبح هذا الأمر سهلاً للغاية. في هذا البرنامج التعليمي، ستتعلم كيفية تحميل رسائل البريد الإلكتروني وعرض أسماء مرفقاتها بفعالية.
 
 **ما سوف تتعلمه:**
-- Setting up your environment to use Aspose.Email for .NET
-- Loading an email message from a file
-- Iterating over email attachments to display their names
+- إعداد البيئة الخاصة بك لاستخدام Aspose.Email لـ .NET
+- تحميل رسالة بريد إلكتروني من ملف
+- التكرار عبر مرفقات البريد الإلكتروني لعرض أسمائها
 
-Let's start by ensuring you meet the prerequisites before diving into implementation.
+لنبدأ بالتأكد من استيفائك للمتطلبات الأساسية قبل الشروع في التنفيذ.
 
 ### المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك:
-- **المكتبات والتبعيات**: Install Aspose.Email for .NET. Your project should target .NET Framework or .NET Core/5+.
-- **إعداد البيئة**: A development environment with C# and an IDE like Visual Studio.
-- **متطلبات المعرفة**: Familiarity with basic file I/O operations in .NET, along with a basic understanding of email protocols, is beneficial.
+- **المكتبات والتبعيات**ثبّت Aspose.Email لـ .NET. يجب أن يستهدف مشروعك .NET Framework أو .NET Core/5+‎.
+- **إعداد البيئة**:بيئة تطوير باستخدام C# وبيئة تطوير متكاملة مثل Visual Studio.
+- **متطلبات المعرفة**:إن الإلمام بعمليات إدخال/إخراج الملفات الأساسية في .NET، إلى جانب الفهم الأساسي لبروتوكولات البريد الإلكتروني، أمر مفيد.
 
 ## إعداد Aspose.Email لـ .NET
 
-To start using Aspose.Email for .NET, you'll need to install the library. Here are several methods:
+لبدء استخدام Aspose.Email لـ .NET، ستحتاج إلى تثبيت المكتبة. إليك عدة طرق:
 
 **استخدام .NET CLI:**
 ```shell
@@ -50,9 +50,9 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-Before using Aspose.Email, acquire a license. You can begin with a free trial or request a temporary license to explore features without limitations. If it suits your needs, consider purchasing a full license.
+قبل استخدام Aspose.Email، احصل على ترخيص. يمكنك البدء بفترة تجريبية مجانية أو طلب ترخيص مؤقت لاستكشاف الميزات دون قيود. إذا كان يناسب احتياجاتك، فكّر في شراء ترخيص كامل.
 
-Once you have your license file, initialize and set up the library in your application:
+بمجرد حصولك على ملف الترخيص، قم بتهيئة المكتبة وإعدادها في تطبيقك:
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("Path to License File");
@@ -60,72 +60,72 @@ license.SetLicense("Path to License File");
 
 ## دليل التنفيذ
 
-### Loading Email Messages
+### تحميل رسائل البريد الإلكتروني
 
 **ملخص:**
-Loading email messages from files is straightforward with Aspose.Email. This allows access to all components, including attachments.
+تحميل رسائل البريد الإلكتروني من الملفات سهل للغاية مع Aspose.Email. يتيح لك هذا الوصول إلى جميع المكونات، بما في ذلك المرفقات.
 
-#### Step 1: Define the Directory Path
-Set up your document directory path where emails are stored:
+#### الخطوة 1: تحديد مسار الدليل
+قم بإعداد مسار دليل المستندات الخاص بك حيث يتم تخزين رسائل البريد الإلكتروني:
 ```csharp
 string dataDir = @"YOUR_DOCUMENT_DIRECTORY";
 ```
 
 #### الخطوة 2: تحميل رسالة البريد الإلكتروني
-يستخدم `MailMessage.Load()` to load an email message from a file:
+يستخدم `MailMessage.Load()` لتحميل رسالة بريد إلكتروني من ملف:
 ```csharp
-// Load an email message from a specified file.
+// تحميل رسالة بريد إلكتروني من ملف محدد.
 MailMessage message = MailMessage.Load(dataDir + "/Attachments.eml");
 ```
 **توضيح:**
-ال `Load()` method reads the contents of the specified EML file, parsing it into a `MailMessage` object that represents the entire email.
+ال `Load()` تقوم الطريقة بقراءة محتويات ملف EML المحدد، وتحليله إلى `MailMessage` الكائن الذي يمثل البريد الإلكتروني بأكمله.
 
-#### Step 3: Iterate Over Attachments
-Now that you've loaded your message, iterate over its attachments to display their names:
+#### الخطوة 3: التكرار على المرفقات
+الآن بعد أن قمت بتحميل رسالتك، قم بالتكرار على مرفقاتها لعرض أسمائها:
 ```csharp
-// Iterate over each attachment in the loaded email message.
+// قم بالتكرار على كل مرفق في رسالة البريد الإلكتروني المحملة.
 foreach (Attachment attachment in message.Attachments)
 {
-    // Display the name of each attachment.
+    // عرض اسم كل مرفق.
     Console.WriteLine(attachment.Name);
 }
 ```
 **توضيح:**
-ال `Attachments` property returns a collection of all attachments. By iterating through this collection, you can access and display each attachment's name.
+ال `Attachments` تُرجع الخاصية مجموعة من جميع المرفقات. بالتكرار خلال هذه المجموعة، يمكنك الوصول إلى اسم كل مرفق وعرضه.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **مشاكل مسار الملف**: Ensure your file paths are correctly set to avoid `FileNotFoundException`.
-- **Attachment Access**: Verify the email message contains attachments before accessing them to prevent null reference exceptions.
+- **مشاكل مسار الملف**:تأكد من تعيين مسارات الملفات بشكل صحيح لتجنب `FileNotFoundException`.
+- **الوصول إلى المرفقات**:تأكد من أن رسالة البريد الإلكتروني تحتوي على مرفقات قبل الوصول إليها لمنع استثناءات المرجع الفارغ.
 
 ## التطبيقات العملية
 
-Here are some real-world scenarios where loading and displaying email attachments can be useful:
-1. **نقل البيانات:** Automatically extract data from archived emails during a platform transition.
-2. **حلول النسخ الاحتياطي:** Create automated backups of important email attachments for compliance purposes.
-3. **Email Parsing Services:** Build services that parse emails to extract and store attachments in a database.
+فيما يلي بعض السيناريوهات الواقعية حيث قد يكون تحميل مرفقات البريد الإلكتروني وعرضها مفيدًا:
+1. **نقل البيانات:** استخراج البيانات تلقائيًا من رسائل البريد الإلكتروني المؤرشفة أثناء انتقال النظام الأساسي.
+2. **حلول النسخ الاحتياطي:** إنشاء نسخ احتياطية تلقائية لمرفقات البريد الإلكتروني المهمة لأغراض الامتثال.
+3. **خدمات تحليل البريد الإلكتروني:** إنشاء خدمات تقوم بتحليل رسائل البريد الإلكتروني لاستخراج المرفقات وتخزينها في قاعدة بيانات.
 
 ## اعتبارات الأداء
-When working with large volumes of emails, consider these performance tips:
-- **Optimize File I/O Operations**: Organize your directory structure efficiently to minimize file access times.
+عند العمل مع كميات كبيرة من رسائل البريد الإلكتروني، ضع في اعتبارك نصائح الأداء التالية:
+- **تحسين عمليات إدخال/إخراج الملفات**:قم بتنظيم بنية الدليل لديك بكفاءة لتقليل أوقات الوصول إلى الملفات.
 - **إدارة الذاكرة**:التخلص من `MailMessage` الأشياء بعد استخدامها لتحرير الموارد.
-- **معالجة الدفعات**: Process thousands of emails in batches to manage memory usage effectively.
+- **معالجة الدفعات**:قم بمعالجة آلاف رسائل البريد الإلكتروني على دفعات لإدارة استخدام الذاكرة بشكل فعال.
 
 ## خاتمة
-In this tutorial, you've learned how to load email messages and display their attachments using Aspose.Email for .NET. By following these steps, you can efficiently handle email processing tasks in your applications.
+في هذا البرنامج التعليمي، تعلمت كيفية تحميل رسائل البريد الإلكتروني وعرض مرفقاتها باستخدام Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك إدارة مهام معالجة البريد الإلكتروني في تطبيقاتك بكفاءة.
 
-To continue exploring Aspose.Email's capabilities, consider diving into more advanced features like sending emails with attachments or parsing complex MIME types. Implement this solution today and streamline your email handling processes!
+لمواصلة استكشاف إمكانيات Aspose.Email، جرّب ميزات أكثر تقدمًا، مثل إرسال رسائل بريد إلكتروني مع مرفقات أو تحليل أنواع MIME المعقدة. طبّق هذا الحل اليوم وسهّل عملية معالجة بريدك الإلكتروني!
 
 ## قسم الأسئلة الشائعة
 1. **كيف أقوم بتثبيت Aspose.Email لـ .NET؟**
-   - Use the .NET CLI, Package Manager, or NuGet UI to add the library to your project.
-2. **Can I use Aspose.Email without a full license?**
-   - Yes, start with a free trial or request a temporary license for evaluation purposes.
-3. **What file formats can Aspose.Email handle?**
-   - It supports various email formats like EML, MSG, and MHTML.
-4. **How do I troubleshoot missing attachments?**
-   - Verify the source emails contain attachments before processing.
+   - استخدم .NET CLI أو Package Manager أو NuGet UI لإضافة المكتبة إلى مشروعك.
+2. **هل يمكنني استخدام Aspose.Email بدون ترخيص كامل؟**
+   - نعم، ابدأ بفترة تجريبية مجانية أو اطلب ترخيصًا مؤقتًا لأغراض التقييم.
+3. **ما هي تنسيقات الملفات التي يمكن لـ Aspose.Email التعامل معها؟**
+   - إنه يدعم تنسيقات البريد الإلكتروني المختلفة مثل EML وMSG وMHTML.
+4. **كيف يمكنني استكشاف مشكلة المرفقات المفقودة وإصلاحها؟**
+   - تأكد من أن رسائل البريد الإلكتروني المصدر تحتوي على مرفقات قبل المعالجة.
 5. **هل Aspose.Email متوافق مع كافة إصدارات .NET؟**
-   - Yes, it is compatible with .NET Framework and .NET Core/5+.
+   - نعم، فهو متوافق مع .NET Framework و.NET Core/5+.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/net/)
@@ -135,7 +135,7 @@ To continue exploring Aspose.Email's capabilities, consider diving into more adv
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - [منتدى الدعم](https://forum.aspose.com/c/email/10)
 
-Explore these resources to further enhance your knowledge and capabilities with Aspose.Email for .NET. Happy coding!
+استكشف هذه الموارد لتعزيز معرفتك وقدراتك مع Aspose.Email لـ .NET. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

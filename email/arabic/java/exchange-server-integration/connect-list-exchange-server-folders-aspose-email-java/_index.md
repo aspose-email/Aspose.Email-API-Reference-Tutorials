@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect to and list folders on an Exchange server using Aspose.Email for Java. This guide covers setup, connection, and listing of top-level and sub-folders."
-"title": "How to Connect and List Exchange Server Folders Using Aspose.Email for Java"
+"description": "تعرّف على كيفية الاتصال بالمجلدات وإدراجها على خادم Exchange باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إعداد المجلدات الرئيسية والفرعية وإدراجها، والاتصال بها، وإدراجها."
+"title": "كيفية ربط مجلدات Exchange Server وإدراجها باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/"
 "weight": 1
 ---
@@ -11,24 +11,24 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Connect and List Exchange Server Folders Using Aspose.Email for Java
+# كيفية ربط مجلدات Exchange Server وإدراجها باستخدام Aspose.Email لـ Java
 
-In today's digital workplace, efficiently managing emails is crucial for productivity. Whether you're a developer automating email tasks or an IT professional seeking better control over email management, connecting to an Exchange server can be transformative. This tutorial guides you through using Aspose.Email for Java to connect and list folders within an Exchange server, streamlining your email management workflow.
+في بيئة العمل الرقمية الحالية، تُعدّ إدارة رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية لزيادة الإنتاجية. سواء كنت مطورًا تُؤتمت مهام البريد الإلكتروني أو متخصصًا في تكنولوجيا المعلومات يسعى لتحسين تحكمه في إدارة البريد الإلكتروني، يُمكن أن يُحدث الاتصال بخادم Exchange نقلة نوعية. يُرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ Java للاتصال بالمجلدات وسردها داخل خادم Exchange، مما يُبسّط سير عمل إدارة البريد الإلكتروني لديك.
 
 **ما سوف تتعلمه:**
-- How to establish a connection with an Exchange Server using Aspose.Email for Java
-- Techniques for listing all top-level folders in the Exchange Server
-- Methods to recursively list sub-folders
+- كيفية إنشاء اتصال مع خادم Exchange باستخدام Aspose.Email لـ Java
+- تقنيات لإدراج جميع المجلدات ذات المستوى الأعلى في Exchange Server
+- طرق لإدراج المجلدات الفرعية بشكل متكرر
 
-Let's dive into how you can implement these solutions effectively.
+دعونا نتعمق في كيفية تنفيذ هذه الحلول بشكل فعال.
 
 ## المتطلبات الأساسية
-Before we start, ensure that you have covered the following prerequisites:
+قبل أن نبدأ، تأكد من أنك قمت بتغطية المتطلبات الأساسية التالية:
 
 ### المكتبات والتبعيات المطلوبة
-Include Aspose.Email for Java as a dependency in your project. This is essential for interacting with Exchange servers using EWSClient.
+أضف Aspose.Email لـ Java كاعتمادية في مشروعك. هذا ضروري للتفاعل مع خوادم Exchange باستخدام EWSClient.
 
-**Maven Configuration:**
+**تكوين Maven:**
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -39,26 +39,26 @@ Include Aspose.Email for Java as a dependency in your project. This is essential
 ```
 
 ### متطلبات إعداد البيئة
-- Ensure you have a Java Development Kit (JDK) version 16 or later installed.
-- Access to an Exchange server with credentials for authentication.
+- تأكد من تثبيت Java Development Kit (JDK) الإصدار 16 أو إصدار أحدث.
+- الوصول إلى خادم Exchange باستخدام بيانات الاعتماد للمصادقة.
 
 ### متطلبات المعرفة
-A basic understanding of Java programming and familiarity with Maven projects will be beneficial.
+سيكون من المفيد الحصول على فهم أساسي لبرمجة Java والتعرف على مشاريع Maven.
 
-## Setting Up Aspose.Email for Java
-To get started, follow these steps to set up Aspose.Email for Java in your project environment. This setup is crucial as it lays the groundwork for all subsequent tasks.
+## إعداد Aspose.Email لـ Java
+للبدء، اتبع هذه الخطوات لإعداد Aspose.Email لجافا في بيئة مشروعك. هذا الإعداد بالغ الأهمية لأنه يُمهّد الطريق لجميع المهام اللاحقة.
 
-### Installation via Maven
-Use the above Maven configuration to include Aspose.Email as a dependency. This ensures that you have access to all necessary classes and methods provided by Aspose.Email.
+### التثبيت عبر Maven
+استخدم تكوين Maven أعلاه لتضمين Aspose.Email كتبعية. هذا يضمن لك الوصول إلى جميع الفئات والأساليب الضرورية التي يوفرها Aspose.Email.
 
 ### خطوات الحصول على الترخيص
-Aspose offers various licensing options, including:
-- **نسخة تجريبية مجانية:** Download a trial version from [أسبوزي](https://releases.aspose.com/email/java/).
-- **رخصة مؤقتة:** Obtain a temporary license for evaluation purposes [هنا](https://purchase.aspose.com/temporary-license/).
-- **شراء:** For production use, consider purchasing a full license [هنا](https://purchase.aspose.com/buy).
+توفر Aspose خيارات ترخيص مختلفة، بما في ذلك:
+- **نسخة تجريبية مجانية:** تنزيل النسخة التجريبية من [أسبوزي](https://releases.aspose.com/email/java/).
+- **رخصة مؤقتة:** الحصول على ترخيص مؤقت لأغراض التقييم [هنا](https://purchase.aspose.com/temporary-license/).
+- **شراء:** للاستخدام الإنتاجي، فكر في شراء ترخيص كامل [هنا](https://purchase.aspose.com/buy).
 
 ### التهيئة والإعداد الأساسي
-Once the library is included in your project, initialize it as follows:
+بمجرد تضمين المكتبة في مشروعك، قم بتهيئتها على النحو التالي:
 
 ```java
 import com.aspose.email.EWSClient;
@@ -68,14 +68,14 @@ IEWSClient client = EWSClient.getEWSClient("YOUR_EXCHANGE_SERVER_URI", "username
 ```
 
 ## دليل التنفيذ
-Now that the setup is complete, let's delve into the implementation details for connecting and listing folders in your Exchange server.
+الآن بعد اكتمال عملية الإعداد، دعنا نتعمق في تفاصيل التنفيذ الخاصة بتوصيل المجلدات وإدراجها في خادم Exchange الخاص بك.
 
-### Connecting to an Exchange Server
+### الاتصال بخادم Exchange
 **ملخص:**
-Connecting to an Exchange server allows you to perform various operations programmatically. This section demonstrates how to establish a connection using Aspose.Email Java.
+يتيح لك الاتصال بخادم Exchange إجراء عمليات متنوعة برمجيًا. يوضح هذا القسم كيفية إنشاء اتصال باستخدام Aspose.Email Java.
 
-#### Step 1: Initialize EWSClient
-Create and initialize the `IEWSClient` instance with necessary credentials:
+#### الخطوة 1: تهيئة EWSClient
+إنشاء وتفعيل `IEWSClient` مثال مع بيانات الاعتماد اللازمة:
 
 ```java
 import com.aspose.email.EWSClient;
@@ -86,7 +86,7 @@ public class ConnectToExchangeServer {
         try {
             IEWSClient client = EWSClient.getEWSClient("YOUR_EXCHANGE_SERVER_URI", "username", "password", "domain");
 
-            // Retrieve and print the mailbox information.
+            // استرجاع معلومات صندوق البريد وطباعتها.
             String mailboxUri = client.getMailboxInfo().getMailboxUri();
             System.out.println("Connected to Mailbox: " + mailboxUri);
         } catch (Exception ex) {
@@ -100,12 +100,12 @@ public class ConnectToExchangeServer {
 - `YOUR_EXCHANGE_SERVER_URI`:عنوان URI الخاص بخادم Exchange الخاص بك.
 - `username`، `password`، `domain`:بيانات الاعتماد للمصادقة على الاتصال.
 
-### Listing All Folders in Exchange Server
+### إدراج جميع المجلدات في Exchange Server
 **ملخص:**
-Once connected, you can list all folders within the root directory of the mailbox. This is useful for understanding the folder structure and accessing specific data.
+بمجرد الاتصال، يمكنك عرض جميع المجلدات ضمن الدليل الجذر لصندوق البريد. هذا مفيد لفهم بنية المجلد والوصول إلى بيانات محددة.
 
-#### Step 2: List Top-Level Folders
-يستخدم `listSubFolders` to retrieve top-level folders:
+#### الخطوة 2: قائمة المجلدات ذات المستوى الأعلى
+يستخدم `listSubFolders` لاسترداد المجلدات ذات المستوى الأعلى:
 
 ```java
 import com.aspose.email.EWSClient;
@@ -117,10 +117,10 @@ public class ListAllFolders {
         try {
             IEWSClient client = EWSClient.getEWSClient("YOUR_EXCHANGE_SERVER_URI", "username", "password", "domain");
             
-            // Get the root URI of the mailbox.
+            // احصل على عنوان URI الجذر لصندوق البريد.
             String rootUri = client.getMailboxInfo().getRootUri();
 
-            // List all folders starting from the root URI.
+            // قم بإدراج جميع المجلدات بدءًا من عنوان URI الجذر.
             ExchangeFolderInfoCollection folderInfoCollection = client.listSubFolders(rootUri);
             for (ExchangeFolderInfo folderInfo : folderInfoCollection) {
                 System.out.println("Folder: " + folderInfo.getDisplayName());
@@ -133,14 +133,14 @@ public class ListAllFolders {
 ```
 
 **خيارات تكوين المفاتيح:**
-- تأكد من `rootUri` correctly points to your mailbox root directory.
+- تأكد من `rootUri` يشير بشكل صحيح إلى دليل جذر صندوق البريد الخاص بك.
 
-### Listing Sub-Folders Recursively
+### إدراج المجلدات الفرعية بشكل متكرر
 **ملخص:**
-This feature extends our ability by recursively listing all sub-folders within a specified parent folder, providing a comprehensive view of the entire folder hierarchy.
+تعمل هذه الميزة على توسيع قدرتنا من خلال إدراج جميع المجلدات الفرعية بشكل متكرر داخل مجلد رئيسي محدد، مما يوفر عرضًا شاملاً لتسلسل المجلد بأكمله.
 
-#### Step 3: Recursive Listing
-Implement recursive logic to traverse through all sub-folders:
+#### الخطوة 3: القائمة المتكررة
+تنفيذ المنطق المتكرر للتنقل عبر جميع المجلدات الفرعية:
 
 ```java
 import com.aspose.email.ExchangeFolderInfo;
@@ -179,23 +179,23 @@ public class ListSubFoldersRecursively {
 ```
 
 **نصائح استكشاف الأخطاء وإصلاحها:**
-- Ensure your URI and credentials are accurate.
-- Handle exceptions to manage connectivity issues gracefully.
+- تأكد من أن عنوان URI الخاص بك وبيانات الاعتماد الخاصة بك دقيقة.
+- تعامل مع الاستثناءات لإدارة مشكلات الاتصال بسلاسة.
 
 ## التطبيقات العملية
-The ability to connect and navigate folders in an Exchange server can be applied in various scenarios:
-1. **Automated Email Organization:** Automatically categorize emails into specific folders based on criteria.
-2. **حلول النسخ الاحتياطي:** Create scripts to back up email data from the server regularly.
-3. **التكامل مع أنظمة إدارة علاقات العملاء:** Sync folder contents with customer relationship management systems for enhanced data accessibility.
+يمكن تطبيق القدرة على الاتصال بالمجلدات والتنقل بينها في خادم Exchange في سيناريوهات مختلفة:
+1. **تنظيم البريد الإلكتروني الآلي:** تصنيف رسائل البريد الإلكتروني تلقائيًا إلى مجلدات محددة استنادًا إلى معايير.
+2. **حلول النسخ الاحتياطي:** إنشاء نصوص برمجية لنسخ بيانات البريد الإلكتروني احتياطيًا من الخادم بشكل منتظم.
+3. **التكامل مع أنظمة إدارة علاقات العملاء:** قم بمزامنة محتويات المجلد مع أنظمة إدارة علاقات العملاء لتحسين إمكانية الوصول إلى البيانات.
 
 ## اعتبارات الأداء
 عند العمل مع Aspose.Email، ضع في اعتبارك النصائح التالية لتحسين الأداء:
-- Limit the number of simultaneous connections to avoid overloading your Exchange server.
-- Manage memory usage by disposing of objects that are no longer needed.
-- Follow best practices for Java memory management to ensure smooth application execution.
+- قم بتحديد عدد الاتصالات المتزامنة لتجنب التحميل الزائد على خادم Exchange الخاص بك.
+- إدارة استخدام الذاكرة عن طريق التخلص من الكائنات التي لم تعد هناك حاجة إليها.
+- اتبع أفضل الممارسات لإدارة ذاكرة Java لضمان تنفيذ التطبيق بسلاسة.
 
 ## خاتمة
-By now, you should have a solid understanding of how to connect to and list folders within an Exchange server using Aspose.Email for Java. This skill can greatly enhance your ability to manage email data programmatically, providing numerous benefits in both development and IT operations contexts.
+الآن، يجب أن يكون لديك فهمٌ متينٌ لكيفية الاتصال بالمجلدات وعرضها داخل خادم Exchange باستخدام Aspose.Email لـ Java. تُحسّن هذه المهارة قدرتك على إدارة بيانات البريد الإلكتروني برمجيًا بشكل كبير، مما يُوفر فوائد عديدة في سياقي التطوير وعمليات تكنولوجيا المعلومات.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

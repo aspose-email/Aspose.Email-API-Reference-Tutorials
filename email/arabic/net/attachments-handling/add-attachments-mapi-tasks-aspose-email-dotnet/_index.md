@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to add attachments to MAPI tasks using Aspose.Email for .NET. This guide covers setup, implementation, and practical applications."
-"title": "How to Add Attachments to MAPI Tasks Using Aspose.Email for .NET - A Developer's Guide"
+"description": "تعرّف على كيفية إضافة مرفقات إلى مهام MAPI باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية."
+"title": "كيفية إضافة مرفقات إلى مهام MAPI باستخدام Aspose.Email لـ .NET - دليل المطور"
 "url": "/ar/net/attachments-handling/add-attachments-mapi-tasks-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,35 +11,35 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Add Attachments to MAPI Tasks Using Aspose.Email for .NET
+# كيفية إضافة مرفقات إلى مهام MAPI باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Managing email tasks with attachments can enhance productivity significantly. This guide demonstrates how to add attachments directly within MAPI tasks using Aspose.Email for .NET, a comprehensive library designed for managing emails and tasks effortlessly.
+يمكن لإدارة مهام البريد الإلكتروني باستخدام المرفقات أن تُحسّن الإنتاجية بشكل ملحوظ. يوضح هذا الدليل كيفية إضافة المرفقات مباشرةً داخل مهام MAPI باستخدام Aspose.Email لـ .NET، وهي مكتبة شاملة مُصممة لإدارة رسائل البريد الإلكتروني والمهام بسهولة.
 
 ### ما سوف تتعلمه:
-- Integrating attachments into MAPI tasks with Aspose.Email
-- Setting up your development environment with necessary libraries
-- Step-by-step implementation of adding attachments
-- Real-world applications and integration possibilities
+- دمج المرفقات في مهام MAPI باستخدام Aspose.Email
+- إعداد بيئة التطوير الخاصة بك بالمكتبات الضرورية
+- تنفيذ إضافة المرفقات خطوة بخطوة
+- التطبيقات الواقعية وإمكانيات التكامل
 
-This guide is ideal for developers seeking robust solutions for task management and email automation. Let's begin by reviewing the prerequisites.
+هذا الدليل مثالي للمطورين الذين يبحثون عن حلول فعّالة لإدارة المهام وأتمتة البريد الإلكتروني. لنبدأ بمراجعة المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك ما يلي:
 
 ### المكتبات المطلوبة:
-- **Aspose.Email لـ .NET** version 21.12 or later
-- .NET Framework 4.6.1 or higher
+- **Aspose.Email لـ .NET** الإصدار 21.12 أو أحدث
+- .NET Framework 4.6.1 أو أعلى
 
 ### متطلبات إعداد البيئة:
-- Visual Studio (2017 or newer)
-- Basic understanding of C# programming and familiarity with the MAPI protocol
+- Visual Studio (2017 أو أحدث)
+- فهم أساسي لبرمجة C# والتعرف على بروتوكول MAPI
 
 ## إعداد Aspose.Email لـ .NET
 
-To start using Aspose.Email, install it in your project as follows:
+لبدء استخدام Aspose.Email، قم بتثبيته في مشروعك على النحو التالي:
 
 ### خيارات التثبيت:
 
@@ -57,20 +57,20 @@ Install-Package Aspose.Email
 - ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### خطوات الحصول على الترخيص:
-1. **نسخة تجريبية مجانية:** Download a trial version from [هنا](https://releases.aspose.com/email/net/).
-2. **رخصة مؤقتة:** For extended testing, acquire a temporary license at [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-3. **شراء:** To use the full capabilities without restrictions, purchase a license via [موقع Aspose](https://purchase.aspose.com/buy).
+1. **نسخة تجريبية مجانية:** تنزيل النسخة التجريبية من [هنا](https://releases.aspose.com/email/net/).
+2. **رخصة مؤقتة:** لإجراء اختبار موسع، احصل على ترخيص مؤقت في [هذا الرابط](https://purchase.aspose.com/temporary-license/).
+3. **شراء:** لاستخدام الإمكانيات الكاملة دون قيود، قم بشراء ترخيص عبر [موقع Aspose](https://purchase.aspose.com/buy).
 
-Once installed, initialize Aspose.Email in your project by adding necessary using directives and configuring your license if you have one.
+بمجرد التثبيت، قم بتهيئة Aspose.Email في مشروعك عن طريق إضافة التوجيهات اللازمة وتكوين الترخيص الخاص بك إذا كان لديك واحد.
 
 ## دليل التنفيذ
 
-### Overview of Adding Attachments to MAPI Tasks
+### نظرة عامة حول إضافة المرفقات إلى مهام MAPI
 
-This feature allows attaching files directly to tasks created using the MAPI protocol, beneficial for task management systems needing documentation or related files attached directly.
+تتيح هذه الميزة إرفاق الملفات مباشرة بالمهام التي تم إنشاؤها باستخدام بروتوكول MAPI، وهو أمر مفيد لأنظمة إدارة المهام التي تحتاج إلى توثيق أو ملفات ذات صلة مرفقة مباشرة.
 
-#### Step 1: Create and Configure Your Task
-ابدأ بإنشاء مثيل لـ `MapiTask`. This object represents your email task.
+#### الخطوة 1: إنشاء مهمتك وتكوينها
+ابدأ بإنشاء مثيل لـ `MapiTask`يمثل هذا الكائن مهمة البريد الإلكتروني الخاصة بك.
 
 ```csharp
 using System;
@@ -79,83 +79,83 @@ using Aspose.Email.Mapi;
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 string outputDir = "YOUR_OUTPUT_DIRECTORY";
 
-// Create a new MAPI task with specified details
+// إنشاء مهمة MAPI جديدة بالتفاصيل المحددة
 MapiTask testTask = new MapiTask("Task with attachment", "This is the description of your task.", DateTime.Now, DateTime.Now.AddDays(1));
 ```
-*Note: Replace `YOUR_DOCUMENT_DIRECTORY` و `YOUR_OUTPUT_DIRECTORY` with actual paths on your system.*
+*ملاحظة: استبدال `YOUR_DOCUMENT_DIRECTORY` و `YOUR_OUTPUT_DIRECTORY` مع المسارات الفعلية على نظامك.*
 
-#### Step 2: Add Attachments to Your Task
-To add an attachment, use the `MapiAttachment` class. Specify the file path and name for the attachment.
+#### الخطوة 2: إضافة المرفقات إلى مهمتك
+لإضافة مرفق، استخدم `MapiAttachment` حدد مسار الملف واسم المرفق.
 
 ```csharp
-// Create a MAPI attachment
+// إنشاء مرفق MAPI
 string filePath = System.IO.Path.Combine(dataDir, "sample.pdf");
 MapiAttachment attachment = new MapiAttachment("sample.pdf", System.IO.File.ReadAllBytes(filePath));
 
-// Add the attachment to your task
+// أضف المرفق إلى مهمتك
 testTask.Attachments.Add(attachment);
 ```
-*Explanation: We read the file bytes from `filePath` and create a new `MapiAttachment`, which is then added to the task’s attachments.*
+*الشرح: نقوم بقراءة بايتات الملف من `filePath` وإنشاء جديد `MapiAttachment`، والتي تتم إضافتها بعد ذلك إلى مرفقات المهمة.*
 
-#### Step 3: Save Your Task
-Finally, save your MAPI task with the attachment to an output directory.
+#### الخطوة 3: احفظ مهمتك
+أخيرًا، احفظ مهمة MAPI الخاصة بك مع المرفق في دليل الإخراج.
 
 ```csharp
-// Define the path for saving
+// تحديد مسار الحفظ
 string outputPath = System.IO.Path.Combine(outputDir, "TaskWithAttachment.msg");
 
-// Save the task as a .msg file
+// حفظ المهمة كملف .msg
 testTask.Save(outputPath);
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها:
-- Ensure that the directories `dataDir` و `outputDir` exist before running your code.
-- Check for exceptions related to file paths or permissions.
+- تأكد من أن الدلائل `dataDir` و `outputDir` يجب أن تكون موجودة قبل تشغيل الكود الخاص بك.
+- التحقق من وجود استثناءات متعلقة بمسارات الملفات أو الأذونات.
 
 ## التطبيقات العملية
 
-Adding attachments to MAPI tasks can streamline workflows such as:
-1. **إدارة المشاريع:** Attach project documents directly to task items in a management tool.
-2. **دعم العملاء:** Include tickets, logs, or screenshots with support tasks.
-3. **Automated Reporting:** Attach generated reports to scheduled tasks for review.
+قد يؤدي إضافة المرفقات إلى مهام MAPI إلى تبسيط سير العمل مثل:
+1. **إدارة المشاريع:** قم بإرفاق مستندات المشروع مباشرة بعناصر المهام في أداة الإدارة.
+2. **دعم العملاء:** قم بتضمين التذاكر أو السجلات أو لقطات الشاشة مع مهام الدعم.
+3. **التقارير الآلية:** إرفاق التقارير المولدة بالمهام المجدولة للمراجعة.
 
-Aspose.Email integration allows expansion across various platforms supporting MAPI tasks.
+يتيح تكامل Aspose.Email التوسع عبر منصات مختلفة تدعم مهام MAPI.
 
 ## اعتبارات الأداء
 
-When handling file attachments and large datasets:
-- **Optimize File Sizes:** Compress files before attaching them.
-- **Manage Memory Usage:** Dispose of objects not in use to free up resources.
-- **معالجة الدفعات:** Process tasks in batches to reduce memory load.
+عند التعامل مع مرفقات الملفات ومجموعات البيانات الكبيرة:
+- **تحسين أحجام الملفات:** ضغط الملفات قبل إرفاقها.
+- **إدارة استخدام الذاكرة:** تخلص من الكائنات غير المستخدمة لتحرير الموارد.
+- **معالجة الدفعات:** قم بمعالجة المهام على دفعات لتقليل حمل الذاكرة.
 
-These practices ensure efficient resource management when using Aspose.Email for .NET.
+تضمن هذه الممارسات إدارة فعالة للموارد عند استخدام Aspose.Email لـ .NET.
 
 ## خاتمة
 
-By following this guide, you have learned how to add attachments to MAPI tasks using Aspose.Email for .NET. This feature can significantly enhance your task management capabilities by embedding necessary files directly into tasks.
+باتباع هذا الدليل، ستتعلم كيفية إضافة مرفقات إلى مهام MAPI باستخدام Aspose.Email لـ .NET. تُحسّن هذه الميزة بشكل كبير من إمكانيات إدارة المهام لديك من خلال تضمين الملفات الضرورية مباشرةً فيها.
 
 ### الخطوات التالية:
-- Experiment with different file types and sizes.
-- Explore further functionalities of Aspose.Email like email conversion and manipulation.
+- تجربة أنواع وأحجام ملفات مختلفة.
+- استكشف المزيد من الوظائف في Aspose.Email مثل تحويل البريد الإلكتروني ومعالجته.
 
-We encourage you to implement this solution in your projects. For more detailed information, refer to the official [وثائق Aspose](https://reference.aspose.com/email/net/).
+نشجعكم على تطبيق هذا الحل في مشاريعكم. لمزيد من المعلومات، يُرجى مراجعة الموقع الرسمي [وثائق Aspose](https://reference.aspose.com/email/net/).
 
 ## قسم الأسئلة الشائعة
 
-**1. What is MAPI?**
-   - MAPI stands for Messaging Application Programming Interface, a protocol used by Microsoft Outlook and other email clients.
+**1. ما هو MAPI؟**
+   - MAPI تعني واجهة برمجة تطبيقات المراسلة، وهو بروتوكول يستخدمه Microsoft Outlook وعملاء البريد الإلكتروني الآخرين.
 
-**2. How do I handle large attachments with Aspose.Email?**
-   - Consider compressing files or splitting them into smaller chunks before adding as attachments.
+**2. كيف أتعامل مع المرفقات الكبيرة باستخدام Aspose.Email؟**
+   - فكر في ضغط الملفات أو تقسيمها إلى أجزاء أصغر قبل إضافتها كمرفقات.
 
-**3. Can I attach multiple files to a single task?**
-   - Yes, simply add each `MapiAttachment` instance separately using the `Attachments.Add()` طريقة.
+**3. هل يمكنني إرفاق ملفات متعددة بمهمة واحدة؟**
+   - نعم، ببساطة أضف كل `MapiAttachment` مثال منفصل باستخدام `Attachments.Add()` طريقة.
 
-**4. Is there a limit on attachment size?**
-   - While Aspose.Email handles large files efficiently, always check your email client’s limits for attachments.
+**4. هل هناك حد لحجم المرفق؟**
+   - على الرغم من أن Aspose.Email يتعامل مع الملفات الكبيرة بكفاءة، يجب عليك دائمًا التحقق من حدود عميل البريد الإلكتروني الخاص بك فيما يتعلق بالمرفقات.
 
-**5. How do I troubleshoot errors with task saving?**
-   - Verify file paths and permissions. Ensure all resources are correctly initialized before saving tasks.
+**5. كيف يمكنني استكشاف الأخطاء وإصلاحها عند حفظ المهام؟**
+   - تحقق من مسارات الملفات والأذونات. تأكد من تهيئة جميع الموارد بشكل صحيح قبل حفظ المهام.
 
 ## موارد
 - **التوثيق:** [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/net/)

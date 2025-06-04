@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to preserve embedded MSG format using Aspose.Email for .NET. Step-by-step guide with source code."
-"linktitle": "Preserving Embedded MSG Format during Load with C#"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Preserving Embedded MSG Format during Load with C#"
+"description": "تعرّف على كيفية حفظ تنسيق الرسائل المُضمّنة باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدر."
+"linktitle": "الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#"
 "url": "/ar/net/email-attachment-handling/preserving-embedded-msg-format-during-load-with-csharp/"
 "weight": 12
 ---
@@ -13,35 +13,35 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Preserving Embedded MSG Format during Load with C#
+# الحفاظ على تنسيق MSG المضمن أثناء التحميل باستخدام C#
 
 
-In today's digital world, email communication plays a pivotal role in both personal and professional spheres. Many times, we need to work with email files programmatically, and preserving the original boundaries of an EML (Email) file can be crucial. In this step-by-step guide, we will explore how to achieve this using C# code with Aspose.Email for .NET.
+في عالمنا الرقمي اليوم، يلعب التواصل عبر البريد الإلكتروني دورًا محوريًا في المجالين الشخصي والمهني. في كثير من الأحيان، نحتاج إلى العمل مع ملفات البريد الإلكتروني برمجيًا، ويُعدّ الحفاظ على الحدود الأصلية لملف EML (البريد الإلكتروني) أمرًا بالغ الأهمية. في هذا الدليل المُفصّل، سنستكشف كيفية تحقيق ذلك باستخدام لغة C# مع Aspose.Email لـ .NET.
 
 ## مقدمة
 
-When working with EML files, it's essential to retain their original boundaries to ensure the integrity of the email content. Aspose.Email for .NET provides a simple and efficient way to do this. We will walk you through the process, starting with the necessary code snippet.
+عند العمل مع ملفات EML، من الضروري الحفاظ على حدودها الأصلية لضمان سلامة محتوى البريد الإلكتروني. يوفر Aspose.Email لـ .NET طريقة بسيطة وفعالة للقيام بذلك. سنشرح لك العملية بالتفصيل، بدءًا من مقتطف الشفرة اللازم.
 
 ## المتطلبات الأساسية
 
-Before we begin, make sure you have the following prerequisites in place:
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
-1. Aspose.Email for .NET: If you haven't already, download and install Aspose.Email for .NET from the website: [تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net/).
+1. Aspose.Email لـ .NET: إذا لم تقم بذلك بالفعل، فقم بتنزيل Aspose.Email لـ .NET وتثبيته من موقع الويب: [تنزيل Aspose.Email لـ .NET](https://releases.aspose.com/email/net/).
 
-2. C# Development Environment: Ensure you have a working C# development environment set up.
+2. بيئة تطوير C#: تأكد من إعداد بيئة تطوير C# صالحة للعمل.
 
-## Step 1: Load the EML File
+## الخطوة 1: تحميل ملف EML
 
-The first step is to load the EML file that you want to work with. Make sure you specify the correct path to the file directory in your code.
+الخطوة الأولى هي تحميل ملف EML الذي تريد العمل عليه. تأكد من تحديد المسار الصحيح لمجلد الملف في الكود.
 
 ```csharp
 string dataDir = "Your Data Directory";
 MailMessage mailMessage = MailMessage.Load(dataDir + "Attachments.eml");
 ```
 
-## Step 2: Save as EML with Preserved Original Boundaries
+## الخطوة 2: الحفظ بتنسيق EML مع الحفاظ على الحدود الأصلية
 
-Now, we will save the loaded email message as an EML file while preserving its original boundaries. This is where Aspose.Email for .NET comes into play. We'll use the `EmlSaveOptions` class with the `PreserveOriginalBoundaries` property set to `true`.
+الآن، سنحفظ رسالة البريد الإلكتروني المُحمّلة كملف EML مع الحفاظ على حدودها الأصلية. هنا يأتي دور Aspose.Email لـ .NET. سنستخدم `EmlSaveOptions` الصف مع `PreserveOriginalBoundaries` تم تعيين الخاصية إلى `true`.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat)
@@ -53,33 +53,33 @@ mailMessage.Save(dataDir + "PreserveOriginalBoundaries_out.eml", emlSaveOptions)
 
 ## خاتمة
 
-In this tutorial, we've walked you through the process of preserving EML original boundaries using C# code with Aspose.Email for .NET. This is a crucial step when working with email files programmatically to ensure that the email's structure remains intact.
+في هذا البرنامج التعليمي، شرحنا لك عملية الحفاظ على حدود EML الأصلية باستخدام كود C# مع Aspose.Email لـ .NET. تُعد هذه خطوة أساسية عند العمل مع ملفات البريد الإلكتروني برمجيًا لضمان سلامة بنية البريد الإلكتروني.
 
-Now, you can confidently work with EML files, preserving their original boundaries and maintaining the integrity of your email communications.
+الآن، يمكنك العمل بثقة مع ملفات EML، مع الحفاظ على حدودها الأصلية والحفاظ على سلامة اتصالات البريد الإلكتروني لديك.
 
-For more information and detailed documentation on Aspose.Email for .NET, visit the API documentation here: [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/).
+لمزيد من المعلومات والوثائق التفصيلية حول Aspose.Email لـ .NET، تفضل بزيارة وثائق واجهة برمجة التطبيقات هنا: [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/).
 
-## Frequently Asked Questions (FAQs)
+## الأسئلة الشائعة
 
-### Why is it important to preserve the original boundaries of EML files?
+### لماذا من المهم الحفاظ على الحدود الأصلية لملفات EML؟
    
-Preserving original boundaries ensures that the email's structure, including attachments and formatting, remains intact when working with EML files programmatically.
+يضمن الحفاظ على الحدود الأصلية أن يظل هيكل البريد الإلكتروني، بما في ذلك المرفقات والتنسيق، سليمًا عند العمل مع ملفات EML برمجيًا.
 
-### Can I use Aspose.Email for .NET with other programming languages?
+### هل يمكنني استخدام Aspose.Email لـ .NET مع لغات برمجة أخرى؟
 
-Aspose.Email for .NET is primarily designed for C#, but it can be integrated into applications developed in other .NET languages, such as VB.NET.
+تم تصميم Aspose.Email لـ .NET في المقام الأول للغة C#، ولكن يمكن دمجه في التطبيقات التي تم تطويرها بلغات .NET أخرى، مثل VB.NET.
 
-### Is Aspose.Email for .NET suitable for both personal and enterprise use?
+### هل Aspose.Email لـ .NET مناسب للاستخدام الشخصي والمؤسسي؟
 
-Yes, Aspose.Email for .NET is versatile and can be used for a wide range of email-related tasks, making it suitable for both personal and enterprise use.
+نعم، يعد Aspose.Email لـ .NET متعدد الاستخدامات ويمكن استخدامه لمجموعة واسعة من المهام المتعلقة بالبريد الإلكتروني، مما يجعله مناسبًا للاستخدام الشخصي والتجاري.
 
-### Where can I find more tutorials and examples for Aspose.Email for .NET?
+### أين يمكنني العثور على المزيد من البرامج التعليمية والأمثلة لـ Aspose.Email لـ .NET؟
 
-You can explore a variety of tutorials and examples in the API Aspose.Email for .NET documentation: [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/).
+يمكنك استكشاف مجموعة متنوعة من البرامج التعليمية والأمثلة في وثائق API Aspose.Email لـ .NET: [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/).
 
-### How can I access the latest updates and releases of Aspose.Email for .NET?
+### كيف يمكنني الوصول إلى أحدث التحديثات والإصدارات الخاصة بـ Aspose.Email لـ .NET؟
 
-To access the latest updates and releases of Aspose.Email for .NET, visit the release page: [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
+للوصول إلى أحدث التحديثات والإصدارات الخاصة بـ Aspose.Email لـ .NET، تفضل بزيارة صفحة الإصدار: [Aspose.Email لإصدارات .NET](https://releases.aspose.com/email/net/).
 
 ---
 

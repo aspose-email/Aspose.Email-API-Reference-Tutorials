@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently load and save EML files using Aspose.Email for .NET. This step-by-step guide covers installation, implementation, and practical uses."
-"title": "Master Loading and Saving EML Files with Aspose.Email for .NET | Step-by-Step Guide"
+"description": "تعرّف على كيفية تحميل ملفات EML وحفظها بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل خطوة بخطوة التثبيت والتنفيذ والاستخدامات العملية."
+"title": "إتقان تحميل ملفات EML وحفظها باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة"
 "url": "/ar/net/email-message-operations/load-save-eml-files-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,39 +11,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Loading and Saving EML Files with Aspose.Email for .NET
+# إتقان تحميل ملفات EML وحفظها باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Handling email files can be tedious and time-consuming. With Aspose.Email for .NET, you can automate the loading and saving of EML files using C#. This tutorial will guide you through this process, ensuring efficient management of your email data. Whether you are a seasoned developer or just starting out in .NET programming, this step-by-step guide is designed to help you master these tasks.
+قد يكون التعامل مع ملفات البريد الإلكتروني مُرهقًا ويستغرق وقتًا طويلًا. مع Aspose.Email لـ .NET، يمكنك أتمتة تحميل ملفات EML وحفظها باستخدام C#. سيرشدك هذا البرنامج التعليمي خلال هذه العملية، مما يضمن إدارة فعّالة لبيانات بريدك الإلكتروني. سواء كنت مطورًا متمرسًا أو مبتدئًا في برمجة .NET، فهذا الدليل المُفصّل مُصمم لمساعدتك على إتقان هذه المهام.
 
 **ما سوف تتعلمه:**
-- How to load an EML file using Aspose.Email
-- Steps to save the loaded EML file back to disk
+- كيفية تحميل ملف EML باستخدام Aspose.Email
+- خطوات حفظ ملف EML المحمّل مرة أخرى على القرص
 - إعداد وتثبيت Aspose.Email لـ .NET
-- Practical applications of loading and saving EML files
+- التطبيقات العملية لتحميل ملفات EML وحفظها
 
-Let’s begin with the prerequisites needed to get started.
+دعونا نبدأ بالمتطلبات الأساسية اللازمة للبدء.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: Essential for handling email operations. Ensure compatibility with your project setup.
+- **Aspose.Email لـ .NET**: ضروري لإدارة عمليات البريد الإلكتروني. تأكد من توافقه مع إعدادات مشروعك.
   
 
 ### متطلبات إعداد البيئة
-- A development environment set up with .NET (preferably .NET Core or .NET Framework).
-- Basic knowledge of C# and familiarity with file I/O operations.
+- بيئة تطوير تم إعدادها باستخدام .NET (يفضل .NET Core أو .NET Framework).
+- المعرفة الأساسية بلغة C# والتعرف على عمليات إدخال وإخراج الملفات.
 
 ### متطلبات المعرفة
-- Understanding of object-oriented programming concepts in C#.
-- Experience with handling files and directories in a .NET application is beneficial.
+- فهم مفاهيم البرمجة الكائنية التوجه في C#.
+- تعتبر الخبرة في التعامل مع الملفات والدلائل في تطبيق .NET مفيدة.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started, you need to install the Aspose.Email library. Here’s how you can do it using different package managers:
+للبدء، عليك تثبيت مكتبة Aspose.Email. إليك كيفية القيام بذلك باستخدام مديري حزم مختلفين:
 
 **.NET CLI**
 ```bash
@@ -61,10 +61,10 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-You can start with a free trial or obtain a temporary license to explore all features without limitations. Follow these steps:
-1. يزور [صفحة شراء Aspose](https://purchase.aspose.com/buy) to buy a full license if needed.
-2. For a free trial, navigate to [Aspose’s download section](https://releases.aspose.com/email/net/).
-3. Apply for a temporary license via the [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
+يمكنك البدء بفترة تجريبية مجانية أو الحصول على ترخيص مؤقت لاستكشاف جميع الميزات دون قيود. اتبع الخطوات التالية:
+1. يزور [صفحة شراء Aspose](https://purchase.aspose.com/buy) لشراء ترخيص كامل إذا لزم الأمر.
+2. للحصول على نسخة تجريبية مجانية، انتقل إلى [قسم التنزيلات في Aspose](https://releases.aspose.com/email/net/).
+3. التقدم بطلب للحصول على رخصة مؤقتة عبر [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
 
 ### التهيئة الأساسية
 
@@ -76,58 +76,58 @@ using Aspose.Email;
 
 ## دليل التنفيذ
 
-In this section, we'll break down the process into two main features: loading an EML file and saving it back to disk.
+في هذا القسم، سنقوم بتقسيم العملية إلى ميزتين رئيسيتين: تحميل ملف EML وحفظه مرة أخرى على القرص.
 
-### Feature 1: Load an EML File
+### الميزة 1: تحميل ملف EML
 
 #### ملخص
-This feature demonstrates how to load an existing EML file using Aspose.Email for .NET. It's ideal for applications that need to read email content programmatically.
+توضح هذه الميزة كيفية تحميل ملف EML موجود باستخدام Aspose.Email لـ .NET. وهي مثالية للتطبيقات التي تحتاج إلى قراءة محتوى البريد الإلكتروني برمجيًا.
 
 ##### دليل خطوة بخطوة
 
-**الخطوة 1**: Set the Directory
+**الخطوة 1**:تعيين الدليل
 
-Define the path where your EML file is located:
+قم بتحديد المسار الذي يوجد به ملف EML الخاص بك:
 
 ```csharp
 string dataDir = "@YOUR_DOCUMENT_DIRECTORY";
 ```
 
-**الخطوة 2**: Load the EML File
+**الخطوة 2**:تحميل ملف EML
 
-يستخدم `MailMessage.Load` to read the EML file. This method parses the email and provides a `MailMessage` كائن لمزيد من العمليات.
+يستخدم `MailMessage.Load` لقراءة ملف EML. تقوم هذه الطريقة بتحليل البريد الإلكتروني وتوفير `MailMessage` كائن لمزيد من العمليات.
 
 ```csharp
 using Aspose.Email.Mime;
 
-// Load an existing EML file
+// تحميل ملف EML الحالي
 MailMessage mailMessage = MailMessage.Load(dataDir + "/Attachments.eml");
 ```
 
 **توضيح**: 
-- ال `Load` function reads your specified EML file and converts it into a `MailMessage` object, allowing you to manipulate the email data within your application.
+- ال `Load` تقوم الوظيفة بقراءة ملف EML المحدد وتحويله إلى `MailMessage` كائن يسمح لك بالتعامل مع بيانات البريد الإلكتروني داخل تطبيقك.
 
-### Feature 2: Save an EML File
+### الميزة 2: حفظ ملف EML
 
 #### ملخص
-After loading an EML file, you might want to save modifications or simply store the email in a different location. This feature covers saving the loaded mail message back to disk.
+بعد تحميل ملف EML، قد ترغب في حفظ التعديلات أو ببساطة تخزين البريد الإلكتروني في مكان آخر. تشمل هذه الميزة حفظ رسالة البريد الإلكتروني المُحمّلة على القرص.
 
 ##### دليل خطوة بخطوة
 
-**الخطوة 1**: Set the Output Directory
+**الخطوة 1**:تعيين دليل الإخراج
 
-Specify where you wish to save your modified EML file:
+حدد المكان الذي تريد حفظ ملف EML المعدل فيه:
 
 ```csharp
 string outputDir = "@YOUR_OUTPUT_DIRECTORY";
 ```
 
-**الخطوة 2**: Save the MailMessage
+**الخطوة 2**:حفظ رسالة البريد
 
-يستخدم `MailMessage.Save` with `SaveOptions.DefaultEml` to write back to an EML format.
+يستخدم `MailMessage.Save` مع `SaveOptions.DefaultEml` للكتابة مرة أخرى إلى تنسيق EML.
 
 ```csharp
-// Save the loaded MailMessage back to an EML file in default format
+// احفظ رسالة البريد المحملة مرة أخرى في ملف EML بالتنسيق الافتراضي
 mailMessage.Save(outputDir + "/LoadAndSaveFileAsEML_out.eml\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to create and automate recurring tasks in Microsoft Outlook using Aspose.Email for .NET. This guide covers installation, setup, and practical applications."
-"title": "Create Recurring Outlook Tasks with Aspose.Email for .NET&#58; A Complete Guide"
+"description": "تعرّف على كيفية إنشاء المهام المتكررة وأتمتتها في Microsoft Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التثبيت والإعداد والتطبيقات العملية."
+"title": "إنشاء مهام Outlook متكررة باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/calendar-appointments/create-recurring-outlook-tasks-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create and Save a Recurring Task Using Aspose.Email for .NET
+# كيفية إنشاء مهمة متكررة وحفظها باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Managing recurring tasks is essential for productivity, especially when using tools like Microsoft Outlook. Automating task creation can save time and reduce errors. This tutorial will guide you through creating a recurring Outlook task with Aspose.Email for .NET.
+إدارة المهام المتكررة ضرورية لزيادة الإنتاجية، خاصةً عند استخدام أدوات مثل Microsoft Outlook. أتمتة إنشاء المهام توفر الوقت وتقلل الأخطاء. سيرشدك هذا البرنامج التعليمي إلى كيفية إنشاء مهمة Outlook متكررة باستخدام Aspose.Email لـ .NET.
 
 **ما سوف تتعلمه:**
-- Setting up your development environment with Aspose.Email for .NET
-- Creating tasks with recurrence using Aspose's powerful API
-- Saving tasks with timezone adjustments
+- إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Email لـ .NET
+- إنشاء مهام ذات تكرار باستخدام واجهة برمجة التطبيقات القوية الخاصة بـ Aspose
+- حفظ المهام باستخدام تعديلات المنطقة الزمنية
 
-Let’s dive into this guide, but first, ensure you have the prerequisites ready.
+دعنا نتعمق في هذا الدليل، ولكن أولاً، تأكد من أن لديك المتطلبات الأساسية جاهزة.
 
 ## المتطلبات الأساسية
 
-Before implementing recurring Outlook tasks, here are a few requirements and setup steps:
+قبل تنفيذ مهام Outlook المتكررة، إليك بعض المتطلبات وخطوات الإعداد:
 
 ### المكتبات والتبعيات المطلوبة:
-- **Aspose.Email لـ .NET**: A versatile library for managing emails and appointments.
+- **Aspose.Email لـ .NET**:مكتبة متعددة الاستخدامات لإدارة رسائل البريد الإلكتروني والمواعيد.
 - **.NET Framework أو .NET Core/5+/6+**:تأكد من أن بيئة التطوير الخاصة بك تدعم هذه الإصدارات.
 
 ### متطلبات إعداد البيئة:
-- Visual Studio installed on your machine (or a compatible IDE).
+- تم تثبيت Visual Studio على جهازك (أو IDE متوافق).
 - المعرفة الأساسية ببرمجة C#.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started, install the Aspose.Email library. Here's how:
+للبدء، ثبّت مكتبة Aspose.Email. إليك الطريقة:
 
 **استخدام .NET CLI:**
 ```bash
@@ -54,39 +54,39 @@ Install-Package Aspose.Email
 - ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص:
-To use Aspose.Email, you can opt for a free trial or purchase a license. Visit their site to get a temporary license which allows full access to features without evaluation limitations:
+لاستخدام Aspose.Email، يمكنك اختيار تجربة مجانية أو شراء ترخيص. تفضل بزيارة موقعهم الإلكتروني للحصول على ترخيص مؤقت يتيح لك الوصول الكامل إلى الميزات دون قيود على التقييم.
 - **نسخة تجريبية مجانية**: [قم بزيارة هنا](https://releases.aspose.com/email/net/)
-- **رخصة مؤقتة**: [Request It](https://purchase.aspose.com/temporary-license/)
+- **رخصة مؤقتة**: [اطلبها](https://purchase.aspose.com/temporary-license/)
 
 ### التهيئة والإعداد الأساسي
 
-Once installed, set up your project by initializing Aspose.Email. This ensures you can access its full functionality immediately.
+بعد التثبيت، قم بإعداد مشروعك بتهيئة Aspose.Email. هذا يضمن لك إمكانية الوصول إلى وظائفه الكاملة فورًا.
 
 ```csharp
 using Aspose.Email.Mapi;
 using Aspose.Email.Calendar.Recurrences;
 
-// Initialize Aspose.Email for .NET (if required)
+// تهيئة Aspose.Email لـ .NET (إذا لزم الأمر)
 var license = new License();
 license.SetLicense("Path to your Aspose.Email.lic file");
 ```
 
 ## دليل التنفيذ
 
-Now that you're set up, let's move on to creating a recurring task.
+الآن بعد أن قمت بالإعداد، دعنا ننتقل إلى إنشاء مهمة متكررة.
 
-### Creating and Saving a Task with Recurrence
+### إنشاء مهمة وحفظها مع التكرار
 
-This section focuses on how to create an Outlook task using Aspose.Email for .NET and configure it to recur weekly.
+يركز هذا القسم على كيفية إنشاء مهمة Outlook باستخدام Aspose.Email لـ .NET وتكوينها لتتكرر أسبوعيًا.
 
 #### ملخص
-You'll learn to define a task's start date, due date, and recurrence pattern, ensuring your tasks are automatically scheduled according to your needs.
+ستتعلم كيفية تحديد تاريخ بدء المهمة وتاريخ الاستحقاق ونمط التكرار، مما يضمن جدولة مهامك تلقائيًا وفقًا لاحتياجاتك.
 
 #### التنفيذ خطوة بخطوة
 
-**1. Define Local Time Zone**
+**1. تحديد المنطقة الزمنية المحلية**
 
-To ensure accuracy in scheduling, first capture the local time zone offset from UTC:
+لضمان الدقة في الجدولة، قم أولاً بالتقاط إزاحة المنطقة الزمنية المحلية من UTC:
 
 ```csharp
 using System;
@@ -95,11 +95,11 @@ TimeZone localZone = TimeZone.CurrentTimeZone;
 TimeSpan ts = localZone.GetUtcOffset(DateTime.Now);
 ```
 
-هنا، `ts` holds the time difference between your local time and UTC. This ensures that tasks are created in your local time.
+هنا، `ts` يحفظ فارق التوقيت بين وقتك المحلي وتوقيت UTC. هذا يضمن إنشاء المهام بتوقيتك المحلي.
 
-**2. Set Start and End Dates**
+**2. حدد تواريخ البدء والانتهاء**
 
-Next, define when the task should start and end:
+بعد ذلك، قم بتحديد متى يجب أن تبدأ المهمة وتنتهي:
 
 ```csharp
 DateTime StartDate = new DateTime(2015, 7, 16).Add(ts);
@@ -107,19 +107,19 @@ DateTime DueDate = new DateTime(2015, 7, 16).Add(ts);
 DateTime endByDate = new DateTime(2015, 9, 1).Add(ts);
 ```
 
-These dates are adjusted for your local time zone, ensuring they're accurate across different regions.
+تم تعديل هذه التواريخ وفقًا لمنطقتك الزمنية المحلية، مما يضمن دقتها في مختلف المناطق.
 
-**3. Create a MapiTask**
+**3. إنشاء MapiTask**
 
-Create the task using `MapiTask`, specifying its subject and other details:
+إنشاء المهمة باستخدام `MapiTask`، مع تحديد موضوعه والتفاصيل الأخرى:
 
 ```csharp
 MapiTask task = new MapiTask("This is a test task", "Description of the task", StartDate, DueDate);
 ```
 
-**4. Set Recurrence Pattern**
+**4. تعيين نمط التكرار**
 
-To make this task recur weekly on specific days, configure its recurrence pattern:
+لتجعل هذه المهمة تتكرر أسبوعيًا في أيام محددة، قم بتكوين نمط التكرار الخاص بها:
 
 ```csharp
 RecurrencePattern recurrence = new WeeklyRecurrencePattern(StartDate)
@@ -133,11 +133,11 @@ RecurrencePattern recurrence = new WeeklyRecurrencePattern(StartDate)
 task.RecurrencePattern = recurrence;
 ```
 
-This pattern makes the task occur every Monday, Wednesday, and Friday starting from `StartDate`.
+هذا النمط يجعل المهمة تحدث كل يوم اثنين وأربعاء وجمعة بدءًا من `StartDate`.
 
-**5. Save the Task**
+**5. احفظ المهمة**
 
-Finally, save your task to a specified directory:
+وأخيرًا، احفظ مهمتك في الدليل المحدد:
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -146,46 +146,46 @@ task.Save(dataDir + "\TaskWithRecurrence.msg", TaskSaveFormat.Msg);
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- **Time Zone Issues**: يضمن `ts` accurately reflects your local time zone. Incorrect offsets can lead to tasks being scheduled at the wrong times.
-- **File Path Errors**: Verify that `dataDir` is correctly set and accessible by your application.
+- **مشاكل المنطقة الزمنية**: يضمن `ts` يعكس التوقيت المحلي بدقة. قد تؤدي الإزاحات غير الصحيحة إلى جدولة المهام في أوقات خاطئة.
+- **أخطاء مسار الملف**:تأكد من ذلك `dataDir` تم ضبطها بشكل صحيح ويمكن الوصول إليها بواسطة تطبيقك.
 
 ## التطبيقات العملية
 
-Using Aspose.Email for .NET to create recurring tasks has several practical applications:
+إن استخدام Aspose.Email لـ .NET لإنشاء مهام متكررة له عدة تطبيقات عملية:
 
-1. **جدولة الاجتماعات الآلية**: Automatically generate meeting invites on a weekly basis without manual intervention.
-2. **إدارة المشاريع**: Schedule regular project check-ins or updates, ensuring stakeholders are kept informed.
-3. **الإنتاجية الشخصية**: Create personal reminders for daily habits or workouts that recur weekly.
+1. **جدولة الاجتماعات الآلية**:إنشاء دعوات الاجتماعات تلقائيًا على أساس أسبوعي دون تدخل يدوي.
+2. **إدارة المشاريع**:جدولة عمليات تسجيل الدخول أو التحديثات المنتظمة للمشروع، والتأكد من إبقاء أصحاب المصلحة على اطلاع.
+3. **الإنتاجية الشخصية**:إنشاء تذكيرات شخصية للعادات اليومية أو التمارين الرياضية التي تتكرر أسبوعيًا.
 
 ## اعتبارات الأداء
 
-When implementing tasks with Aspose.Email in .NET:
+عند تنفيذ المهام باستخدام Aspose.Email في .NET:
 
 - **إدارة الذاكرة**:تخلص من الكائنات بشكل صحيح لتحرير الموارد.
-- **معالجة الدفعات**: When handling large numbers of tasks, process them in batches to manage resource usage efficiently.
-- **معالجة الأخطاء**: Implement robust error handling to gracefully manage any exceptions during task creation or saving.
+- **معالجة الدفعات**:عند التعامل مع عدد كبير من المهام، قم بمعالجتها على دفعات لإدارة استخدام الموارد بكفاءة.
+- **معالجة الأخطاء**:تنفيذ معالجة قوية للأخطاء لإدارة أي استثناءات بسلاسة أثناء إنشاء المهمة أو حفظها.
 
 ## خاتمة
 
-You’ve now learned how to create and save a recurring Outlook task using Aspose.Email for .NET. This powerful library simplifies the automation of email and calendar tasks, enhancing your productivity in managing schedules.
+لقد تعلمت الآن كيفية إنشاء مهمة Outlook متكررة وحفظها باستخدام Aspose.Email لـ .NET. تُبسط هذه المكتبة القوية أتمتة مهام البريد الإلكتروني والتقويم، مما يُعزز إنتاجيتك في إدارة الجداول الزمنية.
 
-Next steps could include exploring more advanced features like integrating with other systems or customizing task notifications. Try implementing these solutions in your projects to see their benefits firsthand!
+قد تشمل الخطوات التالية استكشاف ميزات أكثر تقدمًا، مثل التكامل مع أنظمة أخرى أو تخصيص إشعارات المهام. جرّب تطبيق هذه الحلول في مشاريعك لتكتشف فوائدها بنفسك!
 
 ## قسم الأسئلة الشائعة
 
 **1. كيف أقوم بتثبيت Aspose.Email لـ .NET؟**
-   - Use the .NET CLI, Package Manager, or NuGet Package Manager UI as described above.
+   - استخدم .NET CLI أو Package Manager أو NuGet Package Manager UI كما هو موضح أعلاه.
 
-**2. What is a MapiTask?**
-   - أ `MapiTask` represents an Outlook task object that you can manipulate using Aspose.Email's API.
+**2. ما هو MapiTask؟**
+   - أ `MapiTask` يمثل كائن مهمة Outlook الذي يمكنك التعامل معه باستخدام واجهة برمجة التطبيقات الخاصة بـ Aspose.Email.
 
-**3. How do I set up a weekly recurrence pattern?**
-   - استخدم `WeeklyRecurrencePattern` class and specify which days of the week your task should recur.
+**3. كيف أقوم بإعداد نمط التكرار الأسبوعي؟**
+   - استخدم `WeeklyRecurrencePattern` الصف وتحديد أيام الأسبوع التي يجب أن تتكرر فيها مهمتك.
 
-**4. Can I use Aspose.Email for .NET without purchasing a license?**
-   - Yes, you can start with a free trial or request a temporary license to explore its full capabilities.
+**4. هل يمكنني استخدام Aspose.Email لـ .NET دون شراء ترخيص؟**
+   - نعم، يمكنك البدء بفترة تجريبية مجانية أو طلب ترخيص مؤقت لاستكشاف إمكانياته الكاملة.
 
-**5. Where do I find more information on Aspose.Email's features?**
+**5. أين يمكنني العثور على مزيد من المعلومات حول ميزات Aspose.Email؟**
    - قم بزيارة [وثائق Aspose](https://reference.aspose.com/email/net/) للحصول على أدلة شاملة ومراجع API.
 
 ## موارد
@@ -193,10 +193,10 @@ Next steps could include exploring more advanced features like integrating with 
 - **تحميل**: [الإصدارات](https://releases.aspose.com/email/net/)
 - **شراء**: [شراء Aspose.Email](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية**: [ابدأ هنا](https://releases.aspose.com/email/net/)
-- **رخصة مؤقتة**: [Request One](https://purchase.aspose.com/temporary-license/)
+- **رخصة مؤقتة**: [طلب واحد](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [مجتمع Aspose](https://forum.aspose.com/c/email/10)
 
-Feel free to experiment with the code and customize it to fit your specific needs. Happy coding!
+لا تتردد في تجربة الكود وتخصيصه ليناسب احتياجاتك. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

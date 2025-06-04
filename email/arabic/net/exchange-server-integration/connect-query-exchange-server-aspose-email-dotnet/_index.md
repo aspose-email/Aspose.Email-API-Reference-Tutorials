@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect to an Exchange Web Service using Aspose.Email for .NET with this step-by-step guide. Streamline email automation tasks easily."
-"title": "How to Connect and Query Exchange Server Using Aspose.Email for .NET (Step-by-Step Guide)"
+"description": "تعرّف على كيفية الاتصال بخدمة ويب Exchange باستخدام Aspose.Email لـ .NET من خلال هذا الدليل المفصل. سهّل مهام أتمتة البريد الإلكتروني."
+"title": "كيفية الاتصال بخادم Exchange Server والاستعلام عنه باستخدام Aspose.Email لـ .NET (دليل خطوة بخطوة)"
 "url": "/ar/net/exchange-server-integration/connect-query-exchange-server-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Connect and Query Exchange Server Using Aspose.Email for .NET
+# كيفية الاتصال بخادم Exchange Server والاستعلام عنه باستخدام Aspose.Email لـ .NET
 
-Welcome to our comprehensive guide on connecting to the Exchange Web Service (EWS) using Aspose.Email for .NET. This tutorial is perfect for developers seeking to automate email tasks or system administrators aiming to enhance server capabilities.
+مرحبًا بكم في دليلنا الشامل للاتصال بخدمة Exchange Web Service (EWS) باستخدام Aspose.Email لـ .NET. هذا البرنامج التعليمي مثالي للمطورين الذين يسعون إلى أتمتة مهام البريد الإلكتروني، أو لمسؤولي النظام الذين يسعون إلى تحسين قدرات الخادم.
 
 ## ما سوف تتعلمه:
-- Connecting to an EWS using user credentials
-- Building email queries with ExchangeQueryBuilder
-- Real-world applications of these functionalities
-- Performance optimization and resource management tips
+- الاتصال بـ EWS باستخدام بيانات اعتماد المستخدم
+- إنشاء استعلامات البريد الإلكتروني باستخدام ExchangeQueryBuilder
+- التطبيقات الواقعية لهذه الوظائف
+- نصائح لتحسين الأداء وإدارة الموارد
 
-Let’s dive in!
+دعونا نغوص في الأمر!
 
 ## المتطلبات الأساسية
-Before we start, ensure that you have the following setup:
+قبل أن نبدأ، تأكد من أن لديك الإعداد التالي:
 
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: This library is crucial as it provides tools to interact with Exchange Web Services. You can find various installation methods below.
+- **Aspose.Email لـ .NET**هذه المكتبة بالغة الأهمية، إذ توفر أدوات للتفاعل مع خدمات Exchange Web. يمكنك العثور على طرق تثبيت متنوعة أدناه.
 
 ### متطلبات إعداد البيئة
-- A development environment set up for .NET applications
-- Access to an Exchange server with EWS enabled
+- بيئة تطوير تم إعدادها لتطبيقات .NET
+- الوصول إلى خادم Exchange مع تمكين EWS
 
 ### متطلبات المعرفة
-- Basic understanding of C# and .NET programming
-- Familiarity with email protocols like IMAP, SMTP, and EWS can be beneficial but is not mandatory.
+- فهم أساسي لبرمجة C# و.NET
+- قد يكون الإلمام ببروتوكولات البريد الإلكتروني مثل IMAP وSMTP وEWS مفيدًا ولكنه ليس إلزاميًا.
 
 ## إعداد Aspose.Email لـ .NET
-To begin, you’ll need to install the Aspose.Email library. Here are various methods to do so:
+للبدء، ستحتاج إلى تثبيت مكتبة Aspose.Email. إليك عدة طرق للقيام بذلك:
 
 **استخدام .NET CLI:**
 
@@ -56,30 +56,30 @@ Install-Package Aspose.Email
 - ابحث عن "Aspose.Email" في NuGet Package Manager وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-Aspose.Email can be used with a free trial. To get started:
-1. يزور [تجربة مجانية لبريد Aspose الإلكتروني](https://releases.aspose.com/email/net/) to download the library.
-2. For extended usage, consider obtaining a temporary license through [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
-3. Purchase a full license if necessary via [شراء Aspose.Email](https://purchase.aspose.com/buy).
+يمكنك استخدام Aspose.Email بفترة تجريبية مجانية. للبدء:
+1. يزور [تجربة مجانية لبريد Aspose الإلكتروني](https://releases.aspose.com/email/net/) لتحميل المكتبة.
+2. للاستخدام الموسع، فكر في الحصول على ترخيص مؤقت من خلال [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
+3. شراء ترخيص كامل إذا لزم الأمر عبر [شراء Aspose.Email](https://purchase.aspose.com/buy).
 
-Once you have the library installed and your license set up, we’re ready to move on to implementation.
+بمجرد تثبيت المكتبة وإعداد الترخيص الخاص بك، سنكون مستعدين للانتقال إلى التنفيذ.
 
 ## دليل التنفيذ
 
-### Connecting to Exchange Web Service (EWS)
-This section demonstrates how to connect to an Exchange server using EWS with user credentials. We'll use Aspose.Email for .NET to achieve this.
+### الاتصال بخدمة Exchange Web Service (EWS)
+يوضح هذا القسم كيفية الاتصال بخادم Exchange باستخدام EWS باستخدام بيانات اعتماد المستخدم. سنستخدم Aspose.Email لـ .NET لتحقيق ذلك.
 
 #### ملخص
-Connecting to EWS allows you to interact programmatically with your email services, enabling automation and integration tasks directly from your application.
+يتيح لك الاتصال بـ EWS التفاعل برمجيًا مع خدمات البريد الإلكتروني لديك، مما يتيح مهام الأتمتة والتكامل مباشرة من تطبيقك.
 
-**Step 1: Import Necessary Namespaces**
+**الخطوة 1: استيراد مساحات الأسماء الضرورية**
 
 ```csharp
 using Aspose.Email.Clients.Exchange;
 using Aspose.Email.Clients.Exchange.WebService;
 ```
 
-**Step 2: Set Up Credentials**
-يستبدل `"mailboxUri"`، `"username"`، `"password"`، و `"domain"` with your actual values.
+**الخطوة 2: إعداد بيانات الاعتماد**
+يستبدل `"mailboxUri"`، `"username"`، `"password"`، و `"domain"` مع قيمك الفعلية.
 
 ```csharp
 const string mailboxUri = "https://outlook.office365.com/ews/exchange.asmx";
@@ -88,93 +88,93 @@ const string password = "your_password";
 const string domain = "your_domain";
 ```
 
-**Step 3: Create an EWS Client**
-This snippet demonstrates how to create and dispose of an `IEWSClient` مثال.
+**الخطوة 3: إنشاء عميل EWS**
+يوضح هذا المقطع كيفية إنشاء والتخلص من `IEWSClient` مثال.
 
 ```csharp
 try
 {
-    // Establish a connection using the specified credentials.
+    // إنشاء اتصال باستخدام بيانات الاعتماد المحددة.
     IEWSClient client = EWSClient.GetEWSClient(mailboxUri, username, password, domain);
     
-    // Use the client for various operations...
+    // استخدم العميل لعمليات مختلفة...
 
-    // Always ensure to disconnect after your operations are done.
+    // تأكد دائمًا من فصل الاتصال بعد الانتهاء من العمليات.
     client.Dispose();
 }
 catch (Exception ex)
 {
-    Console.WriteLine(ex.Message);  // Log any exceptions that occur
+    Console.WriteLine(ex.Message);  // سجل أي استثناءات تحدث
 }
 ```
 
 **توضيح:**
 - **حدود**: `mailboxUri`، `username`، `password`، و `domain` ضرورية للمصادقة.
-- **قيم الإرجاع**: An instance of `IEWSClient` is returned, which you can use to interact with EWS.
+- **قيم الإرجاع**:مثال على `IEWSClient` يتم إرجاع ما يمكنك استخدامه للتفاعل مع EWS.
 
-### Building a Mail Query Using ExchangeQueryBuilder
-Now that we've connected to the server, let's build an email query. We'll focus on emails with "Newsletter" in their subject line sent today.
+### إنشاء استعلام بريد باستخدام ExchangeQueryBuilder
+بعد أن اتصلنا بالخادم، لنبدأ بإنشاء استعلام بريد إلكتروني. سنركز على رسائل البريد الإلكتروني التي تحتوي على "نشرة إخبارية" في سطر موضوعها والمُرسلة اليوم.
 
 #### ملخص
-استخدام `ExchangeQueryBuilder`, you can easily construct queries for filtering and retrieving specific emails from your mailbox.
+استخدام `ExchangeQueryBuilder`يمكنك بسهولة إنشاء استعلامات لتصفية واسترجاع رسائل البريد الإلكتروني المحددة من صندوق البريد الخاص بك.
 
-**Step 1: Import the Search Namespace**
+**الخطوة 1: استيراد مساحة اسم البحث**
 
 ```csharp
 using Aspose.Email.Tools.Search;
 ```
 
-**Step 2: Initialize ExchangeQueryBuilder**
-The builder is used to set up search criteria for emails.
+**الخطوة 2: تهيئة ExchangeQueryBuilder**
+يتم استخدام المنشئ لإعداد معايير البحث للرسائل الإلكترونية.
 
 ```csharp
 ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
 
-// Include only emails with 'Newsletter' in their subject line.
+// قم بإدراج رسائل البريد الإلكتروني التي تحتوي على كلمة "النشرة الإخبارية" في سطر الموضوع فقط.
 builder.Subject.Contains("Newsletter", true);
 
-// Filter emails sent on the current day.
+// تصفية رسائل البريد الإلكتروني المرسلة في اليوم الحالي.
 builder.InternalDate.On(DateTime.Now);
 ```
 
-**Step 3: Construct and Use the Query**
-The constructed query can be used to list messages that meet your criteria.
+**الخطوة 3: إنشاء الاستعلام واستخدامه**
+يمكن استخدام الاستعلام المُنشأ لإدراج الرسائل التي تفي بمعاييرك.
 
 ```csharp
 MailQuery query = builder.GetQuery();
 
-// The `query` object is now ready to use with ListMessages method for retrieving emails.
+// أصبح الآن الكائن `query` جاهزًا للاستخدام مع طريقة ListMessages لاسترداد رسائل البريد الإلكتروني.
 ```
 
 ## التطبيقات العملية
-- **تصفية البريد الإلكتروني تلقائيًا**: Automatically categorize and move newsletters to specific folders.
-- **تحليل البيانات**: Extract data from specific email subjects for reporting purposes.
-- **أنظمة الإشعارات**: Trigger alerts based on incoming emails that match certain criteria.
+- **تصفية البريد الإلكتروني تلقائيًا**:تصنيف النشرات الإخبارية ونقلها تلقائيًا إلى مجلدات محددة.
+- **تحليل البيانات**:استخراج البيانات من مواضيع البريد الإلكتروني المحددة لأغراض إعداد التقارير.
+- **أنظمة الإشعارات**:تشغيل التنبيهات استنادًا إلى رسائل البريد الإلكتروني الواردة التي تتطابق مع معايير معينة.
 
-Integration possibilities include using the retrieved data with CRM systems or analytics tools for enhanced business intelligence.
+تتضمن إمكانيات التكامل استخدام البيانات المستردة مع أنظمة إدارة علاقات العملاء أو أدوات التحليلات لتحسين ذكاء الأعمال.
 
 ## اعتبارات الأداء
-When working with Aspose.Email, consider these tips to ensure optimal performance:
-- **معالجة الدفعات**: Minimize server load by processing emails in batches.
-- **إدارة الموارد**: Always dispose of client objects after use to free up resources.
-- **معالجة الأخطاء**: Implement robust error handling to manage network or authentication issues gracefully.
+عند العمل مع Aspose.Email، ضع هذه النصائح في الاعتبار لضمان الأداء الأمثل:
+- **معالجة الدفعات**:تقليل تحميل الخادم عن طريق معالجة رسائل البريد الإلكتروني على دفعات.
+- **إدارة الموارد**:تخلص دائمًا من كائنات العميل بعد استخدامها لتحرير الموارد.
+- **معالجة الأخطاء**:تنفيذ معالجة قوية للأخطاء لإدارة مشكلات الشبكة أو المصادقة بسلاسة.
 
 ## خاتمة
-In this tutorial, we explored how to connect to Exchange Web Services using Aspose.Email for .NET and build queries for email retrieval. By following the steps outlined, you can automate a variety of tasks related to email management.
+في هذا البرنامج التعليمي، استكشفنا كيفية الاتصال بخدمات Exchange Web Services باستخدام Aspose.Email لـ .NET وإنشاء استعلامات لاسترجاع البريد الإلكتروني. باتباع الخطوات الموضحة، يمكنك أتمتة مجموعة متنوعة من المهام المتعلقة بإدارة البريد الإلكتروني.
 
-To continue your journey with Aspose.Email, explore other features like calendar integration or attachment handling. We encourage you to implement these solutions in your projects and see how they enhance efficiency.
+لمواصلة رحلتك مع Aspose.Email، استكشف ميزات أخرى مثل دمج التقويم أو معالجة المرفقات. نشجعك على تطبيق هذه الحلول في مشاريعك واكتشاف كيفية تعزيز الكفاءة.
 
 ## قسم الأسئلة الشائعة
-1. **How do I set up my environment for using Aspose.Email?**
-   - Install the library via .NET CLI or Package Manager Console as shown earlier, and ensure you have access to an Exchange server with EWS enabled.
-2. **Can I connect to any version of Exchange Server?**
-   - Yes, but ensure your server supports EWS and meets any specific requirements for authentication and connectivity.
-3. **What are some common issues when connecting to EWS?**
-   - Incorrect credentials or network restrictions can prevent a successful connection. Ensure all details are correct and consult your IT department if necessary.
-4. **How do I troubleshoot query failures in ExchangeQueryBuilder?**
-   - Double-check the criteria set in `ExchangeQueryBuilder` for any syntax errors or logical issues that may cause unexpected results.
-5. **Is there support available for Aspose.Email users?**
-   - Yes, visit [دعم Aspose](https://forum.aspose.com/c/email/10) for help with specific questions or troubleshooting assistance.
+1. **كيف أقوم بإعداد بيئتي لاستخدام Aspose.Email؟**
+   - قم بتثبيت المكتبة عبر .NET CLI أو Package Manager Console كما هو موضح سابقًا، وتأكد من أن لديك إمكانية الوصول إلى خادم Exchange مع تمكين EWS.
+2. **هل يمكنني الاتصال بأي إصدار من Exchange Server؟**
+   - نعم، ولكن تأكد من أن الخادم الخاص بك يدعم EWS ويلبي أي متطلبات محددة للمصادقة والاتصال.
+3. **ما هي بعض المشكلات الشائعة عند الاتصال بـ EWS؟**
+   - قد تمنع بيانات الاعتماد غير الصحيحة أو قيود الشبكة نجاح الاتصال. تأكد من صحة جميع البيانات واستشر قسم تكنولوجيا المعلومات لديك إذا لزم الأمر.
+4. **كيف يمكنني استكشاف أخطاء فشل الاستعلام في ExchangeQueryBuilder وإصلاحها؟**
+   - تأكد من المعايير المحددة في `ExchangeQueryBuilder` لأي أخطاء نحوية أو مشكلات منطقية قد تسبب نتائج غير متوقعة.
+5. **هل هناك دعم متاح لمستخدمي Aspose.Email؟**
+   - نعم قم بالزيارة [دعم Aspose](https://forum.aspose.com/c/email/10) للحصول على المساعدة بشأن أسئلة محددة أو المساعدة في استكشاف الأخطاء وإصلاحها.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/net/)
@@ -183,7 +183,7 @@ To continue your journey with Aspose.Email, explore other features like calendar
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 
-We hope this guide has been helpful. Happy coding!
+نأمل أن يكون هذا الدليل مفيدًا. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

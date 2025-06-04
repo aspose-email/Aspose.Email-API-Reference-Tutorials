@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently check email bounce status using Aspose.Email for Java. This guide covers setup, loading emails, and extracting detailed bounce information."
-"title": "Check Email Bounce Status Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية التحقق بكفاءة من حالة ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وتحميل رسائل البريد الإلكتروني، واستخراج معلومات الارتداد المفصلة."
+"title": "التحقق من حالة ارتداد البريد الإلكتروني باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/email-parsing-analysis/check-email-bounce-status-aspose-java/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Check Email Bounce Status Using Aspose.Email for Java
+# التحقق من حالة ارتداد البريد الإلكتروني باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Handling bounced emails can be challenging, especially with large volumes of communications. With the "Aspose.Email for Java" library, you can automate checking email bounce status efficiently. This guide will walk you through loading and analyzing email messages in Java to identify bounces.
+قد يكون التعامل مع رسائل البريد الإلكتروني المرتدة أمرًا صعبًا، خاصةً مع الكميات الكبيرة من الرسائل. باستخدام مكتبة "Aspose.Email for Java"، يمكنك أتمتة التحقق من حالة ارتداد البريد الإلكتروني بكفاءة. سيرشدك هذا الدليل خلال تحميل رسائل البريد الإلكتروني وتحليلها باستخدام Java لتحديد حالات الارتداد.
 
 **ما سوف تتعلمه:**
-- Setting up Aspose.Email for Java.
-- Loading and inspecting single and multiple email files.
-- Extracting detailed bounce information from emails.
-- Practical applications of these features.
-- Best practices for optimizing performance.
+- إعداد Aspose.Email لـJava.
+- تحميل وفحص ملفات البريد الإلكتروني الفردية والمتعددة.
+- استخراج معلومات مفصلة عن الارتداد من رسائل البريد الإلكتروني.
+- التطبيقات العملية لهذه الميزات.
+- أفضل الممارسات لتحسين الأداء.
 
-Let's start by setting up your environment to leverage these capabilities.
+لنبدأ بإعداد بيئتك للاستفادة من هذه الإمكانات.
 
 ## المتطلبات الأساسية
 
 قبل أن تبدأ، تأكد من أن لديك:
-- **Java Development Kit (JDK) 16 or higher** installed on your system.
-- Basic understanding of Java programming.
-- An IDE like IntelliJ IDEA or Eclipse for coding.
-- Maven for dependency management.
+- **مجموعة تطوير Java (JDK) 16 أو أعلى** تم تثبيته على نظامك.
+- فهم أساسيات برمجة جافا.
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse للترميز.
+- Maven لإدارة التبعيات.
 
-These tools and knowledge will help you follow the implementation steps smoothly.
+ستساعدك هذه الأدوات والمعرفة على متابعة خطوات التنفيذ بسلاسة.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-Include Aspose.Email in your project using Maven:
+قم بتضمين Aspose.Email في مشروعك باستخدام Maven:
 
 ```xml
 <dependency>
@@ -51,12 +51,12 @@ Include Aspose.Email in your project using Maven:
 
 ### الحصول على الترخيص
 
-To fully utilize Aspose.Email, you can acquire a free trial license or purchase the full version:
-1. **نسخة تجريبية مجانية:** يزور [Aspose's download page](https://releases.aspose.com/email/java/) for your trial version.
+للاستفادة الكاملة من Aspose.Email، يمكنك الحصول على ترخيص تجريبي مجاني أو شراء الإصدار الكامل:
+1. **نسخة تجريبية مجانية:** يزور [صفحة تنزيل Aspose](https://releases.aspose.com/email/java/) لإصدارك التجريبي.
 2. **رخصة مؤقتة:** التقدم بطلب للحصول على ترخيص مؤقت في [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-3. **شراء:** For ongoing use, purchase the product from [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+3. **شراء:** للاستخدام المستمر، قم بشراء المنتج من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
-After obtaining your license file, initialize it in your code as follows:
+بعد الحصول على ملف الترخيص الخاص بك، قم بتهيئته في الكود الخاص بك على النحو التالي:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
@@ -65,24 +65,24 @@ license.setLicense("path_to_your_license.lic");
 
 ## دليل التنفيذ
 
-This section covers features for checking the bounce status of email messages using Aspose.Email.
+يغطي هذا القسم الميزات الخاصة بالتحقق من حالة ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email.
 
-### Load and Check Bounce Status of a Single Email Message
+### تحميل والتحقق من حالة الارتداد لرسالة بريد إلكتروني واحدة
 
 #### ملخص
-This feature demonstrates loading an individual email file to determine if it has bounced, obtaining basic details about the bounce.
+توضح هذه الميزة كيفية تحميل ملف بريد إلكتروني فردي لتحديد ما إذا كان قد ارتد، والحصول على تفاصيل أساسية حول الارتداد.
 
 #### خطوات التنفيذ
-**Step 1: Import Required Libraries**
-Start by importing necessary classes:
+**الخطوة 1: استيراد المكتبات المطلوبة**
+ابدأ باستيراد الفئات الضرورية:
 
 ```java
 import com.aspose.email.BounceResult;
 import com.aspose.email.MailMessage;
 ```
 
-**Step 2: Load an Email Message File**
-Specify the directory and file name for your email message, then load it using `MailMessage.load()`.
+**الخطوة 2: تحميل ملف رسالة البريد الإلكتروني**
+حدد الدليل واسم الملف لرسالة البريد الإلكتروني الخاصة بك، ثم قم بتحميلها باستخدام `MailMessage.load()`.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
@@ -90,15 +90,15 @@ String fileName = "failed.msg";
 MailMessage mail = MailMessage.load(dataDir + fileName);
 ```
 
-**Step 3: Check Bounce Status**
-استخدم `checkBounced()` method to determine if the email has bounced and retrieve basic bounce details:
+**الخطوة 3: التحقق من حالة الارتداد**
+استخدم `checkBounced()` طريقة لتحديد ما إذا كان البريد الإلكتروني قد ارتد واسترجاع تفاصيل الارتداد الأساسية:
 
 ```java
 BounceResult result = mail.checkBounced();
 ```
 
-**Step 4: Accessing Bounce Properties**
-Access properties like bounce status, action taken due to bounce, and recipient information:
+**الخطوة 4: الوصول إلى خصائص الارتداد**
+الوصول إلى خصائص مثل حالة الارتداد، والإجراء المتخذ بسبب الارتداد، ومعلومات المستلم:
 
 ```java
 System.out.println("IsBounced : " + result.isBounced());
@@ -106,17 +106,17 @@ System.out.println("Action : " + result.getAction());
 System.out.println("Recipient : " + result.getRecipient());
 ```
 
-### Load and Check Detailed Bounce Status of an Email Message
+### تحميل والتحقق من حالة الارتداد التفصيلية لرسالة البريد الإلكتروني
 
 #### ملخص
-This feature extends the first by retrieving detailed information about why the email bounced.
+تعمل هذه الميزة على توسيع الميزة الأولى من خلال استرجاع معلومات مفصلة حول سبب ارتداد البريد الإلكتروني.
 
 #### خطوات التنفيذ
-Follow similar steps as before, but access more properties for comprehensive details:
-**Step 1 to Step 3:** Same as in Feature 1.
+اتبع الخطوات المشابهة للخطوات السابقة، ولكن قم بالوصول إلى المزيد من الخصائص للحصول على تفاصيل شاملة:
+**الخطوة 1 إلى الخطوة 3:** نفس ما في الميزة 1.
 
-**Step 4: Access Detailed Bounce Properties**
-In addition to basic properties, obtain detailed bounce reasons and status:
+**الخطوة 4: الوصول إلى خصائص الارتداد التفصيلية**
+بالإضافة إلى الخصائص الأساسية، احصل على أسباب الارتداد والحالة التفصيلية:
 
 ```java
 System.out.println("Reason : " + result.getReason());
@@ -125,62 +125,62 @@ System.out.println("OriginalMessage ToAddress 1: " +
     result.getOriginalMessage().getTo().get_Item(0).getAddress());
 ```
 
-### Load and Check Bounce Status of Another Email Message
+### تحميل والتحقق من حالة الارتداد لرسالة بريد إلكتروني أخرى
 
 #### ملخص
-The third feature illustrates the process for a different email file, emphasizing reusability.
+الميزة الثالثة توضح العملية الخاصة بملف بريد إلكتروني مختلف، مع التركيز على إمكانية إعادة الاستخدام.
 
-**خطوات التنفيذ:** Follow steps similar to those in Feature 1, adjusting the filename as needed:
+**خطوات التنفيذ:** اتبع الخطوات المشابهة لتلك الموجودة في الميزة 1، مع تعديل اسم الملف حسب الحاجة:
 
 ```java
 String fileName = "test.eml";
 MailMessage mail = MailMessage.load(dataDir + fileName);
 BounceResult result = mail.checkBounced();
-// Access properties similarly.
+// الوصول إلى الخصائص على نحو مماثل.
 ```
 
 ## التطبيقات العملية
 
-Understanding email bounce status is crucial for various applications:
-- **Email Marketing Campaigns:** Identify non-deliverable emails to clean up your mailing list.
-- **أنظمة دعم العملاء:** Automatically handle bounced notifications from customers.
-- **Business Communication Tools:** Ensure that critical communications reach their intended recipients.
+يعد فهم حالة ارتداد البريد الإلكتروني أمرًا بالغ الأهمية لمختلف التطبيقات:
+- **حملات التسويق عبر البريد الإلكتروني:** حدد رسائل البريد الإلكتروني غير القابلة للتسليم لتنظيف قائمة البريد الخاصة بك.
+- **أنظمة دعم العملاء:** التعامل تلقائيًا مع الإشعارات المرتدة من العملاء.
+- **أدوات الاتصال التجاري:** تأكد من وصول الاتصالات الهامة إلى المتلقين المقصودين.
 
-By integrating Aspose.Email's functionality, you can streamline these processes and improve communication efficiency.
+من خلال دمج وظيفة Aspose.Email، يمكنك تبسيط هذه العمليات وتحسين كفاءة الاتصال.
 
 ## اعتبارات الأداء
 
-When working with large volumes of email data:
-- Optimize memory usage by managing object lifecycles appropriately.
-- Use efficient file handling techniques to reduce I/O operations.
-- Regularly update Aspose.Email to the latest version for performance improvements and bug fixes.
+عند العمل مع كميات كبيرة من بيانات البريد الإلكتروني:
+- قم بتحسين استخدام الذاكرة من خلال إدارة دورات حياة الكائنات بشكل مناسب.
+- استخدم تقنيات فعالة لمعالجة الملفات لتقليل عمليات الإدخال/الإخراج.
+- قم بتحديث Aspose.Email بانتظام إلى الإصدار الأحدث لتحسين الأداء وإصلاح الأخطاء.
 
-Following these best practices will help maintain optimal performance in your applications.
+إن اتباع أفضل الممارسات هذه سيساعدك في الحفاظ على الأداء الأمثل في تطبيقاتك.
 
 ## خاتمة
 
-You've now learned how to effectively check email bounce statuses using Aspose.Email for Java. This powerful tool simplifies handling bounced emails, ensuring efficient communication channels.
+لقد تعلمتَ الآن كيفية التحقق بفعالية من حالات ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. تُبسّط هذه الأداة الفعّالة التعامل مع رسائل البريد الإلكتروني المرتدة، مما يضمن قنوات تواصل فعّالة.
 
 **الخطوات التالية:**
 - استكشف الميزات الإضافية لـ Aspose.Email.
-- Integrate these functionalities into your existing systems.
-- Experiment with different use cases to maximize the library's potential.
+- دمج هذه الوظائف في أنظمتك الحالية.
+- قم بتجربة حالات استخدام مختلفة لتعظيم إمكانات المكتبة.
 
-Ready to implement this solution? Start by trying out the code snippets provided and customize them for your needs.
+هل أنت مستعد لتطبيق هذا الحل؟ ابدأ بتجربة مقتطفات التعليمات البرمجية المُقدمة، ثم خصّصها لتناسب احتياجاتك.
 
 ## قسم الأسئلة الشائعة
 
-1. **How do I get started with Aspose.Email for Java?**
-   - Install JDK 16+, set up Maven, and add the dependency as shown above.
+1. **كيف أبدأ باستخدام Aspose.Email لـ Java؟**
+   - قم بتثبيت JDK 16+، وإعداد Maven، وإضافة التبعية كما هو موضح أعلاه.
    
-2. **What are common reasons for email bounces?**
-   - Invalid addresses, full mailboxes, or server issues can cause bounces.
-3. **Can I check multiple emails at once?**
-   - Yes, loop through a directory of email files using similar logic.
-4. **How do I handle different types of bounce messages?**
-   - Use detailed properties like `getReason()` to differentiate and respond appropriately.
-5. **Is Aspose.Email suitable for large-scale applications?**
-   - Yes, with proper memory management and performance optimizations.
+2. **ما هي الأسباب الشائعة لارتداد رسائل البريد الإلكتروني؟**
+   - يمكن أن تتسبب العناوين غير الصالحة أو صناديق البريد الممتلئة أو مشكلات الخادم في حدوث ارتدادات.
+3. **هل يمكنني التحقق من رسائل البريد الإلكتروني المتعددة في وقت واحد؟**
+   - نعم، قم بالمرور عبر دليل ملفات البريد الإلكتروني باستخدام منطق مماثل.
+4. **كيف أتعامل مع أنواع مختلفة من رسائل الارتداد؟**
+   - استخدم خصائص مفصلة مثل `getReason()` للتمييز والاستجابة بشكل مناسب.
+5. **هل Aspose.Email مناسب للتطبيقات واسعة النطاق؟**
+   - نعم، مع إدارة الذاكرة المناسبة وتحسين الأداء.
 
 ## موارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/java/)
@@ -190,7 +190,7 @@ Ready to implement this solution? Start by trying out the code snippets provided
 - [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
-By following this guide, you're well on your way to mastering email bounce handling with Aspose.Email for Java. Happy coding!
+باتباع هذا الدليل، ستكون على الطريق الصحيح لإتقان التعامل مع ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

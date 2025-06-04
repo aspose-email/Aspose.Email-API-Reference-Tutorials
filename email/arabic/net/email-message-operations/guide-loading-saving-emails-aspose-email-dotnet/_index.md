@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to load EML files and save them as MSG using Aspose.Email for .NET while preserving original timestamps. Enhance your email management skills today."
-"title": "Master Email Handling&#58; Load and Save Emails with Aspose.Email .NET"
+"description": "تعلّم كيفية تحميل ملفات EML وحفظها بتنسيق MSG باستخدام Aspose.Email لـ .NET مع الحفاظ على الطوابع الزمنية الأصلية. طوّر مهاراتك في إدارة البريد الإلكتروني اليوم."
+"title": "إتقان التعامل مع البريد الإلكتروني - تحميل وحفظ رسائل البريد الإلكتروني باستخدام Aspose.Email .NET"
 "url": "/ar/net/email-message-operations/guide-loading-saving-emails-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Email Handling: Load and Save Emails with Aspose.Email .NET
+# إتقان التعامل مع البريد الإلكتروني: تحميل وحفظ رسائل البريد الإلكتروني باستخدام Aspose.Email .NET
 
 ## مقدمة
 
-Are you looking to manage email files programmatically with ease? Whether it's extracting data from an EML file or saving emails as MSG while preserving their original timestamps, mastering these tasks can significantly streamline your workflow. In this tutorial, we will guide you through loading and saving email files using Aspose.Email for .NET, providing powerful email handling capabilities.
+هل ترغب في إدارة ملفات البريد الإلكتروني برمجيًا بسهولة؟ سواءً كان الأمر يتعلق باستخراج البيانات من ملف EML أو حفظ رسائل البريد الإلكتروني بتنسيق MSG مع الحفاظ على طابعها الزمني الأصلي، فإن إتقان هذه المهام يُبسط سير عملك بشكل كبير. في هذا البرنامج التعليمي، سنرشدك خلال عملية تحميل ملفات البريد الإلكتروني وحفظها باستخدام Aspose.Email لـ .NET، مما يوفر إمكانيات فعّالة في إدارة البريد الإلكتروني.
 
 ### ما سوف تتعلمه:
-- Loading EML files with Aspose.Email
-- Saving EML files as MSG while preserving original dates
+- تحميل ملفات EML باستخدام Aspose.Email
+- حفظ ملفات EML بتنسيق MSG مع الحفاظ على التواريخ الأصلية
 - إعداد وتكوين مكتبة Aspose.Email في مشروع .NET الخاص بك
 
-Let's get started by covering the prerequisites you'll need to follow along.
+لنبدأ بتغطية المتطلبات الأساسية التي ستحتاج إلى متابعتها.
 
 ## المتطلبات الأساسية
 
 لمتابعة هذا البرنامج التعليمي بشكل فعال، تأكد من أن لديك:
 1. **المكتبات والإصدارات المطلوبة:**
    - Aspose.Email لـ .NET (أحدث إصدار)
-   - A compatible .NET environment such as .NET Framework or .NET Core/5+/6+
+   - بيئة .NET متوافقة مثل .NET Framework أو .NET Core/5+/6+
 
 2. **متطلبات إعداد البيئة:**
-   - Visual Studio or a similar development environment
+   - Visual Studio أو بيئة تطوير مماثلة
    - المعرفة الأساسية ببرمجة C#
 
 3. **المتطلبات المعرفية:**
-   - Familiarity with handling file paths and directory structures in C#
-   - Understanding basic email protocols (EML, MSG)
+   - المعرفة بكيفية التعامل مع مسارات الملفات وهياكل الدليل في C#
+   - فهم بروتوكولات البريد الإلكتروني الأساسية (EML، MSG)
 
 ## إعداد Aspose.Email لـ .NET
 
-Setting up Aspose.Email is straightforward. You can install it using different package managers depending on your development setup.
+إعداد Aspose.Email سهل للغاية. يمكنك تثبيته باستخدام مديري حزم مختلفين، حسب إعدادات التطوير لديك.
 
 **استخدام .NET CLI:**
 ```bash
@@ -57,119 +57,119 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث المتاح.
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية:** Start with a free trial license to explore capabilities.
-- **رخصة مؤقتة:** Apply for a temporary license on their website for extended use.
-- **رخصة الشراء:** Consider purchasing a full license for long-term usage. 
+- **نسخة تجريبية مجانية:** ابدأ باستخدام ترخيص تجريبي مجاني لاستكشاف الإمكانيات.
+- **رخصة مؤقتة:** قم بتقديم طلب للحصول على ترخيص مؤقت على موقعهم الإلكتروني للاستخدام الموسع.
+- **رخصة الشراء:** فكر في شراء ترخيص كامل للاستخدام على المدى الطويل. 
 
 #### التهيئة والإعداد الأساسي
-Once installed, ensure your project references the library correctly:
+بمجرد التثبيت، تأكد من أن مشروعك يشير إلى المكتبة بشكل صحيح:
 ```csharp
 using Aspose.Email.Mime;
 ```
 
 ## دليل التنفيذ
 
-Let's break down the process into two main features: loading an EML file and saving it as MSG with preserved dates.
+دعونا نقسم العملية إلى ميزتين رئيسيتين: تحميل ملف EML وحفظه بتنسيق MSG مع التواريخ المحفوظة.
 
-### Feature 1: Load EML File
+### الميزة 1: تحميل ملف EML
 
 #### ملخص
-This feature demonstrates how to load an existing EML file using Aspose.Email, enabling manipulation or analysis of its contents.
+توضح هذه الميزة كيفية تحميل ملف EML موجود باستخدام Aspose.Email، مما يتيح معالجة محتوياته أو تحليلها.
 
 **التنفيذ خطوة بخطوة**
 
-##### Step 1: Define the Directory Path
+##### الخطوة 1: تحديد مسار الدليل
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 ```
 
-##### Step 2: Load the EML File
-Using the `MailMessage.Load` method, specify the path and format of your email file:
+##### الخطوة 2: تحميل ملف EML
+باستخدام `MailMessage.Load` الطريقة، حدد المسار وتنسيق ملف البريد الإلكتروني الخاص بك:
 ```csharp
-// Initialize and load an existing EML file by specifying the MessageFormat
+// قم بتهيئة ملف EML الحالي وتحميله عن طريق تحديد MessageFormat
 MailMessage eml = MailMessage.Load(dataDir + "Message.eml");
 ```
 
 - **حدود:**
-  - `dataDir`: The directory containing your EML files.
-  - `MailMessage.Load()`: A method that reads the email file and returns a `MailMessage` هدف.
+  - `dataDir`:الدليل الذي يحتوي على ملفات EML الخاصة بك.
+  - `MailMessage.Load()`:طريقة لقراءة ملف البريد الإلكتروني وإرجاع `MailMessage` هدف.
 
-### Feature 2: Save MSG with Preserved Dates
+### الميزة 2: حفظ الغلوتامات أحادية الصوديوم باستخدام التمور المحفوظة
 
 #### ملخص
-This section covers saving an EML file as a MSG file while preserving its original sent/received dates.
+يتناول هذا القسم حفظ ملف EML كملف MSG مع الحفاظ على تواريخ الإرسال/الاستلام الأصلية.
 
 **التنفيذ خطوة بخطوة**
 
-##### Step 1: Define Output Directory Path
+##### الخطوة 1: تحديد مسار دليل الإخراج
 ```csharp
 string outputDir = "YOUR_OUTPUT_DIRECTORY/";
 ```
 
-##### Step 2: Configure Save Options
-تكوين `MsgSaveOptions` to ensure dates are preserved during the save operation:
+##### الخطوة 2: تكوين خيارات الحفظ
+تكوين `MsgSaveOptions` لضمان الحفاظ على التواريخ أثناء عملية الحفظ:
 ```csharp
-// Configure MsgSaveOptions to preserve original dates during save operation
+// قم بتكوين MsgSaveOptions للحفاظ على التواريخ الأصلية أثناء عملية الحفظ
 MsgSaveOptions msgSaveOptions = new MsgSaveOptions(MailMessageSaveType.OutlookMessageFormatUnicode)
 {
-    PreserveOriginalDates = true // Ensures that the original sent/received dates are preserved
+    PreserveOriginalDates = true // التأكد من الحفاظ على تواريخ الإرسال/الاستلام الأصلية
 };
 ```
 
 - **خيارات تكوين المفاتيح:**
-  - `PreserveOriginalDates`: A boolean flag to maintain original email timestamps.
+  - `PreserveOriginalDates`:علم منطقي للحفاظ على طوابع زمنية أصلية للبريد الإلكتروني.
 
-##### Step 3: Save the Email as MSG
-Save the loaded EML file using the specified options:
+##### الخطوة 3: حفظ البريد الإلكتروني كـ MSG
+احفظ ملف EML المحمّل باستخدام الخيارات المحددة:
 ```csharp
-// Save the MailMessage as a MSG file with options to preserve dates
+// حفظ رسالة البريد كملف MSG مع خيارات للحفاظ على التواريخ
 eml.Save(Path.Combine(outputDir, "outTest_out.msg"), msgSaveOptions);
 ```
 
 - **توضيح:** 
-  - `Path.Combine()`: Combines directory paths and filenames.
-  - `MailMessage.Save()`: Saves the email object in the specified format.
+  - `Path.Combine()`:يجمع مسارات الدليل وأسماء الملفات.
+  - `MailMessage.Save()`:يحفظ كائن البريد الإلكتروني بالتنسيق المحدد.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- Ensure your file paths are correctly set to avoid `FileNotFoundException`.
-- Check that you have appropriate permissions for reading from and writing to directories.
+- تأكد من تعيين مسارات الملفات بشكل صحيح لتجنب `FileNotFoundException`.
+- تأكد من أن لديك الأذونات المناسبة للقراءة من المجلدات والكتابة إليها.
 
 ## التطبيقات العملية
-Here are some real-world scenarios where this functionality can be applied:
-1. **أرشفة البريد الإلكتروني:** Convert EML files into MSG format while preserving metadata for long-term storage.
-2. **Migration Tools:** Facilitate the migration of email data between different platforms or formats.
-3. **تحليل البيانات:** Load and analyze email content programmatically in business intelligence applications.
+فيما يلي بعض السيناريوهات الواقعية حيث يمكن تطبيق هذه الوظيفة:
+1. **أرشفة البريد الإلكتروني:** تحويل ملفات EML إلى تنسيق MSG مع الحفاظ على البيانات الوصفية للتخزين طويل الأمد.
+2. **أدوات الهجرة:** تسهيل نقل بيانات البريد الإلكتروني بين منصات أو تنسيقات مختلفة.
+3. **تحليل البيانات:** تحميل وتحليل محتوى البريد الإلكتروني برمجيًا في تطبيقات الاستخبارات التجارية.
 
 ## اعتبارات الأداء
 لتحسين الأداء عند استخدام Aspose.Email:
-- **معالجة الدفعات:** Process emails in batches to reduce memory usage.
-- **جمع القمامة:** Monitor and manage .NET's garbage collection for better resource management.
-- **العمليات غير المتزامنة:** Utilize asynchronous methods where applicable to improve responsiveness.
+- **معالجة الدفعات:** قم بمعالجة رسائل البريد الإلكتروني على دفعات لتقليل استخدام الذاكرة.
+- **جمع القمامة:** قم بمراقبة وإدارة مجموعة القمامة الخاصة بـ .NET لتحسين إدارة الموارد.
+- **العمليات غير المتزامنة:** استخدم الأساليب غير المتزامنة عند الحاجة لتحسين الاستجابة.
 
 ## خاتمة
-In this tutorial, we explored how to load an EML file and save it as a MSG file while preserving its original dates using Aspose.Email for .NET. With these skills, you can efficiently manage email data programmatically within your applications.
+في هذا البرنامج التعليمي، استكشفنا كيفية تحميل ملف EML وحفظه كملف MSG مع الحفاظ على تواريخه الأصلية باستخدام Aspose.Email لـ .NET. بفضل هذه المهارات، يمكنك إدارة بيانات البريد الإلكتروني بكفاءة برمجيًا داخل تطبيقاتك.
 
 ### الخطوات التالية:
-- Experiment with other features of Aspose.Email to expand your email handling capabilities.
-- Explore integration possibilities with CRM or ERP systems for streamlined operations.
+- قم بتجربة ميزات أخرى في Aspose.Email لتوسيع قدراتك في التعامل مع البريد الإلكتروني.
+- استكشف إمكانيات التكامل مع أنظمة CRM أو ERP لتبسيط العمليات.
 
-We encourage you to try implementing this solution in your projects and discover the versatility of Aspose.Email!
+نحن نشجعك على محاولة تنفيذ هذا الحل في مشاريعك واكتشاف تنوع Aspose.Email!
 
 ## قسم الأسئلة الشائعة
-**Q1: How do I handle large volumes of EML files?**
-A1: Consider processing emails in batches and utilize asynchronous methods to optimize performance.
+**س1: كيف أتعامل مع كميات كبيرة من ملفات EML؟**
+ج1: فكر في معالجة رسائل البريد الإلكتروني على دفعات واستخدام أساليب غير متزامنة لتحسين الأداء.
 
-**Q2: Can I customize the MSG file format further when saving?**
-A2: Yes, explore additional `MsgSaveOptions` properties for advanced configurations.
+**س2: هل يمكنني تخصيص تنسيق ملف MSG بشكل أكبر عند الحفظ؟**
+أ2: نعم، استكشف المزيد `MsgSaveOptions` خصائص التكوينات المتقدمة.
 
-**Q3: What if my email server uses a different protocol than EML/MSG?**
-A3: Aspose.Email supports various protocols; consult the documentation for specific implementations.
+**س3: ماذا لو كان خادم البريد الإلكتروني الخاص بي يستخدم بروتوكولًا مختلفًا عن EML/MSG؟**
+A3: يدعم Aspose.Email بروتوكولات مختلفة؛ راجع الوثائق للتعرف على التطبيقات المحددة.
 
-**Q4: Is there any limit to the size of emails I can process?**
-A4: While there are no explicit limits, larger files may impact performance. Monitor and adjust resources accordingly.
+**س4: هل هناك حد لحجم رسائل البريد الإلكتروني التي يمكنني معالجتها؟**
+ج٤: على الرغم من عدم وجود حدود واضحة، إلا أن الملفات الأكبر حجمًا قد تؤثر على الأداء. راقب الموارد وعدّلها وفقًا لذلك.
 
-**Q5: How do I troubleshoot issues with Aspose.Email library installations?**
-A5: Verify package versions, ensure correct project references, and consult Aspose's support forums for assistance.
+**س5: كيف يمكنني استكشاف الأخطاء وإصلاحها مع تثبيتات مكتبة Aspose.Email؟**
+A5: التحقق من إصدارات الحزمة، والتأكد من صحة مراجع المشروع، واستشارة منتديات دعم Aspose للحصول على المساعدة.
 
 ## موارد
 - **التوثيق:** [توثيق Aspose.Email .NET](https://reference.aspose.com/email/net/)
@@ -179,7 +179,7 @@ A5: Verify package versions, ensure correct project references, and consult Aspo
 - **رخصة مؤقتة:** [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **يدعم:** [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
-We hope this guide helps you master email handling with Aspose.Email for .NET. Happy coding!
+نأمل أن يساعدك هذا الدليل في إتقان التعامل مع البريد الإلكتروني باستخدام Aspose.Email لـ .NET. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

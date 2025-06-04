@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to specify recipient addresses in C# using Aspose.Email for .NET. Create, configure, and send emails efficiently."
-"linktitle": "Specifying Recipient Addresses in C#"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Specifying Recipient Addresses in C#"
+"description": "تعرّف على كيفية تحديد عناوين المستلمين بلغة C# باستخدام Aspose.Email لـ .NET. أنشئ رسائل البريد الإلكتروني، وضَعْها، وأرسلها بكفاءة."
+"linktitle": "تحديد عناوين المستلمين في C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "تحديد عناوين المستلمين في C#"
 "url": "/ar/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/"
 "weight": 19
 ---
@@ -13,46 +13,46 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Specifying Recipient Addresses in C#
+# تحديد عناوين المستلمين في C#
 
 
 
-This guide will walk you through the process of specifying recipient addresses in C# using the Aspose.Email for .NET library. Aspose.Email is a powerful .NET API that allows you to work with email messages and various email-related tasks. In this tutorial, we will cover how to add recipient addresses to an email message using the library.
+سيشرح لك هذا الدليل عملية تحديد عناوين المستلمين بلغة C# باستخدام مكتبة Aspose.Email لـ .NET. Aspose.Email هي واجهة برمجة تطبيقات فعّالة لـ .NET، تتيح لك التعامل مع رسائل البريد الإلكتروني ومختلف المهام المتعلقة به. في هذا البرنامج التعليمي، سنتناول كيفية إضافة عناوين المستلمين إلى رسالة بريد إلكتروني باستخدام المكتبة.
 
 ## المتطلبات الأساسية
 
-Before you begin, make sure you have the following:
+قبل أن تبدأ، تأكد من أن لديك ما يلي:
 
-1. Visual Studio or any C# development environment installed.
-2. Aspose.Email for .NET library. You can get it from the [Aspose.Email for .NET Releases](https://releases.aspose.com/email/net/).
+1. تم تثبيت Visual Studio أو أي بيئة تطوير C#.
+2. مكتبة Aspose.Email لـ .NET. يمكنك الحصول عليها من [Aspose.Email لإصدارات .NET](https://releases.aspose.com/email/net/).
 
 ## خطوات
 
-Follow these steps to specify recipient addresses in C# using Aspose.Email for .NET:
+اتبع الخطوات التالية لتحديد عناوين المستلمين في C# باستخدام Aspose.Email لـ .NET:
 
-### 1. Create a new C# project
+### 1. إنشاء مشروع C# جديد
 
-Start by creating a new C# project in your development environment.
+ابدأ بإنشاء مشروع C# جديد في بيئة التطوير الخاصة بك.
 
-### 2. Add reference to Aspose.Email
+### 2. أضف مرجعًا إلى Aspose.Email
 
-1. Download and install the Aspose.Email for .NET library if you haven't already.
-2. Open your C# project.
-3. Right-click on the "References" in the Solution Explorer and select "Add Reference."
-4. Browse and select the Aspose.Email DLL files that you downloaded.
+1. قم بتنزيل وتثبيت مكتبة Aspose.Email لـ .NET إذا لم تقم بذلك بالفعل.
+2. افتح مشروع C# الخاص بك.
+3. انقر بزر الماوس الأيمن على "المراجع" في مستكشف الحلول وحدد "إضافة مرجع".
+4. استعرض وحدد ملفات DLL الخاصة بـ Aspose.Email التي قمت بتنزيلها.
 
-### 3. Import necessary namespaces
+### 3. استيراد مساحات الأسماء الضرورية
 
-In your C# code file, import the necessary namespaces for using Aspose.Email classes:
+في ملف الكود C# الخاص بك، قم باستيراد المساحات الأساسية اللازمة لاستخدام فئات Aspose.Email:
 
 ```csharp
 using Aspose.Email;
 
 ```
 
-### 4. Create and configure the email message
+### 4. إنشاء رسالة البريد الإلكتروني وتكوينها
 
-Create a new instance of the `MailMessage` class to represent your email message. Configure the sender and subject of the email:
+إنشاء مثيل جديد من `MailMessage` الفئة التي تمثل رسالة بريدك الإلكتروني. حدّد المُرسِل وموضوع الرسالة:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -60,9 +60,9 @@ message.From = new MailAddress("sender@example.com");
 message.Subject = "Hello from Aspose.Email";
 ```
 
-### 5. Add recipient addresses
+### 5. إضافة عناوين المستلمين
 
-You can add recipient addresses using the `To`، `Cc`، و `Bcc` خصائص `MailMessage` class. Here's how you can add recipient addresses:
+يمكنك إضافة عناوين المستلمين باستخدام `To`، `Cc`، و `Bcc` خصائص `MailMessage` الصف. إليك كيفية إضافة عناوين المستلمين:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
@@ -70,17 +70,17 @@ message.Cc.Add(new MailAddress("recipient2@example.com"));
 message.Bcc.Add(new MailAddress("recipient3@example.com"));
 ```
 
-### 6. Complete the email message
+### 6. أكمل رسالة البريد الإلكتروني
 
-Add the email body and any other necessary content to your email message:
+أضف نص البريد الإلكتروني وأي محتوى آخر ضروري إلى رسالة البريد الإلكتروني الخاصة بك:
 
 ```csharp
 message.Body = "This is the email body.";
 ```
 
-### 7. Send the email
+### 7. أرسل البريد الإلكتروني
 
-To send the email, you can use the `SmtpClient` class provided by Aspose.Email. Configure the SMTP server settings and send the email:
+لإرسال البريد الإلكتروني، يمكنك استخدام `SmtpClient` الفئة مُقدمة من Aspose.Email. قم بتكوين إعدادات خادم SMTP وأرسل البريد الإلكتروني:
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
@@ -91,26 +91,26 @@ client.Send(message);
 
 ## الأسئلة الشائعة
 
-### How can I add multiple recipients to the `To`، `Cc`، أو `Bcc` fields?
+### كيف يمكنني إضافة عدة مستلمين إلى `To`، `Cc`، أو `Bcc` الحقول؟
 
-You can add multiple recipients by calling the `Add` method multiple times on the respective `MailAddressCollection`:
+يمكنك إضافة عدة مستلمين عن طريق الاتصال بـ `Add` الطريقة عدة مرات على التوالي `MailAddressCollection`:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
 message.To.Add(new MailAddress("recipient2@example.com"));
 ```
 
-### Can I specify recipient names along with their email addresses?
+### هل يمكنني تحديد أسماء المستلمين بالإضافة إلى عناوين البريد الإلكتروني الخاصة بهم؟
 
-Yes, you can specify both the recipient's name and email address when adding recipients:
+نعم، يمكنك تحديد اسم المستلم وعنوان البريد الإلكتروني عند إضافة المستلمين:
 
 ```csharp
 message.To.Add(new MailAddress("recipient@example.com", "Recipient Name"));
 ```
 
-### How do I handle exceptions when sending an email?
+### كيف أتعامل مع الاستثناءات عند إرسال بريد إلكتروني؟
 
-You can use try-catch blocks to handle exceptions that might occur during email sending:
+يمكنك استخدام كتل try-catch للتعامل مع الاستثناءات التي قد تحدث أثناء إرسال البريد الإلكتروني:
 
 ```csharp
 try
@@ -124,9 +124,9 @@ catch (Exception ex)
 }
 ```
 
-For more information and advanced features of Aspose.Email for .NET, refer to the [Aspose API References](https://reference.aspose.com/email/net/).
+لمزيد من المعلومات والميزات المتقدمة لـ Aspose.Email لـ .NET، راجع [مراجع واجهة برمجة التطبيقات Aspose](https://reference.aspose.com/email/net/).
 
-This concludes the guide on specifying recipient addresses in C# using Aspose.Email for .NET. You've learned how to create an email message, add recipient addresses, and send the email using the library's features.
+بهذا نختتم دليل تحديد عناوين المستلمين بلغة C# باستخدام Aspose.Email لـ .NET. لقد تعلمت كيفية إنشاء رسالة بريد إلكتروني، وإضافة عناوين المستلمين، وإرسالها باستخدام ميزات المكتبة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

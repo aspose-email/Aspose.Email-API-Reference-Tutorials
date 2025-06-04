@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to create and manage distribution lists using Aspose.Email for Java. Streamline email communication with this step-by-step guide."
-"title": "Create a Distribution List with Aspose.Email for Java&#58; MAPI Operations Guide"
+"description": "تعرّف على كيفية إنشاء قوائم التوزيع وإدارتها باستخدام Aspose.Email لجافا. سهّل تواصلك عبر البريد الإلكتروني باتباع هذا الدليل المفصل."
+"title": "إنشاء قائمة توزيع باستخدام Aspose.Email لدليل عمليات MAPI في Java"
 "url": "/ar/java/mapi-operations/aspose-email-java-distribution-list-creation/"
 "weight": 1
 ---
@@ -11,15 +11,15 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Create a Distribution List with Aspose.Email for Java
+# إنشاء قائمة توزيع باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Streamline your email distribution efforts with Aspose.Email for Java, perfect for sending newsletters, project updates, or team communications. This comprehensive guide will walk you through creating and saving a distribution list using the powerful Aspose.Email library.
+بسّط جهودك في توزيع بريدك الإلكتروني باستخدام Aspose.Email لجافا، فهو مثالي لإرسال النشرات الإخبارية، أو تحديثات المشاريع، أو مراسلات الفريق. سيرشدك هذا الدليل الشامل إلى كيفية إنشاء قائمة توزيع وحفظها باستخدام مكتبة Aspose.Email الفعّالة.
 
 **ما سوف تتعلمه:**
-- Creating a distribution list with Aspose.Email for Java.
-- Steps to save your distribution list to a file.
+- إنشاء قائمة توزيع باستخدام Aspose.Email لـJava.
+- خطوات لحفظ قائمة التوزيع الخاصة بك في ملف.
 - نصائح لتحسين الأداء وأفضل الممارسات.
 
 ## المتطلبات الأساسية
@@ -27,19 +27,19 @@ Streamline your email distribution efforts with Aspose.Email for Java, perfect f
 قبل أن تبدأ، تأكد من أن لديك:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
-- **Aspose.Email for Java** version 25.4 or later.
-- Maven as your build tool (recommended).
+- **Aspose.Email لـ Java** الإصدار 25.4 أو أحدث.
+- Maven كأداة البناء الخاصة بك (موصى به).
 
 ### متطلبات إعداد البيئة
-- JDK 16 or higher installed on your system.
+- تم تثبيت JDK 16 أو أعلى على نظامك.
 
 ### متطلبات المعرفة
-- Basic understanding of Java programming.
-- Familiarity with Maven or another build system if applicable.
+- فهم أساسيات برمجة جافا.
+- المعرفة بـ Maven أو نظام بناء آخر إذا أمكن.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-First, integrate the Aspose.Email library into your project. If you're using Maven, add this dependency to your `pom.xml` file:
+أولاً، قم بدمج مكتبة Aspose.Email في مشروعك. إذا كنت تستخدم Maven، فأضف هذه التبعية إلى `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -52,20 +52,20 @@ First, integrate the Aspose.Email library into your project. If you're using Mav
 
 ### خطوات الحصول على الترخيص
 
-1. **نسخة تجريبية مجانية**: Download a free trial from the [Aspose.Email Java release page](https://releases.aspose.com/email/java/).
-2. **رخصة مؤقتة**: Request a temporary license on their [صفحة الشراء](https://purchase.aspose.com/temporary-license/) لإجراء اختبار موسع.
-3. **شراء**: Consider purchasing a full license for production use if you find it beneficial.
+1. **نسخة تجريبية مجانية**:قم بتنزيل نسخة تجريبية مجانية من [صفحة إصدار Aspose.Email Java](https://releases.aspose.com/email/java/).
+2. **رخصة مؤقتة**:طلب ترخيص مؤقت على [صفحة الشراء](https://purchase.aspose.com/temporary-license/) لإجراء اختبار موسع.
+3. **شراء**:فكر في شراء ترخيص كامل للاستخدام الإنتاجي إذا وجدت ذلك مفيدًا.
 
 ### التهيئة والإعداد الأساسي
 
-Initialize the library in your Java application as follows:
+قم بتهيئة المكتبة في تطبيق Java الخاص بك على النحو التالي:
 
 ```java
 import com.aspose.email.*;
 
 public class EmailSetup {
     public static void main(String[] args) {
-        // Apply license if available
+        // تقدم بطلب الترخيص إذا كان متاحًا
         License license = new License();
         license.setLicense("path/to/your/license.lic");
         
@@ -76,13 +76,13 @@ public class EmailSetup {
 
 ## دليل التنفيذ
 
-### Create a Distribution List
+### إنشاء قائمة التوزيع
 
-Creating a distribution list involves defining members and configuring properties such as subject and body.
+يتضمن إنشاء قائمة التوزيع تحديد الأعضاء وتكوين الخصائص مثل الموضوع والجسم.
 
-#### Define Members of the Distribution List
+#### تحديد أعضاء قائمة التوزيع
 
-Set up your document directory path and initialize the member collection:
+قم بإعداد مسار دليل المستندات الخاص بك وقم بتهيئة مجموعة الأعضاء:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
@@ -91,9 +91,9 @@ oneOffmembers.addItem(new MapiDistributionListMember("John R. Patrick", "JohnRPa
 oneOffmembers.addItem(new MapiDistributionListMember("Tilly Bates", "TillyBates@armyspy.com"));
 ```
 
-#### Create and Configure the Distribution List
+#### إنشاء قائمة التوزيع وتكوينها
 
-إنشاء مثيل `MapiDistributionList` object with necessary attributes:
+إنشاء مثيل `MapiDistributionList` الكائن مع السمات الضرورية:
 
 ```java
 MapiDistributionList dlist = new MapiDistributionList("Simple list", oneOffmembers);
@@ -103,17 +103,17 @@ dlist.setMileage("Test mileage");
 dlist.setBilling("Test billing");
 ```
 
-#### Save the Distribution List
+#### حفظ قائمة التوزيع
 
-Save your distribution list to a file:
+احفظ قائمة التوزيع الخاصة بك في ملف:
 
 ```java
 dlist.save(dataDir + "distlist_out.msg");
 ```
 
-### Save a Distribution List to File
+### حفظ قائمة التوزيع في ملف
 
-This feature is straightforward once you have created your `MapiDistributionList` هدف.
+هذه الميزة واضحة بمجرد إنشاء حسابك `MapiDistributionList` هدف.
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -122,40 +122,40 @@ dlist.save(outputDir + "/distlist_out.msg");
 
 ## التطبيقات العملية
 
-- **Automating Email Campaigns**: Use this feature to automate the distribution of newsletters or promotional emails.
-- **Team Communication**: Streamline team updates by sending consolidated messages to a predefined list.
-- **إدارة المشاريع**: Keep project stakeholders informed through periodic mailing lists.
+- **أتمتة حملات البريد الإلكتروني**:استخدم هذه الميزة لأتمتة توزيع النشرات الإخبارية أو رسائل البريد الإلكتروني الترويجية.
+- **التواصل الجماعي**:تبسيط تحديثات الفريق عن طريق إرسال رسائل مجمعة إلى قائمة محددة مسبقًا.
+- **إدارة المشاريع**:إبقاء أصحاب المصلحة في المشروع على اطلاع من خلال قوائم البريد الدورية.
 
 ## اعتبارات الأداء
 
-When working with large email distributions, consider these tips:
-- Optimize memory usage by cleaning up unused objects and collections.
-- Limit the size of distribution lists when feasible to enhance performance.
-- Use Aspose.Email's efficient processing capabilities for handling bulk emails.
+عند العمل مع توزيعات البريد الإلكتروني الكبيرة، ضع في اعتبارك النصائح التالية:
+- تحسين استخدام الذاكرة عن طريق تنظيف الكائنات والمجموعات غير المستخدمة.
+- قم بتحديد حجم قوائم التوزيع عندما يكون ذلك ممكنًا لتحسين الأداء.
+- استخدم قدرات المعالجة الفعالة لبرنامج Aspose.Email للتعامل مع رسائل البريد الإلكتروني بكميات كبيرة.
 
 ## خاتمة
 
-You should now understand how to create and save a distribution list using Aspose.Email for Java. This powerful tool can greatly simplify your email management tasks in Java applications. To further explore its capabilities, refer to the [الوثائق الرسمية](https://reference.aspose.com/email/java/) and consider integrating it with other systems like CRM or project management tools.
+يجب أن تفهم الآن كيفية إنشاء قائمة توزيع وحفظها باستخدام Aspose.Email لجافا. تُبسّط هذه الأداة الفعّالة مهام إدارة البريد الإلكتروني في تطبيقات جافا بشكل كبير. لمزيد من التعرّف على إمكانياتها، راجع [الوثائق الرسمية](https://reference.aspose.com/email/java/) والنظر في دمجه مع أنظمة أخرى مثل إدارة علاقات العملاء أو أدوات إدارة المشاريع.
 
 ## قسم الأسئلة الشائعة
 
-1. **What is Aspose.Email for Java?**
-   - A comprehensive library for email processing tasks in Java applications.
-2. **How do I install Aspose.Email for Java using Maven?**
-   - Add the dependency to your `pom.xml` as shown above.
-3. **Can I use Aspose.Email for large-scale email management?**
-   - Yes, it's designed to handle bulk operations efficiently.
-4. **What should I consider for optimizing performance?**
-   - Manage memory usage and keep list sizes reasonable.
-5. **Where can I find more resources on using Aspose.Email for Java?**
-   - قم بزيارة [وثائق Aspose](https://reference.aspose.com/email/java/) and download page for detailed guides and updates.
+1. **ما هو Aspose.Email لـ Java؟**
+   - مكتبة شاملة لمهام معالجة البريد الإلكتروني في تطبيقات Java.
+2. **كيف أقوم بتثبيت Aspose.Email لـ Java باستخدام Maven؟**
+   - أضف التبعية إلى `pom.xml` كما هو موضح أعلاه.
+3. **هل يمكنني استخدام Aspose.Email لإدارة البريد الإلكتروني على نطاق واسع؟**
+   - نعم، تم تصميمه للتعامل مع العمليات الضخمة بكفاءة.
+4. **ما الذي يجب أن أفكر فيه لتحسين الأداء؟**
+   - إدارة استخدام الذاكرة والحفاظ على أحجام القائمة معقولة.
+5. **أين يمكنني العثور على المزيد من الموارد حول استخدام Aspose.Email لـ Java؟**
+   - قم بزيارة [وثائق Aspose](https://reference.aspose.com/email/java/) وصفحة التنزيل للحصول على أدلة مفصلة وتحديثات.
 
 ## موارد
-- **التوثيق**:استكشف الأدلة الشاملة في [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).
-- **تحميل**: Access latest releases on the [download page](https://releases.aspose.com/email/java/).
-- **شراء**: Consider purchasing a full license for commercial use at [صفحة شراء Aspose](https://purchase.aspose.com/buy).
-- **نسخة تجريبية مجانية وترخيص مؤقت**: Try out with a free or temporary license available from their respective links.
-- **يدعم**: Join the community and get support on the [منتدى أسبوزي](https://forum.aspose.com/c/email/10).
+- **التوثيق**:استكشف الأدلة الشاملة في [توثيق البريد الإلكتروني لـ Aspose Java](https://reference.aspose.com/email/java/).
+- **تحميل**:الوصول إلى أحدث الإصدارات على [صفحة التحميل](https://releases.aspose.com/email/java/).
+- **شراء**:فكر في شراء ترخيص كامل للاستخدام التجاري في [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+- **نسخة تجريبية مجانية وترخيص مؤقت**:جربه باستخدام ترخيص مجاني أو مؤقت متوفر من الروابط الخاصة به.
+- **يدعم**:انضم إلى المجتمع واحصل على الدعم على [منتدى أسبوزي](https://forum.aspose.com/c/email/10).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

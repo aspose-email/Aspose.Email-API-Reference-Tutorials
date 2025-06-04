@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to use Aspose.Email for Java to efficiently fetch and manage emails on an Exchange Server using EWS. This guide covers setup, message fetching, paging techniques, and more."
-"title": "How to Fetch and Enumerate Messages from Exchange Server Using Aspose.Email for Java"
+"description": "تعرّف على كيفية استخدام Aspose.Email لـ Java لجلب رسائل البريد الإلكتروني وإدارتها بكفاءة على خادم Exchange باستخدام EWS. يغطي هذا الدليل الإعداد، وجلب الرسائل، وتقنيات الترقيم، والمزيد."
+"title": "كيفية جلب الرسائل وحصرها من خادم Exchange باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/exchange-server-integration/fetch-exchange-server-messages-aspose-email-java/"
 "weight": 1
 ---
@@ -11,33 +11,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Fetch and Enumerate Messages from an Exchange Server Using Aspose.Email for Java
+# كيفية جلب الرسائل وحصرها من خادم Exchange باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Managing emails from your organization's Exchange Server can be challenging. With Aspose.Email for Java, you can simplify the process of fetching and managing messages using Exchange Web Services (EWS). This guide will teach you how to retrieve message details efficiently and handle large volumes of data with paging.
+قد تكون إدارة رسائل البريد الإلكتروني من خادم Exchange الخاص بمؤسستك أمرًا صعبًا. مع Aspose.Email لـ Java، يمكنك تبسيط عملية جلب الرسائل وإدارتها باستخدام خدمات Exchange Web Services (EWS). سيُعلّمك هذا الدليل كيفية استرداد تفاصيل الرسائل بكفاءة والتعامل مع كميات كبيرة من البيانات باستخدام الترحيل.
 
 **ما سوف تتعلمه:**
-- Setting up Aspose.Email for Java
-- Fetching messages from an Exchange Server Inbox
-- Enumerating messages using efficient paging techniques
-- Practical applications and performance considerations
+- إعداد Aspose.Email لـ Java
+- جلب الرسائل من صندوق الوارد في Exchange Server
+- تعداد الرسائل باستخدام تقنيات الترقيم الفعالة
+- التطبيقات العملية واعتبارات الأداء
 
-Let's begin by ensuring you meet all prerequisites before diving into the implementation steps.
+لنبدأ بالتأكد من استيفاء جميع المتطلبات الأساسية قبل الدخول في خطوات التنفيذ.
 
 ## المتطلبات الأساسية
 
-Before implementing this solution, ensure that you have:
-1. **Java Development Kit (JDK):** Version 8 or higher is required.
-2. **Maven:** For dependency management and project build automation.
-3. **Aspose.Email for Java Library:** Version 25.4 or later is recommended.
-4. Basic understanding of Java programming, especially handling dependencies with Maven.
+قبل تنفيذ هذا الحل، تأكد من أن لديك:
+1. **مجموعة تطوير Java (JDK):** يجب أن يكون الإصدار 8 أو أعلى.
+2. **مافن:** لإدارة التبعيات وأتمتة بناء المشروع.
+3. **Aspose.Email لمكتبة Java:** يوصى باستخدام الإصدار 25.4 أو الإصدار الأحدث.
+4. فهم أساسي لبرمجة Java، وخاصة التعامل مع التبعيات باستخدام Maven.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started, add Aspose.Email as a dependency in your project using Maven:
+للبدء، أضف Aspose.Email كتبعية في مشروعك باستخدام Maven:
 
-**Maven Dependency:**
+**تبعية Maven:**
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -49,14 +49,14 @@ To get started, add Aspose.Email as a dependency in your project using Maven:
 
 ### الحصول على الترخيص
 
-Start by obtaining a license for Aspose.Email:
-- **نسخة تجريبية مجانية:** [Download here](https://releases.aspose.com/email/java/) to explore its capabilities.
-- **رخصة مؤقتة:** طلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) for extended access.
-- **شراء:** For long-term use, consider purchasing a full license from the [موقع Aspose](https://purchase.aspose.com/buy).
+ابدأ بالحصول على ترخيص لـ Aspose.البريد الإلكتروني:
+- **نسخة تجريبية مجانية:** [التحميل هنا](https://releases.aspose.com/email/java/) لاستكشاف قدراتها.
+- **رخصة مؤقتة:** طلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للوصول الموسع.
+- **شراء:** للاستخدام طويل الأمد، فكر في شراء ترخيص كامل من [موقع Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 
-After setting up your Maven project with Aspose.Email, initialize it as follows:
+بعد إعداد مشروع Maven الخاص بك باستخدام Aspose.Email، قم بتهيئته على النحو التالي:
 
 ```java
 import com.aspose.email.EWSClient;
@@ -64,8 +64,8 @@ import com.aspose.email.IEWSClient;
 
 public class InitializeExample {
     public static void main(String[] args) {
-        try (IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain")) {
-            // Your code to interact with Exchange Server goes here
+        try (IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx، "testUser"، "pwd"، "domain")) {
+            // يظهر هنا الكود الخاص بك للتفاعل مع Exchange Server
         }
     }
 }
@@ -73,20 +73,20 @@ public class InitializeExample {
 
 ## دليل التنفيذ
 
-### Fetch Messages from an Exchange Server Inbox
+### جلب الرسائل من صندوق الوارد في Exchange Server
 
-This feature enables you to connect to an Exchange Server using EWS and fetch messages directly from the Inbox. Follow these steps:
+تتيح لك هذه الميزة الاتصال بخادم Exchange باستخدام EWS وجلب الرسائل مباشرةً من البريد الوارد. اتبع الخطوات التالية:
 
-#### Connecting to the Server
+#### الاتصال بالخادم
 
-First, establish a connection with your server by providing credentials:
+أولاً، قم بإنشاء اتصال مع الخادم الخاص بك عن طريق تقديم بيانات الاعتماد:
 ```java
-IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
+IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
 
 #### استرجاع الرسائل
 
-Once connected, retrieve messages from the Inbox like this:
+بمجرد الاتصال، يمكنك استرداد الرسائل من صندوق الوارد على النحو التالي:
 ```java
 import com.aspose.email.ExchangeMessageInfoCollection;
 import com.aspose.email.MailMessage;
@@ -105,16 +105,16 @@ for (com.aspose.email.ExchangeMessageInfo msgInfo : msgCollection) {
     }
 }
 ```
-- **حدود:** يستبدل `"testUser"`، `"pwd"`، و `"domain"` with your actual credentials.
-- **غاية:** Fetches each message’s unique URI to retrieve detailed information.
+- **حدود:** يستبدل `"testUser"`، `"pwd"`، و `"domain"` مع بيانات الاعتماد الفعلية الخاصة بك.
+- **غاية:** يقوم بجلب عنوان URI الفريد لكل رسالة لاسترداد المعلومات التفصيلية.
 
-### Enumerate Messages with Paging in EWS
+### إحصاء الرسائل باستخدام الترحيل في EWS
 
-Handling large datasets can be challenging. This feature demonstrates how you can efficiently enumerate messages using paging:
+قد يكون التعامل مع مجموعات البيانات الكبيرة أمرًا صعبًا. توضح هذه الميزة كيفية ترقيم الرسائل بكفاءة باستخدام الترقيم الترحيلي:
 
-#### Setting Up Paging
+#### إعداد الترحيل
 
-Define the number of items per page and iterate through pages:
+قم بتحديد عدد العناصر في كل صفحة وتكرارها عبر الصفحات:
 ```java
 import com.aspose.email.ExchangeMessagePageInfo;
 import java.util.List;
@@ -135,54 +135,54 @@ for (ExchangeMessagePageInfo pageCol : pages) {
 }
 System.out.println("Items retrieved: " + retrievedItems);
 ```
-- **حدود:** يُعدِّل `itemsPerPage` as needed based on your server capacity and requirements.
-- **غاية:** Efficiently handles large volumes of data by breaking them into manageable pages.
+- **حدود:** يُعدِّل `itemsPerPage` حسب الحاجة بناءً على سعة الخادم ومتطلباته.
+- **غاية:** يتعامل بكفاءة مع كميات كبيرة من البيانات عن طريق تقسيمها إلى صفحات قابلة للإدارة.
 
 ## التطبيقات العملية
 
-Explore real-world use cases for these features:
-1. **معالجة البريد الإلكتروني الآلية:** Automate the sorting, filtering, and processing of emails directly within an application.
-2. **أنظمة أرشفة البريد الإلكتروني:** Implement efficient message retrieval systems to archive emails without loading everything at once.
-3. **أنظمة تذاكر دعم العملاء:** Use paging to handle bulk email queries effectively in support environments.
+استكشف حالات الاستخدام الواقعية لهذه الميزات:
+1. **معالجة البريد الإلكتروني الآلية:** أتمتة فرز رسائل البريد الإلكتروني وتصفيتها ومعالجتها مباشرة داخل التطبيق.
+2. **أنظمة أرشفة البريد الإلكتروني:** تنفيذ أنظمة استرجاع الرسائل الفعالة لأرشفة رسائل البريد الإلكتروني دون الحاجة إلى تحميل كل شيء مرة واحدة.
+3. **أنظمة تذاكر دعم العملاء:** استخدم الترقيم الصفحي للتعامل مع استعلامات البريد الإلكتروني المجمعة بشكل فعال في بيئات الدعم.
 
 ## اعتبارات الأداء
 
-Optimize performance when using Aspose.Email for Java:
-- **إدارة الموارد:** Always close connections and resources properly to avoid memory leaks, as demonstrated with the `try-with-resources` إفادة.
-- **معالجة الدفعات:** Utilize paging to manage large datasets without overwhelming server resources.
-- **العمليات غير المتزامنة:** Where possible, implement asynchronous operations to enhance application responsiveness.
+تحسين الأداء عند استخدام Aspose.Email لـ Java:
+- **إدارة الموارد:** قم دائمًا بإغلاق الاتصالات والموارد بشكل صحيح لتجنب تسرب الذاكرة، كما هو موضح في `try-with-resources` إفادة.
+- **معالجة الدفعات:** استخدم الترقيم الصفحي لإدارة مجموعات البيانات الكبيرة دون إرهاق موارد الخادم.
+- **العمليات غير المتزامنة:** عندما يكون ذلك ممكنًا، قم بتنفيذ عمليات غير متزامنة لتحسين استجابة التطبيق.
 
 ## خاتمة
 
-In this tutorial, you've learned how to set up Aspose.Email for Java and use its features to fetch messages from an Exchange Server Inbox and enumerate them with efficient paging. This knowledge can significantly enhance your email management applications by providing robust capabilities to handle large volumes of data efficiently.
+في هذا البرنامج التعليمي، تعلمت كيفية إعداد Aspose.Email لجافا واستخدام ميزاته لجلب الرسائل من صندوق الوارد على خادم Exchange Server وفرزها بكفاءة. هذه المعرفة تُحسّن تطبيقات إدارة البريد الإلكتروني لديك بشكل ملحوظ من خلال توفير إمكانيات قوية للتعامل مع كميات كبيرة من البيانات بكفاءة.
 
-Next steps include exploring other functionalities within Aspose.Email or integrating these solutions into larger systems. Try implementing the code snippets provided, and see how they work in your environment!
+تشمل الخطوات التالية استكشاف وظائف أخرى ضمن Aspose.Email أو دمج هذه الحلول في أنظمة أكبر. جرّب تطبيق مقتطفات التعليمات البرمجية المُقدّمة، وشاهد كيف تعمل في بيئتك!
 
 ## قسم الأسئلة الشائعة
 
-**Q1: How do I configure multiple mailbox connections?**
-- Use separate instances of `IEWSClient` for each mailbox, providing unique credentials.
+**س1: كيف أقوم بتكوين اتصالات متعددة بصناديق البريد؟**
+- استخدم حالات منفصلة من `IEWSClient` لكل صندوق بريد، وتوفير بيانات اعتماد فريدة.
 
-**Q2: Can Aspose.Email handle attachments differently based on file type?**
-- Yes, iterate through the `msg.getAttachments()` collection and apply logic based on file extensions or MIME types.
+**س2: هل يمكن لـ Aspose.Email التعامل مع المرفقات بشكل مختلف استنادًا إلى نوع الملف؟**
+- نعم، كرر ذلك `msg.getAttachments()` جمع وتطبيق المنطق استنادًا إلى ملحقات الملفات أو أنواع MIME.
 
-**Q3: How do I troubleshoot connection issues with EWS?**
-- Ensure your server URL is correct. Verify credentials and network settings.
+**س3: كيف يمكنني استكشاف مشكلات الاتصال مع EWS وإصلاحها؟**
+- تأكد من صحة عنوان URL لخادمك. تحقق من بيانات الاعتماد وإعدادات الشبكة.
 
-**Q4: What are some best practices for handling large datasets with paging?**
-- ضبط `itemsPerPage` parameter to balance between performance and memory usage.
+**س4: ما هي بعض أفضل الممارسات للتعامل مع مجموعات البيانات الكبيرة باستخدام الترقيم؟**
+- ضبط `itemsPerPage` معلمة لتحقيق التوازن بين الأداء واستخدام الذاكرة.
 
-**Q5: Is there support for other email servers besides Exchange?**
-- Aspose.Email also supports IMAP, POP3, and SMTP protocols; refer to their documentation for more details.
+**س5: هل هناك دعم لخوادم البريد الإلكتروني الأخرى إلى جانب Exchange؟**
+- يدعم Aspose.Email أيضًا بروتوكولات IMAP وPOP3 وSMTP؛ راجع وثائقهم للحصول على مزيد من التفاصيل.
 
 ## موارد
 
-- **التوثيق:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
+- **التوثيق:** [توثيق البريد الإلكتروني لـ Aspose Java](https://reference.aspose.com/email/java/)
 - **تحميل:** [أحدث الإصدارات](https://releases.aspose.com/email/java/)
 - **شراء:** [شراء ترخيص](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية:** [ابدأ بإصدار تجريبي مجاني](https://releases.aspose.com/email/java/)
 - **رخصة مؤقتة:** [اطلب هنا](https://purchase.aspose.com/temporary-license/)
-- **منتدى الدعم:** [Ask Questions and Share Knowledge](https://forum.aspose.com/c/email/10)
+- **منتدى الدعم:** [اطرح الأسئلة وشارك المعرفة](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

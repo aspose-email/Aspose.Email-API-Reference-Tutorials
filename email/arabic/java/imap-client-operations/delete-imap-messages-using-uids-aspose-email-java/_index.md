@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently manage and delete IMAP messages using UIDs with Aspose.Email for Java. Master the setup, key methods, and performance tips."
-"title": "Efficiently Delete IMAP Messages Using UIDs with Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إدارة رسائل IMAP وحذفها بكفاءة باستخدام مُعرّفات المستخدم (UIDs) مع Aspose.Email لـ Java. تعرّف على كيفية الإعداد والطرق الرئيسية ونصائح الأداء."
+"title": "حذف رسائل IMAP بكفاءة باستخدام معرفات المستخدم الفريدة (UIDs) مع Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/imap-client-operations/delete-imap-messages-using-uids-aspose-email-java/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Efficient Deletion of IMAP Messages Using UIDs with Aspose.Email for Java
+# حذف رسائل IMAP بكفاءة باستخدام معرفات المستخدم الفريدة (UIDs) مع Aspose.Email لـ Java
 
 ## مقدمة
 
-Efficient email management is essential for IT professionals and developers handling large volumes of data. This comprehensive guide will teach you how to use `Aspose.Email for Java` to delete specific IMAP messages by their unique identifiers (UIDs). This method simplifies message management, making it easier to handle bulk operations.
+تُعد إدارة البريد الإلكتروني بكفاءة أمرًا ضروريًا لمحترفي تكنولوجيا المعلومات والمطورين الذين يتعاملون مع كميات هائلة من البيانات. سيُعلّمك هذا الدليل الشامل كيفية استخدام `Aspose.Email for Java` لحذف رسائل IMAP محددة باستخدام مُعرِّفاتها الفريدة (UIDs). تُبسِّط هذه الطريقة إدارة الرسائل، مما يُسهِّل التعامل مع العمليات المُجمَّعة.
 
 **ما سوف تتعلمه:**
-- Setting up Aspose.Email for Java in your project.
-- Methods for deleting IMAP messages using sequence numbers and UIDs.
-- Practical examples of batch deletion by UIDs.
-- Tips for optimizing performance when managing email deletions with Java.
+- إعداد Aspose.Email لـJava في مشروعك.
+- طرق حذف رسائل IMAP باستخدام أرقام التسلسل ومعرفات المستخدم الفريدة.
+- أمثلة عملية على حذف الدفعة بواسطة معرفات UID.
+- نصائح لتحسين الأداء عند إدارة عمليات حذف البريد الإلكتروني باستخدام Java.
 
-Before diving into the implementation, let's review the prerequisites.
+قبل الغوص في التنفيذ، دعونا نراجع المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
-To follow along effectively:
-1. **المكتبات والتبعيات**: Ensure you have Aspose.Email for Java version 25.4 or later installed.
-2. **بيئة التطوير**: Use a Java IDE like IntelliJ IDEA or Eclipse.
-3. **قاعدة المعرفة**: Have a basic understanding of Java programming and the IMAP protocol.
+للمتابعة بشكل فعال:
+1. **المكتبات والتبعيات**:تأكد من تثبيت Aspose.Email لإصدار Java 25.4 أو إصدار أحدث.
+2. **بيئة التطوير**:استخدم Java IDE مثل IntelliJ IDEA أو Eclipse.
+3. **قاعدة المعرفة**:لدي فهم أساسي لبرمجة Java وبروتوكول IMAP.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-Integrate `Aspose.Email for Java` into your project by following these steps:
+دمج `Aspose.Email for Java` في مشروعك باتباع الخطوات التالية:
 
-### Maven Installation
+### تثبيت Maven
 
-Add this dependency to your `pom.xml` file if you're using Maven:
+أضف هذه التبعية إلى `pom.xml` الملف إذا كنت تستخدم Maven:
 
 ```xml
 <dependency>
@@ -51,11 +51,11 @@ Add this dependency to your `pom.xml` file if you're using Maven:
 
 ### الحصول على الترخيص
 
-Aspose offers free trials, evaluation licenses, and full purchase options. Obtain a temporary license [هنا](https://purchase.aspose.com/temporary-license/) to explore the library's capabilities without restrictions.
+يقدم Aspose تجارب مجانية، وتراخيص تقييم، وخيارات شراء شاملة. احصل على ترخيص مؤقت. [هنا](https://purchase.aspose.com/temporary-license/) لاستكشاف قدرات المكتبة دون قيود.
 
 ### التهيئة والإعداد الأساسي
 
-To initialize Aspose.Email for Java, create an `ImapClient` instance with your IMAP server credentials:
+لتهيئة Aspose.Email لـ Java، قم بإنشاء `ImapClient` مثال مع بيانات اعتماد خادم IMAP الخاص بك:
 
 ```java
 import com.aspose.email.ImapClient;
@@ -68,23 +68,23 @@ client.setSecurityOptions(SecurityOptions.Auto);
 
 ## دليل التنفيذ
 
-We'll explore three key features: deleting messages by sequence number, message ID, and UIDs.
+سنستكشف ثلاث ميزات رئيسية: حذف الرسائل حسب رقم التسلسل ومعرف الرسالة ومعرفات المستخدم الفريدة.
 
-### Delete Message by Sequence Number
+### حذف الرسالة حسب رقم التسلسل
 
 #### ملخص
-This feature allows you to delete an email from your IMAP folder using its sequence number.
+تتيح لك هذه الميزة حذف رسالة بريد إلكتروني من مجلد IMAP باستخدام رقم التسلسل الخاص بها.
 
 #### خطوات التنفيذ
 
-**1. Set Up the ImapClient**
+**1. إعداد ImapClient**
 
-Create and configure `ImapClient` مع تفاصيل الخادم الخاص بك:
+إنشاء وتكوين `ImapClient` مع تفاصيل الخادم الخاص بك:
 
 ```java
 import com.aspose.email.ImapFolderInfo;
 
-// Configure connection settings
+// تكوين إعدادات الاتصال
 ImapClient client = new ImapClient();
 client.setHost("imap.gmail.com");
 client.setPort(993);
@@ -96,54 +96,54 @@ client.setSecurityOptions(SecurityOptions.Auto);
 client.selectFolder(ImapFolderInfo.IN_BOX);
 ```
 
-**2. Delete a Message by Sequence Number**
+**2. حذف رسالة حسب رقم التسلسل**
 
-يستخدم `deleteMessage()` to remove an email using its sequence number:
+يستخدم `deleteMessage()` لإزالة بريد إلكتروني باستخدام رقم التسلسل الخاص به:
 
 ```java
-// Delete message with sequence number 1
+// حذف الرسالة ذات الرقم التسلسلي 1
 client.deleteMessage(1);
 ```
 
-### Delete Messages Using Message ID
+### حذف الرسائل باستخدام معرف الرسالة
 
 #### ملخص
-This feature demonstrates how to delete all messages from your IMAP folder using their unique IDs.
+توضح هذه الميزة كيفية حذف جميع الرسائل من مجلد IMAP باستخدام معرفاتها الفريدة.
 
 #### خطوات التنفيذ
 
-**1. List All Messages**
+**1. قائمة بجميع الرسائل**
 
-Retrieve and iterate over the list of messages in the selected folder:
+استرداد وتكرار قائمة الرسائل الموجودة في المجلد المحدد:
 
 ```java
 import com.aspose.email.ImapMessageInfoCollection;
 
-// List all messages in the Inbox
+// إدراج جميع الرسائل في صندوق الوارد
 ImapMessageInfoCollection coll = client.listMessages();
 ```
 
-**2. Delete Each Message by ID**
+**2. حذف كل رسالة حسب المعرف**
 
-Iterate through each message, using `deleteMessage()` with its unique ID:
+كرر كل رسالة باستخدام `deleteMessage()` مع معرفه الفريد:
 
 ```java
 for (ImapMessageInfo msgInfo : coll) {
-    // Delete message using its unique ID
+    // حذف الرسالة باستخدام معرفها الفريد
     client.deleteMessage(msgInfo.getUniqueId());
 }
 ```
 
-### Delete Set of Messages Using Message UIDs
+### حذف مجموعة من الرسائل باستخدام معرفات الرسائل الفريدة
 
 #### ملخص
-This feature highlights how to efficiently delete a set of messages by their UIDs.
+تسلط هذه الميزة الضوء على كيفية حذف مجموعة من الرسائل بكفاءة من خلال معرفاتها الفريدة.
 
 #### خطوات التنفيذ
 
-**1. Append Test Messages**
+**1. إضافة رسائل الاختبار**
 
-Create and append test messages to your mailbox:
+إنشاء رسائل اختبار وإضافتها إلى صندوق البريد الخاص بك:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -157,60 +157,60 @@ for (int i = 0; i < messageNumber; i++) {
             "Deleting Multiple Messages using ImapClient based on Message UIDs",
             "EMAILNET-35226: Add ability in ImapClient to delete a set of messages");
 
-    // Append the message and store its UID
+    // إضافة الرسالة وتخزين معرف المستخدم الخاص بها
     String uid = client.appendMessage(message);
     uidList.add(uid);
 }
 ```
 
-**2. Delete Messages by UIDs**
+**2. حذف الرسائل بواسطة معرفات المستخدم الفريدة**
 
-يستخدم `deleteMessagesByUids()` to remove all specified messages, then commit deletions:
+يستخدم `deleteMessagesByUids()` لإزالة جميع الرسائل المحددة، ثم تنفيذ عمليات الحذف:
 
 ```java
-// Delete messages using their UIDs and commit the deletions
+// احذف الرسائل باستخدام معرفاتها الفريدة واتبع عمليات الحذف
 client.deleteMessagesByUids(uidList, true);
 client.commitDeletes();
 ```
 
 ## التطبيقات العملية
 
-These features can be applied in various scenarios, such as email cleanup, archiving processes, or ensuring compliance with data retention policies.
+يمكن تطبيق هذه الميزات في سيناريوهات مختلفة، مثل تنظيف البريد الإلكتروني، أو عمليات الأرشفة، أو ضمان الامتثال لسياسات الاحتفاظ بالبيانات.
 
 ## اعتبارات الأداء
 
-For large volumes of emails, consider these optimization tips:
-- **معالجة الدفعات**: Delete multiple messages in batches to minimize server load.
-- **إدارة الموارد**: يستخدم `try-finally` blocks or try-with-resources statements to manage resources efficiently.
-- **Connection Reuse**: Reuse the same `ImapClient` connection for multiple operations when possible.
+بالنسبة إلى كميات كبيرة من رسائل البريد الإلكتروني، ضع في اعتبارك نصائح التحسين التالية:
+- **معالجة الدفعات**:حذف رسائل متعددة على دفعات لتقليل تحميل الخادم.
+- **إدارة الموارد**: يستخدم `try-finally` كتل أو عبارات try-with-resources لإدارة الموارد بكفاءة.
+- **إعادة استخدام الاتصال**:إعادة استخدام نفس `ImapClient` الاتصال لعمليات متعددة عندما يكون ذلك ممكنا.
 
 ## خاتمة
 
-You now have a solid understanding of how to use Aspose.Email for Java for efficient IMAP message management. From setup to implementing deletions by various identifiers, these tools can enhance your email automation processes significantly.
+لديك الآن فهمٌ متعمقٌ لكيفية استخدام Aspose.Email لجافا لإدارة رسائل IMAP بكفاءة. بدءًا من الإعداد ووصولًا إلى تنفيذ عمليات الحذف باستخدام مُعرّفات مُختلفة، تُحسّن هذه الأدوات عمليات أتمتة البريد الإلكتروني لديك بشكلٍ ملحوظ.
 
-**الخطوات التالية**: Explore other features of Aspose.Email, such as fetching and managing attachments or integrating with databases and CRM platforms.
+**الخطوات التالية**:استكشف الميزات الأخرى لـ Aspose.Email، مثل جلب المرفقات وإدارتها أو التكامل مع قواعد البيانات ومنصات CRM.
 
 ## قسم الأسئلة الشائعة
 
 1. **كيف أتعامل مع أخطاء المصادقة؟**
-   - Verify that the credentials are correct and match the IMAP server settings in your `ImapClient`.
-2. **Can I delete messages from folders other than Inbox?**
-   - نعم استخدم `client.selectFolder()` to choose any folder before performing deletions.
-3. **Is it possible to undo a deletion with Aspose.Email?**
-   - Once deleted, IMAP servers typically do not support message recovery. Always ensure you have backups or archives as needed.
-4. **What if I encounter connection timeouts?**
-   - Increase the timeout settings in your `ImapClient` configuration or check network stability.
-5. **Can Aspose.Email handle encrypted emails for deletion?**
-   - Yes, but make sure your client supports the encryption protocols used by your IMAP server.
+   - تأكد من صحة بيانات الاعتماد وتطابقها مع إعدادات خادم IMAP في جهازك `ImapClient`.
+2. **هل يمكنني حذف الرسائل من مجلدات أخرى غير البريد الوارد؟**
+   - نعم استخدم `client.selectFolder()` لاختيار أي مجلد قبل إجراء عمليات الحذف.
+3. **هل من الممكن التراجع عن الحذف باستخدام Aspose.Email؟**
+   - بعد الحذف، عادةً لا تدعم خوادم IMAP استعادة الرسائل. تأكد دائمًا من وجود نسخ احتياطية أو أرشيفات عند الحاجة.
+4. **ماذا لو واجهت انقطاع الاتصال؟**
+   - قم بزيادة إعدادات مهلة الانتظار في جهازك `ImapClient` تكوين أو التحقق من استقرار الشبكة.
+5. **هل يمكن لـ Aspose.Email التعامل مع رسائل البريد الإلكتروني المشفرة للحذف؟**
+   - نعم، ولكن تأكد من أن العميل الخاص بك يدعم بروتوكولات التشفير التي يستخدمها خادم IMAP الخاص بك.
 
 ## موارد
 
 - [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/)
-- [Download Aspose Email](https://releases.aspose.com/email/java/)
+- [تنزيل البريد الإلكتروني Aspose](https://releases.aspose.com/email/java/)
 - [شراء ترخيص](https://purchase.aspose.com/buy)
 - [نسخة تجريبية مجانية وترخيص مؤقت](https://releases.aspose.com/email/java/)
 
-لمزيد من المساعدة، قم بزيارة [منتدى أسبوزي](https://forum.aspose.com/c/email/10) to connect with other users and experts. Happy coding!
+لمزيد من المساعدة، قم بزيارة [منتدى أسبوزي](https://forum.aspose.com/c/email/10) للتواصل مع مستخدمين وخبراء آخرين. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

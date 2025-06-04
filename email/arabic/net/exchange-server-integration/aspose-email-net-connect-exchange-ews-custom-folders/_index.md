@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to integrate email functionalities into your .NET applications by connecting to Microsoft Exchange Web Service with Aspose.Email. This guide covers setup, connection, and accessing custom folders."
-"title": "Connecting to Exchange Web Service using Aspose.Email for .NET&#58; Access Custom Folders and Manage Emails"
+"description": "تعرّف على كيفية دمج وظائف البريد الإلكتروني في تطبيقات .NET الخاصة بك بالاتصال بخدمة Microsoft Exchange Web Service باستخدام Aspose.Email. يتناول هذا الدليل الإعداد والاتصال والوصول إلى المجلدات المخصصة."
+"title": "الاتصال بخدمة Exchange Web Service باستخدام Aspose.Email لـ .NET - الوصول إلى المجلدات المخصصة وإدارة رسائل البريد الإلكتروني"
 "url": "/ar/net/exchange-server-integration/aspose-email-net-connect-exchange-ews-custom-folders/"
 "weight": 1
 ---
@@ -11,30 +11,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Connecting to Exchange Web Service using Aspose.Email for .NET: Access Custom Folders and Manage Emails
+# الاتصال بخدمة Exchange Web Service باستخدام Aspose.Email لـ .NET: الوصول إلى المجلدات المخصصة وإدارة رسائل البريد الإلكتروني
 
 ## مقدمة
 
-Integrating email functionalities into your .NET applications can be challenging, especially when managing emails or accessing custom folders within an Exchange mailbox. **Aspose.Email لـ .NET** simplifies these tasks significantly. This tutorial will guide you through connecting to Microsoft Exchange Web Service (EWS) and exploring custom folders in your Exchange mailbox using Aspose.Email.
+قد يكون دمج وظائف البريد الإلكتروني في تطبيقات .NET أمرًا صعبًا، خاصةً عند إدارة رسائل البريد الإلكتروني أو الوصول إلى المجلدات المخصصة داخل صندوق بريد Exchange. **Aspose.Email لـ .NET** يُبسّط هذه المهام بشكل كبير. سيرشدك هذا البرنامج التعليمي خلال الاتصال بخدمة Microsoft Exchange Web Service (EWS) واستكشاف المجلدات المخصصة في صندوق بريد Exchange باستخدام Aspose.Email.
 
 ### ما سوف تتعلمه:
-- Connecting to the Exchange Web Service with Aspose.Email
-- Accessing and listing messages from a custom folder within an Exchange mailbox
-- Key configuration steps for setting up Aspose.Email in .NET projects
+- الاتصال بخدمة Exchange Web Service باستخدام Aspose.Email
+- الوصول إلى الرسائل وإدراجها من مجلد مخصص داخل صندوق بريد Exchange
+- خطوات التكوين الرئيسية لإعداد Aspose.Email في مشاريع .NET
 
-Let's dive into what you need before getting started with these powerful functionalities.
+دعنا نتعرف على ما تحتاجه قبل البدء في استخدام هذه الوظائف القوية.
 
 ## المتطلبات الأساسية (H2)
 
-Before diving into this tutorial, ensure your environment is set up correctly. Here’s what you’ll need:
+قبل البدء بهذا البرنامج التعليمي، تأكد من إعداد بيئتك بشكل صحيح. إليك ما ستحتاجه:
 
-1. **مكتبة Aspose.Email**: Version 21.x or later.
-2. **بيئة التطوير**: Visual Studio installed on Windows.
-3. **معرفة**: Basic understanding of C# and .NET development.
+1. **مكتبة Aspose.Email**:الإصدار 21.x أو أحدث.
+2. **بيئة التطوير**:تم تثبيت Visual Studio على نظام التشغيل Windows.
+3. **معرفة**:فهم أساسي لتطوير C# و.NET.
 
 ## إعداد Aspose.Email لـ .NET (H2)
 
-To begin using Aspose.Email, you must first install it in your project. Here are several methods to do this:
+لبدء استخدام Aspose.Email، يجب عليك أولاً تثبيته في مشروعك. إليك عدة طرق للقيام بذلك:
 
 **استخدام .NET CLI:**
 ```bash
@@ -50,22 +50,22 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-- **نسخة تجريبية مجانية**: Start with a free trial to explore functionalities.
-- **رخصة مؤقتة**: Obtain a temporary license for full access without limitations during evaluation.
-- **شراء**: Consider purchasing for long-term use if you find it beneficial.
+- **نسخة تجريبية مجانية**:ابدأ بإصدار تجريبي مجاني لاستكشاف الوظائف.
+- **رخصة مؤقتة**:الحصول على ترخيص مؤقت للوصول الكامل دون قيود أثناء التقييم.
+- **شراء**:فكر في الشراء للاستخدام طويل الأمد إذا وجدت ذلك مفيدًا.
 
-Once installed, initialize Aspose.Email in your project by configuring the necessary credentials and settings.
+بمجرد التثبيت، قم بتشغيل Aspose.Email في مشروعك عن طريق تكوين بيانات الاعتماد والإعدادات الضرورية.
 
 ## دليل التنفيذ
 
-This section is divided into key features to help you connect to EWS and manage custom folders efficiently.
+تم تقسيم هذا القسم إلى ميزات رئيسية لمساعدتك على الاتصال بـ EWS وإدارة المجلدات المخصصة بكفاءة.
 
-### Feature 1: Connecting to Exchange Web Service (H2)
+### الميزة 1: الاتصال بخدمة Exchange Web Service (H2)
 
 #### ملخص
-Connecting to an Exchange server using Aspose.Email allows you to interact with your mailbox programmatically. This feature focuses on establishing a connection via `EWSClient`.
+يتيح لك الاتصال بخادم Exchange باستخدام Aspose.Email التفاعل مع صندوق بريدك برمجيًا. تركز هذه الميزة على إنشاء اتصال عبر `EWSClient`.
 
-**الخطوة 1**: Create an instance of the `EWSClient`.
+**الخطوة 1**:إنشاء مثيل لـ `EWSClient`.
 
 ```csharp
 using System;
@@ -75,25 +75,25 @@ public class ConnectToExchangeWebService
 {
     public void Run()
     {
-        // Initialize EWSClient with server URL and credentials
+        // تهيئة EWSClient باستخدام عنوان URL الخاص بالخادم وبيانات الاعتماد
         IEWSClient client = EWSClient.GetEWSClient(
             "https://outlook.office365.com/ews/exchange.asmx،
             "testUser",  // اسم المستخدم
             "pwd",       // كلمة المرور
-            "domain"     // Domain
+            "domain"     // اِختِصاص
         );
     }
 }
 ```
 
-**توضيح**: ال `GetEWSClient` method requires the server URL, user credentials (username, password, and domain). This setup is crucial for authentication and accessing your mailbox.
+**توضيح**: ال `GetEWSClient` تتطلب هذه الطريقة عنوان URL للخادم، وبيانات اعتماد المستخدم (اسم المستخدم، وكلمة المرور، والنطاق). هذا الإعداد ضروري للمصادقة والوصول إلى صندوق بريدك.
 
-### Feature 2: Accessing Custom Folder in Exchange Mailbox (H2)
+### الميزة 2: الوصول إلى المجلد المخصص في صندوق بريد Exchange (H2)
 
 #### ملخص
-Once connected, you might need to access specific folders within your mailbox. This feature demonstrates checking for a custom folder's existence and listing its messages.
+بعد الاتصال، قد تحتاج إلى الوصول إلى مجلدات محددة في صندوق بريدك. توضح هذه الميزة إمكانية التحقق من وجود مجلد مخصص وسرد رسائله.
 
-**الخطوة 1**: Check if the custom folder exists.
+**الخطوة 1**:تحقق مما إذا كان المجلد المخصص موجودًا.
 
 ```csharp
 using Aspose.Email.Clients.Exchange;
@@ -103,17 +103,17 @@ public class AccessCustomFolder
 {
     public void Run(IEWSClient client)
     {
-        // Obtain mailbox information
+        // الحصول على معلومات صندوق البريد
         ExchangeMailboxInfo mailbox = client.GetMailboxInfo();
         ExchangeMessageInfoCollection messages = null;
         ExchangeFolderInfo subfolderInfo = new ExchangeFolderInfo();
 
-        // Check for the custom folder's existence
+        // التحقق من وجود المجلد المخصص
         client.FolderExists(mailbox.InboxUri, "TestInbox", out subfolderInfo);
 
         if (subfolderInfo != null)
         {
-            // List messages in the found folder
+            // قائمة الرسائل في المجلد الذي تم العثور عليه
             messages = client.ListMessages(subfolderInfo.Uri);
             foreach (ExchangeMessageInfo info in messages)
             {
@@ -130,47 +130,47 @@ public class AccessCustomFolder
 }
 ```
 
-**توضيح**: ال `FolderExists` method checks the existence of a specified folder, returning its URI if present. If the folder exists, `ListMessages` retrieves all messages within it.
+**توضيح**: ال `FolderExists` تتحقق هذه الطريقة من وجود مجلد محدد، وتُرجع عنوان URI الخاص به إن وُجد. إذا كان المجلد موجودًا، `ListMessages` يسترجع جميع الرسائل الموجودة بداخله.
 
 ## التطبيقات العملية (H2)
 
-Here are some real-world scenarios where these features can be particularly useful:
+فيما يلي بعض السيناريوهات الواقعية حيث يمكن أن تكون هذه الميزات مفيدة بشكل خاص:
 
-1. **أتمتة إدارة البريد الإلكتروني**: Automate sorting and archiving emails in custom folders.
-2. **Email Reporting Systems**: Generate reports based on email content stored in specific folders.
-3. **التكامل مع أنظمة إدارة علاقات العملاء**: Synchronize customer communications from Exchange to a CRM platform.
+1. **أتمتة إدارة البريد الإلكتروني**:أتمتة فرز رسائل البريد الإلكتروني وأرشفتها في مجلدات مخصصة.
+2. **أنظمة إعداد التقارير عبر البريد الإلكتروني**:إنشاء تقارير استنادًا إلى محتوى البريد الإلكتروني المخزن في مجلدات محددة.
+3. **التكامل مع أنظمة إدارة علاقات العملاء**:مزامنة اتصالات العملاء من Exchange إلى منصة CRM.
 
 ## اعتبارات الأداء (H2)
 
 يتضمن تحسين الأداء عند استخدام Aspose.Email ما يلي:
 
-- Efficient memory management by disposing of objects appropriately.
-- Minimizing API calls by fetching only necessary data.
-- Utilizing asynchronous programming patterns where applicable.
+- إدارة الذاكرة بكفاءة من خلال التخلص من الكائنات بشكل مناسب.
+- تقليل استدعاءات واجهة برمجة التطبيقات (API) عن طريق جلب البيانات الضرورية فقط.
+- استخدام أنماط البرمجة غير المتزامنة حيثما كان ذلك مناسبًا.
 
 ## خاتمة
 
-In this tutorial, you've learned how to connect to Exchange Web Service and access custom folders in your mailbox using Aspose.Email for .NET. With these skills, managing emails programmatically becomes straightforward, opening doors to automation and integration possibilities.
+في هذا البرنامج التعليمي، تعلمت كيفية الاتصال بخدمة Exchange Web Service والوصول إلى مجلدات مخصصة في صندوق بريدك باستخدام Aspose.Email لـ .NET. بفضل هذه المهارات، تُصبح إدارة رسائل البريد الإلكتروني برمجيًا أمرًا سهلاً، مما يفتح آفاقًا جديدة للأتمتة والتكامل.
 
 ### الخطوات التالية
-Explore more features of Aspose.Email by diving into its comprehensive documentation and experimenting with different functionalities.
+استكشف المزيد من ميزات Aspose.Email من خلال الغوص في وثائقها الشاملة وتجربة وظائف مختلفة.
 
 ## قسم الأسئلة الشائعة (H2)
 
-**Q1**: How do I handle authentication errors when connecting to EWS?
-- **A1**: Ensure your credentials are correct, and the server URL is accurate. Check network connectivity and firewall settings.
+**س1**:كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟
+- **أ1**تأكد من صحة بيانات اعتمادك، ودقة عنوان URL للخادم. تحقق من اتصال الشبكة وإعدادات جدار الحماية.
 
-**Q2**: Can Aspose.Email manage emails from POP3/IMAP servers as well?
-- **A2**: Yes, it supports a variety of protocols including IMAP, POP3, SMTP, and EWS.
+**الربع الثاني**:هل يمكن لـ Aspose.Email إدارة رسائل البريد الإلكتروني من خوادم POP3/IMAP أيضًا؟
+- **أ2**:نعم، فهو يدعم مجموعة متنوعة من البروتوكولات بما في ذلك IMAP، وPOP3، وSMTP، وEWS.
 
-**Q3**: What if the custom folder doesn't exist in my mailbox?
-- **A3**: You can create it programmatically using Aspose.Email's folder management features.
+**الربع الثالث**:ماذا لو لم يكن المجلد المخصص موجودًا في صندوق البريد الخاص بي؟
+- **أ3**:يمكنك إنشاءه برمجيًا باستخدام ميزات إدارة المجلدات في Aspose.Email.
 
-**Q4**: How do I handle large volumes of emails efficiently?
-- **A4**: Use pagination options provided by Aspose.Email to process emails in batches, reducing memory load.
+**الربع الرابع**:كيف أتعامل مع كميات كبيرة من رسائل البريد الإلكتروني بكفاءة؟
+- **أ4**:استخدم خيارات الترقيم التي يوفرها Aspose.Email لمعالجة رسائل البريد الإلكتروني على دفعات، مما يقلل من تحميل الذاكرة.
 
-**Q5**: Is there a limit on the number of messages I can fetch?
-- **A5**: The limit depends on your Exchange server settings and API usage policies. Consider implementing paging techniques if necessary.
+**س5**:هل هناك حد لعدد الرسائل التي يمكنني جلبها؟
+- **أ5**يعتمد الحد على إعدادات خادم Exchange وسياسات استخدام واجهة برمجة التطبيقات (API). يُنصح بتطبيق تقنيات الترحيل إذا لزم الأمر.
 
 ## موارد
 

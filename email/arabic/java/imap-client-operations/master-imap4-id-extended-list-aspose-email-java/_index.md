@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to leverage the IMAP4 ID extension and extended list command support with Aspose.Email for Java. Streamline email management in your Java applications."
-"title": "Master IMAP4 ID and Extended List Features in Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية الاستفادة من دعم امتداد معرف IMAP4 وأوامر القائمة الموسعة مع Aspose.Email لـ Java. سهّل إدارة بريدك الإلكتروني في تطبيقات Java."
+"title": "إتقان ميزات معرف IMAP4 والقائمة الموسعة في Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/imap-client-operations/master-imap4-id-extended-list-aspose-email-java/"
 "weight": 1
 ---
@@ -11,28 +11,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering IMAP4 ID and Extended List Features in Aspose.Email for Java
+# إتقان ميزات معرف IMAP4 والقائمة الممتدة في Aspose.Email لـ Java
 
 ## مقدمة
-In today's digital age, effectively managing emails programmatically is crucial for businesses aiming to streamline operations and enhance communication efficiency. With Aspose.Email for Java, developers gain access to robust features that simplify the complexities of email protocols like IMAP4. This tutorial will guide you through implementing two powerful features: IMAP4 ID Extension Support and IMAP4 Extended List Command Support using Aspose.Email for Java.
+في عصرنا الرقمي الحالي، تُعدّ إدارة رسائل البريد الإلكتروني بفعالية برمجيًا أمرًا بالغ الأهمية للشركات التي تسعى إلى تبسيط العمليات وتعزيز كفاءة الاتصالات. مع Aspose.Email لجافا، يُتاح للمطورين الوصول إلى ميزات فعّالة تُبسّط تعقيدات بروتوكولات البريد الإلكتروني مثل IMAP4. سيرشدك هذا البرنامج التعليمي إلى كيفية تطبيق ميزتين فعّالتين: دعم امتداد معرف IMAP4 ودعم أوامر قائمة IMAP4 الموسعة باستخدام Aspose.Email لجافا.
 
 **ما سوف تتعلمه:**
-- How to utilize the IMAP4 ID extension with Aspose.Email for Java.
-- The process of checking extended list command support on an IMAP server.
-- Step-by-step code implementation with detailed explanations.
+- كيفية الاستفادة من ملحق معرف IMAP4 مع Aspose.Email لـJava.
+- عملية التحقق من دعم أوامر القائمة الموسعة على خادم IMAP.
+- تنفيذ الكود خطوة بخطوة مع شرح مفصل.
 
-Let's dive into setting up your environment and exploring these functionalities. Before we proceed, ensure you're familiar with Java development basics and have access to a Maven setup.
+لنبدأ بإعداد بيئتك واستكشاف هذه الوظائف. قبل المتابعة، تأكد من إلمامك بأساسيات تطوير جافا وإمكانية الوصول إلى إعدادات Maven.
 
 ## المتطلبات الأساسية
-To follow this tutorial, ensure you meet the following prerequisites:
+لمتابعة هذا البرنامج التعليمي، تأكد من تلبية المتطلبات الأساسية التالية:
 
-- **المكتبات المطلوبة:** You'll need Aspose.Email for Java version 25.4 or later.
-- **إعداد البيئة:** A compatible Java Development Kit (JDK) installed on your machine.
-- **المتطلبات المعرفية:** Basic understanding of Java programming and familiarity with Maven for dependency management.
+- **المكتبات المطلوبة:** ستحتاج إلى Aspose.Email لإصدار Java 25.4 أو إصدار أحدث.
+- **إعداد البيئة:** تم تثبيت مجموعة تطوير Java (JDK) المتوافقة على جهازك.
+- **المتطلبات المعرفية:** فهم أساسي لبرمجة Java والمعرفة بـ Maven لإدارة التبعيات.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 ### تثبيت
-You can include Aspose.Email in your project using Maven by adding the following dependency to your `pom.xml` file:
+يمكنك تضمين Aspose.Email في مشروعك باستخدام Maven عن طريق إضافة التبعية التالية إلى `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -44,13 +44,13 @@ You can include Aspose.Email in your project using Maven by adding the following
 ```
 
 ### الحصول على الترخيص
-Aspose.Email for Java offers a free trial, but for full access to all features, you'll need to acquire a license. Here's how:
+يُقدّم Aspose.Email لجافا نسخة تجريبية مجانية، ولكن للوصول الكامل إلى جميع الميزات، ستحتاج إلى الحصول على ترخيص. إليك الطريقة:
 
-- **نسخة تجريبية مجانية:** Download and use the library with limited capabilities.
-- **رخصة مؤقتة:** Obtain a temporary license for testing purposes from Aspose’s website.
-- **شراء:** Buy a permanent license if you're satisfied with your evaluation.
+- **نسخة تجريبية مجانية:** قم بتنزيل المكتبة واستخدامها بإمكانيات محدودة.
+- **رخصة مؤقتة:** احصل على ترخيص مؤقت لأغراض الاختبار من موقع Aspose.
+- **شراء:** قم بشراء ترخيص دائم إذا كنت راضيًا عن تقييمك.
 
-Once you have your license, initialize it in your project to unlock full features. Here's how to set up basic initialization:
+بعد حصولك على الترخيص، قم بتشغيله في مشروعك لفتح جميع الميزات. إليك كيفية إعداد التهيئة الأساسية:
 
 ```java
 import com.aspose.email.License;
@@ -59,7 +59,7 @@ public class LicenseSetup {
     public static void main(String[] args) {
         License license = new License();
         try {
-            // Load the license file from the specified path
+            // قم بتحميل ملف الترخيص من المسار المحدد
             license.setLicense("path/to/your/license.lic");
         } catch (Exception e) {
             System.out.println("Error setting license: " + e.getMessage());
@@ -69,15 +69,15 @@ public class LicenseSetup {
 ```
 
 ## دليل التنفيذ
-### IMAP4 ID Extension Support
-This feature allows you to identify your client with the IMAP server, enabling tailored interactions based on client capabilities.
+### دعم ملحق معرف IMAP4
+تتيح لك هذه الميزة تحديد عميلك باستخدام خادم IMAP، مما يتيح التفاعلات المخصصة استنادًا إلى قدرات العميل.
 
 #### ملخص
-The IMAP4 ID extension helps establish a two-way communication line between the client and server. By introducing your client’s identity, servers can provide optimized responses.
+يُساعد امتداد مُعرِّف IMAP4 على إنشاء خط اتصال ثنائي الاتجاه بين العميل والخادم. من خلال إدخال هوية العميل، يُمكن للخوادم توفير استجابات مُحسَّنة.
 
 #### خطوات التنفيذ
 1. **تهيئة ImapClient**
-   إعداد `ImapClient` with your credentials and enable security options:
+   إعداد `ImapClient` باستخدام بيانات الاعتماد الخاصة بك وتمكين خيارات الأمان:
    
    ```java
    import com.aspose.email.ImapClient;
@@ -87,16 +87,16 @@ The IMAP4 ID extension helps establish a two-way communication line between the 
    client.setSecurityOptions(SecurityOptions.Auto);
    ```
 
-2. **Introduce Client**
-   Obtain the server identification information:
+2. **تقديم العميل**
+   الحصول على معلومات تعريف الخادم:
    
    ```java
    import com.aspose.email.ImapIdentificationInfo;
 
-   // Get server identity with default parameters.
+   // احصل على هوية الخادم باستخدام المعلمات الافتراضية.
    ImapIdentificationInfo info1 = client.introduceClient();
 
-   // Use default introduction value.
+   // استخدم قيمة المقدمة الافتراضية.
    ImapIdentificationInfo info2 = client.introduceClient(ImapIdentificationInfo.getDefaultValue());
 
    System.out.println("Server Name: " + info1.getName());
@@ -105,23 +105,23 @@ The IMAP4 ID extension helps establish a two-way communication line between the 
    System.out.println("Version: " + info1.getVersion());
    ```
 
-### IMAP4 Extended List Command Support
-This feature checks if the extended list command is supported and retrieves detailed folder information.
+### دعم أوامر القائمة الموسعة IMAP4
+تتحقق هذه الميزة مما إذا كان أمر القائمة الموسعة مدعومًا وتسترد معلومات المجلد التفصيلية.
 
 #### ملخص
-The extended list command provides comprehensive details about server folders, including hierarchy and attributes beyond basic naming conventions.
+يوفر أمر القائمة الموسعة تفاصيل شاملة حول مجلدات الخادم، بما في ذلك التسلسل الهرمي والسمات التي تتجاوز اتفاقيات التسمية الأساسية.
 
 #### خطوات التنفيذ
-1. **Check Extended List Support**
-   Verify if the server supports the extended list command:
+1. **التحقق من دعم القائمة الموسعة**
+   التحقق مما إذا كان الخادم يدعم أمر القائمة الموسعة:
    
    ```java
    boolean isExtendedListSupported = client.getExtendedListSupported();
    System.out.println("Extended List Supported: " + isExtendedListSupported);
    ```
 
-2. **Retrieve Folder Information**
-   استخدم `listFolders` method to obtain details about all folders:
+2. **استرداد معلومات المجلد**
+   استخدم `listFolders` طريقة الحصول على تفاصيل حول كافة المجلدات:
    
    ```java
    import com.aspose.email.ImapFolderInfo;
@@ -135,31 +135,31 @@ The extended list command provides comprehensive details about server folders, i
    ```
 
 ## التطبيقات العملية
-1. **Email Client Development:** Build robust email clients with enhanced functionality.
-2. **Automated Email Management:** Implement systems for bulk email processing and categorization.
-3. **Enterprise Solutions:** Integrate into larger enterprise applications requiring sophisticated email handling.
+1. **تطوير عملاء البريد الإلكتروني:** إنشاء عملاء بريد إلكتروني أقوياء مع وظائف محسنة.
+2. **إدارة البريد الإلكتروني الآلية:** تنفيذ أنظمة لمعالجة البريد الإلكتروني بالجملة وتصنيفه.
+3. **حلول المؤسسات:** التكامل مع تطبيقات المؤسسات الأكبر حجمًا التي تتطلب معالجة بريد إلكتروني متطورة.
 
 ## اعتبارات الأداء
-- **تحسين استخدام الموارد:** Close client connections when not in use to manage resources effectively.
-- **إدارة الذاكرة:** Monitor memory consumption, especially with large folders or numerous emails.
-- **أفضل الممارسات:** Use lazy loading and asynchronous operations to enhance performance.
+- **تحسين استخدام الموارد:** قم بإغلاق اتصالات العملاء عندما لا تكون قيد الاستخدام لإدارة الموارد بشكل فعال.
+- **إدارة الذاكرة:** راقب استهلاك الذاكرة، خاصةً مع المجلدات الكبيرة أو رسائل البريد الإلكتروني العديدة.
+- **أفضل الممارسات:** استخدم التحميل الكسول والعمليات غير المتزامنة لتحسين الأداء.
 
 ## خاتمة
-Throughout this tutorial, we've explored how to leverage Aspose.Email for Java's IMAP4 ID and Extended List features. By following these steps, you're well on your way to implementing advanced email management solutions in your Java applications. Explore further capabilities of Aspose.Email to expand your toolkit even more.
+خلال هذا البرنامج التعليمي، استكشفنا كيفية الاستفادة من ميزات Aspose.Email لمعرف IMAP4 والقائمة الموسعة في Java. باتباع هذه الخطوات، ستكون على الطريق الصحيح لتطبيق حلول إدارة بريد إلكتروني متقدمة في تطبيقات Java. استكشف المزيد من إمكانيات Aspose.Email لتوسيع مجموعة أدواتك بشكل أكبر.
 
-Ready to dive deeper? Try applying these concepts in a project or explore the [وثائق Aspose.Email](https://reference.aspose.com/email/java/) for more insights.
+هل أنت مستعد للتعمق أكثر؟ جرب تطبيق هذه المفاهيم في مشروع أو استكشف [وثائق Aspose.Email](https://reference.aspose.com/email/java/) لمزيد من الأفكار.
 
 ## قسم الأسئلة الشائعة
-1. **What is the IMAP4 ID extension?**
-   - It’s used by clients to communicate their capabilities and identity to the server.
-2. **How do I handle connection errors in Aspose.Email?**
-   - Implement try-catch blocks around network calls and check for specific exceptions.
-3. **Can I use Aspose.Email with different email providers?**
-   - Yes, it supports a wide range of IMAP servers including Gmail, Yahoo, and others.
-4. **What are the benefits of using extended list commands in IMAP?**
-   - They allow you to retrieve detailed folder attributes beyond just names.
-5. **Is Aspose.Email Java suitable for enterprise applications?**
-   - Absolutely, its robust feature set makes it ideal for enterprise-level email solutions.
+1. **ما هو امتداد معرف IMAP4؟**
+   - يتم استخدامه من قبل العملاء لتوصيل قدراتهم وهويتهم إلى الخادم.
+2. **كيف أتعامل مع أخطاء الاتصال في Aspose.Email؟**
+   - تنفيذ كتل try-catch حول مكالمات الشبكة والتحقق من وجود استثناءات محددة.
+3. **هل يمكنني استخدام Aspose.Email مع موفري البريد الإلكتروني المختلفين؟**
+   - نعم، فهو يدعم مجموعة واسعة من خوادم IMAP بما في ذلك Gmail وYahoo وغيرها.
+4. **ما هي فوائد استخدام أوامر القائمة الموسعة في IMAP؟**
+   - إنها تسمح لك باسترجاع سمات المجلد التفصيلية بما يتجاوز الأسماء فقط.
+5. **هل Aspose.Email Java مناسب لتطبيقات المؤسسات؟**
+   - بالتأكيد، فمجموعة الميزات القوية التي يتمتع بها تجعله مثاليًا لحلول البريد الإلكتروني على مستوى المؤسسات.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/java/)

@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to extract email attachments effortlessly using Aspose.Email for Java. Step-by-step guide for Java developers."
-"linktitle": "Extracting Attachments from Email Messages in Aspose.Email"
+"description": "تعلّم كيفية استخراج مرفقات البريد الإلكتروني بسهولة باستخدام Aspose.Email لجافا. دليل خطوة بخطوة لمطوري جافا."
+"linktitle": "استخراج المرفقات من رسائل البريد الإلكتروني في Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Extracting Attachments from Email Messages in Aspose.Email"
+"title": "استخراج المرفقات من رسائل البريد الإلكتروني في Aspose.Email"
 "url": "/ar/java/advanced-email-attachments/extracting-attachments-from-email-messages/"
 "weight": 13
 ---
@@ -13,34 +13,34 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracting Attachments from Email Messages in Aspose.Email
+# استخراج المرفقات من رسائل البريد الإلكتروني في Aspose.Email
 
 
-## Introduction to Aspose.Email for Java
+## مقدمة إلى Aspose.Email لـ Java
 
-Aspose.Email for Java is a powerful Java library that allows developers to work with email messages and attachments seamlessly. It provides a wide range of features for email processing, including the ability to extract attachments from email messages. In this step-by-step guide, we will explore how to use Aspose.Email for Java to extract attachments from email messages with ease.
+Aspose.Email لجافا هي مكتبة جافا فعّالة تُمكّن المطورين من التعامل مع رسائل البريد الإلكتروني ومرفقاته بسلاسة. تُوفّر مجموعة واسعة من الميزات لمعالجة البريد الإلكتروني، بما في ذلك إمكانية استخراج المرفقات من رسائل البريد الإلكتروني. في هذا الدليل المُفصّل، سنستكشف كيفية استخدام Aspose.Email لجافا لاستخراج المرفقات من رسائل البريد الإلكتروني بسهولة.
 
 ## المتطلبات الأساسية
 
-Before we dive into the code, let's ensure you have everything set up correctly:
+قبل أن نتعمق في الكود، دعنا نتأكد من إعداد كل شيء بشكل صحيح:
 
-1. Java Development Environment: Make sure you have Java installed on your system.
+1. بيئة تطوير Java: تأكد من تثبيت Java على نظامك.
 
-2. Aspose.Email for Java: Download the library from [هنا](https://releases.aspose.com/email/java/) and add it to your project.
+2. Aspose.Email لـ Java: قم بتنزيل المكتبة من [هنا](https://releases.aspose.com/email/java/) وأضفه إلى مشروعك.
 
-3. Email Message: You should have an email message with attachments to work with. You can use your own email or create a sample email for testing.
+3. رسالة البريد الإلكتروني: يجب أن يكون لديك رسالة بريد إلكتروني مع مرفقات للعمل عليها. يمكنك استخدام بريدك الإلكتروني الخاص أو إنشاء نموذج بريد إلكتروني للاختبار.
 
-## Step 1: Create a Java Project
+## الخطوة 1: إنشاء مشروع Java
 
-First, let's create a new Java project in your favorite Integrated Development Environment (IDE).
+أولاً، دعنا نقوم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك.
 
-## Step 2: Add Aspose.Email Library
+## الخطوة 2: إضافة مكتبة Aspose.Email
 
-Add the Aspose.Email library to your project by including the JAR file you downloaded earlier.
+قم بإضافة مكتبة Aspose.Email إلى مشروعك عن طريق تضمين ملف JAR الذي قمت بتنزيله مسبقًا.
 
-## Step 3: Extract Attachments
+## الخطوة 3: استخراج المرفقات
 
-Now, let's write the Java code to extract attachments from an email message. Below is a sample code snippet to get you started:
+الآن، لنكتب شيفرة جافا لاستخراج المرفقات من رسالة بريد إلكتروني. فيما يلي مقتطف شيفرة نموذجي لمساعدتك في البدء:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -48,49 +48,49 @@ import com.aspose.email.Attachment;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        // Load the email message
+        // تحميل رسالة البريد الإلكتروني
         MailMessage message = MailMessage.load("path/to/your/email.msg");
 
-        // Iterate through attachments
+        // التكرار من خلال المرفقات
         for (Attachment attachment : message.getAttachments()) {
-            // Save the attachment to a file
+            // حفظ المرفق في ملف
             attachment.save("path/to/save/" + attachment.getName());
         }
     }
 }
 ```
 
-In this code, we load an email message, iterate through its attachments, and save each attachment to a specified location. Don't forget to replace `"path/to/your/email.msg"` with the actual path to your email message.
+في هذا الكود، نقوم بتحميل رسالة بريد إلكتروني، وفحص مرفقاتها، وحفظ كل مرفق في مكان محدد. لا تنسَ استبدال `"path/to/your/email.msg"` مع المسار الفعلي لرسالة البريد الإلكتروني الخاصة بك.
 
-## Step 4: Compile and Run
+## الخطوة 4: التجميع والتشغيل
 
-Compile and run the Java program. If everything is set up correctly, you should see the attachments extracted to the specified folder.
+قم بتجميع برنامج جافا وتشغيله. إذا تم إعداد كل شيء بشكل صحيح، فسترى المرفقات مُستخرجة إلى المجلد المحدد.
 
 ## خاتمة
 
-Extracting attachments from email messages is a common task in email processing applications. Aspose.Email for Java simplifies this process by providing a robust library that handles email-related operations efficiently. With just a few lines of code, you can extract attachments and incorporate this functionality into your Java applications.
+يُعد استخراج المرفقات من رسائل البريد الإلكتروني مهمة شائعة في تطبيقات معالجة البريد الإلكتروني. يُبسط Aspose.Email لجافا هذه العملية بتوفير مكتبة قوية تُعالج العمليات المتعلقة بالبريد الإلكتروني بكفاءة. ببضعة أسطر برمجية فقط، يمكنك استخراج المرفقات ودمج هذه الوظيفة في تطبيقات جافا.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How can I download Aspose.Email for Java?
+### كيف يمكنني تنزيل Aspose.Email لـJava؟
 
-You can download Aspose.Email for Java from the website at [هنا](https://releases.aspose.com/email/java/).
+يمكنك تنزيل Aspose.Email لـ Java من موقع الويب على [هنا](https://releases.aspose.com/email/java/).
 
-### Can I use Aspose.Email for Java in my commercial projects?
+### هل يمكنني استخدام Aspose.Email لـ Java في مشاريعي التجارية؟
 
-Yes, Aspose.Email for Java can be used in both personal and commercial projects. Check the licensing details on the website for more information.
+نعم، يُمكن استخدام Aspose.Email لجافا في المشاريع الشخصية والتجارية. لمزيد من المعلومات، يُرجى مراجعة تفاصيل الترخيص على الموقع الإلكتروني.
 
-### Is there any documentation available for Aspose.Email for Java?
+### هل هناك أي وثائق متاحة لـ Aspose.Email لـ Java؟
 
-Certainly! You can find the documentation for Aspose.Email for Java at [هنا](https://reference.aspose.com/email/java/).
+بالتأكيد! يمكنك العثور على وثائق Aspose.Email لجافا على [هنا](https://reference.aspose.com/email/java/).
 
-### What email formats does Aspose.Email for Java support?
+### ما هي تنسيقات البريد الإلكتروني التي يدعمها Aspose.Email لـ Java؟
 
-Aspose.Email for Java supports various email formats, including MSG, EML, and more. Refer to the documentation for a complete list of supported formats.
+يدعم Aspose.Email لجافا تنسيقات بريد إلكتروني متنوعة، بما في ذلك MSG وEML وغيرها. راجع الوثائق للاطلاع على قائمة كاملة بالتنسيقات المدعومة.
 
-### Where can I get support for Aspose.Email for Java?
+### أين يمكنني الحصول على الدعم لـ Aspose.Email لـ Java؟
 
-For any technical assistance or inquiries, you can reach out to Aspose's support team through their support channels.
+لأي مساعدة فنية أو استفسارات، يمكنك التواصل مع فريق دعم Aspose من خلال قنوات الدعم الخاصة بهم.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

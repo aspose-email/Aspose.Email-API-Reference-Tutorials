@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Master listing public folders on your Exchange server with Aspose.Email for .NET. Follow this step-by-step guide to enhance email management efficiency."
-"title": "List Public Folders in .NET Using Aspose.Email's EWS Client | Exchange Server Integration Guide"
+"description": "أتقن إدارة المجلدات العامة على خادم Exchange باستخدام Aspose.Email لـ .NET. اتبع هذا الدليل خطوة بخطوة لتحسين كفاءة إدارة البريد الإلكتروني."
+"title": "عرض المجلدات العامة في .NET باستخدام عميل EWS الخاص بـ Aspose.Email | دليل تكامل Exchange Server"
 "url": "/ar/net/exchange-server-integration/list-public-folders-net-aspose-email-ews-client/"
 "weight": 1
 ---
@@ -11,81 +11,81 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to List Public Folders in .NET Using Aspose.Email's EWS Client
+# كيفية إدراج المجلدات العامة في .NET باستخدام عميل EWS الخاص بـ Aspose.Email
 
 ## مقدمة
 
-Efficiently managing public folders in an Exchange Server mailbox is crucial, especially when handling large volumes of data. This tutorial guides you through using Aspose.Email for .NET to list all available public folders with ease, leveraging the robust features of the EWS client.
+تُعد إدارة المجلدات العامة بكفاءة في صندوق بريد Exchange Server أمرًا بالغ الأهمية، خاصةً عند التعامل مع كميات كبيرة من البيانات. يرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ .NET لعرض جميع المجلدات العامة المتاحة بسهولة، مستفيدًا من الميزات القوية لعميل EWS.
 
 **ما سوف تتعلمه:**
-- Setting up and initializing Aspose.Email for .NET.
-- Listing public folders via the EWS client.
-- Real-world applications for managing email data.
-- Performance tips for handling large mailboxes.
+- إعداد وتفعيل Aspose.Email لـ .NET.
+- إدراج المجلدات العامة عبر عميل EWS.
+- تطبيقات واقعية لإدارة بيانات البريد الإلكتروني.
+- نصائح الأداء للتعامل مع صناديق البريد الكبيرة.
 
-Ready to optimize your Exchange mailbox management? Let's start with the prerequisites.
+هل أنت مستعد لتحسين إدارة صندوق بريد Exchange الخاص بك؟ لنبدأ بالمتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
-Ensure you have the necessary libraries and environment set up:
+تأكد من إعداد المكتبات والبيئة اللازمة:
 
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: Install using:
+- **Aspose.Email لـ .NET**:التثبيت باستخدام:
   - **.NET CLI**: `dotnet add package Aspose.Email`
   - **مدير الحزم**: `Install-Package Aspose.Email`
 
 ### إعداد البيئة
-- A .NET development environment (e.g., Visual Studio).
-- Exchange server access credentials (URL, username, password).
+- بيئة تطوير .NET (على سبيل المثال، Visual Studio).
+- بيانات اعتماد الوصول إلى خادم Exchange (عنوان URL، اسم المستخدم، كلمة المرور).
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with working in a .NET project.
+- -الإلمام بالعمل في مشروع .NET.
 
 ## إعداد Aspose.Email لـ .NET
 
-Install the library and acquire a license:
+تثبيت المكتبة والحصول على الترخيص:
 
 ### تعليمات التثبيت
-Add Aspose.Email to your project via:
+أضف Aspose.Email إلى مشروعك عبر:
 - **.NET CLI**: `dotnet add package Aspose.Email`.
 - **وحدة تحكم مدير الحزم** في Visual Studio: `Install-Package Aspose.Email`.
-- **واجهة مستخدم مدير الحزم NuGet**: Search for "Aspose.Email" and install.
+- **واجهة مستخدم مدير الحزم NuGet**:ابحث عن "Aspose.Email" وقم بالتثبيت.
 
 ### الحصول على الترخيص
-1. **نسخة تجريبية مجانية**: Explore features with no limitations initially.
-2. **رخصة مؤقتة**: Evaluate full capabilities by requesting a temporary license.
-3. **شراء**: For extended use, purchase from [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+1. **نسخة تجريبية مجانية**:استكشف الميزات دون قيود في البداية.
+2. **رخصة مؤقتة**:قم بتقييم القدرات الكاملة عن طريق طلب ترخيص مؤقت.
+3. **شراء**:للاستخدام الموسع، قم بالشراء من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة والإعداد الأساسي
 
-Set up your configuration as follows:
+قم بإعداد التكوين الخاص بك على النحو التالي:
 
 ```csharp
 cusing Aspose.Email.Clients.Exchange.WebService;
 using System;
 
-// Initialize EWS client with credentials
-IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx", "your-username", "your-password");
+// تهيئة عميل EWS باستخدام بيانات الاعتماد
+IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx، "اسم المستخدم الخاص بك"، "كلمة المرور الخاصة بك");
 
 Console.WriteLine("Initialized Aspose Email EWS Client successfully.");
 ```
 
 ## دليل التنفيذ
 
-### Listing Public Folders
+### قائمة المجلدات العامة
 
-Retrieve all public folders in your Exchange mailbox using `IEWSClient`:
+استرداد جميع المجلدات العامة في صندوق بريد Exchange الخاص بك باستخدام `IEWSClient`:
 
 #### ملخص
-Automate tasks and manage email data efficiently by listing available public folders.
+قم بأتمتة المهام وإدارة بيانات البريد الإلكتروني بكفاءة من خلال إدراج المجلدات العامة المتاحة.
 
 #### خطوات التنفيذ
-##### Step 1: Create EWS Client Instance
-Instantiate an `IEWSClient` object with valid credentials:
+##### الخطوة 1: إنشاء مثيل عميل EWS
+إنشاء مثيل `IEWSClient` كائن ذو بيانات اعتماد صالحة:
 
 ```csharp
-// Replace with your actual credentials
+// استبدلها ببيانات الاعتماد الفعلية الخاصة بك
 string url = "https://outlook.office365.com/ews/exchange.asmx";
 string username = "your-email@example.com";
 string password = "your-password";
@@ -93,11 +93,11 @@ string password = "your-password";
 IEWSClient client = EWSClient.GetEWSClient(url, username, password);
 ```
 
-##### Step 2: Retrieve Public Folders
-Fetch all public folders using the `ListPublicFolders` طريقة:
+##### الخطوة 2: استرداد المجلدات العامة
+جلب جميع المجلدات العامة باستخدام `ListPublicFolders` طريقة:
 
 ```csharp
-// Fetch and iterate through each public folder
+// جلب البيانات وتكرارها في كل مجلد عام
 ExchangeFolderInfoCollection publicFolders = client.ListPublicFolders(client.MailboxInfo.RootUri);
 
 foreach (ExchangeFolderInfo folder in publicFolders)
@@ -106,65 +106,65 @@ foreach (ExchangeFolderInfo folder in publicFolders)
 }
 ```
 
-##### Explanation of Code Snippets
-- **`IEWSClient.GetEWSClient`**: Establishes a connection to the Exchange server.
-  - *حدود*: URL, username, password.
-  - *غاية*: Authenticate and initialize EWS access.
+##### شرح مقتطفات التعليمات البرمجية
+- **`IEWSClient.GetEWSClient`**:إنشاء اتصال بخادم Exchange.
+  - *حدود*: عنوان URL، اسم المستخدم، كلمة المرور.
+  - *غاية*:المصادقة على الوصول إلى EWS وتفعيله.
 
 - **`ListPublicFolders`**:
-  - *Returns*: Collection of public folders (`ExchangeFolderInfoCollection`).
-  - *Usage*: Iterate through each folder for actions or data retrieval.
+  - *الإرجاعات*:مجموعة المجلدات العامة (`ExchangeFolderInfoCollection`).
+  - *الاستخدام*:قم بالتكرار في كل مجلد للحصول على الإجراءات أو استرجاع البيانات.
 
 #### نصائح استكشاف الأخطاء وإصلاحها
-- Ensure credentials are correct.
-- Verify network connectivity to the Exchange server URL.
-- Check firewall settings that may block EWS endpoints.
+- تأكد من صحة بيانات الاعتماد.
+- التحقق من اتصال الشبكة بعنوان URL الخاص بخادم Exchange.
+- تحقق من إعدادات جدار الحماية التي قد تمنع نقاط نهاية EWS.
 
 ## التطبيقات العملية
 
-Leverage this feature in real-world scenarios:
-1. **إدارة البريد الإلكتروني الآلية**: Organize emails into specific public folders based on predefined rules.
-2. **أرشفة البيانات**: Regularly list and archive folder contents for compliance and backup purposes.
-3. **التكامل مع أنظمة إدارة علاقات العملاء**: Sync email data from public folders to a CRM system, ensuring accurate communication logging.
+استخدم هذه الميزة في السيناريوهات الواقعية:
+1. **إدارة البريد الإلكتروني الآلية**:تنظيم رسائل البريد الإلكتروني في مجلدات عامة محددة استنادًا إلى قواعد محددة مسبقًا.
+2. **أرشفة البيانات**:إدراج محتويات المجلد وأرشفتها بانتظام لأغراض الامتثال والنسخ الاحتياطي.
+3. **التكامل مع أنظمة إدارة علاقات العملاء**:مزامنة بيانات البريد الإلكتروني من المجلدات العامة إلى نظام CRM، مما يضمن تسجيل الاتصالات بدقة.
 
 ## اعتبارات الأداء
 ### تحسين الأداء
-- Limit query scope by specifying folder paths where possible.
-- Use asynchronous programming models to handle large datasets without blocking UI threads.
+- قم بتحديد نطاق الاستعلام عن طريق تحديد مسارات المجلد حيثما كان ذلك ممكنا.
+- استخدم نماذج البرمجة غير المتزامنة للتعامل مع مجموعات البيانات الكبيرة دون حظر مؤشرات ترابط واجهة المستخدم.
 
 ### إرشادات استخدام الموارد
-تخلص من `IEWSClient` objects properly:
+تخلص من `IEWSClient` الأشياء بشكل صحيح:
 ```csharp
 client.Dispose();
 ```
 
 ### أفضل الممارسات لإدارة الذاكرة
-- Implement error handling and logging for resource tracking.
-- Monitor application performance with profiling tools to identify bottlenecks.
+- تنفيذ معالجة الأخطاء وتسجيلها لتتبع الموارد.
+- قم بمراقبة أداء التطبيق باستخدام أدوات تحديد الملفات التعريفية لتحديد الاختناقات.
 
 ## خاتمة
 
-You've learned how to list all public folders in a .NET environment using Aspose.Email's EWS client, enhancing your ability to manage email data effectively within an Exchange server setup.
+لقد تعلمت كيفية إدراج جميع المجلدات العامة في بيئة .NET باستخدام عميل EWS الخاص بـ Aspose.Email، مما يعزز قدرتك على إدارة بيانات البريد الإلكتروني بشكل فعال ضمن إعداد خادم Exchange.
 
 **الخطوات التالية:**
 - استكشف الميزات الإضافية التي يوفرها Aspose.Email.
-- Integrate this functionality into larger applications or workflows.
+- دمج هذه الوظيفة في التطبيقات أو سير العمل الأكبر حجمًا.
 
-Ready to implement these solutions? Try the code on your system and explore further possibilities with Aspose.Email for .NET!
+هل أنت مستعد لتطبيق هذه الحلول؟ جرّب الكود على نظامك واستكشف إمكانيات أخرى مع Aspose.Email لـ .NET!
 
 ## قسم الأسئلة الشائعة
 
 ### الأسئلة الشائعة
-1. **What is EWS, and why use it with Aspose.Email?**
-   - Exchange Web Services (EWS) is a SOAP-based protocol allowing developers to interact with Microsoft Exchange mailboxes.
-2. **Can I list subfolders within public folders?**
-   - Yes, explore each folder's contents using recursive methods or by specifying the parent folder URI.
-3. **What should I do if my connection to EWS fails?**
-   - Verify credentials and network connectivity. Check firewall rules affecting Exchange server access.
-4. **How can I handle large numbers of folders efficiently?**
-   - Implement pagination in your retrieval logic for better resource management.
-5. **Are there other ways to interact with emails using Aspose.Email?**
-   - Yes, explore functionalities like email sending, receiving, and complex management tasks available through the library.
+1. **ما هو EWS، ولماذا نستخدمه مع Aspose.Email؟**
+   - Exchange Web Services (EWS) عبارة عن بروتوكول يعتمد على SOAP يسمح للمطورين بالتفاعل مع صناديق بريد Microsoft Exchange.
+2. **هل يمكنني إدراج المجلدات الفرعية داخل المجلدات العامة؟**
+   - نعم، استكشف محتويات كل مجلد باستخدام الطرق المتكررة أو عن طريق تحديد عنوان URI للمجلد الرئيسي.
+3. **ماذا يجب أن أفعل إذا فشل اتصالي بخدمة EWS؟**
+   - تحقق من بيانات الاعتماد واتصال الشبكة. تحقق من قواعد جدار الحماية التي تؤثر على الوصول إلى خادم Exchange.
+4. **كيف يمكنني التعامل مع عدد كبير من المجلدات بكفاءة؟**
+   - قم بتنفيذ الترقيم الصفحي في منطق الاسترجاع الخاص بك لإدارة الموارد بشكل أفضل.
+5. **هل هناك طرق أخرى للتفاعل مع رسائل البريد الإلكتروني باستخدام Aspose.Email؟**
+   - نعم، استكشف الوظائف مثل إرسال واستقبال البريد الإلكتروني ومهام الإدارة المعقدة المتوفرة من خلال المكتبة.
 
 ## موارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/net/)
@@ -174,7 +174,7 @@ Ready to implement these solutions? Try the code on your system and explore furt
 - [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
-Start managing your public folders with ease using Aspose.Email for .NET and boost your productivity today!
+ابدأ بإدارة مجلداتك العامة بكل سهولة باستخدام Aspose.Email لـ .NET وعزز إنتاجيتك اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

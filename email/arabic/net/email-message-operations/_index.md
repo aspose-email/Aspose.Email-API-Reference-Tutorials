@@ -1,6 +1,6 @@
 ---
-"description": "Learn how to create, load, save, and convert email messages between formats (EML, MSG, MHTML) with these Aspose.Email for Java tutorials."
-"title": "Email Message Operations Tutorials with Aspose.Email for Java"
+"description": "تعرف على كيفية إنشاء رسائل البريد الإلكتروني وتحميلها وحفظها وتحويلها بين التنسيقات (EML وMSG وMHTML) باستخدام دروس Aspose.Email لـ Java هذه."
+"title": "دروس تعليمية حول عمليات رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java"
 "url": "/ar/net/email-message-operations/"
 "weight": 2
 ---
@@ -10,113 +10,113 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Email Message Operations Tutorials with Aspose.Email for Java
+# دروس تعليمية حول عمليات رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java
 
-Our email message operations tutorials provide comprehensive guidance for handling email files programmatically in Java. Follow these step-by-step guides to learn how to create new email messages, open existing files from various sources, save in different formats, and convert between popular email formats. These practical tutorials include complete code examples for message conversion, email properties management, and optimization techniques to build robust email processing applications in Java.
+توفر دروسنا التعليمية حول عمليات رسائل البريد الإلكتروني إرشادات شاملة للتعامل مع ملفات البريد الإلكتروني برمجيًا باستخدام جافا. اتبع هذه الإرشادات خطوة بخطوة لتتعلم كيفية إنشاء رسائل بريد إلكتروني جديدة، وفتح ملفات موجودة من مصادر مختلفة، وحفظها بتنسيقات مختلفة، والتحويل بين تنسيقات البريد الإلكتروني الشائعة. تتضمن هذه الدروس العملية أمثلة برمجية شاملة لتحويل الرسائل، وإدارة خصائص البريد الإلكتروني، وتقنيات التحسين لبناء تطبيقات معالجة بريد إلكتروني فعّالة باستخدام جافا.
 
 ## البرامج التعليمية المتاحة
 
-### [Aspose.Email for .NET: How to Create and Configure Emails Efficiently](./aspose-email-for-net-create-configure-emails/)
-Learn how to create and configure email messages with Aspose.Email for .NET. This guide covers setting up emails, configuring properties, and saving in multiple formats.
+### [Aspose.Email لـ .NET: كيفية إنشاء رسائل البريد الإلكتروني وتكوينها بكفاءة](./aspose-email-for-net-create-configure-emails/)
+تعرّف على كيفية إنشاء رسائل البريد الإلكتروني وتكوينها باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إعداد رسائل البريد الإلكتروني، وتكوين خصائصها، وحفظها بتنسيقات متعددة.
 
-### [Automate Email Management in .NET with Aspose.Email: A Comprehensive Guide for Exchange Server Integration](./automate-email-management-aspose-dotnet/)
-Learn how to automate email management using Aspose.Email for .NET. This guide covers initializing an Exchange client, retrieving mailbox info, filtering emails, and moving messages seamlessly.
+### [أتمتة إدارة البريد الإلكتروني في .NET باستخدام Aspose.Email: دليل شامل لتكامل Exchange Server](./automate-email-management-aspose-dotnet/)
+تعرّف على كيفية أتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل تهيئة عميل Exchange، واسترجاع معلومات صندوق البريد، وتصفية رسائل البريد الإلكتروني، ونقل الرسائل بسلاسة.
 
-### [Convert EML to MSG Easily with Aspose.Email for .NET: A Step-by-Step Guide](./convert-eml-msg-aspose-email-dotnet/)
-Learn how to convert EML files to MSG format using Aspose.Email for .NET. This step-by-step guide covers setup, loading, and saving emails efficiently.
+### [تحويل EML إلى MSG بسهولة باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./convert-eml-msg-aspose-email-dotnet/)
+تعرّف على كيفية تحويل ملفات EML إلى صيغة MSG باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل خطوة بخطوة إعداد رسائل البريد الإلكتروني وتحميلها وحفظها بكفاءة.
 
-### [Convert EML to MSG Using Aspose.Email .NET: A Step-by-Step Guide](./convert-eml-to-msg-aspose-email-net/)
-Learn how to seamlessly convert EML files to Outlook's MSG format using Aspose.Email for .NET. This comprehensive guide covers setup, conversion steps, and troubleshooting tips.
+### [تحويل EML إلى MSG باستخدام Aspose.Email .NET: دليل خطوة بخطوة](./convert-eml-to-msg-aspose-email-net/)
+تعرّف على كيفية تحويل ملفات EML بسلاسة إلى صيغة MSG في Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل خطوات الإعداد والتحويل ونصائح استكشاف الأخطاء وإصلاحها.
 
-### [Convert EML to MSG with HTML Body Using Aspose.Email for .NET: A Comprehensive Guide](./convert-eml-to-msg-html-aspose-email-net/)
-Learn how to convert emails from EML to MSG format using Aspose.Email, ensuring the body remains in HTML. This guide covers setup, conversion steps, and troubleshooting tips.
+### [تحويل EML إلى MSG مع نص HTML باستخدام Aspose.Email لـ .NET: دليل شامل](./convert-eml-to-msg-html-aspose-email-net/)
+تعرّف على كيفية تحويل رسائل البريد الإلكتروني من صيغة EML إلى صيغة MSG باستخدام Aspose.Email، مع ضمان بقاء النص بتنسيق HTML. يغطي هذا الدليل الإعداد وخطوات التحويل ونصائح استكشاف الأخطاء وإصلاحها.
 
-### [Create & Save Draft Emails Using Aspose.Email for .NET: A Step-by-Step Guide](./create-save-draft-emails-aspose-dotnet/)
-Learn how to automate email creation and save drafts efficiently with Aspose.Email for .NET. This guide covers setting up, creating emails, converting them to drafts, and troubleshooting.
+### [إنشاء مسودات رسائل البريد الإلكتروني وحفظها باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./create-save-draft-emails-aspose-dotnet/)
+تعرّف على كيفية أتمتة إنشاء البريد الإلكتروني وحفظ المسودات بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل إعداد رسائل البريد الإلكتروني وإنشائها وتحويلها إلى مسودات واستكشاف الأخطاء وإصلاحها.
 
-### [Export Email to EML Format Using Aspose.Email for .NET: A Step-by-Step Guide](./export-email-to-eml-format-aspose-net/)
-Learn how to efficiently export emails to EML format using Aspose.Email for .NET. This step-by-step guide covers setup, implementation, and best practices.
+### [تصدير البريد الإلكتروني إلى تنسيق EML باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./export-email-to-eml-format-aspose-net/)
+تعرّف على كيفية تصدير رسائل البريد الإلكتروني بكفاءة إلى تنسيق EML باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل خطوة بخطوة عملية الإعداد والتنفيذ وأفضل الممارسات.
 
-### [Extract and Analyze Outlook MSG File Details Using Aspose.Email for .NET](./aspose-email-net-extract-outlook-msg-details/)
-Learn how to use Aspose.Email for .NET to extract details from Outlook MSG files, including subjects, senders, recipients, and attachments. Perfect for email management automation.
+### [استخراج وتحليل تفاصيل ملف MSG في Outlook باستخدام Aspose.Email لـ .NET](./aspose-email-net-extract-outlook-msg-details/)
+تعرّف على كيفية استخدام Aspose.Email لـ .NET لاستخراج تفاصيل من ملفات Outlook MSG، بما في ذلك العناوين والمُرسِلين والمستلمين والمرفقات. مثالي لأتمتة إدارة البريد الإلكتروني.
 
-### [How to Create Emails Using Aspose.Email for .NET: A Comprehensive Guide](./create-emails-aspose-email-net-guide/)
-Master creating and managing emails programmatically with Aspose.Email for .NET. Learn step-by-step to enhance your application's email capabilities.
+### [كيفية إنشاء رسائل بريد إلكتروني باستخدام Aspose.Email لـ .NET: دليل شامل](./create-emails-aspose-email-net-guide/)
+أتقن إنشاء وإدارة رسائل البريد الإلكتروني برمجيًا باستخدام Aspose.Email لـ .NET. تعلّم خطوة بخطوة كيفية تحسين إمكانيات البريد الإلكتروني في تطبيقك.
 
-### [How to Create and Configure Email Messages Using Aspose.Email for .NET](./create-emails-aspose-email-net/)
-Learn how to create, configure, and save email messages using Aspose.Email for .NET with this comprehensive tutorial. Streamline your email management tasks efficiently.
+### [كيفية إنشاء رسائل البريد الإلكتروني وتكوينها باستخدام Aspose.Email لـ .NET](./create-emails-aspose-email-net/)
+تعرّف على كيفية إنشاء رسائل البريد الإلكتروني وتكوينها وحفظها باستخدام Aspose.Email لـ .NET من خلال هذا البرنامج التعليمي الشامل. بسّط مهام إدارة بريدك الإلكتروني بكفاءة.
 
-### [How to Create and Save Email Replies Using Aspose.Email for .NET | Guide & Tutorial](./create-save-email-replies-aspose-email-net/)
-Learn how to automate email replies with Aspose.Email for .NET. This guide covers setting up, creating, configuring, and saving reply messages efficiently.
+### [كيفية إنشاء وحفظ ردود البريد الإلكتروني باستخدام Aspose.Email لـ .NET | دليل ودروس تعليمية](./create-save-email-replies-aspose-email-net/)
+تعرّف على كيفية أتمتة ردود البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل إعداد رسائل الرد وإنشائها وتكوينها وحفظها بكفاءة.
 
-### [How to Load EML, HTML, MHTML, and MSG Files Using Aspose.Email for .NET](./aspose-email-net-load-email-formats/)
-Learn how to efficiently load and manage various email formats like EML, HTML, MHTML, and MSG in your .NET applications with Aspose.Email. This guide covers setup, implementation, and practical uses.
+### [كيفية تحميل ملفات EML وHTML وMHTML وMSG باستخدام Aspose.Email لـ .NET](./aspose-email-net-load-email-formats/)
+تعرّف على كيفية تحميل وإدارة تنسيقات البريد الإلكتروني المختلفة بكفاءة، مثل EML وHTML وMHTML وMSG، في تطبيقات .NET باستخدام Aspose.Email. يغطي هذا الدليل الإعداد والتنفيذ والاستخدامات العملية.
 
-### [How to Load Email Messages from Byte Arrays Using Aspose.Email for .NET](./loading-email-messages-byte-arrays-aspose-dotnet/)
-Learn how to efficiently load email messages from byte arrays in .NET using Aspose.Email, with step-by-step guidance and best practices.
+### [كيفية تحميل رسائل البريد الإلكتروني من مصفوفات البايت باستخدام Aspose.Email لـ .NET](./loading-email-messages-byte-arrays-aspose-dotnet/)
+تعرف على كيفية تحميل رسائل البريد الإلكتروني بكفاءة من مجموعات البايتات في .NET باستخدام Aspose.Email، مع إرشادات خطوة بخطوة وأفضل الممارسات.
 
-### [How to Load and Display Email Properties Using Aspose.Email for .NET | Step-by-Step Guide](./aspose-email-load-display-properties-dotnet/)
-Learn how to efficiently load and display email properties like Subject, From, To, and Cc using Aspose.Email for .NET. This guide provides a comprehensive tutorial with code examples.
+### [كيفية تحميل وعرض خصائص البريد الإلكتروني باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة](./aspose-email-load-display-properties-dotnet/)
+تعلّم كيفية تحميل وعرض خصائص البريد الإلكتروني بكفاءة، مثل "الموضوع" و"من" و"إلى" و"نسخة كربونية"، باستخدام Aspose.Email لـ .NET. يوفر هذا الدليل شرحًا شاملاً مع أمثلة برمجية.
 
-### [How to Load and Modify MSG Files Using Aspose.Email for .NET - Step-by-Step Guide](./aspose-email-dotnet-load-modify-msg-files/)
-Learn how to efficiently load, modify, and save MSG files using Aspose.Email for .NET. This step-by-step guide covers all the essentials for email message manipulation.
+### [كيفية تحميل ملفات MSG وتعديلها باستخدام Aspose.Email لـ .NET - دليل خطوة بخطوة](./aspose-email-dotnet-load-modify-msg-files/)
+تعرّف على كيفية تحميل ملفات MSG وتعديلها وحفظها بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التفصيلي جميع أساسيات معالجة رسائل البريد الإلكتروني.
 
-### [How to Load and Save EML Files with Aspose.Email for .NET: A Comprehensive Guide](./mastering-aspose-email-loading-saving-eml-files/)
-Learn how to efficiently load, process, and save EML files using Aspose.Email for .NET. This guide covers everything from setup to advanced email operations.
+### [كيفية تحميل ملفات EML وحفظها باستخدام Aspose.Email لـ .NET: دليل شامل](./mastering-aspose-email-loading-saving-eml-files/)
+تعرّف على كيفية تحميل ملفات EML ومعالجتها وحفظها بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل كل شيء، من الإعداد إلى عمليات البريد الإلكتروني المتقدمة.
 
-### [How to Load and Save Emails as MHTML Using Aspose.Email for .NET](./load-save-emails-mhtml-aspose-dotnet/)
-Learn how to efficiently load and save emails in MHTML format using Aspose.Email for .NET, ensuring consistent display across platforms.
+### [كيفية تحميل وحفظ رسائل البريد الإلكتروني بتنسيق MHTML باستخدام Aspose.Email لـ .NET](./load-save-emails-mhtml-aspose-dotnet/)
+تعرف على كيفية تحميل رسائل البريد الإلكتروني وحفظها بكفاءة بتنسيق MHTML باستخدام Aspose.Email لـ .NET، مما يضمن عرضًا متسقًا عبر الأنظمة الأساسية.
 
-### [How to Read Outlook .msg Files Using Aspose.Email for .NET: A Complete Guide](./read-outlook-msg-aspose-email-net/)
-Learn how to read and process Outlook .msg files using Aspose.Email for .NET. Discover step-by-step tutorials with code examples, covering setup, reading messages, and extracting data efficiently.
+### [كيفية قراءة ملفات Outlook .msg باستخدام Aspose.Email لـ .NET: دليل شامل](./read-outlook-msg-aspose-email-net/)
+تعرّف على كيفية قراءة ومعالجة ملفات Outlook .msg باستخدام Aspose.Email لـ .NET. اكتشف دروسًا تعليمية خطوة بخطوة مع أمثلة برمجية، تغطي الإعداد وقراءة الرسائل واستخراج البيانات بكفاءة.
 
-### [How to Save Emails as MHTML in .NET Using Aspose.Email - A Step-by-Step Guide](./save-emails-mhtml-net-aspose-email/)
-Learn how to efficiently save emails as MHT files using Aspose.Email for .NET with customizable rendering options.
+### [كيفية حفظ رسائل البريد الإلكتروني بتنسيق MHTML في .NET باستخدام Aspose.Email - دليل خطوة بخطوة](./save-emails-mhtml-net-aspose-email/)
+تعرف على كيفية حفظ رسائل البريد الإلكتروني بكفاءة كملفات MHT باستخدام Aspose.Email لـ .NET مع خيارات عرض قابلة للتخصيص.
 
-### [How to Save Emails to Disk Without Parsing Using Aspose.Email .NET and Pop3Client](./save-emails-disk-aspose-email-net-pop3client/)
-Learn how to save emails directly to disk using Aspose.Email's Pop3Client in .NET, preserving original structure without parsing. Boost your email management efficiency.
+### [كيفية حفظ رسائل البريد الإلكتروني على القرص دون تحليل باستخدام Aspose.Email .NET وPop3Client](./save-emails-disk-aspose-email-net-pop3client/)
+تعرّف على كيفية حفظ رسائل البريد الإلكتروني مباشرةً على القرص باستخدام Pop3Client من Aspose.Email في .NET، مع الحفاظ على هيكلها الأصلي دون الحاجة إلى تحليل. عزّز كفاءة إدارة بريدك الإلكتروني.
 
-### [How to Save an Email as an Outlook Template (.OFT) Using Aspose.Email for .NET](./save-email-outlook-template-aspose-email-net/)
-Learn how to automate your email workflows by saving emails as templates using Aspose.Email for .NET. Streamline communication and create customizable templates with ease.
+### [كيفية حفظ بريد إلكتروني كقالب Outlook (.OFT) باستخدام Aspose.Email لـ .NET](./save-email-outlook-template-aspose-email-net/)
+تعرّف على كيفية أتمتة سير عمل بريدك الإلكتروني عن طريق حفظ رسائل البريد الإلكتروني كقوالب باستخدام Aspose.Email لـ .NET. سهّل التواصل وأنشئ قوالب قابلة للتخصيص بسهولة.
 
-### [Load and Display Email Content Using Aspose.Email for .NET: A Comprehensive Guide](./load-display-emails-aspose-email-net/)
-Learn how to effectively load and display email text and RTF bodies in .NET applications using Aspose.Email. This tutorial covers setup, code examples, and practical use cases.
+### [تحميل وعرض محتوى البريد الإلكتروني باستخدام Aspose.Email لـ .NET: دليل شامل](./load-display-emails-aspose-email-net/)
+تعلّم كيفية تحميل وعرض نصوص البريد الإلكتروني ونصوص RTF بفعالية في تطبيقات .NET باستخدام Aspose.Email. يغطي هذا البرنامج التعليمي الإعداد، وأمثلة التعليمات البرمجية، وحالات الاستخدام العملية.
 
-### [Load and Display Email Recipients Using Aspose.Email for .NET: A Comprehensive Guide](./tutorial-load-display-email-recipients-aspose-email-dotnet/)
-Learn how to use Aspose.Email for .NET to efficiently load and display email recipient information with this step-by-step guide.
+### [تحميل وعرض مستلمي البريد الإلكتروني باستخدام Aspose.Email لـ .NET: دليل شامل](./tutorial-load-display-email-recipients-aspose-email-dotnet/)
+تعرف على كيفية استخدام Aspose.Email لـ .NET لتحميل معلومات مستلم البريد الإلكتروني وعرضها بكفاءة من خلال هذا الدليل خطوة بخطوة.
 
-### [Loading EML into MailMessage Using Aspose.Email for .NET: A Step-by-Step Guide](./load-eml-mailmessage-aspose-email-net/)
-Learn how to efficiently load an EML file into a MailMessage object using Aspose.Email for .NET. This guide covers setup, implementation, and practical applications.
+### [تحميل EML في MailMessage باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./load-eml-mailmessage-aspose-email-net/)
+تعرّف على كيفية تحميل ملف EML بكفاءة إلى كائن MailMessage باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية.
 
-### [Master EML File Handling in .NET Using Aspose.Email: A Step-by-Step Guide](./master-eml-handling-net-aspose-email-guide/)
-Learn how to efficiently handle EML files in .NET with Aspose.Email. This guide covers loading, saving, and tracking progress for seamless email data management.
+### [إتقان التعامل مع ملفات EML في .NET باستخدام Aspose.Email: دليل خطوة بخطوة](./master-eml-handling-net-aspose-email-guide/)
+تعرّف على كيفية التعامل بكفاءة مع ملفات EML في .NET باستخدام Aspose.Email. يغطي هذا الدليل التحميل والحفظ وتتبع التقدم لإدارة بيانات البريد الإلكتروني بسلاسة.
 
-### [Master Email File Management in .NET with Aspose.Email: Attachments and Inline Images Extraction Guide](./mastering-email-file-management-aspose-dotnet/)
-Learn how to efficiently manage email files, extract attachments, and inline images using Aspose.Email for .NET. Boost your development workflow today!
+### [إتقان إدارة ملفات البريد الإلكتروني في .NET باستخدام Aspose.Email: دليل استخراج المرفقات والصور المضمنة](./mastering-email-file-management-aspose-dotnet/)
+تعلّم كيفية إدارة ملفات البريد الإلكتروني بكفاءة، واستخراج المرفقات، والصور المضمنة باستخدام Aspose.Email لـ .NET. عزّز سير عمل التطوير لديك اليوم!
 
-### [Master Email Handling: Load and Save Emails with Aspose.Email .NET](./guide-loading-saving-emails-aspose-email-dotnet/)
-Learn how to load EML files and save them as MSG using Aspose.Email for .NET while preserving original timestamps. Enhance your email management skills today.
+### [إتقان التعامل مع البريد الإلكتروني: تحميل وحفظ رسائل البريد الإلكتروني باستخدام Aspose.Email .NET](./guide-loading-saving-emails-aspose-email-dotnet/)
+تعلّم كيفية تحميل ملفات EML وحفظها بتنسيق MSG باستخدام Aspose.Email لـ .NET مع الحفاظ على الطوابع الزمنية الأصلية. طوّر مهاراتك في إدارة البريد الإلكتروني اليوم.
 
-### [Master Email Management in .NET: Import EML Files and Configure SMTP with Aspose.Email](./master-email-management-aspose-email-dotnet/)
-Learn how to efficiently import EML files into MailMessage objects and configure SMTP clients using Aspose.Email for .NET, streamlining email management tasks.
+### [إتقان إدارة البريد الإلكتروني في .NET: استيراد ملفات EML وتكوين SMTP باستخدام Aspose.Email](./master-email-management-aspose-email-dotnet/)
+تعرف على كيفية استيراد ملفات EML بكفاءة إلى كائنات MailMessage وتكوين عملاء SMTP باستخدام Aspose.Email لـ .NET، مما يؤدي إلى تبسيط مهام إدارة البريد الإلكتروني.
 
-### [Master Email Management with Aspose.Email .NET: Create, Append, and Manage Custom Flags in IMAP Mailboxes](./mastering-email-management-asposeemail-net/)
-Learn how to efficiently manage emails using Aspose.Email for .NET. This guide covers creating, appending, and managing custom flags in IMAP mailboxes with practical C# examples.
+### [إتقان إدارة البريد الإلكتروني باستخدام Aspose.Email .NET: إنشاء وإضافة وإدارة علامات مخصصة في صناديق بريد IMAP](./mastering-email-management-asposeemail-net/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني بكفاءة باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إنشاء وإضافة وإدارة علامات مخصصة في صناديق بريد IMAP مع أمثلة عملية بلغة C#.
 
-### [Master Email Management with Aspose.Email for .NET: Load and Check Bounced Emails & Configure POP3](./aspose-email-net-load-check-bounced-pop3/)
-Learn to manage bounced emails efficiently and configure a secure POP3 client using Aspose.Email for .NET. Enhance your email operations with this comprehensive guide.
+### [إدارة البريد الإلكتروني باحترافية مع Aspose.Email لـ .NET: تحميل رسائل البريد الإلكتروني المرتدة والتحقق منها وتكوين بروتوكول POP3](./aspose-email-net-load-check-bounced-pop3/)
+تعلّم كيفية إدارة رسائل البريد الإلكتروني المرتدة بكفاءة وتكوين عميل POP3 آمن باستخدام Aspose.Email لـ .NET. حسّن عمليات بريدك الإلكتروني مع هذا الدليل الشامل.
 
-### [Master Email Management: Load PST Files and Customize MAPI Properties with Aspose.Email .NET](./aspose-email-net-load-pst-customize-mapi-properties/)
-Learn how to effectively manage email data using Aspose.Email for .NET by loading PST files and customizing MAPI properties. Enhance your .NET applications today.
+### [إدارة البريد الإلكتروني الرئيسية: تحميل ملفات PST وتخصيص خصائص MAPI باستخدام Aspose.Email .NET](./aspose-email-net-load-pst-customize-mapi-properties/)
+تعرّف على كيفية إدارة بيانات البريد الإلكتروني بفعالية باستخدام Aspose.Email لـ .NET من خلال تحميل ملفات PST وتخصيص خصائص MAPI. حسّن تطبيقات .NET لديك اليوم.
 
-### [Master Loading and Saving EML Files with Aspose.Email for .NET | Step-by-Step Guide](./load-save-eml-files-aspose-email-dotnet/)
-Learn how to efficiently load and save EML files using Aspose.Email for .NET. This step-by-step guide covers installation, implementation, and practical uses.
+### [إتقان تحميل ملفات EML وحفظها باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة](./load-save-eml-files-aspose-email-dotnet/)
+تعرّف على كيفية تحميل ملفات EML وحفظها بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل خطوة بخطوة التثبيت والتنفيذ والاستخدامات العملية.
 
-### [Mastering Email Management: Connect and Filter Emails Using Aspose.Email for .NET](./aspose-email-net-pop3-filtering-guide/)
-Learn how to automate email management with Aspose.Email for .NET by connecting to POP3 servers and filtering emails efficiently.
+### [إتقان إدارة البريد الإلكتروني: ربط رسائل البريد الإلكتروني وتصفيتها باستخدام Aspose.Email لـ .NET](./aspose-email-net-pop3-filtering-guide/)
+تعرف على كيفية أتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email لـ .NET من خلال الاتصال بخوادم POP3 وتصفية رسائل البريد الإلكتروني بكفاءة.
 
-### [Mastering Exchange Email Management with Aspose.Email .NET: A Complete Guide](./aspose-email-dotnet-exchange-management-guide/)
-Learn how to streamline email operations in Microsoft Exchange using Aspose.Email for .NET. This guide covers initialization, message loading, and sending emails.
+### [إتقان إدارة البريد الإلكتروني Exchange باستخدام Aspose.Email .NET: دليل شامل](./aspose-email-dotnet-exchange-management-guide/)
+تعرّف على كيفية تبسيط عمليات البريد الإلكتروني في Microsoft Exchange باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التهيئة، وتحميل الرسائل، وإرسالها.
 
 ## موارد إضافية
 

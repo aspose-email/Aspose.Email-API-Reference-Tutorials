@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently manage and query user-created folders in Outlook PST files using the Aspose.Email library with this comprehensive guide."
-"title": "How to Query and Display User-Created Folders in Outlook PST Using Aspose.Email for Java"
+"description": "تعرف على كيفية إدارة المجلدات التي ينشئها المستخدمون والاستعلام عنها بكفاءة في ملفات Outlook PST باستخدام مكتبة Aspose.Email من خلال هذا الدليل الشامل."
+"title": "كيفية الاستعلام عن المجلدات التي أنشأها المستخدم وعرضها في Outlook PST باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/outlook-pst-ost-operations/query-display-folders-outlook-pst-aspose-email-java/"
 "weight": 1
 ---
@@ -11,33 +11,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Query and Display User-Created Folders in Outlook PST Using Aspose.Email for Java
+# كيفية الاستعلام عن المجلدات التي أنشأها المستخدم وعرضها في Outlook PST باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Managing email data can be challenging, especially when dealing with complex Outlook PST files. This tutorial will help you efficiently query and display folders created by a specific user using **Aspose.Email for Java**.
+قد تكون إدارة بيانات البريد الإلكتروني صعبة، خاصةً عند التعامل مع ملفات Outlook PST المعقدة. سيساعدك هذا البرنامج التعليمي على الاستعلام عن المجلدات التي أنشأها مستخدم معين وعرضها بكفاءة باستخدام **Aspose.Email لـ Java**.
 
 من خلال اتباع هذا الدليل، سوف تتعلم كيفية:
-- Set up Aspose.Email for Java
-- Query folders based on creation criteria
-- Display folder information effectively
+- إعداد Aspose.Email لـ Java
+- استعلام عن المجلدات بناءً على معايير الإنشاء
+- عرض معلومات المجلد بشكل فعال
 
-Let's start with the prerequisites!
+دعونا نبدأ بالمتطلبات الأساسية!
 
 ### المتطلبات الأساسية
 
-Before implementing this solution, ensure you have:
-- **Java Development Kit (JDK) 8 or higher**: Essential for running Java applications.
-- **Aspose.Email for Java library**: Downloadable via Maven or directly from Aspose.
-- **Basic understanding of Java and file handling**: Familiarity with core concepts will aid comprehension.
+قبل تنفيذ هذا الحل، تأكد من أن لديك:
+- **مجموعة تطوير Java (JDK) 8 أو أعلى**:ضروري لتشغيل تطبيقات Java.
+- **Aspose.Email لمكتبة Java**:يمكن تنزيله عبر Maven أو مباشرة من Aspose.
+- **فهم أساسي لجافا ومعالجة الملفات**:إن الإلمام بالمفاهيم الأساسية سيساعد على الفهم.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To start querying your Outlook PST files, you need to set up the Aspose.Email for Java library. Here’s how:
+لبدء استعلام ملفات Outlook PST، عليك إعداد مكتبة Aspose.Email لـ Java. إليك الطريقة:
 
-### Maven Setup
+### إعداد Maven
 
-Add the following dependency to your `pom.xml` file if you're using Maven:
+أضف التبعية التالية إلى ملفك `pom.xml` الملف إذا كنت تستخدم Maven:
 
 ```xml
 <dependency>
@@ -50,21 +50,21 @@ Add the following dependency to your `pom.xml` file if you're using Maven:
 
 ### الحصول على الترخيص
 
-Aspose offers various licensing options, including a free trial and purchase licenses for full access:
+توفر Aspose خيارات ترخيص مختلفة، بما في ذلك نسخة تجريبية مجانية وتراخيص شراء للوصول الكامل:
 - **نسخة تجريبية مجانية**:تحميل من [إصدارات Aspose](https://releases.aspose.com/email/java/) لاستكشاف الميزات.
 - **شراء الترخيص**:للاستخدام طويل الأمد، قم بشراء اشتراك في [شراء Aspose](https://purchase.aspose.com/buy).
 
 #### التهيئة الأساسية
 
-Here's how you can initialize and set up Aspose.Email:
+إليك كيفية تهيئة Aspose.Email وإعداده:
 
 ```java
-// Import necessary classes from Aspose.Email library
+// استيراد الفئات الضرورية من مكتبة Aspose.Email
 import com.aspose.email.*;
 
 public class SetupExample {
     public static void main(String[] args) {
-        // Initialize License if available
+        // قم بتهيئة الترخيص إذا كان متاحًا
         License license = new License();
         try {
             license.setLicense("path/to/your/license.lic");
@@ -72,50 +72,50 @@ public class SetupExample {
             System.out.println("License not set, running in trial mode.");
         }
         
-        // Proceed with your application logic here
+        // تابع منطق التطبيق الخاص بك هنا
     }
 }
 ```
 
 ## دليل التنفيذ
 
-Now that you have Aspose.Email for Java set up, let’s implement the feature to query and display folders created by a specific user.
+الآن بعد أن قمت بإعداد Aspose.Email لـ Java، فلنبدأ في تنفيذ الميزة للاستعلام عن المجلدات التي أنشأها مستخدم معين وعرضها.
 
-### Feature Overview
+### نظرة عامة على الميزات
 
-This feature allows you to filter and list only those folders in an Outlook PST file that were created by the current user. It's particularly useful for users who need to manage their email data more efficiently.
+تتيح لك هذه الميزة تصفية وسرد المجلدات التي أنشأها المستخدم الحالي فقط في ملف Outlook PST. وهي مفيدة بشكل خاص للمستخدمين الذين يحتاجون إلى إدارة بيانات بريدهم الإلكتروني بكفاءة أكبر.
 
 #### الخطوة 1: تحميل ملف PST
 
-First, load your PST file using Aspose.Email:
+أولاً، قم بتحميل ملف PST الخاص بك باستخدام Aspose.Email:
 
 ```java
-// Define the directory containing your PST files
+// قم بتحديد الدليل الذي يحتوي على ملفات PST الخاصة بك
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 
 // تحميل ملف PST
 PersonalStorage pst = PersonalStorage.fromFile(dataDir + "Outlook.pst");
 ```
 
-#### Step 2: Create a Query Builder
+#### الخطوة 2: إنشاء منشئ الاستعلامات
 
-Set up a query builder to filter folders created by the current user:
+إعداد منشئ الاستعلامات لتصفية المجلدات التي أنشأها المستخدم الحالي:
 
 ```java
-// Initialize the query builder
+// تهيئة منشئ الاستعلام
 PersonalStorageQueryBuilder queryBuilder = new PersonalStorageQueryBuilder();
 queryBuilder.getOnlyFoldersCreatedByUser().equals(true);
 ```
 
-#### Step 3: Retrieve and Display Folders
+#### الخطوة 3: استرداد المجلدات وعرضها
 
-Use the query builder to fetch subfolders that match your criteria, then iterate through them to display folder names:
+استخدم منشئ الاستعلامات لجلب المجلدات الفرعية التي تتطابق مع معاييرك، ثم قم بالتكرار خلالها لعرض أسماء المجلدات:
 
 ```java
-// Get folders based on the query
+// الحصول على المجلدات بناءً على الاستعلام
 FolderInfoCollection subfolders = pst.getRootFolder().getSubFolders(queryBuilder.getQuery());
 
-// Iterate and print folder names
+// تكرار وطباعة أسماء المجلدات
 for (FolderInfo folder : subfolders) {
     System.out.println(folder.getDisplayName());
 }
@@ -123,62 +123,62 @@ for (FolderInfo folder : subfolders) {
 
 #### الخطوة 4: التخلص من الموارد
 
-Ensure that resources are properly released after use:
+تأكد من تحرير الموارد بشكل صحيح بعد الاستخدام:
 
 ```java
 finally {
-    // Dispose of the PST object to free resources
+    // التخلص من كائن PST لتحرير الموارد
     pst.dispose();
 }
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- **Common Issues**: Ensure your PST file path is correct. Check if Aspose.Email is correctly configured in your project.
-- **Permissions**: Make sure you have read permissions for the PST file.
+- **القضايا الشائعة**تأكد من صحة مسار ملف PST. تأكد من صحة تكوين Aspose.Email في مشروعك.
+- **الأذونات**:تأكد من حصولك على أذونات القراءة لملف PST.
 
 ## التطبيقات العملية
 
-This feature can be integrated into various applications, such as:
-1. **أنظمة إدارة البريد الإلكتروني**: Automate folder organization based on user creation.
-2. **Data Analysis Tools**: Quickly access folders created by a specific user for data analysis tasks.
-3. **حلول الأرشفة**: Identify and archive only the folders you've created.
+يمكن دمج هذه الميزة في تطبيقات مختلفة، مثل:
+1. **أنظمة إدارة البريد الإلكتروني**:أتمتة تنظيم المجلد استنادًا إلى إنشاء المستخدم.
+2. **أدوات تحليل البيانات**:يمكنك الوصول بسرعة إلى المجلدات التي أنشأها مستخدم معين لمهام تحليل البيانات.
+3. **حلول الأرشفة**:قم بتحديد وأرشفة المجلدات التي قمت بإنشائها فقط.
 
 ## اعتبارات الأداء
 
-When working with large PST files, consider these tips:
-- **تحسين الاستعلامات**: Use precise queries to minimize resource usage.
-- **Manage Memory**: Ensure efficient memory management by disposing of objects properly.
-- **معالجة الدفعات**: If dealing with very large datasets, process data in batches to avoid memory overflow.
+عند العمل مع ملفات PST كبيرة، ضع هذه النصائح في الاعتبار:
+- **تحسين الاستعلامات**:استخدم الاستعلامات الدقيقة لتقليل استخدام الموارد.
+- **إدارة الذاكرة**:تأكد من إدارة الذاكرة بكفاءة عن طريق التخلص من الكائنات بشكل صحيح.
+- **معالجة الدفعات**:إذا كنت تتعامل مع مجموعات بيانات كبيرة جدًا، فقم بمعالجة البيانات على دفعات لتجنب تجاوز سعة الذاكرة.
 
 ## خاتمة
 
-By now, you should have a solid understanding of how to query and display folders created by a specific user using Aspose.Email for Java. This functionality can significantly enhance your email management workflows.
+الآن، يجب أن يكون لديك فهمٌ متعمقٌ لكيفية الاستعلام عن المجلدات التي أنشأها مستخدمٌ مُحدد وعرضها باستخدام Aspose.Email لجافا. تُحسّن هذه الميزة سير عمل إدارة بريدك الإلكتروني بشكلٍ ملحوظ.
 
-To further explore Aspose.Email’s capabilities, consider diving into their extensive documentation and experimenting with different features. Don't forget to try implementing this solution in your projects!
+لاستكشاف إمكانيات Aspose.Email بشكل أعمق، ننصحك بالاطلاع على وثائقه الشاملة وتجربة ميزات مختلفة. لا تنسَ تجربة تطبيق هذا الحل في مشاريعك!
 
 ## قسم الأسئلة الشائعة
 
-1. **What is Aspose.Email for Java?**
-   - A comprehensive library for handling email formats, including PST files.
+1. **ما هو Aspose.Email لـ Java؟**
+   - مكتبة شاملة للتعامل مع تنسيقات البريد الإلكتروني، بما في ذلك ملفات PST.
    
-2. **How do I set up Aspose.Email using Maven?**
-   - Add the dependency snippet provided above to your `pom.xml`.
-3. **Can this solution be used with other email clients?**
-   - Yes, but you'll need to adjust file paths and potentially use different methods for non-Outlook formats.
-4. **What if I encounter an error while loading my PST file?**
-   - Verify the path is correct and ensure your Aspose.Email library is correctly configured.
-5. **How can I get support with Aspose.Email issues?**
+2. **كيف أقوم بإعداد Aspose.Email باستخدام Maven؟**
+   - أضف مقتطف التبعية المقدم أعلاه إلى ملفك `pom.xml`.
+3. **هل يمكن استخدام هذا الحل مع عملاء البريد الإلكتروني الآخرين؟**
+   - نعم، ولكنك ستحتاج إلى تعديل مسارات الملفات وربما استخدام طرق مختلفة للتنسيقات غير الخاصة بـ Outlook.
+4. **ماذا لو واجهت خطأ أثناء تحميل ملف PST الخاص بي؟**
+   - تأكد من صحة المسار وتأكد من تكوين مكتبة Aspose.Email بشكل صحيح.
+5. **كيف يمكنني الحصول على الدعم بشأن مشكلات Aspose.Email؟**
    - يزور [منتدى دعم Aspose](https://forum.aspose.com/c/email/10) للحصول على المساعدة.
 
 ## موارد
 
-- التوثيق: [Aspose Email Java API](https://reference.aspose.com/email/java/)
+- التوثيق: [واجهة برمجة تطبيقات Java لـ Aspose Email](https://reference.aspose.com/email/java/)
 - تحميل: [إصدارات Aspose](https://releases.aspose.com/email/java/)
 - شراء: [شراء منتجات Aspose](https://purchase.aspose.com/buy)
-- نسخة تجريبية مجانية: [Download Trial](https://releases.aspose.com/email/java/)
+- نسخة تجريبية مجانية: [تنزيل النسخة التجريبية](https://releases.aspose.com/email/java/)
 
-By following this guide, you can leverage the power of Aspose.Email for Java to manage your Outlook PST files more effectively!
+من خلال اتباع هذا الدليل، يمكنك الاستفادة من قوة Aspose.Email لـ Java لإدارة ملفات Outlook PST الخاصة بك بشكل أكثر فعالية!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Master Aspose.Email for Java by setting up an IMAP client with secure protocols, building queries, and leveraging read-only mode. Ideal for automating email tasks in Java applications."
-"title": "Aspose.Email Java IMAP Setup&#58; Secure Configuration and Usage Guide for Developers"
+"description": "أتقن استخدام Aspose.Email لجافا من خلال إعداد عميل IMAP ببروتوكولات آمنة، وبناء استعلامات، والاستفادة من وضع القراءة فقط. مثالي لأتمتة مهام البريد الإلكتروني في تطبيقات جافا."
+"title": "دليل إعداد واستخدام Aspose.Email Java IMAP الآمن للمطورين"
 "url": "/ar/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email Java IMAP Setup: Secure Configuration and Usage Guide for Developers
+# إعداد Aspose.Email Java IMAP: دليل التكوين والاستخدام الآمن للمطورين
 
 **مقدمة**
 
-In today's digital world, managing emails programmatically is essential for many businesses and developers. Automating email processing or integrating IMAP-based functionalities into your applications requires a robust client setup. This guide will help you configure an IMAP client using Aspose.Email for Java with a focus on security, query building, and read-only operations.
+في عالمنا الرقمي اليوم، تُعدّ إدارة رسائل البريد الإلكتروني برمجيًا أمرًا بالغ الأهمية للعديد من الشركات والمطورين. تتطلب أتمتة معالجة البريد الإلكتروني أو دمج وظائف IMAP في تطبيقاتك إعدادًا قويًا للعميل. سيساعدك هذا الدليل على تكوين عميل IMAP باستخدام Aspose.Email لـ Java مع التركيز على الأمان وبناء الاستعلامات وعمليات القراءة فقط.
 
-This comprehensive guide covers:
-- Setting up the Aspose.Email library in your Java project
-- Configuring an IMAP client with secure protocols
-- Building queries to fetch unread messages
-- Utilizing read-only mode effectively
+يغطي هذا الدليل الشامل ما يلي:
+- إعداد مكتبة Aspose.Email في مشروع Java الخاص بك
+- تكوين عميل IMAP باستخدام بروتوكولات آمنة
+- إنشاء استعلامات لجلب الرسائل غير المقروءة
+- استخدام وضع القراءة فقط بشكل فعال
 
-Let's dive into setting up Aspose.Email for Java and explore its powerful features.
+دعنا نتعمق في إعداد Aspose.Email لـ Java ونستكشف ميزاته القوية.
 
 **المتطلبات الأساسية**
 
 قبل البدء، تأكد من أن لديك ما يلي:
-- **Java Development Kit (JDK):** Version 16 or higher is recommended.
-- **Maven:** For managing dependencies in your project.
-- **مكتبة Aspose.Email:** The latest version from Maven Central.
-- **Basic Java Knowledge:** Familiarity with Java programming and a basic understanding of email protocols, especially IMAP.
+- **مجموعة تطوير Java (JDK):** يوصى باستخدام الإصدار 16 أو أعلى.
+- **مافن:** لإدارة التبعيات في مشروعك.
+- **مكتبة Aspose.Email:** الإصدار الأحدث من Maven Central.
+- **المعرفة الأساسية بلغة جافا:** المعرفة ببرمجة Java والفهم الأساسي لبروتوكولات البريد الإلكتروني، وخاصة IMAP.
 
-**Setting Up Aspose.Email for Java**
+**إعداد Aspose.Email لـ Java**
 
-To use Aspose.Email for Java, include it in your project. If using Maven, add the following dependency to your `pom.xml` file:
+لاستخدام Aspose.Email لجافا، أدرجه في مشروعك. إذا كنت تستخدم Maven، فأضف التبعية التالية إلى مشروعك: `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -48,13 +48,13 @@ To use Aspose.Email for Java, include it in your project. If using Maven, add th
 
 **الحصول على الترخيص**
 
-Aspose.Email requires a license for full functionality. Obtain a temporary license or purchase one from the Aspose website by following these steps:
+يتطلب Aspose.Email ترخيصًا للاستفادة الكاملة من جميع وظائفه. احصل على ترخيص مؤقت أو اشترِ ترخيصًا من موقع Aspose الإلكتروني باتباع الخطوات التالية:
 1. يزور [نسخة تجريبية مجانية من Aspose](https://releases.aspose.com/email/java/).
-2. Follow instructions to download and apply your temporary license.
+2. اتبع التعليمات لتنزيل ترخيصك المؤقت وتطبيقه.
 
 **التهيئة الأساسية**
 
-After setting up your project, initialize the library with basic configurations:
+بعد إعداد مشروعك، قم بتهيئة المكتبة باستخدام التكوينات الأساسية:
 
 ```java
 import com.aspose.email.License;
@@ -63,7 +63,7 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-This setup ensures you can leverage all Aspose.Email functionalities.
+يضمن هذا الإعداد إمكانية الاستفادة من كافة وظائف Aspose.Email.
 
 **دليل التنفيذ**
 
@@ -71,7 +71,7 @@ This setup ensures you can leverage all Aspose.Email functionalities.
 
 **ملخص**
 
-Configuring an IMAP client involves setting up the server connection, specifying security protocols, and initializing authentication details. This section demonstrates establishing a secure connection using TLS encryption.
+يتضمن تكوين عميل IMAP إعداد اتصال الخادم، وتحديد بروتوكولات الأمان، وتهيئة تفاصيل المصادقة. يوضح هذا القسم إنشاء اتصال آمن باستخدام تشفير TLS.
 
 #### الخطوة 1: إنشاء مثيل ImapClient
 
@@ -83,18 +83,18 @@ import com.aspose.email.SecurityOptions;
 ImapClient imapClient = new ImapClient();
 ```
 
-**توضيح:** ال `ImapClient` class is your gateway to interacting with an IMAP server. It manages connections and provides methods for various email operations.
+**توضيح:** ال `ImapClient` الفئة هي بوابتك للتفاعل مع خادم IMAP. فهي تُدير الاتصالات وتوفر أساليب لعمليات البريد الإلكتروني المختلفة.
 
-#### Step 2: Configure Host, Port, and Credentials
+#### الخطوة 2: تكوين المضيف والمنفذ وبيانات الاعتماد
 
 ```java
 imapClient.setHost("<HOST>");
-imapClient.setPort(993); // Default secure port for IMAP
+imapClient.setPort(993); // المنفذ الآمن الافتراضي لـ IMAP
 imapClient.setUsername("<USERNAME>");
 imapClient.setPassword("<PASSWORD>");
 ```
 
-**توضيح:** These settings connect your client to the email server securely. Replace `<HOST>`، `<USERNAME>`، و `<PASSWORD>` with actual values.
+**توضيح:** تربط هذه الإعدادات عميلك بخادم البريد الإلكتروني بشكل آمن. استبدل `<HOST>`، `<USERNAME>`، و `<PASSWORD>` مع القيم الفعلية.
 
 #### الخطوة 3: تعيين خيارات الأمان
 
@@ -103,15 +103,15 @@ imapClient.setSupportedEncryption(EncryptionProtocols.Tls);
 imapClient.setSecurityOptions(SecurityOptions.SSLImplicit);
 ```
 
-**توضيح:** TLS (Transport Layer Security) encrypts data during transmission, protecting it from eavesdropping. The `SSLImplicit` option specifies the use of SSL/TLS for implicit encryption.
+**توضيح:** يقوم بروتوكول TLS (أمان طبقة النقل) بتشفير البيانات أثناء النقل، مما يحميها من التنصت. `SSLImplicit` يحدد الخيار استخدام SSL/TLS للتشفير الضمني.
 
-### IMAP Query Builder
+### منشئ استعلامات IMAP
 
 **ملخص**
 
-Building queries allows fetching specific emails based on criteria such as read/unread status. This section guides you through creating a query to retrieve unread messages only.
+يتيح لك إنشاء الاستعلامات جلب رسائل بريد إلكتروني محددة بناءً على معايير مثل حالة القراءة/عدم القراءة. يرشدك هذا القسم إلى كيفية إنشاء استعلام لجلب الرسائل غير المقروءة فقط.
 
-#### Step 1: Initialize ImapQueryBuilder
+#### الخطوة 1: تهيئة ImapQueryBuilder
 
 ```java
 import com.aspose.email.ImapQueryBuilder;
@@ -121,32 +121,32 @@ import com.aspose.email.ImapMessageFlags;
 ImapQueryBuilder imapQueryBuilder = new ImapQueryBuilder();
 ```
 
-**توضيح:** ال `ImapQueryBuilder` class helps construct queries using a fluent interface, making it easier to define complex search criteria.
+**توضيح:** ال `ImapQueryBuilder` تساعد الفئة في إنشاء الاستعلامات باستخدام واجهة سلسة، مما يجعل من الأسهل تحديد معايير البحث المعقدة.
 
-#### Step 2: Define Query for Unread Messages
+#### الخطوة 2: تحديد الاستعلام للرسائل غير المقروءة
 
 ```java
 imapQueryBuilder.hasNoFlags(ImapMessageFlags.isRead());
 MailQuery query = imapQueryBuilder.getQuery();
 ```
 
-**توضيح:** This configuration retrieves messages that do not have the "read" flag set, effectively filtering for unread emails.
+**توضيح:** يسترجع هذا التكوين الرسائل التي لا تحتوي على علامة "قراءة" مضبوطة، مما يؤدي إلى تصفية رسائل البريد الإلكتروني غير المقروءة بشكل فعال.
 
-### Set ReadOnly Mode and Select Folder
+### تعيين وضع القراءة فقط وتحديد المجلد
 
 **ملخص**
 
-Setting your IMAP client to read-only mode is crucial when you only need to fetch data without altering server content. This section demonstrates how to select a folder and list messages in read-only mode.
+يُعدّ ضبط عميل IMAP على وضع القراءة فقط أمرًا بالغ الأهمية عندما تحتاج فقط إلى جلب البيانات دون تغيير محتوى الخادم. يوضح هذا القسم كيفية تحديد مجلد وعرض الرسائل في وضع القراءة فقط.
 
-#### Step 1: Enable Read-Only Mode
+#### الخطوة 1: تمكين وضع القراءة فقط
 
 ```java
 imapClient.setReadOnly(true);
 ```
 
-**توضيح:** Enabling read-only mode ensures no changes are made to the email server, such as marking emails as read or deleting them.
+**توضيح:** يؤدي تمكين وضع القراءة فقط إلى ضمان عدم إجراء أي تغييرات على خادم البريد الإلكتروني، مثل وضع علامة على رسائل البريد الإلكتروني كمقروءة أو حذفها.
 
-#### Step 2: Select Inbox Folder and List Messages
+#### الخطوة 2: حدد مجلد البريد الوارد وقائمة الرسائل
 
 ```java
 import com.aspose.email.ImapMessageInfoCollection;
@@ -155,53 +155,53 @@ imapClient.selectFolder("Inbox");
 ImapMessageInfoCollection messageInfoCol = imapClient.listMessages(query);
 
 if (messageInfoCol.size() > 0) {
-    // Fetch the first unread message
+    // جلب أول رسالة غير مقروءة
     imapClient.fetchMessage(messageInfoCol.get_Item(0).getSequenceNumber());
     
-    // Re-list messages to confirm count remains unchanged
+    // أعد إدراج الرسائل للتأكد من بقاء العدد دون تغيير
     messageInfoCol = imapClient.listMessages(query);
 } else {
-    // Handle case where no unread messages are found
+    // التعامل مع الحالة التي لا يتم فيها العثور على رسائل غير مقروءة
 }
 ```
 
-**توضيح:** After selecting the "Inbox" folder, this setup lists all unread messages. The client fetches a message without altering its status due to read-only mode.
+**توضيح:** بعد تحديد مجلد "البريد الوارد"، يعرض هذا الإعداد جميع الرسائل غير المقروءة. يقوم العميل بجلب الرسالة دون تغيير حالتها بفضل وضع القراءة فقط.
 
 **التطبيقات العملية**
 
-Aspose.Email for Java can be used in various scenarios:
-1. **معالجة البريد الإلكتروني الآلية:** Fetch and process emails based on specific criteria.
-2. **حلول أرشفة البريد الإلكتروني:** Retrieve and store emails locally for compliance or backup purposes.
-3. **أنظمة الإشعارات:** Monitor incoming messages and trigger alerts or actions.
+يمكن استخدام Aspose.Email لـ Java في سيناريوهات مختلفة:
+1. **معالجة البريد الإلكتروني الآلية:** جلب ومعالجة رسائل البريد الإلكتروني استنادًا إلى معايير محددة.
+2. **حلول أرشفة البريد الإلكتروني:** استرداد رسائل البريد الإلكتروني وتخزينها محليًا لأغراض الامتثال أو النسخ الاحتياطي.
+3. **أنظمة الإشعارات:** راقب الرسائل الواردة وقم بتشغيل التنبيهات أو الإجراءات.
 
 **اعتبارات الأداء**
 
-To optimize performance with Aspose.Email, consider the following:
-- **معالجة الدفعات:** Handle multiple operations in a single session to reduce overhead.
-- **إدارة الموارد:** Properly close client connections to free resources.
-- **Java Memory Management:** Regularly monitor memory usage to prevent leaks and ensure efficient application operation.
+لتحسين الأداء مع Aspose.Email، ضع في اعتبارك ما يلي:
+- **معالجة الدفعات:** معالجة عمليات متعددة في جلسة واحدة لتقليل النفقات العامة.
+- **إدارة الموارد:** قم بإغلاق اتصالات العملاء بالموارد المجانية بشكل صحيح.
+- **إدارة ذاكرة جافا:** قم بمراقبة استخدام الذاكرة بشكل منتظم لمنع التسريبات وضمان تشغيل التطبيق بكفاءة.
 
 **خاتمة**
 
-You've explored setting up an IMAP client using Aspose.Email for Java, configuring it securely, building queries for specific email criteria, and utilizing read-only mode. This guide equips you with the tools needed to integrate robust email functionalities into your applications.
+لقد استكشفتَ إعداد عميل IMAP باستخدام Aspose.Email لـ Java، وتهيئته بشكل آمن، وبناء استعلامات لمعايير بريد إلكتروني محددة، واستخدام وضع القراءة فقط. يُزوِّدك هذا الدليل بالأدوات اللازمة لدمج وظائف بريد إلكتروني فعّالة في تطبيقاتك.
 
-For further exploration, consider experimenting with additional features like message manipulation or integration with other systems. Dive into the [وثائق Aspose](https://reference.aspose.com/email/java/) for more insights.
+لمزيد من الاستكشاف، فكّر في تجربة ميزات إضافية مثل معالجة الرسائل أو التكامل مع أنظمة أخرى. انغمس في [وثائق Aspose](https://reference.aspose.com/email/java/) لمزيد من الأفكار.
 
 **قسم الأسئلة الشائعة**
 
-1. **What is Aspose.Email for Java?**
-   - A library that facilitates email creation, sending, and retrieval in Java applications.
-2. **How do I set up an IMAP client with Aspose.Email?**
-   - Follow the setup steps outlined above to configure host, port, credentials, and security options.
-3. **Can I use Aspose.Email for large-scale email processing?**
-   - Yes, it's designed for both small and enterprise-level applications.
-4. **What are common issues when configuring an IMAP client?**
-   - Incorrect credentials or server settings can cause connection failures.
-5. **Where can I get support if I encounter problems?**
+1. **ما هو Aspose.Email لـ Java؟**
+   - مكتبة تسهل إنشاء البريد الإلكتروني وإرساله واسترجاعه في تطبيقات Java.
+2. **كيف أقوم بإعداد عميل IMAP مع Aspose.Email؟**
+   - اتبع خطوات الإعداد الموضحة أعلاه لتكوين المضيف والمنفذ وبيانات الاعتماد وخيارات الأمان.
+3. **هل يمكنني استخدام Aspose.Email لمعالجة البريد الإلكتروني على نطاق واسع؟**
+   - نعم، تم تصميمه للتطبيقات الصغيرة والكبيرة على حد سواء.
+4. **ما هي المشكلات الشائعة عند تكوين عميل IMAP؟**
+   - قد تتسبب بيانات الاعتماد أو إعدادات الخادم غير الصحيحة في حدوث فشل في الاتصال.
+5. **أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟**
    - قم بزيارة [منتدى دعم Aspose](https://forum.aspose.com/c/email/10) للحصول على المساعدة.
 
 **موارد**
-- التوثيق: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
+- التوثيق: [مرجع جافا لـ Aspose.Email](https://reference.aspose.com/email/java/)
 - تحميل:
 
 {{< /blocks/products/pf/tutorial-page-section >}}

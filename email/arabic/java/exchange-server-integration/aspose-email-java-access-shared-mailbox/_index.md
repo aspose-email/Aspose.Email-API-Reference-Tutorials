@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to access shared mailboxes and list emails in Java using Aspose.Email. Follow our step-by-step guide to integrate EWS smoothly."
-"title": "How to Access Shared Mailboxes Using Aspose.Email for Java&#58; A Complete Guide"
+"description": "تعرّف على كيفية الوصول إلى صناديق البريد المشتركة وقوائم البريد الإلكتروني في جافا باستخدام Aspose.Email. اتبع دليلنا خطوة بخطوة لدمج EWS بسلاسة."
+"title": "كيفية الوصول إلى صناديق البريد المشتركة باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/"
 "weight": 1
 ---
@@ -11,36 +11,36 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Access Shared Mailboxes Using Aspose.Email for Java: A Complete Guide
+# كيفية الوصول إلى صناديق البريد المشتركة باستخدام Aspose.Email لـ Java: دليل شامل
 
 ## مقدمة
 
-Struggling to manage emails programmatically using Exchange Web Services (EWS) in your Java applications? Many developers face challenges when trying to access shared mailbox contents efficiently. This guide explores how to use Aspose.Email for Java to seamlessly integrate with EWS, enabling you to create an EWS client and list emails from a shared mailbox.
+هل تواجه صعوبة في إدارة رسائل البريد الإلكتروني برمجيًا باستخدام خدمات Exchange Web Services (EWS) في تطبيقات Java؟ يواجه العديد من المطورين تحديات عند محاولة الوصول إلى محتويات صناديق البريد المشتركة بكفاءة. يستكشف هذا الدليل كيفية استخدام Aspose.Email لـ Java للتكامل بسلاسة مع خدمات Exchange Web Services، مما يتيح لك إنشاء عميل EWS وسرد رسائل البريد الإلكتروني من صندوق بريد مشترك.
 
 **ما سوف تتعلمه:**
-- Setting up and configuring Aspose.Email for Java
-- Accessing the EWS Client using credentials
-- Listing items from a shared mailbox's inbox
-- Fetching and displaying email subjects with ease
+- إعداد وتكوين Aspose.Email لـ Java
+- الوصول إلى عميل EWS باستخدام بيانات الاعتماد
+- إدراج العناصر من صندوق الوارد لصندوق بريد مشترك
+- جلب وعرض مواضيع البريد الإلكتروني بسهولة
 
-Let’s dive into how you can harness the power of Aspose.Email to simplify your email management tasks.
+دعونا نتعرف على كيفية الاستفادة من قوة Aspose.Email لتبسيط مهام إدارة البريد الإلكتروني لديك.
 
 ## المتطلبات الأساسية
-Before we begin, ensure that you have the following prerequisites in place:
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية لديك:
 
 ### المكتبات والتبعيات المطلوبة
-To work with Aspose.Email for Java, you'll need:
-- JDK 1.6 or later installed on your system.
-- Maven configured for dependency management (optional but recommended).
+للعمل مع Aspose.Email لـ Java، ستحتاج إلى:
+- تم تثبيت JDK 1.6 أو إصدار أحدث على نظامك.
+- تم تكوين Maven لإدارة التبعيات (اختياري ولكن موصى به).
 
 ### متطلبات إعداد البيئة
-Set up a development environment using an IDE like IntelliJ IDEA, Eclipse, or NetBeans.
+قم بإعداد بيئة تطوير باستخدام IDE مثل IntelliJ IDEA أو Eclipse أو NetBeans.
 
 ### متطلبات المعرفة
-Basic knowledge of Java programming and familiarity with email protocols will be beneficial.
+ستكون المعرفة الأساسية ببرمجة Java والتعرف على بروتوكولات البريد الإلكتروني مفيدة.
 
-## Setting Up Aspose.Email for Java
-To use Aspose.Email for Java, add the following Maven dependency:
+## إعداد Aspose.Email لـ Java
+لاستخدام Aspose.Email لـ Java، أضف تبعية Maven التالية:
 
 ```xml
 <dependency>
@@ -52,12 +52,12 @@ To use Aspose.Email for Java, add the following Maven dependency:
 ```
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية:** Start with a free trial to test Aspose.Email features.
-2. **رخصة مؤقتة:** Obtain a temporary license for full feature access without limitations.
-3. **شراء:** For long-term use, purchase a license from the [موقع Aspose](https://purchase.aspose.com/buy).
+1. **نسخة تجريبية مجانية:** ابدأ بإصدار تجريبي مجاني لاختبار ميزات Aspose.Email.
+2. **رخصة مؤقتة:** احصل على ترخيص مؤقت للوصول إلى الميزات الكاملة دون قيود.
+3. **شراء:** للاستخدام طويل الأمد، قم بشراء ترخيص من [موقع Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة والإعداد الأساسي
-Ensure you've imported necessary packages to begin working with Aspose.Email functionalities.
+تأكد من أنك قمت باستيراد الحزم اللازمة لبدء العمل مع وظائف Aspose.Email.
 
 ```java
 import com.aspose.email.EWSClient;
@@ -66,10 +66,10 @@ import com.aspose.email.system.NetworkCredential;
 ```
 
 ## دليل التنفيذ
-We'll break down the implementation into three core features: accessing the EWS client, listing emails from a shared mailbox, and fetching email subjects.
+سنقوم بتقسيم التنفيذ إلى ثلاث ميزات أساسية: الوصول إلى عميل EWS، وإدراج رسائل البريد الإلكتروني من صندوق بريد مشترك، وجلب مواضيع البريد الإلكتروني.
 
-### Accessing the EWS Client (Feature 1)
-**ملخص:** This feature demonstrates how to create an instance of the Exchange Web Services (EWS) client using your credentials.
+### الوصول إلى عميل EWS (الميزة 1)
+**ملخص:** توضح هذه الميزة كيفية إنشاء مثيل لعميل Exchange Web Services (EWS) باستخدام بيانات الاعتماد الخاصة بك.
 
 #### التنفيذ خطوة بخطوة
 ##### إنشاء بيانات اعتماد الشبكة
@@ -81,80 +81,80 @@ String password = "your_password";
 
 NetworkCredential credentials = new NetworkCredential(username, password, "");
 ```
-*توضيح:* ال `NetworkCredential` class is used to securely pass your login details.
+*توضيح:* ال `NetworkCredential` يتم استخدام الفئة لتمرير تفاصيل تسجيل الدخول الخاصة بك بشكل آمن.
 
 ##### تهيئة عميل EWS
 ```java
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-client.dispose(); // Always dispose of the client to free resources.
+client.dispose(); // تخلص دائمًا من العميل للحصول على الموارد المجانية.
 ```
-*توضيح:* This step initializes the connection to your mailbox using the provided URI and credentials. Don't forget to clean up resources after use.
+*توضيح:* تُهيئ هذه الخطوة الاتصال بصندوق بريدك باستخدام عنوان URI وبيانات الاعتماد المُقدمة. لا تنسَ تنظيف الموارد بعد الاستخدام.
 
-### Listing Items from Shared Mailbox Inbox (Feature 2)
-**ملخص:** Here we list all items in a shared mailbox's inbox using the EWS client.
+### إدراج العناصر من صندوق الوارد لصندوق البريد المشترك (الميزة 2)
+**ملخص:** نقوم هنا بإدراج جميع العناصر الموجودة في صندوق الوارد لصندوق بريد مشترك باستخدام عميل EWS.
 
 #### التنفيذ خطوة بخطوة
-##### List Emails
+##### قائمة رسائل البريد الإلكتروني
 ```java
 String sharedEmail = "shared_email@example.com";
 
-// Reuse the 'client' instance.
+// أعد استخدام مثيل "العميل".
 String[] items = client.listItems(sharedEmail, "Inbox");
 
 for (String item : items) {
-    // Each item can be further processed as needed.
+    // يمكن معالجة كل عنصر حسب الحاجة.
 }
 ```
-*توضيح:* ال `listItems` method retrieves email identifiers from the specified mailbox's inbox.
+*توضيح:* ال `listItems` تسترجع الطريقة معرفات البريد الإلكتروني من صندوق الوارد الخاص بصندوق البريد المحدد.
 
-### Fetching and Displaying Email Subject (Feature 3)
-**ملخص:** This feature shows how to fetch individual emails by their unique identifiers and display the subject lines.
+### جلب موضوع البريد الإلكتروني وعرضه (الميزة 3)
+**ملخص:** تُظهر هذه الميزة كيفية جلب رسائل البريد الإلكتروني الفردية من خلال معرفاتها الفريدة وعرض أسطر الموضوع.
 
 #### التنفيذ خطوة بخطوة
-##### Fetch Email Subjects
+##### جلب مواضيع البريد الإلكتروني
 ```java
 for (String item : items) {
     MapiMessage msg = client.fetchItem(item);
     String subject = msg.getSubject();
-    // Process or display the subject as needed.
+    // معالجة الموضوع أو عرضه حسب الحاجة.
 }
 ```
-*توضيح:* ال `fetchItem` method retrieves a complete email message, and you can access its properties like the subject.
+*توضيح:* ال `fetchItem` تسترجع هذه الطريقة رسالة بريد إلكتروني كاملة، ويمكنك الوصول إلى خصائصها مثل الموضوع.
 
 ## التطبيقات العملية
-1. **معالجة البريد الإلكتروني الآلية:** Use Aspose.Email to automate responses and process large volumes of emails efficiently.
-2. **التكامل مع أنظمة إدارة علاقات العملاء:** Seamlessly integrate email functionalities within your customer relationship management tools.
-3. **Shared Mailbox Management:** Administer shared mailboxes for teams or departments effectively.
+1. **معالجة البريد الإلكتروني الآلية:** استخدم Aspose.Email لأتمتة الردود ومعالجة كميات كبيرة من رسائل البريد الإلكتروني بكفاءة.
+2. **التكامل مع أنظمة إدارة علاقات العملاء:** دمج وظائف البريد الإلكتروني بسلاسة ضمن أدوات إدارة علاقات العملاء الخاصة بك.
+3. **إدارة صندوق البريد المشترك:** إدارة صناديق البريد المشتركة للفرق أو الأقسام بشكل فعال.
 
 ## اعتبارات الأداء
-- **Optimizing Resource Usage:** Always dispose of the EWS client to release resources promptly.
-- **Java Memory Management:** Regularly monitor and manage memory usage when dealing with large datasets.
-- **أفضل الممارسات:** Follow Aspose's best practices for handling email operations efficiently.
+- **تحسين استخدام الموارد:** قم دائمًا بالتخلص من عميل EWS لتحرير الموارد على الفور.
+- **إدارة ذاكرة جافا:** قم بمراقبة وإدارة استخدام الذاكرة بانتظام عند التعامل مع مجموعات البيانات الكبيرة.
+- **أفضل الممارسات:** اتبع أفضل ممارسات Aspose للتعامل مع عمليات البريد الإلكتروني بكفاءة.
 
 ## خاتمة
-In this guide, you've learned how to leverage Aspose.Email for Java to access and list emails using EWS. By following the outlined steps, you can integrate powerful email functionalities into your applications effortlessly. 
+في هذا الدليل، تعلمت كيفية استخدام Aspose.Email لـ Java للوصول إلى رسائل البريد الإلكتروني وإدراجها باستخدام EWS. باتباع الخطوات الموضحة، يمكنك دمج وظائف البريد الإلكتروني الفعّالة في تطبيقاتك بسهولة. 
 
-**الخطوات التالية:** Experiment with additional features provided by Aspose.Email, such as sending emails or managing calendar events.
+**الخطوات التالية:** جرّب الميزات الإضافية التي يوفرها Aspose.Email، مثل إرسال رسائل البريد الإلكتروني أو إدارة أحداث التقويم.
 
 ## قسم الأسئلة الشائعة
-1. **What is Aspose.Email for Java?**
-   - It's a robust library for handling email operations in Java applications.
+1. **ما هو Aspose.Email لـ Java؟**
+   - إنها مكتبة قوية للتعامل مع عمليات البريد الإلكتروني في تطبيقات Java.
 2. **كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Email؟**
-   - قم بزيارة [موقع Aspose](https://purchase.aspose.com/temporary-license/) to request a temporary license.
+   - قم بزيارة [موقع Aspose](https://purchase.aspose.com/temporary-license/) لطلب ترخيص مؤقت.
 3. **هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**
-   - Yes, it supports .NET, C++, and more.
+   - نعم، فهو يدعم .NET، وC++، والمزيد.
 4. **ما هي متطلبات النظام لاستخدام Aspose.Email؟**
-   - JDK 1.6 or later is required along with a compatible IDE.
-5. **Where can I find support if I encounter issues?**
-   - ال [منتدى Aspose](https://forum.aspose.com/c/email/10) is available for assistance and community support.
+   - يجب أن يكون لديك JDK 1.6 أو أحدث بالإضافة إلى IDE متوافق.
+5. **أين يمكنني العثور على الدعم إذا واجهت مشاكل؟**
+   - ال [منتدى Aspose](https://forum.aspose.com/c/email/10) متاح للمساعدة والدعم المجتمعي.
 
 ## موارد
-- **التوثيق:** Comprehensive guides at [وثائق Aspose](https://reference.aspose.com/email/java/)
-- **Download Aspose.Email:** احصل على أحدث إصدار من [صفحة الإصدارات](https://releases.aspose.com/email/java/)
-- **رخصة الشراء:** Acquire a license through [صفحة شراء Aspose](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية:** Test features via [Free Trial Downloads](https://releases.aspose.com/email/java/) 
+- **التوثيق:** أدلة شاملة في [وثائق Aspose](https://reference.aspose.com/email/java/)
+- **تنزيل Aspose.البريد الإلكتروني:** احصل على أحدث إصدار من [صفحة الإصدارات](https://releases.aspose.com/email/java/)
+- **رخصة الشراء:** الحصول على الترخيص من خلال [صفحة شراء Aspose](https://purchase.aspose.com/buy)
+- **نسخة تجريبية مجانية:** اختبار الميزات عبر [تنزيلات تجريبية مجانية](https://releases.aspose.com/email/java/) 
 
-Now that you're equipped with the knowledge, start implementing Aspose.Email in your Java projects today!
+الآن بعد أن أصبحت مجهزًا بالمعرفة، ابدأ في تنفيذ Aspose.Email في مشاريع Java الخاصة بك اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

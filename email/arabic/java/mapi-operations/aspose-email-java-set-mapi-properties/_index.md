@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently manage multiple properties in MAPI messages using Aspose.Email for Java. This guide covers setting float, double, long, and more types."
-"title": "Set Multiple MAPI Properties in Java with Aspose.Email&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إدارة خصائص متعددة بكفاءة في رسائل MAPI باستخدام Aspose.Email لـ Java. يتناول هذا الدليل إعداد أنواع float وdouble وlong وغيرها."
+"title": "تعيين خصائص MAPI متعددة في Java باستخدام Aspose.Email - دليل شامل"
 "url": "/ar/java/mapi-operations/aspose-email-java-set-mapi-properties/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Set Multiple MAPI Properties in Java with Aspose.Email: A Comprehensive Guide
+# تعيين خصائص MAPI متعددة في Java باستخدام Aspose.Email: دليل شامل
 
 ## مقدمة
 
-Managing MAPI message properties effectively is crucial for enhancing your Java applications. With Aspose.Email for Java, you can set multiple properties such as float, double, long, short, boolean, and custom properties seamlessly. This guide will walk you through various methods to achieve this.
+إدارة خصائص رسائل MAPI بفعالية أمرٌ بالغ الأهمية لتحسين تطبيقات Java. باستخدام Aspose.Email لـ Java، يمكنك ضبط خصائص متعددة، مثل float وdouble وlong وshort وboolean وcustom، بسلاسة. سيشرح لك هذا الدليل طرقًا مختلفة لتحقيق ذلك.
 
 **ما سوف تتعلمه:**
-- Setting multiple properties in MAPI messages using Aspose.Email Java
-- Understanding different property types and their uses
-- Practical code examples for implementation
+- تعيين خصائص متعددة في رسائل MAPI باستخدام Aspose.Email Java
+- فهم أنواع الممتلكات المختلفة واستخداماتها
+- أمثلة عملية على التعليمات البرمجية للتنفيذ
 
-Let’s start by covering the prerequisites.
+دعونا نبدأ بتغطية المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
-To follow along, ensure you have:
-- **Java Development Kit (JDK):** JDK 8 or later installed.
-- **مكتبة Aspose.Email:** Version 25.4 is recommended.
-- **Maven Setup:** Maven should be configured in your IDE for dependency management.
+للمتابعة، تأكد من أن لديك:
+- **مجموعة تطوير Java (JDK):** تم تثبيت JDK 8 أو إصدار أحدث.
+- **مكتبة Aspose.Email:** يوصى بالإصدار 25.4.
+- **إعداد Maven:** يجب تكوين Maven في IDE الخاص بك لإدارة التبعيات.
 
 ### المكتبات المطلوبة
 
-Include Aspose.Email as a dependency in your `pom.xml`:
+قم بتضمين Aspose.Email كتبعية في `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -45,34 +45,34 @@ Include Aspose.Email as a dependency in your `pom.xml`:
 
 ### الحصول على الترخيص
 - **نسخة تجريبية مجانية:** ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
-- **رخصة مؤقتة:** Obtain for extended testing without limitations.
-- **شراء:** Consider purchasing if it suits your needs.
+- **رخصة مؤقتة:** احصل على الاختبار الموسع دون قيود.
+- **شراء:** فكر في الشراء إذا كان يناسب احتياجاتك.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-Ensure Aspose.Email is correctly configured in your development environment:
-1. **Import Dependencies:** Resolve Maven dependencies.
-2. **Set License:**
-   - Download a license file from [أسبوزي](https://purchase.aspose.com/buy).
-   - Apply it using:
+تأكد من تكوين Aspose.Email بشكل صحيح في بيئة التطوير الخاصة بك:
+1. **استيراد التبعيات:** حل تبعيات Maven.
+2. **مجموعة الترخيص:**
+   - تنزيل ملف الترخيص من [أسبوزي](https://purchase.aspose.com/buy).
+   - قم بتطبيقه باستخدام:
      ```java
      com.aspose.email.License license = new com.aspose.email.License();
      license.setLicense("path/to/your/license.lic");
      ```
 
-With the setup complete, let’s explore how to set various properties.
+بعد اكتمال عملية الإعداد، دعنا نستكشف كيفية تعيين خصائص مختلفة.
 
 ## دليل التنفيذ
 
-### Setting Multiple Float Properties
+### تعيين خصائص تعويم متعددة
 
-Setting float properties allows efficient storage of numerical data:
+يتيح ضبط خصائص التعويم تخزين البيانات الرقمية بكفاءة:
 
 #### ملخص
-This feature demonstrates adding multiple float values as MAPI message properties using Aspose.Email for Java.
+تُظهر هذه الميزة كيفية إضافة قيم متعددة عائمة كخصائص رسالة MAPI باستخدام Aspose.Email لـ Java.
 
 #### خطوات
-1. **Create and Initialize the Message**
+1. **إنشاء الرسالة وتهيئتها**
    ```java
    import java.util.ArrayList;
    import com.aspose.email.MapiMessage;
@@ -81,188 +81,188 @@ This feature demonstrates adding multiple float values as MAPI message propertie
 
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Float Values to a List**
+2. **إضافة قيم عائمة إلى قائمة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem((float) 1);
    values.addItem((float) 2);
    ```
-3. **Set the Property with a Unique Identifier**
+3. **تعيين الخاصية باستخدام معرف فريد**
    ```java
    msg.setProperty(new MapiProperty(0x23901004, values));
    ```
-*توضيح:* The property tag `0x23901004` identifies this float property set.
+*توضيح:* علامة الملكية `0x23901004` يحدد مجموعة خصائص التعويم هذه.
 
-### Setting Multiple Double Properties
+### تعيين خصائص مزدوجة متعددة
 
-Double properties store high-precision floating-point numbers:
+تخزن الخصائص المزدوجة أرقامًا عائمة عالية الدقة:
 
 #### ملخص
-This section shows storing multiple double values as MAPI message properties.
+يوضح هذا القسم تخزين قيم مزدوجة متعددة كخصائص رسالة MAPI.
 
 #### خطوات
-1. **Initialize the Message**
+1. **تهيئة الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Populate Double Values**
+2. **ملء القيم المزدوجة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem((double) 1);
    values.addItem((double) 2);
    ```
-3. **Assign to Property Tag**
+3. **تعيين إلى علامة الخاصية**
    ```java
    msg.setProperty(new MapiProperty(0x23901005, values));
    ```
 
-### Setting Multiple APPTIME Properties
+### تعيين خصائص APPTIME المتعددة
 
-APPTIME properties store time durations efficiently:
+تخزن خصائص APPTIME فترات الوقت بكفاءة:
 
 #### ملخص
-This feature illustrates using double-precision numbers for time representations.
+توضح هذه الميزة استخدام أرقام ذات دقة مزدوجة لتمثيل الوقت.
 
 #### خطوات
-1. **Create Message Object**
+1. **إنشاء كائن الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Time Values**
+2. **إضافة قيم الوقت**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem(30456.34);
    values.addItem(40655.45);
    ```
-3. **Set the Property**
+3. **تعيين الخاصية**
    ```java
    msg.setProperty(new MapiProperty(0x23901007, values));
    ```
 
-### Setting Multiple Long Properties
+### تعيين خصائص طويلة متعددة
 
-Long properties are ideal for large integers:
+الخصائص الطويلة مثالية للأعداد الصحيحة الكبيرة:
 
 #### ملخص
-This feature focuses on setting multiple long integer values in a message.
+ترتكز هذه الميزة على تعيين قيم عددية صحيحة طويلة متعددة في رسالة.
 
 #### خطوات
-1. **Initialize MAPI Message**
+1. **تهيئة رسالة MAPI**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Long Values**
+2. **إضافة قيم طويلة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem((long) 30456);
    values.addItem((long) 40655);
    ```
-3. **Define Property Tag**
+3. **تعريف علامة الخاصية**
    ```java
    msg.setProperty(new MapiProperty(0x23901014, values));
    ```
 
-### Setting Multiple Short Properties
+### تعيين خصائص قصيرة متعددة
 
-Short properties store small integer data efficiently:
+تخزن الخصائص القصيرة بيانات الأعداد الصحيحة الصغيرة بكفاءة:
 
 #### ملخص
-This guide demonstrates setting short integers as message properties.
+يوضح هذا الدليل كيفية تعيين الأعداد الصحيحة القصيرة كخصائص للرسالة.
 
 #### خطوات
-1. **Initialize the Message**
+1. **تهيئة الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Short Values**
+2. **إضافة قيم قصيرة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem((short) 1);
    values.addItem((short) 2);
    ```
-3. **Assign Property Tag**
+3. **تعيين علامة الخاصية**
    ```java
    msg.setProperty(new MapiProperty(0x23901002, values));
    ```
 
-### Setting Multiple Boolean Properties
+### تعيين خصائص منطقية متعددة
 
-Boolean properties store true/false states:
+تخزن الخصائص المنطقية الحالات الصحيحة/الخاطئة:
 
 #### ملخص
-Learn how to set multiple boolean values in a message.
+تعرف على كيفية تعيين قيم منطقية متعددة في رسالة.
 
 #### خطوات
-1. **Create Message Object**
+1. **إنشاء كائن الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Boolean Values**
+2. **إضافة قيم منطقية**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem(true);
    values.addItem(false);
    ```
-3. **Set Property with Identifier**
+3. **تعيين الخاصية باستخدام المعرف**
    ```java
    msg.setProperty(new MapiProperty(0x2390100b, values));
    ```
 
-### Setting a Null Property
+### تعيين خاصية Null
 
-Explicitly setting a property as null can be useful:
+قد يكون من المفيد تعيين خاصية بشكل صريح على أنها null:
 
 #### ملخص
-This section demonstrates assigning a null value to a property.
+يوضح هذا القسم كيفية تعيين قيمة فارغة لخاصية.
 
 #### خطوات
-1. **Initialize the Message**
+1. **تهيئة الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Assign Null Property**
+2. **تعيين خاصية فارغة**
    ```java
    msg.setProperty(new MapiProperty(0x67400001, new byte[1]));
    ```
 
-### Setting Named Long Property with Custom ID and UUID
+### إعداد خاصية طويلة مسماة بمعرف مخصص وUUID
 
-For complex scenarios, set named properties:
+بالنسبة للسيناريوهات المعقدة، قم بتعيين الخصائص المسماة:
 
 #### ملخص
-This feature demonstrates setting a long property with a custom identifier and UUID.
+تُظهر هذه الميزة إعداد خاصية طويلة باستخدام معرف مخصص وUUID.
 
 #### خطوات
-1. **Initialize the Message**
+1. **تهيئة الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Add Long Values**
+2. **إضافة قيم طويلة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem((int) 4);
    UUID uuid = UUID.randomUUID();
    ```
-3. **Create and Map Property**
+3. **إنشاء وتعيين الممتلكات على الخريطة**
    ```java
    MapiProperty property = new MapiProperty(msg.getNamedPropertyMapping().getNextAvailablePropertyId(com.aspose.email.MapiPropertyType.PT_MV_LONG), values);
    msg.getNamedPropertyMapping().addNamedPropertyMapping(property, (long) 0x00008028, uuid);
    msg.setProperty(property);
    ```
 
-### Setting Custom Property with Name
+### تعيين خاصية مخصصة بالاسم
 
-Custom properties can be named for easier identification:
+يمكن تسمية الخصائص المخصصة لتسهيل التعرف عليها:
 
 #### ملخص
-This guide shows setting custom-named properties.
+يوضح هذا الدليل كيفية إعداد الخصائص ذات الأسماء المخصصة.
 
 #### خطوات
-1. **Initialize Message Object**
+1. **تهيئة كائن الرسالة**
    ```java
    MapiMessage msg = new MapiMessage();
    ```
-2. **Define Custom Property**
+2. **تعريف خاصية مخصصة**
    ```java
    IList values = (IList) new ArrayList();
    values.addItem("Custom Value");
@@ -272,17 +272,17 @@ This guide shows setting custom-named properties.
    msg.getNamedPropertyMapping().addNamedPropertyMapping(property, "CustomName", uuid);
    ```
 
-### Setting and Validating Properties
+### تعيين الخصائص والتحقق من صحتها
 
-Ensuring properties are set correctly is crucial:
+إن التأكد من تعيين الخصائص بشكل صحيح أمر بالغ الأهمية:
 
 #### ملخص
-This section covers setting and validating multiple properties in MAPI messages.
+يغطي هذا القسم إعداد وتأكيد خصائص متعددة في رسائل MAPI.
 
 #### خطوات
-1. **Set Property**
-   Follow previous examples to set a property.
-2. **Validate Property**
+1. **تعيين الخاصية**
+   اتبع الأمثلة السابقة لتعيين خاصية.
+2. **التحقق من صحة الملكية**
    ```java
    if (msg.getProperties().containsKey(0x23901004)) {
        System.out.println("Property is set correctly.");
@@ -293,7 +293,7 @@ This section covers setting and validating multiple properties in MAPI messages.
 
 ## خاتمة
 
-This guide provided a comprehensive approach to managing multiple properties in MAPI messages using Aspose.Email for Java. By following these steps, you can efficiently store and manage various data types within your applications.
+يقدم هذا الدليل نهجًا شاملاً لإدارة خصائص متعددة في رسائل MAPI باستخدام Aspose.Email لـ Java. باتباع هذه الخطوات، يمكنك تخزين وإدارة أنواع بيانات مختلفة بكفاءة ضمن تطبيقاتك.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

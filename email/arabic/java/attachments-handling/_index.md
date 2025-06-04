@@ -1,6 +1,6 @@
 ---
-"description": "Step-by-step tutorials for working with email attachments, embedded objects, and file operations using Aspose.Email for Java."
-"title": "Email Attachments Handling Tutorials for Aspose.Email Java"
+"description": "دروس تعليمية خطوة بخطوة للعمل مع مرفقات البريد الإلكتروني والكائنات المضمنة وعمليات الملفات باستخدام Aspose.Email لـ Java."
+"title": "دروس تعليمية حول التعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email Java"
 "url": "/ar/java/attachments-handling/"
 "weight": 4
 ---
@@ -10,53 +10,53 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Email Attachments Handling Tutorials for Aspose.Email Java
+# دروس تعليمية حول التعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email Java
 
-Our attachments handling tutorials provide detailed guidance for working with email attachments in Java. Follow these practical guides to learn how to add, extract, remove, and save attachments from various message formats, work with inline and regular attachments, handle embedded objects, and implement advanced attachment operations. These tutorials include complete Java code examples for common attachment scenarios, helping you build applications that can effectively manage email attachments.
+توفر دروسنا التعليمية حول التعامل مع المرفقات إرشادات مفصلة للتعامل مع مرفقات البريد الإلكتروني بلغة جافا. اتبع هذه الأدلة العملية لتتعلم كيفية إضافة المرفقات واستخراجها وإزالتها وحفظها من مختلف تنسيقات الرسائل، والتعامل مع المرفقات المضمنة والعادية، ومعالجة الكائنات المضمنة، وتنفيذ عمليات متقدمة للمرفقات. تتضمن هذه الدروس أمثلة برمجية كاملة بلغة جافا لحالات المرفقات الشائعة، مما يساعدك على بناء تطبيقات لإدارة مرفقات البريد الإلكتروني بفعالية.
 
 ## البرامج التعليمية المتاحة
 
-### [Aspose.Email for Java: Efficiently Parse and Manage MSG Attachments](./aspose-email-java-master-msg-attachments-parsing/)
-Learn how to parse, save, and embed attachments in MSG files using Aspose.Email for Java. Master email management with ease.
+### [Aspose.Email لـ Java: تحليل مرفقات الرسائل وإدارتها بكفاءة](./aspose-email-java-master-msg-attachments-parsing/)
+تعلّم كيفية تحليل المرفقات وحفظها وتضمينها في ملفات MSG باستخدام Aspose.Email لجافا. أتقن إدارة البريد الإلكتروني بسهولة.
 
-### [Aspose.Email for Java: How to Parse and Save Email Attachments Efficiently](./aspose-email-java-parse-save-attachments/)
-Master email attachment handling with Aspose.Email for Java. Learn how to load, parse, and save attachments in your Java applications effectively.
+### [Aspose.Email لـ Java: كيفية تحليل مرفقات البريد الإلكتروني وحفظها بكفاءة](./aspose-email-java-parse-save-attachments/)
+أتقن التعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email لجافا. تعلّم كيفية تحميل المرفقات وتحليلها وحفظها في تطبيقات جافا بفعالية.
 
-### [Extract Email Attachments from PST Files using Aspose.Email for Java: A Step-by-Step Guide](./extract-email-attachments-pst-aspose-java/)
-Learn how to efficiently extract email attachments from PST files with Aspose.Email for Java. This comprehensive guide covers setup, loading PST files, and extracting attachments seamlessly.
+### [استخراج مرفقات البريد الإلكتروني من ملفات PST باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./extract-email-attachments-pst-aspose-java/)
+تعرّف على كيفية استخراج مرفقات البريد الإلكتروني بكفاءة من ملفات PST باستخدام Aspose.Email لجافا. يغطي هذا الدليل الشامل عملية الإعداد، وتحميل ملفات PST، واستخراج المرفقات بسلاسة.
 
-### [Extract Inline Attachments from MSG Files Using Aspose.Email in Java](./extract-inline-attachments-msg-files-java-aspose-email/)
-Master the art of extracting inline attachments from MSG files using Aspose.Email for Java. Learn step-by-step to handle Outlook email formats efficiently.
+### [استخراج المرفقات المضمنة من ملفات MSG باستخدام Aspose.Email في Java](./extract-inline-attachments-msg-files-java-aspose-email/)
+أتقن فن استخراج المرفقات المضمنة من ملفات MSG باستخدام Aspose.Email لجافا. تعلّم خطوة بخطوة كيفية التعامل بكفاءة مع تنسيقات بريد Outlook الإلكتروني.
 
-### [How to Build and Send Emails with Attachments Using Aspose.Email for Java](./build-send-emails-attachments-aspose-email-java/)
-Learn how to programmatically create and send emails with attachments using Aspose.Email for Java. This guide covers setup, email creation, and attachment handling.
+### [كيفية إنشاء رسائل البريد الإلكتروني وإرسالها مع المرفقات باستخدام Aspose.Email لـ Java](./build-send-emails-attachments-aspose-email-java/)
+تعرّف على كيفية إنشاء رسائل بريد إلكتروني مرفقة وإرسالها برمجيًا باستخدام Aspose.Email لجافا. يغطي هذا الدليل الإعداد، وإنشاء البريد الإلكتروني، ومعالجة المرفقات.
 
-### [How to Load and Inspect Email Attachments Using Aspose.Email for Java: A Developer's Guide](./aspose-email-java-load-inspect-attachments/)
-Learn how to efficiently load and inspect email attachments in Java applications using Aspose.Email. Discover practical solutions for handling embedded messages with our step-by-step guide.
+### [كيفية تحميل مرفقات البريد الإلكتروني وفحصها باستخدام Aspose.Email لـ Java: دليل المطور](./aspose-email-java-load-inspect-attachments/)
+تعلّم كيفية تحميل مرفقات البريد الإلكتروني وفحصها بكفاءة في تطبيقات جافا باستخدام Aspose.Email. اكتشف حلولاً عملية للتعامل مع الرسائل المضمنة من خلال دليلنا المفصل.
 
-### [How to Manage EML Attachments Using Aspose.Email for Java: A Complete Guide](./manage-eml-attachments-aspose-email-java/)
-Learn how to manage email attachments in Java with Aspose.Email. This guide covers loading, saving, and processing EML files effectively.
+### [كيفية إدارة مرفقات EML باستخدام Aspose.Email لـ Java: دليل شامل](./manage-eml-attachments-aspose-email-java/)
+تعرّف على كيفية إدارة مرفقات البريد الإلكتروني في جافا باستخدام Aspose.Email. يغطي هذا الدليل تحميل ملفات EML وحفظها ومعالجتها بفعالية.
 
-### [How to Retrieve Email Attachment Content Descriptions Using Aspose.Email for Java](./retrieve-email-attachment-content-descriptions-aspose-email-java/)
-Learn how to efficiently retrieve content descriptions from email attachments using Aspose.Email for Java. Enhance your workflow with this powerful email attachment handling solution.
+### [كيفية استرداد أوصاف محتوى مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ Java](./retrieve-email-attachment-content-descriptions-aspose-email-java/)
+تعرّف على كيفية استرجاع أوصاف المحتوى بكفاءة من مرفقات البريد الإلكتروني باستخدام Aspose.Email لجافا. حسّن سير عملك مع هذا الحل الفعّال لمعالجة مرفقات البريد الإلكتروني.
 
-### [Insert & Replace MSG Attachments Using Aspose.Email Java: A Comprehensive Guide](./mastering-attachment-manipulation-aspose-email-java/)
-Learn how to insert and replace MSG attachments using Aspose.Email for Java with step-by-step instructions, code examples, and best practices.
+### [إدراج واستبدال مرفقات الرسائل باستخدام Aspose.Email Java: دليل شامل](./mastering-attachment-manipulation-aspose-email-java/)
+تعرف على كيفية إدراج مرفقات MSG واستبدالها باستخدام Aspose.Email لـ Java مع إرشادات خطوة بخطوة وأمثلة التعليمات البرمجية وأفضل الممارسات.
 
-### [Master Aspose.Email Java: Handling TNEF Attachments and Conversion Techniques](./aspose-email-java-tnef-attachments-guide/)
-Learn how to manage email attachments, handle TNEF data, and convert formats with Aspose.Email for Java.
+### [إتقان Aspose.Email في Java: التعامل مع مرفقات TNEF وتقنيات التحويل](./aspose-email-java-tnef-attachments-guide/)
+تعرف على كيفية إدارة مرفقات البريد الإلكتروني ومعالجة بيانات TNEF وتحويل التنسيقات باستخدام Aspose.Email لـ Java.
 
-### [Master EML File Handling with TNEF Attachments Using Aspose.Email for Java](./aspose-email-java-eml-tnef-handling/)
-Learn how to effectively handle EML files with TNEF attachments using Aspose.Email in Java. This guide covers loading, updating, and saving processes.
+### [إتقان التعامل مع ملفات EML مع مرفقات TNEF باستخدام Aspose.Email لـ Java](./aspose-email-java-eml-tnef-handling/)
+تعرّف على كيفية التعامل بفعالية مع ملفات EML مع مرفقات TNEF باستخدام Aspose.Email في Java. يغطي هذا الدليل عمليات التحميل والتحديث والحفظ.
 
-### [Preserve TNEF Attachments in EML Files Using Aspose.Email for Java: A Comprehensive Guide](./preserve-tnef-attachments-eml-aspose-email-java/)
-Learn how to preserve TNEF attachments in EML files using Aspose.Email for Java. This guide covers setup, implementation, and troubleshooting with step-by-step instructions.
+### [حفظ مرفقات TNEF في ملفات EML باستخدام Aspose.Email لـ Java: دليل شامل](./preserve-tnef-attachments-eml-aspose-email-java/)
+تعرّف على كيفية حفظ مرفقات TNEF في ملفات EML باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد والتنفيذ واستكشاف الأخطاء وإصلاحها من خلال تعليمات خطوة بخطوة.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

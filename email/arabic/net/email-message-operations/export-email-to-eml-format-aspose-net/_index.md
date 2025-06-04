@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently export emails to EML format using Aspose.Email for .NET. This step-by-step guide covers setup, implementation, and best practices."
-"title": "Export Email to EML Format Using Aspose.Email for .NET&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية تصدير رسائل البريد الإلكتروني بكفاءة إلى تنسيق EML باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل خطوة بخطوة عملية الإعداد والتنفيذ وأفضل الممارسات."
+"title": "تصدير البريد الإلكتروني إلى تنسيق EML باستخدام Aspose.Email لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/email-message-operations/export-email-to-eml-format-aspose-net/"
 "weight": 1
 ---
@@ -11,38 +11,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Export Email to EML Format Using Aspose.Email for .NET: A Step-by-Step Guide
+# تصدير البريد الإلكتروني إلى تنسيق EML باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة
 
 ## مقدمة
 
-Managing email formats within your .NET applications can be challenging. With Aspose.Email for .NET, you can effortlessly export emails into EML format, enhancing workflows involving email processing, archiving, or data migration. This guide provides a comprehensive walkthrough of using Aspose.Email to load and save email messages in EML format.
+قد تكون إدارة تنسيقات البريد الإلكتروني ضمن تطبيقات .NET أمرًا صعبًا. مع Aspose.Email لـ .NET، يمكنك تصدير رسائل البريد الإلكتروني بسهولة إلى تنسيق EML، مما يُحسّن سير العمل المتعلق بمعالجة البريد الإلكتروني، والأرشفة، وترحيل البيانات. يقدم هذا الدليل شرحًا شاملًا لاستخدام Aspose.Email لتحميل وحفظ رسائل البريد الإلكتروني بتنسيق EML.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email لـ .NET في مشروعك
-- Loading an email from a .eml file
-- Saving the loaded email back into another .eml file
-- Optimizing performance while handling emails
+- تحميل بريد إلكتروني من ملف .eml
+- حفظ البريد الإلكتروني المحمّل مرة أخرى في ملف .eml آخر
+- تحسين الأداء أثناء التعامل مع رسائل البريد الإلكتروني
 
 لنبدأ بالتأكد من أن لديك كل ما تحتاجه للمتابعة.
 
 ## المتطلبات الأساسية
 
-To implement "Export Email to EML Format" using Aspose.Email for .NET, ensure these prerequisites are met:
+لتنفيذ "تصدير البريد الإلكتروني إلى تنسيق EML" باستخدام Aspose.Email لـ .NET، تأكد من استيفاء المتطلبات الأساسية التالية:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: Essential library for email processing in .NET applications.
-- **إطار عمل .NET/SDK**: Ensure compatibility with the version required by Aspose.Email.
+- **Aspose.Email لـ .NET**:مكتبة أساسية لمعالجة البريد الإلكتروني في تطبيقات .NET.
+- **إطار عمل .NET/SDK**:تأكد من التوافق مع الإصدار المطلوب بواسطة Aspose.Email.
 
 ### متطلبات إعداد البيئة
-- A code editor or IDE like Visual Studio.
-- Basic understanding of C# and file I/O operations.
+- محرر أكواد أو IDE مثل Visual Studio.
+- فهم أساسي للغة C# وعمليات إدخال وإخراج الملفات.
 
 ### متطلبات المعرفة
-- Familiarity with NuGet package management in .NET projects is beneficial.
+- إن المعرفة بإدارة حزمة NuGet في مشاريع .NET أمر مفيد.
 
 ## إعداد Aspose.Email لـ .NET
 
-Start by installing Aspose.Email within your project environment. Here's how:
+ابدأ بتثبيت Aspose.Email ضمن بيئة مشروعك. إليك الطريقة:
 
 **استخدام .NET CLI:**
 ```bash
@@ -59,12 +59,12 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-Aspose.Email can be used under a free trial to evaluate its features. For extended usage, consider obtaining a temporary or permanent license:
-- **نسخة تجريبية مجانية**: Start with a [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) لاستكشاف الوظائف الأساسية.
-- **رخصة مؤقتة**: Acquire a [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للمشاريع قصيرة الأجل.
+يمكنك استخدام Aspose.Email بفترة تجريبية مجانية لتقييم ميزاته. للاستخدام الممتد، يُنصح بالحصول على ترخيص مؤقت أو دائم:
+- **نسخة تجريبية مجانية**:ابدأ بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) لاستكشاف الوظائف الأساسية.
+- **رخصة مؤقتة**:احصل على [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للمشاريع قصيرة الأجل.
 - **شراء**:للاستخدام طويل الأمد، قم بشراء ترخيص من [متجر أسبووز](https://purchase.aspose.com/buy).
 
-Once you have your license file, initialize it in your project using:
+بمجرد حصولك على ملف الترخيص، قم بتهيئته في مشروعك باستخدام:
 ```csharp
 License license = new License();
 license.SetLicense("Path to Aspose.Email.lic");
@@ -72,15 +72,15 @@ license.SetLicense("Path to Aspose.Email.lic");
 
 ## دليل التنفيذ
 
-Now that setup is complete, let's implement exporting emails to EML format.
+الآن بعد اكتمال عملية الإعداد، دعنا ننفذ تصدير رسائل البريد الإلكتروني إلى تنسيق EML.
 
-### Feature Overview: Export Email to EML Format
+### نظرة عامة على الميزة: تصدير البريد الإلكتروني إلى تنسيق EML
 
-This feature allows you to load an existing email in .eml format and save it back as another .eml file. It’s useful for backup, archiving, or transforming data between different systems.
+تتيح لك هذه الميزة تحميل بريد إلكتروني موجود بصيغة .eml وحفظه كملف .eml آخر. وهي مفيدة للنسخ الاحتياطي، والأرشفة، ونقل البيانات بين أنظمة مختلفة.
 
-#### Step 1: Load the Email from a .Eml File
+#### الخطوة 1: تحميل البريد الإلكتروني من ملف .Eml
 
-First, load your email message:
+أولاً، قم بتحميل رسالة البريد الإلكتروني الخاصة بك:
 ```csharp
 using Aspose.Email.Mime;
 using System.IO;

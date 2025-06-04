@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to effectively manage Outlook categories using Aspose.Email for Java. This guide covers adding, retrieving, and removing categories programmatically."
-"title": "Manage Outlook Categories with Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إدارة فئات Outlook بفعالية باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إضافة الفئات واسترجاعها وإزالتها برمجيًا."
+"title": "إدارة فئات Outlook باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/calendar-appointments/manage-outlook-categories-aspose-email-java/"
 "weight": 1
 ---
@@ -11,28 +11,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Managing Outlook Categories with Aspose.Email for Java
+# إدارة فئات Outlook باستخدام Aspose.Email لـ Java
 
 ## مقدمة
-Managing categories in your Outlook messages can significantly enhance organization and retrieval efficiency—especially when dealing with a large volume of emails. With **Aspose.Email for Java**, you can easily add, retrieve, and remove categories from your Outlook messages programmatically. This comprehensive guide will walk you through managing these categories effectively using Aspose.Email.
+يمكن أن تُحسّن إدارة الفئات في رسائل Outlook كفاءة التنظيم والاسترجاع بشكل ملحوظ، خاصةً عند التعامل مع عدد كبير من رسائل البريد الإلكتروني. **Aspose.Email لـ Java**يمكنك بسهولة إضافة فئات إلى رسائل Outlook واسترجاعها وإزالتها برمجيًا. سيرشدك هذا الدليل الشامل إلى كيفية إدارة هذه الفئات بفعالية باستخدام Aspose.Email.
 
 ### ما سوف تتعلمه
-- How to add categories to an Outlook message
-- Retrieving a list of assigned categories
-- Removing specific or all categories from an email
-- Setting up Aspose.Email for Java in your environment
+- كيفية إضافة فئات إلى رسالة Outlook
+- استرجاع قائمة الفئات المعينة
+- إزالة فئات محددة أو جميعها من البريد الإلكتروني
+- إعداد Aspose.Email لـ Java في بيئتك
 
-Ready to streamline your email management? Let's dive into the prerequisites and get started!
+هل أنت مستعد لتبسيط إدارة بريدك الإلكتروني؟ لنبدأ بشرح المتطلبات الأساسية!
 
 ## المتطلبات الأساسية
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
-- **Aspose.Email for Java library**: Version 25.4 or later is recommended.
-- A development environment set up with JDK 16 or higher.
-- Basic understanding of working with email clients programmatically.
+- **Aspose.Email لمكتبة Java**:يوصى باستخدام الإصدار 25.4 أو الإصدار الأحدث.
+- بيئة تطوير تم إعدادها باستخدام JDK 16 أو أعلى.
+- فهم أساسيات العمل مع عملاء البريد الإلكتروني برمجيًا.
 
-## Setting Up Aspose.Email for Java
-### Maven Dependency
-To integrate Aspose.Email into your Java project, you can use the following Maven dependency:
+## إعداد Aspose.Email لـ Java
+### تبعية Maven
+لدمج Aspose.Email في مشروع Java الخاص بك، يمكنك استخدام تبعية Maven التالية:
 
 ```xml
 <dependency>
@@ -43,27 +43,27 @@ To integrate Aspose.Email into your Java project, you can use the following Mave
 </dependency>
 ```
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية**: Start with a free trial to evaluate the library’s capabilities.
-- **رخصة مؤقتة**: Obtain a temporary license for full access during your evaluation period.
-- **شراء**: If satisfied, you can purchase a subscription to continue using Aspose.Email.
+- **نسخة تجريبية مجانية**:ابدأ بفترة تجريبية مجانية لتقييم قدرات المكتبة.
+- **رخصة مؤقتة**:احصل على ترخيص مؤقت للوصول الكامل خلال فترة التقييم الخاصة بك.
+- **شراء**:إذا كنت راضيًا، فيمكنك شراء اشتراك لمواصلة استخدام Aspose.Email.
 
 ## دليل التنفيذ
-We'll explore each feature step-by-step: adding categories, retrieving them, removing specific ones, and clearing all categories from an Outlook message.
-### Adding Categories to an Outlook Message
-Adding categories helps in organizing emails efficiently. Here’s how you can do it:
+سنستكشف كل ميزة خطوة بخطوة: إضافة الفئات، واسترجاعها، وإزالة فئات محددة، ومسح جميع الفئات من رسالة Outlook.
+### إضافة فئات إلى رسالة Outlook
+تُساعد إضافة الفئات على تنظيم رسائل البريد الإلكتروني بكفاءة. إليك كيفية القيام بذلك:
 #### ملخص
-This section demonstrates adding multiple categories to a single Outlook email.
+يوضح هذا القسم كيفية إضافة فئات متعددة إلى بريد إلكتروني واحد في Outlook.
 #### خطوات
-1. **Load the Email**
+1. **تحميل البريد الإلكتروني**
    
    ```java
    import com.aspose.email.MapiMessage;
    
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
    ```
-2. **Add Categories**
+2. **إضافة فئات**
    
-   يستخدم `FollowUpManager.addCategory` to assign categories.
+   يستخدم `FollowUpManager.addCategory` لتعيين الفئات.
 
    ```java
    import com.aspose.email.FollowUpManager;
@@ -72,86 +72,86 @@ This section demonstrates adding multiple categories to a single Outlook email.
    FollowUpManager.addCategory(msg, "Red Category");
    ```
 #### توضيح
-- ال `MapiMessage.fromFile()` method loads the Outlook message from a specified file path.
-- `FollowUpManager.addCategory()` adds the specified category name to the email.
-### Retrieving Categories from an Outlook Message
-To retrieve categories assigned to an email:
+- ال `MapiMessage.fromFile()` تقوم الطريقة بتحميل رسالة Outlook من مسار ملف محدد.
+- `FollowUpManager.addCategory()` يضيف اسم الفئة المحددة إلى البريد الإلكتروني.
+### استرجاع الفئات من رسالة Outlook
+لاسترداد الفئات المخصصة للبريد الإلكتروني:
 #### ملخص
-This feature fetches all categories linked with a particular email message.
+تعمل هذه الميزة على جلب جميع الفئات المرتبطة برسالة بريد إلكتروني معينة.
 #### خطوات
-1. **Load the Email**
+1. **تحميل البريد الإلكتروني**
    
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
    ```
-2. **Retrieve Categories**
+2. **استرداد الفئات**
    
    ```java
    import com.aspose.email.system.collections.IList;
 
    IList categories = FollowUpManager.getCategories(msg);
-   // Output: This will give you the list of categories.
+   // الإخراج: سيعطيك هذا قائمة الفئات.
    ```
 #### توضيح
-- `FollowUpManager.getCategories()` returns a list containing all categories attached to the email.
-### Removing Specific Category from an Outlook Message
-If you need to remove specific categories:
+- `FollowUpManager.getCategories()` إرجاع قائمة تحتوي على جميع الفئات المرفقة بالبريد الإلكتروني.
+### إزالة فئة معينة من رسالة Outlook
+إذا كنت بحاجة إلى إزالة فئات معينة:
 #### ملخص
-This feature removes designated categories, helping maintain relevance and clarity in your message categorization.
+تعمل هذه الميزة على إزالة الفئات المحددة، مما يساعد على الحفاظ على الصلة والوضوح في تصنيف رسالتك.
 #### خطوات
-1. **Load the Email**
+1. **تحميل البريد الإلكتروني**
    
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
    ```
-2. **Remove Category**
+2. **إزالة الفئة**
    
    ```java
    FollowUpManager.removeCategory(msg, "Red Category");
    ```
 #### توضيح
-- `FollowUpManager.removeCategory()` removes the specified category from your email.
-### Clearing All Categories from an Outlook Message
-To remove all categories at once:
+- `FollowUpManager.removeCategory()` يزيل الفئة المحددة من بريدك الإلكتروني.
+### مسح جميع الفئات من رسالة Outlook
+لإزالة كافة الفئات مرة واحدة:
 #### ملخص
-This feature clears every category assigned to a message for complete removal of tags.
+تعمل هذه الميزة على مسح كل فئة مخصصة لرسالة لإزالة العلامات بالكامل.
 #### خطوات
-1. **Load the Email**
+1. **تحميل البريد الإلكتروني**
    
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
    ```
-2. **Clear All Categories**
+2. **مسح جميع الفئات**
    
    ```java
    FollowUpManager.clearCategories(msg);
    ```
 #### توضيح
-- `FollowUpManager.clearCategories()` deletes all categories from the message.
+- `FollowUpManager.clearCategories()` يحذف جميع الفئات من الرسالة.
 ## التطبيقات العملية
 وفيما يلي بعض حالات الاستخدام في العالم الحقيقي:
-1. **فرز البريد الإلكتروني تلقائيًا**: Integrate with CRM systems to automatically tag emails based on client interactions.
-2. **إدارة المشاريع**: Assign project-specific tags to emails for easy retrieval and organization.
-3. **الحملات التسويقية**: Categorize promotional emails to track responses and engagement.
+1. **فرز البريد الإلكتروني تلقائيًا**:التكامل مع أنظمة إدارة علاقات العملاء لوضع علامات على رسائل البريد الإلكتروني تلقائيًا استنادًا إلى تفاعلات العملاء.
+2. **إدارة المشاريع**:قم بتعيين علامات خاصة بالمشروع للرسائل الإلكترونية لسهولة استرجاعها وتنظيمها.
+3. **الحملات التسويقية**:تصنيف رسائل البريد الإلكتروني الترويجية لتتبع الاستجابات والمشاركة.
 ## اعتبارات الأداء
-- **تحسين استخدام الموارد**: Ensure efficient memory management by disposing of objects when no longer needed.
-- **أفضل الممارسات**: Use batching operations where possible to reduce overhead in processing large volumes of emails.
+- **تحسين استخدام الموارد**:تأكد من إدارة الذاكرة بكفاءة من خلال التخلص من الكائنات عندما لم تعد هناك حاجة إليها.
+- **أفضل الممارسات**:استخدم عمليات التجميع حيثما أمكن لتقليل النفقات العامة في معالجة كميات كبيرة من رسائل البريد الإلكتروني.
 ## خاتمة
-In this tutorial, we explored how to manage Outlook categories using Aspose.Email for Java. These features not only help organize your inbox but also enhance productivity through streamlined email management. To take it further, consider exploring additional capabilities of the Aspose.Email library and integrating them into your projects!
+في هذا البرنامج التعليمي، استكشفنا كيفية إدارة فئات Outlook باستخدام Aspose.Email لجافا. لا تساعد هذه الميزات في تنظيم بريدك الوارد فحسب، بل تُحسّن أيضًا إنتاجيتك من خلال إدارة بريدك الإلكتروني بشكل مُبسّط. وللمزيد من المعلومات، فكّر في استكشاف الإمكانيات الإضافية لمكتبة Aspose.Email ودمجها في مشاريعك!
 ### الخطوات التالية
-- Experiment with different category configurations.
-- Explore other functionalities provided by Aspose.Email.
-Ready to try managing categories in Outlook? Implement these solutions today and experience enhanced email organization! 
+- تجربة تكوينات الفئات المختلفة.
+- استكشف الوظائف الأخرى التي يوفرها Aspose.Email.
+هل أنت مستعد لتجربة إدارة الفئات في Outlook؟ نفّذ هذه الحلول اليوم واستمتع بتنظيم بريدك الإلكتروني المُحسّن! 
 ## قسم الأسئلة الشائعة
-**Q1: Can I use Aspose.Email for Java on any platform?**
-A1: Yes, as long as your environment supports JDK 16 or higher.
-**Q2: How do I handle errors while adding categories?**
-A2: Ensure the category names are valid strings and check for exceptions in your code to manage unexpected issues.
-**Q3: Is there a limit on the number of categories I can add?**
-A3: Outlook typically supports up to 10 categories per message, but it's always best to refer to Microsoft’s latest guidelines.
-**Q4: How do I ensure high performance when processing large email volumes?**
-A4: Implement efficient memory handling and batch operations for optimal performance.
-**Q5: Where can I find more documentation on Aspose.Email features?**
+**س1: هل يمكنني استخدام Aspose.Email لـ Java على أي منصة؟**
+ج1: نعم، طالما أن بيئتك تدعم JDK 16 أو أعلى.
+**س2: كيف أتعامل مع الأخطاء أثناء إضافة الفئات؟**
+أ2: تأكد من أن أسماء الفئات عبارة عن سلاسل صالحة وتحقق من وجود استثناءات في الكود الخاص بك لإدارة المشكلات غير المتوقعة.
+**س3: هل هناك حد لعدد الفئات التي يمكنني إضافتها؟**
+A3: يدعم Outlook عادةً ما يصل إلى 10 فئات لكل رسالة، ولكن من الأفضل دائمًا الرجوع إلى أحدث إرشادات Microsoft.
+**س4: كيف يمكنني ضمان الأداء العالي عند معالجة كميات كبيرة من رسائل البريد الإلكتروني؟**
+أ4: تنفيذ معالجة فعالة للذاكرة وعمليات الدفعات للحصول على الأداء الأمثل.
+**س5: أين يمكنني العثور على مزيد من الوثائق حول ميزات Aspose.Email؟**
 أ5: قم بزيارة [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/) للحصول على إرشادات مفصلة ومراجع API.
 ## موارد
 - **التوثيق**: https://reference.aspose.com/email/java/

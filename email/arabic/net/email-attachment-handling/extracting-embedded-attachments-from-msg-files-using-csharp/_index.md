@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to extract embedded attachments from MSG files using C# and Aspose.Email for .NET. A comprehensive guide with source code examples."
-"linktitle": "Extracting Embedded Attachments from MSG Files using C#"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Extracting Embedded Attachments from MSG Files using C#"
+"description": "تعرّف على كيفية استخراج المرفقات المُضمّنة من ملفات MSG باستخدام C# وAspose.Email لـ .NET. دليل شامل مع أمثلة على شيفرة المصدر."
+"linktitle": "استخراج المرفقات المضمنة من ملفات MSG باستخدام C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "استخراج المرفقات المضمنة من ملفات MSG باستخدام C#"
 "url": "/ar/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
 "weight": 10
 ---
@@ -13,73 +13,73 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracting Embedded Attachments from MSG Files using C#
+# استخراج المرفقات المضمنة من ملفات MSG باستخدام C#
 
 
-## Introduction to Embedded Attachments
+## مقدمة عن المرفقات المضمنة
 
-Embedded attachments are files that are encapsulated within an email message, allowing the recipient to access the files without the need for external links. These attachments can be particularly useful when sharing documents while preserving the context of the email conversation.
+المرفقات المُضمَّنة هي ملفات مُضمَّنة في رسالة بريد إلكتروني، مما يسمح للمستلم بالوصول إليها دون الحاجة إلى روابط خارجية. تُعد هذه المرفقات مفيدة بشكل خاص عند مشاركة المستندات مع الحفاظ على سياق محادثة البريد الإلكتروني.
 
-## Getting Started with Aspose.Email for .NET
+## البدء باستخدام Aspose.Email لـ .NET
 
-Aspose.Email for .NET is a powerful library that simplifies email processing tasks in .NET applications. It provides comprehensive support for working with various email formats, including MSG files. To get started, follow these steps:
+Aspose.Email لـ .NET هي مكتبة فعّالة تُبسّط مهام معالجة البريد الإلكتروني في تطبيقات .NET. تُوفّر دعمًا شاملًا للعمل مع مختلف تنسيقات البريد الإلكتروني، بما في ذلك ملفات MSG. للبدء، اتبع الخطوات التالية:
 
-1. Download and Install Aspose.Email for .NET
+1. تنزيل وتثبيت Aspose.Email لـ .NET
 
-   You can download the library from the [Aspose.Email for .NET website](https://releases.aspose.com/email/net) or use NuGet package manager:
+   يمكنك تنزيل المكتبة من [Aspose.Email لموقع .NET](https://releases.aspose.com/email/net) أو استخدم مدير حزمة NuGet:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2. Create a New C# Project
+2. إنشاء مشروع C# جديد
 
-   Start by creating a new C# project in your preferred development environment.
+   ابدأ بإنشاء مشروع C# جديد في بيئة التطوير المفضلة لديك.
 
-3. Add Reference to Aspose.Email
+3. إضافة مرجع إلى Aspose.Email
 
-   Add a reference to the Aspose.Email DLL in your project.
+   أضف مرجعًا إلى DLL الخاص بـ Aspose.Email في مشروعك.
 
-## Loading and Parsing MSG Files
+## تحميل ملفات MSG وتحليلها
 
-Before extracting embedded attachments, we need to load and parse the MSG file using Aspose.Email. Here's how you can do it:
+قبل استخراج المرفقات المُضمَّنة، علينا تحميل ملف MSG وتحليله باستخدام Aspose.Email. إليك الطريقة:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-// Load MSG file
+// تحميل ملف MSG
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // Access message properties
+    // خصائص رسالة الوصول
     string subject = message.Subject;
     string sender = message.From.Address;
     // ...
 }
 ```
 
-## Extracting Embedded Attachments
+## استخراج المرفقات المضمنة
 
-Now that we have loaded the MSG file, let's extract the embedded attachments:
+الآن بعد أن قمنا بتحميل ملف MSG، دعنا نستخرج المرفقات المضمنة:
 
 ```csharp
-// Extract embedded attachments
+// استخراج المرفقات المضمنة
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
     {
         var embeddedMsg = (MailMessage)attachment.Object;
-        // Process the embedded message
+        // معالجة الرسالة المضمنة
     }
 }
 ```
 
-## Saving Extracted Attachments
+## حفظ المرفقات المستخرجة
 
-Once we've processed the embedded attachments, we can save them to the desired location:
+بمجرد معالجة المرفقات المضمنة، يمكننا حفظها في الموقع المطلوب:
 
 ```csharp
-// Save embedded attachments
+// حفظ المرفقات المضمنة
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
@@ -88,29 +88,29 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## خاتمة
 
-In this tutorial, we explored how to extract embedded attachments from MSG files using C# and the Aspose.Email for .NET library. By following the steps outlined here, you can seamlessly integrate attachment extraction capabilities into your .NET applications, enhancing the way you handle email content.
+في هذا البرنامج التعليمي، استكشفنا كيفية استخراج المرفقات المضمنة من ملفات MSG باستخدام لغة C# ومكتبة Aspose.Email لـ .NET. باتباع الخطوات الموضحة هنا، يمكنك دمج إمكانيات استخراج المرفقات بسلاسة في تطبيقات .NET، مما يُحسّن طريقة تعاملك مع محتوى البريد الإلكتروني.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How can I download Aspose.Email for .NET?
+### كيف يمكنني تنزيل Aspose.Email لـ .NET؟
 
-You can download Aspose.Email for .NET from the [Aspose.Email website](https://releases.aspose.com/email/net).
+يمكنك تنزيل Aspose.Email لـ .NET من [موقع Aspose.Email](https://releases.aspose.com/email/net).
 
-### Is Aspose.Email compatible with different email formats?
+### هل Aspose.Email متوافق مع تنسيقات البريد الإلكتروني المختلفة؟
 
-Yes, Aspose.Email provides extensive support for various email formats, including MSG, EML, PST, and more.
+نعم، يوفر Aspose.Email دعمًا واسع النطاق لتنسيقات البريد الإلكتروني المختلفة، بما في ذلك MSG، وEML، وPST، والمزيد.
 
-### Can I use Aspose.Email in both desktop and web applications?
+### هل يمكنني استخدام Aspose.Email في كل من تطبيقات سطح المكتب والويب؟
 
-Absolutely! Aspose.Email for .NET can be used in both desktop and web applications, making it a versatile choice for your email processing needs.
+بالتأكيد! يُمكن استخدام Aspose.Email لـ .NET في تطبيقات سطح المكتب والويب، مما يجعله خيارًا متعدد الاستخدامات لتلبية احتياجاتك في معالجة البريد الإلكتروني.
 
-### Are there any licensing considerations?
+### هل هناك أي اعتبارات الترخيص؟
 
-Yes, Aspose.Email is a commercial library. You can find detailed licensing information on the [موقع Aspose](https://purchase.aspose.com).
+نعم، Aspose.Email مكتبة تجارية. يمكنك العثور على معلومات الترخيص المفصلة على [موقع Aspose](https://purchase.aspose.com).
 
-### Where can I find more examples and documentation?
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
 
-You can find detailed examples and documentation on using Aspose.Email for .NET in the [التوثيق](https://reference.aspose.com/email/net).
+يمكنك العثور على أمثلة ووثائق مفصلة حول استخدام Aspose.Email لـ .NET في [التوثيق](https://reference.aspose.com/email/net).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

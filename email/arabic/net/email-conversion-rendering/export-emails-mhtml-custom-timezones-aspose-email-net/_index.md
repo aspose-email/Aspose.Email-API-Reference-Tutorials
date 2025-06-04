@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to export emails to the MHTML format using Aspose.Email for .NET, while customizing time zones to ensure accurate timestamp display across different regions."
-"title": "How to Export Emails to MHTML with Custom Timezones Using Aspose.Email for .NET"
+"description": "تعرف على كيفية تصدير رسائل البريد الإلكتروني إلى تنسيق MHTML باستخدام Aspose.Email لـ .NET، مع تخصيص المناطق الزمنية لضمان عرض الطابع الزمني الدقيق عبر مناطق مختلفة."
+"title": "كيفية تصدير رسائل البريد الإلكتروني إلى MHTML مع مناطق زمنية مخصصة باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/email-conversion-rendering/export-emails-mhtml-custom-timezones-aspose-email-net/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Export Emails to MHTML with Custom Timezones Using Aspose.Email for .NET
+# كيفية تصدير رسائل البريد الإلكتروني إلى MHTML مع مناطق زمنية مخصصة باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Exporting emails into a universally compatible format like MHTML can streamline email archiving and sharing, especially when dealing with timezone complexities. If you're facing challenges related to timezone differences in your email exports using C#, this guide is perfect for you! Learn how to leverage Aspose.Email for .NET to export emails to the MHTML format while customizing time zones.
+يُسهّل تصدير رسائل البريد الإلكتروني إلى تنسيق متوافق عالميًا مثل MHTML أرشفة البريد الإلكتروني ومشاركته، خاصةً عند التعامل مع تعقيدات المناطق الزمنية. إذا كنت تواجه تحديات تتعلق باختلاف المناطق الزمنية في تصدير رسائل البريد الإلكتروني باستخدام C#، فهذا الدليل مثالي لك! تعرّف على كيفية استخدام Aspose.Email لـ .NET لتصدير رسائل البريد الإلكتروني إلى تنسيق MHTML مع تخصيص المناطق الزمنية.
 
 **ما سوف تتعلمه:**
-- How to set up and use Aspose.Email for .NET
-- Exporting an EML file to MHTML with timezone adjustments
-- Customizing timezone offsets in your email exports
+- كيفية إعداد Aspose.Email واستخدامه لـ .NET
+- تصدير ملف EML إلى MHTML مع تعديلات المنطقة الزمنية
+- تخصيص إزاحات المنطقة الزمنية في صادرات البريد الإلكتروني الخاص بك
 
-This tutorial will walk you through setting up the necessary environment and provide a step-by-step guide to implementing this feature. Let’s dive into the prerequisites first.
+سيرشدك هذا البرنامج التعليمي خلال عملية إعداد البيئة اللازمة، ويقدم دليلاً خطوة بخطوة لتطبيق هذه الميزة. لنبدأ بالمتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك ما يلي:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET:** This library provides email processing capabilities in your .NET applications.
+- **Aspose.Email لـ .NET:** توفر هذه المكتبة إمكانيات معالجة البريد الإلكتروني في تطبيقات .NET الخاصة بك.
 
 ### متطلبات إعداد البيئة
-- **بيئة التطوير:** Visual Studio (any recent version)
-- **.NET Framework or .NET Core/5+/6+:** Compatible with the latest versions
+- **بيئة التطوير:** Visual Studio (أي إصدار حديث)
+- **.NET Framework أو .NET Core/5+/6+:** متوافق مع أحدث الإصدارات
 
 ### متطلبات المعرفة
-- Basic understanding of C# and .NET project structure
-- Familiarity with handling files in .NET applications
+- فهم أساسي لبنية مشروع C# و.NET
+- المعرفة بكيفية التعامل مع الملفات في تطبيقات .NET
 
 ## إعداد Aspose.Email لـ .NET
 
-To begin, you need to install Aspose.Email for your .NET application. Here’s how:
+للبدء، عليك تثبيت Aspose.Email لتطبيق .NET الخاص بك. إليك الطريقة:
 
 **استخدام .NET CLI:**
 ```bash
@@ -54,52 +54,52 @@ Install-Package Aspose.Email
 ```
 
 **عبر واجهة مستخدم NuGet Package Manager:**
-- Open the Package Manager Console in Visual Studio.
+- افتح وحدة تحكم إدارة الحزم في Visual Studio.
 - ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على ترخيص
-You can try out Aspose.Email with its free trial or acquire a temporary license to explore full features:
-- **نسخة تجريبية مجانية:** Perfect for initial testing without restrictions.
-- **رخصة مؤقتة:** Obtain from [هنا](https://purchase.aspose.com/temporary-license/).
-- **شراء:** For long-term use, visit [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+يمكنك تجربة Aspose.Email من خلال النسخة التجريبية المجانية أو الحصول على ترخيص مؤقت لاستكشاف الميزات الكاملة:
+- **نسخة تجريبية مجانية:** مثالية للاختبار الأولي دون قيود.
+- **رخصة مؤقتة:** الحصول عليها من [هنا](https://purchase.aspose.com/temporary-license/).
+- **شراء:** للاستخدام طويل الأمد، قم بزيارة [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
-After installation, you can initialize Aspose.Email in your project by importing the necessary namespaces and setting up a basic configuration.
+بعد التثبيت، يمكنك تهيئة Aspose.Email في مشروعك عن طريق استيراد المساحات الأساسية اللازمة وإعداد تكوين أساسي.
 
 ## دليل التنفيذ
 
-Now that we have our environment set up let’s implement the email export with custom timezone settings.
+الآن بعد أن قمنا بإعداد بيئتنا، فلنقم بتنفيذ تصدير البريد الإلكتروني بإعدادات المنطقة الزمنية المخصصة.
 
-### Export Email to MHTML with Custom Timezone
+### تصدير البريد الإلكتروني إلى MHTML مع المنطقة الزمنية المخصصة
 
 #### ملخص
-This feature allows exporting an EML file into the MHTML format while giving you control over timezone adjustments. This ensures your emails are displayed correctly across different regions.
+تتيح لك هذه الميزة تصدير ملف EML إلى صيغة MHTML، مع التحكم في إعدادات المنطقة الزمنية. هذا يضمن عرض رسائلك الإلكترونية بشكل صحيح في مختلف المناطق.
 
 #### التنفيذ خطوة بخطوة
 
-**1. Load an Existing EML File**
-We begin by loading an email message from an existing EML file into a `MailMessage` هدف:
+**1. قم بتحميل ملف EML الحالي**
+نبدأ بتحميل رسالة بريد إلكتروني من ملف EML موجود إلى `MailMessage` هدف:
 ```csharp
 using Aspose.Email;
 using System;
 
-string dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Replace with your document path
+string dataDir = "YOUR_DOCUMENT_DIRECTORY"; // استبدل بمسار المستند الخاص بك
 
-// Load the EML file
+// تحميل ملف EML
 MailMessage eml = MailMessage.Load(dataDir + "/Message.eml");
 ```
 
-**2. Set Timezone Offset**
-Next, configure the timezone offset to adjust how email times are displayed:
+**2. تعيين إزاحة المنطقة الزمنية**
+بعد ذلك، قم بتكوين إزاحة المنطقة الزمنية لضبط كيفية عرض أوقات البريد الإلكتروني:
 ```csharp
-// Set the local timezone offset from UTC
+// تعيين إزاحة المنطقة الزمنية المحلية من UTC
 eml.TimeZoneOffset = TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now);
 
-// Alternatively, set a specific custom timezone (e.g., -0800 for PST)
+// بدلاً من ذلك، قم بتعيين منطقة زمنية مخصصة محددة (على سبيل المثال، -0800 لتوقيت المحيط الهادئ)
 // eml.TimeZoneOffset = new TimeSpan(-8, 0, 0);
 ```
 
-**3. Configure MHT Save Options**
-Prepare the save options to ensure headers are included in the output:
+**3. تكوين خيارات حفظ MHT**
+قم بإعداد خيارات الحفظ للتأكد من تضمين الرؤوس في الإخراج:
 ```csharp
 using Aspose.Email.Mime;
 
@@ -107,59 +107,59 @@ MhtSaveOptions so = new MhtSaveOptions();
 so.MhtFormatOptions = MhtFormatOptions.WriteHeader;
 ```
 
-**4. Export to MHTML**
-وأخيرا، احفظ `MailMessage` as an MHTML file with your configured timezone settings:
+**4. التصدير إلى MHTML**
+وأخيرا، احفظ `MailMessage` كملف MHTML بإعدادات المنطقة الزمنية التي قمت بتكوينها:
 ```csharp
 eml.Save("YOUR_OUTPUT_DIRECTORY/ExportEmailToMHTWithCustomTimezone_out.mhtml", so);
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- تأكد من المسارات في `dataDir` and output directory are correctly specified.
-- Validate the EML file format before loading.
+- تأكد من المسارات في `dataDir` وتم تحديد دليل الإخراج بشكل صحيح.
+- قم بالتحقق من تنسيق ملف EML قبل التحميل.
 
 ## التطبيقات العملية
 
-Here are some real-world scenarios where this feature can be invaluable:
-1. **أرشفة البريد الإلكتروني:** Maintain accurate time records across different regions for legal compliance.
-2. **Email Sharing:** Share emails without timezone-related discrepancies in collaborative environments.
-3. **Cross-Platform Compatibility:** Ensure consistent display of email timestamps when viewed on various platforms.
+فيما يلي بعض السيناريوهات الواقعية حيث يمكن أن تكون هذه الميزة ذات قيمة لا تقدر بثمن:
+1. **أرشفة البريد الإلكتروني:** الحفاظ على سجلات زمنية دقيقة في مختلف المناطق للامتثال للقانون.
+2. **مشاركة البريد الإلكتروني:** شارك رسائل البريد الإلكتروني دون اختلافات متعلقة بالمنطقة الزمنية في البيئات التعاونية.
+3. **التوافق بين المنصات:** تأكد من عرض متسق لطوابع زمنية للبريد الإلكتروني عند عرضها على منصات مختلفة.
 
 ## اعتبارات الأداء
-When using Aspose.Email for .NET, consider the following to optimize performance:
-- Minimize memory usage by processing large volumes of emails sequentially rather than simultaneously.
-- Use appropriate data structures to handle email attachments and metadata efficiently.
-- Regularly dispose of objects not in use to free up resources.
+عند استخدام Aspose.Email لـ .NET، ضع ما يلي في الاعتبار لتحسين الأداء:
+- قم بتقليل استخدام الذاكرة عن طريق معالجة كميات كبيرة من رسائل البريد الإلكتروني بشكل متسلسل بدلاً من معالجتها في وقت واحد.
+- استخدم هياكل البيانات المناسبة للتعامل مع مرفقات البريد الإلكتروني والبيانات الوصفية بكفاءة.
+- تخلص بانتظام من الكائنات غير المستخدمة لتحرير الموارد.
 
 ## خاتمة
-By following this guide, you've learned how to export emails to MHTML with custom timezone settings using Aspose.Email for .NET. This feature can greatly enhance your application's capability to manage emails across different timezones effectively.
+باتباع هذا الدليل، ستتعلم كيفية تصدير رسائل البريد الإلكتروني إلى MHTML بإعدادات منطقة زمنية مخصصة باستخدام Aspose.Email لـ .NET. تُحسّن هذه الميزة بشكل كبير قدرة تطبيقك على إدارة رسائل البريد الإلكتروني بفعالية عبر مناطق زمنية مختلفة.
 
 **الخطوات التالية:**
-- Explore other features of Aspose.Email for advanced email processing.
-- Experiment with different timezone offsets to meet specific business requirements.
+- استكشف الميزات الأخرى لـ Aspose.Email لمعالجة البريد الإلكتروني المتقدمة.
+- قم بتجربة إزاحات المناطق الزمنية المختلفة لتلبية متطلبات العمل المحددة.
 
-We encourage you to try implementing this solution and share your experiences!
+نحن نشجعكم على محاولة تنفيذ هذا الحل ومشاركة تجاربكم!
 
 ## قسم الأسئلة الشائعة
 
-**س1:** How do I handle daylight saving changes when setting custom timezones?
-A1: Use `TimeZoneInfo` to automatically adjust for daylight savings where applicable, ensuring accuracy in email timestamps.
+**س1:** كيف أتعامل مع تغييرات التوقيت الصيفي عند تعيين مناطق زمنية مخصصة؟
+أ1: الاستخدام `TimeZoneInfo` لضبط التوقيت الصيفي تلقائيًا عند الاقتضاء، مما يضمن الدقة في أوقات البريد الإلكتروني.
 
-**س2:** Can Aspose.Email export emails with attachments in MHTML format?
-A2: Yes, Aspose.Email supports exporting emails with attachments. Ensure proper configuration of save options to include them.
+**س2:** هل يمكن لـ Aspose.Email تصدير رسائل البريد الإلكتروني مع المرفقات بتنسيق MHTML؟
+ج٢: نعم، يدعم Aspose.Email تصدير رسائل البريد الإلكتروني مع المرفقات. تأكد من ضبط خيارات الحفظ بشكل صحيح لتضمينها.
 
 **س3:** ما هي متطلبات النظام لاستخدام Aspose.Email؟
-A3: It requires .NET Framework or .NET Core/5+/6+ and a compatible environment like Visual Studio.
+ج3: يتطلب .NET Framework أو .NET Core/5+/6+ وبيئة متوافقة مثل Visual Studio.
 
-**س4:** Is there support for handling large email batches with Aspose.Email?
-A4: Yes, batch processing is supported. Optimize performance by managing memory usage effectively.
+**س4:** هل هناك دعم للتعامل مع دفعات البريد الإلكتروني الكبيرة باستخدام Aspose.Email؟
+ج٤: نعم، المعالجة الدفعية مدعومة. حسّن الأداء بإدارة استخدام الذاكرة بفعالية.
 
-**س5:** How do I troubleshoot errors during email export?
-A5: Check file paths, ensure valid EML formats, and review error messages to diagnose issues promptly.
+**س5:** كيف يمكنني استكشاف الأخطاء وإصلاحها أثناء تصدير البريد الإلكتروني؟
+A5: تحقق من مسارات الملفات، وتأكد من صحة تنسيقات EML، وراجع رسائل الخطأ لتشخيص المشكلات على الفور.
 
 ## موارد
-- **التوثيق:** [Aspose.Email .NET Docs](https://reference.aspose.com/email/net/)
-- **Download Aspose.Email for .NET:** [Release Page](https://releases.aspose.com/email/net/)
-- **Purchase a License:** [اشتري الآن](https://purchase.aspose.com/buy)
+- **التوثيق:** [وثائق Aspose.Email .NET](https://reference.aspose.com/email/net/)
+- **تنزيل Aspose.Email لـ .NET:** [صفحة الإصدار](https://releases.aspose.com/email/net/)
+- **شراء ترخيص:** [اشتري الآن](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية:** [البدء](https://releases.aspose.com/email/net/)
 - **رخصة مؤقتة:** [تقدم هنا](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم:** [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to manage Exchange distribution lists effectively with Aspose.Email for .NET. Connect, create, and update lists effortlessly in your .NET projects."
-"title": "How to Manage Exchange Distribution Lists Using Aspose.Email for .NET&#58; A Complete Guide"
+"description": "تعرّف على كيفية إدارة قوائم توزيع Exchange بفعالية باستخدام Aspose.Email لـ .NET. وصّل القوائم وأنشئها وحدّثها بسهولة في مشاريع .NET الخاصة بك."
+"title": "كيفية إدارة قوائم توزيع Exchange باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/exchange-server-integration/manage-exchange-lists-aspose-email-net/"
 "weight": 1
 ---
@@ -11,36 +11,36 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Manage Exchange Distribution Lists with Aspose.Email for .NET
+# كيفية إدارة قوائم توزيع Exchange باستخدام Aspose.Email لـ .NET
 
-In today's fast-paced digital world, managing email distribution lists effectively is crucial for organizations that rely on communication tools like Microsoft Exchange Server. Whether you're an IT professional or a developer looking to streamline your workflow, integrating Aspose.Email for .NET can simplify this process significantly. This comprehensive guide will walk you through connecting to an Exchange server, creating and configuring distribution lists, and managing their members using Aspose.Email for .NET.
+في عالمنا الرقمي المتسارع، تُعدّ إدارة قوائم توزيع البريد الإلكتروني بفعالية أمرًا بالغ الأهمية للمؤسسات التي تعتمد على أدوات اتصال مثل Microsoft Exchange Server. سواء كنت متخصصًا في تكنولوجيا المعلومات أو مطورًا يسعى لتبسيط سير عملك، فإن دمج Aspose.Email لـ .NET يُبسّط هذه العملية بشكل كبير. سيرشدك هذا الدليل الشامل خلال عملية الاتصال بخادم Exchange، وإنشاء قوائم التوزيع وتكوينها، وإدارة أعضائها باستخدام Aspose.Email لـ .NET.
 
 **ما سوف تتعلمه:**
-- Connecting to an Exchange Web Service (EWS) with Aspose.Email
-- Creating and configuring distribution lists in Exchange Server
-- Adding and removing members from these lists
+- الاتصال بخدمة Exchange Web Service (EWS) باستخدام Aspose.Email
+- إنشاء قوائم التوزيع وتكوينها في Exchange Server
+- إضافة وإزالة الأعضاء من هذه القوائم
 
-Let's begin by ensuring your environment is properly set up!
+لنبدأ بالتأكد من إعداد بيئتك بشكل صحيح!
 
 ## المتطلبات الأساسية
 
-Before using Aspose.Email for .NET, ensure your environment is correctly configured. You'll need access to an Exchange server and a basic understanding of C# programming.
+قبل استخدام Aspose.Email لـ .NET، تأكد من صحة تهيئة بيئتك. ستحتاج إلى الوصول إلى خادم Exchange وفهم أساسي لبرمجة C#.
 
 ### المكتبات المطلوبة
 - **Aspose.Email لـ .NET**:المكتبة الأساسية المستخدمة في هذا البرنامج التعليمي.
-- **.NET Framework أو .NET Core/5+/6+**: Use a compatible version of the .NET platform.
+- **.NET Framework أو .NET Core/5+/6+**:استخدم إصدارًا متوافقًا من منصة .NET.
 
 ### متطلبات إعداد البيئة
-- Access to an Exchange Server (e.g., Microsoft 365).
-- A C# development environment, such as Visual Studio.
+- الوصول إلى خادم Exchange (على سبيل المثال، Microsoft 365).
+- بيئة تطوير AC#، مثل Visual Studio.
 
 ### متطلبات المعرفة
 - فهم أساسي لمفاهيم البرمجة C# و.NET.
-- Familiarity with APIs or web services.
+- المعرفة بواجهات برمجة التطبيقات أو خدمات الويب.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started with Aspose.Email for .NET, install the library into your project using one of these methods:
+للبدء في استخدام Aspose.Email لـ .NET، قم بتثبيت المكتبة في مشروعك باستخدام إحدى الطرق التالية:
 
 **.NET CLI**
 ```bash
@@ -56,136 +56,136 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية**: Start with a 30-day free trial to explore full functionality.
-2. **رخصة مؤقتة**: Apply for more time beyond the trial if needed.
-3. **شراء**: Consider purchasing a license for long-term use.
+1. **نسخة تجريبية مجانية**:ابدأ بفترة تجريبية مجانية لمدة 30 يومًا لاستكشاف الوظائف الكاملة.
+2. **رخصة مؤقتة**:تقدم بطلب للحصول على مزيد من الوقت بعد المحاكمة إذا لزم الأمر.
+3. **شراء**:فكر في شراء ترخيص للاستخدام على المدى الطويل.
 
 ### التهيئة والإعداد الأساسي
 
-Here's how to initialize your project with Aspose.Email:
+فيما يلي كيفية تهيئة مشروعك باستخدام Aspose.Email:
 
 ```csharp
 using Aspose.Email.Clients.Exchange.WebService;
 
-// Initialize EWSClient with server URL, username, password, and domain
+// قم بتهيئة EWSClient باستخدام عنوان URL الخاص بالخادم واسم المستخدم وكلمة المرور والنطاق
 IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
 
 ## دليل التنفيذ
 
-### Connecting to Exchange Web Service (EWS)
+### الاتصال بخدمة Exchange Web Service (EWS)
 
-Connecting to an Exchange server is the first step in managing email lists. Aspose.Email provides a seamless way to establish this connection.
+يُعد الاتصال بخادم Exchange الخطوة الأولى في إدارة قوائم البريد الإلكتروني. يوفر Aspose.Email طريقة سلسة لإنشاء هذا الاتصال.
 
 #### ملخص
-This section demonstrates how to connect to Microsoft's Exchange Server using EWS with Aspose.Email for .NET.
+يوضح هذا القسم كيفية الاتصال بخادم Exchange Server من Microsoft باستخدام EWS مع Aspose.Email لـ .NET.
 
-**Step 1: Establishing Connection**
+**الخطوة 1: إنشاء الاتصال**
 
-يستخدم `EWSClient.GetEWSClient` to create a client instance:
+يستخدم `EWSClient.GetEWSClient` لإنشاء مثيل العميل:
 
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx"، "testUser"، "pwd"، "domain");
 ```
 
 - **حدود**:
-  - `"https://outlook.office365.com/ews/exchange.asmx"`: Exchange server URL.
+  - `"https://outlook.office365.com/ews/exchange.asmx"`:عنوان URL لخادم Exchange.
   - `"testUser"`، `"pwd"`، و `"domain"`:بيانات الاعتماد للمصادقة.
 
-### Creating and Configuring a Distribution List
+### إنشاء قائمة التوزيع وتكوينها
 
-Creating a distribution list allows you to send emails to multiple recipients efficiently.
+يتيح لك إنشاء قائمة التوزيع إرسال رسائل البريد الإلكتروني إلى عدة مستلمين بكفاءة.
 
 #### ملخص
-Learn how to create a new distribution list object and configure its properties using Aspose.Email.
+تعرف على كيفية إنشاء كائن قائمة توزيع جديدة وتكوين خصائصه باستخدام Aspose.Email.
 
-**Step 2: Create Distribution List**
+**الخطوة 2: إنشاء قائمة التوزيع**
 
-Initialize an `ExchangeDistributionList`:
+تهيئة `ExchangeDistributionList`:
 
 ```csharp
 using Aspose.Email.Clients.Exchange;
 
 ExchangeDistributionList distributionList = new ExchangeDistributionList();
-distributionList.Id = "list's id"; // Set the ID of the distribution list
-distributionList.ChangeKey = "list's change key"; // Change Key for updates
+distributionList.Id = "list's id"; // تعيين معرف قائمة التوزيع
+distributionList.ChangeKey = "list's change key"; // تغيير المفتاح للتحديثات
 ```
 
-### Managing Distribution List Members
+### إدارة أعضاء قائمة التوزيع
 
-Once your distribution list is created, manage its members by adding or removing email addresses.
+بمجرد إنشاء قائمة التوزيع الخاصة بك، يمكنك إدارة أعضائها عن طريق إضافة عناوين البريد الإلكتروني أو إزالتها.
 
 #### ملخص
-This section covers how to add or remove members from a distribution list.
+يتناول هذا القسم كيفية إضافة أعضاء إلى قائمة التوزيع أو إزالتهم منها.
 
-**Step 3: Adding and Removing Members**
+**الخطوة 3: إضافة وإزالة الأعضاء**
 
-Add or delete members using `MailAddressCollection`:
+إضافة أو حذف الأعضاء باستخدام `MailAddressCollection`:
 
 ```csharp
 using Aspose.Email.Mime;
 
-// Create a collection for members to be deleted
+// إنشاء مجموعة للأعضاء المراد حذفهم
 MailAddressCollection membersToDelete = new MailAddressCollection();
-MailAddress addressToDelete = new MailAddress("address", true); // Example member
+MailAddress addressToDelete = new MailAddress("address", true); // عضو مثال
 membersToDelete.Add(addressToDelete);
 
-// Add the specified members to be removed from the list
+// أضف الأعضاء المحددين المراد إزالتهم من القائمة
 client.DeleteFromDistributionList(distributionList, membersToDelete);
 ```
 
 ### التطبيقات العملية
 
-Here are some real-world scenarios where managing Exchange lists can be beneficial:
+فيما يلي بعض السيناريوهات الواقعية حيث قد تكون إدارة قوائم Exchange مفيدة:
 
-1. **حملات البريد الإلكتروني الآلية**: Automatically update mailing lists for marketing campaigns.
-2. **Team Updates**: Manage team communication channels efficiently by updating distribution lists as team members join or leave.
-3. **Event Notifications**: Send out event notifications to multiple attendees seamlessly.
+1. **حملات البريد الإلكتروني الآلية**:تحديث قوائم البريد الإلكتروني تلقائيًا لحملات التسويق.
+2. **تحديثات الفريق**:إدارة قنوات اتصال الفريق بكفاءة من خلال تحديث قوائم التوزيع عند انضمام أعضاء الفريق أو مغادرتهم.
+3. **إشعارات الأحداث**:إرسال إشعارات الحدث إلى العديد من المشاركين بسلاسة.
 
 ### اعتبارات الأداء
 
-When using Aspose.Email with .NET, consider these tips to enhance performance:
-- **تحسين استخدام الموارد**: Limit the number of simultaneous connections and manage memory efficiently.
-- **أفضل الممارسات لإدارة الذاكرة**: يستخدم `using` statements for disposing objects promptly and reduce unnecessary data retrieval operations.
+عند استخدام Aspose.Email مع .NET، ضع هذه النصائح في الاعتبار لتحسين الأداء:
+- **تحسين استخدام الموارد**:قم بتحديد عدد الاتصالات المتزامنة وإدارة الذاكرة بكفاءة.
+- **أفضل الممارسات لإدارة الذاكرة**: يستخدم `using` عبارات للتخلص من الكائنات بسرعة وتقليل عمليات استرجاع البيانات غير الضرورية.
 
 ## خاتمة
 
-You've now learned how to connect to an Exchange server using Aspose.Email, create distribution lists, and manage their members. With these skills, you can streamline your email management processes significantly.
+لقد تعلمتَ الآن كيفية الاتصال بخادم Exchange باستخدام Aspose.Email، وإنشاء قوائم توزيع، وإدارة أعضائها. بفضل هذه المهارات، يمكنك تبسيط عمليات إدارة بريدك الإلكتروني بشكل ملحوظ.
 
 **الخطوات التالية:**
-- Explore further features of Aspose.Email for .NET.
+- استكشف المزيد من الميزات الخاصة بـ Aspose.Email لـ .NET.
 - دمج هذه الوظيفة في مشاريع أكبر.
 
-Ready to dive deeper? Try implementing this solution in a test environment today!
+هل أنت مستعد للتعمق أكثر؟ جرّب تطبيق هذا الحل في بيئة اختبار اليوم!
 
 ## قسم الأسئلة الشائعة
 
 1. **ما هو استخدام Aspose.Email لـ .NET؟**
    
-   Aspose.Email for .NET provides robust tools for email processing and management, including connecting to Microsoft Exchange Servers.
+   يوفر Aspose.Email لـ .NET أدوات قوية لمعالجة البريد الإلكتروني وإدارته، بما في ذلك الاتصال بخوادم Microsoft Exchange.
 
-2. **How do I handle authentication errors when connecting to EWS?**
+2. **كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟**
    
-   Ensure your credentials are correct and that the server URL matches your environment settings.
+   تأكد من صحة بيانات الاعتماد الخاصة بك وأن عنوان URL الخاص بالخادم يتطابق مع إعدادات البيئة الخاصة بك.
 
-3. **Can I use this tutorial with any version of .NET?**
+3. **هل يمكنني استخدام هذا البرنامج التعليمي مع أي إصدار من .NET؟**
    
-   Yes, as long as you’re using a compatible version (e.g., .NET Framework 4.x or later, .NET Core/5+/6+).
+   نعم، طالما أنك تستخدم إصدارًا متوافقًا (على سبيل المثال، .NET Framework 4.x أو أحدث، .NET Core/5+/6+).
 
-4. **What should I do if the distribution list update fails?**
+4. **ماذا يجب أن أفعل إذا فشل تحديث قائمة التوزيع؟**
    
-   Check that the `ChangeKey` is current and valid before making changes.
+   تأكد من أن `ChangeKey` محدثة وصالحة قبل إجراء أي تغييرات.
 
-5. **How can I get support for Aspose.Email issues?**
+5. **كيف يمكنني الحصول على الدعم لمشاكل Aspose.Email؟**
    
-   قم بزيارة [منتدى الدعم](https://forum.aspose.com/c/email/10) for assistance with any problems you encounter.
+   قم بزيارة [منتدى الدعم](https://forum.aspose.com/c/email/10) للحصول على المساعدة في أي مشكلة تواجهها.
 
 ## موارد
 
 - **التوثيق**:استكشف الأدلة التفصيلية في [وثائق Aspose](https://reference.aspose.com/email/net/)
-- **تحميل**:احصل على أحدث إصدار من [Aspose Release Page](https://releases.aspose.com/email/net/)
-- **شراء**: Consider purchasing a license for long-term use at [شراء Aspose](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية**: Start with a 30-day trial from [نسخة تجريبية مجانية من Aspose](https://releases.aspose.com/email/net/)
+- **تحميل**:احصل على أحدث إصدار من [صفحة إصدار Aspose](https://releases.aspose.com/email/net/)
+- **شراء**:فكر في شراء ترخيص للاستخدام طويل الأمد في [شراء Aspose](https://purchase.aspose.com/buy)
+- **نسخة تجريبية مجانية**:ابدأ بفترة تجريبية مدتها 30 يومًا من [نسخة تجريبية مجانية من Aspose](https://releases.aspose.com/email/net/)
 - **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت في [ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/) 
 
 {{< /blocks/products/pf/tutorial-page-section >}}

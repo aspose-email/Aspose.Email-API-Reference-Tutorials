@@ -16,83 +16,83 @@
 
 ## البرامج التعليمية المتاحة
 
-### [Aspose.Email Java IMAP Setup: Secure Configuration and Usage Guide for Developers](./aspose-email-java-imap-setup-usage-guide/)
-Master Aspose.Email for Java by setting up an IMAP client with secure protocols, building queries, and leveraging read-only mode. Ideal for automating email tasks in Java applications.
+### [إعداد Aspose.Email Java IMAP: دليل التكوين والاستخدام الآمن للمطورين](./aspose-email-java-imap-setup-usage-guide/)
+أتقن استخدام Aspose.Email لجافا من خلال إعداد عميل IMAP ببروتوكولات آمنة، وبناء استعلامات، والاستفادة من وضع القراءة فقط. مثالي لأتمتة مهام البريد الإلكتروني في تطبيقات جافا.
 
-### [Comprehensive Guide to IMAP MailMessage Management in Java with Aspose.Email](./imap-mailmessage-management-java-aspose-email/)
-Learn how to manage emails programmatically using Aspose.Email for Java. This guide covers creating, managing, and interacting with IMAP folders.
+### [دليل شامل لإدارة رسائل البريد الإلكتروني IMAP في Java باستخدام Aspose.Email](./imap-mailmessage-management-java-aspose-email/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني برمجيًا باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إنشاء مجلدات IMAP وإدارتها والتفاعل معها.
 
-### [Configuring IMAP Client with Aspose.Email for Java: A Complete Guide](./configuring-imap-client-aspose-email-java-guide/)
-Learn how to configure an IMAP client using Aspose.Email for Java, ensuring secure and efficient email server communication in your applications.
+### [تكوين عميل IMAP باستخدام Aspose.Email لـ Java: دليل شامل](./configuring-imap-client-aspose-email-java-guide/)
+تعرف على كيفية تكوين عميل IMAP باستخدام Aspose.Email لـ Java، مما يضمن اتصالاً آمنًا وفعالًا لخادم البريد الإلكتروني في تطبيقاتك.
 
-### [Efficient IMAP Email Handling in Java using Aspose.Email: A Guide to Paginated Retrieval and Display](./imap-email-handling-aspose-java-guide/)
-Learn how to manage emails efficiently with Aspose.Email for Java. This guide covers connecting, retrieving, and displaying emails via IMAP, ensuring secure and optimized email processing.
+### [التعامل الفعال مع رسائل البريد الإلكتروني IMAP في Java باستخدام Aspose.Email: دليل لاسترجاع وعرض الرسائل في صفحات مختلفة](./imap-email-handling-aspose-java-guide/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. يغطي هذا الدليل توصيل رسائل البريد الإلكتروني واسترجاعها وعرضها عبر IMAP، مما يضمن معالجة بريد إلكتروني آمنة ومُحسّنة.
 
-### [Efficiently Delete IMAP Messages Using UIDs with Aspose.Email for Java: A Comprehensive Guide](./delete-imap-messages-using-uids-aspose-email-java/)
-Learn how to efficiently manage and delete IMAP messages using UIDs with Aspose.Email for Java. Master the setup, key methods, and performance tips.
+### [حذف رسائل IMAP بكفاءة باستخدام معرفات المستخدم الفريدة (UIDs) مع Aspose.Email لـ Java: دليل شامل](./delete-imap-messages-using-uids-aspose-email-java/)
+تعرّف على كيفية إدارة رسائل IMAP وحذفها بكفاءة باستخدام مُعرّفات المستخدم (UIDs) مع Aspose.Email لـ Java. تعرّف على كيفية الإعداد والطرق الرئيسية ونصائح الأداء.
 
-### [Fetch Emails from IMAP Server Using Aspose.Email for Java: A Step-by-Step Guide](./fetch-emails-imap-aspose-java/)
-Learn how to programmatically fetch emails from an IMAP server using Aspose.Email for Java. This step-by-step guide covers setup, connection, and email fetching techniques.
+### [جلب رسائل البريد الإلكتروني من خادم IMAP باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./fetch-emails-imap-aspose-java/)
+تعرّف على كيفية جلب رسائل البريد الإلكتروني برمجيًا من خادم IMAP باستخدام Aspose.Email لـ Java. يغطي هذا الدليل خطوة بخطوة الإعداد والاتصال وتقنيات جلب البريد الإلكتروني.
 
-### [How to Backup IMAP Emails with Aspose.Email for Java: A Step-by-Step Guide](./imap-backup-aspose-email-java-guide/)
-Learn how to use Aspose.Email for Java to establish secure IMAP connections and back up your email folders. Comprehensive guide for developers.
+### [كيفية عمل نسخة احتياطية لرسائل البريد الإلكتروني IMAP باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./imap-backup-aspose-email-java-guide/)
+تعرّف على كيفية استخدام Aspose.Email لـ Java لإنشاء اتصالات IMAP آمنة ونسخ مجلدات بريدك الإلكتروني احتياطيًا. دليل شامل للمطورين.
 
-### [How to Connect to an IMAP Server Using Aspose.Email for Java: A Complete Guide](./aspose-email-java-imap-connection-guide/)
-Learn how to securely connect to an IMAP server using Aspose.Email for Java with this comprehensive guide. Discover step-by-step instructions, performance tips, and practical applications.
+### [كيفية الاتصال بخادم IMAP باستخدام Aspose.Email لـ Java: دليل شامل](./aspose-email-java-imap-connection-guide/)
+تعرّف على كيفية الاتصال الآمن بخادم IMAP باستخدام Aspose.Email لـ Java من خلال هذا الدليل الشامل. اكتشف التعليمات خطوة بخطوة، ونصائح الأداء، والتطبيقات العملية.
 
-### [How to Connect to an IMAP Server Using Aspose.Email for Java: A Comprehensive Guide](./aspose-email-java-imap-connection-fetch-unsubscribe/)
-Learn how to connect to an IMAP server with Aspose.Email for Java, fetch emails, and manage subscriptions efficiently. Perfect for email automation in enterprise or personal applications.
+### [كيفية الاتصال بخادم IMAP باستخدام Aspose.Email لـ Java: دليل شامل](./aspose-email-java-imap-connection-fetch-unsubscribe/)
+تعرّف على كيفية الاتصال بخادم IMAP باستخدام Aspose.Email لجافا، وجلب رسائل البريد الإلكتروني، وإدارة الاشتراكات بكفاءة. مثالي لأتمتة البريد الإلكتروني في تطبيقات المؤسسات أو التطبيقات الشخصية.
 
-### [How to Set Up a Secure IMAP Client with Aspose.Email for Java](./aspose-email-java-secure-imap-client-setup/)
-Learn how to securely initialize an IMAP client and create multiple email messages using Aspose.Email for Java. Ideal for automating email tasks in your applications.
+### [كيفية إعداد عميل IMAP آمن باستخدام Aspose.Email لـ Java](./aspose-email-java-secure-imap-client-setup/)
+تعرّف على كيفية تهيئة عميل IMAP بشكل آمن وإنشاء رسائل بريد إلكتروني متعددة باستخدام Aspose.Email لـ Java. مثالي لأتمتة مهام البريد الإلكتروني في تطبيقاتك.
 
-### [How to Set Up an IMAP Client and Restore PST Files Using Aspose.Email for Java](./setup-imap-client-aspose-email-java/)
-Learn how to set up an IMAP client using Aspose.Email for Java, configure security settings, and restore PST files efficiently.
+### [كيفية إعداد عميل IMAP واستعادة ملفات PST باستخدام Aspose.Email لـ Java](./setup-imap-client-aspose-email-java/)
+تعرف على كيفية إعداد عميل IMAP باستخدام Aspose.Email لـ Java، وتكوين إعدادات الأمان، واستعادة ملفات PST بكفاءة.
 
-### [Implement IMAP Client & Create Emails Using Aspose.Email for Java](./implement-imap-client-email-aspose-java/)
-Learn how to efficiently integrate email functionalities into your Java application using the powerful Aspose.Email library. This guide covers setting up an IMAP client and creating emails with ease.
+### [تنفيذ عميل IMAP وإنشاء رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java](./implement-imap-client-email-aspose-java/)
+تعرّف على كيفية دمج وظائف البريد الإلكتروني بكفاءة في تطبيق جافا الخاص بك باستخدام مكتبة Aspose.Email القوية. يغطي هذا الدليل إعداد عميل IMAP وإنشاء رسائل بريد إلكتروني بسهولة.
 
-### [Master Aspose.Email Java for Efficient IMAP Message Handling](./mastering-aspose-email-java-imap-handling/)
-Learn how to automate email management with Aspose.Email Java, from listing inbox messages to advanced IMAP operations.
+### [إتقان Aspose.Email Java للتعامل بكفاءة مع رسائل IMAP](./mastering-aspose-email-java-imap-handling/)
+تعرف على كيفية أتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email Java، من إدراج رسائل البريد الوارد إلى عمليات IMAP المتقدمة.
 
-### [Master Email Retrieval with Aspose.Email Java: Using Sequence Numbers and Unique URIs](./master-email-retrieval-aspose-email-java-sequence-unique-uri/)
-Learn how to efficiently retrieve emails using Aspose.Email for Java by sequence numbers or unique URIs. Follow this detailed guide on setting up, implementing, and optimizing email retrieval.
+### [إتقان استرداد البريد الإلكتروني باستخدام Aspose.Email Java: استخدام أرقام التسلسل ومعرفات URI الفريدة](./master-email-retrieval-aspose-email-java-sequence-unique-uri/)
+تعرّف على كيفية استرجاع رسائل البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا باستخدام أرقام التسلسل أو عناوين URI الفريدة. اتبع هذا الدليل المفصل لإعداد وتنفيذ وتحسين استرجاع البريد الإلكتروني.
 
-### [Master IMAP Client Initialization in Java with Aspose.Email: A Comprehensive Guide](./imap-client-initialization-java-aspose-email/)
-Learn how to efficiently initialize and configure an IMAP client using Aspose.Email for Java. Discover pagination techniques for optimal email processing.
+### [إتقان تهيئة عميل IMAP في Java باستخدام Aspose.Email: دليل شامل](./imap-client-initialization-java-aspose-email/)
+تعرّف على كيفية تهيئة عميل IMAP وتكوينه بكفاءة باستخدام Aspose.Email لـ Java. اكتشف تقنيات الترقيم لمعالجة البريد الإلكتروني على النحو الأمثل.
 
-### [Master IMAP Connections & Folder Listings with Aspose.Email for Java | Expert Guide](./master-aspose-email-java-imap-folder-listing/)
-Learn how to connect to an IMAP server and list folders using Aspose.Email for Java. This expert guide covers setup, connection, and folder listing.
+### [إتقان اتصالات IMAP وقوائم المجلدات باستخدام Aspose.Email لـ Java | دليل الخبراء](./master-aspose-email-java-imap-folder-listing/)
+تعرّف على كيفية الاتصال بخادم IMAP وسرد المجلدات باستخدام Aspose.Email لجافا. يغطي هذا الدليل الاحترافي الإعداد والاتصال وسرد المجلدات.
 
-### [Master IMAP Flags with Aspose.Email Java: Efficient Email Flag Management](./aspose-email-java-imap-flags-management/)
-Learn to efficiently manage email flags using Aspose.Email for Java. Set and remove IMAP message flags effortlessly in your Java applications.
+### [إدارة علامات IMAP باستخدام Aspose.Email Java: إدارة علامات البريد الإلكتروني بكفاءة](./aspose-email-java-imap-flags-management/)
+تعلم كيفية إدارة علامات البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. عيّن علامات رسائل IMAP وأزلها بسهولة في تطبيقات جافا.
 
-### [Master IMAP Operations in Java Using Aspose.Email](./java-imap-operations-aspose-email/)
-Learn how to efficiently manage emails with IMAP operations using Aspose.Email for Java. Connect, create folders, append messages, copy between folders, and list all messages.
+### [إتقان عمليات IMAP في Java باستخدام Aspose.Email](./java-imap-operations-aspose-email/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني بكفاءة باستخدام عمليات IMAP باستخدام Aspose.Email لـ Java. يمكنك الاتصال، وإنشاء المجلدات، وإضافة الرسائل، والنسخ بين المجلدات، وسرد جميع الرسائل.
 
-### [Master IMAP Operations in Java Using Aspose.Email Library](./master-imap-operations-java-aspose-email/)
-Learn how to efficiently manage email operations with Aspose.Email for Java. This guide covers initializing an IMAP client, creating folders, moving emails, and more.
+### [إتقان عمليات IMAP في Java باستخدام مكتبة Aspose.Email](./master-imap-operations-java-aspose-email/)
+تعرّف على كيفية إدارة عمليات البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. يغطي هذا الدليل تهيئة عميل IMAP، وإنشاء المجلدات، ونقل رسائل البريد الإلكتروني، والمزيد.
 
-### [Master IMAP4 ID and Extended List Features in Aspose.Email for Java: A Comprehensive Guide](./master-imap4-id-extended-list-aspose-email-java/)
-Learn how to leverage the IMAP4 ID extension and extended list command support with Aspose.Email for Java. Streamline email management in your Java applications.
+### [إتقان ميزات معرف IMAP4 والقائمة الموسعة في Aspose.Email لـ Java: دليل شامل](./master-imap4-id-extended-list-aspose-email-java/)
+تعرّف على كيفية الاستفادة من دعم امتداد معرف IMAP4 وأوامر القائمة الموسعة مع Aspose.Email لـ Java. سهّل إدارة بريدك الإلكتروني في تطبيقات Java.
 
-### [Mastering IMAP Clients in Java: A Comprehensive Guide Using Aspose.Email](./master-imap-clients-java-aspose-email/)
-Learn how to configure and utilize IMAP clients in Java with Aspose.Email. Discover step-by-step guidance for setting up and managing email protocols efficiently.
+### [إتقان عملاء IMAP في Java: دليل شامل باستخدام Aspose.Email](./master-imap-clients-java-aspose-email/)
+تعرّف على كيفية تكوين عملاء IMAP واستخدامهم في Java باستخدام Aspose.Email. اكتشف دليلاً خطوة بخطوة لإعداد وإدارة بروتوكولات البريد الإلكتروني بكفاءة.
 
-### [Mastering IMAP Idle Monitoring in Java with Aspose.Email: A Comprehensive Guide](./aspose-email-java-imap-idle-monitoring-synchronization/)
-Learn how to implement real-time email notifications using Aspose.Email for Java. Streamline your application's efficiency with our detailed guide on IMAP idle monitoring and synchronization.
+### [إتقان مراقبة IMAP الخاملة في Java باستخدام Aspose.Email: دليل شامل](./aspose-email-java-imap-idle-monitoring-synchronization/)
+تعرّف على كيفية تنفيذ إشعارات البريد الإلكتروني الفورية باستخدام Aspose.Email لجافا. حسّن كفاءة تطبيقك من خلال دليلنا المفصل حول مراقبة ومزامنة IMAP الخامل.
 
-### [Optimize IMAP Connections Using Aspose.Email Java: A Comprehensive Guide](./aspose-email-java-imap-optimization-guide/)
-Learn how to connect and optimize IMAP server communications using Aspose.Email for Java. Enhance email operations with single and multi-connection modes.
+### [تحسين اتصالات IMAP باستخدام Aspose.Email Java: دليل شامل](./aspose-email-java-imap-optimization-guide/)
+تعرّف على كيفية ربط وتحسين اتصالات خادم IMAP باستخدام Aspose.Email لـ Java. حسّن عمليات البريد الإلكتروني باستخدام وضعي الاتصال الفردي والمتعدد.
 
-### [Secure IMAP Client Setup in Java using Aspose.Email: TLS and Multi-Connection Guide](./secure-imap-client-java-aspose-tls/)
-Learn how to set up a secure IMAP client in Java with Aspose.Email, implementing TLS encryption and multi-connection mode for enhanced security and performance.
+### [إعداد عميل IMAP الآمن في Java باستخدام Aspose.Email: دليل TLS والاتصالات المتعددة](./secure-imap-client-java-aspose-tls/)
+تعرف على كيفية إعداد عميل IMAP آمن في Java باستخدام Aspose.Email، وتنفيذ تشفير TLS ووضع الاتصال المتعدد لتحسين الأمان والأداء.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

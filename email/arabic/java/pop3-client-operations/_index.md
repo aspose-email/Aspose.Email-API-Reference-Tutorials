@@ -16,29 +16,29 @@
 
 ## البرامج التعليمية المتاحة
 
-### [How to Securely Connect to a POP3 Server in Java Using Aspose.Email](./aspose-email-java-pop3-connection/)
-Learn how to securely connect to POP3 servers using Aspose.Email for Java, with SSL and HTTP proxy support. Ideal for email automation and management.
+### [كيفية الاتصال بشكل آمن بخادم POP3 في Java باستخدام Aspose.Email](./aspose-email-java-pop3-connection/)
+تعرّف على كيفية الاتصال الآمن بخوادم POP3 باستخدام Aspose.Email لـ Java، مع دعم SSL وبروتوكول HTTP. مثالي لأتمتة وإدارة البريد الإلكتروني.
 
-### [How to Set Up a POP3 Client in Java Using Aspose.Email Library](./setup-pop3-client-aspose-email-java/)
-Learn how to efficiently set up and configure a POP3 client using the Aspose.Email library for Java, including server capabilities retrieval and secure authentication.
+### [كيفية إعداد عميل POP3 في Java باستخدام مكتبة Aspose.Email](./setup-pop3-client-aspose-email-java/)
+تعرف على كيفية إعداد عميل POP3 وتكوينه بكفاءة باستخدام مكتبة Aspose.Email لـ Java، بما في ذلك استرجاع قدرات الخادم والمصادقة الآمنة.
 
-### [Java POP3 Email Connection with Aspose.Email: A Step-by-Step Guide](./java-pop3-email-connection-aspose-email/)
-Learn how to implement Java POP3 email connections using Aspose.Email. This guide covers setting up a client, connecting to servers, and retrieving email headers efficiently.
+### [اتصال بريد إلكتروني Java POP3 مع Aspose.Email: دليل خطوة بخطوة](./java-pop3-email-connection-aspose-email/)
+تعرّف على كيفية تنفيذ اتصالات بريد إلكتروني Java POP3 باستخدام Aspose.Email. يتناول هذا الدليل إعداد عميل، والاتصال بالخوادم، واسترداد عناوين البريد الإلكتروني بكفاءة.
 
-### [Master POP3 Connections in Java Using Aspose.Email: Step-by-Step Guide](./master-pop3-connections-java-aspose-email-guide/)
-Learn how to connect to a POP3 server using Aspose.Email for Java. This guide covers setup, secure connections, and retrieving mailbox info.
+### [إتقان اتصالات POP3 في Java باستخدام Aspose.Email: دليل خطوة بخطوة](./master-pop3-connections-java-aspose-email-guide/)
+تعرّف على كيفية الاتصال بخادم POP3 باستخدام Aspose.Email لجافا. يغطي هذا الدليل الإعداد، والاتصالات الآمنة، واسترداد معلومات صندوق البريد.
 
-### [Master POP3 Email Management in Java with Aspose.Email: A Comprehensive Guide](./aspose-email-java-pop3-email-management/)
-Learn how to manage emails using the Aspose.Email library for Java. This guide covers setting up a POP3 client, fetching messages, and integrating these functionalities into applications.
+### [إتقان إدارة البريد الإلكتروني POP3 في Java باستخدام Aspose.Email: دليل شامل](./aspose-email-java-pop3-email-management/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لجافا. يتناول هذا الدليل إعداد عميل POP3، وجلب الرسائل، ودمج هذه الوظائف في التطبيقات.
 
-### [Optimize POP3 Performance in Java with Aspose.Email: Multi-Connection vs. Single Connection Guide](./optimize-pop3-performance-aspose-email-java/)
-Learn how to boost your Java application's email retrieval performance using Aspose.Email for Java by comparing multi-connection and single-connection modes.
+### [تحسين أداء POP3 في Java باستخدام Aspose.Email: دليل الاتصال المتعدد مقابل الاتصال الفردي](./optimize-pop3-performance-aspose-email-java/)
+تعرف على كيفية تعزيز أداء استرداد البريد الإلكتروني لتطبيق Java الخاص بك باستخدام Aspose.Email for Java من خلال مقارنة أوضاع الاتصال المتعددة والاتصال الفردي.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

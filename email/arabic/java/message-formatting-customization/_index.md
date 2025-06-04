@@ -16,41 +16,41 @@
 
 ## البرامج التعليمية المتاحة
 
-### [Custom Hyperlink Rendering in Java Emails Using Aspose.Email](./aspose-email-java-custom-hyperlink-rendering/)
-Learn how to customize hyperlink rendering in Java emails with Aspose.Email for enhanced security and user experience. Explore practical examples.
+### [عرض ارتباط تشعبي مخصص في رسائل البريد الإلكتروني Java باستخدام Aspose.Email](./aspose-email-java-custom-hyperlink-rendering/)
+تعرّف على كيفية تخصيص عرض الروابط التشعبية في رسائل البريد الإلكتروني بلغة جافا باستخدام Aspose.Email لتحسين الأمان وتجربة المستخدم. استكشف أمثلة عملية.
 
-### [Extracting HTML Body Text from Emails Using Aspose.Email for Java](./mastering-email-html-extraction-aspose-java/)
-Learn how to use Aspose.Email for Java to extract HTML body text with or without URLs, enhancing your email processing workflows.
+### [استخراج نص HTML من رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java](./mastering-email-html-extraction-aspose-java/)
+تعرف على كيفية استخدام Aspose.Email لـ Java لاستخراج نص HTML مع أو بدون عناوين URL، مما يعزز سير عمل معالجة البريد الإلكتروني لديك.
 
-### [How to Create Interactive Polls in Emails Using Aspose.Email Java and MAPI Messages](./create-polls-aspose-email-java-mapi-messages/)
-Learn how to create interactive polls in emails with Aspose.Email for Java. Enhance engagement, gather feedback efficiently, and streamline decision-making.
+### [كيفية إنشاء استطلاعات رأي تفاعلية في رسائل البريد الإلكتروني باستخدام Aspose.Email Java ورسائل MAPI](./create-polls-aspose-email-java-mapi-messages/)
+تعرّف على كيفية إنشاء استطلاعات رأي تفاعلية في رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. عزّز التفاعل، واجمع الملاحظات بكفاءة، وسهّل عملية اتخاذ القرارات.
 
-### [How to Create Professional HTML Emails Using Aspose.Email for Java](./create-html-emails-aspose-email-java/)
-Learn how to use Aspose.Email for Java to create and send rich, professional HTML emails with ease. Follow this guide to enhance your email formatting.
+### [كيفية إنشاء رسائل بريد إلكتروني HTML احترافية باستخدام Aspose.Email لـ Java](./create-html-emails-aspose-email-java/)
+تعلّم كيفية استخدام Aspose.Email لجافا لإنشاء وإرسال رسائل بريد إلكتروني HTML غنية واحترافية بسهولة. اتبع هذا الدليل لتحسين تنسيق بريدك الإلكتروني.
 
-### [How to Create and Configure Emails Using Aspose.Email for Java: A Comprehensive Guide](./create-configure-emails-aspose-java/)
-Learn how to use Aspose.Email for Java to create, configure, and send emails with ease. Discover best practices for message formatting and customization.
+### [كيفية إنشاء رسائل البريد الإلكتروني وتكوينها باستخدام Aspose.Email لـ Java: دليل شامل](./create-configure-emails-aspose-java/)
+تعرّف على كيفية استخدام Aspose.Email لجافا لإنشاء رسائل البريد الإلكتروني وتكوينها وإرسالها بسهولة. اكتشف أفضل الممارسات لتنسيق الرسائل وتخصيصها.
 
-### [Java Email Formatting with Aspose.Email: Text & HTML Customization Guide](./java-email-formatting-aspose-email-text-html/)
-Learn how to format emails in Java using Aspose.Email for customizable text and HTML outputs. This guide covers step-by-step instructions, best practices, and practical applications.
+### [تنسيق البريد الإلكتروني بلغة جافا باستخدام Aspose.Email: دليل تخصيص النص وHTML](./java-email-formatting-aspose-email-text-html/)
+تعرّف على كيفية تنسيق رسائل البريد الإلكتروني بلغة جافا باستخدام Aspose.Email للحصول على نصوص قابلة للتخصيص ومخرجات HTML. يتضمن هذا الدليل تعليمات خطوة بخطوة، وأفضل الممارسات، وتطبيقات عملية.
 
-### [Master Customizing Email Headers in Java with Aspose.Email: A Complete Guide](./customize-email-headers-java-aspose-email/)
-Learn how to set and customize email headers using Aspose.Email for Java. This guide covers setup, coding practices, and practical applications.
+### [إتقان تخصيص عناوين البريد الإلكتروني في Java باستخدام Aspose.Email: دليل كامل](./customize-email-headers-java-aspose-email/)
+تعرّف على كيفية إعداد وتخصيص عناوين البريد الإلكتروني باستخدام Aspose.Email لجافا. يغطي هذا الدليل الإعداد، وممارسات البرمجة، والتطبيقات العملية.
 
-### [Master Email Modification Using Aspose.Email for Java: A Comprehensive Guide to Message Formatting & Customization](./master-email-modification-aspose-email-java/)
-Learn how to modify email properties efficiently with Aspose.Email for Java. Update subjects, bodies, and recipient lists in your Java applications.
+### [إتقان تعديل البريد الإلكتروني باستخدام Aspose.Email لـ Java: دليل شامل لتنسيق الرسائل وتخصيصها](./master-email-modification-aspose-email-java/)
+تعرّف على كيفية تعديل خصائص البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. حدّث عناوين الرسائل ونصوصها وقوائم المستلمين في تطبيقات جافا.
 
-### [Master Mail Merge in Java: Personalized Emails with Aspose.Email](./aspose-email-java-mail-merge-tutorial/)
-Learn how to automate personalized email creation using Aspose.Email for Java. This comprehensive guide covers mail merge templates, data preparation, and efficient integration.
+### [دمج البريد الرئيسي في Java: رسائل بريد إلكتروني مخصصة مع Aspose.Email](./aspose-email-java-mail-merge-tutorial/)
+تعرّف على كيفية أتمتة إنشاء رسائل البريد الإلكتروني المخصصة باستخدام Aspose.Email لجافا. يغطي هذا الدليل الشامل قوالب دمج البريد، وإعداد البيانات، والتكامل الفعال.
 
-### [Save Email as Template in Java Using Aspose.Email: A Step-by-Step Guide](./save-email-template-aspose-java-guide/)
-Learn how to efficiently save email templates using Aspose.Email for Java. This guide provides step-by-step instructions, real-world applications, and performance tips.
+### [حفظ البريد الإلكتروني كقالب في جافا باستخدام Aspose.Email: دليل خطوة بخطوة](./save-email-template-aspose-java-guide/)
+تعرّف على كيفية حفظ قوالب البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. يوفر هذا الدليل تعليمات خطوة بخطوة، وتطبيقات عملية، ونصائح لتحسين الأداء.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

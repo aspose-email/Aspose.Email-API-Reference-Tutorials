@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently handle TNEF attachments in .NET applications with Aspose.Email. This guide covers loading, updating, and saving email messages while preserving intricate attachments."
-"title": "Handling TNEF Attachments in .NET&#58; A Comprehensive Guide Using Aspose.Email"
+"description": "تعرّف على كيفية التعامل بكفاءة مع مرفقات TNEF في تطبيقات .NET باستخدام Aspose.Email. يغطي هذا الدليل تحميل رسائل البريد الإلكتروني وتحديثها وحفظها مع الحفاظ على المرفقات المعقدة."
+"title": "التعامل مع مرفقات TNEF في .NET - دليل شامل باستخدام Aspose.Email"
 "url": "/ar/net/attachments-handling/aspose-email-net-tnef-attachments-handling/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Handling TNEF Attachments in .NET: A Comprehensive Guide Using Aspose.Email
+# التعامل مع مرفقات TNEF في .NET: دليل شامل باستخدام Aspose.Email
 
 ## مقدمة
 
-Managing emails within your .NET applications can be challenging, especially when dealing with complex formats like TNEF (Transport Neutral Encapsulation Format). Many developers struggle to load, manipulate, and save email messages while preserving all their intricate attachments. This guide will demonstrate how to efficiently handle these tasks using Aspose.Email for .NET.
+قد تُشكّل إدارة رسائل البريد الإلكتروني داخل تطبيقات .NET تحديًا، خاصةً عند التعامل مع تنسيقات مُعقّدة مثل TNEF (تنسيق التغليف المُحايد للنقل). يُواجه العديد من المُطوّرين صعوبة في تحميل رسائل البريد الإلكتروني ومعالجتها وحفظها مع الحفاظ على جميع مُرفقاتها المُعقّدة. يُوضّح هذا الدليل كيفية التعامل مع هذه المهام بكفاءة باستخدام Aspose.Email لـ .NET.
 
-By the end of this tutorial, you'll understand how to manage complex email formats in your .NET applications effectively. Let's begin by covering the prerequisites.
+بنهاية هذا البرنامج التعليمي، ستفهم كيفية إدارة تنسيقات البريد الإلكتروني المعقدة في تطبيقات .NET بفعالية. لنبدأ بتغطية المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
-Before implementing our solution, ensure you have:
+قبل تنفيذ حلنا، تأكد من أن لديك:
 
 ### المكتبات والإصدارات المطلوبة
-- **Aspose.Email لـ .NET**: Essential for handling emails with advanced features like TNEF support.
+- **Aspose.Email لـ .NET**:ضروري للتعامل مع رسائل البريد الإلكتروني ذات الميزات المتقدمة مثل دعم TNEF.
 
 ### متطلبات إعداد البيئة
 - **مجموعة أدوات تطوير البرامج .NET**:تأكد من تثبيت إصدار متوافق على جهازك.
 
 ### متطلبات المعرفة
-- Basic understanding of C# and .NET programming
-- Familiarity with email message structures
+- فهم أساسي لبرمجة C# و.NET
+- التعرف على هياكل رسائل البريد الإلكتروني
 
 ## إعداد Aspose.Email لـ .NET
 
-To start, add Aspose.Email to your project using one of the following methods:
+للبدء، أضف Aspose.Email إلى مشروعك باستخدام إحدى الطرق التالية:
 
 **.NET CLI**
 ```bash
@@ -52,53 +52,53 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 لاستخدام Aspose.Email، يمكنك:
-1. **ابدأ بإصدار تجريبي مجاني**: Explore its full capabilities temporarily.
-2. **شراء ترخيص**: Consider purchasing for long-term projects to continue receiving support and updates.
+1. **ابدأ بإصدار تجريبي مجاني**:استكشف قدراته الكاملة مؤقتًا.
+2. **شراء ترخيص**:فكر في الشراء للمشاريع طويلة الأمد لمواصلة تلقي الدعم والتحديثات.
 
-For licensing details, visit [شراء Aspose](https://purchase.aspose.com/buy) or acquire a free trial at [إصدارات Aspose](https://releases.aspose.com/email/net/).
+للحصول على تفاصيل الترخيص، قم بزيارة [شراء Aspose](https://purchase.aspose.com/buy) أو احصل على نسخة تجريبية مجانية في [إصدارات Aspose](https://releases.aspose.com/email/net/).
 
 ## دليل التنفيذ
 
-### Feature 1: Load and Save MailMessage with TNEF Attachments
-This feature demonstrates how to load a `MailMessage` from an EML file, update its attachments, and save it back while preserving the TNEF format.
+### الميزة 1: تحميل وحفظ رسالة البريد الإلكتروني مع مرفقات TNEF
+تُظهر هذه الميزة كيفية تحميل `MailMessage` من ملف EML، قم بتحديث مرفقاته وحفظه مرة أخرى مع الحفاظ على تنسيق TNEF.
 
 #### التنفيذ خطوة بخطوة
-**1. Define File Paths**
-Set up your input and output file paths:
+**1. تحديد مسارات الملفات**
+إعداد مسارات ملفات الإدخال والإخراج:
 ```csharp
 string dataDir = "your_directory_path";
 string fileName = Path.Combine(dataDir, "tnefEML1.eml");
 string outFileName = Path.Combine(dataDir, "UpdateTNEFAttachments_out.eml");
 ```
-**2. Load the MailMessage**
-يستخدم `MailMessage.Load` to read an EML file:
+**2. قم بتحميل رسالة البريد**
+يستخدم `MailMessage.Load` لقراءة ملف EML:
 ```csharp
 MailMessage originalMailMessage = MailMessage.Load(fileName);
 ```
-**3. Update Attachments and Resources**
-Call the method `UpdateResources` to modify image attachments within the email:
+**3. تحديث المرفقات والموارد**
+استدعاء الطريقة `UpdateResources` لتعديل مرفقات الصور داخل البريد الإلكتروني:
 ```csharp
 UpdateResources(originalMailMessage, Path.Combine(dataDir, "Untitled.jpg"));
 ```
-**4. Configure Save Options**
-Preserve TNEF attachments by setting up appropriate save options:
+**4. تكوين خيارات الحفظ**
+حافظ على مرفقات TNEF من خلال إعداد خيارات الحفظ المناسبة:
 ```csharp
 EmlSaveOptions emlSo = new EmlSaveOptions(MailMessageSaveType.EmlFormat)
 {
     FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments
 };
 ```
-**5. Save the Updated MailMessage**
-Finally, save your changes back to an EML file:
+**5. احفظ رسالة البريد المحدثة**
+وأخيرًا، احفظ التغييرات مرة أخرى في ملف EML:
 ```csharp
 originalMailMessage.Save(outFileName, emlSo);
 ```
-### Feature 2: Update Attachments and Linked Resources in MailMessage
-This section focuses on updating image attachments within a `MailMessage`.
+### الميزة 2: تحديث المرفقات والموارد المرتبطة في MailMessage
+يركز هذا القسم على تحديث مرفقات الصور داخل `MailMessage`.
 
-#### Detailed Steps
-**1. Iterate Over Each Attachment**
-Loop through each attachment to identify and update images:
+#### الخطوات التفصيلية
+**1. كرر كل مرفق**
+قم بالتنقل عبر كل مرفق لتحديد الصور وتحديثها:
 ```csharp
 for (int i = 0; i < msg.Attachments.Count; i++)
 {
@@ -107,13 +107,13 @@ for (int i = 0; i < msg.Attachments.Count; i++)
     if ((attachment.ContentType.MediaType == "image/png") || 
         (attachment.ContentType.MediaType == "application/octet-stream" && Path.GetExtension(attachment.ContentType.Name) == ".jpg"))
     {
-        // Update the content stream
+        // تحديث تدفق المحتوى
         attachment.ContentStream = new MemoryStream(File.ReadAllBytes(imgFileName));
     }
 }
 ```
-**2. Handle Embedded Messages**
-For embedded messages, load them and recursively update their resources:
+**2. التعامل مع الرسائل المضمنة**
+بالنسبة للرسائل المضمنة، قم بتحميلها وتحديث مواردها بشكل متكرر:
 ```csharp
 else if ((attachment.ContentType.MediaType == "message/rfc822") || 
          (attachment.ContentType.MediaType == "application/octet-stream" && Path.GetExtension(attachment.ContentType.Name) == ".msg"))
@@ -123,7 +123,7 @@ else if ((attachment.ContentType.MediaType == "message/rfc822") ||
     ms.Position = 0;
     MailMessage embeddedMessage = MailMessage.Load(ms);
     
-    UpdateResources(embeddedMessage, imgFileName); // Recursive call
+    UpdateResources(embeddedMessage, imgFileName); // نداء متكرر
     
     MemoryStream msProcessedEmbedded = new MemoryStream();
     embeddedMessage.Save(msProcessedEmbedded, SaveOptions.DefaultMsgUnicode);
@@ -131,8 +131,8 @@ else if ((attachment.ContentType.MediaType == "message/rfc822") ||
     attachment.ContentStream = msProcessedEmbedded;
 }
 ```
-**3. Iterate Over Linked Resources**
-Update any linked resources that are images:
+**3. تكرار الموارد المرتبطة**
+تحديث أي موارد مرتبطة تكون عبارة عن صور:
 ```csharp
 foreach (LinkedResource att in msg.LinkedResources)
 {
@@ -143,46 +143,46 @@ foreach (LinkedResource att in msg.LinkedResources)
 }
 ```
 ## التطبيقات العملية
-### Use Cases for Aspose.Email .NET
-1. **أنظمة أرشفة البريد الإلكتروني**: Efficiently archive emails while preserving all attachments and formatting.
-2. **منصات دعم العملاء**: Automatically update resources in customer support emails to provide visual aids.
-3. **الحملات التسويقية**: Manage and customize email templates with updated images before sending.
+### حالات الاستخدام لـ Aspose.Email .NET
+1. **أنظمة أرشفة البريد الإلكتروني**:أرشفة رسائل البريد الإلكتروني بكفاءة مع الحفاظ على جميع المرفقات والتنسيق.
+2. **منصات دعم العملاء**:تحديث الموارد تلقائيًا في رسائل البريد الإلكتروني لدعم العملاء لتوفير المساعدات البصرية.
+3. **الحملات التسويقية**:إدارة قوالب البريد الإلكتروني وتخصيصها باستخدام الصور المحدثة قبل الإرسال.
 
 ### إمكانيات التكامل
-- Integrate with CRM systems for automated email responses
-- Use within automated workflow tools to manage communication processes
+- التكامل مع أنظمة إدارة علاقات العملاء للحصول على ردود تلقائية على رسائل البريد الإلكتروني
+- استخدم أدوات سير العمل الآلية لإدارة عمليات الاتصال
 
 ## اعتبارات الأداء
-When implementing these solutions, consider the following:
-- **Optimize File I/O Operations**: Minimize read/write operations by buffering data when possible.
-- **إدارة الذاكرة**: Dispose of streams and large objects promptly to free up memory.
+عند تنفيذ هذه الحلول، ضع في اعتبارك ما يلي:
+- **تحسين عمليات إدخال/إخراج الملفات**:تقليل عمليات القراءة/الكتابة عن طريق تخزين البيانات مؤقتًا عندما يكون ذلك ممكنًا.
+- **إدارة الذاكرة**:تخلص من التدفقات والكائنات الكبيرة على الفور لتحرير الذاكرة.
 
-Best practices include leveraging Aspose.Email's efficient handling of attachments and ensuring your application logic is optimized for performance.
+تتضمن أفضل الممارسات الاستفادة من معالجة Aspose.Email الفعالة للمرفقات والتأكد من تحسين منطق التطبيق الخاص بك لتحقيق الأداء.
 
 ## خاتمة
-In this tutorial, you've learned how to effectively manage `MailMessage` objects with TNEF attachments using Aspose.Email for .NET. By following these steps, you can ensure that your email handling in .NET applications is both robust and efficient.
+في هذا البرنامج التعليمي، تعلمت كيفية إدارة `MailMessage` إنشاء كائنات بمرفقات TNEF باستخدام Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك ضمان فعالية وكفاءة معالجة البريد الإلكتروني في تطبيقات .NET.
 
 ### الخطوات التالية
-- Experiment with different attachment types
-- Explore additional features of the Aspose.Email library
+- تجربة أنواع مختلفة من المرفقات
+- استكشف الميزات الإضافية لمكتبة Aspose.Email
 
-Feel free to share your feedback or ask questions on [منتدى دعم Aspose](https://forum.aspose.com/c/email/10).
+لا تتردد في مشاركة تعليقاتك أو طرح الأسئلة على [منتدى دعم Aspose](https://forum.aspose.com/c/email/10).
 
 ## قسم الأسئلة الشائعة
-**Q1: Can I update attachments in other email formats?**
-A1: Yes, Aspose.Email supports multiple formats like MSG and EML. Adjust the code accordingly for different formats.
+**س1: هل يمكنني تحديث المرفقات في تنسيقات البريد الإلكتروني الأخرى؟**
+ج١: نعم، يدعم Aspose.Email صيغًا متعددة مثل MSG وEML. عدّل الكود وفقًا لذلك لمختلف الصيغ.
 
-**Q2: How do I handle large attachments efficiently?**
-A2: Consider streaming attachment data to reduce memory usage, especially with very large files.
+**س2: كيف أتعامل مع المرفقات الكبيرة بكفاءة؟**
+أ2: فكر في بث بيانات المرفقات لتقليل استخدام الذاكرة، وخاصةً مع الملفات الكبيرة جدًا.
 
-**Q3: Is there a limit on the number of attachments that can be updated?**
-A3: Aspose.Email handles numerous attachments, but performance may vary based on system resources and file sizes.
+**س3: هل هناك حد لعدد المرفقات التي يمكن تحديثها؟**
+A3: يتعامل Aspose.Email مع عدد كبير من المرفقات، ولكن الأداء قد يختلف استنادًا إلى موارد النظام وأحجام الملفات.
 
-**Q4: Can I integrate this solution into an existing .NET project?**
-A4: Yes, simply include the Aspose.Email library as a dependency in your project.
+**س4: هل يمكنني دمج هذا الحل في مشروع .NET موجود؟**
+ج4: نعم، قم ببساطة بتضمين مكتبة Aspose.Email كاعتمادية في مشروعك.
 
-**Q5: What if my email includes non-image attachments?**
-A5: The current implementation focuses on image updates. You can extend it to handle other types by checking their MIME types and updating accordingly.
+**س5: ماذا لو كان بريدي الإلكتروني يتضمن مرفقات غير صورية؟**
+ج٥: يُركز التطبيق الحالي على تحديثات الصور. يُمكنك توسيع نطاقه ليشمل أنواعًا أخرى من خلال التحقق من أنواع MIME الخاصة بها وتحديثها وفقًا لذلك.
 
 ## موارد
 - **التوثيق**: [Aspose Email لـ .NET](https://reference.aspose.com/email/net/)

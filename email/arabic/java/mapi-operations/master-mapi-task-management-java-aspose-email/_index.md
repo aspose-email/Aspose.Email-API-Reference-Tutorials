@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to manage MAPI tasks in Java with Aspose.Email. Create, read, and enhance Outlook-style tasks efficiently."
-"title": "Master MAPI Task Management in Java using Aspose.Email&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إدارة مهام MAPI في Java باستخدام Aspose.Email. أنشئ مهامًا بنمط Outlook، واقرأها، وحسّنها بكفاءة."
+"title": "إتقان إدارة مهام MAPI في Java باستخدام Aspose.Email - دليل شامل"
 "url": "/ar/java/mapi-operations/master-mapi-task-management-java-aspose-email/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering MAPI Task Management in Java with Aspose.Email
+# إتقان إدارة مهام MAPI في Java باستخدام Aspose.Email
 
-Efficient task management is essential for productivity and organization. With the right tools, you can streamline this process seamlessly. In this comprehensive guide, we'll explore how to create, save, read, and manipulate Microsoft Outlook-style MAPI tasks using Aspose.Email for Java. By leveraging Aspose.Email, you can automate task management in your applications with ease. Whether you're a seasoned developer or just getting started, this guide will equip you with the skills needed to master MAPI task management.
+إدارة المهام بكفاءة ضرورية للإنتاجية والتنظيم. باستخدام الأدوات المناسبة، يمكنك تبسيط هذه العملية بسلاسة. في هذا الدليل الشامل، سنستكشف كيفية إنشاء مهام MAPI بنمط Microsoft Outlook وحفظها وقراءتها ومعالجتها باستخدام Aspose.Email لـ Java. باستخدام Aspose.Email، يمكنك أتمتة إدارة المهام في تطبيقاتك بسهولة. سواء كنت مطورًا متمرسًا أو مبتدئًا، سيزودك هذا الدليل بالمهارات اللازمة لإتقان إدارة مهام MAPI.
 
 ## ما سوف تتعلمه:
-- How to set up and use Aspose.Email for Java
-- Create and save MAPI tasks programmatically
-- Read existing MAPI tasks from files
-- Add reminders and attachments to your tasks
-- Optimize performance when working with large volumes of data
+- كيفية إعداد Aspose.Email واستخدامه لـ Java
+- إنشاء مهام MAPI وحفظها برمجيًا
+- قراءة مهام MAPI الموجودة من الملفات
+- أضف التذكيرات والمرفقات إلى مهامك
+- تحسين الأداء عند العمل مع كميات كبيرة من البيانات
 
 دعونا نغوص في الأمر!
 
 ### المتطلبات الأساسية
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
-- **Java Development Kit (JDK)**: Make sure JDK 8 or higher is installed on your system.
-- **Integrated Development Environment (IDE)**: Use an IDE like IntelliJ IDEA or Eclipse for Java development.
-- **Maven**: Familiarity with Maven build tool will be helpful, as we'll use it to manage dependencies.
+- **مجموعة تطوير جافا (JDK)**:تأكد من تثبيت JDK 8 أو أعلى على نظامك.
+- **بيئة التطوير المتكاملة (IDE)**:استخدم IDE مثل IntelliJ IDEA أو Eclipse لتطوير Java.
+- **مافن**:ستكون المعرفة بأداة بناء Maven مفيدة، حيث سنستخدمها لإدارة التبعيات.
 
-### Setting Up Aspose.Email for Java
-Aspose.Email for Java is a powerful library that simplifies email and task management. To begin using it, add the following dependency in your `pom.xml` file:
+### إعداد Aspose.Email لـ Java
+Aspose.Email لجافا مكتبة فعّالة تُبسّط إدارة البريد الإلكتروني والمهام. لبدء استخدامها، أضف التبعية التالية إلى ملفك: `pom.xml` ملف:
 
-**Maven Dependency:**
+**تبعية Maven:**
 
 ```xml
 <dependency>
@@ -45,30 +45,30 @@ Aspose.Email for Java is a powerful library that simplifies email and task manag
 ```
 
 #### الحصول على الترخيص
-To use Aspose.Email for Java, you need a license. You can obtain:
-- **نسخة تجريبية مجانية**: Download a temporary trial version to test out the library.
-- **رخصة مؤقتة**: Apply for a temporary license if you want to explore more features without limitations.
-- **شراء**: Get a full license for commercial projects.
+لاستخدام Aspose.Email لجافا، تحتاج إلى ترخيص. يمكنك الحصول عليه من:
+- **نسخة تجريبية مجانية**:قم بتنزيل نسخة تجريبية مؤقتة لاختبار المكتبة.
+- **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت إذا كنت ترغب في استكشاف المزيد من الميزات دون قيود.
+- **شراء**:احصل على ترخيص كامل للمشاريع التجارية.
 
 #### التهيئة الأساسية
-After setting up Maven, initialize your project as follows:
+بعد إعداد Maven، قم بتهيئة مشروعك على النحو التالي:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/Aspose.Email.lic");
 ```
 
-يستبدل `"path/to/Aspose.Email.lic"` with the actual path to your license file.
+يستبدل `"path/to/Aspose.Email.lic"` مع المسار الفعلي لملف الترخيص الخاص بك.
 
 ### دليل التنفيذ
-We'll break down each feature of MAPI task management into manageable sections.
+سنقوم بتقسيم كل ميزة من ميزات إدارة مهام MAPI إلى أقسام قابلة للإدارة.
 
 #### إنشاء مهمة MAPI وحفظها
 **ملخص:**
-This section demonstrates creating a new MAPI task, setting its properties, and saving it as an MSG file.
+يوضح هذا القسم كيفية إنشاء مهمة MAPI جديدة، وتعيين خصائصها، وحفظها كملف MSG.
 
 **خطوات:**
-1. **Set Up Calendar for Dates:**
+1. **إعداد التقويم للتواريخ:**
 
    ```java
    import java.util.Calendar;
@@ -82,33 +82,33 @@ This section demonstrates creating a new MAPI task, setting its properties, and 
    Date endDate = calendar.getTime();
    ```
 
-2. **Create and Configure the MapiTask:**
+2. **إنشاء وتكوين MapiTask:**
 
    ```java
    import com.aspose.email.MapiTask;
    import com.aspose.email.TaskSaveFormat;
 
    MapiTask task = new MapiTask("To Do", "Just click and type to add a new task", startDate, endDate);
-task.setPercentComplete(20);
+المهمة.setPercentComplete(20);
    task.setEstimatedEffort(2000);
-   task.setActualEffort(20);
+   المهمة.setActualEffort(20);
    task.setHistory(MapiTaskHistory.Assigned);
 
-   task.getUsers().setOwner("Darius");
-   task.getUsers().setLastAssigner("Harkness");
-   task.getUsers().setLastDelegate("Harkness");
+   task.getUsers().setOwner("داريوس");
+   task.getUsers().setLastAssigner("هاركنيس");
+   task.getUsers().setLastDelegate("هاركنيس");
    task.getUsers().setOwnership(MapiTaskOwnership.AssignersCopy);
 
-   String[] companies = { "company1", "company2", "company3" };
-   task.setCompanies(companies);
-   String[] categories = { "category1", "category2", "category3" };
-   task.setCategories(categories);
+   سلسلة[] الشركات = { "company1"، "company2"، "company3" }؛
+   task.setCompanies(الشركات)؛
+   سلسلة[] الفئات = { "category1"، "category2"، "category3" };
+   task.setCategories(الفئات)؛
 
-   task.setMileage("Some test mileage");
-task.setBilling("Test billing information");
-   task.getUsers().setDelegator("Test Delegator");
+   task.setMileage("بعض مسافة الاختبار");
+task.setBilling("اختبار معلومات الفوترة");
+   task.getUsers().setDelegator("اختبار المفوض");
    task.setSensitivity(com.aspose.email.MapiSensitivity.Personal);
-   task.setStatus(MapiTaskStatus.Complete);
+   Task.setStatus(MapiTaskStatus.Complete);
    ```
 
 3. **Save the Task:**
@@ -117,12 +117,12 @@ task.setBilling("Test billing information");
 task.save(YOUR_OUTPUT_DIRECTORY + "MapiTask_out.msg", TaskSaveFormat.Msg);
 ```
 
-#### Reading a MAPI Task
+#### قراءة مهمة MAPI
 **ملخص:**
-Learn how to read an existing MAPI task from an MSG file.
+تعرف على كيفية قراءة مهمة MAPI الموجودة من ملف MSG.
 
 **خطوات:**
-1. **Load the MAPI Message:**
+1. **تحميل رسالة MAPI:**
 
    ```java
    import com.aspose.email.MapiMessage;
@@ -131,18 +131,18 @@ Learn how to read an existing MAPI task from an MSG file.
    MapiMessage msg = MapiMessage.fromFile(YOUR_DOCUMENT_DIRECTORY + "MapiTask_out.msg");
    ```
 
-2. **Convert to MapiTask Object:**
+2. **التحويل إلى كائن MapiTask:**
 
    ```java
    MapiTask task2 = (MapiTask) msg.toMapiMessageItem();
    ```
 
-#### Reading a VToDo Task
+#### قراءة مهمة VToDo
 **ملخص:**
-This section covers reading and converting an ICS file into a MAPI task.
+يتناول هذا القسم قراءة ملف ICS وتحويله إلى مهمة MAPI.
 
 **خطوات:**
-1. **Load the VToDo Task from ICS File:**
+1. **قم بتحميل مهمة VToDo من ملف ICS:**
 
    ```java
    import com.aspose.email.MapiTask;
@@ -151,10 +151,10 @@ This section covers reading and converting an ICS file into a MAPI task.
    MapiTask task = MapiTask.fromVTodo(YOUR_DOCUMENT_DIRECTORY + "sample.ics");
    ```
 
-2. **Convert and Save the Task:**
+2. **تحويل وحفظ المهمة:**
 
    ```java
-task.save(YOUR_OUTPUT_DIRECTORY + "Test_out.msg", TaskSaveFormat.Msg);
+task.save(دليل الإخراج الخاص بك + "Test_out.msg"، TaskSaveFormat.Msg)؛
 ```
 
 #### Adding Reminder Information to a MAPI Task
@@ -174,13 +174,13 @@ calendar.set(2012, Calendar.NOVEMBER, 1, 0, 0, 0);
 Date date = calendar.getTime();
 ```
 
-2. **Create Task with Reminder:**
+2. **إنشاء مهمة مع تذكير:**
 
    ```java
    MapiTask testTask = new MapiTask("task with reminder", "this is a body", date, date);
 testTask.setReminderSet(true);
 testTask.setReminderTime(date);
-testTask.setReminderFileParameter(YOUR_DOCUMENT_DIRECTORY + "Alarm01.wav");
+testTask.setReminderFileParameter(دليل المستندات الخاص بك + "Alarm01.wav");
 ```
 
 3. **Save the Task:**
@@ -189,12 +189,12 @@ testTask.setReminderFileParameter(YOUR_DOCUMENT_DIRECTORY + "Alarm01.wav");
 testTask.save(YOUR_OUTPUT_DIRECTORY + "OutputTask_out.msg", TaskSaveFormat.Msg);
 ```
 
-#### Adding Attachment to a MAPI Task
+#### إضافة مرفق إلى مهمة MAPI
 **ملخص:**
-Enhance your tasks with attachments for additional context and information.
+قم بتعزيز مهامك باستخدام المرفقات للحصول على سياق ومعلومات إضافية.
 
 **خطوات:**
-1. **Create a New MapiTask:**
+1. **إنشاء MapiTask جديد:**
 
    ```java
    import java.io.IOException;
@@ -206,17 +206,17 @@ Enhance your tasks with attachments for additional context and information.
    MapiTask task = new MapiTask("To Do", "Just click and type to add new tasks", new Date(), new Date());
    ```
 
-2. **Add Attachment:**
+2. **إضافة المرفق:**
 
    ```java
    Path p = Paths.get(YOUR_DOCUMENT_DIRECTORY + "sample.txt");
    task.getAttachments().addFileAttachment(p, "sample.txt");
    ```
 
-3. **Save the Task with Attachment:**
+3. **حفظ المهمة مع المرفق:**
 
    ```java
-task.save(YOUR_OUTPUT_DIRECTORY + "MapiTask_with_Attachment.msg", TaskSaveFormat.Msg);
+task.save(دليل الإخراج الخاص بك + "MapiTask_with_Attachment.msg"، TaskSaveFormat.Msg)؛
 ```
 
 ### Practical Applications

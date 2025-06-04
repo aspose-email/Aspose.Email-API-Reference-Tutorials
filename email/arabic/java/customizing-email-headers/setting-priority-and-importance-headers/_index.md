@@ -1,8 +1,8 @@
 ---
-"description": "Boost your email impact by setting priority and importance headers with Aspose.Email for Java. Learn how in this step-by-step guide."
-"linktitle": "Setting Priority and Importance Headers with Aspose.Email"
+"description": "عزّز تأثير بريدك الإلكتروني بتحديد عناوين الأولوية والأهمية باستخدام Aspose.Email لجافا. تعرّف على كيفية القيام بذلك في هذا الدليل التفصيلي."
+"linktitle": "تعيين عناوين الأولوية والأهمية باستخدام Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Setting Priority and Importance Headers with Aspose.Email"
+"title": "تعيين عناوين الأولوية والأهمية باستخدام Aspose.Email"
 "url": "/ar/java/customizing-email-headers/setting-priority-and-importance-headers/"
 "weight": 14
 ---
@@ -13,59 +13,59 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Setting Priority and Importance Headers with Aspose.Email
+# تعيين عناوين الأولوية والأهمية باستخدام Aspose.Email
 
 
 ## مقدمة
 
-In this comprehensive guide, we will walk you through the steps of using Aspose.Email for Java to set priority and importance headers in your emails. Whether you're sending important business proposals or simply want to emphasize the urgency of your message, this tutorial has got you covered.
+في هذا الدليل الشامل، سنشرح لك خطوات استخدام Aspose.Email لجافا لتحديد أولوية عناوين رسائل البريد الإلكتروني وأهميتها. سواءً كنت ترسل مقترحات عمل مهمة أو ترغب ببساطة في التأكيد على أهمية رسالتك، فهذا الدليل سيُغطي جميع احتياجاتك.
 
 ## المتطلبات الأساسية
 
-Before diving into the implementation, make sure you have the following prerequisites in place:
+قبل البدء في التنفيذ، تأكد من توفر المتطلبات الأساسية التالية:
 
-- Java Development Kit (JDK) installed on your system.
-- Aspose.Email for Java library. You can download it from [هنا](https://releases.aspose.com/email/java/).
+- تم تثبيت Java Development Kit (JDK) على نظامك.
+- مكتبة Aspose.Email لجافا. يمكنك تنزيلها من [هنا](https://releases.aspose.com/email/java/).
 
-## Step 1: Create a Java Project
+## الخطوة 1: إنشاء مشروع Java
 
-Start by creating a new Java project in your preferred Integrated Development Environment (IDE). Ensure that you have added the Aspose.Email library to your project's dependencies.
+ابدأ بإنشاء مشروع جافا جديد في بيئة التطوير المتكاملة (IDE) المُفضّلة لديك. تأكد من إضافة مكتبة Aspose.Email إلى تبعيات مشروعك.
 
-## Step 2: Import Aspose.Email Classes
+## الخطوة 2: استيراد فئات Aspose.Email
 
-Import the necessary Aspose.Email classes into your Java code. These classes will enable you to work with email messages and set priority and importance headers.
+استورد فئات Aspose.Email اللازمة إلى شيفرة Java. ستُمكّنك هذه الفئات من العمل مع رسائل البريد الإلكتروني وتحديد أولوية عناوينها وأهميتها.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Step 3: Create an Email Message
+## الخطوة 3: إنشاء رسالة بريد إلكتروني
 
-To set priority and importance headers, you first need to create an email message. Here's how you can create a simple email message using Aspose.Email:
+لتعيين أولوية وأهمية العناوين، عليك أولاً إنشاء رسالة بريد إلكتروني. إليك كيفية إنشاء رسالة بريد إلكتروني بسيطة باستخدام Aspose.Email:
 
 ```java
-// Create a new email message
+// إنشاء رسالة بريد إلكتروني جديدة
 MailMessage message = new MailMessage();
 
-// Set sender and recipient addresses
+// تعيين عناوين المرسل والمستلم
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Set the subject and body of the email
+// تعيين موضوع ونص البريد الإلكتروني
 message.setSubject("Important Meeting");
 
-// Add the email body
+// أضف نص البريد الإلكتروني
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Set the email priority
+// تعيين أولوية البريد الإلكتروني
 message.setPriority(MailPriority.High);
 ```
 
-In the code above, we've created an email message, set the sender and recipient addresses, specified the subject and body of the email, and finally, set the email's priority to "High."
+في الكود أعلاه، قمنا بإنشاء رسالة بريد إلكتروني، وتعيين عناوين المرسل والمستلم، وتحديد موضوع ونص البريد الإلكتروني، وأخيرًا، تعيين أولوية البريد الإلكتروني إلى "عالية".
 
-## Step 5: Send the Email
+## الخطوة 5: إرسال البريد الإلكتروني
 
-Once you've configured the email message with the desired priority and importance, it's time to send it. Aspose.Email simplifies the email sending process as well:
+بعد ضبط رسالة البريد الإلكتروني بالأولوية والأهمية المطلوبة، حان وقت إرسالها. يُبسّط Aspose.Email عملية الإرسال أيضًا:
 
 ```java
 // إنشاء مثيل لفئة SmtpClient
@@ -79,29 +79,29 @@ client.send(message);
 
 ## خاتمة
 
-In this tutorial, we've explored how to use Aspose.Email for Java to set priority and importance headers in your email messages. By following these steps, you can ensure that your emails are delivered with the right level of urgency and importance, improving communication with your recipients.
+في هذا البرنامج التعليمي، استكشفنا كيفية استخدام Aspose.Email لجافا لتحديد عناوين الأولوية والأهمية في رسائل البريد الإلكتروني. باتباع هذه الخطوات، يمكنك ضمان وصول رسائلك بالمستوى المطلوب من الأهمية والإلحاح، مما يُحسّن التواصل مع المستلمين.
 
 ## الأسئلة الشائعة
 
-### How can I change the priority of an email to "Low"?
+### كيف يمكنني تغيير أولوية البريد الإلكتروني إلى "منخفضة"؟
 
-To change the email priority to "Low," simply use the `MailPriority.Low` enum when setting the priority, as shown in Step 3.
+لتغيير أولوية البريد الإلكتروني إلى "منخفضة"، استخدم ببساطة `MailPriority.Low` عند تعيين الأولوية، كما هو موضح في الخطوة 3.
 
 ### هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟
 
-Yes, Aspose.Email is available for various programming languages, including .NET, Python, and Android. You can find the relevant libraries on the Aspose website.
+نعم، Aspose.Email متاح لمختلف لغات البرمجة، بما في ذلك .NET وPython وAndroid. يمكنك العثور على المكتبات ذات الصلة على موقع Aspose الإلكتروني.
 
-### Is it possible to set both priority and importance for an email?
+### هل من الممكن تحديد الأولوية والأهمية للبريد الإلكتروني؟
 
-Absolutely! You can set both the priority and importance headers to tailor your message's urgency and significance.
+بالتأكيد! يمكنك تحديد عناوين الأولوية والأهمية لتخصيص مدى إلحاح رسالتك وأهميتها.
 
-### Are there any limitations to email importance headers?
+### هل هناك أي قيود على عناوين أهمية البريد الإلكتروني؟
 
-While you can set importance headers, keep in mind that the actual impact on the recipient's inbox may vary depending on their email client.
+على الرغم من أنه يمكنك تعيين رؤوس الأهمية، ضع في اعتبارك أن التأثير الفعلي على صندوق الوارد الخاص بالمستلم قد يختلف وفقًا لعميل البريد الإلكتروني الخاص به.
 
 ### كيف أتعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email؟
 
-Handling email attachments with Aspose.Email is straightforward. You can use the `Attachment` class to add attachments to your email messages. For a detailed guide, refer to the Aspose.Email documentation.
+التعامل مع مرفقات البريد الإلكتروني باستخدام Aspose.Email سهل للغاية. يمكنك استخدام `Attachment` لإضافة مرفقات إلى رسائل بريدك الإلكتروني. للاطلاع على دليل مفصل، راجع وثائق Aspose.Email.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

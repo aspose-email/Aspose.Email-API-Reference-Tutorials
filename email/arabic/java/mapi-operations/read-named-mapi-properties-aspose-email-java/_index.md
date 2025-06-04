@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently extract named MAPI properties from emails and attachments using Aspose.Email for Java. This step-by-step guide covers setup, code examples, and practical applications."
-"title": "Read Named MAPI Properties in Java with Aspose.Email&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية استخراج خصائص MAPI المُسمّاة بكفاءة من رسائل البريد الإلكتروني والمرفقات باستخدام Aspose.Email لـ Java. يغطي هذا الدليل خطوة بخطوة الإعداد، وأمثلة التعليمات البرمجية، والتطبيقات العملية."
+"title": "اقرأ خصائص MAPI المسماة في Java باستخدام Aspose.Email - دليل شامل"
 "url": "/ar/java/mapi-operations/read-named-mapi-properties-aspose-email-java/"
 "weight": 1
 ---
@@ -11,40 +11,40 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Read Named MAPI Properties Using Aspose.Email in Java
+# كيفية قراءة خصائص MAPI المسماة باستخدام Aspose.Email في Java
 
 ## مقدمة
 
-Extracting specific named properties from emails or attachments can be complex, especially with Microsoft Outlook's MAPI format. If you're developing a Java application that needs this functionality, Aspose.Email for Java is an ideal solution. This tutorial will guide you through reading Named MAPI Properties effectively.
+قد يكون استخراج خصائص مُسمّاة مُحددة من رسائل البريد الإلكتروني أو المرفقات مُعقّدًا، خاصةً مع تنسيق MAPI في Microsoft Outlook. إذا كنت تُطوّر تطبيق Java يحتاج إلى هذه الوظيفة، فإن Aspose.Email for Java هو الحل الأمثل. سيُرشدك هذا البرنامج التعليمي إلى كيفية فهم خصائص MAPI المُسمّاة بفعالية.
 
 **ما سوف تتعلمه:**
-- Setting up and configuring Aspose.Email for Java.
-- Extracting named properties from `MapiMessage` أشياء.
-- Retrieving properties directly from email attachments.
-- Real-world applications of reading MAPI properties.
+- إعداد وتكوين Aspose.Email لـ Java.
+- استخراج الخصائص المسماة من `MapiMessage` أشياء.
+- استرجاع الخصائص مباشرة من مرفقات البريد الإلكتروني.
+- التطبيقات الواقعية لقراءة خصائص MAPI.
 
-Before we dive in, let's go over the prerequisites you'll need.
+قبل أن نبدأ، دعنا نستعرض المتطلبات الأساسية التي ستحتاجها.
 
 ## المتطلبات الأساسية
 
-Ensure you have:
-- **Java Development Kit (JDK)**: JDK 16 or higher installed on your system.
-- **Maven**: Familiarity with Maven for dependency management.
-- **Aspose.Email for Java Library**: Essential for the tasks we'll perform.
+تأكد من أن لديك:
+- **مجموعة تطوير جافا (JDK)**:تم تثبيت JDK 16 أو أعلى على نظامك.
+- **مافن**:المعرفة بـ Maven لإدارة التبعيات.
+- **Aspose.Email لمكتبة Java**:ضروري للمهام التي سنقوم بأدائها.
 
 ### متطلبات إعداد البيئة
-1. Install and configure JDK 16+ on your machine.
-2. Set up a Maven-based project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
+1. قم بتثبيت وتكوين JDK 16+ على جهازك.
+2. قم بإعداد مشروع قائم على Maven في IDE المفضل لديك (على سبيل المثال، IntelliJ IDEA، Eclipse).
 
 ### متطلبات المعرفة
-You should understand:
-- Basic Java programming concepts.
-- Managing dependencies with Maven.
-- The structure of email messages.
+يجب عليك أن تفهم:
+- مفاهيم برمجة جافا الأساسية.
+- إدارة التبعيات باستخدام Maven.
+- هيكل رسائل البريد الإلكتروني.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To use Aspose.Email for Java, add it as a dependency in your `pom.xml` file using Maven:
+لاستخدام Aspose.Email لـ Java، أضفه كتبعية في `pom.xml` الملف باستخدام Maven:
 
 ```xml
 <dependency>
@@ -56,20 +56,20 @@ To use Aspose.Email for Java, add it as a dependency in your `pom.xml` file usin
 ```
 
 ### الحصول على الترخيص
-To utilize Aspose.Email for Java, you can:
-- **نسخة تجريبية مجانية**: Download a trial version to test functionalities.
+لاستخدام Aspose.Email لـ Java، يمكنك:
+- **نسخة تجريبية مجانية**:قم بتنزيل النسخة التجريبية لاختبار الوظائف.
 - **رخصة مؤقتة**:الحصول عليها من [موقع Aspose](https://purchase.aspose.com/temporary-license/).
-- **شراء**: Buy a full license for long-term access.
+- **شراء**:شراء ترخيص كامل للوصول على المدى الطويل.
 
 ### التهيئة الأساسية
-After setting up your Maven project and adding the dependency, initialize Aspose.Email as follows:
+بعد إعداد مشروع Maven وإضافة التبعية، قم بتهيئة Aspose.Email على النحو التالي:
 
 ```java
 import com.aspose.email.License;
 
 public class InitializeAspose {
     public static void main(String[] args) {
-        // Apply license (if available)
+        // تقديم طلب الترخيص (إن وجد)
         License license = new License();
         try {
             license.setLicense("path/to/your/license/file.lic");
@@ -82,15 +82,15 @@ public class InitializeAspose {
 
 ## دليل التنفيذ
 
-### Reading Named MAPI Properties from a `MapiMessage` Object
+### قراءة خصائص MAPI المسماة من `MapiMessage` هدف
 
-This section demonstrates how to extract specific named properties directly from a `MapiMessage`.
+يوضح هذا القسم كيفية استخراج خصائص محددة مسماة مباشرة من `MapiMessage`.
 
 #### ملخص
-We'll read named properties like "TEST" and "MYPROP" from an email stored in the MSG format.
+سوف نقرأ خصائص مسماة مثل "TEST" و"MYPROP" من رسالة بريد إلكتروني مخزنة بتنسيق MSG.
 
 #### خطوات:
-##### Step 1: Load the MSG File
+##### الخطوة 1: تحميل ملف MSG
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -104,10 +104,10 @@ public class ReadNamedMapiPropertiesFeature {
     
     @SuppressWarnings("unchecked")
     public static void readNamedMAPIProperty(String dataDir) {
-        // Load the MSG file
+        // تحميل ملف MSG
         MapiMessage message = MapiMessage.fromFile(dataDir + "message.msg");
         
-        // Retrieve named properties
+        // استرداد الخصائص المسماة
         for (MapiNamedProperty mapiNamedProp : (Iterable<MapiNamedProperty>) message.getNamedProperties().getValues()) {
             switch (mapiNamedProp.getNameId()) {
                 case "TEST":
@@ -123,18 +123,18 @@ public class ReadNamedMapiPropertiesFeature {
 ```
 
 **توضيح:**
-- **`fromFile()`**: Loads the MSG file from your specified directory.
-- **`getNamedProperties().getValues()`**: Iterates over each named property, allowing you to filter and process as needed.
+- **`fromFile()`**:يقوم بتحميل ملف MSG من الدليل المحدد.
+- **`getNamedProperties().getValues()`**:يتكرر كل خاصية مسماة، مما يسمح لك بالتصفية والمعالجة حسب الحاجة.
 
-### Reading Named MAPI Properties from an Attachment
+### قراءة خصائص MAPI المسماة من مرفق
 
-This section demonstrates how to extract properties from attachments within a `MapiMessage`.
+يوضح هذا القسم كيفية استخراج الخصائص من المرفقات داخل `MapiMessage`.
 
 #### ملخص
-We'll retrieve custom properties like "CustomAttGuid" from the first attachment of an email stored in EML format.
+سوف نقوم باسترجاع خصائص مخصصة مثل "CustomAttGuid" من المرفق الأول للبريد الإلكتروني المخزن بتنسيق EML.
 
 #### خطوات:
-##### Step 1: Load and Convert the EML File
+##### الخطوة 1: تحميل ملف EML وتحويله
 
 ```java
 import com.aspose.email.MailMessage;
@@ -148,11 +148,11 @@ public class ReadMapiPropertyFromAttachmentFeature {
     
     @SuppressWarnings("unchecked")
     public static void readNamedMapiPropertyFromAttachment(String dataDir) {
-        // Load the EML file and convert to MapiMessage
+        // قم بتحميل ملف EML وتحويله إلى MapiMessage
         MailMessage mail = MailMessage.load(dataDir + "test.eml");
         MapiMessage mapi = MapiMessage.fromMailMessage(mail);
         
-        // Access named properties from the first attachment
+        // الوصول إلى الخصائص المسماة من المرفق الأول
         MapiAttachment firstAttachment = mapi.getAttachments().get_Item(0);
         for (MapiNamedProperty namedProperty : (Iterable<MapiNamedProperty>) firstAttachment.getNamedProperties().getValues()) {
             if (namedProperty.getNameId().equalsIgnoreCase("CustomAttGuid")) {
@@ -164,43 +164,43 @@ public class ReadMapiPropertyFromAttachmentFeature {
 ```
 
 **توضيح:**
-- **`MailMessage.load()`**: Loads the EML file.
-- **`fromMailMessage()`**:يحول `MailMessage` object into a `MapiMessage`.
-- **Accessing Attachments**: Retrieve properties from attachments using `getAttachments().get_Item(0)`.
+- **`MailMessage.load()`**:يقوم بتحميل ملف EML.
+- **`fromMailMessage()`**:يحول `MailMessage` كائن في `MapiMessage`.
+- **الوصول إلى المرفقات**:استرداد الخصائص من المرفقات باستخدام `getAttachments().get_Item(0)`.
 
 ## التطبيقات العملية
 
-Reading named MAPI properties has several real-world applications:
-1. **Email Filtering and Categorization**: Automatically categorize emails based on custom metadata.
-2. **أرشفة البيانات**: Extract specific data for archiving purposes.
-3. **التكامل مع أنظمة إدارة علاقات العملاء**: Sync email metadata with customer relationship management systems.
-4. **الامتثال والتدقيق**: Ensure compliance by extracting properties as per regulatory requirements.
+قراءة خصائص MAPI المسماة لها العديد من التطبيقات في العالم الحقيقي:
+1. **تصفية البريد الإلكتروني وتصنيفه**:تصنيف رسائل البريد الإلكتروني تلقائيًا استنادًا إلى البيانات الوصفية المخصصة.
+2. **أرشفة البيانات**:استخراج بيانات محددة لأغراض الأرشفة.
+3. **التكامل مع أنظمة إدارة علاقات العملاء**:مزامنة بيانات البريد الإلكتروني مع أنظمة إدارة علاقات العملاء.
+4. **الامتثال والتدقيق**:ضمان الامتثال من خلال استخراج الخصائص وفقًا للمتطلبات التنظيمية.
 
 ## اعتبارات الأداء
 
-When working with Aspose.Email in Java, consider the following:
-- Optimize file handling: Minimize I/O operations by processing files efficiently.
-- Manage memory usage: Handle large emails without exhausting system resources.
-- يستخدم `try-with-resources` for automatic resource management where applicable.
+عند العمل مع Aspose.Email في Java، ضع ما يلي في الاعتبار:
+- تحسين التعامل مع الملفات: تقليل عمليات الإدخال/الإخراج من خلال معالجة الملفات بكفاءة.
+- إدارة استخدام الذاكرة: تعامل مع رسائل البريد الإلكتروني الكبيرة دون استنفاد موارد النظام.
+- يستخدم `try-with-resources` لإدارة الموارد تلقائيًا عند الاقتضاء.
 
 ## خاتمة
 
-In this tutorial, you've learned how to read named MAPI properties from both `MapiMessage` objects and attachments using Aspose.Email for Java. These techniques enable efficient email data manipulation within your applications.
+في هذا البرنامج التعليمي، تعلمت كيفية قراءة خصائص MAPI المسماة من كلا `MapiMessage` الكائنات والمرفقات باستخدام Aspose.Email لجافا. تتيح هذه التقنيات معالجة بيانات البريد الإلكتروني بكفاءة داخل تطبيقاتك.
 
 **الخطوات التالية:**
-- Experiment with additional property types and explore the full capabilities of Aspose.Email.
-- Consider integrating these features into larger projects or systems you’re developing.
+- قم بتجربة أنواع الخصائص الإضافية واستكشف الإمكانات الكاملة لـ Aspose.Email.
+- فكر في دمج هذه الميزات في المشاريع أو الأنظمة الأكبر التي تقوم بتطويرها.
 
-Why not give it a try? Implementing this solution can significantly enhance how you manage and utilize email data in Java!
+لمَ لا تُجرّبه؟ تطبيق هذا الحل سيُحسّن بشكل كبير طريقة إدارة بيانات البريد الإلكتروني واستخدامها في جافا!
 
 ## قسم الأسئلة الشائعة
 
-1. **How do I handle large emails efficiently with Aspose.Email?**
-   - Utilize streaming APIs to process attachments without loading entire files into memory.
-2. **Can I read properties from multiple attachments simultaneously?**
-   - Yes, iterate over the attachment collection and apply similar property extraction logic for each item.
-3. **What if my application needs to handle emails in formats other than MSG or EML?**
-   - Aspose.Email supports various email formats; refer to [توثيق Aspose](https://docs.aspose.com/email/java/) لمزيد من التفاصيل.
+1. **كيف أتعامل مع رسائل البريد الإلكتروني الكبيرة بكفاءة باستخدام Aspose.Email؟**
+   - استخدم واجهات برمجة التطبيقات المتدفقة لمعالجة المرفقات دون تحميل الملفات بالكامل في الذاكرة.
+2. **هل يمكنني قراءة الخصائص من مرفقات متعددة في نفس الوقت؟**
+   - نعم، قم بالتكرار عبر مجموعة المرفقات وقم بتطبيق منطق استخراج الخصائص المماثل لكل عنصر.
+3. **ماذا لو احتاج تطبيقي إلى التعامل مع رسائل البريد الإلكتروني بتنسيقات أخرى غير MSG أو EML؟**
+   - يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة؛ راجع [توثيق Aspose](https://docs.aspose.com/email/java/) لمزيد من التفاصيل.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

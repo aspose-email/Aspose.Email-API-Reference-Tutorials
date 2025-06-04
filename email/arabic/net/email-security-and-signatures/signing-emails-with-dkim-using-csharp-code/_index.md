@@ -1,8 +1,8 @@
 ---
-"description": "Learn to secure emails with DKIM using C# & Aspose.Email for .NET. Step-by-step guide with source code. Enhance email trust & authenticity."
-"linktitle": "Signing Emails with DKIM using C# Code"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Signing Emails with DKIM using C# Code"
+"description": "تعلم كيفية تأمين رسائل البريد الإلكتروني باستخدام DKIM باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري. عزز موثوقية البريد الإلكتروني ومصداقيته."
+"linktitle": "توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام كود C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام كود C#"
 "url": "/ar/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/"
 "weight": 11
 ---
@@ -13,28 +13,28 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Signing Emails with DKIM using C# Code
+# توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام كود C#
 
 
-In today's digital world, ensuring the authenticity and integrity of email communications is of paramount importance. One way to achieve this is by using DomainKeys Identified Mail (DKIM) signatures. In this step-by-step guide, we will explore how to sign emails with DKIM using C# and the powerful Aspose.Email for .NET library.
+في عالمنا الرقمي اليوم، يُعدّ ضمان صحة وسلامة رسائل البريد الإلكتروني أمرًا بالغ الأهمية. ومن طرق تحقيق ذلك استخدام توقيعات البريد المُعرَّف بمفاتيح النطاق (DKIM). في هذا الدليل المُفصَّل، سنستكشف كيفية توقيع رسائل البريد الإلكتروني باستخدام DKIM باستخدام لغة C# ومكتبة Aspose.Email القوية لـ .NET.
 
-## Introduction to DKIM
+## مقدمة إلى DKIM
 
-### What is DKIM?
-DKIM stands for DomainKeys Identified Mail. It is an email authentication method that allows the sender to digitally sign an email, providing a cryptographic signature that verifies the email's authenticity.
+### ما هو DKIM؟
+DKIM هو اختصار لـ DomainKeys Identified Mail (البريد المُعرَّف بمفاتيح النطاق). وهو أسلوب مصادقة للبريد الإلكتروني يسمح للمُرسِل بالتوقيع رقميًا على البريد الإلكتروني، مما يوفر توقيعًا تشفيريًا يُؤكِّد صحة البريد الإلكتروني.
 
-### Why is DKIM Important?
-DKIM helps in preventing email spoofing and phishing attacks by ensuring that incoming emails are from legitimate sources and haven't been tampered with during transit.
+### لماذا يعد DKIM مهمًا؟
+يساعد DKIM في منع انتحال البريد الإلكتروني وهجمات التصيد الاحتيالي من خلال التأكد من أن رسائل البريد الإلكتروني الواردة تأتي من مصادر مشروعة ولم يتم العبث بها أثناء النقل.
 
 ## المتطلبات الأساسية
 
-Before we begin, make sure you have the following prerequisites in place:
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
-1. Aspose.Email for .NET: Ensure you have the Aspose.Email for .NET library installed in your project. You can download it from [هنا](https://releases.aspose.com/email/net/).
+1. Aspose.Email لـ .NET: تأكد من تثبيت مكتبة Aspose.Email لـ .NET في مشروعك. يمكنك تنزيلها من [هنا](https://releases.aspose.com/email/net/).
 
-2. DKIM Private Key: You will need a DKIM private key to sign your emails. Make sure you have it ready. 
+2. مفتاح DKIM الخاص: ستحتاج إلى مفتاح DKIM خاص لتوقيع رسائل بريدك الإلكتروني. تأكد من تجهيزه. 
 
-## Step 1: Initialize DKIM Parameters
+## الخطوة 1: تهيئة معلمات DKIM
 
 ```csharp
 string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
@@ -45,9 +45,9 @@ signInfo.Headers.Add("From");
 signInfo.Headers.Add("Subject");
 ```
 
-In this step, we initialize the DKIM parameters. We load the private key from the file, specify the selector and domain, and list the headers that should be included in the DKIM signature.
+في هذه الخطوة، نقوم بتهيئة معلمات DKIM. نحمّل المفتاح الخاص من الملف، ونحدد المُحدِّد والنطاق، ونُدرِج العناوين التي يجب تضمينها في توقيع DKIM.
 
-## Step 2: Create and Prepare the Email
+## الخطوة 2: إنشاء البريد الإلكتروني وإعداده
 
 ```csharp
 MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
@@ -55,17 +55,17 @@ mailMessage.Subject = "Signed DKIM message text body";
 mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-Here, we create an instance of the `MailMessage` class and set the sender, recipient, subject, and body of the email.
+هنا، نقوم بإنشاء مثيل لـ `MailMessage` الفئة وتعيين المرسل والمستقبل والموضوع ونص البريد الإلكتروني.
 
-## Step 3: Sign the Email
+## الخطوة 3: توقيع البريد الإلكتروني
 
 ```csharp
 MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-Now, we sign the email using the DKIM parameters and private key we initialized earlier.
+الآن، نقوم بتوقيع البريد الإلكتروني باستخدام معلمات DKIM والمفتاح الخاص الذي قمنا بتهيئته مسبقًا.
 
-## Step 4: Send the Signed Email
+## الخطوة 4: إرسال البريد الإلكتروني الموقع
 
 ```csharp
 try
@@ -75,12 +75,12 @@ try
 }
 finally
 {
-    // Cleanup code, if any
+    // رمز التنظيف، إن وجد
 }
 ```
-In this step, we send the signed email using an SMTP client. Ensure you replace `"your.email@gmail.com"` و `"your.password"` with your Gmail credentials.
+في هذه الخطوة، نرسل البريد الإلكتروني المُوقّع باستخدام عميل SMTP. تأكد من استبدال `"your.email@gmail.com"` و `"your.password"` باستخدام بيانات اعتماد Gmail الخاصة بك.
 
-## Compelete Source Code
+## كود المصدر الكامل
 ```csharp
 
 string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP()+ "key2.pem");
@@ -106,31 +106,31 @@ finally
 
 ## خاتمة
 
-Signing emails with DKIM is a crucial step in ensuring the security and authenticity of your email communications. With the help of Aspose.Email for .NET and C#, you can easily implement DKIM signatures in your email sending process.
+يُعد توقيع رسائل البريد الإلكتروني باستخدام DKIM خطوةً أساسيةً لضمان أمان ومصداقية مراسلاتك. بمساعدة Aspose.Email لـ .NET وC#، يمكنك بسهولة تطبيق توقيعات DKIM في عملية إرسال بريدك الإلكتروني.
 
 ---
 
-## Frequently Asked Questions
+## الأسئلة الشائعة
 
-### Q1: What is DKIM, and why is it important for email security?
+### س1: ما هو DKIM، ولماذا هو مهم لأمان البريد الإلكتروني؟
 
-DKIM stands for DomainKeys Identified Mail, and it is important for email security because it verifies the authenticity of email messages, preventing spoofing and phishing.
+DKIM تعني DomainKeys Identified Mail، وهو مهم لأمان البريد الإلكتروني لأنه يتحقق من صحة رسائل البريد الإلكتروني، ويمنع التصيد الاحتيالي.
 
-### Q2: How do I obtain a DKIM private key?
+### س2: كيف يمكنني الحصول على مفتاح DKIM الخاص؟
 
-You can obtain a DKIM private key through your email service provider or by generating one using cryptographic tools.
+يمكنك الحصول على مفتاح DKIM الخاص من خلال مزود خدمة البريد الإلكتروني الخاص بك أو عن طريق إنشاء مفتاح باستخدام أدوات التشفير.
 
-### Q3: Can I use Aspose.Email for .NET with other email providers besides Gmail?
+### س3: هل يمكنني استخدام Aspose.Email لـ .NET مع موفري البريد الإلكتروني الآخرين بالإضافة إلى Gmail؟
 
-Yes, Aspose.Email for .NET can be used with various email providers, not limited to Gmail.
+نعم، يمكن استخدام Aspose.Email لـ .NET مع العديد من موفري البريد الإلكتروني، وليس فقط Gmail.
 
-### Q4: What headers should I include in the DKIM signature?
+### س4: ما هي العناوين التي يجب أن أدرجها في توقيع DKIM؟
 
-Common headers to include in the DKIM signature are "From," "Subject," and any other headers that are important for email authentication.
+العناوين الشائعة التي يجب تضمينها في توقيع DKIM هي "من" و"الموضوع" وأي عناوين أخرى مهمة لمصادقة البريد الإلكتروني.
 
-### Q5: Is DKIM the only method for email authentication?
+### س5: هل DKIM هي الطريقة الوحيدة لمصادقة البريد الإلكتروني؟
 
-No, there are other methods like SPF and DMARC that are used in conjunction with DKIM for enhanced email security.
+لا، هناك طرق أخرى مثل SPF وDMARC التي يتم استخدامها بالاشتراك مع DKIM لتحسين أمان البريد الإلكتروني.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

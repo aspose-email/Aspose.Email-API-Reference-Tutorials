@@ -1,8 +1,8 @@
 ---
-"description": "Learn to receive email notifications in C# using Aspose.Email for .NET. Efficient code example provided."
-"linktitle": "Receiving Email Notifications with C# Code"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Receiving Email Notifications with C# Code"
+"description": "تعلم كيفية استقبال إشعارات البريد الإلكتروني بلغة C# باستخدام Aspose.Email لـ .NET. مثال برمجي فعال متوفر."
+"linktitle": "تلقي إشعارات البريد الإلكتروني باستخدام كود C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "تلقي إشعارات البريد الإلكتروني باستخدام كود C#"
 "url": "/ar/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/"
 "weight": 10
 ---
@@ -13,89 +13,89 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Receiving Email Notifications with C# Code
+# تلقي إشعارات البريد الإلكتروني باستخدام كود C#
 
 
 
-In the digital age, communication is essential, and email remains one of the most popular means of exchanging information. As a developer, you might find yourself needing to send and receive email notifications in your applications. In this step-by-step tutorial, we will explore how to receive email notifications with C# using Aspose.Email for .NET.
+في العصر الرقمي، يُعدّ التواصل أمرًا بالغ الأهمية، ويظل البريد الإلكتروني من أكثر وسائل تبادل المعلومات شيوعًا. بصفتك مطورًا، قد تحتاج إلى إرسال واستقبال إشعارات البريد الإلكتروني في تطبيقاتك. في هذا البرنامج التعليمي المفصل، سنستكشف كيفية استقبال إشعارات البريد الإلكتروني باستخدام لغة C# باستخدام Aspose.Email لـ .NET.
 
 ## مقدمة
 
-Email notifications are crucial for keeping users informed about important events or updates in your application. Aspose.Email for .NET provides a powerful and easy-to-use solution for handling email-related tasks in your C# applications. In this tutorial, we will focus on receiving email notifications.
+إشعارات البريد الإلكتروني ضرورية لإبقاء المستخدمين على اطلاع بالأحداث أو التحديثات المهمة في تطبيقك. يوفر Aspose.Email لـ .NET حلاً فعالاً وسهل الاستخدام لإدارة مهام البريد الإلكتروني في تطبيقات C#. في هذا البرنامج التعليمي، سنركز على تلقي إشعارات البريد الإلكتروني.
 
-## Setting up Aspose.Email
+## إعداد Aspose.Email
 
-Before we dive into the code, you need to set up Aspose.Email for .NET in your project. Here's how you can do it:
+قبل التعمق في الكود، عليك إعداد Aspose.Email لـ .NET في مشروعك. إليك كيفية القيام بذلك:
 
-1. Install Aspose.Email: Begin by installing the Aspose.Email for .NET library in your project. You can do this via NuGet Package Manager.
+1. تثبيت Aspose.Email: ابدأ بتثبيت مكتبة Aspose.Email لـ .NET في مشروعك. يمكنك القيام بذلك عبر مدير حزم NuGet.
 
-2. Import Aspose.Email Namespace: In your C# code, make sure to include the necessary namespace: `using Aspose.Email;`.
+2. استيراد مساحة اسم Aspose.Email: في كود C# الخاص بك، تأكد من تضمين مساحة الاسم الضرورية: `using Aspose.Email;`.
 
-## Creating the Email Message
+## إنشاء رسالة البريد الإلكتروني
 
-Now that we have Aspose.Email set up, let's create an email message. In this example, we will create a basic email message with a sender, recipient, subject, and body.
+بعد أن قمنا بإعداد Aspose.Email، لنُنشئ رسالة بريد إلكتروني. في هذا المثال، سنُنشئ رسالة بريد إلكتروني أساسية تتضمن المُرسِل، والمُستقبِل، والموضوع، والنص.
 
 ```csharp
-// Create the message
+// إنشاء الرسالة
 MailMessage msg = new MailMessage();
 msg.From = "sender@sender.com";
 msg.To = "receiver@receiver.com";
 msg.Subject = "the subject of the message";
 ```
 
-## Configuring Notifications
+## تكوين الإشعارات
 
-To ensure that you receive notifications about the delivery status of your email, you can configure delivery notification options. You can specify whether you want to be notified on success, failure, or both.
+لضمان استلام إشعارات حول حالة تسليم بريدك الإلكتروني، يمكنك ضبط خيارات إشعار التسليم. يمكنك تحديد ما إذا كنت ترغب في استلام إشعارات عند النجاح أو الفشل أو كليهما.
 
 ```csharp
-// Set delivery notifications for success and failed messages
+// تعيين إشعارات التسليم لرسائل النجاح والفشل
 msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
 ## إضافة رؤوس MIME
 
-MIME headers provide additional information about the email message. You can add custom MIME headers as needed.
+توفر رؤوس MIME معلومات إضافية حول رسالة البريد الإلكتروني. يمكنك إضافة رؤوس MIME مخصصة حسب الحاجة.
 
 ```csharp
-// Add the MIME headers
+// أضف رؤوس MIME
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
 ## إرسال البريد الإلكتروني
 
-Once you've configured your email message, it's time to send it. Aspose.Email provides a convenient way to send emails using the SMTP client.
+بعد إعداد رسالة البريد الإلكتروني، حان وقت إرسالها. يوفر Aspose.Email طريقة سهلة لإرسال رسائل البريد الإلكتروني باستخدام عميل SMTP.
 
 ```csharp
-// Send the message
+// أرسل الرسالة
 SmtpClient client = new SmtpClient("host", "username", "password");
 client.Send(msg);
 ```
 
 ## خاتمة
 
-In this tutorial, we've explored how to receive email notifications with C# using Aspose.Email for .NET. We've covered setting up Aspose.Email, creating an email message, configuring notifications, adding MIME headers, and sending the email.
+في هذا البرنامج التعليمي، استكشفنا كيفية استقبال إشعارات البريد الإلكتروني باستخدام لغة C# باستخدام Aspose.Email لـ .NET. غطينا إعداد Aspose.Email، وإنشاء رسالة بريد إلكتروني، وتكوين الإشعارات، وإضافة رؤوس MIME، وإرسال البريد الإلكتروني.
 
-By following these steps, you can seamlessly integrate email notifications into your C# applications, enhancing user communication and keeping them informed.
+من خلال اتباع هذه الخطوات، يمكنك دمج إشعارات البريد الإلكتروني بسلاسة في تطبيقات C# الخاصة بك، مما يعزز التواصل مع المستخدمين ويبقيهم على اطلاع.
 
 ## الأسئلة الشائعة
 
-### 1. Can I use Aspose.Email for .NET in my .NET Core project?
-   Yes, Aspose.Email for .NET is compatible with both .NET Framework and .NET Core.
+### 1. هل يمكنني استخدام Aspose.Email لـ .NET في مشروع .NET Core الخاص بي؟
+   نعم، Aspose.Email لـ .NET متوافق مع كل من .NET Framework و.NET Core.
 
-### 2. How can I handle email attachments in my notifications?
-   You can use the `Attachment` class provided by Aspose.Email to handle email attachments easily.
+### 2. كيف يمكنني التعامل مع مرفقات البريد الإلكتروني في إشعاراتي؟
+   يمكنك استخدام `Attachment` الفئة التي يوفرها Aspose.Email للتعامل مع مرفقات البريد الإلكتروني بسهولة.
 
-### 3. Is Aspose.Email for .NET a paid library?
-   Aspose.Email offers both a free trial and a paid version. The paid version provides additional features and support.
+### 3. هل Aspose.Email لـ .NET مكتبة مدفوعة؟
+   يقدم Aspose.Email نسخة تجريبية مجانية ونسخة مدفوعة. توفر النسخة المدفوعة ميزات ودعمًا إضافيًا.
 
-### 4. Can I customize the email notification templates?
-   Yes, you can create custom email templates and use Aspose.Email to populate them with dynamic content.
+### 4. هل يمكنني تخصيص قوالب إشعارات البريد الإلكتروني؟
+   نعم، يمكنك إنشاء قوالب بريد إلكتروني مخصصة واستخدام Aspose.Email لملئها بمحتوى ديناميكي.
 
-### 5. Are there any limitations on the number of emails I can send/receive with Aspose.Email?
-   Aspose.Email does not impose strict limitations on the number of emails you can send or receive, but it may be subject to your email server's limitations.
+### 5. هل هناك أي قيود على عدد رسائل البريد الإلكتروني التي يمكنني إرسالها/استقبالها باستخدام Aspose.Email؟
+   لا يفرض Aspose.Email قيودًا صارمة على عدد رسائل البريد الإلكتروني التي يمكنك إرسالها أو استلامها، ولكنها قد تخضع لقيود خادم البريد الإلكتروني الخاص بك.
 
-That concludes our tutorial on receiving email notifications with C# using Aspose.Email for .NET. We hope you found this guide helpful in implementing email notifications in your applications. 
+بهذا نختتم درسنا حول تلقي إشعارات البريد الإلكتروني بلغة C# باستخدام Aspose.Email لـ .NET. نأمل أن يكون هذا الدليل مفيدًا في تنفيذ إشعارات البريد الإلكتروني في تطبيقاتك. 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

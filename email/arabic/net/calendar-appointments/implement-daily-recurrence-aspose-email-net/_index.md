@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to implement daily recurrence patterns using Aspose.Email for .NET. This guide covers creating recurring events, handling exceptions, and storing events in PST files."
-"title": "Implement Daily Recurrence Patterns with Aspose.Email for .NET&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية تنفيذ أنماط التكرار اليومي باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إنشاء أحداث متكررة، ومعالجة الاستثناءات، وتخزين الأحداث في ملفات PST."
+"title": "تنفيذ أنماط التكرار اليومي باستخدام Aspose.Email لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/calendar-appointments/implement-daily-recurrence-aspose-email-net/"
 "weight": 1
 ---
@@ -11,49 +11,49 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Implement Daily Recurrence Patterns with Aspose.Email for .NET
+# كيفية تنفيذ أنماط التكرار اليومية باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Managing recurring events can be complex, especially when dealing with schedules that include exceptions. Aspose.Email for .NET simplifies this process by allowing you to create and manage recurrence patterns effortlessly. This tutorial will guide you through setting up a daily recurrence pattern using Aspose.Email for .NET, handling exceptions, and storing events in a PST file.
+قد تكون إدارة الأحداث المتكررة معقدة، خاصةً عند التعامل مع جداول تتضمن استثناءات. يُبسّط Aspose.Email لـ .NET هذه العملية من خلال تمكينك من إنشاء أنماط تكرار وإدارتها بسهولة. سيرشدك هذا البرنامج التعليمي خلال إعداد نمط تكرار يومي باستخدام Aspose.Email لـ .NET، ومعالجة الاستثناءات، وتخزين الأحداث في ملف PST.
 
-**Key Learnings:**
-- Create a daily recurrence pattern
-- Add exceptions to recurring events
-- Manage deleted instances
-- Store calendar events in a PST file
+**الدروس المستفادة:**
+- إنشاء نمط تكرار يومي
+- إضافة استثناءات للأحداث المتكررة
+- إدارة الحالات المحذوفة
+- تخزين أحداث التقويم في ملف PST
 
-Let's begin by setting up your environment with Aspose.Email for .NET!
+لنبدأ بإعداد البيئة الخاصة بك باستخدام Aspose.Email لـ .NET!
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك ما يلي:
 
 1. **المكتبات والتبعيات:**
-   - Install the Aspose.Email library from NuGet Package Manager.
+   - قم بتثبيت مكتبة Aspose.Email من NuGet Package Manager.
 
 2. **إعداد البيئة:**
-   - Set up your development environment with .NET Core or .NET Framework.
+   - قم بإعداد بيئة التطوير الخاصة بك باستخدام .NET Core أو .NET Framework.
 
 3. **المتطلبات المعرفية:**
-   - Familiarity with C# programming and handling dates in .NET is beneficial.
+   - إن المعرفة ببرمجة C# والتعامل مع التواريخ في .NET أمر مفيد.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started, install the Aspose.Email library using your preferred package manager:
+للبدء، قم بتثبيت مكتبة Aspose.Email باستخدام مدير الحزم المفضل لديك:
 
 **.NET CLI:**
 ```bash
 dotnet add package Aspose.Email
 ```
 
-**Package Manager Console (Visual Studio):**
+**وحدة تحكم إدارة الحزم (Visual Studio):**
 ```powershell
 Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير حزمة NuGet:**
-- Open the NuGet Package Manager in Visual Studio, search for "Aspose.Email\
+- افتح مدير الحزم NuGet في Visual Studio، وابحث عن "Aspose.Email\
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

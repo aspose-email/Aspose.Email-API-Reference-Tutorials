@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently manage calendars using Aspose.Email .NET. This guide covers connecting to EWS, delegating access permissions, and sending calendar sharing invitations."
-"title": "Master Calendar Management with Aspose.Email .NET&#58; Connect, Delegate, and Share Calendars Using EWS"
+"description": "تعرّف على كيفية إدارة التقويمات بكفاءة باستخدام Aspose.Email .NET. يتناول هذا الدليل الاتصال بخدمات EWS، وتفويض أذونات الوصول، وإرسال دعوات لمشاركة التقويم."
+"title": "إدارة التقويمات الرئيسية باستخدام Aspose.Email .NET - توصيل التقويمات وتفويضها ومشاركتها باستخدام EWS"
 "url": "/ar/net/calendar-appointments/aspose-email-net-calendar-management/"
 "weight": 1
 ---
@@ -11,33 +11,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Calendar Management with Aspose.Email .NET: Connect, Delegate, and Share Calendars Using EWS
+# إدارة التقويمات الرئيسية باستخدام Aspose.Email .NET: ربط التقويمات وتفويضها ومشاركتها باستخدام EWS
 
 ## مقدمة
 
-In today's fast-paced work environment, efficient calendar management is crucial for team collaboration and productivity. Whether you're a project manager looking to streamline meeting schedules or an IT professional aiming to automate calendar permissions, integrating with the Exchange Web Service (EWS) can be transformative. Aspose.Email .NET provides robust tools to connect, delegate, and share calendars seamlessly using EWS. This tutorial will guide you through setting up and implementing these features, ensuring your team stays organized and synchronized.
+في بيئة العمل سريعة الوتيرة اليوم، تُعدّ إدارة التقويمات بكفاءة أمرًا بالغ الأهمية لتعاون الفريق وإنتاجيته. سواء كنت مدير مشروع يسعى لتبسيط جداول الاجتماعات أو متخصصًا في تكنولوجيا المعلومات يسعى إلى أتمتة أذونات التقويم، فإن التكامل مع خدمة Exchange Web Service (EWS) يُمكن أن يُحدث نقلة نوعية. تُوفر Aspose.Email .NET أدوات فعّالة لربط التقويمات وتفويضها ومشاركتها بسلاسة باستخدام EWS. سيُرشدك هذا البرنامج التعليمي خلال إعداد هذه الميزات وتطبيقها، مما يضمن تنظيم فريقك وتزامنه.
 
 **ما سوف تتعلمه:**
-- Connecting to the Exchange Web Service using Aspose.Email
-- Delegating calendar access permissions effectively
-- Creating and sending calendar sharing invitations
+- الاتصال بخدمة Exchange Web باستخدام Aspose.Email
+- تفويض أذونات الوصول إلى التقويم بشكل فعال
+- إنشاء وإرسال دعوات مشاركة التقويم
 
-Before diving into the implementation details, let's review some prerequisites for a smooth setup process.
+قبل الخوض في تفاصيل التنفيذ، دعنا نراجع بعض المتطلبات الأساسية لعملية إعداد سلسة.
 
 ## المتطلبات الأساسية
 
 لمتابعة هذا البرنامج التعليمي، ستحتاج إلى:
-- **Aspose.Email لـ .NET**: Ensure you have version 20.11 or later.
-- **بيئة التطوير**: Visual Studio 2019 or later, with .NET Core SDK installed.
-- **الوصول إلى خادم Exchange**: Credentials to an Exchange server accessible via EWS.
+- **Aspose.Email لـ .NET**:تأكد من أن لديك الإصدار 20.11 أو إصدار أحدث.
+- **بيئة التطوير**:Visual Studio 2019 أو إصدار أحدث، مع تثبيت .NET Core SDK.
+- **الوصول إلى خادم Exchange**:بيانات الاعتماد لخادم Exchange التي يمكن الوصول إليها عبر EWS.
 
-Make sure you're familiar with basic C# programming and have a working knowledge of the .NET framework.
+تأكد من أنك على دراية ببرمجة C# الأساسية وأن لديك معرفة عملية بإطار عمل .NET.
 
 ## إعداد Aspose.Email لـ .NET
 
 ### تثبيت
 
-You can install Aspose.Email for .NET using different package managers. Choose one that best fits your development setup:
+يمكنك تثبيت Aspose.Email لـ .NET باستخدام مديري حزم مختلفين. اختر الأنسب لإعدادات التطوير لديك:
 
 **.NET CLI**
 ```bash
@@ -55,11 +55,11 @@ Install-Package Aspose.Email
 ### الحصول على الترخيص
 
 لبدء استخدام Aspose.Email، يمكنك:
-- **نسخة تجريبية مجانية**: Download a free trial license to explore features.
-- **رخصة مؤقتة**: Obtain a temporary license for extended evaluation.
-- **شراء**: Purchase a full license for production use.
+- **نسخة تجريبية مجانية**:قم بتنزيل ترخيص تجريبي مجاني لاستكشاف الميزات.
+- **رخصة مؤقتة**:الحصول على ترخيص مؤقت للتقييم الموسع.
+- **شراء**:شراء ترخيص كامل للاستخدام الإنتاجي.
 
-يزور [صفحة شراء Aspose](https://purchase.aspose.com/buy) for more details on acquiring a license. Once you have your license file, initialize it in your project as shown below:
+يزور [صفحة شراء Aspose](https://purchase.aspose.com/buy) لمزيد من التفاصيل حول الحصول على الترخيص. بعد الحصول على ملف الترخيص، قم بتشغيله في مشروعك كما هو موضح أدناه:
 
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
@@ -68,17 +68,17 @@ license.SetLicense("Aspose.Email.lic");
 
 ## دليل التنفيذ
 
-### Connect to Exchange Web Service (EWS)
+### الاتصال بخدمة Exchange Web Service (EWS)
 
-Connecting to EWS is the first step in managing calendars programmatically, allowing you to access and manipulate calendar data using Aspose.Email.
+يعد الاتصال بـ EWS الخطوة الأولى في إدارة التقويمات برمجيًا، مما يسمح لك بالوصول إلى بيانات التقويم ومعالجتها باستخدام Aspose.Email.
 
 #### ملخص
-This feature demonstrates how to establish a connection with an Exchange server via its web service endpoint.
+توضح هذه الميزة كيفية إنشاء اتصال مع خادم Exchange عبر نقطة نهاية خدمة الويب الخاصة به.
 
 #### خطوات:
 
-##### 1. Create an Instance of `IEWSClient`
-You'll need credentials and the service URL for this step.
+##### 1. إنشاء مثيل لـ `IEWSClient`
+ستحتاج إلى بيانات الاعتماد وعنوان URL للخدمة لهذه الخطوة.
 ```csharp
 using (IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx،
@@ -86,109 +86,109 @@ using (IEWSClient client = EWSClient.GetEWSClient(
     "pwd",
     "domain"))
 {
-    // Connection established successfully
+    // تم إنشاء الاتصال بنجاح
 }
 ```
 
 - **حدود**:
-  - `"https://outlook.office365.com/ews/exchange.asmx"`: The URL of the Exchange Web Service.
+  - `"https://outlook.office365.com/ews/exchange.asmx"`:عنوان URL لخدمة Exchange Web.
   - `"testUser"`، `"pwd"`، `"domain"`:بيانات الاعتماد للمصادقة.
 
 ##### نصائح استكشاف الأخطاء وإصلاحها
-- Ensure your credentials have sufficient permissions to access EWS.
-- Verify the service URL is correct and accessible from your network.
+- تأكد من أن بيانات الاعتماد الخاصة بك تحتوي على أذونات كافية للوصول إلى EWS.
+- تأكد من أن عنوان URL للخدمة صحيح ويمكن الوصول إليه من شبكتك.
 
-### Delegate Calendar Access Permission
+### تفويض إذن الوصول إلى التقويم
 
-Once connected, you can delegate calendar access permissions to other users. This feature helps manage who can view or edit specific calendar events.
+بمجرد الاتصال، يمكنك تفويض أذونات الوصول إلى التقويم لمستخدمين آخرين. تساعد هذه الميزة في إدارة من يمكنه عرض أو تعديل أحداث تقويم محددة.
 
 #### ملخص
-This section shows how to set up a delegate user with specific calendar folder permissions.
+يوضح هذا القسم كيفية إعداد مستخدم مفوض بأذونات مجلد تقويم محددة.
 
 #### خطوات:
 
-##### 1. Set Up the Delegate User
+##### 1. إعداد المستخدم المفوض
 ```csharp
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.FolderPermissions.CalendarFolderPermissionLevel = ExchangeDelegateFolderPermissionLevel.Reviewer;
 ```
 
 - **حدود**:
-  - `"sharingfrom@domain.com"`: The email address of the user to delegate permissions to.
-  - `ExchangeDelegateFolderPermissionLevel.Reviewer`: Sets permission level for calendar access.
+  - `"sharingfrom@domain.com"`:عنوان البريد الإلكتروني للمستخدم الذي سيتم تفويض الأذونات إليه.
+  - `ExchangeDelegateFolderPermissionLevel.Reviewer`:يحدد مستوى الأذونات للوصول إلى التقويم.
 
-##### 2. Delegate Access
+##### 2. تفويض الوصول
 ```csharp
 client.DelegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
 
-### Create and Send Calendar Sharing Invitation
+### إنشاء دعوة لمشاركة التقويم وإرسالها
 
-Creating a calendar sharing invitation is crucial for collaborative scheduling. This feature automates the process of inviting users to join your calendar events.
+إنشاء دعوة لمشاركة التقويم أمرٌ بالغ الأهمية للجدولة التعاونية. تُؤتمت هذه الميزة عملية دعوة المستخدمين للانضمام إلى فعاليات تقويمك.
 
 #### ملخص
-Learn how to generate and send calendar sharing invitations using Aspose.Email.
+تعرف على كيفية إنشاء دعوات مشاركة التقويم وإرسالها باستخدام Aspose.Email.
 
 #### خطوات:
 
-##### 1. Connect to EWS
-Re-establish connection as shown in the previous section.
+##### 1. الاتصال بـ EWS
+أعد إنشاء الاتصال كما هو موضح في القسم السابق.
 
-##### 2. Create a Calendar Sharing Invitation
+##### 2. إنشاء دعوة لمشاركة التقويم
 ```csharp
 MapiMessage mapiMessage = client.CreateCalendarSharingInvitationMessage("sharingfrom@domain.com");
 ```
 
 - **حدود**:
-  - `"sharingfrom@domain.com"`: The email address of the invitee.
+  - `"sharingfrom@domain.com"`:عنوان البريد الإلكتروني للمدعو.
 
-##### 3. Convert and Send the Message
+##### 3. تحويل الرسالة وإرسالها
 ```csharp
-MailConversionOptions options = new MailConversionOptions { ConvertAsTnef = true };
+MailConversionOptions options = new MailConversionOptions { تحويل كـTnef = true };
 var mail = mapiMessage.ToMailMessage(options);
 client.Send(mail);
 ```
 
-- **ConvertAsTnef**: Ensures compatibility with email clients that require TNEF format.
+- **ConvertAsTnef**:يضمن التوافق مع عملاء البريد الإلكتروني الذين يتطلبون تنسيق TNEF.
 
 ## التطبيقات العملية
 
 فيما يلي بعض حالات الاستخدام في العالم الحقيقي حيث يمكن تطبيق هذه الميزات:
-1. **إدارة المشاريع**: Automate calendar sharing for team members to track project timelines and deadlines.
-2. **Resource Scheduling**: Delegate access to resource managers, allowing them to manage room bookings and equipment reservations.
-3. **تخطيط الفعاليات**: Streamline event invitations by automatically sending out calendar invites to participants.
+1. **إدارة المشاريع**:أتمتة مشاركة التقويم لأعضاء الفريق لتتبع الجداول الزمنية والمواعيد النهائية للمشروع.
+2. **جدولة الموارد**:تفويض الوصول إلى مديري الموارد، مما يسمح لهم بإدارة حجوزات الغرف وحجوزات المعدات.
+3. **تخطيط الفعاليات**:تبسيط دعوات الأحداث عن طريق إرسال دعوات التقويم تلقائيًا إلى المشاركين.
 
 ## اعتبارات الأداء
 
 لتحسين الأداء عند استخدام Aspose.Email:
 - قم بتقليل عدد مكالمات واجهة برمجة التطبيقات (API) عن طريق تجميع الطلبات عند الإمكان.
-- Monitor network latency and adjust connection settings accordingly.
-- Implement proper exception handling to manage errors gracefully.
+- راقب زمن وصول الشبكة واضبط إعدادات الاتصال وفقًا لذلك.
+- تنفيذ معالجة الاستثناءات المناسبة لإدارة الأخطاء بسلاسة.
 
 ## خاتمة
 
-In this tutorial, you've learned how to connect to the Exchange Web Service, delegate calendar access permissions, and create and send calendar sharing invitations using Aspose.Email .NET. These capabilities can significantly enhance your team's ability to collaborate on scheduling tasks efficiently. To further explore these features, consider integrating them with other systems like CRM or project management tools.
+في هذا البرنامج التعليمي، تعلمت كيفية الاتصال بخدمة Exchange Web Service، وتفويض صلاحيات الوصول إلى التقويم، وإنشاء دعوات مشاركة التقويم وإرسالها باستخدام Aspose.Email .NET. تُحسّن هذه الإمكانيات بشكل كبير قدرة فريقك على التعاون في جدولة المهام بكفاءة. لمزيد من الاستكشاف، فكّر في دمجها مع أنظمة أخرى مثل إدارة علاقات العملاء (CRM) أو أدوات إدارة المشاريع.
 
 ## قسم الأسئلة الشائعة
 
-**Q: What is Exchange Web Service (EWS)?**
-A: EWS is a web-based API that allows you to interact programmatically with Microsoft Exchange Server data and functionalities.
+**س: ما هي خدمة Exchange Web Service (EWS)؟**
+ج: EWS عبارة عن واجهة برمجة تطبيقات تعتمد على الويب تتيح لك التفاعل برمجيًا مع بيانات ووظائف Microsoft Exchange Server.
 
-**Q: How do I handle authentication errors with Aspose.Email?**
-A: Ensure your credentials are correct and have the necessary permissions. Check network connectivity and firewall settings as well.
+**س: كيف أتعامل مع أخطاء المصادقة مع Aspose.Email؟**
+ج: تأكد من صحة بيانات اعتمادك وامتلاكك الأذونات اللازمة. تحقق أيضًا من اتصال الشبكة وإعدادات جدار الحماية.
 
-**Q: Can I delegate calendar access for multiple users at once?**
-A: Yes, you can iterate over a list of users and apply the delegation process to each one in turn.
+**س: هل يمكنني تفويض الوصول إلى التقويم لمستخدمين متعددين في وقت واحد؟**
+ج: نعم، يمكنك تكرار قائمة المستخدمين وتطبيق عملية التفويض على كل واحد منهم بدوره.
 
-**Q: What formats does Aspose.Email support for email messages?**
-A: It supports various formats including EML, MSG, and PST among others. For calendar invitations, MAPI and TNEF are commonly used.
+**س: ما هي التنسيقات التي يدعمها Aspose.Email لرسائل البريد الإلكتروني؟**
+ج: يدعم تنسيقات متنوعة، منها EML وMSG وPST وغيرها. أما بالنسبة لدعوات التقويم، فيُستخدم عادةً MAPI وTNEF.
 
-**Q: How can I troubleshoot connection issues with EWS?**
-A: Verify the service URL, check credentials, ensure network accessibility, and review any error messages for clues.
+**س: كيف يمكنني إصلاح مشكلات الاتصال مع EWS؟**
+أ: التحقق من عنوان URL للخدمة، والتحقق من بيانات الاعتماد، والتأكد من إمكانية الوصول إلى الشبكة، ومراجعة أي رسائل خطأ بحثًا عن أدلة.
 
 ## موارد
 
-For further information and support:
+لمزيد من المعلومات والدعم:
 - **التوثيق**: [توثيق Aspose.Email](https://reference.aspose.com/email/net/)
 - **تنزيل أحدث إصدار**: [الإصدارات](https://releases.aspose.com/email/net/)
 - **خيارات الشراء**: [شراء Aspose.Email](https://purchase.aspose.com/buy)
@@ -196,7 +196,7 @@ For further information and support:
 - **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [منتدى أسبوزي](https://forum.aspose.com/c/email/10)
 
-Embark on your journey to streamline calendar management with Aspose.Email .NET today!
+ابدأ رحلتك لتبسيط إدارة التقويم باستخدام Aspose.Email .NET اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

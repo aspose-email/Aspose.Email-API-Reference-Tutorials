@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently connect to an Exchange Web Services (EWS) server using Aspose.Email for .NET. This tutorial covers connection setup, listing, and deleting distribution lists."
-"title": "Master EWS Management with Aspose.Email for .NET&#58; Connect and Manage Distribution Lists"
+"description": "تعرّف على كيفية الاتصال بكفاءة بخادم خدمات ويب Exchange (EWS) باستخدام Aspose.Email لـ .NET. يتناول هذا البرنامج التعليمي إعداد الاتصال، وسرد قوائم التوزيع، وحذفها."
+"title": "إتقان إدارة EWS باستخدام Aspose.Email لـ .NET - الاتصال بقوائم التوزيع وإدارتها"
 "url": "/ar/net/exchange-server-integration/manage-ews-server-aspose-email-net/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master EWS Management with Aspose.Email for .NET: Connect and Manage Distribution Lists
+# إتقان إدارة EWS باستخدام Aspose.Email لـ .NET: ربط قوائم التوزيع وإدارتها
 
 **مقدمة**
 
-Managing Exchange Web Services (EWS) connections can be challenging without the right tools. **Aspose.Email لـ .NET** simplifies connecting to an EWS server, listing distribution lists, and deleting them efficiently.
+قد يكون إدارة اتصالات Exchange Web Services (EWS) أمرًا صعبًا دون استخدام الأدوات المناسبة. **Aspose.Email لـ .NET** يسهل الاتصال بخادم EWS، وإدراج قوائم التوزيع، وحذفها بكفاءة.
 
 في هذا البرنامج التعليمي، سوف تتعلم:
-- Connecting to an EWS server using Aspose.Email
-- Listing all distribution lists from your Exchange server
-- Deleting specific distribution lists effortlessly
+- الاتصال بخادم EWS باستخدام Aspose.Email
+- إدراج جميع قوائم التوزيع من خادم Exchange الخاص بك
+- حذف قوائم التوزيع المحددة بسهولة
 
-By the end of this guide, you'll master how to leverage **Aspose.Email .NET** for seamless email management and integration.
+بحلول نهاية هذا الدليل، سوف تتقن كيفية الاستفادة **Aspose.Email .NET** لإدارة البريد الإلكتروني والتكامل بسلاسة.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك:
-- A development environment set up with .NET (preferably .NET Core or .NET 5/6+).
-- Access to an Exchange server where you can connect and manage distribution lists.
-- Familiarity with C# programming concepts.
+- بيئة تطوير تم إعدادها باستخدام .NET (يفضل .NET Core أو .NET 5/6+).
+- الوصول إلى خادم Exchange حيث يمكنك الاتصال بقوائم التوزيع وإدارتها.
+- المعرفة بمفاهيم برمجة C#.
 
 ## إعداد Aspose.Email لـ .NET
 
-للبدء في الاستخدام **Aspose.Email لـ .NET**, install the library in your project:
+للبدء في الاستخدام **Aspose.Email لـ .NET**قم بتثبيت المكتبة في مشروعك:
 
 ### خيارات التثبيت
 
@@ -43,22 +43,22 @@ By the end of this guide, you'll master how to leverage **Aspose.Email .NET** fo
 dotnet add package Aspose.Email
 ```
 
-**Via Package Manager Console:**
+**عبر وحدة تحكم إدارة الحزم:**
 
 ```powershell
 Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير حزمة NuGet:**
-Search for "Aspose.Email" and install the latest version directly from your IDE's NuGet package manager.
+ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث مباشرةً من مدير الحزم NuGet الخاص ببيئة التطوير المتكاملة لديك.
 
 ### الحصول على الترخيص
 
-Begin with a free trial of Aspose.Email by downloading it [هنا](https://releases.aspose.com/email/net/). For extended use, consider acquiring a temporary license or purchasing a subscription. Visit [شراء Aspose](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
+ابدأ بتجربة مجانية لـ Aspose.Email عن طريق تنزيله [هنا](https://releases.aspose.com/email/net/)للاستخدام الممتد، فكّر في الحصول على ترخيص مؤقت أو شراء اشتراك. تفضل بزيارة [شراء Aspose](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
 
 ### التهيئة الأساسية
 
-After installation, initialize the library in your application:
+بعد التثبيت، قم بتهيئة المكتبة في تطبيقك:
 
 ```csharp
 using Aspose.Email.Clients.Exchange.WebService;
@@ -67,127 +67,127 @@ IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx، 
     "testUser", // اسم المستخدم
     "pwd",       // كلمة المرور
-    "domain"     // Domain
+    "domain"     // اِختِصاص
 );
 ```
 
-Now, let's explore specific features you can implement.
+الآن، دعنا نستكشف الميزات المحددة التي يمكنك تنفيذها.
 
-## Connecting to an EWS Server
+## الاتصال بخادم EWS
 
-Connecting to an Exchange Web Services (EWS) server is crucial for managing emails and distribution lists. Here’s how to establish that connection:
+يُعد الاتصال بخادم خدمات ويب Exchange (EWS) أمرًا بالغ الأهمية لإدارة رسائل البريد الإلكتروني وقوائم التوزيع. إليك كيفية إنشاء هذا الاتصال:
 
 ### ملخص
 
-This feature demonstrates connecting to your EWS server using **Aspose.Email** to perform various operations on email data.
+توضح هذه الميزة كيفية الاتصال بخادم EWS الخاص بك باستخدام **Aspose.Email** لإجراء عمليات مختلفة على بيانات البريد الإلكتروني.
 
 ### خطوات التنفيذ
 
 #### الخطوة 1: إنشاء مثيل لـ IEWSClient
 
-To initiate the connection, create an instance of `IEWSClient`:
+لبدء الاتصال، قم بإنشاء مثيل لـ `IEWSClient`:
 
 ```csharp
-// Initialize the EWS client with server details
+// قم بتهيئة عميل EWS باستخدام تفاصيل الخادم
 IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx، 
     "testUser", // اسم المستخدم
     "pwd",       // كلمة المرور
-    "domain"     // Domain
+    "domain"     // اِختِصاص
 );
 ```
 
 - **المعلمات موضحة:**
-  - `serverUrl`: The URL of your EWS server.
+  - `serverUrl`:عنوان URL لخادم EWS الخاص بك.
   - `username`، `password`، `domain`:بيانات الاعتماد للمصادقة.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- Ensure you have the correct server URL and credentials.
-- Verify network connectivity to the EWS server.
-- Check for any firewall rules that might block the connection.
+- تأكد من أن لديك عنوان URL الخاص بالخادم وبيانات الاعتماد الصحيحة.
+- التحقق من اتصال الشبكة بخادم EWS.
+- تحقق من وجود أي قواعد جدار الحماية التي قد تمنع الاتصال.
 
-## Listing Distribution Lists
+## قوائم توزيع القوائم
 
-Once connected, listing distribution lists provides insights into your email organization structure. Here's how:
+بمجرد الاتصال، تُتيح لك قوائم التوزيع الاطلاع على هيكل تنظيم بريدك الإلكتروني. إليك الطريقة:
 
 ### ملخص
 
-Listing all distribution lists helps you manage and audit group communication channels efficiently.
+تساعدك قائمة جميع قوائم التوزيع على إدارة قنوات الاتصال الجماعية ومراجعتها بكفاءة.
 
 ### خطوات التنفيذ
 
-#### Step 1: Retrieve Distribution Lists
+#### الخطوة 1: استرداد قوائم التوزيع
 
-استخدم `ListDistributionLists` method to obtain an array of distribution list objects:
+استخدم `ListDistributionLists` طريقة للحصول على مجموعة من كائنات قائمة التوزيع:
 
 ```csharp
-// Fetching distribution lists from the server
+// جلب قوائم التوزيع من الخادم
 ExchangeDistributionList[] distributionLists = client.ListDistributionLists();
 ```
 
-- **Returns:** An array of `ExchangeDistributionList` objects representing all distribution lists.
+- **الإرجاع:** مجموعة من `ExchangeDistributionList` الكائنات التي تمثل كافة قوائم التوزيع.
 
-## Deleting a Distribution List
+## حذف قائمة التوزيع
 
-Deleting a specific distribution list is straightforward once you have access to your EWS server.
+يعد حذف قائمة توزيع معينة أمرًا سهلاً بمجرد وصولك إلى خادم EWS الخاص بك.
 
 ### ملخص
 
-This feature allows for the deletion of unwanted or obsolete distribution lists from your Exchange server.
+تتيح لك هذه الميزة حذف قوائم التوزيع غير المرغوب فيها أو القديمة من خادم Exchange الخاص بك.
 
 ### خطوات التنفيذ
 
-#### Step 1: Choose and Delete a Distribution List
+#### الخطوة 1: اختيار قائمة التوزيع وحذفها
 
-Select the desired distribution list and delete it:
+حدد قائمة التوزيع المطلوبة ثم احذفها:
 
 ```csharp
-// Deleting the first distribution list in the array
-client.DeleteDistributionList(distributionLists[0], true); // 'true' enables recursive deletion
+// حذف قائمة التوزيع الأولى في المصفوفة
+client.DeleteDistributionList(distributionLists[0], true); // 'true' يمكّن الحذف المتكرر
 ```
 
 - **المعلمات موضحة:**
-  - `distributionList`: The specific list to be deleted.
-  - `recursive`: A boolean indicating whether to delete all members recursively.
+  - `distributionList`:القائمة المحددة التي سيتم حذفها.
+  - `recursive`:قيمة منطقية تشير إلى ما إذا كان سيتم حذف جميع الأعضاء بشكل متكرر.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- Ensure the distribution list exists before attempting deletion.
-- Handle exceptions related to permissions or connectivity issues gracefully.
+- تأكد من وجود قائمة التوزيع قبل محاولة الحذف.
+- تعامل مع الاستثناءات المتعلقة بالأذونات أو مشكلات الاتصال بسلاسة.
 
 ## التطبيقات العملية
 
-Understanding how these features work opens up numerous possibilities:
-1. **Automated Email Management:** Streamline bulk operations like creating, updating, and deleting email lists.
-2. **التكامل مع أنظمة إدارة علاقات العملاء:** Sync your distribution lists with customer relationship management tools for better engagement tracking.
-3. **التدقيق على الامتثال:** Regularly audit and clean up distribution lists to comply with organizational policies.
+إن فهم كيفية عمل هذه الميزات يفتح العديد من الاحتمالات:
+1. **إدارة البريد الإلكتروني الآلية:** تبسيط العمليات المجمعة مثل إنشاء قوائم البريد الإلكتروني وتحديثها وحذفها.
+2. **التكامل مع أنظمة إدارة علاقات العملاء:** قم بمزامنة قوائم التوزيع الخاصة بك مع أدوات إدارة علاقات العملاء لتحسين تتبع المشاركة.
+3. **التدقيق على الامتثال:** قم بمراجعة قوائم التوزيع وتنظيفها بشكل منتظم للامتثال لسياسات المنظمة.
 
 ## اعتبارات الأداء
 
-When using Aspose.Email with EWS:
+عند استخدام Aspose.Email مع EWS:
 - تحسين مكالمات الشبكة عن طريق تجميع الطلبات حيثما أمكن ذلك.
-- Manage resources efficiently, especially in environments with limited memory.
-- Utilize asynchronous methods for non-blocking operations.
+- إدارة الموارد بكفاءة، وخاصة في البيئات ذات الذاكرة المحدودة.
+- استخدم الطرق غير المتزامنة للعمليات غير الحظرية.
 
 ## خاتمة
 
-You've now learned how to connect to an EWS server, list distribution lists, and delete specific ones using **Aspose.Email لـ .NET**. These skills are crucial for managing email communications effectively within your organization.
+لقد تعلمت الآن كيفية الاتصال بخادم EWS، وإدراج قوائم التوزيع، وحذف قوائم محددة باستخدام **Aspose.Email لـ .NET**. هذه المهارات ضرورية لإدارة اتصالات البريد الإلكتروني بشكل فعال داخل مؤسستك.
 
-Next steps include exploring more advanced features of Aspose.Email or integrating with other systems like CRM tools for enhanced productivity.
+وتتضمن الخطوات التالية استكشاف الميزات الأكثر تقدمًا في Aspose.Email أو التكامل مع أنظمة أخرى مثل أدوات CRM لتحسين الإنتاجية.
 
 ## قسم الأسئلة الشائعة
 
-1. **What is the primary purpose of connecting to an EWS server using Aspose.Email?**
-   - To manage emails and distribution lists programmatically.
-2. **Can I list all email folders, not just distribution lists?**
-   - Yes, similar methods are available for listing different types of email data.
-3. **Is it possible to delete individual members from a distribution list?**
-   - While this tutorial covers deleting entire lists, Aspose.Email supports member management operations as well.
-4. **What should I do if the connection to the EWS server fails?**
-   - Check your credentials, network connectivity, and any firewall rules that might interfere with access.
-5. **Are there performance impacts when managing large distribution lists?**
-   - Performance can be optimized by using batch processing and asynchronous methods.
+1. **ما هو الغرض الأساسي من الاتصال بخادم EWS باستخدام Aspose.Email؟**
+   - لإدارة رسائل البريد الإلكتروني وقوائم التوزيع برمجيًا.
+2. **هل يمكنني إدراج كافة مجلدات البريد الإلكتروني، وليس فقط قوائم التوزيع؟**
+   - نعم، تتوفر طرق مماثلة لإدراج أنواع مختلفة من بيانات البريد الإلكتروني.
+3. **هل من الممكن حذف أعضاء فرديين من قائمة التوزيع؟**
+   - في حين أن هذا البرنامج التعليمي يغطي حذف القوائم بأكملها، فإن Aspose.Email يدعم أيضًا عمليات إدارة الأعضاء.
+4. **ماذا يجب أن أفعل إذا فشل الاتصال بخادم EWS؟**
+   - تحقق من بيانات الاعتماد الخاصة بك، واتصال الشبكة، وأي قواعد جدار الحماية التي قد تتداخل مع الوصول.
+5. **هل هناك تأثيرات على الأداء عند إدارة قوائم التوزيع الكبيرة؟**
+   - يمكن تحسين الأداء باستخدام معالجة الدفعات والطرق غير المتزامنة.
 
 ## موارد
 

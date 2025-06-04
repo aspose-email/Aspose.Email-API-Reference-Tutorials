@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to automate email tasks efficiently in your .NET applications using the Aspose.Email EWS client. This guide covers connecting to an Exchange server, sending tasks programmatically, and optimizing performance."
-"title": "Master Email Task Automation in .NET with Aspose.Email EWS Client&#58; A Step-by-Step Guide for Exchange Server Integration"
+"description": "تعرّف على كيفية أتمتة مهام البريد الإلكتروني بكفاءة في تطبيقات .NET باستخدام عميل Aspose.Email EWS. يتناول هذا الدليل الاتصال بخادم Exchange، وإرسال المهام برمجيًا، وتحسين الأداء."
+"title": "إتقان أتمتة مهام البريد الإلكتروني في .NET باستخدام عميل Aspose.Email EWS - دليل خطوة بخطوة لتكامل Exchange Server"
 "url": "/ar/net/exchange-server-integration/email-task-automation-dotnet-aspose-email-ews-client/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Email Task Automation in .NET with Aspose.Email EWS Client: A Step-by-Step Guide for Exchange Server Integration
+# إتقان أتمتة مهام البريد الإلكتروني في .NET باستخدام عميل Aspose.Email EWS: دليل خطوة بخطوة لتكامل Exchange Server
 
 ## مقدمة
 
-Struggling to automate email tasks efficiently within your .NET applications? Connecting to an Exchange Server and managing emails can be daunting, but with Aspose.Email for .NET, it becomes seamless. This tutorial guides you through connecting to an Exchange Web Service (EWS) server using the Aspose.Email EWS client and sending email tasks programmatically.
+هل تواجه صعوبة في أتمتة مهام البريد الإلكتروني بكفاءة ضمن تطبيقات .NET؟ قد يكون الاتصال بخادم Exchange وإدارة رسائل البريد الإلكتروني أمرًا شاقًا، ولكن مع Aspose.Email لـ .NET، يصبح الأمر سلسًا للغاية. يرشدك هذا البرنامج التعليمي خلال عملية الاتصال بخادم Exchange Web Service (EWS) باستخدام عميل Aspose.Email EWS وإرسال مهام البريد الإلكتروني برمجيًا.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email لـ .NET
-- Connecting to an Exchange Server using EWS
-- Loading and sending email tasks from a `.msg` ملف
-- Best practices for optimizing performance in .NET applications
+- الاتصال بخادم Exchange باستخدام EWS
+- تحميل وإرسال مهام البريد الإلكتروني من `.msg` ملف
+- أفضل الممارسات لتحسين الأداء في تطبيقات .NET
 
-Let's streamline your email automation processes with ease. Ensure you have the prerequisites covered before we begin.
+دعنا نُبسّط عمليات أتمتة بريدك الإلكتروني بسهولة. تأكد من استيفاء المتطلبات الأساسية قبل البدء.
 
 ## المتطلبات الأساسية
 
-Ensure that you meet the following requirements:
+تأكد من استيفاء المتطلبات التالية:
 
-- **المكتبات والإصدارات المطلوبة:** Aspose.Email for .NET version 21.2 or later is required.
-- **إعداد البيئة:** This guide assumes familiarity with C# and .NET development environments like Visual Studio.
-- **المتطلبات المعرفية:** Familiarity with Exchange Server, EWS, and email protocols will be beneficial.
+- **المكتبات والإصدارات المطلوبة:** يجب تثبيت Aspose.Email لإصدار .NET 21.2 أو إصدار أحدث.
+- **إعداد البيئة:** يفترض هذا الدليل الإلمام ببيئات تطوير C# و.NET مثل Visual Studio.
+- **المتطلبات المعرفية:** ستكون المعرفة بـ Exchange Server وEWS وبروتوكولات البريد الإلكتروني مفيدة.
 
 ## إعداد Aspose.Email لـ .NET
 
@@ -50,46 +50,46 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير الحزم NuGet**
-Search for "Aspose.Email" and install the latest version directly from the NuGet Package Manager.
+ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث مباشرةً من NuGet Package Manager.
 
 ### الحصول على الترخيص
 
-You can obtain a temporary license to evaluate Aspose.Email for .NET fully. Here’s how:
+يمكنك الحصول على ترخيص مؤقت لتقييم Aspose.Email لـ .NET بالكامل. إليك الطريقة:
 
-- **نسخة تجريبية مجانية:** Download a trial version [هنا](https://releases.aspose.com/email/net/).
-- **رخصة مؤقتة:** Apply for a temporary license on the [موقع Aspose](https://purchase.aspose.com/temporary-license/).
+- **نسخة تجريبية مجانية:** تنزيل النسخة التجريبية [هنا](https://releases.aspose.com/email/net/).
+- **رخصة مؤقتة:** التقدم بطلب للحصول على ترخيص مؤقت على [موقع Aspose](https://purchase.aspose.com/temporary-license/).
 
-After obtaining your license, include it in your project to unlock all features.
+بعد الحصول على الترخيص الخاص بك، قم بتضمينه في مشروعك لفتح جميع الميزات.
 
 ### التهيئة الأساسية
 
 فيما يلي كيفية تهيئة Aspose.Email في تطبيق .NET الخاص بك:
 
 ```csharp
-// Load your license\License license = new License();
+// قم بتحميل الترخيص الخاص بك\License license = new License();
 license.SetLicense("Aspose.Email.lic");
 ```
 
 ## دليل التنفيذ
 
-This section is divided into two main parts: connecting to the Exchange Server and sending email tasks.
+ينقسم هذا القسم إلى قسمين رئيسيين: الاتصال بخادم Exchange Server وإرسال مهام البريد الإلكتروني.
 
-### Connecting to Exchange Server using EWS
+### الاتصال بخادم Exchange باستخدام EWS
 
 #### ملخص
 
-Connecting to an Exchange server via EWS allows you to manage emails programmatically. This feature uses the `IEWSClient` class from Aspose.Email for .NET.
+يتيح لك الاتصال بخادم Exchange عبر EWS إدارة رسائل البريد الإلكتروني برمجيًا. تستخدم هذه الميزة `IEWSClient` الفئة من Aspose.Email لـ .NET.
 
 #### دليل خطوة بخطوة
 
-**1. Create an Instance of IEWSClient**
-You need to provide your credentials and server URL to create a connection:
+**1. إنشاء مثيل لـ IEWSClient**
+يتعين عليك تقديم بيانات الاعتماد الخاصة بك وعنوان URL للخادم لإنشاء اتصال:
 
 ```csharp
 using Aspose.Email.Clients.Exchange.WebService;
 using System.Net;
 
-// Create instance of ExchangeClient class by providing credentials
+// إنشاء مثيل لفئة ExchangeClient من خلال توفير بيانات الاعتماد
 IEWSClient client = EWSClient.GetEWSClient(
     "https://outlook.office365.com/ews/exchange.asmx\
 

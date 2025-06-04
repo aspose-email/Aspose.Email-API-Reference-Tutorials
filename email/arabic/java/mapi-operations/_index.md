@@ -16,56 +16,56 @@
 
 ## البرامج التعليمية المتاحة
 
-### [Automate Outlook MSG Creation in Java with Aspose.Email: A Complete Guide](./automate-outlook-msg-creation-aspose-email-java/)
-Learn how to automate creating and managing Outlook MSG files using Aspose.Email for Java. Master techniques like body compression and format conversion.
+### [أتمتة إنشاء رسائل Outlook في Java باستخدام Aspose.Email: دليل شامل](./automate-outlook-msg-creation-aspose-email-java/)
+تعلّم كيفية أتمتة إنشاء وإدارة ملفات Outlook MSG باستخدام Aspose.Email لـ Java. أتقن تقنيات مثل ضغط النص وتحويل التنسيقات.
 
-### [Create MAPI Contacts in Java Using Aspose.Email: A Step-by-Step Guide](./create-mapi-contacts-aspose-email-java/)
-Learn how to create and manage MAPI contacts efficiently with Aspose.Email for Java. This guide covers everything from basic contact creation to detailed management, including adding professional information.
+### [إنشاء جهات اتصال MAPI في Java باستخدام Aspose.Email: دليل خطوة بخطوة](./create-mapi-contacts-aspose-email-java/)
+تعرّف على كيفية إنشاء جهات اتصال MAPI وإدارتها بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل كل شيء، بدءًا من إنشاء جهات الاتصال الأساسية ووصولًا إلى إدارتها التفصيلية، بما في ذلك إضافة معلومات احترافية.
 
-### [Create a Distribution List with Aspose.Email for Java: MAPI Operations Guide](./aspose-email-java-distribution-list-creation/)
-Learn how to create and manage distribution lists using Aspose.Email for Java. Streamline email communication with this step-by-step guide.
+### [إنشاء قائمة توزيع باستخدام Aspose.Email لـ Java: دليل عمليات MAPI](./aspose-email-java-distribution-list-creation/)
+تعرّف على كيفية إنشاء قوائم التوزيع وإدارتها باستخدام Aspose.Email لجافا. سهّل تواصلك عبر البريد الإلكتروني باتباع هذا الدليل المفصل.
 
-### [Create and Manage MAPI Journal Entries with Aspose.Email for Java](./create-manage-mapijournal-entries-aspose-email-java/)
-Learn how to efficiently create and manage MAPI Journal entries using Aspose.Email for Java. Streamline your email operations with this comprehensive guide.
+### [إنشاء وإدارة إدخالات دفتر اليومية MAPI باستخدام Aspose.Email لـ Java](./create-manage-mapijournal-entries-aspose-email-java/)
+تعرّف على كيفية إنشاء وإدارة إدخالات دفتر يومية MAPI بكفاءة باستخدام Aspose.Email لـ Java. بسّط عمليات بريدك الإلكتروني مع هذا الدليل الشامل.
 
-### [How to Create an Outlook Contact Using Aspose.Email for Java: A Step-by-Step Guide](./create-outlook-contact-aspose-email-java/)
-Learn how to efficiently create and manage Outlook contacts using Aspose.Email for Java. Follow this step-by-step guide with code examples and best practices.
+### [كيفية إنشاء جهة اتصال في Outlook باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./create-outlook-contact-aspose-email-java/)
+تعرّف على كيفية إنشاء جهات اتصال Outlook وإدارتها بكفاءة باستخدام Aspose.Email لـ Java. اتبع هذا الدليل خطوة بخطوة مع أمثلة برمجية وأفضل الممارسات.
 
-### [How to Create and Manage Outlook Notes with Aspose.Email for Java: A Comprehensive Guide](./create-manage-outlook-notes-aspose-email-java/)
-Learn how to create and manage Outlook notes using Aspose.Email for Java. This guide covers setup, creating MAPI notes, saving them in MSG format, and reading existing notes.
+### [كيفية إنشاء ملاحظات Outlook وإدارتها باستخدام Aspose.Email لـ Java: دليل شامل](./create-manage-outlook-notes-aspose-email-java/)
+تعرّف على كيفية إنشاء ملاحظات Outlook وإدارتها باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وإنشاء ملاحظات MAPI، وحفظها بتنسيق MSG، وقراءة الملاحظات الموجودة.
 
-### [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](./outlook-msg-aspose-email-java-guide/)
-Learn how to efficiently load and parse Outlook MSG files using Aspose.Email for Java. This guide covers setup, accessing email properties, and practical applications.
+### [كيفية تحميل ملفات Outlook MSG وتحليلها باستخدام Aspose.Email لـ Java: دليل شامل](./outlook-msg-aspose-email-java-guide/)
+تعرّف على كيفية تحميل ملفات Outlook MSG وتحليلها بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، والوصول إلى خصائص البريد الإلكتروني، والتطبيقات العملية.
 
-### [How to Save Contact Information as MSG Files Using Aspose.Email for Java (MAPI Operations)](./save-contacts-msg-aspose-email-java/)
-Learn how to save contact information in MSG format using Aspose.Email for Java. Streamline your workflow with this step-by-step guide on handling email messages and contacts.
+### [كيفية حفظ معلومات الاتصال كملفات MSG باستخدام Aspose.Email لـ Java (عمليات MAPI)](./save-contacts-msg-aspose-email-java/)
+تعرّف على كيفية حفظ معلومات الاتصال بتنسيق MSG باستخدام Aspose.Email لجافا. بسّط سير عملك مع هذا الدليل المفصل حول التعامل مع رسائل البريد الإلكتروني وجهات الاتصال.
 
-### [Java MAPI Message Iteration with Aspose.Email: A Complete Guide](./java-mapi-message-iteration-aspose-email-guide/)
-Learn how to efficiently iterate over MAPI messages in Java using Aspose.Email. This guide covers setup, implementation, and practical applications for email automation.
+### [تكرار رسائل Java MAPI باستخدام Aspose.Email: دليل شامل](./java-mapi-message-iteration-aspose-email-guide/)
+تعرّف على كيفية تكرار رسائل MAPI بكفاءة في جافا باستخدام Aspose.Email. يغطي هذا الدليل إعداد وتنفيذ وتطبيقات عملية لأتمتة البريد الإلكتروني.
 
-### [Manage MAPI Distribution Lists in PST Files Using Aspose.Email Java](./aspose-email-java-mapi-distribution-lists-pst/)
-Learn how to create and manage MAPI distribution lists within PST files using the Aspose.Email library in Java, streamlining email workflows efficiently.
+### [إدارة قوائم توزيع MAPI في ملفات PST باستخدام Aspose.Email Java](./aspose-email-java-mapi-distribution-lists-pst/)
+تعرف على كيفية إنشاء قوائم توزيع MAPI وإدارتها داخل ملفات PST باستخدام مكتبة Aspose.Email في Java، مما يؤدي إلى تبسيط سير عمل البريد الإلكتروني بكفاءة.
 
-### [Manage MAPI Tasks in PST with Aspose.Email for Java: A Comprehensive Guide](./manage-mapi-tasks-pst-aspose-email-java/)
-Learn how to create and manage MAPI tasks in a PST file using Aspose.Email for Java. Follow this step-by-step guide to enhance your task management capabilities.
+### [إدارة مهام MAPI في PST باستخدام Aspose.Email لـ Java: دليل شامل](./manage-mapi-tasks-pst-aspose-email-java/)
+تعرّف على كيفية إنشاء مهام MAPI وإدارتها في ملف PST باستخدام Aspose.Email لـ Java. اتبع هذا الدليل خطوة بخطوة لتحسين إمكانيات إدارة المهام لديك.
 
-### [Master MAPI Contacts with Aspose.Email for Java: A Comprehensive Guide](./create-manage-mapi-contacts-aspose-email-java/)
-Learn how to create, save, and manage MAPI contacts in Java using Aspose.Email. Enhance your applications' contact management capabilities.
+### [إدارة جهات اتصال MAPI الرئيسية باستخدام Aspose.Email لـ Java: دليل شامل](./create-manage-mapi-contacts-aspose-email-java/)
+تعرّف على كيفية إنشاء جهات اتصال MAPI وحفظها وإدارتها في Java باستخدام Aspose.Email. عزّز إمكانيات إدارة جهات الاتصال في تطبيقاتك.
 
-### [Master MAPI Task Management in Java using Aspose.Email: A Comprehensive Guide](./master-mapi-task-management-java-aspose-email/)
-Learn how to manage MAPI tasks in Java with Aspose.Email. Create, read, and enhance Outlook-style tasks efficiently.
+### [إتقان إدارة مهام MAPI في Java باستخدام Aspose.Email: دليل شامل](./master-mapi-task-management-java-aspose-email/)
+تعرّف على كيفية إدارة مهام MAPI في Java باستخدام Aspose.Email. أنشئ مهامًا بنمط Outlook، واقرأها، وحسّنها بكفاءة.
 
-### [Read Named MAPI Properties in Java with Aspose.Email: A Comprehensive Guide](./read-named-mapi-properties-aspose-email-java/)
-Learn how to efficiently extract named MAPI properties from emails and attachments using Aspose.Email for Java. This step-by-step guide covers setup, code examples, and practical applications.
+### [قراءة خصائص MAPI المسماة في Java باستخدام Aspose.Email: دليل شامل](./read-named-mapi-properties-aspose-email-java/)
+تعرّف على كيفية استخراج خصائص MAPI المُسمّاة بكفاءة من رسائل البريد الإلكتروني والمرفقات باستخدام Aspose.Email لـ Java. يغطي هذا الدليل خطوة بخطوة الإعداد، وأمثلة التعليمات البرمجية، والتطبيقات العملية.
 
-### [Set Multiple MAPI Properties in Java with Aspose.Email: A Comprehensive Guide](./aspose-email-java-set-mapi-properties/)
-Learn how to efficiently manage multiple properties in MAPI messages using Aspose.Email for Java. This guide covers setting float, double, long, and more types.
+### [تعيين خصائص MAPI متعددة في Java باستخدام Aspose.Email: دليل شامل](./aspose-email-java-set-mapi-properties/)
+تعرّف على كيفية إدارة خصائص متعددة بكفاءة في رسائل MAPI باستخدام Aspose.Email لـ Java. يتناول هذا الدليل إعداد أنواع float وdouble وlong وغيرها.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to initialize the Aspose.Email client in Java and retrieve mailbox information from Microsoft Exchange servers efficiently."
-"title": "Initialize Aspose.Email Java for Exchange Server&#58; Retrieve Mailbox Info"
+"description": "تعرف على كيفية تهيئة عميل Aspose.Email في Java واسترداد معلومات صندوق البريد من خوادم Microsoft Exchange بكفاءة."
+"title": "تهيئة Aspose.Email Java لخادم Exchange Server - استرداد معلومات صندوق البريد"
 "url": "/ar/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/"
 "weight": 1
 ---
@@ -11,40 +11,40 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Initialize Aspose.Email Java for Exchange Server: Retrieve Mailbox Information
+# تهيئة Aspose.Email Java لخادم Exchange: استرداد معلومات صندوق البريد
 
 ## مقدمة
 
-Are you looking to automate email management tasks using a robust solution? **Aspose.Email for Java** enables seamless interaction with Microsoft Exchange servers, allowing for efficient programmatic email management. This tutorial will guide you through initializing the `ExchangeClient` and retrieving mailbox information using Aspose.Email in Java.
+هل تبحث عن أتمتة مهام إدارة البريد الإلكتروني باستخدام حل قوي؟ **Aspose.Email لـ Java** يتيح تفاعلاً سلسًا مع خوادم Microsoft Exchange، مما يسمح بإدارة بريد إلكتروني برمجية فعّالة. سيرشدك هذا البرنامج التعليمي خلال تهيئة `ExchangeClient` واسترجاع معلومات صندوق البريد باستخدام Aspose.Email في Java.
 
 **النقاط الرئيسية:**
-- Initialize an instance of `ExchangeClient`.
-- Retrieve detailed mailbox information such as size, URIs for inbox, sent items, drafts, etc.
-- Optimize your Exchange server interactions with Aspose.Email's powerful features.
+- تهيئة مثيل لـ `ExchangeClient`.
+- استرداد معلومات مفصلة عن صندوق البريد مثل الحجم وعناوين URI لصندوق الوارد والعناصر المرسلة والمسودات وما إلى ذلك.
+- قم بتحسين تفاعلاتك مع خادم Exchange باستخدام الميزات القوية التي يوفرها Aspose.Email.
 
-Let's start by setting up your environment!
+لنبدأ بإعداد البيئة الخاصة بك!
 
 ## المتطلبات الأساسية
 
 قبل المتابعة، تأكد من أن لديك:
 
 1. **المكتبات والتبعيات:**
-   - Aspose.Email for Java (Version 25.4 or later)
+   - Aspose.Email لـ Java (الإصدار 25.4 أو أحدث)
 
 2. **متطلبات إعداد البيئة:**
-   - A working Java Development Kit (JDK) version 16 or higher.
-   - Maven installed on your system.
+   - مجموعة تطوير Java (JDK) العاملة الإصدار 16 أو أعلى.
+   - تم تثبيت Maven على نظامك.
 
 3. **المتطلبات المعرفية:**
-   - Basic understanding of Java programming and familiarity with Maven project setup.
+   - فهم أساسي لبرمجة Java والتعرف على إعداد مشروع Maven.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To integrate Aspose.Email into your Java project, follow these steps:
+لدمج Aspose.Email في مشروع Java الخاص بك، اتبع الخطوات التالية:
 
-### Using Maven
+### استخدام Maven
 
-Add the following dependency to your `pom.xml` file to include Aspose.Email in your project:
+أضف التبعية التالية إلى ملفك `pom.xml` الملف الذي تريد تضمينه في Aspose.Email في مشروعك:
 
 ```xml
 <dependency>
@@ -57,16 +57,16 @@ Add the following dependency to your `pom.xml` file to include Aspose.Email in y
 
 ### الحصول على الترخيص
 
-Aspose.Email offers several licensing options:
+يوفر Aspose.Email عدة خيارات ترخيص:
 - **نسخة تجريبية مجانية:** ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
-- **رخصة مؤقتة:** Obtain a temporary license for full access during development.
-- **شراء:** Acquire a permanent license for production use.
+- **رخصة مؤقتة:** احصل على ترخيص مؤقت للوصول الكامل أثناء التطوير.
+- **شراء:** احصل على ترخيص دائم للاستخدام الإنتاجي.
 
-For more information, visit [شراء Aspose](https://purchase.aspose.com/buy) or request a [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
+لمزيد من المعلومات، قم بزيارة [شراء Aspose](https://purchase.aspose.com/buy) أو اطلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
 
 ### التهيئة الأساسية
 
-Here's how to set up your initial environment:
+إليك كيفية إعداد بيئتك الأولية:
 
 ```java
 import com.aspose.email.ExchangeClient;
@@ -74,8 +74,8 @@ import com.aspose.email.ExchangeClient;
 public class AsposeSetup {
     public static void main(String[] args) {
         String serverUrl = "https://اسم الجهاز/التبادل/اسم المستخدم";
-        String username = "Username"; // Your Exchange username
-        String password = "password"; // Your Exchange password
+        String username = "Username"; // اسم المستخدم الخاص بك في Exchange
+        String password = "password"; // كلمة مرور Exchange الخاصة بك
         String domain = "domain";     // مجال للمصادقة
 
         ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
@@ -88,55 +88,55 @@ public class AsposeSetup {
 
 ### تهيئة `ExchangeClient`
 
-**ملخص:** توضح هذه الميزة كيفية إنشاء مثيل لـ `ExchangeClient` using server credentials.
+**ملخص:** توضح هذه الميزة كيفية إنشاء مثيل لـ `ExchangeClient` باستخدام بيانات اعتماد الخادم.
 
 #### الخطوة 1: تحديد بيانات الاعتماد
 
 ```java
-// Set up your Exchange server details and credentials
+// إعداد تفاصيل خادم Exchange وبيانات الاعتماد الخاصة بك
 String serverUrl = "https://اسم الجهاز/التبادل/اسم المستخدم";
-String username = "Username"; // Your Exchange username
-String password = "password"; // Your Exchange password
+String username = "Username"; // اسم المستخدم الخاص بك في Exchange
+String password = "password"; // كلمة مرور Exchange الخاصة بك
 domain = "domain";           // مجال للمصادقة
 ```
 
 #### الخطوة 2: تهيئة العميل
 
 ```java
-// Initialize the ExchangeClient with provided credentials
+// قم بتهيئة ExchangeClient باستخدام بيانات الاعتماد المقدمة
 ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
 ```
-**توضيح:** This step establishes a connection to your Exchange server using the specified credentials.
+**توضيح:** تؤدي هذه الخطوة إلى إنشاء اتصال بخادم Exchange الخاص بك باستخدام بيانات الاعتماد المحددة.
 
 ### استرداد معلومات صندوق البريد
 
-**ملخص:** Retrieve detailed information about a mailbox from an Exchange server using the initialized `ExchangeClient`.
+**ملخص:** استرداد معلومات مفصلة حول صندوق بريد من خادم Exchange باستخدام الإعدادات المبدئية `ExchangeClient`.
 
-#### Step 1: Assume Initialization
+#### الخطوة 1: افترض التهيئة
 
-Ensure that the `client` is already initialized as shown in the previous section.
+تأكد من أن `client` تم تهيئته بالفعل كما هو موضح في القسم السابق.
 
-#### Step 2: Retrieve Mailbox Size
+#### الخطوة 2: استرداد حجم صندوق البريد
 
 ```java
-// Obtain the size of the mailbox
+// الحصول على حجم صندوق البريد
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox Size: " + mailboxSize);
 ```
 
-#### Step 3: Get Detailed Information
+#### الخطوة 3: الحصول على معلومات مفصلة
 
 ```java
 import com.aspose.email.ExchangeMailboxInfo;
 
-// Fetch detailed information about the mailbox
+// جلب معلومات مفصلة حول صندوق البريد
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
 ```
 
-#### Step 4: Extract Mailbox URIs
+#### الخطوة 4: استخراج عناوين URI لصندوق البريد
 
 ```java
-// Retrieve various URIs from the mailbox info
+// استرداد عناوين URI المختلفة من معلومات صندوق البريد
 String mailboxUri = mailboxInfo.getMailboxUri();
 String inboxUri = mailboxInfo.getInboxUri();
 String sentItemsUri = mailboxInfo.getSentItemsUri();
@@ -144,63 +144,63 @@ String draftsUri = mailboxInfo.getDraftsUri();
 
 System.out.println("Mailbox URI: " + mailboxUri);
 System.out.println("Inbox URI: " + inboxUri);
-// Additional URIs can be printed similarly
+// يمكن طباعة عناوين URI الإضافية بطريقة مماثلة
 ```
-**توضيح:** This step extracts essential URIs for different mailbox sections, enabling further interactions like sending emails or accessing drafts.
+**توضيح:** تعمل هذه الخطوة على استخراج عناوين URI الأساسية لأقسام صندوق البريد المختلفة، مما يتيح المزيد من التفاعلات مثل إرسال رسائل البريد الإلكتروني أو الوصول إلى المسودات.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- **مشاكل المصادقة:** Double-check your username, password, and domain.
-- **Network Connectivity:** Ensure there are no network issues between your server and the Exchange server.
-- **Library Version:** Confirm that you're using a compatible version of Aspose.Email.
+- **مشاكل المصادقة:** تأكد جيدًا من اسم المستخدم وكلمة المرور والنطاق الخاصين بك.
+- **الاتصال بالشبكة:** تأكد من عدم وجود مشكلات في الشبكة بين الخادم الخاص بك وخادم Exchange.
+- **نسخة المكتبة:** تأكد من أنك تستخدم إصدارًا متوافقًا من Aspose.Email.
 
 ## التطبيقات العملية
 
-1. **Automated Email Management:** Schedule regular email retrieval for data analysis or archiving purposes.
-2. **Integrating with CRM Systems:** Sync emails directly into a CRM system to enhance customer interaction tracking.
-3. **حلول أرشفة البريد الإلكتروني:** Implement automated archival processes based on mailbox size and activity logs.
-4. **Security Audits:** Retrieve email metadata for compliance checks and security audits.
-5. **Cross-Platform Communication:** Facilitate seamless communication between different platforms by integrating with Exchange servers.
+1. **إدارة البريد الإلكتروني الآلية:** جدولة استرجاع البريد الإلكتروني بشكل منتظم لأغراض تحليل البيانات أو الأرشفة.
+2. **التكامل مع أنظمة إدارة علاقات العملاء:** قم بمزامنة رسائل البريد الإلكتروني مباشرة في نظام CRM لتحسين تتبع تفاعل العملاء.
+3. **حلول أرشفة البريد الإلكتروني:** تنفيذ عمليات الأرشفة الآلية استنادًا إلى حجم صندوق البريد وسجلات النشاط.
+4. **عمليات تدقيق الأمان:** استرداد بيانات التعريف الخاصة بالبريد الإلكتروني للتحقق من الامتثال والتدقيق الأمني.
+5. **التواصل عبر المنصات:** تسهيل الاتصال السلس بين المنصات المختلفة من خلال التكامل مع خوادم Exchange.
 
 ## اعتبارات الأداء
 
 ### تحسين الأداء
-- Regularly update to the latest Aspose.Email version for performance enhancements.
-- Cache frequently accessed data where possible.
+- قم بالتحديث بانتظام إلى أحدث إصدار من Aspose.Email لتحسين الأداء.
+- قم بتخزين البيانات التي يتم الوصول إليها بشكل متكرر عندما يكون ذلك ممكنًا.
 
 ### إرشادات استخدام الموارد
-- Monitor memory consumption, especially when dealing with large mailboxes.
-- Use efficient algorithms and data structures within your Java code.
+- راقب استهلاك الذاكرة، خاصة عند التعامل مع صناديق البريد الكبيرة.
+- استخدم خوارزميات وهياكل بيانات فعالة داخل كود Java الخاص بك.
 
 ### أفضل الممارسات
-- Limit the scope of mailbox interactions to necessary operations only.
-- Implement error handling to manage unexpected server responses gracefully.
+- قم بتقييد نطاق تفاعلات صندوق البريد على العمليات الضرورية فقط.
+- تنفيذ معالجة الأخطاء لإدارة استجابات الخادم غير المتوقعة بسلاسة.
 
 ## خاتمة
 
-You've now mastered initializing an `ExchangeClient` and retrieving mailbox information using Aspose.Email for Java. These capabilities enable sophisticated email management solutions, allowing seamless integration with Exchange servers. What's next? Consider exploring more advanced features or integrating these functionalities into a larger project.
+لقد أتقنت الآن تهيئة `ExchangeClient` واسترجاع معلومات صندوق البريد باستخدام Aspose.Email لجافا. تُمكّن هذه الإمكانيات من حلول إدارة بريد إلكتروني متطورة، مما يسمح بالتكامل السلس مع خوادم Exchange. ما التالي؟ فكّر في استكشاف ميزات أكثر تقدمًا أو دمج هذه الوظائف في مشروع أكبر.
 
-**الدعوة إلى العمل:** Implement this solution in your projects to streamline your email interactions!
+**الدعوة إلى العمل:** قم بتنفيذ هذا الحل في مشاريعك لتبسيط تفاعلاتك عبر البريد الإلكتروني!
 
 ## قسم الأسئلة الشائعة
 
-1. **What is Aspose.Email for Java?**
-   - It’s a library that allows you to work with emails, calendars, and tasks programmatically using Java.
-2. **How do I handle large mailboxes efficiently?**
-   - Use pagination or limit the scope of your data retrieval operations.
-3. **Can I use this code on any Exchange server version?**
-   - Aspose.Email supports a wide range of Exchange versions; verify compatibility for specific features.
-4. **What are common errors when connecting to Exchange servers?**
-   - Authentication failures, network issues, or incorrect credentials are typical problems to troubleshoot.
+1. **ما هو Aspose.Email لـ Java؟**
+   - إنها مكتبة تسمح لك بالعمل مع رسائل البريد الإلكتروني والتقويمات والمهام برمجيًا باستخدام Java.
+2. **كيف أتعامل مع صناديق البريد الكبيرة بكفاءة؟**
+   - استخدم الترقيم الصفحي أو حدد نطاق عمليات استرجاع البيانات الخاصة بك.
+3. **هل يمكنني استخدام هذا الكود على أي إصدار من خادم Exchange؟**
+   - يدعم Aspose.Email مجموعة واسعة من إصدارات Exchange؛ تحقق من التوافق للميزات المحددة.
+4. **ما هي الأخطاء الشائعة عند الاتصال بخوادم Exchange؟**
+   - تعد حالات فشل المصادقة أو مشكلات الشبكة أو بيانات الاعتماد غير الصحيحة من المشكلات النموذجية التي يتعين استكشاف أخطائها وإصلاحها.
 5. **كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Email؟**
    - قم بزيارة [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) واتبع التعليمات المقدمة.
 
 ## موارد
 
-- **التوثيق:** For detailed API references, visit [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/).
+- **التوثيق:** للحصول على مراجع API التفصيلية، قم بزيارة [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/).
 - **تحميل:** احصل على أحدث إصدار من [إصدارات Aspose](https://releases.aspose.com/email/java/).
-- **رخصة الشراء:** If you're ready to buy a license, go to [شراء Aspose](https://purchase.aspose.com/buy).
-- **نسخة تجريبية مجانية:** Try out Aspose.Email with a free trial available at [تجارب مجانية لـ Aspose](https://releases.aspose.com/email/java/).
+- **رخصة الشراء:** إذا كنت مستعدًا لشراء ترخيص، فانتقل إلى [شراء Aspose](https://purchase.aspose.com/buy).
+- **نسخة تجريبية مجانية:** جرب Aspose.Email مع النسخة التجريبية المجانية المتوفرة على [تجارب مجانية لـ Aspose](https://releases.aspose.com/email/java/).
 - **يدعم**
 
 {{< /blocks/products/pf/tutorial-page-section >}}

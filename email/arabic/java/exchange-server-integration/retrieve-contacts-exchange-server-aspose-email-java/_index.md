@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to automate contact retrieval from Microsoft Exchange servers using Aspose.Email for Java. This step-by-step guide covers setup, connection, and best practices."
-"title": "How to Retrieve Contacts from Exchange Server Using Aspose.Email for Java&#58; A Complete Guide"
+"description": "تعرّف على كيفية أتمتة استرداد جهات الاتصال من خوادم Microsoft Exchange باستخدام Aspose.Email لـ Java. يغطي هذا الدليل خطوة بخطوة الإعداد والاتصال وأفضل الممارسات."
+"title": "كيفية استرداد جهات الاتصال من خادم Exchange باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/exchange-server-integration/retrieve-contacts-exchange-server-aspose-email-java/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Retrieve Contacts from an Exchange Server Using Aspose.Email for Java
+# كيفية استرداد جهات الاتصال من خادم Exchange باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Managing contacts efficiently is crucial for businesses leveraging Microsoft Exchange servers. If you're looking to automate and streamline the process of retrieving contacts, **Aspose.Email for Java** offers a powerful solution. This tutorial will guide you through using Aspose.Email to connect to an Exchange server and fetch contact details seamlessly.
+تُعد إدارة جهات الاتصال بكفاءة أمرًا بالغ الأهمية للشركات التي تستخدم خوادم Microsoft Exchange. إذا كنت ترغب في أتمتة وتبسيط عملية استرداد جهات الاتصال، **Aspose.Email لـ Java** يقدم حلاً فعالاً. سيرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email للاتصال بخادم Exchange وجلب بيانات الاتصال بسلاسة.
 
 ### ما سوف تتعلمه
-- How to set up Aspose.Email for Java in your project
-- Connecting to an Exchange Server using EWSClient
-- Retrieving contacts with detailed explanations of each step
-- Best practices for performance optimization and troubleshooting common issues
+- كيفية إعداد Aspose.Email لـ Java في مشروعك
+- الاتصال بخادم Exchange باستخدام EWSClient
+- استرجاع جهات الاتصال مع شرح مفصل لكل خطوة
+- أفضل الممارسات لتحسين الأداء واستكشاف المشكلات الشائعة وإصلاحها
 
-Let's dive into the prerequisites needed before we get started.
+دعونا نلقي نظرة على المتطلبات الأساسية اللازمة قبل أن نبدأ.
 
 ## المتطلبات الأساسية
 قبل تنفيذ هذه الميزة، تأكد من أن لديك:
 
-- **Java Development Kit (JDK)** installed on your system. This tutorial uses JDK 16.
-- A functioning development environment like IntelliJ IDEA or Eclipse.
-- Basic understanding of Java programming and Maven for dependency management.
+- **مجموعة تطوير جافا (JDK)** مُثبّت على نظامك. يستخدم هذا البرنامج التعليمي JDK 16.
+- بيئة تطوير فعالة مثل IntelliJ IDEA أو Eclipse.
+- فهم أساسي لبرمجة Java وMaven لإدارة التبعيات.
 
 ### المكتبات المطلوبة
-You'll need to include the Aspose.Email library in your project using Maven. Here's how you can add it:
+ستحتاج إلى تضمين مكتبة Aspose.Email في مشروعك باستخدام Maven. إليك كيفية إضافتها:
 
-**Maven Dependency**
+**تبعية Maven**
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -46,69 +46,69 @@ You'll need to include the Aspose.Email library in your project using Maven. Her
 ```
 
 ### الحصول على الترخيص
-Aspose.Email offers a free trial, which you can utilize to test its features before purchasing. You can obtain a temporary license [هنا](https://purchase.aspose.com/temporary-license/). Follow the instructions on their website to set up your license file.
+يقدم Aspose.Email نسخة تجريبية مجانية، يمكنك استخدامها لاختبار ميزاته قبل الشراء. يمكنك الحصول على ترخيص مؤقت. [هنا](https://purchase.aspose.com/temporary-license/). اتبع الإرشادات الموجودة على موقعهم الإلكتروني لإعداد ملف الترخيص الخاص بك.
 
-## Setting Up Aspose.Email for Java
-To begin using Aspose.Email in your project, follow these setup steps:
+## إعداد Aspose.Email لـ Java
+لبدء استخدام Aspose.Email في مشروعك، اتبع خطوات الإعداد التالية:
 
-1. **Add Maven Dependency:** Ensure the above dependency is included in your `pom.xml`.
-2. **Initialize License (if available):** If you have acquired a temporary or purchased license, initialize it as follows:
+1. **إضافة تبعية Maven:** تأكد من تضمين التبعية المذكورة أعلاه في `pom.xml`.
+2. **تهيئة الترخيص (إذا كان متاحًا):** إذا حصلت على ترخيص مؤقت أو اشتريته، قم بتهيئته على النحو التالي:
    ```java
    com.aspose.email.License license = new com.aspose.email.License();
    license.setLicense("path/to/your/license/file.lic");
    ```
-3. **Basic Setup:** Confirm that your development environment can resolve the Aspose.Email library correctly.
+3. **الإعداد الأساسي:** تأكد من أن بيئة التطوير الخاصة بك قادرة على حل مكتبة Aspose.Email بشكل صحيح.
 
 ## دليل التنفيذ
 
 ### الاتصال بخادم Exchange
 **ملخص**
-This section covers how to establish a connection with an Exchange server using `EWSClient`.
+يتناول هذا القسم كيفية إنشاء اتصال مع خادم Exchange باستخدام `EWSClient`.
 
-#### Step 1: Create EWS Client Instance
+#### الخطوة 1: إنشاء مثيل عميل EWS
 ```java
-// Create an instance of the EWS client
+// إنشاء مثيل لعميل EWS
 IEWSClient client = EWSClient.getEWSClient("https://exchange.domain.com/exchangeews/Exchange.asmx");
 ```
-- **توضيح:** This line initializes a connection to your Exchange server using its URL.
+- **توضيح:** يقوم هذا الخط بتهيئة اتصال بخادم Exchange الخاص بك باستخدام عنوان URL الخاص به.
 
-### Retrieving Contacts
+### استرجاع جهات الاتصال
 **ملخص**
-Now that you're connected, let's retrieve the contacts stored in the Exchange server.
+الآن بعد أن أصبحت متصلاً، فلنسترد جهات الاتصال المخزنة في خادم Exchange.
 
-#### Step 2: Fetch and Display Contacts
+#### الخطوة 2: جلب جهات الاتصال وعرضها
 ```java
 import com.aspose.email.Contact;
 import java.util.List;
 
-// Retrieve all contacts from the contact folder
+// استرداد جميع جهات الاتصال من مجلد جهات الاتصال
 List<Contact> contacts = client.getContacts(client.getMailboxInfo().getContactUri());
 
 for (Contact contact : contacts) {
-    // Print contact details like display name and email address
+    // اطبع تفاصيل الاتصال مثل اسم العرض وعنوان البريد الإلكتروني
     System.out.println("Name: " + contact.getDisplayName() + ", Email: " + contact.getEmailAddresses().get_Item(0).getAddress());
 }
 ```
-- **حدود:** `client.getMailboxInfo().getContactUri()` fetches the URI for contacts.
-- **قيم العودة:** A list of `Contact` objects is returned, containing details like display names and email addresses.
+- **حدود:** `client.getMailboxInfo().getContactUri()` يقوم بجلب عنوان URI الخاص بجهات الاتصال.
+- **قيم العودة:** قائمة من `Contact` يتم إرجاع الكائنات، التي تحتوي على تفاصيل مثل أسماء العرض وعناوين البريد الإلكتروني.
 
 **نصائح استكشاف الأخطاء وإصلاحها**
-- Ensure your Exchange server URL is correct.
-- Verify that you have sufficient permissions to access the contact folder.
-- Check network connectivity if the connection fails.
+- تأكد من أن عنوان URL الخاص بخادم Exchange الخاص بك صحيح.
+- تأكد من أن لديك الأذونات الكافية للوصول إلى مجلد جهات الاتصال.
+- تحقق من اتصال الشبكة إذا فشل الاتصال.
 
 ## التطبيقات العملية
-1. **إدارة الاتصال الآلية:** Streamline updating or exporting contacts for CRM systems.
-2. **Email Campaigns:** Retrieve and segment contacts for targeted email campaigns.
-3. **Data Synchronization:** Sync contact information between Exchange servers and other directories like Active Directory.
-4. **أنظمة دعم العملاء:** Integrate with support ticketing systems to fetch customer details quickly.
+1. **إدارة الاتصال الآلية:** تسهيل عملية تحديث أو تصدير جهات الاتصال لأنظمة إدارة علاقات العملاء.
+2. **الحملات البريدية الإلكترونية:** استرداد جهات الاتصال وتقسيمها لحملات البريد الإلكتروني المستهدفة.
+3. **مزامنة البيانات:** مزامنة معلومات الاتصال بين خوادم Exchange والدلائل الأخرى مثل Active Directory.
+4. **أنظمة دعم العملاء:** التكامل مع أنظمة تذاكر الدعم للحصول على تفاصيل العملاء بسرعة.
 
 ## اعتبارات الأداء
-To ensure optimal performance when retrieving contacts:
-- Use pagination if dealing with large contact lists to minimize memory usage.
-- Close the `IEWSClient` instance after operations to free up resources:
+لضمان الأداء الأمثل عند استرداد جهات الاتصال:
+- استخدم الترقيم الصفحي إذا كنت تتعامل مع قوائم جهات اتصال كبيرة لتقليل استخدام الذاكرة.
+- اغلاق `IEWSClient` مثال بعد العمليات لتحرير الموارد:
   ```java
-client.dispose();
+العميل.التخلص();
 ```
 - Monitor Java application's heap space and adjust JVM settings for better memory management.
 

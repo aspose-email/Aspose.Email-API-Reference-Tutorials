@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently bulk update Outlook PST messages using Aspose.Email for Java. This guide covers updating subjects, importance levels, and custom properties."
-"title": "Bulk Update PST Messages with Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية تحديث رسائل Outlook PST بشكل جماعي بكفاءة باستخدام Aspose.Email لـ Java. يتناول هذا الدليل تحديث المواضيع ومستويات الأهمية والخصائص المخصصة."
+"title": "تحديث رسائل PST بشكل جماعي باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/outlook-pst-ost-operations/aspose-email-java-bulk-update-pst-messages/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Bulk Update PST Messages with Aspose.Email for Java: A Comprehensive Guide
+# تحديث رسائل PST بشكل مجمع باستخدام Aspose.Email لـ Java: دليل شامل
 
 ## مقدمة
-Managing a large number of emails efficiently is challenging, especially when performing bulk updates on specific properties within Outlook PST files. Whether it's updating subjects or importance levels based on sender criteria, the right tools can streamline this process significantly. This tutorial explores utilizing Aspose.Email for Java, a powerful library designed specifically for handling email formats and operations in Java applications.
+تُعدّ إدارة عدد كبير من رسائل البريد الإلكتروني بكفاءة أمرًا صعبًا، خاصةً عند إجراء تحديثات جماعية لخصائص مُحددة ضمن ملفات Outlook PST. سواءً كان الأمر يتعلق بتحديث المواضيع أو مستويات الأهمية بناءً على معايير المُرسِل، يُمكن للأدوات المُناسبة تبسيط هذه العملية بشكل كبير. يستكشف هذا البرنامج التعليمي استخدام Aspose.Email لـ Java، وهي مكتبة فعّالة مُصممة خصيصًا للتعامل مع تنسيقات البريد الإلكتروني وعملياته في تطبيقات Java.
 
 **ما سوف تتعلمه:**
-- How to bulk update messages in PST files using Aspose.Email.
-- Techniques to modify custom properties within emails efficiently.
-- Methods to optimize your Java application's performance with large datasets.
+- كيفية تحديث الرسائل بشكل مجمع في ملفات PST باستخدام Aspose.Email.
+- تقنيات لتعديل الخصائص المخصصة داخل رسائل البريد الإلكتروني بكفاءة.
+- طرق لتحسين أداء تطبيق Java الخاص بك باستخدام مجموعات البيانات الكبيرة.
 
-Let’s explore how Aspose.Email can solve these challenges by providing a robust solution for email management tasks.
+دعونا نستكشف كيف يمكن لـ Aspose.Email حل هذه التحديات من خلال توفير حل قوي لمهام إدارة البريد الإلكتروني.
 
 ## المتطلبات الأساسية
-Before diving into the implementation, ensure you have the necessary tools and knowledge:
-1. **المكتبات والتبعيات**: Use Maven as your build tool to manage dependencies efficiently.
-2. **إعداد البيئة**: Ensure Java Development Kit (JDK) 16 or higher is installed on your machine.
-3. **متطلبات المعرفة**: Familiarity with Java programming, particularly working with external libraries and handling email formats.
+قبل البدء في التنفيذ، تأكد من أن لديك الأدوات والمعرفة اللازمة:
+1. **المكتبات والتبعيات**:استخدم Maven كأداة بناء لإدارة التبعيات بكفاءة.
+2. **إعداد البيئة**:تأكد من تثبيت Java Development Kit (JDK) 16 أو أعلى على جهازك.
+3. **متطلبات المعرفة**:المعرفة ببرمجة Java، وخاصة العمل مع المكتبات الخارجية والتعامل مع تنسيقات البريد الإلكتروني.
 
-## Setting Up Aspose.Email for Java
-To start using Aspose.Email for bulk operations in PST files, integrate it into your project via Maven:
+## إعداد Aspose.Email لـ Java
+لبدء استخدام Aspose.Email للعمليات المجمعة في ملفات PST، قم بدمجه في مشروعك عبر Maven:
 
-### Maven Dependency
-Add the following dependency to your `pom.xml` file:
+### تبعية Maven
+أضف التبعية التالية إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -44,42 +44,42 @@ Add the following dependency to your `pom.xml` file:
 ```
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية**: Test Aspose.Email functionalities with a limited trial version.
-- **رخصة مؤقتة**: Obtain a temporary license for extended testing without feature limitations.
-- **شراء**: Consider purchasing a full license if you find the library useful for your project.
+- **نسخة تجريبية مجانية**:اختبار وظائف Aspose.Email باستخدام إصدار تجريبي محدود.
+- **رخصة مؤقتة**:احصل على ترخيص مؤقت للاختبار الموسع دون قيود على الميزات.
+- **شراء**:فكر في شراء ترخيص كامل إذا وجدت المكتبة مفيدة لمشروعك.
 
 #### التهيئة الأساسية
-After setting up the Maven dependency, initialize Aspose.Email in your Java application as follows:
+بعد إعداد تبعية Maven، قم بتهيئة Aspose.Email في تطبيق Java الخاص بك على النحو التالي:
 ```java
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/test.pst");
 ```
 
 ## دليل التنفيذ
-Let’s break down our implementation into two main features: Bulk Message Update and Custom Property Update.
+دعنا نقسم تنفيذنا إلى ميزتين رئيسيتين: تحديث الرسائل المجمعة وتحديث الخاصية المخصصة.
 
-### Feature 1: Bulk Message Update in PST File
-This feature allows you to update multiple emails' properties based on specific criteria like sender email addresses.
+### الميزة 1: تحديث الرسائل المجمعة في ملف PST
+تتيح لك هذه الميزة تحديث خصائص رسائل البريد الإلكتروني المتعددة استنادًا إلى معايير محددة مثل عناوين البريد الإلكتروني للمرسل.
 
 #### ملخص
-We'll use Aspose.Email's querying capabilities to locate messages that match certain conditions, then apply property updates en masse.
+سنستخدم إمكانيات الاستعلام الخاصة بـ Aspose.Email لتحديد الرسائل التي تتطابق مع شروط معينة، ثم نطبق تحديثات الخصائص بشكل جماعي.
 
 ##### التنفيذ خطوة بخطوة:
-**1. Load the PST and Access the Inbox**
+**1. قم بتحميل ملف PST والوصول إلى صندوق الوارد**
 ```java
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/test.pst");
 FolderInfo inbox = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-**2. Build a Query to Find Messages**
-Create a query for messages from a specific sender:
+**2. إنشاء استعلام للبحث عن الرسائل**
+إنشاء استعلام للرسائل من مرسل محدد:
 ```java
 PersonalStorageQueryBuilder queryBuilder = new PersonalStorageQueryBuilder();
 queryBuilder.getFrom().contains("someuser@domain.com");
 MessageInfoCollection messages = inbox.getContents(queryBuilder.getQuery());
 ```
 
-**3. Prepare Properties to Update**
-Set the new subject and importance levels:
+**3. تحضير الخصائص للتحديث**
+تعيين مستويات الموضوع والأهمية الجديدة:
 ```java
 MapiPropertyCollection updatedProperties = new MapiPropertyCollection();
 updatedProperties.add(MapiPropertyTag.PR_SUBJECT_W, 
@@ -88,30 +88,30 @@ updatedProperties.add(MapiPropertyTag.PR_IMPORTANCE,
     new MapiProperty(MapiPropertyTag.PR_IMPORTANCE, new byte[] { 2, 0, 0, 0, 0, 0, 0, 0 }));
 ```
 
-**4. Apply the Updates**
-Iterate through messages and apply updates:
+**4. تطبيق التحديثات**
+كرر الرسائل وقم بتطبيق التحديثات:
 ```java
 for (MessageInfo messageInfo : messages) {
-    // Logic to update message properties
+    // منطق تحديث خصائص الرسالة
 }
 ```
-Ensure proper exception handling by wrapping resource-intensive operations in try-finally blocks.
+تأكد من معالجة الاستثناءات بشكل صحيح عن طريق تغليف العمليات كثيفة الموارد في كتل try-finally.
 
-### Feature 2: Custom Property Update in PST File
-Modify custom message properties efficiently with Aspose.Email's flexible property management system.
+### الميزة 2: تحديث الخصائص المخصصة في ملف PST
+قم بتعديل خصائص الرسائل المخصصة بكفاءة باستخدام نظام إدارة الخصائص المرن الخاص بـ Aspose.Email.
 
 #### ملخص
-We'll demonstrate how to add and modify both standard and custom named properties within a PST file.
+سنوضح لك كيفية إضافة وتعديل الخصائص القياسية والمخصصة داخل ملف PST.
 
 ##### التنفيذ خطوة بخطوة:
-**1. Access the Target Folder**
+**1. الوصول إلى المجلد المستهدف**
 ```java
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/test.pst");
 FolderInfo testFolder = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-**2. Define New Properties**
-Create and configure properties:
+**2. تحديد خصائص جديدة**
+إنشاء وتكوين الخصائص:
 ```java
 MapiPropertyCollection newProperties = new MapiPropertyCollection();
 newProperties.add(MapiPropertyTag.PR_ORG_EMAIL_ADDR_W, 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to list and query tasks using Aspose.Email for Java. Streamline your Exchange Server interactions with easy-to-follow steps."
-"title": "Manage Tasks Efficiently with Aspose.Email for Java&#58; Calendar & Appointments Guide"
+"description": "تعرّف على كيفية إدراج المهام والاستعلام عنها باستخدام Aspose.Email لـ Java. بسّط تعاملاتك مع Exchange Server بخطوات سهلة."
+"title": "إدارة المهام بكفاءة باستخدام دليل التقويم والمواعيد في Aspose.Email لـ Java"
 "url": "/ar/java/calendar-appointments/aspose-email-java-task-management/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Manage Tasks Efficiently with Aspose.Email for Java
+# إدارة المهام بكفاءة مع Aspose.Email لـ Java
 
 ## مقدمة
 
-Efficient task management is essential in busy work environments, particularly when interacting with multiple email servers. **Aspose.Email for Java** simplifies this process by allowing seamless interaction with Microsoft Exchange Servers. This tutorial provides practical guidance on how to leverage its capabilities for effective task management.
+تعد إدارة المهام بكفاءة أمرًا ضروريًا في بيئات العمل المزدحمة، وخاصةً عند التفاعل مع خوادم بريد إلكتروني متعددة. **Aspose.Email لـ Java** يُبسّط هذا البرنامج هذه العملية من خلال إتاحة تفاعل سلس مع خوادم Microsoft Exchange. يُقدّم هذا البرنامج التعليمي إرشادات عملية حول كيفية الاستفادة من إمكانياته لإدارة المهام بفعالية.
 
 **ما سوف تتعلمه:**
-- Initializing the Exchange Client using Aspose.Email
-- Listing all tasks from an Exchange Server
-- Querying specific tasks based on their status
-- Integrating Aspose.Email with Java applications
+- تهيئة عميل Exchange باستخدام Aspose.Email
+- إدراج جميع المهام من خادم Exchange
+- الاستعلام عن مهام محددة بناءً على حالتها
+- دمج Aspose.Email مع تطبيقات Java
 
-Ready to enhance your task management workflow? Let's start by looking at the prerequisites.
+هل أنت مستعد لتحسين سير عمل إدارة مهامك؟ لنبدأ بالاطلاع على المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
 قبل أن تبدأ، تأكد من أن لديك:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email for Java**: Version 25.4 or later is needed.
-- **Java Development Kit (JDK)**: Use version 16 or later.
+- **Aspose.Email لـ Java**:يجب أن يكون الإصدار 25.4 أو أحدث.
+- **مجموعة تطوير جافا (JDK)**:استخدم الإصدار 16 أو الأحدث.
 
 ### متطلبات إعداد البيئة
-- A functioning Java development environment with Maven installed.
+- بيئة تطوير Java عاملة مع تثبيت Maven.
 
 ### متطلبات المعرفة
-- Basic understanding of Java and object-oriented programming concepts.
+- فهم أساسي لمفاهيم جافا والبرمجة الموجهة للكائنات.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To integrate the Aspose.Email library into your project, add this dependency to your `pom.xml` if you're using Maven:
+لدمج مكتبة Aspose.Email في مشروعك، أضف هذه التبعية إلى `pom.xml` إذا كنت تستخدم Maven:
 
 ```xml
 <dependency>
@@ -54,11 +54,11 @@ To integrate the Aspose.Email library into your project, add this dependency to 
 
 ### خطوات الحصول على الترخيص
 
-1. **نسخة تجريبية مجانية**: Begin with a free trial to explore features.
-2. **رخصة مؤقتة**: Apply for an extended testing license if needed.
-3. **شراء**: Consider buying a full license after evaluating the library.
+1. **نسخة تجريبية مجانية**:ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
+2. **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص اختبار ممتد إذا لزم الأمر.
+3. **شراء**:فكر في شراء ترخيص كامل بعد تقييم المكتبة.
 
-With your environment set up and a license in hand, initialize the library as follows:
+بعد إعداد البيئة الخاصة بك والحصول على الترخيص، قم بتهيئة المكتبة على النحو التالي:
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -70,14 +70,14 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-This snippet sets up the Exchange Client with your specified credentials.
+يقوم هذا المقطع بإعداد عميل Exchange باستخدام بيانات الاعتماد المحددة لديك.
 
 ## دليل التنفيذ
 
-### Initialize Exchange Client
+### تهيئة عميل Exchange
 
 #### ملخص
-Initialize the Aspose.Email Java client to connect and authenticate with your Exchange Server. This is essential for accessing mailbox tasks programmatically.
+قم بتشغيل عميل Aspose.Email Java للاتصال بخادم Exchange والمصادقة عليه. هذا ضروري للوصول إلى مهام صندوق البريد برمجيًا.
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -90,13 +90,13 @@ IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
 - **حدود**:
-  - `mailboxUri`: The endpoint URL of your Exchange server.
+  - `mailboxUri`:عنوان URL لنقطة النهاية لخادم Exchange الخاص بك.
   - `username`، `password`، `domain`:بيانات الاعتماد للمصادقة.
 
-### List All Tasks from Exchange Server
+### قائمة جميع المهام من Exchange Server
 
 #### ملخص
-Retrieve all tasks stored in your Exchange mailbox using the initialized client.
+استرداد كافة المهام المخزنة في صندوق بريد Exchange الخاص بك باستخدام العميل المُهيأ.
 
 ```java
 client.setTimezoneId("Central Europe Standard Time");
@@ -104,17 +104,17 @@ TaskCollection taskCollection = client.listTasks(client.getMailboxInfo().getTask
 int iTasksCount = taskCollection.size();
 for (int i = 0; i < iTasksCount; i++) {
     ExchangeTask task = (ExchangeTask) taskCollection.get_Item(i);
-    // Process each task
+    // معالجة كل مهمة
 }
 ```
 
 - **حدود**:
-  - `setTimezoneId`: Ensures tasks are displayed in the correct local time.
+  - `setTimezoneId`:يضمن عرض المهام بالوقت المحلي الصحيح.
 
-### Query and List Specific Tasks from Exchange Server
+### الاستعلام عن مهام محددة وإدراجها في قائمة من Exchange Server
 
 #### ملخص
-Filter and list specific tasks based on their status using query capabilities.
+قم بتصفية المهام المحددة وإدراجها في قائمة استنادًا إلى حالتها باستخدام إمكانيات الاستعلام.
 
 ```java
 Integer[] selectedStatuses = new Integer[]{
@@ -130,63 +130,63 @@ taskCollection = client.listTasks(client.getMailboxInfo().getTasksUri(), query);
 iTasksCount = taskCollection.size();
 for (int i = 0; i < iTasksCount; i++) {
     ExchangeTask task = (ExchangeTask) taskCollection.get_Item(i);
-    // Process each queried task
+    // معالجة كل مهمة تم الاستعلام عنها
 }
 ```
 
 - **حدود**:
-  - `selectedStatuses`: An array specifying which statuses to filter tasks by.
+  - `selectedStatuses`:مجموعة تحدد الحالات التي سيتم تصفية المهام حسبها.
 
 ## التطبيقات العملية
 
-Integrating Aspose.Email with Java enables various real-world applications:
+يتيح دمج Aspose.Email مع Java إمكانية تشغيل العديد من التطبيقات الواقعية:
 
-1. **إدارة المهام الآلية**: Synchronize and update tasks across platforms automatically.
-2. **Reporting Tools**: Generate reports based on task completion status.
-3. **Workflow Automation**: Trigger workflows when specific conditions are met (e.g., a task is completed).
-4. **التكامل بين المنصات**: Seamlessly integrate with other systems like CRM or project management tools.
+1. **إدارة المهام الآلية**:مزامنة وتحديث المهام عبر الأنظمة الأساسية تلقائيًا.
+2. **أدوات إعداد التقارير**:إنشاء تقارير بناءً على حالة إكمال المهمة.
+3. **أتمتة سير العمل**:قم بتشغيل سير العمل عند استيفاء شروط معينة (على سبيل المثال، اكتمال مهمة).
+4. **التكامل بين المنصات**:التكامل بسلاسة مع أنظمة أخرى مثل CRM أو أدوات إدارة المشاريع.
 
 ## اعتبارات الأداء
 
 لضمان الأداء الأمثل:
 
-- **تحسين استخدام الشبكة**: Fetch only necessary information to minimize data transfer.
-- **إدارة الذاكرة بكفاءة**: Be mindful of Java memory usage, especially when handling large task collections.
-- **أفضل ممارسات Aspose.Email**: Follow Aspose's documentation for advanced configuration and optimization techniques.
+- **تحسين استخدام الشبكة**:جلب المعلومات الضرورية فقط لتقليل نقل البيانات.
+- **إدارة الذاكرة بكفاءة**:كن حذرًا بشأن استخدام ذاكرة Java، خاصةً عند التعامل مع مجموعات كبيرة من المهام.
+- **أفضل ممارسات Aspose.Email**:اتبع وثائق Aspose للتعرف على تقنيات التكوين والتحسين المتقدمة.
 
 ## خاتمة
 
-You are now equipped with the knowledge to initialize an Exchange Client, list all tasks, and query specific tasks using Aspose.Email for Java. Explore further by integrating these features into your applications or optimizing performance based on your use cases.
+أنت الآن مُجهَّز بالمعرفة اللازمة لتهيئة عميل Exchange، وسرد جميع المهام، والاستعلام عن مهام مُحددة باستخدام Aspose.Email لـ Java. استكشف المزيد من خلال دمج هذه الميزات في تطبيقاتك أو تحسين الأداء بناءً على حالات استخدامك.
 
-Ready for more? Implement this solution in a real-world scenario to enhance your task management processes.
+هل أنت مستعد للمزيد؟ طبّق هذا الحل في بيئة واقعية لتحسين عمليات إدارة مهامك.
 
 ## قسم الأسئلة الشائعة
 
-1. **What is Aspose.Email for Java?**
-   - A library that simplifies interaction with email servers, including Exchange Server.
+1. **ما هو Aspose.Email لـ Java؟**
+   - مكتبة تبسط التفاعل مع خوادم البريد الإلكتروني، بما في ذلك Exchange Server.
 
-2. **How do I obtain an Aspose.Email license?**
-   - Start with a free trial or request a temporary license to evaluate features before purchasing.
+2. **كيف يمكنني الحصول على ترخيص Aspose.Email؟**
+   - ابدأ بإصدار تجريبي مجاني أو اطلب ترخيصًا مؤقتًا لتقييم الميزات قبل الشراء.
 
-3. **Can I use Aspose.Email on any version of Java?**
-   - Yes, but version 16 is recommended for optimal compatibility and performance.
+3. **هل يمكنني استخدام Aspose.Email على أي إصدار من Java؟**
+   - نعم، ولكن يوصى باستخدام الإصدار 16 لتحقيق التوافق والأداء الأمثل.
 
-4. **What are some common issues when using Aspose.Email?**
-   - Network connectivity problems, incorrect credentials, or misconfigured environment settings can cause issues.
+4. **ما هي بعض المشكلات الشائعة عند استخدام Aspose.Email؟**
+   - يمكن أن تتسبب مشكلات الاتصال بالشبكة أو بيانات الاعتماد غير الصحيحة أو إعدادات البيئة غير الصحيحة في حدوث مشكلات.
 
-5. **Where can I find more resources on Aspose.Email for Java?**
-   - قم بزيارة [الوثائق الرسمية](https://reference.aspose.com/email/java/) و [support forums](https://forum.aspose.com/c/email/10) for detailed guides and community support.
+5. **أين يمكنني العثور على المزيد من الموارد حول Aspose.Email لـ Java؟**
+   - قم بزيارة [الوثائق الرسمية](https://reference.aspose.com/email/java/) و [منتديات الدعم](https://forum.aspose.com/c/email/10) للحصول على إرشادات مفصلة ودعم المجتمع.
 
 ## موارد
 
-- **التوثيق**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **تحميل**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **شراء**: [Buy Aspose License](https://purchase.aspose.com/buy)
+- **التوثيق**: [مرجع جافا لـ Aspose Email](https://reference.aspose.com/email/java/)
+- **تحميل**: [إصدارات Aspose Email Java](https://releases.aspose.com/email/java/)
+- **شراء**: [شراء ترخيص Aspose](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية**: [ابدأ بإصدار تجريبي مجاني](https://releases.aspose.com/email/java/)
 - **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **يدعم**: [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
-Embrace the power of Aspose.Email for Java and streamline your email server interactions today!
+استمتع بقوة Aspose.Email لـ Java وقم بتبسيط تفاعلاتك مع خادم البريد الإلكتروني اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

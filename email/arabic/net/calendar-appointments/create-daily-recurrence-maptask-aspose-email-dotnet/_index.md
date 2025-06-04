@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently create and configure daily recurring tasks using Aspose.Email for .NET. This guide covers setup, task configuration, adding recurrence patterns, and saving as an Outlook message."
-"title": "How to Create a Daily Recurring MapiTask with Aspose.Email for .NET | Step-by-Step Guide"
+"description": "تعرّف على كيفية إنشاء وتكوين مهام يومية متكررة بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد، وتكوين المهام، وإضافة أنماط التكرار، وحفظها كرسالة Outlook."
+"title": "كيفية إنشاء مهمة MapiTask يومية متكررة باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة"
 "url": "/ar/net/calendar-appointments/create-daily-recurrence-maptask-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create a Daily Recurring MapiTask with Aspose.Email for .NET | Step-by-Step Guide
+# كيفية إنشاء مهمة MapiTask يومية متكررة باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة
 
 ## مقدمة
 
-Efficiently managing daily recurring tasks is essential for maintaining productivity. With Aspose.Email for .NET, you can programmatically create and configure Outlook tasks seamlessly. This guide will walk you through creating a `MapiTask`, setting its properties, and adding a daily recurrence pattern using Aspose.Email's robust features.
+إدارة المهام اليومية المتكررة بكفاءة أمرٌ أساسي للحفاظ على الإنتاجية. مع Aspose.Email لـ .NET، يمكنك إنشاء مهام Outlook وتكوينها برمجيًا بسلاسة. سيرشدك هذا الدليل خلال عملية إنشاء `MapiTask`، وتعيين خصائصه، وإضافة نمط تكرار يومي باستخدام ميزات Aspose.Email القوية.
 
 **ما سوف تتعلمه:**
 - إعداد بيئتك باستخدام Aspose.Email لـ .NET
-- إنشاء وتكوين `MapiTask` with attributes like name, body, start date, due date, and state
-- Adding a daily recurrence pattern to the task
-- Saving the configured task as an Outlook message file
+- إنشاء وتكوين `MapiTask` مع سمات مثل الاسم والنص وتاريخ البدء وتاريخ الاستحقاق والحالة
+- إضافة نمط التكرار اليومي للمهمة
+- حفظ المهمة المُهيأة كملف رسالة Outlook
 
 دعونا نبدأ بتغطية المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
-To create tasks using Aspose.Email for .NET, ensure you have:
+لإنشاء مهام باستخدام Aspose.Email لـ .NET، تأكد من أن لديك:
 
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: Essential for email and calendar operations. Download the latest version from the official site.
+- **Aspose.Email لـ .NET**أساسي لعمليات البريد الإلكتروني والتقويم. نزّل أحدث إصدار من الموقع الرسمي.
 
 ### متطلبات إعداد البيئة
-- Visual Studio 2019 or later installed on your machine.
+- تم تثبيت Visual Studio 2019 أو إصدار أحدث على جهازك.
 - فهم أساسي لمفاهيم البرمجة C# و.NET.
 
 ## إعداد Aspose.Email لـ .NET
 
-Follow these steps to install Aspose.Email for .NET:
+اتبع الخطوات التالية لتثبيت Aspose.Email لـ .NET:
 
 **.NET CLI**
 ```bash
@@ -56,7 +56,7 @@ Install-Package Aspose.Email
 ### خطوات الحصول على الترخيص
 - **نسخة تجريبية مجانية**:ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
 - **رخصة مؤقتة**:الحصول على ترخيص مؤقت للاختبار الموسع.
-- **شراء**: Buy a subscription for full access if suitable.
+- **شراء**:قم بشراء اشتراك للوصول الكامل إذا كان ذلك مناسبًا.
 
 #### التهيئة والإعداد الأساسي
 بمجرد التثبيت، قم بتهيئة المكتبة في مشروعك:
@@ -67,86 +67,86 @@ license.SetLicense("Aspose.Email.lic");
 
 ## دليل التنفيذ
 
-### Create and Configure a MapiTask
-إنشاء `MapiTask` involves setting essential attributes like name, body, start date, due date, and state.
+### إنشاء وتكوين MapiTask
+إنشاء `MapiTask` يتضمن تعيين السمات الأساسية مثل الاسم والنص وتاريخ البدء وتاريخ الاستحقاق والحالة.
 
-#### Creating the Task
+#### إنشاء المهمة
 ```csharp
 using Aspose.Email.Mapi;
 
 DateTime StartDate = new DateTime(2015, 7, 16);
 DateTime DueDate = new DateTime(2015, 7, 16);
 
-// Create a new MapiTask instance
+// إنشاء مثيل MapiTask جديد
 task = new MapiTask("This is test task", "Sample Body", StartDate, DueDate);
 
-// Set the state of the task to NotAssigned
+// تعيين حالة المهمة إلى NotAssigned
 task.State = MapiTaskState.NotAssigned;
 ```
-**توضيح**: Here, we instantiate a `MapiTask` with a name, body, start date, and due date. We also set its initial state.
+**توضيح**:هنا، نقوم بإنشاء مثال `MapiTask` مع اسم، ونص، وتاريخ بدء، وتاريخ استحقاق. كما نحدد حالته الأولية.
 
-### Set Daily Recurrence Pattern for a MapiTask
-Add a daily recurrence pattern to ensure the task repeats indefinitely.
+### تعيين نمط التكرار اليومي لـ MapiTask
+أضف نمط تكرار يومي للتأكد من تكرار المهمة إلى أجل غير مسمى.
 
-#### Setting the Recurrence Pattern
+#### ضبط نمط التكرار
 ```csharp
 var record = new MapiCalendarDailyRecurrencePattern
 {
     PatternType = MapiCalendarRecurrencePatternType.Day,
-    Period = 1, // Task recurs every day
-    EndType = MapiCalendarRecurrenceEndType.NeverEnd, // The recurrence never ends
+    Period = 1, // تتكرر المهمة كل يوم
+    EndType = MapiCalendarRecurrenceEndType.NeverEnd, // التكرار لا ينتهي أبدا
 };
 
 // تعيين نمط التكرار للمهمة
 task.Recurrence = record;
 ```
-**توضيح**: This snippet defines a daily recurrence pattern that will not end. `PatternType` is set to `Day`، و `Period` specifies the interval of days between occurrences.
+**توضيح**:تحدد هذه القطعة نمط التكرار اليومي الذي لن ينتهي. `PatternType` تم ضبطه على `Day`، و `Period` يحدد الفاصل الزمني للأيام بين حدوث الأحداث.
 
-### Save a MapiTask to File
-Finally, save your configured task as an Outlook message file.
+### حفظ MapiTask في ملف
+أخيرًا، احفظ المهمة التي قمت بتكوينها كملف رسالة في Outlook.
 
-#### Saving the Task
+#### حفظ المهمة
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY"; // استبدل بمسار دليل المستند الخاص بك
 
-// Save the MapiTask to a .msg file
+// احفظ MapiTask في ملف .msg
 task.Save(dataDir + "/SetDailyNeverEndRecurrence_out.msg", TaskSaveFormat.Msg);
 ```
-**توضيح**: This code saves your task to a `.msg` file, which can be opened in Outlook.
+**توضيح**:هذا الكود يحفظ مهمتك في `.msg` الملف الذي يمكن فتحه في Outlook.
 
 ## التطبيقات العملية
-1. **Automated Daily Reminders**: Schedule daily reminders for team meetings or deadlines.
-2. **Recurring Tasks Management**: Automate recurring tasks in project management software.
-3. **تخطيط الفعاليات**: Plan and schedule regular events like weekly check-ins or monthly reviews.
+1. **التذكيرات اليومية الآلية**:قم بجدولة تذكيرات يومية لاجتماعات الفريق أو المواعيد النهائية.
+2. **إدارة المهام المتكررة**:أتمتة المهام المتكررة في برامج إدارة المشاريع.
+3. **تخطيط الفعاليات**:قم بالتخطيط وتحديد مواعيد الأحداث المنتظمة مثل عمليات تسجيل الوصول الأسبوعية أو المراجعات الشهرية.
 
-Integrating with other systems, such as CRM tools, can further streamline task management workflows.
+يمكن أن يؤدي التكامل مع أنظمة أخرى، مثل أدوات إدارة علاقات العملاء، إلى تبسيط سير عمل إدارة المهام بشكل أكبر.
 
 ## اعتبارات الأداء
 عند استخدام Aspose.Email لـ .NET:
-- Optimize memory usage by disposing of objects when they're no longer needed.
-- Handle exceptions gracefully to prevent resource leaks.
-- Follow best practices for .NET memory management to ensure efficient application performance.
+- قم بتحسين استخدام الذاكرة عن طريق التخلص من الكائنات عندما لم تعد هناك حاجة إليها.
+- تعامل مع الاستثناءات بشكل جيد لمنع تسرب الموارد.
+- اتبع أفضل الممارسات لإدارة ذاكرة .NET لضمان أداء التطبيق بكفاءة.
 
 ## خاتمة
-You now know how to create and configure a `MapiTask` with daily recurrence using Aspose.Email for .NET. These skills can significantly enhance your productivity tools, allowing you to automate task scheduling seamlessly.
+أنت تعرف الآن كيفية إنشاء وتكوين `MapiTask` مع تكرار يومي باستخدام Aspose.Email لـ .NET. هذه المهارات تُحسّن أدوات الإنتاجية لديك بشكل ملحوظ، مما يسمح لك بأتمتة جدولة المهام بسلاسة.
 
 **الخطوات التالية:**
-- Explore more features of Aspose.Email by diving into the [التوثيق](https://reference.aspose.com/email/net/).
-- Experiment with different types of tasks and recurrence patterns.
-- Consider integrating this functionality into larger systems for automated workflow management.
+- استكشف المزيد من ميزات Aspose.Email من خلال الغوص في [التوثيق](https://reference.aspose.com/email/net/).
+- تجربة أنواع مختلفة من المهام وأنماط التكرار.
+- فكر في دمج هذه الوظيفة في أنظمة أكبر لإدارة سير العمل تلقائيًا.
 
-Ready to take your skills further? Try implementing these concepts in a project today!
+هل أنت مستعد لتطوير مهاراتك؟ جرّب تطبيق هذه المفاهيم في مشروع اليوم!
 
 ## قسم الأسئلة الشائعة
 1. **ما هو استخدام Aspose.Email لـ .NET؟**
-   - It's a comprehensive library for handling email, calendar, and task-related operations programmatically in .NET applications.
-2. **Can I set other recurrence patterns besides daily?**
-   - Yes, you can configure weekly, monthly, or custom recurrence patterns using the `MapiCalendarRecurrencePatternType`.
-3. **Is it possible to save tasks in formats other than .msg?**
-   - Aspose.Email supports various formats; refer to [TaskSaveFormat](https://reference.aspose.com/email/net/) for more options.
-4. **How do I handle exceptions while saving tasks?**
-   - Implement try-catch blocks around your task-saving logic to gracefully manage any errors.
-5. **Where can I get a temporary license for Aspose.Email?**
+   - إنها مكتبة شاملة للتعامل مع البريد الإلكتروني والتقويم والعمليات المرتبطة بالمهام برمجيًا في تطبيقات .NET.
+2. **هل يمكنني تعيين أنماط تكرار أخرى غير اليومية؟**
+   - نعم، يمكنك تكوين أنماط التكرار الأسبوعية أو الشهرية أو المخصصة باستخدام `MapiCalendarRecurrencePatternType`.
+3. **هل من الممكن حفظ المهام بصيغة أخرى غير .msg؟**
+   - يدعم Aspose.Email تنسيقات مختلفة؛ راجع [تنسيق حفظ المهمة](https://reference.aspose.com/email/net/) لمزيد من الخيارات.
+4. **كيف أتعامل مع الاستثناءات أثناء حفظ المهام؟**
+   - قم بتنفيذ كتل try-catch حول منطق حفظ المهام الخاص بك لإدارة أي أخطاء بسلاسة.
+5. **أين يمكنني الحصول على ترخيص مؤقت لـ Aspose.Email؟**
    - قم بزيارة [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) لطلب واحد.
 
 ## موارد

@@ -1,8 +1,8 @@
 ---
-"description": "Unlock the Power of X-Headers in Emails with Aspose.Email for Java. Learn to Manage Custom Metadata and Enhance Email Processing."
-"linktitle": "Managing X-Headers in Email Messages with Aspose.Email"
+"description": "استغلّ قوة عناوين X في رسائل البريد الإلكتروني مع Aspose.Email لجافا. تعلّم كيفية إدارة البيانات الوصفية المخصصة وتحسين معالجة البريد الإلكتروني."
+"linktitle": "إدارة رؤوس X في رسائل البريد الإلكتروني باستخدام Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Managing X-Headers in Email Messages with Aspose.Email"
+"title": "إدارة رؤوس X في رسائل البريد الإلكتروني باستخدام Aspose.Email"
 "url": "/ar/java/customizing-email-headers/managing-x-headers-in-email-messages/"
 "weight": 16
 ---
@@ -13,72 +13,72 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Managing X-Headers in Email Messages with Aspose.Email
+# إدارة رؤوس X في رسائل البريد الإلكتروني باستخدام Aspose.Email
 
 
 ## مقدمة
 
-In the world of email communication, headers play a crucial role in providing essential information about the message. Among these headers, X-Headers stand out as a way to include custom information in emails. This article will guide you through the process of managing X-Headers in email messages using Aspose.Email for Java.
+في عالم التواصل عبر البريد الإلكتروني، تلعب الرؤوس دورًا حاسمًا في توفير معلومات أساسية حول الرسالة. من بين هذه الرؤوس، تبرز رؤوس X كوسيلة لإضافة معلومات مخصصة إلى رسائل البريد الإلكتروني. سترشدك هذه المقالة خلال عملية إدارة رؤوس X في رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا.
 
 ## المتطلبات الأساسية
 
-Before we dive into the technical details, make sure you have the following prerequisites in place:
+قبل أن نتعمق في التفاصيل الفنية، تأكد من توفر المتطلبات الأساسية التالية:
 
-- Basic knowledge of Java programming.
-- Java Development Kit (JDK) installed on your system.
-- Aspose.Email for Java library, which you can download from [هنا](https://releases.aspose.com/email/java/).
-- Integrated Development Environment (IDE) such as IntelliJ IDEA or Eclipse.
+- المعرفة الأساسية ببرمجة جافا.
+- تم تثبيت Java Development Kit (JDK) على نظامك.
+- Aspose.Email لمكتبة Java، والتي يمكنك تنزيلها من [هنا](https://releases.aspose.com/email/java/).
+- بيئة التطوير المتكاملة (IDE) مثل IntelliJ IDEA أو Eclipse.
 
-## What Are X-Headers?
+## ما هي رؤوس X؟
 
-X-Headers, short for "eXtended Headers," are custom email headers that allow you to include additional information in an email message. These headers are not standardized and can be used to add metadata or special instructions to the email.
+رؤوس X، اختصارًا لـ "رؤوس مُوسّعة"، هي رؤوس بريد إلكتروني مُخصّصة تُتيح لك تضمين معلومات إضافية في رسالة البريد الإلكتروني. هذه الرؤوس ليست مُوحّدة، ويمكن استخدامها لإضافة بيانات وصفية أو تعليمات خاصة إلى البريد الإلكتروني.
 
-## Why Use X-Headers?
+## لماذا تستخدم X-Headers؟
 
-X-Headers are useful in various scenarios, such as:
+تُعد رؤوس X مفيدة في سيناريوهات مختلفة، مثل:
 
-- Custom Metadata: You can include custom information relevant to your application or organization.
-- Filtering: X-Headers can be used to create rules for email filtering and sorting.
-- Tracking: They enable tracking specific information about email delivery and processing.
+- البيانات التعريفية المخصصة: يمكنك تضمين معلومات مخصصة ذات صلة بتطبيقك أو مؤسستك.
+- التصفية: يمكن استخدام X-Headers لإنشاء قواعد لتصفية البريد الإلكتروني وفرزه.
+- التتبع: يتيح لك تتبع معلومات محددة حول تسليم البريد الإلكتروني ومعالجته.
 
-Now, let's dive into the practical aspects of managing X-Headers using Aspose.Email for Java.
+الآن، دعنا نتعمق في الجوانب العملية لإدارة X-Headers باستخدام Aspose.Email لـ Java.
 
-## Step 1: Setting Up Your Java Project
+## الخطوة 1: إعداد مشروع Java الخاص بك
 
-To get started, create a new Java project in your chosen IDE. Add the Aspose.Email for Java library to your project's dependencies. You can do this by including the JAR file you downloaded earlier.
+للبدء، أنشئ مشروع جافا جديدًا في بيئة التطوير المتكاملة التي اخترتها. أضف مكتبة Aspose.Email لجافا إلى تبعيات مشروعك. يمكنك القيام بذلك بتضمين ملف JAR الذي نزّلته سابقًا.
 
-## Step 2: Creating an Email Message
+## الخطوة 2: إنشاء رسالة بريد إلكتروني
 
-Let's create a simple email message and add custom X-Headers to it. In this example, we will use Aspose.Email to send a welcome email to a new user.
+لنُنشئ رسالة بريد إلكتروني بسيطة ونُضيف إليها رؤوس X مُخصصة. في هذا المثال، سنستخدم Aspose.Email لإرسال رسالة ترحيبية إلى مستخدم جديد.
 
 ```java
-// Import necessary classes
+// استيراد الفئات الضرورية
 import com.aspose.email.*;
 
-// Create a new email message
+// إنشاء رسالة بريد إلكتروني جديدة
 MailMessage message = new MailMessage();
 
-// Set the sender's and recipient's email addresses
+// تعيين عناوين البريد الإلكتروني للمرسل والمستلم
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// Set the subject and body of the email
+// تعيين موضوع ونص البريد الإلكتروني
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Add custom X-Headers
+// إضافة رؤوس X مخصصة
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// Save the email as an EML file
+// حفظ البريد الإلكتروني كملف EML
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-In this code, we create an email message, set the sender and recipient addresses, define the subject and body, and add custom X-Headers.
+في هذا الكود، نقوم بإنشاء رسالة بريد إلكتروني، وتعيين عناوين المرسل والمستقبل، وتحديد الموضوع والنص، وإضافة رؤوس X مخصصة.
 
 ## الخطوة 3: إرسال البريد الإلكتروني
 
-Now that we've created the email, it's time to send it. Aspose.Email provides easy ways to send emails using different email servers and protocols. Here's an example of sending the email using the SMTP protocol:
+بعد أن أنشأنا البريد الإلكتروني، حان وقت إرساله. يوفر Aspose.Email طرقًا سهلة لإرسال رسائل البريد الإلكتروني باستخدام خوادم وبروتوكولات بريد إلكتروني مختلفة. إليك مثال على إرسال البريد الإلكتروني باستخدام بروتوكول SMTP:
 
 ```java
 // إنشاء مثيل لفئة SmtpClient
@@ -88,50 +88,50 @@ SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "yo
 client.send(message);
 ```
 
-Make sure to replace `"smtp.server.com"`، `"your@email.com"`، و `"your_password"` مع تفاصيل خادم SMTP وبيانات الاعتماد الخاصة بك.
+تأكد من الاستبدال `"smtp.server.com"`، `"your@email.com"`، و `"your_password"` مع تفاصيل خادم SMTP وبيانات الاعتماد الخاصة بك.
 
-## Step 4: Reading X-Headers
+## الخطوة 4: قراءة عناوين X
 
-Reading X-Headers from received email messages is just as important as adding them. Let's see how to retrieve X-Headers from an email using Aspose.Email for Java:
+قراءة رؤوس X من رسائل البريد الإلكتروني المستلمة لا تقل أهمية عن إضافتها. لنرَ كيفية استرداد رؤوس X من رسالة بريد إلكتروني باستخدام Aspose.Email لجافا:
 
 ```java
-// Load an EML file containing the received email
+// قم بتحميل ملف EML الذي يحتوي على البريد الإلكتروني المستلم
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Get the value of a custom X-Header
+// احصل على قيمة X-Header مخصصة
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-In this code, we load a received email from an EML file and retrieve the value of a custom X-Header.
+في هذا الكود، نقوم بتحميل بريد إلكتروني مستلم من ملف EML واسترداد قيمة X-Header مخصص.
 
 ## خاتمة
 
-Managing X-Headers in email messages with Aspose.Email for Java is a powerful way to add custom metadata and instructions to your emails. Whether you're tracking email delivery or simply including additional information, Aspose.Email makes it easy to work with X-Headers in your Java applications.
+تُعد إدارة رؤوس X في رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا طريقة فعّالة لإضافة بيانات تعريفية وتعليمات مخصصة إلى رسائلك. سواءً كنت تُتابع تسليم البريد الإلكتروني أو تُضيف معلومات إضافية، يُسهّل Aspose.Email العمل مع رؤوس X في تطبيقات جافا.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How do I install Aspose.Email for Java?
+### كيف أقوم بتثبيت Aspose.Email لـJava؟
 
-To install Aspose.Email for Java, follow these steps:
-1. Download the library from [هنا](https://releases.aspose.com/email/java/).
-2. Add the downloaded JAR file to your Java project's dependencies.
-3. You're now ready to use Aspose.Email for Java in your project.
+لتثبيت Aspose.Email لـJava، اتبع الخطوات التالية:
+1. تنزيل المكتبة من [هنا](https://releases.aspose.com/email/java/).
+2. أضف ملف JAR الذي تم تنزيله إلى تبعيات مشروع Java الخاص بك.
+3. أنت الآن جاهز لاستخدام Aspose.Email لـ Java في مشروعك.
 
-### Can I use X-Headers for email filtering?
+### هل يمكنني استخدام X-Headers لتصفية البريد الإلكتروني؟
 
-Yes, X-Headers are commonly used for email filtering. You can create rules in your email client or server to filter and sort emails based on the values of X-Headers.
+نعم، تُستخدم رؤوس X عادةً لتصفية رسائل البريد الإلكتروني. يمكنك إنشاء قواعد في عميل أو خادم البريد الإلكتروني لديك لتصفية رسائل البريد الإلكتروني وفرزها بناءً على قيم رؤوس X.
 
-### Are X-Headers standardized?
+### هل تم توحيد معايير X-Headers؟
 
-No, X-Headers are not standardized, which means you have the flexibility to define your own custom X-Headers to suit your specific needs.
+لا، لا يتم توحيد رؤوس X، مما يعني أن لديك المرونة اللازمة لتحديد رؤوس X المخصصة لتناسب احتياجاتك المحددة.
 
-### How can I read X-Headers from received emails?
+### كيف يمكنني قراءة X-Headers من رسائل البريد الإلكتروني المستلمة؟
 
-You can read X-Headers from received emails using Aspose.Email for Java. Load the received email, and then access the custom X-Headers as shown in the code examples in this article.
+يمكنك قراءة رؤوس X من رسائل البريد الإلكتروني المستلمة باستخدام Aspose.Email لجافا. حمّل البريد الإلكتروني المستلم، ثم افتح رؤوس X المخصصة كما هو موضح في أمثلة التعليمات البرمجية في هذه المقالة.
 
-### Is Aspose.Email suitable for enterprise-level email management?
+### هل Aspose.Email مناسب لإدارة البريد الإلكتروني على مستوى المؤسسة؟
 
-Yes, Aspose.Email is a robust library that can be used for enterprise-level email management. It offers a wide range of features for creating, sending, receiving, and processing emails, making it suitable for various business scenarios.
+نعم، Aspose.Email مكتبة قوية تُمكّنك من إدارة البريد الإلكتروني على مستوى المؤسسات. تُقدّم مجموعة واسعة من الميزات لإنشاء رسائل البريد الإلكتروني وإرسالها واستقبالها ومعالجتها، مما يجعلها مناسبة لمختلف سيناريوهات الأعمال.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

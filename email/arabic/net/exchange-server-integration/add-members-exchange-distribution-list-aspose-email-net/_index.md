@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to use Aspose.Email for .NET to add members to Exchange distribution lists while keeping existing contacts private. Streamline your email management with ease."
-"title": "Efficiently Add Members to Exchange Distribution Lists Using Aspose.Email .NET"
+"description": "تعرّف على كيفية استخدام Aspose.Email لـ .NET لإضافة أعضاء إلى قوائم توزيع Exchange مع الحفاظ على خصوصية جهات الاتصال الحالية. بسّط إدارة بريدك الإلكتروني بسهولة."
+"title": "إضافة الأعضاء إلى قوائم توزيع Exchange بكفاءة باستخدام Aspose.Email .NET"
 "url": "/ar/net/exchange-server-integration/add-members-exchange-distribution-list-aspose-email-net/"
 "weight": 1
 ---
@@ -11,30 +11,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Efficiently Add Members to Exchange Distribution Lists Using Aspose.Email .NET
+# إضافة الأعضاء إلى قوائم توزيع Exchange بكفاءة باستخدام Aspose.Email .NET
 
 ## مقدمة
 
-Managing email distribution lists can be challenging, especially when maintaining confidentiality is crucial. With Aspose.Email for .NET, you can add new members without exposing existing ones. This tutorial demonstrates how to use Aspose.Email's Exchange Web Services (EWS) client to seamlessly manage your Exchange Distribution Lists.
+قد تكون إدارة قوائم توزيع البريد الإلكتروني صعبة، خاصةً عندما يكون الحفاظ على السرية أمرًا بالغ الأهمية. مع Aspose.Email لـ .NET، يمكنك إضافة أعضاء جدد دون الكشف عن الأعضاء الحاليين. يوضح هذا البرنامج التعليمي كيفية استخدام عميل خدمات Exchange Web Services (EWS) من Aspose.Email لإدارة قوائم توزيع Exchange بسلاسة.
 
 **ما سوف تتعلمه:**
-- Integrating Aspose.Email for .NET into your project
-- Connecting and authenticating with the Exchange server
-- Adding new members without revealing current ones
+- دمج Aspose.Email لـ .NET في مشروعك
+- الاتصال والمصادقة مع خادم Exchange
+- إضافة أعضاء جدد دون الكشف عن الأعضاء الحاليين
 
-Ready to enhance your email management? Let's start by setting up your environment.
+هل أنت مستعد لتحسين إدارة بريدك الإلكتروني؟ لنبدأ بإعداد بيئتك.
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك:
 
-- **المكتبات**: Aspose.Email for .NET version 21.11 or later.
-- **بيئة**: A development setup supporting .NET applications (e.g., Visual Studio).
-- **معرفة**: Basic understanding of C# and REST APIs.
+- **المكتبات**:Aspose.Email لإصدار .NET 21.11 أو أحدث.
+- **بيئة**:إعداد تطوير يدعم تطبيقات .NET (على سبيل المثال، Visual Studio).
+- **معرفة**:فهم أساسي لـ C# وواجهات برمجة التطبيقات REST.
 
 ## إعداد Aspose.Email لـ .NET
 
-Begin by installing the library in your project:
+ابدأ بتثبيت المكتبة في مشروعك:
 
 ### خيارات التثبيت
 
@@ -51,19 +51,19 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير حزمة NuGet:**
-Search for "Aspose.Email" and install the latest version in Visual Studio.
+ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث في Visual Studio.
 
 ### الحصول على الترخيص
 
-يمكنك البدء بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) to explore features. For extended use, consider obtaining a temporary or full license:
+يمكنك البدء بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) لاستكشاف الميزات. للاستخدام الممتد، فكّر في الحصول على ترخيص مؤقت أو كامل:
 
-1. **نسخة تجريبية مجانية**: Download and apply a free trial license from Aspose's website.
-2. **رخصة مؤقتة**: Request a [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) for evaluation purposes.
-3. **شراء**: Unlock all features by purchasing a full license if satisfied.
+1. **نسخة تجريبية مجانية**:قم بتنزيل واستخدام ترخيص تجريبي مجاني من موقع Aspose.
+2. **رخصة مؤقتة**:طلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) لأغراض التقييم.
+3. **شراء**:قم بإلغاء قفل جميع الميزات عن طريق شراء ترخيص كامل إذا كنت راضيًا.
 
 ### التهيئة الأساسية
 
-Initialize your client before adding members:
+قم بإعداد عميلك قبل إضافة الأعضاء:
 
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient(

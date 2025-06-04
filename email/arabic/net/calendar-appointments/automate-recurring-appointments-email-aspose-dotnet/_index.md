@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to automate sending recurring appointment emails with Aspose.Email for .NET, including setting up weekly recurrence patterns and attaching appointments."
-"title": "Automate and Send Recurring Appointments via Email Using Aspose.Email for .NET"
+"description": "تعرف على كيفية أتمتة إرسال رسائل البريد الإلكتروني الخاصة بالمواعيد المتكررة باستخدام Aspose.Email لـ .NET، بما في ذلك إعداد أنماط التكرار الأسبوعية وإرفاق المواعيد."
+"title": "أتمتة وإرسال المواعيد المتكررة عبر البريد الإلكتروني باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/calendar-appointments/automate-recurring-appointments-email-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,39 +11,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Automate and Send Recurring Appointments via Email Using Aspose.Email for .NET
+# أتمتة وإرسال المواعيد المتكررة عبر البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
-Managing team meetings or event schedules requires efficient automation of email invitations. This tutorial guides you through automating recurring appointment emails using Aspose.Email for .NET, simplifying your scheduling process.
+تتطلب إدارة اجتماعات الفريق أو جداول الفعاليات أتمتة فعالة لدعوات البريد الإلكتروني. يرشدك هذا البرنامج التعليمي إلى كيفية أتمتة رسائل البريد الإلكتروني للمواعيد المتكررة باستخدام Aspose.Email لـ .NET، مما يُبسط عملية جدولة مواعيدك.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email لـ .NET
-- Creating and sending emails with recipient details
-- Generating and configuring appointments
-- Configuring weekly recurrence patterns
-- Attaching appointments to emails as alternative views
-- Sending emails via SMTP using Aspose.Email
+- إنشاء رسائل البريد الإلكتروني وإرسالها مع تفاصيل المستلم
+- إنشاء المواعيد وتكوينها
+- تكوين أنماط التكرار الأسبوعية
+- ربط المواعيد برسائل البريد الإلكتروني كوجهات نظر بديلة
+- إرسال رسائل البريد الإلكتروني عبر SMTP باستخدام Aspose.Email
 
 ## المتطلبات الأساسية (H2)
 قبل البدء، تأكد من أن لديك:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
-- .NET Framework or .NET Core installed on your machine.
-- The latest version of Aspose.Email for .NET library. Install it using a package manager:
+- تم تثبيت .NET Framework أو .NET Core على جهازك.
+- أحدث إصدار من مكتبة Aspose.Email لـ .NET. ثبّته باستخدام مدير الحزم:
   - **.NET CLI**: `dotnet add package Aspose.Email`
   - **وحدة تحكم مدير الحزم**: `Install-Package Aspose.Email`
-  - **واجهة مستخدم مدير الحزم NuGet**: Search and install the latest version of "Aspose.Email".
+  - **واجهة مستخدم مدير الحزم NuGet**:ابحث عن الإصدار الأحدث من "Aspose.Email" وقم بتثبيته.
 
 ### متطلبات إعداد البيئة
-- A suitable IDE like Visual Studio for C# and .NET projects.
+- بيئة تطوير متكاملة مناسبة مثل Visual Studio لمشاريع C# و.NET.
 
 ### متطلبات المعرفة
-- Basic understanding of C# programming concepts.
-- Familiarity with email protocols, especially SMTP.
-- Understanding appointment scheduling in calendar applications.
+- فهم أساسي لمفاهيم برمجة C#.
+- - المعرفة ببروتوكولات البريد الإلكتروني، وخاصة SMTP.
+- فهم جدولة المواعيد في تطبيقات التقويم.
 
 ## إعداد Aspose.Email لـ .NET (H2)
-To begin, add the Aspose.Email package to your project using one of the following methods:
+للبدء، أضف حزمة Aspose.Email إلى مشروعك باستخدام إحدى الطرق التالية:
 
 **.NET CLI**
 ```shell
@@ -57,37 +57,37 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 - ابدأ بفترة تجريبية مجانية عن طريق تنزيل ترخيص مؤقت من [أسبوزي](https://purchase.aspose.com/temporary-license/).
-- For production, purchase a full license and follow the instructions on the Aspose website to apply your license.
+- للإنتاج، قم بشراء ترخيص كامل واتبع الإرشادات الموجودة على موقع Aspose لتطبيق ترخيصك.
 
 ### التهيئة والإعداد الأساسي
-After installation, add the following namespace in your C# project:
+بعد التثبيت، أضف مساحة الأسماء التالية في مشروع C# الخاص بك:
 
 ```csharp
 using Aspose.Email;
 ```
 
 ## دليل التنفيذ (H2)
-This section demonstrates how to create a mail message with an attached appointment using Aspose.Email for .NET.
+يوضح هذا القسم كيفية إنشاء رسالة بريد إلكتروني تحتوي على موعد مرفق باستخدام Aspose.Email لـ .NET.
 
-### Create a Mail Message (H3)
+### إنشاء رسالة بريد إلكتروني (H3)
 ابدأ بإعداد `MailMessage` فصل:
 
 ```csharp
 using System;
 using Aspose.Email.Mime;
 
-// Initialize a new instance of the MailMessage class
+// تهيئة مثيل جديد لفئة MailMessage
 dynamic msg1 = new MailMessage();
 msg1.To.Add("to@domain.com");
 msg1.From = "from@gmail.com";
 ```
 
 **توضيح:**
-- `msg1.To.Add(...)`: Adds a recipient to the email.
-- `msg1.From`: Sets the sender's address.
+- `msg1.To.Add(...)`:يضيف مستلمًا إلى البريد الإلكتروني.
+- `msg1.From`:يحدد عنوان المرسل.
 
-### Create an Appointment Object (H3)
-Set up an appointment with necessary details:
+### إنشاء كائن موعد (H3)
+حدد موعدًا مع التفاصيل الضرورية:
 
 ```csharp
 using System;
@@ -96,18 +96,18 @@ using Aspose.Email.Calendar;
 DateTime StartDate = new DateTime(2023, 12, 1, 17, 0, 0);
 DateTime EndDate = new DateTime(2023, 12, 31, 17, 30, 0);
 
-// Create an appointment
+// إنشاء موعد
 Appointment agendaAppointment = new Appointment("same place", StartDate, EndDate, msg1.From, msg1.To.ToArray());
 agendaAppointment.UniqueId = Guid.NewGuid().ToString();
 agendaAppointment.Description = "Meeting Details";
 ```
 
 **توضيح:**
-- `DateTime`: Specifies the start and end dates.
-- ال `Appointment` constructor sets key properties like location and attendees.
+- `DateTime`:يحدد تاريخي البداية والنهاية.
+- ال `Appointment` يقوم المنشئ بتعيين خصائص رئيسية مثل الموقع والحضور.
 
-### Set Recurrence Pattern for an Appointment (H3)
-Define a weekly recurrence pattern:
+### تعيين نمط التكرار لموعد (H3)
+تحديد نمط التكرار الأسبوعي:
 
 ```csharp
 using Aspose.Email.Calendar.Recurrences;
@@ -119,59 +119,59 @@ agendaAppointment.Recurrence = pattern1;
 ```
 
 **توضيح:**
-- `WeeklyRecurrencePattern`: Configures weekly recurrence on specified days.
+- `WeeklyRecurrencePattern`:تكوين التكرار الأسبوعي في أيام محددة.
 
-### Attach Appointment to Mail Message and Send via SMTP (H3)
-Attach the appointment as an alternative view in your mail message and send it:
+### إرفاق الموعد برسالة البريد وإرساله عبر SMTP (H3)
+قم بإرفاق الموعد كعرض بديل في رسالة البريد الإلكتروني الخاصة بك وأرسله:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
 using System.Net.Security;
 
-// Add the appointment as an alternate view
+// أضف الموعد كعرض بديل
 dynamic alternateView = agendaAppointment.RequestApointment();
 msg1.AlternateViews.Add(alternateView);
 
 SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "your.email@gmail.com", "your.password");
 client.SecurityOptions = SecurityOptions.Auto;
 
-// Send the email with the attached appointment request
+// أرسل البريد الإلكتروني مع طلب الموعد المرفق
 client.Send(msg1);
 ```
 
 **توضيح:**
-- `msg1.AlternateViews.Add(...)`: Attaches the appointment as an alternative view.
-- `SmtpClient`: Configures and sends the email via SMTP.
+- `msg1.AlternateViews.Add(...)`:يرفق الموعد كعرض بديل.
+- `SmtpClient`:يقوم بتكوين البريد الإلكتروني وإرساله عبر SMTP.
 
 ## التطبيقات العملية (H2)
-Explore real-world scenarios:
-1. **Team Meetings**: Automate weekly team meeting invitations with recurring appointments attached.
-2. **تخطيط الفعاليات**: Send event reminders for workshops or seminars.
-3. **إدارة المشاريع**: Schedule recurring check-in meetings for project milestones.
+استكشاف السيناريوهات في العالم الحقيقي:
+1. **اجتماعات الفريق**:أتمتة دعوات اجتماعات الفريق الأسبوعية مع المواعيد المتكررة المرفقة.
+2. **تخطيط الفعاليات**:إرسال تذكيرات بالأحداث الخاصة بورش العمل أو الندوات.
+3. **إدارة المشاريع**:جدولة اجتماعات تسجيل الوصول المتكررة لمعالم المشروع.
 
 ## اعتبارات الأداء (H2)
-To enhance performance when using Aspose.Email:
-- Batch emails to minimize SMTP connections.
-- Dispose of objects not in use to manage memory efficiently.
-- Use asynchronous methods to avoid blocking operations.
+لتحسين الأداء عند استخدام Aspose.Email:
+- إرسال رسائل البريد الإلكتروني دفعة واحدة لتقليل اتصالات SMTP.
+- تخلص من العناصر غير المستخدمة لإدارة الذاكرة بكفاءة.
+- استخدم الطرق غير المتزامنة لتجنب عمليات الحظر.
 
 ## خاتمة
-This tutorial demonstrated how to create and send email messages with recurring appointments using Aspose.Email for .NET. This approach is ideal for automating meeting invitations and reminders, enhancing communication workflows.
+يوضح هذا البرنامج التعليمي كيفية إنشاء وإرسال رسائل بريد إلكتروني تتضمن مواعيد متكررة باستخدام Aspose.Email لـ .NET. يُعد هذا النهج مثاليًا لأتمتة دعوات الاجتماعات والتذكيرات، مما يُحسّن سير عمل التواصل.
 
 **الخطوات التالية:**
-Explore more features of Aspose.Email by checking their [التوثيق](https://reference.aspose.com/email/net/). Integrate this solution into your projects to streamline scheduling processes effectively.
+استكشف المزيد من ميزات Aspose.Email من خلال التحقق منها [التوثيق](https://reference.aspose.com/email/net/)قم بدمج هذا الحل في مشاريعك لتبسيط عمليات الجدولة بشكل فعال.
 
 ## قسم الأسئلة الشائعة (H2)
-1. **How do I handle authentication issues with SMTP?**
-   - Verify credentials and ensure less secure app access is enabled for Gmail accounts.
-2. **Can I customize the email content further?**
-   - Yes, use HTML bodies or attachments to enhance your emails.
-3. **What if my appointment needs daily recurrence instead of weekly?**
-   - يستخدم `DailyRecurrencePattern` with similar parameters as `WeeklyRecurrencePattern`.
+1. **كيف أتعامل مع مشاكل المصادقة مع SMTP؟**
+   - تحقق من بيانات الاعتماد وتأكد من تمكين الوصول إلى التطبيقات الأقل أمانًا لحسابات Gmail.
+2. **هل يمكنني تخصيص محتوى البريد الإلكتروني بشكل أكبر؟**
+   - نعم، استخدم نصوص HTML أو المرفقات لتحسين رسائل البريد الإلكتروني الخاصة بك.
+3. **ماذا لو كان موعدي يحتاج إلى تكرار يومي بدلاً من أسبوعي؟**
+   - يستخدم `DailyRecurrencePattern` مع معلمات مماثلة لـ `WeeklyRecurrencePattern`.
 4. **كيف يمكنني استكشاف أخطاء إرسال البريد الإلكتروني الفاشلة وإصلاحها؟**
-   - Check network connectivity, SMTP server settings, and the recipient's spam filters.
-5. **Is it possible to integrate Aspose.Email with CRM systems?**
-   - Yes, use Aspose.Email APIs to fetch contact details from your CRM before sending emails.
+   - تحقق من اتصال الشبكة وإعدادات خادم SMTP ومرشحات البريد العشوائي للمستلم.
+5. **هل من الممكن دمج Aspose.Email مع أنظمة CRM؟**
+   - نعم، استخدم واجهات برمجة التطبيقات Aspose.Email لجلب تفاصيل الاتصال من نظام إدارة علاقات العملاء (CRM) الخاص بك قبل إرسال رسائل البريد الإلكتروني.
 
 ## موارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/net/)

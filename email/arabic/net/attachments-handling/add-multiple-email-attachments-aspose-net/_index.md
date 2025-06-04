@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently add multiple attachments to emails with Aspose.Email for .NET. This guide offers step-by-step instructions and best practices."
-"title": "How to Add Multiple Email Attachments Using Aspose.Email for .NET&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إضافة مرفقات متعددة إلى رسائل البريد الإلكتروني بكفاءة باستخدام Aspose.Email لـ .NET. يقدم هذا الدليل إرشادات خطوة بخطوة وأفضل الممارسات."
+"title": "كيفية إضافة مرفقات بريد إلكتروني متعددة باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/attachments-handling/add-multiple-email-attachments-aspose-net/"
 "weight": 1
 ---
@@ -11,38 +11,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Add Multiple Email Attachments Using Aspose.Email for .NET
+# كيفية إضافة مرفقات بريد إلكتروني متعددة باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-In today's digital world, sending emails with attachments is a common task—be it sharing documents, images, or spreadsheets. However, manually attaching each file can be cumbersome and error-prone. This comprehensive guide will show you how to streamline this process using Aspose.Email for .NET, a powerful library that simplifies email handling.
+في عالمنا الرقمي اليوم، يُعد إرسال رسائل البريد الإلكتروني مع المرفقات أمرًا شائعًا، سواءً لمشاركة المستندات أو الصور أو جداول البيانات. ومع ذلك، قد يكون إرفاق كل ملف يدويًا أمرًا مرهقًا وعرضةً للأخطاء. سيوضح لك هذا الدليل الشامل كيفية تبسيط هذه العملية باستخدام Aspose.Email لـ .NET، وهي مكتبة فعّالة تُبسّط التعامل مع البريد الإلكتروني.
 
-**Keywords:** Aspose.Email .NET, adding multiple attachments
+**الكلمات المفتاحية:** Aspose.Email .NET، إضافة مرفقات متعددة
 
 ### ما سوف تتعلمه
 - كيفية إعداد البيئة الخاصة بك باستخدام Aspose.Email لـ .NET.
-- Step-by-step instructions on adding multiple attachments to an email message.
+- تعليمات خطوة بخطوة حول كيفية إضافة مرفقات متعددة إلى رسالة بريد إلكتروني.
 - أفضل الممارسات لإدارة الموارد وتحسين الأداء.
 
-Let's begin by reviewing the prerequisites before we start.
+دعونا نبدأ بمراجعة المتطلبات الأساسية قبل أن نبدأ.
 
 ## المتطلبات الأساسية
 
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
 
 ### المكتبات والإصدارات المطلوبة
-- Aspose.Email for .NET: The latest version can be installed via NuGet or other package managers. Ensure your project targets a compatible .NET framework version.
+- Aspose.Email لـ .NET: يُمكن تثبيت أحدث إصدار عبر NuGet أو أي مدير حزم آخر. تأكد من أن مشروعك يستهدف إصدارًا متوافقًا مع إطار عمل .NET.
 
 ### متطلبات إعداد البيئة
 - بيئة تطوير مثل Visual Studio.
 - فهم أساسي لبرمجة C#.
 
 ### متطلبات المعرفة
-- Familiarity with email protocols and MIME types is beneficial but not mandatory.
+- إن المعرفة ببروتوكولات البريد الإلكتروني وأنواع MIME مفيدة ولكنها ليست إلزامية.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started, you need to install the Aspose.Email package. Here are a few methods:
+للبدء، عليك تثبيت حزمة Aspose.Email. إليك بعض الطرق:
 
 **.NET CLI**
 ```bash
@@ -59,32 +59,32 @@ Install-Package Aspose.Email
 - ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### خطوات الحصول على الترخيص
-You can start with a free trial by downloading a temporary license. For extended use, consider purchasing a full license. Visit [صفحة شراء Aspose](https://purchase.aspose.com/buy) لاستكشاف خياراتك.
+يمكنك البدء بفترة تجريبية مجانية بتنزيل ترخيص مؤقت. للاستخدام الممتد، فكّر في شراء ترخيص كامل. تفضل بزيارة [صفحة شراء Aspose](https://purchase.aspose.com/buy) لاستكشاف خياراتك.
 
 ### التهيئة والإعداد الأساسي
-Once installed, initialize Aspose.Email in your C# project:
+بمجرد التثبيت، قم بتشغيل Aspose.Email في مشروع C# الخاص بك:
 
 ```csharp
 using Aspose.Email.Mime;
 ```
 
 ## دليل التنفيذ
-Now that you're all set up, let’s move on to implementing the feature of adding multiple email attachments.
+الآن بعد أن قمت بإعداد كل شيء، دعنا ننتقل إلى تنفيذ ميزة إضافة مرفقات بريد إلكتروني متعددة.
 
-### Adding Multiple Attachments
+### إضافة مرفقات متعددة
 **ملخص**
-This section explains how to add more than one attachment to an email using Aspose.Email for .NET. This is particularly useful when automating email tasks in business applications.
+يشرح هذا القسم كيفية إضافة أكثر من مرفق واحد إلى بريد إلكتروني باستخدام Aspose.Email لـ .NET. يُعد هذا مفيدًا بشكل خاص عند أتمتة مهام البريد الإلكتروني في تطبيقات الأعمال.
 
-#### Step 1: Define Document Paths
-Start by specifying paths to your documents:
+#### الخطوة 1: تحديد مسارات المستندات
+ابدأ بتحديد المسارات لمستنداتك:
 
 ```csharp
 string dataDir = Path.Combine(@"YOUR_DOCUMENT_DIRECTORY");
 ```
-**توضيح:** يستبدل `"YOUR_DOCUMENT_DIRECTORY"` with the path where your files are stored. This ensures that your attachments can be accurately referenced during runtime.
+**توضيح:** يستبدل `"YOUR_DOCUMENT_DIRECTORY"` مع مسار تخزين ملفاتك. هذا يضمن إمكانية الرجوع إلى مرفقاتك بدقة أثناء التشغيل.
 
-#### Step 2: Create a MailMessage Object
-Create an email message object to which you will add attachments:
+#### الخطوة 2: إنشاء كائن MailMessage
+قم بإنشاء كائن رسالة بريد إلكتروني ستضيف إليه المرفقات:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -92,13 +92,13 @@ message.From = "sender@example.com";
 message.To = "recipient@example.com";
 message.Subject = "Documents Attached";
 ```
-**توضيح:** Here, we're setting up the basic structure of our email with sender and recipient details.
+**توضيح:** هنا، نقوم بإعداد الهيكل الأساسي لرسالتنا الإلكترونية مع تفاصيل المرسل والمستلم.
 
-#### Step 3: Add Attachments
-Iterate over your files and attach them:
+#### الخطوة 3: إضافة المرفقات
+قم بتكرار ملفاتك وإرفاقها:
 
 ```csharp
-string[] fileNames = { "file1.pdf", "file2.docx" }; // Example filenames
+string[] fileNames = { "file1.pdf", "file2.docx" }; // أمثلة على أسماء الملفات
 
 foreach (var fileName in fileNames)
 {
@@ -106,59 +106,59 @@ foreach (var fileName in fileNames)
     message.Attachments.Add(attachment);
 }
 ```
-**توضيح:** This loop processes each filename in your list, creating an `Attachment` object for each and adding it to the email.
+**توضيح:** تعمل هذه الحلقة على معالجة كل اسم ملف في قائمتك، مما يؤدي إلى إنشاء `Attachment` كائن لكل واحد وإضافته إلى البريد الإلكتروني.
 
 #### الخطوة 4: إرسال البريد الإلكتروني
-Finally, configure your SMTP client and send the email:
+أخيرًا، قم بتكوين عميل SMTP الخاص بك وإرسال البريد الإلكتروني:
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 client.SecurityOptions = SecurityOptions.Auto;
 client.Send(message);
 ```
-**توضيح:** تكوين `SmtpClient` with your server details. Adjust the security settings as needed for your email provider.
+**توضيح:** تكوين `SmtpClient` مع تفاصيل خادمك. عدّل إعدادات الأمان حسب حاجة مزوّد خدمة البريد الإلكتروني لديك.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **File Not Found Errors:** Ensure all file paths are correct and accessible.
-- **SMTP Authentication Issues:** Double-check your SMTP credentials and server settings.
-- **Attachment Size Limits:** Be aware of any size restrictions imposed by your email service provider.
+- **أخطاء عدم العثور على الملف:** تأكد من أن جميع مسارات الملفات صحيحة ويمكن الوصول إليها.
+- **مشاكل مصادقة SMTP:** تأكد من صحة بيانات اعتماد SMTP وإعدادات الخادم.
+- **حدود حجم المرفقات:** كن على دراية بأي قيود على الحجم يفرضها مزود خدمة البريد الإلكتروني الخاص بك.
 
 ## التطبيقات العملية
-Here are some real-world scenarios where adding multiple attachments can be useful:
-1. **التقارير الآلية**: Send periodic reports to clients or team members.
-2. **Invoice Distribution**: Automatically attach invoices for billing purposes.
-3. **مشاركة المستندات**: Distribute policy documents or terms and conditions in one email.
+فيما يلي بعض السيناريوهات الواقعية حيث قد يكون إضافة مرفقات متعددة مفيدًا:
+1. **التقارير الآلية**:إرسال تقارير دورية للعملاء أو أعضاء الفريق.
+2. **توزيع الفواتير**:إرفاق الفواتير تلقائيًا لأغراض الفوترة.
+3. **مشاركة المستندات**:توزيع مستندات السياسة أو الشروط والأحكام في بريد إلكتروني واحد.
 
 ## اعتبارات الأداء
 ### نصائح لتحسين الأداء
-- Limit the number of attachments if possible to reduce load times.
-- Use streaming APIs when handling large files to manage memory usage effectively.
+- قم بتحديد عدد المرفقات إذا كان ذلك ممكنًا لتقليل أوقات التحميل.
+- استخدم واجهات برمجة التطبيقات المتدفقة عند التعامل مع الملفات الكبيرة لإدارة استخدام الذاكرة بشكل فعال.
 
 ### إرشادات استخدام الموارد
-- تخلص من `Attachment` objects after use to free up resources promptly.
+- تخلص من `Attachment` الأشياء بعد الاستخدام لتحرير الموارد على الفور.
   
 ### أفضل الممارسات لإدارة ذاكرة .NET باستخدام Aspose.Email
-- Utilize using statements or explicit disposal patterns (`Dispose()`) to release unmanaged resources.
+- استخدم عبارات أو أنماط التخلص الصريحة (`Dispose()`) لتحرير الموارد غير المُدارة.
 
 ## خاتمة
-You now know how to add multiple attachments to an email using Aspose.Email for .NET. This can significantly enhance your application's functionality, making it more robust and user-friendly. 
+أنت الآن تعرف كيفية إضافة مرفقات متعددة إلى بريد إلكتروني باستخدام Aspose.Email لـ .NET. هذا يُحسّن وظائف تطبيقك بشكل ملحوظ، ويجعله أكثر متانة وسهولة في الاستخدام. 
 
 ### الخطوات التالية
-Explore other features of Aspose.Email to further enhance your email handling capabilities.
+استكشف الميزات الأخرى لـ Aspose.Email لتحسين قدراتك في التعامل مع البريد الإلكتروني بشكل أكبر.
 
-**الدعوة إلى العمل:** Try implementing this solution in your next project!
+**الدعوة إلى العمل:** حاول تنفيذ هذا الحل في مشروعك القادم!
 
 ## قسم الأسئلة الشائعة
-1. **How do I handle large attachments with Aspose.Email?**
-   - Consider using streaming APIs and compressing files before attaching.
-2. **Can Aspose.Email handle different file formats?**
-   - Yes, it supports a wide range of MIME types for various file formats.
-3. **What are common SMTP errors with Aspose.Email?**
-   - Common issues include authentication failures and incorrect server configurations.
-4. **Is there a limit on the number of attachments I can add?**
-   - The limit depends on your email provider, but keeping it under 20 is generally advisable.
-5. **How do I troubleshoot attachment errors?**
-   - Ensure file paths are correct, check for sufficient permissions, and verify SMTP settings.
+1. **كيف أتعامل مع المرفقات الكبيرة باستخدام Aspose.Email؟**
+   - فكر في استخدام واجهات برمجة التطبيقات المتدفقة وضغط الملفات قبل إرفاقها.
+2. **هل يمكن لـ Aspose.Email التعامل مع تنسيقات ملفات مختلفة؟**
+   - نعم، فهو يدعم مجموعة واسعة من أنواع MIME لتنسيقات الملفات المختلفة.
+3. **ما هي أخطاء SMTP الشائعة مع Aspose.Email؟**
+   - تتضمن المشكلات الشائعة فشل المصادقة وتكوينات الخادم غير الصحيحة.
+4. **هل هناك حد لعدد المرفقات التي يمكنني إضافتها؟**
+   - يعتمد الحد على مزود البريد الإلكتروني الخاص بك، ولكن من المستحسن عمومًا إبقاءه أقل من 20.
+5. **كيف يمكنني استكشاف أخطاء المرفقات وإصلاحها؟**
+   - تأكد من صحة مسارات الملفات، وتحقق من وجود أذونات كافية، وتحقق من إعدادات SMTP.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/net/)

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently connect and manage user configurations on an Exchange server with Aspose.Email for .NET. This comprehensive guide covers setup, implementation, and best practices."
-"title": "Master Exchange Server Connections Using Aspose.Email for .NET&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية ربط وإدارة إعدادات المستخدم بكفاءة على خادم Exchange باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل الإعداد والتنفيذ وأفضل الممارسات."
+"title": "اتصالات خادم Exchange الرئيسية باستخدام Aspose.Email لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/exchange-server-integration/master-exchange-server-connections-aspose-email-net/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Exchange Server Connections Using Aspose.Email for .NET: A Step-by-Step Guide
+# إتقان اتصالات Exchange Server باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة
 
 ## مقدمة
 
-Are you looking to enhance your .NET application's ability to connect to an Exchange server and manage user configurations efficiently? This tutorial provides a comprehensive guide on using Aspose.Email for .NET, a powerful library that simplifies these tasks. By mastering this feature-rich tool, you can streamline email processing in your applications with ease.
+هل ترغب في تحسين قدرة تطبيق .NET الخاص بك على الاتصال بخادم Exchange وإدارة إعدادات المستخدم بكفاءة؟ يقدم هذا البرنامج التعليمي دليلاً شاملاً حول استخدام Aspose.Email لـ .NET، وهي مكتبة قوية تُبسط هذه المهام. بإتقان هذه الأداة الغنية بالميزات، يمكنك تبسيط معالجة البريد الإلكتروني في تطبيقاتك بسهولة.
 
-In this guide, we will cover:
-- Connecting to an Exchange server using Aspose.Email's EWS client
-- Deleting user configurations from an Exchange server inbox
+في هذا الدليل، سنغطي:
+- الاتصال بخادم Exchange باستخدام عميل EWS الخاص بـ Aspose.Email
+- حذف تكوينات المستخدم من صندوق الوارد لخادم Exchange
 
-By the end of this tutorial, you'll be equipped to enhance your .NET applications' email capabilities. Let’s dive in!
+بنهاية هذا البرنامج التعليمي، ستكون جاهزًا لتحسين إمكانيات البريد الإلكتروني لتطبيقات .NET الخاصة بك. هيا بنا!
 
 ## المتطلبات الأساسية
 
-Before implementing the solution, ensure you have the following:
+قبل تنفيذ الحل، تأكد من أن لديك ما يلي:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: The primary library we'll use.
+- **Aspose.Email لـ .NET**:المكتبة الأساسية التي سنستخدمها.
 - **.NET Framework أو .NET Core/5+/6+**:اعتمادًا على إعداد مشروعك.
 
 ### متطلبات إعداد البيئة
-- A development environment with Visual Studio (2017 or later) is recommended.
-- Access to an Exchange server and necessary permissions to connect using EWS (Exchange Web Services).
+- يوصى باستخدام بيئة تطوير باستخدام Visual Studio (2017 أو أحدث).
+- الوصول إلى خادم Exchange والأذونات اللازمة للاتصال باستخدام EWS (خدمات الويب Exchange).
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with RESTful services, particularly EWS.
+- - المعرفة بخدمات RESTful، وخاصة EWS.
 
 ## إعداد Aspose.Email لـ .NET
 
-To get started with Aspose.Email for .NET, you’ll need to install the library. Here’s how:
+لبدء استخدام Aspose.Email لـ .NET، ستحتاج إلى تثبيت المكتبة. إليك الطريقة:
 
 **استخدام .NET CLI**
 ```bash
@@ -54,45 +54,45 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير الحزم NuGet**
-Search for "Aspose.Email" and click on Install.
+ابحث عن "Aspose.Email" وانقر فوق "تثبيت".
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية**: Start with a free trial to explore the functionalities.
-2. **رخصة مؤقتة**: For extended testing, apply for a temporary license [هنا](https://purchase.aspose.com/temporary-license/).
-3. **شراء**: If you find it beneficial, consider purchasing a full license [هنا](https://purchase.aspose.com/buy).
+1. **نسخة تجريبية مجانية**:ابدأ بإصدار تجريبي مجاني لاستكشاف الوظائف.
+2. **رخصة مؤقتة**:للاختبار الموسع، تقدم بطلب للحصول على ترخيص مؤقت [هنا](https://purchase.aspose.com/temporary-license/).
+3. **شراء**:إذا وجدت أنه مفيد، ففكر في شراء ترخيص كامل [هنا](https://purchase.aspose.com/buy).
 
-Once installed and licensed, initialize Aspose.Email in your project to begin building with its robust features.
+بمجرد التثبيت والترخيص، قم بتشغيل Aspose.Email في مشروعك لبدء البناء باستخدام ميزاته القوية.
 
 ## دليل التنفيذ
 
-This section is divided into logical steps for each feature we're implementing: connecting to an Exchange server and deleting user configurations.
+ينقسم هذا القسم إلى خطوات منطقية لكل ميزة نقوم بتنفيذها: الاتصال بخادم Exchange وحذف تكوينات المستخدم.
 
 ### الاتصال بخادم Exchange
-Connecting to an Exchange server using Aspose.Email's EWS client simplifies managing emails programmatically. Here’s how you do it:
+يُسهّل الاتصال بخادم Exchange باستخدام عميل EWS من Aspose.Email إدارة رسائل البريد الإلكتروني برمجيًا. إليك الطريقة:
 
 #### الخطوة 1: تحديد بيانات الاعتماد
-Create network credentials with your username, password, and domain.
+قم بإنشاء بيانات اعتماد الشبكة باستخدام اسم المستخدم وكلمة المرور والنطاق.
 ```csharp
 using System.Net;
 using Aspose.Email.Clients.Exchange.WebService;
 
-const string mailboxUri = "https://exchnage/ews/exchange.asmx";
+const string mailboxUri = "https://تبادل/أخبار/تبادل.asmx";
 const string domain = @"\\";
 const string username = "username@ASE305.onmicrosoft.com";
 const string password = "password";
 
-// Create network credentials	networkCredential credentials = new NetworkCredential(username, password, domain);
+// إنشاء بيانات اعتماد الشبكة networkCredential credentials = new NetworkCredential(اسم المستخدم، كلمة المرور، المجال)؛
 ```
 
-#### Step 2: Obtain the EWS Client
-Use the mailbox URI and credentials to establish a connection.
+#### الخطوة 2: الحصول على عميل EWS
+استخدم عنوان URI الخاص بصندوق البريد وبيانات الاعتماد لإنشاء اتصال.
 ```csharp
 IEWSClient client = EWSClient.GetEWSClient(mailboxUri, credentials);
 ```
-ال `GetEWSClient` method is crucial as it encapsulates all necessary information for connecting to the Exchange server.
+ال `GetEWSClient` تعتبر هذه الطريقة بالغة الأهمية لأنها تحتوي على كل المعلومات الضرورية للاتصال بخادم Exchange.
 
 #### خيارات تكوين المفاتيح
-- **Mailbox URI**: The endpoint URL of your Exchange server's EWS.
+- **عنوان URI لصندوق البريد**:عنوان URL لنقطة النهاية لخادم Exchange الخاص بك.
 - **أوراق اعتماد**:تأكد من دقتها وأنها تحتوي على الأذونات المناسبة.
 
 ### حذف تكوين المستخدم

@@ -1,6 +1,6 @@
 ---
-"description": "Learn to work with calendar items, appointments, meeting requests, and ICS files using Aspose.Email for Java."
-"title": "Email Calendar and Appointments Tutorials with Aspose.Email for Java"
+"description": "تعلم كيفية العمل مع عناصر التقويم والمواعيد وطلبات الاجتماعات وملفات ICS باستخدام Aspose.Email لـ Java."
+"title": "دروس تعليمية حول التقويم والمواعيد عبر البريد الإلكتروني باستخدام Aspose.Email لـ Java"
 "url": "/ar/net/calendar-appointments/"
 "weight": 5
 ---
@@ -10,131 +10,131 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Email Calendar and Appointments Tutorials with Aspose.Email for Java
+# دروس تعليمية حول التقويم والمواعيد عبر البريد الإلكتروني باستخدام Aspose.Email لـ Java
 
-Discover how to manage calendar functionality in your applications with our comprehensive Aspose.Email Java tutorials. These step-by-step guides teach you how to create and manipulate calendar items, generate meeting requests, process appointment responses, and work with ICS calendar files. Each tutorial provides practical Java code examples for common calendar operations, helping you build more efficient applications that can handle scheduling and appointment management with professional results.
+اكتشف كيفية إدارة وظائف التقويم في تطبيقاتك من خلال دروسنا التعليمية الشاملة لـ Aspose.Email Java. تُعلّمك هذه الأدلة خطوة بخطوة كيفية إنشاء عناصر التقويم ومعالجتها، وتوليد طلبات الاجتماعات، ومعالجة ردود المواعيد، والعمل مع ملفات تقويم ICS. يوفر كل درس أمثلة عملية على أكواد Java لعمليات التقويم الشائعة، مما يساعدك على بناء تطبيقات أكثر كفاءةً تُمكّنك من إدارة الجدولة والمواعيد بكفاءة عالية.
 
 ## البرامج التعليمية المتاحة
 
-### [Automate Yearly Recurring Tasks Using Aspose.Email for .NET](./automate-yearly-tasks-aspose-email-dotnet/)
-Learn how to automate yearly tasks with Aspose.Email for .NET. This guide covers installation, configuration, and setting up recurring tasks effortlessly.
+### [أتمتة المهام المتكررة سنويًا باستخدام Aspose.Email لـ .NET](./automate-yearly-tasks-aspose-email-dotnet/)
+تعرّف على كيفية أتمتة المهام السنوية باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التثبيت والتكوين وإعداد المهام المتكررة بسهولة.
 
-### [Automate and Send Recurring Appointments via Email Using Aspose.Email for .NET](./automate-recurring-appointments-email-aspose-dotnet/)
-Learn how to automate sending recurring appointment emails with Aspose.Email for .NET, including setting up weekly recurrence patterns and attaching appointments.
+### [أتمتة وإرسال المواعيد المتكررة عبر البريد الإلكتروني باستخدام Aspose.Email لـ .NET](./automate-recurring-appointments-email-aspose-dotnet/)
+تعرف على كيفية أتمتة إرسال رسائل البريد الإلكتروني الخاصة بالمواعيد المتكررة باستخدام Aspose.Email لـ .NET، بما في ذلك إعداد أنماط التكرار الأسبوعية وإرفاق المواعيد.
 
-### [Convert ICS Tasks to MSG Format Using Aspose.Email for .NET: A Step-by-Step Guide](./convert-ics-task-to-msg-aspose-email-net/)
-Learn how to convert VCalendar (.ics) tasks to MSG format with Aspose.Email for .NET. This guide provides a step-by-step approach to seamless task conversion.
+### [تحويل مهام ICS إلى تنسيق MSG باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./convert-ics-task-to-msg-aspose-email-net/)
+تعرّف على كيفية تحويل مهام VCalendar (.ics) إلى تنسيق MSG باستخدام Aspose.Email لـ .NET. يقدم هذا الدليل شرحًا خطوة بخطوة لتحويل المهام بسلاسة.
 
-### [Create Recurring Outlook Tasks with Aspose.Email for .NET: A Complete Guide](./create-recurring-outlook-tasks-aspose-email-dotnet/)
-Learn how to create and automate recurring tasks in Microsoft Outlook using Aspose.Email for .NET. This guide covers installation, setup, and practical applications.
+### [إنشاء مهام Outlook متكررة باستخدام Aspose.Email لـ .NET: دليل كامل](./create-recurring-outlook-tasks-aspose-email-dotnet/)
+تعرّف على كيفية إنشاء المهام المتكررة وأتمتتها في Microsoft Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التثبيت والإعداد والتطبيقات العملية.
 
-### [Create Weekly Recurring Tasks Using Aspose.Email .NET for Calendar & Appointments](./create-weekly-recurring-tasks-aspose-email-net/)
-Learn how to automate weekly recurring tasks using Aspose.Email for .NET. Follow our comprehensive guide on setting up, configuring, and implementing MapiTasks with recurrence patterns.
+### [إنشاء مهام متكررة أسبوعيًا باستخدام Aspose.Email .NET للتقويم والمواعيد](./create-weekly-recurring-tasks-aspose-email-net/)
+تعرّف على كيفية أتمتة المهام الأسبوعية المتكررة باستخدام Aspose.Email لـ .NET. اتبع دليلنا الشامل لإعداد MapiTasks وتكوينها وتنفيذها مع أنماط التكرار.
 
-### [Create Yearly Recurring Tasks Using Aspose.Email for .NET: A Comprehensive Guide](./aspose-email-net-yearly-recurrence-tasks/)
-Learn how to efficiently create yearly recurring tasks using Aspose.Email for .NET with this step-by-step guide, complete with code examples and practical applications.
+### [إنشاء مهام متكررة سنويًا باستخدام Aspose.Email لـ .NET: دليل شامل](./aspose-email-net-yearly-recurrence-tasks/)
+تعرف على كيفية إنشاء مهام متكررة سنويًا بكفاءة باستخدام Aspose.Email لـ .NET باستخدام هذا الدليل خطوة بخطوة، والذي يتضمن أمثلة التعليمات البرمجية والتطبيقات العملية.
 
-### [Create and Save Appointments in ICS Format Using Aspose.Email for .NET](./create-save-appointments-ics-aspose-email-dotnet/)
-Learn how to create, customize, and save appointments as ICS files with Aspose.Email for .NET. Automate calendar management effectively.
+### [إنشاء المواعيد وحفظها بتنسيق ICS باستخدام Aspose.Email لـ .NET](./create-save-appointments-ics-aspose-email-dotnet/)
+تعرّف على كيفية إنشاء المواعيد وتخصيصها وحفظها كملفات ICS باستخدام Aspose.Email لـ .NET. أتمتة إدارة التقويم بفعالية.
 
-### [Creating and Configuring Appointments with Aspose.Email .NET: A Comprehensive Guide](./creating-configuring-appointments-aspose-email-dotnet/)
-Learn how to create and configure appointments programmatically using Aspose.Email for .NET. This guide covers setup, configuration options, practical applications, and troubleshooting tips.
+### [إنشاء المواعيد وتكوينها باستخدام Aspose.Email .NET: دليل شامل](./creating-configuring-appointments-aspose-email-dotnet/)
+تعرّف على كيفية إنشاء المواعيد وتكوينها برمجيًا باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد، وخيارات التكوين، والتطبيقات العملية، ونصائح استكشاف الأخطاء وإصلاحها.
 
-### [How to Add Attachments to Outlook Calendar Events Using Aspose.Email for .NET: A Step-by-Step Guide](./add-attachments-outlook-calendar-aspose-email/)
-Learn how to add attachments to Outlook calendar events using Aspose.Email for .NET. This comprehensive guide covers setup, implementation, and optimization tips.
+### [كيفية إضافة مرفقات إلى أحداث تقويم Outlook باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./add-attachments-outlook-calendar-aspose-email/)
+تعرّف على كيفية إضافة مرفقات إلى أحداث تقويم Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل نصائح الإعداد والتنفيذ والتحسين.
 
-### [How to Add Audio Reminders to Calendar Events Using Aspose.Email .NET](./add-audio-reminder-aspose-email-net/)
-Enhance your calendar events with audio reminders using Aspose.Email for .NET. Learn how to implement this feature in your scheduling system effectively.
+### [كيفية إضافة تذكيرات صوتية إلى أحداث التقويم باستخدام Aspose.Email .NET](./add-audio-reminder-aspose-email-net/)
+عزّز فعاليات تقويمك بتذكيرات صوتية باستخدام Aspose.Email لـ .NET. تعرّف على كيفية تطبيق هذه الميزة بفعالية في نظام جدولة مواعيدك.
 
-### [How to Create MAPI Calendar Appointments and Add Them to PST Files Using Aspose.Email for .NET](./create-mapi-calendar-aspose-email-net/)
-Learn how to create and manage MAPI calendar appointments in PST files using Aspose.Email for .NET. This guide covers setup, implementation, and optimization tips.
+### [كيفية إنشاء مواعيد تقويم MAPI وإضافتها إلى ملفات PST باستخدام Aspose.Email لـ .NET](./create-mapi-calendar-aspose-email-net/)
+تعرّف على كيفية إنشاء وإدارة مواعيد تقويم MAPI في ملفات PST باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل نصائح الإعداد والتنفيذ والتحسين.
 
-### [How to Create Weekly Recurring MapiTasks in .NET Using Aspose.Email](./create-manage-weekly-maptasks-net-aspose-email/)
-Learn how to set up and manage weekly recurring tasks with Aspose.Email for .NET. This guide covers creating, configuring, and optimizing your scheduling solutions.
+### [كيفية إنشاء مهام MapiTask أسبوعية متكررة في .NET باستخدام Aspose.Email](./create-manage-weekly-maptasks-net-aspose-email/)
+تعرّف على كيفية إعداد وإدارة المهام الأسبوعية المتكررة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل إنشاء حلول الجدولة وتكوينها وتحسينها.
 
-### [How to Create a Daily Recurring MapiTask with Aspose.Email for .NET | Step-by-Step Guide](./create-daily-recurrence-maptask-aspose-email-dotnet/)
-Learn how to efficiently create and configure daily recurring tasks using Aspose.Email for .NET. This guide covers setup, task configuration, adding recurrence patterns, and saving as an Outlook message.
+### [كيفية إنشاء مهمة MapiTask يومية متكررة باستخدام Aspose.Email لـ .NET | دليل خطوة بخطوة](./create-daily-recurrence-maptask-aspose-email-dotnet/)
+تعرّف على كيفية إنشاء وتكوين مهام يومية متكررة بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد، وتكوين المهام، وإضافة أنماط التكرار، وحفظها كرسالة Outlook.
 
-### [How to Create an Outlook Calendar Event with Reminders Using Aspose.Email for .NET](./create-outlook-calendar-event-reminder-aspose-email-net/)
-Learn how to automate the creation of Outlook calendar events complete with reminders using Aspose.Email for .NET. Enhance your appointment management efficiently.
+### [كيفية إنشاء حدث تقويم Outlook مع التذكيرات باستخدام Aspose.Email لـ .NET](./create-outlook-calendar-event-reminder-aspose-email-net/)
+تعرّف على كيفية أتمتة إنشاء أحداث تقويم Outlook مع التذكيرات باستخدام Aspose.Email لـ .NET. حسّن إدارة مواعيدك بكفاءة.
 
-### [How to Create and Save Calendar Items as ICS Files Using Aspose.Email for .NET](./create-save-ics-calendar-aspose-email-net/)
-Learn how to efficiently create and save calendar appointments using Aspose.Email for .NET. This guide covers setup, creating MapiCalendar objects, and saving them as ICS files.
+### [كيفية إنشاء عناصر التقويم وحفظها كملفات ICS باستخدام Aspose.Email لـ .NET](./create-save-ics-calendar-aspose-email-net/)
+تعرّف على كيفية إنشاء مواعيد التقويم وحفظها بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد، وإنشاء كائنات MapiCalendar، وحفظها كملفات ICS.
 
-### [How to Create and Save Exchange Tasks Using Aspose.Email for .NET](./create-save-exchange-tasks-aspose-email-net/)
-Learn how to efficiently create and save Microsoft Exchange tasks using Aspose.Email for .NET, boosting productivity in your workflow.
+### [كيفية إنشاء مهام Exchange وحفظها باستخدام Aspose.Email لـ .NET](./create-save-exchange-tasks-aspose-email-net/)
+تعرف على كيفية إنشاء مهام Microsoft Exchange وحفظها بكفاءة باستخدام Aspose.Email لـ .NET، مما يعزز الإنتاجية في سير عملك.
 
-### [How to Create and Save Outlook Notes Using Aspose.Email for .NET (2023 Guide)](./create-save-outlook-note-aspose-email-dotnet/)
-Learn how to automate the creation of Outlook notes in your .NET applications using Aspose.Email. This guide covers setting custom properties, saving as MSG, and more.
+### [كيفية إنشاء ملاحظات Outlook وحفظها باستخدام Aspose.Email لـ .NET (دليل 2023)](./create-save-outlook-note-aspose-email-dotnet/)
+تعرّف على كيفية أتمتة إنشاء ملاحظات Outlook في تطبيقات .NET باستخدام Aspose.Email. يتناول هذا الدليل إعداد خصائص مخصصة، وحفظ الملاحظات كرسالة، والمزيد.
 
-### [How to Create and Save Outlook Tasks Using Aspose.Email for .NET: A Comprehensive Guide](./create-save-outlook-tasks-aspose-email-net/)
-Learn how to streamline your task management in Microsoft Outlook with Aspose.Email for .NET. This comprehensive guide covers everything from setup to saving tasks programmatically.
+### [كيفية إنشاء مهام Outlook وحفظها باستخدام Aspose.Email لـ .NET: دليل شامل](./create-save-outlook-tasks-aspose-email-net/)
+تعرّف على كيفية تبسيط إدارة مهامك في Microsoft Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل كل شيء، من الإعداد إلى حفظ المهام برمجيًا.
 
-### [How to Create and Send Meeting Requests Using Aspose.Email for .NET: A Step-by-Step Guide](./aspose-email-net-creating-sending-meeting-requests/)
-Learn how to automate meeting scheduling with Aspose.Email for .NET by creating and sending email invites. This guide covers installation, configuration, and integration.
+### [كيفية إنشاء طلبات الاجتماعات وإرسالها باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./aspose-email-net-creating-sending-meeting-requests/)
+تعرّف على كيفية أتمتة جدولة الاجتماعات باستخدام Aspose.Email لـ .NET من خلال إنشاء دعوات بريد إلكتروني وإرسالها. يغطي هذا الدليل التثبيت والتكوين والتكامل.
 
-### [How to Implement Recurring Events in .NET with Aspose.Email: A Step-by-Step Guide](./implement-recurring-events-aspose-email-net/)
-Learn how to efficiently manage recurring events in your .NET applications using the Aspose.Email library. This guide covers creating calendar events, defining recurrence rules, and handling exceptions.
+### [كيفية تنفيذ الأحداث المتكررة في .NET باستخدام Aspose.Email: دليل خطوة بخطوة](./implement-recurring-events-aspose-email-net/)
+تعرّف على كيفية إدارة الأحداث المتكررة بكفاءة في تطبيقات .NET باستخدام مكتبة Aspose.Email. يتناول هذا الدليل إنشاء أحداث التقويم، وتحديد قواعد التكرار، ومعالجة الاستثناءات.
 
-### [How to Read Multiple Events from an ICS File Using Aspose.Email for .NET: A Comprehensive Guide](./read-multiple-ics-events-aspose-email-net/)
-Learn how to efficiently read multiple calendar events from an ICS file using Aspose.Email for .NET. This guide covers setup, implementation, and performance tips.
+### [كيفية قراءة أحداث متعددة من ملف ICS باستخدام Aspose.Email لـ .NET: دليل شامل](./read-multiple-ics-events-aspose-email-net/)
+تعرّف على كيفية قراءة أحداث تقويم متعددة بكفاءة من ملف ICS باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل نصائح حول الإعداد والتنفيذ والأداء.
 
-### [How to Retrieve Extended Attributes in Calendar Items Using Aspose.Email for .NET | EWS Integration Guide](./retrieve-extended-attributes-aspose-email-net/)
-Learn how to efficiently retrieve extended attributes from calendar items using Aspose.Email for .NET with this detailed guide on Exchange Web Services (EWS) integration.
+### [كيفية استرداد السمات الموسعة في عناصر التقويم باستخدام Aspose.Email لـ .NET | دليل تكامل EWS](./retrieve-extended-attributes-aspose-email-net/)
+تعرف على كيفية استرداد السمات الممتدة بكفاءة من عناصر التقويم باستخدام Aspose.Email لـ .NET باستخدام هذا الدليل التفصيلي حول تكامل Exchange Web Services (EWS).
 
-### [How to Save a Calendar Item as MSG in .NET Using Aspose.Email](./save-calendar-item-msg-aspose-dotnet/)
-Learn how to seamlessly export calendar items as Outlook MSG files using Aspose.Email for .NET. This guide covers setup, implementation, and practical applications.
+### [كيفية حفظ عنصر التقويم كرسالة في .NET باستخدام Aspose.Email](./save-calendar-item-msg-aspose-dotnet/)
+تعرّف على كيفية تصدير عناصر التقويم بسلاسة كملفات Outlook MSG باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية.
 
-### [How to Set Follow-Up Flags in MapiMessage Drafts Using Aspose.Email for .NET](./aspose-email-dotnet-set-follow-up-flags/)
-Learn how to efficiently manage email follow-ups using Aspose.Email's .NET library. This guide covers setting reminders and flags on draft messages, ideal for tracking client responses and project updates.
+### [كيفية تعيين علامات المتابعة في مسودات MapiMessage باستخدام Aspose.Email لـ .NET](./aspose-email-dotnet-set-follow-up-flags/)
+تعرّف على كيفية إدارة عمليات متابعة البريد الإلكتروني بكفاءة باستخدام مكتبة Aspose.Email. يتناول هذا الدليل إعداد التذكيرات والعلامات على مسودات الرسائل، وهو مثالي لتتبع ردود العملاء وتحديثات المشروع.
 
-### [How to Set Up Monthly Recurrence Patterns in Outlook Tasks Using Aspose.Email .NET](./monthly-recurrence-aspose-email-dotnet-outlook/)
-Learn how to automate your task scheduling by setting up monthly recurrence patterns in Outlook using Aspose.Email for .NET. This tutorial covers creating and managing recurring tasks efficiently.
+### [كيفية إعداد أنماط التكرار الشهرية في مهام Outlook باستخدام Aspose.Email .NET](./monthly-recurrence-aspose-email-dotnet-outlook/)
+تعرّف على كيفية أتمتة جدولة مهامك بإعداد أنماط تكرار شهرية في Outlook باستخدام Aspose.Email لـ .NET. يتناول هذا البرنامج التعليمي إنشاء المهام المتكررة وإدارتها بكفاءة.
 
-### [How to Write Multiple Events to an ICS File Using Aspose.Email for .NET: A Complete Guide](./write-multiple-events-ics-aspose-email-net/)
-Learn how to efficiently create and export multiple calendar events into a single ICS file using Aspose.Email for .NET. Follow this detailed guide with code examples.
+### [كيفية كتابة أحداث متعددة في ملف ICS باستخدام Aspose.Email لـ .NET: دليل شامل](./write-multiple-events-ics-aspose-email-net/)
+تعرّف على كيفية إنشاء وتصدير أحداث تقويم متعددة بكفاءة في ملف ICS واحد باستخدام Aspose.Email لـ .NET. اتبع هذا الدليل المفصل مع أمثلة برمجية.
 
-### [Implement Daily Recurrence Patterns with Aspose.Email for .NET: A Step-by-Step Guide](./implement-daily-recurrence-aspose-email-net/)
-Learn how to implement daily recurrence patterns using Aspose.Email for .NET. This guide covers creating recurring events, handling exceptions, and storing events in PST files.
+### [تنفيذ أنماط التكرار اليومية باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة](./implement-daily-recurrence-aspose-email-net/)
+تعرّف على كيفية تنفيذ أنماط التكرار اليومي باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إنشاء أحداث متكررة، ومعالجة الاستثناءات، وتخزين الأحداث في ملفات PST.
 
-### [Implementing Appointment Reminders in .NET with Aspose.Email: A Complete Guide](./mastering-appointment-reminders-dotnet-aspose-email/)
-Learn how to implement audio, display, email, and procedural appointment reminders in your .NET applications using Aspose.Email.
+### [تنفيذ تذكيرات المواعيد في .NET باستخدام Aspose.Email: دليل شامل](./mastering-appointment-reminders-dotnet-aspose-email/)
+تعرف على كيفية تنفيذ تذكيرات المواعيد الصوتية والعرض والبريد الإلكتروني والإجرائية في تطبيقات .NET الخاصة بك باستخدام Aspose.Email.
 
-### [Manage Appointments with Aspose.Email for .NET in ICS Format](./manage-appointments-aspose-email-net-ics-format/)
+### [إدارة المواعيد باستخدام Aspose.Email لـ .NET بتنسيق ICS](./manage-appointments-aspose-email-net-ics-format/)
 برنامج تعليمي لبرمجة Aspose.Email Net
 
-### [Master Appointment Filtering in EWS with Aspose.Email for .NET: A Comprehensive Guide](./master-appointment-filtering-aspose-email-ews/)
-Learn how to efficiently filter appointments using Aspose.Email for .NET and Exchange Web Service (EWS) with this step-by-step guide.
+### [تصفية المواعيد الرئيسية في EWS باستخدام Aspose.Email لـ .NET: دليل شامل](./master-appointment-filtering-aspose-email-ews/)
+تعرف على كيفية تصفية المواعيد بكفاءة باستخدام Aspose.Email لـ .NET وExchange Web Service (EWS) من خلال هذا الدليل خطوة بخطوة.
 
-### [Master Calendar Management with Aspose.Email .NET: Connect, Delegate, and Share Calendars Using EWS](./aspose-email-net-calendar-management/)
-Learn how to efficiently manage calendars using Aspose.Email .NET. This guide covers connecting to EWS, delegating access permissions, and sending calendar sharing invitations.
+### [إدارة التقويمات الرئيسية باستخدام Aspose.Email .NET: ربط التقويمات وتفويضها ومشاركتها باستخدام EWS](./aspose-email-net-calendar-management/)
+تعرّف على كيفية إدارة التقويمات بكفاءة باستخدام Aspose.Email .NET. يتناول هذا الدليل الاتصال بخدمات EWS، وتفويض أذونات الوصول، وإرسال دعوات لمشاركة التقويم.
 
-### [Master Monthly Recurrence Tasks Using Aspose.Email for .NET: A Comprehensive Guide](./master-monthly-recurrence-tasks-aspose-email-net/)
-Learn how to automate monthly recurring tasks in your .NET applications using Aspose.Email. This guide provides step-by-step instructions and best practices.
+### [إتقان مهام التكرار الشهرية باستخدام Aspose.Email لـ .NET: دليل شامل](./master-monthly-recurrence-tasks-aspose-email-net/)
+تعرّف على كيفية أتمتة المهام الشهرية المتكررة في تطبيقات .NET باستخدام Aspose.Email. يقدم هذا الدليل إرشادات خطوة بخطوة وأفضل الممارسات.
 
-### [Master Outlook Email Categories with Aspose.Email .NET: A Comprehensive Guide](./mastering-outlook-email-categories-aspose-net/)
-Learn how to efficiently manage and categorize your emails in Outlook using Aspose.Email for .NET. Follow this guide to enhance email organization and productivity.
+### [إتقان فئات البريد الإلكتروني في Outlook باستخدام Aspose.Email .NET: دليل شامل](./mastering-outlook-email-categories-aspose-net/)
+تعرّف على كيفية إدارة رسائل البريد الإلكتروني وتصنيفها بكفاءة في Outlook باستخدام Aspose.Email لـ .NET. اتبع هذا الدليل لتحسين تنظيم البريد الإلكتروني وزيادة إنتاجيته.
 
-### [Master Outlook Task Management with Aspose.Email for .NET: Your Complete Guide](./manage-outlook-tasks-aspose-email-dotnet-guide/)
-Learn how to efficiently manage Outlook tasks using Aspose.Email for .NET. This comprehensive guide covers creating, configuring, and managing MAPI tasks within .NET applications.
+### [إتقان إدارة مهام Outlook باستخدام Aspose.Email لـ .NET: دليلك الكامل](./manage-outlook-tasks-aspose-email-dotnet-guide/)
+تعرّف على كيفية إدارة مهام Outlook بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل إنشاء مهام MAPI وتكوينها وإدارتها ضمن تطبيقات .NET.
 
-### [Master Task Management with Aspose.Email for .NET: Efficient EWS Client Setup and Task Retrieval](./aspose-email-net-ews-client-setup-task-retrieval/)
-Learn how to set up an efficient EWS client using Aspose.Email for .NET to retrieve tasks from Microsoft Exchange Server based on specific criteria.
+### [إدارة المهام الرئيسية باستخدام Aspose.Email لـ .NET: إعداد عميل EWS بكفاءة واسترداد المهام](./aspose-email-net-ews-client-setup-task-retrieval/)
+تعرف على كيفية إعداد عميل EWS فعال باستخدام Aspose.Email لـ .NET لاسترداد المهام من Microsoft Exchange Server استنادًا إلى معايير محددة.
 
-### [Mastering Aspose.Email .NET for Managing Exchange Server Appointments: A Comprehensive Guide](./aspose-email-net-exchange-server-appointments-guide/)
-Learn how to use Aspose.Email for .NET to manage Exchange server appointments effectively, with step-by-step guidance on creating and listing events with paging support.
+### [إتقان استخدام Aspose.Email .NET لإدارة مواعيد Exchange Server: دليل شامل](./aspose-email-net-exchange-server-appointments-guide/)
+تعرف على كيفية استخدام Aspose.Email لـ .NET لإدارة مواعيد خادم Exchange بشكل فعال، مع إرشادات خطوة بخطوة حول إنشاء الأحداث وإدراجها باستخدام دعم الترحيل.
 
-### [Mastering MAPI Task Reminders with Aspose.Email for .NET: A Comprehensive Guide](./integrate-reminders-mapi-tasks-aspose-email/)
-Learn how to integrate reminders into MAPI tasks using Aspose.Email for .NET. This guide covers setup, implementation, and practical applications.
+### [إتقان تذكيرات مهام MAPI باستخدام Aspose.Email لـ .NET: دليل شامل](./integrate-reminders-mapi-tasks-aspose-email/)
+تعرّف على كيفية دمج التذكيرات في مهام MAPI باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الإعداد والتنفيذ والتطبيقات العملية.
 
-### [OAuth Authentication and Calendar Access Management with Aspose.Email for .NET: A Complete Guide](./oauth-calendar-access-aspose-email-net/)
-Learn how to implement OAuth authentication and manage Google Calendar access using Aspose.Email for .NET. This comprehensive guide covers setup, code examples, and best practices.
+### [مصادقة OAuth وإدارة الوصول إلى التقويم باستخدام Aspose.Email لـ .NET: دليل كامل](./oauth-calendar-access-aspose-email-net/)
+تعرّف على كيفية تنفيذ مصادقة OAuth وإدارة الوصول إلى تقويم Google باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل الإعداد، وأمثلة التعليمات البرمجية، وأفضل الممارسات.
 
-### [Set Appointment Participant Status in Aspose.Email for .NET](./set-appointment-participant-status-aspose-email-net/)
-Learn how to efficiently set participant statuses like 'Accepted' or 'Declined' for appointments using Aspose.Email for .NET. Streamline your meeting management with this guide.
+### [تعيين حالة المشارك في الموعد في Aspose.Email لـ .NET](./set-appointment-participant-status-aspose-email-net/)
+تعرّف على كيفية ضبط حالات المشاركين بكفاءة، مثل "مقبول" أو "مرفوض"، للمواعيد باستخدام Aspose.Email لـ .NET. بسّط إدارة اجتماعاتك مع هذا الدليل.
 
-### [Weekly Task Scheduler with Aspose.Email .NET: Mastering Calendar & Appointments](./weekly-task-scheduler-aspose-email-net/)
-Learn how to create a robust weekly task scheduler using Aspose.Email for .NET. This guide covers setting up recurring tasks, configuring multi-day recurrences, and calculating occurrences efficiently.
+### [مُجدول المهام الأسبوعي مع Aspose.Email .NET: إتقان التقويم والمواعيد](./weekly-task-scheduler-aspose-email-net/)
+تعرّف على كيفية إنشاء مُجدول مهام أسبوعي فعّال باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إعداد المهام المتكررة، وتكوين تكرارات متعددة الأيام، وحساب تكراراتها بكفاءة.
 
 ## موارد إضافية
 

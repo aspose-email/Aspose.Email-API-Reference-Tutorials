@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to enhance your email messages by adding custom headers using Aspose.Email for Java. Improve email metadata and organization."
-"linktitle": "Adding Custom Headers in Aspose.Email"
+"description": "تعرّف على كيفية تحسين رسائل بريدك الإلكتروني بإضافة عناوين مخصصة باستخدام Aspose.Email لجافا. حسّن بيانات البريد الإلكتروني الوصفية وحسّن تنظيمه."
+"linktitle": "إضافة رؤوس مخصصة في Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Adding Custom Headers in Aspose.Email"
+"title": "إضافة رؤوس مخصصة في Aspose.Email"
 "url": "/ar/java/sending-emails/adding-custom-headers-in-aspose-email/"
 "weight": 15
 ---
@@ -13,56 +13,56 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Adding Custom Headers in Aspose.Email
+# إضافة رؤوس مخصصة في Aspose.Email
 
 
 ## مقدمة
 
-In the world of email communication, the ability to add custom headers to your email messages can be a valuable tool. Custom headers allow you to include additional information or metadata within your emails, which can be useful for various purposes, such as tracking, filtering, or categorizing messages.
+في عالم التواصل عبر البريد الإلكتروني، تُعدّ إمكانية إضافة عناوين مخصصة لرسائلك أداةً قيّمة. تتيح لك العناوين المخصصة تضمين معلومات أو بيانات وصفية إضافية في رسائلك، مما قد يكون مفيدًا لأغراض متعددة، مثل تتبع الرسائل أو تصفيتها أو تصنيفها.
 
-Aspose.Email for Java provides a powerful and flexible API for working with email messages, including the capability to add custom headers to your emails. In this step-by-step guide, we will walk you through the process of adding custom headers to an email message using Aspose.Email for Java.
+يوفر Aspose.Email لجافا واجهة برمجة تطبيقات قوية ومرنة للتعامل مع رسائل البريد الإلكتروني، بما في ذلك إمكانية إضافة عناوين مخصصة لرسائلك. في هذا الدليل المفصل، سنشرح لك عملية إضافة عناوين مخصصة لرسائل البريد الإلكتروني باستخدام Aspose.Email لجافا.
 
 ## المتطلبات الأساسية
 
-Before you begin, make sure you have the following prerequisites in place:
+قبل أن تبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
-1. Java Development Environment: Ensure that you have a Java development environment set up on your system. You'll need Java to compile and run the Java code examples in this guide.
+1. بيئة تطوير جافا: تأكد من تثبيت بيئة تطوير جافا على نظامك. ستحتاج إلى جافا لتجميع أمثلة أكواد جافا الواردة في هذا الدليل وتشغيلها.
 
-2. Aspose.Email for Java Library: Download the Aspose.Email for Java library from the download link: [Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
+2. Aspose.Email لمكتبة Java: قم بتنزيل مكتبة Aspose.Email لمكتبة Java من رابط التنزيل: [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 
-   Once downloaded, add the Aspose.Email JAR files to your Java project's classpath. This library is essential for working with email messages using Aspose.Email.
+   بعد التنزيل، أضف ملفات Aspose.Email JAR إلى مسار فئة مشروع Java. هذه المكتبة أساسية للتعامل مع رسائل البريد الإلكتروني باستخدام Aspose.Email.
 
-With these prerequisites in place, you're ready to start adding custom headers to your email messages using Aspose.Email for Java. Follow the step-by-step guide in the previous section to learn how to do this.
+بعد استيفاء هذه المتطلبات الأساسية، يمكنك البدء بإضافة عناوين مخصصة إلى رسائل بريدك الإلكتروني باستخدام Aspose.Email لجافا. اتبع الدليل المفصل في القسم السابق لمعرفة كيفية القيام بذلك.
 
-Certainly! Below is a step-by-step guide on how to add custom headers in Aspose.Email using the Aspose.Email for Java API. This guide includes source code examples.
+بالتأكيد! فيما يلي دليل خطوة بخطوة حول كيفية إضافة رؤوس مخصصة في Aspose.Email باستخدام واجهة برمجة تطبيقات Aspose.Email لجافا. يتضمن هذا الدليل أمثلة على الكود المصدري.
 
-## Step 1: Set up your Java environment
+## الخطوة 1: إعداد بيئة Java الخاصة بك
 
-Before you start, make sure you have Java and Aspose.Email for Java properly installed and set up in your development environment.
+قبل البدء، تأكد من تثبيت Java وAspose.Email for Java بشكل صحيح وإعدادهما في بيئة التطوير الخاصة بك.
 
-## Step 2: Create a new Java project
+## الخطوة 2: إنشاء مشروع Java جديد
 
-Create a new Java project in your preferred Integrated Development Environment (IDE).
+قم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك.
 
-## Step 3: Add Aspose.Email for Java library
+## الخطوة 3: إضافة Aspose.Email لمكتبة Java
 
-You need to add the Aspose.Email for Java library to your project. You can do this by downloading the library from the download link provided:
+يجب عليك إضافة مكتبة Aspose.Email لجافا إلى مشروعك. يمكنك القيام بذلك بتنزيل المكتبة من رابط التنزيل المرفق:
 
-[Aspose.Email for Java Download](https://releases.aspose.com/email/java/)
+[تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 
-Once downloaded, add the Aspose.Email JAR files to your project's classpath.
+بمجرد التنزيل، أضف ملفات JAR الخاصة بـ Aspose.Email إلى مسار فئة مشروعك.
 
-## Step 4: Import Aspose.Email classes
+## الخطوة 4: استيراد فئات Aspose.Email
 
-In your Java code, import the necessary Aspose.Email classes:
+في كود Java الخاص بك، قم باستيراد فئات Aspose.Email الضرورية:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Step 5: Create an Email message
+## الخطوة 5: إنشاء رسالة بريد إلكتروني
 
-You can create an Email message using Aspose.Email. Here's an example:
+يمكنك إنشاء رسالة بريد إلكتروني باستخدام Aspose.Email. إليك مثال:
 
 ```java
 MailMessage message = new MailMessage();
@@ -72,46 +72,46 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 ```
 
-## Step 6: Add custom headers
+## الخطوة 6: إضافة رؤوس مخصصة
 
-To add custom headers to the email, you can use the `MailMessage` object's `getHeaders` طريقة:
+لإضافة رؤوس مخصصة إلى البريد الإلكتروني، يمكنك استخدام `MailMessage` أشياء `getHeaders` طريقة:
 
 ```java
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 ```
 
-You can add as many custom headers as needed.
+يمكنك إضافة عدد كبير من الرؤوس المخصصة حسب الحاجة.
 
-## Step 7: Save the email
+## الخطوة 7: حفظ البريد الإلكتروني
 
-After adding custom headers, you can save the email to a file or send it using Aspose.Email's capabilities. Here's an example of saving it to a file:
+بعد إضافة رؤوس مخصصة، يمكنك حفظ البريد الإلكتروني في ملف أو إرساله باستخدام إمكانيات Aspose.Email. إليك مثال على حفظه في ملف:
 
 ```java
 message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 ```
 
-## Step 8: Complete the program
+## الخطوة 8: إكمال البرنامج
 
-Here's the complete Java program:
+وهنا برنامج Java الكامل:
 
 ```java
 import com.aspose.email.*;
 
 public class AddCustomHeadersExample {
     public static void main(String[] args) {
-        // Create a new email message
+        // إنشاء رسالة بريد إلكتروني جديدة
         MailMessage message = new MailMessage();
         message.setSubject("Adding Custom Headers Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 
-        // Add custom headers
+        // إضافة رؤوس مخصصة
         message.getHeaders().add("X-Custom-Header1", "Value1");
         message.getHeaders().add("X-Custom-Header2", "Value2");
 
-        // Save the email to a file
+        // حفظ البريد الإلكتروني في ملف
         message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with custom headers saved successfully.");
@@ -121,25 +121,25 @@ public class AddCustomHeadersExample {
 
 ## خاتمة
 
-In this guide, you've learned how to add custom headers to an email using Aspose.Email for Java. You can customize your email messages with various headers to meet your specific requirements.
+في هذا الدليل، تعلمت كيفية إضافة عناوين مخصصة إلى رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. يمكنك تخصيص رسائل البريد الإلكتروني الخاصة بك بمجموعة متنوعة من العناوين لتلبية احتياجاتك الخاصة.
 
 
-## FAQs (Frequently Asked Questions)
+## الأسئلة الشائعة
 
-### What are custom headers in email messages?
-   Custom headers are additional fields in email messages that can be used to provide extra information or metadata about the message.
+### ما هي الرؤوس المخصصة في رسائل البريد الإلكتروني؟
+   تُعد الرؤوس المخصصة حقولاً إضافية في رسائل البريد الإلكتروني والتي يمكن استخدامها لتوفير معلومات إضافية أو بيانات وصفية حول الرسالة.
 
-### How can I send an email with custom headers using Aspose.Email?
-   You can use the `getHeaders` method of the `MailMessage` class to add custom headers to an email message before sending it.
+### كيف يمكنني إرسال بريد إلكتروني برؤوس مخصصة باستخدام Aspose.Email؟
+   يمكنك استخدام `getHeaders` طريقة `MailMessage` فئة لإضافة رؤوس مخصصة إلى رسالة البريد الإلكتروني قبل إرسالها.
 
-### Are custom headers visible to the email recipient?
-   Custom headers are typically not displayed to the email recipient but can be used for various purposes, such as filtering or processing emails on the sender's or recipient's side.
+### هل تكون الرؤوس المخصصة مرئية لمتلقي البريد الإلكتروني؟
+   لا يتم عادةً عرض الرؤوس المخصصة لمتلقي البريد الإلكتروني ولكن يمكن استخدامها لأغراض مختلفة، مثل تصفية رسائل البريد الإلكتروني أو معالجتها على جانب المرسل أو المتلقي.
 
-### Can I add multiple custom headers to a single email message?
-   Yes, you can add multiple custom headers to a single email message by using the `add` method on the `HeadersCollection` هدف.
+### هل يمكنني إضافة عدة رؤوس مخصصة إلى رسالة بريد إلكتروني واحدة؟
+   نعم، يمكنك إضافة عدة رؤوس مخصصة إلى رسالة بريد إلكتروني واحدة باستخدام `add` الطريقة على `HeadersCollection` هدف.
 
-### How can I extract custom headers from received emails?
-   You can use the `getHeaders` method on the received email's `MailMessage` object to retrieve and process custom headers.
+### كيف يمكنني استخراج رؤوس مخصصة من رسائل البريد الإلكتروني المستلمة؟
+   يمكنك استخدام `getHeaders` الطريقة على رسائل البريد الإلكتروني المستلمة `MailMessage` كائن لاسترداد ومعالجة الرؤوس المخصصة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

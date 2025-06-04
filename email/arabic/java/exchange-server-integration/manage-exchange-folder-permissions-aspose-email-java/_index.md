@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to manage folder permissions on Microsoft Exchange Server using Aspose.Email for Java. This step-by-step guide covers setup, listing folders, and managing permissions."
-"title": "Manage Exchange Folder Permissions with Aspose.Email for Java&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية إدارة أذونات المجلدات على خادم Microsoft Exchange Server باستخدام Aspose.Email لـ Java. يغطي هذا الدليل خطوة بخطوة عملية الإعداد، وقائمة المجلدات، وإدارة الأذونات."
+"title": "إدارة أذونات مجلد Exchange باستخدام Aspose.Email لـ Java - دليل خطوة بخطوة"
 "url": "/ar/java/exchange-server-integration/manage-exchange-folder-permissions-aspose-email-java/"
 "weight": 1
 ---
@@ -11,38 +11,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Comprehensive Guide to Managing Exchange Folder Permissions with Aspose.Email for Java
+# دليل شامل لإدارة أذونات مجلد Exchange باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Managing folder permissions in your Exchange server can be challenging, especially when using Java. Whether you're a developer automating administrative tasks or an IT professional seeking efficient solutions, this guide simplifies the process by leveraging Aspose.Email for Java—a powerful library that seamlessly integrates with Microsoft Exchange Web Services (EWS).
+قد تكون إدارة أذونات المجلدات على خادم Exchange أمرًا صعبًا، خاصةً عند استخدام Java. سواء كنت مطورًا تُؤتمت المهام الإدارية أو متخصصًا في تكنولوجيا المعلومات يبحث عن حلول فعّالة، يُبسّط هذا الدليل العملية بالاستفادة من Aspose.Email لـ Java، وهي مكتبة فعّالة تتكامل بسلاسة مع خدمات Microsoft Exchange Web Services (EWS).
 
-In this tutorial, we will cover how to create an EWS client instance, list public folders, retrieve specific folder permissions, and manage essential folders like Contacts and Calendar. By the end of this guide, you'll be able to:
-- Initialize an Aspose.Email Java client
-- List and navigate through Exchange server folders
-- Retrieve and manage permissions for specific folders
+في هذا البرنامج التعليمي، سنتناول كيفية إنشاء مثيل عميل EWS، وسرد المجلدات العامة، واسترداد أذونات مجلدات محددة، وإدارة المجلدات الأساسية مثل جهات الاتصال والتقويم. بنهاية هذا الدليل، ستتمكن من:
+- تهيئة عميل Aspose.Email Java
+- إدراج مجلدات خادم Exchange والتنقل خلالها
+- استرداد وإدارة الأذونات لمجلدات محددة
 
-Let's get started with setting up your environment and implementing these features.
+لنبدأ بإعداد بيئتك وتنفيذ هذه الميزات.
 
 ## المتطلبات الأساسية
 
-Before we begin, ensure that you have the following in place:
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 ### المكتبات والتبعيات المطلوبة
-- **Aspose.Email for Java**: To use Aspose.Email functionalities, include it in your project dependencies. The version used here is 25.4 with JDK16 support.
-- **Java Development Kit (JDK)**: You need at least JDK 8 or later installed on your system.
+- **Aspose.Email لـ Java**لاستخدام وظائف Aspose.Email، يُرجى تضمينها في تبعيات مشروعك. الإصدار المستخدم هنا هو 25.4 مع دعم JDK16.
+- **مجموعة تطوير جافا (JDK)**:يجب أن يكون لديك JDK 8 أو إصدار أحدث مثبتًا على نظامك.
 
 ### إعداد البيئة
-Ensure you have a Java IDE like IntelliJ IDEA or Eclipse and an internet connection to fetch Maven dependencies.
+تأكد من أن لديك Java IDE مثل IntelliJ IDEA أو Eclipse واتصالاً بالإنترنت لجلب تبعيات Maven.
 
 ### متطلبات المعرفة
-A basic understanding of Java programming and familiarity with Exchange Web Services will be beneficial. If you're new, don't worry—this guide will walk you through every step.
+سيكون من المفيد فهم أساسيات برمجة جافا والإلمام بخدمات Exchange Web Services. إذا كنت جديدًا، فلا تقلق، فهذا الدليل سيرشدك خلال كل خطوة.
 
-## Setting Up Aspose.Email for Java
-To start using Aspose.Email for Java, follow these steps:
+## إعداد Aspose.Email لـ Java
+لبدء استخدام Aspose.Email لـ Java، اتبع الخطوات التالية:
 
-### Maven Dependency Setup
-Add the following dependency to your `pom.xml` file if you are using Maven:
+### إعداد تبعية Maven
+أضف التبعية التالية إلى ملفك `pom.xml` الملف إذا كنت تستخدم Maven:
 
 ```xml
 <dependency>
@@ -54,12 +54,12 @@ Add the following dependency to your `pom.xml` file if you are using Maven:
 ```
 
 ### الحصول على الترخيص
-- **نسخة تجريبية مجانية**: Access the full capabilities of Aspose.Email for Java with a temporary license to evaluate its features without limitations.
-- **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت [هنا](https://purchase.aspose.com/temporary-license/) if you need more than 30 days.
-- **شراء الترخيص**: For long-term use, purchase a subscription [هنا](https://purchase.aspose.com/buy).
+- **نسخة تجريبية مجانية**:يمكنك الوصول إلى الإمكانات الكاملة لـ Aspose.Email لـ Java باستخدام ترخيص مؤقت لتقييم ميزاته دون قيود.
+- **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت [هنا](https://purchase.aspose.com/temporary-license/) إذا كنت بحاجة إلى أكثر من 30 يومًا.
+- **شراء الترخيص**:للاستخدام طويل الأمد، قم بشراء اشتراك [هنا](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
-Initialize your project by setting up the Aspose.Email library. Here’s how:
+ابدأ مشروعك بإعداد مكتبة Aspose.Email. إليك الطريقة:
 
 ```java
 import com.aspose.email.EWSClient;

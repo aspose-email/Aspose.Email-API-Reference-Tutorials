@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to create and manage MAPI distribution lists within PST files using the Aspose.Email library in Java, streamlining email workflows efficiently."
-"title": "Manage MAPI Distribution Lists in PST Files Using Aspose.Email Java"
+"description": "تعرف على كيفية إنشاء قوائم توزيع MAPI وإدارتها داخل ملفات PST باستخدام مكتبة Aspose.Email في Java، مما يؤدي إلى تبسيط سير عمل البريد الإلكتروني بكفاءة."
+"title": "إدارة قوائم توزيع MAPI في ملفات PST باستخدام Aspose.Email Java"
 "url": "/ar/java/mapi-operations/aspose-email-java-mapi-distribution-lists-pst/"
 "weight": 1
 ---
@@ -11,26 +11,26 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Manage MAPI Distribution Lists in PST Files with Aspose.Email Java
-Managing email distribution lists is vital for businesses aiming to streamline communication processes, especially when handling extensive contact volumes or dynamic teams. This tutorial will guide you through creating and adding MAPI (Messaging Application Programming Interface) distribution lists to a PST (Personal Storage Table) file using the powerful Aspose.Email library in Java.
+# إدارة قوائم توزيع MAPI في ملفات PST باستخدام Aspose.Email Java
+تُعد إدارة قوائم توزيع البريد الإلكتروني أمرًا بالغ الأهمية للشركات التي تسعى إلى تبسيط عمليات التواصل، خاصةً عند التعامل مع أعداد كبيرة من جهات الاتصال أو فرق عمل ديناميكية. سيرشدك هذا البرنامج التعليمي إلى كيفية إنشاء قوائم توزيع MAPI (واجهة برمجة تطبيقات المراسلة) وإضافتها إلى ملف PST (جدول التخزين الشخصي) باستخدام مكتبة Aspose.Email القوية في جافا.
 
 ## ما سوف تتعلمه
-- How to create and manage MAPI distribution lists
-- Steps for integrating these lists into a PST file
-- Practical applications of this feature
-- Performance optimization tips for handling large datasets
+- كيفية إنشاء قوائم توزيع MAPI وإدارتها
+- خطوات دمج هذه القوائم في ملف PST
+- التطبيقات العملية لهذه الميزة
+- نصائح لتحسين الأداء للتعامل مع مجموعات البيانات الكبيرة
 
-Let's explore how you can utilize Aspose.Email Java to enhance your email management workflows.
+دعنا نستكشف كيفية الاستفادة من Aspose.Email Java لتحسين سير عمل إدارة البريد الإلكتروني الخاص بك.
 
 ## المتطلبات الأساسية
 قبل البدء، تأكد من توفر ما يلي:
-1. **المكتبات والتبعيات**: You'll need Aspose.Email library version 25.4 with JDK16 support.
-2. **إعداد البيئة**: This tutorial assumes basic familiarity with Java development environments like Maven or Gradle for dependency management.
-3. **متطلبات المعرفة**: Familiarity with Java programming concepts, including object-oriented principles and working with external libraries.
+1. **المكتبات والتبعيات**:ستحتاج إلى مكتبة Aspose.Email الإصدار 25.4 مع دعم JDK16.
+2. **إعداد البيئة**:يفترض هذا البرنامج التعليمي الإلمام الأساسي ببيئات تطوير Java مثل Maven أو Gradle لإدارة التبعيات.
+3. **متطلبات المعرفة**:المعرفة بمفاهيم برمجة جافا، بما في ذلك مبادئ البرمجة الكائنية والعمل مع المكتبات الخارجية.
 
-## Setting Up Aspose.Email for Java
-### Using Maven
-To include the Aspose.Email library in your project using Maven, add the following dependency to your `pom.xml`:
+## إعداد Aspose.Email لـ Java
+### استخدام Maven
+لتضمين مكتبة Aspose.Email في مشروعك باستخدام Maven، أضف التبعية التالية إلى مشروعك `pom.xml`:
 
 ```xml
 <dependency>
@@ -41,38 +41,38 @@ To include the Aspose.Email library in your project using Maven, add the followi
 </dependency>
 ```
 ### الحصول على الترخيص
-Aspose.Email offers a free trial to explore its full capabilities. You can obtain a temporary license for more extended testing or purchase a subscription for continued use.
-1. **نسخة تجريبية مجانية**: Download the latest version from [إصدارات Aspose](https://releases.aspose.com/email/java/).
-2. **رخصة مؤقتة**: Request one at [ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/) to unlock all features.
-3. **شراء**: For full access, visit [شراء Aspose](https://purchase.aspose.com/buy).
+يقدم Aspose.Email تجربة مجانية لاستكشاف كامل إمكانياته. يمكنك الحصول على ترخيص مؤقت لمزيد من الاختبارات الموسعة أو شراء اشتراك لمواصلة الاستخدام.
+1. **نسخة تجريبية مجانية**:قم بتنزيل أحدث إصدار من [إصدارات Aspose](https://releases.aspose.com/email/java/).
+2. **رخصة مؤقتة**:اطلب واحدة في [ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/) لفتح كافة الميزات.
+3. **شراء**:للحصول على الوصول الكامل، قم بزيارة [شراء Aspose](https://purchase.aspose.com/buy).
 
 لتهيئة Aspose.Email في مشروعك:
 
 ```java
-// Initialize the license if available
+// قم بتشغيل الترخيص إذا كان متاحًا
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 ## دليل التنفيذ
-### Feature 1: Create and Add a MAPI Distribution List to PST
-This feature involves creating contacts, forming a distribution list from these contacts, and adding this list to a PST file.
+### الميزة 1: إنشاء قائمة توزيع MAPI وإضافتها إلى PST
+تتضمن هذه الميزة إنشاء جهات اتصال، وتشكيل قائمة توزيع من هذه جهات الاتصال، وإضافة هذه القائمة إلى ملف PST.
 #### ملخص
-You'll programmatically create two contacts, construct a distribution list, and save it in a PST file. This process automates what would otherwise be a manual task of managing email lists within Outlook.
+ستُنشئ جهتي اتصال برمجيًا، وتُنشئ قائمة توزيع، وتحفظها في ملف PST. تُؤتمت هذه العملية ما كان ليكون مهمة يدوية لإدارة قوائم البريد الإلكتروني داخل Outlook.
 #### خطوات
-##### Step 1: Set Up the Environment
-Define your document directory where the PST file will be saved:
+##### الخطوة 1: إعداد البيئة
+قم بتحديد دليل المستند الذي سيتم حفظ ملف PST فيه:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 ```
 ##### الخطوة 2: إنشاء ملف PST جديد
-Initialize a new PST with Unicode format:
+تهيئة ملف PST جديد بتنسيق Unicode:
 
 ```java
 PersonalStorage pst = PersonalStorage.create(dataDir + "pstFileName_out.pst", FileFormatVersion.Unicode);
 ```
-##### Step 3: Add Contacts to the PST
-Create and add contacts into your newly created PST file:
+##### الخطوة 3: إضافة جهات اتصال إلى PST
+إنشاء جهات اتصال وإضافتها إلى ملف PST الذي تم إنشاؤه حديثًا:
 
 ```java
 FolderInfo contactFolder = pst.createPredefinedFolder("Contacts", StandardIpmFolder.Contacts);
@@ -83,8 +83,8 @@ String entryId1 = contactFolder.addMapiMessageItem(contact1).getEntryIdString();
 MapiContact contact2 = new MapiContact("Wichert Kroos", "WichertKroos@teleworm.us");
 String entryId2 = contactFolder.addMapiMessageItem(contact2).getEntryIdString();
 ```
-##### Step 4: Create Distribution List Members
-Convert the contacts to distribution list members:
+##### الخطوة 4: إنشاء أعضاء قائمة التوزيع
+تحويل جهات الاتصال إلى أعضاء قائمة التوزيع:
 
 ```java
 byte[] decodedBytes1 = Base64.decodeBase64(entryId1.getBytes());
@@ -97,8 +97,8 @@ MapiDistributionListMember member2 = new MapiDistributionListMember("Wichert Kro
 member2.setEntryId(decodedBytes2);
 member2.setEntryIdType(MapiDistributionListEntryIdType.Contact);
 ```
-##### Step 5: Add Members to Distribution List
-Create the distribution list and add members:
+##### الخطوة 5: إضافة الأعضاء إلى قائمة التوزيع
+إنشاء قائمة التوزيع وإضافة الأعضاء:
 
 ```java
 MapiDistributionListMemberCollection members = new MapiDistributionListMemberCollection();
@@ -111,59 +111,59 @@ distributionList.setSubject("Team Contacts");
 
 contactFolder.addMapiMessageItem(distributionList);
 ```
-### Feature 2: Create a One-off MAPI Distribution List and Add it to PST
-Here, you create an ad-hoc distribution list without pre-existing contacts.
+### الميزة 2: إنشاء قائمة توزيع MAPI لمرة واحدة وإضافتها إلى PST
+هنا، يمكنك إنشاء قائمة توزيع مخصصة دون أي جهات اتصال موجودة مسبقًا.
 #### ملخص
-This feature is useful for temporary or one-time email lists that need to be quickly set up and sent.
+تعتبر هذه الميزة مفيدة لقوائم البريد الإلكتروني المؤقتة أو لمرة واحدة والتي تحتاج إلى إعدادها وإرسالها بسرعة.
 #### خطوات
-##### Step 1: Initialize Environment
-As before, start by setting your document directory:
+##### الخطوة 1: تهيئة البيئة
+كما في السابق، ابدأ بتعيين دليل المستندات الخاص بك:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 ```
 ##### الخطوة 2: إنشاء ملف PST جديد
-Initialize the PST as shown previously.
-##### Step 3: Add Members to One-off List
-Create a collection of members for this list:
+قم بتهيئة PST كما هو موضح مسبقًا.
+##### الخطوة 3: إضافة الأعضاء إلى القائمة الفردية
+إنشاء مجموعة من الأعضاء لهذه القائمة:
 
 ```java
 MapiDistributionListMemberCollection oneOffMembers = new MapiDistributionListMemberCollection();
 oneOffMembers.addItem(new MapiDistributionListMember("John R. Patrick", "JohnRPatrick@armyspy.com"));
 oneOffMembers.addItem(new MapiDistributionListMember("Tilly Bates", "TillyBates@armyspy.com"));
 ```
-##### Step 4: Create and Add the Distribution List
-Assemble and add the one-off distribution list to your PST:
+##### الخطوة 4: إنشاء قائمة التوزيع وإضافتها
+قم بتجميع قائمة التوزيع الفريدة وإضافتها إلى ملف PST الخاص بك:
 
 ```java
 MapiDistributionList oneOffList = new MapiDistributionList("Simple List", oneOffMembers);
 contactFolder.addMapiMessageItem(oneOffList);
 ```
 ## التطبيقات العملية
-1. **Team Communication**: Automate team communication setup for project-specific groups.
-2. **Event Notifications**: Quickly create lists for event invitations and notifications.
-3. **الحملات التسويقية**: Manage targeted email campaigns by grouping customers or leads.
-4. **التكامل مع أنظمة إدارة علاقات العملاء**: Enhance customer relationship management tools by integrating dynamic contact lists.
+1. **التواصل الجماعي**:أتمتة إعداد اتصالات الفريق للمجموعات الخاصة بالمشروع.
+2. **إشعارات الأحداث**:قم بإنشاء قوائم سريعة لدعوات الأحداث والإشعارات.
+3. **الحملات التسويقية**:إدارة حملات البريد الإلكتروني المستهدفة من خلال تجميع العملاء أو العملاء المحتملين.
+4. **التكامل مع أنظمة إدارة علاقات العملاء**:تعزيز أدوات إدارة علاقات العملاء من خلال دمج قوائم جهات الاتصال الديناميكية.
 
 ## اعتبارات الأداء
-- **تحسين استخدام الموارد**: Ensure your application has adequate memory allocation, especially when handling large PST files.
-- **التعامل الفعال مع البيانات**: Use streaming where possible to handle data efficiently without excessive memory consumption.
-- **أفضل ممارسات Aspose.Email**: Follow Aspose's guidelines on email processing for optimal performance.
+- **تحسين استخدام الموارد**:تأكد من أن تطبيقك يتمتع بتخصيص ذاكرة كافٍ، خاصة عند التعامل مع ملفات PST كبيرة الحجم.
+- **التعامل الفعال مع البيانات**:استخدم البث المباشر عندما يكون ذلك ممكنًا للتعامل مع البيانات بكفاءة دون استهلاك مفرط للذاكرة.
+- **أفضل ممارسات Aspose.Email**:اتبع إرشادات Aspose بشأن معالجة البريد الإلكتروني للحصول على الأداء الأمثل.
 
 ## خاتمة
-By mastering the creation and management of MAPI distribution lists within a PST file, you can significantly enhance your organization's communication efficiency. This tutorial provided a step-by-step guide to using Aspose.Email Java effectively, offering both foundational knowledge and practical insights.
+بإتقان إنشاء وإدارة قوائم توزيع MAPI ضمن ملف PST، يمكنك تحسين كفاءة اتصالات مؤسستك بشكل ملحوظ. يقدم هذا البرنامج التعليمي دليلاً خطوة بخطوة لاستخدام Aspose.Email Java بفعالية، مقدماً المعرفة الأساسية والرؤى العملية.
 
-To further explore these capabilities, consider experimenting with more complex distributions or integrating this functionality into larger applications. For additional support or questions, visit the [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10).
+لاستكشاف هذه الإمكانيات بشكل أعمق، فكّر في تجربة توزيعات أكثر تعقيدًا أو دمج هذه الوظيفة في تطبيقات أكبر. لمزيد من الدعم أو الاستفسارات، تفضل بزيارة [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10).
 
 ## قسم الأسئلة الشائعة
-**Q: Can I create distribution lists for multiple PST files?**
-A: Yes, you can create and manage separate distribution lists across different PSTs.
+**س: هل يمكنني إنشاء قوائم توزيع لملفات PST المتعددة؟**
+ج: نعم، يمكنك إنشاء قوائم توزيع منفصلة وإدارتها عبر أجهزة PST المختلفة.
 
-**Q: How do I handle large contact databases with Aspose.Email?**
-A: Utilize efficient data handling techniques like batch processing to manage large datasets smoothly.
+**س: كيف يمكنني التعامل مع قواعد بيانات جهات الاتصال الكبيرة باستخدام Aspose.Email؟**
+أ: استخدم تقنيات معالجة البيانات الفعالة مثل المعالجة الدفعية لإدارة مجموعات البيانات الكبيرة بسلاسة.
 
-**Q: Is it possible to import existing contacts into a new PST?**
-A: Absolutely. You can read contacts from various sources and add them programmatically.
+**س: هل من الممكن استيراد جهات الاتصال الموجودة إلى ملف PST جديد؟**
+ج: بالتأكيد. يمكنك قراءة جهات الاتصال من مصادر مختلفة وإضافتها برمجيًا.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

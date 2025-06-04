@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to customize SMTP headers and footers with Aspose.Email for Java. Enhance your email communication with personalized branding and messages."
-"linktitle": "Customizing SMTP Headers and Footers with Aspose.Email"
+"description": "تعرّف على كيفية تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email لجافا. عزّز تواصلك عبر البريد الإلكتروني من خلال تصميم علامة تجارية ورسائل مخصصة."
+"linktitle": "تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Customizing SMTP Headers and Footers with Aspose.Email"
+"title": "تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email"
 "url": "/ar/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/"
 "weight": 16
 ---
@@ -13,108 +13,108 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Customizing SMTP Headers and Footers with Aspose.Email
+# تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email
 
 
 ## مقدمة
 
-In the digital age, emails have become the backbone of professional communication. They serve as a means to convey information, build relationships, and market products or services. However, the default headers and footers in email messages may not always align with your branding or communication style. This is where customizing SMTP headers and footers comes into play.
+في العصر الرقمي، أصبحت رسائل البريد الإلكتروني ركيزة التواصل المهني. فهي تُعدّ وسيلةً لنقل المعلومات، وبناء العلاقات، وتسويق المنتجات أو الخدمات. مع ذلك، قد لا تتوافق رؤوس وتذييلات رسائل البريد الإلكتروني الافتراضية دائمًا مع علامتك التجارية أو أسلوب تواصلك. وهنا يأتي دور تخصيص رؤوس وتذييلات SMTP.
 
 ## المتطلبات الأساسية
 
-Before diving into the customization process, make sure you have the following prerequisites in place:
+قبل الخوض في عملية التخصيص، تأكد من توفر المتطلبات الأساسية التالية:
 
-- Aspose.Email for Java: Download and install the Aspose.Email for Java library from [هنا](https://releases.aspose.com/email/java/).
+- Aspose.Email لـ Java: قم بتنزيل وتثبيت مكتبة Aspose.Email لـ Java من [هنا](https://releases.aspose.com/email/java/).
 
-## Getting Started
+## ابدء
 
-Let's start by customizing SMTP headers and footers step by step. 
+لنبدأ بتخصيص رؤوس وتذييلات SMTP خطوة بخطوة. 
 
-### Step 1: Setting Up Your Java Project
+### الخطوة 1: إعداد مشروع Java الخاص بك
 
-Begin by creating a new Java project in your preferred Integrated Development Environment (IDE). Make sure you have imported the Aspose.Email library into your project.
+ابدأ بإنشاء مشروع جافا جديد في بيئة التطوير المتكاملة (IDE) المُفضّلة لديك. تأكد من استيراد مكتبة Aspose.Email إلى مشروعك.
 
-### Step 2: Importing the Required Classes
+### الخطوة 2: استيراد الفئات المطلوبة
 
-To work with Aspose.Email, you'll need to import the necessary classes. Here's how you can do it:
+للعمل مع Aspose.Email، ستحتاج إلى استيراد الفئات اللازمة. إليك كيفية القيام بذلك:
 
 ```java
 import com.aspose.email.*;
 ```
 
-### Step 3: Creating an Email Message
+### الخطوة 3: إنشاء رسالة بريد إلكتروني
 
-Next, you'll need to create an email message. Here's a code snippet to get you started:
+بعد ذلك، ستحتاج إلى إنشاء رسالة بريد إلكتروني. إليك مقتطف من الكود لمساعدتك في البدء:
 
 ```java
-// Create a new message
+// إنشاء رسالة جديدة
 MailMessage message = new MailMessage();
 
-// Set sender and recipient
+// تعيين المرسل والمستلم
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Set subject
+// تعيين الموضوع
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### Step 4: Customizing Headers
+### الخطوة 4: تخصيص الرؤوس
 
-Now, let's customize the email headers. You can set headers like 'X-Priority', 'X-Mailer', and more to personalize your message. Here's an example:
+الآن، لنُخصّص عناوين البريد الإلكتروني. يمكنك تعيين عناوين مثل "X-Priority" و"X-Mailer" وغيرها لتخصيص رسالتك. إليك مثال:
 
 ```java
-// Customize headers
+// تخصيص الرؤوس
 message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-### Step 5: Customizing Footers
+### الخطوة 5: تخصيص التذييلات
 
-To customize the email footer, you can add your own text or signature. Here's how you can do it:
+لتخصيص تذييل البريد الإلكتروني، يمكنك إضافة نص أو توقيع خاص بك. إليك كيفية القيام بذلك:
 
 ```java
-// Customize footer
+// تخصيص التذييل
 String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-### Step 6: Sending the Email
+### الخطوة 6: إرسال البريد الإلكتروني
 
-Finally, send the email with the customized headers and footers:
+وأخيرًا، أرسل البريد الإلكتروني مع الرؤوس والتذييلات المخصصة:
 
 ```java
-// Initialize the SMTP client
+// تهيئة عميل SMTP
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Send the message
+// أرسل الرسالة
 client.send(message);
 ```
 
 ## خاتمة
 
-Customizing SMTP headers and footers with Aspose.Email for Java is a powerful way to enhance your email communication. It allows you to maintain brand consistency and add a personal touch to your messages. By following the steps outlined in this article, you can create impactful email content that leaves a lasting impression on your recipients.
+يُعد تخصيص رؤوس وتذييلات SMTP باستخدام Aspose.Email لجافا طريقة فعّالة لتحسين تواصلك عبر البريد الإلكتروني. فهو يُمكّنك من الحفاظ على اتساق علامتك التجارية وإضافة لمسة شخصية إلى رسائلك. باتباع الخطوات الموضحة في هذه المقالة، يمكنك إنشاء محتوى بريد إلكتروني مؤثر يترك انطباعًا دائمًا لدى متلقيك.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How do I download Aspose.Email for Java?
+### كيف يمكنني تنزيل Aspose.Email لـJava؟
 
-You can download Aspose.Email for Java from the website using this link: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
+يمكنك تنزيل Aspose.Email لـ Java من الموقع الإلكتروني باستخدام هذا الرابط: [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/).
 
-### Can I customize multiple headers and footers in a single email?
+### هل يمكنني تخصيص عدة رؤوس وتذييلات في بريد إلكتروني واحد؟
 
-Yes, you can customize multiple headers and footers in a single email message. Simply add the desired headers and footers as shown in the examples provided.
+نعم، يمكنك تخصيص عدة رؤوس وتذييلات في رسالة بريد إلكتروني واحدة. ما عليك سوى إضافة الرؤوس والتذييلات المطلوبة كما هو موضح في الأمثلة المُقدمة.
 
-### Is there a limit to the length of customized headers and footers?
+### هل هناك حد لطول الرؤوس والتذييلات المخصصة؟
 
-There is no strict limit to the length of customized headers and footers. However, it's recommended to keep them concise and relevant to maintain a professional appearance.
+لا يوجد حد أقصى لطول الرؤوس والتذييلات المخصصة. مع ذلك، يُنصح بإبقائها موجزة وواضحة للحفاظ على مظهر احترافي.
 
-### Can I use HTML formatting in the email content?
+### هل يمكنني استخدام تنسيق HTML في محتوى البريد الإلكتروني؟
 
-Yes, you can use HTML formatting in the email content, including headers and footers. This allows you to create visually appealing and informative emails.
+نعم، يمكنك استخدام تنسيق HTML في محتوى البريد الإلكتروني، بما في ذلك الرؤوس والتذييلات. هذا يسمح لك بإنشاء رسائل بريد إلكتروني جذابة بصريًا وغنية بالمعلومات.
 
-### What SMTP settings should I use to send customized emails?
+### ما هي إعدادات SMTP التي يجب أن أستخدمها لإرسال رسائل بريد إلكتروني مخصصة؟
 
-You should use the SMTP settings provided by your email service provider or your organization's IT department. These settings typically include the SMTP server address, port number, and authentication credentials.
+يجب عليك استخدام إعدادات SMTP التي يوفرها لك مزود خدمة البريد الإلكتروني أو قسم تكنولوجيا المعلومات في مؤسستك. تتضمن هذه الإعدادات عادةً عنوان خادم SMTP، ورقم المنفذ، وبيانات اعتماد المصادقة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

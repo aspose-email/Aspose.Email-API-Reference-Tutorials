@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to manage emails programmatically in Java using Aspose.Email. This guide covers creating PST files, adding contacts, and managing distribution lists."
-"title": "Email Management in Java&#58; Create PST Files & Distribution Lists with Aspose.Email"
+"description": "تعرّف على كيفية إدارة رسائل البريد الإلكتروني برمجيًا في جافا باستخدام Aspose.Email. يتناول هذا الدليل إنشاء ملفات PST، وإضافة جهات اتصال، وإدارة قوائم التوزيع."
+"title": "إدارة البريد الإلكتروني في جافا - إنشاء ملفات PST وقوائم التوزيع باستخدام Aspose.Email"
 "url": "/ar/java/outlook-pst-ost-operations/email-management-java-aspose-pst-lists/"
 "weight": 1
 ---
@@ -11,32 +11,32 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Email Management in Java: Create PST Files & Manage Distribution Lists with Aspose.Email
+# إدارة البريد الإلكتروني في Java: إنشاء ملفات PST وإدارة قوائم التوزيع باستخدام Aspose.Email
 
-Managing emails programmatically can be a game-changer for businesses and developers, especially when handling large volumes of data or automating tasks like creating personal storage tables (PST) and distribution lists. With **Aspose.Email for Java**, you're equipped to tackle these challenges efficiently. This comprehensive tutorial guides you through using Aspose.Email for Java to create PST files and manage contacts within them.
+يمكن أن تُحدث إدارة رسائل البريد الإلكتروني برمجيًا نقلة نوعية للشركات والمطورين، خاصةً عند التعامل مع كميات كبيرة من البيانات أو أتمتة مهام مثل إنشاء جداول تخزين شخصية (PST) وقوائم التوزيع. **Aspose.Email لـ Java**أنت جاهز لمواجهة هذه التحديات بكفاءة. يرشدك هذا البرنامج التعليمي الشامل إلى كيفية استخدام Aspose.Email لـ Java لإنشاء ملفات PST وإدارة جهات الاتصال فيها.
 
 ## ما سوف تتعلمه
 
-- How to set up Aspose.Email for Java in your development environment
-- Creating a new PST file with simple code snippets
-- Adding contacts to the newly created PST
-- Constructing distribution lists from existing contacts
-- Appending one distribution list to another effectively
+- كيفية إعداد Aspose.Email لـ Java في بيئة التطوير الخاصة بك
+- إنشاء ملف PST جديد باستخدام مقتطفات التعليمات البرمجية البسيطة
+- إضافة جهات اتصال إلى ملف PST الذي تم إنشاؤه حديثًا
+- إنشاء قوائم التوزيع من جهات الاتصال الموجودة
+- إضافة قائمة توزيع واحدة إلى أخرى بشكل فعال
 
-Let's dive into how you can harness the power of Aspose.Email for Java.
+دعونا نتعرف على كيفية الاستفادة من قوة Aspose.Email لـ Java.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-1. **Java Development Kit (JDK)**: Version 16 or later.
-2. **Maven**: To manage dependencies effortlessly.
-3. **Aspose.Email for Java Library**: We'll use version 25.4.
-4. Basic understanding of Java programming and handling third-party libraries.
+1. **مجموعة تطوير جافا (JDK)**:الإصدار 16 أو أحدث.
+2. **مافن**:لإدارة التبعيات بسهولة.
+3. **Aspose.Email لمكتبة Java**سوف نستخدم الإصدار 25.4.
+4. فهم أساسي لبرمجة جافا والتعامل مع مكتبات الطرف الثالث.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started with Aspose.Email, you first need to include it in your project using Maven. Add the following dependency to your `pom.xml`:
+للبدء باستخدام Aspose.Email، عليك أولاً تضمينه في مشروعك باستخدام Maven. أضف التبعية التالية إلى: `pom.xml`:
 
 ```xml
 <dependency>
@@ -49,22 +49,22 @@ To get started with Aspose.Email, you first need to include it in your project u
 
 ### الحصول على الترخيص
 
-- **نسخة تجريبية مجانية**: Download a temporary license to explore Aspose.Email features without limitations.
-- **Purchase or Temporary License**: Head over to the [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل حول الحصول على التراخيص.
+- **نسخة تجريبية مجانية**:قم بتنزيل ترخيص مؤقت لاستكشاف ميزات Aspose.Email دون قيود.
+- **شراء أو ترخيص مؤقت**:توجه إلى [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل حول الحصول على التراخيص.
 
-Once set up, initialize your project by importing necessary classes and configuring your environment as needed. This will allow you to begin creating and managing PST files with ease.
+بعد الإعداد، ابدأ مشروعك باستيراد الفئات اللازمة وتهيئة بيئتك حسب الحاجة. سيسمح لك هذا ببدء إنشاء ملفات PST وإدارتها بسهولة.
 
 ## دليل التنفيذ
 
 ### إنشاء ملف PST جديد
 
-**ملخص**: Learn how to create a new PST file in Unicode format using Aspose.Email for Java.
+**ملخص**:تعرف على كيفية إنشاء ملف PST جديد بتنسيق Unicode باستخدام Aspose.Email لـ Java.
 
 #### خطوات:
 
 1. **تهيئة PersonalStorage**
 
-   Import the required classes, then use `PersonalStorage.create()` طريقة:
+   استورد الفئات المطلوبة، ثم استخدم `PersonalStorage.create()` طريقة:
    
    ```java
    import com.aspose.email.FileFormatVersion;
@@ -72,7 +72,7 @@ Once set up, initialize your project by importing necessary classes and configur
 
    public class CreatePST {
        public static void main(String[] args) throws Exception {
-           // Create a new PST file in Unicode format
+           // إنشاء ملف PST جديد بتنسيق Unicode
            PersonalStorage personalStorage = PersonalStorage.create("YOUR_OUTPUT_DIRECTORY/testDL.pst\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

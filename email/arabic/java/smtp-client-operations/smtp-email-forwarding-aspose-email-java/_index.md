@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to configure SMTP clients with Aspose.Email for Java and forward emails efficiently. Ideal for developers in enterprise applications."
-"title": "SMTP Email Forwarding Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية تكوين عملاء SMTP باستخدام Aspose.Email لـ Java وإعادة توجيه رسائل البريد الإلكتروني بكفاءة. مثالي للمطورين في تطبيقات المؤسسات."
+"title": "إعادة توجيه البريد الإلكتروني عبر SMTP باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/smtp-client-operations/smtp-email-forwarding-aspose-email-java/"
 "weight": 1
 ---
@@ -11,32 +11,32 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# SMTP Email Forwarding Using Aspose.Email for Java: A Comprehensive Guide
+# إعادة توجيه البريد الإلكتروني SMTP باستخدام Aspose.Email لـ Java: دليل شامل
 
-In the digital era, managing emails programmatically is essential for developers working on enterprise or customer communication systems. This guide provides a detailed walkthrough of setting up an SMTP client with Aspose.Email for Java to forward emails efficiently without using `MailMessage`. Let’s explore how this powerful tool can meet your email automation needs.
+في العصر الرقمي، تُعدّ إدارة رسائل البريد الإلكتروني برمجيًا أمرًا ضروريًا للمطورين الذين يعملون على أنظمة اتصالات المؤسسات أو العملاء. يقدم هذا الدليل شرحًا تفصيليًا لإعداد عميل SMTP باستخدام Aspose.Email لـ Java لإعادة توجيه رسائل البريد الإلكتروني بكفاءة دون الحاجة إلى استخدام `MailMessage`دعنا نستكشف كيف يمكن لهذه الأداة القوية تلبية احتياجات أتمتة البريد الإلكتروني لديك.
 
 ## ما سوف تتعلمه:
-- Configuring an SMTP Client with Aspose.Email for Java
-- Managing Email Recipients Using a Collection
-- Forwarding Emails Directly from File Streams
+- تكوين عميل SMTP باستخدام Aspose.Email لـ Java
+- إدارة مستلمي البريد الإلكتروني باستخدام مجموعة
+- إعادة توجيه رسائل البريد الإلكتروني مباشرةً من تدفقات الملفات
 
-**Prerequisites:** Before diving in, ensure you have the following setup ready to follow this tutorial effectively.
+**المتطلبات الأساسية:** قبل الغوص في الأمر، تأكد من أن لديك الإعداد التالي جاهزًا لمتابعة هذا البرنامج التعليمي بشكل فعال.
 
 ### المتطلبات الأساسية
-To successfully complete this guide, make sure you have:
+لإكمال هذا الدليل بنجاح، تأكد من أن لديك:
 
 - **المكتبات والتبعيات:**
-  - Aspose.Email for Java version 25.4 or later.
+  - Aspose.Email لإصدار Java 25.4 أو أحدث.
   
 - **إعداد البيئة:**
-  - A compatible JDK (Java Development Kit), preferably JDK 16 as specified by the classifier in our Maven dependency.
+  - JDK (Java Development Kit) متوافق، ويفضل أن يكون JDK 16 كما هو محدد بواسطة المصنف في تبعية Maven الخاصة بنا.
 - **المتطلبات المعرفية:**
-  - Basic understanding of SMTP protocols
-  - Familiarity with Java programming
+  - فهم أساسي لبروتوكولات SMTP
+  - المعرفة ببرمجة جافا
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-Integrating Aspose.Email into your project is straightforward using Maven. Add the following dependency to your `pom.xml` file:
+دمج Aspose.Email في مشروعك سهل للغاية باستخدام Maven. أضف التبعية التالية إلى مشروعك: `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -48,36 +48,36 @@ Integrating Aspose.Email into your project is straightforward using Maven. Add t
 ```
 
 ### الحصول على ترخيص
-Aspose.Email offers a free trial license to test its full capabilities without limitations. Here’s how you can acquire it:
+يقدم Aspose.Email ترخيصًا تجريبيًا مجانيًا لاختبار كامل إمكانياته دون قيود. إليك كيفية الحصول عليه:
 
-1. **نسخة تجريبية مجانية:** يزور [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/) to download and start with the evaluation version.
-2. **رخصة مؤقتة:** For extended testing, request a temporary license through the [License Request page](https://purchase.aspose.com/temporary-license/).
-3. **شراء:** If you find Aspose.Email beneficial for your projects, consider purchasing a full license at [Aspose's Purchase page](https://purchase.aspose.com/buy).
+1. **نسخة تجريبية مجانية:** يزور [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/) لتنزيل الإصدار التقييمي والبدء به.
+2. **رخصة مؤقتة:** لإجراء اختبار موسع، اطلب ترخيصًا مؤقتًا من خلال [صفحة طلب الترخيص](https://purchase.aspose.com/temporary-license/).
+3. **شراء:** إذا وجدت أن Aspose.Email مفيد لمشاريعك، ففكر في شراء ترخيص كامل من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة والإعداد الأساسي
 
-Once Aspose.Email is included in your project, initialize the necessary components:
+بمجرد تضمين Aspose.Email في مشروعك، قم بتهيئة المكونات الضرورية:
 
 ```java
 import com.aspose.email.SecurityOptions;
 import com.aspose.email.SmtpClient;
 
-String host = "mail.domain.com"; // Your SMTP server address
+String host = "mail.domain.com"; // عنوان خادم SMTP الخاص بك
 String username = "username";    // اسم المستخدم للمصادقة
-int smtpPort = 587;              // Port number, typically 587 for TLS/STARTTLS
+int smtpPort = 587;              // رقم المنفذ، عادةً 587 لـ TLS/STARTTLS
 String password = "password";    // كلمة المرور للمصادقة
 
-// Create an instance of SmtpClient with specified credentials.
+// إنشاء مثيل لـ SmtpClient باستخدام بيانات الاعتماد المحددة.
 SmtpClient client = new SmtpClient(host, smtpPort, username, password, SecurityOptions.SSLExplicit);
 ```
 
 ## دليل التنفيذ
 
-### SMTP Client Configuration
-This section guides you through configuring an SMTP client for sending emails. By setting up the `SmtpClient`, you establish a connection with your email server using specified credentials and security options.
+### تكوين عميل SMTP
+يرشدك هذا القسم خلال عملية تهيئة عميل SMTP لإرسال رسائل البريد الإلكتروني. من خلال إعداد `SmtpClient`، يمكنك إنشاء اتصال مع خادم البريد الإلكتروني الخاص بك باستخدام بيانات الاعتماد وخيارات الأمان المحددة.
 
 #### ملخص
-The configuration involves specifying your SMTP host, port, username, password, and security option—typically SSLExplicit for secure connections.
+يتضمن التكوين تحديد مضيف SMTP والمنفذ واسم المستخدم وكلمة المرور وخيار الأمان - عادةً SSLExplicit لاتصالات آمنة.
 
 ```java
 import com.aspose.email.SecurityOptions;
@@ -88,44 +88,44 @@ String username = "username";
 int smtpPort = 587;
 String password = "password";
 
-// Initialize the SmtpClient with specified credentials.
+// قم بتهيئة SmtpClient باستخدام بيانات الاعتماد المحددة.
 SmtpClient client = new SmtpClient(host, smtpPort, username, password, SecurityOptions.SSLExplicit);
 ```
 
-### Email Recipients Collection
-Managing a list of recipients is streamlined using `MailAddressCollection`, which allows you to add multiple email addresses easily.
+### مجموعة مستلمي البريد الإلكتروني
+تتم إدارة قائمة المستلمين بشكل مبسط باستخدام `MailAddressCollection`، مما يسمح لك بإضافة عناوين بريد إلكتروني متعددة بسهولة.
 
 #### ملخص
-This collection enables the storage and management of recipient emails for forwarding or sending operations.
+تتيح هذه المجموعة تخزين وإدارة رسائل البريد الإلكتروني للمستلمين لعمليات إعادة التوجيه أو الإرسال.
 
 ```java
 import com.aspose.email.MailAddressCollection;
 
-// Create a new MailAddressCollection instance.
+// إنشاء مثيل MailAddressCollection جديد.
 MailAddressCollection recipients = new MailAddressCollection();
 
-// Add multiple recipients to the collection.
+// إضافة عدة مستلمين إلى المجموعة.
 recipients.add("to1@domain.com");
 recipients.add("to2@domain.com");
 ```
 
-### Email Forwarding without Using MailMessage
-This powerful feature allows you to forward an email file directly using a `FileInputStream` and the `SmtpClient`.
+### إعادة توجيه البريد الإلكتروني دون استخدام MailMessage
+تتيح لك هذه الميزة القوية إعادة توجيه ملف البريد الإلكتروني مباشرةً باستخدام `FileInputStream` و ال `SmtpClient`.
 
 #### ملخص
-Instead of creating a new `MailMessage`, this method uses existing EML files, making it efficient for bulk forwarding.
+بدلا من إنشاء جديد `MailMessage`تستخدم هذه الطريقة ملفات EML الموجودة، مما يجعلها فعالة لإعادة التوجيه بالجملة.
 
 ```java
 import java.io.FileInputStream;
 import java.io.IOException;
 
-String fileName = "YOUR_DOCUMENT_DIRECTORY/test.eml"; // Path to your EML file
+String fileName = "YOUR_DOCUMENT_DIRECTORY/test.eml"; // المسار إلى ملف EML الخاص بك
 
-// Open the FileInputStream for the email file.
+// افتح FileInputStream لملف البريد الإلكتروني.
 FileInputStream fos = new FileInputStream(fileName);
 
 try {
-    // Forward the email using the SmtpClient instance and recipients collection.
+    // قم بإعادة توجيه البريد الإلكتروني باستخدام مثيل SmtpClient ومجموعة المستلمين.
     client.forward("Sender@domain.com\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

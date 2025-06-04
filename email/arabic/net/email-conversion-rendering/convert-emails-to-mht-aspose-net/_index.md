@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to convert emails to MHT files using Aspose.Email for .NET with customizable settings, including optional exclusion of inline images."
-"title": "Convert Emails to MHT Files Using Aspose.Email .NET&#58; A Comprehensive Guide"
+"description": "تعرف على كيفية تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام Aspose.Email لـ .NET مع الإعدادات القابلة للتخصيص، بما في ذلك الاستبعاد الاختياري للصور المضمنة."
+"title": "تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام Aspose.Email .NET - دليل شامل"
 "url": "/ar/net/email-conversion-rendering/convert-emails-to-mht-aspose-net/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Convert Emails to MHT Files Using Aspose.Email .NET: A Comprehensive Guide
+# تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام Aspose.Email .NET: دليل شامل
 
-TUTORIAL CATEGORY: Email Conversion & Rendering
-CURRENT SEO URL: convert-emails-to-mht-aspose-net
+فئة البرنامج التعليمي: تحويل البريد الإلكتروني وعرضه
+رابط تحسين محرك البحث الحالي: convert-emails-to-mht-aspose-net
 
-## How to Convert Emails to MHT Files with Customizable Settings in Aspose.Email for .NET
+## كيفية تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام الإعدادات القابلة للتخصيص في Aspose.Email لـ .NET
 
-Are you looking to save your email messages as MHT files while preserving their formatting and content? This tutorial guides you through using Aspose.Email for .NET, offering customizable settings such as excluding inline images. Follow this step-by-step guide to implement these features effectively.
+هل ترغب في حفظ رسائل بريدك الإلكتروني كملفات MHT مع الحفاظ على تنسيقها ومحتواها؟ يرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ .NET، مع توفير إعدادات قابلة للتخصيص، مثل استبعاد الصور المضمنة. اتبع هذا الدليل خطوة بخطوة لتطبيق هذه الميزات بفعالية.
 
 ## ما سوف تتعلمه
 
 - كيفية إعداد Aspose.Email لـ .NET في مشروعك
-- Convert emails to MHT files with optional formatting settings
-- Save emails as MHT without including inline images
+- تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام إعدادات التنسيق الاختيارية
+- حفظ رسائل البريد الإلكتروني بتنسيق MHT دون تضمين الصور المضمنة
 - استكشاف المشكلات الشائعة أثناء التنفيذ وإصلاحها
 
-Let's get started by setting up the necessary tools and libraries.
+لنبدأ بإعداد الأدوات والمكتبات اللازمة.
 
 ## المتطلبات الأساسية
 
 قبل الغوص في البرنامج التعليمي، تأكد من أن لديك:
 
-- Aspose.Email for .NET library installed in your project
-- A basic understanding of C# programming
-- Visual Studio or another compatible IDE set up on your machine
+- تم تثبيت Aspose.Email لمكتبة .NET في مشروعك
+- فهم أساسي لبرمجة C#
+- Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة تم إعدادها على جهازك
 
 ## إعداد Aspose.Email لـ .NET
 
 ### تثبيت
 
-To begin using Aspose.Email for .NET, install the package using one of these methods:
+لبدء استخدام Aspose.Email لـ .NET، قم بتثبيت الحزمة باستخدام إحدى الطرق التالية:
 
 **.NET CLI**
 ```bash
@@ -58,9 +58,9 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-You can acquire a free trial license to explore all features without limitations. Visit [هذا الرابط](https://releases.aspose.com/email/net/) to download a temporary license or consider purchasing a full license if you find it suits your needs.
+يمكنك الحصول على نسخة تجريبية مجانية لاستكشاف جميع الميزات دون قيود. تفضل بزيارة [هذا الرابط](https://releases.aspose.com/email/net/) لتنزيل ترخيص مؤقت أو النظر في شراء ترخيص كامل إذا وجدت أنه يناسب احتياجاتك.
 
-Initialize Aspose.Email in your project by configuring the license like so:
+قم بتهيئة Aspose.Email في مشروعك عن طريق تكوين الترخيص على النحو التالي:
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("Aspose.Total.lic");
@@ -68,35 +68,35 @@ license.SetLicense("Aspose.Total.lic");
 
 ## دليل التنفيذ
 
-We'll break down the process into two main features: saving emails with optional settings and excluding inline images.
+سنقوم بتقسيم العملية إلى ميزتين رئيسيتين: حفظ رسائل البريد الإلكتروني بإعدادات اختيارية واستبعاد الصور المضمنة.
 
-### Save MHTML with Optional Settings
+### حفظ MHTML باستخدام الإعدادات الاختيارية
 
-This feature allows you to save email messages as MHT files while specifying formatting options.
+تتيح لك هذه الميزة حفظ رسائل البريد الإلكتروني كملفات MHT مع تحديد خيارات التنسيق.
 
 #### ملخص
 
-You can customize how your email is saved by including header information, validating content encoding, and displaying original headers.
+يمكنك تخصيص كيفية حفظ بريدك الإلكتروني من خلال تضمين معلومات الرأس، والتحقق من صحة ترميز المحتوى، وعرض الرؤوس الأصلية.
 
 #### خطوات التنفيذ
 
-1. **Set Up File Paths**
+1. **إعداد مسارات الملفات**
    
-   Define the directory paths for reading input emails and saving output MHT files.
+   قم بتحديد مسارات الدليل لقراءة رسائل البريد الإلكتروني المدخلة وحفظ ملفات MHT الناتجة.
    ```csharp
    string dataDir = Path.Combine("YOUR_DOCUMENT_DIRECTORY", "Email");
    ```
 
-2. **Load the Email Message**
+2. **تحميل رسالة البريد الإلكتروني**
 
-   يستخدم `MailMessage.Load` to read an email from a file.
+   يستخدم `MailMessage.Load` لقراءة البريد الإلكتروني من ملف.
    ```csharp
    MailMessage eml = MailMessage.Load(Path.Combine(dataDir, "Message.eml"));
    ```
 
-3. **Configure MHT Save Options**
+3. **تكوين خيارات حفظ MHT**
 
-   يثبت `MhtSaveOptions` with desired formatting options.
+   يثبت `MhtSaveOptions` مع خيارات التنسيق المطلوبة.
    ```csharp
    MhtSaveOptions mhtSaveOptions = new MhtSaveOptions
    {
@@ -105,40 +105,40 @@ You can customize how your email is saved by including header information, valid
    };
    ```
 
-4. **Save the Email as an MHT File**
+4. **حفظ البريد الإلكتروني كملف MHT**
 
-   استخدم `Save` method to write the email content with specified options.
+   استخدم `Save` طريقة لكتابة محتوى البريد الإلكتروني مع الخيارات المحددة.
    ```csharp
    eml.Save(Path.Combine("YOUR_OUTPUT_DIRECTORY", "outMessage_out.mht"), mhtSaveOptions);
    ```
 
-### Convert to MHTML Without Inline Images
+### التحويل إلى MHTML بدون صور مضمنة
 
-This feature demonstrates saving an email as an MHT file while skipping inline images.
+تُظهر هذه الميزة كيفية حفظ البريد الإلكتروني كملف MHT أثناء تخطي الصور المضمنة.
 
 #### ملخص
 
-By setting `SkipInlineImages` to true, you can save email content without embedding any images directly in the file.
+عن طريق الإعداد `SkipInlineImages` إذا كان الأمر كذلك، فيمكنك حفظ محتوى البريد الإلكتروني دون تضمين أي صور مباشرة في الملف.
 
 #### خطوات التنفيذ
 
-1. **Set Up File Paths**
+1. **إعداد مسارات الملفات**
    
-   As before, define your input and output directories.
+   كما في السابق، قم بتحديد أدلة الإدخال والإخراج الخاصة بك.
    ```csharp
    string dataDir = Path.Combine("YOUR_DOCUMENT_DIRECTORY", "Email");
    ```
 
-2. **Load the Email Message**
+2. **تحميل رسالة البريد الإلكتروني**
 
-   Load the email you want to convert.
+   قم بتحميل البريد الإلكتروني الذي تريد تحويله.
    ```csharp
    MailMessage eml = MailMessage.Load(Path.Combine(dataDir, "Message.eml"));
    ```
 
-3. **Configure MHT Save Options**
+3. **تكوين خيارات حفظ MHT**
 
-   Set `SkipInlineImages` to true in your options configuration.
+   تعيين `SkipInlineImages` إلى true في تكوين الخيارات الخاصة بك.
    ```csharp
    MhtSaveOptions mhtSaveOptions = new MhtSaveOptions
    {
@@ -146,55 +146,55 @@ By setting `SkipInlineImages` to true, you can save email content without embedd
    };
    ```
 
-4. **Save the Email as an MHT File**
+4. **حفظ البريد الإلكتروني كملف MHT**
 
-   Finally, save the email without inline images.
+   وأخيرًا، احفظ البريد الإلكتروني بدون صور مضمنة.
    ```csharp
    eml.Save(Path.Combine("YOUR_OUTPUT_DIRECTORY", "EmlToMhtmlWithoutInlineImages_out.mht"), mhtSaveOptions);
    ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- Ensure your file paths are correct to avoid `FileNotFoundException`.
-- Double-check that Aspose.Email is properly licensed if you encounter feature limitations.
+- تأكد من صحة مسارات الملفات الخاصة بك لتجنب `FileNotFoundException`.
+- تأكد مرة أخرى من أن Aspose.Email مرخص بشكل صحيح إذا واجهت قيودًا على الميزات.
 
 ## التطبيقات العملية
 
-These features can be utilized in various scenarios, such as:
+يمكن الاستفادة من هذه الميزات في سيناريوهات مختلفة، مثل:
 
-1. **أرشفة رسائل البريد الإلكتروني**: Preserve email conversations in a static format for long-term storage.
-2. **Email Content Analysis**: Extract and analyze email content without images for faster processing.
-3. **Integration with Document Management Systems**: Automate the conversion of emails into document formats compatible with your existing systems.
+1. **أرشفة رسائل البريد الإلكتروني**:احفظ محادثات البريد الإلكتروني بتنسيق ثابت للتخزين طويل الأمد.
+2. **تحليل محتوى البريد الإلكتروني**:استخراج وتحليل محتوى البريد الإلكتروني دون صور للمعالجة بشكل أسرع.
+3. **التكامل مع أنظمة إدارة المستندات**:أتمتة تحويل رسائل البريد الإلكتروني إلى تنسيقات مستندات متوافقة مع أنظمتك الحالية.
 
 ## اعتبارات الأداء
 
 لتحسين الأداء:
 
-- Minimize memory usage by disposing objects properly after use.
-- Use Aspose.Email’s efficient handling methods to manage large email datasets.
+- قم بتقليل استخدام الذاكرة عن طريق التخلص من الكائنات بشكل صحيح بعد الاستخدام.
+- استخدم طرق المعالجة الفعالة التي يوفرها Aspose.Email لإدارة مجموعات بيانات البريد الإلكتروني الكبيرة.
 
 ## خاتمة
 
-You've now learned how to convert emails to MHT files using Aspose.Email for .NET, both with optional settings and without inline images. This flexibility allows you to tailor the output to fit your specific needs.
+لقد تعلمتَ الآن كيفية تحويل رسائل البريد الإلكتروني إلى ملفات MHT باستخدام Aspose.Email لـ .NET، سواءً بإعدادات اختيارية أو بدون صور مضمنة. تتيح لك هذه المرونة تخصيص الناتج ليناسب احتياجاتك الخاصة.
 
-Next steps include experimenting with other features provided by Aspose.Email or integrating this functionality into larger projects.
+وتتضمن الخطوات التالية تجربة ميزات أخرى يوفرها Aspose.Email أو دمج هذه الوظيفة في مشاريع أكبر.
 
 ## قسم الأسئلة الشائعة
 
-**Q: How do I ensure my email files are properly converted?**
-A: Verify file paths, check for correct licensing, and validate that the `MhtSaveOptions` settings meet your needs.
+**س: كيف يمكنني التأكد من تحويل ملفات البريد الإلكتروني الخاصة بي بشكل صحيح؟**
+أ: التحقق من مسارات الملفات، والتحقق من الترخيص الصحيح، والتأكد من أن `MhtSaveOptions` الإعدادات تلبي احتياجاتك.
 
-**Q: Can I use Aspose.Email without a license?**
-A: Yes, you can use it with a free trial license, which allows access to all features temporarily.
+**س: هل يمكنني استخدام Aspose.Email بدون ترخيص؟**
+ج: نعم، يمكنك استخدامه من خلال ترخيص تجريبي مجاني، والذي يسمح لك بالوصول إلى كافة الميزات مؤقتًا.
 
-**Q: What if my email conversion fails?**
-A: Check for errors in file paths or licensing issues. Review the `MhtSaveOptions` settings as well.
+**س: ماذا لو فشل تحويل البريد الإلكتروني الخاص بي؟**
+أ: تحقق من وجود أخطاء في مسارات الملفات أو مشاكل الترخيص. راجع `MhtSaveOptions` الإعدادات أيضًا.
 
-**Q: Is Aspose.Email compatible with older .NET versions?**
-A: Confirm compatibility by checking [Aspose’s documentation](https://reference.aspose.com/email/net/).
+**س: هل Aspose.Email متوافق مع إصدارات .NET الأقدم؟**
+أ: تأكيد التوافق عن طريق التحقق [توثيق Aspose](https://reference.aspose.com/email/net/).
 
-**Q: How can I remove headers from the saved MHT files?**
-A: Adjust `MhtFormatOptions` to exclude headers as needed.
+**س: كيف يمكنني إزالة الرؤوس من ملفات MHT المحفوظة؟**
+أ: تعديل `MhtFormatOptions` لاستبعاد الرؤوس حسب الحاجة.
 
 ## موارد
 
@@ -204,7 +204,7 @@ A: Adjust `MhtFormatOptions` to exclude headers as needed.
 - **نسخة تجريبية مجانية**: [رخصة مؤقتة](https://releases.aspose.com/email/net/)
 - **يدعم**: [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10)
 
-Experiment with these features and see how they can streamline your email handling processes. Happy coding!
+جرّب هذه الميزات وشاهد كيف تُبسّط عمليات معالجة بريدك الإلكتروني. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

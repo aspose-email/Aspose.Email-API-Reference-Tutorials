@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently filter appointments using Aspose.Email for .NET and Exchange Web Service (EWS) with this step-by-step guide."
-"title": "Master Appointment Filtering in EWS with Aspose.Email for .NET&#58; A Comprehensive Guide"
+"description": "تعرف على كيفية تصفية المواعيد بكفاءة باستخدام Aspose.Email لـ .NET وExchange Web Service (EWS) من خلال هذا الدليل خطوة بخطوة."
+"title": "تصفية المواعيد الرئيسية في EWS باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/calendar-appointments/master-appointment-filtering-aspose-email-ews/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Appointment Filtering in Exchange Web Service (EWS) Using Aspose.Email for .NET
+# إتقان تصفية المواعيد في خدمة Exchange Web Service (EWS) باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Managing a growing list of appointments can become overwhelming, especially when dealing with large volumes of data and complex scheduling scenarios. Whether you're integrating email services or automating calendar management tasks, efficiently filtering appointments is crucial for productivity. This tutorial will guide you through using Aspose.Email for .NET to connect to the Exchange Web Service (EWS) and filter appointments based on date ranges and recurrence patterns.
+قد تُصبح إدارة قائمة المواعيد المتزايدة مُرهقة، خاصةً عند التعامل مع كميات هائلة من البيانات وتعقيدات جدولة المواعيد. سواءً كنت تُدمج خدمات البريد الإلكتروني أو تُؤتمت مهام إدارة التقويم، فإن تصفية المواعيد بكفاءة أمرٌ بالغ الأهمية لزيادة الإنتاجية. سيُرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ .NET للاتصال بخدمة Exchange Web Service (EWS) وتصفية المواعيد بناءً على نطاقات التواريخ وأنماط التكرار.
 
 **ما سوف تتعلمه:**
-- How to establish a connection with EWS using Aspose.Email.
-- Techniques for filtering appointments by specific date ranges.
-- Methods to identify non-recurring appointments.
-- Practical applications of these techniques in real-world scenarios.
+- كيفية إنشاء اتصال مع EWS باستخدام Aspose.Email.
+- تقنيات لتصفية المواعيد حسب نطاقات تاريخية محددة.
+- طرق التعرف على المواعيد غير المتكررة.
+- التطبيقات العملية لهذه التقنيات في سيناريوهات العالم الحقيقي.
 
-Transitioning from understanding the problem to implementing solutions is seamless, but before diving into coding, let's review some prerequisites to ensure you're set up for success.
+يعد الانتقال من فهم المشكلة إلى تنفيذ الحلول أمرًا سلسًا، ولكن قبل الغوص في البرمجة، دعنا نراجع بعض المتطلبات الأساسية لضمان إعدادك للنجاح.
 
 ## المتطلبات الأساسية
 
-Before getting started with Aspose.Email for .NET, make sure you have the following:
+قبل البدء في استخدام Aspose.Email لـ .NET، تأكد من توفر ما يلي:
 
-- **المكتبات والإصدارات:** Ensure that you have Aspose.Email for .NET installed. The latest version is recommended.
-- **إعداد البيئة:** This tutorial assumes a basic understanding of C# and familiarity with Visual Studio or any IDE supporting .NET development.
-- **المتطلبات المعرفية:** Familiarity with concepts such as EWS, appointment management, and date manipulation in programming will be beneficial.
+- **المكتبات والإصدارات:** تأكد من تثبيت Aspose.Email لـ .NET. يُنصح باستخدام أحدث إصدار.
+- **إعداد البيئة:** يفترض هذا البرنامج التعليمي فهمًا أساسيًا لـ C# والمعرفة بـ Visual Studio أو أي بيئة تطوير متكاملة تدعم تطوير .NET.
+- **المتطلبات المعرفية:** ستكون المعرفة بمفاهيم مثل EWS وإدارة المواعيد والتلاعب بالتاريخ في البرمجة مفيدة.
 
 ## إعداد Aspose.Email لـ .NET
 
-To start using Aspose.Email for .NET, you'll need to install it in your project. Here are the steps for different package managers:
+لبدء استخدام Aspose.Email لـ .NET، ستحتاج إلى تثبيته في مشروعك. إليك خطوات استخدام مديري الحزم المختلفة:
 
 **.NET CLI**
 ```bash
@@ -48,25 +48,25 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير الحزم NuGet**
-- Open your project, navigate to NuGet Package Manager, and search for "Aspose.Email". Install the latest version.
+- افتح مشروعك، وانتقل إلى مدير حزم NuGet، وابحث عن "Aspose.Email". ثبّت أحدث إصدار.
 
 ### الحصول على الترخيص
 
-To fully utilize Aspose.Email's capabilities, you can start with a free trial. This allows you to explore all features without any limitations. For extended use, consider purchasing a license or requesting a temporary license for evaluation purposes from [شراء Aspose](https://purchase.aspose.com/buy).
+للاستفادة الكاملة من إمكانيات Aspose.Email، يمكنك البدء بفترة تجريبية مجانية. تتيح لك هذه الفترة استكشاف جميع الميزات دون أي قيود. للاستخدام الممتد، يمكنك شراء ترخيص أو طلب ترخيص مؤقت لأغراض التقييم من [شراء Aspose](https://purchase.aspose.com/buy).
 
 ## دليل التنفيذ
 
-This guide is divided into logical sections by feature. Each section provides an overview and detailed steps with code snippets.
+ينقسم هذا الدليل إلى أقسام منطقية حسب الميزات. يقدم كل قسم نظرة عامة وخطوات مفصلة مع مقتطفات من التعليمات البرمجية.
 
-### Connect to Exchange Web Service (EWS)
+### الاتصال بخدمة Exchange Web Service (EWS)
 
-**ملخص:** Establishing a connection to EWS enables access to your mailbox and calendar data, setting the stage for appointment management tasks.
+**ملخص:** يتيح لك إنشاء اتصال بخدمة EWS الوصول إلى صندوق البريد الخاص بك وبيانات التقويم، مما يمهد الطريق لمهام إدارة المواعيد.
 
-1. **Initialize the IEWSClient:**
-   إنشاء مثيل لـ `IEWSClient` using credentials that provide access to your EWS endpoint.
+1. **تهيئة IEWSClient:**
+   إنشاء مثيل لـ `IEWSClient` استخدام بيانات الاعتماد التي توفر الوصول إلى نقطة نهاية EWS الخاصة بك.
    
    ```csharp
-   // Create and configure an IEWSClient instance with credentials.
+   // إنشاء وتكوين مثيل IEWSClient باستخدام بيانات الاعتماد.
    using Aspose.Email.Clients.Exchange;
    using Aspose.Email.Clients.Exchange.WebService;
 
@@ -78,12 +78,12 @@ This guide is divided into logical sections by feature. Each section provides an
    );
    ```
 
-### Filter Appointments by Date Range Using EWS
+### تصفية المواعيد حسب نطاق التاريخ باستخدام EWS
 
-**ملخص:** Filtering appointments by date range helps you focus on specific periods, improving data management and analysis.
+**ملخص:** تساعدك تصفية المواعيد حسب نطاق التاريخ على التركيز على فترات محددة، مما يؤدي إلى تحسين إدارة البيانات وتحليلها.
 
-1. **Define Start and End Dates:**
-   Specify the date range for filtering.
+1. **تحديد تواريخ البدء والانتهاء:**
+   حدد نطاق التاريخ للتصفية.
    
    ```csharp
    using System;
@@ -92,8 +92,8 @@ This guide is divided into logical sections by feature. Each section provides an
    DateTime endTime = new DateTime(2017, 10, 10);
    ```
 
-2. **Build a Query to Filter Appointments:**
-   يستخدم `ExchangeQueryBuilder` to construct your query based on the specified date range.
+2. **إنشاء استعلام لتصفية المواعيد:**
+   يستخدم `ExchangeQueryBuilder` لإنشاء استعلامك استنادًا إلى نطاق التاريخ المحدد.
    
    ```csharp
    using Aspose.Email.Tools.Search;
@@ -104,19 +104,19 @@ This guide is divided into logical sections by feature. Each section provides an
    MailQuery query = builder.GetQuery();
    ```
 
-3. **Retrieve Filtered Appointments:**
-   Execute the query to obtain appointments within your specified date range.
+3. **استرجاع المواعيد المفلترة:**
+   قم بتنفيذ الاستعلام للحصول على المواعيد ضمن نطاق التاريخ المحدد.
    
    ```csharp
    Appointment[] appointmentsByDate = client.ListAppointments(query);
    ```
 
-### Filter Appointments by Recurrence Using EWS
+### تصفية المواعيد حسب التكرار باستخدام EWS
 
-**ملخص:** Identifying non-recurring appointments can be essential for tasks that require one-time scheduling.
+**ملخص:** قد يكون تحديد المواعيد غير المتكررة أمرًا ضروريًا للمهام التي تتطلب جدولة لمرة واحدة.
 
-1. **Build a Query to Identify Non-Recurring Appointments:**
-   يستخدم `ExchangeQueryBuilder` to filter out recurring appointments.
+1. **إنشاء استعلام لتحديد المواعيد غير المتكررة:**
+   يستخدم `ExchangeQueryBuilder` لتصفية المواعيد المتكررة.
    
    ```csharp
    ExchangeQueryBuilder builderRecurrence = new ExchangeQueryBuilder();
@@ -124,8 +124,8 @@ This guide is divided into logical sections by feature. Each section provides an
    MailQuery queryNonRecurring = builderRecurrence.GetQuery();
    ```
 
-2. **Retrieve Non-Recurring Appointments:**
-   Execute the query to get a list of appointments that are not recurring.
+2. **استرجاع المواعيد غير المتكررة:**
+   قم بتنفيذ الاستعلام للحصول على قائمة بالمواعيد غير المتكررة.
    
    ```csharp
    Appointment[] appointmentsByRecurrence = client.ListAppointments(queryNonRecurring);
@@ -133,40 +133,40 @@ This guide is divided into logical sections by feature. Each section provides an
 
 ## التطبيقات العملية
 
-Understanding how these techniques can be applied in real-world scenarios enhances their value:
+إن فهم كيفية تطبيق هذه التقنيات في السيناريوهات الواقعية يعزز قيمتها:
 
-1. **Automated Calendar Management:** Integrate appointment filtering into your calendar management tools to automate scheduling tasks.
-2. **Business Reporting and Analytics:** Use filtered data for generating reports on meeting frequencies, durations, or attendance patterns.
-3. **التكامل مع أنظمة إدارة علاقات العملاء:** Enhance customer relationship management by syncing non-recurring appointments directly from EWS.
+1. **إدارة التقويم الآلية:** دمج تصفية المواعيد في أدوات إدارة التقويم لديك لأتمتة مهام الجدولة.
+2. **التقارير والتحليلات التجارية:** استخدم البيانات المفلترة لإنشاء تقارير حول تواتر الاجتماعات أو مدتها أو أنماط الحضور.
+3. **التكامل مع أنظمة إدارة علاقات العملاء:** قم بتعزيز إدارة علاقات العملاء من خلال مزامنة المواعيد غير المتكررة مباشرة من EWS.
 
 ## اعتبارات الأداء
 
-When working with large datasets in .NET, it's crucial to consider performance:
+عند العمل مع مجموعات بيانات كبيرة في .NET، من المهم مراعاة الأداء:
 
-- **تحسين الاستعلامات:** Ensure your queries are as specific as possible to reduce data retrieval times.
-- **إدارة الذاكرة:** Dispose of objects and manage resources efficiently to avoid memory leaks.
-- **معالجة الدفعات:** Process appointments in batches if dealing with extensive lists.
+- **تحسين الاستعلامات:** تأكد من أن استفساراتك محددة قدر الإمكان لتقليل أوقات استرجاع البيانات.
+- **إدارة الذاكرة:** تخلص من الكائنات وقم بإدارة الموارد بكفاءة لتجنب تسرب الذاكرة.
+- **معالجة الدفعات:** قم بمعالجة المواعيد على دفعات إذا كنت تتعامل مع قوائم طويلة.
 
 ## خاتمة
 
-You've now learned how to connect to EWS using Aspose.Email for .NET, filter appointments by date range, and identify non-recurring events. These skills are fundamental for managing appointment data effectively. As you integrate these techniques into your projects, consider exploring additional features offered by Aspose.Email to further enhance your application's capabilities.
+لقد تعلمتَ الآن كيفية الاتصال بخدمات EWS باستخدام Aspose.Email لـ .NET، وتصفية المواعيد حسب نطاق التاريخ، وتحديد الأحداث غير المتكررة. هذه المهارات أساسية لإدارة بيانات المواعيد بفعالية. مع دمج هذه التقنيات في مشاريعك، فكّر في استكشاف الميزات الإضافية التي يقدمها Aspose.Email لتحسين إمكانيات تطبيقك بشكل أكبر.
 
 ## قسم الأسئلة الشائعة
 
-1. **How do I manage different time zones when filtering appointments?**
-   Ensure that the `DateTime` objects used in queries account for time zone differences by using UTC formats or converting local times accordingly.
+1. **كيف يمكنني إدارة المناطق الزمنية المختلفة عند تصفية المواعيد؟**
+   تأكد من أن `DateTime` تأخذ الكائنات المستخدمة في الاستعلامات في الاعتبار اختلافات المناطق الزمنية باستخدام تنسيقات UTC أو تحويل الأوقات المحلية وفقًا لذلك.
 
-2. **What should I do if I encounter authentication errors with EWS?**
-   Double-check your credentials and ensure they have the necessary permissions to access the mailbox and calendar data.
+2. **ماذا يجب أن أفعل إذا واجهت أخطاء المصادقة مع EWS؟**
+   تأكد من صحة بيانات الاعتماد الخاصة بك وتأكد من حصولك على الأذونات اللازمة للوصول إلى بيانات صندوق البريد والتقويم.
 
-3. **Can Aspose.Email be used with other email services besides Exchange?**
-   While primarily designed for EWS, check [وثائق Aspose](https://reference.aspose.com/email/net/) for support on other services.
+3. **هل يمكن استخدام Aspose.Email مع خدمات البريد الإلكتروني الأخرى بالإضافة إلى Exchange؟**
+   على الرغم من أنه تم تصميمه في المقام الأول لنظام الإنذار المبكر (EWS)، تحقق [وثائق Aspose](https://reference.aspose.com/email/net/) للحصول على الدعم للخدمات الأخرى.
 
-4. **How do I handle large volumes of appointment data efficiently?**
-   Implement pagination or batch processing techniques to manage resources and improve performance.
+4. **كيف أتعامل مع كميات كبيرة من بيانات المواعيد بكفاءة؟**
+   تنفيذ تقنيات الترقيم أو المعالجة الدفعية لإدارة الموارد وتحسين الأداء.
 
-5. **Is there a way to test the filtering without affecting live data?**
-   Consider using a development mailbox with sample appointments for testing purposes.
+5. **هل هناك طريقة لاختبار التصفية دون التأثير على البيانات المباشرة؟**
+   فكر في استخدام صندوق بريد تطويري يحتوي على مواعيد عينة لأغراض الاختبار.
 
 ## موارد
 
@@ -177,7 +177,7 @@ You've now learned how to connect to EWS using Aspose.Email for .NET, filter app
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - [منتدى الدعم](https://forum.aspose.com/c/email/10)
 
-With these resources and knowledge, you're well-equipped to implement efficient appointment filtering solutions using Aspose.Email for .NET. Happy coding!
+بفضل هذه الموارد والمعرفة، ستكون جاهزًا تمامًا لتطبيق حلول فعّالة لتصفية المواعيد باستخدام Aspose.Email لـ .NET. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

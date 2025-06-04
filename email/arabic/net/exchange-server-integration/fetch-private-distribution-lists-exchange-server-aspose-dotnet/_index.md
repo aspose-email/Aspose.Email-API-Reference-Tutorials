@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently fetch private distribution lists and their members from an Exchange server using Aspose.Email for .NET. Streamline email management in your applications with this step-by-step guide."
-"title": "How to Fetch Private Distribution Lists from Exchange Server Using Aspose.Email for .NET&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية جلب قوائم التوزيع الخاصة وأعضائها بكفاءة من خادم Exchange باستخدام Aspose.Email لـ .NET. سهّل إدارة البريد الإلكتروني في تطبيقاتك من خلال هذا الدليل المفصل."
+"title": "كيفية جلب قوائم التوزيع الخاصة من خادم Exchange باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/exchange-server-integration/fetch-private-distribution-lists-exchange-server-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Fetch Private Distribution Lists from Exchange Server Using Aspose.Email for .NET: A Comprehensive Guide
+# كيفية جلب قوائم التوزيع الخاصة من خادم Exchange باستخدام Aspose.Email لـ .NET: دليل شامل
 
 ## مقدمة
-Managing email distribution lists can be challenging, especially when dealing with multiple groups and members across different platforms. This tutorial simplifies the process by demonstrating how to fetch private distribution lists and their members from an Exchange server using Aspose.Email for .NET. By integrating this functionality into your applications, you streamline access to vital contact information and enhance productivity.
+قد تكون إدارة قوائم توزيع البريد الإلكتروني صعبة، خاصةً عند التعامل مع مجموعات وأعضاء متعددين عبر منصات مختلفة. يُبسّط هذا البرنامج التعليمي العملية من خلال توضيح كيفية جلب قوائم التوزيع الخاصة وأعضائها من خادم Exchange باستخدام Aspose.Email لـ .NET. بدمج هذه الوظيفة في تطبيقاتك، يمكنك تبسيط الوصول إلى معلومات الاتصال المهمة وتعزيز الإنتاجية.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email لـ .NET
-- Fetching distribution lists from an Exchange server
-- Accessing and displaying members of each list
+- جلب قوائم التوزيع من خادم Exchange
+- الوصول إلى أعضاء كل قائمة وعرضهم
 
-Before diving in, ensure you have the necessary prerequisites covered. 
+قبل الغوص في الأمر، تأكد من أنك قد غطيت المتطلبات الأساسية اللازمة. 
 
 ## المتطلبات الأساسية
-To successfully follow this tutorial, make sure you have:
+لمتابعة هذا البرنامج التعليمي بنجاح، تأكد من أن لديك:
 
-- The Aspose.Email library installed on your development environment.
-- Basic familiarity with .NET programming languages.
-- An active Microsoft Exchange server where you can obtain credentials for accessing distribution lists.
+- تم تثبيت مكتبة Aspose.Email على بيئة التطوير الخاصة بك.
+- المعرفة الأساسية بلغات البرمجة .NET.
+- خادم Microsoft Exchange نشط حيث يمكنك الحصول على بيانات الاعتماد للوصول إلى قوائم التوزيع.
 
 ## إعداد Aspose.Email لـ .NET
 
 ### تثبيت
-Getting started is straightforward. You can install Aspose.Email using various package managers:
+البدء سهل. يمكنك تثبيت Aspose.Email باستخدام عدة مديري حزم:
 
 **.NET CLI**
 ```bash
@@ -46,25 +46,25 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير الحزم NuGet**
-- Simply search for "Aspose.Email" and install the latest version.
+- ابحث ببساطة عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-Before you start using Aspose.Email, obtain a license. You can:
-- Sign up for a free trial to test features.
-- Request a temporary license for extended evaluation.
-- Purchase a subscription if it meets your needs long-term.
+قبل البدء باستخدام Aspose.Email، احصل على ترخيص. يمكنك:
+- قم بالتسجيل للحصول على نسخة تجريبية مجانية لاختبار الميزات.
+- اطلب ترخيصًا مؤقتًا للتقييم الموسع.
+- قم بشراء اشتراك إذا كان يلبي احتياجاتك على المدى الطويل.
 
-Once licensed, initialize the library in your project to gain full access to its capabilities.
+بمجرد الترخيص، قم بتهيئة المكتبة في مشروعك للحصول على إمكانية الوصول الكامل إلى إمكانياتها.
 
 ## دليل التنفيذ
-In this section, we'll guide you through fetching private distribution lists from an Exchange server using Aspose.Email. 
+في هذا القسم، سنرشدك خلال عملية جلب قوائم التوزيع الخاصة من خادم Exchange باستخدام Aspose.Email. 
 
 ### الاتصال بخادم Exchange
 **ملخص:**
-Establish a connection with the Exchange server using EWS (Exchange Web Services) client credentials.
+إنشاء اتصال مع خادم Exchange باستخدام بيانات اعتماد عميل EWS (خدمات الويب Exchange).
 
 **الخطوة 1: تهيئة عميل EWS**
-First, create an instance of `IEWSClient` by providing your server URL and authentication details:
+أولاً، قم بإنشاء مثيل لـ `IEWSClient` من خلال تقديم عنوان URL الخاص بخادمك وتفاصيل المصادقة:
 
 ```csharp
 IEWSClient client = EWSClient.GetEwsClient("https://outlook.office365.com/ews/exchange.asmx\

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to streamline your task management in Microsoft Outlook with Aspose.Email for .NET. This comprehensive guide covers everything from setup to saving tasks programmatically."
-"title": "How to Create and Save Outlook Tasks Using Aspose.Email for .NET&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية تبسيط إدارة مهامك في Microsoft Outlook باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل الشامل كل شيء، من الإعداد إلى حفظ المهام برمجيًا."
+"title": "كيفية إنشاء مهام Outlook وحفظها باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/calendar-appointments/create-save-outlook-tasks-aspose-email-net/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create and Save Outlook Tasks Using Aspose.Email for .NET
+# كيفية إنشاء مهام Outlook وحفظها باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Are you looking to enhance your task management process by integrating custom solutions into Microsoft Outlook? Whether you're automating the creation of tasks or saving them directly from a .NET application, Aspose.Email for .NET offers powerful tools that can transform how you handle Outlook tasks. This guide will walk you through creating and saving an Outlook task using the Aspose.Email library in C#. 
+هل ترغب في تحسين عملية إدارة مهامك من خلال دمج حلول مخصصة في Microsoft Outlook؟ سواءً كنت تُؤتمت إنشاء المهام أو تحفظها مباشرةً من تطبيق .NET، يُقدم Aspose.Email for .NET أدوات فعّالة تُحسّن طريقة تعاملك مع مهام Outlook. سيُرشدك هذا الدليل إلى كيفية إنشاء مهمة Outlook وحفظها باستخدام مكتبة Aspose.Email بلغة C#. 
 
 **ما سوف تتعلمه:**
 - كيفية إعداد Aspose.Email لـ .NET
-- The process of creating a MapiTask object with various properties
-- Steps to save the task as an MSG file
+- عملية إنشاء كائن MapiTask بخصائص مختلفة
+- خطوات حفظ المهمة كملف MSG
 
-Let's dive into how you can leverage these functionalities effectively!
+دعونا نتعرف على كيفية الاستفادة من هذه الوظائف بشكل فعال!
 
 ## المتطلبات الأساسية
-Before we begin, ensure that you have:
-- **المكتبات والتبعيات:** You'll need Aspose.Email for .NET. Make sure your environment supports .NET Framework or .NET Core.
-- **إعداد البيئة:** A suitable development environment such as Visual Studio installed on your machine.
-- **Knowledge Base:** Basic understanding of C# programming and familiarity with working with email clients programmatically.
+قبل أن نبدأ، تأكد من أن لديك:
+- **المكتبات والتبعيات:** ستحتاج إلى Aspose.Email لـ .NET. تأكد من أن بيئتك تدعم .NET Framework أو .NET Core.
+- **إعداد البيئة:** بيئة تطوير مناسبة مثل Visual Studio مثبتة على جهازك.
+- **قاعدة المعرفة:** فهم أساسي لبرمجة C# والتعرف على كيفية العمل مع عملاء البريد الإلكتروني برمجيًا.
 
 ## إعداد Aspose.Email لـ .NET
-To get started, you'll need to install the Aspose.Email library in your project. You can do this using several methods:
+للبدء، ستحتاج إلى تثبيت مكتبة Aspose.Email في مشروعك. يمكنك القيام بذلك باستخدام عدة طرق:
 
 **.NET CLI**
 ```bash
@@ -47,10 +47,10 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-To use Aspose.Email, you can start with a free trial or request a temporary license. For long-term usage, consider purchasing a subscription. Visit their [صفحة الشراء](https://purchase.aspose.com/buy) to explore options.
+لاستخدام Aspose.Email، يمكنك البدء بفترة تجريبية مجانية أو طلب ترخيص مؤقت. للاستخدام طويل الأمد، فكّر في شراء اشتراك. تفضل بزيارة موقعهم الإلكتروني. [صفحة الشراء](https://purchase.aspose.com/buy) لاستكشاف الخيارات.
 
 ### التهيئة الأساسية
-Once installed, initialize the library in your codebase:
+بمجرد التثبيت، قم بتهيئة المكتبة في قاعدة التعليمات البرمجية الخاصة بك:
 
 ```csharp
 using Aspose.Email.Storage.Pst;
@@ -58,41 +58,41 @@ using Aspose.Email.Mapi;
 ```
 
 ## دليل التنفيذ
-Let's walk through creating and saving an Outlook task step-by-step.
+دعنا نستعرض عملية إنشاء مهمة Outlook وحفظها خطوة بخطوة.
 
-### Creating a MapiTask Object
-أ `MapiTask` object represents an Outlook task. Start by initializing it with essential properties:
+### إنشاء كائن MapiTask
+أ `MapiTask` يمثل الكائن مهمة Outlook. ابدأ بتهيئته بالخصائص الأساسية:
 
-#### Step 1: Define the Task
+#### الخطوة 1: تحديد المهمة
 ```csharp
 MapiTask task = new MapiTask(
-    "To Do", 
+    "المطلوب فعله", 
     "Just click and type to add new task", 
     DateTime.Now, 
     DateTime.Now.AddDays(3)
 );
 ```
-- **"To Do"** is the subject.
-- The description provides additional information.
-- Start date and due date are set to today's date and three days from now.
+- **"To Do"** هو الموضوع.
+- الوصف يوفر معلومات إضافية.
+- تم تعيين تاريخ البدء وتاريخ الاستحقاق إلى تاريخ اليوم وثلاثة أيام من الآن.
 
-#### Step 2: Set Progress and Effort
+#### الخطوة 2: تحديد التقدم والجهد
 ```csharp
 task.PercentComplete = 20;
-task.EstimatedEffort = 2000; // In minutes
+task.EstimatedEffort = 2000; // في دقائق
 ```
-- Define the percentage of task completion.
-- Set estimated effort in minutes to track time spent.
+- تحديد نسبة إنجاز المهمة.
+- قم بتعيين الجهد المقدر بالدقائق لتتبع الوقت المستغرق.
 
-#### Step 3: Task History and Updates
+#### الخطوة 3: سجل المهام والتحديثات
 ```csharp
 task.History = MapiTaskHistory.Assigned;
 task.LastUpdate = DateTime.Now;
 ```
-- Record when the task was last assigned or updated for better tracking.
+- سجل متى تم تعيين المهمة أو تحديثها آخر مرة لضمان تتبعها بشكل أفضل.
 
-### Configuring Ownership and Companies
-Assign ownership details and associated companies:
+### تكوين الملكية والشركات
+تعيين تفاصيل الملكية والشركات المرتبطة:
 
 ```csharp
 task.Users.Owner = "Darius";
@@ -103,8 +103,8 @@ task.Users.Ownership = MapiTaskOwnership.AssignersCopy;
 task.Companies = new string[] { "company1", "company2", "company3" };
 ```
 
-### Categorizing and Adding Metadata
-Use categories for organization:
+### تصنيف البيانات الوصفية وإضافتها
+استخدم الفئات للتنظيم:
 
 ```csharp
 task.Categories = new string[] { "category1", "category2", "category3" };
@@ -113,65 +113,65 @@ task.Billing = "Test billing information";
 task.Users.Delegator = "Test Delegator";
 ```
 
-### Finalizing Task Properties
-Set sensitivity and status:
+### الانتهاء من خصائص المهمة
+ضبط الحساسية والحالة:
 
 ```csharp
 task.Sensitivity = MapiSensitivity.Personal;
 task.Status = MapiTaskStatus.Complete;
 
-// Adjust estimated effort if needed
-task.EstimatedEffort = 5; // In minutes
+// تعديل الجهد المقدر إذا لزم الأمر
+task.EstimatedEffort = 5; // في دقائق
 ```
 
-### Saving the Task as MSG File
-Finally, save your task:
+### حفظ المهمة كملف MSG
+وأخيرًا، احفظ مهمتك:
 
 ```csharp
 string outputPath = "@YOUR_OUTPUT_DIRECTORY/MapiTask.msg";
 task.Save(outputPath, TaskSaveFormat.Msg);
 ```
 
-Ensure to replace `@YOUR_OUTPUT_DIRECTORY` with the actual directory path where you want to save the file.
+تأكد من الاستبدال `@YOUR_OUTPUT_DIRECTORY` مع مسار الدليل الفعلي الذي تريد حفظ الملف فيه.
 
 ## التطبيقات العملية
-Here are some real-world scenarios where creating and saving Outlook tasks programmatically can be beneficial:
-1. **Automated Workflow Integration:** Automatically create tasks for new client projects.
-2. **Team Management:** Assign tasks to team members based on project requirements.
-3. **Time Tracking:** Integrate with time management systems to track effort and completion.
+فيما يلي بعض السيناريوهات الواقعية حيث قد يكون إنشاء مهام Outlook وحفظها برمجيًا مفيدًا:
+1. **تكامل سير العمل الآلي:** إنشاء مهام تلقائيًا لمشاريع العملاء الجدد.
+2. **إدارة الفريق:** تعيين المهام لأعضاء الفريق بناءً على متطلبات المشروع.
+3. **تتبع الوقت:** التكامل مع أنظمة إدارة الوقت لتتبع الجهد والإكمال.
 
 ## اعتبارات الأداء
-When working with Aspose.Email, consider these tips:
-- Optimize memory usage by disposing of objects no longer needed.
-- Use asynchronous methods where possible for better performance.
-- Follow .NET best practices for resource management to prevent leaks.
+عند العمل مع Aspose.Email، ضع في اعتبارك النصائح التالية:
+- تحسين استخدام الذاكرة عن طريق التخلص من الكائنات التي لم تعد هناك حاجة إليها.
+- استخدم الطرق غير المتزامنة عندما يكون ذلك ممكنًا لتحقيق أداء أفضل.
+- اتبع أفضل ممارسات .NET لإدارة الموارد لمنع التسريبات.
 
 ## خاتمة
-In this guide, we've explored how to create and save Outlook tasks using Aspose.Email for .NET. By integrating these capabilities into your applications, you can automate task management effectively. Consider exploring further functionalities like email integration or calendar scheduling as your next steps.
+في هذا الدليل، استكشفنا كيفية إنشاء مهام Outlook وحفظها باستخدام Aspose.Email لـ .NET. بدمج هذه الإمكانيات في تطبيقاتك، يمكنك أتمتة إدارة المهام بفعالية. فكّر في استكشاف وظائف أخرى، مثل دمج البريد الإلكتروني أو جدولة التقويم، كخطواتك التالية.
 
-**الدعوة إلى العمل:** Try implementing the solution in your project today and experience streamlined task automation!
+**الدعوة إلى العمل:** حاول تنفيذ الحل في مشروعك اليوم واستمتع بأتمتة المهام المبسطة!
 
 ## قسم الأسئلة الشائعة
 1. **كيف أبدأ باستخدام Aspose.Email لـ .NET؟**
-   - Install the library via NuGet, initialize it in your project, and explore their [التوثيق](https://reference.aspose.com/email/net/).
+   - قم بتثبيت المكتبة عبر NuGet، وقم بتهيئتها في مشروعك، واستكشفها [التوثيق](https://reference.aspose.com/email/net/).
 2. **ما هي خيارات الترخيص لـ Aspose.Email؟**
-   - Options range from free trials to temporary licenses and subscriptions. Visit the [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
-3. **Can I integrate Aspose.Email with other systems?**
-   - Yes, it offers extensive support for integrating with various email clients and systems.
-4. **How do I handle errors when saving tasks?**
-   - Ensure paths are correct and check file permissions. Refer to the [منتدى الدعم](https://forum.aspose.com/c/email/10) للحصول على المساعدة.
-5. **What should I consider for optimal performance?**
-   - Manage resources efficiently, use asynchronous methods, and follow .NET memory management practices.
+   - تتراوح الخيارات بين التجارب المجانية والتراخيص المؤقتة والاشتراكات. تفضل بزيارة [صفحة الشراء](https://purchase.aspose.com/buy) لمزيد من التفاصيل.
+3. **هل يمكنني دمج Aspose.Email مع أنظمة أخرى؟**
+   - نعم، فهو يوفر دعمًا واسع النطاق للتكامل مع مختلف عملاء البريد الإلكتروني والأنظمة.
+4. **كيف أتعامل مع الأخطاء عند حفظ المهام؟**
+   - تأكد من صحة المسارات وتحقق من أذونات الملفات. راجع [منتدى الدعم](https://forum.aspose.com/c/email/10) للحصول على المساعدة.
+5. **ما الذي يجب أن أفكر فيه لتحقيق الأداء الأمثل؟**
+   - إدارة الموارد بكفاءة، واستخدام الأساليب غير المتزامنة، واتباع ممارسات إدارة ذاكرة .NET.
 
 ## موارد
 - **التوثيق:** [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/)
 - **تحميل:** [أحدث إصدار](https://releases.aspose.com/email/net/)
 - **شراء:** [شراء ترخيص](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية:** [Get Started Free](https://releases.aspose.com/email/net/)
+- **نسخة تجريبية مجانية:** [ابدأ مجانًا](https://releases.aspose.com/email/net/)
 - **رخصة مؤقتة:** [اطلب الآن](https://purchase.aspose.com/temporary-license/)
 - **يدعم:** [منتدى أسبوزي](https://forum.aspose.com/c/email/10)
 
-With these resources, you're all set to harness the power of Aspose.Email for .NET in your task management workflows!
+بفضل هذه الموارد، ستكون جاهزًا تمامًا للاستفادة من قوة Aspose.Email لـ .NET في سير عمل إدارة المهام لديك!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

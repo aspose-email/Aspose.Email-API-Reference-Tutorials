@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn to filter emails using Aspose.Email and EWS in Java. Explore techniques for filtering by date, sender, subject, and more to streamline your mailbox."
-"title": "Master Email Filtering with Aspose.Email Java & EWS&#58; A Complete Guide for Exchange Server Integration"
+"description": "تعلم كيفية تصفية رسائل البريد الإلكتروني باستخدام Aspose.Email وEWS في جافا. استكشف تقنيات التصفية حسب التاريخ والمُرسِل والموضوع وغيرها لتبسيط صندوق بريدك."
+"title": "إتقان تصفية البريد الإلكتروني باستخدام Aspose.Email Java وEWS - دليل كامل لتكامل Exchange Server"
 "url": "/ar/java/exchange-server-integration/aspose-email-java-ews-filtering-guide/"
 "weight": 1
 ---
@@ -11,35 +11,35 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Email Filtering with Aspose.Email Java & EWS: A Complete Guide
+# إتقان تصفية البريد الإلكتروني باستخدام Aspose.Email Java وEWS: دليل شامل
 
 ## مقدمة
 
-In today's fast-paced digital environment, effective email management is essential for both personal productivity and business efficiency. Whether you're an individual seeking inbox organization or a company aiming to streamline communication processes, mastering email filtering can be transformative. This comprehensive guide will walk you through using Aspose.Email Java with Exchange Web Services (EWS) to implement various email filtering techniques. You'll learn how to keep your mailbox organized, responsive, and efficient.
+في بيئة اليوم الرقمية سريعة التطور، تُعدّ إدارة البريد الإلكتروني الفعّالة أمرًا أساسيًا لتحقيق الإنتاجية الشخصية وكفاءة الأعمال. سواء كنت فردًا يسعى لتنظيم صندوق الوارد أو شركة تسعى لتبسيط عمليات التواصل، فإن إتقان تصفية البريد الإلكتروني يُمكن أن يُحدث نقلة نوعية. سيُرشدك هذا الدليل الشامل إلى كيفية استخدام Aspose.Email Java مع خدمات Exchange Web Services (EWS) لتطبيق تقنيات تصفية البريد الإلكتروني المختلفة. ستتعلم كيفية الحفاظ على صندوق بريدك منظمًا وسريع الاستجابة وفعالًا.
 
 ### ما سوف تتعلمه
-- Techniques for filtering messages using EWS in Java.
-- Filtering emails based on criteria such as date, sender, subject, etc.
-- Implementing paging support for handling large mailboxes.
-- Practical applications of these filtering methods in real-world scenarios.
-- Performance considerations and best practices with Aspose.Email Java.
+- تقنيات تصفية الرسائل باستخدام EWS في Java.
+- تصفية رسائل البريد الإلكتروني استنادًا إلى معايير مثل التاريخ والمرسل والموضوع وما إلى ذلك.
+- تنفيذ دعم الترحيل للتعامل مع صناديق البريد الكبيرة.
+- التطبيقات العملية لهذه الطرق التصفية في سيناريوهات العالم الحقيقي.
+- اعتبارات الأداء وأفضل الممارسات مع Aspose.Email Java.
 
-By the end of this guide, you'll be equipped to implement effective email filtering solutions tailored to your specific needs. Let's dive in!
+بنهاية هذا الدليل، ستكون مُجهّزًا لتطبيق حلول فعّالة لتصفية البريد الإلكتروني مُصمّمة خصيصًا لتلبية احتياجاتك. هيا بنا!
 
 ## المتطلبات الأساسية
 
-Before getting started with message filtering using Aspose.Email Java, ensure you have:
+قبل البدء في تصفية الرسائل باستخدام Aspose.Email Java، تأكد من أن لديك:
 
-- **المكتبات المطلوبة**: Include the Aspose.Email library in your project.
-- **إعداد البيئة**: A ready development environment for Java applications is necessary.
-- **متطلبات المعرفة**: Familiarity with Java programming and email protocols will be advantageous.
+- **المكتبات المطلوبة**:قم بتضمين مكتبة Aspose.Email في مشروعك.
+- **إعداد البيئة**:من الضروري وجود بيئة تطوير جاهزة لتطبيقات Java.
+- **متطلبات المعرفة**:ستكون المعرفة ببرمجة Java وبروتوكولات البريد الإلكتروني مفيدة.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To use Aspose.Email for filtering emails, follow these setup instructions:
+لاستخدام Aspose.Email لتصفية رسائل البريد الإلكتروني، اتبع تعليمات الإعداد التالية:
 
-### Maven Installation
-Add the following dependency to your `pom.xml` file:
+### تثبيت Maven
+أضف التبعية التالية إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -51,19 +51,19 @@ Add the following dependency to your `pom.xml` file:
 
 ### الحصول على الترخيص
 - **نسخة تجريبية مجانية**:ابدأ بالتجربة المجانية لاستكشاف إمكانيات Aspose.Email.
-- **رخصة مؤقتة**: Obtain a temporary license for extended evaluation.
-- **شراء**: Consider purchasing a full license if the tool meets your needs.
+- **رخصة مؤقتة**:الحصول على ترخيص مؤقت للتقييم الموسع.
+- **شراء**:فكر في شراء ترخيص كامل إذا كانت الأداة تلبي احتياجاتك.
 
-Initialize and set up Aspose.Email by importing necessary packages and establishing a connection to your email server using EWS credentials. This step is crucial for accessing mailbox data programmatically.
+قم بتشغيل Aspose.Email وإعداده عن طريق استيراد الحزم اللازمة وإنشاء اتصال بخادم البريد الإلكتروني الخاص بك باستخدام بيانات اعتماد EWS. هذه الخطوة أساسية للوصول إلى بيانات صندوق البريد برمجيًا.
 
 ## دليل التنفيذ
 
-### Filter Messages Using EWS
+### تصفية الرسائل باستخدام EWS
 
-This section demonstrates how to filter messages based on specific criteria using the EWS API in Java:
+يوضح هذا القسم كيفية تصفية الرسائل استنادًا إلى معايير محددة باستخدام واجهة برمجة تطبيقات EWS في Java:
 
 #### ملخص
-Filtering allows you to retrieve only emails that meet certain conditions, such as a specific subject or date, directly from your mailbox.
+تتيح لك التصفية استرداد رسائل البريد الإلكتروني التي تفي بشروط معينة فقط، مثل موضوع أو تاريخ محدد، مباشرة من صندوق البريد الخاص بك.
 
 ```java
 import com.aspose.email.EWSClient;
@@ -75,27 +75,27 @@ import java.text.SimpleDateFormat;
 
 public class FilterMessagesUsingEWS {
     public static void main(String[] args) throws ParseException {
-        // Establish a connection to the EWS server
-        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
+        // إنشاء اتصال بخادم EWS
+        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "testUser"، "pwd"، "domain");
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         
-        // Build a query for emails containing 'Newsletter' in the subject
+        // إنشاء استعلام لرسائل البريد الإلكتروني التي تحتوي على "النشرة الإخبارية" في الموضوع
         ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
         builder.getSubject().contains("Newsletter");
         builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
         MailQuery query = builder.getQuery();
 
-        // Retrieve messages matching the criteria
+        // استرداد الرسائل المطابقة للمعايير
         ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
     }
 }
 ```
-**توضيح**: The code establishes a connection to your mailbox and creates a query to filter emails with 'Newsletter' in their subject line as of a specific date.
+**توضيح**:ينشئ الكود اتصالاً بصندوق البريد الخاص بك ويقوم بإنشاء استعلام لتصفية رسائل البريد الإلكتروني التي تحتوي على كلمة "نشرة إخبارية" في سطر موضوعها اعتبارًا من تاريخ محدد.
 
-### Filter Messages Based on Today's Date
+### تصفية الرسائل بناءً على تاريخ اليوم
 
-This feature enables you to fetch emails received on the current day:
+تتيح لك هذه الميزة جلب رسائل البريد الإلكتروني المستلمة في اليوم الحالي:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -103,17 +103,17 @@ import java.util.Date;
 
 public class FilterMessagesBasedOnTodayDate {
     public static void main(String[] args) {
-        // Build a query for today's emails
+        // إنشاء استعلام لرسائل البريد الإلكتروني اليوم
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getInternalDate().on(new Date());
     }
 }
 ```
-**توضيح**: This method helps in retrieving only those emails that arrived on the current day, aiding daily email management.
+**توضيح**:تساعد هذه الطريقة في استرجاع رسائل البريد الإلكتروني التي وصلت في اليوم الحالي فقط، مما يساعد في إدارة البريد الإلكتروني اليومي.
 
-### Filter Messages Based on Date Range
+### تصفية الرسائل بناءً على نطاق التاريخ
 
-Retrieve messages within a specific date range using this feature:
+استرداد الرسائل ضمن نطاق تاريخي محدد باستخدام هذه الميزة:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -122,7 +122,7 @@ import java.util.concurrent.TimeUnit;
 
 public class FilterMessagesBasedOnDateRange {
     public static void main(String[] args) {
-        // Build a query for emails received in the last 24 hours
+        // إنشاء استعلام عن رسائل البريد الإلكتروني التي تم استلامها خلال الـ 24 ساعة الماضية
         MailQueryBuilder builder = new MailQueryBuilder();
         Date today = new Date();
         builder.getInternalDate().beforeOrEqual(today);
@@ -130,62 +130,62 @@ public class FilterMessagesBasedOnDateRange {
     }
 }
 ```
-**توضيح**: This feature is particularly useful for checking recent communications, allowing you to focus on the most relevant emails.
+**توضيح**:تعتبر هذه الميزة مفيدة بشكل خاص للتحقق من الاتصالات الأخيرة، مما يسمح لك بالتركيز على رسائل البريد الإلكتروني الأكثر صلة.
 
-### Filter Messages Based on Specific Sender
+### تصفية الرسائل بناءً على مرسل محدد
 
-Filter your inbox to show only emails from a specific sender:
+قم بتصفية صندوق الوارد الخاص بك لإظهار رسائل البريد الإلكتروني من مرسل محدد فقط:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificSender {
     public static void main(String[] args) {
-        // Build a query for emails from 'saqib.razzaq@127.0.0.1'
+        // إنشاء استعلام للرسائل الإلكترونية من 'saqib.razzaq@127.0.0.1'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("saqib.razzaq@127.0.0.1");
     }
 }
 ```
-**توضيح**: This targeted filtering is excellent for focusing on communications from key contacts or departments.
+**توضيح**:يعد هذا التصفية المستهدفة ممتازًا للتركيز على الاتصالات الواردة من جهات الاتصال أو الأقسام الرئيسية.
 
-### Filter Messages Based on Specific Domain
+### تصفية الرسائل بناءً على مجال محدد
 
-Filter emails originating from a specific domain:
+تصفية رسائل البريد الإلكتروني الواردة من نطاق معين:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificDomain {
     public static void main(String[] args) {
-        // Build a query for emails from 'SpecificHost.com'
+        // إنشاء استعلام للرسائل الإلكترونية من 'SpecificHost.com'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
     }
 }
 ```
-**توضيح**: This feature helps in quickly identifying and organizing emails based on their domain origin.
+**توضيح**:تساعد هذه الميزة في التعرف بسرعة على رسائل البريد الإلكتروني وتنظيمها استنادًا إلى أصل مجالها.
 
-### Filter Messages Based on Specific Recipient
+### تصفية الرسائل بناءً على مستلم محدد
 
-Focus your inbox by filtering messages sent to a specific recipient:
+ركز على صندوق الوارد الخاص بك عن طريق تصفية الرسائل المرسلة إلى مستلم محدد:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificRecipient {
     public static void main(String[] args) {
-        // Build a query for emails sent to 'recipient'
+        // إنشاء استعلام للرسائل الإلكترونية المرسلة إلى "المستلم"
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getTo().contains("recipient");
     }
 }
 ```
-**توضيح**: This can be particularly useful when you're looking to track communications addressed specifically to yourself or another department.
+**توضيح**:يمكن أن يكون هذا مفيدًا بشكل خاص عندما تريد تتبع الاتصالات الموجهة إليك على وجه التحديد أو إلى قسم آخر.
 
-### Combine Queries with AND Logic
+### دمج الاستعلامات باستخدام منطق AND
 
-Combine multiple conditions using AND logic for a more refined search:
+دمج شروط متعددة باستخدام منطق AND لإجراء بحث أكثر دقة:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -194,8 +194,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CombineQueriesWithAND {
     public static void main(String[] args) {
-        // Build a combined query for specific domain, emails received before today,
-        // and within the last 7 days
+        // إنشاء استعلام مجمع لنطاق محدد، ورسائل البريد الإلكتروني التي تم استلامها قبل اليوم،
+        // وخلال الأيام السبعة الماضية
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
         builder.getInternalDate().before(new Date());
@@ -203,34 +203,34 @@ public class CombineQueriesWithAND {
     }
 }
 ```
-**توضيح**: This feature allows for complex queries that can significantly narrow down the emails you need to review.
+**توضيح**:تتيح هذه الميزة إجراء استعلامات معقدة يمكنها تضييق نطاق رسائل البريد الإلكتروني التي تحتاج إلى مراجعتها بشكل كبير.
 
-### Combine Queries with OR Logic
+### دمج الاستعلامات مع منطق OR
 
-Use OR logic to broaden your search criteria:
+استخدم منطق OR لتوسيع معايير البحث الخاصة بك:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class CombineQueriesWithOR {
     public static void main(String[] args) {
-        // Build a query for emails either from 'SpecificHost.com' or containing 'Newsletter'
+        // إنشاء استعلام للرسائل الإلكترونية إما من "SpecificHost.com" أو تحتوي على "النشرة الإخبارية"
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com")
                 .or(builder.getSubject().contains("Newsletter"));
     }
 }
 ```
-**توضيح**: This feature allows you to retrieve emails that meet any of the specified conditions, making it useful for broader searches.
+**توضيح**:تتيح لك هذه الميزة استرداد رسائل البريد الإلكتروني التي تلبي أيًا من الشروط المحددة، مما يجعلها مفيدة لعمليات البحث الأوسع.
 
 ### خاتمة
 
-By following this guide, you've learned how to implement effective email filtering techniques using Aspose.Email Java with EWS. These methods can significantly enhance your mailbox organization and productivity by allowing you to focus on the most relevant emails. For further exploration, consider diving into more advanced filtering options and performance optimizations.
+باتباع هذا الدليل، ستتعلم كيفية تطبيق تقنيات فعّالة لتصفية البريد الإلكتروني باستخدام Aspose.Email Java مع EWS. تُحسّن هذه الطرق تنظيم صندوق بريدك وإنتاجيتك بشكل ملحوظ، من خلال تمكينك من التركيز على رسائل البريد الإلكتروني الأكثر صلة. لمزيد من الاستكشاف، فكّر في التعمق في خيارات التصفية الأكثر تقدمًا وتحسينات الأداء.
 
 ### الخطوات التالية
-- Experiment with additional query conditions for even more precise filtering.
-- Explore Aspose.Email's other features to fully leverage its capabilities in email management.
-- Share your feedback or questions in community forums to engage with fellow developers.
+- قم بتجربة شروط استعلام إضافية للحصول على تصفية أكثر دقة.
+- استكشف الميزات الأخرى لبرنامج Aspose.Email للاستفادة الكاملة من قدراته في إدارة البريد الإلكتروني.
+- شارك بتعليقاتك أو أسئلتك في المنتديات المجتمعية للتواصل مع زملائك المطورين.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

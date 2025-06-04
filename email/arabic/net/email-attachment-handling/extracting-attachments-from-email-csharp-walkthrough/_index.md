@@ -1,8 +1,8 @@
 ---
-"description": "Learn to extract email attachments step by step using Aspose.Email for .NET. Handle various formats & save with ease."
-"linktitle": "Extracting Attachments from Email - C# Walkthrough"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Extracting Attachments from Email - C# Walkthrough"
+"description": "تعلم كيفية استخراج مرفقات البريد الإلكتروني خطوة بخطوة باستخدام Aspose.Email لـ .NET. تعامل مع مختلف التنسيقات واحفظها بسهولة."
+"linktitle": "استخراج المرفقات من البريد الإلكتروني - شرح C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "استخراج المرفقات من البريد الإلكتروني - شرح C#"
 "url": "/ar/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/"
 "weight": 14
 ---
@@ -13,82 +13,82 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracting Attachments from Email - C# Walkthrough
+# استخراج المرفقات من البريد الإلكتروني - شرح C#
 
 
-## Introduction to Extracting Attachments from Email - C# Walkthrough using Aspose.Email for .NET
+## مقدمة لاستخراج المرفقات من البريد الإلكتروني - شرح مفصل بلغة C# باستخدام Aspose.Email لـ .NET
 
-Email communication has become an integral part of our lives, both personally and professionally. Often, these emails contain important attachments that need to be extracted and processed. In this article, we'll walk through a step-by-step guide on how to extract attachments from emails using the Aspose.Email library for .NET.
+أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من حياتنا، على الصعيدين الشخصي والمهني. غالبًا ما تحتوي هذه الرسائل على مرفقات مهمة تحتاج إلى استخراجها ومعالجتها. في هذه المقالة، سنشرح خطوة بخطوة كيفية استخراج المرفقات من رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لـ .NET.
 
-## Prerequisites for Extracting Attachments
+## المتطلبات الأساسية لاستخراج المرفقات
 
-Before we dive into the coding process, ensure that you have the following prerequisites in place:
+قبل أن نتعمق في عملية الترميز، تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- Visual Studio installed on your machine
+- تم تثبيت Visual Studio على جهازك
 - المعرفة الأساسية ببرمجة C#
-- Access to a valid email account for testing
+- الوصول إلى حساب بريد إلكتروني صالح للاختبار
 
-## Setting Up the Development Environment
+## إعداد بيئة التطوير
 
-1. Launch Visual Studio and create a new C# console application project.
+1. قم بتشغيل Visual Studio وإنشاء مشروع تطبيق وحدة تحكم C# جديد.
 
-2. Name the project and choose the desired location to save it.
+2. قم بتسمية المشروع واختر الموقع المطلوب لحفظه.
 
-## Installing the Aspose.Email Library
+## تثبيت مكتبة Aspose.Email
 
-1. Right-click on your project in the Solution Explorer and select "Manage NuGet Packages."
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول وحدد "إدارة حزم NuGet".
 
-2. Search for "Aspose.Email" and install the library for your project.
+2. ابحث عن "Aspose.Email" وقم بتثبيت المكتبة الخاصة بمشروعك.
 
-## Loading and Accessing Email Messages
+## تحميل رسائل البريد الإلكتروني والوصول إليها
 
-To get started, you need to load and access email messages using the Aspose.Email library. Here's how:
+للبدء، عليك تحميل رسائل البريد الإلكتروني والوصول إليها باستخدام مكتبة Aspose.Email. إليك الطريقة:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Clients.Imap;
 using Aspose.Email.Clients.Pop3;
 
-// Connect to the email server
+// الاتصال بخادم البريد الإلكتروني
 ImapClient client = new ImapClient("imap.example.com", "username", "password");
 client.SelectFolder(ImapFolderInfo.InBox);
 
-// Retrieve messages
+// استرجاع الرسائل
 ImapMessageInfoCollection messages = client.ListMessages();
 foreach (ImapMessageInfo messageInfo in messages)
 {
-    // Access the email message
+    // الوصول إلى رسالة البريد الإلكتروني
     MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 }
 ```
 
-## Extracting Attachments from Email
+## استخراج المرفقات من البريد الإلكتروني
 
-Once you have access to the email message, you can start extracting attachments:
+بمجرد وصولك إلى رسالة البريد الإلكتروني، يمكنك البدء في استخراج المرفقات:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // Check the attachment type
+    // التحقق من نوع المرفق
     if (attachment.ContentType.MediaType == "application/pdf")
     {
-        // Process PDF attachment
+        // معالجة مرفق PDF
     }
     else if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // Process image attachment
+        // معالجة مرفق الصورة
     }
-    // Handle other attachment types similarly
+    // التعامل مع أنواع المرفقات الأخرى على نحو مماثل
 }
 ```
 
-## Handling Different Attachment Types
+## التعامل مع أنواع المرفقات المختلفة
 
-Attachments can come in various formats, such as PDFs, images, documents, etc. You can tailor your code to handle different attachment types accordingly.
+يمكن أن تأتي المرفقات بتنسيقات مختلفة، مثل ملفات PDF والصور والمستندات وما إلى ذلك. يمكنك تخصيص الكود الخاص بك للتعامل مع أنواع المرفقات المختلفة وفقًا لذلك.
 
-## Saving Extracted Attachments
+## حفظ المرفقات المستخرجة
 
-To save the extracted attachments to your local system:
+لحفظ المرفقات المستخرجة على نظامك المحلي:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
@@ -99,29 +99,29 @@ foreach (Attachment attachment in message.Attachments)
 
 ## خاتمة
 
-In this tutorial, we've explored how to extract attachments from emails using the Aspose.Email library for .NET. By following these steps, you can efficiently retrieve and process attachments from your email communications.
+في هذا البرنامج التعليمي، استكشفنا كيفية استخراج المرفقات من رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك استرداد المرفقات من رسائل البريد الإلكتروني ومعالجتها بكفاءة.
 
 ## الأسئلة الشائعة
 
-### How can I handle attachments with unknown file types?
+### كيف يمكنني التعامل مع المرفقات ذات أنواع الملفات غير المعروفة؟
 
-You can use the attachment's `ContentType.MediaType` property to identify the file type and handle it accordingly.
+يمكنك استخدام المرفق `ContentType.MediaType` الخاصية لتحديد نوع الملف والتعامل معه وفقًا لذلك.
 
-### Can I extract multiple attachments at once?
+### هل يمكنني استخراج مرفقات متعددة مرة واحدة؟
 
-Yes, you can iterate through the attachments collection of an email message and extract all attachments.
+نعم، يمكنك تكرار مجموعة المرفقات الخاصة برسالة البريد الإلكتروني واستخراج كافة المرفقات.
 
-### Is Aspose.Email compatible with different email protocols?
+### هل Aspose.Email متوافق مع بروتوكولات البريد الإلكتروني المختلفة؟
 
-Yes, Aspose.Email supports various email protocols like IMAP, POP3, SMTP, and Exchange Web Services (EWS).
+نعم، يدعم Aspose.Email بروتوكولات البريد الإلكتروني المختلفة مثل IMAP، وPOP3، وSMTP، وخدمات Exchange Web Services (EWS).
 
-### What versions of .NET are supported by Aspose.Email?
+### ما هي إصدارات .NET التي يدعمها Aspose.Email؟
 
-Aspose.Email supports .NET Framework and .NET Core.
+يدعم Aspose.Email .NET Framework و.NET Core.
 
-### Where can I find more information about Aspose.Email?
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Email؟
 
-For detailed documentation and examples, refer to the [وثائق Aspose.Email](https://reference.aspose.com/email/net/).
+للحصول على توثيقات وأمثلة مفصلة، راجع [وثائق Aspose.Email](https://reference.aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

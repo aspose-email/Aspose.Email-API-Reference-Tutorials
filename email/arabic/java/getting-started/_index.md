@@ -16,17 +16,17 @@
 
 ## البرامج التعليمية المتاحة
 
-### [How to Apply Aspose.Email License in Java: Complete Guide & Tips](./apply-aspose-email-license-java-guide/)
-Master applying the Aspose.Email license in Java using two methods. Learn file and stream applications for seamless email processing.
+### [كيفية تطبيق ترخيص Aspose.Email في Java: دليل شامل ونصائح](./apply-aspose-email-license-java-guide/)
+أتقن استخدام ترخيص Aspose.Email في جافا بطريقتين. تعلّم تطبيقات الملفات والتدفق لمعالجة بريد إلكتروني سلسة.
 
-### [Mastering Aspose.Email for Java: License & Email Handling Guide](./mastering-aspose-email-java-license-email-handling/)
-Learn to apply a metered license and manage email operations with Aspose.Email for Java. Optimize your systems efficiently.
+### [إتقان استخدام Aspose.Email في Java: دليل الترخيص ومعالجة البريد الإلكتروني](./mastering-aspose-email-java-license-email-handling/)
+تعلّم كيفية استخدام ترخيص مُقيّد وإدارة عمليات البريد الإلكتروني باستخدام Aspose.Email لـ Java. حسّن أنظمتك بكفاءة.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

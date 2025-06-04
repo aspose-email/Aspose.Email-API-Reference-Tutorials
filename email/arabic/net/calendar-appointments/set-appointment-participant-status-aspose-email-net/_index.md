@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently set participant statuses like 'Accepted' or 'Declined' for appointments using Aspose.Email for .NET. Streamline your meeting management with this guide."
-"title": "Set Appointment Participant Status in Aspose.Email for .NET"
+"description": "تعرّف على كيفية ضبط حالات المشاركين بكفاءة، مثل \"مقبول\" أو \"مرفوض\"، للمواعيد باستخدام Aspose.Email لـ .NET. بسّط إدارة اجتماعاتك مع هذا الدليل."
+"title": "تعيين حالة المشارك في الموعد في Aspose.Email لـ .NET"
 "url": "/ar/net/calendar-appointments/set-appointment-participant-status-aspose-email-net/"
 "weight": 1
 ---
@@ -11,26 +11,26 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Set Appointment Participant Status with Aspose.Email for .NET
-## How to Manage Participant Status in Appointments Using Aspose.Email for .NET
-In today's fast-paced business environment, efficiently organizing and managing meetings is crucial. Setting participant statuses such as "Accepted" or "Declined" can significantly streamline the appointment scheduling process. This guide will walk you through implementing this feature using Aspose.Email for .NET.
+# تعيين حالة المشارك في الموعد باستخدام Aspose.Email لـ .NET
+## كيفية إدارة حالة المشارك في المواعيد باستخدام Aspose.Email لـ .NET
+في بيئة الأعمال المتسارعة اليوم، يُعدّ تنظيم الاجتماعات وإدارتها بكفاءة أمرًا بالغ الأهمية. يُمكن لتعيين حالات المشاركين، مثل "مقبول" أو "مرفوض"، أن يُبسّط عملية جدولة المواعيد بشكل كبير. سيُرشدك هذا الدليل إلى كيفية تطبيق هذه الميزة باستخدام Aspose.Email لـ .NET.
 
 ## ما سوف تتعلمه
-- How to set up your development environment with Aspose.Email for .NET.
-- How to define and manage participants' statuses in an email appointment.
-- Tips on handling file paths effectively for Aspose.Email operations.
+- كيفية إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Email لـ .NET.
+- كيفية تحديد وإدارة حالات المشاركين في موعد البريد الإلكتروني.
+- نصائح حول التعامل مع مسارات الملفات بشكل فعال لعمليات Aspose.Email.
 - التطبيقات الواقعية لهذه الميزات.
 
-Let's start by preparing the prerequisites.
+دعونا نبدأ بإعداد المتطلبات الأساسية.
 
 ### المتطلبات الأساسية
-Before you begin, ensure your environment is ready. You will need:
-- **Aspose.Email لـ .NET** library installed in your project.
+قبل البدء، تأكد من جاهزية بيئتك. ستحتاج إلى:
+- **Aspose.Email لـ .NET** المكتبة المثبتة في مشروعك.
 - فهم أساسي لتطوير C# و.NET.
-- Visual Studio or a similar IDE set up on your machine.
+- تم إعداد Visual Studio أو IDE مماثل على جهازك.
 
 #### المكتبات والإصدارات المطلوبة
-Ensure you have Aspose.Email for .NET integrated into your project. Depending on your preference, use one of the following installation methods:
+تأكد من دمج Aspose.Email لـ .NET في مشروعك. استخدم إحدى طرق التثبيت التالية، حسب تفضيلاتك:
 
 **.NET CLI**
 ```bash
@@ -46,13 +46,13 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 #### الحصول على الترخيص
-Aspose.Email offers a free trial, temporary licenses, or a purchase option. To get started with a free trial:
+يقدم Aspose.Email نسخة تجريبية مجانية، أو تراخيص مؤقتة، أو خيار شراء. لبدء النسخة التجريبية المجانية:
 1. يزور [النسخة التجريبية المجانية من Aspose](https://releases.aspose.com/email/net/).
-2. Follow the instructions to request your temporary license.
-3. Apply the license in your application for full access.
+2. اتبع التعليمات لطلب الترخيص المؤقت الخاص بك.
+3. قم بتطبيق الترخيص في طلبك للحصول على الوصول الكامل.
 
 ### إعداد Aspose.Email لـ .NET
-Once you have installed Aspose.Email, initialize it within your project:
+بمجرد تثبيت Aspose.Email، قم بتهيئته داخل مشروعك:
 
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
@@ -60,14 +60,14 @@ license.SetLicense("path_to_your_license_file.lic");
 ```
 
 ## دليل التنفيذ
-In this section, we'll explore how to set participant statuses in appointments using Aspose.Email.
+في هذا القسم، سنستكشف كيفية تعيين حالات المشاركين في المواعيد باستخدام Aspose.Email.
 
-### Setting Participant Status for Appointment Attendees
+### تحديد حالة المشارك لحضور الموعد
 #### ملخص
-This feature allows you to specify how each attendee will participate in your appointment by setting their status as "Accepted" or "Declined." This is crucial for effective meeting management.
+تتيح لك هذه الميزة تحديد كيفية مشاركة كل مشارك في موعدك من خلال تحديد حالته "مقبول" أو "مرفوض". يُعد هذا أمرًا بالغ الأهمية لإدارة الاجتماعات بفعالية.
 
-##### Step 1: Define Organizer and Attendees
-Start by defining the organizer and attendees with their respective email addresses:
+##### الخطوة 1: تحديد المنظم والحضور
+ابدأ بتحديد المنظم والحضور من خلال عناوين البريد الإلكتروني الخاصة بهم:
 
 ```csharp
 string location = "Room 5";
@@ -78,42 +78,42 @@ MailAddress organizer = new MailAddress("organizer@example.com", "Organizer");
 MailAddressCollection attendees = new MailAddressCollection();
 ```
 
-##### Step 2: Set Participation Status
-Assign statuses to each attendee:
+##### الخطوة 2: تعيين حالة المشاركة
+تعيين الحالات لكل الحاضرين:
 
 ```csharp
-// Attendee 1: Accepted status.
+// الحضور 1: الحالة مقبولة.
 MailAddress attendee1 = new MailAddress("attendee1@example.com", "First attendee");
 attendee1.ParticipationStatus = ParticipationStatus.Accepted;
 attendees.Add(attendee1);
 
-// Attendee 2: Declined status.
+// الحضور 2: حالة مرفوضة.
 MailAddress attendee2 = new MailAddress("attendee2@example.com", "Second attendee");
 attendee2.ParticipationStatus = ParticipationStatus.Declined;
 attendees.Add(attendee2);
 ```
 
-##### Step 3: Create the Appointment
-Use the defined details to create an appointment:
+##### الخطوة 3: إنشاء الموعد
+استخدم التفاصيل المحددة لإنشاء موعد:
 
 ```csharp
 Appointment target = new Appointment(location, startDate, endDate, organizer, attendees);
 ```
 
-### Working with File Paths for Aspose.Email Operations
+### العمل مع مسارات الملفات لعمليات Aspose.Email
 #### ملخص
-Managing file paths effectively is essential when working with document operations in Aspose.Email. This guide demonstrates how to handle input and output directories.
+تُعد إدارة مسارات الملفات بفعالية أمرًا بالغ الأهمية عند العمل على عمليات المستندات في Aspose.Email. يوضح هذا الدليل كيفية التعامل مع مجلدات الإدخال والإخراج.
 
 ##### الخطوة 1: تحديد مسارات الدليل
-Define placeholders for your document and output directories:
+قم بتحديد العناصر النائبة للمستندات ومجلدات الإخراج الخاصة بك:
 
 ```csharp
 string documentDirectory = "@YOUR_DOCUMENT_DIRECTORY";
 string outputDirectory = "@YOUR_OUTPUT_DIRECTORY";
 ```
 
-##### Step 2: Ensure Directories Exist
-Check if the directories exist, or create them if they don't:
+##### الخطوة 2: التأكد من وجود الدلائل
+تحقق مما إذا كانت الدلائل موجودة، أو قم بإنشائها إذا لم تكن موجودة:
 
 ```csharp
 if (!Directory.Exists(documentDirectory))
@@ -124,32 +124,32 @@ if (!Directory.Exists(outputDirectory))
 ```
 
 ### التطبيقات العملية
-Here are some real-world applications of these features:
-- **Meeting Management**: Automatically set participant statuses in corporate meetings.
-- **Automated Scheduling Systems**: Integrate with scheduling systems to manage attendee responses efficiently.
-- **Document Workflow Automation**: Use file path management for seamless document handling and storage.
+وفيما يلي بعض التطبيقات الواقعية لهذه الميزات:
+- **إدارة الاجتماعات**:تعيين حالات المشاركين تلقائيًا في اجتماعات الشركة.
+- **أنظمة الجدولة الآلية**:التكامل مع أنظمة الجدولة لإدارة ردود الحضور بكفاءة.
+- **أتمتة سير عمل المستندات**:استخدم إدارة مسار الملف للتعامل مع المستندات وتخزينها بسلاسة.
 
 ## اعتبارات الأداء
 عند العمل مع Aspose.Email، ضع في اعتبارك نصائح الأداء التالية:
-- Optimize memory usage by disposing of objects appropriately.
-- Utilize asynchronous methods where possible to improve application responsiveness.
-- Regularly update your Aspose.Email library to benefit from the latest optimizations and features.
+- تحسين استخدام الذاكرة عن طريق التخلص من الكائنات بشكل مناسب.
+- استخدم الأساليب غير المتزامنة عندما يكون ذلك ممكنًا لتحسين استجابة التطبيق.
+- قم بتحديث مكتبة Aspose.Email الخاصة بك بانتظام للاستفادة من أحدث التحسينات والميزات.
 
 ## خاتمة
-You've now learned how to set participant statuses in appointments using Aspose.Email for .NET, as well as managing file paths efficiently. These capabilities can enhance your meeting management processes significantly.
+لقد تعلمت الآن كيفية تحديد حالات المشاركين في المواعيد باستخدام Aspose.Email لـ .NET، بالإضافة إلى إدارة مسارات الملفات بكفاءة. تُحسّن هذه الإمكانيات عمليات إدارة اجتماعاتك بشكل ملحوظ.
 
 ### الخطوات التالية
-Explore additional features of Aspose.Email such as email sending and receiving, calendar synchronization, or contact management to further expand your application's functionality.
+استكشف الميزات الإضافية لـ Aspose.Email مثل إرسال واستقبال البريد الإلكتروني، أو مزامنة التقويم، أو إدارة جهات الاتصال لتوسيع وظائف تطبيقك بشكل أكبر.
 
 ## قسم الأسئلة الشائعة
-**Q: How do I update participant statuses after creating an appointment?**
-A: You can modify the `ParticipationStatus` property of each attendee before saving or sending the appointment.
+**س: كيف أقوم بتحديث حالة المشاركين بعد إنشاء موعد؟**
+أ: يمكنك تعديل `ParticipationStatus` ممتلكات كل مشارك قبل حفظ الموعد أو إرساله.
 
-**Q: What are some common issues when setting up Aspose.Email for .NET?**
-A: Ensure your project references the correct version and that the license is applied properly to avoid trial limitations.
+**س: ما هي بعض المشكلات الشائعة عند إعداد Aspose.Email لـ .NET؟**
+أ: تأكد من أن مشروعك يشير إلى الإصدار الصحيح وأن الترخيص تم تطبيقه بشكل صحيح لتجنب قيود الإصدار التجريبي.
 
-**Q: Can I use Aspose.Email with other programming languages besides C#?**
-A: Yes, Aspose.Email supports multiple platforms including Java and Python. Check their documentation for specific language guides.
+**س: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى إلى جانب C#؟**
+ج: نعم، يدعم Aspose.Email منصات متعددة، بما في ذلك جافا وبايثون. راجع وثائقه للاطلاع على أدلة اللغات المحددة.
 
 ## موارد
 - **التوثيق**: [توثيق Aspose Email .NET](https://reference.aspose.com/email/net/)
@@ -159,7 +159,7 @@ A: Yes, Aspose.Email supports multiple platforms including Java and Python. Chec
 - **رخصة مؤقتة**: [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
 
-Try implementing these solutions in your projects and experience the streamlined power of Aspose.Email for .NET!
+حاول تنفيذ هذه الحلول في مشاريعك واستمتع بالقوة المبسطة لـ Aspose.Email لـ .NET!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

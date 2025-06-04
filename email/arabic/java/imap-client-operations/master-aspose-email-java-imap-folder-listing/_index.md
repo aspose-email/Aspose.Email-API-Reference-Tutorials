@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect to an IMAP server and list folders using Aspose.Email for Java. This expert guide covers setup, connection, and folder listing."
-"title": "Master IMAP Connections & Folder Listings with Aspose.Email for Java | Expert Guide"
+"description": "تعرّف على كيفية الاتصال بخادم IMAP وسرد المجلدات باستخدام Aspose.Email لجافا. يغطي هذا الدليل الاحترافي الإعداد والاتصال وسرد المجلدات."
+"title": "إتقان اتصالات IMAP وقوائم المجلدات باستخدام Aspose.Email لـ Java | دليل الخبراء"
 "url": "/ar/java/imap-client-operations/master-aspose-email-java-imap-folder-listing/"
 "weight": 1
 ---
@@ -11,39 +11,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Aspose.Email for Java: IMAP Connections & Folder Listings
+# إتقان Aspose.Email لـ Java: اتصالات IMAP وقوائم المجلدات
 
-**Unlock the Full Potential of Email Management with Aspose.Email for Java**
+**أطلق العنان لإمكانات إدارة البريد الإلكتروني الكاملة باستخدام Aspose.Email لـ Java**
 
-In today's fast-paced digital world, efficiently managing emails is crucial for personal productivity and enterprise communication. Whether you're a developer integrating email functionalities or an IT professional automating workflows, mastering how to establish IMAP connections and list folders using Aspose.Email can be transformative. This expert guide will walk you through implementing these features in Java with Aspose.Email.
+في عالمنا الرقمي سريع الخطى، تُعدّ إدارة رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية للإنتاجية الشخصية وتواصل المؤسسات. سواء كنت مطورًا تُدمج وظائف البريد الإلكتروني أو متخصصًا في تكنولوجيا المعلومات يُؤتمت سير العمل، فإن إتقان كيفية إنشاء اتصالات IMAP وقوائم المجلدات باستخدام Aspose.Email يُمكن أن يُحدث نقلة نوعية. سيُرشدك هذا الدليل المُتخصص إلى كيفية تطبيق هذه الميزات في Java باستخدام Aspose.Email.
 
 **ما سوف تتعلمه:**
-- How to set up Aspose.Email for Java
-- Establishing an IMAP connection to your email server
-- Listing all folders within an IMap account
-- Key configuration options and best practices
+- كيفية إعداد Aspose.Email لـ Java
+- إنشاء اتصال IMAP بخادم البريد الإلكتروني الخاص بك
+- إدراج جميع المجلدات داخل حساب IMap
+- خيارات التكوين الرئيسية وأفضل الممارسات
 
-Let's dive into the prerequisites and get started!
+دعونا نتعمق في المتطلبات الأساسية ونبدأ!
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 1. **المكتبات والتبعيات المطلوبة:**
-   - Aspose.Email for Java version 25.4 or later.
+   - Aspose.Email لإصدار Java 25.4 أو أحدث.
 
 2. **متطلبات إعداد البيئة:**
-   - A Java Development Kit (JDK) installed on your system.
-   - An Integrated Development Environment (IDE), such as IntelliJ IDEA or Eclipse, to write and run your code.
-   - Access to an IMAP server (e.g., Gmail).
+   - مجموعة تطوير Java (JDK) مثبتة على نظامك.
+   - بيئة تطوير متكاملة (IDE)، مثل IntelliJ IDEA أو Eclipse، لكتابة وتشغيل التعليمات البرمجية الخاصة بك.
+   - الوصول إلى خادم IMAP (على سبيل المثال، Gmail).
 
 3. **المتطلبات المعرفية:**
-   - Basic understanding of Java programming.
-   - Familiarity with email protocols like IMAP.
+   - فهم أساسيات برمجة جافا.
+   - التعرف على بروتوكولات البريد الإلكتروني مثل IMAP.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started with Aspose.Email, integrate it into your project using Maven:
+للبدء في استخدام Aspose.Email، قم بدمجه في مشروعك باستخدام Maven:
 
 ```xml
 <dependency>
@@ -56,53 +56,53 @@ To get started with Aspose.Email, integrate it into your project using Maven:
 
 ### الحصول على الترخيص
 
-Aspose.Email requires a license for full functionality, but you can start with a free trial or obtain a temporary license:
+يتطلب Aspose.Email ترخيصًا للوظائف الكاملة، ولكن يمكنك البدء بإصدار تجريبي مجاني أو الحصول على ترخيص مؤقت:
 
-- **نسخة تجريبية مجانية:** Download and explore the features.
-- **رخصة مؤقتة:** Available on Aspose's website to extend your evaluation period.
-- **شراء:** For continued use in production environments.
+- **نسخة تجريبية مجانية:** قم بتنزيل واستكشاف الميزات.
+- **رخصة مؤقتة:** متاح على موقع Aspose لتمديد فترة التقييم الخاصة بك.
+- **شراء:** للاستخدام المستمر في بيئات الإنتاج.
 
 ### التهيئة الأساسية
 
-After installation, initialize your project by importing necessary classes and setting up your IMAP client. Here’s a basic setup for connecting to an IMAP server using Gmail as an example:
+بعد التثبيت، ابدأ مشروعك باستيراد الفئات اللازمة وإعداد عميل IMAP. إليك إعداد أساسي للاتصال بخادم IMAP باستخدام Gmail كمثال:
 
 ```java
 import com.aspose.email.ImapClient;
 import com.aspose.email.SecurityOptions;
 
 ImapClient client = new ImapClient();
-client.setHost("imap.gmail.com"); // Set the host of the IMAP server
-client.setPort(993);               // Set the port number for SSL connection
-client.setUsername("username");    // Specify your username for authentication
-client.setPassword("password");    // Provide your password for authentication
-client.setSecurityOptions(SecurityOptions.Auto); // Automatically select the security option
+client.setHost("imap.gmail.com"); // تعيين مضيف خادم IMAP
+client.setPort(993);               // تعيين رقم المنفذ لاتصال SSL
+client.setUsername("username");    // حدد اسم المستخدم الخاص بك للمصادقة
+client.setPassword("password");    // قم بتوفير كلمة المرور الخاصة بك للمصادقة
+client.setSecurityOptions(SecurityOptions.Auto); // تحديد خيار الأمان تلقائيًا
 ```
 
 ## دليل التنفيذ
 
-### Establishing an IMAP Connection
+### إنشاء اتصال IMAP
 
 **ملخص:**
-Connecting to an IMAP server allows you to access and manipulate emails stored on a remote server. This is essential for applications that need to read, send, or organize emails.
+يتيح لك الاتصال بخادم IMAP الوصول إلى رسائل البريد الإلكتروني المخزنة على خادم بعيد ومعالجتها. يُعد هذا ضروريًا للتطبيقات التي تحتاج إلى قراءة رسائل البريد الإلكتروني أو إرسالها أو تنظيمها.
 
-#### Step-by-Step:
+#### خطوة بخطوة:
 1. **تهيئة ImapClient:**
    - إنشاء مثيل جديد من `ImapClient`.
-   - Set host, port, username, password, and security options as shown above.
-2. **Security Options:**
-   - ال `SecurityOptions.Auto` setting automatically selects SSL or TLS based on server support.
+   - قم بتعيين خيارات المضيف والمنفذ واسم المستخدم وكلمة المرور والأمان كما هو موضح أعلاه.
+2. **خيارات الأمان:**
+   - ال `SecurityOptions.Auto` يقوم الإعداد تلقائيًا بتحديد SSL أو TLS استنادًا إلى دعم الخادم.
 
-### Listing IMAP Folders
+### قائمة مجلدات IMAP
 
 **ملخص:**
-Listing folders helps you understand the structure of your email account and access specific data within each folder.
+تساعدك قائمة المجلدات على فهم بنية حساب بريدك الإلكتروني والوصول إلى بيانات محددة داخل كل مجلد.
 
-#### Step-by-Step:
-1. **Connect to Your Account:**
-   - استخدم `ImapClient` setup as described earlier.
-2. **Retrieve Folder Information:**
-   - Fetch a collection of all folders using `listFolders()` طريقة.
-3. **Iterate Through Folders:**
+#### خطوة بخطوة:
+1. **قم بالاتصال بحسابك:**
+   - استخدم `ImapClient` الإعداد كما هو موضح سابقًا.
+2. **استرجاع معلومات المجلد:**
+   - جلب مجموعة من كافة المجلدات باستخدام `listFolders()` طريقة.
+3. **التكرار خلال المجلدات:**
    ```java
    import com.aspose.email.ImapFolderInfoCollection;
    import com.aspose.email.ImapFolderInfo;
@@ -115,67 +115,67 @@ Listing folders helps you understand the structure of your email account and acc
        boolean isReadOnly = folderInfo.getReadOnly();
        int totalMessages = folderInfo.getTotalMessageCount();
 
-       // Example output
+       // مثال على الناتج
        System.out.println("Folder: " + folderName);
        System.out.println("Unread Messages: " + newMessageCount);
    }
    ```
-4. **Understanding Folder Properties:**
+4. **فهم خصائص المجلد:**
    - `getName()`:استرجاع اسم المجلد.
-   - `getNewMessageCount()`: Counts unread messages in the folder.
-   - `getReadOnly()`: Checks if a folder is read-only.
-   - `getTotalMessageCount()`: Provides total message count.
+   - `getNewMessageCount()`:يحسب عدد الرسائل غير المقروءة في المجلد.
+   - `getReadOnly()`:التحقق مما إذا كان المجلد للقراءة فقط.
+   - `getTotalMessageCount()`:يوفر إجمالي عدد الرسائل.
 
 ### نصائح استكشاف الأخطاء وإصلاحها
 
-- **مشاكل المصادقة:** Ensure your username and password are correct. Enable access for less secure apps if using Gmail.
-- **Connection Errors:** Verify the host address and port number. Check firewall settings that might block IMAP connections.
+- **مشاكل المصادقة:** تأكد من صحة اسم المستخدم وكلمة المرور. فعّل الوصول للتطبيقات الأقل أمانًا عند استخدام Gmail.
+- **أخطاء الاتصال:** تحقق من عنوان المضيف ورقم المنفذ. تحقق من إعدادات جدار الحماية التي قد تمنع اتصالات IMAP.
 
 ## التطبيقات العملية
 
-1. **Automated Email Management:**
-   - Use Aspose.Email to automate email sorting, archiving, or deletion based on folder contents.
-2. **Integration with Customer Support Tools:**
-   - Integrate with platforms like Zendesk to manage customer queries directly from emails.
-3. **Data Analysis and Reporting:**
-   - Analyze email metadata for reporting purposes, such as response times or message volumes.
+1. **إدارة البريد الإلكتروني الآلية:**
+   - استخدم Aspose.Email لأتمتة فرز البريد الإلكتروني أو أرشفته أو حذفه استنادًا إلى محتويات المجلد.
+2. **التكامل مع أدوات دعم العملاء:**
+   - التكامل مع منصات مثل Zendesk لإدارة استفسارات العملاء مباشرة من رسائل البريد الإلكتروني.
+3. **تحليل البيانات وإعداد التقارير:**
+   - تحليل بيانات التعريف الخاصة بالبريد الإلكتروني لأغراض إعداد التقارير، مثل أوقات الاستجابة أو حجم الرسائل.
 4. **أنظمة الإشعارات:**
-   - Create systems that alert you of new messages in specific folders.
+   - إنشاء أنظمة تنبهك بالرسائل الجديدة في مجلدات محددة.
 5. **حلول النسخ الاحتياطي:**
-   - Implement a backup system to archive important emails from your IMAP account.
+   - قم بتنفيذ نظام نسخ احتياطي لأرشفة رسائل البريد الإلكتروني المهمة من حساب IMAP الخاص بك.
 
 ## اعتبارات الأداء
 
-- **Optimize Connections:** إعادة الاستخدام `ImapClient` الحالات التي يكون فيها من الممكن تقليل النفقات العامة.
-- **إدارة الذاكرة:** Be mindful of resource usage, especially when processing large volumes of email data. Utilize Java's garbage collection effectively.
-- **عمليات الدفعات:** Where feasible, process messages in batches to improve performance.
+- **تحسين الاتصالات:** إعادة الاستخدام `ImapClient` الحالات التي يكون فيها من الممكن تقليل النفقات العامة.
+- **إدارة الذاكرة:** انتبه لاستخدام الموارد، خاصةً عند معالجة كميات كبيرة من بيانات البريد الإلكتروني. استخدم أداة جمع البيانات المهملة في جافا بفعالية.
+- **عمليات الدفعات:** عندما يكون ذلك ممكنًا، قم بمعالجة الرسائل على دفعات لتحسين الأداء.
 
 ## خاتمة
 
-You've now learned how to set up and use Aspose.Email for Java to connect to an IMAP server and list folders within your account. These skills are essential for developing robust email management applications.
+لقد تعلمتَ الآن كيفية إعداد Aspose.Email واستخدامه لجافا للاتصال بخادم IMAP وعرض المجلدات داخل حسابك. هذه المهارات أساسية لتطوير تطبيقات إدارة بريد إلكتروني فعّالة.
 
 **الخطوات التالية:**
-- Explore additional features of Aspose.Email, such as email manipulation or sending.
-- Experiment with integrating these functionalities into larger systems or workflows.
+- استكشف الميزات الإضافية لـ Aspose.Email، مثل معالجة البريد الإلكتروني أو إرساله.
+- جرّب دمج هذه الوظائف في أنظمة أو سير عمل أكبر.
 
-Ready to take on the challenge? Start implementing today!
+هل أنت مستعد لمواجهة التحدي؟ ابدأ التنفيذ اليوم!
 
 ## قسم الأسئلة الشائعة
 
-1. **How do I handle IMAP connection timeouts?**
-   - Increase timeout settings in `ImapClient` if needed.
-2. **Can I use Aspose.Email for large-scale email processing?**
-   - Yes, but consider performance optimizations and memory management practices.
-3. **Is there a way to filter emails by subject or sender using Aspose.Email?**
-   - Use search criteria methods available in `ImapClient` for filtering.
-4. **How do I handle SSL/TLS handshake errors?**
-   - Ensure your server supports the required protocols, and check your security certificate validity.
-5. **What are some common reasons for authentication failures with IMAP servers?**
-   - Incorrect credentials or account settings that require app-specific passwords can cause failures.
+1. **كيف أتعامل مع انتهاء مهلة اتصال IMAP؟**
+   - زيادة إعدادات مهلة الانتظار في `ImapClient` إذا لزم الأمر.
+2. **هل يمكنني استخدام Aspose.Email لمعالجة البريد الإلكتروني على نطاق واسع؟**
+   - نعم، ولكن ضع في الاعتبار تحسينات الأداء وممارسات إدارة الذاكرة.
+3. **هل هناك طريقة لتصفية رسائل البريد الإلكتروني حسب الموضوع أو المرسل باستخدام Aspose.Email؟**
+   - استخدم أساليب معايير البحث المتاحة في `ImapClient` للترشيح.
+4. **كيف أتعامل مع أخطاء مصافحة SSL/TLS؟**
+   - تأكد من أن الخادم الخاص بك يدعم البروتوكولات المطلوبة، وتحقق من صحة شهادة الأمان الخاصة بك.
+5. **ما هي بعض الأسباب الشائعة لفشل المصادقة مع خوادم IMAP؟**
+   - قد تتسبب بيانات الاعتماد غير الصحيحة أو إعدادات الحساب التي تتطلب كلمات مرور خاصة بالتطبيق في حدوث أعطال.
 
 ## موارد
-- [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email بلغة Java](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [شراء ترخيص](https://purchase.aspose.com/buy)
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

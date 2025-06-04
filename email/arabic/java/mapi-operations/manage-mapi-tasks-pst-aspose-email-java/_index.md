@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to create and manage MAPI tasks in a PST file using Aspose.Email for Java. Follow this step-by-step guide to enhance your task management capabilities."
-"title": "Manage MAPI Tasks in PST with Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية إنشاء مهام MAPI وإدارتها في ملف PST باستخدام Aspose.Email لـ Java. اتبع هذا الدليل خطوة بخطوة لتحسين إمكانيات إدارة المهام لديك."
+"title": "إدارة مهام MAPI في PST باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/mapi-operations/manage-mapi-tasks-pst-aspose-email-java/"
 "weight": 1
 ---
@@ -11,25 +11,25 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Manage MAPI Tasks in PST with Aspose.Email for Java
+# إدارة مهام MAPI في PST باستخدام Aspose.Email لـ Java
 
-Managing Microsoft Outlook MAPI tasks efficiently is crucial for both personal productivity and corporate project success. This comprehensive guide will walk you through creating and managing MAPI tasks using the powerful Aspose.Email for Java library.
+إدارة مهام Microsoft Outlook MAPI بكفاءة أمرٌ بالغ الأهمية للإنتاجية الشخصية ونجاح مشاريع الشركات. سيرشدك هذا الدليل الشامل إلى كيفية إنشاء مهام MAPI وإدارتها باستخدام مكتبة Aspose.Email القوية لـ Java.
 
 ## ما سوف تتعلمه
-- **Create a MAPI Task**: Set up a task with essential properties.
-- **Configure Personal Storage Files (PST)**: Create PST files in Unicode format for compatibility and efficiency.
-- **Manage Tasks within PST**: Organize and manage your tasks effectively using the storage file.
+- **إنشاء مهمة MAPI**:إعداد مهمة بالخصائص الأساسية.
+- **تكوين ملفات التخزين الشخصية (PST)**:إنشاء ملفات PST بتنسيق Unicode لتحقيق التوافق والكفاءة.
+- **إدارة المهام داخل PST**:قم بتنظيم مهامك وإدارتها بفعالية باستخدام ملف التخزين.
 
-Let's ensure you have everything ready to get started!
+دعونا نتأكد من أن كل شيء جاهز للبدء!
 
 ## المتطلبات الأساسية
-To follow this guide, make sure you have:
-- **Java Development Environment**: Java JDK 16 or later installed on your machine.
-- **Maven**: For efficient dependency management.
-- **Aspose.Email for Java Library**: Version 25.4 (or newer) is recommended.
+لمتابعة هذا الدليل، تأكد من أن لديك:
+- **بيئة تطوير جافا**:تم تثبيت Java JDK 16 أو إصدار أحدث على جهازك.
+- **مافن**:لإدارة التبعيات بكفاءة.
+- **Aspose.Email لمكتبة Java**:يوصى باستخدام الإصدار 25.4 (أو أحدث).
 
-### Setting Up Aspose.Email for Java
-Add the following Maven dependency to incorporate Aspose.Email into your project:
+### إعداد Aspose.Email لـ Java
+أضف تبعية Maven التالية لدمج Aspose.Email في مشروعك:
 
 ```xml
 <dependency>
@@ -42,55 +42,55 @@ Add the following Maven dependency to incorporate Aspose.Email into your project
 
 #### الحصول على الترخيص
 - **نسخة تجريبية مجانية**:ابدأ بفترة تجريبية مجانية لاستكشاف إمكانيات المكتبة.
-- **رخصة مؤقتة**: Obtain one for an extended evaluation period from [أسبوزي](https://purchase.aspose.com/temporary-license/).
-- **شراء**: For long-term use, purchase a license via their official site.
+- **رخصة مؤقتة**:احصل على واحدة لفترة تقييم ممتدة من [أسبوزي](https://purchase.aspose.com/temporary-license/).
+- **شراء**:للاستخدام طويل الأمد، قم بشراء ترخيص عبر موقعهم الرسمي.
 
-Now that you're set up, let's dive into the implementation guide!
+الآن بعد أن قمت بالإعداد، دعنا ننتقل إلى دليل التنفيذ!
 
 ## دليل التنفيذ
 
-### Create and Configure a MAPI Task
+### إنشاء مهمة MAPI وتكوينها
 
-Creating detailed tasks is straightforward with Aspose.Email. Follow these steps:
+إنشاء مهام مفصلة سهل للغاية مع Aspose.Email. اتبع الخطوات التالية:
 
-#### Step 1: Initialize a New MAPI Task
-Create a task by specifying its subject, description, start date, and due date.
+#### الخطوة 1: تهيئة مهمة MAPI جديدة
+قم بإنشاء مهمة عن طريق تحديد موضوعها ووصفها وتاريخ البدء وتاريخ الاستحقاق.
 
 ```java
 MapiTask task = new MapiTask("To Do", "Just click and type to add new task", new Date(), new Date());
 ```
 
-#### Step 2: Set Completion Percentage
-Indicate how much of the task is complete using a percentage.
+#### الخطوة 2: تعيين نسبة الإنجاز
+قم بالإشارة إلى مقدار المهمة المكتملة باستخدام النسبة المئوية.
 
 ```java
 task.setPercentComplete(20);
 ```
 
-#### Step 3: Estimate Effort in Minutes
-Define both estimated and actual time spent on the task.
+#### الخطوة 3: تقدير الجهد بالدقائق
+قم بتحديد الوقت المقدر والوقت الفعلي الذي تم قضاؤه في المهمة.
 
 ```java
-task.setEstimatedEffort(2000); // Estimated effort in minutes
-task.setActualEffort(20);       // Actual effort in minutes
+task.setEstimatedEffort(2000); // الجهد المقدر بالدقائق
+task.setActualEffort(20);       // الجهد الفعلي بالدقائق
 ```
 
-#### Step 4: Define Task History
-Use history to indicate task status, such as assigned.
+#### الخطوة 4: تحديد سجل المهام
+استخدم السجل للإشارة إلى حالة المهمة، مثل التعيين.
 
 ```java
 task.setHistory(MapiTaskHistory.Assigned);
 ```
 
-#### Step 5: Update the Last Modification Date
-Keep track of when a task was last modified.
+#### الخطوة 5: تحديث تاريخ التعديل الأخير
+تتبع متى تم تعديل المهمة آخر مرة.
 
 ```java
 task.setLastUpdate(new Date());
 ```
 
-#### Step 6: Configure User Information
-Set user-related details for task ownership and delegation.
+#### الخطوة 6: تكوين معلومات المستخدم
+تعيين التفاصيل المتعلقة بالمستخدم فيما يتعلق بملكية المهمة وتفويضها.
 
 ```java
 task.getUsers().setOwner("Darius");
@@ -99,80 +99,80 @@ task.getUsers().setLastDelegate("Harkness");
 task.getUsers().setOwnership(MapiTaskOwnership.AssignersCopy);
 ```
 
-### Create and Configure a Personal Storage File (PST)
+### إنشاء وتكوين ملف تخزين شخصي (PST)
 
-#### Step 1: Define Output Path
-Specify where your PST file will be stored.
+#### الخطوة 1: تحديد مسار الإخراج
+حدد المكان الذي سيتم تخزين ملف PST الخاص بك فيه.
 
 ```java
 String outputPath = "YOUR_OUTPUT_DIRECTORY" + "/TaskPST_out.pst";
 ```
 
-#### Step 2: Create the PST File
-Generate a new PST with Unicode support for better compatibility.
+#### الخطوة 2: إنشاء ملف PST
+إنشاء ملف PST جديد مع دعم Unicode لتحقيق توافق أفضل.
 
 ```java
 PersonalStorage pst = PersonalStorage.create(outputPath, FileFormatVersion.Unicode);
 ```
 
-### Create and Manage Task Folder in PST
-Organize tasks by creating dedicated folders within your PST file.
+### إنشاء مجلد المهام وإدارته في PST
+قم بتنظيم المهام عن طريق إنشاء مجلدات مخصصة داخل ملف PST الخاص بك.
 
-#### Step 1: Reuse PST Creation Code
-Follow the previous steps to create a PST file.
+#### الخطوة 1: إعادة استخدام رمز إنشاء PST
+اتبع الخطوات السابقة لإنشاء ملف PST.
 
-#### Step 2: Create 'Tasks' Folder
-Generate a predefined folder for task management.
+#### الخطوة 2: إنشاء مجلد "المهام"
+إنشاء مجلد محدد مسبقًا لإدارة المهام.
 
 ```java
 FolderInfo taskFolder = pst.createPredefinedFolder("Tasks", StandardIpmFolder.Tasks);
 ```
 
-#### Step 3: Add MAPI Task to the Folder
-Insert your configured tasks into this new folder.
+#### الخطوة 3: إضافة مهمة MAPI إلى المجلد
+قم بإدراج المهام التي قمت بتكوينها في هذا المجلد الجديد.
 
 ```java
 taskFolder.addMapiMessageItem(task);
 ```
 
 ## التطبيقات العملية
-- **إدارة المشاريع**: Track and manage project tasks efficiently.
-- **تخطيط الفعاليات**: Organize events with detailed task lists.
-- **الإنتاجية الشخصية**: Maintain personal goals and chores effectively.
-- **Corporate Collaboration**: Share and delegate tasks among team members seamlessly.
+- **إدارة المشاريع**:تتبع مهام المشروع وإدارتها بكفاءة.
+- **تخطيط الفعاليات**:تنظيم الأحداث باستخدام قوائم المهام التفصيلية.
+- **الإنتاجية الشخصية**:الحفاظ على أهدافك الشخصية وأعمالك بشكل فعال.
+- **التعاون المؤسسي**:مشاركة وتفويض المهام بين أعضاء الفريق بسلاسة.
 
 ## اعتبارات الأداء
 لتحسين الأداء أثناء استخدام Aspose.Email:
-- Dispose of objects when not needed to manage memory efficiently.
-- Monitor resource usage, especially with large PST files.
-- Follow best practices for Java memory management to ensure smooth application performance.
+- تخلص من الأشياء عندما لا تكون هناك حاجة إليها لإدارة الذاكرة بكفاءة.
+- راقب استخدام الموارد، خاصةً مع ملفات PST الكبيرة.
+- اتبع أفضل الممارسات لإدارة ذاكرة Java لضمان أداء سلس للتطبيق.
 
 ## خاتمة
-By following this guide, you have learned how to create and manage MAPI tasks in a PST file using Aspose.Email for Java. This skill can significantly enhance your productivity and task management capabilities. Experiment with different configurations and explore further features offered by the library.
+باتباع هذا الدليل، ستتعلم كيفية إنشاء مهام MAPI وإدارتها في ملف PST باستخدام Aspose.Email لجافا. ستُحسّن هذه المهارة إنتاجيتك وقدراتك على إدارة المهام بشكل ملحوظ. جرّب تكوينات مختلفة واستكشف الميزات الإضافية التي تقدمها المكتبة.
 
 ### الخطوات التالية
-- Explore additional functionalities of Aspose.Email.
-- Integrate these solutions into larger projects or applications.
-- Share this knowledge with colleagues to boost team efficiency.
+- استكشف الوظائف الإضافية لـ Aspose.Email.
+- دمج هذه الحلول في مشاريع أو تطبيقات أكبر.
+- شارك هذه المعرفة مع زملائك لتعزيز كفاءة الفريق.
 
 ## قسم الأسئلة الشائعة
-1. **What is a MAPI Task?**
-   A MAPI task is an item in Microsoft Outlook used for tracking activities and deadlines.
+1. **ما هي مهمة MAPI؟**
+   مهمة MAPI عبارة عن عنصر في Microsoft Outlook يستخدم لتتبع الأنشطة والمواعيد النهائية.
 
-2. **How do I manage large PST files efficiently?**
-   Regularly archive old tasks, optimize folder structures, and monitor memory usage.
+2. **كيف يمكنني إدارة ملفات PST الكبيرة بكفاءة؟**
+   قم بأرشفة المهام القديمة بانتظام، وتحسين هياكل المجلدات، ومراقبة استخدام الذاكرة.
 
-3. **Can Aspose.Email handle multiple file formats?**
-   Yes, it supports various email and storage formats, including EML, MSG, and PST.
+3. **هل يمكن لـ Aspose.Email التعامل مع تنسيقات ملفات متعددة؟**
+   نعم، فهو يدعم تنسيقات البريد الإلكتروني والتخزين المختلفة، بما في ذلك EML وMSG وPST.
 
-4. **Is there a limit to the number of tasks in a PST?**
-   Limits depend on your system resources; managing large data effectively is key.
+4. **هل هناك حد لعدد المهام في ملف PST؟**
+   تعتمد الحدود على موارد النظام لديك؛ لذا فإن إدارة البيانات الضخمة بشكل فعال أمر بالغ الأهمية.
 
-5. **What are common errors when setting task properties?**
-   Common issues include incorrect date formats or null values for mandatory fields.
+5. **ما هي الأخطاء الشائعة عند تعيين خصائص المهمة؟**
+   تتضمن المشكلات الشائعة تنسيقات التاريخ غير الصحيحة أو القيم الفارغة للحقول الإلزامية.
 
 ## موارد
-- [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- [توثيق Aspose.Email بلغة Java](https://reference.aspose.com/email/java/)
 - [تنزيل Aspose.Email](https://releases.aspose.com/email/java/)
 - [شراء ترخيص](https://purchase.aspose.com/buy)
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)

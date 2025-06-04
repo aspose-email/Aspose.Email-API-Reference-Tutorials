@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn to streamline Exchange server contact management using Aspose.Email for Java. Connect, retrieve, and delete contacts efficiently."
-"title": "Manage Exchange Server Contacts with Aspose.Email for Java&#58; A Complete Guide"
+"description": "تعلّم كيفية تبسيط إدارة جهات اتصال خادم Exchange باستخدام Aspose.Email لـ Java. اتّصل بجهات الاتصال واستردّها واحذفها بكفاءة."
+"title": "إدارة جهات اتصال Exchange Server باستخدام Aspose.Email لـ Java - دليل كامل"
 "url": "/ar/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/"
 "weight": 1
 ---
@@ -11,37 +11,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Manage Exchange Server Contacts with Aspose.Email for Java
+# إدارة جهات اتصال Exchange Server باستخدام Aspose.Email لـ Java
 
-Looking to enhance your email management by seamlessly connecting to and managing contacts on an Exchange server using Java? This comprehensive guide will walk you through leveraging the powerful Aspose.Email library to accomplish these tasks effectively.
+هل ترغب في تحسين إدارة بريدك الإلكتروني من خلال الاتصال بسلاسة بخادم Exchange وإدارة جهات الاتصال عليه باستخدام Java؟ سيرشدك هذا الدليل الشامل إلى كيفية الاستفادة من مكتبة Aspose.Email القوية لإنجاز هذه المهام بفعالية.
 
 ## ما سوف تتعلمه:
-- Connecting to an Exchange Server using Aspose.Email's EWSClient.
-- Easily retrieving a list of contacts from your Exchange server.
-- Deleting specific contacts by their display name.
-- Practical applications and performance considerations for managing contacts in real-world scenarios.
+- الاتصال بخادم Exchange باستخدام EWSClient الخاص بـ Aspose.Email.
+- استرجاع قائمة جهات الاتصال بسهولة من خادم Exchange الخاص بك.
+- حذف جهات اتصال محددة حسب اسم العرض الخاص بها.
+- التطبيقات العملية واعتبارات الأداء لإدارة جهات الاتصال في السيناريوهات الواقعية.
 
-Let’s enhance your Exchange contact management workflow!
+دعنا نعمل على تعزيز سير عمل إدارة جهات الاتصال الخاصة بـ Exchange!
 
 ## المتطلبات الأساسية
-Before diving into the implementation, ensure you have:
+قبل البدء في التنفيذ، تأكد من أن لديك:
 
 ### المكتبات والإصدارات المطلوبة
-- **Aspose.Email for Java** library version 25.4 (or later).
+- **Aspose.Email لـ Java** إصدار المكتبة 25.4 (أو أحدث).
   
 
 ### إعداد البيئة
-- Ensure a Java Development Kit (JDK) is installed, preferably JDK16 to match with our dependency configuration.
-- Set up a Maven project in your preferred IDE.
+- تأكد من تثبيت Java Development Kit (JDK)، ويفضل JDK16 لتتوافق مع تكوين التبعيات لدينا.
+- قم بإعداد مشروع Maven في IDE المفضل لديك.
 
 ### متطلبات المعرفة
-- Basic understanding of Java and familiarity with Maven for managing dependencies.
+- فهم أساسي لـ Java والمعرفة بـ Maven لإدارة التبعيات.
 
-## Setting Up Aspose.Email for Java
-To begin using Aspose.Email for Java, you'll need to include the library in your project. Here’s how:
+## إعداد Aspose.Email لـ Java
+لبدء استخدام Aspose.Email لجافا، ستحتاج إلى تضمين المكتبة في مشروعك. إليك الطريقة:
 
-**Maven Setup**
-Add the following dependency to your `pom.xml` file:
+**إعداد Maven**
+أضف التبعية التالية إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -52,10 +52,10 @@ Add the following dependency to your `pom.xml` file:
 ```
 
 **الحصول على الترخيص**
-Aspose.Email offers a free trial, and you can request a temporary license to explore full features without limitations. For extended use, consider purchasing a subscription.
+يقدم Aspose.Email نسخة تجريبية مجانية، ويمكنك طلب ترخيص مؤقت لاستكشاف جميع ميزاته دون قيود. للاستخدام الممتد، يمكنك شراء اشتراك.
 
 ### التهيئة الأساسية
-Once the library is included in your project, initialize it as follows:
+بمجرد تضمين المكتبة في مشروعك، قم بتهيئتها على النحو التالي:
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;

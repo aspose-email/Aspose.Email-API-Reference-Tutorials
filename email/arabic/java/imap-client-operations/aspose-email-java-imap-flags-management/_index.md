@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn to efficiently manage email flags using Aspose.Email for Java. Set and remove IMAP message flags effortlessly in your Java applications."
-"title": "Master IMAP Flags with Aspose.Email Java&#58; Efficient Email Flag Management"
+"description": "تعلم كيفية إدارة علامات البريد الإلكتروني بكفاءة باستخدام Aspose.Email لجافا. عيّن علامات رسائل IMAP وأزلها بسهولة في تطبيقات جافا."
+"title": "إدارة علامات البريد الإلكتروني بكفاءة باستخدام Aspose.Email Java"
 "url": "/ar/java/imap-client-operations/aspose-email-java-imap-flags-management/"
 "weight": 1
 ---
@@ -11,34 +11,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master IMAP Flags with Aspose.Email Java: Efficient Email Flag Management
-In today's digital age, efficient email inbox management is crucial. Whether marking emails as read or unread to track attention needs, handling these tasks manually—especially for large volumes—can be daunting. **Aspose.Email for Java** simplifies managing IMAP message flags in your applications. In this tutorial, you'll learn how to set and remove these flags seamlessly using Aspose.Email.
+# إدارة علامات IMAP باستخدام Aspose.Email Java: إدارة علامات البريد الإلكتروني بكفاءة
+في عصرنا الرقمي، تُعدّ إدارة البريد الإلكتروني الوارد بكفاءة أمرًا بالغ الأهمية. سواءً كنتَ ترغب في تصنيف رسائل البريد الإلكتروني كمقروءة أو غير مقروءة لتتبع احتياجات الاهتمام، فإنّ إدارة هذه المهام يدويًا - خاصةً للرسائل الكبيرة - قد تكون مُرهقة. **Aspose.Email لـ Java** يُبسّط إدارة علامات رسائل IMAP في تطبيقاتك. في هذا البرنامج التعليمي، ستتعلم كيفية تعيين هذه العلامات وإزالتها بسلاسة باستخدام Aspose.Email.
 
 ## ما سوف تتعلمه:
-- How to integrate Aspose.Email for Java into your project
-- Setting and removing IMAP message flags with code examples
+- كيفية دمج Aspose.Email لـ Java في مشروعك
+- تعيين وإزالة علامات رسائل IMAP باستخدام أمثلة التعليمات البرمجية
 - التطبيقات الواقعية لهذه الميزات
 - نصائح لتحسين الأداء
 
 دعونا نغوص في الأمر!
 
 ### المتطلبات الأساسية
-Before we get started, ensure you have the following:
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 #### المكتبات والإصدارات المطلوبة
-- **Aspose.Email for Java**: Version 25.4 or later is recommended.
-- **Java Development Kit (JDK)**: Ensure JDK 16 is installed.
+- **Aspose.Email لـ Java**:يوصى باستخدام الإصدار 25.4 أو الإصدار الأحدث.
+- **مجموعة تطوير جافا (JDK)**:تأكد من تثبيت JDK 16.
 
 #### متطلبات إعداد البيئة
-- An IDE such as IntelliJ IDEA or Eclipse.
-- Maven for dependency management.
+- IDE مثل IntelliJ IDEA أو Eclipse.
+- Maven لإدارة التبعيات.
 
 #### متطلبات المعرفة
-- Basic understanding of Java programming.
-- Familiarity with IMAP protocol basics.
+- فهم أساسيات برمجة جافا.
+- التعرف على أساسيات بروتوكول IMAP.
 
-### Setting Up Aspose.Email for Java
-To use Aspose.Email in your project, integrate it via Maven. Add the following dependency to your `pom.xml` file:
+### إعداد Aspose.Email لـ Java
+لاستخدام Aspose.Email في مشروعك، قم بدمجه عبر Maven. أضف التبعية التالية إلى مشروعك: `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -50,13 +50,13 @@ To use Aspose.Email in your project, integrate it via Maven. Add the following d
 
 #### الحصول على الترخيص
 للبدء باستخدام Aspose.Email، يمكنك:
-- **Try a Free Trial**: Download a trial version to explore its features.
-- **احصل على رخصة مؤقتة**: Apply for a temporary license for extended use.
-- **شراء**: Buy a subscription if the tool meets your needs.
+- **جرب نسخة تجريبية مجانية**:قم بتنزيل النسخة التجريبية لاستكشاف ميزاتها.
+- **احصل على رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت للاستخدام الموسع.
+- **شراء**:قم بشراء اشتراك إذا كانت الأداة تلبي احتياجاتك.
 
 ## دليل التنفيذ
 ### ضبط علامات الرسائل
-**ملخص**: This feature allows you to mark specific emails as read in an IMAP mailbox using Aspose.Email Java API.
+**ملخص**:تتيح لك هذه الميزة وضع علامة على رسائل بريد إلكتروني معينة كمقروءة في صندوق بريد IMAP باستخدام واجهة برمجة تطبيقات Aspose.Email Java.
 
 #### الخطوة 1: تهيئة ImapClient
 ```java
@@ -65,7 +65,7 @@ import com.aspose.email.ImapFolderInfo;
 import com.aspose.email.ImapMessageFlags;
 import com.aspose.email.SecurityOptions;
 
-// Create an instance of ImapClient and set server details
+// إنشاء مثيل لـ ImapClient وتعيين تفاصيل الخادم
 ImapClient client = new ImapClient();
 client.setHost("imap.gmail.com");
 client.setPort(993);
@@ -73,60 +73,60 @@ client.setUsername("username");
 client.setPassword("password");
 client.setSecurityOptions(SecurityOptions.Auto);
 
-// Select the inbox folder to operate on
+// حدد مجلد البريد الوارد للعمل عليه
 client.selectFolder(ImapFolderInfo.IN_BOX);
 ```
-**توضيح**: Here, we initialize `ImapClient` with your IMAP server details. The security options are set to automatic for secure connections.
+**توضيح**:هنا، نقوم بالتهيئة `ImapClient` مع تفاصيل خادم IMAP الخاص بك. خيارات الأمان مضبوطة تلقائيًا للاتصالات الآمنة.
 
-#### Step 2: Mark Message as Read
+#### الخطوة 2: وضع علامة على الرسالة كمقروءة
 ```java
-// Change the 'Read' flag status of message ID 1 to mark it as read
+// تغيير حالة علامة "قراءة" لمعرف الرسالة 1 لوضع علامة عليها كمقروءة
 client.changeMessageFlags(1, ImapMessageFlags.isRead());
 ```
-**توضيح**: We use `changeMessageFlags` with the message ID and the `isRead()` method to set the email's status.
+**توضيح**:نحن نستخدم `changeMessageFlags` مع معرف الرسالة و `isRead()` طريقة لتعيين حالة البريد الإلكتروني.
 
-### Removing Message Flags
-**ملخص**: This feature demonstrates how to revert an email back to unread by removing the 'Read' flag.
+### إزالة علامات الرسائل
+**ملخص**:توضح هذه الميزة كيفية إرجاع رسالة بريد إلكتروني إلى حالة غير مقروءة عن طريق إزالة علامة "مقروءة".
 
 #### الخطوة 1: تهيئة ImapClient
-(Reuse the client initialization code from setting flags.)
+(أعد استخدام كود تهيئة العميل من إعدادات العلامات.)
 
-#### Step 2: Remove 'Read' Flag
+#### الخطوة 2: إزالة علامة "قراءة"
 ```java
-// Remove the 'Read' flag from message ID 1, marking it as unread
+// إزالة علامة "قراءة" من معرف الرسالة 1، ووضع علامة عليها كرسالة غير مقروءة
 client.removeMessageFlags(1, ImapMessageFlags.isRead());
 ```
-**توضيح**: Similar to setting the flag, `removeMessageFlags` is used with the `isRead()` method to clear the read status.
+**توضيح**:على غرار تعيين العلم، `removeMessageFlags` يتم استخدامه مع `isRead()` طريقة لمسح حالة القراءة.
 
 ## التطبيقات العملية
-- **أنظمة أتمتة البريد الإلكتروني**: Automate email management tasks in customer service systems.
-- **أدوات الإنتاجية الشخصية**: Create tools to organize and prioritize your inbox.
-- **Corporate Email Archiving**: Implement custom flagging solutions for email retention policies.
+- **أنظمة أتمتة البريد الإلكتروني**:أتمتة مهام إدارة البريد الإلكتروني في أنظمة خدمة العملاء.
+- **أدوات الإنتاجية الشخصية**:إنشاء أدوات لتنظيم صندوق الوارد الخاص بك وإعطاء الأولوية له.
+- **أرشفة البريد الإلكتروني للشركات**:تنفيذ حلول وضع العلامات المخصصة لسياسات الاحتفاظ بالبريد الإلكتروني.
 
 ## اعتبارات الأداء
 لضمان الأداء الأمثل:
-- Minimize the number of connections by reusing `ImapClient` الحالات حيثما كان ذلك ممكنا.
-- Handle exceptions gracefully, especially network-related issues.
-- Monitor resource usage and adjust Java memory settings as needed.
+- تقليل عدد الاتصالات عن طريق إعادة الاستخدام `ImapClient` الحالات حيثما كان ذلك ممكنا.
+- تعامل مع الاستثناءات بلطف، وخاصة القضايا المتعلقة بالشبكة.
+- راقب استخدام الموارد واضبط إعدادات ذاكرة Java حسب الحاجة.
 
 ## خاتمة
-By integrating Aspose.Email for Java into your projects, you can efficiently manage email flags in an IMAP mailbox. This tutorial covered setting and removing message flags with practical examples and provided insights into optimizing performance. Next steps include exploring more features of the library or considering integration with other systems to enhance functionality.
+من خلال دمج Aspose.Email لـ Java في مشاريعك، يمكنك إدارة علامات البريد الإلكتروني بكفاءة في صندوق بريد IMAP. غطّى هذا البرنامج التعليمي كيفية إعداد علامات الرسائل وإزالتها بأمثلة عملية، وقدّم رؤىً قيّمة حول تحسين الأداء. تشمل الخطوات التالية استكشاف المزيد من ميزات المكتبة أو التفكير في دمجها مع أنظمة أخرى لتحسين وظائفها.
 
 ## قسم الأسئلة الشائعة
-1. **What is Aspose.Email for Java?**
-   - A powerful email processing API that supports various protocols, including IMAP.
+1. **ما هو Aspose.Email لـ Java؟**
+   - واجهة برمجة تطبيقات معالجة البريد الإلكتروني القوية التي تدعم بروتوكولات مختلفة، بما في ذلك IMAP.
 
 2. **كيف أتعامل مع كميات كبيرة من رسائل البريد الإلكتروني بكفاءة؟**
-   - Use batch processing and optimize connection settings.
+   - استخدم معالجة الدفعات وتحسين إعدادات الاتصال.
 
 3. **هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**
-   - Yes, it's also available for .NET and other platforms.
+   - نعم، إنه متاح أيضًا لـ .NET والمنصات الأخرى.
 
-4. **What are the security implications of using IMAP in Java applications?**
-   - Always use secure connections (SSL/TLS) and handle credentials safely.
+4. **ما هي الآثار الأمنية لاستخدام IMAP في تطبيقات Java؟**
+   - استخدم دائمًا اتصالات آمنة (SSL/TLS) وقم بمعالجة بيانات الاعتماد بأمان.
 
-5. **How do I manage licenses for Aspose.Email?**
-   - Visit their website to apply for a trial or purchase a subscription.
+5. **كيف يمكنني إدارة التراخيص لـ Aspose.Email؟**
+   - قم بزيارة موقعهم الإلكتروني لتقديم طلب للحصول على نسخة تجريبية أو شراء اشتراك.
 
 ## موارد
 - **التوثيق**: [توثيق البريد الإلكتروني لـ Aspose](https://reference.aspose.com/email/java/)
@@ -136,7 +136,7 @@ By integrating Aspose.Email for Java into your projects, you can efficiently man
 - **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
 
-Start exploring the capabilities of Aspose.Email for Java today and streamline your email management process!
+ابدأ باستكشاف إمكانيات Aspose.Email لـ Java اليوم وقم بتبسيط عملية إدارة البريد الإلكتروني لديك!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,8 +1,8 @@
 ---
-"description": "Unlock the Power of Email Header Analysis with Aspose.Email for Java. Learn How to Extract and Analyze Email Headers for Enhanced Email Tracking and Security."
-"linktitle": "Extracting and Analyzing Email Headers with Aspose.Email"
+"description": "استغلّ إمكانات تحليل عناوين البريد الإلكتروني مع Aspose.Email لجافا. تعلّم كيفية استخراج وتحليل عناوين البريد الإلكتروني لتحسين تتبع البريد الإلكتروني وأمانه."
+"linktitle": "استخراج وتحليل رؤوس البريد الإلكتروني باستخدام Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Extracting and Analyzing Email Headers with Aspose.Email"
+"title": "استخراج وتحليل رؤوس البريد الإلكتروني باستخدام Aspose.Email"
 "url": "/ar/java/customizing-email-headers/extracting-and-analyzing-email-headers/"
 "weight": 12
 ---
@@ -13,62 +13,62 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracting and Analyzing Email Headers with Aspose.Email
+# استخراج وتحليل رؤوس البريد الإلكتروني باستخدام Aspose.Email
 
 
-## Introduction to Extracting and Analyzing Email Headers with Aspose.Email
+## مقدمة لاستخراج وتحليل رؤوس البريد الإلكتروني باستخدام Aspose.Email
 
-In this article, we will explore how to extract and analyze email headers using Aspose.Email for Java. Aspose.Email is a powerful Java library that allows developers to work with email messages, including parsing and manipulating email headers. We'll take you through the process step by step, providing you with the source code you need to get started.
+في هذه المقالة، سنستكشف كيفية استخراج وتحليل رؤوس رسائل البريد الإلكتروني باستخدام Aspose.Email في جافا. Aspose.Email هي مكتبة جافا فعّالة تُمكّن المطورين من العمل مع رسائل البريد الإلكتروني، بما في ذلك تحليلها ومعالجتها. سنشرح لك العملية خطوة بخطوة، ونزودك بالشفرة المصدرية اللازمة للبدء.
 
 ## المتطلبات الأساسية
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+قبل أن نتعمق في الكود، تأكد من أن لديك المتطلبات الأساسية التالية:
 
-1. Java Development Environment: Ensure that you have Java installed on your system. You can download it from [هنا](https://www.oracle.com/java/technologies/javase-downloads.html).
+1. بيئة تطوير جافا: تأكد من تثبيت جافا على نظامك. يمكنك تنزيله من [هنا](https://www.oracle.com/java/technologies/javase-downloads.html).
 
-2. Aspose.Email for Java: You'll need the Aspose.Email for Java library. You can download it from the [موقع Aspose](https://releases.aspose.com/email/java/).
+2. Aspose.Email لجافا: ستحتاج إلى مكتبة Aspose.Email لجافا. يمكنك تنزيلها من [موقع Aspose](https://releases.aspose.com/email/java/).
 
-3. Integrated Development Environment (IDE): You can use any Java-compatible IDE, such as Eclipse or IntelliJ IDEA, to write and run the code.
+3. بيئة التطوير المتكاملة (IDE): يمكنك استخدام أي بيئة تطوير متكاملة متوافقة مع Java، مثل Eclipse أو IntelliJ IDEA، لكتابة وتشغيل التعليمات البرمجية.
 
-## Step 1: Creating a Java Project
+## الخطوة 1: إنشاء مشروع Java
 
-Let's start by creating a new Java project in your preferred IDE. Once your project is set up, add the Aspose.Email for Java library to your project's classpath.
+لنبدأ بإنشاء مشروع جافا جديد في بيئة التطوير المتكاملة (IDE) المُفضّلة لديك. بعد إعداد مشروعك، أضف مكتبة Aspose.Email لجافا إلى مسار فئة مشروعك.
 
-## Step 2: Parsing Email Headers
+## الخطوة 2: تحليل رؤوس البريد الإلكتروني
 
-Now that we have our project set up, we can begin parsing email headers. Email headers are usually stored in the `Message` class of the Aspose.Email library. Here's a simple code snippet to extract and print email headers from an email message:
+الآن وقد انتهينا من إعداد مشروعنا، يمكننا البدء بتحليل عناوين البريد الإلكتروني. عادةً ما تُخزَّن عناوين البريد الإلكتروني في `Message` فئة مكتبة Aspose.Email. إليك مقتطف برمجي بسيط لاستخراج وطباعة رؤوس البريد الإلكتروني من رسالة بريد إلكتروني:
 
 ```java
-// Load the email message
+// تحميل رسالة البريد الإلكتروني
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 
-// Get the email headers
+// احصل على رؤوس البريد الإلكتروني
 HeaderCollection headers = message.getHeaders();
 
-// Print the headers
+// طباعة الرؤوس
 for (Header header : headers) {
     System.out.println(header.getName() + ": " + header.getValue());
 }
 ```
 
-In this code, we load an email message from a file and then retrieve its headers using the `getHeaders()` method. We iterate through the headers and print them out.
+في هذا الكود، نقوم بتحميل رسالة بريد إلكتروني من ملف ثم نسترد رؤوسها باستخدام `getHeaders()` الطريقة. نقوم بتكرار العناوين وطباعتها.
 
-## Step 3: Analyzing Email Headers
+## الخطوة 3: تحليل عناوين البريد الإلكتروني
 
-Once you have extracted the email headers, you can perform various analyses on them. Here are some common tasks you might want to do:
+بعد استخراج عناوين البريد الإلكتروني، يمكنك إجراء تحليلات متنوعة عليها. إليك بعض المهام الشائعة التي قد ترغب في القيام بها:
 
-### Identifying the Sender
+### تحديد هوية المرسل
 
-To identify the sender of the email, you can look for the "From" header. It usually contains the email address of the sender.
+لتحديد مُرسِل البريد الإلكتروني، ابحث عن عنوان "من". عادةً ما يحتوي هذا العنوان على عنوان البريد الإلكتروني للمُرسِل.
 
 ```java
 String sender = message.getFrom().getAddress();
 System.out.println("Sender: " + sender);
 ```
 
-### Checking for SPF and DKIM Records
+### التحقق من سجلات SPF وDKIM
 
-SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) records can help verify the authenticity of the email. You can check for these records in the headers.
+يمكن أن تساعد سجلات SPF (إطار سياسة المُرسِل) وDKIM (البريد المُعرَّف بمفاتيح النطاق) في التحقق من صحة البريد الإلكتروني. يمكنك التحقق من هذه السجلات في رؤوس الرسائل.
 
 ```java
 String spfRecord = headers.get("Received-SPF");
@@ -78,9 +78,9 @@ System.out.println("SPF Record: " + spfRecord);
 System.out.println("DKIM Record: " + dkimRecord);
 ```
 
-### Tracing the Email Route
+### تتبع مسار البريد الإلكتروني
 
-Email headers contain information about the servers the email passed through. You can trace the email's route using the "Received" headers.
+تحتوي رؤوس البريد الإلكتروني على معلومات حول الخوادم التي مر عبرها البريد الإلكتروني. يمكنك تتبع مسار البريد الإلكتروني باستخدام رؤوس "المستلم".
 
 ```java
 for (Header header : headers) {
@@ -92,29 +92,29 @@ for (Header header : headers) {
 
 ## خاتمة
 
-In this article, we've explored how to extract and analyze email headers using Aspose.Email for Java. Email headers provide valuable information about the origin and route of an email, making them essential for various purposes, including email tracking and security.
+في هذه المقالة، استكشفنا كيفية استخراج وتحليل رؤوس رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. تُوفر رؤوس رسائل البريد الإلكتروني معلومات قيّمة حول مصدر الرسالة ومسارها، مما يجعلها أساسية لأغراض متعددة، بما في ذلك تتبع البريد الإلكتروني وأمانه.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How can I access email headers in Aspose.Email?
+### كيف يمكنني الوصول إلى رؤوس البريد الإلكتروني في Aspose.Email؟
 
-You can access email headers in Aspose.Email by loading an email message and then using the `getHeaders()` method to retrieve the headers. Iterate through the headers to access their values.
+يمكنك الوصول إلى رؤوس البريد الإلكتروني في Aspose.Email عن طريق تحميل رسالة بريد إلكتروني ثم استخدام `getHeaders()` طريقة لاسترجاع الرؤوس. كرر عملية البحث في الرؤوس للوصول إلى قيمها.
 
-### What information do email headers contain?
+### ما هي المعلومات التي تحتوي عليها رؤوس البريد الإلكتروني؟
 
-Email headers contain various metadata, including sender and recipient addresses, message IDs, server routes, and authentication details. They provide insights into the email's journey and origin.
+تحتوي رؤوس البريد الإلكتروني على بيانات تعريفية متنوعة، بما في ذلك عنوانا المرسل والمستلم، ومعرفات الرسائل، ومسارات الخادم، وتفاصيل المصادقة. وتوفر هذه البيانات معلومات قيّمة حول مسار البريد الإلكتروني ومصدره.
 
-### How can I check for SPF and DKIM records in email headers?
+### كيف يمكنني التحقق من سجلات SPF وDKIM في رؤوس البريد الإلكتروني؟
 
-To check for SPF and DKIM records, you can search for specific headers like "Received-SPF" and "DKIM-Signature" in the email headers. These records help verify the email's authenticity.
+للتحقق من سجلات SPF وDKIM، يمكنك البحث عن عناوين محددة مثل "Received-SPF" و"DKIM-Signature" في عناوين البريد الإلكتروني. تساعد هذه السجلات في التحقق من صحة البريد الإلكتروني.
 
-### Why is analyzing email headers important?
+### لماذا يعد تحليل عناوين البريد الإلكتروني أمرًا مهمًا؟
 
-Analyzing email headers is crucial for various reasons, such as email tracking, security, and authentication. It helps identify the source of an email and ensures its legitimacy.
+يُعد تحليل عناوين رسائل البريد الإلكتروني أمرًا بالغ الأهمية لأسباب متعددة، مثل تتبع البريد الإلكتروني والأمان والمصادقة. فهو يساعد في تحديد مصدر البريد الإلكتروني ويضمن مصداقيته.
 
-### Can I automate email header analysis with Aspose.Email?
+### هل يمكنني أتمتة تحليل رأس البريد الإلكتروني باستخدام Aspose.Email؟
 
-Yes, you can automate email header analysis with Aspose.Email by integrating it into your Java applications. The library provides convenient methods for working with email headers.
+نعم، يمكنك أتمتة تحليل رؤوس رسائل البريد الإلكتروني باستخدام Aspose.Email من خلال دمجه في تطبيقات Java. توفر المكتبة طرقًا سهلة للتعامل مع رؤوس رسائل البريد الإلكتروني.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

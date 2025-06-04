@@ -1,8 +1,8 @@
 ---
-"description": "Learn to set alternative text for images in emails using Aspose.Email for .NET. Ensure accessibility with clear alt text. Documentation and code included."
-"linktitle": "Setting Alternative Text for Images - C# Guide"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Setting Alternative Text for Images - C# Guide"
+"description": "تعلم كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. تأكد من سهولة الوصول باستخدام نص بديل واضح. الوثائق والأكواد البرمجية مرفقة."
+"linktitle": "إعداد نص بديل للصور - دليل C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "إعداد نص بديل للصور - دليل C#"
 "url": "/ar/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/"
 "weight": 15
 ---
@@ -13,37 +13,37 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Setting Alternative Text for Images - C# Guide
+# إعداد نص بديل للصور - دليل C#
 
 
-This guide will walk you through the process of setting alternative text for images in emails using Aspose.Email for .NET. Alternative text, also known as "alt text," is used to provide a textual description of an image in case the image cannot be displayed. Aspose.Email for .NET is a powerful library that allows you to work with emails and attachments in various formats. In this guide, we will focus on setting alternative text for images in email messages using C#.
+سيشرح لك هذا الدليل عملية إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يُستخدم النص البديل، المعروف أيضًا باسم "النص البديل"، لتوفير وصف نصي للصورة في حال تعذر عرضها. Aspose.Email لـ .NET هي مكتبة فعّالة تتيح لك التعامل مع رسائل البريد الإلكتروني والمرفقات بتنسيقات مختلفة. في هذا الدليل، سنركز على إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام C#.
 
 ## المتطلبات الأساسية
 
-Before you begin, make sure you have the following prerequisites:
+قبل أن تبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
 
-1. Visual Studio or any compatible C# development environment installed.
-2. Aspose.Email for .NET library. You can use NuGet Package Manager in Visual Studio.
+1. تم تثبيت Visual Studio أو أي بيئة تطوير C# متوافقة.
+2. مكتبة Aspose.Email لـ .NET. يمكنك استخدام NuGet Package Manager في Visual Studio.
 
-## Step 1: Create a New Project
+## الخطوة 1: إنشاء مشروع جديد
 
-1. Launch Visual Studio and create a new C# console application project.
+1. قم بتشغيل Visual Studio وإنشاء مشروع تطبيق وحدة تحكم C# جديد.
 
-## Step 2: Install Aspose.Email via NuGet
+## الخطوة 2: تثبيت Aspose.Email عبر NuGet
 
-1. Right-click on your project in the Solution Explorer and select "Manage NuGet Packages."
-2. Search for "Aspose.Email" and install the latest version of the package.
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول وحدد "إدارة حزم NuGet".
+2. ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث من الحزمة.
 
-## Step 3: Add Using Statements
+## الخطوة 3: إضافة عبارات الاستخدام
 
 ```csharp
 
 using Aspose.Email.Mime;
 ```
 
-## Step 4: Load and Modify the Email Message
+## الخطوة 4: تحميل رسالة البريد الإلكتروني وتعديلها
 
-1. Load the email message using the `MailMessage` فصل:
+1. قم بتحميل رسالة البريد الإلكتروني باستخدام `MailMessage` فصل:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -52,22 +52,22 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-3. Load the HTML content of the email message:
+3. تحميل محتوى HTML لرسالة البريد الإلكتروني:
 
 ```csharp
 var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## Step 5: Add AlternativeView for Alternative Text to Images
+## الخطوة 5: إضافة AlternativeView للنص البديل للصور
 
-Add htmlview for Alternative Text to Image as AlternateView into message. 
+أضف htmlview للنص البديل للصورة كـ AlternateView في الرسالة. 
 ```csharp
 message.AlternateViews.Add(htmlView);
 ```
 
-## Step 6: Save and Send the Email
+## الخطوة 6: حفظ البريد الإلكتروني وإرساله
 
-1. Save the modified message to a file or send it using your desired method:
+1. احفظ الرسالة المعدلة في ملف أو أرسلها باستخدام الطريقة المطلوبة:
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
@@ -75,20 +75,20 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ## خاتمة
 
-In this guide, you learned how to set alternative text for images in email messages using Aspose.Email for .NET. By following the steps outlined above, you can ensure that your email content remains accessible and informative even when images cannot be displayed.
+في هذا الدليل، تعلمت كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. باتباع الخطوات الموضحة أعلاه، يمكنك ضمان بقاء محتوى بريدك الإلكتروني سهل الوصول وغني بالمعلومات حتى في حال تعذر عرض الصور.
 
 ## التعليمات
 
-## How can I download the Aspose.Email library?
+## كيف يمكنني تنزيل مكتبة Aspose.Email؟
 
-You can download the Aspose.Email library from the Aspose Releases or install it via NuGet Package Manager in Visual Studio.
+يمكنك تنزيل مكتبة Aspose.Email من إصدارات Aspose أو تثبيتها عبر NuGet Package Manager في Visual Studio.
 
-### How do I add images as linked resources in an email?
+### كيف أضيف الصور كموارد مرتبطة في البريد الإلكتروني؟
 
-To add images as linked resources in an email, you can use the `LinkedResource` class. Assign a content ID to the linked resource, and then reference this content ID in the HTML body using the `cid:` scheme. For detailed information, see the [LinkedResource documentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### Where can I find more documentation on Aspose.Email for .NET?
+لإضافة الصور كموارد مرتبطة في البريد الإلكتروني، يمكنك استخدام `LinkedResource` الفئة. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام `cid:` مخطط. للحصول على معلومات مفصلة، راجع [توثيق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email لـ .NET؟
 
-You can find more detailed documentation, tutorials, and examples on working with Aspose.Email for .NET in the [API Reference](https://reference.aspose.com/email/net/).
+يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في [مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

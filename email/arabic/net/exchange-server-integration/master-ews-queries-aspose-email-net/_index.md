@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to automate email management by mastering complex queries using logical AND/OR operations in Aspose.Email for .NET. Connect to Exchange Web Service (EWS) and optimize your workflow."
-"title": "Master EWS Queries with AND/OR Logic Using Aspose.Email for .NET&#58; A Comprehensive Guide to Email Automation"
+"description": "تعلّم كيفية أتمتة إدارة البريد الإلكتروني بإتقان الاستعلامات المعقدة باستخدام عمليات AND/OR المنطقية في Aspose.Email لـ .NET. اتصل بخدمة Exchange Web Service (EWS) وحسّن سير عملك."
+"title": "إتقان استعلامات EWS باستخدام منطق AND/OR باستخدام Aspose.Email لـ .NET - دليل شامل لأتمتة البريد الإلكتروني"
 "url": "/ar/net/exchange-server-integration/master-ews-queries-aspose-email-net/"
 "weight": 1
 ---
@@ -11,24 +11,24 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering EWS Queries with AND/OR Logic Using Aspose.Email for .NET
+# إتقان استعلامات EWS باستخدام منطق AND/OR باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
-In today's fast-paced digital world, efficiently managing emails is crucial for both personal and business productivity. With the rise of cloud services like Microsoft Exchange Online, accessing and querying email data programmatically has become essential. This comprehensive guide will walk you through connecting to the Exchange Web Service (EWS) using Aspose.Email for .NET and crafting complex email queries with logical AND/OR operations. By mastering these skills, you'll be able to automate email management tasks effectively.
+في عالمنا الرقمي المتسارع، تُعدّ إدارة رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية لزيادة إنتاجية الأفراد والشركات. ومع ازدياد انتشار الخدمات السحابية مثل Microsoft Exchange Online، أصبح الوصول إلى بيانات البريد الإلكتروني والاستعلام عنها برمجيًا أمرًا بالغ الأهمية. سيرشدك هذا الدليل الشامل خلال عملية الاتصال بخدمة Exchange Web Service (EWS) باستخدام Aspose.Email لـ .NET، وصياغة استعلامات بريد إلكتروني معقدة باستخدام عمليات AND/OR المنطقية. بإتقان هذه المهارات، ستتمكن من أتمتة مهام إدارة البريد الإلكتروني بفعالية.
 
 ### ما سوف تتعلمه
-- How to connect to EWS using Aspose.Email for .NET
-- Building and executing complex email queries with AND logic
-- Combining queries with OR logic for more flexible search criteria
-- Best practices for optimizing performance in your applications
-Ready to dive into the world of automated email management? Let's get started by ensuring you have everything set up correctly.
+- كيفية الاتصال بـ EWS باستخدام Aspose.Email لـ .NET
+- إنشاء وتنفيذ استعلامات البريد الإلكتروني المعقدة باستخدام منطق AND
+- دمج الاستعلامات مع منطق OR للحصول على معايير بحث أكثر مرونة
+- أفضل الممارسات لتحسين الأداء في تطبيقاتك
+هل أنت مستعد للانطلاق في عالم إدارة البريد الإلكتروني الآلية؟ لنبدأ بالتأكد من إعداد كل شيء بشكل صحيح.
 
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-- **المكتبات والإصدارات**: You'll need Aspose.Email for .NET. Ensure you're using a version compatible with your development environment.
-- **إعداد البيئة**: A working .NET development environment (e.g., Visual Studio) is required.
-- **متطلبات المعرفة**: Basic understanding of C# and familiarity with email protocols will be beneficial.
+- **المكتبات والإصدارات**ستحتاج إلى Aspose.Email لـ .NET. تأكد من استخدام إصدار متوافق مع بيئة التطوير لديك.
+- **إعداد البيئة**:يجب أن يكون لديك بيئة تطوير .NET عاملة (على سبيل المثال، Visual Studio).
+- **متطلبات المعرفة**:سيكون من المفيد أن يكون لديك فهم أساسي للغة C# والمعرفة ببروتوكولات البريد الإلكتروني.
 
 ## إعداد Aspose.Email لـ .NET
 
@@ -50,8 +50,8 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 - **نسخة تجريبية مجانية**:ابدأ بتنزيل نسخة تجريبية مجانية من [أسبوزي](https://releases.aspose.com/email/net/).
-- **رخصة مؤقتة**: Obtain a temporary license for extended access at [صفحة ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**: For full features, consider purchasing a license on the [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+- **رخصة مؤقتة**:الحصول على ترخيص مؤقت للوصول الموسع إلى [صفحة ترخيص Aspose المؤقت](https://purchase.aspose.com/temporary-license/).
+- **شراء**:للحصول على الميزات الكاملة، فكر في شراء ترخيص على [صفحة شراء Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 بمجرد التثبيت، قم بتشغيل Aspose.Email في مشروعك:
@@ -73,27 +73,27 @@ try {
 ```
 
 ## دليل التنفيذ
-### Connecting to EWS
-**ملخص**: Establishing a connection to the Exchange Web Service is essential for accessing your email data programmatically.
+### الاتصال بـ EWS
+**ملخص**:يعد إنشاء اتصال بخدمة Exchange Web Service أمرًا ضروريًا للوصول إلى بيانات البريد الإلكتروني الخاصة بك برمجيًا.
 
-#### Step 1: Set Up Credentials
-Define your mailbox URI, username, password, and domain. These credentials are crucial for authenticating with the EWS server.
+#### الخطوة 1: إعداد بيانات الاعتماد
+حدّد عنوان URI لصندوق بريدك الإلكتروني، واسم المستخدم، وكلمة المرور، والنطاق. هذه البيانات أساسية للمصادقة مع خادم EWS.
 
-#### Step 2: Connect Using Aspose.Email
-يستخدم `EWSClient.GetEWSClient` to establish a connection. Handle exceptions gracefully to manage any connection errors effectively.
+#### الخطوة 2: الاتصال باستخدام Aspose.Email
+يستخدم `EWSClient.GetEWSClient` لإنشاء اتصال. تعامل مع الاستثناءات بسلاسة لإدارة أي أخطاء اتصال بفعالية.
 
-### Building and Using Complex Queries with AND
-**ملخص**: Constructing complex queries allows you to filter emails based on multiple conditions, enhancing your search capabilities.
+### بناء واستخدام الاستعلامات المعقدة باستخدام AND
+**ملخص**:إن إنشاء استعلامات معقدة يسمح لك بتصفية رسائل البريد الإلكتروني استنادًا إلى شروط متعددة، مما يعزز قدرات البحث لديك.
 
-#### Step 1: Initialize MailQueryBuilder
-إنشاء مثيل لـ `MailQueryBuilder` to start building your query.
+#### الخطوة 1: تهيئة MailQueryBuilder
+إنشاء مثيل لـ `MailQueryBuilder` لبدء بناء استعلامك.
 
 ```csharp
 var builder = new MailQueryBuilder();
 ```
 
-#### Step 2: Define Query Conditions
-Use logical AND operations to combine conditions. For example, find emails from 'SpecificHost.com' that arrived before today or within the last 7 days.
+#### الخطوة 2: تحديد شروط الاستعلام
+استخدم عمليات AND المنطقية لدمج الشروط. على سبيل المثال، ابحث عن رسائل البريد الإلكتروني من "SpecificHost.com" التي وصلت قبل اليوم أو خلال الأيام السبعة الماضية.
 
 ```csharp
 builder.From.Contains("SpecificHost.com");
@@ -102,7 +102,7 @@ builder.InternalDate.Since(DateTime.Now.AddDays(-7));
 ```
 
 #### الخطوة 3: تنفيذ الاستعلام
-Reconnect to EWS and execute your query using `ListMessages`.
+أعد الاتصال بـ EWS وقم بتنفيذ استعلامك باستخدام `ListMessages`.
 
 ```csharp
 var client = EWSClient.GetEWSClient(mailboxUri, username, password, domain);
@@ -110,25 +110,25 @@ var query = builder.GetQuery();
 var messages = client.ListMessages(client.MailboxInfo.InboxUri, query);
 ```
 
-### Combining Queries with OR
-**ملخص**: Logical OR operations enable more flexible search criteria by combining multiple conditions.
+### دمج الاستعلامات مع OR
+**ملخص**:تتيح عمليات OR المنطقية معايير بحث أكثر مرونة من خلال الجمع بين شروط متعددة.
 
-#### Step 1: Initialize MailQueryBuilder
+#### الخطوة 1: تهيئة MailQueryBuilder
 ابدأ بإنشاء حساب جديد `MailQueryBuilder` مثال.
 
 ```csharp
 var builder = new MailQueryBuilder();
 ```
 
-#### Step 2: Combine Conditions Using OR
-Combine conditions to find emails with a subject containing 'test' or from 'noreply@host.com'.
+#### الخطوة 2: دمج الشروط باستخدام OR
+قم بدمج الشروط للعثور على رسائل البريد الإلكتروني التي يحتوي موضوعها على "اختبار" أو من "noreply@host.com".
 
 ```csharp
 builder.Or(builder.Subject.Contains("test"), builder.From.Contains("noreply@host.com"));
 ```
 
-#### Step 3: Execute the Combined Query
-Reconnect and execute your query using `ListMessages`.
+#### الخطوة 3: تنفيذ الاستعلام المجمع
+أعد الاتصال وتنفيذ استعلامك باستخدام `ListMessages`.
 
 ```csharp
 var client = EWSClient.GetEWSClient(mailboxUri, username, password, domain);
@@ -138,35 +138,35 @@ var messages = client.ListMessages(client.MailboxInfo.InboxUri, query);
 
 ## التطبيقات العملية
 فيما يلي بعض حالات الاستخدام الواقعية لهذه الميزات:
-1. **فرز البريد الإلكتروني تلقائيًا**: Automatically categorize emails based on sender or subject.
-2. **استخراج البيانات**: Retrieve specific data from emails for reporting purposes.
-3. **أنظمة الإشعارات**: Trigger alerts based on email content or metadata.
-4. **التكامل مع إدارة علاقات العملاء**: Sync email data with customer relationship management systems.
-5. **حلول الأرشفة**: Implement automated archiving of important emails.
+1. **فرز البريد الإلكتروني تلقائيًا**:تصنيف رسائل البريد الإلكتروني تلقائيًا استنادًا إلى المرسل أو الموضوع.
+2. **استخراج البيانات**:استرجاع بيانات محددة من رسائل البريد الإلكتروني لأغراض إعداد التقارير.
+3. **أنظمة الإشعارات**:تشغيل التنبيهات استنادًا إلى محتوى البريد الإلكتروني أو البيانات الوصفية.
+4. **التكامل مع إدارة علاقات العملاء**:مزامنة بيانات البريد الإلكتروني مع أنظمة إدارة علاقات العملاء.
+5. **حلول الأرشفة**:تنفيذ الأرشفة الآلية للرسائل الإلكترونية المهمة.
 
 ## اعتبارات الأداء
-- **تحسين الاستعلامات**: Use specific conditions to reduce the number of emails processed.
-- **إدارة الموارد**: Ensure efficient memory usage by disposing of objects properly.
-- **معالجة الدفعات**: Process emails in batches to avoid overloading your application or network.
+- **تحسين الاستعلامات**:استخدم شروطًا محددة لتقليل عدد رسائل البريد الإلكتروني التي تتم معالجتها.
+- **إدارة الموارد**:تأكد من استخدام الذاكرة بكفاءة عن طريق التخلص من الكائنات بشكل صحيح.
+- **معالجة الدفعات**:قم بمعالجة رسائل البريد الإلكتروني على دفعات لتجنب زيادة تحميل تطبيقك أو شبكتك.
 
 ## خاتمة
-You've now mastered connecting to EWS and building complex queries using Aspose.Email for .NET. These skills will empower you to automate email management tasks efficiently. For further exploration, consider integrating these techniques with other systems or exploring additional features of Aspose.Email.
+لقد أتقنتَ الآن الاتصال بأنظمة EWS وبناء استعلامات معقدة باستخدام Aspose.Email لـ .NET. ستُمكّنك هذه المهارات من أتمتة مهام إدارة البريد الإلكتروني بكفاءة. لمزيد من الاستكشاف، فكّر في دمج هذه التقنيات مع أنظمة أخرى أو استكشاف ميزات إضافية لـ Aspose.Email.
 
 ### الخطوات التالية
-- Experiment with different query combinations.
-- Integrate your solution into larger applications.
+- تجربة مجموعات الاستعلام المختلفة.
+- دمج الحلول الخاصة بك في تطبيقات أكبر.
 
 ## قسم الأسئلة الشائعة
 1. **كيف أتعامل مع أخطاء المصادقة؟**
-   - Ensure your credentials are correct and that you have the necessary permissions to access EWS.
-2. **Can I use this for large mailboxes?**
-   - Yes, but consider optimizing queries to improve performance.
-3. **What if my query returns no results?**
-   - Double-check your conditions and ensure they match the emails you're looking for.
-4. **How do I manage API rate limits?**
-   - Implement retry logic and respect any rate limit guidelines provided by Microsoft.
-5. **Can I use Aspose.Email with other email providers?**
-   - Yes, Aspose.Email supports multiple protocols beyond EWS.
+   - تأكد من صحة بيانات الاعتماد الخاصة بك وأن لديك الأذونات اللازمة للوصول إلى EWS.
+2. **هل يمكنني استخدام هذا لصناديق البريد الكبيرة؟**
+   - نعم، ولكن خذ بعين الاعتبار تحسين الاستعلامات لتحسين الأداء.
+3. **ماذا لو لم يتم إرجاع أي نتائج لاستعلامي؟**
+   - تأكد من صحة شروطك وتأكد من تطابقها مع رسائل البريد الإلكتروني التي تبحث عنها.
+4. **كيف يمكنني إدارة حدود معدل واجهة برمجة التطبيقات (API)؟**
+   - قم بتنفيذ منطق إعادة المحاولة واحترام أي إرشادات تتعلق بحدود المعدلات التي تقدمها Microsoft.
+5. **هل يمكنني استخدام Aspose.Email مع موفري البريد الإلكتروني الآخرين؟**
+   - نعم، يدعم Aspose.Email بروتوكولات متعددة بخلاف EWS.
 
 ## موارد
 - **التوثيق**: [توثيق Aspose Email لـ .NET](https://reference.aspose.com/email/net/)
@@ -176,7 +176,7 @@ You've now mastered connecting to EWS and building complex queries using Aspose.
 - **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **يدعم**: [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10)
 
-By following this guide, you'll be well-equipped to leverage the power of Aspose.Email for .NET in your projects. Happy coding!
+باتباع هذا الدليل، ستكون جاهزًا تمامًا للاستفادة من قوة Aspose.Email لـ .NET في مشاريعك. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

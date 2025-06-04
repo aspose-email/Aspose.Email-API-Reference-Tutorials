@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to secure your emails with Email Encryption and Decryption using Aspose.Email for Java. Step-by-step guide, source code, and FAQs included."
-"linktitle": "Email Encryption and Decryption with Aspose.Email"
+"description": "تعرّف على كيفية تأمين رسائل بريدك الإلكتروني باستخدام تشفير البريد الإلكتروني وفك تشفيره باستخدام Aspose.Email لجافا. يتضمن دليلًا خطوة بخطوة، وشيفرة المصدر، والأسئلة الشائعة."
+"linktitle": "تشفير البريد الإلكتروني وفك تشفيره باستخدام Aspose.Email"
 "second_title": "Aspose.Email Java Email Management API"
-"title": "Email Encryption and Decryption with Aspose.Email"
+"title": "تشفير البريد الإلكتروني وفك تشفيره باستخدام Aspose.Email"
 "url": "/ar/java/exploring-email-security/email-encryption-and-decryption/"
 "weight": 11
 ---
@@ -13,63 +13,63 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Email Encryption and Decryption with Aspose.Email
+# تشفير البريد الإلكتروني وفك تشفيره باستخدام Aspose.Email
 
 
 ## مقدمة
 
-Email Encryption and Decryption are essential for securing sensitive information in emails. Aspose.Email for Java provides robust tools to achieve this. In this guide, we'll walk you through the process step by step.
+يُعد تشفير البريد الإلكتروني وفك تشفيره أمرًا بالغ الأهمية لتأمين المعلومات الحساسة فيه. يوفر Aspose.Email لـ Java أدوات فعّالة لتحقيق ذلك. في هذا الدليل، سنشرح العملية خطوة بخطوة.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-1. Java Development Environment.
-2. Aspose.Email for Java library. You can download it from [هنا](https://releases.aspose.com/email/java/).
+1. بيئة تطوير جافا.
+2. مكتبة Aspose.Email لجافا. يمكنك تنزيلها من [هنا](https://releases.aspose.com/email/java/).
 
-## Step 1: Setting Up Your Java Project
+## الخطوة 1: إعداد مشروع Java الخاص بك
 
-To get started, create a new Java project and add the Aspose.Email library to your classpath.
+للبدء، قم بإنشاء مشروع Java جديد وأضف مكتبة Aspose.Email إلى مسار الفصل الخاص بك.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Step 2: Email Encryption
+## الخطوة 2: تشفير البريد الإلكتروني
 
-### Create an Email Message
+### إنشاء رسالة بريد إلكتروني
 
 ```java
 MailMessage message = new MailMessage();
 message.setSubject("Confidential Document");
 message.setBody("This is a confidential document.");
 
-// Set sender and recipient
+// تعيين المرسل والمستلم
 message.setFrom("sender@example.com");
 message.getTo().add("recipient@example.com");
 
-// Encrypt the email
+// تشفير البريد الإلكتروني
 message.encrypt(EncryptionAlgorithm.TripleDes);
 ```
 
-### Save the Encrypted Email
+### حفظ البريد الإلكتروني المشفر
 
 ```java
 message.save("encrypted_email.eml", SaveOptions.getDefaultEml());
 ```
 
-## Step 3: Email Decryption
+## الخطوة 3: فك تشفير البريد الإلكتروني
 
-### Load the Encrypted Email
+### تحميل البريد الإلكتروني المشفر
 
 ```java
 MailMessage encryptedMessage = MailMessage.load("encrypted_email.eml");
 
-// Decrypt the email
+// فك تشفير البريد الإلكتروني
 encryptedMessage.decrypt();
 ```
 
-### Extract the Decrypted Content
+### استخراج المحتوى المشفر
 
 ```java
 String decryptedSubject = encryptedMessage.getSubject();
@@ -78,31 +78,31 @@ String decryptedBody = encryptedMessage.getBodyText();
 
 ## خاتمة
 
-Securing your emails with encryption and decryption is crucial for protecting sensitive information. Aspose.Email for Java simplifies this process, ensuring your data remains confidential.
+يُعدّ تأمين رسائل بريدك الإلكتروني بالتشفير وفك التشفير أمرًا بالغ الأهمية لحماية المعلومات الحساسة. يُبسّط Aspose.Email لـ Java هذه العملية، ويضمن سرية بياناتك.
 
 ## الأسئلة الشائعة
 
-### Q1: Is Aspose.Email compatible with other Java libraries?
+### س1: هل Aspose.Email متوافق مع مكتبات Java الأخرى؟
 
-Yes, Aspose.Email seamlessly integrates with other Java libraries, making it versatile for various projects.
+نعم، يتكامل Aspose.Email بسلاسة مع مكتبات Java الأخرى، مما يجعله متعدد الاستخدامات لمشاريع مختلفة.
 
-### Q2: Can I encrypt attachments in an email?
+### س2: هل يمكنني تشفير المرفقات في البريد الإلكتروني؟
 
-Absolutely, you can encrypt both the email body and attachments for enhanced security.
+بالتأكيد، يمكنك تشفير نص البريد الإلكتروني والمرفقات لتحسين الأمان.
 
-### Q3: Are there other encryption algorithms available?
+### س3: هل هناك خوارزميات تشفير أخرى متاحة؟
 
-Aspose.Email supports various encryption algorithms, allowing you to choose the level of security you need.
+يدعم Aspose.Email خوارزميات تشفير مختلفة، مما يسمح لك باختيار مستوى الأمان الذي تحتاجه.
 
-### Q4: Is Aspose.Email suitable for large-scale email processing?
+### س4: هل Aspose.Email مناسب لمعالجة البريد الإلكتروني على نطاق واسع؟
 
-Yes, it's designed for scalability, making it suitable for both small-scale and large-scale email processing.
+نعم، تم تصميمه ليكون قابلاً للتوسع، مما يجعله مناسبًا لمعالجة البريد الإلكتروني على نطاق صغير وواسع النطاق.
 
-### Q5: Where can I find more resources on Aspose.Email for Java?
+### س5: أين يمكنني العثور على المزيد من الموارد حول Aspose.Email لـ Java؟
 
-Visit the API documentation [هنا](https://reference.aspose.com/email/java/) for detailed information and examples.
+قم بزيارة وثائق واجهة برمجة التطبيقات [هنا](https://reference.aspose.com/email/java/) لمزيد من المعلومات والأمثلة التفصيلية.
 
-Now you have a comprehensive understanding of Email Encryption and Decryption using Aspose.Email for Java. Start securing your emails today!
+الآن أصبح لديك فهم شامل لتشفير وفك تشفير البريد الإلكتروني باستخدام Aspose.Email لجافا. ابدأ بتأمين رسائل بريدك الإلكتروني اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

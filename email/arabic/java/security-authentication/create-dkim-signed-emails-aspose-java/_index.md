@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to implement and send DKIM-signed emails using Aspose.Email for Java. Enhance email security with this step-by-step guide."
-"title": "How to Create DKIM-Signed Emails Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية تنفيذ وإرسال رسائل بريد إلكتروني مُوقّعة بـ DKIM باستخدام Aspose.Email لـ Java. عزّز أمان بريدك الإلكتروني باتباع هذا الدليل المُفصّل."
+"title": "كيفية إنشاء رسائل بريد إلكتروني مُوقّعة بـ DKIM باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/security-authentication/create-dkim-signed-emails-aspose-java/"
 "weight": 1
 ---
@@ -11,24 +11,24 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create DKIM-Signed Emails Using Aspose.Email for Java: A Comprehensive Guide
+# كيفية إنشاء رسائل بريد إلكتروني مُوقّعة بـ DKIM باستخدام Aspose.Email لـ Java: دليل شامل
 
-In today's digital age, ensuring email authenticity is crucial for both personal and professional communication. One effective method of verifying an email's legitimacy is by implementing DomainKeys Identified Mail (DKIM). This comprehensive guide will show you how to create and send DKIM-signed emails using Aspose.Email for Java.
+في عصرنا الرقمي، يُعدّ ضمان مصداقية البريد الإلكتروني أمرًا بالغ الأهمية للتواصل الشخصي والمهني. ومن الطرق الفعّالة للتحقق من مصداقية البريد الإلكتروني تطبيق البريد المُعرَّف بمفاتيح النطاق (DKIM). سيوضح لك هذا الدليل الشامل كيفية إنشاء وإرسال رسائل بريد إلكتروني مُوقَّعة بمفاتيح النطاق (DKIM) باستخدام Aspose.Email لجافا.
 
 **ما سوف تتعلمه:**
-- How to load a private key from a PEM file
-- Prepare DKIM signature information
-- Create and sign an email message with DKIM
-- Send the signed email using SMTP
+- كيفية تحميل مفتاح خاص من ملف PEM
+- إعداد معلومات توقيع DKIM
+- إنشاء رسالة بريد إلكتروني وتوقيعها باستخدام DKIM
+- إرسال البريد الإلكتروني الموقع باستخدام SMTP
 
-Let's dive into the prerequisites before we begin implementing these features.
+دعونا نلقي نظرة على المتطلبات الأساسية قبل أن نبدأ في تنفيذ هذه الميزات.
 
 ## المتطلبات الأساسية
 
-Before you start, ensure that you have the following setup:
+قبل البدء، تأكد من أن لديك الإعداد التالي:
 
-- **Aspose.Email for Java**: Include Aspose.Email library in your project. The latest version at the time of writing is 25.4.
-- **Maven Setup**: If you're using Maven, add the dependency as shown below:
+- **Aspose.Email لـ Java**أدرج مكتبة Aspose.Email في مشروعك. أحدث إصدار وقت كتابة هذا التقرير هو 25.4.
+- **إعداد Maven**:إذا كنت تستخدم Maven، أضف التبعية كما هو موضح أدناه:
   
   ```xml
   <dependency>
@@ -38,50 +38,50 @@ Before you start, ensure that you have the following setup:
       <classifier>jdk16</classifier>
   </dependency>
   ```
-- **بيئة التطوير**: Java JDK 16 or later is required.
-- **Basic Knowledge of Java and Email Protocols**: Familiarity with Java programming and email protocols like SMTP will be helpful.
+- **بيئة التطوير**:يتطلب Java JDK 16 أو إصدار أحدث.
+- **المعرفة الأساسية بلغة جافا وبروتوكولات البريد الإلكتروني**:ستكون المعرفة ببرمجة Java وبروتوكولات البريد الإلكتروني مثل SMTP مفيدة.
 
-Next, let's set up Aspose.Email for Java in your project.
+بعد ذلك، دعنا نقوم بإعداد Aspose.Email لـ Java في مشروعك.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started with Aspose.Email for Java, you need to configure it correctly. Here’s how you can do that:
+لبدء استخدام Aspose.Email لجافا، عليك تهيئته بشكل صحيح. إليك كيفية القيام بذلك:
 
-1. **Add Dependency**: Include the Maven dependency provided above in your `pom.xml` ملف.
-2. **الحصول على الترخيص**: You have several options to acquire a license:
+1. **إضافة التبعية**:قم بتضمين تبعية Maven المقدمة أعلاه في ملفك `pom.xml` ملف.
+2. **الحصول على الترخيص**:لديك عدة خيارات للحصول على الترخيص:
    - **نسخة تجريبية مجانية**:تنزيل ترخيص مؤقت من [موقع Aspose](https://purchase.aspose.com/temporary-license/).
-   - **شراء**: If you find Aspose.Email useful, consider purchasing a license for full access.
-3. **التهيئة الأساسية**: Ensure that your Java project recognizes the Aspose.Email library after adding the dependency.
+   - **شراء**:إذا وجدت Aspose.Email مفيدًا، ففكر في شراء ترخيص للوصول الكامل.
+3. **التهيئة الأساسية**:تأكد من أن مشروع Java الخاص بك يتعرف على مكتبة Aspose.Email بعد إضافة التبعية.
 
-With the setup complete, let's move on to implementing the features one by one.
+بعد اكتمال عملية الإعداد، دعنا ننتقل إلى تنفيذ الميزات واحدة تلو الأخرى.
 
-## Load Private Key from PEM File
+## تحميل المفتاح الخاص من ملف PEM
 
 ### ملخص
-Loading a private key is essential for creating DKIM signatures. This section demonstrates how to load a private key using Aspose.Email's `PemReader`.
+يُعد تحميل مفتاح خاص أمرًا أساسيًا لإنشاء توقيعات DKIM. يوضح هذا القسم كيفية تحميل مفتاح خاص باستخدام Aspose.Email. `PemReader`.
 
-### Step-by-Step Instructions
+### تعليمات خطوة بخطوة
 
-#### Specify the Path to Your PEM File
+#### حدد المسار إلى ملف PEM الخاص بك
 ```java
 String privateKeyFile = "YOUR_DOCUMENT_DIRECTORY/key2.pem";
 ```
-*توضيح*: يستبدل `"YOUR_DOCUMENT_DIRECTORY/key2.pem"` with the actual path where your PEM file is stored.
+*توضيح*: يستبدل `"YOUR_DOCUMENT_DIRECTORY/key2.pem"` مع المسار الفعلي الذي يتم تخزين ملف PEM الخاص بك فيه.
 
-#### Load the Private Key Using PemReader
+#### تحميل المفتاح الخاص باستخدام PemReader
 ```java
 RSACryptoServiceProvider rsa = PemReader.getPrivateKey(privateKeyFile);
 ```
-*Parameters and Return Values*: `privateKeyFile` is a string representing the file path. The method returns an instance of `RSACryptoServiceProvider`, which represents your private key.
+*المعلمات وقيم الإرجاع*: `privateKeyFile` سلسلة تمثل مسار الملف. تُرجع الطريقة مثيلًا من `RSACryptoServiceProvider`، والذي يمثل مفتاحك الخاص.
 
-## Prepare DKIM Signature Information
+## إعداد معلومات توقيع DKIM
 
 ### ملخص
-Creating a DKIM signature involves specifying the domain and selector, along with the headers that will be signed.
+يتضمن إنشاء توقيع DKIM تحديد المجال والمحدد، بالإضافة إلى الرؤوس التي سيتم توقيعها.
 
-### Step-by-Step Instructions
+### تعليمات خطوة بخطوة
 
-#### Create a New DKIMSignatureInfo Object
+#### إنشاء كائن DKIMSignatureInfo جديد
 ```java
 DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test\
 

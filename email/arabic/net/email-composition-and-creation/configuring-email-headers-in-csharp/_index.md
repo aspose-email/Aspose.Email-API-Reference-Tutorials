@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to configure custom email headers in C# using Aspose.Email for .NET. Step-by-step guide with source code included. Enhance email control and security."
-"linktitle": "Configuring Email Headers in C#"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Configuring Email Headers in C#"
+"description": "تعرّف على كيفية إعداد عناوين بريد إلكتروني مخصصة بلغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع شفرة المصدر المرفقة. حسّن التحكم في البريد الإلكتروني وأمانه."
+"linktitle": "تكوين رؤوس البريد الإلكتروني في C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "تكوين رؤوس البريد الإلكتروني في C#"
 "url": "/ar/net/email-composition-and-creation/configuring-email-headers-in-csharp/"
 "weight": 17
 ---
@@ -13,38 +13,38 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Configuring Email Headers in C#
+# تكوين رؤوس البريد الإلكتروني في C#
 
 
-Email communication has become an integral part of modern business and personal interactions. While the content of an email is crucial, the headers accompanying the email are equally significant. Email headers provide valuable information about the message, sender, recipient, and more. Configuring email headers in C# using Aspose.Email for .NET offers a powerful way to customize and control the information embedded within email messages. In this article, we'll explore how to configure email headers step by step using Aspose.Email for .NET library.
+أصبح التواصل عبر البريد الإلكتروني جزءًا لا يتجزأ من التفاعلات التجارية والشخصية الحديثة. ورغم أهمية محتوى البريد الإلكتروني، فإن العناوين المصاحبة له لا تقل أهمية. توفر عناوين البريد الإلكتروني معلومات قيّمة حول الرسالة والمرسل والمستلم وغيرها. يوفر تكوين عناوين البريد الإلكتروني بلغة C# باستخدام Aspose.Email لـ .NET طريقة فعّالة لتخصيص المعلومات المضمنة في رسائل البريد الإلكتروني والتحكم فيها. في هذه المقالة، سنستكشف كيفية تكوين عناوين البريد الإلكتروني خطوة بخطوة باستخدام مكتبة Aspose.Email لـ .NET.
 
-## Introduction to Email Headers in C#
+## مقدمة إلى عناوين البريد الإلكتروني في C#
 
-Email headers are metadata that contain essential details about an email message. These headers include information like sender and recipient addresses, subject, date, content type, and more. In C#, Aspose.Email for .NET simplifies the process of working with email headers, allowing developers to customize and manipulate them according to specific requirements.
+رؤوس البريد الإلكتروني هي بيانات وصفية تحتوي على تفاصيل أساسية حول رسالة البريد الإلكتروني. تتضمن هذه الرؤوس معلومات مثل عنواني المُرسِل والمستلم، والموضوع، والتاريخ، ونوع المحتوى، وغيرها. في لغة C#، يُبسّط Aspose.Email لـ .NET عملية التعامل مع رؤوس البريد الإلكتروني، مما يسمح للمطورين بتخصيصها وتعديلها وفقًا لمتطلبات محددة.
 
-## Understanding the Importance of Email Headers
+## فهم أهمية عناوين البريد الإلكتروني
 
-Email headers serve several crucial purposes:
-#### Routing: 
-Headers determine the path an email takes from sender to recipient.
-#### Authentication
-Headers like DKIM and SPF help verify the authenticity of emails.
-#### Subject Line: 
-The subject header gives recipients an idea of the email's content.
-#### Reply Handling: 
-Headers like Reply-To ensure proper handling of replies.
+تخدم رؤوس البريد الإلكتروني عدة أغراض حاسمة:
+#### التوجيه: 
+تحدد الرؤوس المسار الذي يتخذه البريد الإلكتروني من المرسل إلى المستلم.
+#### المصادقة
+تساعد العناوين مثل DKIM وSPF في التحقق من صحة رسائل البريد الإلكتروني.
+#### سطر الموضوع: 
+يمنح رأس الموضوع للمستلمين فكرة عن محتوى البريد الإلكتروني.
+#### معالجة الرد: 
+إن العناوين مثل "الرد" تضمن التعامل السليم مع الردود.
 
-## 3. Installing Aspose.Email for .NET
+## 3. تثبيت Aspose.Email لـ .NET
 
-Before we begin, make sure you have the Aspose.Email for .NET library installed. You can download and add the library to your project via NuGet package manager.
+قبل أن نبدأ، تأكد من تثبيت مكتبة Aspose.Email لـ .NET. يمكنك تنزيل المكتبة وإضافتها إلى مشروعك عبر مدير الحزم NuGet.
 
 ```csharp
 Install-Package Aspose.Email
 ```
 
-## 4. Creating and Sending an Email with Custom Headers
+## 4. إنشاء وإرسال بريد إلكتروني باستخدام عناوين مخصصة
 
-To send an email with custom headers, follow these steps:
+لإرسال بريد إلكتروني برؤوس مخصصة، اتبع الخطوات التالية:
 
 ```csharp
 using Aspose.Email;
@@ -53,33 +53,33 @@ using Aspose.Email;
 // إنشاء مثيل جديد لفئة MailMessage
 MailMessage message = new MailMessage();
 
-// Add headers to the message
+// إضافة رؤوس إلى الرسالة
 message.Headers.Add("X-Custom-Header", "Custom Value");
 message.Headers.Add("X-Priority", "High");
 
-// Set other properties of the message
+// تعيين خصائص أخرى للرسالة
 message.Subject = "Hello from Aspose.Email";
 message.Body = "This is a test email.";
 
-// Configure the mail client and send the message
+// قم بتكوين عميل البريد وإرسال الرسالة
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
 client.Send(message);
 ```
 
-## 5. Adding Commonly Used Headers
+## 5. إضافة العناوين الشائعة الاستخدام
 
-Certain headers are commonly used in email messages:
+تُستخدم عادةً بعض الرؤوس في رسائل البريد الإلكتروني:
 
-#### Subject: 
-Set the email subject using the `message.Subject` ملكية.
-#### From: 
-Specify the sender's address using the `message.From` ملكية.
-#### To: 
-Define the recipient's address using the `message.To` ملكية.
+#### موضوع: 
+قم بتعيين موضوع البريد الإلكتروني باستخدام `message.Subject` ملكية.
+#### من: 
+حدد عنوان المرسل باستخدام `message.From` ملكية.
+#### ل: 
+قم بتحديد عنوان المستلم باستخدام `message.To` ملكية.
 
-## 6. Customizing Additional Headers
+## 6. تخصيص الرؤوس الإضافية
 
-Additional headers like CC, BCC, and Reply-To can be customized similarly to other headers.
+يمكن تخصيص العناوين الإضافية مثل CC وBCC والرد على نحو مماثل للعناوين الأخرى.
 
 ```csharp
 message.CC.Add("cc@example.com");
@@ -87,60 +87,60 @@ message.Bcc.Add("bcc@example.com");
 message.ReplyToList.Add("reply@example.com");
 ```
 
-## 7. Handling MIME-Version and Content-Type Headers
+## 7. التعامل مع رؤوس MIME-Version و Content-Type
 
-ال `MIME-Version` header ensures proper MIME compatibility, while the `Content-Type` header specifies the type of content in the email body.
+ال `MIME-Version` يضمن الرأس التوافق المناسب لـ MIME، بينما `Content-Type` يحدد الرأس نوع المحتوى الموجود في نص البريد الإلكتروني.
 
 ```csharp
 message.Headers.Add("MIME-Version", "1.0");
 message.ContentType.MediaType = "text/plain";
 ```
 
-## 8. Ensuring Security with DKIM and SPF Headers
+## 8. ضمان الأمان باستخدام رؤوس DKIM وSPF
 
-To enhance email security, add DKIM and SPF headers to your emails:
+لتعزيز أمان البريد الإلكتروني، أضف رؤوس DKIM وSPF إلى رسائل البريد الإلكتروني الخاصة بك:
 
 ```csharp
 message.Headers.Add("DKIM-Signature", "...");
 message.Headers.Add("Received-SPF", "pass");
 ```
 
-## 9. Verifying Email Headers
+## 9. التحقق من عناوين البريد الإلكتروني
 
-Before sending emails, it's essential to verify that headers are correctly formatted. Aspose.Email provides validation features to ensure compliance with email standards.
+قبل إرسال رسائل البريد الإلكتروني، من الضروري التأكد من تنسيق العناوين بشكل صحيح. يوفر Aspose.Email ميزات تحقق لضمان الامتثال لمعايير البريد الإلكتروني.
 
-## 10. Troubleshooting Header-related Issues
+## 10. استكشاف الأخطاء وإصلاحها المتعلقة بالرأس
 
-If you encounter header-related issues, ensure that headers are correctly formatted and adhere to email standards. Also, check for any conflicts between headers.
+إذا واجهتَ مشاكل في عناوين الرسائل، فتأكد من تنسيقها بشكل صحيح والتزامها بمعايير البريد الإلكتروني. وتحقق أيضًا من أي تعارضات بين العناوين.
 
-## 11. Conclusion
+## 11. الخاتمة
 
-Configuring email headers in C# using Aspose.Email for .NET empowers developers to customize and control various aspects of email messages. By understanding the significance of different headers and following the step-by-step guide provided in this article, you can create emails with tailored headers that enhance routing, security, and overall user experience.
+يُمكّن إعداد عناوين البريد الإلكتروني بلغة C# باستخدام Aspose.Email لـ .NET المطورين من تخصيص رسائل البريد الإلكتروني والتحكم فيها من جوانب مختلفة. بفهم أهمية العناوين المختلفة واتباع الدليل المفصل في هذه المقالة، يمكنك إنشاء رسائل بريد إلكتروني برؤوس مُخصصة تُحسّن التوجيه والأمان وتجربة المستخدم بشكل عام.
 
-## 12. FAQs
+## 12. الأسئلة الشائعة
 
 ### كيف أقوم بتثبيت Aspose.Email لـ .NET؟
 
-To install Aspose.Email for .NET, use the NuGet package manager with the following command:
+لتثبيت Aspose.Email لـ .NET، استخدم مدير الحزم NuGet مع الأمر التالي:
 ```csharp
 Install-Package Aspose.Email
 ```
 
-### Can I customize headers like CC and BCC?
+### هل يمكنني تخصيص العناوين مثل CC وBCC؟
 
-Yes, you can customize headers like CC and BCC using the `message.CC` و `message.Bcc` properties.
+نعم، يمكنك تخصيص العناوين مثل CC وBCC باستخدام `message.CC` و `message.Bcc` ملكيات.
 
-### What is the purpose of the DKIM-Signature header?
+### ما هو الغرض من رأس DKIM-Signature؟
 
-The DKIM-Signature header is used to digitally sign emails, providing a mechanism for the recipient to verify the email's authenticity.
+يتم استخدام رأس DKIM-Signature لتوقيع رسائل البريد الإلكتروني رقميًا، مما يوفر آلية للمستلم للتحقق من صحة البريد الإلكتروني.
 
-### How do I handle email header validation?
+### كيف أتعامل مع التحقق من صحة رأس البريد الإلكتروني؟
 
-Aspose.Email offers validation features to ensure that email headers are correctly formatted and compliant with standards.
+يوفر Aspose.Email ميزات التحقق للتأكد من تنسيق رؤوس البريد الإلكتروني بشكل صحيح وتوافقها مع المعايير.
 
-### Are email headers case-sensitive?
+### هل عناوين البريد الإلكتروني حساسة لحالة الأحرف؟
 
-Yes, email headers are case-insensitive. However, it's a good practice to maintain consistent capitalization for better compatibility.
+نعم، عناوين البريد الإلكتروني لا تراعي حالة الأحرف. مع ذلك، يُنصح بالحفاظ على استخدام الأحرف الكبيرة بشكل متسق لضمان توافق أفضل.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

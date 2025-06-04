@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to integrate Aspose.Email with Java for seamless connection to Microsoft Exchange Server. Streamline your email workflows by listing messages from public folders."
-"title": "Efficiently Connect and List Exchange Messages Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية دمج Aspose.Email مع Java لاتصال سلس بخادم Microsoft Exchange Server. بسّط سير عمل بريدك الإلكتروني من خلال سرد الرسائل من المجلدات العامة."
+"title": "ربط الرسائل وسردها بكفاءة باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/"
 "weight": 1
 ---
@@ -11,38 +11,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Efficiently Connect and List Exchange Messages Using Aspose.Email for Java
+# ربط الرسائل وسردها بكفاءة باستخدام Aspose.Email لـ Java
 
 ## مقدمة
-In today's fast-paced business environment, efficiently managing emails is crucial. Whether you're an IT professional or a developer working on enterprise solutions, connecting your applications to Microsoft Exchange Server can streamline communication workflows significantly. This tutorial guides you through using Aspose.Email for Java to connect to an Exchange server and list messages recursively from public folders.
+في بيئة الأعمال سريعة التطور اليوم، تُعدّ إدارة رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية. سواء كنت متخصصًا في تكنولوجيا المعلومات أو مطورًا يعمل على حلول المؤسسات، فإن ربط تطبيقاتك بخادم Microsoft Exchange Server يُسهّل سير عمل الاتصالات بشكل كبير. يرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ Java للاتصال بخادم Exchange وسرد الرسائل بشكل متكرر من المجلدات العامة.
 
 **ما سوف تتعلمه:**
-- How to establish a connection with an Exchange Server using Aspose.Email for Java.
-- Listing all public folders available in the Exchange Server.
-- Displaying folder information, including names and subfolder counts.
-- Recursively listing and saving messages from these folders.
+- كيفية إنشاء اتصال مع Exchange Server باستخدام Aspose.Email لـ Java.
+- إدراج جميع المجلدات العامة المتوفرة في Exchange Server.
+- عرض معلومات المجلد، بما في ذلك الأسماء وعدد المجلدات الفرعية.
+- إدراج الرسائل وحفظها بشكل متكرر من هذه المجلدات.
 
-As we proceed, you’ll find that integrating this library into your Java applications is straightforward. Let's start by setting up everything needed to get going!
+مع تقدمنا، ستجد أن دمج هذه المكتبة في تطبيقات جافا سهل للغاية. لنبدأ بإعداد كل ما يلزم للبدء!
 
 ## المتطلبات الأساسية
-Before diving into code implementation, ensure you have the following:
+قبل الغوص في تنفيذ التعليمات البرمجية، تأكد من أن لديك ما يلي:
 
 ### المكتبات المطلوبة
-- **Aspose.Email for Java**: You'll need version 25.4 of this library.
-- **Java Development Kit (JDK)**: Ensure your system has JDK installed and properly configured.
+- **Aspose.Email لـ Java**:ستحتاج إلى الإصدار 25.4 من هذه المكتبة.
+- **مجموعة تطوير جافا (JDK)**:تأكد من تثبيت JDK على نظامك وتكوينه بشكل صحيح.
 
 ### متطلبات إعداد البيئة
-- **Maven**: We will be using Maven to manage dependencies. Make sure Maven is set up in your development environment.
+- **مافن**سنستخدم Maven لإدارة التبعيات. تأكد من تثبيت Maven في بيئة التطوير الخاصة بك.
 
 ### متطلبات المعرفة
-- Familiarity with Java programming, particularly handling libraries and managing dependencies.
-- Basic understanding of Exchange Server and its functionalities.
+- - المعرفة ببرمجة جافا، وخاصة التعامل مع المكتبات وإدارة التبعيات.
+- فهم أساسي لـ Exchange Server ووظائفه.
 
-## Setting Up Aspose.Email for Java
-To get started with Aspose.Email for Java, you need to include it as a dependency in your Maven project. Here’s how:
+## إعداد Aspose.Email لـ Java
+لبدء استخدام Aspose.Email لـ Java، عليك تضمينه كاعتمادية في مشروع Maven. إليك الطريقة:
 
-### Maven Dependency
-Add the following snippet to your `pom.xml` file:
+### تبعية Maven
+أضف المقطع التالي إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -53,12 +53,12 @@ Add the following snippet to your `pom.xml` file:
 ```
 
 ### خطوات الحصول على الترخيص
-Aspose.Email requires a license for full functionality:
-- **نسخة تجريبية مجانية**: Download a temporary license from the [موقع Aspose](https://purchase.aspose.com/temporary-license/) to evaluate.
-- **شراء**: For continued use, purchase a license via the Aspose purchase portal.
+يتطلب Aspose.Email ترخيصًا للوظائف الكاملة:
+- **نسخة تجريبية مجانية**:قم بتنزيل ترخيص مؤقت من [موقع Aspose](https://purchase.aspose.com/temporary-license/) لتقييم.
+- **شراء**:للاستمرار في الاستخدام، قم بشراء ترخيص عبر بوابة شراء Aspose.
 
 #### التهيئة الأساسية
-Once you've set up your Maven project and acquired a license, initialize Aspose.Email in your Java application:
+بمجرد إعداد مشروع Maven الخاص بك والحصول على ترخيص، قم بتهيئة Aspose.Email في تطبيق Java الخاص بك:
 ```java
 import com.aspose.email.License;
 
@@ -67,74 +67,74 @@ license.setLicense("path/to/your/license.lic");
 ```
 
 ## دليل التنفيذ
-We will break down the implementation into manageable sections based on key features of connecting and listing messages from an Exchange server.
+سنقوم بتقسيم التنفيذ إلى أقسام قابلة للإدارة استنادًا إلى الميزات الرئيسية لتوصيل الرسائل وإدراجها من خادم Exchange.
 
 ### الاتصال بخادم Exchange
 #### ملخص
-This section demonstrates establishing a connection with the Microsoft Exchange Server using Aspose.Email for Java, providing seamless integration capabilities for your applications.
+يوضح هذا القسم إنشاء اتصال مع Microsoft Exchange Server باستخدام Aspose.Email لـ Java، مما يوفر إمكانيات تكامل سلسة لتطبيقاتك.
 ##### الخطوة 1: إنشاء الاتصال
-Use the following method to connect to the server:
+استخدم الطريقة التالية للاتصال بالخادم:
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 
 IEWSClient connectToExchangeServer(String exchangeUrl, String username, String password, String domain) {
-    // Create instance of IEWSClient class by providing credentials
+    // إنشاء مثيل لفئة IEWSClient من خلال توفير بيانات الاعتماد
     return EWSClient.getEWSClient(exchangeUrl, username, password, domain);
 }
 ```
 - **حدود**:
-  - `exchangeUrl`: URL of the Exchange server.
+  - `exchangeUrl`:عنوان URL لخادم Exchange.
   - `username`، `password`:بيانات الاعتماد للمصادقة.
-  - `domain`: Domain of your organization.
+  - `domain`:مجال مؤسستك.
 
-### List Public Folders
+### قائمة المجلدات العامة
 #### ملخص
-After establishing a connection, you can list all public folders available on the Exchange Server. This feature is essential for applications that need to manage or interact with email data organized in folders.
-##### Step 2: Retrieve Folder Information
-Use this method to list public folders:
+بعد إنشاء اتصال، يمكنك عرض جميع المجلدات العامة المتاحة على خادم Exchange. تُعد هذه الميزة أساسية للتطبيقات التي تحتاج إلى إدارة بيانات البريد الإلكتروني المُنظّمة في مجلدات أو التفاعل معها.
+##### الخطوة 2: استرداد معلومات المجلد
+استخدم هذه الطريقة لإدراج المجلدات العامة:
 ```java
 import com.aspose.email.ExchangeFolderInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeFolderInfoCollection listPublicFolders(IEWSClient client) {
-    // List all public folders and return their information as a collection
+    // إدراج جميع المجلدات العامة وإرجاع معلوماتها كمجموعة
     return client.listPublicFolders();
 }
 ```
-### Display Folder Information
+### عرض معلومات المجلد
 #### ملخص
-Displaying folder names and the number of subfolders helps in understanding the structure of your email data.
-##### Step 3: Show Folder Details
-Implement this method to print folder information:
+يساعد عرض أسماء المجلدات وعدد المجلدات الفرعية في فهم بنية بيانات البريد الإلكتروني لديك.
+##### الخطوة 3: إظهار تفاصيل المجلد
+قم بتنفيذ هذه الطريقة لطباعة معلومات المجلد:
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 
 void displayFolderInfo(ExchangeFolderInfo folder) {
-    // Print folder details
+    // طباعة تفاصيل المجلد
     System.out.println("Name: " + folder.getDisplayName());
     System.out.println("Subfolders count: " + folder.getChildFolderCount());
 }
 ```
-### List Messages from a Folder
+### قائمة الرسائل من مجلد
 #### ملخص
-To access email messages, you need to list them within specific folders. This feature is crucial for applications that process or archive emails.
-##### Step 4: Fetch Messages
-List all messages in a specified public folder:
+للوصول إلى رسائل البريد الإلكتروني، عليك إدراجها في مجلدات محددة. هذه الميزة ضرورية للتطبيقات التي تعالج رسائل البريد الإلكتروني أو تؤرشفها.
+##### الخطوة 4: جلب الرسائل
+إدراج جميع الرسائل في مجلد عام محدد:
 ```java
 import com.aspose.email.ExchangeMessageInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeMessageInfoCollection listMessagesFromFolder(IEWSClient client, ExchangeFolderInfo folder) {
-    // List messages from the specified public folder and return their information as a collection
+    // إدراج الرسائل من المجلد العام المحدد وإرجاع معلوماتها كمجموعة
     return client.listMessagesFromPublicFolder(folder);
 }
 ```
-### Fetch and Save Messages
+### جلب الرسائل وحفظها
 #### ملخص
-Once you have listed all messages, fetch each one for further processing or saving them locally.
-##### Step 5: Retrieve and Store Messages
-Here's how to fetch and save emails:
+بمجرد قيامك بإدراج جميع الرسائل، قم بجلب كل رسالة لمزيد من المعالجة أو حفظها محليًا.
+##### الخطوة 5: استرداد الرسائل وتخزينها
+إليك كيفية جلب رسائل البريد الإلكتروني وحفظها:
 ```java
 import com.aspose.email.ExchangeMessageInfo;
 import com.aspose.email.IEWSClient;
@@ -143,26 +143,26 @@ import com.aspose.email.SaveOptions;
 
 void fetchAndSaveMessages(IEWSClient client, ExchangeMessageInfoCollection messages) {
     for (ExchangeMessageInfo messageInfo : messages) {
-        // Fetch the full MailMessage using its unique URI
+        // جلب رسالة البريد الكاملة باستخدام عنوان URI الفريد الخاص بها
         MailMessage msg = client.fetchMessage(messageInfo.getUniqueUri());
         
-        // Save the fetched message to a file named after its subject with .msg extension
+        // احفظ الرسالة التي تم جلبها في ملف يحمل اسم موضوعها مع امتداد .msg
         String filePath = "YOUR_OUTPUT_DIRECTORY/" + msg.getSubject() + ".msg";
         msg.save(filePath, SaveOptions.getDefaultMsgUnicode());
     }
 }
 ```
-### Recursively List Messages from Subfolders
+### عرض الرسائل بشكل متكرر من المجلدات الفرعية
 #### ملخص
-To ensure comprehensive email management, recursively listing messages in subfolders is necessary.
-##### Step 6: Recursive Listing Implementation
-Recursively process folders and their subfolders:
+لضمان إدارة البريد الإلكتروني الشاملة، يعد إدراج الرسائل بشكل متكرر في المجلدات الفرعية أمرًا ضروريًا.
+##### الخطوة 6: تنفيذ القائمة المتكررة
+معالجة المجلدات والمجلدات الفرعية الخاصة بها بشكل متكرر:
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 import com.aspose.email.IEWSClient;
 
 void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
-    // List all messages in the current public folder
+    // قائمة جميع الرسائل في المجلد العام الحالي
     ExchangeMessageInfoCollection msgCollection = client.listMessagesFromPublicFolder(folder);
     fetchAndSaveMessages(client, msgCollection);
 
@@ -175,24 +175,24 @@ void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
 }
 ```
 ## التطبيقات العملية
-Aspose.Email for Java offers numerous applications in real-world scenarios:
-1. **أرشفة البريد الإلكتروني الآلي**: Automatically save all emails from public folders into a local storage system.
-2. **حلول النسخ الاحتياطي للبريد الإلكتروني**: Implement backup systems that recursively fetch and store messages, ensuring data redundancy.
-3. **عملاء البريد الإلكتروني المخصصون**: Enhance or create custom email clients with advanced Exchange Server connectivity.
+يوفر Aspose.Email for Java العديد من التطبيقات في السيناريوهات الواقعية:
+1. **أرشفة البريد الإلكتروني الآلي**:حفظ جميع رسائل البريد الإلكتروني تلقائيًا من المجلدات العامة في نظام تخزين محلي.
+2. **حلول النسخ الاحتياطي للبريد الإلكتروني**:تنفيذ أنظمة النسخ الاحتياطي التي تقوم بجلب الرسائل وتخزينها بشكل متكرر، مما يضمن تكرار البيانات.
+3. **عملاء البريد الإلكتروني المخصصون**:قم بتعزيز أو إنشاء عملاء بريد إلكتروني مخصصين باستخدام اتصال Exchange Server المتقدم.
 
 ## اعتبارات الأداء
-When using Aspose.Email for Java, consider these performance tips:
-- Optimize connection parameters to reduce latency.
-- Manage memory efficiently by disposing of objects no longer needed.
-- Profile your application to identify bottlenecks related to network calls and data processing.
+عند استخدام Aspose.Email لـ Java، ضع في اعتبارك نصائح الأداء التالية:
+- تحسين معلمات الاتصال لتقليل زمن الوصول.
+- إدارة الذاكرة بكفاءة عن طريق التخلص من العناصر التي لم تعد هناك حاجة إليها.
+- قم بإنشاء ملف تعريف لتطبيقك لتحديد الاختناقات المتعلقة بمكالمات الشبكة ومعالجة البيانات.
 
 ## خاتمة
-In this tutorial, we explored how to connect to an Exchange Server using Aspose.Email for Java and list messages from public folders. By following these steps, you can enhance your applications with robust email integration capabilities. For further exploration, consider diving deeper into Aspose.Email's advanced features and customization options.
+في هذا البرنامج التعليمي، استكشفنا كيفية الاتصال بخادم Exchange باستخدام Aspose.Email لجافا وعرض الرسائل من المجلدات العامة. باتباع هذه الخطوات، يمكنك تحسين تطبيقاتك بإمكانيات تكامل بريد إلكتروني فعّالة. لمزيد من الاستكشاف، ننصحك بالتعمق في ميزات Aspose.Email المتقدمة وخيارات التخصيص.
 
 ## توصيات الكلمات الرئيسية
-- "Aspose.Email for Java"
-- "Connect to Exchange Server using Java"
-- "List messages from Exchange public folders"
+- "Aspose.Email لـ Java"
+- "الاتصال بخادم Exchange باستخدام Java"
+- "قائمة الرسائل من المجلدات العامة لـ Exchange"
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

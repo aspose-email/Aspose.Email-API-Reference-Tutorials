@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to programmatically extract the 'Content-Description' header from email attachments using Aspose.Email for .NET. This guide covers installation, configuration, and practical applications."
-"title": "How to Extract 'Content-Description' from Email Attachments Using Aspose.Email for .NET"
+"description": "تعرّف على كيفية استخراج رأس \"وصف المحتوى\" برمجيًا من مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل التثبيت والتكوين والتطبيقات العملية."
+"title": "كيفية استخراج \"وصف المحتوى\" من مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/attachments-handling/extract-content-description-email-attachments-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,36 +11,36 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Extract 'Content-Description' from Email Attachments Using Aspose.Email for .NET
+# كيفية استخراج "وصف المحتوى" من مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Extracting metadata such as the 'Content-Description' header from email attachments can be a crucial task in many projects. With Aspose.Email for .NET, this process becomes straightforward and efficient. This tutorial will guide you through using Aspose.Email to extract this specific metadata from email attachments in your .NET applications.
+يُعد استخراج البيانات الوصفية، مثل عنوان "وصف المحتوى" من مرفقات البريد الإلكتروني، مهمةً بالغة الأهمية في العديد من المشاريع. مع Aspose.Email لـ .NET، تُصبح هذه العملية سهلةً وفعّالة. سيرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لاستخراج هذه البيانات الوصفية تحديدًا من مرفقات البريد الإلكتروني في تطبيقات .NET.
 
 **ما سوف تتعلمه:**
 - تثبيت وتكوين Aspose.Email لـ .NET.
-- Step-by-step instructions for extracting the 'Content-Description' header.
-- Practical use cases and performance tips.
+- تعليمات خطوة بخطوة لاستخراج رأس "وصف المحتوى".
+- حالات الاستخدام العملية ونصائح الأداء.
 
-Let's begin by setting up our development environment!
+لنبدأ بإعداد بيئة التطوير الخاصة بنا!
 
 ## المتطلبات الأساسية
 
 قبل البدء، تأكد من أن لديك:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
-- **Aspose.Email لـ .NET**: The latest version is necessary to access all features.
+- **Aspose.Email لـ .NET**:الإصدار الأحدث ضروري للوصول إلى كافة الميزات.
 
 ### متطلبات إعداد البيئة
-- A compatible .NET environment. This guide assumes familiarity with C# and basic command-line operations.
+- بيئة .NET متوافقة. يفترض هذا الدليل إلمامًا بلغة C# وعمليات سطر الأوامر الأساسية.
 
 ### متطلبات المعرفة
-- Basic understanding of email protocols (MIME types).
-- Familiarity with C# programming and handling collections in .NET.
+- فهم أساسي لبروتوكولات البريد الإلكتروني (أنواع MIME).
+- المعرفة ببرمجة C# والتعامل مع المجموعات في .NET.
 
 ## إعداد Aspose.Email لـ .NET
 
-Integrate Aspose.Email into your project using one of the following package managers:
+قم بدمج Aspose.Email في مشروعك باستخدام أحد مديري الحزم التاليين:
 
 ### .NET CLI
 ```bash
@@ -57,72 +57,72 @@ Install-Package Aspose.Email
 2. ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 #### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية**:تحميل من [Aspose’s release site](https://releases.aspose.com/email/net/) لاختبار الميزات.
-- **رخصة مؤقتة**: Obtain one from [صفحة شراء Aspose](https://purchase.aspose.com/temporary-license/) للتقييم الموسع.
+- **نسخة تجريبية مجانية**:تحميل من [موقع إصدار Aspose](https://releases.aspose.com/email/net/) لاختبار الميزات.
+- **رخصة مؤقتة**:احصل على واحدة من [صفحة شراء Aspose](https://purchase.aspose.com/temporary-license/) للتقييم الموسع.
 
-For production, consider purchasing a license. More information is available [هنا](https://purchase.aspose.com/buy).
+للإنتاج، فكّر في شراء ترخيص. تتوفر معلومات إضافية. [هنا](https://purchase.aspose.com/buy).
 
 #### التهيئة والإعداد الأساسي
-After installation, add the necessary using directive to your project:
+بعد التثبيت، أضف التوجيه اللازم باستخدام مشروعك:
 ```csharp
 using Aspose.Email.Mime;
 ```
 
 ## دليل التنفيذ
 
-### Extracting 'Content-Description' from Email Attachments
+### استخراج "وصف المحتوى" من مرفقات البريد الإلكتروني
 
-This section demonstrates how to programmatically retrieve the 'Content-Description' header.
+يوضح هذا القسم كيفية استرداد رأس "وصف المحتوى" برمجيًا.
 
 #### الخطوة 1: تحميل رسالة البريد الإلكتروني
-Load your email message using `MailMessage.Load()` by providing the path to the email file:
+قم بتحميل رسالة البريد الإلكتروني الخاصة بك باستخدام `MailMessage.Load()` من خلال توفير المسار إلى ملف البريد الإلكتروني:
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage message = MailMessage.Load(dataDir + "EmailWithAttandEmbedded.eml");
 ```
-**توضيح**: يستبدل `"YOUR_DOCUMENT_DIRECTORY"` with your actual directory. This ensures Aspose.Email reads and parses the email content.
+**توضيح**: يستبدل `"YOUR_DOCUMENT_DIRECTORY"` مع دليلك الفعلي. هذا يضمن أن يقوم Aspose.Email بقراءة محتوى البريد الإلكتروني وتحليله.
 
-#### Step 2: Retrieve the 'Content-Description'
-Access the 'Content-Description' header from the first attachment:
+#### الخطوة 2: استرداد "وصف المحتوى"
+قم بالوصول إلى رأس "وصف المحتوى" من المرفق الأول:
 ```csharp
 string description = message.Attachments[0].Headers["Content-Description"];
 ```
-**توضيح**: This line fetches the 'Content-Description' for the first attachment. Ensure your email file contains attachments with this specific header.
+**توضيح**هذا السطر يُظهر "وصف المحتوى" للمرفق الأول. تأكد من احتواء ملف بريدك الإلكتروني على مرفقات بهذا العنوان.
 
 #### خيارات تكوين المفاتيح
-- **معالجة الأخطاء**: Implement mechanisms to handle missing attachments or headers gracefully.
+- **معالجة الأخطاء**:تنفيذ آليات للتعامل مع المرفقات أو الرؤوس المفقودة بسلاسة.
 
 #### نصائح استكشاف الأخطاء وإصلاحها
-- Verify the email file path is correct and accessible.
-- Confirm the 'Content-Description' header exists in your attachment.
+- تأكد من أن مسار ملف البريد الإلكتروني صحيح ويمكن الوصول إليه.
+- تأكد من وجود رأس "وصف المحتوى" في المرفق الخاص بك.
 
 ## التطبيقات العملية
-1. **Automated Email Processing Systems**: Use metadata for sorting and categorizing emails.
-2. **Data Analysis Platforms**: Enhance data extraction processes with attachment descriptions.
-3. **أتمتة دعم العملاء**: Retrieve file descriptions to improve ticket accuracy.
+1. **أنظمة معالجة البريد الإلكتروني الآلية**:استخدم البيانات الوصفية لفرز وتصنيف رسائل البريد الإلكتروني.
+2. **منصات تحليل البيانات**:تحسين عمليات استخراج البيانات باستخدام أوصاف المرفقات.
+3. **أتمتة دعم العملاء**:استرجاع أوصاف الملفات لتحسين دقة التذكرة.
 
 ## اعتبارات الأداء
-Optimize performance by:
-- Limiting the size of email files processed at once.
-- Disposing objects properly after use.
-- Following .NET memory management best practices, such as using `using` تصريحات.
+تحسين الأداء من خلال:
+- تحديد حجم ملفات البريد الإلكتروني التي تتم معالجتها مرة واحدة.
+- التخلص من الأشياء بشكل سليم بعد الاستخدام.
+- اتباع أفضل ممارسات إدارة ذاكرة .NET، مثل استخدام `using` تصريحات.
 
 ## خاتمة
-This tutorial guided you through extracting the 'Content-Description' header from an email attachment using Aspose.Email for .NET. With these steps and code snippets, integrating this feature into your projects is straightforward.
+أرشدك هذا البرنامج التعليمي إلى كيفية استخراج عنوان "وصف المحتوى" من مرفق بريد إلكتروني باستخدام Aspose.Email لـ .NET. باتباع هذه الخطوات ومقاطع التعليمات البرمجية، يصبح دمج هذه الميزة في مشاريعك أمرًا سهلاً.
 
-**الخطوات التالية**: Explore additional features of Aspose.Email or other functionalities like handling embedded images in emails.
+**الخطوات التالية**:استكشف الميزات الإضافية لـ Aspose.Email أو الوظائف الأخرى مثل التعامل مع الصور المضمنة في رسائل البريد الإلكتروني.
 
 ## قسم الأسئلة الشائعة
 1. **ما هو Aspose.Email؟**
-   - A comprehensive library for email processing in .NET applications.
-2. **How do I handle attachments without 'Content-Description'?**
-   - Implement fallback mechanisms, such as logging or manual review flags.
-3. **Can I extract other headers using Aspose.Email?**
-   - Yes, access various headers by specifying their names in the `Headers` collection.
-4. **What should I do if an attachment is missing?**
-   - Include error handling to manage emails without attachments gracefully.
-5. **Is Aspose.Email suitable for large-scale applications?**
-   - Absolutely, but consider performance optimizations and resource management best practices.
+   - مكتبة شاملة لمعالجة البريد الإلكتروني في تطبيقات .NET.
+2. **كيف يمكنني التعامل مع المرفقات بدون "وصف المحتوى"؟**
+   - تنفيذ آليات احتياطية، مثل التسجيل أو أعلام المراجعة اليدوية.
+3. **هل يمكنني استخراج رؤوس أخرى باستخدام Aspose.Email؟**
+   - نعم، يمكنك الوصول إلى رؤوس مختلفة من خلال تحديد أسمائها في `Headers` مجموعة.
+4. **ماذا يجب أن أفعل إذا كان المرفق مفقودًا؟**
+   - قم بتضمين معالجة الأخطاء لإدارة رسائل البريد الإلكتروني بدون مرفقات بشكل أنيق.
+5. **هل Aspose.Email مناسب للتطبيقات واسعة النطاق؟**
+   - بالتأكيد، ولكن ضع في اعتبارك أفضل ممارسات تحسين الأداء وإدارة الموارد.
 
 ## موارد
 - **التوثيق**: [مرجع Aspose.Email .NET](https://reference.aspose.com/email/net/)

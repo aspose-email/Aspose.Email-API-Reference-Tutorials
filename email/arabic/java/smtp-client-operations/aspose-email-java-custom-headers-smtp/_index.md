@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to set custom email headers and send emails using SMTP with Aspose.Email for Java. Enhance your email functionality and deliverability."
-"title": "Mastering Aspose.Email Java&#58; Set Custom Email Headers and Send Emails Using SMTP"
+"description": "تعرّف على كيفية إعداد عناوين بريد إلكتروني مخصصة وإرسال رسائل البريد الإلكتروني باستخدام SMTP مع Aspose.Email لـ Java. حسّن أداء بريدك الإلكتروني وإمكانية توصيله."
+"title": "إتقان استخدام Aspose.Email في Java - تعيين عناوين بريد إلكتروني مخصصة وإرسال رسائل البريد الإلكتروني باستخدام SMTP"
 "url": "/ar/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/"
 "weight": 1
 ---
@@ -11,25 +11,25 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Aspose.Email Java: Setting Custom Email Headers and Sending Emails via SMTP
+# إتقان استخدام Aspose.Email في Java: إعداد عناوين البريد الإلكتروني المخصصة وإرسال رسائل البريد الإلكتروني عبر SMTP
 
 ## مقدمة
 
-In today's digital landscape, effective email communication is essential for businesses and individuals alike. Whether you're dispatching newsletters, transactional emails, or marketing campaigns, customizing your emails with tailored headers can significantly boost their functionality and deliverability. This guide will walk you through using Aspose.Email for Java to set custom email headers and send emails via SMTP.
+في ظلّ العالم الرقميّ الحالي، يُعدّ التواصل الفعّال عبر البريد الإلكترونيّ أمرًا بالغ الأهمية للشركات والأفراد على حدّ سواء. سواءً كنت تُرسل رسائل إخبارية، أو رسائل بريد إلكترونيّ تفاعليّة، أو حملات تسويقيّة، فإنّ تخصيص رسائلك الإلكترونيّ بعناوين مُصمّمة خصيصًا يُحسّن وظائفها وقابليّتها للتسليم بشكلٍ كبير. سيُرشدك هذا الدليل إلى استخدام Aspose.Email لجافا لتعيين عناوين بريد إلكترونيّ مُخصّصة وإرسال رسائل البريد الإلكترونيّ عبر SMTP.
 
 **ما سوف تتعلمه:**
-- How to set custom email headers in Java.
-- Steps to configure and use an SMTP client.
-- Best practices for integrating Aspose.Email into your Java projects.
+- كيفية تعيين رؤوس البريد الإلكتروني المخصصة في جافا.
+- خطوات تكوين واستخدام عميل SMTP.
+- أفضل الممارسات لدمج Aspose.Email في مشاريع Java الخاصة بك.
 
 لنبدأ بإعداد المتطلبات الأساسية!
 
 ## المتطلبات الأساسية
 
-Before diving in, ensure you have the necessary setup:
+قبل الغوص، تأكد من أن لديك الإعداد اللازم:
 
 ### المكتبات المطلوبة
-You'll need the Aspose.Email library for Java. Integrate it using Maven by adding this dependency to your `pom.xml` file:
+ستحتاج إلى مكتبة Aspose.Email لجافا. يمكنك دمجها باستخدام Maven بإضافة هذه التبعية إلى `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -40,66 +40,66 @@ You'll need the Aspose.Email library for Java. Integrate it using Maven by addin
 ```
 
 ### إعداد البيئة
-- Java Development Kit (JDK) 1.8 or higher installed on your machine.
-- An IDE like IntelliJ IDEA, Eclipse, or NetBeans for coding.
+- تم تثبيت Java Development Kit (JDK) 1.8 أو أعلى على جهازك.
+- بيئة تطوير متكاملة مثل IntelliJ IDEA، أو Eclipse، أو NetBeans للترميز.
 
 ### متطلبات المعرفة
-- Basic understanding of Java programming.
-- Familiarity with email protocols and SMTP.
+- فهم أساسيات برمجة جافا.
+- - المعرفة ببروتوكولات البريد الإلكتروني و SMTP.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To get started with Aspose.Email for Java, follow these setup instructions:
+للبدء في استخدام Aspose.Email لـ Java، اتبع تعليمات الإعداد التالية:
 
-### Installation via Maven
+### التثبيت عبر Maven
 
-Install the Aspose.Email library using Maven. Add the above XML snippet to your project's `pom.xml` file under `<dependencies>`.
+ثبّت مكتبة Aspose.Email باستخدام Maven. أضف مقتطف XML أعلاه إلى مشروعك. `pom.xml` ملف تحت `<dependencies>`.
 
 ### الحصول على الترخيص
 توفر Aspose خيارات ترخيص مختلفة:
-- **نسخة تجريبية مجانية**: Start with a temporary license for evaluation purposes.
+- **نسخة تجريبية مجانية**:ابدأ برخصة مؤقتة لأغراض التقييم.
 - **رخصة مؤقتة**:احصل على هذا من [هنا](https://purchase.aspose.com/temporary-license/).
-- **شراء الترخيص**: Buy a full license to remove usage limitations. Visit the [صفحة الشراء](https://purchase.aspose.com/buy).
+- **شراء الترخيص**:اشترِ ترخيصًا كاملاً لإزالة قيود الاستخدام. تفضل بزيارة [صفحة الشراء](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
-Initialize your project by importing necessary classes and setting up a basic email object:
+قم بتهيئة مشروعك عن طريق استيراد الفئات الضرورية وإعداد كائن بريد إلكتروني أساسي:
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.SmtpClient;
 
-// Initialize MailMessage instance
+// تهيئة مثيل MailMessage
 MailMessage message = new MailMessage();
 ```
 
 ## دليل التنفيذ
 
-This section will guide you through implementing two key features: setting custom headers in emails and sending emails via SMTP.
+سوف يرشدك هذا القسم خلال تنفيذ ميزتين رئيسيتين: تعيين رؤوس مخصصة في رسائل البريد الإلكتروني وإرسال رسائل البريد الإلكتروني عبر SMTP.
 
-### Feature 1: Specify Custom Header in Email
+### الميزة 1: تحديد رأس مخصص في البريد الإلكتروني
 
-Custom headers can carry additional metadata with your emails. Here's how to set them:
+يمكن للعناوين المخصصة أن تحمل بيانات تعريفية إضافية مع رسائل البريد الإلكتروني الخاصة بك. إليك كيفية ضبطها:
 
 #### ملخص
-Learn to add a "secret-header" to an email, storing any necessary information for processing or tracking.
+تعلم كيفية إضافة "عنوان سري" إلى البريد الإلكتروني، وتخزين أي معلومات ضرورية للمعالجة أو التتبع.
 
 #### التنفيذ خطوة بخطوة
 
-**1. Initialize MailMessage:**
-إنشاء `MailMessage` instance and configure basic properties such as sender, recipient, subject, etc.
+**1. تهيئة MailMessage:**
+إنشاء `MailMessage` إنشاء مثيل وتكوين خصائص أساسية مثل المرسل والمستقبل والموضوع وما إلى ذلك.
 ```java
 import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 
-// Declare message as MailMessage instance
+// إعلان الرسالة كمثال MailMessage
 MailMessage message = new MailMessage();
 
-// Set ReplyTo, from, to, and subject
+// تعيين الرد إلى، من، إلى، والموضوع
 message.getReplyToList().add("reply@reply.com");
 message.setFrom(new MailAddress("sender@sender.com"));
 message.getTo().add("receiver1@receiver.com");
 message.setSubject("test mail");
 
-// Add a custom header
+// إضافة رأس مخصص
 message.getHeaders().add("secret-header\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

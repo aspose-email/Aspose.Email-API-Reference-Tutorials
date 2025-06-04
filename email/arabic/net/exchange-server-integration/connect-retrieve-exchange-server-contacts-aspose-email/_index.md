@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to connect to an Exchange Server using Aspose.Email for .NET, securely retrieve contacts, and optimize your data management workflow."
-"title": "How to Connect and Retrieve Contacts from Exchange Server Using Aspose.Email for .NET"
+"description": "تعرف على كيفية الاتصال بخادم Exchange Server باستخدام Aspose.Email لـ .NET، واسترداد جهات الاتصال بشكل آمن، وتحسين سير عمل إدارة البيانات لديك."
+"title": "كيفية الاتصال بجهات الاتصال واستردادها من خادم Exchange باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/exchange-server-integration/connect-retrieve-exchange-server-contacts-aspose-email/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Connect and Retrieve Contacts from an Exchange Server Using Aspose.Email for .NET
+# كيفية الاتصال بخادم Exchange واسترداد جهات الاتصال منه باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
-In today’s fast-paced digital world, managing emails and contacts efficiently is crucial for businesses and individuals alike. This tutorial guides you through connecting to an Exchange Server using WebDAV credentials and retrieving contact information with Aspose.Email for .NET.
+في عالمنا الرقمي المتسارع، تُعدّ إدارة رسائل البريد الإلكتروني وجهات الاتصال بكفاءة أمرًا بالغ الأهمية للشركات والأفراد على حد سواء. يرشدك هذا البرنامج التعليمي خلال عملية الاتصال بخادم Exchange باستخدام بيانات اعتماد WebDAV، وكيفية استرداد معلومات الاتصال باستخدام Aspose.Email لـ .NET.
 
-By following this guide, you’ll learn:
-- How to set up your environment with Aspose.Email for .NET
-- How to connect securely to an Exchange Server
-- Efficient methods for retrieving and displaying contacts
-- Performance optimization techniques for large datasets
+من خلال اتباع هذا الدليل، سوف تتعلم:
+- كيفية إعداد بيئتك باستخدام Aspose.Email لـ .NET
+- كيفية الاتصال بشكل آمن بخادم Exchange
+- طرق فعالة لاسترجاع جهات الاتصال وعرضها
+- تقنيات تحسين الأداء لمجموعات البيانات الكبيرة
 
 قبل الغوص في التنفيذ، دعونا نراجع المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
-Ensure you have:
-- **Aspose.Email لـ .NET**: Install in your project targeting a compatible .NET version.
-- **بيئة التطوير**: Visual Studio or any preferred IDE to write and run your .NET applications.
-- **معرفة**: Familiarity with C#, network credentials, and basic Exchange Server operations is recommended.
+تأكد من أن لديك:
+- **Aspose.Email لـ .NET**:قم بالتثبيت في مشروعك الذي يستهدف إصدار .NET متوافقًا.
+- **بيئة التطوير**:Visual Studio أو أي IDE مفضل لكتابة وتشغيل تطبيقات .NET الخاصة بك.
+- **معرفة**:يوصى بالتعرف على لغة C# وبيانات اعتماد الشبكة وعمليات Exchange Server الأساسية.
 
 ## إعداد Aspose.Email لـ .NET
-To use Aspose.Email, install the package in your project using one of these methods:
+لاستخدام Aspose.Email، قم بتثبيت الحزمة في مشروعك باستخدام إحدى الطرق التالية:
 
 ### استخدام .NET CLI
 ```bash
@@ -45,60 +45,60 @@ Install-Package Aspose.Email
 
 ### واجهة مستخدم مدير الحزم NuGet
 - افتح الحل الخاص بك في Visual Studio.
-- Navigate to "Manage NuGet Packages" and search for "Aspose.Email". Install the latest version.
+- انتقل إلى "إدارة حزم NuGet" وابحث عن "Aspose.Email". ثبّت أحدث إصدار.
 
 #### الحصول على الترخيص
-Consider obtaining a license to fully leverage Aspose.Email capabilities:
+فكر في الحصول على ترخيص للاستفادة الكاملة من إمكانيات Aspose.Email:
 - ابدأ بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/)
 - طلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
-- Purchase a full license for production use ([buy here](https://purchase.aspose.com/buy))
+- شراء ترخيص كامل للاستخدام الإنتاجي ([اشتري هنا](https://purchase.aspose.com/buy))
 
 ## دليل التنفيذ
-This section covers connecting to an Exchange Server and retrieving contacts.
+يتناول هذا القسم الاتصال بخادم Exchange واسترداد جهات الاتصال.
 
 ### الاتصال بخادم Exchange
-Securely connecting to your Exchange Server is essential. Here's how:
+الاتصال الآمن بخادم Exchange ضروري. إليك الطريقة:
 
 #### الخطوة 1: تحديد بيانات الاعتماد
-Set up your WebDAV credentials using `NetworkCredential` for secure authentication.
+قم بإعداد بيانات اعتماد WebDAV الخاصة بك باستخدام `NetworkCredential` للمصادقة الآمنة.
 
 ```csharp
 using System.Net;
 
-string mailboxURI = "http://ex2003/exchange/administrator"; // Exchange Server URI
+string mailboxURI = "http://ex2003/exchange/administrator"; // عنوان URI لخادم Exchange
 string username = "administrator";
 string password = "pwd";
 string domain = "domain.local";
 
-// Create network credential for connecting to the server
+// إنشاء بيانات اعتماد الشبكة للاتصال بالخادم
 NetworkCredential credential = new NetworkCredential(username, password, domain);
 ```
 
-#### Step 2: Initialize `ExchangeClient`
-يستخدم `ExchangeClient` from Aspose.Email to establish a connection.
+#### الخطوة 2: التهيئة `ExchangeClient`
+يستخدم `ExchangeClient` من Aspose.Email لإنشاء اتصال.
 
 ```csharp
 using Aspose.Email.Clients.Exchange.Dav;
 
-// Create an instance of ExchangeClient with URI and credentials
+// إنشاء مثيل لـ ExchangeClient باستخدام URI وبيانات الاعتماد
 tExchangeClient client = new ExchangeClient(mailboxURI, credential);
 ```
 
-### Retrieving Contacts from the Exchange Server
-Once connected, fetch contacts stored on your server.
+### استرداد جهات الاتصال من خادم Exchange
+بمجرد الاتصال، قم بجلب جهات الاتصال المخزنة على الخادم الخاص بك.
 
-#### Step 1: Fetch Contacts
-يستخدم `GetContacts` method to retrieve all contacts.
+#### الخطوة 1: جلب جهات الاتصال
+يستخدم `GetContacts` طريقة لاسترجاع كافة جهات الاتصال.
 
 ```csharp
 using Aspose.Email.Mapi;
 
-// Retrieve contacts from the directory
+// استرداد جهات الاتصال من الدليل
 Contact[] contacts = client.GetContacts(client.MailboxInfo.ContactsUri);
 ```
 
-#### Step 2: Display Contact Information
-Loop through each contact and display relevant details like names and email addresses.
+#### الخطوة 2: عرض معلومات الاتصال
+قم بالمرور على كل جهة اتصال وعرض التفاصيل ذات الصلة مثل الأسماء وعناوين البريد الإلكتروني.
 
 ```csharp
 foreach (MapiContact contact in contacts)
@@ -108,34 +108,34 @@ foreach (MapiContact contact in contacts)
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **أخطاء الاتصال**: Verify your server URI, username, password, and domain are correct.
-- **Permissions Issues**: Ensure the user account has permission to access contacts on the Exchange Server.
+- **أخطاء الاتصال**:تأكد من صحة عنوان URI الخاص بالخادم واسم المستخدم وكلمة المرور والنطاق.
+- **مشاكل الأذونات**:تأكد من أن حساب المستخدم لديه الإذن بالوصول إلى جهات الاتصال على خادم Exchange.
 
 ## التطبيقات العملية
-- **Automated Contact Management**: Integrate this functionality into a CRM system for automated synchronization.
-- **مشاريع نقل البيانات**: Migrate contact data efficiently between servers.
-- **Enhanced Email Systems**: Develop applications needing real-time access to up-to-date contact information.
+- **إدارة جهات الاتصال الآلية**:دمج هذه الوظيفة في نظام CRM لتحقيق المزامنة التلقائية.
+- **مشاريع نقل البيانات**:نقل بيانات الاتصال بكفاءة بين الخوادم.
+- **أنظمة البريد الإلكتروني المحسنة**:تطوير التطبيقات التي تحتاج إلى الوصول في الوقت الحقيقي إلى معلومات الاتصال المحدثة.
 
 ## اعتبارات الأداء
-When working with Aspose.Email and Exchange Server, consider:
-- **معالجة الدفعات**: Retrieve contacts in batches for large datasets to avoid memory overflow.
-- **إدارة الاتصال**:إعادة الاستخدام `ExchangeClient` instances where possible to optimize performance.
-- **العمليات غير المتزامنة**: Implement asynchronous methods to improve application responsiveness.
+عند العمل مع Aspose.Email وExchange Server، ضع في اعتبارك ما يلي:
+- **معالجة الدفعات**:استرداد جهات الاتصال على دفعات لمجموعات البيانات الكبيرة لتجنب تجاوز سعة الذاكرة.
+- **إدارة الاتصال**:إعادة الاستخدام `ExchangeClient` الحالات التي يكون فيها ذلك ممكنا لتحسين الأداء.
+- **العمليات غير المتزامنة**:تنفيذ أساليب غير متزامنة لتحسين استجابة التطبيق.
 
 ## خاتمة
-You've now learned how to connect to an Exchange Server using Aspose.Email for .NET and retrieve contacts. This functionality can enhance applications such as CRM systems or email management tools. Explore further by checking the [وثائق Aspose.Email](https://reference.aspose.com/email/net/) for additional features.
+لقد تعلمت الآن كيفية الاتصال بخادم Exchange باستخدام Aspose.Email لـ .NET واسترداد جهات الاتصال. تُحسّن هذه الميزة تطبيقات مثل أنظمة إدارة علاقات العملاء (CRM) أو أدوات إدارة البريد الإلكتروني. استكشف المزيد من خلال مراجعة [وثائق Aspose.Email](https://reference.aspose.com/email/net/) للحصول على ميزات إضافية.
 
 ## قسم الأسئلة الشائعة
 1. **ما هو Aspose.Email لـ .NET؟**
-   - A library enabling email management, including connecting to Exchange Servers.
-2. **How do I handle authentication failures?**
-   - Double-check your credentials and domain settings. Ensure necessary permissions are granted.
-3. **Can I retrieve contacts from multiple accounts simultaneously?**
-   - Yes, initialize separate `ExchangeClient` حالات لكل حساب.
-4. **What are common performance issues with Aspose.Email?**
-   - Inefficient memory usage when processing large data volumes. Optimize by batching operations and using asynchronous methods.
-5. **Where can I find support if encountering issues?**
-   - قم بزيارة [منتدى أسبوزي](https://forum.aspose.com/c/email/10) for community support or check official documentation for troubleshooting guides.
+   - مكتبة تمكن إدارة البريد الإلكتروني، بما في ذلك الاتصال بخوادم Exchange.
+2. **كيف أتعامل مع فشل المصادقة؟**
+   - تحقق جيدًا من بيانات اعتمادك وإعدادات نطاقك. تأكد من منح الأذونات اللازمة.
+3. **هل يمكنني استرداد جهات الاتصال من حسابات متعددة في نفس الوقت؟**
+   - نعم، قم بتهيئة منفصلة `ExchangeClient` حالات لكل حساب.
+4. **ما هي مشكلات الأداء الشائعة مع Aspose.Email؟**
+   - استخدام غير فعال للذاكرة عند معالجة كميات كبيرة من البيانات. حسّن الأداء من خلال عمليات الدفعات واستخدام أساليب غير متزامنة.
+5. **أين يمكنني العثور على الدعم إذا واجهت مشاكل؟**
+   - قم بزيارة [منتدى أسبوزي](https://forum.aspose.com/c/email/10) للحصول على دعم المجتمع أو التحقق من الوثائق الرسمية للحصول على أدلة استكشاف الأخطاء وإصلاحها.
 
 ## موارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/net/)

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently list emails from an Exchange server using Aspose.Email for Java. This guide covers setup, listing messages in various folders, and practical applications."
-"title": "How to List Exchange Messages using Aspose.Email for Java&#58; A Complete Guide"
+"description": "تعرّف على كيفية إدراج رسائل البريد الإلكتروني بكفاءة من خادم Exchange باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وإدراج الرسائل في مجلدات مختلفة، وتطبيقات عملية."
+"title": "كيفية إدراج رسائل التبادل باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/exchange-server-integration/list-exchange-messages-aspose-email-java/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to List Exchange Messages Using Aspose.Email for Java: A Complete Guide
+# كيفية إدراج رسائل Exchange باستخدام Aspose.Email لـ Java: دليل شامل
 
 ## مقدمة
 
-Efficient email management is essential for productivity, especially when handling large volumes of messages across different folders like Inbox, Deleted Items, Drafts, and Sent Items. With the increasing demand for automation in email tasks, developers often rely on robust libraries that simplify these processes. This guide will show you how to use Aspose.Email for Java to list messages from various Exchange mailbox folders seamlessly.
+تُعد إدارة البريد الإلكتروني بكفاءة أمرًا أساسيًا لزيادة الإنتاجية، خاصةً عند التعامل مع كميات كبيرة من الرسائل عبر مجلدات مختلفة مثل البريد الوارد، والرسائل المحذوفة، والمسودات، والرسائل المرسلة. مع تزايد الطلب على أتمتة مهام البريد الإلكتروني، غالبًا ما يعتمد المطورون على مكتبات قوية تُبسط هذه العمليات. سيوضح لك هذا الدليل كيفية استخدام Aspose.Email لـ Java لعرض الرسائل من مجلدات بريد Exchange المختلفة بسلاسة.
 
-In this tutorial, we'll cover connecting to an Exchange server and programmatically retrieving emails. You'll learn:
-- How to set up Aspose.Email for Java
-- How to list messages from the Inbox folder
-- Extending functionality to other folders like Deleted Items, Drafts, and Sent Items
+في هذا البرنامج التعليمي، سنتناول كيفية الاتصال بخادم Exchange واسترجاع رسائل البريد الإلكتروني برمجيًا. ستتعلم:
+- كيفية إعداد Aspose.Email لـ Java
+- كيفية إدراج الرسائل من مجلد البريد الوارد
+- توسيع الوظائف إلى مجلدات أخرى مثل العناصر المحذوفة والمسودات والعناصر المرسلة
 
-Before we dive into implementation, let's discuss the prerequisites.
+قبل أن نتعمق في التنفيذ، دعونا نناقش المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
 لمتابعة هذا البرنامج التعليمي، تأكد من أن لديك:
-- **مكتبة Aspose.Email**: Install Aspose.Email for Java using Maven (covered below).
-- **بيئة التطوير**: Set up an IDE like IntelliJ IDEA or Eclipse with JDK 16 or higher.
-- **الوصول إلى خادم Exchange**: Credentials to connect to your Exchange server, including URL, username, password, and domain.
+- **مكتبة Aspose.Email**:قم بتثبيت Aspose.Email لـ Java باستخدام Maven (الموضح أدناه).
+- **بيئة التطوير**:قم بإعداد IDE مثل IntelliJ IDEA أو Eclipse مع JDK 16 أو أعلى.
+- **الوصول إلى خادم Exchange**:بيانات الاعتماد اللازمة للاتصال بخادم Exchange الخاص بك، بما في ذلك عنوان URL، واسم المستخدم، وكلمة المرور، والنطاق.
 
-### Setting Up Aspose.Email for Java
+### إعداد Aspose.Email لـ Java
 
-To get started with Aspose.Email for Java, integrate it into your project using Maven:
+للبدء في استخدام Aspose.Email لـ Java، قم بدمجه في مشروعك باستخدام Maven:
 
-**Maven Dependency:**
+**تبعية Maven:**
 
 ```xml
 <dependency>
@@ -48,50 +48,50 @@ To get started with Aspose.Email for Java, integrate it into your project using 
 
 #### الحصول على الترخيص
 
-Aspose.Email offers a free trial, temporary licenses for evaluation purposes, and purchase options for production use:
-- **نسخة تجريبية مجانية**: Access limited features for testing.
-- **رخصة مؤقتة**: Request via Aspose’s website to explore full capabilities.
-- **شراء**: Obtain a permanent license if you decide to integrate it into your application.
+يقدم Aspose.Email نسخة تجريبية مجانية، ورخص مؤقتة لأغراض التقييم، وخيارات شراء للاستخدام في الإنتاج:
+- **نسخة تجريبية مجانية**:الوصول إلى الميزات المحدودة للاختبار.
+- **رخصة مؤقتة**:يمكنك الطلب عبر موقع Aspose الإلكتروني لاستكشاف الإمكانيات الكاملة.
+- **شراء**:احصل على ترخيص دائم إذا قررت دمجه في تطبيقك.
 
 #### التهيئة
 
-ابدأ بإعداد `ExchangeClient` with your Exchange server credentials. This client will facilitate all interactions with the mailbox.
+ابدأ بإعداد `ExchangeClient` باستخدام بيانات اعتماد خادم Exchange الخاص بك. سيُسهّل هذا العميل جميع التفاعلات مع صندوق البريد.
 
 ## دليل التنفيذ
 
-### Feature 1: List Messages from Inbox Folder
+### الميزة 1: قائمة الرسائل من مجلد البريد الوارد
 
 **ملخص**
 
-This feature connects to an Exchange server and retrieves messages from the Inbox folder, displaying essential details like subject, sender, recipient, date, read status, message ID, and unique URI.
+تتصل هذه الميزة بخادم Exchange وتسترد الرسائل من مجلد البريد الوارد، وتعرض التفاصيل الأساسية مثل الموضوع والمرسل والمستلم والتاريخ وحالة القراءة ومعرف الرسالة وعنوان URI الفريد.
 
 #### التنفيذ خطوة بخطوة
 
-##### 1. Create `ExchangeClient` Instance
+##### 1. إنشاء `ExchangeClient` مثال
 
 ```java
-ExchangeClient client = new ExchangeClient("http://MachineName/exchange/Username", "username", "password", "domain");
+ExchangeClient client = new ExchangeClient("http://اسم الجهاز/التبادل/اسم المستخدم"، "اسم المستخدم"، "كلمة المرور"، "المجال");
 ```
 
-**توضيح**: This initializes the client with server URL and credentials, setting up a connection to your mailbox.
+**توضيح**:يؤدي هذا إلى تهيئة العميل باستخدام عنوان URL الخاص بالخادم وبيانات الاعتماد، وإعداد اتصال بصندوق البريد الخاص بك.
 
-##### 2. Retrieve Inbox Folder URI
+##### 2. استرداد عنوان URI لمجلد البريد الوارد
 
 ```java
 String inboxUri = client.getMailboxInfo().getInboxUri();
 ```
 
-**توضيح**: Fetches the unique URI for the Inbox folder, which is essential for querying messages.
+**توضيح**:يقوم بجلب عنوان URI الفريد لمجلد البريد الوارد، وهو أمر ضروري لاستعلام الرسائل.
 
-##### 3. List Messages from Inbox
+##### 3. قائمة الرسائل من صندوق الوارد
 
 ```java
 ExchangeMessageInfoCollection msgCollection = client.listMessages(inboxUri);
 ```
 
-**توضيح**: Retrieves a collection of message info objects representing emails in the Inbox.
+**توضيح**:استرجاع مجموعة من كائنات معلومات الرسالة التي تمثل رسائل البريد الإلكتروني الموجودة في صندوق الوارد.
 
-##### 4. Display Message Details
+##### 4. عرض تفاصيل الرسالة
 
 ```java
 for (ExchangeMessageInfo msgInfo : msgCollection) {
@@ -106,17 +106,17 @@ for (ExchangeMessageInfo msgInfo : msgCollection) {
 }
 ```
 
-**توضيح**: Iterates through each message, printing out key details. This step is crucial for verifying the data retrieved from the server.
+**توضيح**:يُراجع كل رسالة، ويطبع التفاصيل الرئيسية. هذه الخطوة أساسية للتحقق من البيانات المستردة من الخادم.
 
-### Feature 2: List Messages from Other Folders
+### الميزة 2: قائمة الرسائل من مجلدات أخرى
 
 **ملخص**
 
-This extends functionality to retrieve emails from other folders like Deleted Items, Drafts, and Sent Items using their respective URIs.
+يؤدي هذا إلى توسيع الوظيفة لاسترداد رسائل البريد الإلكتروني من مجلدات أخرى مثل العناصر المحذوفة والمسودات والعناصر المرسلة باستخدام عناوين URI الخاصة بها.
 
 #### التنفيذ خطوة بخطوة
 
-##### 1. Define Folder URIs
+##### 1. تحديد عناوين URI للمجلدات
 
 ```java
 String deletedItemsUri = client.getMailboxInfo().getDeletedItemsUri();
@@ -124,9 +124,9 @@ String draftsUri = client.getMailboxInfo().getDraftsUri();
 String sentItemsUri = client.getMailboxInfo().getSentItemsUri();
 ```
 
-**توضيح**: Obtain the unique URIs for each folder to access their contents.
+**توضيح**:احصل على عناوين URI الفريدة لكل مجلد للوصول إلى محتوياته.
 
-##### 2. List Messages from Each Folder
+##### 2. قائمة الرسائل من كل مجلد
 
 ```java
 ExchangeMessageInfoCollection deletedMessages = client.listMessages(deletedItemsUri);
@@ -134,71 +134,71 @@ ExchangeMessageInfoCollection draftMessages = client.listMessages(draftsUri);
 ExchangeMessageInfoCollection sentMessages = client.listMessages(sentItemsUri);
 ```
 
-**توضيح**: Similar to the Inbox, these lines fetch message collections from specified folders.
+**توضيح**:على غرار البريد الوارد، تقوم هذه الأسطر بجلب مجموعات الرسائل من مجلدات محددة.
 
 #### نصائح استكشاف الأخطاء وإصلاحها
 
-- **مشاكل الاتصال**: Ensure server URL and credentials are correct.
-- **Access Denied Errors**: Check that your user has permissions to access all requested folders.
-- **Empty Collections**: Verify folder names if no messages appear; some servers might have different naming conventions.
+- **مشاكل الاتصال**:تأكد من صحة عنوان URL الخاص بالخادم وبيانات الاعتماد.
+- **أخطاء رفض الوصول**:تأكد من أن المستخدم لديه الأذونات اللازمة للوصول إلى جميع المجلدات المطلوبة.
+- **المجموعات الفارغة**:تحقق من أسماء المجلدات إذا لم تظهر أي رسائل؛ فقد يكون لدى بعض الخوادم اتفاقيات تسمية مختلفة.
 
 ## التطبيقات العملية
 
-Here are a few real-world scenarios where listing Exchange messages could be beneficial:
+فيما يلي بعض السيناريوهات الواقعية حيث قد يكون إدراج رسائل Exchange مفيدًا:
 
-1. **أرشفة البريد الإلكتروني الآلي**: Periodically list and archive emails from various folders for compliance purposes.
-2. **تصفية البريد العشوائي**: Analyze incoming messages in the Inbox to identify and move spam to the Junk folder.
-3. **Email Synchronization**: Sync email data across different platforms, ensuring consistency between Exchange and third-party apps.
+1. **أرشفة البريد الإلكتروني الآلي**:قم بإدراج رسائل البريد الإلكتروني وأرشفتها بشكل دوري من مجلدات مختلفة لأغراض الامتثال.
+2. **تصفية البريد العشوائي**:تحليل الرسائل الواردة في صندوق الوارد لتحديد البريد العشوائي ونقله إلى مجلد البريد العشوائي.
+3. **مزامنة البريد الإلكتروني**:مزامنة بيانات البريد الإلكتروني عبر منصات مختلفة، مما يضمن الاتساق بين Exchange وتطبيقات الطرف الثالث.
 
 ## اعتبارات الأداء
 
-When dealing with large mailboxes:
+عند التعامل مع صناديق البريد الكبيرة:
 
-- **معالجة الدفعات**: Retrieve and process emails in batches to manage memory usage effectively.
-- **تحسين الاستعلامات**: Use specific filters when listing messages to reduce the volume of data retrieved.
-- **مراقبة استخدام الموارد**: Regularly check CPU and memory utilization, especially during peak times.
+- **معالجة الدفعات**:استرجاع رسائل البريد الإلكتروني ومعالجتها في دفعات لإدارة استخدام الذاكرة بشكل فعال.
+- **تحسين الاستعلامات**:استخدم مرشحات محددة عند إدراج الرسائل لتقليل حجم البيانات المستردة.
+- **مراقبة استخدام الموارد**:تحقق بانتظام من استخدام وحدة المعالجة المركزية والذاكرة، وخاصة خلال أوقات الذروة.
 
 ## خاتمة
 
-By following this guide, you've learned how to use Aspose.Email for Java to list messages from various folders in an Exchange mailbox. This knowledge can help automate email management tasks, streamline workflows, and improve productivity.
+باتباع هذا الدليل، ستتعلم كيفية استخدام Aspose.Email لجافا لعرض الرسائل من مجلدات مختلفة في صندوق بريد Exchange. ستساعدك هذه المعرفة على أتمتة مهام إدارة البريد الإلكتروني، وتبسيط سير العمل، وتحسين الإنتاجية.
 
 ### الخطوات التالية
 
-- Explore additional features of Aspose.Email for more complex operations.
-- Integrate your solution with other business systems for comprehensive automation.
+- استكشف الميزات الإضافية لـ Aspose.Email للعمليات الأكثر تعقيدًا.
+- قم بدمج حلولك مع أنظمة الأعمال الأخرى لتحقيق الأتمتة الشاملة.
 
 ## قسم الأسئلة الشائعة
 
-**Q1: Can I list messages from custom folders?**
+**س1: هل يمكنني إدراج الرسائل من مجلدات مخصصة؟**
 
-نعم استخدم `client.getMailboxInfo().getFolderUri("Custom Folder Name")` to get the URI and list messages similarly.
+نعم استخدم `client.getMailboxInfo().getFolderUri("Custom Folder Name")` للحصول على عنوان URI وقائمة الرسائل على نحو مماثل.
 
-**Q2: How do I handle large mailboxes efficiently?**
+**س2: كيف أتعامل مع صناديق البريد الكبيرة بكفاءة؟**
 
-Implement batch processing and filter emails using specific criteria before retrieval.
+تنفيذ معالجة الدفعات وتصفية رسائل البريد الإلكتروني باستخدام معايير محددة قبل الاسترجاع.
 
-**Q3: What if my connection fails during execution?**
+**س3: ماذا لو فشل الاتصال أثناء التنفيذ؟**
 
-Implement retry logic with exponential backoff for robustness against transient network issues.
+تنفيذ منطق إعادة المحاولة مع التراجع الأسّي لتحقيق المتانة ضد مشكلات الشبكة المؤقتة.
 
-**Q4: Is there a way to download email attachments?**
+**س4: هل هناك طريقة لتنزيل مرفقات البريد الإلكتروني؟**
 
-Yes, after listing messages, use `client.fetchAttachment(messageId)` to retrieve each attachment by ID.
+نعم، بعد إدراج الرسائل، استخدم `client.fetchAttachment(messageId)` لاسترجاع كل مرفق حسب المعرف.
 
-**Q5: Can Aspose.Email work with cloud-based Exchange services like Office 365?**
+**س5: هل يمكن لـ Aspose.Email العمل مع خدمات Exchange المستندة إلى السحابة مثل Office 365؟**
 
-Absolutely. Ensure your server URL is updated to reflect the appropriate Office 365 endpoint.
+بالتأكيد. تأكد من تحديث عنوان URL الخاص بخادمك ليعكس نقطة نهاية Office 365 المناسبة.
 
 ## موارد
 
-- **التوثيق**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
-- **تحميل**: [Aspose.Email Releases for Java](https://releases.aspose.com/email/java/)
+- **التوثيق**: [توثيق Aspose.Email بلغة Java](https://reference.aspose.com/email/java/)
+- **تحميل**: [إصدارات Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - **شراء**: [شراء Aspose.Email](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية**: [Aspose.Email Free Trials](https://releases.aspose.com/email/java/)
+- **نسخة تجريبية مجانية**: [تجارب مجانية لـ Aspose.Email](https://releases.aspose.com/email/java/)
 - **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
 
-Begin your journey with Aspose.Email for Java to streamline email management.
+ابدأ رحلتك مع Aspose.Email لـ Java لتبسيط إدارة البريد الإلكتروني.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

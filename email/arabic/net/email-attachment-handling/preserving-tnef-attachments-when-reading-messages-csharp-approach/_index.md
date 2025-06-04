@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to preserve TNEF attachments using Aspose.Email for .NET in this step-by-step guide with source code."
-"linktitle": "Preserving TNEF Attachments when Reading Messages - C# Approach"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Preserving TNEF Attachments when Reading Messages - C# Approach"
+"description": "تعرف على كيفية الحفاظ على مرفقات TNEF باستخدام Aspose.Email لـ .NET في هذا الدليل خطوة بخطوة مع الكود المصدر."
+"linktitle": "الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#"
 "url": "/ar/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/"
 "weight": 15
 ---
@@ -13,59 +13,59 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Preserving TNEF Attachments when Reading Messages - C# Approach
+# الحفاظ على مرفقات TNEF عند قراءة الرسائل - نهج C#
 
 
-## Introduction to TNEF Attachments
+## مقدمة لمرفقات TNEF
 
-TNEF, also known as "winmail.dat," is a proprietary email attachment format used by Microsoft Outlook and Exchange. It encapsulates various elements like formatted text, embedded images, and even calendar information. However, when emails are transferred across different email clients or platforms, TNEF attachments can sometimes become unreadable or inaccessible. This is where Aspose.Email for .NET comes to the rescue.
+TNEF، المعروف أيضًا باسم "winmail.dat"، هو تنسيق مرفقات بريد إلكتروني خاص يستخدمه Microsoft Outlook وExchange. يغلّف هذا التنسيق عناصر متنوعة، مثل النصوص المنسقة والصور المضمنة، وحتى معلومات التقويم. مع ذلك، عند نقل رسائل البريد الإلكتروني عبر برامج أو منصات بريد إلكتروني مختلفة، قد تصبح مرفقات TNEF أحيانًا غير قابلة للقراءة أو الوصول. وهنا يأتي دور Aspose.Email لـ .NET.
 
-## Getting Started with Aspose.Email for .NET
+## البدء باستخدام Aspose.Email لـ .NET
 
-Aspose.Email for .NET is a comprehensive library that provides a wide range of functionalities for working with emails and their attachments. To get started, you need to:
+Aspose.Email لـ .NET هي مكتبة شاملة توفر مجموعة واسعة من الوظائف للتعامل مع رسائل البريد الإلكتروني ومرفقاتها. للبدء، عليك:
 
-1. Download and Install Aspose.Email: Visit [هنا](https://releases.aspose.com/email/net) to download and install the latest version of Aspose.Email for .NET.
+1. تنزيل وتثبيت Aspose.البريد الإلكتروني: قم بزيارة [هنا](https://releases.aspose.com/email/net) لتنزيل أحدث إصدار من Aspose.Email لـ .NET وتثبيته.
 
-2. Create a New Project: Open your Visual Studio environment and create a new C# project.
+2. إنشاء مشروع جديد: افتح بيئة Visual Studio الخاصة بك وقم بإنشاء مشروع C# جديد.
 
-3. Add Reference: Add a reference to the downloaded Aspose.Email assembly in your project.
+3. إضافة مرجع: أضف مرجعًا إلى تجميع Aspose.Email الذي تم تنزيله في مشروعك.
 
-## Loading and Parsing Email Messages
+## تحميل رسائل البريد الإلكتروني وتحليلها
 
-To work with email messages, you first need to load and parse the email. Aspose.Email provides classes that allow you to load emails from various sources, including files, streams, and even email servers. Here's an example of how you can load an email message from a file:
+للتعامل مع رسائل البريد الإلكتروني، عليك أولاً تحميل الرسالة وتحليلها. يوفر Aspose.Email فئات تتيح لك تحميل رسائل البريد الإلكتروني من مصادر متنوعة، بما في ذلك الملفات، والتدفقات، وحتى خوادم البريد الإلكتروني. إليك مثال لكيفية تحميل رسالة بريد إلكتروني من ملف:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Load the email with TNEF attachment
+// قم بتحميل البريد الإلكتروني باستخدام مرفق TNEF
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Identifying and Extracting TNEF Attachments
+## تحديد واستخراج مرفقات TNEF
 
-Once you've loaded the email message, the next step is to identify and extract TNEF attachments. TNEF attachments are encapsulated within a special "winmail.dat" file. Aspose.Email simplifies the process of identifying and extracting these attachments:
+بعد تحميل رسالة البريد الإلكتروني، الخطوة التالية هي تحديد مرفقات TNEF واستخراجها. تُغلّف مرفقات TNEF داخل ملف "winmail.dat" خاص. يُبسّط Aspose.Email عملية تحديد هذه المرفقات واستخراجها:
 
 ```csharp
-// Check if the message has TNEF attachments
+// تحقق مما إذا كانت الرسالة تحتوي على مرفقات TNEF
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extract TNEF attachment
+        // استخراج مرفق TNEF
         var tnefAttachment = attachment;
 
-        // Access TNEF properties and modify if necessary
-        // tnefAttachment.Properties...
+        // الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.خصائص...
     }
 }
 ```
 
-## Preserving TNEF Attachments
+## الحفاظ على مرفقات TNEF
 
-Preserving TNEF attachments involves ensuring that the extracted attachments retain their original formatting and content. Aspose.Email provides methods and properties to access various elements within a TNEF attachment, such as text, embedded images, and calendar data.
+يتضمن حفظ مرفقات TNEF ضمان احتفاظ المرفقات المستخرجة بتنسيقها ومحتواها الأصلي. يوفر Aspose.Email طرقًا وخصائص للوصول إلى عناصر مختلفة داخل مرفق TNEF، مثل النصوص والصور المضمنة وبيانات التقويم.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -73,9 +73,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Complete C# Code Example
+## مثال كامل لرمز C#
 
-Here's a complete example of how you can use Aspose.Email for .NET to read and preserve TNEF attachments:
+فيما يلي مثال كامل لكيفية استخدام Aspose.Email لـ .NET لقراءة مرفقات TNEF والحفاظ عليها:
 
 ```csharp
 using Aspose.Email;
@@ -87,24 +87,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            // Load the email with TNEF attachment
+            // قم بتحميل البريد الإلكتروني باستخدام مرفق TNEF
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Check if the message has TNEF attachments
+			 // تحقق مما إذا كانت الرسالة تحتوي على مرفقات TNEF
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					// Extract TNEF attachment
+					// استخراج مرفق TNEF
 					var tnefAttachment = attachment;
 
-					// Access TNEF properties and modify if necessary
-					// tnefAttachment.Properties...
+					// الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+					// tnefAttachment.خصائص...
 				}
 			}
-			// Preserving TNEF Attachments	
+			// الحفاظ على مرفقات TNEF	
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -113,33 +113,33 @@ namespace TnefAttachmentExample
 }
 ```
 
-## Tips for Handling TNEF Attachments
+## نصائح للتعامل مع مرفقات TNEF
 
-- Always check if an email contains TNEF attachments before attempting extraction.
-- Utilize Aspose.Email's methods to access and preserve various elements within TNEF attachments.
-- Ensure you have the latest version of Aspose.Email for .NET to leverage the most up-to-date features.
+- تأكد دائمًا مما إذا كان البريد الإلكتروني يحتوي على مرفقات TNEF قبل محاولة الاستخراج.
+- استخدم أساليب Aspose.Email للوصول إلى العناصر المختلفة والحفاظ عليها داخل مرفقات TNEF.
+- تأكد من أن لديك الإصدار الأحدث من Aspose.Email لـ .NET للاستفادة من أحدث الميزات.
 
 ## خاتمة
 
-In this guide, we've explored how to preserve TNEF attachments when reading messages using the C# programming language and Aspose.Email for .NET. With its comprehensive set of tools, Aspose.Email simplifies the process of identifying, extracting, and preserving TNEF attachments, ensuring that crucial information within emails remains intact and accessible.
+في هذا الدليل، استكشفنا كيفية حفظ مرفقات TNEF عند قراءة الرسائل باستخدام لغة البرمجة C# وأداة Aspose.Email لـ .NET. بفضل مجموعتها الشاملة من الأدوات، تُبسط أداة Aspose.Email عملية تحديد مرفقات TNEF واستخراجها وحفظها، مما يضمن بقاء المعلومات المهمة في رسائل البريد الإلكتروني سليمة وسهلة الوصول.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How can I download Aspose.Email for .NET?
+### كيف يمكنني تنزيل Aspose.Email لـ .NET؟
 
-You can download Aspose.Email for .NET from the releases page: [هنا](https://releases.aspose.com/email/net)
+يمكنك تنزيل Aspose.Email لـ .NET من صفحة الإصدارات: [هنا](https://releases.aspose.com/email/net)
 
-### Can I use Aspose.Email to work with other email formats?
+### هل يمكنني استخدام Aspose.Email للعمل مع تنسيقات البريد الإلكتروني الأخرى؟
 
-Yes, Aspose.Email supports various email formats, including PST, EML, MSG, and more.
+نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة، بما في ذلك PST، وEML، وMSG، والمزيد.
 
-### Is Aspose.Email suitable for both small and large-scale applications?
+### هل Aspose.Email مناسب للتطبيقات الصغيرة والكبيرة الحجم؟
 
-Absolutely! Aspose.Email is designed to cater to a wide range of applications, from small projects to enterprise-level solutions.
+بالتأكيد! صُمم Aspose.Email لتلبية مجموعة واسعة من التطبيقات، بدءًا من المشاريع الصغيرة ووصولًا إلى حلول المؤسسات.
 
-### Is Aspose.Email regularly updated?
+### هل يتم تحديث Aspose.Email بانتظام؟
 
-Yes, Aspose maintains regular updates to ensure compatibility with the latest technologies and platforms.
+نعم، تقوم Aspose بإجراء تحديثات منتظمة لضمان التوافق مع أحدث التقنيات والمنصات.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

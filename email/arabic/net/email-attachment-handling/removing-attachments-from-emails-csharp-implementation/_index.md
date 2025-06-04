@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to remove email attachments using Aspose.Email for .NET. Step-by-step guide with C# source code."
-"linktitle": "Removing Attachments from Emails - C# Implementation"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Removing Attachments from Emails - C# Implementation"
+"description": "تعرّف على كيفية إزالة مرفقات البريد الإلكتروني باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع شفرة المصدر C#."
+"linktitle": "إزالة المرفقات من رسائل البريد الإلكتروني - تنفيذ C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "إزالة المرفقات من رسائل البريد الإلكتروني - تنفيذ C#"
 "url": "/ar/net/email-attachment-handling/removing-attachments-from-emails-csharp-implementation/"
 "weight": 18
 ---
@@ -13,98 +13,98 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Removing Attachments from Emails - C# Implementation
+# إزالة المرفقات من رسائل البريد الإلكتروني - تنفيذ C#
 
 
-## Introduction to Removing Attachments from Emails
+## مقدمة حول إزالة المرفقات من رسائل البريد الإلكتروني
 
-Emails often contain attachments, which can sometimes clutter up your inbox or take up unnecessary storage space. In this article, we will explore how to programmatically remove attachments from emails using the Aspose.Email for .NET library. Aspose.Email provides a powerful set of tools for working with emails and attachments, making it a great choice for this task.
+غالبًا ما تحتوي رسائل البريد الإلكتروني على مرفقات، مما قد يُسبب أحيانًا ازدحامًا في صندوق الوارد أو يشغل مساحة تخزين غير ضرورية. في هذه المقالة، سنستكشف كيفية إزالة المرفقات برمجيًا من رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لـ .NET. تُوفر Aspose.Email مجموعة فعّالة من الأدوات للتعامل مع رسائل البريد الإلكتروني والمرفقات، مما يجعلها خيارًا ممتازًا لهذه المهمة.
 
-## Why Use Aspose.Email for .NET?
+## لماذا تستخدم Aspose.Email لـ .NET؟
 
-Aspose.Email for .NET is a robust and reliable library that offers comprehensive features for working with emails in various formats. It allows you to manipulate email messages, attachments, recipients, and more. With its user-friendly API, you can easily integrate email processing capabilities into your C# applications.
+Aspose.Email لـ .NET مكتبة قوية وموثوقة توفر ميزات شاملة للتعامل مع رسائل البريد الإلكتروني بمختلف التنسيقات. تتيح لك التعامل مع رسائل البريد الإلكتروني، والمرفقات، والمستلمين، وغيرها. بفضل واجهة برمجة التطبيقات سهلة الاستخدام، يمكنك دمج إمكانيات معالجة البريد الإلكتروني بسهولة في تطبيقات C#.
 
 ## المتطلبات الأساسية
 
-Before we dive into the implementation, make sure you have the following prerequisites in place:
+قبل أن نتعمق في التنفيذ، تأكد من توفر المتطلبات الأساسية التالية:
 
-- Visual Studio or any C# development environment
+- Visual Studio أو أي بيئة تطوير C#
 - فهم أساسي لبرمجة C#
 
-## Step 1: Setting up Your Development Environment
+## الخطوة 1: إعداد بيئة التطوير الخاصة بك
 
-To get started, ensure you have a suitable development environment like Visual Studio installed on your machine. This will provide you with the necessary tools to create and build your C# projects.
+للبدء، تأكد من تثبيت بيئة تطوير مناسبة، مثل Visual Studio، على جهازك. سيوفر لك هذا الأدوات اللازمة لإنشاء وبناء مشاريع C#.
 
-## Step 2: Creating a New C# Project
+## الخطوة 2: إنشاء مشروع C# جديد
 
 1. افتح Visual Studio.
-2. Create a new C# Console Application project.
-3. Give your project a name and choose a location to save it.
+2. إنشاء مشروع تطبيق وحدة التحكم C# جديد.
+3. أعط مشروعك اسمًا واختر موقعًا لحفظه.
 
-## Step 3: Installing the Aspose.Email NuGet Package
+## الخطوة 3: تثبيت حزمة Aspose.Email NuGet
 
-1. Right-click on your project in the Solution Explorer.
-2. Select "Manage NuGet Packages."
-3. Search for "Aspose.Email" and install the appropriate package.
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول.
+2. حدد "إدارة حزم NuGet".
+3. ابحث عن "Aspose.Email" وقم بتثبيت الحزمة المناسبة.
 
-## Step 4: Loading and Parsing an Email
+## الخطوة 4: تحميل البريد الإلكتروني وتحليله
 
-To remove attachments, we first need to load and parse an email. Here's how you can do it:
+لإزالة المرفقات، علينا أولاً تحميل رسالة بريد إلكتروني وتحليلها. إليك كيفية القيام بذلك:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Mime;
 
-// Load the email message
+// تحميل رسالة البريد الإلكتروني
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Step 5: Removing Attachments
+## الخطوة 5: إزالة المرفقات
 
-Now that we have loaded the email, let's remove its attachments:
+الآن بعد أن قمنا بتحميل البريد الإلكتروني، فلنقم بإزالة مرفقاته:
 
 ```csharp
-// Remove attachments
+// إزالة المرفقات
 message.Attachments.Clear();
 ```
 
-## Step 6: Saving the Modified Email
+## الخطوة 6: حفظ البريد الإلكتروني المعدل
 
-After removing the attachments, you can save the modified email:
+بعد إزالة المرفقات، يمكنك حفظ البريد الإلكتروني المعدل:
 
 ```csharp
-// Save the modified email
+// حفظ البريد الإلكتروني المعدل
 message.Save("path/to/save/modified/email.eml");
 ```
 
 ## خاتمة
 
-In this article, we explored how to remove attachments from emails using the Aspose.Email for .NET library. We discussed the importance of a clean inbox and how Aspose.Email simplifies the process of attachment manipulation. By following the steps outlined in this guide, you can easily integrate this functionality into your own C# applications.
+في هذه المقالة، استكشفنا كيفية إزالة المرفقات من رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لـ .NET. ناقشنا أهمية صندوق الوارد النظيف وكيف يُبسط Aspose.Email عملية معالجة المرفقات. باتباع الخطوات الموضحة في هذا الدليل، يمكنك دمج هذه الوظيفة بسهولة في تطبيقات C# الخاصة بك.
 
 ## الأسئلة الشائعة
 
-### How do I install the Aspose.Email NuGet package?
+### كيف أقوم بتثبيت حزمة Aspose.Email NuGet؟
 
-To install the Aspose.Email NuGet package, follow these steps:
-1. Right-click on your project in the Solution Explorer.
-2. Select "Manage NuGet Packages."
-3. Search for "Aspose.Email" and install the appropriate package.
+لتثبيت حزمة Aspose.Email NuGet، اتبع الخطوات التالية:
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول.
+2. حدد "إدارة حزم NuGet".
+3. ابحث عن "Aspose.Email" وقم بتثبيت الحزمة المناسبة.
 
-### Can I use Aspose.Email for other email-related tasks?
+### هل يمكنني استخدام Aspose.Email لمهام أخرى متعلقة بالبريد الإلكتروني؟
 
-Yes, Aspose.Email offers a wide range of features for working with emails. You can use it for tasks such as sending emails, parsing email bodies, managing recipients, and more.
+نعم، يوفر Aspose.Email مجموعة واسعة من الميزات للتعامل مع رسائل البريد الإلكتروني. يمكنك استخدامه لمهام مثل إرسال الرسائل، وتحليل نصوصها، وإدارة المستلمين، وغيرها.
 
-### Is Aspose.Email suitable for both small and large-scale applications?
+### هل Aspose.Email مناسب للتطبيقات الصغيرة والكبيرة الحجم؟
 
-Absolutely. Aspose.Email is designed to be scalable and can be used in projects of various sizes, from small applications to large enterprise solutions.
+بالتأكيد. صُمم Aspose.Email ليكون قابلاً للتطوير ويمكن استخدامه في مشاريع بأحجام مختلفة، بدءًا من التطبيقات الصغيرة وصولًا إلى حلول المؤسسات الكبيرة.
 
-### How can I learn more about Aspose.Email for .NET?
+### كيف يمكنني معرفة المزيد عن Aspose.Email لـ .NET؟
 
-For more detailed information and documentation about Aspose.Email for .NET, visit the [Aspose.Email for .Net API Reference](https://reference.aspose.com/email/net)
+لمزيد من المعلومات والوثائق التفصيلية حول Aspose.Email لـ .NET، تفضل بزيارة [مرجع واجهة برمجة التطبيقات Aspose.Email لـ .Net](https://reference.aspose.com/email/net)
 
-### Can I test the Aspose.Email library before integrating it into my project?
+### هل يمكنني اختبار مكتبة Aspose.Email قبل دمجها في مشروعي؟
 
-Yes, Aspose provides trial versions of its libraries that you can download and test before making a decision to purchase. Visit their website for more information.
+نعم، توفر Aspose إصدارات تجريبية من مكتباتها، يمكنك تنزيلها وتجربتها قبل اتخاذ قرار الشراء. تفضل بزيارة موقعهم الإلكتروني لمزيد من المعلومات.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

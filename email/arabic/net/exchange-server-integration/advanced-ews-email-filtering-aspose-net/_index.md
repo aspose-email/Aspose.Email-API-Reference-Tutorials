@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn advanced email filtering techniques using Aspose.Email for .NET and EWS. Efficiently manage emails by date, sender, recipient, notifications, size, and more."
-"title": "Master Advanced EWS Email Filtering with Aspose.Email .NET for Exchange Server Integration"
+"description": "تعلّم تقنيات متقدمة لتصفية البريد الإلكتروني باستخدام Aspose.Email لـ .NET وEWS. أدر رسائل البريد الإلكتروني بكفاءة حسب التاريخ، والمرسل، والمستلم، والإشعارات، والحجم، والمزيد."
+"title": "إتقان تصفية البريد الإلكتروني المتقدمة في EWS باستخدام Aspose.Email .NET للتكامل مع Exchange Server"
 "url": "/ar/net/exchange-server-integration/advanced-ews-email-filtering-aspose-net/"
 "weight": 1
 ---
@@ -11,30 +11,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Advanced EWS Email Filtering with Aspose.Email .NET
+# إتقان تصفية البريد الإلكتروني المتقدمة في EWS باستخدام Aspose.Email .NET
 
 ## مقدمة
-In the fast-paced digital world, efficient email management is crucial. With countless messages arriving daily, sorting through them to find relevant information quickly can significantly boost productivity. This tutorial will guide you through advanced filtering techniques using Aspose.Email for .NET and Exchange Web Services (EWS). You'll learn how to connect to EWS and filter emails based on criteria like date, sender, recipient, delivery notifications, size, and more.
+في عالمنا الرقمي سريع الخطى، تُعدّ إدارة البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية. مع وصول عدد لا يُحصى من الرسائل يوميًا، يُمكن لفرزها بسرعة للعثور على المعلومات ذات الصلة أن يُعزز الإنتاجية بشكل كبير. سيُرشدك هذا البرنامج التعليمي إلى تقنيات التصفية المتقدمة باستخدام Aspose.Email لـ .NET وخدمات Exchange Web Services (EWS). ستتعلم كيفية الاتصال بخدمات Exchange Web Services وتصفية رسائل البريد الإلكتروني بناءً على معايير مثل التاريخ، والمُرسِل، والمستلم، وإشعارات التسليم، والحجم، وغيرها.
 
 **ما سوف تتعلمه:**
-- Connect to EWS using Aspose.Email for .NET.
-- Filter emails by date, sender, recipient, and other attributes.
-- Implement paging support for efficient message filtering.
-- Optimize performance when handling large volumes of email data.
+- الاتصال بـ EWS باستخدام Aspose.Email لـ .NET.
+- تصفية رسائل البريد الإلكتروني حسب التاريخ والمرسل والمستلم والسمات الأخرى.
+- تنفيذ دعم الترقيم لترشيح الرسائل بكفاءة.
+- تحسين الأداء عند التعامل مع كميات كبيرة من بيانات البريد الإلكتروني.
 
-Let's review the prerequisites before diving into implementation details.
+دعونا نراجع المتطلبات الأساسية قبل الخوض في تفاصيل التنفيذ.
 
 ## المتطلبات الأساسية
 لمتابعة هذا البرنامج التعليمي، تأكد من أن لديك:
-- **Aspose.Email لـ .NET** library installed in your project. This tutorial targets version 22.x and above.
+- **Aspose.Email لـ .NET** المكتبة المُثبّتة في مشروعك. هذا البرنامج التعليمي مُوجّه للإصدار 22.x وما فوق.
 - فهم أساسي لبرمجة C#.
-- Access to an Exchange server with EWS enabled (e.g., Microsoft Outlook).
-- Visual Studio or any compatible IDE.
+- الوصول إلى خادم Exchange مع تمكين EWS (على سبيل المثال، Microsoft Outlook).
+- Visual Studio أو أي IDE متوافق.
 
-Ensure these tools are set up before proceeding to the implementation section.
+تأكد من إعداد هذه الأدوات قبل الانتقال إلى قسم التنفيذ.
 
 ## إعداد Aspose.Email لـ .NET
-First, install Aspose.Email in your project using one of the following methods:
+أولاً، قم بتثبيت Aspose.Email في مشروعك باستخدام إحدى الطرق التالية:
 
 **.NET CLI:**
 ```bash
@@ -50,19 +50,19 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-You can acquire a license in three ways:
-- **نسخة تجريبية مجانية:** Download a temporary license to evaluate full features.
-- **رخصة مؤقتة:** Request a free 30-day temporary license from Aspose.
-- **شراء:** Buy a subscription if you find the tool useful for long-term projects.
+يمكنك الحصول على الترخيص بثلاث طرق:
+- **نسخة تجريبية مجانية:** قم بتنزيل ترخيص مؤقت لتقييم الميزات الكاملة.
+- **رخصة مؤقتة:** اطلب ترخيصًا مؤقتًا مجانيًا لمدة 30 يومًا من Aspose.
+- **شراء:** قم بشراء اشتراك إذا وجدت أن الأداة مفيدة للمشاريع طويلة الأمد.
 
-After installation and licensing, proceed with initializing your connection to EWS.
+بعد التثبيت والترخيص، انتقل إلى تهيئة اتصالك بـ EWS.
 
 ## دليل التنفيذ
 
-### Feature: Connect to EWS
-**ملخص:** Establish a connection to Exchange Web Services (EWS) using Aspose.Email for .NET.
+### الميزة: الاتصال بـ EWS
+**ملخص:** إنشاء اتصال بخدمات Exchange Web Services (EWS) باستخدام Aspose.Email لـ .NET.
 
-#### Step 1: Initialize the Connection
+#### الخطوة 1: تهيئة الاتصال
 ```csharp
 using Aspose.Email.Clients.Exchange.WebService;
 using System;
@@ -81,12 +81,12 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 ```
-**توضيح:** This code connects to the Exchange server using provided credentials. Replace placeholders with your actual mailbox URI and authentication details.
+**توضيح:** يتصل هذا الرمز بخادم Exchange باستخدام بيانات الاعتماد المُقدّمة. استبدل العناصر النائبة بمعرف URI لصندوق بريدك الإلكتروني وتفاصيل المصادقة.
 
-### Feature: Filter Emails by Date
-**ملخص:** Learn how to filter emails received today and within the last 7 days.
+### الميزة: تصفية رسائل البريد الإلكتروني حسب التاريخ
+**ملخص:** تعرف على كيفية تصفية رسائل البريد الإلكتروني التي تلقيتها اليوم وخلال الأيام السبعة الماضية.
 
-#### Step 1: Retrieve Today's Emails
+#### الخطوة 1: استرداد رسائل البريد الإلكتروني اليوم
 ```csharp
 using Aspose.Email.Tools.Search;
 using System;
@@ -107,7 +107,7 @@ catch (Exception ex)
 }
 ```
 
-#### Step 2: Retrieve Emails from the Last 7 Days
+#### الخطوة 2: استرداد رسائل البريد الإلكتروني من الأيام السبعة الماضية
 ```csharp
 try
 {
@@ -125,12 +125,12 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 ```
-**توضيح:** استخدم `MailQueryBuilder` to construct queries based on email dates. This enables filtering emails received today or within a specific timeframe.
+**توضيح:** استخدم `MailQueryBuilder` إنشاء استعلامات بناءً على تواريخ البريد الإلكتروني. يتيح ذلك تصفية رسائل البريد الإلكتروني الواردة اليوم أو خلال فترة زمنية محددة.
 
-### Feature: Filter Emails by Sender or Domain
-**ملخص:** This feature demonstrates how to filter emails from a specific sender and domain.
+### الميزة: تصفية رسائل البريد الإلكتروني حسب المرسل أو المجال
+**ملخص:** توضح هذه الميزة كيفية تصفية رسائل البريد الإلكتروني من مرسل ونطاق محددين.
 
-#### Step 1: Retrieve Emails from Specific Sender
+#### الخطوة 1: استرداد رسائل البريد الإلكتروني من مرسل محدد
 ```csharp
 try
 {
@@ -148,7 +148,7 @@ catch (Exception ex)
 }
 ```
 
-#### Step 2: Retrieve Emails from Specific Domain
+#### الخطوة 2: استرداد رسائل البريد الإلكتروني من نطاق محدد
 ```csharp
 try
 {
@@ -165,12 +165,12 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 ```
-**توضيح:** يستخدم `MailQueryBuilder` to filter emails by sender email address or domain. This helps identify important communications from specific sources.
+**توضيح:** يستخدم `MailQueryBuilder` لتصفية رسائل البريد الإلكتروني حسب عنوان البريد الإلكتروني للمُرسِل أو نطاقه. يُساعد هذا على تحديد الرسائل المهمة من مصادر مُحددة.
 
-### Feature: Filter Emails by Recipient or MessageId
-**ملخص:** Learn how to filter emails sent to a specific recipient and with a specific MessageId.
+### الميزة: تصفية رسائل البريد الإلكتروني حسب المستلم أو معرف الرسالة
+**ملخص:** تعرف على كيفية تصفية رسائل البريد الإلكتروني المرسلة إلى مستلم محدد وبمعرف رسالة محدد.
 
-#### Step 1: Retrieve Emails Sent to Specific Recipient
+#### الخطوة 1: استرداد رسائل البريد الإلكتروني المرسلة إلى مستلم محدد
 ```csharp
 try
 {
@@ -188,7 +188,7 @@ catch (Exception ex)
 }
 ```
 
-#### Step 2: Retrieve Emails by Specific MessageId
+#### الخطوة 2: استرداد رسائل البريد الإلكتروني حسب معرف الرسالة المحدد
 ```csharp
 try
 {
@@ -205,12 +205,12 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 ```
-**توضيح:** Filtering by recipient or MessageId helps zero in on emails of interest based on the intended recipient or a unique identifier.
+**توضيح:** تساعد عملية التصفية حسب المستلم أو معرف الرسالة في التركيز على رسائل البريد الإلكتروني ذات الاهتمام استنادًا إلى المستلم المقصود أو معرف فريد.
 
-### Feature: Filter Emails by Delivery Notifications and Size
-**ملخص:** This feature demonstrates filtering emails based on delivery notifications and message size.
+### الميزة: تصفية رسائل البريد الإلكتروني حسب إشعارات التسليم والحجم
+**ملخص:** تُظهر هذه الميزة كيفية تصفية رسائل البريد الإلكتروني استنادًا إلى إشعارات التسليم وحجم الرسالة.
 
-#### Step 1: Retrieve Mail Delivery Notifications
+#### الخطوة 1: استرداد إشعارات تسليم البريد
 ```csharp
 try
 {
@@ -228,14 +228,14 @@ catch (Exception ex)
 }
 ```
 
-#### Step 2: Filter Messages by Size
+#### الخطوة 2: تصفية الرسائل حسب الحجم
 ```csharp
 try
 {
     IEWSClient client = EWSClient.GetEWSClient(mailboxUri, username, password, domain);
     
     ExchangeQueryBuilder builderSize = new ExchangeQueryBuilder();
-    builderSize.ItemSize.Greater(80000); // Example size in bytes
+    builderSize.ItemSize.Greater(80000); // مثال على الحجم بالبايت
     
     MailQuery querySize = builderSize.GetQuery();
     var sizeMessages = client.ListMessages(client.MailboxInfo.InboxUri, querySize);
@@ -245,10 +245,10 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 ```
-**توضيح:** Use these filters to manage emails effectively based on delivery status and size.
+**توضيح:** استخدم هذه المرشحات لإدارة رسائل البريد الإلكتروني بشكل فعال استنادًا إلى حالة التسليم وحجمها.
 
 ## خاتمة
-This tutorial covered advanced email filtering techniques using Aspose.Email for .NET with EWS. By mastering these skills, you can efficiently manage your inbox, improving productivity in handling large volumes of emails.
+تناول هذا البرنامج التعليمي تقنيات متقدمة لتصفية البريد الإلكتروني باستخدام Aspose.Email لـ .NET مع EWS. بإتقان هذه المهارات، يمكنك إدارة صندوق الوارد بكفاءة، مما يُحسّن إنتاجيتك في التعامل مع كميات كبيرة من رسائل البريد الإلكتروني.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -16,20 +16,20 @@
 
 ## البرامج التعليمية المتاحة
 
-### [How to Create DKIM-Signed Emails Using Aspose.Email for Java: A Comprehensive Guide](./create-dkim-signed-emails-aspose-java/)
-Learn how to implement and send DKIM-signed emails using Aspose.Email for Java. Enhance email security with this step-by-step guide.
+### [كيفية إنشاء رسائل بريد إلكتروني مُوقّعة بـ DKIM باستخدام Aspose.Email لـ Java: دليل شامل](./create-dkim-signed-emails-aspose-java/)
+تعرّف على كيفية تنفيذ وإرسال رسائل بريد إلكتروني مُوقّعة بـ DKIM باستخدام Aspose.Email لـ Java. عزّز أمان بريدك الإلكتروني باتباع هذا الدليل المُفصّل.
 
-### [How to Encrypt and Decrypt Emails with Aspose.Email for Java: A Step-by-Step Guide](./encrypt-decrypt-emails-aspose-java/)
-Learn how to use Aspose.Email for Java to encrypt and decrypt email messages. Secure your communications with this comprehensive guide on email encryption.
+### [كيفية تشفير وفك تشفير رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./encrypt-decrypt-emails-aspose-java/)
+تعرّف على كيفية استخدام Aspose.Email لجافا لتشفير رسائل البريد الإلكتروني وفك تشفيرها. أمّن اتصالاتك مع هذا الدليل الشامل حول تشفير البريد الإلكتروني.
 
-### [Secure PST Files Using Aspose.Email for Java: A Developer's Guide to Security & Authentication](./secure-pst-files-aspose-email-java-guide/)
-Learn how to secure PST files with Aspose.Email for Java, including password protection and management. This guide covers checking passwords, setting new ones, and more.
+### [تأمين ملفات PST باستخدام Aspose.Email لـ Java: دليل المطور للأمان والمصادقة](./secure-pst-files-aspose-email-java-guide/)
+تعرّف على كيفية تأمين ملفات PST باستخدام Aspose.Email لجافا، بما في ذلك حماية كلمات المرور وإدارتها. يغطي هذا الدليل التحقق من كلمات المرور، وتعيين كلمات مرور جديدة، والمزيد.
 
 ## موارد إضافية
 
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
+- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 - [منتدى Aspose.Email](https://forum.aspose.com/c/email)
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)

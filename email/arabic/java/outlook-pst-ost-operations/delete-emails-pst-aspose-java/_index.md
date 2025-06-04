@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently delete emails from PST files using Aspose.Email for Java. This guide covers both single and bulk deletions with step-by-step instructions."
-"title": "Delete Emails from PST Files Using Aspose.Email for Java&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية حذف رسائل البريد الإلكتروني بكفاءة من ملفات PST باستخدام Aspose.Email لجافا. يغطي هذا الدليل عمليات الحذف الفردية والجماعية، مع تعليمات خطوة بخطوة."
+"title": "حذف رسائل البريد الإلكتروني من ملفات PST باستخدام Aspose.Email لـ Java - دليل شامل"
 "url": "/ar/java/outlook-pst-ost-operations/delete-emails-pst-aspose-java/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Implement Aspose.Email for Java to Delete Emails from Outlook PST Files
+# كيفية استخدام Aspose.Email في Java لحذف رسائل البريد الإلكتروني من ملفات Outlook PST
 
 ## مقدمة
-Managing Outlook PST files can be challenging, especially when you need to delete specific emails based on certain criteria. Whether you're cleaning up your inbox or archiving important contacts, Aspose.Email for Java provides a streamlined solution for both bulk and single-item deletions. This tutorial will guide you through using Aspose.Email for Java to efficiently manage PST files.
+قد تكون إدارة ملفات Outlook PST صعبة، خاصةً عند الحاجة إلى حذف رسائل بريد إلكتروني محددة بناءً على معايير محددة. سواءً كنت تُنظّف صندوق الوارد أو تُؤرشف جهات اتصال مهمة، يُوفّر Aspose.Email لـ Java حلاً مُبسّطًا لعمليات الحذف الجماعي والحذف الفردي. سيُرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لـ Java لإدارة ملفات PST بكفاءة.
 
 **ما سوف تتعلمه:**
-- Deleting items from PST files individually based on specific conditions.
-- Performing bulk deletions in Outlook PST files using query conditions.
-- Setting up your environment with Aspose.Email for Java.
+- حذف العناصر من ملفات PST بشكل فردي بناءً على شروط محددة.
+- تنفيذ عمليات حذف مجمعة في ملفات Outlook PST باستخدام شروط الاستعلام.
+- إعداد البيئة الخاصة بك باستخدام Aspose.Email لـJava.
 - التطبيقات العملية واعتبارات الأداء.
 
 دعونا نغوص في الأمر!
 
 ### المتطلبات الأساسية
-Before you start coding, ensure you have the following:
-- **Java Development Kit (JDK):** Version 16 or later is recommended.
-- **Aspose.Email for Java Library:** Downloaded from Maven or Aspose website.
-- **IDE:** Any IDE like IntelliJ IDEA or Eclipse will suffice.
+قبل البدء في الترميز، تأكد من أن لديك ما يلي:
+- **مجموعة تطوير Java (JDK):** يوصى باستخدام الإصدار 16 أو الإصدار الأحدث.
+- **Aspose.Email لمكتبة Java:** تم تنزيله من موقع Maven أو Aspose.
+- **بيئة التطوير المتكاملة:** أي IDE مثل IntelliJ IDEA أو Eclipse سوف يكون كافيا.
 
-### Setting Up Aspose.Email for Java
-To use Aspose.Email for Java, add it as a dependency in your project. If you're using Maven, include the following in your `pom.xml`:
+### إعداد Aspose.Email لـ Java
+لاستخدام Aspose.Email في جافا، أضفه كتبعية في مشروعك. إذا كنت تستخدم Maven، فأدرج ما يلي في ملفك: `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -41,20 +41,20 @@ To use Aspose.Email for Java, add it as a dependency in your project. If you're 
 </dependency>
 ```
 #### الحصول على الترخيص
-Start with a free trial or request a temporary license to explore all features without limitations. For long-term use, consider purchasing a license.
-To initialize Aspose.Email:
+ابدأ بفترة تجريبية مجانية أو اطلب ترخيصًا مؤقتًا لاستكشاف جميع الميزات دون قيود. للاستخدام طويل الأمد، فكّر في شراء ترخيص.
+لتهيئة Aspose.Email:
 ```java
-// Ensure your license is set before performing any operations
+// تأكد من ضبط الترخيص الخاص بك قبل إجراء أي عمليات
 License license = new License();
 license.setLicense("path_to_your_license_file");
 ```
 ## دليل التنفيذ
-### Feature 1: Delete Items from PST One by One
+### الميزة 1: حذف العناصر من PST واحدًا تلو الآخر
 #### ملخص
-This feature allows you to delete items individually based on specific conditions, such as email subject.
+تتيح لك هذه الميزة حذف العناصر بشكل فردي استنادًا إلى شروط محددة، مثل موضوع البريد الإلكتروني.
 #### دليل خطوة بخطوة
-##### Import Required Packages
-Start by importing necessary classes:
+##### استيراد الحزم المطلوبة
+ابدأ باستيراد الفئات الضرورية:
 ```java
 import com.aspose.email.FolderInfo;
 import com.aspose.email.MessageInfo;
@@ -63,19 +63,19 @@ import com.aspose.email.PersonalStorage;
 import com.aspose.email.StandardIpmFolder;
 ```
 ##### تحميل ملف PST
-Define your document directory and load the PST file:
+قم بتحديد دليل المستند الخاص بك وقم بتحميل ملف PST:
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 PersonalStorage pst = PersonalStorage.fromFile(dataDir + "/SampleContacts.pst");
 ```
-##### Access the Contacts Folder
-Retrieve the contacts folder where emails are stored:
+##### الوصول إلى مجلد جهات الاتصال
+استرداد مجلد جهات الاتصال حيث يتم تخزين رسائل البريد الإلكتروني:
 ```java
 FolderInfo folderInfo = pst.getPredefinedFolder(StandardIpmFolder.Contacts);
 MessageInfoCollection messageInfoCollection = folderInfo.getContents();
 ```
-##### Iterate and Delete Based on Condition
-Loop through each email and delete if it matches your condition:
+##### التكرار والحذف بناءً على الشرط
+قم بفحص كل رسالة بريد إلكتروني وحذفها إذا كانت تتطابق مع حالتك:
 ```java
 for (int i = 0; i < messageInfoCollection.size(); i++) {
     MessageInfo messageInfo = (MessageInfo) messageInfoCollection.get_Item(i);
@@ -84,11 +84,11 @@ for (int i = 0; i < messageInfoCollection.size(); i++) {
     }
 }
 ```
-### Feature 2: Delete Items in Bulk from a PST File
+### الميزة 2: حذف العناصر بكميات كبيرة من ملف PST
 #### ملخص
-For bulk deletions, this feature uses query conditions to efficiently remove multiple emails.
+بالنسبة للحذف الجماعي، تستخدم هذه الميزة شروط الاستعلام لإزالة رسائل البريد الإلكتروني المتعددة بكفاءة.
 #### دليل خطوة بخطوة
-##### Import Required Packages
+##### استيراد الحزم المطلوبة
 ```java
 import com.aspose.email.FolderInfo;
 import com.aspose.email.MessageInfoCollection;
@@ -96,19 +96,19 @@ import com.aspose.email.PersonalStorage;
 import com.aspose.email.PersonalStorageQueryBuilder;
 import java.util.ArrayList;
 ```
-##### Load the PST File and Dispose Properly
-Ensure resources are managed by using a try-finally block:
+##### قم بتحميل ملف PST والتخلص منه بشكل صحيح
+تأكد من إدارة الموارد باستخدام كتلة try-finally:
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 PersonalStorage pst = PersonalStorage.fromFile(dataDir + "/SampleContacts.pst");
 try {
-    // Bulk deletion logic here
+    // منطق الحذف بالجملة هنا
 } finally {
     pst.dispose();
 }
 ```
-##### Create and Execute Query
-Define your query to filter emails from a specific sender:
+##### إنشاء وتنفيذ الاستعلام
+قم بتحديد استعلامك لتصفية رسائل البريد الإلكتروني من مرسل محدد:
 ```java
 FolderInfo inbox = pst.getRootFolder().getSubFolder("Contacts");
 PersonalStorageQueryBuilder queryBuilder = new PersonalStorageQueryBuilder();
@@ -116,8 +116,8 @@ queryBuilder.getFrom().contains("someuser@domain.com");
 
 MessageInfoCollection messages = inbox.getContents(queryBuilder.getQuery());
 ```
-##### Collect and Delete Entries
-Gather entry IDs and delete in bulk:
+##### جمع وحذف الإدخالات
+جمع معرفات الإدخال وحذفها بالجملة:
 ```java
 ArrayList<String> deleteList = new ArrayList<>();
 for (MessageInfo messageInfo : messages) {
@@ -126,32 +126,32 @@ for (MessageInfo messageInfo : messages) {
 inbox.deleteChildItems(deleteList);
 ```
 ## التطبيقات العملية
-- **أرشفة البريد الإلكتروني:** Remove outdated emails to free up space.
-- **Inbox Management:** Clean unwanted emails from specific senders.
-- **نقل البيانات:** Prepare PST files for migration by removing unnecessary data.
+- **أرشفة البريد الإلكتروني:** قم بإزالة رسائل البريد الإلكتروني القديمة لتحرير المساحة.
+- **إدارة البريد الوارد:** تنظيف رسائل البريد الإلكتروني غير المرغوب فيها من المرسلين المحددين.
+- **نقل البيانات:** قم بإعداد ملفات PST للهجرة عن طريق إزالة البيانات غير الضرورية.
 
-Integrate Aspose.Email with other systems like databases or cloud storage for enhanced email management solutions.
+قم بدمج Aspose.Email مع أنظمة أخرى مثل قواعد البيانات أو التخزين السحابي للحصول على حلول إدارة البريد الإلكتروني المحسّنة.
 ## اعتبارات الأداء
-- **تحسين الاستعلامات:** Use precise queries to minimize processing time.
-- **Manage Resources:** تخلص من `PersonalStorage` objects promptly to free memory.
-- **معالجة الدفعات:** Handle large PST files in batches to avoid memory overflow.
+- **تحسين الاستعلامات:** استخدم الاستعلامات الدقيقة لتقليل وقت المعالجة.
+- **إدارة الموارد:** تخلص من `PersonalStorage` الأشياء لتحرير الذاكرة على الفور.
+- **معالجة الدفعات:** تعامل مع ملفات PST الكبيرة على دفعات لتجنب فيضان الذاكرة.
 ## خاتمة
-By following this guide, you've learned how to use Aspose.Email for Java to delete items from PST files both individually and in bulk. Experiment with different conditions and queries to tailor the solution to your needs. Explore further by integrating these capabilities into larger email management systems.
-Ready to take your email management skills to the next level? Try implementing this solution today!
+باتباع هذا الدليل، ستتعلم كيفية استخدام Aspose.Email لجافا لحذف عناصر من ملفات PST، سواءً بشكل فردي أو جماعي. جرّب شروطًا واستعلامات مختلفة لتخصيص الحل المناسب لاحتياجاتك. استكشف المزيد من خلال دمج هذه الإمكانيات في أنظمة إدارة البريد الإلكتروني الأكبر حجمًا.
+هل أنت مستعد للارتقاء بمهاراتك في إدارة البريد الإلكتروني؟ جرّب هذا الحل اليوم!
 ## قسم الأسئلة الشائعة
-**Q: What is Aspose.Email for Java?**
-A: It's a library that allows developers to manipulate and process emails in various formats, including PST files.
-**Q: How do I set up my environment for using Aspose.Email?**
-A: Install JDK 16 or later, add Aspose.Email as a Maven dependency, and configure your IDE.
-**Q: Can I delete items based on other criteria besides the email subject?**
-A: Yes, you can modify queries to filter by sender, date, or other attributes.
-**Q: What are some common issues when deleting emails from PST files?**
-A: Ensure correct path definitions and handle exceptions for file access errors.
+**س: ما هو Aspose.Email لـJava؟**
+ج: إنها مكتبة تسمح للمطورين بالتعامل مع رسائل البريد الإلكتروني ومعالجتها بتنسيقات مختلفة، بما في ذلك ملفات PST.
+**س: كيف أقوم بإعداد البيئة الخاصة بي لاستخدام Aspose.Email؟**
+أ: قم بتثبيت JDK 16 أو إصدار أحدث، وأضف Aspose.Email كتبعية Maven، وقم بتكوين IDE الخاص بك.
+**س: هل يمكنني حذف العناصر بناءً على معايير أخرى غير موضوع البريد الإلكتروني؟**
+ج: نعم، يمكنك تعديل الاستعلامات لتصفيتها حسب المرسل أو التاريخ أو السمات الأخرى.
+**س: ما هي بعض المشكلات الشائعة عند حذف رسائل البريد الإلكتروني من ملفات PST؟**
+أ: تأكد من صحة تعريفات المسار والتعامل مع الاستثناءات الخاصة بأخطاء الوصول إلى الملفات.
 **س: كيف يمكنني الحصول على ترخيص لـ Aspose.Email؟**
-A: Visit the Aspose website to purchase a license or request a temporary one for evaluation purposes.
+أ: قم بزيارة موقع Aspose لشراء ترخيص أو طلب ترخيص مؤقت لأغراض التقييم.
 ## موارد
-- **التوثيق:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
-- **تحميل:** [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **التوثيق:** [توثيق البريد الإلكتروني لـ Aspose Java](https://reference.aspose.com/email/java/)
+- **تحميل:** [إصدارات Aspose Email Java](https://releases.aspose.com/email/java/)
 - **شراء:** [شراء Aspose.Email](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية:** [تجارب مجانية لبريد Aspose الإلكتروني](https://releases.aspose.com/email/java/)
 - **رخصة مؤقتة:** [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)

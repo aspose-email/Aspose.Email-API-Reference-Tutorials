@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to efficiently manage Outlook PST files using Aspose.Email for Java. This guide covers setup, loading, exploring, and retrieving message details with ease."
-"title": "Master Aspose.Email for Java&#58; Efficiently Manage Outlook PST Files"
+"description": "تعرّف على كيفية إدارة ملفات Outlook PST بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إعداد الرسائل وتحميلها واستكشافها واسترجاع تفاصيلها بسهولة."
+"title": "إتقان استخدام Aspose.Email لـ Java وإدارة ملفات Outlook PST بكفاءة"
 "url": "/ar/java/outlook-pst-ost-operations/aspose-email-java-manage-outlook-pst-files/"
 "weight": 1
 ---
@@ -11,30 +11,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Outlook PST File Management with Aspose.Email for Java
+# إتقان إدارة ملفات Outlook PST باستخدام Aspose.Email لـ Java
 
 ## مقدمة
-Managing Outlook PST files can be a daunting task, especially when dealing with large volumes of emails and data that need to be organized or accessed programmatically. Whether you're an IT professional tasked with migrating email archives or a developer building email management tools, the right library can make all the difference. Aspose.Email for Java provides powerful features to load, explore, and manipulate PST files efficiently.
+قد تكون إدارة ملفات Outlook PST مهمة شاقة، خاصةً عند التعامل مع كميات هائلة من رسائل البريد الإلكتروني والبيانات التي تحتاج إلى تنظيم أو الوصول إليها برمجيًا. سواء كنت متخصصًا في تكنولوجيا المعلومات مُكلفًا بنقل أرشيفات البريد الإلكتروني أو مطورًا يُنشئ أدوات إدارة البريد الإلكتروني، فإن المكتبة المناسبة تُحدث فرقًا كبيرًا. تُوفر Aspose.Email لـ Java ميزات فعّالة لتحميل ملفات PST واستكشافها ومعالجتها بكفاءة.
 
-In this comprehensive guide, we'll walk through using Aspose.Email for Java to manage Outlook PST files effectively. You'll learn how to load PST files, display folder information, parse searchable folders, and retrieve message details—all with ease. By the end of this tutorial, you'll be well-equipped to handle your PST file needs seamlessly.
+في هذا الدليل الشامل، سنشرح كيفية استخدام Aspose.Email لجافا لإدارة ملفات Outlook PST بفعالية. ستتعلم كيفية تحميل ملفات PST، وعرض معلومات المجلدات، وتحليل المجلدات القابلة للبحث، واسترجاع تفاصيل الرسائل - كل ذلك بسهولة. بنهاية هذا البرنامج التعليمي، ستكون جاهزًا تمامًا للتعامل مع احتياجات ملفات PST بسلاسة.
 
 **ما سوف تتعلمه:**
-- How to set up Aspose.Email for Java in your development environment
-- Techniques for loading and exploring PST files using Aspose.Email for Java
-- Methods for displaying folder details and parsing searchable folders
-- Strategies for retrieving message information, including parent folder data
+- كيفية إعداد Aspose.Email لـ Java في بيئة التطوير الخاصة بك
+- تقنيات تحميل واستكشاف ملفات PST باستخدام Aspose.Email لـ Java
+- طرق عرض تفاصيل المجلد وتحليل المجلدات القابلة للبحث
+- استراتيجيات لاسترجاع معلومات الرسالة، بما في ذلك بيانات المجلد الرئيسي
 
-Let's dive into the prerequisites before getting started.
+دعونا نلقي نظرة على المتطلبات الأساسية قبل البدء.
 
 ## المتطلبات الأساسية
-Before implementing these features, you'll need to ensure that your development environment is ready. Here’s what you’ll require:
+قبل تطبيق هذه الميزات، عليك التأكد من جاهزية بيئة التطوير لديك. إليك ما ستحتاجه:
 
-- **Aspose.Email for Java**: This library provides functionalities to work with email files, including PSTs.
-- **Java Development Kit (JDK)**: Ensure you have JDK 16 or later installed as Aspose.Email for Java is compatible with it.
-- **IDE**: An Integrated Development Environment like IntelliJ IDEA or Eclipse will be helpful for writing and testing your code.
+- **Aspose.Email لـ Java**:توفر هذه المكتبة وظائف للعمل مع ملفات البريد الإلكتروني، بما في ذلك ملفات PST.
+- **مجموعة تطوير جافا (JDK)**:تأكد من تثبيت JDK 16 أو إصدار أحدث لأن Aspose.Email for Java متوافق معه.
+- **بيئة تطوير متكاملة**ستكون بيئة التطوير المتكاملة مثل IntelliJ IDEA أو Eclipse مفيدة لكتابة واختبار الكود الخاص بك.
 
-### Setting Up Aspose.Email for Java
-To begin, you need to integrate the Aspose.Email library into your project. If you're using Maven, add the following dependency in your `pom.xml` file:
+### إعداد Aspose.Email لـ Java
+للبدء، عليك دمج مكتبة Aspose.Email في مشروعك. إذا كنت تستخدم Maven، فأضف التبعية التالية في مشروعك: `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -46,49 +46,49 @@ To begin, you need to integrate the Aspose.Email library into your project. If y
 ```
 
 #### الحصول على الترخيص
-Aspose.Email for Java offers a free trial, temporary licenses, and purchase options:
-- **نسخة تجريبية مجانية**: Download the library from [موقع Aspose](https://releases.aspose.com/email/java/) to explore its features without any restrictions.
-- **رخصة مؤقتة**: Apply for a temporary license on their [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**: If you find Aspose.Email useful, you can purchase it from the [متجر أسبووز](https://purchase.aspose.com/buy).
+يوفر Aspose.Email for Java نسخة تجريبية مجانية، وتراخيص مؤقتة، وخيارات شراء:
+- **نسخة تجريبية مجانية**:تحميل المكتبة من [موقع Aspose](https://releases.aspose.com/email/java/) لاستكشاف ميزاته دون أي قيود.
+- **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت على [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
+- **شراء**:إذا وجدت Aspose.Email مفيدًا، فيمكنك شراؤه من [متجر أسبووز](https://purchase.aspose.com/buy).
 
-Once your library is set up and licensed, initialize it as follows:
+بمجرد إعداد مكتبتك وترخيصها، قم بتهيئتها على النحو التالي:
 
 ```java
-// Initialize Aspose.Email for Java with a license if available
+// قم بتهيئة Aspose.Email لـ Java باستخدام الترخيص إذا كان متاحًا
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license/file.lic");
 ```
 
 ## دليل التنفيذ
-In this section, we will break down the features provided by Aspose.Email for handling PST files.
+في هذا القسم، سنقوم بتفصيل الميزات التي يوفرها Aspose.Email للتعامل مع ملفات PST.
 
-### Load a PST File
-This feature demonstrates loading an Outlook PST file using Aspose.Email for Java.
+### تحميل ملف PST
+توضح هذه الميزة تحميل ملف Outlook PST باستخدام Aspose.Email لـ Java.
 
 #### ملخص
-Loading a PST file is the first step in accessing its content. This allows you to explore folders and messages within the file programmatically.
+تحميل ملف PST هو الخطوة الأولى للوصول إلى محتواه. يتيح لك هذا استكشاف المجلدات والرسائل داخل الملف برمجيًا.
 
 ```java
 import com.aspose.email.PersonalStorage;
 
 public class LoadPSTFile {
     public static void main(String[] args) {
-        // Define the directory containing the PST file.
+        // قم بتحديد الدليل الذي يحتوي على ملف PST.
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 
-        // Load the Outlook PST file from the specified path.
+        // قم بتحميل ملف Outlook PST من المسار المحدد.
         PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
     }
 }
 ```
 
-**توضيح**: ال `fromFile` طريقة `PersonalStorage` is used to load a PST file from your specified directory. It’s essential to set the correct path in `dataDir`.
+**توضيح**: ال `fromFile` طريقة `PersonalStorage` يُستخدم لتحميل ملف PST من الدليل المُحدد. من الضروري ضبط المسار الصحيح في `dataDir`.
 
-### Display Folder and Message Information for a PST File
-Next, let's browse through folders in a PST file to display their names, message counts, etc.
+### عرض معلومات المجلد والرسالة لملف PST
+بعد ذلك، دعنا نتصفح المجلدات في ملف PST لعرض أسمائها وعدد رسائلها وما إلى ذلك.
 
 #### ملخص
-This feature helps you enumerate all subfolders within a PST file, providing detailed information about each one.
+تساعدك هذه الميزة على تعداد جميع المجلدات الفرعية داخل ملف PST، وتوفير معلومات مفصلة حول كل مجلد منها.
 
 ```java
 import com.aspose.email.FolderInfo;
@@ -97,20 +97,20 @@ import com.aspose.email.PersonalStorage;
 
 public class DisplayFolderAndMessageInformation {
     public static void main(String[] args) {
-        // Define the directory containing the PST file.
+        // قم بتحديد الدليل الذي يحتوي على ملف PST.
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 
-        // Load the Outlook PST file from the specified path.
+        // قم بتحميل ملف Outlook PST من المسار المحدد.
         PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
 
-        // Retrieve the collection of subfolders in the root folder.
+        // استرداد مجموعة المجلدات الفرعية في المجلد الجذر.
         FolderInfoCollection folderInfoCollection = pst.getRootFolder().getSubFolders();
 
-        // Iterate through each folder to display its details.
+        // قم بالتكرار خلال كل مجلد لعرض تفاصيله.
         for (int i = 0; i < folderInfoCollection.size(); i++) {
             FolderInfo folderInfo = folderInfoCollection.get_Item(i);
 
-            // Display folder information including ID, name, total items, and unread item count.
+            // عرض معلومات المجلد بما في ذلك المعرف والاسم وإجمالي العناصر وعدد العناصر غير المقروءة.
             System.out.println("FolderId: " + folderInfo.getEntryIdString());
             System.out.println("Folder: " + folderInfo.getDisplayName());
             System.out.println("Total items: " + folderInfo.getContentCount());
@@ -121,13 +121,13 @@ public class DisplayFolderAndMessageInformation {
 }
 ```
 
-**توضيح**: ال `getRootFolder().getSubFolders()` method retrieves all subfolders in the PST file's root. Each folder’s details, including its ID and message counts, are printed out.
+**توضيح**: ال `getRootFolder().getSubFolders()` تسترجع هذه الطريقة جميع المجلدات الفرعية في جذر ملف PST. تُطبع تفاصيل كل مجلد، بما في ذلك معرفه وعدد رسائله.
 
-### Parse Searchable Folders in a PST File
-This feature categorizes and lists subfolders based on their type—Search or Normal.
+### تحليل المجلدات القابلة للبحث في ملف PST
+تقوم هذه الميزة بتصنيف المجلدات الفرعية وإدراجها حسب نوعها - بحث أو عادي.
 
 #### ملخص
-Parsing folders helps you identify and process different types of searchable content within the PST file.
+يساعدك تحليل المجلدات على تحديد ومعالجة أنواع مختلفة من المحتوى القابل للبحث داخل ملف PST.
 
 ```java
 import com.aspose.email.FolderInfo;
@@ -137,37 +137,37 @@ import com.aspose.email.FolderKind;
 
 public class ParseSearchableFolders {
     public static void main(String[] args) {
-        // Define the directory containing the PST file.
+        // قم بتحديد الدليل الذي يحتوي على ملف PST.
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 
-        // Load the Outlook PST file from the specified path.
+        // قم بتحميل ملف Outlook PST من المسار المحدد.
         final PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
 
-        // Retrieve a specific folder by its ID.
+        // استرجاع مجلد معين عن طريق معرفه.
         FolderInfo finder = pst.getFolderById("AAAAAOu+OWXNsrFFkK4GgGGmk0yCgAAA");
 
-        // Get subfolders categorized as Search folders and display their count.
+        // احصل على المجلدات الفرعية المصنفة كمجلدات بحث وعرض عددها.
         FolderInfoCollection coll = finder.getSubFolders(FolderKind.Search);
         System.out.println(coll.size());
 
-        // Get subfolders categorized as Normal folders and display their count.
+        // احصل على المجلدات الفرعية المصنفة كمجلدات عادية وعرض عددها.
         coll = finder.getSubFolders(FolderKind.Normal);
         System.out.println(coll.size());
 
-        // Get all subfolders (both Search and Normal) and display their total count.
+        // احصل على جميع المجلدات الفرعية (كل من البحث والمجلد العادي) واعرض العدد الإجمالي لها.
         coll = finder.getSubFolders(FolderKind.Search | FolderKind.Normal);
         System.out.println(coll.size());
     }
 }
 ```
 
-**توضيح**: By using `getFolderById`, we target a specific folder. The `getSubFolders` method is then used to filter folders based on their type—Search or Normal.
+**توضيح**:باستخدام `getFolderById`، نستهدف مجلدًا محددًا. `getSubFolders` يتم بعد ذلك استخدام الطريقة لتصفية المجلدات استنادًا إلى نوعها - بحث أو عادي.
 
-### Retrieve Parent Folder Information from Message Info
-This feature extracts the parent folder information for each message within a PST file's folders.
+### استرداد معلومات المجلد الرئيسي من معلومات الرسالة
+تعمل هذه الميزة على استخراج معلومات المجلد الرئيسي لكل رسالة داخل مجلدات ملف PST.
 
 #### ملخص
-Retrieving parent folder details allows you to understand where messages are stored in the hierarchy of your PST file.
+يتيح لك استرداد تفاصيل المجلد الرئيسي فهم مكان تخزين الرسائل في التسلسل الهرمي لملف PST الخاص بك.
 
 ```java
 import com.aspose.email.FolderInfo;
@@ -177,24 +177,24 @@ import com.aspose.email.IDisposable;
 
 public class RetrieveParentFolderInformation {
     public static void main(String[] args) {
-        // Define the directory containing the PST file.
+        // قم بتحديد الدليل الذي يحتوي على ملف PST.
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 
-        // Load the Outlook PST file from the specified path.
+        // قم بتحميل ملف Outlook PST من المسار المحدد.
         PersonalStorage pst = PersonalStorage.fromFile(dataDir + "PersonalStorage.pst");
 
-        // Retrieve a specific folder by its ID and process message information.
-        FolderInfo folderInfo = pst.getRootFolder().getSubFolders().get_Item(0); // Example to get the first subfolder
+        // استرجاع مجلد معين عن طريق معرفه ومعالجة معلومات الرسالة.
+        FolderInfo folderInfo = pst.getRootFolder().getSubFolders().get_Item(0); // مثال للحصول على المجلد الفرعي الأول
         for (MessageInfo messageInfo : folderInfo.getContents()) {
             System.out.println("Subject: " + messageInfo.getSubject());
             System.out.println("Parent Folder: " + folderInfo.getDisplayName());
-            // Additional processing can be added here
+            // يمكن إضافة معالجة إضافية هنا
         }
     }
 }
 ```
 
-**توضيح**: This example iterates through messages in a specific folder, printing out each message's subject and parent folder information.
+**توضيح**:يقوم هذا المثال بالتكرار خلال الرسائل الموجودة في مجلد معين، وطباعة موضوع كل رسالة ومعلومات المجلد الرئيسي.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

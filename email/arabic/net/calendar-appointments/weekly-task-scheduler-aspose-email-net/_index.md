@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to create a robust weekly task scheduler using Aspose.Email for .NET. This guide covers setting up recurring tasks, configuring multi-day recurrences, and calculating occurrences efficiently."
-"title": "Weekly Task Scheduler with Aspose.Email .NET&#58; Mastering Calendar & Appointments"
+"description": "تعرّف على كيفية إنشاء مُجدول مهام أسبوعي فعّال باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل إعداد المهام المتكررة، وتكوين تكرارات متعددة الأيام، وحساب تكراراتها بكفاءة."
+"title": "مُجدول المهام الأسبوعي مع Aspose.Email .NET - إتقان التقويم والمواعيد"
 "url": "/ar/net/calendar-appointments/weekly-task-scheduler-aspose-email-net/"
 "weight": 1
 ---
@@ -11,26 +11,26 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Weekly Task Scheduler with Aspose.Email .NET: Mastering Calendar & Appointments
+# مُجدول المهام الأسبوعي مع Aspose.Email .NET: إتقان التقويم والمواعيد
 
 ## مقدمة
-Efficiently managing recurring tasks is essential for productivity, especially when these tasks occur on specific days at regular intervals. This tutorial demonstrates setting up a weekly recurring task using Aspose.Email for .NET.
+إدارة المهام المتكررة بكفاءة أمرٌ أساسيٌّ لزيادة الإنتاجية، خاصةً عند تنفيذها في أيامٍ مُحددةٍ وعلى فتراتٍ منتظمة. يُوضّح هذا البرنامج التعليمي كيفية إعداد مهمةٍ متكررةٍ أسبوعيًا باستخدام Aspose.Email لـ .NET.
 
 في هذا الدليل، سوف تتعلم:
-- How to set up weekly recurrence patterns.
-- Implementing multi-day recurrences with interval settings.
-- Calculating occurrences based on custom rules.
+- كيفية إعداد أنماط التكرار الأسبوعية.
+- تنفيذ التكرارات متعددة الأيام مع إعدادات الفاصل الزمني.
+- حساب الأحداث بناءً على القواعد المخصصة.
 
-Let's explore the prerequisites necessary to get started!
+دعونا نستكشف المتطلبات الأساسية اللازمة للبدء!
 
 ## المتطلبات الأساسية
-Before implementing our task scheduler, ensure your environment is properly configured. You'll need:
-- Aspose.Email for .NET library (version 20.x or later).
-- A development environment compatible with the .NET framework.
-- Basic knowledge of C# programming and familiarity with email scheduling concepts.
+قبل تطبيق مُجدول المهام، تأكد من تهيئة بيئتك بشكل صحيح. ستحتاج إلى:
+- Aspose.Email لمكتبة .NET (الإصدار 20.x أو أحدث).
+- بيئة تطوير متوافقة مع إطار عمل .NET.
+- المعرفة الأساسية ببرمجة C# والتعرف على مفاهيم جدولة البريد الإلكتروني.
 
 ## إعداد Aspose.Email لـ .NET
-To integrate Aspose.Email into your project, choose from several installation methods:
+لدمج Aspose.Email في مشروعك، اختر من بين عدة طرق تثبيت:
 
 **.NET CLI**
 ```shell
@@ -43,20 +43,20 @@ Install-Package Aspose.Email
 ```
 
 **واجهة مستخدم مدير الحزم NuGet**
-Open NuGet in your IDE, search for "Aspose.Email", and install the latest version.
+افتح NuGet في IDE الخاص بك، وابحث عن "Aspose.Email"، ثم قم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-To use Aspose.Email, start with a free trial or obtain a temporary license. For commercial projects, consider purchasing a license. Visit [شراء Aspose](https://purchase.aspose.com/buy) for more information on acquiring licenses.
+لاستخدام Aspose.Email، ابدأ بفترة تجريبية مجانية أو احصل على ترخيص مؤقت. للمشاريع التجارية، فكّر في شراء ترخيص. تفضل بزيارة [شراء Aspose](https://purchase.aspose.com/buy) لمزيد من المعلومات حول الحصول على التراخيص.
 
 ## دليل التنفيذ
-This section outlines the steps to create your weekly task scheduler using Aspose.Email for .NET.
+يتناول هذا القسم الخطوات اللازمة لإنشاء جدول المهام الأسبوعي الخاص بك باستخدام Aspose.Email لـ .NET.
 
-### Setting Up Weekly Recurrence with Multiple Days
+### إعداد التكرار الأسبوعي مع أيام متعددة
 #### ملخص
-Learn how to configure a task that recurs on specific days of the week at defined intervals. This is ideal for creating calendars or reminders for tasks like bi-weekly meetings held on Mondays and Fridays.
+تعرّف على كيفية إعداد مهمة تتكرر في أيام محددة من الأسبوع على فترات زمنية محددة. يُعد هذا مثاليًا لإنشاء تقويمات أو تذكيرات لمهام مثل الاجتماعات نصف الشهرية التي تُعقد يومي الاثنين والجمعة.
 
-#### Step 1: Initialize Task Details
-Start by defining the start date, due date, and end date with time zone offset applied:
+#### الخطوة 1: تهيئة تفاصيل المهمة
+ابدأ بتحديد تاريخ البدء وتاريخ الاستحقاق وتاريخ الانتهاء مع تطبيق إزاحة المنطقة الزمنية:
 ```csharp
 DateTime StartDate = new DateTime(2015, 7, 16).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now));
 DateTime DueDate = new DateTime(2015, 7, 16).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now));
@@ -65,19 +65,19 @@ DateTime endByDate = new DateTime(2015, 9, 1).Add(TimeZone.CurrentTimeZone.GetUt
 MapiTask task = new MapiTask("This is a test task", "Sample Body", StartDate, DueDate);
 task.State = MapiTaskState.NotAssigned;
 ```
-#### Step 2: Configure Recurrence Pattern
-Next, set up the recurrence pattern. Here, you specify that the task should recur bi-weekly on Mondays and Fridays:
+#### الخطوة 2: تكوين نمط التكرار
+بعد ذلك، حدّد نمط التكرار. هنا، حدد تكرار المهمة مرتين أسبوعيًا يومي الاثنين والجمعة:
 ```csharp
 var rec = new MapiCalendarWeeklyRecurrencePattern
 {
     EndType = MapiCalendarRecurrenceEndType.EndAfterNOccurrences,
     PatternType = MapiCalendarRecurrencePatternType.Week,
-    Period = 2, // Bi-weekly interval
+    Period = 2, // فترة كل أسبوعين
     WeekStartDay = DayOfWeek.Sunday,
     DayOfWeek = MapiCalendarDayOfWeek.Friday | MapiCalendarDayOfWeek.Monday,
 };
 
-// Calculate the occurrence count between start and end dates
+// حساب عدد مرات الحدوث بين تاريخي البداية والنهاية
 rec.OccurrenceCount = GetOccurrenceCount(StartDate, endByDate, "FREQ=WEEKLY;BYDAY=FR,MO;INTERVAL=2");
 if (rec.OccurrenceCount == 0)
 {
@@ -86,14 +86,14 @@ if (rec.OccurrenceCount == 0)
 task.Recurrence = rec;
 ```
 #### الخطوة 3: حفظ المهمة
-Finally, save the task to a file. This step ensures your recurrence setup is preserved and can be accessed later.
+أخيرًا، احفظ المهمة في ملف. تضمن هذه الخطوة حفظ إعدادات التكرار وإمكانية الوصول إليها لاحقًا.
 ```csharp
 task.Save("YOUR_OUTPUT_DIRECTORY\SetWeeklyRecurrenceMultipleDaysInWeekWithInterval_out.msg", TaskSaveFormat.Msg);
 ```
-### Calculate Occurrences from a Recurrence Rule
-This feature computes the number of occurrences for a given rule between two dates, ensuring your task scheduler is accurate and reliable.
-#### Method Overview
-The method `GetOccurrenceCount` takes a start date, an end date, and a recurrence rule (RRULE) to calculate how many times the event will occur within the specified period:
+### حساب التكرارات من قاعدة التكرار
+تحسب هذه الميزة عدد مرات حدوث قاعدة معينة بين تاريخين، مما يضمن دقة جدول المهام لديك وموثوقيته.
+#### نظرة عامة على الطريقة
+الطريقة `GetOccurrenceCount` يستخدم تاريخ البدء وتاريخ الانتهاء وقاعدة التكرار (RRULE) لحساب عدد المرات التي سيحدث فيها الحدث خلال الفترة المحددة:
 ```csharp
 private static uint GetOccurrenceCount(DateTime start, DateTime endBy, string rrule)
 {
@@ -103,47 +103,47 @@ private static uint GetOccurrenceCount(DateTime start, DateTime endBy, string rr
 }
 ```
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **Time Zone Issues:** Ensure consistent time zone settings across all DateTime objects.
-- **Recurrence Rule Errors:** Double-check the RRULE syntax for typos or incorrect parameters.
+- **مشاكل المنطقة الزمنية:** تأكد من إعدادات المنطقة الزمنية المتسقة عبر جميع كائنات DateTime.
+- **أخطاء قاعدة التكرار:** تأكد من صحة بناء جملة RRULE بحثًا عن الأخطاء المطبعية أو المعلمات غير الصحيحة.
 
 ## التطبيقات العملية
-This weekly task scheduler is versatile and can be used in various scenarios:
-1. **إدارة المشاريع:** Schedule recurring project meetings on specific weekdays with a set interval.
-2. **Education:** Plan classes that occur bi-weekly on designated days, such as Mondays and Fridays.
-3. **Healthcare:** Set reminders for patients to take medication every other Monday and Thursday.
+يعد برنامج جدولة المهام الأسبوعي هذا متعدد الاستخدامات ويمكن استخدامه في سيناريوهات مختلفة:
+1. **إدارة المشاريع:** جدولة اجتماعات المشروع المتكررة في أيام الأسبوع المحددة مع فاصل زمني محدد.
+2. **تعليم:** خطط لفصول دراسية تقام كل أسبوعين في أيام محددة، مثل أيام الاثنين والجمعة.
+3. **الرعاية الصحية:** تعيين تذكيرات للمرضى لتناول الدواء كل يوم اثنين وخميس.
 
 ## اعتبارات الأداء
-When implementing this solution:
-- Optimize your code by minimizing unnecessary computations within loops.
-- Ensure efficient memory usage by disposing of objects no longer needed.
+عند تنفيذ هذا الحل:
+- قم بتحسين الكود الخاص بك عن طريق تقليل العمليات الحسابية غير الضرورية داخل الحلقات.
+- تأكد من استخدام الذاكرة بكفاءة عن طريق التخلص من الكائنات التي لم تعد هناك حاجة إليها.
 - قم بتحديث Aspose.Email بانتظام للاستفادة من تحسينات الأداء وإصلاحات الأخطاء.
 
 ## خاتمة
-By following the steps outlined in this tutorial, you've learned how to set up a versatile weekly task scheduler using Aspose.Email for .NET. This solution is ideal for managing recurring tasks on specific days with defined intervals. Explore further by integrating it into your existing systems or customizing it to fit more complex scheduling needs.
+باتباع الخطوات الموضحة في هذا البرنامج التعليمي، ستتعلم كيفية إعداد مُجدول مهام أسبوعي متعدد الاستخدامات باستخدام Aspose.Email لـ .NET. يُعد هذا الحل مثاليًا لإدارة المهام المتكررة في أيام محددة بفترات زمنية محددة. استكشف المزيد من خلال دمجه في أنظمتك الحالية أو تخصيصه لتلبية احتياجات الجدولة الأكثر تعقيدًا.
 
 ## قسم الأسئلة الشائعة
-**Q: How do I handle different time zones in my recurrence setup?**
-A: Always apply the current time zone offset when defining DateTime objects to ensure consistency across all calculations.
+**س: كيف يمكنني التعامل مع المناطق الزمنية المختلفة في إعدادات التكرار الخاصة بي؟**
+أ: قم دائمًا بتطبيق إزاحة المنطقة الزمنية الحالية عند تحديد كائنات DateTime لضمان الاتساق في جميع العمليات الحسابية.
 
-**Q: Can I modify the recurrence pattern after saving a task?**
-A: Yes, you can reload the MapiTask object and adjust its recurrence settings before resaving it.
+**س: هل يمكنني تعديل نمط التكرار بعد حفظ المهمة؟**
+ج: نعم، يمكنك إعادة تحميل كائن MapiTask وضبط إعدادات التكرار الخاصة به قبل إعادة حفظه.
 
-**Q: Is there a limit to the number of occurrences I can set?**
-A: While Aspose.Email does not impose a strict limit, ensure your system's resources can handle large numbers of occurrences efficiently.
+**س: هل هناك حد لعدد الأحداث التي يمكنني تعيينها؟**
+ج: على الرغم من أن Aspose.Email لا يفرض حدًا صارمًا، فتأكد من أن موارد نظامك قادرة على التعامل مع أعداد كبيرة من الأحداث بكفاءة.
 
-**Q: How do I test my task scheduler implementation?**
-A: Create unit tests with various start and end dates, along with different recurrence rules, to verify the accuracy of occurrence calculations.
+**س: كيف يمكنني اختبار تنفيذ جدول المهام الخاص بي؟**
+أ: قم بإنشاء اختبارات وحدات ذات تواريخ بداية ونهاية مختلفة، بالإضافة إلى قواعد تكرار مختلفة، للتحقق من دقة حسابات الحدوث.
 
-**Q: What are some common pitfalls when setting up recurrences?**
-A: Misconfiguring time zones or using incorrect RRULE syntax can lead to unexpected scheduling results.
+**س: ما هي بعض الأخطاء الشائعة عند إعداد التكرارات؟**
+أ: قد يؤدي تكوين المناطق الزمنية بشكل غير صحيح أو استخدام صيغة RRULE غير الصحيحة إلى نتائج جدولة غير متوقعة.
 
 ## موارد
 - **التوثيق:** استكشف الأدلة التفصيلية في [وثائق Aspose](https://reference.aspose.com/email/net/).
-- **تحميل:** Get the latest version of Aspose.Email from [الإصدارات](https://releases.aspose.com/email/net/).
-- **الشراء والتجربة:** Learn more about licensing options on [شراء Aspose](https://purchase.aspose.com/buy) and start with a free trial at [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/).
-- **يدعم:** Join discussions or seek assistance in the [منتدى أسبوزي](https://forum.aspose.com/c/email/10).
+- **تحميل:** احصل على أحدث إصدار من Aspose.Email من [الإصدارات](https://releases.aspose.com/email/net/).
+- **الشراء والتجربة:** تعرف على المزيد حول خيارات الترخيص على [شراء Aspose](https://purchase.aspose.com/buy) وابدأ بتجربة مجانية في [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/).
+- **يدعم:** انضم إلى المناقشات أو اطلب المساعدة في [منتدى أسبوزي](https://forum.aspose.com/c/email/10).
 
-By leveraging Aspose.Email for .NET, you can create powerful scheduling applications that enhance productivity and streamline task management. Happy coding!
+باستخدام Aspose.Email لـ .NET، يمكنك إنشاء تطبيقات جدولة فعّالة تُحسّن الإنتاجية وتُسهّل إدارة المهام. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

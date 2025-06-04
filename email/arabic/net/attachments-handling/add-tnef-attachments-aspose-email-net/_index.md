@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to add attachments while preserving TNEF format using Aspose.Email for .NET. Follow this step-by-step guide to manage email attachments effectively."
-"title": "How to Add TNEF Attachments to Emails Using Aspose.Email for .NET"
+"description": "تعرّف على كيفية إضافة مرفقات مع الحفاظ على تنسيق TNEF باستخدام Aspose.Email لـ .NET. اتبع هذا الدليل خطوة بخطوة لإدارة مرفقات البريد الإلكتروني بفعالية."
+"title": "كيفية إضافة مرفقات TNEF إلى رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/attachments-handling/add-tnef-attachments-aspose-email-net/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Add TNEF Attachments to Emails Using Aspose.Email for .NET
+# كيفية إضافة مرفقات TNEF إلى رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Managing emails programmatically can be challenging, especially when dealing with complex formats like TNEF (Transport Neutral Encapsulation Format). This guide will help you seamlessly add new attachments to emails while preserving existing TNEF data using the powerful Aspose.Email library in a .NET environment.
+قد تُشكّل إدارة رسائل البريد الإلكتروني برمجيًا تحديًا، خاصةً عند التعامل مع تنسيقات مُعقّدة مثل TNEF (تنسيق التغليف المُحايد للنقل). سيساعدك هذا الدليل على إضافة مرفقات جديدة إلى رسائل البريد الإلكتروني بسلاسة مع الحفاظ على بيانات TNEF الحالية باستخدام مكتبة Aspose.Email الفعّالة في بيئة .NET.
 
 في هذا البرنامج التعليمي، سنغطي:
-- Loading and managing email files with Aspose.Email for .NET
-- Adding attachments programmatically
-- Preserving TNEF attachments when saving emails in EML format
+- تحميل ملفات البريد الإلكتروني وإدارتها باستخدام Aspose.Email لـ .NET
+- إضافة المرفقات برمجيًا
+- الحفاظ على مرفقات TNEF عند حفظ رسائل البريد الإلكتروني بتنسيق EML
 
 ## المتطلبات الأساسية
 
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
-- **مكتبة Aspose.Email لـ .NET**: Installed latest version.
-- **بيئة التطوير**: Visual Studio or any C# supporting IDE.
-- Basic knowledge of C# and email formats like EML.
+- **مكتبة Aspose.Email لـ .NET**:تم تثبيت الإصدار الأحدث.
+- **بيئة التطوير**:Visual Studio أو أي IDE يدعم C#.
+- المعرفة الأساسية بلغة C# وتنسيقات البريد الإلكتروني مثل EML.
 
 ## إعداد Aspose.Email لـ .NET
 
-To integrate Aspose.Email into your project, use one of the following methods:
+لدمج Aspose.Email في مشروعك، استخدم إحدى الطرق التالية:
 
 ### .NET CLI
 ```bash
@@ -46,11 +46,11 @@ Install-Package Aspose.Email
 ### واجهة مستخدم مدير الحزم NuGet
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
-Acquire a free trial license to test features fully. Follow these steps for licensing:
+احصل على ترخيص تجريبي مجاني لاختبار الميزات بالكامل. اتبع الخطوات التالية للترخيص:
 - يزور [صفحة شراء Aspose](https://purchase.aspose.com/buy) لخيارات الشراء.
-- Request a temporary license at [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
+- اطلب ترخيصًا مؤقتًا في [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
 
-Set up your project with the following code to configure Aspose.Email:
+قم بإعداد مشروعك باستخدام الكود التالي لتكوين Aspose.Email:
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("Path_To_Your_License_File");
@@ -58,92 +58,92 @@ license.SetLicense("Path_To_Your_License_File");
 
 ## دليل التنفيذ
 
-This section outlines how to add TNEF attachments using Aspose.Email for .NET.
+يوضح هذا القسم كيفية إضافة مرفقات TNEF باستخدام Aspose.Email لـ .NET.
 
-### Load an Existing Email File
+### تحميل ملف بريد إلكتروني موجود
 
-Start by loading your EML file:
+ابدأ بتحميل ملف EML الخاص بك:
 
 #### الخطوة 1: تهيئة MailMessage
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage mailMessage = MailMessage.Load(dataDir + "/tnefEml1.eml");
 ```
-ال `MailMessage` class represents an email message. The `Load` method reads the EML file for further manipulation.
+ال `MailMessage` تمثل الفئة رسالة بريد إلكتروني. `Load` تقوم الطريقة بقراءة ملف EML لمزيد من المعالجة.
 
-### Add a New Attachment
+### إضافة مرفق جديد
 
-To add new attachments while preserving TNEF, follow these steps:
+لإضافة مرفقات جديدة مع الحفاظ على TNEF، اتبع الخطوات التالية:
 
-#### Step 2: Attach a File
+#### الخطوة 2: إرفاق ملف
 ```csharp
 mailMessage.Attachments.Add(new Attachment(File.OpenRead(dataDir + "/Untitled.jpg"), "Untitled.jpg", "image/jpg"));
 ```
-ال `Attachment` class represents the file you wish to attach. Open the image in read mode and add it to the email's attachments.
+ال `Attachment` تُمثّل الفئة الملف الذي ترغب بإرفاقه. افتح الصورة في وضع القراءة وأضفها إلى مرفقات البريد الإلكتروني.
 
-### Configure Save Options
+### تكوين خيارات الحفظ
 
-Preserving TNEF attachments requires specific save options:
+يتطلب حفظ مرفقات TNEF خيارات حفظ محددة:
 
-#### Step 3: Set EmlSaveOptions
+#### الخطوة 3: تعيين خيارات حفظ Eml
 ```csharp
 EmlSaveOptions eo = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 eo.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 ```
-ال `EmlSaveOptions` class specifies how the email should be saved. Setting `FileCompatibilityMode` ل `PreserveTnefAttachments` maintains all TNEF attachments.
+ال `EmlSaveOptions` تحدد الفئة كيفية حفظ البريد الإلكتروني. الإعداد `FileCompatibilityMode` ل `PreserveTnefAttachments` يحافظ على جميع مرفقات TNEF.
 
-### Save the Updated Email
+### احفظ البريد الإلكتروني المحدث
 
-Finally, save your updated email with new attachments:
+وأخيرًا، احفظ بريدك الإلكتروني المحدث بالمرفقات الجديدة:
 
-#### Step 4: Save Changes
+#### الخطوة 4: حفظ التغييرات
 ```csharp
 mailMessage.Save(dataDir + "/test_out.eml", eo);
 ```
-This step writes changes to a new EML file, preserving all original attachments along with the new one.
+تكتب هذه الخطوة التغييرات إلى ملف EML جديد، مع الحفاظ على جميع المرفقات الأصلية مع المرفق الجديد.
 
 ## التطبيقات العملية
 
-Aspose.Email for .NET is useful in various applications:
-1. **معالجة البريد الإلكتروني الآلية**: Integrate this feature into systems that automate email management tasks.
-2. **حلول أرشفة البريد الإلكتروني**: Use it in software designed to archive emails while maintaining data integrity.
-3. **أنظمة إدارة علاقات العملاء**: Enhance platforms by allowing users to add and manage attachments seamlessly.
+يعد Aspose.Email لـ .NET مفيدًا في تطبيقات مختلفة:
+1. **معالجة البريد الإلكتروني الآلية**:دمج هذه الميزة في الأنظمة التي تعمل على أتمتة مهام إدارة البريد الإلكتروني.
+2. **حلول أرشفة البريد الإلكتروني**:يمكنك استخدامه في البرامج المصممة لأرشفة رسائل البريد الإلكتروني مع الحفاظ على سلامة البيانات.
+3. **أنظمة إدارة علاقات العملاء**:تحسين المنصات من خلال السماح للمستخدمين بإضافة المرفقات وإدارتها بسلاسة.
 
 ## اعتبارات الأداء
 
 للحصول على الأداء الأمثل:
-- Minimize memory usage by disposing of streams after use.
-- Avoid loading large emails into memory all at once if possible.
-- Follow .NET best practices for managing resources efficiently, especially with files and streams.
+- قم بتقليل استخدام الذاكرة عن طريق التخلص من التدفقات بعد الاستخدام.
+- تجنب تحميل رسائل البريد الإلكتروني الكبيرة في الذاكرة مرة واحدة إذا كان ذلك ممكنا.
+- اتبع أفضل ممارسات .NET لإدارة الموارد بكفاءة، وخاصةً مع الملفات والتدفقات.
 
 ## خاتمة
 
-This tutorial demonstrated how to add new attachments to an email while preserving the TNEF format using Aspose.Email for .NET. This capability is crucial for maintaining complex email formats across platforms.
+يوضح هذا البرنامج التعليمي كيفية إضافة مرفقات جديدة إلى بريد إلكتروني مع الحفاظ على تنسيق TNEF باستخدام Aspose.Email لـ .NET. تُعد هذه الميزة أساسية للحفاظ على تنسيقات البريد الإلكتروني المعقدة عبر مختلف المنصات.
 
-Explore more about Aspose.Email by consulting its [comprehensive documentation](https://reference.aspose.com/email/net/) and experimenting with advanced features.
+اكتشف المزيد حول Aspose.Email من خلال استشارة [توثيق شامل](https://reference.aspose.com/email/net/) والتجريب بالميزات المتقدمة.
 
 ## قسم الأسئلة الشائعة
 
-1. **Can I use this library for other email formats?**
-   - Yes, Aspose.Email supports formats like MSG, MHT, etc.
-2. **What are common issues when saving emails with attachments?**
-   - Ensure file paths and permissions are correct to avoid access errors.
-3. **How do I handle large attachments efficiently?**
-   - Stream attachments directly to save memory rather than loading them entirely into memory.
+1. **هل يمكنني استخدام هذه المكتبة لتنسيقات البريد الإلكتروني الأخرى؟**
+   - نعم، يدعم Aspose.Email تنسيقات مثل MSG، وMHT، وما إلى ذلك.
+2. **ما هي المشكلات الشائعة عند حفظ رسائل البريد الإلكتروني مع المرفقات؟**
+   - تأكد من صحة مسارات الملفات والأذونات لتجنب أخطاء الوصول.
+3. **كيف أتعامل مع المرفقات الكبيرة بكفاءة؟**
+   - قم ببث المرفقات مباشرة لتوفير الذاكرة بدلاً من تحميلها بالكامل في الذاكرة.
 4. **هل Aspose.Email متوافق مع كافة إصدارات .NET؟**
-   - It supports a wide range of .NET frameworks; check the latest compatibility on their [release page](https://releases.aspose.com/email/net/).
-5. **What should I do if my TNEF attachments are not preserved?**
-   - تأكد مرة أخرى `EmlSaveOptions` configuration to ensure you’ve set `FileCompatibilityMode` correctly.
+   - إنه يدعم مجموعة واسعة من أطر عمل .NET؛ تحقق من أحدث التوافق على [صفحة الإصدار](https://releases.aspose.com/email/net/).
+5. **ماذا يجب أن أفعل إذا لم يتم حفظ مرفقات TNEF الخاصة بي؟**
+   - تأكد مرة أخرى `EmlSaveOptions` التكوين للتأكد من أنك قمت بتعيينه `FileCompatibilityMode` بشكل صحيح.
 
 ## موارد
 
-For further exploration, consider these resources:
+لمزيد من الاستكشاف، ضع في اعتبارك الموارد التالية:
 - [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/)
 - [تنزيل Aspose.Email](https://releases.aspose.com/email/net/)
 - [شراء ترخيص](https://purchase.aspose.com/buy)
 - [النسخة التجريبية المجانية والتراخيص المؤقتة](https://releases.aspose.com/email/net/)
 
-Engage with the community or seek support on the [منتدى أسبوزي](https://forum.aspose.com/c/email/10) for any queries. Happy coding!
+التفاعل مع المجتمع أو طلب الدعم على [منتدى أسبوزي](https://forum.aspose.com/c/email/10) لأي استفسار. برمجة سعيدة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect, list, and manage emails on Microsoft Exchange servers using the powerful Aspose.Email for Java API."
-"title": "Master Email Management on Exchange Servers Using Aspose.Email for Java"
+"description": "تعرف على كيفية توصيل رسائل البريد الإلكتروني وإدراجها وإدارتها على خوادم Microsoft Exchange باستخدام واجهة برمجة التطبيقات القوية Aspose.Email for Java."
+"title": "إدارة البريد الإلكتروني على خوادم Exchange باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/exchange-server-integration/aspose-email-java-exchange-management/"
 "weight": 1
 ---
@@ -11,28 +11,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Email Management on Exchange Servers with Aspose.Email for Java
+# إتقان إدارة البريد الإلكتروني على خوادم Exchange باستخدام Aspose.Email لـ Java
 
 ## مقدمة
-Efficient email management is crucial for organizations relying on Microsoft Exchange servers. Whether you need to handle large volumes of email, automate administrative tasks, or integrate email functionalities into your applications, the right tools can make all the difference. This tutorial focuses on leveraging **Aspose.Email for Java** to seamlessly connect and manage emails on an Exchange server.
+تُعد إدارة البريد الإلكتروني الفعّالة أمرًا بالغ الأهمية للمؤسسات التي تعتمد على خوادم Microsoft Exchange. سواءً كنتَ بحاجة إلى التعامل مع كميات كبيرة من البريد الإلكتروني، أو أتمتة المهام الإدارية، أو دمج وظائف البريد الإلكتروني في تطبيقاتك، فإن الأدوات المناسبة تُحدث فرقًا كبيرًا. يُركز هذا البرنامج التعليمي على الاستفادة من **Aspose.Email لـ Java** للاتصال وإدارة رسائل البريد الإلكتروني على خادم Exchange بسلاسة.
 
-By following this guide, you’ll learn how to:
-- Connect to an Exchange server
-- List messages in the Inbox folder
-- Delete specific emails based on criteria
+من خلال اتباع هذا الدليل، سوف تتعلم كيفية:
+- الاتصال بخادم Exchange
+- قائمة الرسائل في مجلد البريد الوارد
+- حذف رسائل البريد الإلكتروني المحددة بناءً على معايير
 
 دعونا نبدأ بالتأكد من أن لديك المتطلبات الأساسية اللازمة.
 
 ## المتطلبات الأساسية
 قبل البدء، تأكد من أن لديك ما يلي:
-1. **Aspose.Email for Java Library**: You'll need version 25.4 with the `jdk16` classifier.
-2. **Java Development Kit (JDK)**: Ensure JDK is installed and configured on your machine.
-3. **الوصول إلى خادم Exchange**: Credentials to an Exchange server are necessary.
-4. **Basic Java Knowledge**: Familiarity with Java programming concepts is essential.
+1. **Aspose.Email لمكتبة Java**:ستحتاج إلى الإصدار 25.4 مع `jdk16` مصنف.
+2. **مجموعة تطوير جافا (JDK)**:تأكد من تثبيت JDK وتكوينه على جهازك.
+3. **الوصول إلى خادم Exchange**:تعتبر بيانات الاعتماد الخاصة بخادم Exchange ضرورية.
+4. **المعرفة الأساسية بلغة جافا**:إن المعرفة بمفاهيم برمجة Java أمر ضروري.
 
-## Setting Up Aspose.Email for Java
-### Maven Dependency
-To use Aspose.Email in a Maven project, add the following dependency to your `pom.xml` file:
+## إعداد Aspose.Email لـ Java
+### تبعية Maven
+لاستخدام Aspose.Email في مشروع Maven، أضف التبعية التالية إلى مشروعك `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -43,17 +43,17 @@ To use Aspose.Email in a Maven project, add the following dependency to your `po
 </dependency>
 ```
 ### الحصول على الترخيص
-ابدأ بـ [رخصة تجريبية مجانية](https://releases.aspose.com/email/java/) to get familiar with Aspose.Email. For continued use, consider purchasing a license or applying for a temporary one via the [صفحة الشراء](https://purchase.aspose.com/buy).
+ابدأ بـ [رخصة تجريبية مجانية](https://releases.aspose.com/email/java/) للتعرف على Aspose.Email. لمواصلة الاستخدام، فكّر في شراء ترخيص أو التقدم بطلب ترخيص مؤقت عبر [صفحة الشراء](https://purchase.aspose.com/buy).
 #### التهيئة والإعداد الأساسي
-Once you've added the dependency, initialize your project with:
+بمجرد إضافة التبعية، قم بتهيئة مشروعك باستخدام:
 
 ```java
-// Import Aspose.Email classes
+// استيراد فئات Aspose.Email
 import com.aspose.email.*;
 
 public class ExchangeServerSetup {
     public static void main(String[] args) {
-        // Set license if available
+        // قم بتعيين الترخيص إذا كان متاحًا
         License license = new License();
         license.setLicense("path/to/your/license/file.lic");
         
@@ -64,10 +64,10 @@ public class ExchangeServerSetup {
 ## دليل التنفيذ
 ### الاتصال بخادم Exchange
 #### ملخص
-Connecting to an Exchange server enables you to access mailbox information, including email folders and messages.
+يتيح لك الاتصال بخادم Exchange الوصول إلى معلومات صندوق البريد، بما في ذلك مجلدات البريد الإلكتروني والرسائل.
 #### التنفيذ خطوة بخطوة
-**1. Create an Instance of `ExchangeClient`**
-Start by establishing a connection using the server URL, username, password, and domain name.
+**1. إنشاء مثيل لـ `ExchangeClient`**
+ابدأ بإنشاء اتصال باستخدام عنوان URL الخاص بالخادم واسم المستخدم وكلمة المرور واسم المجال.
 
 ```java
 import com.aspose.email.ExchangeClient;
@@ -75,9 +75,9 @@ import com.aspose.email.ExchangeMailboxInfo;
 
 public class ConnectToExchangeServer {
     public static void main(String[] args) {
-        // Create an Exchange client instance
+        // إنشاء مثيل عميل Exchange
         ExchangeClient client = new ExchangeClient(
-            "http://ex2003/exchange/administrator\
+            "http://ex2003/exchange/administrator_
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

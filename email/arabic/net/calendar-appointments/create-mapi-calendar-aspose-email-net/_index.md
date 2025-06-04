@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to create and manage MAPI calendar appointments in PST files using Aspose.Email for .NET. This guide covers setup, implementation, and optimization tips."
-"title": "How to Create MAPI Calendar Appointments and Add Them to PST Files Using Aspose.Email for .NET"
+"description": "تعرّف على كيفية إنشاء وإدارة مواعيد تقويم MAPI في ملفات PST باستخدام Aspose.Email لـ .NET. يتناول هذا الدليل نصائح الإعداد والتنفيذ والتحسين."
+"title": "كيفية إنشاء مواعيد تقويم MAPI وإضافتها إلى ملفات PST باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/calendar-appointments/create-mapi-calendar-aspose-email-net/"
 "weight": 1
 ---
@@ -11,39 +11,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create and Manage MAPI Calendar Appointments with Aspose.Email for .NET
+# كيفية إنشاء مواعيد تقويم MAPI وإدارتها باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Efficiently managing calendars and appointments is essential in today's fast-paced business world. Whether you're organizing meetings, tracking events, or planning your schedule, having a well-organized system can save time and prevent missed opportunities. This guide will walk you through creating MAPI calendar appointments and adding them to new PST files using Aspose.Email for .NET—a robust library for managing email messages and related data formats.
+تُعدّ إدارة التقويمات والمواعيد بكفاءة أمرًا بالغ الأهمية في عالم الأعمال سريع الخطى اليوم. سواء كنت تُنظّم اجتماعات، أو تتبّع فعاليات، أو تُخطّط لجدولك الزمني، فإنّ وجود نظام مُنظّم جيدًا يُمكن أن يُوفّر لك الوقت ويُجنّبك تفويت الفرص. سيُرشدك هذا الدليل إلى كيفية إنشاء مواعيد تقويم MAPI وإضافتها إلى ملفات PST جديدة باستخدام Aspose.Email لـ .NET، وهي مكتبة فعّالة لإدارة رسائل البريد الإلكتروني وتنسيقات البيانات ذات الصلة.
 
-**Keywords:** Aspose.Email for .NET, MAPI Calendar, PST File Management
+**الكلمات المفتاحية:** Aspose.Email لـ .NET، وتقويم MAPI، وإدارة ملفات PST
 
 ### ما سوف تتعلمه:
-- Setting up the Aspose.Email environment
-- Creating MAPI calendar appointments programmatically
-- Adding these appointments to a new PST file
-- Optimizing performance and troubleshooting common issues
+- إعداد بيئة Aspose.Email
+- إنشاء مواعيد تقويم MAPI برمجيًا
+- إضافة هذه المواعيد إلى ملف PST جديد
+- تحسين الأداء واستكشاف المشكلات الشائعة وإصلاحها
 
-By following this guide, you will gain practical experience with Aspose.Email for .NET, enhancing your ability to manage email data effectively.
+من خلال اتباع هذا الدليل، ستكتسب خبرة عملية مع Aspose.Email لـ .NET، مما يعزز قدرتك على إدارة بيانات البريد الإلكتروني بشكل فعال.
 
 ### المتطلبات الأساسية
 
-Before starting the implementation, ensure that you have the following prerequisites in place:
+قبل البدء في التنفيذ، تأكد من توفر المتطلبات الأساسية التالية:
 
 #### المكتبات والتبعيات المطلوبة:
 - **Aspose.Email لـ .NET**:المكتبة الأساسية المستخدمة في هذا البرنامج التعليمي.
 
 #### متطلبات إعداد البيئة:
-- A development environment with .NET installed (preferably .NET Core or .NET 5+).
+- بيئة تطوير مع تثبيت .NET (يفضل .NET Core أو .NET 5+).
 
 #### المتطلبات المعرفية:
 - فهم أساسي لبرمجة C#.
-- Familiarity with email data formats like PST and MAPI.
+- التعرف على تنسيقات بيانات البريد الإلكتروني مثل PST وMAPI.
 
 ## إعداد Aspose.Email لـ .NET
 
-To use Aspose.Email in your project, you need to install the library. You can do this via different package managers:
+لاستخدام Aspose.Email في مشروعك، عليك تثبيت المكتبة. يمكنك القيام بذلك عبر مديري حزم مختلفين:
 
 **.NET CLI**
 ```bash
@@ -55,36 +55,36 @@ dotnet add package Aspose.Email
 Install-Package Aspose.Email
 ```
 
-بدلا من ذلك، استخدم **واجهة مستخدم مدير الحزم NuGet** by searching for "Aspose.Email" and installing it.
+بدلا من ذلك، استخدم **واجهة مستخدم مدير الحزم NuGet** عن طريق البحث عن "Aspose.Email" وتثبيته.
 
 ### الحصول على الترخيص
 
-You can obtain a free trial to test Aspose.Email features. For more extensive testing or production usage:
+يمكنك الحصول على نسخة تجريبية مجانية لاختبار ميزات Aspose.Email. لمزيد من الاختبارات أو الاستخدام الإنتاجي:
 - طلب [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
-- Consider purchasing a full license if you find the library meets your needs ([اشتري هنا](https://purchase.aspose.com/buy)).
+- فكر في شراء ترخيص كامل إذا وجدت أن المكتبة تلبي احتياجاتك ([اشتري هنا](https://purchase.aspose.com/buy)).
 
 ### التهيئة الأساسية
 
-After installing Aspose.Email, initialize it in your project. Typically, this involves setting up an instance of necessary classes and configuring any specific settings required for your use case.
+بعد تثبيت Aspose.Email، قم بتشغيله في مشروعك. عادةً، يتضمن ذلك إعداد نسخة من الفئات الضرورية وتكوين أي إعدادات خاصة لحالة استخدامك.
 
 ## دليل التنفيذ
 
-This section walks you through creating MAPI calendar appointments and adding them to a PST file step-by-step.
+يرشدك هذا القسم خلال عملية إنشاء مواعيد تقويم MAPI وإضافتها إلى ملف PST خطوة بخطوة.
 
-### Step 1: Create a MAPI Calendar Appointment
+### الخطوة 1: إنشاء موعد تقويم MAPI
 
 #### ملخص
-Creating a MAPI calendar appointment involves defining details like subject, location, start time, and end time. This is the first step in organizing your events programmatically.
+يتضمن إنشاء موعد في تقويم MAPI تحديد تفاصيل مثل الموضوع والموقع ووقت البدء ووقت الانتهاء. هذه هي الخطوة الأولى في تنظيم فعالياتك برمجيًا.
 
-**Code Example:**
+**مثال على الكود:**
 ```csharp
 using System;
 using Aspose.Email.Mapi;
 
-// Define the directory for output files
+// تحديد الدليل لملفات الإخراج
 string dataDir = \@"YOUR_DOCUMENT_DIRECTORY";
 
-// Create a MAPI calendar appointment
+// إنشاء موعد تقويم MAPI
 MapiCalendar appointment = new MapiCalendar(
     "LAKE ARGYLE WA 6743\
 

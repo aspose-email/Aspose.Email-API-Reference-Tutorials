@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to efficiently retrieve extended attributes from calendar items using Aspose.Email for .NET with this detailed guide on Exchange Web Services (EWS) integration."
-"title": "How to Retrieve Extended Attributes in Calendar Items Using Aspose.Email for .NET | EWS Integration Guide"
+"description": "تعرف على كيفية استرداد السمات الممتدة بكفاءة من عناصر التقويم باستخدام Aspose.Email لـ .NET باستخدام هذا الدليل التفصيلي حول تكامل Exchange Web Services (EWS)."
+"title": "كيفية استرداد السمات الموسعة في عناصر التقويم باستخدام Aspose.Email لـ .NET | دليل تكامل EWS"
 "url": "/ar/net/calendar-appointments/retrieve-extended-attributes-aspose-email-net/"
 "weight": 1
 ---
@@ -11,33 +11,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Retrieve Extended Attributes in Calendar Items Using Aspose.Email for .NET | EWS Integration Guide
+# كيفية استرداد السمات الموسعة في عناصر التقويم باستخدام Aspose.Email لـ .NET | دليل تكامل EWS
 
 ## مقدمة
 
-Accessing custom properties of calendar items in an Exchange server can be challenging. This tutorial will guide you through using the Aspose.Email API to retrieve extended attributes efficiently, enabling your application to harness all available data from your organization's calendar. Follow this step-by-step guide to enhance your calendaring capabilities with Aspose.Email for .NET.
+قد يكون الوصول إلى الخصائص المخصصة لعناصر التقويم في خادم Exchange أمرًا صعبًا. سيرشدك هذا البرنامج التعليمي إلى كيفية استخدام واجهة برمجة تطبيقات Aspose.Email لاسترجاع السمات الموسعة بكفاءة، مما يُمكّن تطبيقك من الاستفادة من جميع البيانات المتاحة من تقويم مؤسستك. اتبع هذا الدليل التفصيلي لتحسين إمكانيات التقويم لديك باستخدام Aspose.Email لـ .NET.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email لـ .NET
-- Connecting to an Exchange server using EWS (Exchange Web Services)
-- Retrieving custom properties from calendar items
-- Handling and displaying extended attributes
+- الاتصال بخادم Exchange باستخدام EWS (خدمات الويب Exchange)
+- استرداد الخصائص المخصصة من عناصر التقويم
+- التعامل مع السمات الممتدة وعرضها
 
-Ready to dive in? Let's get started with the prerequisites!
+هل أنت مستعد للبدء؟ لنبدأ بالمتطلبات الأساسية!
 
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 ### المكتبات والتبعيات المطلوبة:
-- **Aspose.Email لـ .NET**: Install via NuGet or other package managers.
-- Ensure your environment is set up to connect to an Exchange server.
+- **Aspose.Email لـ .NET**:التثبيت عبر NuGet أو مديري الحزم الآخرين.
+- تأكد من إعداد البيئة الخاصة بك للاتصال بخادم Exchange.
 
 ### متطلبات إعداد البيئة:
-- Access to an Exchange server (EWS endpoint).
+- الوصول إلى خادم Exchange (نقطة نهاية EWS).
 - المعرفة الأساسية ببرمجة C#.
 
 ## إعداد Aspose.Email لـ .NET
-To start using Aspose.Email, you need to install the library. Here's how:
+لبدء استخدام Aspose.Email، عليك تثبيت المكتبة. إليك الطريقة:
 
 **استخدام .NET CLI:**
 ```bash
@@ -53,46 +53,46 @@ Install-Package Aspose.Email
 - ابحث عن "Aspose.Email" وحدد الإصدار الأحدث.
 
 ### خطوات الحصول على الترخيص:
-- **نسخة تجريبية مجانية**: Get started with a trial license to explore basic functionalities.
-- **رخصة مؤقتة**: For more extensive testing, obtain a temporary license.
-- **شراء**: Consider purchasing a full license if you find the tool meets your needs long-term.
+- **نسخة تجريبية مجانية**:ابدأ باستخدام ترخيص تجريبي لاستكشاف الوظائف الأساسية.
+- **رخصة مؤقتة**:للحصول على اختبار أكثر شمولاً، احصل على ترخيص مؤقت.
+- **شراء**:فكر في شراء ترخيص كامل إذا وجدت أن الأداة تلبي احتياجاتك على المدى الطويل.
 
 #### التهيئة والإعداد الأساسي
 لتهيئة Aspose.Email في مشروعك:
 ```csharp
-// Initialize an instance of IEWSClient with credentials
-IEWSClient client = EWSClient.GetEWSClient("https://exchange.office365.com/Exchange.asmx", "username", "password");
+// تهيئة مثيل لـ IEWSClient باستخدام بيانات الاعتماد
+IEWSClient client = EWSClient.GetEWSClient("https://exchange.office365.com/Exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
 ```
 
 ## دليل التنفيذ
 
-### Feature Overview: Retrieve Extended Attributes for Calendar Items
-This feature enables you to fetch custom properties from calendar items stored in an Exchange server, providing enhanced data management and retrieval capabilities.
+### نظرة عامة على الميزة: استرداد السمات الموسعة لعناصر التقويم
+تتيح لك هذه الميزة جلب خصائص مخصصة من عناصر التقويم المخزنة في خادم Exchange، مما يوفر إمكانيات محسنة لإدارة البيانات واسترجاعها.
 
-#### Establishing Connection to EWS
-**الخطوة 1:** Create a connection to the EWS client using your credentials. This step is critical as it allows access to your Exchange mailbox data.
+#### إنشاء اتصال مع EWS
+**الخطوة 1:** أنشئ اتصالاً بعميل EWS باستخدام بيانات اعتمادك. هذه الخطوة بالغة الأهمية لأنها تتيح لك الوصول إلى بيانات صندوق بريد Exchange الخاص بك.
 ```csharp
-IEWSClient client = EWSClient.GetEWSClient("https://exchange.office365.com/Exchange.asmx", "username", "password");
+IEWSClient client = EWSClient.GetEWSClient("https://exchange.office365.com/Exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
 ```
 
-#### Fetching Calendar Items
-**الخطوة 2:** Retrieve all calendar items from the server. This gives you a list of URIs representing each item.
+#### جلب عناصر التقويم
+**الخطوة 2:** استرجاع جميع عناصر التقويم من الخادم. سيمنحك هذا قائمة بعناوين URI التي تمثل كل عنصر.
 ```csharp
 string[] uriList = client.ListItems(client.MailboxInfo.CalendarUri);
 ```
 
-#### Defining Property Descriptors
-**Step 3:** Specify which extended attributes to search for by creating a `PidNamePropertyDescriptor`. This descriptor defines the custom property's name, data type, and associated GUID.
+#### تعريف أوصاف الخصائص
+**الخطوة 3:** حدد السمات الممتدة التي تريد البحث عنها عن طريق إنشاء `PidNamePropertyDescriptor`. يحدد هذا الوصف اسم الخاصية المخصصة ونوع البيانات والمعرف العالمي الفريد المرتبط بها.
 ```csharp
 PropertyDescriptor propertyDescriptor = new PidNamePropertyDescriptor(
-    "K1", // Name of the custom property
-    PropertyDataType.Integer32, // Data type
-    new Guid("00020329-0000-0000-C000-000000000046") // GUID for the extended attribute set
+    "K1", // اسم الخاصية المخصصة
+    PropertyDataType.Integer32, // نوع البيانات
+    new Guid("00020329-0000-0000-C000-000000000046") // GUID لمجموعة السمات الممتدة
 );
 ```
 
-#### Retrieving and Displaying Attributes
-**Step 4:** Use the descriptor to fetch calendar items with the specified custom property. Iterate through each item and print its properties.
+#### استرجاع السمات وعرضها
+**الخطوة 4:** استخدم الوصف لجلب عناصر التقويم ذات الخاصية المخصصة المحددة. كرّر عملية البحث في كل عنصر واطبع خصائصه.
 ```csharp
 IList<MapiCalendar> mapiCalendarList = client.FetchMapiCalendar(uriList, new PropertyDescriptor[] { propertyDescriptor });
 
@@ -106,44 +106,44 @@ foreach (MapiCalendar cal in mapiCalendarList)
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- Ensure your Exchange server URL is correct.
-- Verify that the user credentials have access to read calendar items.
+- تأكد من أن عنوان URL الخاص بخادم Exchange الخاص بك صحيح.
+- تأكد من أن بيانات اعتماد المستخدم لديها القدرة على قراءة عناصر التقويم.
 
 ## التطبيقات العملية
-1. **Event Tracking:** Use custom attributes for tracking additional event metadata such as location or external references.
-2. **التكامل مع أنظمة إدارة علاقات العملاء:** Sync extended calendar properties with customer relationship management tools to enhance client interaction data.
-3. **إدارة الموارد:** Manage resources by tagging calendar items with specific resource identifiers, making it easier to allocate and track usage.
+1. **تتبع الأحداث:** استخدم السمات المخصصة لتتبع بيانات تعريف الأحداث الإضافية مثل الموقع أو المراجع الخارجية.
+2. **التكامل مع أنظمة إدارة علاقات العملاء:** مزامنة خصائص التقويم الموسعة مع أدوات إدارة علاقات العملاء لتحسين بيانات تفاعل العملاء.
+3. **إدارة الموارد:** قم بإدارة الموارد عن طريق وضع علامات على عناصر التقويم باستخدام معرفات موارد محددة، مما يجعل تخصيص الاستخدام وتتبعه أسهل.
 
 ## اعتبارات الأداء
-- **تحسين الاستعلامات:** Fetch only the necessary attributes to reduce load times.
-- **Efficient Memory Use:** Dispose of unused objects promptly to manage memory effectively in .NET applications.
-- **معالجة الدفعات:** Retrieve data in batches rather than all at once to improve performance and responsiveness.
+- **تحسين الاستعلامات:** جلب السمات الضرورية فقط لتقليل أوقات التحميل.
+- **استخدام الذاكرة بكفاءة:** تخلص من الكائنات غير المستخدمة على الفور لإدارة الذاكرة بشكل فعال في تطبيقات .NET.
+- **معالجة الدفعات:** استرداد البيانات على دفعات بدلاً من استردادها دفعة واحدة لتحسين الأداء والاستجابة.
 
 ## خاتمة
-You’ve now learned how to retrieve extended attributes from calendar items using Aspose.Email for .NET. This capability opens up numerous possibilities for enhancing your calendaring functionality, providing deeper insights into event metadata stored on an Exchange server.
+لقد تعلمتَ الآن كيفية استرداد السمات الموسعة من عناصر التقويم باستخدام Aspose.Email لـ .NET. تتيح هذه الميزة إمكانياتٍ عديدةً لتحسين أداء التقويم لديك، مما يوفر رؤىً أعمق لبيانات الأحداث الوصفية المخزنة على خادم Exchange.
 
 **الخطوات التالية:**
-- Explore further customization options with different property descriptors.
-- Consider integrating additional features like email retrieval or contact management within your application.
+- استكشف خيارات التخصيص الإضافية باستخدام أوصاف الخصائص المختلفة.
+- فكر في دمج ميزات إضافية مثل استرجاع البريد الإلكتروني أو إدارة جهات الاتصال داخل تطبيقك.
 
-Ready to take your Exchange integration to the next level? Try implementing this solution in your projects today!
+هل أنت مستعد للانتقال بتكامل Exchange إلى مستوى أعلى؟ جرّب تطبيق هذا الحل في مشاريعك اليوم!
 
 ## قسم الأسئلة الشائعة
 
-### How do I handle authentication errors when connecting to EWS?
-Ensure that the username and password are correct. Also, verify that the user has permissions to access the mailbox data.
+### كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟
+تأكد من صحة اسم المستخدم وكلمة المرور. تأكد أيضًا من أن المستخدم يملك صلاحيات الوصول إلى بيانات صندوق البريد.
 
-### Can I retrieve other types of items from Exchange using Aspose.Email?
-Yes, Aspose.Email supports various item types like emails, contacts, and tasks. Refer to the documentation for specific methods.
+### هل يمكنني استرجاع أنواع أخرى من العناصر من Exchange باستخدام Aspose.Email؟
+نعم، يدعم Aspose.Email أنواعًا مختلفة من العناصر، مثل رسائل البريد الإلكتروني وجهات الاتصال والمهام. راجع الوثائق للاطلاع على الطرق المحددة.
 
-### What if the custom property isn't found in some calendar items?
-Ensure that all items have the extended attribute set correctly before retrieval. Use conditional checks within your code to handle missing properties gracefully.
+### ماذا لو لم يتم العثور على الخاصية المخصصة في بعض عناصر التقويم؟
+تأكد من ضبط جميع العناصر بشكل صحيح قبل استرجاعها. استخدم عمليات التحقق الشرطية في الكود الخاص بك للتعامل مع الخصائص المفقودة بسلاسة.
 
-### Is it possible to modify these extended attributes?
-Yes, Aspose.Email allows you to update and modify item properties as needed. Check out the API’s methods for updating MapiCalendar objects.
+### هل من الممكن تعديل هذه السمات الممتدة؟
+نعم، يتيح لك Aspose.Email تحديث خصائص العناصر وتعديلها حسب الحاجة. اطلع على طرق واجهة برمجة التطبيقات (API) لتحديث كائنات MapiCalendar.
 
-### How can I get a temporary license for Aspose.Email?
-يزور [موقع Aspose](https://purchase.aspose.com/temporary-license/) to request a temporary license for evaluation purposes.
+### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Email؟
+يزور [موقع Aspose](https://purchase.aspose.com/temporary-license/) لطلب الحصول على ترخيص مؤقت لأغراض التقييم.
 
 ## موارد
 - **التوثيق:** https://reference.aspose.com/email/net/
@@ -153,7 +153,7 @@ Yes, Aspose.Email allows you to update and modify item properties as needed. Che
 - **رخصة مؤقتة:** https://purchase.aspose.com/temporary-license/
 - **منتدى الدعم:** https://forum.aspose.com/c/email/10
 
-Explore these resources to deepen your understanding of Aspose.Email and its capabilities. Happy coding!
+استكشف هذه الموارد لتعميق فهمك لـ Aspose.Email وإمكاناته. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

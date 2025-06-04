@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to connect to Exchange Web Services (EWS) and set custom email properties using Aspose.Email for Java. Streamline your email management with this comprehensive guide."
-"title": "How to Connect to EWS and Set Custom Email Properties Using Aspose.Email for Java"
+"description": "تعرّف على كيفية الاتصال بخدمات Exchange Web Services (EWS) وتعيين خصائص بريد إلكتروني مخصصة باستخدام Aspose.Email لـ Java. بسّط إدارة بريدك الإلكتروني مع هذا الدليل الشامل."
+"title": "كيفية الاتصال بـ EWS وتعيين خصائص البريد الإلكتروني المخصصة باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/exchange-server-integration/connect-ews-set-custom-email-properties-aspose-email-java/"
 "weight": 1
 ---
@@ -11,31 +11,31 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Connect to EWS and Set Custom Email Properties Using Aspose.Email for Java
+# كيفية الاتصال بـ EWS وتعيين خصائص البريد الإلكتروني المخصصة باستخدام Aspose.Email لـ Java
 
 ## مقدمة
 
-Are you looking to streamline your email management by connecting to Exchange Web Services (EWS) or setting custom properties on emails using Aspose.Email for Java? This tutorial is your definitive guide, taking you step-by-step through integrating these advanced functionalities into your Java applications. You'll learn how to connect to EWS, create and configure extended attributes, craft messages with customized data, send them to an Exchange server, and retrieve those properties seamlessly.
+هل ترغب في تبسيط إدارة بريدك الإلكتروني من خلال الاتصال بخدمات Exchange Web Services (EWS) أو تعيين خصائص مخصصة لرسائلك باستخدام Aspose.Email لـ Java؟ هذا البرنامج التعليمي هو دليلك الشامل، حيث يشرح لك خطوة بخطوة كيفية دمج هذه الوظائف المتقدمة في تطبيقات Java. ستتعلم كيفية الاتصال بخدمات Exchange Web Services، وإنشاء وتكوين سمات موسعة، وصياغة رسائل ببيانات مخصصة، وإرسالها إلى خادم Exchange، واسترجاع هذه الخصائص بسلاسة.
 
-In this comprehensive guide, we will cover:
-- Connecting to the Exchange Web Service using Aspose.Email for Java
-- Creating and configuring custom email properties
-- Sending messages to an Exchange server and retrieving custom properties
+في هذا الدليل الشامل، سنغطي:
+- الاتصال بخدمة Exchange Web Service باستخدام Aspose.Email لـ Java
+- إنشاء وتكوين خصائص البريد الإلكتروني المخصصة
+- إرسال الرسائل إلى خادم Exchange واسترداد الخصائص المخصصة
 
-Let's dive into how you can harness these capabilities to enhance your application’s email handling processes. Before proceeding, ensure that you meet all prerequisites.
+دعونا نتعمق في كيفية الاستفادة من هذه الإمكانيات لتحسين عمليات معالجة البريد الإلكتروني في تطبيقك. قبل المتابعة، تأكد من استيفاء جميع المتطلبات الأساسية.
 
 ## المتطلبات الأساسية
 
 لمتابعة هذا البرنامج التعليمي، ستحتاج إلى:
-- **Aspose.Email for Java Library**: Ensure you have version 25.4 installed.
-- **Java Development Environment**: JDK 16 or later is required.
-- **Maven Setup**: A basic understanding of managing dependencies using Maven is beneficial.
+- **Aspose.Email لمكتبة Java**:تأكد من تثبيت الإصدار 25.4.
+- **بيئة تطوير جافا**:يتطلب JDK 16 أو أحدث.
+- **إعداد Maven**:إن الفهم الأساسي لإدارة التبعيات باستخدام Maven مفيد.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-### Installing Aspose.Email via Maven
+### تثبيت Aspose.Email عبر Maven
 
-To begin, add the following dependency to your `pom.xml` file:
+للبدء، أضف التبعية التالية إلى ملفك `pom.xml` ملف:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -45,43 +45,43 @@ To begin, add the following dependency to your `pom.xml` file:
 </dependency>
 ```
 ### الحصول على ترخيص
-- **نسخة تجريبية مجانية**: Access Aspose.Email for Java’s capabilities by downloading a trial from [هنا](https://releases.aspose.com/email/java/).
-- **رخصة مؤقتة**: Obtain a temporary license to evaluate the full features without limitations at [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-- **شراء**: For ongoing use, purchase a license through [موقع Aspose](https://purchase.aspose.com/buy).
+- **نسخة تجريبية مجانية**:يمكنك الوصول إلى Aspose.Email للتعرف على إمكانيات Java عن طريق تنزيل نسخة تجريبية من [هنا](https://releases.aspose.com/email/java/).
+- **رخصة مؤقتة**:احصل على ترخيص مؤقت لتقييم الميزات الكاملة دون قيود في [هذا الرابط](https://purchase.aspose.com/temporary-license/).
+- **شراء**:للاستخدام المستمر، قم بشراء ترخيص من خلال [موقع Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
-Once installed and licensed, initialize your Aspose.Email environment in your Java project. This setup is crucial for connecting to the EWS.
+بعد التثبيت والترخيص، قم بتشغيل بيئة Aspose.Email في مشروع Java. هذا الإعداد ضروري للاتصال بخدمة EWS.
 
 ## دليل التنفيذ
 
-### Connecting to Exchange Web Service (EWS)
+### الاتصال بخدمة Exchange Web Service (EWS)
 
 #### ملخص
-Connecting to an EWS server allows you to manage email messages programmatically, offering a robust solution for handling communications within your applications.
+يتيح لك الاتصال بخادم EWS إدارة رسائل البريد الإلكتروني برمجيًا، مما يوفر حلاً قويًا للتعامل مع الاتصالات داخل تطبيقاتك.
 
 #### خطوات
-1. **Initialize Connection**: Establish a connection with your Exchange server using Aspose.Email for Java.
+1. **تهيئة الاتصال**:قم بإنشاء اتصال مع خادم Exchange الخاص بك باستخدام Aspose.Email لـ Java.
    ```java
    import com.aspose.email.EWSClient;
    import com.aspose.email.IEWSClient;
 
    IEWSClient client = EWSClient.getEWSClient(
-       "https://exchange.domain.com/exchangeews/Exchange.asmx/",
+       "https://exchange.domain.com/exchangeews/Exchange.asmx/"،
        "user",
        "password",
        ""
    );
    ```
 2. **توضيح**: 
-ال `getEWSClient` method connects to the specified Exchange server URL using provided credentials.
+ال `getEWSClient` تتصل الطريقة بعنوان URL الخاص بخادم Exchange المحدد باستخدام بيانات الاعتماد المقدمة.
 
-### Creating and Configuring Extended Attributes (Custom Properties)
+### إنشاء وتكوين السمات الممتدة (الخصائص المخصصة)
 
 #### ملخص
-Custom properties or extended attributes allow you to add additional metadata to your email messages, enhancing data management capabilities.
+تتيح لك الخصائص المخصصة أو السمات الممتدة إضافة بيانات تعريفية إضافية إلى رسائل البريد الإلكتروني الخاصة بك، مما يعزز قدرات إدارة البيانات.
 
 #### خطوات
-1. **Define Custom Property**: Set up a custom property descriptor for your email.
+1. **تعريف خاصية مخصصة**:قم بإعداد وصف خاصية مخصص لبريدك الإلكتروني.
    ```java
    import com.aspose.email.PidNamePropertyDescriptor;
    import java.util.UUID;
@@ -95,16 +95,16 @@ Custom properties or extended attributes allow you to add additional metadata to
    String value = "MyTestPropValue";
    ```
 2. **توضيح**: 
-ال `PidNamePropertyDescriptor` identifies and assigns a custom property to your email messages.
-- The unique identifier ensures compatibility with Exchange's extended attributes.
+ال `PidNamePropertyDescriptor` يقوم بتحديد وتعيين خاصية مخصصة لرسائل البريد الإلكتروني الخاصة بك.
+- يضمن المعرف الفريد التوافق مع السمات الممتدة لـ Exchange.
 
-### Creating a MapiMessage with Custom Properties
+### إنشاء MapiMessage مع خصائص مخصصة
 
 #### ملخص
-Create and manipulate MAPI (Messaging Application Programming Interface) messages that incorporate custom properties for enhanced data transmission.
+إنشاء رسائل MAPI (واجهة برمجة تطبيقات المراسلة) ومعالجتها والتي تتضمن خصائص مخصصة لتحسين نقل البيانات.
 
 #### خطوات
-1. **Craft the Message**: Generate an email message embedding your custom property.
+1. **صياغة الرسالة**:إنشاء رسالة بريد إلكتروني تتضمن خصائصك المخصصة.
    ```java
    import com.aspose.email.MapiMessage;
 
@@ -115,35 +115,35 @@ Create and manipulate MAPI (Messaging Application Programming Interface) message
        "EMAILNET-38844 EWS: Support for create, retrieve and update Extended Attributes for Emails"
    );
 
-   // Set the custom property on the message.
+   // تعيين الخاصية المخصصة على الرسالة.
    message.setProperty(pd, value);
    ```
 2. **توضيح**: 
-ال `MapiMessage` represents a complete email ready to be sent or stored.
-- ال `setProperty` method attaches your custom metadata.
+ال `MapiMessage` يمثل بريدًا إلكترونيًا كاملاً جاهزًا للإرسال أو التخزين.
+- ال `setProperty` تقوم الطريقة بإرفاق بياناتك التعريفية المخصصة.
 
-### Appending a Message to Exchange Server
+### إضافة رسالة إلى خادم Exchange
 
 #### ملخص
-After configuring your message, it's time to send it to the Exchange server for delivery.
+بعد تكوين رسالتك، حان الوقت لإرسالها إلى خادم Exchange للتسليم.
 
 #### خطوات
-1. **أرسل الرسالة**: Use Aspose.Email to append the constructed email to the server.
+1. **أرسل الرسالة**:استخدم Aspose.Email لإضافة البريد الإلكتروني الذي تم إنشاؤه إلى الخادم.
    ```java
    import java.util.Arrays;
 
    String uri = client.appendMessage(message);
    ```
 2. **توضيح**: 
-ال `appendMessage` method sends your message, returning a URI for future reference.
+ال `appendMessage` ترسل الطريقة رسالتك، وتعيد عنوان URI للرجوع إليه في المستقبل.
 
-### Fetching and Retrieving Custom Properties from a Message on the Exchange Server
+### جلب واسترداد الخصائص المخصصة من رسالة على خادم Exchange
 
 #### ملخص
-Retrieve messages from the server to access or verify custom properties, ensuring data integrity and consistency.
+استرداد الرسائل من الخادم للوصول إلى الخصائص المخصصة أو التحقق منها، وضمان سلامة البيانات وتناسقها.
 
 #### خطوات
-1. **Fetch and Access**: Retrieve the previously sent email along with its properties.
+1. **جلب و الوصول**:استرجاع البريد الإلكتروني المرسل مسبقًا مع خصائصه.
    ```java
    MapiMessage mapiMessage = client.fetchItem(
        uri,
@@ -153,39 +153,39 @@ Retrieve messages from the server to access or verify custom properties, ensurin
    String fetchedValue = mapiMessage.getNamedProperties().get_Item(pd).getString();
    ```
 2. **توضيح**: 
-ال `fetchItem` method retrieves the message using its URI.
-- Access custom properties through the `getNamedProperties` طريقة.
+ال `fetchItem` تقوم الطريقة باسترجاع الرسالة باستخدام عنوان URI الخاص بها.
+- الوصول إلى الخصائص المخصصة من خلال `getNamedProperties` طريقة.
 
 ## التطبيقات العملية
 
-1. **التقارير الآلية**: Use custom properties to tag emails with specific report IDs for easy retrieval and analysis.
-2. **أنظمة دعم العملاء**: Attach ticket numbers or priority levels as custom properties to streamline support workflows.
-3. **الحملات التسويقية**: Embed campaign identifiers in emails to track engagement metrics.
+1. **التقارير الآلية**:استخدم الخصائص المخصصة لوضع علامات على رسائل البريد الإلكتروني باستخدام معرفات تقارير محددة لسهولة استرجاعها وتحليلها.
+2. **أنظمة دعم العملاء**:قم بإرفاق أرقام التذاكر أو مستويات الأولوية كخصائص مخصصة لتبسيط سير عمل الدعم.
+3. **الحملات التسويقية**:قم بتضمين معرفات الحملة في رسائل البريد الإلكتروني لتتبع مقاييس المشاركة.
 
 ## اعتبارات الأداء
-- **تحسين معالجة الاتصال**: Reuse connections where possible to reduce overhead.
-- **إدارة الذاكرة**: Monitor resource usage, especially when dealing with large volumes of messages.
-- **Asynchronous Processing**: Implement asynchronous operations for non-blocking workflows.
+- **تحسين معالجة الاتصال**:أعد استخدام الاتصالات حيثما أمكن لتقليل النفقات العامة.
+- **إدارة الذاكرة**:راقب استخدام الموارد، وخاصةً عند التعامل مع كميات كبيرة من الرسائل.
+- **المعالجة غير المتزامنة**:تنفيذ عمليات غير متزامنة لتدفقات العمل غير الحاجزة.
 
 ## خاتمة
-By now, you should have a solid understanding of connecting to EWS and managing custom email properties using Aspose.Email for Java. These techniques empower your applications with enhanced email management capabilities. To further explore these functionalities, consider diving deeper into the [وثائق Aspose](https://reference.aspose.com/email/java/) or experimenting with different features provided by the library.
+الآن، يجب أن يكون لديك فهم متعمق للاتصال بـ EWS وإدارة خصائص البريد الإلكتروني المخصصة باستخدام Aspose.Email لـ Java. تُمكّن هذه التقنيات تطبيقاتك من تحسين إمكانيات إدارة البريد الإلكتروني. لاستكشاف هذه الوظائف بشكل أعمق، فكّر في التعمق أكثر في [وثائق Aspose](https://reference.aspose.com/email/java/) أو تجربة الميزات المختلفة التي تقدمها المكتبة.
 
 ## قسم الأسئلة الشائعة
 
-1. **Can I use a trial version of Aspose.Email for Java?**
-   - Yes, you can access all features using a free trial available on Aspose's website.
-2. **What are the key benefits of custom email properties?**
-   - They allow you to attach additional metadata for better data management and integration.
-3. **Is it possible to send emails asynchronously with Aspose.Email?**
-   - While direct asynchronous support may require additional handling, you can manage message processing in non-blocking threads.
-4. **How do I troubleshoot connection issues with EWS?**
-   - Verify your server URL, credentials, and ensure network connectivity.
-5. **What should I consider for performance optimization?**
-   - Consider connection reuse, efficient memory management, and asynchronous processing techniques.
+1. **هل يمكنني استخدام النسخة التجريبية من Aspose.Email لـ Java؟**
+   - نعم، يمكنك الوصول إلى كافة الميزات باستخدام النسخة التجريبية المجانية المتوفرة على موقع Aspose.
+2. **ما هي الفوائد الرئيسية لخصائص البريد الإلكتروني المخصصة؟**
+   - إنها تسمح لك بإرفاق بيانات تعريفية إضافية لتحسين إدارة البيانات وتكاملها.
+3. **هل من الممكن إرسال رسائل البريد الإلكتروني بشكل غير متزامن مع Aspose.Email؟**
+   - على الرغم من أن الدعم غير المتزامن المباشر قد يتطلب معالجة إضافية، يمكنك إدارة معالجة الرسائل في مؤشرات الترابط غير الحظر.
+4. **كيف يمكنني استكشاف مشكلات الاتصال مع EWS وإصلاحها؟**
+   - قم بالتحقق من عنوان URL الخاص بخادمك وبيانات الاعتماد الخاصة بك وتأكد من اتصال الشبكة.
+5. **ما الذي يجب أن أفكر فيه لتحسين الأداء؟**
+   - خذ بعين الاعتبار إعادة استخدام الاتصال وإدارة الذاكرة الفعالة وتقنيات المعالجة غير المتزامنة.
 
 ## موارد
 - [التوثيق](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

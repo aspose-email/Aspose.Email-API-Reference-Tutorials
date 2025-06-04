@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to automate email creation and save drafts efficiently with Aspose.Email for .NET. This guide covers setting up, creating emails, converting them to drafts, and troubleshooting."
-"title": "Create & Save Draft Emails Using Aspose.Email for .NET&#58; A Step-by-Step Guide"
+"description": "تعرّف على كيفية أتمتة إنشاء البريد الإلكتروني وحفظ المسودات بكفاءة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل إعداد رسائل البريد الإلكتروني وإنشائها وتحويلها إلى مسودات واستكشاف الأخطاء وإصلاحها."
+"title": "إنشاء مسودات رسائل البريد الإلكتروني وحفظها باستخدام Aspose.Email لـ .NET - دليل خطوة بخطوة"
 "url": "/ar/net/email-message-operations/create-save-draft-emails-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,35 +11,35 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Create & Save Draft Emails Using Aspose.Email for .NET: A Step-by-Step Guide
+# إنشاء مسودات رسائل البريد الإلكتروني وحفظها باستخدام Aspose.Email لـ .NET: دليل خطوة بخطوة
 
 ## مقدمة
 
-Automate email creation and save them as drafts efficiently with Aspose.Email for .NET. This guide will walk you through creating and saving email messages as drafts using the powerful Aspose.Email library, ideal for managing communication workflows or queuing emails in applications.
+أتمتة إنشاء رسائل البريد الإلكتروني وحفظها كمسودات بكفاءة باستخدام Aspose.Email لـ .NET. سيرشدك هذا الدليل إلى كيفية إنشاء رسائل البريد الإلكتروني وحفظها كمسودات باستخدام مكتبة Aspose.Email القوية، وهي مثالية لإدارة سير عمل الاتصالات أو ترتيب رسائل البريد الإلكتروني في التطبيقات.
 
 **ما سوف تتعلمه:**
 - إعداد Aspose.Email في بيئة .NET الخاصة بك
-- Creating a new email message with customized properties
-- Converting an email to draft format and saving it
+- إنشاء رسالة بريد إلكتروني جديدة بخصائص مخصصة
+- تحويل البريد الإلكتروني إلى صيغة مسودة وحفظه
 - استكشاف الأخطاء وإصلاحها الشائعة
 
-Before we dive into implementation, let’s discuss the prerequisites you need.
+قبل أن نتعمق في التنفيذ، دعنا نناقش المتطلبات الأساسية التي تحتاجها.
 
 ## المتطلبات الأساسية
 
-To implement this feature successfully, ensure you have:
+لتنفيذ هذه الميزة بنجاح، تأكد من أن لديك:
 
 ### المكتبات والإصدارات والتبعيات المطلوبة
 - مكتبة Aspose.Email لـ .NET (الإصدار الأحدث الموصى به)
-- .NET Core SDK or .NET Framework installed on your machine
+- تم تثبيت .NET Core SDK أو .NET Framework على جهازك
 
 ### متطلبات إعداد البيئة
-- A code editor like Visual Studio or VS Code
+- محرر أكواد مثل Visual Studio أو VS Code
 - فهم أساسي لبرمجة C#
 
 ## إعداد Aspose.Email لـ .NET
 
-First, install the Aspose.Email library in your project. You can do this via multiple methods:
+أولاً، ثبّت مكتبة Aspose.Email في مشروعك. يمكنك القيام بذلك عبر عدة طرق:
 
 **استخدام .NET CLI:**
 ```bash
@@ -55,12 +55,12 @@ Install-Package Aspose.Email
 ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث.
 
 ### الحصول على الترخيص
-To use Aspose.Email beyond its trial limitations, you can:
+لاستخدام Aspose.Email بما يتجاوز حدود الإصدار التجريبي، يمكنك:
 - **نسخة تجريبية مجانية:** ابدأ بإصدار تجريبي مجاني لاستكشاف الميزات.
 - **رخصة مؤقتة:** تقدم بطلب للحصول على ترخيص مؤقت إذا لزم الأمر.
-- **شراء:** For long-term use, purchase a subscription.
+- **شراء:** للاستخدام طويل الأمد، قم بشراء اشتراك.
 
-Here’s how you initialize and set up your environment:
+فيما يلي كيفية تهيئة بيئتك وإعدادها:
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("path_to_your_license.lic");
@@ -68,13 +68,13 @@ license.SetLicense("path_to_your_license.lic");
 
 ## دليل التنفيذ
 
-Let's break down the process into manageable sections for clarity.
+دعونا نقسم العملية إلى أقسام قابلة للإدارة من أجل الوضوح.
 
-### Creating an Email Message
+### إنشاء رسالة بريد إلكتروني
 
-ابدأ بإنشاء `MailMessage` instance, which represents your email message:
+ابدأ بإنشاء `MailMessage` مثال يمثل رسالة البريد الإلكتروني الخاصة بك:
 ```csharp
-// Initialize a new MailMessage object
+// تهيئة كائن MailMessage جديد
 MailMessage message = new MailMessage();
 message.From = "from@domain.com";
 message.To.Add("to1@domain.com");
@@ -82,26 +82,26 @@ message.To.Add("to2@domain.com");
 message.Subject = "New message created by Aspose.Email";
 ```
 
-#### Set Message Properties
-You can customize the email further by setting properties such as:
-- **HTML Body:** Allows for rich text formatting.
+#### تعيين خصائص الرسالة
+يمكنك تخصيص البريد الإلكتروني بشكل أكبر عن طريق تعيين خصائص مثل:
+- **نص HTML:** يسمح بتنسيق النص الغني.
   ```csharp
   message.IsBodyHtml = true;
   message.HtmlBody = "<b>This line is in bold.</b> <br/> <br/><font color=blue>This line is in blue color</font>";
   ```
 
-### Converting to a Draft Format
-To save the email as an unsent draft, convert it using `MapiMessage`:
+### التحويل إلى تنسيق المسودة
+لحفظ البريد الإلكتروني كمسودة غير مرسلة، قم بتحويله باستخدام `MapiMessage`:
 ```csharp
-// Convert MailMessage to MapiMessage
+// تحويل MailMessage إلى MapiMessage
 MapiMessage mapiMsg = MapiMessage.FromMailMessage(message);
 
-// Set message flags for draft status
+// تعيين علامات الرسائل لحالة المسودة
 mapiMsg.SetMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT | MapiMessageFlags.MSGFLAG_FROMME);
 ```
 
-### Saving the Draft Email
-Finally, save your email as a `.msg` file to specify it's a draft:
+### حفظ مسودة البريد الإلكتروني
+وأخيرًا، احفظ بريدك الإلكتروني كملف `.msg` الملف لتحديد أنه مسودة:
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 string dstEmail = dataDir + "New-Draft.msg";
@@ -111,37 +111,37 @@ mapiMsg.Save(dstEmail);
 ```
 
 **نصائح استكشاف الأخطاء وإصلاحها:**
-- Ensure paths are correctly specified.
-- Verify Aspose.Email library is properly installed and licensed.
+- تأكد من تحديد المسارات بشكل صحيح.
+- تأكد من تثبيت مكتبة Aspose.Email وترخيصها بشكل صحيح.
 
 ## التطبيقات العملية
 
-Understanding how to create drafts programmatically can be beneficial for:
-1. **Automated Email Queuing:** Queue emails in a CRM system before sending them out.
-2. **Email Templates:** Store email templates as drafts for quick access and customization.
-3. **معالجة الدفعات:** Automate batch email processing tasks without immediate delivery.
+إن فهم كيفية إنشاء المسودات برمجيًا قد يكون مفيدًا لما يلي:
+1. **قائمة انتظار البريد الإلكتروني الآلية:** قم بوضع رسائل البريد الإلكتروني في قائمة انتظار في نظام إدارة علاقات العملاء قبل إرسالها.
+2. **قوالب البريد الإلكتروني:** قم بتخزين قوالب البريد الإلكتروني كمسودات لسهولة الوصول إليها وتخصيصها.
+3. **معالجة الدفعات:** أتمتة مهام معالجة البريد الإلكتروني دفعة واحدة دون تسليمها على الفور.
 
 ## اعتبارات الأداء
 لتحسين الأداء عند استخدام Aspose.Email:
-- Manage memory efficiently by disposing objects that are no longer needed.
-- Use the latest version of Aspose.Email to benefit from optimizations and new features.
-- Monitor application resource usage, especially in high-load scenarios.
+- قم بإدارة الذاكرة بكفاءة عن طريق التخلص من العناصر التي لم تعد هناك حاجة إليها.
+- استخدم الإصدار الأحدث من Aspose.Email للاستفادة من التحسينات والميزات الجديدة.
+- راقب استخدام موارد التطبيق، وخاصة في سيناريوهات التحميل العالي.
 
 ## خاتمة
 
-You've learned how to create and save email drafts using Aspose.Email for .NET. This functionality can streamline your email management processes significantly. To take it further, explore more advanced features offered by the library or integrate this solution into larger applications.
+لقد تعلمت كيفية إنشاء مسودات البريد الإلكتروني وحفظها باستخدام Aspose.Email لـ .NET. تُبسّط هذه الميزة عمليات إدارة بريدك الإلكتروني بشكل كبير. لمزيد من التطوير، استكشف الميزات المتقدمة التي تقدمها المكتبة أو ادمج هذا الحل في تطبيقات أكبر.
 
-Consider experimenting with additional Aspose.Email functionalities like handling attachments or integrating with other communication platforms.
+فكر في تجربة وظائف Aspose.Email الإضافية مثل التعامل مع المرفقات أو التكامل مع منصات الاتصال الأخرى.
 
 ## قسم الأسئلة الشائعة
-**Q: Can I set multiple recipients for drafts?**
-A: Yes, you can add multiple recipients to the `To` field using the `message.To.Add()` طريقة.
+**س: هل يمكنني تعيين عدة مستلمين للمسودات؟**
+ج: نعم، يمكنك إضافة عدة مستلمين إلى `To` الحقل باستخدام `message.To.Add()` طريقة.
 
-**Q: How do I handle errors during draft creation?**
-A: Implement try-catch blocks to manage exceptions and log error messages for troubleshooting.
+**س: كيف أتعامل مع الأخطاء أثناء إنشاء المسودة؟**
+أ: تنفيذ كتل try-catch لإدارة الاستثناءات وتسجيل رسائل الخطأ لاستكشاف الأخطاء وإصلاحها.
 
-**Q: Is it possible to customize email headers when saving drafts?**
-A: Yes, you can manipulate message properties before converting and saving them as drafts.
+**س: هل من الممكن تخصيص رؤوس البريد الإلكتروني عند حفظ المسودات؟**
+ج: نعم، يمكنك معالجة خصائص الرسالة قبل تحويلها وحفظها كمسودات.
 
 ## موارد
 - **التوثيق:** [توثيق Aspose.Email .NET](https://reference.aspose.com/email/net/)
@@ -151,7 +151,7 @@ A: Yes, you can manipulate message properties before converting and saving them 
 - **رخصة مؤقتة:** [التقدم بطلب للحصول على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 - **يدعم:** [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10)
 
-Take the next step today and start implementing this powerful email management solution in your .NET applications!
+اتخذ الخطوة التالية اليوم وابدأ في تنفيذ حل إدارة البريد الإلكتروني القوي هذا في تطبيقات .NET الخاصة بك!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to use Aspose.Email for .NET to efficiently load and display email recipient information with this step-by-step guide."
-"title": "Load and Display Email Recipients Using Aspose.Email for .NET&#58; A Comprehensive Guide"
+"description": "تعرف على كيفية استخدام Aspose.Email لـ .NET لتحميل معلومات مستلم البريد الإلكتروني وعرضها بكفاءة من خلال هذا الدليل خطوة بخطوة."
+"title": "تحميل وعرض مستلمي البريد الإلكتروني باستخدام Aspose.Email لـ .NET - دليل شامل"
 "url": "/ar/net/email-message-operations/tutorial-load-display-email-recipients-aspose-email-dotnet/"
 "weight": 1
 ---
@@ -11,28 +11,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Load and Display Email Recipients Using Aspose.Email for .NET
+# تحميل وعرض مستلمي البريد الإلكتروني باستخدام Aspose.Email لـ .NET
 ## مقدمة
-In today's digital world, managing email data effectively is essential for businesses and developers. Whether you're developing an internal tool or automating email workflows, extracting and displaying recipient information from emails can boost productivity. This comprehensive guide will walk you through using Aspose.Email for .NET to load an email message and display its recipients' details.
-By the end of this tutorial, you'll be able to:
-- Set up and install Aspose.Email for .NET
-- Load an email message from a file
-- Iterate through recipients and display their information
-- Understand practical applications and performance considerations
-Let's start by covering the prerequisites needed before implementing this solution.
+في عالمنا الرقمي اليوم، تُعدّ إدارة بيانات البريد الإلكتروني بفعالية أمرًا بالغ الأهمية للشركات والمطورين. سواء كنت تُطوّر أداة داخلية أو تُؤتمت سير عمل البريد الإلكتروني، فإن استخراج معلومات المستلمين وعرضها من رسائل البريد الإلكتروني يُعزز الإنتاجية. سيُرشدك هذا الدليل الشامل إلى كيفية استخدام Aspose.Email لـ .NET لتحميل رسالة بريد إلكتروني وعرض تفاصيل المستلمين.
+بحلول نهاية هذا البرنامج التعليمي، سوف تكون قادرًا على:
+- إعداد وتثبيت Aspose.Email لـ .NET
+- تحميل رسالة بريد إلكتروني من ملف
+- التكرار من خلال المستلمين وعرض معلوماتهم
+- فهم التطبيقات العملية واعتبارات الأداء
+دعونا نبدأ بتغطية المتطلبات الأساسية اللازمة قبل تنفيذ هذا الحل.
 ## المتطلبات الأساسية
 قبل أن نبدأ، تأكد من أن لديك:
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: Essential for handling email formats in .NET, used to load and process MapiMessage files.
+- **Aspose.Email لـ .NET**:ضروري للتعامل مع تنسيقات البريد الإلكتروني في .NET، ويُستخدم لتحميل ملفات MapiMessage ومعالجتها.
 ### متطلبات إعداد البيئة
-- A development environment with .NET installed (preferably .NET Core or .NET 5+).
-- Access to an IDE like Visual Studio.
+- بيئة تطوير مع تثبيت .NET (يفضل .NET Core أو .NET 5+).
+- الوصول إلى IDE مثل Visual Studio.
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with email protocols and formats, such as MAPI.
-With these prerequisites covered, let's move on to setting up Aspose.Email for .NET in your project.
+- التعرف على بروتوكولات البريد الإلكتروني وتنسيقاته، مثل MAPI.
+بعد تغطية هذه المتطلبات الأساسية، دعنا ننتقل إلى إعداد Aspose.Email لـ .NET في مشروعك.
 ## إعداد Aspose.Email لـ .NET
-To use Aspose.Email for .NET, follow these steps:
+لاستخدام Aspose.Email لـ .NET، اتبع الخطوات التالية:
 ### معلومات التثبيت
 **استخدام .NET CLI:**
 ```bash
@@ -45,35 +45,35 @@ Install-Package Aspose.Email
 **واجهة مستخدم مدير حزمة NuGet:**
 - ابحث عن "Aspose.Email" في NuGet Package Manager وقم بتثبيت الإصدار الأحدث.
 ### الحصول على الترخيص
-To fully utilize Aspose.Email, you'll need a license. Here's how:
-- **نسخة تجريبية مجانية**: Access limited features by downloading from [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/net/).
-- **رخصة مؤقتة**: Obtain a temporary license for full-feature access during evaluation at [هذا الرابط](https://purchase.aspose.com/temporary-license/).
+للاستفادة الكاملة من Aspose.Email، ستحتاج إلى ترخيص. إليك الطريقة:
+- **نسخة تجريبية مجانية**:يمكنك الوصول إلى الميزات المحدودة عن طريق التنزيل من [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/net/).
+- **رخصة مؤقتة**:الحصول على ترخيص مؤقت للوصول إلى الميزات الكاملة أثناء التقييم في [هذا الرابط](https://purchase.aspose.com/temporary-license/).
 - **شراء**:للاستخدام طويل الأمد، قم بشراء ترخيص عبر [صفحة الشراء](https://purchase.aspose.com/buy).
 بمجرد التثبيت والترخيص، قم بتشغيل Aspose.Email في مشروعك:
 ```csharp
-// Example of basic initialization (ensure your license is set)
+// مثال على التهيئة الأساسية (تأكد من تعيين الترخيص الخاص بك)
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("Aspose.Email.lic");
 ```
 ## دليل التنفيذ
-### Load and Display Recipient Information
-This feature focuses on loading an email message from a file and displaying details of its recipients.
+### تحميل وعرض معلومات المستلم
+ترتكز هذه الميزة على تحميل رسالة بريد إلكتروني من ملف وعرض تفاصيل المستلمين لها.
 #### ملخص
-We'll use the `MapiMessage` class to load an email message and iterate through its recipient list, displaying each recipient's type, email address, display name, and address type.
+سوف نستخدم `MapiMessage` فئة لتحميل رسالة بريد إلكتروني والتكرار خلال قائمة المستلمين الخاصة بها، وعرض نوع كل مستلم وعنوان البريد الإلكتروني واسم العرض ونوع العنوان.
 #### خطوات التنفيذ
-**Step 1: Define Document Path**
-Specify the path where your email file is stored:
+**الخطوة 1: تحديد مسار المستند**
+حدد المسار الذي سيتم تخزين ملف البريد الإلكتروني الخاص بك فيه:
 ```csharp
-string dataDir = @"YOUR_DOCUMENT_DIRECTORY"; // Replace with your directory path
+string dataDir = @"YOUR_DOCUMENT_DIRECTORY"; // استبدل بمسار الدليل الخاص بك
 string dstEmail = dataDir + "Message.msg";
 ```
-**Step 2: Load MapiMessage from File**
-Load the email message using `MapiMessage.FromFile` طريقة:
+**الخطوة 2: تحميل MapiMessage من الملف**
+قم بتحميل رسالة البريد الإلكتروني باستخدام `MapiMessage.FromFile` طريقة:
 ```csharp
 MapiMessage message = MapiMessage.FromFile(dstEmail);
 ```
-**Step 3: Iterate Through Recipients**
-Iterate through each recipient in the message and display their details:
+**الخطوة 3: التكرار عبر المستلمين**
+قم بالتكرار عبر كل مستلم في الرسالة وعرض تفاصيله:
 ```csharp
 foreach (MapiRecipient recip in message.Recipients)
 {
@@ -90,39 +90,39 @@ foreach (MapiRecipient recip in message.Recipients)
             break;
     }
     
-    // Display recipient information
+    // عرض معلومات المستلم
     Console.WriteLine($"Email Address: {recip.EmailAddress}");
     Console.WriteLine($"DisplayName: {recip.DisplayName}");
     Console.WriteLine($"AddressType: {recip.AddressType}");
 }
 ```
 #### نصائح استكشاف الأخطاء وإصلاحها
-- **File Path Errors**: Ensure your file path is correct and accessible.
-- **License Issues**: Verify that your Aspose license is correctly set up to avoid feature limitations.
+- **أخطاء مسار الملف**:تأكد من أن مسار الملف الخاص بك صحيح ويمكن الوصول إليه.
+- **قضايا الترخيص**:تأكد من إعداد ترخيص Aspose الخاص بك بشكل صحيح لتجنب قيود الميزات.
 ## التطبيقات العملية
-Understanding how to load and display email recipients can be beneficial in various scenarios:
-1. **Email Automation Tools**: Automate the processing of emails by extracting recipient details for further analysis or reporting.
-2. **Customer Relationship Management (CRM) Systems**: Integrate with CRM platforms to automatically log communication details.
-3. **Internal Reporting**: Generate reports on email communications within an organization, identifying key contacts and communication patterns.
+إن فهم كيفية تحميل وعرض مستلمي البريد الإلكتروني يمكن أن يكون مفيدًا في سيناريوهات مختلفة:
+1. **أدوات أتمتة البريد الإلكتروني**:أتمتة معالجة رسائل البريد الإلكتروني عن طريق استخراج تفاصيل المستلم لمزيد من التحليل أو إعداد التقارير.
+2. **أنظمة إدارة علاقات العملاء (CRM)**:التكامل مع منصات CRM لتسجيل تفاصيل الاتصال تلقائيًا.
+3. **التقارير الداخلية**:إنشاء تقارير عن الاتصالات عبر البريد الإلكتروني داخل المؤسسة، وتحديد جهات الاتصال الرئيسية وأنماط الاتصال.
 ## اعتبارات الأداء
-When working with Aspose.Email in .NET applications, consider these performance tips:
-- **تحسين الوصول إلى الملفات**: Minimize file I/O operations by efficiently managing email files and directories.
-- **إدارة الذاكرة**:التخلص من `MapiMessage` objects properly to free up resources after processing.
-- **Asynchronous Processing**: Consider asynchronous methods for loading large volumes of emails to prevent blocking the main thread.
+عند العمل مع Aspose.Email في تطبيقات .NET، ضع في اعتبارك نصائح الأداء التالية:
+- **تحسين الوصول إلى الملفات**:تقليل عمليات إدخال/إخراج الملفات من خلال إدارة ملفات البريد الإلكتروني والدلائل بكفاءة.
+- **إدارة الذاكرة**:التخلص من `MapiMessage` الكائنات بشكل صحيح لتحرير الموارد بعد المعالجة.
+- **المعالجة غير المتزامنة**:ضع في اعتبارك طرقًا غير متزامنة لتحميل كميات كبيرة من رسائل البريد الإلكتروني لمنع حظر السلسلة الرئيسية.
 ## خاتمة
-Throughout this tutorial, you've learned how to load an email message using Aspose.Email and display its recipient information. This foundational knowledge can be expanded upon to build more complex email processing applications or integrate with other systems.
-As next steps, consider exploring additional features of Aspose.Email for .NET, such as sending emails or converting between different email formats. Experiment with the library to discover how it can fit into your projects.
+خلال هذا البرنامج التعليمي، تعلمت كيفية تحميل رسالة بريد إلكتروني باستخدام Aspose.Email وعرض معلومات المستلم. يمكن توسيع نطاق هذه المعرفة الأساسية لبناء تطبيقات معالجة بريد إلكتروني أكثر تعقيدًا أو دمجها مع أنظمة أخرى.
+في الخطوات التالية، فكّر في استكشاف ميزات إضافية لـ Aspose.Email لـ .NET، مثل إرسال رسائل البريد الإلكتروني أو التحويل بين صيغ البريد الإلكتروني المختلفة. جرّب المكتبة لاكتشاف مدى ملاءمتها لمشاريعك.
 ## قسم الأسئلة الشائعة
-1. **What is MapiMessage?**
-   - It's a class in Aspose.Email used to handle MAPI-formatted messages.
+1. **ما هو MapiMessage؟**
+   - إنها فئة في Aspose.Email تستخدم للتعامل مع الرسائل بتنسيق MAPI.
 2. **كيف أبدأ باستخدام Aspose.Email لـ .NET؟**
-   - Install the library via NuGet and set up your license.
-3. **Can I process emails from other formats besides MSG?**
-   - Yes, Aspose.Email supports various email formats like EML, MBOX, etc.
-4. **What are common issues when using Aspose.Email for .NET?**
-   - Common issues include file path errors and unlicensed feature limitations; ensure proper setup to avoid these.
-5. **How can I optimize performance with large email datasets?**
-   - Use asynchronous processing and manage memory efficiently by disposing of objects after use.
+   - قم بتثبيت المكتبة عبر NuGet وقم بإعداد الترخيص الخاص بك.
+3. **هل يمكنني معالجة رسائل البريد الإلكتروني من تنسيقات أخرى غير MSG؟**
+   - نعم، يدعم Aspose.Email تنسيقات البريد الإلكتروني المختلفة مثل EML وMBOX وما إلى ذلك.
+4. **ما هي المشكلات الشائعة عند استخدام Aspose.Email لـ .NET؟**
+   - تتضمن المشكلات الشائعة أخطاء مسار الملف والقيود المفروضة على الميزات غير المرخصة؛ تأكد من الإعداد المناسب لتجنب هذه المشكلات.
+5. **كيف يمكنني تحسين الأداء مع مجموعات بيانات البريد الإلكتروني الكبيرة؟**
+   - استخدم المعالجة غير المتزامنة وقم بإدارة الذاكرة بكفاءة من خلال التخلص من الكائنات بعد الاستخدام.
 ## موارد
 - **التوثيق**: [توثيق Aspose.Email .NET](https://reference.aspose.com/email/net/)
 - **تحميل**: [إصدارات البريد الإلكتروني من Aspose](https://releases.aspose.com/email/net/)
@@ -130,7 +130,7 @@ As next steps, consider exploring additional features of Aspose.Email for .NET, 
 - **نسخة تجريبية مجانية**: [جرب Aspose Email مجانًا](https://releases.aspose.com/email/net/)
 - **رخصة مؤقتة**: [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - **منتدى الدعم**: [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
-We hope this guide has been helpful in demonstrating how to use Aspose.Email for .NET to manage email recipient information. Happy coding!
+نأمل أن يكون هذا الدليل مفيدًا في توضيح كيفية استخدام Aspose.Email لـ .NET لإدارة معلومات مستلمي البريد الإلكتروني. برمجة ممتعة!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

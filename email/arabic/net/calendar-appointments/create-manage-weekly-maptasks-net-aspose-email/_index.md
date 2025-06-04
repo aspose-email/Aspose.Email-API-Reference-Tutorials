@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to set up and manage weekly recurring tasks with Aspose.Email for .NET. This guide covers creating, configuring, and optimizing your scheduling solutions."
-"title": "How to Create Weekly Recurring MapiTasks in .NET Using Aspose.Email"
+"description": "تعرّف على كيفية إعداد وإدارة المهام الأسبوعية المتكررة باستخدام Aspose.Email لـ .NET. يغطي هذا الدليل إنشاء حلول الجدولة وتكوينها وتحسينها."
+"title": "كيفية إنشاء مهام MapiTask أسبوعية متكررة في .NET باستخدام Aspose.Email"
 "url": "/ar/net/calendar-appointments/create-manage-weekly-maptasks-net-aspose-email/"
 "weight": 1
 ---
@@ -11,33 +11,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create Weekly Recurring MapiTasks in .NET Using Aspose.Email
+# كيفية إنشاء مهام MapiTask أسبوعية متكررة في .NET باستخدام Aspose.Email
 
 ## مقدمة
 
-Efficiently managing recurring tasks is crucial for developers working on applications that involve scheduling or calendar functionalities. Whether you're developing an internal tool for task management or integrating calendar features into a business application, creating and managing weekly recurring tasks can significantly enhance productivity.
+تُعد إدارة المهام المتكررة بكفاءة أمرًا بالغ الأهمية للمطورين الذين يعملون على تطبيقات تتضمن وظائف الجدولة أو التقويم. سواء كنت تُطوّر أداة داخلية لإدارة المهام أو تُدمج ميزات التقويم في تطبيق أعمال، فإن إنشاء وإدارة المهام المتكررة أسبوعيًا يُمكن أن يُعزز الإنتاجية بشكل كبير.
 
-In this tutorial, we'll explore how to use **Aspose.Email لـ .NET** to create weekly recurring MapiTasks ending after a specific date. This feature is invaluable for developers looking to automate scheduling within their applications using Aspose.Email's robust functionalities.
+في هذا البرنامج التعليمي، سوف نستكشف كيفية استخدام **Aspose.Email لـ .NET** إنشاء مهام MapiTask أسبوعية متكررة تنتهي بعد تاريخ محدد. هذه الميزة قيّمة للمطورين الذين يتطلعون إلى أتمتة الجدولة داخل تطبيقاتهم باستخدام وظائف Aspose.Email القوية.
 
 ### ما سوف تتعلمه:
 - إعداد وتكوين Aspose.Email لـ .NET
-- Creating a weekly recurring MapiTask with a specified end date
-- Implementing multiple-day recurrence patterns
-- Calculating occurrence counts based on custom recurrence rules
+- إنشاء مهمة MapiTask أسبوعية متكررة بتاريخ انتهاء محدد
+- تنفيذ أنماط التكرار لعدة أيام
+- حساب عدد مرات الظهور استنادًا إلى قواعد التكرار المخصصة
 
-Ready to dive into creating powerful scheduling solutions? Let's get started!
+هل أنت مستعد للبدء في ابتكار حلول فعّالة للجدولة؟ هيا بنا!
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-- **Aspose.Email لـ .NET** library: You can install it using NuGet or other package managers.
-- **.NET Framework 4.6.1 or later** أو **.NET Core/5+**: Ensure your development environment is set up with a compatible .NET version.
-- Basic knowledge of C# and familiarity with object-oriented programming concepts.
+- **Aspose.Email لـ .NET** المكتبة: يمكنك تثبيتها باستخدام NuGet أو مديري الحزم الآخرين.
+- **.NET Framework 4.6.1 أو أحدث** أو **.NET Core/5+**:تأكد من إعداد بيئة التطوير الخاصة بك باستخدام إصدار .NET متوافق.
+- المعرفة الأساسية بلغة C# والتعرف على مفاهيم البرمجة الموجهة للكائنات.
 
 ## إعداد Aspose.Email لـ .NET
 
-To start using Aspose.Email for .NET, you need to add it to your project. Here's how:
+لبدء استخدام Aspose.Email لـ .NET، عليك إضافته إلى مشروعك. إليك الطريقة:
 
 **استخدام .NET CLI:**
 ```bash
@@ -56,11 +56,11 @@ Install-Package Aspose.Email
 
 يمكنك الحصول على الترخيص من خلال:
 
-- **نسخة تجريبية مجانية**: Test features without limitations.
-- **رخصة مؤقتة**: Use this to evaluate extended capabilities.
-- **شراء**: For full access, purchase a commercial license.
+- **نسخة تجريبية مجانية**:اختبار الميزات دون قيود.
+- **رخصة مؤقتة**:استخدم هذا لتقييم القدرات الموسعة.
+- **شراء**:للحصول على الوصول الكامل، قم بشراء ترخيص تجاري.
 
-Once you have your license file, initialize Aspose.Email by applying the license in your code:
+بمجرد حصولك على ملف الترخيص، قم بتهيئة Aspose.Email عن طريق تطبيق الترخيص في الكود الخاص بك:
 ```csharp
 Aspose.Email.License license = new Aspose.Email.License();
 license.SetLicense("path_to_license_file.lic");
@@ -68,24 +68,24 @@ license.SetLicense("path_to_license_file.lic");
 
 ## دليل التنفيذ
 
-We'll break down the implementation into two main features: creating a single-day weekly recurrence and setting up multiple-day recurrences.
+سنقوم بتقسيم التنفيذ إلى ميزتين رئيسيتين: إنشاء تكرار أسبوعي ليوم واحد وإعداد تكرارات لعدة أيام.
 
-### Creating a Weekly Recurring MapiTask Ending After a Specific Date
+### إنشاء مهمة MapiTask أسبوعية متكررة تنتهي بعد تاريخ محدد
 
 #### ملخص
-This feature allows you to create tasks that recur on a specific day each week until they end after a given date. It's perfect for scheduling recurring meetings or deadlines.
+تتيح لك هذه الميزة إنشاء مهام تتكرر في يوم محدد كل أسبوع حتى تنتهي بعد تاريخ محدد. إنها مثالية لجدولة الاجتماعات المتكررة أو المواعيد النهائية.
 
 #### خطوات التنفيذ
-**Step 1: Configure the Recurrence Pattern**
-Here, we'll set up the recurrence pattern using `MapiCalendarWeeklyRecurrencePattern`.
+**الخطوة 1: تكوين نمط التكرار**
+هنا، سنقوم بإعداد نمط التكرار باستخدام `MapiCalendarWeeklyRecurrencePattern`.
 ```csharp
 var rec = new MapiCalendarWeeklyRecurrencePattern
 {
     EndType = MapiCalendarRecurrenceEndType.EndAfterDate,
     PatternType = MapiCalendarRecurrencePatternType.Week,
-    Period = 1, // Weekly recurrence
+    Period = 1, // التكرار الأسبوعي
     WeekStartDay = DayOfWeek.Sunday,
-    DayOfWeek = MapiCalendarDayOfWeek.Friday, // Recur on Fridays
+    DayOfWeek = MapiCalendarDayOfWeek.Friday, // تتكرر يوم الجمعة
     EndDate = new DateTime(2015, 9, 1).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)),
     OccurrenceCount = GetOccurrenceCount(
         new DateTime(2015, 7, 16).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)),
@@ -94,7 +94,7 @@ var rec = new MapiCalendarWeeklyRecurrencePattern
 };
 ```
 **الخطوة 2: إنشاء MapiTask**
-Now that we have our recurrence pattern configured, let's create a task and assign this pattern to it.
+الآن بعد أن قمنا بتكوين نمط التكرار الخاص بنا، فلنقم بإنشاء مهمة وتعيين هذا النمط لها.
 ```csharp
 MapiTask task = new MapiTask(
     "This is test task",
@@ -112,37 +112,37 @@ if (rec.OccurrenceCount == 0)
 task.Recurrence = rec;
 ```
 **الخطوة 3: حفظ المهمة**
-Finally, save your task to a .msg file for persistence.
+وأخيرًا، احفظ مهمتك في ملف .msg للاحتفاظ بها.
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 task.Save(dataDir + "/SetWeeklyEndAfterDateEveryDayRecurrence_out.msg", TaskSaveFormat.Msg);
 ```
 
-### Creating a Weekly Recurring MapiTask on Multiple Days Ending After a Specific Date
+### إنشاء مهمة MapiTask أسبوعية متكررة في أيام متعددة تنتهي بعد تاريخ محدد
 
 #### ملخص
-This feature extends the previous setup to allow tasks that recur on multiple days each week, providing flexibility for more complex scheduling needs.
+تعمل هذه الميزة على توسيع الإعداد السابق للسماح بالمهام التي تتكرر في أيام متعددة كل أسبوع، مما يوفر المرونة لاحتياجات الجدولة الأكثر تعقيدًا.
 
 #### خطوات التنفيذ
-**Step 1: Configure the Multi-Day Recurrence Pattern**
-Set up a pattern that includes multiple recurrence days per week.
+**الخطوة 1: تكوين نمط التكرار متعدد الأيام**
+قم بإعداد نمط يتضمن أيام تكرار متعددة في الأسبوع.
 ```csharp
 var record = new MapiCalendarWeeklyRecurrencePattern
 {
     EndType = MapiCalendarRecurrenceEndType.EndAfterDate,
     PatternType = MapiCalendarRecurrencePatternType.Week,
-    Period = 2, // Occurs every two weeks
+    Period = 2, // يحدث كل اسبوعين
     WeekStartDay = DayOfWeek.Sunday,
     EndDate = new DateTime(2015, 9, 1).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)),
-    DayOfWeek = MapiCalendarDayOfWeek.Friday | MapiCalendarDayOfWeek.Monday, // Recur on Fridays and Mondays
+    DayOfWeek = MapiCalendarDayOfWeek.Friday | MapiCalendarDayOfWeek.Monday, // تتكرر أيام الجمعة والاثنين
     OccurrenceCount = GetOccurrenceCount(
         new DateTime(2015, 7, 16).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)), 
         new DateTime(2015, 9, 1).Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)), 
         "FREQ=WEEKLY;BYDAY=FR,MO;INTERVAL=2")
 };
 ```
-**Step 2: Create and Assign the MapiTask**
-Similar to before, create a task and assign this multi-day pattern.
+**الخطوة 2: إنشاء MapiTask وتعيينه**
+على غرار ما سبق، قم بإنشاء مهمة وتعيين هذا النمط متعدد الأيام.
 ```csharp
 MapiTask task = new MapiTask(
     "This is test task",
@@ -153,8 +153,8 @@ MapiTask task = new MapiTask(
 task.State = MapiTaskState.NotAssigned;
 task.Recurrence = record;
 ```
-**Step 3: Save the Multi-Day Task**
-Save your task similarly to ensure it is stored correctly.
+**الخطوة 3: حفظ المهمة التي تستغرق عدة أيام**
+احفظ مهمتك بنفس الطريقة للتأكد من تخزينها بشكل صحيح.
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 task.Save(dataDir + "/SetWeeklyEndAfterDateMultipleDaysRecurrence_out.msg", TaskSaveFormat.Msg);
@@ -162,34 +162,34 @@ task.Save(dataDir + "/SetWeeklyEndAfterDateMultipleDaysRecurrence_out.msg", Task
 
 ## التطبيقات العملية
 
-Here are some practical applications of these features:
+وفيما يلي بعض التطبيقات العملية لهذه الميزات:
 
-1. **Automating Weekly Meetings**: Schedule recurring team meetings on specific days, like Fridays.
-2. **Task Deadlines**: Set up weekly deadlines for project tasks that recur every Monday and Friday.
-3. **تخطيط الفعاليات**: Manage event planning schedules that require follow-ups on multiple days each week.
+1. **أتمتة الاجتماعات الأسبوعية**:جدولة اجتماعات الفريق المتكررة في أيام محددة، مثل أيام الجمعة.
+2. **مواعيد نهائية للمهام**:قم بإعداد مواعيد نهائية أسبوعية لمهام المشروع التي تتكرر كل يوم اثنين وجمعة.
+3. **تخطيط الفعاليات**:إدارة جداول التخطيط للأحداث التي تتطلب المتابعة في أيام متعددة كل أسبوع.
 
 ## اعتبارات الأداء
 
-- **تحسين استخدام الذاكرة**: Ensure you dispose of objects properly to avoid memory leaks, especially when dealing with large datasets or numerous recurring tasks.
-- **Efficient Date Calculations**: Use efficient algorithms for date calculations within your recurrence rules to minimize processing time.
-- **العمليات غير المتزامنة**: When saving tasks to disk or network locations, consider asynchronous methods to enhance performance.
+- **تحسين استخدام الذاكرة**:تأكد من التخلص من الكائنات بشكل صحيح لتجنب تسرب الذاكرة، وخاصة عند التعامل مع مجموعات بيانات كبيرة أو مهام متكررة عديدة.
+- **حسابات التاريخ الفعالة**:استخدم خوارزميات فعالة لحسابات التاريخ ضمن قواعد التكرار لتقليل وقت المعالجة.
+- **العمليات غير المتزامنة**:عند حفظ المهام على القرص أو مواقع الشبكة، ضع في اعتبارك الطرق غير المتزامنة لتحسين الأداء.
 
 ## خاتمة
 
-In this tutorial, we've covered how to create and manage weekly recurring MapiTasks using Aspose.Email for .NET. By following the steps outlined above, you can easily implement sophisticated scheduling features in your applications.
+في هذا البرنامج التعليمي، تناولنا كيفية إنشاء وإدارة مهام MapiTasks أسبوعية متكررة باستخدام Aspose.Email لـ .NET. باتباع الخطوات الموضحة أعلاه، يمكنك بسهولة تنفيذ ميزات جدولة متطورة في تطبيقاتك.
 
-To further explore Aspose.Email's capabilities or tackle more complex scenarios, consider reviewing their official documentation and community forums.
+لمزيد من استكشاف قدرات Aspose.Email أو معالجة السيناريوهات الأكثر تعقيدًا، فكر في مراجعة وثائقهم الرسمية ومنتديات المجتمع.
 
 ## الأسئلة الشائعة
 
 **س: كيف أقوم بتثبيت Aspose.Email لـ .NET؟**
-A: You can install it via NuGet Package Manager using the command `Install-Package Aspose.Email`.
+ج: يمكنك تثبيته عبر NuGet Package Manager باستخدام الأمر `Install-Package Aspose.Email`.
 
-**Q: What is a MapiTask?**
-A: A MapiTask represents an Outlook task with properties like subject, due date, and recurrence pattern.
+**س: ما هو MapiTask؟**
+ج: يمثل MapiTask مهمة Outlook مع خصائص مثل الموضوع وتاريخ الاستحقاق ونمط التكرار.
 
-**Q: Can I customize the recurrence patterns further?**
-A: Yes, you can use different recurrence types like daily or monthly by adjusting the `PatternType` ممتلكات `MapiCalendarRecurrencePattern`.
+**س: هل يمكنني تخصيص أنماط التكرار بشكل أكبر؟**
+ج: نعم، يمكنك استخدام أنواع تكرار مختلفة مثل اليومي أو الشهري عن طريق تعديل `PatternType` ممتلكات `MapiCalendarRecurrencePattern`.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

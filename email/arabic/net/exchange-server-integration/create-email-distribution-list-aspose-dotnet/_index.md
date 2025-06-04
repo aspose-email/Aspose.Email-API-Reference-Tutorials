@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to create and manage email distribution lists with Aspose.Email for .NET in a streamlined process. This guide provides step-by-step instructions for efficient integration."
-"title": "Create an Email Distribution List Using Aspose.Email for .NET | Exchange Server Integration Guide"
+"description": "تعرّف على كيفية إنشاء قوائم توزيع البريد الإلكتروني وإدارتها باستخدام Aspose.Email لـ .NET بطريقة مبسطة. يقدم هذا الدليل تعليمات خطوة بخطوة لتكامل فعال."
+"title": "إنشاء قائمة توزيع بريد إلكتروني باستخدام Aspose.Email لـ .NET | دليل تكامل Exchange Server"
 "url": "/ar/net/exchange-server-integration/create-email-distribution-list-aspose-dotnet/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Create and Save an Email Distribution List Using Aspose.Email for .NET
+# كيفية إنشاء قائمة توزيع بريد إلكتروني وحفظها باستخدام Aspose.Email لـ .NET
 
 ## مقدمة
 
-Efficiently managing email distribution lists can be challenging, especially when automation is needed. **Aspose.Email لـ .NET** offers a powerful solution to create and maintain these lists with ease. This tutorial will guide you through the process of using Aspose.Email for .NET to build an email distribution list seamlessly.
+قد يكون إدارة قوائم توزيع البريد الإلكتروني بكفاءة أمرًا صعبًا، خاصةً عندما تكون هناك حاجة إلى الأتمتة. **Aspose.Email لـ .NET** يقدم حلاً فعالاً لإنشاء هذه القوائم وصيانتها بسهولة. سيرشدك هذا البرنامج التعليمي خلال عملية استخدام Aspose.Email لـ .NET لإنشاء قائمة توزيع بريد إلكتروني بسلاسة.
 
 في هذا الدليل، سنغطي:
-- Creating a MapiDistributionListMemberCollection.
-- Adding members to your distribution list.
-- Setting properties and saving the list as a file.
+- إنشاء MapiDistributionListMemberCollection.
+- إضافة الأعضاء إلى قائمة التوزيع الخاصة بك.
+- تعيين الخصائص وحفظ القائمة كملف.
 
-By the end of this tutorial, you will have implemented a robust solution using Aspose.Email for .NET's features. Let's get started by ensuring your development environment is ready.
+بنهاية هذا البرنامج التعليمي، ستكون قد نفذت حلاً فعالاً باستخدام ميزات Aspose.Email لـ .NET. لنبدأ بالتأكد من جاهزية بيئة التطوير لديك.
 
 ## المتطلبات الأساسية
 
-Before creating email distribution lists with **Aspose.Email لـ .NET**, ensure the following:
-- Familiarity with C# and .NET environments.
-- A properly configured development setup, such as Visual Studio.
-- Installation of Aspose.Email for .NET (detailed below).
+قبل إنشاء قوائم توزيع البريد الإلكتروني باستخدام **Aspose.Email لـ .NET**، تأكد من الآتي:
+- - المعرفة ببيئات C# و.NET.
+- إعداد تطوير تم تكوينه بشكل صحيح، مثل Visual Studio.
+- تثبيت Aspose.Email لـ .NET (مفصل أدناه).
 
 ## إعداد Aspose.Email لـ .NET
 
-Setting up **Aspose.Email لـ .NET** is straightforward. Follow these steps to install the library:
+إنشاء **Aspose.Email لـ .NET** الأمر بسيط. اتبع الخطوات التالية لتثبيت المكتبة:
 
 ### خيارات التثبيت
 
@@ -52,110 +52,110 @@ Install-Package Aspose.Email
 
 ### الحصول على الترخيص
 
-To fully leverage Aspose.Email for .NET, you'll need a license. Start with a free trial to explore its capabilities. For extended usage, consider applying for a temporary or purchasing a full license:
-- **نسخة تجريبية مجانية**: Access limited features for testing purposes.
-- **رخصة مؤقتة**: Obtain via the [موقع Aspose](https://purchase.aspose.com/temporary-license/).
-- **شراء**: Unlock all features by purchasing a license through the [الموقع الرسمي](https://purchase.aspose.com/buy).
+للاستفادة الكاملة من Aspose.Email لـ .NET، ستحتاج إلى ترخيص. ابدأ بفترة تجريبية مجانية لاستكشاف إمكانياته. للاستخدام الممتد، يمكنك التقدم بطلب للحصول على ترخيص مؤقت أو شراء ترخيص كامل.
+- **نسخة تجريبية مجانية**:الوصول إلى الميزات المحدودة لأغراض الاختبار.
+- **رخصة مؤقتة**:الحصول عليها عبر [موقع Aspose](https://purchase.aspose.com/temporary-license/).
+- **شراء**:قم بإلغاء قفل جميع الميزات عن طريق شراء ترخيص من خلال [الموقع الرسمي](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 
-After installing Aspose.Email for .NET and acquiring your license, initialize it in your project. This typically involves setting up your license file and importing necessary namespaces like `Aspose.Email.Mapi`.
+بعد تثبيت Aspose.Email لـ .NET والحصول على ترخيصك، قم بتشغيله في مشروعك. يتضمن هذا عادةً إعداد ملف الترخيص واستيراد مساحات الأسماء الضرورية مثل `Aspose.Email.Mapi`.
 
 ```csharp
-// Initialize License
+// تهيئة الترخيص
 var license = new Aspose.Email.License();
 license.SetLicense("path_to_your_license.lic");
 ```
 
 ## دليل التنفيذ
 
-With the setup complete, let's create and save an email distribution list.
+بعد اكتمال الإعداد، لنبدأ في إنشاء قائمة توزيع البريد الإلكتروني وحفظها.
 
-### Step 1: Create a MapiDistributionListMemberCollection Object
+### الخطوة 1: إنشاء كائن MapiDistributionListMemberCollection
 
-Start by setting up a collection to hold your distribution list members, which serves as the foundation of your list.
+ابدأ بإعداد مجموعة لحمل أعضاء قائمة التوزيع الخاصة بك، والتي تعمل كأساس لقائمتك.
 
 #### مقتطف من الكود:
 ```csharp
 using Aspose.Email.Mapi;
 
-string dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Path to save distribution list
+string dataDir = "YOUR_DOCUMENT_DIRECTORY"; // المسار لحفظ قائمة التوزيع
 
-// Create a MapiDistributionListMemberCollection object
+// إنشاء كائن MapiDistributionListMemberCollection
 MapiDistributionListMemberCollection oneOffMembers = new MapiDistributionListMemberCollection();
 ```
 
-### Step 2: Add Members to the Collection
+### الخطوة 2: إضافة الأعضاء إلى المجموعة
 
-Next, populate your distribution list with members. Each member is represented by a `MapiDistributionListMember` هدف.
+بعد ذلك، املأ قائمة التوزيع الخاصة بك بالأعضاء. يُمثَّل كل عضو بـ `MapiDistributionListMember` هدف.
 
 #### مقتطف من الكود:
 ```csharp
-// Add members to the collection
+// إضافة أعضاء إلى المجموعة
 oneOffMembers.Add(new MapiDistributionListMember("John R. Patrick", "john@example.com"));
 ```
 
-### Step 3: Set Properties and Save
+### الخطوة 3: تعيين الخصائص وحفظها
 
-After adding all necessary members, set any additional properties for your list before saving it.
+بعد إضافة جميع الأعضاء الضروريين، قم بتعيين أي خصائص إضافية لقائمتك قبل حفظها.
 
 #### مقتطف من الكود:
 ```csharp
-// Create a distribution list
+// إنشاء قائمة التوزيع
 MapiDistributionList distributionList = new MapiDistributionList("My Distribution List", oneOffMembers);
 
-// Save to file
+// حفظ في الملف
 distributionList.Save(dataDir + "MyDistributionList.mlst");
 ```
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- **مشكلة شائعة**: File path errors. Ensure `dataDir` is correctly set and accessible.
-- **Performance**: For large lists, consider optimizing member additions by batching.
+- **مشكلة شائعة**: أخطاء مسار الملف. تأكد `dataDir` تم ضبطها بشكل صحيح ويمكن الوصول إليها.
+- **أداء**:بالنسبة للقوائم الكبيرة، فكر في تحسين إضافات الأعضاء عن طريق الدفعات.
 
 ## التطبيقات العملية
 
-Consider these real-world scenarios where this setup could be beneficial:
-1. **إدارة البريد الإلكتروني للشركات**: Automate the creation of departmental email groups.
-2. **Project Teams**: Distribute emails to all project members with a single list.
-3. **تخطيط الفعاليات**: Manage invitations and updates through a centralized distribution list.
+فكر في السيناريوهات الواقعية التالية حيث قد يكون هذا الإعداد مفيدًا:
+1. **إدارة البريد الإلكتروني للشركات**:أتمتة إنشاء مجموعات البريد الإلكتروني الإدارية.
+2. **فرق المشروع**:قم بتوزيع رسائل البريد الإلكتروني على جميع أعضاء المشروع باستخدام قائمة واحدة.
+3. **تخطيط الفعاليات**:إدارة الدعوات والتحديثات من خلال قائمة توزيع مركزية.
 
 ## اعتبارات الأداء
 
-When handling large lists or working in resource-constrained environments, consider these tips:
-- Batch process member additions to reduce overhead.
-- Use efficient data structures for storing and accessing member information.
-- Follow .NET memory management best practices to optimize performance.
+عند التعامل مع قوائم كبيرة أو العمل في بيئات محدودة الموارد، ضع في اعتبارك النصائح التالية:
+- إضافة أعضاء عملية الدفعات لتقليل النفقات العامة.
+- استخدم هياكل بيانات فعالة لتخزين معلومات الأعضاء والوصول إليها.
+- اتبع أفضل ممارسات إدارة ذاكرة .NET لتحسين الأداء.
 
 ## خاتمة
 
-Creating and saving email distribution lists with **Aspose.Email لـ .NET** is a powerful way to streamline your communication processes. By following this guide, you've learned how to set up the necessary environment, create a list, populate it with members, and save it efficiently. 
+إنشاء قوائم توزيع البريد الإلكتروني وحفظها باستخدام **Aspose.Email لـ .NET** طريقة فعّالة لتبسيط عمليات التواصل لديك. باتباع هذا الدليل، ستتعلم كيفية تهيئة البيئة اللازمة، وإنشاء قائمة، وإضافتها إلى الأعضاء، وحفظها بكفاءة. 
 
-To further enhance your skills, explore additional features of Aspose.Email for .NET or integrate these lists into larger systems.
+لتعزيز مهاراتك بشكل أكبر، استكشف الميزات الإضافية لـ Aspose.Email لـ .NET أو قم بدمج هذه القوائم في أنظمة أكبر.
 
 ## قسم الأسئلة الشائعة
 
 1. **ما هو Aspose.Email لـ .NET؟**
-   - It’s a comprehensive library designed to work with emails in .NET applications.
+   - إنها مكتبة شاملة مصممة للعمل مع رسائل البريد الإلكتروني في تطبيقات .NET.
 
-2. **Can I create distribution lists programmatically?**
-   - Yes, using the steps outlined above.
+2. **هل يمكنني إنشاء قوائم التوزيع برمجيًا؟**
+   - نعم، باستخدام الخطوات الموضحة أعلاه.
 
-3. **How do I handle large email lists?**
-   - Implement batch processing and efficient memory management techniques.
+3. **كيف أتعامل مع قوائم البريد الإلكتروني الكبيرة؟**
+   - تنفيذ معالجة الدفعات وتقنيات إدارة الذاكرة الفعالة.
 
-4. **Where can I find more resources on Aspose.Email for .NET?**
+4. **أين يمكنني العثور على المزيد من الموارد حول Aspose.Email لـ .NET؟**
    - قم بزيارة [الوثائق الرسمية](https://reference.aspose.com/email/net/).
 
-5. **What should I do if my license expires?**
-   - Consider purchasing a new license or renewing your existing one through the [موقع Aspose](https://purchase.aspose.com/buy).
+5. **ماذا يجب أن أفعل إذا انتهت صلاحية رخصتي؟**
+   - فكر في شراء ترخيص جديد أو تجديد ترخيصك الحالي من خلال [موقع Aspose](https://purchase.aspose.com/buy).
 
 ## موارد
-- **التوثيق**: [Learn more about Aspose.Email for .NET](https://reference.aspose.com/email/net/)
-- **تنزيل المكتبة**: [Get the latest version here](https://releases.aspose.com/email/net/)
-- **شراء الترخيص**: [Buy a license online](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية**: [Start with a free trial](https://releases.aspose.com/email/net/)
-- **رخصة مؤقتة**: [Apply for a temporary license](https://purchase.aspose.com/temporary-license/)
-- **منتدى الدعم**: [Discuss issues and solutions here](https://forum.aspose.com/c/email/10)
+- **التوثيق**: [تعرف على المزيد حول Aspose.Email لـ .NET](https://reference.aspose.com/email/net/)
+- **تنزيل المكتبة**: [احصل على أحدث إصدار هنا](https://releases.aspose.com/email/net/)
+- **شراء الترخيص**: [شراء ترخيص عبر الإنترنت](https://purchase.aspose.com/buy)
+- **نسخة تجريبية مجانية**: [ابدأ بفترة تجريبية مجانية](https://releases.aspose.com/email/net/)
+- **رخصة مؤقتة**: [التقدم بطلب للحصول على ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
+- **منتدى الدعم**: [ناقش القضايا والحلول هنا](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to send emails using the Aspose.Email for Java library through SOCKS and HTTP proxies. This guide covers setup, configuration, and practical applications."
-"title": "How to Send Emails Using Aspose.Email Java via SOCKS & HTTP Proxies"
+"description": "تعرّف على كيفية إرسال رسائل البريد الإلكتروني باستخدام مكتبة Aspose.Email لجافا عبر SOCKS ووكلاء HTTP. يغطي هذا الدليل الإعداد والتكوين والتطبيقات العملية."
+"title": "كيفية إرسال رسائل البريد الإلكتروني باستخدام Aspose.Email Java عبر SOCKS و HTTP Proxies"
 "url": "/ar/java/smtp-client-operations/aspose-email-java-send-via-socks-http-proxies/"
 "weight": 1
 ---
@@ -11,27 +11,27 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Send Emails Using Aspose.Email Java through SOCKS and HTTP Proxies
+# كيفية إرسال رسائل البريد الإلكتروني باستخدام Aspose.Email Java عبر SOCKS و HTTP Proxies
 
 ## مقدمة
 
-Sending emails securely and efficiently is crucial in today's digital communication landscape, especially when dealing with sensitive data or restricted networks. If you're looking to send emails via a proxy server using the powerful Aspose.Email for Java library, this tutorial will guide you step-by-step on how to leverage SOCKS and HTTP proxies for your SMTP client.
+يُعد إرسال رسائل البريد الإلكتروني بأمان وكفاءة أمرًا بالغ الأهمية في عالم الاتصالات الرقمية اليوم، خاصةً عند التعامل مع بيانات حساسة أو شبكات مقيدة. إذا كنت ترغب في إرسال رسائل بريد إلكتروني عبر خادم وكيل باستخدام مكتبة Aspose.Email القوية لـ Java، فسيرشدك هذا البرنامج التعليمي خطوة بخطوة حول كيفية الاستفادة من وكلاء SOCKS وHTTP لعميل SMTP الخاص بك.
 
-By the end of this article, you’ll understand how to integrate proxy settings into your email-sending operations. Let's dive in!
+بنهاية هذه المقالة، ستفهم كيفية دمج إعدادات الوكيل في عمليات إرسال البريد الإلكتروني. لنبدأ!
 
 ### المتطلبات الأساسية
 
-Before proceeding, ensure that you have the following:
+قبل المتابعة، تأكد من أن لديك ما يلي:
 
-1. **المكتبات والتبعيات**: You'll need Aspose.Email for Java library installed in your project.
-2. **إعداد البيئة**: Ensure you're working within a Java development environment (Java 8 or later).
-3. **متطلبات المعرفة**: Familiarity with Java programming, Maven for dependency management, and basic understanding of SMTP protocols.
+1. **المكتبات والتبعيات**:ستحتاج إلى تثبيت مكتبة Aspose.Email for Java في مشروعك.
+2. **إعداد البيئة**:تأكد من أنك تعمل ضمن بيئة تطوير Java (Java 8 أو أحدث).
+3. **متطلبات المعرفة**:المعرفة ببرمجة Java، وMaven لإدارة التبعيات، والفهم الأساسي لبروتوكولات SMTP.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-### Maven Dependency
+### تبعية Maven
 
-To include the Aspose.Email library in your project, add the following Maven dependency to your `pom.xml` file:
+لتضمين مكتبة Aspose.Email في مشروعك، أضف تبعية Maven التالية إلى مشروعك `pom.xml` ملف:
 
 ```xml
 <dependency>
@@ -44,23 +44,23 @@ To include the Aspose.Email library in your project, add the following Maven dep
 
 ### الحصول على الترخيص
 
-You can acquire a temporary license for Aspose.Email to explore its full features without evaluation limitations:
+يمكنك الحصول على ترخيص مؤقت لـ Aspose.Email لاستكشاف ميزاته الكاملة دون قيود التقييم:
 
-- **نسخة تجريبية مجانية**: Download the trial version [هنا](https://releases.aspose.com/email/java/).
-- **رخصة مؤقتة**: Apply for a free temporary license [هنا](https://purchase.aspose.com/temporary-license/).
+- **نسخة تجريبية مجانية**:تحميل النسخة التجريبية [هنا](https://releases.aspose.com/email/java/).
+- **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت مجاني [هنا](https://purchase.aspose.com/temporary-license/).
 
-Once you have your license file, apply it in your application to unlock the full capabilities of Aspose.Email.
+بمجرد حصولك على ملف الترخيص، قم بتطبيقه في تطبيقك لفتح الإمكانيات الكاملة لـ Aspose.Email.
 
 ## دليل التنفيذ
 
-### Sending Email via SOCKS Proxy
+### إرسال البريد الإلكتروني عبر SOCKS Proxy
 
 #### ملخص
-Sending emails through a SOCKS proxy can enhance security and allow access from restricted networks. Here's how to configure your SMTP client using Aspose.Email with a SOCKS proxy:
+إرسال رسائل البريد الإلكتروني عبر بروكسي SOCKS يُحسّن الأمان ويسمح بالوصول من الشبكات المحظورة. إليك كيفية تكوين عميل SMTP باستخدام Aspose.Email مع بروكسي SOCKS:
 
-##### Step 1: Set Up the SMTP Client
+##### الخطوة 1: إعداد عميل SMTP
 
-Start by setting up your SMTP client with necessary credentials and specifying security options.
+ابدأ بإعداد عميل SMTP الخاص بك باستخدام بيانات الاعتماد اللازمة وتحديد خيارات الأمان.
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -73,13 +73,13 @@ SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "username", "aspose123
 client.setSecurityOptions(SecurityOptions.Auto);
 ```
 
-##### Step 2: Configure SOCKS Proxy
+##### الخطوة 2: تكوين وكيل SOCKS
 
-Define your proxy settings using the SOCKS protocol. Ensure you replace `"proxy.example.com"` with your actual proxy address.
+حدّد إعدادات الوكيل باستخدام بروتوكول SOCKS. تأكد من استبدال `"proxy.example.com"` مع عنوان الوكيل الفعلي الخاص بك.
 
 ```java
-String proxyAddress = "proxy.example.com"; // Replace with actual proxy address.
-int proxyPort = 1080; // Standard port for SOCKS proxies.
+String proxyAddress = "proxy.example.com"; // استبدله بعنوان الوكيل الفعلي.
+int proxyPort = 1080; // منفذ قياسي لوكلاء SOCKS.
 SocksProxy proxy = new SocksProxy(proxyAddress, proxyPort, SocksVersion.SocksV5);
 
 client.setProxy(proxy);
@@ -87,7 +87,7 @@ client.setProxy(proxy);
 
 ##### الخطوة 3: إرسال البريد الإلكتروني
 
-With your SMTP client configured, you can now send an email through the SOCKS proxy.
+بعد تكوين عميل SMTP الخاص بك، يمكنك الآن إرسال بريد إلكتروني عبر وكيل SOCKS.
 
 ```java
 client.send(new MailMessage("sender@domain.com", "receiver@domain.com",
@@ -95,22 +95,22 @@ client.send(new MailMessage("sender@domain.com", "receiver@domain.com",
         "Implement socks proxy protocol for versions 4, 4a, 5 (only Username/Password authentication)"));
 ```
 
-### Sending Email via HTTP Proxy
+### إرسال البريد الإلكتروني عبر وكيل HTTP
 
 #### ملخص
-HTTP proxies are another way to route your SMTP traffic. They are particularly useful when you need to log or modify requests.
+وكلاء HTTP طريقة أخرى لتوجيه حركة مرور SMTP. وهي مفيدة بشكل خاص عند الحاجة إلى تسجيل الطلبات أو تعديلها.
 
-##### Step 1: Set Up the SMTP Client
+##### الخطوة 1: إعداد عميل SMTP
 
-Just like with SOCKS, start by configuring the SMTP client:
+تمامًا كما هو الحال مع SOCKS، ابدأ بتكوين عميل SMTP:
 
 ```java
 SmtpClient client = new SmtpClient("smtp.gmail.com", 587, "username", "aspose1234");
 ```
 
-##### Step 2: Define HTTP Proxy Settings
+##### الخطوة 2: تحديد إعدادات وكيل HTTP
 
-Configure your HTTP proxy settings. Replace `"proxy.example.com"` و `8080` with your actual proxy address and port.
+قم بتكوين إعدادات وكيل HTTP. استبدل `"proxy.example.com"` و `8080` مع عنوان الوكيل والمنفذ الفعلي الخاص بك.
 
 ```java
 import com.aspose.email.HttpProxy;
@@ -121,7 +121,7 @@ client.setProxy(httpProxy);
 
 ##### الخطوة 3: إرسال البريد الإلكتروني
 
-Finally, send an email through the configured HTTP proxy:
+أخيرًا، أرسل بريدًا إلكترونيًا عبر وكيل HTTP المُكوّن:
 
 ```java
 client.send(new MailMessage(
@@ -133,52 +133,52 @@ client.send(new MailMessage(
 
 ## التطبيقات العملية
 
-- **Secure Browsing**: Use proxies to securely browse and send emails from within restricted networks.
-- **Data Logging**: Employ HTTP proxies for logging email requests in compliance with regulatory standards.
-- **بيئات الاختبار**: Simulate different network conditions by routing SMTP traffic through various proxy servers.
+- **التصفح الآمن**:استخدم وكلاء لتصفح البريد الإلكتروني وإرساله بشكل آمن من داخل الشبكات المحظورة.
+- **تسجيل البيانات**:استخدام وكلاء HTTP لتسجيل طلبات البريد الإلكتروني بما يتوافق مع المعايير التنظيمية.
+- **بيئات الاختبار**:محاكاة ظروف الشبكة المختلفة عن طريق توجيه حركة مرور SMTP عبر خوادم وكيلة مختلفة.
 
-These configurations can seamlessly integrate into larger systems requiring robust email communication features, such as CRM platforms or customer service tools.
+يمكن دمج هذه التكوينات بسلاسة في أنظمة أكبر تتطلب ميزات اتصال قوية عبر البريد الإلكتروني، مثل منصات إدارة علاقات العملاء أو أدوات خدمة العملاء.
 
 ## اعتبارات الأداء
 
-When using proxies with Aspose.Email:
+عند استخدام وكلاء مع Aspose.Email:
 
-- Optimize performance by minimizing unnecessary network calls.
-- Regularly monitor resource usage to avoid bottlenecks in high-volume email scenarios.
-- Follow best practices for Java memory management to ensure efficient application performance.
+- تحسين الأداء عن طريق تقليل المكالمات غير الضرورية للشبكة.
+- قم بمراقبة استخدام الموارد بشكل منتظم لتجنب الاختناقات في سيناريوهات البريد الإلكتروني ذات الحجم الكبير.
+- اتبع أفضل الممارسات لإدارة ذاكرة Java لضمان أداء التطبيق بكفاءة.
 
 ## خاتمة
 
-By now, you should have a solid grasp of sending emails through SOCKS and HTTP proxies using Aspose.Email for Java. These configurations not only enhance security but also provide flexibility in how your applications handle SMTP traffic.
+الآن، يجب أن تكون لديك معرفة معمقة بإرسال رسائل البريد الإلكتروني عبر SOCKS ووكلاء HTTP باستخدام Aspose.Email لـ Java. لا تُحسّن هذه التكوينات الأمان فحسب، بل تُتيح أيضًا مرونةً في كيفية تعامل تطبيقاتك مع حركة مرور SMTP.
 
-Consider exploring more features offered by Aspose.Email or integrating it with other systems to create comprehensive email solutions tailored to your needs.
+فكر في استكشاف المزيد من الميزات التي يقدمها Aspose.Email أو دمجه مع أنظمة أخرى لإنشاء حلول بريد إلكتروني شاملة مصممة خصيصًا لتلبية احتياجاتك.
 
 ### الخطوات التالية
 
-- Experiment with different proxy configurations.
-- Dive into the [وثائق Aspose.Email](https://reference.aspose.com/email/java/) for advanced functionalities.
+- تجربة تكوينات الوكيل المختلفة.
+- انغمس في [وثائق Aspose.Email](https://reference.aspose.com/email/java/) للحصول على وظائف متقدمة.
 
 ## قسم الأسئلة الشائعة
 
-1. **What is a SOCKS proxy?**
-   - A SOCKS proxy is a type of network proxy that routes traffic at the transport layer, supporting various protocols like HTTP and FTP.
+1. **ما هو وكيل SOCKS؟**
+   - وكيل SOCKS هو نوع من وكلاء الشبكة الذي يقوم بتوجيه حركة المرور في طبقة النقل، ويدعم بروتوكولات مختلفة مثل HTTP وFTP.
 
-2. **How do I get a temporary license for Aspose.Email?**
-   - يزور [هذا الرابط](https://purchase.aspose.com/temporary-license/) to apply for a free temporary license.
+2. **كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Email؟**
+   - يزور [هذا الرابط](https://purchase.aspose.com/temporary-license/) لتقديم طلب للحصول على ترخيص مؤقت مجاني.
 
-3. **Can proxies affect email delivery time?**
-   - Yes, using a proxy can introduce latency due to the additional routing step.
+3. **هل يمكن أن تؤثر الوكلاء على وقت تسليم البريد الإلكتروني؟**
+   - نعم، قد يؤدي استخدام الوكيل إلى إدخال تأخير بسبب خطوة التوجيه الإضافية.
 
-4. **Is SOCKS5 better than HTTP for sending emails?**
-   - It depends on your use case. SOCKS5 supports more protocols and authentication methods compared to HTTP.
+4. **هل SOCKS5 أفضل من HTTP لإرسال رسائل البريد الإلكتروني؟**
+   - يعتمد ذلك على حالة استخدامك. يدعم SOCKS5 بروتوكولات وطرق مصادقة أكثر مقارنةً بـ HTTP.
 
-5. **How do I troubleshoot connection issues with proxies?**
-   - Ensure correct proxy settings, verify network connectivity, and check logs for any errors.
+5. **كيف يمكنني استكشاف مشكلات الاتصال مع الوكلاء وإصلاحها؟**
+   - تأكد من إعدادات الوكيل الصحيحة، وتحقق من اتصال الشبكة، وتحقق من السجلات بحثًا عن أي أخطاء.
 
 ## موارد
 
 - [توثيق Aspose.Email](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email Java](https://releases.aspose.com/email/java/)
+- [تنزيل Aspose.Email Java](https://releases.aspose.com/email/java/)
 - [شراء الترخيص](https://purchase.aspose.com/buy)
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)
 - [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)

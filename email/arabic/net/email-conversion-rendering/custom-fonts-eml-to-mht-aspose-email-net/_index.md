@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to customize fonts during EML to MHT conversion with Aspose.Email for .NET, ensuring brand consistency and enhanced email presentation."
-"title": "Custom Fonts in EML to MHT Conversion Using Aspose.Email for .NET"
+"description": "تعرف على كيفية تخصيص الخطوط أثناء تحويل EML إلى MHT باستخدام Aspose.Email لـ .NET، مما يضمن اتساق العلامة التجارية وتقديم البريد الإلكتروني المحسن."
+"title": "الخطوط المخصصة في تحويل EML إلى MHT باستخدام Aspose.Email لـ .NET"
 "url": "/ar/net/email-conversion-rendering/custom-fonts-eml-to-mht-aspose-email-net/"
 "weight": 1
 ---
@@ -11,26 +11,26 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Custom Fonts in EML to MHT Conversion with Aspose.Email
+# الخطوط المخصصة في تحويل EML إلى MHT مع Aspose.Email
 
-When converting emails from EML to MHT format, customizing fonts can enhance presentation and maintain branding consistency. This guide demonstrates how to apply custom font styles using Aspose.Email for .NET.
+عند تحويل رسائل البريد الإلكتروني من تنسيق EML إلى تنسيق MHT، يُحسّن تخصيص الخطوط العرض ويحافظ على اتساق العلامة التجارية. يوضح هذا الدليل كيفية تطبيق أنماط خطوط مخصصة باستخدام Aspose.Email لـ .NET.
 
 ## ما سوف تتعلمه:
-- How to convert EML files to MHT format with customized font styling.
-- Setting up and initializing Aspose.Email in your .NET project.
-- Step-by-step instructions on changing fonts during the conversion process.
-- Practical applications and tips for optimizing performance.
+- كيفية تحويل ملفات EML إلى تنسيق MHT باستخدام نمط الخط المخصص.
+- إعداد وتفعيل Aspose.Email في مشروع .NET الخاص بك.
+- تعليمات خطوة بخطوة حول تغيير الخطوط أثناء عملية التحويل.
+- تطبيقات عملية ونصائح لتحسين الأداء.
 
-Let's explore how you can enhance email file handling capabilities using Aspose.Email for .NET.
+دعنا نستكشف كيفية تحسين قدرات التعامل مع ملفات البريد الإلكتروني باستخدام Aspose.Email لـ .NET.
 
 ### المتطلبات الأساسية
 قبل البدء، تأكد من أن لديك:
-- **مكتبة Aspose.Email لـ .NET**: Essential for working with email formats.
-- **.NET development environment**: Such as Visual Studio or any compatible IDE.
-- Basic knowledge of C# programming and file manipulation in .NET.
+- **مكتبة Aspose.Email لـ .NET**:ضروري للعمل مع تنسيقات البريد الإلكتروني.
+- **بيئة تطوير .NET**:مثل Visual Studio أو أي IDE متوافق.
+- المعرفة الأساسية ببرمجة C# ومعالجة الملفات في .NET.
 
 #### إعداد Aspose.Email لـ .NET
-To begin using Aspose.Email, add it to your project:
+لبدء استخدام Aspose.Email، أضفه إلى مشروعك:
 
 **استخدام .NET CLI:**
 ```bash
@@ -48,10 +48,10 @@ Install-Package Aspose.Email
 #### الحصول على الترخيص
 لاستخدام Aspose.Email، يمكنك:
 - احصل على **نسخة تجريبية مجانية** لاستكشاف الميزات.
-- Get a **رخصة مؤقتة** لإجراء اختبار موسع.
-- Purchase a full license for production use.
+- احصل على **رخصة مؤقتة** لإجراء اختبار موسع.
+- شراء ترخيص كامل للاستخدام الإنتاجي.
 
-يزور [شراء](https://purchase.aspose.com/buy) أو [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) pages for more details. Initialize the library as follows:
+يزور [شراء](https://purchase.aspose.com/buy) أو [نسخة تجريبية مجانية](https://releases.aspose.com/email/net/) للمزيد من التفاصيل، يُرجى زيارة الصفحات التالية. فعّل المكتبة كما يلي:
 
 ```csharp
 var license = new License();
@@ -59,10 +59,10 @@ license.SetLicense("Aspose.Email.lic");
 ```
 
 ### دليل التنفيذ
-This section guides you through changing fonts during EML to MHT conversion.
+يرشدك هذا القسم خلال عملية تغيير الخطوط أثناء تحويل EML إلى MHT.
 
-#### Step 1: Set Up Directory Paths
-Define paths for your input and output files:
+#### الخطوة 1: إعداد مسارات الدليل
+قم بتحديد المسارات لملفات الإدخال والإخراج الخاصة بك:
 
 ```csharp
 string dataDir = Path.Combine(@"YOUR_DOCUMENT_DIRECTORY", "Data");
@@ -70,65 +70,65 @@ string inputFile = Path.Combine(dataDir, "input.eml");
 string outputFile = Path.Combine(dataDir, "output.mht");
 ```
 
-#### Step 2: Load the EML File
-Load your EML file into a `MailMessage` هدف:
+#### الخطوة 2: تحميل ملف EML
+قم بتحميل ملف EML الخاص بك إلى `MailMessage` هدف:
 
 ```csharp
 var message = MailMessage.Load(inputFile);
 ```
 
-Loading the email allows you to manipulate its content before conversion.
+يتيح لك تحميل البريد الإلكتروني إمكانية التحكم في محتواه قبل التحويل.
 
-#### Step 3: Customize Font Style
-Customize the HTML body of the email by changing font styles:
+#### الخطوة 3: تخصيص نمط الخط
+تخصيص نص HTML للبريد الإلكتروني عن طريق تغيير أنماط الخطوط:
 
 ```csharp
 message.HtmlBody = message.HtmlBody.Replace("font-family", "font-family: 'Your Custom Font', sans-serif;");
 ```
 
-This code snippet replaces instances of `font-family` with your desired style.
+يستبدل مقتطف التعليمات البرمجية هذا مثيلات `font-family` بالأسلوب الذي تريده.
 
-#### Step 4: Convert to MHT
-Save the modified email as an MHT file:
+#### الخطوة 4: التحويل إلى MHT
+حفظ البريد الإلكتروني المعدل كملف MHT:
 
 ```csharp
 var mhtSaveOptions = new MhtmlSaveOptions();
 message.Save(outputFile, mhtSaveOptions);
 ```
 
-ال `MhtmlSaveOptions` class allows for additional configurations if needed.
+ال `MhtmlSaveOptions` تسمح الفئة بإجراء تكوينات إضافية إذا لزم الأمر.
 
 ### التطبيقات العملية
-1. **Email Branding**: Customize emails to match your brand's visual identity.
-2. **Legal Documentation**: Ensure consistent font usage in legal communications stored as MHT files.
-3. **الحملات التسويقية**: Enhance readability and appeal of promotional content.
+1. **العلامة التجارية للبريد الإلكتروني**:قم بتخصيص رسائل البريد الإلكتروني لتتناسب مع الهوية البصرية لعلامتك التجارية.
+2. **الوثائق القانونية**:تأكد من استخدام الخط بشكل متسق في الاتصالات القانونية المخزنة كملفات MHT.
+3. **الحملات التسويقية**:تعزيز قابلية القراءة وجاذبية المحتوى الترويجي.
 
 ### اعتبارات الأداء
-- **تحسين استخدام الموارد**: Compress images within emails before conversion to limit file size.
+- **تحسين استخدام الموارد**:قم بضغط الصور الموجودة داخل رسائل البريد الإلكتروني قبل التحويل للحد من حجم الملف.
 - **إدارة الذاكرة**:التخلص من `MailMessage` الأشياء بشكل صحيح لتحرير الموارد.
 
 ### خاتمة
-By following this guide, you've learned how to customize fonts during EML to MHT conversion using Aspose.Email for .NET. This capability allows greater customization and consistency across communications.
+باتباع هذا الدليل، ستتعلم كيفية تخصيص الخطوط أثناء تحويل EML إلى MHT باستخدام Aspose.Email لـ .NET. تتيح هذه الميزة تخصيصًا واتساقًا أكبر في جميع عمليات الاتصال.
 
 ### الخطوات التالية
-Explore more features of Aspose.Email by visiting their [التوثيق](https://reference.aspose.com/email/net/) or trying out other file format conversions to enhance your applications further.
+استكشف المزيد من ميزات Aspose.Email من خلال زيارة موقعهم [التوثيق](https://reference.aspose.com/email/net/) أو تجربة تحويلات تنسيقات الملفات الأخرى لتحسين تطبيقاتك بشكل أكبر.
 
 ### قسم الأسئلة الشائعة
-1. **What if the font isn't applying correctly?**
-   - Ensure that the custom font is available on all viewing systems.
-2. **Can I change fonts for attachments as well?**
-   - This feature applies to email body text; additional processing may be required for attachments.
-3. **How do I handle multiple EML files at once?**
-   - Implement a loop to process each file individually using the steps outlined above.
-4. **Is there support for different font styles (bold, italic)?**
-   - Yes, modify HTML tags within `HtmlBody` to include style attributes like `<b>` أو `<i>`.
-5. **What are the limitations of MHT format?**
-   - MHT files are static and may not support interactive elements present in modern web standards.
+1. **ماذا لو لم يتم تطبيق الخط بشكل صحيح؟**
+   - تأكد من أن الخط المخصص متوفر على كافة أنظمة العرض.
+2. **هل يمكنني تغيير الخطوط للمرفقات أيضًا؟**
+   - تنطبق هذه الميزة على نص البريد الإلكتروني؛ وقد تكون هناك حاجة إلى معالجة إضافية للمرفقات.
+3. **كيف يمكنني التعامل مع ملفات EML متعددة في وقت واحد؟**
+   - قم بتنفيذ حلقة لمعالجة كل ملف على حدة باستخدام الخطوات الموضحة أعلاه.
+4. **هل هناك دعم لأنماط الخطوط المختلفة (غامق، مائل)؟**
+   - نعم، تعديل علامات HTML داخل `HtmlBody` لتضمين سمات النمط مثل `<b>` أو `<i>`.
+5. **ما هي حدود صيغة MHT؟**
+   - ملفات MHT ثابتة وقد لا تدعم العناصر التفاعلية الموجودة في معايير الويب الحديثة.
 
 ### موارد
 - **التوثيق**: [توثيق Aspose.Email](https://reference.aspose.com/email/net/)
 - **تحميل**: [تنزيلات Aspose.Email](https://releases.aspose.com/email/net/)
-- **الشراء والترخيص**: [Aspose.Purchase Page](https://purchase.aspose.com/buy)
+- **الشراء والترخيص**: [صفحة شراء Aspose](https://purchase.aspose.com/buy)
 - **نسخة تجريبية مجانية**: [جرب Aspose مجانًا](https://releases.aspose.com/email/net/)
 - **منتدى الدعم**: [دعم البريد الإلكتروني لـ Aspose](https://forum.aspose.com/c/email/10)
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to implement real-time email notifications using Aspose.Email for Java. Streamline your application's efficiency with our detailed guide on IMAP idle monitoring and synchronization."
-"title": "Mastering IMAP Idle Monitoring in Java with Aspose.Email&#58; A Comprehensive Guide"
+"description": "تعرّف على كيفية تنفيذ إشعارات البريد الإلكتروني الفورية باستخدام Aspose.Email لجافا. حسّن كفاءة تطبيقك من خلال دليلنا المفصل حول مراقبة ومزامنة IMAP الخامل."
+"title": "إتقان مراقبة IMAP الخاملة في Java باستخدام Aspose.Email - دليل شامل"
 "url": "/ar/java/imap-client-operations/aspose-email-java-imap-idle-monitoring-synchronization/"
 "weight": 1
 ---
@@ -11,35 +11,35 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering IMAP Idle Monitoring in Java with Aspose.Email
+# إتقان مراقبة IMAP الخاملة في Java باستخدام Aspose.Email
 
 ## مقدمة
-Are you looking to enhance your email management system with real-time notifications when new emails arrive? With **Aspose.Email for Java**, set up an efficient IMAP idle monitoring mechanism that connects you instantly to incoming messages. This comprehensive guide will show you how to implement IMAP Idle Monitoring and Email Synchronization using Aspose.Email's robust Java library.
+هل ترغب في تحسين نظام إدارة البريد الإلكتروني لديك من خلال إشعارات فورية عند وصول رسائل بريد إلكتروني جديدة؟ مع **Aspose.Email لـ Java**أنشئ آلية فعّالة لمراقبة IMAP الخاملة، تُمكّنك من الوصول الفوري إلى الرسائل الواردة. سيُوضّح لك هذا الدليل الشامل كيفية تنفيذ مراقبة IMAP الخاملة ومزامنة البريد الإلكتروني باستخدام مكتبة جافا القوية من Aspose.Email.
 
 **ما سوف تتعلمه:**
-- Setting up IMAP Idle Monitoring in Java
-- Utilizing semaphores for thread synchronization during monitoring
-- Sending emails with the SmtpClient feature of Aspose.Email
+- إعداد مراقبة الخمول لـ IMAP في Java
+- استخدام إشارات المرور لمزامنة الخيوط أثناء المراقبة
+- إرسال رسائل البريد الإلكتروني باستخدام ميزة SmtpClient في Aspose.Email
 
-This guide will walk you through each step, ensuring a smooth and efficient implementation. Let's get started!
+سيرشدك هذا الدليل خلال كل خطوة، لضمان تنفيذ سلس وفعال. هيا بنا!
 
 ## المتطلبات الأساسية (H2)
-Before diving into the code, ensure your environment is prepared with necessary tools and libraries:
+قبل الغوص في الكود، تأكد من أن بيئتك مجهزة بالأدوات والمكتبات الضرورية:
 
 ### المكتبات المطلوبة
-- **Aspose.Email for Java**: Version 25.4 or later.
-- **Java Development Kit (JDK)**: JDK 16 or higher installed.
+- **Aspose.Email لـ Java**:الإصدار 25.4 أو أحدث.
+- **مجموعة تطوير جافا (JDK)**:تم تثبيت JDK 16 أو أعلى.
 
 ### متطلبات إعداد البيئة
-- A Java IDE such as IntelliJ IDEA, Eclipse, or NetBeans for writing and testing your code.
-- Access to an IMAP server with credentials for setting up the ImapClient.
+- بيئة تطوير متكاملة Java مثل IntelliJ IDEA، أو Eclipse، أو NetBeans لكتابة واختبار الكود الخاص بك.
+- الوصول إلى خادم IMAP باستخدام بيانات الاعتماد لإعداد ImapClient.
 
 ### متطلبات المعرفة
-- Basic understanding of Java programming concepts.
-- Familiarity with email protocols like IMAP and SMTP is beneficial but not mandatory.
+- فهم أساسي لمفاهيم برمجة جافا.
+- إن المعرفة ببروتوكولات البريد الإلكتروني مثل IMAP وSMTP مفيدة ولكنها ليست إلزامية.
 
-## Setting Up Aspose.Email for Java (H2)
-To begin using Aspose.Email, set it up in your development environment. If you're using Maven, include the following dependency in your `pom.xml`:
+## إعداد Aspose.Email لـ Java (H2)
+لبدء استخدام Aspose.Email، قم بإعداده في بيئة التطوير الخاصة بك. إذا كنت تستخدم Maven، فأضف التبعية التالية إلى: `pom.xml`:
 
 ```xml
 <dependency>
@@ -51,21 +51,21 @@ To begin using Aspose.Email, set it up in your development environment. If you'r
 ```
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية**: Start with a free trial to explore Aspose.Email features.
-2. **رخصة مؤقتة**: Apply for a temporary license for extended access during development.
-3. **شراء**: Consider purchasing a license for long-term use.
+1. **نسخة تجريبية مجانية**:ابدأ بالتجربة المجانية لاستكشاف ميزات Aspose.Email.
+2. **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت للوصول الموسع أثناء التطوير.
+3. **شراء**:فكر في شراء ترخيص للاستخدام على المدى الطويل.
 
 ### التهيئة والإعداد الأساسي
-Ensure you have initialized your ImapClient or SmtpClient with the correct server details and credentials to authenticate requests for sending emails or monitoring incoming ones.
+تأكد من أنك قمت بتهيئة ImapClient أو SmtpClient باستخدام تفاصيل الخادم وبيانات الاعتماد الصحيحة للمصادقة على طلبات إرسال رسائل البريد الإلكتروني أو مراقبة الرسائل الواردة.
 
 ## دليل التنفيذ (H2)
-We'll break down the implementation into three main features: IMAP Idle Monitoring Setup, Semaphore Synchronization, and Sending Emails with SmtpClient.
+سنقوم بتقسيم التنفيذ إلى ثلاث ميزات رئيسية: إعداد مراقبة الخمول لـ IMAP، ومزامنة الإشارة، وإرسال رسائل البريد الإلكتروني باستخدام SmtpClient.
 
-### Feature 1: IMAP Idle Monitoring Setup
+### الميزة 1: إعداد مراقبة الخمول لـ IMAP
 #### ملخص
-This feature allows setting up an `ImapClient` to monitor new emails using the IMAP idle command, essential for real-time email notifications.
+تتيح لك هذه الميزة إعداد `ImapClient` لمراقبة رسائل البريد الإلكتروني الجديدة باستخدام أمر IMAP idle، وهو أمر ضروري لإشعارات البريد الإلكتروني في الوقت الفعلي.
 
-#### Setting Up ImapClient (H3)
+#### إعداد ImapClient (H3)
 ```java
 import com.aspose.email.ImapClient;
 import com.aspose.email.ImapMonitoringEventArgs;
@@ -73,21 +73,21 @@ import com.aspose.email.ImapMonitoringEventHandler;
 
 public class ImapIdleMonitoringSetup {
     public static void main(String[] args) {
-        // Initialize ImapClient with server details and credentials
+        // قم بتهيئة ImapClient باستخدام تفاصيل الخادم وبيانات الاعتماد
         final ImapClient imapClient = new ImapClient("exchange.aspose.com", "username", "password");
         
         try {
-            // Define event handler for monitoring new messages
+            // تحديد معالج الأحداث لمراقبة الرسائل الجديدة
             final ImapMonitoringEventArgs[] eventArgs = { null };
             
             imapClient.startMonitoring(new ImapMonitoringEventHandler() {
                 public void invoke(Object sender, ImapMonitoringEventArgs e) {
-                    // Store the event arguments when a message is received
+                    // تخزين حجج الحدث عند استلام رسالة
                     eventArgs[0] = e;
                 }
             });
         } finally {
-            // Ensure resources are released by disposing of the client
+            // تأكد من تحرير الموارد عن طريق التخلص من العميل
             if (imapClient != null)
                 imapClient.dispose();
         }
@@ -95,68 +95,68 @@ public class ImapIdleMonitoringSetup {
 }
 ```
 #### خيارات تكوين المفاتيح
-- **Server Details**: Replace "exchange.aspose.com", "username", and "password" with your actual server details.
-- **Event Handler**: The handler captures new email events, allowing you to process them as needed.
+- **تفاصيل الخادم**:استبدل "exchange.aspose.com"، و"username"، و"password" بتفاصيل الخادم الفعلية لديك.
+- **معالج الأحداث**:يقوم المعالج بالتقاط أحداث البريد الإلكتروني الجديدة، مما يسمح لك بمعالجتها حسب الحاجة.
 
 #### نصائح استكشاف الأخطاء وإصلاحها
-- Ensure your server supports the IMAP idle command.
-- Verify network connectivity if monitoring fails to start.
+- تأكد من أن الخادم الخاص بك يدعم أمر IMAP idle.
+- تحقق من اتصال الشبكة إذا فشل بدء المراقبة.
 
-### Feature 2: Semaphore for Synchronization
+### الميزة 2: إشارة ضوئية للمزامنة
 #### ملخص
-Using a semaphore ensures only one thread accesses a critical section of code at a time, crucial during email synchronization tasks.
+يضمن استخدام إشارة المرور وصول مؤشر ترابط واحد فقط إلى قسم مهم من التعليمات البرمجية في كل مرة، وهو أمر بالغ الأهمية أثناء مهام مزامنة البريد الإلكتروني.
 
-#### Implementing Semaphore (H3)
+#### تنفيذ الإشارة الضوئية (H3)
 ```java
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 public class SemaphoreSynchronization {
     public static void main(String[] args) throws InterruptedException {
-        // Create a semaphore with an initial permit count of 1
+        // إنشاء إشارة ضوئية بعدد تصاريح أولي قدره 1
         final Semaphore semaphore = new Semaphore(1);
         
         try {
-            // Acquire the semaphore to ensure exclusive access
+            // احصل على إشارة المرور لضمان الوصول الحصري
             semaphore.acquire();
             
-            // Simulate waiting for an event (e.g., email arrival)
+            // محاكاة انتظار حدث ما (على سبيل المثال، وصول البريد الإلكتروني)
             Thread.sleep(5000);
 
-            // Release a permit, allowing other threads to proceed
+            // إصدار تصريح، مما يسمح للخيوط الأخرى بالمضي قدمًا
             semaphore.release();
         } finally {
-            // Ensure resources are released by disposing of the semaphore if necessary
+            // تأكد من تحرير الموارد عن طريق التخلص من الإشارة إذا لزم الأمر
         }
     }
 }
 ```
 #### خيارات تكوين المفاتيح
-- **Initial Permit Count**: Adjust this based on how many threads you want to allow concurrently.
+- **عدد التصاريح الأولية**:قم بتعديل هذا استنادًا إلى عدد الخيوط التي تريد السماح بها في وقت واحد.
 
-### Feature 3: Sending Emails with SmtpClient
+### الميزة 3: إرسال رسائل البريد الإلكتروني باستخدام SmtpClient
 #### ملخص
-ال `SmtpClient` feature enables sending emails programmatically, useful for notifications or automated responses.
+ال `SmtpClient` تتيح هذه الميزة إرسال رسائل البريد الإلكتروني برمجيًا، وهي مفيدة للإشعارات أو الردود التلقائية.
 
-#### Setting Up SmtpClient (H3)
+#### إعداد SmtpClient (H3)
 ```java
 import com.aspose.email.SmtpClient;
 import com.aspose.email.MailMessage;
 
 public class SendEmails {
     public static void main(String[] args) {
-        // Initialize SmtpClient with server details and credentials
+        // قم بتهيئة SmtpClient باستخدام تفاصيل الخادم وبيانات الاعتماد
         final SmtpClient smtpClient = new SmtpClient("exchange.aspose.com", "username", "password");
         
         try {
-            // Create a new email message
+            // إنشاء رسالة بريد إلكتروني جديدة
             MailMessage mailMessage = new MailMessage("from@domain.com", "to@domain.com",
                                                     "EMAILNET-34875", "Support for IMAP idle command");
             
             // أرسل البريد الإلكتروني
             smtpClient.send(mailMessage);
         } finally {
-            // Ensure resources are released by disposing of the client
+            // تأكد من تحرير الموارد عن طريق التخلص من العميل
             if (smtpClient != null)
                 smtpClient.dispose();
         }
@@ -164,28 +164,28 @@ public class SendEmails {
 }
 ```
 #### خيارات تكوين المفاتيح
-- **Server Details**: Customize with your SMTP server's details.
-- **Email Content**: Modify the `MailMessage` parameters to suit your needs.
+- **تفاصيل الخادم**:قم بالتخصيص باستخدام تفاصيل خادم SMTP الخاص بك.
+- **محتوى البريد الإلكتروني**:تعديل `MailMessage` المعلمات التي تناسب احتياجاتك.
 
 ## التطبيقات العملية (H2)
-Implementing these features can significantly enhance various applications:
-1. **أنظمة دعم العملاء**: Real-time email notifications help support teams respond promptly.
-2. **Automated Notification Services**: Use SMTP for sending alerts or updates automatically.
-3. **حلول أرشفة البريد الإلكتروني**: Monitor and archive emails as they arrive using IMAP.
+إن تنفيذ هذه الميزات قد يؤدي إلى تحسين التطبيقات المختلفة بشكل كبير:
+1. **أنظمة دعم العملاء**:تساعد إشعارات البريد الإلكتروني في الوقت الفعلي فرق الدعم على الاستجابة بسرعة.
+2. **خدمات الإشعارات الآلية**:استخدم SMTP لإرسال التنبيهات أو التحديثات تلقائيًا.
+3. **حلول أرشفة البريد الإلكتروني**:راقب رسائل البريد الإلكتروني وأرشفها فور وصولها باستخدام IMAP.
 
 ## اعتبارات الأداء (H2)
-- **Optimize Thread Usage**: Use semaphores wisely to manage thread access efficiently.
-- **إدارة الموارد**: Always dispose of clients properly to free up resources.
-- **إدارة الذاكرة**: Regularly monitor Java memory usage, especially in applications handling large volumes of emails.
+- **تحسين استخدام الخيوط**:استخدم إشارات المرور بحكمة لإدارة الوصول إلى الخيوط بكفاءة.
+- **إدارة الموارد**:يجب عليك دائمًا التخلص من العملاء بشكل صحيح لتحرير الموارد.
+- **إدارة الذاكرة**:قم بمراقبة استخدام ذاكرة Java بانتظام، وخاصة في التطبيقات التي تتعامل مع كميات كبيرة من رسائل البريد الإلكتروني.
 
 ## خاتمة
-You've now mastered setting up IMAP Idle Monitoring and Email Synchronization using Aspose.Email for Java. These capabilities can significantly enhance your application's responsiveness and efficiency when dealing with email communications.
+لقد أتقنتَ الآن إعداد مراقبة IMAP الخاملة ومزامنة البريد الإلكتروني باستخدام Aspose.Email لـ Java. تُحسّن هذه الإمكانيات استجابة تطبيقك وكفاءته بشكل ملحوظ عند التعامل مع رسائل البريد الإلكتروني.
 
 **الخطوات التالية:**
 - جرّب الميزات الإضافية التي يقدمها Aspose.Email.
-- Explore integration possibilities with other systems or services.
+- استكشاف إمكانيات التكامل مع الأنظمة أو الخدمات الأخرى.
 
-Ready to take your Java applications to the next level? Implement these solutions today!
+هل أنت مستعد لتطوير تطبيقات جافا لديك؟ طبّق هذه الحلول اليوم!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-30"
-"description": "Learn how to effectively manage email data using Aspose.Email for .NET by loading PST files and customizing MAPI properties. Enhance your .NET applications today."
-"title": "Master Email Management&#58; Load PST Files and Customize MAPI Properties with Aspose.Email .NET"
+"description": "تعرّف على كيفية إدارة بيانات البريد الإلكتروني بفعالية باستخدام Aspose.Email لـ .NET من خلال تحميل ملفات PST وتخصيص خصائص MAPI. حسّن تطبيقات .NET لديك اليوم."
+"title": "إدارة البريد الإلكتروني الرئيسية - تحميل ملفات PST وتخصيص خصائص MAPI باستخدام Aspose.Email .NET"
 "url": "/ar/net/email-message-operations/aspose-email-net-load-pst-customize-mapi-properties/"
 "weight": 1
 ---
@@ -11,38 +11,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Email Management: Load PST Files and Customize MAPI Properties with Aspose.Email .NET
+# إدارة البريد الإلكتروني الرئيسية: تحميل ملفات PST وتخصيص خصائص MAPI باستخدام Aspose.Email .NET
 
 ## مقدمة
 
-Are you looking to streamline email management, particularly when handling large PST files or needing custom MAPI property configurations? With Aspose.Email for .NET, these tasks become straightforward. This tutorial will guide you through loading PST files and customizing MAPI message properties using Aspose.Email, ensuring seamless integration into your .NET applications.
+هل ترغب في تبسيط إدارة البريد الإلكتروني، خاصةً عند التعامل مع ملفات PST كبيرة الحجم أو عند الحاجة إلى تكوين خصائص MAPI مخصصة؟ مع Aspose.Email لـ .NET، تُصبح هذه المهام سهلة وبسيطة. سيرشدك هذا البرنامج التعليمي خلال تحميل ملفات PST وتخصيص خصائص رسائل MAPI باستخدام Aspose.Email، مما يضمن دمجًا سلسًا في تطبيقات .NET.
 
 **ما سوف تتعلمه:**
-- Loading a PST file to access the Inbox folder.
-- Creating and adding custom properties to MAPI messages.
-- Setting up Aspose.Email for .NET in various development environments.
+- تحميل ملف PST للوصول إلى مجلد البريد الوارد.
+- إنشاء خصائص مخصصة وإضافتها إلى رسائل MAPI.
+- إعداد Aspose.Email لـ .NET في بيئات تطوير مختلفة.
 
-Let's begin by setting up the prerequisites before diving into implementation.
+لنبدأ بإعداد المتطلبات الأساسية قبل الغوص في التنفيذ.
 
 ## المتطلبات الأساسية
 
-Ensure your environment is ready with all necessary dependencies:
+تأكد من أن بيئتك جاهزة مع كل التبعيات الضرورية:
 
 ### المكتبات المطلوبة
-- **Aspose.Email لـ .NET**: Essential for working with PST files and MAPI properties. Ensure you have version 21.x or later.
+- **Aspose.Email لـ .NET**ضروري للعمل مع ملفات PST وخصائص MAPI. تأكد من تثبيت الإصدار 21.x أو أحدث.
 
 ### إعداد البيئة
-- **أدوات التطوير**: Visual Studio (2017 or later) should be installed on your machine.
+- **أدوات التطوير**:يجب تثبيت Visual Studio (2017 أو أحدث) على جهازك.
 
 ### متطلبات المعرفة
 - فهم أساسي لبرمجة C#.
-- Familiarity with .NET development practices.
+- المعرفة بممارسات تطوير .NET.
 
-With the prerequisites covered, let's proceed to set up Aspose.Email for .NET in your project.
+بعد تغطية المتطلبات الأساسية، دعنا ننتقل إلى إعداد Aspose.Email لـ .NET في مشروعك.
 
 ## إعداد Aspose.Email لـ .NET
 
-To utilize Aspose.Email functionalities, add it to your .NET project as follows:
+للاستفادة من وظائف Aspose.Email، قم بإضافتها إلى مشروع .NET الخاص بك على النحو التالي:
 
 ### خيارات التثبيت
 - **استخدام .NET CLI:**
@@ -55,12 +55,12 @@ To utilize Aspose.Email functionalities, add it to your .NET project as follows:
   Install-Package Aspose.Email
   ```
 
-- **واجهة مستخدم مدير الحزم NuGet**: Search for "Aspose.Email" and install the latest version directly through the interface.
+- **واجهة مستخدم مدير الحزم NuGet**:ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث مباشرةً من خلال الواجهة.
 
 ### خطوات الحصول على الترخيص
-To access all features of Aspose.Email, obtain a license:
-- **نسخة تجريبية مجانية**: Test with a temporary license available [هنا](https://purchase.aspose.com/temporary-license/).
-- **شراء**: For ongoing use, purchase a license through the [موقع Aspose](https://purchase.aspose.com/buy).
+للوصول إلى كافة ميزات Aspose.Email، احصل على ترخيص:
+- **نسخة تجريبية مجانية**:اختبار مع ترخيص مؤقت متاح [هنا](https://purchase.aspose.com/temporary-license/).
+- **شراء**:للاستخدام المستمر، قم بشراء ترخيص من خلال [موقع Aspose](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 بمجرد التثبيت والترخيص، قم بتشغيل Aspose.Email في مشروعك:
@@ -77,14 +77,14 @@ class Program
 ```
 
 ## دليل التنفيذ
-Now that everything is set up, let's implement the key features.
+الآن بعد أن تم إعداد كل شيء، دعنا ننفذ الميزات الرئيسية.
 
-### Feature 1: Load PST and Access Inbox Folder
-This feature demonstrates how to load a PST file using Aspose.Email for .NET and access its 'Inbox' folder.
+### الميزة 1: تحميل ملف PST والوصول إلى مجلد البريد الوارد
+توضح هذه الميزة كيفية تحميل ملف PST باستخدام Aspose.Email لـ .NET والوصول إلى مجلد "Inbox" الخاص به.
 
 #### التنفيذ خطوة بخطوة
 **ملخص:**
-Loading a PST file allows you to interact with email data programmatically. Here, we'll focus on accessing the Inbox folder.
+يتيح لك تحميل ملف PST التفاعل برمجيًا مع بيانات البريد الإلكتروني. سنركز هنا على الوصول إلى مجلد البريد الوارد.
 
 ```csharp
 using System;
@@ -97,40 +97,40 @@ class Program
         string dataDir = "YOUR_DOCUMENT_DIRECTORY\Outlook.pst";
         using (PersonalStorage personalStorage = PersonalStorage.FromFile(dataDir))
         {
-            // Access the 'Inbox' folder within the PST file
+            // الوصول إلى مجلد "البريد الوارد" داخل ملف PST
             FolderInfo testFolder = personalStorage.RootFolder.GetSubFolder("Inbox");
         }
     }
 }
 ```
 **توضيح:**
-- `PersonalStorage.FromFile`: Loads the PST file from the specified directory.
-- `GetSubFolder("Inbox")`: Retrieves the Inbox folder for further operations.
+- `PersonalStorage.FromFile`:يقوم بتحميل ملف PST من الدليل المحدد.
+- `GetSubFolder("Inbox")`:استرجاع مجلد البريد الوارد لإجراء المزيد من العمليات.
 
-### Feature 2: Create and Add Custom Properties to MAPI Message
-Customizing MAPI properties allows tailored email metadata management. This feature demonstrates creating and adding custom properties to messages.
+### الميزة 2: إنشاء خصائص مخصصة وإضافتها إلى رسالة MAPI
+يتيح تخصيص خصائص MAPI إدارة بيانات تعريف البريد الإلكتروني بشكل مُخصص. توضح هذه الميزة إنشاء خصائص مخصصة وإضافتها إلى الرسائل.
 
 #### التنفيذ خطوة بخطوة
 **ملخص:**
-Creating custom properties lets you store additional information with your emails, enhancing data organization and retrieval.
+يتيح لك إنشاء خصائص مخصصة تخزين معلومات إضافية مع رسائل البريد الإلكتروني الخاصة بك، مما يعزز تنظيم البيانات واسترجاعها.
 
 ```csharp
 using System;
 using System.Text;
 using Aspose.Email.Mapi;
 
-// Define custom properties with various types
+// تعريف خصائص مخصصة مع أنواع مختلفة
 class Program
 {
     static void Main(string[] args)
     {
         MapiPropertyCollection newProperties = new MapiPropertyCollection();
 
-        // Add a standard property (example: organization email address)
+        // إضافة خاصية قياسية (مثال: عنوان البريد الإلكتروني للمؤسسة)
         MapiProperty property = new MapiProperty(MapiPropertyTag.PR_ORG_EMAIL_ADDR_W, Encoding.Unicode.GetBytes("test_address@org.com"));
         newProperties.Add(property.Tag, property);
 
-        // Create and add custom named properties
+        // إنشاء وإضافة خصائص مخصصة باسماء
         MapiProperty namedProperty1 = new MapiNamedProperty(GenerateNamedPropertyTag(0, MapiPropertyType.PT_LONG), "ITEM_ID\
 
 {{< /blocks/products/pf/tutorial-page-section >}}

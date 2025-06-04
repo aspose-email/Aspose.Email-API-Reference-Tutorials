@@ -1,7 +1,7 @@
 ---
 "date": "2025-05-29"
-"description": "Learn how to create and save calendar items using Aspose.Email for Java. Automate scheduling, add reminders, and handle MAPI messages efficiently."
-"title": "Master Creating and Saving Calendar Items with Aspose.Email for Java"
+"description": "تعرّف على كيفية إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email لجافا. أتمتة الجدولة وإضافة التذكيرات ومعالجة رسائل MAPI بكفاءة."
+"title": "إتقان إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email لـ Java"
 "url": "/ar/java/calendar-appointments/create-save-calendar-items-aspose-email-java/"
 "weight": 1
 ---
@@ -11,29 +11,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Creation and Saving of Calendar Items with Aspose.Email for Java
+# إتقان إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email لـ Java
 
-In today's fast-paced world, managing appointments efficiently is crucial for both personal and professional productivity. Imagine a tool that seamlessly integrates appointment creation and saving capabilities into your Java applications—Aspose.Email for Java brings this functionality to life. This tutorial will guide you through creating and saving calendar items using Aspose.Email for Java, enabling you to automate and streamline your scheduling process.
+في عالمنا المتسارع، تُعدّ إدارة المواعيد بكفاءة أمرًا بالغ الأهمية للإنتاجية الشخصية والمهنية. تخيّل أداةً تُدمج بسلاسة إمكانيات إنشاء المواعيد وحفظها في تطبيقات جافا - يُضفي Aspose.Email for Java هذه الميزة حيويةً. سيُرشدك هذا البرنامج التعليمي إلى كيفية إنشاء عناصر التقويم وحفظها باستخدام Aspose.Email for Java، مما يُمكّنك من أتمتة عملية جدولة مواعيدك وتبسيطها.
 
 **ما سوف تتعلمه:**
-- How to create calendar items programmatically.
-- Steps to save appointments in ICS format.
-- Adding display reminders to your calendar events.
-- Integrating audio reminders for enhanced notifications.
-- Retrieving recipient statuses from MAPI messages.
+- كيفية إنشاء عناصر التقويم برمجيًا.
+- خطوات حفظ المواعيد بتنسيق ICS.
+- إضافة تذكيرات العرض إلى أحداث التقويم الخاصة بك.
+- دمج التذكيرات الصوتية لتحسين الإشعارات.
+- استرجاع حالات المستلمين من رسائل MAPI.
 
-Let's dive into the prerequisites and get started!
+دعونا نتعمق في المتطلبات الأساسية ونبدأ!
 
 ## المتطلبات الأساسية
 
 قبل أن تبدأ، تأكد من أن لديك ما يلي:
-- **Java Development Kit (JDK):** Version 8 or higher installed on your machine.
-- **Maven:** For managing dependencies in your Java project.
-- **Aspose.Email for Java Library:** You will need version 25.4 of this library.
+- **مجموعة تطوير Java (JDK):** تم تثبيت الإصدار 8 أو أعلى على جهازك.
+- **مافن:** لإدارة التبعيات في مشروع Java الخاص بك.
+- **Aspose.Email لمكتبة Java:** سوف تحتاج إلى الإصدار 25.4 من هذه المكتبة.
 
 ### إعداد البيئة
 
-To include Aspose.Email in your Maven project, add the following dependency to your `pom.xml`:
+لتضمين Aspose.Email في مشروع Maven الخاص بك، أضف التبعية التالية إلى `pom.xml`:
 
 ```xml
 <dependency>
@@ -46,15 +46,15 @@ To include Aspose.Email in your Maven project, add the following dependency to y
 
 ### الحصول على الترخيص
 
-Aspose.Email offers a free trial license, which you can obtain to explore its full capabilities without limitations. You have the option to purchase a subscription or request a temporary license for testing purposes.
+يقدم Aspose.Email ترخيصًا تجريبيًا مجانيًا، يمكنك الحصول عليه لاستكشاف كامل إمكانياته دون قيود. لديك خيار شراء اشتراك أو طلب ترخيص مؤقت لأغراض الاختبار.
 
-## Setting Up Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-To start using Aspose.Email for Java, follow these steps:
+لبدء استخدام Aspose.Email لـ Java، اتبع الخطوات التالية:
 
-1. **Add Dependency:** تأكد من `pom.xml` includes the necessary dependency as shown above.
-2. **Download and Include JAR:** Alternatively, download the JAR file from [تنزيلات Aspose](https://releases.aspose.com/email/java/) and include it in your project's classpath.
-3. **License Setup:** If you have a license file, initialize it in your code to unlock full features:
+1. **إضافة التبعية:** تأكد من `pom.xml` يتضمن التبعيات الضرورية كما هو موضح أعلاه.
+2. **تنزيل ملف JAR وإدراجه:** بدلاً من ذلك، قم بتنزيل ملف JAR من [تنزيلات Aspose](https://releases.aspose.com/email/java/) وقم بإدراجه في مسار مشروعك.
+3. **إعداد الترخيص:** إذا كان لديك ملف ترخيص، قم بتهيئته في الكود الخاص بك لفتح الميزات الكاملة:
 
    ```java
    License license = new License();
@@ -63,24 +63,24 @@ To start using Aspose.Email for Java, follow these steps:
 
 ## دليل التنفيذ
 
-We'll break down the implementation into several key features.
+سنقوم بتقسيم التنفيذ إلى عدة ميزات رئيسية.
 
-### Creating and Saving Calendar Items
+### إنشاء عناصر التقويم وحفظها
 
 #### ملخص
-This feature demonstrates how to programmatically create a calendar item, such as an appointment, and save it in ICS format. This is ideal for integrating scheduling functionality into your Java applications.
+توضح هذه الميزة كيفية إنشاء عنصر تقويم برمجيًا، مثل موعد، وحفظه بتنسيق ICS. يُعد هذا مثاليًا لدمج وظائف الجدولة في تطبيقات Java.
 
 #### التنفيذ خطوة بخطوة
 
-1. **Initialize MapiCalendar:**
-   ابدأ بإنشاء مثيل لـ `MapiCalendar` to represent the appointment.
+1. **تهيئة MapiCalendar:**
+   ابدأ بإنشاء مثيل لـ `MapiCalendar` لتمثيل التعيين.
 
    ```java
    MapiCalendar appointment = new MapiCalendar();
    ```
 
-2. **Set Appointment Details:**
-   Define the location, subject, and body for your appointment.
+2. **تفاصيل تحديد الموعد:**
+   قم بتحديد الموقع والموضوع والنص لموعدك.
 
    ```java
    appointment.setLocation("LAKE ARGYLE WA 6743");
@@ -88,24 +88,24 @@ This feature demonstrates how to programmatically create a calendar item, such a
    appointment.setBody("This is a very important meeting");
    ```
 
-3. **Define Start and End Dates:**
-   يستخدم `GregorianCalendar` to set the start and end dates for your appointment.
+3. **تحديد تواريخ البدء والانتهاء:**
+   يستخدم `GregorianCalendar` لتعيين تاريخي البداية والنهاية لموعدك.
 
    ```java
    Calendar cal = GregorianCalendar.getInstance();
-   cal.set(2016, 10, 2); // Month is zero-based.
+   cal.set(2016, 10, 2); // الشهر يعتمد على الصفر.
    Date startDate = cal.getTime();
 
    cal.setTime(startDate);
-   cal.add(Calendar.DAY_OF_MONTH, 1); // End date is one day later.
+   cal.add(Calendar.DAY_OF_MONTH, 1); // تاريخ الانتهاء هو يوم واحد لاحقًا.
    Date endDate = cal.getTime();
 
    appointment.setStartDate(startDate);
    appointment.setEndDate(endDate);
    ```
 
-4. **Save the Appointment:**
-   Save your calendar item in ICS format to a specified directory.
+4. **احفظ الموعد:**
+   احفظ عنصر التقويم الخاص بك بتنسيق ICS في الدليل المحدد.
 
    ```java
    String dataDir = "YOUR_OUTPUT_DIRECTORY/";

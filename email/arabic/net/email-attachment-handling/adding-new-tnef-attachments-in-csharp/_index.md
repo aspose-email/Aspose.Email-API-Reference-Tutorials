@@ -1,8 +1,8 @@
 ---
-"description": "Learn how to add new TNEF attachments in C# using Aspose.Email for .NET. Step-by-step guide with code examples for seamless integration."
-"linktitle": "Adding New TNEF Attachments in C#"
-"second_title": "Aspose.Email .NET Email Processing API"
-"title": "Adding New TNEF Attachments in C#"
+"description": "تعرّف على كيفية إضافة مرفقات TNEF جديدة بلغة C# باستخدام Aspose.Email لـ .NET. دليل خطوة بخطوة مع أمثلة برمجية لتكامل سلس."
+"linktitle": "إضافة مرفقات TNEF جديدة في C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "إضافة مرفقات TNEF جديدة في C#"
 "url": "/ar/net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/"
 "weight": 12
 ---
@@ -13,63 +13,63 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Adding New TNEF Attachments in C#
+# إضافة مرفقات TNEF جديدة في C#
 
 
-## Introduction to TNEF Attachments and Aspose.Email for .NET
+## مقدمة إلى مرفقات TNEF و Aspose.Email لـ .NET
 
-TNEF (Transport Neutral Encapsulation Format) attachments are a proprietary format used by Microsoft Outlook to package rich text and attachments within emails. Aspose.Email for .NET is a powerful library that allows you to work with emails in various formats, including TNEF attachments, using C#.
+مرفقات TNEF (تنسيق التغليف المحايد للنقل) هي تنسيق خاص يستخدمه Microsoft Outlook لتغليف النصوص الغنية والمرفقات داخل رسائل البريد الإلكتروني. Aspose.Email لـ .NET هي مكتبة فعّالة تتيح لك التعامل مع رسائل البريد الإلكتروني بتنسيقات مختلفة، بما في ذلك مرفقات TNEF، باستخدام لغة C#.
 
-## Setting Up Your Development Environment
+## إعداد بيئة التطوير الخاصة بك
 
-Before we dive into coding, make sure you have a development environment set up. Install Visual Studio and create a new C# project.
+قبل التعمق في البرمجة، تأكد من إعداد بيئة التطوير لديك. ثبّت Visual Studio وأنشئ مشروع C# جديدًا.
 
-## Creating a New Project
+## إنشاء مشروع جديد
 
-Start by creating a new C# project in Visual Studio. Choose a suitable project name and location.
+ابدأ بإنشاء مشروع C# جديد في Visual Studio. اختر اسمًا وموقعًا مناسبين للمشروع.
 
-## Adding the Aspose.Email for .NET Library
+## إضافة مكتبة Aspose.Email لـ .NET
 
-To work with emails and TNEF attachments, we need to add the Aspose.Email for .NET library to our project. You can do this by using NuGet Package Manager in Visual Studio. Search for "Aspose.Email" and install the appropriate package.
+للعمل مع رسائل البريد الإلكتروني ومرفقات TNEF، نحتاج إلى إضافة مكتبة Aspose.Email لـ .NET إلى مشروعنا. يمكنك القيام بذلك باستخدام مدير الحزم NuGet في Visual Studio. ابحث عن "Aspose.Email" وثبّت الحزمة المناسبة.
 
-## Loading an Existing Email with TNEF Attachment
+## تحميل بريد إلكتروني موجود مع مرفق TNEF
 
-To begin, let's load an existing email that contains a TNEF attachment. You'll need to provide the path to the email file.
+للبدء، لنحمّل بريدًا إلكترونيًا موجودًا يحتوي على مرفق TNEF. ستحتاج إلى تحديد مسار ملف البريد الإلكتروني.
 
 ```csharp
 
 
-// Load the email with TNEF attachment
+// قم بتحميل البريد الإلكتروني باستخدام مرفق TNEF
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Extracting and Modifying TNEF Attachments
+## استخراج وتعديل مرفقات TNEF
 
-Once you have the email loaded, you can extract the TNEF attachment and modify it as needed.
+بمجرد تحميل البريد الإلكتروني، يمكنك استخراج مرفق TNEF وتعديله حسب الحاجة.
 
 ```csharp
-// Iterate through attachments
+// التكرار من خلال المرفقات
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extract TNEF attachment
+        // استخراج مرفق TNEF
         var tnefAttachment = attachment;
 
-        // Access TNEF properties and modify if necessary
-        // tnefAttachment.Properties...
+        // الوصول إلى خصائص TNEF وتعديلها إذا لزم الأمر
+        // tnefAttachment.خصائص...
     }
 }
 ```
 
-## Saving the Email with Modified Attachments
+## حفظ البريد الإلكتروني مع المرفقات المعدلة
 
-After modifying the TNEF attachment, you can save the email back to a file.
+بعد تعديل مرفق TNEF، يمكنك حفظ البريد الإلكتروني مرة أخرى في ملف.
 
 ```csharp
-// Save the modified email
+// حفظ البريد الإلكتروني المعدل
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -77,25 +77,25 @@ message.Save("path/to/modified_email.eml", emlSaveOptions);
 
 ## خاتمة
 
-In this article, we've explored how to work with TNEF attachments in C# using Aspose.Email for .NET. You've learned how to load an email with TNEF attachments, extract and modify those attachments, and save the modified email.
+في هذه المقالة، استكشفنا كيفية التعامل مع مرفقات TNEF في C# باستخدام Aspose.Email لـ .NET. تعلمت كيفية تحميل بريد إلكتروني بمرفقات TNEF، واستخراجها وتعديلها، وحفظ البريد الإلكتروني المعدّل.
 
-## FAQ's
+## الأسئلة الشائعة
 
-### How can I install Aspose.Email for .NET?
+### كيف يمكنني تثبيت Aspose.Email لـ .NET؟
 
-You can install Aspose.Email for .NET using NuGet Package Manager. Simply search for "Aspose.Email" and install the appropriate package.
+يمكنك تثبيت Aspose.Email لـ .NET باستخدام مدير حزم NuGet. ما عليك سوى البحث عن "Aspose.Email" وثبّت الحزمة المناسبة.
 
-### Can I work with other email formats using Aspose.Email for .NET?
+### هل يمكنني العمل مع تنسيقات البريد الإلكتروني الأخرى باستخدام Aspose.Email لـ .NET؟
 
-Yes, Aspose.Email for .NET supports various email formats, including EML, MSG, PST, and more.
+نعم، يدعم Aspose.Email لـ .NET تنسيقات البريد الإلكتروني المختلفة، بما في ذلك EML وMSG وPST والمزيد.
 
 ### هل يمكنني استخدام Aspose.Email للمشاريع التجارية؟
 
-Yes, you can use Aspose.Email for .NET in both personal and commercial projects, provided you have the appropriate license.
+نعم، يمكنك استخدام Aspose.Email لـ .NET في المشاريع الشخصية والتجارية، بشرط أن يكون لديك الترخيص المناسب.
 
-### Where can I find more documentation and examples?
+### أين يمكنني العثور على مزيد من الوثائق والأمثلة؟
 
-For more detailed documentation and code examples, you can visit the [Aspose.Email for .NET documentation](https://reference.aspose.com/email/net/).
+لمزيد من التفاصيل حول الوثائق وأمثلة التعليمات البرمجية، يمكنك زيارة [توثيق Aspose.Email لـ .NET](https://reference.aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
