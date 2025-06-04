@@ -1,41 +1,43 @@
 ---
-title: C#'ta Saat Dilimi ile E-postayı MHT'ye Dönüştürme
-linktitle: C#'ta Saat Dilimi ile E-postayı MHT'ye Dönüştürme
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak e-postalarınızı doğru zaman dilimleriyle MHT formatına dönüştürün. Adım adım kılavuz ve kod örneği sağlanmıştır.
-weight: 12
-url: /tr/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/
+"description": "Aspose.Email for .NET kullanarak e-postaları doğru saat dilimleriyle MHT formatına dönüştürün. Adım adım kılavuz ve kod örneği sağlanmıştır."
+"linktitle": "C#'da Timezone ile E-postayı MHT'ye Dönüştürme"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "C#'da Timezone ile E-postayı MHT'ye Dönüştürme"
+"url": "/tr/net/email-conversion-and-export/converting-email-to-mht-with-timezone-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C#'ta Saat Dilimi ile E-postayı MHT'ye Dönüştürme
+# C#'da Timezone ile E-postayı MHT'ye Dönüştürme
 
 
-## Zaman Dilimi ile E-postayı MHT'ye Dönüştürmeye Giriş
+## E-posta Dönüşümüne Giriş E-postayı Zaman Dilimli MHT'ye Dönüştürme
 
-E-posta mesajlarını çeşitli formatlara dönüştürmek birçok uygulamada ortak bir gerekliliktir. Saat ve saat dilimi bilgilerinin çok önemli bir rol oynadığı senaryolarda, bu bilgilerin dönüştürme işlemi sırasında doğru şekilde korunmasını sağlamak önemlidir. Bu kılavuzda, saat dilimi verilerini doğru şekilde işlerken e-postaları MHT biçimine dönüştürmeye odaklanacağız.
+E-posta mesajlarını çeşitli biçimlere dönüştürmek birçok uygulamada yaygın bir gerekliliktir. Zaman ve saat dilimi bilgilerinin önemli bir rol oynadığı senaryolarda, bu bilgilerin dönüştürme işlemi sırasında doğru bir şekilde korunduğundan emin olmak önemlidir. Bu kılavuzda, saat dilimi verilerini doğru şekilde işlerken e-postaları MHT biçimine dönüştürmeye odaklanacağız.
 
 ## Geliştirme Ortamınızı Kurma
 
-Kodlama sürecine dalmadan önce geliştirme ortamınızın harekete hazır olduğundan emin olalım. Uyumlu bir Visual Studio sürümünün yüklü olduğundan emin olun ve başlamak için yeni bir C# projesi oluşturun.
+Kodlama sürecine dalmadan önce, geliştirme ortamınızın eyleme hazır olduğundan emin olalım. Uyumlu bir Visual Studio sürümünün yüklü olduğundan emin olun ve başlamak için yeni bir C# projesi oluşturun.
 
-## Aspose.Email for .NET'in Kurulumu
+## .NET için Aspose.Email'i yükleme
 
-Aspose.Email for .NET, e-postayla ilgili görevleri basitleştiren, zengin özelliklere sahip bir kütüphanedir. Yüklemek için şu adımları izleyin:
+Aspose.Email for .NET, e-postayla ilgili görevleri basitleştiren, özellik açısından zengin bir kitaplıktır. Yüklemek için şu adımları izleyin:
 
-1. Projenizi Visual Studio'da açın.
+1. Projenizi Visual Studio’da açın.
 2. "Araçlar" > "NuGet Paket Yöneticisi" > "Çözüm için NuGet Paketlerini Yönet" seçeneğine gidin.
 3. "Aspose.Email"i arayın ve paketi yükleyin.
 
 ## E-posta Mesajlarını Yükleme ve Ayrıştırma
 
-Bu adımda dönüştürmek istediğimiz e-posta mesajını yükleyip ayrıştıracağız. Başlangıç noktası olarak aşağıdaki kod parçacığını kullanın:
+Bu adımda, dönüştürmek istediğimiz e-posta mesajını yükleyip ayrıştıracağız. Başlangıç noktası olarak aşağıdaki kod parçacığını kullanın:
 
 ```csharp
-// Gerekli kullanım ifadelerini ekleyin
+// Gerekli using ifadelerini ekleyin
 using Aspose.Email;
 
 // E-posta mesajını yükle
@@ -44,12 +46,12 @@ var message = MailMessage.Load("path/to/your/email.eml");
 // Artık mesaj özelliklerine erişebilirsiniz
 var subject = message.Subject;
 var sender = message.From.Address;
-// ... diğer mülkler
+// ...diğer özellikler
 ```
 
-## Saat Dilimi Bilgilerini İşleme
+## Zaman Dilimi Bilgilerinin İşlenmesi
 
-Saat dilimi bilgileriyle doğru şekilde ilgilenmek çok önemlidir. Aşağıdaki kod parçacığı, bir e-posta iletisinden saat dilimi verilerinin nasıl çıkarılacağını ve yönetileceğini gösterir:
+Zaman dilimi bilgilerini doğru şekilde ele almak çok önemlidir. Aşağıdaki kod parçacığı, bir e-posta mesajından zaman dilimi verilerinin nasıl çıkarılacağını ve yönetileceğini gösterir:
 
 ```csharp
 var timezone = message.TimezoneOffset;
@@ -60,7 +62,7 @@ var timezoneInfo = TimeZoneInfo.FindSystemTimeZoneById(timezoneId);
 
 ## E-postayı MHT Formatına Dönüştürme
 
-Şimdi temel dönüşüm adımı geliyor. MHT formatına dönüştürme işlemini gerçekleştirmek için Aspose.Email'i kullanacağız:
+Şimdi çekirdek dönüşüm adımına geliyoruz. MHT formatına dönüşümü gerçekleştirmek için Aspose.Email kullanacağız:
 
 ```csharp
 var mhtOptions = MhtSaveOptions.DefaultMhtml;
@@ -70,7 +72,7 @@ message.Save(mhtStream, mhtOptions);
 
 ## MHT Dosyasını Kaydetme
 
-E-posta mesajı MHT formatına dönüştürüldüğünde, onu dosya olarak kaydetmenin zamanı geldi:
+E-posta mesajı MHT formatına dönüştürüldükten sonra, onu bir dosya olarak kaydetmenin zamanı geldi:
 
 ```csharp
 using var fileStream = new FileStream("output.mht", FileMode.Create);
@@ -78,42 +80,44 @@ mhtStream.Seek(0, SeekOrigin.Begin);
 mhtStream.CopyTo(fileStream);
 ```
 
-## Ek Özelleştirmeleri Keşfetmek
+## Ek Özelleştirmeleri Keşfetme
 
-Aspose.Email for .NET çeşitli özelleştirme seçenekleri sunar. Uygulamanızın ihtiyaçlarına uyacak şekilde ek eklemeyi, mesaj özelliklerini değiştirmeyi ve daha fazlasını keşfedebilirsiniz.
+Aspose.Email for .NET çeşitli özelleştirme seçenekleri sunar. Uygulamanızın ihtiyaçlarına uyacak şekilde ekler eklemeyi, mesaj özelliklerini değiştirmeyi ve daha fazlasını keşfedebilirsiniz.
 
-## Aspose.Email for .NET Kullanmanın Yararları
+## Aspose.Email for .NET Kullanmanın Avantajları
 
-Aspose.Email for .NET, e-postayla ilgili karmaşık görevleri basitleştirerek geliştiricilerin temel işlevlere odaklanmasına olanak tanır. Doğru ve verimli dönüşümler sağlayarak çeşitli e-posta formatları için güçlü destek sağlar.
+Aspose.Email for .NET, karmaşık e-postayla ilgili görevleri basitleştirerek geliştiricilerin temel işlevselliğe odaklanmasını sağlar. Çeşitli e-posta biçimleri için sağlam destek sağlayarak doğru ve etkili dönüşümler sağlar.
 
 ## Çözüm
 
-Bu kılavuzda, Aspose.Email for .NET kullanarak saat dilimi bilgilerini işlerken e-posta mesajlarını MHT formatına nasıl dönüştüreceğimizi öğrendik. Bu adımları izleyerek ve daha fazla özelleştirme seçeneklerini keşfederek, e-posta dönüştürme işlevini uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
+Bu kılavuzda, Aspose.Email for .NET kullanarak saat dilimi bilgilerini işlerken e-posta mesajlarını MHT biçimine nasıl dönüştüreceğinizi öğrendik. Bu adımları izleyerek ve daha fazla özelleştirme seçeneğini keşfederek, e-posta dönüştürme işlevselliğini uygulamalarınıza sorunsuz bir şekilde entegre edebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### E-posta dönüşümü sırasında ekleri nasıl yönetirim?
+### E-posta dönüştürme sırasında ekleri nasıl işlerim?
 
- Ekleri işlemek için şunu kullanabilirsiniz:`Attachments` mülkiyeti`MailMessage` sınıf. Ekleri yineleyin ve dönüştürme işlemi sırasında gerektiği gibi kaydedin.
+Ekleri işlemek için şunu kullanabilirsiniz: `Attachments` mülkiyeti `MailMessage` sınıf. Ekleri yineleyin ve dönüştürme işlemi sırasında gerektiğinde kaydedin.
 
-### Aspose.Email for .NET'i kullanarak e-postaları diğer formatlara dönüştürebilir miyim?
+### Aspose.Email for .NET kullanarak e-postaları başka formatlara dönüştürebilir miyim?
 
-Evet, Aspose.Email for .NET MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli formatları destekler. Sağlanan kod örneklerini istediğiniz çıktı formatına uyacak şekilde uyarlayabilirsiniz.
+Evet, Aspose.Email for .NET, MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli formatları destekler. Sağlanan kod örneklerini istediğiniz çıktı formatına uyacak şekilde uyarlayabilirsiniz.
 
-### Saat dilimi bilgileri MHT formatında korunuyor mu?
+### Saat dilimi bilgisi MHT formatında saklanıyor mu?
 
- Evet, dönüştürme işlemi sırasında saat dilimi bilgileri korunur. Saat dilimi farklarını işleyerek ve uygun olanı kullanarak`TimeZoneInfo` yöntemleri kullanarak, MHT dosyasında doğru saat dilimi gösterimini sağlayabilirsiniz.
+Evet, zaman dilimi bilgileri dönüştürme işlemi sırasında korunur. Zaman dilimi farklarını işleyerek ve uygun `TimeZoneInfo` yöntemlerini kullanarak MHT dosyasında doğru zaman dilimi gösterimini sağlayabilirsiniz.
 
-### Aspose.Email for .NET hakkında daha fazla belge ve güncellemeyi nerede bulabilirim?
+### Aspose.Email for .NET hakkında daha fazla doküman ve güncellemeyi nerede bulabilirim?
 
- Kapsamlı bilgi ve güncellemeler için belgelere başvurabilirsiniz:[Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net/)
+Kapsamlı bilgi ve güncellemeler için dokümanlara başvurabilirsiniz: [Aspose.Email for .NET API Referansı](https://reference.aspose.com/email/net/)
 
 ### Aspose.Email for .NET'in en son sürümünü nasıl indirebilirim?
 
- En son sürümü sürümler sayfasından indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net/)
+Son sürümü sürümler sayfasından indirebilirsiniz: [.NET için Aspose.Email'i indirin](https://releases.aspose.com/email/net/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

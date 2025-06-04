@@ -1,41 +1,43 @@
 ---
-title: Menyertakan Lampiran dalam Email - Contoh C#
-linktitle: Menyertakan Lampiran dalam Email - Contoh C#
-second_title: API Pemrosesan Email Aspose.Email .NET
-description: Pelajari cara menyertakan lampiran dalam email menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode C#.
-weight: 10
-url: /id/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Pelajari cara menyertakan lampiran dalam email menggunakan Aspose.Email untuk .NET. Panduan langkah demi langkah dengan contoh kode C#."
+"linktitle": "Menyertakan Lampiran dalam Email - Contoh C#"
+"second_title": "API Pemrosesan Email Aspose.Email .NET"
+"title": "Menyertakan Lampiran dalam Email - Contoh C#"
+"url": "/id/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Menyertakan Lampiran dalam Email - Contoh C#
 
 
-## Pengantar Menyertakan Lampiran dalam Email
+## Pengantar tentang Menyertakan Lampiran dalam Email
 
-Di dunia digital yang serba cepat saat ini, komunikasi email tetap menjadi landasan bagi bisnis dan individu. Menambahkan lampiran ke email Anda akan meningkatkan nilai pesan Anda dengan memungkinkan Anda berbagi dokumen, gambar, dan file dengan mudah. Panduan langkah demi langkah ini akan memandu Anda melalui proses menyertakan lampiran di email Anda menggunakan perpustakaan Aspose.Email untuk .NET.
+Dalam dunia digital yang serba cepat saat ini, komunikasi melalui email tetap menjadi hal utama bagi bisnis dan individu. Menambahkan lampiran ke email Anda akan meningkatkan nilai pesan Anda dengan memungkinkan Anda berbagi dokumen, gambar, dan file dengan mudah. Panduan langkah demi langkah ini akan memandu Anda melalui proses penyertaan lampiran dalam email Anda menggunakan pustaka Aspose.Email untuk .NET.
 
 ## Menyiapkan Lingkungan Pengembangan Anda
 
-Sebelum kita mendalami detail pengkodean, pastikan Anda memiliki lingkungan pengembangan yang sesuai. Kamu akan membutuhkan:
+Sebelum kita menyelami detail pengkodean, pastikan Anda memiliki lingkungan pengembangan yang sesuai. Anda memerlukan:
 
 - Visual Studio (atau IDE C# pilihan Anda)
-- .NET Framework atau .NET Core diinstal
+- .NET Framework atau .NET Core terpasang
 
 ## Menambahkan Aspose.Email ke Proyek Anda
 
-Aspose.Email adalah perpustakaan canggih yang menyederhanakan bekerja dengan email dalam berbagai format. Untuk memulai, ikuti langkah-langkah berikut:
+Aspose.Email adalah pustaka canggih yang menyederhanakan penggunaan email dalam berbagai format. Untuk memulai, ikuti langkah-langkah berikut:
 
 1. Buat Proyek Baru: Buka Visual Studio dan buat proyek C# baru.
 
-2. Instal Aspose.Email: Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Aspose.Email", dan instal paket.
+2. Instal Aspose.Email: Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Aspose.Email", lalu instal paket tersebut.
 
 ## Membuat Pesan Email
 
-Sekarang Aspose.Email terintegrasi ke dalam proyek Anda, mari mulai membuat pesan email:
+Sekarang Aspose.Email telah terintegrasi ke dalam proyek Anda, mari mulai membuat pesan email:
 
 ```csharp
 using Aspose.Email;
@@ -72,7 +74,7 @@ message.Attachments.Add(attachment);
 
 ## Mengirim Email
 
-Setelah email Anda siap, saatnya mengirimkannya:
+Setelah email Anda siap, saatnya untuk mengirimkannya:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
@@ -94,17 +96,17 @@ class Program
 
 ## Kesimpulan
 
-Dalam panduan ini, kami mempelajari cara menyertakan lampiran di email Anda menggunakan Aspose.Email untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat meningkatkan komunikasi email Anda dengan lampiran konten yang kaya. Pustaka Aspose.Email menyederhanakan proses ini, membuatnya lebih mudah dari sebelumnya untuk membuat dan mengirim email dengan lampiran secara terprogram.
+Dalam panduan ini, kami menjajaki cara menyertakan lampiran dalam email Anda menggunakan Aspose.Email untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat menyempurnakan komunikasi email Anda dengan lampiran konten yang kaya. Pustaka Aspose.Email menyederhanakan proses ini, membuatnya lebih mudah dari sebelumnya untuk membuat dan mengirim email dengan lampiran secara terprogram.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara mengunduh perpustakaan Aspose.Email?
+### Bagaimana cara mengunduh pustaka Aspose.Email?
 
- Anda dapat mengunduh perpustakaan Aspose.Email dari Aspose.Rilis:[Aspose.Releases](https://releases.aspose.com/email/net/) atau dengan menggunakan NuGet Package Manager di Visual Studio.
+Anda dapat mengunduh pustaka Aspose.Email dari Aspose.Releases: [Aspose.Rilis](https://releases.aspose.com/email/net/) atau dengan menggunakan NuGet Package Manager di Visual Studio.
 
-### Bisakah saya melampirkan banyak file ke satu email?
+### Bisakah saya melampirkan beberapa file ke satu email?
 
- Sangat! Anda dapat menambahkan beberapa lampiran ke satu email dengan membuat dan menambahkan beberapa lampiran`Attachment` objek ke`Attachments` koleksi Anda`MailMessage`.
+Tentu saja! Anda dapat menambahkan beberapa lampiran ke satu email dengan membuat dan menambahkan beberapa `Attachment` objek ke `Attachments` koleksi milikmu `MailMessage`.
 
 ### Apakah Aspose.Email cocok untuk .NET Framework dan .NET Core?
 
@@ -116,10 +118,12 @@ Ya, Anda dapat mengonfigurasi Aspose.Email untuk mengirim email melalui koneksi 
 
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang kemampuan Aspose.Email?
 
- Untuk informasi lebih rinci tentang fitur, kelas, dan metode Aspose.Email, lihat[Referensi API Aspose.Email](https://reference.aspose.com/email/net/).
+Untuk informasi lebih rinci tentang fitur, kelas, dan metode Aspose.Email, lihat [Referensi API Aspose.Email](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

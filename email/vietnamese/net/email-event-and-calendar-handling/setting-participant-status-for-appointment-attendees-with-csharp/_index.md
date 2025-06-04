@@ -1,41 +1,43 @@
 ---
-title: Đặt trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
-linktitle: Đặt trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
-second_title: API xử lý email Aspose.Email .NET
-description: Tìm hiểu cách quản lý trạng thái của người tham dự cuộc hẹn bằng C# và Aspose.Email dành cho .NET. Hướng dẫn từng bước với mã nguồn.
-weight: 16
-url: /vi/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
+"description": "Tìm hiểu cách quản lý trạng thái người tham dự cuộc hẹn bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước có mã nguồn."
+"linktitle": "Thiết lập trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#"
+"second_title": "API xử lý email Aspose.Email .NET"
+"title": "Thiết lập trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#"
+"url": "/vi/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Đặt trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
+# Thiết lập trạng thái người tham gia cho người tham dự cuộc hẹn bằng C#
 
 
 ## Giới thiệu về Aspose.Email cho .NET
 
-Aspose.Email for .NET là một thư viện đa năng cho phép các nhà phát triển làm việc với email, cuộc hẹn, danh bạ, v.v. trong ứng dụng .NET của họ. Với API trực quan, các nhà phát triển có thể dễ dàng thao tác các khía cạnh khác nhau của giao tiếp qua email, khiến nó trở thành lựa chọn tuyệt vời để xử lý các tác vụ liên quan đến cuộc hẹn.
+Aspose.Email for .NET là một thư viện đa năng cho phép các nhà phát triển làm việc với các tin nhắn email, cuộc hẹn, danh bạ và nhiều thứ khác trong các ứng dụng .NET của họ. Với API trực quan, các nhà phát triển có thể dễ dàng thao tác nhiều khía cạnh khác nhau của giao tiếp email, khiến nó trở thành lựa chọn tuyệt vời để xử lý các tác vụ liên quan đến cuộc hẹn.
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào triển khai, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+Trước khi bắt đầu triển khai, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
 
 - Visual Studio (hoặc bất kỳ IDE C# nào)
 - Aspose.Email cho thư viện .NET
 - Hiểu biết cơ bản về lập trình C#
 
-## Tạo một cuộc hẹn
+## Tạo cuộc hẹn
 
-Để bắt đầu, bạn cần tạo một phiên bản cuộc hẹn bằng Aspose.Email cho .NET. Cuộc hẹn đại diện cho một sự kiện đã lên lịch và bạn có thể đặt nhiều thuộc tính khác nhau như thời gian bắt đầu, thời gian kết thúc, địa điểm, v.v.
+Để bắt đầu, bạn cần tạo một phiên bản cuộc hẹn bằng Aspose.Email cho .NET. Một cuộc hẹn đại diện cho một sự kiện đã lên lịch và bạn có thể thiết lập nhiều thuộc tính khác nhau như thời gian bắt đầu, thời gian kết thúc, địa điểm, v.v.
 
 ```csharp
 // Thêm các câu lệnh sử dụng cần thiết
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Tạo một thể hiện của lớp Cuộc hẹn
+// Tạo một thể hiện của lớp Appointment
 var appointment = new Appointment();
 
 // Đặt thuộc tính cuộc hẹn
@@ -46,7 +48,7 @@ appointment.Location = "Conference Room 101";
 
 ## Thêm người tham dự
 
- Tiếp theo, bạn có thể thêm người tham dự vào cuộc hẹn bằng cách sử dụng`Attendees` bộ sưu tập. Người tham dự là những cá nhân sẽ tham gia vào cuộc hẹn. Bạn có thể chỉ định địa chỉ email và tên của họ.
+Tiếp theo, bạn có thể thêm người tham dự vào cuộc hẹn bằng cách sử dụng `Attendees` bộ sưu tập. Người tham dự là những cá nhân sẽ tham gia cuộc hẹn. Bạn có thể chỉ định địa chỉ email và tên của họ.
 
 ```csharp
 // Thêm người tham dự vào cuộc hẹn
@@ -54,9 +56,9 @@ appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Đặt trạng thái người tham gia
+## Thiết lập trạng thái người tham gia
 
-Bây giờ đến phần quan trọng: thiết lập trạng thái người tham gia cho những người tham dự. Trạng thái người tham gia cho biết liệu người tham dự đã chấp nhận, từ chối hay tạm chấp nhận lời mời cuộc hẹn. Aspose.Email for .NET cung cấp các tùy chọn trạng thái khác nhau để bạn lựa chọn.
+Bây giờ đến phần quan trọng: thiết lập trạng thái người tham gia cho những người tham dự. Trạng thái người tham gia cho biết người tham dự đã chấp nhận, từ chối hay chấp nhận tạm thời lời mời hẹn. Aspose.Email cho .NET cung cấp các tùy chọn trạng thái khác nhau để lựa chọn.
 
 ```csharp
 // Đặt trạng thái người tham gia cho người tham dự
@@ -64,16 +66,16 @@ appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accept
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Mã nguồn hoàn chỉnh
+## Mã nguồn đầy đủ
 
-Đây là mã nguồn hoàn chỉnh minh họa quá trình tạo cuộc hẹn, thêm người tham dự và đặt trạng thái người tham gia:
+Sau đây là mã nguồn đầy đủ minh họa quy trình tạo cuộc hẹn, thêm người tham dự và thiết lập trạng thái người tham gia:
 
 ```csharp
 // Thêm các câu lệnh sử dụng cần thiết
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
-// Tạo một thể hiện của lớp Cuộc hẹn
+// Tạo một thể hiện của lớp Appointment
 var appointment = new Appointment();
 
 // Đặt thuộc tính cuộc hẹn
@@ -92,32 +94,34 @@ appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declin
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá quy trình quản lý người tham dự cuộc hẹn và đặt trạng thái người tham gia bằng C# và Aspose.Email cho .NET. Các tính năng toàn diện của thư viện làm cho nó trở thành một công cụ có giá trị cho các nhà phát triển cần làm việc với các tác vụ liên quan đến email một cách hiệu quả.
+Trong hướng dẫn này, chúng tôi đã khám phá quy trình quản lý người tham dự cuộc hẹn và thiết lập trạng thái người tham gia bằng C# và Aspose.Email cho .NET. Các tính năng toàn diện của thư viện khiến nó trở thành công cụ hữu ích cho các nhà phát triển cần làm việc hiệu quả với các tác vụ liên quan đến email.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào tôi có thể lấy thư viện Aspose.Email cho .NET?
+### Làm thế nào tôi có thể lấy được thư viện Aspose.Email cho .NET?
 
- Bạn có thể tải xuống thư viện Aspose.Email cho .NET từ trang web:[Tải xuống Aspose.Email cho .NET](https://releases.aspose.com).
+Bạn có thể tải xuống thư viện Aspose.Email cho .NET từ trang web: [Tải xuống Aspose.Email cho .NET](https://releases.aspose.com).
 
-### Tôi có thể tùy chỉnh các tùy chọn trạng thái người tham gia không?
+### Tôi có thể tùy chỉnh các tùy chọn trạng thái của người tham gia không?
 
- Có, bạn có thể tùy chỉnh các tùy chọn trạng thái người tham gia theo nhu cầu của ứng dụng bằng cách sử dụng`AppointmentParticipantStatus` bảng liệt kê do Aspose.Email cung cấp cho .NET.
+Có, bạn có thể tùy chỉnh các tùy chọn trạng thái người tham gia theo nhu cầu của ứng dụng bằng cách sử dụng `AppointmentParticipantStatus` liệt kê được cung cấp bởi Aspose.Email cho .NET.
 
-### Aspose.Email for .NET có phù hợp để xử lý các tác vụ khác liên quan đến email không?
+### Aspose.Email for .NET có phù hợp để xử lý các tác vụ liên quan đến email khác không?
 
-Tuyệt đối! Aspose.Email for .NET cung cấp nhiều tính năng để làm việc với email, tệp đính kèm, cuộc hẹn, v.v., khiến nó trở thành lựa chọn linh hoạt cho nhiều tác vụ liên quan đến email.
+Hoàn toàn đúng! Aspose.Email for .NET cung cấp nhiều tính năng để làm việc với email, tệp đính kèm, cuộc hẹn, v.v., khiến nó trở thành lựa chọn linh hoạt cho nhiều tác vụ liên quan đến email.
 
-### Tôi có thể tích hợp chức năng này vào ứng dụng .NET hiện có của mình không?
+### Tôi có thể tích hợp chức năng này vào ứng dụng .NET hiện tại của mình không?
 
-Có, bạn có thể dễ dàng tích hợp chức năng được thảo luận trong hướng dẫn này vào các ứng dụng .NET hiện có của mình bằng cách tham khảo thư viện Aspose.Email cho .NET và làm theo các ví dụ về mã được cung cấp.
+Có, bạn có thể dễ dàng tích hợp chức năng được thảo luận trong hướng dẫn này vào các ứng dụng .NET hiện có của mình bằng cách tham khảo thư viện Aspose.Email cho .NET và làm theo các ví dụ mã được cung cấp.
 
-### Tôi có thể tìm thêm tài liệu và tài nguyên ở đâu?
+### Tôi có thể tìm thêm tài liệu và nguồn tài nguyên ở đâu?
 
- Để biết thêm tài liệu và tài nguyên chi tiết, hãy tham khảo tài liệu Aspose.Email for .NET:[Aspose.Email cho tài liệu .NET](https://reference.aspose.com/email/net).
+Để biết thêm tài liệu và tài nguyên chi tiết, hãy tham khảo tài liệu Aspose.Email cho .NET: [Tài liệu Aspose.Email cho .NET](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

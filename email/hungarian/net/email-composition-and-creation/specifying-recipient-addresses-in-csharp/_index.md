@@ -1,56 +1,58 @@
 ---
-title: Címzett címének megadása C#-ban
-linktitle: Címzett címének megadása C#-ban
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg, hogyan adhat meg címzett címeket C# nyelven az Aspose.Email for .NET használatával. Hatékonyan hozhat létre, konfigurálhat és küldhet e-maileket.
-weight: 19
-url: /hu/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/
+"description": "Tanuld meg, hogyan adhatsz meg címzett címeket C#-ban az Aspose.Email for .NET használatával. Hozz létre, konfigurálj és küldj hatékonyan e-maileket."
+"linktitle": "Címzett címének megadása C#-ban"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Címzett címének megadása C#-ban"
+"url": "/hu/net/email-composition-and-creation/specifying-recipient-addresses-in-csharp/"
+"weight": 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Címzett címének megadása C#-ban
 
 
 
-Ez az útmutató végigvezeti a címzettek címének C# nyelven történő megadásának folyamatán az Aspose.Email for .NET könyvtár használatával. Az Aspose.Email egy hatékony .NET API, amely lehetővé teszi az e-mail üzenetek kezelését és a különféle e-mailekkel kapcsolatos feladatokat. Ebben az oktatóanyagban bemutatjuk, hogyan adhatunk címzett címeket egy e-mail üzenethez a könyvtár használatával.
+Ez az útmutató végigvezet a címzettek címeinek C#-ban történő megadásának folyamatán az Aspose.Email for .NET könyvtár használatával. Az Aspose.Email egy hatékony .NET API, amely lehetővé teszi az e-mailek kezelését és a különféle e-maillel kapcsolatos feladatok elvégzését. Ebben az oktatóanyagban bemutatjuk, hogyan adhatsz hozzá címzettek címeit egy e-mail üzenethez a könyvtár segítségével.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt elkezdené, győződjön meg arról, hogy a következőkkel rendelkezik:
 
-1. Visual Studio vagy bármely telepített C# fejlesztői környezet.
-2.  Aspose.Email a .NET könyvtárhoz. Beszerezheti a[Aspose.Email .NET-kiadásokhoz](https://releases.aspose.com/email/net/).
+1. Visual Studio vagy bármilyen C# fejlesztői környezet telepítve.
+2. Aspose.Email .NET könyvtárhoz. Letöltheti innen: [Aspose.Email .NET kiadásokhoz](https://releases.aspose.com/email/net/).
 
 ## Lépések
 
-Kövesse az alábbi lépéseket a címzett címek megadásához C# nyelven az Aspose.Email for .NET használatával:
+Kövesse az alábbi lépéseket a címzettek címeinek megadásához C#-ban az Aspose.Email for .NET használatával:
 
-### 1. Hozzon létre egy új C# projektet
+### 1. Hozz létre egy új C# projektet
 
-Kezdje egy új C# projekt létrehozásával a fejlesztői környezetben.
+Kezd azzal, hogy létrehozol egy új C# projektet a fejlesztői környezetedben.
 
-### 2. Adja hozzá az Aspose.Email hivatkozást
+### 2. Adjon hozzá hivatkozást az Aspose.Emailhez
 
-1. Töltse le és telepítse az Aspose.Email for .NET könyvtárat, ha még nem tette meg.
-2. Nyissa meg a C# projektet.
-3. Kattintson jobb gombbal a "References" elemre a Solution Explorerben, és válassza a "Hivatkozás hozzáadása" lehetőséget.
-4. Tallózzon és válassza ki a letöltött Aspose.Email DLL-fájlokat.
+1. Töltsd le és telepítsd az Aspose.Email for .NET könyvtárat, ha még nem tetted meg.
+2. Nyisd meg a C# projektedet.
+3. Kattintson jobb gombbal a „Referenciák” elemre a Megoldáskezelőben, és válassza a „Referencia hozzáadása” lehetőséget.
+4. Böngésszen és jelölje ki a letöltött Aspose.Email DLL fájlokat.
 
 ### 3. Importálja a szükséges névtereket
 
-A C# kódfájlba importálja az Aspose.Email osztályok használatához szükséges névtereket:
+A C# kódfájlodban importáld a szükséges névtereket az Aspose.Email osztályok használatához:
 
 ```csharp
 using Aspose.Email;
 
 ```
 
-### 4. Hozza létre és konfigurálja az e-mail üzenetet
+### 4. E-mail üzenet létrehozása és konfigurálása
 
- Hozzon létre egy új példányt a`MailMessage` osztály képviseli az e-mail üzenetét. Állítsa be az e-mail feladóját és tárgyát:
+Hozzon létre egy új példányt a `MailMessage` osztály az e-mail üzenet reprezentálására. Konfigurálja az e-mail feladóját és tárgyát:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -58,9 +60,9 @@ message.From = new MailAddress("sender@example.com");
 message.Subject = "Hello from Aspose.Email";
 ```
 
-### 5. Adja meg a címzettek címét
+### 5. Címzettek címeinek hozzáadása
 
- címzettek címét a`To`, `Cc` , és`Bcc` tulajdonságai a`MailMessage` osztály. A következőképpen adhat hozzá címzett címeket:
+Címzettek címeit hozzáadhatja a `To`, `Cc`, és `Bcc` a tulajdonságai `MailMessage` osztály. Így adhatsz hozzá címzett címeket:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
@@ -68,17 +70,17 @@ message.Cc.Add(new MailAddress("recipient2@example.com"));
 message.Bcc.Add(new MailAddress("recipient3@example.com"));
 ```
 
-### 6. Töltse ki az e-mail üzenetet
+### 6. Fejezd be az e-mailt
 
-Adja hozzá az e-mail törzsét és minden más szükséges tartalmat az e-mailhez:
+Add hozzá az e-mail törzsét és minden egyéb szükséges tartalmat az e-mail üzenetedhez:
 
 ```csharp
 message.Body = "This is the email body.";
 ```
 
-### 7. Küldje el az e-mailt
+### 7. Küldd el az e-mailt
 
- Az e-mail elküldéséhez használhatja a`SmtpClient` osztály által biztosított Aspose.Email. Konfigurálja az SMTP szerver beállításait, és küldje el az e-mailt:
+Az e-mail elküldéséhez használhatja a `SmtpClient` Az Aspose.Email által biztosított osztály. Konfigurálja az SMTP-kiszolgáló beállításait, és küldje el az e-mailt:
 
 ```csharp
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
@@ -89,26 +91,26 @@ client.Send(message);
 
 ## GYIK
 
-###  Hogyan adhatok hozzá több címzettet a`To`, `Cc`, or `Bcc` fields?
+### Hogyan adhatok hozzá több címzettet a `To`, `Cc`, vagy `Bcc` mezők?
 
- Több címzettet is felvehet a telefonszám felhívásával`Add` módszer többször is az adott`MailAddressCollection`:
+Több címzettet is hozzáadhat a telefonszám felhívásával. `Add` módszert többször a megfelelő `MailAddressCollection`:
 
 ```csharp
 message.To.Add(new MailAddress("recipient1@example.com"));
 message.To.Add(new MailAddress("recipient2@example.com"));
 ```
 
-### Megadhatom a címzettek nevét az e-mail címükkel együtt?
+### Megadhatom a címzettek nevét az e-mail címük mellett?
 
-Igen, a címzettek hozzáadásakor megadhatja a címzett nevét és e-mail címét is:
+Igen, megadhatja mind a címzett nevét, mind az e-mail címét a címzettek hozzáadásakor:
 
 ```csharp
 message.To.Add(new MailAddress("recipient@example.com", "Recipient Name"));
 ```
 
-### Hogyan kezelhetem a kivételeket e-mail küldésekor?
+### Hogyan kezeljem a kivételeket e-mail küldésekor?
 
-A try-catch blokkokat használhatja az e-mail küldés során esetlegesen előforduló kivételek kezelésére:
+A try-catch blokkokat használhatod az e-mail küldése során esetlegesen előforduló kivételek kezelésére:
 
 ```csharp
 try
@@ -122,12 +124,14 @@ catch (Exception ex)
 }
 ```
 
- További információkért és az Aspose.Email for .NET speciális funkcióiért tekintse meg a[Aspose API referenciák](https://reference.aspose.com/email/net/).
+Az Aspose.Email for .NET további információiért és speciális funkcióiért lásd a következőt: [Aspose API referenciák](https://reference.aspose.com/email/net/).
 
-Ezzel a címzettek címének C# nyelven történő meghatározásáról szóló útmutatót az Aspose.Email for .NET használatával zárja. Megtanulta, hogyan hozhat létre e-mail üzenetet, hogyan adhat hozzá címzett címeket, és hogyan küldheti el az e-mailt a könyvtár funkcióival.
+Ezzel lezárjuk az útmutatót a címzettek címeinek C#-ban történő megadásáról az Aspose.Email for .NET használatával. Megtanultad, hogyan hozhatsz létre e-mail üzenetet, hogyan adhatsz hozzá címzetteket, és hogyan küldheted el az e-mailt a könyvtár funkcióinak használatával.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

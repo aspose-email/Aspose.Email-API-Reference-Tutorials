@@ -1,57 +1,59 @@
 ---
-title: Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
-linktitle: Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
-second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
-description: Dowiedz się, jak dołączać pliki do wiadomości e-mail za pomocą Aspose.Email dla Java. Z łatwością ulepszaj swoje e-maile, korzystając z tego przewodnika krok po kroku.
-weight: 12
-url: /pl/java/sending-emails/attaching-files-to-emails-using-aspose-email/
+"description": "Naucz się dołączać pliki do wiadomości e-mail za pomocą Aspose.Email for Java. Ulepsz swoje wiadomości e-mail z łatwością, korzystając z tego przewodnika krok po kroku."
+"linktitle": "Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email"
+"second_title": "Aspose.Email Java E-mail Management API"
+"title": "Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email"
+"url": "/pl/java/sending-emails/attaching-files-to-emails-using-aspose-email/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Dołączanie plików do wiadomości e-mail za pomocą Aspose.Email
 
 ## Wstęp
 
-W świecie komunikacji e-mailowej możliwość wysyłania załączników jest kluczowa. Niezależnie od tego, czy wysyłasz ważne dokumenty, obrazy, czy jakikolwiek inny typ pliku, proces powinien być prosty i niezawodny. Aspose.Email dla Java upraszcza ten proces, udostępniając potężne narzędzia do dołączania plików do wiadomości e-mail.
+W świecie komunikacji e-mailowej możliwość wysyłania załączników jest kluczowa. Niezależnie od tego, czy wysyłasz ważne dokumenty, obrazy czy jakikolwiek inny typ pliku, proces powinien być prosty i niezawodny. Aspose.Email for Java upraszcza ten proces, zapewniając potężne narzędzia do dołączania plików do wiadomości e-mail.
 
-W tym przewodniku krok po kroku przeprowadzimy Cię przez proces dołączania plików do wiadomości e-mail za pomocą Aspose.Email dla Java. Dowiesz się, jak tworzyć i dostosowywać wiadomości e-mail, dodawać różne typy załączników oraz bezpiecznie zapisywać i wysyłać wiadomości e-mail.
+W tym przewodniku krok po kroku przeprowadzimy Cię przez proces dołączania plików do wiadomości e-mail przy użyciu Aspose.Email for Java. Dowiesz się, jak tworzyć i dostosowywać wiadomości e-mail, dodawać załączniki różnych typów oraz zapisywać lub wysyłać wiadomości e-mail z pewnością siebie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniesz, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1. Środowisko programistyczne Java: Upewnij się, że w systemie skonfigurowano środowisko programistyczne Java. Do skompilowania i uruchomienia przykładów kodu Java zawartych w tym przewodniku będziesz potrzebować języka Java.
+1. Środowisko programistyczne Java: Upewnij się, że masz środowisko programistyczne Java skonfigurowane w swoim systemie. Będziesz potrzebować Javy, aby skompilować i uruchomić przykłady kodu Java w tym przewodniku.
 
-2. Biblioteka Aspose.Email dla Java: Pobierz bibliotekę Aspose.Email dla Java z łącza pobierania:
+2. Biblioteka Aspose.Email dla języka Java: Pobierz bibliotekę Aspose.Email dla języka Java z linku do pobierania:
 
-   [Aspose.Email do pobrania Java](https://releases.aspose.com/email/java/)
+   [Aspose.Email dla Java Pobierz](https://releases.aspose.com/email/java/)
 
-   Po pobraniu dodaj pliki JAR Aspose.Email do ścieżki klas projektu Java. Ta biblioteka jest niezbędna do pracy z wiadomościami e-mail przy użyciu Aspose.Email.
+   Po pobraniu dodaj pliki JAR Aspose.Email do ścieżki klas swojego projektu Java. Ta biblioteka jest niezbędna do pracy z wiadomościami e-mail przy użyciu Aspose.Email.
 
-Po spełnieniu tych warunków wstępnych możesz rozpocząć załączanie plików do wiadomości e-mail za pomocą Aspose.Email dla Java. Aby dowiedzieć się, jak to zrobić, postępuj zgodnie z poniższym przewodnikiem krok po kroku.
+Mając te wymagania wstępne, możesz zacząć dołączać pliki do wiadomości e-mail za pomocą Aspose.Email for Java. Postępuj zgodnie z poniższym przewodnikiem krok po kroku, aby dowiedzieć się, jak to zrobić.
 
 ## Krok 1: Skonfiguruj środowisko Java
 
-Upewnij się, że masz zainstalowane i skonfigurowane Java i Aspose.Email for Java w swoim środowisku programistycznym.
+Upewnij się, że w środowisku programistycznym zainstalowano i skonfigurowano środowisko Java oraz Aspose.Email for Java.
 
 ## Krok 2: Utwórz nowy projekt Java
 
 Utwórz nowy projekt Java w wybranym zintegrowanym środowisku programistycznym (IDE).
 
-## Krok 3: Dodaj bibliotekę Aspose.Email dla Java
+## Krok 3: Dodaj Aspose.Email dla biblioteki Java
 
-Pobierz bibliotekę Aspose.Email dla Java, korzystając z łącza pobierania:
+Pobierz bibliotekę Aspose.Email for Java z linku do pobierania:
 
-[Aspose.Email do pobrania Java](https://releases.aspose.com/email/java/)
+[Aspose.Email dla Java Pobierz](https://releases.aspose.com/email/java/)
 
 Dodaj pobrane pliki JAR do ścieżki klas swojego projektu.
 
-## Krok 4: Zaimportuj klasy Aspose.Email
+## Krok 4: Importuj klasy Aspose.Email
 
-kodzie Java zaimportuj niezbędne klasy Aspose.Email:
+W kodzie Java zaimportuj niezbędne klasy Aspose.Email:
 
 ```java
 import com.aspose.email.*;
@@ -69,9 +71,9 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This email contains attachments.</p>");
 ```
 
-## Krok 6: Załącz pliki do wiadomości e-mail
+## Krok 6: Dołącz pliki do wiadomości e-mail
 
- Możesz załączyć pliki do wiadomości e-mail za pomocą`Attachment` klasa. Oto przykład załączenia pliku:
+Do wiadomości e-mail możesz dołączyć pliki za pomocą `Attachment` klasa. Oto przykład dołączania pliku:
 
 ```java
 Attachment attachment = new Attachment("path/to/attachment.pdf");
@@ -80,17 +82,17 @@ message.getAttachments().add(attachment);
 
 W razie potrzeby możesz dodać wiele załączników.
 
-## Krok 7: Zapisz lub wyślij e-mail
+## Krok 7: Zapisz lub wyślij wiadomość e-mail
 
-Po załączeniu plików możesz zapisać wiadomość e-mail w pliku lub ją wysłać. Aby zapisać go do pliku:
+Po dołączeniu plików możesz zapisać wiadomość e-mail do pliku lub wysłać ją. Aby zapisać ją do pliku:
 
 ```java
 message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 ```
 
-Aby wysłać wiadomość e-mail, możesz skorzystać z możliwości wysyłania wiadomości e-mail Aspose.Email. Aby uzyskać szczegółowe informacje na temat wysyłania wiadomości e-mail, zapoznaj się z dokumentacją Aspose.Email.
+Aby wysłać e-mail, możesz użyć funkcji wysyłania e-maili Aspose.Email. Zapoznaj się z dokumentacją Aspose.Email, aby uzyskać szczegółowe informacje na temat wysyłania e-maili.
 
-## Krok 8: Ukończ program
+## Krok 8: Zakończ program
 
 Oto kompletny program Java:
 
@@ -106,11 +108,11 @@ public class EmailWithAttachments {
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This email contains attachments.</p>");
 
-        // Dołączyć plik
+        // Dołącz plik
         Attachment attachment = new Attachment("path/to/attachment.pdf");
         message.getAttachments().add(attachment);
 
-        // Zapisz wiadomość e-mail w pliku
+        // Zapisz wiadomość e-mail do pliku
         message.save("email_with_attachments.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with attachments saved successfully.");
@@ -120,29 +122,31 @@ public class EmailWithAttachments {
 
 ## Wniosek
 
-W tym przewodniku nauczyłeś się, jak dołączać pliki do wiadomości e-mail za pomocą Aspose.Email dla Java. Możesz dostosować swoje wiadomości e-mail, dołączając różne typy plików, aby spełnić Twoje specyficzne potrzeby.
+W tym przewodniku dowiedziałeś się, jak dołączać pliki do wiadomości e-mail za pomocą Aspose.Email for Java. Możesz dostosować wiadomości e-mail, dołączając różne typy plików, aby spełnić swoje konkretne potrzeby.
 
-Jeśli masz dodatkowe pytania lub potrzebujesz pomocy, skontaktuj się z nami.
+Jeśli masz więcej pytań lub potrzebujesz pomocy, skontaktuj się z nami.
 
-## Często zadawane pytania (często zadawane pytania)
+## FAQ (najczęściej zadawane pytania)
 
-### Czy mogę załączyć wiele plików do jednej wiadomości e-mail?
-    Tak, możesz dołączyć wiele plików do wiadomości e-mail, dodając ich wiele`Attachment` obiekty do`MailMessage` obiekt`getAttachments()` kolekcja.
+### Czy mogę dołączyć wiele plików do jednej wiadomości e-mail?
+   Tak, możesz dołączyć wiele plików do wiadomości e-mail, dodając wiele `Attachment` obiekty do `MailMessage` obiekt `getAttachments()` kolekcja.
 
 ### Jakie typy plików mogę dołączyć do wiadomości e-mail za pomocą Aspose.Email?
-   Możesz dołączać szeroką gamę typów plików, w tym dokumenty, obrazy, pliki PDF i inne. Aspose.Email zapewnia elastyczność w obsłudze załączników.
+   Możesz dołączyć szeroką gamę typów plików, w tym dokumenty, obrazy, pliki PDF i inne. Aspose.Email zapewnia elastyczność w obsłudze załączników.
 
-### Jak wysłać wiadomość e-mail z załącznikami?
-   Aby wysłać wiadomość e-mail z załącznikami, możesz skorzystać z możliwości wysyłania wiadomości e-mail Aspose.Email, które obejmują konfigurację serwera poczty e-mail i określenie danych odbiorcy. Informacje na temat wysyłania wiadomości e-mail można znaleźć w dokumentacji Aspose.Email.
+### Jak mogę wysłać wiadomość e-mail z załącznikami?
+   Aby wysłać wiadomość e-mail z załącznikami, możesz użyć funkcji wysyłania wiadomości e-mail Aspose.Email, które obejmują skonfigurowanie serwera poczty e-mail i określenie szczegółów odbiorcy. Zapoznaj się z dokumentacją Aspose.Email dotyczącą wysyłania wiadomości e-mail.
 
 ### Czy mogę załączyć pliki ze zdalnego adresu URL?
-   Tak, możesz załączyć pliki ze zdalnego adresu URL, pobierając je do systemu lokalnego, a następnie dołączając do wiadomości e-mail za pomocą Aspose.Email.
+   Tak, możesz załączyć pliki ze zdalnego adresu URL, pobierając je na swój lokalny system, a następnie dołączając je do wiadomości e-mail za pomocą Aspose.Email.
 
 ### Czy istnieją ograniczenia rozmiaru załączników do wiadomości e-mail?
-   Serwery i klienci poczty e-mail mogą mieć ograniczenia rozmiaru załączników. Upewnij się, że rozmiar załączników mieści się w akceptowalnym zakresie, aby uniknąć problemów z wysyłaniem lub odbieraniem wiadomości e-mail.
+   Serwery i klienci poczty e-mail mogą mieć ograniczenia rozmiaru załączników. Upewnij się, że załączniki mieszczą się w dopuszczalnych granicach rozmiaru, aby uniknąć problemów z wysyłaniem lub odbieraniem wiadomości e-mail.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

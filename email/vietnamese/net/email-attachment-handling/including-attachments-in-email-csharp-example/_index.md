@@ -1,31 +1,33 @@
 ---
-title: Bao gồm tệp đính kèm trong email - Ví dụ C#
-linktitle: Bao gồm tệp đính kèm trong email - Ví dụ C#
-second_title: API xử lý email Aspose.Email .NET
-description: Tìm hiểu cách đưa tệp đính kèm vào email bằng Aspose.Email for .NET. Hướng dẫn từng bước với ví dụ về mã C#.
-weight: 10
-url: /vi/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Tìm hiểu cách thêm tệp đính kèm vào email bằng Aspose.Email cho .NET. Hướng dẫn từng bước với ví dụ mã C#."
+"linktitle": "Bao gồm các tệp đính kèm trong Email - Ví dụ C#"
+"second_title": "API xử lý email Aspose.Email .NET"
+"title": "Bao gồm các tệp đính kèm trong Email - Ví dụ C#"
+"url": "/vi/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bao gồm tệp đính kèm trong email - Ví dụ C#
+# Bao gồm các tệp đính kèm trong Email - Ví dụ C#
 
 
-## Giới thiệu về Bao gồm tệp đính kèm trong email
+## Giới thiệu về việc đính kèm tệp đính kèm trong Email
 
-Trong thế giới kỹ thuật số phát triển nhanh chóng ngày nay, giao tiếp qua email vẫn là nền tảng cho cả doanh nghiệp và cá nhân. Việc thêm tệp đính kèm vào email sẽ nâng cao giá trị của tin nhắn bằng cách cho phép bạn chia sẻ tài liệu, hình ảnh và tệp một cách dễ dàng. Hướng dẫn từng bước này sẽ hướng dẫn bạn quy trình đưa tệp đính kèm vào email của bạn bằng thư viện Aspose.Email cho .NET.
+Trong thế giới kỹ thuật số phát triển nhanh như hiện nay, giao tiếp qua email vẫn là nền tảng cho cả doanh nghiệp và cá nhân. Thêm tệp đính kèm vào email của bạn sẽ nâng cao giá trị của tin nhắn bằng cách cho phép bạn chia sẻ tài liệu, hình ảnh và tệp một cách dễ dàng. Hướng dẫn từng bước này sẽ hướng dẫn bạn quy trình thêm tệp đính kèm vào email của mình bằng thư viện Aspose.Email cho .NET.
 
 ## Thiết lập môi trường phát triển của bạn
 
-Trước khi đi sâu vào chi tiết mã hóa, hãy đảm bảo bạn có môi trường phát triển phù hợp. Có thể bạn sẽ cần:
+Trước khi đi sâu vào chi tiết mã hóa, hãy đảm bảo bạn có môi trường phát triển phù hợp. Bạn sẽ cần:
 
 - Visual Studio (hoặc bất kỳ IDE C# nào bạn chọn)
 - Đã cài đặt .NET Framework hoặc .NET Core
 
-## Thêm Aspose.Email vào dự án của bạn
+## Thêm Aspose.Email vào Dự án của bạn
 
 Aspose.Email là một thư viện mạnh mẽ giúp đơn giản hóa việc làm việc với email ở nhiều định dạng khác nhau. Để bắt đầu, hãy làm theo các bước sau:
 
@@ -35,7 +37,7 @@ Aspose.Email là một thư viện mạnh mẽ giúp đơn giản hóa việc l�
 
 ## Tạo một tin nhắn email
 
-Bây giờ Aspose.Email đã được tích hợp vào dự án của bạn, hãy bắt đầu tạo một email:
+Bây giờ Aspose.Email đã được tích hợp vào dự án của bạn, hãy bắt đầu tạo một tin nhắn email:
 
 ```csharp
 using Aspose.Email;
@@ -60,7 +62,7 @@ class Program
 }
 ```
 
-## Thêm tệp đính kèm vào email
+## Thêm tệp đính kèm vào Email
 
 Tệp đính kèm cung cấp thêm ngữ cảnh cho email của bạn. Hãy thêm tệp đính kèm vào email:
 
@@ -70,7 +72,7 @@ Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-## Gửi email
+## Gửi Email
 
 Khi email của bạn đã sẵn sàng, đã đến lúc gửi nó:
 
@@ -83,7 +85,7 @@ class Program
     {
         // Phần còn lại của mã của bạn...
 
-        // Gửi email bằng ứng dụng khách SMTP
+        // Gửi email bằng máy khách SMTP
         SmtpClient client = new SmtpClient("smtp.example.com", 587);
         client.Username = "your_username";
         client.Password = "your_password";
@@ -94,17 +96,17 @@ class Program
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá cách đưa tệp đính kèm vào email của bạn bằng Aspose.Email cho .NET. Bằng cách làm theo các bước được nêu ở trên, bạn có thể nâng cao khả năng liên lạc qua email của mình bằng các tệp đính kèm có nội dung phong phú. Thư viện Aspose.Email đơn giản hóa quy trình này, giúp việc tạo và gửi email có tệp đính kèm theo chương trình trở nên dễ dàng hơn bao giờ hết.
+Trong hướng dẫn này, chúng tôi đã khám phá cách đưa tệp đính kèm vào email của bạn bằng Aspose.Email cho .NET. Bằng cách làm theo các bước được nêu ở trên, bạn có thể nâng cao khả năng giao tiếp qua email của mình bằng các tệp đính kèm có nội dung phong phú. Thư viện Aspose.Email đơn giản hóa quy trình này, giúp việc tạo và gửi email có tệp đính kèm theo chương trình trở nên dễ dàng hơn bao giờ hết.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào tôi có thể tải xuống thư viện Aspose.Email?
+### Tôi có thể tải xuống thư viện Aspose.Email như thế nào?
 
- Bạn có thể tải xuống thư viện Aspose.Email từ Aspose.Rereleases:[Aspose.Releases](https://releases.aspose.com/email/net/) hoặc bằng cách sử dụng Trình quản lý gói NuGet trong Visual Studio.
+Bạn có thể tải xuống thư viện Aspose.Email từ Aspose.Releases: [Aspose.Phát hành](https://releases.aspose.com/email/net/) hoặc bằng cách sử dụng NuGet Package Manager trong Visual Studio.
 
-### Tôi có thể đính kèm nhiều tập tin vào một email không?
+### Tôi có thể đính kèm nhiều tệp vào một email không?
 
- Tuyệt đối! Bạn có thể thêm nhiều tệp đính kèm vào một email bằng cách tạo và thêm nhiều tệp đính kèm`Attachment` đối tượng để`Attachments` bộ sưu tập của bạn`MailMessage`.
+Chắc chắn rồi! Bạn có thể thêm nhiều tệp đính kèm vào một email bằng cách tạo và thêm nhiều `Attachment` đối tượng để `Attachments` bộ sưu tập của bạn `MailMessage`.
 
 ### Aspose.Email có phù hợp với cả .NET Framework và .NET Core không?
 
@@ -112,14 +114,16 @@ Có, Aspose.Email tương thích với cả .NET Framework và .NET Core, mang �
 
 ### Aspose.Email có hỗ trợ gửi email qua kết nối an toàn không?
 
-Có, bạn có thể định cấu hình Aspose.Email để gửi email qua kết nối an toàn bằng các giao thức như SMTPS hoặc STARTTLS. Đảm bảo cung cấp các cài đặt máy chủ thích hợp.
+Có, bạn có thể cấu hình Aspose.Email để gửi email qua các kết nối an toàn bằng các giao thức như SMTPS hoặc STARTTLS. Đảm bảo cung cấp các cài đặt máy chủ phù hợp.
 
-### Tôi có thể tìm thêm thông tin về khả năng của Aspose.Email ở đâu?
+### Tôi có thể tìm thêm thông tin về các tính năng của Aspose.Email ở đâu?
 
- Để biết thêm thông tin chi tiết về các tính năng, lớp và phương thức của Aspose.Email, hãy tham khảo[Tài liệu tham khảo API Aspose.Email](https://reference.aspose.com/email/net/).
+Để biết thông tin chi tiết hơn về các tính năng, lớp và phương thức của Aspose.Email, hãy tham khảo [Tài liệu tham khảo API Aspose.Email](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

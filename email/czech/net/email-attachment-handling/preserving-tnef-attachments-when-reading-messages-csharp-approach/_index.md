@@ -1,62 +1,64 @@
 ---
-title: Zachování příloh TNEF při čtení zpráv – přístup C#
-linktitle: Zachování příloh TNEF při čtení zpráv – přístup C#
-second_title: Aspose.Email .NET Email Processing API
-description: V tomto podrobném průvodci se zdrojovým kódem se dozvíte, jak zachovat přílohy TNEF pomocí Aspose.Email pro .NET.
-weight: 15
-url: /cs/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
+"description": "Naučte se, jak uchovávat přílohy TNEF pomocí Aspose.Email pro .NET v tomto podrobném návodu se zdrojovým kódem."
+"linktitle": "Zachování příloh TNEF při čtení zpráv - přístup v C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Zachování příloh TNEF při čtení zpráv - přístup v C#"
+"url": "/cs/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zachování příloh TNEF při čtení zpráv – přístup C#
+# Zachování příloh TNEF při čtení zpráv - přístup v C#
 
 
 ## Úvod do příloh TNEF
 
-TNEF, také známý jako „winmail.dat“, je proprietární formát přílohy e-mailu používaný aplikacemi Microsoft Outlook a Exchange. Zapouzdřuje různé prvky, jako je formátovaný text, vložené obrázky a dokonce i informace z kalendáře. Když jsou však e-maily přenášeny přes různé e-mailové klienty nebo platformy, přílohy TNEF se někdy mohou stát nečitelnými nebo nepřístupnými. To je místo, kde Aspose.Email for .NET přichází na pomoc.
+TNEF, známý také jako „winmail.dat“, je proprietární formát e-mailových příloh používaný aplikacemi Microsoft Outlook a Exchange. Zapouzdřuje různé prvky, jako je formátovaný text, vložené obrázky a dokonce i informace z kalendáře. Pokud jsou však e-maily přenášeny mezi různými e-mailovými klienty nebo platformami, přílohy TNEF se někdy mohou stát nečitelnými nebo nepřístupnými. A zde přichází na pomoc Aspose.Email for .NET.
 
 ## Začínáme s Aspose.Email pro .NET
 
-Aspose.Email for .NET je komplexní knihovna, která poskytuje širokou škálu funkcionalit pro práci s e-maily a jejich přílohami. Chcete-li začít, musíte:
+Aspose.Email pro .NET je komplexní knihovna, která poskytuje širokou škálu funkcí pro práci s e-maily a jejich přílohami. Chcete-li začít, potřebujete:
 
-1.  Stáhnout a nainstalovat Aspose.Email: Navštivte[tady](https://releases.aspose.com/email/net) stáhnout a nainstalovat nejnovější verzi Aspose.Email pro .NET.
+1. Stáhněte a nainstalujte Aspose.Email: Navštivte [zde](https://releases.aspose.com/email/net) stáhnout a nainstalovat nejnovější verzi Aspose.Email pro .NET.
 
-2. Vytvoření nového projektu: Otevřete prostředí sady Visual Studio a vytvořte nový projekt C#.
+2. Vytvoření nového projektu: Otevřete prostředí Visual Studia a vytvořte nový projekt C#.
 
-3. Přidat odkaz: Přidejte odkaz na stažené sestavení Aspose.Email ve vašem projektu.
+3. Přidat odkaz: Přidejte odkaz na stažené sestavení Aspose.Email do svého projektu.
 
 ## Načítání a analýza e-mailových zpráv
 
-Chcete-li pracovat s e-mailovými zprávami, musíte nejprve načíst a analyzovat e-mail. Aspose.Email poskytuje třídy, které vám umožňují načítat e-maily z různých zdrojů, včetně souborů, streamů a dokonce i e-mailových serverů. Zde je příklad, jak můžete načíst e-mailovou zprávu ze souboru:
+Abyste mohli pracovat s e-mailovými zprávami, musíte je nejprve načíst a analyzovat. Aspose.Email poskytuje třídy, které vám umožňují načítat e-maily z různých zdrojů, včetně souborů, streamů a dokonce i e-mailových serverů. Zde je příklad, jak můžete načíst e-mailovou zprávu ze souboru:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Outlook;
 
-// Vložte e-mail s přílohou TNEF
+// Načíst e-mail s přílohou TNEF
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-## Identifikace a extrahování příloh TNEF
+## Identifikace a extrakce příloh TNEF
 
-Po načtení e-mailové zprávy je dalším krokem identifikace a extrahování příloh TNEF. Přílohy TNEF jsou zapouzdřeny ve speciálním souboru „winmail.dat“. Aspose.Email zjednodušuje proces identifikace a extrahování těchto příloh:
+Jakmile načtete e-mailovou zprávu, dalším krokem je identifikace a extrakce příloh TNEF. Přílohy TNEF jsou zapouzdřeny ve speciálním souboru „winmail.dat“. Aspose.Email zjednodušuje proces identifikace a extrakce těchto příloh:
 
 ```csharp
-// Zkontrolujte, zda zpráva obsahuje přílohy TNEF
+// Zkontrolujte, zda zpráva obsahuje přílohy TNEF.
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Extrahujte přílohu TNEF
+        // Extrahovat přílohu TNEF
         var tnefAttachment = attachment;
 
-        //Otevřete vlastnosti TNEF a v případě potřeby je upravte
-        // tnefAttachment.Properties...
+        // Přístup k vlastnostem TNEF a jejich úprava v případě potřeby
+        // tnefAttachment.Vlastnosti...
     }
 }
 ```
@@ -71,9 +73,9 @@ emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachm
 message.Save("path/to/modified_email.eml", emlSaveOptions);
 ```
 
-## Dokončete příklad kódu C#
+## Kompletní příklad kódu C#
 
-Zde je úplný příklad toho, jak můžete pomocí Aspose.Email pro .NET číst a uchovávat přílohy TNEF:
+Zde je kompletní příklad toho, jak můžete použít Aspose.Email pro .NET ke čtení a uchovávání příloh TNEF:
 
 ```csharp
 using Aspose.Email;
@@ -85,24 +87,24 @@ namespace TnefAttachmentExample
     {
         static void Main(string[] args)
         {
-            // Vložte e-mail s přílohou TNEF
+            // Načíst e-mail s přílohou TNEF
 			MsgLoadOptions options = new MsgLoadOptions();
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Zkontrolujte, zda zpráva obsahuje přílohy TNEF
+			 // Zkontrolujte, zda zpráva obsahuje přílohy TNEF.
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					// Extrahujte přílohu TNEF
+					// Extrahovat přílohu TNEF
 					var tnefAttachment = attachment;
 
-					//Otevřete vlastnosti TNEF a v případě potřeby je upravte
-					// tnefAttachment.Properties...
+					// Přístup k vlastnostem TNEF a jejich úprava v případě potřeby
+					// tnefAttachment.Vlastnosti...
 				}
 			}
-			// Zachování příloh TNEF
+			// Zachování příloh TNEF	
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -114,33 +116,35 @@ namespace TnefAttachmentExample
 ## Tipy pro manipulaci s přílohami TNEF
 
 - Před pokusem o extrakci vždy zkontrolujte, zda e-mail obsahuje přílohy TNEF.
-- Využijte metody Aspose.Email pro přístup a zachování různých prvků v přílohách TNEF.
+- Využijte metody Aspose.Email pro přístup k různým prvkům v přílohách TNEF a jejich uchování.
 - Ujistěte se, že máte nejnovější verzi Aspose.Email pro .NET, abyste mohli využívat nejaktuálnější funkce.
 
 ## Závěr
 
-V této příručce jsme prozkoumali, jak zachovat přílohy TNEF při čtení zpráv pomocí programovacího jazyka C# a Aspose.Email for .NET. Aspose.Email se svou komplexní sadou nástrojů zjednodušuje proces identifikace, extrahování a uchovávání příloh TNEF a zajišťuje, že klíčové informace v e-mailech zůstanou nedotčené a dostupné.
+této příručce jsme prozkoumali, jak zachovat přílohy TNEF při čtení zpráv pomocí programovacího jazyka C# a Aspose.Email pro .NET. Díky své komplexní sadě nástrojů Aspose.Email zjednodušuje proces identifikace, extrakce a uchovávání příloh TNEF a zajišťuje, že klíčové informace v e-mailech zůstanou neporušené a přístupné.
 
-## FAQ
+## Často kladené otázky
 
 ### Jak si mohu stáhnout Aspose.Email pro .NET?
 
- Aspose.Email pro .NET si můžete stáhnout ze stránky vydání:[tady](https://releases.aspose.com/email/net)
+Aspose.Email pro .NET si můžete stáhnout ze stránky s verzemi: [zde](https://releases.aspose.com/email/net)
 
-### Mohu použít Aspose.Email pro práci s jinými e-mailovými formáty?
+### Mohu použít Aspose.Email pro práci s jinými formáty e-mailů?
 
 Ano, Aspose.Email podporuje různé formáty e-mailů, včetně PST, EML, MSG a dalších.
 
 ### Je Aspose.Email vhodný pro malé i velké aplikace?
 
-Absolutně! Aspose.Email je navržen tak, aby vyhovoval široké škále aplikací, od malých projektů až po řešení na podnikové úrovni.
+Rozhodně! Aspose.Email je navržen tak, aby vyhovoval široké škále aplikací, od malých projektů až po řešení na podnikové úrovni.
 
 ### Je Aspose.Email pravidelně aktualizován?
 
-Ano, Aspose udržuje pravidelné aktualizace, aby byla zajištěna kompatibilita s nejnovějšími technologiemi a platformami.
+Ano, Aspose pravidelně aktualizuje, aby byla zajištěna kompatibilita s nejnovějšími technologiemi a platformami.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

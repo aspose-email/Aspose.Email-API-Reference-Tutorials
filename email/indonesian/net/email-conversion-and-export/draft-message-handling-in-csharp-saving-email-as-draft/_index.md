@@ -1,31 +1,33 @@
 ---
-title: Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
-linktitle: Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
-second_title: API Pemrosesan Email Aspose.Email .NET
-description: Pelajari cara menerapkan penanganan draf email di C# menggunakan Aspose.Email untuk .NET. Buat, edit, dan simpan draf dengan lancar.
-weight: 17
-url: /id/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/
+"description": "Pelajari cara mengimplementasikan penanganan draf email di C# menggunakan Aspose.Email untuk .NET. Buat, edit, dan simpan draf dengan mudah."
+"linktitle": "Penanganan Pesan Draft dalam C# - Menyimpan Email sebagai Draft"
+"second_title": "API Pemrosesan Email Aspose.Email .NET"
+"title": "Penanganan Pesan Draft dalam C# - Menyimpan Email sebagai Draft"
+"url": "/id/net/email-conversion-and-export/draft-message-handling-in-csharp-saving-email-as-draft/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Penanganan Draf Pesan di C# - Menyimpan Email sebagai Draf
+# Penanganan Pesan Draft dalam C# - Menyimpan Email sebagai Draft
 
 
 ## Perkenalan
 
-Penanganan draf pesan adalah fungsi penting untuk klien email. Pengguna sering kali memerlukan kemampuan untuk mulai menulis email, menyimpannya sebagai draf, dan kembali lagi nanti untuk pengeditan lebih lanjut atau pengiriman akhirnya. Artikel ini menunjukkan cara mengimplementasikan fitur ini menggunakan perpustakaan Aspose.Email untuk .NET.
+Penanganan pesan draf merupakan fungsi penting bagi klien email. Pengguna sering kali memerlukan kemampuan untuk mulai menulis email, menyimpannya sebagai draf, dan kembali lagi nanti untuk diedit lebih lanjut atau dikirim nanti. Artikel ini menunjukkan cara mengimplementasikan fitur ini menggunakan pustaka Aspose.Email for .NET.
 
 ## Prasyarat
 
-Sebelum kita mendalami penerapannya, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai menerapkannya, pastikan Anda telah memenuhi prasyarat berikut:
 
 - Visual Studio (atau lingkungan pengembangan C# apa pun)
-- Aspose.Email untuk perpustakaan .NET
+- Aspose.Email untuk pustaka .NET
 
- Anda dapat mengunduh perpustakaan Aspose.Email dari[Di Sini](https://releases.aspose.com/email/net).
+Anda dapat mengunduh pustaka Aspose.Email dari [Di Sini](https://releases.aspose.com/email/net).
 
 ## Menyiapkan Proyek
 
@@ -39,7 +41,7 @@ Untuk membuat draf pesan, ikuti langkah-langkah berikut:
 ## Menambahkan Penerima dan Subjek
 
 ```csharp
-// Buat instans MailMessage baru
+// Buat instance MailMessage baru
 MailMessage draft = new MailMessage();
 
 // Tambahkan penerima
@@ -51,7 +53,7 @@ draft.Bcc.Add("bcc@example.com");
 draft.Subject = "Draft Email Demo";
 ```
 
-## Menulis Badan Email
+## Menyusun Isi Email
 
 ```csharp
 // Tetapkan isi email
@@ -61,16 +63,16 @@ draft.Body = new TextBody("Hello, this is a draft email.");
 ## Menyimpan sebagai Draf
 
 ```csharp
-// Simpan email sebagai draf
+// Simpan email sebagai draft
 draft.Save("draft.eml", SaveOptions.DefaultEml);
 ```
 
 ## Memuat dan Mengedit Draf
 
-Untuk memuat dan mengedit pesan draf, ikuti langkah-langkah berikut:
+Untuk memuat dan mengedit draf pesan, ikuti langkah-langkah berikut:
 
 ```csharp
-// Muat draf email
+// Memuat draf email
 MailMessage loadedDraft = MailMessage.Load("draft.eml");
 
 // Edit penerima
@@ -86,13 +88,13 @@ loadedDraft.Save("updated_draft.eml", SaveOptions.DefaultEml);
 
 ## Kesimpulan
 
-Dalam artikel ini, kita menjelajahi cara menangani pesan draf di C# menggunakan pustaka Aspose.Email untuk .NET. Kami mempelajari cara membuat, mengedit, dan menyimpan draf email, memberikan pengalaman yang lancar kepada pengguna saat menulis pesan. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat menyempurnakan aplikasi klien email Anda dengan fungsionalitas draf pesan.
+Dalam artikel ini, kami membahas cara menangani draf pesan dalam C# menggunakan pustaka Aspose.Email for .NET. Kami mempelajari cara membuat, mengedit, dan menyimpan draf email, yang memberikan pengalaman yang lancar bagi pengguna saat menulis pesan. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat menyempurnakan aplikasi klien email Anda dengan fungsionalitas draf pesan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara mengunduh perpustakaan Aspose.Email untuk .NET?
+### Bagaimana cara mengunduh pustaka Aspose.Email untuk .NET?
 
- Anda dapat mengunduh perpustakaan Aspose.Email untuk .NET dari[Di Sini](https://releases.aspose.com/email/net).
+Anda dapat mengunduh pustaka Aspose.Email untuk .NET dari [Di Sini](https://releases.aspose.com/email/net).
 
 ### Bisakah saya mengedit penerima dan subjek draf yang disimpan?
 
@@ -100,18 +102,20 @@ Ya, Anda dapat memuat draf yang disimpan, mengedit penerima, subjek, dan kontenn
 
 ### Apakah draf email disimpan dalam format tertentu?
 
-Ya, draf email disimpan dalam format EML, yang merupakan format pesan email yang banyak digunakan.
+Ya, draf email disimpan dalam format EML, yang merupakan format yang banyak digunakan untuk pesan email.
 
-### Dapatkah saya mengintegrasikan penanganan draf pesan ke dalam aplikasi email saya yang sudah ada?
+### Dapatkah saya mengintegrasikan penanganan pesan draf ke aplikasi email saya yang sudah ada?
 
-Tentu saja, dengan mengikuti langkah-langkah yang disediakan dalam panduan ini, Anda dapat dengan mudah mengintegrasikan penanganan draf pesan ke dalam aplikasi klien email Anda yang sudah ada.
+Tentu saja, dengan mengikuti langkah-langkah yang disediakan dalam panduan ini, Anda dapat dengan mudah mengintegrasikan penanganan pesan draf ke dalam aplikasi klien email Anda yang sudah ada.
 
-### Apakah perpustakaan Aspose.Email mendukung fungsi terkait email lainnya?
+### Apakah pustaka Aspose.Email mendukung fungsionalitas terkait email lainnya?
 
- Ya, perpustakaan Aspose.Email menawarkan berbagai fitur untuk bekerja dengan pesan email, termasuk mengirim, menerima, dan memanipulasi email dan lampiran. Anda dapat merujuk ke dokumentasi untuk lebih jelasnya:[Di Sini](https://reference.aspose.com)
+Ya, pustaka Aspose.Email menawarkan berbagai fitur untuk bekerja dengan pesan email, termasuk mengirim, menerima, dan memanipulasi email dan lampiran. Anda dapat merujuk ke dokumentasi untuk keterangan lebih rinci: [Di Sini](https://reference.aspose.com)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

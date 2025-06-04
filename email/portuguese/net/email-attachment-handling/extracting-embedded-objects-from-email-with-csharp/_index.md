@@ -1,30 +1,32 @@
 ---
-title: Extraindo objetos incorporados de email com C#
-linktitle: Extraindo objetos incorporados de email com C#
-second_title: API de processamento de e-mail Aspose.Email .NET
-description: Aprenda como extrair objetos incorporados de emails usando C# e Aspose.Email for .NET. Guia passo a passo com exemplos de código.
-weight: 16
-url: /pt/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Aprenda a extrair objetos incorporados de e-mails usando C# e Aspose.Email para .NET. Guia passo a passo com exemplos de código."
+"linktitle": "Extraindo objetos incorporados de e-mail com C#"
+"second_title": "API de processamento de e-mail Aspose.Email .NET"
+"title": "Extraindo objetos incorporados de e-mail com C#"
+"url": "/pt/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extraindo objetos incorporados de email com C#
+# Extraindo objetos incorporados de e-mail com C#
 
 
-## Introdução aos objetos incorporados em e-mails
+## Introdução a objetos incorporados em e-mails
 
-Objetos incorporados em e-mails referem-se a arquivos inseridos diretamente no conteúdo do e-mail, em vez de serem anexados separadamente. Esses objetos enriquecem a experiência do email, permitindo que o remetente inclua imagens, animações ou conteúdo interativo no corpo da mensagem.
+Objetos incorporados em e-mails referem-se a arquivos que são inseridos diretamente no conteúdo do e-mail, em vez de serem anexados separadamente. Esses objetos enriquecem a experiência do e-mail, permitindo que o remetente inclua imagens, animações ou conteúdo interativo no corpo da mensagem.
 
-## Primeiros passos com Aspose.Email para .NET
+## Introdução ao Aspose.Email para .NET
 
- Aspose.Email for .NET é uma biblioteca poderosa que fornece vários recursos para trabalhar com emails, incluindo análise, criação e manipulação de mensagens de email. Para começar, você precisa ter a biblioteca Aspose.Email for .NET instalada em seu projeto. Você pode baixá-lo em Aspose.Lançamentos:[Aspose.Releases](https://releases.aspose.com/email/net/) ou use um gerenciador de pacotes como o NuGet.
+Aspose.Email para .NET é uma biblioteca poderosa que oferece diversos recursos para trabalhar com e-mails, incluindo análise, criação e manipulação de mensagens de e-mail. Para começar, você precisa ter a biblioteca Aspose.Email para .NET instalada em seu projeto. Você pode baixá-la em Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) ou use um gerenciador de pacotes como o NuGet.
 
 ## Carregando e analisando um e-mail
 
-Para extrair objetos incorporados de um email, primeiro você precisa carregar e analisar a mensagem de email. Veja como você pode fazer isso:
+Para extrair objetos incorporados de um e-mail, primeiro você precisa carregar e analisar a mensagem. Veja como fazer isso:
 
 ```csharp
 // Importe os namespaces necessários
@@ -37,7 +39,7 @@ var message = MailMessage.Load("path/to/your/email.eml");
 
 ## Identificando e extraindo objetos incorporados
 
-Depois que a mensagem de e-mail for carregada, você poderá percorrer seus AlternateViews para identificar e extrair objetos incorporados. AlternateViews representam diferentes formatos de email, incluindo HTML e texto simples. Objetos incorporados são frequentemente encontrados na visualização HTML.
+Após o carregamento da mensagem de e-mail, você pode iterar pelas AlternateViews para identificar e extrair objetos incorporados. As AlternateViews representam diferentes formatos do e-mail, incluindo HTML e texto simples. Objetos incorporados são frequentemente encontrados na visualização HTML.
 
 ```csharp
 // Iterar por visualizações alternativas
@@ -45,7 +47,7 @@ foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // Extraia objetos incorporados de conteúdo HTML
+        // Extrair objetos incorporados do conteúdo HTML
         foreach (var linkedResource in view.LinkedResources)
         {
             // Extraia e salve o recurso vinculado (objeto incorporado)
@@ -55,13 +57,13 @@ foreach (var view in message.AlternateViews)
 }
 ```
 
-## Salvando objetos extraídos
+## Salvando Objetos Extraídos
 
-Depois de identificar e extrair os objetos incorporados, você pode salvá-los no local desejado. O ContentId do recurso vinculado é frequentemente usado como nome do arquivo.
+Depois de identificar e extrair os objetos incorporados, você pode salvá-los no local desejado. O ContentId do recurso vinculado costuma ser usado como nome do arquivo.
 
-## Código fonte completo
+## Código-fonte completo
 
-Aqui está o código-fonte completo para extrair objetos incorporados de um e-mail usando Aspose.Email for .NET:
+Aqui está o código-fonte completo para extrair objetos incorporados de um e-mail usando o Aspose.Email para .NET:
 
 ```csharp
 using Aspose.Email;
@@ -81,7 +83,7 @@ namespace EmbeddedObjectExtractor
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // Extraia objetos incorporados de conteúdo HTML
+                    // Extrair objetos incorporados do conteúdo HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
                         // Extraia e salve o recurso vinculado (objeto incorporado)
@@ -96,32 +98,34 @@ namespace EmbeddedObjectExtractor
 
 ## Conclusão
 
-Neste artigo, exploramos como extrair objetos incorporados de e-mails usando C# e a biblioteca Aspose.Email for .NET. Cobrimos todo o processo, desde o carregamento e análise do e-mail até a identificação e salvamento dos objetos incorporados. Seguindo este guia, você pode aprimorar seus recursos de processamento de e-mail e enriquecer o conteúdo de seus aplicativos.
+Neste artigo, exploramos como extrair objetos incorporados de e-mails usando C# e a biblioteca Aspose.Email para .NET. Abordamos todo o processo, desde o carregamento e a análise do e-mail até a identificação e o salvamento dos objetos incorporados. Seguindo este guia, você poderá aprimorar seus recursos de processamento de e-mails e enriquecer o conteúdo dos seus aplicativos.
 
 ## Perguntas frequentes
 
 ### Como instalo o Aspose.Email para .NET?
 
- Você pode instalar o Aspose.Email for .NET baixando-o em Aspose.Lançamentos:[Aspose.Releases](https://releases.aspose.com/email/net/) ou usando um gerenciador de pacotes como o NuGet. 
+Você pode instalar o Aspose.Email para .NET baixando-o do Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) ou usando um gerenciador de pacotes como o NuGet. 
 
 ### Posso extrair objetos incorporados de anexos que não sejam HTML?
 
-Sim, Aspose.Email for .NET fornece métodos para extrair objetos incorporados de vários tipos de anexos, incluindo HTML, texto simples e até formatos multimídia.
+Sim, o Aspose.Email para .NET fornece métodos para extrair objetos incorporados de vários tipos de anexos, incluindo HTML, texto simples e até mesmo formatos multimídia.
 
-### O uso do Aspose.Email for .NET é gratuito?
+### O Aspose.Email para .NET é gratuito?
 
- Aspose.Email for .NET é uma biblioteca comercial e pode ser necessário adquirir uma licença para usá-la em seus projetos. Consulte o[página de preços](https://purchase.aspose.com/pricing/email/net) Para maiores informações.
+Aspose.Email para .NET é uma biblioteca comercial e você pode precisar adquirir uma licença para usá-la em seus projetos. Consulte a [página de preços](https://purchase.aspose.com/pricing/email/net) para maiores informações.
 
 ### Posso modificar os objetos incorporados extraídos antes de salvar?
 
-Sim, você pode manipular os objetos incorporados extraídos antes de salvá-los. A biblioteca Aspose.Email oferece vários métodos para modificar conteúdo e recursos de email.
+Sim, você pode manipular os objetos incorporados extraídos antes de salvá-los. A biblioteca Aspose.Email oferece vários métodos para modificar o conteúdo e os recursos do e-mail.
 
-### Onde posso encontrar mais exemplos de uso do Aspose.Email for .NET?
+### Onde posso encontrar mais exemplos de uso do Aspose.Email para .NET?
 
- Você pode encontrar mais exemplos de código e tutoriais no[Referência de API](https://reference.aspose.com/email/net/). 
+Você pode encontrar mais exemplos de código e tutoriais em [Referência de API](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

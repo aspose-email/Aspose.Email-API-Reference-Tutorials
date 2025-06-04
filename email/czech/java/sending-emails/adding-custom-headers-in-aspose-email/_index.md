@@ -1,54 +1,56 @@
 ---
-title: Přidání vlastních záhlaví v Aspose.Email
-linktitle: Přidání vlastních záhlaví v Aspose.Email
-second_title: Aspose.Email Java Email Management API
-description: Naučte se, jak vylepšit své e-mailové zprávy přidáním vlastních záhlaví pomocí Aspose.Email for Java. Vylepšete metadata a organizaci e-mailů.
-weight: 15
-url: /cs/java/sending-emails/adding-custom-headers-in-aspose-email/
+"description": "Naučte se, jak vylepšit své e-mailové zprávy přidáním vlastních záhlaví pomocí Aspose.Email pro Javu. Vylepšete metadata a organizaci e-mailů."
+"linktitle": "Přidání vlastních záhlaví v Aspose.Email"
+"second_title": "API pro správu e-mailů v Javě od Aspose.Email"
+"title": "Přidání vlastních záhlaví v Aspose.Email"
+"url": "/cs/java/sending-emails/adding-custom-headers-in-aspose-email/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Přidání vlastních záhlaví v Aspose.Email
 
 
-## Úvod
+## Zavedení
 
-Ve světě e-mailové komunikace může být cenným nástrojem možnost přidávat do e-mailových zpráv vlastní záhlaví. Vlastní záhlaví vám umožní zahrnout další informace nebo metadata do vašich e-mailů, což může být užitečné pro různé účely, jako je sledování, filtrování nebo kategorizace zpráv.
+Ve světě e-mailové komunikace může být možnost přidávat do e-mailových zpráv vlastní záhlaví cenným nástrojem. Vlastní záhlaví vám umožňují zahrnout do e-mailů další informace nebo metadata, což může být užitečné pro různé účely, jako je sledování, filtrování nebo kategorizace zpráv.
 
-Aspose.Email for Java poskytuje výkonné a flexibilní API pro práci s e-mailovými zprávami, včetně možnosti přidávat do vašich e-mailů vlastní záhlaví. V tomto podrobném průvodci vás provedeme procesem přidávání vlastních záhlaví do e-mailové zprávy pomocí Aspose.Email for Java.
+Aspose.Email pro Javu poskytuje výkonné a flexibilní API pro práci s e-mailovými zprávami, včetně možnosti přidávat k e-mailům vlastní záhlaví. V tomto podrobném návodu vás provedeme procesem přidávání vlastních záhlaví do e-mailové zprávy pomocí Aspose.Email pro Javu.
 
 ## Předpoklady
 
 Než začnete, ujistěte se, že máte splněny následující předpoklady:
 
-1. Vývojové prostředí Java: Ujistěte se, že máte ve svém systému nastavené vývojové prostředí Java. Ke kompilaci a spuštění příkladů kódu Java v této příručce budete potřebovat Javu.
+1. Vývojové prostředí Java: Ujistěte se, že máte ve svém systému nastavené vývojové prostředí Java. K kompilaci a spuštění příkladů kódu Java v této příručce budete potřebovat Javu.
 
-2.  Knihovna Aspose.Email for Java: Stáhněte si knihovnu Aspose.Email for Java z odkazu ke stažení:[Aspose.Email pro stahování Java](https://releases.aspose.com/email/java/)
+2. Knihovna Aspose.Email pro Java: Stáhněte si knihovnu Aspose.Email pro Java z odkazu ke stažení: [Aspose.Email pro stažení v Javě](https://releases.aspose.com/email/java/)
 
-   Po stažení přidejte soubory JAR Aspose.Email do cesty třídy vašeho projektu Java. Tato knihovna je nezbytná pro práci s e-mailovými zprávami pomocí Aspose.Email.
+   Po stažení přidejte soubory JAR Aspose.Email do třídní cesty vašeho projektu Java. Tato knihovna je nezbytná pro práci s e-mailovými zprávami pomocí Aspose.Email.
 
-těmito předpoklady jste připraveni začít přidávat vlastní záhlaví do svých e-mailových zpráv pomocí Aspose.Email for Java. Postupujte podle podrobného průvodce v předchozí části a zjistěte, jak to provést.
+Po splnění těchto předpokladů jste připraveni začít přidávat vlastní záhlaví do svých e-mailových zpráv pomocí Aspose.Email pro Javu. Postupujte podle podrobného návodu v předchozí části a zjistěte, jak to provést.
 
-Rozhodně! Níže je podrobný návod, jak přidat vlastní záhlaví do Aspose.Email pomocí Aspose.Email for Java API. Tato příručka obsahuje příklady zdrojového kódu.
+Jistě! Níže je uveden podrobný návod, jak přidat vlastní záhlaví do Aspose.Email pomocí rozhraní Aspose.Email pro Java API. Tento návod obsahuje příklady zdrojového kódu.
 
-## Krok 1: Nastavte své prostředí Java
+## Krok 1: Nastavení prostředí Java
 
-Než začnete, ujistěte se, že máte Java a Aspose.Email for Java správně nainstalované a nastavené ve vašem vývojovém prostředí.
+Než začnete, ujistěte se, že máte ve svém vývojovém prostředí správně nainstalovanou a nastavenou Javu a Aspose.Email pro Javu.
 
-## Krok 2: Vytvořte nový projekt Java
+## Krok 2: Vytvořte nový projekt v Javě
 
-Vytvořte nový projekt Java ve vašem preferovaném integrovaném vývojovém prostředí (IDE).
+Vytvořte nový projekt Java ve vámi preferovaném integrovaném vývojovém prostředí (IDE).
 
-## Krok 3: Přidejte knihovnu Aspose.Email pro Java
+## Krok 3: Přidání knihovny Aspose.Email pro Java
 
-Do projektu musíte přidat knihovnu Aspose.Email for Java. Můžete to provést stažením knihovny z uvedeného odkazu:
+Do svého projektu je potřeba přidat knihovnu Aspose.Email pro Javu. Můžete to provést stažením knihovny z uvedeného odkazu:
 
-[Aspose.Email pro stahování Java](https://releases.aspose.com/email/java/)
+[Aspose.Email pro stažení v Javě](https://releases.aspose.com/email/java/)
 
-Po stažení přidejte soubory JAR Aspose.Email do cesty třídy vašeho projektu.
+Po stažení přidejte soubory JAR Aspose.Email do cesty tříd vašeho projektu.
 
 ## Krok 4: Import tříd Aspose.Email
 
@@ -70,16 +72,16 @@ message.setTo("recipient@example.com");
 message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 ```
 
-## Krok 6: Přidejte vlastní záhlaví
+## Krok 6: Přidání vlastních záhlaví
 
- Chcete-li do e-mailu přidat vlastní záhlaví, můžete použít`MailMessage` objektu`getHeaders` metoda:
+Chcete-li do e-mailu přidat vlastní záhlaví, můžete použít `MailMessage` objektu `getHeaders` metoda:
 
 ```java
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 ```
 
-Můžete přidat tolik vlastních záhlaví, kolik potřebujete.
+Můžete přidat libovolný počet vlastních záhlaví.
 
 ## Krok 7: Uložte e-mail
 
@@ -91,25 +93,25 @@ message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
 ## Krok 8: Dokončete program
 
-Zde je kompletní Java program:
+Zde je kompletní program v Javě:
 
 ```java
 import com.aspose.email.*;
 
 public class AddCustomHeadersExample {
     public static void main(String[] args) {
-        // Vytvořte novou e-mailovou zprávu
+        // Vytvořit novou e-mailovou zprávu
         MailMessage message = new MailMessage();
         message.setSubject("Adding Custom Headers Example");
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
         message.setHtmlBody("<p>This is a sample email with custom headers.</p>");
 
-        // Přidejte vlastní záhlaví
+        // Přidat vlastní záhlaví
         message.getHeaders().add("X-Custom-Header1", "Value1");
         message.getHeaders().add("X-Custom-Header2", "Value2");
 
-        // Uložte e-mail do souboru
+        // Uložit e-mail do souboru
         message.save("custom_headers_email.eml", SaveOptions.getDefaultEml());
 
         System.out.println("Email with custom headers saved successfully.");
@@ -119,7 +121,7 @@ public class AddCustomHeadersExample {
 
 ## Závěr
 
-V této příručce jste se naučili, jak přidat vlastní záhlaví do e-mailu pomocí Aspose.Email pro Java. Své e-mailové zprávy můžete přizpůsobit různými záhlavími, aby vyhovovaly vašim specifickým požadavkům.
+V této příručce jste se naučili, jak přidat vlastní záhlaví do e-mailu pomocí Aspose.Email pro Javu. Své e-mailové zprávy si můžete přizpůsobit pomocí různých záhlaví tak, aby splňovaly vaše specifické požadavky.
 
 
 ## Často kladené otázky (FAQ)
@@ -127,20 +129,22 @@ V této příručce jste se naučili, jak přidat vlastní záhlaví do e-mailu 
 ### Co jsou vlastní záhlaví v e-mailových zprávách?
    Vlastní záhlaví jsou další pole v e-mailových zprávách, která lze použít k poskytnutí dalších informací nebo metadat o zprávě.
 
-### Jak mohu odeslat e-mail s vlastními záhlavími pomocí Aspose.Email?
-    Můžete použít`getHeaders` metoda`MailMessage` třídy k přidání vlastních záhlaví do e-mailové zprávy před jejím odesláním.
+### Jak mohu poslat e-mail s vlastními záhlavími pomocí Aspose.Email?
+   Můžete použít `getHeaders` metoda `MailMessage` třída pro přidání vlastních záhlaví do e-mailové zprávy před jejím odesláním.
 
 ### Jsou vlastní záhlaví viditelná pro příjemce e-mailu?
-   Vlastní záhlaví se obvykle příjemci e-mailu nezobrazují, ale lze je použít pro různé účely, jako je filtrování nebo zpracování e-mailů na straně odesílatele nebo příjemce.
+   Vlastní záhlaví se obvykle příjemci e-mailu nezobrazují, ale lze je použít k různým účelům, jako je filtrování nebo zpracování e-mailů na straně odesílatele nebo příjemce.
 
 ### Mohu do jedné e-mailové zprávy přidat více vlastních záhlaví?
-    Ano, do jedné e-mailové zprávy můžete přidat více vlastních záhlaví pomocí`add` metoda na`HeadersCollection` objekt.
+   Ano, do jedné e-mailové zprávy můžete přidat více vlastních záhlaví pomocí `add` metoda na `HeadersCollection` objekt.
 
 ### Jak mohu extrahovat vlastní záhlaví z přijatých e-mailů?
-    Můžete použít`getHeaders` způsob na přijatém e-mailu`MailMessage` objekt pro načtení a zpracování vlastních záhlaví.
+   Můžete použít `getHeaders` metoda na přijatých e-mailech `MailMessage` objekt pro načtení a zpracování vlastních záhlaví.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

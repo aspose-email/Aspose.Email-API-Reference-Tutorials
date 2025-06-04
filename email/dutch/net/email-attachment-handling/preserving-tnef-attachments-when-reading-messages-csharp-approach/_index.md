@@ -1,14 +1,16 @@
 ---
-title: TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
-linktitle: TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
-second_title: Aspose.Email .NET E-mailverwerkings-API
-description: Leer hoe u TNEF-bijlagen kunt bewaren met Aspose.Email voor .NET in deze stapsgewijze handleiding met broncode.
-weight: 15
-url: /nl/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/
+"description": "Leer hoe u TNEF-bijlagen kunt bewaren met Aspose.Email voor .NET in deze stapsgewijze handleiding met broncode."
+"linktitle": "TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak"
+"second_title": "Aspose.Email .NET e-mailverwerkings-API"
+"title": "TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak"
+"url": "/nl/net/email-attachment-handling/preserving-tnef-attachments-when-reading-messages-csharp-approach/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # TNEF-bijlagen behouden bij het lezen van berichten - C#-aanpak
@@ -16,21 +18,21 @@ url: /nl/net/email-attachment-handling/preserving-tnef-attachments-when-reading-
 
 ## Inleiding tot TNEF-bijlagen
 
-TNEF, ook bekend als "winmail.dat", is een eigen indeling voor e-mailbijlagen die wordt gebruikt door Microsoft Outlook en Exchange. Het omvat verschillende elementen, zoals opgemaakte tekst, ingesloten afbeeldingen en zelfs kalenderinformatie. Wanneer e-mails echter tussen verschillende e-mailclients of platforms worden overgedragen, kunnen TNEF-bijlagen soms onleesbaar of ontoegankelijk worden. Dit is waar Aspose.Email voor .NET te hulp schiet.
+TNEF, ook bekend als "winmail.dat", is een eigen e-mailbijlageformaat dat wordt gebruikt door Microsoft Outlook en Exchange. Het bevat verschillende elementen, zoals opgemaakte tekst, ingesloten afbeeldingen en zelfs agendagegevens. Wanneer e-mails echter via verschillende e-mailclients of platforms worden verzonden, kunnen TNEF-bijlagen soms onleesbaar of ontoegankelijk worden. Dit is waar Aspose.Email voor .NET te hulp schiet.
 
 ## Aan de slag met Aspose.Email voor .NET
 
-Aspose.Email voor .NET is een uitgebreide bibliotheek die een breed scala aan functionaliteiten biedt voor het werken met e-mails en hun bijlagen. Om aan de slag te gaan, moet u:
+Aspose.Email voor .NET is een uitgebreide bibliotheek met een breed scala aan functionaliteiten voor het werken met e-mails en hun bijlagen. Om aan de slag te gaan, moet u het volgende doen:
 
-1.  Download en installeer Aspose.E-mail: Bezoek[hier](https://releases.aspose.com/email/net) om de nieuwste versie van Aspose.Email voor .NET te downloaden en te installeren.
+1. Download en installeer Aspose.E-mail: Bezoek [hier](https://releases.aspose.com/email/net) om de nieuwste versie van Aspose.Email voor .NET te downloaden en installeren.
 
-2. Maak een nieuw project: Open uw Visual Studio-omgeving en maak een nieuw C#-project.
+2. Een nieuw project maken: open uw Visual Studio-omgeving en maak een nieuw C#-project.
 
-3. Referentie toevoegen: Voeg een referentie toe aan de gedownloade Aspose.Email-assembly in uw project.
+3. Referentie toevoegen: voeg een referentie toe naar de gedownloade Aspose.Email-assembly in uw project.
 
 ## E-mailberichten laden en parseren
 
-Om met e-mailberichten te kunnen werken, moet u eerst de e-mail laden en parseren. Aspose.Email biedt klassen waarmee u e-mails uit verschillende bronnen kunt laden, waaronder bestanden, streams en zelfs e-mailservers. Hier is een voorbeeld van hoe u een e-mailbericht uit een bestand kunt laden:
+Om met e-mailberichten te kunnen werken, moet u ze eerst laden en parseren. Aspose.Email biedt klassen waarmee u e-mails kunt laden vanuit verschillende bronnen, waaronder bestanden, streams en zelfs e-mailservers. Hier is een voorbeeld van hoe u een e-mailbericht vanuit een bestand kunt laden:
 
 ```csharp
 using Aspose.Email;
@@ -44,18 +46,18 @@ var message = MailMessage.Load("path/to/email.eml", options);
 
 ## TNEF-bijlagen identificeren en extraheren
 
-Nadat u het e-mailbericht heeft geladen, is de volgende stap het identificeren en extraheren van TNEF-bijlagen. TNEF-bijlagen zijn ingekapseld in een speciaal "winmail.dat"-bestand. Aspose.Email vereenvoudigt het proces van het identificeren en extraheren van deze bijlagen:
+Nadat u het e-mailbericht hebt geladen, is de volgende stap het identificeren en extraheren van TNEF-bijlagen. TNEF-bijlagen zijn ingekapseld in een speciaal "winmail.dat"-bestand. Aspose.Email vereenvoudigt het identificeren en extraheren van deze bijlagen:
 
 ```csharp
-// Controleer of het bericht TNEF-bijlagen bevat
+// Controleer of het bericht TNEF-bijlagen heeft
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Pak de TNEF-bijlage uit
+        // TNEF-bijlage extraheren
         var tnefAttachment = attachment;
 
-        //Krijg toegang tot TNEF-eigenschappen en wijzig deze indien nodig
+        // Toegang tot TNEF-eigenschappen en indien nodig wijzigen
         // tnefAttachment.Eigenschappen...
     }
 }
@@ -63,7 +65,7 @@ foreach (var attachment in message.Attachments)
 
 ## TNEF-bijlagen behouden
 
-Het behouden van TNEF-bijlagen houdt in dat de geëxtraheerde bijlagen hun oorspronkelijke opmaak en inhoud behouden. Aspose.Email biedt methoden en eigenschappen voor toegang tot verschillende elementen binnen een TNEF-bijlage, zoals tekst, ingesloten afbeeldingen en kalendergegevens.
+Het behouden van TNEF-bijlagen houdt in dat de geëxtraheerde bijlagen hun oorspronkelijke opmaak en inhoud behouden. Aspose.Email biedt methoden en eigenschappen om toegang te krijgen tot verschillende elementen in een TNEF-bijlage, zoals tekst, ingesloten afbeeldingen en agendagegevens.
 
 ```csharp
 EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
@@ -90,19 +92,19 @@ namespace TnefAttachmentExample
 			options.PreserveTnefAttachments = true;
 			var message = MailMessage.Load("path/to/email.eml", options);
 
-			 // Controleer of het bericht TNEF-bijlagen bevat
+			 // Controleer of het bericht TNEF-bijlagen heeft
 			foreach (var attachment in message.Attachments)
 			{
 				if (attachment.ContentType.MediaType == "application/ms-tnef")
 				{
-					// Pak de TNEF-bijlage uit
+					// TNEF-bijlage extraheren
 					var tnefAttachment = attachment;
 
-					//Krijg toegang tot TNEF-eigenschappen en wijzig deze indien nodig
+					// Toegang tot TNEF-eigenschappen en indien nodig wijzigen
 					// tnefAttachment.Eigenschappen...
 				}
 			}
-			// TNEF-bijlagen behouden
+			// TNEF-bijlagen behouden	
 			EmlSaveOptions emlSaveOptions = new EmlSaveOptions(MailMessageSaveType.EmlFormat);
 			emlSaveOptions.FileCompatibilityMode = FileCompatibilityMode.PreserveTnefAttachments;
 			message.Save("path/to/modified_email.eml", emlSaveOptions);
@@ -113,19 +115,19 @@ namespace TnefAttachmentExample
 
 ## Tips voor het omgaan met TNEF-bijlagen
 
-- Controleer altijd of een e-mail TNEF-bijlagen bevat voordat u probeert uit te pakken.
-- Gebruik de methoden van Aspose.Email om toegang te krijgen tot verschillende elementen in TNEF-bijlagen en deze te behouden.
-- Zorg ervoor dat u de nieuwste versie van Aspose.Email voor .NET hebt, zodat u gebruik kunt maken van de meest up-to-date functies.
+- Controleer altijd of een e-mail TNEF-bijlagen bevat voordat u probeert de bijlagen te extraheren.
+- Gebruik de methoden van Aspose.Email om toegang te krijgen tot verschillende elementen in TNEF-bijlagen en deze te bewaren.
+- Zorg ervoor dat u de nieuwste versie van Aspose.Email voor .NET hebt om gebruik te maken van de meest recente functies.
 
 ## Conclusie
 
-In deze handleiding hebben we onderzocht hoe u TNEF-bijlagen kunt behouden bij het lezen van berichten met de programmeertaal C# en Aspose.Email voor .NET. Met zijn uitgebreide set tools vereenvoudigt Aspose.Email het proces van het identificeren, extraheren en bewaren van TNEF-bijlagen, waardoor cruciale informatie in e-mails intact en toegankelijk blijft.
+In deze handleiding hebben we besproken hoe je TNEF-bijlagen kunt behouden bij het lezen van berichten met behulp van de programmeertaal C# en Aspose.Email voor .NET. Met zijn uitgebreide set tools vereenvoudigt Aspose.Email het identificeren, extraheren en bewaren van TNEF-bijlagen, zodat cruciale informatie in e-mails intact en toegankelijk blijft.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik Aspose.Email voor .NET downloaden?
 
- U kunt Aspose.Email voor .NET downloaden vanaf de releasepagina:[hier](https://releases.aspose.com/email/net)
+U kunt Aspose.Email voor .NET downloaden vanaf de releasepagina: [hier](https://releases.aspose.com/email/net)
 
 ### Kan ik Aspose.Email gebruiken om met andere e-mailformaten te werken?
 
@@ -137,10 +139,12 @@ Absoluut! Aspose.Email is ontworpen voor een breed scala aan toepassingen, van k
 
 ### Wordt Aspose.Email regelmatig bijgewerkt?
 
-Ja, Aspose onderhoudt regelmatig updates om compatibiliteit met de nieuwste technologieën en platforms te garanderen.
+Ja, Aspose verzorgt regelmatig updates om de compatibiliteit met de nieuwste technologieën en platforms te garanderen.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

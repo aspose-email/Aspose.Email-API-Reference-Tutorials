@@ -1,88 +1,90 @@
 ---
-title: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
-linktitle: Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak satır içi ve normal e-posta eklerini nasıl ayırt edeceğinizi öğrenin. Kod örnekleri içeren kapsamlı kılavuz.
-weight: 17
-url: /tr/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
+"description": "Aspose.Email for .NET kullanarak satır içi ve normal e-posta ekleri arasındaki farkı nasıl ayırt edeceğinizi öğrenin. Kod örnekleri içeren kapsamlı kılavuz."
+"linktitle": "Satır İçi ve Düzenli Ekleri Ayırt Etme - C# Yaklaşımı"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "Satır İçi ve Düzenli Ekleri Ayırt Etme - C# Yaklaşımı"
+"url": "/tr/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Satır İçi ve Normal Eklerin Farklılaştırılması - C# Yaklaşımı
+# Satır İçi ve Düzenli Ekleri Ayırt Etme - C# Yaklaşımı
 
 
-## Satır İçi ve Normal Ekleri Ayırmaya Giriş - C# Yaklaşımı
+## Satır İçi ve Düzenli Ekleri Ayırt Etmeye Giriş - C# Yaklaşımı
 
-E-posta işleme dünyasında ekler, e-posta içeriğiyle birlikte ek bilgilerin iletilmesinde önemli bir rol oynar. Ekler farklı biçimlerde olabilir, ancak en yaygın iki tür satır içi ekler ve normal eklerdir. Bu makalede, özellikle Aspose.Email for .NET kütüphanesini kullanarak satır içi ekler ile normal ekler arasında nasıl ayrım yapılacağına odaklanarak e-posta ekleri alanını derinlemesine inceleyeceğiz. Bu adım adım kılavuz, her iki ek türüyle etkili bir şekilde çalışabilmeniz için size gerekli bilgileri ve kod parçacıklarını sağlayacaktır.
+E-posta işleme dünyasında ekler, e-posta içeriğiyle birlikte ek bilgi iletmede önemli bir rol oynar. Ekler farklı biçimlerde olabilir, ancak en yaygın iki tür satır içi ekler ve normal ekler. Bu makalede, özellikle Aspose.Email for .NET kitaplığını kullanarak satır içi ve normal ekler arasında nasıl ayrım yapılacağına odaklanarak e-posta ekleri alanına dalacağız. Bu adım adım kılavuz, her iki ek türüyle de etkili bir şekilde çalışmanız için gereken içgörüleri ve kod parçacıklarını sağlayacaktır.
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
-## 1. Geliştirme ortamınızı ayarlama
+## 1. Geliştirme ortamınızı kurma
 
-Koda dalmadan önce uygun bir geliştirme ortamına sahip olmak çok önemlidir. Sisteminizde Visual Studio'nun kurulu olduğundan emin olun.
+Koda dalmadan önce, uygun bir geliştirme ortamına sahip olmak önemlidir. Sisteminizde Visual Studio'nun yüklü olduğundan emin olun.
 
-## 2. Visual Studio'da yeni bir proje oluşturmak
+## 2. Visual Studio'da yeni bir proje oluşturma
 
 Visual Studio'yu açın ve yeni bir proje oluşturun. Gereksinimlerinize göre uygun proje türünü ve şablonunu seçin.
 
-## 3. Aspose.Email for .NET kütüphanesinin kurulumu
+## 3. Aspose.Email for .NET kitaplığını yükleme
 
-E-posta ekleriyle çalışmak için Aspose.Email for .NET kitaplığını kullanacağız. Paket Yöneticisi Konsolunda aşağıdaki komutu çalıştırarak NuGet Paket Yöneticisi aracılığıyla yükleyebilirsiniz:
+E-posta ekleriyle çalışmak için Aspose.Email for .NET kütüphanesini kullanacağız. Aşağıdaki komutu Paket Yöneticisi Konsolu'nda çalıştırarak NuGet Paket Yöneticisi aracılığıyla yükleyebilirsiniz:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## 4. E-posta mesajı yükleme
+## 4. Bir e-posta mesajının yüklenmesi
 
 Öncelikle çalışmak için bir e-posta mesajına ihtiyacınız var. Aspose.Email kütüphanesinin sınıflarını kullanarak e-posta mesajını yükleyin.
 
-## 5. E-postadaki ekleri alma
+## 5. E-postadan ekleri alma
 
 Yüklenen e-posta mesajındaki tüm ekleri almak için aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 
 
-// E-posta mesajını yükleyin (varsayılan: 'emailMessage')
+// E-posta mesajını yükle (varsayılan: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## 6. Satır içi ve normal ekler arasında ayrım yapmak
+## 6. Satır içi ve normal ekler arasında ayrım yapma
 
-Satır içi eklerle normal ekleri birbirinden ayırmak için her ekin özelliklerini incelemeniz gerekir.`ContentDisposition` mülk. Eğer`ContentDisposition` "satır içi" olarak ayarlandığında ek, satır içi bir ektir.
+Satır içi ve normal ekler arasında ayrım yapmak için her bir eki incelemeniz gerekir. `ContentDisposition` mülkiyet. Eğer `ContentDisposition` "satır içi" olarak ayarlandığında, ek satır içi bir ektir.
 
 ## 7. Satır içi eklerle çalışma
 
-Satır içi eklerle uğraşırken bunların içeriğine ve ilgili bilgilere erişebilirsiniz. Referans olarak aşağıdaki kod parçacığını kullanın:
+Satır içi eklerle uğraşırken, içeriklerine ve ilgili bilgilere erişebilirsiniz. Referans olarak aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Satır içi eki yönetin
-        // Örnek: İçerik kimliğini ve içerik türünü görüntüleyin
+        // Satır içi eki işle
+        // Örnek: İçerik kimliğini ve içerik türünü görüntüle
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
 }
 ```
 
-## 8. Düzenli eklerin kullanılması
+## 8. Düzenli eklerin işlenmesi
 
-Normal eklerin "satır içi" düzenleme türü yoktur. Bunları aşağıdaki kod parçacığını kullanarak işleyebilirsiniz:
+Düzenli ekler "satır içi" bir düzenleme türüne sahip değildir. Aşağıdaki kod parçacığını kullanarak bunları işleyebilirsiniz:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Düzenli eki yönetin
-        // Örnek: Eki diske kaydetme
+        // Düzenli eki ele alın
+        // Örnek: Eki diske kaydet
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
@@ -90,32 +92,34 @@ foreach (Attachment attachment in attachments)
 
 ## Çözüm
 
-Bu kılavuzda, Aspose.Email for .NET kütüphanesini kullanarak satır içi ekler ile normal ekler arasındaki farka odaklanarak e-posta ekleri dünyasını keşfettik. Adım adım talimatları izleyerek ve sağlanan kod parçacıklarını kullanarak, e-posta işleme görevlerinizde her iki ek türünü de etkili bir şekilde tanımlayabilir ve bunlarla çalışabilirsiniz.
+Bu kılavuzda, Aspose.Email for .NET kitaplığını kullanarak satır içi ve normal ekler arasındaki farka odaklanarak e-posta eklerinin dünyasını inceledik. Adım adım talimatları izleyerek ve sağlanan kod parçacıklarını kullanarak, e-posta işleme görevlerinizde her iki tür eki de etkili bir şekilde tanımlayabilir ve bunlarla çalışabilirsiniz.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Email for .NET kütüphanesini nasıl kurabilirim?
 
- Aspose.Email for .NET kitaplığını NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırmanız yeterlidir:`Install-Package Aspose.Email`.
+Aspose.Email for .NET kütüphanesini NuGet Paket Yöneticisi'ni kullanarak yükleyebilirsiniz. Paket Yöneticisi Konsolu'nda aşağıdaki komutu çalıştırmanız yeterlidir: `Install-Package Aspose.Email`.
 
-### Satır içi ekler ile normal ekler arasında program aracılığıyla ayrım yapabilir miyim?
+### Satır içi ve normal ekler arasında programatik olarak ayrım yapabilir miyim?
 
- Evet, satır içi ataşmanları ve normal ataşmanları inceleyerek ayırt edebilirsiniz.`ContentDisposition` her ekin özelliği. Düzenleme türü "satır içi" olan ekler, satır içi eklerdir.
+Evet, satır içi ve normal ekler arasında, aşağıdakileri inceleyerek ayrım yapabilirsiniz: `ContentDisposition` her bir ekin özelliği. "Satır içi" düzenleme türüne sahip ekler satır içi eklerdir.
 
-### Aspose.Email diğer programlama dillerindeki e-posta eklerini işlemeye uygun mudur?
+### Aspose.Email diğer programlama dillerindeki e-posta eklerini yönetmek için uygun mudur?
 
-Evet, Aspose.Email çeşitli programlama dilleri için kütüphaneler sağlar, bu da onu çok çeşitli geliştirme ortamlarında e-posta eklerini yönetmeye uygun hale getirir.
+Evet, Aspose.Email çeşitli programlama dilleri için kütüphaneler sunar ve bu sayede çok çeşitli geliştirme ortamlarında e-posta eklerini yönetmek için uygundur.
 
-### Satır içi bir ekin içeriğine nasıl erişebilirim?
+### Satır içi ekteki içeriğe nasıl erişebilirim?
 
-Aspose.Email kütüphanesinin sağladığı uygun özellikleri kullanarak satır içi bir ekin içeriğine erişebilirsiniz. Örneğin, satır içi ekin içerik kimliğini ve içerik türünü alabilirsiniz.
+Aspose.Email kütüphanesi tarafından sağlanan uygun özellikleri kullanarak satır içi bir ekin içeriğine erişebilirsiniz. Örneğin, satır içi ekin içerik kimliğini ve içerik türünü alabilirsiniz.
 
 ### Düzenli ekleri diskte belirli bir konuma kaydedebilir miyim?
 
- Kesinlikle! Kullanarak düzenli ekleri diskte belirli bir konuma kaydedebilirsiniz.`Save` ek nesnesinin yöntemi ve istenen dosya yolunun sağlanması.
+Kesinlikle! Düzenli ekleri disk üzerinde belirli bir konuma kaydedebilirsiniz. `Save` ek nesnesinin yöntemi ve istenilen dosya yolunun sağlanması.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

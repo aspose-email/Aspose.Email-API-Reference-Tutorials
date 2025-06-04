@@ -1,14 +1,16 @@
 ---
-title: Praca z załącznikami wbudowanymi w Aspose.Email
-linktitle: Praca z załącznikami wbudowanymi w Aspose.Email
-second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
-description: Zoptymalizuj komunikację e-mailową za pomocą Aspose.Email dla Java. Z tego obszernego przewodnika dowiesz się, jak pracować z załącznikami wbudowanymi.
-weight: 10
-url: /pl/java/advanced-email-attachments/working-with-inline-attachments/
+"description": "Zoptymalizuj komunikację e-mailową za pomocą Aspose.Email for Java. Naucz się pracować z załącznikami inline w tym kompleksowym przewodniku."
+"linktitle": "Praca z załącznikami wbudowanymi w Aspose.Email"
+"second_title": "Aspose.Email Java E-mail Management API"
+"title": "Praca z załącznikami wbudowanymi w Aspose.Email"
+"url": "/pl/java/advanced-email-attachments/working-with-inline-attachments/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Praca z załącznikami wbudowanymi w Aspose.Email
@@ -16,38 +18,38 @@ url: /pl/java/advanced-email-attachments/working-with-inline-attachments/
 
 ## Wprowadzenie do pracy z załącznikami wbudowanymi w Aspose.Email
 
-Załączniki wbudowane to cenna funkcja w komunikacji e-mail, która umożliwia osadzanie obrazów lub innych plików bezpośrednio w treści wiadomości e-mail. Zwiększa to atrakcyjność wizualną Twoich e-maili i gwarantuje, że odbiorcy będą mogli bezproblemowo przeglądać treść. W tym artykule omówimy, jak pracować z załącznikami wbudowanymi w Aspose.Email dla Java.
+Załączniki inline to cenna funkcja w komunikacji e-mailowej, która umożliwia osadzanie obrazów lub innych plików bezpośrednio w treści wiadomości e-mail. Zwiększa to atrakcyjność wizualną wiadomości e-mail i zapewnia, że odbiorcy mogą bezproblemowo przeglądać zawartość. W tym artykule przyjrzymy się, jak pracować z załącznikami inline w Aspose.Email for Java.
 
-## Co to są załączniki wbudowane?
+## Czym są załączniki inline?
 
-Załączniki wbudowane, zwane także obrazami osadzonymi lub osadzonymi, to pliki zawarte w treści HTML wiadomości e-mail. Załączniki te są wyświetlane w treści wiadomości e-mail, a nie jako osobne załączniki, które należy pobrać lub otworzyć. Może to obejmować obrazy, podpisy lub inne pliki, które chcesz uwzględnić w układzie wiadomości e-mail.
+Załączniki wbudowane, znane również jako osadzone lub wbudowane obrazy, to pliki zawarte w treści HTML wiadomości e-mail. Te załączniki są wyświetlane w treści wiadomości e-mail, a nie pojawiają się jako oddzielne załączniki, które należy pobrać lub otworzyć. Mogą to być obrazy, podpisy lub inne pliki, które chcesz uwzględnić w układzie wiadomości e-mail.
 
-## Korzyści z używania załączników wbudowanych
+## Korzyści ze stosowania załączników wbudowanych
 
-Używanie wbudowanych załączników w wiadomościach e-mail ma kilka zalet:
+Korzystanie z załączników wbudowanych w wiadomości e-mail zapewnia szereg korzyści:
 
-- Ulepszona prezentacja wizualna: Wbudowane załączniki poprawiają ogólny wygląd wiadomości e-mail, czyniąc je bardziej atrakcyjnymi wizualnie.
+- Ulepszona prezentacja wizualna: Załączniki w tekście poprawiają ogólny wygląd wiadomości e-mail, czyniąc je bardziej atrakcyjnymi wizualnie.
 
-- Mniejsza zależność: odbiorcy nie muszą pobierać ani otwierać oddzielnych załączników, co poprawia wygodę użytkownika.
+- Mniejsze uzależnienie: Odbiorcy nie muszą pobierać ani otwierać osobnych załączników, co poprawia komfort użytkowania.
 
-- Spójność: załączniki wbudowane zapewniają, że treść wiadomości e-mail jest wyświetlana zgodnie z zamierzeniami, niezależnie od klienta poczty e-mail odbiorcy.
+- Spójność: Załączniki w tekście gwarantują, że treść wiadomości e-mail będzie wyświetlana zgodnie z oczekiwaniami, niezależnie od klienta poczty e-mail odbiorcy.
 
-- Tożsamość marki: możesz użyć wbudowanych załączników do logo, podpisów lub obrazów promocyjnych, aby wzmocnić swoją markę.
+- Tożsamość marki: Aby wzmocnić wizerunek swojej marki, możesz używać załączników wbudowanych zawierających logo, podpisy lub obrazy promocyjne.
 
 ## Konfigurowanie Aspose.Email dla Java
 
-Zanim zagłębimy się w pracę z załącznikami wbudowanymi, musisz skonfigurować w swoim projekcie Aspose.Email dla Java. Oto kroki, jak rozpocząć:
+Zanim przejdziemy do pracy z załącznikami inline, musisz skonfigurować Aspose.Email dla Java w swoim projekcie. Oto kroki, aby zacząć:
 
-1.  Pobierz Aspose.Email dla Java: Odwiedź[Aspose.Email dla dokumentacji Java](https://reference.aspose.com/email/java/) aby uzyskać dostęp do łącza pobierania.
+1. Pobierz Aspose.Email dla Java: Odwiedź [Aspose.Email dla dokumentacji Java](https://reference.aspose.com/email/java/) aby uzyskać dostęp do linku do pobrania.
 
-2. Zainstaluj bibliotekę: Postępuj zgodnie z instrukcjami instalacji podanymi w dokumentacji, aby dołączyć Aspose.Email for Java do swojego projektu Java.
+2. Zainstaluj bibliotekę: Postępuj zgodnie z instrukcjami instalacji podanymi w dokumentacji, aby uwzględnić Aspose.Email for Java w swoim projekcie Java.
 
 ## Tworzenie nowej wiadomości e-mail
 
-Po zainstalowaniu Aspose.Email dla Java możesz rozpocząć tworzenie nowej wiadomości e-mail. Oto podstawowy przykład, jak to zrobić:
+Po zainstalowaniu Aspose.Email for Java możesz zacząć tworzyć nową wiadomość e-mail. Oto podstawowy przykład, jak to zrobić:
 
 ```java
-// Zaimportuj niezbędne klasy
+// Importuj niezbędne klasy
 import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 
@@ -61,25 +63,25 @@ message.setHtmlBody("<html><body>This is a sample email with inline attachments.
 
 ## Dodawanie załączników wbudowanych
 
- Aby dodać załączniki wbudowane, możesz użyć metody`LinkedResource` klasa dostarczona przez Aspose.Email dla Java. Oto jak dodać obraz jako załącznik wbudowany:
+Aby dodać załączniki w tekście, możesz użyć `LinkedResource` klasa dostarczona przez Aspose.Email dla Java. Oto jak możesz dołączyć obraz jako załącznik inline:
 
 ```java
 import com.aspose.email.LinkedResource;
 
-// Utwórz LinkedResource dla obrazu
+// Utwórz zasób powiązany dla obrazu
 LinkedResource linkedResource = new LinkedResource("path/to/your/image.png");
-linkedResource.setContentId("image001"); // Unikalny identyfikator obrazu wbudowanego
+linkedResource.setContentId("image001"); // Unikalny identyfikator dla obrazu w tekście
 
 // Dodaj LinkedResource do treści HTML
 message.getLinkedResources().add(linkedResource);
 
-// Odwołaj się do obrazu wbudowanego w treści HTML
+// Odwołaj się do obrazu osadzonego w treści HTML
 message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001'></body></html>");
 ```
 
-## Wysyłanie e-maila
+## Wysyłanie wiadomości e-mail
 
-Po utworzeniu wiadomości e-mail z wbudowanymi załącznikami możesz ją wysłać za pomocą Aspose.Email dla Java`SmtpClient` klasa. Pamiętaj o skonfigurowaniu ustawień SMTP dla swojego serwera poczty e-mail.
+Po utworzeniu wiadomości e-mail z załącznikami możesz ją wysłać za pomocą Aspose.Email dla języka Java `SmtpClient` klasa. Upewnij się, że skonfigurowałeś ustawienia SMTP dla swojego serwera e-mail.
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -93,7 +95,7 @@ client.send(message);
 
 ## Obsługa załączników wbudowanych w otrzymanych wiadomościach e-mail
 
-Gdy otrzymasz e-maile z wbudowanymi załącznikami, możesz użyć Aspose.Email dla Java, aby je wyodrębnić i przetworzyć. Oto prosty przykład, jak to zrobić:
+Gdy otrzymujesz wiadomości e-mail z załącznikami inline, możesz użyć Aspose.Email for Java, aby je wyodrębnić i przetworzyć. Oto prosty przykład, jak to zrobić:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -102,48 +104,50 @@ import com.aspose.email.LinkedResourceCollection;
 // Załaduj otrzymaną wiadomość e-mail
 MailMessage receivedMessage = MailMessage.load("path/to/received_email.eml");
 
-// Uzyskaj dostęp do wbudowanych załączników
+// Uzyskaj dostęp do załączników w tekście
 LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources();
 ```
 
 ## Rozwiązywanie typowych problemów
 
-Podczas pracy z załącznikami wbudowanymi w Aspose.Email dla Java możesz napotkać pewne typowe problemy. Oto kilka wskazówek dotyczących rozwiązywania problemów:
+Podczas pracy z załącznikami inline w Aspose.Email for Java możesz napotkać kilka typowych problemów. Oto kilka wskazówek dotyczących rozwiązywania problemów:
 
--  Nieprawidłowy identyfikator treści: upewnij się, że plik`ContentId` określony dla załączników wbudowanych odpowiada odwołaniu w treści HTML.
+- Nieprawidłowy identyfikator treści: Upewnij się, że `ContentId` określone dla załączników inline pasują do odniesienia w treści HTML.
 
-- Nie znaleziono pliku: Dokładnie sprawdź ścieżkę pliku podczas dodawania załączników wbudowanych. Upewnij się, że plik istnieje w określonej lokalizacji.
+- Plik nie został znaleziony: Sprawdź dwukrotnie ścieżkę pliku podczas dodawania załączników inline. Upewnij się, że plik istnieje w określonej lokalizacji.
 
 - Konfiguracja SMTP: Sprawdź, czy ustawienia SMTP są prawidłowe podczas wysyłania wiadomości e-mail.
 
 ## Wniosek
 
-Praca z załącznikami wbudowanymi w Aspose.Email dla Java może znacznie usprawnić komunikację e-mailową. Niezależnie od tego, czy chcesz osadzić obrazy, logo lub inną treść bezpośrednio w swoich e-mailach, Aspose.Email dla Java zapewnia narzędzia potrzebne do tworzenia atrakcyjnych wizualnie wiadomości.
+Praca z załącznikami inline w Aspose.Email for Java może znacznie usprawnić komunikację e-mailową. Niezależnie od tego, czy chcesz osadzać obrazy, loga lub inne treści bezpośrednio w swoich wiadomościach e-mail, Aspose.Email for Java zapewnia narzędzia potrzebne do tworzenia atrakcyjnych wizualnie wiadomości.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak pobrać Aspose.Email dla Java?
 
- Możesz pobrać Aspose.Email dla Java z[dokumentacja](https://reference.aspose.com/email/java/). Postępuj zgodnie z instrukcjami instalacji, aby skonfigurować go w swoim projekcie.
+Możesz pobrać Aspose.Email dla Java ze strony [dokumentacja](https://reference.aspose.com/email/java/). Postępuj zgodnie z instrukcjami instalacji, aby skonfigurować ją w swoim projekcie.
 
-### Czy mogę używać Aspose.Email dla Java z innymi bibliotekami Java?
+### Czy mogę używać Aspose.Email for Java z innymi bibliotekami Java?
 
-Tak, możesz zintegrować Aspose.Email for Java z innymi bibliotekami Java, aby zwiększyć możliwości przetwarzania poczty e-mail.
+Tak, możesz zintegrować Aspose.Email for Java z innymi bibliotekami Java w celu zwiększenia możliwości przetwarzania wiadomości e-mail.
 
 ### Jakie formaty plików są obsługiwane w przypadku załączników wbudowanych?
 
-Aspose.Email dla Java obsługuje różne formaty plików dla załączników wbudowanych, w tym obrazy (np. PNG, JPEG) i inne typy dokumentów.
+Aspose.Email for Java obsługuje różne formaty plików dla załączników wbudowanych, w tym obrazy (np. PNG, JPEG) i inne typy dokumentów.
 
-### Jak obsługiwać załączniki wbudowane w wiadomościach e-mail w formacie HTML?
+### Jak obsługiwać załączniki osadzone w wiadomościach e-mail w formacie HTML?
 
-Aby obsługiwać załączniki wbudowane w wiadomościach e-mail w formacie HTML, użyj metody`LinkedResource` class, aby określić identyfikator zawartości załącznika w treści HTML.
+Aby obsługiwać załączniki wbudowane w wiadomościach e-mail w formacie HTML, należy użyć `LinkedResource` Klasa służąca do określania identyfikatora zawartości załącznika w treści HTML.
 
-### Czy Aspose.Email dla Java jest kompatybilny z różnymi serwerami e-mail?
+### Czy Aspose.Email for Java jest kompatybilny z różnymi serwerami pocztowymi?
 
-Tak, Aspose.Email dla Java jest kompatybilny z różnymi serwerami pocztowymi. Podczas wysyłania wiadomości e-mail upewnij się, że prawidłowo skonfigurowałeś ustawienia SMTP dla swojego serwera poczty e-mail.
+Tak, Aspose.Email for Java jest kompatybilny z różnymi serwerami poczty e-mail. Upewnij się, że poprawnie skonfigurowałeś ustawienia SMTP dla swojego serwera poczty e-mail podczas wysyłania wiadomości e-mail.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

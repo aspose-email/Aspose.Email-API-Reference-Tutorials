@@ -1,37 +1,39 @@
 ---
-title: Příjem e-mailových upozornění s kódem C#
-linktitle: Příjem e-mailových upozornění s kódem C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se přijímat e-mailová upozornění v C# pomocí Aspose.Email pro .NET. Je poskytnut příklad efektivního kódu.
-weight: 10
-url: /cs/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
+"description": "Naučte se přijímat e-mailová oznámení v C# pomocí Aspose.Email pro .NET. Poskytnuto efektivní příklad kódu."
+"linktitle": "Příjem e-mailových oznámení pomocí kódu C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Příjem e-mailových oznámení pomocí kódu C#"
+"url": "/cs/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Příjem e-mailových upozornění s kódem C#
+# Příjem e-mailových oznámení pomocí kódu C#
 
 
 
-V digitálním věku je komunikace nezbytná a e-mail zůstává jedním z nejoblíbenějších prostředků výměny informací. Jako vývojář se možná ocitnete ve svých aplikacích, ve kterých budete potřebovat odesílat a přijímat e-mailová upozornění. V tomto podrobném tutoriálu prozkoumáme, jak přijímat e-mailová upozornění pomocí C# pomocí Aspose.Email pro .NET.
+V digitálním věku je komunikace nezbytná a e-mail zůstává jedním z nejoblíbenějších prostředků výměny informací. Jako vývojář se můžete ocitnout v situaci, kdy budete potřebovat odesílat a přijímat e-mailová oznámení ve svých aplikacích. V tomto podrobném tutoriálu se podíváme na to, jak přijímat e-mailová oznámení v C# pomocí Aspose.Email pro .NET.
 
-## Úvod
+## Zavedení
 
-E-mailová upozornění jsou zásadní pro informování uživatelů o důležitých událostech nebo aktualizacích ve vaší aplikaci. Aspose.Email for .NET poskytuje výkonné a snadno použitelné řešení pro zpracování úloh souvisejících s e-mailem ve vašich aplikacích C#. V tomto tutoriálu se zaměříme na přijímání e-mailových upozornění.
+E-mailová oznámení jsou klíčová pro informování uživatelů o důležitých událostech nebo aktualizacích ve vaší aplikaci. Aspose.Email pro .NET poskytuje výkonné a snadno použitelné řešení pro zpracování úkolů souvisejících s e-mailem ve vašich aplikacích v C#. V tomto tutoriálu se zaměříme na příjem e-mailových oznámení.
 
 ## Nastavení Aspose.Email
 
-Než se vrhneme na kód, musíte ve svém projektu nastavit Aspose.Email pro .NET. Můžete to udělat takto:
+Než se ponoříme do kódu, je třeba ve vašem projektu nastavit Aspose.Email pro .NET. Zde je návod, jak to udělat:
 
-1. Instalace Aspose.Email: Začněte instalací knihovny Aspose.Email for .NET do vašeho projektu. Můžete to udělat pomocí Správce balíčků NuGet.
+1. Instalace Aspose.Email: Začněte instalací knihovny Aspose.Email pro .NET do vašeho projektu. Můžete to provést pomocí Správce balíčků NuGet.
 
-2.  Import jmenného prostoru Aspose.Email: V kódu C# nezapomeňte zahrnout potřebný jmenný prostor:`using Aspose.Email;`.
+2. Import jmenného prostoru Aspose.Email: V kódu C# nezapomeňte zahrnout potřebný jmenný prostor: `using Aspose.Email;`.
 
 ## Vytvoření e-mailové zprávy
 
-Nyní, když máme Aspose.Email nastaven, pojďme vytvořit e-mailovou zprávu. V tomto příkladu vytvoříme základní e-mailovou zprávu s odesílatelem, příjemcem, předmětem a tělem.
+Nyní, když máme nastavený Aspose.Email, pojďme vytvořit e-mailovou zprávu. V tomto příkladu vytvoříme základní e-mailovou zprávu s odesílatelem, příjemcem, předmětem a tělem zprávy.
 
 ```csharp
 // Vytvořte zprávu
@@ -43,60 +45,62 @@ msg.Subject = "the subject of the message";
 
 ## Konfigurace oznámení
 
-Chcete-li zajistit, že budete dostávat oznámení o stavu doručení vašeho e-mailu, můžete nakonfigurovat možnosti oznámení o doručení. Můžete určit, zda chcete být informováni o úspěchu, neúspěchu nebo obojím.
+Chcete-li zajistit, abyste dostávali oznámení o stavu doručení e-mailu, můžete nakonfigurovat možnosti oznámení o doručení. Můžete určit, zda chcete být upozorněni na úspěch, neúspěch nebo obojí.
 
 ```csharp
-// Nastavte oznámení o doručení pro úspěšné a neúspěšné zprávy
+// Nastavení oznámení o doručení pro úspěšné a neúspěšné zprávy
 msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
-## Přidání záhlaví MIME
+## Přidávání MIME záhlaví
 
-Záhlaví MIME poskytují další informace o e-mailové zprávě. Podle potřeby můžete přidat vlastní záhlaví MIME.
+Záhlaví MIME poskytují další informace o e-mailové zprávě. V případě potřeby můžete přidat vlastní záhlaví MIME.
 
 ```csharp
-// Přidejte záhlaví MIME
+// Přidejte MIME hlavičky
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 ```
 
 ## Odeslání e-mailu
 
-Jakmile nakonfigurujete svou e-mailovou zprávu, je čas ji odeslat. Aspose.Email poskytuje pohodlný způsob odesílání e-mailů pomocí klienta SMTP.
+Jakmile si nakonfigurujete e-mailovou zprávu, je čas ji odeslat. Aspose.Email nabízí pohodlný způsob odesílání e-mailů pomocí SMTP klienta.
 
 ```csharp
-// Odešlete zprávu
+// Odeslat zprávu
 SmtpClient client = new SmtpClient("host", "username", "password");
 client.Send(msg);
 ```
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali, jak přijímat e-mailová upozornění v C# pomocí Aspose.Email pro .NET. Probrali jsme nastavení Aspose.Email, vytvoření e-mailové zprávy, konfiguraci oznámení, přidání MIME záhlaví a odeslání e-mailu.
+V tomto tutoriálu jsme prozkoumali, jak přijímat e-mailová oznámení v C# pomocí Aspose.Email pro .NET. Probrali jsme nastavení Aspose.Email, vytvoření e-mailové zprávy, konfiguraci oznámení, přidání MIME záhlaví a odeslání e-mailu.
 
-Dodržováním těchto kroků můžete bez problémů integrovat e-mailová upozornění do svých aplikací v jazyce C#, zlepšit komunikaci s uživateli a udržovat je v obraze.
+Dodržením těchto kroků můžete bezproblémově integrovat e-mailová oznámení do svých aplikací v C#, čímž vylepšíte komunikaci s uživateli a budete je informovat.
 
-## Nejčastější dotazy
+## Často kladené otázky
 
 ### 1. Mohu použít Aspose.Email pro .NET ve svém projektu .NET Core?
-   Ano, Aspose.Email for .NET je kompatibilní s .NET Framework i .NET Core.
+   Ano, Aspose.Email pro .NET je kompatibilní s .NET Framework i .NET Core.
 
-### 2. Jak mohu zacházet s e-mailovými přílohami v oznámeních?
-    Můžete použít`Attachment` třídy, kterou poskytuje Aspose.Email pro snadnou manipulaci s e-mailovými přílohami.
+### 2. Jak mohu v oznámeních zpracovat e-mailové přílohy?
+   Můžete použít `Attachment` třída poskytovaná službou Aspose.Email pro snadnou práci s e-mailovými přílohami.
 
-### 3. Je Aspose.Email for .NET placená knihovna?
+### 3. Je Aspose.Email pro .NET placená knihovna?
    Aspose.Email nabízí bezplatnou zkušební i placenou verzi. Placená verze poskytuje další funkce a podporu.
 
-### 4. Mohu přizpůsobit šablony e-mailových oznámení?
-   Ano, můžete si vytvořit vlastní e-mailové šablony a použít Aspose.Email k jejich naplnění dynamickým obsahem.
+### 4. Mohu si přizpůsobit šablony e-mailových oznámení?
+   Ano, můžete si vytvořit vlastní šablony e-mailů a pomocí Aspose.Email je naplnit dynamickým obsahem.
 
-### 5. Existují nějaká omezení počtu e-mailů, které mohu odeslat/přijmout pomocí Aspose.Email?
-   Aspose.Email neklade přísná omezení na počet e-mailů, které můžete odesílat nebo přijímat, ale může podléhat omezením vašeho e-mailového serveru.
+### 5. Existují nějaká omezení ohledně počtu e-mailů, které mohu odeslat/přijmout pomocí Aspose.Email?
+   Aspose.Email nestanovuje přísná omezení počtu e-mailů, které můžete odeslat nebo přijmout, ale může podléhat omezením vašeho e-mailového serveru.
 
-Tím končí náš tutoriál o přijímání e-mailových upozornění pomocí C# pomocí Aspose.Email pro .NET. Doufáme, že vám tato příručka pomohla při implementaci e-mailových upozornění do vašich aplikací. 
+Tímto končí náš tutoriál o přijímání e-mailových oznámení v C# s využitím Aspose.Email pro .NET. Doufáme, že vám tento návod pomohl s implementací e-mailových oznámení ve vašich aplikacích. 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

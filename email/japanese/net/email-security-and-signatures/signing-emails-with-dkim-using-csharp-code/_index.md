@@ -1,38 +1,40 @@
 ---
-title: C# コードを使用した DKIM での電子メールの署名
-linktitle: C# コードを使用した DKIM での電子メールの署名
-second_title: Aspose.Email .NET 電子メール処理 API
-description: C# と Aspose.Email for .NET を使用して DKIM で電子メールを保護する方法を学びます。ソースコード付きのステップバイステップガイド。電子メールの信頼性と信頼性を強化します。
-weight: 11
-url: /ja/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/
+"description": "C#とAspose.Email for .NETを使用して、DKIMでメールを保護する方法を学びましょう。ソースコード付きのステップバイステップガイドで、メールの信頼性と真正性を高めます。"
+"linktitle": "C# コードを使用して DKIM でメールに署名する"
+"second_title": "Aspose.Email .NET メール処理 API"
+"title": "C# コードを使用して DKIM でメールに署名する"
+"url": "/ja/net/email-security-and-signatures/signing-emails-with-dkim-using-csharp-code/"
+"weight": 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C# コードを使用した DKIM での電子メールの署名
+# C# コードを使用して DKIM でメールに署名する
 
 
-今日のデジタル世界では、電子メール通信の信頼性と整合性を確保することが最も重要です。これを実現する 1 つの方法は、DomainKeys Identified Mail (DKIM) 署名を使用することです。このステップバイステップ ガイドでは、C# と強力な Aspose.Email for .NET ライブラリを使用して DKIM で電子メールに署名する方法を説明します。
+今日のデジタル世界において、電子メール通信の真正性と整合性を確保することは極めて重要です。これを実現する方法の一つとして、DomainKeys Identified Mail（DKIM）署名の利用が挙げられます。このステップバイステップガイドでは、C#と強力なAspose.Email for .NETライブラリを用いて、DKIMで電子メールに署名する方法を解説します。
 
-## DKIM の概要
+## DKIMの概要
 
-### DKIMとは何ですか?
-DKIM は DomainKeys Identified Mail の略です。これは、送信者が電子メールにデジタル署名し、電子メールの信頼性を検証する暗号署名を提供できる電子メール認証方法です。
+### DKIMとは何ですか？
+DKIMはDomainKeys Identified Mail（ドメインキー識別メール）の略です。送信者がメールにデジタル署名し、メールの真正性を検証する暗号署名を提供するメール認証方式です。
 
-### DKIM が重要なのはなぜですか?
-DKIM は、受信電子メールが正当な送信元からのものであり、転送中に改ざんされていないことを保証することで、電子メールのなりすましやフィッシング攻撃の防止に役立ちます。
+### DKIM が重要な理由は何ですか?
+DKIM は、受信メールが正当なソースからのものであり、送信中に改ざんされていないことを確認することで、メールのなりすましやフィッシング攻撃を防ぐのに役立ちます。
 
 ## 前提条件
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-1.  Aspose.Email for .NET: Aspose.Email for .NET ライブラリがプロジェクトにインストールされていることを確認してください。からダウンロードできます[ここ](https://releases.aspose.com/email/net/).
+1. Aspose.Email for .NET: プロジェクトにAspose.Email for .NETライブラリがインストールされていることを確認してください。ダウンロードはこちらから可能です。 [ここ](https://releases。aspose.com/email/net/).
 
-2. DKIM 秘密キー: メールに署名するには DKIM 秘密キーが必要です。必ずご用意ください。 
+2. DKIM秘密鍵：メールに署名するにはDKIM秘密鍵が必要です。必ずご用意ください。 
 
-## ステップ 1: DKIM パラメータを初期化する
+## ステップ1: DKIMパラメータを初期化する
 
 ```csharp
 string privateKeyFile = Path.Combine(RunExamples.GetDataDir_SMTP().Replace("_Send", string.Empty), RunExamples.GetDataDir_SMTP() + "key2.pem");
@@ -43,9 +45,9 @@ signInfo.Headers.Add("From");
 signInfo.Headers.Add("Subject");
 ```
 
-このステップでは、DKIM パラメータを初期化します。ファイルから秘密キーをロードし、セレクターとドメインを指定して、DKIM 署名に含めるヘッダーをリストします。
+このステップでは、DKIMパラメータを初期化します。ファイルから秘密鍵を読み込み、セレクタとドメインを指定し、DKIM署名に含めるヘッダーをリストします。
 
-## ステップ 2: 電子メールの作成と準備
+## ステップ2: メールを作成して準備する
 
 ```csharp
 MailMessage mailMessage = new MailMessage("useremail@gmail.com", "test@gmail.com");
@@ -53,17 +55,17 @@ mailMessage.Subject = "Signed DKIM message text body";
 mailMessage.Body = "This is a text body signed DKIM message";
 ```
 
-ここでは、`MailMessage`クラスを選択し、電子メールの送信者、受信者、件名、本文を設定します。
+ここでは、 `MailMessage` クラスを作成し、メールの送信者、受信者、件名、本文を設定します。
 
-## ステップ 3: 電子メールに署名する
+## ステップ3: メールに署名する
 
 ```csharp
 MailMessage signedMsg = mailMessage.DKIMSign(rsa, signInfo);
 ```
 
-次に、前に初期化した DKIM パラメータと秘密キーを使用して電子メールに署名します。
+ここで、先ほど初期化した DKIM パラメータと秘密キーを使用して電子メールに署名します。
 
-## ステップ 4: 署名済みメールを送信する
+## ステップ4: 署名されたメールを送信する
 
 ```csharp
 try
@@ -73,10 +75,10 @@ try
 }
 finally
 {
-    //クリーンアップ コード (存在する場合)
+    // クリーンアップコード（ある場合）
 }
 ```
-このステップでは、SMTP クライアントを使用して署名付き電子メールを送信します。必ず交換してください`"your.email@gmail.com"`そして`"your.password"`Gmail の認証情報を使用して。
+このステップでは、SMTPクライアントを使用して署名されたメールを送信します。 `"your.email@gmail.com"` そして `"your.password"` Gmail の認証情報を入力します。
 
 ## 完全なソースコード
 ```csharp
@@ -104,34 +106,36 @@ finally
 
 ## 結論
 
-DKIM を使用して電子メールに署名することは、電子メール通信のセキュリティと信頼性を確保するための重要な手順です。 Aspose.Email for .NET および C# を利用すると、電子メール送信プロセスに DKIM 署名を簡単に実装できます。
+DKIMによるメール署名は、メール通信のセキュリティと信頼性を確保するための重要なステップです。Aspose.Email for .NET and C#を使えば、メール送信プロセスにDKIM署名を簡単に実装できます。
 
 ---
 
 ## よくある質問
 
-### Q1: DKIM とは何ですか?また、電子メールのセキュリティにとって重要なのはなぜですか?
+### Q1: DKIM とは何ですか? また、電子メールのセキュリティにとってなぜ重要ですか?
 
-DKIM は DomainKeys Identified Mail の略で、電子メール メッセージの信頼性を検証し、なりすましやフィッシングを防ぐため、電子メール セキュリティにとって重要です。
+DKIM は DomainKeys Identified Mail の略で、電子メール メッセージの信頼性を検証し、なりすましやフィッシングを防止するため、電子メールのセキュリティにとって重要です。
 
-### Q2: DKIM 秘密キーを取得するにはどうすればよいですか?
+### Q2: DKIM 秘密鍵を取得するにはどうすればよいですか?
 
-DKIM 秘密キーは、電子メール サービス プロバイダーを通じて取得するか、暗号化ツールを使用して生成することによって取得できます。
+DKIM 秘密キーは、電子メール サービス プロバイダーを通じて取得するか、暗号化ツールを使用して生成することができます。
 
-### Q3: Aspose.Email for .NET を Gmail 以外の電子メール プロバイダーで使用できますか?
+### Q3: Aspose.Email for .NET を Gmail 以外のメール プロバイダーでも使用できますか?
 
-はい、Aspose.Email for .NET は、Gmail に限定されず、さまざまな電子メール プロバイダーで使用できます。
+はい、Aspose.Email for .NET は Gmail に限らず、さまざまな電子メール プロバイダーで使用できます。
 
-### Q4: DKIM 署名にはどのヘッダーを含める必要がありますか?
+### Q4: DKIM 署名にはどのようなヘッダーを含める必要がありますか?
 
 DKIM 署名に含める一般的なヘッダーは、「From」、「Subject」、および電子メール認証に重要なその他のヘッダーです。
 
-### Q5: 電子メール認証の方法は DKIM だけですか?
+### Q5: 電子メール認証の方法は DKIM のみですか?
 
 いいえ、電子メールのセキュリティを強化するために DKIM と組み合わせて使用される SPF や DMARC などの他の方法もあります。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

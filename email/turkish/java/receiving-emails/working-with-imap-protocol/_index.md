@@ -1,45 +1,47 @@
 ---
-title: Aspose.Email'de IMAP Protokolü ile Çalışmak
-linktitle: Aspose.Email'de IMAP Protokolü ile Çalışmak
-second_title: Aspose.Email Java E-posta Yönetimi API'si
-description: E-posta iletişiminizi verimli bir şekilde yönetmek için Aspose.Email for Java'da IMAP protokolüyle nasıl çalışacağınızı öğrenin.
-weight: 12
-url: /tr/java/receiving-emails/working-with-imap-protocol/
+"description": "E-posta iletişiminizi etkin bir şekilde yönetmek için Aspose.Email for Java'da IMAP protokolünü nasıl kullanacağınızı öğrenin."
+"linktitle": "Aspose.Email'de IMAP Protokolüyle Çalışma"
+"second_title": "Aspose.Email Java E-posta Yönetim API'si"
+"title": "Aspose.Email'de IMAP Protokolüyle Çalışma"
+"url": "/tr/java/receiving-emails/working-with-imap-protocol/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'de IMAP Protokolü ile Çalışmak
+# Aspose.Email'de IMAP Protokolüyle Çalışma
 
 
-Bu kapsamlı kılavuzda, Aspose.Email for Java'da IMAP (İnternet Mesaj Erişim Protokolü) ile çalışma sürecinde size yol göstereceğiz. IMAP, bir posta sunucusundaki e-posta iletilerine erişmek ve bunları yönetmek için yaygın olarak kullanılan bir protokoldür. Aspose.Email for Java ile IMAP işlevselliğini Java uygulamalarınıza kolayca entegre edebilirsiniz. Başlayalım!
+Bu kapsamlı kılavuzda, Aspose.Email for Java'da IMAP (İnternet İleti Erişim Protokolü) ile çalışma sürecini adım adım anlatacağız. IMAP, bir posta sunucusundaki e-posta iletilerine erişmek ve bunları yönetmek için yaygın olarak kullanılan bir protokoldür. Aspose.Email for Java ile IMAP işlevselliğini Java uygulamalarınıza kolayca entegre edebilirsiniz. Başlayalım!
 
 
 ## 1. IMAP Protokolüne Giriş
 
-IMAP, uzak bir posta sunucusundaki e-posta iletilerinize erişmenize ve onları yönetmenize olanak tanıyan güçlü bir e-posta protokolüdür. E-postaları okumak, aramak ve düzenlemek için özellikler sunarak onu e-posta iletişimi için önemli bir araç haline getirir.
+IMAP, uzak bir posta sunucusunda e-posta mesajlarınıza erişmenizi ve bunları yönetmenizi sağlayan güçlü bir e-posta protokolüdür. E-postaları okuma, arama ve düzenleme özellikleri sunarak e-posta iletişimi için olmazsa olmaz bir araç haline getirir.
 
-## 2. Java için Aspose.Email'in Kurulumu
+## 2. Java için Aspose.Email'i kurma
 
- Başlamak için Aspose.Email for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/email/java/). Kütüphaneyi Java ortamınızda kurmak için kurulum talimatlarını izleyin.
+Başlamak için Aspose.Email for Java'yı indirin ve yükleyin [Burada](https://releases.aspose.com/email/java/). Kütüphaneyi Java ortamınıza kurmak için kurulum talimatlarını izleyin.
 
-## 3. IMAP Sunucusuna Bağlanma
+## 3. Bir IMAP Sunucusuna Bağlanma
 
-IMAP protokolünü kullanmak için e-posta sunucunuzla bağlantı kurmanız gerekir. Aspose.Email for Java kullanarak bir IMAP sunucusuna bağlanmak için örnek kod pasajını burada bulabilirsiniz:
+IMAP protokolünü kullanmak için e-posta sunucunuza bir bağlantı kurmanız gerekir. İşte Java için Aspose.Email kullanarak bir IMAP sunucusuna bağlanmak için örnek bir kod parçası:
 
 ```java
 // ImapClient sınıfının bir örneğini oluşturun
 ImapClient client = new ImapClient("imap.example.com", "username", "password");
 
-// Sunucuya bağlanın
+// Sunucuya bağlan
 client.connect();
 ```
 
-## 4. Posta Kutularını ve Klasörleri Listeleyin
+## 4. Posta Kutularını ve Klasörleri Listele
 
-Bağlandıktan sonra sunucudaki tüm posta kutularını ve klasörleri listeleyebilirsiniz. Bu, e-posta hiyerarşisinde verimli bir şekilde gezinmenize yardımcı olur.
+Bağlandıktan sonra, sunucudaki tüm posta kutularını ve klasörleri listeleyebilirsiniz. Bu, e-posta hiyerarşisinde verimli bir şekilde gezinmenize yardımcı olur.
 
 ```java
 // Tüm posta kutularını listele
@@ -48,13 +50,13 @@ MailboxInfo[] mailboxes = client.listMailboxes();
 
 ## 5. E-postaları Okumak
 
-Posta kutunuzdaki e-postaları okumak için aşağıdaki kodu kullanabilirsiniz:
+E-postalarınızı gelen kutunuzdan okumak için aşağıdaki kodu kullanabilirsiniz:
 
 ```java
 // Bir posta kutusu seçin
 client.selectMailbox("inbox");
 
-// E-postaları alın
+// E-postaları al
 ImapMessageInfo[] messages = client.listMessages();
 ```
 
@@ -63,12 +65,12 @@ ImapMessageInfo[] messages = client.listMessages();
 E-posta eklerini kolaylıkla indirebilirsiniz:
 
 ```java
-// Belirli bir e-postadaki ekleri indirme
+// Belirli bir e-postadan ekleri indirin
 MailMessage message = client.fetchMessage(1);
 AttachmentCollection attachments = message.getAttachments();
 ```
 
-## 7. IMAP aracılığıyla E-posta Gönderme
+## 7. IMAP Üzerinden E-posta Gönderme
 
 Aspose.Email for Java, IMAP protokolü aracılığıyla e-posta göndermenize olanak tanır. İşte bir örnek:
 
@@ -93,7 +95,7 @@ client.deleteMessage(1);
 
 ## 9. Klasörleri Yönetme
 
-E-posta klasörlerinizi programlı bir şekilde yönetin:
+E-posta klasörlerinizi programlı olarak yönetin:
 
 ```java
 // Yeni bir klasör oluştur
@@ -102,13 +104,13 @@ client.createFolder("MyFolder");
 // Bir klasörü yeniden adlandırın
 client.renameFolder("MyFolder", "NewFolderName");
 
-// Bir klasörü silme
+// Bir klasörü sil
 client.deleteFolder("NewFolderName");
 ```
 
 ## 10. E-postaları Arama
 
-Belirli e-postaları verimli bir şekilde arayın:
+Belirli e-postaları etkin bir şekilde arayın:
 
 ```java
 // Belirli bir anahtar kelimeyi içeren e-postaları arayın
@@ -118,24 +120,24 @@ builder.getSubject().contains("important");
 ImapMessageInfo[] searchResults = client.listMessages(builder.getQuery());
 ```
 
-## 11. Bayraklarla Çalışmak
+## 11. Bayraklarla Çalışma
 
-E-postaları okundu, okunmadı veya işaretlendi olarak işaretlemek için e-posta bayraklarını yönetin:
+E-postaları okundu, okunmadı veya işaretli olarak işaretlemek için e-posta işaretlerini yönetin:
 
 ```java
-// Bir e-postayı okundu olarak işaretleme
+// Bir e-postayı okundu olarak işaretle
 client.setMessageFlags(1, MessageFlag.SEEN, true);
 
-// Bir e-postayı işaretleme
+// Bir e-postayı işaretle
 client.setMessageFlags(1, MessageFlag.FLAGGED, true);
 ```
 
-## 12. IMAP Olaylarını Yönetme
+## 12. IMAP Olaylarının İşlenmesi
 
-Aspose.Email for Java, yeni e-posta gelişi gibi IMAP olaylarını yönetmenizi sağlar:
+Aspose.Email for Java, yeni e-posta gelmesi gibi IMAP olaylarını yönetmenize olanak tanır:
 
 ```java
-// Etkinlik işleyicinizi uygulayın
+// Olay işleyicinizi uygulayın
 class MyImapEventHandler implements ImapEventHandler {
     // Olay işleme yöntemlerini uygulayın
 }
@@ -144,15 +146,15 @@ class MyImapEventHandler implements ImapEventHandler {
 client.addImapEventHandler(new MyImapEventHandler());
 ```
 
-## 13. Hata İşleme
+## 13. Hata Yönetimi
 
-İstisnaları düzgün bir şekilde ele almak için her zaman hata işlemeyi uygulayın:
+İstisnaları zarif bir şekilde işlemek için her zaman hata işlemeyi uygulayın:
 
 ```java
 try {
     // IMAP kodunuz burada
 } catch (ImapException ex) {
-    // İstisnaları ele alın
+    // İstisnaları ele al
 }
 ```
 
@@ -162,35 +164,37 @@ Verimli ve güvenli IMAP kullanımı için en iyi uygulamaları izleyin:
 
 - Güvenli bağlantılar için SSL/TLS kullanın.
 - Kullanımdan sonra bağlantıyı kapatın.
-- Kaynakları boşaltmak için nesneleri uygun şekilde atın.
+- Kaynakları serbest bırakmak için nesneleri uygun şekilde elden çıkarın.
 
 ## 15. Sonuç
 
-Aspose.Email for Java'da IMAP protokolüyle nasıl çalışılacağını öğrendiniz. Bu çok yönlü kitaplık, e-posta iletişimini verimli bir şekilde yönetmenizi sağlar. Aspose.Email ile daha fazla özelliği keşfedin ve e-posta çözümlerinizi özelleştirin.
+Aspose.Email for Java'da IMAP protokolüyle nasıl çalışacağınızı öğrendiniz. Bu çok yönlü kitaplık, e-posta iletişimini verimli bir şekilde yönetmenizi sağlar. Aspose.Email ile daha fazla özelliği keşfedin ve e-posta çözümlerinizi özelleştirin.
 
 ---
 
-## SSS (Sık Sorulan Sorular)
+## SSS (Sıkça Sorulan Sorular)
 
 ### IMAP nedir ve POP3'ten farkı nedir?
-   IMAP (İnternet İleti Erişim Protokolü) ve POP3 (Postane Protokolü) her ikisi de e-posta alma protokolleridir, ancak farklı çalışırlar. IMAP, sunucudaki e-postaları yönetmenize izin verirken, POP3 bunları yerel cihazınıza indirir.
+   IMAP (İnternet İleti Erişim Protokolü) ve POP3 (Post Office Protocol) ikisi de e-posta alma protokolleridir, ancak farklı şekilde çalışırlar. IMAP, e-postaları sunucuda yönetmenize olanak tanırken, POP3 bunları yerel cihazınıza indirir.
 
-### Aspose.Email for Java diğer e-posta protokolleriyle uyumlu mu?
-   Evet, Aspose.Email for Java, SMTP, POP3 ve IMAP dahil olmak üzere çeşitli e-posta protokollerini destekler ve bu da onu çok yönlü bir e-posta düzenleme kitaplığı haline getirir.
+### Aspose.Email for Java diğer e-posta protokolleriyle uyumlu mudur?
+   Evet, Aspose.Email for Java, SMTP, POP3 ve IMAP dahil olmak üzere çeşitli e-posta protokollerini destekler ve bu da onu çok yönlü bir e-posta işleme kütüphanesi haline getirir.
 
 ### Aspose.Email for Java'yı ticari projelerimde kullanabilir miyim?
    Evet, Aspose.Email for Java hem ticari hem de kişisel projelerde kullanılabilir. Daha fazla bilgi için Aspose web sitesindeki lisanslama ayrıntılarını kontrol edin.
 
-### Aspose.Email for Java'da e-posta eklerini nasıl yönetebilirim?
-   Aspose.Email for Java tarafından sağlananattachmentCollection sınıfını kullanarak e-posta eklerini kolayca yönetebilirsiniz. Ayrıntılı örnekler için belgelere bakın.
+### Aspose.Email for Java'da e-posta eklerini nasıl işleyebilirim?
+   Aspose.Email for Java tarafından sağlanan AttachmentCollection sınıfını kullanarak e-posta eklerini kolayca işleyebilirsiniz. Ayrıntılı örnekler için belgelere bakın.
 
 ### Aspose.Email for Java için daha fazla kaynak ve belgeyi nerede bulabilirim?
-    Aspose.Email for Java API belgelerini şu adreste ziyaret edin:[https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) kapsamlı kılavuzlar, API referansları ve kod örnekleri için.
+   Java API belgeleri için Aspose.Email'i şu adresten ziyaret edin: [https://reference.aspose.com/e-posta/java/](https://reference.aspose.com/email/java/) Kapsamlı kılavuzlar, API referansları ve kod örnekleri için.
 
-Artık Aspose.Email for Java'da IMAP protokolüyle çalışma konusunda sağlam bir anlayışa sahip olduğunuza göre, özel ihtiyaçlarınıza göre uyarlanmış güçlü e-posta yönetimi çözümleri oluşturabilirsiniz. Mutlu kodlama!
+Artık Aspose.Email for Java'da IMAP protokolüyle çalışma konusunda sağlam bir anlayışa sahip olduğunuza göre, özel ihtiyaçlarınıza göre uyarlanmış sağlam e-posta yönetim çözümleri oluşturabilirsiniz. İyi kodlamalar!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

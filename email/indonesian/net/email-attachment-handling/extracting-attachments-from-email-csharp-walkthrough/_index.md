@@ -1,46 +1,48 @@
 ---
-title: Mengekstrak Lampiran dari Email - Panduan C#
-linktitle: Mengekstrak Lampiran dari Email - Panduan C#
-second_title: API Pemrosesan Email Aspose.Email .NET
-description: Pelajari cara mengekstrak lampiran email langkah demi langkah menggunakan Aspose.Email untuk .NET. Tangani berbagai format & simpan dengan mudah.
-weight: 14
-url: /id/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
+"description": "Pelajari cara mengekstrak lampiran email langkah demi langkah menggunakan Aspose.Email untuk .NET. Tangani berbagai format & simpan dengan mudah."
+"linktitle": "Mengekstrak Lampiran dari Email - Panduan C#"
+"second_title": "API Pemrosesan Email Aspose.Email .NET"
+"title": "Mengekstrak Lampiran dari Email - Panduan C#"
+"url": "/id/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Mengekstrak Lampiran dari Email - Panduan C#
 
 
-## Pengantar Mengekstrak Lampiran dari Email - Panduan C# menggunakan Aspose.Email untuk .NET
+## Pengantar Ekstraksi Lampiran dari Email - Panduan C# menggunakan Aspose.Email untuk .NET
 
-Komunikasi email telah menjadi bagian integral dari kehidupan kita, baik secara pribadi maupun profesional. Seringkali, email ini berisi lampiran penting yang perlu diekstraksi dan diproses. Pada artikel ini, kita akan memandu panduan langkah demi langkah tentang cara mengekstrak lampiran dari email menggunakan perpustakaan Aspose.Email untuk .NET.
+Komunikasi email telah menjadi bagian tak terpisahkan dari kehidupan kita, baik secara pribadi maupun profesional. Sering kali, email-email ini berisi lampiran penting yang perlu diekstrak dan diproses. Dalam artikel ini, kami akan memandu Anda langkah demi langkah tentang cara mengekstrak lampiran dari email menggunakan pustaka Aspose.Email untuk .NET.
 
 ## Prasyarat untuk Mengekstrak Lampiran
 
-Sebelum kita mendalami proses pengkodean, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita masuk ke proses pengkodean, pastikan Anda memiliki prasyarat berikut:
 
-- Visual Studio diinstal pada mesin Anda
-- Pengetahuan dasar tentang pemrograman C#
+- Visual Studio terinstal di komputer Anda
+- Pengetahuan dasar pemrograman C#
 - Akses ke akun email yang valid untuk pengujian
 
-## Menyiapkan Lingkungan Pembangunan
+## Menyiapkan Lingkungan Pengembangan
 
 1. Luncurkan Visual Studio dan buat proyek aplikasi konsol C# baru.
 
 2. Beri nama proyek dan pilih lokasi yang diinginkan untuk menyimpannya.
 
-## Menginstal Perpustakaan Aspose.Email
+## Memasang Pustaka Aspose.Email
 
-1. Klik kanan proyek Anda di Solution Explorer dan pilih "Kelola Paket NuGet."
+1. Klik kanan pada proyek Anda di Solution Explorer dan pilih "Kelola Paket NuGet."
 
-2. Cari "Aspose.Email" dan instal perpustakaan untuk proyek Anda.
+2. Cari "Aspose.Email" dan instal pustaka untuk proyek Anda.
 
 ## Memuat dan Mengakses Pesan Email
 
-Untuk memulai, Anda perlu memuat dan mengakses pesan email menggunakan perpustakaan Aspose.Email. Begini caranya:
+Untuk memulai, Anda perlu memuat dan mengakses pesan email menggunakan pustaka Aspose.Email. Berikut caranya:
 
 ```csharp
 using Aspose.Email;
@@ -55,7 +57,7 @@ client.SelectFolder(ImapFolderInfo.InBox);
 ImapMessageInfoCollection messages = client.ListMessages();
 foreach (ImapMessageInfo messageInfo in messages)
 {
-    // Akses pesan email
+    // Mengakses pesan email
     MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 }
 ```
@@ -74,7 +76,7 @@ foreach (Attachment attachment in message.Attachments)
     }
     else if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // Proses lampiran gambar
+        // Lampiran gambar proses
     }
     // Tangani jenis lampiran lainnya dengan cara yang sama
 }
@@ -82,7 +84,7 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Menangani Berbagai Jenis Lampiran
 
-Lampiran bisa dalam berbagai format, seperti PDF, gambar, dokumen, dll. Anda dapat menyesuaikan kode untuk menangani jenis lampiran yang berbeda.
+Lampiran dapat hadir dalam berbagai format, seperti PDF, gambar, dokumen, dll. Anda dapat menyesuaikan kode untuk menangani berbagai jenis lampiran.
 
 ## Menyimpan Lampiran yang Diekstrak
 
@@ -97,17 +99,17 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah menjelajahi cara mengekstrak lampiran dari email menggunakan perpustakaan Aspose.Email untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat mengambil dan memproses lampiran dari komunikasi email Anda secara efisien.
+Dalam tutorial ini, kami telah mempelajari cara mengekstrak lampiran dari email menggunakan pustaka Aspose.Email untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat mengambil dan memproses lampiran dari komunikasi email Anda secara efisien.
 
-## FAQ
+## Tanya Jawab Umum
 
-### Bagaimana cara menangani lampiran dengan jenis file yang tidak diketahui?
+### Bagaimana saya dapat menangani lampiran dengan jenis file yang tidak dikenal?
 
- Anda dapat menggunakan lampirannya`ContentType.MediaType` properti untuk mengidentifikasi jenis file dan menanganinya sesuai dengan itu.
+Anda dapat menggunakan lampiran `ContentType.MediaType` properti untuk mengidentifikasi jenis berkas dan menanganinya sebagaimana mestinya.
 
 ### Bisakah saya mengekstrak beberapa lampiran sekaligus?
 
-Ya, Anda dapat menelusuri kumpulan lampiran pesan email dan mengekstrak semua lampiran.
+Ya, Anda dapat mengulangi kumpulan lampiran pesan email dan mengekstrak semua lampiran.
 
 ### Apakah Aspose.Email kompatibel dengan protokol email yang berbeda?
 
@@ -119,10 +121,12 @@ Aspose.Email mendukung .NET Framework dan .NET Core.
 
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Email?
 
- Untuk dokumentasi dan contoh terperinci, lihat[Dokumentasi Aspose.Email](https://reference.aspose.com/email/net/).
+Untuk dokumentasi dan contoh terperinci, lihat [Dokumentasi Aspose.Email](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

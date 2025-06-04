@@ -1,32 +1,34 @@
 ---
-title: Thêm tệp đính kèm email bằng C#
-linktitle: Thêm tệp đính kèm email bằng C#
-second_title: API xử lý email Aspose.Email .NET
-description: Tìm hiểu cách thêm tệp đính kèm email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ về mã để tích hợp liền mạch.
-weight: 11
-url: /vi/net/email-attachment-handling/adding-email-attachments-using-csharp/
+"description": "Tìm hiểu cách thêm tệp đính kèm email bằng C# và Aspose.Email cho .NET. Hướng dẫn từng bước với các ví dụ mã để tích hợp liền mạch."
+"linktitle": "Thêm tệp đính kèm email bằng C#"
+"second_title": "API xử lý email Aspose.Email .NET"
+"title": "Thêm tệp đính kèm email bằng C#"
+"url": "/vi/net/email-attachment-handling/adding-email-attachments-using-csharp/"
+"weight": 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Thêm tệp đính kèm email bằng C#
 
 
-## Giới thiệu về Tệp đính kèm email và Aspose.Email cho .NET
+## Giới thiệu về Tệp đính kèm Email và Aspose.Email cho .NET
 
-Tệp đính kèm email là một phần không thể thiếu trong giao tiếp điện tử. Chúng cho phép chúng tôi chia sẻ tập tin với người khác một cách thuận tiện. Aspose.Email for .NET là một thư viện mạnh mẽ giúp đơn giản hóa các tác vụ liên quan đến email trong các ứng dụng C#.
+Tệp đính kèm email là một phần không thể thiếu của giao tiếp điện tử. Chúng cho phép chúng ta chia sẻ tệp với người khác một cách thuận tiện. Aspose.Email for .NET là một thư viện mạnh mẽ giúp đơn giản hóa các tác vụ liên quan đến email trong các ứng dụng C#.
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những điều sau:
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
 - Đã cài đặt Visual Studio
 - Hiểu biết cơ bản về C#
--  Thư viện Aspose.Email cho .NET (Bạn có thể lấy nó từ[đây](https://products.aspose.com/email/net))
+- Aspose.Email cho thư viện .NET (Bạn có thể lấy nó từ [đây](https://products.aspose.com/email/net))
 
-## Thiết lập môi trường phát triển
+## Thiết lập Môi trường Phát triển
 
 1. Khởi chạy Visual Studio.
 2. Tạo một ứng dụng bảng điều khiển C# mới.
@@ -53,7 +55,7 @@ message.Subject = "My Email with Attachments";
 message.Body = "Please find the attached files.";
 ```
 
-## Thêm tệp đính kèm vào email
+## Thêm tệp đính kèm vào Email
 
 1. Sử dụng lớp Đính kèm để thêm tệp đính kèm.
 
@@ -62,9 +64,9 @@ Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
-2. Bạn có thể thêm nhiều tệp đính kèm bằng cách lặp lại bước trên.
+2. Bạn có thể thêm nhiều tệp đính kèm bằng cách lặp lại các bước trên.
 
-## Lưu và gửi email
+## Lưu và Gửi Email
 
 1. Sử dụng lớp SmtpClient để gửi email.
 
@@ -75,13 +77,13 @@ client.Send(message);
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách thêm tệp đính kèm email bằng C# với thư viện Aspose.Email for .NET. Giờ đây, bạn có thể nâng cao ứng dụng của mình bằng cách kết hợp khả năng gửi các tệp và tài liệu quan trọng một cách liền mạch.
+Trong hướng dẫn này, chúng ta đã học cách thêm tệp đính kèm email bằng C# với thư viện Aspose.Email cho .NET. Bây giờ bạn có thể cải thiện ứng dụng của mình bằng cách kết hợp khả năng gửi các tệp và tài liệu quan trọng một cách liền mạch.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào để tải xuống thư viện Aspose.Email cho .NET?
+### Làm thế nào để tải xuống thư viện Aspose.Email cho .NET?
 
- Bạn có thể tải xuống thư viện Aspose.Email cho .NET từ Aspose.Rereleases:[Aspose.Releases](https://releases.aspose.com/email/net/)
+Bạn có thể tải xuống thư viện Aspose.Email cho .NET từ Aspose.Releases: [Aspose.Phát hành](https://releases.aspose.com/email/net/)
 
 ### Tôi có thể thêm nhiều tệp đính kèm vào một email không?
 
@@ -93,14 +95,16 @@ Có, Aspose.Email for .NET hỗ trợ nhiều giao thức email khác nhau, bao 
 
 ### Tôi có thể tùy chỉnh nội dung email trước khi gửi không?
 
-Tuyệt đối! Bạn có thể đặt các thuộc tính khác nhau của lớp MailMessage, chẳng hạn như Nội dung, Chủ đề và tệp đính kèm, để tùy chỉnh email theo yêu cầu của bạn.
+Chắc chắn rồi! Bạn có thể thiết lập nhiều thuộc tính khác nhau của lớp MailMessage, chẳng hạn như Nội dung, Chủ đề và tệp đính kèm, để tùy chỉnh email theo yêu cầu của bạn.
 
 ### Có phiên bản dùng thử miễn phí của Aspose.Email cho .NET không?
 
-Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.Email dành cho .NET để khám phá các tính năng của nó trước khi mua hàng.
+Có, bạn có thể tải xuống phiên bản dùng thử miễn phí của Aspose.Email dành cho .NET để khám phá các tính năng của nó trước khi mua.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

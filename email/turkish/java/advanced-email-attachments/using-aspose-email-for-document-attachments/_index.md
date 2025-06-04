@@ -1,14 +1,16 @@
 ---
-title: Belge Ekleri için Aspose.Email Kullanımı
-linktitle: Belge Ekleri için Aspose.Email Kullanımı
-second_title: Aspose.Email Java E-posta Yönetimi API'si
-description: Aspose.Email for Java kullanarak Java e-postalarındaki belge eklerini nasıl yöneteceğinizi öğrenin. Belge eklerini kolaylıkla oluşturun, gönderin ve çıkarın.
-weight: 16
-url: /tr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
+"description": "Java için Aspose.Email'i kullanarak Java e-postalarındaki belge eklerini nasıl yöneteceğinizi öğrenin. Belge eklerini kolayca oluşturun, gönderin ve çıkarın."
+"linktitle": "Belge Ekleri için Aspose.Email Kullanımı"
+"second_title": "Aspose.Email Java E-posta Yönetim API'si"
+"title": "Belge Ekleri için Aspose.Email Kullanımı"
+"url": "/tr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Belge Ekleri için Aspose.Email Kullanımı
@@ -16,28 +18,28 @@ url: /tr/java/advanced-email-attachments/using-aspose-email-for-document-attachm
 
 ## Java'da Belge Ekleri için Aspose.Email Kullanımına Giriş
 
-Bu eğitimde Aspose.Email for Java kullanarak belge ekleriyle nasıl çalışılacağını inceleyeceğiz. Aspose.Email, e-posta mesajlarını ve eklerini kolaylıkla değiştirmenizi sağlayan güçlü bir Java API'sidir. Aşağıdaki konuları ele alacağız:
+Bu eğitimde, Java için Aspose.Email kullanarak belge ekleriyle nasıl çalışılacağını keşfedeceğiz. Aspose.Email, e-posta mesajlarını ve eklerini kolayca düzenlemenize olanak tanıyan güçlü bir Java API'sidir. Aşağıdaki konuları ele alacağız:
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-- Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Email Java kütüphanesi için. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/email/java/).
+- Sisteminizde Java Development Kit (JDK) yüklü.
+- Java kütüphanesi için Aspose.Email. Buradan indirebilirsiniz [Burada](https://releases.aspose.com/email/java/).
 
-## Aspose.Email'i Projenize Eklemek
+## Aspose.Email'i Projenize Ekleme
 
-Başlamak için Aspose.Email kütüphanesini Java projenize eklemeniz gerekir. Bu adımları takip et:
+Başlamak için Aspose.Email kütüphanesini Java projenize eklemeniz gerekir. Şu adımları izleyin:
 
 1. Verilen bağlantıdan Aspose.Email for Java kütüphanesini indirin.
 
-2. İndirdiğiniz ZIP dosyasını istediğiniz dizine çıkartın.
+2. İndirdiğiniz ZIP dosyasını istediğiniz bir dizine çıkarın.
 
-3. Java projenizde Aspose.Email JAR dosyalarını sınıf yolunuza ekleyin. Bunu favori entegre geliştirme ortamınızda (IDE) veya komut satırını kullanarak yapabilirsiniz.
+3. Java projenizde, Aspose.Email JAR dosyalarını sınıf yolunuza ekleyin. Bunu favori entegre geliştirme ortamınızda (IDE) veya komut satırını kullanarak yapabilirsiniz.
 
 ## Yeni Bir E-posta Mesajı Oluşturma
 
-Belge eki içeren yeni bir e-posta mesajı oluşturarak başlayalım. Bunu açıklamak için basit bir örnek kullanacağız:
+Belge eki olan yeni bir e-posta mesajı oluşturarak başlayalım. Bunu göstermek için basit bir örnek kullanacağız:
 
 ```java
 import com.aspose.email.Attachment;
@@ -48,11 +50,11 @@ public class CreateEmailWithAttachment {
         // Yeni bir e-posta mesajı oluştur
         MailMessage message = new MailMessage();
 
-        //Gönderenin ve alıcının e-posta adreslerini ayarlayın
+        // Gönderen ve alıcı e-posta adreslerini ayarlayın
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
 
-        // E-postanın konusunu ve metnini ayarlayın
+        // E-postanın konusunu ve gövdesini ayarlayın
         message.setSubject("Document Attachment Example");
         message.setBody("Please find the attached document.");
 
@@ -66,11 +68,11 @@ public class CreateEmailWithAttachment {
 }
 ```
 
- Bu örnekte yeni bir tane oluşturuyoruz.`MailMessage` nesnesini seçin, gönderen ve alıcı e-posta adreslerini ayarlayın, e-postanın konusunu ve metnini belirtin ve e-postaya bir belge dosyası ekleyin.
+Bu örnekte yeni bir tane oluşturuyoruz `MailMessage` nesneyi seçin, gönderici ve alıcı e-posta adreslerini ayarlayın, e-postanın konusunu ve gövdesini belirtin ve buna bir belge dosyası ekleyin.
 
 ## Belge Eklerini Alma
 
-Gelen e-postalardan belge eklerini çıkarmanız ve bunlarla çalışmanız gerekebilir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Gelen e-postalardan belge eklerini çıkarmanız ve bunlarla çalışmanız gerekebilir. Bunu şu şekilde yapabilirsiniz:
 
 ```java
 import com.aspose.email.Attachment;
@@ -81,7 +83,7 @@ public class ExtractAttachments {
         // Bir dosyadan e-posta mesajı yükleyin veya SMTP kullanarak alın
         MailMessage message = MailMessage.load("received_email.eml");
 
-        // Ekleri yineleyin ve belge eklerini kaydedin
+        // Ekler arasında gezinin ve belge eklerini kaydedin
         for (Attachment attachment : message.getAttachments()) {
             if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
@@ -91,28 +93,30 @@ public class ExtractAttachments {
 }
 ```
 
-Bu örnekte, bir dosyadan bir e-posta mesajı yüklüyoruz (bunu SMTP kullanarak da alabilirsiniz), ekler arasında yineleniyoruz ve tüm belge eklerini PDF içerik türüyle kaydediyoruz.
+Bu örnekte, bir dosyadan e-posta mesajı yüklüyoruz (bunu SMTP kullanarak da alabilirsiniz), ekler arasında yineleme yapıyoruz ve PDF içerik türüne sahip tüm belge eklerini kaydediyoruz.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Email for Java kullanarak belge ekleriyle nasıl çalışılacağını araştırdık. Belge ekleri içeren e-postaları nasıl oluşturup göndereceğinizi ve gelen e-postalardan belge eklerini nasıl çıkaracağınızı öğrendiniz. Aspose.Email, çeşitli ek türleriyle çalışmak için güçlü yetenekler sağlar ve bu da onu Java uygulamalarında e-posta otomasyonu için değerli bir araç haline getirir.
+Bu eğitimde, Java için Aspose.Email kullanarak belge ekleriyle nasıl çalışılacağını inceledik. Belge ekleriyle e-postalar oluşturmayı ve göndermeyi ve gelen e-postalardan belge eklerini nasıl çıkaracağınızı öğrendiniz. Aspose.Email, çeşitli türdeki eklerle çalışmak için güçlü yetenekler sunar ve bu da onu Java uygulamalarında e-posta otomasyonu için değerli bir araç haline getirir.
 
-## SSS'ler
+## SSS
 
 ### Birden fazla belge eki içeren bir e-postayı nasıl gönderebilirim?
 
- Birden fazla belge eki içeren bir e-posta göndermek için daha fazlasını ekleyebilirsiniz.`Attachment` nesnelere`MailMessage` yukarıdaki örnekte gösterildiği gibi. Her biri`Attachment` ayrı bir eki temsil eder.
+Birden fazla belge eki içeren bir e-posta göndermek için daha fazlasını ekleyebilirsiniz `Attachment` nesnelere `MailMessage` Yukarıdaki örnekte gösterildiği gibi. Her biri `Attachment` ayrı bir eki temsil eder.
 
 ### PDF belgeleri dışındaki eklerle çalışabilir miyim?
 
-Evet, Aspose.Email for Java, Word belgeleri, Excel elektronik tabloları, resimler ve daha fazlasını içeren çok çeşitli ek türlerini destekler. Ekin içerik türünü kontrol edebilir ve kodunuzda buna göre işleyebilirsiniz.
+Evet, Aspose.Email for Java, Word belgeleri, Excel elektronik tabloları, resimler ve daha fazlası dahil olmak üzere çok çeşitli ek türlerini destekler. Ekin içerik türünü kontrol edebilir ve kodunuzda buna göre işleyebilirsiniz.
 
-### Büyük belge eklerini nasıl halledebilirim?
+### Büyük belge eklerini nasıl işlerim?
 
-Büyük belge ekleriyle uğraşmanız gerekiyorsa, ekin tamamının belleğe yüklenmesini önlemek için akış tekniklerini kullanmayı düşünün. Aspose.Email, eklerin akışı için seçenekler sunarak bunları verimli bir şekilde işlemenize olanak tanır.
+Büyük belge eklerini işlemeniz gerekiyorsa, tüm eki belleğe yüklemekten kaçınmak için akış tekniklerini kullanmayı düşünün. Aspose.Email, ekleri akışla işlemenize olanak tanıyan seçenekler sunar.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

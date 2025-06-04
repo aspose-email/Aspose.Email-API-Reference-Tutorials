@@ -1,53 +1,55 @@
 ---
-title: Mellékletek kinyerése e-mailből – C# végigjátszás
-linktitle: Mellékletek kinyerése e-mailből – C# végigjátszás
-second_title: Aspose.Email .NET Email Processing API
-description: Ismerje meg az e-mail mellékletek kibontását lépésről lépésre az Aspose.Email for .NET segítségével. Különféle formátumok kezelése és mentése könnyedén.
-weight: 14
-url: /hu/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
+"description": "Tanuld meg lépésről lépésre kinyerni az e-mail mellékleteket az Aspose.Email for .NET segítségével. Kezelj különféle formátumokat és ments el könnyedén."
+"linktitle": "Mellékletek kinyerése e-mailből - C# útmutató"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "Mellékletek kinyerése e-mailből - C# útmutató"
+"url": "/hu/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mellékletek kinyerése e-mailből – C# végigjátszás
+# Mellékletek kinyerése e-mailből - C# útmutató
 
 
-## Bevezetés a mellékletek e-mailből történő kibontásába – C# végigjátszás az Aspose.Email for .NET használatával
+## Bevezetés az e-mailek mellékleteinek kinyerésébe - C# útmutató az Aspose.Email for .NET használatával
 
-Az e-mailes kommunikáció életünk szerves részévé vált, mind személyesen, mind szakmailag. Ezek az e-mailek gyakran fontos mellékleteket tartalmaznak, amelyeket ki kell bontani és feldolgozni. Ebben a cikkben lépésről lépésre bemutatjuk, hogyan bonthat ki mellékleteket az e-mailekből a .NET Aspose.Email könyvtárával.
+Az e-mailes kommunikáció életünk szerves részévé vált, mind személyes, mind szakmai téren. Ezek az e-mailek gyakran fontos mellékleteket tartalmaznak, amelyeket ki kell vonni és fel kell dolgozni. Ebben a cikkben lépésről lépésre bemutatjuk, hogyan lehet kinyerni a mellékleteket az e-mailekből az Aspose.Email .NET-hez készült könyvtár segítségével.
 
-## A mellékletek kibontásának előfeltételei
+## mellékletek kibontásának előfeltételei
 
-Mielőtt belemerülnénk a kódolási folyamatba, győződjön meg arról, hogy a következő előfeltételekkel rendelkezik:
+Mielőtt belemerülnénk a kódolási folyamatba, győződjünk meg arról, hogy a következő előfeltételek teljesülnek:
 
-- A Visual Studio telepítve van a gépedre
+- Visual Studio telepítve a gépeden
 - C# programozási alapismeretek
-- Hozzáférés egy érvényes e-mail fiókhoz teszteléshez
+- Érvényes e-mail fiókhoz való hozzáférés teszteléshez
 
 ## A fejlesztői környezet beállítása
 
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# konzolalkalmazásprojektet.
+1. Indítsa el a Visual Studio alkalmazást, és hozzon létre egy új C# konzolalkalmazás-projektet.
 
-2. Nevezze el a projektet, és válassza ki a kívánt helyet a mentéshez.
+2. Nevezd el a projektet, és válaszd ki a mentéshez kívánt helyet.
 
-## Az Aspose.Email Library telepítése
+## Az Aspose.Email könyvtár telepítése
 
-1. Kattintson a jobb gombbal a projektre a Solution Explorerben, és válassza a „NuGet-csomagok kezelése” lehetőséget.
+1. Kattintson jobb gombbal a projektjére a Megoldáskezelőben, és válassza a „NuGet-csomagok kezelése” lehetőséget.
 
-2. Keresse meg az „Aspose.Email” kifejezést, és telepítse a projekt könyvtárát.
+2. Keresd meg az „Aspose.Email” kifejezést, és telepítsd a projektedhez tartozó könyvtárat.
 
 ## E-mail üzenetek betöltése és elérése
 
-A kezdéshez be kell töltenie és elérnie kell az e-mail üzeneteket az Aspose.Email könyvtár segítségével. Itt van, hogyan:
+A kezdéshez be kell töltenie és el kell érnie az e-mail üzeneteket az Aspose.Email könyvtár segítségével. Így teheti meg:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Clients.Imap;
 using Aspose.Email.Clients.Pop3;
 
-// Csatlakozzon az e-mail szerverhez
+// Csatlakozás az e-mail szerverhez
 ImapClient client = new ImapClient("imap.example.com", "username", "password");
 client.SelectFolder(ImapFolderInfo.InBox);
 
@@ -55,14 +57,14 @@ client.SelectFolder(ImapFolderInfo.InBox);
 ImapMessageInfoCollection messages = client.ListMessages();
 foreach (ImapMessageInfo messageInfo in messages)
 {
-    // Nyissa meg az e-mail üzenetet
+    // Hozzáférés az e-mail üzenethez
     MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 }
 ```
 
 ## Mellékletek kinyerése e-mailből
 
-Miután hozzáfért az e-mail üzenethez, megkezdheti a mellékletek kibontását:
+Miután hozzáférsz az e-mailhez, elkezdheted a mellékletek kinyerését:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
@@ -70,23 +72,23 @@ foreach (Attachment attachment in message.Attachments)
     // Ellenőrizze a melléklet típusát
     if (attachment.ContentType.MediaType == "application/pdf")
     {
-        // PDF melléklet feldolgozása
+        // PDF-melléklet feldolgozása
     }
     else if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // Képmelléklet feldolgozása
+        // Folyamatkép csatolmánya
     }
-    // Hasonló módon kezelje a többi tartozéktípust
+    // Más melléklettípusokat is hasonlóan kell kezelni
 }
 ```
 
-## Különböző típusú rögzítések kezelése
+## Különböző melléklettípusok kezelése
 
-A mellékletek többféle formátumban érkezhetnek, például PDF-ek, képek, dokumentumok stb. A kódot személyre szabhatja a különböző melléklettípusok kezeléséhez.
+A mellékletek különféle formátumokban érkezhetnek, például PDF-ként, képként, dokumentumként stb. A kódot ennek megfelelően testreszabhatja a különböző melléklettípusok kezeléséhez.
 
-## A kibontott mellékletek mentése
+## Kibontott mellékletek mentése
 
-A kibontott mellékletek mentése a helyi rendszerre:
+A kibontott mellékletek helyi rendszerre mentéséhez:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
@@ -97,32 +99,34 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk, hogyan lehet mellékleteket kinyerni az e-mailekből a .NET Aspose.Email könyvtárával. Az alábbi lépések követésével hatékonyan lekérheti és feldolgozhatja az e-mail üzeneteiből származó mellékleteket.
+Ebben az oktatóanyagban azt vizsgáltuk meg, hogyan lehet mellékleteket kinyerni e-mailekből az Aspose.Email .NET-hez készült könyvtár segítségével. A következő lépéseket követve hatékonyan kérheti le és dolgozhatja fel az e-mail kommunikáció mellékleteit.
 
 ## GYIK
 
 ### Hogyan kezelhetem az ismeretlen fájltípusú mellékleteket?
 
- Használhatja a mellékletet`ContentType.MediaType` tulajdonság segítségével azonosítja a fájltípust és ennek megfelelően kezeli.
+Használhatja a mellékletet `ContentType.MediaType` tulajdonság a fájltípus azonosítására és ennek megfelelő kezelésére.
 
-### Kibonthatok több mellékletet egyszerre?
+### Ki tudok vonni több mellékletet egyszerre?
 
-Igen, ismételheti az e-mail üzenetek mellékleteinek gyűjteményét, és kibonthatja az összes mellékletet.
+Igen, végigmehetsz egy e-mail üzenet mellékletgyűjteményén, és kinyerheted az összes mellékletet.
 
 ### Az Aspose.Email kompatibilis a különböző e-mail protokollokkal?
 
-Igen, az Aspose.Email támogatja a különféle e-mail protokollokat, például az IMAP-ot, a POP3-at, az SMTP-t és az Exchange Web Services-t (EWS).
+Igen, az Aspose.Email számos e-mail protokollokat támogat, mint például az IMAP, POP3, SMTP és az Exchange Web Services (EWS).
 
 ### A .NET mely verzióit támogatja az Aspose.Email?
 
-Az Aspose.Email támogatja a .NET-keretrendszert és a .NET Core-t.
+Az Aspose.Email támogatja a .NET Framework és a .NET Core rendszereket.
 
-### Hol találhatok további információt az Aspose.Email-ről?
+### Hol találok további információt az Aspose.Emailről?
 
- A részletes dokumentációért és példákért lásd a[Aspose.E-mail dokumentáció](https://reference.aspose.com/email/net/).
+Részletes dokumentációért és példákért lásd a [Aspose.Email dokumentáció](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

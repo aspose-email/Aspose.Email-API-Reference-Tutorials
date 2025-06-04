@@ -1,44 +1,46 @@
 ---
-title: Nastavení statusu účastníka pro účastníky schůzky s C#
-linktitle: Nastavení statusu účastníka pro účastníky schůzky s C#
-second_title: Aspose.Email .NET Email Processing API
-description: Naučte se spravovat stav účastníků schůzky pomocí C# a Aspose.Email pro .NET. Průvodce krok za krokem se zdrojovým kódem.
-weight: 16
-url: /cs/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
+"description": "Naučte se, jak spravovat stav účastníků schůzky pomocí C# a Aspose.Email pro .NET. Podrobný návod se zdrojovým kódem."
+"linktitle": "Nastavení stavu účastníka pro účastníky schůzky pomocí C#"
+"second_title": "Rozhraní API pro zpracování e-mailů Aspose.Email v .NET"
+"title": "Nastavení stavu účastníka pro účastníky schůzky pomocí C#"
+"url": "/cs/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Nastavení statusu účastníka pro účastníky schůzky s C#
+# Nastavení stavu účastníka pro účastníky schůzky pomocí C#
 
 
 ## Úvod do Aspose.Email pro .NET
 
-Aspose.Email for .NET je všestranná knihovna, která umožňuje vývojářům pracovat s e-mailovými zprávami, schůzkami, kontakty a dalšími v rámci jejich aplikací .NET. Díky intuitivnímu rozhraní API mohou vývojáři bez námahy manipulovat s různými aspekty e-mailové komunikace, což z něj činí vynikající volbu pro zpracování úkolů souvisejících se schůzkami.
+Aspose.Email pro .NET je všestranná knihovna, která umožňuje vývojářům pracovat s e-mailovými zprávami, schůzkami, kontakty a dalšími prvky v rámci jejich .NET aplikací. Díky intuitivnímu API mohou vývojáři snadno manipulovat s různými aspekty e-mailové komunikace, což z ní činí vynikající volbu pro řešení úkolů souvisejících se schůzkami.
 
 ## Předpoklady
 
 Než se pustíme do implementace, ujistěte se, že máte splněny následující předpoklady:
 
 - Visual Studio (nebo jakékoli C# IDE)
-- Aspose.Email pro knihovnu .NET
+- Knihovna Aspose.Email pro .NET
 - Základní znalost programování v C#
 
 ## Vytvoření schůzky
 
-Chcete-li začít, musíte vytvořit instanci události pomocí Aspose.Email pro .NET. Schůzka představuje naplánovanou událost a můžete nastavit různé vlastnosti, jako je čas zahájení, čas ukončení, místo a další.
+Chcete-li začít, musíte vytvořit instanci schůzky pomocí Aspose.Email pro .NET. Schůzka představuje naplánovanou událost a můžete nastavit různé vlastnosti, jako je čas zahájení, čas ukončení, místo a další.
 
 ```csharp
-// Přidejte potřebné příkazy pomocí příkazů
+// Přidejte potřebné příkazy using
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
 // Vytvořte instanci třídy Appointment
 var appointment = new Appointment();
 
-// Nastavte vlastnosti schůzky
+// Nastavení vlastností schůzky
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
@@ -46,78 +48,80 @@ appointment.Location = "Conference Room 101";
 
 ## Přidávání účastníků
 
- Dále můžete ke schůzce přidat účastníky pomocí`Attendees` sbírka. Účastníci jsou jednotlivci, kteří se zúčastní schůzky. Můžete zadat jejich e-mailové adresy a jména.
+Dále můžete přidat účastníky do schůzky pomocí `Attendees` sbírka. Účastníci jsou osoby, které se schůzky zúčastní. Můžete zadat jejich e-mailové adresy a jména.
 
 ```csharp
-// Přidejte účastníky ke schůzce
+// Přidat účastníky ke schůzce
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Nastavení stavu účastníka
+## Nastavení statusu účastníka
 
-Nyní přichází klíčová část: nastavení statusu účastníka pro účastníky. Stav účastníka udává, zda účastník přijal, odmítl nebo předběžně přijal pozvánku na schůzku. Aspose.Email pro .NET nabízí různé možnosti stavu, ze kterých si můžete vybrat.
+Nyní přichází klíčová část: nastavení statusu účastníka. Stav účastníka označuje, zda účastník pozvání na schůzku přijal, odmítl nebo předběžně přijal. Aspose.Email pro .NET nabízí různé možnosti statusu, ze kterých si můžete vybrat.
 
 ```csharp
-// Nastavte stav účastníka pro účastníky
+// Nastavení stavu účastníka pro účastníky
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
 ## Kompletní zdrojový kód
 
-Zde je úplný zdrojový kód, který demonstruje proces vytváření schůzky, přidávání účastníků a nastavení stavu účastníka:
+Zde je kompletní zdrojový kód, který demonstruje proces vytvoření schůzky, přidání účastníků a nastavení stavu účastníka:
 
 ```csharp
-// Přidejte potřebné příkazy pomocí příkazů
+// Přidejte potřebné příkazy using
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
 // Vytvořte instanci třídy Appointment
 var appointment = new Appointment();
 
-// Nastavte vlastnosti schůzky
+// Nastavení vlastností schůzky
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 
-// Přidejte účastníky ke schůzce
+// Přidat účastníky ke schůzce
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 
-// Nastavte stav účastníka pro účastníky
+// Nastavení stavu účastníka pro účastníky
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
 ## Závěr
 
-V této příručce jsme prozkoumali proces správy účastníků schůzky a nastavení statusu účastníka pomocí C# a Aspose.Email pro .NET. Komplexní funkce knihovny z ní činí cenný nástroj pro vývojáře, kteří potřebují efektivně pracovat s úkoly souvisejícími s e-mailem.
+V této příručce jsme prozkoumali proces správy účastníků schůzek a nastavení stavu účastníků pomocí jazyka C# a knihovny Aspose.Email pro .NET. Díky komplexním funkcím je tato knihovna cenným nástrojem pro vývojáře, kteří potřebují efektivně pracovat s úkoly souvisejícími s e-mailem.
 
-## FAQ
+## Často kladené otázky
 
-### Jak mohu získat knihovnu Aspose.Email for .NET?
+### Jak mohu získat knihovnu Aspose.Email pro .NET?
 
- Knihovnu Aspose.Email for .NET si můžete stáhnout z webu:[Stáhněte si Aspose.Email pro .NET](https://releases.aspose.com).
+Knihovnu Aspose.Email pro .NET si můžete stáhnout z webových stránek: [Stáhněte si Aspose.Email pro .NET](https://releases.aspose.com).
 
-### Mohu upravit možnosti stavu účastníka?
+### Mohu si přizpůsobit možnosti statusu účastníka?
 
- Ano, můžete upravit možnosti stavu účastníka podle potřeb vaší aplikace pomocí`AppointmentParticipantStatus` výčet poskytl Aspose.Email pro .NET.
+Ano, možnosti statusu účastníka si můžete přizpůsobit potřebám vaší aplikace pomocí `AppointmentParticipantStatus` výčet poskytnutý službou Aspose.Email pro .NET.
 
-### Je Aspose.Email for .NET vhodný pro zpracování dalších úloh souvisejících s e-mailem?
+### Je Aspose.Email pro .NET vhodný pro zpracování dalších úkolů souvisejících s e-mailem?
 
-Absolutně! Aspose.Email for .NET nabízí širokou škálu funkcí pro práci s e-maily, přílohami, schůzkami a dalšími, což z něj činí všestrannou volbu pro různé úkoly související s e-mailem.
+Rozhodně! Aspose.Email pro .NET nabízí širokou škálu funkcí pro práci s e-maily, přílohami, schůzkami a dalšími, což z něj činí všestrannou volbu pro různé úkoly související s e-mailem.
 
-### Mohu integrovat tuto funkci do své stávající aplikace .NET?
+### Mohu tuto funkcionalitu integrovat do své stávající .NET aplikace?
 
-Ano, funkce popsané v této příručce můžete snadno integrovat do svých stávajících aplikací .NET odkazem na knihovnu Aspose.Email for .NET a následováním poskytnutých příkladů kódu.
+Ano, funkce popsané v této příručce můžete snadno integrovat do svých stávajících aplikací .NET odkazem na knihovnu Aspose.Email pro .NET a podle uvedených příkladů kódu.
 
 ### Kde najdu další dokumentaci a zdroje?
 
- Podrobnější dokumentaci a zdroje naleznete v dokumentaci Aspose.Email for .NET:[Aspose.Email pro dokumentaci .NET](https://reference.aspose.com/email/net).
+Podrobnější dokumentaci a zdroje naleznete v dokumentaci k Aspose.Email pro .NET: [Dokumentace k Aspose.Email pro .NET](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

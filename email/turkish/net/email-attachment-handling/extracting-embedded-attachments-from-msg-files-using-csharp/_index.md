@@ -1,14 +1,16 @@
 ---
-title: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
-linktitle: C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: C# ve Aspose.Email for .NET kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı öğrenin. Kaynak kodu örnekleri içeren kapsamlı bir kılavuz.
-weight: 10
-url: /tr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+"description": "MSG dosyalarından gömülü ekleri C# ve Aspose.Email for .NET kullanarak nasıl çıkaracağınızı öğrenin. Kaynak kod örnekleri içeren kapsamlı bir kılavuz."
+"linktitle": "C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma"
+"url": "/tr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# kullanarak MSG Dosyalarından Gömülü Ekleri Çıkarma
@@ -16,15 +18,15 @@ url: /tr/net/email-attachment-handling/extracting-embedded-attachments-from-msg-
 
 ## Gömülü Eklere Giriş
 
-Gömülü ekler, bir e-posta iletisi içinde kapsüllenmiş dosyalardır ve alıcının, harici bağlantılara ihtiyaç duymadan dosyalara erişmesine olanak tanır. Bu ekler, e-posta görüşmesinin içeriğini korurken belgeleri paylaşırken özellikle yararlı olabilir.
+Gömülü ekler, bir e-posta mesajının içine kapsüllenmiş dosyalardır ve alıcının harici bağlantılara ihtiyaç duymadan dosyalara erişmesine olanak tanır. Bu ekler, e-posta konuşmasının bağlamını korurken belgeleri paylaşırken özellikle yararlı olabilir.
 
-## Aspose.Email for .NET'e Başlarken
+## Aspose.Email for .NET ile Başlarken
 
-Aspose.Email for .NET, .NET uygulamalarındaki e-posta işleme görevlerini basitleştiren güçlü bir kütüphanedir. MSG dosyaları da dahil olmak üzere çeşitli e-posta formatlarıyla çalışmak için kapsamlı destek sağlar. Başlamak için şu adımları izleyin:
+Aspose.Email for .NET, .NET uygulamalarında e-posta işleme görevlerini basitleştiren güçlü bir kütüphanedir. MSG dosyaları da dahil olmak üzere çeşitli e-posta biçimleriyle çalışmak için kapsamlı destek sağlar. Başlamak için şu adımları izleyin:
 
 1. Aspose.Email for .NET'i indirin ve yükleyin
 
-    Kütüphaneyi adresinden indirebilirsiniz.[.NET web sitesi için Aspose.Email](https://releases.aspose.com/email/net) veya NuGet paket yöneticisini kullanın:
+   Kütüphaneyi şu adresten indirebilirsiniz: [Aspose.Email .NET web sitesi için](https://releases.aspose.com/email/net) veya NuGet paket yöneticisini kullanın:
    
    ```csharp
    Install-Package Aspose.Email
@@ -36,11 +38,11 @@ Aspose.Email for .NET, .NET uygulamalarındaki e-posta işleme görevlerini basi
 
 3. Aspose.Email'e Referans Ekle
 
-   Projenize Aspose.Email DLL dosyasına bir referans ekleyin.
+   Projenize Aspose.Email DLL'sine bir referans ekleyin.
 
 ## MSG Dosyalarını Yükleme ve Ayrıştırma
 
-Gömülü ekleri çıkarmadan önce Aspose.Email'i kullanarak MSG dosyasını yükleyip ayrıştırmamız gerekiyor. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Gömülü ekleri çıkarmadan önce, MSG dosyasını Aspose.Email kullanarak yüklememiz ve ayrıştırmamız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 using Aspose.Email;
@@ -49,7 +51,7 @@ using Aspose.Email.Storage.Pst;
 // MSG dosyasını yükle
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // İleti özelliklerine erişme
+    // İleti özelliklerine erişim
     string subject = message.Subject;
     string sender = message.From.Address;
     // ...
@@ -58,10 +60,10 @@ using (var message = MailMessage.Load("sample.msg"))
 
 ## Gömülü Ekleri Çıkarma
 
-Artık MSG dosyasını yüklediğimize göre, gömülü ekleri çıkaralım:
+MSG dosyasını yüklediğimize göre, şimdi gömülü ekleri çıkaralım:
 
 ```csharp
-// Gömülü ekleri çıkarın
+// Gömülü ekleri ayıkla
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
@@ -74,7 +76,7 @@ foreach (var attachment in message.Attachments)
 
 ## Çıkarılan Ekleri Kaydetme
 
-Gömülü ekleri işledikten sonra bunları istenen konuma kaydedebiliriz:
+Gömülü ekleri işledikten sonra bunları istediğimiz yere kaydedebiliriz:
 
 ```csharp
 // Gömülü ekleri kaydet
@@ -86,32 +88,34 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## Çözüm
 
-Bu eğitimde, C# ve Aspose.Email for .NET kitaplığını kullanarak MSG dosyalarından gömülü eklerin nasıl çıkarılacağını araştırdık. Burada özetlenen adımları izleyerek, ek çıkarma yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir, e-posta içeriğini işleme şeklinizi geliştirebilirsiniz.
+Bu eğitimde, C# ve Aspose.Email for .NET kütüphanesini kullanarak MSG dosyalarından gömülü ekleri nasıl çıkaracağınızı inceledik. Burada özetlenen adımları izleyerek, ek çıkarma yeteneklerini .NET uygulamalarınıza sorunsuz bir şekilde entegre edebilir ve e-posta içeriğini işleme şeklinizi geliştirebilirsiniz.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Email for .NET'i nasıl indirebilirim?
 
- Aspose.Email for .NET'i şu adresten indirebilirsiniz:[Aspose.Email web sitesi](https://releases.aspose.com/email/net).
+Aspose.Email for .NET'i şu adresten indirebilirsiniz: [Aspose.E-posta web sitesi](https://releases.aspose.com/email/net).
 
-### Aspose.Email farklı e-posta formatlarıyla uyumlu mu?
+### Aspose.Email farklı e-posta formatlarıyla uyumlu mudur?
 
-Evet, Aspose.Email, MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatları için kapsamlı destek sağlar.
+Evet, Aspose.Email MSG, EML, PST ve daha fazlası dahil olmak üzere çeşitli e-posta formatları için kapsamlı destek sağlar.
 
 ### Aspose.Email'i hem masaüstü hem de web uygulamalarında kullanabilir miyim?
 
-Kesinlikle! Aspose.Email for .NET hem masaüstü hem de web uygulamalarında kullanılabilir, bu da onu e-posta işleme ihtiyaçlarınız için çok yönlü bir seçim haline getirir.
+Kesinlikle! Aspose.Email for .NET hem masaüstü hem de web uygulamalarında kullanılabilir ve bu da onu e-posta işleme ihtiyaçlarınız için çok yönlü bir seçenek haline getirir.
 
-### Lisanslamayla ilgili herhangi bir husus var mı?
+### Lisanslama hususunda herhangi bir husus var mı?
 
- Evet, Aspose.Email ticari bir kütüphanedir. Detaylı lisanslama bilgilerine şuradan ulaşabilirsiniz.[Web sitesi](https://purchase.aspose.com).
+Evet, Aspose.Email ticari bir kütüphanedir. Ayrıntılı lisanslama bilgilerini şu adreste bulabilirsiniz: [Aspose web sitesi](https://purchase.aspose.com).
 
-### Daha fazla örnek ve belgeyi nerede bulabilirim?
+### Daha fazla örnek ve dokümanı nerede bulabilirim?
 
- Aspose.Email for .NET kullanımına ilişkin ayrıntılı örnekleri ve belgeleri şu adreste bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/email/net).
+Aspose.Email for .NET'in kullanımıyla ilgili ayrıntılı örnekleri ve belgeleri şu adreste bulabilirsiniz: [belgeleme](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

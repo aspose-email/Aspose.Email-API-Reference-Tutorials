@@ -1,47 +1,49 @@
 ---
-title: 画像の代替テキストを設定する - C# ガイド
-linktitle: 画像の代替テキストを設定する - C# ガイド
-second_title: Aspose.Email .NET 電子メール処理 API
-description: Aspose.Email for .NET を使用して電子メール内の画像の代替テキストを設定する方法を学びます。明確な代替テキストでアクセシビリティを確保します。ドキュメントとコードが含まれています。
-weight: 15
-url: /ja/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
+"description": "Aspose.Email for .NET を使用して、メール内の画像に代替テキストを設定する方法を学びます。明確な代替テキストでアクセシビリティを確保します。ドキュメントとコードが含まれています。"
+"linktitle": "画像の代替テキストの設定 - C# ガイド"
+"second_title": "Aspose.Email .NET メール処理 API"
+"title": "画像の代替テキストの設定 - C# ガイド"
+"url": "/ja/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 画像の代替テキストを設定する - C# ガイド
+# 画像の代替テキストの設定 - C# ガイド
 
 
-このガイドでは、Aspose.Email for .NET を使用して電子メール内の画像の代替テキストを設定するプロセスについて説明します。 「代替テキスト」とも呼ばれる代替テキストは、画像を表示できない場合に画像の説明をテキストで提供するために使用されます。 Aspose.Email for .NET は、さまざまな形式の電子メールや添付ファイルを処理できる強力なライブラリです。このガイドでは、C# を使用して電子メール メッセージ内の画像の代替テキストを設定することに焦点を当てます。
+このガイドでは、Aspose.Email for .NET を使用して、メール内の画像に代替テキストを設定する手順を詳しく説明します。代替テキスト（alt テキストとも呼ばれます）は、画像が表示されない場合に画像の説明をテキストで提供するために使用されます。Aspose.Email for .NET は、様々な形式のメールや添付ファイルを操作できる強力なライブラリです。このガイドでは、C# を使用してメール内の画像に代替テキストを設定する方法に焦点を当てます。
 
 ## 前提条件
 
-始める前に、次の前提条件を満たしていることを確認してください。
+始める前に、次の前提条件が満たされていることを確認してください。
 
-1. Visual Studio または互換性のある C# 開発環境がインストールされていること。
-2. .NET ライブラリ用の Aspose.Email。 Visual Studio で NuGet パッケージ マネージャーを使用できます。
+1. Visual Studio または互換性のある C# 開発環境がインストールされています。
+2. Aspose.Email for .NET ライブラリ。Visual Studio で NuGet パッケージ マネージャーを使用できます。
 
-## ステップ 1: 新しいプロジェクトを作成する
+## ステップ1: 新しいプロジェクトを作成する
 
 1. Visual Studio を起動し、新しい C# コンソール アプリケーション プロジェクトを作成します。
 
-## ステップ 2: NuGet 経由で Aspose.Email をインストールする
+## ステップ2: NuGet経由でAspose.Emailをインストールする
 
-1. ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択します。
-2. 「Aspose.Email」を検索し、最新バージョンのパッケージをインストールします。
+1. ソリューション エクスプローラーでプロジェクトを右クリックし、「NuGet パッケージの管理」を選択します。
+2. 「Aspose.Email」を検索し、パッケージの最新バージョンをインストールします。
 
-## ステップ 3: using ステートメントを追加する
+## ステップ3: Usingステートメントを追加する
 
 ```csharp
 
 using Aspose.Email.Mime;
 ```
 
-## ステップ 4: 電子メール メッセージをロードして変更する
+## ステップ4: 電子メールメッセージの読み込みと変更
 
-1. を使用して電子メール メッセージをロードします。`MailMessage`クラス：
+1. メールメッセージを読み込むには、 `MailMessage` クラス：
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -50,22 +52,22 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-3. 電子メール メッセージの HTML コンテンツをロードします。
+3. 電子メール メッセージの HTML コンテンツを読み込みます。
 
 ```csharp
 var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
 ```
 
-## ステップ 5: 画像に代替テキスト用の AlternativeView を追加する
+## ステップ5: 画像の代替テキスト用のAlternativeViewを追加する
 
-画像への代替テキストの htmlview を AlternateView としてメッセージに追加します。 
+画像の代替テキストの HTML ビューを AlternateView としてメッセージに追加します。 
 ```csharp
 message.AlternateViews.Add(htmlView);
 ```
 
-## ステップ 6: 電子メールを保存して送信する
+## ステップ6: メールを保存して送信する
 
-1. 変更したメッセージをファイルに保存するか、希望の方法を使用して送信します。
+1. 変更したメッセージをファイルに保存するか、希望の方法で送信します。
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
@@ -73,23 +75,25 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ## 結論
 
-このガイドでは、Aspose.Email for .NET を使用して電子メール メッセージ内の画像の代替テキストを設定する方法を学習しました。上記の手順に従うことで、画像が表示できない場合でも、電子メールのコンテンツにアクセスでき、有益な情報を得ることができます。
+このガイドでは、Aspose.Email for .NET を使用して、メールメッセージ内の画像に代替テキストを設定する方法を学習しました。上記の手順に従うことで、画像が表示されない場合であっても、メールの内容にアクセスしやすく、有益な情報を提供できるようになります。
 
 ## よくある質問
 
-## Aspose.Email ライブラリをダウンロードするにはどうすればよいですか?
+## Aspose.Email ライブラリをダウンロードするにはどうすればいいですか?
 
-Aspose.Email ライブラリは、Aspose リリースからダウンロードするか、Visual Studio の NuGet パッケージ マネージャーを介してインストールできます。
+Aspose.Email ライブラリは、Aspose リリースからダウンロードするか、Visual Studio の NuGet パッケージ マネージャー経由でインストールできます。
 
-### 画像をリンクされたリソースとして電子メールに追加するにはどうすればよいですか?
+### 電子メールにリンクされたリソースとして画像を追加するにはどうすればよいですか?
 
-画像をリンクされたリソースとして電子メールに追加するには、`LinkedResource`クラス。リンクされたリソースにコンテンツ ID を割り当て、HTML 本文でこのコンテンツ ID を参照します。`cid:`スキーム。詳細については、「[LinkedResource ドキュメント](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
-### Aspose.Email for .NET に関するその他のドキュメントはどこで見つけられますか?
+メールにリンクされたリソースとして画像を追加するには、 `LinkedResource` クラス。リンクされたリソースにコンテンツIDを割り当て、HTML本文でこのコンテンツIDを参照するには、 `cid:` スキームの詳細については、 [LinkedResourceドキュメント](https://reference。aspose.com/email/net/aspose.email/linkedresource/).
+### Aspose.Email for .NET に関する詳細なドキュメントはどこで入手できますか?
 
- Aspose.Email for .NET の操作に関する詳細なドキュメント、チュートリアル、例は、次の場所にあります。[APIリファレンス](https://reference.aspose.com/email/net/).
+Aspose.Email for .NET のより詳細なドキュメント、チュートリアル、および使用例については、 [APIリファレンス](https://reference。aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

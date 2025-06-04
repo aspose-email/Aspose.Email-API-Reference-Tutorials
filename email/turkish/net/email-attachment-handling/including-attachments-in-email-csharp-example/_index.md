@@ -1,41 +1,43 @@
 ---
-title: E-postaya Ekleri Ekleme - C# Örneği
-linktitle: E-postaya Ekleri Ekleme - C# Örneği
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak e-postaya ekleri nasıl ekleyeceğinizi öğrenin. C# kod örneğiyle adım adım kılavuz.
-weight: 10
-url: /tr/net/email-attachment-handling/including-attachments-in-email-csharp-example/
+"description": "Aspose.Email for .NET kullanarak e-postalara eklerin nasıl ekleneceğini öğrenin. C# kod örneğiyle adım adım kılavuz."
+"linktitle": "E-postaya Ekler Ekleme - C# Örneği"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "E-postaya Ekler Ekleme - C# Örneği"
+"url": "/tr/net/email-attachment-handling/including-attachments-in-email-csharp-example/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E-postaya Ekleri Ekleme - C# Örneği
+# E-postaya Ekler Ekleme - C# Örneği
 
 
-## E-postaya Ek Eklemeye Giriş
+## E-postaya Ekler Eklemeye Giriş
 
-Günümüzün hızlı tempolu dijital dünyasında, e-posta iletişimi hem işletmeler hem de bireyler için temel taşı olmaya devam ediyor. E-postalarınıza ek eklemek, belgeleri, resimleri ve dosyaları zahmetsizce paylaşmanıza olanak tanıyarak mesajlarınızın değerini artırır. Bu adım adım kılavuz, .NET için Aspose.Email kütüphanesini kullanarak e-postanıza ek ekleme sürecinde size yol gösterecektir.
+Günümüzün hızlı dijital dünyasında, e-posta iletişimi hem işletmeler hem de bireyler için temel bir taş olmaya devam ediyor. E-postalarınıza ekler eklemek, belgeleri, görüntüleri ve dosyaları zahmetsizce paylaşmanıza olanak tanıyarak mesajlarınızın değerini artırır. Bu adım adım kılavuz, .NET için Aspose.Email kitaplığını kullanarak e-postanıza ekler ekleme sürecinde size yol gösterecektir.
 
 ## Geliştirme Ortamınızı Kurma
 
-Kodlama ayrıntılarına dalmadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olun. İhtiyacın olacak:
+Kodlama detaylarına dalmadan önce, uygun bir geliştirme ortamınız olduğundan emin olun. İhtiyacınız olacak:
 
 - Visual Studio (veya seçtiğiniz herhangi bir C# IDE)
 - .NET Framework veya .NET Core yüklü
 
-## Aspose.Email'i Projenize Eklemek
+## Aspose.Email'i Projenize Ekleme
 
-Aspose.Email, çeşitli formatlardaki e-postalarla çalışmayı kolaylaştıran güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
+Aspose.Email, çeşitli formatlardaki e-postalarla çalışmayı basitleştiren güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
 
 1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın ve yeni bir C# projesi oluşturun.
 
-2. Aspose.Email'i yükleyin: Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Email"i arayın ve paketi yükleyin.
+2. Aspose.Email'i yükleyin: Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Email"i arayın ve paketi yükleyin.
 
-## E-posta Mesajı Oluşturma
+## Bir E-posta Mesajı Oluşturma
 
-Artık Aspose.Email projenize entegre edildiğine göre bir e-posta mesajı oluşturmaya başlayalım:
+Artık Aspose.Email projenize entegre edildiğine göre, bir e-posta mesajı oluşturmaya başlayalım:
 
 ```csharp
 using Aspose.Email;
@@ -51,7 +53,7 @@ class Program
         message.From = new MailAddress("sender@example.com");
         message.To.Add("recipient@example.com");
 
-        // E-posta konusunu ve metnini ayarlayın
+        // E-posta konusunu ve gövdesini ayarlayın
         message.Subject = "Check out this attachment!";
         message.Body = "Hello, I've attached an important document for you.";
 
@@ -60,19 +62,19 @@ class Program
 }
 ```
 
-## E-postaya Ek Ekleme
+## E-postaya Ekler Ekleme
 
-Ekler, e-postalarınıza ek bağlam sağlar. E-postaya bir ek ekleyelim:
+Ekler e-postalarınıza ek bağlam sağlar. E-postaya bir ek ekleyelim:
 
 ```csharp
-// E-postaya ek ekleme
+// E-postaya bir ek ekleme
 Attachment attachment = new Attachment("path_to_attachment.pdf");
 message.Attachments.Add(attachment);
 ```
 
 ## E-postayı Gönderme
 
-E-postanız hazır olduğunda gönderme zamanı:
+E-postanız hazır olduğunda, onu gönderme zamanı geldi:
 
 ```csharp
 using Aspose.Email.Clients.Smtp;
@@ -94,21 +96,21 @@ class Program
 
 ## Çözüm
 
-Bu kılavuzda Aspose.Email for .NET'i kullanarak e-postalarınıza ekleri nasıl ekleyeceğinizi araştırdık. Yukarıda özetlenen adımları izleyerek e-posta iletişimlerinizi zengin içerikli eklerle geliştirebilirsiniz. Aspose.Email kütüphanesi bu süreci basitleştirerek, ekleri olan e-postaları program aracılığıyla oluşturmayı ve göndermeyi her zamankinden daha kolay hale getiriyor.
+Bu kılavuzda, Aspose.Email for .NET kullanarak e-postalarınıza ekleri nasıl ekleyeceğinizi inceledik. Yukarıda özetlenen adımları izleyerek, zengin içerikli eklerle e-posta iletişimlerinizi geliştirebilirsiniz. Aspose.Email kitaplığı bu süreci basitleştirerek, ekleri olan e-postaları programatik olarak oluşturmayı ve göndermeyi her zamankinden daha kolay hale getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Email kütüphanesini nasıl indirebilirim?
 
- Aspose.Email kütüphanesini Aspose.Release'ler'ten indirebilirsiniz:[Aspose.Releases](https://releases.aspose.com/email/net/) veya Visual Studio'da NuGet Paket Yöneticisi'ni kullanarak.
+Aspose.Email kütüphanesini Aspose.Releases adresinden indirebilirsiniz: [Aspose.Sürümler](https://releases.aspose.com/email/net/) veya Visual Studio'daki NuGet Paket Yöneticisi'ni kullanarak.
 
 ### Tek bir e-postaya birden fazla dosya ekleyebilir miyim?
 
- Kesinlikle! Birden fazla ek oluşturup ekleyerek tek bir e-postaya birden fazla ek ekleyebilirsiniz.`Attachment` nesnelere`Attachments` senin koleksiyonun`MailMessage`.
+Kesinlikle! Birden fazla ek oluşturup ekleyerek tek bir e-postaya birden fazla ek ekleyebilirsiniz. `Attachment` nesnelere `Attachments` koleksiyonunuz `MailMessage`.
 
-### Aspose.Email hem .NET Framework hem de .NET Core için uygun mu?
+### Aspose.Email hem .NET Framework hem de .NET Core için uygun mudur?
 
-Evet, Aspose.Email hem .NET Framework hem de .NET Core ile uyumludur ve seçtiğiniz platformda esneklik sunar.
+Evet, Aspose.Email hem .NET Framework hem de .NET Core ile uyumludur ve platform seçiminizde esneklik sunar.
 
 ### Aspose.Email güvenli bağlantılar üzerinden e-posta göndermeyi destekliyor mu?
 
@@ -116,10 +118,12 @@ Evet, Aspose.Email'i SMTPS veya STARTTLS gibi protokolleri kullanarak güvenli b
 
 ### Aspose.Email'in yetenekleri hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Aspose.Email'in özellikleri, sınıfları ve yöntemleri hakkında daha ayrıntılı bilgi için bkz.[Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
+Aspose.Email'in özellikleri, sınıfları ve yöntemleri hakkında daha ayrıntılı bilgi için şuraya bakın: [Aspose.Email API Referansı](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

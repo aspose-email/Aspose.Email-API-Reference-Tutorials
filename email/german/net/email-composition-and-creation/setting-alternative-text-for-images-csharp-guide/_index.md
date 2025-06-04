@@ -1,35 +1,37 @@
 ---
-title: Alternativtext für Bilder festlegen – C#-Handbuch
-linktitle: Alternativtext für Bilder festlegen – C#-Handbuch
-second_title: Aspose.Email .NET E-Mail-Verarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Email für .NET alternativen Text für Bilder in E-Mails festlegen. Stellen Sie die Barrierefreiheit mit klarem Alt-Text sicher. Dokumentation und Code enthalten.
-weight: 15
-url: /de/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
+"description": "Erfahren Sie, wie Sie mit Aspose.Email für .NET Alternativtexte für Bilder in E-Mails festlegen. Sorgen Sie für Barrierefreiheit mit klarem Alternativtext. Dokumentation und Code inklusive."
+"linktitle": "Festlegen von Alternativtext für Bilder – C#-Handbuch"
+"second_title": "Aspose.Email .NET E-Mail-Verarbeitungs-API"
+"title": "Festlegen von Alternativtext für Bilder – C#-Handbuch"
+"url": "/de/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Alternativtext für Bilder festlegen – C#-Handbuch
+# Festlegen von Alternativtext für Bilder – C#-Handbuch
 
 
-Dieser Leitfaden führt Sie durch den Prozess des Festlegens alternativer Texte für Bilder in E-Mails mit Aspose.Email für .NET. Alternativer Text, auch „Alt-Text“ genannt, wird verwendet, um eine Textbeschreibung eines Bildes bereitzustellen, falls das Bild nicht angezeigt werden kann. Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die es Ihnen ermöglicht, mit E-Mails und Anhängen in verschiedenen Formaten zu arbeiten. In diesem Leitfaden konzentrieren wir uns auf das Festlegen alternativer Texte für Bilder in E-Mail-Nachrichten mit C#.
+Diese Anleitung führt Sie durch das Festlegen von Alternativtext für Bilder in E-Mails mit Aspose.Email für .NET. Alternativtext, auch „Alt-Text“ genannt, dient zur textuellen Beschreibung eines Bildes, falls dieses nicht angezeigt werden kann. Aspose.Email für .NET ist eine leistungsstarke Bibliothek, die Ihnen die Arbeit mit E-Mails und Anhängen in verschiedenen Formaten ermöglicht. In dieser Anleitung konzentrieren wir uns auf das Festlegen von Alternativtext für Bilder in E-Mail-Nachrichten mit C#.
 
 ## Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-1. Visual Studio oder eine beliebige kompatible C#-Entwicklungsumgebung installiert.
-2. Aspose.Email für .NET-Bibliothek. Sie können den NuGet-Paket-Manager in Visual Studio verwenden.
+1. Visual Studio oder eine andere kompatible C#-Entwicklungsumgebung installiert.
+2. Aspose.Email für die .NET-Bibliothek. Sie können den NuGet-Paket-Manager in Visual Studio verwenden.
 
-## Schritt 1: Erstellen Sie ein neues Projekt
+## Schritt 1: Neues Projekt erstellen
 
 1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Konsolenanwendungsprojekt.
 
 ## Schritt 2: Installieren Sie Aspose.Email über NuGet
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt und wählen Sie „NuGet-Pakete verwalten“.
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt und wählen Sie „NuGet-Pakete verwalten“ aus.
 2. Suchen Sie nach „Aspose.Email“ und installieren Sie die neueste Version des Pakets.
 
 ## Schritt 3: Using-Anweisungen hinzufügen
@@ -39,9 +41,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 using Aspose.Email.Mime;
 ```
 
-## Schritt 4: Laden und ändern Sie die E-Mail-Nachricht
+## Schritt 4: Laden und Ändern der E-Mail-Nachricht
 
-1.  Laden Sie die E-Mail-Nachricht mit`MailMessage` Klasse:
+1. Laden Sie die E-Mail-Nachricht mit dem `MailMessage` Klasse:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -58,7 +60,7 @@ var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src
 
 ## Schritt 5: AlternativeView für alternativen Text zu Bildern hinzufügen
 
-Fügen Sie HTMLView für Alternativtext zum Bild als AlternateView zur Nachricht hinzu. 
+Fügen Sie der Nachricht eine HTML-Ansicht für Alternativtext zum Bild als AlternateView hinzu. 
 ```csharp
 message.AlternateViews.Add(htmlView);
 ```
@@ -73,23 +75,25 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ## Abschluss
 
-In dieser Anleitung haben Sie erfahren, wie Sie mit Aspose.Email für .NET alternativen Text für Bilder in E-Mail-Nachrichten festlegen. Indem Sie die oben beschriebenen Schritte befolgen, können Sie sicherstellen, dass Ihre E-Mail-Inhalte auch dann zugänglich und informativ bleiben, wenn Bilder nicht angezeigt werden können.
+In dieser Anleitung haben Sie gelernt, wie Sie mit Aspose.Email für .NET Alternativtext für Bilder in E-Mail-Nachrichten festlegen. Mit den oben beschriebenen Schritten stellen Sie sicher, dass Ihre E-Mail-Inhalte auch dann zugänglich und informativ bleiben, wenn keine Bilder angezeigt werden können.
 
-## FAQ
+## Häufig gestellte Fragen
 
 ## Wie kann ich die Aspose.Email-Bibliothek herunterladen?
 
-Sie können die Aspose.Email-Bibliothek aus den Aspose-Releases herunterladen oder über den NuGet Package Manager in Visual Studio installieren.
+Sie können die Aspose.Email-Bibliothek aus den Aspose-Releases herunterladen oder über den NuGet-Paket-Manager in Visual Studio installieren.
 
 ### Wie füge ich Bilder als verknüpfte Ressourcen in einer E-Mail hinzu?
 
-Um Bilder als verknüpfte Ressourcen in einer E-Mail hinzuzufügen, können Sie die verwenden`LinkedResource` Klasse. Weisen Sie der verknüpften Ressource eine Inhalts-ID zu und verweisen Sie dann im HTML-Text auf diese Inhalts-ID mithilfe von`cid:` planen. Ausführliche Informationen finden Sie im[LinkedResource-Dokumentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+Um Bilder als verknüpfte Ressourcen in einer E-Mail hinzuzufügen, können Sie die `LinkedResource` Klasse. Weisen Sie der verknüpften Ressource eine Inhalts-ID zu und verweisen Sie dann im HTML-Textkörper mit dem `cid:` Schema. Detaillierte Informationen finden Sie im [LinkedResource-Dokumentation](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### Wo finde ich weitere Dokumentation zu Aspose.Email für .NET?
 
- Ausführlichere Dokumentation, Tutorials und Beispiele zum Arbeiten mit Aspose.Email für .NET finden Sie im[API-Referenz](https://reference.aspose.com/email/net/).
+Ausführlichere Dokumentationen, Tutorials und Beispiele zur Arbeit mit Aspose.Email für .NET finden Sie im [API-Referenz](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

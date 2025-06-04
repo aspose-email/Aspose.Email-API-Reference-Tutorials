@@ -1,26 +1,28 @@
 ---
-title: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
-linktitle: C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Randevu katılımcılarının durumunu C# ve Aspose.Email for .NET kullanarak nasıl yöneteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
-weight: 16
-url: /tr/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/
+"description": "C# ve Aspose.Email for .NET kullanarak randevu katılımcılarının durumlarını nasıl yöneteceğinizi öğrenin. Kaynak kodlu adım adım kılavuz."
+"linktitle": "C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama"
+"url": "/tr/net/email-event-and-calendar-handling/setting-participant-status-for-appointment-attendees-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# ile Randevu Katılımcıları için Katılımcı Durumunu Ayarlama
 
 
-## Aspose.Email for .NET'e giriş
+## .NET için Aspose.Email'e Giriş
 
-Aspose.Email for .NET, geliştiricilerin .NET uygulamalarında e-posta mesajları, randevular, kişiler ve daha fazlasıyla çalışmasına olanak tanıyan çok yönlü bir kütüphanedir. Sezgisel API'si sayesinde geliştiriciler, e-posta iletişiminin çeşitli yönlerini zahmetsizce yönetebilir, bu da onu randevuyla ilgili görevlerin yerine getirilmesi için mükemmel bir seçim haline getirir.
+Aspose.Email for .NET, geliştiricilerin .NET uygulamaları içinde e-posta mesajları, randevular, kişiler ve daha fazlasıyla çalışmasını sağlayan çok yönlü bir kütüphanedir. Sezgisel API'siyle geliştiriciler e-posta iletişiminin çeşitli yönlerini zahmetsizce yönetebilir ve bu da onu randevuyla ilgili görevleri ele almak için mükemmel bir seçim haline getirir.
 
-## Önkoşullar
+## Ön koşullar
 
-Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Uygulamaya geçmeden önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Visual Studio (veya herhangi bir C# IDE)
 - Aspose.Email for .NET kütüphanesi
@@ -28,17 +30,17 @@ Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin 
 
 ## Randevu Oluşturma
 
-Başlamak için Aspose.Email for .NET'i kullanarak bir randevu örneği oluşturmanız gerekir. Randevu, planlanmış bir etkinliği temsil eder ve başlangıç zamanı, bitiş zamanı, konum ve daha fazlası gibi çeşitli özellikleri ayarlayabilirsiniz.
+Başlamak için, Aspose.Email for .NET kullanarak bir randevu örneği oluşturmanız gerekir. Bir randevu, planlanmış bir etkinliği temsil eder ve başlangıç saati, bitiş saati, konum ve daha fazlası gibi çeşitli özellikler ayarlayabilirsiniz.
 
 ```csharp
-// Gerekli kullanım ifadelerini ekleyin
+// Gerekli using ifadelerini ekleyin
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
 // Randevu sınıfının bir örneğini oluşturun
 var appointment = new Appointment();
 
-// Randevu özelliklerini ayarlama
+// Randevu özelliklerini ayarla
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
@@ -46,78 +48,80 @@ appointment.Location = "Conference Room 101";
 
 ## Katılımcı Ekleme
 
- Daha sonra, randevuya katılımcıları kullanarak ekleyebilirsiniz.`Attendees` Toplamak. Katılımcılar, randevuya katılacak kişilerdir. E-posta adreslerini ve adlarını belirtebilirsiniz.
+Daha sonra, katılımcıları randevuya eklemek için şu adımları kullanabilirsiniz: `Attendees` koleksiyon. Katılımcılar, randevuya katılacak kişilerdir. E-posta adreslerini ve adlarını belirtebilirsiniz.
 
 ```csharp
-// Randevuya katılımcı ekleme
+// Randevuya katılımcı ekleyin
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 ```
 
-## Katılımcı Durumunun Ayarlanması
+## Katılımcı Durumunu Ayarlama
 
-Şimdi en önemli kısım geliyor: katılımcılar için katılımcı statüsünün ayarlanması. Katılımcı durumu, katılımcının randevu davetini kabul ettiğini, reddettiğini veya geçici olarak kabul ettiğini gösterir. Aspose.Email for .NET, aralarından seçim yapabileceğiniz farklı durum seçenekleri sunar.
+Şimdi kritik kısım geliyor: katılımcılar için katılımcı durumunu ayarlama. Katılımcı durumu, bir katılımcının randevu davetini kabul edip etmediğini, reddettiğini veya geçici olarak kabul edip etmediğini gösterir. Aspose.Email for .NET, seçebileceğiniz farklı durum seçenekleri sunar.
 
 ```csharp
-// Katılımcılar için katılımcı durumunu ayarlama
+// Katılımcılar için katılımcı durumunu ayarlayın
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
-## Kaynak Kodunu Tamamlayın
+## Tam Kaynak Kodu
 
-Randevu oluşturma, katılımcı ekleme ve katılımcı durumunu ayarlama sürecini gösteren kaynak kodun tamamı burada verilmiştir:
+İşte randevu oluşturma, katılımcı ekleme ve katılımcı durumunu ayarlama sürecini gösteren tam kaynak kodu:
 
 ```csharp
-// Gerekli kullanım ifadelerini ekleyin
+// Gerekli using ifadelerini ekleyin
 using Aspose.Email;
 using Aspose.Email.Appointment;
 
 // Randevu sınıfının bir örneğini oluşturun
 var appointment = new Appointment();
 
-// Randevu özelliklerini ayarlama
+// Randevu özelliklerini ayarla
 appointment.StartTime = DateTime.Now;
 appointment.EndTime = appointment.StartTime.AddHours(1);
 appointment.Location = "Conference Room 101";
 
-// Randevuya katılımcı ekleme
+// Randevuya katılımcı ekleyin
 appointment.Attendees.Add("john@example.com", "John Doe");
 appointment.Attendees.Add("jane@example.com", "Jane Smith");
 
-// Katılımcılar için katılımcı durumunu ayarlama
+// Katılımcılar için katılımcı durumunu ayarlayın
 appointment.Attendees[0].ParticipantStatus = AppointmentParticipantStatus.Accepted;
 appointment.Attendees[1].ParticipantStatus = AppointmentParticipantStatus.Declined;
 ```
 
 ## Çözüm
 
-Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak randevu katılımcılarını yönetme ve katılımcı durumunu ayarlama sürecini inceledik. Kitaplığın kapsamlı özellikleri, onu e-postayla ilgili görevlerle verimli bir şekilde çalışması gereken geliştiriciler için değerli bir araç haline getiriyor.
+Bu kılavuzda, C# ve Aspose.Email for .NET kullanarak randevu katılımcılarını yönetme ve katılımcı durumunu ayarlama sürecini inceledik. Kütüphanenin kapsamlı özellikleri, e-postayla ilgili görevlerle verimli bir şekilde çalışması gereken geliştiriciler için onu değerli bir araç haline getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Email for .NET kütüphanesini nasıl edinebilirim?
 
- Aspose.Email for .NET kütüphanesini web sitesinden indirebilirsiniz:[.NET için Aspose.Email'i indirin](https://releases.aspose.com).
+Aspose.Email for .NET kütüphanesini şu web sitesinden indirebilirsiniz: [.NET için Aspose.Email'i indirin](https://releases.aspose.com).
 
-### Katılımcı durumu seçeneklerini özelleştirebilir miyim?
+### Katılımcı durum seçeneklerini özelleştirebilir miyim?
 
- Evet, katılımcı durumu seçeneklerini uygulamanızın ihtiyaçlarına göre özelleştirebilirsiniz.`AppointmentParticipantStatus` numaralandırma Aspose.Email for .NET tarafından sağlanmıştır.
+Evet, katılımcı durum seçeneklerini uygulamanızın ihtiyaçlarına göre özelleştirebilirsiniz. `AppointmentParticipantStatus` numaralandırma Aspose.Email for .NET tarafından sağlanmıştır.
 
-### Aspose.Email for .NET e-postayla ilgili diğer görevleri yerine getirmeye uygun mu?
+### Aspose.Email for .NET diğer e-postayla ilgili görevleri yönetmek için uygun mudur?
 
-Kesinlikle! Aspose.Email for .NET, e-postalar, ekler, randevular ve daha fazlasıyla çalışmak için çok çeşitli özellikler sunarak, onu e-postayla ilgili çeşitli görevler için çok yönlü bir seçim haline getiriyor.
+Kesinlikle! Aspose.Email for .NET, e-postalar, ekler, randevular ve daha fazlasıyla çalışmak için çok çeşitli özellikler sunarak çeşitli e-postayla ilgili görevler için çok yönlü bir seçim haline geliyor.
 
-### Bu işlevselliği mevcut .NET uygulamama entegre edebilir miyim?
+### Bu işlevselliği mevcut .NET uygulamamla bütünleştirebilir miyim?
 
-Evet, Aspose.Email for .NET kütüphanesine başvurarak ve verilen kod örneklerini takip ederek bu kılavuzda tartışılan işlevselliği mevcut .NET uygulamalarınıza kolayca entegre edebilirsiniz.
+Evet, bu kılavuzda ele alınan işlevselliği, Aspose.Email for .NET kitaplığına başvurarak ve sağlanan kod örneklerini izleyerek mevcut .NET uygulamalarınıza kolayca entegre edebilirsiniz.
 
-### Daha fazla belge ve kaynağı nerede bulabilirim?
+### Daha fazla doküman ve kaynağı nerede bulabilirim?
 
- Daha ayrıntılı belgeler ve kaynaklar için Aspose.Email for .NET belgelerine bakın:[Aspose.Email for .NET Belgelendirmesi](https://reference.aspose.com/email/net).
+Daha ayrıntılı belgeler ve kaynaklar için Aspose.Email for .NET belgelerine bakın: [Aspose.Email for .NET Belgeleri](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

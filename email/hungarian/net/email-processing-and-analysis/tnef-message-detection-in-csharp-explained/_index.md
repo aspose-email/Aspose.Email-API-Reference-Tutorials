@@ -1,43 +1,45 @@
 ---
-title: TNEF üzenetészlelés C#-ban – magyarázat
-linktitle: TNEF üzenetészlelés C#-ban – magyarázat
-second_title: Aspose.Email .NET Email Processing API
-description: Tanulja meg a TNEF üzenetek észlelését és feldolgozását C# nyelven az Aspose.Email for .NET használatával. Javítsa az e-mailek kezelését formázott szöveggel és mellékletekkel.
-weight: 15
-url: /hu/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/
+"description": "Tanuld meg a TNEF üzenetek felismerését és feldolgozását C#-ban az Aspose.Email for .NET használatával. Javítsd az e-mailek kezelését gazdag szöveggel és mellékletekkel."
+"linktitle": "TNEF üzenetfelismerés C#-ban - Magyarázat"
+"second_title": "Aspose.Email .NET e-mail feldolgozó API"
+"title": "TNEF üzenetfelismerés C#-ban - Magyarázat"
+"url": "/hu/net/email-processing-and-analysis/tnef-message-detection-in-csharp-explained/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# TNEF üzenetészlelés C#-ban – magyarázat
+# TNEF üzenetfelismerés C#-ban - Magyarázat
 
 
-Ez az útmutató részletes, lépésről lépésre magyarázatot ad a TNEF (Transport Neutral Encapsulation Format) üzenetek észlelésére az Aspose.Email for .NET könyvtár használatával. A TNEF egy olyan formátum, amelyet a Microsoft Outlook használ formázott szövegek és mellékletek e-mail üzenetekbe való beágyazására. Az Aspose.Email for .NET hatékony API-készletet kínál az e-mailekkel és mellékletekkel, köztük a TNEF-üzenetekkel való együttműködéshez.
+Ez az útmutató részletes, lépésről lépésre bemutatja, hogyan észlelheti a TNEF (Transport Neutral Encapsulation Format) üzeneteket az Aspose.Email for .NET könyvtár segítségével. A TNEF egy olyan formátum, amelyet a Microsoft Outlook használ a szöveges üzenetek és mellékletek e-mail üzenetekben való beágyazására. Az Aspose.Email for .NET hatékony API-készletet kínál az e-mailek és mellékletek, beleértve a TNEF üzeneteket is, kezeléséhez.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+Mielőtt elkezdené, győződjön meg arról, hogy a következőkkel rendelkezik:
 
-- Fejlesztői környezet (pl. Visual Studio) C#-hoz.
--  Aspose.Email for .NET könyvtár telepítve. Letöltheti innen[itt](https://releases.aspose.com/email/net).
+- C# fejlesztői környezet (pl. Visual Studio).
+- Az Aspose.Email for .NET könyvtár telepítve van. Letöltheti innen: [itt](https://releases.aspose.com/email/net).
 
-## 1. lépés: Hozzon létre egy új C# projektet
+## 1. lépés: Új C# projekt létrehozása
 
-Kezdje egy új C# projekt létrehozásával a választott fejlesztői környezetben.
+Kezdésként hozz létre egy új C# projektet a kiválasztott fejlesztői környezetben.
 
-## 2. lépés: Telepítse az Aspose.Email-t .NET-hez
+## 2. lépés: Telepítse az Aspose.Emailt .NET-hez
 
-Telepítse az Aspose.Email for .NET könyvtárat a NuGet Package Manager segítségével. Futtassa a következő parancsot a Csomagkezelő konzolon:
+Telepítse az Aspose.Email for .NET könyvtárat a NuGet csomagkezelő segítségével. Futtassa a következő parancsot a csomagkezelő konzolján:
 
 ```bash
 Install-Package Aspose.Email
 ```
 
-## 3. lépés: Importálja a szükséges névtereket
+## 3. lépés: A szükséges névterek importálása
 
-A C# kódban importálja a szükséges névtereket:
+A C# kódodban importáld a szükséges névtereket:
 
 ```csharp
 using Aspose.Email;
@@ -46,87 +48,89 @@ using Aspose.Email;
 
 ## 4. lépés: TNEF üzenet betöltése és észlelése
 
-1.  Töltse be az e-mail üzenetet a`MapiMessage` osztály:
+1. Töltsd be az e-mailt a segítségével `MapiMessage` osztály:
 
 ```csharp
-// Töltse be az e-mailt TNEF melléklettel
+// E-mail betöltése TNEF melléklettel
 MsgLoadOptions options = new MsgLoadOptions();
 options.PreserveTnefAttachments = true;
 var message = MailMessage.Load("path/to/email.eml", options);
 ```
 
-2. Határozza meg, hogy a betöltött e-mail TNEF-üzenet-e:
+2. Állapítsa meg, hogy a betöltött e-mail TNEF formátumú-e:
 
 ```csharp
 bool isTnefMessage = message.OriginalIsTnef;
 ```
 
- Cserélje ki`"path/to/your/email.msg"` az e-mail üzenetfájl tényleges elérési útjával.
+Csere `"path/to/your/email.msg"` az e-mail üzenetfájl tényleges elérési útjával.
 
-## 5. lépés: A TNEF mellékletek feldolgozása
+## 5. lépés: TNEF-mellékletek feldolgozása
 
-Ha a betöltött e-mail valóban TNEF-üzenet, kibonthatja és feldolgozhatja a mellékleteit:
+Ha a betöltött e-mail valóban TNEF formátumú üzenet, akkor kinyerheti és feldolgozhatja a mellékleteit:
 
 ```csharp
-// Iterálás a mellékleteken keresztül
+// Mellékleteken keresztüli iteráció
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Bontsa ki a TNEF mellékletet
+        // TNEF melléklet kibontása
         var tnefAttachment = attachment;
 
-        //Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosíthatja
-        // tnefAttachment.Properties...
+        // Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosítások
+        // tnefCsatolás.Tulajdonságok...
     }
 }
 ```
 
 ## GYIK
 
-### Hogyan ellenőrizhetem, hogy egy e-mail TNEF-üzenet-e?
+### Hogyan tudom ellenőrizni, hogy egy e-mail TNEF formátumú-e?
 
- Ha ellenőrizni szeretné, hogy egy e-mail TNEF-üzenet-e, használja a`IsTnefMessage()` módszere a`MapiMessage` osztály:
+Annak ellenőrzéséhez, hogy egy e-mail TNEF formátumú-e, használja a `IsTnefMessage()` a módszer `MapiMessage` osztály:
 
 ```csharp
 MapiMessage message = MapiMessage.FromFile("path/to/your/email.msg");
 bool isTnefMessage = message.OriginalIsTnef;
 ```
 
-### Hogyan bonthatok ki mellékleteket egy TNEF-üzenetből?
+### Hogyan tudok mellékleteket kinyerni egy TNEF üzenetből?
 
-Ha TNEF-üzenetből szeretne mellékleteket kivonni, kövesse az alábbi lépéseket:
+Mellékletek kinyeréséhez egy TNEF üzenetből, kövesse az alábbi lépéseket:
 
-1.  Töltse be az e-mailt a segítségével`MapiMessage.FromFile()`.
-2.  Ellenőrizze, hogy az e-mail TNEF-üzenet-e`OriginalIsTnef`.
-3. Ha TNEF-üzenetről van szó, akkor a mellékleteket a ContentType-val iterálva bontsa ki a mellékleteket. A MediaType megegyezik az „application/ms-tnef” értékkel.
+1. Töltsd be az e-mailt a következővel: `MapiMessage.FromFile()`.
+2. Ellenőrizze, hogy az e-mail TNEF formátumú-e a következővel: `OriginalIsTnef`.
+3. Ha TNEF üzenetről van szó, akkor a mellékleteket a következőképpen kell kivonni: A mellékletek ismétlése ContentType.MediaType esetén a típus „application/ms-tnef” értékkel egyenlő.
 
 ```csharp
-// Iterálás a mellékleteken keresztül
+// Mellékleteken keresztüli iteráció
 foreach (var attachment in message.Attachments)
 {
     if (attachment.ContentType.MediaType == "application/ms-tnef")
     {
-        // Bontsa ki a TNEF mellékletet
+        // TNEF melléklet kibontása
         var tnefAttachment = attachment;
 
-        //Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosíthatja
-        // tnefAttachment.Properties...
+        // Hozzáférés a TNEF tulajdonságaihoz, és szükség esetén módosítások
+        // tnefCsatolás.Tulajdonságok...
     }
 }
 ```
 
- További részletes információkért és API-referenciákért tekintse meg a[Aspose.Email a .NET dokumentációhoz](https://reference.aspose.com/email/net/).
+Részletesebb információkért és API-referenciákért lásd a [Aspose.Email .NET dokumentációhoz](https://reference.aspose.com/email/net/).
 
 ## Következtetés
 
-Ebből az útmutatóból megtanulta, hogyan észlelheti a TNEF (Transport Neutral Encapsulation Format) üzeneteket az Aspose.Email for .NET könyvtár használatával. A Microsoft Outlook által gyakran használt TNEF üzenetek formázott szöveget és mellékleteket tartalmaznak az e-mailekben. Az ebben az útmutatóban ismertetett lépések követésével hatékonyan azonosíthatja a TNEF-üzeneteket, és kibonthatja a mellékleteiket további feldolgozás céljából.
+Ebben az útmutatóban megtanulta, hogyan észlelheti a TNEF (Transport Neutral Encapsulation Format) üzeneteket az Aspose.Email for .NET könyvtár segítségével. A Microsoft Outlook által gyakran használt TNEF üzenetek gazdag szöveget és mellékleteket tartalmaznak az e-mailekben. Az útmutatóban ismertetett lépéseket követve hatékonyan azonosíthatja a TNEF üzeneteket, és kinyerheti mellékleteiket további feldolgozás céljából.
+
 
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
