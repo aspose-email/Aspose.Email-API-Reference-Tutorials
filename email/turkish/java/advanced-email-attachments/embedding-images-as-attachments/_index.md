@@ -1,32 +1,34 @@
 ---
-title: Aspose.Email'e Görüntüleri Ek Olarak Gömme
-linktitle: Aspose.Email'e Görüntüleri Ek Olarak Gömme
-second_title: Aspose.Email Java E-posta Yönetimi API'si
-description: Aspose.Email for Java'da görüntüleri ek olarak nasıl yerleştireceğinizi öğrenin. E-posta iletişiminizi görsel olarak ilgi çekici içerikle geliştirin.
-weight: 14
-url: /tr/java/advanced-email-attachments/embedding-images-as-attachments/
+"description": "Aspose.Email for Java'da görselleri ek olarak nasıl yerleştireceğinizi öğrenin. Görsel olarak ilgi çekici içeriklerle e-posta iletişiminizi geliştirin."
+"linktitle": "Aspose.Email'de Resimleri Ekler Olarak Yerleştirme"
+"second_title": "Aspose.Email Java E-posta Yönetim API'si"
+"title": "Aspose.Email'de Resimleri Ekler Olarak Yerleştirme"
+"url": "/tr/java/advanced-email-attachments/embedding-images-as-attachments/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'e Görüntüleri Ek Olarak Gömme
+# Aspose.Email'de Resimleri Ekler Olarak Yerleştirme
 
 
-## Aspose.Email'e Görüntüleri Ek Olarak Gömme
+## Aspose.Email'de Resimleri Ekler Olarak Yerleştirme
 
-Günümüzün dijital çağında etkili iletişim genellikle metinden daha fazlasına dayanır. Resimler gibi görsel öğeler, bilginin iletilmesinde çok önemli bir rol oynar ve e-posta iletişimine gelince, resimlerin ek olarak yerleştirilmesi yaygın bir uygulamadır. Bu makalede Aspose.Email for Java kullanarak bunu nasıl başaracağımızı inceleyeceğiz. Bu adım adım kılavuz, e-postalarınızın yalnızca bilgilendirici değil aynı zamanda görsel olarak da çekici olmasını sağlayarak süreç boyunca size yol gösterecektir.
+Günümüzün dijital çağında, etkili iletişim genellikle yalnızca metinden daha fazlasına dayanır. Görüntüler gibi görsel öğeler, bilgi aktarımında önemli bir rol oynar ve e-posta iletişimi söz konusu olduğunda, görüntüleri ek olarak yerleştirmek yaygın bir uygulamadır. Bu makalede, Aspose.Email for Java kullanarak bunu nasıl başaracağınızı inceleyeceğiz. Bu adım adım kılavuz, e-postalarınızın yalnızca bilgilendirici değil, aynı zamanda görsel olarak da çekici olmasını sağlayarak sizi süreçte yönlendirecektir.
 
-## Önkoşullar
+## Ön koşullar
 
-Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Uygulamaya geçmeden önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
--  Aspose.Email for Java: Henüz yapmadıysanız Aspose.Email for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/email/java/).
+- Java için Aspose.Email: Henüz yapmadıysanız, Java için Aspose.Email'i şu adresten indirin ve yükleyin: [Burada](https://releases.aspose.com/email/java/).
 
-## E-posta Mesajı Oluşturma
+## Bir E-posta Mesajı Oluşturma
 
- Aspose.Email'i kullanarak bir e-posta mesajı oluşturmak için gerekli kütüphaneleri içe aktarmanız ve e-posta mesajını başlatmanız gerekir.`MailMessage`nesne. İşte başlamanıza yardımcı olacak bir kod pasajı:
+Aspose.Email kullanarak bir e-posta mesajı oluşturmak için gerekli kitaplıkları içe aktarmanız ve başlatmanız gerekir. `MailMessage` nesne. Başlamanıza yardımcı olacak bir kod parçası:
 
 ```java
 // Gerekli kütüphaneleri içe aktarın
@@ -36,9 +38,9 @@ import com.aspose.email.*;
 MailMessage message = new MailMessage();
 ```
 
-## Resmi Ek Olarak Ekleme
+## Resim Ekleme Eklentisi
 
-E-postanıza resim eklemek için resim dosyasının yolunu belirtmeniz ve onu ek olarak eklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+E-postanıza bir resim eklemek için resim dosyasının yolunu belirtmeniz ve bunu bir ek olarak eklemeniz gerekir. Bunu şu şekilde yapabilirsiniz:
 
 ```java
 // Görüntü dosyasının yolunu belirtin
@@ -49,16 +51,16 @@ Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## Ekli Resmin Gömülmesi
+## Ekli Resmin Yerleştirilmesi
 
- Ekli resmi e-posta gövdesine gömmek için`LinkedResource` sınıf. Bu, e-postanın HTML gövdesindeki eke referans vermenizi sağlar:
+Ekli resmi e-posta gövdesine yerleştirmek için şunu kullanabilirsiniz: `LinkedResource` sınıf. Bu, e-postanın HTML gövdesinde eki referans almanıza olanak tanır:
 
 ```java
-// Ekli görüntü için bir LinkedResource oluşturun
+// Ekli resim için bir LinkedResource oluşturun
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// Gömülü görüntüyle bir HTML gövdesi oluşturun
+// Gömülü resimle bir HTML gövdesi oluşturun
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
@@ -66,46 +68,48 @@ message.getLinkedResources().addItem(linkedImage);
 
 ## E-postayı Gönderme
 
- Artık gömülü görseli içeren bir e-posta mesajı oluşturduğunuza göre, onu Aspose.Email'i kullanarak gönderebilirsiniz.`SmtpClient`:
+Artık gömülü görseli içeren bir e-posta mesajı oluşturduğunuza göre, bunu Aspose.Email'in `SmtpClient`:
 
 ```java
-// SmtpClient'i başlat
+// SmtpClient'ı başlatın
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
 // E-postayı gönder
 client.send(message);
 ```
 
-Tebrikler! Aspose.Email for Java'yı kullanarak bir resmi e-postaya başarıyla ek olarak yerleştirdiniz. E-postalarınız artık görsel olarak daha ilgi çekici ve bilgilendirici olacak.
+Tebrikler! Aspose.Email for Java kullanarak bir e-postaya ek olarak bir resim yerleştirmeyi başardınız. E-postalarınız artık görsel olarak daha ilgi çekici ve bilgilendirici olacak.
 
 ## Çözüm
 
-Bu kılavuzda, Aspose.Email for Java'ya görselleri ek olarak yerleştirmenin temel adımlarını ele aldık. Bu adımları izleyerek hedef kitlenizi büyüleyecek görsel öğeler ekleyerek e-posta iletişiminizi geliştirebilirsiniz.
+Bu kılavuzda, Aspose.Email for Java'da görselleri ek olarak yerleştirmenin temel adımlarını ele aldık. Bu adımları izleyerek, hedef kitlenizi büyüleyen görsel öğeler ekleyerek e-posta iletişiminizi geliştirebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Tek bir e-postaya birden fazla resmi nasıl gömebilirim?
+### Tek bir e-postaya birden fazla resim nasıl yerleştirebilirim?
 
-Her görsel için aynı işlemi takip ederek ve her birinin benzersiz bir içerik kimliğine sahip olmasını sağlayarak birden fazla görseli gömebilirsiniz.
+Her resim için aynı işlemi uygulayarak ve her birinin benzersiz bir içerik kimliğine sahip olduğundan emin olarak birden fazla resim yerleştirebilirsiniz.
 
-### Düz metin e-postalara resim yerleştirebilir miyim?
+### Düz metinli e-postalara resim ekleyebilir miyim?
 
-Düz metin e-postaları gömülü görselleri desteklemediğinden, düz metin e-postalarına resim gömmek standart bir uygulama değildir. Ancak düz metin e-postalarına resim URL'lerini ekleyebilirsiniz.
+Düz metin e-postalarına resim yerleştirmek standart bir uygulama değildir, çünkü düz metin e-postaları gömülü resimleri desteklemez. Ancak düz metin e-postalarına resim URL'leri ekleyebilirsiniz.
 
-### Gömme için hangi resim formatları destekleniyor?
+### Gömme için hangi resim biçimleri destekleniyor?
 
-Aspose.Email for Java, JPEG, PNG, GIF ve daha fazlası dahil olmak üzere çeşitli görüntü formatlarını destekler. Görüntünüzün uyumlu bir formatta olduğundan emin olun.
+Aspose.Email for Java, JPEG, PNG, GIF ve daha fazlası dahil olmak üzere çeşitli resim formatlarını destekler. Resminizin uyumlu bir formatta olduğundan emin olun.
 
-### E-postadaki gömülü görselleri yeniden boyutlandırmak mümkün mü?
+### E-postaya eklenen görsellerin boyutunu değiştirmek mümkün müdür?
 
- Evet, HTML'yi ayarlayarak gömülü görsellerin boyutunu kontrol edebilirsiniz.`<img>` e-postanızın HTML gövdesindeki etiket özelliklerini kullanın.
+Evet, HTML'yi ayarlayarak gömülü resimlerin boyutunu kontrol edebilirsiniz `<img>` E-postanızın HTML gövdesindeki etiket nitelikleri.
 
-### Gömülü görüntülerin boyutunda herhangi bir sınırlama var mı?
+### Gömülü görsellerin boyutlarında herhangi bir sınırlama var mı?
 
-Gömülü görsellerin boyutu, e-posta teslim edilebilirliğini ve alıcı deneyimini etkileyebilir. Büyük dosya boyutlarından kaçınmak için resimlerin e-posta için optimize edilmesi önerilir.
+Gömülü görsellerin boyutu e-postanın iletilebilirliğini ve alıcı deneyimini etkileyebilir. Büyük dosya boyutlarından kaçınmak için görselleri e-posta için optimize etmeniz önerilir.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

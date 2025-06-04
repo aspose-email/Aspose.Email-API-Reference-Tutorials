@@ -1,115 +1,115 @@
 ---
-title: การสร้าง TNEF EML จากผงชูรสใน C #
-linktitle: การสร้าง TNEF EML จากผงชูรสใน C #
-second_title: Aspose.Email .NET API การประมวลผลอีเมล
-description: เรียนรู้การสร้าง TNEF EML จากผงชูรสโดยใช้ Aspose.Email สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมรหัส C# การแปลงรูปแบบอีเมลที่มีประสิทธิภาพ
-weight: 12
-url: /th/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
+"description": "แปลง MSG เป็น TNEF EML ใน C# ด้วย Aspose.Email คำแนะนำทีละขั้นตอนง่ายๆ เพิ่มประสิทธิภาพให้กับโครงการประมวลผลอีเมลของคุณ"
+"linktitle": "การสร้าง TNEF EML จาก MSG ใน C#"
+"second_title": "API การประมวลผลอีเมล Aspose.Email .NET"
+"title": "การสร้าง TNEF EML จาก MSG ใน C#"
+"url": "/th/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# การสร้าง TNEF EML จากผงชูรสใน C
+# การสร้าง TNEF EML จาก MSG ใน C#
 
 
-ในคู่มือนี้ คุณจะได้เรียนรู้วิธีสร้างไฟล์ EML TNEF (Transport Neutral Encapsulation Format) จากไฟล์ MSG (ข้อความ Outlook) โดยใช้ไลบรารี Aspose.Email สำหรับ .NET TNEF เป็นรูปแบบไฟล์แนบอีเมลที่เป็นกรรมสิทธิ์ซึ่งใช้โดย Microsoft Outlook Aspose.Email สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้คุณสามารถทำงานกับรูปแบบอีเมลต่างๆ ในแอปพลิเคชัน C# ของคุณได้
+## การแนะนำ
 
-##  ข้อกำหนดเบื้องต้น
+สวัสดีเพื่อนนักเขียนโค้ด! คุณเคยต้องแปลงไฟล์ MSG เป็น TNEF EML ในโปรเจ็กต์ C# ของคุณหรือไม่? ใช่แล้ว คุณมาถูกที่แล้ว วันนี้เราจะมาเจาะลึกวิธีใช้ Aspose.Email สำหรับ .NET เพื่อให้การแปลงนี้ราบรื่น ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น คู่มือทีละขั้นตอนนี้จะแนะนำทุกสิ่งที่คุณจำเป็นต้องรู้ เริ่มกันเลย!
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+## ข้อกำหนดเบื้องต้น
 
-ติดตั้ง Visual Studio หรือสภาพแวดล้อมการพัฒนา C # ใด ๆ
- Aspose.Email สำหรับไลบรารี .NET คุณสามารถดาวน์โหลดได้จาก[กำหนดเผยแพร่](https://releases.aspose.com/email/net).
+ก่อนที่จะเริ่มเขียนโค้ด เรามาตรวจสอบก่อนว่าคุณได้ตั้งค่าทุกอย่างเรียบร้อยแล้ว:
 
-##  คำแนะนำทีละขั้นตอน
+1. ติดตั้ง Visual Studio: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Visual Studio ไว้ในเครื่องของคุณแล้ว หากไม่มี คุณสามารถดาวน์โหลดได้ [ที่นี่](https://visualstudio-microsoft.com/downloads/).
+2. Aspose.Email สำหรับ .NET: คุณจะต้องมีไลบรารี Aspose.Email สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก [ที่นี่](https://releases-aspose.com/email/net/).
+3. ความเข้าใจพื้นฐานเกี่ยวกับ C#: บทช่วยสอนนี้ถือว่าคุณมีความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม C#
+4. ไฟล์ตัวอย่าง MSG: เตรียมไฟล์ MSG ที่คุณต้องการแปลงไว้
 
-ทำตามขั้นตอนเหล่านี้เพื่อสร้างไฟล์ TNEF EML จากไฟล์ MSG โดยใช้ Aspose.Email สำหรับ .NET:
+เอาล่ะ ถ้าคุณเตรียมสิ่งเหล่านี้ทั้งหมดไว้พร้อมแล้ว เราก็พร้อมที่จะไปกันเลย!
 
-### สร้างโปรเจ็กต์ C# ใหม่:
+## นำเข้าเนมสเปซ
 
-   สร้างโปรเจ็กต์ C# ใหม่ในสภาพแวดล้อมการพัฒนาที่คุณต้องการ
+ขั้นแรกเลย เรามาทำการนำเข้าเนมสเปซที่จำเป็นกันก่อน ซึ่งเป็นสิ่งสำคัญสำหรับการเข้าถึงคลาสและเมธอดที่เราจะใช้
 
-### ติดตั้ง Aspose.Email สำหรับ .NET:
+```csharp
+using Aspose.Email;
+```
 
-   ติดตั้งไลบรารี Aspose.Email สำหรับ .NET โดยเพิ่มการอ้างอิงไปยังโปรเจ็กต์ของคุณ คุณสามารถทำได้โดยเพิ่ม DLL เป็นข้อมูลอ้างอิงหรือโดยใช้ NuGet Package Manager
+## เหตุใดจึงต้องโหลดไฟล์ MSG?
 
-### โหลดไฟล์ผงชูรส:
+ก่อนที่เราจะแปลงอะไรก็ตาม เราจะต้องโหลดไฟล์ MSG ลงในแอปพลิเคชันของเราเสียก่อน ลองนึกภาพว่ากำลังเปิดหนังสือก่อนที่จะอ่าน
 
-   ใช้รหัสต่อไปนี้เพื่อโหลดไฟล์ MSG โดยใช้ Aspose.Email:
+## วิธีการโหลดไฟล์ MSG
 
-   ```csharp
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+นี่คือวิธีการทำ:
 
-   // โหลดไฟล์ผงชูรส
-   MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-   ```
+```csharp
+MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
+```
 
-### สร้างไฟล์ TNEF EML:
+แทนที่ `"path/to/your/msg/file.msg"` ด้วยเส้นทางจริงไปยังไฟล์ MSG ของคุณ บรรทัดโค้ดนี้จะโหลดไฟล์ MSG ลงใน `MapiMessage` วัตถุ.
 
-   หากต้องการสร้างไฟล์ TNEF EML คุณต้องบันทึกวัตถุ MapiMessage เป็นรูปแบบ EML รูปแบบ TNEF จะถูกสร้างขึ้นโดยอัตโนมัติ:
+## ขั้นตอนที่ 2: แปลงเป็น TNEF EML
 
-   ```csharp
-   using Aspose.Email;
-   
-   // แปลงและบันทึกเป็น TNEF EML
-   msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-   ```
+### เหตุใดจึงแปลงเป็น TNEF EML?
 
-### ตัวอย่างโค้ดที่สมบูรณ์:
+ตอนนี้เราโหลดไฟล์ MSG เสร็จแล้ว ขั้นตอนต่อไปคือการแปลงไฟล์เป็น TNEF EML TNEF (Transport Neutral Encapsulation Format) เป็นรูปแบบที่ใช้ในการห่อหุ้มเนื้อหาที่มีคุณค่าในข้อความอีเมล
 
-   นี่คือตัวอย่างโค้ดที่สมบูรณ์ที่รวบรวมทุกอย่างไว้ด้วยกัน:
+### วิธีการแปลงเป็น TNEF EML
 
-   ```csharp
-   using Aspose.Email;
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+นี่คือตัวอย่างโค้ดสำหรับการแปลง:
 
-   namespace TnefGenerationExample
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               // โหลดไฟล์ผงชูรส
-               MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-               
-               // แปลงและบันทึกเป็น TNEF EML
-               msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-           }
-       }
-   }
-   ```
+```csharp
+MailMessage eml = msg.ToMailMessage(new MailConversionOptions { ConvertAsTnef = true });
+```
 
-### เรียกใช้แอปพลิเคชัน:
+เส้นนี้จะแปลง `MapiMessage` ถึง `MailMessage` วัตถุที่มีการเปิดใช้งานรูปแบบ TNEF
 
-   เรียกใช้แอปพลิเคชันของคุณ จากนั้นจะสร้างไฟล์ TNEF EML จากไฟล์ MSG ที่ให้มา
+## ขั้นตอนที่ 3: บันทึกไฟล์ EML ที่แปลงแล้ว
 
-##  บทสรุป
+### เหตุใดจึงต้องบันทึกไฟล์ EML?
 
-ในคู่มือนี้ คุณได้เรียนรู้วิธีสร้างไฟล์ TNEF EML จากไฟล์ MSG โดยใช้ไลบรารี Aspose.Email สำหรับ .NET ไลบรารีอันทรงพลังนี้มอบเครื่องมือที่จำเป็นสำหรับการทำงานกับรูปแบบอีเมลที่หลากหลายในแอปพลิเคชัน C# ของคุณ
+หลังจากแปลงไฟล์แล้ว เราต้องบันทึกไฟล์เพื่อใช้งานหรือแชร์ การบันทึกไฟล์ก็เหมือนกับการคั่นหน้าหนังสือหลังจากอ่านจบ
 
-##  คำถามที่พบบ่อย
+### วิธีการบันทึกไฟล์ EML
 
-### ฉันจะรับไลบรารี Aspose.Email สำหรับ .NET ได้อย่างไร
+วิธีการบันทึกไฟล์ที่แปลงแล้วมีดังนี้:
 
-คุณสามารถรับไลบรารี Aspose.Email สำหรับ .NET ได้จาก Aspose Releases:[ดาวน์โหลด Aspose.Email สำหรับ .NET](https://releases.aspose.com/email/net).
+```csharp
+eml.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
+```
 
-### ฉันสามารถใช้ Aspose.Email สำหรับรูปแบบอื่นที่ไม่ใช่ MSG ได้หรือไม่
+แทนที่ `"path/to/save/tnef.eml"` ด้วยเส้นทางที่คุณต้องการบันทึกไฟล์ EML บรรทัดนี้จะบันทึกไฟล์ EML ในตำแหน่งที่ระบุ
 
- ใช่ Aspose.Email สำหรับ .NET รองรับรูปแบบอีเมลที่หลากหลาย รวมถึง MSG, EML, PST, OST และอื่นๆ คุณสามารถอ้างถึง[Aspose.Email สำหรับเอกสาร .NET](https://reference.aspose.com/email/net) สำหรับข้อมูลเพิ่มเติมเกี่ยวกับรูปแบบและคุณสมบัติที่รองรับ
+## บทสรุป
 
-### ฉันจะจัดการกับข้อยกเว้นเมื่อทำงานกับ Aspose.Email ได้อย่างไร
+และแล้วคุณก็รู้แล้ว! คุณเพิ่งเรียนรู้วิธีการแปลงไฟล์ MSG เป็น TNEF EML โดยใช้ Aspose.Email สำหรับ .NET ง่ายๆ เพียงโหลดไฟล์ แปลง และบันทึกผลลัพธ์ กระบวนการนี้อาจมีประโยชน์สำหรับการประมวลผลอีเมล การย้ายข้อมูล หรือโครงการใดๆ ที่คุณต้องจัดการรูปแบบอีเมล
 
-คุณสามารถใช้เทคนิคการจัดการข้อยกเว้น C# มาตรฐานได้ Aspose.Email ส่งข้อยกเว้นที่เฉพาะเจาะจงสำหรับไลบรารี ดังนั้นโปรดตรวจสอบให้แน่ใจว่าได้จับและจัดการอย่างเหมาะสมในโค้ดของคุณ
+## คำถามที่พบบ่อย
 
- รู้สึกอิสระที่จะสำรวจ[Aspose.Email สำหรับเอกสาร .NET](https://reference.aspose.com/email/net) สำหรับคุณสมบัติและตัวอย่างขั้นสูงเพิ่มเติม
+### 1. TNEF EML คืออะไร?
+TNEF EML เป็นรูปแบบที่ใช้ในการรวมเนื้อหาอีเมลที่มีเนื้อหาหลากหลาย โดยมักใช้ในแอปพลิเคชันอีเมลเพื่อเก็บรักษาการจัดรูปแบบและไฟล์แนบ
+
+### 2. ฉันสามารถแปลงไฟล์ MSG หลายไฟล์ในครั้งเดียวได้ไหม?
+ใช่ คุณสามารถวนซ้ำผ่านไดเร็กทอรีของไฟล์ MSG และใช้กระบวนการแปลงแบบเดียวกันกับไฟล์แต่ละไฟล์ได้
+
+### 3. ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Email สำหรับ .NET หรือไม่?
+ใช่ Aspose.Email สำหรับ .NET ต้องมีใบอนุญาตจึงจะใช้งานได้เต็มรูปแบบ คุณสามารถขอใบอนุญาตชั่วคราวได้ [ที่นี่](https://purchase-aspose.com/temporary-license/).
+
+### 4. Aspose.Email สำหรับ .NET เข้ากันได้กับ .NET ทุกเวอร์ชันหรือไม่
+Aspose.Email สำหรับ .NET รองรับ .NET Framework เช่นเดียวกับ .NET Core และ .NET 5/6
+
+### 5. ฉันสามารถหาเอกสารเพิ่มเติมได้ที่ไหน
+คุณสามารถค้นหาเอกสาร API โดยละเอียดได้ที่ Aspose.Email สำหรับ .NET [ที่นี่](https://reference-aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

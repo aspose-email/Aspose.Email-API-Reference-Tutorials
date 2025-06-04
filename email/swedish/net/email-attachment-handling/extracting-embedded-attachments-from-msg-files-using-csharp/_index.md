@@ -1,14 +1,16 @@
 ---
-title: Extrahera inbäddade bilagor från MSG-filer med C#
-linktitle: Extrahera inbäddade bilagor från MSG-filer med C#
-second_title: Aspose.Email .NET Email Processing API
-description: Lär dig hur du extraherar inbäddade bilagor från MSG-filer med C# och Aspose.Email för .NET. En omfattande guide med exempel på källkod.
-weight: 10
-url: /sv/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+"description": "Lär dig hur du extraherar inbäddade bilagor från MSG-filer med hjälp av C# och Aspose.Email för .NET. En omfattande guide med exempel på källkod."
+"linktitle": "Extrahera inbäddade bilagor från MSG-filer med C#"
+"second_title": "Aspose.Email .NET e-postbehandlings-API"
+"title": "Extrahera inbäddade bilagor från MSG-filer med C#"
+"url": "/sv/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extrahera inbäddade bilagor från MSG-filer med C#
@@ -16,15 +18,15 @@ url: /sv/net/email-attachment-handling/extracting-embedded-attachments-from-msg-
 
 ## Introduktion till inbäddade bilagor
 
-Inbäddade bilagor är filer som är inkapslade i ett e-postmeddelande, vilket gör att mottagaren kan komma åt filerna utan behov av externa länkar. Dessa bilagor kan vara särskilt användbara när du delar dokument samtidigt som kontexten för e-postkonversationen bevaras.
+Inbäddade bilagor är filer som är inkapslade i ett e-postmeddelande, vilket gör att mottagaren kan komma åt filerna utan behov av externa länkar. Dessa bilagor kan vara särskilt användbara när man delar dokument samtidigt som man bevarar kontexten för e-postkonversationen.
 
 ## Komma igång med Aspose.Email för .NET
 
-Aspose.Email för .NET är ett kraftfullt bibliotek som förenklar e-postbearbetningsuppgifter i .NET-applikationer. Det ger omfattande stöd för att arbeta med olika e-postformat, inklusive MSG-filer. Följ dessa steg för att komma igång:
+Aspose.Email för .NET är ett kraftfullt bibliotek som förenklar e-posthantering i .NET-applikationer. Det ger omfattande stöd för att arbeta med olika e-postformat, inklusive MSG-filer. För att komma igång, följ dessa steg:
 
 1. Ladda ner och installera Aspose.Email för .NET
 
-    Du kan ladda ner biblioteket från[Aspose.Email för .NET webbplats](https://releases.aspose.com/email/net) eller använd NuGet-pakethanteraren:
+   Du kan ladda ner biblioteket från [Aspose.Email för .NET-webbplats](https://releases.aspose.com/email/net) eller använd NuGet-pakethanteraren:
    
    ```csharp
    Install-Package Aspose.Email
@@ -40,16 +42,16 @@ Aspose.Email för .NET är ett kraftfullt bibliotek som förenklar e-postbearbet
 
 ## Laddar och analyserar MSG-filer
 
-Innan vi extraherar inbäddade bilagor måste vi ladda och analysera MSG-filen med Aspose.Email. Så här kan du göra det:
+Innan vi extraherar inbäddade bilagor måste vi ladda och analysera MSG-filen med hjälp av Aspose.Email. Så här gör du:
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-// Ladda MSG-fil
+// Ladda MSG-filen
 using (var message = MailMessage.Load("sample.msg"))
 {
-    // Få tillgång till meddelandeegenskaper
+    // Åtkomst till meddelandeegenskaper
     string subject = message.Subject;
     string sender = message.From.Address;
     // ...
@@ -86,32 +88,34 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## Slutsats
 
-den här handledningen undersökte vi hur man extraherar inbäddade bilagor från MSG-filer med C# och Aspose.Email for .NET-biblioteket. Genom att följa stegen som beskrivs här kan du sömlöst integrera funktioner för att extrahera bilagor i dina .NET-applikationer, vilket förbättrar hur du hanterar e-postinnehåll.
+I den här handledningen utforskade vi hur man extraherar inbäddade bilagor från MSG-filer med hjälp av C# och Aspose.Email för .NET-biblioteket. Genom att följa stegen som beskrivs här kan du sömlöst integrera extraheringsfunktioner för bilagor i dina .NET-applikationer, vilket förbättrar hur du hanterar e-postinnehåll.
 
-## FAQ's
+## Vanliga frågor
 
 ### Hur kan jag ladda ner Aspose.Email för .NET?
 
- Du kan ladda ner Aspose.Email för .NET från[Aspose.Email webbplats](https://releases.aspose.com/email/net).
+Du kan ladda ner Aspose.Email för .NET från [Aspose.Email webbplats](https://releases.aspose.com/email/net).
 
-### Är Aspose.Email kompatibel med olika e-postformat?
+### Är Aspose.Email kompatibelt med olika e-postformat?
 
-Ja, Aspose.Email ger omfattande stöd för olika e-postformat, inklusive MSG, EML, PST och mer.
+Ja, Aspose.Email erbjuder omfattande stöd för olika e-postformat, inklusive MSG, EML, PST med mera.
 
 ### Kan jag använda Aspose.Email i både skrivbords- och webbapplikationer?
 
-Absolut! Aspose.Email för .NET kan användas i både skrivbords- och webbapplikationer, vilket gör det till ett mångsidigt val för dina e-postbearbetningsbehov.
+Absolut! Aspose.Email för .NET kan användas i både skrivbords- och webbapplikationer, vilket gör det till ett mångsidigt val för dina e-posthanteringsbehov.
 
-### Finns det några licensöverväganden?
+### Finns det några licensfrågor?
 
- Ja, Aspose.Email är ett kommersiellt bibliotek. Du kan hitta detaljerad licensinformation på[Aspose hemsida](https://purchase.aspose.com).
+Ja, Aspose.Email är ett kommersiellt bibliotek. Du hittar detaljerad licensinformation på [Asposes webbplats](https://purchase.aspose.com).
 
 ### Var kan jag hitta fler exempel och dokumentation?
 
- Du kan hitta detaljerade exempel och dokumentation om hur du använder Aspose.Email för .NET i[dokumentation](https://reference.aspose.com/email/net).
+Du hittar detaljerade exempel och dokumentation om hur du använder Aspose.Email för .NET i [dokumentation](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

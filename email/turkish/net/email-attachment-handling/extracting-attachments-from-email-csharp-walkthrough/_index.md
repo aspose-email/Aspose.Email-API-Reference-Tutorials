@@ -1,44 +1,46 @@
 ---
-title: E-postadan Ekleri Çıkarma - C# Çözüm Yolu
-linktitle: E-postadan Ekleri Çıkarma - C# Çözüm Yolu
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak e-posta eklerini adım adım çıkarmayı öğrenin. Çeşitli formatları kullanın ve kolaylıkla kaydedin.
-weight: 14
-url: /tr/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/
+"description": "Aspose.Email for .NET kullanarak e-posta eklerini adım adım çıkarmayı öğrenin. Çeşitli formatları işleyin ve kolaylıkla kaydedin."
+"linktitle": "E-postadan Ekleri Çıkarma - C# Rehberi"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "E-postadan Ekleri Çıkarma - C# Rehberi"
+"url": "/tr/net/email-attachment-handling/extracting-attachments-from-email-csharp-walkthrough/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E-postadan Ekleri Çıkarma - C# Çözüm Yolu
+# E-postadan Ekleri Çıkarma - C# Rehberi
 
 
-## E-postadan Ek Çıkarmaya Giriş - Aspose.Email for .NET kullanarak C# Çözüm Yolu
+## E-postadan Ekleri Çıkarmaya Giriş - .NET için Aspose.Email kullanarak C# Rehberi
 
-E-posta iletişimi hem kişisel hem de profesyonel olarak hayatımızın ayrılmaz bir parçası haline geldi. Çoğu zaman bu e-postalar, çıkarılması ve işlenmesi gereken önemli ekler içerir. Bu makalede, .NET için Aspose.Email kütüphanesini kullanarak e-postalardaki eklerin nasıl çıkarılacağına dair adım adım bir kılavuzu inceleyeceğiz.
+E-posta iletişimi, hem kişisel hem de profesyonel olarak hayatımızın ayrılmaz bir parçası haline geldi. Genellikle bu e-postalar, çıkarılması ve işlenmesi gereken önemli ekler içerir. Bu makalede, .NET için Aspose.Email kitaplığını kullanarak e-postalardan ekleri nasıl çıkaracağınıza dair adım adım bir kılavuzda ilerleyeceğiz.
 
-## Ekleri Çıkarmanın Önkoşulları
+## Ekleri Çıkarmak İçin Ön Koşullar
 
-Kodlama sürecine dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Kodlama sürecine başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Makinenizde Visual Studio yüklü
-- C# programlamaya ilişkin temel bilgiler
+- C# programlamanın temel bilgisi
 - Test için geçerli bir e-posta hesabına erişim
 
-## Geliştirme Ortamını Kurma
+## Geliştirme Ortamının Kurulumu
 
-1. Visual Studio'yu başlatın ve yeni bir C# konsol uygulaması projesi oluşturun.
+1. Visual Studio'yu başlatın ve yeni bir C# konsol uygulama projesi oluşturun.
 
-2. Projeye bir ad verin ve kaydetmek istediğiniz konumu seçin.
+2. Projenize bir isim verin ve kaydetmek istediğiniz konumu seçin.
 
-## Aspose.Email Kütüphanesini Kurma
+## Aspose.Email Kütüphanesini Yükleme
 
-1. Çözüm Gezgini'nde projenize sağ tıklayın ve "NuGet Paketlerini Yönet"i seçin.
+1. Çözüm Gezgini'nde projenize sağ tıklayın ve "NuGet Paketlerini Yönet" seçeneğini seçin.
 
-2. "Aspose.Email" ifadesini arayın ve projeniz için kütüphaneyi yükleyin.
+2. "Aspose.Email"i arayın ve projeniz için kütüphaneyi yükleyin.
 
-## E-posta Mesajlarını Yükleme ve Erişme
+## E-posta Mesajlarını Yükleme ve Erişim
 
 Başlamak için Aspose.Email kütüphanesini kullanarak e-posta mesajlarını yüklemeniz ve bunlara erişmeniz gerekir. İşte nasıl:
 
@@ -55,14 +57,14 @@ client.SelectFolder(ImapFolderInfo.InBox);
 ImapMessageInfoCollection messages = client.ListMessages();
 foreach (ImapMessageInfo messageInfo in messages)
 {
-    // E-posta mesajına erişme
+    // E-posta mesajına erişin
     MailMessage message = client.FetchMessage(messageInfo.UniqueId);
 }
 ```
 
 ## E-postadan Ekleri Çıkarma
 
-E-posta mesajına eriştikten sonra ekleri çıkarmaya başlayabilirsiniz:
+E-posta mesajına eriştiğinizde ekleri çıkarmaya başlayabilirsiniz:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
@@ -74,15 +76,15 @@ foreach (Attachment attachment in message.Attachments)
     }
     else if (attachment.ContentType.MediaType == "image/jpeg")
     {
-        // İşlem resmi eki
+        // İşlem görseli eki
     }
-    // Diğer ek türlerini de benzer şekilde kullanın
+    // Diğer ek türlerini de benzer şekilde ele alın
 }
 ```
 
-## Farklı Ek Tiplerini Kullanma
+## Farklı Ek Türlerinin Kullanımı
 
-Ekler, PDF'ler, resimler, belgeler vb. gibi çeşitli biçimlerde gelebilir. Kodunuzu, farklı ek türlerini uygun şekilde işleyecek şekilde uyarlayabilirsiniz.
+Ekler PDF, resim, belge vb. gibi çeşitli formatlarda olabilir. Kodunuzu farklı ek türlerini ele alacak şekilde uyarlayabilirsiniz.
 
 ## Çıkarılan Ekleri Kaydetme
 
@@ -97,32 +99,34 @@ foreach (Attachment attachment in message.Attachments)
 
 ## Çözüm
 
-Bu eğitimde, .NET için Aspose.Email kütüphanesini kullanarak e-postalardaki eklerin nasıl çıkarılacağını araştırdık. Bu adımları izleyerek, e-posta iletişimlerinizdeki ekleri verimli bir şekilde alabilir ve işleyebilirsiniz.
+Bu eğitimde, .NET için Aspose.Email kütüphanesini kullanarak e-postalardan ekleri nasıl çıkaracağınızı inceledik. Bu adımları izleyerek, e-posta iletişimlerinizden ekleri verimli bir şekilde alabilir ve işleyebilirsiniz.
 
 ## SSS
 
 ### Bilinmeyen dosya türlerine sahip ekleri nasıl işleyebilirim?
 
- Ektekileri kullanabilirsiniz`ContentType.MediaType` dosya türünü tanımlama ve buna göre işleme özelliği.
+Ekteki dosyayı kullanabilirsiniz `ContentType.MediaType` Dosya türünü tanımlamak ve buna göre işlemek için kullanılan özellik.
 
-### Aynı anda birden fazla eki çıkarabilir miyim?
+### Birden fazla eki aynı anda çıkarabilir miyim?
 
-Evet, bir e-posta mesajının ek koleksiyonunu yineleyebilir ve tüm ekleri çıkarabilirsiniz.
+Evet, bir e-posta mesajının ekler koleksiyonunda gezinebilir ve tüm ekleri çıkarabilirsiniz.
 
-### Aspose.Email farklı e-posta protokolleriyle uyumlu mu?
+### Aspose.Email farklı e-posta protokolleriyle uyumlu mudur?
 
-Evet, Aspose.Email, IMAP, POP3, SMTP ve Exchange Web Services (EWS) gibi çeşitli e-posta protokollerini destekler.
+Evet, Aspose.Email IMAP, POP3, SMTP ve Exchange Web Services (EWS) gibi çeşitli e-posta protokollerini destekler.
 
 ### Aspose.Email hangi .NET sürümlerini destekliyor?
 
-Aspose.Email, .NET Framework ve .NET Core'u destekler.
+Aspose.Email .NET Framework ve .NET Core'u destekler.
 
 ### Aspose.Email hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Ayrıntılı belgeler ve örnekler için bkz.[Aspose.Email belgeleri](https://reference.aspose.com/email/net/).
+Ayrıntılı dokümantasyon ve örnekler için şuraya bakın: [Aspose.E-posta belgeleri](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

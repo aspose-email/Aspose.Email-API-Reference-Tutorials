@@ -1,37 +1,39 @@
 ---
-title: C# Koduyla E-posta Bildirimleri Alma
-linktitle: C# Koduyla E-posta Bildirimleri Alma
-second_title: Aspose.Email .NET E-Posta İşleme API'si
-description: Aspose.Email for .NET'i kullanarak C#'ta e-posta bildirimleri almayı öğrenin. Verimli kod örneği sağlandı.
-weight: 10
-url: /tr/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/
+"description": "Aspose.Email for .NET kullanarak C# dilinde e-posta bildirimleri almayı öğrenin. Verimli kod örneği sağlanmıştır."
+"linktitle": "C# Koduyla E-posta Bildirimleri Alma"
+"second_title": "Aspose.Email .NET E-posta İşleme API'si"
+"title": "C# Koduyla E-posta Bildirimleri Alma"
+"url": "/tr/net/email-notification-and-tracking/receiving-email-notifications-with-csharp-code/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# Koduyla E-posta Bildirimleri Alma
 
 
 
-Dijital çağda iletişim çok önemlidir ve e-posta, bilgi alışverişinin en popüler araçlarından biri olmaya devam etmektedir. Bir geliştirici olarak uygulamalarınızda e-posta bildirimleri gönderip almanız gerektiğini görebilirsiniz. Bu adım adım eğitimde, Aspose.Email for .NET kullanarak C# ile e-posta bildirimlerinin nasıl alınacağını inceleyeceğiz.
+Dijital çağda iletişim olmazsa olmazdır ve e-posta, bilgi alışverişinin en popüler yollarından biri olmaya devam etmektedir. Bir geliştirici olarak, uygulamalarınızda e-posta bildirimleri göndermeniz ve almanız gerekebilir. Bu adım adım eğitimde, .NET için Aspose.Email kullanarak C# ile e-posta bildirimlerinin nasıl alınacağını keşfedeceğiz.
 
 ## giriiş
 
-E-posta bildirimleri, kullanıcıları uygulamanızdaki önemli olaylar veya güncellemeler hakkında bilgilendirmek açısından çok önemlidir. Aspose.Email for .NET, C# uygulamalarınızda e-postayla ilgili görevleri yönetmek için güçlü ve kullanımı kolay bir çözüm sunar. Bu eğitimde e-posta bildirimleri almaya odaklanacağız.
+E-posta bildirimleri, kullanıcıları uygulamanızdaki önemli olaylar veya güncellemeler hakkında bilgilendirmek için çok önemlidir. Aspose.Email for .NET, C# uygulamalarınızda e-postayla ilgili görevleri yönetmek için güçlü ve kullanımı kolay bir çözüm sunar. Bu eğitimde, e-posta bildirimleri almaya odaklanacağız.
 
 ## Aspose.Email'i kurma
 
-Kodlara dalmadan önce projenizde Aspose.Email for .NET'i kurmanız gerekiyor. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Koda dalmadan önce, projenizde .NET için Aspose.Email'i ayarlamanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
-1. Aspose.Email'i yükleyin: Projenize Aspose.Email for .NET kitaplığını yükleyerek başlayın. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.
+1. Aspose.Email'i yükleyin: Projenize Aspose.Email for .NET kütüphanesini yükleyerek başlayın. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.
 
-2.  Aspose.Email Ad Alanını İçe Aktar: C# kodunuzda gerekli ad alanını eklediğinizden emin olun:`using Aspose.Email;`.
+2. Aspose.Email Ad Alanını İçe Aktarın: C# kodunuzda, gerekli ad alanını eklediğinizden emin olun: `using Aspose.Email;`.
 
-## E-posta Mesajı Oluşturma
+## E-posta Mesajını Oluşturma
 
-Artık Aspose.Email'i kurduğumuza göre bir e-posta mesajı oluşturalım. Bu örnekte gönderen, alıcı, konu ve metinden oluşan temel bir e-posta mesajı oluşturacağız.
+Artık Aspose.Email'i kurduğumuza göre, bir e-posta mesajı oluşturalım. Bu örnekte, gönderici, alıcı, konu ve gövde içeren temel bir e-posta mesajı oluşturacağız.
 
 ```csharp
 // Mesajı oluştur
@@ -43,10 +45,10 @@ msg.Subject = "the subject of the message";
 
 ## Bildirimleri Yapılandırma
 
-E-postanızın teslim durumuyla ilgili bildirimler aldığınızdan emin olmak için teslim bildirimi seçeneklerini yapılandırabilirsiniz. Başarı, başarısızlık veya her iki durumda da bilgilendirilmek isteyip istemediğinizi belirtebilirsiniz.
+E-postanızın teslimat durumuyla ilgili bildirimler aldığınızdan emin olmak için teslimat bildirimi seçeneklerini yapılandırabilirsiniz. Başarılı, başarısız veya her ikisinde de bildirim almak isteyip istemediğinizi belirtebilirsiniz.
 
 ```csharp
-// Başarılı ve başarısız mesajlar için teslim bildirimlerini ayarlayın
+// Başarılı ve başarısız iletiler için teslimat bildirimleri ayarlayın
 msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure;
 ```
 
@@ -62,7 +64,7 @@ msg.Headers.Add("Disposition-Notification-To", "sender@sender.com");
 
 ## E-postayı Gönderme
 
-E-posta mesajınızı yapılandırdıktan sonra gönderme zamanı gelmiştir. Aspose.Email, SMTP istemcisini kullanarak e-posta göndermenin kolay bir yolunu sunar.
+E-posta mesajınızı yapılandırdıktan sonra, onu gönderme zamanı geldi. Aspose.Email, SMTP istemcisini kullanarak e-posta göndermek için kullanışlı bir yol sağlar.
 
 ```csharp
 // Mesajı gönder
@@ -72,31 +74,33 @@ client.Send(msg);
 
 ## Çözüm
 
-Bu eğitimde Aspose.Email for .NET kullanarak C# ile e-posta bildirimlerinin nasıl alınacağını araştırdık. Aspose.Email'in kurulumunu, e-posta mesajı oluşturmayı, bildirimleri yapılandırmayı, MIME başlıklarını eklemeyi ve e-postayı göndermeyi anlattık.
+Bu eğitimde, .NET için Aspose.Email kullanarak C# ile e-posta bildirimlerinin nasıl alınacağını inceledik. Aspose.Email'i kurmayı, e-posta mesajı oluşturmayı, bildirimleri yapılandırmayı, MIME başlıklarını eklemeyi ve e-postayı göndermeyi ele aldık.
 
-Bu adımları izleyerek e-posta bildirimlerini C# uygulamalarınıza sorunsuz bir şekilde entegre ederek kullanıcı iletişimini geliştirebilir ve onları bilgilendirebilirsiniz.
+Bu adımları izleyerek e-posta bildirimlerini C# uygulamalarınıza sorunsuz bir şekilde entegre edebilir, kullanıcı iletişimini geliştirebilir ve kullanıcıları bilgilendirebilirsiniz.
 
 ## SSS
 
-### 1. Aspose.Email for .NET'i .NET Core projemde kullanabilir miyim?
+### 1. .NET Core projemde Aspose.Email for .NET'i kullanabilir miyim?
    Evet, Aspose.Email for .NET hem .NET Framework hem de .NET Core ile uyumludur.
 
-### 2. Bildirimlerimdeki e-posta eklerini nasıl halledebilirim?
-    Şunu kullanabilirsiniz:`Attachment` E-posta eklerini kolayca yönetmek için Aspose.Email tarafından sağlanan sınıf.
+### 2. Bildirimlerimde e-posta eklerini nasıl yönetebilirim?
+   Kullanabilirsiniz `Attachment` Aspose.Email tarafından e-posta eklerini kolayca işlemek için sağlanan sınıf.
 
 ### 3. Aspose.Email for .NET ücretli bir kütüphane midir?
-   Aspose.Email hem ücretsiz deneme hem de ücretli sürüm sunuyor. Ücretli sürüm ek özellikler ve destek sağlar.
+   Aspose.Email hem ücretsiz deneme hem de ücretli sürüm sunar. Ücretli sürüm ek özellikler ve destek sağlar.
 
 ### 4. E-posta bildirim şablonlarını özelleştirebilir miyim?
    Evet, özel e-posta şablonları oluşturabilir ve bunları dinamik içerikle doldurmak için Aspose.Email'i kullanabilirsiniz.
 
 ### 5. Aspose.Email ile gönderebileceğim/alabileceğim e-posta sayısında herhangi bir sınırlama var mı?
-   Aspose.Email, gönderebileceğiniz veya alabileceğiniz e-posta sayısına katı sınırlamalar getirmez ancak e-posta sunucunuzun sınırlamalarına tabi olabilir.
+   Aspose.Email, gönderebileceğiniz veya alabileceğiniz e-posta sayısı konusunda katı sınırlamalar getirmez, ancak e-posta sunucunuzun sınırlamalarına tabi olabilir.
 
-Böylece Aspose.Email for .NET kullanarak C# ile e-posta bildirimleri alma konusundaki eğitimimiz sona eriyor. Umarız bu kılavuzu uygulamalarınızda e-posta bildirimlerini uygularken faydalı bulmuşsunuzdur. 
+Aspose.Email for .NET kullanarak C# ile e-posta bildirimleri alma eğitimimizi burada sonlandırıyoruz. Bu kılavuzun uygulamalarınızda e-posta bildirimlerini uygulamada faydalı olduğunu umuyoruz. 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,49 +1,51 @@
 ---
-title: Aspose.Email'deki E-posta Başlıkları
-linktitle: Aspose.Email'deki E-posta Başlıkları
-second_title: Aspose.Email Java E-posta Yönetimi API'si
-description: Aspose.Email for Java ile E-posta Başlıklarının Gücünün Kilidini Açın. E-posta başlıklarını zahmetsizce nasıl ayarlayıp alacağınızı öğrenin.
-weight: 10
-url: /tr/java/customizing-email-headers/email-headers/
+"description": "Aspose.Email for Java ile E-posta Başlıklarının Gücünü Açığa Çıkarın. E-posta başlıklarını zahmetsizce nasıl ayarlayacağınızı ve alacağınızı öğrenin."
+"linktitle": "Aspose.Email'de E-posta Başlıkları"
+"second_title": "Aspose.Email Java E-posta Yönetim API'si"
+"title": "Aspose.Email'de E-posta Başlıkları"
+"url": "/tr/java/customizing-email-headers/email-headers/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'deki E-posta Başlıkları
+# Aspose.Email'de E-posta Başlıkları
 
 
 ## E-posta Başlıklarına Giriş
 
-E-posta başlıkları dijital mesajların zarfları gibidir. Bir e-postanın göndericiden alıcıya olan yolculuğu boyunca rehberlik eden temel meta verileri içerirler. E-posta başlıklarını anlamak, bir e-postanın izlediği yolu izlemenize, olası sorunları belirlemenize ve güvenli ve güvenilir e-posta iletişimi sağlamanıza yardımcı olabilir.
+E-posta başlıkları dijital mesajların zarfları gibidir. Bir e-postanın göndericiden alıcıya yolculuğunda rehberlik eden temel meta verileri içerirler. E-posta başlıklarını anlamak, bir e-postanın izlediği yolu izlemenize, olası sorunları belirlemenize ve güvenli ve güvenilir e-posta iletişimi sağlamanıza yardımcı olabilir.
 
-### E-posta Başlıkları Nedir?
+### E-posta Başlıkları Nelerdir?
 
-E-posta başlıkları, bir e-posta mesajının başlangıcındaki meta veri satırlarıdır. Mesajın kaynağı, yolu ve işlenmesi hakkında bilgi sağlarlar. Yaygın e-posta başlığı alanları şunları içerir:
+E-posta başlıkları, bir e-posta mesajının başındaki meta veri satırlarıdır. Mesajın kaynağı, rotası ve işlenmesi hakkında bilgi sağlarlar. Yaygın e-posta başlığı alanları şunları içerir:
 
 - Kimden: Gönderenin e-posta adresi.
 - Kime: Alıcının e-posta adresi.
 - Konu: E-postanın konusu.
 - Tarih: E-postanın gönderildiği tarih ve saat.
-- Alınan: E-postanın göndericiden alıcıya olan yolculuğunu ayrıntılandıran bir dizi giriş.
-- İleti Kimliği: E-posta iletisi için benzersiz bir tanımlayıcı.
+- Alındı: E-postanın göndericiden alıcıya yolculuğunu ayrıntılarıyla anlatan bir dizi giriş.
+- Mesaj Kimliği: E-posta mesajı için benzersiz bir tanımlayıcı.
 
-## Aspose.Email'de E-posta Başlıklarıyla Çalışmak
+## Aspose.Email'de E-posta Başlıklarıyla Çalışma
 
-Artık e-posta başlıklarının önemini anladığımıza göre, Aspose.Email for Java kullanarak onlarla nasıl çalışacağımızı keşfedelim. Aspose.Email, geliştiricilerin e-posta mesajlarından başlıklar da dahil olmak üzere bilgi oluşturmasına, işlemesine ve çıkarmasına olanak tanıyan güçlü bir kütüphanedir.
+Artık e-posta başlıklarının önemini anladığımıza göre, Aspose.Email for Java kullanarak bunlarla nasıl çalışılacağını inceleyelim. Aspose.Email, geliştiricilerin başlıkları da dahil olmak üzere e-posta mesajlarından bilgi oluşturmalarına, düzenlemelerine ve çıkarmalarına olanak tanıyan güçlü bir kütüphanedir.
 
 ### E-posta Başlıklarını Ayarlama
 
-Aspose.Email'i kullanarak e-posta başlıklarını programlı olarak ayarlamak için şu adımları izleyin:
+Aspose.Email kullanarak e-posta başlıklarını programlı olarak ayarlamak için şu adımları izleyin:
 
-1.  Bir E-posta Mesajını Başlatın: Bir örneğini oluşturun`MailMessage` sınıf.
+1. Bir E-posta Mesajı Başlatın: Bir örnek oluşturun `MailMessage` sınıf.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2.  Başlık Değerlerini Ayarlayın:`Headers` başlık değerlerini ayarlamak için koleksiyon.
+2. Başlık Değerlerini Ayarla: Şunu kullanın: `Headers` Başlık değerlerini ayarlamak için koleksiyon.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
@@ -58,7 +60,7 @@ client.send(message);
 
 ### E-posta Başlıklarını Alma
 
-Aspose.Email'i kullanarak gelen bir e-postanın e-posta başlıklarını almak için şu adımları takip edebilirsiniz:
+Aspose.Email kullanarak gelen bir e-postanın e-posta başlıklarını almak için şu adımları izleyebilirsiniz:
 
 1. E-posta Mesajını Yükle: Gelen e-posta mesajını yükleyin.
 
@@ -66,7 +68,7 @@ Aspose.Email'i kullanarak gelen bir e-postanın e-posta başlıklarını almak i
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Başlık Değerlerine Erişim: Başlık değerlerine`Headers` Toplamak.
+2. Başlık Değerlerine Erişim: Başlık değerlerine erişmek için `Headers` koleksiyon.
 
 ```java
 String subject = message.getHeaders().get("Subject");
@@ -75,32 +77,34 @@ String sender = message.getHeaders().get("From");
 
 ## Çözüm
 
-E-posta başlıkları, e-posta iletişiminin isimsiz kahramanlarıdır ve e-postaların hedeflenen alıcılara ulaşmasını sağlayan hayati bilgileri taşır. Aspose.Email for Java, e-posta başlıklarıyla çalışma görevini basitleştirerek geliştiricilerin bu meta verilerin gücünden çeşitli amaçlarla yararlanmasına olanak tanır. Özel başlıklar ayarlamanız, bilgi almanız veya e-posta rotalarını analiz etmeniz gerekiyorsa Aspose.Email, etkili e-posta başlığı yönetimi için ihtiyacınız olan araçları sağlar.
+E-posta başlıkları, e-posta iletişiminin bilinmeyen kahramanlarıdır ve e-postaların hedeflenen alıcılara ulaşmasını sağlayan hayati bilgileri taşır. Java için Aspose.Email, e-posta başlıklarıyla çalışma görevini basitleştirir ve geliştiricilerin bu meta verilerin gücünden çeşitli amaçlar için faydalanmalarını sağlar. Özel başlıklar ayarlamanız, bilgi almanız veya e-posta rotalarını analiz etmeniz gerekip gerekmediğine bakılmaksızın, Aspose.Email etkili e-posta başlığı düzenlemesi için ihtiyaç duyduğunuz araçları sağlar.
 
-## SSS'ler
+## SSS
 
-### Popüler e-posta istemcilerindeki e-posta başlıklarını nasıl görüntüleyebilirim?
+### Popüler e-posta istemcilerinde e-posta başlıklarını nasıl görüntüleyebilirim?
 
-Çoğu e-posta istemcisinde, e-postayı açıp "Kaynağı Görüntüle" veya "Orijinali Göster" gibi bir seçeneği arayarak e-posta başlıklarını görüntüleyebilirsiniz.
+Çoğu e-posta istemcisinde, e-postayı açıp "Kaynağı Görüntüle" veya "Orijinali Göster" gibi bir seçenek arayarak e-posta başlıklarını görüntüleyebilirsiniz.
 
-### E-posta başlıkları şifrelenmiş mi?
+### E-posta başlıkları şifreleniyor mu?
 
-Hayır, e-posta başlıkları şifrelenmez. Bunlar e-postanın meta verilerinin bir parçasıdır ve genellikle düz metin halindedirler.
+Hayır, e-posta başlıkları şifrelenmez. Bunlar e-postanın meta verilerinin bir parçasıdır ve genellikle düz metindir.
 
-### Bir e-posta gönderdikten sonra e-posta başlıklarını değiştirebilir miyim?
+### E-posta gönderdikten sonra e-posta başlıklarını değiştirebilir miyim?
 
-Bir e-posta gönderildiğinde başlıkları genellikle değişmezdir. E-postayı göndermeden önce istenen başlıkları ayarlamak önemlidir.
+Bir e-posta gönderildikten sonra, başlıkları genellikle değiştirilemezdir. E-postayı göndermeden önce istenen başlıkları ayarlamak önemlidir.
 
 ### "Alındı" başlığının amacı nedir?
 
-"Alındı" başlığı, e-postanın göndericiden alıcıya olan yolunu izleyen bir dizi giriştir. Teslimat sorunlarını teşhis etmeye ve e-postanın yolunu izlemeye yardımcı olur.
+"Alındı" başlığı, e-postanın göndericiden alıcıya giden yolunu izleyen bir dizi girdidir. Teslimat sorunlarını teşhis etmeye ve e-postanın rotasını izlemeye yardımcı olur.
 
 ### Büyük bir e-posta grubundan e-posta başlıklarını nasıl çıkarabilirim?
 
-Aspose.Email'in toplu işleme yeteneklerini birden fazla e-postadan başlıkları verimli bir şekilde çıkarmak için kullanabilirsiniz.
+Aspose.Email'in toplu işleme yeteneklerini kullanarak birden fazla e-postadan başlıkları verimli bir şekilde çıkarabilirsiniz.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
