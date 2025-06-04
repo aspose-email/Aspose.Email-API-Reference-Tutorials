@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/including-attachments-in-email-csharp-exampl
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Including Attachments in Email - C# Example
@@ -121,6 +123,7 @@ For more detailed information about Aspose.Email's features, classes, and method
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

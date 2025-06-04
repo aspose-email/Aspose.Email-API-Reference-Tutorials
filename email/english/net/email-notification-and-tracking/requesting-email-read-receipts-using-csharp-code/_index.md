@@ -8,7 +8,9 @@ url: /net/email-notification-and-tracking/requesting-email-read-receipts-using-c
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Requesting Email Read Receipts using C# Code
@@ -139,9 +141,11 @@ In this tutorial, we've explored how to request email read receipts using C# wit
 
 5. ### Are there privacy considerations when using email read receipts?
    Yes, there are privacy concerns related to email tracking. Some recipients may consider it invasive, so it's essential to use this feature responsibly and respect privacy preferences.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

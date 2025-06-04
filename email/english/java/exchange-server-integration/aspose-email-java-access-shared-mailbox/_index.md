@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Access Shared Mailboxes Using Aspose.Email for Java: A Complete Guide
 
@@ -158,7 +160,11 @@ In this guide, you've learned how to leverage Aspose.Email for Java to access an
 - **Free Trial:** Test features via [Free Trial Downloads](https://releases.aspose.com/email/java/) 
 
 Now that you're equipped with the knowledge, start implementing Aspose.Email in your Java projects today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Count Messages in MBOX File Using Aspose.Email Java: A Comprehensive Guide
 
@@ -148,7 +150,11 @@ A5: Explore additional methods provided by `MboxrdStorageReader` to extract and 
 - **Free Trial**: [Aspose Email Free Trial](https://releases.aspose.com/email/java/)
 - **Temporary License**: [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

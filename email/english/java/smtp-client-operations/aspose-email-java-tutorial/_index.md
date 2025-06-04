@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Automation with Aspose.Email for Java: A Comprehensive Send Email Tutorial
 
@@ -190,7 +192,11 @@ Adhering to best practices ensures your application remains responsive and effic
 
 ## Conclusion
 You've now mastered the basics of sending emails using Aspose.Email for Java. With this knowledge, you can automate various tasks that involve email communication in your applications. Experiment further by exploring advanced features like attachments or integrating with other services.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

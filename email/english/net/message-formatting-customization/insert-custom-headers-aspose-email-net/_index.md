@@ -14,7 +14,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Insert Custom Headers into Emails Using Aspose.Email for .NET: A Comprehensive Tutorial
 
@@ -181,7 +183,11 @@ Ready to implement this solution? Try it out today!
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 This guide should provide you with all the tools and knowledge needed to effectively manage custom headers in your emails using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

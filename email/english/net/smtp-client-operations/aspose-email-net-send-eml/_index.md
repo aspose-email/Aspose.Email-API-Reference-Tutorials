@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails via EML Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -183,7 +185,11 @@ Ready to implement this solution in your project? Start experimenting with Aspos
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Explore these resources to get the most out of Aspose.Email for .NET and enhance your application's email capabilities.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

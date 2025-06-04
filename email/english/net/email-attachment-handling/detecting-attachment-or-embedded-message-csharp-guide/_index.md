@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/detecting-attachment-or-embedded-message-csh
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Detecting Attachment or Embedded Message - C# Guide
@@ -116,6 +118,7 @@ Absolutely, you can tailor the processing of attachments and embedded messages t
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

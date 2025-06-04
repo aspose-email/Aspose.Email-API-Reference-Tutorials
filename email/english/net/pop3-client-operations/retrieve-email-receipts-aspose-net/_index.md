@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Retrieve Email Receipts with Aspose.Email for .NET: A Comprehensive Guide to POP3 Client Operations
 
@@ -176,7 +178,11 @@ Yes, but Aspose.Email is renowned for its comprehensive feature set and ease of 
 - **Free Trial**: [Aspose Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

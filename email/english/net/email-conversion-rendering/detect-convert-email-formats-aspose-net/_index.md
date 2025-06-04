@@ -14,7 +14,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Format Detection and Conversion with Aspose.Email for .NET
 
@@ -177,7 +179,11 @@ The official documentation and community forums are great places to explore prac
 - **Support**: [Aspose Community Forum](https://forum.aspose.com/c/email/10)
 
 Happy coding, and explore the world of email processing with Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

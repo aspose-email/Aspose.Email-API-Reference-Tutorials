@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Implementing a .NET IMAP Client with Aspose.Email: A Step-by-Step Guide for Developers
 
@@ -199,7 +201,11 @@ Explore further features of Aspose.Email or integrate it with other systems for 
 - [Aspose.Email Documentation](https://reference.aspose.com/email/net/)
 - [Download Aspose.Email for .NET](https://releases.aspose.com/email/net/)
 - [Purchase a License](https://purchase.aspose.com/buy)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

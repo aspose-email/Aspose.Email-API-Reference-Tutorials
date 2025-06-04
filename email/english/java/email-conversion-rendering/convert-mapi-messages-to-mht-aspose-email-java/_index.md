@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Convert MAPI Messages to MHT Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -185,7 +187,11 @@ Ready to try it yourself? Dive into the code, make adjustments, and see how you 
    - Yes, you can try it with a free trial, but a license is required for production to remove evaluation limitations.
 3. **How do I handle large email archives?**
    - Process emails in batches and utilize efficient data structures for optimal performance.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

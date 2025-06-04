@@ -8,7 +8,9 @@ url: /net/email-validation-and-verification/email-validation-techniques-in-cshar
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Email Validation Techniques in C# Code
@@ -232,6 +234,7 @@ Implement rate limiting and CAPTCHA mechanisms to prevent abuse of your email va
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

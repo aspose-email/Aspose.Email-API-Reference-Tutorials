@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Convert EML to MSG with HTML Body Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -142,6 +144,9 @@ For further exploration, consider diving into other features of Aspose.Email or 
 Embark on your email conversion journey with Aspose.Email for .NET today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /java/securing-email-communications/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Securing Email Communications with Aspose.Email for Java
@@ -34,6 +36,7 @@ Learn how to implement TLS encryption with Aspose.Email for Java. Follow our ste
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

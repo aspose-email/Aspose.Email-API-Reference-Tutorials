@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to List Public Folders in .NET Using Aspose.Email's EWS Client
 
@@ -180,6 +182,9 @@ Ready to implement these solutions? Try the code on your system and explore furt
 Start managing your public folders with ease using Aspose.Email for .NET and boost your productivity today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

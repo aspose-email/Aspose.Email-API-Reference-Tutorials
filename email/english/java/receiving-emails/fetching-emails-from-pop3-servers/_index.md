@@ -8,7 +8,9 @@ url: /java/receiving-emails/fetching-emails-from-pop3-servers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Fetching Emails from POP3 Servers with Aspose.Email
@@ -165,9 +167,11 @@ Yes, Aspose.Email for Java is compatible with a wide range of Java versions, mak
 
 ### 4. Can I schedule email fetching tasks with Aspose.Email for Java?
 Yes, you can schedule email fetching tasks using Java's scheduling libraries or frameworks like Quartz Scheduler.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

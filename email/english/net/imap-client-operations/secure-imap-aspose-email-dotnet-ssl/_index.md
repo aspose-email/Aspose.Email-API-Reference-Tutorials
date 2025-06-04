@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Secure IMAP Connection Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -173,7 +175,11 @@ Ready to implement? Start securing your email communications today!
 - [Free Trial](https://releases.aspose.com/email/net/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

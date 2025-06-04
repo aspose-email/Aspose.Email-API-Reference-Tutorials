@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Download Messages from Exchange Public Folders Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -176,7 +178,11 @@ As next steps, consider exploring other features provided by Aspose.Email or int
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
 By following this comprehensive guide, you're well-equipped to implement and expand upon the functionality of downloading messages from Exchange Public Folders using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

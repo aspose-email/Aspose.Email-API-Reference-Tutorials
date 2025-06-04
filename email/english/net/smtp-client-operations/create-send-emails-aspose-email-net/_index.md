@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Send Emails Using Aspose.Email for .NET: A Comprehensive Tutorial
 
@@ -189,7 +191,11 @@ A5: Visit the [Aspose Forum](https://forum.aspose.com/c/email/10) for community 
 - **Purchase License**: For full features, purchase a license at [Aspose Purchase](https://purchase.aspose.com/buy)
 - **Free Trial & Temporary License**: Test out Aspose.Email with a free trial or temporary license available at [Aspose Downloads](https://releases.aspose.com/email/net/) and [Temporary License](https://purchase.aspose.com/temporary-license/), respectively.
 - **Support**: For further assistance, visit the [Aspose Support](https://support.aspose.com) page.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Access Another Mailbox Using Aspose.Email .NET: A Comprehensive Guide
 
@@ -78,7 +80,11 @@ using Aspose.Email.Clients.Exchange;
 // Initialize an ExchangeClient with credentials
 ExchangeClient client = new ExchangeClient(
     "http://MachineName/exchange/Username\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Attachments from Outlook MSG Files Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -151,6 +153,9 @@ A: Check out the [Aspose documentation](https://reference.aspose.com/email/net/)
 Take the next step and implement what you've learned today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

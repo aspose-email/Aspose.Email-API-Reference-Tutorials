@@ -8,7 +8,9 @@ url: /java/exploring-email-security/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Exploring Email Security with Aspose.Email for Java
@@ -37,6 +39,7 @@ Learn how to secure your emails with Email Encryption and Decryption using Aspos
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

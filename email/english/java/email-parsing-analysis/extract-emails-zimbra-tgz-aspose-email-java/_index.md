@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Emails from Zimbra TGZ Archives Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -202,6 +204,9 @@ A: Utilize APIs or data exchange formats like JSON/XML to seamlessly transfer em
 - **Support**: For questions or assistance, visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

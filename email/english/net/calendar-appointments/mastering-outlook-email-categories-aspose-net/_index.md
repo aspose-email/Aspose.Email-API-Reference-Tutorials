@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Outlook Email Categories with Aspose.Email .NET: A Comprehensive Guide
 
@@ -170,7 +172,11 @@ Ready to implement? Start experimenting with the code snippets provided and tail
 - **Purchase License:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial:** [Try Aspose.Email Free](https://releases.aspose.com/email/net/)
 - **Support Forum:** [Aspose Email Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

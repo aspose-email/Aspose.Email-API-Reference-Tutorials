@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/forming-tnef-format-from-msg-with-cshar
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Forming TNEF Format from MSG with C#
@@ -108,9 +110,11 @@ Yes, testing and validation are crucial steps to ensure that the converted TNEF 
 ### Where can I learn more about Aspose.Email for .NET?
 
 You can find detailed documentation and resources for Aspose.Email for .NET at [https://reference.aspose.com/email/net/](https://reference.aspose.com/email/net/). This documentation will assist you in exploring the library's features and capabilities.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

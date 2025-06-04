@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Client Initialization and Configuration in Java with Aspose.Email
 
@@ -66,7 +68,11 @@ Create an `ImapClient` object, specifying your email server details and credenti
 ```java
 // Establish connection to the IMAP server
 ImapClient client = new ImapClient("server.domain.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

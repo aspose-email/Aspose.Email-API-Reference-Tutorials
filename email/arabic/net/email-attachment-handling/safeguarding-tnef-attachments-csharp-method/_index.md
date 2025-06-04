@@ -1,26 +1,28 @@
 ---
-title: حماية مرفقات TNEF - طريقة C#
-linktitle: حماية مرفقات TNEF - طريقة C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية حماية مرفقات TNEF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع كود المصدر متضمن.
-weight: 19
-url: /ar/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
+"description": "تعرّف على كيفية حماية مرفقات TNEF باستخدام C# وAspose.Email لـ .NET. دليل خطوة بخطوة مع الكود المصدري."
+"linktitle": "حماية مرفقات TNEF - طريقة C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "حماية مرفقات TNEF - طريقة C#"
+"url": "/ar/net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/"
+"weight": 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # حماية مرفقات TNEF - طريقة C#
 
 
-## مقدمة لحماية مرفقات TNEF
+## مقدمة حول حماية مرفقات TNEF
 
-TNEF، والمعروفة أيضًا باسم مرفقات "winmail.dat"، هي تنسيق مرفقات بريد إلكتروني خاص يستخدمه Microsoft Outlook. ويمكنها تغليف عناصر متنوعة، مثل تنسيق النص المنسق وعناصر التقويم والمرفقات. ومع ذلك، قد يكون التعامل مع ملحقات TNEF أمرًا صعبًا نظرًا لبنيتها الفريدة. سنركز في هذا الدليل على استخراج المرفقات وحمايتها داخل ملفات TNEF.
+مرفقات TNEF، المعروفة أيضًا باسم "winmail.dat"، هي تنسيق مرفقات بريد إلكتروني خاص يستخدمه Microsoft Outlook. تحتوي هذه المرفقات على عناصر متنوعة، مثل تنسيق النص الغني، وعناصر التقويم، والمرفقات. مع ذلك، قد يكون التعامل مع مرفقات TNEF صعبًا نظرًا لبنيتها الفريدة. في هذا الدليل، سنركز على استخراج المرفقات وحمايتها داخل ملفات TNEF.
 
 ## إعداد المشروع
 
-قبل أن نبدأ، تأكد من إعداد بيئة العمل لديك. اتبع الخطوات التالية:
+قبل أن نبدأ، تأكد من تجهيز بيئة العمل. اتبع الخطوات التالية:
 
 1. تثبيت مكتبة Aspose.Email: افتح مشروع C# الخاص بك في Visual Studio واستخدم NuGet Package Manager لتثبيت مكتبة Aspose.Email:
 
@@ -28,7 +30,7 @@ TNEF، والمعروفة أيضًا باسم مرفقات "winmail.dat"، هي 
 Install-Package Aspose.Email
 ```
 
-2. استيراد مساحات الأسماء المطلوبة: في ملف التعليمات البرمجية C# الخاص بك، قم باستيراد مساحات الأسماء الضرورية:
+2. استيراد مساحات الأسماء المطلوبة: في ملف الكود C# الخاص بك، قم باستيراد مساحات الأسماء الضرورية:
 
 ```csharp
 using Aspose.Email;
@@ -37,9 +39,9 @@ using Aspose.Email.Mapi;
 
 ## تحميل واستخراج مرفقات TNEF
 
-لحماية مرفقات TNEF، نحتاج أولاً إلى تحميلها واستخراجها. اتبع الخطوات التالية:
+لحماية مرفقات TNEF، علينا أولاً تحميلها واستخراجها. اتبع الخطوات التالية:
 
-1.  تحميل ملف TNEF: قم بتحميل ملف TNEF باستخدام ملف`MapiMessage` فصل:
+1. تحميل ملف TNEF: قم بتحميل ملف TNEF باستخدام `MapiMessage` فصل:
 
 ```csharp
 MsgLoadOptions options = new MsgLoadOptions();
@@ -47,12 +49,12 @@ options.PreserveTnefAttachments = true;
 MapiMessage message = MapiMessage.FromFile("path/to/tnef/file.dat", options);
 ```
 
-2. استخراج المرفقات: قم بالتكرار من خلال المرفقات واستخراجها:
+2. استخراج المرفقات: قم بالتكرار خلال المرفقات واستخراجها:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-   // استخراج البيانات المرفقة
+   // استخراج بيانات المرفق
    byte[] attachmentData = attachment.GetContent();
    // قم بتنفيذ منطق الحماية الخاص بك هنا
 }
@@ -60,50 +62,52 @@ foreach (Attachment attachment in message.Attachments)
 
 ## التعامل مع بيانات TNEF
 
-بمجرد استخراج المرفقات، يمكنك تنفيذ تدابير الحماية الخاصة بك. يمكن أن يشمل ذلك البحث عن البرامج الضارة، أو التحقق من صحة أنواع الملفات، أو تشفير المرفقات.
+بعد استخراج المرفقات، يمكنك تطبيق إجراءات الحماية. قد يشمل ذلك فحص المرفقات بحثًا عن البرامج الضارة، والتحقق من أنواع الملفات، وتشفيرها.
 
 ## حفظ المرفقات بشكل آمن
 
-بعد تطبيق إجراءات الحماية الخاصة بك، يمكنك حفظ المرفقات بشكل آمن:
+بعد تطبيق تدابير الحماية الخاصة بك، يمكنك حفظ المرفقات بشكل آمن:
 
 ```csharp
 foreach (Attachment attachment in message.Attachments)
 {
-    // المنطق الوقائي
+    // حماية المنطق
     // ...
-    //احفظ المرفق
+    // حفظ المرفق
     attachment.Save("path/to/save/" + attachment.FileName);
 }
 ```
 
 ## خاتمة
 
-في هذا الدليل، تعلمنا كيفية حماية مرفقات TNEF باستخدام لغة البرمجة C# ومكتبة Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك التعامل بثقة مع مرفقات TNEF والتأكد من أمان المرفقات داخل التطبيق الخاص بك.
+في هذا الدليل، تعلمنا كيفية حماية مرفقات TNEF باستخدام لغة البرمجة C# ومكتبة Aspose.Email لـ .NET. باتباع هذه الخطوات، يمكنك التعامل مع مرفقات TNEF بثقة وضمان أمانها في تطبيقك.
 
 ## الأسئلة الشائعة
 
 ### كيف يمكنني التعرف على مرفق TNEF؟
 
-تتم تسمية مرفقات TNEF غالبًا باسم "winmail.dat" وتحتوي على بيانات مغلفة. يتم مواجهتها بشكل شائع عند تلقي رسائل البريد الإلكتروني من مستخدمي Microsoft Outlook.
+تُسمى مرفقات TNEF عادةً "winmail.dat" وتحتوي على بيانات مُغلَّفة. وتُصادفها عادةً عند استلام رسائل البريد الإلكتروني من مستخدمي Microsoft Outlook.
 
-### هل يمكنني استخدام Aspose.Email للمهام الأخرى المتعلقة بالبريد الإلكتروني؟
+### هل يمكنني استخدام Aspose.Email لمهام أخرى متعلقة بالبريد الإلكتروني؟
 
- نعم، يوفر Aspose.Email مجموعة واسعة من الميزات للتعامل مع رسائل البريد الإلكتروني والمرفقات والتقويمات والمزيد. يمكنك استكشافها[Aspose.Email لمرجع .Net API](https://reference.aspose.com/email/net) للحصول على معلومات مفصلة.
+نعم، يوفر Aspose.Email مجموعة واسعة من الميزات للتعامل مع رسائل البريد الإلكتروني والمرفقات والتقويمات وغيرها. يمكنك استكشافه [مرجع واجهة برمجة التطبيقات Aspose.Email لـ .Net](https://reference.aspose.com/email/net) لمزيد من المعلومات التفصيلية.
 
 ### هل Aspose.Email متوافق مع بروتوكولات البريد الإلكتروني المختلفة؟
 
-نعم، يدعم Aspose.Email بروتوكولات البريد الإلكتروني المختلفة مثل SMTP، وPOP3، وIMAP، وExchange Server. وهذا يجعلها متعددة الاستخدامات للتعامل مع الجوانب المختلفة للاتصالات عبر البريد الإلكتروني.
+نعم، يدعم Aspose.Email بروتوكولات بريد إلكتروني متنوعة، مثل SMTP وPOP3 وIMAP وExchange Server. هذا يجعله متعدد الاستخدامات للتعامل مع مختلف جوانب التواصل عبر البريد الإلكتروني.
 
 ### ما مدى تكرار إصدار التحديثات لـ Aspose.Email؟
 
-يقوم Aspose بشكل متكرر بإصدار التحديثات والتحسينات لمكتباته. من المستحسن التحقق من Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) أو[Aspose.Email لمرجع .Net API](https://reference.aspose.com/email/net) للحصول على آخر التحديثات والميزات.
+يُصدر Aspose تحديثات وتحسينات لمكتباته بشكل متكرر. يُنصح بالتحقق من Aspose.Releases: [إصدارات Aspose](https://releases.aspose.com/email/net/) أو [مرجع واجهة برمجة التطبيقات Aspose.Email لـ .Net](https://reference.aspose.com/email/net) للحصول على آخر التحديثات والميزات.
 
 ### هل يمكنني استخدام Aspose.Email في المشاريع التجارية؟
 
-نعم، يمكنك استخدام Aspose.Email في المشاريع التجارية. ومع ذلك، تأكد من مراجعة شروط ترخيص Aspose لضمان الامتثال.
+نعم، يمكنك استخدام Aspose.Email في المشاريع التجارية. مع ذلك، تأكد من مراجعة شروط ترخيص Aspose لضمان الامتثال.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect to Exchange Server Using Aspose.Email for Java: Step-by-Step Guide
 
@@ -177,7 +179,11 @@ Ready to implement this solution? Start by setting up your environment today!
 - **Free Trial:** [Start Your Free Trial](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Apply Here](https://purchase.aspose.com/temporary-license/)
 - **Support:** [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

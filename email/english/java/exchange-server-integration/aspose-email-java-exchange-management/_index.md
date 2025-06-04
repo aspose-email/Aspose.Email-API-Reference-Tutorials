@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Management on Exchange Servers with Aspose.Email for Java
 
@@ -81,7 +83,11 @@ public class ConnectToExchangeServer {
         // Create an Exchange client instance
         ExchangeClient client = new ExchangeClient(
             "http://ex2003/exchange/administrator\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Automate Email Management with Aspose.Email and Java EWS Client: A Comprehensive Guide
 
@@ -198,7 +200,11 @@ By following this guide, you now have a solid foundation for automating email ma
 
 4. **How can I filter emails based on multiple criteria?**
    - Extend your filtering logic with additional conditions as needed.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

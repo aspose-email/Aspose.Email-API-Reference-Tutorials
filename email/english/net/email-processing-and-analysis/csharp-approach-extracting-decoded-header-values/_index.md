@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/csharp-approach-extracting-decoded-heade
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# Approach - Extracting Decoded Header Values
@@ -87,6 +89,7 @@ In this tutorial, you've learned how to utilize Aspose.Email for .NET to extract
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

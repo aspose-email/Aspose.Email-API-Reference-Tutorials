@@ -8,7 +8,9 @@ url: /java/securing-email-communications/tls-encryption/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # TLS Encryption with Aspose.Email
@@ -85,9 +87,11 @@ Yes, always keep your email libraries and servers up-to-date to ensure the lates
 ---
 
 This step-by-step guide, complete with source code snippets and FAQs, should help you implement TLS encryption with Aspose.Email for Java effortlessly. Protect your email communication with the robust security provided by TLS encryption.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

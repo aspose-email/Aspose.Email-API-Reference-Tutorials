@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficient Task Management in .NET with Aspose.Email and EWS Integration
 
@@ -171,7 +173,11 @@ A5: Visit the [Aspose Forum](https://forum.aspose.com/c/email/10) for community 
 - **Purchase**: Buy a license if needed via [Aspose Purchase Page](https://purchase.aspose.com/buy)
 - **Free Trial**: Test out Aspose.Email with a free trial at [Aspose Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: Apply for a temporary license at [Aspose Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

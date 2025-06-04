@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Configuring IMAP Client with Aspose.Email for Java: A Comprehensive Guide
 
@@ -149,7 +151,11 @@ You've now mastered setting up an IMAP client using Aspose.Email for Java. By fo
 - [Support](https://forum.aspose.com/c/email/10)
 
 This guide provides a comprehensive walkthrough for configuring an IMAP client using Aspose.Email in Java, ensuring you're equipped to handle email integration tasks with confidence and efficiency.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

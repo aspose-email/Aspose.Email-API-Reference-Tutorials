@@ -8,7 +8,9 @@ url: /
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Aspose.Email Tutorials: Master Email Management & Manipulation with .NET & Java APIs
@@ -19,6 +21,7 @@ Welcome to the definitive resource for **Aspose.Email tutorials**, your gateway 
 
 {{% alert color="primary" %}}
 Discover the power of **Aspose.Email for .NET** with our in-depth tutorials. These guides provide step-by-step instructions and practical C# code examples for developing robust email management solutions. Learn to compose, send, receive, convert, parse, and secure emails, integrate with Exchange Server, and handle various email formats like PST, MSG, and EML, ultimately enhancing your .NET applications and streamlining email-centric tasks.
+
 {{% /alert %}}
 
 Explore our Aspose.Email for .NET tutorials:
@@ -48,6 +51,7 @@ Explore our Aspose.Email for .NET tutorials:
 
 {{% alert color="primary" %}}
 Unlock the full potential of **Aspose.Email for Java** with our comprehensive tutorial library. These guides offer practical Java code examples and clear explanations for building powerful email management applications. Explore topics like sending and receiving emails, configuring SMTP servers, handling attachments, securing communications, and integrating with email services, empowering your Java development projects with robust email functionality.
+
 {{% /alert %}}
 
 Explore our Aspose.Email for Java tutorials:
@@ -77,6 +81,7 @@ Explore our Aspose.Email for Java tutorials:
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

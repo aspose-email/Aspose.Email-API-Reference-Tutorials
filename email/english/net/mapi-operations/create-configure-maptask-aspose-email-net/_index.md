@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Creating and Configuring a MapiTask Using Aspose.Email .NET
 
@@ -162,7 +164,11 @@ Creating and configuring MapiTasks with Aspose.Email for .NET is straightforward
 - **Support:** Seek help on the [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 We hope this tutorial helps you master Aspose.Email for .NET in your projects. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

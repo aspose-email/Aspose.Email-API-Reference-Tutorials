@@ -8,7 +8,9 @@ url: /java/receiving-emails/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Receiving Emails with Aspose.Email for Java
@@ -35,9 +37,11 @@ Start mastering the art of receiving emails in Java with Aspose.Email for Java T
 Learn how to work with the IMAP protocol in Aspose.Email for Java to efficiently manage your email communication.
 ### [Handling Email Attachments in Aspose.Email](./handling-email-attachments/)
 Learn to handle email attachments in Aspose.Email for Java. Step-by-step guide with source code and FAQs for efficient email attachment management.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

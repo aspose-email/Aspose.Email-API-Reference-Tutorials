@@ -13,7 +13,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Creating a Custom TestUser Class in .NET Using Aspose.Email for MAPI Operations
 
@@ -215,7 +217,11 @@ By following this tutorial, you've learned how to design a custom `TestUser` cla
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 By implementing these steps, you can effectively create and manage custom user classes in .NET while leveraging the powerful features of Aspose.Email for enhanced email operations.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

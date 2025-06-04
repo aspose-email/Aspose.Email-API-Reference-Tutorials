@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Validate Email Addresses Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -167,6 +169,9 @@ Ready to put this into practice? Start by trying out a simple implementation tod
 This guide provides you with the tools to effectively implement and leverage email validation in your .NET applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

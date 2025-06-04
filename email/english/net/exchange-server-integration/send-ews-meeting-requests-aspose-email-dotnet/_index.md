@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Send EWS Meeting Requests Using Aspose.Email .NET: A Developer's Guide
 
@@ -77,7 +79,11 @@ Creating and sending meeting requests via EWS involves creating an appointment, 
 Start by setting up your appointment:
 ```csharp
 // Initialize the EWS client\IEWSClient client = EWSClient.GetEWSClient("https://outlook.office365.com/ews/exchange.asmx\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

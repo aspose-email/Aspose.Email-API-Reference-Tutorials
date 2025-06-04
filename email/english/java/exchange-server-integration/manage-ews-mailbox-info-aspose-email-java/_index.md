@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage EWS Mailbox Information with Aspose.Email for Java
 
@@ -156,6 +158,9 @@ To further explore the capabilities of Aspose.Email, consider diving into additi
 By following this guide, you'll be well-equipped to harness the power of Aspose.Email for Java in managing and automating your email workflows efficiently. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/enriching-email-metadata-through-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Enriching Email Metadata through Headers with Aspose.Email
@@ -117,6 +119,7 @@ You can explore the documentation at [here](https://reference.aspose.com/email/j
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

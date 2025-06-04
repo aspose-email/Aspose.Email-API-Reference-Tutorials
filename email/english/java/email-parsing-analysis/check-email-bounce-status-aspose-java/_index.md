@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Check Email Bounce Status Using Aspose.Email for Java
 
@@ -196,6 +198,9 @@ Ready to implement this solution? Start by trying out the code snippets provided
 By following this guide, you're well on your way to mastering email bounce handling with Aspose.Email for Java. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

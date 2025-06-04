@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create & Send Calendar Invitations with Aspose.Email for Java: A Step-by-Step Guide
 ## Introduction
@@ -139,7 +141,11 @@ Ready to take your skills to the next level? Implement this solution today!
    - Yes, but ensure you verify URL endpoints and permission levels as per your organization's configuration.
 4. **What if my calendar sharing invitation fails to send?**
    - Check network connectivity, email credentials, and permissions. Ensure your delegate user has valid access rights.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

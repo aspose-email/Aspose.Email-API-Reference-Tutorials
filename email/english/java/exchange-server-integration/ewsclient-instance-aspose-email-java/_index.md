@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create an EWSClient Instance Using Aspose.Email for Java
 ## Introduction
@@ -108,7 +110,11 @@ Explore additional functionalities within the Aspose.Email library, such as mana
 - [Free Trial Offer](https://releases.aspose.com/email/java/)
 - [Temporary License Request](https://purchase.aspose.com/temporary-license/)
 - [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

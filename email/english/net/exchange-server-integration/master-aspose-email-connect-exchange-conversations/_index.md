@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email .NET: Connecting and Managing Exchange Server Conversations
 
@@ -163,7 +165,11 @@ In this tutorial, you learned how to use Aspose.Email for .NET to connect to an 
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 With this tutorial, you're now equipped to enhance your email management process using Aspose.Email for .NET. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

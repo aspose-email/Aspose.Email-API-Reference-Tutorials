@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement SMTP & Appointment Automation in Java Using Aspose.Email
 
@@ -237,7 +239,11 @@ Here are a few real-world use cases where you can apply these features:
 3. **HR Software Solutions**: Enhance HR tools with automated appointment setting for interviews or performance reviews.
 
 By leveraging Aspose.Email for Java, you can streamline email communication and appointment management in your applications, leading to more efficient workflows and enhanced productivity.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

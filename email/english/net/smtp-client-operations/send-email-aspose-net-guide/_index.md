@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails Programmatically Using Aspose.Email in .NET: A Complete Guide
 
@@ -101,7 +103,11 @@ private static SmtpClient GetSmtpClient()
 {
     // Initialize with Gmail's SMTP server details
     SmtpClient client = new SmtpClient("smtp.gmail.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

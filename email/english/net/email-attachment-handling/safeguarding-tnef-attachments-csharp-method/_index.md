@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/safeguarding-tnef-attachments-csharp-method/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Safeguarding TNEF Attachments - C# Method
@@ -105,6 +107,7 @@ Yes, you can use Aspose.Email in commercial projects. However, be sure to review
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Integrating .NET Exchange Client with Aspose.Email: A Comprehensive Guide for Developers
 
@@ -202,6 +204,9 @@ A5: Check folder permissions and ensure the specified URI is correct.
 This comprehensive guide should equip you with the knowledge to integrate and manage emails using Aspose.Email for .NET effectively. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Convert MAPI Messages to Calendar Events Using Aspose.Email for .NET
 
@@ -168,7 +170,11 @@ A: The [Aspose forums](https://forum.aspose.com/c/email/10) are a great place to
 - **Free Trial**: Download a trial version from [Aspose Free Trials](https://releases.aspose.com/email/net/).
 - **Temporary License**: Request one via [Temporary License Page](https://purchase.aspose.com/temporary-license/).
 - **Support Forum**: Engage with the community on [Aspose Forums](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Optimize MSG Attachments by Removing Properties with Aspose.Email for .NET
 
@@ -181,6 +183,9 @@ A5: Benefits include robust support for email processing features, high performa
 Take the next step in mastering email processing with Aspose.Email for .NET and streamline your attachments today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

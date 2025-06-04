@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Outlook PST Messages Using Aspose.Email for Java: A Complete Guide
 
@@ -183,7 +185,11 @@ A: Options include a free trial license, temporary licenses for evaluation, or p
 - **Documentation**: [Reference Guide](https://reference.aspose.com/email/java/)
 - **Download**: [Latest Releases](https://releases.aspose.com/email/java/)
 - **Purchase**: [Buy Now](https://purchase.aspose.com/buy)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

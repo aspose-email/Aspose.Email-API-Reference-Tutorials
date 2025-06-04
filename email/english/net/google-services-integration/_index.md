@@ -4,8 +4,11 @@ description: "Step-by-step tutorials for connecting Aspose.Email with Gmail, Goo
 weight: 13
 url: "/net/google-services-integration/"
 ---
+
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Google Email Service Integration Tutorials for Aspose.Email Java
 
@@ -69,7 +72,11 @@ Learn how to manage Gmail contacts efficiently using Aspose.Email for .NET. This
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/extracting-embedded-objects-from-email-with-
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting Embedded Objects from Email with C#
@@ -123,6 +125,7 @@ You can find more code examples and tutorials in the [API Reference](https://ref
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up a .NET SMTP Client with Aspose.Email: A Comprehensive Guide
 
@@ -170,7 +172,11 @@ A: Use the `MailMessage.Attachments` collection to add files before sending.
 - **Support**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Now that you're equipped with the knowledge and tools, start implementing Aspose.Email in your .NET projects for seamless email integration.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

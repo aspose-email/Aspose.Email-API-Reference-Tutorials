@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Retrieve IMAP Capabilities Using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -142,7 +144,11 @@ Ready to get started? Try implementing these steps in your next project!
 - [Free Trial and Temporary License](https://releases.aspose.com/email/net/)
 
 For further assistance, reach out to the Aspose support forum at [Aspose Forum](https://forum.aspose.com/c/email/10). Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

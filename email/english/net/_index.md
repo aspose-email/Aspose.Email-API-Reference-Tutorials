@@ -7,7 +7,9 @@ description: Master email composition, conversion, and processing with comprehen
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Aspose.Email for .NET Tutorials: Master Email Composition, Conversion & Processing
@@ -109,6 +111,7 @@ Here are some of our most popular tutorials to get you started and beyond:
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

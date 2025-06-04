@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Configure an IMAP Client with HTTP Proxy Using Aspose.Email for .NET: A Complete Guide
 
@@ -156,7 +158,11 @@ Ready to apply this knowledge? Implement these solutions in your projects and ex
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 Dive into your email projects with confidence, leveraging Aspose.Email for .NET to streamline workflows and enhance security. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

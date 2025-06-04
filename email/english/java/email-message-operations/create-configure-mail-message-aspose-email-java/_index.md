@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Creating and Configuring Email Messages Using Aspose.Email in Java
 
@@ -172,7 +174,11 @@ A: Visit the [Aspose forum](https://forum.aspose.com/c/email/10) to seek help fr
 - **Free Trial:** Start with a free trial to test features.
 - **Temporary License:** Obtain a temporary license for full access.
 - **Support:** Get assistance from the Aspose community forum.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

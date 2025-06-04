@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Complete Guide to Managing an IMAP Server with Aspose.Email for .NET
 
@@ -73,7 +75,11 @@ using Aspose.Email.Clients.Imap;
 
 // Create an ImapClient with your server details.
 ImapClient client = new ImapClient("your.imapserver.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

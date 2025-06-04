@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Apply an Aspose.Email License in Java
 
@@ -176,6 +178,9 @@ A5: Visit the [Aspose documentation](https://reference.aspose.com/email/java/) f
 - **Support**: Get help from Aspose support forums or documentation if you encounter issues.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

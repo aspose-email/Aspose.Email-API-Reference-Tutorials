@@ -1,47 +1,49 @@
 ---
-title: إعداد نص بديل للصور - دليل C#
-linktitle: إعداد نص بديل للصور - دليل C#
-second_title: Aspose.Email .NET واجهة برمجة تطبيقات معالجة البريد الإلكتروني
-description: تعرف على كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. تأكد من إمكانية الوصول بنص بديل واضح. الوثائق والكود المدرجة.
-weight: 15
-url: /ar/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/
+"description": "تعلم كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. تأكد من سهولة الوصول باستخدام نص بديل واضح. الوثائق والأكواد البرمجية مرفقة."
+"linktitle": "إعداد نص بديل للصور - دليل C#"
+"second_title": "واجهة برمجة تطبيقات معالجة البريد الإلكتروني Aspose.Email .NET"
+"title": "إعداد نص بديل للصور - دليل C#"
+"url": "/ar/net/email-composition-and-creation/setting-alternative-text-for-images-csharp-guide/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # إعداد نص بديل للصور - دليل C#
 
 
-سيرشدك هذا الدليل خلال عملية إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET. يتم استخدام النص البديل، المعروف أيضًا باسم "النص البديل"، لتوفير وصف نصي للصورة في حالة تعذر عرض الصورة. Aspose.Email for .NET هي مكتبة قوية تسمح لك بالعمل مع رسائل البريد الإلكتروني والمرفقات بتنسيقات مختلفة. سنركز في هذا الدليل على إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام لغة C#.
+سيشرح لك هذا الدليل عملية إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. يُستخدم النص البديل، المعروف أيضًا باسم "النص البديل"، لتوفير وصف نصي للصورة في حال تعذر عرضها. Aspose.Email لـ .NET هي مكتبة فعّالة تتيح لك التعامل مع رسائل البريد الإلكتروني والمرفقات بتنسيقات مختلفة. في هذا الدليل، سنركز على إعداد نص بديل للصور في رسائل البريد الإلكتروني باستخدام C#.
 
 ## المتطلبات الأساسية
 
-قبل البدء، تأكد من توفر المتطلبات الأساسية التالية:
+قبل أن تبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
 
-1. تم تثبيت Visual Studio أو أي بيئة تطوير متوافقة مع C#.
-2. Aspose.Email لمكتبة .NET. يمكنك استخدام NuGet Package Manager في Visual Studio.
+1. تم تثبيت Visual Studio أو أي بيئة تطوير C# متوافقة.
+2. مكتبة Aspose.Email لـ .NET. يمكنك استخدام NuGet Package Manager في Visual Studio.
 
 ## الخطوة 1: إنشاء مشروع جديد
 
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع تطبيق وحدة تحكم C# جديد.
+1. قم بتشغيل Visual Studio وإنشاء مشروع تطبيق وحدة تحكم C# جديد.
 
 ## الخطوة 2: تثبيت Aspose.Email عبر NuGet
 
-1. انقر بزر الماوس الأيمن على مشروعك في Solution Explorer وحدد "إدارة حزم NuGet".
-2. ابحث عن "Aspose.Email" وقم بتثبيت أحدث إصدار من الحزمة.
+1. انقر بزر الماوس الأيمن على مشروعك في مستكشف الحلول وحدد "إدارة حزم NuGet".
+2. ابحث عن "Aspose.Email" وقم بتثبيت الإصدار الأحدث من الحزمة.
 
-## الخطوة 3: إضافة استخدام البيانات
+## الخطوة 3: إضافة عبارات الاستخدام
 
 ```csharp
 
 using Aspose.Email.Mime;
 ```
 
-## الخطوة 4: تحميل وتعديل رسالة البريد الإلكتروني
+## الخطوة 4: تحميل رسالة البريد الإلكتروني وتعديلها
 
-1.  قم بتحميل رسالة البريد الإلكتروني باستخدام`MailMessage` فصل:
+1. قم بتحميل رسالة البريد الإلكتروني باستخدام `MailMessage` فصل:
 
 ```csharp
 MailMessage message = new MailMessage();
@@ -50,7 +52,7 @@ message.From = new MailAddress("sender@example.com");
 message.To.Add("recipient@example.com");
 ```
 
-3. قم بتحميل محتوى HTML لرسالة البريد الإلكتروني:
+3. تحميل محتوى HTML لرسالة البريد الإلكتروني:
 
 ```csharp
 var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src='cid:logo.jpg' alt='Company Logo'></body></html>", null, "text/html");
@@ -63,9 +65,9 @@ var htmlView = AlternateView.CreateAlternateViewFromString("<html><body><img src
 message.AlternateViews.Add(htmlView);
 ```
 
-## الخطوة 6: حفظ وإرسال البريد الإلكتروني
+## الخطوة 6: حفظ البريد الإلكتروني وإرساله
 
-1. احفظ الرسالة المعدلة في ملف أو أرسلها باستخدام الطريقة التي تريدها:
+1. احفظ الرسالة المعدلة في ملف أو أرسلها باستخدام الطريقة المطلوبة:
 
 ```csharp
 message.Save("output.eml", SaveOptions.DefaultEml);
@@ -73,7 +75,7 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 ## خاتمة
 
-تعلمت في هذا الدليل كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email for .NET. باتباع الخطوات الموضحة أعلاه، يمكنك التأكد من أن محتوى بريدك الإلكتروني يظل سهل الوصول إليه وغني بالمعلومات حتى عندما لا يمكن عرض الصور.
+في هذا الدليل، تعلمت كيفية تعيين نص بديل للصور في رسائل البريد الإلكتروني باستخدام Aspose.Email لـ .NET. باتباع الخطوات الموضحة أعلاه، يمكنك ضمان بقاء محتوى بريدك الإلكتروني سهل الوصول وغني بالمعلومات حتى في حال تعذر عرض الصور.
 
 ## التعليمات
 
@@ -81,15 +83,17 @@ message.Save("output.eml", SaveOptions.DefaultEml);
 
 يمكنك تنزيل مكتبة Aspose.Email من إصدارات Aspose أو تثبيتها عبر NuGet Package Manager في Visual Studio.
 
-### كيف أقوم بإضافة الصور كموارد مرتبطة في رسالة بريد إلكتروني؟
+### كيف أضيف الصور كموارد مرتبطة في البريد الإلكتروني؟
 
-لإضافة صور كموارد مرتبطة في رسالة بريد إلكتروني، يمكنك استخدام`LinkedResource` فصل. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام`cid:` مخطط. للحصول على معلومات مفصلة، راجع[وثائق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
+لإضافة الصور كموارد مرتبطة في البريد الإلكتروني، يمكنك استخدام `LinkedResource` الفئة. قم بتعيين معرف محتوى للمورد المرتبط، ثم قم بالإشارة إلى معرف المحتوى هذا في نص HTML باستخدام `cid:` مخطط. للحصول على معلومات مفصلة، راجع [توثيق LinkedResource](https://reference.aspose.com/email/net/aspose.email/linkedresource/).
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Email لـ .NET؟
 
- يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في[مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).
+يمكنك العثور على المزيد من الوثائق التفصيلية والبرامج التعليمية والأمثلة حول العمل مع Aspose.Email لـ .NET في [مرجع واجهة برمجة التطبيقات](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

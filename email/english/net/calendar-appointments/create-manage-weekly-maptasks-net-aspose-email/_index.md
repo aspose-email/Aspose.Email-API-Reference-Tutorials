@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create Weekly Recurring MapiTasks in .NET Using Aspose.Email
 
@@ -195,6 +197,9 @@ A: A MapiTask represents an Outlook task with properties like subject, due date,
 A: Yes, you can use different recurrence types like daily or monthly by adjusting the `PatternType` property of `MapiCalendarRecurrencePattern`.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

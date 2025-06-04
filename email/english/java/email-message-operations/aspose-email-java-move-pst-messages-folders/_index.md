@@ -13,7 +13,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Management with Aspose.Email Java: Moving PST Folders and Messages
 
@@ -166,7 +168,11 @@ A5: Visit the [Aspose documentation](https://reference.aspose.com/email/java/) f
 - **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
 - **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

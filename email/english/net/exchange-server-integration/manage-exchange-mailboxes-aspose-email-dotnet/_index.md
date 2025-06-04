@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Manage Exchange Mailboxes Using Aspose.Email for .NET
 
@@ -200,6 +202,9 @@ A5: The free trial allows limited functionality. To unlock all features, conside
 - **Free Trial**: [Try Aspose.Email](https://downloads.aspose.com/email-net)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/extracting-embedded-objects-csharp-tutorial/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting Embedded Objects - C# Tutorial
@@ -115,6 +117,7 @@ You can find detailed documentation and code examples for Aspose.Email on [Aspos
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

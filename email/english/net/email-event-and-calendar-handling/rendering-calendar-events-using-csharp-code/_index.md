@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/rendering-calendar-events-using-csha
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Rendering Calendar Events using C# Code
@@ -100,6 +102,7 @@ Feel free to explore the [Aspose.Email API documentation](https://reference.aspo
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

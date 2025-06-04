@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Automation: Access and Manipulate Outlook MAPI Properties using Aspose.Email Java
 
@@ -209,6 +211,9 @@ By following this tutorial, you've learned how to effectively access and manipul
    - Use APIs to connect with CRM or other platforms, leveraging Java's integration capabilities.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

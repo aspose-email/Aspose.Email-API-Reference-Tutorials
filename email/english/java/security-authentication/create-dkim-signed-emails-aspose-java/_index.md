@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create DKIM-Signed Emails Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -87,7 +89,11 @@ Creating a DKIM signature involves specifying the domain and selector, along wit
 #### Create a New DKIMSignatureInfo Object
 ```java
 DKIMSignatureInfo signInfo = new DKIMSignatureInfo("test\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Implement and Manage Recurring MAPI Tasks in .NET with Aspose.Email
 
@@ -221,7 +223,11 @@ You've now mastered creating MAPI tasks with various recurrence patterns using A
 ### Next Steps
 - Experiment with different recurrence configurations.
 - Explore Aspose.Email's extensive documentation for more advanced features.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/exploring-bayesian-spam-analysis-in-csha
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Exploring Bayesian Spam Analysis in C#
@@ -158,9 +160,11 @@ Aspose.Email's Bayesian spam analysis considers both email content and attachmen
 ### Where can I find comprehensive documentation for Aspose.Email for .NET?
 
 For comprehensive documentation, examples, and resources, visit the [Aspose.Email for .NET API Reference](https://reference.aspose.com/email/net) page.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

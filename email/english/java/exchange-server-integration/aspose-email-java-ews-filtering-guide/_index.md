@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Filtering with Aspose.Email Java & EWS: A Complete Guide
 
@@ -234,7 +236,11 @@ By following this guide, you've learned how to implement effective email filteri
 - Experiment with additional query conditions for even more precise filtering.
 - Explore Aspose.Email's other features to fully leverage its capabilities in email management.
 - Share your feedback or questions in community forums to engage with fellow developers.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

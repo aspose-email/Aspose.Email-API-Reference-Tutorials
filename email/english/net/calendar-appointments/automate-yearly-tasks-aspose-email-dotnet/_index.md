@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Automate Yearly Recurring Tasks Using Aspose.Email for .NET
 
@@ -174,6 +176,9 @@ Explore further functionalities of Aspose.Email or try integrating with other sy
 This comprehensive guide should help you set up a yearly recurring task with Aspose.Email for .NET efficiently. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /java/sending-emails/creating-html-formatted-emails/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Creating HTML-Formatted Emails with Aspose.Email
@@ -132,6 +134,7 @@ You can find comprehensive documentation, tutorials, and examples on the Aspose.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

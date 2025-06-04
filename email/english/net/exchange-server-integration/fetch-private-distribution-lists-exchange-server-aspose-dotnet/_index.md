@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Fetch Private Distribution Lists from Exchange Server Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -71,7 +73,11 @@ First, create an instance of `IEWSClient` by providing your server URL and authe
 
 ```csharp
 IEWSClient client = EWSClient.GetEwsClient("https://outlook.office365.com/ews/exchange.asmx\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

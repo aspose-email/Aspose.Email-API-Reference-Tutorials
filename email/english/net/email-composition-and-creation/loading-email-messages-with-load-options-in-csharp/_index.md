@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/loading-email-messages-with-load-option
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Loading Email Messages with Load Options in C#
@@ -167,6 +169,7 @@ If you encounter errors during email loading, make sure to wrap your loading cod
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

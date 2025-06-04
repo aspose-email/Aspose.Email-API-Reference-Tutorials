@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract and Save Email Attachments Using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -205,6 +207,9 @@ A5: Visit [Aspose's licensing page](https://purchase.aspose.com/buy) for detaile
 By following this guide, you can harness the power of Aspose.Email for .NET to manage email attachments effectively. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering EWS Queries with AND/OR Logic Using Aspose.Email for .NET
 
@@ -180,7 +182,11 @@ You've now mastered connecting to EWS and building complex queries using Aspose.
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 By following this guide, you'll be well-equipped to leverage the power of Aspose.Email for .NET in your projects. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

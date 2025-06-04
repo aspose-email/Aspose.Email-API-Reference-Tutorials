@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Email Management with Aspose.Email for Java
 
@@ -240,7 +242,11 @@ Explore further:
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 By following this guide, you can efficiently integrate Aspose.Email for Java into your projects, enhancing email management capabilities.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Boost Email Retrieval Speed: Aspose.Email .NET's POP3 Multi-Connection Mode
 
@@ -157,7 +159,11 @@ Next steps include diving deeper into advanced features of Aspose.Email or tailo
    
 2. **How do I install Aspose.Email for .NET?**
    - Use the provided installation commands via .NET CLI or Package Manager to add Aspose.Email to your project.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

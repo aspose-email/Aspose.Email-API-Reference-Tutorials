@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Exchange Server Connections and Folder Management with Aspose.Email .NET
 
@@ -214,7 +216,11 @@ Ready to take the next step? Try implementing this solution in your environment,
 - **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/net/)
 - **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial**: [Aspose.Email Free Trial](https://www.aspose.com/purchase/pricing.aspx?id=119)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

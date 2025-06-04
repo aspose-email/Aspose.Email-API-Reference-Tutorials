@@ -8,7 +8,9 @@ url: /java/receiving-emails/working-with-imap-protocol/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Working with IMAP Protocol in Aspose.Email
@@ -188,9 +190,11 @@ You've learned how to work with the IMAP protocol in Aspose.Email for Java. This
    Visit the Aspose.Email for Java API documentation at [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) for comprehensive guides, API references, and code samples.
 
 Now that you have a solid understanding of working with the IMAP protocol in Aspose.Email for Java, you can build robust email management solutions tailored to your specific needs. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

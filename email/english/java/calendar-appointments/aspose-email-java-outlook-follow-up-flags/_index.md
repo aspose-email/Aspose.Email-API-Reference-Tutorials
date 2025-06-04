@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Outlook Follow-Up Flags with Aspose.Email for Java: A Developer's Guide
 
@@ -214,6 +216,9 @@ In this guide, you've learned how to implement and manage follow-up flags in Out
 - "Integrate email task management with Aspose.Email"
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

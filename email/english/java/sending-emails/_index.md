@@ -8,7 +8,9 @@ url: /java/sending-emails/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Sending Emails with Aspose.Email for Java
@@ -44,9 +46,11 @@ Learn how to send bulk emails efficiently using Aspose.Email for Java. A step-by
 Learn how to enhance your email messages by adding custom headers using Aspose.Email for Java. Improve email metadata and organization.
 ### [Sending Email Notifications with Aspose.Email](./sending-email-notifications/)
 Learn to send email notifications effectively with Aspose.Email for Java. A comprehensive guide with code examples and FAQs for seamless communication.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

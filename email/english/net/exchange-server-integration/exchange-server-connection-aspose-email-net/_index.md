@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect an Exchange Server Using Aspose.Email for .NET
 
@@ -189,6 +191,9 @@ Try implementing this connection in your project today, and see how it can trans
 This tutorial is designed to get you started efficiently, but always refer to the official documentation for more detailed guidance and updates. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

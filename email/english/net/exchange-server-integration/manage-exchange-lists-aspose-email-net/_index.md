@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Manage Exchange Distribution Lists with Aspose.Email for .NET
 
@@ -192,6 +194,9 @@ Ready to dive deeper? Try implementing this solution in a test environment today
 - **Temporary License**: Apply for a temporary license at [Aspose Temporary License](https://purchase.aspose.com/temporary-license/) 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Task Management in Exchange Servers with Aspose.Email for Java
 
@@ -202,7 +204,11 @@ To further enhance your skills, explore additional functionalities offered by As
 
 2. **How do I set up Aspose.Email in my project?**  
    Add the Maven dependency to your `pom.xml` and configure your environment as described above.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

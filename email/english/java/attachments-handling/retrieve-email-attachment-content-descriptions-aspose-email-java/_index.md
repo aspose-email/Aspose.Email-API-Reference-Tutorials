@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve Email Attachment Content Descriptions Using Aspose.Email for Java
 
@@ -116,7 +118,11 @@ To continue exploring what Aspose.Email for Java has to offer, consider diving i
 - **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 Explore these resources to deepen your understanding and harness the full potential of Aspose.Email for Java in your projects. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

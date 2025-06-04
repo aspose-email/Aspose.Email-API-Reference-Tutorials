@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Remove Linked Resources from Email Message Body Using Aspose.Email .NET
 
@@ -149,7 +151,11 @@ For further exploration, consider integrating these practices into larger applic
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 We hope this tutorial was helpful. Feel free to dive into the resources and documentation for more detailed guidance on using Aspose.Email with .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

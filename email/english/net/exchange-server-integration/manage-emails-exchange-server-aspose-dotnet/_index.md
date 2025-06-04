@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Manage Emails on Exchange Server Using Aspose.Email for .NET
 
@@ -195,7 +197,11 @@ As next steps, consider exploring additional features like filtering emails base
    - Besides EML, Aspose.Email supports various formats like MSG, MHTML, etc.
 4. **Is there support for different versions of Exchange Server?**
    - Yes, Aspose.Email is compatible with multiple versions of Microsoft Exchange Server.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Delete and Undo Deletion of POP3 Emails Using Aspose.Email for .NET
 
@@ -88,7 +90,11 @@ Connecting to a POP3 server is the first step in managing your emails programmat
 using Aspose.Email.Clients.Pop3;
 
 Pop3Client client = new Pop3Client("mail.aspose.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

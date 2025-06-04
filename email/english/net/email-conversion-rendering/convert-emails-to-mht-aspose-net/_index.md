@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Convert Emails to MHT Files Using Aspose.Email .NET: A Comprehensive Guide
 
@@ -210,6 +212,9 @@ A: Adjust `MhtFormatOptions` to exclude headers as needed.
 Experiment with these features and see how they can streamline your email handling processes. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

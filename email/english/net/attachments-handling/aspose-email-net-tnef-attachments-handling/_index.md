@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Handling TNEF Attachments in .NET: A Comprehensive Guide Using Aspose.Email
 
@@ -193,6 +195,9 @@ A5: The current implementation focuses on image updates. You can extend it to ha
 - **Purchase License**: [Aspose Purchase](https://purchase.aspose.com/buy)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

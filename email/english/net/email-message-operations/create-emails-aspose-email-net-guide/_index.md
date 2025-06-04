@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create an Email using Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -177,7 +179,11 @@ For further assistance and in-depth information, visit these resources:
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Start building your email management solutions today with Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

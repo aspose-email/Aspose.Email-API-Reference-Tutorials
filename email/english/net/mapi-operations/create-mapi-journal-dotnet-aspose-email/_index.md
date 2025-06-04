@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create a MAPI Journal in .NET Using Aspose.Email: A Step-by-Step Guide
 
@@ -175,6 +177,9 @@ In this tutorial, you've learned how to create and add MAPI journals to a PST fi
 By following this guide, you’re now equipped to manage MAPI journals within .NET applications effectively. Dive into the resources provided for further learning and exploration!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

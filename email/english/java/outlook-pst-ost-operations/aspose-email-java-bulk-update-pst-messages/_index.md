@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Bulk Update PST Messages with Aspose.Email for Java: A Comprehensive Guide
 
@@ -122,7 +124,11 @@ newProperties.add(MapiPropertyTag.PR_ORG_EMAIL_ADDR_W,
 
 long itemIdTag = generateNamedPropertyTag((long) 0, (int) MapiPropertyType.PT_LONG);
 MapiProperty namedProperty1 = new MapiNamedProperty(itemIdTag, "ITEM_ID\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

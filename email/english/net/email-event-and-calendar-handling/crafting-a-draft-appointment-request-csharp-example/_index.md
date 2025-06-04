@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/crafting-a-draft-appointment-request
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Crafting a Draft Appointment Request - C# Example
@@ -120,9 +122,11 @@ You can implement error handling and exception catching mechanisms to ensure the
 ### Where can I find more information about Aspose.Email for .NET?
 
 For more detailed documentation and resources, you can visit the [Aspose.Email for .NET Reference](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

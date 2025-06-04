@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Implementing Aspose.Email with EWSClient & Impersonation in .NET for Exchange Server Integration
 
@@ -202,6 +204,9 @@ Next steps include exploring advanced features of the Aspose.Email library and i
 With this guide, you're well-equipped to start leveraging Aspose.Email for .NET in your projects. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

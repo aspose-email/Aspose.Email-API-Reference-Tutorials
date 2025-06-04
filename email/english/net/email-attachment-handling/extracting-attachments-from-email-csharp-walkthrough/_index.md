@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/extracting-attachments-from-email-csharp-wal
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting Attachments from Email - C# Walkthrough
@@ -124,6 +126,7 @@ For detailed documentation and examples, refer to the [Aspose.Email documentatio
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

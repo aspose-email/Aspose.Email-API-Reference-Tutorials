@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email for Java: Connecting and Customizing EWS Requests
 
@@ -156,6 +158,9 @@ By mastering the connection and customization of EWS requests using Aspose.Email
 Embark on your journey with Aspose.Email for Java today and revolutionize how you handle email operations!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

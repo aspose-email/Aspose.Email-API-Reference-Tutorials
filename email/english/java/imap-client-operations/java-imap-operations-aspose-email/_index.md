@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master IMAP Operations in Java Using Aspose.Email
 
@@ -208,7 +210,11 @@ Try implementing these solutions today to enhance your application's email manag
 ## FAQ Section
 1. **What is Aspose.Email?**
    - A library that provides comprehensive email manipulation and management features, including IMAP operations.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

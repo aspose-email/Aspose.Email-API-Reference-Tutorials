@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Configure an IMAP Client with Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -171,7 +173,11 @@ In this guide, you've learned how to configure an IMAP client using Aspose.Email
 - **Free Trial**: [Try Aspose.Email](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Apply Here](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

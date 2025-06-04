@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Initialize an ExchangeClient with Aspose.Email for .NET: A Complete Guide
 
@@ -181,7 +183,11 @@ Ready to take your application's email capabilities to the next level? Start imp
 - **Purchase**: Consider purchasing a license for full feature access via [Purchase](https://purchase.aspose.com/buy).
 - **Free Trial & Temporary License**: Test features with [Free Trial](https://releases.aspose.com/email/net/) or obtain a temporary license.
 - **Support**: Need help? Visit the [Aspose Forum](https://forum)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

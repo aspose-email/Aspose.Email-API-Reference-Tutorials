@@ -8,7 +8,9 @@ url: /java/sending-emails/sending-plain-text-emails/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Sending Plain Text Emails with Aspose.Email
@@ -115,9 +117,11 @@ public class PlainTextEmail {
 
 ### 6. Are there any limitations when sending plain text emails with Aspose.Email for Java?
    - The limitations may depend on your email service provider and SMTP server. Ensure you are compliant with any sending limits and email sending policies.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

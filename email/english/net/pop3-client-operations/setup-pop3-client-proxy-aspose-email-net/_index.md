@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up a POP3 Client with Proxy Using Aspose.Email for .NET
 
@@ -162,6 +164,9 @@ A5: Use a local email server setup like hMailServer or MailHog to simulate POP3 
 Embark on your journey with Aspose.Email today, and unlock the full potential of email communication within .NET applications!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

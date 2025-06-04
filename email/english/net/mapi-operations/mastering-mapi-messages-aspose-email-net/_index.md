@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master MAPI Messages with Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -213,6 +215,9 @@ Next steps include experimenting with different functionalities of Aspose.Email 
 - **Download:** [Aspose.Email Releases](https://releases.aspose.com/email/net/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

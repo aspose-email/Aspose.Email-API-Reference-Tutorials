@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Access Exchange Mailboxes in Java Using Aspose.Email
 ## Introduction
@@ -190,7 +192,11 @@ By following this guide, you have learned how to leverage Aspose.Email for Java 
 **Next Steps:**
 - Explore additional features of Aspose.Email by visiting the [documentation](https://reference.aspose.com/email/java/).
 - Experiment with integrating Aspose.Email into your own Java projects to enhance email management capabilities.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

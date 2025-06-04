@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering MAPI Contacts with Aspose.Email for Java
 
@@ -226,7 +228,11 @@ Take action now by trying out the examples provided and see how they can be adap
 
 ## Resources
 - **Documentation**: Explore comprehensive guides at Aspose's official documentation site.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

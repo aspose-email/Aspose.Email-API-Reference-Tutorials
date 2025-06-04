@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Retrieve Email Headers Using Aspose.Email and POP3 in .NET: A Comprehensive Guide
 
@@ -77,7 +79,11 @@ using Aspose.Email.Clients.Pop3;
 
 // Initialize Pop3Client instance
 Pop3Client client = new Pop3Client("pop.gmail.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

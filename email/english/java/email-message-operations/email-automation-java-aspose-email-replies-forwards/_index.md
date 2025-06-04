@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Java Email Automation: Create and Manage MSG Replies and Forwards with Aspose.Email
 
@@ -191,6 +193,9 @@ Try implementing these solutions in your projects today and experience enhanced 
 - [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Delete PST Files Using Aspose.Email for .NET: A Complete Guide
 
@@ -196,7 +198,11 @@ A: Yes, Aspose.Email supports various formats and can work alongside popular ema
 - **Free Trial**: Try out Aspose.Email for free with a trial from [here](https://releases.aspose.com/email/net/).
 - **Temporary License**: Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).
 - **Support Forum**: For questions or issues, visit the [Aspose Email Support Forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

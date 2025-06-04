@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Backup Exchange Server Folders Using Aspose.Email for Java
 
@@ -204,7 +206,11 @@ Ready to implement these solutions in your projects? Dive into our resources bel
 - **Purchase a License:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial:** [Start Free Trial](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Get Temporary License](https://purchase.aspose.com/temporary-license)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

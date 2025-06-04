@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Access Gmail Calendar Colors with Aspose.Email for .NET: A Comprehensive Guide
 
@@ -178,7 +180,11 @@ For further exploration and support:
 - **Support Forum:** [Aspose Community Support](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to integrate Gmail's calendar colors into your applications today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

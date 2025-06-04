@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect to Microsoft Exchange Server Using Aspose.Email for Java and EWS
 
@@ -160,7 +162,11 @@ Obtain a license file from [Aspose's purchase page](https://purchase.aspose.com/
 - **Documentation**: Explore detailed guides at [Aspose Email Documentation](https://reference.aspose.com/email/java/).
 - **Download**: Get the latest Aspose.Email library from [here](https://releases.aspose.com/email/java/).
 - **Purchase and Trial**: Consider a free trial or purchase licenses through [Aspose's website](https://purchase.aspose.com/buy).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

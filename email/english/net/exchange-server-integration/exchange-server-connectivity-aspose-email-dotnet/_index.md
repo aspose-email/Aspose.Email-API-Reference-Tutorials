@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Exchange Server Connectivity with Aspose.Email for .NET: A Comprehensive Guide
 
@@ -80,7 +82,11 @@ public static void ConnectToExchangeServer()
 {
     // Create an instance of ExchangeClient with credentials and URI
     ExchangeClient client = new ExchangeClient("http://ex07sp1/exchange/Administrator\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

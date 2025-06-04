@@ -4,8 +4,11 @@ description: "Step-by-step tutorials for Aspose.Email installation, licensing, s
 weight: 1
 url: "/java/getting-started/"
 ---
+
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Aspose.Email Getting Started Tutorials for Java Developers
 
@@ -27,7 +30,11 @@ Learn to apply a metered license and manage email operations with Aspose.Email f
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

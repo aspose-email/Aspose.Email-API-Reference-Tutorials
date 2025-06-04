@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and List Messages from an Exchange Server Using Aspose.Email for .NET
 
@@ -160,7 +162,11 @@ Try implementing these solutions in your next project!
 - **Temporary License:** Obtain a temporary license from [License Acquisition](https://purchase.aspose.com/temporary-license/)
 
 This guide helps integrate Aspose.Email into your Java applications, leveraging its powerful features for managing and processing emails on Exchange servers. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

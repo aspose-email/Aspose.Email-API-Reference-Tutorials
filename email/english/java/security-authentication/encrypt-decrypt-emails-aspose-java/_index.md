@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Encrypt and Decrypt Emails with Aspose.Email for Java
 
@@ -231,7 +233,11 @@ Following these best practices can help maintain optimal performance while using
 In this tutorial, you learned how to encrypt and decrypt email messages with Aspose.Email for Java. You explored the setup process, detailed implementation steps, practical applications, and performance considerations. 
 
 To further enhance your skills, try integrating these functionalities into a real-world application or explore additional features provided by Aspose.Email for Java.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

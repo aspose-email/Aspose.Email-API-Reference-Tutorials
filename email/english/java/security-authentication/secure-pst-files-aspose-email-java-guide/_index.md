@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Secure PST Files Using Aspose.Email for Java: A Developer's Guide
 
@@ -217,7 +219,11 @@ Here are some real-world scenarios where these features can be applied:
 3. **User Privacy**: Allowing users to set passwords on their personal PST files enhances privacy and security against unauthorized access.
 
 This guide equips you with the necessary tools to manage PST file security using Aspose.Email for Java effectively.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

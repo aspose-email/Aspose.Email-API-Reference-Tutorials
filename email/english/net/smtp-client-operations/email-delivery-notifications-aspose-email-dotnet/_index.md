@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails with Delivery Notifications Using Aspose.Email .NET
 
@@ -197,6 +199,9 @@ A5: There's no inherent limit within the library, but be mindful of your SMTP se
 We hope you found this tutorial insightful. Happy coding, and don't hesitate to explore further functionalities offered by Aspose.Email .NET!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

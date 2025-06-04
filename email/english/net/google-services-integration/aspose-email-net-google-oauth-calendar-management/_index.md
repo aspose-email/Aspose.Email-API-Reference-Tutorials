@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Comprehensive Guide to Implementing Aspose.Email for .NET: Managing Google Calendars with OAuth
 
@@ -188,7 +190,11 @@ Next, consider exploring additional features of Aspose.Email or integrating it w
 - **Free Trial**: Start with a free trial [here](https://releases.aspose.com/email/net/).
 - **Temporary License**: Obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 - **Support**: Visit the Aspose forum for support at [this link](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

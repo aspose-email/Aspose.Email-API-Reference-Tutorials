@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Integrate and Display Exchange Messages Using Aspose.Email for Java
 
@@ -175,7 +177,11 @@ A5: Optimize your code by managing resources efficiently, such as closing stream
 - **Free Trial:** [Aspose Email Downloads](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Apply for Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support:** [Aspose Forum](https://forum.aspose.com/c/email)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

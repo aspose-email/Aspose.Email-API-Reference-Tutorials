@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and List Exchange Server Folders Using Aspose.Email for Java
 
@@ -199,7 +201,11 @@ When working with Aspose.Email, consider these tips to optimize performance:
 
 ## Conclusion
 By now, you should have a solid understanding of how to connect to and list folders within an Exchange server using Aspose.Email for Java. This skill can greatly enhance your ability to manage email data programmatically, providing numerous benefits in both development and IT operations contexts.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

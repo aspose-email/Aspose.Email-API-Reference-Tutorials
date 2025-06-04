@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Retrieve Email Count with Aspose.Email .NET Using POP3: A Comprehensive Guide
 
@@ -80,7 +82,11 @@ Connecting to an email server and fetching email counts can automate tasks such 
 Create an instance of `Pop3Client` with your POP3 server details:
 ```csharp
 Pop3Client client = new Pop3Client("pop3.server.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

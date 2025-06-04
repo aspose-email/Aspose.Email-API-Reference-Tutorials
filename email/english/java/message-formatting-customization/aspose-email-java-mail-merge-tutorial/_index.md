@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Mail Merge in Java: Create Personalized Emails with Aspose.Email
 
@@ -230,6 +232,9 @@ By following this tutorial, you've learned how to set up Aspose.Email for Java a
 Take the next step and start implementing personalized email solutions with Aspose.Email for Java today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

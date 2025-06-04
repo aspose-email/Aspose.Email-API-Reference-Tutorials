@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/adding-email-attachments-using-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Adding Email Attachments using C#
@@ -102,6 +104,7 @@ Yes, you can download a free trial version of Aspose.Email for .NET to explore i
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

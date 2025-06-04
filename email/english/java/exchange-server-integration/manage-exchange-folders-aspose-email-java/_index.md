@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Manage Exchange Folders with Aspose.Email for Java
 
@@ -176,6 +178,9 @@ Throughout this tutorial, you've learned how to utilize Aspose.Email for Java to
 This comprehensive guide aims to empower you with the tools and knowledge needed to manage Exchange folders efficiently using Aspose.Email for Java. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

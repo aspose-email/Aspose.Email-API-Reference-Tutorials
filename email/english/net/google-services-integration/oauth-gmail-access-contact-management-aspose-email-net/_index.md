@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Integrating OAuth Gmail Access & Contact Management with Aspose.Email for .NET
 
@@ -179,7 +181,11 @@ By following this guide, you've gained the knowledge to integrate OAuth Gmail ac
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Start implementing these techniques in your projects today and enhance the functionality of your .NET applications with secure, efficient email management!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

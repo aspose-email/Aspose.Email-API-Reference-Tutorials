@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Guide to Connecting and Retrieving Mail Tips in Aspose.Email .NET for Exchange Server Integration
 
@@ -196,6 +198,9 @@ Connecting to an Exchange Server and retrieving mail tips using Aspose.Email .NE
 5. **Is there a way to use mail tips in n
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

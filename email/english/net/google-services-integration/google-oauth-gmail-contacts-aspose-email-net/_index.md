@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Integrating Google OAuth & Gmail Contacts using Aspose.Email for .NET
 
@@ -182,6 +184,9 @@ A5: Explore the [Aspose documentation](https://reference.aspose.com/email/net/) 
 By following this guide, you can effectively integrate OAuth token retrieval and Gmail contact updates into your .NET applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

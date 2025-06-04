@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Backup Exchange Folders with Aspose.Email for .NET
 
@@ -173,7 +175,11 @@ A5: The trial version allows you to test all features but might place a watermar
 - **Purchase License**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial**: [Start a Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Get a Temporary License](https://purchaselicense.aspose.com/temporary-license)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

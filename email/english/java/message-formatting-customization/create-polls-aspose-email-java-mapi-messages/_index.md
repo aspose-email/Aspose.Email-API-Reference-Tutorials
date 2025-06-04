@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create Interactive Polls in Emails Using Aspose.Email Java and MAPI Messages
 
@@ -187,7 +189,11 @@ Ready to enhance your emails? Start implementing these powerful features today!
 - **Support and Community Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 By leveraging Aspose.Email for Java, you can create interactive and engaging email communications that drive results. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

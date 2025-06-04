@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Set Appointment Participant Status with Aspose.Email for .NET
 ## How to Manage Participant Status in Appointments Using Aspose.Email for .NET
@@ -163,7 +165,11 @@ A: Yes, Aspose.Email supports multiple platforms including Java and Python. Chec
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 Try implementing these solutions in your projects and experience the streamlined power of Aspose.Email for .NET!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

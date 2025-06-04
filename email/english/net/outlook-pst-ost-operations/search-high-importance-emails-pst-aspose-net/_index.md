@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Efficiently Search PST Files for High-Importance Messages Using Aspose.Email .NET
 
@@ -160,6 +162,9 @@ A: Check for any unhandled exceptions and ensure that all resources are being ma
 By utilizing Aspose.Email for .NET, you can significantly enhance your ability to manage and search through PST files effectively. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

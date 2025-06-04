@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up and Use Aspose.Email for Java with Microsoft Exchange Server
 
@@ -202,7 +204,11 @@ You've successfully set up Aspose.Email for Java, connected with an Exchange Ser
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to mastering email automation with Aspose.Email for Java today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

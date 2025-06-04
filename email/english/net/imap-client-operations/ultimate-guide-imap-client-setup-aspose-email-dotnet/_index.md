@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Ultimate Guide: Setting Up an IMAP Client with Aspose.Email for .NET
 
@@ -203,6 +205,9 @@ A5: Yes, it supports various protocols that can interact with multiple email ser
 We hope this guide helps you implement and manage emails efficiently using Aspose.Email for .NET. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

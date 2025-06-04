@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read Multiple ICS Events Using Aspose.Email in Java
 
@@ -183,6 +185,9 @@ Visit the [Aspose.Email Java Forum](https://forum.aspose.com/c/email/10) for ass
 Explore these resources to deepen your understanding and expand the functionality of your Java applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

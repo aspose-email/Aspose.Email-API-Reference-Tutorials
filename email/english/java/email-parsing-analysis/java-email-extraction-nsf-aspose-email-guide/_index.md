@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # A Comprehensive Guide to Implementing Java Email Extraction from NSF Files Using Aspose.Email
 
@@ -154,6 +156,9 @@ Ready to implement this solution in your project? Get started today!
 Implementing Aspose.Email for Java to extract emails from NSF files is straightforward when you follow this guide. Explore further capabilities of the library and enhance your email handling solutions today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

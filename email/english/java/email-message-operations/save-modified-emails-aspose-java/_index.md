@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Save and Modify Email Messages Using Aspose.Email for Java
 
@@ -132,7 +134,11 @@ For further reading and resources:
 - **Support**: Visit the support forum for assistance: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 We hope this tutorial was helpful. Try implementing these solutions in your projects and see how Aspose.Email can enhance your email handling capabilities!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

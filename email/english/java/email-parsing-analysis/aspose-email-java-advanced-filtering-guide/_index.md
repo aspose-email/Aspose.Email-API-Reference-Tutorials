@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Advanced Email Filtering Techniques Using Aspose.Email for Java
 
@@ -218,7 +220,11 @@ By mastering the advanced filtering capabilities provided by Aspose.Email for Ja
 
 **Q5: How do I integrate Aspose.Email with other Java applications?**
 - **A:** Use Aspose.Email as a library in your Java projects. It offers straightforward integration.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

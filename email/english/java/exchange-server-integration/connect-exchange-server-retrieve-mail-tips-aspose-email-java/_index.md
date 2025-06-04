@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect to an Exchange Server and Retrieve Mail Tips Using Aspose.Email for Java
 
@@ -192,6 +194,9 @@ A: Yes, it is designed with enterprise-level features and robust performance cap
 - **Download**: Get the latest version of Aspose.Email for Java from [Aspose Downloads](https://releases.aspose.com/email/java/) or via Maven.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

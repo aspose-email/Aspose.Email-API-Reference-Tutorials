@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create Interactive Emails with Aspose.Email .NET AMP: A Comprehensive Guide
 
@@ -306,6 +308,9 @@ By following this guide, you can create interactive and engaging AMP emails usin
 - Monitor engagement metrics to measure the impact of your interactive emails.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create an ExchangeClient Instance Using Aspose.Email for Java: A Step-by-Step Guide
 
@@ -168,7 +170,11 @@ Ready to implement this solution? Try it out and see how it can streamline your 
 - **Free Trial:** [Try Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Apply for a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support:** [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

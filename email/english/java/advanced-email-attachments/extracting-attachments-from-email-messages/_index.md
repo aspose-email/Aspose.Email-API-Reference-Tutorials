@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/extracting-attachments-from-email-messages
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Extracting Attachments from Email Messages in Aspose.Email
@@ -93,6 +95,7 @@ For any technical assistance or inquiries, you can reach out to Aspose's support
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

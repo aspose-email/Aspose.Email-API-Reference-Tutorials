@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Decode Email Header Values Using Aspose.Email for .NET
 
@@ -193,7 +195,11 @@ Check for `null` returns from `GetDecodedValue` and implement fallback logic as 
 - **Support Forum**: [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
 With this guide, you're now equipped to tackle email header decoding challenges in your .NET applications using Aspose.Email. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

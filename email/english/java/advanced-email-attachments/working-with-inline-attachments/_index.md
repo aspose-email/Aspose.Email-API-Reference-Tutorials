@@ -8,7 +8,9 @@ url: /java/advanced-email-attachments/working-with-inline-attachments/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Working with Inline Attachments in Aspose.Email
@@ -145,6 +147,7 @@ Yes, Aspose.Email for Java is compatible with various email servers. Ensure you 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

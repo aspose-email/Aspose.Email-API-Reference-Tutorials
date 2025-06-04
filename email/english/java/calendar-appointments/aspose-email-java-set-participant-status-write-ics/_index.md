@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Aspose.Email Java: Setting Participant Status and Writing ICS Files Efficiently
 
@@ -205,7 +207,11 @@ When working with Aspose.Email in Java, consider the following to optimize perfo
 ## Conclusion
 
 You've now mastered setting participant statuses and writing multiple events into an ICS file using Aspose.Email for Java. These features can significantly enhance the efficiency of managing meeting schedules, making your application more robust and user-friendly.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

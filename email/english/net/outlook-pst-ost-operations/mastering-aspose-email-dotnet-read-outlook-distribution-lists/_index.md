@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read Outlook Distribution Lists Using Aspose.Email for .NET: A Complete Guide
 
@@ -61,7 +63,11 @@ Once you've installed Aspose.Email, initializing it in your project is straightf
    - Define input and output directories, ensuring they exist:
      ```csharp
      string dataDir = Path.Combine("YOUR_DOCUMENT_DIRECTORY
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

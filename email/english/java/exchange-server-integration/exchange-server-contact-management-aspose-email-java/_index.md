@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Exchange Server Contacts with Aspose.Email for Java
 
@@ -67,7 +69,11 @@ public class Main {
     public static void main(String[] args) {
         IEWSClient client = EWSClient.getEWSClient(
             "https://exchange.domain.com/exchangeews/Exchange.asmx\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

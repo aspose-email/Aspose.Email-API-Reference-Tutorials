@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Retrieve POP3 Server Capabilities Using Aspose.Email for .NET in C#
 
@@ -84,7 +86,11 @@ using Aspose.Email.Clients.Pop3;
 
 // Create an instance of the Pop3Client class
 Pop3Client client = new Pop3Client("pop.gmail.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Email Automation: Connect and Manage Exchange Lists Using Aspose.Email for .NET
 
@@ -151,7 +153,11 @@ Ready to take your integration skills to the next level? Implement this solution
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Dive into the world of email automation with Aspose.Email for .NET and elevate your application's capabilities today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

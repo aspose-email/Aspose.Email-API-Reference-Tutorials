@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/setting-alternative-text-for-images-csh
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Setting Alternative Text for Images - C# Guide
@@ -87,9 +89,11 @@ To add images as linked resources in an email, you can use the `LinkedResource` 
 ### Where can I find more documentation on Aspose.Email for .NET?
 
 You can find more detailed documentation, tutorials, and examples on working with Aspose.Email for .NET in the [API Reference](https://reference.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

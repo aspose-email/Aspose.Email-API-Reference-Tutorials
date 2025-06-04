@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load and Parse Outlook MSG Files Using Aspose.Email for Java
 
@@ -182,7 +184,11 @@ Ready to get started? Try implementing this solution in your next project!
 - **Free Trial**: [Try Aspose.Email](https://releases.aspose.com/email/java/)
 - **Temporary License**: [Request Here](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: [Join the Discussion](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

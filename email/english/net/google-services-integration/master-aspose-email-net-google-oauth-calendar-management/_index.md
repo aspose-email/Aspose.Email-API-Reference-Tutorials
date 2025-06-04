@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email .NET for Google OAuth and Calendar Management
 
@@ -196,7 +198,11 @@ For further exploration, consider diving deeper into the [Aspose.Email documenta
 ## Resources
 - **Documentation:** [Aspose Email Documentation](https://reference.aspose.com/email/net/)
 - **Download:** [Aspose Email Release Notes](https://downloads.aspose.com/email/net)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

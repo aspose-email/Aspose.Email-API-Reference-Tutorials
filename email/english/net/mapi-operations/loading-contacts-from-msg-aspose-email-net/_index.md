@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load Contacts from MSG Files Using Aspose.Email for .NET
 
@@ -146,6 +148,9 @@ Ready to take your application’s capabilities further? Try implementing this s
 By following this comprehensive guide, you're well-equipped to integrate Aspose.Email for .NET into your applications and leverage its robust features. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

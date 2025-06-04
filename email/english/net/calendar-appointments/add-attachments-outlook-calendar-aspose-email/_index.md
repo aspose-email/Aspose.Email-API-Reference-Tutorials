@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Add Attachments to Outlook Calendar Events Using Aspose.Email for .NET
 
@@ -173,6 +175,9 @@ Aspose.Email supports various email clients, but specific functionalities may va
 Explore these resources for additional support and information as you implement this solution in your applications!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Read and Export TGZ Files Using Aspose.Email for .NET
 
@@ -184,6 +186,9 @@ You've now learned how to read and export TGZ files using Aspose.Email for .NET.
 Embrace the power of Aspose.Email for .NET to streamline your file handling and extraction processes today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

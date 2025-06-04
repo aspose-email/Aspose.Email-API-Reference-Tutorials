@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Google OAuth and Gmail Calendar Integration with Aspose.Email for .NET
 
@@ -184,7 +186,11 @@ You've learned how to implement Google OAuth authentication and perform calendar
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Begin your journey with Aspose.Email for .NET today to streamline your email and calendar operations!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

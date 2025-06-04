@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Master Loading and Saving EML Files with Aspose.Email for .NET
 
@@ -132,7 +134,11 @@ Use `MailMessage.Save` with `SaveOptions.DefaultEml` to write back to an EML for
 ```csharp
 // Save the loaded MailMessage back to an EML file in default format
 mailMessage.Save(outputDir + "/LoadAndSaveFileAsEML_out.eml\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

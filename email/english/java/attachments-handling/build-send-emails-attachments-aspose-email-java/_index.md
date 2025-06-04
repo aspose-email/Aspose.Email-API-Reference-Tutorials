@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Build and Send Emails with Attachments Using Aspose.Email for Java
 
@@ -185,6 +187,9 @@ You've now mastered creating and sending emails with attachments using Aspose.Em
 Now that you're equipped with the knowledge to leverage Aspose.Email for Java, start implementing your solutions today and see how it can streamline email-related tasks in your projects!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

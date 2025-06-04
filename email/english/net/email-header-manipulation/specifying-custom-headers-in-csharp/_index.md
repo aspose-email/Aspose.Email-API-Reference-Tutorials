@@ -8,7 +8,9 @@ url: /net/email-header-manipulation/specifying-custom-headers-in-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Specifying Custom Headers in C#
@@ -107,6 +109,7 @@ If you're ready to take your email communication to the next level, dive into th
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

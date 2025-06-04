@@ -8,7 +8,9 @@ url: /net/email-header-manipulation/csharp-guide-extracting-email-headers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# Guide - Extracting Email Headers
@@ -173,6 +175,7 @@ You can find the documentation at [https://reference.aspose.com/email/net/](http
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

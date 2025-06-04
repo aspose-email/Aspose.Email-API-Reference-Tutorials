@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Load and Display Email Recipients Using Aspose.Email for .NET
 ## Introduction
@@ -136,6 +138,9 @@ As next steps, consider exploring additional features of Aspose.Email for .NET, 
 We hope this guide has been helpful in demonstrating how to use Aspose.Email for .NET to manage email recipient information. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

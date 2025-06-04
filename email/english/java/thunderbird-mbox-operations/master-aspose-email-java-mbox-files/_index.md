@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email Java for MBOX Files: Read and Write Efficiently in Your Applications
 
@@ -204,7 +206,11 @@ Ready to take your Java email handling to the next level? Start implementing the
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
 Explore these resources to deepen your understanding and enhance your Java email handling capabilities with Aspose.Email.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

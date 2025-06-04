@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/preserving-embedded-msg-format-during-load-w
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Preserving Embedded MSG Format during Load with C#
@@ -84,6 +86,7 @@ To access the latest updates and releases of Aspose.Email for .NET, visit the re
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

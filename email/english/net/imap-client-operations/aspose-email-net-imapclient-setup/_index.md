@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Configure ImapClient with Aspose.Email for .NET: A Step-by-Step Guide
 
@@ -190,6 +192,9 @@ Explore more with [Aspose's Free Trial](https://releases.aspose.com/email/net/) 
 Implementing these steps will give you a robust foundation for managing emails in .NET applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

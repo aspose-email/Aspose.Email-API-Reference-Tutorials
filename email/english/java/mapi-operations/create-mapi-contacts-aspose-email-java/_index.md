@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create MAPI Contacts in Java Using Aspose.Email: A Step-by-Step Guide
 
@@ -181,7 +183,11 @@ public static void createPstAndAddContacts(MapiContact[] contacts) {
 1. **CRM Systems:** Automate contact creation in customer relationship management software.
 2. **Email Clients:** Enhance email clients by integrating robust contact management features.
 3. **Address Book Synchronization:** Use this functionality to synchronize contacts across different platforms and devices.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

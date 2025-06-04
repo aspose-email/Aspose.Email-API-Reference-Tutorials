@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Extract Email Attachments from PST Files Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -159,7 +161,11 @@ Experiment with other features offered by Aspose.Email, such as creating new ema
 - **Support Forum:** [Ask Questions on the Support Forum](https://forum.aspose.com/c/email/10)
 
 Embrace the power of Aspose.Email for Java and revolutionize how you handle email attachments!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

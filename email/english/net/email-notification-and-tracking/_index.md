@@ -8,7 +8,9 @@ url: /net/email-notification-and-tracking/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Enhance Communication with Email Notification and Tracking
@@ -33,9 +35,11 @@ Learn to receive email notifications in C# using Aspose.Email for .NET. Efficien
 Learn how to use C# code to request email read receipts using Aspose.Email for .NET, enhancing communication tracking.
 ### [Tracking Email Document Conversion Progress with C# Code](./tracking-email-document-conversion-progress-with-csharp-code/)
 Learn how to implement email notification and tracking using Aspose.Email for .NET. Step-by-step guide with code examples. Enhance your email communication today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Follow-Up Flags in MapiMessage Drafts Using Aspose.Email for .NET
 
@@ -165,7 +167,11 @@ A5: Typically involves using Aspose.Email's API to create or manipulate emails a
 - **Purchase License:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Free Trial:** [Get Started Free](https://releases.aspose.com/email/net/)
 - **Temporary License:** [Request Temporary Access](https://purchase.aspose.com/temporary-license/)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

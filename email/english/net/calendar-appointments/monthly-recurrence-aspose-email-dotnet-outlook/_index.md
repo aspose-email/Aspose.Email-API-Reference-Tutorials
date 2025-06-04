@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up Monthly Recurrence Patterns in Outlook Tasks Using Aspose.Email .NET
 
@@ -198,6 +200,9 @@ Explore additional features of Aspose.Email or experiment with different recurre
 This tutorial provides a solid foundation for implementing monthly recurrence patterns in Outlook tasks using Aspose.Email .NET. Dive deeper into the documentation to explore more features and enhance your application's scheduling capabilities!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

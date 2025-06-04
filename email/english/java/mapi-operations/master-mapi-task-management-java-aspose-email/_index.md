@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering MAPI Task Management in Java with Aspose.Email
 
@@ -235,7 +237,11 @@ In this guide, you've learned how to set up Aspose.Email for Java, create and sa
 - Explore more features of Aspose.Email for Java.
 - Experiment with different task configurations to suit your needs.
 - Share your knowledge by writing about your experiences or creating tutorials.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

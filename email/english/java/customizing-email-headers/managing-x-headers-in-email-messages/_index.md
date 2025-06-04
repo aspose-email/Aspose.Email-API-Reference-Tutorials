@@ -8,7 +8,9 @@ url: /java/customizing-email-headers/managing-x-headers-in-email-messages/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Managing X-Headers in Email Messages with Aspose.Email
@@ -134,6 +136,7 @@ Yes, Aspose.Email is a robust library that can be used for enterprise-level emai
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connect and List Emails Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -156,7 +158,11 @@ This guide covered connecting to Microsoft Exchange Server and listing inbox mes
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to automate email management in .NET applications today by leveraging the powerful Aspose.Email library!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

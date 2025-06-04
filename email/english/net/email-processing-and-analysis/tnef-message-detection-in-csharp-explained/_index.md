@@ -8,7 +8,9 @@ url: /net/email-processing-and-analysis/tnef-message-detection-in-csharp-explain
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # TNEF Message Detection in C# - Explained
@@ -128,6 +130,7 @@ In this guide, you have learned how to detect TNEF (Transport Neutral Encapsulat
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

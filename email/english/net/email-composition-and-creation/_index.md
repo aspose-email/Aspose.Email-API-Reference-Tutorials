@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Mastering Email Composition and Creation with Aspose.Email for .NET
@@ -45,9 +47,11 @@ Learn how to enhance email content using HTML in Aspose.Email for .NET. Step-by-
 Learn how to specify recipient addresses in C# using Aspose.Email for .NET. Create, configure, and send emails efficiently.
 ### [Loading Email Messages with Load Options in C#](./loading-email-messages-with-load-options-in-csharp/)
 Learn how to load email messages with Aspose.Email for .NET in C#. Explore step-by-step guide and source code examples for effective email handling.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

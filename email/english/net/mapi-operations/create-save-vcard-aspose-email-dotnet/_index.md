@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Create and Save a VCard Contact Using Aspose.Email for .NET
 
@@ -211,7 +213,11 @@ Throughout this tutorial, we've explored how to create and save a vCard contact 
 
 5. **What should I do if I encounter errors during setup?**
    - Ensure you have the correct version of .NET installed and that Aspose.Email is properly added to your project dependencies.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

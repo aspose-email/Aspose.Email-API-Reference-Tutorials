@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # SMTP Email Forwarding Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -130,7 +132,11 @@ FileInputStream fos = new FileInputStream(fileName);
 try {
     // Forward the email using the SmtpClient instance and recipients collection.
     client.forward("Sender@domain.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Java Email Formatting with Aspose.Email: Custom Text and HTML Options
 
@@ -175,6 +177,9 @@ Ready to take it further? Dive into the resources below for more information and
 With this comprehensive guide, you’re ready to harness the power of Aspose.Email for Java to format your email appointments like a pro!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

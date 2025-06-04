@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/adding-html-body-to-emails-csharp-examp
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Adding HTML Body to Emails - C# Example
@@ -90,6 +92,7 @@ Incorporating HTML content into your email messages using Aspose.Email for .NET 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

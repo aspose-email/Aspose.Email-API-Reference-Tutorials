@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Detect Embedded Messages in Emails using Aspose.Email for .NET
 
@@ -169,7 +171,11 @@ Ready to take your skills further? Try implementing this solution in your projec
 - **Free Trial**: [Start with a free trial](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Request here](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Visit the forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

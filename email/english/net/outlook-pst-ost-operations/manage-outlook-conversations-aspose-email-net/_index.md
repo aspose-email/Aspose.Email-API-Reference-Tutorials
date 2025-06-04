@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Manage Outlook Conversations with Aspose.Email .NET
 
@@ -181,7 +183,11 @@ As next steps, consider exploring additional features of Aspose.Email for .NET s
 - **Free Trial:** [Aspose Free Trial](https://releases.aspose.com/email/net/)
 - **Temporary License:** [Aspose Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support:** [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -8,7 +8,9 @@ url: /java/sending-emails/bulk-email-sending/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Bulk Email Sending with Aspose.Email
@@ -142,6 +144,7 @@ In this guide, you've learned how to send bulk emails using Aspose.Email for Jav
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

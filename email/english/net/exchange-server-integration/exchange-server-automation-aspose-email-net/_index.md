@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Exchange Server Automation with Aspose.Email for .NET: Connect and Retrieve Rules
 
@@ -177,7 +179,11 @@ In this tutorial, you've learned how to connect to an Exchange server using Aspo
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Embark on your journey to streamline email automation and management with Aspose.Email for .NET today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

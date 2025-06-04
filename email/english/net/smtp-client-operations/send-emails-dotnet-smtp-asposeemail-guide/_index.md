@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Comprehensive Guide: Send Emails Programmatically in .NET Using Aspose.Email
 
@@ -168,6 +170,9 @@ A5: Absolutely! Aspose.Email is compatible with .NET Frameworks used across vari
 With this guide, you're well on your way to mastering email functionalities in .NET applications using Aspose.Email. Happy coding!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

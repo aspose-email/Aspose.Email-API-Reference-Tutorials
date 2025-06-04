@@ -8,7 +8,9 @@ url: /java/configuring-smtp-servers/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Configuring SMTP Servers with Aspose.Email for Java
@@ -40,9 +42,11 @@ Optimize email communication with Aspose.Email for Java. Learn to handle SMTP er
 Learn how to customize SMTP headers and footers with Aspose.Email for Java. Enhance your email communication with personalized branding and messages.
 ### [Integrating Multiple SMTP Servers with Aspose.Email](./integrating-multiple-smtp-servers/)
 Learn how to integrate multiple SMTP servers seamlessly with Aspose.Email for Java. Enhance email sending reliability and failover support with our step-by-step guide.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

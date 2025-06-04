@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Load Email Messages with Aspose.Email for Java: A Comprehensive Tutorial
 
@@ -153,7 +155,11 @@ Next, explore more features like sending emails or converting between different 
 - **Temporary License**: [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 
 With this comprehensive guide, you're now ready to implement and expand your email handling capabilities using Aspose.Email in Java. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

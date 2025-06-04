@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering IMAP Clients in Java with Aspose.Email
 
@@ -209,7 +211,11 @@ Ready to take your Java email automation to the next level? Start implementing t
 
 3. **Can I use this setup for Gmail accounts?**
    Yes, but ensure that you enable 'Allow less secure apps' in your Google account settings or use OAuth 2.0 authentication.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Efficiently Manage Exchange Private Distribution Lists with Aspose.Email for Java
 
@@ -184,7 +186,11 @@ A: Common challenges include dependency conflicts and licensing setup. Refer to 
 - **Download Library**: Get started with Aspose.Email for Java from [here](https://releases.aspose.com/email/java/)
 - **Purchase License**: Consider purchasing a license for full features [here](https://purchase.aspose.com/buy)
 - **Support Forum**: Join the community and ask questions at [Aspose Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

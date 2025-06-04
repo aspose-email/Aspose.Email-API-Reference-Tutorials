@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/reading-multiple-events-from-ics-fil
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Reading Multiple Events from ICS Files with C#
@@ -83,6 +85,7 @@ You can explore the API documentation and code samples at [https://reference.asp
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

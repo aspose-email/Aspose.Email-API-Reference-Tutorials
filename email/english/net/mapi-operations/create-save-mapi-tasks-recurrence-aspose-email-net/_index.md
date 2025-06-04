@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Guide to Creating and Saving MAPI Tasks with Recurrence Using Aspose.Email .NET
 
@@ -185,7 +187,11 @@ A5: Yes, visit Aspose's forum for assistance or check their comprehensive docume
 - **Purchase**: [Buy Now](https://purchase.aspose.com/buy)
 - **Free Trial**: [Try Aspose.Email](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

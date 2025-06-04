@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connecting to an IMAP Server Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -165,7 +167,11 @@ Next, try implementing these concepts in a project and explore additional resour
 - **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 By utilizing these resources, you can further enhance your understanding and capabilities with Aspose.Email for .NET.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Follow-Up Flags on MAPI Messages Using Aspose.Email for .NET
 
@@ -177,6 +179,9 @@ A5: Explore additional features like email attachments, HTML content support, or
 By following this guide, you can enhance your email applications with powerful follow-up capabilities using Aspose.Email for .NET. Try implementing these steps in your next project to see the benefits firsthand!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

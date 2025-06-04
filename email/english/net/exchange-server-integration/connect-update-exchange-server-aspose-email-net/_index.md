@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Update Exchange Server Configuration with Aspose.Email for .NET
 
@@ -75,7 +77,11 @@ using System.Net;
 using Aspose.Email.Clients.Exchange.WebService;
 
 // Initialize network credentials\NetworkCredential credentials = new NetworkCredential("username@domain.com\
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Create a Distribution List with Aspose.Email for Java
 
@@ -159,7 +161,11 @@ You should now understand how to create and save a distribution list using Aspos
 - **Purchase**: Consider purchasing a full license for commercial use at [Aspose Purchase Page](https://purchase.aspose.com/buy).
 - **Free Trial & Temporary License**: Try out with a free or temporary license available from their respective links.
 - **Support**: Join the community and get support on the [Aspose Forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Preserve Embedded Message Formats When Loading Emails in .NET with Aspose.Email
 
@@ -148,7 +150,11 @@ Ready to dive deeper? Implement this solution in your projects and explore furth
 - **Free Trial**: Test drive Aspose.Email with a free trial by downloading it [here](https://releases.aspose.com/email/net/).
 - **Temporary License**: Request a temporary license to explore all features [here](https://purchase.aspose.com/temporary-license/).
 - **Support**: For any questions or issues, visit the [support forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

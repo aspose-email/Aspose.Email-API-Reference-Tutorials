@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Read MBOX Message Sizes Using Aspose.Email for .NET: A Complete Guide
 
@@ -166,7 +168,11 @@ A5: Through its extensive API, allowing seamless data exchange and email managem
 - **Support Forum:** [Aspose Support](https://forum.aspose.com/c/email/10)
 
 Take your .NET applications to the next level with Aspose.Email for .NET, and start processing emails efficiently today!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

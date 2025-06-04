@@ -8,7 +8,9 @@ url: /net/email-event-and-calendar-handling/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Efficient Email Event and Calendar Handling
@@ -42,6 +44,7 @@ Learn to alter ProdID in ICS files using C# & Aspose.Email for .NET. Step-by-ste
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

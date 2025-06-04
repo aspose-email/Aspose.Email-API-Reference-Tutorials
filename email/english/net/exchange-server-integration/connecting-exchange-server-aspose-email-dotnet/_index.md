@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Connecting to Microsoft Exchange Server Using Aspose.Email for .NET
 
@@ -181,7 +183,11 @@ A5: Yes, Aspose.Email supports multiple protocols like IMAP, POP3, and SMTP for 
 - **Free Trial**: [Aspose Email Free Trials](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Forum - Email Section](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

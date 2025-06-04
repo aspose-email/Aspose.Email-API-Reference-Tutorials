@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email .NET: A Comprehensive Guide to Custom Email Headers and SMTP Configuration
 
@@ -188,7 +190,11 @@ A: Use try-catch blocks around your SMTP client's send method to capture and log
 - **Free Trial**: [Get Started with a Free License](https://releases.aspose.com/email/net/)
 - **Temporary License**: [Apply for Temporary Access](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

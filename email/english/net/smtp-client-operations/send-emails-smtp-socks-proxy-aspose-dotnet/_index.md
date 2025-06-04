@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Send Emails Using SMTP Client and SOCKS Proxy with Aspose.Email for .NET
 
@@ -200,7 +202,11 @@ A5: No, Aspose.Email supports other security options like SSL/TLS. Choose based 
 - [Free Trial of Aspose.Email](https://releases.aspose.com/email/net/)
 - [Obtain Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Email Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

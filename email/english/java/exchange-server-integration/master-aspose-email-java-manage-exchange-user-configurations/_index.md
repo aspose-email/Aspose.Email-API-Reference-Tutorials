@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mastering Aspose.Email Java: Managing User Configurations in Exchange
 
@@ -186,7 +188,11 @@ For further information and resources:
 - **Purchase**: Visit [Aspose's purchase page](https://purchase.aspose.com/buy) for licensing.
 - **Free Trial**: Test features without commitment on the [trial download page](https://releases.aspose.com/email/java/).
 - **Temporary License**: Obtain a temporary license via [this link](https://purchase.aspose.com/temporary-license/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

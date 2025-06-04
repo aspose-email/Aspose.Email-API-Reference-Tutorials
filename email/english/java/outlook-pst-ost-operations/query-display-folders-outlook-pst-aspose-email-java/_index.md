@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Query and Display User-Created Folders in Outlook PST Using Aspose.Email for Java
 
@@ -182,7 +184,11 @@ To further explore Aspose.Email’s capabilities, consider diving into their ext
 - Free Trial: [Download Trial](https://releases.aspose.com/email/java/)
 
 By following this guide, you can leverage the power of Aspose.Email for Java to manage your Outlook PST files more effectively!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

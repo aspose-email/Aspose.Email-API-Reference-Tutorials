@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extract MAPI Properties from MSG Files Using Aspose.Email for .NET: A Complete Guide
 
@@ -143,6 +145,9 @@ By now, you should have a solid understanding of how to retrieve MAPI properties
 Ready to implement this solution in your projects? Dive into the documentation and start coding today!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Fetch and Enumerate Messages from an Exchange Server Using Aspose.Email for Java
 
@@ -186,7 +188,11 @@ Next steps include exploring other functionalities within Aspose.Email or integr
 - **Free Trial:** [Get Started with a Free Trial](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Request Here](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Ask Questions and Share Knowledge](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

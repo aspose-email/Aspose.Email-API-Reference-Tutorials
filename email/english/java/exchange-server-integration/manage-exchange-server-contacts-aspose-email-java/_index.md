@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Manage Exchange Server Contacts Using Aspose.Email for Java: A Complete Guide
 
@@ -265,7 +267,11 @@ Next, consider exploring more advanced features of Aspose.Email or integrating i
 - "Manage Exchange Server Contacts"
 - "Aspose.Email Java Library"
 - "Exchange Server Integration"
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

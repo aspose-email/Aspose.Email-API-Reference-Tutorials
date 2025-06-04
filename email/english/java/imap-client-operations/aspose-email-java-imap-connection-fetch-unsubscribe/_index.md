@@ -13,7 +13,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect to an IMAP Server Using Aspose.Email for Java: A Comprehensive Guide
 
@@ -167,7 +169,11 @@ Take the next step by applying this solution in a real-world scenario or explori
 - **Support**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 Take your email automation skills to the next level by leveraging Aspose.Email for Java, and don't hesitate to reach out if you have questions!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

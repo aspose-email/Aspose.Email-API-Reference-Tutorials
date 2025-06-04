@@ -8,7 +8,9 @@ url: /java/sending-emails/adding-custom-headers-in-aspose-email/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Adding Custom Headers in Aspose.Email
@@ -142,6 +144,7 @@ In this guide, you've learned how to add custom headers to an email using Aspose
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

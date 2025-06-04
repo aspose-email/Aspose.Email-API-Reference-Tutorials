@@ -8,7 +8,9 @@ url: /java/configuring-smtp-servers/choosing-the-right-smtp-server/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Choosing the Right SMTP Server for Aspose.Email
@@ -110,6 +112,7 @@ You can configure OAuth2 authentication with Aspose.Email for Java by providing 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

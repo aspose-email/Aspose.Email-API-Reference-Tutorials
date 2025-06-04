@@ -8,7 +8,9 @@ url: /java/sending-emails/attaching-files-to-emails-using-aspose-email/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Attaching Files to Emails Using Aspose.Email
@@ -144,6 +146,7 @@ If you have any further questions or need assistance, please feel free to reach 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

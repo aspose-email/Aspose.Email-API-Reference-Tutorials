@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Up an SMTP Client with Aspose.Email for Java: Step-by-Step Guide
 
@@ -199,7 +201,11 @@ Visit the [Aspose Documentation](https://reference.aspose.com/email/java/) for d
 - **Free Trial**: Start your free trial here: [Aspose Free Trial](https://releases.aspose.com/email/java/)
 - **Temporary License**: Request a temporary license from [Aspose Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum**: Join discussions at the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

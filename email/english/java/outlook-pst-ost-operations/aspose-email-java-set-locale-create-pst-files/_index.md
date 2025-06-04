@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Set Locale and Create a PST File Using Aspose.Email for Java
 
@@ -156,7 +158,11 @@ Ready to implement these solutions? Try out the steps outlined above and integra
 - **Free Trial**: Start with a free trial from [Aspose's Free Trial page](https://releases.aspose.com/email/java/).
 - **Temporary License**: Obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 - **Support**: Join the community or ask questions on the [Aspose Forum](https://forum.aspose.com/c/email/10).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

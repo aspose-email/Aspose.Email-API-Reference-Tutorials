@@ -8,7 +8,9 @@ url: /net/email-composition-and-creation/crafting-a-fresh-email-csharp-implement
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Crafting a Fresh Email - C# Implementation
@@ -112,9 +114,11 @@ Absolutely! Aspose.Email is versatile and can be used for both personal and ente
 ### Can I send HTML-formatted emails using Aspose.Email?
 
 Certainly! You can create and send HTML-formatted emails using the `HtmlBody` property of the `MailMessage` class. This allows you to include rich content and styling in your emails.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

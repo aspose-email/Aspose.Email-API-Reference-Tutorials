@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # Convert MSG to TNEF Using Aspose.Email for .NET: A Comprehensive Guide
 
@@ -154,7 +156,11 @@ This guide explored converting MSG files to TNEF using Aspose.Email for .NET. By
 - **Documentation:** Explore detailed guides at [Aspose.Email Documentation](https://reference.aspose.com/email/net/).
 - **Download:** Get the latest version from [Aspose Releases](https://releases.aspose.com/email/net/).
 - **Purchase & Trial:** Learn more about licensing options on [Aspose Purchase](https://purchase.aspose.com/buy) and [Free Trials](https://releases.aspose.com/email/net/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}

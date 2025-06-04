@@ -8,7 +8,9 @@ url: /net/email-attachment-handling/adding-new-tnef-attachments-in-csharp/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Adding New TNEF Attachments in C#
@@ -98,6 +100,7 @@ For more detailed documentation and code examples, you can visit the [Aspose.Ema
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

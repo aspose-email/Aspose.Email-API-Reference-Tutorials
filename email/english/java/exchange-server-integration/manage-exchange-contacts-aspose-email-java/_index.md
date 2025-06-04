@@ -12,7 +12,9 @@ keywords:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 # How to Connect and Manage Exchange Contacts Using Aspose.Email for Java
 
@@ -166,7 +168,11 @@ Congratulations! You've learned how to connect to an Exchange Server, create sub
 - **Support:** [Aspose Forums](https://forum.aspose.com/c/email/10)
 
 Explore these resources to expand your understanding and capabilities with Aspose.Email for Java. Happy coding!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/products-backtop-button >}}
