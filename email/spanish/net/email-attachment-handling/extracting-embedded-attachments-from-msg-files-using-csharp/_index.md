@@ -1,46 +1,48 @@
 ---
-title: Extracción de archivos adjuntos incrustados de archivos MSG usando C#
-linktitle: Extracción de archivos adjuntos incrustados de archivos MSG usando C#
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda a extraer archivos adjuntos incrustados de archivos MSG usando C# y Aspose.Email para .NET. Una guía completa con ejemplos de código fuente.
-weight: 10
-url: /es/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+"description": "Aprenda a extraer archivos adjuntos incrustados de archivos MSG con C# y Aspose.Email para .NET. Una guía completa con ejemplos de código fuente."
+"linktitle": "Cómo extraer archivos adjuntos incrustados de archivos MSG con C#"
+"second_title": "API de procesamiento de correo electrónico Aspose.Email .NET"
+"title": "Cómo extraer archivos adjuntos incrustados de archivos MSG con C#"
+"url": "/es/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracción de archivos adjuntos incrustados de archivos MSG usando C#
+# Cómo extraer archivos adjuntos incrustados de archivos MSG con C#
 
 
 ## Introducción a los archivos adjuntos integrados
 
-Los archivos adjuntos incrustados son archivos que se encapsulan dentro de un mensaje de correo electrónico, lo que permite al destinatario acceder a los archivos sin necesidad de enlaces externos. Estos archivos adjuntos pueden resultar particularmente útiles al compartir documentos preservando al mismo tiempo el contexto de la conversación por correo electrónico.
+Los archivos adjuntos incrustados son archivos encapsulados en un mensaje de correo electrónico, lo que permite al destinatario acceder a ellos sin necesidad de enlaces externos. Estos archivos adjuntos pueden ser especialmente útiles al compartir documentos, preservando el contexto de la conversación.
 
-## Primeros pasos con Aspose.Email para .NET
+## Introducción a Aspose.Email para .NET
 
-Aspose.Email para .NET es una poderosa biblioteca que simplifica las tareas de procesamiento de correo electrónico en aplicaciones .NET. Proporciona soporte integral para trabajar con varios formatos de correo electrónico, incluidos archivos MSG. Para comenzar, siga estos pasos:
+Aspose.Email para .NET es una potente biblioteca que simplifica el procesamiento de correo electrónico en aplicaciones .NET. Ofrece compatibilidad completa con diversos formatos de correo electrónico, incluidos archivos MSG. Para empezar, siga estos pasos:
 
-1. Descargue e instale Aspose.Email para .NET
+1. Descargar e instalar Aspose.Email para .NET
 
-    Puedes descargar la biblioteca desde[Aspose.Email para el sitio web .NET](https://releases.aspose.com/email/net) o utilice el administrador de paquetes NuGet:
+   Puede descargar la biblioteca desde [Aspose.Email para sitios web .NET](https://releases.aspose.com/email/net) o utilice el administrador de paquetes NuGet:
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2. Crear un nuevo proyecto C#
+2. Crear un nuevo proyecto de C#
 
-   Comience creando un nuevo proyecto de C# en su entorno de desarrollo preferido.
+   Comience creando un nuevo proyecto C# en su entorno de desarrollo preferido.
 
 3. Agregar referencia a Aspose.Email
 
    Agregue una referencia a la DLL Aspose.Email en su proyecto.
 
-## Cargando y analizando archivos MSG
+## Carga y análisis de archivos MSG
 
-Antes de extraer los archivos adjuntos incrustados, debemos cargar y analizar el archivo MSG usando Aspose.Email. Así es como puedes hacerlo:
+Antes de extraer los archivos adjuntos incrustados, necesitamos cargar y analizar el archivo MSG con Aspose.Email. Así es como se hace:
 
 ```csharp
 using Aspose.Email;
@@ -86,32 +88,34 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## Conclusión
 
-En este tutorial, exploramos cómo extraer archivos adjuntos incrustados de archivos MSG usando C# y la biblioteca Aspose.Email para .NET. Si sigue los pasos descritos aquí, puede integrar perfectamente las capacidades de extracción de archivos adjuntos en sus aplicaciones .NET, mejorando la forma en que maneja el contenido del correo electrónico.
+En este tutorial, exploramos cómo extraer archivos adjuntos incrustados de archivos MSG usando C# y la biblioteca Aspose.Email para .NET. Siguiendo los pasos descritos, podrá integrar fácilmente las funciones de extracción de archivos adjuntos en sus aplicaciones .NET, optimizando así la gestión del contenido del correo electrónico.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo puedo descargar Aspose.Email para .NET?
 
- Puede descargar Aspose.Email para .NET desde[Aspose.Enviar sitio web por correo electrónico](https://releases.aspose.com/email/net).
+Puede descargar Aspose.Email para .NET desde [Sitio web de Aspose.Email](https://releases.aspose.com/email/net).
 
 ### ¿Aspose.Email es compatible con diferentes formatos de correo electrónico?
 
-Sí, Aspose.Email brinda soporte completo para varios formatos de correo electrónico, incluidos MSG, EML, PST y más.
+Sí, Aspose.Email ofrece un amplio soporte para varios formatos de correo electrónico, incluidos MSG, EML, PST y más.
 
-### ¿Puedo utilizar Aspose.Email tanto en aplicaciones web como de escritorio?
+### ¿Puedo utilizar Aspose.Email tanto en aplicaciones de escritorio como web?
 
-¡Absolutamente! Aspose.Email para .NET se puede utilizar tanto en aplicaciones web como de escritorio, lo que lo convierte en una opción versátil para sus necesidades de procesamiento de correo electrónico.
+¡Por supuesto! Aspose.Email para .NET se puede usar tanto en aplicaciones de escritorio como web, lo que lo convierte en una opción versátil para sus necesidades de procesamiento de correo electrónico.
 
-### ¿Existen consideraciones sobre la licencia?
+### ¿Existen consideraciones relativas a la licencia?
 
- Sí, Aspose.Email es una biblioteca comercial. Puede encontrar información detallada sobre licencias en[Aspose sitio web](https://purchase.aspose.com).
+Sí, Aspose.Email es una biblioteca comercial. Puede encontrar información detallada sobre licencias en [Sitio web de Aspose](https://purchase.aspose.com).
 
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
 
- Puede encontrar ejemplos detallados y documentación sobre el uso de Aspose.Email para .NET en el[documentación](https://reference.aspose.com/email/net).
+Puede encontrar ejemplos detallados y documentación sobre el uso de Aspose.Email para .NET en [documentación](https://reference.aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

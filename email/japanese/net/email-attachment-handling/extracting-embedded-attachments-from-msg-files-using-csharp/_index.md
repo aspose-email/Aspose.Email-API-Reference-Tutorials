@@ -1,14 +1,16 @@
 ---
-title: C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する
-linktitle: C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する
-second_title: Aspose.Email .NET 電子メール処理 API
-description: C# と Aspose.Email for .NET を使用して、MSG ファイルから埋め込み添付ファイルを抽出する方法を学びます。ソースコード例を含む包括的なガイド。
-weight: 10
-url: /ja/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/
+"description": "C#とAspose.Email for .NETを使用して、MSGファイルから埋め込み添付ファイルを抽出する方法を学びましょう。ソースコード例を含む包括的なガイドです。"
+"linktitle": "C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する"
+"second_title": "Aspose.Email .NET メール処理 API"
+"title": "C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する"
+"url": "/ja/net/email-attachment-handling/extracting-embedded-attachments-from-msg-files-using-csharp/"
+"weight": 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # C# を使用して MSG ファイルから埋め込み添付ファイルを抽出する
@@ -16,68 +18,68 @@ url: /ja/net/email-attachment-handling/extracting-embedded-attachments-from-msg-
 
 ## 埋め込み添付ファイルの概要
 
-埋め込み添付ファイルは電子メール メッセージ内にカプセル化されたファイルであり、受信者は外部リンクを必要とせずにファイルにアクセスできます。これらの添付ファイルは、電子メールでの会話のコンテキストを保持しながらドキュメントを共有する場合に特に役立ちます。
+埋め込み添付ファイルとは、メールメッセージ内に埋め込まれたファイルであり、受信者は外部リンクを介さずにファイルにアクセスできます。これらの添付ファイルは、メールのやり取りの文脈を維持しながらドキュメントを共有する場合に特に便利です。
 
-## Aspose.Email for .NET の入門
+## Aspose.Email for .NET を使い始める
 
-Aspose.Email for .NET は、.NET アプリケーションでの電子メール処理タスクを簡素化する強力なライブラリです。 MSG ファイルを含むさまざまな電子メール形式を扱うための包括的なサポートを提供します。開始するには、次の手順に従います。
+Aspose.Email for .NETは、.NETアプリケーションにおけるメール処理タスクを簡素化する強力なライブラリです。MSGファイルを含む様々なメール形式の処理を包括的にサポートしています。使用を開始するには、以下の手順に従ってください。
 
-1. Aspose.Email for .NET をダウンロードしてインストールする
+1. Aspose.Email for .NET のダウンロードとインストール
 
-   ライブラリはからダウンロードできます。[Aspose.Email for .NET Web サイト](https://releases.aspose.com/email/net)または、NuGet パッケージ マネージャーを使用します。
+   ライブラリは以下からダウンロードできます。 [Aspose.Email for .NET のウェブサイト](https://releases.aspose.com/email/net) または NuGet パッケージ マネージャーを使用します。
    
    ```csharp
    Install-Package Aspose.Email
    ```
 
-2. 新しい C# プロジェクトを作成する
+2. 新しいC#プロジェクトを作成する
 
-   まず、好みの開発環境で新しい C# プロジェクトを作成します。
+   まず、希望する開発環境で新しい C# プロジェクトを作成します。
 
-3. Aspose.Email への参照を追加
+3. Aspose.Emailへの参照を追加する
 
    プロジェクトに Aspose.Email DLL への参照を追加します。
 
-## MSG ファイルのロードと解析
+## MSGファイルの読み込みと解析
 
-埋め込まれた添付ファイルを抽出する前に、Aspose.Email を使用して MSG ファイルをロードして解析する必要があります。その方法は次のとおりです。
+埋め込まれた添付ファイルを抽出する前に、Aspose.Email を使用して MSG ファイルを読み込んで解析する必要があります。手順は以下のとおりです。
 
 ```csharp
 using Aspose.Email;
 using Aspose.Email.Storage.Pst;
 
-// MSGファイルをロードする
+// MSGファイルを読み込む
 using (var message = MailMessage.Load("sample.msg"))
 {
-    //メッセージのプロパティにアクセスする
+    // メッセージのプロパティにアクセスする
     string subject = message.Subject;
     string sender = message.From.Address;
-    //...
+    // ...
 }
 ```
 
-## 埋め込み添付ファイルの抽出
+## 埋め込まれた添付ファイルの抽出
 
-MSG ファイルをロードしたので、埋め込まれた添付ファイルを抽出しましょう。
+MSG ファイルを読み込んだので、埋め込まれた添付ファイルを抽出しましょう。
 
 ```csharp
-//埋め込まれた添付ファイルを抽出する
+// 埋め込まれた添付ファイルを抽出する
 foreach (var attachment in message.Attachments)
 {
     if (attachment.IsEmbeddedMessage)
     {
         var embeddedMsg = (MailMessage)attachment.Object;
-        //埋め込まれたメッセージを処理する
+        // 埋め込まれたメッセージを処理する
     }
 }
 ```
 
 ## 抽出した添付ファイルの保存
 
-埋め込み添付ファイルを処理したら、目的の場所に保存できます。
+埋め込まれた添付ファイルを処理したら、目的の場所に保存できます。
 
 ```csharp
-//埋め込み添付ファイルを保存する
+// 埋め込まれた添付ファイルを保存する
 foreach (var attachment in embeddedMsg.Attachments)
 {
     attachment.Save("path/to/save/" + attachment.Name);
@@ -86,32 +88,34 @@ foreach (var attachment in embeddedMsg.Attachments)
 
 ## 結論
 
-このチュートリアルでは、C# と Aspose.Email for .NET ライブラリを使用して、MSG ファイルから埋め込み添付ファイルを抽出する方法を検討しました。ここで説明する手順に従うことで、添付ファイル抽出機能を .NET アプリケーションにシームレスに統合し、電子メール コンテンツの処理方法を強化できます。
+このチュートリアルでは、C#とAspose.Email for .NETライブラリを使用して、MSGファイルから埋め込み添付ファイルを抽出する方法を解説しました。ここで概説した手順に従うことで、添付ファイル抽出機能を.NETアプリケーションにシームレスに統合し、メールコンテンツの処理方法を向上させることができます。
 
 ## よくある質問
 
-### Aspose.Email for .NET をダウンロードするにはどうすればよいですか?
+### Aspose.Email for .NET をダウンロードするにはどうすればいいですか?
 
- Aspose.Email for .NET は、[Aspose.電子メール Web サイト](https://releases.aspose.com/email/net).
+Aspose.Email for .NETは以下からダウンロードできます。 [Aspose.Email ウェブサイト](https://releases。aspose.com/email/net).
 
 ### Aspose.Email はさまざまな電子メール形式と互換性がありますか?
 
-はい、Aspose.Email は、MSG、EML、PST などを含むさまざまな電子メール形式を広範にサポートしています。
+はい、Aspose.Email は、MSG、EML、PST など、さまざまな電子メール形式を幅広くサポートしています。
 
-### Aspose.Email はデスクトップ アプリケーションと Web アプリケーションの両方で使用できますか?
+### Aspose.Email をデスクトップ アプリケーションと Web アプリケーションの両方で使用できますか?
 
-絶対に！ Aspose.Email for .NET はデスクトップ アプリケーションと Web アプリケーションの両方で使用できるため、電子メール処理のニーズに合わせた多用途の選択肢となります。
+もちろんです! Aspose.Email for .NET はデスクトップ アプリケーションと Web アプリケーションの両方で使用できるため、電子メール処理のニーズに合わせて多目的に選択できます。
 
 ### ライセンスに関する考慮事項はありますか?
 
-はい、Aspose.Email は商用ライブラリです。詳細なライセンス情報は、[Aspose ウェブサイト](https://purchase.aspose.com).
+はい、Aspose.Emailは商用ライブラリです。ライセンスに関する詳細は、 [Aspose ウェブサイト](https://purchase。aspose.com).
 
-### 他の例やドキュメントはどこで入手できますか?
+### さらに詳しい例やドキュメントはどこで見つかりますか?
 
- Aspose.Email for .NET の使用に関する詳細な例とドキュメントは、[ドキュメンテーション](https://reference.aspose.com/email/net).
+Aspose.Email for .NET の使用に関する詳細な例とドキュメントは、 [ドキュメント](https://reference。aspose.com/email/net).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

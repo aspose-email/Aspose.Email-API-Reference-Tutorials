@@ -1,33 +1,35 @@
 ---
-title: Estrazione di oggetti incorporati dall'e-mail con C#
-linktitle: Estrazione di oggetti incorporati dall'e-mail con C#
-second_title: Aspose.Email API di elaborazione della posta elettronica .NET
-description: Scopri come estrarre oggetti incorporati dalle e-mail utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice.
-weight: 16
-url: /it/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Scopri come estrarre oggetti incorporati dalle email utilizzando C# e Aspose.Email per .NET. Guida passo passo con esempi di codice."
+"linktitle": "Estrazione di oggetti incorporati da e-mail con C#"
+"second_title": "API di elaborazione e-mail Aspose.Email .NET"
+"title": "Estrazione di oggetti incorporati da e-mail con C#"
+"url": "/it/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Estrazione di oggetti incorporati dall'e-mail con C#
+# Estrazione di oggetti incorporati da e-mail con C#
 
 
-## Introduzione agli oggetti incorporati nei messaggi di posta elettronica
+## Introduzione agli oggetti incorporati nelle e-mail
 
-Gli oggetti incorporati nelle e-mail si riferiscono a file che vengono inseriti direttamente nel contenuto dell'e-mail anziché essere allegati separatamente. Questi oggetti arricchiscono l'esperienza di posta elettronica consentendo al mittente di includere immagini, animazioni o contenuto interattivo nel corpo del messaggio.
+Gli oggetti incorporati nelle email sono file che vengono inseriti direttamente nel contenuto dell'email anziché essere allegati separatamente. Questi oggetti arricchiscono l'esperienza di invio dell'email consentendo al mittente di includere immagini, animazioni o contenuti interattivi nel corpo del messaggio.
 
-## Iniziare con Aspose.Email per .NET
+## Introduzione ad Aspose.Email per .NET
 
- Aspose.Email per .NET è una potente libreria che fornisce varie funzionalità per lavorare con le e-mail, tra cui l'analisi, la creazione e la manipolazione dei messaggi di posta elettronica. Per iniziare, devi avere la libreria Aspose.Email per .NET installata nel tuo progetto. Puoi scaricarlo da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) oppure utilizzare un gestore di pacchetti come NuGet.
+Aspose.Email per .NET è una potente libreria che offre diverse funzionalità per l'utilizzo delle email, tra cui l'analisi, la creazione e la manipolazione dei messaggi. Per iniziare, è necessario che la libreria Aspose.Email per .NET sia installata nel progetto. È possibile scaricarla da Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) oppure utilizzare un gestore di pacchetti come NuGet.
 
 ## Caricamento e analisi di un'e-mail
 
-Per estrarre oggetti incorporati da un'e-mail, devi prima caricare e analizzare il messaggio e-mail. Ecco come puoi farlo:
+Per estrarre gli oggetti incorporati da un'email, è necessario prima caricare e analizzare il messaggio. Ecco come fare:
 
 ```csharp
-// Importa gli spazi dei nomi necessari
+// Importare gli spazi dei nomi necessari
 using Aspose.Email;
 
 
@@ -37,18 +39,18 @@ var message = MailMessage.Load("path/to/your/email.eml");
 
 ## Identificazione ed estrazione di oggetti incorporati
 
-Una volta caricato il messaggio di posta elettronica, è possibile scorrere le sue AlternativeView per identificare ed estrarre oggetti incorporati. Le visualizzazioni alternative rappresentano diversi formati di posta elettronica, inclusi HTML e testo normale. Gli oggetti incorporati si trovano spesso nella vista HTML.
+Una volta caricato il messaggio email, è possibile scorrere le sue AlternateView per identificare ed estrarre gli oggetti incorporati. Le AlternateView rappresentano diversi formati dell'email, inclusi HTML e testo normale. Gli oggetti incorporati si trovano spesso nella vista HTML.
 
 ```csharp
-// Scorri le visualizzazioni alternative
+// Scorrere le viste alternative
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // Estrai oggetti incorporati dal contenuto HTML
+        // Estrarre oggetti incorporati dal contenuto HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            // Estrai e salva la risorsa collegata (oggetto incorporato)
+            // Estrarre e salvare la risorsa collegata (oggetto incorporato)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -57,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ## Salvataggio degli oggetti estratti
 
-Una volta identificati ed estratti gli oggetti incorporati, puoi salvarli nella posizione desiderata. Il ContentId della risorsa collegata viene spesso utilizzato come nome file.
+Una volta identificati ed estratti gli oggetti incorporati, puoi salvarli nella posizione desiderata. Il ContentId della risorsa collegata viene spesso utilizzato come nome del file.
 
 ## Codice sorgente completo
 
@@ -76,15 +78,15 @@ namespace EmbeddedObjectExtractor
             // Carica il messaggio di posta elettronica
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            // Scorri le visualizzazioni alternative
+            // Scorrere le viste alternative
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // Estrai oggetti incorporati dal contenuto HTML
+                    // Estrarre oggetti incorporati dal contenuto HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        // Estrai e salva la risorsa collegata (oggetto incorporato)
+                        // Estrarre e salvare la risorsa collegata (oggetto incorporato)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,32 +98,34 @@ namespace EmbeddedObjectExtractor
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato come estrarre oggetti incorporati dalle e-mail utilizzando C# e la libreria Aspose.Email per .NET. Abbiamo coperto l'intero processo, dal caricamento e l'analisi dell'e-mail all'identificazione e al salvataggio degli oggetti incorporati. Seguendo questa guida, puoi migliorare le tue capacità di elaborazione della posta elettronica e arricchire il contenuto delle tue applicazioni.
+In questo articolo abbiamo illustrato come estrarre oggetti incorporati dalle email utilizzando C# e la libreria Aspose.Email per .NET. Abbiamo trattato l'intero processo, dal caricamento e dall'analisi dell'email all'identificazione e al salvataggio degli oggetti incorporati. Seguendo questa guida, potrete migliorare le vostre capacità di elaborazione delle email e arricchire il contenuto delle vostre applicazioni.
 
 ## Domande frequenti
 
-### Come installo Aspose.Email per .NET?
+### Come faccio a installare Aspose.Email per .NET?
 
- È possibile installare Aspose.Email per .NET scaricandolo da Aspose.Releases:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilizzando un gestore di pacchetti come NuGet. 
+È possibile installare Aspose.Email per .NET scaricandolo da Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) oppure utilizzando un gestore di pacchetti come NuGet. 
 
-### Posso estrarre oggetti incorporati da allegati diversi da HTML?
+### Posso estrarre oggetti incorporati da allegati diversi dall'HTML?
 
-Sì, Aspose.Email per .NET fornisce metodi per estrarre oggetti incorporati da vari tipi di allegati, inclusi HTML, testo semplice e persino formati multimediali.
+Sì, Aspose.Email per .NET fornisce metodi per estrarre oggetti incorporati da vari tipi di allegati, tra cui HTML, testo normale e persino formati multimediali.
 
 ### Aspose.Email per .NET è gratuito?
 
- Aspose.Email per .NET è una libreria commerciale e potrebbe essere necessario acquisire una licenza per utilizzarla nei tuoi progetti. Fare riferimento al[pagina dei prezzi](https://purchase.aspose.com/pricing/email/net) per maggiori informazioni.
+Aspose.Email per .NET è una libreria commerciale e potrebbe essere necessario acquistare una licenza per utilizzarla nei propri progetti. Fare riferimento a [pagina dei prezzi](https://purchase.aspose.com/pricing/email/net) per maggiori informazioni.
 
-### Posso modificare gli oggetti incorporati estratti prima di salvare?
+### Posso modificare gli oggetti incorporati estratti prima di salvarli?
 
-Sì, puoi manipolare gli oggetti incorporati estratti prima di salvarli. La libreria Aspose.Email offre vari metodi per modificare il contenuto e le risorse della posta elettronica.
+Sì, è possibile manipolare gli oggetti incorporati estratti prima di salvarli. La libreria Aspose.Email offre diversi metodi per modificare il contenuto e le risorse delle email.
 
 ### Dove posso trovare altri esempi di utilizzo di Aspose.Email per .NET?
 
- Puoi trovare altri esempi di codice ed esercitazioni nel file[Riferimento API](https://reference.aspose.com/email/net/). 
+Puoi trovare altri esempi di codice e tutorial in [Riferimento API](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

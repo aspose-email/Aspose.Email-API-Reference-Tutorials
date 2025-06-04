@@ -1,54 +1,56 @@
 ---
-title: C# を使用して電子メールから埋め込みオブジェクトを抽出する
-linktitle: C# を使用して電子メールから埋め込みオブジェクトを抽出する
-second_title: Aspose.Email .NET 電子メール処理 API
-description: C# と Aspose.Email for .NET を使用して電子メールから埋め込みオブジェクトを抽出する方法を学びます。コード例を含むステップバイステップのガイド。
-weight: 16
-url: /ja/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "C#とAspose.Email for .NETを使用して、メールから埋め込みオブジェクトを抽出する方法を学びましょう。コード例を使ったステップバイステップのガイドです。"
+"linktitle": "C# でメールから埋め込みオブジェクトを抽出する"
+"second_title": "Aspose.Email .NET メール処理 API"
+"title": "C# でメールから埋め込みオブジェクトを抽出する"
+"url": "/ja/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C# を使用して電子メールから埋め込みオブジェクトを抽出する
+# C# でメールから埋め込みオブジェクトを抽出する
 
 
-## 電子メールの埋め込みオブジェクトの概要
+## メールの埋め込みオブジェクトの概要
 
-電子メール内の埋め込みオブジェクトとは、個別に添付されるのではなく、電子メールのコンテンツに直接挿入されるファイルを指します。これらのオブジェクトを使用すると、送信者がメッセージ本文内に画像、アニメーション、またはインタラクティブなコンテンツを含めることができるようになり、電子メール エクスペリエンスが強化されます。
+メールの埋め込みオブジェクトとは、別途添付されるのではなく、メール本文に直接挿入されるファイルのことです。これらのオブジェクトにより、送信者はメッセージ本文に画像、アニメーション、インタラクティブなコンテンツなどを含めることができ、メールの利便性が向上します。
 
-## Aspose.Email for .NET の入門
+## Aspose.Email for .NET を使い始める
 
- Aspose.Email for .NET は、電子メール メッセージの解析、作成、操作など、電子メールを操作するためのさまざまな機能を提供する強力なライブラリです。開始するには、プロジェクトに Aspose.Email for .NET ライブラリをインストールする必要があります。 Aspose.リリース からダウンロードできます。[Aspose.Releases](https://releases.aspose.com/email/net/)または、NuGet などのパッケージ マネージャーを使用します。
+Aspose.Email for .NETは、メールメッセージの解析、作成、操作など、メールを扱うための様々な機能を提供する強力なライブラリです。使用を開始するには、プロジェクトにAspose.Email for .NETライブラリがインストールされている必要があります。Aspose.Releasesからダウンロードできます。 [Aspose.リリース](https://releases.aspose.com/email/net/) または、NuGet などのパッケージ マネージャーを使用します。
 
-## 電子メールのロードと解析
+## メールの読み込みと解析
 
-電子メールから埋め込みオブジェクトを抽出するには、まず電子メール メッセージをロードして解析する必要があります。その方法は次のとおりです。
+メールから埋め込みオブジェクトを抽出するには、まずメールメッセージを読み込んで解析する必要があります。手順は以下のとおりです。
 
 ```csharp
-//必要な名前空間をインポートする
+// 必要な名前空間をインポートする
 using Aspose.Email;
 
 
-//電子メールメッセージをロードする
+// メールメッセージを読み込む
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
 ## 埋め込みオブジェクトの識別と抽出
 
-電子メール メッセージが読み込まれると、その AlternateView を反復処理して、埋め込みオブジェクトを識別して抽出できます。 AlternateView は、HTML やプレーン テキストなど、電子メールのさまざまな形式を表します。埋め込みオブジェクトは、HTML ビューでよく見られます。
+メールメッセージが読み込まれたら、AlternateViews を反復処理して埋め込みオブジェクトを識別し、抽出することができます。AlternateViews は、HTML やプレーンテキストなど、メールのさまざまな形式を表します。埋め込みオブジェクトは、多くの場合 HTML ビューに存在します。
 
 ```csharp
-//代替ビューを反復処理する
+// 代替ビューを反復処理する
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        //HTMLコンテンツから埋め込みオブジェクトを抽出する
+        // HTMLコンテンツから埋め込みオブジェクトを抽出する
         foreach (var linkedResource in view.LinkedResources)
         {
-            //リンクされたリソース（埋め込みオブジェクト）を抽出して保存します
+            // リンクされたリソース（埋め込みオブジェクト）を抽出して保存する
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -57,11 +59,11 @@ foreach (var view in message.AlternateViews)
 
 ## 抽出したオブジェクトの保存
 
-埋め込みオブジェクトを特定して抽出したら、それらを目的の場所に保存できます。リンクされたリソースの ContentId は、ファイル名としてよく使用されます。
+埋め込まれたオブジェクトを識別して抽出したら、任意の場所に保存できます。ファイル名には、リンクされたリソースのContentIdが使用されることが多いです。
 
 ## 完全なソースコード
 
-Aspose.Email for .NET を使用して電子メールから埋め込みオブジェクトを抽出するための完全なソース コードを次に示します。
+Aspose.Email for .NET を使用して電子メールから埋め込みオブジェクトを抽出するための完全なソース コードは次のとおりです。
 
 ```csharp
 using Aspose.Email;
@@ -73,18 +75,18 @@ namespace EmbeddedObjectExtractor
     {
         static void Main(string[] args)
         {
-            //電子メールメッセージをロードする
+            // メールメッセージを読み込む
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            //代替ビューを反復処理する
+            // 代替ビューを反復処理する
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    //HTMLコンテンツから埋め込みオブジェクトを抽出する
+                    // HTMLコンテンツから埋め込みオブジェクトを抽出する
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        //リンクされたリソース（埋め込みオブジェクト）を抽出して保存します
+                        // リンクされたリソース（埋め込みオブジェクト）を抽出して保存する
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,13 +98,13 @@ namespace EmbeddedObjectExtractor
 
 ## 結論
 
-この記事では、C# と Aspose.Email for .NET ライブラリを使用して電子メールから埋め込みオブジェクトを抽出する方法について説明しました。電子メールのロードと解析から、埋め込まれたオブジェクトの識別と保存に至るまで、プロセス全体をカバーしました。このガイドに従うことで、電子メール処理機能を強化し、アプリケーションのコンテンツを充実させることができます。
+この記事では、C#とAspose.Email for .NETライブラリを用いて、メールから埋め込みオブジェクトを抽出する方法を解説しました。メールの読み込みと解析から、埋め込みオブジェクトの識別と保存まで、プロセス全体を網羅しています。このガイドに従うことで、メール処理能力を強化し、アプリケーションのコンテンツを充実させることができます。
 
 ## よくある質問
 
 ### Aspose.Email for .NET をインストールするにはどうすればよいですか?
 
- Aspose.Email for .NET は、Aspose.リリース からダウンロードしてインストールできます。[Aspose.Releases](https://releases.aspose.com/email/net/)または、NuGet などのパッケージ マネージャーを使用します。 
+Aspose.Email for .NET は、Aspose.Releases からダウンロードしてインストールできます。 [Aspose.リリース](https://releases.aspose.com/email/net/) または NuGet などのパッケージ マネージャーを使用します。 
 
 ### HTML 以外の添付ファイルから埋め込みオブジェクトを抽出できますか?
 
@@ -110,18 +112,20 @@ namespace EmbeddedObjectExtractor
 
 ### Aspose.Email for .NET は無料で使用できますか?
 
- Aspose.Email for .NET は商用ライブラリなので、プロジェクトで使用するにはライセンスの取得が必要な場合があります。を参照してください。[価格ページ](https://purchase.aspose.com/pricing/email/net)詳細については。
+Aspose.Email for .NETは商用ライブラリであり、プロジェクトで使用するにはライセンスの取得が必要になる場合があります。 [価格ページ](https://purchase.aspose.com/pricing/email/net) 詳細についてはこちらをご覧ください。
 
-### 抽出した埋め込みオブジェクトを保存する前に変更できますか?
+### 抽出した埋め込みオブジェクトを保存前に変更できますか?
 
-はい、抽出された埋め込みオブジェクトを保存する前に操作できます。 Aspose.Email ライブラリは、電子メールのコンテンツとリソースを変更するためのさまざまな方法を提供します。
+はい、抽出した埋め込みオブジェクトは保存前に操作できます。Aspose.Email ライブラリには、メールの内容やリソースを変更するためのさまざまなメソッドが用意されています。
 
-### Aspose.Email for .NET の使用例を他にどこで見つけることができますか?
+### Aspose.Email for .NET の使用例をもっと知りたい場合は、どこに行けばよいですか?
 
-さらに多くのコード例とチュートリアルは、[APIリファレンス](https://reference.aspose.com/email/net/). 
+その他のコード例とチュートリアルについては、 [APIリファレンス](https://reference。aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

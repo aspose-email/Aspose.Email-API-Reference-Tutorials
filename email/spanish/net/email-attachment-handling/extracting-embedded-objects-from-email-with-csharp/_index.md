@@ -1,30 +1,32 @@
 ---
-title: Extracción de objetos incrustados del correo electrónico con C#
-linktitle: Extracción de objetos incrustados del correo electrónico con C#
-second_title: Aspose.Email API de procesamiento de correo electrónico .NET
-description: Aprenda a extraer objetos incrustados de correos electrónicos usando C# y Aspose.Email para .NET. Guía paso a paso con ejemplos de código.
-weight: 16
-url: /es/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Aprenda a extraer objetos incrustados de correos electrónicos con C# y Aspose.Email para .NET. Guía paso a paso con ejemplos de código."
+"linktitle": "Cómo extraer objetos incrustados del correo electrónico con C#"
+"second_title": "API de procesamiento de correo electrónico Aspose.Email .NET"
+"title": "Cómo extraer objetos incrustados del correo electrónico con C#"
+"url": "/es/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracción de objetos incrustados del correo electrónico con C#
+# Cómo extraer objetos incrustados del correo electrónico con C#
 
 
 ## Introducción a los objetos incrustados en los correos electrónicos
 
-Los objetos incrustados en los correos electrónicos se refieren a archivos que se insertan directamente en el contenido del correo electrónico en lugar de adjuntarse por separado. Estos objetos enriquecen la experiencia del correo electrónico al permitir al remitente incluir imágenes, animaciones o contenido interactivo dentro del cuerpo del mensaje.
+Los objetos incrustados en los correos electrónicos son archivos que se insertan directamente en el contenido, en lugar de adjuntarse por separado. Estos objetos enriquecen la experiencia del correo electrónico al permitir al remitente incluir imágenes, animaciones o contenido interactivo en el cuerpo del mensaje.
 
-## Primeros pasos con Aspose.Email para .NET
+## Introducción a Aspose.Email para .NET
 
- Aspose.Email para .NET es una poderosa biblioteca que proporciona varias funciones para trabajar con correos electrónicos, incluido el análisis, la creación y la manipulación de mensajes de correo electrónico. Para comenzar, necesita tener la biblioteca Aspose.Email para .NET instalada en su proyecto. Puede descargarlo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o utilice un administrador de paquetes como NuGet.
+Aspose.Email para .NET es una potente biblioteca que ofrece diversas funciones para trabajar con correos electrónicos, incluyendo el análisis, la creación y la manipulación de mensajes. Para empezar, necesita tener la biblioteca Aspose.Email para .NET instalada en su proyecto. Puede descargarla desde Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) o utilice un administrador de paquetes como NuGet.
 
-## Cargando y analizando un correo electrónico
+## Cargar y analizar un correo electrónico
 
-Para extraer objetos incrustados de un correo electrónico, primero debe cargar y analizar el mensaje de correo electrónico. Así es como puedes hacerlo:
+Para extraer objetos incrustados de un correo electrónico, primero debe cargar y analizar el mensaje. A continuación, le explicamos cómo hacerlo:
 
 ```csharp
 // Importar los espacios de nombres necesarios
@@ -35,9 +37,9 @@ using Aspose.Email;
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Identificar y extraer objetos incrustados
+## Identificación y extracción de objetos incrustados
 
-Una vez cargado el mensaje de correo electrónico, puede recorrer sus AlternateViews para identificar y extraer objetos incrustados. AlternateViews representa diferentes formatos del correo electrónico, incluidos HTML y texto sin formato. Los objetos incrustados suelen encontrarse en la vista HTML.
+Una vez cargado el mensaje de correo electrónico, puede iterar por sus vistas alternativas para identificar y extraer objetos incrustados. Las vistas alternativas representan diferentes formatos del correo electrónico, incluyendo HTML y texto sin formato. Los objetos incrustados suelen encontrarse en la vista HTML.
 
 ```csharp
 // Iterar a través de vistas alternativas
@@ -45,10 +47,10 @@ foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // Extraiga objetos incrustados del contenido HTML
+        // Extraer objetos incrustados del contenido HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            // Extraiga y guarde el recurso vinculado (objeto incrustado)
+            // Extraer y guardar el recurso vinculado (objeto incrustado)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -57,7 +59,7 @@ foreach (var view in message.AlternateViews)
 
 ## Guardar objetos extraídos
 
-Una vez que haya identificado y extraído los objetos incrustados, puede guardarlos en la ubicación deseada. El ContentId del recurso vinculado se utiliza a menudo como nombre de archivo.
+Una vez identificados y extraídos los objetos incrustados, puede guardarlos en la ubicación deseada. El ContentId del recurso vinculado suele usarse como nombre de archivo.
 
 ## Código fuente completo
 
@@ -81,10 +83,10 @@ namespace EmbeddedObjectExtractor
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // Extraiga objetos incrustados del contenido HTML
+                    // Extraer objetos incrustados del contenido HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        // Extraiga y guarde el recurso vinculado (objeto incrustado)
+                        // Extraer y guardar el recurso vinculado (objeto incrustado)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,21 +98,21 @@ namespace EmbeddedObjectExtractor
 
 ## Conclusión
 
-En este artículo, exploramos cómo extraer objetos incrustados de correos electrónicos usando C# y la biblioteca Aspose.Email para .NET. Cubrimos todo el proceso, desde cargar y analizar el correo electrónico hasta identificar y guardar los objetos incrustados. Si sigue esta guía, podrá mejorar sus capacidades de procesamiento de correo electrónico y enriquecer el contenido de sus aplicaciones.
+En este artículo, exploramos cómo extraer objetos incrustados de correos electrónicos usando C# y la biblioteca Aspose.Email para .NET. Cubrimos todo el proceso, desde la carga y el análisis del correo electrónico hasta la identificación y el almacenamiento de los objetos incrustados. Siguiendo esta guía, podrá mejorar sus capacidades de procesamiento de correo electrónico y enriquecer el contenido de sus aplicaciones.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo instalo Aspose.Email para .NET?
 
- Puede instalar Aspose.Email para .NET descargándolo desde Lanzamientos.Aspose:[Aspose.Releases](https://releases.aspose.com/email/net/) o usando un administrador de paquetes como NuGet. 
+Puede instalar Aspose.Email para .NET descargándolo desde Aspose.Releases: [Aspose.Releases](https://releases.aspose.com/email/net/) o utilizando un administrador de paquetes como NuGet. 
 
 ### ¿Puedo extraer objetos incrustados de archivos adjuntos que no sean HTML?
 
-Sí, Aspose.Email para .NET proporciona métodos para extraer objetos incrustados de varios tipos de archivos adjuntos, incluidos HTML, texto sin formato e incluso formatos multimedia.
+Sí, Aspose.Email para .NET proporciona métodos para extraer objetos incrustados de varios tipos de archivos adjuntos, incluidos HTML, texto simple e incluso formatos multimedia.
 
 ### ¿Aspose.Email para .NET es de uso gratuito?
 
- Aspose.Email para .NET es una biblioteca comercial y es posible que necesite adquirir una licencia para usarla en sus proyectos. Referirse a[página de precios](https://purchase.aspose.com/pricing/email/net) para más información.
+Aspose.Email para .NET es una biblioteca comercial, por lo que es posible que necesite adquirir una licencia para usarla en sus proyectos. Consulte la [página de precios](https://purchase.aspose.com/pricing/email/net) Para más información.
 
 ### ¿Puedo modificar los objetos incrustados extraídos antes de guardarlos?
 
@@ -118,10 +120,12 @@ Sí, puedes manipular los objetos incrustados extraídos antes de guardarlos. La
 
 ### ¿Dónde puedo encontrar más ejemplos del uso de Aspose.Email para .NET?
 
- Puede encontrar más ejemplos de código y tutoriales en[Referencia de API](https://reference.aspose.com/email/net/). 
+Puede encontrar más ejemplos de código y tutoriales en [Referencia de API](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,36 +1,38 @@
 ---
-title: Różnicowanie załączników wbudowanych i regularnych — podejście C#
-linktitle: Różnicowanie załączników wbudowanych i regularnych — podejście C#
-second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
-description: Dowiedz się, jak odróżnić wbudowane i zwykłe załączniki do wiadomości e-mail za pomocą Aspose.Email dla .NET. Obszerny przewodnik z przykładami kodu.
-weight: 17
-url: /pl/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/
+"description": "Dowiedz się, jak odróżnić załączniki inline od zwykłych załączników e-mail przy użyciu Aspose.Email dla .NET. Kompleksowy przewodnik z przykładami kodu."
+"linktitle": "Różnicowanie załączników wbudowanych i zwykłych — podejście C#"
+"second_title": "Aspose.Email .NET API przetwarzania poczty e-mail"
+"title": "Różnicowanie załączników wbudowanych i zwykłych — podejście C#"
+"url": "/pl/net/email-attachment-handling/differentiating-inline-and-regular-attachments-csharp-approach/"
+"weight": 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Różnicowanie załączników wbudowanych i regularnych — podejście C#
+# Różnicowanie załączników wbudowanych i zwykłych — podejście C#
 
 
-## Wprowadzenie do różnicowania załączników wbudowanych i regularnych — podejście C#
+## Wprowadzenie do różnicowania załączników wbudowanych i zwykłych — podejście C#
 
-W świecie przetwarzania wiadomości e-mail załączniki odgrywają kluczową rolę w przekazywaniu dodatkowych informacji wraz z treścią wiadomości e-mail. Załączniki mogą mieć różne formy, ale dwa najpopularniejsze typy to załączniki wbudowane i zwykłe załączniki. W tym artykule zagłębimy się w dziedzinę załączników do wiadomości e-mail, skupiając się szczególnie na tym, jak odróżnić załączniki wbudowane od zwykłych przy użyciu biblioteki Aspose.Email dla .NET. Ten przewodnik krok po kroku dostarczy Ci niezbędnych informacji i fragmentów kodu, aby efektywnie pracować z obydwoma typami załączników.
+świecie przetwarzania wiadomości e-mail załączniki odgrywają kluczową rolę w przekazywaniu dodatkowych informacji wraz z treścią wiadomości e-mail. Załączniki mogą występować w różnych formach, ale dwa najczęstsze typy to załączniki wbudowane i zwykłe. W tym artykule zagłębimy się w dziedzinę załączników do wiadomości e-mail, skupiając się w szczególności na tym, jak odróżnić załączniki wbudowane od zwykłych za pomocą biblioteki Aspose.Email dla .NET. Ten przewodnik krok po kroku dostarczy Ci niezbędnych spostrzeżeń i fragmentów kodu, aby skutecznie pracować z obydwoma typami załączników.
 
 ## Przewodnik krok po kroku
 
 ## 1. Konfigurowanie środowiska programistycznego
 
-Zanim zagłębimy się w kod, istotne jest posiadanie odpowiedniego środowiska programistycznego. Upewnij się, że masz zainstalowany program Visual Studio w swoim systemie.
+Zanim zagłębimy się w kod, konieczne jest posiadanie odpowiedniego środowiska programistycznego. Upewnij się, że masz zainstalowany program Visual Studio w swoim systemie.
 
-## 2. Tworzenie nowego projektu w Visual Studio
+## 2. Tworzenie nowego projektu w programie Visual Studio
 
-Otwórz Visual Studio i utwórz nowy projekt. Wybierz odpowiedni typ projektu i szablon w oparciu o swoje wymagania.
+Otwórz program Visual Studio i utwórz nowy projekt. Wybierz odpowiedni typ projektu i szablon na podstawie swoich wymagań.
 
-## 3. Instalacja biblioteki Aspose.Email dla .NET
+## 3. Instalowanie biblioteki Aspose.Email dla .NET
 
-Do pracy z załącznikami do wiadomości e-mail użyjemy biblioteki Aspose.Email dla .NET. Można go zainstalować za pomocą Menedżera pakietów NuGet, uruchamiając następujące polecenie w konsoli Menedżera pakietów:
+Aby pracować z załącznikami do wiadomości e-mail, użyjemy biblioteki Aspose.Email dla .NET. Możesz zainstalować ją za pomocą NuGet Package Manager, uruchamiając następujące polecenie w konsoli Package Manager:
 
 ```bash
 Install-Package Aspose.Email
@@ -38,7 +40,7 @@ Install-Package Aspose.Email
 
 ## 4. Ładowanie wiadomości e-mail
 
-Po pierwsze, potrzebujesz wiadomości e-mail, z którą będziesz pracować. Załaduj wiadomość e-mail, korzystając z klas biblioteki Aspose.Email.
+Najpierw potrzebujesz wiadomości e-mail, z którą chcesz pracować. Załaduj wiadomość e-mail, używając klas biblioteki Aspose.Email.
 
 ## 5. Pobieranie załączników z wiadomości e-mail
 
@@ -47,25 +49,25 @@ Użyj poniższego fragmentu kodu, aby pobrać wszystkie załączniki z załadowa
 ```csharp
 
 
-// Załaduj wiadomość e-mail (zakładając: „emailMessage”)
+// Załaduj wiadomość e-mail (przyjęto: 'emailMessage')
 AttachmentCollection attachments = emailMessage.Attachments;
 ```
 
-## 6. Rozróżnienie załączników wbudowanych i zwykłych
+## 6. Rozróżnianie załączników inline i regularnych
 
-Aby rozróżnić załączniki wbudowane i zwykłe, należy sprawdzić każdy załącznik`ContentDisposition` nieruchomość. Jeśli`ContentDisposition` jest ustawiony na „inline”, załącznik jest załącznikiem wbudowanym.
+Aby odróżnić załączniki wbudowane od zwykłych, należy sprawdzić każdy załącznik. `ContentDisposition` nieruchomość. Jeśli `ContentDisposition` jest ustawiony na „inline”, załącznik jest załącznikiem inline.
 
 ## 7. Praca z załącznikami wbudowanymi
 
-W przypadku załączników wbudowanych można uzyskać dostęp do ich zawartości i powiązanych informacji. Użyj poniższego fragmentu kodu jako odniesienia:
+Podczas obsługi załączników inline możesz uzyskać dostęp do ich zawartości i powiązanych informacji. Użyj następującego fragmentu kodu jako odniesienia:
 
 ```csharp
 foreach (Attachment attachment in attachments)
 {
     if (attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
-        // Obsługuj załącznik wbudowany
-        // Przykład: Wyświetl identyfikator i typ zawartości
+        // Uchwyt do mocowania w linii
+        // Przykład: Wyświetlanie identyfikatora zawartości i typu zawartości
         string contentId = attachment.ContentId;
         string contentType = attachment.ContentType.Name;
     }
@@ -74,7 +76,7 @@ foreach (Attachment attachment in attachments)
 
 ## 8. Obsługa zwykłych załączników
 
-Zwykłe załączniki nie mają typu dyspozycji „wbudowanego”. Możesz je przetwarzać, korzystając z następującego fragmentu kodu:
+Zwykłe załączniki nie mają typu dyspozycji „inline”. Możesz je przetworzyć, używając następującego fragmentu kodu:
 
 ```csharp
 foreach (Attachment attachment in attachments)
@@ -82,7 +84,7 @@ foreach (Attachment attachment in attachments)
     if (!attachment.ContentDisposition.DispositionType.Equals("inline"))
     {
         // Obsługuj regularne załączniki
-        // Przykład: Zapisz załącznik na dysku
+        // Przykład: Zapisywanie załącznika na dysku
         attachment.Save("path/to/save/" + attachment.Name);
     }
 }
@@ -90,32 +92,34 @@ foreach (Attachment attachment in attachments)
 
 ## Wniosek
 
-tym przewodniku zgłębiliśmy świat załączników do wiadomości e-mail, koncentrując się na rozróżnieniu pomiędzy załącznikami wbudowanymi i zwykłymi, korzystając z biblioteki Aspose.Email dla .NET. Postępując zgodnie ze szczegółowymi instrukcjami i wykorzystując dostarczone fragmenty kodu, możesz skutecznie identyfikować oba typy załączników i pracować z nimi w zadaniach przetwarzania wiadomości e-mail.
+W tym przewodniku zbadaliśmy świat załączników e-mail, skupiając się na rozróżnieniu między załącznikami inline i regularnymi za pomocą biblioteki Aspose.Email for .NET. Postępując zgodnie z instrukcjami krok po kroku i wykorzystując dostarczone fragmenty kodu, możesz skutecznie identyfikować i pracować z obydwoma typami załączników w zadaniach przetwarzania wiadomości e-mail.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zainstalować bibliotekę Aspose.Email dla .NET?
+### Jak zainstalować bibliotekę Aspose.Email dla .NET?
 
- Bibliotekę Aspose.Email dla .NET można zainstalować przy użyciu Menedżera pakietów NuGet. Po prostu uruchom następującą komendę w konsoli Menedżera pakietów:`Install-Package Aspose.Email`.
+Możesz zainstalować bibliotekę Aspose.Email dla .NET za pomocą NuGet Package Manager. Wystarczy uruchomić następujące polecenie w konsoli Package Manager: `Install-Package Aspose.Email`.
 
-### Czy mogę programowo rozróżnić załączniki wbudowane i zwykłe?
+### Czy mogę programowo rozróżniać załączniki inline i zwykłe?
 
- Tak, możesz rozróżnić załączniki wbudowane i zwykłe, sprawdzając plik`ContentDisposition` właściwość każdego załącznika. Załączniki z typem dyspozycji „wbudowany” są załącznikami wbudowanymi.
+Tak, możesz rozróżnić załączniki wbudowane i zwykłe, sprawdzając `ContentDisposition` właściwość każdego załącznika. Załączniki z typem dyspozycji „inline” są załącznikami inline.
 
-### Czy Aspose.Email nadaje się do obsługi załączników do wiadomości e-mail w innych językach programowania?
+### Czy Aspose.Email nadaje się do obsługi załączników e-mail w innych językach programowania?
 
-Tak, Aspose.Email udostępnia biblioteki dla różnych języków programowania, dzięki czemu nadaje się do obsługi załączników do wiadomości e-mail w szerokiej gamie środowisk programistycznych.
+Tak, Aspose.Email udostępnia biblioteki dla różnych języków programowania, dzięki czemu nadaje się do obsługi załączników e-mail w szerokiej gamie środowisk programistycznych.
 
-### Jak uzyskać dostęp do treści załącznika wbudowanego?
+### Jak mogę uzyskać dostęp do zawartości załącznika inline?
 
-Dostęp do zawartości załącznika wbudowanego można uzyskać, korzystając z odpowiednich właściwości udostępnianych przez bibliotekę Aspose.Email. Można na przykład pobrać identyfikator treści i typ zawartości załącznika wbudowanego.
+Dostęp do zawartości załącznika inline można uzyskać, używając odpowiednich właściwości dostarczonych przez bibliotekę Aspose.Email. Na przykład można pobrać identyfikator zawartości i typ zawartości załącznika inline.
 
 ### Czy mogę zapisywać zwykłe załączniki w określonej lokalizacji na dysku?
 
- Absolutnie! Możesz zapisywać zwykłe załączniki w określonej lokalizacji na dysku, korzystając z opcji`Save` metodę obiektu załącznika i podanie żądanej ścieżki pliku.
+Oczywiście! Możesz zapisać regularne załączniki w określonej lokalizacji na dysku, korzystając z `Save` metodę obiektu załącznika i podając żądaną ścieżkę do pliku.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,30 +1,32 @@
 ---
-title: Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języka C#
-linktitle: Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języka C#
-second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
-description: Dowiedz się, jak wyodrębnić osadzone obiekty z wiadomości e-mail przy użyciu języka C# i Aspose.Email dla .NET. Przewodnik krok po kroku z przykładami kodu.
-weight: 16
-url: /pl/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/
+"description": "Dowiedz się, jak wyodrębnić osadzone obiekty z wiadomości e-mail za pomocą języka C# i Aspose.Email dla platformy .NET. Przewodnik krok po kroku z przykładami kodu."
+"linktitle": "Wyodrębnianie obiektów osadzonych z wiadomości e-mail za pomocą języka C#"
+"second_title": "Aspose.Email .NET API przetwarzania poczty e-mail"
+"title": "Wyodrębnianie obiektów osadzonych z wiadomości e-mail za pomocą języka C#"
+"url": "/pl/net/email-attachment-handling/extracting-embedded-objects-from-email-with-csharp/"
+"weight": 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wyodrębnianie osadzonych obiektów z wiadomości e-mail za pomocą języka C#
+# Wyodrębnianie obiektów osadzonych z wiadomości e-mail za pomocą języka C#
 
 
 ## Wprowadzenie do obiektów osadzonych w wiadomościach e-mail
 
-Obiekty osadzone w wiadomościach e-mail to pliki wstawiane bezpośrednio do treści wiadomości e-mail, a nie dołączane osobno. Obiekty te wzbogacają doświadczenie wiadomości e-mail, umożliwiając nadawcy dołączenie obrazów, animacji lub treści interaktywnych do treści wiadomości.
+Obiekty osadzone w wiadomościach e-mail odnoszą się do plików, które są bezpośrednio wstawiane do treści wiadomości e-mail, a nie dołączane osobno. Te obiekty wzbogacają wrażenia z korzystania z wiadomości e-mail, umożliwiając nadawcy dołączenie obrazów, animacji lub interaktywnej treści do treści wiadomości.
 
-## Pierwsze kroki z Aspose.Email dla .NET
+## Wprowadzenie do Aspose.Email dla .NET
 
- Aspose.Email dla .NET to potężna biblioteka zapewniająca różne funkcje do pracy z wiadomościami e-mail, w tym analizowanie, tworzenie i manipulowanie wiadomościami e-mail. Aby rozpocząć, musisz mieć zainstalowaną bibliotekę Aspose.Email dla .NET w swoim projekcie. Możesz pobrać go z Aspose.Wydaje:[Aspose.Releases](https://releases.aspose.com/email/net/) lub użyj menedżera pakietów, takiego jak NuGet.
+Aspose.Email for .NET to potężna biblioteka, która zapewnia różne funkcje do pracy z wiadomościami e-mail, w tym parsowanie, tworzenie i manipulowanie wiadomościami e-mail. Aby rozpocząć, musisz mieć zainstalowaną bibliotekę Aspose.Email for .NET w swoim projekcie. Możesz ją pobrać z Aspose.Releases: [Aspose.Wydania](https://releases.aspose.com/email/net/) lub użyj menedżera pakietów, takiego jak NuGet.
 
 ## Ładowanie i analizowanie wiadomości e-mail
 
-Aby wyodrębnić osadzone obiekty z wiadomości e-mail, należy najpierw załadować i przeanalizować wiadomość e-mail. Oto jak możesz to zrobić:
+Aby wyodrębnić osadzone obiekty z wiadomości e-mail, najpierw musisz załadować i przeanalizować wiadomość e-mail. Oto, jak możesz to zrobić:
 
 ```csharp
 // Zaimportuj niezbędne przestrzenie nazw
@@ -35,20 +37,20 @@ using Aspose.Email;
 var message = MailMessage.Load("path/to/your/email.eml");
 ```
 
-## Identyfikowanie i wyodrębnianie osadzonych obiektów
+## Identyfikowanie i wyodrębnianie obiektów osadzonych
 
-Po załadowaniu wiadomości e-mail możesz przeglądać jej widoki AlternateView, aby zidentyfikować i wyodrębnić osadzone obiekty. Widoki alternatywne reprezentują różne formaty wiadomości e-mail, w tym HTML i zwykły tekst. Obiekty osadzone często można znaleźć w widoku HTML.
+Po załadowaniu wiadomości e-mail możesz przejść przez jej AlternateViews, aby zidentyfikować i wyodrębnić osadzone obiekty. AlternateViews reprezentują różne formaty wiadomości e-mail, w tym HTML i zwykły tekst. Osadzone obiekty często znajdują się w widoku HTML.
 
 ```csharp
-// Iteruj po alternatywnych widokach
+// Przejrzyj alternatywne widoki
 foreach (var view in message.AlternateViews)
 {
     if (view.ContentType.MediaType == "text/html")
     {
-        // Wyodrębnij osadzone obiekty z treści HTML
+        // Wyodrębnij osadzone obiekty z zawartości HTML
         foreach (var linkedResource in view.LinkedResources)
         {
-            // Wyodrębnij i zapisz połączony zasób (obiekt osadzony)
+            // Wyodrębnij i zapisz powiązany zasób (obiekt osadzony)
             linkedResource.Save("path/to/save/" + linkedResource.ContentId);
         }
     }
@@ -57,11 +59,11 @@ foreach (var view in message.AlternateViews)
 
 ## Zapisywanie wyodrębnionych obiektów
 
-Po zidentyfikowaniu i wyodrębnieniu osadzonych obiektów możesz zapisać je w wybranej lokalizacji. Jako nazwa pliku często używany jest identyfikator ContentId połączonego zasobu.
+Po zidentyfikowaniu i wyodrębnieniu osadzonych obiektów możesz zapisać je w wybranej lokalizacji. ContentId połączonego zasobu jest często używane jako nazwa pliku.
 
 ## Kompletny kod źródłowy
 
-Oto kompletny kod źródłowy do wyodrębniania osadzonych obiektów z wiadomości e-mail przy użyciu Aspose.Email dla .NET:
+Oto kompletny kod źródłowy umożliwiający wyodrębnienie osadzonych obiektów z wiadomości e-mail przy użyciu Aspose.Email dla platformy .NET:
 
 ```csharp
 using Aspose.Email;
@@ -76,15 +78,15 @@ namespace EmbeddedObjectExtractor
             // Załaduj wiadomość e-mail
             var message = MailMessage.Load("path/to/your/email.eml");
 
-            // Iteruj po alternatywnych widokach
+            // Przejrzyj alternatywne widoki
             foreach (var view in message.AlternateViews)
             {
                 if (view.ContentType.MediaType == "text/html")
                 {
-                    // Wyodrębnij osadzone obiekty z treści HTML
+                    // Wyodrębnij osadzone obiekty z zawartości HTML
                     foreach (var linkedResource in view.LinkedResources)
                     {
-                        // Wyodrębnij i zapisz połączony zasób (obiekt osadzony)
+                        // Wyodrębnij i zapisz powiązany zasób (obiekt osadzony)
                         linkedResource.Save("path/to/save/" + linkedResource.ContentId);
                     }
                 }
@@ -96,32 +98,34 @@ namespace EmbeddedObjectExtractor
 
 ## Wniosek
 
-tym artykule zbadaliśmy, jak wyodrębnić osadzone obiekty z wiadomości e-mail przy użyciu języka C# i biblioteki Aspose.Email dla .NET. Omówiliśmy cały proces, od ładowania i analizowania wiadomości e-mail po identyfikację i zapisywanie osadzonych obiektów. Postępując zgodnie z tym przewodnikiem, możesz zwiększyć możliwości przetwarzania poczty e-mail i wzbogacić zawartość swoich aplikacji.
+tym artykule przyjrzeliśmy się sposobowi wyodrębniania osadzonych obiektów z wiadomości e-mail przy użyciu języka C# i biblioteki Aspose.Email for .NET. Omówiliśmy cały proces, od ładowania i analizowania wiadomości e-mail po identyfikowanie i zapisywanie osadzonych obiektów. Postępując zgodnie z tym przewodnikiem, możesz zwiększyć możliwości przetwarzania wiadomości e-mail i wzbogacić zawartość swoich aplikacji.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zainstalować Aspose.Email dla .NET?
 
- Możesz zainstalować Aspose.Email dla .NET, pobierając go z Aspose.Wydaje:[Aspose.Releases](https://releases.aspose.com/email/net/) lub używając menedżera pakietów, takiego jak NuGet. 
+Możesz zainstalować Aspose.Email dla platformy .NET, pobierając go ze strony Aspose.Releases: [Aspose.Wydania](https://releases.aspose.com/email/net/) lub korzystając z menedżera pakietów, takiego jak NuGet. 
 
 ### Czy mogę wyodrębnić osadzone obiekty z załączników innych niż HTML?
 
-Tak, Aspose.Email dla .NET zapewnia metody wyodrębniania osadzonych obiektów z różnych typów załączników, w tym HTML, zwykłego tekstu, a nawet formatów multimedialnych.
+Tak, Aspose.Email dla .NET udostępnia metody wyodrębniania osadzonych obiektów z różnych typów załączników, w tym HTML, zwykłego tekstu, a nawet formatów multimedialnych.
 
 ### Czy korzystanie z Aspose.Email dla .NET jest bezpłatne?
 
- Aspose.Email dla .NET jest biblioteką komercyjną i może być konieczne uzyskanie licencji, aby używać jej w swoich projektach. Patrz[strona z cenami](https://purchase.aspose.com/pricing/email/net) po więcej informacji.
+Aspose.Email dla .NET jest biblioteką komercyjną i może być konieczne nabycie licencji, aby móc jej używać w swoich projektach. Zapoznaj się z [strona cenowa](https://purchase.aspose.com/pricing/email/net) Aby uzyskać więcej informacji.
 
-### Czy mogę zmodyfikować wyodrębnione osadzone obiekty przed zapisaniem?
+### Czy mogę zmodyfikować wyodrębnione, osadzone obiekty przed zapisaniem?
 
-Tak, możesz manipulować wyodrębnionymi osadzonymi obiektami przed ich zapisaniem. Biblioteka Aspose.Email oferuje różne metody modyfikowania treści i zasobów wiadomości e-mail.
+Tak, możesz manipulować wyodrębnionymi osadzonymi obiektami przed ich zapisaniem. Biblioteka Aspose.Email oferuje różne metody modyfikowania zawartości i zasobów wiadomości e-mail.
 
-### Gdzie mogę znaleźć więcej przykładów użycia Aspose.Email dla .NET?
+### Gdzie mogę znaleźć więcej przykładów wykorzystania Aspose.Email dla .NET?
 
- Więcej przykładów kodu i samouczków można znaleźć w pliku[Dokumentacja API](https://reference.aspose.com/email/net/). 
+Więcej przykładów kodu i samouczków znajdziesz w [Odniesienie do API](https://reference.aspose.com/email/net/). 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

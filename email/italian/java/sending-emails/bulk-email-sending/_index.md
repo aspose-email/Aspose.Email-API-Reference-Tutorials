@@ -1,62 +1,64 @@
 ---
-title: Invio di e-mail in blocco con Aspose.Email
-linktitle: Invio di e-mail in blocco con Aspose.Email
-second_title: Aspose.Email API di gestione della posta elettronica Java
-description: Scopri come inviare e-mail in blocco in modo efficiente utilizzando Aspose.Email per Java. Una guida passo passo con esempi di codice per l'email marketing e la comunicazione.
-weight: 14
-url: /it/java/sending-emails/bulk-email-sending/
+"description": "Scopri come inviare email in massa in modo efficiente utilizzando Aspose.Email per Java. Una guida passo passo con esempi di codice per l'email marketing e la comunicazione."
+"linktitle": "Invio di e-mail in blocco con Aspose.Email"
+"second_title": "API di gestione e-mail Java Aspose.Email"
+"title": "Invio di e-mail in blocco con Aspose.Email"
+"url": "/it/java/sending-emails/bulk-email-sending/"
+"weight": 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Invio di e-mail in blocco con Aspose.Email
 
 
-## introduzione
+## Introduzione
 
-L'invio di e-mail collettive in modo efficiente e affidabile è essenziale per molte organizzazioni e aziende. Aspose.Email per Java fornisce una potente soluzione per l'invio di e-mail in blocco a livello di codice. In questa guida passo passo ti guideremo attraverso il processo di invio di e-mail in blocco utilizzando Aspose.Email per Java.
+Inviare email in massa in modo efficiente e affidabile è essenziale per molte organizzazioni e aziende. Aspose.Email per Java offre una soluzione potente per l'invio di email in massa tramite programmazione. In questa guida dettagliata, ti guideremo attraverso il processo di invio di email in massa utilizzando Aspose.Email per Java.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
-1. Ambiente di sviluppo Java: assicurati di avere un ambiente di sviluppo Java configurato sul tuo sistema. Avrai bisogno di Java per compilare ed eseguire gli esempi di codice Java in questa guida.
+1. Ambiente di sviluppo Java: assicurati di avere un ambiente di sviluppo Java installato sul tuo sistema. Java è necessario per compilare ed eseguire gli esempi di codice Java in questa guida.
 
-2. Libreria Aspose.Email per Java: scarica la libreria Aspose.Email per Java dal collegamento per il download:
+2. Libreria Aspose.Email per Java: scarica la libreria Aspose.Email per Java dal link per il download:
 
-   [Aspose.E-mail per il download di Java](https://releases.aspose.com/email/java/)
+   [Scarica Aspose.Email per Java](https://releases.aspose.com/email/java/)
 
-   Una volta scaricato, aggiungi i file JAR Aspose.Email al classpath del tuo progetto Java. Questa libreria è essenziale per l'invio di e-mail in blocco utilizzando Aspose.Email.
+   Una volta scaricati, aggiungi i file JAR di Aspose.Email al classpath del tuo progetto Java. Questa libreria è essenziale per l'invio di email in blocco tramite Aspose.Email.
 
 ## Passaggio 1: configura il tuo ambiente Java
 
-Assicurati di avere Java e Aspose.Email per Java installati e configurati nel tuo ambiente di sviluppo.
+Assicurati di aver installato e configurato Java e Aspose.Email per Java nel tuo ambiente di sviluppo.
 
-## Passaggio 2: crea un nuovo progetto Java
+## Passaggio 2: creare un nuovo progetto Java
 
-Crea un nuovo progetto Java nell'ambiente di sviluppo integrato (IDE) prescelto.
+Crea un nuovo progetto Java nell'ambiente di sviluppo integrato (IDE) scelto.
 
 ## Passaggio 3: aggiungere Aspose.Email per la libreria Java
 
-Scarica la libreria Aspose.Email per Java dal collegamento per il download:
+Scarica la libreria Aspose.Email per Java dal link per il download:
 
-[Aspose.E-mail per il download di Java](https://releases.aspose.com/email/java/)
+[Scarica Aspose.Email per Java](https://releases.aspose.com/email/java/)
 
 Aggiungi i file JAR scaricati al classpath del tuo progetto.
 
 ## Passaggio 4: importare le classi Aspose.Email
 
-Nel tuo codice Java, importa le classi Aspose.Email necessarie:
+Nel codice Java, importa le classi Aspose.Email necessarie:
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Passaggio 5: crea un messaggio e-mail
+## Passaggio 5: creare un messaggio di posta elettronica
 
-Creare un nuovo messaggio di posta elettronica utilizzando Aspose.Email. Personalizza l'oggetto del messaggio, il mittente, i destinatari e il contenuto in base alle esigenze. Per esempio:
+Crea un nuovo messaggio email utilizzando Aspose.Email. Personalizza l'oggetto, il mittente, i destinatari e il contenuto del messaggio a seconda delle tue esigenze. Ad esempio:
 
 ```java
 MailMessage message = new MailMessage();
@@ -67,9 +69,9 @@ message.getTo().add("recipient2@example.com");
 message.setHtmlBody("<p>This is a bulk email test.</p>");
 ```
 
-## Passaggio 6: invia e-mail in blocco
+## Passaggio 6: inviare e-mail in blocco
 
-Per inviare e-mail in blocco, puoi utilizzare un loop per inviare lo stesso messaggio a più destinatari. Ecco un esempio:
+Per inviare email in blocco, puoi utilizzare un ciclo per inviare lo stesso messaggio a più destinatari. Ecco un esempio:
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
@@ -82,7 +84,7 @@ for (String recipient : recipientsList) {
 }
 ```
 
- Sostituire`"smtp.example.com"`, `"username"` , E`"password"` con i dettagli del tuo server SMTP.
+Sostituire `"smtp.example.com"`, `"username"`, E `"password"` con i dettagli del tuo server SMTP.
 
 ## Passaggio 7: completare il programma
 
@@ -101,9 +103,9 @@ public class BulkEmailSender {
         message.getTo().add("recipient2@example.com");
         message.setHtmlBody("<p>This is a bulk email test.</p>");
         
-        // Crea un client SMTP e invia e-mail in blocco
+        // Crea un client SMTP e invia email in blocco
         SmtpClient client = new SmtpClient("smtp.example.com", "username", "password");
-        String[] recipientsList = {"recipient1@example.com", "recipient2@example.com", /* Add more recipients */};
+        String[] recipientsList = {"recipient1@example.com", "recipient2@example.com", /* Aggiungi altri destinatari */};
         
         for (String recipient : recipientsList) {
             message.getTo().clear();
@@ -119,28 +121,30 @@ public class BulkEmailSender {
 
 ## Conclusione
 
-In questa guida hai imparato come inviare e-mail in blocco utilizzando Aspose.Email per Java. Puoi personalizzare i tuoi messaggi e-mail, aggiungere destinatari e inviarli in modo efficiente a più destinatari, rendendolo uno strumento prezioso per l'e-mail marketing e la comunicazione.
+In questa guida, hai imparato come inviare email in blocco utilizzando Aspose.Email per Java. Puoi personalizzare i tuoi messaggi email, aggiungere destinatari e inviarli in modo efficiente a più destinatari, rendendolo uno strumento prezioso per l'email marketing e la comunicazione.
 
 
-## FAQ (domande frequenti)
+## FAQ (Domande frequenti)
 
-### Posso inviare e-mail a un gran numero di destinatari utilizzando Aspose.Email per Java?
-   Sì, puoi inviare e-mail a un gran numero di destinatari in blocco utilizzando Aspose.Email per Java. Fornisce funzionalità di invio di e-mail efficienti e affidabili.
+### Posso inviare email a un gran numero di destinatari utilizzando Aspose.Email per Java?
+   Sì, puoi inviare email in blocco a un gran numero di destinatari utilizzando Aspose.Email per Java. Offre funzionalità di invio email efficienti e affidabili.
 
-### Quali dettagli del server SMTP devo utilizzare per inviare e-mail in blocco?
-    Dovresti utilizzare i dettagli del server SMTP forniti dal tuo fornitore di servizi di posta elettronica o dal server di posta elettronica della tua organizzazione. Sostituire`"smtp.example.com"`, `"username"` , E`"password"` nel codice con le informazioni del server SMTP.
+### Quali dettagli del server SMTP dovrei usare per inviare email in blocco?
+   Dovresti utilizzare i dettagli del server SMTP forniti dal tuo provider di posta elettronica o dal server di posta elettronica della tua organizzazione. Sostituisci `"smtp.example.com"`, `"username"`, E `"password"` nel codice con le informazioni del tuo server SMTP.
 
-### Esiste un limite al numero di destinatari nelle e-mail collettive?
-   Il numero di destinatari a cui puoi inviare e-mail collettive può dipendere dalle limitazioni del tuo server SMTP e dalle politiche del tuo fornitore di servizi e-mail. Fai attenzione a eventuali limiti di invio per evitare problemi.
+### Esiste un limite al numero di destinatari nelle e-mail in blocco?
+   Il numero di destinatari a cui puoi inviare email in blocco può dipendere dalle limitazioni del tuo server SMTP e dalle policy del tuo provider di posta elettronica. Tieni presente eventuali limiti di invio per evitare problemi.
 
-### Posso personalizzare il contenuto di ciascuna e-mail in un processo di invio di e-mail in blocco?
-   Sì, puoi personalizzare il contenuto di ciascun messaggio email all'interno del loop prima di inviarlo ai singoli destinatari.
+### Posso personalizzare il contenuto di ogni email in un processo di invio di email in blocco?
+   Sì, puoi personalizzare il contenuto di ogni messaggio e-mail all'interno del ciclo prima di inviarlo ai singoli destinatari.
 
-### Come posso gestire le e-mail respinte o non riuscite nell'invio in blocco?
-   Aspose.Email fornisce funzionalità per la gestione delle notifiche sullo stato di consegna (DSN) e il monitoraggio dello stato di consegna della posta elettronica. È possibile implementare la logica per elaborare le e-mail respinte o non riuscite in base alle esigenze.
+### Come posso gestire le email respinte o non andate a buon fine durante l'invio in blocco?
+   Aspose.Email offre funzionalità per la gestione delle notifiche sullo stato di recapito (DSN) e il monitoraggio dello stato di recapito delle email. È possibile implementare la logica per elaborare le email respinte o non recapitate, a seconda delle esigenze.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

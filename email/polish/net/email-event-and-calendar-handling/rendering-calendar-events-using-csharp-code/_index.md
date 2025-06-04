@@ -1,39 +1,41 @@
 ---
-title: Renderowanie wydarzeń kalendarza przy użyciu kodu C#
-linktitle: Renderowanie wydarzeń kalendarza przy użyciu kodu C#
-second_title: Aspose.Email .NET API do przetwarzania poczty e-mail
-description: Dowiedz się, jak renderować wydarzenia z kalendarza przy użyciu C# i Aspose.Email dla .NET. Z łatwością twórz interaktywne harmonogramy.
-weight: 15
-url: /pl/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/
+"description": "Naucz się renderować wydarzenia kalendarzowe za pomocą języka C# i Aspose.Email dla .NET. Twórz interaktywne harmonogramy z łatwością."
+"linktitle": "Renderowanie wydarzeń kalendarzowych za pomocą kodu C#"
+"second_title": "Aspose.Email .NET API przetwarzania poczty e-mail"
+"title": "Renderowanie wydarzeń kalendarzowych za pomocą kodu C#"
+"url": "/pl/net/email-event-and-calendar-handling/rendering-calendar-events-using-csharp-code/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Renderowanie wydarzeń kalendarza przy użyciu kodu C#
+# Renderowanie wydarzeń kalendarzowych za pomocą kodu C#
 
 
 
-dzisiejszej erze cyfrowej efektywne zarządzanie wydarzeniami w kalendarzu ma kluczowe znaczenie zarówno dla firm, jak i osób prywatnych. Aspose.Email dla .NET zapewnia potężny zestaw narzędzi do pracy z wydarzeniami w kalendarzu i maksymalnego wykorzystania potrzeb związanych z planowaniem. W tym przewodniku krok po kroku przeprowadzimy Cię przez proces renderowania wydarzeń kalendarza przy użyciu kodu C# z Aspose.Email dla .NET.
+W dzisiejszej erze cyfrowej efektywne zarządzanie wydarzeniami kalendarzowymi jest kluczowe zarówno dla firm, jak i osób prywatnych. Aspose.Email dla .NET zapewnia potężny zestaw narzędzi do pracy z wydarzeniami kalendarzowymi i maksymalnego wykorzystania potrzeb planowania. W tym przewodniku krok po kroku przeprowadzimy Cię przez proces renderowania wydarzeń kalendarzowych przy użyciu kodu C# z Aspose.Email dla .NET.
 
 ## Wprowadzenie do Aspose.Email dla .NET
 
-Zanim zagłębimy się w kod i jego implementację, przedstawmy pokrótce Aspose.Email dla .NET. To solidny interfejs API, który umożliwia programistom tworzenie, manipulowanie i zarządzanie wiadomościami e-mail i wydarzeniami w kalendarzu w różnych formatach. Dzięki Aspose.Email możesz bezproblemowo pracować z plikami PST programu Outlook, serwerem Exchange i innymi zadaniami związanymi z pocztą e-mail. W tym samouczku skupimy się na możliwościach renderowania wydarzeń w kalendarzu.
+Zanim zagłębimy się w kod i jego implementację, krótko omówmy Aspose.Email dla .NET. To solidny interfejs API, który pozwala deweloperom tworzyć, manipulować i zarządzać wiadomościami e-mail i wydarzeniami kalendarza w różnych formatach. Dzięki Aspose.Email możesz bezproblemowo pracować z plikami Outlook PST, Exchange Server i innymi zadaniami związanymi z pocztą e-mail. W tym samouczku skupimy się na możliwościach renderowania wydarzeń kalendarza.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniesz kodować, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1.  Aspose.Email dla .NET: Możesz pobrać najnowszą wersję z[Tutaj](https://releases.aspose.com/email/net/).
+1. Aspose.Email dla .NET: Najnowszą wersję można pobrać ze strony [Tutaj](https://releases.aspose.com/email/net/).
 
-2. Środowisko programistyczne C#: Potrzebujesz środowiska programistycznego C# skonfigurowanego na swoim komputerze.
+2. Środowisko programistyczne C#: Na swoim komputerze musisz skonfigurować środowisko programistyczne C#.
 
-3. Plik wydarzeń w kalendarzu: przygotuj przykładowy plik wydarzeń w kalendarzu. W tym samouczku użyjemy pliku „Spotkanie z plikiem Recurring Occurrences.msg”.
+3. Plik wydarzenia kalendarza: Przygotuj przykładowy plik wydarzenia kalendarza. W tym samouczku użyjemy „Meeting with Recurring Occurrences.msg”.
 
 ## Konfigurowanie kodu
 
-Zacznijmy od skonfigurowania kodu C# do renderowania wydarzeń kalendarza.
+Zacznijmy od skonfigurowania kodu C# w celu renderowania wydarzeń kalendarzowych.
 
 ```csharp
 // Ścieżka do katalogu plików.
@@ -44,61 +46,63 @@ MhtSaveOptions options = new MhtSaveOptions();
 {
     options.MhtFormatOptions = MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent;
 
-    // W razie potrzeby sformatuj szczegóły wyjściowe – opcjonalnie
+    // Sformatuj szczegóły wyjściowe, jeśli jest to wymagane - opcjonalnie
 
-    // Ustaw wyświetlanie właściwości początkowej
+    // Ustaw wyświetlanie dla właściwości początkowej
     if (options.FormatTemplates.ContainsKey(MhtTemplateName.Start))
         options.FormatTemplates[MhtTemplateName.Start] = @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>"; 
     else
         options.FormatTemplates.Add(MhtTemplateName.Start, @"<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
 
-    // Kontynuuj ustawianie wyświetlania innych właściwości...
+    // Kontynuuj ustawianie wyświetlania dla innych właściwości...
 };
 
 msg.Save(dataDir + "Meeting with Recurring Occurrences.mhtml", options);
 ```
 
-## Zrozumienie Kodeksu
+## Zrozumienie kodu
 
-Teraz rozłóżmy kod i zrozummy każdą część:
+Teraz przeanalizujmy kod i poznajmy każdą jego część:
 
--  Zaczynamy od załadowania pliku zdarzeń kalendarza („Spotkanie z powtarzającymi się zdarzeniami.msg”) za pomocą`MailMessage.Load` metoda.
+- Zaczynamy od załadowania pliku wydarzenia kalendarza („Spotkanie z wystąpieniami cyklicznymi.msg”) za pomocą `MailMessage.Load` metoda.
 
--  Tworzymy`MhtSaveOptions` obiekt, aby określić, w jaki sposób chcemy zapisać dane wyjściowe.
+- Tworzymy `MhtSaveOptions` obiekt określający sposób zapisywania danych wyjściowych.
 
-- w`options.MhtFormatOptions`, określamy, że chcemy renderować informacje o wydarzeniach w kalendarzu.
+- W `options.MhtFormatOptions`, określamy, że chcemy wyświetlić informacje o wydarzeniu kalendarzowym.
 
-- Następnie mamy możliwość sformatowania szczegółów wyjściowych dla różnych właściwości, takich jak Początek, Koniec, Cykl, RecurrencePattern, Organizator i RequiredAttendees.
+- Następnie mamy możliwość sformatowania szczegółów wyników dla różnych właściwości, takich jak Początek, Koniec, Powtarzanie, Wzorzec Powtarzania, Organizator i Wymagani uczestnicy.
 
-- Na koniec zapisujemy wyrenderowane wydarzenie kalendarza jako plik MHTML.
+- Na koniec zapisujemy wyrenderowane wydarzenie kalendarzowe jako plik MHTML.
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak renderować wydarzenia kalendarza przy użyciu kodu C# z Aspose.Email dla .NET. Aspose.Email zapewnia prosty i efektywny sposób pracy z wydarzeniami w kalendarzu, co czyni go doskonałym wyborem do zarządzania zadaniami planowania w aplikacjach.
+W tym samouczku sprawdziliśmy, jak renderować zdarzenia kalendarza za pomocą kodu C# z Aspose.Email dla .NET. Aspose.Email zapewnia prosty i wydajny sposób pracy ze zdarzeniami kalendarza, co czyni go doskonałym wyborem do zarządzania zadaniami planowania w aplikacjach.
 
-Teraz możesz wykorzystać moc Aspose.Email dla .NET, aby bezproblemowo obsługiwać wydarzenia w kalendarzu, poprawiając swoją produktywność i zwiększając możliwości planowania.
+Teraz możesz wykorzystać potencjał Aspose.Email dla .NET, aby bezproblemowo obsługiwać zdarzenia kalendarzowe, zwiększając swoją produktywność i rozszerzając możliwości planowania.
 
 ## Często zadawane pytania
 
-1. Co to jest Aspose.Email dla .NET?
-   Aspose.Email dla .NET to interfejs API, który umożliwia programistom pracę z wiadomościami e-mail i wydarzeniami w kalendarzu w różnych formatach w aplikacjach .NET.
+1. Czym jest Aspose.Email dla .NET?
+   Aspose.Email for .NET to interfejs API umożliwiający programistom pracę z wiadomościami e-mail i wydarzeniami w kalendarzu w różnych formatach w aplikacjach .NET.
 
-2. Gdzie mogę pobrać Aspose.Email dla .NET?
-    Możesz pobrać Aspose.Email dla .NET z[Tutaj](https://releases.aspose.com/email/net/).
+2. Gdzie mogę pobrać Aspose.Email dla platformy .NET?
+   Możesz pobrać Aspose.Email dla .NET z [Tutaj](https://releases.aspose.com/email/net/).
 
 3. Czy mogę dostosować formatowanie szczegółów wydarzeń w kalendarzu?
    Tak, możesz dostosować formatowanie szczegółów wydarzeń w kalendarzu, jak pokazano w przykładzie kodu.
 
-4. Czy Aspose.Email nadaje się do pracy z danymi Outlooka?
-   Tak, Aspose.Email jest idealny do pracy z plikami PST programu Outlook i danymi serwera Exchange.
+4. Czy Aspose.Email nadaje się do pracy z danymi programu Outlook?
+   Tak, Aspose.Email idealnie nadaje się do pracy z plikami PST programu Outlook i danymi serwera Exchange.
 
-5. Czy są jakieś inne funkcje w Aspose.Email dla .NET?
-   Tak, Aspose.Email oferuje szeroką gamę funkcji do zarządzania pocztą e-mail, w tym wysyłania, odbierania i przetwarzania wiadomości e-mail.
+5. Czy Aspose.Email dla platformy .NET ma jakieś inne funkcje?
+   Tak, Aspose.Email oferuje szeroką gamę funkcji do zarządzania pocztą e-mail, w tym wysyłanie, odbieranie i przetwarzanie wiadomości e-mail.
 
- Zapraszamy do eksploracji[Dokumentacja API Aspose.Email](https://reference.aspose.com/email/net/) aby uzyskać więcej szczegółów i zaawansowanych scenariuszy użytkowania. Miłego kodowania!
+Zapraszamy do eksploracji [Dokumentacja interfejsu API Aspose.Email](https://reference.aspose.com/email/net/) aby uzyskać więcej szczegółów i zaawansowanych scenariuszy użycia. Szczęśliwego kodowania!
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

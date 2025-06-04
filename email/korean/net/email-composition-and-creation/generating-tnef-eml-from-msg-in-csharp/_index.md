@@ -1,115 +1,115 @@
 ---
-title: C#의 MSG에서 TNEF EML 생성
-linktitle: C#의 MSG에서 TNEF EML 생성
-second_title: Aspose.Email .NET 이메일 처리 API
-description: .NET용 Aspose.Email을 사용하여 MSG에서 TNEF EML을 생성하는 방법을 알아보세요. C# 코드를 사용한 단계별 가이드입니다. 효율적인 이메일 형식 변환.
-weight: 12
-url: /ko/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/
+"description": "Aspose.Email을 사용하여 C#에서 MSG를 TNEF EML로 변환하세요. 간편한 단계별 가이드로 이메일 처리 프로젝트를 더욱 효율적으로 만들어 보세요."
+"linktitle": "C#에서 MSG로 TNEF EML 생성하기"
+"second_title": "Aspose.Email .NET 이메일 처리 API"
+"title": "C#에서 MSG로 TNEF EML 생성하기"
+"url": "/ko/net/email-composition-and-creation/generating-tnef-eml-from-msg-in-csharp/"
+"weight": 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C#의 MSG에서 TNEF EML 생성
+# C#에서 MSG로 TNEF EML 생성하기
 
 
-이 가이드에서는 .NET용 Aspose.Email 라이브러리를 사용하여 MSG(Outlook 메시지) 파일에서 TNEF(Transport Neutral Encapsulation Format) EML 파일을 생성하는 방법을 알아봅니다. TNEF는 Microsoft Outlook에서 사용되는 독점 이메일 첨부 파일 형식입니다. Aspose.Email for .NET은 C# 애플리케이션에서 다양한 이메일 형식으로 작업할 수 있게 해주는 강력한 라이브러리입니다.
+## 소개
 
-##  전제 조건
+안녕하세요, 동료 코더 여러분! C# 프로젝트에서 MSG 파일을 TNEF EML로 변환해야 했던 적이 있으신가요? 잘 찾아오셨습니다. 오늘은 Aspose.Email for .NET을 사용하여 이 변환 작업을 아주 쉽게 처리하는 방법을 자세히 알아보겠습니다. 숙련된 개발자든 이제 막 시작하는 개발자든, 이 단계별 가이드를 통해 필요한 모든 것을 안내해 드리겠습니다. 시작해 볼까요!
 
-시작하기 전에 다음 사항이 있는지 확인하세요.
+## 필수 조건
 
-Visual Studio 또는 C# 개발 환경이 설치되어 있습니다.
- .NET 라이브러리용 Aspose.Email. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스](https://releases.aspose.com/email/net).
+코딩 단계로 넘어가기 전에 모든 것이 설정되어 있는지 확인해 보겠습니다.
 
-##  단계별 가이드
+1. Visual Studio 설치: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 설치되어 있지 않으면 다운로드할 수 있습니다. [여기](https://visualstudio.microsoft.com/downloads/).
+2. Aspose.Email for .NET: Aspose.Email for .NET 라이브러리가 필요합니다. 다음에서 다운로드할 수 있습니다. [여기](https://releases.aspose.com/email/net/).
+3. C#에 대한 기본적인 이해: 이 튜토리얼에서는 독자가 C# 프로그래밍에 대한 기본적인 이해가 있다고 가정합니다.
+4. 샘플 MSG 파일: 변환하려는 MSG 파일을 준비하세요.
 
-.NET용 Aspose.Email을 사용하여 MSG 파일에서 TNEF EML 파일을 생성하려면 다음 단계를 따르세요.
+좋아요, 이 모든 것을 준비했다면 출발할 준비가 됐어요!
 
-### 새 C# 프로젝트를 만듭니다.
+## 네임스페이스 가져오기
 
-   원하는 개발 환경에서 새 C# 프로젝트를 만듭니다.
+먼저, 필요한 네임스페이스를 가져오겠습니다. 이는 앞으로 사용할 클래스와 메서드에 접근하는 데 필수적입니다.
 
-### .NET용 Aspose.Email을 설치합니다:
+```csharp
+using Aspose.Email;
+```
 
-   프로젝트에 참조를 추가하여 .NET용 Aspose.Email 라이브러리를 설치하세요. DLL을 참조로 추가하거나 NuGet 패키지 관리자를 사용하여 이 작업을 수행할 수 있습니다.
+## MSG 파일을 로드하는 이유는 무엇입니까?
 
-### MSG 파일 로드:
+변환하기 전에 MSG 파일을 애플리케이션에 로드해야 합니다. 책을 읽기 전에 먼저 책을 펼쳐 보는 것과 같다고 생각하시면 됩니다.
 
-   Aspose.Email을 사용하여 MSG 파일을 로드하려면 다음 코드를 사용하세요.
+## MSG 파일을 로드하는 방법
 
-   ```csharp
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+방법은 다음과 같습니다.
 
-   // MSG 파일 로드
-   MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-   ```
+```csharp
+MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
+```
 
-### TNEF EML 파일 만들기:
+바꾸다 `"path/to/your/msg/file.msg"` MSG 파일의 실제 경로를 사용합니다. 이 코드 줄은 MSG 파일을 `MapiMessage` 물체.
 
-   TNEF EML 파일을 생성하려면 MapiMessage 개체를 EML 형식으로 저장해야 합니다. TNEF 형식이 자동으로 생성됩니다.
+## 2단계: TNEF EML로 변환
 
-   ```csharp
-   using Aspose.Email;
-   
-   // TNEF EML로 변환 및 저장
-   msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-   ```
+### 왜 TNEF EML로 변환해야 하나요?
 
-### 전체 코드 예:
+이제 MSG 파일을 로드했으니 다음 단계는 TNEF EML로 변환하는 것입니다. TNEF(Transport Neutral Encapsulation Format)는 이메일 메시지의 풍부한 콘텐츠를 캡슐화하는 데 사용되는 형식입니다.
 
-   모든 것을 하나로 묶은 전체 코드 예제는 다음과 같습니다.
+### TNEF EML로 변환하는 방법
 
-   ```csharp
-   using Aspose.Email;
-   using Aspose.Email.Storage.Pst;
-   using Aspose.Email.Mapi;
+변환을 위한 코드 조각은 다음과 같습니다.
 
-   namespace TnefGenerationExample
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               // MSG 파일 로드
-               MapiMessage msg = MapiMessage.FromFile("path/to/your/msg/file.msg");
-               
-               // TNEF EML로 변환 및 저장
-               msg.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
-           }
-       }
-   }
-   ```
+```csharp
+MailMessage eml = msg.ToMailMessage(new MailConversionOptions { ConvertAsTnef = true });
+```
 
-### 애플리케이션을 실행합니다:
+이 라인은 다음을 변환합니다. `MapiMessage` 에게 `MailMessage` TNEF 형식이 활성화된 개체입니다.
 
-   애플리케이션을 실행하면 제공된 MSG 파일에서 TNEF EML 파일이 생성됩니다.
+## 3단계: 변환된 EML 파일 저장
 
-##  결론
+### EML 파일을 저장하는 이유는 무엇입니까?
 
-이 가이드에서는 .NET 라이브러리용 Aspose.Email을 사용하여 MSG 파일에서 TNEF EML 파일을 생성하는 방법을 배웠습니다. 이 강력한 라이브러리는 C# 애플리케이션에서 다양한 이메일 형식으로 작업하는 데 필요한 도구를 제공합니다.
+파일을 변환한 후에는 사용하거나 공유할 수 있도록 저장해야 합니다. 파일을 저장하는 것은 마치 책을 다 읽은 후 책갈피를 꽂는 것과 같습니다.
 
-##  자주 묻는 질문
+### EML 파일을 저장하는 방법
 
-### .NET 라이브러리용 Aspose.Email을 어떻게 구하나요?
+변환된 파일을 저장하는 방법은 다음과 같습니다.
 
-Aspose 릴리스에서 .NET용 Aspose.Email 라이브러리를 얻을 수 있습니다:[.NET용 Aspose.Email 다운로드](https://releases.aspose.com/email/net).
+```csharp
+eml.Save("path/to/save/tnef.eml", SaveOptions.DefaultEml);
+```
 
-### MSG 이외의 형식에 Aspose.Email을 사용할 수 있나요?
+바꾸다 `"path/to/save/tnef.eml"` EML 파일을 저장할 경로를 입력하세요. 이 줄은 지정된 위치에 EML 파일을 저장합니다.
 
- 예, .NET용 Aspose.Email은 MSG, EML, PST, OST 등을 포함한 다양한 이메일 형식을 지원합니다. 당신은[.NET 문서용 Aspose.Email](https://reference.aspose.com/email/net) 지원되는 형식 및 기능에 대한 자세한 내용을 확인하세요.
+## 결론
 
-### Aspose.Email로 작업할 때 예외를 어떻게 처리합니까?
+자, 이제 끝났습니다! Aspose.Email for .NET을 사용하여 MSG 파일을 TNEF EML로 변환하는 방법을 방금 배웠습니다. 파일을 로드하고, 변환하고, 출력을 저장하는 것만큼 간단합니다. 이 과정은 이메일 처리, 마이그레이션 또는 이메일 형식을 조정해야 하는 모든 프로젝트에 유용하게 활용할 수 있습니다.
 
-표준 C# 예외 처리 기술을 사용할 수 있습니다. Aspose.Email은 라이브러리와 관련된 예외를 발생시키므로 코드에서 이를 적절하게 포착하고 처리해야 합니다.
+## 자주 묻는 질문
 
- 자유롭게 탐색해 보세요.[.NET 문서용 Aspose.Email](https://reference.aspose.com/email/net) 더 많은 고급 기능과 예시를 확인하세요.
+### 1. TNEF EML이란 무엇인가요?
+TNEF EML은 풍부한 이메일 콘텐츠를 캡슐화하는 데 사용되는 형식으로, 종종 이메일 애플리케이션에서 서식과 첨부 파일을 보존하는 데 사용됩니다.
+
+### 2. 여러 개의 MSG 파일을 한 번에 변환할 수 있나요?
+네, MSG 파일 디렉토리를 순환하여 각 파일에 동일한 변환 프로세스를 적용할 수 있습니다.
+
+### 3. Aspose.Email for .NET을 사용하려면 라이선스가 필요합니까?
+네, Aspose.Email for .NET을 사용하려면 전체 기능을 사용하려면 라이선스가 필요합니다. 임시 라이선스를 받으실 수 있습니다. [여기](https://purchase.aspose.com/temporary-license/).
+
+### 4. Aspose.Email for .NET은 모든 버전의 .NET과 호환됩니까?
+Aspose.Email for .NET은 .NET Framework뿐만 아니라 .NET Core와 .NET 5/6도 지원합니다.
+
+### 5. 더 많은 문서는 어디에서 찾을 수 있나요?
+자세한 API 문서는 Aspose.Email for .NET에서 찾을 수 있습니다. [여기](https://reference.aspose.com/email/net/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

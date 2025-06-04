@@ -1,54 +1,56 @@
 ---
-title: Implementacja podpisów DKIM za pomocą Aspose.Email
-linktitle: Implementacja podpisów DKIM za pomocą Aspose.Email
-second_title: Aspose.Email API zarządzania pocztą e-mail w języku Java
-description: Zapewnij bezpieczeństwo poczty e-mail dzięki podpisom DKIM za pomocą Aspose.Email dla Java. Przewodnik krok po kroku i kod implementacji DKIM.
-weight: 15
-url: /pl/java/customizing-email-headers/dkim-signatures-implementation/
+"description": "Zapewnij bezpieczeństwo poczty e-mail za pomocą podpisów DKIM przy użyciu Aspose.Email dla Java. Przewodnik krok po kroku i kod do implementacji DKIM."
+"linktitle": "Implementacja podpisów DKIM z Aspose.Email"
+"second_title": "Aspose.Email Java E-mail Management API"
+"title": "Implementacja podpisów DKIM z Aspose.Email"
+"url": "/pl/java/customizing-email-headers/dkim-signatures-implementation/"
+"weight": 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
+
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Implementacja podpisów DKIM za pomocą Aspose.Email
+# Implementacja podpisów DKIM z Aspose.Email
 
 
-## Implementacja podpisów DKIM za pomocą Aspose.Email
+## Implementacja podpisów DKIM z Aspose.Email
 
-Bezpieczeństwo poczty elektronicznej ma ogromne znaczenie w dzisiejszej erze cyfrowej. Jednym z kluczowych aspektów bezpieczeństwa poczty elektronicznej jest zapewnienie autentyczności i integralności wysyłanych i odbieranych wiadomości e-mail. Podpisy DomainKeys Identified Mail (DKIM) odgrywają w tym kluczową rolę. W tym artykule przyjrzymy się, jak zaimplementować podpisy DKIM przy użyciu Aspose.Email dla Java, potężnej biblioteki do pracy z wiadomościami e-mail.
+Bezpieczeństwo poczty e-mail ma ogromne znaczenie w dzisiejszej erze cyfrowej. Jednym z kluczowych aspektów bezpieczeństwa poczty e-mail jest zapewnienie autentyczności i integralności wysyłanych i odbieranych wiadomości e-mail. Podpisy DomainKeys Identified Mail (DKIM) odgrywają kluczową rolę w osiągnięciu tego celu. W tym artykule przyjrzymy się sposobowi implementacji podpisów DKIM przy użyciu Aspose.Email for Java, potężnej biblioteki do pracy z wiadomościami e-mail.
 
 ## Zrozumienie podpisów DKIM
 
-DKIM to metoda uwierzytelniania wiadomości e-mail, która umożliwia nadawcy cyfrowe podpisywanie wiadomości e-mail, umożliwiając odbiorcy weryfikację autentyczności wiadomości e-mail. Działa poprzez dodanie podpisu cyfrowego do nagłówka wiadomości e-mail. Podpis ten generowany jest za pomocą klucza prywatnego przechowywanego w domenie nadawcy i można go zweryfikować za pomocą klucza publicznego opublikowanego w rekordach DNS domeny nadawcy.
+DKIM to metoda uwierzytelniania wiadomości e-mail, która umożliwia nadawcy cyfrowe podpisywanie wiadomości e-mail, zapewniając odbiorcy sposób weryfikacji autentyczności wiadomości e-mail. Działa poprzez dodanie podpisu cyfrowego do nagłówka wiadomości e-mail. Ten podpis jest generowany przy użyciu klucza prywatnego przechowywanego przez domenę nadawcy i może być weryfikowany przy użyciu klucza publicznego opublikowanego w rekordach DNS domeny nadawcy.
 
 ## Korzyści z podpisów DKIM
 
-Wdrożenie podpisów DKIM oferuje kilka korzyści:
-- Uwierzytelnianie poczty e-mail: DKIM pomaga mieć pewność, że e-maile są wysyłane przez legalnych nadawców i nie zostały naruszone podczas przesyłania.
-- Większa dostarczalność: Dostawcy poczty elektronicznej częściej dostarczają e-maile z podpisami DKIM do skrzynki odbiorczej, co zmniejsza ryzyko oznaczenia wiadomości jako spam.
-- Zwiększona reputacja: Odpowiednio skonfigurowany DKIM może poprawić reputację nadawcy, co prowadzi do lepszej dostarczalności wiadomości e-mail.
+Wdrożenie podpisów DKIM zapewnia szereg korzyści:
+- Uwierzytelnianie wiadomości e-mail: DKIM pomaga upewnić się, że wiadomości e-mail pochodzą od prawowitych nadawców i nie zostały zmodyfikowane w czasie przesyłania.
+- Poprawiona dostarczalność: Dostawcy usług e-mail chętniej dostarczają wiadomości e-mail z podpisami DKIM do skrzynki odbiorczej, zmniejszając tym samym ryzyko oznaczenia wiadomości jako spam.
+- Lepsza reputacja: Prawidłowo skonfigurowany protokół DKIM może poprawić reputację nadawcy, co przekłada się na lepszą dostarczalność wiadomości e-mail.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zajmiemy się wdrażaniem podpisów DKIM, będziesz potrzebować:
+Zanim przejdziemy do wdrażania podpisów DKIM, będziesz potrzebować następujących rzeczy:
 - Środowisko programistyczne Java
 - Aspose.Email dla biblioteki Java
 - Domena z dostępem DNS do konfiguracji DKIM
 
 ## Konfigurowanie środowiska
 
-1. Zainstaluj Javę: Upewnij się, że masz zainstalowaną Javę w swoim systemie.
-2.  Pobierz Aspose.Email: Odwiedź[Aspose.Email dla Java](https://products.aspose.com/email/java/) aby pobrać bibliotekę.
-3. Uzyskaj klucze DKIM: Potrzebujesz kluczy DKIM dla swojej domeny. Aby uzyskać wskazówki dotyczące generowania tych kluczy, skontaktuj się ze swoim dostawcą domeny.
+1. Zainstaluj Javę: Upewnij się, że Java jest zainstalowana w Twoim systemie.
+2. Pobierz Aspose.Email: Odwiedź [Aspose.Email dla Java](https://products.aspose.com/email/java/) aby pobrać bibliotekę.
+3. Uzyskaj klucze DKIM: Potrzebujesz kluczy DKIM dla swojej domeny. Skonsultuj się z dostawcą domeny, aby uzyskać wskazówki dotyczące generowania tych kluczy.
 
-## Implementacja podpisów DKIM za pomocą Aspose.Email
+## Wdrażanie podpisów DKIM za pomocą Aspose.Email
 
-Teraz, gdy już wszystko skonfigurowałeś, przejdźmy do implementowania podpisów DKIM za pomocą Aspose.Email. Poniżej znajduje się przewodnik krok po kroku z fragmentami kodu źródłowego, który pomoże Ci rozpocząć.
+Teraz, gdy wszystko jest już skonfigurowane, zajmijmy się implementacją podpisów DKIM za pomocą Aspose.Email. Poniżej znajduje się przewodnik krok po kroku z fragmentami kodu źródłowego, które pomogą Ci zacząć.
 
 ### Krok 1: Dodaj bibliotekę Aspose.Email do swojego projektu
 
-Najpierw dodaj bibliotekę Aspose.Email do swojego projektu Java. Możesz to zrobić, dołączając plik JAR do zależności projektu.
+Najpierw dodaj bibliotekę Aspose.Email do swojego projektu Java. Możesz to zrobić, dołączając plik JAR do zależności swojego projektu.
 
 ### Krok 2: Wygeneruj podpis DKIM
 
@@ -79,48 +81,50 @@ Po zastosowaniu podpisu DKIM możesz wysłać wiadomość e-mail za pomocą serw
 
 ### Wyjaśnienie kodu
 
--  Ładujemy klucz DKIM za pomocą`DkimSignatureInfo` klasa.
--  Utwórz instancję`MailMessage` klasę z nadawcą, odbiorcą, tematem i treścią.
--  Dodaj podpis DKIM do wiadomości za pomocą`dKIMSign`.
-- Wyślij wiadomość e-mail za pomocą klienta SMTP.
+- Klucz DKIM ładujemy za pomocą `DkimSignatureInfo` klasa.
+- Utwórz instancję `MailMessage` klasa zawierająca nadawcę, odbiorcę, temat i treść.
+- Dodaj podpis DKIM do wiadomości za pomocą `dKIMSign`.
+- Wyślij wiadomość e-mail korzystając z klienta SMTP.
 
 ### Krok 4: Testowanie podpisów DKIM
 
-Aby mieć pewność, że podpisy DKIM działają poprawnie, wyślij e-mail testowy i sprawdź stan weryfikacji DKIM po stronie odbiorcy.
+Aby mieć pewność, że podpisy DKIM działają prawidłowo, wyślij wiadomość e-mail testową i sprawdź status weryfikacji DKIM po stronie odbiorcy.
 
 ### Typowe problemy i rozwiązywanie problemów
 
-- Jeśli podpisy DKIM nie zostaną zweryfikowane, sprawdź rekordy DNS i upewnij się, że klucz publiczny został poprawnie opublikowany.
-- Sprawdź, czy klucz prywatny jest bezpieczny i nieujawniony.
+- Jeśli podpisy DKIM nie przejdą weryfikacji, sprawdź swoje rekordy DNS i upewnij się, że klucz publiczny jest prawidłowo opublikowany.
+- Sprawdź, czy klucz prywatny jest przechowywany w bezpiecznym miejscu i nie jest ujawniany.
 
 ## Wniosek
 
-Wdrożenie podpisów DKIM za pomocą Aspose.Email dla Java zwiększa bezpieczeństwo i wiarygodność Twoich e-maili. Wykonując czynności opisane w tym artykule, możesz mieć pewność, że Twoje e-maile zostaną uwierzytelnione i będzie mniej prawdopodobne, że zostaną oznaczone jako spam.
+Implementacja podpisów DKIM z Aspose.Email for Java zwiększa bezpieczeństwo i wiarygodność wiadomości e-mail. Postępując zgodnie z krokami opisanymi w tym artykule, możesz mieć pewność, że Twoje wiadomości e-mail są uwierzytelniane i mniej prawdopodobne jest, że zostaną oznaczone jako spam.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### W jaki sposób podpisy DKIM poprawiają bezpieczeństwo poczty elektronicznej?
+### W jaki sposób podpisy DKIM poprawiają bezpieczeństwo poczty e-mail?
 
 Podpisy DKIM weryfikują autentyczność i integralność wiadomości e-mail, zmniejszając ryzyko ataków typu phishing i spoofing.
 
-### Czy mogę używać Aspose.Email dla Java z innymi bibliotekami poczty e-mail?
+### Czy mogę używać Aspose.Email for Java z innymi bibliotekami pocztowymi?
 
-Aspose.Email dla Java jest samodzielną biblioteką, ale w razie potrzeby można ją zintegrować z innymi bibliotekami związanymi z pocztą e-mail.
+Aspose.Email for Java to samodzielna biblioteka, ale w razie potrzeby można ją zintegrować z innymi bibliotekami związanymi z pocztą e-mail.
 
-### Co mam zrobić, jeśli weryfikacja podpisu DKIM nie powiedzie się?
+### Co powinienem zrobić, jeśli weryfikacja podpisu DKIM się nie powiedzie?
 
-Sprawdź konfigurację DKIM, w tym rekordy DNS i zarządzanie kluczami, aby upewnić się, że wszystko jest poprawnie skonfigurowane.
+Sprawdź konfigurację DKIM, obejmującą rekordy DNS i zarządzanie kluczami, aby upewnić się, że wszystko jest skonfigurowane poprawnie.
 
-### Czy Aspose.Email dla Java jest kompatybilny z różnymi serwerami e-mail?
+### Czy Aspose.Email for Java jest kompatybilny z różnymi serwerami pocztowymi?
 
-Tak, Aspose.Email dla Java jest kompatybilny z różnymi serwerami e-mail i może być używany z protokołami SMTP, POP3 i IMAP.
+Tak, Aspose.Email for Java jest kompatybilny z różnymi serwerami pocztowymi i może być używany z protokołami SMTP, POP3 i IMAP.
 
-### Gdzie mogę znaleźć więcej zasobów na temat Aspose.Email dla Java?
+### Gdzie mogę znaleźć więcej materiałów na temat Aspose.Email dla Java?
 
-Aby uzyskać więcej informacji i zasobów, odwiedź dokumentację Aspose.Email for Java pod adresem[Tutaj](https://reference.aspose.com/email/java/).
+Aby uzyskać więcej informacji i zasobów, odwiedź dokumentację Aspose.Email for Java pod adresem [Tutaj](https://reference.aspose.com/email/java/).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
