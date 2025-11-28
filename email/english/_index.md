@@ -1,10 +1,11 @@
 ---
-title: "Aspose.Email Tutorials&#58; C# .NET & Java API for Email Management"
+title: "Create Calendar Appointment with Aspose.Email (C# & Java)"
 linktitle: Aspose.Email Tutorials
 additionalTitle: Aspose API References
-description: Master efficient email management and manipulation with comprehensive Aspose.Email tutorials for C# .NET and Java. Learn email composition, conversion, security, parsing, and more for robust application development.
+description: "Master how to create calendar appointment, send email C#, and convert PST to EML using Aspose.Email for .NET and Java. Comprehensive tutorials for email validation, digital signatures, and header parsing."
 weight: 10
 url: /
+date: 2025-11-28
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -15,13 +16,38 @@ url: /
 
 # Aspose.Email Tutorials: Master Email Management & Manipulation with .NET & Java APIs
 
-Welcome to the definitive resource for **Aspose.Email tutorials**, your gateway to mastering efficient email management and manipulation within your applications. Whether you're a C# .NET developer or working with Java, these comprehensive guides cover a diverse range of topics, from basic email composition and sending to advanced features like email validation, conversion, security, and integration with popular email servers. By following our clear instructions and practical code examples, you can seamlessly integrate powerful email processing capabilities into your software, enhancing workflows, ensuring data accuracy, and delivering superior user experiences.
+If you need to **create calendar appointment** programmatically, send email from C#, convert PST files to EML, validate email addresses, apply digital signatures, or parse email headers, you’ve come to the right place. This hub gathers every essential Aspose.Email tutorial for both **C# .NET** and **Java** developers, giving you a one‑stop reference to accelerate your projects and deliver reliable email‑centric features.
+
+## How to create calendar appointment with Aspose.Email
+
+Creating a meeting request or calendar entry is a common requirement for scheduling systems, CRM platforms, and automated notification services. Aspose.Email provides a fluent API that lets you build a fully‑featured appointment—complete with attendees, reminders, recurrence patterns, and time‑zone handling—without leaving your .NET or Java codebase.
+
+Below you’ll find dedicated tutorials that walk you through every step, from constructing the `Appointment` object to saving it as an Outlook‑compatible file (ICS, MSG, or PST). Whether you’re building a corporate scheduler or a simple reminder app, these guides give you the exact code you need.
+
+## How to send email C# with Aspose.Email
+
+Sending email reliably from a C# application often involves handling authentication, MIME formatting, and attachment management. Our **send email C#** tutorials demonstrate how to configure SMTP clients, embed images, and secure your messages with TLS/SSL—all using the Aspose.Email library.
+
+## Convert PST to EML using Aspose.Email
+
+Migrating legacy Outlook archives to a more portable format? Learn how to **convert PST to EML** efficiently, preserving folder structures, attachments, and metadata. The step‑by‑step guides show you how to open a PST file, iterate through its messages, and export each one as an independent EML file.
+
+## Validate email address .NET
+
+Ensuring that user‑entered email addresses are syntactically correct and belong to a real domain can save you from bounced messages. Our **validate email address .NET** tutorials cover regular‑expression checks, DNS MX lookups, and integration with Aspose.Email’s built‑in validator.
+
+## Email digital signatures
+
+Protect the integrity and authenticity of your outgoing messages with **email digital signatures**. The tutorials explain how to sign messages using X.509 certificates, verify signatures on received mail, and handle common pitfalls such as certificate chain validation.
+
+## Parse email headers
+
+When dealing with inbound messages, extracting routing information, spam scores, or custom metadata often requires **parsing email headers**. We provide clear examples that show how to read, modify, and analyze headers using Aspose.Email’s robust API.
 
 ## Aspose.Email For .NET: Comprehensive Email Processing API Tutorials
 
 {{% alert color="primary" %}}
-Discover the power of **Aspose.Email for .NET** with our in-depth tutorials. These guides provide step-by-step instructions and practical C# code examples for developing robust email management solutions. Learn to compose, send, receive, convert, parse, and secure emails, integrate with Exchange Server, and handle various email formats like PST, MSG, and EML, ultimately enhancing your .NET applications and streamlining email-centric tasks.
-
+Discover the power of **Aspose.Email for .NET** with our in‑depth tutorials. These guides provide step‑by‑step instructions and practical C# code examples for developing robust email management solutions. Learn to compose, send, receive, convert, parse, and secure emails, integrate with Exchange Server, and handle various email formats like PST, MSG, and EML, ultimately enhancing your .NET applications and streamlining email‑centric tasks.
 {{% /alert %}}
 
 Explore our Aspose.Email for .NET tutorials:
@@ -51,7 +77,6 @@ Explore our Aspose.Email for .NET tutorials:
 
 {{% alert color="primary" %}}
 Unlock the full potential of **Aspose.Email for Java** with our comprehensive tutorial library. These guides offer practical Java code examples and clear explanations for building powerful email management applications. Explore topics like sending and receiving emails, configuring SMTP servers, handling attachments, securing communications, and integrating with email services, empowering your Java development projects with robust email functionality.
-
 {{% /alert %}}
 
 Explore our Aspose.Email for Java tutorials:
@@ -85,3 +110,9 @@ Explore our Aspose.Email for Java tutorials:
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-11-28  
+**Tested With:** Aspose.Email latest release (2025)  
+**Author:** Aspose
