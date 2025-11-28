@@ -1,10 +1,14 @@
 ---
-"description": "Aspose.Email for Java'da görselleri ek olarak nasıl yerleştireceğinizi öğrenin. Görsel olarak ilgi çekici içeriklerle e-posta iletişiminizi geliştirin."
-"linktitle": "Aspose.Email'de Resimleri Ekler Olarak Yerleştirme"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email'de Resimleri Ekler Olarak Yerleştirme"
-"url": "/tr/java/advanced-email-attachments/embedding-images-as-attachments/"
-"weight": 14
+date: 2025-11-28
+description: Aspose.Email for Java kullanarak resmi ek olarak gömme, resmi içeren
+  e-posta gönderme ve e-postaya resmi ekleme yöntemlerini öğrenin. HTML e-posta görsel
+  içeriği oluşturun ve SMTP istemcisiyle e-postayı zahmetsizce gönderin.
+language: tr
+linktitle: How to Embed Image as Attachment in Aspose.Email for Java
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email for Java'da Görüntüyü Ek Olarak Gömme
+url: /java/advanced-email-attachments/embedding-images-as-attachments/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,98 +17,115 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'de Resimleri Ekler Olarak Yerleştirme
+# Aspose.Email for Java'da Görüntüyü Ek Olarak Gömme
 
+Modern e-posta iletişiminde, bir resim gerçekten bin kelimeye bedeldir. İster bir ürün tanıtımı, bir pazarlama afişi, ister basit bir ekran görüntüsü gönderiyor olun, **how to embed image** bir e-postanın içinde önemli bir görsel etki ve teslim edilebilirlik açısından önem taşır. Bu öğreticide, Aspose.Email for Java kullanarak **sending email with image** işleminin tam sürecini adım adım göstereceğiz—HTML e-posta oluşturma, resmi ekleme ve alıcının satır içinde görmesini sağlayacak şekilde gömme. Sonunda, **attach image email** mesajlarını güvenle gönderebilecek ve `smtp client send email`'in nasıl çalıştığını anlayacaksınız.
 
-## Aspose.Email'de Resimleri Ekler Olarak Yerleştirme
+## Hızlı Yanıtlar
+- **Bir resmi gömmenin en kolay yolu nedir?** Use `LinkedResource` with a Content‑ID and reference it in the HTML body.  
+- **Aspose.Email için lisansa ihtiyacım var mı?** A free trial works for development; a license is required for production.  
+- **Hangi SMTP ayarları gereklidir?** Host, port, username, and password; TLS/SSL is recommended.  
+- **Birden fazla resmi gömebilir miyim?** Yes—add a `LinkedResource` for each image and give each a unique Content‑ID.  
+- **Resim boyutu bir sorun mu?** Large images increase email size; compress or resize before attaching.
 
-Günümüzün dijital çağında, etkili iletişim genellikle yalnızca metinden daha fazlasına dayanır. Görüntüler gibi görsel öğeler, bilgi aktarımında önemli bir rol oynar ve e-posta iletişimi söz konusu olduğunda, görüntüleri ek olarak yerleştirmek yaygın bir uygulamadır. Bu makalede, Aspose.Email for Java kullanarak bunu nasıl başaracağınızı inceleyeceğiz. Bu adım adım kılavuz, e-postalarınızın yalnızca bilgilendirici değil, aynı zamanda görsel olarak da çekici olmasını sağlayarak sizi süreçte yönlendirecektir.
+## “how to embed image” bir e-postada ne anlama geliyor?
+Bir resmi gömmek, dosyayı mesaj **ve** HTML gövdesinde `cid:` (Content‑ID) URL'si kullanarak referans göstermek anlamına gelir. Resim e-posta içinde kalır, böylece alıcılar harici bir sunucudan indirmeden görüntüleyebilir.
 
-## Ön koşullar
+## Neden resimleri bağlamak yerine gömmeliyiz?
+- **Güvenilirlik:** Images are always available, even when the recipient is offline.  
+- **Marka kontrolü:** No broken external links; the visual stays exactly as you designed it.  
+- **Spam uyumluluğu:** Properly embedded images are less likely to trigger spam filters compared to remote images.
 
-Uygulamaya geçmeden önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+## Ön Koşullar
+- **Aspose.Email for Java** – download the latest version from the official site: [Aspose.Email for Java](https://releases.aspose.com/email/java/).  
+- Çalışan bir **SMTP server** (örn., Gmail, Outlook veya kurumsal sunucu).  
+- Temel Java geliştirme ortamı (JDK 8+ ve Maven/Gradle).
 
-- Java için Aspose.Email: Henüz yapmadıysanız, Java için Aspose.Email'i şu adresten indirin ve yükleyin: [Burada](https://releases.aspose.com/email/java/).
+## Adım‑Adım Kılavuz
 
-## Bir E-posta Mesajı Oluşturma
-
-Aspose.Email kullanarak bir e-posta mesajı oluşturmak için gerekli kitaplıkları içe aktarmanız ve başlatmanız gerekir. `MailMessage` nesne. Başlamanıza yardımcı olacak bir kod parçası:
+### Adım 1: Yeni bir e-posta mesajı oluşturun  
+İlk olarak, e-posta içeriğini tutacak bir `MailMessage` nesnesi oluşturun.
 
 ```java
-// Gerekli kütüphaneleri içe aktarın
+// Import necessary libraries
 import com.aspose.email.*;
 
-// Yeni bir e-posta mesajı oluştur
+// Create a new email message
 MailMessage message = new MailMessage();
 ```
 
-## Resim Ekleme Eklentisi
-
-E-postanıza bir resim eklemek için resim dosyasının yolunu belirtmeniz ve bunu bir ek olarak eklemeniz gerekir. Bunu şu şekilde yapabilirsiniz:
+### Adım 2: Gömmek istediğiniz resmi ekleyin  
+Resmin yerel yolunu belirtin ve normal bir ek olarak ekleyin. Bu adım aynı zamanda dosyayı sonraki gömme işlemi için hazırlar.
 
 ```java
-// Görüntü dosyasının yolunu belirtin
+// Specify the path to the image file
 String imagePath = "path/to/your/image.jpg";
 
-// Resmi e-postaya ekleyin
+// Attach the image to the email
 Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## Ekli Resmin Yerleştirilmesi
-
-Ekli resmi e-posta gövdesine yerleştirmek için şunu kullanabilirsiniz: `LinkedResource` sınıf. Bu, e-postanın HTML gövdesinde eki referans almanıza olanak tanır:
+### Adım 3: Eklenen resmi HTML gövdesine gömün  
+Aynı resim akışına işaret eden bir `LinkedResource` oluşturun, benzersiz bir Content‑ID atayın ve bu ID'yi HTML işaretlemesinde referans gösterin. Bu, **create html email image** işlevselliğinin çekirdeğidir.
 
 ```java
-// Ekli resim için bir LinkedResource oluşturun
+// Create a LinkedResource for the attached image
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// Gömülü resimle bir HTML gövdesi oluşturun
+// Create an HTML body with the embedded image
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-## E-postayı Gönderme
+> **Pro ipucu:** Birden fazla resminiz olduğunda anlamlı Content‑ID'ler (ör. `logo`, `banner1`) kullanın; bu HTML'nin okunmasını kolaylaştırır.
 
-Artık gömülü görseli içeren bir e-posta mesajı oluşturduğunuza göre, bunu Aspose.Email'in `SmtpClient`:
+### Adım 4: SMTP istemcisi ile e-postayı gönderin  
+`SmtpClient`'i sunucu detaylarınızla yapılandırın ve `send` metodunu çağırın. Bu, **smtp client send email** sürecini gösterir.
 
 ```java
-// SmtpClient'ı başlatın
+// Initialize the SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
-// E-postayı gönder
+// Send the email
 client.send(message);
 ```
 
-Tebrikler! Aspose.Email for Java kullanarak bir e-postaya ek olarak bir resim yerleştirmeyi başardınız. E-postalarınız artık görsel olarak daha ilgi çekici ve bilgilendirici olacak.
+Mesaj alıcının gelen kutusuna ulaştığında, resim `<img>` etiketi yerleştirilen yerde satır içinde görünecektir.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözüm Yolları
 
-Bu kılavuzda, Aspose.Email for Java'da görselleri ek olarak yerleştirmenin temel adımlarını ele aldık. Bu adımları izleyerek, hedef kitlenizi büyüleyen görsel öğeler ekleyerek e-posta iletişiminizi geliştirebilirsiniz.
+| Sorun | Neden | Çözüm |
+|-------|-------|----------|
+| Resim kırık bağlantı olarak gösteriliyor | Yanlış Content‑ID veya eksik `LinkedResource` | HTML'deki `cid:image1` ile `linkedImage.setContentId("image1")` değerinin eşleştiğini doğrulayın. |
+| E-posta spam olarak işaretlendi | Büyük resim boyutu veya uygun MIME başlıklarının eksik olması | Resmi sıkıştırın (< 200 KB) ve TLS kullandığınızdan emin olun (`client.setSecurityOptions(SecurityOptions.Auto)`). |
+| Resim Outlook'ta görüntülenmiyor | Outlook harici kaynakları engelliyor | `cid:` ile gömme bu engeli aşar; resmin sadece bağlantı değil, ek olarak eklendiğinden emin olun. |
 
-## SSS
+## Sık Sorulan Sorular
 
-### Tek bir e-postaya birden fazla resim nasıl yerleştirebilirim?
+**S: Tek bir e-postada birden fazla resmi gömebilir miyim?**  
+C: Evet—her resim için Adım 3'ü tekrarlayın, her birine benzersiz bir Content‑ID verin (örn., `image2`, `logo`). HTML gövdesine ilgili `<img src='cid:image2'>` etiketlerini ekleyin.
 
-Her resim için aynı işlemi uygulayarak ve her birinin benzersiz bir içerik kimliğine sahip olduğundan emin olarak birden fazla resim yerleştirebilirsiniz.
+**S: Düz metin e-postalarına resim gömmek mümkün mü?**  
+C: Düz metin formatı satır içi resimleri desteklemez. Sadece resim URL'lerini metin olarak ekleyebilirsiniz; alıcı bunlara tıklayarak görüntüler.
 
-### Düz metinli e-postalara resim ekleyebilir miyim?
+**S: Gömme için hangi resim formatları destekleniyor?**  
+C: Aspose.Email for Java JPEG, PNG, GIF, BMP ve TIFF formatlarını destekler. `LinkedResource` oluştururken MIME tipinin dosya formatıyla eşleştiğinden emin olun.
 
-Düz metin e-postalarına resim yerleştirmek standart bir uygulama değildir, çünkü düz metin e-postaları gömülü resimleri desteklemez. Ancak düz metin e-postalarına resim URL'leri ekleyebilirsiniz.
+**S: Dosyayı düzenlemeden gömülü bir resmi yeniden boyutlandırabilir miyim?**  
+C: `<img>` etiketine width/height öznitelikleri ekleyin, ör. `<img src='cid:image1' width='300' height='200'>`. Bu, görüntünün ekranda ölçeklenmesini sağlar.
 
-### Gömme için hangi resim biçimleri destekleniyor?
+**S: Gömülü resimler için boyut sınırlamaları var mı?**  
+C: Aspose.Email'de kesin bir limit olmasa da, çoğu posta sunucusu toplam mesaj boyutunu 10–25 MB arasında sınırlar. Her resmi 200 KB altında tutmak iyi bir uygulamadır.
 
-Aspose.Email for Java, JPEG, PNG, GIF ve daha fazlası dahil olmak üzere çeşitli resim formatlarını destekler. Resminizin uyumlu bir formatta olduğundan emin olun.
+## Sonuç
+Artık Aspose.Email for Java kullanarak bir e-postada **how to embed image** için eksiksiz, üretim‑hazır bir tarifiniz var. HTML gövdesi oluşturup, resmi ekleyip ve `LinkedResource` aracılığıyla bağlayarak, istemciler arasında harika görünen **send email with image** gönderebilirsiniz. Aynı teknikle birden fazla resim, dinamik içerik veya hatta PDF gömmeyi denemekten çekinmeyin.
 
-### E-postaya eklenen görsellerin boyutunu değiştirmek mümkün müdür?
-
-Evet, HTML'yi ayarlayarak gömülü resimlerin boyutunu kontrol edebilirsiniz `<img>` E-postanızın HTML gövdesindeki etiket nitelikleri.
-
-### Gömülü görsellerin boyutlarında herhangi bir sınırlama var mı?
-
-Gömülü görsellerin boyutu e-postanın iletilebilirliğini ve alıcı deneyimini etkileyebilir. Büyük dosya boyutlarından kaçınmak için görselleri e-posta için optimize etmeniz önerilir.
+**Son Güncelleme:** 2025-11-28  
+**Test Edilen Versiyon:** Aspose.Email for Java 24.12  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

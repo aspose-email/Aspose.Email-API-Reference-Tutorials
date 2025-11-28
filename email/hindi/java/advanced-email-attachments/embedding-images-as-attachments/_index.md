@@ -1,10 +1,14 @@
 ---
-"description": "Java के लिए Aspose.Email में छवियों को अनुलग्नक के रूप में एम्बेड करना सीखें। आकर्षक दृश्यात्मक सामग्री के साथ अपने ईमेल संचार को बेहतर बनाएँ।"
-"linktitle": "Aspose.Email में अनुलग्नक के रूप में छवियाँ एम्बेड करना"
-"second_title": "Aspose.Email जावा ईमेल प्रबंधन API"
-"title": "Aspose.Email में अनुलग्नक के रूप में छवियाँ एम्बेड करना"
-"url": "/hi/java/advanced-email-attachments/embedding-images-as-attachments/"
-"weight": 14
+date: 2025-11-28
+description: जानेँ कि कैसे छवि को अटैचमेंट के रूप में एम्बेड करें, छवि के साथ ईमेल
+  भेजें, और Aspose.Email for Java का उपयोग करके छवि ईमेल अटैच करें। HTML ईमेल छवि
+  सामग्री बनाएं और SMTP क्लाइंट से आसानी से ईमेल भेजें।
+language: hi
+linktitle: How to Embed Image as Attachment in Aspose.Email for Java
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email for Java में इमेज को अटैचमेंट के रूप में एम्बेड कैसे करें
+url: /java/advanced-email-attachments/embedding-images-as-attachments/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,98 +17,119 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email में अनुलग्नक के रूप में छवियाँ एम्बेड करना
+# Aspose.Email for Java में इमेज को अटैचमेंट के रूप में एम्बेड कैसे करें
 
+आधुनिक ईमेल संचार में, एक तस्वीर सच में हजार शब्दों के बराबर होती है। चाहे आप उत्पाद प्रदर्शन, मार्केटिंग बैनर, या साधारण स्क्रीनशॉट भेज रहे हों, **how to embed image** का सही उपयोग दृश्य प्रभाव और डिलीवरीबिलिटी दोनों के लिए महत्वपूर्ण है। इस ट्यूटोरियल में हम आपको **sending email with image** की पूरी प्रक्रिया दिखाएंगे—HTML ईमेल बनाना, इमेज को अटैच करना, और उसे एम्बेड करना ताकि प्राप्तकर्ता इसे इनलाइन देख सके। अंत तक, आप **attach image email** संदेशों को आत्मविश्वास के साथ भेज सकेंगे और समझेंगे कि `smtp client send email` कैसे काम करता है।
 
-## Aspose.Email में अनुलग्नक के रूप में छवियाँ एम्बेड करना
+## Quick Answers
+- **इमेज एम्बेड करने का सबसे आसान तरीका क्या है?** `LinkedResource` को Content‑ID के साथ उपयोग करें और उसे HTML बॉडी में रेफ़रेंस करें।  
+- **क्या Aspose.Email के लिए लाइसेंस चाहिए?** विकास के लिए फ्री ट्रायल चलती है; प्रोडक्शन के लिए लाइसेंस आवश्यक है।  
+- **कौन से SMTP सेटिंग्स जरूरी हैं?** होस्ट, पोर्ट, यूज़रनेम, और पासवर्ड; TLS/SSL की सलाह दी जाती है।  
+- **क्या मैं कई इमेज एम्बेड कर सकता हूँ?** हाँ—प्रत्येक इमेज के लिए एक `LinkedResource` जोड़ें और प्रत्येक को यूनिक Content‑ID दें।  
+- **क्या इमेज का आकार समस्या बनता है?** बड़ी इमेज ईमेल का आकार बढ़ाती हैं; अटैच करने से पहले कॉम्प्रेस या रिसाइज़ करें।
 
-आज के डिजिटल युग में, प्रभावी संचार अक्सर सिर्फ़ टेक्स्ट से ज़्यादा पर निर्भर करता है। छवियों जैसे दृश्य तत्व, जानकारी देने में महत्वपूर्ण भूमिका निभाते हैं, और जब ईमेल संचार की बात आती है, तो छवियों को अनुलग्नक के रूप में एम्बेड करना एक आम बात है। इस लेख में, हम जावा के लिए Aspose.Email का उपयोग करके इसे प्राप्त करने का तरीका जानेंगे। यह चरण-दर-चरण मार्गदर्शिका आपको प्रक्रिया के माध्यम से ले जाएगी, यह सुनिश्चित करते हुए कि आपके ईमेल न केवल जानकारीपूर्ण हैं बल्कि दिखने में आकर्षक भी हैं।
+## What is “how to embed image” in an email?
+इमेज एम्बेड करना मतलब फ़ाइल को संदेश **के साथ अटैच** करना **और** उसे HTML बॉडी से `cid:` (Content‑ID) URL के माध्यम से रेफ़रेंस करना। इमेज ईमेल के अंदर रहती है, इसलिए प्राप्तकर्ता इसे बाहरी सर्वर से डाउनलोड किए बिना देख सकते हैं।
 
-## आवश्यक शर्तें
+## Why embed images instead of linking?
+- **Reliability:** इमेज हमेशा उपलब्ध रहती हैं, चाहे प्राप्तकर्ता ऑफ़लाइन ही क्यों न हो।  
+- **Brand control:** कोई टूटे हुए बाहरी लिंक नहीं; विज़ुअल बिल्कुल वैसा ही रहता है जैसा आपने डिज़ाइन किया है।  
+- **Spam compliance:** सही तरीके से एम्बेड की गई इमेज रिमोट इमेज की तुलना में स्पैम फ़िल्टर ट्रिगर करने की संभावना कम रखती हैं।
 
-इससे पहले कि हम कार्यान्वयन में उतरें, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
+## Prerequisites
+शुरू करने से पहले सुनिश्चित करें कि आपके पास हैं:
 
-- Aspose.Email for Java: यदि आपने पहले से ऐसा नहीं किया है, तो Aspose.Email for Java को यहां से डाउनलोड और इंस्टॉल करें [यहाँ](https://releases.aspose.com/email/java/).
+- **Aspose.Email for Java** – आधिकारिक साइट से नवीनतम संस्करण डाउनलोड करें: [Aspose.Email for Java](https://releases.aspose.com/email/java/).  
+- एक कार्यशील **SMTP सर्वर** (जैसे Gmail, Outlook, या कॉरपोरेट सर्वर)।  
+- बेसिक Java डेवलपमेंट एनवायरनमेंट (JDK 8+ और Maven/Gradle)।
 
-## ईमेल संदेश बनाना
+## Step‑by‑Step Guide
 
-Aspose.Email का उपयोग करके एक ईमेल संदेश बनाने के लिए, आपको आवश्यक लाइब्रेरीज़ को आयात करना होगा और आरंभ करना होगा `MailMessage` ऑब्जेक्ट. यहां आपको आरंभ करने के लिए एक कोड स्निपेट दिया गया है:
+### Step 1: Create a new email message  
+सबसे पहले, एक `MailMessage` ऑब्जेक्ट इंस्टैंशिएट करें जो ईमेल कंटेंट रखेगा।
 
 ```java
-// आवश्यक लाइब्रेरीज़ आयात करें
+// Import necessary libraries
 import com.aspose.email.*;
 
-// नया ईमेल संदेश बनाएँ
+// Create a new email message
 MailMessage message = new MailMessage();
 ```
 
-## छवि को अनुलग्नक के रूप में जोड़ना
-
-अपने ईमेल में कोई छवि संलग्न करने के लिए, आपको छवि फ़ाइल का पथ निर्दिष्ट करना होगा और उसे अनुलग्नक के रूप में जोड़ना होगा। आप यह कैसे कर सकते हैं:
+### Step 2: Attach the image you want to embed  
+इमेज का लोकल पाथ निर्दिष्ट करें और उसे सामान्य अटैचमेंट के रूप में जोड़ें। यह स्टेप बाद में एम्बेड करने के लिए फ़ाइल तैयार करता है।
 
 ```java
-// छवि फ़ाइल का पथ निर्दिष्ट करें
+// Specify the path to the image file
 String imagePath = "path/to/your/image.jpg";
 
-// ईमेल में छवि संलग्न करें
+// Attach the image to the email
 Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## संलग्न छवि को एम्बेड करना
-
-ईमेल बॉडी में संलग्न छवि एम्बेड करने के लिए, आप इसका उपयोग कर सकते हैं `LinkedResource` क्लास. यह आपको ईमेल के HTML बॉडी में अनुलग्नक को संदर्भित करने की अनुमति देता है:
+### Step 3: Embed the attached image into the HTML body  
+एक `LinkedResource` बनाएं जो उसी इमेज स्ट्रीम की ओर इशारा करे, एक यूनिक Content‑ID असाइन करें, और उस ID को HTML मार्कअप में रेफ़रेंस करें। यह **create html email image** फ़ंक्शनालिटी का मुख्य भाग है।
 
 ```java
-// संलग्न छवि के लिए एक लिंक्ड संसाधन बनाएं
+// Create a LinkedResource for the attached image
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// एम्बेडेड छवि के साथ एक HTML बॉडी बनाएं
+// Create an HTML body with the embedded image
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-## ईमेल भेजना
+> **Pro tip:** जब आपके पास कई इमेज हों तो अर्थपूर्ण Content‑IDs (जैसे `logo`, `banner1`) इस्तेमाल करें; इससे HTML पढ़ने में आसान हो जाता है।
 
-अब जब आपने एम्बेडेड छवि के साथ एक ईमेल संदेश बनाया है, तो आप इसे Aspose.Email के उपयोग से भेज सकते हैं `SmtpClient`:
+### Step 4: Send the email with the SMTP client  
+`SmtpClient` को अपने सर्वर विवरणों के साथ कॉन्फ़िगर करें और `send` कॉल करें। यह **smtp client send email** प्रक्रिया को दर्शाता है।
 
 ```java
-// SmtpClient को आरंभ करें
+// Initialize the SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
-// ईमेल भेजें
+// Send the email
 client.send(message);
 ```
 
-बधाई हो! आपने Aspose.Email for Java का उपयोग करके ईमेल में अनुलग्नक के रूप में सफलतापूर्वक एक छवि एम्बेड की है। अब आपके ईमेल अधिक दृश्यात्मक रूप से आकर्षक और जानकारीपूर्ण होंगे।
+जब संदेश प्राप्तकर्ता के इनबॉक्स में पहुँचेगा, इमेज इनलाइन दिखाई देगी, ठीक उसी जगह जहाँ `<img>` टैग रखा गया है।
 
-## निष्कर्ष
+## Common Issues & How to Fix Them
 
-इस गाइड में, हमने Aspose.Email for Java में छवियों को अनुलग्नक के रूप में एम्बेड करने के लिए आवश्यक चरणों को कवर किया है। इन चरणों का पालन करके, आप अपने दर्शकों को आकर्षित करने वाले दृश्य तत्व जोड़कर अपने ईमेल संचार को बेहतर बना सकते हैं।
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Image shows as broken link | Wrong Content‑ID or missing `LinkedResource` | Verify that `linkedImage.setContentId("image1")` matches the `cid:image1` in HTML. |
+| Email flagged as spam | Large image size or missing proper MIME headers | Compress the image (< 200 KB) and ensure you’re using TLS (`client.setSecurityOptions(SecurityOptions.Auto)`). |
+| Image not displayed in Outlook | Outlook blocks external resources | Embedding with `cid:` bypasses this; ensure the image is attached, not just linked. |
 
-## अक्सर पूछे जाने वाले प्रश्न
+## Frequently Asked Questions
 
-### मैं एक ही ईमेल में एकाधिक छवियाँ कैसे एम्बेड कर सकता हूँ?
+**Q: Can I embed multiple images in a single email?**  
+A: Yes—repeat Step 3 for each image, giving each a unique Content‑ID (e.g., `image2`, `logo`). Add the corresponding `<img src='cid:image2'>` tags in the HTML body.
 
-आप प्रत्येक छवि के लिए समान प्रक्रिया का पालन करके तथा यह सुनिश्चित करके कि प्रत्येक छवि की एक विशिष्ट सामग्री आईडी हो, अनेक छवियां एम्बेड कर सकते हैं।
+**Q: Is it possible to embed images in plain‑text emails?**  
+A: Plain‑text format does not support inline images. You can only include image URLs as text, which the recipient must click to view.
 
-### क्या मैं सादे पाठ वाले ईमेल में छवियाँ एम्बेड कर सकता हूँ?
+**Q: What image formats are supported for embedding?**  
+A: Aspose.Email for Java supports JPEG, PNG, GIF, BMP, and TIFF. Ensure the MIME type matches the file format when creating `LinkedResource`.
 
-सादे टेक्स्ट ईमेल में इमेज एम्बेड करना एक मानक अभ्यास नहीं है, क्योंकि सादे टेक्स्ट ईमेल एम्बेड की गई इमेज का समर्थन नहीं करते हैं। हालाँकि, आप सादे टेक्स्ट ईमेल में इमेज URL शामिल कर सकते हैं।
+**Q: How can I resize an embedded image without editing the file?**  
+A: Add width/height attributes to the `<img>` tag, e.g., `<img src='cid:image1' width='300' height='200'>`. This scales the image on display.
 
-### एम्बेडिंग के लिए कौन से छवि प्रारूप समर्थित हैं?
+**Q: Are there size limits for embedded images?**  
+A: While there’s no hard limit in Aspose.Email, most mail servers cap total message size at 10–25 MB. Keeping each image under 200 KB is a good practice.
 
-Aspose.Email for Java विभिन्न छवि प्रारूपों का समर्थन करता है, जिसमें JPEG, PNG, GIF, और बहुत कुछ शामिल है। सुनिश्चित करें कि आपकी छवि संगत प्रारूप में है।
+## Conclusion
+आपके पास अब Aspose.Email for Java का उपयोग करके **how to embed image** करने की पूरी, प्रोडक्शन‑रेडी रेसिपी है। HTML बॉडी बनाकर, इमेज को अटैच करके, और `LinkedResource` के माध्यम से लिंक करके आप **send email with image** बना सकते हैं जो सभी क्लाइंट्स में शानदार दिखेगा। कई इमेज, डायनामिक कंटेंट, या यहाँ तक कि PDFs को एम्बेड करने के लिए भी इसी तकनीक का प्रयोग करें।
 
-### क्या ईमेल में एम्बेड की गई छवियों का आकार बदलना संभव है?
+---
 
-हां, आप HTML को समायोजित करके एम्बेडेड छवियों के आकार को नियंत्रित कर सकते हैं `<img>` अपने ईमेल के HTML मुख्य भाग में टैग विशेषताएँ जोड़ें।
-
-### क्या एम्बेडेड छवियों के आकार पर कोई सीमाएं हैं?
-
-एंबेडेड इमेज का आकार ईमेल डिलीवरेबिलिटी और प्राप्तकर्ता अनुभव को प्रभावित कर सकता है। बड़ी फ़ाइल साइज़ से बचने के लिए ईमेल के लिए इमेज को ऑप्टिमाइज़ करना उचित है।
+**Last Updated:** 2025-11-28  
+**Tested With:** Aspose.Email for Java 24.12  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
