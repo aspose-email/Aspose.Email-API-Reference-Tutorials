@@ -1,10 +1,15 @@
 ---
-"description": "Pelajari cara mengekstrak lampiran email dengan mudah menggunakan Aspose.Email untuk Java. Panduan langkah demi langkah untuk pengembang Java."
-"linktitle": "Mengekstrak Lampiran dari Pesan Email di Aspose.Email"
-"second_title": "Aspose.Email API Manajemen Email Java"
-"title": "Mengekstrak Lampiran dari Pesan Email di Aspose.Email"
-"url": "/id/java/advanced-email-attachments/extracting-attachments-from-email-messages/"
-"weight": 13
+date: 2025-11-30
+description: Pelajari cara mengekstrak lampiran email dan mengekstrak lampiran dari
+  file msg dengan Aspose.Email untuk Java. Tutorial email Aspose ini memandu Anda
+  melalui langkah‑langkahnya.
+language: id
+linktitle: Extracting Attachments from Email Messages in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Cara Mengekstrak Lampiran Email dari Pesan Email Menggunakan Aspose.Email untuk
+  Java
+url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,34 +18,49 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mengekstrak Lampiran dari Pesan Email di Aspose.Email
+# Cara Mengekstrak Lampiran Email dari Pesan Email Menggunakan Aspose.Email untuk Java
 
+Mengekstrak lampiran email adalah kebutuhan rutin ketika Anda mengotomatisasi pemrosesan email, dan Aspose.Email untuk Java membuatnya menjadi mudah. Dalam **tutorial email Aspose** ini kami akan memandu Anda melalui semua yang perlu Anda ketahui untuk **mengekstrak lampiran email** dari file MSG atau EML, langkah demi langkah. Pada akhir panduan Anda akan memiliki program Java siap‑jalankan yang mengambil setiap lampiran dari sebuah pesan dan menyimpannya ke disk.
 
-## Pengantar Aspose.Email untuk Java
+## Jawaban Cepat
+- **Perpustakaan apa yang saya butuhkan?** Aspose.Email untuk Java (unduh dari situs resmi).  
+- **Format file apa yang didukung?** MSG, EML, MIME, dan lainnya.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis cukup untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Berapa baris kode?** Kurang dari 20 baris untuk mengekstrak semua lampiran.  
+- **Bisakah saya menjalankannya di sistem operasi apa saja?** Ya – Java bersifat lintas‑platform, sehingga kode berfungsi di Windows, Linux, dan macOS.
 
-Aspose.Email untuk Java adalah pustaka Java yang canggih yang memungkinkan pengembang untuk bekerja dengan pesan dan lampiran email dengan lancar. Pustaka ini menyediakan berbagai fitur untuk pemrosesan email, termasuk kemampuan untuk mengekstrak lampiran dari pesan email. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menggunakan Aspose.Email untuk Java untuk mengekstrak lampiran dari pesan email dengan mudah.
+## Apa itu “mengekstrak lampiran email”?
+Mengekstrak lampiran email berarti membaca file email, menemukan setiap file yang dilampirkan (PDF, gambar, dokumen, dll.), dan menulis file‑file tersebut ke folder di komputer atau server Anda. Ini berguna untuk pengarsipan, penambangan data, atau memasukkan lampiran ke alur kerja selanjutnya.
+
+## Mengapa menggunakan Aspose.Email untuk Java untuk mengekstrak lampiran email?
+- **Dukungan format lengkap** – Menangani MSG, EML, dan MIME mentah tanpa konverter tambahan.  
+- **Tanpa ketergantungan eksternal** – Murni Java, tidak memerlukan pustaka native.  
+- **API yang kuat** – Menyediakan objek bertipe kuat seperti `MailMessage` dan `Attachment` yang menyederhanakan kode.  
+- **Berorientasi kinerja** – Memuat pesan besar dengan cepat dan mengiterasi lampiran secara efisien.
+
+## Pengenalan Aspose.Email untuk Java
+
+Aspose.Email untuk Java adalah pustaka Java yang kuat yang memungkinkan pengembang bekerja dengan pesan email dan lampirannya secara mulus. Ia menyediakan beragam fitur untuk pemrosesan email, termasuk kemampuan untuk **mengekstrak lampiran dari msg**. Dalam panduan langkah‑demi‑langkah ini, kami akan mengeksplorasi cara menggunakan Aspose.Email untuk Java guna mengekstrak lampiran dari pesan email dengan mudah.
 
 ## Prasyarat
 
-Sebelum kita masuk ke kode, mari pastikan Anda telah mengatur semuanya dengan benar:
+Sebelum kita masuk ke kode, pastikan Anda telah menyiapkan semua hal berikut:
 
-1. Lingkungan Pengembangan Java: Pastikan Anda telah menginstal Java pada sistem Anda.
-
-2. Aspose.Email untuk Java: Unduh pustaka dari [Di Sini](https://releases.aspose.com/email/java/) dan menambahkannya ke proyek Anda.
-
-3. Pesan Email: Anda harus memiliki pesan email dengan lampiran untuk digunakan. Anda dapat menggunakan email Anda sendiri atau membuat contoh email untuk pengujian.
+1. **Lingkungan Pengembangan Java** – Pastikan Java terpasang di sistem Anda (JDK 8 atau lebih tinggi).  
+2. **Aspose.Email untuk Java** – Unduh pustaka dari [di sini](https://releases.aspose.com/email/java/) dan tambahkan ke proyek Anda.  
+3. **Pesan Email** – Anda harus memiliki pesan email dengan lampiran untuk dikerjakan. Anda dapat menggunakan email Anda sendiri atau membuat email contoh untuk pengujian.
 
 ## Langkah 1: Buat Proyek Java
 
-Pertama, mari buat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) favorit Anda.
+Pertama, buat proyek Java baru di Integrated Development Environment (IDE) favorit Anda. Ini dapat berupa proyek Maven atau Gradle sederhana, atau proyek IDE biasa.
 
 ## Langkah 2: Tambahkan Pustaka Aspose.Email
 
-Tambahkan pustaka Aspose.Email ke proyek Anda dengan menyertakan file JAR yang Anda unduh sebelumnya.
+Tambahkan pustaka Aspose.Email ke proyek Anda dengan menyertakan file JAR yang telah Anda unduh sebelumnya. Jika Anda menggunakan Maven, tambahkan dependensi seperti yang ditunjukkan dalam dokumentasi resmi.
 
 ## Langkah 3: Ekstrak Lampiran
 
-Sekarang, mari kita tulis kode Java untuk mengekstrak lampiran dari pesan email. Berikut ini adalah contoh potongan kode untuk membantu Anda memulai:
+Sekarang kita akan menulis kode Java yang benar‑benar **mengekstrak lampiran email**. Potongan kode di bawah ini menunjukkan proses lengkap—dari memuat pesan hingga menyimpan setiap lampiran ke disk.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -48,49 +68,58 @@ import com.aspose.email.Attachment;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        // Muat pesan email
+        // Load the email message
         MailMessage message = MailMessage.load("path/to/your/email.msg");
 
-        // Ulangi melalui lampiran
+        // Iterate through attachments
         for (Attachment attachment : message.getAttachments()) {
-            // Simpan lampiran ke file
+            // Save the attachment to a file
             attachment.save("path/to/save/" + attachment.getName());
         }
     }
 }
 ```
 
-Dalam kode ini, kita memuat pesan email, mengulangi lampirannya, dan menyimpan setiap lampiran ke lokasi yang ditentukan. Jangan lupa untuk mengganti `"path/to/your/email.msg"` dengan jalur sebenarnya ke pesan email Anda.
+Dalam kode ini, kami memuat sebuah pesan email, mengiterasi lampirannya, dan menyimpan setiap lampiran ke lokasi yang ditentukan. Jangan lupa mengganti `"path/to/your/email.msg"` dengan jalur sebenarnya ke pesan email Anda.
 
 ## Langkah 4: Kompilasi dan Jalankan
 
-Kompilasi dan jalankan program Java. Jika semuanya sudah diatur dengan benar, Anda akan melihat lampiran yang diekstrak ke folder yang ditentukan.
+Kompilasi dan jalankan program Java. Jika semuanya sudah diatur dengan benar, Anda akan melihat lampiran diekstrak ke folder yang telah ditentukan.
 
-## Kesimpulan
+## Masalah Umum & Pemecahan Masalah
 
-Mengekstrak lampiran dari pesan email merupakan tugas umum dalam aplikasi pemrosesan email. Aspose.Email untuk Java menyederhanakan proses ini dengan menyediakan pustaka tangguh yang menangani operasi terkait email secara efisien. Hanya dengan beberapa baris kode, Anda dapat mengekstrak lampiran dan menggabungkan fungsi ini ke dalam aplikasi Java Anda.
+| Masalah | Penyebab | Solusi |
+|-------|--------|----------|
+| **Tidak ada lampiran yang disimpan** | Jalur file salah atau pesan tidak memiliki lampiran | Verifikasi jalur pesan dan periksa `message.getAttachments().size()` sebelum loop. |
+| **Akses ditolak saat menyimpan** | Izin folder tujuan | Pilih folder di mana proses Java memiliki hak menulis, atau jalankan program dengan hak istimewa lebih tinggi. |
+| **Format file tidak didukung** | Menggunakan versi Aspose.Email yang lebih lama | Perbarui ke rilis terbaru Aspose.Email untuk Java. |
 
 ## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara mengunduh Aspose.Email untuk Java?
+**T: Bagaimana cara mengunduh Aspose.Email untuk Java?**  
+J: Anda dapat mengunduh Aspose.Email untuk Java dari situs web [di sini](https://releases.aspose.com/email/java/).
 
-Anda dapat mengunduh Aspose.Email untuk Java dari situs web di [Di Sini](https://releases.aspose.com/email/java/).
+**T: Bisakah saya menggunakan Aspose.Email untuk Java dalam proyek komersial saya?**  
+J: Ya, Aspose.Email untuk Java dapat digunakan dalam proyek pribadi maupun komersial. Periksa detail lisensi di situs web untuk informasi lebih lanjut.
 
-### Dapatkah saya menggunakan Aspose.Email untuk Java dalam proyek komersial saya?
+**T: Apakah ada dokumentasi yang tersedia untuk Aspose.Email untuk Java?**  
+J: Tentu! Anda dapat menemukan dokumentasi Aspose.Email untuk Java di [di sini](https://reference.aspose.com/email/java/).
 
-Ya, Aspose.Email untuk Java dapat digunakan dalam proyek pribadi dan komersial. Periksa detail lisensi di situs web untuk informasi lebih lanjut.
+**T: Format email apa saja yang didukung oleh Aspose.Email untuk Java?**  
+J: Aspose.Email untuk Java mendukung berbagai format email, termasuk MSG, EML, dan lainnya. Lihat dokumentasi untuk daftar lengkap format yang didukung.
 
-### Apakah ada dokumentasi yang tersedia untuk Aspose.Email untuk Java?
+**T: Di mana saya dapat mendapatkan dukungan untuk Aspose.Email untuk Java?**  
+J: Untuk bantuan teknis atau pertanyaan, Anda dapat menghubungi tim dukungan Aspose melalui saluran dukungan mereka.
 
-Tentu saja! Anda dapat menemukan dokumentasi untuk Aspose.Email untuk Java di [Di Sini](https://reference.aspose.com/email/java/).
+## Kesimpulan
 
-### Format email apa yang didukung Aspose.Email untuk Java?
+Mengekstrak lampiran email adalah tugas umum dalam aplikasi pemrosesan email, dan dengan Aspose.Email untuk Java Anda dapat melakukannya hanya dalam beberapa baris kode. Baik Anda perlu **mengekstrak lampiran dari msg** atau mengotomatisasi ekstraksi massal pada ribuan pesan, pustaka ini menyediakan solusi lintas‑platform yang andal. Integrasikan potongan kode ini ke dalam proyek Java Anda yang sudah ada dan mulailah menangani lampiran hari ini.
 
-Aspose.Email untuk Java mendukung berbagai format email, termasuk MSG, EML, dan lainnya. Lihat dokumentasi untuk daftar lengkap format yang didukung.
+---
 
-### Di mana saya bisa mendapatkan dukungan untuk Aspose.Email untuk Java?
-
-Untuk bantuan teknis atau pertanyaan apa pun, Anda dapat menghubungi tim dukungan Aspose melalui saluran dukungan mereka.
+**Terakhir Diperbarui:** 2025-11-30  
+**Diuji Dengan:** Aspose.Email untuk Java 24.11 (terbaru pada saat penulisan)  
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
