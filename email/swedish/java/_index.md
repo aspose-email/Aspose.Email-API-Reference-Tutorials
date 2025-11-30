@@ -1,9 +1,12 @@
 ---
-"description": "Lås upp kraften i Aspose.Email för Java med omfattande handledningar. Lär dig hantering, hantering, sändning, mottagning och säkerhet av e-post för dina Java-applikationer."
-"linktitle": "Aspose.Email för Java-handledningar"
-"title": "Aspose.Email för Java-handledningar - Bemästra e-postmanipulation och -hantering"
-"url": "/sv/java/"
-"weight": 10
+date: 2025-11-30
+description: Lär dig hur du skapar kalenderinbjudan, skickar e‑post med Java, konverterar
+  eml till msg och lägger till digital signatur i e‑post med Aspose.Email för Java.
+language: sv
+linktitle: Aspose.Email for Java Tutorials
+title: Skapa kalenderinbjudan med Aspose.Email för Java – Fullständig handledning
+url: /java/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -12,97 +15,138 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email för Java-handledningar: Bemästra e-postmanipulation och -hantering
+# Skapa kalenderinbjudan med Aspose.Email för Java – Fullständig handledning
 
-Välkommen till **Aspose.Email för Java-handledningar** – din ultimata resurs för att bemästra e-posthantering och -hantering i Java-applikationer. Aspose.Email för Java är ett robust API som gör det möjligt för utvecklare att enkelt skapa, läsa, skicka, ta emot och hantera e-postmeddelanden. Oavsett om du vill automatisera e-postuppgifter, förbättra säkerheten eller integrera kraftfull e-postfunktionalitet, ger våra omfattande guider de verktyg och den kunskap du behöver.
+Välkommen till **Aspose.Email for Java handledningar** – din främsta resurs för att bemästra e‑postmanipulation, **skapa kalenderinbjudningar**, och hantera alla aspekter av e‑postkommunikation inom Java‑applikationer. Oavsett om du behöver **skicka e‑post java**, **konvertera eml till msg**, lägga till ett **digitalt signatur‑e‑post**, eller helt enkelt analysera komplexa meddelanden, så ger Aspose.Email for Java dig ett rent, programatiskt sätt att utföra uppgiften.
 
-## Släpp lös kraften i Aspose.Email för Java
+## Snabba svar
+- **Hur skapar jag en kalenderinbjudan i Java?** Använd `MailMessage` tillsammans med `Appointment`‑objekt från Aspose.Email.  
+- **Kan jag skicka inbjudan via SMTP?** Ja – konfigurera en `SmtpClient` och anropa `client.send(message)`.  
+- **Vilket format använder inbjudan?** Det standardiserade iCalendar (`.ics`)-formatet, som kan läsas med `Appointment`‑ eller `Calendar`‑klasser.  
+- **Behöver jag en licens för produktion?** En kommersiell licens krävs för icke‑utvärderingsbruk.  
+- **Är det möjligt att lägga till en digital signatur på inbjudan?** Absolut – använd `MailMessage.sign` med ett certifikat.
 
-Aspose.Email för Java är ett funktionsrikt bibliotek utformat för att förenkla e-posthantering i dina Java-projekt. Det låter utvecklare arbeta med e-postmeddelanden i olika format, vilket gör det till en ovärderlig tillgång för företag och utvecklare som söker effektiva e-postlösningar. Med dess omfattande funktioner kan du automatisera repetitiva e-postprocesser, generera detaljerade rapporter och implementera avancerade e-postbehandlingsfunktioner för att bygga sofistikerade applikationer.
+## Vad är en kalenderinbjudan och varför skapa en programatiskt?
 
-## Omfattande handledningar för Java-utvecklare
+En kalenderinbjudan (iCalendar `.ics`‑fil) är en portabel representation av ett evenemang som kan importeras till Outlook, Google Calendar eller någon iCalendar‑kompatibel klient. Att generera inbjudningar programatiskt låter dig automatisera mötesplanering, skicka påminnelser och integrera kalenderfunktionalitet direkt i dina Java‑tjänster.
 
-För att hjälpa dig att utnyttja den fulla potentialen hos **Aspose.Email för Java**erbjuder vi en omfattande samling steg-för-steg-handledningar. Dessa guider täcker ett brett spektrum av ämnen, allt från grundläggande e-poståtgärder som att skicka och ta emot meddelanden till mer avancerade uppgifter som att analysera e-postdata, hantera bilagor och integrera med e-postservrar som Exchange och IMAP. Oavsett om du är nybörjare inom e-postutveckling eller en erfaren Java-programmerare, erbjuder dessa handledningar praktiska exempel och värdefulla insikter för att avsevärt förbättra dina färdigheter i e-posthantering.
+## Varför använda Aspose.Email för Java för att skapa kalenderinbjudningar?
 
-## Viktiga fördelar med att använda Aspose.Email för Java
+- **Fullt .ics‑stöd** – läs, redigera och skriv iCalendar‑filer utan externa beroenden.  
+- **Sömlös integration** – kombinera inbjudningar med rika e‑postkroppar, bilagor och digitala signaturer.  
+- **Cross‑platform** – fungerar på Windows, Linux och macOS med vilken Java‑runtime som helst.  
+- **Robust säkerhet** – kryptera meddelanden, tillämpa S/MIME‑signaturer och skydda bilagor.
 
-Genom att utnyttja Aspose.Email för Java genom våra detaljerade handledningar kan utvecklare effektivisera e-postrelaterade arbetsflöden och öka effektiviteten i sina Java-applikationer. API:ets mångsidighet gör att du kan skapa anpassade e-postlösningar som är exakt anpassade till dina unika behov. Oavsett om du utvecklar en anpassad e-postklient, automatiserar e-postsvar eller implementerar robust e-postarkivering, ger Aspose.Email för Java funktionaliteten för att enkelt uppnå dina utvecklingsmål.
+## Förutsättningar
+- Java Development Kit (JDK) 8 eller högre.  
+- Aspose.Email för Java‑bibliotek (ladda ner från Aspose‑webbplatsen).  
+- En SMTP‑server för att skicka meddelanden (t.ex. Gmail, Office 365 eller en lokal server).  
+- Valfritt: X.509‑certifikat för digital signering.
 
-I huvudsak, den **Aspose.Email för Java-handledningar** erbjuder en tydlig väg till att bli skicklig i programmatisk e-posthantering. Med sin rika funktionsuppsättning och omfattande utbildningsresurser förenklar detta API komplexa e-posthanteringsuppgifter och låser upp nya möjligheter för innovativa e-postlösningar. Om du är en Java-utvecklare som strävar efter att förbättra dina färdigheter eller ett företag som söker effektiv e-postautomatisering, ger våra Aspose.Email för Java-handledningar den nödvändiga kunskapen och vägledningen för att lyckas.
+## Steg‑för‑steg‑guide för att skapa en kalenderinbjudan
+
+### Steg 1: Ställ in ditt projekt
+Lägg till Aspose.Email‑JAR‑filen i ditt projekts classpath eller inkludera den via Maven/Gradle. Detta ger dig åtkomst till `MailMessage`, `Appointment` och relaterade klasser.
+
+### Steg 2: Bygg mötet (kalenderinbjudan)
+Skapa ett `Appointment`‑objekt, fyll i ämne, plats, start‑/sluttider och deltagare. Detta objekt kommer senare att sparas som en `.ics`‑fil och bifogas i ett e‑postmeddelande.
+
+### Steg 3: Konvertera mötet till en iCalendar‑fil
+Använd `Appointment.save` för att generera iCalendar‑strömmen. Du kan antingen skriva den till disk eller behålla den i minnet för bifogning.
+
+### Steg 4: Skapa e‑postmeddelandet
+Instansiera ett `MailMessage`, ange avsändare, mottagare, ämne och kropp. Bifoga iCalendar‑strömmen som en `message/rfc822`‑del så att e‑postklienter känner igen den som en mötesförfrågan.
+
+### Steg 5: (Valfritt) Lägg till en digital signatur
+Om du behöver ett **digitalt signatur‑e‑post**, ladda ditt certifikat och anropa `mailMessage.sign`. Detta säkerställer meddelandets integritet och äkthet.
+
+### Steg 6: Skicka e‑posten via SMTP
+Konfigurera en `SmtpClient` med dina serveruppgifter, aktivera TLS/SSL om det krävs, och anropa `client.send(mailMessage)`. Dina mottagare får en färdig att acceptera kalenderinbjudan.
+
+> **Pro tip:** Återanvänd samma `SmtpClient`‑instans för massinbjudningar för att förbättra prestanda.
+
+## Vanliga användningsfall
+- **Automatiserad mötesplanering** från en webbportal eller internt verktyg.  
+- **Påminnelse‑e‑post** som inkluderar en bifogad `.ics`‑fil.  
+- **Massinbjudningar** för webbinarier eller utbildningssessioner.  
+- **Integration med CRM‑system** för att automatiskt synkronisera händelser.
+
+## Relaterade ämnen du kan utforska
+- **Hur man skickar e‑post java** med Aspose.Email’s `SmtpClient`.  
+- **Hur man konverterar eml till msg** för arkiverings- eller migrationsändamål.  
+- **Hur man läser ics‑fil**‑innehåll och extraherar händelsedetaljer.  
+- **Hur man analyserar e‑post‑huvuden** för att hämta routing‑ eller metadata‑information.  
+- **Hur man tillämpar ett digitalt signatur‑e‑post** för säker kommunikation.
 
 ---
 
-### Aspose.Email för Java-inlärningsvägar
+### Aspose.Email för Java‑lärvägar
 
-Här är några av våra mest populära handledningar för att komma igång och vidare:
+* ### [Kom igång med Aspose.Email för Java](./getting-started/)
+    Begin your journey with **Aspose.Email for Java**. Learn how to install the API, configure licensing, and build your first email applications. Master the basics quickly with our easy-to-follow, step‑by‑step guides.
 
-* ### [Komma igång med Aspose.Email för Java](./getting-started/)
-    Börja din resa med **Aspose.Email för Java**Lär dig hur du installerar API:et, konfigurerar licensiering och bygger dina första e-postprogram. Bemästra grunderna snabbt med våra lättförståeliga steg-för-steg-guider.
+* ### [Kärnoperationer för e‑postmeddelanden i Java](./email-message-operations/)
+    Explore comprehensive email message handling techniques with **Aspose.Email for Java**. Learn to create, load, save, and convert email messages between popular formats like **EML**, **MSG**, and **MHTML** using practical tutorials and code examples.
 
-* ### [Kärnåtgärder för e-postmeddelanden i Java](./email-message-operations/)
-    Utforska omfattande tekniker för hantering av e-postmeddelanden med **Aspose.Email för Java**Lär dig att skapa, läsa in, spara och konvertera e-postmeddelanden mellan populära format som **EML**, **MSG**och **MHTML** med hjälp av praktiska handledningar och kodexempel.
+* ### [Formatering & anpassning av e‑postmeddelanden i Java](./message-formatting-customization/)
+    Master email content formatting with **Aspose.Email for Java**. Our detailed tutorials show you how to work with **HTML bodies**, alternate texts, custom headers, and message encoding to create professional and visually appealing emails.
 
-* ### [Formatera och anpassa e-postmeddelanden i Java](./message-formatting-customization/)
-    Bemästra formatering av e-postinnehåll med **Aspose.Email för Java**Våra detaljerade handledningar visar dig hur du arbetar med **HTML-kroppar**, alternativa texter, anpassade rubriker och meddelandekodning för att skapa professionella och visuellt tilltalande e-postmeddelanden.
+* ### [Hantera e‑postbilagor i Java](./attachments-handling/)
+    Implement robust attachment operations in your emails using **Aspose.Email for Java**. Learn to add, extract, remove, and save attachments from various message formats, including embedded objects and TNEF formats.
 
-* ### [Hantera e-postbilagor i Java](./attachments-handling/)
-    Implementera robusta bilageåtgärder i dina e-postmeddelanden med hjälp av **Aspose.Email för Java**Lär dig att lägga till, extrahera, ta bort och spara bilagor från olika meddelandeformat, inklusive inbäddade objekt och TNEF-format.
-
-* ### [Hantera kalender och möten i e-postmeddelanden (Java)](./calendar-appointments/)
-    Upptäck hur du hanterar kalenderfunktioner i dina applikationer med vår omfattande **Aspose.Email för Java** handledningar. Skapa kalenderobjekt, generera mötesförfrågningar, bearbeta svar på möten och arbeta med **ICS-kalenderfiler**.
+* ### [Hantera kalender & möten i e‑post (Java)](./calendar-appointments/)
+    Discover how to manage calendar functionality in your applications with our comprehensive **Aspose.Email for Java** tutorials. Create calendar items, generate meeting requests, process appointment responses, and work with **ICS calendar files**.
 
 * ### [Integrera med Exchange Server med Aspose.Email för Java](./exchange-server-integration/)
-    Lär dig hur du integrerar sömlöst med **Exchange-server** med hjälp av vår **Aspose.Email för Java** handledningar. Anslut till Exchange-servrar, få åtkomst till postlådor och mappar och hantera meddelanden och möten med **Exchange Web Services (EWS)**.
+    Learn how to seamlessly integrate with **Exchange Server** using our **Aspose.Email for Java** tutorials. Connect to Exchange servers, access mailboxes and folders, and manage messages and appointments with **Exchange Web Services (EWS)**.
 
-* ### [IMAP-klientoperationer med Aspose.Email för Java](./imap-client-operations/)
-    Vår **IMAP-klient** handledningar visar hur man interagerar med e-postservrar med hjälp av **IMAP-protokoll** i **Aspose.Email för Java**Lär dig att ansluta till IMAP-servrar, bläddra i mappar, hämta meddelanden och implementera avancerade sökåtgärder.
+* ### [IMAP‑klientoperationer med Aspose.Email för Java](./imap-client-operations/)
+    Our **IMAP client** tutorials demonstrate how to interact with email servers using the **IMAP protocol** in **Aspose.Email for Java**. Learn to connect to IMAP servers, browse folders, fetch messages, and implement advanced search operations.
 
-* ### [POP3-klientoperationer med Aspose.Email för Java](./pop3-client-operations/)
-    Bemästra **POP3 e-postklient** implementering med våra detaljerade **Aspose.Email för Java** handledningar. Anslut till POP3-servrar, ladda ner meddelanden, hämta e-postinformation och bearbeta e-postmeddelanden programmatiskt.
+* ### [POP3‑klientoperationer med Aspose.Email för Java](./pop3-client-operations/)
+    Master **POP3 mail client** implementation with our detailed **Aspose.Email for Java** tutorials. Connect to POP3 servers, download messages, retrieve mail information, and process emails programmatically.
 
-* ### [SMTP-klientåtgärder för att skicka e-postmeddelanden i Java](./smtp-client-operations/)
-    Vår **SMTP-klient** handledningar visar hur du skickar e-postmeddelanden programmatiskt med hjälp av **Aspose.Email i Java**Konfigurera SMTP-servrar, implementera säkra anslutningar, hantera leveransmeddelanden och skapa massutskick av e-post.
+* ### [SMTP‑klientoperationer för att skicka e‑post i Java](./smtp-client-operations/)
+    Our **SMTP client** tutorials show you how to send emails programmatically using **Aspose.Email in Java**. Configure SMTP servers, implement secure connections, handle delivery notifications, and create bulk email operations.
 
-* ### [Arbeta med Outlook PST- och OST-filer i Java](./outlook-pst-ost-operations/)
-    Lär dig att arbeta med **Microsoft Outlook-lagringsfiler** med hjälp av vår omfattande **Aspose.Email för Java** handledningar. Skapa, ladda och manipulera **PST** och **OST** filer, extrahera och spara meddelanden och hantera mappar programmatiskt.
+* ### [Arbeta med Outlook PST‑ & OST‑filer i Java](./outlook-pst-ost-operations/)
+    Learn to work with **Microsoft Outlook storage files** using our comprehensive **Aspose.Email for Java** tutorials. Create, load, and manipulate **PST** and **OST** files, extract and save messages, and manage folders programmatically.
 
-* ### [MAPI-operationer för Outlook-data i Java](./mapi-operations/)
-    Bemästra **MAPI-meddelandemanipulation** med våra detaljerade **Aspose.Email för Java** handledningar. Lär dig att arbeta med MAPI-egenskaper, skapa och modifiera Outlook-kompatibla objekt som kontakter, uppgifter och anteckningar programmatiskt.
+* ### [MAPI‑operationer för Outlook‑data i Java](./mapi-operations/)
+    Master **MAPI message manipulation** with our detailed **Aspose.Email for Java** tutorials. Learn to work with MAPI properties, create and modify Outlook-compatible items like contacts, tasks, and notes programmatically.
 
-* ### [E-postsäkerhet och autentisering i Java-applikationer](./security-authentication/)
-    Våra handledningar för säkerhet och autentisering visar hur man skyddar e-postkommunikation med hjälp av **Aspose.Email för Java**Implementera e-postkryptering, lägg till digitala signaturer, konfigurera DKIM-signering och konfigurera säker autentisering.
+* ### [E‑postsäkerhet & autentisering i Java‑applikationer](./security-authentication/)
+    Our security and authentication tutorials demonstrate how to protect email communications using **Aspose.Email for Java**. Implement email encryption, add digital signatures, configure DKIM signing, and set up secure authentication.
 
-* ### [Tekniker för e-postparsning och analys i Java](./email-parsing-analysis/)
-    Våra handledningar för e-postanalys visar hur du extraherar värdefull information från e-postmeddelanden med hjälp av **Aspose.Email i Java**. Analysera e-postrubriker, extrahera mottagarinformation och analysera meddelandeinnehåll programmatiskt.
+* ### [E‑postanalys & -parsing‑tekniker i Java](./email-parsing-analysis/)
+    Our email parsing and analysis tutorials show you how to extract valuable information from email messages using **Aspose.Email in Java**. Parse email headers, extract recipient information, and analyze message content programmatically.
 
-* ### [E-postkonvertering och rendering till olika format (Java)](./email-conversion-rendering/)
-    Bemästra e-postkonverteringsoperationer med våra detaljerade **Aspose.Email för Java** handledningar. Konvertera mellan olika e-postformat (**EML**, **MSG**, **MHTML**, **HTML**), rendera meddelanden med korrekt formatering och bevara visuell återgivning.
+* ### [E‑postkonvertering & rendering till olika format (Java)](./email-conversion-rendering/)
+    Master email conversion operations with our detailed **Aspose.Email for Java** tutorials. Convert between various email formats (**EML**, **MSG**, **MHTML**, **HTML**), render messages with proper formatting, and preserve visual fidelity.
 
-* ### [Thunderbird- och MBOX-operationer med Aspose.Email för Java](./thunderbird-mbox-operations/)
-    Våra handledningar för Thunderbird och MBOX ger omfattande vägledning för hantering av e-postformat med öppen källkod. **Aspose.Email i Java**Lär dig att komma åt Thunderbird-e-postlagrar och bearbeta dem. **MBOX-filer**och extrahera meddelanden från arkiv.
+* ### [Thunderbird & MBOX‑operationer med Aspose.Email för Java](./thunderbird-mbox-operations/)
+    Our Thunderbird and MBOX tutorials provide comprehensive guidance for handling open‑source email formats with **Aspose.Email in Java**. Learn to access Thunderbird mail stores, process **MBOX files**, and extract messages from archives.
 
----
+* ### [Skicka e‑post med Aspose.Email för Java](./sending-emails/)
+    Master the art of sending emails using **Aspose.Email for Java** with these comprehensive tutorials. Learn to craft and send emails effortlessly and efficiently from your Java applications.
 
-* ### [Skicka e-postmeddelanden med Aspose.Email för Java](./sending-emails/)
-    Bemästra konsten att skicka e-postmeddelanden med hjälp av **Aspose.Email för Java** med dessa omfattande handledningar. Lär dig att skapa och skicka e-postmeddelanden enkelt och effektivt från dina Java-program.
+* ### [Ta emot e‑post med Aspose.Email för Java](./receiving-emails/)
+    Learn how to receive and process emails effortlessly with **Aspose.Email for Java** tutorials. Start managing your inbox programmatically and streamline your email workflows.
 
-* ### [Ta emot e-postmeddelanden med Aspose.Email för Java](./receiving-emails/)
-    Lär dig hur du enkelt kan ta emot och bearbeta e-postmeddelanden med **Aspose.Email för Java** handledningar. Börja hantera din inkorg programmatiskt och effektivisera dina e-postarbetsflöden.
+* ### [Konfigurera SMTP‑servrar med Aspose.Email för Java](./configuring-smtp-servers/)
+    Learn how to configure **SMTP servers** effortlessly with **Aspose.Email for Java**. Our step‑by‑step tutorials guide you through seamless email delivery setup and best practices.
 
-* ### [Konfigurera SMTP-servrar med Aspose.Email för Java](./configuring-smtp-servers/)
-    Lär dig hur du konfigurerar **SMTP-servrar** utan ansträngning med **Aspose.Email för Java**Våra steg-för-steg-handledningar guidar dig genom smidig installation av e-postleverans och bästa praxis.
+* ### [Avancerade e‑postbilagor med Aspose.Email för Java](./advanced-email-attachments/)
+    Delve into advanced email attachment techniques with **Aspose.Email for Java**. Explore tutorials for handling various attachment types, managing large files, and optimizing attachment processing efficiently.
 
-* ### [Avancerade e-postbilagor med Aspose.Email för Java](./advanced-email-attachments/)
-    Fördjupa dig i avancerade tekniker för e-postbilagor med **Aspose.Email för Java**Utforska handledningar för att hantera olika typer av bilagor, hantera stora filer och optimera hanteringen av bilagor effektivt.
+* ### [Säkra e‑postkommunikation med Aspose.Email för Java](./securing-email-communications/)
+    Learn how to enhance email security with **Aspose.Email for Java**. Our tutorials cover essential topics like **encryption**, **digital signatures**, and secure communication protocols for robust email protection.
 
-* ### [Säkra e-postkommunikation med Aspose.Email för Java](./securing-email-communications/)
-    Lär dig hur du förbättrar e-postsäkerheten med **Aspose.Email för Java**Våra handledningar täcker viktiga ämnen som **kryptering**, **digitala signaturer**och säkra kommunikationsprotokoll för robust e-postskydd.
+* ### [Anpassa e‑posthuvuden med Aspose.Email för Java](./customizing-email-headers/)
+    Learn how to customize email headers effortlessly with **Aspose.Email for Java**. Dive into these tutorials and harness the power of email header manipulation for enhanced control over your messages.
 
-* ### [Anpassa e-postrubriker med Aspose.Email för Java](./customizing-email-headers/)
-    Lär dig hur du enkelt anpassar e-postrubriker med **Aspose.Email för Java**Fördjupa dig i dessa handledningar och utnyttja kraften i att manipulera e-postrubriker för förbättrad kontroll över dina meddelanden.
-
-* ### [Utforska e-postsäkerhet med Aspose.Email för Java](./exploring-email-security/)
-    Upptäck på djupet hur du förbättrar e-postsäkerheten med **Aspose.Email för Java**Utforska steg-för-steg-handledningar och bästa praxis för att implementera säkra e-postlösningar i dina Java-applikationer.
+* ### [Utforska e‑postsäkerhet med Aspose.Email för Java](./exploring-email-security/)
+    Discover in-depth how to enhance email security with **Aspose.Email for Java**. Explore step‑by‑step tutorials and best practices for implementing secure email solutions in your Java applications.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -111,3 +155,26 @@ Här är några av våra mest populära handledningar för att komma igång och 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## Vanliga frågor
+
+**Q: Hur läser jag en .ics‑fil efter att ha skapat en kalenderinbjudan?**  
+A: Använd `Appointment.load`‑metoden för att importera `.ics`‑filen tillbaka till ett `Appointment`‑objekt, och sedan komma åt dess egenskaper såsom starttid, ämne och deltagare.
+
+**Q: Kan jag skicka en kalenderinbjudan utan en bilaga?**  
+A: Ja – sätt `MailMessage.isCalendar`‑flaggan till `true` och tilldela `Appointment`‑objektet direkt till meddelandekroppen; klienten kommer att rendera det som en mötesförfrågan.
+
+**Q: Är det möjligt att konvertera en EML‑fil till MSG samtidigt som kalenderdata bevaras?**  
+A: Absolut. Läs in EML‑filen med `MailMessage.load`, anropa sedan `mailMessage.save` och specificera MSG‑formatet; eventuell bifogad kalenderinbjudan förblir intakt.
+
+**Q: Vad behöver jag för att lägga till en digital signatur i mitt e‑postmeddelande?**  
+A: Ett giltigt X.509‑certifikat (PFX‑fil) och lösenordet för den privata nyckeln. Anropa `mailMessage.sign(certificate, password)` innan du skickar.
+
+**Q: Hur kan jag analysera e‑posthuvuden för att extrahera routing‑information?**  
+A: Använd `mailMessage.getHeaders()` eller iterera över `mailMessage.getHeaders().getAll()` för att läsa fält som `Received`, `Message-ID` och `X-Mailer`.
+
+---
+
+**Senast uppdaterad:** 2025-11-30  
+**Testad med:** Aspose.Email for Java 24.11  
+**Författare:** Aspose
