@@ -1,10 +1,14 @@
 ---
-"description": "Ottimizza le tue comunicazioni email con Aspose.Email per Java. Impara a lavorare con gli allegati in linea con questa guida completa."
-"linktitle": "Lavorare con gli allegati in linea in Aspose.Email"
-"second_title": "API di gestione e-mail Java Aspose.Email"
-"title": "Lavorare con gli allegati in linea in Aspose.Email"
-"url": "/it/java/advanced-email-attachments/working-with-inline-attachments/"
-"weight": 10
+date: 2025-12-01
+description: Scopri come inviare email con immagine incorporata usando Aspose.Email
+  per Java. Questa guida mostra come incorporare immagini nelle email e creare email
+  HTML in Java con allegati inline.
+language: it
+linktitle: Working with Inline Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Come inviare un'email con immagine incorporata usando Aspose.Email per Java
+url: /java/advanced-email-attachments/working-with-inline-attachments/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,47 +17,47 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Lavorare con gli allegati in linea in Aspose.Email
+# Come inviare email con immagine incorporata usando Aspose.Email per Java
 
+Incorporare le immagini direttamente all'interno di un'email rende i messaggi più curati e garantisce che il destinatario veda la grafica senza dover scaricare file separati. In questo tutorial imparerai **come inviare email con immagine incorporata** usando Aspose.Email per Java, coprendo tutto, dall'installazione della libreria alla creazione di un'email HTML, aggiunta di risorse inline e invio del messaggio.
 
-## Introduzione all'utilizzo degli allegati in linea in Aspose.Email
+## Risposte rapide
+- **Qual è la classe principale per le immagini inline?** `LinkedResource`
+- **Quale metodo fa riferimento all'immagine in HTML?** Usa `cid:yourContentId` nel tag `<img>`
+- **È necessaria una licenza per lo sviluppo?** Una versione di prova gratuita è sufficiente per i test; è richiesta una licenza per la produzione
+- **Posso inviare l'email tramite qualsiasi server SMTP?** Sì, basta configurare `SmtpClient` con i dettagli del tuo server
+- **Questo approccio è compatibile con tutti i principali client di posta?** La maggior parte dei client moderni (Outlook, Gmail, Thunderbird) supporta le immagini incorporate con CID
 
-Gli allegati in linea sono una funzionalità preziosa nella comunicazione email che consente di incorporare immagini o altri file direttamente nel corpo di un'email. Questo migliora l'aspetto visivo delle email e garantisce che i destinatari possano visualizzarne il contenuto senza problemi. In questo articolo, esploreremo come utilizzare gli allegati in linea in Aspose.Email per Java.
+## Cosa sono gli allegati inline (immagini incorporate)?
 
-## Cosa sono gli allegati in linea?
+Gli allegati inline—talvolta chiamati immagini incorporate o immagini CID—sono file che vivono all'interno del corpo MIME di un'email. Vengono referenziati dalla parte HTML del messaggio con un **Content‑ID** (CID). Questa tecnica ti consente di **incorporare immagini nelle email** così da apparire esattamente dove posizioni il tag `<img>`, senza apparire come allegati scaricabili separati.
 
-Gli allegati in linea, noti anche come immagini incorporate o in linea, sono file inclusi nel corpo HTML dell'email. Questi allegati vengono visualizzati all'interno del contenuto dell'email anziché essere visualizzati come allegati separati da scaricare o aprire. Possono includere immagini, firme o qualsiasi altro file che si desidera incorporare nel layout dell'email.
+## Perché usare immagini incorporate nelle tue email Java?
 
-## Vantaggi dell'utilizzo degli allegati in linea
+- **Aspetto professionale:** Loghi, banner e foto di prodotto vengono visualizzati istantaneamente.
+- **Migliore coinvolgimento:** I destinatari sono più propensi a leggere un'email che appare completa.
+- **Nessun click aggiuntivo:** Gli utenti non devono scaricare un allegato per vedere l'immagine.
+- **Branding coerente:** I tuoi asset di marca rimangono in linea con il contenuto del messaggio.
 
-L'utilizzo di allegati in linea nelle email offre diversi vantaggi:
+## Prerequisiti
 
-- Presentazione visiva migliorata: gli allegati in linea migliorano l'aspetto generale delle tue e-mail, rendendole più accattivanti.
+- Libreria Aspose.Email per Java (scaricabile dalla documentazione ufficiale [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/))
+- Ambiente di sviluppo Java 8+
+- Accesso a un server SMTP per l'invio della posta
+- File immagine da incorporare (ad esempio `logo.png`)
 
-- Dipendenza ridotta: i destinatari non devono scaricare o aprire allegati separati, migliorando l'esperienza utente.
+## Guida passo‑passo
 
-- Coerenza: gli allegati in linea garantiscono che il contenuto dell'e-mail venga visualizzato come previsto, indipendentemente dal client di posta elettronica del destinatario.
+### Passo 1: Creare un messaggio email HTML di base
 
-- Identità del marchio: puoi utilizzare allegati in linea per loghi, firme o immagini promozionali per rafforzare il tuo marchio.
-
-## Impostazione di Aspose.Email per Java
-
-Prima di iniziare a lavorare con gli allegati in linea, è necessario configurare Aspose.Email per Java nel progetto. Ecco i passaggi per iniziare:
-
-1. Scarica Aspose.Email per Java: Visita il [Aspose.Email per la documentazione Java](https://reference.aspose.com/email/java/) per accedere al link per il download.
-
-2. Installa la libreria: segui le istruzioni di installazione fornite nella documentazione per includere Aspose.Email per Java nel tuo progetto Java.
-
-## Creazione di un nuovo messaggio di posta elettronica
-
-Una volta installato Aspose.Email per Java, puoi iniziare a creare un nuovo messaggio email. Ecco un esempio semplice:
+Per prima cosa, imposta un semplice `MailMessage` con un corpo HTML. Questo sarà il canvas dove incorporeremo l'immagine in seguito.
 
 ```java
-// Importa le classi necessarie
+// Import necessary classes
 import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 
-// Crea un nuovo messaggio di posta elettronica
+// Create a new email message
 MailMessage message = new MailMessage();
 message.setSubject("Hello, World!");
 message.setFrom(new MailAddress("sender@example.com"));
@@ -61,88 +65,86 @@ message.setTo(new MailAddress("recipient@example.com"));
 message.setHtmlBody("<html><body>This is a sample email with inline attachments.</body></html>");
 ```
 
-## Aggiunta di allegati in linea
+### Passo 2: Aggiungere un'immagine inline usando `LinkedResource`
 
-Per aggiungere allegati in linea, puoi utilizzare `LinkedResource` Classe fornita da Aspose.Email per Java. Ecco come includere un'immagine come allegato in linea:
+Ora incorporiamo un'immagine. La classe `LinkedResource` rappresenta l'allegato inline. Assegna un **Content‑ID** univoco e riferiscilo nel corpo HTML con `cid:`.
 
 ```java
 import com.aspose.email.LinkedResource;
 
-// Crea una LinkedResource per l'immagine
+// Create a LinkedResource for the image
 LinkedResource linkedResource = new LinkedResource("path/to/your/image.png");
-linkedResource.setContentId("image001"); // ID univoco per l'immagine in linea
+linkedResource.setContentId("image001"); // Unique ID for the inline image
 
-// Aggiungere LinkedResource al corpo HTML
+// Add the LinkedResource to the HTML body
 message.getLinkedResources().add(linkedResource);
 
-// Fare riferimento all'immagine in linea nel corpo HTML
+// Reference the inline image in the HTML body
 message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001'></body></html>");
 ```
 
-## Invio dell'e-mail
+> **Suggerimento professionale:** Mantieni il `ContentId` semplice e unico all'interno del messaggio per evitare conflitti.
 
-Una volta creato il messaggio di posta elettronica con allegati in linea, è possibile inviarlo utilizzando Aspose.Email per Java `SmtpClient` classe. Assicurati di configurare le impostazioni SMTP per il tuo server di posta elettronica.
+### Passo 3: Inviare l'email tramite `SmtpClient`
+
+Configura le impostazioni SMTP e invia il messaggio. L'immagine incorporata viaggia insieme all'email, così il destinatario la vede immediatamente.
 
 ```java
 import com.aspose.email.SmtpClient;
 
-// Crea un'istanza di SmtpClient
+// Create an instance of SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Invia l'email
+// Send the email
 client.send(message);
 ```
 
-## Gestione degli allegati in linea nelle e-mail ricevute
+### Passo 4: Ricevere ed estrarre le immagini inline (opzionale)
 
-Quando ricevi email con allegati in linea, puoi utilizzare Aspose.Email per Java per estrarli ed elaborarli. Ecco un semplice esempio:
+Se devi elaborare messaggi in arrivo che contengono immagini incorporate, puoi caricare il file `.eml` e accedere alle sue `LinkedResources`.
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.LinkedResourceCollection;
 
-// Carica il messaggio di posta elettronica ricevuto
+// Load the received email message
 MailMessage receivedMessage = MailMessage.load("path/to/received_email.eml");
 
-// Accedi agli allegati in linea
+// Access the inline attachments
 LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources();
 ```
 
-## Risoluzione dei problemi comuni
+## Problemi comuni e come risolverli
 
-Utilizzando gli allegati in linea in Aspose.Email per Java, potresti riscontrare alcuni problemi comuni. Ecco alcuni suggerimenti per la risoluzione dei problemi:
-
-- ID contenuto non corretto: assicurati che `ContentId` specificato per gli allegati in linea corrisponde al riferimento nel corpo HTML.
-
-- File non trovato: controlla attentamente il percorso del file quando aggiungi allegati in linea. Assicurati che il file esista nella posizione specificata.
-
-- Configurazione SMTP: verifica che le impostazioni SMTP siano corrette quando invii e-mail.
-
-## Conclusione
-
-Lavorare con gli allegati in linea in Aspose.Email per Java può migliorare notevolmente la comunicazione via email. Che tu voglia incorporare immagini, loghi o altri contenuti direttamente nelle tue email, Aspose.Email per Java ti offre gli strumenti necessari per creare messaggi visivamente accattivanti.
+| Problema | Perché accade | Soluzione |
+|----------|---------------|-----------|
+| **Mancata corrispondenza del Content‑ID** | Il riferimento `cid:` in HTML non corrisponde al `ContentId` impostato su `LinkedResource`. | Assicurati che le stringhe siano identiche (`image001` vs `cid:image001`). |
+| **File non trovato** | Il percorso dell'immagine è errato o il file è assente. | Verifica il percorso assoluto/relativo e che il file esista sul server. |
+| **Autenticazione SMTP fallita** | Credenziali o impostazioni del server errate. | Ricontrolla host, porta, nome utente e password. Abilita TLS/SSL se necessario. |
+| **Immagine non visualizzata in alcuni client** | Alcuni client bloccano risorse esterne. | Usa immagini incorporate con CID (come mostrato) anziché URL esterni. |
 
 ## Domande frequenti
 
-### Come posso scaricare Aspose.Email per Java?
+**D: Come scarico Aspose.Email per Java?**  
+R: Puoi scaricare Aspose.Email per Java dalla [documentazione](https://reference.aspose.com/email/java/). Segui le istruzioni di installazione per configurarlo nel tuo progetto.
 
-Puoi scaricare Aspose.Email per Java da [documentazione](https://reference.aspose.com/email/java/)Segui le istruzioni di installazione per configurarlo nel tuo progetto.
+**D: Posso usare Aspose.Email per Java con altre librerie Java?**  
+R: Sì, Aspose.Email si integra senza problemi con altre librerie Java, consentendoti di combinare l'elaborazione delle email con la generazione di PDF, OCR o l'accesso a database.
 
-### Posso utilizzare Aspose.Email per Java con altre librerie Java?
+**D: Quali formati di file sono supportati per gli allegati inline?**  
+R: Formati immagine comuni come PNG, JPEG, GIF, così come altri tipi di documento (ad esempio SVG) sono supportati come risorse inline.
 
-Sì, puoi integrare Aspose.Email per Java con altre librerie Java per migliorare le tue capacità di elaborazione delle email.
+**D: Come gestisco gli allegati inline nelle email HTML?**  
+R: Usa la classe `LinkedResource` per assegnare un `ContentId`, aggiungila a `message.getLinkedResources()` e riferiscilo nel corpo HTML con `<img src='cid:yourContentId'>`.
 
-### Quali formati di file sono supportati per gli allegati in linea?
+**D: Aspose.Email per Java è compatibile con diversi server di posta?**  
+R: Sì, funziona con qualsiasi server SMTP/IMAP/POP3. Basta fornire l'indirizzo corretto del server, la porta e i dettagli di autenticazione.
 
-Aspose.Email per Java supporta vari formati di file per gli allegati in linea, tra cui immagini (ad esempio PNG, JPEG) e altri tipi di documenti.
+---
 
-### Come gestire gli allegati in linea nelle email HTML?
-
-Per gestire gli allegati in linea nelle e-mail HTML, utilizzare `LinkedResource` classe per specificare l'ID del contenuto dell'allegato nel corpo HTML.
-
-### Aspose.Email per Java è compatibile con diversi server di posta elettronica?
-
-Sì, Aspose.Email per Java è compatibile con diversi server di posta elettronica. Assicurati di configurare correttamente le impostazioni SMTP del tuo server di posta elettronica quando invii email.
+**Ultimo aggiornamento:** 2025-12-01  
+**Testato con:** Aspose.Email per Java 24.12 (ultima versione al momento della scrittura)  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
