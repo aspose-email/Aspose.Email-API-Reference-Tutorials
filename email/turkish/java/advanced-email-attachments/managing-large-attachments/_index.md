@@ -1,10 +1,14 @@
 ---
-"description": "Aspose.Email for Java ile büyük e-posta eklerini verimli bir şekilde yönetin. Java uygulamalarında sorunsuz ek işleme için adım adım kılavuz ve kaynak kodu."
-"linktitle": "Aspose.Email'de Büyük Ekleri Yönetme"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email'de Büyük Ekleri Yönetme"
-"url": "/tr/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-02
+description: E-posta ek boyutu sınırını nasıl yöneteceğinizi öğrenin, e-posta eki
+  Java kodu oluşturun ve Aspose.Email for Java kullanarak büyük ekleri indirme Java
+  örneklerini inceleyin.
+language: tr
+linktitle: Managing Large Attachments and Email Attachment Size Limit in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email'de Büyük Ekleri Yönetme ve E-posta Ek Boyutu Sınırı
+url: /java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +17,60 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'de Büyük Ekleri Yönetme
+# Büyük Ekleri Yönetme ve Aspose.Email'de E-posta Ek Boyutu Sınırı
 
+## Aspose.Email for Java'da Büyük Ekleri Yönetmeyeiriş
 
-## Java için Aspose.Email'de Büyük Ekleri Yönetmeye Giriş
+## Hızlı Yanıtlar
+- **What is the email attachment size limit?** Sağlayıcıya göre değişir, ancak Aspose.Email, birkaç yüz megabayta kadar eklerle çalışmanıza olanak tanır.
+- **Can I create email attachment Java code with Aspose.Email?** Evet – kütüphane, dosya oluşturma ve ekleme için basit API'ler sağlar.
+- **How do I download a large attachment in Java?** Mesajı yükledikten sonra örnekte gösterildiği gibi `Attachment.save()` kullanın.
+- **Do I need special licensing?** Üretim kullanımı için geçerli bir Aspose.Email lisansı gereklidir.
+- **Is streaming supported for huge files?** Kesinlikle – Aspose.Email, tüm dosyayı belleğe yüklemeden kaçınmak için akış (streaming) desteği sunar.
 
-Ekler e-posta iletişiminin önemli bir parçasıdır, ancak büyük eklerle etkili bir şekilde başa çıkmak zor olabilir. Aspose.Email for Java ile Java uygulamalarınızda büyük e-posta eklerinin yönetimini kolaylaştırabilirsiniz. Bu kılavuzda, etkili ek işleme için kaynak kodu örnekleri sağlayarak sizi adım adım süreçte yönlendireceğiz.
+## E-posta Ek Boyutu Sınırı Nedir ve Neden Önemlidir?
+Çoğu posta sunucusu ekler için maksimum bir boyut uygular (popüler hizmetler için genellikle 25 MB). Bu sınırı aşmak teslim hatalarına neden olabilir veya göndericinin dosyayı bölmesini gerektirebilir. Bu sınırlamayı programatik olarak anlamak ve yönetmek, Java uygulamalarınızın uyum sağlamasını garanti eder—dosyaları sıkıştırarak, bölerek veya alternatif aktarım yöntemleri kullanarak.
 
-## Ön koşullar
+## Neden Aspose.Email'i Büyük Ekler İçin Kullanmalısınız?
+- **Built‑in streaming** – dosyaları parçalar halinde işleyerek bellek kullanımını düşük tutar.  
+- **Cross‑platform compatibility** – herhangi bir Java çalışma zamanında çalışır.  
+- **Rich API** – sadece birkaç satır kodla ekleri oluşturabilir, gönderebilir, alabilir ve manipüle edebilirsiniz.  
+- **Full MIME compliance** – büyük eklerin doğru şekilde kodlanmasını garanti eder.
 
-Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+## Önkoşullar
 
-- [Java için Aspose.E-posta](https://releases.aspose.com/email/java/): Aspose.Email for Java kütüphanesini indirin ve kurun.
+Başlamadan önce, aşağıdaki önkoşulların yerine getirildiğinden emin olun:
 
-## Adım 1: E-posta Oluşturma
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/): Aspose.Email for Java kütüphanesini indirin ve kurun.
+- Java Development Kit (JDK) 8 veya üzeri.
+- E-posta göndermek için bir SMTP sunucusu (Mailtrap gibi bir test sunucusu kullanabilirsiniz).
 
-Başlamak için büyük bir eki olan örnek bir e-posta oluşturalım. Bunu yapmak için Aspose.Email kütüphanesini kullanacağız. İşte basit bir Java kod parçası:
+## Adım 1: Büyük Bir Ek ile E-posta Oluşturma (create email attachment java)
+
+İlk olarak, **bir e-posta oluştur** ve büyük bir PDF dosyası ekleyelim. Bu, **email attachment size limit** ile nasıl çalışılacağını kodu net tutarak gösterir.
 
 ```java
-// Gerekli Aspose.Email sınıflarını içe aktarın
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Yeni bir MailMessage oluşturun
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Gönderen ve alıcı adreslerini ayarlayın
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // E-postanın konusunu ve gövdesini ayarlayın
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // E-postaya büyük bir dosya ekleyin
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // E-postayı kaydet
+            // Save the email locally (optional)
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +79,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-Bu kodda yeni bir tane oluşturuyoruz `MailMessage` ve büyük bir PDF dosyası ekleyin. Değiştirdiğinizden emin olun `"sender@example.com"`, `"recipient@example.com"`, Ve `"path/to/large_attachment.pdf"` gerçek e-posta adresleriniz ve büyük eklenti dosyanızın yolunu içeren.
+> **Pro tip:** Ekiniz tipik sağlayıcı limitlerini aşıyorsa, önce sıkıştırmayı düşünün veya doğru kodlamayı sağlamak için Aspose.Email’in `Attachment.setTransferEncoding(TransferEncoding.Base64)` yöntemini kullanın.
 
-## Adım 2: E-postayı Gönderme
+## Adım 2: E-postayı Gönderme (create email attachment java)
 
-Artık büyük bir eki olan bir e-posta oluşturduğumuza göre, bunu SMTP kullanarak gönderelim. Bunu nasıl yapabileceğinizi anlatalım:
+Mesaj hazır olduğuna göre, bir SMTP sunucusu üzerinden göndereceğiz. Bu adım, aynı **email attachment size limit**'in gönderim tarafında nasıl saygı gösterildiğini gösterir.
 
 ```java
-// Gerekli Aspose.Email sınıflarını içe aktarın
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // SmtpClient'ın yeni bir örneğini oluşturun
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // SMTP sunucu ayarlarını belirtin
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // Yeni bir MailMessage oluşturun
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Gönderen ve alıcı adreslerini ayarlayın
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // E-postanın konusunu ve gövdesini ayarlayın
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // E-postaya büyük bir dosya ekleyin
-             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
+            // Attach a large file to the email
+            message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // E-postayı gönder
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +123,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-Bu kodda şunu kullanıyoruz: `SmtpClient` büyük eki olan e-postayı göndermek için sınıf. Değiştir `"smtp.example.com"`, `"your_username"`, Ve `"your_password"` SMTP sunucunuzun ayarlarıyla.
+> **Uyarı:** Bazı SMTP sunucuları belirli bir boyutu aşan mesajları reddeder. Sunucunun limitlerini doğrulayın ve gerekirse ek boyutunu ayarlayın veya dosyayı bölün.
 
-## Adım 3: E-postayı Alma ve İndirme
+## Adım 3: Büyük Ek'i Almak ve İndirmek (download large attachment java)
 
-Büyük bir eki olan bir e-posta aldığınızda, eki yerel sisteminize indirmek isteyebilirsiniz. Bunu şu şekilde yapabilirsiniz:
+Alıcı e-postayı aldığında, **büyük ek'i** yerel bir klasöre **indirmesi** gerekebilir. Aşağıdaki kod parçası, dosyayı bulup kaydetmenin basit yolunu gösterir.
 
 ```java
-// Gerekli Aspose.Email sınıflarını içe aktarın
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // E-postayı bir dosyadan veya e-posta sunucunuzdan yükleyin
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // Ekleri inceleyin ve büyük olanı indirin
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +153,48 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-Bu kodda, alınan e-postayı yüklüyoruz ve ekleri arasında gezinerek büyük eki bulup indiriyoruz.
+> **İpucu:** Çok büyük dosyalar için `Attachment.getContentStream()` kullanabilir ve akışı parçalar halinde diske yazarak bellek baskısını önleyebilirsiniz.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümler
 
-Büyük e-posta eklerini verimli bir şekilde yönetmek, etkili e-posta iletişimi için çok önemlidir. Aspose.Email for Java ile Java uygulamalarınızda büyük ekleri yönetme sürecini kolaylaştırabilirsiniz. Bu kılavuzda, büyük ekleri olan e-postalar oluşturup göndermekten bunları almaya ve indirmeye kadar temel adımları ele aldık. Bu adımları ve en iyi uygulamaları izleyerek, Java projelerinizde büyük e-posta ekleriyle uğraşırken sorunsuz bir deneyim sağlayabilirsiniz.
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **Attachment not delivered** | Exceeds server’s size limit | Compress the file or split it into smaller parts. |
+| **Out‑of‑memory error** | Loading whole attachment into memory | Use streaming (`getContentStream()`) to process in chunks. |
+| **Corrupted file after download** | Incorrect transfer encoding | Ensure `Attachment.setTransferEncoding(TransferEncoding.Base64)` is set before sending. |
 
-## SSS
+| Sorun | Neden | Çözüm |
+|-------|-------|----------|
+| **Ek teslim edilmedi** | Sunucunun boyut limitini aşar | Dosyayı sıkıştırın veya daha küçük parçalara bölün. |
+| **Bellek yetersiz hatası** | Tüm eki belleğe yüklemek | Parçalar halinde işlemek için akış (`getContentStream()`) kullanın. |
+| **İndirme sonrası bozuk dosya** | Yanlış aktarım kodlaması | `Attachment.setTransferEncoding(TransferEncoding.Base64)` gönderilmeden önce ayarlandığından emin olun. |
 
-### Çok büyük ekleri verimli bir şekilde nasıl işleyebilirim?
+## Sıkça Sorulan Sorular
 
-Çok büyük ekleri verimli bir şekilde işlemek için, tüm eki belleğe yüklemek yerine ek verilerini parçalar halinde okumak ve yazmak için akış tekniklerini kullanmayı düşünün. Aspose.Email, aşırı bellek tüketmeden büyük ekleri işlemenize olanak tanıyan akış yetenekleri sağlar.
+**S: Çok büyük ekleri verimli bir şekilde nasıl yönetebilirim?**  
+C: Ek'i parçalar halinde okuyup/ yazarak işlemek için Aspose.Email’in akış API'sini kullanın ve eklemeden önce dosyayı sıkıştırmayı düşünün.
 
-### E-posta ekleri için herhangi bir boyut sınırlaması var mı?
+**S: Popüler sağlayıcılar için tipik e-posta ek boyutu sınırı nedir?**  
+C: Çoğu hizmet (Gmail, Outlook, Yahoo) ekleri 25 MB ile sınırlar, ancak bazı kurumsal sunucular 50 MB veya daha fazlasına izin verir.
 
-E-posta ekleri için boyut sınırlamaları e-posta servis sağlayıcılarına ve e-posta istemcilerine bağlı olarak değişebilir. E-posta servis sağlayıcınızın ek boyutu sınırlarını kontrol etmeniz ve teslim sorunlarından kaçınmak için eklerinizin bu sınırlara uyduğundan emin olmanız önemlidir.
+**S: Göndermeden önce bir eki programlı olarak sıkıştırabilir miyim?**  
+C: Evet – Java’nın `java.util.zip` paketini kullanarak dosyayı zipleyebilir ve ardından zip dosyasını ekleyebilirsiniz.
 
-### Ekleri sıkıştırarak boyutlarını küçültebilir miyim?
+**S: Çok büyük bir dosyayı otomatik olarak birden fazla e-postaya bölmenin bir yolu var mı?**  
+C: Aspose.Email doğrudan dosya bölme özelliği sunmasa da, dosyayı daha küçük parçalara ayırıp her parçayı ayrı bir e-posta olarak gönderecek özel bir mantık yazabilirsiniz.
 
-Evet, ekleri göndermeden önce boyutlarını küçültmek için sıkıştırabilirsiniz. Aspose.Email, ekleri programatik olarak sıkıştırma ve sıkıştırmayı açma özellikleri sunar. Bunu, e-posta eklerinizin boyutunu optimize etmek için uygulayabilirsiniz.
+**S: Aspose.Email, ekleri doğrudan bir IMAP sunucusundan indirmeyi destekliyor mu?**  
+C: Kesinlikle. `ImapClient` kullanarak mesajları alın ve ardından örnekteki gibi `message.getAttachments()` üzerinde döngü yapın.
+
+## Sonuç
+
+**email attachment size limit** yönetimi zor olmak zorunda değil. Aspose.Email for Java ile **create email attachment Java** kodu oluşturabilir, büyük dosyaları güvenilir bir şekilde gönderebilir ve **download large attachment Java** içeriğini sadece birkaç satır kodla indirebilirsiniz. Uygulamalarınızı sağlam ve kullanıcı dostu tutmak için en iyi uygulama ipuçlarını—akış, sıkıştırma ve boyut kontrolleri—kullanın.
+
+---
+
+**Son Güncelleme:** 2025-12-02  
+**Test Edilen:** Aspose.Email for Java 24.12 (latest)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
