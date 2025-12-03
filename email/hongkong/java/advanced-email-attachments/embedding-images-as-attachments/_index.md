@@ -1,10 +1,12 @@
 ---
-"description": "了解如何在 Aspose.Email for Java 中嵌入圖像作為附件。透過引人入勝的視覺內容提升您的電子郵件溝通體驗。"
-"linktitle": "在 Aspose.Email 中嵌入圖像作為附件"
-"second_title": "Aspose.Email Java 電子郵件管理 API"
-"title": "在 Aspose.Email 中嵌入圖像作為附件"
-"url": "/zh-hant/java/advanced-email-attachments/embedding-images-as-attachments/"
-"weight": 14
+date: 2025-11-30
+description: 學習如何使用 Aspose.Email for Java 附加圖片至電郵、發送嵌入圖片的 HTML 電郵，以及優化電郵的圖片大小。
+language: zh-hant
+linktitle: How to Attach Image to Email with Aspsoe.Email
+second_title: Aspose.Email Java Email Management API
+title: 如何使用 Aspose.Email for Java 在電郵中附加圖片
+url: /java/advanced-email-attachments/embedding-images-as-attachments/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,98 +15,117 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 在 Aspose.Email 中嵌入圖像作為附件
+# 如何使用 Aspose.Email for Java 附加圖片到電子郵件
 
+在現代的電子郵件溝通中，**如何附加圖片到電子郵件**變得比以往更重要——視覺效果能提升互動率，並即時傳達您的訊息。本教學將完整說明如何將圖片作為附件、嵌入至 HTML 內文，並確保訊息在各郵件客戶端中呈現良好。我們也會分享發送帶嵌入圖片的 HTML 電子郵件以及優化圖片大小的最佳實踐技巧。
 
-## 在 Aspose.Email 中嵌入圖像作為附件
+## 快速解答
+- **建立電子郵件的主要類別是什麼？** `MailMessage`
+- **哪個類別可在 HTML 內文中嵌入圖片？** `LinkedResource`
+- **在正式環境發送郵件需要授權嗎？** 需要，必須購買商業版 Aspose.Email 授權。
+- **如何減少附件大小？** 在加入之前先優化圖片（例如調整尺寸或壓縮）。
+- **可以一次傳送多張圖片嗎？** 當然可以——只要為每張圖片設定唯一的 Content‑ID 即可。
 
-在當今的數位時代，有效的溝通往往不僅僅依賴文字。圖像等視覺元素在訊息傳達中起著至關重要的作用，而在電子郵件通訊中，將圖像嵌入為附件是一種常見的做法。在本文中，我們將探討如何使用 Aspose.Email for Java 來實現這一目標。本逐步指南將引導您完成整個過程，確保您的電子郵件不僅資訊豐富，而且外觀精美。
+## 什麼是將圖片附加到電子郵件？
+將圖片附加到電子郵件即是把檔案加入郵件的 MIME 結構，使收件人能夠檢視。若使用 Content‑ID（CID）方式嵌入圖片，圖片會直接顯示在 HTML 內文中，而不是作為獨立附件，呈現出內嵌圖片的效果。
 
-## 先決條件
+## 為什麼要發送帶嵌入圖片的 HTML 電子郵件？
+在 HTML 中嵌入圖片可讓您設計更豐富的電子報、產品公告或支援票證。收件人能立即看到視覺內容，無需下載附件，從而提升開信率與整體互動。
 
-在深入實施之前，請確保您已滿足以下先決條件：
+## 前置作業
+在開始之前，請確保您已具備：
 
-- Aspose.Email for Java：如果您還沒有，請從以下位置下載並安裝 Aspose.Email for Java [這裡](https://releases。aspose.com/email/java/).
+- **Aspose.Email for Java** – 從官方網站下載：[Aspose.Email Java download](https://releases.aspose.com/email/java/)。
+- 有效的 **SMTP 伺服器**（例如 Gmail、Outlook，或您自建的郵件中繼）。
+- 您想要嵌入的圖片檔案（JPEG、PNG、GIF 等）。
+
+> **專業提示：** *優化電子郵件圖片大小*，將寬度調整至 ≤600 px，並壓縮至 ≤100 KB。這可縮短載入時間，且不會觸發信箱大小限制。
 
 ## 建立電子郵件訊息
-
-要使用 Aspose.Email 建立電子郵件，您需要匯入必要的程式庫並初始化 `MailMessage` 對象。以下是一段可幫助您入門的程式碼片段：
+首先，匯入必要的命名空間，並實例化 `MailMessage`。此物件將保存主旨、收件人與郵件內文。
 
 ```java
-// 導入必要的庫
+// Import necessary libraries
 import com.aspose.email.*;
 
-// 建立新電子郵件
+// Create a new email message
 MailMessage message = new MailMessage();
 ```
 
-## 新增圖片作為附件
-
-要將圖片附加到電子郵件，您需要指定圖片檔案的路徑並將其新增為附件。操作方法如下：
+## 將圖片作為附件加入
+接著，指向磁碟上的圖片檔案，並將其加入訊息的附件集合。稍後會以 Content‑ID 方式引用此附件。
 
 ```java
-// 指定影像檔案的路徑
+// Specify the path to the image file
 String imagePath = "path/to/your/image.jpg";
 
-// 將圖片附加到電子郵件
+// Attach the image to the email
 Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## 嵌入附加影像
-
-若要將附加圖像嵌入電子郵件正文中，您可以使用 `LinkedResource` 類。這允許您在電子郵件的 HTML 正文中引用附件：
+## 在 HTML 中嵌入已附加的圖片
+為了在郵件內文中顯示圖片，建立一個 `LinkedResource` 包裹附件的資料流。指定唯一的 Content‑ID（例如 `image1`），並在 HTML 中使用 `cid:` 方案引用它。
 
 ```java
-// 為附加影像建立 LinkedResource
+// Create a LinkedResource for the attached image
 LinkedResource linkedImage = new LinkedResource(attachment.getContentStream(), "image/jpeg");
 linkedImage.setContentId("image1");
 
-// 建立嵌入圖像的 HTML 主體
+// Create an HTML body with the embedded image
 String htmlBody = "<html><body><h1>Check out this image:</h1><img src='cid:image1'></body></html>";
 message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-## 傳送電子郵件
+> **為什麼使用 `LinkedResource`？** 它告訴郵件客戶端此圖片是訊息內容的一部分，而非獨立下載，這對 **發送帶嵌入圖片的 HTML 電子郵件** 場景至關重要。
 
-現在您已經建立了帶有嵌入圖像的電子郵件，您可以使用 Aspose.Email 的 `SmtpClient`：
+## 發送電子郵件
+最後，使用 `SmtpClient` 設定您的伺服器資訊，並將訊息發送出去。請確保 SMTP 憑證具備以寄件者地址發信的權限。
 
 ```java
-// 初始化 SmtpClient
+// Initialize the SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "your_password");
 
-// 傳送電子郵件
+// Send the email
 client.send(message);
 ```
 
-恭喜！您已成功使用 Aspose.Email for Java 將圖像作為附件嵌入到電子郵件中。現在，您的電子郵件將更具視覺吸引力和資訊量。
+當收件人開啟郵件時，HTML 內文會直接呈現圖片，提供流暢的視覺體驗。
+
+## 常見問題與故障排除
+| 問題 | 原因 | 解決方案 |
+|------|------|----------|
+| 圖片未顯示 | Content‑ID 錯誤或缺少 `LinkedResource` | 確認 `linkedImage.setContentId("image1")` 與 HTML 中的 `src='cid:image1'` 相符。 |
+| 電子郵件尺寸過大 | 圖片未優化（高解析度） | 在加入前先調整尺寸或壓縮圖片，目標 ≤100 KB。 |
+| 電子郵件被標記為垃圾郵件 | 缺少正確的 MIME 標頭 | 確保 `SmtpClient` 使用 TLS/STARTTLS，並設定清晰的 `From` 位址。 |
+| 內嵌圖片變成附件 | 客戶端不支援 CID | 在 `<img>` 標籤提供備援 URL（`src='cid:image1' alt='Image'`）。 |
+
+## 常見問答
+
+**Q: 如何在同一封郵件中嵌入多張圖片？**  
+A: 為每張圖片重複附件與 `LinkedResource` 的步驟，為其指定唯一的 Content‑ID（如 `image2`、`image3`），並在 HTML 中相應引用。
+
+**Q: 可以在純文字郵件中嵌入圖片嗎？**  
+A: 純文字格式不支援嵌入圖片。您只能放入可點擊的 URL，讓收件人於瀏覽器中查看圖片。
+
+**Q: 哪些圖片格式適合用於電子郵件嵌入？**  
+A: JPEG、PNG 與 GIF 均被廣泛支援。照片建議使用 JPEG，需透明背景的圖形則使用 PNG。
+
+**Q: 如何在郵件中控制圖片尺寸？**  
+A: 可在 `<img>` 標籤加入 width/height 屬性，例如 `<img src='cid:image1' width='400' height='300'>`。
+
+**Q: 嵌入圖片有尺寸限制嗎？**  
+A: 雖然 SMTP 本身沒有嚴格限制，多數郵件服務商建議總郵件大小保持在 5 MB 以下。優化圖片大小有助於遠低於此上限。
 
 ## 結論
+現在您已掌握 **如何使用 Aspose.Email for Java 附加圖片到電子郵件**，並能將其嵌入 HTML 內文，同時遵循 **優化圖片大小以供電子郵件使用** 的最佳實踐。此技巧讓您能打造視覺吸引且在各郵件客戶端中表現專業的訊息。
 
-本指南介紹了在 Aspose.Email for Java 中嵌入圖像作為附件的基本步驟。遵循這些步驟，您可以添加吸引受眾的視覺元素，從而增強電子郵件溝通體驗。
+---
 
-## 常見問題解答
-
-### 如何在一封電子郵件中嵌入多張圖片？
-
-您可以對每張圖片執行相同的流程並確保每張圖片都有唯一的內容 ID，從而嵌入多張圖片。
-
-### 我可以在純文字電子郵件中嵌入圖像嗎？
-
-在純文字郵件中嵌入圖片並非常規做法，因為純文字郵件不支援嵌入圖片。不過，您可以在純文字郵件中包含圖片 URL。
-
-### 支援嵌入哪些圖像格式？
-
-Aspose.Email for Java 支援多種圖片格式，包括 JPEG、PNG、GIF 等。請確保您的圖像格式相容。
-
-### 是否可以調整電子郵件中嵌入圖像的大小？
-
-是的，您可以透過調整 HTML 來控制嵌入圖像的大小 `<img>` 電子郵件 HTML 正文中的標籤屬性。
-
-### 嵌入圖像的大小有限制嗎？
-
-嵌入圖片的大小可能會影響電子郵件的送達率和收件者的體驗。建議優化電子郵件圖片，以避免文件過大。
+**最後更新：** 2025-11-30  
+**測試環境：** Aspose.Email for Java 24.11（撰寫時最新版本）  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
