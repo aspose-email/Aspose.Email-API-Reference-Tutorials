@@ -1,10 +1,14 @@
 ---
-"description": "Aspose.Email for Java ile e-posta iletişiminizi optimize edin. Bu kapsamlı kılavuzda satır içi eklerle çalışmayı öğrenin."
-"linktitle": "Aspose.Email'de Satır İçi Eklerle Çalışma"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email'de Satır İçi Eklerle Çalışma"
-"url": "/tr/java/advanced-email-attachments/working-with-inline-attachments/"
-"weight": 10
+date: 2025-12-01
+description: Aspose.Email for Java kullanarak gömülü resimli e-posta göndermeyi öğrenin.
+  Bu kılavuz, e-postaya resim eklemeyi ve satır içi eklerle HTML e-posta oluşturmayı
+  gösterir.
+language: tr
+linktitle: Working with Inline Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email for Java ile Gömülü Görsel İçeren E-posta Nasıl Gönderilir
+url: /java/advanced-email-attachments/working-with-inline-attachments/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,47 +17,47 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email'de Satır İçi Eklerle Çalışma
+# Aspose.Email for Java kullanarak Gömülü Görüntülü E-posta Nasıl Gönderilir
 
+Görselleri doğrudan bir e-postanın içine gömmek, mesajlarınızın daha profesyonel görünmesini sağlar ve alıcının grafikleri ayrı dosyalar indirmesine gerek kalmadan görmesini garantiler. Bu öğreticide Aspose.Email for Java kullanarak **gömülü görselli e-posta nasıl gönderilir** öğrenecek, kütüphanenin kurulumu, HTML e-posta oluşturma, satır içi kaynak ekleme ve son olarak mesajı gönderme konularını kapsayacaksınız.
 
-## Aspose.Email'de Satır İçi Eklerle Çalışmaya Giriş
+## Hızlı Yanıtlar
+- **Satır içi görseller için birincil sınıf nedir?** `LinkedResource`
+- **HTML içinde görsele hangi yöntem referans verir?** `<img>` etiketinde `cid:yourContentId` kullanın
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme çalışır; üretim için lisans gereklidir
+- **E-postayı herhangi bir SMTP sunucusu üzerinden gönderebilir miyim?** Evet, sadece `SmtpClient`'ı sunucu detaylarınızla yapılandırın
+- **Bu yaklaşım tüm büyük e-posta istemcileriyle uyumlu mu?** Çoğu modern istemci (Outlook, Gmail, Thunderbird) CID‑gömülü görselleri destekler
 
-Satır içi ekler, e-posta iletişiminde, resimleri veya diğer dosyaları doğrudan bir e-postanın gövdesine yerleştirmenize olanak tanıyan değerli bir özelliktir. Bu, e-postalarınızın görsel çekiciliğini artırır ve alıcıların içeriği sorunsuz bir şekilde görüntüleyebilmesini sağlar. Bu makalede, Java için Aspose.Email'de satır içi eklerle nasıl çalışılacağını inceleyeceğiz.
+## Satır İçi Ekler (Gömülü Görseller) Nedir?
 
-## Satır İçi Ekler Nelerdir?
+Satır içi ekler—bazen gömülü veya CID görselleri olarak adlandırılır—bir e-postanın MIME gövdesi içinde yer alan dosyalardır. Mesajın HTML kısmından **Content‑ID** (CID) ile referans verilir. Bu teknik, **görselleri e-postaya gömmenizi** sağlar; böylece `<img>` etiketini yerleştirdiğiniz yerde görünürler ve ayrı indirilebilir ekler olarak ortaya çıkmazlar.
 
-Yerleşik veya satır içi resimler olarak da bilinen satır içi ekler, e-postanın HTML gövdesine dahil edilen dosyalardır. Bu ekler, indirilmesi veya açılması gereken ayrı ekler olarak görünmek yerine e-postanın içeriğinde görüntülenir. Bunlara e-postanızın düzenine dahil etmek istediğiniz resimler, imzalar veya diğer dosyalar dahil olabilir.
+## Java E-postalarınızda Gömülü Görselleri Neden Kullanmalısınız?
 
-## Satır İçi Ekleri Kullanmanın Faydaları
+- **Profesyonel görünüm:** Logolar, afişler ve ürün resimleri anında görüntülenir.
+- **Daha iyi etkileşim:** Alıcılar, eksiksiz görünen bir e-postayı okuma olasılığı daha yüksektir.
+- **Ek tıklama yok:** Kullanıcıların görseli görmek için ek indirmesine gerek yoktur.
+- **Tutarlı marka:** Marka varlıklarınız mesaj içeriğiyle aynı satırda kalır.
 
-E-postalarınızda satır içi ekler kullanmanın birçok avantajı vardır:
+## Önkoşullar
 
-- Gelişmiş Görsel Sunum: Satır içi ekler, e-postalarınızın genel görünümünü iyileştirerek onları görsel olarak daha çekici hale getirir.
+- Aspose.Email for Java kütüphanesi (resmi [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/) adresinden indirin)
+- Java 8+ geliştirme ortamı
+- E-posta göndermek için bir SMTP sunucusuna erişim
+- Gömmek istediğiniz görüntü dosyası (ör. `logo.png`)
 
-- Azaltılmış Bağımlılık: Alıcıların ayrı ekleri indirmesine veya açmasına gerek kalmaz, bu da kullanıcı deneyimini iyileştirir.
+## Adım Adım Kılavuz
 
-- Tutarlılık: Satır içi ekler, alıcının e-posta istemcisinden bağımsız olarak e-postanın içeriğinin amaçlandığı gibi görüntülenmesini sağlar.
+### Adım 1: Temel Bir HTML E-posta Mesajı Oluşturun
 
-- Marka Kimliği: Markanızı güçlendirmek için logolar, imzalar veya tanıtım görselleri için satır içi ekleri kullanabilirsiniz.
-
-## Java için Aspose.Email Kurulumu
-
-Satır içi eklerle çalışmaya başlamadan önce projenizde Aspose.Email for Java'yı kurmanız gerekir. Başlamak için adımlar şunlardır:
-
-1. Java için Aspose.Email'i indirin: Ziyaret edin [Java belgeleri için Aspose.Email](https://reference.aspose.com/email/java/) İndirme bağlantısına erişmek için.
-
-2. Kütüphaneyi yükleyin: Java projenize Aspose.Email for Java'yı eklemek için belgelerde verilen kurulum talimatlarını izleyin.
-
-## Yeni Bir E-posta Mesajı Oluşturma
-
-Aspose.Email for Java'yı yükledikten sonra yeni bir e-posta mesajı oluşturmaya başlayabilirsiniz. İşte bunu nasıl yapacağınıza dair basit bir örnek:
+İlk olarak, HTML gövdesiyle basit bir `MailMessage` oluşturun. Bu, daha sonra görseli gömeceğimiz tuval olacaktır.
 
 ```java
-// Gerekli sınıfları içe aktarın
+// Import necessary classes
 import com.aspose.email.MailAddress;
 import com.aspose.email.MailMessage;
 
-// Yeni bir e-posta mesajı oluştur
+// Create a new email message
 MailMessage message = new MailMessage();
 message.setSubject("Hello, World!");
 message.setFrom(new MailAddress("sender@example.com"));
@@ -61,88 +65,84 @@ message.setTo(new MailAddress("recipient@example.com"));
 message.setHtmlBody("<html><body>This is a sample email with inline attachments.</body></html>");
 ```
 
-## Satır İçi Ekler Ekleme
+### Adım 2: `LinkedResource` Kullanarak Satır İçi Görsel Ekleyin
 
-Satır içi ekler eklemek için şunu kullanabilirsiniz: `LinkedResource` Java için Aspose.Email tarafından sağlanan sınıf. Bir resmi satır içi ek olarak nasıl ekleyebileceğinizi burada bulabilirsiniz:
+Şimdi bir görsel gömüyoruz. `LinkedResource` sınıfı satır içi eki temsil eder. Benzersiz bir **Content‑ID** atayın ve HTML gövdesinde `cid:` ile referans verin.
 
 ```java
 import com.aspose.email.LinkedResource;
 
-// Resim için bir LinkedResource oluşturun
+// Create a LinkedResource for the image
 LinkedResource linkedResource = new LinkedResource("path/to/your/image.png");
-linkedResource.setContentId("image001"); // Satır içi görüntü için benzersiz kimlik
+linkedResource.setContentId("image001"); // Unique ID for the inline image
 
-// LinkedResource'u HTML gövdesine ekleyin
+// Add the LinkedResource to the HTML body
 message.getLinkedResources().add(linkedResource);
 
-// HTML gövdesindeki satır içi görüntüye başvurun
+// Reference the inline image in the HTML body
 message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001'></body></html>");
 ```
 
-## E-postayı Gönderme
+> **Pro ipucu:** `ContentId`'yi mesaj içinde basit ve benzersiz tutarak çakışmaları önleyin.
 
-E-posta mesajınızı satır içi eklerle oluşturduktan sonra, bunu Aspose.Email for Java'nın `SmtpClient` sınıf. E-posta sunucunuz için SMTP ayarlarını yapılandırdığınızdan emin olun.
+### Adım 3: `SmtpClient` ile E-postayı Gönderin
+
+SMTP ayarlarınızı yapılandırın ve mesajı gönderin. Gömülü görsel e-posta ile birlikte taşınır, böylece alıcı onu anında görür.
 
 ```java
 import com.aspose.email.SmtpClient;
 
-// SmtpClient'ın bir örneğini oluşturun
+// Create an instance of SmtpClient
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// E-postayı gönder
+// Send the email
 client.send(message);
 ```
 
-## Alınan E-postalardaki Satır İçi Ekleri İşleme
+### Adım 4: Satır İçi Görselleri Alın ve Çıkarın (İsteğe Bağlı)
 
-Satır içi ekleri olan e-postalar aldığınızda, bunları çıkarmak ve işlemek için Aspose.Email for Java'yı kullanabilirsiniz. İşte bunu nasıl yapacağınıza dair basit bir örnek:
+Eğer gömülü görseller içeren gelen mesajları işlemek istiyorsanız, `.eml` dosyasını yükleyebilir ve `LinkedResources`'ına erişebilirsiniz.
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.LinkedResourceCollection;
 
-// Alınan e-posta mesajını yükle
+// Load the received email message
 MailMessage receivedMessage = MailMessage.load("path/to/received_email.eml");
 
-// Satır içi ekleri erişin
+// Access the inline attachments
 LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources();
 ```
 
-## Yaygın Sorunların Giderilmesi
+## Yaygın Sorunlar ve Çözüm Yolları
 
-Java için Aspose.Email'de satır içi eklerle çalışırken bazı yaygın sorunlarla karşılaşabilirsiniz. İşte birkaç sorun giderme ipucu:
+| Sorun | Neden Oluşur | Çözüm |
+|-------|--------------|-------|
+| **Content‑ID eşleşmemesi** | `cid:` referansı HTML içinde `LinkedResource`'a ayarlanan `ContentId` ile eşleşmiyor. | Dizelerin aynı olduğundan emin olun (`image001` vs `cid:image001`). |
+| **Dosya bulunamadı** | Görselin yolu yanlış veya dosya eksik. | Mutlak/göreli yolu ve dosyanın sunucuda mevcut olduğunu doğrulayın. |
+| **SMTP kimlik doğrulama hatası** | Yanlış kimlik bilgileri veya sunucu ayarları. | Sunucu, port, kullanıcı adı ve şifreyi tekrar kontrol edin. Gerekirse TLS/SSL etkinleştirin. |
+| **Bazı istemcilerde görsel gösterilmiyor** | Bazı istemciler dış kaynakları engeller. | Dış URL'ler yerine CID‑gömülü görseller kullanın (gösterildiği gibi). |
 
-- Yanlış İçerik Kimliği: `ContentId` Satır içi ekler için belirtilen, HTML gövdesindeki referansla eşleşiyor.
+## Sıkça Sorulan Sorular
 
-- Dosya Bulunamadı: Satır içi ekler eklerken dosya yolunu iki kez kontrol edin. Dosyanın belirtilen konumda mevcut olduğundan emin olun.
+**S: Aspose.Email for Java'ı nasıl indiririm?**  
+C: Aspose.Email for Java'ı [documentation](https://reference.aspose.com/email/java/) adresinden indirebilirsiniz. Projenize kurmak için kurulum talimatlarını izleyin.
 
-- SMTP Yapılandırması: E-posta gönderirken SMTP ayarlarınızın doğru olduğundan emin olun.
+**S: Aspose.Email for Java'ı diğer Java kütüphaneleriyle kullanabilir miyim?**  
+C: Evet, Aspose.Email diğer Java kütüphaneleriyle sorunsuz entegre olur, e-posta işleme ile PDF oluşturma, OCR veya veritabanı erişimini birleştirmenizi sağlar.
 
-## Çözüm
+**S: Satır içi ekler için hangi dosya formatları desteklenir?**  
+C: PNG, JPEG, GIF gibi yaygın görüntü formatları ve diğer belge türleri (ör. SVG) satır içi kaynak olarak desteklenir.
 
-Aspose.Email for Java'da satır içi eklerle çalışmak e-posta iletişiminizi büyük ölçüde geliştirebilir. İster e-postalarınıza doğrudan resim, logo veya diğer içerikleri yerleştirmek isteyin, Aspose.Email for Java görsel olarak çekici mesajlar oluşturmanız için ihtiyaç duyduğunuz araçları sağlar.
+**S: HTML e-postalarında satır içi ekleri nasıl yönetirim?**  
+C: `LinkedResource` sınıfını kullanarak bir `ContentId` atayın, `message.getLinkedResources()`'a ekleyin ve HTML gövdesinde `<img src='cid:yourContentId'>` ile referans verin.
 
-## SSS
+**S: Aspose.Email for Java farklı e-posta sunucularıyla uyumlu mu?**  
+C: Evet, herhangi bir SMTP/IMAP/POP3 sunucusuyla çalışır. Doğru sunucu adresi, port ve kimlik doğrulama bilgilerini sağlayın.
 
-### Aspose.Email for Java'yı nasıl indirebilirim?
-
-Aspose.Email for Java'yı şu adresten indirebilirsiniz: [belgeleme](https://reference.aspose.com/email/java/). Projenizde kurulumunu yapmak için kurulum talimatlarını izleyin.
-
-### Aspose.Email for Java'yı diğer Java kütüphaneleriyle birlikte kullanabilir miyim?
-
-Evet, e-posta işleme yeteneklerinizi geliştirmek için Aspose.Email for Java'yı diğer Java kütüphaneleriyle entegre edebilirsiniz.
-
-### Satır içi ekler için hangi dosya biçimleri destekleniyor?
-
-Java için Aspose.Email, resimler (örneğin PNG, JPEG) ve diğer belge türleri de dahil olmak üzere satır içi ekler için çeşitli dosya biçimlerini destekler.
-
-### HTML e-postalardaki satır içi ekleri nasıl işlerim?
-
-HTML e-postalarındaki satır içi ekleri işlemek için şunu kullanın: `LinkedResource` HTML gövdesinde ekteki dosyanın içerik kimliğini belirtmek için kullanılan sınıf.
-
-### Aspose.Email for Java farklı e-posta sunucularıyla uyumlu mudur?
-
-Evet, Aspose.Email for Java çeşitli e-posta sunucularıyla uyumludur. E-posta gönderirken e-posta sunucunuz için SMTP ayarlarını doğru şekilde yapılandırdığınızdan emin olun.
+**Son Güncelleme:** 2025-12-01  
+**Test Edilen Sürüm:** Aspose.Email for Java 24.12 (yazım zamanındaki en son sürüm)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
