@@ -138,14 +138,6 @@ Configure an `SmtpClient` with your server details, enable TLS/SSL if required, 
 * ### [Prozkoumání zabezpečení e‑mailů s Aspose.Email pro Java](./exploring-email-security/)
     Discover in-depth how to enhance email security with **Aspose.Email for Java**. Explore step‑by‑step tutorials and best practices for implementing secure email solutions in your Java applications.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Často kladené otázky
 
 **Q: Jak načíst soubor .ics po vytvoření pozvánky do kalendáře?**  
@@ -168,3 +160,11 @@ A: Použijte `mailMessage.getHeaders()` nebo iterujte přes `mailMessage.getHead
 **Poslední aktualizace:** 2025-11-30  
 **Testováno s:** Aspose.Email for Java 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

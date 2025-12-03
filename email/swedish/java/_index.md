@@ -148,14 +148,6 @@ Konfigurera en `SmtpClient` med dina serveruppgifter, aktivera TLS/SSL om det kr
 * ### [Utforska e‑postsäkerhet med Aspose.Email för Java](./exploring-email-security/)
     Discover in-depth how to enhance email security with **Aspose.Email for Java**. Explore step‑by‑step tutorials and best practices for implementing secure email solutions in your Java applications.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Vanliga frågor
 
 **Q: Hur läser jag en .ics‑fil efter att ha skapat en kalenderinbjudan?**  
@@ -178,3 +170,11 @@ A: Använd `mailMessage.getHeaders()` eller iterera över `mailMessage.getHeader
 **Senast uppdaterad:** 2025-11-30  
 **Testad med:** Aspose.Email for Java 24.11  
 **Författare:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

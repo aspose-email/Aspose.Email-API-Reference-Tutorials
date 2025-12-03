@@ -143,14 +143,6 @@ weight: 10
 * ### [Εξερεύνηση Ασφάλειας Email με Aspose.Email για Java](./exploring-email-security/)
     Ανακαλύψτε σε βάθος πώς να ενισχύετε την ασφάλεια των email με **Aspose.Email για Java**. Εξερευνήστε βήμα‑βήμα μαθήματα και βέλτιστες πρακτικές για την υλοποίηση ασφαλών λύσεων email στις εφαρμογές Java σας.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Συχνές Ερωτήσεις
 
 **Q: Πώς μπορώ να διαβάσω ένα αρχείο .ics μετά τη δημιουργία μιας πρόσκλησης ημερολογίου;**  
@@ -173,3 +165,11 @@ A: Χρησιμοποιήστε `mailMessage.getHeaders()` ή επαναλάβε
 **Τελευταία Ενημέρωση:** 2025-11-30  
 **Δοκιμή με:** Aspose.Email for Java 24.11  
 **Συγγραφέας:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

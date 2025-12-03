@@ -147,14 +147,6 @@ weight: 10
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     深入了解如何在 Java 應用程式中實作安全郵件解決方案，提供完整步驟與最佳實務。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## 常見問題
 
 **Q: 建立行事曆邀請後，如何讀取 .ics 檔案？**  
@@ -177,3 +169,11 @@ A: 使用 `mailMessage.getHeaders()` 或遍歷 `mailMessage.getHeaders().getAll(
 **最後更新：** 2025-11-30  
 **測試環境：** Aspose.Email for Java 24.11  
 **作者：** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

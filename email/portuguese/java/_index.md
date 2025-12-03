@@ -148,14 +148,6 @@ Aqui estão alguns dos nossos tutoriais mais populares para você começar e ir 
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     Descubra em profundidade como melhorar a segurança de e‑mail com **Aspose.Email for Java**. Explore tutoriais passo a passo e melhores práticas para implementar soluções de e‑mail seguras em suas aplicações Java.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Perguntas Frequentes
 
 **Q: Como ler um arquivo .ics após criar um convite de calendário?**  
@@ -173,6 +165,16 @@ A: Um certificado X.509 válido (arquivo PFX) e a senha da chave privada. Chame 
 **Q: Como posso analisar cabeçalhos de e‑mail para extrair informações de roteamento?**  
 A: Use `mailMessage.getHeaders()` ou itere sobre `mailMessage.getHeaders().getAll()` para ler campos como `Received`, `Message-ID` e `X-Mailer`.
 
+---
+
 **Última atualização:** 2025-11-30  
 **Testado com:** Aspose.Email for Java 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

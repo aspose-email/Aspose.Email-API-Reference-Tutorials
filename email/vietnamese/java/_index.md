@@ -146,14 +146,6 @@ Cấu hình một `SmtpClient` với chi tiết máy chủ của bạn, bật TL
 * ### [Khám phá Bảo mật Email với Aspose.Email cho Java](./exploring-email-security/)  
     Tìm hiểu sâu về cách nâng cao bảo mật email với **Aspose.Email cho Java**. Khám phá các hướng dẫn từng bước và các thực tiễn tốt nhất để triển khai các giải pháp email bảo mật trong các ứng dụng Java của bạn.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Câu hỏi thường gặp
 
 **Q: Làm thế nào để đọc một tệp .ics sau khi tạo lời mời lịch?**  
@@ -171,6 +163,16 @@ A: Cần một chứng chỉ X.509 hợp lệ (tệp PFX) và mật khẩu khóa
 **Q: Làm sao để phân tích tiêu đề email và trích xuất thông tin định tuyến?**  
 A: Sử dụng `mailMessage.getHeaders()` hoặc lặp qua `mailMessage.getHeaders().getAll()` để đọc các trường như `Received`, `Message-ID`, và `X-Mailer`.
 
+---
+
 **Cập nhật lần cuối:** 2025-11-30  
 **Kiểm tra với:** Aspose.Email cho Java 24.11  
 **Tác giả:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

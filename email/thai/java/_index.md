@@ -146,14 +146,6 @@ weight: 10
 * ### [การสำรวจความปลอดภัยของอีเมลด้วย Aspose.Email for Java](./exploring-email-security/)
     ค้นพบอย่างละเอียดวิธีเพิ่มความปลอดภัยของอีเมลด้วย **Aspose.Email for Java**. สำรวจบทเรียนแบบขั้นตอนและแนวทางปฏิบัติที่ดีที่สุดสำหรับการนำโซลูชันอีเมลที่ปลอดภัยไปใช้ในแอปพลิเคชัน Java ของคุณ.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## คำถามที่พบบ่อย
 
 **Q: ฉันจะอ่านไฟล์ .ics หลังจากสร้างคำเชิญปฏิทินได้อย่างไร?**  
@@ -171,6 +163,16 @@ A: ใบรับรอง X.509 ที่ถูกต้อง (ไฟล์ P
 **Q: ฉันจะทำอย่างไรเพื่อแยกวิเคราะห์หัวข้ออีเมลเพื่อดึงข้อมูลการส่งต่อ?**  
 A: ใช้ `mailMessage.getHeaders()` หรือวนลูปผ่าน `mailMessage.getHeaders().getAll()` เพื่ออ่านฟิลด์เช่น `Received`, `Message-ID`, และ `X-Mailer`.
 
+---
+
 **อัปเดตล่าสุด:** 2025-11-30  
 **ทดสอบด้วย:** Aspose.Email for Java 24.11  
 **ผู้เขียน:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

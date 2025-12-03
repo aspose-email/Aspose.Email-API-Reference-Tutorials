@@ -147,14 +147,6 @@ Configure un `SmtpClient` con los detalles de su servidor, habilite TLS/SSL si e
 * ### [Explorando la seguridad del correo con Aspose.Email para Java](./exploring-email-security/)
     Descubre en profundidad cómo mejorar la seguridad del correo con **Aspose.Email for Java**. Explora tutoriales paso a paso y mejores prácticas para implementar soluciones de correo seguro en tus aplicaciones Java.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Preguntas frecuentes
 
 **Q: ¿Cómo leo un archivo .ics después de crear una invitación de calendario?**  
@@ -172,6 +164,16 @@ A: Un certificado X.509 válido (archivo PFX) y la contraseña de la clave priva
 **Q: ¿Cómo puedo analizar los encabezados de correo para extraer información de enrutamiento?**  
 A: Use `mailMessage.getHeaders()` o itere sobre `mailMessage.getHeaders().getAll()` para leer campos como `Received`, `Message-ID` y `X-Mailer`.
 
+---
+
 **Última actualización:** 2025-11-30  
 **Probado con:** Aspose.Email for Java 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

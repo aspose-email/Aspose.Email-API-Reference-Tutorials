@@ -149,14 +149,6 @@ Hier finden Sie einige unserer beliebtesten Tutorials, um loszulegen und darübe
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     Entdecken Sie eingehend, wie Sie die E‑Mail‑Sicherheit mit **Aspose.Email für Java** verbessern. Erkunden Sie Schritt‑für‑Schritt‑Tutorials und bewährte Praktiken zur Implementierung sicherer E‑Mail‑Lösungen in Ihren Java‑Anwendungen.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Häufig gestellte Fragen
 
 **F: Wie lese ich eine .ics‑Datei, nachdem ich eine Kalendereinladung erstellt habe?**  
@@ -179,3 +171,11 @@ A: Verwenden Sie `mailMessage.getHeaders()` oder iterieren Sie über `mailMessag
 **Zuletzt aktualisiert:** 2025-11-30  
 **Getestet mit:** Aspose.Email für Java 24.11  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

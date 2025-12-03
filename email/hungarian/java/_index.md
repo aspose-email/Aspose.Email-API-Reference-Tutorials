@@ -149,14 +149,6 @@ Here are some of our most popular tutorials to get you started and beyond:
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     Discover in-depth how to enhance email security with **Aspose.Email for Java**. Explore step‑by‑step tutorials and best practices for implementing secure email solutions in your Java applications.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Gyakran Ismételt Kérdések
 
 **Q: How do I read an .ics file after creating a calendar invite?**  
@@ -174,6 +166,16 @@ A: A valid X.509 certificate (PFX file) and the private key password. Call `mail
 **Q: How can I parse email headers to extract routing information?**  
 A: Use `mailMessage.getHeaders()` or iterate over `mailMessage.getHeaders().getAll()` to read fields such as `Received`, `Message-ID`, and `X-Mailer`.
 
+---
+
 **Last Updated:** 2025-11-30  
 **Tested With:** Aspose.Email for Java 24.11  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

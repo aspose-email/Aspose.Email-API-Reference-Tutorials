@@ -147,14 +147,6 @@ Konfigurasikan `SmtpClient` dengan detail server Anda, aktifkan TLS/SSL jika dip
 * ### [Menjelajahi Keamanan Email dengan Aspose.Email untuk Java](./exploring-email-security/)
     Temukan secara mendalam cara meningkatkan keamanan email dengan **Aspose.Email untuk Java**. Jelajahi tutorial langkah‑per‑langkah dan praktik terbaik untuk menerapkan solusi email aman dalam aplikasi Java Anda.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Bagaimana cara membaca file .ics setelah membuat undangan kalender?**  
@@ -172,6 +164,16 @@ A: Sertifikat X.509 yang valid (file PFX) dan kata sandi kunci pribadi. Panggil 
 **Q: Bagaimana saya dapat mengurai header email untuk mengekstrak informasi routing?**  
 A: Gunakan `mailMessage.getHeaders()` atau iterasi melalui `mailMessage.getHeaders().getAll()` untuk membaca bidang seperti `Received`, `Message-ID`, dan `X-Mailer`.
 
+---
+
 **Last Updated:** 2025-11-30  
 **Tested With:** Aspose.Email for Java 24.11  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

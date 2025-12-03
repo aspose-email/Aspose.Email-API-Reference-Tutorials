@@ -147,14 +147,6 @@ Aspose.Email の JAR をプロジェクトのクラスパスに追加するか�
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     **Aspose.Email for Java** でメールセキュリティを徹底的に探求します。ステップバイステップのチュートリアルとベストプラクティスで、安全なメールソリューションを実装します。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Frequently Asked Questions
 
 **Q: カレンダー招待を作成した後、.ics ファイルをどのように読み取りますか？**  
@@ -177,3 +169,11 @@ A: `mailMessage.getHeaders()` または `mailMessage.getHeaders().getAll()` を�
 **Last Updated:** 2025-11-30  
 **Tested With:** Aspose.Email for Java 24.11  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

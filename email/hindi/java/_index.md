@@ -148,14 +148,6 @@ Aspose.Email JAR को अपने प्रोजेक्ट की क्�
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     **Aspose.Email for Java** के साथ ईमेल सुरक्षा को गहराई से समझें। हमारे चरण‑दर‑चरण ट्यूटोरियल्स और बेस्ट प्रैक्टिसेज़ के साथ अपने जावा एप्लिकेशन्स में सुरक्षित ईमेल सॉल्यूशन्स इम्प्लीमेंट करें।
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## अक्सर पूछे जाने वाले प्रश्न
 
 **Q: कैलेंडर इनवाइट बनाने के बाद .ics फ़ाइल को कैसे पढ़ूं?**  
@@ -178,3 +170,11 @@ A: `mailMessage.getHeaders()` का उपयोग करें या `mailMe
 **Last Updated:** 2025-11-30  
 **Tested With:** Aspose.Email for Java 24.11  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

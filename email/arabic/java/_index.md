@@ -147,14 +147,6 @@ weight: 10
 * ### [استكشاف أمان البريد الإلكتروني مع Aspose.Email for Java](./exploring-email-security/)  
     اكتشف بعمق كيفية تعزيز أمان البريد باستخدام **Aspose.Email for Java**. استعرض دروسًا خطوة بخطوة وأفضل الممارسات لتطبيق حلول بريد آمنة في تطبيقات Java الخاصة بك.  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## الأسئلة المتكررة
 
 **س: كيف يمكنني قراءة ملف .ics بعد إنشاء دعوة تقويم؟**  
@@ -172,6 +164,16 @@ A: شهادة X.509 صالحة (ملف PFX) وكلمة مرور المفتاح �
 **س: كيف يمكنني تحليل رؤوس البريد الإلكتروني لاستخراج معلومات التوجيه؟**  
 A: استخدم `mailMessage.getHeaders()` أو قم بالتكرار على `mailMessage.getHeaders().getAll()` لقراءة الحقول مثل `Received` و`Message-ID` و`X-Mailer`.
 
+---
+
 **آخر تحديث:** 2025-11-30  
 **تم الاختبار مع:** Aspose.Email for Java 24.11  
 **المؤلف:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

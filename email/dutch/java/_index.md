@@ -147,14 +147,6 @@ Configureer een `SmtpClient` met uw servergegevens, schakel TLS/SSL in indien ve
 * ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
     Ontdek diepgaand hoe u e‑mailbeveiliging verbetert met **Aspose.Email for Java**. Verken stapsgewijze tutorials en best practices voor het implementeren van veilige e‑mailoplossingen in uw Java‑applicaties.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Veelgestelde vragen
 
 **Q: Hoe lees ik een .ics‑bestand na het maken van een agenda‑uitnodiging?**  
@@ -177,3 +169,11 @@ A: Gebruik `mailMessage.getHeaders()` of itereren over `mailMessage.getHeaders()
 **Laatst bijgewerkt:** 2025-11-30  
 **Getest met:** Aspose.Email for Java 24.11  
 **Auteur:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
