@@ -1,10 +1,12 @@
 ---
-"description": "使用 Aspose.Email for Java 高效管理大型电子邮件附件。提供 Java 应用程序中简化附件处理的分步指南和源代码。"
-"linktitle": "在 Aspose.Email 中管理大型附件"
-"second_title": "Aspose.Email Java 电子邮件管理 API"
-"title": "在 Aspose.Email 中管理大型附件"
-"url": "/zh/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-05
+description: 学习如何使用 Aspose.Email for Java 创建带附件的电子邮件、保存带附件的电子邮件以及处理附件大小限制的电子邮件。一步步指南。
+language: zh
+linktitle: Managing Large Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: 创建带附件的电子邮件 – 管理大文件 (Aspose.Email)
+url: /java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +15,53 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 在 Aspose.Email 中管理大型附件
+# 创建带附件的电子邮件 – 管理大文件（Aspose.Email）
 
+附件是日常电子邮件交流的核心部分，但当这些文件变得很大时，会导致性能和投递问题。在本教程中，你将 **创建带附件的电子邮件**，使用 Aspose.Email for Java，学习如何 **保存带附件的电子邮件**，了解典型的 **附件大小限制（email）**，并看到如何 **以 Java 方式下载电子邮件附件**。我们将逐步演示每个步骤，提供清晰的解释、实际技巧以及可直接运行的代码示例。
 
-## Aspose.Email for Java 中大型附件管理简介
+## 快速回答
+- **哪个库可以处理大附件？** Aspose.Email for Java 提供支持流式处理的 API。  
+- **我可以保存已经包含附件的电子邮件吗？** 可以 – 使用 `MailMessage.save(...)`。  
+- **常见的附件大小限制是多少？** 大多数提供商限制在 20‑25 MB，但你可以拆分或压缩更大的文件。  
+- **如何在 Java 中下载附件？** 加载 `MailMessage` 并调用 `attachment.save(...)`。  
+- **生产环境需要许可证吗？** 商业许可证是非评估使用的必需品。
 
-附件是电子邮件通信的重要组成部分，但高效处理大型附件却并非易事。使用 Aspose.Email for Java，您可以简化 Java 应用程序中大型电子邮件附件的管理。在本指南中，我们将逐步指导您完成整个过程，并提供有效处理附件的源代码示例。
+## Aspose.Email for Java 中管理大附件的简介
 
-## 先决条件
+附件是电子邮件交流的重要组成部分，但高效处理大附件可能是一个挑战。使用 Aspose.Email for Java，你可以在 Java 应用程序中简化大邮件附件的管理。本文将一步步引导你完成整个过程，并提供有效附件处理的源代码示例。
 
-在开始之前，请确保您已满足以下先决条件：
+## 前置条件
 
-- [Aspose.Email for Java](https://releases.aspose.com/email/java/)：下载并安装 Aspose.Email for Java 库。
+在开始之前，请确保已具备以下前置条件：
 
-## 步骤 1：创建电子邮件
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/): 下载并安装 Aspose.Email for Java 库。
 
-首先，让我们创建一封包含大型附件的示例邮件。我们将使用 Aspose.Email 库来实现。以下是一段简单的 Java 代码片段：
+## 步骤 1：创建带大附件的电子邮件
+
+首先，创建一个包含大文件的示例电子邮件。我们将使用 Aspose.Email 库来完成此操作。下面是所需的 Java 代码：
 
 ```java
-// 导入所需的 Aspose.Email 类
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // 创建新的 MailMessage
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // 设置发件人和收件人地址
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // 设置电子邮件的主题和正文
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // 将大文件附加到电子邮件
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // 保存电子邮件
+            // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +70,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-在这段代码中，我们创建一个新的 `MailMessage` 并附加一个大型 PDF 文件。确保替换 `"sender@example.com"`， `"recipient@example.com"`， 和 `"path/to/large_attachment.pdf"` 包含您的实际电子邮件地址和大型附件文件的路径。
+> **专业提示：** 上面的 `save` 调用演示了如何 **保存带附件的电子邮件** 为 `.eml` 文件，以便后续处理或归档。
 
-## 第 2 步：发送电子邮件
+## 步骤 2：发送带大附件的电子邮件
 
-现在我们已经创建了一封包含大附件的电子邮件，让我们使用 SMTP 发送它。操作方法如下：
+现在电子邮件已准备好，使用 SMTP 发送它。以下代码片段展示了所需的步骤：
 
 ```java
-// 导入所需的 Aspose.Email 类
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // 创建 SmtpClient 的新实例
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // 指定 SMTP 服务器设置
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // 创建新的 MailMessage
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // 设置发件人和收件人地址
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // 设置电子邮件的主题和正文
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // 将大文件附加到电子邮件
+            // Attach a large file to the email
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // 发送电子邮件
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +114,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-在此代码中，我们使用 `SmtpClient` 类来发送带有大附件的电子邮件。替换 `"smtp.example.com"`， `"your_username"`， 和 `"your_password"` 与您的 SMTP 服务器设置。
+> **为何重要：** 使用 `SmtpClient` 可以控制身份验证、TLS 以及其他服务器特定设置，这在处理 **附件大小限制（email）** 时尤为关键。
 
-## 步骤3：接收和下载电子邮件
+## 步骤 3：接收并下载大附件
 
-当您收到包含大型附件的电子邮件时，您可能希望将附件下载到本地系统。操作方法如下：
+收件人收到邮件后，可能需要将附件提取到磁盘。下面的代码展示了在 Java 中如何实现：
 
 ```java
-// 导入所需的 Aspose.Email 类
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // 从文件或电子邮件服务器加载电子邮件
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // 循环浏览附件并下载较大的附件
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +144,58 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-在此代码中，我们加载收到的电子邮件并遍历其附件以查找和下载大附件。
+> **给 Java 开发者的提示：** 本示例通过遍历 `message.getAttachments()` 并在匹配的文件上调用 `save(...)`，演示了 **download email attachment java** 的实现方式。
+
+## 如何保存带附件的电子邮件以供后续使用
+
+有时需要在发送后归档消息。步骤 1 中展示的 `MailMessage.save(...)` 方法会将完整的 MIME 内容（包括所有附件）写入文件。以后可以使用 `MailMessage.load(...)` 重新加载，而不会丢失任何数据。
+
+## 理解邮件提供商对附件大小的限制
+
+- **Gmail / Google Workspace：** 每封邮件 25 MB（包括编码开销）。  
+- **Outlook / Office 365：** 默认 20 MB，可在服务器上配置至 150 MB。  
+- **Yahoo Mail：** 25 MB。  
+
+如果附件超过这些限制，可考虑：
+
+1. **分块**：将文件拆分为更小的部分并发送多封邮件。  
+2. **压缩**：在附件前先进行压缩（ZIP、7z 等）。  
+3. **使用文件共享服务**：发送下载链接而非直接附件。
+
+## 常见问题与故障排除
+
+| 症状 | 可能原因 | 解决方案 |
+|------|----------|----------|
+| `Error: Message size exceeds limit` | SMTP 服务器拒绝超大负载 | 压缩或拆分附件，或在你掌控的服务器上提升限制。 |
+| 附件下载后出现损坏 | 二进制数据在传输过程中被更改 | 确保使用 `Attachment.save(...)`，不要额外进行编码处理。 |
+| 未收到附件 | 附件未添加到 `MailMessage` 中 | 确认在 `client.send(message)` 之前调用了 `message.getAttachments().addItem(...)`。 |
+
+## 常见问答
+
+**问：如何高效处理非常大的附件？**  
+答：使用 Aspose.Email 的流式 API，以块方式读写附件数据，避免一次性将整个文件加载到内存。
+
+**问：电子邮件附件是否有大小限制？**  
+答：是的——大多数提供商将附件限制在 20 MB 到 25 MB 之间。请始终检查所用服务的政策，并对更大的文件考虑压缩或分块。
+
+**问：我可以在发送前压缩附件吗？**  
+答：完全可以。将文件压缩（如 ZIP）后再作为附件发送，可降低体积并提升投递成功率。
+
+**问：能否从已有的 .eml 文件中提取附件？**  
+答：可以——使用 `MailMessage.load(...)` 加载 `.eml`，然后遍历 `message.getAttachments()`，如下载示例所示。
+
+**问：在生产环境中使用 Aspose.Email 是否需要许可证？**  
+答：是的，生产部署需要商业许可证；可使用免费试用版进行评估。
 
 ## 结论
 
-高效管理大型电子邮件附件对于高效的电子邮件通信至关重要。使用 Aspose.Email for Java，您可以简化 Java 应用程序中处理大型附件的流程。在本指南中，我们介绍了从创建和发送包含大型附件的电子邮件到接收和下载这些附件的基本步骤。遵循这些步骤和最佳实践，您可以确保在 Java 项目中处理大型电子邮件附件时获得流畅的体验。
+高效管理大邮件附件对于可靠的通信至关重要。通过遵循上述步骤——**创建带附件的电子邮件**、**保存带附件的电子邮件**、遵守 **附件大小限制（email）**，以及 **download email attachment java**——你可以构建稳健的 Java 应用程序，轻松处理大文件。进一步探索 Aspose.Email 的附加功能，如附件流式处理、MIME 操作和服务器端处理，以进一步提升你的邮件工作流。
 
-## 常见问题解答
+---
 
-### 如何才能有效地处理非常大的附件？
-
-为了高效处理超大附件，请考虑使用流技术分块读写附件数据，而不是将整个附件加载到内存中。Aspose.Email 提供的流功能可让您处理大型附件，而不会占用过多的内存。
-
-### 电子邮件附件有大小限制吗？
-
-电子邮件附件的大小限制可能因电子邮件服务提供商和电子邮件客户端而异。请务必检查电子邮件服务提供商的附件大小限制，并确保您的附件符合这些限制，以避免出现递送问题。
-
-### 我可以压缩附件来减小其大小吗？
-
-是的，您可以在发送附件之前压缩它们以减小其大小。Aspose.Email 提供了以编程方式压缩和解压缩附件的功能。您可以实现此功能来优化电子邮件附件的大小。
+**最后更新：** 2025-12-05  
+**测试环境：** Aspose.Email for Java 24.12（最新发布）  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

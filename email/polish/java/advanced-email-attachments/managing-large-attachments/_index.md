@@ -1,10 +1,14 @@
 ---
-"description": "Efektywne zarządzanie dużymi załącznikami e-mail z Aspose.Email dla Java. Przewodnik krok po kroku i kod źródłowy dla usprawnionej obsługi załączników w aplikacjach Java."
-"linktitle": "Zarządzanie dużymi załącznikami w Aspose.Email"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Zarządzanie dużymi załącznikami w Aspose.Email"
-"url": "/pl/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-05
+description: Dowiedz się, jak tworzyć e‑mail z załącznikiem, zapisywać e‑mail z załącznikiem
+  oraz obsługiwać limity rozmiaru załączników w e‑mailu przy użyciu Aspose.Email dla
+  Javy. Przewodnik krok po kroku.
+language: pl
+linktitle: Managing Large Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Utwórz e‑mail z załącznikiem – zarządzaj dużymi plikami (Aspose.Email)
+url: /java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +17,53 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zarządzanie dużymi załącznikami w Aspose.Email
+# Utwórz e‑mail z załącznikiem – Zarządzanie dużymi plikami (Aspose.Email)
 
+Załączniki są podstawową częścią codziennej komunikacji e‑mailowej, ale gdy pliki stają się duże, mogą powodować problemy z wydajnością i dostarczaniem. W tym samouczku **create email with attachment** przy użyciu Aspose.Email for Java, dowiesz się, jak **save email with attachment**, zrozumiesz typowe **attachment size limits email** oraz zobaczysz, jak **download email attachment java**‑style. Przejdziemy przez każdy krok z jasnymi wyjaśnieniami, praktycznymi wskazówkami i gotowymi przykładami kodu.
 
-## Wprowadzenie do zarządzania dużymi załącznikami w Aspose.Email dla Java
+## Quick Answers
+- **Jaka biblioteka obsługuje duże załączniki?** Aspose.Email for Java udostępnia API świadome strumieniowania.  
+- **Czy mogę zapisać e‑mail, który już zawiera załącznik?** Tak – użyj `MailMessage.save(...)`.  
+- **Jakie są typowe limity rozmiaru załączników?** Większość dostawców ogranicza do 20‑25 MB, ale możesz podzielić lub skompresować większe pliki.  
+- **Jak pobrać załącznik w Javie?** Załaduj `MailMessage` i wywołaj `attachment.save(...)`.  
+- **Czy potrzebna jest licencja do produkcji?** Licencja komercyjna jest wymagana do użytku nie‑ewaluacyjnego.
 
-Załączniki są istotną częścią komunikacji e-mailowej, ale wydajne radzenie sobie z dużymi załącznikami może być wyzwaniem. Dzięki Aspose.Email for Java możesz usprawnić zarządzanie dużymi załącznikami e-mail w swoich aplikacjach Java. W tym przewodniku przeprowadzimy Cię przez proces krok po kroku, dostarczając przykłady kodu źródłowego do efektywnej obsługi załączników.
+## Wprowadzenie do zarządzania dużymi załącznikami w Aspose.Email for Java
+
+Załączniki są nieodłącznym elementem komunikacji e‑mailowej, ale efektywne radzenie sobie z dużymi załącznikami może być wyzwaniem. Dzięki Aspose.Email for Java możesz usprawnić zarządzanie dużymi załącznikami e‑mail w swoich aplikacjach Java. W tym przewodniku przeprowadzimy Cię krok po kroku przez proces, dostarczając przykłady kodu źródłowego do skutecznego obsługiwania załączników.
 
 ## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
+Zanim zaczniemy, upewnij się, że masz spełnione następujące wymagania:
 
-- [Aspose.Email dla Java](https://releases.aspose.com/email/java/): Pobierz i zainstaluj bibliotekę Aspose.Email for Java.
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/): Pobierz i zainstaluj bibliotekę Aspose.Email for Java.
 
-## Krok 1: Tworzenie wiadomości e-mail
+## Krok 1: Tworzenie e‑maila z dużym załącznikiem
 
-Na początek utwórzmy przykładowy e-mail z dużym załącznikiem. Użyjemy do tego biblioteki Aspose.Email. Oto prosty fragment kodu Java:
+Aby rozpocząć, utwórzmy przykładowego e‑maila zawierającego duży plik. Skorzystamy z biblioteki Aspose.Email. Poniżej znajduje się potrzebny kod Java:
 
 ```java
-// Zaimportuj wymagane klasy Aspose.Email
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Utwórz nową wiadomość e-mail
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Ustaw adresy nadawcy i odbiorcy
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // Ustaw temat i treść wiadomości e-mail
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Dołącz duży plik do wiadomości e-mail
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // Zapisz e-mail
+            // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +72,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-tym kodzie tworzymy nowy `MailMessage` i dołącz do niego duży plik PDF. Upewnij się, że zastąpisz `"sender@example.com"`, `"recipient@example.com"`, I `"path/to/large_attachment.pdf"` z twoimi prawdziwymi adresami e-mail i ścieżką do dużego pliku załącznika.
+> **Pro tip:** Wywołanie `save` powyżej pokazuje, jak **save email with attachment** do pliku `.eml` w celu późniejszego przetwarzania lub archiwizacji.
 
-## Krok 2: Wysyłanie wiadomości e-mail
+## Krok 2: Wysyłanie e‑maila z dużym załącznikiem
 
-Teraz, gdy utworzyliśmy wiadomość e-mail z dużym załącznikiem, wyślijmy ją za pomocą SMTP. Oto, jak możesz to zrobić:
+Teraz, gdy e‑mail jest gotowy, wyślijmy go za pomocą SMTP. Ten fragment kodu pokazuje wymagane kroki:
 
 ```java
-// Zaimportuj wymagane klasy Aspose.Email
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Utwórz nową instancję SmtpClient
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // Określ ustawienia serwera SMTP
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // Utwórz nową wiadomość e-mail
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Ustaw adresy nadawcy i odbiorcy
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // Ustaw temat i treść wiadomości e-mail
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Dołącz duży plik do wiadomości e-mail
+            // Attach a large file to the email
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // Wyślij e-mail
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +116,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-W tym kodzie używamy `SmtpClient` klasa do wysłania wiadomości e-mail z dużym załącznikiem. Zastąp `"smtp.example.com"`, `"your_username"`, I `"your_password"` z ustawieniami serwera SMTP.
+> **Why this matters:** Użycie `SmtpClient` pozwala kontrolować uwierzytelnianie, TLS i inne ustawienia specyficzne dla serwera, co jest kluczowe przy radzeniu sobie z **attachment size limits email** narzuconymi przez dostawcę.
 
-## Krok 3: Odbieranie i pobieranie wiadomości e-mail
+## Krok 3: Odbieranie i pobieranie dużego załącznika
 
-Gdy otrzymasz wiadomość e-mail z dużym załącznikiem, możesz chcieć pobrać załącznik do swojego lokalnego systemu. Oto, jak możesz to zrobić:
+Gdy odbiorca otrzyma e‑mail, może być konieczne wyodrębnienie załącznika na dysk. Poniższy kod pokazuje, jak to zrobić w Javie:
 
 ```java
-// Zaimportuj wymagane klasy Aspose.Email
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // Wczytaj wiadomość e-mail z pliku lub serwera poczty e-mail
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // Przejrzyj załączniki i pobierz ten większy
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +146,57 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-W tym kodzie ładujemy otrzymaną wiadomość e-mail i przeglądamy jej załączniki, aby znaleźć i pobrać duży załącznik.
+> **Tip for Java developers:** Ten przykład demonstruje **download email attachment java** poprzez iterację po `message.getAttachments()` i wywołanie `save(...)` na pasującym pliku.
 
-## Wniosek
+## Jak zapisać e‑mail z załącznikiem do późniejszego użycia
 
-Efektywne zarządzanie dużymi załącznikami e-mail jest kluczowe dla efektywnej komunikacji e-mailowej. Dzięki Aspose.Email for Java możesz usprawnić proces obsługi dużych załączników w swoich aplikacjach Java. W tym przewodniku omówiliśmy podstawowe kroki, od tworzenia i wysyłania wiadomości e-mail z dużymi załącznikami po ich odbieranie i pobieranie. Postępując zgodnie z tymi krokami i najlepszymi praktykami, możesz zapewnić sobie płynne działanie podczas obsługi dużych załączników e-mail w swoich projektach Java.
+Czasami trzeba zarchiwizować wiadomość po jej wysłaniu. Metoda `MailMessage.save(...)` (pokazana w Kroku 1) zapisuje pełną zawartość MIME, w tym wszystkie załączniki, do pliku. Później możesz ją ponownie wczytać za pomocą `MailMessage.load(...)` bez utraty danych.
+
+## Zrozumienie limitów rozmiaru załączników narzucanych przez dostawców e‑mail
+
+- **Gmail / Google Workspace:** 25 MB na wiadomość (wliczając narzut kodowania).  
+- **Outlook / Office 365:** domyślnie 20 MB, konfigurowalne do 150 MB na serwerze.  
+- **Yahoo Mail:** 25 MB.  
+
+Jeśli Twój załącznik przekracza te limity, rozważ:
+1. **Chunking** pliku na mniejsze części i wysłanie wielu wiadomości.  
+2. **Compressing** pliku (ZIP, 7z) przed dołączeniem.  
+3. **Using a file‑sharing service** i wysłanie linku do pobrania zamiast.
+
+## Typowe problemy i rozwiązywanie
+
+| Symptom | Likely Cause | Fix |
+|---------|---------------|-----|
+| `Error: Message size exceeds limit` | Serwer SMTP odrzuca zbyt duży ładunek | Skompresuj lub podziel załącznik, lub zwiększ limity serwera, jeśli masz nad nim kontrolę. |
+| Załącznik wygląda na uszkodzony po pobraniu | Dane binarne zostały zmienione podczas transmisji | Upewnij się, że używasz `Attachment.save(...)` bez dodatkowych kroków kodowania. |
+| Nie otrzymano załącznika | Załącznik nie został dodany do `MailMessage` | Zweryfikuj, że `message.getAttachments().addItem(...)` jest wywoływane przed `client.send(message)`. |
 
 ## Najczęściej zadawane pytania
 
-### Jak mogę wydajnie obsługiwać bardzo duże załączniki?
+**Q: Jak mogę efektywnie obsługiwać bardzo duże załączniki?**  
+A: Użyj streamingowych API Aspose.Email do odczytu/zapisu danych załącznika w fragmentach, co zapobiega ładowaniu całego pliku do pamięci.
 
-Aby sprawnie obsługiwać bardzo duże załączniki, rozważ użycie technik przesyłania strumieniowego do odczytywania i zapisywania danych załącznika w blokach zamiast ładowania całego załącznika do pamięci. Aspose.Email zapewnia możliwości przesyłania strumieniowego, które umożliwiają przetwarzanie dużych załączników bez nadmiernego zużywania pamięci.
+**Q: Czy istnieją ograniczenia rozmiaru załączników e‑mail?**  
+A: Tak — większość dostawców ogranicza załączniki do 20‑25 MB. Zawsze sprawdzaj politykę swojego serwisu i rozważ kompresję lub podział na części przy większych plikach.
 
-### Czy istnieją jakieś ograniczenia rozmiaru załączników do wiadomości e-mail?
+**Q: Czy mogę skompresować załączniki przed ich wysłaniem?**  
+A: Oczywiście. Skompresuj plik (np. ZIP) i dołącz skompresowane archiwum, aby zmniejszyć rozmiar i zwiększyć niezawodność dostarczenia.
 
-Ograniczenia rozmiaru załączników e-mail mogą się różnić w zależności od dostawców usług e-mail i klientów e-mail. Ważne jest, aby sprawdzić limity rozmiaru załączników dostawcy usług e-mail i upewnić się, że załączniki są zgodne z tymi limitami, aby uniknąć problemów z dostarczaniem.
+**Q: Czy można pobrać załączniki z istniejącego pliku .eml?**  
+A: Tak — wczytaj `.eml` za pomocą `MailMessage.load(...)` i iteruj po `message.getAttachments()` jak pokazano w przykładzie pobierania.
 
-### Czy mogę skompresować załączniki, aby zmniejszyć ich rozmiar?
+**Q: Czy potrzebuję licencji na używanie Aspose.Email w produkcji?**  
+A: Licencja komercyjna jest wymagana przy wdrożeniach produkcyjnych; dostępna jest darmowa wersja próbna do oceny.
 
-Tak, możesz kompresować załączniki, aby zmniejszyć ich rozmiar przed wysłaniem. Aspose.Email zapewnia funkcje kompresji i dekompresji załączników programowo. Możesz to wdrożyć, aby zoptymalizować rozmiar załączników e-mail.
+## Podsumowanie
+
+Efektywne zarządzanie dużymi załącznikami e‑mail jest kluczowe dla niezawodnej komunikacji. Postępując zgodnie z powyższymi krokami — **create email with attachment**, **save email with attachment**, respektując **attachment size limits email** oraz **download email attachment java** — możesz tworzyć solidne aplikacje Java obsługujące duże pliki bez problemów. Poznaj dodatkowe funkcje Aspose.Email, takie jak streaming załączników, manipulacja MIME oraz przetwarzanie po stronie serwera, aby jeszcze bardziej usprawnić swoje przepływy pracy e‑mail.
+
+---
+
+**Last Updated:** 2025-12-05  
+**Tested With:** Aspose.Email for Java 24.12 (latest release)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

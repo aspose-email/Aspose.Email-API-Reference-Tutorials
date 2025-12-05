@@ -1,10 +1,13 @@
 ---
-"description": "Java के लिए Aspose.Email के साथ बड़े ईमेल अनुलग्नकों को कुशलतापूर्वक प्रबंधित करें। Java अनुप्रयोगों में सुव्यवस्थित अनुलग्नक प्रबंधन के लिए चरण-दर-चरण मार्गदर्शिका और स्रोत कोड।"
-"linktitle": "Aspose.Email में बड़े अनुलग्नकों का प्रबंधन"
-"second_title": "Aspose.Email जावा ईमेल प्रबंधन API"
-"title": "Aspose.Email में बड़े अनुलग्नकों का प्रबंधन"
-"url": "/hi/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-05
+description: Aspose.Email for Java का उपयोग करके अटैचमेंट के साथ ईमेल बनाना, अटैचमेंट
+  के साथ ईमेल सहेजना, और अटैचमेंट आकार सीमा को संभालना सीखें। चरण‑दर‑चरण गाइड।
+language: hi
+linktitle: Managing Large Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: अटैचमेंट के साथ ईमेल बनाएं – बड़े फ़ाइलों का प्रबंधन (Aspose.Email)
+url: /java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +16,53 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email में बड़े अनुलग्नकों का प्रबंधन
+# अटैचमेंट के साथ ईमेल बनाएं – बड़े फ़ाइलों का प्रबंधन (Aspose.Email)
 
+अटैचमेंट ईमेल संचार का एक मुख्य हिस्सा हैं, लेकिन जब ये फ़ाइलें बड़ी हो जाती हैं तो प्रदर्शन और डिलीवरी में समस्याएँ उत्पन्न हो सकती हैं। इस ट्यूटोरियल में आप **create email with attachment** को Aspose.Email for Java का उपयोग करके बनाएँगे, **save email with attachment** कैसे किया जाता है सीखेंगे, सामान्य **attachment size limits email** को समझेंगे और **download email attachment java**‑स्टाइल को देखेंगे। हम प्रत्येक चरण को स्पष्ट व्याख्याओं, वास्तविक‑दुनिया की टिप्स और तैयार‑चलाने‑योग्य कोड नमूनों के साथ चलेंगे।
 
-## Java के लिए Aspose.Email में बड़े अनुलग्नकों के प्रबंधन का परिचय
+## त्वरित उत्तर
+- **बड़ी अटैचमेंट को संभालने वाली लाइब्रेरी कौन सी है?** Aspose.Email for Java provides streaming‑aware APIs.  
+- **क्या मैं ऐसे ईमेल को सहेज सकता हूँ जिसमें पहले से अटैचमेंट हो?** हाँ – `MailMessage.save(...)` का उपयोग करें।  
+- **सामान्य अटैचमेंट आकार सीमाएँ क्या हैं?** अधिकांश प्रदाता 20‑25 MB तक की सीमा रखते हैं, लेकिन आप बड़े फ़ाइलों को विभाजित या संकुचित कर सकते हैं।  
+- **जावा में अटैचमेंट कैसे डाउनलोड करें?** `MailMessage` को लोड करें और `attachment.save(...)` को कॉल करें।  
+- **उत्पादन के लिए लाइसेंस चाहिए क्या?** गैर‑मूल्यांकन उपयोग के लिए एक व्यावसायिक लाइसेंस आवश्यक है।
 
-अनुलग्नक ईमेल संचार का एक अनिवार्य हिस्सा हैं, लेकिन बड़े अनुलग्नकों से कुशलतापूर्वक निपटना एक चुनौती हो सकती है। Aspose.Email for Java के साथ, आप अपने Java अनुप्रयोगों में बड़े ईमेल अनुलग्नकों के प्रबंधन को सुव्यवस्थित कर सकते हैं। इस गाइड में, हम आपको प्रभावी अनुलग्नक हैंडलिंग के लिए स्रोत कोड उदाहरण प्रदान करते हुए, चरण दर चरण प्रक्रिया से गुजारेंगे।
+## Aspose.Email for Java में बड़े अटैचमेंट का प्रबंधन – परिचय
 
-## आवश्यक शर्तें
+अटैचमेंट ईमेल संचार का एक आवश्यक भाग हैं, लेकिन बड़े अटैचमेंट को कुशलता से संभालना चुनौतीपूर्ण हो सकता है। Aspose.Email for Java के साथ, आप अपने जावा अनुप्रयोगों में बड़े ईमेल अटैचमेंट के प्रबंधन को सरल बना सकते हैं। इस गाइड में हम प्रक्रिया को चरण‑दर‑चरण समझाएँगे और प्रभावी अटैचमेंट हैंडलिंग के लिए स्रोत कोड उदाहरण प्रदान करेंगे।
 
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
+## पूर्वापेक्षाएँ
 
-- [जावा के लिए Aspose.Email](https://releases.aspose.com/email/java/): Java लाइब्रेरी के लिए Aspose.Email डाउनलोड और इंस्टॉल करें।
+शुरू करने से पहले सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
 
-## चरण 1: ईमेल बनाना
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/): Aspose.Email for Java लाइब्रेरी को डाउनलोड और इंस्टॉल करें।
 
-आरंभ करने के लिए, आइए एक बड़े अनुलग्नक के साथ एक नमूना ईमेल बनाएं। ऐसा करने के लिए हम Aspose.Email लाइब्रेरी का उपयोग करेंगे। यहाँ एक सरल जावा कोड स्निपेट है:
+## चरण 1: बड़े अटैचमेंट के साथ ईमेल बनाना
+
+शुरू करने के लिए, चलिए एक नमूना ईमेल बनाते हैं जिसमें बड़ा फ़ाइल अटैचमेंट हो। हम इस काम के लिए Aspose.Email लाइब्रेरी का उपयोग करेंगे। नीचे वह जावा कोड है जिसकी आपको आवश्यकता है:
 
 ```java
-// आवश्यक Aspose.Email क्लासेस आयात करें
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // नया मेल संदेश बनाएं
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // प्रेषक और प्राप्तकर्ता का पता सेट करें
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // ईमेल का विषय और मुख्य भाग निर्धारित करें
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // ईमेल में एक बड़ी फ़ाइल संलग्न करें
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // ईमेल सहेजें
+            // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +71,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-इस कोड में, हम एक नया बनाते हैं `MailMessage` और इसके साथ एक बड़ी पीडीएफ फाइल संलग्न करें। सुनिश्चित करें कि इसे बदला जाए `"sender@example.com"`, `"recipient@example.com"`, और `"path/to/large_attachment.pdf"` आपके वास्तविक ईमेल पते और आपकी बड़ी अनुलग्नक फ़ाइल का पथ।
+> **Pro tip:** उपरोक्त `save` कॉल दिखाता है कि कैसे **save email with attachment** को एक `.eml` फ़ाइल में बाद में प्रोसेसिंग या आर्काइविंग के लिए सहेजा जा सकता है।
 
-## चरण 2: ईमेल भेजना
+## चरण 2: बड़े अटैचमेंट के साथ ईमेल भेजना
 
-अब जबकि हमने एक बड़ा अटैचमेंट वाला ईमेल बना लिया है, तो चलिए इसे SMTP का इस्तेमाल करके भेजते हैं। आप इसे इस तरह से कर सकते हैं:
+अब जब हमारा ईमेल तैयार है, चलिए इसे SMTP के माध्यम से भेजते हैं। यह स्निपेट आवश्यक चरणों को दर्शाता है:
 
 ```java
-// आवश्यक Aspose.Email क्लासेस आयात करें
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // SmtpClient का एक नया उदाहरण बनाएँ
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // SMTP सर्वर सेटिंग्स निर्दिष्ट करें
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // नया मेल संदेश बनाएं
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // प्रेषक और प्राप्तकर्ता का पता सेट करें
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // ईमेल का विषय और मुख्य भाग निर्धारित करें
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // ईमेल में एक बड़ी फ़ाइल संलग्न करें
+            // Attach a large file to the email
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // ईमेल भेजें
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +115,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-इस कोड में, हम उपयोग करते हैं `SmtpClient` ईमेल को बड़े अटैचमेंट के साथ भेजने के लिए क्लास का उपयोग करें। `"smtp.example.com"`, `"your_username"`, और `"your_password"` अपने SMTP सर्वर सेटिंग्स के साथ.
+> **Why this matters:** `SmtpClient` का उपयोग करके आप प्रमाणीकरण, TLS, और अन्य सर्वर‑विशिष्ट सेटिंग्स को नियंत्रित कर सकते हैं, जो आपके प्रदाता द्वारा लगाए गए **attachment size limits email** को संभालने में आवश्यक है।
 
-## चरण 3: ईमेल प्राप्त करना और डाउनलोड करना
+## चरण 3: बड़े अटैचमेंट को प्राप्त करना और डाउनलोड करना
 
-जब आपको कोई बड़ा अटैचमेंट वाला ईमेल मिलता है, तो आप अटैचमेंट को अपने स्थानीय सिस्टम पर डाउनलोड करना चाह सकते हैं। आप यह कैसे कर सकते हैं:
+जब प्राप्तकर्ता ईमेल प्राप्त करता है, तो आपको अटैचमेंट को डिस्क पर निकालना पड़ सकता है। नीचे दिया गया कोड जावा में यह करने का तरीका दिखाता है:
 
 ```java
-// आवश्यक Aspose.Email क्लासेस आयात करें
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // किसी फ़ाइल या अपने ईमेल सर्वर से ईमेल लोड करें
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // अनुलग्नकों के माध्यम से लूप करें और बड़े वाले को डाउनलोड करें
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +145,58 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-इस कोड में, हम प्राप्त ईमेल को लोड करते हैं और उसके अनुलग्नकों के माध्यम से बड़े अनुलग्नक को ढूंढ़ते और डाउनलोड करते हैं।
+> **Tip for Java developers:** यह उदाहरण **download email attachment java** को दर्शाता है, जहाँ `message.getAttachments()` पर इटररेट करके और मिलते‑जुलते फ़ाइल पर `save(...)` कॉल करके अटैचमेंट को डाउनलोड किया जाता है।
 
-## निष्कर्ष
+## बाद में उपयोग के लिए अटैचमेंट के साथ ईमेल कैसे सहेजें
 
-प्रभावी ईमेल संचार के लिए बड़े ईमेल अनुलग्नकों को कुशलतापूर्वक प्रबंधित करना महत्वपूर्ण है। Aspose.Email for Java के साथ, आप अपने Java अनुप्रयोगों में बड़े अनुलग्नकों को संभालने की प्रक्रिया को सुव्यवस्थित कर सकते हैं। इस गाइड में, हमने बड़े अनुलग्नकों वाले ईमेल बनाने और भेजने से लेकर उन्हें प्राप्त करने और डाउनलोड करने तक के आवश्यक चरणों को कवर किया है। इन चरणों और सर्वोत्तम प्रथाओं का पालन करके, आप अपने Java प्रोजेक्ट में बड़े ईमेल अनुलग्नकों से निपटने के दौरान एक सहज अनुभव सुनिश्चित कर सकते हैं।
+कभी‑कभी आपको संदेश भेजने के बाद उसे आर्काइव करने की आवश्यकता होती है। `MailMessage.save(...)` मेथड (चरण 1 में दिखाया गया) पूर्ण MIME कंटेंट, जिसमें सभी अटैचमेंट शामिल हैं, को फ़ाइल में लिखता है। आप बाद में इसे `MailMessage.load(...)` से पुनः लोड कर सकते हैं बिना किसी डेटा के खोए।
+
+## अटैचमेंट आकार सीमाएँ – ईमेल प्रदाता द्वारा लागू
+
+- **Gmail / Google Workspace:** प्रति संदेश 25 MB (एन्कोडिंग ओवरहेड सहित)।  
+- **Outlook / Office 365:** डिफ़ॉल्ट रूप से 20 MB, सर्वर पर 150 MB तक कॉन्फ़िगर किया जा सकता है।  
+- **Yahoo Mail:** 25 MB।  
+
+यदि आपका अटैचमेंट इन सीमाओं से अधिक है, तो विचार करें:
+
+1. **Chunking** – फ़ाइल को छोटे भागों में विभाजित करके कई संदेश भेजें।  
+2. **Compressing** – फ़ाइल को (ZIP, 7z) संकुचित करके अटैचमेंट से पहले संपीड़ित करें।  
+3. **फ़ाइल‑शेयरिंग सेवा** का उपयोग करके डाउनलोड लिंक भेजें।
+
+## सामान्य समस्याएँ और ट्रबलशूटिंग
+
+| लक्षण | संभावित कारण | समाधान |
+|---------|---------------|-----|
+| `Error: Message size exceeds limit` | SMTP सर्वर बड़े पेलोड को अस्वीकार करता है | अटैचमेंट को संकुचित या विभाजित करें, या यदि आप सर्वर नियंत्रित करते हैं तो सर्वर सीमा बढ़ाएँ। |
+| अटैचमेंट डाउनलोड के बाद भ्रष्ट दिखता है | बाइनरी डेटा ट्रांसमिशन के दौरान बदल गया | अतिरिक्त एन्कोडिंग चरणों के बिना `Attachment.save(...)` का उपयोग सुनिश्चित करें। |
+| कोई अटैचमेंट प्राप्त नहीं हुआ | अटैचमेंट `MailMessage` में नहीं जोड़ा गया | `client.send(message)` से पहले `message.getAttachments().addItem(...)` को कॉल किया गया है, यह सत्यापित करें। |
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-### मैं बहुत बड़े अनुलग्नकों को कुशलतापूर्वक कैसे संभाल सकता हूँ?
+**Q: बहुत बड़े अटैचमेंट को कुशलता से कैसे संभालें?**  
+A: Aspose.Email की streaming APIs का उपयोग करके अटैचमेंट डेटा को चंक्स में पढ़ें/लिखें, जिससे पूरी फ़ाइल मेमोरी में लोड नहीं होती।
 
-बहुत बड़े अनुलग्नकों को कुशलतापूर्वक संभालने के लिए, संपूर्ण अनुलग्नक को मेमोरी में लोड करने के बजाय अनुलग्नक डेटा को टुकड़ों में पढ़ने और लिखने के लिए स्ट्रीमिंग तकनीकों का उपयोग करने पर विचार करें। Aspose.Email स्ट्रीमिंग क्षमताएँ प्रदान करता है जो आपको अत्यधिक मेमोरी का उपभोग किए बिना बड़े अनुलग्नकों को संसाधित करने की अनुमति देता है।
+**Q: ईमेल अटैचमेंट के लिए कोई आकार सीमा है क्या?**  
+A: हाँ—अधिकांश प्रदाता अटैचमेंट को 20 MB से 25 MB के बीच सीमित करते हैं। हमेशा अपने सेवा की नीति जांचें और बड़े फ़ाइलों के लिए संपीड़न या चंकिंग पर विचार करें।
 
-### क्या ईमेल अनुलग्नकों के लिए कोई आकार सीमाएं हैं?
+**Q: क्या भेजने से पहले अटैचमेंट को संकुचित किया जा सकता है?**  
+A: बिल्कुल। फ़ाइल (जैसे ZIP) को संकुचित करके अटैचमेंट के आकार को घटाया जा सकता है और डिलीवरी की विश्वसनीयता बढ़ती है।
 
-ईमेल अटैचमेंट के लिए आकार सीमाएँ ईमेल सेवा प्रदाताओं और ईमेल क्लाइंट के आधार पर अलग-अलग हो सकती हैं। डिलीवरी संबंधी समस्याओं से बचने के लिए अपने ईमेल सेवा प्रदाता की अटैचमेंट आकार सीमा की जाँच करना और यह सुनिश्चित करना ज़रूरी है कि आपके अटैचमेंट इन सीमाओं का अनुपालन करते हैं।
+**Q: क्या मौजूदा .eml फ़ाइल से अटैचमेंट प्राप्त किए जा सकते हैं?**  
+A: हाँ—`.eml` को `MailMessage.load(...)` से लोड करें और डाउनलोड उदाहरण में दिखाए अनुसार `message.getAttachments()` पर इटररेट करें।
 
-### क्या मैं अनुलग्नकों का आकार कम करने के लिए उन्हें संपीड़ित कर सकता हूँ?
+**Q: उत्पादन में Aspose.Email उपयोग करने के लिए लाइसेंस चाहिए क्या?**  
+A: उत्पादन परिनियोजन के लिए एक व्यावसायिक लाइसेंस आवश्यक है; मूल्यांकन के लिए एक मुफ्त ट्रायल उपलब्ध है।
 
-हां, आप भेजने से पहले अनुलग्नकों का आकार कम करने के लिए उन्हें संपीड़ित कर सकते हैं। Aspose.Email अनुलग्नकों को प्रोग्रामेटिक रूप से संपीड़ित और विघटित करने की सुविधाएँ प्रदान करता है। आप अपने ईमेल अनुलग्नकों के आकार को अनुकूलित करने के लिए इसे लागू कर सकते हैं।
+## निष्कर्ष
+
+बड़े ईमेल अटैचमेंट को कुशलता से प्रबंधित करना विश्वसनीय संचार के लिए आवश्यक है। ऊपर बताए गए चरणों—**create email with attachment**, **save email with attachment**, **attachment size limits email** का सम्मान, और **download email attachment java**—का पालन करके आप मजबूत जावा अनुप्रयोग बना सकते हैं जो बड़े फ़ाइलों को बिना किसी रुकावट के संभालते हैं। Aspose.Email की अतिरिक्त सुविधाओं जैसे अटैचमेंट स्ट्रीमिंग, MIME मैनिपुलेशन, और सर्वर‑साइड प्रोसेसिंग का अन्वेषण करें ताकि अपने ईमेल वर्कफ़्लो को और बेहतर बनाया जा सके।
+
+---
+
+**अंतिम अपडेट:** 2025-12-05  
+**परीक्षण किया गया:** Aspose.Email for Java 24.12 (latest release)  
+**लेखक:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

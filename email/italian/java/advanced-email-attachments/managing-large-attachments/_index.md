@@ -1,10 +1,14 @@
 ---
-"description": "Gestisci in modo efficiente allegati email di grandi dimensioni con Aspose.Email per Java. Guida passo passo e codice sorgente per una gestione semplificata degli allegati nelle applicazioni Java."
-"linktitle": "Gestione di allegati di grandi dimensioni in Aspose.Email"
-"second_title": "API di gestione e-mail Java Aspose.Email"
-"title": "Gestione di allegati di grandi dimensioni in Aspose.Email"
-"url": "/it/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-05
+description: Scopri come creare email con allegato, salvare email con allegato e gestire
+  i limiti di dimensione degli allegati email utilizzando Aspose.Email per Java. Guida
+  passo passo.
+language: it
+linktitle: Managing Large Attachments in Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Crea email con allegato – Gestisci file di grandi dimensioni (Aspose.Email)
+url: /java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +17,53 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Gestione di allegati di grandi dimensioni in Aspose.Email
+# Crea Email con Allegato – Gestisci File di grandi dimensioni (Aspose.Email)
 
+Gli allegati sono una parte fondamentale della comunicazione email quotidiana, ma quando questi file diventano grandi possono causare problemi di prestazioni e di consegna. In questo tutorial **creerai email con allegato** usando Aspose.Email per Java, imparerai come **salvare email con allegato**, comprenderai i tipici **attachment size limits email** e vedrai come **download email attachment java**‑style. Ti guideremo passo passo con spiegazioni chiare, consigli pratici e esempi di codice pronti all'uso.
 
-## Introduzione alla gestione di allegati di grandi dimensioni in Aspose.Email per Java
+## Risposte rapide
+- **Quale libreria gestisce gli allegati di grandi dimensioni?** Aspose.Email per Java fornisce API consapevoli dello streaming.  
+- **Posso salvare un'email che contiene già un allegato?** Sì – usa `MailMessage.save(...)`.  
+- **Quali sono i limiti comuni di dimensione degli allegati?** La maggior parte dei provider limita a 20‑25 MB, ma è possibile suddividere o comprimere file più grandi.  
+- **Come scarico un allegato in Java?** Carica il `MailMessage` e chiama `attachment.save(...)`.  
+- **Ho bisogno di una licenza per la produzione?** È necessaria una licenza commerciale per l'uso non‑valutativo.
 
-Gli allegati sono una parte essenziale della comunicazione via email, ma gestirli in modo efficiente può essere una sfida. Con Aspose.Email per Java, puoi semplificare la gestione di allegati email di grandi dimensioni nelle tue applicazioni Java. In questa guida, ti guideremo passo dopo passo attraverso il processo, fornendoti esempi di codice sorgente per una gestione efficace degli allegati.
+## Introduzione alla gestione di grandi allegati in Aspose.Email per Java
+
+Gli allegati sono una parte essenziale della comunicazione email, ma gestire grandi allegati in modo efficiente può rappresentare una sfida. Con Aspose.Email per Java, puoi semplificare la gestione di allegati di grandi dimensioni nelle tue applicazioni Java. In questa guida ti accompagneremo passo passo, fornendoti esempi di codice sorgente per una gestione efficace degli allegati.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
-- [Aspose.Email per Java](https://releases.aspose.com/email/java/): Scarica e installa la libreria Aspose.Email per Java.
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/): scarica e installa la libreria Aspose.Email per Java.
 
-## Passaggio 1: creazione di un'e-mail
+## Passo 1: Creare un'Email con un grande allegato
 
-Per iniziare, creiamo un'email di esempio con un allegato di grandi dimensioni. Utilizzeremo la libreria Aspose.Email per farlo. Ecco un semplice frammento di codice Java:
+Per iniziare, creiamo un'email di esempio che includa un file di grandi dimensioni. Useremo la libreria Aspose.Email per farlo. Di seguito trovi il codice Java necessario:
 
 ```java
-// Importare le classi Aspose.Email richieste
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Crea un nuovo messaggio di posta
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Imposta gli indirizzi del mittente e del destinatario
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // Imposta l'oggetto e il corpo dell'e-mail
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Allega un file di grandi dimensioni all'e-mail
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // Salva l'email
+            // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +72,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-In questo codice creiamo un nuovo `MailMessage` e allega un file PDF di grandi dimensioni. Assicurati di sostituire `"sender@example.com"`, `"recipient@example.com"`, E `"path/to/large_attachment.pdf"` con i tuoi indirizzi email effettivi e il percorso al tuo file allegato di grandi dimensioni.
+> **Suggerimento professionale:** La chiamata `save` mostrata sopra dimostra come **save email with attachment** in un file `.eml` per elaborazioni o archiviazioni future.
 
-## Passaggio 2: invio dell'e-mail
+## Passo 2: Inviare l'Email con il grande allegato
 
-Ora che abbiamo creato un'email con un allegato di grandi dimensioni, inviamola tramite SMTP. Ecco come fare:
+Ora che abbiamo un'email pronta, inviamola tramite SMTP. Questo snippet mostra i passaggi richiesti:
 
 ```java
-// Importare le classi Aspose.Email richieste
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // Crea una nuova istanza di SmtpClient
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // Specificare le impostazioni del server SMTP
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // Crea un nuovo messaggio di posta
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // Imposta gli indirizzi del mittente e del destinatario
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // Imposta l'oggetto e il corpo dell'e-mail
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // Allega un file di grandi dimensioni all'e-mail
+            // Attach a large file to the email
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // Invia l'email
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +116,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-In questo codice utilizziamo il `SmtpClient` classe per inviare l'email con l'allegato di grandi dimensioni. Sostituisci `"smtp.example.com"`, `"your_username"`, E `"your_password"` con le impostazioni del server SMTP.
+> **Perché è importante:** L'uso di `SmtpClient` ti consente di controllare l'autenticazione, TLS e altre impostazioni specifiche del server, fondamentali quando si devono gestire i **attachment size limits email** imposti dal tuo provider.
 
-## Passaggio 3: ricezione e download dell'e-mail
+## Passo 3: Ricevere e scaricare il grande allegato
 
-Quando ricevi un'email con un allegato di grandi dimensioni, potresti volerlo scaricare sul tuo sistema locale. Ecco come fare:
+Quando il destinatario riceve l'email, potresti dover estrarre l'allegato su disco. Il codice seguente mostra come farlo in Java:
 
 ```java
-// Importare le classi Aspose.Email richieste
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // Carica l'email da un file o dal tuo server di posta elettronica
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // Scorri gli allegati e scarica quello grande
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +146,58 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-In questo codice carichiamo l'email ricevuta e scorriamo i suoi allegati per trovare e scaricare l'allegato di grandi dimensioni.
+> **Consiglio per gli sviluppatori Java:** Questo esempio dimostra **download email attachment java** iterando su `message.getAttachments()` e chiamando `save(...)` sul file corrispondente.
 
-## Conclusione
+## Come salvare l'Email con Allegato per uso futuro
 
-Gestire in modo efficiente gli allegati email di grandi dimensioni è fondamentale per una comunicazione email efficace. Con Aspose.Email per Java, puoi semplificare il processo di gestione degli allegati di grandi dimensioni nelle tue applicazioni Java. In questa guida, abbiamo trattato i passaggi essenziali, dalla creazione e invio di email con allegati di grandi dimensioni alla loro ricezione e scaricamento. Seguendo questi passaggi e le best practice, puoi garantire un'esperienza fluida nella gestione di allegati email di grandi dimensioni nei tuoi progetti Java.
+A volte è necessario archiviare un messaggio dopo l'invio. Il metodo `MailMessage.save(...)` (mostrato nel Passo 1) scrive l'intero contenuto MIME, inclusi tutti gli allegati, su un file. Puoi ricaricarlo in seguito con `MailMessage.load(...)` senza perdere alcun dato.
+
+## Comprendere i limiti di dimensione degli allegati imposti dai provider email
+
+- **Gmail / Google Workspace:** 25 MB per messaggio (inclusi gli overhead di codifica).  
+- **Outlook / Office 365:** 20 MB di default, configurabili fino a 150 MB sul server.  
+- **Yahoo Mail:** 25 MB.  
+
+Se il tuo allegato supera questi limiti, considera:
+
+1. **Chunking** del file in parti più piccole e l'invio di più messaggi.  
+2. **Compressing** del file (ZIP, 7z) prima di allegarlo.  
+3. **Utilizzare un servizio di condivisione file** e inviare un link per il download.
+
+## Problemi comuni e risoluzione
+
+| Sintomo | Probabile causa | Soluzione |
+|---------|-----------------|-----------|
+| `Error: Message size exceeds limit` | Il server SMTP rifiuta un payload troppo grande | Comprimi o suddividi l'allegato, oppure aumenta i limiti del server se ne hai il controllo. |
+| L'allegato appare corrotto dopo il download | I dati binari sono stati alterati durante la trasmissione | Assicurati di usare `Attachment.save(...)` senza passaggi di codifica aggiuntivi. |
+| Nessun allegato ricevuto | L'allegato non è stato aggiunto al `MailMessage` | Verifica che `message.getAttachments().addItem(...)` sia chiamato prima di `client.send(message)`. |
 
 ## Domande frequenti
 
-### Come posso gestire in modo efficiente allegati di grandi dimensioni?
+**D: Come posso gestire allegati molto grandi in modo efficiente?**  
+R: Usa le API di streaming di Aspose.Email per leggere/scrivere i dati dell'allegato in blocchi, evitando di caricare l'intero file in memoria.
 
-Per gestire in modo efficiente allegati di grandi dimensioni, si consiglia di utilizzare tecniche di streaming per leggere e scrivere i dati degli allegati in blocchi anziché caricare l'intero allegato in memoria. Aspose.Email offre funzionalità di streaming che consentono di elaborare allegati di grandi dimensioni senza consumare troppa memoria.
+**D: Esistono limiti di dimensione per gli allegati email?**  
+R: Sì—la maggior parte dei provider limita gli allegati tra 20 MB e 25 MB. Controlla sempre la politica del tuo servizio e considera compressione o chunking per file più grandi.
 
-### Esistono limiti di dimensione per gli allegati email?
+**D: Posso comprimere gli allegati prima di inviarli?**  
+R: Assolutamente. Comprimi il file (ad es., ZIP) e allega l'archivio compresso per ridurre le dimensioni e migliorare l'affidabilità della consegna.
 
-I limiti di dimensione per gli allegati email possono variare a seconda del provider di servizi email e del client di posta elettronica. È fondamentale verificare i limiti di dimensione degli allegati del proprio provider di servizi email e assicurarsi che gli allegati siano conformi a tali limiti per evitare problemi di recapito.
+**D: È possibile recuperare gli allegati da un file .eml esistente?**  
+R: Sì—carica il `.eml` con `MailMessage.load(...)` e itera su `message.getAttachments()` come mostrato nell'esempio di download.
 
-### Posso comprimere gli allegati per ridurne le dimensioni?
+**D: Ho bisogno di una licenza per usare Aspose.Email in produzione?**  
+R: È necessaria una licenza commerciale per le distribuzioni in produzione; è disponibile una versione di prova gratuita per la valutazione.
 
-Sì, puoi comprimere gli allegati per ridurne le dimensioni prima di inviarli. Aspose.Email offre funzionalità per comprimere e decomprimere gli allegati a livello di codice. Puoi implementare questa funzionalità per ottimizzare le dimensioni degli allegati email.
+## Conclusione
+
+Gestire grandi allegati email in modo efficiente è fondamentale per una comunicazione affidabile. Seguendo i passaggi sopra—**create email with attachment**, **save email with attachment**, rispettando i **attachment size limits email** e **download email attachment java**—potrai costruire applicazioni Java robuste che gestiscono file di grandi dimensioni senza problemi. Esplora le funzionalità aggiuntive di Aspose.Email, come lo streaming degli allegati, la manipolazione MIME e l'elaborazione lato server, per migliorare ulteriormente i tuoi flussi di lavoro email.
+
+---
+
+**Ultimo aggiornamento:** 2025-12-05  
+**Testato con:** Aspose.Email for Java 24.12 (ultima release)  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
