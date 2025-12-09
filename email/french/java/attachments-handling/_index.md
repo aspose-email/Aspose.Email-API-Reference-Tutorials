@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Apprenez à extraire les pièces jointes d’e-mails avec Aspose.Email pour
   Java, ainsi que des conseils pour envoyer des e-mails avec pièces jointes, analyser
   des fichiers MSG et charger des pièces jointes PST.
-language: fr
 title: Extraire les pièces jointes d'e‑mails avec Aspose.Email pour Java
-url: /java/attachments-handling/
+url: /fr/java/attachments-handling/
 weight: 4
 ---
 

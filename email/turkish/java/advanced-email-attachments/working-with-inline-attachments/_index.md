@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Aspose.Email for Java kullanarak gömülü resimli e-posta göndermeyi öğrenin.
   Bu kılavuz, e-postaya resim eklemeyi ve satır içi eklerle HTML e-posta oluşturmayı
   gösterir.
-language: tr
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java ile Gömülü Görsel İçeren E-posta Nasıl Gönderilir
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /tr/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

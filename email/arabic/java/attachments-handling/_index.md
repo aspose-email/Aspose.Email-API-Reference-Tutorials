@@ -3,9 +3,8 @@ date: 2025-12-01
 description: تعلم كيفية استخراج مرفقات البريد الإلكتروني باستخدام Aspose.Email للـ
   Java، بالإضافة إلى نصائح حول إرسال البريد الإلكتروني مع المرفقات، وتحليل ملفات MSG،
   وتحميل مرفقات PST.
-language: ar
 title: استخراج مرفقات البريد الإلكتروني باستخدام Aspose.Email للـ Java
-url: /java/attachments-handling/
+url: /ar/java/attachments-handling/
 weight: 4
 ---
 

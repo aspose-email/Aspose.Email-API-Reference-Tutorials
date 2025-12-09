@@ -1,10 +1,9 @@
 ---
 date: 2025-11-30
 description: Aspose.Email for Java を使用して、カレンダー招待の作成、Java でのメール送信、EML を MSG に変換、デジタル署名付きメールの追加方法を学びましょう。
-language: ja
 linktitle: Aspose.Email for Java Tutorials
 title: Aspose.Email for Java を使用したカレンダー招待の作成 – 完全チュートリアル
-url: /java/
+url: /ja/java/
 weight: 10
 ---
 

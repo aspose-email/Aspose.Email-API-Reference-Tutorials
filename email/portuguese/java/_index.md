@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Aprenda como criar convite de calendário, enviar e‑mail em Java, converter
   eml para msg e adicionar assinatura digital ao e‑mail usando Aspose.Email para Java.
-language: pt
 linktitle: Aspose.Email for Java Tutorials
 title: Criar Convite de Calendário com Aspose.Email para Java – Tutorial Completo
-url: /java/
+url: /pt/java/
 weight: 10
 ---
 

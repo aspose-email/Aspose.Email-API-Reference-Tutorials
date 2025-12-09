@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Erfahren Sie, wie Sie E‑Mail‑Anhänge mit Aspose.Email für Java extrahieren,
   sowie Tipps zum Senden von E‑Mails mit Anhängen, zum Parsen von MSG‑Dateien und
   zum Laden von PST‑Anhängen.
-language: de
 title: E-Mail-Anhänge mit Aspose.Email für Java extrahieren
-url: /java/attachments-handling/
+url: /de/java/attachments-handling/
 weight: 4
 ---
 

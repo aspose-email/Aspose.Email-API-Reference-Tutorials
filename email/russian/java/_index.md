@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Узнайте, как создать приглашение в календаре, отправить электронную почту
   на Java, конвертировать EML в MSG и добавить цифровую подпись к письму с помощью
   Aspose.Email для Java.
-language: ru
 linktitle: Aspose.Email for Java Tutorials
 title: Создание приглашения в календаре с Aspose.Email для Java – Полный учебник
-url: /java/
+url: /ru/java/
 weight: 10
 ---
 

@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Ismerje meg, hogyan hozhat létre naptári eseményt az Aspose.Email .NET
   és Java verziójával, és fedezze fel, hogyan konvertálhat PST-t EML-re, ellenőrizheti
   az e‑mail címeket, valamint konfigurálhatja az SMTP szervereket.
-language: hu
 linktitle: Aspose.Email Tutorials
 title: Naptári esemény létrehozása az Aspose.Email .NET és Java segítségével
-url: /
+url: /hu/
 weight: 10
 ---
 

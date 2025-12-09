@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: เรียนรู้วิธีสร้างคำเชิญปฏิทิน, ส่งอีเมลด้วย Java, แปลงไฟล์ eml เป็น msg,
   และเพิ่มลายเซ็นดิจิทัลให้กับอีเมลโดยใช้ Aspose.Email สำหรับ Java.
-language: th
 linktitle: Aspose.Email for Java Tutorials
 title: สร้างคำเชิญปฏิทินด้วย Aspose.Email สำหรับ Java – บทเรียนเต็ม
-url: /java/
+url: /th/java/
 weight: 10
 ---
 

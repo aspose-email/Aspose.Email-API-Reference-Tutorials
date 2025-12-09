@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Naučte se, jak odesílat e‑mail s vloženým obrázkem pomocí Aspose.Email
   pro Javu. Tento průvodce ukazuje, jak vložit obrázky do e‑mailu a vytvořit HTML
   e‑mail v Javě s vloženými přílohami.
-language: cs
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Jak odeslat e‑mail s vloženým obrázkem pomocí Aspose.Email pro Javu
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /cs/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

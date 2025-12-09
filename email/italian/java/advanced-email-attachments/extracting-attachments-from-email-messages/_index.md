@@ -3,12 +3,11 @@ date: 2025-11-30
 description: Scopri come estrarre gli allegati delle email ed estrarre gli allegati
   dai file msg con Aspose.Email per Java. Questo tutorial di Aspose Email ti guida
   passo passo.
-language: it
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Come estrarre gli allegati email dai messaggi di posta elettronica utilizzando
   Aspose.Email per Java
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /it/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

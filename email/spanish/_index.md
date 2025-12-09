@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aprende cómo crear una cita de calendario usando Aspose.Email para .NET
   y Java, y descubre cómo convertir PST a EML, validar direcciones de correo electrónico
   y configurar servidores SMTP.
-language: es
 linktitle: Aspose.Email Tutorials
 title: Crear cita de calendario con Aspose.Email .NET y Java
-url: /
+url: /es/
 weight: 10
 ---
 

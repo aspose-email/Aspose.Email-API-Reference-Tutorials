@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aspose.Email for .NET और Java का उपयोग करके कैलेंडर अपॉइंटमेंट बनाना
   सीखें, और PST को EML में बदलना, ईमेल पते सत्यापित करना तथा SMTP सर्वर कॉन्फ़िगर
   करना कैसे किया जाता है, जानें।
-language: hi
 linktitle: Aspose.Email Tutorials
 title: Aspose.Email .NET और Java के साथ कैलेंडर अपॉइंटमेंट बनाएं
-url: /
+url: /hi/
 weight: 10
 ---
 

@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Pelajari cara membuat janji kalender menggunakan Aspose.Email untuk .NET
   dan Java, serta temukan cara mengonversi PST ke EML, memvalidasi alamat email, dan
   mengonfigurasi server SMTP.
-language: id
 linktitle: Aspose.Email Tutorials
 title: Buat Janji Kalender dengan Aspose.Email .NET & Java
-url: /
+url: /id/
 weight: 10
 ---
 

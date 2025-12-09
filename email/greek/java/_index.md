@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Μάθετε πώς να δημιουργείτε πρόσκληση ημερολογίου, να στέλνετε email με
   Java, να μετατρέπετε eml σε msg και να προσθέτετε ψηφιακή υπογραφή σε email χρησιμοποιώντας
   το Aspose.Email για Java.
-language: el
 linktitle: Aspose.Email for Java Tutorials
 title: Δημιουργία πρόσκλησης ημερολογίου με το Aspose.Email για Java – Πλήρης οδηγός
-url: /java/
+url: /el/java/
 weight: 10
 ---
 

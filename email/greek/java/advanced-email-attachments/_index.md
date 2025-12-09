@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Μάθετε πώς να εξάγετε συνημμένα από email χρησιμοποιώντας το Aspose.Email
   για Java. Κατακτήστε την προχωρημένη διαχείριση συνημμένων, συμπεριλαμβανομένου
   του πώς να ενσωματώνετε εικόνες ως συνημμένα.
-language: el
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Εξαγωγή συνημμένων από email χρησιμοποιώντας το Aspose.Email για Java
-url: /java/advanced-email-attachments/
+url: /el/java/advanced-email-attachments/
 weight: 13
 ---
 

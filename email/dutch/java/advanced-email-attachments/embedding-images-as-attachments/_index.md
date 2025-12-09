@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Leer hoe je een afbeelding aan een e‑mail kunt toevoegen met Aspose.Email
   voor Java, een HTML‑e‑mail met ingesloten afbeelding kunt verzenden en de afbeeldingsgrootte
   voor e‑mail kunt optimaliseren.
-language: nl
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Hoe een afbeelding aan een e‑mail toevoegen met Aspose.Email voor Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /nl/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

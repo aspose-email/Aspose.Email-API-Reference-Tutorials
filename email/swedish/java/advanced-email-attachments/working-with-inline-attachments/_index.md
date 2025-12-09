@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Lär dig hur du skickar e‑post med inbäddad bild med Aspose.Email för
   Java. Den här guiden visar hur du bäddar in bilder i e‑post och skapar HTML‑e‑post
   i Java med inline‑bilagor.
-language: sv
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Hur man skickar e‑post med inbäddad bild med Aspose.Email för Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /sv/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

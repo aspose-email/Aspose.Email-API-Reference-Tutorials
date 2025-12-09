@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Μάθετε πώς να δημιουργείτε ραντεβού ημερολογίου χρησιμοποιώντας το Aspose.Email
   για .NET και Java, και ανακαλύψτε πώς να μετατρέπετε PST σε EML, να επικυρώνετε
   διευθύνσεις email και να διαμορφώνετε διακομιστές SMTP.
-language: el
 linktitle: Aspose.Email Tutorials
 title: Δημιουργία ραντεβού ημερολογίου με Aspose.Email .NET & Java
-url: /
+url: /el/
 weight: 10
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Aspose.Email for Java का उपयोग करके ईमेल में छवि संलग्न करना, एम्बेडेड
   छवि के साथ HTML ईमेल भेजना, और ईमेल के लिए छवि आकार को अनुकूलित करना सीखें।
-language: hi
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java के साथ ईमेल में छवि कैसे संलग्न करें
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /hi/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

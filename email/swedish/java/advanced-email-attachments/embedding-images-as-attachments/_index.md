@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Lär dig hur du bifogar en bild till e‑post med Aspose.Email för Java,
   skickar HTML‑mail med inbäddad bild och optimerar bildstorleken för e‑post.
-language: sv
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Hur man bifogar en bild till e‑post med Aspose.Email för Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /sv/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

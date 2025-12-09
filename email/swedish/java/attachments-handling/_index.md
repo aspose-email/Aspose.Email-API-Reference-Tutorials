@@ -2,9 +2,8 @@
 date: 2025-12-01
 description: Lär dig hur du extraherar e‑postbilagor med Aspose.Email för Java, samt
   tips om att skicka e‑post med bilagor, analysera MSG‑filer och ladda PST‑bilagor.
-language: sv
 title: Extrahera e‑postbilagor med Aspose.Email för Java
-url: /java/attachments-handling/
+url: /sv/java/attachments-handling/
 weight: 4
 ---
 

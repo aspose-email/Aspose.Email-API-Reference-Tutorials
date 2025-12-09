@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: 学习如何使用 Aspose.Email for Java 发送带嵌入图像的电子邮件。本指南展示了如何在电子邮件中嵌入图像以及使用内联附件创建
   HTML 邮件（Java）。
-language: zh
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: 使用 Aspose.Email for Java 发送带嵌入图像的电子邮件
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /zh/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aspose.Email for .NET ve Java kullanarak takvim randevusu oluşturmayı
   öğrenin ve PST'yi EML'ye dönüştürmeyi, e-posta adreslerini doğrulamayı ve SMTP sunucularını
   yapılandırmayı keşfedin.
-language: tr
 linktitle: Aspose.Email Tutorials
 title: Aspose.Email .NET ve Java ile Takvim Randevusu Oluştur
-url: /
+url: /tr/
 weight: 10
 ---
 

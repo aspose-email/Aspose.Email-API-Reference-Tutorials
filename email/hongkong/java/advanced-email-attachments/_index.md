@@ -1,11 +1,10 @@
 ---
 date: 2025-12-01
 description: 學習如何使用 Aspose.Email for Java 從電郵中提取附件。掌握高級附件處理，包括如何將圖像嵌入為附件。
-language: zh-hant
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: 使用 Aspose.Email for Java 從電郵中提取附件
-url: /java/advanced-email-attachments/
+url: /zh-hant/java/advanced-email-attachments/
 weight: 13
 ---
 

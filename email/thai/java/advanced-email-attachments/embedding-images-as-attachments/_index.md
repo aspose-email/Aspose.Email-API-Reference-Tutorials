@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: เรียนรู้วิธีแนบรูปภาพไปยังอีเมลโดยใช้ Aspose.Email สำหรับ Java, ส่งอีเมล
   HTML พร้อมรูปภาพฝังในเนื้อหา, และปรับขนาดรูปภาพให้เหมาะกับอีเมล.
-language: th
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: วิธีแนบรูปภาพไปยังอีเมลด้วย Aspose.Email สำหรับ Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /th/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

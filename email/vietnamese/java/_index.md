@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Tìm hiểu cách tạo lời mời lịch, gửi email bằng Java, chuyển đổi eml sang
   msg và thêm chữ ký số cho email bằng Aspose.Email cho Java.
-language: vi
 linktitle: Aspose.Email for Java Tutorials
 title: Tạo lời mời lịch với Aspose.Email cho Java – Hướng dẫn đầy đủ
-url: /java/
+url: /vi/java/
 weight: 10
 ---
 

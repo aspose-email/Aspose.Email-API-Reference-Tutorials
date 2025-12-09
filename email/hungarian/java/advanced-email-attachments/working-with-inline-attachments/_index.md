@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Tanulja meg, hogyan küldjön e‑mailt beágyazott képpel az Aspose.Email
   for Java használatával. Ez az útmutató bemutatja, hogyan ágyazzon be képeket az
   e‑mailbe, és hogyan hozzon létre HTML e‑mailt Java‑ban beágyazott mellékletekkel.
-language: hu
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Hogyan küldjünk e‑mailt beágyazott képpel az Aspose.Email for Java használatával
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /hu/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

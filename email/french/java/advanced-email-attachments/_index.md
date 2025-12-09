@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Apprenez à extraire les pièces jointes des e‑mails à l’aide d’Aspose.Email
   pour Java. Maîtrisez la gestion avancée des pièces jointes, y compris l’insertion
   d’images en tant que pièces jointes.
-language: fr
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Extraire les pièces jointes d'un e‑mail avec Aspose.Email pour Java
-url: /java/advanced-email-attachments/
+url: /fr/java/advanced-email-attachments/
 weight: 13
 ---
 

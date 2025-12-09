@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: เรียนรู้วิธีดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email สำหรับ Java. เชี่ยวชาญการจัดการไฟล์แนบขั้นสูง
   รวมถึงวิธีฝังรูปภาพเป็นไฟล์แนบ.
-language: th
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: ดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email สำหรับ Java
-url: /java/advanced-email-attachments/
+url: /th/java/advanced-email-attachments/
 weight: 13
 ---
 

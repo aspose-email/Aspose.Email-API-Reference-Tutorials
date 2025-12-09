@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Pelajari cara membuat undangan kalender, mengirim email Java, mengonversi
   EML ke MSG, dan menambahkan tanda tangan digital pada email menggunakan Aspose.Email
   untuk Java.
-language: id
 linktitle: Aspose.Email for Java Tutorials
 title: Buat Undangan Kalender dengan Aspose.Email untuk Java – Tutorial Lengkap
-url: /java/
+url: /id/java/
 weight: 10
 ---
 

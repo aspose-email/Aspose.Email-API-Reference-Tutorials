@@ -2,12 +2,11 @@
 date: 2025-11-30
 description: Lär dig hur du extraherar e‑postbilagor och extraherar bilagor från msg‑filer
   med Aspose.Email för Java. Denna Aspose‑e‑posthandledning guidar dig genom stegen.
-language: sv
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Hur man extraherar e‑postbilagor från e‑postmeddelanden med Aspose.Email för
   Java
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /sv/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

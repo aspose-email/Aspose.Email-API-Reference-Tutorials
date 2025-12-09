@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Dowiedz się, jak wyodrębniać załączniki e‑mail przy użyciu Aspose.Email
   dla Javy, a także poznaj wskazówki dotyczące wysyłania e‑maili z załącznikami, parsowania
   plików MSG oraz ładowania załączników PST.
-language: pl
 title: Wyodrębnianie załączników e‑mail przy użyciu Aspose.Email dla Javy
-url: /java/attachments-handling/
+url: /pl/java/attachments-handling/
 weight: 4
 ---
 

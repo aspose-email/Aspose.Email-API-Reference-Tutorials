@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Узнайте, как извлекать вложения из электронных писем с помощью Aspose.Email
   для Java, а также получите советы по отправке писем с вложениями, разбору файлов
   MSG и загрузке вложений PST.
-language: ru
 title: Извлечение вложений электронной почты с помощью Aspose.Email для Java
-url: /java/attachments-handling/
+url: /ru/java/attachments-handling/
 weight: 4
 ---
 

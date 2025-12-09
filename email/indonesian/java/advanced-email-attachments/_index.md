@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Pelajari cara mengekstrak lampiran dari email menggunakan Aspose.Email
   untuk Java. Kuasai penanganan lampiran lanjutan, termasuk cara menyematkan gambar
   sebagai lampiran.
-language: id
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Ekstrak lampiran dari email menggunakan Aspose.Email untuk Java
-url: /java/advanced-email-attachments/
+url: /id/java/advanced-email-attachments/
 weight: 13
 ---
 

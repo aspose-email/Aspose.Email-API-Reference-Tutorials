@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Leer hoe u bijlagen uit e‑mail kunt extraheren met Aspose.Email voor
   Java. Beheers geavanceerde bijlageverwerking, inclusief hoe u afbeeldingen als bijlagen
   kunt insluiten.
-language: nl
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Bijlagen uit e‑mail extraheren met Aspose.Email voor Java
-url: /java/advanced-email-attachments/
+url: /nl/java/advanced-email-attachments/
 weight: 13
 ---
 

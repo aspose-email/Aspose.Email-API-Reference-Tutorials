@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Tanulja meg, hogyan lehet e‑mail mellékleteket kinyerni az Aspose.Email
   for Java segítségével, valamint tippeket a mellékletekkel rendelkező e‑mail küldéséhez,
   MSG fájlok feldolgozásához és PST mellékletek betöltéséhez.
-language: hu
 title: E-mail mellékletek kinyerése az Aspose.Email for Java segítségével
-url: /java/attachments-handling/
+url: /hu/java/attachments-handling/
 weight: 4
 ---
 

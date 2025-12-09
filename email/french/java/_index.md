@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Apprenez à créer une invitation de calendrier, envoyer un e‑mail Java,
   convertir un fichier eml en msg et ajouter une signature numérique à un e‑mail en
   utilisant Aspose.Email pour Java.
-language: fr
 linktitle: Aspose.Email for Java Tutorials
 title: Créer une invitation de calendrier avec Aspose.Email pour Java – Tutoriel complet
-url: /java/
+url: /fr/java/
 weight: 10
 ---
 

@@ -3,12 +3,11 @@ date: 2025-11-30
 description: Tanulja meg, hogyan lehet e‑mail mellékleteket kinyerni, és hogyan lehet
   mellékleteket kinyerni msg fájlokból az Aspose.Email for Java segítségével. Ez az
   Aspose e‑mail oktatóanyag végigvezeti a lépéseken.
-language: hu
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Hogyan lehet e‑mail mellékleteket kinyerni e‑mail üzenetekből az Aspose.Email
   for Java használatával
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /hu/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

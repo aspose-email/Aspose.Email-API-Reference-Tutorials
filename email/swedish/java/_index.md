@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Lär dig hur du skapar kalenderinbjudan, skickar e‑post med Java, konverterar
   eml till msg och lägger till digital signatur i e‑post med Aspose.Email för Java.
-language: sv
 linktitle: Aspose.Email for Java Tutorials
 title: Skapa kalenderinbjudan med Aspose.Email för Java – Fullständig handledning
-url: /java/
+url: /sv/java/
 weight: 10
 ---
 

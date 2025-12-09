@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Leer hoe u een agenda-afspraak maakt met Aspose.Email voor .NET en Java,
   en ontdek hoe u PST naar EML converteert, e‑mailadressen valideert en SMTP-servers
   configureert.
-language: nl
 linktitle: Aspose.Email Tutorials
 title: Maak een agenda-afspraak met Aspose.Email .NET & Java
-url: /
+url: /nl/
 weight: 10
 ---
 

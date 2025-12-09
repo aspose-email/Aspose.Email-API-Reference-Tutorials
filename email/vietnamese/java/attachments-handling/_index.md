@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Tìm hiểu cách trích xuất tệp đính kèm email bằng Aspose.Email cho Java,
   cùng các mẹo về việc gửi email có đính kèm, phân tích tệp MSG và tải tệp đính kèm
   PST.
-language: vi
 title: Trích xuất tệp đính kèm email bằng Aspose.Email cho Java
-url: /java/attachments-handling/
+url: /vi/java/attachments-handling/
 weight: 4
 ---
 

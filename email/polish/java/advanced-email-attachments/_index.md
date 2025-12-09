@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Dowiedz się, jak wyodrębniać załączniki z wiadomości e‑mail przy użyciu
   Aspose.Email dla Javy. Opanuj zaawansowane zarządzanie załącznikami, w tym sposób
   osadzania obrazów jako załączników.
-language: pl
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Wyodrębnianie załączników z e‑maila przy użyciu Aspose.Email dla Javy
-url: /java/advanced-email-attachments/
+url: /pl/java/advanced-email-attachments/
 weight: 13
 ---
 

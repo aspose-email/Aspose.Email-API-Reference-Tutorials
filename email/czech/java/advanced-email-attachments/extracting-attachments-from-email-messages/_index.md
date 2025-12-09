@@ -3,12 +3,11 @@ date: 2025-11-30
 description: Naučte se, jak extrahovat přílohy e‑mailů a extrahovat přílohy ze souborů
   MSG pomocí Aspose.Email pro Javu. Tento tutoriál Aspose Email vás provede jednotlivými
   kroky.
-language: cs
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Jak extrahovat přílohy e‑mailů z e‑mailových zpráv pomocí Aspose.Email pro
   Javu
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /cs/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

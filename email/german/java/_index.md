@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Erfahren Sie, wie Sie eine Kalendereinladung erstellen, E‑Mails mit Java
   senden, EML in MSG konvertieren und E‑Mails mit digitaler Signatur mithilfe von
   Aspose.Email für Java hinzufügen.
-language: de
 linktitle: Aspose.Email for Java Tutorials
 title: Kalendereinladung mit Aspose.Email für Java erstellen – Vollständiges Tutorial
-url: /java/
+url: /de/java/
 weight: 10
 ---
 

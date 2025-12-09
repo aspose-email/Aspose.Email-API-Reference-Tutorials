@@ -3,12 +3,11 @@ date: 2025-11-30
 description: Học cách trích xuất tệp đính kèm email và trích xuất tệp đính kèm từ
   các tệp msg bằng Aspose.Email cho Java. Hướng dẫn email Aspose này sẽ hướng dẫn
   bạn qua các bước.
-language: vi
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Cách trích xuất tệp đính kèm email từ các tin nhắn email bằng Aspose.Email
   cho Java
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /vi/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

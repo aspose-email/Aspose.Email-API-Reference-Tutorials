@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Naučte se, jak pomocí Aspose.Email pro Javu extrahovat přílohy e‑mailů,
   a také tipy na odesílání e‑mailů s přílohami, parsování souborů MSG a načítání příloh
   PST.
-language: cs
 title: Extrahovat přílohy e‑mailů pomocí Aspose.Email pro Javu
-url: /java/attachments-handling/
+url: /cs/java/attachments-handling/
 weight: 4
 ---
 

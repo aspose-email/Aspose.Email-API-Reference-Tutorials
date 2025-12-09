@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aspose.Email for Java를 사용하여 삽입된 이미지가 포함된 이메일을 보내는 방법을 배웁니다. 이 가이드는 이미지가
   포함된 이메일을 삽입하고 인라인 첨부 파일이 있는 HTML 이메일을 Java로 만드는 방법을 보여줍니다.
-language: ko
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java를 사용하여 임베디드 이미지가 포함된 이메일 보내는 방법
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /ko/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

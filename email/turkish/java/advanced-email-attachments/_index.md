@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Aspose.Email for Java kullanarak e-postadan ekleri nasıl çıkaracağınızı
   öğrenin. Görselleri ek olarak nasıl gömeceğinizi de içeren gelişmiş ek işleme konularında
   uzmanlaşın.
-language: tr
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java kullanarak e-postadan ekleri çıkarma
-url: /java/advanced-email-attachments/
+url: /tr/java/advanced-email-attachments/
 weight: 13
 ---
 

@@ -3,12 +3,11 @@ date: 2025-12-01
 description: Μάθετε πώς να στέλνετε email με ενσωματωμένη εικόνα χρησιμοποιώντας το
   Aspose.Email για Java. Αυτός ο οδηγός δείχνει πώς να ενσωματώνετε εικόνες σε email
   και να δημιουργείτε HTML email σε Java με ενσωματωμένα συνημμένα.
-language: el
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Πώς να στείλετε email με ενσωματωμένη εικόνα χρησιμοποιώντας το Aspose.Email
   για Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /el/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

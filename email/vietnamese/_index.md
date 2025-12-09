@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Học cách tạo cuộc hẹn lịch sử dụng Aspose.Email cho .NET và Java, và
   khám phá cách chuyển đổi PST sang EML, xác thực địa chỉ email và cấu hình máy chủ
   SMTP.
-language: vi
 linktitle: Aspose.Email Tutorials
 title: Tạo cuộc hẹn lịch với Aspose.Email .NET & Java
-url: /
+url: /vi/
 weight: 10
 ---
 

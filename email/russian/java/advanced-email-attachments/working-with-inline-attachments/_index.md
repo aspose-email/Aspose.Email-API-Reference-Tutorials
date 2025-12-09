@@ -3,12 +3,11 @@ date: 2025-12-01
 description: Узнайте, как отправлять электронные письма с вложенными изображениями,
   используя Aspose.Email для Java. Это руководство показывает, как встраивать изображения
   в письма и создавать HTML‑письма в Java с встроенными вложениями.
-language: ru
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Как отправить электронное письмо с вложенным изображением с помощью Aspose.Email
   для Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /ru/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

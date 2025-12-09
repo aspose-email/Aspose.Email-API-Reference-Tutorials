@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Aspose.Email for Java kullanarak takvim daveti oluşturmayı, e-posta göndermeyi,
   eml dosyasını msg'ye dönüştürmeyi ve e-postaya dijital imza eklemeyi öğrenin.
-language: tr
 linktitle: Aspose.Email for Java Tutorials
 title: Aspose.Email for Java ile Takvim Daveti Oluşturma – Tam Kılavuz
-url: /java/
+url: /tr/java/
 weight: 10
 ---
 

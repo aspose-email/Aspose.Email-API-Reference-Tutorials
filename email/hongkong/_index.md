@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: 學習如何使用 Aspose.Email for .NET 與 Java 建立行事曆約會，並了解如何將 PST 轉換為 EML、驗證電郵地址以及設定
   SMTP 伺服器。
-language: zh-hant
 linktitle: Aspose.Email Tutorials
 title: 使用 Aspose.Email .NET 與 Java 建立日曆約會
-url: /
+url: /zh-hant/
 weight: 10
 ---
 

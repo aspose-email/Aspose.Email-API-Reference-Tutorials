@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Naučte se, jak vytvořit pozvánku do kalendáře, odeslat e‑mail v Javě,
   převést eml na msg a přidat digitální podpis e‑mailu pomocí Aspose.Email pro Javu.
-language: cs
 linktitle: Aspose.Email for Java Tutorials
 title: Vytvořte pozvánku do kalendáře pomocí Aspose.Email pro Javu – kompletní návod
-url: /java/
+url: /cs/java/
 weight: 10
 ---
 

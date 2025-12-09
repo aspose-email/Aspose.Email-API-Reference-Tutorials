@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Tanulja meg, hogyan csatoljon képet az e‑mailhez az Aspose.Email for
   Java segítségével, hogyan küldjön HTML‑e‑mailt beágyazott képpel, és hogyan optimalizálja
   a kép méretét az e‑mailhez.
-language: hu
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Hogyan csatoljunk képet e‑mailhez az Aspose.Email for Java segítségével
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /hu/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

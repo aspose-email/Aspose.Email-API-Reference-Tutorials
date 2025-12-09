@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: เรียนรู้วิธีส่งอีเมลพร้อมรูปภาพฝังในเนื้อหาโดยใช้ Aspose.Email สำหรับ
   Java คู่มือนี้แสดงวิธีฝังรูปภาพในอีเมลและสร้างอีเมล HTML ด้วย Java พร้อมแนบไฟล์แบบอินไลน์
-language: th
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: วิธีส่งอีเมลพร้อมภาพฝังในข้อความโดยใช้ Aspose.Email สำหรับ Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /th/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

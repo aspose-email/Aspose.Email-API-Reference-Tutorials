@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Aspose.Email for Java kullanarak e-postaya resim eklemeyi, gömülü resimle
   HTML e-posta göndermeyi ve e-posta için resim boyutunu optimize etmeyi öğrenin.
-language: tr
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java ile E-postaya Resim Ekleme
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /tr/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

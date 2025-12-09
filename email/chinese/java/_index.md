@@ -1,10 +1,9 @@
 ---
 date: 2025-11-30
 description: 了解如何使用 Aspose.Email for Java 创建日历邀请、发送电子邮件、将 eml 转换为 msg，以及添加数字签名电子邮件。
-language: zh
 linktitle: Aspose.Email for Java Tutorials
 title: 使用 Aspose.Email for Java 创建日历邀请 – 完整教程
-url: /java/
+url: /zh/java/
 weight: 10
 ---
 

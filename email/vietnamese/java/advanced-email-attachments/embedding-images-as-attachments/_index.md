@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Tìm hiểu cách đính kèm hình ảnh vào email bằng Aspose.Email cho Java,
   gửi email HTML có hình ảnh nhúng và tối ưu kích thước hình ảnh cho email.
-language: vi
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Cách đính kèm hình ảnh vào email bằng Aspose.Email cho Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /vi/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

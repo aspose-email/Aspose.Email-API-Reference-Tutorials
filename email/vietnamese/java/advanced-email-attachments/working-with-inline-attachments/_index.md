@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Tìm hiểu cách gửi email có hình ảnh nhúng bằng Aspose.Email cho Java.
   Hướng dẫn này chỉ cách nhúng hình ảnh vào email và tạo email HTML trong Java với
   các tệp đính kèm nội tuyến.
-language: vi
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Cách gửi email với hình ảnh nhúng bằng Aspose.Email cho Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /vi/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

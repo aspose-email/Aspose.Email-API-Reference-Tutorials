@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: Aspose.Email for .NET 및 Java를 사용하여 캘린더 약속을 만드는 방법을 배우고, PST를 EML로 변환하고,
   이메일 주소를 검증하며, SMTP 서버를 구성하는 방법을 알아보세요.
-language: ko
 linktitle: Aspose.Email Tutorials
 title: Aspose.Email .NET 및 Java를 사용하여 캘린더 약속 만들기
-url: /
+url: /ko/
 weight: 10
 ---
 

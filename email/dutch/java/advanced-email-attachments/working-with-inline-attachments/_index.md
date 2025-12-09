@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Leer hoe u e‑mail met een ingesloten afbeelding kunt verzenden met Aspose.Email
   voor Java. Deze gids laat zien hoe u afbeeldingen in e‑mail kunt insluiten en een
   HTML‑e‑mail in Java kunt maken met inline‑bijlagen.
-language: nl
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Hoe e-mail met ingesloten afbeelding te verzenden met Aspose.Email voor Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /nl/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Dowiedz się, jak tworzyć zaproszenia kalendarzowe, wysyłać e‑maile w
   Javie, konwertować pliki eml na msg oraz dodawać cyfrowy podpis do e‑maili przy
   użyciu Aspose.Email dla Javy.
-language: pl
 linktitle: Aspose.Email for Java Tutorials
 title: Utwórz zaproszenie kalendarzowe przy użyciu Aspose.Email dla Javy – pełny poradnik
-url: /java/
+url: /pl/java/
 weight: 10
 ---
 

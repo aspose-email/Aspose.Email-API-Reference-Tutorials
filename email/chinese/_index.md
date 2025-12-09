@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: 学习如何使用 Aspose.Email for .NET 和 Java 创建日历约会，并了解如何将 PST 转换为 EML、验证电子邮件地址以及配置
   SMTP 服务器。
-language: zh
 linktitle: Aspose.Email Tutorials
 title: 使用 Aspose.Email .NET 与 Java 创建日历约会
-url: /
+url: /zh/
 weight: 10
 ---
 

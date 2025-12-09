@@ -2,10 +2,9 @@
 date: 2025-11-30
 description: Aspose.Email for Java का उपयोग करके कैलेंडर इनवाइट बनाना, जावा में ईमेल
   भेजना, EML को MSG में बदलना, और डिजिटल सिग्नेचर ईमेल जोड़ना सीखें।
-language: hi
 linktitle: Aspose.Email for Java Tutorials
 title: Aspose.Email for Java के साथ कैलेंडर निमंत्रण बनाएं – पूर्ण ट्यूटोरियल
-url: /java/
+url: /hi/java/
 weight: 10
 ---
 

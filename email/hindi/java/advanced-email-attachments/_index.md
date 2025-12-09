@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Aspose.Email for Java का उपयोग करके ईमेल से अटैचमेंट निकालना सीखें। उन्नत
   अटैचमेंट हैंडलिंग में महारत हासिल करें, जिसमें इमेज को अटैचमेंट के रूप में एम्बेड
   करना शामिल है।
-language: hi
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java का उपयोग करके ईमेल से अटैचमेंट निकालें
-url: /java/advanced-email-attachments/
+url: /hi/java/advanced-email-attachments/
 weight: 13
 ---
 

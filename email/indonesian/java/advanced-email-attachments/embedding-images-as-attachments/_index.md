@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Pelajari cara melampirkan gambar ke email menggunakan Aspose.Email untuk
   Java, mengirim email HTML dengan gambar tersemat, dan mengoptimalkan ukuran gambar
   untuk email.
-language: id
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Cara Melampirkan Gambar ke Email dengan Aspose.Email untuk Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /id/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

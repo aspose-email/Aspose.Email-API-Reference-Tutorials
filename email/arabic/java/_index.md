@@ -3,10 +3,9 @@ date: 2025-11-30
 description: تعلم كيفية إنشاء دعوة تقويم، وإرسال بريد إلكتروني باستخدام Java، وتحويل
   ملفات eml إلى msg، وإضافة توقيع رقمي للبريد الإلكتروني باستخدام Aspose.Email for
   Java.
-language: ar
 linktitle: Aspose.Email for Java Tutorials
 title: إنشاء دعوة تقويم باستخدام Aspose.Email للغة Java – دليل كامل
-url: /java/
+url: /ar/java/
 weight: 10
 ---
 

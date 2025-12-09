@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: تعلم كيفية إرفاق صورة بالبريد الإلكتروني باستخدام Aspose.Email للغة Java،
   وإرسال بريد إلكتروني بصيغة HTML يحتوي على صورة مدمجة، وتحسين حجم الصورة للبريد الإلكتروني.
-language: ar
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: كيفية إرفاق صورة إلى البريد الإلكتروني باستخدام Aspose.Email للـ Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /ar/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

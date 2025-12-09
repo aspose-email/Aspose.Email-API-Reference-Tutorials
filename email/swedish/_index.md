@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Lär dig hur du skapar kalenderavtal med Aspose.Email för .NET och Java,
   och upptäck hur du konverterar PST till EML, validerar e‑postadresser och konfigurerar
   SMTP‑servrar.
-language: sv
 linktitle: Aspose.Email Tutorials
 title: Skapa kalenderavtal med Aspose.Email .NET och Java
-url: /
+url: /sv/
 weight: 10
 ---
 

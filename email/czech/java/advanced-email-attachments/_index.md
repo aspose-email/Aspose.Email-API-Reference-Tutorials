@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Naučte se, jak extrahovat přílohy z e‑mailu pomocí Aspose.Email pro Javu.
   Ovládněte pokročilé zpracování příloh, včetně toho, jak vložit obrázky jako přílohy.
-language: cs
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Extrahovat přílohy z e‑mailu pomocí Aspose.Email pro Javu
-url: /java/advanced-email-attachments/
+url: /cs/java/advanced-email-attachments/
 weight: 13
 ---
 

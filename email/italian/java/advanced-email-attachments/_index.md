@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Scopri come estrarre gli allegati dalle email utilizzando Aspose.Email
   per Java. Padroneggia la gestione avanzata degli allegati, incluso come incorporare
   le immagini come allegati.
-language: it
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Estrai gli allegati da email usando Aspose.Email per Java
-url: /java/advanced-email-attachments/
+url: /it/java/advanced-email-attachments/
 weight: 13
 ---
 

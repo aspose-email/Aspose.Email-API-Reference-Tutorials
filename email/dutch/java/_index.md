@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Leer hoe u een agenda‑uitnodiging maakt, e‑mail verzendt met Java, eml
   naar msg converteert en een digitale handtekening aan e‑mail toevoegt met Aspose.Email
   voor Java.
-language: nl
 linktitle: Aspose.Email for Java Tutorials
 title: Maak een agenda‑uitnodiging met Aspose.Email voor Java – Volledige tutorial
-url: /java/
+url: /nl/java/
 weight: 10
 ---
 

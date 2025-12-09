@@ -3,11 +3,10 @@ date: 2025-12-01
 description: تعلم كيفية إرسال بريد إلكتروني مع صورة مدمجة باستخدام Aspose.Email للغة
   Java. يوضح هذا الدليل كيفية تضمين الصور في البريد الإلكتروني وإنشاء بريد إلكتروني
   HTML بلغة Java مع مرفقات مدمجة.
-language: ar
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: كيفية إرسال بريد إلكتروني مع صورة مدمجة باستخدام Aspose.Email للـ Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /ar/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

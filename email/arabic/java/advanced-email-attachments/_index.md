@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: تعلم كيفية استخراج المرفقات من البريد الإلكتروني باستخدام Aspose.Email
   للغة Java. إتقان التعامل المتقدم مع المرفقات، بما في ذلك كيفية تضمين الصور كمرفقات.
-language: ar
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: استخراج المرفقات من البريد الإلكتروني باستخدام Aspose.Email لجافا
-url: /java/advanced-email-attachments/
+url: /ar/java/advanced-email-attachments/
 weight: 13
 ---
 

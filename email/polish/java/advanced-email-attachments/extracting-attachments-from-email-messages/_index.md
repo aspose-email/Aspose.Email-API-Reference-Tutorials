@@ -3,12 +3,11 @@ date: 2025-11-30
 description: Dowiedz się, jak wyodrębniać załączniki e‑mail i wyodrębniać załączniki
   z plików msg przy użyciu Aspose.Email dla Javy. Ten samouczek Aspose Email przeprowadzi
   Cię krok po kroku.
-language: pl
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Jak wyodrębnić załączniki z wiadomości e‑mail przy użyciu Aspose.Email dla
   Javy
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /pl/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

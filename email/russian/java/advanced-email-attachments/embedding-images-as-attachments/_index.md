@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Узнайте, как прикрепить изображение к письму с помощью Aspose.Email для
   Java, отправить HTML‑письмо с встроенным изображением и оптимизировать размер изображения
   для электронной почты.
-language: ru
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Как прикрепить изображение к письму с помощью Aspose.Email для Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /ru/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

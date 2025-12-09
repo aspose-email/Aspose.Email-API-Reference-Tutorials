@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Узнайте, как извлекать вложения из электронной почты с помощью Aspose.Email
   для Java. Овладейте продвинутой обработкой вложений, включая встраивание изображений
   в виде вложений.
-language: ru
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Извлечение вложений из электронной почты с помощью Aspose.Email для Java
-url: /java/advanced-email-attachments/
+url: /ru/java/advanced-email-attachments/
 weight: 13
 ---
 

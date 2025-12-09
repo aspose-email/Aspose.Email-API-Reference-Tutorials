@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Scopri come creare appuntamenti di calendario usando Aspose.Email per
   .NET e Java, e scopri come convertire PST in EML, convalidare gli indirizzi email
   e configurare i server SMTP.
-language: it
 linktitle: Aspose.Email Tutorials
 title: Crea appuntamento di calendario con Aspose.Email .NET e Java
-url: /
+url: /it/
 weight: 10
 ---
 

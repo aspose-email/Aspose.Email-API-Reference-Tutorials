@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Scopri come estrarre gli allegati delle email usando Aspose.Email per
   Java, oltre a consigli su come inviare email con allegati, analizzare file MSG e
   caricare allegati PST.
-language: it
 title: Estrai gli allegati email con Aspose.Email per Java
-url: /java/attachments-handling/
+url: /it/java/attachments-handling/
 weight: 4
 ---
 

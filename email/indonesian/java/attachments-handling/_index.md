@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Pelajari cara mengekstrak lampiran email menggunakan Aspose.Email untuk
   Java, serta tips mengirim email dengan lampiran, mengurai file MSG, dan memuat lampiran
   PST.
-language: id
 title: Ekstrak Lampiran Email dengan Aspose.Email untuk Java
-url: /java/attachments-handling/
+url: /id/java/attachments-handling/
 weight: 4
 ---
 

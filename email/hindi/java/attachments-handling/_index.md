@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Aspose.Email for Java का उपयोग करके ईमेल अटैचमेंट्स को निकालना सीखें,
   साथ ही अटैचमेंट्स के साथ ईमेल भेजने, MSG फ़ाइलों को पार्स करने और PST अटैचमेंट्स
   लोड करने के टिप्स।
-language: hi
 title: Aspose.Email for Java के साथ ईमेल अटैचमेंट निकालें
-url: /java/attachments-handling/
+url: /hi/java/attachments-handling/
 weight: 4
 ---
 

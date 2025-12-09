@@ -2,9 +2,8 @@
 date: 2025-12-01
 description: เรียนรู้วิธีดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email สำหรับ Java พร้อมเคล็ดลับในการส่งอีเมลพร้อมไฟล์แนบ,
   การแยกวิเคราะห์ไฟล์ MSG, และการโหลดไฟล์แนบจาก PST.
-language: th
 title: ดึงไฟล์แนบจากอีเมลด้วย Aspose.Email สำหรับ Java
-url: /java/attachments-handling/
+url: /th/java/attachments-handling/
 weight: 4
 ---
 

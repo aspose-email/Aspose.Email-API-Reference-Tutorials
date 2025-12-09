@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Изучите, как создавать календарные встречи с помощью Aspose.Email для
   .NET и Java, а также узнайте, как конвертировать PST в EML, проверять адреса электронной
   почты и настраивать SMTP‑серверы.
-language: ru
 linktitle: Aspose.Email Tutorials
 title: Создать встречу в календаре с Aspose.Email .NET и Java
-url: /
+url: /ru/
 weight: 10
 ---
 

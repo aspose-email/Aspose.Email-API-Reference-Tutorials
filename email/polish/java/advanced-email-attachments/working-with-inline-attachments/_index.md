@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Dowiedz się, jak wysyłać e‑mail z osadzonym obrazem przy użyciu Aspose.Email
   dla Javy. Ten przewodnik pokazuje, jak osadzać obrazy w e‑mailu i tworzyć e‑mail
   w formacie HTML w Javie z załącznikami inline.
-language: pl
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Jak wysłać e‑mail z osadzonym obrazem przy użyciu Aspose.Email dla Javy
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /pl/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Aprenda a extraer archivos adjuntos de correos electrónicos usando Aspose.Email
   para Java, además de consejos para enviar correos con archivos adjuntos, analizar
   archivos MSG y cargar adjuntos de PST.
-language: es
 title: Extraer archivos adjuntos de correo electrónico con Aspose.Email para Java
-url: /java/attachments-handling/
+url: /es/java/attachments-handling/
 weight: 4
 ---
 

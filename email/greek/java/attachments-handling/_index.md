@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Μάθετε πώς να εξάγετε συνημμένα email χρησιμοποιώντας το Aspose.Email
   για Java, καθώς και συμβουλές για την αποστολή email με συνημμένα, την ανάλυση αρχείων
   MSG και τη φόρτωση συνημμένων PST.
-language: el
 title: Εξαγωγή συνημμένων email με το Aspose.Email για Java
-url: /java/attachments-handling/
+url: /el/java/attachments-handling/
 weight: 4
 ---
 

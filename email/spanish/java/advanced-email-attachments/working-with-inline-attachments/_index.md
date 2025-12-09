@@ -3,12 +3,11 @@ date: 2025-12-01
 description: Aprenda a enviar correos electrónicos con imágenes incrustadas usando
   Aspose.Email para Java. Esta guía muestra cómo incrustar imágenes en el correo electrónico
   y crear correos electrónicos HTML en Java con archivos adjuntos en línea.
-language: es
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Cómo enviar correo electrónico con imagen incrustada usando Aspose.Email para
   Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /es/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 

@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Naučte se, jak vytvořit kalendářovou schůzku pomocí Aspose.Email pro
   .NET a Java, a objevte, jak převést PST na EML, ověřit e‑mailové adresy a nakonfigurovat
   SMTP servery.
-language: cs
 linktitle: Aspose.Email Tutorials
 title: Vytvořte kalendářovou schůzku s Aspose.Email .NET a Java
-url: /
+url: /cs/
 weight: 10
 ---
 

@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Leer hoe je e‑mailbijlagen kunt extraheren met Aspose.Email voor Java,
   plus tips over het verzenden van e‑mail met bijlagen, het parseren van MSG‑bestanden
   en het laden van PST‑bijlagen.
-language: nl
 title: E‑mailbijlagen extraheren met Aspose.Email voor Java
-url: /java/attachments-handling/
+url: /nl/java/attachments-handling/
 weight: 4
 ---
 

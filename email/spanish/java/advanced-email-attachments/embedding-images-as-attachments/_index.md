@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Aprenda cómo adjuntar una imagen a un correo electrónico usando Aspose.Email
   para Java, enviar un correo electrónico HTML con una imagen incrustada y optimizar
   el tamaño de la imagen para el correo electrónico.
-language: es
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Cómo adjuntar una imagen a un correo electrónico con Aspose.Email para Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /es/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

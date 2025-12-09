@@ -3,9 +3,8 @@ date: 2025-12-01
 description: Aspose.Email for Java kullanarak e-posta eklerini nasıl çıkaracağınızı
   öğrenin, ekli e-posta gönderme ipuçları, MSG dosyalarını ayrıştırma ve PST eklerini
   yükleme konularında bilgi edinin.
-language: tr
 title: Aspose.Email for Java ile E-posta Eklerini Çıkarma
-url: /java/attachments-handling/
+url: /tr/java/attachments-handling/
 weight: 4
 ---
 

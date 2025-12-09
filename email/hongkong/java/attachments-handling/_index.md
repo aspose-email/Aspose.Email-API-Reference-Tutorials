@@ -1,9 +1,8 @@
 ---
 date: 2025-12-01
 description: 學習如何使用 Aspose.Email for Java 提取電郵附件，另附有發送帶附件電郵、解析 MSG 檔案及載入 PST 附件的技巧。
-language: zh-hant
 title: 使用 Aspose.Email for Java 提取電郵附件
-url: /java/attachments-handling/
+url: /zh-hant/java/attachments-handling/
 weight: 4
 ---
 

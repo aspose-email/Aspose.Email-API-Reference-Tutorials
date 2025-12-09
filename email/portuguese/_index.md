@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aprenda a criar compromissos de calendário usando Aspose.Email para .NET
   e Java e descubra como converter PST para EML, validar endereços de e‑mail e configurar
   servidores SMTP.
-language: pt
 linktitle: Aspose.Email Tutorials
 title: Criar Compromisso de Calendário com Aspose.Email .NET e Java
-url: /
+url: /pt/
 weight: 10
 ---
 

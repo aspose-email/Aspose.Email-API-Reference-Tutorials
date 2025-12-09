@@ -1,11 +1,10 @@
 ---
 date: 2025-11-30
 description: 学习如何使用 Aspose.Email for Java 将图像附加到电子邮件，发送带嵌入图像的 HTML 邮件，并优化邮件中的图像大小。
-language: zh
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: 如何使用 Aspose.Email for Java 将图片附加到电子邮件
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /zh/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

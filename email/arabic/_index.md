@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: تعلم كيفية إنشاء موعد تقويمي باستخدام Aspose.Email لـ .NET و Java، واكتشف
   كيفية تحويل PST إلى EML، والتحقق من صحة عناوين البريد الإلكتروني، وتكوين خوادم SMTP.
-language: ar
 linktitle: Aspose.Email Tutorials
 title: إنشاء موعد تقويم باستخدام Aspose.Email .NET و Java
-url: /
+url: /ar/
 weight: 10
 ---
 

@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: เรียนรู้วิธีสร้างนัดหมายในปฏิทินโดยใช้ Aspose.Email สำหรับ .NET และ Java,
   และค้นพบวิธีแปลง PST เป็น EML, ตรวจสอบที่อยู่อีเมล, และกำหนดค่าเซิร์ฟเวอร์ SMTP.
-language: th
 linktitle: Aspose.Email Tutorials
 title: สร้างนัดหมายปฏิทินด้วย Aspose.Email .NET และ Java
-url: /
+url: /th/
 weight: 10
 ---
 

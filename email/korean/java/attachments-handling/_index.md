@@ -2,9 +2,8 @@
 date: 2025-12-01
 description: Aspose.Email for Java를 사용하여 이메일 첨부 파일을 추출하는 방법을 배우고, 첨부 파일이 포함된 이메일 전송,
   MSG 파일 파싱 및 PST 첨부 파일 로드에 대한 팁도 확인하세요.
-language: ko
 title: Aspose.Email for Java로 이메일 첨부 파일 추출
-url: /java/attachments-handling/
+url: /ko/java/attachments-handling/
 weight: 4
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aprenda a extrair anexos de e‑mail usando Aspose.Email para Java. Domine
   o manuseio avançado de anexos, incluindo como incorporar imagens como anexos.
-language: pt
 linktitle: Extract attachments from email using Aspose.Email for Java
 second_title: Aspose.Email Java Email Management API
 title: Extrair anexos de e‑mail usando Aspose.Email para Java
-url: /java/advanced-email-attachments/
+url: /pt/java/advanced-email-attachments/
 weight: 13
 ---
 

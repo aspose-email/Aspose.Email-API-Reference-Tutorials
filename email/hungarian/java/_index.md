@@ -3,10 +3,9 @@ date: 2025-11-30
 description: Tanulja meg, hogyan hozhat létre naptármeghívót, küldhet e‑mailt Java‑ban,
   konvertálhatja az .eml fájlokat .msg formátumba, és adhat hozzá digitális aláírást
   az e‑mailhez az Aspose.Email for Java használatával.
-language: hu
 linktitle: Aspose.Email for Java Tutorials
 title: Naptármeghívó létrehozása az Aspose.Email for Java segítségével – Teljes útmutató
-url: /java/
+url: /hu/java/
 weight: 10
 ---
 

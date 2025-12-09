@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Aspose.Email for Java を使用してメールの添付ファイルを抽出し、msg ファイルから添付ファイルを抽出する方法を学びます。この
   Aspose メールチュートリアルでは、手順を順を追って説明します。
-language: ja
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java を使用してメールメッセージから添付ファイルを抽出する方法
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /ja/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

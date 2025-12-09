@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Aspose.Email for Java ile e-posta eklerini nasıl çıkaracağınızı ve msg
   dosyalarından ekleri nasıl çıkaracağınızı öğrenin. Bu Aspose e-posta öğreticisi
   adım adım size rehberlik eder.
-language: tr
 linktitle: Extracting Attachments from Email Messages in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Aspose.Email for Java Kullanarak E-posta Mesajlarından Ekleri Nasıl Çıkarılır
-url: /java/advanced-email-attachments/extracting-attachments-from-email-messages/
+url: /tr/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
 

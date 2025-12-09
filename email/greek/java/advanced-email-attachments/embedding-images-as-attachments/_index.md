@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Μάθετε πώς να επισυνάψετε εικόνα σε email χρησιμοποιώντας το Aspose.Email
   για Java, να στείλετε email HTML με ενσωματωμένη εικόνα και να βελτιστοποιήσετε
   το μέγεθος της εικόνας για το email.
-language: el
 linktitle: How to Attach Image to Email with Aspsoe.Email
 second_title: Aspose.Email Java Email Management API
 title: Πώς να επισυνάψετε εικόνα σε email με το Aspose.Email για Java
-url: /java/advanced-email-attachments/embedding-images-as-attachments/
+url: /el/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 

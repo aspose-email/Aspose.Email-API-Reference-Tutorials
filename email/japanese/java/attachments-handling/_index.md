@@ -2,9 +2,8 @@
 date: 2025-12-01
 description: Aspose.Email for Java を使用してメールの添付ファイルを抽出する方法を学び、添付ファイル付きメールの送信、MSG ファイルの解析、PST
   添付ファイルの読み込みに関するヒントも紹介します。
-language: ja
 title: Aspose.Email for Javaでメールの添付ファイルを抽出する
-url: /java/attachments-handling/
+url: /ja/java/attachments-handling/
 weight: 4
 ---
 

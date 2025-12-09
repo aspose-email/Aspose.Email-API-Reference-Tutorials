@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Dowiedz się, jak tworzyć spotkania w kalendarzu przy użyciu Aspose.Email
   dla .NET i Java, oraz odkryj, jak konwertować pliki PST na EML, weryfikować adresy
   e‑mail i konfigurować serwery SMTP.
-language: pl
 linktitle: Aspose.Email Tutorials
 title: Utwórz spotkanie w kalendarzu przy użyciu Aspose.Email .NET i Java
-url: /
+url: /pl/
 weight: 10
 ---
 

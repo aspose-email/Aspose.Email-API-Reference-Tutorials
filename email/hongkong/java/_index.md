@@ -1,10 +1,9 @@
 ---
 date: 2025-11-30
 description: 學習如何使用 Aspose.Email for Java 建立行事曆邀請、發送 Java 電子郵件、將 eml 轉換為 msg，以及加入數位簽章的電子郵件。
-language: zh-hant
 linktitle: Aspose.Email for Java Tutorials
 title: 使用 Aspose.Email for Java 建立日曆邀請 – 完整教學
-url: /java/
+url: /zh-hant/java/
 weight: 10
 ---
 

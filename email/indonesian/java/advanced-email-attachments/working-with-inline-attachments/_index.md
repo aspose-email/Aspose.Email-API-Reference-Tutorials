@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Pelajari cara mengirim email dengan gambar tersemat menggunakan Aspose.Email
   untuk Java. Panduan ini menunjukkan cara menyematkan gambar dalam email dan membuat
   email HTML Java dengan lampiran inline.
-language: id
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
 title: Cara Mengirim Email dengan Gambar Tersemat Menggunakan Aspose.Email untuk Java
-url: /java/advanced-email-attachments/working-with-inline-attachments/
+url: /id/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 
