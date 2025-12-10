@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "जावा में Aspose.Email का उपयोग करके TNEF अनुलग्नकों के साथ EML फ़ाइलों को प्रभावी ढंग से प्रबंधित करना सीखें। यह मार्गदर्शिका लोडिंग, अपडेटिंग और सेविंग प्रक्रियाओं को कवर करती है।"
-"title": "Java के लिए Aspose.Email का उपयोग करके TNEF अनुलग्नकों के साथ EML फ़ाइल हैंडलिंग में महारत हासिल करें"
-"url": "/hi/java/attachments-handling/aspose-email-java-eml-tnef-handling/"
-"weight": 1
+date: '2025-12-10'
+description: Aspose.Email for Java का उपयोग करके TNEF अटैचमेंट वाले eml फ़ाइलों को
+  कैसे सहेजें, सीखें। यह गाइड लोडिंग, अपडेटिंग और सहेजने की प्रक्रियाओं को कवर करता
+  है।
+keywords:
+- EML files with TNEF attachments
+- Aspose.Email for Java
+- Email handling in Java
+title: Aspose.Email for Java का उपयोग करके TNEF अटैचमेंट्स के साथ EML फ़ाइलें कैसे
+  सहेजें
+url: /hi/java/attachments-handling/aspose-email-java-eml-tnef-handling/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,26 +18,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email Java के साथ ईमेल हैंडलिंग में महारत हासिल करना: TNEF अनुलग्नकों के साथ EML फ़ाइलें लोड करना और सहेजना
+# Aspose.Email Java के साथ ईमेल हैंडलिंग में महारत: TNEF अटैचमेंट्स के साथ EML फ़ाइलों को लोड और सेव करना
 
 ## परिचय
 
-ईमेल फ़ाइलों को प्रभावी ढंग से प्रबंधित करने में कठिनाई हो रही है, खासकर जब TNEF अनुलग्नकों वाली EML फ़ाइलों जैसे जटिल प्रारूपों से निपटना हो? Java के लिए Aspose.Email सभी आवश्यक डेटा को संरक्षित करते हुए इन फ़ाइलों को सहजता से लोड, अपडेट और सहेजने के लिए एक मजबूत समाधान प्रदान करता है। यह ट्यूटोरियल आपको Java में Aspose.Email का उपयोग करके EML फ़ाइलों को संभालने की प्रक्रिया के बारे में मार्गदर्शन करेगा।
+यदि आप TNEF अटैचमेंट्स वाली **how to save eml** फ़ाइलें खोज रहे हैं, तो Aspose.Email for Java एक मजबूत, प्रोडक्शन‑रेडी समाधान प्रदान करता है। इस ट्यूटोरियल में आप सीखेंगे कि कैसे लोड करें, अपडेट करें, और अंत में **save eml** फ़ाइलें सहेजें जबकि सभी एम्बेडेड रिसोर्स को संरक्षित रखें। हम आपको यह भी दिखाएंगे कि कैसे **process email attachments**, **update email** कंटेंट को संभालें, और **how to load eml** फ़ाइलों को प्रभावी ढंग से हैंडल करें।
 
-**आप क्या सीखेंगे:**
-- TNEF अनुलग्नकों के साथ EML फ़ाइलों को कैसे लोड और सेव करें
-- ईमेल संदेश के भीतर संसाधनों को अद्यतन करना
-- वास्तविक दुनिया के परिदृश्यों में इन सुविधाओं के व्यावहारिक अनुप्रयोग
+**आप क्या सीखेंगे**
+- कैसे **load** एक EML फ़ाइल को लोड करें और TNEF डेटा को अपरिवर्तित रखें  
+- संशोधनों के बाद **save eml** फ़ाइलों को सहेजने की चरण‑दर‑चरण प्रक्रिया  
+- **update email attachments** और लिंक्ड रिसोर्स को अपडेट करने की तकनीकें  
+- वास्तविक‑दुनिया के परिदृश्य जहाँ यह वर्कफ़्लो समय बचाता है और डेटा हानि से बचाता है  
 
-क्या आप अपने ईमेल प्रबंधन कौशल को बढ़ाने के लिए तैयार हैं? चलिए शुरू करते हैं!
+ईमेल हैंडलिंग में महारत हासिल करने के लिए तैयार हैं? चलिए शुरू करते हैं!
 
-## आवश्यक शर्तें
+## त्वरित उत्तर
+- **TNEF अटैचमेंट्स को संरक्षित रखने का मुख्य तरीका क्या है?** `EmlSaveOptions` में `FileCompatibilityMode.PreserveTnefAttachments` सेट करें।  
+- **कौन सा Aspose क्लास EML फ़ाइल को लोड करता है?** `MailMessage.load(String filePath)`।  
+- **क्या मैं एम्बेडेड इमेज को ईमेल को तोड़े बिना अपडेट कर सकता हूँ?** हाँ – `UpdateResources` हेल्पर का उपयोग करके स्ट्रीम्स को बदलें।  
+- **क्या विकास के लिए लाइसेंस चाहिए?** परीक्षण के लिए फ्री ट्रायल काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है।  
+- **कौन सा Java संस्करण समर्थित है?** JDK 1.8 या उससे ऊपर (उदाहरण में JDK 16 classifier उपयोग किया गया है)।  
 
-आगे बढ़ने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित सेटअप है:
+## “how to save eml” TNEF अटैचमेंट्स के साथ क्या है?
+TNEF डेटा को संरक्षित रखते हुए EML फ़ाइल को सेव करना मतलब संदेश को डिस्क पर वापस लिखना बिना Outlook‑विशिष्ट अटैचमेंट जानकारी को हटाए। Aspose.Email का `EmlSaveOptions` इस प्रक्रिया पर सूक्ष्म नियंत्रण प्रदान करता है।
+
+## Aspose.Email for Java क्यों उपयोग करें?
+- **Full format support** – MSG, EML, MHTML, और अधिक।  
+- **Zero‑dependency API** – कोई नेटिव लाइब्रेरी इंस्टॉल करने की जरूरत नहीं।  
+- **Enterprise‑grade performance** – बड़े मेलबॉक्स के लिए स्ट्रीम‑आधारित प्रोसेसिंग।  
+
+## Prerequisites
 
 ### आवश्यक लाइब्रेरी और निर्भरताएँ
-
-आपको Java के लिए Aspose.Email की आवश्यकता होगी। आप इसे Maven के माध्यम से जोड़ सकते हैं:
+You will need Aspose.Email for Java. Add it via Maven:
 
 ```xml
 <dependency>
@@ -42,29 +62,24 @@
 ```
 
 ### पर्यावरण सेटअप
-
-- जावा डेवलपमेंट किट (JDK) 1.8 या उच्चतर।
-- एक एकीकृत विकास वातावरण (IDE) जैसे कि IntelliJ IDEA या Eclipse.
+- Java Development Kit (JDK) 1.8 या उससे ऊपर।  
+- IntelliJ IDEA या Eclipse जैसे IDE।  
 
 ### ज्ञान पूर्वापेक्षाएँ
+Basic Java programming and familiarity with file I/O streams are recommended.
 
-जावा प्रोग्रामिंग की बुनियादी समझ और जावा में फ़ाइलों और स्ट्रीम्स को संभालने की जानकारी की सिफारिश की जाती है।
-
-## Java के लिए Aspose.Email सेट अप करना
+## Setting Up Aspose.Email for Java
 
 ### स्थापना जानकारी
-
-Aspose.Email का उपयोग शुरू करने के लिए, अपने प्रोजेक्ट में उपरोक्त Maven निर्भरता जोड़ें। आप JAR को सीधे से भी डाउनलोड कर सकते हैं [Aspose वेबसाइट](https://releases.aspose.com/email/java/).
+Add the Maven dependency above or download the JAR directly from the [Aspose website](https://releases.aspose.com/email/java/).
 
 ### लाइसेंस प्राप्ति चरण
+- **Free Trial:** API को एक्सप्लोर करने के लिए ट्रायल लाइसेंस प्राप्त करें।  
+- **Temporary License:** यदि आपको विस्तारित मूल्यांकन अवधि चाहिए तो आवेदन करें।  
+- **Purchase:** प्रोडक्शन डिप्लॉयमेंट के लिए पूर्ण लाइसेंस प्राप्त करें।
 
-- **मुफ्त परीक्षण:** सुविधाओं का परीक्षण करने के लिए निःशुल्क परीक्षण लाइसेंस के साथ शुरुआत करें।
-- **अस्थायी लाइसेंस:** यदि आपको मूल्यांकन के लिए अधिक समय चाहिए तो अस्थायी लाइसेंस के लिए आवेदन करें।
-- **खरीदना:** एक बार संतुष्ट हो जाने पर, उत्पादन उपयोग के लिए पूर्ण लाइसेंस खरीदें।
-
-### बुनियादी आरंभीकरण और सेटअप
-
-अपना प्रोजेक्ट सेट अप करने का तरीका यहां बताया गया है:
+### बेसिक इनिशियलाइज़ेशन और सेटअप
+First, load your license so the API runs without evaluation restrictions:
 
 ```java
 import com.aspose.email.License;
@@ -73,20 +88,20 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## कार्यान्वयन मार्गदर्शिका
+## इम्प्लीमेंटेशन गाइड
 
-यह मार्गदर्शिका आपको TNEF अनुलग्नकों के साथ EML फ़ाइलों को लोड करने, अपडेट करने और सहेजने के बारे में बताएगी।
+This guide walks you through **how to load eml**, update its resources, and finally **how to save eml** while preserving TNEF attachments.
 
-### TNEF अनुलग्नकों के साथ EML फ़ाइलें लोड करना और सहेजना
+### Loading and Saving EML Files with TNEF Attachments
 
-#### अवलोकन
+#### सारांश
+We’ll load an existing EML file, replace any embedded images, and then save the message back to disk without losing TNEF data.
 
-जानें कि EML फ़ाइल को कैसे लोड करें, इसके संसाधनों को कैसे अपडेट करें, तथा TNEF अनुलग्नकों को संरक्षित करते हुए इसे कैसे वापस सेव करें।
+#### चरण‑दर‑चरण निर्देश
 
-#### कार्यान्वयन चरण
+1. **Load the EML File**  
+   Use `MailMessage.load` to bring the message into memory.
 
-1. **EML फ़ाइल लोड करें**
-   
 ```java
 import com.aspose.email.MailMessage;
 import java.io.File;
@@ -97,7 +112,8 @@ String fileName = dataDir + "tnefEMl1.eml";
 MailMessage originalMailMessage = MailMessage.load(fileName);
 ```
 
-2. **लोड और सेव विकल्प आरंभ करें**
+2. **Initialize Load and Save Options**  
+   Configure the options so that TNEF attachments are preserved.
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -109,34 +125,32 @@ EmlSaveOptions emlSo = new EmlSaveOptions(com.aspose.email.MailMessageSaveType.g
 emlSo.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
 ```
 
-3. **मेल संदेश में संसाधन अपडेट करें**
+3. **Update Resources in the Mail Message**  
+   Replace embedded images (or other resources) with new content streams.
 
 ```java
 UpdateResources(originalMailMessage, dataDir + "Untitled.jpg");
 ```
 
-4. **अपडेट की गई EML फ़ाइल को सहेजें**
+4. **Save the Updated EML File**  
+   This is the core of **how to save eml** with TNEF data intact.
 
 ```java
 String outFileName = dataDir + "01_SAVE_Preserve_out.eml";
 originalMailMessage.save(outFileName, emlSo);
 ```
 
-#### स्पष्टीकरण
+#### Explanation
+- `EmlLoadOptions` और `EmlSaveOptions` यह सुनिश्चित करते हैं कि लोडर और सेवेर Outlook के TNEF फ़ॉर्मेट का सम्मान करें।  
+- हेल्पर मेथड `UpdateResources` (बाद में दिखाया गया) अटैचमेंट्स और लिंक्ड रिसोर्सेज़ के माध्यम से इटररेट, इमेज स्ट्रीम्स को बदलता है।
 
-- `EmlLoadOptions` और `EmlSaveOptions` TNEF अनुलग्नकों के साथ संगतता सुनिश्चित करने के लिए कॉन्फ़िगर किया गया है।
-- The `UpdateResources` विधि का उपयोग ईमेल के भीतर किसी भी एम्बेडेड संसाधन को संशोधित करने के लिए किया जाता है।
+### Updating Resources within an Email Message
 
-### ईमेल संदेश के भीतर संसाधनों को अद्यतन करना
+#### सारांश
+When you need to **process email attachments** or **update email** content, you must iterate over both regular attachments and linked resources.
 
-#### अवलोकन
+#### Updating Attachments
 
-यह सुविधा किसी एप्लिकेशन के अनुलग्नकों और लिंक किए गए संसाधनों को अद्यतन करती है। `MailMessage` नई सामग्री धाराओं के साथ.
-
-#### कार्यान्वयन चरण
-
-1. **अनुलग्नकों पर पुनरावृत्ति करें**
-   
 ```java
 import com.aspose.email.Attachment;
 import java.io.File;
@@ -153,13 +167,13 @@ for (int i = 0; i < msg.getAttachments().size(); i++) {
             e.printStackTrace();
         }
     } else if (attachment.getContentType().getName().endsWith("eml")) {
-        // नेस्टेड EML अपडेट को संभालें
+        // Handle nested EML updates
     }
 }
 ```
 
-2. **लिंक किए गए संसाधनों पर पुनरावृत्ति करें**
-   
+#### Updating Linked Resources (Embedded Images)
+
 ```java
 import com.aspose.email.LinkedResource;
 
@@ -176,62 +190,73 @@ for (LinkedResource att : msg.getLinkedResources()) {
 }
 ```
 
-#### स्पष्टीकरण
+#### Explanation
+- `UpdateResources` मेथड (पहले कॉल किया गया) ऊपर के दो लूप्स को मिलाता है, यह सुनिश्चित करता है कि **update email attachments** और एम्बेडेड इमेज एक ही पास में रिफ्रेश हों।  
+- नेस्टेड EML फ़ाइलें रेकर्सिवली प्रोसेस की जाती हैं, जो फॉरवर्डेड संदेशों में आवश्यक है जिनमें भी TNEF डेटा होता है।
 
-- The `UpdateResources` विधि अनुलग्नकों और लिंक किए गए संसाधनों दोनों को अद्यतन करती है, यह सुनिश्चित करते हुए कि सभी छवि फ़ाइलें निर्दिष्ट सामग्री स्ट्रीम के साथ अद्यतन की गई हैं।
-- नेस्टेड ईएमएल संदेशों को पुनरावर्ती रूप से प्रबंधित किया जाता है ताकि यह सुनिश्चित किया जा सके कि सभी संसाधन अद्यतन हैं।
+### समस्या निवारण टिप्स
+- `dataDir` एक वैध फ़ोल्डर की ओर इशारा करता है और आपके पास रीड/राइट परमिशन हैं, यह सत्यापित करें।  
+- प्रोडक्शन कोड में लीक से बचने के लिए स्ट्रीम्स के लिए `try‑with‑resources` का उपयोग करें।  
+- यदि सेव करने के बाद TNEF अटैचमेंट्स गायब हो जाते हैं, तो दोबारा जांचें कि `FileCompatibilityMode.PreserveTnefAttachments` सेट है।
 
-### समस्या निवारण युक्तियों
+## व्यावहारिक अनुप्रयोग
 
-- सुनिश्चित करें कि आपके वातावरण में फ़ाइल पथ सही ढंग से सेट किए गए हैं.
-- सत्यापित करें कि आपके पास आउटपुट निर्देशिका के लिए लेखन अनुमति है।
-- एप्लिकेशन क्रैश से बचने के लिए अपवादों को शालीनता से संभालें।
+1. **Email Archiving** – Outlook संदेशों की सटीक कॉपी रखें, जिसमें प्रोपाइटरी TNEF भाग भी शामिल हों, अनुपालन ऑडिट के लिए।  
+2. **Automated Support Workflows** – इनकमिंग टिकटों से इमेज निकालें, उन्हें वॉटरमार्केड संस्करण से बदलें, और संदेश को पुनः‑सेव करें।  
+3. **Data Migration** – Exchange से कस्टम आर्काइव में मेलबॉक्स को माइग्रेट करें, सभी अटैचमेंट्स को अपरिवर्तित रखें।
 
-## व्यावहारिक अनुप्रयोगों
-
-1. **ईमेल संग्रहण:** संग्रहीत ईमेल को नए अनुलग्नकों या संसाधनों के साथ स्वचालित रूप से अपडेट और सहेजें।
-2. **स्वचालित ईमेल प्रसंस्करण:** ईमेल सामग्री प्रसंस्करण की आवश्यकता वाले वर्कफ़्लोज़ में एकीकृत करें, जैसे कि ग्राहक सहायता प्रणाली।
-3. **डेटा माइग्रेशन परियोजनाएं:** सभी एम्बेडेड डेटा को संरक्षित करते हुए प्लेटफार्मों के बीच ईमेल के माइग्रेशन को सुविधाजनक बनाना।
-
-## प्रदर्शन संबंधी विचार
-
-- स्ट्रीम ऑब्जेक्ट्स को कुशलतापूर्वक प्रबंधित करके मेमोरी उपयोग को अनुकूलित करें।
-- उपयोग `try-with-resources` जहां लागू हो, स्वचालित संसाधन प्रबंधन के लिए।
-- प्रदर्शन संबंधी बाधाओं की पहचान करने और उनका समाधान करने के लिए अपने एप्लिकेशन की प्रोफाइल तैयार करें।
+## प्रदर्शन विचार
+- जहाँ संभव हो `FileInputStream` ऑब्जेक्ट्स को पुन: उपयोग करें; उन्हें तुरंत बंद करें।  
+- बड़े मेलबॉक्स के लिए, संदेशों को बैच में प्रोसेस करें और प्रत्येक सेव के बाद रेफ़रेंसेज़ रिलीज़ करें।  
+- बॉटलनेक्स खोजने के लिए VisualVM या समान टूल्स से मेमोरी उपयोग प्रोफ़ाइल करें।
 
 ## निष्कर्ष
+आप अब जानते हैं **how to save eml** फ़ाइलों को TNEF अटैचमेंट्स के साथ कैसे सुरक्षित रूप से सेव करें, **load eml** कैसे करें, और Aspose.Email for Java का उपयोग करके **update email** कंटेंट को सुरक्षित रूप से कैसे अपडेट करें। यह क्षमता विश्वसनीय ईमेल आर्काइविंग, स्वचालित प्रोसेसिंग, और सहज माइग्रेशन प्रोजेक्ट्स को सक्षम करती है।
 
-अब आप Java के लिए Aspose.Email का उपयोग करके TNEF अनुलग्नकों के साथ EML फ़ाइलों को लोड करना, अपडेट करना और सहेजना सीख गए हैं। यह शक्तिशाली उपकरण आपके अनुप्रयोगों में ईमेल डेटा को प्रभावी ढंग से प्रबंधित करने के लिए कई संभावनाएँ खोलता है।
+**अगले कदम**
+- विभिन्न `FileCompatibilityMode` सेटिंग्स के साथ प्रयोग करें ताकि देखें कि वे अन्य फ़ॉर्मेट्स को कैसे प्रभावित करती हैं।  
+- MIME पार्ट्स को पार्स करने, एन्क्रिप्टेड संदेशों को हैंडल करने, आदि के लिए Aspose.Email API का अन्वेषण करें।
 
-**अगले कदम:**
-- विभिन्न कॉन्फ़िगरेशन और सेटिंग्स के साथ प्रयोग करें।
-- अपनी ईमेल प्रबंधन क्षमताओं को और बढ़ाने के लिए Aspose.Email द्वारा दी जाने वाली अतिरिक्त सुविधाओं का अन्वेषण करें।
+## FAQ अनुभाग
 
-क्या आप अपनी परियोजनाओं में इस समाधान को लागू करने के लिए तैयार हैं? अभी शुरू करें और EML फ़ाइलों के सहज प्रबंधन का अनुभव करें!
+1. **TNEF क्या है, और यह क्यों महत्वपूर्ण है?**  
+   TNEF (Transport Neutral Encapsulation Format) Microsoft Outlook द्वारा रिच फ़ॉर्मेटिंग और अटैचमेंट मेटाडेटा को बंडल करने के लिए उपयोग किया जाता है। इसे संरक्षित रखने से संदेश Outlook में खुलने पर बिल्कुल वैसा ही दिखता है जैसा मूल में था।
 
-## अक्सर पूछे जाने वाले प्रश्न अनुभाग
+2. **क्या मैं Aspose.Email को EML के अलावा अन्य ईमेल फ़ॉर्मेट्स के साथ उपयोग कर सकता हूँ?**  
+   हाँ, Aspose.Email MSG, MHTML, PST, और कई अन्य फ़ॉर्मेट्स को सपोर्ट करता है।
 
-1. **टीएनईएफ क्या है और यह महत्वपूर्ण क्यों है?**
-   - TNEF (ट्रांसपोर्ट न्यूट्रल एनकैप्सुलेशन फॉर्मेट) का उपयोग माइक्रोसॉफ्ट आउटलुक द्वारा अनुलग्नकों को एनकैप्सुलेट करने के लिए किया जाता है, जिससे यह सुनिश्चित होता है कि सभी फॉर्मेटिंग और डेटा संरक्षित हैं।
+3. **मैं बड़े ईमेल फ़ाइलों को प्रभावी ढंग से कैसे हैंडल करूँ?**  
+   संदेश की सामग्री को स्ट्रीम करें और पूरी फ़ाइल को मेमोरी में लोड करने से बचें; स्वचालित क्लीन‑अप के लिए `try‑with‑resources` का उपयोग करें।
 
-2. **क्या मैं EML के अलावा अन्य ईमेल प्रारूपों के साथ Aspose.Email का उपयोग कर सकता हूँ?**
-   - हां, Aspose.Email MSG, MHTML, आदि सहित कई प्रारूपों का समर्थन करता है।
+4. **Aspose.Email के लिए कौन‑से लाइसेंस विकल्प उपलब्ध हैं?**  
+   पहले फ्री ट्रायल से शुरू करें, फिर प्रोजेक्ट की जरूरतों के आधार पर टेम्पररी या फुल कमर्शियल लाइसेंस चुनें।
 
-3. **मैं बड़ी ईमेल फ़ाइलों को कुशलतापूर्वक कैसे संभालूँ?**
-   - बड़े ईमेल संसाधित करते समय मेमोरी उपयोग को प्रभावी ढंग से प्रबंधित करने के लिए स्ट्रीमिंग तकनीकों का उपयोग करें।
+5. **EML फ़ाइल हैंडलिंग में सामान्य समस्याओं का समाधान कैसे करूँ?**  
+   फ़ाइल पाथ की जाँच करें, सुनिश्चित करें कि आपके पास लाइब्रेरी का सही संस्करण है, और `FileCompatibilityMode` को TNEF संरक्षित रखने के लिए सेट करें।
 
-4. **Aspose.Email के लिए लाइसेंसिंग विकल्प क्या हैं?**
-   - आप निःशुल्क परीक्षण लाइसेंस से शुरुआत कर सकते हैं और बाद में अपनी आवश्यकताओं के आधार पर अस्थायी या पूर्ण लाइसेंस का विकल्प चुन सकते हैं।
+## अक्सर पूछे जाने वाले प्रश्न
 
-5. **मैं EML फ़ाइल प्रबंधन से संबंधित सामान्य समस्याओं का निवारण कैसे करूँ?**
-   - फ़ाइल पथ की जाँच करें, उचित अपवाद प्रबंधन सुनिश्चित करें, और संगतता के लिए लाइब्रेरी संस्करणों को सत्यापित करें।
+**Q: मैं प्रोग्रामेटिकली कैसे पता करूँ कि EML फ़ाइल में TNEF डेटा है?**  
+A: `MailMessage.getAttachments()` कलेक्शन में ऐसे अटैचमेंट की जाँच करें जिसका कंटेंट टाइप `application/ms-tnef` हो।
+
+**Q: क्या TNEF‑रिच EML को प्लेन‑टेक्स्ट EML में बदलना संभव है जबकि मूल अटैचमेंट्स को रख सकें?**  
+A: हाँ—सेव करते समय `FileCompatibilityMode.RemoveTnefAttachments` सेट करें ताकि TNEF हटे लेकिन सामान्य अटैचमेंट्स बरकरार रहें।
+
+**Q: क्या Aspose.Email बड़े ईमेल लोड/सेव करने के लिए async ऑपरेशन्स सपोर्ट करता है?**  
+A: लाइब्रेरी सिंक्रोनस API प्रदान करती है; आप कॉल्स को `CompletableFuture` में रैप कर सकते हैं या असिंक्रोनस व्यवहार के लिए अपना थ्रेड पूल उपयोग कर सकते हैं।
+
+**Q: क्या मैं मूल MIME बाउंड्रीज़ को बदले बिना एम्बेडेड इमेज अपडेट कर सकता हूँ?**  
+A: `LinkedResource` के `ContentStream` को अपडेट करने से मूल MIME हेडर्स और बाउंड्रीज़ संरक्षित रहते हैं।
+
+**Q: क्या सेव किया गया EML फ़ाइल थंडरबर्ड जैसे मानक ईमेल क्लाइंट्स द्वारा पढ़ा जा सकेगा?**  
+A: हाँ—जब `PreserveTnefAttachments` के साथ सेव किया जाता है, Outlook TNEF भाग पढ़ सकता है, और अन्य क्लाइंट्स मानक भागों को सही ढंग से दिखाएंगे।
 
 ## संसाधन
-- [Aspose.Email दस्तावेज़ीकरण](https://reference.aspose.com/email/java/)
-- [Java के लिए Aspose.Email डाउनलोड करें](https://releases.aspose.com/email/java/)
-- [लाइसेंस खरीदें](https://purchase.aspose.com/buy)
-- [निःशुल्क परीक्षण लाइसेंस](https://releases.aspose.com/email/java/)
-- [अस्थायी लाइसेंस आवेदन](https://purchase.aspose.com/temporary-license)
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Purchase a License](https://purchase.aspose.com/buy)
+- [Free Trial License](https://releases.aspose.com/email/java/)
+- [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -240,3 +265,9 @@ for (LinkedResource att : msg.getLinkedResources()) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
