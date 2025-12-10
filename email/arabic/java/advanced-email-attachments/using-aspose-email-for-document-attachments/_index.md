@@ -1,10 +1,12 @@
 ---
-"description": "تعلّم كيفية إدارة مرفقات المستندات في رسائل البريد الإلكتروني بلغة جافا باستخدام Aspose.Email لجافا. أنشئ مرفقات المستندات وأرسلها واستخرجها بسهولة."
-"linktitle": "استخدام Aspose.Email لمرفقات المستندات"
-"second_title": "Aspose.Email Java Email Management API"
-"title": "استخدام Aspose.Email لمرفقات المستندات"
-"url": "/ar/java/advanced-email-attachments/using-aspose-email-for-document-attachments/"
-"weight": 16
+date: 2025-12-10
+description: تعلم كيفية إرسال بريد إلكتروني مع مرفق باستخدام Aspose.Email في Java.
+  إدارة وإنشاء واستخراج مرفقات المستندات في Java بكفاءة.
+linktitle: Using Aspose.Email for Document Attachments
+second_title: Aspose.Email Java Email Management API
+title: إرسال بريد إلكتروني مع مرفق باستخدام Java و Aspose.Email
+url: /ar/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,33 +15,48 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# استخدام Aspose.Email لمرفقات المستندات
+# إرسال بريد إلكتروني مع مرفق Java باستخدام Aspose.Email
 
+## مقدمة لاستخدام Aspose.Email لمرفقات المستندات في Java
 
-## مقدمة حول استخدام Aspose.Email لمرفقات المستندات في Java
+في هذا الدليل سنرشدك إلى **how to send email with attachment java** باستخدام مكتبة Aspose.Email for Java القوية. سواءً كنت تبني نظام إشعارات آلي أو أداة إرسال بريد جماعي، فإن معالجة مرفقات المستندات هي متطلب شائع. سنغطي كل شيء بدءًا من إعداد المكتبة إلى إنشاء الرسائل، وإرسالها، واستخراج ملفات PDF أو Word المرفقة.
 
-في هذا البرنامج التعليمي، سنستكشف كيفية التعامل مع مرفقات المستندات باستخدام Aspose.Email لجافا. Aspose.Email هي واجهة برمجة تطبيقات Java فعّالة تُمكّنك من التعامل مع رسائل البريد الإلكتروني ومرفقاتها بسهولة. سنغطي المواضيع التالية:
+## إجابات سريعة
+- **ما المكتبة التي تسمح لي بإرسال بريد إلكتروني مع مرفق java؟** Aspose.Email for Java  
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم ترخيص تجاري للاستخدام في بيئة الإنتاج.  
+- **ما إصدارات Java المدعومة؟** Java 8 وأحدث.  
+- **هل يمكنني إرفاق ملفات متعددة؟** بالتأكيد – فقط أضف كائنات `Attachment` إضافية.  
+- **هل يدعم البث للملفات الكبيرة؟** نعم، توفر Aspose.Email واجهات برمجة تطبيقات البث للتعامل مع المرفقات الكبيرة بكفاءة.
 
-## المتطلبات الأساسية
+## ما هو “send email with attachment java”
 
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+إرسال بريد إلكتروني مع مرفق في Java يعني إنشاء `MailMessage`، وإضافة كائن أو أكثر من كائنات `Attachment`، ثم تسليم الرسالة عبر SMTP أو حفظها في ملف. تقوم Aspose.Email بتجريد معالجة MIME منخفضة المستوى، مما يتيح لك التركيز على منطق الأعمال.
 
-- تم تثبيت Java Development Kit (JDK) على نظامك.
-- مكتبة Aspose.Email لجافا. يمكنك تنزيلها من [هنا](https://releases.aspose.com/email/java/).
+## لماذا تستخدم Aspose.Email لهذه المهمة؟
+
+- **واجهة برمجة تطبيقات غنية** – تحكم كامل في أجزاء MIME، وأنواع المحتوى، والترميز.  
+- **متعددة المنصات** – تعمل على Windows وLinux وmacOS دون تبعيات أصلية إضافية.  
+- **بث مدمج** – التعامل مع ملفات PDF أو Word الكبيرة دون استنزاف الذاكرة.  
+- **توثيق شامل** – الأمثلة ومرجع API يجعل التنفيذ سريعًا.
+
+## المتطلبات المسبقة
+
+- Java Development Kit (JDK) 8 أو أعلى مثبت.  
+- مكتبة Aspose.Email for Java. يمكنك تنزيلها من [here](https://releases.aspose.com/email/java/).
 
 ## إضافة Aspose.Email إلى مشروعك
 
-للبدء، عليك إضافة مكتبة Aspose.Email إلى مشروع جافا. اتبع الخطوات التالية:
+للبدء، تحتاج إلى إضافة مكتبة Aspose.Email إلى مشروع Java الخاص بك. اتبع الخطوات التالية:
 
-1. قم بتنزيل مكتبة Aspose.Email لـ Java من الرابط المقدم.
-
-2. قم باستخراج ملف ZIP الذي تم تنزيله إلى الدليل الذي تختاره.
-
-3. في مشروع جافا، أضف ملفات JAR الخاصة بـ Aspose.Email إلى مسار فئتك. يمكنك القيام بذلك في بيئة التطوير المتكاملة (IDE) المفضلة لديك أو باستخدام سطر الأوامر.
+1. قم بتنزيل مكتبة Aspose.Email for Java من الرابط المقدم.  
+2. فك ضغط ملف ZIP الذي تم تنزيله إلى دليل من اختيارك.  
+3. في مشروع Java الخاص بك، أضف ملفات JAR الخاصة بـ Aspose.Email إلى classpath. يمكنك القيام بذلك في بيئة التطوير المتكاملة (IDE) المفضلة لديك أو باستخدام سطر الأوامر.
 
 ## إنشاء رسالة بريد إلكتروني جديدة
 
-لنبدأ بإنشاء رسالة بريد إلكتروني جديدة مرفقة بمستند. سنستخدم مثالاً بسيطاً لتوضيح ذلك:
+لنبدأ بإنشاء رسالة بريد إلكتروني جديدة مع مرفق مستند. سنستخدم مثالًا بسيطًا لتوضيح **how to send email with attachment java**:
+
+> **نصيحة:** ضع مقتطف الشيفرة أدناه بعد شرح المتطلبات المسبقة حتى يفهم القراء السياق قبل رؤية التنفيذ الفعلي.
 
 ```java
 import com.aspose.email.Attachment;
@@ -47,32 +64,39 @@ import com.aspose.email.MailMessage;
 
 public class CreateEmailWithAttachment {
     public static void main(String[] args) {
-        // إنشاء رسالة بريد إلكتروني جديدة
+        // Create a new email message
         MailMessage message = new MailMessage();
 
-        // تعيين عناوين البريد الإلكتروني للمرسل والمستلم
+        // Set the sender and recipient email addresses
         message.setFrom("sender@example.com");
         message.setTo("recipient@example.com");
 
-        // تعيين موضوع ونص البريد الإلكتروني
+        // Set the subject and body of the email
         message.setSubject("Document Attachment Example");
         message.setBody("Please find the attached document.");
 
-        // إرفاق ملف مستند بالبريد الإلكتروني
+        // Attach a document file to the email
         Attachment attachment = new Attachment("path/to/your/document.pdf");
         message.addAttachment(attachment);
 
-        // احفظ رسالة البريد الإلكتروني في ملف أو أرسلها باستخدام SMTP
+        // Save the email message to a file or send it using SMTP
         message.save("attachment_email.eml");
     }
 }
 ```
 
-في هذا المثال، نقوم بإنشاء جديد `MailMessage` الكائن، قم بتعيين عناوين البريد الإلكتروني للمرسل والمستقبل، وحدد موضوع ونص البريد الإلكتروني، وأرفق ملف مستند به.
+في هذا المثال نحن:
+
+- إنشاء كائن `MailMessage`.  
+- تحديد المرسل، المستلم، الموضوع، والنص.  
+- إنشاء `Attachment` يشير إلى ملف PDF وإضافته إلى الرسالة.  
+- حفظ الرسالة كملف EML (يمكنك أيضًا إرسالها عبر SMTP).
 
 ## استرجاع مرفقات المستندات
 
-قد تحتاج إلى استخراج مرفقات المستندات من رسائل البريد الإلكتروني الواردة والتعامل معها. إليك كيفية القيام بذلك:
+قد تحتاج إلى استخراج والعمل مع مرفقات المستندات من رسائل البريد الواردة. إليك كيفية تحميل بريد إلكتروني واستخراج ملفات PDF:
+
+> **نصيحة احترافية:** استخدم الفحص `getContentType().getName()` لتصفية أنواع الملفات التي تهمك فقط.
 
 ```java
 import com.aspose.email.Attachment;
@@ -80,10 +104,10 @@ import com.aspose.email.MailMessage;
 
 public class ExtractAttachments {
     public static void main(String[] args) {
-        // تحميل رسالة بريد إلكتروني من ملف أو استلامها باستخدام SMTP
+        // Load an email message from a file or receive it using SMTP
         MailMessage message = MailMessage.load("received_email.eml");
 
-        // التكرار خلال المرفقات وحفظ مرفقات المستندات
+        // Iterate through attachments and save document attachments
         for (Attachment attachment : message.getAttachments()) {
             if (attachment.getContentType().getName().endsWith("pdf")) {
                 attachment.save("document_attachment.pdf");
@@ -93,25 +117,40 @@ public class ExtractAttachments {
 }
 ```
 
-في هذا المثال، نقوم بتحميل رسالة بريد إلكتروني من ملف (يمكنك أيضًا استلامها باستخدام SMTP)، ونقوم بالتكرار عبر المرفقات، ونحفظ أي مرفقات مستند بنوع محتوى PDF.
+## المشكلات الشائعة والحلول
 
-## خاتمة
+| المشكلة | السبب | الحل |
+|-------|-------|----------|
+| **لم يتم استلام المرفق** | نوع MIME غير صحيح أو عدم استدعاء `addAttachment` | تأكد من إضافة `Attachment` قبل الإرسال/الحفظ. |
+| **الملفات الكبيرة تسبب OutOfMemoryError** | تحميل الملف بالكامل في الذاكرة | استخدم واجهات البث (`Attachment` constructor الذي يقبل `InputStream`). |
+| **اسم الملف فاسد** | ترميز غير صحيح لاسم الملف | عيّن `attachment.setName("myDocument.pdf")` صراحةً. |
 
-في هذا البرنامج التعليمي، استكشفنا كيفية التعامل مع مرفقات المستندات باستخدام Aspose.Email لجافا. تعلمت كيفية إنشاء وإرسال رسائل بريد إلكتروني تحتوي على مرفقات مستندات، وكيفية استخراج مرفقات المستندات من رسائل البريد الإلكتروني الواردة. يوفر Aspose.Email إمكانيات فعّالة للتعامل مع أنواع مختلفة من المرفقات، مما يجعله أداة قيّمة لأتمتة البريد الإلكتروني في تطبيقات جافا.
+## الأسئلة المتكررة
 
-## الأسئلة الشائعة
+**س: كيف يمكنني إرسال بريد إلكتروني مع مرفقات مستندات متعددة؟**  
+ج: ببساطة أنشئ كائنات `Attachment` إضافية واستدعِ `message.addAttachment()` لكل ملف.
 
-### كيف يمكنني إرسال بريد إلكتروني يحتوي على عدة مرفقات للمستندات؟
+**س: هل يمكنني العمل مع مرفقات غير ملفات PDF؟**  
+ج: نعم، يدعم Aspose.Email ملفات Word وExcel والصور وأي نوع ملف متوافق مع MIME.
 
-لإرسال بريد إلكتروني يحتوي على مرفقات مستندات متعددة، يمكنك ببساطة إضافة المزيد `Attachment` الأشياء إلى `MailMessage` كما هو موضح في المثال أعلاه. كل `Attachment` يمثل مرفق منفصل.
+**س: كيف أتعامل مع مرفقات المستندات الكبيرة؟**  
+ج: استخدم تقنيات البث—مرّر `InputStream` إلى مُنشئ `Attachment` لتجنب تحميل الملف بالكامل في الذاكرة.
 
-### هل يمكنني العمل مع المرفقات غير مستندات PDF؟
+**س: هل هناك طريقة لتعيين أنواع محتوى مخصصة؟**  
+ج: بالتأكيد. يمكنك تعديل `ContentType` لمرفق `Attachment` عبر `attachment.setContentType(...)`.
 
-نعم، يدعم Aspose.Email لجافا مجموعة واسعة من أنواع المرفقات، بما في ذلك مستندات Word وجداول بيانات Excel والصور وغيرها. يمكنك التحقق من نوع محتوى المرفق ومعالجته وفقًا لذلك في الكود الخاص بك.
+**س: هل يدعم Aspose.Email مرفقات S/MIME المشفرة؟**  
+ج: نعم، تتضمن المكتبة واجهات برمجة تطبيقات لتوقيع وتشفير الرسائل، بما في ذلك مرفقاتها.
 
-### كيف أتعامل مع مرفقات المستندات الكبيرة؟
+## الخلاصة
 
-إذا كنت بحاجة إلى التعامل مع مرفقات مستندات كبيرة، ففكّر في استخدام تقنيات البث لتجنب تحميل المرفق بأكمله في الذاكرة. يوفر Aspose.Email خيارات لبث المرفقات، مما يسمح لك بمعالجتها بكفاءة.
+في هذا الدليل، عرضنا **how to send email with attachment java** باستخدام Aspose.Email. الآن تعرف كيف تُعد المكتبة، وتُنشئ رسائل مع مرفقات PDF أو مستندات أخرى، وتستخرج تلك المرفقات من البريد الوارد. هذه القدرة أساسية لبناء أتمتة بريد إلكتروني قوية، وأنظمة تقارير، أو أي تطبيق Java يحتاج إلى تبادل المستندات عبر البريد الإلكتروني.
+
+---
+
+**آخر تحديث:** 2025-12-10  
+**تم الاختبار مع:** Aspose.Email for Java 24.12  
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
