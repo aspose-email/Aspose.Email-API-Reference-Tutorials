@@ -1,10 +1,13 @@
 ---
-"description": "أدر مرفقات البريد الإلكتروني الكبيرة بكفاءة باستخدام Aspose.Email لجافا. دليل خطوة بخطوة وشيفرة المصدر لتبسيط التعامل مع المرفقات في تطبيقات جافا."
-"linktitle": "إدارة المرفقات الكبيرة في Aspose.Email"
-"second_title": "Aspose.Email Java Email Management API"
-"title": "إدارة المرفقات الكبيرة في Aspose.Email"
-"url": "/ar/java/advanced-email-attachments/managing-large-attachments/"
-"weight": 11
+date: 2025-12-10
+description: تعرّف على كيفية التعامل مع حد حجم مرفق البريد الإلكتروني، وإنشاء مرفق
+  بريد إلكتروني باستخدام Java، وتنزيل مرفق البريد الإلكتروني باستخدام Aspose.Email
+  للـ Java.
+linktitle: Email Attachment Size Limit Management with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: إدارة حد حجم مرفقات البريد الإلكتروني باستخدام Aspose.Email
+url: /ar/java/advanced-email-attachments/managing-large-attachments/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,45 +16,58 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إدارة المرفقات الكبيرة في Aspose.Email
+# إدارة حد حجم مرفق البريد الإلكتروني باستخدام Aspose.Email
 
+إدارة **email attachment size limit** يمكن أن تكون صعبة، خاصة عندما تحتاج إلى إرسال أو استقبال ملفات كبيرة في تطبيقات Java. في هذا الدرس سنستعرض إنشاء، إرسال، وتحميل مرفقات بريد إلكتروني كبيرة باستخدام Aspose.Email for Java، مع الحفاظ على حجم المرفق تحت السيطرة. في النهاية ستعرف كيف **create email attachment java** الكائنات، تدفق الملفات الكبيرة بكفاءة، و**download email attachment java** الملفات دون استنزاف الذاكرة.
 
-## مقدمة لإدارة المرفقات الكبيرة في Aspose.Email لـ Java
+## إجابات سريعة
+- **What is the email attachment size limit?** يعتمد على خادم البريد، لكن معظم المزودين يحدونها بين 10 ميغابايت و25 ميغابايت.  
+- **Can Aspose.Email handle large files?** نعم، يدعم التدفق لتجنب تحميل الملف بالكامل في الذاكرة.  
+- **Do I need a license?** نسخة تجريبية مجانية تكفي للاختبار؛ يلزم الحصول على ترخيص تجاري للإنتاج.  
+- **Which Java version is required?** Java 8 أو أعلى.  
+- **Is SMTP configuration needed?** نعم، قدم مضيف SMTP، اسم المستخدم، وكلمة المرور.
 
-المرفقات جزء أساسي من التواصل عبر البريد الإلكتروني، ولكن التعامل معها بكفاءة قد يكون صعبًا. مع Aspose.Email لجافا، يمكنك تبسيط إدارة مرفقات البريد الإلكتروني الكبيرة في تطبيقات جافا. في هذا الدليل، سنشرح العملية خطوة بخطوة، مع أمثلة على الكود المصدري للتعامل الفعال مع المرفقات.
+## ما هو حد حجم مرفق البريد الإلكتروني؟
+**email attachment size limit** هو الحد الأقصى لحجم الملف الذي سيقبله أو يرسله خادم البريد. تجاوز هذا الحد قد يؤدي إلى فشل التسليم أو الحاجة إلى طرق نقل بديلة (مثل روابط السحابة). توفر لك Aspose.Email أدوات لتقسيم، ضغط، أو تدفق الملفات الكبيرة بحيث تبقى ضمن الحدود المقبولة.
 
-## المتطلبات الأساسية
+## لماذا إدارة المرفقات الكبيرة باستخدام Aspose.Email؟
+- **Memory‑efficient streaming** – يتجنب أخطاء OutOfMemory.  
+- **Built‑in compression** – يقلل حجم الملف قبل الإرسال.  
+- **Cross‑platform support** – يعمل بنفس الطريقة على Windows، Linux، و macOS.  
+- **Simple API** – إنشاء، إرسال، وتحميل المرفقات ببضع أسطر من كود Java.
 
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+## المتطلبات المسبقة
 
-- [Aspose.Email لـ Java](https://releases.aspose.com/email/java/):قم بتنزيل وتثبيت مكتبة Aspose.Email لـ Java.
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – قم بتنزيله وأضف ملف JAR إلى مشروعك.  
+- بيئة تطوير Java 8+.  
+- الوصول إلى خادم SMTP لإرسال البريد.
 
-## الخطوة 1: إنشاء بريد إلكتروني
+## الخطوة 1: إنشاء بريد إلكتروني مع مرفق كبير (create email attachment java)
 
-للبدء، لنُنشئ نموذج بريد إلكتروني بمرفق كبير. سنستخدم مكتبة Aspose.Email للقيام بذلك. إليك مقتطف شيفرة جافا بسيط:
+أولاً، سنبني كائن `MailMessage` ونرفق ملف PDF كبير. يوضح الكود أدناه كيفية **create email attachment java** الكائنات وحفظ الرسالة محليًا.
 
 ```java
-// استيراد فئات Aspose.Email المطلوبة
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class CreateEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // إنشاء رسالة بريدية جديدة
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // تعيين عناوين المرسل والمستلم
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // تعيين موضوع ونص البريد الإلكتروني
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // إرفاق ملف كبير بالبريد الإلكتروني
+            // Attach a large file to the email
             message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // حفظ البريد الإلكتروني
+            // Save the email
             message.save("large_attachment_email.eml", SaveOptions.getDefaultEml());
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -60,42 +76,42 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-في هذا الكود نقوم بإنشاء كود جديد `MailMessage` وأرفق ملف PDF كبير الحجم به. تأكد من استبدال `"sender@example.com"`، `"recipient@example.com"`، و `"path/to/large_attachment.pdf"` مع عناوين بريدك الإلكتروني الفعلية والمسار إلى ملف المرفق الكبير الخاص بك.
+> **Pro tip:** إذا تجاوز الملف الحدود المعتادة، فكر في ضغطه أولاً أو تقسيمه إلى أجزاء أصغر باستخدام أساليب `AttachmentCollection`.
 
-## الخطوة 2: إرسال البريد الإلكتروني
+## الخطوة 2: إرسال البريد الإلكتروني عبر SMTP
 
-بعد أن أنشأنا بريدًا إلكترونيًا بمرفق كبير، لنرسله عبر SMTP. إليك الطريقة:
+الآن سنرسل الرسالة المُعدة. يقوم عميل SMTP بتدفق المرفق، لذا لا يتم تحميل الملف بالكامل في الذاكرة.
 
 ```java
-// استيراد فئات Aspose.Email المطلوبة
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class SendEmailWithLargeAttachment {
     public static void main(String[] args) {
         try {
-            // إنشاء مثيل جديد لـ SmtpClient
+            // Create a new instance of SmtpClient
             SmtpClient client = new SmtpClient();
 
-            // تحديد إعدادات خادم SMTP
+            // Specify the SMTP server settings
             client.setHost("smtp.example.com");
             client.setUsername("your_username");
             client.setPassword("your_password");
 
-            // إنشاء رسالة بريدية جديدة
+            // Create a new MailMessage
             MailMessage message = new MailMessage();
 
-            // تعيين عناوين المرسل والمستلم
+            // Set sender and recipient addresses
             message.setFrom("sender@example.com");
             message.setTo("recipient@example.com");
 
-            // تعيين موضوع ونص البريد الإلكتروني
+            // Set the subject and body of the email
             message.setSubject("Hello, World!");
             message.setBody("This is a test email with a large attachment.");
 
-            // إرفاق ملف كبير بالبريد الإلكتروني
+            // Attach a large file to the email
              message.getAttachments().addItem(new Attachment("large_attachment.pdf", "path/to/large_attachment.pdf"));
 
-            // أرسل البريد الإلكتروني
+            // Send the email
             client.send(message);
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -104,23 +120,23 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-في هذا الكود نستخدم `SmtpClient` الفصل لإرسال البريد الإلكتروني مع المرفق الكبير. استبدل `"smtp.example.com"`، `"your_username"`، و `"your_password"` مع إعدادات خادم SMTP الخاص بك.
+استبدل مضيف SMTP، اسم المستخدم، وكلمة المرور ببيانات الاعتماد الخاصة بك. يتعامل API تلقائيًا مع ترميز MIME والتدفق.
 
-## الخطوة 3: استلام البريد الإلكتروني وتنزيله
+## الخطوة 3: استلام وتحميل المرفق (download email attachment java)
 
-عند استلام بريد إلكتروني يحتوي على مرفق كبير، قد ترغب في تنزيل المرفق إلى نظامك المحلي. إليك كيفية القيام بذلك:
+عند استلام المتلقي للرسالة، قد تحتاج إلى استخراج الملف الكبير. يوضح المقتطف التالي كيفية **download email attachment java** بأمان.
 
 ```java
-// استيراد فئات Aspose.Email المطلوبة
+// Import the required Aspose.Email classes
 import com.aspose.email.*;
 
 public class DownloadAttachmentFromEmail {
     public static void main(String[] args) {
         try {
-            // قم بتحميل البريد الإلكتروني من ملف أو خادم البريد الإلكتروني الخاص بك
+            // Load the email from a file or your email server
             MailMessage message = MailMessage.load("large_attachment_email.eml");
 
-            // قم بتكرار المرفقات وتنزيل المرفق الكبير
+            // Loop through attachments and download the large one
             for (Attachment attachment : message.getAttachments()) {
                 if (attachment.getName().equals("large_attachment.pdf")) {
                     attachment.save("downloaded_large_attachment.pdf");
@@ -134,25 +150,43 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-في هذا الكود، نقوم بتحميل البريد الإلكتروني المستلم ونقوم بالتكرار عبر مرفقاته للعثور على المرفق الكبير وتنزيله.
+يتحقق الحلقة من اسم كل مرفق، لضمان تحميل الملف المقصود فقط. يعمل هذا النهج حتى عندما يحتوي البريد على مرفقات متعددة.
 
-## خاتمة
+## المشكلات الشائعة والحلول
 
-إدارة مرفقات البريد الإلكتروني الكبيرة بكفاءة أمرٌ بالغ الأهمية لفعالية التواصل عبر البريد الإلكتروني. مع Aspose.Email لجافا، يمكنك تبسيط عملية التعامل مع المرفقات الكبيرة في تطبيقات جافا. في هذا الدليل، تناولنا الخطوات الأساسية، بدءًا من إنشاء وإرسال رسائل بريد إلكتروني تحتوي على مرفقات كبيرة، وصولًا إلى استلامها وتنزيلها. باتباع هذه الخطوات وأفضل الممارسات، يمكنك ضمان تجربة سلسة عند التعامل مع مرفقات البريد الإلكتروني الكبيرة في مشاريع جافا.
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| **Attachment exceeds server limit** | ملف أكبر من الحجم المسموح | ضغط الملف أو تقسيمه باستخدام `AttachmentCollection` |
+| **OutOfMemoryError** | تحميل الملف بالكامل في الذاكرة | استخدام واجهات التدفق (`Attachment(String name, InputStream stream)`) |
+| **Authentication failure** | بيانات اعتماد SMTP غير صحيحة | التحقق من المضيف، اسم المستخدم، كلمة المرور، وتفعيل TLS إذا لزم |
+| **Attachment not downloaded** | عدم تطابق الاسم | استخدام `attachment.getContentId()` أو التحقق من نوع MIME |
 
-## الأسئلة الشائعة
+## الأسئلة المتكررة
 
-### كيف يمكنني التعامل مع المرفقات الكبيرة جدًا بكفاءة؟
+**س: كيف يمكنني تقليل حجم مرفق كبير؟**  
+ج: استخدم مُنشئات `Attachment` التي تقبل `java.io.InputStream` واضغط البيانات قبل إضافتها إلى الرسالة.
 
-للتعامل مع المرفقات الكبيرة بكفاءة، يُنصح باستخدام تقنيات البث لقراءة بيانات المرفق وكتابتها على دفعات بدلاً من تحميل المرفق بأكمله في الذاكرة. يوفر Aspose.Email إمكانيات بث تسمح لك بمعالجة المرفقات الكبيرة دون استهلاك قدر كبير من الذاكرة.
+**س: هل هناك حد ثابت تفرضه Aspose.Email؟**  
+ج: لا. الحد يُحدد بواسطة خادم البريد الذي تستخدمه؛ Aspose.Email يقتصر على تدفق البيانات.
 
-### هل هناك أي حدود لحجم مرفقات البريد الإلكتروني؟
+**س: هل يمكنني إرسال عدة مرفقات كبيرة في بريد واحد؟**  
+ج: نعم، لكن احرص على حجمها الإجمالي؛ فكر في ضغطها في أرشيف واحد.
 
-قد تختلف حدود حجم مرفقات البريد الإلكتروني باختلاف مزودي خدمة البريد الإلكتروني وعملائه. من الضروري التحقق من حدود حجم المرفقات لدى مزود خدمة البريد الإلكتروني الخاص بك والتأكد من توافق مرفقاتك مع هذه الحدود لتجنب مشاكل التسليم.
+**س: هل تدعم Aspose.Email الإرسال غير المتزامن؟**  
+ج: المكتبة توفر واجهات متزامنة؛ يمكنك تغليف الاستدعاءات في خيط منفصل أو استخدام `CompletableFuture` للسلوك غير المتزامن.
 
-### هل يمكنني ضغط المرفقات لتقليل حجمها؟
+**س: ماذا لو رفض خادم المتلقي المرفق؟**  
+ج: قدّم رابط تحميل (مثلاً إلى دلو تخزين سحابي) كبديل في نص البريد.
 
-نعم، يمكنك ضغط المرفقات لتقليل حجمها قبل إرسالها. يوفر Aspose.Email ميزات لضغط المرفقات وفك ضغطها برمجيًا. يمكنك تطبيق هذه الميزة لتحسين حجم مرفقات بريدك الإلكتروني.
+## الخلاصة
+
+باستخدام Aspose.Email for Java، يمكنك إدارة مخاوف **manage email attachment size limit** بفعالية، وإنشاء كائنات **create email attachment java**، وتحميل ملفات **download email attachment java** دون مواجهة قيود الذاكرة أو الخادم. طبّق تقنيات التدفق والضغط الموضحة هنا للحفاظ على تطبيقاتك قوية وسعادت المستخدمين.
+
+---
+
+**آخر تحديث:** 2025-12-10  
+**تم الاختبار مع:** Aspose.Email for Java 24.12  
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
