@@ -1,9 +1,14 @@
 ---
-"date": "2025-05-29"
-"description": "Java के लिए Aspose.Email के साथ ईमेल अटैचमेंट हैंडलिंग में महारत हासिल करें। अपने Java अनुप्रयोगों में अटैचमेंट को प्रभावी ढंग से लोड, पार्स और सेव करना सीखें।"
-"title": "Aspose.Email for Java&#58; ईमेल अनुलग्नकों को कुशलतापूर्वक पार्स और सेव कैसे करें"
-"url": "/hi/java/attachments-handling/aspose-email-java-parse-save-attachments/"
-"weight": 1
+date: '2025-12-11'
+description: जावा में ईमेल अटैचमेंट्स को पार्स करना और Aspose.Email for Java का उपयोग
+  करके ईमेल अटैचमेंट को स्वचालित रूप से सहेजना सीखें – एक चरण‑दर‑चरण मार्गदर्शिका।
+keywords:
+- Aspose.Email for Java
+- parse email attachments Java
+- save email attachments Java
+title: Aspose.Email का उपयोग करके जावा में ईमेल अटैचमेंट्स को पार्स करें
+url: /hi/java/attachments-handling/aspose-email-java-parse-save-attachments/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +16,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# जावा के लिए Aspose.Email में महारत हासिल करना: ईमेल अनुलग्नकों को पार्स करना और सहेजना
+# Aspose.Email के साथ जावा में ईमेल अटैचमेंट्स पार्स करें
 
-आज के डिजिटल युग में, ईमेल अटैचमेंट को कुशलतापूर्वक प्रबंधित करना व्यवसायों और डेवलपर्स के लिए महत्वपूर्ण है। चाहे वर्कफ़्लो को स्वचालित करना हो या बड़ी मात्रा में ईमेल संसाधित करना हो, सहज अटैचमेंट हैंडलिंग समय बचा सकती है और त्रुटियों को कम कर सकती है। यह ट्यूटोरियल जावा के लिए Aspose.Email की शक्ति का परिचय देता है - एक मजबूत लाइब्रेरी जिसे पार्सिंग और अटैचमेंट को सहेजने जैसे ईमेल प्रबंधन कार्यों को सरल बनाने के लिए डिज़ाइन किया गया है।
+आज के डिजिटल युग में, **parse email attachments java** को कुशलतापूर्वक करना उन डेवलपर्स के लिए आवश्यक है जो स्वचालित वर्कफ़्लो, आर्काइविंग समाधान, या कस्टमर‑सपोर्ट टूल बना रहे हैं। Aspose.Email for Java के साथ आप जल्दी से प्रत्येक अटैचमेंट को लोड, निरीक्षण और स्टोर कर सकते हैं जबकि आपका कोड साफ़ और मेंटेनेबल रहता है। यह ट्यूटोरियल आपको पूरी प्रक्रिया के माध्यम से ले जाता है—लाइब्रेरी सेटअप से लेकर एम्बेडेड संदेशों को हैंडल करने तक—ताकि आप अपने एप्लिकेशन में **automate email attachment saving** भी कर सकें।
 
-**आप क्या सीखेंगे:**
-- Aspose.Email का उपयोग करके ईमेल संदेशों को कैसे लोड और पार्स करें
-- ईमेल से अनुलग्नक विवरण निकालने की तकनीकें
-- ईमेल अनुलग्नकों को डिस्क पर सुरक्षित रूप से सहेजने के चरण
-- एम्बेडेड ईमेल संदेशों से पुनरावर्ती रूप से निपटने के तरीके
+## त्वरित उत्तर
+- **Java में ईमेल अटैचमेंट्स को संभालने वाली लाइब्रेरी कौन सी है?** Aspose.Email for Java.  
+- **क्या मैं लाइसेंस के बिना parse email attachments java कर सकता हूँ?** हाँ, लेकिन मूल्यांकन सीमाओं के साथ।  
+- **कौन सी Maven डिपेंडेंसी आवश्यक है?** `com.aspose:aspose-email:25.4` with the `jdk16` classifier.  
+- **अटैचमेंट्स को डिस्क पर कैसे सहेजें?** फ़ाइल नाम को साफ़ करने के बाद `Attachment.save` मेथड का उपयोग करें।  
+- **क्या एम्बेडेड ईमेल्स का पुनरावर्ती पार्सिंग समर्थित है?** हाँ, एम्बेडेड `.eml` फ़ाइलों को लोड करके उन्हें फिर से प्रोसेस करके।  
 
-आइए इन शक्तिशाली कार्यात्मकताओं में गोता लगाने से पहले पूर्वावश्यकताओं की समीक्षा करें।
+## parse email attachments java क्या है?
+जावा में ईमेल अटैचमेंट्स को पार्स करना मतलब एक ईमेल फ़ाइल (जैसे *.eml*) को पढ़ना, प्रत्येक `Attachment` ऑब्जेक्ट को निकालना, और वैकल्पिक रूप से बाइनरी डेटा को फ़ाइल सिस्टम या डेटाबेस में सहेजना। Aspose.Email लो‑लेवल MIME हैंडलिंग को एब्स्ट्रैक्ट करता है, जिससे आप बिज़नेस लॉजिक पर ध्यान केंद्रित कर सकते हैं।
 
-## आवश्यक शर्तें
+## ईमेल अटैचमेंट सहेजने को स्वचालित क्यों करें?
+सहेजने की प्रक्रिया को स्वचालित करने से मैन्युअल त्रुटियों को समाप्त किया जाता है, डेटा इन्जेशन पाइपलाइन तेज़ होती है, और रिटेंशन पॉलिसी के साथ अनुपालन सुनिश्चित होता है। यह ईमेल सामग्री को CRM, ERP, या एनालिटिक्स प्लेटफ़ॉर्म जैसे डाउनस्ट्रीम सिस्टम में एकीकृत करना भी आसान बनाता है।
 
-साथ चलने के लिए आपको चाहिए:
-- **Aspose.Email for Java लाइब्रेरी**सुनिश्चित करें कि आपके पास संस्करण 25.4 या बाद का संस्करण है।
-- **मावेन पर्यावरण**हम निर्भरताओं को प्रबंधित करने के लिए मावेन का उपयोग करेंगे।
-- **जावा डेवलपमेंट किट (JDK)**: Aspose.Email के साथ संगतता के लिए संस्करण 16 की अनुशंसा की जाती है।
+## पूर्वापेक्षाएँ
+- **Aspose.Email for Java** (संस्करण 25.4 या नया)।  
+- **Maven** डिपेंडेंसी मैनेजमेंट के लिए।  
+- **JDK 16** (या बाद का) आपके विकास मशीन पर स्थापित होना चाहिए।
 
-### आवश्यक लाइब्रेरी और निर्भरताएँ
-
-अपने में निम्नलिखित निर्भरता जोड़ें `pom.xml` फ़ाइल:
+### आवश्यक लाइब्रेरीज़ और डिपेंडेंसियां
+`pom.xml` फ़ाइल में निम्नलिखित डिपेंडेंसी जोड़ें:
 
 ```xml
 <dependency>
@@ -44,18 +51,15 @@
 ```
 
 ### पर्यावरण सेटअप
+सुनिश्चित करें कि Maven आपके `PATH` में है और `java -version` JDK 16 या उससे ऊपर दिखा रहा है।
 
-सुनिश्चित करें कि आपके सिस्टम पर Maven सही तरीके से स्थापित और कॉन्फ़िगर है, साथ ही एक वैध जावा डेवलपमेंट किट (JDK) वातावरण भी है।
+### लाइसेंस प्राप्त करने के चरण
+1. **Free Trial** – लाइब्रेरी को बिना लागत के एक्सप्लोर करें।  
+2. **Temporary License** – पूर्ण फीचर एक्सेस के लिए ट्रायल लाइसेंस प्राप्त करें।  
+3. **Purchase** – [Aspose Purchase](https://purchase.aspose.com/buy) से सब्सक्रिप्शन खरीदें।
 
-### लाइसेंस प्राप्ति चरण
-
-1. **मुफ्त परीक्षण**लाइब्रेरी का पता लगाने के लिए Aspose के निःशुल्क परीक्षण से शुरुआत करें।
-2. **अस्थायी लाइसेंस**यदि आवश्यक हो तो अस्थायी लाइसेंस के लिए आवेदन करें, जो मूल्यांकन अवधि के दौरान बिना किसी सीमा के पूर्ण पहुंच की अनुमति देता है।
-3. **खरीदना**: निरंतर उपयोग के लिए, यहां से सदस्यता खरीदें [Aspose खरीद](https://purchase.aspose.com/buy).
-
-### मूल आरंभीकरण
-
-यहां बताया गया है कि आप अपने जावा प्रोजेक्ट में Aspose.Email को कैसे आरंभ कर सकते हैं:
+### बेसिक इनिशियलाइज़ेशन
+यहाँ बताया गया है कि आप अपने जावा प्रोजेक्ट में Aspose.Email को कैसे इनिशियलाइज़ कर सकते हैं:
 
 ```java
 import com.aspose.email.License;
@@ -64,7 +68,7 @@ public class AsposeInitializer {
     public static void setLicense() {
         License license = new License();
         try {
-            // अपनी लाइसेंस फ़ाइल के पथ से बदलें
+            // Replace with the path to your license file
             license.setLicense("path/to/your/license.lic");
         } catch (Exception e) {
             System.out.println("Failed to apply license: " + e.getMessage());
@@ -73,145 +77,124 @@ public class AsposeInitializer {
 }
 ```
 
-## Java के लिए Aspose.Email सेट अप करना
+## Aspose.Email for Java सेटअप करना
+Maven को कॉन्फ़िगर करने के बाद, लाइब्रेरी को अपने प्रोजेक्ट में जोड़ें और अपने एप्लिकेशन लाइफ़साइकल में शुरुआती चरण में `AsposeInitializer.setLicense()` को कॉल करें।
 
-एक बार जब आपके पास Maven और JDK तैयार हो जाए, तो आपके प्रोजेक्ट में Aspose.Email सेट अप करने का समय आ गया है।
+## इम्प्लीमेंटेशन गाइड
+हम चार मुख्य चरणों को कवर करेंगे: ईमेल लोड करना, उसके अटैचमेंट्स को पार्स करना, उन्हें सहेजना, और एम्बेडेड संदेशों को पुनरावर्ती रूप से हैंडल करना।
 
-### मावेन के माध्यम से इंस्टॉल करना
+### फ़ाइल से ईमेल संदेश कैसे लोड करें
+**Overview** – एक `.eml` फ़ाइल को `MailMessage` ऑब्जेक्ट में लोड करें।
 
-जैसा कि ऊपर दिखाया गया है, अपने में निर्भरता जोड़ें `pom.xml`यह सुनिश्चित करता है कि निर्माण प्रक्रिया के दौरान सभी आवश्यक मॉड्यूल स्वचालित रूप से मावेन द्वारा डाउनलोड किए जाएं।
+```java
+String dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
 
-### लाइसेंस सेटअप
+```java
+MailMessage message = MailMessage.load(dataDir + "EmailWithAttandEmbedded.eml");
+System.out.println("Email loaded successfully.");
+```
 
-सुनिश्चित करें कि यदि आवश्यक हो तो आपने लाइसेंस सेट अप किया है। लाइसेंस का उपयोग करने से मूल्यांकन सीमाएँ हट जाती हैं और Aspose.Email सुविधाओं तक पूर्ण पहुँच मिलती है।
+### parse email attachments java कैसे पार्स करें
+**Overview** – `Attachments` कलेक्शन पर इटररेट करें और उपयोगी मेटाडेटा निकालें।
 
-## कार्यान्वयन मार्गदर्शिका
+```java
+for (int i = 0; i < message.getAttachments().size(); i++) {
+    Attachment att = (Attachment) message.getAttachments().get_Item(i);
+    String attFileName = sanitizeFileName(att.getName());
+    String attExt = extractFileExtension(att.getName());
 
-हम अपने कार्यान्वयन को मुख्य विशेषताओं में विभाजित करेंगे: ईमेल लोड करना, अनुलग्नकों को पार्स करना, उन्हें सहेजना, तथा एम्बेडेड संदेशों से निपटना।
+    System.out.println("Attachment Name: " + attFileName + attExt);
+}
+```
 
-### फ़ाइल से ईमेल संदेश लोड करना
-**अवलोकन**: यह सुविधा दर्शाती है कि आप ईमेल फ़ाइलों को कैसे लोड कर सकते हैं `MailMessage.load` Aspose.Email द्वारा प्रदान की गई विधि.
+```java
+private static String sanitizeFileName(String fileName) {
+    return fileName.replace(":", " ").replace("\\", " ")
+                   .replace("/", " ").replace("?", "")
+                   .substring(0, Math.min(fileName.length(), 50));
+}
+```
 
-#### कार्यान्वयन चरण
-1. **दस्तावेज़ निर्देशिका सेट अप करें**: निर्धारित करें कि आपकी ईमेल फ़ाइलें कहाँ संग्रहीत हैं.
-   
-   ```java
-   String dataDir = "YOUR_DOCUMENT_DIRECTORY";
-   ```
+```java
+private static String extractFileExtension(String fileName) {
+    int lastIndex = fileName.lastIndexOf(".");
+    return (lastIndex != -1) ? fileName.substring(lastIndex) : "";
+}
+```
 
-2. **ईमेल संदेश लोड करें**:
-   
-   ```java
-   MailMessage message = MailMessage.load(dataDir + "EmailWithAttandEmbedded.eml");
-   System.out.println("Email loaded successfully.");
-   ```
+### email attachments java कैसे सहेजें
+**Overview** – प्रत्येक अटैचमेंट को चुने हुए आउटपुट फ़ोल्डर में सहेजें।
 
-3. **अपवादों को संभालें**: सुनिश्चित करें कि आप समस्याओं का कुशलतापूर्वक निवारण करने के लिए किसी भी अपवाद को पकड़ें और लॉग करें।
+```java
+public static void saveAttachment(Attachment attachment, String outputDir) {
+    String attFileName = sanitizeFileName(attachment.getName());
+    String attExt = extractFileExtension(attachment.getName());
 
-### ईमेल अनुलग्नकों को पार्स करना
-**अवलोकन**यह सुविधा ईमेल संदेश से अनुलग्नक विवरण निकालती है, जिससे आगे की प्रक्रिया या विश्लेषण संभव हो जाता है।
+    attachment.save(outputDir + attFileName + attExt);
+}
+```
 
-#### कार्यान्वयन चरण
-1. **अनुलग्नकों के माध्यम से लूप**:
-   
-   ```java
-   for (int i = 0; i < message.getAttachments().size(); i++) {
-       Attachment att = (Attachment) message.getAttachments().get_Item(i);
-       String attFileName = sanitizeFileName(att.getName());
-       String attExt = extractFileExtension(att.getName());
+### एम्बेडेड संदेशों के लिए ईमेल अटैचमेंट सहेजने को स्वचालित कैसे करें
+**Overview** – एम्बेडेड `.eml` फ़ाइलों या टेक्स्ट प्लेसहोल्डर्स का पता लगाएँ और उन्हें पुनरावर्ती रूप से प्रोसेस करें।
 
-       System.out.println("Attachment Name: " + attFileName + attExt);
-   }
-   ```
+```java
+if (isOrphanedTextFile(att)) {
+    try {
+        MailMessage attMsg = MailMessage.load(dataDir + sanitizeFileName(att.getName()) + extractFileExtension(att.getName()));
+        parseEmbeddedMessages(attMsg, dataDir);
+    } catch (Exception ex) {
+        System.err.println(ex.getMessage());
+    }
+}
+```
 
-2. **फ़ाइल नामों को साफ़ करें**:
-   
-   ```java
-   private static String sanitizeFileName(String fileName) {
-       return fileName.replace(":", " ").replace(\"\\", " ")
-                      .replace("/", " ").replace("?", "")
-                      .substring(0, Math.min(fileName.length(), 50));
-   }
-   ```
+```java
+private static boolean isOrphanedTextFile(Attachment att) {
+    String fileName = sanitizeFileName(att.getName()) + extractFileExtension(att.getName());
+    return (".eml".equals(extractFileExtension(fileName))) ||
+           ("text/plain".equals(att.getContentType().getMediaType()) &&
+            att.getName().contains(".txt") && att.getName().contains("ATT"));
+}
+```
 
-3. **फ़ाइल एक्सटेंशन निकालें**:
-   
-   ```java
-   private static String extractFileExtension(String fileName) {
-       int lastIndex = fileName.lastIndexOf(".");
-       return (lastIndex != -1) ? fileName.substring(lastIndex) : "";
-   }
-   ```
-
-### अनुलग्नकों को डिस्क पर सहेजना
-**अवलोकन**एक बार अनुलग्नकों को पार्स कर लेने के बाद, आप उन्हें अपने स्थानीय फाइल सिस्टम पर सुरक्षित रूप से सहेज सकते हैं।
-
-#### कार्यान्वयन चरण
-1. **अनुलग्नक सहेजें विधि**:
-   
-   ```java
-   public static void saveAttachment(Attachment attachment, String outputDir) {
-       String attFileName = sanitizeFileName(attachment.getName());
-       String attExt = extractFileExtension(attachment.getName());
-
-       attachment.save(outputDir + attFileName + attExt);
-   }
-   ```
-
-### एम्बेडेड ईमेल संदेशों की पुनरावर्ती पार्सिंग
-**अवलोकन**: कुछ ईमेल में एम्बेडेड संदेश होते हैं। यह सुविधा दर्शाती है कि ऐसे ईमेल को कैसे पुनरावर्ती रूप से पार्स और प्रोसेस किया जाए।
-
-#### कार्यान्वयन चरण
-1. **एम्बेडेड ईमेल की जाँच करें**:
-   
-   ```java
-   if (isOrphanedTextFile(att)) {
-       try {
-           MailMessage attMsg = MailMessage.load(dataDir + sanitizeFileName(att.getName()) + extractFileExtension(att.getName()));
-           parseEmbeddedMessages(attMsg, dataDir);
-       } catch (Exception ex) {
-           System.err.println(ex.getMessage());
-       }
-   }
-   ```
-
-2. **पाठ फ़ाइलों के लिए सहायक विधि**:
-   
-   ```java
-   private static boolean isOrphanedTextFile(Attachment att) {
-       String fileName = sanitizeFileName(att.getName()) + extractFileExtension(att.getName());
-       return (".eml".equals(extractFileExtension(fileName))) ||
-              ("text/plain".equals(att.getContentType().getMediaType()) &&
-               att.getName().contains(".txt") && att.getName().contains("ATT"));
-   }
-   ```
-
-## व्यावहारिक अनुप्रयोगों
-
-यहां कुछ वास्तविक दुनिया के परिदृश्य दिए गए हैं जहां ईमेल अनुलग्नकों को पार्स करना और सहेजना अमूल्य हो सकता है:
-1. **स्वचालित ईमेल प्रसंस्करण**ईमेल के माध्यम से भेजी गई रिपोर्टों को केंद्रीकृत डेटाबेस में निकालने की प्रक्रिया को स्वचालित करना।
-2. **ग्राहक सहायता प्रणाली**: ग्राहकों द्वारा संलग्न समर्थन दस्तावेजों को भविष्य के संदर्भ के लिए स्वचालित रूप से सहेजें।
-3. **डेटा संग्रहण समाधान**डेटा प्रतिधारण नीतियों के अनुपालन में महत्वपूर्ण ईमेल और अनुलग्नकों को संग्रहित करें।
+## व्यावहारिक अनुप्रयोग
+1. **Automated reporting** – इनबाउंड ईमेल्स में संलग्न दैनिक रिपोर्ट्स को निकालें और उन्हें डेटा लेक में स्टोर करें।  
+2. **Customer‑support ticketing** – सपोर्ट ईमेल्स से अटैचमेंट्स को सीधे टिकटिंग सिस्टम में सहेजें।  
+3. **Regulatory archiving** – अनुपालन ऑडिट्स के लिए सभी इनबाउंड/आउटबाउंड पत्राचार को अटैचमेंट्स के साथ आर्काइव करें।
 
 ## प्रदर्शन संबंधी विचार
+- **Minimize I/O** – बड़े फ़ाइलों को पढ़ते समय स्ट्रीम को बफ़र करें और तुरंत बंद करें।  
+- **Memory management** – प्रोसेसिंग के बाद `MailMessage` ऑब्जेक्ट्स को रिलीज़ करें ताकि गार्बेज कलेक्शन में मदद मिले।  
+- **Batch processing** – ईमेल फ़ाइलों को प्रबंधनीय बैच में समूहित करें ताकि JVM पर अधिक लोड न पड़े।
 
-- **I/O परिचालनों को अनुकूलित करें**जहां संभव हो, फ़ाइलों को मेमोरी में संसाधित करके डिस्क पढ़ने/लिखने के कार्यों को न्यूनतम करें।
-- **स्मृति प्रबंधन**जावा के कचरा संग्रहण के प्रति सचेत रहें; मेमोरी लीक को रोकने के लिए उपयोग के बाद संसाधनों को तुरंत मुक्त कर दें।
-- **प्रचय संसाधन**बड़ी मात्रा के लिए, सिस्टम पर अत्यधिक दबाव से बचने के लिए ईमेल को बैचों में संसाधित करें।
+## सामान्य समस्याएँ और समाधान
+| समस्या | समाधान |
+|-------|----------|
+| **OutOfMemoryError** जब बहुत बड़े अटैचमेंट्स प्रोसेस किए जा रहे हों | अटैचमेंट कंटेंट को पूरी तरह मेमोरी में लोड करने के बजाय स्ट्रीम करें। |
+| **Unsupported file format** त्रुटि | सुनिश्चित करें कि अटैचमेंट का MIME टाइप पहचाना गया है; Aspose.Email को नवीनतम संस्करण में अपडेट करें। |
+| **License not found** अपवाद | `license.setLicense()` में पाथ सही है और फ़ाइल पढ़ी जा सकती है, यह सत्यापित करें। |
 
-## निष्कर्ष
+## अक्सर पूछे जाने वाले प्रश्न
 
-अब आप सीख चुके हैं कि Java के लिए Aspose.Email का उपयोग करके ईमेल अटैचमेंट को कैसे लोड, पार्स और सेव किया जाता है। यह शक्तिशाली लाइब्रेरी जटिल कार्यों को सरल बनाती है, जिससे आप मज़बूत एप्लिकेशन बनाने पर ध्यान केंद्रित कर सकते हैं। इसके बाद, अधिक उन्नत सुविधाओं की खोज करने या डेटाबेस या CRM सॉफ़्टवेयर जैसे अन्य सिस्टम के साथ Aspose.Email को एकीकृत करने पर विचार करें।
+**Q: क्या मैं Aspose.Email को बिना लाइसेंस के उपयोग कर सकता हूँ?**  
+A: हाँ, एक फ्री ट्रायल उपलब्ध है, लेकिन इसमें मूल्यांकन सीमाएँ जैसे वॉटरमार्क और सीमित कार्यक्षमता लागू होती हैं।
 
-## अक्सर पूछे जाने वाले प्रश्न अनुभाग
+**Q: मैं बड़े अटैचमेंट्स को कैसे हैंडल करूँ?**  
+A: उन्हें छोटे हिस्सों में प्रोसेस करें या डेटा को सीधे स्टोरेज में स्ट्रीम करें ताकि पूरी फ़ाइल मेमोरी में लोड न हो।
 
-1. **क्या मैं लाइसेंस के बिना Aspose.Email का उपयोग कर सकता हूँ?**  
-   हां, लेकिन मूल्यांकन के दौरान कुछ सीमाएं हैं। पूर्ण पहुँच के लिए अस्थायी लाइसेंस प्राप्त करने पर विचार करें।
-2. **मैं बड़े अनुलग्नकों को कैसे संभालूँ?**  
-   यदि संभव हो तो उन्हें छोटे-छोटे टुकड़ों में संसाधित करें या प्रसंस्करण का कार्य किसी बाहरी सेवा को सौंप दें।
-3. **यदि अनुलग्नक एन्क्रिप्टेड है तो क्या होगा?**  
-   पार्स करने से पहले आपको उचित डिक्रिप्शन विधियों की आवश्यकता होगी।
+**Q: यदि अटैचमेंट एन्क्रिप्टेड है तो क्या होता है?**  
+A: आपको Aspose.Email को पास करने से पहले उपयुक्त एल्गोरिदम से कंटेंट को डिक्रिप्ट करना होगा; लाइब्रेरी स्वतः डिक्रिप्शन नहीं करती।
 
+**Q: क्या Aspose.Email अन्य ईमेल फॉर्मैट जैसे .msg को सपोर्ट करता है?**  
+A: बिल्कुल – लाइब्रेरी .msg, .eml, .pst और अन्य सामान्य फॉर्मैट लोड कर सकती है।
+
+**Q: मैं इसे डेटाबेस के साथ कैसे इंटीग्रेट कर सकता हूँ?**  
+A: अटैचमेंट बाइट्स निकालने के बाद, JDBC या ORM का उपयोग करके बाइनरी डेटा (BLOB) को मेटाडेटा के साथ स्टोर करें।
+
+**अंतिम अपडेट:** 2025-12-11  
+**परीक्षित संस्करण:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**लेखक:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
