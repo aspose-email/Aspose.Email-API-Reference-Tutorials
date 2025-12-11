@@ -213,6 +213,12 @@ A: Asegúrate de referenciar el índice correcto del adjunto y verifica que el c
 - [Licencia Temporal](https://purchase.aspose.com/temporary-license/)
 - [Foro de Soporte](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -220,9 +226,3 @@ A: Asegúrate de referenciar el índice correcto del adjunto y verifica que el c
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose

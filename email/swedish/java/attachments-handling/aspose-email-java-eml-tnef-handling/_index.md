@@ -256,6 +256,12 @@ A: Ja—när den sparas med `PreserveTnefAttachments` kan Outlook läsa TNEF‑d
 - [Free Trial License](https://releases.aspose.com/email/java/)
 - [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Senast uppdaterad:** 2025-12-10  
+**Testad med:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -263,9 +269,3 @@ A: Ja—när den sparas med `PreserveTnefAttachments` kan Outlook läsa TNEF‑d
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-10  
-**Testad med:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Författare:** Aspose

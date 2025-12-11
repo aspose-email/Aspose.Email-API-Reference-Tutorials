@@ -256,6 +256,12 @@ for (LinkedResource att : msg.getLinkedResources()) {
 - [ترخيص تجريبي مجاني](https://releases.aspose.com/email/java/)  
 - [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license)
 
+---
+
+**آخر تحديث:** 2025-12-10  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (مصنف jdk16)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -263,9 +269,3 @@ for (LinkedResource att : msg.getLinkedResources()) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-10  
-**تم الاختبار مع:** Aspose.Email for Java 25.4 (مصنف jdk16)  
-**المؤلف:** Aspose

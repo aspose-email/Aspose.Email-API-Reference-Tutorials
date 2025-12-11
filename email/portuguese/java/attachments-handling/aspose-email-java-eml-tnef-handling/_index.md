@@ -257,6 +257,12 @@ A: Sim—quando salvo com `PreserveTnefAttachments`, o Outlook pode ler a parte 
 - [Free Trial License](https://releases.aspose.com/email/java/)
 - [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Última atualização:** 2025-12-10  
+**Testado com:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -264,9 +270,3 @@ A: Sim—quando salvo com `PreserveTnefAttachments`, o Outlook pode ler a parte 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2025-12-10  
-**Testado com:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose

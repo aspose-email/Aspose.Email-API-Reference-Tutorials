@@ -212,6 +212,12 @@ A: Βεβαιωθείτε ότι αναφέρεστε στον σωστό δεί
 - [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
 - [Φόρουμ Υποστήριξης](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -219,9 +225,3 @@ A: Βεβαιωθείτε ότι αναφέρεστε στον σωστό δεί
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose

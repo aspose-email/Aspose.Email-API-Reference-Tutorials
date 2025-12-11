@@ -210,6 +210,12 @@ A: Ujistěte se, že odkazujete na správný index přílohy a ověřte, že vlo
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -217,9 +223,3 @@ A: Ujistěte se, že odkazujete na správný index přílohy a ověřte, že vlo
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose

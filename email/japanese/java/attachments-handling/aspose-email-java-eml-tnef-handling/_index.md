@@ -255,6 +255,12 @@ A: はい、`PreserveTnefAttachments` で保存すれば Outlook は TNEF 部分
 - [Free Trial License](https://releases.aspose.com/email/java/)
 - [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
+---
+
+**最終更新日:** 2025-12-10  
+**テスト環境:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -262,9 +268,3 @@ A: はい、`PreserveTnefAttachments` で保存すれば Outlook は TNEF 部分
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-10  
-**テスト環境:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者:** Aspose

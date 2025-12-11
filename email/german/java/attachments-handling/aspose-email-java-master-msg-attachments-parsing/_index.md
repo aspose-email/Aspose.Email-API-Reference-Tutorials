@@ -212,6 +212,12 @@ A: Stellen Sie sicher, dass Sie den richtigen Anhangs‑Index referenzieren und 
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-10  
+**Getestet mit:** Aspose.Email 25.4 für Java (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -219,9 +225,3 @@ A: Stellen Sie sicher, dass Sie den richtigen Anhangs‑Index referenzieren und 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-10  
-**Getestet mit:** Aspose.Email 25.4 für Java (JDK 16)  
-**Autor:** Aspose

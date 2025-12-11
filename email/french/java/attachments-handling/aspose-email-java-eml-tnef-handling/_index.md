@@ -259,6 +259,12 @@ R : Oui—lorsqu’il est enregistré avec `PreserveTnefAttachments`, Outlook 
 - [Licence d’essai gratuite](https://releases.aspose.com/email/java/)
 - [Demande de licence temporaire](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -266,9 +272,3 @@ R : Oui—lorsqu’il est enregistré avec `PreserveTnefAttachments`, Outlook 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

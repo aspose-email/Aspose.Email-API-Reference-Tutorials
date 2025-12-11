@@ -213,6 +213,12 @@ A: 올바른 첨부 파일 인덱스를 참조하고 임베드된 콘텐츠가 �
 - [임시 라이선스](https://purchase.aspose.com/temporary-license/)
 - [지원 포럼](https://forum.aspose.com/c/email/10)
 
+---
+
+**마지막 업데이트:** 2025-12-10  
+**테스트 환경:** Aspose.Email 25.4 for Java (JDK 16)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -220,9 +226,3 @@ A: 올바른 첨부 파일 인덱스를 참조하고 임베드된 콘텐츠가 �
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-10  
-**테스트 환경:** Aspose.Email 25.4 for Java (JDK 16)  
-**작성자:** Aspose

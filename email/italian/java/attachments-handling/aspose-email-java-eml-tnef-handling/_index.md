@@ -256,6 +256,12 @@ R: Sì—quando salvato con `PreserveTnefAttachments`, Outlook può leggere la p
 - [Licenza di Prova Gratuita](https://releases.aspose.com/email/java/)
 - [Applicazione Licenza Temporanea](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Ultimo Aggiornamento:** 2025-12-10  
+**Testato Con:** Aspose.Email per Java 25.4 (classificatore jdk16)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -263,9 +269,3 @@ R: Sì—quando salvato con `PreserveTnefAttachments`, Outlook può leggere la p
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo Aggiornamento:** 2025-12-10  
-**Testato Con:** Aspose.Email per Java 25.4 (classificatore jdk16)  
-**Autore:** Aspose

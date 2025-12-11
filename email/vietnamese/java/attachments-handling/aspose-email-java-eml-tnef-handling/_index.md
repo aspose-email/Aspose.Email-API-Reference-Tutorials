@@ -253,6 +253,12 @@ A: Có—khi lưu với `PreserveTnefAttachments`, Outlook có thể đọc ph�
 - [Giấy phép dùng thử miễn phí](https://releases.aspose.com/email/java/)  
 - [Đăng ký giấy phép tạm thời](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Cập nhật lần cuối:** 2025-12-10  
+**Kiểm tra với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -260,9 +266,3 @@ A: Có—khi lưu với `PreserveTnefAttachments`, Outlook có thể đọc ph�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-10  
-**Kiểm tra với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Tác giả:** Aspose

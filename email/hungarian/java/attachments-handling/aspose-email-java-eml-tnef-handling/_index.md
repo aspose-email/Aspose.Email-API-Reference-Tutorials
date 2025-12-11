@@ -257,6 +257,12 @@ A: Igen—ha `PreserveTnefAttachments`‑tel menti, az Outlook olvassa a TNEF r�
 - [Free Trial License](https://releases.aspose.com/email/java/)
 - [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Legutóbb frissítve:** 2025-12-10  
+**Tesztelve a következővel:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -264,9 +270,3 @@ A: Igen—ha `PreserveTnefAttachments`‑tel menti, az Outlook olvassa a TNEF r�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2025-12-10  
-**Tesztelve a következővel:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Szerző:** Aspose

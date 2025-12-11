@@ -256,6 +256,12 @@ A: ใช่—เมื่อบันทึกด้วย `PreserveTnefAttach
 - [ไลเซนส์ทดลองฟรี](https://releases.aspose.com/email/java/)
 - [แบบฟอร์มขอไลเซนส์ชั่วคราว](https://purchase.aspose.com/temporary-license)
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-10  
+**ทดสอบด้วย:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -263,9 +269,3 @@ A: ใช่—เมื่อบันทึกด้วย `PreserveTnefAttach
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-10  
-**ทดสอบด้วย:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**ผู้เขียน:** Aspose

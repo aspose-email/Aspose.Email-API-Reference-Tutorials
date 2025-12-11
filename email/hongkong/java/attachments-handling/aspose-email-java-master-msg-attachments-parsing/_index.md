@@ -210,6 +210,12 @@ A: 請確認引用正確的附件索引，並驗證嵌入內容為有效的 MSG 
 - [臨時授權](https://purchase.aspose.com/temporary-license/)
 - [支援論壇](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -217,9 +223,3 @@ A: 請確認引用正確的附件索引，並驗證嵌入內容為有效的 MSG 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose

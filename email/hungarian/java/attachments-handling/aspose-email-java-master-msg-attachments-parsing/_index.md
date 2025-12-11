@@ -211,6 +211,12 @@ A: Győződjön meg arról, hogy a megfelelő melléklet indexet használja, és
 - [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)
 - [Támogatási fórum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -218,9 +224,3 @@ A: Győződjön meg arról, hogy a megfelelő melléklet indexet használja, és
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose

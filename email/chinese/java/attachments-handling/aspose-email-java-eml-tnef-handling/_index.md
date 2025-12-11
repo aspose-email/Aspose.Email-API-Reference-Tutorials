@@ -255,6 +255,12 @@ A: 是的——使用 `PreserveTnefAttachments` 保存后，Outlook 能读取 TN
 - [Free Trial License](https://releases.aspose.com/email/java/)
 - [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -262,9 +268,3 @@ A: 是的——使用 `PreserveTnefAttachments` 保存后，Outlook 能读取 TN
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

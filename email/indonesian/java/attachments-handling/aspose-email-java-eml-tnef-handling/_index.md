@@ -257,6 +257,12 @@ J: Ya—ketika disimpan dengan `PreserveTnefAttachments`, Outlook dapat membaca 
 - [Lisensi Percobaan Gratis](https://releases.aspose.com/email/java/)  
 - [Aplikasi Lisensi Sementara](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Terakhir Diperbarui:** 2025-12-10  
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier jdk16)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -264,9 +270,3 @@ J: Ya—ketika disimpan dengan `PreserveTnefAttachments`, Outlook dapat membaca 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-10  
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier jdk16)  
-**Penulis:** Aspose

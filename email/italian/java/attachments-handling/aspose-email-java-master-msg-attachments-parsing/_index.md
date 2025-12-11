@@ -209,6 +209,12 @@ R: Assicurati di fare riferimento all'indice corretto dell'allegato e verifica c
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Ultimo aggiornamento:** 2025-12-10  
+**Testato con:** Aspose.Email 25.4 per Java (JDK 16)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -216,9 +222,3 @@ R: Assicurati di fare riferimento all'indice corretto dell'allegato e verifica c
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2025-12-10  
-**Testato con:** Aspose.Email 25.4 per Java (JDK 16)  
-**Autore:** Aspose

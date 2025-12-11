@@ -255,6 +255,12 @@ A: 會——使用 `PreserveTnefAttachments`時，Outlook 能讀取 TNEF 部分�
 - [免費試用授權](https://releases.aspose.com/email/java/)
 - [臨時授權申請](https://purchase.aspose.com/temporary-license)
 
+---
+
+**最後更新時間：** 2025-12-10  
+**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -262,9 +268,3 @@ A: 會——使用 `PreserveTnefAttachments`時，Outlook 能讀取 TNEF 部分�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新時間：** 2025-12-10  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者：** Aspose

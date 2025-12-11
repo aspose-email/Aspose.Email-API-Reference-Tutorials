@@ -216,6 +216,12 @@ A: सुनिश्चित करें कि आप सही अटैच
 - [अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/)
 - [सपोर्ट फ़ोरम](https://forum.aspose.com/c/email/10)
 
+---
+
+**अंतिम अपडेट:** 2025-12-10  
+**परीक्षण किया गया:** Aspose.Email 25.4 for Java (JDK 16)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -223,9 +229,3 @@ A: सुनिश्चित करें कि आप सही अटैच
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2025-12-10  
-**परीक्षण किया गया:** Aspose.Email 25.4 for Java (JDK 16)  
-**लेखक:** Aspose

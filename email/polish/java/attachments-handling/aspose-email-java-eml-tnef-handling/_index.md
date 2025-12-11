@@ -257,6 +257,12 @@ A: Tak – przy zapisie z `PreserveTnefAttachments` Outlook odczyta część TNE
 - [Darmowa licencja trial](https://releases.aspose.com/email/java/)
 - [Aplikacja o licencję tymczasową](https://purchase.aspose.com/temporary-license)
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-10  
+**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -264,9 +270,3 @@ A: Tak – przy zapisie z `PreserveTnefAttachments` Outlook odczyta część TNE
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-10  
-**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose
