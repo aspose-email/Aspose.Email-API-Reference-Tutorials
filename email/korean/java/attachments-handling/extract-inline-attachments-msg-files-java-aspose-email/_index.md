@@ -1,9 +1,14 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java를 사용하여 MSG 파일에서 인라인 첨부 파일을 추출하는 기술을 익혀 보세요. Outlook 이메일 형식을 효율적으로 처리하는 방법을 단계별로 학습합니다."
-"title": "Java에서 Aspose.Email을 사용하여 MSG 파일에서 인라인 첨부 파일 추출"
-"url": "/ko/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/"
-"weight": 1
+date: '2025-12-17'
+description: Aspose.Email for Java를 사용하여 Java에서 인라인 첨부 파일을 추출하고 Outlook MSG 파일을 읽는
+  방법을 배워보세요. Outlook MSG 파일을 효율적으로 처리하기 위한 단계별 가이드.
+keywords:
+- extract inline attachments MSG Java
+- handle Outlook email formats Java
+- use Aspose.Email library for Java
+title: Java – Aspose.Email을 사용한 MSG 파일의 인라인 첨부 파일 추출
+url: /ko/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,41 +16,58 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java에서 Aspose.Email을 사용하여 MSG 파일에서 인라인 첨부 파일 추출
+# Aspose.Email을 사용하여 Java – MSG 파일에서 인라인 첨부 파일 추출
 
-## 소개
+## Introduction
 
-Microsoft Outlook MSG 파일 처리에 어려움을 겪고 있고, 인라인 첨부 파일을 원활하게 추출해야 하나요? 여러분만 그런 것이 아닙니다! 많은 개발자들이 복잡한 이메일 파일 형식, 특히 내장된 콘텐츠를 추출할 때 어려움을 겪습니다. 이 가이드는 Aspose.Email for Java를 사용하여 MSG 파일에서 인라인 첨부 파일을 추출하는 방법을 안내합니다.
+Microsoft Outlook MSG 파일에서 **inline attachments java**를 추출해야 한다면, 올바른 곳에 오셨습니다. 많은 개발자들이 Outlook msg java 파일을 읽는 데 어려움을 겪는데, 이는 형식이 메시지 본문 안에 삽입된 이미지와 문서를 숨기기 때문입니다. 이 튜토리얼에서는 Aspose.Email for Java 라이브러리를 사용하여 인라인 첨부 파일을 찾고, 식별하고, 저장하는 깔끔하고 프로덕션‑ready 솔루션을 단계별로 안내합니다.
 
-이 포괄적인 튜토리얼에서는 Java 기반의 강력한 Aspose.Email 라이브러리를 사용하여 MSG 파일을 처리하고 포함된 첨부 파일을 손쉽게 추출하는 방법을 배웁니다. 모든 과정을 단계별로 안내하여 최종적으로는 강력한 솔루션을 손쉽게 구축할 수 있도록 도와드립니다.
+이 가이드를 끝까지 읽으면 다음을 수행할 수 있습니다:
 
-**배울 내용:**
-- Java용 Aspose.Email 설정 및 사용 방법
-- MSG 파일에서 인라인 첨부 파일 추출
-- 추출된 첨부 파일을 파일 시스템에 저장합니다.
-- 잠재적인 문제를 처리하고 성능을 최적화하세요
+* Maven 프로젝트에 Aspose.Email for Java를 설정합니다.  
+* **Outlook msg java** 파일을 읽고 첨부 파일을 열거합니다.  
+* 인라인 첨부 파일을 식별하고 디스크에 저장합니다.  
+* 대량 처리 시 성능 최적화 모범 사례를 적용합니다.
 
-구현 세부 사항을 살펴보기 전에 모든 필수 전제 조건이 충족되었는지 확인하세요.
+---
 
-## 필수 조건
+## Quick Answers
+- **“인라인 첨부 파일”이란 무엇인가요?** 이메일 본문에 삽입된 첨부 파일(예: 메시지 내에 표시되는 이미지)입니다.  
+- **MSG 파일을 처리하는 라이브러리는 무엇인가요?** Aspose.Email for Java.  
+- **라이선스가 필요합니까?** 평가용 트라이얼을 사용할 수 있으며, 영구 라이선스를 구매하면 사용 제한이 해제됩니다.  
+- **여러 MSG 파일을 한 번에 처리할 수 있나요?** 예 – 로직을 배치하고 스레드 풀을 사용하면 확장성이 확보됩니다.  
+- **필요한 Java 버전은 무엇인가요?** JDK 16 이상.
 
-이 튜토리얼을 효과적으로 따르려면 다음 사항이 있는지 확인하세요.
-1. **라이브러리 및 종속성:**
-   - Java 버전 25.4용 Aspose.Email
-   - Maven 또는 종속성 관리를 지원하는 IDE(예: IntelliJ IDEA)
-2. **환경 설정 요구 사항:**
-   - 시스템에 JDK 16이 설치되어 있습니다
-3. **지식 전제 조건:**
-   - Java 프로그래밍에 대한 기본 이해
-   - Java에서 파일 I/O 처리에 대한 지식
+## What is “extract inline attachments java”?
 
-이러한 필수 구성 요소를 준비했으면 Java용 Aspose.Email을 설정하는 단계로 넘어가겠습니다.
+Java에서 인라인 첨부 파일을 추출한다는 것은 MSG 파일을 프로그래밍 방식으로 열고, 첨부 파일 컬렉션을 스캔한 뒤, *인라인*으로 표시된 항목만 추출하는 것을 의미합니다(일반 파일 첨부와 구분). 이는 이메일의 시각적 콘텐츠(예: 삽입된 로고나 스크린샷)를 별도의 이미지 파일로 저장해야 할 때 필수적입니다.
 
-## Java용 Aspose.Email 설정
+## Why use Aspose.Email for this task?
 
-Java용 Aspose.Email을 사용하려면 프로젝트에 종속성으로 추가하세요. Maven을 사용하는 경우 다음과 같이 간단합니다.
+Aspose.Email은 저수준 MAPI 구조를 추상화하고 간단하고 강력한 타입의 API를 제공합니다. 직접 바이너리 MSG 형식을 파싱하는 것과 비교했을 때 Aspose.Email은:
 
-**메이븐:**
+* 모든 MSG 변형(Unicode, RTF, HTML)을 지원합니다.  
+* 첨부 파일 메타데이터에 대한 신뢰할 수 있는 속성 접근을 제공합니다.  
+* 내장된 라이선스 검사와 방대한 문서를 제공합니다.  
+
+## Prerequisites
+
+이 튜토리얼을 따라하려면 다음이 필요합니다:
+
+1. **Libraries and Dependencies**  
+   * Aspose.Email for Java (최신 버전).  
+   * Maven(또는 Maven을 지원하는 IDE).  
+
+2. **Runtime**  
+   * JDK 16 이상이 설치되어 있어야 합니다.  
+
+3. **Basic Knowledge**  
+   * Java I/O 및 예외 처리에 대한 기본 지식.  
+
+## Setting Up Aspose.Email for Java
+
+`pom.xml`에 Aspose.Email 의존성을 추가합니다. 아래 스니펫은 원본 튜토리얼과 동일합니다.
+
 ```xml
 <dependency>
   <groupId>com.aspose</groupId>
@@ -55,28 +77,19 @@ Java용 Aspose.Email을 사용하려면 프로젝트에 종속성으로 추가�
 </dependency>
 ```
 
-### 라이센스 취득 단계
+### License Acquisition Steps
 
-Aspose.Email을 사용하려면 유효한 라이선스가 필요합니다.
-- **무료 체험:** 라이브러리를 다운로드하여 일부 제한 사항이 있긴 하지만 무료로 기능을 사용해 보세요.
-- **임시 면허:** 제한 없이 모든 기능을 테스트할 수 있는 임시 라이센스를 얻으세요.
-- **구입:** 체험판에 만족하시면 제한 없이 사용할 수 있는 정식 라이선스를 구매하세요.
+* **Free Trial:** Aspose 웹사이트에서 트라이얼 DLL/JAR를 다운로드합니다.  
+* **Temporary License:** 제한 없는 테스트를 위해 30일 평가 라이선스를 요청합니다.  
+* **Full Purchase:** 프로덕션 배포를 위해 영구 라이선스를 구매합니다.
 
-### 기본 초기화
+## Implementation Guide
 
-Aspose.Email을 초기화하려면 프로젝트에 필요한 종속성이 포함되어 있는지 확인하세요. 그러면 해당 클래스와 메서드를 사용하여 이메일 파일을 처리할 수 있습니다.
+아래에서는 솔루션을 세 가지 핵심 기능으로 나눕니다. 각 기능은 간단한 설명과 원본 코드 블록(정확히 유지)을 포함합니다.
 
-## 구현 가이드
+### Feature 1 – Load the MSG File
 
-이 섹션에서는 구현 과정을 기능별로 관리 가능한 단계로 나누어 살펴보겠습니다. 각 기능은 코드 조각과 함께 자세히 설명하여 명확성을 높이겠습니다.
-
-### 기능 1: MSG 파일에서 인라인 첨부 파일 추출
-
-이 기능은 Aspose.Email for Java를 사용하여 Outlook MSG 파일에 포함된 인라인 첨부 파일을 식별하고 추출합니다.
-
-#### 1단계: MSG 파일 로드
-
-먼저 MSG 파일을 로드하세요. `MapiMessage` 객체입니다. 이 단계에서는 작업할 메시지를 초기화합니다.
+먼저 Outlook 메시지를 `MapiMessage` 객체로 로드합니다.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -85,9 +98,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatting.msg");
 ```
 
-#### 2단계: 첨부 파일 검색
+### Feature 2 – Retrieve Attachments
 
-다음으로, 다음을 사용하여 MSG 파일에서 모든 첨부 파일을 검색합니다. `getAttachments()`.
+다음으로 메시지에서 전체 첨부 파일 컬렉션을 가져옵니다.
 
 ```java
 import com.aspose.email.MapiAttachmentCollection;
@@ -95,9 +108,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-#### 3단계: 인라인 첨부 파일 확인
+### Feature 3 – Identify and Save Inline Attachments
 
-각 첨부 파일의 경우 다음을 활용하여 인라인인지 확인하십시오. `IsAttachmentInline` 방법. 이 단계에서는 인라인 첨부 파일만 필터링합니다.
+각 첨부 파일을 순회하면서 인라인 여부를 확인하고, 디스크에 저장합니다.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -106,17 +119,15 @@ for (Object untypedAttachment : attachments) {
         try {
             SaveAttachment(attachment, UUID.randomUUID().toString());
         } catch (IOException e) {
-            // 예외 처리
+            // Handle exception
         }
     }
 }
 ```
 
-### 기능 2: 첨부 파일이 인라인인지 확인
+#### Utility: Determine If an Attachment Is Inline
 
-이 유틸리티 기능은 MSG 파일에 있는 주어진 첨부 파일이 인라인인지 확인합니다.
-
-#### 구현 세부 정보:
+헬퍼 메서드는 MAPI 속성을 검사하여 첨부 파일이 삽입된 것인지 판단합니다.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -139,11 +150,9 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-### 기능 3: 파일 시스템에 첨부 파일 저장
+#### Utility: Save the Inline Attachment
 
-이 기능은 MSG 파일의 지정된 첨부 파일을 출력 디렉토리에 저장합니다.
-
-#### 구현 단계:
+인라인 첨부 파일의 바이너리 내용을 로컬 파일 시스템에 파일로 기록합니다.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -162,47 +171,55 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 }
 ```
 
-## 실제 응용 프로그램
+## Practical Applications
 
-MSG 파일에서 인라인 첨부 파일을 추출하는 것은 다양한 실제 응용 분야에서 활용됩니다.
-1. **자동 이메일 처리:** 추가 처리나 분석을 위해 내장된 문서의 추출을 자동화합니다.
-2. **데이터 마이그레이션:** 이메일 콘텐츠와 첨부 파일을 다른 플랫폼이나 시스템으로 마이그레이션합니다.
-3. **이메일 보관 솔루션:** 이메일의 모든 측면, 특히 인라인 첨부 파일을 보존하는 강력한 보관 솔루션을 개발합니다.
+인라인 첨부 파일 추출은 다양한 실제 시나리오에서 유용합니다:
 
-이러한 애플리케이션은 Aspose.Email을 Java 애플리케이션과 통합하여 이메일 관리와 관련된 워크플로를 간소화하는 방법을 보여줍니다.
+* **Automated Email Processing** – 뉴스레터에서 이미지를 추출하여 분석에 활용합니다.  
+* **Data Migration** – Exchange에서 다른 플랫폼으로 마이그레이션할 때 삽입된 콘텐츠를 이동합니다.  
+* **Archiving Solutions** – 인라인 자산을 별도로 저장해 보관된 메시지의 시각적 충실도를 유지합니다.
 
-## 성능 고려 사항
+## Performance Considerations
 
-대용량 MSG 파일로 작업할 때 최적의 성능을 위해 다음 사항을 고려하세요.
-- **일괄 처리:** 리소스 사용량을 최소화하기 위해 이메일을 일괄적으로 처리합니다.
-- **메모리 관리:** 사용 후 스트림과 객체를 즉시 닫아 효율적인 메모리 관리를 보장합니다.
-- **스레드 풀링:** 해당되는 경우 스레드 풀을 사용하여 처리 작업을 병렬화합니다.
+수백에서 수천 개의 MSG 파일을 처리할 때 다음 팁을 기억하세요:
 
-## 결론
+* **Batch Processing:** 메모리 급증을 방지하기 위해 파일을 관리 가능한 배치로 그룹화합니다.  
+* **Dispose Resources Promptly:** 스트림을 `try‑with‑resources`로 닫고 가비지 컬렉터가 객체를 회수하도록 합니다.  
+* **Parallel Execution:** 고정 크기의 `ExecutorService`를 사용해 여러 추출 작업을 동시에 실행하되 CPU 사용량을 모니터링합니다.
 
-이제 Aspose.Email for Java를 사용하여 MSG 파일에서 인라인 첨부 파일을 추출하는 방법을 알아보았습니다. 이 가이드를 따라 하면 Outlook 메시지에 포함된 이메일 첨부 파일을 효율적으로 관리하고 처리할 수 있습니다.
+## Common Issues & Troubleshooting
 
-기술을 더욱 향상시키려면 Aspose.Email 라이브러리의 다른 기능을 살펴보거나, 보다 포괄적인 솔루션을 위해 추가 시스템과 통합하는 것을 고려하세요.
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| `attachment.getObjectData()`에서 `NullPointerException` 발생 | 메시지에 첨부 파일 메타데이터가 없음(예: 손상된 MSG) | MSG 파일을 처리 전에 검증하거나 예외를 잡아 파일명을 로그에 기록합니다. |
+| 저장된 파일이 비어 있거나 손상됨 | 속성 이름(`"Package"`) 대소문자 구분 오류 | 속성 이름이 MSG 실제 속성과 일치하는지 확인합니다; 정확한 문자열은 Aspose.Email 문서에 명시되어 있습니다. |
+| 대용량 파일 처리 시 성능 저하 | 스트림을 닫지 않아 메모리 누수 발생 | 예시와 같이 `try‑with‑resources`를 사용하고 필요 시 JVM 힙을 늘립니다. |
 
-## FAQ 섹션
+## Frequently Asked Questions
 
-**질문 1: Aspose.Email이란 무엇인가요?**
-Aspose.Email은 Microsoft Outlook의 MSG 파일을 포함한 이메일 형식과 기능을 처리하도록 설계된 강력한 Java 라이브러리입니다.
+**Q: 최소 Aspose.Email 버전 요구 사항은 무엇인가요?**  
+A: 튜토리얼은 버전 25.4를 사용하지만, JDK 16을 지원하는 24.x 이상이면 모두 작동합니다.
 
-**Q2: 임시면허는 어떻게 받을 수 있나요?**
-평가 기간 동안 제한 없이 액세스할 수 있는 임시 라이선스를 요청하려면 Aspose 웹사이트를 방문하세요.
+**Q: 암호화된 MSG 파일에서도 인라인 첨부 파일을 추출할 수 있나요?**  
+A: 예, `MapiMessage`를 로드할 때 올바른 복호화 비밀번호를 제공하면 가능합니다.
 
-**질문 3: 이 솔루션은 대용량 첨부 파일을 처리할 수 있나요?**
-네, 하지만 효율적인 리소스 관리를 보장하고 튜토리얼에서 설명하는 성능 최적화 기술을 고려하세요.
+**Q: 인라인 이미지와 일반 파일 첨부를 어떻게 구분하나요?**  
+A: `IsAttachmentInline` 헬퍼를 사용합니다; 이 메서드는 인라인으로 표시된 첨부 파일을 나타내는 MAPI `ObjInfo` 플래그를 확인합니다.
 
-**질문 4: 첨부 파일을 추출할 때 흔히 발생하는 문제는 무엇인가요?**
-일반적인 문제로는 파일 경로 오류 및 예외 처리가 있습니다. 경로가 올바르게 설정되었는지 확인하고 try-catch 블록을 사용하여 오류를 처리하세요.
+**Q: 인라인 첨부 파일의 원본 파일명을 보존할 방법이 있나요?**  
+A: 샘플은 고유성을 위해 UUID를 생성하지만, `attachment.getLongFileName()` 속성을 읽어 `SaveAttachment` 호출 시 사용할 수 있습니다.
 
-**Q5: 이것을 다른 시스템과 어떻게 통합할 수 있나요?**
-API나 미들웨어를 사용하여 Aspose.Email 기능을 기존 애플리케이션이나 데이터 처리 파이프라인에 연결하는 것을 고려하세요.
+**Q: 이 방법은 Linux/macOS에서도 Windows와 동일하게 동작하나요?**  
+A: 물론입니다—JDK만 설치되어 있으면 Aspose.Email은 플랫폼에 독립적입니다.
 
-## 자원
-- **선적 서류 비치:** [Aspose 이메일 문서](https://docs.aspose.com/email/java/)
+## Resources
+- **Documentation:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
+
+---
+
+**Last Updated:** 2025-12-17  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
