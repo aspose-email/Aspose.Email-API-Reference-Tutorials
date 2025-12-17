@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java kullanarak EML dosyalarında TNEF eklerini nasıl koruyacağınızı öğrenin. Bu kılavuz, adım adım talimatlarla kurulum, uygulama ve sorun gidermeyi kapsar."
-"title": "Aspose.Email for Java Kullanarak EML Dosyalarındaki TNEF Eklerini Koruyun&#58; Kapsamlı Bir Kılavuz"
-"url": "/tr/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/"
-"weight": 1
+date: '2025-12-17'
+description: Aspose.Email for Java kullanarak EML dosyalarındaki TNEF eklerini korumayı
+  öğrenin. Bu kılavuz, kurulum, uygulama ve sorun giderme konularını adım adım talimatlarla
+  kapsar.
+keywords:
+- preserve tnef attachments
+- Aspose.Email for Java
+- handle TNEF in EML files
+title: 'Aspose.Email for Java Kullanarak EML Dosyalarındaki TNEF Eklerini Korumak:
+  Kapsamlı Bir Rehber'
+url: /tr/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,45 +18,50 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java için Aspose.Email Kullanarak EML Dosyalarındaki TNEF Ekleri Nasıl Korunur
+# Aspose.Email for Java Kullanarak EML Dosyalarında TNEF Eklerini Korumak
 
-## giriiş
+## Introduction
 
-Java'da EML dosyalarıyla çalışırken TNEF (Transport Neutral Encapsulation Format) eklerini işleme konusunda zorluklarla mı karşılaşıyorsunuz? Bu kapsamlı kılavuz, Aspose.Email for Java kitaplığını kullanarak bu ekleri sorunsuz bir şekilde yönetmenize yardımcı olacaktır. TNEF, Microsoft Outlook tarafından yaygın olarak kullanılır ve e-posta işleme sırasında bu ekleri korumak karmaşık olabilir. Aspose.Email ile bu görev basit hale gelir.
+Java'da EML dosyalarıyla çalışırken TNEF (Transport Neutral Encapsulation Format) eklerini yönetmekte zorluk mu yaşıyorsunuz? **TNEF eklerini korumanız gerekiyorsa**, bu kılavuz Aspose.Email for Java kullanarak bu dosyaları nasıl bozulmadan tutacağınızı tam olarak gösterecek. TNEF, Microsoft Outlook tarafından yaygın olarak kullanılır ve e-posta işleme sırasında bu ekleri korumak karmaşık olabilir. Aspose.Email ile görev basit ve güvenilir hale gelir.
 
-Bu eğitimde, TNEF eklerini EML dosyalarında dönüştürmeden nasıl koruyacağınızı ve e-posta işleme süreçleriniz boyunca bozulmadan kalmalarını nasıl sağlayacağınızı inceleyeceğiz.
+Bu öğreticide, kütüphaneyi nasıl yapılandıracağınızı, TNEF bölümlerini kaybetmeden bir EML dosyasını nasıl yükleyeceğinizi ve eklerin dokunulmadan kaldığını nasıl doğrulayacağınızı öğreneceksiniz.
 
-**Ne Öğreneceksiniz:**
-- Aspose.Email for Java kütüphanesi nasıl yapılandırılır ve kullanılır.
-- TNEF eklerini koruyarak bir EML dosyasını yükleme adımları.
-- Anahtar yapılandırma seçenekleri `EmlLoadOptions`.
-- TNEF ekleriyle ilgili yaygın sorunların giderilmesi.
+**What You’ll Learn**
+- Aspose.Email for Java kütüphanesini nasıl kuracağınızı (Maven aspose email java örneği dahil) öğrenin.
+- EML dosyasını **TNEF eklerini koruyarak** yükleme adımları.
+- `EmlLoadOptions` içindeki ana yapılandırma seçenekleri.
+- Yaygın tuzaklar ve sorun giderme ipuçları.
 
-Dalmaya hazır mısınız? Ortamınızı ayarlayarak başlayalım!
+Başlamaya hazır mısınız? Geliştirme ortamınızı hazırlayarak başlayalım.
 
-## Ön koşullar
+## Quick Answers
+- **“preserve TNEF attachments” ne anlama geliyor?** Bir EML yüklerken orijinal TNEF‑kodlu dosyaları değiştirmeden tutar.  
+- **Hangi kütüphane bunu yönetir?** Aspose.Email for Java (sürüm 25.4+).  
+- **Maven gerekli mi?** Evet – öğreticide bir Maven aspose email java bağımlılık snippet'i bulunuyor.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gerekir.  
+- **Büyük posta kutularını işleyebilir miyim?** Kesinlikle, uygun bellek yönetimi ve `MailMessage` imha deseniyle.
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+## Prerequisites
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Java için Aspose.E-posta**: En iyi performans için 25.4 veya üzeri sürüm önerilir.
-- Projenizin JDK 16 veya üzeri sürümle kurulduğundan emin olun.
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-### Çevre Kurulum Gereksinimleri
-- Java uygulamalarını çalıştırmak için uyumlu bir IDE (örneğin IntelliJ IDEA, Eclipse).
-- Eğer bağımlılıkları yönetmek için kullanıyorsanız Maven kurulu olmalıdır.
+### Required Libraries and Dependencies
+- **Aspose.Email for Java**: En iyi performans için sürüm 25.4 veya üzeri önerilir.  
+- **Maven**: Kütüphaneyi çekmek için bir Maven aspose email java bağımlılığı kullanacağız.
 
-### Bilgi Önkoşulları
-- Java programlamanın temel bilgisi.
-- Yazılım geliştirmede e-posta dosyalarını ve eklerini kullanma konusunda deneyim.
+### Environment Setup Requirements
+- Java uygulamalarını çalıştırmak için uyumlu bir IDE (ör. IntelliJ IDEA, Eclipse).  
+- Makinenizde JDK 16 veya daha üstü yüklü olmalı.
 
-## Java için Aspose.Email Kurulumu
+### Knowledge Prerequisites
+- Java programlamaya temel bir anlayış.  
+- Yazılım geliştirmede e-posta dosyaları ve eklerini yönetmeye aşina olmak.
 
-Aspose.Email for Java'yı kullanmaya başlamak için şu kurulum adımlarını izleyin:
+## Setting Up Aspose.Email for Java
 
-### Maven üzerinden kurulum
+### Aspose Email Java Tutorial: Installation via Maven
 
-Aşağıdaki bağımlılığı ekleyin `pom.xml` dosya:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -60,55 +72,49 @@ Aşağıdaki bağımlılığı ekleyin `pom.xml` dosya:
 </dependency>
 ```
 
-### Lisans Edinme Adımları
+### License Acquisition Steps
 
-- **Ücretsiz Deneme**: Özellikleri keşfetmek için ücretsiz denemeyle başlayın.
-- **Geçici Lisans**:Uzun süreli testler için geçici lisans alın.
-- **Satın almak**Projeleriniz için Aspose.Email'i faydalı bulursanız satın almayı düşünebilirsiniz.
+- **Ücretsiz Deneme** – özellikleri keşfetmek için bir deneme ile başlayın.  
+- **Geçici Lisans** – genişletilmiş test için geçici bir lisans edinin.  
+- **Satın Alma** – üretim kullanımı için tam bir lisans almayı düşünün.
 
-Aspose.Email'i başlatmak ve kurmak için, kütüphanenin projenizde doğru şekilde referanslandığından emin olun. Lisansınızı şu adımları izleyerek etkinleştirebilirsiniz:
+To activate your license, place the license file in your project and run:
 
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Uygulama Kılavuzu
+## Implementation Guide
 
-Mantıksal bölümleri kullanarak TNEF eklerinin nasıl korunacağını açıklayalım.
+### Loading EML with PreserveTnefAttachments Feature
 
-### PreserveTnefAttachments Özelliğiyle EML Yükleme
+#### Overview
 
-#### Genel bakış
+`PreserveTnefAttachments` bayrağı, Aspose.Email'e orijinal TNEF dosyalarını kaynak EML'de göründükleri gibi tam olarak tutmasını söyler, otomatik dönüşümü engeller.
 
-Bu özellik, EML dosyasını TNEF eklerini koruyarak yüklemenize olanak tanır ve istenmeyen dönüştürme veya veri kaybını önler.
+#### Step‑by‑Step Implementation
 
-#### Adım Adım Uygulama
+**1. Configure Load Options**
 
-**1. Yükleme Seçeneklerini Yapılandırın**
-
-Bir örnek oluşturun `EmlLoadOptions` ve TNEF eklerini koruyacak şekilde yapılandırın:
+Create an instance of `EmlLoadOptions` and enable TNEF preservation:
 
 ```java
 EmlLoadOptions options = new EmlLoadOptions();
 options.setPreserveTnefAttachments(true);
 ```
 
-Burada, ayar `setPreserveTnefAttachments(true)` Eklerinizin orijinal formatının korunmasını sağlar.
+**2. Load the EML File**
 
-**2. EML Dosyasını Yükleyin**
-
-EML dosyanızı yüklemek için yapılandırılmış yükleme seçeneklerini kullanın:
+Pass the options when loading your message:
 
 ```java
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 ```
 
-Bu adım, e-posta mesajını ve eklerini TNEF dosyalarını dönüştürmeden, orijinal durumlarını koruyarak yükler.
+**3. Access Attachments**
 
-**3. Eklere Erişim**
-
-Eklerin korunduğunu doğrulamak için bunları yineleyin:
+Iterate through the attachments to verify they are still TNEF files:
 
 ```java
 for (Attachment attachment : eml.getAttachments()) {
@@ -116,64 +122,70 @@ for (Attachment attachment : eml.getAttachments()) {
 }
 ```
 
-Bu döngü her bir ekin adını yazdırır ve bunların doğru şekilde yüklendiğini doğrular.
+#### Troubleshooting Tips
 
-#### Sorun Giderme İpuçları
+- **Eksik Ekler** – dosya yolunu (`dataDir`) iki kez kontrol edin ve dosyanın okunabilir olduğundan emin olun.  
+- **Beklenmeyen Dönüşüm** – mesajı yüklemeden önce `setPreserveTnefAttachments(true)` çağrıldığını doğrulayın.  
 
-- **Eksik Ekler**: Dosya yolunun doğru ve erişilebilir olduğundan emin olun.
-- **Dönüşüm Sorunları**: Çift kontrol `setPreserveTnefAttachments` Eklerin beklenmedik şekilde dönüştürülmesi durumunda ayar.
+## Practical Applications
 
-## Pratik Uygulamalar
+Preserving TNEF attachments is valuable in many real‑world scenarios:
 
-İşte TNEF eklerinin korunmasının faydalı olabileceği bazı gerçek dünya senaryoları:
+1. **Email Archiving Systems** – yasal uyumluluk için orijinal ek formatını koruyun.  
+2. **Legal & Compliance Software** – belge saklama politikalarını karşılamak için yerel TNEF dosyalarını tutun.  
+3. **Customer Support Tools** – müşterinin e-postalarını orijinal ekleri değiştirmeden yönlendirin.
 
-1. **E-posta Arşivleme Sistemleri**: Orijinal ek formatlarını koruyarak arşiv bütünlüğünü koruyun.
-2. **Hukuk ve Uyumluluk Yazılımı**: Yerel ek formatlarını koruyarak belge saklama politikalarına uyumu sağlayın.
-3. **Müşteri Destek Araçları**: Müşteri e-posta gönderimlerini, içeriklerini değiştirmeden yönetin.
+## Performance Considerations
 
-## Performans Hususları
+When processing large batches of emails with Aspose.Email:
 
-Aspose.Email ile çalışırken şu performans ipuçlarını göz önünde bulundurun:
+- **Dispose Objects** – call `eml.dispose()` (or let the garbage collector clean up) after you finish processing each message. → **Nesneleri İmha Et** – her mesajı işledikten sonra `eml.dispose()` çağırın (veya çöp toplayıcısının temizlemesine izin verin).  
+- **Memory Settings** – tune the JVM’s heap size (`-Xmx`) based on the volume of emails you handle. → **Bellek Ayarları** – işlediğiniz e-posta hacmine göre JVM yığın boyutunu (`-Xmx`) ayarlayın.
 
-- **Kaynak Kullanımını Optimize Edin**: Kapalı `MailMessage` hafızayı boşaltmak için nesneler yapıldığında.
-- **Java Bellek Yönetimi**: Büyük miktardaki e-postaları işlemek için uygun Java çöp toplama seçeneklerini kullanın.
+## Common Issues and Solutions
 
-## Çözüm
+| Sorun | Muhtemel Neden | Çözüm |
+|-------|----------------|-------|
+| Ekler `.dat` dosyaları olarak görünüyor | `PreserveTnefAttachments` etkin değil | Yüklemeden önce `options.setPreserveTnefAttachments(true)` ayarlandığından emin olun. |
+| `FileNotFoundException` | Yanlış `dataDir` yolu | Dizini ve dosya adını doğrulayın; test için mutlak yollar kullanın. |
+| Büyük posta kutularında yüksek bellek kullanımı | `MailMessage` nesneleri imha edilmemiş | İşlem sonrası `eml.dispose()` çağırın veya referansı `null` olarak ayarlayın. |
 
-Aspose.Email for Java kullanarak EML dosyalarında TNEF eklerini nasıl koruyacağınızı öğrendiniz. Bu yaklaşım, hassas veri yönetimi gerektiren uygulamalar için kritik öneme sahip olan e-posta eklerinizin bütünlüğünü ve özgünlüğünü garanti eder.
+## Frequently Asked Questions
 
-Uygulamanızı daha da geliştirmek için:
-- Aspose.Email'in sunduğu ek özellikleri keşfedin.
-- Gerektiğinde bu çözümü daha büyük sistemlere entegre edin.
+**Q1: TNEF nedir ve formatını neden korumalıyım?**  
+A: TNEF (Transport Neutral Encapsulation Format), Outlook'un zengin içerikli ekleri paketleme konusunda sahip olduğu özel bir yöntemdir. Bunu korumak, orijinal verinin değişmeden kalmasını sağlar; bu da uyumluluk ve doğru görüntüleme açısından kritiktir.
 
-Denemeye hazır mısınız? Bu adımları projenize uygulayın ve TNEF eklerinin ne kadar sorunsuz işlenebileceğini görün!
+**Q2: Aspose.Email büyük miktarda e-posta dosyasını verimli bir şekilde işleyebilir mi?**  
+A: Evet. Uygun kaynak yönetimi (`MailMessage` nesnelerini imha etmek ve JVM belleğini yapılandırmak) ile kütüphane toplu işleme için iyi ölçeklenir.
 
-## SSS Bölümü
+**Q3: Eksik TNEF eklerini nasıl gideririm?**  
+A: Dosya yolunu doğrulayın, `setPreserveTnefAttachments(true)` etkin olduğundan emin olun ve kaynak EML'in gerçekten TNEF bölümleri içerdiğini kontrol edin.
 
-**S1: TNEF nedir ve neden formatını korumalıyım?**
-A1: Outlook ekler için TNEF'i (Transport Neutral Encapsulation Format) kullanır. Bunu korumak veri bütünlüğünü garanti eder.
+**Q4: Aspose.Email for Java kullanmanın bir maliyeti var mı?**  
+A: Değerlendirme için ücretsiz bir deneme mevcuttur. Üretim kullanımı, satın alınan bir lisans veya genişletilmiş test için geçici bir lisans gerektirir.
 
-**S2: Aspose.Email büyük miktardaki e-posta dosyalarını verimli bir şekilde işleyebilir mi?**
-C2: Evet, uygun kaynak yönetimiyle büyük partileri etkili bir şekilde işleyebilir.
+**Q5: Sorun yaşarsam nereden yardım alabilirim?**  
+A: Aspose Email Forumunu ziyaret edin, resmi dokümantasyona bakın veya Aspose destek ekibiyle doğrudan iletişime geçin.
 
-**S3: Eksik TNEF ekleriyle ilgili sorunları nasıl giderebilirim?**
-A3: Dosya yolunuzu doğrulayın ve emin olun `setPreserveTnefAttachments(true)` doğru ayarlanmıştır.
+**Q6: Maven aspose email java bağımlılığı diğer JDK sürümlerini destekliyor mu?**  
+A: `jdk16` sınıflandırıcısı JDK 16+ hedefler. Daha eski JDK'lar için uygun sınıflandırıcıyı kullanın veya Aspose web sitesinden ilgili ikili dosyayı indirin.
 
-**S4: Java için Aspose.Email'i kullanmanın herhangi bir maliyeti var mı?**
-C4: Ücretsiz deneme sürümü mevcut olmakla birlikte, uzun süreli kullanım için lisans satın alınması veya edinilmesi gerekmektedir.
+**Q7: Bu yaklaşımı e-posta dönüşümü veya SMTP gönderimi gibi diğer Aspose.Email özellikleriyle birleştirebilir miyim?**  
+A: Kesinlikle. `MailMessage` nesnesine sahip olduğunuzda, Aspose.Email'in PST'e dönüşüm, SMTP ile gönderim veya gövde içeriği çıkarma gibi tüm API'lerini kullanabilirsiniz.
 
-**S5: Uygulama sırasında sorunla karşılaşırsam nasıl destek alabilirim?**
-C5: Yardım için Aspose forumunu ziyaret edin veya destek ekibiyle iletişime geçin.
+## Resources
+- **Dokümantasyon**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- **İndirme**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
+- **Satın Alma**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme**: [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
+- **Geçici Lisans**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Destek**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
-## Kaynaklar
-- **Belgeleme**: [Aspose.Email Java Belgeleri](https://reference.aspose.com/email/java/)
-- **İndirmek**: [Aspose.E-posta Bültenleri](https://releases.aspose.com/email/java/)
-- **Satın almak**: [Aspose.E-posta satın al](https://purchase.aspose.com/buy)
-- **Ücretsiz Deneme**: [Aspose.Email'i Ücretsiz Deneyin](https://releases.aspose.com/email/java/)
-- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.aspose.com/temporary-license/)
-- **Destek**: [Aspose E-posta Forumu](https://forum.aspose.com/c/email/10)
+---
 
-Bu adımları bugün uygulayın ve Aspose.Email for Java ile e-posta işlemlerinizi kolaylaştırın!
+**Son Güncelleme:** 2025-12-17  
+**Test Edilen:** Aspose.Email for Java 25.4 (JDK 16 sınıflandırıcısı)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
