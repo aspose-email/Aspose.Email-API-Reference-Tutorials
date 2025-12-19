@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Pelajari cara membuat daftar dan mengajukan pertanyaan menggunakan Aspose.Email untuk Java. Sederhanakan interaksi Exchange Server Anda dengan langkah-langkah yang mudah diikuti."
-"title": "Kelola Tugas Secara Efisien dengan Panduan Kalender & Janji Temu Aspose.Email untuk Java"
-"url": "/id/java/calendar-appointments/aspose-email-java-task-management/"
-"weight": 1
+date: '2025-12-19'
+description: Pelajari cara menampilkan daftar tugas Exchange menggunakan Aspose.Email
+  untuk Java. Tutorial ini menunjukkan cara memfilter tugas berdasarkan status dan
+  mengelola tugas Exchange Server secara efisien.
+keywords:
+- Aspose.Email for Java
+- Exchange Server tasks management
+- Java task automation
+title: Daftar Tugas Exchange Java dengan Aspose.Email untuk Java – Panduan
+url: /id/java/calendar-appointments/aspose-email-java-task-management/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,35 +19,48 @@
 {{< blocks/products/pf/tutorial-page-section >}}
 # Kelola Tugas Secara Efisien dengan Aspose.Email untuk Java
 
-## Perkenalan
+## Pendahuluan
 
-Manajemen tugas yang efisien sangat penting dalam lingkungan kerja yang sibuk, terutama saat berinteraksi dengan beberapa server email. **Aspose.Email untuk Java** menyederhanakan proses ini dengan memungkinkan interaksi yang lancar dengan Microsoft Exchange Server. Tutorial ini memberikan panduan praktis tentang cara memanfaatkan kemampuannya untuk manajemen tugas yang efektif.
+Manajemen tugas yang efisien sangat penting di lingkungan kerja yang sibuk, terutama ketika Anda perlu **list exchange tasks java** di beberapa server email. **Aspose.Email for Java** menyederhanakan proses ini dengan memungkinkan interaksi mulus dengan Microsoft Exchange Server. Dalam **aspose email java tutorial** ini, Anda akan belajar cara menginisialisasi klien, menampilkan semua tugas, dan memfilter tugas berdasarkan status—sehingga Anda dapat menjaga alur kerja inbox‑to‑to‑do tetap terkendali.
 
 **Apa yang Akan Anda Pelajari:**
-- Menginisialisasi Klien Exchange menggunakan Aspose.Email
-- Mencantumkan semua tugas dari Exchange Server
-- Menanyakan tugas tertentu berdasarkan statusnya
+- Menginisialisasi Exchange Client menggunakan Aspose.Email
+- Menampilkan semua tugas dari Exchange Server
+- Menanyakan tugas spesifik berdasarkan statusnya
 - Mengintegrasikan Aspose.Email dengan aplikasi Java
 
-Siap untuk meningkatkan alur kerja manajemen tugas Anda? Mari kita mulai dengan melihat prasyaratnya.
+Siap meningkatkan alur kerja manajemen tugas Anda? Mari kita mulai dengan melihat prasyarat.
+
+## Jawaban Cepat
+- **Apa yang dilakukan “list exchange tasks java”?** Mengambil tugas dari kotak surat Exchange melalui Aspose.Email untuk Java.  
+- **Perpustakaan mana yang diperlukan?** Aspose.Email untuk Java (versi 25.4 atau lebih baru).  
+- **Bisakah saya memfilter tugas berdasarkan status?** Ya—gunakan `ExchangeQueryBuilder` dengan `TaskStatus`.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Versi Java apa yang didukung?** Java 16 atau lebih baru disarankan.
+
+## Apa itu “list exchange tasks java”?
+Menampilkan tugas Exchange dengan Java berarti secara programatis terhubung ke Exchange Server, mengambil koleksi tugas, dan secara opsional memfilternya. Hal ini memungkinkan otomatisasi seperti pembaruan massal, pelaporan, atau pemicu alur kerja tanpa interaksi manual dengan Outlook.
+
+## Mengapa memfilter tugas berdasarkan status?
+Memfilter tugas berdasarkan status (misalnya, Completed, InProgress) memungkinkan Anda fokus pada pekerjaan yang paling penting pada saat tertentu—baik saat Anda membuat laporan status, menyinkronkan hanya item terbuka, atau membersihkan tugas yang selesai.
 
 ## Prasyarat
 
 Sebelum memulai, pastikan Anda memiliki:
 
-### Pustaka dan Ketergantungan yang Diperlukan
-- **Aspose.Email untuk Java**: Diperlukan versi 25.4 atau yang lebih baru.
-- **Kit Pengembangan Java (JDK)**: Gunakan versi 16 atau yang lebih baru.
+### Perpustakaan dan Dependensi yang Diperlukan
+- **Aspose.Email for Java**: Versi 25.4 atau lebih baru diperlukan.  
+- **Java Development Kit (JDK)**: Gunakan versi 16 atau lebih baru.
 
-### Persyaratan Pengaturan Lingkungan
-- Lingkungan pengembangan Java yang berfungsi dengan Maven terinstal.
+### Persyaratan Penyiapan Lingkungan
+- Lingkungan pengembangan Java yang berfungsi dengan Maven terpasang.
 
 ### Prasyarat Pengetahuan
 - Pemahaman dasar tentang Java dan konsep pemrograman berorientasi objek.
 
-## Menyiapkan Aspose.Email untuk Java
+## Tutorial Aspose Email Java – Penyiapan
 
-Untuk mengintegrasikan pustaka Aspose.Email ke dalam proyek Anda, tambahkan ketergantungan ini ke `pom.xml` jika Anda menggunakan Maven:
+Untuk mengintegrasikan perpustakaan Aspose.Email ke dalam proyek Anda, tambahkan dependensi ini ke `pom.xml` Anda jika menggunakan Maven:
 
 ```xml
 <dependency>
@@ -52,13 +71,13 @@ Untuk mengintegrasikan pustaka Aspose.Email ke dalam proyek Anda, tambahkan kete
 </dependency>
 ```
 
-### Langkah-langkah Memperoleh Lisensi
+### Langkah-langkah Perolehan Lisensi
 
-1. **Uji Coba Gratis**: Mulailah dengan uji coba gratis untuk menjelajahi fitur-fitur.
-2. **Lisensi Sementara**: Ajukan permohonan perpanjangan lisensi pengujian jika diperlukan.
-3. **Pembelian**: Pertimbangkan untuk membeli lisensi penuh setelah mengevaluasi pustaka.
+1. **Free Trial**: Mulailah dengan percobaan gratis untuk menjelajahi fitur.  
+2. **Temporary License**: Ajukan lisensi pengujian tambahan jika diperlukan.  
+3. **Purchase**: Pertimbangkan membeli lisensi penuh setelah mengevaluasi perpustakaan.
 
-Setelah lingkungan Anda disiapkan dan lisensi di tangan, inisialisasi pustaka sebagai berikut:
+Dengan lingkungan Anda siap dan lisensi di tangan, inisialisasi perpustakaan sebagai berikut:
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -70,14 +89,14 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-Cuplikan ini menyiapkan Klien Exchange dengan kredensial yang Anda tentukan.
+Potongan kode ini menyiapkan Exchange Client dengan kredensial yang Anda tentukan.
 
 ## Panduan Implementasi
 
-### Inisialisasi Klien Exchange
+### Inisialisasi Exchange Client
 
-#### Ringkasan
-Inisialisasi klien Java Aspose.Email untuk menghubungkan dan mengautentikasi dengan Exchange Server Anda. Ini penting untuk mengakses tugas kotak surat secara terprogram.
+#### Gambaran Umum
+Inisialisasi klien Aspose.Email Java untuk terhubung dan mengautentikasi dengan Exchange Server Anda. Ini penting untuk mengakses tugas kotak surat secara programatis.
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -89,14 +108,14 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-- **Parameter**:
-  - `mailboxUri`: URL titik akhir server Exchange Anda.
-  - `username`Bahasa Indonesia: `password`Bahasa Indonesia: `domain`: Kredensial untuk autentikasi.
+- **Parameters**:
+  - `mailboxUri`: URL endpoint dari server Exchange Anda.  
+  - `username`, `password`, `domain`: Kredensial untuk autentikasi.
 
-### Daftar Semua Tugas dari Exchange Server
+### Menampilkan Semua Tugas dari Exchange Server
 
-#### Ringkasan
-Ambil semua tugas yang disimpan di kotak surat Exchange Anda menggunakan klien yang diinisialisasi.
+#### Gambaran Umum
+Ambil semua tugas yang disimpan di kotak surat Exchange Anda menggunakan klien yang telah diinisialisasi. Ini adalah inti dari operasi **list exchange tasks java**.
 
 ```java
 client.setTimezoneId("Central Europe Standard Time");
@@ -104,17 +123,17 @@ TaskCollection taskCollection = client.listTasks(client.getMailboxInfo().getTask
 int iTasksCount = taskCollection.size();
 for (int i = 0; i < iTasksCount; i++) {
     ExchangeTask task = (ExchangeTask) taskCollection.get_Item(i);
-    // Memproses setiap tugas
+    // Process each task
 }
 ```
 
-- **Parameter**:
-  - `setTimezoneId`: Memastikan tugas ditampilkan pada waktu setempat yang benar.
+- **Parameters**:
+  - `setTimezoneId`: Memastikan tugas ditampilkan dalam zona waktu lokal yang tepat.
 
-### Menanyakan dan Mencantumkan Tugas Tertentu dari Exchange Server
+### Menanyakan dan Menampilkan Tugas Spesifik dari Exchange Server
 
-#### Ringkasan
-Filter dan daftarkan tugas tertentu berdasarkan statusnya menggunakan kemampuan kueri.
+#### Gambaran Umum
+Filter dan tampilkan tugas spesifik berdasarkan statusnya menggunakan kemampuan query—ini cara Anda **filter tasks by status**.
 
 ```java
 Integer[] selectedStatuses = new Integer[]{
@@ -130,63 +149,66 @@ taskCollection = client.listTasks(client.getMailboxInfo().getTasksUri(), query);
 iTasksCount = taskCollection.size();
 for (int i = 0; i < iTasksCount; i++) {
     ExchangeTask task = (ExchangeTask) taskCollection.get_Item(i);
-    // Memproses setiap tugas yang ditanyakan
+    // Process each queried task
 }
 ```
 
-- **Parameter**:
-  - `selectedStatuses`: Suatu susunan yang menentukan status mana yang akan digunakan untuk memfilter tugas.
+- **Parameters**:
+  - `selectedStatuses`: Sebuah array yang menentukan status mana yang akan digunakan untuk memfilter tugas.
 
 ## Aplikasi Praktis
 
-Mengintegrasikan Aspose.Email dengan Java memungkinkan berbagai aplikasi dunia nyata:
+Mengintegrasikan Aspose.Email dengan Java memungkinkan berbagai skenario dunia nyata:
 
-1. **Manajemen Tugas Otomatis**Sinkronkan dan perbarui tugas di seluruh platform secara otomatis.
-2. **Alat Pelaporan**:Buat laporan berdasarkan status penyelesaian tugas.
-3. **Otomatisasi Alur Kerja**: Memicu alur kerja saat kondisi tertentu terpenuhi (misalnya, tugas selesai).
-4. **Integrasi Lintas Platform**: Terintegrasi secara mulus dengan sistem lain seperti CRM atau alat manajemen proyek.
+1. **Automated Task Management** – Menyinkronkan dan memperbarui tugas di berbagai platform secara otomatis.  
+2. **Reporting Tools** – Menghasilkan laporan berdasarkan status penyelesaian tugas.  
+3. **Workflow Automation** – Memicu alur kerja ketika kondisi tertentu terpenuhi (misalnya, tugas selesai).  
+4. **Cross‑Platform Integration** – Mengintegrasikan secara mulus dengan alat CRM atau manajemen proyek.
 
 ## Pertimbangan Kinerja
 
-Untuk memastikan kinerja yang optimal:
+Untuk memastikan kinerja optimal:
 
-- **Mengoptimalkan Penggunaan Jaringan**: Ambil hanya informasi yang diperlukan untuk meminimalkan transfer data.
-- **Manajemen Memori yang Efisien**:Perhatikan penggunaan memori Java, terutama saat menangani kumpulan tugas besar.
-- **Praktik Terbaik Aspose.Email**Ikuti dokumentasi Aspose untuk konfigurasi lanjutan dan teknik pengoptimalan.
+- **Optimize Network Usage** – Ambil hanya bidang yang Anda perlukan untuk menjaga lalu lintas tetap rendah.  
+- **Efficient Memory Management** – Perhatikan penggunaan heap Java saat menangani objek `TaskCollection` yang besar.  
+- **Aspose.Email Best Practices** – Ikuti dokumentasi resmi untuk konfigurasi lanjutan dan strategi caching.
 
-## Kesimpulan
+## Masalah Umum dan Solusinya
 
-Anda kini telah dibekali dengan pengetahuan untuk menginisialisasi Exchange Client, mencantumkan semua tugas, dan mengajukan pertanyaan tentang tugas tertentu menggunakan Aspose.Email untuk Java. Jelajahi lebih jauh dengan mengintegrasikan fitur-fitur ini ke dalam aplikasi Anda atau mengoptimalkan kinerja berdasarkan kasus penggunaan Anda.
+| Issue | Likely Cause | Solution |
+|-------|--------------|----------|
+| **Autentikasi gagal** | Kredensial atau domain salah | Verifikasi nilai `username`, `password`, dan `domain`; pastikan URL Exchange dapat dijangkau. |
+| **Tidak ada tugas yang dikembalikan** | URI kotak surat salah atau izin kurang | Periksa bahwa akun layanan memiliki akses ke folder Tasks. |
+| **Ketidaksesuaian zona waktu** | `setTimezoneId` tidak diatur atau salah | Gunakan ID zona waktu Windows yang sesuai untuk wilayah Anda. |
+| **Koleksi tugas besar menyebabkan OOM** | Memuat semua tugas sekaligus | Implementasikan paging dengan menggunakan `client.listTasks(..., query, offset, limit)` (lihat dokumentasi Aspose). |
 
-Siap untuk lebih banyak lagi? Terapkan solusi ini dalam skenario dunia nyata untuk meningkatkan proses manajemen tugas Anda.
+## Pertanyaan yang Sering Diajukan
 
-## Bagian FAQ
+**Q: Apa itu Aspose.Email untuk Java?**  
+A: Sebuah perpustakaan yang menyederhanakan interaksi dengan server email, termasuk Exchange Server, melalui API Java yang bersih.
 
-1. **Apa itu Aspose.Email untuk Java?**
-   - Pustaka yang menyederhanakan interaksi dengan server email, termasuk Exchange Server.
+**Q: Bagaimana cara mendapatkan lisensi Aspose.Email?**  
+A: Mulailah dengan percobaan gratis atau minta lisensi sementara; beli lisensi penuh untuk penggunaan produksi.
 
-2. **Bagaimana cara memperoleh lisensi Aspose.Email?**
-   - Mulailah dengan uji coba gratis atau minta lisensi sementara untuk mengevaluasi fitur sebelum membeli.
+**Q: Bisakah saya menggunakan Aspose.Email pada versi Java apa pun?**  
+A: Mendukung Java 16 atau lebih baru; versi yang lebih baru juga kompatibel.
 
-3. **Dapatkah saya menggunakan Aspose.Email pada versi Java mana pun?**
-   - Ya, tetapi versi 16 direkomendasikan untuk kompatibilitas dan kinerja optimal.
+**Q: Apa saja jebakan umum saat melakukan list exchange tasks java?**  
+A: Kredensial yang salah, izin yang kurang, dan tidak mengatur zona waktu yang tepat adalah yang paling sering.
 
-4. **Apa saja masalah umum saat menggunakan Aspose.Email?**
-   - Masalah konektivitas jaringan, kredensial yang salah, atau pengaturan lingkungan yang salah konfigurasi dapat menyebabkan masalah.
+**Q: Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Email untuk Java?**  
+A: Kunjungi [official documentation](https://reference.aspose.com/email/java/) dan [support forums](https://forum.aspose.com/c/email/10) untuk panduan detail dan bantuan komunitas.
 
-5. **Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Email untuk Java?**
-   - Kunjungi [dokumentasi resmi](https://reference.aspose.com/email/java/) Dan [forum dukungan](https://forum.aspose.com/c/email/10) untuk panduan terperinci dan dukungan komunitas.
+## Sumber Daya
 
-## Sumber daya
+- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose License](https://purchase.aspose.com/buy)
+- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Support**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
-- **Dokumentasi**: [Referensi Java Aspose Email](https://reference.aspose.com/email/java/)
-- **Unduh**: [Rilis Java Aspose Email](https://releases.aspose.com/email/java/)
-- **Pembelian**: [Beli Lisensi Aspose](https://purchase.aspose.com/buy)
-- **Uji Coba Gratis**: [Mulailah dengan Uji Coba Gratis](https://releases.aspose.com/email/java/)
-- **Lisensi Sementara**: [Dapatkan Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
-- **Mendukung**: [Forum Dukungan Aspose](https://forum.aspose.com/c/email/10)
-
-Manfaatkan kekuatan Aspose.Email untuk Java dan sederhanakan interaksi server email Anda hari ini!
+Manfaatkan kekuatan Aspose.Email untuk Java dan permudah interaksi server email Anda hari ini!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -195,3 +217,9 @@ Manfaatkan kekuatan Aspose.Email untuk Java dan sederhanakan interaksi server em
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Terakhir Diperbarui:** 2025-12-19  
+**Diuji Dengan:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Penulis:** Aspose
