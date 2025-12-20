@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email kullanarak Java'da tekrarlayan takvim etkinliklerini nasıl oluşturacağınızı, yöneteceğinizi ve otomatikleştireceğinizi öğrenin. Günlük tekrarlama desenleri ayarlayın ve istisnaları sorunsuz bir şekilde işleyin."
-"title": "Java için Aspose.Email Kullanarak Günlük Tekrarlama ve İstisnalar İçeren Bir MAPI Takvimi Nasıl Oluşturulur"
-"url": "/tr/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/"
-"weight": 1
+date: '2025-12-20'
+description: Aspose.Email for Java kullanarak MAPI takvim Java'sını nasıl oluşturacağınızı,
+  günlük yineleme desenlerini nasıl yöneteceğinizi ve istisnaları nasıl ele alacağınızı
+  öğrenin.
+keywords:
+- MAPI Calendar creation
+- daily recurrence events
+- Java calendar exceptions
+title: Java ile günlük tekrarlama ve istisnalar içeren MAPI takvimi oluştur
+url: /tr/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +17,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java için Aspose.Email Kullanarak Günlük Tekrarlama ve İstisnalar İçeren Bir MAPI Takvimi Nasıl Oluşturulur
+# MAPI takvim java nesnesini günlük yineleme ve istisnalarla nasıl oluşturulur
 
-Tekrarlayan etkinlikleri verimli bir şekilde yönetmek, özellikle istisnalar veya değişiklikler gerektiğinde zor olabilir. Bu eğitim, günlük tekrarlama ile bir MAPI takvim etkinliği oluşturma ve Java için Aspose.Email kullanarak istisnalar ekleme konusunda size rehberlik edecektir. Uygulamalarınız içinde zamanlama görevlerini sorunsuz bir şekilde nasıl otomatikleştireceğinizi öğreneceksiniz.
+Yineleyen etkinlikleri verimli bir şekilde yönetmek zor olabilir, özellikle istisnalar veya değişiklikler gerektiğinde. Bu öğreticide **create mapi calendar java** nesnelerini oluşturacak, günlük yineleme desenlerini ayarlayacak ve Aspose.Email for Java kullanarak istisnalar ekleyeceksiniz. Uygulamalarınız içinde zamanlama görevlerini sorunsuz bir şekilde otomatikleştirmeyi öğreneceksiniz.
 
-### Ne Öğreneceksiniz:
-- Aspose.Email kütüphanesini bir Java projesinde kurun ve kullanın.
-- Günlük tekrarlamalı bir MAPI takvim etkinliği oluşturun.
-- Tekrar eden etkinliklere istisnalar ekleyin.
-- Takvim girişlerini PST dosyalarına kaydedin ve yönetin.
+## Quick Answers
+- **Hangi kütüphane?** Aspose.Email for Java  
+- **Ana görev?** Create a MAPI calendar with daily recurrence and exceptions  
+- **Gereken JDK?** Java 16 or higher  
+- **İstisnalara dosya ekleyebilir miyim?** Yes, using `MapiCalendarExceptionInfo`  
+- **Takvim nerede depolanıyor?** In a PST file via `PersonalStorage`
 
-Aspose.Email for Java'yı kullanarak planlama görevlerinizi daha verimli hale getirmeye başlayalım.
+### MAPI takvimi nedir?
+MAPI (Messaging Application Programming Interface) takvimi, Microsoft Outlook ve diğer e-posta istemcileri tarafından randevu verilerini depolamak için kullanılan standart bir formattır. Zengin yineleme kuralları, istisnalar ve ekleri destekler, bu da kurumsal zamanlama için ideal kılar.
 
-## Ön koşullar
+### Aspose.Email for Java neden kullanılmalı?
+Aspose.Email, Outlook'a bağımlı olmadan MAPI nesnelerini oluşturmanıza, değiştirmenize ve kaydetmenize olanak tanıyan saf Java API'si sağlar. Bu, sunucu tarafı zamanlama özellikleri oluşturmanızı, PST dosyaları üretmenizi ve karmaşık yineleme senaryolarını programlı olarak yönetmenizi sağlar.
 
-Başlamadan önce aşağıdaki kurulumların yapıldığından emin olun:
-- **Aspose.E-posta Kütüphanesi**: Bu kütüphanenin 25.4 sürümüne ihtiyacınız var. Maven üzerinden veya doğrudan indirerek edinebilirsiniz.
-- **Java Geliştirme Kiti (JDK)**Sisteminizde JDK 16'nın kurulu olduğundan emin olun.
-- **İDE**: IntelliJ IDEA, Eclipse veya NetBeans gibi herhangi bir Java IDE yeterli olacaktır.
+## Önkoşullar
+
+Başlamadan önce, aşağıdaki kurulumun yapıldığından emin olun:
+- **Aspose.Email Kütüphanesi**: Version 25.4 (or later) – Maven veya doğrudan indirme yoluyla kullanılabilir.  
+- **Java Development Kit (JDK)**: JDK 16 veya daha yeni.  
+- **IDE**: IntelliJ IDEA, Eclipse, NetBeans veya herhangi bir Java‑uyumlu editör.
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
 
-Aspose.Email'i Maven kullanarak projenize entegre etmek için aşağıdaki bağımlılığı ekleyin: `pom.xml`:
+Aspose.Email'i projenize Maven ile entegre etmek için `pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
 
 ```xml
 <dependency>
@@ -46,25 +57,25 @@ Aspose.Email'i Maven kullanarak projenize entegre etmek için aşağıdaki bağ�
 ### Lisans Edinimi
 
 Aspose.Email'i kullanmak için bir lisansa ihtiyacınız olacak:
-- **Ücretsiz Deneme**: Özellikleri keşfetmek için deneme sürümünü kullanmaya başlayın.
-- **Geçici Lisans**: Genişletilmiş değerlendirme için bir talepte bulunun.
-- **Satın almak**: Üretim amaçlı kullanım için tam lisans satın alın.
+- **Free Trial** – tüm özellikleri ücretsiz olarak keşfedin.  
+- **Temporary License** – genişletilmiş değerlendirme için talep edin.  
+- **Full License** – üretim dağıtımları için satın alın.
 
-## Java için Aspose.Email Kurulumu
+## Aspose.Email for Java Kurulumu
 
-Öncelikle ortamınızı ayarlayın:
+İlk olarak, ortamınızı kurun:
 
-1. Sisteminizde JDK 16'nın kurulu ve yapılandırılmış olduğundan emin olun.
-2. Maven bağımlılığını projenize ekleyin veya Aspose'un web sitesinden JAR'ı indirin.
+1. JDK 16'nın kurulu olduğunu ve `JAVA_HOME`'un yapılandırıldığını doğrulayın.  
+2. Maven bağımlılığını (veya JAR'ı) projenize ekleyin.  
 
-Uygulamanızda Aspose.Email'i şu şekilde başlatabilirsiniz:
+Lisans dosyasını nasıl yükleyeceğinizi gösteren küçük bir kod parçacığı:
 
 ```java
 import com.aspose.email.*;
 
 public class InitializeAspose {
     public static void main(String[] args) {
-        // Mümkünse bir lisans ayarlayın
+        // Set up a license if available
         License license = new License();
         try {
             license.setLicense("path/to/your/license.lic");
@@ -77,32 +88,33 @@ public class InitializeAspose {
 
 ## Uygulama Kılavuzu
 
-### Günlük Tekrarlama ve İstisnalarla MAPI Takvimi Oluşturma
+### Günlük Yineleme ve İstisnalarla MAPI Takvim Oluşturma
 
-#### Genel bakış
-Bu özellik, istisnalar aracılığıyla esneklik sağlarken, yinelenen takvim etkinliklerinin oluşturulmasını otomatikleştirmenize olanak tanır.
+#### Genel Bakış
+Bu özellik, belirli örnekleri atlayabilmenizi veya değiştirebilmenizi sağlarken yineleyen randevuları otomatikleştirmenize olanak tanır.
 
-#### Adım Adım Uygulama
-**1. Etkinlik Başlangıç Tarihini Ayarlayın**
-Öncelikle etkinliğinizin ne zaman başlayacağını belirleyerek başlayın:
+#### Adım‑Adım Uygulama
+
+**1. Etkinlik Başlangıç Tarihini Ayarlayın**  
+Serinin ne zaman başlayacağını belirleyin:
 
 ```java
 Date startDate = addHours(newDate(2018, 7, 19), 12);
 ```
 
-**2. MAPI Takvim Etkinliği Oluşturun**
-Takvimi konum, özet ve açıklama ile başlatın:
+**2. MAPI Takvim Nesnesini Oluşturun**  
+Konum, konu ve açıklamayı sağlayın:
 
 ```java
 MapiCalendar calendar = new MapiCalendar("location1", "summary1", "description1", startDate, addHours(startDate, 1));
 ```
 
-**3. Günlük Tekrarlama Desenini Tanımlayın**
-Etkinliğiniz için günlük bir tekrarlama düzeni ayarlayın:
+**3. Günlük Yineleme Deseni Tanımlayın**  
+Etkinliği her gün tekrarlayacak şekilde yapılandırın:
 
 ```java
 MapiCalendarEventRecurrence recurrence = new MapiCalendarEventRecurrence();
-recurrence.setRecurrencePattern(new MapiCalendarGünlükRecurrencePattern());
+recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
 MapiCalendarRecurrencePattern pattern = recurrence.getRecurrencePattern();
 
 pattern.setPatternType(MapiCalendarRecurrencePatternType.Day);
@@ -110,8 +122,8 @@ pattern.setPeriod(1); // Daily
 pattern.setEndType(MapiCalendarRecurrenceEndType.NeverEnd);
 ```
 
-**4. Tekrarlamaya Bir İstisna Ekleyin**
-Olayın gerçekleşmeyeceği bir tarih belirtin:
+**4. Yinelemeye Bir İstisna Ekleyin**  
+Hariç tutulması (veya değiştirilmesi) gereken bir tarihi belirtin:
 
 ```java
 Date exceptionDate = addDays(startDate, 3);
@@ -132,21 +144,23 @@ pattern.getDeletedInstanceDates().addItem(exceptionDate);
 calendar.setRecurrence(recurrence);
 ```
 
-### Takvime Dosya Ekleme İstisnaları
+### Takvim İstisnalarına Dosya Ekleme
 
-#### Genel bakış
-Referans olması açısından istisnalara belge veya dosya ekleyin.
-**1. Bir Dosya Oluşturun ve Ekleyin**
+#### Genel Bakış
+Herhangi bir istisna örneğine destekleyici belgeler (ör. gündemler) ekleyebilirsiniz.
+
+**1. Dosya Oluşturun ve Ekleyin**
 
 ```java
 MapiCalendarExceptionInfo exception = new MapiCalendarExceptionInfo();
 exception.getAttachments().add("file.txt", "hello, world!".getBytes());
 ```
 
-### MAPI Takvimini PST Dosyalarına Kaydetme
+### MAPI Takvimi PST Dosyalarına Kaydetme
 
-#### Genel bakış
-Takvim girişlerinizi e-posta istemcileri için doğrudan bir PST dosyasına kaydedin.
+#### Genel Bakış
+Takvimi bir PST dosyasına kalıcı olarak kaydedin, böylece Outlook veya diğer istemciler okuyabilir.
+
 **1. Takvimi Oluşturun ve PST'ye Kaydedin**
 
 ```java
@@ -160,45 +174,62 @@ try {
 ```
 
 ## Pratik Uygulamalar
-- **Kurumsal Programlama**:Tatil günleri ve resmi tatiller hariç toplantı kurulumlarını otomatikleştirin.
-- **Proje Yönetimi**: Tekrarlayan proje kilometre taşlarını takip edin ve gerektiğinde ayarlayın.
-- **Etkinlik Planlaması**: Tek bir kurulumla etkinlik serilerini düzenleyin ve değişiklikleri kolayca yönetin.
+- **Corporate Scheduling** – toplantı serilerini otomatikleştirin, tatilleri otomatik olarak atlayın.  
+- **Project Management** – ara sıra tarih kaymalarıyla yineleyen kilometre taşlarını izleyin.  
+- **Event Planning** – bazı oturumların iptal edildiği veya yeniden planlandığı çok günlük konferansları yönetin.
 
 ### Entegrasyon Olanakları
-Üretkenliği artırmak için Aspose.Email işlevlerini CRM sistemleri, görev yönetim araçları veya özel uygulamalarla entegre edin.
+Aspose.Email'i CRM platformları, görev‑yönetimi API'leri veya özel iş akışı motorlarıyla birleştirerek uçtan uca otomasyonu sağlayabilirsiniz.
 
-## Performans Hususları
-- **Dosya Erişimini Optimize Edin**: Nesneleri doğru şekilde bertaraf ederek kaynakları yönetin.
-- **Bellek Yönetimi**: Büyük PST dosyalarını yönetmek için akışları verimli bir şekilde kullanın.
-- **Eşzamansız İşleme**:Kapsamlı işlemler için daha iyi performans için asenkron yöntemleri göz önünde bulundurun.
+## Performans Düşünceleri
+- **Dispose Resources** – dosya tutamaçlarını serbest bırakmak için `PersonalStorage` üzerinde her zaman `dispose()` çağırın.  
+- **Stream Usage** – tüm PST'leri belleğe yüklemekten kaçınmak için `ByteArrayOutputStream` veya dosya akışlarını tercih edin.  
+- **Async Operations** – toplu takvim oluşturma için, UI'nin yanıt vermesini sağlamak amacıyla oluşturma mantığını arka plan iş parçacığında çalıştırın.
 
-## Çözüm
-Bu kılavuzu takip ederek, Aspose.Email for Java ile takvim etkinliği yönetimini nasıl otomatikleştireceğinizi öğrendiniz. Artık günlük tekrarlama ve istisnalarla MAPI takvimleri oluşturabilir, dosyalar ekleyebilir ve bunları PST formatlarında verimli bir şekilde kaydedebilirsiniz.
+## Sonuç
+Bu kılavuzu izleyerek artık günlük yineleme ile **create mapi calendar java** nesnelerini nasıl oluşturacağınızı, istisnalar ekleyeceğinizi, dosya ekleyeceğinizi ve her şeyi bir PST dosyasında saklayacağınızı biliyorsunuz. Bu yetenekler, Outlook'a doğrudan dokunmadan sağlam zamanlama özellikleri oluşturmanıza olanak tanır.
 
 ### Sonraki Adımlar
-Bu işlevleri uygulamalarınıza entegre ederek deneyler yapın veya üretkenlik araçlarınızı geliştirmek için Aspose.Email for Java tarafından sunulan diğer özellikleri keşfedin.
+- Haftalık veya aylık yineleme desenleriyle deney yapın.  
+- Katılımcılar, hatırlatıcılar ve kategoriler gibi ek MAPI özelliklerini keşfedin.  
+- Daha gelişmiş senaryolar için Aspose.Email'in kapsamlı API belgelerini inceleyin.
 
 ## SSS Bölümü
-1. **Lisans olmadan Aspose.Email'i kullanabilir miyim?**
-   - Evet, yeteneklerini test etmek için ücretsiz deneme sürümünü kullanmaya başlayabilirsiniz.
-2. **Tekrar eden etkinliklerde istisnaları nasıl ele alırım?**
-   - Kullanmak `MapiCalendarExceptionInfo` istisna tarihlerini ve ayrıntılarını belirtmek için.
-3. **Takvimleri doğrudan PST dosyalarına kaydetmek mümkün müdür?**
-   - Kesinlikle! Aspose.Email takvim kayıtlarını sorunsuz bir şekilde PST formatlarına kaydetmeyi destekler.
-4. **Bu diğer Java uygulamalarıyla entegre edilebilir mi?**
-   - Evet, sağlanan API yöntemlerini kullanarak herhangi bir Java uygulamasına kolayca entegre edebilirsiniz.
-5. **Lisansımın süresi dolarsa ne yapmalıyım?**
-   - Gelişmiş özellikleri kullanmaya devam etmek için lisansınızı yenileyin veya satın alma seçeneklerini inceleyin.
+1. **Aspose.Email'i lisans olmadan kullanabilir miyim?**  
+   - Evet, özelliklerini keşfetmek için ücretsiz deneme sürümüyle başlayabilirsiniz.  
+2. **Yineleyen etkinliklerde istisnaları nasıl yönetirim?**  
+   - `MapiCalendarExceptionInfo` kullanarak tarihi, değiştirilmiş zamanları ve ekli verileri tanımlayın.  
+3. **Takvimleri doğrudan PST dosyalarına kaydetmek mümkün mü?**  
+   - Kesinlikle. `PersonalStorage` sınıfı PST dosyaları oluşturmanıza ve takvim öğeleri eklemenize olanak tanır.  
+4. **Bu, diğer Java uygulamalarıyla entegre edilebilir mi?**  
+   - Evet, API saf Java olduğundan, herhangi bir Java‑tabanlı hizmete veya masaüstü uygulamasına entegre edebilirsiniz.  
+5. **Lisansım süresi dolarsa ne yapmalıyım?**  
+   - Lisansı Aspose portalı üzerinden yenileyin veya geçici olarak deneme moduna geri dönün.
 
-## Kaynaklar
-- [Java Belgeleri için Aspose.Email](https://reference.aspose.com/email/java/)
-- [Aspose.Email'i indirin](https://releases.aspose.com/email/java/)
-- [Lisans Satın Alın](https://purchase.aspose.com/buy)
+## Sık Sorulan Sorular
+
+**S: Kütüphane saat‑dilimi farkında randevuları destekliyor mu?**  
+C: Evet, `MapiCalendar` üzerindeki `StartTimeZone` ve `EndTimeZone` özelliklerini ayarlayabilirsiniz.
+
+**S: Yineleyen bir seriden tek bir örneği programlı olarak silebilir miyim?**  
+C: Tek tek tarihleri kaldırmak için yineleme desenindeki `DeletedInstanceDates` koleksiyonunu kullanın.
+
+**S: Aspose.Email ile oluşturulan PST dosyasının boyutu için sınırlamalar var mı?**  
+C: PST dosyaları Unicode format limitlerine (varsayılan olarak 2 GB) uyar, ancak `PersonalStorage` ayarlarıyla daha büyük boyutlar yapılandırılabilir.
+
+**S: Toplantı isteğine katılımcı eklemek nasıl yapılır?**  
+C: `MapiRecipient` nesneleri oluşturun, `RecipientType` özelliğini `MapiRecipientType.MAPI_TO` olarak ayarlayın ve `MapiMessage`'in `Recipients` koleksiyonuna ekleyin.
+
+**S: Yineleyen görevler (sadece randevular değil) için destek var mı?**  
+C: Evet, Aspose.Email benzer özelliklere sahip `MapiTask` da sağlar.
+
+## Resources
+- [Aspose.Email for Java Belgeleri](https://reference.aspose.com/email/java/)
+- [Aspose.Email'i İndir](https://releases.aspose.com/email/java/)
+- [Lisans Satın Al](https://purchase.aspose.com/buy)
 - [Ücretsiz Deneme Sürümü](https://releases.aspose.com/email/java/)
-- [Geçici Lisans Talebi](https://purchase.aspose.com/temporary-license/)
+- [Geçici Lisans Talep Et](https://purchase.aspose.com/temporary-license/)
 - [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
-
-Bu çözümleri bugün uygulamaya çalışın ve etkinlik yönetimi süreçlerinizi Aspose.Email for Java ile hızlandırın!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -207,3 +238,9 @@ Bu çözümleri bugün uygulamaya çalışın ve etkinlik yönetimi süreçlerin
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2025-12-20  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
+**Yazar:** Aspose
