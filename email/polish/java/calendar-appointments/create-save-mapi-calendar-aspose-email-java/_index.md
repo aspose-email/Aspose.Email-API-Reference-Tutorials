@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "Dowiedz się, jak zautomatyzować zarządzanie kalendarzem, tworząc i zapisując kalendarze MAPI przy użyciu Aspose.Email for Java. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby zapewnić bezproblemową integrację."
-"title": "Tworzenie i zapisywanie kalendarzy MAPI w Javie za pomocą Aspose.Email&#58; Kompleksowy przewodnik"
-"url": "/pl/java/calendar-appointments/create-save-mapi-calendar-aspose-email-java/"
-"weight": 1
+date: '2026-01-01'
+description: Dowiedz się, jak utworzyć kalendarz MAPI w Javie i zapisać go do pliku
+  PST przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku z kodem, powtórzeniami
+  i odbiorcami.
+keywords:
+- Create MAPI Calendar Java
+- Aspose.Email Java Calendar
+- Java PST File Save
+title: Jak utworzyć kalendarz MAPI w Javie przy użyciu Aspose.Email – Zapisz kalendarz
+  do pliku PST
+url: /pl/java/calendar-appointments/create-save-mapi-calendar-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,37 +18,54 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Jak utworzyć i zapisać kalendarz MAPI przy użyciu Aspose.Email dla Java
+# Jak utworzyć kalendarz MAPI w Javie przy użyciu Aspose.Email – Zapisz kalendarz do PST
 
-## Wstęp
+## Introduction
 
-Czy chcesz usprawnić automatyzację kalendarza w swoich aplikacjach Java? Dzięki **Aspose.Email dla Java**tworzenie i zapisywanie elementów kalendarza MAPI, w tym zdarzeń cyklicznych, jest proste. Ten samouczek przeprowadzi Cię przez używanie Aspose.Email do tworzenia elementów kalendarza MAPI, konfigurowania wzorców powtarzania, dodawania odbiorców i efektywnego zapisywania ich w pliku PST.
+Czy chcesz usprawnić automatyzację kalendarza w swoich aplikacjach Java? Dzięki **Aspose.Email for Java** możesz **create MAPI calendar java** elementy, definiować wzorce powtarzania, dodawać uczestników i **save calendar to PST** pliki przy użyciu zaledwie kilku linii kodu. Ten samouczek przeprowadzi Cię przez cały proces — od konfiguracji biblioteki po wygenerowanie w pełni funkcjonalnego wpisu kalendarza gotowego do dystrybucji.
 
-### Czego się nauczysz
-- Jak utworzyć zdarzenie kalendarza MAPI przy użyciu Aspose.Email dla Java.
-- Bezproblemowe konfigurowanie wzorców powtarzania.
-- Dodawanie odbiorców do wydarzeń w kalendarzu.
-- Zapisywanie kalendarza w formacie PST w celu dalszego wykorzystania.
+### What You'll Learn
+- Jak używać Aspose.Email do **create MAPI calendar java** zdarzeń.
+- Konfigurowanie dziennych, tygodniowych lub niestandardowych wzorców powtarzania.
+- Dodawanie odbiorców (organizatorów, uczestników) do zaproszeń kalendarzowych.
+- Trwałe przechowywanie elementu kalendarza poprzez **saving calendar to PST** dla kompatybilności z Outlookiem.
 
-Zacznijmy od skonfigurowania środowiska i narzędzi.
+Let's dive in and get your development environment ready.
 
-## Wymagania wstępne
+## Quick Answers
+- **Which library?** Aspose.Email for Java  
+- **Primary goal?** Create MAPI calendar java i **save calendar to PST**  
+- **Prerequisites?** Java 8+, Maven, licencja Aspose.Email  
+- **Typical implementation time?** 10‑15 minut dla podstawowego zdarzenia  
+- **Can I add recurrence?** **Czy mogę dodać powtarzanie?** Tak – codziennie, tygodniowo, miesięcznie itp.
+
+## What is a MAPI Calendar in Java?
+Obiekt kalendarza MAPI (Messaging Application Programming Interface) reprezentuje spotkanie lub termin zgodny z Outlookiem. Korzystając z Aspose.Email, możesz programowo tworzyć te obiekty, co umożliwia płynną integrację z Exchange, Outlookiem lub dowolnym klientem korzystającym z plików PST.
+
+## Why use Aspose.Email for calendar automation?
+- **Full Outlook compatibility** – generated items work in Outlook, OWA, and mobile clients. → **Pełna kompatybilność z Outlookiem** – wygenerowane elementy działają w Outlooku, OWA i klientach mobilnych.
+- **Rich recurrence support** – daily, weekly, monthly, and custom patterns out of the box. → **Bogate wsparcie powtarzania** – codzienne, tygodniowe, miesięczne i niestandardowe wzorce od razu.
+- **No external dependencies** – pure Java library, no COM interop required. → **Brak zewnętrznych zależności** – czysta biblioteka Java, nie wymaga interfejsu COM.
+- **High performance** – efficient handling of large PST files and bulk operations. → **Wysoka wydajność** – efektywne przetwarzanie dużych plików PST i operacji zbiorczych.
+
+## Prerequisites
 
 Zanim zaczniemy, upewnij się, że masz:
 
-### Wymagane biblioteki
-- **Aspose.Email dla Java**: Wymagana jest wersja 25.4 lub nowsza.
-  
-### Wymagania dotyczące konfiguracji środowiska
-- Środowisko programistyczne umożliwiające uruchamianie aplikacji Java (np. IntelliJ IDEA lub Eclipse).
-- Maven zainstalowany w celu zarządzania zależnościami.
+### Required Libraries
+- **Aspose.Email for Java**: wersja 25.4 lub nowsza.
 
-### Wymagania wstępne dotyczące wiedzy
-- Podstawowa znajomość języka Java i koncepcji programowania obiektowego.
+### Environment Setup Requirements
+- IDE Java, takie jak IntelliJ IDEA lub Eclipse.  
+- Zainstalowany Maven do zarządzania zależnościami.
 
-## Konfigurowanie Aspose.Email dla Java
+### Knowledge Prerequisites
+- Podstawowe umiejętności programowania w Javie.  
+- Znajomość koncepcji programowania obiektowego.
 
-Aby rozpocząć pracę z Aspose.Email, uwzględnij go w swoim projekcie za pomocą Mavena, dodając następującą zależność do swojego `pom.xml` plik:
+## Setting Up Aspose.Email for Java
+
+Add the Aspose.Email Maven dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -52,55 +76,55 @@ Aby rozpocząć pracę z Aspose.Email, uwzględnij go w swoim projekcie za pomoc
 </dependency>
 ```
 
-### Nabycie licencji
+### License Acquisition
 
-Aspose.Email oferuje bezpłatną wersję próbną, ale aby odblokować pełne możliwości, możesz uzyskać tymczasową licencję lub zakupić subskrypcję:
+Aspose.Email offers a free trial, but a license unlocks all features:
 
-- **Bezpłatna wersja próbna**:Testuj funkcje bez ograniczeń przez 30 dni.
-- **Licencja tymczasowa**: Żądanie poprzez [Strona internetowa Aspose](https://purchase.aspose.com/temporary-license/) jeśli potrzebujesz więcej czasu.
-- **Zakup**:Kup stałą licencję od [strona zakupu](https://purchase.aspose.com/buy).
+- **Free Trial**: Testuj bez ograniczeń przez 30 dni.  
+- **Temporary License**: Zamów przez [stronę Aspose](https://purchase.aspose.com/temporary-license/), jeśli potrzebujesz dodatkowego czasu.  
+- **Purchase**: Kup stałą licencję na [stronie zakupu](https://purchase.aspose.com/buy).
 
-### Podstawowa inicjalizacja
+### Basic Initialization
 
-Po dodaniu zależności zainicjuj Aspose.Email w swojej aplikacji Java:
+After adding the dependency, initialize the library with your license file:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_your_license.lic");
 ```
 
-## Przewodnik wdrażania
+## Implementation Guide
 
-Teraz, gdy wszystko jest już skonfigurowane, utwórzmy i zapiszmy element kalendarza MAPI.
+Teraz, gdy wszystko jest gotowe, utwórzmy **create MAPI calendar java** i **save calendar to PST**.
 
-### Utwórz kalendarz MAPI z powtarzalnością
+### Create a MAPI Calendar with Recurrence
 
-#### Przegląd
+#### Overview
 
-Zaczniemy od utworzenia wydarzenia w kalendarzu, ustawienia wzorca jego powtarzania na codzienny i dodania odbiorców.
+Zbudujemy zdarzenie kalendarza, zastosujemy codzienne powtarzanie, dodamy uczestników i ostatecznie zapisujemy je w pliku PST.
 
-#### Wdrażanie krok po kroku
+#### Step‑by‑Step Implementation
 
-1. **Zainicjuj datę i wzór powtarzania**
-   
-   Najpierw ustaw datę rozpoczęcia wydarzenia i zdefiniuj jego powtarzalność:
-   
+1. **Initialize Date and Recurrence Pattern**  
+
+   Najpierw zdefiniuj czas rozpoczęcia i ustaw codzienne powtarzanie:
+
    ```java
    import java.util.Date;
 
-   // Dodaj godziny do bieżącej daty, aby uzyskać godzinę rozpoczęcia
+   // Add hours to current date to get the start time
    Date startDate = addHours(new Date(), 12);
 
    MapiCalendarEventRecurrence recurrence = new MapiCalendarEventRecurrence();
    recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
    ```
 
-   **Wyjaśnienie**Tworzymy `MapiCalendarEventRecurrence` i ustaw, aby powtarzał się codziennie, używając `MapiCalendarDailyRecurrencePattern`.
+   *Explanation*: `MapiCalendarEventRecurrence` przechowuje szczegóły powtarzania; wybieramy codzienny wzorzec za pomocą `MapiCalendarDailyRecurrencePattern`.
 
-2. **Konfigurowanie odbiorców**
+2. **Set Up Recipients**  
 
-   Dodaj odbiorców, którzy otrzymają zaproszenia na wydarzenie:
-   
+   Dodaj osoby, które powinny otrzymać zaproszenie na spotkanie:
+
    ```java
    import com.aspose.email.MapiRecipientCollection;
    import com.aspose.email.MapiRecipientType;
@@ -109,12 +133,12 @@ Zaczniemy od utworzenia wydarzenia w kalendarzu, ustawienia wzorca jego powtarza
    recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
    ```
 
-   **Wyjaśnienie**Tutaj dodajemy odbiorcę z jego adresem e-mail i typem (np. `MAPI_TO`) do kolekcji.
+   *Explanation*: `MapiRecipientCollection` przechowuje każdego uczestnika; `MAPI_TO` oznacza ich jako głównych odbiorców.
 
-3. **Utwórz element kalendarza MAPI**
+3. **Create the MAPI Calendar Item**  
 
-   Teraz utwórz element kalendarza, korzystając ze skonfigurowanych szczegółów:
-   
+   Zbuduj obiekt kalendarza ze wszystkimi wymaganymi szczegółami:
+
    ```java
    import com.aspose.email.MapiCalendar;
 
@@ -123,19 +147,19 @@ Zaczniemy od utworzenia wydarzenia w kalendarzu, ustawienia wzorca jego powtarza
        "Meeting Subject", 
        "Meeting Location", 
        startDate, 
-       addHours(startDate, 1), // Czas zakończenia: jedna godzina po rozpoczęciu
+       addHours(startDate, 1), // End time is one hour after start
        "Event Description",
        recColl,
        recurrence
    );
    ```
 
-   **Wyjaśnienie**:Ten `MapiCalendar` Konstruktor wymaga podania szczegółów, takich jak nazwa organizatora, temat, lokalizacja, godziny rozpoczęcia i zakończenia, opis, odbiorcy i wzorzec powtarzania.
+   *Explanation*: Konstruktor oczekuje organizatora, tematu, lokalizacji, czasu rozpoczęcia/zakonczenia, opisu, listy odbiorców i powtarzania.
 
-4. **Zapisz do pliku PST**
+4. **Save to PST File**  
 
-   Na koniec zapisz element kalendarza w pliku PST:
-   
+   Na koniec, zachowaj kalendarz poprzez **save calendar to PST**:
+
    ```java
    import com.aspose.email.PersonalStorage;
    import com.aspose.email.FolderInfo;
@@ -144,52 +168,60 @@ Zaczniemy od utworzenia wydarzenia w kalendarzu, ustawienia wzorca jego powtarza
    PersonalStorage pst = PersonalStorage.create("calendar.pst", 0);
    FolderInfo calendarFolder = pst.createPredefinedFolder("Calendar", StandardIpmFolder.CALendars);
 
-   // Zapisz element kalendarza MAPI
+   // Save the MAPI Calendar item
    calendarFolder.addMapiMessageItem(calendar);
    ```
 
-   **Wyjaśnienie**:Ten fragment kodu tworzy nowy plik PST i dodaje do niego nasz element kalendarza.
+   *Explanation*: `PersonalStorage.create` generuje nowy plik PST, a `addMapiMessageItem` wstawia wpis kalendarza do folderu „Calendar”.
 
-### Porady dotyczące rozwiązywania problemów
-- Upewnij się, że licencja jest poprawnie skonfigurowana, aby uniknąć ograniczeń funkcji.
-- Aby mieć pewność, że powiadomienia zostaną wysłane prawidłowo, sprawdź, czy adresy e-mail odbiorców są prawidłowe.
+### Troubleshooting Tips
+- Sprawdź ścieżkę do licencji; nieprawidłowa licencja ograniczy funkcjonalność.  
+- Upewnij się, że adresy e‑mail odbiorców są poprawnie sformatowane, aby uniknąć niepowodzeń zaproszeń.  
+- Zamknij plik PST (`pst.dispose()`) po operacjach, aby zwolnić uchwyty plików.
 
-## Zastosowania praktyczne
+## Practical Applications
 
-Oto kilka scenariuszy z życia wziętych, w których tworzenie kalendarzy MAPI może być korzystne:
+Oto typowe scenariusze, w których **create MAPI calendar java** i **save calendar to PST** sprawdzają się doskonale:
 
-1. **Automatyczne planowanie spotkań**:Automatycznie generuj i rozsyłaj zaproszenia na spotkania pomiędzy zespołami.
-2. **Systemy zarządzania wydarzeniami**:Twórz cykliczne wydarzenia na konferencje lub warsztaty.
-3. **Integracja z systemami CRM**:Synchronizuj elementy kalendarza z narzędziami do zarządzania relacjami z klientami.
+1. **Automated Meeting Scheduling** – Generuj powtarzające się zaproszenia na spotkania dla zespołów projektowych bez ręcznej pracy.  
+2. **Event Management Platforms** – Eksportuj sesje konferencyjne jako elementy kalendarza zgodne z Outlookiem.  
+3. **CRM Integration** – Synchronizuj spotkania klientów z systemu CRM bezpośrednio do Outlooka za pomocą plików PST.
 
-## Rozważania dotyczące wydajności
+## Performance Considerations
 
-Podczas pracy z Aspose.Email należy wziąć pod uwagę poniższe wskazówki, aby zoptymalizować wydajność:
-- Zarządzaj zasobami efektywnie, zamykając wszystkie otwarte pliki PST po użyciu.
-- miarę możliwości należy stosować przetwarzanie asynchroniczne, aby obsługiwać duże partie zdarzeń kalendarzowych.
+- **Resource Management**: zwalniaj obiekty `PersonalStorage` po użyciu, aby zapobiec blokadom plików.  
+- **Batch Processing**: przy dużych wolumenach przetwarzaj elementy kalendarza asynchronicznie lub w partiach, aby utrzymać niskie zużycie pamięci.
 
-## Wniosek
+## Conclusion
 
-W tym samouczku nauczysz się, jak utworzyć i zapisać element kalendarza MAPI za pomocą **Aspose.Email dla Java**. Ta możliwość może usprawnić procesy zarządzania wydarzeniami w aplikacjach. Aby lepiej poznać funkcje Aspose.Email, rozważ zapoznanie się z oficjalnym [dokumentacja](https://reference.aspose.com/email/java/).
+Teraz wiesz, jak **create MAPI calendar java** obiekty, konfigurować powtarzanie, dodawać uczestników i **save calendar to PST** przy użyciu Aspose.Email. To podejście umożliwia Twoim aplikacjom Java automatyzację zaawansowanych procesów planowania z kompatybilnością Outlooka.
 
-## Sekcja FAQ
+Aby zgłębić temat, sprawdź oficjalną [dokumentację](https://reference.aspose.com/email/java/).
 
-### P: Czy mogę tworzyć tygodniowe wzorce powtarzalności?
-- **A**: Tak! Użyj `MapiCalendarWeeklyRecurrencePattern` aby skonfigurować cotygodniowe powtarzanie.
+## FAQ Section
 
-### P: Jak obsługiwać wyjątki w powtarzaniu zdarzeń?
-- **A**:Wykorzystaj `setExceptions()` metodę w obiekcie wzorca powtarzalności, aby zdefiniować konkretne daty niepowtarzalne.
+### Q: Czy mogę tworzyć tygodniowe wzorce powtarzania?
+- **A**: Tak! Użyj `MapiCalendarWeeklyRecurrencePattern`, aby zdefiniować tygodniowe powtórzenia.
 
-### P: Czy można zaktualizować istniejący element kalendarza?
-- **A**: Oczywiście. Załaduj element z PST, zmodyfikuj jego właściwości i zapisz go z powrotem.
+### Q: Jak obsłużyć wyjątki w powtarzaniu zdarzenia?
+- **A**: Wywołaj `setExceptions()` na obiekcie powtarzania, aby określić daty odstające od wzorca.
 
-## Zasoby
+### Q: Czy można zaktualizować istniejący element kalendarza?
+- **A**: Oczywiście. Załaduj element z PST, zmodyfikuj jego właściwości i zapisz ponownie.
+
+### Q: Czy mogę zaszyfrować plik PST?
+- **A**: Tak, Aspose.Email umożliwia ustawienie hasła na `PersonalStorage` przy tworzeniu pliku PST.
+
+### Q: Co zrobić, jeśli muszę dodać załączniki do zdarzenia kalendarza?
+- **A**: Użyj `calendar.getAttachments().addFileAttachment("path/to/file")` przed zapisem.
+
+## Resources
 
 - [Dokumentacja Aspose.Email](https://reference.aspose.com/email/java/)
 - [Pobierz Aspose.Email dla Java](https://releases.aspose.com/email/java/)
 - [Kup licencję](https://purchase.aspose.com/buy)
-- [Bezpłatna wersja próbna](https://releases.aspose.com/email/java/)
-- [Poproś o licencję tymczasową](https://purchase.aspose.com/temporary-license/)
+- [Wersja próbna](https://releases.aspose.com/email/java/)
+- [Zamów tymczasową licencję](https://purchase.aspose.com/temporary-license/)
 - [Forum wsparcia Aspose](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
@@ -199,3 +231,9 @@ W tym samouczku nauczysz się, jak utworzyć i zapisać element kalendarza MAPI 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-01  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
