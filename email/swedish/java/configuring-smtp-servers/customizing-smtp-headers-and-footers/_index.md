@@ -1,10 +1,13 @@
 ---
-"description": "Lär dig hur du anpassar SMTP-sidhuvuden och -fötter med Aspose.Email för Java. Förbättra din e-postkommunikation med personlig varumärkesbyggande och meddelanden."
-"linktitle": "Anpassa SMTP-sidhuvuden och sidfot med Aspose.Email"
-"second_title": "Aspose.Email Java e-posthanterings-API"
-"title": "Anpassa SMTP-sidhuvuden och sidfot med Aspose.Email"
-"url": "/sv/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/"
-"weight": 16
+date: 2026-01-04
+description: Lär dig hur du skapar e‑postmeddelanden i Java och anpassar SMTP‑headerar,
+  lägger till en anpassad e‑postfooter och personifierar e‑postvarumärket med Aspose.Email
+  för Java.
+linktitle: Customizing SMTP Headers and Footers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Skapa e‑postmeddelande i Java – Anpassa SMTP‑rubriker och -sidfötter med Aspose.Email
+url: /sv/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,108 +16,125 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Anpassa SMTP-sidhuvuden och sidfot med Aspose.Email
+# Anpassa SMTP‑rubriker och -sidfötter med Aspose.Email
 
+## Introduction
 
-## Introduktion
+I dagens snabbrörliga affärsvärld är varje e‑post du skickar en förlängning av ditt varumärke. Genom att lära dig hur du **create email message java**‑projekt som inkluderar anpassade rubriker och sidfötter kan du *personalize email branding*, stärka din företagsidentitet och följa specifika mail‑server‑krav. Denna handledning guidar dig genom hela processen – från att sätta upp ett Java‑projekt till att lägga till en anpassad e‑postsidfot – med Aspose.Email for Java.
 
-den digitala tidsåldern har e-postmeddelanden blivit ryggraden i professionell kommunikation. De fungerar som ett sätt att förmedla information, bygga relationer och marknadsföra produkter eller tjänster. Standardsidorna och sidfötterna i e-postmeddelanden kanske dock inte alltid överensstämmer med ditt varumärke eller din kommunikationsstil. Det är här anpassning av SMTP-sidhuvuden och sidfötter kommer in i bilden.
+## Quick Answers
+- **Vad är det primära biblioteket?** Aspose.Email for Java  
+- **Vilken metod lägger till en anpassad e‑postsidfot?** `setHtmlBody()` med ditt HTML‑snutt  
+- **Kan jag ange anpassade SMTP‑rubriker?** Ja, via `message.getHeaders().add()`  
+- **Behöver jag en licens för produktion?** En giltig Aspose.Email‑licens krävs för kommersiell användning  
+- **Vilken Java‑version stöds?** Java 8 och senare  
 
-## Förkunskapskrav
+## Prerequisites
 
-Innan du börjar med anpassningsprocessen, se till att du har följande förutsättningar på plats:
+Innan du dyker ner i anpassningsprocessen, se till att du har följande förutsättningar på plats:
 
-- Aspose.Email för Java: Ladda ner och installera Aspose.Email för Java-biblioteket från [här](https://releases.aspose.com/email/java/).
+- Aspose.Email for Java: Ladda ner och installera Aspose.Email for Java‑biblioteket från [here](https://releases.aspose.com/email/java/).
 
-## Komma igång
+## How to create email message java with Aspose.Email
 
-Låt oss börja med att anpassa SMTP-sidhuvuden och sidfot steg för steg. 
+Nedan följer en steg‑för‑steg‑guide som visar exakt hur du bygger, anpassar och skickar ett e‑postmeddelande med Java.
 
-### Steg 1: Konfigurera ditt Java-projekt
+### Step 1: Setting Up Your Java Project
 
-Börja med att skapa ett nytt Java-projekt i din föredragna integrerade utvecklingsmiljö (IDE). Se till att du har importerat Aspose.Email-biblioteket till ditt projekt.
+Starta ett nytt Java‑projekt i din föredragna IDE (IntelliJ IDEA, Eclipse eller NetBeans). Lägg till Aspose.Email‑JAR‑filen i ditt projekts classpath eller importera den via Maven/Gradle.
 
-### Steg 2: Importera de obligatoriska klasserna
+### Step 2: Importing the Required Classes
 
-För att arbeta med Aspose.Email måste du importera de nödvändiga klasserna. Så här gör du:
+Du kommer att behöva ett antal klasser från Aspose.Email‑namnutrymmet. Import‑satsen förblir densamma, så du kan kopiera den direkt:
 
 ```java
 import com.aspose.email.*;
 ```
 
-### Steg 3: Skapa ett e-postmeddelande
+### Step 3: Creating an Email Message
 
-Nästa steg är att skapa ett e-postmeddelande. Här är ett kodavsnitt som hjälper dig att komma igång:
+Nu skapar vi det centrala `MailMessage`‑objektet. Här **create email message java** som senare kommer att bära vår anpassade rubrik och sidfot.
 
 ```java
-// Skapa ett nytt meddelande
+// Create a new message
 MailMessage message = new MailMessage();
 
-// Ange avsändare och mottagare
+// Set sender and recipient
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Ange ämne
+// Set subject
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### Steg 4: Anpassa rubriker
+### Step 4: Customizing Headers
 
-Nu ska vi anpassa e-postrubrikerna. Du kan ställa in rubriker som "X-Priority", "X-Mailer" och mer för att anpassa ditt meddelande. Här är ett exempel:
+Anpassade SMTP‑rubriker ger dig extra kontroll över hur mottagarservern behandlar e‑posten. Till exempel kan du ange prioritet eller specificera mailer‑namnet.
 
 ```java
-// Anpassa rubriker
+// Customize headers
 message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-### Steg 5: Anpassa sidfot
+> **Pro tip:** Använd standardrubriksnamn (t.ex. `X-Priority`) för att säkerställa kompatibilitet över olika mailservrar.
 
-För att anpassa e-postens sidfot kan du lägga till din egen text eller signatur. Så här gör du:
+### Step 5: Adding a Custom Email Footer (add html footer to email)
+
+För att **add custom email footer** och **add html footer to email**, bädda helt enkelt in ditt HTML‑snutt i slutet av meddelandetexten. Detta tillvägagångssätt låter dig också **personalize email branding** med logotyper eller juridiska meddelanden.
 
 ```java
-// Anpassa sidfoten
+// Customize footer
 String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-### Steg 6: Skicka e-postmeddelandet
+Du kan ersätta `footerText` med valfri HTML – bilder, formaterad text eller till och med dynamiskt innehåll.
 
-Skicka slutligen e-postmeddelandet med de anpassade sidhuvuden och sidfoten:
+### Step 6: Sending the Email
+
+Slutligen, konfigurera `SmtpClient` med dina serverdetaljer och skicka meddelandet.
 
 ```java
-// Initiera SMTP-klienten
+// Initialize the SMTP client
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Skicka meddelandet
+// Send the message
 client.send(message);
 ```
 
-## Slutsats
+> **Warning:** Se till att SMTP‑uppgifterna har behörighet att skicka från den `From`‑adress du angav; annars kan servern avvisa meddelandet.
 
-Att anpassa SMTP-sidhuvuden och sidfot med Aspose.Email för Java är ett kraftfullt sätt att förbättra din e-postkommunikation. Det låter dig bibehålla varumärkeskonsekvens och ge dina meddelanden en personlig touch. Genom att följa stegen som beskrivs i den här artikeln kan du skapa effektfullt e-postinnehåll som lämnar ett bestående intryck på dina mottagare.
+## Common Issues and Solutions
 
-## Vanliga frågor
+| Problem | Lösning |
+|-------|----------|
+| **Headers not appearing** | Verifiera att SMTP‑servern inte tar bort anpassade rubriker. Vissa leverantörer tar bort icke‑standardrubriker. |
+| **HTML footer not rendering** | Säkerställ att e‑postklienten stöder HTML och att din HTML är välformad (stängda taggar, korrekt kodning). |
+| **Authentication errors** | Dubbelkolla användarnamn/lösenord och att TLS/SSL‑inställningarna matchar serverns krav. |
 
-### Hur laddar jag ner Aspose.Email för Java?
+## Frequently Asked Questions
 
-Du kan ladda ner Aspose.Email för Java från webbplatsen med hjälp av den här länken: [Ladda ner Aspose.Email för Java](https://releases.aspose.com/email/java/).
+**Q: Hur laddar jag ner Aspose.Email för Java?**  
+A: Du kan ladda ner Aspose.Email för Java från webbplatsen via denna länk: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
 
-### Kan jag anpassa flera sidhuvuden och sidfot i ett enda e-postmeddelande?
+**Q: Kan jag anpassa flera rubriker och sidfötter i ett enda e‑postmeddelande?**  
+A: Ja, du kan anpassa flera rubriker och sidfötter i ett enda e‑postmeddelande. Lägg helt enkelt till de önskade rubrikerna och sidfötterna enligt exemplen som visas.
 
-Ja, du kan anpassa flera sidhuvuden och sidfot i ett enda e-postmeddelande. Lägg bara till önskade sidhuvuden och sidfot enligt exemplen.
+**Q: Finns det någon gräns för längden på anpassade rubriker och sidfötter?**  
+A: Det finns ingen strikt gräns för längden på anpassade rubriker och sidfötter. Det rekommenderas dock att hålla dem korta och relevanta för att behålla ett professionellt intryck.
 
-### Finns det en gräns för längden på anpassade sidhuvuden och sidfot?
+**Q: Kan jag använda HTML‑formatering i e‑postinnehållet?**  
+A: Ja, du kan använda HTML‑formatering i e‑postinnehållet, inklusive rubriker och sidfötter. Detta gör det möjligt att skapa visuellt tilltalande och informativa e‑postmeddelanden.
 
-Det finns ingen strikt gräns för längden på anpassade sidhuvuden och sidfot. Det rekommenderas dock att hålla dem koncisa och relevanta för att bibehålla ett professionellt utseende.
+**Q: Vilka SMTP‑inställningar bör jag använda för att skicka anpassade e‑postmeddelanden?**  
+A: Du bör använda de SMTP‑inställningar som tillhandahålls av din e‑posttjänstleverantör eller din organisations IT‑avdelning. Dessa inställningar inkluderar vanligtvis SMTP‑serveradressen, portnummer och autentiseringsuppgifter.
 
-### Kan jag använda HTML-formatering i e-postinnehållet?
+---
 
-Ja, du kan använda HTML-formatering i e-postmeddelandets innehåll, inklusive sidhuvuden och sidfot. Detta gör att du kan skapa visuellt tilltalande och informativa e-postmeddelanden.
-
-### Vilka SMTP-inställningar ska jag använda för att skicka anpassade e-postmeddelanden?
-
-Du bör använda SMTP-inställningarna som tillhandahålls av din e-postleverantör eller din organisations IT-avdelning. Dessa inställningar inkluderar vanligtvis SMTP-serverns adress, portnummer och autentiseringsuppgifter.
+**Senast uppdaterad:** 2026-01-04  
+**Testad med:** Aspose.Email for Java 24.12  
+**Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

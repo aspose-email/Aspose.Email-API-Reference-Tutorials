@@ -1,10 +1,14 @@
 ---
-"description": "Dowiedz się, jak dostosować nagłówki i stopki SMTP za pomocą Aspose.Email for Java. Ulepsz komunikację e-mailową dzięki spersonalizowanemu brandingowi i wiadomościom."
-"linktitle": "Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email"
-"url": "/pl/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/"
-"weight": 16
+date: 2026-01-04
+description: Dowiedz się, jak tworzyć wiadomości e‑mail w Javie, dostosowywać nagłówki
+  SMTP, dodawać własną stopkę e‑mail oraz personalizować branding wiadomości przy
+  użyciu Aspose.Email dla Javy.
+linktitle: Customizing SMTP Headers and Footers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Tworzenie wiadomości e‑mail w Javie – dostosowywanie nagłówków i stopek SMTP
+  przy użyciu Aspose.Email
+url: /pl/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,108 +17,125 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email
+# Dostosowywanie nagłówków i stopki SMTP przy użyciu Aspose.Email
 
+## Wprowadzenie
 
-## Wstęp
+W dzisiejszym szybkim świecie biznesu każdy e‑mail, który wysyłasz, jest przedłużeniem Twojej marki. Ucząc się, jak **create email message java** projekty, które zawierają niestandardowe nagłówki i stopki, możesz *personalizować branding e‑maili*, wzmocnić tożsamość korporacyjną i spełnić określone wymagania serwera pocztowego. Ten samouczek przeprowadzi Cię przez cały proces — od skonfigurowania projektu Java po dodanie niestandardowej stopki e‑mail — przy użyciu Aspose.Email for Java.
 
-erze cyfrowej e-maile stały się kręgosłupem profesjonalnej komunikacji. Służą jako środek przekazywania informacji, budowania relacji i marketingu produktów lub usług. Jednak domyślne nagłówki i stopki w wiadomościach e-mail nie zawsze są zgodne z Twoją marką lub stylem komunikacji. W tym miejscu wkracza dostosowywanie nagłówków i stopek SMTP.
+## Szybkie odpowiedzi
+- **Jaka jest główna biblioteka?** Aspose.Email for Java  
+- **Która metoda dodaje niestandardową stopkę e‑mail?** `setHtmlBody()` with your HTML snippet  
+- **Czy mogę ustawić niestandardowe nagłówki SMTP?** Yes, via `message.getHeaders().add()`  
+- **Czy potrzebna jest licencja do produkcji?** A valid Aspose.Email license is required for commercial use  
+- **Jaką wersję Javy obsługuje?** Java 8 and above  
 
 ## Wymagania wstępne
 
-Zanim rozpoczniesz proces personalizacji, upewnij się, że spełnione są następujące wymagania wstępne:
+Zanim zanurzysz się w proces dostosowywania, upewnij się, że masz spełnione następujące wymagania:
 
-- Aspose.Email dla Java: Pobierz i zainstaluj bibliotekę Aspose.Email dla Java ze strony [Tutaj](https://releases.aspose.com/email/java/).
+- Aspose.Email for Java: Download and install the Aspose.Email for Java library from [here](https://releases.aspose.com/email/java/).
 
-## Pierwsze kroki
+## Jak stworzyć email message java przy użyciu Aspose.Email
 
-Zacznijmy od dostosowania nagłówków i stopek SMTP krok po kroku. 
+Poniżej znajduje się przewodnik krok po kroku, który dokładnie pokazuje, jak zbudować, dostosować i wysłać e‑mail przy użyciu Javy.
 
-### Krok 1: Konfigurowanie projektu Java
+### Krok 1: Konfiguracja projektu Java
 
-Zacznij od utworzenia nowego projektu Java w preferowanym zintegrowanym środowisku programistycznym (IDE). Upewnij się, że zaimportowałeś bibliotekę Aspose.Email do swojego projektu.
+Rozpocznij nowy projekt Java w ulubionym IDE (IntelliJ IDEA, Eclipse lub NetBeans). Dodaj plik JAR Aspose.Email do ścieżki klas projektu lub zaimportuj go za pomocą Maven/Gradle.
 
 ### Krok 2: Importowanie wymaganych klas
 
-Aby pracować z Aspose.Email, musisz zaimportować niezbędne klasy. Oto, jak to zrobić:
+Będziesz potrzebował kilku klas z przestrzeni nazw Aspose.Email. Instrukcja importu pozostaje taka sama, więc możesz ją skopiować bezpośrednio:
 
 ```java
 import com.aspose.email.*;
 ```
 
-### Krok 3: Tworzenie wiadomości e-mail
+### Krok 3: Tworzenie wiadomości e‑mail
 
-Następnie musisz utworzyć wiadomość e-mail. Oto fragment kodu, który pomoże Ci zacząć:
+Teraz tworzymy podstawowy obiekt `MailMessage`. To miejsce, w którym **create email message java** które później będzie zawierało nasz niestandardowy nagłówek i stopkę.
 
 ```java
-// Utwórz nową wiadomość
+// Create a new message
 MailMessage message = new MailMessage();
 
-// Ustaw nadawcę i odbiorcę
+// Set sender and recipient
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Ustaw temat
+// Set subject
 message.setSubject("Customized Email Header and Footer");
 ```
 
 ### Krok 4: Dostosowywanie nagłówków
 
-Teraz dostosujmy nagłówki wiadomości e-mail. Możesz ustawić nagłówki takie jak „X-Priority”, „X-Mailer” i inne, aby spersonalizować swoją wiadomość. Oto przykład:
+Niestandardowe nagłówki SMTP dają dodatkową kontrolę nad tym, jak serwer odbierający przetwarza wiadomość. Na przykład możesz ustawić priorytet lub określić nazwę programu pocztowego.
 
 ```java
-// Dostosuj nagłówki
+// Customize headers
 message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-### Krok 5: Dostosowywanie stopek
+> **Wskazówka:** Używaj standardowych nazw nagłówków (np. `X-Priority`), aby zapewnić kompatybilność z różnymi serwerami pocztowymi.
 
-Aby dostosować stopkę e-maila, możesz dodać własny tekst lub podpis. Oto, jak możesz to zrobić:
+### Krok 5: Dodawanie niestandardowej stopki e‑mail (add html footer to email)
+
+Aby **add custom email footer** i **add html footer to email**, po prostu osadź swój fragment HTML na końcu treści wiadomości. To podejście pozwala również **personalizować branding e‑maili** przy użyciu logo lub informacji prawnych.
 
 ```java
-// Dostosuj stopkę
+// Customize footer
 String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-### Krok 6: Wysyłanie wiadomości e-mail
+Możesz zamienić `footerText` na dowolny HTML — obrazy, sformatowany tekst lub nawet dynamiczną treść.
 
-Na koniec wyślij wiadomość e-mail z dostosowanymi nagłówkami i stopkami:
+### Krok 6: Wysyłanie e‑maila
+
+Na koniec skonfiguruj `SmtpClient` z danymi swojego serwera i wyślij wiadomość.
 
 ```java
-// Zainicjuj klienta SMTP
+// Initialize the SMTP client
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Wyślij wiadomość
+// Send the message
 client.send(message);
 ```
 
-## Wniosek
+> **Ostrzeżenie:** Upewnij się, że poświadczenia SMTP mają uprawnienia do wysyłania z adresu `From`, który określiłeś; w przeciwnym razie serwer może odrzucić wiadomość.
 
-Dostosowywanie nagłówków i stopek SMTP za pomocą Aspose.Email for Java to skuteczny sposób na ulepszenie komunikacji e-mailowej. Pozwala zachować spójność marki i dodać osobisty akcent do wiadomości. Postępując zgodnie z krokami opisanymi w tym artykule, możesz tworzyć treści e-mailowe, które wywierają trwałe wrażenie na odbiorcach.
+## Typowe problemy i rozwiązania
+
+| Problem | Rozwiązanie |
+|---------|-------------|
+| **Headers not appearing** | Verify that the SMTP server does not strip custom headers. Some providers remove non‑standard headers. |
+| **HTML footer not rendering** | Ensure the email client supports HTML and that your HTML is well‑formed (closed tags, proper encoding). |
+| **Authentication errors** | Double‑check the username/password and that TLS/SSL settings match your server’s requirements. |
 
 ## Najczęściej zadawane pytania
 
-### Jak pobrać Aspose.Email dla Java?
+**Q: How do I download Aspose.Email for Java?**  
+A: You can download Aspose.Email for Java from the website using this link: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
 
-Możesz pobrać Aspose.Email dla Java ze strony internetowej, korzystając z tego łącza: [Pobierz Aspose.Email dla Java](https://releases.aspose.com/email/java/).
+**Q: Can I customize multiple headers and footers in a single email?**  
+A: Yes, you can customize multiple headers and footers in a single email message. Simply add the desired headers and footers as shown in the examples provided.
 
-### Czy mogę dostosować wiele nagłówków i stopek w jednym e-mailu?
+**Q: Is there a limit to the length of customized headers and footers?**  
+A: There is no strict limit to the length of customized headers and footers. However, it's recommended to keep them concise and relevant to maintain a professional appearance.
 
-Tak, możesz dostosować wiele nagłówków i stopek w jednej wiadomości e-mail. Po prostu dodaj żądane nagłówki i stopki, jak pokazano w podanych przykładach.
+**Q: Can I use HTML formatting in the email content?**  
+A: Yes, you can use HTML formatting in the email content, including headers and footers. This allows you to create visually appealing and informative emails.
 
-### Czy istnieje ograniczenie długości niestandardowych nagłówków i stopek?
+**Q: What SMTP settings should I use to send customized emails?**  
+A: You should use the SMTP settings provided by your email service provider or your organization's IT department. These settings typically include the SMTP server address, port number, and authentication credentials.
 
-Nie ma ścisłego limitu długości niestandardowych nagłówków i stopek. Zaleca się jednak, aby były zwięzłe i istotne, aby zachować profesjonalny wygląd.
+---
 
-### Czy mogę zastosować formatowanie HTML w treści wiadomości e-mail?
-
-Tak, możesz używać formatowania HTML w treści wiadomości e-mail, w tym nagłówków i stopek. Pozwala to tworzyć wizualnie atrakcyjne i informacyjne wiadomości e-mail.
-
-### Jakich ustawień SMTP powinienem użyć, aby wysyłać spersonalizowane wiadomości e-mail?
-
-Powinieneś użyć ustawień SMTP dostarczonych przez dostawcę usług poczty e-mail lub dział IT Twojej organizacji. Te ustawienia zazwyczaj obejmują adres serwera SMTP, numer portu i dane uwierzytelniające.
+**Ostatnia aktualizacja:** 2026-01-04  
+**Testowano z:** Aspose.Email for Java 24.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
