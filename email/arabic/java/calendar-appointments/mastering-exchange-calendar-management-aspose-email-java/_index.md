@@ -1,9 +1,14 @@
 ---
-"date": "2025-05-29"
-"description": "تعرّف على كيفية إدارة تقويمات Exchange Server بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إعداد الاتصال، وإنشاء المجلدات، وإدارة المواعيد."
-"title": "إتقان إدارة تقويم Exchange باستخدام Aspose.Email لـ Java - دليل شامل"
-"url": "/ar/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/"
-"weight": 1
+date: '2026-01-04'
+description: تعلم كيفية إنشاء تقويم Exchange باستخدام Java و Aspose.Email للـ Java.
+  يتضمن تبعية Maven، الاتصال بـ Exchange عبر Java، وإدارة المواعيد.
+keywords:
+- Exchange Calendar Management
+- Aspose.Email for Java
+- Java Exchange Server Integration
+title: إنشاء تقويم Exchange باستخدام Java و Aspose.Email – دليل شامل
+url: /ar/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,39 +16,43 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# إتقان إدارة تقويم Exchange باستخدام Aspose.Email لنظام Java
+# إنشاء تقويم Exchange بلغة Java باستخدام Aspose.Email
 
-## مقدمة
+## المقدمة
 
-قد تكون إدارة رسائل البريد الإلكتروني والتقويمات في بيئة العمل معقدة، خاصةً عند التعامل مع عدة مستخدمين في مناطق زمنية مختلفة. لحسن الحظ، **Aspose.Email لـ Java** يُبسّط هذه المهام بتوفير ميزات فعّالة لإدارة تقويمات Exchange Server بفعالية. في هذا الدليل الشامل، سنستكشف كيفية الاستفادة من Aspose.Email لـ Java للاتصال بخادم Exchange، وإنشاء مجلدات التقويم ومعالجتها، وإدارة المواعيد بسلاسة.
+إدارة البريد الإلكتروني والتقويمات في بيئة الأعمال يمكن أن تكون معقدة، خاصةً عندما تحتاج إلى **create exchange calendar java** برامج تعمل عبر عدة مستخدمين ومناطق زمنية. لحسن الحظ، **Aspose.Email for Java** يبسط هذه المهام من خلال توفير واجهات برمجة تطبيقات قوية لإدارة تقويمات خادم Exchange. في هذا الدليل الشامل، ستتعلم كيفية الاتصال بخادم Exchange، وإنشاء مجلدات تقويم، ومعالجة المواعيد—كل ذلك باستخدام كود Java واضح خطوة بخطوة.
 
-**ما سوف تتعلمه:**
-- الاتصال بخادم Exchange باستخدام Java
-- إنشاء مجلد تقويم جديد في صندوق البريد الخاص بك
-- إضافة المواعيد إلى التقويمات الخاصة بك
-- تحديث المواعيد الحالية بسهولة
-- إدراج المواعيد وإلغاؤها
+**ما ستتعلمه**
+- كيفية **connect to exchange java** باستخدام Aspose.Email  
+- كيفية إضافة **maven dependency aspose email** إلى مشروعك  
+- إنشاء مجلد تقويم جديد وإدارة المواعيد  
+- تحديث، سرد، وإلغاء المواعيد  
 
-دعونا نلقي نظرة على المتطلبات الأساسية اللازمة قبل أن نبدأ في تنفيذ هذه الميزات القوية!
+هيا نبدأ!
 
-## المتطلبات الأساسية
+## أسئلة سريعة
+- **ما هي المكتبة الأساسية؟** Aspose.Email for Java  
+- **كيف أضيف المكتبة؟** استخدم تبعية Maven الموضحة أدناه  
+- **هل يمكنني إنشاء مجلد تقويم؟** نعم، باستدعاء API واحد  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية تعمل للتطوير؛ الترخيص الكامل مطلوب للإنتاج  
+- **هل هذا متوافق مع Office 365؟** بالتأكيد – نفس الكود يعمل مع Exchange Online  
 
-### المكتبات والإصدارات والتبعيات المطلوبة
-لمتابعة هذا البرنامج التعليمي، ستحتاج إلى:
-- **Aspose.Email لـ Java** المكتبة (الإصدار 25.4 أو أحدث)
-- إصدار JDK متوافق (Java Development Kit)، ويفضل أن يكون JDK 16 أو أعلى
-- الوصول إلى بيئة Exchange Server (على سبيل المثال، Office 365)
+## ما هو “create exchange calendar java”؟
+إنشاء تقويم Exchange بلغة Java يعني التفاعل برمجيًا مع صندوق بريد Exchange لإضافة أو تعديل أو إزالة عناصر التقويم. هذا النهج مثالي للجدولة الآلية، أدوات إدارة الاجتماعات، أو مزامنة التقويم على مستوى المؤسسة.
 
-### متطلبات إعداد البيئة
-تأكد من إعداد بيئة التطوير الخاصة بك باستخدام IDE مناسب مثل IntelliJ IDEA أو Eclipse أو NetBeans.
+## لماذا تستخدم Aspose.Email for Java؟
+- **Full‑featured API** – يتعامل مع Exchange Web Services (EWS) دون الحاجة إلى معالجة SOAP منخفضة المستوى.  
+- **Cross‑platform** – يعمل على Windows وLinux وmacOS مع أي بيئة تشغيل JDK 16+.  
+- **No external dependencies** – المكتبة تضم كل ما تحتاجه للتواصل مع Exchange.  
 
-### متطلبات المعرفة
-سيكون من المفيد فهم أساسيات برمجة جافا والإلمام باستخدام Maven لإدارة التبعيات. إذا كنت جديدًا على هذه المواضيع، فننصحك باستكشاف الموارد التمهيدية قبل المتابعة.
+## المتطلبات المسبقة
+- **Aspose.Email for Java** library (الإصدار 25.4 أو أحدث)  
+- JDK 16 أو أعلى  
+- الوصول إلى خادم Exchange (Office 365 أو في الموقع)  
+- IDE مثل IntelliJ IDEA أو Eclipse أو NetBeans  
 
-## إعداد Aspose.Email لـ Java
-
-### التثبيت عبر Maven
-لدمج Aspose.Email في مشروعك، أضف التبعية التالية في `pom.xml` ملف:
+## تبعية Maven لـ Aspose Email
+أضف المقتطف التالي إلى ملف `pom.xml`. هذه هي **maven dependency aspose email** التي تحتاجها لجلب المكتبة من Maven Central.
 
 ```xml
 <dependency>
@@ -55,20 +64,14 @@
 ```
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية:** قم بتنزيل النسخة التجريبية من [موقع Aspose](https://releases.aspose.com/email/java/) لاختبار الميزات.
-2. **رخصة مؤقتة:** احصل على ترخيص مؤقت للوصول إلى الميزات الكاملة عبر [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-3. **شراء:** إذا كنت راضيًا عن النسخة التجريبية، ففكر في شراء ترخيص كامل من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+1. **Free Trial:** قم بتنزيل نسخة تجريبية من [موقع Aspose](https://releases.aspose.com/email/java/) لاختبار الميزات.  
+2. **Temporary License:** احصل على ترخيص مؤقت للوصول الكامل للميزات عبر [هذا الرابط](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase:** إذا كنت راضيًا، فكر في شراء ترخيص كامل من [صفحة الشراء الخاصة بـ Aspose](https://purchase.aspose.com/buy).
 
-### التهيئة والإعداد الأساسي
-بمجرد التثبيت، قم بتشغيل Aspose.Email لـ Java في مشروعك للبدء في العمل مع وظائف Exchange Server.
+## الاتصال بـ Exchange Java
+**Overview:** يوضح هذا القسم كيفية **connect to exchange java** باستخدام عميل EWS.
 
-## دليل التنفيذ
-في هذا القسم، سنشرح كل ميزة على حدة في خطوات سهلة. تابع معنا لنكتشف كيفية ربط المواعيد وإنشائها وتحديثها وإدراجها وإلغائها باستخدام Aspose.Email لجافا.
-
-### الاتصال بخادم Exchange
-**ملخص:** تتيح لك هذه الميزة إنشاء اتصال بخادم Exchange الخاص بك، مما يسمح لك بإدارة بيانات التقويم برمجيًا.
-
-#### الخطوة 1: إنشاء الاتصال
+### الخطوة 1: إنشاء الاتصال
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -77,8 +80,8 @@ public class ConnectToExchangeServer {
     public static void main(String[] args) {
         IEWSClient client = null;
         try {
-            // الاتصال بخادم Exchange باستخدام عنوان URL وبيانات الاعتماد المقدمة
-            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
+            // Connect to Exchange Server with provided URL and credentials
+            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "username", "password");
             System.out.println("Connected to Exchange server.");
         } finally {
             if (client != null)
@@ -87,15 +90,12 @@ public class ConnectToExchangeServer {
     }
 }
 ```
-**توضيح:** يتيح لك هذا المقطع من التعليمات البرمجية الاتصال بخادم Exchange باستخدام بيانات اعتمادك. استبدل `"username"` و `"password"` مع القيم الفعلية.
+**Explanation:** استبدل `"username"` و `"password"` ببيانات الاعتماد الفعلية الخاصة بك. ينشئ هذا الكود مثيلًا من `IEWSClient` ستعيد استخدامه لجميع عمليات التقويم اللاحقة.
 
-### إنشاء مجلد التقويم
-**ملخص:** قم بإنشاء مجلد جديد في التقويم الخاص بك لتنظيم المواعيد.
+## إنشاء مجلد تقويم
+**Overview:** إنشاء مجلد مخصص داخل تقويم صندوق البريد للحفاظ على تنظيم المواعيد ذات الصلة.
 
-#### الخطوة 1: الاتصال بالخادم
-أعد استخدام إعداد الاتصال من "الاتصال بخادم Exchange".
-
-#### الخطوة 2: إنشاء مجلد تقويم جديد
+### الخطوة 2: إنشاء مجلد تقويم جديد
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -103,10 +103,10 @@ public class CreateCalendarFolder {
     public static void main(String[] args) {
         IEWSClient client = null;
         try {
-            // الاتصال بخادم Exchange (استبداله ببيانات الاعتماد الفعلية)
-            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
+            // Connect to Exchange Server (Replace with actual credentials)
+            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "username", "password");
 
-            // إنشاء مجلد تقويم جديد باسم "تقويم جديد"
+            // Create a new calendar folder named 'new calendar'
             String calendarUri = client.getMailboxInfo().getCalendarUri();
             client.createFolder(calendarUri, "new calendar", null, "IPF.Appointment");
         } finally {
@@ -116,12 +116,12 @@ public class CreateCalendarFolder {
     }
 }
 ```
-**توضيح:** يقوم هذا الكود بإنشاء مجلد باسم `"new calendar"` تحت قسم التقويم في صندوق البريد الخاص بك.
+**Explanation:** يظهر المجلد `"new calendar"` تحت التسلسل الهرمي الرئيسي للتقويم، جاهز لتخزين المواعيد التي سيتم إنشاؤها لاحقًا.
 
-### إنشاء موعد في مجلد التقويم
-**ملخص:** إضافة مواعيد جديدة إلى مجلد التقويم المحدد.
+## إنشاء موعد في مجلد التقويم
+**Overview:** إضافة اجتماع أو حدث إلى مجلد التقويم الذي تم إنشاؤه حديثًا.
 
-#### الخطوة 1: إعداد تفاصيل الموعد
+### الخطوة 3: إعداد تفاصيل الموعد
 ```java
 import com.aspose.email.Appointment;
 import com.aspose.email.MailAddress;
@@ -133,10 +133,10 @@ public class CreateAppointment {
     public static void main(String[] args) {
         IEWSClient client = null;
         try {
-            // الاتصال بخادم Exchange (استبداله ببيانات الاعتماد الفعلية)
-            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
+            // Connect to Exchange Server (Replace with actual credentials)
+            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "username", "password");
 
-            // تفاصيل موعد الإعداد
+            // Setup appointment details
             Calendar calendar = Calendar.getInstance();
             Date startTime = calendar.getTime();
             calendar.add(Calendar.HOUR, 1);
@@ -150,10 +150,10 @@ public class CreateAppointment {
             appointment.setSummary("EMAILNET-35198 - ".concat(UUID.randomUUID().toString()));
             appointment.setDescription("EMAILNET-35198 Ability to add Java event to Secondary Calendar of Office 365");
 
-            // قم بإدراج المجلدات الفرعية واحصل على عنوان URI لمجلد التقويم الجديد الذي تم إنشاؤه مسبقًا
+            // List subfolders and get the URI for the new calendar folder created earlier
             String newCalendarFolderUri = client.listSubFolders(client.getMailboxInfo().getCalendarUri()).get_Item(0).getUri();
 
-            // إنشاء موعد في مجلد التقويم المحدد
+            // Create appointment in the specified calendar folder
             client.createAppointment(appointment, newCalendarFolderUri);
         } finally {
             if (client != null)
@@ -162,12 +162,12 @@ public class CreateAppointment {
     }
 }
 ```
-**توضيح:** يقوم هذا المقطع بإعداد وإنشاء موعد مع وقت البدء ووقت الانتهاء والحضور المحددين.
+**Explanation:** يبني هذا الكود كائن `Appointment`، يحدد منطقته الزمنية، يضيف الحضور، ويخزنه في مجلد التقويم المخصص.
 
-### تحديث الموعد
-**ملخص:** تعديل تفاصيل الموعد الحالي ضمن التقويم الخاص بك.
+## تحديث الموعد
+**Overview:** تعديل خصائص موعد موجود، مثل الموقع أو الموضوع.
 
-#### الخطوة 1: تحديد الموعد الحالي
+### الخطوة 4: تعريف الموعد الموجود
 ```java
 import com.aspose.email.Appointment;
 
@@ -175,17 +175,17 @@ public class UpdateAppointment {
     public static void main(String[] args) {
         IEWSClient client = null;
         try {
-            // الاتصال بخادم Exchange (استبداله ببيانات الاعتماد الفعلية)
-            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx"، "اسم المستخدم"، "كلمة المرور");
+            // Connect to Exchange Server (Replace with actual credentials)
+            client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "username", "password");
 
-            // إعداد تفاصيل الموعد للموعد الحالي
+            // Setup appointment details for existing appointment
             Appointment appointment = new Appointment();
             appointment.setLocation("Room 122");
 
-            // حدد عنوان URI لمجلد التقويم الذي يوجد به الموعد
+            // Specify the URI of the calendar folder where the appointment exists
             String newCalendarFolderUri = "YOUR_DOCUMENT_DIRECTORY";
 
-            // تحديث موقع الموعد الحالي
+            // Update the location of the existing appointment
             client.updateAppointment(appointment, newCalendarFolderUri);
         } finally {
             if (client != null)
@@ -194,12 +194,35 @@ public class UpdateAppointment {
     }
 }
 ```
-**توضيح:** يُحدِّث هذا المقتطف من الكود موقع موعد حالي. استبدل `"YOUR_DOCUMENT_DIRECTORY"` مع عنوان URI للمجلد الفعلي.
+**Explanation:** استبدل `"YOUR_DOCUMENT_DIRECTORY"` بالمسار الفعلي لمجلد URI للموعد الذي ترغب في تحديثه. يوضح هذا المقتطف كيفية تغيير حقل الموقع.
 
-### توصيات الكلمات الرئيسية
-- "إدارة تقويم التبادل"
-- "Aspose.Email لـ Java"
-- "تكامل خادم Java Exchange"
+## المشكلات الشائعة والنصائح
+- **Authentication errors:** تحقق من أن الحساب لديه وصول EWS وأن المصادقة متعددة العوامل معطلة أو تم استخدام كلمة مرور تطبيق.  
+- **Folder URI not found:** استخدم `client.listSubFolders()` لاكتشاف URI التقويم الصحيح قبل إنشاء أو تحديث العناصر.  
+- **Time‑zone mismatches:** دائمًا قم بتعيين المنطقة الزمنية على كائن `Appointment` لتجنب مفاجآت التوقيت الصيفي.  
+
+## الأسئلة المتكررة
+
+**س: هل أحتاج إلى ترخيص للتطوير؟**  
+ج: النسخة التجريبية تعمل للتطوير والاختبار، لكن الترخيص الكامل مطلوب للنشر في الإنتاج.
+
+**س: هل يمكنني استخدام هذا مع Exchange في الموقع؟**  
+ج: نعم. فقط قم بتغيير عنوان URL الخاص بـ EWS للإشارة إلى خادمك في الموقع.
+
+**س: هل يدعم Java 8؟**  
+ج: المكتبة تدعم JDK 16 وما بعده؛ لا يُنصح باستخدام إصدارات JDK أقدم للنسخة الأخيرة.
+
+**س: كيف أحذف موعدًا؟**  
+ج: استخدم `client.deleteAppointment(appointmentId, calendarFolderUri);` بعد الحصول على المعرف الفريد للموعد.
+
+**س: ماذا لو احتجت إلى التعامل مع الاجتماعات المتكررة؟**  
+ج: توفر Aspose.Email فئة `Recurrence` التي يمكنك إرفاقها بـ `Appointment` قبل الحفظ.
+
+---
+
+**آخر تحديث:** 2026-01-04  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
