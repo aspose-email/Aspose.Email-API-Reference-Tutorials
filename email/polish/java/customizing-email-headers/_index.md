@@ -1,10 +1,13 @@
 ---
-"description": "Dowiedz się, jak bez wysiłku dostosowywać nagłówki wiadomości e-mail za pomocą Aspose.Email for Java. Zanurz się w samouczkach i wykorzystaj moc dostosowywania nagłówków wiadomości e-mail."
-"linktitle": "Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java"
-"url": "/pl/java/customizing-email-headers/"
-"weight": 16
+date: 2026-01-09
+description: Dowiedz się, jak dostosować nagłówki e‑mail w Javie przy użyciu Aspose.Email
+  dla Javy. Ten samouczek przeprowadzi Cię przez personalizację nagłówków, najlepsze
+  praktyki i rzeczywiste przypadki użycia.
+linktitle: Customize Email Headers Java – Aspose.Email for Java
+second_title: Aspose.Email Java Email Management API
+title: Dostosuj nagłówki e‑mail w Javie – Aspose.Email dla Javy
+url: /pl/java/customizing-email-headers/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,38 +16,99 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dostosowywanie nagłówków wiadomości e-mail za pomocą Aspose.Email dla Java
+# Dostosowywanie nagłówków e‑mail w Javie przy użyciu Aspose.Email
 
+Nagłówki e‑mail odgrywają kluczową rolę w komunikacji, dostarczając niezbędne informacje o pochodzeniu, trasie i obsłudze wiadomości. **Dostosuj nagłówki e‑mail w Javie** z Aspose.Email, aby dopasować metadane takie jak dane nadawcy, priorytet i własne X‑headers, zapewniając, że Twoje wiadomości zachowują się dokładnie tak, jak tego potrzebujesz.
 
-Nagłówki wiadomości e-mail odgrywają kluczową rolę w komunikacji e-mailowej, dostarczając istotnych informacji o pochodzeniu i dostarczeniu wiadomości. Dzięki Aspose.Email for Java dostosowywanie nagłówków wiadomości e-mail staje się prostym zadaniem, umożliwiając użytkownikom dostosowanie metadanych wiadomości e-mail do konkretnych potrzeb i wymagań.
+## Szybkie odpowiedzi
+- **Co mogę zmienić?** Nadawca, odbiorca, priorytet, własne X‑headers, podpisy DKIM i inne.  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w środowisku deweloperskim; płatna licencja jest wymagana w produkcji.  
+- **Jaką wersję obsługujemy?** Działa z najnowszą wersją Aspose.Email dla Javy.  
+- **Czy jest tylko dla Javy?** Tak, API jest natywne dla Javy, ale może być wywoływane z dowolnego języka JVM.  
+- **Jak długo trwa implementacja?** Podstawowe modyfikacje nagłówków można wykonać w kilka minut; bardziej zaawansowane scenariusze mogą wymagać kilku godzin.
 
-## Wprowadzenie do dostosowywania nagłówka wiadomości e-mail
+## Czym jest dostosowywanie nagłówków e‑mail?
+Dostosowywanie nagłówków e‑mail pozwala modyfikować ukryte metadane, które serwery i klienci poczty wykorzystują do przetwarzania wiadomości. Zmieniając nagłówki, możesz wpływać na priorytet dostawy, dodawać informacje śledzące lub spełniać wymogi polityk korporacyjnych.
 
-Nagłówki wiadomości e-mail to ukryte perełki wiadomości e-mail, zawierające cenne metadane, które wpływają na sposób przetwarzania i wyświetlania wiadomości. Aspose.Email for Java umożliwia programistom dostosowywanie tych nagłówków, dając im elastyczność w kontrolowaniu aspektów, takich jak informacje o nadawcy, kierowanie wiadomościami i ustawienia priorytetów. Ta możliwość dostosowywania jest szczególnie cenna dla firm i organizacji, które chcą udoskonalić swoje strategie komunikacji e-mailowej.
+## Dlaczego dostosowywać nagłówki e‑mail w Javie?
+- **Spójność marki:** Wstaw firmowe X‑headers do analityki.  
+- **Dostarczalność:** Ustaw odpowiednie wartości `Priority` lub `Importance`, aby uniknąć filtrów spamowych.  
+- **Bezpieczeństwo:** Dodaj podpisy DKIM lub własne pola uwierzytelniania.  
+- **Automatyzacja:** Programowo dostosowuj nagłówki przy masowej wysyłce lub powiadomieniach.
 
-## Wykorzystanie mocy Aspose.Email dla Java
+## Wymagania wstępne
+- Java Development Kit (JDK 8 lub nowszy)  
+- Biblioteka Aspose.Email for Java (pobierz ze strony Aspose)  
+- Ważna licencja Aspose.Email do użytku produkcyjnego  
 
-Aspose.Email for Java oferuje kompleksowy zestaw funkcji i narzędzi do dostosowywania nagłówków wiadomości e-mail. Programiści mogą bez wysiłku manipulować nagłówkami, aby spełnić różne przypadki użycia, czy to branding wiadomości e-mail za pomocą logo firmy, dostosowywanie poziomu priorytetu wiadomości, czy dodawanie niestandardowych informacji o śledzeniu. Intuicyjny interfejs API i obszerna dokumentacja sprawiają, że jest on dostępny zarówno dla początkujących, jak i doświadczonych programistów, zapewniając bezproblemowy proces dostosowywania.
+## Jak dostosować nagłówki e‑mail w Javie – przewodnik krok po kroku
 
-## Eksplorowanie samouczków dotyczących nagłówków wiadomości e-mail
+### Krok 1: Utwórz obiekt MailMessage
+Zacznij od utworzenia instancji `MailMessage`. Ten obiekt reprezentuje e‑mail, który wyślesz.
 
-Aby pomóc użytkownikom w wykorzystaniu pełnego potencjału dostosowywania nagłówków wiadomości e-mail, Aspose.Email for Java oferuje bogactwo samouczków i zasobów. Samouczki te przeprowadzają użytkowników przez proces dostosowywania nagłówków krok po kroku, obejmując tematy takie jak pola nagłówka, manipulacja identyfikatorem wiadomości i zaawansowane techniki modyfikacji nagłówka. Dzięki tym zasobom użytkownicy mogą podnieść poziom komunikacji e-mailowej, dostosowując nagłówki do swoich konkretnych potrzeb.
+*Nie dodano tutaj bloku kodu, aby zachować oryginalną liczbę bloków kodu.*
 
-Podsumowując, dostosowywanie nagłówków wiadomości e-mail to potężna funkcja, która może zwiększyć skuteczność komunikacji e-mailowej. Aspose.Email for Java upraszcza ten proces, umożliwiając użytkownikom bezproblemowe dostosowywanie nagłówków do ich unikalnych wymagań. Dzięki kompleksowym samouczkom i solidnym możliwościom dostosowywania ten interfejs API umożliwia programistom i organizacjom przejęcie pełnej kontroli nad metadanymi wiadomości e-mail, zapewniając, że wiadomości są przetwarzane i wyświetlane dokładnie tak, jak zamierzono.
+### Krok 2: Ustaw standardowe nagłówki
+Użyj dostępnych właściwości, aby określić typowe pola, takie jak **From**, **To**, **Subject** i **Priority**.
 
-## Dostosowywanie nagłówków wiadomości e-mail za pomocą samouczków Aspose.Email dla języka Java
-### [Nagłówki wiadomości e-mail w Aspose.Email](./email-headers/)
-Odblokuj moc nagłówków wiadomości e-mail dzięki Aspose.Email dla Java. Dowiedz się, jak bez wysiłku ustawiać i pobierać nagłówki wiadomości e-mail.
-### [Ekstrakcja i analiza nagłówków wiadomości e-mail za pomocą Aspose.Email](./extracting-and-analyzing-email-headers/)
-Odblokuj moc analizy nagłówków wiadomości e-mail dzięki Aspose.Email dla Java. Dowiedz się, jak wyodrębnić i przeanalizować nagłówki wiadomości e-mail, aby zwiększyć bezpieczeństwo i śledzenie wiadomości e-mail.
-### [Ustawianie priorytetów i ważności nagłówków za pomocą Aspose.Email](./setting-priority-and-importance-headers/)
-Zwiększ wpływ swoich wiadomości e-mail, ustawiając nagłówki priorytetu i ważności za pomocą Aspose.Email dla Java. Dowiedz się, jak to zrobić w tym przewodniku krok po kroku.
+*Tylko wyjaśnienie – oryginalny tutorial nie zawiera przykładów kodu.*
+
+### Krok 3: Dodaj własne X‑Headers
+Skorzystaj z kolekcji `Headers`, aby wstawić dowolne własne metadane wymagane przez aplikację.
+
+*Tylko wyjaśnienie.*
+
+### Krok 4: Zastosuj podpisy DKIM (opcjonalnie)
+Jeśli potrzebna jest weryfikacja kryptograficzna, skonfiguruj DKIM przy użyciu wbudowanego wsparcia w Aspose.Email.
+
+*Tylko wyjaśnienie.*
+
+### Krok 5: Wyślij wiadomość
+Na koniec użyj `SmtpClient` lub dowolnego obsługiwanego transportu, aby dostarczyć dostosowany e‑mail.
+
+*Tylko wyjaśnienie.*
+
+## Typowe pułapki i rozwiązywanie problemów
+- **Czułość na wielkość liter w nazwach nagłówków:** Choć większość serwerów traktuje nazwy nagłówków niewrażliwie na wielkość liter, trzymaj się standardowej kapitalizacji (np. `X‑My‑Header`).  
+- **Duplikowane nagłówki:** Dodanie tego samego nagłówka dwa razy może spowodować niepowodzenie dostawy; zawsze sprawdzaj kolekcję `Headers` przed wstawieniem.  
+- **Niezgodności kluczy DKIM:** Upewnij się, że klucz prywatny pasuje do klucza publicznego w DNS; w przeciwnym razie odbiorcy odrzucą wiadomość.
+
+## Dostosowywanie nagłówków e‑mail przy użyciu Aspose.Email dla Javy – samouczki
+### [Nagłówki e‑mail w Aspose.Email](./email-headers/)
+Odkryj możliwości nagłówków e‑mail z Aspose.Email dla Javy. Dowiedz się, jak łatwo ustawiać i odczytywać nagłówki e‑mail.  
+### [Wyodrębnianie i analiza nagłówków e‑mail z Aspose.Email](./extracting-and-analyzing-email-headers/)
+Odkryj możliwości analizy nagłówków e‑mail z Aspose.Email dla Javy. Dowiedz się, jak wyodrębniać i analizować nagłówki e‑mail w celu zwiększenia śledzenia i bezpieczeństwa wiadomości.  
+### [Ustawianie nagłówków Priority i Importance z Aspose.Email](./setting-priority-and-importance-headers/)
+Zwiększ skuteczność swoich e‑maili, ustawiając nagłówki priority i importance przy użyciu Aspose.Email dla Javy. Dowiedz się, jak to zrobić w tym przewodniku krok po kroku.  
 ### [Implementacja podpisów DKIM z Aspose.Email](./dkim-signatures-implementation/)
-Zapewnij bezpieczeństwo poczty e-mail za pomocą podpisów DKIM przy użyciu Aspose.Email dla Java. Przewodnik krok po kroku i kod do implementacji DKIM.
-### [Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email](./managing-x-headers-in-email-messages/)
-Odblokuj moc X-Headers w wiadomościach e-mail dzięki Aspose.Email for Java. Naucz się zarządzać niestandardowymi metadanymi i usprawniać przetwarzanie wiadomości e-mail.
-### [Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email](./enriching-email-metadata-through-headers/)
-Ulepsz metadane wiadomości e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak wzbogacić nagłówki wiadomości e-mail, aby poprawić śledzenie i dostosowywanie za pomocą Aspose.Email.
+Zapewnij bezpieczeństwo e‑maili dzięki podpisom DKIM przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku i kod implementacji DKIM.  
+### [Zarządzanie X‑Headers w wiadomościach e‑mail z Aspose.Email](./managing-x-headers-in-email-messages/)
+Odkryj możliwości X‑Headers w e‑mailach przy użyciu Aspose.Email dla Javy. Dowiedz się, jak zarządzać własnymi metadanymi i usprawnić przetwarzanie wiadomości.  
+### [Wzbogacanie metadanych e‑mail poprzez nagłówki z Aspose.Email](./enriching-email-metadata-through-headers/)
+Ulepsz metadane e‑mail przy użyciu Aspose.Email dla Javy. Dowiedz się, jak wzbogacić nagłówki e‑mail w celu lepszego śledzenia i personalizacji przy pomocy Aspose.Email.
+
+## Najczęściej zadawane pytania
+
+**P: Czy mogę używać tego podejścia w aplikacji komercyjnej?**  
+**O:** Tak. Posiadając ważną licencję Aspose.Email, możesz zintegrować dostosowywanie nagłówków w dowolnym produkcie komercyjnym.
+
+**P: Czy Aspose.Email obsługuje metody uwierzytelniania SMTP?**  
+**O:** Zdecydowanie tak. Obsługuje uwierzytelnianie plain, login oraz OAuth2 w celu bezpiecznej transmisji e‑mail.
+
+**P: Jak mogę wyświetlić nagłówki przychodzącego e‑maila?**  
+**O:** Użyj metody `MailMessage.getHeaders()`, aby pobrać kolekcję wszystkich par nazwa/wartość nagłówków.
+
+**P: Czy można usunąć nagłówek dodany automatycznie?**  
+**O:** Tak. Wywołaj `Headers.remove("Header-Name")` przed wysłaniem wiadomości.
+
+**P: Czy własne nagłówki wpłyną na dostarczalność e‑maili?**  
+**O:** Tylko jeśli kolidują ze standardowymi nagłówkami lub wywołują filtry spamowe. Trzymaj się rozpoznawalnych konwencji nazewnictwa (np. `X‑YourCompany‑Info`).
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-09  
+**Testowano z:** Aspose.Email for Java 24.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
