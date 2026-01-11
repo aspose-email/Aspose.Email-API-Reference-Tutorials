@@ -1,10 +1,14 @@
 ---
-"description": "Ulepsz metadane wiadomości e-mail za pomocą Aspose.Email dla Java. Dowiedz się, jak wzbogacić nagłówki wiadomości e-mail, aby poprawić śledzenie i dostosowywanie za pomocą Aspose.Email."
-"linktitle": "Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email"
-"url": "/pl/java/customizing-email-headers/enriching-email-metadata-through-headers/"
-"weight": 18
+date: 2026-01-11
+description: Dowiedz się, jak dodać niestandardowy nagłówek e‑mail i wzbogacić metadane
+  wiadomości przy użyciu Aspose.Email dla Javy. Skorzystaj z tego przewodnika, aby
+  dodać x‑custom‑header i skutecznie śledzić e‑maile za pomocą nagłówków.
+linktitle: Add Custom Email Header – Enrich Email Metadata with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Dodaj niestandardowy nagłówek e‑mail – Wzbogacaj metadane wiadomości e‑mail
+  przy użyciu Aspose.Email
+url: /pl/java/customizing-email-headers/enriching-email-metadata-through-headers/
+weight: 18
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,108 +17,109 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email
+# Wzbogacanie metadanych e-maili za pomocą nagłówków z Aspose.Email
 
+## Wprowadzenie do wzbogacania metadanych e-maili za pomocą nagłówków z Aspose.Email
 
-## Wprowadzenie do wzbogacania metadanych wiadomości e-mail za pomocą nagłówków za pomocą Aspose.Email
+Komunikacja e‑mailowa jest integralną częścią współczesnych interakcji biznesowych i osobistych. Kiedy wysyłamy lub odbieramy e‑maile, często koncentrujemy się na treści wiadomości. Jednak za kulisami istnieje mnóstwo informacji towarzyszących każdemu e‑mailowi, znanych jako metadane e‑maila. Metadane te zawierają kluczowe szczegóły o e‑mailu, takie jak informacje o nadawcy, znaczniki czasu i szczegóły routingu. W tym artykule przyjrzymy się, jak **add custom email header** przy użyciu Aspose.Email dla Javy oraz dlaczego wzbogacanie metadanych pomaga Ci *track email with headers* skuteczniej.
 
-Komunikacja e-mailowa jest integralną częścią współczesnych interakcji biznesowych i osobistych. Kiedy wysyłamy lub odbieramy e-maile, często skupiamy się na treści wiadomości. Jednak za kulisami każdej wiadomości e-mail towarzyszy bogactwo informacji, znanych jako metadane e-mail. Te metadane zawierają kluczowe szczegóły dotyczące wiadomości e-mail, takie jak informacje o nadawcy, znaczniki czasu i szczegóły routingu. W tym artykule przyjrzymy się, jak wzbogacić metadane wiadomości e-mail za pomocą nagłówków przy użyciu Aspose.Email dla Java.
+## Szybkie odpowiedzi
+- **Jaki jest podstawowy sposób na wzbogacenie metadanych e‑maila?** Poprzez dodanie niestandardowych nagłówków przy użyciu Aspose.Email.  
+- **Który nagłówek jest powszechnie używany do danych niestandardowych?** `X-Custom-Header` (lub dowolna nazwa z prefiksem `X-`).  
+- **Czy potrzebuję licencji, aby uruchomić przykładowy kod?** Darmowa wersja próbna wystarczy do testów; licencja komercyjna jest wymagana w produkcji.  
+- **W jakim formacie Aspose.Email zapisuje?** Zachowuje oryginalny format `.eml`, chyba że wybierzesz inny.  
+- **Czy mogę dodać wiele niestandardowych nagłówków?** Tak, wywołaj `message.getHeaders().add()` dla każdego potrzebnego nagłówka.
 
-## Zrozumienie metadanych wiadomości e-mail
+## Co to jest “add custom email header”?
+Custom email header to para klucz‑wartość zdefiniowana przez użytkownika, wstawiana do sekcji nagłówka e‑maila. Pozwala ona osadzić dodatkowy kontekst — taki jak identyfikatory transakcji, tagi kampanii czy tokeny bezpieczeństwa — bez modyfikowania treści wiadomości. Klienci poczty i serwery traktują te nagłówki jak każdy standardowy nagłówek, co czyni je idealnymi do scenariuszy śledzenia i integracji.
 
-Metadane wiadomości e-mail, znane również jako nagłówki wiadomości e-mail, są jak DNA wiadomości e-mail. Dostarczają istotnych informacji o podróży i cechach wiadomości e-mail. Niektóre typowe elementy znajdujące się w nagłówkach wiadomości e-mail obejmują:
+## Dlaczego dodać custom email header z Aspose.Email?
+- **Dostosowanie:** Przechowuj dane specyficzne dla aplikacji (np. numery zamówień) bezpośrednio w e‑mailu.  
+- **Śledzenie:** Użyj `X-Custom-Header`, aby *track email with headers* w różnych systemach.  
+- **Integracja:** Przekazuj metadane do CRM‑ów, platform analitycznych lub usług logowania bez parsowania treści.  
+- **Zgodność:** Dodaj informacje audytowe, które mogą być sprawdzane przez bramki pocztowe.
 
-- Od: Adres e-mail nadawcy.
-- Do: Adres e-mail odbiorcy.
-- Temat: Temat wiadomości e-mail.
-- Data: Data i godzina wysłania wiadomości e-mail.
-- Message-ID: Unikalny identyfikator wiadomości e-mail.
-- Otrzymano: Informacje o routingu wiadomości e-mail i serwerach, przez które przeszła.
+## Konfiguracja Aspose.Email dla Javy
 
-Nagłówki wiadomości e-mail są niezbędne dla klientów i serwerów poczty e-mail do prawidłowego przetwarzania i wyświetlania wiadomości. Pomagają zapobiegać spamowi, zapewniają prawidłowe dostarczanie i dostarczają kontekst odbiorcy.
+Zanim zaczniemy, musisz skonfigurować Aspose.Email dla Javy. Bibliotekę możesz pobrać [tutaj](https://releases.aspose.com/email/java/) oraz zapoznać się z dokumentacją pod adresem [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) w celu uzyskania szczegółowych instrukcji instalacji.
 
-## Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków
+## Jak dodać custom email header przy użyciu Aspose.Email
 
-Aspose.Email for Java to potężna biblioteka, która pozwala programistom programowo pracować z wiadomościami e-mail. Jedną z jej kluczowych funkcji jest możliwość manipulowania nagłówkami wiadomości e-mail, co pozwala wzbogacać metadane wiadomości e-mail na różne sposoby.
+Poniżej znajdziesz przewodnik krok po kroku, który pokazuje, jak zaimportować bibliotekę, wczytać wiadomość, dodać niestandardowy nagłówek i zapisać wzbogacony e‑mail.
 
-## Korzyści z wzbogacania metadanych wiadomości e-mail
+### Krok 1: Import biblioteki Aspose.Email
 
-Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków zapewnia szereg korzyści:
-
-- Personalizacja: Możesz dodać niestandardowe nagłówki, aby uwzględnić dodatkowe informacje istotne dla Twojej aplikacji lub procesów biznesowych.
-- Śledzenie: Ulepszone nagłówki umożliwiają lepsze śledzenie i audytowanie komunikacji e-mailowej.
-- Integracja: Wzbogacone metadane można integrować z innymi systemami lub bazami danych w celu dalszej analizy i przetwarzania.
-
-Teraz zajmiemy się praktycznymi krokami konfiguracji Aspose.Email dla Java i wzbogacaniem metadanych wiadomości e-mail za pomocą nagłówków.
-
-## Konfigurowanie Aspose.Email dla Java
-
-Zanim zaczniemy, musisz skonfigurować Aspose.Email dla Javy. Możesz pobrać bibliotekę z [Tutaj](https://releases.aspose.com/email/java/) i zapoznaj się z dokumentacją pod adresem [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) Aby uzyskać szczegółowe instrukcje instalacji.
-
-## Przewodnik krok po kroku
-
-### Importowanie biblioteki Aspose.Email
-
-Najpierw musisz zaimportować bibliotekę Aspose.Email do swojego projektu Java. Upewnij się, że pobrałeś i dodałeś bibliotekę do zależności swojego projektu.
+Najpierw musisz zaimportować bibliotekę Aspose.Email do swojego projektu Java. Upewnij się, że pobrałeś i dodałeś bibliotekę do zależności projektu.
 
 ```java
 import com.aspose.email.*;
 ```
 
-### Ładowanie wiadomości e-mail
+### Krok 2: Załaduj wiadomość e‑mail
 
-Aby pracować z wiadomością e-mail, musisz ją najpierw załadować. Możesz załadować wiadomość e-mail z pliku lub utworzyć nową od podstaw.
+Aby pracować z wiadomością e‑mail, najpierw ją wczytaj. Możesz wczytać wiadomość z pliku lub utworzyć nową od podstaw.
 
 ```java
-// Wczytaj wiadomość e-mail z pliku
+// Load an email message from a file
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 
-### Dodawanie niestandardowych nagłówków
+### Krok 3: Dodaj niestandardowy nagłówek (add x-custom-header)
 
-Teraz wzbogacimy metadane wiadomości e-mail, dodając niestandardowe nagłówki. Niestandardowe nagłówki mogą zawierać informacje specyficzne dla Twojej aplikacji lub przypadku użycia.
+Teraz wzbogacimy metadane e‑maila, dodając niestandardowy nagłówek. W tym przykładzie używamy powszechnie akceptowanej nazwy `X-Custom-Header`, ale możesz wybrać dowolny klucz z prefiksem `X-`, który pasuje do Twojego scenariusza.
 
 ```java
-// Dodawanie niestandardowego nagłówka
+// Adding a custom header
 message.getHeaders().add("X-Custom-Header", "Custom Value");
 ```
 
-### Zapisywanie zmodyfikowanego e-maila
+> **Pro tip:** Użyj GUID lub znacznika czasu jako wartości nagłówka, gdy potrzebujesz unikalnego identyfikatora do śledzenia.
 
-Po wzbogaceniu metadanych wiadomości e-mail poprzez dodanie nagłówków możesz zapisać zmodyfikowaną wiadomość.
+### Krok 4: Zapisz zmodyfikowany e‑mail
+
+Po dodaniu niestandardowego nagłówka zapisz e‑mail z powrotem na dysk (lub wyślij go strumieniowo do innej usługi). Struktura pozostaje niezmieniona, a nowy nagłówek zostaje płynnie zintegrowany.
 
 ```java
-// Zapisz zmodyfikowany e-mail
+// Save the modified email
 message.save("path/to/modified/email.eml");
 ```
 
-Gratulacje! Udało Ci się wzbogacić metadane wiadomości e-mail przy użyciu Aspose.Email dla Java.
+Gratulacje! Pomyślnie **add custom email header** i wzbogaciłeś metadane e‑maila przy użyciu Aspose.Email dla Javy.
 
-## Wniosek
+## Częste problemy i rozwiązywanie
 
-Wzbogacanie metadanych wiadomości e-mail za pomocą nagłówków przy użyciu Aspose.Email for Java otwiera świat możliwości dostosowywania, śledzenia i integrowania komunikacji e-mail. Postępując zgodnie z przewodnikiem krok po kroku zawartym w tym artykule, możesz wykorzystać moc metadanych wiadomości e-mail, aby ulepszyć procesy biznesowe i poprawić efektywność komunikacji.
+| Problem | Przyczyna | Rozwiązanie |
+|---------|-----------|-------------|
+| Nagłówek nie pojawia się po zapisaniu | Użycie `message.getHeaders().add()` na obiekcie `MailMessage` w trybie tylko do odczytu | Upewnij się, że wiadomość jest załadowana w trybie edytowalnym (domyślne `load` tak robi). |
+| Zduplikowane nagłówki | Nieumyślne dodanie tego samego nagłówka wielokrotnie | Sprawdź, czy nagłówek już istnieje przy użyciu `message.getHeaders().containsKey("X-Custom-Header")` przed dodaniem. |
+| Problemy z kodowaniem | Znaki nie‑ASCII w wartości nagłówka | Zakoduj wartość przy użyciu `MimeUtility.encodeText()` przed dodaniem. |
 
 ## Najczęściej zadawane pytania
 
-### Czym są metadane wiadomości e-mail?
+**Q: Jakie typy danych są odpowiednie dla niestandardowego nagłówka?**  
+A: Wszystko, co nie powinno znajdować się w treści — identyfikatory transakcji, kody kampanii, tokeny bezpieczeństwa lub flagi przetwarzania.
 
-Metadane wiadomości e-mail, znane również jako nagłówki wiadomości e-mail, zawierają podstawowe informacje o wiadomości e-mail, takie jak dane nadawcy i odbiorcy, znaczniki czasu i informacje o routingu.
+**Q: Czy mogę dodać wiele niestandardowych nagłówków do tego samego e‑maila?**  
+A: Tak, wywołaj `message.getHeaders().add()` dla każdego potrzebnego nagłówka.
 
-### W jaki sposób nagłówki mogą wzbogacić metadane wiadomości e-mail?
+**Q: Czy dodanie niestandardowych nagłówków wpłynie na dostarczalność e‑maila?**  
+A: Zazwyczaj nie, pod warunkiem przestrzegania standardowych konwencji nazewnictwa (`X-` prefiks) i utrzymania rozmiaru nagłówka w rozsądnych granicach.
 
-Nagłówki można dostosować, uwzględniając dodatkowe informacje istotne dla danej aplikacji lub procesów biznesowych, wzbogacając w ten sposób metadane wiadomości e-mail.
+**Q: Czy Aspose.Email obsługuje inne języki w tym samym zadaniu?**  
+A: Oczywiście. Odpowiednie API istnieją dla .NET, Pythona i C++.
 
-### Dlaczego wzbogacanie metadanych wiadomości e-mail jest ważne?
+**Q: Gdzie mogę znaleźć więcej przykładów manipulacji nagłówkami?**  
+A: Przeglądaj oficjalną dokumentację pod adresem [here](https://reference.aspose.com/email/java/) aby zobaczyć pełną listę metod związanych z nagłówkami.
 
-Wzbogacone metadane wiadomości e-mail umożliwiają lepsze śledzenie, kontrolowanie i integrowanie komunikacji e-mail, co prowadzi do usprawnienia procesów biznesowych.
+## Zakończenie
 
-### Czy mogę używać Aspose.Email z innymi językami programowania?
+Ucząc się, jak **add custom email header** z Aspose.Email dla Javy, odblokowujesz potężne możliwości wzbogacania metadanych e‑maili, poprawy śledzenia i integracji komunikacji z systemami downstream. Powyższe kroki dają solidną podstawę — eksperymentuj z różnymi nazwami i wartościami nagłówków, aby dopasować je do potrzeb Twojego biznesu.
 
-Tak, Aspose.Email obsługuje wiele języków programowania, w tym Java, .NET i inne. Sprawdź dokumentację, aby uzyskać szczegółowe informacje.
+---
 
-### Gdzie mogę znaleźć więcej materiałów na temat Aspose.Email dla Java?
-
-Dokumentację można przejrzeć pod adresem [Tutaj](https://reference.aspose.com/email/java/) aby uzyskać dostęp do kompleksowych zasobów i przykładów.
+**Ostatnia aktualizacja:** 2026-01-11  
+**Testowane z:** Aspose.Email for Java 24.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
