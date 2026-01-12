@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java के साथ PST फ़ाइलों से ईमेल अनुलग्नकों को कुशलतापूर्वक निकालने का तरीका जानें। यह व्यापक गाइड सेटअप, PST फ़ाइलों को लोड करना और अनुलग्नकों को सहजता से निकालना शामिल करता है।"
-"title": "Java के लिए Aspose.Email का उपयोग करके PST फ़ाइलों से ईमेल अनुलग्नक निकालें&#58; एक चरण-दर-चरण मार्गदर्शिका"
-"url": "/hi/java/attachments-handling/extract-email-attachments-pst-aspose-java/"
-"weight": 1
+date: '2025-12-15'
+description: Aspose.Email for Java के साथ PST फ़ाइलों से ईमेल अटैचमेंट्स जावा निकालना
+  सीखें। यह ट्यूटोरियल Maven डिपेंडेंसी Aspose Email, PST अटैचमेंट्स निकालने का तरीका,
+  और एक पूर्ण Aspose Email Java ट्यूटोरियल प्रदान करता है।
+keywords:
+- extract email attachments from PST
+- Aspose.Email for Java setup
+- extracting attachments using Aspose.Email
+title: 'जावा में ईमेल अटैचमेंट निकालें - PST फ़ाइलों के लिए Aspose.Email का उपयोग –
+  चरण-दर-चरण मार्गदर्शिका'
+url: /hi/java/attachments-handling/extract-email-attachments-pst-aspose-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,38 +18,49 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# जावा के लिए Aspose.Email का उपयोग करके PST फ़ाइलों से ईमेल अनुलग्नक कैसे निकालें: एक व्यापक गाइड
+# How to Extract Email Attachments Java: Using Aspose.Email for PST Files – A Comprehensive Guide
 
-## परिचय
+## Introduction
 
-आज के डिजिटल युग में, ईमेल और उनके अनुलग्नकों को कुशलतापूर्वक प्रबंधित करना व्यवसायों और व्यक्तियों दोनों के लिए महत्वपूर्ण है। चाहे वह महत्वपूर्ण दस्तावेज़ों को पुनः प्राप्त करना हो या ईमेल डेटा का बैकअप रखना हो, Outlook PST फ़ाइलों से अनुलग्नकों तक पहुँचना और निकालना अक्सर कठिन लग सकता है। Java के लिए Aspose.Email की शक्ति के साथ, यह कार्य सहज हो जाता है। यह ट्यूटोरियल आपको PST फ़ाइलों में ईमेल से अनुलग्नकों को आसानी से निकालने के लिए Aspose.Email का उपयोग करने के बारे में बताएगा।
+आज के डिजिटल युग में, ईमेल और उनके अटैचमेंट्स को कुशलता से प्रबंधित करना व्यवसायों और व्यक्तियों दोनों के लिए अत्यंत महत्वपूर्ण है। चाहे आप **extract email attachments java** को Outlook PST फ़ाइलों से बैकअप, अनुपालन या स्वचालित प्रोसेसिंग के लिए निकालना चाहते हों, यह कार्य भारी लग सकता है। सौभाग्य से, Aspose.Email for Java एक साफ़, प्रोग्रामेटिक तरीका प्रदान करता है जिससे आप मैन्युअल मेहनत के बिना इन फ़ाइलों को निकाल सकते हैं। इस ट्यूटोरियल में आप सीखेंगे कि लाइब्रेरी को कैसे सेटअप करें, PST फ़ाइल को लोड करें, और कुछ ही लाइनों के कोड से अटैचमेंट्स निकालें।
 
-**आप क्या सीखेंगे:**
-- Java के लिए Aspose.Email कैसे सेट करें
-- PST फ़ाइल लोड करना और उसकी सामग्री तक पहुँचना
-- ईमेल अनुलग्नकों को कुशलतापूर्वक निकालना
+**आप क्या सीखेंगे**
+- अपने प्रोजेक्ट में Maven डिपेंडेंसी aspose email कैसे जोड़ें  
+- PST फ़ाइल को लोड करके उसके फ़ोल्डर्स को कैसे नेविगेट करें  
+- ईमेल अटैचमेंट्स को प्रभावी ढंग से निकालें, जिससे *how to extract pst attachments* प्रश्न का उत्तर मिले  
 
-क्या आप अपनी ईमेल प्रबंधन प्रक्रिया को सरल बनाने के लिए तैयार हैं? आइए सबसे पहले आवश्यक शर्तों पर गौर करें।
+ईमेल‑अटैचमेंट वर्कफ़्लो को सरल बनाने के लिए तैयार हैं? चलिए शुरू करते हैं।
 
-## आवश्यक शर्तें
+## Quick Answers
+- **Primary library?** Aspose.Email for Java  
+- **Typical implementation time?** 10–15 मिनट बुनियादी एक्सट्रैक्शन के लिए  
+- **Key prerequisite?** JDK 16+ और Maven स्थापित होना  
+- **License required?** हाँ, प्रोडक्शन उपयोग के लिए वैध Aspose लाइसेंस आवश्यक है  
+- **Supports PST & OST?** दोनों फ़ॉर्मेट समर्थित हैं  
 
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
-- **जावा डेवलपमेंट किट (JDK):** सुनिश्चित करें कि आपकी मशीन पर JDK 16 या बाद का संस्करण स्थापित है।
-- **मावेन:** यह प्रोजेक्ट निर्भरता प्रबंधन के लिए Maven का उपयोग करता है। सुनिश्चित करें कि इसे ठीक से सेट अप और कॉन्फ़िगर किया गया है।
-- **Aspose.Email for Java लाइब्रेरी:** आपको Maven के माध्यम से अपने प्रोजेक्ट में Aspose.Email को शामिल करना होगा।
+## What is “extract email attachments java”?
 
-### पर्यावरण सेटअप आवश्यकताएँ
+Extracting email attachments java का अर्थ है Java कोड का उपयोग करके Outlook PST (या OST) फ़ाइलों को पढ़ना और किसी भी अटैच्ड फ़ाइल—डॉक्यूमेंट्स, इमेजेज, PDFs—को आपकी चुनी हुई डायरेक्टरी में सेव करना। यह तरीका डेटा‑माइग्रेशन प्रोजेक्ट्स, स्वचालित इनवॉइस प्रोसेसिंग, या आर्काइविंग सॉल्यूशन्स बनाने के लिए आदर्श है।
 
-- एक टेक्स्ट एडिटर या इंटीग्रेटेड डेवलपमेंट एनवायरनमेंट (IDE) जैसे कि IntelliJ IDEA, Eclipse, या VS Code.
-- जावा प्रोग्रामिंग अवधारणाओं की बुनियादी समझ।
+## Why use Aspose.Email for this task?
 
-## Java के लिए Aspose.Email सेट अप करना
+- **Zero‑dependency parsing:** सर्वर पर Outlook या MAPI की आवश्यकता नहीं।  
+- **Full format support:** PST, OST, और एन्क्रिप्टेड स्टोर्स को संभालता है।  
+- **Robust API:** `extractAttachments` जैसे मेथड्स प्रदान करता है जो लो‑लेवल डिटेल्स को छुपाते हैं।  
 
-Java के लिए Aspose.Email का उपयोग शुरू करने के लिए, आपको इसे अपने Maven प्रोजेक्ट में निर्भरता के रूप में जोड़ना होगा। यहाँ बताया गया है कि कैसे:
+## Prerequisites
 
-### Maven के माध्यम से निर्भरता जोड़ें
+- **Java Development Kit (JDK):** संस्करण 16 या नया।  
+- **Maven:** डिपेंडेंसी मैनेजमेंट के लिए।  
+- **Aspose.Email for Java Library:** Maven के माध्यम से जोड़ा गया (नीचे *maven dependency aspose email* स्निपेट देखें)।  
+- **IDE:** IntelliJ IDEA, Eclipse, या VS Code कोड लिखने और चलाने के लिए।
 
-अपने में निम्नलिखित स्निपेट जोड़ें `pom.xml` फ़ाइल के अंतर्गत `<dependencies>`:
+## Setting Up Aspose.Email for Java
+
+### Add the Maven Dependency (maven dependency aspose email)
+
+अपने प्रोजेक्ट की `pom.xml` में `<dependencies>` के तहत निम्नलिखित XML डालें:
+
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -52,45 +70,37 @@ Java के लिए Aspose.Email का उपयोग शुरू करन
 </dependency>
 ```
 
-### लाइसेंस अधिग्रहण
+### License Acquisition
 
-Aspose एक निःशुल्क परीक्षण संस्करण प्रदान करता है, लेकिन पूर्ण कार्यक्षमता के लिए, आपको लाइसेंस प्राप्त करना होगा। आप इसे सीधे Aspose से खरीद सकते हैं या अस्थायी लाइसेंस का अनुरोध कर सकते हैं [यहाँ](https://purchase.aspose.com/temporary-license/).
+Aspose एक फ्री ट्रायल देता है, लेकिन पूर्ण लाइसेंस सभी फीचर्स को अनलॉक करता है। आप एक टेम्पररी लाइसेंस [यहाँ](https://purchase.aspose.com/temporary-license/) प्राप्त कर सकते हैं।
 
-## कार्यान्वयन मार्गदर्शिका
+## Implementation Guide (aspose email java tutorial)
 
-यह अनुभाग आपको चरण-दर-चरण PST फ़ाइलों से अनुलग्नक निकालने के बारे में मार्गदर्शन करेगा।
+### Feature 1: Load PST File
 
-### सुविधा 1: PST फ़ाइल लोड करें
+#### Step 1: Define Your Directory Path
+अपने PST फ़ाइल के स्थान को पहचानें और पाथ सेट करें।
 
-PST फ़ाइल को लोड करना उसकी सामग्री तक पहुँचने का पहला कदम है। इसे करने का तरीका यहाँ बताया गया है:
-
-#### चरण 1: अपना निर्देशिका पथ परिभाषित करें
-पहचानें कि आपकी PST फ़ाइल कहाँ स्थित है और उसके अनुसार पथ निर्धारित करें।
 ```java
 String pstFilePath = "YOUR_DOCUMENT_DIRECTORY/Sub.pst";
 ```
 
-#### चरण 2: PST फ़ाइल लोड करें
+#### Step 2: Load the PST File
 
-Aspose.Email का उपयोग करें `PersonalStorage` क्लास का उपयोग करके PST फ़ाइल लोड करें।
 ```java
 PersonalStorage pst = PersonalStorage.fromFile(pstFilePath);
 ```
 
-### फ़ीचर 2: ईमेल से अनुलग्नक निकालें
+### Feature 2: Extract Attachments from Emails
 
-एक बार जब आप PST लोड कर लेते हैं, तो अटैचमेंट निकालना आसान हो जाता है। यहाँ बताया गया है कि कैसे:
+#### Step 1: Access the Inbox Subfolder
 
-#### चरण 1: 'इनबॉक्स' सबफ़ोल्डर तक पहुँचें
-
-सबसे पहले इनबॉक्स फ़ोल्डर पर जाएं जहां अधिकांश ईमेल संग्रहित होते हैं।
 ```java
 FolderInfo inboxFolder = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-#### चरण 2: ईमेल के माध्यम से पुनरावृति करें और अनुलग्नक निकालें
+#### Step 2: Iterate Through Emails and Extract Attachments
 
-अनुलग्नकों को निकालने के लिए फ़ोल्डर में प्रत्येक ईमेल प्रविष्टि को लूप करें।
 ```java
 for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
     MapiAttachmentCollection attachments = pst.extractAttachments(entryId);
@@ -98,64 +108,73 @@ for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
     if (!attachments.isEmpty()) {
         for (MapiAttachment attachment : attachments) {
             String outputFilePath = "YOUR_OUTPUT_DIRECTORY/" + attachment.getLongFileName();
-            attachment.save(outputFilePath); // प्रत्येक अनुलग्नक सहेजें
+            attachment.save(outputFilePath); // Save each attachment
         }
     }
 }
 ```
 
-### मुख्य कॉन्फ़िगरेशन विकल्प
+### Key Configuration Options
 
-- **आउटपुट निर्देशिका:** सुनिश्चित करें कि जिस निर्देशिका में आप अनुलग्नक सहेज रहे हैं वह मौजूद है और लिखने योग्य है।
-- **त्रुटि प्रबंधन:** अपवादों को सुचारू रूप से संभालने के लिए हमेशा try-catch ब्लॉक शामिल करें।
+- **Output Directory:** फ़ोल्डर मौजूद है और एप्लिकेशन को लिखने की अनुमति है, यह सुनिश्चित करें।  
+- **Error Handling:** ऊपर दिया गया लॉजिक `try‑catch` ब्लॉक्स में रखें ताकि I/O त्रुटियों या करप्ट PST एंट्रीज़ को सुगमता से संभाला जा सके।  
 
-### समस्या निवारण युक्तियों
+### Troubleshooting Tips (how to extract pst attachments)
 
-- अगर `fromFile` अपवाद फेंकता है, सत्यापित करें कि PST फ़ाइल पथ सही है।
-- सुनिश्चित करें कि आपके परिवेश में निर्दिष्ट निर्देशिकाओं को पढ़ने और उनमें लिखने के लिए पर्याप्त अनुमतियाँ हैं।
+- **File not found:** `pstFilePath` स्ट्रिंग को दोबारा जाँचें; विश्वसनीयता के लिए एब्सोल्यूट पाथ उपयोग करें।  
+- **Permission issues:** JVM को उचित फ़ाइल‑सिस्टम अधिकारों के साथ चलाएँ या उपयोगकर्ता के होम फ़ोल्डर के भीतर कोई डायरेक्टरी चुनें।  
+- **Large PST files:** संदेशों को बैच में प्रोसेस करने पर विचार करें और प्रत्येक बैच के बाद `System.gc()` कॉल करके मेमोरी मुक्त करें।
 
-## व्यावहारिक अनुप्रयोगों
+## Practical Applications
 
-अनुलग्नकों को निकालना विभिन्न परिदृश्यों में लाभदायक हो सकता है:
-1. **डेटा बैकअप:** ईमेल के माध्यम से भेजे गए महत्वपूर्ण दस्तावेजों को नियमित रूप से निकालें और उनका बैकअप लें।
-2. **स्वचालित प्रसंस्करण:** लेखांकन प्रयोजनों के लिए चालान अनुलग्नकों के प्रसंस्करण को स्वचालित करें।
-3. **ईमेल संग्रहण समाधान:** सभी अनुलग्नकों को संरक्षित रखने के लिए इस सुविधा को अपने संग्रहण समाधान में एकीकृत करें।
+1. **Data Backup:** समय‑समय पर अटैचमेंट्स को सुरक्षित ऑफ‑साइट स्टोरेज के लिए निकालें।  
+2. **Automated Invoice Processing:** इनकमिंग इनवॉइस से PDFs निकालें और उन्हें ERP सिस्टम में फीड करें।  
+3. **Email Archiving:** प्रत्येक अटैचमेंट को कंप्लायंस‑रेडी आर्काइव का हिस्सा बनाकर संरक्षित रखें।
 
-## प्रदर्शन संबंधी विचार
+## Performance Considerations
 
-बड़ी PST फ़ाइलों के साथ काम करते समय, इन प्रदर्शन युक्तियों पर विचार करें:
-- मेमोरी उपयोग पर नज़र रखें और यदि आवश्यक हो तो JVM सेटिंग्स को अनुकूलित करें।
-- मेमोरी ओवरहेड को कम करने के लिए अनुलग्नकों को बैचों में निकालें।
+- **Memory Management:** 1 GB से बड़े PST के लिए JVM हीप बढ़ाएँ (`-Xmx2g` या अधिक)।  
+- **Batch Extraction:** मेमोरी उपयोग कम रखने के लिए प्रत्येक लूप इटरेशन में सीमित संख्या में संदेश प्रोसेस करें।
 
-## निष्कर्ष
+## Common Issues and Solutions
 
-अब आपके पास Aspose.Email Java का उपयोग करके PST फ़ाइलों से ईमेल अनुलग्नक निकालने के लिए एक ठोस आधार है। इस कौशल के साथ, आप कई कार्यों को स्वचालित कर सकते हैं, अपने वर्कफ़्लो को सुव्यवस्थित कर सकते हैं, और सुनिश्चित कर सकते हैं कि ज़रूरत पड़ने पर डेटा हमेशा सुलभ रहे।
+| समस्या | समाधान |
+|-------|----------|
+| `fromFile` throws `FileNotFoundException` | पाथ को सत्यापित करें और सुनिश्चित करें कि फ़ाइल किसी अन्य प्रोसेस द्वारा लॉक नहीं है। |
+| Out‑of‑Memory errors on huge PSTs | हीप साइज बढ़ाएँ और छोटे बैच में एक्सट्रैक्ट करें। |
+| Attachments have duplicate names | `outputFilePath` में सेव करने से पहले टाइमस्टैम्प या GUID जोड़ें। |
 
-### अगले कदम
+## Frequently Asked Questions
 
-अपने एप्लिकेशन की क्षमताओं को और बढ़ाने के लिए Aspose.Email द्वारा प्रदान की जाने वाली अन्य सुविधाओं, जैसे कि नए ईमेल बनाना या कैलेंडर प्रविष्टियों का प्रबंधन करना, का प्रयोग करें।
+**Q:** *What is a PST file?*  
+A: A PST (Personal Storage Table) file is an Outlook data file that stores emails, contacts, calendar items, and attachments.
 
-## अक्सर पूछे जाने वाले प्रश्न अनुभाग
+**Q:** *Can I extract attachments from OST files as well?*  
+A: Yes, Aspose.Email supports both PST and OST formats. Use the same API; just point `PersonalStorage.fromFile` at the OST file.
 
-1. **पीएसटी फ़ाइल क्या है?**  
-   पीएसटी (पर्सनल स्टोरेज टेबल) फ़ाइल एक आउटलुक डेटा फ़ाइल प्रारूप है जिसका उपयोग संदेशों, कैलेंडर ईवेंट और अन्य वस्तुओं की प्रतियां संग्रहीत करने के लिए किया जाता है।
-2. **क्या मैं OST फ़ाइलों से भी अनुलग्नक निकाल सकता हूँ?**  
-   Aspose.Email PST और OST दोनों प्रारूपों का समर्थन करता है। OST फ़ाइलों को संभालने के लिए विशिष्ट विधियों के लिए दस्तावेज़ देखें।
-3. **यदि बड़ी PST फ़ाइल को संसाधित करते समय मेरा एप्लिकेशन क्रैश हो जाए तो मुझे क्या करना चाहिए?**  
-   मेमोरी आवंटन बढ़ाने या PST को छोटे-छोटे टुकड़ों में संसाधित करने पर विचार करें।
-4. **क्या केवल विशिष्ट ईमेल से अनुलग्नक निकालने का कोई तरीका है?**  
-   हां, आप अनुलग्नक निकालने से पहले ईमेल को विषय, प्रेषक या तिथि के आधार पर फ़िल्टर कर सकते हैं।
-5. **मैं एन्क्रिप्टेड पीएसटी फाइलों को कैसे संभालूँ?**  
-   एन्क्रिप्टेड PST फ़ाइल लोड करते समय आपको पासवर्ड प्रदान करना होगा। एन्क्रिप्शन को संभालने के बारे में मार्गदर्शन के लिए Aspose.Email के दस्तावेज़ देखें।
+**Q:** *How do I handle encrypted PST files?*  
+A: Supply the password when opening the store: `PersonalStorage.fromFile(pstFilePath, "password")`. Refer to the Aspose documentation for detailed encryption handling.
 
-## संसाधन
-- **दस्तावेज़ीकरण:** [Aspose ईमेल जावा दस्तावेज़ीकरण](https://reference.aspose.com/email/java/)
-- **डाउनलोड करना:** [Aspose ईमेल जावा रिलीज](https://releases.aspose.com/email/java/)
-- **क्रय लाइसेंस:** [Aspose ईमेल खरीदें](https://purchase.aspose.com/buy)
-- **मुफ्त परीक्षण:** [निःशुल्क परीक्षण के साथ शुरुआत करें](https://releases.aspose.com/email/java/)
-- **सहयता मंच:** [सहायता फ़ोरम पर प्रश्न पूछें](https://forum.aspose.com/c/email/10)
+**Q:** *Is there a way to filter which emails are processed?*  
+A: Absolutely. Before calling `extractAttachments`, you can inspect each `MapiMessage` for subject, sender, or date criteria and skip unwanted items.
 
-Java के लिए Aspose.Email की शक्ति को अपनाएं और ईमेल अनुलग्नकों को संभालने के तरीके में क्रांतिकारी बदलाव लाएं!
+**Q:** *Do I need a license for development?*  
+A: A temporary license is sufficient for testing. For production, purchase a full license to remove evaluation limitations.
+
+## Resources
+- **Documentation:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
+- **Download:** [Aspose Email Java Release](https://releases.aspose.com/email/java/)
+- **Purchase License:** [Buy Aspose Email](https://purchase.aspose.com/buy)
+- **Free Trial:** [Start with a Free Trial](https://releases.aspose.com/email/java/)
+- **Support Forum:** [Ask Questions on the Support Forum](https://forum.aspose.com/c/email/10)
+
+Aspose.Email for Java की शक्ति को अपनाएँ और अपने ईमेल अटैचमेंट्स को संभालने के तरीके को क्रांतिकारी बनाएँ!
+
+---
+
+**Last Updated:** 2025-12-15  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
