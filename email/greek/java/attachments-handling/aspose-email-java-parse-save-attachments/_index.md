@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Εξασκηθείτε στον χειρισμό συνημμένων email με το Aspose.Email για Java. Μάθετε πώς να φορτώνετε, να αναλύετε και να αποθηκεύετε συνημμένα στις εφαρμογές Java σας αποτελεσματικά."
-"title": "Aspose.Email για Java&#58; Πώς να αναλύσετε και να αποθηκεύσετε συνημμένα ηλεκτρονικού ταχυδρομείου αποτελεσματικά"
-"url": "/el/java/attachments-handling/aspose-email-java-parse-save-attachments/"
-"weight": 1
+date: '2025-12-11'
+description: Μάθετε πώς να αναλύσετε συνημμένα email σε Java και να αυτοματοποιήσετε
+  την αποθήκευση των συνημμένων email χρησιμοποιώντας το Aspose.Email για Java – ένας
+  οδηγός βήμα‑βήμα.
+keywords:
+- Aspose.Email for Java
+- parse email attachments Java
+- save email attachments Java
+title: Ανάλυση Συνημμένων Email σε Java με χρήση του Aspose.Email
+url: /el/java/attachments-handling/aspose-email-java-parse-save-attachments/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +17,30 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mastering Aspose.Email για Java: Ανάλυση και αποθήκευση συνημμένων email
+# Ανάλυση Συνημμένων Email σε Java με το Aspose.Email
 
-Στη σημερινή ψηφιακή εποχή, η αποτελεσματική διαχείριση των συνημμένων email είναι ζωτικής σημασίας για τις επιχειρήσεις και τους προγραμματιστές. Είτε πρόκειται για αυτοματοποίηση ροών εργασίας είτε για επεξεργασία μεγάλου όγκου email, η απρόσκοπτη διαχείριση των συνημμένων μπορεί να εξοικονομήσει χρόνο και να μειώσει τα σφάλματα. Αυτό το σεμινάριο παρουσιάζει τη δύναμη του Aspose.Email για Java—μιας ισχυρής βιβλιοθήκης που έχει σχεδιαστεί για να απλοποιεί τις εργασίες διαχείρισης email, όπως η ανάλυση και η αποθήκευση συνημμένων.
+Στη σύγχρονη ψηφιακή εποχή, η **parse email attachments java** αποδοτική είναι απαραίτητη για προγραμματιστές που δημιουργούν αυτοματοποιημένες ροές εργασίας, λύσεις αρχειοθέτησης ή εργαλεία εξυπηρέτησης πελατών. Με το Aspose.Email for Java μπορείτε γρήγορα να φορτώσετε, να ελέγξετε και να αποθηκεύσετε κάθε συνημμένο, διατηρώντας τον κώδικά σας καθαρό και συντηρήσιμο. Αυτό το tutorial σας καθοδηγεί στη πλήρη διαδικασία—από τη ρύθμιση της βιβλιοθήκης μέχρι την επεξεργασία ενσωματωμένων μηνυμάτων—ώστε να μπορείτε επίσης να **automate email attachment saving** στις εφαρμογές σας.
 
-**Τι θα μάθετε:**
-- Πώς να φορτώσετε και να αναλύσετε μηνύματα email χρησιμοποιώντας το Aspose.Email
-- Τεχνικές για την εξαγωγή λεπτομερειών συνημμένων από email
-- Βήματα για την ασφαλή αποθήκευση συνημμένων email στο δίσκο
-- Μέθοδοι για την αναδρομική αντιμετώπιση ενσωματωμένων μηνυμάτων email
+## Γρήγορες Απαντήσεις
+- **What library handles email attachments in Java?** Aspose.Email for Java.
+- **Can I parse email attachments java without a license?** Yes, but with evaluation limits.
+- **Which Maven dependency is required?** `com.aspose:aspose-email:25.4` with the `jdk16` classifier.
+- **How do I save attachments to disk?** Use the `Attachment.save` method after sanitizing the file name.
+- **Is recursive parsing of embedded emails supported?** Yes, by loading embedded `.eml` files and processing them again.
 
-Ας εξετάσουμε τις προϋποθέσεις πριν εμβαθύνουμε σε αυτές τις ισχυρές λειτουργίες.
+## Τι είναι το parse email attachments java;
+Η ανάλυση συνημμένων email σε Java σημαίνει την ανάγνωση ενός αρχείου email (π.χ., *.eml*), την εξαγωγή κάθε αντικειμένου `Attachment` και προαιρετικά την αποθήκευση των δυαδικών δεδομένων στο σύστημα αρχείων ή σε βάση δεδομένων. Το Aspose.Email αφαιρεί την χαμηλού επιπέδου διαχείριση MIME, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης.
+
+## Γιατί να αυτοματοποιήσετε την αποθήκευση συνημμένων email;
+Η αυτοματοποίηση της διαδικασίας αποθήκευσης εξαλείφει τα χειροκίνητα σφάλματα, επιταχύνει τις γραμμές επεξεργασίας δεδομένων και εξασφαλίζει τη συμμόρφωση με τις πολιτικές διατήρησης. Επίσης, διευκολύνει την ενσωμάτωση του περιεχομένου των email σε συστήματα downstream όπως CRM, ERP ή πλατφόρμες ανάλυσης.
 
 ## Προαπαιτούμενα
+- **Aspose.Email for Java** (έκδοση 25.4 ή νεότερη).  
+- **Maven** για διαχείριση εξαρτήσεων.  
+- **JDK 16** (ή νεότερο) εγκατεστημένο στο μηχάνημα ανάπτυξής σας.
 
-Για να παρακολουθήσετε, θα χρειαστείτε:
-- **Aspose.Email για τη βιβλιοθήκη Java**Βεβαιωθείτε ότι έχετε την έκδοση 25.4 ή νεότερη.
-- **Maven Environment**Θα χρησιμοποιήσουμε το Maven για τη διαχείριση των εξαρτήσεων.
-- **Κιτ ανάπτυξης Java (JDK)**Συνιστάται η έκδοση 16 για συμβατότητα με το Aspose.Email.
-
-### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
-
-Προσθέστε την ακόλουθη εξάρτηση στο `pom.xml` αρχείο:
+### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -43,19 +51,16 @@
 </dependency>
 ```
 
-### Ρύθμιση περιβάλλοντος
+### Ρύθμιση Περιβάλλοντος
+Βεβαιωθείτε ότι το Maven βρίσκεται στο `PATH` σας και ότι η εντολή `java -version` εμφανίζει JDK 16 ή νεότερη έκδοση.
 
-Βεβαιωθείτε ότι έχετε εγκαταστήσει και ρυθμίσει σωστά το Maven στο σύστημά σας, μαζί με ένα έγκυρο περιβάλλον Java Development Kit (JDK).
-
-### Βήματα απόκτησης άδειας χρήσης
-
-1. **Δωρεάν δοκιμή**Ξεκινήστε με τη δωρεάν δοκιμαστική περίοδο του Aspose για να εξερευνήσετε τη βιβλιοθήκη.
-2. **Προσωρινή Άδεια**Υποβάλετε αίτηση για προσωρινή άδεια, εάν χρειάζεται, η οποία επιτρέπει πλήρη πρόσβαση χωρίς περιορισμούς κατά την περίοδο αξιολόγησης.
-3. **Αγορά**Για συνεχή χρήση, αγοράστε μια συνδρομή από [Αγορά Aspose](https://purchase.aspose.com/buy).
+### Βήματα Απόκτησης Άδειας
+1. **Free Trial** – εξερευνήστε τη βιβλιοθήκη δωρεάν.  
+2. **Temporary License** – αποκτήστε μια δοκιμαστική άδεια για πλήρη πρόσβαση στις λειτουργίες.  
+3. **Purchase** – αγοράστε μια συνδρομή από [Aspose Purchase](https://purchase.aspose.com/buy).
 
 ### Βασική Αρχικοποίηση
-
-Δείτε πώς μπορείτε να αρχικοποιήσετε το Aspose.Email στο έργο Java σας:
+Here's how you can initialize Aspose.Email in your Java project:
 
 ```java
 import com.aspose.email.License;
@@ -64,7 +69,7 @@ public class AsposeInitializer {
     public static void setLicense() {
         License license = new License();
         try {
-            // Αντικαταστήστε με τη διαδρομή προς το αρχείο άδειας χρήσης
+            // Replace with the path to your license file
             license.setLicense("path/to/your/license.lic");
         } catch (Exception e) {
             System.out.println("Failed to apply license: " + e.getMessage());
@@ -73,145 +78,126 @@ public class AsposeInitializer {
 }
 ```
 
-## Ρύθμιση του Aspose.Email για Java
+## Ρύθμιση Aspose.Email για Java
+Μετά τη ρύθμιση του Maven, προσθέστε τη βιβλιοθήκη στο έργο σας και καλέστε το `AsposeInitializer.setLicense()` νωρίς στον κύκλο ζωής της εφαρμογής σας.
 
-Μόλις έχετε έτοιμα τα Maven και JDK, ήρθε η ώρα να ρυθμίσετε το Aspose.Email στο έργο σας.
+## Οδηγός Υλοποίησης
+Θα καλύψουμε τέσσερα βασικά βήματα: τη φόρτωση ενός email, την ανάλυση των συνημμένων του, την αποθήκευσή τους και την αναδρομική επεξεργασία ενσωματωμένων μηνυμάτων.
 
-### Εγκατάσταση μέσω Maven
+### Πώς να φορτώσετε μηνύματα email από αρχείο
+**Overview** – Φορτώστε ένα αρχείο `.eml` σε ένα αντικείμενο `MailMessage`.
 
-Όπως φαίνεται παραπάνω, προσθέστε την εξάρτηση στο `pom.xml`Αυτό διασφαλίζει ότι όλες οι απαραίτητες ενότητες λαμβάνονται αυτόματα από το Maven κατά τη διάρκεια της διαδικασίας δημιουργίας.
+```java
+String dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
 
-### Ρύθμιση άδειας χρήσης
+```java
+MailMessage message = MailMessage.load(dataDir + "EmailWithAttandEmbedded.eml");
+System.out.println("Email loaded successfully.");
+```
 
-Βεβαιωθείτε ότι έχετε ρυθμίσει μια άδεια χρήσης, εάν απαιτείται. Η χρήση μιας άδειας χρήσης καταργεί τους περιορισμούς αξιολόγησης και επιτρέπει την πλήρη πρόσβαση στις λειτουργίες του Aspose.Email.
+### Πώς να κάνετε parse email attachments java
+**Overview** – Επανάληψη στη συλλογή `Attachments` και εξαγωγή χρήσιμων μεταδεδομένων.
 
-## Οδηγός Εφαρμογής
+```java
+for (int i = 0; i < message.getAttachments().size(); i++) {
+    Attachment att = (Attachment) message.getAttachments().get_Item(i);
+    String attFileName = sanitizeFileName(att.getName());
+    String attExt = extractFileExtension(att.getName());
 
-Θα αναλύσουμε την υλοποίησή μας σε βασικά χαρακτηριστικά: φόρτωση μηνυμάτων ηλεκτρονικού ταχυδρομείου, ανάλυση συνημμένων, αποθήκευσή τους και διαχείριση ενσωματωμένων μηνυμάτων.
+    System.out.println("Attachment Name: " + attFileName + attExt);
+}
+```
 
-### Φόρτωση μηνυμάτων ηλεκτρονικού ταχυδρομείου από αρχείο
-**Επισκόπηση**: Αυτή η λειτουργία δείχνει πώς μπορείτε να φορτώσετε αρχεία email χρησιμοποιώντας το `MailMessage.load` μέθοδος που παρέχεται από το Aspose.Email.
+```java
+private static String sanitizeFileName(String fileName) {
+    return fileName.replace(":", " ").replace("\\", " ")
+                   .replace("/", " ").replace("?", "")
+                   .substring(0, Math.min(fileName.length(), 50));
+}
+```
 
-#### Βήματα Υλοποίησης
-1. **Ρύθμιση καταλόγου εγγράφων**: Ορίστε πού αποθηκεύονται τα αρχεία email σας.
-   
-   ```java
-   String dataDir = "YOUR_DOCUMENT_DIRECTORY";
-   ```
+```java
+private static String extractFileExtension(String fileName) {
+    int lastIndex = fileName.lastIndexOf(".");
+    return (lastIndex != -1) ? fileName.substring(lastIndex) : "";
+}
+```
 
-2. **Φόρτωση μηνύματος ηλεκτρονικού ταχυδρομείου**:
-   
-   ```java
-   MailMessage message = MailMessage.load(dataDir + "EmailWithAttandEmbedded.eml");
-   System.out.println("Email loaded successfully.");
-   ```
+### Πώς να αποθηκεύσετε email attachments java
+**Overview** – Αποθηκεύστε κάθε συνημμένο σε έναν επιλεγμένο φάκελο εξόδου.
 
-3. **Χειρισμός εξαιρέσεων**Βεβαιωθείτε ότι εντοπίζετε και καταγράφετε τυχόν εξαιρέσεις για την αποτελεσματική αντιμετώπιση προβλημάτων.
+```java
+public static void saveAttachment(Attachment attachment, String outputDir) {
+    String attFileName = sanitizeFileName(attachment.getName());
+    String attExt = extractFileExtension(attachment.getName());
 
-### Ανάλυση συνημμένων ηλεκτρονικού ταχυδρομείου
-**Επισκόπηση**: Αυτή η λειτουργία εξάγει λεπτομέρειες συνημμένου από ένα μήνυμα ηλεκτρονικού ταχυδρομείου, επιτρέποντας περαιτέρω επεξεργασία ή ανάλυση.
+    attachment.save(outputDir + attFileName + attExt);
+}
+```
 
-#### Βήματα Υλοποίησης
-1. **Συνημμένα με βρόχο**:
-   
-   ```java
-   for (int i = 0; i < message.getAttachments().size(); i++) {
-       Attachment att = (Attachment) message.getAttachments().get_Item(i);
-       String attFileName = sanitizeFileName(att.getName());
-       String attExt = extractFileExtension(att.getName());
+### Πώς να αυτοματοποιήσετε την αποθήκευση συνημμένων email για ενσωματωμένα μηνύματα
+**Overview** – Εντοπίστε ενσωματωμένα αρχεία `.eml` ή κείμενα placeholder και επεξεργαστείτε τα αναδρομικά.
 
-       System.out.println("Attachment Name: " + attFileName + attExt);
-   }
-   ```
+```java
+if (isOrphanedTextFile(att)) {
+    try {
+        MailMessage attMsg = MailMessage.load(dataDir + sanitizeFileName(att.getName()) + extractFileExtension(att.getName()));
+        parseEmbeddedMessages(attMsg, dataDir);
+    } catch (Exception ex) {
+        System.err.println(ex.getMessage());
+    }
+}
+```
 
-2. **Απολύμανση ονομάτων αρχείων**:
-   
-   ```java
-   private static String sanitizeFileName(String fileName) {
-       return fileName.replace(":", " ").replace(\"\\", " ")
-                      .replace("/", " ").replace("?", "")
-                      .substring(0, Math.min(fileName.length(), 50));
-   }
-   ```
-
-3. **Εξαγωγή επεκτάσεων αρχείων**:
-   
-   ```java
-   private static String extractFileExtension(String fileName) {
-       int lastIndex = fileName.lastIndexOf(".");
-       return (lastIndex != -1) ? fileName.substring(lastIndex) : "";
-   }
-   ```
-
-### Αποθήκευση συνημμένων σε δίσκο
-**Επισκόπηση**Μόλις αναλυθούν τα συνημμένα, μπορείτε να τα αποθηκεύσετε με ασφάλεια στο τοπικό σας σύστημα αρχείων.
-
-#### Βήματα Υλοποίησης
-1. **Μέθοδος Αποθήκευσης Συνημμένου**:
-   
-   ```java
-   public static void saveAttachment(Attachment attachment, String outputDir) {
-       String attFileName = sanitizeFileName(attachment.getName());
-       String attExt = extractFileExtension(attachment.getName());
-
-       attachment.save(outputDir + attFileName + attExt);
-   }
-   ```
-
-### Αναδρομική ανάλυση ενσωματωμένων μηνυμάτων ηλεκτρονικού ταχυδρομείου
-**Επισκόπηση**Ορισμένα email περιέχουν ενσωματωμένα μηνύματα. Αυτή η λειτουργία δείχνει πώς να αναλύετε και να επεξεργάζεστε αναδρομικά τέτοια email.
-
-#### Βήματα Υλοποίησης
-1. **Έλεγχος για ενσωματωμένα μηνύματα ηλεκτρονικού ταχυδρομείου**:
-   
-   ```java
-   if (isOrphanedTextFile(att)) {
-       try {
-           MailMessage attMsg = MailMessage.load(dataDir + sanitizeFileName(att.getName()) + extractFileExtension(att.getName()));
-           parseEmbeddedMessages(attMsg, dataDir);
-       } catch (Exception ex) {
-           System.err.println(ex.getMessage());
-       }
-   }
-   ```
-
-2. **Μέθοδος βοήθειας για αρχεία κειμένου**:
-   
-   ```java
-   private static boolean isOrphanedTextFile(Attachment att) {
-       String fileName = sanitizeFileName(att.getName()) + extractFileExtension(att.getName());
-       return (".eml".equals(extractFileExtension(fileName))) ||
-              ("text/plain".equals(att.getContentType().getMediaType()) &&
-               att.getName().contains(".txt") && att.getName().contains("ATT"));
-   }
-   ```
+```java
+private static boolean isOrphanedTextFile(Attachment att) {
+    String fileName = sanitizeFileName(att.getName()) + extractFileExtension(att.getName());
+    return (".eml".equals(extractFileExtension(fileName))) ||
+           ("text/plain".equals(att.getContentType().getMediaType()) &&
+            att.getName().contains(".txt") && att.getName().contains("ATT"));
+}
+```
 
 ## Πρακτικές Εφαρμογές
-
-Ακολουθούν ορισμένα σενάρια πραγματικού κόσμου όπου η ανάλυση και η αποθήκευση συνημμένων ηλεκτρονικού ταχυδρομείου μπορεί να είναι ανεκτίμητη:
-1. **Αυτοματοποιημένη επεξεργασία email**Αυτοματοποιήστε την εξαγωγή αναφορών που αποστέλλονται μέσω email σε μια κεντρική βάση δεδομένων.
-2. **Συστήματα Υποστήριξης Πελατών**: Αυτόματη αποθήκευση εγγράφων υποστήριξης που επισυνάπτονται από τους πελάτες για μελλοντική αναφορά.
-3. **Λύσεις Αρχειοθέτησης Δεδομένων**Αρχειοθετήστε σημαντικά μηνύματα ηλεκτρονικού ταχυδρομείου και συνημμένα σύμφωνα με τις πολιτικές διατήρησης δεδομένων.
+1. **Automated reporting** – Λάβετε καθημερινές αναφορές που επισυνάπτονται σε εισερχόμενα email και αποθηκεύστε τις σε data lake.  
+2. **Customer‑support ticketing** – Αποθηκεύστε τα συνημμένα από email υποστήριξης απευθείας σε σύστημα ticketing.  
+3. **Regulatory archiving** – Αρχειοθετήστε όλη την εισερχόμενη/εξερχόμενη αλληλογραφία με συνημμένα για συμμόρφωση με ελέγχους.
 
 ## Παράγοντες Απόδοσης
+- **Minimize I/O** – Χρησιμοποιήστε buffer streams κατά την ανάγνωση μεγάλων αρχείων και κλείστε τα άμεσα.  
+- **Memory management** – Απελευθερώστε τα αντικείμενα `MailMessage` μετά την επεξεργασία για να βοηθήσετε τη συλλογή απορριμμάτων.  
+- **Batch processing** – Ομαδοποιήστε τα αρχεία email σε διαχειρίσιμες παρτίδες για να αποφύγετε την υπερφόρτωση της JVM.
 
-- **Βελτιστοποίηση λειτουργιών εισόδου/εξόδου**Ελαχιστοποιήστε τις λειτουργίες ανάγνωσης/εγγραφής στο δίσκο επεξεργάζοντας αρχεία στη μνήμη όπου είναι δυνατόν.
-- **Διαχείριση μνήμης**Να έχετε υπόψη σας τη συλλογή απορριμμάτων της Java. Απελευθερώστε πόρους αμέσως μετά τη χρήση για να αποτρέψετε διαρροές μνήμης.
-- **Μαζική επεξεργασία**Για μεγάλους όγκους, επεξεργαστείτε τα email σε παρτίδες για να αποφύγετε την υπερφόρτωση του συστήματος.
+## Κοινά Προβλήματα και Λύσεις
+| Πρόβλημα | Λύση |
+|----------|------|
+| **OutOfMemoryError** κατά την επεξεργασία τεράστιων συνημμένων | Μεταδώστε το περιεχόμενο του συνημμένου σε ροή αντί να το φορτώσετε πλήρως στη μνήμη. |
+| **Unsupported file format** error | Βεβαιωθείτε ότι ο τύπος MIME του συνημμένου αναγνωρίζεται· ενημερώστε το Aspose.Email στην πιο πρόσφατη έκδοση. |
+| **License not found** exception | Επαληθεύστε ότι η διαδρομή στο `license.setLicense()` είναι σωστή και το αρχείο είναι αναγνώσιμο. |
 
-## Σύναψη
+## Συχνές Ερωτήσεις
 
-Τώρα μάθατε πώς να φορτώνετε, να αναλύετε και να αποθηκεύετε συνημμένα email χρησιμοποιώντας το Aspose.Email για Java. Αυτή η ισχυρή βιβλιοθήκη απλοποιεί πολύπλοκες εργασίες, επιτρέποντάς σας να επικεντρωθείτε στη δημιουργία ισχυρών εφαρμογών. Στη συνέχεια, σκεφτείτε να εξερευνήσετε πιο προηγμένες λειτουργίες ή να ενσωματώσετε το Aspose.Email με άλλα συστήματα, όπως βάσεις δεδομένων ή λογισμικό CRM.
+**Q: Μπορώ να χρησιμοποιήσω το Aspose.Email χωρίς άδεια;**  
+A: Ναι, υπάρχει δωρεάν δοκιμή, αλλά επιβάλλει περιορισμούς αξιολόγησης όπως υδατογραφήματα και περιορισμένη λειτουργικότητα.
 
-## Ενότητα Συχνών Ερωτήσεων
+**Q: Πώς να επεξεργαστώ μεγάλα συνημμένα;**  
+A: Επεξεργαστείτε τα σε μικρότερα τμήματα ή μεταδώστε τα δεδομένα απευθείας σε αποθήκευση για να αποφύγετε τη φόρτωση ολόκληρου του αρχείου στη μνήμη.
 
-1. **Μπορώ να χρησιμοποιήσω το Aspose.Email χωρίς άδεια χρήσης;**  
-   Ναι, αλλά υπάρχουν περιορισμοί κατά την αξιολόγηση. Εξετάστε το ενδεχόμενο να αποκτήσετε μια προσωρινή άδεια χρήσης για πλήρη πρόσβαση.
-2. **Πώς μπορώ να χειριστώ μεγάλα συνημμένα;**  
-   Επεξεργαστείτε τα σε μικρότερα κομμάτια ή αναθέστε την επεξεργασία σε μια εξωτερική υπηρεσία, εάν είναι δυνατόν.
-3. **Τι συμβαίνει εάν το συνημμένο είναι κρυπτογραφημένο;**  
-   Θα χρειαστείτε κατάλληλες μεθόδους αποκρυπτογράφησης πριν από την ανάλυση.
+**Q: Τι συμβαίνει αν το συνημμένο είναι κρυπτογραφημένο;**  
+A: Πρέπει να αποκρυπτογραφήσετε το περιεχόμενο χρησιμοποιώντας τον κατάλληλο αλγόριθμο πριν το περάσετε στο Aspose.Email· η βιβλιοθήκη δεν εκτελεί αυτόματη αποκρυπτογράφηση.
 
+**Q: Υποστηρίζει το Aspose.Email άλλες μορφές email όπως .msg;**  
+A: Απόλυτα – η βιβλιοθήκη μπορεί να φορτώσει .msg, .eml, .pst και άλλες κοινές μορφές.
+
+**Q: Πώς μπορώ να ενσωματώσω αυτό με μια βάση δεδομένων;**  
+A: Αφού εξάγετε τα bytes του συνημμένου, χρησιμοποιήστε JDBC ή ένα ORM για να αποθηκεύσετε τα δυαδικά δεδομένα (BLOB) μαζί με τα μεταδεδομένα.
+
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-11  
+**Δοκιμάστηκε Με:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Συγγραφέας:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
