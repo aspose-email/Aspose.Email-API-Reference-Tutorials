@@ -8,7 +8,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: 'E‑mail mellékletek kinyerése Java-ban: Aspose.Email használata PST fájlokhoz
+title: 'E‑mail mellékletek kinyerése Java-ban - Aspose.Email használata PST fájlokhoz
   – Lépésről‑lépésre útmutató'
 url: /hu/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1
@@ -21,46 +21,46 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Hogyan vonjunk ki e‑mail mellékleteket Java‑ban: Aspose.Email használata PST fájlokhoz – Átfogó útmutató
 
-## Introduction
+## Bevezetés
 
-A mai digitális korban az e‑mail üzenetek és mellékleteik hatékony kezelése elengedhetetlen mind vállalkozások, mind magánszemélyek számára. Akár **extract email attachments java** (e‑mail mellékletek kinyerése Java‑ban) keresed az Outlook PST fájlokból biztonsági mentés, megfelelőség vagy automatizált feldolgozás céljából, a feladat ijesztőnek tűnhet. Szerencsére az Aspose.Email for Java tiszta, programozott módot kínál a fájlok manuális beavatkozás nélküli kinyerésére. Ebben az útmutatóban megtanulod, hogyan állítsd be a könyvtárat, tölts be egy PST fájlt, és néhány kódsorral nyerd ki a mellékleteket.
+A mai digitális korban az e‑mail üzenetek és mellékleteik hatékony kezelése alapvető mind vállalkozások, mind magánszemélyek számára. Akár **extract email attachments java** (e‑mail mellékletek kinyerése Java‑ban) keresett az Outlook PST fájlokból biztonsági mentés, megfelelőség vagy automatizált feldolgozás céljából, a feladat ijesztőnek tűnhet. Szerencsére az Aspose.Email for Java tiszta, programozott módot kínál a fájlok manuális beavatkozás nélküli kinyerésére. Ebben az útmutatóban megtanulod, hogyan állítsd be a könyvtárat, tölts be egy PST fájlt, és néhány kódsorral nyerd ki a mellékleteket.
 
-**What You'll Learn**
-- Hogyan add hozzá a Maven függőséget `aspose email` a projektedhez  
-- Hogyan tölts be egy PST fájlt és navigálj a mappái között  
-- Hogyan nyerj ki e‑mail mellékleteket hatékonyan, megválaszolva a *how to extract pst attachments* kérdést  
+**Amit meg fogsz tanulni**
+- Hogyan add hozzá a Maven függőséget `aspose email` a projektedhez
+- Hogyan tölts be egy PST fájlt és navigálj a mappák között
+- Hogyan nyerj ki e‑mail mellékleteket hatékonyan, megválaszolva a *how to extract pst attachments* kérdést
 
-Készen állsz az e‑mail‑melléklet munkafolyamatod egyszerűsítésére? Merüljünk el benne.
+Készen állsz az e‑mail-melléklet munkafolyamat egyszerűsítésére? Merüljünk el benne.
 
-## Quick Answers
-- **Primary library?** Aspose.Email for Java  
-- **Typical implementation time?** 10–15 perc az alapvető kinyeréshez  
-- **Key prerequisite?** JDK 16+ és Maven telepítve  
-- **License required?** Igen, érvényes Aspose licenc a termelési használathoz  
-- **Supports PST & OST?** Mindkét formátum támogatott  
+## Gyors válaszok
+- **Elsődleges könyvtár?** Aspose.Email a Java számára
+- **Tipikus megvalósítási idő?** 10-15 perc az alapvető kinyeréshez
+- **Kulcs előfeltétel?** JDK16+ és Maven telepítve
+- **Engedély szükséges?** Igen, érvényes Aspose licenc a termelési használathoz
+- **Támogatja a PST-t és az OST-t?** Mindkét formátum támogatott
 
-## What is “extract email attachments java”?
+## Mi az a „java e-mail mellékletek kibontása”?
 
-Az **extract email attachments java** azt jelenti, hogy Java kóddal olvasod az Outlook PST (vagy OST) fájlokat, és a csatolt fájlokat – dokumentumokat, képeket, PDF‑eket – egy általad megadott könyvtárba mented. Ez a megközelítés ideális adat‑migrációs projektekhez, automatizált számlafeldolgozáshoz vagy archiválási megoldások építéséhez.
+Az **extract email attachments java** azt jelenti, hogy Java kóddal olvasod az Outlook PST (vagy OST) fájlokat, és csatolt fájlokat – dokumentumokat, képeket, PDF-eket – egy általad megadott könyvtárba mented. Ez a megközelítés ideális adat-migrációs projektekhez, automatizált számlafeldolgozáshoz vagy archiválási megoldások építéséhez.
 
-## Why use Aspose.Email for this task?
+## Miért használja az Aspose.Email-t ehhez a feladathoz?
 
-- **Zero‑dependency parsing:** Nem szükséges Outlook vagy MAPI a szerveren.  
-- **Full format support:** Kezeli a PST, OST és titkosított tárolókat is.  
-- **Robust API:** Olyan metódusokat biztosít, mint a `extractAttachments`, amelyek elrejtik az alacsony szintű részleteket.  
+- **Zero-dependency parsing:** Nem szükséges Outlook vagy MAPI a szerveren.
+- **Full format support:** Kezeli a PST, OST és titkosított tárolókat is.
+- **Robust API:** Olyan metódusokat biztosít, mint a `extractAttachments`, amelyek elrejtik az alacsony szintű részleteket.
 
-## Prerequisites
+## Előfeltételek
 
-- **Java Development Kit (JDK):** 16‑os vagy újabb verzió.  
-- **Maven:** A függőségkezeléshez.  
-- **Aspose.Email for Java Library:** Maven‑en keresztül hozzáadva (lásd a *maven dependency aspose email* kódrészletet alább).  
-- **IDE:** IntelliJ IDEA, Eclipse vagy VS Code a kód szerkesztéséhez és futtatásához.
+- **Java Development Kit (JDK):** 16‑os vagy újabb verzió.
+- **Maven:** A függőségkezeléshez.
+- **Aspose.Email for Java Library:** Maven‑en keresztül hozzáadva (lásd a *maven dependency aspose email* kódrészletet alább).
+- **IDE:** IntelliJ IDEA, Eclipse vagy VSCode a kód szerkesztéséhez és futtatásához.
 
-## Setting Up Aspose.Email for Java
+## Az Aspose.Email beállítása Java számára
 
-### Add the Maven Dependency (maven dependency aspose email)
+### A Maven Dependency hozzáadása (maven dependency aspose e-mail)
 
-Illeszd be a következő XML‑t a projekted `pom.xml` fájljába a `<dependencies>` szekcióba:
+Illesd be a következő XML-t a projekted `pom.xml` fájljába a `<dependencies>` szekcióba:
 
 ```xml
 <dependency>
@@ -71,36 +71,34 @@ Illeszd be a következő XML‑t a projekted `pom.xml` fájljába a `<dependenci
 </dependency>
 ```
 
-### License Acquisition
+### Licenc beszerzés
 
 Az Aspose ingyenes próbaverziót kínál, de egy teljes licenc feloldja az összes funkciót. Ideiglenes licencet szerezhetsz [itt](https://purchase.aspose.com/temporary-license/).
 
-## Implementation Guide (aspose email java tutorial)
+## Megvalósítási útmutató (a Java oktatóanyag e-mailben)
 
-### Feature 1: Load PST File
+### 1. szolgáltatás: PST-fájl betöltése
 
-#### Step 1: Define Your Directory Path
+#### 1. lépés: Határozza meg a címtár elérési útját
 Azonosítsd, hol található a PST fájl, és állítsd be az elérési utat.
 
 ```java
 String pstFilePath = "YOUR_DOCUMENT_DIRECTORY/Sub.pst";
 ```
 
-#### Step 2: Load the PST File
-
+#### 2. lépés: A PST fájl betöltése
 ```java
 PersonalStorage pst = PersonalStorage.fromFile(pstFilePath);
 ```
 
-### Feature 2: Extract Attachments from Emails
-
-#### Step 1: Access the Inbox Subfolder
+### 2. funkció: Mellékletek kinyerése e-mailekből
+#### 1. lépés: A Beérkezett üzenetek almappájának elérése
 
 ```java
 FolderInfo inboxFolder = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-#### Step 2: Iterate Through Emails and Extract Attachments
+#### 2. lépés: E-mailek böngészése és mellékletek kinyerése
 
 ```java
 for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
@@ -115,67 +113,67 @@ for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
 }
 ```
 
-### Key Configuration Options
+### Kulcskonfigurációs lehetőségek
 
-- **Output Directory:** Ellenőrizd, hogy a mappa létezik‑e, és hogy az alkalmazásnak van‑e írási joga.  
-- **Error Handling:** A fenti logikát `try‑catch` blokkokba helyezd, hogy elegánsan kezeld az I/O hibákat vagy a sérült PST bejegyzéseket.  
+- **Output Directory:** Ellenőrizd, hogy a mappa létezik-e, és hogy az alkalmazásnak van-e írási joga.
+- **Error Handling:** A fenti logikát `try‑catch` blokkokba helyezi, hogy elegánsan kezeli az I/O hibákat vagy a sérült PST bejegyzéseket.
 
-### Troubleshooting Tips (how to extract pst attachments)
+### Hibaelhárítási tippek (a pst mellékletek kibontása)
 
-- **File not found:** Ellenőrizd a `pstFilePath` karakterláncot; a megbízhatóság kedvéért használj abszolút útvonalakat.  
-- **Permission issues:** Futtasd a JVM‑et megfelelő fájlrendszeri jogosultságokkal, vagy válassz egy felhasználói home‑könyvtáron belüli mappát.  
-- **Large PST files:** Fontold meg az üzenetek kötegelt feldolgozását, és minden köteg után hívd meg a `System.gc()`‑t a memória felszabadításához.
+- **A fájl nem található:** Ellenőrizd a `pstFilePath` karakterláncot; a megbízhatóság kedvéért használj abszolút útvonalakat.
+- **Permission issues:** Futtasd a JVM‑et megfelelő fájlrendszeri jogosultságokkal, vagy válassz egy felhasználói home‑könyvtáron belüli mappát.
+- **Large PST files:** Fontold meg az üzenetek kötegelt feldolgozását, és minden köteg után hívd meg a `System.gc()`-t a memória felszabadításához.
 
-## Practical Applications
+## Gyakorlati alkalmazások
 
-1. **Data Backup:** Rendszeresen nyerd ki a mellékleteket biztonságos, távoli tárolásra.  
-2. **Automated Invoice Processing:** PDF‑eket nyerj ki a bejövő számlákból, és továbbítsd őket egy ERP rendszerbe.  
-3. **Email Archiving:** Minden mellékletet őrizd meg egy megfelelőség‑kész archívum részeként.
+1. **Data Backup:** Rendszeresen nyerd ki a mellékleteket biztonságosan, távoli tárolásra.
+2. **Automated Invoice Processing:** PDF‑eket nyerj ki a bejövő számlákból, és továbbítsd őket egy ERP rendszerbe.
+3. **Email Archiving:** Minden mellékletet őriz meg egy megfelelőség-kész archívum részeként.
 
-## Performance Considerations
+## Teljesítmény szempontok
 
-- **Memory Management:** 1 GB‑nál nagyobb PST‑k esetén növeld a JVM heap‑et (`-Xmx2g` vagy nagyobb).  
-- **Batch Extraction:** Egy cikluson belül korlátozd a feldolgozott üzenetek számát, hogy alacsony maradjon a memóriahasználat.
+- **Memory Management:** 1GB-nál nagyobb PST-k esetén növeli a JVM heap-et (`-Xmx2g` vagy nagyobb).
+- **Batch Extraction:** Egy cikluson belül korlátozható a feldolgozott üzenetek száma, hogy alacsony maradjon a memóriahasználat.
 
-## Common Issues and Solutions
+## Gyakori problémák és megoldások
 
-| Issue | Solution |
-|-------|----------|
-| `fromFile` throws `FileNotFoundException` | Ellenőrizd az útvonalat, és győződj meg róla, hogy a fájlt nem egy másik folyamat zárolja. |
-| Out‑of‑Memory errors on huge PSTs | Növeld a heap méretét, és kicsi kötegekben nyerd ki a fájlokat. |
-| Attachments have duplicate names | Adj időbélyeget vagy GUID‑et az `outputFilePath`‑hez mentés előtt. |
+| Kiadás | Megoldás |
+|-------|-----------|
+| A `fromFile` a `FileNotFoundException` | Ellenőrizd az útvonalat, és győződj meg róla, hogy a fájlt nem egy másik folyamat zárolja. |
+| Memóriahiányos hibák hatalmas PST-k esetén | Növeld a kupac méretét, és kicsi kötegekben nyerd ki a fájlokat. |
+| A mellékleteknek duplikált neveik vannak | Adj időbélyeget vagy GUID-et az `outputFilePath`-hez mentés előtt. |
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
-**Q:** *What is a PST file?*  
+**K:** *Mi az a PST-fájl?*
 A: A PST (Personal Storage Table) fájl egy Outlook adatfájl, amely e‑mail üzeneteket, névjegyeket, naptárbejegyzéseket és mellékleteket tárol.
 
-**Q:** *Can I extract attachments from OST files as well?*  
-A: Igen, az Aspose.Email támogatja mind a PST, mind az OST formátumot. Ugyanazt az API‑t használhatod, csak a `PersonalStorage.fromFile`‑t az OST fájlra mutasd.
+**K:** *Kicsomagolhatok mellékleteket OST-fájlokból is?*
+A: Igen, az Aspose.Email támogatja mind a PST, mind az OST formátumot. Ugyanazt az API‑t használhatod, csak a `PersonalStorage.fromFile`-t az OST fájlra mutasd.
 
-**Q:** *How do I handle encrypted PST files?*  
-A: Add meg a jelszót a tároló megnyitásakor: `PersonalStorage.fromFile(pstFilePath, "password")`. Részletes titkosítási kezelést az Aspose dokumentációban találsz.
+**K:** *Hogyan kezelhetem a titkosított PST-fájlokat?*
+V: Add meg a jelszót a tároló megnyitásakor: `PersonalStorage.fromFile(pstFilePath, "password")`. Részletes titkosítási kezelést az Aspose dokumentációban találsz.
 
-**Q:** *Is there a way to filter which emails are processed?*  
-A: Természetesen. Az `extractAttachments` meghívása előtt ellenőrizheted minden `MapiMessage` objektumot tárgy, feladó vagy dátum kritériumok alapján, és kihagyhatod a nem kívánt elemeket.
+**K:** *Van mód szűrni, hogy mely e-maileket dolgozzuk fel?*
+A: Természetesen. Az `extractAttachments` meghívása előtt ellenőrizte minden `MapiMessage` objektumot tárgy, feladó vagy dátum kritériumok alapján, és kihagyhatod a nem kívánt elemeket.
 
-**Q:** *Do I need a license for development?*  
+**K:** *Szükségem van licencre a fejlesztéshez?*
 A: Ideiglenes licenc elegendő a teszteléshez. Termeléshez vásárolj teljes licencet, hogy eltávolítsd a kiértékelési korlátozásokat.
 
-## Resources
-- **Documentation:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
-- **Download:** [Aspose Email Java Release](https://releases.aspose.com/email/java/)
-- **Purchase License:** [Buy Aspose Email](https://purchase.aspose.com/buy)
-- **Free Trial:** [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Support Forum:** [Ask Questions on the Support Forum](https://forum.aspose.com/c/email/10)
+## Források
+- **Dokumentáció:** [Aspose Email Java dokumentáció](https://reference.aspose.com/email/java/)
+- **Letöltés:** [Aspose Email Java kiadás](https://releases.aspose.com/email/java/)
+- **Licenc vásárlása:** [Aspose Email vásárlása](https://purchase.aspose.com/buy)
+- **Ingyenes próbaverzió:** [Kezdje ingyenes próbaverzióval](https://releases.aspose.com/email/java/)
+- **Támogatási fórum:** [Tegyen fel kérdéseket a Támogatási fórumon](https://forum.aspose.com/c/email/10)
 
-Embrace the power of Aspose.Email for Java and revolutionize how you handle email attachments!
+Használja ki az Aspose.Email for Java erejét, és forradalmasítsa az e-mail mellékletek kezelését!
 
 ---
 
-**Last Updated:** 2025-12-15  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Utolsó frissítés:** 2025-12-15
+**Tesztelve:** Aspose.Email for Java 25.4 (JDK16)
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

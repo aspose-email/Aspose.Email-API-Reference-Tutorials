@@ -6,7 +6,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: Java 提取電子郵件附件：使用 Aspose.Email 處理 PST 檔案 – 步驟指南
+title: Java 提取電子郵件附件 - 使用 Aspose.Email 處理 PST 檔案 – 步驟指南
 url: /zh-hant/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1
 ---

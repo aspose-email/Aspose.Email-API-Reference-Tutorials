@@ -7,7 +7,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: 'Java ile E-posta Eklerini Çıkarma: PST Dosyaları için Aspose.Email Kullanımı
+title: 'Java ile E-posta Eklerini Çıkarma - PST Dosyaları için Aspose.Email Kullanımı
   – Adım Adım Rehber'
 url: /tr/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1
@@ -20,46 +20,46 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Java ile E-posta Eklerini Çıkarma: PST Dosyaları için Aspose.Email Kullanımı – Kapsamlı Bir Rehber
 
-## Introduction
+## Giriiş
 
-Günümüz dijital çağında, e-postaları ve eklerini verimli bir şekilde yönetmek, işletmeler ve bireyler için hayati öneme sahiptir. Outlook PST dosyalarından **extract email attachments java** yaparak yedekleme, uyumluluk veya otomatik işleme gibi amaçlarla ekleri çıkarmak istediğinizde, bu görev göz korkutucu görünebilir. Neyse ki, Aspose.Email for Java, bu dosyaları manuel çaba harcamadan programatik bir şekilde çekmenizi sağlayan temiz bir yol sunar. Bu öğreticide, kütüphaneyi nasıl kuracağınızı, bir PST dosyasını nasıl yükleyeceğinizi ve sadece birkaç satır kodla ekleri nasıl çıkaracağınızı öğreneceksiniz.
+Günümüzde dijitalleşme, e-postaları ve eklerini verimli bir şekilde birleştirme, işletmeler ve bireyler için hayati öneme sahiptir. Outlook PST dosyalarından **extract e-posta ekleri java** yaparak yedekleme, uyumluluk veya otomatik işleme gibi özelliklerle ekleri çıkarmak istediğinizde, bu görevin göz kusuru engelleniyor. Neyse ki, Aspose.Email for Java, bu dosyaları manuel çaba harcamadan programlı bir şekilde çekmenizi sağlayan temiz bir yol sunuyor. Bu öğreticide, kütüphaneyi nasıl kuracağınızı, bir PST ücretini nasıl yükleyeceğinizi ve sadece birkaç satır kodla eklerini nasıl çıkaracağınızı öğrenin.
 
-**What You'll Learn**
-- Projenize Maven bağımlılığı aspose email ekleme  
-- Bir PST dosyasını yükleme ve klasörlerinde gezinme  
-- **how to extract pst attachments** sorusuna yanıt vererek e-posta eklerini verimli bir şekilde çıkarma  
+**Ne Öğreneceksiniz**
+- Projenize Maven filtresi olarak e-posta ekleme
+- Bir PST ücreti yükleme ve bilgisayarlarda gezinme
+- **pst ekleri nasıl çıkarılır** sorusuna yanıt vererek e-posta eklerini verimli bir şekilde çıkarma
 
-E-posta ekleri iş akışınızı hızlandırmaya hazır mısınız? Hadi başlayalım.
+E-posta ekleri iş analizlerinizi hızlandırmaya hazır mısınız? Hadi başla.
 
-## Quick Answers
-- **Primary library?** Aspose.Email for Java  
-- **Typical implementation time?** 10–15 minutes for basic extraction  
-- **Key prerequisite?** JDK 16+ and Maven installed  
-- **License required?** Yes, a valid Aspose license for production use  
-- **Supports PST & OST?** Both formats are supported  
+## Hızlı Yanıtlar
+- **Birincil kütüphane mi?** Aspose.Email for Java
+- **Tipik uygulama süresi?** Temel çıkarma için 10–15 dakika
+- **Anahtar önkoşulu mu?** JDK16+ ve Maven yüklü
+- **Lisans gerekli mi?** Evet, üretimde kullanım için geçerli bir Aspose lisansı
+- **PST ve OST'yi destekliyor mu?** Her iki format da destekleniyor
 
-## What is “extract email attachments java”?
+## "E-posta eklerini çıkarma java" nedir?
 
-Extracting email attachments java, Outlook PST (veya OST) dosyalarını Java kodu ile okuyup, ekli dosyaları—belgeler, görseller, PDF'ler—seçtiğiniz bir dizine kaydetmek anlamına gelir. Bu yaklaşım, veri taşıma projeleri, otomatik fatura işleme veya arşivleme çözümleri için idealdir.
+E-posta eklerini çıkarma java, Outlook PST (veya OST) yazılımını Java kodu ile saklayabilir, ekli dosyalar—belgeler, görseller, PDF'ler—seçtiğiniz bir dizine yönlendirilebilir gelir. Bu alternatif, veri taşıma projeleri, otomatik fatura işleme veya arşivleme çözümleri için çözümler.
 
-## Why use Aspose.Email for this task?
+## Bu görev için neden Aspose.Email kullanmalısınız?
 
-- **Zero‑dependency parsing:** No need for Outlook or MAPI on the server.  
-- **Full format support:** Handles PST, OST, and encrypted stores.  
-- **Robust API:** Provides methods like `extractAttachments` that hide low‑level details.  
+- **Sıfır bağımlılık ayrıştırma:** Sunucuda Outlook veya MAPI'ye gerek yoktur.
+- **Tam format desteği:** PST, OST ve şifreli depoları yönetir.
+- **Güçlü API:** Düşük düzeydeki ayrıntıları gizleyen "extractAttachments" gibi yöntemler sağlar.
 
-## Prerequisites
+## Önkoşullar
 
-- **Java Development Kit (JDK):** Versiyon 16 veya daha yeni.  
-- **Maven:** Bağımlılık yönetimi için.  
-- **Aspose.Email for Java Library:** Maven aracılığıyla eklenir (aşağıdaki *maven dependency aspose email* snippet'ine bakın).  
-- **IDE:** IntelliJ IDEA, Eclipse veya VS Code kod düzenlemek ve çalıştırmak için.
+- **Java Development Kit (JDK):** Versiyon16 veya daha yeni.
+- **Maven:** Bağımlılık yönetimi için.
+- **Aspose.Email for Java Library:** Maven aracılığıyla ekleme (aşağıdaki *maven Dependency aspose email* snippet'ine bakın).
+- **IDE:** IntelliJ IDEA, Eclipse veya VSCode kod düzenlemek ve çalıştırmak için.
 
-## Setting Up Aspose.Email for Java
+## Java için Aspose.Email Kurulumu
 
-### Add the Maven Dependency (maven dependency aspose email)
+### Maven Bağımlılığını Ekleme (maven dependency aspose email)
 
-Insert the following XML into your project's `pom.xml` under `<dependencies>`:
+Aşağıdaki XML kodunu projenizin `pom.xml` dosyasındaki `<dependencies>` bölümüne ekleyin:
 
 ```xml
 <dependency>
@@ -70,36 +70,36 @@ Insert the following XML into your project's `pom.xml` under `<dependencies>`:
 </dependency>
 ```
 
-### License Acquisition
+### Lisans Edinimi
 
-Aspose offers a free trial, but a full license unlocks all features. You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+Aspose ücretsiz deneme sürümü sunmaktadır, ancak tam lisans tüm özellikleri açar. Geçici bir lisansı [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
 
-## Implementation Guide (aspose email java tutorial)
+## Uygulama Kılavuzu (aspose e-posta Java eğitimi)
 
-### Feature 1: Load PST File
+### Özellik 1: PST Dosyasını Yükleme
 
-#### Step 1: Define Your Directory Path
-Identify where your PST file resides and set the path.
+#### Adım 1: Dizin Yolunuzu Tanımlayın
+PST dosyanızın bulunduğu yeri belirleyin ve yolu ayarlayın.
 
 ```java
 String pstFilePath = "YOUR_DOCUMENT_DIRECTORY/Sub.pst";
 ```
 
-#### Step 2: Load the PST File
+#### Adım 2: PST Dosyasını Yükleme
 
 ```java
 PersonalStorage pst = PersonalStorage.fromFile(pstFilePath);
 ```
 
-### Feature 2: Extract Attachments from Emails
+### Özellik 2: E-postalardan Ekleri Çıkarma
 
-#### Step 1: Access the Inbox Subfolder
+#### Adım 1: Gelen Kutusu Alt Klasörüne Erişin
 
 ```java
 FolderInfo inboxFolder = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-#### Step 2: Iterate Through Emails and Extract Attachments
+#### Adım 2: E-postaları İnceleyin ve Ekleri Çıkarın
 
 ```java
 for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
@@ -114,67 +114,67 @@ for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
 }
 ```
 
-### Key Configuration Options
+### Anahtar Yapılandırma Seçenekleri
 
-- **Output Directory:** Çıktı Dizini: Klasörün var olduğunu ve uygulamanın yazma iznine sahip olduğunu doğrulayın.  
-- **Error Handling:** Hata İşleme: Yukarıdaki mantığı `try‑catch` blokları içinde sararak I/O hatalarını veya bozuk PST girişlerini zarif bir şekilde ele alın.  
+- **Çıkış Dizini:** Çıktı Dizini: Klasörün var olduğunu ve çalınmasına yazma iznine sahip olduğunu doğrulayın.
+- **Hata İşleme:** Hata İşleme: yukarıdaki mantığı `try‑catch` blokları içinde sararak I/O hatalarını veya bozuk PST girişlerini zarif bir şekilde ele alın.
 
-### Troubleshooting Tips (how to extract pst attachments)
+### Sorun Giderme İpuçları (pst eklerinin nasıl çıkarılacağı)
 
-- **File not found:** Dosya bulunamadı: `pstFilePath` dizesini iki kez kontrol edin; güvenilirlik için mutlak yollar kullanın.  
-- **Permission issues:** İzin sorunları: JVM'yi uygun dosya sistemi haklarıyla çalıştırın veya kullanıcının ev klasörü içinde bir dizin seçin.  
-- **Large PST files:** Büyük PST dosyaları: Mesajları partiler halinde işlemeyi ve her partiden sonra `System.gc()` çağırarak belleği serbest bırakmayı düşünün.
+- **Dosya bulunamadı:** Dosya hatası: `pstFilePath` dizesini iki kez kontrol edin; egemenlik için mutlak denklemleri kullanın.
+- **İzin sorunları:** İzin sorunları: JVM'yi uygun dosya sistemi haklarıyla çalıştırır veya kullanıcıların ev içindeki bir dizini seçin.
+- **Büyük PST dosyaları:** Büyük PST dosyaları: Mesajları partiler halinde işlemeyi ve partiden sonra `System.gc()` çağırarak hafızasını serbest bırakmayı düşünün.
 
-## Practical Applications
+## Pratik Uygulamalar
 
-1. **Data Backup:** Veri Yedekleme: Ekleri periyodik olarak çekerek güvenli dış depolamaya alın.  
-2. **Automated Invoice Processing:** Otomatik Fatura İşleme: Gelen faturalardan PDF'leri çıkarıp bir ERP sistemine besleyin.  
-3. **Email Archiving:** E-posta Arşivleme: Her eki uyumluluk‑hazır bir arşivin parçası olarak koruyun.
+1. **Veri Yedekleme:** Veri Yedekleme: Ekleri periyodik olarak çekerek güvenli dış depolamaya alın.
+2. **Otomatik Fatura İşleme:** Otomatik Fatura İşleme: Gelen faturalardan PDF'leri yapabileceğiniz bir ERP sistemi besleyin.
+3. **E-posta Arşivleme:** E-posta Arşivleme: Her eki uyumluluğu hazır bir arşivin parçası olarak evde.
 
-## Performance Considerations
+## Performansla İlgili Hususlar
 
-- **Memory Management:** Bellek Yönetimi: 1 GB'den büyük PST'ler için JVM yığınını (`-Xmx2g` veya daha yüksek) artırın.  
-- **Batch Extraction:** Parti Çıkarma: Bellek kullanımını düşük tutmak için döngü iterasyonunda sınırlı sayıda mesaj işleyin.
+- **Bellek Yönetimi:** Bellek Yönetimi: 1GB'den büyük PST'ler için JVM yığınını (`-Xmx2g` veya daha yüksek) artırın.
+- **Batch Extraction:** Parti Çıkarma: Bellekte düşük tutmak için döngü yinelemesinde sınırlı sayıda mesaj işleyin.
 
-## Common Issues and Solutions
+## Yaygın Sorunlar ve Çözümler
 
 | Sorun | Çözüm |
-|-------|----------|
-| `fromFile` throws `FileNotFoundException` | Yolu doğrulayın ve dosyanın başka bir işlem tarafından kilitlenmediğinden emin olun. |
-| Out‑of‑Memory errors on huge PSTs | Yığın boyutunu artırın ve daha küçük partiler halinde çıkarın. |
-| Attachments have duplicate names | Kaydetmeden önce `outputFilePath`'e bir zaman damgası veya GUID ekleyin. |
+|----------|----------|
+| `fromFile`, `FileNotFoundException`ı atıyor | Yolu doğrulayın ve dosyanın başka bir işlem tarafından kilitlenmediğinden emin olun. |
+| Büyük PST'lerde Yetersiz Bellek hataları | Yığın değişiminin artması ve daha küçük partiler halinde çıkarılması. |
+| Eklerin yinelenen adları var | Kaydetmeden önce `outputFilePath`e bir zaman damgası veya GUID ekleyin. |
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q:** *What is a PST file?*  
-A: A PST (Personal Storage Table) file is an Outlook data file that stores emails, contacts, calendar items, and attachments.
+**S:** *PST dosyası nedir?*
+C: PST (Kişisel Depolama Tablosu) dosyası, e-postaları, kişileri, takvim öğelerini ve ekleri saklayan bir Outlook veri dosyasıdır.
 
-**Q:** *Can I extract attachments from OST files as well?*  
-A: Yes, Aspose.Email supports both PST and OST formats. Use the same API; just point `PersonalStorage.fromFile` at the OST file.
+**S:** *OST dosyalarından da ekleri çıkarabilir miyim?*
+C: Evet, Aspose.Email hem PST hem de OST formatlarını destekler. Aynı API'yi kullanın; OST dosyasının üzerine `PersonalStorage.fromFile`ı getirmeniz yeterli.
 
-**Q:** *How do I handle encrypted PST files?*  
-A: Supply the password when opening the store: `PersonalStorage.fromFile(pstFilePath, "password")`. Refer to the Aspose documentation for detailed encryption handling.
+**S:** *Şifrelenmiş PST dosyalarını nasıl işleyebilirim?*
+C: Depoyu açarken şifreyi girin: `PersonalStorage.fromFile(pstFilePath, "password")`. Ayrıntılı şifreleme işlemleri için Aspose belgelerine bakın.
 
-**Q:** *Is there a way to filter which emails are processed?*  
-A: Absolutely. Before calling `extractAttachments`, you can inspect each `MapiMessage` for subject, sender, or date criteria and skip unwanted items.
+**S:** *Hangi e-postaların işleneceğini filtrelemenin bir yolu var mı?*
+C: Kesinlikle. `extractAttachments` çağrılmadan önce, her `MapiMessage`'ı konu, gönderen veya tarih kriterlerine göre inceleyebilir ve istenmeyen öğeleri atlayabilirsiniz.
 
-**Q:** *Do I need a license for development?*  
-A: A temporary license is sufficient for testing. For production, purchase a full license to remove evaluation limitations.
+**S:** *Geliştirme için lisansa ihtiyacım var mı?*
+C: Test için geçici bir lisans yeterlidir. Üretim için, değerlendirme sınırlamalarını kaldırmak üzere tam bir lisans satın alın.
 
-## Resources
-- **Documentation:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
-- **Download:** [Aspose Email Java Release](https://releases.aspose.com/email/java/)
-- **Purchase License:** [Buy Aspose Email](https://purchase.aspose.com/buy)
-- **Free Trial:** [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Support Forum:** [Ask Questions on the Support Forum](https://forum.aspose.com/c/email/10)
+## Kaynaklar
+- **Belgeler:** [Aspose Email Java Belgeleri](https://reference.aspose.com/email/java/)
+- **İndir:** [Aspose Email Java Sürümü](https://releases.aspose.com/email/java/)
+- **Lisans Satın Al:** [Aspose Email Satın Al](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme:** [Ücretsiz Deneme ile Başlayın](https://releases.aspose.com/email/java/)
+- **Destek Forumu:** [Destek Forumunda Sorular Sorun](https://forum.aspose.com/c/email/10)
 
-Aspose.Email for Java gücünü benimseyin ve e-posta eklerini yönetme şeklinizi devrim niteliğinde değiştirin!
+Aspose.Email for Java, sizinseyin ve e-posta eklerini yönetme şeklinizi devrimleştirdi!
 
 ---
 
-**Last Updated:** 2025-12-15  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Son Güncelleme:** 15.12.2025
+**Test Edildiği Sürüm:** Aspose.Email for Java 25.4 (JDK16)
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -7,7 +7,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: 'E‑mailbijlagen extraheren in Java: Aspose.Email gebruiken voor PST‑bestanden
+title: 'E‑mailbijlagen extraheren in Java - Aspose.Email gebruiken voor PST‑bestanden
   – Een stapsgewijze handleiding'
 url: /nl/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1

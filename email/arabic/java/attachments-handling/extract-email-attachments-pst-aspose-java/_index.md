@@ -7,7 +7,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: 'استخراج مرفقات البريد الإلكتروني في جافا: استخدام Aspose.Email لملفات PST
+title: 'استخراج مرفقات البريد الإلكتروني في جافا - استخدام Aspose.Email لملفات PST
   – دليل خطوة بخطوة'
 url: /ar/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1

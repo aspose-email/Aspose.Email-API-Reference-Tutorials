@@ -1,5 +1,5 @@
 ---
-title: "Extract Email Attachments Java: Using Aspose.Email for PST Files – A Step‑by‑Step Guide"
+title: "Extract Email Attachments Java - Using Aspose.Email for PST Files – A Step‑by‑Step Guide"
 description: "Learn how to extract email attachments java from PST files with Aspose.Email for Java. This tutorial covers Maven dependency aspose email, how to extract pst attachments, and provides a complete aspose email java tutorial."
 date: "2025-12-15"
 weight: 1

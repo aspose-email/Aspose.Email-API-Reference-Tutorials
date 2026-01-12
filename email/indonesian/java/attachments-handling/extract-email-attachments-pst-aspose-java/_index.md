@@ -7,7 +7,7 @@ keywords:
 - extract email attachments from PST
 - Aspose.Email for Java setup
 - extracting attachments using Aspose.Email
-title: 'Ekstrak Lampiran Email dengan Java: Menggunakan Aspose.Email untuk File PST
+title: 'Ekstrak Lampiran Email dengan Java - Menggunakan Aspose.Email untuk File PST
   – Panduan Langkah demi Langkah'
 url: /id/java/attachments-handling/extract-email-attachments-pst-aspose-java/
 weight: 1
@@ -20,44 +20,44 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Cara Mengekstrak Lampiran Email Java: Menggunakan Aspose.Email untuk File PST – Panduan Komprehensif
 
-## Introduction
+## Perkenalan
 
-Di era digital saat ini, mengelola email dan lampirannya secara efisien sangat penting bagi bisnis maupun individu. Baik Anda ingin **extract email attachments java** dari file Outlook PST untuk pencadangan, kepatuhan, atau pemrosesan otomatis, tugas ini dapat terasa menakutkan. Untungnya, Aspose.Email for Java menyediakan cara yang bersih dan terprogram untuk mengambil file‑file tersebut tanpa usaha manual. Dalam tutorial ini Anda akan belajar cara menyiapkan pustaka, memuat file PST, dan mengekstrak lampiran hanya dengan beberapa baris kode.
+Di era digital saat ini, mengelola email dan lampirannya secara efisien sangat penting bagi bisnis maupun individu. Baik Anda ingin **extract email attachments java** dari file Outlook PST untuk pencadangan, kepatuhan, atau pemrosesan otomatis, tugas ini dapat terasa menakutkan. Untungnya, Aspose.Email for Java menyediakan cara yang bersih dan terprogram untuk mengambil file‑file tersebut tanpa usaha manual. Dalam tutorial ini Anda akan belajar cara menyiapkan pustaka, memuat file PST, dan menambahkan lampiran hanya dengan beberapa baris kode.
 
-**What You'll Learn**
-- Cara menambahkan dependensi Maven aspose email ke proyek Anda  
-- Cara memuat file PST dan menavigasi folder‑nya  
-- Cara mengekstrak lampiran email secara efisien, menjawab pertanyaan *how to extract pst attachments*  
+**Apa yang Akan Anda Pelajari**
+- Cara menambahkan dependensi Maven aspose email ke proyek Anda
+- Cara memuat file PST dan menavigasi folder‑nya
+- Cara mengekstrak lampiran email secara efisien, menjawab pertanyaan *cara mengekstrak lampiran pst*
 
-Siap menyederhanakan alur kerja lampiran email Anda? Mari mulai.
+Siap untuk alur kerja lampiran email Anda? Mari mulai.
 
-## Quick Answers
-- **Primary library?** Aspose.Email for Java  
-- **Typical implementation time?** 10–15 menit untuk ekstraksi dasar  
-- **Key prerequisite?** JDK 16+ dan Maven terpasang  
-- **License required?** Ya, lisensi Aspose yang valid untuk penggunaan produksi  
-- **Supports PST & OST?** Kedua format didukung  
+## Jawaban Cepat
+- **Perpustakaan utama?** Aspose.Email untuk Java
+- **Waktu implementasi pada umumnya?** 10–15 menit untuk ekstraksi dasar
+- **Prasyarat utama?** JDK16+ dan Maven terpasang
+- **Lisensi diperlukan?** Ya, lisensi Aspose yang valid untuk penggunaan produksi
+- **Mendukung PST & OST?** Format kedua didukung
 
-## What is “extract email attachments java”?
+## Apa itu “ekstrak lampiran email java”?
 
-Mengekstrak lampiran email java berarti menggunakan kode Java untuk membaca file Outlook PST (atau OST) dan menyimpan semua file yang dilampirkan—dokumen, gambar, PDF—ke direktori pilihan Anda. Pendekatan ini ideal untuk proyek migrasi data, pemrosesan faktur otomatis, atau membangun solusi arsip.
+Mengekstrak lampiran email java berarti menggunakan kode Java untuk membaca file Outlook PST (atau OST) dan menyimpan semua file yang dilampirkan—dokumen, gambar, PDF—ke direktori pilihan Anda. Pendekatan ini ideal untuk proyek migrasi data, mengirimkan faktur otomatis, atau membangun arsip solusi.
 
-## Why use Aspose.Email for this task?
+## Mengapa menggunakan Aspose.Email untuk tugas ini?
 
-- **Zero‑dependency parsing:** Tidak memerlukan Outlook atau MAPI di server.  
-- **Full format support:** Menangani PST, OST, dan penyimpanan terenkripsi.  
-- **Robust API:** Menyediakan metode seperti `extractAttachments` yang menyembunyikan detail tingkat rendah.  
+- **Penguraian tanpa ketergantungan:** Tidak memerlukan Outlook atau MAPI di server.
+- **Dukungan format penuh:** menggabungkan PST, OST, dan penyimpanan terenkripsi.
+- **Robust API:** Menyediakan metode seperti `extractAttachments` yang menyembunyikan detail tingkat rendah.
 
-## Prerequisites
+## Prasyarat
 
-- **Java Development Kit (JDK):** Versi 16 atau lebih baru.  
-- **Maven:** Untuk manajemen dependensi.  
-- **Aspose.Email for Java Library:** Ditambahkan melalui Maven (lihat cuplikan *maven dependency aspose email* di bawah).  
-- **IDE:** IntelliJ IDEA, Eclipse, atau VS Code untuk mengedit dan menjalankan kode.
+- **Java Development Kit (JDK):** Versi16 atau lebih baru.
+- **Maven:** Untuk manajemen ketergantungan.
+- **Aspose.Email for Java Library:** Ditambahkan melalui Maven (lihat cuplikan *maven dependency aspose email* di bawah).
+- **IDE:** IntelliJ IDEA, Eclipse, atau VSCode untuk mengedit dan menjalankan kode.
 
-## Setting Up Aspose.Email for Java
+## Menyiapkan Aspose.Email untuk Java
 
-### Add the Maven Dependency (maven dependency aspose email)
+### Tambahkan Ketergantungan Maven (ketergantungan Maven seperti email)
 
 Masukkan XML berikut ke dalam `pom.xml` proyek Anda di bawah `<dependencies>`:
 
@@ -70,36 +70,36 @@ Masukkan XML berikut ke dalam `pom.xml` proyek Anda di bawah `<dependencies>`:
 </dependency>
 ```
 
-### License Acquisition
+### Akuisisi Lisensi
 
 Aspose menawarkan uji coba gratis, tetapi lisensi penuh membuka semua fitur. Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
 
-## Implementation Guide (aspose email java tutorial)
+## Panduan Implementasi (misal tutorial java email)
 
-### Feature 1: Load PST File
+### Fitur 1: Muat File PST
 
-#### Step 1: Define Your Directory Path
-Identifikasi lokasi file PST Anda dan tetapkan path‑nya.
+#### Langkah 1: Tentukan Jalur Direktori Anda
+lokasi lokasi file PST Anda dan tetapkan path‑nya.
 
 ```java
 String pstFilePath = "YOUR_DOCUMENT_DIRECTORY/Sub.pst";
 ```
 
-#### Step 2: Load the PST File
+#### Langkah 2: Muat File PST
 
 ```java
 PersonalStorage pst = PersonalStorage.fromFile(pstFilePath);
 ```
 
-### Feature 2: Extract Attachments from Emails
+### Fitur 2: Mengekstrak Lampiran dari Email
 
-#### Step 1: Access the Inbox Subfolder
+#### Langkah 1: Akses Subfolder Kotak Masuk
 
 ```java
 FolderInfo inboxFolder = pst.getRootFolder().getSubFolder("Inbox");
 ```
 
-#### Step 2: Iterate Through Emails and Extract Attachments
+#### Langkah 2: Telusuri Email dan Ekstrak Lampiran
 
 ```java
 for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
@@ -114,67 +114,67 @@ for (String entryId : inboxFolder.enumerateMessagesEntryId()) {
 }
 ```
 
-### Key Configuration Options
+### Opsi Konfigurasi Kunci
 
-- **Output Directory:** Pastikan folder ada dan aplikasi memiliki izin menulis.  
-- **Error Handling:** Bungkus logika di atas dalam blok `try‑catch` untuk menangani kesalahan I/O atau entri PST yang rusak secara elegan.  
+- **Direktori Output:** Pastikan folder ada dan aplikasi memiliki izin menulis.
+- **Error Handling:** Bungkus logika di atas dalam blok `try‑catch` untuk menangani kesalahan I/O atau entri PST yang rusak secara elegan.
 
-### Troubleshooting Tips (how to extract pst attachments)
+### Tips Mengatasi Masalah (cara mengekstrak lampiran pst)
 
-- **File not found:** Periksa kembali string `pstFilePath`; gunakan path absolut untuk keandalan.  
-- **Permission issues:** Jalankan JVM dengan hak akses sistem berkas yang tepat atau pilih direktori dalam folder home pengguna.  
-- **Large PST files:** Pertimbangkan memproses pesan dalam batch dan memanggil `System.gc()` setelah tiap batch untuk membebaskan memori.
+- **File tidak ditemukan:**Periksa kembali string `pstFilePath`; gunakan path absolut untuk menegaskan.
+- **Masalah izin:** Jalankan JVM dengan hak akses sistem berkas yang tepat atau pilih direktori dalam folder home pengguna.
+- **File PST berukuran besar:** memproses pesan dalam batch dan memanggil `System.gc()` setelah tiap batch untuk membebaskan memori.
 
-## Practical Applications
+## Aplikasi Praktis
 
-1. **Data Backup:** Secara berkala tarik lampiran untuk penyimpanan off‑site yang aman.  
-2. **Automated Invoice Processing:** Ekstrak PDF dari faktur masuk dan alirkan ke sistem ERP.  
-3. **Email Archiving:** Simpan setiap lampiran sebagai bagian dari arsip yang siap kepatuhan.
+1. **Cadangan Data:** Secara berkala menarik lampiran untuk penyimpanan di luar lokasi yang aman.
+2. **Pemrosesan Faktur Otomatis:** Ekstrak PDF dari faktur masuk dan alirkan ke sistem ERP.
+3. **Pengarsipan Email:** Simpan setiap lampiran sebagai bagian dari arsip yang siap dipenuhi.
 
-## Performance Considerations
+## Pertimbangan Kinerja
 
-- **Memory Management:** Untuk PST lebih besar dari 1 GB, tingkatkan heap JVM (`-Xmx2g` atau lebih).  
+- **Manajemen Memori:** Untuk PST lebih besar dari 1GB, tingkatkan heap JVM (`-Xmx2g` atau lebih).
 - **Batch Extraction:** Proses sejumlah pesan terbatas per iterasi loop untuk menjaga penggunaan memori tetap rendah.
 
-## Common Issues and Solutions
+## Masalah Umum dan Solusinya
 
-| Issue | Solution |
+| Edisi | Solusi |
 |-------|----------|
-| `fromFile` throws `FileNotFoundException` | Verifikasi path dan pastikan file tidak terkunci oleh proses lain. |
-| Out‑of‑Memory errors on huge PSTs | Tingkatkan ukuran heap dan ekstrak dalam batch yang lebih kecil. |
-| Attachments have duplicate names | Tambahkan timestamp atau GUID ke `outputFilePath` sebelum menyimpan. |
+| `fromFile` melempar `FileNotFoundException` | Jalur verifikasi dan pastikan file tidak terkunci oleh proses lain. |
+| Kesalahan kehabisan memori pada PST berukuran besar | Tingkatkan ukuran heap dan ekstrak dalam batch yang lebih kecil. |
+| Lampiran memiliki nama duplikat | Tambahkan stempel waktu atau GUID ke `outputFilePath` sebelum menyimpan. |
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q:** *What is a PST file?*  
+**T:** *Apa itu file PST?*
 A: File PST (Personal Storage Table) adalah file data Outlook yang menyimpan email, kontak, item kalender, dan lampiran.
 
-**Q:** *Can I extract attachments from OST files as well?*  
+**Q:** *Dapatkah saya mengekstrak lampiran dari file OST juga?*
 A: Ya, Aspose.Email mendukung kedua format PST dan OST. Gunakan API yang sama; cukup arahkan `PersonalStorage.fromFile` ke file OST.
 
-**Q:** *How do you handle encrypted PST files?*  
-A: Berikan password saat membuka penyimpanan: `PersonalStorage.fromFile(pstFilePath, "password")`. Lihat dokumentasi Aspose untuk penanganan enkripsi secara detail.
+**T:** *Bagaimana cara menangani file PST terenkripsi?*
+A: Berikan kata sandi saat membuka penyimpanan: `PersonalStorage.fromFile(pstFilePath, "password")`. Lihat dokumentasi Aspose untuk penanganan enkripsi secara detail.
 
-**Q:** *Is there a way to filter which emails are processed?*  
-A: Tentu. Sebelum memanggil `extractAttachments`, Anda dapat memeriksa setiap `MapiMessage` untuk subjek, pengirim, atau kriteria tanggal dan melewatkan item yang tidak diinginkan.
+**Q:** *Apakah ada cara untuk memfilter email mana yang diproses?*
+J: Tentu. Sebelum memanggil `extractAttachments`, Anda dapat memeriksa setiap `MapiMessage` untuk subjek, pengirim, atau kriteria tanggal dan melewatkan item yang tidak diinginkan.
 
-**Q:** *Do you need a license for development?*  
+**Q:** *Apakah Anda memerlukan lisensi untuk pengembangan?*
 A: Lisensi sementara sudah cukup untuk pengujian. Untuk produksi, beli lisensi penuh agar batas evaluasi dihapus.
 
-## Resources
-- **Documentation:** [Dokumentasi Aspose Email Java](https://reference.aspose.com/email/java/)
-- **Download:** [Rilis Aspose Email Java](https://releases.aspose.com/email/java/)
-- **Purchase License:** [Beli Aspose Email](https://purchase.aspose.com/buy)
-- **Free Trial:** [Mulai dengan Uji Coba Gratis](https://releases.aspose.com/email/java/)
-- **Support Forum:** [Ajukan Pertanyaan di Forum Dukungan](https://forum.aspose.com/c/email/10)
+## Sumber daya
+- **Dokumentasi:** [Dokumentasi Aspose Email Java](https://reference.aspose.com/email/java/)
+- **Unduh:** [Rilis Aspose Email Java](https://releases.aspose.com/email/java/)
+- **Lisensi Pembelian:** [Beli Aspose Email](https://purchase.aspose.com/buy)
+- **Uji Coba Gratis:** [Mulai dengan Uji Coba Gratis](https://releases.aspose.com/email/java/)
+- **Forum Dukungan:** [Ajukan Pertanyaan di Forum Dukungan](https://forum.aspose.com/c/email/10)
 
-Manfaatkan kekuatan Aspose.Email for Java dan revolusi cara Anda menangani lampiran email!
+Manfaatkan kekuatan Aspose.Email untuk Java dan revolusi cara Anda menangani lampiran email!
 
 ---
 
-**Last Updated:** 2025-12-15  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 2025-12-15
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (JDK16)
+**Penulis:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
