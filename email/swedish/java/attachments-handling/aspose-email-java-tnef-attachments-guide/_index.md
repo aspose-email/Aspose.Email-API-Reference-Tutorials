@@ -181,12 +181,13 @@ A: Yes—use `mail.getAttachments()` which returns a collection you can iterate 
 **Q: Finns det ett sätt att konvertera en batch av MSG‑filer till EML i ett körning?**  
 A: Absolutely. Loop through the files, apply the conversion steps shown above, and save each result.
 
+**Relaterade resurser:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
+
 ---
 
 **Last Updated:** 2025-12-13  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose  
-**Relaterade resurser:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -181,12 +181,13 @@ A: ได้ – ใช้ `mail.getAttachments()` ซึ่งคืนคอ�
 **Q: มีวิธีแปลงชุดไฟล์ MSG เป็น EML ในการทำงานครั้งเดียวหรือไม่?**  
 A: มีแน่นอน เพียงวนลูปผ่านไฟล์แต่ละไฟล์, ใช้ขั้นตอนการแปลงที่แสดงข้างต้น, แล้วบันทึกผลลัพธ์แต่ละไฟล์  
 
+**แหล่งข้อมูลที่เกี่ยวข้อง:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | ดาวน์โหลดไลเซนส์ชั่วคราว [ที่นี่](https://releases.aspose.com/email/java/).
+
 ---
 
 **อัปเดตล่าสุด:** 2025-12-13  
 **ทดสอบด้วย:** Aspose.Email for Java 25.4 (JDK 16)  
 **ผู้เขียน:** Aspose  
-**แหล่งข้อมูลที่เกี่ยวข้อง:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | ดาวน์โหลดไลเซนส์ชั่วคราว [ที่นี่](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

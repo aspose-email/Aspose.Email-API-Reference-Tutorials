@@ -181,13 +181,14 @@ system.out.println("Is TNEF: " + isTnef);
 
 **Ε: Υπάρχει τρόπος να μετατρέψω μια παρτίδα αρχείων MSG σε EML σε μία εκτέλεση;**  
 Α: Σίγουρα. Επανάληψη στα αρχεία, εφαρμογή των βημάτων μετατροπής που φαίνονται παραπάνω και αποθήκευση κάθε αποτελέσματος.
+ 
+**Σχετικοί Πόροι:** [Τεκμηρίωση Aspose Email Java](https://reference.aspose.com/email/java/) | [Αποκτήσεις Aspose Email Java](https://releases.aspose.com/email/java/) | [Αγορά Aspose.Email for Java](https://purchase.aspose.com/buy) | Κατεβάστε μια προσωρινή άδεια [εδώ](https://releases.aspose.com/email/java/).
 
 ---
 
 **Τελευταία Ενημέρωση:** 2025-12-13  
 **Δοκιμασμένο Με:** Aspose.Email for Java 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose  
-**Σχετικοί Πόροι:** [Τεκμηρίωση Aspose Email Java](https://reference.aspose.com/email/java/) | [Αποκτήσεις Aspose Email Java](https://releases.aspose.com/email/java/) | [Αγορά Aspose.Email for Java](https://purchase.aspose.com/buy) | Κατεβάστε μια προσωρινή άδεια [εδώ](https://releases.aspose.com/email/java/).
+**Συγγραφέας:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

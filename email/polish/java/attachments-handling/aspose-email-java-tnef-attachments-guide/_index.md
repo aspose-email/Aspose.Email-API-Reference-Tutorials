@@ -182,12 +182,13 @@ A: Tak — użyj `mail.getAttachments()`, które zwraca kolekcję, którą może
 **Q: Czy istnieje sposób konwertowania partii plików MSG na EML w jednym przebiegu?**  
 A: Oczywiście. Przejdź pętlą po plikach, zastosuj kroki konwersji pokazane powyżej i zapisz każdy wynik.
 
+**Powiązane zasoby:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
+
 ---
 
 **Last Updated:** 2025-12-13  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose  
-**Powiązane zasoby:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

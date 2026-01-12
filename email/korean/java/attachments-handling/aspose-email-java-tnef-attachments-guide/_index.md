@@ -181,12 +181,13 @@ A: 예 – `mail.getAttachments()`를 사용하면 컬렉션을 반환하므로 
 **Q: 한 번에 여러 MSG 파일을 EML로 변환할 수 있는 방법이 있나요?**  
 A: 물론입니다. 파일들을 순회하면서 위에 보여준 변환 단계를 적용하고 각각 저장하면 됩니다.
 
+**Related Resources:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
+
 ---
 
 **Last Updated:** 2025-12-13  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose  
-**Related Resources:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

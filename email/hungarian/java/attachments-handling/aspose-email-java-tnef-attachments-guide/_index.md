@@ -183,10 +183,13 @@ A: Igen – használja a `mail.getAttachments()`‑t, amely egy gyűjteményt ad
 **Q: Van mód egy futtatás során több MSG fájlt EML‑re konvertálni?**  
 A: Természetesen. Iteráljon a fájlokon, alkalmazza a fent bemutatott konvertálási lépéseket, és mentse el minden eredményt.
 
+**Kapcsolódó erőforrások:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Töltsön le egy ideiglenes licencet [itt](https://releases.aspose.com/email/java/).
+
+---
+
 **Utoljára frissítve:** 2025-12-13  
 **Tesztelve:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose  
-**Kapcsolódó erőforrások:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Töltsön le egy ideiglenes licencet [itt](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

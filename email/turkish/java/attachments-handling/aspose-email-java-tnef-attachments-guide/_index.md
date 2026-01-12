@@ -180,13 +180,14 @@ A: Evet—`mail.getAttachments()` kullanarak, üzerinde döngü kurabileceğiniz
 
 **S: Tek bir çalıştırmada bir grup MSG dosyasını EML'ye dönüştürmenin bir yolu var mı?**  
 A: Kesinlikle. Dosyalar arasında döngü kurarak, yukarıda gösterilen dönüşüm adımlarını uygulayın ve her sonucu kaydedin.
+ 
+**İlgili Kaynaklar:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Geçici bir lisansı [buradan](https://releases.aspose.com/email/java/) indirin.
 
 ---
 
 **Son Güncelleme:** 2025-12-13  
 **Test Edilen:** Aspose.Email for Java 25.4 (JDK 16)  
-**Yazar:** Aspose  
-**İlgili Kaynaklar:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Geçici bir lisansı [buradan](https://releases.aspose.com/email/java/) indirin.
+**Yazar:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

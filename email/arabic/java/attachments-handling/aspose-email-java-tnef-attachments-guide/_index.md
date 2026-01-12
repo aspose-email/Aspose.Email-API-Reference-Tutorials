@@ -181,12 +181,13 @@ system.out.println("Is TNEF: " + isTnef);
 **س: هل هناك طريقة لتحويل مجموعة من ملفات MSG إلى EML في عملية واحدة؟**  
 ج: بالتأكيد. قم بالتكرار عبر الملفات، نفّذ خطوات التحويل الموضحة أعلاه، واحفظ كل نتيجة.
 
+**موارد ذات صلة:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | حمّل ترخيصًا مؤقتًا [هنا](https://releases.aspose.com/email/java/).
+
 ---
 
 **آخر تحديث:** 2025-12-13  
 **تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16)  
 **المؤلف:** Aspose  
-**موارد ذات صلة:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | حمّل ترخيصًا مؤقتًا [هنا](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

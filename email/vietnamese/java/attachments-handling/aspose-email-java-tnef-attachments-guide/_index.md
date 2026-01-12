@@ -181,12 +181,13 @@ A: Có—sử dụng `mail.getAttachments()` để lấy collection và duyệt 
 **Q: Có cách nào chuyển đổi hàng loạt các tệp MSG sang EML trong một lần chạy không?**  
 A: Chắc chắn. Duyệt qua các tệp, áp dụng các bước chuyển đổi như trên, và lưu kết quả cho mỗi tệp.
 
+**Tài Nguyên Liên Quan:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Tải giấy phép tạm thời [tại đây](https://releases.aspose.com/email/java/).
+
 ---
 
 **Cập Nhật Cuối Cùng:** 2025-12-13  
 **Đã Kiểm Tra Với:** Aspose.Email for Java 25.4 (JDK 16)  
 **Tác Giả:** Aspose  
-**Tài Nguyên Liên Quan:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Tải giấy phép tạm thời [tại đây](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

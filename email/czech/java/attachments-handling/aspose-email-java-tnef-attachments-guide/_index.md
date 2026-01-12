@@ -182,12 +182,13 @@ A: Ano – použijte `mail.getAttachments()`, který vrací kolekci, kterou mů�
 **Q: Existuje způsob, jak převést dávku souborů MSG na EML v jednom běhu?**  
 A: Rozhodně. Procházejte soubory, aplikujte kroky převodu uvedené výše a uložte každý výsledek.
 
+
+**Související zdroje:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Stáhněte dočasnou licenci [zde](https://releases.aspose.com/email/java/).
 ---
 
 **Poslední aktualizace:** 2025-12-13  
 **Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
 **Autor:** Aspose  
-**Související zdroje:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Stáhněte dočasnou licenci [zde](https://releases.aspose.com/email/java/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
