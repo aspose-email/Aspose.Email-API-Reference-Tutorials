@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "Exchange sunucularına bağlanarak ve verimli sayfalandırılmış veri alma özelliğini uygulayarak Aspose.Email for Java ile çok sayıda randevuyu nasıl yöneteceğinizi öğrenin."
-"title": "Java'da Aspose.Email for Exchange Servers Kullanılarak Sayfalandırılmış Randevular Nasıl Uygulanır"
-"url": "/tr/java/calendar-appointments/java-aspose-email-paginated-appointments/"
-"weight": 1
+date: '2025-12-22'
+description: Aspose.Email for Java ile randevuları yönetmek için Java sayfalama en
+  iyi uygulamalarını öğrenin; sayfa başına öğe sayısı gibi ipuçlarıyla verimli Exchange
+  veri çekimi sağlayın.
+keywords:
+- Aspose.Email for Java
+- Exchange server pagination
+- Java EWSClient
+title: Java Sayfalama En İyi Uygulamaları – Aspose.Email Kullanarak Exchange Sunucuları
+  İçin Sayfalı Randevular Uygulama
+url: /tr/java/calendar-appointments/java-aspose-email-paginated-appointments/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,41 +18,48 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java'da Aspose.Email for Exchange Servers Kullanılarak Sayfalandırılmış Randevular Nasıl Uygulanır
+# Java'da Aspose.Email for Exchange Servers Kullanarak Sayfalı Randevuların Nasıl Uygulanacağını
 
-## giriiş
+## Giriş
 
-Exchange sunucusundan çok sayıda randevuyu yönetmek, özellikle sayfalandırma ile uğraşırken zor olabilir. Bu eğitim, Exchange sunucunuza bağlanmak ve sayfalandırma desteğiyle randevuları etkili bir şekilde listelemek için Aspose.Email for Java'yı kullanma konusunda size rehberlik edecektir. Bu kılavuzun sonunda, sayfalandırılmış veri alımını sorunsuz bir şekilde nasıl yapacağınız konusunda ustalaşacaksınız.
+Bir Exchange sunucusundan büyük sayıda randevu yönetmek, özellikle sayfalama ile uğraşırken zorlayıcı olabilir. **Java pagination best practices** verileri verimli bir şekilde almanıza ve bellek kullanımını düşük tutmanıza yardımcı olur. Bu öğreticide Aspose.Email for Java ile Exchange sunucunuza nasıl bağlanacağınızı ve sağlam sayfalama teknikleri kullanarak randevuları nasıl listeleyeceğinizi öğreneceksiniz.
 
-**Ne Öğreneceksiniz:**
-- Java için Aspose.Email nasıl kurulur ve kullanılır.
-- EWSClient kullanarak bir Exchange sunucusuna bağlanılıyor.
-- Performansı optimize etmek için randevuları sayfalandırma ile listeleme.
-- Kaynakların etkin bir şekilde yönetilmesinde en iyi uygulamaları hayata geçirmek.
+**What You'll Learn:**
+- Aspose.Email for Java'ı nasıl kurup kullanacağınızı.  
+- `EWSClient` kullanarak Exchange sunucusuna bağlanma.  
+- Performansı optimize etmek için sayfalama ile randevuları listeleme.  
+- **java pagination best practices** uygulama, **items per page java** dikkate alarak.  
 
-Şimdi, başlamadan önce gerekli olan ön koşulları ele alalım.
+Şimdi, başlamadan önce gerekli ön koşulları ele alalım.
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **Hangi kütüphane kullanılıyor?** Aspose.Email for Java.  
+- **Hangi ana teknik?** `listAppointmentsByPage` ile Java pagination best practices.  
+- **Sayfa başına kaç öğe ayarlayabilirim?** Herhangi bir tam sayı; tipik değerler 50–200 arasındadır, ancak öğreticide gösterim amacıyla 2 kullanılmıştır.  
+- **Lisans gerekiyor mu?** Test için ücretsiz deneme sürümü çalışır; kalıcı bir lisans değerlendirme sınırlamalarını kaldırır.  
+- **Bu JDK 16+ ile uyumlu mu?** Evet, kütüphane JDK 16 ve üzerini destekler.
 
-Bu eğitime başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+## Ön Koşullar
+
+Bu öğreticiye devam etmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 ### Gerekli Kütüphaneler ve Sürümler
-- Aspose.Email for Java sürüm 25.4 (veya üzeri)
-- Java Geliştirme Kiti (JDK) 16 veya üzeri
+- Aspose.Email for Java sürüm 25.4 (veya daha yeni)  
+- Java Development Kit (JDK) 16 veya üzeri  
 
-### Çevre Kurulum Gereksinimleri
-- IntelliJ IDEA veya Eclipse gibi bir Java IDE.
-- Bağımlılıkları yönetmek için sisteminize Maven yüklendi.
+### Ortam Kurulum Gereksinimleri
+- IntelliJ IDEA veya Eclipse gibi bir Java IDE'si.  
+- Bağımlılıkları yönetmek için sisteminizde Maven kurulu.  
 
-### Bilgi Önkoşulları
-- Temel Java programlama bilgisi ve Maven derleme aracına aşinalık.
-- Exchange Web Servisleri ile çalışma konusunda bir miktar deneyim sahibi olmak faydalı olacaktır ancak zorunlu değildir.
+### Bilgi Ön Koşulları
+- Java programlamaya temel bir anlayış ve Maven yapı aracına aşinalık.  
+- Exchange Web Services ile çalışma deneyimi faydalı ancak zorunlu değildir.  
 
-Ön koşulları tamamladıktan sonra, geliştirme ortamınızda Aspose.Email for Java'yı kuralım.
+Ön koşullar tamamlandı, şimdi geliştirme ortamınızda Aspose.Email for Java'ı kurmaya başlayalım.
 
-## Java için Aspose.Email Kurulumu
+## Aspose.Email for Java'ı Kurma
 
-Aspose.Email, e-posta işleme ve entegrasyon görevlerini basitleştirmek için tasarlanmış güçlü bir kütüphanedir. Maven kullanarak bunu projenize nasıl ekleyebileceğiniz aşağıda açıklanmıştır:
+Aspose.Email, e-posta işleme ve entegrasyon görevlerini basitleştirmek için tasarlanmış güçlü bir kütüphanedir. İşte Maven kullanarak projenize nasıl ekleyebileceğiniz:
 
 **Maven Bağımlılığı:**
 
@@ -60,26 +74,26 @@ Aspose.Email, e-posta işleme ve entegrasyon görevlerini basitleştirmek için 
 
 ### Lisans Edinme Adımları
 
-Aspose.Email ücretsiz deneme sürümü olarak sunuluyor ve bazı sınırlamalarla birlikte tüm özelliklerine erişim sağlıyor:
+Aspose.Email, bazı sınırlamalarla tam yeteneklerine erişim sağlayan ücretsiz deneme sürümü olarak mevcuttur:
 
-1. **Ücretsiz Deneme**: Aspose.Email'i hemen indirin ve kullanmaya başlayın.
-2. **Geçici Lisans**:Websitesindeki talimatları izleyerek 30 günlük geçici lisans alın.
-3. **Satın almak**: Sınırsız ve kısıtlamasız kullanım için abonelik satın almayı düşünebilirsiniz.
+1. **Ücretsiz Deneme**: Aspose.Email'i hemen indirin ve kullanmaya başlayın.  
+2. **Geçici Lisans**: Web sitelerindeki talimatları izleyerek 30 gün için geçici bir lisans edinin.  
+3. **Satın Alma**: Sınırsız kullanım ve kısıtlamasız erişim için bir abonelik satın almayı düşünün.  
 
 **Temel Başlatma:**
 
-Java projenizde Aspose.Email'i başlatmak ve kurmak için:
+Aspose.Email'i Java projenizde başlatmak ve kurmak için:
 
 ```java
-// Gerekli Aspose.Email paketlerini içe aktarın
+// Import necessary Aspose.Email packages
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 
 public class EmailSetup {
     public static void main(String[] args) {
-        // EWS istemcisini sunucu kimlik bilgileriyle başlatın
+        // Initialize the EWS client with server credentials
         IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
-        // Müşteriyi kullandıktan sonra her zaman atmayı unutmayın
+        // Always remember to dispose of the client after use
         if (client != null) {
             ((com.aspose.email.system.IDisposable)client).dispose();
         }
@@ -87,21 +101,21 @@ public class EmailSetup {
 }
 ```
 
-Aspose.Email kurulumu tamamlandıktan sonra Exchange sunucunuza bağlanmaya ve randevuları listelemeye hazırsınız.
+Aspose.Email kurulduğunda, Exchange sunucunuzdan randevuları bağlamak ve listelemek için hazırsınız.
 
 ## Uygulama Kılavuzu
 
-Bu bölüm, iki temel özelliği uygulamada size rehberlik edecektir: bir Exchange sunucusuna bağlanma ve sayfalama desteğiyle randevuları listeleme. Her özelliği açıklık sağlamak için ayrıntılı adımlara ayıracağız.
+Bu bölüm, iki ana özelliği adım adım anlatır: Exchange sunucusuna bağlanma ve sayfalama desteğiyle randevuları listeleme. Ayrıca çözümün ölçeklenebilir olmasını sağlamak için **java pagination best practices** ipuçlarını da ekleyeceğiz.
 
-### Exchange Server'a bağlanın
+### Exchange Sunucusuna Bağlanma
 
-#### Genel bakış
-Bir Exchange Web Hizmetleri (EWS) sunucusuna bağlanmak, sunucuda depolanan e-posta verileriyle programlı olarak etkileşim kurmanızı sağlar. Bu, e-posta yönetimi görevlerini otomatikleştirmesi gereken uygulamalar için önemlidir.
+#### Genel Bakış
+Exchange Web Services (EWS) sunucusuna bağlanmak, sunucuda depolanan e-posta verileriyle programlı olarak etkileşim kurmanızı sağlar. Bu, e-posta yönetim görevlerini otomatikleştirmesi gereken uygulamalar için kritiktir.
 
-**Adım Adım Uygulama:**
+#### Adım Adım Uygulama
 
 ##### Adım 1: Gerekli Paketleri İçe Aktarın
-Öncelikle gerekli Aspose.Email paketlerini içe aktardığınızdan emin olun:
+İlk olarak, gerekli Aspose.Email paketlerini içe aktardığınızdan emin olun:
 
 ```java
 import com.aspose.email.EWSClient;
@@ -109,15 +123,15 @@ import com.aspose.email.IEWSClient;
 ```
 
 ##### Adım 2: Bağlantıyı Kurun
-Bir örnek oluşturun `IEWSClient` Exchange sunucunuza kimlik bilgilerinizi kullanarak bağlanmak için:
+Kimlik bilgilerini kullanarak Exchange sunucunuza bağlanmak için bir `IEWSClient` örneği oluşturun:
 
 ```java
-// Gerçek alan adınız, kullanıcı adınız ve şifrenizle değiştirin
+// Replace with your actual domain, username, and password
 IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
 ```
 
-##### Adım 3: İstemciyi elden çıkarın
-Kullanımdan sonra kaynakları her zaman çağırarak serbest bırakın `dispose()` istemci nesnesinde:
+##### Adım 3: İstemciyi Serbest Bırakın
+Kullanım sonrası kaynakları serbest bırakmak için istemci nesnesinde `dispose()` metodunu çağırın:
 
 ```java
 if (client != null) {
@@ -125,19 +139,19 @@ if (client != null) {
 }
 ```
 
-**Parametreler ve Yapılandırmalar:**
-- **Değişim URL'si**Sunucu adresi.
-- **Kullanıcı Adı ve Şifre**: Kimlik doğrulama için gerekli bilgiler.
+**Parametreler ve Yapılandırmalar**
+- **Exchange URL** – Sunucu adresi.  
+- **Kullanıcı Adı & Şifre** – Kimlik doğrulama için gerekli bilgiler.  
 
-### Sayfalama Desteği ile Randevuları Listeleyin
+### Sayfalama Desteğiyle Randevuları Listeleme
 
-#### Genel bakış
-Büyük bir veri kümesinden randevuları etkili bir şekilde listelemek zor olabilir. Sayfalandırma, verileri yönetilebilir parçalara veya sayfalara bölerek kaynak kullanımını yönetmeye yardımcı olur.
+#### Genel Bakış
+Binlerce takvim öğesiyle çalışırken, tüm veriyi bir anda çekmek bellek ve ağ bant genişliğini zorlayabilir. Sayfalama, veriyi yönetilebilir parçalar halinde bölerek **java pagination best practices**'in temelini oluşturur.
 
-**Adım Adım Uygulama:**
+#### Adım Adım Uygulama
 
 ##### Adım 1: Gerekli Paketleri İçe Aktarın
-Gerekli tüm paketleri içe aktardığınızdan emin olun:
+Sayfalama ile ilgili sınıfların mevcut olduğundan emin olun:
 
 ```java
 import com.aspose.email.AppointmentPageInfo;
@@ -146,25 +160,25 @@ import com.aspose.email.system.collections.generic.List;
 ```
 
 ##### Adım 2: EWS İstemcisini Başlatın ve Sayfalama Parametrelerini Tanımlayın
-Önceki bölümdekine benzer şekilde Exchange sunucunuza bağlantı kurun:
+Exchange sunucunuza bağlantıyı kurun, ardından senaryonuza uygun **items per page java** değerini ayarlayın:
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
 try {
-    // Sayfa başına toplam randevu sayısını tanımlayın
+    // Define total number of appointments per page – this is the “items per page java” setting
     int itemsPerPage = 2;
     List<AppointmentPageInfo> pages = new List<>();
 ```
 
 ##### Adım 3: Sayfaları Alın ve İşleyin
-Tüm veriler alınana kadar randevuların her sayfasını almak için bir döngü kullanın:
+Son sayfaya ulaşana kadar her sayfayı almak için bir döngü kullanın:
 
 ```java
-// Randevuların ilk sayfasını alın
+// Get the first page of appointments
 AppointmentPageInfo pagedAppointmentCol = client.listAppointmentsByPage(itemsPerPage);
 pages.addItem(pagedAppointmentCol);
 
-// Sonraki sayfalarda dolaş
+// Loop through subsequent pages
 while (!pagedAppointmentCol.getLastPage()) {
     pagedAppointmentCol = client.listAppointmentsByPage(
         itemsPerPage, pagedAppointmentCol.getPageOffset() + 1
@@ -173,8 +187,8 @@ while (!pagedAppointmentCol.getLastPage()) {
 }
 ```
 
-##### Adım 4: İstemciyi elden çıkarın
-Kaynakları her zaman kullandıktan sonra serbest bırakın:
+##### Adım 4: İstemciyi Serbest Bırakın
+Temizliği garanti altına almak için `finally` bloğunda istemci kaynaklarını serbest bırakın:
 
 ```java
 } finally {
@@ -183,48 +197,64 @@ Kaynakları her zaman kullandıktan sonra serbest bırakın:
 }
 ```
 
-**Temel Yapılandırma Seçenekleri:**
-- **Sayfa Başına Öğeler**Verilerinizin boyutuna ve performans değerlendirmelerine göre ayarlayın.
+**Ana Yapılandırma Seçenekleri**
+- **Items per Page** – Veri boyutunuza ve performans hedeflerinize göre ayarlayın.  
+- **Page Offset** – Döngü tarafından otomatik yönetilir; genellikle manuel olarak ayarlamanıza gerek yoktur.
 
-### Sorun Giderme İpuçları
+## Sorun Giderme İpuçları
 
-- Doğru sunucu kimlik bilgilerinin sağlandığından emin olun.
-- Exchange sunucusuna ağ bağlantısını doğrulayın.
-- Uygulama çökmelerini önlemek için istisnaları zarif bir şekilde işleyin.
+- Exchange sunucu URL'si, kullanıcı adı ve şifrenin doğru olduğundan emin olun.  
+- Ağ bağlantısının (güvenlik duvarları, VPN'ler vb.) EWS uç noktasına trafiğe izin verdiğini doğrulayın.  
+- Çağrıları `try‑catch` blokları içinde sararak `IOException` veya `ServiceException` hatalarını nazikçe ele alın.  
 
 ## Pratik Uygulamalar
 
-Sayfalandırılmış randevu listelemeyi uygulamak çeşitli senaryolarda faydalı olabilir:
+Sayfalı randevu listesini uygulamak, birçok gerçek dünya senaryosunda faydalı olabilir:
 
-1. **Kurumsal E-posta Yönetimi**: Büyük hacimli toplantı programlarının yönetimini otomatikleştirin.
-2. **Müşteri Destek Sistemleri**:Destek bileti randevularını etkin bir şekilde yönetin ve takip edin.
-3. **Kaynak Rezervasyon Platformları**Rezervasyonları parçalar halinde yöneterek kaynak tahsisini optimize edin.
+1. **Kurumsal E-posta Yönetimi** – Toplu takvim temizlemeleri veya raporlama otomasyonu.  
+2. **Müşteri Destek Sistemleri** – UI'yı aşırı yüklemeden destek talebi randevularını izleyin.  
+3. **Kaynak Rezervasyon Platformları** – Oda veya ekipman kullanılabilirliğini sayfa sayfa gösterin.  
 
-## Performans Hususları
+## Performans Düşünceleri
 
-Aspose.Email'i Java ile kullanırken performansı artırmak için:
+Aspose.Email'i Java ile en verimli şekilde kullanmak için:
 
-- **Sayfalamayı Optimize Et**:Uygulamanızın ihtiyaçlarına göre sayfadaki öğe sayısını ayarlayarak hız ve bellek kullanımını dengeleyin.
-- **Bellek Yönetimi**: Kaynakları serbest bırakmak için istemci örneklerini derhal elden çıkarın.
-- **Bağlantı Havuzu**: Yükü azaltmak için mümkün olduğunca EWSClient bağlantılarını yeniden kullanın.
+- **Sayfalama Optimizasyonu** – Tur gecikmesi ve bellek kullanımını dengeleyen bir `itemsPerPage` değeri seçin.  
+- **Bellek Yönetimi** – `IEWSClient` örneklerini hızlı bir şekilde serbest bırakın.  
+- **Bağlantı Havuzu** – Mümkün olduğunda birden fazla işlem için tek bir istemciyi yeniden kullanın.  
 
-## Çözüm
+## Sonuç
 
-Bu eğitimde, Java için Aspose.Email kullanarak bir Exchange sunucusuna nasıl bağlanacağınızı ve sayfalama desteğiyle randevuları nasıl alacağınızı öğrendiniz. Bu yaklaşım, büyük veri kümelerini verimli bir şekilde yönetmek ve uygulamalarınızdaki kaynak kullanımını optimize etmek için önemlidir. 
+Bu öğreticide, Aspose.Email for Java ile bir Exchange sunucusuna bağlanırken ve sayfalama kullanarak randevuları alırken **java pagination best practices**'i nasıl uygulayacağınızı öğrendiniz. Bu yaklaşım, büyük veri setlerini verimli bir şekilde işlemek ve uygulamanızın yanıt verebilirliğini korumak için gereklidir.
 
 ### Sonraki Adımlar
-- Aspose.Email kütüphanesinin diğer özelliklerini keşfedin.
-- Performansı ihtiyaçlarınıza göre ayarlamak için farklı yapılandırmaları deneyin.
+- E-posta gönderme, klasör senkronizasyonu ve MIME ayrıştırma gibi diğer Aspose.Email özelliklerini keşfedin.  
+- Ortamınız için en uygun değeri bulmak amacıyla farklı `itemsPerPage` değerleriyle denemeler yapın.  
 
-Yeni becerilerinizi eyleme geçirmeye hazır mısınız? Bu çözümleri bugün Java projelerinizde uygulamaya çalışın!
+Yeni becerilerinizi uygulamaya koymaya hazır mısınız? Bu çözümleri bugün Java projelerinizde denemeye başlayın!
 
 ## SSS Bölümü
 
-**S1: Aspose.Email for Java'yı herhangi bir Exchange sunucu sürümüyle kullanabilir miyim?**
-A1: Evet, Aspose.Email çok çeşitli Exchange sunucu sürümlerini destekler. Doğru sunucu URL'sini ve kimlik bilgilerini kullandığınızdan emin olun.
+**S: Aspose.Email for Java'ı herhangi bir Exchange sunucu sürümüyle kullanabilir miyim?**  
+C: Evet, Aspose.Email geniş bir Exchange sürüm yelpazesini destekler. Sunucu URL'si ve kimlik bilgilerinin doğru olduğundan emin olun.
 
-**S2: Uygulamamda sayfalandırılmış randevu alma özelliğini kullanmanın faydaları nelerdir?**
-A2: Sayfalandırılmış veri alma, bellek tüketimini azaltarak ve veri alma işlemleri sırasında performansı iyileştirerek büyük veri kümelerini daha verimli bir şekilde yönetmeye yardımcı olur.
+**S: Sayfalı randevu alımının faydaları nelerdir?**  
+C: Sayfalama bellek tüketimini azaltır, yanıt sürelerini iyileştirir ve verileri UI ızgaralarında veya raporlarda görüntülemeyi kolaylaştırır.
+
+**S: Doğru “items per page java” değerini nasıl belirlerim?**  
+C: Tipik iş yükleri için sayfa başına 50–200 öğe ile başlayın; ağ gecikmesi düşük ve bellek fazlaysa sayıyı artırın.
+
+**S: Üretim kullanımı için lisans gerekli mi?**  
+C: Kalıcı bir lisans değerlendirme sınırlamalarını kaldırır ve ticari dağıtımlar için gereklidir.
+
+**S: Aspose.Email zaman dilimi dönüşümlerini otomatik olarak yönetiyor mu?**  
+C: Evet, randevu nesneleri başlangıç/bitiş zamanlarını zaman dilimi bilgisiyle sunar; ihtiyacınıza göre dönüştürebilirsiniz.
+
+---
+
+**Last Updated:** 2025-12-22  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
