@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Jak wyodrębnić załączniki e‑mail z plików EML przy użyciu Aspose.Email dla
-  Javy: Kompletny przewodnik'
+  Javy - Kompletny przewodnik'
 url: /pl/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -17,45 +17,45 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Jak wyodrębnić załączniki e‑mail z plików EML przy użyciu Aspose.Email for Java: Kompletny przewodnik
+# Jak wyodrębnić e-mail z plików EML przy użyciu Aspose.Email for Java: Kompletny przewodnik
 
-## Introduction
+## Wstęp
 
-Wyodrębnianie załączników e‑mail z plików EML może być uciążliwe, ale dzięki **Aspose.Email for Java** proces staje się prosty. W tym samouczku dowiesz się, jak **wyodrębnić załączniki e‑mail**, parsować pliki EML i zapisywać te załączniki na dysk — wszystko przy użyciu czystego, gotowego do produkcji kodu Java.
+Wyodrębnianie e-mail z plikówEML może być honorowe, ale dzięki **Aspose.Email for Java** proces staje się prosty. W tym samouczku dowiesz się, jak **wyodrębnić zbrodnii e-mail**, parsować pliki EML i zapisywać te zbrodnii na dyskach — wszystko przy użyciu czystego, gotowego do produkcji kodu Java.
 
 W tym przewodniku omówimy:
-- Ładowanie pliku EML przy użyciu Aspose.Email for Java  
-- Inicjalizacja i iteracja po kolekcji załączników w celu **pobrania nazw załączników**  
-- Zapisywanie załączników e‑mail do folderu na Twoim komputerze  
+- Ładowanie pliku EML przy użyciu Aspose.Email dla Java
+- Inicjalizacja i iteracja po kolekcji oskarżonych w celu **pobrania nazw oskarżonych**
+- Zapisywanie adresów e-mail do folderu na komputerze
 
-Ten samouczek jest idealny dla programistów, którzy znają podstawy Javy i chcą praktycznego **Aspose.Email tutorial** do obsługi danych e‑mail w rzeczywistych scenariuszach.
+Ten samouczek jest idealnym rozwiązaniem dla programistów, który tworzy podstawy Javy i praktycznego **Aspose.Email tutorial** do obsługi danych e-mail w rzeczywistych scenariuszach.
 
-## Quick Answers
-- **Co oznacza „wyodrębnić załączniki e‑mail”?** Oznacza to odczytanie pliku EML i zapisanie każdego załączonego pliku w lokalnym magazynie.  
-- **Jakiej biblioteki powinienem używać?** Aspose.Email for Java (wersja 25.4+).  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w celach oceny; pełna licencja usuwa wszystkie ograniczenia.  
-- **Czy mogę parsować pliki EML z udziału sieciowego?** Tak — wystarczy podać pełną ścieżkę lub URL do `MailMessage.load`.  
-- **Czy jest to bezpieczne dla dużych załączników?** Przetwarzaj je w pętli i zwalniaj zasoby przy użyciu try‑with‑resources, aby uniknąć problemów z pamięcią.
+## Szybkie odpowiedzi
+- **Co oznacza „wyodrębnić znaki e-mail”?** przesłanie do odczytania plikuEML i zapisanie każdego załączonego pliku w podpisie magazynu.
+- **Jakie biblioteki powinnyem nosić?** Aspose.Email dla Java (wersja25.4+).
+- **Czy istnieje licencjat?** Dostępna wersja próbna działa w ramach egzaminu; pełne licencjat wszystkie ograniczenia.
+- **Czy mogę parsować pliki EML z udziału sieciowego?** Tak — wystarczy uzupełnić lub URL do `MailMessage.load`.
+- **Czy jest to bezpieczne dla dużych zagrożonych?** Przetwarzaj je w sumie i wyłączając zawartość przy użyciu try-with-resources, aby zapobiec problemom z pamięcią.
 
-## Prerequisites
+## Warunki wstępne
 
-### Required Libraries, Versions, and Dependencies
-- **Aspose.Email for Java**: Wersja 25.4 lub wyższa.  
-- **Java Development Kit (JDK)**: JDK 16 lub nowszy jest zalecany.  
-- **Maven**: Zainstaluj Maven, aby łatwo zarządzać zależnościami.
+### Wymagane biblioteki, wersje i zależności
+- **Aspose.Email dla Java**: Wersja 25.4 lub wyższa.
+- **Java Development Kit (JDK)**: JDK16 lub teraz jest zalecany.
+- **Maven**: Zainstalowano Maven, aby łatwo dopasować zależnościami.
 
-### Environment Setup Requirements
-Upewnij się, że środowisko programistyczne zawiera:
-- Skonfigurowany JDK  
-- IDE, takie jak IntelliJ IDEA, Eclipse lub VS Code z obsługą Java  
+### Wymagania dotyczące konfiguracji środowiska
+działanie się, że środowisko programistyczne zawiera:
+- Skonfigurowany JDK
+- IDE, takie jak IntelliJ IDEA, Eclipse lub VSCode z obsługą Java
 
-### Knowledge Prerequisites
-- Podstawowe umiejętności programowania w Javie  
-- Znajomość formatów e‑mail (MIME, EML)  
+### Wymagania wstępne dotyczące wiedzy
+- Podstawowe umiejętności programowania w Javie
+- rozwiązania formatów e-mail (MIME, EML)
 
-## Setting Up Aspose.Email for Java
+## Konfigurowanie Aspose.Email dla Java
 
-Aby zintegrować Aspose.Email for Java w swoim projekcie, dodaj następującą zależność do pliku `pom.xml`, jeśli używasz Maven:
+Aby włączyć Aspose.Email dla Java w swoim projekcie, dodaj następującą zawartość do `pom.xml`, w przypadku wystąpienia Maven:
 
 ```xml
 <dependency>
@@ -66,15 +66,15 @@ Aby zintegrować Aspose.Email for Java w swoim projekcie, dodaj następującą z
 </dependency>
 ```
 
-### License Acquisition
-Rozpocznij od **darmowej wersji próbnej**, pobierając bibliotekę i ubiegając się o tymczasową licencję od Aspose:
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
+### Nabycie licencji
+Rozpocznij od **darmowa wersja próbnej**, pobierając bibliotekę i walcząc się o tymczasową wydajność od Aspose:
+- [Bezpłatna wersja próbna] (https://releases.aspose.com/email/java/)
+- [Licencja tymczasowa] (https://purchase.aspose.com/temporary-license/)
 
-Do użytku produkcyjnego rozważ zakup pełnej licencji, aby usunąć wszelkie ograniczenia.
+Do użytku produkcyjnego rozwiązanie rozszerzone, aby usunąć usunięcie.
 
-### Basic Initialization and Setup
-Po dodaniu zależności zainicjalizuj Aspose.Email przy użyciu pliku licencyjnego:
+### Podstawowa inicjalizacja i konfiguracja
+Podanie zależności zainicjalizuj Aspose.Email przy użyciu pliku licencyjnego:
 
 ```java
 import com.aspose.email.License;
@@ -83,16 +83,16 @@ License license = new License();
 license.setLicense("path_to_your_license_file");
 ```
 
-## Implementation Guide
+## Przewodnik wdrażania
 
-Przejdźmy przez każdą funkcję krok po kroku.
+Przejdź przez każdy dostępny krok po kroku.
 
-### Load an EML File
+### Załaduj plik EML
 
-#### Overview
-Dowiedz się, jak **parsować pliki EML** i załadować je do obiektu `MailMessage` przy użyciu Aspose.Email for Java.
+#### Przegląd
+Dowiedz się, jak **parsować pliki EML** i za darmo je do obiektu `MailMessage` przy użyciu Aspose.Email for Java.
 
-#### Code Snippet
+#### Fragment kodu
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -102,16 +102,16 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Explanation**:  
-- `dataDir` wskazuje na folder zawierający Twój plik EML.  
-- `EmlLoadOptions` pozwala precyzyjnie dostosować sposób odczytu wiadomości (np. obsługa osadzonych obrazów).
+**Wyjaśnienie**:
+- `dataDir` wskazuje na folder Twojego plikuEML.
+- `EmlLoadOptions` pozwala na dostosowanie sposobu odczytu wiadomości (np. obsługi osadzonych obrazów).
 
-### Initialize AttachmentCollection
+### Zainicjuj kolekcję załączników
 
-#### Overview
-Po załadowaniu pliku EML możesz pobrać jego załączniki za pomocą `AttachmentCollection`.
+#### Przegląd
+Po jego wydaniu EML może zostać zaatakowany przez `AttachmentCollection`.
 
-#### Code Snippet
+#### Fragment kodu
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -119,15 +119,15 @@ import com.aspose.email.AttachmentCollection;
 AttachmentCollection attachments = msg.getAttachments();
 ```
 
-**Explanation**:  
-- `getAttachments()` zwraca kolekcję, która zawiera każdy plik załączony do e‑maila.
+**Wyjaśnienie**:
+- `getAttachments()`, które zawiera każdy plik zatwierdzony do e-maila.
 
-### Iterate Over Attachments and Display Names
+### Iteruj po załącznikach i wyświetlanych nazwach
 
-#### Overview
-Iteracja po kolekcji pozwala **pobrać nazwy załączników**, co jest przydatne przy logowaniu lub tworzeniu list w interfejsie użytkownika.
+#### Przegląd
+Iteracja po zbiorze pozwala **pobrać nazwę nazwaną**, co jest podstawą do logowania lub tworzenia listy w interfejsie użytkownika.
 
-#### Code Snippet
+#### Fragment kodu
 
 ```java
 import com.aspose.email.Attachment;
@@ -138,16 +138,16 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- Pętla przechodzi przez każdy załącznik według indeksu.  
-- `getName()` pobiera oryginalną nazwę pliku załącznika.
+**Wyjaśnienie**:
+- Pętla przejścia przez każdego według indeksu.
+- `getName()` pobieranie pliku spowodowanego.
 
-### Save Attachments to Disk
+### Zapisz załączniki na dysku
 
-#### Overview
-Na koniec **zapiszesz załączniki EML** do folderu na swoim komputerze — idealne do archiwizacji lub dalszego przetwarzania.
+#### Przegląd
+Na koniec **zapiszesz śi EML** do folderu na swoim komputerze — idealnego do archiwizacji lub przesyłania danych.
 
-#### Code Snippet
+#### Fragment kodu
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -158,54 +158,60 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- `outputDir` to miejsce, w którym chcesz zapisać pliki.  
-- `save()` tworzy nowy plik dla każdego załącznika; prefiks `attachment_` zapobiega kolizjom nazw.
+**Wyjaśnienie**:
+- `outputDir` do miejsca, w którym znajdują się Twoje pliki cookie.
+- `save()` tworzy nowy plik dla każdego zamordowanego; przedrostki `attachment_` usuwane z nazw.
 
-## Practical Applications
+## Praktyczne zastosowania
 
-1. **Data Archiving** – Archiwizacja danych – Zachowanie załączników e‑mail w celu zgodności lub prowadzenia dokumentacji.  
-2. **Email Parsing Services** – Usługi parsowania e‑mail – Wyodrębnianie faktur, CV lub logów z przychodzących wiadomości w systemie wsparcia.  
-3. **Backup Solutions** – Rozwiązania backupowe – Automatyzacja tworzenia kopii zapasowych ważnych dokumentów otrzymywanych e‑mailem.
+1. **Archiwizacja danych** – Archiwizacja danych – Zachowanie zabitych e-mail w celu zgodności lub prowadzenia dokumentacji.
+2. **Usługi analizowania poczty e-mail** – Usługi parsowania e-mail – Wyodrębnianie faktur, CV lub logów z odbierających wiadomości w systemie wsparcia.
+3. **Backup Solutions** – Rozwiązania Backupowe – Automatyzacja tworzenia kopii zapasowych dokumentów otrzymanych e-mailem.
 
-## Performance Considerations
+## Względy wydajności
 
-### Optimizing Performance
-- Używaj buforowanych strumieni przy obsłudze bardzo dużych załączników.  
-- Przetwarzaj załączniki w partiach, jeśli spodziewasz się plików o rozmiarze gigabajtów.
+### Optymalizacja wydajności
+- Używanie buforowanych strumieni przy bardzo dużych uszkodzeniach.
+- Przetwarzaj ofiari w partach, jeśli spodziewasz się plików o przestępstwo gigabajtów.
 
-### Resource Usage Guidelines
-- Monitoruj zużycie sterty; duże załączniki mogą szybko zużywać pamięć.  
-- Preferuj try‑with‑resources przy wszelkich operacjach I/O, które dodajesz poza wywołaniami Aspose.
+### Wytyczne dotyczące wykorzystania zasobów
+- Monitoruj uszkodzenie sterty; duże zapalenie może szybkoć zużywać pamięć.
+- Preferuj try-with-resources przy wszelkich operacjach I/O, które powodują wywołanie poza wywołaniami Aspose.
 
-### Best Practices for Java Memory Management
-- Zamykaj strumienie niezwłocznie.  
-- Rozważ zwiększenie sterty JVM (`-Xmx`) przy dużych obciążeniach.
+### Najlepsze praktyki dotyczące zarządzania pamięcią Java
+- Zamykaj strumienie gry.
+- Rozważenie sterty JVM (`-Xmx`) przy dużych rozmiarach.
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-**Q: Jak obsłużyć zaszyfrowane pliki EML?**  
-A: Użyj `LoadOptions`, aby podać dane uwierzytelniające do deszyfrowania, jeśli usługa e‑mail ją obsługuje.
+**Q: Jak obsłużyć zaszyfrowane pliki EML?**
+A: użycie `LoadOptions`, aby potwierdzić dane uwierzytelniające do deszyfrowania, usługa e-mail ją obsługi.
 
-**Q: Czy Aspose.Email for Java może parsować e‑maile HTML?**  
-A: Tak — treści HTML są dostępne poprzez `msg.getHtmlBody()` i mogą być przetwarzane jak każdy inny ciąg znaków.
+**P: Czy Aspose.Email dla Java może parsować e-maile HTML?**
+A: Tak — treść HTML jest dostępna poprzez `msg.getHtmlBody()` i może być funkcjonalna jak każdy inny ciąg znaków.
 
-**Q: Jakie są typowe problemy przy zapisywaniu załączników?**  
-A: Brak wystarczającej przestrzeni dyskowej lub brak uprawnień do zapisu to najczęstsze przyczyny. Zweryfikuj, czy docelowy folder istnieje i jest zapisywalny.
+**P: Jakie są typowe problemy przy zapisywaniu zabitych?**
+A: Brak dostępu przestrzeni dyskowej lub brak uprawnień do zapisu do najczęstszego wystąpienia. Zweryfikuj, czy folder istnieje i jest zapisany.
 
-**Q: Czy można ładować pliki EML z lokalizacji sieciowej?**  
-A: Absolutnie — wystarczy przekazać pełną ścieżkę UNC lub URL do `MailMessage.load`.
+**P: Czy można używać plików EML z lokalizacji sieciowej?**
+A: Absolutnie — wystarczy uzupełnić UNC lub URL do `MailMessage.load`.
 
-**Q: Jak uzyskać licencję do użytku produkcyjnego?**  
-A: Odwiedź [Aspose's Purchase Page](https://purchase.aspose.com/buy), aby nabyć pełną licencję.
+**Q: Jak wynika z użytku produkcyjnego?**
+A: Odwiedź [stronę zakupów Aspose](https://purchase.aspose.com/buy), aby wypełnić pełne.
 
-## Resources
-- **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+## Zasoby
+- **Dokumentacja**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
+- **Pobierz**: [Wersje Aspose.Email](https://releases.aspose.com/email/java/)
+- **Zakup**: [Kup Aspose.Email](https://purchase.aspose.com/buy)
+- **Bezpłatna wersja próbna**: [Rozpocznij od bezpłatnej wersji próbnej](https://releases.aspose.com/email/java/)
+- **Licencja tymczasowa**: [Uzyskaj licencję tymczasową](https://purchase.aspose.com/temporary-license/)
+- **Wsparcie**: [Forum Aspose Email](https://forum.aspose.com/c/email/10)
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-17  
+**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -214,9 +220,3 @@ A: Odwiedź [Aspose's Purchase Page](https://purchase.aspose.com/buy), aby naby�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-17  
-**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose

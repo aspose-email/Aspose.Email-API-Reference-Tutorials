@@ -29,8 +29,6 @@ By the end of this guide you’ll be able to:
 * Detect which attachments are inline and write them to disk.  
 * Apply performance best practices for bulk processing.
 
----
-
 ## إجابات سريعة
 - **What does “inline attachment” mean?** An attachment that is embedded in the email body (e.g., images displayed within the message).  
 - **Which library handles MSG files?** Aspose.Email for Java.  

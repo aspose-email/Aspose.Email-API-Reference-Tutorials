@@ -128,6 +128,12 @@ String description = msg.getAttachments().get_Item(0).getHeaders().get_Item("Con
 
 探索这些资源，深入了解并在项目中充分发挥 Aspose.Email for Java 的潜力。祝编码愉快！
 
+---
+
+**最后更新：** 2025-12-17  
+**测试环境：** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**作者：** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -135,11 +141,3 @@ String description = msg.getAttachments().get_Item(0).getHeaders().get_Item("Con
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-17  
-**测试环境：** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**作者：** Aspose  
-
----

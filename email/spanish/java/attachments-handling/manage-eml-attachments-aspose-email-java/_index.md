@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Cómo extraer los archivos adjuntos de correos electrónicos de archivos EML
-  usando Aspose.Email para Java: una guía completa'
+  usando Aspose.Email para Java - una guía completa'
 url: /es/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -207,6 +207,12 @@ R: Visite la [Página de compra de Aspose](https://purchase.aspose.com/buy) para
 - **Licencia temporal**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Soporte**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Última actualización:** 2025-12-17  
+**Probado con:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +220,3 @@ R: Visite la [Página de compra de Aspose](https://purchase.aspose.com/buy) para
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2025-12-17  
-**Probado con:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose

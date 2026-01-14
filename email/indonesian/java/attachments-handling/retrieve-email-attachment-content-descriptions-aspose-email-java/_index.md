@@ -130,6 +130,12 @@ J: Kunjungi forum Aspose, konsultasikan dokumentasi online, atau hubungi tim duk
 
 Jelajahi sumber daya ini untuk memperdalam pemahaman Anda dan memanfaatkan potensi penuh Aspose.Email untuk Java dalam proyek Anda. Selamat coding!
 
+---
+
+**Terakhir Diperbarui:** 2025-12-17  
+**Diuji Dengan:** Aspose.Email 25.4 untuk Java (klasifikasi JDK 16)  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -137,11 +143,3 @@ Jelajahi sumber daya ini untuk memperdalam pemahaman Anda dan memanfaatkan poten
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-17  
-**Diuji Dengan:** Aspose.Email 25.4 untuk Java (klasifikasi JDK 16)  
-**Penulis:** Aspose  
-
----

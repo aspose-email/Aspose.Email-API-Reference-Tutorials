@@ -30,8 +30,6 @@ weight: 1
 * निर्धारित करें कि कौन से अटैचमेंट्स इनलाइन हैं और उन्हें डिस्क पर लिखें।  
 * बड़े पैमाने पर प्रोसेसिंग के लिए प्रदर्शन सर्वोत्तम प्रथाओं को लागू करें।
 
----
-
 ## त्वरित उत्तर
 
 - **What does “inline attachment” mean?** ईमेल बॉडी में एम्बेडेड अटैचमेंट (जैसे, संदेश के भीतर प्रदर्शित इमेज़)।  
@@ -199,19 +197,19 @@ When dealing with hundreds or thousands of MSG files, keep these tips in mind:
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**Q: What is the minimum Aspose.Email version required?**  
-A: ट्यूटोरियल संस्करण 25.4 का उपयोग करता है, लेकिन कोई भी 24.x+ रिलीज़ जो JDK 16 को सपोर्ट करती है, काम करेगी।
+**Q: Aspose.Email の最小バージョンはどれくらい必要ですか?**
+A: 25.4 億円、25.4 億円、 24.x+ バージョンの JDK16 バージョン、 काम करेगी।
 
-**Q: Can I extract inline attachments from encrypted MSG files?**  
-A: हाँ, बशर्ते आप `MapiMessage` लोड करते समय सही डिक्रिप्शन पासवर्ड प्रदान करें।
+**Q: 暗号化された MSG ファイルからインライン添付ファイルを抽出できますか?**
+A: メッセージ `MapiMessage` メッセージ メッセージडिक्रिप्शन पासवर्ड प्रदान करें।
 
-**Q: How do I differentiate between inline images and regular file attachments?**  
-A: `IsAttachmentInline` हेल्पर का उपयोग करें; यह MAPI `ObjInfo` फ़्लैग को चेक करता है जो अटैचमेंट को इनलाइन के रूप में चिह्नित करता है।
+**Q: インライン画像と通常の添付ファイルをどのように区別すればよいですか?**
+A: `IsAttachmentInline` を返します。 MAPI `ObjInfo` の名前を取得します。名前: 名前: 名前: 名前: 名前: 名前: 名前: 名前:
 
-**Q: Is there a way to preserve the original file name of the inline attachment?**  
-A: नमूना यूनिकनेस के लिए UUID जनरेट करता है, लेकिन आप `attachment.getLongFileName()` प्रॉपर्टी पढ़कर `SaveAttachment` कॉल करते समय इसका उपयोग कर सकते हैं।
+**Q: インライン添付ファイルの元のファイル名を保存する方法はありますか?**
+A: UUID または UUID を使用してください。 `attachment.getLongFileName()` と`SaveAttachment` を実行します。 उपयोग कर सकते हैं।
 
-**Q: Does this approach work on Linux/macOS as well as Windows?**  
+**Q: このアプローチは Windows だけでなく Linux/macOS でも機能しますか?**
 A: बिल्कुल—Aspose.Email प्लेटफ़ॉर्म‑इंडिपेंडेंट है जब तक JDK इंस्टॉल है।
 
 ## संसाधन

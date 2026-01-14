@@ -30,8 +30,6 @@ Pada akhir panduan ini Anda akan dapat:
 * Mendeteksi lampiran mana yang inline dan menuliskannya ke disk.  
 * Menerapkan praktik terbaik kinerja untuk pemrosesan massal.
 
----
-
 ## Jawaban Cepat
 - **Apa arti “lampiran inline”?** Lampiran yang disematkan dalam tubuh email (misalnya, gambar yang ditampilkan di dalam pesan).  
 - **Pustaka mana yang menangani file MSG?** Aspose.Email untuk Java.  

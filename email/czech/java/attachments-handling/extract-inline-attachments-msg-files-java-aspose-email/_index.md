@@ -30,8 +30,6 @@ Na konci tohoto průvodce budete schopni:
 * Detekovat, které přílohy jsou vložené, a zapsat je na disk.  
 * Použít osvědčené postupy pro výkon při hromadném zpracování.
 
----
-
 ## Rychlé odpovědi
 - **Co znamená „vložená příloha“?** Příloha, která je zabudována v těle e‑mailu (např. obrázky zobrazované přímo ve zprávě).  
 - **Která knihovna zpracovává MSG soubory?** Aspose.Email pro Java.  

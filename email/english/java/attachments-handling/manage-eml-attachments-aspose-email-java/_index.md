@@ -1,5 +1,5 @@
 ---
-title: "How to Extract Email Attachments from EML Files Using Aspose.Email for Java: A Complete Guide"
+title: "How to Extract Email Attachments from EML Files Using Aspose.Email for Java - A Complete Guide"
 description: "Learn how to extract email attachments, parse EML files, and save EML attachments to disk with Aspose.Email for Java."
 date: "2025-12-17"
 weight: 1
@@ -205,6 +205,12 @@ A: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire a 
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-17  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -212,9 +218,3 @@ A: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire a 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-17  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

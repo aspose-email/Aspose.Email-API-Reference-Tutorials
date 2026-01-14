@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Cách Trích Xuất Tệp Đính Kèm Email Từ Các Tệp EML Sử Dụng Aspose.Email cho
-  Java: Hướng Dẫn Toàn Diện'
+  Java - Hướng Dẫn Toàn Diện'
 url: /vi/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -207,6 +207,12 @@ for (int index = 0; index < attachments.size(); index++) {
 - **Temporary License**: [Nhận Giấy Phép Tạm Thời](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Diễn Đàn Aspose Email](https://forum.aspose.com/c/email/10)
 
+---
+
+**Cập Nhật Cuối Cùng:** 2025-12-17  
+**Đã Kiểm Tra Với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Tác Giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +220,3 @@ for (int index = 0; index < attachments.size(); index++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập Nhật Cuối Cùng:** 2025-12-17  
-**Đã Kiểm Tra Với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Tác Giả:** Aspose

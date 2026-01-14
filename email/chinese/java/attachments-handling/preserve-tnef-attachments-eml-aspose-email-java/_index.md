@@ -5,7 +5,7 @@ keywords:
 - preserve tnef attachments
 - Aspose.Email for Java
 - handle TNEF in EML files
-title: 使用 Aspose.Email for Java 在 EML 文件中保留 TNEF 附件：全面指南
+title: 使用 Aspose.Email for Java 在 EML 文件中保留 TNEF 附件 - 全面指南
 url: /zh/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
 ---
@@ -17,7 +17,7 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # 如何在使用 Aspose.Email for Java 时保留 EML 文件中的 TNEF 附件
 
-## Introduction
+## 引言
 
 在使用 Java 处理 EML 文件时，您是否遇到处理 TNEF（Transport Neutral Encapsulation Format）附件的难题？**如果您需要保留 TNEF 附件**，本指南将向您展示如何使用 Aspose.Email for Java 完整保留这些文件。TNEF 通常由 Microsoft Outlook 使用，在邮件处理过程中保留这些附件可能比较复杂。借助 Aspose.Email，任务变得简单且可靠。
 
@@ -31,32 +31,33 @@ weight: 1
 
 准备好深入学习了吗？让我们先准备开发环境。
 
-## Quick Answers
+## 快速解答
 - **“保留 TNEF 附件”是什么意思？** 加载 EML 时保持原始 TNEF 编码文件不被更改。  
 - **哪个库实现此功能？** Aspose.Email for Java（版本 25.4 及以上）。  
 - **需要 Maven 吗？** 需要——教程中包含了 Maven aspose email java 依赖示例。  
 - **是否需要许可证？** 免费试用可用于评估；生产环境需要正式许可证。  
 - **可以处理大型邮箱吗？** 完全可以，只需适当的内存管理和 `MailMessage` 释放模式。
 
-## Prerequisites
+## 前提条件
 
 在开始之前，请确保具备以下条件：
 
-### Required Libraries and Dependencies
+### 必需的库和依赖项
 - **Aspose.Email for Java**：建议使用 25.4 或更高版本，以获得最佳性能。  
 - **Maven**：我们将使用 Maven aspose email java 依赖来获取库。
 
-### Environment Setup Requirements
+### 环境设置要求
 - 兼容的 IDE（例如 IntelliJ IDEA、Eclipse），用于运行 Java 应用程序。  
 - 已在机器上安装 JDK 16 或更高版本。
 
-### Knowledge Prerequisites
+### 知识要求
+
 - 基本的 Java 编程知识。  
 - 熟悉在软件开发中处理邮件文件和附件。
 
-## Setting Up Aspose.Email for Java
+## 设置 Aspose.Email for Java
 
-### Aspose Email Java Tutorial: Installation via Maven
+### Aspose Email Java 教程：通过 Maven 安装
 
 将以下依赖添加到您的 `pom.xml` 文件中：
 
@@ -69,7 +70,7 @@ weight: 1
 </dependency>
 ```
 
-### License Acquisition Steps
+### 许可证获取步骤
 
 - **Free Trial** – 使用试用版探索功能。  
 - **Temporary License** – 获取临时许可证以进行更长时间的测试。  
@@ -82,17 +83,17 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Implementation Guide
+## 实施指南
 
-### Loading EML with PreserveTnefAttachments Feature
+### 使用 PreserveTnefAttachments 功能加载 EML 文件
 
-#### Overview
+#### 概述
 
 `PreserveTnefAttachments` 标志指示 Aspose.Email 完全保留源 EML 中的原始 TNEF 文件，防止任何自动转换。
 
-#### Step‑by‑Step Implementation
+#### 逐步实施
 
-**1. Configure Load Options**
+**1. 配置加载选项**
 
 创建 `EmlLoadOptions` 实例并启用 TNEF 保留：
 
@@ -101,7 +102,7 @@ EmlLoadOptions options = new EmlLoadOptions();
 options.setPreserveTnefAttachments(true);
 ```
 
-**2. Load the EML File**
+**2. 加载 EML 文件**
 
 加载消息时传入该选项：
 
@@ -109,7 +110,7 @@ options.setPreserveTnefAttachments(true);
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 ```
 
-**3. Access Attachments**
+**3. 访问附件**
 
 遍历附件以验证它们仍然是 TNEF 文件：
 
@@ -119,35 +120,39 @@ for (Attachment attachment : eml.getAttachments()) {
 }
 ```
 
-#### Troubleshooting Tips
+#### 故障排除提示
 
-- **Missing Attachments** – 再次检查文件路径 (`dataDir`) 并确保文件可读。  
-- **Unexpected Conversion** – 确认在加载消息之前已调用 `setPreserveTnefAttachments(true)`。
+- **附件丢失** – 再次检查文件路径 (`dataDir`) 并确保文件可读。  
+- **意外转换** – 确认在加载消息之前已调用 `setPreserveTnefAttachments(true)`。
 
-## Practical Applications
+## 实际应用
 
 保留 TNEF 附件在许多真实场景中非常有价值：
 
-1. **Email Archiving Systems** – 保持原始附件格式以满足法律合规要求。  
-2. **Legal & Compliance Software** – 保留原生 TNEF 文件以符合文档保留策略。  
-3. **Customer Support Tools** – 转发客户邮件时不更改原始附件。
+1. **邮件归档系统** – 保持原始附件格式以满足法律合规要求。  
+2. **法律与合规软件** – 保留原生 TNEF 文件以符合文档保留策略。  
+3. **客户支持工具** – 转发客户邮件时不更改原始附件。
 
-## Performance Considerations
+## 性能注意事项
 
 在使用 Aspose.Email 处理大批量邮件时：
 
-- **Dispose Objects** – 在处理完每条消息后调用 `eml.dispose()`（或让垃圾回收器回收）。  
-- **Memory Settings** – 根据处理的邮件量调整 JVM 堆大小 (`-Xmx`)。
+- **释放对象** – 在处理完每条消息后调用 `eml.dispose()`（或让垃圾回收器回收）。  
+- **内存设置** – 根据处理的邮件量调整 JVM 堆大小 (`-Xmx`)。
 
-## Common Issues and Solutions
+## 常见问题及解决方案
 
-| Issue | Likely Cause | Solution |
+| 问题 | 可能原因 | 解决方案 |
+
 |-------|--------------|----------|
-| Attachments appear as `.dat` files | `PreserveTnefAttachments` not enabled | Ensure `options.setPreserveTnefAttachments(true)` is set before loading. |
-| `FileNotFoundException` | Incorrect `dataDir` path | Verify the directory and file name; use absolute paths for testing. |
-| High memory usage on large mailboxes | Not disposing `MailMessage` objects | Call `eml.dispose()` or set the reference to `null` after processing. |
 
-## Frequently Asked Questions
+| 附件显示为 `.dat` 文件 | `PreserveTnefAttachments` 未启用 | 请确保在加载前设置 `options.setPreserveTnefAttachments(true)`。 |
+
+| `FileNotFoundException` | `dataDir` 路径不正确 | 请检查目录和文件名；测试时请使用绝对路径。 |
+
+| 大型邮箱内存占用过高 | 未释放 `MailMessage` 对象 | 处理后调用 `eml.dispose()` 或将引用设置为 `null`。 |
+
+## 常见问题解答
 
 **Q1: 什么是 TNEF，为什么要保留其格式？**  
 A: TNEF（Transport Neutral Encapsulation Format）是 Outlook 用来封装富内容附件的专有格式。保留它可以确保原始数据不被更改，这对合规性和准确渲染至关重要。

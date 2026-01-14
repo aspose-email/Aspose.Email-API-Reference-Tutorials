@@ -6,7 +6,7 @@ keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: 'Как извлечь вложения из файлов EML с помощью Aspose.Email для Java: Полное
+title: 'Как извлечь вложения из файлов EML с помощью Aspose.Email для Java - Полное
   руководство'
 url: /ru/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
@@ -207,6 +207,12 @@ for (int index = 0; index < attachments.size(); index++) {
 - **Временная лицензия**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Поддержка**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Последнее обновление:** 2025-12-17  
+**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +220,3 @@ for (int index = 0; index < attachments.size(); index++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2025-12-17  
-**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Автор:** Aspose

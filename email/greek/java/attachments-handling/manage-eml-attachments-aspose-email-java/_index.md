@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Πώς να εξάγετε συνημμένα email από αρχεία EML χρησιμοποιώντας το Aspose.Email
-  για Java: Ένας πλήρης οδηγός'
+  για Java - Ένας πλήρης οδηγός'
 url: /el/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -207,6 +207,12 @@ for (int index = 0; index < attachments.size(); index++) {
 - **Προσωρινή Άδεια**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Υποστήριξη**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Τελευταία ενημέρωση:** 2025-12-17  
+**Δοκιμή με:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +220,3 @@ for (int index = 0; index < attachments.size(); index++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία ενημέρωση:** 2025-12-17  
-**Δοκιμή με:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Συγγραφέας:** Aspose

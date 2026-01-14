@@ -129,6 +129,12 @@ C: Aspose forumlarını ziyaret edin, çevrimiçi belgelerden faydalanın veya d
 
 Bu kaynakları inceleyerek bilginizi derinleştirin ve projelerinizde Aspose.Email for Java'ın tam potansiyelini kullanın. İyi kodlamalar!
 
+---
+
+**Son Güncelleme:** 2025-12-17  
+**Test Edilen Sürüm:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -136,9 +142,3 @@ Bu kaynakları inceleyerek bilginizi derinleştirin ve projelerinizde Aspose.Ema
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-17  
-**Test Edilen Sürüm:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**Yazar:** Aspose

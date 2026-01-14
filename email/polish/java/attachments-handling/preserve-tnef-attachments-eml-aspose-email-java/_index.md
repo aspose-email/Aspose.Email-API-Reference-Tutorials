@@ -7,8 +7,7 @@ keywords:
 - preserve tnef attachments
 - Aspose.Email for Java
 - handle TNEF in EML files
-title: 'Zachowaj załączniki TNEF w plikach EML przy użyciu Aspose.Email dla Javy:
-  Kompletny przewodnik'
+title: 'Zachowaj załączniki TNEF w plikach EML przy użyciu Aspose.Email dla Javy - Kompletny przewodnik'
 url: /pl/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
 ---

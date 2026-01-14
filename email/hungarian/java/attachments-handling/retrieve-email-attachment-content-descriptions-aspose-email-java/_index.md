@@ -131,6 +131,12 @@ A: Látogasd meg az Aspose fórumokat, tanulmányozd az online dokumentációt, 
 
 Fedezd fel ezeket az erőforrásokat, hogy mélyebb megértést szerezz, és kiaknázd az Aspose.Email for Java teljes potenciálját a projektjeidben. Boldog kódolást!
 
+---
+
+**Legutóbb frissítve:** 2025-12-17  
+**Tesztelve:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**Szerző:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -138,11 +144,3 @@ Fedezd fel ezeket az erőforrásokat, hogy mélyebb megértést szerezz, és kia
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2025-12-17  
-**Tesztelve:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**Szerző:** Aspose  
-
----

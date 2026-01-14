@@ -30,8 +30,6 @@ Al final de esta guía podrás:
 * Detectar qué adjuntos son en línea y escribirlos en disco.  
 * Aplicar las mejores prácticas de rendimiento para el procesamiento por lotes.
 
----
-
 ## Respuestas rápidas
 - **¿Qué significa “adjunto en línea”?** Un adjunto que está incrustado en el cuerpo del correo electrónico (p. ej., imágenes mostradas dentro del mensaje).  
 - **¿Qué biblioteca maneja los archivos MSG?** Aspose.Email para Java.  

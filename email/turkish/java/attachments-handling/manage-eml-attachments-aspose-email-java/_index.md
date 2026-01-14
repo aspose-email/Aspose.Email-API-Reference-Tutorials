@@ -8,7 +8,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Aspose.Email for Java Kullanarak EML Dosyalarından E-posta Eklerini Nasıl
-  Çıkarabilirsiniz: Tam Bir Rehber'
+  Çıkarabilirsiniz - Tam Bir Rehber'
 url: /tr/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -20,43 +20,43 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # EML Dosyalarından E‑posta Eklerini Aspose.Email for Java Kullanarak Nasıl Çıkarılır: Tam Kılavuz
 
-## Introduction
+## Giriiş
 
-EML dosyalarından e‑posta eklerini çıkarmak baş ağrısı olabilir, ancak **Aspose.Email for Java** ile süreç basitleşir. Bu öğreticide **e‑posta eklerini çıkarmayı**, EML dosyalarını ayrıştırmayı ve bu ekleri diske kaydetmeyi—temiz, üretim‑hazır Java kodu ile öğreneceksiniz.
+EML dosyalarından e‑posta eklerini çıkarmak başlangıçtan geçebilir, ancak **Aspose.Email for Java** ile süreç basitleşir. Bu öğreticide **e‑posta eklerini kaydetmeyi**, EML ayrıştırmayı ve bu ekleri diske kaydetmeyi—temiz, üretim‑hazır Java kodu ile kayıtları.
 
-Bu kılavuzda aşağıdakileri adım adım inceleyeceğiz:
-- Aspose.Email for Java kullanarak bir EML dosyasını yükleme  
-- Ek koleksiyonunu başlatma ve yineleme yaparak **ek adlarını almayı**  
-- E‑posta eklerini makinenizdeki bir klasöre kaydetme  
+Bu kılavuzda aşağıdakileri adım adım inceleyerek çalıştırın:
+- Aspose.Email for Java kullanarak bir EML hesabının yüklenmesi
+- Ek toplamayı başlatma ve yineleme yaparak **ek reklamlarını almayı**
+- E‑posta eklerini makinenizdeki bir dizüstü bilgisayara kaydetme
 
-Bu öğretici, temel Java bilgisine sahip ve gerçek dünya e‑posta verilerini işlemek için pratik bir **Aspose.Email öğreticisi** arayan geliştiriciler için idealdir.
+Bu öğretici, temel Java bilgisine sahip ve gerçek dünyada e‑posta yoluyla işlem yapmak için pratik bir **Aspose.Email uygulayıcısı** arayanlar için ideal.
 
-## Quick Answers
-- **“e‑posta eklerini çıkarmak” ne anlama gelir?** Bir EML dosyasını okuyup, her ekli dosyayı yerel depolamanıza yazmak anlamına gelir.  
-- **Hangi kütüphaneyi kullanmalıyım?** Aspose.Email for Java (sürüm 25.4+).  
-- **Lisans gereklimi?** Değerlendirme için ücretsiz deneme yeterlidir; tam lisans tüm kısıtlamaları kaldırır.  
-- **EML dosyalarını ağ paylaşımından ayrıştırabilir miyim?** Evet—`MailMessage.load` metoduna tam yol ya da URL'yi vermeniz yeterlidir.  
-- **Büyük ekler için güvenli mi?** Bir döngüde işleyin ve bellek sorunlarını önlemek için try‑with‑resources ile kaynakları serbest bırakın.
+## Hızlı Yanıtlar
+- **“e‑posta eklerini çıkarmak” ne anlama gelir?** BirEML kesintileri, her ekinde yerel depolamaya yazmak için gelir.
+- **Hangi üyeliğini kullanmalı mıyım?** Aspose.Email for Java (sürüm25.4+).
+- **Lisans gereklimi?** Değerlendirme için ücretsiz deneme yeterlidir; Tam lisans tüm kısıtlamaları kaldırır.
+- **EML paylaşımından parçalanabilir mi?** Evet—`MailMessage.load` yöntemine tam yol ya da URL'yi sağlamanız yeterlidir.
+- **Büyük ekler için güvenli mi?** Bir döngüde işleyin ve bellekleri temizlemek için try‑with‑resources ile kaynakları serbest bırakın.
 
-## Prerequisites
+## Önkoşullar
 
-### Required Libraries, Versions, and Dependencies
-- **Aspose.Email for Java**: Sürüm 25.4 veya üzeri.  
-- **Java Development Kit (JDK)**: JDK 16 veya daha yenisi önerilir.  
-- **Maven**: Bağımlılıkları kolay yönetmek için Maven kurun.
+### Gerekli Kitaplıklar, Sürümler ve Bağımlılıklar
+- **Aspose.Email for Java**: Sürüm25.4 veya üzeri.
+- **Java Development Kit (JDK)**: JDK16 veya daha yenisi önerilir.
+- **Maven**: Bağımlılıklarının kolay kullanımı için Maven kuru.
 
-### Environment Setup Requirements
-Geliştirme ortamınızın aşağıdakileri içerdiğinden emin olun:
-- Yapılandırılmış bir JDK  
-- IntelliJ IDEA, Eclipse veya Java desteği olan VS Code gibi bir IDE  
+### Ortam Kurulum Gereksinimleri
+Geliştirme ortamınızın aşağıdaki sonuçlarından emin olun:
+- Yapılandırılmış bir JDK
+- IntelliJ IDEA, Eclipse veya Java desteği olan VSCode gibi bir IDE
 
-### Knowledge Prerequisites
-- Temel Java programlama becerileri  
-- E‑posta formatları (MIME, EML) hakkında bilgi  
+### Bilgi Önkoşulları
+- Temel Java programlama programlaması
+- E‑posta formatları (MIME, EML) hakkında bilgi
 
-## Setting Up Aspose.Email for Java
+## Java için Aspose.Email'i Kurma
 
-Aspose.Email for Java'ı projenize entegre etmek için Maven kullanıyorsanız `pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
+Aspose.Email for Java'yı projenize entegre etmek için Maven kullanıyorsanız `pom.xml` dosyanıza aşağıdakileri ekleyin:
 
 ```xml
 <dependency>
@@ -67,15 +67,15 @@ Aspose.Email for Java'ı projenize entegre etmek için Maven kullanıyorsanız `
 </dependency>
 ```
 
-### License Acquisition
-Kütüphaneyi indirerek ve Aspose'tan geçici bir lisans talep ederek **ücretsiz deneme** ile başlayın:
+### Lisans Alma
+Kütüphaneyi indirerek ve Aspose'tan geçici bir lisans talebi yaparak **ücretsiz deneme** ile başlayın:
 - [Ücretsiz Deneme](https://releases.aspose.com/email/java/)
 - [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
 
-Üretim kullanımında sınırlamaları kaldırmak için tam lisans satın almayı düşünün.
+Üretim kullanımında sınırlamaları ayırmak için tam lisans satın almayı düşünün.
 
-### Basic Initialization and Setup
-Bağımlılığı ekledikten sonra Aspose.Email'ı lisans dosyanızla başlatın:
+### Temel Başlatma ve Kurulum
+Bağımlılığı ekledikten sonra Aspose.Email'ı lisans dosyanızla başlattığınızda:
 
 ```java
 import com.aspose.email.License;
@@ -84,16 +84,16 @@ License license = new License();
 license.setLicense("path_to_your_license_file");
 ```
 
-## Implementation Guide
+## Uygulama Kılavuzu
 
-Her özelliği adım adım keşfedelim.
+Onun özelliğini adım adım keşfedelim.
 
-### Load an EML File
+### Bir EML Dosyası Yükleyin
 
-#### Overview
-Aspose.Email for Java kullanarak **EML dosyalarını ayrıştırmayı** ve bir `MailMessage` nesnesine yüklemeyi öğrenin.
+#### Genel Bakış
+Aspose.Email for Java kullanarak **EML öğelerini ayırmayı** ve bir `MailMessage` nesnesine yüklemeyi öğrenin.
 
-#### Code Snippet
+#### Kod Parçacığı
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -103,16 +103,16 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Explanation**:  
-- `dataDir` EML dosyanızın bulunduğu klasöre işaret eder.  
-- `EmlLoadOptions` mesajın nasıl okunacağını ince ayar yapmanızı sağlar (ör. gömülü resimlerin işlenmesi).
+**Açıklama**:
+- `dataDir` EML dosyanızın bulunduğu klasörü işaretler.
+- `EmlLoadOptions` mesajının nasıl okunacağını ince ayar yapılmasını sağlar (ör. gömülü resimlerin çalıştırılması).
 
-### Initialize AttachmentCollection
+### Ek Koleksiyonunu Başlat
 
-#### Overview
+#### Genel Bakış
 EML dosyası yüklendikten sonra eklerine `AttachmentCollection` aracılığıyla ulaşabilirsiniz.
 
-#### Code Snippet
+#### Kod Parçacığı
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -120,15 +120,15 @@ import com.aspose.email.AttachmentCollection;
 AttachmentCollection attachments = msg.getAttachments();
 ```
 
-**Explanation**:  
-- `getAttachments()` e‑postaya eklenmiş her dosyayı tutan bir koleksiyon döndürür.
+**Açıklama**:
+- `getAttachments()` e‑postaya eklenmiş ona tutan bir koleksiyon döner.
 
-### Iterate Over Attachments and Display Names
+### Ekleri ve Görünen Adları Yineleyin
 
-#### Overview
+#### Genel Bakış
 Koleksiyon üzerinde yineleme yaparak **ek adlarını alabilirsiniz**, bu da günlük kaydı tutmak veya UI listeleri oluşturmak için faydalıdır.
 
-#### Code Snippet
+#### Kod Parçacığı
 
 ```java
 import com.aspose.email.Attachment;
@@ -139,16 +139,16 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- Döngü, indekse göre her eki dolaşır.  
-- `getName()` ekin orijinal dosya adını getirir.
+**Açıklama**:
+- Döngü, indekse göre ona eki dolaşır.
+- `getName()` ekin orijinal dosyanın adını çıkarır.
 
-### Save Attachments to Disk
+### Ekleri Diske Kaydet
 
-#### Overview
-Son olarak, **EML eklerini** bilgisayarınızdaki bir klasöre kaydedeceksiniz—arşivleme veya sonraki işleme için mükemmeldir.
+#### Genel Bakış
+Son olarak, **EML eklerini** bilgisayarınızdaki bir bilgisayara kaydedeceksiniz—arşivleme veya sonraki işleme için yapabilirsiniz.
 
-#### Code Snippet
+#### Kod Parçacığı
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -159,54 +159,59 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- `outputDir` dosyaların yazılacağı yerdir.  
-- `save()` her ek için yeni bir dosya oluşturur; `attachment_` öneki isim çakışmalarını önler.
+**Açıklama**:
+- `outputDir` dosyalarının yazılacağı yerler.
+- `save()` her ek için yeni bir dosya oluşturur; `attachment_` birki isim çakışmalarını önler.
 
-## Practical Applications
+## Pratik Uygulamalar
 
-1. **Veri Arşivleme** – Uyum veya kayıt tutma amacıyla e‑posta eklerini koruyun.  
-2. **E‑posta Ayrıştırma Servisleri** – Destek sistemindeki gelen mesajlardan faturalar, özgeçmişler veya log dosyalarını çıkarın.  
-3. **Yedekleme Çözümleri** – E‑posta ile alınan önemli belgelerin otomatik yedeklemesini sağlayın.
+1. **Veri Arşivleme** – Uyum veya kayıt tutma amacıyla e-posta eklerini bırakmak.
+2. **E‑posta Ayrıştırma Servisleri** – Destek sistemindeki gelen mesajlardan faturalar, özgeçmişler veya log tuşlarından çıkarılır.
+3. **Yedekleme Çözümleri** – E-posta ile alınan önemli belgelerin otomatik yedeklemesini sağlayın.
 
-## Performance Considerations
+## Performansla İlgili Hususlar
 
-### Optimizing Performance
-- Çok büyük eklerle çalışırken tamponlu akışlar (buffered streams) kullanın.  
-- Gigabayt‑boyutunda dosyalar bekliyorsanız ekleri parçalar halinde işleyin.
+### Performansı Optimize Etme
+- Çok büyük eklerle meydana gelen tamponlu akışlar (tamponlu akışlar) kullanın.
+- Gigabayt‑boyutunda dosyaları bekliyorsanız ekleri parçalar halinde işleyin.
 
-### Resource Usage Guidelines
-- Yığın (heap) kullanımını izleyin; büyük ekler hafızayı hızla tüketebilir.  
-- Aspose çağrılarının dışındaki tüm dosya I/O işlemleri için try‑with‑resources tercih edin.
+### Kaynak Kullanım Yönergeleri
+- Yığın (yığın) konuşmanın dinlenmesi; Büyük miktardaki hafızayı hızla tüketebilir.
+- Çağrıların dışındaki tüm dosya I/O işlemleri için try‑with‑resources ile çalışmayı tercih edin.
 
-### Best Practices for Java Memory Management
-- Akışları (streams) derhal kapatın.  
-- Yoğun iş yükleri için JVM yığın boyutunu (`-Xmx`) artırmayı düşünün.
+### Java Bellek Yönetimi için En İyi Uygulamalar
+- Akışları (streams) sonlandırın.
+- Yoğun iş yükleri için JVM yığın değişimini (`-Xmx`) artırmayı düşünün.
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**S: Şifreli EML dosyalarını nasıl ele alırım?**  
-C: E‑posta hizmeti destekliyorsa `LoadOptions` ile şifre çözme kimlik bilgilerini sağlayın.
+**S: Şifreli EML kartı nasıl ele alırım?**
+C: E‑posta hizmetinin miktarısa `LoadOptions` ile şifre değiştirme kimliğinin alınmasını sağlayın.
 
-**S: Aspose.Email for Java HTML e‑postaları ayrıştırabilir mi?**  
+**S: Aspose.Email for Java HTML e‑postaları ayrıştırılabilir mi?**
 C: Evet—HTML gövdeleri `msg.getHtmlBody()` ile erişilebilir ve herhangi bir string gibi işlenebilir.
 
-**S: Ekleri kaydederken yaygın sorunlar nelerdir?**  
-C: Yetersiz disk alanı veya yazma izni eksikliği en sık karşılaşılan sorunlardır. Hedef klasörün var olduğundan ve yazılabilir olduğundan emin olun.
+**S: Ekleri üyeleriken yaygın sorunlar nelerdir?**
+C: Yetersiz disk alanı veya yazma izni eksikliği en sık ayrıntılar sorunlardır. Hedef parçaların var olduğundan ve yazılabilir olduğundan emin olun.
 
-**S: EML dosyalarını ağ konumundan yüklemek mümkün mü?**  
-C: Kesinlikle—tam UNC yolu ya da URL'yi `MailMessage.load` metoduna geçirin.
+**S: EML düğmelerinin ağ konumunda kurulumu mümkün mü?**
+C: kesinlikle —tam UNC yolu ya da URL'yi `MailMessage.load` yöntemine geçirin.
 
-**S: Üretim kullanımı için lisans nasıl alınır?**  
-C: Tam lisans edinmek için [Aspose Satın Alma Sayfası](https://purchase.aspose.com/buy) adresini ziyaret edin.
+**S: Üretim kullanımı için lisans nasıl alınır?**
+C: Tam lisans alımı için [Aspose Satın Alma Sayfası](https://purchase.aspose.com/buy) adresini ziyaret edin.
 
-## Resources
-- **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+## Kaynaklar
+- **Belgeler**: [Aspose.Email Java Referansı](https://reference.aspose.com/email/java/)
+- **İndir**: [Aspose.Email Sürümleri](https://releases.aspose.com/email/java/)
+- **Satın Al**: [Aspose.Email Satın Al](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme**: [Ücretsiz Deneme ile Başlayın](https://releases.aspose.com/email/java/)
+- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.aspose.com/temporary-license/)
+- **Destek**: [Aspose E-posta Forumu](https://forum.aspose.com/c/email/10)
+
+---
+
+**Son Güncelleme:** 17.12.2025 **Şununla Test Edildi:** Aspose.Email for Java25.4 (jdk16 sınıflandırıcı)
+**Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -215,9 +220,3 @@ C: Tam lisans edinmek için [Aspose Satın Alma Sayfası](https://purchase.aspos
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-17  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

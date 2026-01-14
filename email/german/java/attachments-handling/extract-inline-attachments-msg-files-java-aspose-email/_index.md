@@ -30,8 +30,6 @@ Am Ende dieses Leitfadens können Sie:
 * Erkennen, welche Anhänge inline sind, und sie auf die Festplatte schreiben.  
 * Leistungs‑Best Practices für die Massenverarbeitung anwenden.
 
----
-
 ## Schnelle Antworten
 - **Was bedeutet “inline attachment”?** Ein Anhang, der in den E‑Mail‑Text eingebettet ist (z. B. Bilder, die innerhalb der Nachricht angezeigt werden).  
 - **Welche Bibliothek verarbeitet MSG‑Dateien?** Aspose.Email für Java.  

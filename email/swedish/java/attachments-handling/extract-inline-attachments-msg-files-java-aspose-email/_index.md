@@ -19,53 +19,51 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Extrahera inbäddade bilagor i Java – MSG‑filer med Aspose.Email
 
-## Introduction
+## Introduktion
 
-Om du behöver **extract inline attachments java** från Microsoft Outlook MSG‑filer, har du kommit till rätt ställe. Många utvecklare har problem med att läsa Outlook msg‑java‑filer eftersom formatet döljer inbäddade bilder och dokument i meddelandetexten. I den här handledningen går vi igenom en ren, produktionsklar lösning som använder Aspose.Email‑biblioteket för Java för att lokalisera, identifiera och spara de inbäddade bilagorna.
+Om du behöver **extract inline attachments java** från Microsoft OutlookMSG‑filer, har du kommit till rätt ställe. Många utvecklare har problem med att läsa Outlookmsg‑java‑filer eftersom formatet döljer inbäddade bilder och dokument i meddelandetexten. I den här handledningen går vi igenom en ren, produktionsklar lösning som använder Aspose.Email‑biblioteket för Java för att lokalisera, identifiera och spara de inbäddade bilagorna.
 
 När du är klar med guiden kan du:
 
-* Ställa in Aspose.Email för Java i ett Maven‑projekt.  
-* **Read Outlook msg java**‑filer och lista deras bilagor.  
-* Upptäcka vilka bilagor som är inbäddade och skriva dem till disk.  
+* Ställa i Aspose.Email för Java i ett Maven‑projekt.
+* **Read Outlookmsgjava**‑filer och lista deras bilagor.
+* Upptäcka vilka bilagor som är inbäddade och skriva dem till disk.
 * Tillämpa prestanda‑bästa praxis för massbearbetning.
 
----
+## Snabba svar
+- **What does “inline attachment” mean?** En bilaga som är inbäddad i e‑postens kropp (t.ex. bilder som visa i meddelandet).
+- **Vilket bibliotek hanterar MSG-filer?** Aspose.Email för Java.
+- **Behöver jag en licens?** En provversion fungerar för utvärdering; en permanent licens tar bort användningsbegränsningar.
+- **Kan jag bearbeta många MSG-filer samtidigt?** Ja – batcha logiken och användbar trådpooler för skalbarhet.
+- **Vilken Java-version krävs?** JDK16 eller senare.
 
-## Quick Answers
-- **What does “inline attachment” mean?** En bilaga som är inbäddad i e‑postens kropp (t.ex. bilder som visas i meddelandet).  
-- **Which library handles MSG files?** Aspose.Email for Java.  
-- **Do I need a license?** En provversion fungerar för utvärdering; en permanent licens tar bort användningsbegränsningar.  
-- **Can I process many MSG files at once?** Ja – batcha logiken och använd trådpooler för skalbarhet.  
-- **What Java version is required?** JDK 16 eller senare.
+## Vad är "extract inline attachments java"?
 
-## What is “extract inline attachments java”?
+Att extrahera inbäddade bilagor i Java innebär att programmässigt öppnas en MSG‑fil, skanna dess bilagasamling och plocka ut endast de objekt som är markerade som *inline* (i motsats till vanliga filbilagor). Detta är nödvändigt när du behöver det visuella innehållet i ett e‑postmeddelande – såsom inbäddade logotyper eller skärmdumpar – sparat som separata bildfiler.
 
-Att extrahera inbäddade bilagor i Java innebär att programmässigt öppna en MSG‑fil, skanna dess bilagssamling och plocka ut endast de objekt som är markerade som *inline* (i motsats till vanliga filbilagor). Detta är nödvändigt när du behöver det visuella innehållet i ett e‑postmeddelande – såsom inbäddade logotyper eller skärmdumpar – sparat som separata bildfiler.
-
-## Why use Aspose.Email for this task?
+## Varför använda Aspose.Email för den här uppgiften?
 
 Aspose.Email abstraherar de lågnivå‑MAPI‑strukturerna och ger dig ett enkelt, starkt typat API. Jämfört med att själv försöka tolka det binära MSG‑formatet erbjuder Aspose.Email:
 
-* Hanterar alla MSG‑varianter (Unicode, RTF, HTML).  
-* Tillhandahåller pålitlig egenskapsåtkomst för bilagors metadata.  
-* Erbjuder inbyggda licenskontroller och omfattande dokumentation.  
+* Hanterar alla MSG-varianter (Unicode, RTF, HTML).
+* Tillhandahåller pålitlig egenskapsåtkomst för bilagors metadata.
+* Erbjuder inbyggda licenskontroller och omfattande dokumentation.
 
-## Prerequisites
+## Förutsättningar
 
-För att följa med, säkerställ att du har:
+För att följa med, säkerställt att du har:
 
-1. **Libraries and Dependencies**  
-   * Aspose.Email for Java (senaste versionen).  
-   * Maven (eller en IDE med Maven‑stöd).  
+1. **Bibliotek och beroenden** 
+* Aspose.Email för Java (senaste versionen). 
+* Maven (eller en IDE med Maven‑stöd).
 
-2. **Runtime**  
-   * JDK 16 eller nyare installerat.  
+2. **Körtid** 
+* JDK16 eller nyare installerat.
 
-3. **Basic Knowledge**  
-   * Bekantskap med Java I/O och undantagshantering.  
+3. **Grundläggande kunskap** 
+* Bekantskap med Java I/O och undantagshantering.
 
-## Setting Up Aspose.Email for Java
+## Konfigurera Aspose.Email för Java
 
 Lägg till Aspose.Email‑beroendet i din `pom.xml`. Koden nedan är oförändrad från den ursprungliga handledningen.
 
@@ -78,19 +76,19 @@ Lägg till Aspose.Email‑beroendet i din `pom.xml`. Koden nedan är oförändra
 </dependency>
 ```
 
-### License Acquisition Steps
+### Licensförvärvssteg
 
-* **Free Trial:** Ladda ner prov‑DLL/JAR från Aspose‑webbplatsen.  
-* **Temporary License:** Begär en 30‑dagars utvärderingslicens för obegränsad testning.  
-* **Full Purchase:** Skaffa en permanent licens för produktionsdistributioner.
+* **Gratis provperiod:** Ladda ner prov-DLL/JAR från Aspose-webbplatsen.
+* **Temporary License:** Begär en 30‑dagars utvärderingslicens för obegränsad testning.
+* **Fullt köp:** Skaffa en permanent licens för produktionsdistributioner.
 
-## Implementation Guide
+## Implementeringsguide
 
-Nedan delar vi upp lösningen i tre fokuserade funktioner. Varje funktion innehåller en kort förklaring följt av den ursprungliga kodblocket (behåller exakt format).
+Nedan delar vi upplösningen i tre funktioner. Varje funktion innehåller en kort förklaring följt av den ursprungliga kodblocket (behåller exakt format).
 
-### Feature 1 – Load the MSG File
+### Funktion 1 – Ladda MSG-filen
 
-Först laddas Outlook‑meddelandet in i ett `MapiMessage`‑objekt.
+Först laddas Outlook‑meddelandet i ett `MapiMessage`‑objekt.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -99,7 +97,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatting.msg");
 ```
 
-### Feature 2 – Retrieve Attachments
+### Funktion 2 – Hämta bilagor
 
 Därefter hämtas hela bilagssamlingen från meddelandet.
 
@@ -109,7 +107,7 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-### Feature 3 – Identify and Save Inline Attachments
+### Funktion 3 – Identifiera och spara inline-bilagor
 
 Loopar igenom varje bilaga, kontrollerar om den är inbäddad och skriver sedan den till disk.
 
@@ -126,7 +124,7 @@ for (Object untypedAttachment : attachments) {
 }
 ```
 
-#### Utility: Determine If an Attachment Is Inline
+#### Verktyg: Bestäm om en bilaga är inline
 
 Hjälpmetoden inspekterar MAPI‑egenskaperna för att avgöra om en bilaga är inbäddad.
 
@@ -151,7 +149,7 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-#### Utility: Save the Inline Attachment
+#### Verktyg: Spara den inbyggda bilagan
 
 Skriver det binära innehållet för den inbäddade bilagan till en fil på det lokala filsystemet.
 
@@ -172,55 +170,55 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 }
 ```
 
-## Practical Applications
+## Praktiska tillämpningar
 
 Att extrahera inbäddade bilagor är användbart i många verkliga scenarier:
 
-* **Automated Email Processing** – Hämta bilder från nyhetsbrev för analys.  
-* **Data Migration** – Flytta inbäddat innehåll vid migrering från Exchange till en annan plattform.  
+* **Automatiserad e-postbehandling** – Hämta bilder från nyhetsbrev för analys.
+* **Datamigrering** – Flytta inbäddat innehåll vid migrering från Exchange till en annan plattform.
 * **Archiving Solutions** – Bevara den visuella integriteten i arkiverade meddelanden genom att lagra inbäddade resurser separat.
 
-## Performance Considerations
+## Prestandaöverväganden
 
 När du hanterar hundratals eller tusentals MSG‑filer, tänk på följande tips:
 
-* **Batch Processing:** Gruppera filer i hanterbara batcher för att undvika minnesspikar.  
-* **Dispose Resources Promptly:** Stäng strömmar (`try‑with‑resources`) och låt skräpsamlaren återvinna objekt.  
-* **Parallel Execution:** Använd en `ExecutorService` med fast storlek för att köra flera extraktionsjobb parallellt, men övervaka CPU‑användning.
+* **Batch Processing:** Gruppera filer i hanterbara batcher för att undvika minnesspikar.
+* **Skicka resurser omgående:** Stäng strömmar (`prova-med-resurser`) och låt skräpsamlaren återvinna objekt.
+* **Parallell Execution:** Använd en `ExecutorService` med snabb storlek för att köra flera extraktionsjobb parallellt, men övervaka CPU‑användning.
 
-## Common Issues & Troubleshooting
+## Vanliga problem och felsökning
 
-| Symptom | Likely Cause | Fix |
-|---------|--------------|-----|
-| `NullPointerException` on `attachment.getObjectData()` | Message lacks attachment metadata (e.g., corrupted MSG) | Validate the MSG file before processing or catch the exception and log the file name. |
-| Saved file is empty or corrupted | Incorrect property name (`"Package"` case‑sensitivity) | Verify the property name matches the MSG’s actual property; Aspose.Email documentation lists the exact string. |
-| Performance degrades with large files | Streams not closed, leading to memory leaks | Use try‑with‑resources (as shown) and consider increasing JVM heap if needed. |
+| Symptom | Trolig orsak | Fixa |
+|--------|--------------|-----|
+| `NullPointerException` på `attachment.getObjectData()` | Meddelandet saknar bifogad metadata (t.ex. skadad MSG) | Validera MSG-filen innan bearbetning eller fånga undantaget och logga filnamnet. |
+| Sparad fil är tom eller skadad | Felaktigt egenskapsnamn (`"Package"` skiftlägeskänslighet) | Verifiera att egenskapsnamnet matchar MSG:s faktiska egenskap; Aspose.Email-dokumentationen listar den exakta strängen. |
+| Prestandan försämras med stora filer | Strömmar stängs inte, vilket leder till minnesläckor | Använd try-with-resources (som visas) och överväg att öka JVM-heapen om det behövs. |
 
-## Frequently Asked Questions
+## Vanliga frågor
 
-**Q: What is the minimum Aspose.Email version required?**  
-A: The tutorial uses version 25.4, but any 24.x+ release that supports JDK 16 will work.
+**F: Vilken Aspose.Email-version krävs minst?**
+S: Handledningen använder version 25.4, men alla 24.x+-versioner som stöder JDK16 fungerar.
 
-**Q: Can I extract inline attachments from encrypted MSG files?**  
-A: Yes, provided you supply the correct decryption password when loading the `MapiMessage`.
+**F: Kan jag extrahera inline-bilagor från krypterade MSG-filer?**
+S: Ja, förutsatt att du anger rätt dekrypteringslösenord när du laddar `MapiMessage`.
 
-**Q: How do I differentiate between inline images and regular file attachments?**  
-A: Use the `IsAttachmentInline` helper; it checks the MAPI `ObjInfo` flag that marks an attachment as inline.
+**F: Hur skiljer jag mellan inline-bilder och vanliga filbilagor?**
+S: Använd `IsAttachmentInline`-hjälpen; den kontrollerar MAPI `ObjInfo`-flaggan som markerar en bilaga som inline.
 
-**Q: Is there a way to preserve the original file name of the inline attachment?**  
-A: The sample generates a UUID for uniqueness, but you can read the `attachment.getLongFileName()` property and use it when calling `SaveAttachment`.
+**F: Finns det ett sätt att bevara det ursprungliga filnamnet på den inbäddade bilagan?**
+S: Exemplet genererar ett UUID för unikhet, men du kan läsa egenskapen `attachment.getLongFileName()` och använda den när du anropar `SaveAttachment`.
 
-**Q: Does this approach work on Linux/macOS as well as Windows?**  
-A: Absolutely—Aspose.Email is platform‑independent as long as the JDK is installed.
+**F: Fungerar den här metoden på Linux/macOS såväl som Windows?**
+S: Absolut—Aspose.Email är plattformsoberoende så länge JDK är installerat.
 
-## Resources
-- **Documentation:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
+## Resurser
+- **Dokumentation:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**Last Updated:** 2025-12-17  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Senast uppdaterad:** 2025-12-17
+**Testad med:** Aspose.Email för Java 25.4 (JDK16)
+**Författare:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

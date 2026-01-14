@@ -130,6 +130,12 @@ A: Bezoek de Aspose‑forums, raadpleeg de online documentatie, of neem contact 
 
 Verken deze bronnen om je kennis te verdiepen en het volledige potentieel van Aspose.Email voor Java in je projecten te benutten. Veel programmeerplezier!
 
+---
+
+**Laatst bijgewerkt:** 2025-12-17  
+**Getest met:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -137,9 +143,3 @@ Verken deze bronnen om je kennis te verdiepen en het volledige potentieel van As
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-17  
-**Getest met:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**Auteur:** Aspose

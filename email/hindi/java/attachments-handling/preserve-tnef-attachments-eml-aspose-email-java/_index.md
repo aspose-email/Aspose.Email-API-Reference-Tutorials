@@ -8,7 +8,7 @@ keywords:
 - Aspose.Email for Java
 - handle TNEF in EML files
 title: 'Aspose.Email for Java का उपयोग करके EML फ़ाइलों में TNEF अटैचमेंट को संरक्षित
-  रखें: एक व्यापक गाइड'
+  रखें - एक व्यापक गाइड'
 url: /hi/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
 ---
@@ -20,48 +20,51 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Aspose.Email for Java का उपयोग करके EML फ़ाइलों में TNEF अटैचमेंट्स को कैसे संरक्षित करें
 
-## Introduction
+## परिचय
 
-क्या आप Java में EML फ़ाइलों के साथ काम करते समय TNEF (Transport Neutral Encapsulation Format) अटैचमेंट्स को संभालने में चुनौतियों का सामना कर रहे हैं? **यदि आपको TNEF अटैचमेंट्स को संरक्षित करने की आवश्यकता है**, तो यह गाइड आपको Aspose.Email for Java का उपयोग करके उन फ़ाइलों को अपरिवर्तित रखने का तरीका बिल्कुल दिखाएगा। TNEF आमतौर पर Microsoft Outlook द्वारा उपयोग किया जाता है, और ईमेल प्रोसेसिंग के दौरान इन अटैचमेंट्स को संरक्षित करना जटिल हो सकता है। Aspose.Email के साथ, यह कार्य सीधा और भरोसेमंद बन जाता है।
+क्या आप Java में EML फ़ाइलों के साथ काम करते समय TNEF (Transport Neutral Encapsulation Format) अटैचमेंट्स को ऑपरेशन में इस्तेमाल कर रहे हैं? **यदि आपको TNEF अटैचमेंट्स को सुरक्षित करने की आवश्यकता है**, तो यह गाइड आपको Aspose.Email for Java का उपयोग करके उन फ़ाइलों को उपलब्ध रखने का तरीका बिल्कुल बताएगी। TNEF आमतौर पर Microsoft Outlook द्वारा उपयोग किया जाता है, और ईमेल प्रोसेसिंग के दौरान इन अटैचमेंट्स को सुरक्षित करना जटिल हो सकता है। Aspose.Email के साथ, यह कार्य सीधा और भरोसेमंद बन जाता है।
 
-इस ट्यूटोरियल में, आप सीखेंगे कि लाइब्रेरी को कैसे कॉन्फ़िगर करें, TNEF भागों को खोए बिना EML फ़ाइल को कैसे लोड करें, और यह सत्यापित करें कि अटैचमेंट्स अभी भी अपरिवर्तित हैं।
+इस ट्यूटोरियल में, आप सिखाते हैं कि लाइब्रेरी को कैसे चालू करें, TNEF फ़ाइलों को बिना EML फ़ाइल को कैसे लोड करें, और यह सत्यापित करें कि अटैचमेंट्स अभी भी उपलब्ध हैं।
 
-**आप क्या सीखेंगे**
-- Aspose.Email for Java लाइब्रेरी को सेट अप करने का तरीका (Maven aspose email java उदाहरण सहित)।  
-- **TNEF अटैचमेंट्स को संरक्षित** करते हुए EML फ़ाइल को लोड करने के चरण।  
-- `EmlLoadOptions` में प्रमुख कॉन्फ़िगरेशन विकल्प।  
-- सामान्य समस्याएँ और ट्रबलशूटिंग टिप्स।
+**आप क्या सिखाते हैं**
+- Aspose.Email for Java लाइब्रेरी को सेट अप करने का तरीका (Mavenasposeemailjava उदाहरण सहित)।
+- **TNEF अटैचमेंट्स को सुरक्षित** करते हुए EML फ़ाइल को लोड करने के स्टेप।
+- `EmlLoadOptions` में मुख्य कंटेंट ऑप्शन।
+- आम दिक्कतें और ट्रबलशूटिंग टिप्स।
 
-Ready to dive in? चलिए आपके विकास वातावरण को तैयार करके शुरू करते हैं।
+Ready to dive in? भरोसेमंद आपके विकास के माहौल को तैयार करके शुरू करते हैं।
 
 ## Quick Answers
-- **“preserve TNEF attachments” का क्या अर्थ है?** यह EML लोड करते समय मूल TNEF‑एन्कोडेड फ़ाइलों को अपरिवर्तित रखता है।  
-- **कौन सी लाइब्रेरी इसे संभालती है?** Aspose.Email for Java (संस्करण 25.4+).  
-- **क्या मुझे Maven की आवश्यकता है?** हाँ – ट्यूटोरियल में Maven aspose email java डिपेंडेंसी स्निपेट शामिल है।  
-- **क्या लाइसेंस आवश्यक है?** मूल्यांकन के लिए एक फ्री ट्रायल काम करता है; उत्पादन के लिए स्थायी लाइसेंस आवश्यक है।  
-- **क्या मैं बड़े मेलबॉक्स प्रोसेस कर सकता हूँ?** बिल्कुल, उचित मेमोरी प्रबंधन और `MailMessage` डिस्पोज़ल पैटर्न के साथ।
+- **“preserve TNEF attachments” का क्या मतलब है?** यह EML लोड करते समय मूल TNEF‑एनकोडेड असाइनमेंट को रखता है।
+- **कौन सी लाइब्रेरी इसे संभालती है?** Aspose.Email for Java (525.4+).
+- **क्या मुझे Maven की ज़रूरत है?** हाँ – ट्यूटोरियल में Mavenasposeemailjava डिपेंडेंसी स्निपेट शामिल है।
+- **क्या लाइसेंस ज़रूरी है?** मूल्यांकन के लिए एक फ्री ट्रायल काम करता है; प्रोडक्शन के लिए परमानेंट लाइसेंस ज़रूरी है।
+- **क्या मैं बड़े मेलबॉक्स प्रोसेस कर सकता हूँ?** बिल्कुल, प्रॉपर मेमोरी मैनेजमेंट और `MailMessage` डिस्पोज़ल मैनेजमेंट के साथ।
 
-## Prerequisites
+## प्रीरिक्विजिट्स
 
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
 ### Required Libraries and Dependencies
-- **Aspose.Email for Java**: इष्टतम प्रदर्शन के लिए संस्करण 25.4 या बाद का अनुशंसित है।  
-- **Maven**: हम लाइब्रेरी को प्राप्त करने के लिए Maven aspose email java डिपेंडेंसी का उपयोग करेंगे।
+- **Aspose.Email for Java**: पॉजिटिव परफॉर्मेंस के लिए Version25.4 या बाद का रिकमेंडेड है।
+
+- **Maven**: हम लाइब्रेरी को पाने के लिए Mavenasposeemailjava डिपेंडेंसी का इस्तेमाल करेंगे।
 
 ### Environment Setup Requirements
-- एक संगत IDE (जैसे IntelliJ IDEA, Eclipse) जो Java एप्लिकेशन चलाने के लिए हो।  
-- आपके मशीन पर JDK 16 या उससे उच्च संस्करण स्थापित हो।
+- एक Compatible IDE (जैसे IntelliJ IDEA, Eclipse) जो Java एप्लिकेशन चलाने के लिए हो।
+
+- आपकी मशीन पर JDK16या उससे हाई वर्जन स्थापित हो।
 
 ### Knowledge Prerequisites
-- Java प्रोग्रामिंग की बुनियादी समझ।  
-- सॉफ़्टवेयर विकास में ईमेल फ़ाइलों और अटैचमेंट्स को संभालने की परिचितता।
+- Java प्रोग्रामिंग की बेसिक समझ।
 
-## Setting Up Aspose.Email for Java
+- मॉनिटरिंग डेवलपमेंट में ईमेल सर्विसेज और अटैचमेंट्स को ऑपरेशन्स की जानकारी।
 
-### Aspose Email Java Tutorial: Installation via Maven
+## Java के लिए Aspose.Email सेट अप करना
 
-Add the following dependency to your `pom.xml` file:
+### Aspose Email Java ट्यूटोरियल: Maven के ज़रिए इंस्टॉलेशन
+
+अपनी `pom.xml` फ़ाइल में यह डिपेंडेंसी जोड़ें:
 
 ```xml
 <dependency>
@@ -72,49 +75,51 @@ Add the following dependency to your `pom.xml` file:
 </dependency>
 ```
 
-### License Acquisition Steps
+### लाइसेंस पाने के स्टेप्स
 
-- **Free Trial** – सुविधाओं को खोजने के लिए एक ट्रायल से शुरू करें।  
-- **Temporary License** – विस्तारित परीक्षण के लिए एक अस्थायी लाइसेंस प्राप्त करें।  
-- **Purchase** – उत्पादन उपयोग के लिए पूर्ण लाइसेंस खरीदने पर विचार करें।
+- **फ्री ट्रायल** – फीचर्स को खोजने के लिए एक ट्रायल से शुरू करें।
 
-To activate your license, place the license file in your project and run:
+- **टेम्पररी लाइसेंस** – एडिशनल ट्रायल के लिए एक टेम्पररी लाइसेंस लें।
+
+- **परचेज़** – प्रोडक्शन इस्तेमाल के लिए पूरा लाइसेंस खरीदने पर विचार करें।
+
+अपना लाइसेंस एक्टिवेट करने के लिए, लाइसेंस फ़ाइल को अपने प्रोजेक्ट में रखें और चलाएँ:
 
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Implementation Guide
+## इम्प्लीमेंटेशन गाइड
 
-### Loading EML with PreserveTnefAttachments Feature
+### PreserveTnefAttachments फ़ीचर के साथ EML लोड हो रहा है
 
-#### Overview
+#### ओवरव्यू
 
-`PreserveTnefAttachments` फ़्लैग Aspose.Email को बताता है कि स्रोत EML में जैसा दिखता है, वैसा ही मूल TNEF फ़ाइलें रखें, जिससे कोई स्वचालित रूपांतरण नहीं होता।
+`PreserveTnefAttachments` फ़्लैग Aspose.Email को बताता है कि सोर्स EML में जैसा दिखता है,वैसे ही मूल TNEF फ़ाइलें रखें, जिससे कोई ऑटोमैटिक कन्वर्ज़न नहीं होता।
 
-#### Step‑by‑Step Implementation
+#### स्टेप-बाय-स्टेप इम्प्लीमेंटेशन
 
-**1. Configure Load Options**
+**1. लोड ऑप्शन कॉन्फ़िगर करें**
 
-Create an instance of `EmlLoadOptions` and enable TNEF preservation:
+`EmlLoadOptions` का एक इंस्टेंस बनाएं और TNEF प्रिजर्वेशन इनेबल करें:
 
 ```java
 EmlLoadOptions options = new EmlLoadOptions();
 options.setPreserveTnefAttachments(true);
 ```
 
-**2. Load the EML File**
+**2. EML फ़ाइल लोड करें**
 
-Pass the options when loading your message:
+अपना मैसेज लोड करते समय ऑप्शन पास करें:
 
 ```java
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 ```
 
-**3. Access Attachments**
+**3. अटैचमेंट एक्सेस करें**
 
-Iterate through the attachments to verify they are still TNEF files:
+अटैचमेंट को देखें और वेरिफ़ाई करें कि वे अभी भी TNEF फ़ाइलें हैं:
 
 ```java
 for (Attachment attachment : eml.getAttachments()) {
@@ -122,64 +127,68 @@ for (Attachment attachment : eml.getAttachments()) {
 }
 ```
 
-#### Troubleshooting Tips
+#### ट्रबलशूटिंग टिप्स
 
-- **Missing Attachments** – फ़ाइल पथ (`dataDir`) को दोबारा जाँचें और सुनिश्चित करें कि फ़ाइल पढ़ी जा सकती है।  
-- **Unexpected Conversion** – पुष्टि करें कि `setPreserveTnefAttachments(true)` संदेश लोड करने से पहले कॉल किया गया है।  
+- **मिसिंग अटैचमेंट्स** – फ़ाइल पाथ (`dataDir`) को दोबारा चेक करें और पक्का करें कि फ़ाइल पढ़ी जा सकती है।
 
-## Practical Applications
+- **अनएक्सपेक्टेड कन्वर्ज़न** – कन्फर्म करें कि `setPreserveTnefAttachments(true)` मैसेज लोड करने से पहले कॉल किया गया है।
 
-Preserving TNEF attachments many real‑world scenarios में मूल्यवान है:
+## प्रैक्टिकल एप्लीकेशन
 
-1. **Email Archiving Systems** – कानूनी अनुपालन के लिए मूल अटैचमेंट फ़ॉर्मेट को रखें।  
-2. **Legal & Compliance Software** – दस्तावेज़‑रखरखाव नीतियों को पूरा करने के लिए मूल TNEF फ़ाइलें बनाए रखें।  
-3. **Customer Support Tools** – मूल अटैचमेंट्स को बदले बिना क्लाइंट ईमेल फ़ॉरवर्ड करें।
+TNEF अटैचमेंट्स को प्रिजर्व करना कई रियल-वर्ल्ड सिनेरियो में वैल्यूएबल है:
 
-## Performance Considerations
+1. **ईमेल आर्काइविंग सिस्टम्स** – लीगल रजिस्टर के लिए मूल अटैचमेंट फॉर्मेट को रखें।
+
+2. **लीगल एंड कंप्लायंस सॉफ्टवेयर** – डॉक्यूमेंट-रखरखाव फाइलों को पूरा करने के लिए मूल TNEF फाइलें बनाए रखें।
+
+3. **कस्टमर सपोर्ट टूल्स** – मूल अटैचमेंट्स को बदले बिना क्लाइंट ईमेल फॉरवर्ड करें।
+
+## परफॉरमेंस कंसीडरेशन
 
 Aspose.Email के साथ बड़ी मात्रा में ईमेल प्रोसेस करते समय:
 
-- **Dispose Objects** – प्रत्येक संदेश को प्रोसेस करने के बाद `eml.dispose()` कॉल करें (या गार्बेज कलेक्टर को साफ़ करने दें)।  
-- **Memory Settings** – आप जिस ईमेल की मात्रा को संभालते हैं, उसके आधार पर JVM के हीप साइज (`-Xmx`) को ट्यून करें।  
+- **Dispose Objects** – हर मैसेज को प्रोसेस करने के बाद `eml.dispose()` कॉल करें (या गारबेज कलेक्टर को क्लियर करने दें)।
 
-## Common Issues and Solutions
+- **Memory Settings** – आप जिस ईमेल की मात्रा को संभालते हैं, उसके आधार पर JVM के हीप साइज (`-Xmx`) को ट्यून करें।
 
-| समस्या | संभावित कारण | समाधान |
+## आम मुद्दे और समाधान
+
+| समस्या | क्षम कारण | समाधान |
 |-------|--------------|----------|
-| अटैचमेंट्स `.dat` फ़ाइलों के रूप में दिखते हैं | `PreserveTnefAttachments` सक्षम नहीं है | लोड करने से पहले `options.setPreserveTnefAttachments(true)` सेट किया गया है, यह सुनिश्चित करें। |
-| `FileNotFoundException` | `dataDir` पथ गलत है | डायरेक्टरी और फ़ाइल नाम की जाँच करें; परीक्षण के लिए पूर्ण पथ (absolute paths) उपयोग करें। |
+| अटैचमेंट्स `.dat` समकक्ष के रूप में दिखते हैं | `PreserveTnefAttachments` सक्षम नहीं है | लोड करने से पहले `options.setPreserveTnefAttachments(true)` सेट किया गया है, यह सुनिश्चित करें। |
+| `FileNotFoundException` | `dataDir` पथ गलत है | डायरेक्टरी और फ़ाइल नाम की जांच करें; परीक्षण के लिए पूर्ण पथ (absolute paths) उपयोग करें। |
 | बड़े मेलबॉक्स पर उच्च मेमोरी उपयोग | `MailMessage` ऑब्जेक्ट्स को डिस्पोज़ नहीं किया जा रहा है | प्रोसेसिंग के बाद `eml.dispose()` कॉल करें या रेफ़रेंस को `null` सेट करें। |
 
-## Frequently Asked Questions
+## अक्सर पूछे जाने वाले प्रश्न
 
-**Q1: TNEF क्या है, और मुझे इसका फ़ॉर्मेट क्यों संरक्षित करना चाहिए?**  
-A: TNEF (Transport Neutral Encapsulation Format) Outlook की प्रोप्राइटरी विधि है जो रिच‑कंटेंट अटैचमेंट्स को पैकेज करती है। इसे संरक्षित करने से मूल डेटा अपरिवर्तित रहता है, जो अनुपालन और सटीक रेंडरिंग के लिए महत्वपूर्ण है।
+**Q1: ​​TNEF क्या है, और मुझे इसका फ़ॉर्मेट क्यों सुरक्षित करना चाहिए?**
+A: TNEF (Transport Neutral Encapsulation Format) Outlook की प्रॉपर्टी विधि है जो रिच-कंटेंट अटैचमेंट्स को पैकेज करती है। इसे सुरक्षित करने से मूल डेटा दिया जाता है, जो अनुपालन और सटीक रेंडरिंग के लिए महत्वपूर्ण है।
 
-**Q2: क्या Aspose.Email बड़ी मात्रा में ईमेल फ़ाइलों को कुशलतापूर्वक संभाल सकता है?**  
-A: हाँ। उचित संसाधन प्रबंधन ( `MailMessage` ऑब्जेक्ट्स को डिस्पोज़ करना और JVM मेमोरी कॉन्फ़िगर करना) के साथ, लाइब्रेरी बल्क प्रोसेसिंग के लिए अच्छी तरह स्केल करती है।
+**Q2: क्या Aspose.Email बड़ी मात्रा में ईमेल सबमिशन को संभाल सकता है?**
+A: हाँ। उचित रिसोर्स मैनेजमेंट (`MailMessage` ऑब्जेक्ट्स को डिस्पोज़ करना और JVM मेमोरी को चालू करना) के साथ, लाइब्रेरी बल्क प्रोसेसिंग के लिए अच्छी तरह स्केल करती है।
 
-**Q3: गायब TNEF अटैचमेंट्स को कैसे ट्रबलशूट करूँ?**  
-A: फ़ाइल पथ की जाँच करें, सुनिश्चित करें कि `setPreserveTnefAttachments(true)` सक्रिय है, और जांचें कि स्रोत EML वास्तव में TNEF भागों को शामिल करता है।
+**Q3: गायब TNEF अटैचमेंट्स को कैसे ट्रबलशूट करूँ?**
+A: फ़ाइल पाथ की जाँच करें, सुनिश्चित करें कि `setPreserveTnefAttachments(true)` एक्टिव है, और सुनिश्चित करें कि सोर्स EML वास्तव में TNEFवॉट को शामिल करता है।
 
-**Q4: Aspose.Email for Java उपयोग करने की कोई लागत है?**  
-A: मूल्यांकन के लिए एक फ्री ट्रायल उपलब्ध है। उत्पादन उपयोग के लिए खरीदा गया लाइसेंस या विस्तारित परीक्षण के लिए अस्थायी लाइसेंस आवश्यक है।
+**Q4: Aspose.Email for Java इस्तेमाल करने की कोई लागत है?**
+A: मूल्यांकन के लिए एक मुफ़्त ट्रायल उपलब्ध है। प्रोडक्शन इस्तेमाल के लिए खरीदा गया लाइसेंस या विस्तारित ट्रायल के लिए अस्थायी लाइसेंस आवश्यक है।
 
-**Q5: यदि मुझे समस्याएँ आती हैं तो मदद कहाँ मिल सकती है?**  
-A: Aspose Email फ़ोरम पर जाएँ, आधिकारिक दस्तावेज़ देखें, या सीधे Aspose सपोर्ट से संपर्क करें।
+**Q5: यदि मुझे समस्याएँ आती हैं तो मदद कहाँ मिल सकती है?**
+A: Aspose Email फ़ोरम पर जाएँ, आधिकारिक डॉक्यूमेंट देखें, या सीधे Aspose सपोर्ट से संपर्क करें।
 
-**Q6: क्या Maven aspose email java डिपेंडेंसी अन्य JDK संस्करणों को सपोर्ट करती है?**  
-A: `jdk16` क्लासिफ़ायर JDK 16+ को टार्गेट करता है। पुराने JDK के लिए उपयुक्त क्लासिफ़ायर उपयोग करें या Aspose वेबसाइट से संबंधित बाइनरी डाउनलोड करें।
+**Q6: क्या Mavenasposeemailjava डिपेंडेंसी दूसरे JDK वर्जन को सपोर्ट करती है?**
+A: `jdk16` क्लासिफायर JDK16+ को टारगेट करता है। पुराने JDK के लिए सही क्लासिफायर इस्तेमाल करें या Aspose वेबसाइट से जुड़े ऑप्शन डाउनलोड करें।
 
-**Q7: क्या मैं इस दृष्टिकोण को अन्य Aspose.Email सुविधाओं, जैसे ईमेल रूपांतरण या SMTP भेजने, के साथ संयोजित कर सकता हूँ?**  
-A: बिल्कुल। एक बार जब आपके पास `MailMessage` ऑब्जेक्ट हो, तो आप Aspose.Email के किसी भी API का उपयोग कर सकते हैं—PST में रूपांतरण, SMTP के माध्यम से भेजना, या बॉडी कंटेंट निकालना।
+**Q7: क्या मैं इस तरीके को दूसरे Aspose.Email फीचर्स, जैसे ईमेल कन्वर्जन या SMTP भेजना, के साथ इंटीग्रेट कर सकता हूँ?**
+A: बिल्कुल। एक बार जब आपके पास `MailMessage` ऑब्जेक्ट हो, तो आप Aspose.Email के किसी भी API का इस्तेमाल कर सकते हैं—PST में कन्वर्जन, SMTP के ज़रिए से आसान, या बॉडी मटीरियल निकालना।
 
-## Resources
-- **Documentation**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial**: [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+## रिसोर्स
+- **डॉक्यूमेंटेशन**: [Aspose.Email Java डॉक्यूमेंटेशन](https://reference.aspose.com/email/java/)
+- **डाउनलोड**: [Aspose.Email रिलीज़](https://releases.aspose.com/email/java/)
+- **खरीदें**: [Aspose.Email खरीदें](https://purchase.aspose.com/buy)
+- **फ़्री ट्रायल**: [Aspose.Email को फ़्री में आज़माएँ](https://releases.aspose.com/email/java/)
+- **टेम्पररी लाइसेंस**: [टेम्पररी लाइसेंस पाएँ](https://purchase.aspose.com/temporary-license/)
+- **सपोर्ट**: [Aspose Email फ़ोरम](https://forum.aspose.com/c/email/10)
 
 ---
 

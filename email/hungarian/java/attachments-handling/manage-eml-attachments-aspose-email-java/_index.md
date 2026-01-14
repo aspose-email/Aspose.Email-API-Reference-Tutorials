@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Java email handling
 title: 'Hogyan lehet kinyerni az e‑mail mellékleteket EML fájlokból az Aspose.Email
-  for Java segítségével: Teljes útmutató'
+  for Java segítségével - Teljes útmutató'
 url: /hu/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -87,12 +87,12 @@ license.setLicense("path_to_your_license_file");
 
 Lépjünk be minden funkcióba lépésről‑lépésre.
 
-### Load an EML File
+### EML fájl betöltése
 
 #### Áttekintés
-Tanulja meg, hogyan **elemezze az EML fájlokat** és töltse be őket egy `MailMessage` objektumba az Aspose.Email for Java használatával.
+Tanulja meg, hogyan **elemezze az EML fájlokat** és töltse be őket egy `MailMessage` objektumba az Aspose.Email for Java használható.
 
-#### Code Snippet
+#### Kódrészlet
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -102,16 +102,16 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Explanation**:  
-- `dataDir` a mappára mutat, amely az EML fájlt tartalmazza.  
-- `EmlLoadOptions` lehetővé teszi a üzenet olvasásának finomhangolását (pl. beágyazott képek kezelése).
+**Magyarázat**:
+- `dataDir` a mappára mutat, amely az EML fájlt tartalmazza.
+- `EmlLoadOptions` lehetővé teszi az üzenet olvasásának finomhangolását (pl. beágyazott képek kezelése).
 
-### Initialize AttachmentCollection
+### A AttachmentCollection inicializálása
 
 #### Áttekintés
 Miután az EML fájlt betöltötte, a mellékleteket egy `AttachmentCollection` segítségével kérheti le.
 
-#### Code Snippet
+#### Kódrészlet
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -119,15 +119,15 @@ import com.aspose.email.AttachmentCollection;
 AttachmentCollection attachments = msg.getAttachments();
 ```
 
-**Explanation**:  
+**Magyarázat**:
 - `getAttachments()` egy gyűjteményt ad vissza, amely az e‑mailhez csatolt összes fájlt tartalmazza.
 
-### Iterate Over Attachments and Display Names
+### Iterálja a mellékleteket és a megjelenített neveket
 
 #### Áttekintés
-A gyűjtemény bejárása lehetővé teszi a **mellékletnevek lekérését**, ami hasznos naplózáshoz vagy UI listák építéséhez.
+A gyűjtemény bejárása lehetővé teszi a **mellékletnevek lekérését**, ami hasznos naplóhoz vagy UI listák építéséhez.
 
-#### Code Snippet
+#### Kódrészlet
 
 ```java
 import com.aspose.email.Attachment;
@@ -138,16 +138,16 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- A ciklus index szerint jár végig minden mellékleten.  
+**Magyarázat**:
+- A ciklus index szerint jár végig minden mellékleten.
 - `getName()` lekéri a melléklet eredeti fájlnevét.
 
-### Save Attachments to Disk
+### Mellékletek mentése lemezre
 
 #### Áttekintés
-Végül **elmenti az EML mellékleteket** egy mappába a számítógépén – tökéletes archiváláshoz vagy további feldolgozáshoz.
+Végül **elmenti az EML mellékleteket** egy mappába a számítógépen – tökéletes archiváláshoz vagy további feldolgozáshoz.
 
-#### Code Snippet
+#### Kódrészlet
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -158,54 +158,60 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- `outputDir` az a hely, ahová a fájlokat írni szeretné.  
+**Magyarázat**:
+- `outputDir` az a hely, ahová a fájlokat írni szeretné.
 - `save()` minden melléklethez új fájlt hoz létre; az `attachment_` előtag elkerüli a névütközéseket.
 
 ## Gyakorlati alkalmazások
 
-1. **Data Archiving** – Az e‑mail mellékletek megőrzése megfelelőség vagy nyilvántartás céljából.  
-2. **Email Parsing Services** – Számlák, önéletrajzok vagy naplók kinyerése bejövő üzenetekből egy támogatási rendszerben.  
-3. **Backup Solutions** – Automatizálja a fontos dokumentumok e‑mailen keresztül érkező mentését.
+1. **Adatarchiválás** – Az e‑mail mellékletek megőrzése megfelelőség vagy nyilvántartás céljából.
+2. **Email Parsing Services** – Számlák, önéletrajzok vagy naplók kinyerése bejövő üzenetekből egy támogatási rendszerben.
+3. **Backup Solutions** – Automatizálja a fontos dokumentumokat e‑mailen keresztül érkező mentést.
 
 ## Teljesítmény szempontok
 
 ### Teljesítmény optimalizálása
-- Használjon pufferelt streameket nagyon nagy mellékletek kezelésekor.  
+- Használjon pufferelt streameket nagyon nagy mellékletek kezelésekor.
 - Feldolgozza a mellékleteket darabokban, ha gigabájt méretű fájlokra számít.
 
 ### Erőforrás használati irányelvek
-- Figyelje a heap használatát; a nagy mellékletek gyorsan elfogyaszthatják a memóriát.  
-- Előnyben részesítse a try‑with‑resources‑t minden fájl I/O‑hoz, amelyet az Aspose hívásokon túl hozzáad.
+- Figyelje a heap használatát; a nagy mellékletek gyorsan elfogyaszthatják a memóriát.
+- Előnyben részesítse a try-with-resources-t minden fájlt I/O-hoz, amelyet az Aspose hívásokon túl add.
 
 ### Legjobb gyakorlatok a Java memória kezeléshez
-- Zárja le a streameket gyorsan.  
+- Zárja le a streameket gyorsan.
 - Fontolja meg a JVM heap növelését (`-Xmx`) nehéz feladatokhoz.
 
 ## Gyakran Ismételt Kérdések
 
-**K: Hogyan kezeljem a titkosított EML fájlokat?**  
-V: Használja a `LoadOptions`‑t a dekódolási hitelesítő adatok megadásához, ha az e‑mail szolgáltatás támogatja.
+**K: Hogyan kezeljem a titkosított EML fájlokat?**
+V: Használja a `LoadOptions`-t a dekódolási hitelesítő adatok megadásához, ha az e‑mail szolgáltatást támogatja.
 
-**K: Az Aspose.Email for Java képes HTML e‑mailokat elemezni?**  
-V: Igen – a HTML törzsek elérhetők a `msg.getHtmlBody()`‑val, és bármilyen sztringként feldolgozhatók.
+**K: Az Aspose.Email for Java képes HTML e‑mailokat elemezni?**
+V: Igen – a HTML törzsek elérhetők a `msg.getHtmlBody()`-val, és bármilyen sztringként feldolgozhatók.
 
-**K: Milyen gyakori problémák merülnek fel a mellékletek mentésekor?**  
-V: A szokásos okok a nem elegendő lemezterület vagy a hiányzó írási jogosultságok. Ellenőrizze, hogy a célmappa létezik és írható.
+**K: Milyen gyakori problémák merülnek fel a mellékletek mentésekor?**
+V: A szokásosok a nem elegendő lemezterület vagy a hiányzó írási jogosultságok. hogy a célmappa létezik és írható.
 
-**K: Lehet EML fájlokat hálózati helyről betölteni?**  
-V: Természetesen – csak adja meg a teljes UNC útvonalat vagy URL‑t a `MailMessage.load`‑nak.
+**K: Lehet EML fájlokat hálózati helyről betölteni?**
+V: Természetesen – csak adja meg a teljes UNC útvonalat vagy URL-t a `MailMessage.load`-nak.
 
-**K: Hogyan szerezzek licencet termelési használathoz?**  
+**K: Hogyan szerezzek licencet termelési használathoz?**
 V: Látogassa meg az [Aspose vásárlási oldalát](https://purchase.aspose.com/buy), hogy teljes licencet szerezzen.
 
 ## Erőforrások
-- **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+- **Dokumentáció**: [Aspose.Email Java referencia](https://reference.aspose.com/email/java/)
+- **Letöltés**: [Aspose.Email kiadások](https://releases.aspose.com/email/java/)
+- **Vásárlás**: [Aspose.Email vásárlása](https://purchase.aspose.com/buy)
+- **Ingyenes próbaverzió**: [Ingyenes próbaverzióval kezdés](https://releases.aspose.com/email/java/)
+- **Ideiglenes licenc**: [Ideiglenes licenc beszerzése](https://purchase.aspose.com/temporary-license/)
+- **Támogatás**: [Aspose Email Fórum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Utoljára frissítve:** 2025-12-17
+**Tesztelve:** Aspose.Email a következőhöz: Java25.4 (jdk16 osztályozó)
+**Szerző:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -214,9 +220,3 @@ V: Látogassa meg az [Aspose vásárlási oldalát](https://purchase.aspose.com/
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-17  
-**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Szerző:** Aspose

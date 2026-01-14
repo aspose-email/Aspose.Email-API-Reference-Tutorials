@@ -127,6 +127,12 @@ A: 前往 Aspose 論壇、查閱線上文件，或聯繫其支援團隊。
 
 探索這些資源，以加深了解並在專案中充分發揮 Aspose.Email for Java 的潛力。祝開發愉快！
 
+---
+
+**最後更新：** 2025-12-17  
+**測試環境：** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -134,9 +140,3 @@ A: 前往 Aspose 論壇、查閱線上文件，或聯繫其支援團隊。
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-17  
-**測試環境：** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**作者：** Aspose

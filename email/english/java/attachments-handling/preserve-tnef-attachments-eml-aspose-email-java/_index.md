@@ -1,5 +1,5 @@
 ---
-title: "Preserve TNEF Attachments in EML Files Using Aspose.Email for Java: A Comprehensive Guide"
+title: "Preserve TNEF Attachments in EML Files Using Aspose.Email for Java - A Comprehensive Guide"
 description: "Learn how to preserve TNEF attachments in EML files using Aspose.Email for Java. This guide covers setup, implementation, and troubleshooting with step-by-step instructions."
 date: "2025-12-17"
 weight: 1

@@ -30,8 +30,6 @@ Ao final deste guia você será capaz de:
 * Detectar quais anexos são inline e gravá‑los no disco.  
 * Aplicar as melhores práticas de desempenho para processamento em lote.
 
----
-
 ## Respostas Rápidas
 - **O que significa “inline attachment”?** Um anexo que está incorporado no corpo do e‑mail (por exemplo, imagens exibidas dentro da mensagem).  
 - **Qual biblioteca manipula arquivos MSG?** Aspose.Email para Java.  

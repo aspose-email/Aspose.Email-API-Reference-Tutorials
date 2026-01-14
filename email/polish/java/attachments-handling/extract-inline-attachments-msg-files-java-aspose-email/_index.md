@@ -30,8 +30,6 @@ Pod koniec tego przewodnika będziesz w stanie:
 * Wykrywać, które załączniki są inline i zapisywać je na dysku.  
 * Zastosować najlepsze praktyki wydajnościowe przy przetwarzaniu hurtowym.
 
----
-
 ## Szybkie odpowiedzi
 - **Co oznacza „załącznik inline”?** Załącznik osadzony w treści e‑maila (np. obrazy wyświetlane w wiadomości).  
 - **Która biblioteka obsługuje pliki MSG?** Aspose.Email dla Javy.  

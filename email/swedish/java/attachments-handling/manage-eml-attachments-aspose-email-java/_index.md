@@ -6,8 +6,7 @@ keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: 'Hur man extraherar e‑postbilagor från EML‑filer med Aspose.Email för Java:
-  En komplett guide'
+title: 'Hur man extraherar e‑postbilagor från EML‑filer med Aspose.Email för Java - En komplett guide'
 url: /sv/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -192,6 +191,12 @@ A: Besök [Aspose's Purchase Page](https://purchase.aspose.com/buy) för att ska
 - **Tillfällig licens**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Senast uppdaterad:** 2025-12-17  
+**Testad med:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +204,3 @@ A: Besök [Aspose's Purchase Page](https://purchase.aspose.com/buy) för att ska
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-17  
-**Testad med:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Författare:** Aspose

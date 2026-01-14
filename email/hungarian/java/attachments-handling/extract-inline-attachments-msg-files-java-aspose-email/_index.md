@@ -30,8 +30,6 @@ A végére a következőket fogod tudni:
 * Felismerni, mely mellékletek beágyazottak, és lementeni őket lemezre.  
 * Teljesítmény‑legjobb gyakorlatokat alkalmazni tömeges feldolgozás esetén.
 
----
-
 ## Gyors válaszok
 - **Mit jelent a „beágyazott melléklet”?** Olyan melléklet, amely az e‑mail törzsében van beágyazva (pl. a levélben megjelenő képek).  
 - **Melyik könyvtár kezeli az MSG fájlokat?** Aspose.Email for Java.  

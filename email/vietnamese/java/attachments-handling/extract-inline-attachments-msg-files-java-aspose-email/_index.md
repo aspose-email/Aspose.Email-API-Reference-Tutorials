@@ -30,8 +30,6 @@ Sau khi hoàn thành hướng dẫn này, bạn sẽ có thể:
 * Phát hiện các đính kèm nào là inline và ghi chúng ra đĩa.  
 * Áp dụng các thực hành tốt nhất về hiệu suất cho việc xử lý hàng loạt.
 
----
-
 ## Câu trả lời nhanh
 - **What does “inline attachment” mean?** Một đính kèm được nhúng trong phần thân email (ví dụ: hình ảnh hiển thị trong tin nhắn).  
 - **Which library handles MSG files?** Aspose.Email cho Java.  

@@ -5,7 +5,7 @@ keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: 使用 Aspose.Email for Java 從 EML 檔案提取電郵附件：完整指南
+title: 使用 Aspose.Email for Java 從 EML 檔案提取電郵附件 - 完整指南
 url: /zh-hant/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -205,6 +205,12 @@ A: 前往 [Aspose 的購買頁面](https://purchase.aspose.com/buy) 取得完整
 - **臨時授權**： [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **支援**： [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**最後更新：** 2025-12-17  
+**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -212,9 +218,3 @@ A: 前往 [Aspose 的購買頁面](https://purchase.aspose.com/buy) 取得完整
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-17  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者：** Aspose

@@ -129,6 +129,12 @@ Trong hướng dẫn này, bạn đã học **cách sử dụng Aspose.Email** �
 
 Khám phá các tài nguyên này để nâng cao hiểu biết và khai thác tối đa tiềm năng của Aspose.Email cho Java trong các dự án của bạn. Chúc lập trình vui vẻ!
 
+---
+
+**Cập nhật lần cuối:** 2025-12-17  
+**Kiểm tra với:** Aspose.Email 25.4 cho Java (phân loại JDK 16)  
+**Tác giả:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -136,11 +142,3 @@ Khám phá các tài nguyên này để nâng cao hiểu biết và khai thác t
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-17  
-**Kiểm tra với:** Aspose.Email 25.4 cho Java (phân loại JDK 16)  
-**Tác giả:** Aspose  
-
----

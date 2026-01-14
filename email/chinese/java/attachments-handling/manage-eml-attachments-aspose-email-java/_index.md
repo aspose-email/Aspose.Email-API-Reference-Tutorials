@@ -205,6 +205,12 @@ for (int index = 0; index < attachments.size(); index++) {
 - **临时许可证**：[Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **支持**：[Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**最后更新：** 2025-12-17  
+**测试环境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -212,9 +218,3 @@ for (int index = 0; index < attachments.size(); index++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-17  
-**测试环境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者：** Aspose

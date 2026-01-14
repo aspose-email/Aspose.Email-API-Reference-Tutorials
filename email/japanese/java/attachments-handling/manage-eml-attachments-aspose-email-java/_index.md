@@ -5,7 +5,7 @@ keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: Aspose.Email for Java を使用して EML ファイルからメール添付ファイルを抽出する方法：完全ガイド
+title: Aspose.Email for Java を使用して EML ファイルからメール添付ファイルを抽出する方法 - 完全ガイド
 url: /ja/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -225,6 +225,12 @@ A: [Aspose の購入ページ](https://purchase.aspose.com/buy) へアクセス�
 - **一時ライセンス**: [一時ライセンスを取得](https://purchase.aspose.com/temporary-license/)  
 - **サポート**: [Aspose Email フォーラム](https://forum.aspose.com/c/email/10)
 
+---
+
+**最終更新日:** 2025-12-17  
+**テスト済み:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -232,9 +238,3 @@ A: [Aspose の購入ページ](https://purchase.aspose.com/buy) へアクセス�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-17  
-**テスト済み:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者:** Aspose

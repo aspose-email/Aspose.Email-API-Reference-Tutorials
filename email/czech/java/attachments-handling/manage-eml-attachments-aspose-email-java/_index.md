@@ -6,8 +6,7 @@ keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: 'Jak extrahovat přílohy e‑mailů z EML souborů pomocí Aspose.Email pro Java:
-  Kompletní průvodce'
+title: 'Jak extrahovat přílohy e‑mailů z EML souborů pomocí Aspose.Email pro Java - Kompletní průvodce'
 url: /cs/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -207,6 +206,12 @@ A: Navštivte [Aspose's Purchase Page](https://purchase.aspose.com/buy) a zakupt
 - **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-17  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +219,3 @@ A: Navštivte [Aspose's Purchase Page](https://purchase.aspose.com/buy) a zakupt
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-17  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

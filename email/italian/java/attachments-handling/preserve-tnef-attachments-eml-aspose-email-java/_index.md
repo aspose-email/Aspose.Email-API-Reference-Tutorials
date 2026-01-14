@@ -7,7 +7,7 @@ keywords:
 - preserve tnef attachments
 - Aspose.Email for Java
 - handle TNEF in EML files
-title: 'Conserva gli allegati TNEF nei file EML usando Aspose.Email per Java: Guida
+title: 'Conserva gli allegati TNEF nei file EML usando Aspose.Email per Java - Guida
   completa'
 url: /it/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
@@ -20,48 +20,48 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Come preservare gli allegati TNEF nei file EML usando Aspose.Email per Java
 
-## Introduction
+## Introduzione
 
-Stai incontrando difficoltà nella gestione degli allegati TNEF (Transport Neutral Encapsulation Format) mentre lavori con file EML in Java? **Se devi preservare gli allegati TNEF**, questa guida ti mostrerà esattamente come mantenere intatti quei file usando Aspose.Email per Java. TNEF è comunemente usato da Microsoft Outlook e preservare questi allegati durante l'elaborazione delle email può essere complesso. Con Aspose.Email, il compito diventa semplice e affidabile.
+Stai incontrando difficoltà nella gestione degli allegati TNEF (Transport Neutral Encapsulation Format) mentre lavori con file EML in Java? **Se devi preservare gli allegati TNEF**, questa guida ti mostrerà esattamente come mantenere intatti quei file utilizzando Aspose.Email per Java. TNEF è comunemente usato da Microsoft Outlook e preservare questi allegati durante l'elaborazione delle e-mail può essere complesso. Con Aspose.Email, il compito diventa semplice e affidabile.
 
-In questo tutorial, imparerai a configurare la libreria, caricare un file EML senza perdere le sue parti TNEF e verificare che gli allegati rimangano intatti.
+In questo tutorial, imparerai a configurare la libreria, caricare un file EML senza perdere le sue parti TNEF e verificare che gli allegati rimangono intatti.
 
 **Cosa imparerai**
-- Come configurare la libreria Aspose.Email per Java (incluso un esempio Maven aspose email java).  
-- Passaggi per caricare un file EML mantenendo **gli allegati TNEF**.  
-- Opzioni chiave di configurazione in `EmlLoadOptions`.  
+- Come configurare la libreria Aspose.Email per Java (incluso un esempio Mavenasposeemailjava).
+- Passaggi per caricare un file EML mantenendo **gli allegati TNEF**.
+- Opzioni chiave di configurazione in `EmlLoadOptions`.
 - Problemi comuni e suggerimenti per la risoluzione.
 
 Pronto per iniziare? Iniziamo preparando il tuo ambiente di sviluppo.
 
-## Quick Answers
-- **Cosa significa “preservare gli allegati TNEF”?** Mantiene i file originali codificati in TNEF invariati durante il caricamento di un EML.  
-- **Quale libreria gestisce questo?** Aspose.Email per Java (versione 25.4+).  
-- **È necessario Maven?** Sì – il tutorial include uno snippet di dipendenza Maven aspose email java.  
-- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza permanente per la produzione.  
-- **Posso elaborare grandi caselle di posta?** Assolutamente, con una corretta gestione della memoria e il pattern di smaltimento di `MailMessage`.
+## Risposte rapide
+- **Cosa significa “preservare gli allegati TNEF”?** Mantiene i file originali codificati in TNEF invariati durante il caricamento di un EML.
+- **Quale libreria gestisce questo?** Aspose.Email per Java (versione25.4+).
+- **È necessario Maven?** Sì – il tutorial include uno snippet di dipendenza Mavenasposeemailjava.
+- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza permanente per la produzione.
+- **Posso elaborare grandi caselle di posta?** Assolutamente, con una corretta gestione della memoria e il modello di smaltimento di `MailMessage`.
 
-## Prerequisites
+## Prerequisiti
 
-Before we begin, ensure you have the following:
+Prima di iniziare, assicurati di avere quanto segue:
 
-### Required Libraries and Dependencies
-- **Aspose.Email per Java**: Si consiglia la versione 25.4 o successiva per prestazioni ottimali.  
-- **Maven**: Useremo una dipendenza Maven aspose email java per ottenere la libreria.
+### Librerie e dipendenze richieste
+- **Aspose.Email per Java**: Si consiglia la versione 25.4 o successiva per prestazioni ottimali.
+- **Maven**: Useremo una dipendenza Mavenasposeemailjava per ottenere la libreria.
 
-### Environment Setup Requirements
-- Un IDE compatibile (ad esempio IntelliJ IDEA, Eclipse) per eseguire applicazioni Java.  
-- JDK 16 o superiore installato sulla tua macchina.
+### Requisiti di configurazione dell'ambiente
+- Un IDE compatibile (ad esempio IntelliJ IDEA, Eclipse) per eseguire applicazioni Java.
+- JDK16o superiore installato sulla tua macchina.
 
-### Knowledge Prerequisites
-- Conoscenza di base della programmazione Java.  
+### Prerequisiti di conoscenza
+- Conoscenza di base della programmazione Java.
 - Familiarità con la gestione di file email e allegati nello sviluppo software.
 
-## Setting Up Aspose.Email for Java
+## Configurazione di Aspose.Email per Java
 
-### Aspose Email Java Tutorial: Installation via Maven
+### Aspose Email Java Tutorial: installazione tramite Maven
 
-Add the following dependency to your `pom.xml` file:
+Aggiungi la seguente dipendenza al tuo file `pom.xml`:
 
 ```xml
 <dependency>
@@ -72,49 +72,49 @@ Add the following dependency to your `pom.xml` file:
 </dependency>
 ```
 
-### License Acquisition Steps
+### Passaggi di acquisizione della licenza
 
-- **Prova gratuita** – inizia con una prova per esplorare le funzionalità.  
-- **Licenza temporanea** – ottieni una licenza temporanea per test più lunghi.  
+- **Prova gratuita** – inizia con una prova per esplorare le funzionalità.
+- **Licenza temporanea** – ottieni una licenza temporanea per test più lunghi.
 - **Acquisto** – considera l'acquisto di una licenza completa per l'uso in produzione.
 
-To activate your license, place the license file in your project and run:
+Per attivare la licenza, inserisci il file di licenza nel tuo progetto ed esegui:
 
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Implementation Guide
+## Guida all'implementazione
 
-### Loading EML with PreserveTnefAttachments Feature
+### Caricamento EML con la funzione PreserveTnefAttachments
 
-#### Overview
+#### Panoramica
 
 Il flag `PreserveTnefAttachments` indica ad Aspose.Email di mantenere i file TNEF originali esattamente come appaiono nell'EML di origine, evitando qualsiasi conversione automatica.
 
-#### Step‑by‑Step Implementation
+#### Implementazione passo dopo passo
 
-**1. Configure Load Options**
+**1. Configura le opzioni di caricamento**
 
-Create an instance of `EmlLoadOptions` and enable TNEF preservation:
+Crea un'istanza di `EmlLoadOptions` e abilita la conservazione TNEF:
 
 ```java
 EmlLoadOptions options = new EmlLoadOptions();
 options.setPreserveTnefAttachments(true);
 ```
 
-**2. Load the EML File**
+**2. Carica il file EML**
 
-Pass the options when loading your message:
+Passa le opzioni durante il caricamento del messaggio:
 
 ```java
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 ```
 
-**3. Access Attachments**
+**3. Accedi agli allegati**
 
-Iterate through the attachments to verify they are still TNEF files:
+Scorri gli allegati per verificare che siano ancora file TNEF:
 
 ```java
 for (Attachment attachment : eml.getAttachments()) {

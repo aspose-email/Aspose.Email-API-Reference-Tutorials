@@ -30,8 +30,6 @@ Aan het einde van deze gids kun je:
 * Detecteren welke bijlagen inline zijn en ze naar schijf schrijven.  
 * Prestaties‑best practices toepassen voor bulkverwerking.
 
----
-
 ## Snelle Antwoorden
 - **Wat betekent “inline attachment”?** Een bijlage die in de e‑mailtekst is ingebed (bijv. afbeeldingen die binnen het bericht worden weergegeven).  
 - **Welke bibliotheek verwerkt MSG‑bestanden?** Aspose.Email voor Java.  

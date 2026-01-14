@@ -130,6 +130,12 @@ A: Besök Aspose‑forum, konsultera den online‑dokumentationen eller kontakta
 
 Utforska dessa resurser för att fördjupa din förståelse och utnyttja hela potentialen i Aspose.Email för Java i dina projekt. Lycka till med kodningen!
 
+---
+
+**Senast uppdaterad:** 2025-12-17  
+**Testad med:** Aspose.Email 25.4 för Java (JDK 16‑klassificering)  
+**Författare:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -137,11 +143,3 @@ Utforska dessa resurser för att fördjupa din förståelse och utnyttja hela po
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-17  
-**Testad med:** Aspose.Email 25.4 för Java (JDK 16‑klassificering)  
-**Författare:** Aspose  
-
----

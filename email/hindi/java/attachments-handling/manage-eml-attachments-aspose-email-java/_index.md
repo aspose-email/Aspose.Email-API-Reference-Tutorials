@@ -207,6 +207,12 @@ A: पूर्ण लाइसेंस प्राप्त करने क�
 - **अस्थायी लाइसेंस**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **सपोर्ट**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**अंतिम अपडेट:** 2025-12-17  
+**परीक्षित संस्करण:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -214,9 +220,3 @@ A: पूर्ण लाइसेंस प्राप्त करने क�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2025-12-17  
-**परीक्षित संस्करण:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**लेखक:** Aspose
