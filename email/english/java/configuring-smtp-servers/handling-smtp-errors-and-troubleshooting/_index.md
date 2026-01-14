@@ -127,28 +127,6 @@ try {
 | `Mailbox unavailable` | Invalid recipient address | Double‑check the email address format |
 | `Message size exceeds limit` | Large attachment | Compress or split attachments |
 
-## FAQ's
-
-### How do I check if an email was sent successfully?
-
-You can use the try‑catch block to catch any SMTP exceptions. If no exception is thrown, the email was sent successfully.
-
-### What should I do if I encounter an "Authentication Failed" error?
-
-Double‑check your username and password for correctness. Ensure that you're using the correct credentials for your SMTP server.
-
-### Can I send attachments with my emails using Aspose.Email for Java?
-
-Yes, you can easily attach files to your emails using the `Attachment` class provided by Aspose.Email for Java.
-
-### Why do I get a "Connection Timeout" error when sending emails?
-
-This error usually occurs when the SMTP server is slow or unreachable. Check your network connection and verify the server's availability.
-
-### Is Aspose.Email for Java suitable for handling large volumes of emails?
-
-Yes, Aspose.Email for Java is designed to handle both small and large email volumes efficiently.
-
 ## Frequently Asked Questions
 
 **Q: How can I add multiple attachments in one email?**  

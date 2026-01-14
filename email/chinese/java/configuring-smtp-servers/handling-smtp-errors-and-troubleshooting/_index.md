@@ -129,28 +129,6 @@ try {
 | `Mailbox unavailable` | 无效的收件人地址 | 再次检查电子邮件地址格式 |
 | `Message size exceeds limit` | 附件过大 | 压缩或拆分附件 |
 
-## 常见问题
-
-### 如何检查电子邮件是否发送成功？
-
-您可以使用 try‑catch 块捕获任何 SMTP 异常。如果未抛出异常，则电子邮件发送成功。
-
-### 如果遇到 “Authentication Failed” 错误，我该怎么办？
-
-再次检查用户名和密码是否正确。确保使用的是 SMTP 服务器的正确凭据。
-
-### 我可以使用 Aspose.Email for Java 为我的电子邮件发送附件吗？
-
-是的，您可以使用 Aspose.Email for Java 提供的 `Attachment` 类轻松地将文件附加到电子邮件中。
-
-### 为什么在发送电子邮件时会出现 “Connection Timeout” 错误？
-
-此错误通常在 SMTP 服务器响应缓慢或不可达时出现。检查网络连接并验证服务器是否可用。
-
-### Aspose.Email for Java 适合处理大量电子邮件吗？
-
-是的，Aspose.Email for Java 旨在高效处理小批量和大批量邮件。
-
 ## 常见问答
 
 **Q: 如何在一封邮件中添加多个附件？**  

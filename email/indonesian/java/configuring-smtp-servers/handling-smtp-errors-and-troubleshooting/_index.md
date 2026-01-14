@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Alamat penerima tidak valid | Periksa kembali format alamat email |
 | `Message size exceeds limit` | Lampiran terlalu besar | Kompres atau bagi lampiran |
 
-## FAQ
-
-### Bagaimana cara memeriksa apakah email berhasil dikirim?
-
-Anda dapat menggunakan blok try‑catch untuk menangkap pengecualian SMTP apa pun. Jika tidak ada pengecualian yang dilempar, email berhasil dikirim.
-
-### Apa yang harus saya lakukan jika saya menemui kesalahan "Authentication Failed"?
-
-Periksa kembali nama pengguna dan kata sandi Anda untuk memastikan keakuratannya. Pastikan Anda menggunakan kredensial yang tepat untuk server SMTP Anda.
-
-### Bisakah saya mengirim lampiran dengan email saya menggunakan Aspose.Email untuk Java?
-
-Ya, Anda dapat dengan mudah melampirkan file ke email Anda menggunakan kelas `Attachment` yang disediakan oleh Aspose.Email untuk Java.
-
-### Mengapa saya mendapatkan kesalahan "Connection Timeout" saat mengirim email?
-
-Kesalahan ini biasanya terjadi ketika server SMTP lambat atau tidak dapat dijangkau. Periksa koneksi jaringan Anda dan verifikasi ketersediaan server.
-
-### Apakah Aspose.Email untuk Java cocok untuk menangani volume email yang besar?
-
-Ya, Aspose.Email untuk Java dirancang untuk menangani volume email kecil maupun besar secara efisien.
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Bagaimana cara menambahkan beberapa lampiran dalam satu email?**  

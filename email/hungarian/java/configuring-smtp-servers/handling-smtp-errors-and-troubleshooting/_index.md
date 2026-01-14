@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Érvénytelen címzettcím | Ellenőrizd a e‑mail cím formátumát |
 | `Message size exceeds limit` | Nagy méretű melléklet | Tömöríts vagy oszd szét a mellékleteket |
 
-## GyIK
-
-### Hogyan ellenőrizhetem, hogy az e‑mail sikeresen elküldésre került?
-
-Használj try‑catch blokkot az SMTP kivételek elkapására. Ha nem dobódik kivétel, az e‑mail sikeresen elküldésre került.
-
-### Mit tegyek, ha “Authentication Failed” hibát kapok?
-
-Ellenőrizd a felhasználóneved és jelszavad helyességét. Győződj meg róla, hogy a megfelelő hitelesítő adatokat használod az SMTP szerverhez.
-
-### Csatolhatok-e mellékleteket az e‑mailekhez az Aspose.Email for Java‑val?
-
-Igen, egyszerűen csatolhatsz fájlokat a `Attachment` osztály segítségével, amelyet az Aspose.Email for Java biztosít.
-
-### Miért kapok “Connection Timeout” hibát e‑mailek küldésekor?
-
-Ez a hiba általában akkor fordul elő, amikor az SMTP szerver lassú vagy elérhetetlen. Ellenőrizd a hálózati kapcsolatot és a szerver rendelkezésre állását.
-
-### Az Aspose.Email for Java alkalmas nagy mennyiségű e‑mail kezelésére?
-
-Igen, az Aspose.Email for Java úgy van tervezve, hogy kis és nagy e‑mail mennyiségeket egyaránt hatékonyan kezeljen.
-
 ## Gyakran feltett kérdések
 
 **Q: Hogyan adhatok hozzá több mellékletet egy e‑mailhez?**  

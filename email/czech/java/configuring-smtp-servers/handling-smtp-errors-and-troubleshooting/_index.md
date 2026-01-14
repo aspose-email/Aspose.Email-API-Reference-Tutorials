@@ -131,28 +131,6 @@ try {
 
 ## Často kladené otázky
 
-### Jak zjistit, zda byl e‑mail úspěšně odeslán?
-
-Můžete použít blok try‑catch k zachycení jakýchkoli SMTP výjimek. Pokud není vyvolána žádná výjimka, e‑mail byl úspěšně odeslán.
-
-### Co mám dělat, pokud narazím na chybu „Authentication Failed“?
-
-Znovu ověřte správnost uživatelského jména a hesla. Ujistěte se, že používáte správné přihlašovací údaje pro váš SMTP server.
-
-### Mohu odesílat přílohy s mými e‑maily pomocí Aspose.Email pro Java?
-
-Ano, můžete snadno připojit soubory k vašim e‑mailům pomocí třídy `Attachment`, kterou poskytuje Aspose.Email pro Java.
-
-### Proč dostávám chybu „Connection Timeout“ při odesílání e‑mailů?
-
-Tato chyba se obvykle vyskytuje, když je SMTP server pomalý nebo nedostupný. Zkontrolujte své síťové připojení a ověřte dostupnost serveru.
-
-### Je Aspose.Email pro Java vhodný pro zpracování velkých objemů e‑mailů?
-
-Ano, Aspose.Email pro Java je navržen tak, aby efektivně zpracovával jak malé, tak velké objemy e‑mailů.
-
-## Často kladené otázky
-
 **Q: Jak mohu přidat více příloh do jednoho e‑mailu?**  
 A: Použijte `message.getAttachments().addItem(new Attachment("file1.pdf"));` a opakujte pro každý soubor.
 

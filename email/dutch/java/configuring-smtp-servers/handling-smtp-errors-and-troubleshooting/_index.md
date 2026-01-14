@@ -130,28 +130,6 @@ try {
 
 ## Veelgestelde vragen
 
-### Hoe controleer ik of een e‑mail succesvol is verzonden?
-
-Je kunt het try‑catch‑blok gebruiken om eventuele SMTP‑excepties op te vangen. Als er geen exceptie wordt gegooid, is de e‑mail succesvol verzonden.
-
-### Wat moet ik doen als ik een “Authentication Failed”‑fout tegenkom?
-
-Controleer je gebruikersnaam en wachtwoord op juistheid. Zorg ervoor dat je de juiste inloggegevens voor je SMTP‑server gebruikt.
-
-### Kan ik bijlagen toevoegen aan mijn e‑mails met Aspose.Email voor Java?
-
-Ja, je kunt eenvoudig bestanden toevoegen aan je e‑mails met behulp van de `Attachment`‑klasse die door Aspose.Email voor Java wordt geleverd.
-
-### Waarom krijg ik een “Connection Timeout”‑fout bij het verzenden van e‑mails?
-
-Deze fout treedt meestal op wanneer de SMTP‑server traag of onbereikbaar is. Controleer je netwerkverbinding en verifieer de beschikbaarheid van de server.
-
-### Is Aspose.Email voor Java geschikt voor het verwerken van grote hoeveelheden e‑mail?
-
-Ja, Aspose.Email voor Java is ontworpen om zowel kleine als grote hoeveelheden e‑mail efficiënt te verwerken.
-
-## Veelgestelde vragen
-
 **Q: Hoe kan ik meerdere bijlagen in één e‑mail toevoegen?**  
 A: Gebruik `message.getAttachments().addItem(new Attachment("file1.pdf"));` en herhaal dit voor elk bestand.
 

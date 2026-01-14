@@ -132,28 +132,6 @@ try {
 
 ## Perguntas Frequentes
 
-### Como verificar se um e‑mail foi enviado com sucesso?
-
-Você pode usar o bloco try‑catch para capturar quaisquer exceções SMTP. Se nenhuma exceção for lançada, o e‑mail foi enviado com sucesso.
-
-### O que devo fazer se encontrar um erro "Authentication Failed"?
-
-Verifique novamente seu nome de usuário e senha para garantir que estejam corretos. Certifique-se de que está usando as credenciais corretas para o seu servidor SMTP.
-
-### Posso enviar anexos com meus e‑mails usando Aspose.Email para Java?
-
-Sim, você pode anexar arquivos facilmente aos seus e‑mails usando a classe `Attachment` fornecida pelo Aspose.Email para Java.
-
-### Por que recebo um erro "Connection Timeout" ao enviar e‑mails?
-
-Esse erro geralmente ocorre quando o servidor SMTP está lento ou inacessível. Verifique sua conexão de rede e confirme a disponibilidade do servidor.
-
-### O Aspose.Email para Java é adequado para lidar com grandes volumes de e‑mails?
-
-Sim, o Aspose.Email para Java foi projetado para lidar tanto com pequenos quanto com grandes volumes de e‑mail de forma eficiente.
-
-## Perguntas Frequentes
-
 **Q: Como posso adicionar vários anexos em um único e‑mail?**  
 A: Use `message.getAttachments().addItem(new Attachment("file1.pdf"));` e repita para cada arquivo.
 

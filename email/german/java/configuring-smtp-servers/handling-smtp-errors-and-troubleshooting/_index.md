@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable`      | Ungültige Empfängeradresse                              | E‑Mail‑Adressformat überprüfen                                                                                     |
 | `Message size exceeds limit`| Große Anhänge                                            | Anhänge komprimieren oder aufteilen                                                                               |
 
-## FAQ
-
-### Wie prüfe ich, ob eine E‑Mail erfolgreich gesendet wurde?
-
-Sie können den try‑catch‑Block verwenden, um etwaige SMTP‑Ausnahmen abzufangen. Wird keine Ausnahme ausgelöst, wurde die E‑Mail erfolgreich gesendet.
-
-### Was soll ich tun, wenn ich einen „Authentication Failed“-Fehler erhalte?
-
-Überprüfen Sie Benutzername und Passwort auf Richtigkeit. Stellen Sie sicher, dass Sie die korrekten Anmeldeinformationen für Ihren SMTP‑Server verwenden.
-
-### Kann ich Anhänge mit meinen E‑Mails über Aspose.Email für Java senden?
-
-Ja, Sie können Dateien ganz einfach mit der `Attachment`‑Klasse von Aspose.Email für Java an Ihre E‑Mails anhängen.
-
-### Warum erhalte ich einen „Connection Timeout“-Fehler beim Senden von E‑Mails?
-
-Dieser Fehler tritt häufig auf, wenn der SMTP‑Server langsam oder nicht erreichbar ist. Prüfen Sie Ihre Netzwerkverbindung und die Verfügbarkeit des Servers.
-
-### Ist Aspose.Email für Java geeignet, um große Mengen an E‑Mails zu verarbeiten?
-
-Ja, Aspose.Email für Java ist darauf ausgelegt, sowohl kleine als auch große E‑Mail‑Volumina effizient zu handhaben.
-
 ## Häufig gestellte Fragen
 
 **Q: Wie kann ich mehrere Anhänge in einer E‑Mail hinzufügen?**  

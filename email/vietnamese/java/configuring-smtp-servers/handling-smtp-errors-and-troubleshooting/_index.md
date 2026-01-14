@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Địa chỉ người nhận không hợp lệ | Kiểm tra lại định dạng địa chỉ email |
 | `Message size exceeds limit` | Tệp đính kèm quá lớn | Nén hoặc chia nhỏ các tệp đính kèm |
 
-## Câu Hỏi Thường Gặp
-
-### Làm sao kiểm tra email có được gửi thành công không?
-
-Bạn có thể dùng khối try‑catch để bắt bất kỳ ngoại lệ SMTP nào. Nếu không có ngoại lệ nào được ném, email đã được gửi thành công.
-
-### Nên làm gì nếu gặp lỗi “Authentication Failed”?
-
-Kiểm tra lại tên người dùng và mật khẩu để đảm bảo chúng đúng. Đảm bảo bạn đang sử dụng thông tin đăng nhập phù hợp với máy chủ SMTP của mình.
-
-### Tôi có thể gửi tệp đính kèm cùng email bằng Aspose.Email for Java không?
-
-Có, bạn có thể dễ dàng đính kèm tệp vào email bằng lớp `Attachment` được cung cấp bởi Aspose.Email for Java.
-
-### Tại sao tôi nhận được lỗi “Connection Timeout” khi gửi email?
-
-Lỗi này thường xảy ra khi máy chủ SMTP chậm hoặc không thể truy cập được. Kiểm tra kết nối mạng và xác nhận máy chủ đang hoạt động.
-
-### Aspose.Email for Java có phù hợp để xử lý khối lượng email lớn không?
-
-Có, Aspose.Email for Java được thiết kế để xử lý cả khối lượng email nhỏ và lớn một cách hiệu quả.
-
 ## Các Câu Hỏi Thường Gặp
 
 **Q: Làm sao thêm nhiều tệp đính kèm trong một email?**  

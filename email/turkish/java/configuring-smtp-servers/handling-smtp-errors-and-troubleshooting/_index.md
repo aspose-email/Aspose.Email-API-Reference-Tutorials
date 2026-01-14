@@ -126,23 +126,6 @@ try {
 | `Mailbox unavailable` | Geçersiz alıcı adresi | E‑posta adresi biçimini tekrar kontrol edin. |
 | `Message size exceeds limit` | Büyük ek | Ekleri sıkıştırın veya bölün. |
 
-## SSS'ler
-
-### Bir e‑posta başarılı bir şekilde gönderildiğini nasıl kontrol ederim?
-Herhangi bir SMTP istisnasını yakalamak için try‑catch bloğunu kullanabilirsiniz. İstisna atılmazsa, e‑posta başarılı bir şekilde gönderilmiş demektir.
-
-### "Authentication Failed" hatasıyla karşılaşırsam ne yapmalıyım?
-Kullanıcı adınızı ve şifrenizi doğruluğu açısından tekrar kontrol edin. SMTP sunucunuz için doğru kimlik bilgilerini kullandığınızdan emin olun.
-
-### Aspose.Email for Java kullanarak e‑postalarıma ek gönderebilir miyim?
-Evet, Aspose.Email for Java tarafından sağlanan `Attachment` sınıfını kullanarak e‑postalarınıza dosya ekleyebilirsiniz.
-
-### E‑posta gönderirken "Connection Timeout" hatası neden alıyorum?
-Bu hata genellikle SMTP sunucusunun yavaş veya erişilemez olması durumunda ortaya çıkar. Ağ bağlantınızı kontrol edin ve sunucunun kullanılabilirliğini doğrulayın.
-
-### Aspose.Email for Java büyük miktarda e‑posta işlemek için uygun mu?
-Evet, Aspose.Email for Java, hem küçük hem de büyük e‑posta hacimlerini verimli bir şekilde işlemek üzere tasarlanmıştır.
-
 ## Sıkça Sorulan Sorular
 
 **S: Bir e‑postada birden fazla ek nasıl ekleyebilirim?**  

@@ -130,28 +130,6 @@ try {
 | `Mailbox unavailable` | Ogiltig mottagaradress | Dubbelkolla e‑postadressens format |
 | `Message size exceeds limit` | Stor bilaga | Komprimera eller dela upp bilagor |
 
-## Vanliga frågor
-
-### Hur kontrollerar jag om ett e‑postmeddelande skickades framgångsrikt?
-
-Du kan använda try‑catch‑blocket för att fånga eventuella SMTP‑undantag. Om inget undantag kastas har e‑postmeddelandet skickats framgångsrikt.
-
-### Vad ska jag göra om jag får ett “Authentication Failed”-fel?
-
-Dubbelkolla att ditt användarnamn och lösenord är korrekta. Se till att du använder rätt autentiseringsuppgifter för din SMTP‑server.
-
-### Kan jag skicka bilagor med mina e‑postmeddelanden med Aspose.Email för Java?
-
-Ja, du kan enkelt bifoga filer till dina e‑postmeddelanden med `Attachment`‑klassen som tillhandahålls av Aspose.Email för Java.
-
-### Varför får jag ett “Connection Timeout”-fel när jag skickar e‑post?
-
-Detta fel uppstår vanligtvis när SMTP‑servern är långsam eller oåtkomlig. Kontrollera din nätverksanslutning och verifiera att servern är tillgänglig.
-
-### Är Aspose.Email för Java lämplig för att hantera stora volymer av e‑post?
-
-Ja, Aspose.Email för Java är designat för att effektivt hantera både små och stora volymer av e‑post.
-
 ## Vanliga frågor och svar
 
 **Q: Hur kan jag lägga till flera bilagor i ett e‑postmeddelande?**  

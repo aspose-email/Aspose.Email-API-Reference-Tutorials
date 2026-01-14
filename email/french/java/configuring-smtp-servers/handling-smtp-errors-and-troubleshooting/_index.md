@@ -130,28 +130,6 @@ try {
 | `Mailbox unavailable` | Adresse du destinataire invalide | Vérifiez le format de l'adresse e‑mail |
 | `Message size exceeds limit` | Pièce jointe volumineuse | Compressez ou divisez les pièces jointes |
 
-## FAQ
-
-### Comment vérifier si un e‑mail a été envoyé avec succès ?
-
-Vous pouvez utiliser le bloc try‑catch pour intercepter les exceptions SMTP. Si aucune exception n’est levée, l’e‑mail a été envoyé avec succès.
-
-### Que faire si je rencontre une erreur « Authentication Failed » ?
-
-Vérifiez à nouveau votre nom d'utilisateur et votre mot de passe. Assurez‑vous d’utiliser les bons identifiants pour votre serveur SMTP.
-
-### Puis‑je envoyer des pièces jointes avec mes e‑mails en utilisant Aspose.Email pour Java ?
-
-Oui, vous pouvez facilement joindre des fichiers à vos e‑mails en utilisant la classe `Attachment` fournie par Aspose.Email pour Java.
-
-### Pourquoi obtient‑je une erreur « Connection Timeout » lors de l’envoi d’e‑mails ?
-
-Cette erreur survient généralement lorsque le serveur SMTP est lent ou inaccessible. Vérifiez votre connexion réseau et assurez‑vous de la disponibilité du serveur.
-
-### Aspose.Email pour Java est‑il adapté à la gestion de gros volumes d’e‑mails ?
-
-Oui, Aspose.Email pour Java est conçu pour gérer efficacement les petits comme les gros volumes d’e‑mails.
-
 ## Questions fréquemment posées
 
 **Q : Comment ajouter plusieurs pièces jointes dans un même e‑mail ?**  

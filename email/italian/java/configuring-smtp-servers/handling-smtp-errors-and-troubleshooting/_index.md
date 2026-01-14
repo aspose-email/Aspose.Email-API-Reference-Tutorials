@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Indirizzo destinatario non valido | Controlla nuovamente il formato dell'indirizzo email |
 | `Message size exceeds limit` | Allegato troppo grande | Comprimi o suddividi gli allegati |
 
-## FAQ
-
-### Come verificare se un'email è stata inviata correttamente?
-
-Puoi usare il blocco try‑catch per catturare eventuali eccezioni SMTP. Se non viene sollevata alcuna eccezione, l'email è stata inviata con successo.
-
-### Cosa devo fare se incontro un errore “Authentication Failed”?
-
-Verifica nuovamente nome utente e password per correttezza. Assicurati di utilizzare le credenziali corrette per il tuo server SMTP.
-
-### Posso inviare allegati con le mie email usando Aspose.Email per Java?
-
-Sì, puoi facilmente allegare file alle tue email usando la classe `Attachment` fornita da Aspose.Email per Java.
-
-### Perché ricevo un errore “Connection Timeout” quando invio email?
-
-Questo errore si verifica solitamente quando il server SMTP è lento o non raggiungibile. Controlla la tua connessione di rete e verifica la disponibilità del server.
-
-### Aspose.Email per Java è adatto per gestire grandi volumi di email?
-
-Sì, Aspose.Email per Java è progettato per gestire sia piccoli che grandi volumi di email in modo efficiente.
-
 ## Domande frequenti
 
 **Q:** **Come posso aggiungere più allegati in una singola email?**  

@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Dirección del destinatario no válida | Verifica el formato de la dirección de correo |
 | `Message size exceeds limit` | Adjuntos demasiado grandes | Comprime o divide los adjuntos |
 
-## Preguntas frecuentes
-
-### ¿Cómo puedo comprobar si un correo se envió correctamente?
-
-Puedes usar el bloque try‑catch para capturar cualquier excepción SMTP. Si no se lanza ninguna excepción, el correo se envió correctamente.
-
-### ¿Qué debo hacer si encuentro un error “Authentication Failed”?
-
-Verifica que tu nombre de usuario y contraseña sean correctos. Asegúrate de estar usando las credenciales adecuadas para tu servidor SMTP.
-
-### ¿Puedo enviar adjuntos con mis correos usando Aspose.Email para Java?
-
-Sí, puedes adjuntar archivos fácilmente a tus correos usando la clase `Attachment` proporcionada por Aspose.Email para Java.
-
-### ¿Por qué recibo un error “Connection Timeout” al enviar correos?
-
-Este error suele ocurrir cuando el servidor SMTP es lento o no está accesible. Revisa tu conexión de red y verifica la disponibilidad del servidor.
-
-### ¿Es Aspose.Email para Java adecuado para manejar grandes volúmenes de correos?
-
-Sí, Aspose.Email para Java está diseñado para gestionar tanto volúmenes pequeños como grandes de correos de manera eficiente.
-
 ## Preguntas frecuentes (FAQ)
 
 **P: ¿Cómo puedo agregar varios adjuntos en un solo correo?**  

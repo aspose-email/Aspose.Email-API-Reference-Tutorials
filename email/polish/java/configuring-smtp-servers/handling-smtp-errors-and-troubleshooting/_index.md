@@ -128,28 +128,6 @@ try {
 | `Mailbox unavailable` | Nieprawidłowy adres odbiorcy | Sprawdź poprawność formatu adresu e‑mail |
 | `Message size exceeds limit` | Zbyt duży załącznik | Skompresuj lub podziel załączniki |
 
-## FAQ
-
-### Jak sprawdzić, czy e‑mail został wysłany pomyślnie?
-
-Możesz użyć bloku try‑catch, aby przechwycić wszelkie wyjątki SMTP. Jeśli nie zostanie rzucony żaden wyjątek, e‑mail został wysłany pomyślnie.
-
-### Co zrobić w przypadku błędu „Authentication Failed”?
-
-Sprawdź dokładnie nazwę użytkownika i hasło. Upewnij się, że używasz prawidłowych danych uwierzytelniających dla swojego serwera SMTP.
-
-### Czy mogę dołączać załączniki do moich e‑maili przy użyciu Aspose.Email dla Javy?
-
-Tak, możesz łatwo dołączać pliki do wiadomości, korzystając z klasy `Attachment` udostępnianej przez Aspose.Email dla Javy.
-
-### Dlaczego pojawia się błąd „Connection Timeout” podczas wysyłania e‑maili?
-
-Ten błąd zazwyczaj występuje, gdy serwer SMTP jest wolny lub nieosiągalny. Sprawdź połączenie sieciowe i dostępność serwera.
-
-### Czy Aspose.Email dla Javy nadaje się do obsługi dużych wolumenów e‑maili?
-
-Tak, Aspose.Email dla Javy jest zaprojektowany tak, aby efektywnie obsługiwać zarówno małe, jak i duże ilości wiadomości.
-
 ## Frequently Asked Questions
 
 **Q: How can I add multiple attachments in one email?**  
