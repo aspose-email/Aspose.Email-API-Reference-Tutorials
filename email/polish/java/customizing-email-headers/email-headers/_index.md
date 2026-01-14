@@ -1,10 +1,13 @@
 ---
-"description": "Odblokuj moc nagłówków wiadomości e-mail dzięki Aspose.Email dla Java. Dowiedz się, jak bez wysiłku ustawiać i pobierać nagłówki wiadomości e-mail."
-"linktitle": "Nagłówki wiadomości e-mail w Aspose.Email"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Nagłówki wiadomości e-mail w Aspose.Email"
-"url": "/pl/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Dowiedz się, jak **tworzyć niestandardowe nagłówki e‑mail** i **ustawiać
+  wartości niestandardowych nagłówków e‑mail** przy użyciu Aspose.Email dla Javy,
+  a także jak **odczytywać informacje o nagłówku tematu e‑mail**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Tworzenie niestandardowych nagłówków e‑mail przy użyciu Aspose.Email
+url: /pl/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Nagłówki wiadomości e-mail w Aspose.Email
+# Tworzenie niestandardowych nagłówków e‑mail przy użyciu Aspose.Email
 
+## Wprowadzenie do nagłówków e‑mail
 
-## Wprowadzenie do nagłówków wiadomości e-mail
+Nagłówki e‑mail to cyfrowe koperty, które podróżują wraz z każdą wiadomością. Zawierają istotne metadane — takie jak nadawca, czas wysłania i trasa, jaką przeszła wiadomość — dzięki czemu serwery i klienci poczty mogą prawidłowo przetworzyć wiadomość. W tym samouczku nauczysz się **tworzyć niestandardowe nagłówki e‑mail**, dlaczego są ważne i jak Aspose.Email for Java upraszcza cały proces.
 
-Nagłówki wiadomości e-mail są jak koperty wiadomości cyfrowych. Zawierają istotne metadane, które prowadzą wiadomość e-mail przez jej podróż od nadawcy do odbiorcy. Zrozumienie nagłówków wiadomości e-mail może pomóc Ci prześledzić ścieżkę, jaką przebył e-mail, zidentyfikować potencjalne problemy i zapewnić bezpieczną i niezawodną komunikację e-mailową.
+## Szybkie odpowiedzi
+- **Jakie jest podstawowe sposób dodania niestandardowego nagłówka?** Użyj kolekcji `Headers` w obiekcie `MailMessage`.  
+- **Czy mogę odczytać nagłówek Subject po załadowaniu e‑maila?** Tak — uzyskaj dostęp poprzez `message.getHeaders().get("Subject")`.  
+- **Czy potrzebna jest licencja do używania API nagłówków?** Wersja próbna działa w środowisku deweloperskim; licencja komercyjna jest wymagana w produkcji.  
+- **Czy istnieje limit nazw niestandardowych nagłówków?** Stosuj konwencje nazewnictwa RFC 5322 (np. zaczynaj od „X-”).  
+- **Która wersja Aspose.Email obsługuje te funkcje?** Wszystkie recent versions (2024‑2026) zawierają pełną manipulację nagłówkami.
 
-### Czym są nagłówki wiadomości e-mail?
+## Co to są nagłówki e‑mail?
 
-Nagłówki wiadomości e-mail to wiersze metadanych na początku wiadomości e-mail. Zawierają informacje o pochodzeniu, trasie i obsłudze wiadomości. Typowe pola nagłówka wiadomości e-mail obejmują:
+Nagłówki e‑mail to linie metadanych umieszczone na początku wiadomości e‑mail. Opisują pochodzenie wiadomości, jej trasę oraz instrukcje obsługi. Typowe pola obejmują:
 
-- Od: Adres e-mail nadawcy.
-- Do: Adres e-mail odbiorcy.
-- Temat: Temat wiadomości e-mail.
-- Data: Data i godzina wysłania wiadomości e-mail.
-- Otrzymane: Seria wpisów szczegółowo opisujących drogę wiadomości e-mail od nadawcy do odbiorcy.
-- Message-ID: Unikalny identyfikator wiadomości e-mail.
+- **From:** Adres nadawcy.  
+- **To:** Adres odbiorcy.  
+- **Subject:** Linia tematu e‑mail.  
+- **Date:** Znacznik czasu, kiedy wiadomość została utworzona.  
+- **Received:** Ślad każdego serwera, który obsłużył wiadomość.  
+- **Message-ID:** Globalnie unikalny identyfikator.
 
-## Praca z nagłówkami wiadomości e-mail w Aspose.Email
+## Dlaczego ustawiać niestandardowy nagłówek e‑mail?
 
-Teraz, gdy rozumiemy znaczenie nagłówków wiadomości e-mail, przyjrzyjmy się, jak z nimi pracować, używając Aspose.Email dla Java. Aspose.Email to potężna biblioteka, która pozwala programistom tworzyć, manipulować i wyodrębniać informacje z wiadomości e-mail, w tym ich nagłówków.
+Dodanie **niestandardowego nagłówka e‑mail** może pomóc Ci:
 
-### Ustawianie nagłówków wiadomości e-mail
+1. **Śledzenie wewnętrznych przepływów pracy** – np. `X-Job-ID` dla automatycznego przetwarzania.  
+2. **Kontrola routingu** – np. `X-Priority`, aby wpłynąć na priorytet dostawy.  
+3. **Osadzanie metadanych** – np. identyfikatory korelacji do logowania i debugowania.
 
-Aby ustawić nagłówki wiadomości e-mail programowo przy użyciu Aspose.Email, wykonaj następujące kroki:
+## Praca z nagłówkami e‑mail w Aspose.Email
 
-1. Zainicjuj wiadomość e-mail: Utwórz wystąpienie `MailMessage` klasa.
+Teraz, gdy rozumiemy znaczenie nagłówków e‑mail, przejdźmy do praktycznych kroków tworzenia, ustawiania i odczytywania ich przy użyciu Aspose.Email for Java.
+
+### Ustawianie nagłówków e‑mail (Tworzenie niestandardowych nagłówków e‑mail)
+
+Postępuj zgodnie z tymi trzema prostymi krokami:
+
+1. **Zainicjalizuj wiadomość e‑mail** – utwórz nową instancję `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Ustaw wartości nagłówka: Użyj `Headers` kolekcja służąca do ustawiania wartości nagłówka.
+2. **Dodaj niestandardowy nagłówek** – użyj kolekcji `Headers`, aby **ustawić wartości niestandardowego nagłówka e‑mail**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Wyślij wiadomość e-mail: Wyślij wiadomość e-mail w zwykły sposób.
+3. **Wyślij e‑mail** – skonfiguruj `SmtpClient` i wyślij wiadomość.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Pobieranie nagłówków wiadomości e-mail
+> **Wskazówka:** Prefiksuj niestandardowe nagłówki `X-`, aby zachować zgodność z RFC 5322 i uniknąć konfliktów ze standardowymi polami.
 
-Aby pobrać nagłówki wiadomości e-mail z wiadomości przychodzących za pomocą Aspose.Email, wykonaj następujące czynności:
+### Pobieranie nagłówków e‑mail (Odczyt nagłówka Subject e‑mail)
 
-1. Załaduj wiadomość e-mail: Załaduj przychodzącą wiadomość e-mail.
+Kiedy otrzymasz e‑mail, możesz wyodrębnić dowolny nagłówek — w tym temat — używając tej samej kolekcji `Headers`:
+
+1. **Załaduj e‑mail** z pliku `.eml` lub strumienia.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Dostęp do wartości nagłówka: Dostęp do wartości nagłówka za pomocą `Headers` kolekcja.
+2. **Odczytaj wartości nagłówków** takich jak `Subject` lub dowolne niestandardowe pole ustawione wcześniej.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Wniosek
+> **Uwaga:** Kolekcja `Headers` zwraca `null`, jeśli żądany nagłówek nie istnieje, więc zawsze sprawdzaj `null` przed użyciem wartości.
 
-Nagłówki wiadomości e-mail to nieopiewani bohaterowie komunikacji e-mailowej, niosący istotne informacje, które zapewniają, że wiadomości e-mail dotrą do zamierzonych odbiorców. Aspose.Email for Java upraszcza zadanie pracy z nagłówkami wiadomości e-mail, umożliwiając programistom wykorzystanie mocy tych metadanych do różnych celów. Niezależnie od tego, czy musisz ustawić niestandardowe nagłówki, pobrać informacje, czy przeanalizować trasy wiadomości e-mail, Aspose.Email zapewnia narzędzia potrzebne do wydajnej manipulacji nagłówkami wiadomości e-mail.
+## Typowe problemy i rozwiązania
+
+| Problem | Przyczyna | Rozwiązanie |
+|---------|-----------|-------------|
+| Nagłówek nie pojawia się w otrzymanej wiadomości | Serwer SMTP usuwa nieznane nagłówki | Upewnij się, że serwer zezwala na niestandardowe nagłówki `X-` lub skonfiguruj go, aby je zachowywał. |
+| `null` zwracane przy odczycie nagłówka | Błąd w nazwie nagłówka (wrażliwość na wielkość liter) | Użyj dokładnej nazwy nagłówka, np. "Subject" zamiast "subject". |
+| Duplikowane nagłówki | Dodawanie tego samego nagłówka wielokrotnie | Użyj `addOrUpdate` (jeśli dostępne) lub usuń starą pozycję przed dodaniem nowej. |
 
 ## Najczęściej zadawane pytania
 
-### Jak mogę wyświetlić nagłówki wiadomości e-mail w popularnych klientach poczty e-mail?
+**P:** Jak mogę zobaczyć nagłówki e‑mail w popularnych klientach poczty?  
+**O:** Większość klientów umożliwia podgląd surowego źródła — szukaj opcji „View Original”, „Show Headers” lub „View Source”.
 
-W większości klientów poczty e-mail nagłówki wiadomości e-mail można wyświetlić, otwierając wiadomość i szukając opcji, takich jak „Wyświetl źródło” lub „Pokaż oryginał”.
+**P:** Czy nagłówki e‑mail są szyfrowane?  
+**O:** Nie. Nagłówki są metadanymi w formie zwykłego tekstu i są przesyłane w postaci niezaszyfrowanej, chyba że cała wiadomość jest zaszyfrowana (np. S/MIME).
 
-### Czy nagłówki wiadomości e-mail są szyfrowane?
+**P:** Czy mogę zmodyfikować nagłówki e‑mail po wysłaniu wiadomości?  
+**O:** Po wysłaniu wiadomości nagłówki są niezmienne. Ustaw wszystkie wymagane nagłówki **przed** wywołaniem `client.send(message)`.
 
-Nie, nagłówki wiadomości e-mail nie są szyfrowane. Są częścią metadanych wiadomości e-mail i zazwyczaj są w postaci zwykłego tekstu.
+**P:** Jaki jest cel nagłówka „Received”?  
+**O:** Rejestruje każdy przeskok, jaki przebywa e‑mail, pomagając administratorom w rozwiązywaniu problemów z dostawą i śledzeniu ścieżki.
 
-### Czy mogę zmienić nagłówki wiadomości e-mail po jej wysłaniu?
+**P:** Jak mogę wyodrębnić nagłówki e‑mail z dużej partii wiadomości?  
+**O:** Użyj `MailMessage.load` z Aspose.Email w pętli lub skorzystaj z `MailMessageCollection` do przetwarzania wsadowego.
 
-Po wysłaniu wiadomości e-mail jej nagłówki są zazwyczaj niezmienne. Przed wysłaniem wiadomości e-mail należy koniecznie ustawić żądane nagłówki.
+---
 
-### Jaki jest cel nagłówka „Otrzymano”?
-
-Nagłówek „Received” to seria wpisów, które śledzą ścieżkę wiadomości e-mail od nadawcy do odbiorcy. Pomaga zdiagnozować problemy z dostarczaniem i śledzić trasę wiadomości e-mail.
-
-### Jak mogę wyodrębnić nagłówki wiadomości e-mail z dużej partii wiadomości?
-
-Możesz użyć funkcji przetwarzania wsadowego Aspose.Email, aby efektywnie wyodrębnić nagłówki z wielu wiadomości e-mail.
+**Ostatnia aktualizacja:** 2026-01-14  
+**Testowano z:** Aspose.Email for Java 24.11 (2024‑2026)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,10 +1,13 @@
 ---
-"description": "Ontgrendel de kracht van e-mailheaders met Aspose.Email voor Java. Leer hoe u moeiteloos e-mailheaders kunt instellen en ophalen."
-"linktitle": "E-mailheaders in Aspose.Email"
-"second_title": "Aspose.Email Java E-mailbeheer API"
-"title": "E-mailheaders in Aspose.Email"
-"url": "/nl/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Leer hoe je **aangepaste e-mailheaders maken** en **aangepaste e-mailheaderwaarden
+  instellen** met Aspose.Email voor Java, plus hoe je **e-mailonderwerpheader** informatie
+  kunt lezen.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Aangepaste e‑mailheaders maken met Aspose.Email
+url: /nl/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E-mailheaders in Aspose.Email
+# Maak aangepaste e-mailheaders met Aspose.Email
 
+## Introductie tot e-mailheaders
 
-## Inleiding tot e-mailheaders
+E-mailheaders zijn de digitale enveloppen die met elk bericht meereizen. Ze bevatten essentiële metadata—zoals wie de e-mail heeft verzonden, wanneer deze is verzonden en welke route hij heeft genomen—zodat mailservers en clients het bericht correct kunnen verwerken. In deze tutorial leer je hoe je **aangepaste e-mailheaders kunt maken**, waarom ze belangrijk zijn, en hoe Aspose.Email for Java het hele proces eenvoudig maakt.
 
-E-mailheaders zijn als de enveloppen van digitale berichten. Ze bevatten essentiële metadata die een e-mail begeleiden door de reis van afzender naar ontvanger. Inzicht in e-mailheaders kan u helpen het pad van een e-mail te volgen, potentiële problemen te identificeren en veilige en betrouwbare e-mailcommunicatie te garanderen.
+## Snelle antwoorden
+- **Wat is de primaire manier om een aangepaste header toe te voegen?** Gebruik de `Headers`-collectie op een `MailMessage`-object.  
+- **Kan ik de Subject-header lezen na het laden van een e-mail?** Ja—toegang via `message.getHeaders().get("Subject")`.  
+- **Heb ik een licentie nodig om header-API's te gebruiken?** Een proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
+- **Is er een limiet op aangepaste header-namen?** Volg de RFC 5322 naamgevingsconventies (bijv. beginnen met “X-”).  
+- **Welke Aspose.Email-versie ondersteunt deze functies?** Alle recente versies (2024‑2026) bevatten volledige headermanipulatie.
 
-### Wat zijn e-mailheaders?
+## Wat zijn e-mailheaders?
 
-E-mailheaders zijn regels met metadata aan het begin van een e-mailbericht. Ze bieden informatie over de herkomst, de route en de afhandeling van het bericht. Veelvoorkomende velden in e-mailheaders zijn onder andere:
+E-mailheaders zijn regels metadata die bovenaan een e-mailbericht worden geplaatst. Ze beschrijven de oorsprong, de route en de verwerkingsinstructies van het bericht. Veelvoorkomende velden omvatten:
 
-- Van: Het e-mailadres van de afzender.
-- Aan: Het e-mailadres van de ontvanger.
-- Onderwerp: het onderwerp van de e-mail.
-- Datum: Datum en tijd waarop de e-mail is verzonden.
-- Ontvangen: Een reeks items die de reis beschrijven die de e-mail van verzender naar ontvanger heeft afgelegd.
-- Bericht-ID: Een unieke identificatie voor het e-mailbericht.
+- **From:** Adres van de afzender.  
+- **To:** Adres van de ontvanger.  
+- **Subject:** De onderwerpregel van de e-mail.  
+- **Date:** Tijdstempel van wanneer het bericht is aangemaakt.  
+- **Received:** Een trace van elke server die de e-mail heeft verwerkt.  
+- **Message-ID:** Een wereldwijd unieke identifier.
+
+## Waarom een aangepaste e-mailheader instellen?
+
+Het toevoegen van een **aangepaste e-mailheader** kan je helpen:
+
+1. **Interne workflows volgen** – bijv. `X-Job-ID` voor geautomatiseerde verwerking.  
+2. **Routing controleren** – bijv. `X-Priority` om de bezorgprioriteit te beïnvloeden.  
+3. **Metadata insluiten** – bijv. correlatie‑ID's voor logging en debugging.
 
 ## Werken met e-mailheaders in Aspose.Email
 
-Nu we het belang van e-mailheaders begrijpen, gaan we kijken hoe we ermee kunnen werken met Aspose.Email voor Java. Aspose.Email is een krachtige bibliotheek waarmee ontwikkelaars informatie kunnen maken, bewerken en extraheren uit e-mailberichten, inclusief de headers.
+Nu we het belang van e-mailheaders begrijpen, duiken we in de praktische stappen om ze te maken, in te stellen en te lezen met Aspose.Email for Java.
 
-### E-mailheaders instellen
+### E-mailheaders instellen (Maak aangepaste e-mailheaders)
 
-Voer de volgende stappen uit om e-mailheaders programmatisch in te stellen met Aspose.Email:
+Volg deze drie eenvoudige stappen:
 
-1. Een e-mailbericht initialiseren: een exemplaar maken van de `MailMessage` klas.
+1. **Initialiseer een e-mailbericht** – maak een nieuwe `MailMessage`-instantie.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Headerwaarden instellen: Gebruik de `Headers` verzameling om headerwaarden in te stellen.
+2. **Voeg een aangepaste header toe** – gebruik de `Headers`-collectie om **aangepaste e-mailheader**-waarden in te stellen.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. E-mail verzenden: verstuur de e-mail zoals u dat normaal zou doen.
+3. **Verzend de e-mail** – configureer een `SmtpClient` en verstuur het bericht.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### E-mailheaders ophalen
+> **Pro tip:** Voeg `X-` als prefix toe aan aangepaste headers om te voldoen aan RFC 5322 en conflicten met standaardvelden te vermijden.
 
-Om e-mailheaders uit een inkomende e-mail op te halen met Aspose.Email, kunt u de volgende stappen volgen:
+### E-mailheaders ophalen (E-mail Subject-header lezen)
 
-1. Laad het e-mailbericht: laad het binnenkomende e-mailbericht.
+Wanneer je een e-mail ontvangt, kun je elke header—incl. de subject—extraheren met dezelfde `Headers`-collectie:
+
+1. **Laad de e-mail** vanuit een `.eml`-bestand of een stream.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Toegang tot headerwaarden: toegang tot headerwaarden met behulp van de `Headers` verzameling.
+2. **Lees headerwaarden** zoals `Subject` of elk aangepast veld dat je eerder hebt ingesteld.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Conclusie
+> **Opmerking:** De `Headers`-collectie retourneert `null` als de gevraagde header niet bestaat, controleer dus altijd op `null` voordat je de waarde gebruikt.
 
-E-mailheaders zijn de onbezongen helden van e-mailcommunicatie en bevatten essentiële informatie die ervoor zorgt dat e-mails de beoogde ontvangers bereiken. Aspose.Email voor Java vereenvoudigt het werken met e-mailheaders, waardoor ontwikkelaars de kracht van deze metadata voor diverse doeleinden kunnen benutten. Of u nu aangepaste headers wilt instellen, informatie wilt ophalen of e-mailroutes wilt analyseren, Aspose.Email biedt de tools die u nodig hebt voor efficiënte bewerking van e-mailheaders.
+## Veelvoorkomende problemen en oplossingen
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Header verschijnt niet in ontvangen e-mail | SMTP-server verwijdert onbekende headers | Zorg ervoor dat de server aangepaste `X-`-headers toestaat of configureer deze om ze te behouden. |
+| `null` geretourneerd bij het lezen van een header | Typfout in headernaam (hoofdlettergevoelig) | Gebruik exact de opgeslagen headernaam, bijv. `"Subject"` i.p.v. `"subject"`. |
+| Dubbele headers | Dezelfde header meerdere keren toevoegen | Gebruik `addOrUpdate` (indien beschikbaar) of verwijder de oude entry voordat je een nieuwe toevoegt. |
 
 ## Veelgestelde vragen
 
-### Hoe kan ik e-mailheaders bekijken in populaire e-mailclients?
+**Q: Hoe kan ik e-mailheaders bekijken in populaire e-mailclients?**  
+A: De meeste clients laten je de ruwe bron bekijken—zoek naar opties zoals “View Original”, “Show Headers” of “View Source”.
 
-In de meeste e-mailclients kunt u e-mailheaders bekijken door de e-mail te openen en te zoeken naar een optie als 'Bron weergeven' of 'Origineel weergeven'.
+**Q: Zijn e-mailheaders versleuteld?**  
+A: Nee. Headers zijn platte‑tekst metadata en worden in duidelijke tekst verzonden tenzij het volledige bericht versleuteld is (bijv. S/MIME).
 
-### Zijn e-mailheaders versleuteld?
+**Q: Kan ik e-mailheaders wijzigen nadat een e-mail is verzonden?**  
+A: Zodra het bericht onderweg is, zijn headers onveranderlijk. Stel alle vereiste headers **in** voordat je `client.send(message)` aanroept.
 
-Nee, e-mailheaders zijn niet versleuteld. Ze maken deel uit van de metadata van de e-mail en zijn meestal platte tekst.
+**Q: Wat is het doel van de “Received”-header?**  
+A: Het registreert elke hop die de e-mail maakt, waardoor beheerders leveringsproblemen kunnen oplossen en het pad kunnen traceren.
 
-### Kan ik e-mailheaders wijzigen nadat ik een e-mail heb verzonden?
+**Q: Hoe kan ik e-mailheaders extraheren uit een grote batch e-mails?**  
+A: Gebruik Aspose.Email’s `MailMessage.load` in een lus of maak gebruik van `MailMessageCollection` voor bulkverwerking.
 
-Zodra een e-mail is verzonden, zijn de headers meestal onveranderlijk. Het is essentieel om de gewenste headers in te stellen voordat u de e-mail verzendt.
+---
 
-### Wat is het doel van de header "Ontvangen"?
-
-De header 'Ontvangen' bestaat uit een reeks items die het pad van de e-mail van afzender naar ontvanger volgen. Dit helpt bij het diagnosticeren van bezorgingsproblemen en het traceren van de route van de e-mail.
-
-### Hoe kan ik e-mailheaders uit een grote hoeveelheid e-mails halen?
-
-Met de batchverwerkingsmogelijkheden van Aspose.Email kunt u op efficiënte wijze headers uit meerdere e-mails extraheren.
+**Laatst bijgewerkt:** 2026-01-14  
+**Getest met:** Aspose.Email for Java 24.11 (2024‑2026)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

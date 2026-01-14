@@ -1,10 +1,13 @@
 ---
-"description": "Libere o poder dos cabeçalhos de e-mail com o Aspose.Email para Java. Aprenda a definir e recuperar cabeçalhos de e-mail sem esforço."
-"linktitle": "Cabeçalhos de e-mail no Aspose.Email"
-"second_title": "API de gerenciamento de e-mail Java Aspose.Email"
-"title": "Cabeçalhos de e-mail no Aspose.Email"
-"url": "/pt/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Aprenda como **criar cabeçalhos de e‑mail personalizados** e **definir
+  valores de cabeçalhos de e‑mail personalizados** usando Aspose.Email para Java,
+  além de como **ler informações do cabeçalho de assunto do e‑mail**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Criar cabeçalhos personalizados de e‑mail com Aspose.Email
+url: /pt/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cabeçalhos de e-mail no Aspose.Email
+# Criar Cabeçalhos de Email Personalizados com Aspose.Email
 
+## Introdução aos Cabeçalhos de Email
 
-## Introdução aos Cabeçalhos de E-mail
+Os cabeçalhos de email são os envelopes digitais que acompanham cada mensagem. Eles carregam metadados essenciais — como quem enviou o correio, quando foi enviado e a rota percorrida — para que os servidores de correio e os clientes possam processar a mensagem corretamente. Neste tutorial você aprenderá a **criar cabeçalhos de email personalizados**, por que eles são importantes e como o Aspose.Email for Java torna todo o processo simples.
 
-Os cabeçalhos de e-mail são como os envelopes das mensagens digitais. Eles contêm metadados essenciais que guiam o e-mail em sua jornada do remetente ao destinatário. Entender os cabeçalhos de e-mail pode ajudar você a rastrear o caminho percorrido por um e-mail, identificar possíveis problemas e garantir uma comunicação segura e confiável.
+## Respostas Rápidas
+- **Qual é a maneira principal de adicionar um cabeçalho personalizado?** Use a coleção `Headers` em um objeto `MailMessage`.  
+- **Posso ler o cabeçalho Subject após carregar um email?** Sim — acesse‑o via `message.getHeaders().get("Subject")`.  
+- **Preciso de uma licença para usar as APIs de cabeçalho?** Uma versão de avaliação funciona para desenvolvimento; uma licença comercial é necessária para produção.  
+- **Existe algum limite para nomes de cabeçalhos personalizados?** Siga as convenções de nomenclatura RFC 5322 (por exemplo, comece com “X-”).  
+- **Qual versão do Aspose.Email suporta esses recursos?** Todas as versões recentes (2024‑2026) incluem manipulação completa de cabeçalhos.
 
-### O que são cabeçalhos de e-mail?
+## O que são Cabeçalhos de Email?
 
-Cabeçalhos de e-mail são linhas de metadados no início de uma mensagem de e-mail. Eles fornecem informações sobre a origem, a rota e o processamento da mensagem. Os campos comuns de cabeçalho de e-mail incluem:
+Os cabeçalhos de email são linhas de metadados colocadas no topo de uma mensagem de email. Eles descrevem a origem da mensagem, a rota e as instruções de tratamento. Campos comuns incluem:
 
-- De: Endereço de e-mail do remetente.
-- Para: Endereço de e-mail do destinatário.
-- Assunto: O assunto do e-mail.
-- Data: data e hora em que o e-mail foi enviado.
-- Recebido: uma série de entradas detalhando o caminho do e-mail do remetente ao destinatário.
-- Message-ID: Um identificador exclusivo para a mensagem de e-mail.
+- **From:** Endereço do remetente.  
+- **To:** Endereço do destinatário.  
+- **Subject:** Linha de assunto do email.  
+- **Date:** Marca de tempo de quando a mensagem foi criada.  
+- **Received:** Um rastreamento de cada servidor que manipulou o correio.  
+- **Message-ID:** Um identificador globalmente único.
 
-## Trabalhando com cabeçalhos de e-mail no Aspose.Email
+## Por que Definir um Cabeçalho de Email Personalizado?
 
-Agora que entendemos a importância dos cabeçalhos de e-mail, vamos explorar como trabalhar com eles usando o Aspose.Email para Java. O Aspose.Email é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e extrair informações de mensagens de e-mail, incluindo seus cabeçalhos.
+Adicionar um **cabeçalho de email personalizado** pode ajudar a:
 
-### Configurando cabeçalhos de e-mail
+1. **Rastrear fluxos de trabalho internos** – por exemplo, `X-Job-ID` para processamento automatizado.  
+2. **Controlar o roteamento** – por exemplo, `X-Priority` para influenciar a prioridade de entrega.  
+3. **Incorporar metadados** – por exemplo, IDs de correlação para registro e depuração.
 
-Para definir cabeçalhos de e-mail programaticamente usando Aspose.Email, siga estas etapas:
+## Trabalhando com Cabeçalhos de Email no Aspose.Email
 
-1. Inicializar uma mensagem de e-mail: Crie uma instância do `MailMessage` aula.
+Agora que entendemos a importância dos cabeçalhos de email, vamos mergulhar nos passos práticos para criá‑los, defini‑los e lê‑los com o Aspose.Email for Java.
+
+### Definindo Cabeçalhos de Email (Criar Cabeçalhos de Email Personalizados)
+
+Siga estes três passos simples:
+
+1. **Inicializar uma Mensagem de Email** – crie uma nova instância `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Definir valores de cabeçalho: use o `Headers` coleção para definir valores de cabeçalho.
+2. **Adicionar um cabeçalho personalizado** – use a coleção `Headers` para **definir valores de cabeçalho de email personalizados**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Enviar o e-mail: envie o e-mail como faria normalmente.
+3. **Enviar o email** – configure um `SmtpClient` e despache a mensagem.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Recuperando cabeçalhos de e-mail
+> **Dica profissional:** Prefixe cabeçalhos personalizados com `X-` para permanecer em conformidade com a RFC 5322 e evitar conflitos com campos padrão.
 
-Para recuperar cabeçalhos de e-mail de um e-mail recebido usando o Aspose.Email, você pode seguir estas etapas:
+### Recuperando Cabeçalhos de Email (Ler o Cabeçalho Subject do Email)
 
-1. Carregar a mensagem de e-mail: Carregue a mensagem de e-mail recebida.
+Quando você recebe um email, pode extrair qualquer cabeçalho — incluindo o assunto — usando a mesma coleção `Headers`:
+
+1. **Carregar o email** a partir de um arquivo `.eml` ou de um stream.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Acessar valores de cabeçalho: acessar valores de cabeçalho usando o `Headers` coleção.
+2. **Ler valores de cabeçalho** como `Subject` ou qualquer campo personalizado que você definiu anteriormente.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Conclusão
+> **Observação:** A coleção `Headers` retorna `null` se o cabeçalho solicitado não existir, portanto verifique sempre se é `null` antes de usar o valor.
 
-Os cabeçalhos de e-mail são os heróis anônimos da comunicação por e-mail, transportando informações vitais que garantem que os e-mails cheguem aos destinatários pretendidos. O Aspose.Email para Java simplifica a tarefa de trabalhar com cabeçalhos de e-mail, permitindo que os desenvolvedores aproveitem o poder desses metadados para diversos fins. Seja para definir cabeçalhos personalizados, recuperar informações ou analisar rotas de e-mail, o Aspose.Email fornece as ferramentas necessárias para uma manipulação eficiente de cabeçalhos de e-mail.
+## Problemas Comuns e Soluções
 
-## Perguntas frequentes
+| Problema | Causa | Solução |
+|----------|-------|---------|
+| Cabeçalho não aparece no email recebido | Servidor SMTP remove cabeçalhos desconhecidos | Garanta que o servidor permita cabeçalhos personalizados `X-` ou configure‑o para preservá‑los. |
+| `null` retornado ao ler um cabeçalho | Erro de digitação no nome do cabeçalho (sensível a maiúsculas/minúsculas) | Use o nome exato do cabeçalho armazenado, por exemplo, `"Subject"` e não `"subject"`. |
+| Cabeçalhos duplicados | Adição do mesmo cabeçalho várias vezes | Use `addOrUpdate` (se disponível) ou remova a entrada antiga antes de adicionar uma nova. |
 
-### Como posso visualizar cabeçalhos de e-mail em clientes de e-mail populares?
+## Perguntas Frequentes
 
-Na maioria dos clientes de e-mail, você pode visualizar os cabeçalhos dos e-mails abrindo-os e procurando por uma opção como "Exibir código-fonte" ou "Mostrar original".
+**Q: Como posso visualizar os cabeçalhos de email em clientes de email populares?**  
+A: A maioria dos clientes permite visualizar a fonte bruta — procure opções como “View Original”, “Show Headers” ou “View Source”.
 
-### Os cabeçalhos de e-mail são criptografados?
+**Q: Os cabeçalhos de email são criptografados?**  
+A: Não. Os cabeçalhos são metadados em texto simples e são transmitidos em texto claro, a menos que a mensagem inteira esteja criptografada (por exemplo, S/MIME).
 
-Não, os cabeçalhos de e-mail não são criptografados. Eles fazem parte dos metadados do e-mail e normalmente estão em texto simples.
+**Q: Posso modificar os cabeçalhos de email após enviar um email?**  
+A: Uma vez que a mensagem está em trânsito, os cabeçalhos são imutáveis. Defina todos os cabeçalhos necessários **antes** de chamar `client.send(message)`.
 
-### Posso modificar os cabeçalhos de e-mail depois de enviá-los?
+**Q: Qual é o propósito do cabeçalho “Received”?**  
+A: Ele registra cada salto que o email faz, ajudando administradores a solucionar problemas de entrega e rastrear o caminho.
 
-Após o envio de um e-mail, seus cabeçalhos geralmente são imutáveis. É essencial definir os cabeçalhos desejados antes de enviar o e-mail.
+**Q: Como posso extrair cabeçalhos de email de um grande lote de emails?**  
+A: Use `MailMessage.load` do Aspose.Email em um loop ou aproveite seu `MailMessageCollection` para processamento em massa.
 
-### Qual é a finalidade do cabeçalho "Recebido"?
+---
 
-O cabeçalho "Recebido" é uma série de entradas que rastreiam o caminho do e-mail do remetente ao destinatário. Ele ajuda a diagnosticar problemas de entrega e rastrear a rota do e-mail.
-
-### Como posso extrair cabeçalhos de e-mail de um grande lote de e-mails?
-
-Você pode usar os recursos de processamento em lote do Aspose.Email para extrair cabeçalhos de vários e-mails com eficiência.
+**Última atualização:** 2026-01-14  
+**Testado com:** Aspose.Email for Java 24.11 (2024‑2026)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

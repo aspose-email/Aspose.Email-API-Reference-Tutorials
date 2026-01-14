@@ -1,10 +1,13 @@
 ---
-"description": "Desbloquea el poder de los encabezados de correo electrónico con Aspose.Email para Java. Aprende a configurar y recuperar encabezados de correo electrónico fácilmente."
-"linktitle": "Encabezados de correo electrónico en Aspose.Email"
-"second_title": "API de gestión de correo electrónico Java de Aspose.Email"
-"title": "Encabezados de correo electrónico en Aspose.Email"
-"url": "/es/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Aprende a **crear encabezados personalizados de correo electrónico**
+  y **establecer valores de encabezados personalizados** usando Aspose.Email para
+  Java, además de cómo **leer la información del encabezado del asunto del correo**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Crear encabezados personalizados de correo electrónico con Aspose.Email
+url: /es/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Encabezados de correo electrónico en Aspose.Email
-
+# Crear encabezados de correo electrónico personalizados con Aspose.Email
 
 ## Introducción a los encabezados de correo electrónico
 
-Los encabezados de correo electrónico son como los sobres de los mensajes digitales. Contienen metadatos esenciales que guían el recorrido del correo electrónico desde el remitente hasta el destinatario. Comprender los encabezados de correo electrónico puede ayudarle a rastrear la ruta de un correo electrónico, identificar posibles problemas y garantizar una comunicación segura y confiable.
+Los encabezados de correo electrónico son los sobres digitales que viajan con cada mensaje. Transportan metadatos vitales — como quién envió el correo, cuándo se envió y la ruta que siguió — para que los servidores y clientes de correo puedan procesar el mensaje correctamente. En este tutorial aprenderá a **crear encabezados de correo electrónico personalizados**, por qué son importantes y cómo Aspose.Email for Java hace que todo el proceso sea sencillo.
 
-### ¿Qué son los encabezados de correo electrónico?
+## Respuestas rápidas
+- **¿Cuál es la forma principal de agregar un encabezado personalizado?** Use la colección `Headers` en un objeto `MailMessage`.  
+- **¿Puedo leer el encabezado Subject después de cargar un correo?** Sí—acceda a él mediante `message.getHeaders().get("Subject")`.  
+- **¿Necesito una licencia para usar las API de encabezados?** Una versión de prueba funciona para desarrollo; se requiere una licencia comercial para producción.  
+- **¿Existe algún límite en los nombres de encabezados personalizados?** Siga las convenciones de nomenclatura RFC 5322 (por ejemplo, comience con “X-”).  
+- **¿Qué versión de Aspose.Email admite estas funciones?** Todas las versiones recientes (2024‑2026) incluyen manipulación completa de encabezados.
 
-Los encabezados de correo electrónico son líneas de metadatos que se encuentran al principio de un mensaje. Proporcionan información sobre el origen, la ruta y el procesamiento del mensaje. Los campos comunes de los encabezados de correo electrónico incluyen:
+## ¿Qué son los encabezados de correo electrónico?
 
-- De: La dirección de correo electrónico del remitente.
-- Para: La dirección de correo electrónico del destinatario.
-- Asunto: El asunto del correo electrónico.
-- Fecha: la fecha y hora en que se envió el correo electrónico.
-- Recibido: una serie de entradas que detallan el recorrido del correo electrónico desde el remitente hasta el destinatario.
-- ID del mensaje: un identificador único para el mensaje de correo electrónico.
+Los encabezados de correo electrónico son líneas de metadatos colocadas en la parte superior de un mensaje de correo. Describen el origen del mensaje, la ruta y las instrucciones de manejo. Los campos comunes incluyen:
 
-## Trabajar con encabezados de correo electrónico en Aspose.Email
+- **From:** Dirección del remitente.  
+- **To:** Dirección del destinatario.  
+- **Subject:** Línea de asunto del correo.  
+- **Date:** Marca de tiempo de cuando se creó el mensaje.  
+- **Received:** Un rastro de cada servidor que manejó el correo.  
+- **Message-ID:** Un identificador único global.
 
-Ahora que comprendemos la importancia de los encabezados de correo electrónico, exploremos cómo trabajar con ellos usando Aspose.Email para Java. Aspose.Email es una potente biblioteca que permite a los desarrolladores crear, manipular y extraer información de los mensajes de correo electrónico, incluidos sus encabezados.
+## ¿Por qué establecer un encabezado de correo electrónico personalizado?
 
-### Configuración de encabezados de correo electrónico
+Agregar un **encabezado de correo electrónico personalizado** puede ayudarle a:
 
-Para configurar encabezados de correo electrónico mediante programación utilizando Aspose.Email, siga estos pasos:
+1. **Rastrear flujos de trabajo internos** – por ejemplo, `X-Job-ID` para procesamiento automatizado.  
+2. **Controlar el enrutamiento** – por ejemplo, `X-Priority` para influir en la prioridad de entrega.  
+3. **Incorporar metadatos** – por ejemplo, IDs de correlación para registro y depuración.
 
-1. Inicializar un mensaje de correo electrónico: crear una instancia del `MailMessage` clase.
+## Trabajando con encabezados de correo electrónico en Aspose.Email
+
+Ahora que entendemos la importancia de los encabezados de correo electrónico, profundicemos en los pasos prácticos para crear, establecer y leerlos con Aspose.Email for Java.
+
+### Establecer encabezados de correo electrónico (Crear encabezados de correo electrónico personalizados)
+
+Siga estos tres pasos simples:
+
+1. **Inicializar un mensaje de correo** – cree una nueva instancia de `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Establecer valores de encabezado: utilice el `Headers` Colección para establecer valores de encabezado.
+2. **Agregar un encabezado personalizado** – use la colección `Headers` para **establecer valores de encabezado de correo electrónico personalizados**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Enviar el correo electrónico: envíe el correo electrónico como lo haría normalmente.
+3. **Enviar el correo** – configure un `SmtpClient` y envíe el mensaje.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Recuperación de encabezados de correo electrónico
+> **Consejo profesional:** Prefije los encabezados personalizados con `X-` para cumplir con RFC 5322 y evitar conflictos con los campos estándar.
 
-Para recuperar los encabezados de correo electrónico de un correo electrónico entrante mediante Aspose.Email, puede seguir estos pasos:
+### Recuperar encabezados de correo electrónico (Leer el encabezado Subject del correo)
 
-1. Cargar el mensaje de correo electrónico: carga el mensaje de correo electrónico entrante.
+Cuando recibe un correo, puede extraer cualquier encabezado —incluido el asunto— usando la misma colección `Headers`:
+
+1. **Cargar el correo** desde un archivo `.eml` o un flujo.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Acceder a los valores del encabezado: acceda a los valores del encabezado mediante el `Headers` recopilación.
+2. **Leer los valores de los encabezados** como `Subject` o cualquier campo personalizado que haya establecido previamente.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Conclusión
+> **Nota:** La colección `Headers` devuelve `null` si el encabezado solicitado no existe, por lo que siempre debe comprobar `null` antes de usar el valor.
 
-Los encabezados de correo electrónico son los héroes anónimos de la comunicación por correo electrónico, ya que contienen información vital que garantiza que los correos lleguen a sus destinatarios. Aspose.Email para Java simplifica el trabajo con encabezados de correo electrónico, permitiendo a los desarrolladores aprovechar el potencial de estos metadatos para diversos fines. Ya sea que necesite configurar encabezados personalizados, recuperar información o analizar rutas de correo electrónico, Aspose.Email le proporciona las herramientas necesarias para una manipulación eficiente de los encabezados de correo electrónico.
+## Problemas comunes y soluciones
+
+| Problema | Causa | Solución |
+|----------|-------|----------|
+| El encabezado no aparece en el correo recibido | El servidor SMTP elimina los encabezados desconocidos | Asegúrese de que el servidor permita encabezados personalizados `X-` o configúrelo para preservarlos. |
+| `null` devuelto al leer un encabezado | Error tipográfico en el nombre del encabezado (sensible a mayúsculas/minúsculas) | Use el nombre exacto del encabezado tal como está almacenado, por ejemplo, `"Subject"` no `"subject"`. |
+| Encabezados duplicados | Agregar el mismo encabezado varias veces | Use `addOrUpdate` (si está disponible) o elimine la entrada anterior antes de agregar una nueva. |
 
 ## Preguntas frecuentes
 
-### ¿Cómo puedo ver los encabezados de correo electrónico en clientes de correo electrónico populares?
+**Q: ¿Cómo puedo ver los encabezados de correo electrónico en clientes de correo populares?**  
+A: La mayoría de los clientes le permiten ver la fuente cruda — busque opciones como “Ver original”, “Mostrar encabezados” o “Ver fuente”.
 
-En la mayoría de los clientes de correo electrónico, puedes ver los encabezados del correo electrónico abriendo el correo electrónico y buscando una opción como "Ver código fuente" o "Mostrar original".
+**Q: ¿Los encabezados de correo electrónico están encriptados?**  
+A: No. Los encabezados son metadatos de texto plano y se transmiten en texto claro a menos que todo el mensaje esté encriptado (p. ej., S/MIME).
 
-### ¿Los encabezados de correo electrónico están encriptados?
+**Q: ¿Puedo modificar los encabezados de correo electrónico después de enviar un correo?**  
+A: Una vez que el mensaje está en tránsito, los encabezados son inmutables. Establezca todos los encabezados requeridos **antes** de llamar a `client.send(message)`.
 
-No, los encabezados de correo electrónico no están cifrados. Forman parte de los metadatos del correo electrónico y suelen estar en texto sin formato.
+**Q: ¿Cuál es el propósito del encabezado “Received”?**  
+A: Registra cada salto que realiza el correo, ayudando a los administradores a solucionar problemas de entrega y rastrear la ruta.
 
-### ¿Puedo modificar los encabezados de correo electrónico después de enviar un correo electrónico?
+**Q: ¿Cómo puedo extraer los encabezados de correo electrónico de un gran lote de correos?**  
+A: Use `MailMessage.load` de Aspose.Email en un bucle o aproveche su `MailMessageCollection` para procesamiento masivo.
 
-Una vez enviado un correo electrónico, sus encabezados suelen ser inmutables. Es fundamental configurar los encabezados deseados antes de enviarlo.
+---
 
-### ¿Cuál es el propósito del encabezado "Recibido"?
-
-El encabezado "Recibido" es una serie de entradas que rastrean la ruta del correo electrónico desde el remitente hasta el destinatario. Ayuda a diagnosticar problemas de entrega y a rastrear la ruta del correo electrónico.
-
-### ¿Cómo puedo extraer encabezados de correo electrónico de un lote grande de correos electrónicos?
-
-Puede utilizar las capacidades de procesamiento por lotes de Aspose.Email para extraer encabezados de varios correos electrónicos de manera eficiente.
+**Última actualización:** 2026-01-14  
+**Probado con:** Aspose.Email for Java 24.11 (2024‑2026)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

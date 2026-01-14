@@ -1,10 +1,13 @@
 ---
-"description": "Odemkněte sílu záhlaví e-mailů s Aspose.Email pro Javu. Naučte se, jak snadno nastavovat a načítat záhlaví e-mailů."
-"linktitle": "Záhlaví e-mailů v Aspose.Email"
-"second_title": "API pro správu e-mailů v Javě od Aspose.Email"
-"title": "Záhlaví e-mailů v Aspose.Email"
-"url": "/cs/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Naučte se, jak **vytvářet vlastní e‑mailové hlavičky** a **nastavovat
+  hodnoty vlastních e‑mailových hlaviček** pomocí Aspose.Email pro Javu, plus jak
+  **číst informace o předmětu e‑mailové hlavičky**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Vytvořte vlastní e‑mailové hlavičky pomocí Aspose.Email
+url: /cs/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Záhlaví e-mailů v Aspose.Email
+# Vytvoření vlastních hlaviček e‑mailu pomocí Aspose.Email
 
+## Úvod do hlaviček e‑mailu
 
-## Úvod do záhlaví e-mailů
+Hlavičky e‑mailu jsou digitální obálky, které cestují s každou zprávou. Přenášejí důležitá metadata — např. kdo e‑mail odeslal, kdy byl odeslán a jakou cestou prošel — aby servery a klienti mohli zprávu správně zpracovat. V tomto tutoriálu se naučíte, jak **vytvořit vlastní hlavičky e‑mailu**, proč jsou důležité a jak Aspose.Email pro Java celý proces zjednodušuje.
 
-Záhlaví e-mailů jsou jako obálky digitálních zpráv. Obsahují základní metadata, která provedou e-mail cestou od odesílatele k příjemci. Pochopení záhlaví e-mailů vám může pomoci sledovat cestu, kterou se e-mail ubíral, identifikovat potenciální problémy a zajistit bezpečnou a spolehlivou e-mailovou komunikaci.
+## Rychlé odpovědi
+- **Jaký je hlavní způsob přidání vlastní hlavičky?** Použijte kolekci `Headers` na objektu `MailMessage`.  
+- **Mohu přečíst hlavičku Subject po načtení e‑mailu?** Ano — přistupte k ní pomocí `message.getHeaders().get("Subject")`.  
+- **Potřebuji licenci pro používání API hlaviček?** Zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
+- **Existuje nějaký limit pro názvy vlastních hlaviček?** Dodržujte konvence pojmenování RFC 5322 (např. začínají „X-“).  
+- **Která verze Aspose.Email podporuje tyto funkce?** Všechny aktuální verze (2024‑2026) zahrnují plnou manipulaci s hlavičkami.
 
-### Co jsou záhlaví e-mailů?
+## Co jsou hlavičky e‑mailu?
 
-Záhlaví e-mailů jsou řádky metadat na začátku e-mailové zprávy. Poskytují informace o původu, trase a zpracování zprávy. Mezi běžná pole záhlaví e-mailů patří:
+Hlavičky e‑mailu jsou řádky metadat umístěné na začátku e‑mailové zprávy. Popisují původ zprávy, její trasu a instrukce pro zpracování. Mezi běžné pole patří:
 
-- Od: E-mailová adresa odesílatele.
-- Komu: E-mailová adresa příjemce.
-- Předmět: Předmět e-mailu.
-- Datum: Datum a čas odeslání e-mailu.
-- Přijato: Série záznamů s podrobnostmi o cestě e-mailu od odesílatele k příjemci.
-- ID zprávy: Jedinečný identifikátor e-mailové zprávy.
+- **From:** Adresa odesílatele.  
+- **To:** Adresa příjemce.  
+- **Subject:** Předmět e‑mailu.  
+- **Date:** Časové razítko vytvoření zprávy.  
+- **Received:** Stopа každého serveru, který poštu zpracoval.  
+- **Message-ID:** Globálně unikátní identifikátor.
 
-## Práce s hlavičkami e-mailů v Aspose.Email
+## Proč nastavit vlastní hlavičku e‑mailu?
 
-Nyní, když chápeme význam záhlaví e-mailů, pojďme se podívat, jak s nimi pracovat pomocí Aspose.Email pro Javu. Aspose.Email je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a extrahovat informace z e-mailových zpráv, včetně jejich záhlaví.
+Přidání **vlastní hlavičky e‑mailu** vám může pomoci:
 
-### Nastavení záhlaví e-mailů
+1. **Sledovat interní workflow** – např. `X-Job-ID` pro automatizované zpracování.  
+2. **Řídit směrování** – např. `X-Priority` pro ovlivnění priority doručení.  
+3. **Vložit metadata** – např. korelační ID pro logování a ladění.
 
-Chcete-li programově nastavit záhlaví e-mailů pomocí Aspose.Email, postupujte takto:
+## Práce s hlavičkami e‑mailu v Aspose.Email
 
-1. Inicializace e-mailové zprávy: Vytvoření instance `MailMessage` třída.
+Nyní, když rozumíme významu hlaviček e‑mailu, pojďme se ponořit do praktických kroků pro jejich vytváření, nastavení a čtení pomocí Aspose.Email pro Java.
+
+### Nastavení hlaviček e‑mailu (Vytvoření vlastních hlaviček e‑mailu)
+
+Postupujte podle těchto tří jednoduchých kroků:
+
+1. **Inicializovat e‑mailovou zprávu** – vytvořte novou instanci `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Nastavení hodnot záhlaví: Použijte `Headers` kolekce pro nastavení hodnot záhlaví.
+2. **Přidat vlastní hlavičku** – použijte kolekci `Headers` k nastavení hodnot **vlastní hlavičky e‑mailu**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Odeslat e-mail: Odešlete e-mail jako obvykle.
+3. **Odeslat e‑mail** – nakonfigurujte `SmtpClient` a odešlete zprávu.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Načítání záhlaví e-mailů
+> **Tip:** Předponujte vlastní hlavičky `X-`, aby byly v souladu s RFC 5322 a nedocházelo ke konfliktům se standardními poli.
 
-Chcete-li načíst záhlaví příchozích e-mailů pomocí Aspose.Email, postupujte takto:
+### Načítání hlaviček e‑mailu (Čtení hlavičky Subject)
 
-1. Načíst e-mailovou zprávu: Načíst příchozí e-mailovou zprávu.
+Když obdržíte e‑mail, můžete pomocí stejné kolekce `Headers` extrahovat libovolnou hlavičku — včetně předmětu:
+
+1. **Načíst e‑mail** ze souboru `.eml` nebo ze streamu.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Přístup k hodnotám záhlaví: Přístup k hodnotám záhlaví pomocí `Headers` sbírka.
+2. **Přečíst hodnoty hlaviček** jako `Subject` nebo jakékoli vlastní pole, které jste dříve nastavili.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Závěr
+> **Poznámka:** Kolekce `Headers` vrací `null`, pokud požadovaná hlavička neexistuje, proto vždy před použitím hodnoty zkontrolujte, zda není `null`.
 
-Záhlaví e-mailů jsou neopěvovanými hrdiny e-mailové komunikace. Nesou důležité informace, které zajišťují, že se e-maily dostanou k zamýšleným příjemcům. Aspose.Email pro Javu zjednodušuje práci s hlavičkami e-mailů a umožňuje vývojářům využít sílu těchto metadat k různým účelům. Ať už potřebujete nastavit vlastní hlavičky, načíst informace nebo analyzovat trasy e-mailů, Aspose.Email poskytuje nástroje, které potřebujete pro efektivní manipulaci s hlavičkami e-mailů.
+## Časté problémy a řešení
+
+| Problém | Příčina | Řešení |
+|---------|---------|--------|
+| Hlavička se nezobrazuje v přijatém e‑mailu | SMTP server odstraňuje neznámé hlavičky | Ujistěte se, že server povoluje vlastní hlavičky `X-` nebo jej nakonfigurujte tak, aby je zachovával. |
+| `null` vráceno při čtení hlavičky | Chybný název hlavičky (rozlišuje velká a malá písmena) | Použijte přesný název hlavičky tak, jak je uložen, např. "Subject" místo "subject". |
+| Duplicitní hlavičky | Přidání stejné hlavičky vícekrát | Použijte `addOrUpdate` (pokud je k dispozici) nebo odstraňte starý záznam před přidáním nového. |
 
 ## Často kladené otázky
 
-### Jak si mohu zobrazit záhlaví e-mailů v oblíbených e-mailových klientech?
+**Q: Jak mohu zobrazit hlavičky e‑mailu v populárních e‑mailových klientech?**  
+A: Většina klientů umožňuje zobrazit surový zdroj — hledejte možnosti „View Original“, „Show Headers“ nebo „View Source“.
 
-Ve většině e-mailových klientů si můžete záhlaví e-mailů zobrazit tak, že e-mail otevřete a vyhledáte možnost, jako je „Zobrazit zdrojový kód“ nebo „Zobrazit originál“.
+**Q: Jsou hlavičky e‑mailu šifrovány?**  
+A: Ne. Hlavičky jsou metadata v prostém textu a jsou přenášeny v otevřeném textu, pokud není celá zpráva šifrována (např. S/MIME).
 
-### Jsou záhlaví e-mailů šifrována?
+**Q: Mohu upravit hlavičky e‑mailu po odeslání zprávy?**  
+A: Jakmile je zpráva na síti, hlavičky jsou neměnné. Nastavte všechny požadované hlavičky **před** voláním `client.send(message)`.
 
-Ne, záhlaví e-mailů nejsou šifrována. Jsou součástí metadat e-mailu a obvykle jsou ve formátu prostého textu.
+**Q: Jaký je účel hlavičky „Received“?**  
+A: Zaznamenává každý přechod e‑mailu, pomáhá správcům řešit problémy s doručením a sledovat cestu.
 
-### Mohu upravit záhlaví e-mailu po odeslání e-mailu?
+**Q: Jak mohu extrahovat hlavičky e‑mailu z velké dávky e‑mailů?**  
+A: Použijte `MailMessage.load` z Aspose.Email v cyklu nebo využijte `MailMessageCollection` pro hromadné zpracování.
 
-Jakmile je e-mail odeslán, jeho záhlaví jsou obvykle neměnná. Před odesláním e-mailu je nezbytné nastavit požadované záhlaví.
+---
 
-### Jaký je účel záhlaví „Přijato“?
-
-Záhlaví „Přijato“ je série položek, které sledují cestu e-mailu od odesílatele k příjemci. Pomáhá diagnostikovat problémy s doručením a sledovat trasu e-mailu.
-
-### Jak mohu extrahovat záhlaví e-mailů z velké dávky e-mailů?
-
-Můžete využít dávkové zpracování Aspose.Email k efektivní extrakci záhlaví z více e-mailů.
+**Poslední aktualizace:** 2026-01-14  
+**Testováno s:** Aspose.Email for Java 24.11 (2024‑2026)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

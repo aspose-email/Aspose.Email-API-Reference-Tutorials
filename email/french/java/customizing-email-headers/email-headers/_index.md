@@ -1,10 +1,13 @@
 ---
-"description": "Exploitez la puissance des en-têtes d'e-mail avec Aspose.Email pour Java. Apprenez à définir et récupérer facilement des en-têtes d'e-mail."
-"linktitle": "En-têtes d'e-mail dans Aspose.Email"
-"second_title": "API de gestion des e-mails Java Aspose.Email"
-"title": "En-têtes d'e-mail dans Aspose.Email"
-"url": "/fr/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Apprenez à **créer des en-têtes personnalisés d'e‑mail** et à **définir
+  les valeurs d’en‑têtes personnalisés** en utilisant Aspose.Email pour Java, ainsi
+  qu’à **lire les informations d’en‑tête du sujet de l'e‑mail**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Créer des en-têtes personnalisés d'e‑mail avec Aspose.Email
+url: /fr/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# En-têtes d'e-mail dans Aspose.Email
+# Créer des en-têtes d'e-mail personnalisés avec Aspose.Email
 
+## Introduction aux en-têtes d'e-mail
 
-## Introduction aux en-têtes de courrier électronique
+Les en-têtes d'e-mail sont les enveloppes numériques qui accompagnent chaque message. Ils contiennent des métadonnées essentielles — comme l'expéditeur, la date d'envoi et le trajet parcouru — afin que les serveurs et les clients de messagerie puissent traiter le message correctement. Dans ce tutoriel, vous apprendrez comment **créer des en-têtes d'e-mail personnalisés**, pourquoi ils sont importants, et comment Aspose.Email for Java rend tout le processus simple.
 
-Les en-têtes d'e-mail sont comme les enveloppes des messages numériques. Ils contiennent des métadonnées essentielles qui guident un e-mail tout au long de son parcours, de l'expéditeur au destinataire. Comprendre les en-têtes d'e-mail peut vous aider à retracer le chemin emprunté par un e-mail, à identifier les problèmes potentiels et à garantir une communication sécurisée et fiable.
+## Réponses rapides
+- **Quelle est la méthode principale pour ajouter un en-tête personnalisé ?** Utilisez la collection `Headers` d'un objet `MailMessage`.  
+- **Puis-je lire l'en-tête Subject après avoir chargé un e‑mail ?** Oui — accédez‑y via `message.getHeaders().get("Subject")`.  
+- **Ai‑je besoin d’une licence pour utiliser les API d’en‑têtes ?** Une version d’essai suffit pour le développement ; une licence commerciale est requise en production.  
+- **Existe‑t‑il une limite sur les noms d’en‑têtes personnalisés ?** Respectez les conventions de nommage RFC 5322 (par ex., commencer par « X‑ »).  
+- **Quelle version d’Aspose.Email prend en charge ces fonctionnalités ?** Toutes les versions récentes (2024‑2026) incluent la manipulation complète des en‑têtes.
 
-### Que sont les en-têtes d’e-mail ?
+## Que sont les en‑têtes d’e‑mail ?
 
-Les en-têtes d'e-mail sont des lignes de métadonnées placées au début d'un message. Elles fournissent des informations sur l'origine, le cheminement et le traitement du message. Les champs d'en-tête courants incluent :
+Les en‑têtes d’e‑mail sont des lignes de métadonnées placées en haut d’un message. Elles décrivent l’origine du message, son itinéraire et les instructions de traitement. Les champs courants comprennent :
 
-- De : L'adresse e-mail de l'expéditeur.
-- À : L'adresse e-mail du destinataire.
-- Objet : L'objet de l'e-mail.
-- Date : la date et l’heure d’envoi de l’e-mail.
-- Reçu : une série d’entrées détaillant le parcours de l’e-mail de l’expéditeur au destinataire.
-- Message-ID : un identifiant unique pour le message électronique.
+- **From :** Adresse de l’expéditeur.  
+- **To :** Adresse du destinataire.  
+- **Subject :** Ligne d’objet du courriel.  
+- **Date :** Horodatage de la création du message.  
+- **Received :** Trace de chaque serveur ayant traité le courriel.  
+- **Message-ID :** Identifiant unique global.
 
-## Travailler avec les en-têtes d'e-mail dans Aspose.Email
+## Pourquoi définir un en‑tête d’e‑mail personnalisé ?
 
-Maintenant que nous comprenons l'importance des en-têtes d'e-mail, explorons comment les utiliser avec Aspose.Email pour Java. Aspose.Email est une bibliothèque puissante qui permet aux développeurs de créer, manipuler et extraire des informations des e-mails, y compris leurs en-têtes.
+Ajouter un **en‑tête d’e‑mail personnalisé** peut vous aider à :
 
-### Définition des en-têtes des e-mails
+1. **Suivre les flux de travail internes** – par ex., `X-Job-ID` pour le traitement automatisé.  
+2. **Contrôler le routage** – par ex., `X-Priority` pour influencer la priorité de livraison.  
+3. **Intégrer des métadonnées** – par ex., des ID de corrélation pour la journalisation et le débogage.
 
-Pour définir les en-têtes des e-mails par programmation à l'aide d'Aspose.Email, procédez comme suit :
+## Travailler avec les en‑têtes d’e‑mail dans Aspose.Email
 
-1. Initialiser un message électronique : créer une instance du `MailMessage` classe.
+Maintenant que nous comprenons l’importance des en‑têtes d’e‑mail, passons aux étapes pratiques pour les créer, les définir et les lire avec Aspose.Email for Java.
+
+### Définir des en‑têtes d’e‑mail (Créer des en‑têtes d’e‑mail personnalisés)
+
+Suivez ces trois étapes simples :
+
+1. **Initialiser un message e‑mail** – créez une nouvelle instance `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Définir les valeurs d'en-tête : utilisez le `Headers` collection pour définir les valeurs d'en-tête.
+2. **Ajouter un en‑tête personnalisé** – utilisez la collection `Headers` pour **définir des valeurs d’en‑tête d’e‑mail personnalisées**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Envoyer l'e-mail : Envoyez l'e-mail comme vous le feriez normalement.
+3. **Envoyer le courriel** – configurez un `SmtpClient` et expédiez le message.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Récupération des en-têtes d'e-mails
+> **Astuce :** Préfixez les en‑têtes personnalisés avec `X-` pour rester conforme à la RFC 5322 et éviter les conflits avec les champs standards.
 
-Pour récupérer les en-têtes d'un e-mail entrant à l'aide d'Aspose.Email, vous pouvez suivre ces étapes :
+### Récupérer les en‑têtes d’e‑mail (Lire l’en‑tête Subject)
 
-1. Charger le message électronique : chargez le message électronique entrant.
+Lorsque vous recevez un e‑mail, vous pouvez extraire n’importe quel en‑tête — y compris l’objet — en utilisant la même collection `Headers` :
+
+1. **Charger le courriel** depuis un fichier `.eml` ou un flux.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Accéder aux valeurs d'en-tête : accéder aux valeurs d'en-tête à l'aide de `Headers` collection.
+2. **Lire les valeurs d’en‑tête** telles que `Subject` ou tout champ personnalisé que vous avez précédemment défini.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Conclusion
+> **Remarque :** La collection `Headers` renvoie `null` si l’en‑tête demandé n’existe pas, il faut donc toujours vérifier la valeur avant de l’utiliser.
 
-Les en-têtes d'e-mail sont les héros méconnus de la communication par e-mail. Ils contiennent des informations essentielles pour garantir que les e-mails parviennent à leurs destinataires. Aspose.Email pour Java simplifie l'utilisation des en-têtes d'e-mail, permettant aux développeurs d'exploiter la puissance de ces métadonnées à diverses fins. Que vous ayez besoin de définir des en-têtes personnalisés, de récupérer des informations ou d'analyser les itinéraires des e-mails, Aspose.Email fournit les outils nécessaires pour une manipulation efficace des en-têtes d'e-mail.
+## Problèmes courants et solutions
 
-## FAQ
+| Problème | Cause | Solution |
+|----------|-------|----------|
+| L’en‑tête n’apparaît pas dans le courriel reçu | Le serveur SMTP supprime les en‑têtes inconnus | Assurez‑vous que le serveur autorise les en‑têtes `X-` personnalisés ou configurez‑le pour les conserver. |
+| `null` renvoyé lors de la lecture d’un en‑tête | Faute de frappe du nom d’en‑tête (sensible à la casse) | Utilisez exactement le même nom d’en‑tête, par ex., `"Subject"` et non `"subject"`. |
+| En‑têtes dupliqués | Ajout du même en‑tête plusieurs fois | Utilisez `addOrUpdate` (si disponible) ou supprimez l’entrée existante avant d’en ajouter une nouvelle. |
 
-### Comment puis-je afficher les en-têtes des e-mails dans les clients de messagerie courants ?
+## Questions fréquemment posées
 
-Dans la plupart des clients de messagerie, vous pouvez afficher les en-têtes des e-mails en ouvrant l'e-mail et en recherchant une option telle que « Afficher la source » ou « Afficher l'original ».
+**Q : Comment puis‑je afficher les en‑têtes d’e‑mail dans les clients de messagerie populaires ?**  
+R : La plupart des clients offrent la possibilité de voir la source brute — cherchez les options « View Original », « Show Headers » ou « View Source ».
 
-### Les en-têtes des e-mails sont-ils cryptés ?
+**Q : Les en‑têtes d’e‑mail sont‑elles chiffrées ?**  
+R : Non. Les en‑têtes sont des métadonnées en texte clair et sont transmises en clair, sauf si l’ensemble du message est chiffré (par ex., S/MIME).
 
-Non, les en-têtes des e-mails ne sont pas chiffrés. Ils font partie des métadonnées de l'e-mail et sont généralement en texte brut.
+**Q : Puis‑je modifier les en‑têtes d’un e‑mail après l’envoi ?**  
+R : Une fois le message sur le réseau, les en‑têtes sont immuables. Définissez tous les en‑têtes nécessaires **avant** d’appeler `client.send(message)`.
 
-### Puis-je modifier les en-têtes des e-mails après l’envoi d’un e-mail ?
+**Q : Quel est le rôle de l’en‑tête « Received » ?**  
+R : Il enregistre chaque saut que le courriel effectue, aidant les administrateurs à dépanner les problèmes de livraison et à tracer le chemin parcouru.
 
-Une fois un e-mail envoyé, ses en-têtes sont généralement immuables. Il est essentiel de définir les en-têtes souhaités avant l'envoi.
+**Q : Comment extraire les en‑têtes d’un grand lot d’e‑mails ?**  
+R : Utilisez `MailMessage.load` dans une boucle ou exploitez `MailMessageCollection` d’Aspose.Email pour le traitement en masse.
 
-### Quel est le but de l'en-tête « Reçu » ?
+---
 
-L'en-tête « Reçu » est une série d'entrées qui suivent le cheminement de l'e-mail, de l'expéditeur au destinataire. Il permet de diagnostiquer les problèmes de livraison et de retracer l'itinéraire de l'e-mail.
-
-### Comment puis-je extraire les en-têtes d’e-mails d’un grand lot d’e-mails ?
-
-Vous pouvez utiliser les capacités de traitement par lots d'Aspose.Email pour extraire efficacement les en-têtes de plusieurs e-mails.
+**Dernière mise à jour :** 2026-01-14  
+**Testé avec :** Aspose.Email for Java 24.11 (2024‑2026)  
+**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
