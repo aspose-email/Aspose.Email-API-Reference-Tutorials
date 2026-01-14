@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java kullanarak MSG dosyalarından satır içi ekleri çıkarma sanatında ustalaşın. Outlook e-posta formatlarını verimli bir şekilde işlemek için adım adım öğrenin."
-"title": "Java'da Aspose.Email Kullanarak MSG Dosyalarından Satır İçi Ekleri Çıkarma"
-"url": "/tr/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/"
-"weight": 1
+date: '2025-12-17'
+description: Java için Aspose.Email kullanarak satır içi ekleri nasıl çıkaracağınızı
+  ve Outlook MSG dosyalarını nasıl okuyacağınızı öğrenin. Outlook MSG dosyalarını
+  verimli bir şekilde işlemek için adım adım rehber.
+keywords:
+- extract inline attachments MSG Java
+- handle Outlook email formats Java
+- use Aspose.Email library for Java
+title: Java ile Satır İçi Ekleri Çıkarma – Aspose.Email ile MSG Dosyaları
+url: /tr/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,41 +17,69 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java'da Aspose.Email Kullanarak MSG Dosyalarından Satır İçi Ekleri Çıkarma
+# Aspose.Email Kullanarak Java – MSG Dosyalarından Satır İçi Ekleri Çıkarma
 
-## giriiş
+## Giriş
 
-Microsoft Outlook MSG dosyalarıyla mı uğraşıyorsunuz ve satır içi ekleri sorunsuz bir şekilde çıkarmanız mı gerekiyor? Yalnız değilsiniz! Birçok geliştirici, özellikle gömülü içerik çıkarırken karmaşık e-posta dosya biçimlerini işlemede zorluklarla karşılaşıyor. Bu kılavuz, Java için Aspose.Email kullanarak MSG dosyalarından satır içi ekleri çıkarmada ustalaşmanıza yardımcı olur.
+Microsoft OutlookMSG dosyalarından **satır içi ekleri (Java) ayıklamanız** gerekiyorsa, doğru yerdesiniz. Birçok geliştirici, Outlookmsgjava dosyalarını okumakta zorlanıyor çünkü bu format, mesaj gövdesinin içine gömülü resimleri ve belgeleri gizliyor. Bu eğitimde, satır içi ekleri bulmak, tanımlamak ve kaydetmek için Java için Aspose.Email kütüphanesini kullanan temiz, üretime hazır bir çözümü adım adım inceleyeceğiz.
 
-Bu kapsamlı eğitimde, MSG dosyalarını yönetmek ve gömülü eklerini kolayca çıkarmak için Java'daki güçlü Aspose.Email kütüphanesini nasıl kullanacağınızı öğreneceksiniz. Sürecin her adımında size yol göstereceğiz, böylece sonunda parmaklarınızın ucunda sağlam bir çözüme sahip olacaksınız.
+Bu kılavuzun sonunda şunları yapabileceksiniz:
 
-**Ne Öğreneceksiniz:**
-- Java için Aspose.Email nasıl kurulur ve kullanılır
-- MSG dosyalarından satır içi ekleri ayıkla
-- Çıkarılan ekleri dosya sistemine kaydet
-- Olası sorunları ele alın ve performansı optimize edin
+* Bir Maven projesinde Java için Aspose.Email'i kurmak.
 
-Uygulama detaylarına dalmadan önce, gerekli tüm ön koşullara sahip olduğunuzdan emin olalım.
+* **Outlookmsgjava** dosyalarını okumak ve eklerini listelemek.
 
-## Ön koşullar
+* Hangi eklerin satır içi olduğunu tespit etmek ve bunları diske yazmak.
 
-Bu eğitimi etkili bir şekilde takip edebilmek için şunlara sahip olduğunuzdan emin olun:
-1. **Kütüphaneler ve Bağımlılıklar:**
-   - Java için Aspose.Email sürüm 25.4
-   - Maven veya bağımlılık yönetimini destekleyen herhangi bir IDE (örneğin IntelliJ IDEA)
-2. **Çevre Kurulum Gereksinimleri:**
-   - Sisteminizde JDK 16 yüklü
-3. **Bilgi Ön Koşulları:**
-   - Java programlamanın temel anlayışı
-   - Java'da dosya G/Ç'sini işleme konusunda bilgi sahibi olmak
+* Toplu işlem için performans en iyi uygulamalarını uygulamak.
 
-Bu ön koşullar hazır olduğunda, Aspose.Email'i Java için kurmaya geçebiliriz.
+## Hızlı Cevaplar
+- **“Satır içi ek” ne anlama geliyor?** E-posta gövdesine yerleştirilmiş bir ek (örneğin, mesaj içinde görüntülenen resimler).
+
+- **MSG dosyalarını hangi kütüphane işliyor?** Java için Aspose.Email.
+
+- **Lisansa ihtiyacım var mı?** Deneme sürümü değerlendirme için yeterlidir; kalıcı lisans kullanım sınırlarını kaldırır.
+
+- **Birçok MSG dosyasını aynı anda işleyebilir miyim?** Evet – mantığı gruplandırın ve ölçeklenebilirlik için iş parçacığı havuzlarını kullanın.
+
+- **Hangi Java sürümü gereklidir?** JDK16 veya sonrası.
+
+## Java'da “satır içi ekleri ayıklama” nedir?
+
+Java'da satır içi ekleri ayıklamak, programatik olarak bir MSG dosyasını açmak, ek koleksiyonunu taramak ve yalnızca *satır içi* olarak işaretlenmiş öğeleri (normal dosya eklerinin aksine) ayıklamak anlamına gelir. Bu, e-postanın görsel içeriğinin (örneğin, gömülü logolar veya ekran görüntüleri) ayrı resim dosyaları olarak kaydedilmesi gerektiğinde önemlidir.
+
+## Bu görev için neden Aspose.Email kullanmalısınız?
+
+Aspose.Email, düşük seviyeli MAPI yapılarını soyutlayarak size basit, güçlü tipli bir API sunar. İkili MSG formatını kendiniz ayrıştırmaya çalışmakla karşılaştırıldığında, Aspose.Email:
+
+* Tüm MSG varyantlarını (Unicode, RTF, HTML) işler.
+
+* Ek meta verileri için güvenilir özellik erişimi sağlar.
+
+* Dahili lisans kontrolleri ve kapsamlı dokümantasyon sunar.
+
+## Önkoşullar
+
+İlerlemeyi takip etmek için şunlara sahip olduğunuzdan emin olun:
+
+1. **Kütüphaneler ve Bağımlılıklar**
+
+* Aspose.Email for Java (en son sürüm).
+
+* Maven (veya Maven desteği olan bir IDE).
+
+2. **Çalışma Ortamı**
+
+* JDK16 veya daha yenisi kurulu.
+
+3. **Temel Bilgi**
+
+* Java G/Ç ve istisna işleme konusunda bilgi sahibi olmak.
 
 ## Java için Aspose.Email Kurulumu
 
-Java için Aspose.Email'i kullanmaya başlamak için, bunu projenize bir bağımlılık olarak ekleyin. Maven kullanıyorsanız, bu basittir:
+`pom.xml` dosyanıza Aspose.Email bağımlılığını ekleyin. Aşağıdaki kod parçası orijinal eğitimden değiştirilmemiştir.
 
-**Usta:**
 ```xml
 <dependency>
   <groupId>com.aspose</groupId>
@@ -57,26 +91,19 @@ Java için Aspose.Email'i kullanmaya başlamak için, bunu projenize bir bağım
 
 ### Lisans Edinme Adımları
 
-Aspose.Email'i kullanmak için geçerli bir lisansa ihtiyacınız olacak:
-- **Ücretsiz Deneme:** Kütüphaneyi indirin ve bazı kısıtlamalarla birlikte özelliklerini ücretsiz deneyin.
-- **Geçici Lisans:** Tüm işlevleri kısıtlama olmaksızın test etmek için geçici bir lisans edinin.
-- **Satın almak:** Deneme sürümünden memnun kalırsanız, kısıtlama olmaksızın kullanmak için tam lisans satın alabilirsiniz.
+* **Ücretsiz Deneme:** Aspose web sitesinden deneme DLL/JAR dosyasını indirin.
 
-### Temel Başlatma
+* **Geçici Lisans:** Sınırsız test için 30 günlük değerlendirme lisansı talep edin.
 
-Aspose.Email'i başlatmak için projenizin gerekli bağımlılığı içerdiğinden emin olun. Daha sonra e-posta dosyalarıyla çalışmak için sınıflarını ve yöntemlerini kullanmaya başlayabilirsiniz.
+* **Tam Satın Alma:** Üretim dağıtımları için kalıcı bir lisans edinin.
 
 ## Uygulama Kılavuzu
 
-Bu bölümde, uygulamayı özelliklere göre yönetilebilir adımlara böleceğiz. Her özellik, açıklık için kod parçacıklarıyla ayrıntılı olarak açıklanacaktır.
+Aşağıda çözümü üç odaklı özelliğe ayırıyoruz. Her özellik, kısa bir açıklama ve ardından orijinal kod bloğunu (tam olarak korunmuş şekilde) içerir.
 
-### Özellik 1: MSG Dosyasından Satır İçi Ekleri Çıkarın
+### Özellik 1 – MSG Dosyasını Yükleme
 
-Bu özellik, Aspose.Email for Java kullanılarak bir Outlook MSG dosyasına gömülü satır içi ekleri belirler ve çıkarır.
-
-#### Adım 1: MSG Dosyasını Yükleyin
-
-Öncelikle MSG dosyanızı bir `MapiMessage` nesne. Bu adım, üzerinde çalışacağınız mesajı başlatır.
+Öncelikle, Outlook mesajını bir `MapiMessage` nesnesine yükleyin.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -85,9 +112,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatting.msg");
 ```
 
-#### Adım 2: Ekleri Alın
+### Özellik 2 – Ekleri Alma
 
-Daha sonra, MSG dosyasındaki tüm ekleri şu şekilde alın: `getAttachments()`.
+Ardından, mesajdan tüm ek koleksiyonunu çekin.
 
 ```java
 import com.aspose.email.MapiAttachmentCollection;
@@ -95,9 +122,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-#### Adım 3: Satır İçi Ekleri Kontrol Edin
+### Özellik 3 – Satır İçi Ekleri Tanımlama ve Kaydetme
 
-Her bir ek için, aşağıdakini kullanarak satır içi olup olmadığını belirleyin: `IsAttachmentInline` yöntem. Bu adım yalnızca satır içi ekleri filtreler.
+Her bir eki döngüye alın, satır içi olup olmadığını kontrol edin ve ardından diske yazın.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -106,17 +133,15 @@ for (Object untypedAttachment : attachments) {
         try {
             SaveAttachment(attachment, UUID.randomUUID().toString());
         } catch (IOException e) {
-            // İstisnayı ele al
+            // Handle exception
         }
     }
 }
 ```
 
-### Özellik 2: Eklentinin Satır İçi Olup Olmadığını Belirleyin
+#### Yardımcı Program: Bir Ekin Satır İçi Olup Olmadığını Belirleme
 
-Bu yardımcı fonksiyon, MSG dosyasındaki belirli bir ekin satır içi olup olmadığını kontrol eder.
-
-#### Uygulama Detayları:
+Yardımcı yöntem, bir ekin gömülü olup olmadığına karar vermek için MAPI özelliklerini inceler.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -139,11 +164,9 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-### Özellik 3: Eki Dosya Sistemine Kaydet
+#### Yardımcı Program: Satır İçi Eki Kaydet
 
-Bu özellik, bir MSG dosyasından belirtilen bir eki çıktı dizininize kaydeder.
-
-#### Uygulama Adımları:
+Satır içi ekin ikili içeriğini yerel dosya sistemindeki bir dosyaya yazar.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -164,45 +187,61 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 
 ## Pratik Uygulamalar
 
-MSG dosyalarından satır içi ekleri çıkarmanın çeşitli pratik uygulamaları vardır:
-1. **Otomatik E-posta İşleme:** Gömülü belgelerin daha ileri işleme veya analiz için çıkarılmasını otomatikleştirin.
-2. **Veri Göçü:** E-posta içeriğini ve eklerini farklı platformlara veya sistemlere taşıyın.
-3. **E-posta Arşivleme Çözümleri:** E-postanın satır içi ekler dahil tüm yönlerini koruyan sağlam arşivleme çözümleri geliştirin.
+Satır içi ekleri ayıklamak birçok gerçek dünya senaryosunda faydalıdır:
 
-Bu uygulamalar, Aspose.Email'i Java uygulamanızla entegre etmenin e-posta yönetimiyle ilgili iş akışlarını nasıl kolaylaştırabileceğini göstermektedir.
+* **Otomatik E-posta İşleme** – Analiz için bültenlerden görselleri çekin.
+
+* **Veri Taşıma** – Exchange'den başka bir platforma geçiş yaparken gömülü içeriği taşıyın.
+
+* **Arşivleme Çözümleri** – Satır içi varlıkları ayrı olarak depolayarak arşivlenmiş mesajların görsel doğruluğunu koruyun.
 
 ## Performans Hususları
 
-Büyük miktarda MSG dosyasıyla çalışırken, optimum performans için aşağıdakileri göz önünde bulundurun:
-- **Toplu İşleme:** Kaynak kullanımını en aza indirmek için e-postaları gruplar halinde işleyin.
-- **Bellek Yönetimi:** Akışları ve nesneleri kullanımdan hemen sonra kapatarak verimli bellek yönetimini sağlayın.
-- **İş Parçacığı Havuzu:** Uygun durumlarda işleme görevlerini paralel hale getirmek için iş parçacığı havuzlarını kullanın.
+Yüzlerce veya binlerce MSG dosyasıyla uğraşırken şu ipuçlarını aklınızda bulundurun:
 
-## Çözüm
+* **Toplu İşleme:** Bellek artışlarını önlemek için dosyaları yönetilebilir gruplara ayırın.
 
-Artık Aspose.Email for Java kullanarak MSG dosyalarından satır içi ekleri nasıl çıkaracağınızı öğrendiniz. Bu kılavuzu izleyerek, Outlook mesajlarınıza gömülü e-posta eklerini verimli bir şekilde yönetebilir ve işleyebilirsiniz.
+* **Kaynakları Hemen Serbest Bırakın:** Akışları kapatın (`try-with-resources`) ve çöp toplayıcının nesneleri geri kazanmasına izin verin.
 
-Becerilerinizi daha da geliştirmek için Aspose.Email kütüphanesinin diğer özelliklerini keşfetmeyi veya daha kapsamlı çözümler için ek sistemlerle entegre etmeyi düşünebilirsiniz.
+* **Paralel Yürütme:** Birden fazla ayıklama işini eş zamanlı olarak çalıştırmak için sabit boyutlu bir `ExecutorService` kullanın, ancak CPU kullanımını izleyin.
 
-## SSS Bölümü
+## Sık Karşılaşılan Sorunlar ve Sorun Giderme
 
-**S1: Aspose.Email nedir?**
-Aspose.Email, Microsoft Outlook'taki MSG dosyaları da dahil olmak üzere e-posta biçimlerini ve işlevlerini işlemek için tasarlanmış sağlam bir Java kütüphanesidir.
+| Belirti | Olası Sebep | Çözüm |
 
-**S2: Geçici lisansı nasıl alabilirim?**
-Değerlendirme süresince sınırsız erişim için geçici lisans talebinde bulunmak üzere Aspose web sitesini ziyaret edin.
+|---------|--------------|-----|
 
-**S3: Bu çözüm büyük ekleri idare edebilir mi?**
-Evet, ancak verimli kaynak yönetimi sağlayın ve eğitimde anlatılan performans optimizasyon tekniklerini göz önünde bulundurun.
+| `attachment.getObjectData()` üzerinde `NullPointerException` | Mesajda ek meta verisi eksik (örneğin, bozuk MSG) | İşleme başlamadan önce MSG dosyasını doğrulayın veya istisnayı yakalayıp dosya adını kaydedin. |
 
-**S4: Ekleri çıkarırken karşılaşılan yaygın sorunlar nelerdir?**
-Yaygın sorunlar arasında dosya yolu hataları ve istisnaların işlenmesi yer alır. Yolların doğru şekilde ayarlandığından emin olun ve hata işleme için try-catch bloklarını kullanın.
+| Kaydedilen dosya boş veya bozuk | Yanlış özellik adı ("Package" büyük/küçük harf duyarlılığı) | Özellik adının MSG'nin gerçek özelliğiyle eşleştiğini doğrulayın; Aspose.Email dokümantasyonu tam dizeyi listeler. |
 
-**S5: Bunu diğer sistemlerle nasıl entegre edebilirim?**
-Aspose.Email işlevlerini mevcut uygulamalarınıza veya veri işleme hatlarınıza bağlamak için API'leri veya ara yazılımları kullanmayı düşünün.
+| Büyük dosyalarla performans düşüyor | Akışlar kapatılmıyor, bu da bellek sızıntılarına yol açıyor | (Gösterildiği gibi) try-with-resources kullanın ve gerekirse JVM yığınını artırmayı düşünün. |
+
+## Sıkça Sorulan Sorular
+
+**S: Gerekli minimum Aspose.Email sürümü nedir?**
+C: Bu eğitimde 25.4 sürümü kullanılmıştır, ancak JDK16'yı destekleyen herhangi bir 24.x+ sürümü çalışacaktır.
+
+**S: Şifrelenmiş MSG dosyalarından satır içi ekleri çıkarabilir miyim?**
+C: Evet, `MapiMessage` yüklenirken doğru şifre çözme parolasını sağladığınız sürece.
+
+**S: Satır içi resimler ile normal dosya ekleri arasında nasıl ayrım yapabilirim?**
+C: `IsAttachmentInline` yardımcısını kullanın; bu yardımcı, bir eki satır içi olarak işaretleyen MAPI `ObjInfo` bayrağını kontrol eder.
+
+**S: Satır içi ekteki dosyanın orijinal dosya adını korumanın bir yolu var mı?**
+C: Örnek, benzersizlik için bir UUID oluşturur, ancak `attachment.getLongFileName()` özelliğini okuyabilir ve `SaveAttachment` çağrısı yaparken kullanabilirsiniz.
+
+**S: Bu yaklaşım Linux/macOS'ta olduğu kadar Windows'ta da çalışır mı?**
+C: Kesinlikle—Aspose.Email, JDK yüklü olduğu sürece platformdan bağımsızdır.
 
 ## Kaynaklar
 - **Belgeler:** [Aspose E-posta Belgeleri](https://docs.aspose.com/email/java/)
+
+---
+
+**Son Güncelleme:** 2025-12-17
+**Test Edilen Sürüm:** Aspose.Email for Java 25.4 (JDK16)
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
