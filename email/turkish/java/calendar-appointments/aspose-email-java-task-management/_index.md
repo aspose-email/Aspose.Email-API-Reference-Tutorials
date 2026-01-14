@@ -19,48 +19,48 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Aspose.Email for Java ile Görevleri Etkin Bir Şekilde Yönetin
 
-## Introduction
+## Giriiş
 
-Yoğun iş ortamlarında etkili görev yönetimi, özellikle birden fazla e‑posta sunucusunda **list exchange tasks java** yapmanız gerektiğinde hayati öneme sahiptir. **Aspose.Email for Java**, Microsoft Exchange Server’larla sorunsuz etkileşime olanak tanıyarak bu süreci basitleştirir. Bu **aspose email java tutorial** içinde istemciyi başlatmayı, tüm görevleri listelemeyi ve görevleri durumlarına göre filtrelemeyi öğrenecek; böylece gelen kutusu‑yapılacak akışınızı kontrol altında tutabileceksiniz.
+Yoğun iş ortamlarında etkili görev yönetimi, özellikle birden fazla e‑posta sunucusunda **liste değişim görevleri** java'da hayati öneme sahiptir. **Aspose.Email for Java**, Microsoft Exchange Server’larla sorunsuz paylaşıme olanaklarını tanıyarak bu süreci basitleştirir. Bu **e-posta java öğreticisi olarak** içinde görüntülemeyi başlatmayı, tüm görevleri listelemeyi ve görev durumlarına göre saklanmayı öğrenecek; Böylece gelen kutu‑yapılacak şekilde verinizi kontrol altında tutabileceksiniz.
 
-**What You'll Learn:**
+**Ne Öğreneceksiniz:**
 - Aspose.Email kullanarak Exchange İstemcisini başlatma
-- Exchange Sunucusundan tüm görevleri listeleme
-- Duruma göre belirli görevleri sorgulama
+- Exchange Sunucusundan tüm görevlerin listelenmesi
+- Duruma göre belirli işlemlerin sorgulanması
 - Aspose.Email’i Java uygulamalarıyla bütünleştirme
 
-Görev yönetimi iş akışınızı geliştirmeye hazır mısınız? Ön koşullara bir göz atalım.
+Görev yönetimi iş dosyalarınızı paylaşmaya hazır mısınız? Ön kişisel bir göz atalım.
 
-## Quick Answers
-- **What does “list exchange tasks java” do?** Aspose.Email for Java aracılığıyla bir Exchange posta kutusundan görevleri alır.  
-- **Which library is required?** Aspose.Email for Java (sürüm 25.4 veya daha yeni).  
-- **Can I filter tasks by status?** Evet—`ExchangeQueryBuilder` ile `TaskStatus` kullanın.  
-- **Do I need a license for development?** Test için ücretsiz deneme yeterlidir; üretim için tam lisans gereklidir.  
-- **What Java version is supported?** Java 16 ve üzeri önerilir.
+## Hızlı Yanıtlar
+- **Liste değişim görevleri java ne işe yarar?** Aspose.Email for Java aracılığıyla bir Exchange posta değiştirn işlemleri alınır.
+- **Hangi kütüphane gereklidir?** Aspose.Email for Java (sürüm25.4veya daha yeni).
+- **Görevleri duruma göre filtreleyebilir miyim?** Evet—`ExchangeQueryBuilder` ile `TaskStatus` kullanın.
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için ücretsiz deneme yeterlidir; üretim için tam lisans gereklidir.
+- **Hangi Java sürümü destekleniyor?** Java16ve üzeri önerilir.
 
-## What is “list exchange tasks java”?
-Java ile Exchange görevlerini listelemek, bir Exchange Sunucusuna programlı olarak bağlanıp görev koleksiyonunu çekmek ve isteğe bağlı olarak filtrelemek anlamına gelir. Bu, manuel Outlook etkileşimi olmadan toplu güncellemeler, raporlamalar veya iş akışı tetikleyicileri gibi otomasyonları mümkün kılar.
+## "Değişim görevlerini listeleme java" nedir?
+Java ile Exchange sunucularını listelemek, bir Exchange sunucusuna programlı olarak bağlanıp görev koleksiyonunu depolamak ve esnek olarak depolamak için gelir. Bu, manuel Outlook aktarımıi olmadan toplu güncellemeler, raporlamalar veya iş analiz tetikleyicileri gibi otomasyonları mümkün kılar.
 
-## Why filter tasks by status?
-Görevleri durumlarına göre (ör. Completed, InProgress) filtrelemek, o an en önemli işe odaklanmanızı sağlar—ister durum raporu oluşturuyor olun, ister sadece açık öğeleri senkronize edin, ister biten görevleri temizleyin.
+## Görevleri neden duruma göre filtrelemelisiniz?
+Görevleri durumlarına göre (ör. Completed, InProgress) saklanmak, o en önemli işe odaklanmanızı sağlar—ister durum raporu oluşturulun, ister sadece açık parçalar halinde edin, ister biten işlemleri temizleyin.
 
-## Prerequisites
+## Önkoşullar
 
-Before you begin, ensure you have:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-### Required Libraries and Dependencies
-- **Aspose.Email for Java**: Versiyon 25.4 veya üzeri gerekir.  
-- **Java Development Kit (JDK)**: Versiyon 16 veya üzeri kullanın.
+### Gerekli Kitaplıklar ve Bağımlılıklar
+- **Aspose.Email for Java**: Version25.4 veya üzeri gerekir.
+- **Java Development Kit (JDK)**: Version16 veya Üzerini kullanın.
 
-### Environment Setup Requirements
+### Ortam Kurulum Gereksinimleri
 - Maven yüklü çalışan bir Java geliştirme ortamı.
 
-### Knowledge Prerequisites
+### Bilgi Önkoşulları
 - Java ve nesne‑yönelimli programlama kavramlarına temel bir anlayış.
 
-## Aspose Email Java Tutorial – Setting Up
+## Aspose Email Java Eğitimi – Kurulum
 
-To integrate the Aspose.Email library into your project, add this dependency to your `pom.xml` if you're using Maven:
+Aspose.Email kütüphanesini projenize entegre etmek için, Maven kullanıyorsanız bu bağımlılığı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <dependency>
@@ -71,32 +71,13 @@ To integrate the Aspose.Email library into your project, add this dependency to 
 </dependency>
 ```
 
-### License Acquisition Steps
+### Lisans Alma Adımları
 
-1. **Free Trial**: Özellikleri keşfetmek için ücretsiz deneme ile başlayın.  
-2. **Temporary License**: Gerekirse uzatılmış bir test lisansı başvurun.  
-3. **Purchase**: Kütüphaneyi değerlendirdikten sonra tam lisans satın almayı düşünün.
+1. **Ücretsiz Deneme**: Özelliklerin ayrılması için ücretsiz deneme ile başlayın.
+2. **Geçici Lisans**: uzatılmış bir test lisansı başvurusu yapın.
+3. **Satın Alma**: Kütüphaneyi değerlendirdikten sonra tam lisansı satın almayı düşünün.
 
-With your environment set up and a license in hand, initialize the library as follows:
-
-```java
-String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
-String username = "test.exchange";
-String password = "pwd";
-String domain = "ex2010.local";
-
-NetworkCredential credentials = new NetworkCredential(username, password, domain);
-IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-```
-
-This snippet sets up the Exchange Client with your specified credentials.
-
-## Implementation Guide
-
-### Initialize Exchange Client
-
-#### Overview
-Aspose.Email Java istemcisini başlatarak Exchange Sunucunuza bağlanın ve kimlik doğrulaması yapın. Bu, posta kutusu görevlerine programlı erişim için gereklidir.
+Ortamınız kurulmuş ve elinizde bir lisans varken kitaplığı aşağıdaki şekilde başlatın:
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -108,13 +89,32 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-- **Parameters**:
+Bu kod parçası, Exchange İstemcisini belirttiğiniz kimlik bilgileriyle ayarlar.
+
+## Uygulama Kılavuzu
+
+### Exchange İstemcisini Başlat
+
+#### Genel Bakış
+Aspose.Email Java'yı başlatarak Exchange Sunucunuza bağlanın ve kimlik doğrulamasını yapın. Bu, posta kutusu görevlerine programlı erişim için gereklidir.
+
+```java
+String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
+String username = "test.exchange";
+String password = "pwd";
+String domain = "ex2010.local";
+
+NetworkCredential credentials = new NetworkCredential(username, password, domain);
+IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
+```
+
+- **Parametreler**:
   - `mailboxUri`: Exchange sunucunuzun uç nokta URL’si.  
   - `username`, `password`, `domain`: Kimlik doğrulama için gerekli bilgiler.
 
-### List All Tasks from Exchange Server
+### Exchange Sunucusundaki Tüm Görevleri Listele
 
-#### Overview
+#### Genel Bakış
 Başlatılan istemciyi kullanarak Exchange posta kutunuzdaki tüm görevleri alın. Bu, **list exchange tasks java** işleminin temelidir.
 
 ```java
@@ -127,12 +127,12 @@ for (int i = 0; i < iTasksCount; i++) {
 }
 ```
 
-- **Parameters**:
+- **Parametreler**:
   - `setTimezoneId`: Görevlerin doğru yerel zamanda gösterilmesini sağlar.
 
-### Query and List Specific Tasks from Exchange Server
+### Exchange Sunucusundan Belirli Görevleri Sorgulama ve Listeleme
 
-#### Overview
+#### Genel Bakış
 Sorgu yeteneklerini kullanarak görevleri durumlarına göre filtreleyin ve listeleyin—bu, **filter tasks by status** işleminin yoludur.
 
 ```java
@@ -153,62 +153,73 @@ for (int i = 0; i < iTasksCount; i++) {
 }
 ```
 
-- **Parameters**:
+- **Parametreler**:
   - `selectedStatuses`: Filtrelenecek durumları belirten bir dizi.
 
-## Practical Applications
+## Pratik Uygulamalar
 
-Integrating Aspose.Email with Java enables various real‑world scenarios:
+Aspose.Email'in Java ile entegrasyonu çeşitli gerçek dünya senaryolarına olanak tanır:
 
-1. **Automated Task Management** – Görevleri platformlar arasında otomatik olarak senkronize edin ve güncelleyin.  
-2. **Reporting Tools** – Görev tamamlama durumuna göre raporlar oluşturun.  
-3. **Workflow Automation** – Belirli koşullar gerçekleştiğinde (ör. bir görev tamamlandığında) iş akışlarını tetikleyin.  
-4. **Cross‑Platform Integration** – CRM veya proje yönetim araçlarıyla sorunsuz entegrasyon sağlayın.
+1. **Otomatik Görev Yönetimi** – Görevleri platformları arasında otomatik olarak sunulanları edinin ve güncelleyin.
+2. **Raporlama Araçları** – Günlük tamamlamayı göreli olarak raporlar birleştirir.
+3. **İş Akışı Otomasyonu** – düzenleme koşullarının koşullarında (ör.bir görev tamamlandığında) iş akışlarını tetikleyin.
+4. **Çapraz Platform Entegrasyonu** – CRM veya proje yönetim araçlarıyla sorunsuz entegrasyon sağlayın.
 
-## Performance Considerations
+## Performansla İlgili Hususlar
 
-To ensure optimal performance:
+Optimum performansı sağlamak için:
 
-- **Optimize Network Usage** – Trafiği düşük tutmak için yalnızca ihtiyaç duyduğunuz alanları alın.  
-- **Efficient Memory Management** – Büyük `TaskCollection` nesneleriyle çalışırken Java heap kullanımına dikkat edin.  
-- **Aspose.Email Best Practices** – Gelişmiş yapılandırma ve önbellekleme stratejileri için resmi belgeleri izleyin.
+- **Ağ Kullanımını Optimize Etme** – Trafiği düşük tutmak için yalnızca erişim alanlarını satın alın.
+- **Etkili Bellek Yönetimi** – Büyük `TaskCollection` nesneleri ile çalışırken Java heap kullanımına dikkat edin.
+- **Aspose.Email Best Practices** – Gelişmiş yapılandırma ve önbellekleme yöntemleri için resmi izlemeleri izleyin.
 
-## Common Issues and Solutions
+## Yaygın Sorunlar ve Çözümler
 
-| Issue | Likely Cause | Solution |
+| Sayı | Olası Sebep | Çözüm |
+
 |-------|--------------|----------|
-| **Authentication fails** | Wrong credentials or domain | Verify `username`, `password`, and `domain` values; ensure the Exchange URL is reachable. |
-| **No tasks returned** | Wrong mailbox URI or missing permissions | Check that the service account has access to the Tasks folder. |
-| **Time zone mismatch** | `setTimezoneId` not set or incorrect | Use the appropriate Windows time‑zone ID for your region. |
-| **Large task collections cause OOM** | Loading all tasks at once | Implement paging by using `client.listTasks(..., query, offset, limit)` (see Aspose docs). |
 
-## Frequently Asked Questions
+| **Kimlik doğrulama başarısız** | Yanlış kimlik bilgileri veya etki alanı | `kullanıcı adı`, `şifre` ve `etki alanı` değerlerini doğrulayın; Exchange URL'sinin erişilebilir olduğundan emin olun. |
 
-**Q: What is Aspose.Email for Java?**  
-A: A library that simplifies interaction with email servers, including Exchange Server, via a clean Java API.
+| **Hiçbir görev döndürülmedi** | Yanlış posta kutusu URI'si veya eksik izinler | Hizmet hesabının Görevler klasörüne erişimi olduğundan emin olun. |
 
-**Q: How do I obtain an Aspose.Email license?**  
-A: Start with a free trial or request a temporary license; purchase a full license for production use.
+| **Saat dilimi uyuşmazlığı** | `setTimezoneId` ayarlanmamış veya yanlış | Bölgeniz için uygun Windows saat dilimi kimliğini kullanın. |
 
-**Q: Can I use Aspose.Email on any version of Java?**  
-A: It supports Java 16 or later; newer versions are also compatible.
+| **Büyük görev koleksiyonları bellek yetersizliğine neden oluyor** | Tüm görevlerin aynı anda yüklenmesi | `client.listTasks(..., sorgu, ofset, limit)` kullanarak sayfalama uygulayın (Aspose belgelerine bakın). |
 
-**Q: What are common pitfalls when listing exchange tasks java?**  
-A: Incorrect credentials, missing permissions, and not setting the correct time zone are the most frequent.
+## Sıkça Sorulan Sorular
 
-**Q: Where can I find more resources on Aspose.Email for Java?**  
-A: Visit the [official documentation](https://reference.aspose.com/email/java/) and [support forums](https://forum.aspose.com/c/email/10) for detailed guides and community help.
+**S: Aspose.Email for Java nedir?**
+C: Temiz bir Java API'si aracılığıyla Exchange Server dahil olmak üzere e-posta sunucularıyla etkileşimi basitleştiren bir kütüphanedir.
 
-## Resources
+**S: Aspose.Email lisansını nasıl edinebilirim?**
+C: Ücretsiz deneme sürümüyle başlayın veya geçici bir lisans talep edin; üretim kullanımı için tam lisans satın alın.
 
-- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose License](https://purchase.aspose.com/buy)
-- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+**S: Aspose.Email'i herhangi bir Java sürümünde kullanabilir miyim?**
+C: Java 16 veya daha yeni sürümleri destekler; daha yeni sürümler de uyumludur.
 
-Embrace the power of Aspose.Email for Java and streamline your email server interactions today!
+**S: Java'da Exchange görevlerini listelerken sık karşılaşılan sorunlar nelerdir?**
+C: Yanlış kimlik bilgileri, eksik izinler ve doğru saat diliminin ayarlanmaması en sık karşılaşılan sorunlardır.
+
+**S: Aspose.Email for Java hakkında daha fazla kaynağı nerede bulabilirim?**
+C: Ayrıntılı kılavuzlar ve topluluk yardımı için [resmi dokümantasyona](https://reference.aspose.com/email/java/) ve [destek forumlarına](https://forum.aspose.com/c/email/10) göz atın.
+
+## Kaynaklar
+
+- **Belgeler**: [Aspose E-posta Java Referansı](https://reference.aspose.com/email/java/)
+- **İndir**: [Aspose E-posta Java Sürümleri](https://releases.aspose.com/email/java/)
+- **Satın Al**: [Aspose Lisansı Satın Al](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme**: [Ücretsiz Deneme ile Başlayın](https://releases.aspose.com/email/java/)
+- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.aspose.com/temporary-license/)
+- **Destek**: [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
+
+Aspose.Email for Java'nın gücünü kucaklayın ve e-posta sunucu etkileşimlerinizi bugün kolaylaştırın!
+
+---
+
+**Son Güncelleme:** 19.12.2025
+**Test Edildiği Sürüm:** Java 25.4 için Aspose.Email (jdk16 sınıflandırıcı)
+**Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -217,9 +228,3 @@ Embrace the power of Aspose.Email for Java and streamline your email server inte
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

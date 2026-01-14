@@ -208,6 +208,12 @@ A: Besuchen Sie die [offizielle Dokumentation](https://reference.aspose.com/emai
 
 Nutzen Sie die Leistungsfähigkeit von Aspose.Email für Java und optimieren Sie noch heute Ihre Interaktionen mit E‑Mail‑Servern!
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -215,9 +221,3 @@ Nutzen Sie die Leistungsfähigkeit von Aspose.Email für Java und optimieren Sie
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

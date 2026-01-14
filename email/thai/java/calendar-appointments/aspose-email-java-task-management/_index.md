@@ -206,6 +206,12 @@ for (int i = 0; i < iTasksCount; i++) {
 
 รับพลังของ Aspose.Email for Java และทำให้การโต้ตอบกับเซิร์ฟเวอร์อีเมลของคุณเป็นเรื่องง่ายวันนี้!
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-19  
+**ทดสอบด้วย:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -213,9 +219,3 @@ for (int i = 0; i < iTasksCount; i++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-19  
-**ทดสอบด้วย:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**ผู้เขียน:** Aspose

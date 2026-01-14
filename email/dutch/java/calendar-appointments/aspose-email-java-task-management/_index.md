@@ -208,6 +208,12 @@ A: Bezoek de [officiële documentatie](https://reference.aspose.com/email/java/)
 
 Omarm de kracht van Aspose.Email voor Java en stroomlijn vandaag nog uw interacties met e‑mailservers!
 
+---
+
+**Laatst bijgewerkt:** 2025-12-19  
+**Getest met:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -215,9 +221,3 @@ Omarm de kracht van Aspose.Email voor Java en stroomlijn vandaag nog uw interact
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-19  
-**Getest met:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Auteur:** Aspose

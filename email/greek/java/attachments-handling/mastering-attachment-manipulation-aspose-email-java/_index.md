@@ -236,6 +236,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 - **Λήψη**: Πρόσβαση στην πιο πρόσφατη έκδοση στο [Aspose Releases](https://releases.aspose.com/email/java/).  
 - **Αγορά**: Μάθετε για τις επιλογές αγοράς στη [Aspose Purchase Page](https://purchase.aspose.com/buy).  
 
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-19  
+**Δοκιμή Με:** Aspose.Email for Java 25.4 (JDK 16)  
+**Συγγραφέας:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -243,11 +249,3 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2025-12-19  
-**Δοκιμή Με:** Aspose.Email for Java 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose  
-
----

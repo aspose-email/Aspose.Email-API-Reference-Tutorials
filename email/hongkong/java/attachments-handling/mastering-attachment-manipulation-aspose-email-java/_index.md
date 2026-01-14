@@ -233,6 +233,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 - **Download**：於 [Aspose Releases](https://releases.aspose.com/email/java/) 取得最新版本。  
 - **Purchase**：在 [Aspose Purchase Page](https://purchase.aspose.com/buy) 了解購買選項。
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -240,11 +246,3 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
----

@@ -210,6 +210,12 @@ A: Odwiedź [official documentation](https://reference.aspose.com/email/java/) o
 
 Wykorzystaj moc Aspose.Email for Java i usprawnij interakcje z serwerem pocztowym już dziś!
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -217,9 +223,3 @@ Wykorzystaj moc Aspose.Email for Java i usprawnij interakcje z serwerem pocztowy
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

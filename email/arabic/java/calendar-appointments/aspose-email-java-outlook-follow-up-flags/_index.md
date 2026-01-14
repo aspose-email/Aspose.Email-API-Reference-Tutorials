@@ -19,39 +19,39 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # كيفية تعيين علامات المتابعة في Outlook باستخدام Aspose.Email for Java
 
-## Introduction
-إذا كنت قد واجهت صعوبة في تتبع الرسائل الإلكترونية المهمة، فأنت تعلم مدى قيمة علامات المتابعة في Outlook. في هذا الدليل سنوضح **كيفية تعيين علامات المتابعة** برمجيًا باستخدام Aspose.Email for Java، وسنغطي أيضًا كيفية **تعيين علامة متابعة Outlook** للمستلمين، بالإضافة إلى كيفية **إزالة علامة متابعة Outlook** عندما يكتمل المهمة. في النهاية، ستتمكن من أتمتة تتبع المهام، والتذكيرات، وسجلات التدقيق مباشرةً من كود Java الخاص بك.
+## مقدمة
+إذا كنت لا تستطيع صعوبة في متابعة الرسائل الإلكترونية المهمة، فعليك أن تعلم مدى قيمة علامات المتابعة في Outlook. في هذا الدليل سنوضح **كيفية تعيين المتابعة** برمجيًا باستخدام Aspose.Email لـ Java، وسنغطي أيضًا كيفية **تعيين علامة متابعة Outlook** للمستلمين، بالإضافة إلى كيفية **إزالة علامة متابعة Outlook** عندما تكتمل المهمة. في النهاية، تم حسابها من تتبع اللعبة، والتذكيرات، وحصرات التمييز من كود Java الخاص بك.
 
 **ما ستتعلمه**
-- إنشاء وتطبيق علامة متابعة على رسالة Outlook.  
-- تعيين علامات متابعة لمستلمين محددين.  
-- وضع علامة كمنجزة وإزالتها لاحقًا.  
-- قراءة خيارات العلامة للتقارير أو الامتثال.  
+- إنشاء وتطبيق علامة متابعة على رسالة Outlook.
+- تعيين علامات متابعة لم استلامين المحددين.
+- وضع علامة كمنجز وإزالتها لاحقا.
+- قراءة خيارات العلامة للتقارير أو.
 
-لنجهز البيئة قبل الغوص في الكود.
+لننظم البيئة قبل الغوص في الكود.
 
-## Quick Answers
-- **ماذا يعني “كيفية تعيين متابعة”؟** إضافة علامة مع تواريخ البدء، والتذكير، والموعد النهائي إلى عنصر Outlook.  
-- **ما المكتبة المطلوبة؟** Aspose.Email for Java (الإصدار 25.4 أو أحدث).  
-- **هل أحتاج إلى ترخيص؟** نعم، يلزم وجود ترخيص تجريبي أو مرخص للحصول على الوظائف الكاملة.  
-- **هل يمكنني تعيين علامات للمستلمين فقط؟** بالتأكيد – استخدم `FollowUpManager.setFlagForRecipients`.  
-- **هل يمكن إزالة العلامة لاحقًا؟** نعم، استدعِ `FollowUpManager.clearFlag`.
+## إجابات سريعة
+- **ماذا يعني “كيفية تجدد تحديثها”؟** إضافة علامة مع التجديد، والتذكير، والوعد النهائي إلى مفهوم Outlook.
+- **ما المؤسسة الأساسية؟** Aspose.Email for Java (الإصدار 25.4 أو أحدث).
+- **هل تحتاج إلى ترخيص؟** نعم، يلزم الحصول على ترخيص أو الحصول على ترخيص كامل للحصول على الوظائف.
+- **هل يمكنني تعيين علامات للمستلمين فقط؟** بالتأكيد – استخدم `FollowUpManager.setFlagForRecipients`.
+- **هل يمكن إزالة العلامة التجارية لاحقًا؟** نعم، بالتأكيد `FollowUpManager.clearFlag`.
 
-## What is a Follow‑Up Flag?
-علامة المتابعة هي ميزة في Outlook تضع إشارة على رسالة البريد الإلكتروني كمهام، مع إمكانية إرفاق تواريخ البدء، والتذكير، والموعد النهائي. تساعدك أنت وفريقك على متابعة الإجراءات المعلقة.
+## ما هو علم المتابعة؟
+علامة المتابعة هي فرصة في Outlook تضع إشارة على رسالة البريد الإلكتروني كمهام، مع إمكانية استمرار الأحداث، والتذكير، والموعد النهائي. ستساعدك وفريقك على تطبيق التدابير الوقائية.
 
-## Why use Aspose.Email for Java?
-توفر Aspose.Email واجهة برمجة تطبيقات Java صافية تعمل دون الحاجة إلى تثبيت Outlook، مما يتيح لك التعامل مع ملفات .msg، وتعيين العلامات، وإدارة المهام على أي منصة—مثالية للخدمات الخلفية، وسير العمل الآلي، أو التكامل مع أدوات إدارة المشاريع.
+## لماذا نستخدم Aspose.Email لـ Java؟
+توفر Aspose.Email واجهة برمجة تطبيقات Java Nete تعمل دون الحاجة إلى تثبيت Outlook، يتيح لك التعامل مع ملفات .msg، وتعيين العلامات، وإدارة القدرة على أي منصة—مثالية مما الخدمات، وسير العمل الفني، أو تكامل مع أدوات إدارة المشاريع.
 
-## Prerequisites
-- **Aspose.Email for Java** الإصدار 25.4 أو أحدث.  
-- **JDK 16+** مثبت.  
-- بيئة تطوير متوافقة مع Maven (IntelliJ IDEA، Eclipse، إلخ).  
-- معرفة أساسية بـ Java وإلمام بمفاهيم البريد الإلكتروني.
+## المتطلبات الأساسية
+- **Aspose.Email for Java** الإصدار 25.4 أو أحدث.
+- **JDK16+** إيجابي.
+- بيئة تطوير متوافقة مع Maven (IntelliJ IDEA، Eclipse، إلخ).
+- معرفة القمة بـ Java وإمام بمفاهيم البريد الإلكتروني.
 
-## Setting Up Aspose.Email for Java
-### Maven Configuration
-أضف الاعتماد التالي إلى ملف `pom.xml` الخاص بك:
+## إعداد Aspose.Email لـ Java
+### تكوين مخضرم
+إضافة الاعتماد التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -62,12 +62,7 @@ weight: 1
 </dependency>
 ```
 
-### License Acquisition
-تتطلب Aspose.Email ترخيصًا للاستخدام في الإنتاج:
-
-- **تجربة مجانية** – تقييم لمدة 30 يومًا.  
-- **ترخيص مؤقت** – اختبار موسع.  
-- **ترخيص كامل** – اشتراك دائم.
+### الحصول على الترخيص
 
 قم بتهيئة الترخيص قبل أي عملية بريد إلكتروني:
 
@@ -76,13 +71,13 @@ License license = new License();
 license.setLicense("path/to/Aspose.Total.Java.lic");
 ```
 
-## Implementation Guide
+## دليل التنفيذ
 
-### How to Set Follow‑Up Flags (Feature 1)
-#### Overview
-يشرح هذا القسم كيفية إنشاء رسالة Outlook، وتعريف تواريخ البدء/التذكير/الموعد النهائي، وتطبيق علامة المتابعة.
+### كيفية تعيين علامات المتابعة (الميزة 1)
+#### ملخص
+يشرح هذا القسم كيفية إنشاء رسالة Outlook، وتعريف التاريخ/التذكير/الموعد النهائي، وتطبيق علامة المتابعة.
 
-#### Step 1: Create and Initialize the Message
+#### الخطوة الأولى: إنشاء الرسالة وتهيئتها
 ```java
 MailMessage mailMsg = new MailMessage();
 mailMsg.setSender(new MailAddress("AETest12@gmail.com"));
@@ -92,7 +87,7 @@ MapiMessage mapi = MapiMessage.fromMailMessage(mailMsg);
 ```
 *نقوم أولاً بإنشاء كائن `MailMessage`، وتحديد المرسل/المستلم، ثم تحويله إلى `MapiMessage` لتعديل العلامة.*
 
-#### Step 2: Define Follow‑Up Dates
+#### الخطوة الثانية: تحديد مواعيد المتابعة
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 14, 40, 0);
@@ -104,30 +99,30 @@ Date dtDueDate = calendar.getTime();
 ```
 *هنا نحدد تواريخ البدء، والتذكير، والموعد النهائي باستخدام فئة `Calendar`.*
 
-#### Step 3: Apply Follow‑Up Options
+#### الخطوة 3: تطبيق خيارات المتابعة
 ```java
 FollowUpOptions options = new FollowUpOptions("Follow Up", dtStartDate, dtDueDate, dtReminderDate);
 FollowUpManager.setOptions(mapi, options);
 ```
 *كائن `FollowUpOptions` يحتوي على جميع تفاصيل العلامة، ونطبقه باستخدام `FollowUpManager.setOptions`.*
 
-#### Step 4: Save the Message
+#### الخطوة الرابعة: حفظ الرسالة
 ```java
 mapi.save(outputDir + "SetFollowUpflag_out.msg");
 ```
 *يتم حفظ الرسالة كملف `.msg` مع إرفاق العلامة.*
 
-### How to Set Outlook Follow‑Up Flag for Recipients (Feature 2)
-#### Overview
+### كيفية ضبط علامة متابعة Outlook للمستلمين (الميزة 2)
+#### نظرة عامة
 في بعض الأحيان تحتاج إلى وضع علامة على الرسالة للمستلمين فقط. يوضح هذا المثال كيفية وضع الرسالة كمسودة أولاً، ثم إضافة العلامة.
 
-#### Step 1: Mark as Draft
+#### الخطوة 1: ضع علامة كمسودة
 ```java
 mapi.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 ```
 *وضع الرسالة كغير مرسلة يضمن أن Outlook يتعامل معها كمسودة.*
 
-#### Step 2: Set Recipient Flag
+#### الخطوة الثانية: تعيين علامة المستلم
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 16, 40, 0);
@@ -136,24 +131,25 @@ FollowUpManager.setFlagForRecipients(mapi, "Follow up", dtReminderDate);
 ```
 *العلامة الآن مرئية فقط للمستلمين.*
 
-### How to Mark an Outlook Follow‑Up Flag as Completed (Feature 3)
-#### Overview
+### كيفية وضع علامة "مكتمل" على رسالة متابعة في Outlook (الميزة 3)
+#### نظرة عامة
 عند إكمال المهمة، يمكنك برمجيًا وضع العلامة كمنجزة.
 
-#### Step 1: Load the Message
+#### الخطوة 1: تحميل الرسالة
+
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 ```
 
-#### Step 2: Mark as Completed and Save
+#### الخطوة 2: وضع علامة "مكتمل" وحفظها
 ```java
 FollowUpManager.markAsCompleted(mapi);
 mapi.save(outputDir + "MarkedCompleted_out.msg");
 ```
 *يتغير حالة العلامة إلى “Completed” ويتم حفظ الملف المحدث.*
 
-### How to Remove Outlook Follow‑Up Flag (Feature 4)
-#### Overview
+### كيفية إزالة علامة المتابعة في Outlook (الميزة 4)
+#### نظرة عامة
 إذا لم تعد العلامة مطلوبة، يمكنك إزالتها بالكامل.
 
 #### Step 1: Load and Clear Flag
@@ -164,60 +160,60 @@ mapi.save(outputDir + "FollowUpFlagRemoved_out.msg");
 ```
 *يتم حفظ الرسالة دون أي علامة متابعة.*
 
-### How to Read Follow‑Up Flag Options (Feature 5)
-#### Overview
+### كيفية قراءة خيارات علامة المتابعة (الميزة 5)
+#### نظرة عامة
 للتدقيق أو إعداد التقارير، قد تحتاج إلى قراءة إعدادات العلامة الحالية.
 
-#### Step 1: Retrieve Options
+#### الخطوة 1: استرجاع الخيارات
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpOptions options = FollowUpManager.getOptions(mapi);
 ```
 *كائن `options` الآن يحتوي على تواريخ البدء، والموعد النهائي، والتذكير، بالإضافة إلى موضوع العلامة.*
 
-## Practical Applications
-- **Task‑Management Integration:** مزامنة الرسائل الموسومة مع Jira أو Trello أو Azure Boards.  
-- **Automated Reminders:** إنشاء رسائل تذكير يومية للمتابعات المعلقة.  
-- **Compliance Audits:** تصدير بيانات العلامات لتقارير الامتثال التنظيمي.
+## تطبيقات عملية
+- **تكامل إدارة المهام:** نوبات الرسائل الموسومة مع Jira أو Trello أو Azure Boards.
+- **التذكيرات الآلية:** إنشاء رسائل تذكير يومية للمتابعات المعلقة.
+- **عمليات تدقيق الامتثال:** تصدير بيانات العناوين للتقارير التنظيمية.
 
-## Performance Considerations
-- **Date Calculations:** احسب التواريخ مرة واحدة لكل دفعة بدلاً من داخل الحلقات.  
-- **Resource Management:** أغلق أي تدفقات أو مقبض ملفات بعد حفظ الرسائل.  
-- **Memory Usage:** عالج صناديق البريد الكبيرة على دفعات لتجنب ضغط الذاكرة.
+## اعتبارات الأداء
+- **حسابات التاريخ:** حسب التواريخ مرة واحدة لكل بديل من داخل الحلقات.
+- **إدارة الموارد:** تسبب في أي تدفقات أو السيطرة على الملفات بعد حفظ الرسائل.
+- **استخدام الذاكرة:** معالجة صناديق البريد الكبيرة على دفعات ضغط الذاكرة.
 
-## Common Issues and Solutions
-| المشكلة | السبب | الحل |
+## المشكلات والحلول الشائعة
+| مشكلة | السبب | الحل |
 |-------|-------|-----|
-| العلامة لا تظهر في Outlook | تم حفظ الرسالة دون `MessageFlags` صحيحة | تأكد من ضبط `setMessageFlags` إلى `MSGFLAG_UNSENT` قبل تطبيق علامات المستلمين. |
-| حدوث استثناء `AccessDeniedException` عند الحفظ | مسار ملف غير صحيح أو عدم وجود أذونات كتابة | تحقق من وجود دليل الإخراج وأن التطبيق يملك صلاحية الكتابة. |
-| التواريخ متأخرة بيوم واحد | اختلاف المنطقة الزمنية | استخدم `TimeZone.getTimeZone("GMT")` أو المنطقة المحلية بشكل ثابت. |
+| العلامة التجارية التي لا تدوم في Outlook | تم حفظ الرسالة دون `MessageFlags` بشكل صحيح | تأكد من ضبط `setMessageFlags` إلى `MSGFLAG_UNSENT` قبل تطبيق علامات المستلمين. |
+| استثناء `AccessDeniedException` عند الحفظ | مسار ملف غير صحيح أو عدم وجود صلاحيات كتابة | التحقق من وجود دليل وأن التطبيق يملك قوة الكتابة. |
+| التواريخ المتأخرة بيوم واحد | الاختلاف المنطقة الزمنية | استخدم `TimeZone.getTimeZone("GMT")` أو المنطقة المحلية الثابتة. |
 
-## Frequently Asked Questions
-**س: ما هو Aspose.Email for Java؟**  
-ج: هو واجهة برمجة تطبيقات Java صافية تتيح لك إنشاء، قراءة، وتعديل ملفات البريد (MSG، EML، إلخ) دون الحاجة إلى تثبيت Outlook.
+## الأسئلة المتداولة
+**س: ما هو Aspose.Email for Java؟**
+ج: هو واجهة برمجة تطبيقات Java الصافية المتعددة لك إنشاء، قراءة، وتعديل ملفات البريد (MSG، EML، إلخ) دون الحاجة إلى تثبيت Outlook.
 
-**س: كيف أحصل على ترخيص تجريبي مجاني؟**  
-ج: زر موقع [Aspose](https://releases.aspose.com/email/java/) لتحميل نسخة تجريبية لمدة 30 يومًا.
+**س: كيف تريد الحصول على ترخيص شراء مجاني؟**
+ج: زر موقع [Aspose](https://releases.aspose.com/email/java/) لتحميل نسخة رخيصة لمدة 30 يومًا.
 
-**س: هل يمكنني تعيين عدة علامات متابعة على رسالة واحدة؟**  
-ج: يدعم Outlook علامة متابعة واحدة فقط لكل رسالة، لكن يمكنك تخزين بيانات مهام إضافية في خصائص MAPI مخصصة.
+**س: هل يمكنني تعيين عدة علامات تتبع على رسالة واحدة؟**
+ج: يدعم Outlook علامة واحدة فقط لكل رسالة، ولكن يمكنك تخزين بيانات مهام إضافية في خصائص MAPI مخصصة.
 
-**س: رسالتي لا تُحفظ بعد تعيين العلامة. ما الذي يجب فحصه؟**  
-ج: تأكد من صحة مسار `outputDir` وأن التطبيق يملك صلاحية الكتابة إلى ذلك الموقع.
+**س: رسالتي لا تُحفظ بعد العلامة المعينة. ما الذي يجب فحصه؟**
+ج: تأكد من صحة مسار `outputDir` وأن التطبيق يملك قوة الكتابة إلى ذلك الموقع.
 
-**س: كيف يمكنني إزالة العلامات من العديد من الرسائل دفعة واحدة؟**  
-ج: قم بالتكرار عبر مجموعة الرسائل واستدعِ `FollowUpManager.clearFlag` لكل `MapiMessage`.
+**س: كيف يمكنني إزالة العلامات من العديد من الرسائل دفعة واحدة؟**
+ج: قم بالتكرار عبر مجموعة الرسائل ويستدعِ `FollowUpManager.clearFlag` لكل `MapiMessage`.
 
-## Resources
-- [Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Aspose.Email Free Trial](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
+## الموارد
+- [الوثائق](https://reference.aspose.com/email/java/)
+- [تنزيل Aspose.Email لجافا](https://releases.aspose.com/email/java/)
+- [تجربة مجانية لـ Aspose.Email](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
 
 ---
 
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose  
+**آخر تحديث:** ١٩ ديسمبر ٢٠٢٥
+**تم الاختبار باستخدام:** Aspose.Email لجافا ٢٥.٤ (jdk16)
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

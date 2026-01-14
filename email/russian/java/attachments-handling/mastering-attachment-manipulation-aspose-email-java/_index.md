@@ -93,7 +93,7 @@ license.setLicense("path/to/your/license.lic");
 
 #### Пошаговые инструкции
 
-**1. Load the Existing MSG File**  
+**1. Загрузите существующий MSG-файл**  
 
 Загрузите существующий файл MSG, который уже содержит вложения:
 
@@ -102,7 +102,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 ```
 
-**2. Save an Attachment for Demonstration**  
+**2. Сохраните вложение для демонстрации**  
 
 Извлеките первое вложение, чтобы увидеть, что будет перемещено:
 
@@ -110,7 +110,7 @@ MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Load Another MSG File**  
+**3. Загрузите другой MSG-файл** 
 
 Подготовьте файл MSG, который вы хотите вставить в качестве нового вложения:
 
@@ -118,7 +118,7 @@ msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbeddedMsg.msg"));
 ```
 
-**4. Insert the New Attachment**  
+**4. Вставьте новое вложение**  
 
 Вставьте новый файл MSG в коллекцию вложений на позицию 1:
 
@@ -126,7 +126,7 @@ MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbe
 msg.getAttachments().insert(1, "new 11", emb);
 ```
 
-**5. Save the Modified MSG File**  
+**5. Сохраните измененный MSG-файл**  
 
 Сохраните изменения в новый файл:
 
@@ -142,7 +142,7 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
 
 #### Пошаговые инструкции
 
-**1. Load the MSG File with Attachments**  
+**1. Загрузите MSG-файл с вложениями**  
 
 Откройте файл MSG, который уже содержит вложение, подлежащее замене:
 
@@ -151,7 +151,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 ```
 
-**2. Save an Existing Attachment**  
+**2. Сохраните существующее вложение**
 
 Извлеките одно из текущих вложений для справки:
 
@@ -159,7 +159,7 @@ MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Load a New MSG File for Replacement**  
+**3. Загрузите новый MSG-файл для замены** 
 
 Загрузите файл MSG, который станет новым вложением:
 
@@ -167,7 +167,7 @@ msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMSGAttachment_out.msg"));
 ```
 
-**4. Replace the Attachment**  
+**4. Замените вложение**  
 
 Замените старое вложение на позиции 1 новым:
 
@@ -175,7 +175,7 @@ MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMS
 msg.getAttachments().replace(1, "new 1", emb);
 ```
 
-**5. Save Changes to the MSG File**  
+**5. Сохраните изменения в MSG-файле** 
 
 Запишите обновлённое сообщение обратно на диск:
 
@@ -206,24 +206,40 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 
 Для углубления знаний попробуйте работать с разными типами вложений и изучите обширную [Aspose.Email Documentation](https://reference.aspose.com/email/java/) для дополнительных функций.
 
-## FAQ Section
+## Раздел часто задаваемых вопросов
 
-1. **How do I handle large attachments with Aspose.Email?**  
-   Use memory‑efficient methods and consider breaking down large files into smaller chunks if necessary.  
-2. **Can I insert multiple attachments at once?**  
-   Yes, loop through a collection of files and call the `insert` method for each one.  
-3. **What are some common issues when replacing attachments?**  
-   Ensure the specified index exists in the current attachments list; otherwise, an exception will be thrown.  
-4. **Is Aspose.Email Java suitable for enterprise‑level applications?**  
-   Absolutely—its robust API and scalability make it a solid choice for large‑scale deployments.  
-5. **How can I get support if I encounter issues?**  
-   Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10) for help from the community and Aspose staff.
+1. **Как обрабатывать большие вложения в Aspose.Email?**
 
-## Resources
+Используйте методы, эффективно использующие память, и при необходимости разбивайте большие файлы на более мелкие части.
 
-- **Documentation**: Explore detailed guides at [Aspose Documentation](https://reference.aspose.com/email/java/).  
-- **Download**: Access the latest release at [Aspose Releases](https://releases.aspose.com/email/java/).  
-- **Purchase**: Learn about purchasing options on the [Aspose Purchase Page](https://purchase.aspose.com/buy).
+2. **Можно ли вставлять несколько вложений одновременно?**
+
+Да, пройдите циклом по коллекции файлов и вызовите метод `insert` для каждого из них.
+
+3. **Какие распространенные проблемы возникают при замене вложений?**
+
+Убедитесь, что указанный индекс существует в текущем списке вложений; в противном случае будет выброшено исключение.
+
+4. **Подходит ли Aspose.Email Java для корпоративных приложений?**
+
+Безусловно — его надежный API и масштабируемость делают его отличным выбором для крупномасштабных развертываний.
+
+5. **Как получить поддержку, если возникнут проблемы?**
+Посетите [форум поддержки Aspose](https://forum.aspose.com/c/email/10), чтобы получить помощь от сообщества и сотрудников Aspose.
+
+## Ресурсы
+
+- **Документация**: Подробные руководства см. в [Документация Aspose](https://reference.aspose.com/email/java/).
+
+- **Загрузка**: Доступ к последней версии см. в [Релизы Aspose](https://releases.aspose.com/email/java/).
+
+- **Покупка**: Узнайте о вариантах покупки на [Странице покупки Aspose](https://purchase.aspose.com/buy).
+
+--
+
+**Последнее обновление:** 19.12.2025
+**Протестировано с:** Aspose.Email для Java 25.4 (JDK16)
+**Автор:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -232,9 +248,3 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose

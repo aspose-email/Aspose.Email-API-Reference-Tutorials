@@ -232,6 +232,12 @@ Trong tutorial này, chúng ta đã tìm hiểu **how to insert attachment** và
 - **Tải Về**: Truy cập bản phát hành mới nhất tại [Aspose Releases](https://releases.aspose.com/email/java/).
 - **Mua Bản Quyền**: Tìm hiểu các tùy chọn mua tại [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,11 +245,3 @@ Trong tutorial này, chúng ta đã tìm hiểu **how to insert attachment** và
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
----

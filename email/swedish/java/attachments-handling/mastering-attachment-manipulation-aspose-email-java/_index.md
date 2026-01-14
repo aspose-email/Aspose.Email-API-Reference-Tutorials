@@ -232,6 +232,12 @@ För att fördjupa din kunskap, prova att experimentera med olika bilagetyper oc
 - **Nedladdning**: Hämta den senaste versionen på [Aspose Releases](https://releases.aspose.com/email/java/).  
 - **Köp**: Läs om köpalternativ på [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
+---
+
+**Senast uppdaterad:** 2025-12-19  
+**Testad med:** Aspose.Email för Java 25.4 (JDK 16)  
+**Författare:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,11 +245,3 @@ För att fördjupa din kunskap, prova att experimentera med olika bilagetyper oc
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-19  
-**Testad med:** Aspose.Email för Java 25.4 (JDK 16)  
-**Författare:** Aspose  
-
----

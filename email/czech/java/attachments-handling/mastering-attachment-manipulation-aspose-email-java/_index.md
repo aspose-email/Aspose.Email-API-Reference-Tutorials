@@ -232,6 +232,12 @@ Pro prohloubení znalostí zkuste experimentovat s různými typy příloh a pod
 - **Stáhnout**: Nejnovější verzi získáte na [Aspose Releases](https://releases.aspose.com/email/java/).
 - **Nákup**: Informace o nákupních možnostech najdete na [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,9 +245,3 @@ Pro prohloubení znalostí zkuste experimentovat s různými typy příloh a pod
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose

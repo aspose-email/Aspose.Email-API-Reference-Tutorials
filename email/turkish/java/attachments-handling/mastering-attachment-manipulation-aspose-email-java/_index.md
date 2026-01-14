@@ -232,6 +232,12 @@ Anlayışınızı derinleştirmek için farklı ek türleriyle denemeler yapın 
 - **İndirme**: En son sürümü [Aspose Releases](https://releases.aspose.com/email/java/) üzerinden edinin.  
 - **Satın Alma**: Satın alma seçeneklerini [Aspose Purchase Page](https://purchase.aspose.com/buy) sayfasında öğrenin.
 
+---
+
+**Son Güncelleme:** 2025-12-19  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,11 +245,3 @@ Anlayışınızı derinleştirmek için farklı ek türleriyle denemeler yapın 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-19  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
-**Yazar:** Aspose  
-
----

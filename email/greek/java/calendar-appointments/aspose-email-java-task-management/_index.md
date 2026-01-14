@@ -205,6 +205,12 @@ for (int i = 0; i < iTasksCount; i++) {
 
 Αξιοποιήστε τη δύναμη του Aspose.Email για Java και βελτιώστε τις αλληλεπιδράσεις σας με τους διακομιστές email σήμερα!
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -212,9 +218,3 @@ for (int i = 0; i < iTasksCount; i++) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

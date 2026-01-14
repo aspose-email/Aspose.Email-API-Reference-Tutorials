@@ -232,6 +232,12 @@ Untuk memperdalam pemahaman, coba eksperimen dengan tipe lampiran berbeda dan te
 - **Unduhan**: Akses rilis terbaru di [Aspose Releases](https://releases.aspose.com/email/java/).  
 - **Pembelian**: Pelajari opsi pembelian pada [Aspose Purchase Page](https://purchase.aspose.com/buy).  
 
+---
+
+**Terakhir Diperbarui:** 2025-12-19  
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (JDK 16)  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,11 +245,3 @@ Untuk memperdalam pemahaman, coba eksperimen dengan tipe lampiran berbeda dan te
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-19  
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (JDK 16)  
-**Penulis:** Aspose  
-
----

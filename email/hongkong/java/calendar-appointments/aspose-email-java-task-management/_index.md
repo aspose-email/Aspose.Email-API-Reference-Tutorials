@@ -208,6 +208,12 @@ A: 請造訪[官方文件](https://reference.aspose.com/email/java/)與[支援�
 
 善用 Aspose.Email for Java 的強大功能，立即簡化您的電子郵件伺服器互動！
 
+---
+
+**最後更新：** 2025-12-19  
+**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -215,9 +221,3 @@ A: 請造訪[官方文件](https://reference.aspose.com/email/java/)與[支援�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-19  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者：** Aspose

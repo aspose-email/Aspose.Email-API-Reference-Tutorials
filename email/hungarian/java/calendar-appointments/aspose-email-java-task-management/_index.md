@@ -211,6 +211,12 @@ A: Látogassa meg a [official documentation](https://reference.aspose.com/email/
 
 Használja ki az Aspose.Email for Java erejét, és egyszerűsítse ma az e‑mail szerverrel való interakciót!
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -218,9 +224,3 @@ Használja ki az Aspose.Email for Java erejét, és egyszerűsítse ma az e‑ma
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

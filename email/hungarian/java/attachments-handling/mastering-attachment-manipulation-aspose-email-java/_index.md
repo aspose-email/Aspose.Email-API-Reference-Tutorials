@@ -232,6 +232,12 @@ A tudás mélyítéséhez próbáljon ki különböző csatolmánytípusokat, é
 - **Letöltés**: A legújabb kiadás elérhető a [Aspose kiadásoknál](https://releases.aspose.com/email/java/).
 - **Vásárlás**: Tudjon meg többet a vásárlási lehetőségekről a [Aspose vásárlási oldalon](https://purchase.aspose.com/buy).
 
+---
+
+**Utoljára frissítve:** 2025-12-19  
+**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16)  
+**Szerző:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,11 +245,3 @@ A tudás mélyítéséhez próbáljon ki különböző csatolmánytípusokat, é
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-19  
-**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16)  
-**Szerző:** Aspose  
-
----

@@ -209,6 +209,12 @@ A: 访问[官方文档](https://reference.aspose.com/email/java/)和[支持论�
 
 拥抱 Aspose.Email for Java 的强大功能，立即简化您的邮件服务器交互！
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -216,9 +222,3 @@ A: 访问[官方文档](https://reference.aspose.com/email/java/)和[支持论�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose

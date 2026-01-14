@@ -19,39 +19,39 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Outlook'ta Aspose.Email for Java Kullanarak Takip Bayraklarını Nasıl Ayarlarsınız
 
-## Introduction
-Önemli e‑postaları takip etmekte zorlandığınız zaman, Outlook'un takip bayraklarının ne kadar değerli olduğunu bilirsiniz. Bu rehberde **takip bayraklarını nasıl ayarlayacağınızı** Aspose.Email for Java ile programlı olarak gösterecek ve ayrıca alıcılar için **outlook takip bayrağını nasıl ayarlayacağınızı**, bir görev tamamlandığında **outlook takip bayrağını nasıl kaldıracağınızı** ele alacağız. Sonunda, Java kodunuzdan doğrudan görev takibini, hatırlatıcıları ve denetim izlerini otomatikleştirebileceksiniz.
+## Giriiş
+Önemli e‑postaları takip etmekte zorlandığınız zaman, Outlook'un takip bayraklarının ne kadar değerli olduğunu konuşabilirsiniz. Bu rehberde **takip bayraklarını nasıl ayarlayacağınız** Aspose.Email for Java ile programlı olarak kullanılabilir ve ayrıca alıcılar için **outlook takip bayrağını nasıl ayarlayacağınız**, bir görev tamamlandığında **outlook takip alanını nasıl kaldıracağınızı** elde edersinizz. Sonunda Java kodlamazdan doğrudan görev takibini, hatırlatmaları ve denetim izlerini otomatikleştirebileceksiniz.
 
-**What you’ll learn**
-- Outlook mesajına bir takip bayrağı oluşturma ve uygulama.  
-- Belirli alıcılar için takip bayrakları ayarlama.  
-- Bayrağı tamamlanmış olarak işaretleme ve daha sonra kaldırma.  
-- Raporlama veya uyumluluk için bayrak seçeneklerini okuma.  
+**Ne öğreneceksiniz**
+- Outlook mesajına bir takip bayrağı oluşturma ve uygulama.
+- belirli alıcılar için takip bayraklarının ayarlanması.
+- Bayrağı bildirimleri olarak işaretleme ve daha sonra kaldırma.
+- Raporlama veya uyumluluk için bayrak standartlarını okuma.
 
 Kodun içine dalmadan önce ortamı hazırlayalım.
 
-## Quick Answers
-- **“how to set follow-up” ne anlama geliyor?** Outlook öğesine başlangıç, hatırlatma ve son tarihleriyle bir bayrak eklemek.  
-- **Hangi kütüphane gerekiyor?** Aspose.Email for Java (v25.4 veya daha yeni).  
-- **Lisans gerekli mi?** Evet, tam işlevsellik için bir deneme veya satın alınmış lisans gerekir.  
-- **Sadece alıcılar için bayrak ayarlayabilir miyim?** Kesinlikle – `FollowUpManager.setFlagForRecipients` kullanın.  
-- **Daha sonra bir bayrağı kaldırmak mümkün mü?** Evet, `FollowUpManager.clearFlag` çağırın.
+## Hızlı Yanıtlar
+- **“takip nasıl yapılır” ne anlama geliyor?** Outlook bilgilerinin başlangıcı, hatırlatma ve sonuncusu ile bir bayrak seçin.
+- **Hangi yüklemesi gerekiyor?** Aspose.Email for Java (v25.4 veya daha yeni).
+- **Lisans gerekli mi?** Evet, tam işlevsellik için bir deneme veya satın alma lisansı gerekir.
+- **sadece alıcılar için bayrak ayarlayabilir miyim?** kesinlikle – `FollowUpManager.setFlagForRecipients` kullanın.
+- **Daha sonra bir geçitten çıkmak mümkün mü?** Evet, `FollowUpManager.clearFlag` çağırın.
 
-## What is a Follow‑Up Flag?
-Takip bayrağı, bir e‑postayı görev olarak işaretleyen, isteğe bağlı olarak başlangıç, hatırlatma ve son tarihleri ekleyen bir Outlook özelliğidir. Bu, sizin ve ekibinizin bekleyen eylemler üzerinde kontrol sahibi olmasını sağlar.
+## Takip Bayrağı Nedir?
+Takipçi bayrağı, bir e‑postayı görev olarak işaretleyen, genel olarak bağlı olarak başlangıç, hatırlatma ve son eklenen ekleyen bir Outlook özelliğidir. Bu, sizin ve ekibinizin bekleyen eylemleri üzerinde kontrol sahibi olmasını sağlar.
 
-## Why use Aspose.Email for Java?
-Aspose.Email, Outlook yüklü olmadan çalışan saf‑Java bir API sunar; .msg dosyalarını işleyebilir, bayrakları ayarlayabilir ve görevleri herhangi bir platformda yönetebilirsiniz—arka uç hizmetleri, otomatik iş akışları veya proje yönetim araçlarıyla entegrasyon için mükemmeldir.
+## Java için Aspose.Email'i neden kullanmalıyım?
+Aspose.Email, Outlook yüklenmeden çalışan saf‑Java bir API sunar; .msg tuşlarını işleyebilir, bayrakları ayarlayabilir ve işlemlerini herhangi bir platformda yönetebilirsiniz—arka uç hizmetleri, otomatik iş akışları veya proje yönetim araçlarıyla bütünleşmek için kullanılabilir.
 
-## Prerequisites
-- **Aspose.Email for Java** sürüm 25.4 ve üzeri.  
-- **JDK 16+** yüklü.  
-- Maven uyumlu bir IDE (IntelliJ IDEA, Eclipse vb.).  
-- Temel Java bilgisi ve e‑posta kavramlarına aşinalık.
+## Önkoşullar
+- **Aspose.Email for Java** sürüm 25.4ve üzeri.
+- **JDK16+** Yüklü.
+- Maven uyumlu bir IDE (IntelliJ IDEA, Eclipse vb.).
+- Temel Java bilgisi ve e‑posta kavramlarına ulaşılabilirlik.
 
-## Setting Up Aspose.Email for Java
-### Maven Configuration
-`pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
+## Java için Aspose.Email'i Kurma
+### Maven Yapılandırması
+`pom.xml` dosyanıza aşağıdaki dosyaları ekleyin:
 
 ```xml
 <dependency>
@@ -62,27 +62,27 @@ Aspose.Email, Outlook yüklü olmadan çalışan saf‑Java bir API sunar; .msg 
 </dependency>
 ```
 
-### License Acquisition
+### Lisans Alma
 Aspose.Email üretim kullanımı için bir lisans gerektirir:
 
-- **Ücretsiz deneme** – 30 günlük değerlendirme.  
-- **Geçici lisans** – genişletilmiş test.  
-- **Tam lisans** – süresiz abonelik.
+- **Ücretsiz deneme** – 30günlük değerlendirme.
+- **Geçici lisans** – türü testi.
+- **Tam lisans** – süreniz belirlenir.
 
-Herhangi bir e‑posta işlemi yapmadan önce lisansı başlatın:
+Lisansı başlatmadan önce herhangi bir e‑posta işlemi yapmadan:
 
 ```java
 License license = new License();
 license.setLicense("path/to/Aspose.Total.Java.lic");
 ```
 
-## Implementation Guide
+## Uygulama Kılavuzu
 
-### How to Set Follow‑Up Flags (Feature 1)
-#### Overview
-Bu bölümde bir Outlook mesajı oluşturmayı, başlangıç/hatırlatma/son tarihlerini tanımlamayı ve bir takip bayrağı uygulamayı adım adım gösteriyoruz.
+### Takip Bayrakları Nasıl Ayarlanır (Özellik1)
+#### Genel Bakış
+Bu bölümde bir Outlook mesajı oluşturmayı, başlangıç/hatırlatma/son tarihlerini tanımlamayı ve bir takip bayrağı uygulamasını adım adım gösteriyoruz.
 
-#### Step 1: Create and Initialize the Message
+#### Adım 1: Mesajı Oluşturun ve Başlatın
 ```java
 MailMessage mailMsg = new MailMessage();
 mailMsg.setSender(new MailAddress("AETest12@gmail.com"));
@@ -92,7 +92,7 @@ MapiMessage mapi = MapiMessage.fromMailMessage(mailMsg);
 ```
 *İlk olarak bir `MailMessage` oluşturur, gönderici/alıcı ayarları yapar ve ardından bayrak manipülasyonu için bir `MapiMessage`'a dönüştürürüz.*
 
-#### Step 2: Define Follow‑Up Dates
+#### Adım 2: Takip Tarihlerini Belirleyin
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 14, 40, 0);
@@ -104,30 +104,30 @@ Date dtDueDate = calendar.getTime();
 ```
 *Burada `Calendar` sınıfını kullanarak başlangıç, hatırlatma ve son tarihleri ayarlarız.*
 
-#### Step 3: Apply Follow‑Up Options
+#### Adım 3: Takip Seçeneklerini Uygulayın
 ```java
 FollowUpOptions options = new FollowUpOptions("Follow Up", dtStartDate, dtDueDate, dtReminderDate);
 FollowUpManager.setOptions(mapi, options);
 ```
 *`FollowUpOptions` nesnesi tüm bayrak detaylarını tutar; bu nesneyi `FollowUpManager.setOptions` ile uygularız.*
 
-#### Step 4: Save the Message
+#### Adım 4: Mesajı Kaydedin
 ```java
 mapi.save(outputDir + "SetFollowUpflag_out.msg");
 ```
 *Mesaj, bayrak ekli bir `.msg` dosyası olarak kaydedilir.*
 
-### How to Set Outlook Follow‑Up Flag for Recipients (Feature 2)
-#### Overview
-Bazen bayrağın sadece alıcılar için görünmesini istersiniz. Bu örnek önce mesajı taslak olarak işaretler, ardından bayrağı ekler.
+### Alıcılar için Outlook Takip Bayrağı Nasıl Ayarlanır (Özellik2)
+#### Genel Bakış
+Bazen mevsim sadece alıcılar için parlamayı gösterir. Bu metinden önce mesaj taslak olarak işaretler, ardından bayraklar eklenir.
 
-#### Step 1: Mark as Draft
+#### Adım 1: Taslak Olarak İşaretle
 ```java
 mapi.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 ```
 *Mesajın gönderilmemiş olarak işaretlenmesi, Outlook'un onu bir taslak olarak ele almasını sağlar.*
 
-#### Step 2: Set Recipient Flag
+#### Adım 2: Alıcı Bayrağını Ayarla
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 16, 40, 0);
@@ -136,27 +136,27 @@ FollowUpManager.setFlagForRecipients(mapi, "Follow up", dtReminderDate);
 ```
 *Bayrak artık sadece alıcılar tarafından görülebilir.*
 
-### How to Mark an Outlook Follow‑Up Flag as Completed (Feature 3)
-#### Overview
-Bir görev tamamlandığında, bayrağı programlı olarak “Tamamlandı” olarak işaretleyebilirsiniz.
+### Outlook Takip Bayrağını Tamamlandı Olarak İşaretleme (Özellik3)
+#### Genel Bakış
+Bir görev tamamlandığında, bayrak programı olarak “Tamamlandı” olarak işaretleyebilirsiniz.
 
-#### Step 1: Load the Message
+#### Adım 1: Mesajı Yükleyin
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 ```
 
-#### Step 2: Mark as Completed and Save
+#### Adım 2: Tamamlandı Olarak İşaretle ve Kaydet
 ```java
 FollowUpManager.markAsCompleted(mapi);
 mapi.save(outputDir + "MarkedCompleted_out.msg");
 ```
 *Bayrak durumu “Completed” (Tamamlandı) olarak değişir ve güncellenmiş dosya kaydedilir.*
 
-### How to Remove Outlook Follow‑Up Flag (Feature 4)
-#### Overview
+### Outlook Takip Bayrağı Nasıl Kaldırılır (Özellik4)
+#### Genel Bakış
 Artık ihtiyaç duyulmayan bir bayrağı tamamen temizleyebilirsiniz.
 
-#### Step 1: Load and Clear Flag
+#### Adım 1: Bayrağı Yükleyin ve Temizleyin
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpManager.clearFlag(mapi);
@@ -164,60 +164,62 @@ mapi.save(outputDir + "FollowUpFlagRemoved_out.msg");
 ```
 *Mesaj, herhangi bir takip bayrağı olmadan kaydedilir.*
 
-### How to Read Follow‑Up Flag Options (Feature 5)
-#### Overview
-Denetim veya raporlama amacıyla mevcut bayrak ayarlarını okumanız gerekebilir.
+### Takip İşareti Seçenekleri Nasıl Okunmalı (Özellik5)
+#### Genel Bakış
+Denetim veya raporlama amacıyla mevcut bayrak parçalarını okumanız mümkündür.
 
-#### Step 1: Retrieve Options
+#### Adım 1: Seçenekleri Alma
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpOptions options = FollowUpManager.getOptions(mapi);
 ```
 *`options` nesnesi artık başlangıç, son ve hatırlatma tarihlerini, ayrıca bayrak konusunu içerir.*
 
-## Practical Applications
-- **Task‑Management Integration:** Bayraklı e‑postaları Jira, Trello veya Azure Boards ile senkronize edin.  
-- **Automated Reminders:** Bekleyen takipler için günlük hatırlatma e‑postaları oluşturun.  
-- **Compliance Audits:** Bayrak verilerini düzenleyici raporlamalar için dışa aktarın.
+## Pratik Uygulamalar
+- **Görev Yönetimi Entegrasyonu:** Bayraklı e‑postaları Jira, Trello veya Azure Boards ile hazırlanır.
+- **Otomatik Hatırlatmalar:** Bekleyen takipler için günlük hatırlatma e‑postaları birleştirilir.
+- **Uygunluk Denetimleri:** Bayrakların düzenleyicileri raporlamak için aktarın.
 
-## Performance Considerations
-- **Date Calculations:** Tarihleri döngüler içinde değil, toplu olarak bir kez hesaplayın.  
-- **Resource Management:** Mesajları kaydettikten sonra tüm akışları ve dosya tutucularını kapatın.  
-- **Memory Usage:** Büyük posta kutularını hafıza baskısını önlemek için parçalara bölerek işleyin.
+## Performansla İlgili Hususlar
+- **Tarih Hesaplamaları:** Tarihleri ​​döngüler içinde değil, toplu olarak bir kez hesaplayın.
+- **Kaynak Yönetimi:** Mesajları kaydettikten sonra tüm bakımları ve diş temizleyicilerini kapatın.
+- **Bellek Kullanımı:** Büyük posta kutularını hafıza baskısını önlemek için dağıtarak işleyin.
 
-## Common Issues and Solutions
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| Flag not appearing in Outlook | Message saved without proper `MessageFlags` | Ensure `setMessageFlags` is set to `MSGFLAG_UNSENT` before applying recipient flags. |
-| Save throws `AccessDeniedException` | Incorrect file path or missing write permissions | Verify the output directory exists and the application has write rights. |
-| Dates are off by one day | Time‑zone mismatch | Use `TimeZone.getTimeZone("GMT")` or your local zone consistently. |
+## Yaygın Sorunlar ve Çözümler
+| Sayı | Sebep | Düzelt |
+|----------|----------|-----|
+| Bayrak Outlook'ta görünmüyor | İleti uygun "MessageFlags" olmadan kaydedildi | Alıcı bayraklarını uygulamadan önce `setMessageFlags`'ın `MSGFLAG_UNSENT` olarak ayarlandığından emin olun. |
 
-## Frequently Asked Questions
-**Q: What is Aspose.Email for Java?**  
-A: It’s a pure‑Java API that lets you create, read, and manipulate email files (MSG, EML, etc.) without needing Outlook installed.
+| Kaydetme işlemi `AccessDeniedException` hatası veriyor | Yanlış dosya yolu veya eksik yazma izinleri | Çıktı dizininin mevcut olduğunu ve uygulamanın yazma haklarına sahip olduğunu doğrulayın. |
 
-**Q: How do I obtain a free trial license?**  
-A: Visit the [Aspose website](https://releases.aspose.com/email/java/) to download a 30‑day trial.
+| Tarihler bir gün farklı | Saat dilimi uyuşmazlığı | `TimeZone.getTimeZone("GMT")` veya yerel saat diliminizi tutarlı bir şekilde kullanın. |
 
-**Q: Can I set multiple follow‑up flags on a single message?**  
-A: Outlook supports only one flag per message, but you can store additional task data in custom MAPI properties.
+## Sıkça Sorulan Sorular
+**S: Aspose.Email for Java nedir?**
+C: Outlook kurulu olmasına gerek kalmadan e-posta dosyalarını (MSG, EML, vb.) oluşturmanıza, okumanıza ve manipüle etmenize olanak tanıyan tamamen Java tabanlı bir API'dir.
 
-**Q: My message isn’t saved after setting a flag. What should I check?**  
-A: Confirm the `outputDir` path is valid and that the application has permission to write to that location.
+**S: Ücretsiz deneme lisansını nasıl edinebilirim?**
+C: 30 günlük deneme sürümünü indirmek için [Aspose web sitesini](https://releases.aspose.com/email/java/) ziyaret edin.
 
-**Q: How can I remove flags from many messages at once?**  
-A: Loop through your message collection and call `FollowUpManager.clearFlag` on each `MapiMessage`.
+**S: Tek bir mesaja birden fazla takip bayrağı ekleyebilir miyim?**
+C: Outlook, mesaj başına yalnızca bir bayrağı destekler, ancak ek görev verilerini özel MAPI özelliklerinde saklayabilirsiniz.
 
-## Resources
-- [Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Aspose.Email Free Trial](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
+**S: Bir bayrak ayarladıktan sonra mesajım kaydedilmiyor. Neyi kontrol etmeliyim?**
+C: `outputDir` yolunun geçerli olduğundan ve uygulamanın bu konuma yazma iznine sahip olduğundan emin olun.
+
+**S: Birçok mesajdan bayrakları aynı anda nasıl kaldırabilirim?**
+C: Mesaj koleksiyonunuzda döngü oluşturun ve her `MapiMessage` üzerinde `FollowUpManager.clearFlag` yöntemini çağırın.
+
+## Kaynaklar
+- [Belgeler](https://reference.aspose.com/email/java/)
+- [Aspose.Email for Java'yı İndirin](https://releases.aspose.com/email/java/)
+- [Aspose.Email Ücretsiz Deneme Sürümü](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
 
 ---
 
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose  
+**Son Güncelleme:** 19.12.2025
+**Test Edilen Sürüm:** Aspose.Email for Java 25.4 (jdk16)
+**Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -236,6 +236,12 @@ Per approfondire, prova a sperimentare con diversi tipi di allegati ed esplora l
 - **Download**: Accedi all'ultima versione su [Aspose Releases](https://releases.aspose.com/email/java/).
 - **Acquisto**: Scopri le opzioni di acquisto nella [Pagina di Acquisto Aspose](https://purchase.aspose.com/buy).
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -243,11 +249,3 @@ Per approfondire, prova a sperimentare con diversi tipi di allegati ed esplora l
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
----

@@ -210,6 +210,12 @@ Việc tích hợp Aspose.Email với Java mở ra nhiều kịch bản thực t
 
 Hãy tận dụng sức mạnh của Aspose.Email cho Java và tối ưu hoá việc tương tác với máy chủ email ngay hôm nay!
 
+---
+
+**Last Updated:** 2025-12-19  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -217,9 +223,3 @@ Hãy tận dụng sức mạnh của Aspose.Email cho Java và tối ưu hoá vi
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-19  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose
