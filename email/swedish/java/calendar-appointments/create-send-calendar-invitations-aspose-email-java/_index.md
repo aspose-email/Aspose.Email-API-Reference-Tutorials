@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Hantera kalenderdelning: Aspose.Email för Java‑guide'
+title: 'Hantera kalenderdelning - Aspose.Email för Java‑guide'
 url: /sv/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

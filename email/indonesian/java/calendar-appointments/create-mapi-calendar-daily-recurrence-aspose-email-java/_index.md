@@ -193,18 +193,6 @@ Dengan mengikuti panduan ini Anda kini tahu cara **membuat mapi calendar java** 
 - Jelajahi properti MAPI tambahan seperti peserta, pengingat, dan kategori.  
 - Tinjau dokumentasi API Aspose.Email yang komprehensif untuk skenario yang lebih maju.
 
-## Bagian FAQ
-1. **Bisakah saya menggunakan Aspose.Email tanpa lisensi?**  
-   - Ya, Anda dapat memulai dengan versi uji coba gratis untuk menjelajahi kemampuannya.  
-2. **Bagaimana cara menangani pengecualian pada acara berulang?**  
-   - Gunakan `MapiCalendarExceptionInfo` untuk mendefinisikan tanggal, waktu yang dimodifikasi, dan data lampiran apa pun.  
-3. **Apakah memungkinkan menyimpan kalender langsung ke file PST?**  
-   - Tentu saja. Kelas `PersonalStorage` memungkinkan Anda membuat file PST dan menambahkan item kalender.  
-4. **Dapatkah ini diintegrasikan dengan aplikasi Java lain?**  
-   - Ya, API ini murni Java, sehingga dapat disematkan dalam layanan atau aplikasi desktop berbasis Java apa pun.  
-5. **Apa yang harus saya lakukan jika lisensi saya kedaluwarsa?**  
-   - Perpanjang lisensi melalui portal Aspose atau kembali ke mode uji coba sementara.
-
 ## Pertanyaan yang Sering Diajukan
 
 **T: Apakah perpustakaan mendukung janji yang sadar zona waktu?**  
@@ -230,6 +218,12 @@ J: Ya, Aspose.Email juga menyediakan `MapiTask` dengan kemampuan pengulangan ser
 - [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Terakhir Diperbarui:** 2025-12-20  
+**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -237,9 +231,3 @@ J: Ya, Aspose.Email juga menyediakan `MapiTask` dengan kemampuan pengulangan ser
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-20  
-**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16)  
-**Penulis:** Aspose

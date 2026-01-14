@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Agenda-deling beheren: Aspose.Email voor Java-gids'
+title: 'Agenda-deling beheren - Aspose.Email voor Java-gids'
 url: /nl/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

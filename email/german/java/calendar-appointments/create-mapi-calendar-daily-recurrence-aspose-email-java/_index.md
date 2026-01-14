@@ -193,18 +193,6 @@ Durch Befolgen dieser Anleitung wissen Sie jetzt, wie Sie **mapi calendar java**
 - Erkunden Sie weitere MAPI‑Eigenschaften wie Teilnehmer, Erinnerungen und Kategorien.  
 - Überprüfen Sie die umfassende API‑Dokumentation von Aspose.Email für fortgeschrittene Szenarien.
 
-## FAQ‑Abschnitt
-1. **Kann ich Aspose.Email ohne Lizenz verwenden?**  
-   - Ja, Sie können mit der kostenlosen Testversion beginnen, um die Funktionen zu erkunden.  
-2. **Wie gehe ich mit Ausnahmen bei wiederkehrenden Ereignissen um?**  
-   - Verwenden Sie `MapiCalendarExceptionInfo`, um das Datum, geänderte Zeiten und etwaige angehängte Daten zu definieren.  
-3. **Ist es möglich, Kalender direkt in PST‑Dateien zu speichern?**  
-   - Absolut. Die Klasse `PersonalStorage` ermöglicht das Erstellen von PST‑Dateien und das Hinzufügen von Kalenderelementen.  
-4. **Kann dies in andere Java‑Anwendungen integriert werden?**  
-   - Ja, die API ist reines Java, sodass Sie sie in jeden Java‑basierten Dienst oder Desktop‑App einbetten können.  
-5. **Was soll ich tun, wenn meine Lizenz abläuft?**  
-   - Erneuern Sie die Lizenz über das Aspose‑Portal oder wechseln Sie vorübergehend zurück in den Testmodus.
-
 ## Häufig gestellte Fragen
 
 **Q: Unterstützt die Bibliothek zeitzonenbewusste Termine?**  
@@ -230,6 +218,12 @@ A: Ja, Aspose.Email bietet auch `MapiTask` mit ähnlichen Wiederholungsfunktione
 - [Temporäre Lizenz anfordern](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support-Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-20  
+**Getestet mit:** Aspose.Email für Java 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -237,9 +231,3 @@ A: Ja, Aspose.Email bietet auch `MapiTask` mit ähnlichen Wiederholungsfunktione
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-20  
-**Getestet mit:** Aspose.Email für Java 25.4 (JDK 16)  
-**Autor:** Aspose

@@ -5,7 +5,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'カレンダー共有の管理: Aspose.Email for Java ガイド'
+title: 'カレンダー共有の管理 - Aspose.Email for Java ガイド'
 url: /ja/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

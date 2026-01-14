@@ -1,5 +1,5 @@
 ---
-title: "Manage Calendar Sharing: Aspose.Email for Java Guide"
+title: "Manage Calendar Sharing - Aspose.Email for Java Guide"
 description: "Learn how to manage calendar sharing, set delegate permissions, and create delegate access using Aspose.Email for Java. Follow this step‑by‑step tutorial to send calendar sharing emails efficiently."
 date: "2025-12-20"
 weight: 1

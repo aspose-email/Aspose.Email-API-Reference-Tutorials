@@ -195,18 +195,6 @@ Genom att följa den här guiden vet du nu hur du **create mapi calendar java**-
 - Utforska ytterligare MAPI‑egenskaper såsom deltagare, påminnelser och kategorier.  
 - Granska Aspose.Email:s omfattande API‑dokumentation för mer avancerade scenarier.
 
-## FAQ‑avsnitt
-1. **Kan jag använda Aspose.Email utan licens?**  
-   - Ja, du kan börja med gratisprovversionen för att utforska dess funktioner.  
-2. **Hur hanterar jag undantag i återkommande händelser?**  
-   - Använd `MapiCalendarExceptionInfo` för att definiera datum, ändrade tider och eventuella bifogade data.  
-3. **Är det möjligt att spara kalendrar direkt till PST‑filer?**  
-   - Absolut. Klassen `PersonalStorage` låter dig skapa PST‑filer och lägga till kalenderobjekt.  
-4. **Kan detta integreras med andra Java‑applikationer?**  
-   - Ja, API:et är rent Java, så du kan bädda in det i vilken Java‑baserad tjänst eller skrivbordsapp som helst.  
-5. **Vad ska jag göra om min licens går ut?**  
-   - Förnya licensen via Aspose‑portalen eller återgå till provläget tillfälligt.
-
 ## Vanliga frågor
 
 **Q: Stöder biblioteket tidszonsmedvetna möten?**  
@@ -232,6 +220,12 @@ A: Ja, Aspose.Email erbjuder även `MapiTask` med liknande återkommandefunktion
 - [Begär tillfällig licens](https://purchase.aspose.com/temporary-license/)  
 - [Aspose Supportforum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Senast uppdaterad:** 2025-12-20  
+**Testad med:** Aspose.Email for Java 25.4 (JDK 16)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,9 +233,3 @@ A: Ja, Aspose.Email erbjuder även `MapiTask` med liknande återkommandefunktion
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-20  
-**Testad med:** Aspose.Email for Java 25.4 (JDK 16)  
-**Författare:** Aspose

@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Quản lý chia sẻ lịch: Hướng dẫn Aspose.Email cho Java'
+title: 'Quản lý chia sẻ lịch - Hướng dẫn Aspose.Email cho Java'
 url: /vi/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

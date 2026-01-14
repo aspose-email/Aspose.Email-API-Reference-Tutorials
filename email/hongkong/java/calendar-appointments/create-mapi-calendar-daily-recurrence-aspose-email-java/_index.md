@@ -192,18 +192,6 @@ try {
 - 探索更多 MAPI 屬性，如參與者、提醒與類別。  
 - 查閱 Aspose.Email 完整 API 文件，了解更進階的使用情境。
 
-## FAQ Section
-1. **Can I use Aspose.Email without a license?**  
-   - Yes, you can start with the free trial version to explore its capabilities.  
-2. **How do I handle exceptions in recurring events?**  
-   - Use `MapiCalendarExceptionInfo` to define the date, modified times, and any attached data.  
-3. **Is it possible to save calendars directly to PST files?**  
-   - Absolutely. The `PersonalStorage` class lets you create PST files and add calendar items.  
-4. **Can this be integrated with other Java applications?**  
-   - Yes, the API is pure Java, so you can embed it in any Java‑based service or desktop app.  
-5. **What should I do if my license expires?**  
-   - Renew the license through the Aspose portal or switch back to the trial mode temporarily.
-
 ## Frequently Asked Questions
 
 **Q: Does the library support time‑zone aware appointments?**  
@@ -229,6 +217,12 @@ A: Yes, Aspose.Email also provides `MapiTask` with similar recurrence capabiliti
 - [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -236,9 +230,3 @@ A: Yes, Aspose.Email also provides `MapiTask` with similar recurrence capabiliti
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose

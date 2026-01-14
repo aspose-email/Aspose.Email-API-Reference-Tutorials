@@ -8,7 +8,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Takvim Paylaşımını Yönetme: Aspose.Email for Java Rehberi'
+title: 'Takvim Paylaşımını Yönetme - Aspose.Email for Java Rehberi'
 url: /tr/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

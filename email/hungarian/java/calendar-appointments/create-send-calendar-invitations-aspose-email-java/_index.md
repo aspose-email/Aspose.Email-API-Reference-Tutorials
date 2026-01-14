@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Naptármegosztás kezelése: Aspose.Email for Java útmutató'
+title: 'Naptármegosztás kezelése - Aspose.Email for Java útmutató'
 url: /hu/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

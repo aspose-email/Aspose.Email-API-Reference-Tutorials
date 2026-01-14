@@ -195,18 +195,6 @@ Ezzel az útmutatóval most már tudja, hogyan **create mapi calendar java** obj
 - Fedezze fel a további MAPI tulajdonságokat, például résztvevőket, emlékeztetőket és kategóriákat.  
 - Tekintse át az Aspose.Email átfogó API dokumentációját a fejlettebb forgatókönyvekhez.
 
-## GYIK szekció
-1. **Használhatom az Aspose.Email-ot licenc nélkül?**  
-   - Igen, a ingyenes próba verzióval elkezdheti felfedezni a funkciókat.  
-2. **Hogyan kezeljem a kivételeket az ismétlődő eseményekben?**  
-   - Használja a `MapiCalendarExceptionInfo`‑t a dátum, módosított időpontok és esetleges csatolt adatok meghatározásához.  
-3. **Lehet a naptárakat közvetlenül PST fájlokba menteni?**  
-   - Természetesen. A `PersonalStorage` osztály lehetővé teszi PST fájlok létrehozását és naptárelemek hozzáadását.  
-4. **Integrálható ez más Java alkalmazásokkal?**  
-   - Igen, az API tiszta Java, így beágyazható bármely Java‑alapú szolgáltatásba vagy asztali alkalmazásba.  
-5. **Mit tegyek, ha a licencem lejár?**  
-   - Újítsa meg a licencet az Aspose portálon keresztül, vagy ideiglenesen térjen vissza a próba módba.
-
 ## Gyakran Ismételt Kérdések
 
 **K: Támogatja a könyvtár az időzóna‑érzékeny találkozókat?**  
@@ -232,6 +220,12 @@ V: Igen, az Aspose.Email szintén biztosít `MapiTask`‑ot hasonló ismétlőd�
 - [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Utolsó frissítés:** 2025-12-20  
+**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,9 +233,3 @@ V: Igen, az Aspose.Email szintén biztosít `MapiTask`‑ot hasonló ismétlőd�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2025-12-20  
-**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16)  
-**Szerző:** Aspose

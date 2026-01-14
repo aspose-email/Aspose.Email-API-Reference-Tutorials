@@ -192,18 +192,6 @@ try {
 - 探索其他 MAPI 属性，如与会者、提醒和类别。  
 - 查阅 Aspose.Email 的完整 API 文档，以了解更高级的场景。
 
-## 常见问题解答
-1. **我可以在没有许可证的情况下使用 Aspose.Email 吗？**  
-   - 是的，您可以使用免费试用版来探索其功能。  
-2. **我该如何处理重复事件中的例外？**  
-   - 使用 `MapiCalendarExceptionInfo` 定义日期、修改后的时间以及任何附加数据。  
-3. **是否可以直接将日历保存到 PST 文件？**  
-   - 当然可以。`PersonalStorage` 类允许您创建 PST 文件并添加日历项。  
-4. **这可以与其他 Java 应用程序集成吗？**  
-   - 是的，API 纯 Java，您可以将其嵌入任何基于 Java 的服务或桌面应用程序中。  
-5. **如果我的许可证过期，我该怎么办？**  
-   - 通过 Aspose 门户续订许可证，或暂时切换回试用模式。
-
 ## 常见问答
 
 **问：该库是否支持时区感知的约会？**  
@@ -229,6 +217,12 @@ try {
 - [请求临时许可证](https://purchase.aspose.com/temporary-license/)
 - [Aspose 支持论坛](https://forum.aspose.com/c/email/10)
 
+---
+
+**最后更新:** 2025-12-20  
+**测试环境:** Aspose.Email for Java 25.4 (JDK 16)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -236,9 +230,3 @@ try {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新:** 2025-12-20  
-**测试环境:** Aspose.Email for Java 25.4 (JDK 16)  
-**作者:** Aspose

@@ -8,7 +8,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Zarządzaj udostępnianiem kalendarza: Przewodnik Aspose.Email dla Javy'
+title: 'Zarządzaj udostępnianiem kalendarza - Przewodnik Aspose.Email dla Javy'
 url: /pl/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

@@ -195,18 +195,6 @@ En suivant ce guide, vous savez maintenant comment **create mapi calendar java**
 - Explorez des propriétés MAPI supplémentaires telles que les participants, les rappels et les catégories.  
 - Consultez la documentation complète de l'API Aspose.Email pour des scénarios plus avancés.
 
-## Section FAQ
-1. **Puis-je utiliser Aspose.Email sans licence ?**  
-   - Oui, vous pouvez commencer avec la version d'essai gratuite pour explorer ses fonctionnalités.  
-2. **Comment gérer les exceptions dans les événements récurrents ?**  
-   - Utilisez `MapiCalendarExceptionInfo` pour définir la date, les horaires modifiés et les éventuelles données jointes.  
-3. **Est‑il possible d'enregistrer les calendriers directement dans des fichiers PST ?**  
-   - Absolument. La classe `PersonalStorage` vous permet de créer des fichiers PST et d'y ajouter des éléments de calendrier.  
-4. **Ce code peut‑il être intégré à d'autres applications Java ?**  
-   - Oui, l'API est pure Java, vous pouvez donc l'intégrer à tout service ou application de bureau basé sur Java.  
-5. **Que faire si ma licence expire ?**  
-   - Renouvelez la licence via le portail Aspose ou repassez temporairement en mode d'essai.
-
 ## Questions fréquemment posées
 
 **Q : La bibliothèque prend‑elle en charge les rendez‑vous sensibles au fuseau horaire ?**  
@@ -232,6 +220,12 @@ R : Oui, Aspose.Email propose également `MapiTask` avec des capacités de récu
 - [Demander une licence temporaire](https://purchase.aspose.com/temporary-license/)
 - [Forum de support Aspose](https://forum.aspose.com/c/email/10)
 
+---
+
+**Dernière mise à jour :** 2025-12-20  
+**Testé avec :** Aspose.Email for Java 25.4 (JDK 16)  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -239,9 +233,3 @@ R : Oui, Aspose.Email propose également `MapiTask` avec des capacités de récu
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2025-12-20  
-**Testé avec :** Aspose.Email for Java 25.4 (JDK 16)  
-**Auteur :** Aspose

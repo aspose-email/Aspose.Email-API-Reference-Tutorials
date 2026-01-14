@@ -194,18 +194,6 @@ Bu kılavuzu izleyerek artık günlük yineleme ile **create mapi calendar java*
 - Katılımcılar, hatırlatıcılar ve kategoriler gibi ek MAPI özelliklerini keşfedin.  
 - Daha gelişmiş senaryolar için Aspose.Email'in kapsamlı API belgelerini inceleyin.
 
-## SSS Bölümü
-1. **Aspose.Email'i lisans olmadan kullanabilir miyim?**  
-   - Evet, özelliklerini keşfetmek için ücretsiz deneme sürümüyle başlayabilirsiniz.  
-2. **Yineleyen etkinliklerde istisnaları nasıl yönetirim?**  
-   - `MapiCalendarExceptionInfo` kullanarak tarihi, değiştirilmiş zamanları ve ekli verileri tanımlayın.  
-3. **Takvimleri doğrudan PST dosyalarına kaydetmek mümkün mü?**  
-   - Kesinlikle. `PersonalStorage` sınıfı PST dosyaları oluşturmanıza ve takvim öğeleri eklemenize olanak tanır.  
-4. **Bu, diğer Java uygulamalarıyla entegre edilebilir mi?**  
-   - Evet, API saf Java olduğundan, herhangi bir Java‑tabanlı hizmete veya masaüstü uygulamasına entegre edebilirsiniz.  
-5. **Lisansım süresi dolarsa ne yapmalıyım?**  
-   - Lisansı Aspose portalı üzerinden yenileyin veya geçici olarak deneme moduna geri dönün.
-
 ## Sık Sorulan Sorular
 
 **S: Kütüphane saat‑dilimi farkında randevuları destekliyor mu?**  
@@ -231,6 +219,12 @@ C: Evet, Aspose.Email benzer özelliklere sahip `MapiTask` da sağlar.
 - [Geçici Lisans Talep Et](https://purchase.aspose.com/temporary-license/)
 - [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
 
+---
+
+**Son Güncelleme:** 2025-12-20  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -238,9 +232,3 @@ C: Evet, Aspose.Email benzer özelliklere sahip `MapiTask` da sağlar.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-20  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
-**Yazar:** Aspose

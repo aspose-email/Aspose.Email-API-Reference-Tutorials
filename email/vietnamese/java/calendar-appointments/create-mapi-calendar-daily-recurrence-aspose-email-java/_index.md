@@ -193,18 +193,6 @@ Bằng cách làm theo hướng dẫn này, bạn đã biết cách **tạo mapi
 - Khám phá các thuộc tính MAPI bổ sung như người tham dự, nhắc nhở và danh mục.  
 - Xem lại tài liệu API chi tiết của Aspose.Email để áp dụng các kịch bản nâng cao hơn.
 
-## FAQ Section
-1. **Có thể sử dụng Aspose.Email mà không có giấy phép không?**  
-   - Có, bạn có thể bắt đầu với phiên bản dùng thử miễn phí để khám phá các khả năng của nó.  
-2. **Làm thế nào để xử lý ngoại lệ trong các sự kiện lặp lại?**  
-   - Sử dụng `MapiCalendarExceptionInfo` để định nghĩa ngày, thời gian đã chỉnh sửa và bất kỳ dữ liệu đính kèm nào.  
-3. **Có thể lưu lịch trực tiếp vào tệp PST không?**  
-   - Chắc chắn. Lớp `PersonalStorage` cho phép bạn tạo tệp PST và thêm các mục lịch.  
-4. **Có thể tích hợp tính năng này với các ứng dụng Java khác không?**  
-   - Có, API thuần Java cho phép bạn nhúng nó vào bất kỳ dịch vụ hoặc ứng dụng desktop nào dựa trên Java.  
-5. **Nếu giấy phép của tôi hết hạn thì phải làm gì?**  
-   - Gia hạn giấy phép qua cổng thông tin Aspose hoặc tạm thời chuyển lại chế độ dùng thử.
-
 ## Frequently Asked Questions
 
 **Q: Thư viện có hỗ trợ các cuộc hẹn nhận thức múi giờ không?**  
@@ -230,6 +218,12 @@ A: Có, Aspose.Email cũng cung cấp `MapiTask` với các khả năng lặp t�
 - [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Cập nhật lần cuối:** 2025-12-20  
+**Đã kiểm tra với:** Aspose.Email for Java 25.4 (JDK 16)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -237,9 +231,3 @@ A: Có, Aspose.Email cũng cung cấp `MapiTask` với các khả năng lặp t�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-20  
-**Đã kiểm tra với:** Aspose.Email for Java 25.4 (JDK 16)  
-**Tác giả:** Aspose

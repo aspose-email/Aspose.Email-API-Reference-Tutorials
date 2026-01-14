@@ -6,7 +6,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'จัดการการแชร์ปฏิทิน: คู่มือ Aspose.Email สำหรับ Java'
+title: 'จัดการการแชร์ปฏิทิน - คู่มือ Aspose.Email สำหรับ Java'
 url: /th/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

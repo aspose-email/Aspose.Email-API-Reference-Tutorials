@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Kelola Berbagi Kalender: Panduan Aspose.Email untuk Java'
+title: 'Kelola Berbagi Kalender - Panduan Aspose.Email untuk Java'
 url: /id/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---

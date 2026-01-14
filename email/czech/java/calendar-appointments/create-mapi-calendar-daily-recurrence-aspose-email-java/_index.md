@@ -193,18 +193,6 @@ Po přečtení tohoto průvodce nyní umíte **vytvořit mapi calendar java** ob
 - Prozkoumejte další MAPI vlastnosti, jako jsou účastníci, připomenutí a kategorie.  
 - Prohlédněte si komplexní API dokumentaci Aspose.Email pro pokročilejší scénáře.
 
-## Často kladené otázky
-1. **Mohu používat Aspose.Email bez licence?**  
-   - Ano, můžete začít s bezplatnou zkušební verzí a prozkoumat její možnosti.  
-2. **Jak zacházet s výjimkami v opakujících se událostech?**  
-   - Použijte `MapiCalendarExceptionInfo` k definování data, upravených časů a případných připojených dat.  
-3. **Je možné ukládat kalendáře přímo do PST souborů?**  
-   - Rozhodně. Třída `PersonalStorage` umožňuje vytvářet PST soubory a přidávat kalendářové položky.  
-4. **Lze to integrovat s jinými Java aplikacemi?**  
-   - Ano, API je čistě Java, takže jej můžete vložit do jakékoli Java‑založené služby nebo desktopové aplikace.  
-5. **Co dělat, když licence vyprší?**  
-   - Obnovte licenci přes Aspose portál nebo dočasně přepněte zpět do zkušebního režimu.
-
 ## Často kladené otázky (FAQ)
 
 **Q: Podporuje knihovna schůzky s časovým pásmem?**  
@@ -230,6 +218,12 @@ A: Ano, Aspose.Email také poskytuje `MapiTask` s podobnými schopnostmi opakov�
 - [Request Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Poslední aktualizace:** 2025-12-20  
+**Testováno s:** Aspose.Email pro Java 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -237,9 +231,3 @@ A: Ano, Aspose.Email také poskytuje `MapiTask` s podobnými schopnostmi opakov�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-20  
-**Testováno s:** Aspose.Email pro Java 25.4 (JDK 16)  
-**Autor:** Aspose
