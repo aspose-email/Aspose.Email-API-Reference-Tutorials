@@ -223,6 +223,12 @@ Daha derinlemesine keşif için resmi [dökümantasyona](https://reference.aspos
 - [Geçici Lisans Talep Et](https://purchase.aspose.com/temporary-license/)
 - [Aspose Destek Forumları](https://forum.aspose.com/c/email/10)
 
+---
+
+**Son Güncelleme:** 2026-01-01  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -230,9 +236,3 @@ Daha derinlemesine keşif için resmi [dökümantasyona](https://reference.aspos
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-01-01  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
-**Yazar:** Aspose

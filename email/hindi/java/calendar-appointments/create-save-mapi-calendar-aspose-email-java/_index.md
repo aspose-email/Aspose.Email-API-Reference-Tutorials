@@ -208,6 +208,12 @@ license.setLicense("path_to_your_license.lic");
 - [टेम्पररी लाइसेंस का अनुरोध करें](https://purchase.aspose.com/temporary-license/)  
 - [Aspose सपोर्ट फ़ोरम](https://forum.aspose.com/c/email/10)
 
+---
+
+**अंतिम अपडेट:** 2026-01-01  
+**परीक्षण किया गया:** Aspose.Email for Java 25.4 (JDK 16)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -215,9 +221,3 @@ license.setLicense("path_to_your_license.lic");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-01-01  
-**परीक्षण किया गया:** Aspose.Email for Java 25.4 (JDK 16)  
-**लेखक:** Aspose

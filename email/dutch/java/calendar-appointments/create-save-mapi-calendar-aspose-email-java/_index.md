@@ -222,6 +222,12 @@ Voor diepere verkenning, bekijk de officiële [documentatie](https://reference.a
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Laatst bijgewerkt:** 2026-01-01  
+**Getest met:** Aspose.Email for Java 25.4 (JDK 16)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -229,9 +235,3 @@ Voor diepere verkenning, bekijk de officiële [documentatie](https://reference.a
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-01-01  
-**Getest met:** Aspose.Email for Java 25.4 (JDK 16)  
-**Auteur:** Aspose

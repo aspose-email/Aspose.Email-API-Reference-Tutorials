@@ -219,6 +219,12 @@ Pro podrobnější průzkum si prohlédněte oficiální [documentation](https:/
 - [Požádat o dočasnou licenci](https://purchase.aspose.com/temporary-license/)
 - [Fórum podpory Aspose](https://forum.aspose.com/c/email/10)
 
+---
+
+**Poslední aktualizace:** 2026-01-01  
+**Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -226,9 +232,3 @@ Pro podrobnější průzkum si prohlédněte oficiální [documentation](https:/
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-01-01  
-**Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
-**Autor:** Aspose

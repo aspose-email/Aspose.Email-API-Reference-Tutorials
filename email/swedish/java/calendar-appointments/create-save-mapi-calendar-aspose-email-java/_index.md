@@ -223,6 +223,12 @@ För djupare utforskning, se den officiella [documentation](https://reference.as
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Senast uppdaterad:** 2026-01-01  
+**Testat med:** Aspose.Email for Java 25.4 (JDK 16)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -230,9 +236,3 @@ För djupare utforskning, se den officiella [documentation](https://reference.as
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-01-01  
-**Testat med:** Aspose.Email for Java 25.4 (JDK 16)  
-**Författare:** Aspose

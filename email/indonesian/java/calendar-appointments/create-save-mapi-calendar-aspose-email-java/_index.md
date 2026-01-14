@@ -223,6 +223,12 @@ Untuk eksplorasi lebih dalam, lihat [dokumentasi resmi](https://reference.aspose
 - [Minta Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
 - [Forum Dukungan Aspose](https://forum.aspose.com/c/email/10)
 
+---
+
+**Terakhir Diperbarui:** 2026-01-01  
+**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -230,9 +236,3 @@ Untuk eksplorasi lebih dalam, lihat [dokumentasi resmi](https://reference.aspose
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-01-01  
-**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16)  
-**Penulis:** Aspose

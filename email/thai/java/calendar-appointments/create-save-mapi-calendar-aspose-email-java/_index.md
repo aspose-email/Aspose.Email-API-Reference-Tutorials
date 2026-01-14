@@ -218,6 +218,12 @@ license.setLicense("path_to_your_license.lic");
 - [ขอใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
 - [ฟอรั่มสนับสนุนของ Aspose](https://forum.aspose.com/c/email/10)
 
+---
+
+**อัปเดตล่าสุด:** 2026-01-01  
+**ทดสอบด้วย:** Aspose.Email for Java 25.4 (JDK 16)  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -225,9 +231,3 @@ license.setLicense("path_to_your_license.lic");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2026-01-01  
-**ทดสอบด้วย:** Aspose.Email for Java 25.4 (JDK 16)  
-**ผู้เขียน:** Aspose

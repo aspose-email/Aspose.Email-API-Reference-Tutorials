@@ -220,6 +220,12 @@ license.setLicense("path_to_your_license.lic");
 - [一時ライセンスのリクエスト](https://purchase.aspose.com/temporary-license/)  
 - [Aspose サポートフォーラム](https://forum.aspose.com/c/email/10)
 
+---
+
+**最終更新日:** 2026-01-01  
+**テスト環境:** Aspose.Email for Java 25.4 (JDK 16)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -227,9 +233,3 @@ license.setLicense("path_to_your_license.lic");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2026-01-01  
-**テスト環境:** Aspose.Email for Java 25.4 (JDK 16)  
-**作者:** Aspose

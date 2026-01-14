@@ -224,6 +224,12 @@ Para una exploración más profunda, consulte la [documentación](https://refere
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Última actualización:** 2026-01-01  
+**Probado con:** Aspose.Email for Java 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -231,9 +237,3 @@ Para una exploración más profunda, consulte la [documentación](https://refere
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-01-01  
-**Probado con:** Aspose.Email for Java 25.4 (JDK 16)  
-**Autor:** Aspose

@@ -106,72 +106,72 @@ Costruiremo un evento di calendario, applicheremo una ricorrenza giornaliera, ag
 
 1. **Initialize Date and Recurrence Pattern**  
 
-   First, define the start time and set a daily recurrence:
+First, define the start time and set a daily recurrence:
 
-   ```java
-   import java.util.Date;
+```java
+import java.util.Date;
 
-   // Add hours to current date to get the start time
-   Date startDate = addHours(new Date(), 12);
+// Add hours to current date to get the start time
+Date startDate = addHours(new Date(), 12);
 
-   MapiCalendarEventRecurrence recurrence = new MapiCalendarEventRecurrence();
-   recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
-   ```
+MapiCalendarEventRecurrence recurrence = new MapiCalendarEventRecurrence();
+recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
+```
 
-   *Spiegazione*: `MapiCalendarEventRecurrence` contiene i dettagli della ricorrenza; scegliamo un pattern giornaliero tramite `MapiCalendarDailyRecurrencePattern`.
+*Spiegazione*: `MapiCalendarEventRecurrence` contiene i dettagli della ricorrenza; scegliamo un pattern giornaliero tramite `MapiCalendarDailyRecurrencePattern`.
 
 2. **Set Up Recipients**  
 
-   Add the people who should receive the meeting invitation:
+Add the people who should receive the meeting invitation:
 
-   ```java
-   import com.aspose.email.MapiRecipientCollection;
-   import com.aspose.email.MapiRecipientType;
+```java
+import com.aspose.email.MapiRecipientCollection;
+import com.aspose.email.MapiRecipientType;
 
-   MapiRecipientCollection recColl = new MapiRecipientCollection();
-   recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
-   ```
+MapiRecipientCollection recColl = new MapiRecipientCollection();
+recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
+```
 
-   *Spiegazione*: `MapiRecipientCollection` memorizza ogni partecipante; `MAPI_TO` li segna come destinatari principali.
+*Spiegazione*: `MapiRecipientCollection` memorizza ogni partecipante; `MAPI_TO` li segna come destinatari principali.
 
 3. **Create the MAPI Calendar Item**  
 
-   Build the calendar object with all required details:
+Build the calendar object with all required details:
 
-   ```java
-   import com.aspose.email.MapiCalendar;
+```java
+import com.aspose.email.MapiCalendar;
 
-   MapiCalendar calendar = new MapiCalendar(
-       "Organizer Name", 
-       "Meeting Subject", 
-       "Meeting Location", 
-       startDate, 
-       addHours(startDate, 1), // End time is one hour after start
-       "Event Description",
-       recColl,
-       recurrence
-   );
-   ```
+MapiCalendar calendar = new MapiCalendar(
+   "Organizer Name", 
+   "Meeting Subject", 
+   "Meeting Location", 
+   startDate, 
+   addHours(startDate, 1), // End time is one hour after start
+   "Event Description",
+   recColl,
+   recurrence
+);
+```
 
-   *Spiegazione*: Il costruttore richiede organizzatore, oggetto, luogo, orari di inizio/fine, descrizione, elenco dei destinatari e ricorrenza.
+*Spiegazione*: Il costruttore richiede organizzatore, oggetto, luogo, orari di inizio/fine, descrizione, elenco dei destinatari e ricorrenza.
 
 4. **Save to PST File**  
 
-   Finally, persist the calendar by **saving calendar to PST**:
+Finally, persist the calendar by **saving calendar to PST**:
 
-   ```java
-   import com.aspose.email.PersonalStorage;
-   import com.aspose.email.FolderInfo;
-   import com.aspose.email.StandardIpmFolder;
+```java
+import com.aspose.email.PersonalStorage;
+import com.aspose.email.FolderInfo;
+import com.aspose.email.StandardIpmFolder;
 
-   PersonalStorage pst = PersonalStorage.create("calendar.pst", 0);
-   FolderInfo calendarFolder = pst.createPredefinedFolder("Calendar", StandardIpmFolder.CALendars);
+PersonalStorage pst = PersonalStorage.create("calendar.pst", 0);
+FolderInfo calendarFolder = pst.createPredefinedFolder("Calendar", StandardIpmFolder.CALendars);
 
-   // Save the MAPI Calendar item
-   calendarFolder.addMapiMessageItem(calendar);
-   ```
+// Save the MAPI Calendar item
+calendarFolder.addMapiMessageItem(calendar);
+```
 
-   *Spiegazione*: `PersonalStorage.create` genera un nuovo file PST, e `addMapiMessageItem` inserisce la voce del calendario nella cartella "Calendar".
+*Spiegazione*: `PersonalStorage.create` genera un nuovo file PST, e `addMapiMessageItem` inserisce la voce del calendario nella cartella "Calendar".
 
 ### Suggerimenti per la risoluzione dei problemi
 - Verifica il percorso della licenza; una licenza non valida limiterà le funzionalità.  
@@ -221,6 +221,12 @@ Per approfondire, consulta la [documentazione](https://reference.aspose.com/emai
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-01-01  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -228,9 +234,3 @@ Per approfondire, consulta la [documentazione](https://reference.aspose.com/emai
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-01  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose

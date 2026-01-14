@@ -224,6 +224,12 @@ license.setLicense("path_to_your_license.lic");
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Τελευταία ενημέρωση:** 2026-01-01  
+**Δοκιμή με:** Aspose.Email for Java 25.4 (JDK 16)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -231,9 +237,3 @@ license.setLicense("path_to_your_license.lic");
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία ενημέρωση:** 2026-01-01  
-**Δοκιμή με:** Aspose.Email for Java 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose
