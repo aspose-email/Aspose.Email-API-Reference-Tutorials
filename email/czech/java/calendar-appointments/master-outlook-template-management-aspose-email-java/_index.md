@@ -197,12 +197,6 @@ A4: Přímý převod není podporován, ale můžete načíst MSG, upravit jeho 
 **Q5: Je Aspose.Email Java vhodný pro zpracování velkého objemu e‑mailů?**  
 A5: Ano, pokud implementujete efektivní správu zdrojů a zvážíte dávkové zpracování pro optimální výkon.
 
----
-
-**Poslední aktualizace:** 2026-01-06  
-**Testováno s:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose  
-
 **Zdroje**
 
 - **Dokumentace**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -211,6 +205,12 @@ A5: Ano, pokud implementujete efektivní správu zdrojů a zvážíte dávkové 
 - **Bezplatná zkušební verze**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Dočasná licence**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Fórum podpory**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Poslední aktualizace:** 2026-01-06  
+**Testováno s:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

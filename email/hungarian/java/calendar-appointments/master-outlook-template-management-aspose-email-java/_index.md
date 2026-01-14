@@ -194,12 +194,6 @@ A4: A közvetlen konverzió nem támogatott, de betöltheti az MSG‑t, módosí
 **Q5: Az Aspose.Email Java alkalmas nagy mennyiségű e‑mail feldolgozásra?**  
 A5: Igen, amennyiben hatékony erőforrás-kezelést valósít meg, és a legjobb teljesítmény érdekében kötegelt feldolgozást alkalmaz.
 
----
-
-**Legutóbb frissítve:** 2026-01-06  
-**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Szerző:** Aspose  
-
 **Erőforrások**
 - **Dokumentáció**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
 - **Könyvtár letöltése**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
@@ -207,6 +201,12 @@ A5: Igen, amennyiben hatékony erőforrás-kezelést valósít meg, és a legjob
 - **Ingyenes próba**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Ideiglenes licenc**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Támogatási fórum**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Legutóbb frissítve:** 2026-01-06  
+**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

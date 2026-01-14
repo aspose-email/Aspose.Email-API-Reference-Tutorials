@@ -192,12 +192,6 @@ A4: 직접적인 변환은 지원되지 않지만, MSG를 로드하고 내용을
 **Q5: Aspose.Email Java가 대량 이메일 처리에 적합한가요?**  
 A5: 예, 효율적인 리소스 관리와 최적 성능을 위한 배치 처리를 구현한다면 적합합니다.
 
----
-
-**마지막 업데이트:** 2026-01-06  
-**테스트 환경:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**작성자:** Aspose  
-
 **리소스**
 - **문서**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
 - **라이브러리 다운로드**: [Aspose Email Releases](https://releases.aspose.com/email/java/)
@@ -205,6 +199,12 @@ A5: 예, 효율적인 리소스 관리와 최적 성능을 위한 배치 처리�
 - **무료 체험**: [Try Aspose Email](https://releases.aspose.com/email/java/)
 - **임시 라이선스**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **지원 포럼**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**마지막 업데이트:** 2026-01-06  
+**테스트 환경:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**작성자:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

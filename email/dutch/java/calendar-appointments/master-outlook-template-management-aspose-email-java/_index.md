@@ -199,12 +199,6 @@ A4: Directe conversie wordt niet ondersteund, maar je kunt een MSG laden, de inh
 **Q5: Is Aspose.Email Java geschikt voor verwerking van grote hoeveelheden e‑mail?**  
 A5: Ja, mits je efficiënt resource‑beheer implementeert en batchverwerking overweegt voor optimale prestaties.
 
----
-
-**Laatst bijgewerkt:** 2026-01-06  
-**Getest met:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Auteur:** Aspose  
-
 **Resources**
 
 - **Documentatie**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -213,6 +207,12 @@ A5: Ja, mits je efficiënt resource‑beheer implementeert en batchverwerking ov
 - **Gratis trial**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Tijdelijke licentie**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Supportforum**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Laatst bijgewerkt:** 2026-01-06  
+**Getest met:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

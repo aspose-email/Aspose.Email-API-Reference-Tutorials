@@ -199,12 +199,6 @@ A4: Bezpośrednia konwersja nie jest obsługiwana, ale możesz załadować MSG, 
 **Q5: Czy Aspose.Email Java nadaje się do przetwarzania dużej liczby e‑maili?**  
 A5: Tak, pod warunkiem wdrożenia efektywnego zarządzania zasobami i rozważenia przetwarzania wsadowego w celu uzyskania optymalnej wydajności.
 
----
-
-**Ostatnia aktualizacja:** 2026-01-06  
-**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose  
-
 **Zasoby**
 
 - **Dokumentacja**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -213,6 +207,12 @@ A5: Tak, pod warunkiem wdrożenia efektywnego zarządzania zasobami i rozważeni
 - **Bezpłatna wersja próbna**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Licencja tymczasowa**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Forum wsparcia**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Ostatnia aktualizacja:** 2026-01-06  
+**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

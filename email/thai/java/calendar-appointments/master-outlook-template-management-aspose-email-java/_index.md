@@ -191,10 +191,6 @@ A4: การแปลงโดยตรงไม่ได้รับการ�
 **Q5: Aspose.Email Java เหมาะกับการประมวลผลอีเมลปริมาณมากหรือไม่?**  
 A5: ใช่, หากคุณออกแบบการจัดการทรัพยากรอย่างมีประสิทธิภาพและพิจารณาการประมวลผลเป็นชุดเพื่อประสิทธิภาพสูงสุด
 
-**Last Updated:** 2026-01-06  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 **แหล่งข้อมูล**
 
 - **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -203,6 +199,12 @@ A5: ใช่, หากคุณออกแบบการจัดการ�
 - **Free Trial**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Temporary License**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Support Forum**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-01-06  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

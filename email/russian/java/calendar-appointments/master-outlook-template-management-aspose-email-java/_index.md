@@ -198,12 +198,6 @@ A4: Прямое преобразование не поддерживается,
 **Q5: Подходит ли Aspose.Email Java для обработки большого объёма писем?**  
 A5: Да, при условии эффективного управления ресурсами и использования пакетной обработки для оптимальной производительности.
 
----
-
-**Последнее обновление:** 2026-01-06  
-**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Автор:** Aspose  
-
 **Ресурсы**
 
 - **Документация**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -212,6 +206,12 @@ A5: Да, при условии эффективного управления р
 - **Бесплатная пробная версия**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Временная лицензия**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Форум поддержки**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Последнее обновление:** 2026-01-06  
+**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Автор:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

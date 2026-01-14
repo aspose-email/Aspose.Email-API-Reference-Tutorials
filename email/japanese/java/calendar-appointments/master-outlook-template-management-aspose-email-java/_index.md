@@ -193,12 +193,7 @@ A4: 直接の変換はサポートされていませんが、MSG を読み込み
 
 **Q5: Aspose.Email Java は大量メール処理に適していますか？**  
 A5: はい、効率的なリソース管理とバッチ処理を導入すれば、最適なパフォーマンスで大量メールを処理できます。
-
----
-
-**最終更新日:** 2026-01-06  
-**テスト環境:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者:** Aspose  
+ 
 
 **リソース**
 - **ドキュメント**: [Aspose Email Java リファレンス](https://reference.aspose.com/email/java/)  
@@ -207,6 +202,12 @@ A5: はい、効率的なリソース管理とバッチ処理を導入すれば�
 - **無料トライアル**: [Aspose Email を試す](https://releases.aspose.com/email/java/)  
 - **一時ライセンス**: [一時ライセンスをリクエスト](https://purchase.aspose.com/temporary-license/)  
 - **サポートフォーラム**: [Aspose コミュニティサポート](https://forum.aspose.com/c/email/10)
+
+---
+
+**最終更新日:** 2026-01-06  
+**テスト環境:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

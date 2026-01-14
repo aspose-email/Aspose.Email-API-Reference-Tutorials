@@ -199,12 +199,6 @@ A4: Η άμεση μετατροπή δεν υποστηρίζεται, αλλά
 **Q5: Είναι το Aspose.Email Java κατάλληλο για επεξεργασία email υψηλού όγκου;**  
 A5: Ναι, εφόσον εφαρμόσετε αποδοτική διαχείριση πόρων και εξετάσετε επεξεργασία σε παρτίδες για βέλτιστη απόδοση.
 
----
-
-**Last Updated:** 2026-01-06  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 **Resources**
 
 - **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -213,6 +207,12 @@ A5: Ναι, εφόσον εφαρμόσετε αποδοτική διαχείρ�
 - **Free Trial**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Temporary License**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Support Forum**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-01-06  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

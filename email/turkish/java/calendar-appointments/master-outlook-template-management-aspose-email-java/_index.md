@@ -200,12 +200,6 @@ C4: Doğrudan dönüşüm desteklenmez, ancak bir MSG yükleyip içeriğini değ
 **S5: Aspose.Email Java yüksek hacimli e-posta işleme için uygun mu?**  
 C5: Evet, verimli kaynak yönetimi uyguladığınız ve optimum performans için toplu işleme düşündüğünüz sürece uygundur.
 
----
-
-**Son Güncelleme:** 2026-01-06  
-**Test Edilen:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Yazar:** Aspose  
-
 ### Kaynaklar
 
 - **Belgelendirme**: [Aspose Email Java Referansı](https://reference.aspose.com/email/java/)  
@@ -214,6 +208,12 @@ C5: Evet, verimli kaynak yönetimi uyguladığınız ve optimum performans için
 - **Ücretsiz Deneme**: [Aspose Email'i Deneyin](https://releases.aspose.com/email/java/)  
 - **Geçici Lisans**: [Geçici Lisans Talep Edin](https://purchase.aspose.com/temporary-license/)  
 - **Destek Forumu**: [Aspose Topluluk Desteği](https://forum.aspose.com/c/email/10)
+
+---
+
+**Son Güncelleme:** 2026-01-06  
+**Test Edilen:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

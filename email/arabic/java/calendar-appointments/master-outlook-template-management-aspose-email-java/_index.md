@@ -193,12 +193,6 @@ try {
 **س5: هل Aspose.Email Java مناسب لمعالجة البريد الإلكتروني ذات الحجم الكبير؟**  
 ج5: نعم، بشرط تنفيذ إدارة موارد فعّالة والنظر في المعالجة الدفعية لتحقيق الأداء الأمثل.  
 
----
-
-**آخر تحديث:** 2026-01-06  
-**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**المؤلف:** Aspose  
-
 **الموارد**
 - **الوثائق**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
 - **تنزيل المكتبة**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
@@ -206,6 +200,12 @@ try {
 - **نسخة تجريبية مجانية**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **ترخيص مؤقت**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **منتدى الدعم**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**آخر تحديث:** 2026-01-06  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

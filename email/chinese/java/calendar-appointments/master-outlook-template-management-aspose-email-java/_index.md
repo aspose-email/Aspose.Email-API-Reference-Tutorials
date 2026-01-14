@@ -197,12 +197,6 @@ A4：直接转换不受支持，但您可以加载 MSG、修改内容后重新�
 **Q5：Aspose.Email Java 适合高容量邮件处理吗？**  
 A5：适合，只要实现高效的资源管理并考虑批量处理即可获得最佳性能。
 
----
-
-**最后更新：** 2026-01-06  
-**测试环境：** Aspose.Email for Java 25.4（jdk16 classifier）  
-**作者：** Aspose  
-
 **资源**
 
 - **文档**： [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -211,6 +205,12 @@ A5：适合，只要实现高效的资源管理并考虑批量处理即可获得
 - **免费试用**： [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **临时许可证**： [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **支持论坛**： [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**最后更新：** 2026-01-06  
+**测试环境：** Aspose.Email for Java 25.4（jdk16 classifier）  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -195,13 +195,7 @@ A3：使用 `MapiMessage` 的 `addAttachment` 或 `removeAttachment` 方法即�
 A4：直接轉換目前不支援，但您可以載入 MSG、修改內容後重新以 OFT 格式儲存，重新建立範本結構。
 
 **Q5：Aspose.Email Java 適合高容量郵件處理嗎？**  
-A5：適合，只要實作有效的資源管理，並考慮批次處理即可達到最佳效能。
-
----
-
-**最後更新日期：** 2026-01-06  
-**測試環境：** Aspose.Email for Java 25.4（jdk16 classifier）  
-**作者：** Aspose  
+A5：適合，只要實作有效的資源管理，並考慮批次處理即可達到最佳效能。  
 
 **資源**
 
@@ -211,6 +205,12 @@ A5：適合，只要實作有效的資源管理，並考慮批次處理即可達
 - **免費試用**： [試用 Aspose Email](https://releases.aspose.com/email/java/)  
 - **臨時授權**： [申請臨時授權](https://purchase.aspose.com/temporary-license/)  
 - **支援論壇**： [Aspose 社群支援](https://forum.aspose.com/c/email/10)
+
+---
+
+**最後更新日期：** 2026-01-06  
+**測試環境：** Aspose.Email for Java 25.4（jdk16 classifier）  
+**作者：** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

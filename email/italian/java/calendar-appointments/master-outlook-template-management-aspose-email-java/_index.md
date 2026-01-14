@@ -198,12 +198,6 @@ R4: La conversione diretta non è supportata, ma puoi caricare un MSG, modificar
 **D5: Aspose.Email Java è adatto per l'elaborazione di email ad alto volume?**  
 R5: Sì, a patto di implementare una gestione efficiente delle risorse e considerare l'elaborazione in batch per prestazioni ottimali.
 
----
-
-**Ultimo Aggiornamento:** 2026-01-06  
-**Testato Con:** Aspose.Email per Java 25.4 (jdk16 classifier)  
-**Autore:** Aspose  
-
 **Risorse**
 
 - **Documentazione**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -212,6 +206,12 @@ R5: Sì, a patto di implementare una gestione efficiente delle risorse e conside
 - **Prova Gratuita**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Licenza Temporanea**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Forum di Supporto**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Ultimo Aggiornamento:** 2026-01-06  
+**Testato Con:** Aspose.Email per Java 25.4 (jdk16 classifier)  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

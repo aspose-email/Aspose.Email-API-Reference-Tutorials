@@ -196,12 +196,6 @@ A4: Direct conversion isn’t supported, but you can load an MSG, modify its con
 **Q5: Is Aspose.Email Java suitable for high‑volume email processing?**  
 A5: Yes, provided you implement efficient resource handling and consider batch processing for optimal performance.
 
----
-
-**Last Updated:** 2026-01-06  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 **Resources**
 
 - **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)  
@@ -210,6 +204,12 @@ A5: Yes, provided you implement efficient resource handling and consider batch p
 - **Free Trial**: [Try Aspose Email](https://releases.aspose.com/email/java/)  
 - **Temporary License**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Support Forum**: [Aspose Community Support](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-01-06  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
