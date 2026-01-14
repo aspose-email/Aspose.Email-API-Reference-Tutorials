@@ -18,32 +18,32 @@ weight: 16
 
 # Menyesuaikan Header dan Footer SMTP dengan Aspose.Email
 
-## Introduction
+## Perkenalan
 
-Dalam dunia bisnis yang bergerak cepat saat ini, setiap email yang Anda kirim adalah perpanjangan dari merek Anda. Dengan mempelajari cara **create email message java** proyek yang mencakup header dan footer khusus, Anda dapat *personalize email branding*, memperkuat identitas perusahaan Anda, dan mematuhi persyaratan server email tertentu. Tutorial ini memandu Anda melalui seluruh proses—dari menyiapkan proyek Java hingga menambahkan footer email khusus—menggunakan Aspose.Email untuk Java.
+Dalam dunia bisnis yang bergerak cepat saat ini, setiap email yang Anda kirim adalah perpanjangan dari merek Anda. Dengan mempelajari cara **membuat pesan email java** proyek yang mencakup header dan footer khusus, Anda dapat*personalisasi email branding*, memperkuat identitas perusahaan Anda, dan mematuhi persyaratan server email tertentu. Tutorial ini memandu Anda melalui seluruh proses—dari menyiapkan proyek Java hingga menambahkan footer email khusus—menggunakan Aspose.Email untuk Java.
 
-## Quick Answers
-- **Apa perpustakaan utama?** Aspose.Email for Java  
-- **Metode mana yang menambahkan footer email khusus?** `setHtmlBody()` dengan potongan HTML Anda  
-- **Bisakah saya mengatur header SMTP khusus?** Ya, melalui `message.getHeaders().add()`  
-- **Apakah saya memerlukan lisensi untuk produksi?** Lisensi Aspose.Email yang valid diperlukan untuk penggunaan komersial  
-- **Versi Java apa yang didukung?** Java 8 dan di atasnya  
+## Jawaban Cepat
+- **Apa perpustakaan utama?** Aspose.Email untuk Java
+- **Metode mana yang menambahkan footer email khusus?** `setHtmlBody()` dengan potongan HTML Anda
+- ** mengusulkan saya mengatur header SMTP khusus?** Ya, melalui `message.getHeaders().add()`
+- **Apakah saya memerlukan lisensi untuk produksi?** Lisensi Aspose.Email yang valid diperlukan untuk penggunaan komersial
+- **Versi Java apa yang didukung?** Java8 dan di atasnya
 
-## Prerequisites
+## Prasyarat
 
 Sebelum menyelami proses penyesuaian, pastikan Anda memiliki prasyarat berikut:
 
 - Aspose.Email for Java: Unduh dan instal perpustakaan Aspose.Email untuk Java dari [here](https://releases.aspose.com/email/java/).
 
-## How to create email message java with Aspose.Email
+## Cara membuat pesan email java dengan Aspose.Email
 
 Berikut adalah panduan langkah demi langkah yang menunjukkan secara tepat cara membangun, menyesuaikan, dan mengirim email menggunakan Java.
 
-### Step 1: Setting Up Your Java Project
+### Langkah 1: Menyiapkan Proyek Java Anda
 
-Mulai proyek Java baru di IDE favorit Anda (IntelliJ IDEA, Eclipse, atau NetBeans). Tambahkan JAR Aspose.Email ke classpath proyek Anda atau impor melalui Maven/Gradle.
+Mulai proyek Java baru di IDE favorit Anda (IntelliJ IDEA, Eclipse, atau NetBeans). Tambahkan JAR Aspose.Email ke proyek classpath Anda atau impor melalui Maven/Gradle.
 
-### Step 2: Importing the Required Classes
+### Langkah 2: Mengimpor Kelas yang Diperlukan
 
 Anda akan membutuhkan beberapa kelas dari namespace Aspose.Email. Pernyataan import tetap sama, jadi Anda dapat menyalinnya langsung:
 
@@ -51,9 +51,9 @@ Anda akan membutuhkan beberapa kelas dari namespace Aspose.Email. Pernyataan imp
 import com.aspose.email.*;
 ```
 
-### Step 3: Creating an Email Message
+### Langkah 3: Membuat Pesan Email
 
-Sekarang kita membuat objek `MailMessage` inti. Di sinilah kita **create email message java** yang nantinya akan membawa header dan footer khusus kami.
+Sekarang kita membuat objek `MailMessage` inti. Di dalam kita **buat pesan email java** yang nantinya akan membawa header dan footer khusus kami.
 
 ```java
 // Create a new message
@@ -67,9 +67,9 @@ message.setTo("recipient@example.com");
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### Step 4: Customizing Headers
+### Langkah 4: Menyesuaikan Header
 
-Header SMTP khusus memberi Anda kontrol ekstra atas bagaimana server penerima memproses email. Misalnya, Anda dapat mengatur prioritas atau menentukan nama mailer.
+Header SMTP khusus memberi Anda kontrol ekstra atas bagaimana server penerima memproses email. Misalnya, Anda dapat mengatur prioritas atau menentukan nama pengirim.
 
 ```java
 // Customize headers
@@ -77,11 +77,11 @@ message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-> **Pro tip:** Gunakan nama header standar (mis., `X-Priority`) untuk memastikan kompatibilitas di berbagai server email.
+> **Tips pro:** Gunakan nama header standar (mis., `X-Priority`) untuk memastikan kompatibilitas di berbagai server email.
 
-### Step 5: Adding a Custom Email Footer (add html footer to email)
+### Langkah 5: Menambahkan Footer Email Khusus (tambahkan footer html ke email)
 
-Untuk **add custom email footer** dan **add html footer to email**, cukup sematkan potongan HTML Anda di akhir isi pesan. Pendekatan ini juga memungkinkan Anda **personalize email branding** dengan logo atau pemberitahuan hukum.
+Untuk **tambahkan footer email khusus** dan **tambahkan footer html ke email**, cukup sematkan potongan HTML Anda di akhir isi pesan. Pendekatan ini juga memungkinkan Anda **personalize email branding** dengan logo atau pemberitahuan hukum.
 
 ```java
 // Customize footer
@@ -89,9 +89,9 @@ String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-Anda dapat mengganti `footerText` dengan HTML apa pun yang Anda inginkan—gambar, teks bergaya, atau bahkan konten dinamis.
+Anda dapat mengganti `footerText` dengan HTML apa pun yang Anda inginkan—gambar, gaya teks, atau bahkan konten dinamis.
 
-### Step 6: Sending the Email
+### Langkah 6: Mengirim Email
 
 Terakhir, konfigurasikan `SmtpClient` dengan detail server Anda dan kirim pesan.
 
@@ -103,38 +103,38 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 client.send(message);
 ```
 
-> **Warning:** Pastikan kredensial SMTP memiliki izin untuk mengirim dari alamat `From` yang Anda tentukan; jika tidak, server dapat menolak pesan.
+> **Peringatan:** Pastikan kredensial SMTP memiliki izin untuk mengirim dari alamat `From` yang Anda cari; jika tidak, server dapat menolak pesan.
 
-## Common Issues and Solutions
+## Masalah Umum dan Solusinya
 
 | Masalah | Solusi |
 |-------|----------|
-| **Headers not appearing** | Verifikasi bahwa server SMTP tidak menghapus header khusus. Beberapa penyedia menghapus header non‑standar. |
-| **HTML footer not rendering** | Pastikan klien email mendukung HTML dan HTML Anda terbentuk dengan baik (tag tertutup, enkoding yang tepat). |
-| **Authentication errors** | Periksa kembali nama pengguna/kata sandi dan pastikan pengaturan TLS/SSL sesuai dengan persyaratan server Anda. |
+| **Header tidak muncul** | Verifikasi bahwa server SMTP tidak menghapus header khusus. Beberapa penyedia menghapus header non-standar. |
+| **Footer HTML tidak dirender** | Pastikan email klien mendukung HTML dan HTML Anda terbentuk dengan baik (tag tertutup, enkoding yang tepat). |
+| **Kesalahan autentikasi** | Periksa kembali nama pengguna/kata sandi dan pastikan pengaturan TLS/SSL sesuai dengan persyaratan server Anda. |
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q: Bagaimana cara mengunduh Aspose.Email untuk Java?**  
+**Q: Bagaimana cara mengunduh Aspose.Email untuk Java?**
 A: Anda dapat mengunduh Aspose.Email untuk Java dari situs web menggunakan tautan ini: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
 
-**Q: Bisakah saya menyesuaikan beberapa header dan footer dalam satu email?**  
-A: Ya, Anda dapat menyesuaikan beberapa header dan footer dalam satu pesan email. Cukup tambahkan header dan footer yang diinginkan seperti yang ditunjukkan pada contoh yang disediakan.
+**Q: Bisakah saya menyesuaikan beberapa header dan footer dalam satu email?**
+A: Ya, Anda dapat menyesuaikan beberapa header dan footer dalam satu pesan email. Cukup tambahkan header dan footer yang diinginkan seperti yang ditampilkan pada contoh yang disediakan.
 
-**Q: Apakah ada batas panjang untuk header dan footer yang disesuaikan?**  
-A: Tidak ada batas ketat untuk panjang header dan footer yang disesuaikan. Namun, disarankan untuk menjaga mereka singkat dan relevan agar tampilan tetap profesional.
+**Q: Apakah ada batasan panjang untuk header dan footer yang disesuaikan?**
+A: Tidak ada batasan ketat untuk panjang header dan footer yang disesuaikan. Namun, disarankan untuk menjaganya tetap singkat dan relevan agar tampilan tetap profesional.
 
-**Q: Bisakah saya menggunakan format HTML dalam konten email?**  
+**Q: Bisakah saya menggunakan format HTML dalam konten email?**
 A: Ya, Anda dapat menggunakan format HTML dalam konten email, termasuk header dan footer. Ini memungkinkan Anda membuat email yang menarik secara visual dan informatif.
 
-**Q: Pengaturan SMTP apa yang harus saya gunakan untuk mengirim email yang disesuaikan?**  
+**Q: Pengaturan SMTP apa yang harus saya gunakan untuk mengirim email yang disesuaikan?**
 A: Anda harus menggunakan pengaturan SMTP yang diberikan oleh penyedia layanan email Anda atau departemen TI organisasi Anda. Pengaturan ini biasanya mencakup alamat server SMTP, nomor port, dan kredensial autentikasi.
 
 ---
 
-**Last Updated:** 2026-01-04  
-**Tested With:** Aspose.Email for Java 24.12  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 04-01-2026
+**Diuji Dengan:** Aspose.Email untuk Java 24.12
+**Penulis:** Beranggapan 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

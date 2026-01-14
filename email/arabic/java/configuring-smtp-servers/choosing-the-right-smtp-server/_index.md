@@ -5,7 +5,7 @@ description: تعلم كيفية إرسال البريد الإلكتروني ب
   SMTP متعددة باستخدام Aspose.Email.
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'إرسال بريد إلكتروني جافا: اختيار خادم SMTP المناسب مع Aspose.Email'
+title: 'إرسال بريد إلكتروني جافا - اختيار خادم SMTP المناسب مع Aspose.Email'
 url: /ar/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -145,6 +145,12 @@ public class EmailSender {
 
 اختيار خادم SMTP المناسب هو حجر الزاوية لتنفيذ **send email java** موثوق. من خلال تقييم الحجم، المصادقة، الأمان، والسرعة، يمكنك اختيار Gmail أو Microsoft 365 أو مزود مخصص يلبي احتياجاتك. بفضل واجهة برمجة التطبيقات البسيطة لـ Aspose.Email لـ **setup SMTP client**، يمكنك تكوين، **test SMTP settings**، وحتى إدارة **multiple SMTP servers** ببضع أسطر من كود Java. نتمنى لك إرسالًا سعيدًا!
 
+---
+
+**آخر تحديث:** 2026-01-04  
+**تم الاختبار مع:** Aspose.Email for Java 24.11 (latest)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -152,9 +158,3 @@ public class EmailSender {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-01-04  
-**تم الاختبار مع:** Aspose.Email for Java 24.11 (latest)  
-**المؤلف:** Aspose

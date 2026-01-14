@@ -5,7 +5,7 @@ description: Μάθετε πώς να στέλνετε email με Java, ρυθμ
   πολλαπλούς διακομιστές SMTP με το Aspose.Email.
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'Αποστολή Email Java: Επιλέξτε τον κατάλληλο διακομιστή SMTP με το Aspose.Email'
+title: 'Αποστολή Email Java - Επιλέξτε τον κατάλληλο διακομιστή SMTP με το Aspose.Email'
 url: /el/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -142,6 +142,12 @@ A: Ναι, αλλά να είστε ενήμεροι για τα όρια ταχ
 
 Η επιλογή του κατάλληλου διακομιστή SMTP είναι το θεμέλιο μιας αξιόπιστης υλοποίησης **send email java**. Αξιολογώντας τον όγκο, τον έλεγχο ταυτότητας, την ασφάλεια και την ταχύτητα, μπορείτε να επιλέξετε Gmail, Microsoft 365 ή έναν προσαρμοσμένο πάροχο που ταιριάζει στις ανάγκες σας. Με το απλό API **setup SMTP client** του Aspose.Email, μπορείτε να διαμορφώσετε, **test SMTP settings**, και ακόμη να διαχειριστείτε **multiple SMTP servers** με λίγες μόνο γραμμές κώδικα Java. Καλή αποστολή!
 
+---
+
+**Last Updated:** 2026-01-04  
+**Tested With:** Aspose.Email for Java 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -149,9 +155,3 @@ A: Ναι, αλλά να είστε ενήμεροι για τα όρια ταχ
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-04  
-**Tested With:** Aspose.Email for Java 24.11 (latest)  
-**Author:** Aspose

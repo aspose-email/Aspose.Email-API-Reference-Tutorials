@@ -5,7 +5,7 @@ description: Impara come inviare email in Java impostando il client SMTP, scegli
   SMTP con Aspose.Email.
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'Invia email Java: scegli il server SMTP giusto con Aspose.Email'
+title: 'Invia email Java - scegli il server SMTP giusto con Aspose.Email'
 url: /it/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -142,6 +142,12 @@ R: Sì, ma fai attenzione ai limiti di velocità del provider e considera l’im
 
 Scegliere il server SMTP giusto è la pietra angolare di un’implementazione **send email java** affidabile. Valutando volume, autenticazione, sicurezza e velocità, puoi optare per Gmail, Microsoft 365 o un provider personalizzato che soddisfi le tue esigenze. Con l’API semplice di **setup SMTP client** di Aspose.Email, puoi configurare, **testare le impostazioni SMTP** e persino gestire **multiple SMTP servers** con poche righe di codice Java. Buon invio di email!
 
+---
+
+**Ultimo aggiornamento:** 2026-01-04  
+**Testato con:** Aspose.Email for Java 24.11 (latest)  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -149,11 +155,3 @@ Scegliere il server SMTP giusto è la pietra angolare di un’implementazione **
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-01-04  
-**Testato con:** Aspose.Email for Java 24.11 (latest)  
-**Autore:** Aspose  
-
----

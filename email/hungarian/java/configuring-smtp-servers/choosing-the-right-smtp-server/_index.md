@@ -5,7 +5,7 @@ description: Ismerje meg, hogyan küldjön e‑mailt Java‑val az SMTP kliens b
   valamint több SMTP szerver kezelésével az Aspose.Email segítségével.
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'E-mail küldése Java-ban: Válassza ki a megfelelő SMTP szervert az Aspose.Email
+title: 'E-mail küldése Java-ban - Válassza ki a megfelelő SMTP szervert az Aspose.Email
   segítségével'
 url: /hu/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
@@ -143,6 +143,12 @@ A: Igen, de vegye figyelembe a szolgáltató sebességkorlátait, és fontolja m
 
 A megfelelő SMTP szerver kiválasztása a megbízható **send email java** megvalósítás alapja. A mennyiség, hitelesítés, biztonság és sebesség mérlegelésével választhat Gmailt, Microsoft 365‑öt vagy egyedi szolgáltatót, amely megfelel az igényeinek. Az Aspose.Email egyszerű **setup SMTP client** API‑jával konfigurálhatja, **test SMTP settings**‑t végezhet, és akár **multiple SMTP servers**‑t is kezelhet néhány Java sorral. Boldog levelezést!
 
+---
+
+**Utoljára frissítve:** 2026-01-04  
+**Tesztelve:** Aspose.Email for Java 24.11 (legújabb)  
+**Szerző:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -150,11 +156,3 @@ A megfelelő SMTP szerver kiválasztása a megbízható **send email java** megv
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2026-01-04  
-**Tesztelve:** Aspose.Email for Java 24.11 (legújabb)  
-**Szerző:** Aspose  
-
----

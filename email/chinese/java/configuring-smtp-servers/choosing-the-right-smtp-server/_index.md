@@ -4,7 +4,7 @@ description: 学习如何通过设置SMTP客户端、选择Gmail SMTP Java或Mic
   处理多个 SMTP 服务器来发送 Java 邮件。
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: Java 发送电子邮件：使用 Aspose.Email 选择合适的 SMTP 服务器
+title: Java 发送电子邮件 - 使用 Aspose.Email 选择合适的 SMTP 服务器
 url: /zh/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -141,6 +141,12 @@ public class EmailSender {
 
 选择合适的 SMTP 服务器是实现可靠 **send email java** 的基石。通过评估邮件量、身份验证方式、安全需求和投递速度，您可以挑选 Gmail、Microsoft 365 或自定义提供商来满足需求。借助 Aspose.Email 简洁的 **setup SMTP client** API，您只需几行 Java 代码即可配置、**test SMTP settings**，甚至管理 **multiple SMTP servers**。祝您邮件发送顺利！
 
+---
+
+**最后更新：** 2026-01-04  
+**测试环境：** Aspose.Email for Java 24.11（最新）  
+**作者：** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -148,11 +154,3 @@ public class EmailSender {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-01-04  
-**测试环境：** Aspose.Email for Java 24.11（最新）  
-**作者：** Aspose  
-
----

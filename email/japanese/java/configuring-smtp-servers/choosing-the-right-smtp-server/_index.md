@@ -4,7 +4,7 @@ description: SMTPクライアントを設定し、Gmail SMTP Java または Micr
   で複数の SMTP サーバーを扱う方法を学びましょう。
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'Javaでメール送信: Aspose.Emailで適切なSMTPサーバーを選択'
+title: 'Javaでメール送信 - Aspose.Emailで適切なSMTPサーバーを選択'
 url: /ja/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -141,6 +141,12 @@ A: 可能ですが、プロバイダーのレートリミットに注意し、�
 
 適切な SMTP サーバーの選択は、信頼性の高い **send email java** 実装の基礎です。メール量、認証方式、セキュリティ、配信速度を評価すれば、Gmail、Microsoft 365、またはカスタムプロバイダーのいずれかがニーズに合致します。Aspose.Email のシンプルな **setup SMTP client** API を使えば、設定・**test SMTP settings**・**multiple SMTP servers** の管理が数行の Java コードで実現できます。メール送信を楽しんでください！
 
+---
+
+**Last Updated:** 2026-01-04  
+**Tested With:** Aspose.Email for Java 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -148,9 +154,3 @@ A: 可能ですが、プロバイダーのレートリミットに注意し、�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-04  
-**Tested With:** Aspose.Email for Java 24.11 (latest)  
-**Author:** Aspose

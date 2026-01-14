@@ -5,7 +5,7 @@ description: SMTP istemcisini kurarak, Gmail SMTP Java veya Microsoft 365'i se
   Java ile e-posta göndermeyi öğrenin.
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: 'E-posta Gönderme Java: Aspose.Email ile Doğru SMTP Sunucusunu Seçin'
+title: 'E-posta Gönderme Java - Aspose.Email ile Doğru SMTP Sunucusunu Seçin'
 url: /tr/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -142,6 +142,12 @@ C: Evet, ancak sağlayıcının oran limitlerine dikkat edin ve bu limitler içi
 
 Doğru SMTP sunucusunu seçmek, güvenilir bir **send email java** uygulamasının temel taşıdır. Hacim, kimlik doğrulama, güvenlik ve hız değerlendirmesi yaparak ihtiyaçlarınıza uygun Gmail, Microsoft 365 veya özel bir sağlayıcı seçebilirsiniz. Aspose.Email'in basit **setup SMTP client** API'si sayesinde, sadece birkaç satır Java kodu ile yapılandırabilir, **test SMTP settings** yapabilir ve hatta **multiple SMTP servers** yönetebilirsiniz. İyi e-posta gönderimleri!
 
+---
+
+**Last Updated:** 2026-01-04  
+**Tested With:** Aspose.Email for Java 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -149,9 +155,3 @@ Doğru SMTP sunucusunu seçmek, güvenilir bir **send email java** uygulamasın�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-04  
-**Tested With:** Aspose.Email for Java 24.11 (latest)  
-**Author:** Aspose

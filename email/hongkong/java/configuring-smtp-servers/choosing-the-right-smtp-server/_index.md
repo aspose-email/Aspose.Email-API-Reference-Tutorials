@@ -4,7 +4,7 @@ description: 學習如何透過設定 SMTP 客戶端、選擇 Gmail SMTP Java �
   Aspose.Email 處理多個 SMTP 伺服器來發送 Java 電郵。
 linktitle: 'Send Email Java: Choose the Right SMTP Server with Aspose.Email'
 second_title: Aspose.Email Java Email Management API
-title: Java 發送電郵：使用 Aspose.Email 選擇合適的 SMTP 伺服器
+title: Java 發送電郵 - 使用 Aspose.Email 選擇合適的 SMTP 伺服器
 url: /zh-hant/java/configuring-smtp-servers/choosing-the-right-smtp-server/
 weight: 10
 ---
@@ -141,6 +141,12 @@ A: 請留意供應商的速率限制，必要時實作節流或批次發送，�
 
 選擇合適的 SMTP 伺服器是建立可靠 **send email java** 解決方案的基石。透過評估郵件量、驗證方式、安全需求與投遞速度，您可以挑選 Gmail、Microsoft 365 或自訂供應商。借助 Aspose.Email 簡潔的 **setup SMTP client** API，您只需幾行 Java 程式碼即可完成 **test SMTP settings**，甚至管理 **multiple SMTP servers**。祝您郵件發送順利！
 
+---
+
+**Last Updated:** 2026-01-04  
+**Tested With:** Aspose.Email for Java 24.11 (latest)  
+**Author:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -148,11 +154,3 @@ A: 請留意供應商的速率限制，必要時實作節流或批次發送，�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-04  
-**Tested With:** Aspose.Email for Java 24.11 (latest)  
-**Author:** Aspose  
-
----
