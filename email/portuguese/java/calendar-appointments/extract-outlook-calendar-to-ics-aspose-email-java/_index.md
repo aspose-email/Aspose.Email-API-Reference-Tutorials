@@ -193,6 +193,12 @@ R: Processe itens em blocos, considere streams paralelos e assegure‑se de desc
 
 Esperamos que este tutorial ajude você a aproveitar o poder do Aspose.Email para Java para gerenciar seus dados de calendário do Outlook de forma eficaz. Boa codificação!
 
+---
+
+**Última atualização:** 2025-12-24  
+**Testado com:** Aspose.Email para Java 25.4 (jdk16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -200,9 +206,3 @@ Esperamos que este tutorial ajude você a aproveitar o poder do Aspose.Email par
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2025-12-24  
-**Testado com:** Aspose.Email para Java 25.4 (jdk16)  
-**Autor:** Aspose

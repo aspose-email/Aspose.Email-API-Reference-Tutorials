@@ -192,6 +192,12 @@ A: Verwerk items in delen, overweeg parallelle streams, en zorg ervoor dat u `Pe
 
 We hopen dat deze tutorial u helpt de kracht van Aspose.Email voor Java te benutten om uw Outlook‑agenda‑gegevens effectief te beheren. Veel programmeerplezier!
 
+---
+
+**Laatst bijgewerkt:** 2025-12-24  
+**Getest met:** Aspose.Email for Java 25.4 (jdk16)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ We hopen dat deze tutorial u helpt de kracht van Aspose.Email voor Java te benut
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-24  
-**Getest met:** Aspose.Email for Java 25.4 (jdk16)  
-**Auteur:** Aspose

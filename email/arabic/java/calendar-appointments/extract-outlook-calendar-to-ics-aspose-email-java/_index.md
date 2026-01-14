@@ -192,6 +192,12 @@ for (Object messageInfo : messageInfoCollection) {
 
 نأمل أن يساعدك هذا الدليل في استغلال قوة Aspose.Email للغة Java لإدارة بيانات تقويم Outlook بفعالية. برمجة سعيدة!
 
+---
+
+**آخر تحديث:** 2025-12-24  
+**تم الاختبار مع:** Aspose.Email للغة Java 25.4 (jdk16)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ for (Object messageInfo : messageInfoCollection) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-24  
-**تم الاختبار مع:** Aspose.Email للغة Java 25.4 (jdk16)  
-**المؤلف:** Aspose

@@ -193,6 +193,12 @@ for (Object messageInfo : messageInfoCollection) {
 
 Надеемся, этот учебник поможет вам эффективно использовать возможности Aspose.Email для Java при работе с данными календаря Outlook. Приятного кодинга!
 
+---
+
+**Последнее обновление:** 2025-12-24  
+**Тестировано с:** Aspose.Email для Java 25.4 (jdk16)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -200,9 +206,3 @@ for (Object messageInfo : messageInfoCollection) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2025-12-24  
-**Тестировано с:** Aspose.Email для Java 25.4 (jdk16)  
-**Автор:** Aspose

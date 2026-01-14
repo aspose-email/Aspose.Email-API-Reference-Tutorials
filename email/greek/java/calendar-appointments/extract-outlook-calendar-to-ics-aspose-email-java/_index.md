@@ -195,6 +195,12 @@ A: Επεξεργαστείτε τα στοιχεία σε κομμάτια, ε�
 
 Ελπίζουμε αυτό το σεμινάριο να σας βοηθήσει να αξιοποιήσετε τη δύναμη του Aspose.Email για Java για τη διαχείριση των δεδομένων του ημερολογίου Outlook αποτελεσματικά. Καλή προγραμματιστική!
 
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -202,9 +208,3 @@ A: Επεξεργαστείτε τα στοιχεία σε κομμάτια, ε�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-24  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

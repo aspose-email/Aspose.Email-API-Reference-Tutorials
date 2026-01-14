@@ -194,6 +194,12 @@ A: Dolgozzon darabokban, fontolja meg a párhuzamos stream‑ek használatát, �
 
 Reméljük, hogy ez a bemutató segít az Aspose.Email for Java erejének kihasználásában az Outlook naptáradatok hatékony kezelése érdekében. Boldog kódolást!
 
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -201,9 +207,3 @@ Reméljük, hogy ez a bemutató segít az Aspose.Email for Java erejének kihasz
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-24  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

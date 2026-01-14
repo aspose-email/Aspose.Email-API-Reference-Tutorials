@@ -192,6 +192,12 @@ A: 將項目分塊處理，考慮使用平行串流，並確保及時釋放 `Per
 
 希望本教學能協助您善用 Aspose.Email for Java，有效管理 Outlook 行事曆資料。祝您開發順利！
 
+---
+
+**最後更新：** 2025-12-24  
+**測試環境：** Aspose.Email for Java 25.4 (jdk16)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ A: 將項目分塊處理，考慮使用平行串流，並確保及時釋放 `Per
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-24  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16)  
-**作者：** Aspose

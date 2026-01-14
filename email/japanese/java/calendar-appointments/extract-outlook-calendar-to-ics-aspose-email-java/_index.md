@@ -193,6 +193,12 @@ A: アイテムをチャンク単位で処理し、並列ストリームの使�
 
 本チュートリアルが、Aspose.Email for Java の力を活用して Outlook カレンダー データを効果的に管理する手助けとなれば幸いです。コーディングをお楽しみください！
 
+---
+
+**最終更新日:** 2025-12-24  
+**テスト環境:** Aspose.Email for Java 25.4 (jdk16)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -200,9 +206,3 @@ A: アイテムをチャンク単位で処理し、並列ストリームの使�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-24  
-**テスト環境:** Aspose.Email for Java 25.4 (jdk16)  
-**作者:** Aspose

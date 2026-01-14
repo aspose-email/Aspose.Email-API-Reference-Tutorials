@@ -191,6 +191,12 @@ A: Process items in chunks, consider parallel streams, and ensure you dispose of
 
 We hope this tutorial helps you harness the power of Aspose.Email for Java to manage your Outlook calendar data effectively. Happy coding!
 
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ We hope this tutorial helps you harness the power of Aspose.Email for Java to ma
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-24  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

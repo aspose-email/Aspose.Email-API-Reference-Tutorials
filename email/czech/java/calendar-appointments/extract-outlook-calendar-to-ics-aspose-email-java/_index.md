@@ -194,6 +194,12 @@ A: Zpracovávejte položky po částech, zvažte paralelní proudy a zajistěte 
 
 Doufáme, že vám tento tutoriál pomůže využít sílu Aspose.Email pro Java k efektivní správě vašich dat kalendáře Outlook. Šťastné programování!
 
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -201,9 +207,3 @@ Doufáme, že vám tento tutoriál pomůže využít sílu Aspose.Email pro Java
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-24  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

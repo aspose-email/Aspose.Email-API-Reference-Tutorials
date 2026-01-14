@@ -192,6 +192,12 @@ A: Processa poster i portioner, överväg parallella strömmar och se till att d
 
 Vi hoppas att denna handledning hjälper dig att utnyttja kraften i Aspose.Email för Java för att effektivt hantera dina Outlook‑kalenderdata. Lycka till med kodningen!
 
+---
+
+**Senast uppdaterad:** 2025-12-24  
+**Testad med:** Aspose.Email för Java 25.4 (jdk16)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ Vi hoppas att denna handledning hjälper dig att utnyttja kraften i Aspose.Email
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-24  
-**Testad med:** Aspose.Email för Java 25.4 (jdk16)  
-**Författare:** Aspose

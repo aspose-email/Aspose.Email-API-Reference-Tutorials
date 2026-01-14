@@ -194,6 +194,12 @@ O: Przetwarzaj elementy w partiach, rozważ użycie strumieni równoległych i p
 
 Mamy nadzieję, że ten samouczek pomoże Ci w pełni wykorzystać możliwości Aspose.Email dla Javy w zarządzaniu danymi kalendarza Outlook. Powodzenia w kodowaniu!
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-24  
+**Testowano z:** Aspose.Email for Java 25.4 (jdk16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -201,9 +207,3 @@ Mamy nadzieję, że ten samouczek pomoże Ci w pełni wykorzystać możliwości 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-24  
-**Testowano z:** Aspose.Email for Java 25.4 (jdk16)  
-**Autor:** Aspose

@@ -193,6 +193,12 @@ A: Öğeleri parçalar halinde işleyin, paralel akışları değerlendirin ve b
 
 Umarız bu öğretici, Aspose.Email for Java'ın gücünü kullanarak Outlook takvim verilerinizi etkili bir şekilde yönetmenize yardımcı olur. Kodlamanın tadını çıkarın!
 
+---
+
+**Son Güncelleme:** 2025-12-24  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (jdk16)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -200,9 +206,3 @@ Umarız bu öğretici, Aspose.Email for Java'ın gücünü kullanarak Outlook ta
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-24  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (jdk16)  
-**Yazar:** Aspose

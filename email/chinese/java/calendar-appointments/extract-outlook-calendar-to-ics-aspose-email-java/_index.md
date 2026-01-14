@@ -192,6 +192,12 @@ A: 将项目分块处理，考虑使用并行流，并确保及时释放 `Person
 
 我们希望本教程能帮助您充分利用 Aspose.Email for Java，有效管理 Outlook 日历数据。祝编码愉快！
 
+---
+
+**最后更新：** 2025-12-24  
+**测试环境：** Aspose.Email for Java 25.4 (jdk16)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ A: 将项目分块处理，考虑使用并行流，并确保及时释放 `Person
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-24  
-**测试环境：** Aspose.Email for Java 25.4 (jdk16)  
-**作者：** Aspose

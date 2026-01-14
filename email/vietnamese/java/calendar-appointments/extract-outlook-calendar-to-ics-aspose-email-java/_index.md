@@ -193,6 +193,12 @@ for (Object messageInfo : messageInfoCollection) {
 
 Chúng tôi hy vọng hướng dẫn này sẽ giúp bạn khai thác sức mạnh của Aspose.Email cho Java để quản lý dữ liệu lịch Outlook một cách hiệu quả. Chúc lập trình vui vẻ!
 
+---
+
+**Cập nhật lần cuối:** 2025-12-24  
+**Kiểm tra với:** Aspose.Email cho Java 25.4 (jdk16)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -200,9 +206,3 @@ Chúng tôi hy vọng hướng dẫn này sẽ giúp bạn khai thác sức mạ
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-24  
-**Kiểm tra với:** Aspose.Email cho Java 25.4 (jdk16)  
-**Tác giả:** Aspose
