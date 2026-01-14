@@ -6,7 +6,7 @@ keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: 'จัดการหมวดหมู่ Outlook ด้วย Aspose.Email สำหรับ Java: คู่มือฉบับสมบูรณ์'
+title: 'จัดการหมวดหมู่ Outlook ด้วย Aspose.Email สำหรับ Java - คู่มือฉบับสมบูรณ์'
 url: /th/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
 ---
@@ -219,6 +219,12 @@ A: คุณสามารถดึงรายการหมวดหมู�
 - **ลิขสิทธิ์ชั่วคราว**: https://purchase.aspose.com/temporary-license/
 - **สนับสนุน**: https://forum.aspose.com/c/email/10
 
+---
+
+**Last Updated:** 2025-12-22  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -226,9 +232,3 @@ A: คุณสามารถดึงรายการหมวดหมู�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-22  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose

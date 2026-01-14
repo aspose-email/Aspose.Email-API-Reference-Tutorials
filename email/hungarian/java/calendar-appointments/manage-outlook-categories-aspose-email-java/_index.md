@@ -7,7 +7,7 @@ keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: 'Outlook kategóriák kezelése az Aspose.Email for Java segítségével: Átfogó
+title: 'Outlook kategóriák kezelése az Aspose.Email for Java segítségével - Átfogó
   útmutató'
 url: /hu/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
@@ -215,6 +215,12 @@ A: A `FollowUpManager.getAllCategories()` metódussal lekérheti az alapértelme
 - **Ideiglenes licenc**: https://purchase.aspose.com/temporary-license/
 - **Támogatás**: https://forum.aspose.com/c/email/10
 
+---
+
+**Legutóbb frissítve:** 2025-12-22  
+**Tesztelve:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -222,9 +228,3 @@ A: A `FollowUpManager.getAllCategories()` metódussal lekérheti az alapértelme
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2025-12-22  
-**Tesztelve:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Szerző:** Aspose

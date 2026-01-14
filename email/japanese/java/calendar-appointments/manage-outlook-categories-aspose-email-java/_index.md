@@ -6,7 +6,7 @@ keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: Aspose.Email for JavaでOutlookカテゴリを管理する：包括的ガイド
+title: Aspose.Email for JavaでOutlookカテゴリを管理する - 包括的ガイド
 url: /ja/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
 ---
@@ -175,33 +175,42 @@ Aspose.Email を Java プロジェクトに統合するには、以下の Maven 
 Outlook のカテゴリ管理を試してみませんか？本日からこれらのソリューションを実装し、メール整理の効果を体感してください！
 
 ## FAQ セクション
-**Q1: Can I use Aspose.Email for Java on any platform?**  
+**Q1:​​ Aspose.Email for Java はどのプラットフォームでも使用できますか？**
+ 
 A1: はい、環境が JDK 16 以上をサポートしていれば問題ありません。
 
-**Q2: How do I handle errors while adding categories?**  
+**Q2: カテゴリ追加時のエラーはどのように処理すればよいですか？**
+ 
 A2: カテゴリ名が有効な文字列であることを確認し、例外処理で予期しない問題に対処してください。
 
-**Q3: Is there a limit on the number of categories I can add?**  
+**Q3: 追加できるカテゴリ数に制限はありますか？**
+  
 A3: Outlook は通常、メッセージあたり最大 10 個のカテゴリをサポートしていますが、最新の Microsoft ガイドラインを参照してください。
 
-**Q4: How do I ensure high performance when processing large email volumes?**  
+**Q4: 大量のメールを処理する際に、高いパフォーマンスを確保するにはどうすればよいですか？**
+ 
 A4: 効率的なメモリ管理とバッチ処理を実装して、パフォーマンスを最適化します。
 
-**Q5: Where can I find more documentation on Aspose.Email features?**  
+**Q5: Aspose.Email の機能に関する詳細なドキュメントはどこで入手できますか？**
+  
 A5: 詳細なガイドと API リファレンスは、[Aspose Email Documentation](https://reference.aspose.com/email/java/) をご覧ください。
 
 ## 追加のよくある質問
 
-**Q: Does Aspose.Email support other email formats like EML or PST?**  
+**Q: Aspose.Email は EML や PST などの他のメール形式をサポートしていますか？**
+ 
 A: はい、ライブラリは EML、MSG、PST などの一般的な形式の読み書きが可能です。
 
-**Q: Can I programmatically assign colors to categories?**  
+**Q: プログラムでカテゴリに色を割り当てることはできますか？**
+  
 A: カテゴリの色は Outlook が管理します。カテゴリ名を設定すれば、Outlook が既存の色を適用します。
 
-**Q: How do I work with categories in a multi‑threaded environment?**  
+**Q: マルチスレッド環境でカテゴリを操作するにはどうすればよいですか？**
+
 A: スレッドごとに `MapiMessage` インスタンスを作成するか、共有オブジェクトへのアクセスを同期して競合を防止してください。
 
-**Q: Is there a way to list all available categories in the Outlook profile?**  
+**Q: Outlook プロファイルで利用可能なすべてのカテゴリを一覧表示する方法はありますか？**
+ 
 A: `FollowUpManager.getAllCategories()` メソッド（新しいバージョンで利用可能）を使用して、デフォルトのカテゴリ一覧を取得できます。
 
 ## リソース
@@ -212,6 +221,12 @@ A: `FollowUpManager.getAllCategories()` メソッド（新しいバージョン�
 - **Temporary License**: https://purchase.aspose.com/temporary-license/
 - **Support**: https://forum.aspose.com/c/email/10
 
+---
+
+**最終更新日:** 2025-12-22  
+**テスト環境:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -219,9 +234,3 @@ A: `FollowUpManager.getAllCategories()` メソッド（新しいバージョン�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-22  
-**テスト環境:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**作者:** Aspose

@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email for Java
 - Exchange server pagination
 - Java EWSClient
-title: 'Java-Paginierung – Best Practices: Paginierte Termine mit Aspose.Email für
+title: 'Java-Paginierung – Best Practices - Paginierte Termine mit Aspose.Email für
   Exchange-Server implementieren'
 url: /de/java/calendar-appointments/java-aspose-email-paginated-appointments/
 weight: 1

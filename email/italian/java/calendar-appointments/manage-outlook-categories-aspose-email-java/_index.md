@@ -7,7 +7,7 @@ keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: 'Gestire le categorie di Outlook con Aspose.Email per Java: una guida completa'
+title: 'Gestire le categorie di Outlook con Aspose.Email per Java - una guida completa'
 url: /it/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
 ---
@@ -220,6 +220,12 @@ A: Puoi recuperare l'elenco predefinito di categorie tramite il metodo `FollowUp
 - **Temporary License**: https://purchase.aspose.com/temporary-license/
 - **Support**: https://forum.aspose.com/c/email/10
 
+---
+
+**Ultimo aggiornamento:** 2025-12-22  
+**Testato con:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -227,9 +233,3 @@ A: Puoi recuperare l'elenco predefinito di categorie tramite il metodo `FollowUp
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2025-12-22  
-**Testato con:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Autore:** Aspose

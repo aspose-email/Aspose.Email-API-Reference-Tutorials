@@ -1,5 +1,5 @@
 ---
-title: "Manage Outlook Categories with Aspose.Email for Java: A Comprehensive Guide"
+title: "Manage Outlook Categories with Aspose.Email for Java - A Comprehensive Guide"
 description: "Learn how to manage outlook categories and remove outlook category tags using Aspose.Email for Java. This guide also shows how to clear all outlook categories programmatically."
 date: "2025-12-22"
 weight: 1
@@ -218,6 +218,12 @@ A: You can retrieve the default category list via the `FollowUpManager.getAllCat
 - **Temporary License**: https://purchase.aspose.com/temporary-license/
 - **Support**: https://forum.aspose.com/c/email/10
 
+---
+
+**Last Updated:** 2025-12-22  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -225,9 +231,3 @@ A: You can retrieve the default category list via the `FollowUpManager.getAllCat
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-22  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose
