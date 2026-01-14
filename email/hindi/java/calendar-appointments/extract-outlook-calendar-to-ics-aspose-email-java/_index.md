@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "जानें कि Aspose.Email for Java का उपयोग करके Outlook PST कैलेंडर आइटम को ICS फ़ॉर्मेट में कुशलतापूर्वक कैसे परिवर्तित किया जाए। यह ट्यूटोरियल सेटअप, निष्कर्षण और सहेजने की प्रक्रियाओं को कवर करता है।"
-"title": "जावा के लिए Aspose.Email का उपयोग करके Outlook कैलेंडर आइटम को ICS में कैसे परिवर्तित करें"
-"url": "/hi/java/calendar-appointments/extract-outlook-calendar-to-ics-aspose-email-java/"
-"weight": 1
+date: '2025-12-24'
+description: Aspose.Email for Java का उपयोग करके Outlook कैलेंडर आइटम को ICS में निकालना
+  सीखें, जिसमें सेटअप, निष्कर्षण और कैलेंडर को ics के रूप में सहेजना शामिल है।
+keywords:
+- Outlook Calendar to ICS
+- Aspose.Email for Java
+- PST to ICS conversion
+title: Aspose.Email for Java का उपयोग करके Outlook कैलेंडर आइटम्स को ICS में कैसे
+  निकालें
+url: /hi/java/calendar-appointments/extract-outlook-calendar-to-ics-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,37 +17,48 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# जावा के लिए Aspose.Email का उपयोग करके Outlook कैलेंडर आइटम को ICS में कैसे परिवर्तित करें
+# Aspose.Email for Java का उपयोग करके Outlook कैलेंडर आइटम्स को ICS में निकालने का तरीका
 
-## परिचय
+## Introduction
 
-अपनी कैलेंडर प्रविष्टियों को प्रभावी ढंग से प्रबंधित करना, अपॉइंटमेंट छूटने से बचने और समय बचाने के लिए महत्वपूर्ण है। यदि आप Microsoft Outlook PST फ़ाइलों के साथ काम करते हैं, तो कैलेंडर आइटम को ICS जैसे सार्वभौमिक रूप से संगत प्रारूप में परिवर्तित करना अमूल्य हो सकता है। यह ट्यूटोरियल आपको Outlook PST फ़ाइल लोड करने और इसकी कैलेंडर प्रविष्टियों को ICS प्रारूप में बदलने के लिए Aspose.Email for Java का उपयोग करने के बारे में मार्गदर्शन करेगा।
+अपने कैलेंडर एंट्रीज़ को प्रभावी ढंग से प्रबंधित करना मिस्ड अपॉइंटमेंट्स से बचने और समय बचाने के लिए महत्वपूर्ण है। यदि आप Microsoft Outlook PST फ़ाइलों के साथ काम करते हैं, तो **extract outlook calendar** आइटम्स को एक सार्वभौमिक रूप से संगत फ़ॉर्मेट जैसे ICS में बदलना बहुत उपयोगी हो सकता है। यह ट्यूटोरियल आपको Aspose.Email for Java का उपयोग करके Outlook PST फ़ाइल लोड करने और उसके कैलेंडर एंट्रीज़ को **save calendar as ics** फ़ॉर्मेट में बदलने की प्रक्रिया दिखाएगा।
 
-**आप क्या सीखेंगे:**
-- PST फ़ाइलों तक पहुँचने और उनमें हेरफेर करने के लिए Java के लिए Aspose.Email का उपयोग कैसे करें।
-- PST फ़ाइल से कैलेंडर प्रविष्टियाँ निकालने के चरण.
-- विभिन्न प्लेटफार्मों पर आसानी से साझा करने के लिए इन प्रविष्टियों को आईसीएस प्रारूप में सहेजने की तकनीकें।
-- सेटअप और प्रदर्शन अनुकूलन के लिए सर्वोत्तम अभ्यास.
+**What You'll Learn**
+- Aspose.Email for Java का उपयोग करके PST फ़ाइलों तक पहुंचना और उन्हें संशोधित करना।  
+- PST फ़ाइल से कैलेंडर एंट्रीज़ निकालने के चरण।  
+- **export calendar to ics** और **backup outlook calendar ics** तकनीकों को प्लेटफ़ॉर्म के बीच आसान शेयरिंग के लिए।  
+- सेटअप, प्रदर्शन, और ट्रबलशूटिंग के लिए सर्वोत्तम प्रथाएँ।  
 
-आइये, अपने परिवेश को स्थापित करने और इस सुविधा को क्रियान्वित करने की प्रक्रिया में आगे बढ़ें!
+आइए अपने वातावरण को सेटअप करने और इस फीचर को लागू करने में डुबकी लगाएँ!
 
-## आवश्यक शर्तें
+## Quick Answers
+- **What does “extract outlook calendar” mean?** इसका अर्थ है Outlook PST फ़ाइल से कैलेंडर आइटम्स पढ़ना और उन्हें एक पोर्टेबल फ़ॉर्मेट में बदलना।  
+- **Which library should I use?** Aspose.Email for Java PST हैंडलिंग और iCalendar एक्सपोर्ट के लिए एक सरल API प्रदान करता है।  
+- **Do I need a license?** मूल्यांकन के लिए एक फ्री ट्रायल काम करता है; प्रोडक्शन के लिए एक कमर्शियल लाइसेंस आवश्यक है।  
+- **Can I batch‑process many items?** हाँ—फ़ोल्डर की सामग्री पर लूप करें और प्रत्येक आइटम को *.ics* फ़ाइल के रूप में सहेजें।  
+- **What Java version is required?** नवीनतम Aspose.Email रिलीज़ के लिए JDK 16 या उससे ऊपर की सिफ़ारिश की जाती है।
 
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास:
-1. **जावा डेवलपमेंट किट (JDK):** संस्करण 16 या उच्चतर अनुशंसित है।
-2. **Aspose.ईमेल लाइब्रेरी:** सुनिश्चित करें कि संस्करण 25.4 Maven के माध्यम से या सीधे आपके प्रोजेक्ट में स्थापित किया गया है।
-3. **आईडीई सेटअप:** जावा विकास के लिए IntelliJ IDEA या Eclipse जैसे IDE का उपयोग करें।
+## What is “extract outlook calendar”?
 
-### ज्ञान पूर्वापेक्षाएँ
-- जावा प्रोग्रामिंग की बुनियादी समझ.
-- जावा में फ़ाइलों और निर्देशिकाओं को संभालने की जानकारी।
+Outlook कैलेंडर आइटम्स को निकालना मतलब PST फ़ाइल के अंदर `Calendar` फ़ोल्डर को पढ़ना, प्रत्येक `MapiCalendar` ऑब्जेक्ट को iCalendar (`.ics`) फ़ॉर्मेट में बदलना। यह फ़ॉर्मेट Google Calendar, Apple Calendar, और लगभग सभी आधुनिक शेड्यूलिंग एप्लिकेशन द्वारा समर्थित है।
 
-## Java के लिए Aspose.Email सेट अप करना
+## Why use Aspose.Email for Java?
 
-आरंभ करने के लिए, आपको अपने प्रोजेक्ट में Aspose.Email लाइब्रेरी को एकीकृत करना होगा। यहाँ बताया गया है कि कैसे:
+Aspose.Email जटिल MAPI संरचनाओं को एक साफ़, ऑब्जेक्ट‑ओरिएंटेड API के पीछे छुपाता है। यह PST पार्सिंग, टाइमज़ोन परिवर्तन, और iCalendar सीरियलाइज़ेशन को बिना लो‑लेवल कोड लिखे संभालता है। यह उन **java convert pst ics** परिदृश्यों के लिए आदर्श बनाता है जहाँ विश्वसनीयता और गति महत्वपूर्ण हैं।
 
-**मावेन सेटअप:**
-अपने में निम्नलिखित निर्भरता जोड़ें `pom.xml` फ़ाइल:
+## Prerequisites
+
+- **Java Development Kit (JDK):** संस्करण 16 या उससे ऊपर।  
+- **Aspose.Email Library:** संस्करण 25.4 या बाद का (Maven के माध्यम से स्थापित)।  
+- **IDE:** IntelliJ IDEA, Eclipse, या कोई भी Java‑संगत IDE।  
+
+### Knowledge Prerequisites
+- बेसिक Java प्रोग्रामिंग।  
+- Java में फ़ाइल I/O की परिचितता।
+
+## Setting Up Aspose.Email for Java
+
+To get started, integrate the Aspose.Email library into your Maven project.
 
 ```xml
 <dependency>
@@ -52,12 +69,12 @@
 </dependency>
 ```
 
-### लाइसेंस अधिग्रहण
-- **मुफ्त परीक्षण:** Aspose.Email सुविधाओं का पता लगाने के लिए एक निःशुल्क परीक्षण के साथ शुरुआत करें।
-- **अस्थायी लाइसेंस:** विस्तारित परीक्षण के लिए, अस्थायी लाइसेंस का अनुरोध करें.
-- **खरीदना:** यदि संतुष्ट हों तो पूर्ण पहुँच के लिए खरीदारी पर विचार करें।
+### License Acquisition
+- **Free Trial:** बिना लागत के API का अन्वेषण करें।  
+- **Temporary License:** विस्तारित परीक्षण के लिए एक शॉर्ट‑टर्म की का अनुरोध करें।  
+- **Purchase:** प्रोडक्शन उपयोग के लिए पूर्ण लाइसेंस प्राप्त करें।
 
-एक बार जब आप लाइब्रेरी स्थापित कर लें और आपकी लाइसेंसिंग व्यवस्थित हो जाए, तो आइए इसे अपने जावा वातावरण में आरंभ करें:
+लाइब्रेरी जोड़ने के बाद, अपने Java कोड में इसे इनिशियलाइज़ करें:
 
 ```java
 import com.aspose.email.PersonalStorage;
@@ -66,54 +83,43 @@ import com.aspose.email.Utils;
 String dataDir = Utils.getSharedDataDir(SaveCalendarItemsFromOutlookPSTToDiskInICSFormat.class) + "outlook/";
 ```
 
-## कार्यान्वयन मार्गदर्शिका
+## Implementation Guide
 
-### Outlook PST फ़ाइल लोड करें
+### Load Outlook PST File
 
-**अवलोकन:**
-Aspose.Email लाइब्रेरी का उपयोग करके अपनी Outlook PST फ़ाइल लोड करके प्रारंभ करें।
-
-#### चरण 1: आवश्यक कक्षाएं आयात करें
+#### Step 1: Import Required Classes
 
 ```java
 import com.aspose.email.PersonalStorage;
 import com.aspose.email.Utils;
 ```
 
-#### चरण 2: PST फ़ाइल लोड करें
+#### Step 2: Load the PST File
 
 ```java
 String dataDir = Utils.getSharedDataDir(SaveCalendarItemsFromOutlookPSTToDiskInICSFormat.class) + "outlook/";
 PersonalStorage pst = PersonalStorage.fromFile(dataDir + "YOUR_DOCUMENT_DIRECTORY/Outlook.pst");
 ```
 
-यहाँ, `dataDir` वह आपका डायरेक्टरी पथ है जहाँ PST फ़ाइल स्थित है। समायोजित करें `"YOUR_DOCUMENT_DIRECTORY"` अपने वास्तविक फ़ोल्डर संरचना से मेल खाने के लिए।
+> **Pro tip:** `YOUR_DOCUMENT_DIRECTORY` को उस वास्तविक फ़ोल्डर से बदलें जिसमें आपका PST फ़ाइल है।
 
-### कैलेंडर फ़ोल्डर तक पहुँचें
+### Access Calendar Folder
 
-**अवलोकन:**
-कैलेंडर आइटम पुनः प्राप्त करने के लिए लोड की गई PST फ़ाइल के भीतर 'कैलेंडर' फ़ोल्डर तक पहुँचें।
-
-#### चरण 1: आवश्यक कक्षाएं आयात करें
+#### Step 1: Import Required Classes
 
 ```java
 import com.aspose.email.FolderInfo;
 ```
 
-#### चरण 2: कैलेंडर फ़ोल्डर पुनः प्राप्त करें
+#### Step 2: Retrieve the Calendar Folder
 
 ```java
 FolderInfo calendarFolder = pst.getRootFolder().getSubFolder("Calendar");
 ```
 
-यह चरण आपकी PST फ़ाइल में नेविगेट करके 'कैलेंडर' फ़ोल्डर ढूंढ़ता है और उसका चयन करता है।
+### Extract and Save Calendar Items to ICS Format
 
-### कैलेंडर आइटम को ICS प्रारूप में निकालें और सहेजें
-
-**अवलोकन:**
-'कैलेंडर' फ़ोल्डर से प्रत्येक कैलेंडर आइटम को निकालें और उन्हें सार्वभौमिक उपयोग के लिए आईसीएस प्रारूप में सहेजें।
-
-#### चरण 1: आवश्यक कक्षाएं आयात करें
+#### Step 1: Import Required Classes
 
 ```java
 import com.aspose.email.MessageInfoCollection;
@@ -121,67 +127,77 @@ import com.aspose.email.MapiCalendar;
 import com.aspose.email.AppointmentSaveFormat;
 ```
 
-#### चरण 2: कैलेंडर आइटम निकालें
+#### Step 2: Extract Calendar Items
 
 ```java
 MessageInfoCollection messageInfoCollection = calendarFolder.getContents();
 
 for (Object messageInfo : messageInfoCollection) {
-    // प्रत्येक आइटम को MapiCalendar में बदलें
+    // Convert each item to MapiCalendar
     MapiCalendar calendar = (MapiCalendar) pst.extractMessage((com.aspose.email.MessageInfo) messageInfo).toMapiMessageItem();
     
-    // आइटम को ICS प्रारूप में सहेजें
+    // Save the item in ICS format
     String outputDirectory = "YOUR_OUTPUT_DIRECTORY";
     calendar.save(outputDirectory + "/Calendar: " + calendar.getSubject() + ".ics", AppointmentSaveFormat.Ics);
 }
 ```
 
-यहाँ, `outputDirectory` ICS फ़ाइलों को सहेजने के लिए आपके इच्छित स्थान पर सेट किया जाना चाहिए। प्रत्येक फ़ाइल का नाम कैलेंडर आइटम के विषय के नाम पर रखा गया है।
+> **Note:** `outputDirectory` को एक लिखने योग्य फ़ोल्डर की ओर इंगित करना चाहिए जहाँ आप `.ics` फ़ाइलें सहेजना चाहते हैं।
 
-### समस्या निवारण युक्तियों
-- **फ़ाइल एक्सेस संबंधी समस्याएं:** सुनिश्चित करें कि आपके जावा अनुप्रयोग में सम्मिलित निर्देशिकाओं के लिए पढ़ने/लिखने की अनुमति है।
-- **लाइब्रेरी संगतता:** सत्यापित करें कि Aspose.Email संस्करण 25.4 आपके JDK संस्करण के साथ सही ढंग से एकीकृत और संगत है।
+## Troubleshooting Tips
+- **File Access Issues:** PST स्रोत और आउटपुट डायरेक्टरी दोनों के लिए पढ़ने/लिखने की अनुमतियों की जाँच करें।  
+- **Library Compatibility:** सुनिश्चित करें कि Aspose.Email संस्करण आपके JDK से मेल खाता है (उदाहरण के लिए, JDK 16 के लिए `jdk16` क्लासिफ़ायर)।  
+- **Large PST Files:** आइटम्स को छोटे बैच में प्रोसेस करें या मेमोरी दबाव कम करने के लिए स्ट्रीमिंग API का उपयोग करें।
 
-## व्यावहारिक अनुप्रयोगों
+## Practical Applications
 
-1. **क्रॉस-प्लेटफ़ॉर्म कैलेंडर साझाकरण:** ICS फ़ाइलों का उपयोग करके विभिन्न डिवाइसों और प्लेटफ़ॉर्मों पर कैलेंडर ईवेंट साझा करें।
-2. **बैकअप और अभिलेखीकरण:** दीर्घकालिक भंडारण के लिए मानकीकृत प्रारूप में कैलेंडर प्रविष्टियों का बैकअप बनाए रखें।
-3. **अन्य प्रणालियों के साथ एकीकरण:** कैलेंडर डेटा का समर्थन करने वाले अन्य व्यावसायिक उपकरणों या CRM में फीड करने के लिए निकाली गई ICS फ़ाइलों का उपयोग करें।
+1. **Cross‑Platform Calendar Sharing:** इवेंट्स को `.ics` में एक्सपोर्ट करें और उन्हें Google Calendar, Apple Calendar, या किसी भी iCalendar‑संगत ऐप में इम्पोर्ट करें।  
+2. **Backup and Archival:** दीर्घकालिक संग्रह या अनुपालन आवश्यकताओं के लिए **Backup outlook calendar ics** फ़ाइलें बनाएं।  
+3. **Integration with Business Systems:** एक्सपोर्ट की गई `.ics` फ़ाइलों को CRMs, ERP सिस्टम, या कस्टम शेड्यूलिंग सर्विसेज में फीड करें।
 
-## प्रदर्शन संबंधी विचार
-- **फ़ाइल एक्सेस अनुकूलित करें:** जहां संभव हो, बैचिंग ऑपरेशन द्वारा पढ़ने/लिखने की संख्या को सीमित करें।
-- **स्मृति प्रबंधन:** मेमोरी लीक को रोकने के लिए फ़ाइल संचालन के बाद उचित संसाधन निपटान सुनिश्चित करें।
+## Performance Considerations
+- **Batch Operations:** संभव हो तो सेव्स को समूहित करके डिस्क I/O को न्यूनतम करें।  
+- **Resource Disposal:** प्रोसेसिंग के बाद `pst.dispose()` कॉल करके नेटिव रिसोर्सेज़ को मुक्त करें।  
 
-## निष्कर्ष
+## Common Issues and Solutions
+| समस्या | समाधान |
+|-------|----------|
+| **Permission denied** फ़ाइलों को सहेजते समय | JVM को उचित OS अनुमतियों के साथ चलाएँ या कोई अलग आउटपुट पाथ चुनें। |
+| **कोई कैलेंडर आइटम नहीं मिला** | पुष्टि करें कि PST में वास्तव में `Calendar` फ़ोल्डर है और वह खाली नहीं है। |
+| **गलत टाइम ज़ोन** | यदि आपको विशिष्ट ज़ोन लागू करना है तो सहेजने से पहले `calendar.setTimeZone()` का उपयोग करें। |
 
-इस गाइड का पालन करके, आपने सीखा है कि आउटलुक PST फ़ाइल को कुशलतापूर्वक कैसे लोड किया जाए, कैलेंडर आइटम कैसे निकाले जाएँ, और उन्हें Aspose.Email for Java का उपयोग करके ICS फ़ॉर्मेट में कैसे सेव किया जाए। यह कौशल कैलेंडर डेटा को प्लेटफ़ॉर्म पर सहजता से प्रबंधित और साझा करने की आपकी क्षमता को बढ़ाता है। इन कौशलों को बड़े अनुप्रयोगों में एकीकृत करके या नियमित कार्यों को स्वचालित करके आगे की खोज करें।
+## Frequently Asked Questions
 
-## अक्सर पूछे जाने वाले प्रश्न अनुभाग
+**Q: ICS फ़ाइलों का मुख्य उपयोग क्या है?**  
+A: ICS फ़ाइलें कैलेंडर इवेंट जानकारी को एक मानकीकृत, क्रॉस‑प्लेटफ़ॉर्म फ़ॉर्मेट में संग्रहीत करती हैं जिसे लगभग सभी कैलेंडर एप्लिकेशन इम्पोर्ट कर सकते हैं।
 
-1. **आईसीएस फाइलों का प्राथमिक उपयोग क्या है?**
-   - आईसीएस फाइलों का उपयोग कैलेंडर ईवेंट जानकारी को मानकीकृत प्रारूप में संग्रहीत करने के लिए किया जाता है, जिसे विभिन्न कैलेंडर अनुप्रयोगों में साझा किया जा सकता है।
+**Q: मैं Aspose.Email लाइब्रेरी संस्करण कैसे अपडेट करूँ?**  
+A: अपने `pom.xml` में `<version>` टैग को इच्छित संस्करण में बदलें और `mvn clean install` चलाकर डिपेंडेंसीज़ को रीफ़्रेश करें।
 
-2. **मैं अपना Aspose.Email लाइब्रेरी संस्करण कैसे अपडेट करूं?**
-   - अपना अपडेट करें `pom.xml` नए संस्करण संख्या के साथ और अपने वर्तमान JDK सेटअप के साथ संगतता सुनिश्चित करें।
+**Q: क्या मैं उसी दृष्टिकोण से अन्य PST फ़ोल्डर (जैसे Inbox, Contacts) निकाल सकता हूँ?**  
+A: हाँ—सिर्फ `"Calendar"` को `getSubFolder()` कॉल में लक्ष्य फ़ोल्डर नाम से बदल दें।
 
-3. **क्या मैं इस विधि का उपयोग करके PST फ़ाइल से अन्य फ़ोल्डर प्रकार निकाल सकता हूँ?**
-   - हां, आप 'इनबॉक्स' या 'संपर्क' जैसे विभिन्न फ़ोल्डरों तक पहुंचने के लिए कोड को संशोधित कर सकते हैं। `getSubFolder()` पैरामीटर.
+**Q: मेरी PST फ़ाइल पासवर्ड‑प्रोटेक्टेड है। मुझे क्या करना चाहिए?**  
+A: एन्क्रिप्टेड PST फ़ाइलें खोलने के लिए `PersonalStorage.fromFile(path, password)` का उपयोग करें; एन्क्रिप्शन हैंडलिंग के लिए Aspose.Email दस्तावेज़ देखें।
 
-4. **यदि मेरी PST फ़ाइल पासवर्ड से सुरक्षित है तो मुझे क्या करना चाहिए?**
-   - एन्क्रिप्टेड फ़ाइलों को संभालने के लिए Aspose.Email की क्षमताओं का उपयोग करके फ़ाइल को अनलॉक करने के लिए आपको अतिरिक्त चरणों की आवश्यकता हो सकती है।
+**Q: मैं बहुत बड़ी PST फ़ाइलों को प्रभावी ढंग से कैसे प्रोसेस करूँ?**  
+A: आइटम्स को चंक्स में प्रोसेस करें, पैरलल स्ट्रीम्स पर विचार करें, और मेमोरी लीक से बचने के लिए `PersonalStorage` ऑब्जेक्ट्स को तुरंत डिस्पोज़ करें।
 
-5. **मैं बड़ी PST फ़ाइलों को कुशलतापूर्वक कैसे संभाल सकता हूँ?**
-   - मेमोरी उपयोग को प्रबंधित करने और प्रदर्शन में सुधार करने के लिए खंडों में प्रसंस्करण या समानांतर संचालन पर विचार करें।
+## Resources
+- **Documentation:** [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- **Download Library:** [Aspose Email for Java Release Downloads](https://releases.aspose.com/email/java/)
+- **Purchase License:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **Free Trial:** [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
+- **Temporary License:** [Request Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Support Forum:** [Aspose Email Support](https://forum.aspose.com/c/email/10)
 
-## संसाधन
-- **दस्तावेज़ीकरण:** [Aspose.Email जावा दस्तावेज़ीकरण](https://reference.aspose.com/email/java/)
-- **डाउनलोड लाइब्रेरी:** [जावा रिलीज़ डाउनलोड के लिए Aspose ईमेल](https://releases.aspose.com/email/java/)
-- **क्रय लाइसेंस:** [Aspose.Email खरीदें](https://purchase.aspose.com/buy)
-- **मुफ्त परीक्षण:** [Aspose.Email को निःशुल्क आज़माएँ](https://releases.aspose.com/email/java/)
-- **अस्थायी लाइसेंस:** [अस्थायी लाइसेंस का अनुरोध करें](https://purchase.aspose.com/temporary-license/)
-- **सहयता मंच:** [Aspose ईमेल समर्थन](https://forum.aspose.com/c/email/10)
+We hope this tutorial helps you harness the power of Aspose.Email for Java to manage your Outlook calendar data effectively. Happy coding!
 
-हमें उम्मीद है कि यह ट्यूटोरियल आपको अपने Outlook कैलेंडर डेटा को प्रभावी ढंग से प्रबंधित करने के लिए Aspose.Email for Java की शक्ति का उपयोग करने में मदद करेगा। हैप्पी कोडिंग!
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
