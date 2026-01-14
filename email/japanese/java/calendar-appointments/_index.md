@@ -83,6 +83,12 @@ Aspose.Email for Java を使用して Outlook テンプレートを管理する�
 - [無料サポート](https://forum.aspose.com/)
 - [一時ライセンス](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**最終更新日:** 2025-12-18  
+**テスト済み:** Aspose.Email for Java 24.12  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -90,9 +96,3 @@ Aspose.Email for Java を使用して Outlook テンプレートを管理する�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-18  
-**テスト済み:** Aspose.Email for Java 24.12  
-**作者:** Aspose

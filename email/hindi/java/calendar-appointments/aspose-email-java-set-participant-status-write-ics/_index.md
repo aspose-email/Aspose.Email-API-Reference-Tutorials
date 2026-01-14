@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email Java
 - set participant status in Java
 - write ICS files with Java
-title: 'Aspose.Email Java में महारत: प्रतिभागी स्थिति सेट करें और आईसीएस फ़ाइलें कुशलता
+title: 'Aspose.Email Java में महारत - प्रतिभागी स्थिति सेट करें और आईसीएस फ़ाइलें कुशलता
   से लिखें'
 url: /hi/java/calendar-appointments/aspose-email-java-set-participant-status-write-ics/
 weight: 1

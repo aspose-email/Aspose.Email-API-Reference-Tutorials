@@ -50,6 +50,12 @@ weight: 5
 - [Бесплатная поддержка](https://forum.aspose.com/)
 - [Временная лицензия](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Последнее обновление:** 2025-12-18  
+**Тестировано с:** Aspose.Email for Java 24.12  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -57,9 +63,3 @@ weight: 5
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2025-12-18  
-**Тестировано с:** Aspose.Email for Java 24.12  
-**Автор:** Aspose

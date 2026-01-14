@@ -85,6 +85,12 @@ Aspose.Email for Java के साथ Outlook टेम्पलेट्स �
 - [मुफ़्त समर्थन](https://forum.aspose.com/)
 - [अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**अंतिम अपडेट:** 2025-12-18  
+**परीक्षण किया गया:** Aspose.Email for Java 24.12  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Aspose.Email for Java के साथ Outlook टेम्पलेट्स �
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2025-12-18  
-**परीक्षण किया गया:** Aspose.Email for Java 24.12  
-**लेखक:** Aspose

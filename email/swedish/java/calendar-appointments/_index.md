@@ -85,6 +85,12 @@ Lär dig att hantera Outlook‑mallar med Aspose.Email för Java. Denna handledn
 - [Gratis support](https://forum.aspose.com/)
 - [Tillfällig licens](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Senast uppdaterad:** 2025-12-18  
+**Testad med:** Aspose.Email för Java 24.12  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Lär dig att hantera Outlook‑mallar med Aspose.Email för Java. Denna handledn
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2025-12-18  
-**Testad med:** Aspose.Email för Java 24.12  
-**Författare:** Aspose

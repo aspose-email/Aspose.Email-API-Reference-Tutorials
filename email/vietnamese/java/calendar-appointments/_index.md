@@ -84,6 +84,12 @@ Tìm hiểu cách quản lý các mẫu Outlook với Aspose.Email cho Java. Hư
 - [Hỗ trợ miễn phí](https://forum.aspose.com/)
 - [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Cập nhật lần cuối:** 2025-12-18  
+**Kiểm tra với:** Aspose.Email cho Java 24.12  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -91,9 +97,3 @@ Tìm hiểu cách quản lý các mẫu Outlook với Aspose.Email cho Java. Hư
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-18  
-**Kiểm tra với:** Aspose.Email cho Java 24.12  
-**Tác giả:** Aspose

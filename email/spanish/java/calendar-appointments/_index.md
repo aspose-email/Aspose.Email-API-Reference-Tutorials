@@ -85,6 +85,12 @@ Aprenda a gestionar plantillas de Outlook con Aspose.Email para Java. Este tutor
 - [Soporte Gratuito](https://forum.aspose.com/)
 - [Licencia Temporal](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Última actualización:** 2025-12-18  
+**Probado con:** Aspose.Email para Java 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Aprenda a gestionar plantillas de Outlook con Aspose.Email para Java. Este tutor
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2025-12-18  
-**Probado con:** Aspose.Email para Java 24.12  
-**Autor:** Aspose

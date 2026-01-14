@@ -84,6 +84,12 @@ weight: 5
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**آخر تحديث:** 2025-12-18  
+**تم الاختبار مع:** Aspose.Email للـ Java 24.12  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -91,9 +97,3 @@ weight: 5
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-18  
-**تم الاختبار مع:** Aspose.Email للـ Java 24.12  
-**المؤلف:** Aspose

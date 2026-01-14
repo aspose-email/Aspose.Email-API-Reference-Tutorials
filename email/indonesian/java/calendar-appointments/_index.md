@@ -85,6 +85,12 @@ Pelajari cara mengelola template Outlook dengan Aspose.Email untuk Java. Tutoria
 - [Dukungan Gratis](https://forum.aspose.com/)
 - [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Terakhir Diperbarui:** 2025-12-18  
+**Diuji Dengan:** Aspose.Email untuk Java 24.12  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Pelajari cara mengelola template Outlook dengan Aspose.Email untuk Java. Tutoria
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-18  
-**Diuji Dengan:** Aspose.Email untuk Java 24.12  
-**Penulis:** Aspose

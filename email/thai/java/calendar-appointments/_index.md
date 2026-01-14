@@ -84,6 +84,12 @@ weight: 5
 - [การสนับสนุนฟรี](https://forum.aspose.com/)
 - [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-18  
+**ทดสอบด้วย:** Aspose.Email for Java 24.12  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -91,9 +97,3 @@ weight: 5
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-18  
-**ทดสอบด้วย:** Aspose.Email for Java 24.12  
-**ผู้เขียน:** Aspose

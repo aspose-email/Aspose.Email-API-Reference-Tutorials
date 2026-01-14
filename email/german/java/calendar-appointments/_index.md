@@ -67,6 +67,12 @@ In diesem Abschnitt heben wir hervor, warum das programmgesteuerte Erstellen von
 - [Kostenloser Support](https://forum.aspose.com/)
 - [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Zuletzt aktualisiert:** 2025-12-18  
+**Getestet mit:** Aspose.Email für Java 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -74,9 +80,3 @@ In diesem Abschnitt heben wir hervor, warum das programmgesteuerte Erstellen von
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-12-18  
-**Getestet mit:** Aspose.Email für Java 24.12  
-**Autor:** Aspose

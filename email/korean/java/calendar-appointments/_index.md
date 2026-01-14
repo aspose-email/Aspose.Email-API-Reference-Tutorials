@@ -49,6 +49,12 @@ Aspose.Email for Java를 사용하여 **create calendar invitation java** 애플
 - [무료 지원](https://forum.aspose.com/)
 - [임시 라이선스](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**마지막 업데이트:** 2025-12-18  
+**테스트 환경:** Aspose.Email for Java 24.12  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -56,9 +62,3 @@ Aspose.Email for Java를 사용하여 **create calendar invitation java** 애플
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-18  
-**테스트 환경:** Aspose.Email for Java 24.12  
-**작성자:** Aspose

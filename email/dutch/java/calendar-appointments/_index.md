@@ -85,6 +85,12 @@ Leer hoe u Outlook‑sjablonen kunt beheren met Aspose.Email voor Java. Deze tut
 - [Gratis ondersteuning](https://forum.aspose.com/)
 - [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Laatst bijgewerkt:** 2025-12-18  
+**Getest met:** Aspose.Email voor Java 24.12  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Leer hoe u Outlook‑sjablonen kunt beheren met Aspose.Email voor Java. Deze tut
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-18  
-**Getest met:** Aspose.Email voor Java 24.12  
-**Auteur:** Aspose

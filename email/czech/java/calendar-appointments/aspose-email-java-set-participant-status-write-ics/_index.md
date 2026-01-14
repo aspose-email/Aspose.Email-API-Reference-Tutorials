@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email Java
 - set participant status in Java
 - write ICS files with Java
-title: 'Mistrovství Aspose.Email Java: Nastavte stav účastníka a efektivně zapisujte
+title: 'Mistrovství Aspose.Email Java - Nastavte stav účastníka a efektivně zapisujte
   soubory ICS'
 url: /cs/java/calendar-appointments/aspose-email-java-set-participant-status-write-ics/
 weight: 1

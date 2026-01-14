@@ -1,5 +1,5 @@
 ---
-title: "Master Aspose.Email Java: Set Participant Status & Write ICS Files Efficiently"
+title: "Master Aspose.Email Java - Set Participant Status & Write ICS Files Efficiently"
 description: "Learn how to manage meeting schedules with aspose email java. Set participant statuses and export calendar to ics files, write multiple events into an ICS file seamlessly."
 date: "2025-12-18"
 weight: 1

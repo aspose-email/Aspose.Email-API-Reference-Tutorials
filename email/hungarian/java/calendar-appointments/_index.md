@@ -50,6 +50,12 @@ Ebben a szakaszban kiemeljük, miért elengedhetetlen a naptármeghívók progra
 - [Ingyenes támogatás](https://forum.aspose.com/)
 - [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Utolsó frissítés:** 2025-12-18  
+**Tesztelt verzió:** Aspose.Email for Java 24.12  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -57,9 +63,3 @@ Ebben a szakaszban kiemeljük, miért elengedhetetlen a naptármeghívók progra
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2025-12-18  
-**Tesztelt verzió:** Aspose.Email for Java 24.12  
-**Szerző:** Aspose

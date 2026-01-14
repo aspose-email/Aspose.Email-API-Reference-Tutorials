@@ -85,6 +85,12 @@ Naučte se spravovat šablony Outlook pomocí Aspose.Email pro Java. Tento tutor
 - [Bezplatná podpora](https://forum.aspose.com/)
 - [Dočasná licence](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Poslední aktualizace:** 2025-12-18  
+**Testováno s:** Aspose.Email for Java 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Naučte se spravovat šablony Outlook pomocí Aspose.Email pro Java. Tento tutor
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-18  
-**Testováno s:** Aspose.Email for Java 24.12  
-**Autor:** Aspose

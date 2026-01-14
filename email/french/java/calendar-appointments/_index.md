@@ -85,6 +85,12 @@ Apprenez à gérer les modèles Outlook avec Aspose.Email pour Java. Ce tutoriel
 - [Support gratuit](https://forum.aspose.com/)
 - [Licence temporaire](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Dernière mise à jour:** 2025-12-18  
+**Testé avec:** Aspose.Email for Java 24.12  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -92,9 +98,3 @@ Apprenez à gérer les modèles Outlook avec Aspose.Email pour Java. Ce tutoriel
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour:** 2025-12-18  
-**Testé avec:** Aspose.Email for Java 24.12  
-**Auteur:** Aspose

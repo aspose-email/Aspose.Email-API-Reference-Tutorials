@@ -83,6 +83,12 @@ Learn how to manage Outlook templates with Aspose.Email for Java. This tutorial 
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Last Updated:** 2025-12-18  
+**Tested With:** Aspose.Email for Java 24.12  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -90,9 +96,3 @@ Learn how to manage Outlook templates with Aspose.Email for Java. This tutorial 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-18  
-**Tested With:** Aspose.Email for Java 24.12  
-**Author:** Aspose

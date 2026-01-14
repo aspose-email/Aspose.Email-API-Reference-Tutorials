@@ -7,7 +7,7 @@ keywords:
 - Aspose.Email Java
 - set participant status in Java
 - write ICS files with Java
-title: 'Domine Aspose.Email Java: Defina o Status do Participante e Crie Arquivos
+title: 'Domine Aspose.Email Java - Defina o Status do Participante e Crie Arquivos
   ICS com Eficiência'
 url: /pt/java/calendar-appointments/aspose-email-java-set-participant-status-write-ics/
 weight: 1

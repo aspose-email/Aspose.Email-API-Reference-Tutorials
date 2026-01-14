@@ -50,6 +50,12 @@ weight: 5
 - [Δωρεάν Υποστήριξη](https://forum.aspose.com/)
 - [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-18  
+**Δοκιμή Με:** Aspose.Email for Java 24.12  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -57,9 +63,3 @@ weight: 5
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2025-12-18  
-**Δοκιμή Με:** Aspose.Email for Java 24.12  
-**Συγγραφέας:** Aspose
