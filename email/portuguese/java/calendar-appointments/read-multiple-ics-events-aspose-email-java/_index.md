@@ -161,8 +161,6 @@ Agora você tem um método sólido e pronto para produção para ler **múltiplo
 - Explore o lado de **criação** da API para gerar novos arquivos .ics programaticamente.  
 - Integre a lista de objetos `Appointment` com sua camada de persistência (SQL, NoSQL ou cache em memória).
 
----
-
 ## Perguntas Frequentes
 
 **Q:** O que é um arquivo ICS?  

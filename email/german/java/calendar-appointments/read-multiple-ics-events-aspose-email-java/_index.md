@@ -161,8 +161,6 @@ Sie haben nun eine solide, produktionsreife Methode, um **mehrere Kalenderereign
 - Erkunden Sie die **Erstellungs‑**Seite der API, um programmgesteuert neue .ics‑Dateien zu erzeugen.  
 - Integrieren Sie die Liste der `Appointment`‑Objekte in Ihre Persistenzschicht (SQL, NoSQL oder In‑Memory‑Cache).
 
----
-
 ## Häufig gestellte Fragen
 
 **Q:** Was ist eine ICS‑Datei?  

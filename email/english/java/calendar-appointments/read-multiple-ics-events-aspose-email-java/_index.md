@@ -158,8 +158,6 @@ You now have a solid, production‑ready method for reading **multiple calendar 
 - Explore the **creation** side of the API to generate new .ics files programmatically.  
 - Integrate the list of `Appointment` objects with your persistence layer (SQL, NoSQL, or in‑memory cache).
 
----
-
 ## Frequently Asked Questions
 
 **Q:** What is an ICS file?  

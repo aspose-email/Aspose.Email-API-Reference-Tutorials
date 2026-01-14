@@ -160,8 +160,6 @@ Du har nu en solid, produktionsklar metod för att läsa **flera kalenderhändel
 - Utforska **skapande**‑delen av API‑et för att programatiskt generera nya .ics‑filer.  
 - Integrera listan med `Appointment`‑objekt i ditt beständighetslager (SQL, NoSQL eller minnes‑cache).
 
----
-
 ## Vanliga frågor
 
 **Q:** Vad är en ICS‑fil?  

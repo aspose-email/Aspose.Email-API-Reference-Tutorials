@@ -159,8 +159,6 @@ Nyní máte solidní, produkčně připravenou metodu pro čtení **více kalend
 - Prozkoumejte část API pro **vytváření** nových souborů .ics programově.  
 - Integrovat seznam objektů `Appointment` s vaší perzistentní vrstvou (SQL, NoSQL nebo ‑in‑memory cache).
 
----
-
 ## Často kladené otázky
 
 **Q:** Co je to soubor ICS?  

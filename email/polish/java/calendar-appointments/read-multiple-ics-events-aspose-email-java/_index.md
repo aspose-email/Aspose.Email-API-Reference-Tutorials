@@ -161,8 +161,6 @@ Masz teraz solidną, gotową do produkcji metodę odczytywania **wielu zdarzeń 
 - Zbadaj część **tworzenia** API, aby programowo generować nowe pliki .ics.  
 - Zintegruj listę obiektów `Appointment` z warstwą trwałości (SQL, NoSQL lub pamięć podręczna w‑memory).
 
----
-
 ## Najczęściej zadawane pytania
 
 **Q:** Czym jest plik ICS?  

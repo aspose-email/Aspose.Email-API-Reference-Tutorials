@@ -160,8 +160,6 @@ Most már van egy stabil, termelés‑kész módszered a **több naptáresemény
 - Fedezd fel az API **létrehozási** oldalát új .ics fájlok programozott generálásához.  
 - Integráld az `Appointment` objektumok listáját a perzisztencia rétegeddel (SQL, NoSQL vagy in‑memory cache).
 
----
-
 ## Gyakran Ismételt Kérdések
 
 **Q:** Mi az az ICS fájl?  

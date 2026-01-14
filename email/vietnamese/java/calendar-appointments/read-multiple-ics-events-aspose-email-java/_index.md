@@ -187,8 +187,6 @@ Bạn đã có một phương pháp sẵn sàng cho sản xuất để đọc **
 - **Dùng thử miễn phí:** Bắt đầu với phiên bản dùng thử tại [Aspose Free Trial](https://releases.aspose.com/email/java/)  
 - **Giấy phép tạm thời:** Yêu cầu khóa thử nghiệm mở rộng qua [Temporary License Request](https://purchase.aspose.com/temporary-license/)
 
----
-
 **Cập nhật lần cuối:** 2025-12-29  
 **Đã kiểm tra với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Tác giả:** Aspose  

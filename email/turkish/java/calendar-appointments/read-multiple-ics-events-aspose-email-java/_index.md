@@ -161,8 +161,6 @@ Artık **Aspose.Email for Java** kullanarak iCalendar dosyasından **birden çok
 - API’nin **oluşturma** tarafını keşfederek yeni .ics dosyalarını programlı olarak üretin.  
 - `Appointment` nesneleri listesini kalıcı katmanınızla (SQL, NoSQL veya bellek içi önbellek) bütünleştirin.
 
----
-
 ## Sık Sorulan Sorular
 
 **S:** ICS dosyası nedir?  

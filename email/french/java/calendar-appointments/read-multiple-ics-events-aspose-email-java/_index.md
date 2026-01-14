@@ -161,8 +161,6 @@ Vous disposez maintenant d’une méthode solide, prête pour la production, afi
 - Explorez le côté **création** de l’API pour générer de nouveaux fichiers .ics de façon programmatique.  
 - Intégrez la liste d’objets `Appointment` à votre couche de persistance (SQL, NoSQL ou cache en mémoire).
 
----
-
 ## FAQ
 
 **Q :** Qu’est‑ce qu’un fichier ICS ?  

@@ -157,8 +157,6 @@ Je hebt nu een solide, productie‑klare methode om **multiple calendar events**
 - Verken de **creatie**‑kant van de API om programmatically nieuwe .ics‑bestanden te genereren.  
 - Integreer de lijst met `Appointment`‑objecten met je persistentielaag (SQL, NoSQL of in‑memory cache).
 
----
-
 ## Veelgestelde vragen
 
 **Q:** Wat is een ICS‑bestand?  

@@ -161,8 +161,6 @@ Anda kini memiliki metode siap produksi untuk membaca **beberapa acara kalender*
 - Jelajahi sisi **pembuatan** API untuk menghasilkan file .ics baru secara programatis.  
 - Integrasikan daftar objek `Appointment` dengan lapisan persistensi Anda (SQL, NoSQL, atau cache in‑memory).
 
----
-
 ## Pertanyaan yang Sering Diajukan
 
 **T:** Apa itu file ICS?  

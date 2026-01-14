@@ -161,8 +161,6 @@ Ora disponi di un metodo solido e pronto per la produzione per leggere **più ev
 - Esplora la parte **creazione** dell’API per generare nuovi file .ics programmaticamente.  
 - Integra la lista di oggetti `Appointment` con il tuo livello di persistenza (SQL, NoSQL o cache in‑memory).
 
----
-
 ## Domande frequenti
 
 **D:** Che cos’è un file ICS?  

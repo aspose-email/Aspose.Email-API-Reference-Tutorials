@@ -158,8 +158,6 @@ while (reader.nextEvent()) {
 - 探索 API 的 **创建** 功能，编程生成新的 .ics 文件。  
 - 将 `Appointment` 列表与持久化层（SQL、NoSQL 或内存缓存）集成。
 
----
-
 ## 常见问题
 
 **问：** 什么是 ICS 文件？  

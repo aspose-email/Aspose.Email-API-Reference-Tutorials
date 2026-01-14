@@ -157,8 +157,6 @@ while (reader.nextEvent()) {
 - API के **creation** पक्ष को एक्सप्लोर करें ताकि प्रोग्रामेटिकली नई .ics फ़ाइलें जेनरेट की जा सकें।  
 - `Appointment` ऑब्जेक्ट्स की लिस्ट को अपने पर्सिस्टेंस लेयर (SQL, NoSQL, या इन‑मेमोरी कैश) के साथ इंटीग्रेट करें।
 
----
-
 ## अक्सर पूछे जाने वाले प्रश्न
 
 **प्रश्न:** एक ICS फ़ाइल क्या है?  
@@ -182,6 +180,8 @@ while (reader.nextEvent()) {
 - **Purchase:** पूर्ण लाइसेंस प्राप्त करें [Purchase Aspose.Email](https://purchase.aspose.com/buy)  
 - **Free Trial:** ट्रायल संस्करण से शुरू करें [Aspose Free Trial](https://releases.aspose.com/email/java/)  
 - **Temporary License:** विस्तारित टेस्ट की के लिए अनुरोध करें [Temporary License Request](https://purchase.aspose.com/temporary-license/)
+
+---
 
 **अंतिम अपडेट:** 2025-12-29  
 **परीक्षण किया गया:** Aspose.Email for Java 25.4 (jdk16 classifier)  
