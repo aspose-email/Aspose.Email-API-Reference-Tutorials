@@ -5,7 +5,7 @@ description: Aspose.Email for Java का उपयोग करके व्य
   करें।
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'ईमेल हेडर विश्लेषण ट्यूटोरियल: Aspose.Email के साथ ईमेल हेडर निकालना और विश्लेषण
+title: 'ईमेल हेडर विश्लेषण ट्यूटोरियल - Aspose.Email के साथ ईमेल हेडर निकालना और विश्लेषण
   करना'
 url: /hi/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

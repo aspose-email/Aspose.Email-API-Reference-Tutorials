@@ -4,7 +4,7 @@ description: Komplexní tutoriál analýzy hlaviček e‑mailů pomocí Aspose.E
   Naučte se, jak v Javě parsovat soubory eml a sledovat e‑maily pomocí hlaviček.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Návod na analýzu hlaviček e‑mailů: Extrakce a analýza hlaviček e‑mailů pomocí
+title: 'Návod na analýzu hlaviček e‑mailů - Extrakce a analýza hlaviček e‑mailů pomocí
   Aspose.Email'
 url: /cs/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

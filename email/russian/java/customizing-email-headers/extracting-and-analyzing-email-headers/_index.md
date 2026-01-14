@@ -5,7 +5,7 @@ description: Полный учебник по анализу заголовко�
   с помощью заголовков.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Учебник по анализу заголовков электронной почты: извлечение и анализ заголовков
+title: 'Учебник по анализу заголовков электронной почты - извлечение и анализ заголовков
   писем с помощью Aspose.Email'
 url: /ru/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

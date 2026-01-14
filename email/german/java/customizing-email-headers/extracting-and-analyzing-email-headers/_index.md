@@ -5,7 +5,7 @@ description: Umfassendes Tutorial zur Analyse von E‑Mail‑Headern mit Aspose.
   Headern verfolgen.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutorial zur Analyse von E‑Mail‑Headern: Extrahieren und Analysieren von E‑Mail‑Headern
+title: 'Tutorial zur Analyse von E‑Mail‑Headern - Extrahieren und Analysieren von E‑Mail‑Headern
   mit Aspose.Email'
 url: /de/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

@@ -5,7 +5,7 @@ description: Tutorial abrangente de análise de cabeçalhos de e‑mail usando A
   cabeçalhos.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutorial de Análise de Cabeçalhos de Email: Extraindo e Analisando Cabeçalhos
+title: 'Tutorial de Análise de Cabeçalhos de Email - Extraindo e Analisando Cabeçalhos
   de Email com Aspose.Email'
 url: /pt/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

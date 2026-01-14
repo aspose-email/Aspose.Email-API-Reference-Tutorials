@@ -5,7 +5,7 @@ description: Tutoriel complet d'analyse des en-têtes d'e-mails avec Aspose.Emai
   des en-têtes.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutoriel d''analyse des en-têtes d''e-mail : extraction et analyse des en-têtes
+title: 'Tutoriel d''analyse des en-têtes d''e-mail - extraction et analyse des en-têtes
   d''e-mail avec Aspose.Email'
 url: /fr/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

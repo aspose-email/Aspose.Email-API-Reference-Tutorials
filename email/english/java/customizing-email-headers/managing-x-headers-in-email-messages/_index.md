@@ -1,5 +1,5 @@
 ---
-title: How to Add Headers: Managing X-Headers in Email with Aspose.Email
+title: How to Add Headers - Managing X-Headers in Email with Aspose.Email
 linktitle: Managing X-Headers in Email Messages with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to add headers and set custom email header using Aspose.Email for Java. Manage X‑Headers, add metadata, and streamline email processing.

@@ -5,7 +5,7 @@ description: Omfattande handledning för e‑posthuvudanalyser med Aspose.Email 
   huvuden.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutorial för e‑posthuvudanalys: Extrahera och analysera e‑posthuvuden med
+title: 'Tutorial för e‑posthuvudanalys - Extrahera och analysera e‑posthuvuden med
   Aspose.Email'
 url: /sv/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

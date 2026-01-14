@@ -3,7 +3,7 @@ date: 2026-01-11
 description: 使用 Aspose.Email for Java 的全面电子邮件标题分析教程。学习如何在 Java 中解析 eml 文件并通过标题跟踪电子邮件。
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 电子邮件标题分析教程：使用 Aspose.Email 提取和分析电子邮件标题
+title: 电子邮件标题分析教程 - 使用 Aspose.Email 提取和分析电子邮件标题
 url: /zh/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---

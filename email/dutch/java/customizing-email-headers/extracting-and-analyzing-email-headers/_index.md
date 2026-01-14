@@ -5,7 +5,7 @@ description: Uitgebreide tutorial voor e‑mailheaderanalyse met Aspose.Email vo
   van headers.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'E-mailheaderanalyse Tutorial: Het extraheren en analyseren van e-mailheaders
+title: 'E-mailheaderanalyse Tutorial - Het extraheren en analyseren van e-mailheaders
   met Aspose.Email'
 url: /nl/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
@@ -21,41 +21,41 @@ weight: 12
 
 ## Introductie tot het extraheren en analyseren van e-mailkoppen met Aspose.Email
 
-In dit **e-mailkoppenanalyse tutorial** lopen we stap voor stap door hoe je de metadata die verborgen zit in een *.eml*‑bestand kunt extraheren, parseren en interpreteren met Aspose.Email voor Java. Of je nu een spamfilter bouwt, e-mailtracking implementeert, of gewoon berichtroutes moet auditen, het beheersen van koppenanalyse geeft je het inzicht dat je nodig hebt om weloverwogen beslissingen te nemen.
+In deze **e-mailkoppenanalyse tutorial** lopen we stap voor stap door hoe je de metadata verborgen zit in een*.eml*-bestand kunt extraheren, parseren en volledig met Aspose.Email voor Java. Of je nu een spamfilter bouwt, e-mailtracking implementeert, of gewoon berichtroutes moet auditen, het beheersen van de koppenanalyse geeft je het inzicht dat je nodig hebt om weloverwogen beslissingen te nemen.
 
-## Quick Answers
-- **Wat is de primaire bibliotheek?** Aspose.Email for Java  
-- **Welk bestandsformaat wordt geparseerd?** *.eml* (standard email message)  
-- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een licentie is vereist voor productie.  
-- **Hoe lang duurt een basisimplementatie?** Ongeveer 10‑15 minuten na installatie.  
+## Snelle antwoorden
+- **Wat is de primaire bibliotheek?** Aspose.Email voor Java
+- **Welk bestandsformaat wordt geparseerd?***.eml* (standaard e-mailbericht)
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een licentie is vereist voor productie.
+- **Hoe lang duurt een basisimplementatie?** Ongeveer 10‑15 minuten na installatie.
 - **Kan ik het extraheren van koppen automatiseren?** Ja – de API is volledig scriptbaar en integreert met elke Java‑applicatie.
 
 ## Wat is e-mailkoppenanalyse tutorial?
-E-mailkoppenanalyse omvat het lezen van de gestructureerde velden die met elke e-mail meereizen—zoals **From**, **Received**, **DKIM‑Signature**, en **Received‑SPF**—om de identiteit van de afzender, de authenticatiestatus en het pad dat het bericht heeft afgelegd via mailservers te achterhalen. Deze tutorial laat zien hoe je die analyse programmatisch kunt uitvoeren.
+E-mailkoppenanalyse omvat het lezen van de afgeleide velden die met elke e-mail meereizen—zoals **From**, **Received**, **DKIM‑Signature**, en **Received‑SPF**—om de identiteit van de afzender, de authenticatiestatus en het pad dat het bericht via mailservers is doorgegeven. Deze tutorial laat zien hoe je die analyse programmatisch kunt uitvoeren.
 
 ## Waarom e-mailkoppenanalyse tutorial gebruiken?
-- **Beveiliging:** Detecteer vervalste afzenders en phishingpogingen door SPF/DKIM te controleren.  
-- **Tracking:** Reconstruct the exact route an email followed, useful for troubleshooting delivery issues.  
-- **Naleving:** Extract timestamps and server information for audit trails.  
-- **Automatisering:** Integrate header parsing into bulk‑mail processing pipelines.
+- **Beveiliging:** Detecteer vervalste afzenders en phishingpogingen door SPF/DKIM te controleren.
+- **Tracking:** Reconstrueer de exacte route die een e-mail heeft gevolgd, handig bij het oplossen van leveringsproblemen.
+- **Naleving:** Extraheer tijdstempels en serverinformatie voor audittrails.
+- **Automatisering:** Integreer het parseren van kopteksten in de verwerkingspijplijnen voor bulkpost.
 
 ## Voorvereisten
 
 Voordat we in de code duiken, zorg ervoor dat je de volgende voorvereisten hebt:
 
-1. Java-ontwikkelomgeving: Zorg ervoor dat Java op je systeem is geïnstalleerd. Je kunt het downloaden van [hier](https://www.oracle.com/java/technologies/javase-downloads.html).
+1. Java-ontwikkelomgeving: Zorg ervoor dat Java op je systeem is geïnstalleerd. Je kunt het [hier] downloaden(https://www.oracle.com/java/technologies/javase-downloads.html).
 
-2. Aspose.Email voor Java: Je hebt de Aspose.Email voor Java bibliotheek nodig. Je kunt deze downloaden van de [Aspose-website](https://releases.aspose.com/email/java/).
+2. Aspose.Email voor Java: Je hebt de Aspose.Email voor Java bibliotheek nodig. Je kunt dit downloaden van de [Aspose-website](https://releases.aspose.com/email/java/).
 
-3. Integrated Development Environment (IDE): Je kunt elke Java‑compatibele IDE gebruiken, zoals Eclipse of IntelliJ IDEA, om de code te schrijven en uit te voeren.
+3. Integrated Development Environment (IDE): Je kunt elke Java-compatibele IDE gebruiken, zoals Eclipse of IntelliJ IDEA, om de code te schrijven en uit te voeren.
 
 ## Stap 1: Een Java‑project maken
 
-Start een nieuw Java‑project in je favoriete IDE en voeg de Aspose.Email voor Java JAR toe aan het classpath van het project. Dit geeft je toegang tot de `MailMessage`, `HeaderCollection` en gerelateerde klassen die nodig zijn voor het extraheren van koppen.
+Start een nieuw Java‑project in je favoriete IDE en voeg de Aspose.Email voor Java JAR toe aan het klassenpad van het project. Dit geeft je toegang tot de `MailMessage`, `HeaderCollection` en gerelateerde klassen die nodig zijn voor het extraheren van koppen.
 
 ## Stap 2: E-mailkoppen parseren
 
-Nu het project klaar is, kunnen we beginnen met het parseren van de koppen van een *.eml*‑bestand. Het onderstaande fragment toont hoe je **parse eml file java**‑stijl gebruikt met Aspose.Email:
+Nu het project klaar is, kunnen we beginnen met het parseren van de koppen van een*.eml*-bestand. Het onderstaande fragment toont hoe je **parse eml file java**‑stijl gebruikt met Aspose.Email:
 
 ```java
 // Load the email message
@@ -74,11 +74,11 @@ In deze code laden we een e‑mailbericht vanuit een bestand en halen vervolgens
 
 ## Stap 3: E-mailkoppen analyseren
 
-Met de ruwe koppen in de hand kun je verschillende analyses uitvoeren. Hieronder staan drie veelvoorkomende taken die **e-mailtracking met behulp van koppen** illustreren.
+Met de ruwe koppen in de hand kun je verschillende analyses uitvoeren. aanwezig staan ​​drie veelvoorkomende genomen die **e-mailtracking met behulp van koppen** illustreren.
 
-### Identificeren van de afzender
+### Identificeer van de afzender
 
-De “From”‑header (of de `MailMessage.getFrom()`‑eigenschap) vertelt je wie het bericht heeft verzonden:
+De “From”‑header (van de `MailMessage.getFrom()`‑eigenschap) vertelt je wie het bericht heeft verzonden:
 
 ```java
 String sender = message.getFrom().getAddress();

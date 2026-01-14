@@ -5,7 +5,7 @@ description: Πλήρης οδηγός ανάλυσης κεφαλίδων email
   χρησιμοποιώντας τις κεφαλίδες.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Οδηγός Ανάλυσης Κεφαλίδων Email: Εξαγωγή και Ανάλυση Κεφαλίδων Email με το
+title: 'Οδηγός Ανάλυσης Κεφαλίδων Email - Εξαγωγή και Ανάλυση Κεφαλίδων Email με το
   Aspose.Email'
 url: /el/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

@@ -5,7 +5,7 @@ description: Átfogó e‑mail fejléc elemzési útmutató az Aspose.Email for 
   nyomon követni az e‑maileket.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'E-mail fejléc elemzési útmutató: E-mail fejlécek kinyerése és elemzése az
+title: 'E-mail fejléc elemzési útmutató - E-mail fejlécek kinyerése és elemzése az
   Aspose.Email segítségével'
 url: /hu/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

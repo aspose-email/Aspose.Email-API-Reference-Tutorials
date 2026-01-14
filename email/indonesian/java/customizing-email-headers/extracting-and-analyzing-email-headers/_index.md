@@ -5,7 +5,7 @@ description: Tutorial lengkap analisis header email menggunakan Aspose.Email unt
   header.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutorial Analisis Header Email: Mengekstrak dan Menganalisis Header Email
+title: 'Tutorial Analisis Header Email - Mengekstrak dan Menganalisis Header Email
   dengan Aspose.Email'
 url: /id/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

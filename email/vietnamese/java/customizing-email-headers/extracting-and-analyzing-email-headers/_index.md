@@ -4,7 +4,7 @@ description: Hướng dẫn phân tích tiêu đề email toàn diện bằng As
   Tìm hiểu cách phân tích tệp eml bằng Java và theo dõi email qua tiêu đề.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Hướng dẫn phân tích tiêu đề email: Trích xuất và phân tích tiêu đề email bằng
+title: 'Hướng dẫn phân tích tiêu đề email - Trích xuất và phân tích tiêu đề email bằng
   Aspose.Email'
 url: /vi/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

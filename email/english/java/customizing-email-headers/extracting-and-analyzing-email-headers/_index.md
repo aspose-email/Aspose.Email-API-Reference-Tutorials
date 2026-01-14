@@ -1,5 +1,5 @@
 ---
-title: "Email Header Analysis Tutorial: Extracting and Analyzing Email Headers with Aspose.Email"
+title: "Email Header Analysis Tutorial - Extracting and Analyzing Email Headers with Aspose.Email"
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: "Comprehensive email header analysis tutorial using Aspose.Email for Java. Learn how to parse eml file java and track emails using headers."

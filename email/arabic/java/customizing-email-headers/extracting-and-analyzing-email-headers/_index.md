@@ -4,7 +4,7 @@ description: دليل شامل لتحليل رؤوس البريد الإلكتر
   تعلم كيفية تحليل ملفات eml في Java وتتبع الرسائل باستخدام الرؤوس.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'دورة تحليل رؤوس البريد الإلكتروني: استخراج وتحليل رؤوس البريد الإلكتروني باستخدام
+title: 'دورة تحليل رؤوس البريد الإلكتروني - استخراج وتحليل رؤوس البريد الإلكتروني باستخدام
   Aspose.Email'
 url: /ar/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

@@ -5,7 +5,7 @@ description: Tutorial completo di analisi delle intestazioni email con Aspose.Em
   intestazioni.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Tutorial di Analisi delle Intestazioni Email: Estrarre e Analizzare le Intestazioni
+title: 'Tutorial di Analisi delle Intestazioni Email - Estrarre e Analizzare le Intestazioni
   Email con Aspose.Email'
 url: /it/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

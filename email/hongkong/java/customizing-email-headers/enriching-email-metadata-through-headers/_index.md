@@ -47,7 +47,7 @@ weight: 18
 
 以下是一個逐步指南，說明如何匯入程式庫、載入訊息、加入自訂標頭，並儲存已豐富的電子郵件。
 
-### Step 1: Import Aspose.Email Library
+### 步驟 1：匯入 Aspose.Email 庫
 
 首先，您需要將 Aspose.Email 程式庫匯入您的 Java 專案。請確保已下載並將程式庫加入專案的相依性中。
 
@@ -55,7 +55,7 @@ weight: 18
 import com.aspose.email.*;
 ```
 
-### Step 2: Load an Email Message
+### 步驟 2：載入電子郵件
 
 若要操作電子郵件訊息，必須先將其載入。您可以從檔案載入郵件，或從頭建立新郵件。
 
@@ -64,7 +64,7 @@ import com.aspose.email.*;
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 
-### Step 3: Add a Custom Header (add x-custom-header)
+### 步驟 3：新增自訂郵件頭（新增 x-custom-header）
 
 現在，讓我們透過加入自訂標頭來豐富郵件的中繼資料。此範例使用廣為接受的 `X-Custom-Header` 名稱，您亦可依需求選擇任何以 `X-` 為前綴的鍵。
 
@@ -73,9 +73,9 @@ MailMessage message = MailMessage.load("path/to/your/email.eml");
 message.getHeaders().add("X-Custom-Header", "Custom Value");
 ```
 
-> **Pro tip:** Use a GUID or a timestamp as the header value when you need a unique identifier for tracking.
+> **專業提示：** 當您需要用於追蹤的唯一識別碼時，請使用 GUID 或時間戳記作為郵件頭值。
 
-### Step 4: Save the Modified Email
+### 步驟 4：儲存修改後的電子郵件
 
 加入自訂標頭後，將郵件儲存回磁碟（或串流至其他服務）。原始結構保持不變，新的標頭會無縫整合。
 

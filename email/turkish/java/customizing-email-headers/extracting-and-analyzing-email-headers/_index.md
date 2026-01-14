@@ -5,7 +5,7 @@ description: Aspose.Email for Java kullanarak kapsamlı e-posta başlığı anal
   nasıl takip edeceğinizi öğrenin.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'E-posta Başlığı Analizi Öğreticisi: Aspose.Email ile E-posta Başlıklarını
+title: 'E-posta Başlığı Analizi Öğreticisi - Aspose.Email ile E-posta Başlıklarını
   Çıkarma ve Analiz Etme'
 url: /tr/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12

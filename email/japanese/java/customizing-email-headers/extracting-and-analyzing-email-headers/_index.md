@@ -3,7 +3,7 @@ date: 2026-01-11
 description: Aspose.Email for Java を使用した包括的なメールヘッダー分析チュートリアル。eml ファイルの解析方法とヘッダーを利用したメールの追跡方法を学びます。
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: メールヘッダー分析チュートリアル：Aspose.Email を使用したメールヘッダーの抽出と分析
+title: メールヘッダー分析チュートリアル - Aspose.Email を使用したメールヘッダーの抽出と分析
 url: /ja/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---

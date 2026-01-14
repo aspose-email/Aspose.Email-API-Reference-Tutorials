@@ -4,7 +4,7 @@ description: Aspose.Email for Java를 사용한 포괄적인 이메일 헤더 �
   이용해 이메일을 추적하는 방법을 배워보세요.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: '이메일 헤더 분석 튜토리얼: Aspose.Email를 사용한 이메일 헤더 추출 및 분석'
+title: '이메일 헤더 분석 튜토리얼 - Aspose.Email를 사용한 이메일 헤더 추출 및 분석'
 url: /ko/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---

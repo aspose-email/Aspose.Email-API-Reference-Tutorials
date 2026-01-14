@@ -5,7 +5,7 @@ description: Kompletny samouczek analizy nagłówków e‑mail przy użyciu Aspo
   za pomocą nagłówków.
 linktitle: Extracting and Analyzing Email Headers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 'Samouczek analizy nagłówków e‑mail: wyodrębnianie i analizowanie nagłówków
+title: 'Samouczek analizy nagłówków e‑mail - wyodrębnianie i analizowanie nagłówków
   e‑mail przy użyciu Aspose.Email'
 url: /pl/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
