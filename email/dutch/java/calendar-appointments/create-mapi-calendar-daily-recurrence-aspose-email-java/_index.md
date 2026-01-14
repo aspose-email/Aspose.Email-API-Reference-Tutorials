@@ -1,9 +1,14 @@
 ---
-"date": "2025-05-29"
-"description": "Leer hoe u terugkerende agenda-evenementen in Java kunt maken, beheren en automatiseren met Aspose.Email. Stel dagelijkse terugkeerpatronen in en verwerk naadloos uitzonderingen."
-"title": "Een MAPI-kalender met dagelijkse herhaling en uitzonderingen maken met Aspose.Email voor Java"
-"url": "/nl/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/"
-"weight": 1
+date: '2025-12-20'
+description: Leer hoe u een MAPI-agenda in Java maakt, dagelijkse terugkeerpatronen
+  beheert en uitzonderingen afhandelt met Aspose.Email voor Java.
+keywords:
+- MAPI Calendar creation
+- daily recurrence events
+- Java calendar exceptions
+title: Maak een MAPI‑kalender in Java met dagelijkse herhaling en uitzonderingen
+url: /nl/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +16,34 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Een MAPI-kalender met dagelijkse herhaling en uitzonderingen maken met Aspose.Email voor Java
+# Hoe maak je een mapi calendar java met dagelijkse herhaling en uitzonderingen
 
-Het efficiënt beheren van terugkerende gebeurtenissen kan een uitdaging zijn, vooral wanneer er uitzonderingen of wijzigingen nodig zijn. Deze tutorial begeleidt je bij het maken van een MAPI-agendagebeurtenis met dagelijkse herhaling en het toevoegen van uitzonderingen met Aspose.Email voor Java. Je leert hoe je planningstaken naadloos kunt automatiseren binnen je applicaties.
+Het efficiënt beheren van terugkerende gebeurtenissen kan een uitdaging zijn, vooral wanneer uitzonderingen of wijzigingen nodig zijn. In deze tutorial **maak je mapi calendar java** objecten, stel je dagelijkse herhalingspatronen in en voeg je uitzonderingen toe met Aspose.Email for Java. Je leert hoe je plannings taken naadloos kunt automatiseren binnen je applicaties.
 
-### Wat je leert:
-- Installeer en gebruik de Aspose.Email-bibliotheek in een Java-project.
-- Maak een MAPI-agendagebeurtenis met dagelijkse terugkeer.
-- Voeg uitzonderingen toe voor terugkerende gebeurtenissen.
-- Opslaan en beheren van agenda-items in PST-bestanden.
+## Snelle Antwoorden
+- **Welke bibliotheek?** Aspose.Email for Java  
+- **Primaire taak?** Maak een MAPI calendar met dagelijkse herhaling en uitzonderingen  
+- **Vereiste JDK?** Java 16 of hoger  
+- **Kan ik bestanden aan uitzonderingen toevoegen?** Ja, met `MapiCalendarExceptionInfo`  
+- **Waar wordt de agenda opgeslagen?** In een PST‑bestand via `PersonalStorage`
 
-Laten we eens kijken hoe u uw takenplanning efficiënter kunt maken met Aspose.Email voor Java.
+### Wat is een MAPI calendar?
+Een MAPI (Messaging Application Programming Interface) agenda is een standaardformaat dat door Microsoft Outlook en andere e‑mailclients wordt gebruikt om afspraakgegevens op te slaan. Het ondersteunt uitgebreide herhalingsregels, uitzonderingen en bijlagen, waardoor het ideaal is voor bedrijfsplanning.
+
+### Waarom Aspose.Email for Java gebruiken?
+Aspose.Email biedt een pure‑Java API waarmee je MAPI‑objecten kunt maken, wijzigen en opslaan zonder Outlook te gebruiken. Dit betekent dat je server‑side planningsfuncties kunt bouwen, PST‑bestanden kunt genereren en complexe herhalingsscenario's programmatisch kunt afhandelen.
 
 ## Vereisten
 
-Voordat we beginnen, zorg ervoor dat u de volgende instellingen hebt:
-- **Aspose.E-mailbibliotheek**: Je hebt versie 25.4 van deze bibliotheek nodig. Deze is beschikbaar via Maven of direct te downloaden.
-- **Java-ontwikkelingskit (JDK)**Zorg ervoor dat JDK 16 op uw systeem is geïnstalleerd.
-- **IDE**: Elke Java IDE zoals IntelliJ IDEA, Eclipse of NetBeans is voldoende.
+Zorg er vóór we beginnen voor dat je de volgende configuratie hebt:
+
+- **Aspose.Email Library**: Versie 25.4 (of later) – beschikbaar via Maven of directe download.  
+- **Java Development Kit (JDK)**: JDK 16 of nieuwer.  
+- **IDE**: IntelliJ IDEA, Eclipse, NetBeans, of een andere Java‑compatibele editor.
 
 ### Vereiste bibliotheken en afhankelijkheden
 
-Om Aspose.Email te integreren in uw project met behulp van Maven, voegt u de volgende afhankelijkheid toe aan uw `pom.xml`:
+Om Aspose.Email in je project te integreren met Maven, voeg je de volgende afhankelijkheid toe aan je `pom.xml`:
 
 ```xml
 <dependency>
@@ -43,28 +54,29 @@ Om Aspose.Email te integreren in uw project met behulp van Maven, voegt u de vol
 </dependency>
 ```
 
-### Licentieverwerving
+### Licentie‑acquisitie
 
-Om Aspose.Email te kunnen gebruiken, hebt u een licentie nodig:
-- **Gratis proefperiode**: Begin met de proefversie om de functies te ontdekken.
-- **Tijdelijke licentie**: Vraag er een aan voor een uitgebreide evaluatie.
-- **Aankoop**: Koop een volledige licentie voor productiegebruik.
+Om Aspose.Email te gebruiken, heb je een licentie nodig:
 
-## Aspose.Email instellen voor Java
+- **Gratis proefversie** – verken alle functies zonder kosten.  
+- **Tijdelijke licentie** – vraag aan voor uitgebreide evaluatie.  
+- **Volledige licentie** – koop voor productie‑implementaties.
 
-Stel eerst uw omgeving in:
+## Aspose.Email voor Java instellen
 
-1. Zorg ervoor dat JDK 16 op uw systeem is geïnstalleerd en geconfigureerd.
-2. Voeg de Maven-afhankelijkheid toe aan uw project of download de JAR van de Aspose-website.
+Eerst, stel je omgeving in:
 
-Hier leest u hoe u Aspose.Email in uw applicatie kunt initialiseren:
+1. Controleer of JDK 16 is geïnstalleerd en `JAVA_HOME` is geconfigureerd.  
+2. Voeg de Maven‑afhankelijkheid (of download de JAR) toe aan je project.  
+
+Hier is een klein fragment dat laat zien hoe je een licentiebestand laadt:
 
 ```java
 import com.aspose.email.*;
 
 public class InitializeAspose {
     public static void main(String[] args) {
-        // Stel een licentie in indien beschikbaar
+        // Set up a license if available
         License license = new License();
         try {
             license.setLicense("path/to/your/license.lic");
@@ -75,34 +87,35 @@ public class InitializeAspose {
 }
 ```
 
-## Implementatiegids
+## Implementatie‑gids
 
-### MAPI-kalender maken met dagelijkse herhaling en uitzonderingen
+### Een MAPI calendar maken met dagelijkse herhaling en uitzonderingen
 
 #### Overzicht
-Met deze functie kunt u automatisch terugkerende agenda-evenementen aanmaken en tegelijkertijd flexibiliteit bieden dankzij uitzonderingen.
+Deze functie stelt je in staat terugkerende afspraken te automatiseren terwijl je specifieke instanties kunt overslaan of wijzigen.
 
 #### Stapsgewijze implementatie
-**1. Stel de startdatum van het evenement in**
-Begin met het bepalen van het tijdstip waarop uw evenement moet beginnen:
+
+**1. Stel de startdatum van het evenement in**  
+Bepaal wanneer de reeks moet beginnen:
 
 ```java
 Date startDate = addHours(newDate(2018, 7, 19), 12);
 ```
 
-**2. MAPI-agendagebeurtenis maken**
-Initialiseer de kalender met locatie, samenvatting en beschrijving:
+**2. Maak het MAPI Calendar‑object**  
+Geef locatie, onderwerp en beschrijving op:
 
 ```java
 MapiCalendar calendar = new MapiCalendar("location1", "summary1", "description1", startDate, addHours(startDate, 1));
 ```
 
-**3. Definieer het dagelijkse terugkeerpatroon**
-Stel een dagelijks terugkerend patroon in voor uw gebeurtenis:
+**3. Definieer een dagelijks herhalingspatroon**  
+Configureer het evenement om elke dag te herhalen:
 
 ```java
 MapiCalendarEventRecurrence recurrence = new MapiCalendarEventRecurrence();
-recurrence.setRecurrencePattern(new MapiCalendarDagelijksRecurrencePattern());
+recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
 MapiCalendarRecurrencePattern pattern = recurrence.getRecurrencePattern();
 
 pattern.setPatternType(MapiCalendarRecurrencePatternType.Day);
@@ -110,8 +123,8 @@ pattern.setPeriod(1); // Daily
 pattern.setEndType(MapiCalendarRecurrenceEndType.NeverEnd);
 ```
 
-**4. Voeg een uitzondering toe aan de herhaling**
-Geef een datum op waarop de gebeurtenis niet mag plaatsvinden:
+**4. Voeg een uitzondering toe aan de herhaling**  
+Geef een datum op die moet worden uitgesloten (of aangepast):
 
 ```java
 Date exceptionDate = addDays(startDate, 3);
@@ -132,22 +145,24 @@ pattern.getDeletedInstanceDates().addItem(exceptionDate);
 calendar.setRecurrence(recurrence);
 ```
 
-### Bestanden toevoegen aan kalenderuitzonderingen
+### Bestanden toevoegen aan agenda‑uitzonderingen
 
 #### Overzicht
-Voeg documenten of bestanden toe aan uitzonderingen ter referentie.
-**1. Een bestand maken en toevoegen**
+Je kunt ondersteunende documenten (bijv. agenda’s) toevoegen aan elke uitzondering.
+
+**1. Maak een bestand aan en voeg het toe**
 
 ```java
 MapiCalendarExceptionInfo exception = new MapiCalendarExceptionInfo();
 exception.getAttachments().add("file.txt", "hello, world!".getBytes());
 ```
 
-### MAPI-agenda opslaan in PST-bestanden
+### MAPI Calendar opslaan in PST‑bestanden
 
 #### Overzicht
-Sla uw agenda-items rechtstreeks op in een PST-bestand voor e-mailclients.
-**1. Kalender maken en opslaan in PST**
+Bewaar de agenda in een PST‑bestand zodat Outlook of andere clients het kunnen lezen.
+
+**1. Maak en sla de agenda op in een PST**
 
 ```java
 final PersonalStorage pst = PersonalStorage.create(new ByteArrayOutputStream(), FileFormatVersion.Unicode);
@@ -160,45 +175,56 @@ try {
 ```
 
 ## Praktische toepassingen
-- **Bedrijfsplanning**Automatiseer vergaderinstellingen met uitzonderingen voor feestdagen of vrije dagen.
-- **Projectmanagement**: Houd terugkerende projectmijlpalen bij en pas ze indien nodig aan.
-- **Evenementenplanning**: Organiseer een reeks evenementen met één enkele opzet en beheer eenvoudig wijzigingen.
+- **Bedrijfsplanning** – automatiseer vergaderreeksen, automatisch feestdagen overslaan.  
+- **Projectmanagement** – volg terugkerende mijlpalen met af en toe datumverschuivingen.  
+- **Evenementplanning** – beheer meerdaagse conferenties waarbij sommige sessies worden geannuleerd of verplaatst.
 
 ### Integratiemogelijkheden
-Integreer Aspose.Email-functionaliteiten met CRM-systemen, taakbeheertools of aangepaste applicaties om de productiviteit te verbeteren.
+Combineer Aspose.Email met CRM‑platformen, taak‑management‑API’s of aangepaste workflow‑engines om end‑to‑end automatisering te realiseren.
 
-## Prestatieoverwegingen
-- **Optimaliseer bestandstoegang**: Beheer bronnen door objecten op de juiste manier af te voeren.
-- **Geheugenbeheer**: Gebruik streams efficiënt om grote PST-bestanden te verwerken.
-- **Asynchrone verwerking**:Overweeg bij uitgebreide bewerkingen asynchrone methoden voor betere prestaties.
+## Prestatie‑overwegingen
+- **Resources vrijgeven** – roep altijd `dispose()` aan op `PersonalStorage` om bestands‑handles vrij te maken.  
+- **Streamgebruik** – geef de voorkeur aan `ByteArrayOutputStream` of bestands‑streams om te voorkomen dat volledige PST‑bestanden in het geheugen worden geladen.  
+- **Async‑operaties** – voor bulk‑agenda‑generatie, voer de creatielogica uit op een achtergrondthread om de UI responsief te houden.
 
 ## Conclusie
-Door deze handleiding te volgen, hebt u geleerd hoe u agenda-evenementen kunt automatiseren met Aspose.Email voor Java. U kunt nu MAPI-agenda's maken met dagelijkse herhalingen en uitzonderingen, bestanden bijvoegen en deze efficiënt opslaan in PST-formaat.
+Door deze gids te volgen weet je nu hoe je **create mapi calendar java** objecten maakt met dagelijkse herhaling, uitzonderingen toevoegt, bestanden bijvoegt en alles opslaat in een PST‑bestand. Deze mogelijkheden stellen je in staat robuuste planningsfuncties te bouwen zonder ooit direct Outlook aan te raken.
 
 ### Volgende stappen
-Experimenteer door deze functionaliteiten in uw toepassingen te integreren of ontdek andere functies die Aspose.Email voor Java biedt om uw productiviteitshulpmiddelen te verbeteren.
+- Experimenteer met wekelijkse of maandelijkse herhalingspatronen.  
+- Verken extra MAPI‑eigenschappen zoals deelnemers, herinneringen en categorieën.  
+- Bekijk de uitgebreide API‑documentatie van Aspose.Email voor meer geavanceerde scenario’s.
 
-## FAQ-sectie
-1. **Kan ik Aspose.Email gebruiken zonder licentie?**
-   - Ja, u kunt beginnen met de gratis proefversie om de mogelijkheden ervan te testen.
-2. **Hoe ga ik om met uitzonderingen in terugkerende gebeurtenissen?**
-   - Gebruik `MapiCalendarExceptionInfo` om uitzonderingsdata en details te specificeren.
-3. **Is het mogelijk om kalenders rechtstreeks in PST-bestanden op te slaan?**
-   - Absoluut! Aspose.Email ondersteunt naadloos het opslaan van agenda-items in PST-formaat.
-4. **Kan dit worden geïntegreerd met andere Java-applicaties?**
-   - Ja, u kunt het eenvoudig integreren in elke Java-applicatie met behulp van de meegeleverde API-methoden.
-5. **Wat moet ik doen als mijn licentie verloopt?**
-   - Verleng uw licentie of bekijk de aankoopopties om geavanceerde functies te blijven gebruiken.
+## Veelgestelde vragen
+
+**Q: Ondersteunt de bibliotheek tijdzone‑bewuste afspraken?**  
+A: Ja, je kunt de `StartTimeZone`‑ en `EndTimeZone`‑eigenschappen instellen op `MapiCalendar`.
+
+**Q: Kan ik programmatically een enkele instantie uit een terugkerende reeks verwijderen?**  
+A: Gebruik de `DeletedInstanceDates`‑collectie op het herhalingspatroon om specifieke data als verwijderd te markeren.
+
+**Q: Zijn er limieten voor de grootte van een PST‑bestand dat met Aspose.Email wordt gemaakt?**  
+A: PST‑bestanden volgen de Unicode‑formaatlimieten (standaard tot 2 GB), maar je kunt grotere groottes configureren via de `PersonalStorage`‑instellingen.
+
+**Q: Hoe voeg ik deelnemers toe aan een vergaderverzoek?**  
+A: Maak `MapiRecipient`‑objecten aan, stel hun `RecipientType` in op `MapiRecipientType.MAPI_TO` en voeg ze toe aan de `Recipients`‑collectie van de `MapiMessage`.
+
+**Q: Is er ondersteuning voor terugkerende taken (niet alleen afspraken)?**  
+A: Ja, Aspose.Email biedt ook `MapiTask` met vergelijkbare herhalingsmogelijkheden.
 
 ## Bronnen
-- [Aspose.Email voor Java-documentatie](https://reference.aspose.com/email/java/)
-- [Download Aspose.E-mail](https://releases.aspose.com/email/java/)
-- [Koop een licentie](https://purchase.aspose.com/buy)
-- [Gratis proefversie](https://releases.aspose.com/email/java/)
-- [Tijdelijke licentie aanvragen](https://purchase.aspose.com/temporary-license/)
-- [Aspose Ondersteuningsforum](https://forum.aspose.com/c/email/10)
+- [Aspose.Email for Java Documentatie](https://reference.aspose.com/email/java/)  
+- [Aspose.Email downloaden](https://releases.aspose.com/email/java/)  
+- [Een licentie aanschaffen](https://purchase.aspose.com/buy)  
+- [Gratis proefversie](https://releases.aspose.com/email/java/)  
+- [Tijdelijke licentie aanvragen](https://purchase.aspose.com/temporary-license/)  
+- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
-Probeer deze oplossingen vandaag nog te implementeren en stroomlijn uw evenementenbeheerprocessen met Aspose.Email voor Java!
+---
+
+**Laatst bijgewerkt:** 2025-12-20  
+**Getest met:** Aspose.Email for Java 25.4 (JDK 16)  
+**Auteur:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
