@@ -1,8 +1,10 @@
 ---
-"description": "تعلم كيفية العمل مع عناصر التقويم والمواعيد وطلبات الاجتماعات وملفات ICS باستخدام Aspose.Email لـ Java."
-"title": "دروس تعليمية حول التقويم والمواعيد عبر البريد الإلكتروني باستخدام Aspose.Email لـ Java"
-"url": "/ar/java/calendar-appointments/"
-"weight": 5
+date: 2025-12-18
+description: تعلم كيفية إنشاء دعوة تقويم Java باستخدام Aspose.Email، وكذلك تحويل تقويم
+  Outlook إلى ملفات ICS. أمثلة مفصلة للمواعيد والجدولة.
+title: إنشاء دعوة تقويم Java – دليل Aspose.Email
+url: /ar/java/calendar-appointments/
+weight: 5
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -10,74 +12,83 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# دروس تعليمية حول التقويم والمواعيد عبر البريد الإلكتروني باستخدام Aspose.Email لـ Java
+# دروس تقويم البريد الإلكتروني والمواعيد باستخدام Aspose.Email للـ Java
 
-اكتشف كيفية إدارة وظائف التقويم في تطبيقاتك من خلال دروسنا التعليمية الشاملة لـ Aspose.Email Java. تُعلّمك هذه الأدلة خطوة بخطوة كيفية إنشاء عناصر التقويم ومعالجتها، وتوليد طلبات الاجتماعات، ومعالجة ردود المواعيد، والعمل مع ملفات تقويم ICS. يوفر كل درس أمثلة عملية على أكواد Java لعمليات التقويم الشائعة، مما يساعدك على بناء تطبيقات أكثر كفاءةً تُمكّنك من إدارة الجدولة والمواعيد بكفاءة عالية.
+اكتشف كيف **create calendar invitation java** التطبيقات باستخدام Aspose.Email للـ Java. سواءً كنت تبني نظام جدولة، أو تدمج مع Exchange، أو تحتاج ببساطة إلى إنشاء ملفات iCalendar، فإن هذه الدروس ترشدك خطوة بخطوة. ستتعلم كيفية إنشاء الدعوات، إدارة الأحداث المتكررة، وحتى تحويل عناصر تقويم Outlook إلى صيغة ICS العالمية—كل ذلك مع كود Java واضح وجاهز للإنتاج.
 
-## البرامج التعليمية المتاحة
+## إنشاء دعوة تقويم Java – نظرة عامة
+في هذا القسم نوضح لماذا يُعد إنشاء دعوات التقويم برمجياً أمراً ضرورياً لتطبيقات الأعمال الحديثة. أتمتة الدعوات توفر الوقت، وتُزيل الأخطاء اليدوية، وتضمن تنسيقاً ثابتاً عبر المنصات. تُظهر الدروس أدناه كيفية توليد، إرسال، وتخصيص الدعوات، بالإضافة إلى كيفية التعامل مع الردود والتحديثات.
 
-### [إنشاء دعوات التقويم وإرسالها باستخدام Aspose.Email لـ Java: دليل خطوة بخطوة](./create-send-calendar-invitations-aspose-email-java/)
-أتقن إنشاء وإرسال دعوات التقويم باستخدام Aspose.Email لجافا. تعلم كيفية إدارة وصول المفوضين وأذوناتهم، وتحسين سير عملك بفعالية.
+## الدروس المتاحة
 
-### [إنشاء تقويمات MAPI وحفظها في Java باستخدام Aspose.Email: دليل شامل](./create-save-mapi-calendar-aspose-email-java/)
-تعرّف على كيفية أتمتة إدارة التقويمات بإنشاء تقويمات MAPI وحفظها باستخدام Aspose.Email لجافا. اتبع هذا الدليل خطوة بخطوة لتكامل سلس.
+### [Create & Send Calendar Invitations with Aspose.Email for Java&#58; A Step-by-Step Guide](./create-send-calendar-invitations-aspose-email-java/)
+إتقان إنشاء وإرسال دعوات التقويم باستخدام Aspose.Email للـ Java. تعلم إدارة وصول المندوبين، الأذونات، وتحسين سير العمل بفعالية.
 
-### [كيفية تحويل عناصر تقويم Outlook إلى ICS باستخدام Aspose.Email لـ Java](./extract-outlook-calendar-to-ics-aspose-email-java/)
-تعرّف على كيفية تحويل عناصر تقويم Outlook PST بكفاءة إلى تنسيق ICS باستخدام Aspose.Email لـ Java. يغطي هذا البرنامج التعليمي عمليات الإعداد والاستخراج والحفظ.
+### [Create and Save MAPI Calendars in Java with Aspose.Email&#58; A Comprehensive Guide](./create-save-mapi-calendar-aspose-email-java/)
+تعلم كيفية أتمتة إدارة التقويم بإنشاء وحفظ تقويمات MAPI باستخدام Aspose.Email للـ Java. اتبع هذا الدليل خطوة بخطوة للتكامل السلس.
 
-### [كيفية إنشاء مسودات مواعيد البريد الإلكتروني في Java باستخدام Aspose.Email](./create-draft-email-appointment-java-aspose/)
-تعرّف على كيفية إنشاء مسودة مواعيد بريد إلكتروني برمجيًا باستخدام جافا باستخدام مكتبة Aspose.Email القوية. يغطي هذا الدليل الإعداد، وتنفيذ التعليمات البرمجية، والتطبيقات العملية.
+### [How to Convert Outlook Calendar Items to ICS Using Aspose.Email for Java](./extract-outlook-calendar-to-ics-aspose-email-java/)
+تعلم كيفية **convert outlook calendar ics** بفعالية باستخدام Aspose.Email للـ Java. يغطي هذا الدرس الإعداد، الاستخراج، وعملية الحفظ.
 
-### [كيفية إنشاء تقويم MAPI مع التكرار اليومي والاستثناءات باستخدام Aspose.Email لـ Java](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
-تعرّف على كيفية إنشاء أحداث التقويم المتكررة وإدارتها وأتمتتها في جافا باستخدام Aspose.Email. أنشئ أنماط التكرار اليومية وتعامل مع الاستثناءات بسلاسة.
+### [How to Create Draft Email Appointments in Java Using Aspose.Email](./create-draft-email-appointment-java-aspose/)
+تعلم كيفية إنشاء مسودات مواعيد البريد الإلكتروني برمجياً في Java باستخدام مكتبة Aspose.Email القوية. يغطي هذا الدليل الإعداد، تنفيذ الكود، وتطبيقاته العملية.
 
-### [كيفية إنشاء ملاحظات Outlook وتخصيصها باستخدام Aspose.Email لـ Java: دليل شامل](./create-customize-outlook-notes-aspose-email-java/)
-تعرّف على كيفية إنشاء وتخصيص كائنات MapiNote باستخدام Aspose.Email لـ Java. يغطي هذا الدليل كل شيء، بدءًا من إعداد بيئتك ووصولًا إلى دمج الملاحظات في ملفات PST.
+### [How to Create a MAPI Calendar with Daily Recurrence and Exceptions Using Aspose.Email for Java](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
+تعلم كيفية إنشاء، إدارة، وأتمتة الأحداث المتكررة يومياً في Java باستخدام Aspose.Email. اضبط نمط التكرار اليومي وتعامل مع الاستثناءات بسلاسة.
 
-### [كيفية تصفية مواعيد Exchange Server حسب التاريخ باستخدام Aspose.Email Java](./aspose-email-java-filter-exchange-appointments-by-date/)
-تعرّف على كيفية تصفية مواعيد خدمات Microsoft Exchange Web Services (EWS) حسب التاريخ باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد والتكوين وأفضل الممارسات.
+### [How to Create and Customize Outlook Notes with Aspose.Email for Java&#58; A Comprehensive Guide](./create-customize-outlook-notes-aspose-email-java/)
+تعلم كيفية إنشاء وتخصيص كائنات MapiNote باستخدام Aspose.Email للـ Java. يغطي هذا الدليل كل شيء من إعداد البيئة إلى دمج الملاحظات في ملفات PST.
 
-### [كيفية تنفيذ المواعيد المقسمة إلى صفحات في Java باستخدام Aspose.Email لخوادم Exchange](./java-aspose-email-paginated-appointments/)
-تعرف على كيفية إدارة عدد كبير من المواعيد باستخدام Aspose.Email لـ Java من خلال الاتصال بخوادم Exchange وتنفيذ استرجاع البيانات المقسمة بكفاءة.
+### [How to Filter Exchange Server Appointments by Date Using Aspose.Email Java](./aspose-email-java-filter-exchange-appointments-by-date/)
+تعلم كيفية تصفية مواعيد Microsoft Exchange Web Services (EWS) حسب التاريخ باستخدام Aspose.Email للـ Java. يغطي هذا الدليل الإعداد، التكوين، وأفضل الممارسات.
 
-### [كيفية قراءة أحداث ICS متعددة باستخدام Aspose.Email في Java: دليل شامل](./read-multiple-ics-events-aspose-email-java/)
-إتقان قراءة أحداث متعددة من ملف ICS باستخدام Aspose.Email لجافا. يغطي هذا الدليل الإعداد والتحليل والتطبيقات العملية مع تعليمات خطوة بخطوة.
+### [How to Implement Paginated Appointments in Java Using Aspose.Email for Exchange Servers](./java-aspose-email-paginated-appointments/)
+تعلم كيفية إدارة أعداد كبيرة من المواعيد باستخدام Aspose.Email للـ Java عبر الاتصال بخوادم Exchange وتطبيق استرجاع بيانات مجزأة بكفاءة.
 
-### [إدارة فئات Outlook باستخدام Aspose.Email لـ Java: دليل شامل](./manage-outlook-categories-aspose-email-java/)
-تعرّف على كيفية إدارة فئات Outlook بفعالية باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إضافة الفئات واسترجاعها وإزالتها برمجيًا.
+### [How to Read Multiple ICS Events Using Aspose.Email in Java&#58; A Comprehensive Guide](./read-multiple-ics-events-aspose-email-java/)
+إتقان قراءة أحداث متعددة من ملف ICS باستخدام Aspose.Email للـ Java. يغطي هذا الدليل الإعداد، التحليل، وتطبيقاته العملية مع إرشادات خطوة بخطوة.
 
-### [إدارة علامات المتابعة في Outlook باستخدام Aspose.Email لـ Java: دليل المطور](./aspose-email-java-outlook-follow-up-flags/)
-تعلّم كيفية إعداد وإدارة علامات المتابعة في Outlook بكفاءة باستخدام Aspose.Email لـ Java. عزّز إنتاجية إدارة البريد الإلكتروني بإتقان هذه الميزة الأساسية.
+### [Manage Outlook Categories with Aspose.Email for Java&#58; A Comprehensive Guide](./manage-outlook-categories-aspose-email-java/)
+تعلم كيفية إدارة فئات Outlook بفعالية باستخدام Aspose.Email للـ Java. يغطي هذا الدليل إضافة، استرجاع، وإزالة الفئات برمجياً.
 
-### [إدارة المهام بكفاءة باستخدام Aspose.Email لـ Java: دليل التقويم والمواعيد](./aspose-email-java-task-management/)
-تعرّف على كيفية إدراج المهام والاستعلام عنها باستخدام Aspose.Email لـ Java. بسّط تعاملاتك مع Exchange Server بخطوات سهلة.
+### [Manage Outlook Follow-Up Flags with Aspose.Email for Java&#58; A Developer's Guide](./aspose-email-java-outlook-follow-up-flags/)
+تعلم كيفية **set outlook follow up** العلامات باستخدام Aspose.Email للـ Java. عزز إنتاجية إدارة البريد الإلكتروني بإتقان هذه الميزة الأساسية.
 
-### [إدارة المواعيد الرئيسية باستخدام Aspose.Email Java: دليل شامل لتكامل واجهة برمجة تطبيقات EWS](./master-appointment-management-aspose-email-java/)
-تعرّف على كيفية أتمتة إدارة المواعيد في تطبيقاتك باستخدام Aspose.Email لـ Java وواجهة برمجة تطبيقات Exchange Web Services (EWS). أنشئ المواعيد وحدّثها وأدرجها وألغِها بسهولة.
+### [Manage Tasks Efficiently with Aspose.Email for Java&#58; Calendar & Appointments Guide](./aspose-email-java-task-management/)
+تعلم كيفية سرد واستعلام المهام باستخدام Aspose.Email للـ Java. سهل تفاعلاتك مع خادم Exchange بخطوات واضحة.
 
-### [إتقان Aspose.Email Java: إنشاء وإدارة أحداث التقويم بكفاءة](./master-aspose-email-java-calendar-events/)
-تعرّف على كيفية إنشاء وإدارة أحداث التقويم في تطبيقات جافا باستخدام Aspose.Email. يتناول هذا الدليل إعداد الأحداث وإضافتها وحفظها بتنسيق PST.
+### [Master Appointment Management with Aspose.Email Java&#58; A Comprehensive Guide to EWS API Integration](./master-appointment-management-aspose-email-java/)
+تعلم كيفية أتمتة إدارة المواعيد في تطبيقاتك باستخدام Aspose.Email للـ Java وExchange Web Services (EWS) API. أنشئ، حدّث، قوّم، وألغِ المواعيد بسهولة.
 
-### [إتقان Aspose.Email Java: تعيين حالة المشارك وكتابة ملفات ICS بكفاءة](./aspose-email-java-set-participant-status-write-ics/)
-تعرّف على كيفية إدارة جداول الاجتماعات باستخدام Aspose.Email لجافا. حدّد حالات المشاركين واكتب أحداثًا متعددة في ملف ICS بسلاسة.
+### [Master Aspose.Email Java&#58; Create and Manage Calendar Events Efficiently](./master-aspose-email-java-calendar-events/)
+تعلم كيفية إنشاء وإدارة أحداث التقويم في تطبيقات Java باستخدام Aspose.Email. يغطي هذا الدليل الإعداد، إضافة الحضور، وحفظ الأحداث بصيغة PST.
 
-### [إتقان إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email لـ Java](./create-save-calendar-items-aspose-email-java/)
-تعرّف على كيفية إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email لجافا. أتمتة الجدولة وإضافة التذكيرات ومعالجة رسائل MAPI بكفاءة.
+### [Master Aspose.Email Java&#58; Set Participant Status & Write ICS Files Efficiently](./aspose-email-java-set-participant-status-write-ics/)
+تعلم كيفية إدارة جداول الاجتماعات باستخدام Aspose.Email للـ Java. تُظهر أمثلة كود **Write ics file java** كيفية ضبط حالات المشاركين وتوليد أحداث متعددة في ملف ICS بسلاسة.
 
-### [إتقان إدارة تقويم Exchange باستخدام Aspose.Email لـ Java: دليل شامل](./mastering-exchange-calendar-management-aspose-email-java/)
-تعرّف على كيفية إدارة تقويمات Exchange Server بكفاءة باستخدام Aspose.Email لـ Java. يغطي هذا الدليل إعداد الاتصال، وإنشاء المجلدات، وإدارة المواعيد.
+### [Master Creating and Saving Calendar Items with Aspose.Email for Java](./create-save-calendar-items-aspose-email-java/)
+تعلم كيفية إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email للـ Java. أتمتة الجدولة، إضافة تذكيرات، والتعامل مع رسائل MAPI بفعالية.
 
-### [إدارة قوالب Outlook باستخدام Aspose.Email لـ Java](./master-outlook-template-management-aspose-email-java/)
-تعرّف على كيفية إدارة قوالب Outlook باستخدام Aspose.Email لجافا. يغطي هذا البرنامج التعليمي تحميل قوالب البريد الإلكتروني وتحديثها وحفظها بفعالية.
+### [Master Exchange Calendar Management with Aspose.Email for Java&#58; A Comprehensive Guide](./mastering-exchange-calendar-management-aspose-email-java/)
+تعلم كيفية إدارة تقاويم خادم Exchange بفعالية باستخدام Aspose.Email للـ Java. يغطي هذا الدليل إعداد الاتصال، إنشاء المجلدات، ومعالجة المواعيد.
+
+### [Master Outlook Template Management Using Aspose.Email for Java](./master-outlook-template-management-aspose-email-java/)
+تعلم كيفية إدارة قوالب Outlook باستخدام Aspose.Email للـ Java. يغطي هذا الدرس تحميل، تحديث، وحفظ قوالب البريد الإلكتروني بفعالية.
 
 ## موارد إضافية
 
-- [توثيق Aspose.Email لـ Java](https://docs.aspose.com/email/java/)
-- [مرجع Aspose.Email لـ Java API](https://reference.aspose.com/email/java/)
-- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
-- [منتدى Aspose.Email](https://forum.aspose.com/c/email)
-- [دعم مجاني](https://forum.aspose.com/)
-- [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
+- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
+- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Aspose.Email Forum](https://forum.aspose.com/c/email)
+- [Free Support](https://forum.aspose.com/)
+- [Temporary License](https://purchase.aspose.com/temporary-license/)
+
+---
+
+**آخر تحديث:** 2025-12-18  
+**تم الاختبار مع:** Aspose.Email للـ Java 24.12  
+**المؤلف:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

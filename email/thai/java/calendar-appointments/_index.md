@@ -1,8 +1,10 @@
 ---
-"description": "เรียนรู้การทำงานกับรายการปฏิทิน การนัดหมาย คำขอประชุม และไฟล์ ICS โดยใช้ Aspose.Email สำหรับ Java"
-"title": "บทช่วยสอนเกี่ยวกับปฏิทินอีเมลและการนัดหมายด้วย Aspose.Email สำหรับ Java"
-"url": "/th/java/calendar-appointments/"
-"weight": 5
+date: 2025-12-18
+description: เรียนรู้วิธีสร้างคำเชิญปฏิทินใน Java ด้วย Aspose.Email และแปลงปฏิทิน
+  Outlook เป็นไฟล์ ICS ตัวอย่างละเอียดสำหรับการนัดหมายและการกำหนดเวลา
+title: สร้างคำเชิญปฏิทินด้วย Java – บทเรียน Aspose.Email
+url: /th/java/calendar-appointments/
+weight: 5
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -10,74 +12,83 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# บทช่วยสอนเกี่ยวกับปฏิทินอีเมลและการนัดหมายด้วย Aspose.Email สำหรับ Java
+# บทแนะนำการทำงานกับปฏิทินอีเมลและการนัดหมายด้วย Aspose.Email for Java
 
-ค้นพบวิธีจัดการฟังก์ชันปฏิทินในแอปพลิเคชันของคุณด้วยบทช่วยสอน Aspose.Email Java ที่ครอบคลุมของเรา คำแนะนำทีละขั้นตอนเหล่านี้จะสอนคุณถึงวิธีการสร้างและจัดการรายการปฏิทิน สร้างคำขอประชุม ประมวลผลการตอบรับการนัดหมาย และทำงานกับไฟล์ปฏิทิน ICS บทช่วยสอนแต่ละบทมีตัวอย่างโค้ด Java ในทางปฏิบัติสำหรับการดำเนินการปฏิทินทั่วไป ช่วยให้คุณสร้างแอปพลิเคชันที่มีประสิทธิภาพมากขึ้นซึ่งสามารถจัดการการจัดกำหนดการและการจัดการการนัดหมายด้วยผลลัพธ์ระดับมืออาชีพ
+ค้นพบวิธีการสร้างแอปพลิเคชัน **create calendar invitation java** ด้วย Aspose.Email for Java ไม่ว่าคุณจะกำลังสร้างระบบกำหนดเวลา, ผสานรวมกับ Exchange, หรือเพียงต้องการสร้างไฟล์ iCalendar, บทแนะนำเหล่านี้จะพาคุณผ่านทุกขั้นตอน คุณจะได้เรียนรู้การสร้างคำเชิญ, จัดการเหตุการณ์ที่เกิดซ้ำ, และแม้กระทั่งแปลงรายการปฏิทิน Outlook ไปเป็นรูปแบบ ICS สากล—ทั้งหมดด้วยโค้ด Java ที่ชัดเจนและพร้อมใช้งานในสภาพแวดล้อมการผลิต
 
-## บทช่วยสอนที่พร้อมใช้งาน
+## สร้างคำเชิญปฏิทิน Java – ภาพรวม
+ในส่วนนี้เราจะเน้นว่าการสร้างคำเชิญปฏิทินโดยอัตโนมัติเป็นสิ่งสำคัญสำหรับแอปพลิเคชันธุรกิจสมัยใหม่ การทำอัตโนมัติของคำเชิญช่วยประหยัดเวลา, ลดข้อผิดพลาดจากการทำมือ, และทำให้รูปแบบสอดคล้องกันทั่วทุกแพลตฟอร์ม บทแนะนำด้านล่างจะแสดงวิธีการสร้าง, ส่ง, และปรับแต่งคำเชิญ รวมถึงวิธีการจัดการกับการตอบกลับและการอัปเดต
 
-### [สร้างและส่งคำเชิญปฏิทินด้วย Aspose.Email สำหรับ Java: คำแนะนำทีละขั้นตอน](./create-send-calendar-invitations-aspose-email-java/)
-เรียนรู้การสร้างและส่งคำเชิญปฏิทินโดยใช้ Aspose.Email สำหรับ Java เรียนรู้การจัดการสิทธิ์การเข้าถึงของผู้มอบหมาย สิทธิ์อนุญาต และปรับเวิร์กโฟลว์ของคุณให้เหมาะสมอย่างมีประสิทธิผล
+## บทแนะนำที่มี
 
-### [สร้างและบันทึกปฏิทิน MAPI ใน Java ด้วย Aspose อีเมล: คู่มือฉบับสมบูรณ์](./create-save-mapi-calendar-aspose-email-java/)
-เรียนรู้วิธีการจัดการปฏิทินโดยอัตโนมัติด้วยการสร้างและบันทึกปฏิทิน MAPI โดยใช้ Aspose.Email สำหรับ Java ปฏิบัติตามคำแนะนำทีละขั้นตอนนี้เพื่อการผสานรวมที่ราบรื่น
+### [สร้างและส่งคำเชิญปฏิทินด้วย Aspose.Email for Java&#58; คู่มือแบบขั้นตอนต่อขั้นตอน](./create-send-calendar-invitations-aspose-email-java/)
+เชี่ยวชาญการสร้างและส่งคำเชิญปฏิทินด้วย Aspose.Email for Java เรียนรู้การจัดการการเข้าถึงของผู้แทน, สิทธิ์, และปรับปรุงกระบวนการทำงานของคุณอย่างมีประสิทธิภาพ
 
-### [วิธีการแปลงรายการปฏิทิน Outlook เป็น ICS โดยใช้ Aspose.Email สำหรับ Java](./extract-outlook-calendar-to-ics-aspose-email-java/)
-เรียนรู้วิธีการแปลงรายการปฏิทิน Outlook PST เป็นรูปแบบ ICS อย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java บทช่วยสอนนี้ครอบคลุมถึงขั้นตอนการตั้งค่า การดึงข้อมูล และการบันทึก
+### [สร้างและบันทึกปฏิทิน MAPI ใน Java ด้วย Aspose.Email&#58; คู่มือเชิงลึก](./create-save-mapi-calendar-aspose-email-java/)
+เรียนรู้วิธีการทำอัตโนมัติการจัดการปฏิทินโดยการสร้างและบันทึกปฏิทิน MAPI ด้วย Aspose.Email for Java ปฏิบัติตามคู่มือแบบขั้นตอนต่อขั้นตอนนี้เพื่อการผสานรวมที่ราบรื่น
 
-### [วิธีการสร้างร่างการนัดหมายอีเมลใน Java โดยใช้ Aspose.Email](./create-draft-email-appointment-java-aspose/)
-เรียนรู้วิธีการสร้างการนัดหมายทางอีเมลแบบร่างด้วยโปรแกรมใน Java โดยใช้ไลบรารี Aspose.Email อันทรงพลัง คู่มือนี้ครอบคลุมถึงการตั้งค่า การนำโค้ดไปใช้งาน และการใช้งานจริง
+### [วิธีแปลงรายการปฏิทิน Outlook เป็น ICS ด้วย Aspose.Email for Java](./extract-outlook-calendar-to-ics-aspose-email-java/)
+เรียนรู้วิธีการแปลงรูปแบบ **convert outlook calendar ics** อย่างมีประสิทธิภาพด้วย Aspose.Email for Java บทแนะนำนี้ครอบคลุมการตั้งค่า, การสกัดข้อมูล, และกระบวนการบันทึก
 
-### [วิธีการสร้างปฏิทิน MAPI พร้อมการเกิดซ้ำรายวันและข้อยกเว้นโดยใช้ Aspose.Email สำหรับ Java](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
-เรียนรู้วิธีการสร้าง จัดการ และจัดการกิจกรรมปฏิทินแบบซ้ำใน Java โดยอัตโนมัติโดยใช้ Aspose.Email ตั้งค่ารูปแบบการทำซ้ำรายวันและจัดการข้อยกเว้นได้อย่างราบรื่น
+### [วิธีสร้างการนัดหมายอีเมลแบบร่างใน Java ด้วย Aspose.Email](./create-draft-email-appointment-java-aspose/)
+เรียนรู้วิธีการสร้างการนัดหมายอีเมลแบบร่างโดยอัตโนมัติใน Java ด้วยไลบรารี Aspose.Email ที่ทรงพลัง คู่มือนี้ครอบคลุมการตั้งค่า, การเขียนโค้ด, และการใช้งานจริง
 
-### [วิธีการสร้างและปรับแต่งบันทึกย่อ Outlook ด้วย Aspose.Email สำหรับ Java: คู่มือที่ครอบคลุม](./create-customize-outlook-notes-aspose-email-java/)
-เรียนรู้วิธีการสร้างและปรับแต่งวัตถุ MapiNote โดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมทุกอย่างตั้งแต่การตั้งค่าสภาพแวดล้อมของคุณไปจนถึงการรวมบันทึกลงในไฟล์ PST
+### [วิธีสร้างปฏิทิน MAPI พร้อมการเกิดซ้ำรายวันและข้อยกเว้นด้วย Aspose.Email for Java](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
+เรียนรู้วิธีการสร้าง, จัดการ, และทำอัตโนมัติเหตุการณ์ปฏิทินที่เกิดซ้ำใน Java ด้วย Aspose.Email ตั้งค่ารูปแบบการเกิดซ้ำรายวันและจัดการข้อยกเว้นอย่างราบรื่น
 
-### [วิธีการกรองการนัดหมาย Exchange Server ตามวันที่โดยใช้ Aspose.Email Java](./aspose-email-java-filter-exchange-appointments-by-date/)
-เรียนรู้วิธีกรองการนัดหมาย Microsoft Exchange Web Services (EWS) ตามวันที่โดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมถึงการตั้งค่า การกำหนดค่า และแนวทางปฏิบัติที่ดีที่สุด
+### [วิธีสร้างและปรับแต่งโน้ต Outlook ด้วย Aspose.Email for Java&#58; คู่มือเชิงลึก](./create-customize-outlook-notes-aspose-email-java/)
+เรียนรู้วิธีการสร้างและปรับแต่งอ็อบเจ็กต์ MapiNote ด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมทุกอย่างตั้งแต่การตั้งค่าสภาพแวดล้อมของคุณจนถึงการผสานรวมโน้ตเข้าสู่ไฟล์ PST
 
-### [วิธีการใช้การนัดหมายแบบแบ่งหน้าใน Java โดยใช้ Aspose.Email สำหรับเซิร์ฟเวอร์ Exchange](./java-aspose-email-paginated-appointments/)
-เรียนรู้วิธีจัดการจำนวนการนัดหมายจำนวนมากด้วย Aspose.Email สำหรับ Java โดยเชื่อมต่อกับเซิร์ฟเวอร์ Exchange และใช้การดึงข้อมูลแบบแบ่งหน้าที่มีประสิทธิภาพ
+### [วิธีกรองการนัดหมายบน Exchange Server ตามวันที่ด้วย Aspose.Email Java](./aspose-email-java-filter-exchange-appointments-by-date/)
+เรียนรู้วิธีการกรองการนัดหมายของ Microsoft Exchange Web Services (EWS) ตามวันที่ด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการตั้งค่า, การกำหนดค่า, และแนวปฏิบัติที่ดีที่สุด
 
-### [วิธีการอ่านเหตุการณ์ ICS หลายรายการโดยใช้ Aspose.Email ใน Java: คู่มือที่ครอบคลุม](./read-multiple-ics-events-aspose-email-java/)
-เรียนรู้การอ่านเหตุการณ์ต่างๆ จากไฟล์ ICS โดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมถึงการตั้งค่า การแยกวิเคราะห์ และการใช้งานจริง พร้อมคำแนะนำทีละขั้นตอน
+### [วิธีนำการนัดหมายแบบแบ่งหน้าใน Java ด้วย Aspose.Email สำหรับเซิร์ฟเวอร์ Exchange](./java-aspose-email-paginated-appointments/)
+เรียนรู้วิธีจัดการจำนวนการนัดหมายจำนวนมากด้วย Aspose.Email for Java โดยเชื่อมต่อกับเซิร์ฟเวอร์ Exchange และนำการดึงข้อมูลแบบแบ่งหน้าอย่างมีประสิทธิภาพมาใช้
 
-### [จัดการหมวดหมู่ Outlook ด้วย Aspose.Email สำหรับ Java: คู่มือที่ครอบคลุม](./manage-outlook-categories-aspose-email-java/)
-เรียนรู้วิธีจัดการหมวดหมู่ Outlook อย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมถึงการเพิ่ม การดึงข้อมูล และการลบหมวดหมู่ด้วยโปรแกรม
+### [วิธีอ่านหลายเหตุการณ์ ICS ด้วย Aspose.Email ใน Java&#58; คู่มือเชิงลึก](./read-multiple-ics-events-aspose-email-java/)
+เชี่ยวชาญการอ่านหลายเหตุการณ์จากไฟล์ ICS ด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการตั้งค่า, การแยกวิเคราะห์, และการใช้งานจริงพร้อมคำแนะนำแบบขั้นตอนต่อขั้นตอน
 
-### [จัดการการติดตาม Outlook ด้วย Aspose.Email สำหรับ Java: คู่มือสำหรับนักพัฒนา](./aspose-email-java-outlook-follow-up-flags/)
-เรียนรู้วิธีตั้งค่าและจัดการแฟล็กการติดตามผล Outlook อย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java เพิ่มประสิทธิภาพการจัดการอีเมลโดยเชี่ยวชาญฟีเจอร์สำคัญนี้
+### [จัดการหมวดหมู่ Outlook ด้วย Aspose.Email for Java&#58; คู่มือเชิงลึก](./manage-outlook-categories-aspose-email-java/)
+เรียนรู้วิธีการจัดการหมวดหมู่ Outlook อย่างมีประสิทธิภาพด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการเพิ่ม, ดึงข้อมูล, และลบหมวดหมู่โดยอัตโนมัติ
 
-### [จัดการงานอย่างมีประสิทธิภาพด้วย Aspose.Email สำหรับ Java: คำแนะนำเกี่ยวกับปฏิทินและการนัดหมาย](./aspose-email-java-task-management/)
-เรียนรู้วิธีการแสดงรายการและสอบถามงานโดยใช้ Aspose.Email สำหรับ Java ปรับปรุงการโต้ตอบกับ Exchange Server ของคุณด้วยขั้นตอนที่ทำตามได้ง่าย
+### [จัดการธงติดตาม Outlook ด้วย Aspose.Email for Java&#58; คู่มือสำหรับนักพัฒนา](./aspose-email-java-outlook-follow-up-flags/)
+เรียนรู้วิธีการตั้งค่า **set outlook follow up** ธงติดตามอย่างมีประสิทธิภาพด้วย Aspose.Email for Java เพิ่มประสิทธิภาพการจัดการอีเมลโดยการเชี่ยวชาญฟีเจอร์สำคัญนี้
 
-### [การจัดการการนัดหมายหลักด้วย Aspose.Email Java: คู่มือครอบคลุมสำหรับการผสานรวม API ของ EWS](./master-appointment-management-aspose-email-java/)
-เรียนรู้วิธีการจัดการนัดหมายอัตโนมัติในแอปพลิเคชันของคุณโดยใช้ Aspose.Email สำหรับ Java และ Exchange Web Services (EWS) API สร้าง อัปเดต แสดงรายการ และยกเลิกการนัดหมายได้อย่างง่ายดาย
+### [จัดการงานอย่างมีประสิทธิภาพด้วย Aspose.Email for Java&#58; คู่มือปฏิทินและการนัดหมาย](./aspose-email-java-task-management/)
+เรียนรู้วิธีการแสดงรายการและสอบถามงานด้วย Aspose.Email for Java ทำให้การโต้ตอบกับ Exchange Server ของคุณเป็นกระบวนการที่ราบรื่นด้วยขั้นตอนที่ทำตามได้ง่าย
 
-### [Master Aspose.Email Java: สร้างและจัดการกิจกรรมปฏิทินอย่างมีประสิทธิภาพ](./master-aspose-email-java-calendar-events/)
-เรียนรู้วิธีการสร้างและจัดการกิจกรรมปฏิทินในแอปพลิเคชัน Java โดยใช้ Aspose.Email คู่มือนี้ครอบคลุมถึงการตั้งค่า การเพิ่มผู้เข้าร่วม และการบันทึกกิจกรรมในรูปแบบ PST
+### [เชี่ยวชาญการจัดการการนัดหมายด้วย Aspose.Email Java&#58; คู่มือเชิงลึกการผสานรวม EWS API](./master-appointment-management-aspose-email-java/)
+เรียนรู้วิธีทำอัตโนมัติการจัดการการนัดหมายในแอปพลิเคชันของคุณด้วย Aspose.Email for Java และ Exchange Web Services (EWS) API สร้าง, ปรับปรุง, แสดงรายการ, และยกเลิกการนัดหมายได้อย่างง่ายดาย
 
-### [ควบคุม Aspose.Email Java: กำหนดสถานะผู้เข้าร่วมและเขียนไฟล์ ICS อย่างมีประสิทธิภาพ](./aspose-email-java-set-participant-status-write-ics/)
-เรียนรู้วิธีจัดการกำหนดการประชุมด้วย Aspose.Email สำหรับ Java กำหนดสถานะของผู้เข้าร่วมและเขียนกิจกรรมต่างๆ ลงในไฟล์ ICS ได้อย่างราบรื่น
+### [เชี่ยวชาญ Aspose.Email Java&#58; สร้างและจัดการเหตุการณ์ปฏิทินอย่างมีประสิทธิภาพ](./master-aspose-email-java-calendar-events/)
+เรียนรู้วิธีสร้างและจัดการเหตุการณ์ปฏิทินในแอปพลิเคชัน Java ด้วย Aspose.Email คู่มือนี้ครอบคลุมการตั้งค่า, การเพิ่มผู้เข้าร่วม, และการบันทึกเหตุการณ์ในรูปแบบ PST
 
-### [ฝึกฝนการสร้างและบันทึกรายการปฏิทินด้วย Aspose.Email สำหรับ Java](./create-save-calendar-items-aspose-email-java/)
-เรียนรู้วิธีการสร้างและบันทึกรายการปฏิทินโดยใช้ Aspose.Email สำหรับ Java จัดการกำหนดการอัตโนมัติ เพิ่มการแจ้งเตือน และจัดการข้อความ MAPI อย่างมีประสิทธิภาพ
+### [เชี่ยวชาญ Aspose.Email Java&#58; ตั้งค่าสถานะผู้เข้าร่วมและเขียนไฟล์ ICS อย่างมีประสิทธิภาพ](./aspose-email-java-set-participant-status-write-ics/)
+เรียนรู้วิธีจัดการกำหนดการประชุมด้วย Aspose.Email for Java ตัวอย่างโค้ด **Write ics file java** แสดงวิธีตั้งค่าสถานะผู้เข้าร่วมและสร้างหลายเหตุการณ์ลงในไฟล์ ICS อย่างราบรื่น
 
-### [การจัดการปฏิทิน Exchange หลักด้วย Aspose.Email สำหรับ Java: คู่มือที่ครอบคลุม](./mastering-exchange-calendar-management-aspose-email-java/)
-เรียนรู้วิธีจัดการปฏิทิน Exchange Server อย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมถึงการตั้งค่าการเชื่อมต่อ การสร้างโฟลเดอร์ และการจัดการการนัดหมาย
+### [เชี่ยวชาญการสร้างและบันทึกรายการปฏิทินด้วย Aspose.Email for Java](./create-save-calendar-items-aspose-email-java/)
+เรียนรู้วิธีสร้างและบันทึกรายการปฏิทินด้วย Aspose.Email for Java ทำการกำหนดเวลาอัตโนมัติ, เพิ่มการเตือน, และจัดการข้อความ MAPI อย่างมีประสิทธิภาพ
 
-### [การจัดการเทมเพลต Outlook ขั้นสูงโดยใช้ Aspose.Email สำหรับ Java](./master-outlook-template-management-aspose-email-java/)
-เรียนรู้วิธีจัดการเทมเพลต Outlook ด้วย Aspose.Email สำหรับ Java บทช่วยสอนนี้ครอบคลุมถึงการโหลด การอัปเดต และการบันทึกเทมเพลตอีเมลอย่างมีประสิทธิภาพ
+### [เชี่ยวชาญการจัดการปฏิทิน Exchange ด้วย Aspose.Email for Java&#58; คู่มือเชิงลึก](./mastering-exchange-calendar-management-aspose-email-java/)
+เรียนรู้วิธีจัดการปฏิทินของ Exchange Server อย่างมีประสิทธิภาพด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการตั้งค่าการเชื่อมต่อ, การสร้างโฟลเดอร์, และการจัดการการนัดหมาย
+
+### [เชี่ยวชาญการจัดการเทมเพลต Outlook ด้วย Aspose.Email for Java](./master-outlook-template-management-aspose-email-java/)
+เรียนรู้วิธีจัดการเทมเพลต Outlook ด้วย Aspose.Email for Java บทแนะนำนี้ครอบคลุมการโหลด, การอัปเดต, และการบันทึกเทมเพลตอีเมลอย่างมีประสิทธิภาพ
 
 ## แหล่งข้อมูลเพิ่มเติม
 
-- [เอกสาร Aspose.Email สำหรับ Java](https://docs.aspose.com/email/java/)
-- [เอกสารอ้างอิง Aspose.Email สำหรับ Java API](https://reference.aspose.com/email/java/)
-- [ดาวน์โหลด Aspose.Email สำหรับ Java](https://releases.aspose.com/email/java/)
+- [เอกสาร Aspose.Email for Java](https://docs.aspose.com/email/java/)
+- [อ้างอิง API Aspose.Email for Java](https://reference.aspose.com/email/java/)
+- [ดาวน์โหลด Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - [ฟอรั่ม Aspose.Email](https://forum.aspose.com/c/email)
 - [การสนับสนุนฟรี](https://forum.aspose.com/)
 - [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
+
+---
+
+**อัปเดตล่าสุด:** 2025-12-18  
+**ทดสอบด้วย:** Aspose.Email for Java 24.12  
+**ผู้เขียน:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
