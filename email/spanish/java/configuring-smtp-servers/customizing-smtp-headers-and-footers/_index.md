@@ -1,10 +1,14 @@
 ---
-"description": "Aprenda a personalizar encabezados y pies de página SMTP con Aspose.Email para Java. Mejore sus comunicaciones por correo electrónico con mensajes e imagen de marca personalizados."
-"linktitle": "Personalización de encabezados y pies de página SMTP con Aspose.Email"
-"second_title": "API de gestión de correo electrónico Java de Aspose.Email"
-"title": "Personalización de encabezados y pies de página SMTP con Aspose.Email"
-"url": "/es/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/"
-"weight": 16
+date: 2026-01-04
+description: Aprende cómo crear mensajes de correo electrónico en Java y personalizar
+  los encabezados SMTP, agregar un pie de página de correo electrónico personalizado
+  y personalizar la marca del correo electrónico usando Aspose.Email para Java.
+linktitle: Customizing SMTP Headers and Footers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Crear mensaje de correo electrónico en Java – Personalizar encabezados y pies
+  de página SMTP con Aspose.Email
+url: /es/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,30 +17,36 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Personalización de encabezados y pies de página SMTP con Aspose.Email
-
+# Personalizando encabezados y pies de correo SMTP con Aspose.Email
 
 ## Introducción
 
-En la era digital, los correos electrónicos se han convertido en la columna vertebral de la comunicación profesional. Sirven como medio para transmitir información, forjar relaciones y comercializar productos o servicios. Sin embargo, los encabezados y pies de página predeterminados de los correos electrónicos pueden no siempre coincidir con su marca o estilo de comunicación. Aquí es donde la personalización de los encabezados y pies de página SMTP entra en juego.
+En el mundo empresarial de hoy, de ritmo acelerado, cada correo electrónico que envías es una extensión de tu marca. Al aprender a **create email message java** proyectos que incluyan encabezados y pies personalizados, puedes *personalize email branding*, reforzar la identidad corporativa y cumplir con requisitos específicos del servidor de correo. Este tutorial te guía a través de todo el proceso—desde configurar un proyecto Java hasta agregar un pie de correo personalizado—usando Aspose.Email para Java.
 
-## Prerrequisitos
+## Respuestas rápidas
+- **¿Cuál es la biblioteca principal?** Aspose.Email para Java  
+- **¿Qué método agrega un pie de correo personalizado?** `setHtmlBody()` con tu fragmento HTML  
+- **¿Puedo establecer encabezados SMTP personalizados?** Sí, mediante `message.getHeaders().add()`  
+- **¿Necesito una licencia para producción?** Se requiere una licencia válida de Aspose.Email para uso comercial  
+- **¿Qué versión de Java es compatible?** Java 8 y superiores  
 
-Antes de sumergirse en el proceso de personalización, asegúrese de tener los siguientes requisitos previos:
+## Requisitos previos
 
-- Aspose.Email para Java: Descargue e instale la biblioteca Aspose.Email para Java desde [aquí](https://releases.aspose.com/email/java/).
+Antes de sumergirte en el proceso de personalización, asegúrate de contar con los siguientes requisitos:
 
-## Empezando
+- Aspose.Email para Java: Descarga e instala la biblioteca Aspose.Email para Java desde [aquí](https://releases.aspose.com/email/java/).
 
-Comencemos personalizando los encabezados y pies de página SMTP paso a paso. 
+## Cómo crear email message java con Aspose.Email
 
-### Paso 1: Configuración de su proyecto Java
+A continuación se muestra una guía paso a paso que te indica exactamente cómo construir, personalizar y enviar un correo electrónico usando Java.
 
-Comience creando un nuevo proyecto Java en su Entorno de Desarrollo Integrado (IDE) preferido. Asegúrese de haber importado la biblioteca Aspose.Email a su proyecto.
+### Paso 1: Configurar su proyecto Java
+
+Crea un nuevo proyecto Java en tu IDE favorito (IntelliJ IDEA, Eclipse o NetBeans). Añade el JAR de Aspose.Email al classpath del proyecto o impórtalo mediante Maven/Gradle.
 
 ### Paso 2: Importar las clases requeridas
 
-Para trabajar con Aspose.Email, deberá importar las clases necesarias. A continuación, le explicamos cómo hacerlo:
+Necesitarás un conjunto de clases del espacio de nombres Aspose.Email. La instrucción de importación permanece igual, así que puedes copiarla directamente:
 
 ```java
 import com.aspose.email.*;
@@ -44,77 +54,86 @@ import com.aspose.email.*;
 
 ### Paso 3: Crear un mensaje de correo electrónico
 
-A continuación, deberá crear un mensaje de correo electrónico. Aquí tiene un fragmento de código para empezar:
+Ahora creamos el objeto central `MailMessage`. Aquí es donde **create email message java** que más tarde llevará nuestro encabezado y pie personalizados.
 
 ```java
-// Crear un nuevo mensaje
+// Create a new message
 MailMessage message = new MailMessage();
 
-// Establecer remitente y destinatario
+// Set sender and recipient
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Establecer tema
+// Set subject
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### Paso 4: Personalización de encabezados
+### Paso 4: Personalizar encabezados
 
-Ahora, personalicemos los encabezados del correo electrónico. Puedes configurar encabezados como "X-Priority", "X-Mailer" y más para personalizar tu mensaje. Aquí tienes un ejemplo:
+Los encabezados SMTP personalizados te brindan un control adicional sobre cómo el servidor receptor procesa el correo. Por ejemplo, puedes establecer la prioridad o especificar el nombre del remitente.
 
 ```java
-// Personalizar encabezados
+// Customize headers
 message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-### Paso 5: Personalización de pies de página
+> **Consejo profesional:** Utiliza nombres de encabezado estándar (p. ej., `X-Priority`) para garantizar la compatibilidad entre diferentes servidores de correo.
 
-Para personalizar el pie de página del correo electrónico, puedes añadir tu propio texto o firma. Así es como puedes hacerlo:
+### Paso 5: Agregar un pie de correo electrónico personalizado (add html footer to email)
+
+Para **add custom email footer** y **add html footer to email**, simplemente inserta tu fragmento HTML al final del cuerpo del mensaje. Este enfoque también te permite **personalize email branding** con logotipos o avisos legales.
 
 ```java
-// Personalizar el pie de página
+// Customize footer
 String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-### Paso 6: Envío del correo electrónico
+Puedes reemplazar `footerText` con cualquier HTML que desees: imágenes, texto con estilo o incluso contenido dinámico.
 
-Por último, envíe el correo electrónico con los encabezados y pies de página personalizados:
+### Paso 6: Enviar el correo electrónico
+
+Finalmente, configura el `SmtpClient` con los detalles de tu servidor y envía el mensaje.
 
 ```java
-// Inicializar el cliente SMTP
+// Initialize the SMTP client
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Envía el mensaje
+// Send the message
 client.send(message);
 ```
 
-## Conclusión
+> **Advertencia:** Asegúrate de que las credenciales SMTP tengan permiso para enviar desde la dirección `From` que especificaste; de lo contrario, el servidor podría rechazar el mensaje.
 
-Personalizar encabezados y pies de página SMTP con Aspose.Email para Java es una forma eficaz de mejorar sus comunicaciones por correo electrónico. Le permite mantener la coherencia de su marca y añadir un toque personal a sus mensajes. Siguiendo los pasos descritos en este artículo, puede crear contenido de correo electrónico impactante que deje una impresión duradera en sus destinatarios.
+## Problemas comunes y soluciones
+
+| Problema | Solución |
+|----------|----------|
+| **Headers not appearing** | Verifica que el servidor SMTP no elimine los encabezados personalizados. Algunos proveedores quitan los encabezados no estándar. |
+| **HTML footer not rendering** | Asegúrate de que el cliente de correo admita HTML y de que tu HTML esté bien formado (etiquetas cerradas, codificación adecuada). |
+| **Authentication errors** | Revisa el nombre de usuario/contraseña y que la configuración TLS/SSL coincida con los requisitos de tu servidor. |
 
 ## Preguntas frecuentes
 
-### ¿Cómo descargo Aspose.Email para Java?
+**P: ¿Cómo descargo Aspose.Email para Java?**  
+R: Puedes descargar Aspose.Email para Java desde el sitio web usando este enlace: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
 
-Puede descargar Aspose.Email para Java desde el sitio web utilizando este enlace: [Descargar Aspose.Email para Java](https://releases.aspose.com/email/java/).
+**P: ¿Puedo personalizar varios encabezados y pies en un solo correo?**  
+R: Sí, puedes personalizar varios encabezados y pies en un único mensaje de correo. Simplemente agrega los encabezados y pies deseados como se muestra en los ejemplos proporcionados.
 
-### ¿Puedo personalizar varios encabezados y pies de página en un solo correo electrónico?
+**P: ¿Existe un límite de longitud para los encabezados y pies personalizados?**  
+R: No hay un límite estricto para la longitud de los encabezados y pies personalizados. Sin embargo, se recomienda mantenerlos concisos y relevantes para preservar una apariencia profesional.
 
-Sí, puedes personalizar varios encabezados y pies de página en un solo mensaje de correo electrónico. Simplemente añade los encabezados y pies de página que desees, como se muestra en los ejemplos.
+**P: ¿Puedo usar formato HTML en el contenido del correo?**  
+R: Sí, puedes usar formato HTML en el contenido del correo, incluidos los encabezados y pies. Esto te permite crear correos visualmente atractivos e informativos.
 
-### ¿Existe un límite en la longitud de los encabezados y pies de página personalizados?
+**P: ¿Qué configuraciones SMTP debo usar para enviar correos personalizados?**  
+R: Debes usar las configuraciones SMTP proporcionadas por tu proveedor de servicios de correo electrónico o el departamento de TI de tu organización. Estas configuraciones suelen incluir la dirección del servidor SMTP, el número de puerto y las credenciales de autenticación.
 
-No hay un límite estricto para la longitud de los encabezados y pies de página personalizados. Sin embargo, se recomienda que sean concisos y relevantes para mantener una apariencia profesional.
-
-### ¿Puedo utilizar formato HTML en el contenido del correo electrónico?
-
-Sí, puedes usar formato HTML en el contenido del correo electrónico, incluyendo encabezados y pies de página. Esto te permite crear correos electrónicos visualmente atractivos e informativos.
-
-### ¿Qué configuración SMTP debo utilizar para enviar correos electrónicos personalizados?
-
-Debe usar la configuración SMTP proporcionada por su proveedor de servicios de correo electrónico o el departamento de TI de su organización. Esta configuración suele incluir la dirección del servidor SMTP, el número de puerto y las credenciales de autenticación.
+**Última actualización:** 2026-01-04  
+**Probado con:** Aspose.Email para Java 24.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
