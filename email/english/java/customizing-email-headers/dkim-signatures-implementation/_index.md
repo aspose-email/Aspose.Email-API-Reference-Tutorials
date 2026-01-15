@@ -1,6 +1,6 @@
 ---
 title: DKIM Email Authentication - Signatures Implementation with Aspose.Email
-linktitle: DKIM Email Authentication: Signatures Implementation with Aspose.Email
+linktitle: DKIM Email Authentication - Signatures Implementation with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to implement dkim email authentication with Aspose.Email for Java to improve email deliverability and secure your messages.
 date: 2026-01-09
