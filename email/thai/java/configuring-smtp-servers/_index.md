@@ -9,11 +9,11 @@ url: /th/java/configuring-smtp-servers/
 weight: 12
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
+
 {{< blocks/products/pf/main-container >}}
 
-{{< blocks/products/products-backtop-button >}}
-
-{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
 # กำหนดค่าเซิร์ฟเวอร์ SMTP สำหรับ Java ด้วย Aspose.Email สำหรับ Java
 
@@ -103,4 +103,4 @@ A: ไลบรารีเองไม่มีการจำกัดขน�
 
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
