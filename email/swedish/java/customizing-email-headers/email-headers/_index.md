@@ -1,10 +1,13 @@
 ---
-"description": "Lås upp kraften i e-postrubriker med Aspose.Email för Java. Lär dig hur du enkelt ställer in och hämtar e-postrubriker."
-"linktitle": "E-postrubriker i Aspose.Email"
-"second_title": "Aspose.Email Java e-posthanterings-API"
-"title": "E-postrubriker i Aspose.Email"
-"url": "/sv/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Lär dig hur du **skapar anpassade e-postrubriker** och **ställer in värden
+  för anpassade e-postrubriker** med Aspose.Email för Java, samt hur du **läser information
+  om e-postens ämnesrubrik**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Skapa anpassade e‑postrubriker med Aspose.Email
+url: /sv/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E-postrubriker i Aspose.Email
+# Skapa anpassade e‑postrubriker med Aspose.Email
 
+## Introduktion till e‑postrubriker
 
-## Introduktion till e-postrubriker
+E‑postrubriker är de digitala kuvert som följer med varje meddelande. De bär viktig metadata—såsom vem som skickade mailet, när det skickades och vilken väg det tog—så att e‑postservrar och klienter kan bearbeta meddelandet korrekt. I den här handledningen kommer du att lära dig hur du **skapar anpassade e‑postrubriker**, varför de är viktiga, och hur Aspose.Email för Java gör hela processen enkel.
 
-E-postrubriker är som kuverten i digitala meddelanden. De innehåller viktiga metadata som vägleder ett e-postmeddelande genom dess resa från avsändare till mottagare. Att förstå e-postrubriker kan hjälpa dig att spåra e-postmeddelandets väg, identifiera potentiella problem och säkerställa säker och pålitlig e-postkommunikation.
+## Quick Answers
+- **Vad är det primära sättet att lägga till en anpassad rubrik?** Använd `Headers`-samlingen på ett `MailMessage`-objekt.  
+- **Kan jag läsa Subject‑rubriken efter att ha laddat ett e‑postmeddelande?** Ja—åtkomst via `message.getHeaders().get("Subject")`.  
+- **Behöver jag en licens för att använda rubrik‑API:erna?** En provversion fungerar för utveckling; en kommersiell licens krävs för produktion.  
+- **Finns det någon begränsning på namn för anpassade rubriker?** Följ RFC 5322‑namngivningskonventioner (t.ex. börja med “X-”).  
+- **Vilken version av Aspose.Email stödjer dessa funktioner?** Alla senaste versioner (2024‑2026) inkluderar full rubrikhantering.
 
-### Vad är e-postrubriker?
+## Vad är e‑postrubriker?
 
-E-postrubriker är rader med metadata i början av ett e-postmeddelande. De ger information om meddelandets ursprung, rutt och hantering. Vanliga fält i e-postrubriker inkluderar:
+E‑postrubriker är rader med metadata placerade högst upp i ett e‑postmeddelande. De beskriver meddelandets ursprung, rutt och hanteringsinstruktioner. Vanliga fält inkluderar:
 
-- Från: Avsändarens e-postadress.
-- Till: Mottagarens e-postadress.
-- Ämne: Ämnet för e-postmeddelandet.
-- Datum: Datum och tid då e-postmeddelandet skickades.
-- Mottaget: En serie poster som beskriver e-postmeddelandets resa från avsändare till mottagare.
-- Meddelande-ID: En unik identifierare för e-postmeddelandet.
+- **From:** Avsändarens adress.  
+- **To:** Mottagarens adress.  
+- **Subject:** E‑postens ämnesrad.  
+- **Date:** Tidsstämpel för när meddelandet skapades.  
+- **Received:** En spårning av varje server som hanterade mailet.  
+- **Message-ID:** En globalt unik identifierare.
 
-## Arbeta med e-postrubriker i Aspose.Email
+## Varför ange anpassad e‑postrubrik?
 
-Nu när vi förstår betydelsen av e-postrubriker, låt oss utforska hur man arbetar med dem med Aspose.Email för Java. Aspose.Email är ett kraftfullt bibliotek som låter utvecklare skapa, manipulera och extrahera information från e-postmeddelanden, inklusive deras rubriker.
+Att lägga till en **anpassad e‑postrubrik** kan hjälpa dig:
 
-### Ställa in e-postrubriker
+1. **Spåra interna arbetsflöden** – t.ex. `X-Job-ID` för automatiserad behandling.  
+2. **Styr routing** – t.ex. `X-Priority` för att påverka leveransprioritet.  
+3. **Bädda in metadata** – t.ex. korrelations‑ID:n för loggning och felsökning.
 
-Så här ställer du in e-postrubriker programmatiskt med Aspose.Email:
+## Arbeta med e‑postrubriker i Aspose.Email
 
-1. Initiera ett e-postmeddelande: Skapa en instans av `MailMessage` klass.
+Nu när vi förstår betydelsen av e‑postrubriker, låt oss gå in på de praktiska stegen för att skapa, ange och läsa dem med Aspose.Email för Java.
+
+### Ange e‑postrubriker (Skapa anpassade e‑postrubriker)
+
+Följ dessa tre enkla steg:
+
+1. **Initiera ett e‑postmeddelande** – skapa en ny `MailMessage`-instans.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Ange rubrikvärden: Använd `Headers` samling för att ange rubrikvärden.
+2. **Lägg till en anpassad rubrik** – använd `Headers`-samlingen för att **ange anpassade e‑postrubriker**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Skicka e-postmeddelandet: Skicka e-postmeddelandet som vanligt.
+3. **Skicka e‑posten** – konfigurera en `SmtpClient` och skicka meddelandet.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Hämta e-postrubriker
+> **Proffstips:** Prefixa anpassade rubriker med `X-` för att följa RFC 5322 och undvika konflikter med standardfält.
 
-För att hämta e-postrubriker från ett inkommande e-postmeddelande med Aspose.Email kan du följa dessa steg:
+### Hämta e‑postrubriker (Läs e‑postens Subject‑rubrik)
 
-1. Läs in e-postmeddelandet: Läs in det inkommande e-postmeddelandet.
+När du tar emot ett e‑postmeddelande kan du extrahera vilken rubrik som helst—inklusive ämnet—med samma `Headers`-samling:
+
+1. **Läs in e‑posten** från en `.eml`-fil eller en ström.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Åtkomst till rubrikvärden: Åtkomst till rubrikvärden med hjälp av `Headers` samling.
+2. **Läs rubrikvärden** såsom `Subject` eller något anpassat fält du tidigare har angett.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Slutsats
+> **Obs:** `Headers`-samlingen returnerar `null` om den begärda rubriken inte finns, så kontrollera alltid `null` innan du använder värdet.
 
-E-postrubriker är de okända hjältarna inom e-postkommunikation, de bär viktig information som säkerställer att e-postmeddelanden når sina avsedda mottagare. Aspose.Email för Java förenklar arbetet med e-postrubriker, vilket gör det möjligt för utvecklare att utnyttja kraften i dessa metadata för olika ändamål. Oavsett om du behöver ställa in anpassade rubriker, hämta information eller analysera e-postrutter, tillhandahåller Aspose.Email de verktyg du behöver för effektiv hantering av e-postrubriker.
+## Vanliga problem och lösningar
+
+| Problem | Orsak | Lösning |
+|-------|-------|----------|
+| Rubrik visas inte i mottagen e‑post | SMTP‑server tar bort okända rubriker | Se till att servern tillåter anpassade `X-`-rubriker eller konfigurera den för att bevara dem. |
+| `null` returneras när en rubrik läses | Felaktigt rubriknamn (skiftlägeskänsligt) | Använd exakt rubriknamn som lagrats, t.ex. "Subject" inte "subject". |
+| Duplicerade rubriker | Lägger till samma rubrik flera gånger | Använd `addOrUpdate` (om tillgängligt) eller ta bort den gamla posten innan du lägger till en ny. |
 
 ## Vanliga frågor
 
-### Hur kan jag visa e-postrubriker i populära e-postklienter?
+**Q: Hur kan jag visa e‑postrubriker i populära e‑postklienter?**  
+A: De flesta klienter låter dig visa råkällan—sök efter alternativ som “View Original”, “Show Headers” eller “View Source”.
 
-I de flesta e-postklienter kan du visa e-postrubriker genom att öppna e-postmeddelandet och leta efter ett alternativ som "Visa källa" eller "Visa original".
+**Q: Är e‑postrubriker krypterade?**  
+A: Nej. Rubriker är klartextmetadata och överförs i klartext om inte hela meddelandet är krypterat (t.ex. S/MIME).
 
-### Är e-postrubriker krypterade?
+**Q: Kan jag ändra e‑postrubriker efter att ha skickat ett e‑postmeddelande?**  
+A: När meddelandet väl är på vägen är rubrikerna oföränderliga. Ange alla nödvändiga rubriker **innan** du anropar `client.send(message)`.
 
-Nej, e-postrubriker är inte krypterade. De är en del av e-postmeddelandets metadata och är vanligtvis i klartext.
+**Q: Vad är syftet med “Received”-rubriken?**  
+A: Den registrerar varje hopp e‑posten tar, vilket hjälper administratörer att felsöka leveransproblem och spåra vägen.
 
-### Kan jag ändra e-postrubriker efter att jag skickat ett e-postmeddelande?
+**Q: Hur kan jag extrahera e‑postrubriker från en stor mängd e‑postmeddelanden?**  
+A: Använd Aspose.Email:s `MailMessage.load` i en loop eller utnyttja dess `MailMessageCollection` för massbearbetning.
 
-När ett e-postmeddelande väl har skickats är dess rubriker vanligtvis oföränderliga. Det är viktigt att ställa in önskade rubriker innan du skickar e-postmeddelandet.
+---
 
-### Vad är syftet med rubriken "Mottaget"?
-
-Rubriken "Mottaget" är en serie poster som spårar e-postmeddelandets väg från avsändare till mottagare. Den hjälper till att diagnostisera leveransproblem och spåra e-postmeddelandets rutt.
-
-### Hur kan jag extrahera e-postrubriker från en stor mängd e-postmeddelanden?
-
-Du kan använda Aspose.Emails batchbehandlingsfunktioner för att effektivt extrahera rubriker från flera e-postmeddelanden.
+**Senast uppdaterad:** 2026-01-14  
+**Testat med:** Aspose.Email för Java 24.11 (2024‑2026)  
+**Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

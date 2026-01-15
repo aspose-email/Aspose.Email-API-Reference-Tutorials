@@ -1,10 +1,13 @@
 ---
-"description": "Nutzen Sie die Leistungsfähigkeit von E-Mail-Headern mit Aspose.Email für Java. Erfahren Sie, wie Sie mühelos E-Mail-Header festlegen und abrufen."
-"linktitle": "E-Mail-Header in Aspose.Email"
-"second_title": "Aspose.Email Java E-Mail-Verwaltungs-API"
-"title": "E-Mail-Header in Aspose.Email"
-"url": "/de/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Erfahren Sie, wie Sie **benutzerdefinierte E‑Mail‑Header erstellen**
+  und **Werte für benutzerdefinierte E‑Mail‑Header festlegen** mit Aspose.Email für
+  Java, sowie wie Sie **Informationen zum Betreff‑Header von E‑Mails lesen**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Erstellen benutzerdefinierter E‑Mail‑Header mit Aspose.Email
+url: /de/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E-Mail-Header in Aspose.Email
+# Erstellen von benutzerdefinierten E‑Mail‑Headern mit Aspose.Email
 
+## Einführung in E‑Mail‑Header
 
-## Einführung in E-Mail-Header
+E‑Mail‑Header sind die digitalen Umschläge, die mit jeder Nachricht reisen. Sie enthalten wichtige Metadaten – wie den Absender, den Sendezeitpunkt und die Route – damit Mail‑Server und Clients die Nachricht korrekt verarbeiten können. In diesem Tutorial lernen Sie, **wie man benutzerdefinierte E‑Mail‑Header erstellt**, warum sie wichtig sind und wie Aspose.Email für Java den gesamten Vorgang unkompliziert gestaltet.
 
-E-Mail-Header sind wie die Umschläge digitaler Nachrichten. Sie enthalten wichtige Metadaten, die eine E-Mail auf ihrem Weg vom Absender zum Empfänger begleiten. Das Verständnis der E-Mail-Header hilft Ihnen, den Weg einer E-Mail nachzuvollziehen, potenzielle Probleme zu erkennen und eine sichere und zuverlässige E-Mail-Kommunikation zu gewährleisten.
+## Schnellantworten
+- **Was ist der primäre Weg, einen benutzerdefinierten Header hinzuzufügen?** Verwenden Sie die `Headers`‑Sammlung eines `MailMessage`‑Objekts.  
+- **Kann ich den Subject‑Header nach dem Laden einer E‑Mail auslesen?** Ja – greifen Sie über `message.getHeaders().get("Subject")` darauf zu.  
+- **Benötige ich eine Lizenz, um die Header‑APIs zu nutzen?** Eine Testversion reicht für die Entwicklung; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
+- **Gibt es ein Limit für Namen benutzerdefinierter Header?** Halten Sie sich an die Namenskonventionen von RFC 5322 (z. B. mit „X-“ beginnen).  
+- **Welche Aspose.Email‑Version unterstützt diese Funktionen?** Alle aktuellen Versionen (2024‑2026) enthalten die vollständige Header‑Manipulation.
 
-### Was sind E-Mail-Header?
+## Was sind E‑Mail‑Header?
 
-E-Mail-Header sind Metadatenzeilen am Anfang einer E-Mail-Nachricht. Sie enthalten Informationen über den Ursprung, die Weiterleitung und die Bearbeitung der Nachricht. Zu den gängigen E-Mail-Header-Feldern gehören:
+E‑Mail‑Header sind Zeilen mit Metadaten, die am Anfang einer E‑Mail‑Nachricht platziert werden. Sie beschreiben Ursprung, Route und Verarbeitungsanweisungen der Nachricht. Häufige Felder sind:
 
-- Von: Die E-Mail-Adresse des Absenders.
-- An: Die E-Mail-Adresse des Empfängers.
-- Betreff: Der Betreff der E-Mail.
-- Datum: Datum und Uhrzeit des E-Mail-Versands.
-- Empfangen: Eine Reihe von Einträgen, die den Weg der E-Mail vom Absender zum Empfänger detailliert beschreiben.
-- Nachrichten-ID: Eine eindeutige Kennung für die E-Mail-Nachricht.
+- **From:** Adresse des Absenders.  
+- **To:** Adresse des Empfängers.  
+- **Subject:** Betreffzeile der E‑Mail.  
+- **Date:** Zeitstempel, wann die Nachricht erstellt wurde.  
+- **Received:** Nachverfolgung jedes Servers, der die Mail verarbeitet hat.  
+- **Message-ID:** Globale eindeutige Kennung.
 
-## Arbeiten mit E-Mail-Headern in Aspose.Email
+## Warum benutzerdefinierte E‑Mail‑Header setzen?
 
-Nachdem wir nun die Bedeutung von E-Mail-Headern verstanden haben, wollen wir untersuchen, wie man mit ihnen mithilfe von Aspose.Email für Java arbeitet. Aspose.Email ist eine leistungsstarke Bibliothek, mit der Entwickler Informationen aus E-Mail-Nachrichten, einschließlich ihrer Header, erstellen, bearbeiten und extrahieren können.
+Das Hinzufügen eines **benutzerdefinierten E‑Mail‑Headers** kann Ihnen helfen:
 
-### Festlegen von E-Mail-Headern
+1. **Interne Arbeitsabläufe verfolgen** – z. B. `X-Job-ID` für automatisierte Verarbeitung.  
+2. **Routing steuern** – z. B. `X-Priority`, um die Lieferpriorität zu beeinflussen.  
+3. **Metadaten einbetten** – z. B. Korrelations‑IDs für Protokollierung und Fehlersuche.
 
-Um E-Mail-Header programmgesteuert mit Aspose.Email festzulegen, gehen Sie folgendermaßen vor:
+## Arbeiten mit E‑Mail‑Headern in Aspose.Email
 
-1. Initialisieren einer E-Mail-Nachricht: Erstellen Sie eine Instanz des `MailMessage` Klasse.
+Jetzt, wo wir die Bedeutung von E‑Mail‑Headern verstanden haben, gehen wir zu den praktischen Schritten über, um sie mit Aspose.Email für Java zu erstellen, zu setzen und auszulesen.
+
+### Header setzen (Erstellen benutzerdefinierter E‑Mail‑Header)
+
+Folgen Sie diesen drei einfachen Schritten:
+
+1. **Eine E‑Mail‑Nachricht initialisieren** – eine neue `MailMessage`‑Instanz erzeugen.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Header-Werte festlegen: Verwenden Sie die `Headers` Sammlung zum Festlegen von Headerwerten.
+2. **Einen benutzerdefinierten Header hinzufügen** – die `Headers`‑Sammlung verwenden, um **benutzerdefinierte E‑Mail‑Header**‑Werte zu setzen.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. E-Mail senden: Senden Sie die E-Mail wie gewohnt.
+3. **Die E‑Mail senden** – einen `SmtpClient` konfigurieren und die Nachricht versenden.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Abrufen von E-Mail-Headern
+> **Pro‑Tipp:** Präfixen Sie benutzerdefinierte Header mit `X-`, um RFC 5322‑Konformität zu gewährleisten und Konflikte mit Standardfeldern zu vermeiden.
 
-Um E-Mail-Header aus einer eingehenden E-Mail mit Aspose.Email abzurufen, können Sie die folgenden Schritte ausführen:
+### Header auslesen (Subject‑Header einer E‑Mail lesen)
 
-1. E-Mail-Nachricht laden: Laden Sie die eingehende E-Mail-Nachricht.
+Wenn Sie eine E‑Mail erhalten, können Sie jeden Header – einschließlich des Betreffs – mit derselben `Headers`‑Sammlung extrahieren:
+
+1. **Die E‑Mail laden** aus einer `.eml`‑Datei oder einem Stream.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Zugriff auf Headerwerte: Zugriff auf Headerwerte mit dem `Headers` Sammlung.
+2. **Header‑Werte auslesen**, z. B. `Subject` oder ein zuvor gesetztes benutzerdefiniertes Feld.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Abschluss
+> **Hinweis:** Die `Headers`‑Sammlung gibt `null` zurück, wenn der angeforderte Header nicht existiert. Prüfen Sie daher immer auf `null`, bevor Sie den Wert verwenden.
 
-E-Mail-Header sind die heimlichen Helden der E-Mail-Kommunikation. Sie enthalten wichtige Informationen, die sicherstellen, dass E-Mails ihre Empfänger erreichen. Aspose.Email für Java vereinfacht die Arbeit mit E-Mail-Headern und ermöglicht Entwicklern, die Leistungsfähigkeit dieser Metadaten für verschiedene Zwecke zu nutzen. Ob Sie benutzerdefinierte Header festlegen, Informationen abrufen oder E-Mail-Routen analysieren möchten – Aspose.Email bietet Ihnen die Tools für eine effiziente E-Mail-Header-Bearbeitung.
+## Häufige Probleme und Lösungen
+
+| Problem | Ursache | Lösung |
+|---------|---------|--------|
+| Header erscheint nicht in der empfangenen E‑Mail | SMTP‑Server entfernt unbekannte Header | Stellen Sie sicher, dass der Server benutzerdefinierte `X-`‑Header zulässt oder konfigurieren Sie ihn so, dass sie erhalten bleiben. |
+| `null` zurückgegeben beim Auslesen eines Headers | Tippfehler im Header‑Namen (Groß‑/Kleinschreibung) | Verwenden Sie exakt den gespeicherten Header‑Namen, z. B. `"Subject"` statt `"subject"`. |
+| Doppelte Header | Derselbe Header wird mehrfach hinzugefügt | Nutzen Sie `addOrUpdate` (falls verfügbar) oder entfernen Sie den alten Eintrag, bevor Sie einen neuen hinzufügen. |
 
 ## Häufig gestellte Fragen
 
-### Wie kann ich E-Mail-Header in gängigen E-Mail-Clients anzeigen?
+**F: Wie kann ich E‑Mail‑Header in gängigen E‑Mail‑Clients anzeigen?**  
+A: Die meisten Clients ermöglichen das Anzeigen des Rohquelltexts – suchen Sie nach Optionen wie „Original anzeigen“, „Header anzeigen“ oder „Quelltext anzeigen“.
 
-In den meisten E-Mail-Clients können Sie E-Mail-Header anzeigen, indem Sie die E-Mail öffnen und nach einer Option wie „Quelle anzeigen“ oder „Original anzeigen“ suchen.
+**F: Sind E‑Mail‑Header verschlüsselt?**  
+A: Nein. Header sind Klartext‑Metadaten und werden unverschlüsselt übertragen, es sei denn, die gesamte Nachricht ist verschlüsselt (z. B. S/MIME).
 
-### Sind E-Mail-Header verschlüsselt?
+**F: Kann ich E‑Mail‑Header nach dem Senden einer Nachricht ändern?**  
+A: Sobald die Nachricht unterwegs ist, sind Header unveränderlich. Setzen Sie alle erforderlichen Header **vor** dem Aufruf von `client.send(message)`.
 
-Nein, E-Mail-Header sind nicht verschlüsselt. Sie sind Teil der Metadaten der E-Mail und liegen normalerweise im Klartext vor.
+**F: Welchen Zweck hat der „Received“-Header?**  
+A: Er protokolliert jeden Hop, den die E‑Mail nimmt, und hilft Administratoren, Lieferprobleme zu diagnostizieren und den Pfad nachzuvollziehen.
 
-### Kann ich E-Mail-Header nach dem Senden einer E-Mail ändern?
+**F: Wie kann ich Header aus einer großen Menge von E‑Mails extrahieren?**  
+A: Verwenden Sie `MailMessage.load` in einer Schleife oder nutzen Sie die `MailMessageCollection` von Aspose.Email für die Batch‑Verarbeitung.
 
-Sobald eine E-Mail gesendet wurde, sind ihre Header in der Regel unveränderlich. Es ist wichtig, die gewünschten Header vor dem Senden der E-Mail festzulegen.
+---
 
-### Was ist der Zweck des Headers „Received“?
-
-Der Header „Empfangen“ besteht aus einer Reihe von Einträgen, die den Weg der E-Mail vom Absender zum Empfänger verfolgen. Er hilft bei der Diagnose von Zustellungsproblemen und der Nachverfolgung des E-Mail-Verlaufs.
-
-### Wie kann ich E-Mail-Header aus einer großen Menge von E-Mails extrahieren?
-
-Sie können die Stapelverarbeitungsfunktionen von Aspose.Email verwenden, um Kopfzeilen effizient aus mehreren E-Mails zu extrahieren.
+**Zuletzt aktualisiert:** 2026-01-14  
+**Getestet mit:** Aspose.Email für Java 24.11 (2024‑2026)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

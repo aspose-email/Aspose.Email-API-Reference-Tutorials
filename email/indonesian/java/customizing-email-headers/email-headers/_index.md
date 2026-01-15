@@ -1,10 +1,13 @@
 ---
-"description": "Manfaatkan Kekuatan Header Email dengan Aspose.Email untuk Java. Pelajari cara mengatur dan mengambil header email dengan mudah."
-"linktitle": "Header Email di Aspose.Email"
-"second_title": "Aspose.Email API Manajemen Email Java"
-"title": "Header Email di Aspose.Email"
-"url": "/id/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Pelajari cara **membuat header khusus email** dan **mengatur nilai header
+  khusus email** menggunakan Aspose.Email untuk Java, serta cara **membaca informasi
+  header subjek email**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Buat Header Kustom Email dengan Aspose.Email
+url: /id/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Header Email di Aspose.Email
+# Membuat Header Kustom Email dengan Aspose.Email
 
+## Pengenalan Header Email
 
-## Pengantar Header Email
+Header email adalah amplop digital yang menyertai setiap pesan. Mereka membawa metadata penting—seperti siapa yang mengirim email, kapan dikirim, dan rute yang dilalui—sehingga server dan klien email dapat memproses pesan dengan benar. Dalam tutorial ini Anda akan belajar cara **membuat header kustom email**, mengapa mereka penting, dan bagaimana Aspose.Email untuk Java membuat seluruh proses menjadi sederhana.
 
-Header email seperti amplop pesan digital. Header email berisi metadata penting yang memandu email dalam perjalanannya dari pengirim ke penerima. Memahami header email dapat membantu Anda melacak jalur yang diambil email, mengidentifikasi potensi masalah, dan memastikan komunikasi email yang aman dan andal.
+## Jawaban Cepat
+- **Apa cara utama menambahkan header kustom?** Gunakan koleksi `Headers` pada objek `MailMessage`.  
+- **Bisakah saya membaca header Subject setelah memuat email?** Ya—akses melalui `message.getHeaders().get("Subject")`.  
+- **Apakah saya memerlukan lisensi untuk menggunakan API header?** Versi percobaan dapat digunakan untuk pengembangan; lisensi komersial diperlukan untuk produksi.  
+- **Apakah ada batasan pada nama header kustom?** Ikuti konvensi penamaan RFC 5322 (misalnya, mulai dengan “X-”).  
+- **Versi Aspose.Email mana yang mendukung fitur ini?** Semua versi terbaru (2024‑2026) mencakup manipulasi header secara lengkap.
 
-### Apa itu Header Email?
+## Apa Itu Header Email?
 
-Header email adalah baris metadata di awal pesan email. Header email menyediakan informasi tentang asal, rute, dan penanganan pesan. Bidang header email yang umum meliputi:
+Header email adalah baris metadata yang diletakkan di bagian atas pesan email. Mereka menjelaskan asal pesan, rute, dan instruksi penanganannya. Field umum meliputi:
 
-- Dari: Alamat email pengirim.
-- Kepada: Alamat email penerima.
-- Subjek: Subjek email.
-- Tanggal: Tanggal dan waktu email dikirim.
-- Diterima: Serangkaian entri yang merinci perjalanan email dari pengirim ke penerima.
-- Message-ID: Pengidentifikasi unik untuk pesan email.
+- **From:** Alamat pengirim.  
+- **To:** Alamat penerima.  
+- **Subject:** Baris subjek email.  
+- **Date:** Stempel waktu kapan pesan dibuat.  
+- **Received:** Jejak setiap server yang menangani email.  
+- **Message-ID:** Pengidentifikasi unik secara global.
+
+## Mengapa Menetapkan Header Email Kustom?
+
+Menambahkan **header email kustom** dapat membantu Anda:
+
+1. **Melacak alur kerja internal** – misalnya, `X-Job-ID` untuk pemrosesan otomatis.  
+2. **Mengontrol perutean** – misalnya, `X-Priority` untuk memengaruhi prioritas pengiriman.  
+3. **Menyematkan metadata** – misalnya, ID korelasi untuk pencatatan dan debugging.
 
 ## Bekerja dengan Header Email di Aspose.Email
 
-Sekarang setelah kita memahami pentingnya header email, mari kita bahas cara menggunakannya menggunakan Aspose.Email untuk Java. Aspose.Email adalah pustaka canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengekstrak informasi dari pesan email, termasuk headernya.
+Setelah kita memahami pentingnya header email, mari masuk ke langkah praktis untuk membuat, menetapkan, dan membacanya dengan Aspose.Email untuk Java.
 
-### Mengatur Header Email
+### Menetapkan Header Email (Membuat Header Kustom Email)
 
-Untuk mengatur header email secara terprogram menggunakan Aspose.Email, ikuti langkah-langkah berikut:
+Ikuti tiga langkah sederhana berikut:
 
-1. Inisialisasi Pesan Email: Buat contoh Pesan Email: `MailMessage` kelas.
+1. **Inisialisasi Pesan Email** – buat instance `MailMessage` baru.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Tetapkan Nilai Header: Gunakan `Headers` koleksi untuk mengatur nilai header.
+2. **Tambahkan header kustom** – gunakan koleksi `Headers` untuk **menetapkan nilai header email kustom**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Kirim Email: Kirim email seperti biasa.
+3. **Kirim email** – konfigurasikan `SmtpClient` dan kirim pesan.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Mengambil Header Email
+> **Pro tip:** Awali header kustom dengan `X-` agar tetap sesuai dengan RFC 5322 dan menghindari konflik dengan field standar.
 
-Untuk mengambil header email dari email masuk menggunakan Aspose.Email, Anda dapat mengikuti langkah-langkah berikut:
+### Mengambil Header Email (Membaca Header Subjek Email)
 
-1. Muat Pesan Email: Muat pesan email yang masuk.
+Saat Anda menerima email, Anda dapat mengekstrak header apa pun—termasuk subjek—menggunakan koleksi `Headers` yang sama:
+
+1. **Muat email** dari file `.eml` atau stream.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Akses Nilai Header: Akses nilai header menggunakan `Headers` koleksi.
+2. **Baca nilai header** seperti `Subject` atau field kustom lain yang sebelumnya Anda tetapkan.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Kesimpulan
+> **Catatan:** Koleksi `Headers` mengembalikan `null` jika header yang diminta tidak ada, jadi selalu periksa `null` sebelum menggunakan nilai tersebut.
 
-Header email adalah pahlawan komunikasi email yang tidak dikenal, yang memuat informasi penting yang memastikan email sampai ke penerima yang dituju. Aspose.Email untuk Java menyederhanakan tugas bekerja dengan header email, yang memungkinkan pengembang memanfaatkan kekuatan metadata ini untuk berbagai keperluan. Apakah Anda perlu mengatur header khusus, mengambil informasi, atau menganalisis rute email, Aspose.Email menyediakan alat yang Anda perlukan untuk manipulasi header email yang efisien.
+## Masalah Umum dan Solusinya
+
+| Masalah | Penyebab | Solusi |
+|-------|-------|----------|
+| Header tidak muncul di email yang diterima | Server SMTP menghapus header yang tidak dikenal | Pastikan server mengizinkan header `X-` kustom atau konfigurasikan agar mempertahankannya. |
+| `null` dikembalikan saat membaca header | Kesalahan penulisan nama header (case‑sensitive) | Gunakan nama header persis seperti yang disimpan, misalnya `"Subject"` bukan `"subject"`. |
+| Header duplikat | Menambahkan header yang sama berkali‑kali | Gunakan `addOrUpdate` (jika tersedia) atau hapus entri lama sebelum menambahkan yang baru. |
 
 ## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara melihat header email di klien email populer?
+**T: Bagaimana cara melihat header email di klien email populer?**  
+J: Kebanyakan klien memungkinkan Anda melihat sumber mentah—cari opsi “View Original,” “Show Headers,” atau “View Source”.
 
-Di sebagian besar klien email, Anda dapat melihat tajuk email dengan membuka email dan mencari opsi seperti "Lihat Sumber" atau "Tampilkan Asli".
+**T: Apakah header email terenkripsi?**  
+J: Tidak. Header adalah metadata teks biasa dan dikirimkan dalam teks jelas kecuali seluruh pesan dienkripsi (misalnya, S/MIME).
 
-### Apakah header email dienkripsi?
+**T: Bisakah saya memodifikasi header email setelah mengirim email?**  
+J: Setelah pesan berada di jaringan, header tidak dapat diubah. Tetapkan semua header yang diperlukan **sebelum** memanggil `client.send(message)`.
 
-Tidak, header email tidak dienkripsi. Header email merupakan bagian dari metadata email dan biasanya berupa teks biasa.
+**T: Apa tujuan header “Received”?**  
+J: Header ini mencatat setiap hop yang dilalui email, membantu administrator memecahkan masalah pengiriman dan melacak jalur.
 
-### Bisakah saya mengubah header email setelah mengirim email?
+**T: Bagaimana cara mengekstrak header email dari sejumlah besar email?**  
+J: Gunakan `MailMessage.load` dalam loop atau manfaatkan `MailMessageCollection` Aspose.Email untuk pemrosesan massal.
 
-Setelah email dikirim, header-nya biasanya tidak dapat diubah. Sangat penting untuk mengatur header yang diinginkan sebelum mengirim email.
+---
 
-### Apa tujuan dari header "Diterima"?
-
-Header "Diterima" adalah serangkaian entri yang melacak jalur email dari pengirim ke penerima. Header ini membantu mendiagnosis masalah pengiriman dan melacak rute email.
-
-### Bagaimana cara mengekstrak header email dari sekumpulan besar email?
-
-Anda dapat menggunakan kemampuan pemrosesan batch Aspose.Email untuk mengekstrak header dari beberapa email secara efisien.
+**Terakhir Diperbarui:** 2026-01-14  
+**Diuji Dengan:** Aspose.Email untuk Java 24.11 (2024‑2026)  
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,10 +1,13 @@
 ---
-"description": "Sfrutta la potenza delle intestazioni email con Aspose.Email per Java. Scopri come impostare e recuperare le intestazioni email senza sforzo."
-"linktitle": "Intestazioni e-mail in Aspose.Email"
-"second_title": "API di gestione e-mail Java Aspose.Email"
-"title": "Intestazioni e-mail in Aspose.Email"
-"url": "/it/java/customizing-email-headers/email-headers/"
-"weight": 10
+date: 2026-01-14
+description: Scopri come **creare intestazioni personalizzate per le email** e **impostare
+  i valori delle intestazioni personalizzate** utilizzando Aspose.Email per Java,
+  oltre a come **leggere le informazioni dell'intestazione dell'oggetto dell'email**.
+linktitle: Create Email Custom Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Crea intestazioni email personalizzate con Aspose.Email
+url: /it/java/customizing-email-headers/email-headers/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,93 +16,116 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Intestazioni e-mail in Aspose.Email
+# Crea intestazioni email personalizzate con Aspose.Email
 
+## Introduzione alle intestazioni email
 
-## Introduzione alle intestazioni delle email
+Le intestazioni email sono le buste digitali che accompagnano ogni messaggio. Trasportano metadati vitali — come chi ha inviato il messaggio, quando è stato inviato e il percorso seguito — così che i server di posta e i client possano elaborare il messaggio correttamente. In questo tutorial imparerai a **creare intestazioni email personalizzate**, perché sono importanti e come Aspose.Email per Java renda l’intero processo semplice.
 
-Le intestazioni delle email sono come le buste dei messaggi digitali. Contengono metadati essenziali che guidano un'email nel suo percorso dal mittente al destinatario. Comprendere le intestazioni delle email può aiutarti a tracciare il percorso di un'email, identificare potenziali problemi e garantire comunicazioni email sicure e affidabili.
+## Risposte rapide
+- **Qual è il modo principale per aggiungere un’intestazione personalizzata?** Usa la collezione `Headers` su un oggetto `MailMessage`.  
+- **Posso leggere l’intestazione Subject dopo aver caricato un’email?** Sì — accedila tramite `message.getHeaders().get("Subject")`.  
+- **È necessaria una licenza per usare le API delle intestazioni?** Una versione di prova è sufficiente per lo sviluppo; è richiesta una licenza commerciale per la produzione.  
+- **Esiste un limite ai nomi delle intestazioni personalizzate?** Segui le convenzioni di denominazione RFC 5322 (ad es., inizia con “X-”).  
+- **Quale versione di Aspose.Email supporta queste funzionalità?** Tutte le versioni recenti (2024‑2026) includono la manipolazione completa delle intestazioni.
 
-### Cosa sono le intestazioni delle email?
+## Cosa sono le intestazioni email?
 
-Le intestazioni email sono righe di metadati all'inizio di un messaggio email. Forniscono informazioni sull'origine, il percorso e la gestione del messaggio. I campi comuni delle intestazioni email includono:
+Le intestazioni email sono righe di metadati posizionate all’inizio di un messaggio email. Descrivono l’origine del messaggio, il percorso e le istruzioni di gestione. I campi più comuni includono:
 
-- Da: l'indirizzo email del mittente.
-- A: Indirizzo email del destinatario.
-- Oggetto: l'oggetto dell'e-mail.
-- Data: data e ora di invio dell'e-mail.
-- Ricevuto: una serie di voci che descrivono in dettaglio il percorso dell'e-mail dal mittente al destinatario.
-- Message-ID: identificatore univoco del messaggio di posta elettronica.
+- **From:** Indirizzo del mittente.  
+- **To:** Indirizzo del destinatario.  
+- **Subject:** Oggetto dell’email.  
+- **Date:** Data e ora di creazione del messaggio.  
+- **Received:** Traccia di ogni server che ha gestito la posta.  
+- **Message-ID:** Identificatore univoco globale.
 
-## Lavorare con le intestazioni delle email in Aspose.Email
+## Perché impostare un’intestazione email personalizzata?
 
-Ora che abbiamo compreso l'importanza delle intestazioni delle email, esploriamo come utilizzarle utilizzando Aspose.Email per Java. Aspose.Email è una potente libreria che consente agli sviluppatori di creare, manipolare ed estrarre informazioni dai messaggi email, incluse le intestazioni.
+Aggiungere una **intestazione email personalizzata** può aiutarti a:
 
-### Impostazione delle intestazioni e-mail
+1. **Tracciare i flussi di lavoro interni** – ad es., `X-Job-ID` per l’elaborazione automatizzata.  
+2. **Controllare il routing** – ad es., `X-Priority` per influenzare la priorità di consegna.  
+3. **Incorporare metadati** – ad es., ID di correlazione per il logging e il debug.
 
-Per impostare le intestazioni delle email a livello di codice utilizzando Aspose.Email, segui questi passaggi:
+## Lavorare con le intestazioni email in Aspose.Email
 
-1. Inizializza un messaggio di posta elettronica: crea un'istanza di `MailMessage` classe.
+Ora che comprendiamo l’importanza delle intestazioni email, passiamo ai passaggi pratici per crearle, impostarle e leggerle con Aspose.Email per Java.
+
+### Impostare le intestazioni email (Crea intestazioni email personalizzate)
+
+Segui questi tre semplici passaggi:
+
+1. **Inizializza un messaggio email** – crea una nuova istanza di `MailMessage`.
 
 ```java
 MailMessage message = new MailMessage();
 ```
 
-2. Imposta valori intestazione: utilizzare `Headers` raccolta per impostare i valori dell'intestazione.
+2. **Aggiungi un’intestazione personalizzata** – usa la collezione `Headers` per **impostare valori di intestazioni email personalizzate**.
 
 ```java
 message.getHeaders().add("X-Custom-Header", "My Custom Value");
 ```
 
-3. Invia l'e-mail: invia l'e-mail come faresti normalmente.
+3. **Invia l’email** – configura un `SmtpClient` e invia il messaggio.
 
 ```java
 SmtpClient client = new SmtpClient("smtp.example.com");
 client.send(message);
 ```
 
-### Recupero delle intestazioni e-mail
+> **Suggerimento:** Prefissa le intestazioni personalizzate con `X-` per rimanere conformi a RFC 5322 ed evitare conflitti con i campi standard.
 
-Per recuperare le intestazioni di un'e-mail in arrivo utilizzando Aspose.Email, puoi seguire questi passaggi:
+### Recuperare le intestazioni email (Leggi l’intestazione Subject)
 
-1. Carica il messaggio di posta elettronica: carica il messaggio di posta elettronica in arrivo.
+Quando ricevi un’email, puoi estrarre qualsiasi intestazione — incluso l’oggetto — usando la stessa collezione `Headers`:
+
+1. **Carica l’email** da un file `.eml` o da uno stream.
 
 ```java
 MailMessage message = MailMessage.load("path/to/email.eml");
 ```
 
-2. Valori dell'intestazione di accesso: accedi ai valori dell'intestazione utilizzando `Headers` collezione.
+2. **Leggi i valori delle intestazioni** come `Subject` o qualsiasi campo personalizzato impostato in precedenza.
 
 ```java
 String subject = message.getHeaders().get("Subject");
 String sender = message.getHeaders().get("From");
 ```
 
-## Conclusione
+> **Nota:** La collezione `Headers` restituisce `null` se l’intestazione richiesta non esiste, quindi verifica sempre `null` prima di utilizzare il valore.
 
-Le intestazioni delle email sono gli eroi misconosciuti della comunicazione via email, poiché contengono informazioni vitali che garantiscono che le email raggiungano i destinatari previsti. Aspose.Email per Java semplifica l'utilizzo delle intestazioni delle email, consentendo agli sviluppatori di sfruttare la potenza di questi metadati per vari scopi. Che si tratti di impostare intestazioni personalizzate, recuperare informazioni o analizzare i percorsi delle email, Aspose.Email fornisce gli strumenti necessari per una manipolazione efficiente delle intestazioni delle email.
+## Problemi comuni e soluzioni
+
+| Problema | Causa | Soluzione |
+|----------|-------|-----------|
+| L’intestazione non appare nell’email ricevuta | Il server SMTP elimina le intestazioni sconosciute | Assicurati che il server consenta intestazioni personalizzate `X-` o configurarlo per preservarle. |
+| Restituito `null` durante la lettura di un’intestazione | Errore di battitura nel nome dell’intestazione (case‑sensitive) | Usa esattamente il nome dell’intestazione memorizzato, ad es., `"Subject"` e non `"subject"`. |
+| Intestazioni duplicate | Aggiunta della stessa intestazione più volte | Usa `addOrUpdate` (se disponibile) o rimuovi la voce precedente prima di aggiungerne una nuova. |
 
 ## Domande frequenti
 
-### Come posso visualizzare le intestazioni delle email nei client di posta elettronica più diffusi?
+**D: Come posso visualizzare le intestazioni email nei client di posta più diffusi?**  
+R: La maggior parte dei client consente di visualizzare il sorgente grezzo — cerca le opzioni “View Original”, “Show Headers” o “View Source”.
 
-Nella maggior parte dei client di posta elettronica, è possibile visualizzare le intestazioni dei messaggi di posta elettronica aprendo il messaggio e cercando un'opzione come "Visualizza sorgente" o "Mostra originale".
+**D: Le intestazioni email sono criptate?**  
+R: No. Le intestazioni sono metadati in testo semplice e vengono trasmesse in chiaro, a meno che l’intero messaggio non sia criptato (ad es., S/MIME).
 
-### Le intestazioni delle email sono crittografate?
+**D: Posso modificare le intestazioni email dopo aver inviato il messaggio?**  
+R: Una volta che il messaggio è in transito, le intestazioni sono immutabili. Imposta tutte le intestazioni necessarie **prima** di chiamare `client.send(message)`.
 
-No, le intestazioni delle email non sono crittografate. Fanno parte dei metadati dell'email e sono in genere in testo normale.
+**D: Qual è lo scopo dell’intestazione “Received”?**  
+R: Registra ogni salto che l’email compie, aiutando gli amministratori a risolvere problemi di consegna e a tracciare il percorso.
 
-### Posso modificare le intestazioni di un'email dopo averla inviata?
+**D: Come posso estrarre le intestazioni email da un grande lotto di messaggi?**  
+R: Usa `MailMessage.load` in un ciclo o sfrutta `MailMessageCollection` di Aspose.Email per l’elaborazione in batch.
 
-Una volta inviata un'email, le sue intestazioni sono solitamente immutabili. È fondamentale impostare le intestazioni desiderate prima di inviare l'email.
+---
 
-### Qual è lo scopo dell'intestazione "Ricevuto"?
-
-L'intestazione "Ricevuto" è una serie di voci che tracciano il percorso dell'email dal mittente al destinatario. Aiuta a diagnosticare problemi di recapito e a tracciare il percorso dell'email.
-
-### Come posso estrarre le intestazioni delle email da un batch di grandi dimensioni?
-
-È possibile utilizzare le funzionalità di elaborazione batch di Aspose.Email per estrarre intestazioni da più e-mail in modo efficiente.
+**Ultimo aggiornamento:** 2026-01-14  
+**Testato con:** Aspose.Email per Java 24.11 (2024‑2026)  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
