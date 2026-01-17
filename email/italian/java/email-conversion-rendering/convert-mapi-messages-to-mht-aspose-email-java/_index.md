@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come convertire i messaggi MAPI in formato MHT utilizzando Aspose.Email per Java. Questa guida illustra come caricare, salvare e personalizzare i modelli con applicazioni pratiche."
-"title": "Convertire i messaggi MAPI in MHT utilizzando Aspose.Email per Java&#58; una guida completa"
-"url": "/it/java/email-conversion-rendering/convert-mapi-messages-to-mht-aspose-email-java/"
-"weight": 1
+date: '2026-01-17'
+description: Scopri come convertire MSG in MHT con Aspose.Email per Java. Questo tutorial
+  passo‑passo copre il caricamento, il salvataggio e la personalizzazione dei modelli
+  per la conversione di email nel mondo reale.
+keywords:
+- convert MAPI messages
+- Aspose.Email for Java
+- MHT format conversion
+title: 'Come convertire MSG in MHT usando Aspose.Email per Java: una guida completa'
+url: /it/java/email-conversion-rendering/convert-mapi-messages-to-mht-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,32 +17,45 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Convertire i messaggi MAPI in MHT utilizzando Aspose.Email per Java: una guida completa
+# Converti MSG in MHT con Aspose.Email per Java: Guida Completa
 
 ## Introduzione
 
-Convertire i formati email è fondamentale per la gestione dei dati e la compatibilità tra i sistemi. Aspose.Email per Java semplifica la conversione dei messaggi MAPI (Messaging Application Programming Interface) nel formato MHTML, più accessibile a tutti. Questa guida vi guiderà nell'utilizzo di Aspose.Email per ottenere questa conversione in modo efficace.
+Convertire **MSG in MHT** è una necessità comune quando devi archiviare o visualizzare i messaggi di Outlook in un formato adatto al web. In questo tutorial vedrai come Aspose.Email per Java renda la conversione semplice, consentendoti di caricare un file MAPI (MSG), modificare l'output con template HTML personalizzati e salvarlo come file MHT pronto per i browser o i sistemi di archiviazione.
 
-**Cosa imparerai:**
-- Carica e analizza in modo efficiente i messaggi MAPI.
-- Configura le opzioni per salvare in formato MHT.
-- Personalizza i modelli per una migliore leggibilità.
-- Esplora le applicazioni pratiche della conversione da MAPI a MHT.
+**Ciò che imparerai:**
+- Come caricare e analizzare i file MSG in modo efficiente.  
+- Come configurare `MhtSaveOptions` per un output MHT ottimale.  
+- Come applicare template personalizzati per migliorare la leggibilità.  
+- Scenari reali in cui convertire MSG in MHT aggiunge valore.
 
-Configuriamo il nostro ambiente e iniziamo il processo di conversione.
+Prepariamo l'ambiente e immergiamoci nel codice.
+
+## Risposte Rapide
+- **Cosa significa “convertire MSG in MHT”?** Trasforma i file Outlook `.msg` nel formato web‑compatibile `.mht` (MHTML).  
+- **Quale libreria viene usata?** Aspose.Email per Java (aspose email tutorial).  
+- **È necessaria una licenza?** Una prova gratuita di 30 giorni è sufficiente per la valutazione; per la produzione è richiesta una licenza.  
+- **Versione Java supportata?** Java 16 o successive (classifier `jdk16`).  
+- **Caso d'uso tipico?** Archiviazione di email per conformità o visualizzazione nei browser senza Outlook.
+
+## Cos'è “convertire MSG in MHT”?
+Il processo di conversione legge un messaggio binario di Outlook (`.msg`) e riscrive il suo contenuto, gli allegati e i metadati in un unico file MHTML basato su HTML (`.mht`). Questo formato monofile preserva il layout originale ed è visualizzabile in qualsiasi browser moderno.
+
+## Perché usare Aspose.Email per Java?
+- **API completa:** Gestisce tutte le proprietà MAPI, gli allegati e gli oggetti incorporati.  
+- **Nessuna dipendenza da Outlook:** Funziona in qualsiasi ambiente Java server‑side.  
+- **Template personalizzabili:** Adatta l'output HTML al tuo brand o agli standard di reporting.  
+- **Alte prestazioni:** Ottimizzato per grandi lotti e elaborazione asincrona.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere:
-- **Libreria Aspose.Email:** Versione 25.4 o successiva.
-- **Ambiente di sviluppo Java:** Per la gestione delle dipendenze è necessario installare Maven.
-- **Conoscenza di base di Java:** È utile conoscere formati di posta elettronica come MAPI e MHT.
+- **Libreria Aspose.Email:** Versione 25.4 o successiva (classifier `jdk16`).  
+- **Ambiente di sviluppo Java:** Maven installato per la gestione delle dipendenze.  
+- **Conoscenza base di Java:** Familiarità con I/O di file e progetti Maven.
 
-Una volta soddisfatti questi prerequisiti, procediamo alla configurazione di Aspose.Email per Java.
+## Configurazione di Aspose.Email per Java
 
-## Impostazione di Aspose.Email per Java
-
-Per utilizzare Aspose.Email per Java, includilo nel tuo progetto tramite Maven:
+Per aggiungere Aspose.Email al tuo progetto Maven, includi la seguente dipendenza:
 
 ```xml
 <dependency>
@@ -47,24 +66,25 @@ Per utilizzare Aspose.Email per Java, includilo nel tuo progetto tramite Maven:
 </dependency>
 ```
 
-### Acquisizione della licenza
+### Acquisizione della Licenza (aspose email tutorial)
 
-Aspose.Email per Java è un prodotto commerciale, ma puoi iniziare con una prova gratuita per esplorarne le funzionalità:
-- **Prova gratuita:** Utilizza la libreria senza limitazioni per 30 giorni.
-- **Licenza temporanea:** Se necessario, richiedere più tempo per la valutazione.
-- **Acquistare:** Acquista un abbonamento per continuare a utilizzarlo una volta soddisfatto.
+Aspose.Email è un prodotto commerciale, ma puoi iniziare con una **prova gratuita**:
 
-### Inizializzazione di base
+- **Prova gratuita:** Funzionalità complete per 30 giorni.  
+- **Licenza temporanea:** Estendi la valutazione se necessario.  
+- **Acquisto:** Ottieni una licenza permanente per l'uso in produzione.
 
-Dopo aver aggiunto la dipendenza, inizializza Aspose.Email nella tua applicazione Java:
+### Inizializzazione di Base
+
+Dopo aver aggiunto la dipendenza Maven, inizializza la libreria nel tuo codice Java:
 
 ```java
-// Importa le classi necessarie
+// Import necessary classes
 import com.aspose.email.License;
 
 public class Main {
     public static void main(String[] args) {
-        // Applicare la licenza se disponibile
+        // Apply license if available
         License license = new License();
         try {
             license.setLicense("path/to/your/license.lic");
@@ -75,55 +95,54 @@ public class Main {
 }
 ```
 
-Dopo aver configurato la libreria, vediamo come convertire i messaggi MAPI nel formato MHT.
+## Come Convertire MSG in MHT con Aspose.Email per Java
 
-## Guida all'implementazione
+### Caricamento del File MSG
 
-### Carica messaggio MAPI
+**Passo 1 – Importa la classe necessaria**
 
-**Panoramica:** Inizia caricando un messaggio MAPI utilizzando Aspose.Email `MapiMessage` classe.
-
-#### Passaggio 1: importare le classi necessarie
 ```java
 import com.aspose.email.MapiMessage;
 ```
 
-#### Passaggio 2: carica il messaggio
+**Passo 2 – Carica il messaggio dal disco**
+
 ```java
-String dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Assicurati che questo percorso sia corretto
-dataDir + "MapiTask.msg"
+String dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Ensure this path is correct
 MapiMessage msg = MapiMessage.fromFile(dataDir + "MapiTask.msg");
 ```
-**Spiegazione:** IL `MapiMessage.fromFile()` il metodo legge un file di messaggi MAPI. Assicurati che la directory specificata contenga il tuo `.msg` file.
 
-### Configurare le opzioni di salvataggio MHT
+Il metodo `MapiMessage.fromFile()` legge il file `.msg` e crea un oggetto `MapiMessage` manipolabile.
 
-**Panoramica:** Imposta come salvare questo messaggio in formato MHTML utilizzando `MhtSaveOptions`.
+### Configurazione delle Opzioni di Salvataggio MHT
 
-#### Passaggio 1: importare le classi necessarie
+**Passo 1 – Importa le classi delle opzioni di salvataggio**
+
 ```java
 import com.aspose.email.MhtFormatOptions;
 import com.aspose.email.MhtSaveOptions;
 import com.aspose.email.SaveOptions;
 ```
 
-#### Passaggio 2: imposta le opzioni di salvataggio
+**Passo 2 – Imposta le opzioni**
+
 ```java
 MhtSaveOptions opt = SaveOptions.getDefaultMhtml();
 opt.setMhtFormatOptions(MhtFormatOptions.RenderTaskFields | MhtFormatOptions.WriteHeader);
 ```
-**Spiegazione:** IL `getDefaultMhtml()` inizializza le impostazioni predefinite e `setMhtFormatOptions()` Il metodo personalizza il rendering del campo attività per un output su misura.
 
-### Definisci modelli personalizzati
+`RenderTaskFields` garantisce l'inclusione dei campi specifici del task, mentre `WriteHeader` aggiunge le intestazioni email standard all'output MHT.
 
-**Panoramica:** Personalizza i tuoi file MHT definendo modelli HTML per varie proprietà.
+### Definizione di Template HTML Personalizzati (Opzionale)
 
-#### Passaggio 1: importare le classi necessarie
+**Passo 1 – Importa l'enumerazione dei template**
+
 ```java
 import com.aspose.email.MhtTemplateName;
 ```
 
-#### Passaggio 2: personalizza i modelli
+**Passo 2 – Personalizza i template**
+
 ```java
 opt.getFormatTemplates().clear();
 opt.getFormatTemplates().add(MhtTemplateName.Task.SUBJECT, "<span class='headerLineTitle'>Subject:</span><span class='headerLineText'>{0}</span><br/>");
@@ -133,55 +152,71 @@ opt.getFormatTemplates().add(MhtTemplateName.Task.STATUS, "<span class='headerLi
 opt.getFormatTemplates().add(MhtTemplateName.Task.OWNER, "<span class='headerLineTitle'>Owner:</span><span class='headerLineText'>{0}</span><br/>");
 opt.getFormatTemplates().add(MhtTemplateName.Task.PRIORITY, "<span class='headerLineTitle'>Priority:</span><span class='headerLineText'>{0}</span><br/>");
 ```
-**Spiegazione:** Questi modelli personalizzano l'aspetto dei file MHT, migliorandone la leggibilità e la presentazione.
 
-### Salva messaggio MAPI come MHT
+Questi template ti consentono di controllare come appare ogni proprietà del task nel file MHT finale, rendendo l'output più chiaro per gli utenti finali.
 
-**Panoramica:** Infine, salva il messaggio configurato in formato MHTML.
+### Salvataggio del Messaggio come File MHT
 
-#### Passaggio 1: definire la directory di output
+**Passo 1 – Definisci la directory di output**
+
 ```java
-String outputDir = "YOUR_OUTPUT_DIRECTORY"; // Assicurati che questo percorso sia corretto
+String outputDir = "YOUR_OUTPUT_DIRECTORY"; // Ensure this path is correct
 ```
 
-#### Passaggio 2: salva il messaggio
+**Passo 2 – Esegui l'operazione di salvataggio**
+
 ```java
 msg.save(outputDir + "MapiTask_out.mht", opt);
 ```
-**Spiegazione:** Questo passaggio scrive il tuo file MHT personalizzato sul disco. Verifica `outputDir` per correttezza.
 
-## Applicazioni pratiche
+Il metodo `save` scrive il file MHT personalizzato su disco. Verifica il percorso `outputDir` prima di eseguire il codice.
 
-Questa tecnica di conversione offre diverse applicazioni pratiche:
-1. **Archiviazione delle email:** Convertire i messaggi MAPI per l'archiviazione a lungo termine in un formato più accessibile.
-2. **Migrazione e-mail:** Facilitare la migrazione dai sistemi legacy alle piattaforme moderne.
-3. **Analisi dei dati:** Utilizza i file MHT per un'analisi più semplice dei dati e per l'integrazione con altri strumenti.
+## Applicazioni Pratiche (Perché Convertire MSG in MHT?)
 
-## Considerazioni sulle prestazioni
+- **Archiviazione:** Conserva le email in un formato unico e portatile che i browser possono renderizzare senza Outlook.  
+- **Migrazione:** Sposta archivi legacy di Outlook su piattaforme email basate sul web.  
+- **Reporting e Analisi:** Analizza i file MHT con parser HTML per l'estrazione di dati e business intelligence.  
+- **Conformità Legale:** Preserva il contenuto originale del messaggio e i metadati in un formato a prova di manomissione.
 
-Per garantire prestazioni ottimali durante l'utilizzo di Aspose.Email:
-- **Ottimizzare l'utilizzo delle risorse:** Gestire in modo efficiente la memoria durante l'elaborazione di grandi set di dati di posta elettronica.
-- **Best practice per la gestione della memoria Java:** Monitorare l'utilizzo delle risorse, in particolare durante l'elaborazione simultanea.
-- **Elaborazione asincrona:** Utilizzare metodi asincroni per migliorare la reattività e la produttività.
+## Considerazioni sulle Prestazioni
+
+- **Elaborazione a Lotti:** Quando gestisci migliaia di file MSG, elabora in batch per evitare picchi di memoria.  
+- **Esecuzione Asincrona:** Sfrutta `CompletableFuture` o i servizi di esecuzione di Java per convertire i file in parallelo.  
+- **Pulizia delle Risorse:** Chiudi esplicitamente gli stream se ne apri di personalizzati oltre all'API di Aspose.
+
+## Problemi Comuni e Risoluzione
+
+| Sintomo | Probabile Causa | Correzione |
+|---------|-----------------|------------|
+| **NullPointerException su `msg.save`** | La directory di output non esiste | Crea la directory o usa `Files.createDirectories(Paths.get(outputDir));` |
+| **Allegati mancanti in MHT** | `MhtSaveOptions` non impostato per incorporare le risorse | Usa `opt.setMhtFormatOptions(opt.getMhtFormatOptions() \| MhtFormatOptions.WriteResources);` |
+| **Formato data errato** | Impostazioni locali diverse | Regola `opt.setDateFormat("yyyy-MM-dd HH:mm:ss");` |
+
+## Domande Frequenti
+
+**D: Qual è la differenza tra MSG e MHT?**  
+R: MSG è un formato binario proprietario di Outlook che memorizza email, allegati e metadati. MHT (MHTML) è un formato basato su HTML a file unico che raggruppa corpo email, immagini e CSS, rendendolo visualizzabile in qualsiasi browser.
+
+**D: Posso convertire altri elementi MAPI come appuntamenti o contatti?**  
+R: Sì. Aspose.Email supporta la conversione di appuntamenti, contatti e task in MHT utilizzando le classi `Mapi*` corrispondenti e adeguando i nomi dei template.
+
+**D: È necessaria una connessione Internet per la conversione?**  
+R: No. Tutto il processo avviene localmente nella runtime Java; solo il controllo di attivazione della licenza può contattare il server di Aspose una volta.
+
+**D: La conversione è thread‑safe?**  
+R: L'API è thread‑safe per operazioni di sola lettura. Quando converti molti file contemporaneamente, istanzia oggetti `MapiMessage` separati per ogni thread.
+
+**D: Qual è la dimensione massima di un file MSG gestibile da Aspose.Email?**  
+R: La libreria può elaborare file fino a diverse centinaia di megabyte, ma è consigliabile monitorare l'heap della JVM e considerare lo streaming per allegati molto grandi.
 
 ## Conclusione
 
-Ora hai imparato a convertire i messaggi MAPI in MHT utilizzando Aspose.Email per Java. Questa potente libreria non solo semplifica la gestione delle email, ma offre anche opzioni di personalizzazione che migliorano la flessibilità e le capacità di integrazione.
+Ora disponi di un flusso di lavoro completo e pronto per la produzione per **convertire MSG in MHT** usando Aspose.Email per Java. Sfruttando i template personalizzati, puoi adattare l'output HTML al branding o agli standard di reporting della tua organizzazione, mentre la libreria si occupa della complessa analisi del formato binario di Outlook.
 
-**Prossimi passi:**
-- Sperimenta diverse configurazioni di modelli.
-- Esplora le funzionalità aggiuntive offerte dalla libreria Aspose.Email.
-
-Pronti a provarlo voi stessi? Immergetevi nel codice, apportate modifiche e scoprite come semplificare i vostri flussi di lavoro email!
-
-## Sezione FAQ
-
-1. **Che cosa è MAPI?**
-   - MAPI è l'acronimo di Messaging Application Programming Interface, uno standard Microsoft per la gestione di e-mail e messaggi.
-2. **Posso usare Aspose.Email senza licenza?**
-   - Sì, puoi provarlo con una versione di prova gratuita, ma per rimuovere le limitazioni di valutazione è richiesta una licenza di produzione.
-3. **Come gestire archivi di posta elettronica di grandi dimensioni?**
-   - Elabora le e-mail in batch e utilizza strutture dati efficienti per prestazioni ottimali.
+**Passi successivi:**  
+- Sperimenta con diversi valori di `MhtTemplateName` per stilizzare altri tipi di elementi MAPI.  
+- Integra la conversione in un job batch o in un servizio REST per l'elaborazione on‑demand.  
+- Esplora le altre funzionalità di Aspose.Email, come la gestione di PST, l'invio di email e il parsing MIME.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -190,3 +225,9 @@ Pronti a provarlo voi stessi? Immergetevi nel codice, apportate modifiche e scop
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Ultimo aggiornamento:** 2026-01-17  
+**Testato con:** Aspose.Email per Java 25.4 (classifier `jdk16`)  
+**Autore:** Aspose
