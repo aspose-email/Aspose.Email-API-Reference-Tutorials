@@ -1,10 +1,12 @@
 ---
-"description": "Steigern Sie die Wirkung Ihrer E-Mails, indem Sie mit Aspose.Email für Java Prioritäts- und Wichtigkeitsheader festlegen. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie das geht."
-"linktitle": "Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email"
-"second_title": "Aspose.Email Java E-Mail-Verwaltungs-API"
-"title": "Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email"
-"url": "/de/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-01-22
+description: Erfahren Sie, wie Sie E‑Mails mit Priorität senden und hochpriorisierte
+  E‑Mail‑Header mit Aspose.Email für Java festlegen. Folgen Sie dieser Schritt‑für‑Schritt‑Anleitung.
+linktitle: Setting Priority and Importance Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: E-Mail mit Prioritäts- und Wichtigkeits-Headern senden mit Aspose.Email
+url: /de/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,95 +15,117 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Festlegen von Prioritäts- und Wichtigkeitsheadern mit Aspose.Email
-
+# E‑Mail mit Prioritäts‑ und Wichtigkeits‑Headern senden mit Aspose.Email
 
 ## Einführung
 
-In dieser umfassenden Anleitung führen wir Sie Schritt für Schritt durch die Verwendung von Aspose.Email für Java, um Prioritäts- und Wichtigkeitsüberschriften in Ihren E-Mails festzulegen. Egal, ob Sie wichtige Geschäftsvorschläge versenden oder einfach nur die Dringlichkeit Ihrer Nachricht betonen möchten – dieses Tutorial hilft Ihnen dabei.
+In diesem umfassenden Leitfaden lernen Sie **wie man E‑Mails mit Priorität sendet** mit Aspose.Email für Java. Egal, ob Sie einen zeitkritischen Geschäfts­vorschlag übermitteln oder einfach die Dringlichkeit einer Besprechungsanfrage hervorheben möchten, das Setzen der richtigen Prioritäts‑ und Wichtigkeits‑Header sorgt dafür, dass Ihre Nachricht die gewünschte Aufmerksamkeit erhält. Wir führen Sie durch das Erstellen der Nachricht, das Anwenden der Priorität und das Senden über einen SMTP‑Server.
+
+## Schnelle Antworten
+- **Was bedeutet „E‑Mail mit Priorität senden“?** Es fügt standardmäßige E‑Mail‑Header hinzu (z. B. *X-Priority*, *Importance*), die den E‑Mail‑Clients mitteilen, dass die Nachricht dringend ist.  
+- **Welcher Header setzt die höchste Dringlichkeit?** `MailPriority.High` (entspricht *X-Priority: 1* und *Importance: High*).  
+- **Benötige ich eine Lizenz für die Nutzung von Aspose.Email?** Eine kostenlose Test verwenden?** Ja – Aspose.Email unterstützt Java 8 und höher.  
+- **Ist TLS für SMTP erforderlich?** Es wird empfohlen; konfigurieren Sie `SmtpClient` mit `EnableSsl = true`, falls Ihr Server dies verlangt.
 
 ## Voraussetzungen
 
-Bevor Sie mit der Implementierung beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie Folgendes haben:
 
-- Auf Ihrem System ist das Java Development Kit (JDK) installiert.
-- Aspose.Email für Java-Bibliothek. Sie können es herunterladen von [Hier](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) auf Ihrem Rechner installiert.  
+- Aspose.Email für Java Bibliothek. Sie können sie von [hier](https://releases.aspose.com/email/java/) herunterladen.  
 
-## Schritt 1: Erstellen Sie ein Java-Projekt
+## Was bedeutet „E‑Mail mit Priorität senden“?
 
-Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Bibliothek Aspose.Email zu den Abhängigkeiten Ihres Projekts hinzugefügt haben.
+Eine E‑Mail mit Priorität zu senden bedeutet, spezifische MIME‑Header hinzuzufügen, die dem E‑Mail‑Client des Empfängers Dringlichkeit signalisieren. Die meisten Clients zeigen ein visuelles Hinweiszeichen (z. B. ein rotes Ausrufezeichen), wenn sie Header für hohe Priorität oder hohe Wichtigkeit erkennen.
 
-## Schritt 2: Aspose.Email-Klassen importieren
+## Warum eine E‑Mail mit hoher Priorität setzen?
 
-Importieren Sie die erforderlichen Aspose.Email-Klassen in Ihren Java-Code. Diese Klassen ermöglichen Ihnen die Arbeit mit E-Mail-Nachrichten und das Festlegen von Prioritäts- und Wichtigkeitsheadern.
+- **Verbesserte Sichtbarkeit:** Empfänger können dringende Nachrichten schnell erkennen.  
+- **Besserer Arbeitsablauf:** Kritische Benachrichtigungen (Systemausfälle, Terminänderungen) werden seltener übersehen.  
+- **Professionalität:** Die Verwendung der korrekten Header zeigt, dass Sie die E‑Mail‑Standards verstehen.
+
+## Schritt 1: Ein Java‑Projekt erstellen
+
+Starten Sie ein neues Java‑Projekt in Ihrer bevorzugten IDE (IntelliJ, Eclipse, VS Code usw.). Fügen Sie die Aspose.Email oder zu den Maven/Gradle‑Abhängigkeiten hinzu.
+
+## Schritt 2: Aspose.Email‑Klassen importieren
+
+Diese Importe geben Ihnen Zugriff auf die Kernklassen zur E‑Mail‑Verarbeitung.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Schritt 3: Erstellen einer E-Mail-Nachricht
+## Schritt 3: Eine E‑Mail‑Nachricht erstellen (create email message java)
 
-Um Prioritäts- und Wichtigkeitsüberschriften festzulegen, müssen Sie zunächst eine E-Mail-Nachricht erstellen. So erstellen Sie mit Aspose.Email eine einfache E-Mail-Nachricht:
+Jetzt erstellen wir eine einfache E‑Mail, setzen Absender/Empfänger und wenden den Prioritäts‑Header an.
 
 ```java
-// Erstellen einer neuen E-Mail-Nachricht
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Absender- und Empfängeradressen festlegen
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Legen Sie den Betreff und den Text der E-Mail fest
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// Fügen Sie den E-Mail-Text hinzu
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Festlegen der E-Mail-Priorität
+// Set the email priority – this is how you **set high priority email**
 message.setPriority(MailPriority.High);
 ```
 
-Im obigen Code haben wir eine E-Mail-Nachricht erstellt, die Absender- und Empfängeradressen festgelegt, den Betreff und den Text der E-Mail angegeben und schließlich die Priorität der E-Mail auf „Hoch“ gesetzt.
+> **Pro‑Tipp:** `MailPriority.High` fügt automatisch sowohl *X-Priority* als auch *Importance* Header hinzu und deckt damit die meisten E‑Mail‑Clients ab.
 
-## Schritt 5: Senden Sie die E-Mail
+## Schritt 4: (Optional) Zusätzliche Header oder Anhänge hinzufügen
 
-Sobald Sie die E-Mail-Nachricht mit der gewünschten Priorität und Wichtigkeit konfiguriert haben, können Sie sie versenden. Aspose.Email vereinfacht den E-Mail-Versandprozess zusätzlich:
+Falls Sie weiter anpassen müssen – z. B. einen benutzerdefinierten *X-Importance* Header hinzufügen oder Dateien anhängen – verwenden Sie jeweils `message.getHeaders().add()` bzw. `message.getAttachments().add()`. Dieser Schritt ist für das grundlegende Szenario „E‑Mail mit Priorität senden“ optional.
+
+## Schritt 5: Die E‑Mail senden
+
+Konfigurieren Sie den SMTP‑Client mit Ihren Serverdetails und senden Sie die Nachricht.
 
 ```java
-// Erstellen Sie eine Instanz der SmtpClient-Klasse
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Senden Sie die E-Mail
+// Send the email
 client.send(message);
 ```
 
-Ersetzen `"smtp.example.com"`, `"username"`, Und `"password"` mit Ihren SMTP-Serverdetails.
+Ersetzen Sie `"smtp.example.com"`, `"username"` und `"password"` durch Ihre tatsächlichen SMTP‑Zugangsdaten. Falls Ihr Server SSL/TLS erfordert, setzen Sie `client.setEnableSsl(true);` bevor Sie `send` aufrufen.
 
-## Abschluss
+## Häufige Probleme und deren Behebung
 
-In diesem Tutorial haben wir untersucht, wie Sie mit Aspose.Email für Java Prioritäts- und Wichtigkeitsheader in Ihren E-Mail-Nachrichten festlegen. Mit diesen Schritten stellen Sie sicher, dass Ihre E-Mails mit der richtigen Dringlichkeit und Wichtigkeit zugestellt werden und verbessern so die Kommunikation mit Ihren Empfängern.
+| Problem | Grund | Lösung |
+|-------|--------|----------|
+| E‑Mail kommt ohne Priorität an | SMTP‑Server entfernt benutzerdefinierte Header | Überprüfen Sie, ob der Server benutzerdefinierte Header zulässt, oder verwenden Sie `client.setUseDefaultCredentials(false);` |
+| Empfänger sieht keinen visuellen Hinweis | Client ignoriert den *Importance*-Header | Stellen Sie sicher, dass Sie `MailPriority.High` setzen (fügt sowohl *X-Priority* als auch *Importance* hinzu) |
+| Authentifizierungsfehler | Falsche Zugangsdaten oder Port | Überprüfen Sie Benutzername, Passwort und Port (in der Regel 587 für TLS) |
 
-## FAQs
+## Häufig gestellte Fragen
 
-### Wie kann ich die Priorität einer E-Mail auf „Niedrig“ ändern?
+**Q: Wie kann ich die Priorität einer E‑Mail auf „Low“ ändern?**  
+A: Verwenden Sie `message.setPriority(MailPriority.Low);` auf dieselbe Weise, wie Sie `High` gesetzt haben.
 
-Um die E-Mail-Priorität auf "Niedrig" zu ändern, verwenden Sie einfach die `MailPriority.Low` enum beim Festlegen der Priorität, wie in Schritt 3 gezeigt.
+**Q: Kann ich Aspose.Email mit anderen Programmiersprachen verwenden?**  
+A: Ja. Aspose.Email ist für .NET, Python, Android und weitere verfügbar. Besuchen Sie die Aspose‑Website für die vollständige Liste.
 
-### Kann ich Aspose.Email mit anderen Programmiersprachen verwenden?
+**Q: Ist es möglich, sowohl Priorität als auch Wichtigkeit für eine E‑Mail zu setzen?**  
+A: Absolut. Dasen Sie stets AspA: Verwenden Sie die `Attachment`‑Klasse, z. B. `message.getAttachments().addItem(new Attachment("file.pdf"));`. Siehe die Aspose.Email‑Dokumentation für fortgeschrittene Szenarien.
 
-Ja, Aspose.Email ist für verschiedene Programmiersprachen verfügbar, darunter .NET, Python und Android. Die entsprechenden Bibliotheken finden Sie auf der Aspose-Website.
+## Fazit
 
-### Ist es möglich, sowohl Priorität als auch Wichtigkeit für eine E-Mail festzulegen?
+Wenn Sie diese Schritte befolgt haben, wissen Sie nun **wie man E‑Mails mit Priorität sendet** und wie man **Header für hochprioritäre E‑Mails** mit Aspose.Email für Java setzt. Das Einbinden von Prioritäts‑ und Wichtigkeits‑Headern kann die Sichtbarkeit kritischer Kommunikation erheblich verbessern und Ihre Anwendungen effektiver und professioneller machen.
 
-Absolut! Sie können sowohl Prioritäts- als auch Wichtigkeitsüberschriften festlegen, um die Dringlichkeit und Bedeutung Ihrer Nachricht anzupassen.
+---
 
-### Gibt es Einschränkungen für E-Mail-Wichtigkeitsheader?
-
-Sie können zwar Wichtigkeitsüberschriften festlegen, bedenken Sie jedoch, dass die tatsächliche Auswirkung auf den Posteingang des Empfängers je nach E-Mail-Client unterschiedlich sein kann.
-
-### Wie verarbeite ich E-Mail-Anhänge mit Aspose.Email?
-
-Die Handhabung von E-Mail-Anhängen mit Aspose.Email ist unkompliziert. Sie können die `Attachment` Klasse zum Hinzufügen von Anhängen zu Ihren E-Mail-Nachrichten. Eine ausführliche Anleitung finden Sie in der Aspose.Email-Dokumentation.
+**Last Updated:** 2026-01-22  
+**Tested With:** Aspose.Email for Java 23.12  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

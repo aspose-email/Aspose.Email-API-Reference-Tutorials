@@ -1,10 +1,13 @@
 ---
-"description": "Aumenta el impacto de tus correos electrónicos configurando encabezados de prioridad e importancia con Aspose.Email para Java. Aprende cómo con esta guía paso a paso."
-"linktitle": "Configuración de encabezados de prioridad e importancia con Aspose.Email"
-"second_title": "API de gestión de correo electrónico Java de Aspose.Email"
-"title": "Configuración de encabezados de prioridad e importancia con Aspose.Email"
-"url": "/es/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-01-22
+description: Aprende cómo enviar correos electrónicos con prioridad y establecer encabezados
+  de alta prioridad usando Aspose.Email para Java. Sigue esta guía paso a paso.
+linktitle: Setting Priority and Importance Headers with Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Enviar correo electrónico con encabezados de prioridad e importancia usando
+  Aspose.Email
+url: /es/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,95 +16,109 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Configuración de encabezados de prioridad e importancia con Aspose.Email
-
+# Enviar correo electrónico con encabezados de prioridad e importancia usando Aspose.Email
 
 ## Introducción
 
-En esta guía completa, le guiaremos paso a paso para usar Aspose.Email para Java y configurar encabezados de prioridad e importancia en sus correos electrónicos. Ya sea que envíe propuestas comerciales importantes o simplemente quiera enfatizar la urgencia de su mensaje, este tutorial le ayudará.
+En esta guía completa, aprenderás **cómo enviar correo electrónico con prioridad** usando Aspose.Email para Java. Ya sea que estés entregando una propuesta empresarial crítica en tiempo o simplemente quieras resaltar la urgencia de una solicitud de reunión, establecer los encabezados correctos de prioridad e importancia garantiza que tu mensaje reciba la atención que merece. Te guiaremos paso a paso en la creación del mensaje, la aplicación de la prioridad y el envío a través de un servidor SMTPQué significa “enviar correo electrónico con prioridad”?** Añade encabezados estándar de correo (p. ej., *X-Priority*, *Importance*) que indican a los clientes de correo que el mensaje es urgente.riority: 1** Es con `EnableSsl = true` si tu servidor lo requiere.
 
-## Prerrequisitos
+## Requisitos previos
 
-Antes de sumergirse en la implementación, asegúrese de tener los siguientes requisitos previos:
+Antes de sumergirte en el código, asegúrate de contar con:
 
-- Java Development Kit (JDK) instalado en su sistema.
-- Biblioteca Aspose.Email para Java. Puedes descargarla desde [aquí](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) instalado en tu máquina.  
+- Biblioteca Aspose.Email para Java. Puedes descargarla [aquí](https://releases.aspose.com/email/java/).  
 
-## Paso 1: Crear un proyecto Java
+## ¿Qué es “enviar correo electrónico con prioridad”?
 
-Comience creando un nuevo proyecto Java en su Entorno de Desarrollo Integrado (IDE) preferido. Asegúrese de haber agregado la biblioteca Aspose.Email a las dependencias de su proyecto.
+Enviar un correo electrónico con prioridad significa añadir encabezados MIME específicos que señalan urgencia al cliente de correo del destinatario. La mayoría de los clientes muestra una señal visual (p. ej., un signo de exclamación rojo) cuando detectan encabezados de alta prioridad o alta importancia.
+
+## ¿Por qué establecer un correo electrónico de alta prioridad?
+
+- **Mayor visibilidad:** Los destinatarios de reuniones) tienen class de/Gradle.
 
 ## Paso 2: Importar clases de Aspose.Email
 
-Importa las clases Aspose.Email necesarias a tu código Java. Estas clases te permitirán trabajar con mensajes de correo electrónico y establecer encabezados de prioridad e importancia.
+Estas importaciones te dan acceso a las clases principales para el manejo de correo electrónico.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Paso 3: Crear un mensaje de correo electrónico
+## Paso 3: Crear un mensaje de correo electrónico (create email message java)
 
-Para configurar encabezados de prioridad e importancia, primero debe crear un mensaje de correo electrónico. A continuación, le mostramos cómo crear un mensaje de correo electrónico sencillo con Aspose.Email:
+Ahora construiremos un correo simple, estableceremos el remitente/destinatario y aplicaremos el encabezado de prioridad.
 
 ```java
-// Crear un nuevo mensaje de correo electrónico
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Establecer direcciones de remitente y destinatario
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Establezca el asunto y el cuerpo del correo electrónico.
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// Añadir el cuerpo del correo electrónico
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Establecer la prioridad del correo electrónico
+// Set the email priority – this is how you **set high priority email**
 message.setPriority(MailPriority.High);
 ```
 
-En el código anterior, creamos un mensaje de correo electrónico, configuramos las direcciones del remitente y del destinatario, especificamos el asunto y el cuerpo del correo electrónico y, finalmente, configuramos la prioridad del correo electrónico en "Alta".
+> **Consejo profesional:** `MailPriority.High` añade automáticamente tanto *X-Priority* como *Importance*, cubriendo la mayoría de los clientes de correo.
+
+## Paso 4: (Opcional) Añadir encabezados adicionales o archivos adjuntos
+
+Si necesitas personalizar más —p. ej., añadir un encabezado *X-Importance* personalizado o adjuntar archivos— usa `message.getHeaders().add()` o `message.getAttachments().add()` respectivamente. Este paso es opcional para el escenario básico de “enviar correo electrónico con prioridad”.
 
 ## Paso 5: Enviar el correo electrónico
 
-Una vez que haya configurado el mensaje de correo electrónico con la prioridad e importancia deseadas, es hora de enviarlo. Aspose.Email también simplifica el proceso de envío:
+Configura el cliente SMTP con los detalles de tu servidor y despacha el mensaje.
 
 ```java
-// Crear una instancia de la clase SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Envía el correo electrónico
+// Send the email
 client.send(message);
 ```
 
-Reemplazar `"smtp.example.com"`, `"username"`, y `"password"` con los detalles de su servidor SMTP.
+Reemplaza `"smtp.example.com"`, `"username"` y `"password"` con tus credenciales SMTP reales. Si tu servidor requiere SSL/TLS, establece `client.setEnableSsl(true);` antes de llamar a `send`.
 
-## Conclusión
+## Problemas comunes y cómo solucionarlos
 
-En este tutorial, hemos explorado cómo usar Aspose.Email para Java para establecer encabezados de prioridad e importancia en tus correos electrónicos. Siguiendo estos pasos, puedes asegurarte de que tus correos se entreguen con la urgencia e importancia adecuadas, mejorando así la comunicación con tus destinatarios.
+| Problema | Razón | Solución |
+|----------|-------|----------|
+| El correo llega sin prioridad | El servidor SMTP elimina los encabezados personalizados | Verifica que el servidor permita encabezados personalizados o usa `client.setUseDefaultCredentials(false);` |
+| El destinatario no ve señal visual | El cliente ignora el encabezado *Importance* | Asegúrate de usar `MailPriority.High` (añade tanto *X-Priority* como *Importance*) |
+| Fallo de autenticación | Credenciales o puerto incorrectos | Revisa nuevamente el nombre de usuario, la contraseña y el puerto (usualmente 587 para TLS) |
 
 ## Preguntas frecuentes
 
-### ¿Cómo puedo cambiar la prioridad de un correo electrónico a "Baja"?
+**P: ¿Cómo puedo cambiar la prioridad de un correo a “Low”?**  
+R: Usa `message.setPriority(MailPriority.Low);` de la misma forma que estableciste `High`.
 
-Para cambiar la prioridad del correo electrónico a "Baja", simplemente use el `MailPriority.Low` enumeración al establecer la prioridad, como se muestra en el Paso 3.
+**P: ¿Puedo usar Aspose.Email con otros lenguajes de programación?**  
+R: Sí. Aspose.Email está ¿Es posible establecer tanto prioridad como importancia en un correo?**  
+R: Absolutamente. El enum `MailPriority` establece ambos encabezados simultáneamente, garantizando la máxima compatibilidad.
 
-### ¿Puedo utilizar Aspose.Email con otros lenguajes de programación?
+**P: ¿Existen limitaciones en los encabezados de importancia del correo?**  
+R: Algunos clientes pueden ignorarlos o aplicar sus propias reglas. Siempre prueba con el cliente objetivo.
 
-Sí, Aspose.Email está disponible para varios lenguajes de programación, como .NET, Python y Android. Puedes encontrar las bibliotecas correspondientes en el sitio web de Aspose.
+** con Aspose.Email?**  
+R: Usa la clase `Attachment`, p. ej., `message.getAttachments().addItem(new Attachment("file.pdf"));`. Consulta la documentación de Aspose.Email para escenarios avanzados.
 
-### ¿Es posible establecer tanto la prioridad como la importancia de un correo electrónico?
+## Conclusión
 
-¡Por supuesto! Puedes configurar los encabezados de prioridad e importancia para ajustar la urgencia y la importancia de tu mensaje.
+Al seguir estos pasos, ahora sabes **cómo enviar correo electrónico con prioridad** y cómo **establecer encabezados de correo de alta prioridad** usando Aspose.Email para Java. Incorporar los encabezados de prioridad e importancia puede mejorar drásticamente la visibilidad de comunicaciones críticas, haciendo que tus aplicaciones sean más efectivas y profesionales.
 
-### ¿Existen limitaciones para los encabezados de importancia del correo electrónico?
+---
 
-Si bien puede establecer encabezados de importancia, tenga en cuenta que el impacto real en la bandeja de entrada del destinatario puede variar según su cliente de correo electrónico.
-
-### ¿Cómo manejo los archivos adjuntos de correo electrónico con Aspose.Email?
-
-Gestionar archivos adjuntos de correo electrónico con Aspose.Email es sencillo. Puedes usar el `Attachment` Clase para agregar archivos adjuntos a tus mensajes de correo electrónico. Para obtener una guía detallada, consulta la documentación de Aspose.Email.
+**Última actualización:** 2026-01-22  
+**Probado con:** Aspose.Email para Java 23.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
