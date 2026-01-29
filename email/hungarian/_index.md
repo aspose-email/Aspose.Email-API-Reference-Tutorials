@@ -1,7 +1,7 @@
 ---
 additionalTitle: Aspose API References
-date: 2025-11-30
-description: Ismerje meg, hogyan hozhat létre naptári eseményt az Aspose.Email .NET
+date: 2026-01-29
+description: Tanulja meg, hogyan hozhat létre naptári eseményt az Aspose.Email .NET
   és Java verziójával, és fedezze fel, hogyan konvertálhat PST-t EML-re, ellenőrizheti
   az e‑mail címeket, valamint konfigurálhatja az SMTP szervereket.
 linktitle: Aspose.Email Tutorials
@@ -16,145 +16,165 @@ weight: 10
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email oktatóanyagok: Az e‑mail kezelés és manipuláció elsajátítása .NET és Java API‑kkal
+# Aspose.Email oktatóanyagok: Mesteri e‑mail kezelés és manipuláció .NET & Java API‑kkal
 
-Ebben az útmutatóban könnyedén **create calendar appointment** objektumokat hozhatsz létre az Aspose.Email robusztus .NET és Java könyvtáraival. Akár egy ütemezési funkciót építesz egy vállalati alkalmazáshoz, akár szinkronizálni kell a találkozókat az Outlook vagy az Exchange rendszerrel, ezek az oktatóanyagok lépésről lépésre megmutatják, hogyan generálj, szerkessz és küldj naptári elemeket. A tutorial végére szilárd alapot kapsz a naptári találkozó adatok létrehozásához, a PST fájlok EML‑re konvertálásához, az e‑mail címek validálásához és az SMTP szerverek megbízható kézbesítéshez történő konfigurálásához.
+Ebben az útmutatóban **naptári találkozó** objektumokat hozhatsz létre egyszerűen az Aspose.Email robusztus .NET és Java könyvtáraival. Akár egy vállalati alkalmazáshoz szeretnél ütemezési funkciót építeni, akár Outlook vagy Exchange‑szel szeretnél szinkronizálni, ezek az oktatóanyagok lépésről‑lépésre bemutatják, hogyan generálj, szerkessz és küldj naptári elemeket. A tutorial végére szilárd alapot kapsz a naptári találkozó adatok létrehozásához, PST‑fájlok EML‑re konvertálásához, e‑mail címek validálásához és SMTP‑szerverek megbízható beállításához.
 
 ## Gyors válaszok
-- **Mi az Aspose.Email elsődleges felhasználási célja?** Ahhoz, hogy programozottan hozzunk létre, olvassunk és manipuláljunk e‑mail üzeneteket, naptári elemeket és kapcsolódó adatokat .NET és Java platformokon.  
-- **Létrehozhatok programozottan calendar appointment‑t?** Igen – az Aspose.Email egyszerű API‑t biztosít iCalendar (ICS) találkozók építéséhez és sorosításához.  
-- **Szükségem van licencre a termeléshez?** A kereskedelmi licenc szükséges a termelési környezetben; egy ingyenes próba elérhető értékeléshez.  
-- **Milyen formátumok között konvertálhatok?** Outlook PST/OST, MSG, EML, MBOX, PDF és továbbiak (pl. PST konvertálása EML‑re).  
-- **Támogatott az SMTP szerver konfigurálása?** Teljesen – a könyvtár teljes SMTP kliens támogatást nyújt üzenetek és naptári meghívók küldéséhez.
+- **Mi az Aspose.Email fő felhasználási területe?** Programozottan e‑mail üzenetek, naptári elemek és kapcsolódó adatok létrehozása, olvasása és manipulálása .NET & Java platformokon.  
+- **Létrehozhatok naptári találkozót programból?** Igen – az Aspose.Email egyszerű API‑t biztosít iCalendar (ICS) találkozók építéséhez és sorosításához.  
+- **Szükségem van licencre a termeléshez?** Igen, a termeléshez kereskedelmi licenc szükséges; ingyenes próba verzió elérhető értékeléshez.  
+- **Milyen formátumokat konvertálhatok?** Outlook PST/OST, MSG, EML, MBOX, PDF és még sok más (pl. PST‑t EML‑re).  
+- **Támogatott az SMTP‑szerver konfiguráció?** Teljesen – a könyvtár tartalmaz teljes SMTP‑kliens támogatást üzenetek és naptári meghívók küldéséhez.
 
 ## Mi az **create calendar appointment** az Aspose.Email‑ben?
-A naptári találkozó létrehozása egy iCalendar (ICS) objektum generálását jelenti, amely egy eseményt, megbeszélést vagy emlékeztetőt ábrázol. Az Aspose.Email lehetővé teszi a tárgy, a kezdő/lezáró időpontok, a résztvevők, az ismétlődési minták meghatározását, majd a találkozó mentését vagy e‑mailként vagy fájlként történő elküldését.
+Naptári találkozó létrehozása azt jelenti, hogy egy iCalendar (ICS) objektumot generálsz, amely egy eseményt, megbeszélést vagy emlékeztetőt reprezentál. Az Aspose.Email lehetővé teszi a tárgy, kezdő/vég időpont, résztvevők, ismétlődési minták megadását, majd a találkozó mentését vagy küldését e‑mailként vagy fájlként.
 
-## Miért használjuk az Aspose.Email‑t **create calendar appointment** létrehozásához?
+## Miért használjuk az Aspose.Email‑t **create calendar appointment**‑hez?
 - **Keresztplatformos konzisztencia:** Írj egyszer C#‑ban vagy Java‑ban, és futtathatod Windows, Linux vagy macOS rendszeren.  
-- **Teljes formátumtámogatás:** Zökkenőmentesen dolgozz PST, MSG, EML fájlokkal, és akár a találkozókat PDF‑re is konvertálhatod jelentéshez.  
-- **Nincs Outlook függőség:** Minden művelet végrehajtható Outlook telepítése nélkül a szerveren.  
-- **Robusztus biztonság:** Beépített S/MIME aláírás, titkosítás és TLS/SSL az SMTP-hez.
+- **Teljes formátumtámogatás:** Zökkenőmentesen dolgozhatsz PST, MSG, EML fájlokkal, és a találkozókat PDF‑re is konvertálhatod jelentéshez.  
+- **Outlook‑független:** Minden művelet a szerveren Outlook telepítése nélkül végezhető.  
+- **Robusztus biztonság:** Beépített S/MIME aláírás, titkosítás és TLS/SSL az SMTP‑hez.
 
-## Előkövetelmények
+## Előfeltételek
 - .NET 6+ vagy Java 11+ futtatókörnyezet.  
 - Aspose.Email for .NET / Aspose.Email for Java NuGet / Maven csomag.  
 - Érvényes Aspose licenc (vagy próba).  
-- Hozzáférés egy SMTP szerverhez, ha a találkozót küldeni szeretnéd (lásd **smtp server configuration**).
+- SMTP‑szerver elérés, ha a találkozót küldeni szeretnéd (lásd **smtp server configuration**).
 
-## Lépésről‑lépésre útmutató a **create calendar appointment** létrehozásához
+## Lépés‑ről‑lépésre útmutató **create calendar appointment**‑hez
+
 ### 1. lépés: MailMessage inicializálása (vagy MailMessage Java‑ban)
-Kezdd egy új mail message objektum létrehozásával, amely a naptári adatokat fogja tartalmazni.
+Kezdj egy új mail üzenet objektummal, amely a naptári adatot fogja tartalmazni.
 
-### 2. lépés: Az Appointment felépítése
-Használd az `Appointment` osztályt (C#) vagy az `Appointment` osztályt (Java) a tárgy, helyszín, kezdő/lezáró időpontok és a résztvevők beállításához.
+### 2. lépés: Találkozó felépítése
+Használd az `Appointment` osztályt (C#) vagy az `Appointment` osztályt (Java) a tárgy, helyszín, kezdő/vég időpont és résztvevők beállításához.
 
-### 3. lépés: Az Appointment csatolása az üzenethez
-Konvertáld az appointment‑ot iCalendar stringgé, és add hozzá alternatív nézetként (vagy mellékletként) az e‑mailhez.
+### 3. lépés: Találkozó csatolása az üzenethez
+Konvertáld a találkozót iCalendar szöveggé, és add hozzá alternatív nézetként (vagy csatolmányként) az e‑mailhez.
 
 ### 4. lépés: (Opcionális) PDF‑re konvertálás
-Ha nyomtatható verzióra van szükséged, hívd a `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))` metódust. Ez bemutatja a **convert email to pdf** funkciót.
+Ha nyomtatható verzióra van szükséged, hívd a `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))` metódust. Ez demonstrálja a **convert email to pdf** funkciót.
 
 ### 5. lépés: Küldés SMTP‑vel (vagy mentés fájlba)
-Állítsd be az SMTP kliensedet (lásd **smtp server configuration**) és küldd el az üzenetet, vagy egyszerűen mentsd el a .ics fájlt helyileg.
+Állítsd be az SMTP‑kliensed (lásd **smtp server configuration**) és küldd el az üzenetet, vagy egyszerűen mentsd el a .ics fájlt helyileg.
 
-> **Pro tipp:** Használd újra ugyanazt a `SmtpClient` példányt tömeges találkozóküldéshez a teljesítmény javítása érdekében.
+> **Pro tipp:** Használd ugyanazt az `SmtpClient` példányt tömeges találkozóküldéshez a teljesítmény javítása érdekében.
 
-## További témák, amelyeket ezekben az oktatóanyagokban találsz
-- **Convert PST to EML** – Tanuld meg, hogyan lehet üzeneteket kinyerni Outlook PST fájlokból, és exportálni őket EML fájlokként a keresztplatformos kompatibilitás érdekében.  
+## Gyakori felhasználási esetek naptári találkozókhoz
+- **Meghívók** küldése egy egyedi CRM rendszerből.  
+- **Automatikus emlékeztetők** előfizetés megújításokról vagy szolgáltatási időpontokról.  
+- **Események szinkronizálása** egy saját ütemező és Outlook/Exchange között.  
+- **Nyomtatható útvonaltervek** generálása a találkozó PDF‑re konvertálásával.
+
+## Tippek és bevált gyakorlatok
+- Mindig állítsd be a `METHOD:REQUEST` fejlécet, ha iCalendar‑t meghívásként szeretnéd kezelni.  
+- Használj UTC időpontokat a kezdő/vég dátumokhoz, hogy elkerüld a zónák közti zavart.  
+- Nagy közönségnek küldéskor csoportosítsd az SMTP‑küldéseket és tartsd be a sebességkorlátokat.  
+- Validáld a résztvevők e‑mail címeit az Aspose.Email beépített validátorával, mielőtt hozzáadnád őket a találkozóhoz.  
+- Tárold a generált .ics fájlokat verziókezelő mappában, ha audit nyomokra van szükség.
+
+## További témák, melyek az oktatóanyagokban megtalálhatók
+
+- **Convert PST to EML** – Tanuld meg, hogyan nyerj ki üzeneteket Outlook PST fájlokból, és exportáld őket EML fájlokként a keresztplatformos kompatibilitás érdekében.  
 - **Validate email address Java** – Használd a beépített validátort, hogy az e‑mail címek megfeleljenek az RFC szabványoknak küldés előtt.  
-- **Email verification .NET** – Végez DNS MX rekord ellenőrzést és SMTP kézfogás ellenőrzést közvetlenül a .NET kódból.  
+- **Email verification .NET** – DNS MX rekord ellenőrzés és SMTP kézfogás validáció közvetlenül a .NET kódból.  
 - **SMTP server configuration** – Részletes lépések TLS, hitelesítési mechanizmusok és egyedi portok beállításához.  
-- **Convert email to PDF** – Bármely e‑mail (beleértve a naptári meghívókat) PDF dokumentummá alakítása archiváláshoz.
+- **Convert email to PDF** – Bármely e‑mail (beleértve a naptári meghívókat) PDF‑dokumentummá alakítása archiválás céljából.
 
 ## Fedezd fel részletes oktatóanyagainkat
-### Aspose.Email .NET‑hez: Átfogó e‑mail feldolgozó API oktatóanyagok
+
+### Aspose.Email For .NET: Átfogó e‑mail feldolgozó API oktatóanyagok
+
 {{% alert color="primary" %}}
-Fedezd fel a **Aspose.Email for .NET** erejét részletes oktatóanyagainkkal. Ezek az útmutatók lépésről lépésre útmutatást és gyakorlati C# kódrészleteket nyújtanak robusztus e‑mail kezelő megoldások fejlesztéséhez. Tanulj meg e‑mailt összeállítani, küldeni, fogadni, konvertálni, elemezni és biztonságossá tenni, integrálni az Exchange Serverrel, és különféle e‑mail formátumokat kezelni, mint a PST, MSG és EML, ezáltal javítva .NET alkalmazásaidat és egyszerűsítve az e‑mail‑központú feladatokat.
+Fedezd fel a **Aspose.Email for .NET** erejét részletes oktatóanyagainkkal. Ezek az útmutatók lépésről‑lépésre instrukciókat és gyakorlati C# kódrészleteket nyújtanak robusztus e‑mail kezelő megoldások fejlesztéséhez. Tanulj meg e‑mailt komponálni, küldeni, fogadni, konvertálni, elemezni és biztonságossá tenni, integrálni az Exchange Serverrel, és kezelni különféle e‑mail formátumokat, mint PST, MSG és EML, ezáltal fejlesztve .NET alkalmazásaidat és egyszerűsítve az e‑mail‑központú feladatokat.
 {{% /alert %}}
 
-- [Első lépések az Aspose.Email .NET‑hez](./net/getting-started/)
-- [Alapvető e‑mail üzenet műveletek .NET‑ben](./net/email-message-operations/)
-- [E‑mail üzenetek formázása és testreszabása .NET‑ben](./net/message-formatting-customization/)
-- [E‑mail mellékletek kezelése .NET‑ben](./net/attachments-handling/)
-- [Naptár és találkozók kezelése e‑mailben (.NET)](./net/calendar-appointments/)
-- [Integráció Exchange Serverrel az Aspose.Email .NET‑hez használva](./net/exchange-server-integration/)
-- [IMAP kliens műveletek az Aspose.Email .NET‑hez](./net/imap-client-operations/)
-- [POP3 kliens műveletek az Aspose.Email .NET‑hez](./net/pop3-client-operations/)
-- [SMTP kliens műveletek e‑mail küldéshez .NET‑ben](./net/smtp-client-operations/)
-- [Outlook PST és OST fájlok kezelése .NET‑ben](./net/outlook-pst-ost-operations/)
-- [MAPI műveletek Outlook adatokhoz .NET‑ben](./net/mapi-operations/)
-- [E‑mail biztonság és hitelesítés .NET alkalmazásokban](./net/security-authentication/)
-- [E‑mail elemzés és feldolgozás technikák .NET‑ben](./net/email-parsing-analysis/)
-- [E‑mail konvertálás és megjelenítés különböző formátumokba (.NET)](./net/email-conversion-rendering/)
-- [Haladó e‑mail összeállítás és létrehozás .NET‑ben](./net/email-composition-and-creation/)
-- [E‑mail validálás és ellenőrzés .NET‑ben](./net/email-validation-and-verification/)
-- [E‑mail fejlécek manipulálása .NET‑ben](./net/email-header-manipulation/)
-- [E‑mail események és naptár kezelése .NET‑ben](./net/email-event-and-calendar-handling/)
-- [E‑mail értesítés és nyomon követés .NET‑ben](./net/email-notification-and-tracking/)
-- [E‑mail fájl tárolás és visszakeresés stratégiák (.NET)](./net/email-file-storage-and-retrieval/)
-- [E‑mail biztonság és digitális aláírások .NET‑ben](./net/email-security-and-signatures/)
+Fedezd fel Aspose.Email for .NET oktatóanyagainkat:
+- [Getting Started with Aspose.Email for .NET](./net/getting-started/)
+- [Core Email Message Operations in .NET](./net/email-message-operations/)
+- [Formatting & Customizing Email Messages in .NET](./net/message-formatting-customization/)
+- [Handling Email Attachments in .NET](./net/attachments-handling/)
+- [Managing Calendar & Appointments in Emails (.NET)](./net/calendar-appointments/)
+- [Integrating with Exchange Server using Aspose.Email for .NET](./net/exchange-server-integration/)
+- [IMAP Client Operations with Aspose.Email for .NET](./net/imap-client-operations/)
+- [POP3 Client Operations with Aspose.Email for .NET](./net/pop3-client-operations/)
+- [SMTP Client Operations for Sending Emails in .NET](./net/smtp-client-operations/)
+- [Working with Outlook PST & OST Files in .NET](./net/outlook-pst-ost-operations/)
+- [MAPI Operations for Outlook Data in .NET](./net/mapi-operations/)
+- [Email Security & Authentication in .NET Applications](./net/security-authentication/)
+- [Email Parsing & Analysis Techniques in .NET](./net/email-parsing-analysis/)
+- [Email Conversion & Rendering to Various Formats (.NET)](./net/email-conversion-rendering/)
+- [Advanced Email Composition and Creation with .NET](./net/email-composition-and-creation/)
+- [Email Validation and Verification in .NET](./net/email-validation-and-verification/)
+- [Manipulating Email Headers in .NET](./net/email-header-manipulation/)
+- [Email Event and Calendar Handling with .NET](./net/email-event-and-calendar-handling/)
+- [Email Notification and Tracking in .NET](./net/email-notification-and-tracking/)
+- [Email File Storage and Retrieval Strategies (.NET)](./net/email-file-storage-and-retrieval/)
+- [Email Security and Digital Signatures in .NET](./net/email-security-and-signatures/)
 
-### Aspose.Email Java‑hoz: Erőteljes e‑mail kezelő API oktatóanyagok
+### Aspose.Email For Java: Erőteljes e‑mail kezelő API oktatóanyagok
+
 {{% alert color="primary" %}}
-Fedezd fel a **Aspose.Email for Java** teljes potenciálját átfogó oktatóanyag könyvtárunkkal. Ezek az útmutatók gyakorlati Java kódrészleteket és világos magyarázatokat nyújtanak erőteljes e‑mail kezelő alkalmazások építéséhez. Fedezd fel a témákat, mint e‑mail küldés és fogadás, SMTP szerverek konfigurálása, mellékletek kezelése, kommunikáció biztonságossá tétele és e‑mail szolgáltatások integrálása, így Java fejlesztési projektjeid erőteljes e‑mail funkcionalitással bővülnek.
+Nyisd ki a **Aspose.Email for Java** teljes potenciálját átfogó tutorial könyvtárunkkal. Ezek az útmutatók gyakorlati Java kódrészleteket és világos magyarázatokat kínálnak erőteljes e‑mail kezelő alkalmazások építéséhez. Fedezd fel a témákat, mint e‑mail küldés és fogadás, SMTP‑szerver konfiguráció, csatolmánykezelés, kommunikáció biztonságosítása és e‑mail szolgáltatások integrálása, így a Java fejlesztési projektjeid megbízható e‑mail funkcionalitással gazdagodnak.
 {{% /alert %}}
 
-- [Első lépések az Aspose.Email Java‑hoz](./java/getting-started/)
-- [Alapvető e‑mail üzenet műveletek Java‑ban](./java/email-message-operations/)
-- [E‑mail üzenetek formázása és testreszabása Java‑ban](./java/message-formatting-customization/)
-- [E‑mail mellékletek kezelése Java‑ban](./java/attachments-handling/)
-- [Naptár és találkozók kezelése e‑mailben (Java)](./java/calendar-appointments/)
-- [Integráció Exchange Serverrel az Aspose.Email Java‑hoz](./java/exchange-server-integration/)
-- [IMAP kliens műveletek az Aspose.Email Java‑val](./java/imap-client-operations/)
-- [POP3 kliens műveletek az Aspose.Email Java‑val](./java/pop3-client-operations/)
-- [SMTP kliens műveletek e‑mail küldéshez Java‑ban](./java/smtp-client-operations/)
-- [Outlook PST és OST fájlok kezelése Java‑ban](./java/outlook-pst-ost-operations/)
-- [MAPI műveletek Outlook adatokhoz Java‑ban](./java/mapi-operations/)
-- [E‑mail biztonság és hitelesítés Java alkalmazásokban](./java/security-authentication/)
-- [E‑mail elemzés és feldolgozás technikák Java‑ban](./java/email-parsing-analysis/)
-- [E‑mail konvertálás és megjelenítés különböző formátumokba (Java)](./java/email-conversion-rendering/)
-- [Thunderbird és MBOX műveletek az Aspose.Email Java‑val](./java/thunderbird-mbox-operations/)
-- [E‑mail küldése programozottan az Aspose.Email Java‑val](./java/sending-emails/)
-- [E‑mail fogadása programozottan az Aspose.Email Java‑val](./java/receiving-emails/)
-- [SMTP szerverek konfigurálása e‑mail küldéshez Java‑ban](./java/configuring-smtp-servers/)
-- [Haladó e‑mail mellékletek kezelése Java‑ban](./java/advanced-email-attachments/)
-- [E‑mail kommunikációk biztonságossá tétele az Aspose.Email Java‑val](./java/securing-email-communications/)
-- [E‑mail fejlécek testreszabása az Aspose.Email Java‑val](./java/customizing-email-headers/)
-- [E‑mail biztonsági funkciók felfedezése az Aspose.Email Java‑ban](./java/exploring-email-security/)
+Fedezd fel Aspose.Email for Java oktatóanyagainkat:
+- [Getting Started with Aspose.Email for Java](./java/getting-started/)
+- [Core Email Message Operations in Java](./java/email-message-operations/)
+- [Formatting & Customizing Email Messages in Java](./java/message-formatting-customization/)
+- [Handling Email Attachments in Java](./java/attachments-handling/)
+- [Managing Calendar & Appointments in Emails (Java)](./java/calendar-appointments/)
+- [Integrating with Exchange Server using Aspose.Email for Java](./java/exchange-server-integration/)
+- [IMAP Client Operations with Aspose.Email for Java](./java/imap-client-operations/)
+- [POP3 Client Operations with Aspose.Email for Java](./java/pop3-client-operations/)
+- [SMTP Client Operations for Sending Emails in Java](./java/smtp-client-operations/)
+- [Working with Outlook PST & OST Files in Java](./java/outlook-pst-ost-operations/)
+- [MAPI Operations for Outlook Data in Java](./java/mapi-operations/)
+- [Email Security & Authentication in Java Applications](./java/security-authentication/)
+- [Email Parsing & Analysis Techniques in Java](./java/email-parsing-analysis/)
+- [Email Conversion & Rendering to Various Formats (Java)](./java/email-conversion-rendering/)
+- [Thunderbird & MBOX Operations with Aspose.Email for Java](./java/thunderbird-mbox-operations/)
+- [Sending Emails Programmatically with Aspose.Email for Java](./java/sending-emails/)
+- [Receiving Emails Programmatically with Aspose.Email for Java](./java/receiving-emails/)
+- [Configuring SMTP Servers for Email Sending in Java](./java/configuring-smtp-servers/)
+- [Advanced Email Attachments Handling in Java](./java/advanced-email-attachments/)
+- [Securing Email Communications with Aspose.Email for Java](./java/securing-email-communications/)
+- [Customizing Email Headers with Aspose.Email for Java](./java/customizing-email-headers/)
+- [Exploring Email Security Features in Aspose.Email for Java](./java/exploring-email-security/)
 
-## Gyakori problémák és megoldások
+## Gyakori problémák & megoldások
 
-| Probléma | Ok | Megoldás |
-|----------|----|----------|
-| Naptári meghívó nem jelenik meg Outlookban | Hiányzó `METHOD:REQUEST` fejléc | `appointment.Save(message, SaveOptions.DefaultIcs)` hozzáadása a küldés előtt. |
-| PST konvertálás sikertelen a “Invalid file format” hibával | Régebbi Aspose verzió használata | Frissíts a legújabb Aspose.Email kiadásra (támogatja a PST v4-et). |
-| E‑mail cím validálás hamis eredményt ad érvényes címeknél | A helyi specifikus karakterek nem támogatottak | Használd a `EmailValidator.Validate(email, ValidationOptions.AllowInternational)` metódust. |
-| SMTP hitelesítési hiba | Helytelen port vagy TLS beállítás | Ellenőrizd a **smtp server configuration**: port 587 `EnableSsl = true` beállítással. |
-| PDF konvertálás üres oldalakat eredményez | Az üzenettörzs nincs betöltve | `message.Load("msgfile.msg")` hívása a PDF‑be mentés (`Save`) előtt. |
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Calendar invite not appearing in Outlook | Missing `METHOD:REQUEST` header | Add `appointment.Save(message, SaveOptions.DefaultIcs)` before sending. |
+| PST conversion fails with “Invalid file format” | Using older Aspose version | Upgrade to the latest Aspose.Email release (supports PST v4). |
+| Email address validation returns false for valid addresses | Locale‑specific characters not supported | Use `EmailValidator.Validate(email, ValidationOptions.AllowInternational)`. |
+| SMTP authentication error | Incorrect port or TLS settings | Verify **smtp server configuration**: port 587 with `EnableSsl = true`. |
+| PDF conversion produces blank pages | Message body not loaded | Call `message.Load("msgfile.msg")` before `Save` to PDF. |
 
-## Gyakran ismételt kérdések
+## Gyakran feltett kérdések
 
-**Q: Hogyan **create calendar appointment**-t hozhatok létre és küldhetem iCalendar fájlként?**  
-A: Hozz létre egy `Appointment` objektumot, állítsd be a tulajdonságait, konvertáld iCalendar stringgé a `appointment.Save()` segítségével, csatold egy `MailMessage`-hez, és küldd a `SmtpClient`‑tel.
+**Q: Hogyan **create calendar appointment** és küldjem iCalendar fájlként?**  
+A: Hozz létre egy `Appointment` objektumot, állítsd be a tulajdonságait, konvertáld iCalendar szöveggé a `appointment.Save()`‑el, csatold egy `MailMessage`‑hez, és küldd el `SmtpClient`‑tel.
 
-**Q: Az Aspose.Email **convert PST to EML**-t automatikusan tud-e?**  
-A: Igen. Töltsd be a PST‑t a `PersonalStorage.FromFile`‑val, iteráld a `Folder` objektumokat, és hívjad a `message.Save("output.eml", SaveOptions.DefaultEml)` minden egyes e‑mail elemhez.
+**Q: Az Aspose.Email **convert PST to EML** automatikusan?**  
+A: Igen. Töltsd be a PST‑t a `PersonalStorage.FromFile`‑val, iteráld a `Folder` objektumokat, és hívd a `message.Save("output.eml", SaveOptions.DefaultEml)`‑t minden levélhez.
 
-**Q: Mi a legjobb módja a **validate email address Java**-nak?**  
-A: Használd az `EmailValidator.IsValid(email, ValidationOptions.Default)` metódust az Aspose.Email for Java‑ból. Ellenőrzi a szintaxist és opcionálisan a DNS MX rekordokat.
+**Q: Mi a legjobb módja a **validate email address Java** ellenőrzésének?**  
+A: Használd az `EmailValidator.IsValid(email, ValidationOptions.Default)`‑t az Aspose.Email for Java‑ból. Ellenőrzi a szintaxist és opcionálisan a DNS MX rekordokat.
 
-**Q: Hogyan állítsam be a **smtp server configuration**-t a biztonságos küldéshez?**  
-A: Hozz létre egy `SmtpClient`‑et (vagy Java‑ban `SmtpTransport`‑ot), állítsd be a `Host`, `Port` (általában 587 TLS‑hez), engedélyezd az `EnableSsl`/`UseStartTls` opciókat, és add meg a hitelesítő adatokat.
+**Q: Hogyan állítsam be a **smtp server configuration**‑t biztonságos küldéshez?**  
+A: Hozz létre egy `SmtpClient`‑et (vagy `SmtpTransport`‑ot Java‑ban), állítsd be a `Host`, `Port` (általában 587 TLS‑hez), engedélyezd az `EnableSsl`/`UseStartTls` opciót, és add meg a hitelesítő adatokat.
 
-**Q: Lehetséges **convert email to PDF**-t készíteni beágyazott mellékletekkel?**  
-A: Teljesen. Használd a `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))` metódust. A mellékletek ikonként vagy beágyazottként jelennek meg a beállításoktól függően.
+**Q: Lehetséges **convert email to PDF** csatolmányok beágyazásával?**  
+A: Teljesen. Használd a `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`‑t. A csatolmányok ikonként vagy beágyazottként jelennek meg a beállításoktól függően.
 
 ---
 
-**Utolsó frissítés:** 2025-11-30  
-**Tesztelve:** Aspose.Email 24.11 .NET & Java verzióval  
-**Szerző:** Aspose  
+**Last Updated:** 2026-01-29  
+**Tested With:** Aspose.Email 24.11 for .NET & Java  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
