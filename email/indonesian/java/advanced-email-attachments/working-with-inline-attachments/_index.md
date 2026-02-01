@@ -1,11 +1,12 @@
 ---
-date: 2025-12-01
-description: Pelajari cara mengirim email dengan gambar tersemat menggunakan Aspose.Email
-  untuk Java. Panduan ini menunjukkan cara menyematkan gambar dalam email dan membuat
-  email HTML Java dengan lampiran inline.
+date: 2026-02-01
+description: Pelajari cara membuat gambar email HTML dengan Aspose.Email untuk Java,
+  termasuk cara mengirim gambar inline email, menyematkan gambar email Java, dan mengekstrak
+  gambar inline email.
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Cara Mengirim Email dengan Gambar Tersemat Menggunakan Aspose.Email untuk Java
+title: Cara Membuat Gambar Email HTML dengan Lampiran Inline Tertanam Menggunakan
+  Aspose.Email untuk Java
 url: /id/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
@@ -16,38 +17,39 @@ weight: 10
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengirim Email dengan Gambar Tersemat Menggunakan Aspose.Email untuk Java
+# Cara Membuat Gambar Email HTML dengan Lampiran Inline yang Disematkan Menggunakan Aspose.Email untuk Java
+
+Menyematkan gambar secara langsung di dalam email membuat pesan Anda terlihat rapi dan memastikan penerima melihat grafik tanpa harus mengunduh file terpisah. Dalam tutorial ini Anda akan belajar cara **create html email image** dan mengirim email dengan gambar yang disematkan menggunakan Aspose.Email untuk Java, mencakup semua hal mulai dari menyiapkan pustaka hingga membuat email HTML, menambahkan sumber daya inline, dan akhirnya mengirim pesan.
 
 ## Jawaban Cepat
 - **Apa kelas utama untuk gambar inline?** `LinkedResource`
-- **Metode mana yang merujuk gambar dalam HTML?** Gunakan `cid:yourContentId` dalam tag `<img>`
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi diperlukan untuk produksi
-- **Bisakah saya mengirim email melalui server SMTP mana pun?** Ya, cukup konfigurasikan `SmtpClient` dengan detail server Anda
-- **Apakah pendekatan ini kompatibel dengan semua klien email utama?** Sebagian besar klien modern (Outlook, Gmail, Thunderbird) mendukung gambar CID‑embedded
+- **Metode mana yang mereferensikan gambar dalam HTML?** Use `cid:yourContentId` in the `<img>` tag
+- **Apakah saya memerlukan lisensi untuk pengembangan?** A free trial works for testing; a license is required for production
+- **Bisakah saya mengirim email melalui server SMTP mana pun?** Yes, just configure `SmtpClient` with your server details
+- **Apakah pendekatan ini kompatibel dengan semua klien email utama?** Most modern clients (Outlook, Gmail, Thunderbird) support CID‑embedded images
 
-## Apa Itu Lampiran Inline (Gambar Tersemat)?
+## Apa Itu Lampiran Inline (Gambar yang Disematkan)?
 
-Lampiran inline—kadang disebut gambar tersemat atau gambar CID—adalah file yang berada di dalam badan MIME sebuah email. Mereka dirujuk dari bagian HTML pesan dengan **Content‑ID** (CID). Teknik ini memungkinkan Anda **menyematkan gambar dalam email** sehingga muncul tepat di tempat Anda menempatkan tag `<img>`, tanpa muncul sebagai lampiran terpisah yang dapat diunduh.
+Lampiran inline—kadang disebut gambar tersemat atau CID—adalah file yang berada di dalam tubuh MIME sebuah email. Mereka direferensikan dari bagian HTML pesan dengan **Content‑ID** (CID). Teknik ini memungkinkan Anda **embed images email** sehingga muncul tepat di tempat Anda menempatkan tag `<img>`, tanpa muncul sebagai lampiran yang dapat diunduh secara terpisah.
 
-## Mengapa Menggunakan Gambar Tersemat dalam Email Java Anda?
+## Mengapa Menggunakan Gambar yang Disematkan untuk Membuat Gambar Email HTML di Java?
 
-- **Tampilan profesional:** Logo, spanduk, dan gambar produk ditampilkan secara instan.  
-- **Keterlibatan lebih baik:** Penerima lebih cenderung membaca email yang tampak lengkap.  
-- **Tidak ada klik tambahan:** Pengguna tidak perlu mengunduh lampiran untuk melihat gambar.  
+- **Penampilan profesional:** Logo, sp instan.
+- **Keterlibatan lebih baik:** Penerima lebih cenderung membaca email yang tampak lengkap.
+- melihat gambar.
 - **Branding konsisten:** Aset merek Anda tetap sejalan dengan konten pesan.
 
 ## Prasyarat
 
-- Perpustakaan Aspose.Email untuk Java (unduh dari [dokumentasi Aspose.Email untuk Java](https://reference.aspose.com/email/java/))
+- Aspose.Email for Java library (download from the official [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/))
 - Lingkungan pengembangan Java 8+
-- Akses ke server SMTP untuk mengirim email
-- File gambar yang ingin Anda sematkan (mis., `logo.png`)
+- Akses ke server SMTP untuk (misalnya `logo.png`)
 
-## Panduan Langkah‑demi‑Langkah
+## Panduan Langkah‑per‑Langkah
 
 ### Langkah 1: Buat Pesan Email HTML Dasar
 
-Pertama, siapkan `MailMessage` sederhana dengan badan HTML. Ini akan menjadi kanvas tempat kita nanti menyematkan gambar.
+Pertama, siapkan `MailMessagekan gambar.
 
 ```java
 // Import necessary classes
@@ -64,7 +66,7 @@ message.setHtmlBody("<html><body>This is a sample email with inline attachments.
 
 ### Langkah 2: Tambahkan Gambar Inline Menggunakan `LinkedResource`
 
-Sekarang kita menyematkan gambar. Kelas `LinkedResource` mewakili lampiran inline. Tetapkan **Content‑ID** yang unik dan rujuk dalam badan HTML dengan `cid:`.
+Sekarang kita menyematkan gambar. Kelas `LinkedResource` mewakili unik dan referensikan dalam badan HTML dengan `cid:`.
 
 ```java
 import com.aspose.email.LinkedResource;
@@ -80,11 +82,9 @@ message.getLinkedResources().add(linkedResource);
 message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001'></body></html>");
 ```
 
-> **Pro tip:** Jaga `ContentId` tetap sederhana dan unik dalam pesan untuk menghindari konflik.
+> **Pro tip:** Jaga agar `ContentId` sederhana dan unik dalam pesan Langkah 3: Kirim Email melalui `SmtpClient`
 
-### Langkah 3: Kirim Email melalui `SmtpClient`
-
-Konfigurasikan pengaturan SMTP Anda dan kirim pesan. Gambar tersemat akan dikirim bersama email, sehingga penerima melihatnya secara langsung.
+Konfigurasikan pengaturan SMTP Anda dan kirim pesan. Gambar yang disematkan bepergian bersama email, sehingga penerima melihatnya secara instan.
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -98,7 +98,7 @@ client.send(message);
 
 ### Langkah 4: Terima dan Ekstrak Gambar Inline (Opsional)
 
-Jika Anda perlu memproses pesan masuk yang berisi gambar tersemat, Anda dapat memuat file `.eml` dan mengakses `LinkedResources`‑nya.
+Jika Anda perlu memproses pesan masuk yang berisi gambar yang disematkan, Anda dapat memuat file `.eml` dan mengakses `LinkedResources`‑nya.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -113,34 +113,28 @@ LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources(
 
 ## Masalah Umum & Cara Memperbaikinya
 
-| Masalah | Mengapa Terjadi | Solusi |
-|---------|-----------------|--------|
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
 | **Content‑ID mismatch** | Referensi `cid:` dalam HTML tidak cocok dengan `ContentId` yang ditetapkan pada `LinkedResource`. | Pastikan stringnya identik (`image001` vs `cid:image001`). |
-| **File not found** | Jalur ke gambar tidak tepat atau file tidak ada. | Verifikasi jalur absolut/relatif dan pastikan file tersebut ada di server. |
+| **File not found** | Path ke gambar tidak benar atau file tidak ada. | Verifikasi path absolut/relatif dan pastikan file ada di server. |
 | **SMTP authentication failure** | Kredensial atau pengaturan server salah. | Periksa kembali host, port, nama pengguna, dan kata sandi. Aktifkan TLS/SSL jika diperlukan. |
-| **Image not displayed in some clients** | Beberapa klien memblokir sumber eksternal. | Gunakan gambar CID‑embedded (seperti contoh) alih‑alih URL eksternal. |
+| **Image not displayed in some clients** | Beberapa klien memblokir sumber daya eksternal. | Gunakan gambar CID‑embedded (seperti yang ditunjukkan) alih-alih URL eksternal. |
 
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Bagaimana cara mengunduh Aspose.Email untuk Java?**  
 A: Anda dapat mengunduh Aspose.Email untuk Java dari [dokumentasi](https://reference.aspose.com/email/java/). Ikuti petunjuk instalasi untuk menyiapkannya dalam proyek Anda.
 
-**Q: Bisakah saya menggunakan Aspose.Email untuk Java dengan perpustakaan Java lainnya?**  
-A: Ya, Aspose.Email terintegrasi dengan mulus bersama perpustakaan Java lain, memungkinkan Anda menggabungkan pemrosesan email dengan pembuatan PDF, OCR, atau akses basis data.
+**Q: Bisakah saya menggunakan Aspose.Email untuk Java dengan pustaka Java lain?**  
+A: Ya, Aspose.Email terintegrasi dengan mulus ke pustaka Java lain, memungkinkan Anda menggabungkan pemrosesan email dengan pembuatan PDF, OCR, atau akses basis data.
 
-**Q: Format file apa yang didukung untuk lampiran inline?**  
-A: Format gambar umum seperti PNG, JPEG, GIF, serta tipe dokumen lain (mis., SVG) didukung sebagai sumber inline.
-
-**Q: Bagaimana cara menangani lampiran inline dalam email HTML?**  
-A: Gunakan kelas `LinkedResource` untuk menetapkan `ContentId`, tambahkan ke `message.getLinkedResources()`, dan rujuk dalam badan HTML dengan `<img src='cid:yourContentId'>`.
+**Q: Format file apa yang didukung untuk lamp Format gambar umum seperti PNG, JPEG, GIF, serta tipe dokumen lain (misalnya SVG) didukung sebagai sumber kelas `LinkedResource` untuk menetapkan `ContentId`, tambahkan ke `message.getLinkedResources()`, dan referensikan dalam badan HTML dengan `<img src='cid:yourContentId'>`.
 
 **Q: Apakah Aspose.Email untuk Java kompatibel dengan berbagai server email?**  
-A: Ya, ia bekerja dengan server SMTP/IMAP/POP3 apa pun. Cukup berikan alamat server, port, dan detail autentikasi yang benar.
+A/IMAP/POP3 apa pun. Cukup berikan alamat server, port, dan detail autentikasi yang benar.
 
----
-
-**Terakhir Diperbarui:** 2025-12-01  
-**Diuji Dengan:** Aspose.Email untuk Java 24.12 (versi terbaru saat penulisan)  
+02-01  
+**Diuji Dengan:** Aspose.Email untuk Java 24.12 (terbaru pada saat penulisan)  
 **Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

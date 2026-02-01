@@ -1,11 +1,11 @@
 ---
-title: "How to Send Email with Embedded Image Using Aspose.Email for Java"
+title: "How to Create HTML Email Image with Embedded Inline Attachments Using Aspose.Email for Java"
 linktitle: Working with Inline Attachments in Aspose.Email
 second_title: Aspose.Email Java Email Management API
-description: Learn how to send email with embedded image using Aspose.Email for Java. This guide shows how to embed images email and create HTML email Java with inline attachments.
+description: Learn how to create html email image with Aspose.Email for Java, including how to send email inline image, embed image email java, and extract inline images email.
 weight: 10
 url: /java/advanced-email-attachments/working-with-inline-attachments/
-date: 2025-12-01
+date: 2026-02-01
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -14,9 +14,9 @@ date: 2025-12-01
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# How to Send Email with Embedded Image Using Aspose.Email for Java
+# How to Create HTML Email Image with Embedded Inline Attachments Using Aspose.Email for Java
 
-Embedding images directly inside an email makes your messages look polished and ensures the recipient sees the graphics without needing to download separate files. In this tutorial you’ll learn **how to send email with embedded image** using Aspose.Email for Java, covering everything from setting up the library to creating an HTML email, adding inline resources, and finally sending the message.
+Embedding images directly inside an email makes your messages look polished and ensures the recipient sees the graphics without needing to download separate files. In this tutorial you’ll learn how to **create html email image** and send email with an embedded image using Aspose.Email for Java, covering everything from setting up the library to creating an HTML email, adding inline resources, and finally sending the message.
 
 ## Quick Answers
 - **What is the primary class for inline images?** `LinkedResource`
@@ -29,7 +29,7 @@ Embedding images directly inside an email makes your messages look polished and 
 
 Inline attachments—sometimes called embedded or CID images—are files that live inside the MIME body of an email. They are referenced from the HTML part of the message with a **Content‑ID** (CID). This technique lets you **embed images email** so they appear right where you place the `<img>` tag, without appearing as separate downloadable attachments.
 
-## Why Use Embedded Images in Your Java Emails?
+## Why Use Embedded Images to Create HTML Email Image in Java?
 
 - **Professional look:** Logos, banners, and product pictures render instantly.
 - **Better engagement:** Recipients are more likely to read an email that looks complete.
@@ -139,7 +139,7 @@ A: Yes, it works with any SMTP/IMAP/POP3 server. Just provide the correct server
 
 ---
 
-**Last Updated:** 2025-12-01  
+**Last Updated:** 2026-02-01  
 **Tested With:** Aspose.Email for Java 24.12 (latest at time of writing)  
 **Author:** Aspose  
 
