@@ -1,11 +1,11 @@
 ---
-date: '2025-12-10'
-description: 了解如何使用 Aspose.Email for Java 保存帶有 TNEF 附件的 eml 檔案。本指南涵蓋載入、更新及儲存過程。
+date: '2026-02-11'
+description: 學習如何使用 Aspose.Email for Java 處理電子郵件附件並以 TNEF 方式儲存 EML 檔案，包括如何取代嵌入式圖片及更新訊息內容。
 keywords:
 - EML files with TNEF attachments
 - Aspose.Email for Java
 - Email handling in Java
-title: 使用 Aspose.Email for Java 保存帶有 TNEF 附件的 EML 檔案
+title: 處理電子郵件附件：儲存 EML TNEF（Aspose.Email Java）
 url: /zh-hant/java/attachments-handling/aspose-email-java-eml-tnef-handling/
 weight: 1
 ---
@@ -19,35 +19,35 @@ weight: 1
 
 ## Introduction
 
-如果您正在尋找 **how to save eml** 包含 TNEF 附件的檔案，Aspose.Email for Java 提供了穩健、可投入生產的解決方案。在本教學中，您將學會如何載入、更新，最終 **save eml** 檔案，同時保留所有內嵌資源。我們亦會示範如何 **process email attachments**、**update email** 內容，以及有效處理 **how to load eml** 檔案。
+如果你正在尋找 **how to save eml** 檔案且其中包含 TNEF 附件，Aspose.Email for Java 提供一個穩健、可投入生產環境的解決方案。在本教學中，你將學會如何 **process email attachments**、載入、更新，最後 **save eml** 檔案，同時保留所有嵌入資源。我們也會示範如何 **process email attachments**、**update email** 內容，以及有效處理 **how to load eml** 檔案的方法。
 
 **What You’ll Learn**
 - 如何 **load** EML 檔案並保持 TNEF 資料完整  
-- 一步一步的流程，於修改後 **save eml** 檔案  
-- 技巧以 **update email attachments** 及相關資源  
-- 實務情境說明此工作流程如何節省時間並避免資料遺失  
+- 修改後 **save eml** 檔案的逐步流程  
+- **update email attachments** 及相關資源的技巧  
+- 真實情境下此工作流程如何節省時間並避免資料遺失  
 
 準備好精通電子郵件處理了嗎？讓我們開始吧！
 
 ## Quick Answers
-- **What is the primary way to preserve TNEF attachments?** 在 `EmlSaveOptions` 中設定 `FileCompatibilityMode.PreserveTnefAttachments`。  
-- **Which Aspose class loads an EML file?** `MailMessage.load(String filePath)`。  
-- **Can I update embedded images without breaking the email?** 可以 – 使用 `UpdateResources` 輔助程式替換串流。  
-- **Do I need a license for development?** 免費試用版可用於測試；正式環境需購買完整授權。  
-- **What Java version is supported?** JDK 1.8 或以上（範例使用 JDK 16 classifier）。  
+- **保留 TNEF 附件的主要方式是什麼？** 在 `EmlSaveOptions` 中設定 `FileCompatibilityMode.PreserveTnefAttachments`。  
+- **哪個 Aspose 類別用來載入 EML 檔案？** `MailMessage.load(String filePath)`。  
+- **我可以在不破壞郵件的情況下更新嵌入圖片嗎？** 可以 – 使用 `UpdateResources` 輔助方法替換串流。  
+- **開發階段需要授權嗎？** 免費試用可用於測試；正式上線需購買完整授權。  
+- **支援哪個 Java 版本？** JDK 1.8 或以上（範例使用 JDK 16 classifier）。  
 
-## What is “how to save eml” with TNEF attachments?
-「how to save eml」含 TNEF 附件是指在不剝除 Outlook 特有的附件資訊下，將訊息寫回磁碟的過程。Aspose.Email 的 `EmlSaveOptions` 提供了對此過程的精細控制。
+## What is “process email attachments” with TNEF attachments?
+在儲存 EML 檔案時保留 TNEF 資料，意味著將訊息寫回磁碟時不會剝除 Outlook 專屬的附件資訊。Aspose.Email 的 `EmlSaveOptions` 為此提供了精細的控制。
 
 ## Why use Aspose.Email for Java?
-- **Full format support** – 完整格式支援 – MSG、EML、MHTML 等。  
-- **Zero‑dependency API** – 零相依性 API – 無需安裝本機函式庫。  
-- **Enterprise‑grade performance** – 企業級效能 – 基於串流的處理，適用於大型信箱。  
+- **完整格式支援** – MSG、EML、MHTML 等多種格式。  
+- **零相依 API** – 無需安裝本機函式庫。  
+- **企業級效能** – 基於串流的處理方式，適合大型郵箱。  
 
 ## Prerequisites
 
 ### Required Libraries and Dependencies
-您需要 Aspose.Email for Java。透過 Maven 加入：
+你需要 Aspose.Email for Java。透過 Maven 加入：
 
 ```xml
 <dependency>
@@ -59,21 +59,21 @@ weight: 1
 ```
 
 ### Environment Setup
-- Java Development Kit (JDK) 1.8 或以上。  
-- IDE，例如 IntelliJ IDEA 或 Eclipse。  
+- Java Development Kit (JDK) 1.8 或以上。  
+- IntelliJ IDEA、Eclipse 等開發 IDE。  
 
 ### Knowledge Prerequisites
-建議具備基本的 Java 程式設計知識，並熟悉檔案 I/O 串流。
+建議具備基本的 Java 程式設計知識與檔案 I/O 串流的概念。
 
 ## Setting Up Aspose.Email for Java
 
 ### Installation Information
-在上述加入 Maven 依賴，或直接從 [Aspose 官方網站](https://releases.aspose.com/email/java/) 下載 JAR。
+將上述 Maven 依賴加入專案，或直接從 [Aspose website](https://releases.aspose.com/email/java/) 下載 JAR。
 
 ### License Acquisition Steps
-- **Free Trial:** 免費試用：取得試用授權以探索 API。  
-- **Temporary License:** 臨時授權：若需要延長評估期間，請申請。  
-- **Purchase:** 購買：取得完整授權以供正式部署使用。
+- **Free Trial:** 取得試用授權以探索 API。  
+- **Temporary License:** 若需延長評估期間可申請臨時授權。  
+- **Purchase:** 購買正式授權以供生產環境使用。
 
 ### Basic Initialization and Setup
 首先載入授權，讓 API 在沒有評估限制的情況下執行：
@@ -87,12 +87,12 @@ license.setLicense("path/to/your/license/file");
 
 ## Implementation Guide
 
-本指南將帶您完成 **how to load eml**、更新其資源，最終 **how to save eml**，同時保留 TNEF 附件。
+本指南將說明 **how to load eml**、更新其資源，最後 **how to save eml** 並保留 TNEF 附件的完整步驟。
 
-### Loading and Saving EML Files with TNEF Attachments
+### How to process email attachments with Aspose.Email
 
 #### Overview
-我們將載入現有的 EML 檔案，取代任何內嵌圖片，然後將訊息儲存回磁碟而不遺失 TNEF 資料。
+我們將載入既有的 EML 檔案、替換任何嵌入圖片，然後將訊息儲存回磁碟而不遺失 TNEF 資料。
 
 #### Step‑by‑Step Instructions
 
@@ -123,7 +123,7 @@ emlSo.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
 ```
 
 3. **Update Resources in the Mail Message**  
-   用新的內容串流取代內嵌圖片（或其他資源）。
+   用新的內容串流取代嵌入圖片（或其他資源）。
 
 ```java
 UpdateResources(originalMailMessage, dataDir + "Untitled.jpg");
@@ -139,12 +139,12 @@ originalMailMessage.save(outFileName, emlSo);
 
 #### Explanation
 - `EmlLoadOptions` 與 `EmlSaveOptions` 確保載入與儲存時遵循 Outlook 的 TNEF 格式。  
-- 輔助方法 `UpdateResources`（如下所示）會遍歷附件與相關資源，交換圖片串流。
+- 輔助方法 `UpdateResources`（稍後示範）會遍歷附件與連結資源，替換圖片串流。
 
-### Updating Resources within an Email Message
+### How to replace embedded images in an email
 
 #### Overview
-當您需要 **process email attachments** 或 **update email** 內容時，必須同時遍歷一般附件與相關資源。
+當你需要 **process email attachments** 或 **update email** 內容時，必須同時遍歷普通附件與連結資源。
 
 #### Updating Attachments
 
@@ -188,78 +188,78 @@ for (LinkedResource att : msg.getLinkedResources()) {
 ```
 
 #### Explanation
-- `UpdateResources` 方法（先前呼叫）結合上述兩個迴圈，確保 **update email attachments** 與內嵌圖片在一次執行中更新。  
-- 巢狀的 EML 檔案會遞迴處理，這在處理包含 TNEF 資料的轉寄訊息時尤為重要。
+- 先前呼叫的 `UpdateResources` 方法結合了上述兩個迴圈，確保 **update email attachments** 與嵌入圖片在一次遍歷中完成更新。  
+- 會遞迴處理巢狀 EML 檔案，這在處理包含 TNEF 資料的轉寄訊息時相當重要。
 
 ### Troubleshooting Tips
-- 確認 `dataDir` 指向有效的資料夾，且您具備讀寫權限。  
-- 在生產程式碼中使用 `try‑with‑resources` 以避免串流洩漏。  
-- 若儲存後 TNEF 附件消失，請再次確認已設定 `FileCompatibilityMode.PreserveTnefAttachments`。
+- 確認 `dataDir` 指向有效資料夾且具備讀寫權限。  
+- 使用 `try‑with‑resources` 處理串流，以避免在正式環境中發生資源泄漏。  
+- 若儲存後 TNEF 附件消失，請再次檢查是否已設定 `FileCompatibilityMode.PreserveTnefAttachments`。
 
 ## Practical Applications
 
-1. **Email Archiving** – 保留 Outlook 訊息的完整副本，包括專有的 TNEF 部分，以供合規稽核。  
-2. **Automated Support Workflows** – 從收到的工單中提取圖片，替換為加水印的版本，並重新儲存訊息。  
-3. **Data Migration** – 將信箱從 Exchange 移轉至自訂歸檔，同時完整保留所有附件。
+1. **Email Archiving** – 為合規稽核保留 Outlook 訊息的完整副本，包括專有的 TNEF 部分。  
+2. **Automated Support Workflows** – 從來件工單中擷取圖片，替換為加了浮水印的版本，然後重新儲存訊息。  
+3. **Data Migration** – 將郵箱從 Exchange 移轉至自訂歸檔系統，同時完整保留每個附件。
 
 ## Performance Considerations
-- 盡可能重複使用 `FileInputStream` 物件；及時關閉。  
-- 對於大型信箱，請分批處理訊息，並在每次儲存後釋放參考。  
-- 使用 VisualVM 或類似工具分析記憶體使用情況，以找出瓶頸。
+- 盡可能重複使用 `FileInputStream` 物件，使用完後立即關閉。  
+- 處理大型郵箱時，將訊息分批處理，並在每次儲存後釋放參考。  
+- 使用 VisualVM 或類似工具分析記憶體使用情形，以找出效能瓶頸。
 
 ## Conclusion
-您現在已了解 **how to save eml** 檔案與 TNEF 附件的處理方式、如何 **load eml**，以及如何安全地 **update email** 內容，全部皆透過 Aspose.Email for Java 完成。此功能可解鎖可靠的電子郵件歸檔、自動化處理與無縫遷移專案。
+現在你已掌握 **how to save eml** 檔案並保留 TNEF 附件、**load eml** 的方法，以及使用 Aspose.Email for Java 安全 **update email** 內容的技巧。此能力可實現可靠的郵件歸檔、自動化處理與無縫遷移專案。
 
 **Next Steps**
 - 嘗試不同的 `FileCompatibilityMode` 設定，觀察其對其他格式的影響。  
-- 探索 Aspose.Email API，以解析 MIME 部分、處理加密訊息等功能。
+- 探索 Aspose.Email API，了解如何解析 MIME 部分、處理加密訊息等更多功能。
 
 ## FAQ Section
 
-1. **What is TNEF, and why is it important?**  
-   TNEF（Transport Neutral Encapsulation Format）是 Microsoft Outlook 用來封裝豐富格式與附件中繼資訊的格式。保留它可確保訊息在 Outlook 中開啟時外觀完全相同。
+1. **什麼是 TNEF，為什麼重要？**  
+   TNEF（Transport Neutral Encapsulation Format）是 Microsoft Outlook 用來封裝豐富格式與附件中繼資料的格式。保留它可確保訊息在 Outlook 中開啟時外觀完全相同。
 
-2. **Can I use Aspose.Email with other email formats besides EML?**  
+2. **除了 EML，我能使用 Aspose.Email 處理其他郵件格式嗎？**  
    可以，Aspose.Email 支援 MSG、MHTML、PST 等多種格式。
 
-3. **How do I handle large email files efficiently?**  
-   使用串流方式處理訊息內容，避免一次將整個檔案載入記憶體；使用 `try‑with‑resources` 以自動清理資源。
+3. **如何有效處理大型郵件檔案？**  
+   使用串流方式讀寫訊息內容，避免一次載入整個檔案；搭配 `try‑with‑resources` 以自動釋放資源。
 
-4. **What licensing options are available for Aspose.Email?**  
-   可先使用免費試用版，之後依專案需求選擇臨時授權或完整商業授權。
+4. **Aspose.Email 提供哪些授權方案？**  
+   可先使用免費試用，之後依專案需求選擇臨時授權或正式商業授權。
 
-5. **How do I troubleshoot common issues with EML file handling?**  
-   檢查檔案路徑、確保使用正確版本的函式庫，並確認已將 `FileCompatibilityMode` 設為保留 TNEF。
+5. **處理 EML 檔案時常見問題該如何排除？**  
+   檢查檔案路徑、確保使用正確版本的函式庫，並確認已設定 `FileCompatibilityMode` 以保留 TNEF。
 
 ## Frequently Asked Questions
 
-**Q: How can I programmatically determine if an EML file contains TNEF data?**  
+**Q: 如何程式化判斷 EML 檔案是否包含 TNEF 資料？**  
 A: 檢查 `MailMessage.getAttachments()` 集合中是否有 content type 為 `application/ms-tnef` 的附件。
 
-**Q: Is it possible to convert a TNEF‑rich EML to a plain‑text EML while keeping the original attachments?**  
-A: 可以——在儲存時設定 `FileCompatibilityMode.RemoveTnefAttachments`，即可去除 TNEF 同時保留一般附件。
+**Q: 能否將含 TNEF 的 EML 轉換為純文字 EML，同時保留原始附件？**  
+A: 可以 – 在儲存時將 `FileCompatibilityMode.RemoveTnefAttachments` 設為 true，即可去除 TNEF 但保留一般附件。
 
-**Q: Does Aspose.Email support async operations for loading and saving large emails?**  
-A: 此函式庫提供同步 API；您可自行將呼叫包裝於 `CompletableFuture` 或使用自訂執行緒池實作非同步行為。
+**Q: Aspose.Email 是否支援非同步載入與儲存大型郵件？**  
+A: 函式庫提供同步 API；你可以自行使用 `CompletableFuture` 或自訂執行緒池將呼叫包裝成非同步。
 
-**Q: Can I update an embedded image without altering the original MIME boundaries?**  
-A: 更新 `LinkedResource` 的 `ContentStream` 可保留原始 MIME 標頭與邊界。
+**Q: 更新嵌入圖片時會不會改變原始 MIME 邊界？**  
+A: 只要更新 `LinkedResource` 的 `ContentStream`，即可保留原始 MIME 標頭與邊界。
 
-**Q: Will the saved EML file be readable by standard email clients like Thunderbird?**  
-A: 會——使用 `PreserveTnefAttachments`時，Outlook 能讀取 TNEF 部分，其他客戶端則會正確顯示標準部分。
+**Q: 儲存後的 EML 檔案能否被 Thunderbird 等標準客戶端讀取？**  
+A: 能 – 使用 `PreserveTnefAttachments` 儲存時，Outlook 可讀取 TNEF 部分，其他客戶端則會正確顯示標準部分。
 
 ## Resources
-- [Aspose.Email 文件說明](https://reference.aspose.com/email/java/)
-- [下載 Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [購買授權](https://purchase.aspose.com/buy)
-- [免費試用授權](https://releases.aspose.com/email/java/)
-- [臨時授權申請](https://purchase.aspose.com/temporary-license)
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Purchase a License](https://purchase.aspose.com/buy)
+- [Free Trial License](https://releases.aspose.com/email/java/)
+- [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
 ---
 
-**最後更新時間：** 2025-12-10  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**作者：** Aspose
+**Last Updated:** 2026-02-11  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
