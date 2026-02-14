@@ -1,10 +1,11 @@
 ---
-date: 2025-12-10
-description: Dowiedz się, jak wysyłać e‑mail z załącznikiem w Javie przy użyciu Aspose.Email.
-  Zarządzaj, twórz i wyodrębniaj załączniki dokumentów w Javie efektywnie.
+date: 2026-02-14
+description: Dowiedz się, jak wysyłać e‑maile w Javie z załącznikami przy użyciu Aspose.Email.
+  Omówiono załączniki e‑mail SMTP w Javie, załączniki PDF w Javie oraz samouczek Aspose.Email
+  dla Javy.
 linktitle: Using Aspose.Email for Document Attachments
 second_title: Aspose.Email Java Email Management API
-title: Wysyłanie e‑maila z załącznikiem w Javie przy użyciu Aspose.Email
+title: Wysyłanie e‑maila w Javie z załącznikiem przy użyciu Aspose.Email
 url: /pl/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -15,36 +16,36 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wysyłanie e‑maila z załącznikiem w Javie przy użyciu Aspose.Email
+# Wysyłanie e‑maili w Javie z załącznikiem przy użyciu Aspose.Email
 
 ## Wprowadzenie do używania Aspose.Email do załączania dokumentów w Javie
 
-W tym samouczku przeprowadzimy Cię przez **how to send email with attachment java**, wykorzystując potężną bibliotekę Aspose.Email for Java. Niezależnie od tego, czy tworzysz zautomatyzowany system powiadomień, czy narzędzie do masowej wysyłki, obsługa załączników dokumentów jest powszechnym wymaganiem. Omówimy wszystko, od konfiguracji biblioteki po tworzenie, wysyłanie i wyodrębnianie plików PDF lub Word dołączonych do wiadomości.
+W tym samouczku dowiesz się **jak wysłać e‑mail w Javie** z załącznikami dokumentów, wykorzystując potężną bibliotekę Aspose.Email for Java. Niezależnie od tego, czy tworzysz zautomatyzowany system powiadomień, narzędzie do masowej wysyłki, czy usługę raportowania, obsługa plików PDF lub Word jako załączników e‑mail jest częstym wymaganiem. Przejdziemy przez konfigurację biblioteki, tworzenie wiadomości, dołączanie plików, wysyłanie lub zapisywanie e‑maila oraz wyodrębnianie załączników z przychodzących wiadomości.
 
 ## Szybkie odpowiedzi
-- **Jaką bibliotekę użyć, aby wysłać e‑mail z załącznikiem w Javie?** Aspose.Email for Java  
+- **Jaką bibliotekę użyć do wysyłania e‑maili w Javie?** Aspose.Email for Java  
 - **Czy potrzebna jest licencja do produkcji?** Tak, do użytku produkcyjnego wymagana jest licencja komercyjna.  
-- **Jakie wersje Javy są obsługiwane?** Java 8 i nowsze.  
-- **Czy mogę dołączyć wiele plików?** Oczywiście – wystarczy dodać dodatkowe obiekty `Attachment`.  
+- **Jakie wersje Javy są wspierane?** Java 8 i nowsze.  
+- **Czy mogę dołączyć wiele plików?** Oczywiście – wystarczy dodać kolejne obiekty `Attachment`.  
 - **Czy obsługiwany jest streaming dużych plików?** Tak, Aspose.Email udostępnia API streamingowe do efektywnego obsługiwania dużych załączników.
 
-## Co oznacza „send email with attachment java”?
+## Co to jest „wysyłanie e‑maili w Javie z załącznikiem”?
 
-Wysyłanie e‑maila z załącznikiem w Javie oznacza skonstruowanie obiektu `MailMessage`, dodanie jednego lub więcej obiektów `Attachment` oraz dostarczenie wiadomości za pośrednictwem SMTP lub zapisanie jej do pliku. Aspose.Email abstrahuje niskopoziomową obsługę MIME, pozwalając skupić się na logice biznesowej.
+Wysyłanie e‑maila z załącznikiem w Javie oznacza utworzenie obiektu `MailMessage`, dodanie jednego lub więcej obiektów `Attachment` i dostarczenie wiadomości przez SMTP lub zapisanie jej do pliku. Aspose.Email abstrahuje niskopoziomową obsługę MIME, pozwalając skupić się na logice biznesowej zamiast na surowych nagłówkach MIME.
 
 ## Dlaczego warto używać Aspose.Email do tego zadania?
 
-- **Rich API** – pełna kontrola nad częściami MIME, typami treści i kodowaniem.  
-- **Cross‑platform** – działa na Windows, Linux i macOS bez dodatkowych zależności natywnych.  
-- **Built‑in streaming** – obsługa dużych plików PDF lub Word bez wyczerpywania pamięci.  
-- **Comprehensive documentation** – przykłady i odniesienia API przyspieszają implementację.
+- **Bogate API** – pełna kontrola nad częściami MIME, typami treści i kodowaniem.  
+- **Wieloplatformowość** – działa na Windows, Linux i macOS bez dodatkowych zależności natywnych.  
+- **Wbudowany streaming** – obsługa dużych plików PDF lub Word bez wyczerpywania pamięci.  
+- **Kompleksowa dokumentacja** – przykłady i odniesienia API przyspieszają implementację.  
 
 ## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz:
+Zanim przejdziemy dalej, upewnij się, że masz:
 
-- Zainstalowany Java Development Kit (JDK) 8 lub wyższy.  
-- Bibliotekę Aspose.Email for Java. Możesz ją pobrać [tutaj](https://releases.aspose.com/email/java/).
+- Zestaw Java Development Kit (JDK) 8 lub wyższy.  
+- Bibliotekę Aspose.Email for Java. Możesz ją pobrać [tutaj](https://releases.aspose.com/email/java/).  
 
 ## Dodawanie Aspose.Email do projektu
 
@@ -52,13 +53,13 @@ Aby rozpocząć, musisz dodać bibliotekę Aspose.Email do swojego projektu Java
 
 1. Pobierz bibliotekę Aspose.Email for Java z podanego linku.  
 2. Rozpakuj pobrany plik ZIP do wybranego katalogu.  
-3. W swoim projekcie Java dodaj pliki JAR Aspose.Email do classpath. Możesz to zrobić w ulubionym zintegrowanym środowisku programistycznym (IDE) lub używając wiersza poleceń.
+3. W swoim projekcie Java dodaj pliki JAR Aspose.Email do classpath. Możesz zrobić to w ulubionym środowisku IDE lub używając wiersza poleceń.
 
 ## Tworzenie nowej wiadomości e‑mail
 
-Zacznijmy od stworzenia nowej wiadomości e‑mail z załącznikiem dokumentu. Użyjemy prostego przykładu, aby zilustrować **how to send email with attachment java**:
+Zacznijmy od utworzenia nowej wiadomości e‑mail z załącznikiem dokumentu. Użyjemy prostego przykładu, aby zilustrować **jak wysłać e‑mail w Javie** z załącznikiem:
 
-> **Tip:** Umieść poniższy fragment kodu po wyjaśnieniu wymagań wstępnych, aby czytelnicy zrozumieli kontekst przed zobaczeniem rzeczywistej implementacji.
+> **Wskazówka:** Umieść fragment kodu poniżej po wyjaśnieniu wymagań wstępnych, aby czytelnicy zrozumieli kontekst przed zobaczeniem implementacji.
 
 ```java
 import com.aspose.email.Attachment;
@@ -92,11 +93,11 @@ W tym przykładzie:
 - Tworzymy instancję `MailMessage`.  
 - Definiujemy nadawcę, odbiorcę, temat i treść.  
 - Tworzymy `Attachment` wskazujący na plik PDF i dodajemy go do wiadomości.  
-- Zapisujemy wiadomość jako plik EML (można ją także wysłać przez SMTP).
+- Zapisujemy wiadomość jako plik EML (można również wysłać ją przez SMTP).
 
 ## Pobieranie załączników dokumentów
 
-Możesz potrzebować wyodrębnić i pracować z załącznikami dokumentów z przychodzących e‑maili. Oto jak można załadować e‑mail i wyciągnąć pliki PDF:
+Możesz potrzebować wyodrębnić i przetworzyć załączniki dokumentów z przychodzących e‑maili. Oto jak załadować e‑mail i wyciągnąć pliki PDF:
 
 > **Pro tip:** Użyj sprawdzenia `getContentType().getName()`, aby filtrować tylko interesujące Cię typy plików.
 
@@ -123,40 +124,47 @@ Kod:
 
 - Ładuje istniejący plik `.eml`.  
 - Przechodzi przez wszystkie załączniki.  
-- Zapisuje każdy załącznik, którego nazwa kończy się na `.pdf`.
+- Zapisuje każdy załącznik, którego nazwa pliku kończy się na `.pdf`.
+
+## Typowe scenariusze użycia wysyłania e‑maili w Javie z załącznikami
+
+- **Automatyczne raportowanie:** Generuj codzienne raporty PDF i wysyłaj je do interesariuszy.  
+- **Dystrybucja faktur:** Dołącz generowane faktury Word lub PDF do wychodzących potwierdzeń zamówień.  
+- **Workflow zatwierdzania dokumentów:** Wysyłaj umowy jako załączniki, które odbiorcy mogą przeglądać i podpisywać.  
+- **Masowe kampanie marketingowe:** Dołącz broszury produktowe lub katalogi w formacie PDF do każdej wiadomości.
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Przyczyna | Rozwiązanie |
 |-------|-------|----------|
-| **Attachment not received** | Nieprawidłowy typ MIME lub brak wywołania `addAttachment` | Zweryfikuj, że `Attachment` został dodany przed wysłaniem/zapisaniem. |
-| **Large files cause OutOfMemoryError** | Ładowanie całego pliku do pamięci | Użyj API streamingowych (`Attachment` konstruktor przyjmujący `InputStream`). |
-| **File name corrupted** | Nieprawidłowe kodowanie nazwy pliku | Ustaw `attachment.setName("myDocument.pdf")` explicite. |
+| **Załącznik nie został odebrany** | Nieprawidłowy typ MIME lub brak wywołania `addAttachment` | Upewnij się, że `Attachment` został dodany przed wysłaniem/zapisaniem. |
+| **Duże pliki powodują OutOfMemoryError** | Ładowanie całego pliku do pamięci | Użyj API streamingowych (`Attachment` konstruktor przyjmujący `InputStream`). |
+| **Uszkodzona nazwa pliku** | Nieprawidłowe kodowanie nazwy pliku | Ustaw explicite `attachment.setName("myDocument.pdf")`. |
 
 ## Najczęściej zadawane pytania
 
-**Q: How can I send an email with multiple document attachments?**  
-A: Simply create additional `Attachment` objects and call `message.addAttachment()` for each file.
+**P: Jak mogę wysłać e‑mail z wieloma załącznikami dokumentów?**  
+O: Po prostu utwórz dodatkowe obiekty `Attachment` i wywołaj `message.addAttachment()` dla każdego pliku.
 
-**Q: Can I work with attachments other than PDF documents?**  
-A: Yes, Aspose.Email supports Word, Excel, images, and any MIME‑compatible file type.
+**P: Czy mogę pracować z załącznikami innymi niż PDF?**  
+O: Tak, Aspose.Email obsługuje Word, Excel, obrazy i każdy typ pliku kompatybilny z MIME.
 
-**Q: How do I handle large document attachments?**  
-A: Use streaming techniques—pass an `InputStream` to the `Attachment` constructor to avoid loading the whole file into memory.
+**P: Jak radzić sobie z dużymi załącznikami dokumentów?**  
+O: Stosuj techniki streamingowe – przekaż `InputStream` do konstruktora `Attachment`, aby uniknąć ładowania całego pliku do pamięci.
 
-**Q: Is there a way to set custom content types?**  
-A: Absolutely. You can modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+**P: Czy można ustawić własne typy treści?**  
+O: Oczywiście. Możesz zmodyfikować `ContentType` załącznika za pomocą `attachment.setContentType(...)`.
 
-**Q: Does Aspose.Email support S/MIME encrypted attachments?**  
-A: Yes, the library includes APIs for signing and encrypting messages, including their attachments.
+**P: Czy Aspose.Email obsługuje zaszyfrowane załączniki S/MIME?**  
+O: Tak, biblioteka zawiera API do podpisywania i szyfrowania wiadomości, w tym ich załączników.
 
-## Podsumowanie
+## Zakończenie
 
-W tym samouczku przedstawiliśmy **how to send email with attachment java** przy użyciu Aspose.Email. Teraz wiesz, jak skonfigurować bibliotekę, tworzyć wiadomości z załącznikami PDF lub innymi dokumentami oraz wyodrębniać te załączniki z przychodzącej poczty. Ta funkcjonalność jest niezbędna przy budowie solidnej automatyzacji e‑maili, systemów raportowania lub dowolnej aplikacji Java, która musi wymieniać dokumenty za pośrednictwem poczty elektronicznej.
+W tym samouczku pokazaliśmy **jak wysłać e‑mail w Javie** z załącznikami dokumentów przy użyciu Aspose.Email. Teraz wiesz, jak skonfigurować bibliotekę, tworzyć wiadomości z PDF‑ami lub innymi typami dokumentów oraz wyodrębniać te załączniki z przychodzącej poczty. Ta funkcjonalność jest niezbędna przy budowie solidnej automatyzacji e‑maili, systemów raportowania lub dowolnej aplikacji Java, która musi wymieniać dokumenty za pośrednictwem poczty elektronicznej.
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-10  
+**Ostatnia aktualizacja:** 2026-02-14  
 **Testowano z:** Aspose.Email for Java 24.12  
 **Autor:** Aspose  
 
