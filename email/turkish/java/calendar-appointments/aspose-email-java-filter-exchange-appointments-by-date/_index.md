@@ -1,60 +1,72 @@
 ---
-date: '2025-12-18'
-description: Aspose.Email for Java kullanarak Exchange Server randevularını tarihe
-  göre filtrelemek için Exchange sorgusu Java nasıl oluşturulur öğrenin. Bu öğreticide
-  kurulum, Exchange takvim etkinliklerini alma ve en iyi uygulamalar ele alınmaktadır.
+date: '2026-02-17'
+description: Aspose.Email Maven bağımlılığını nasıl ekleyeceğinizi ve tarih bazında
+  Exchange Server randevularını filtrelemek için bir Exchange sorgusu Java'sı oluşturmayı
+  öğrenin. Bu Aspose Email Java öğreticisi, kurulum, Exchange takvim etkinliklerini
+  alma ve en iyi uygulamaları kapsar.
 keywords:
 - filter Exchange server appointments
 - Aspose.Email for Java setup
 - Exchange Web Services (EWS) appointments
-title: Randevuları Filtrelemek İçin Exchange Sorgusu Java Nasıl Oluşturulur
+title: Aspose Email Maven Bağımlılığı – Randevuları Filtrelemek İçin Exchange Sorgusu
+  Java Oluşturma
 url: /tr/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+-backtop-button >}}
+
+All unchanged.
+
+Now produce final content with translations.
+
+Check for any missed text: At top after heading there is "Effective appointment management..." we translated.
+
+Make sure to preserve markdown bullet list formatting.
+
+Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Randevuları Filtrelemek İçin Exchange Query Java Nasıl Oluşturulur
+# Aspose Email Maven Bağımlılığı – Randevu Filtreleme için Exchange Sorgusu Java Oluşturma
 
-Etkili randevu yönetimi, verimli planlamanın organizasyon verimliliğini artırdığı günümüz iş ortamında kritik öneme sahiptir. **Exchange server’dan belirli tarih aralıklarına göre randevuları filtreleyen bir exchange query java** oluşturarak, operasyonları sadeleştirebilir ve zaman yönetimini iyileştirebilirsiniz. Bu öğretici, ortam kurulumundan sorgunun çalıştırılmasına kadar tüm süreci adım adım gösterir ve **exchange takvim etkinliklerini** güvenilir bir şekilde **retrieve exchange calendar events** nasıl alacağınızı anlatır.
+Etkili randevu yönetimi, verimli planlamanın organizasyonel verimliliği artırdığı günümüz iş ortamında kritik öneme sahiptir. **adding the Aspose.Email Maven dependency** ve **building an exchange query Java** ile belirli tarih aralıklarına göre bir Exchange sunucusundan randevuları filtreleyerek operasyonları sadeleştirebilir ve zaman yönetimini iyileştirebilirsiniz. Bu eğitim, ortam kurulumundan sorgunun çalıştırılmasına kadar tüm süreci adım adım anlatır ve **retrieve exchange calendar events** güvenilir bir şekilde almanızı gösterir.
 
-**Öğrenecekleriniz**
-- Gerekli bağımlılıklarla ortamınızı kurma  
-- Aspose.Email for Java’yı başlatma ve yapılandırma  
-- Belirli bir tarih aralığında randevuları filtrelemek için bir exchange query java oluşturma  
-- Performans ve bellek kullanımını optimize etme en iyi uygulamaları  
+**Neler Öğreneceksiniz**
+- Gerekli Maven bağımlılığı ile ortamınızı kurma  
+- Aspose.Email for Java'ı başlatma ve yapılandırma  
+- Belirli bir tarih aralığında randevuları filtrelemek için exchange query Java oluşturma  
+- Performans ve bellek kullanımını optimize etmek için en iyi uygulamalar  
 
-Bu çözümün ele aldığı sorunu anladıktan sonra, uygulamaya geçmeden önce gerekli ön koşullara göz atalım.
+Bu çözümün ele aldığı problemi anladıktan sonra, uygulamaya geçmeden önce gerekli ön koşulları inceleyelim.
 
 ## Hızlı Yanıtlar
-- **“build exchange query java” ne anlama geliyor?** Java’da Exchange öğelerini sorgulamak için bir `ExchangeQueryBuilder` nesnesi oluşturmayı ifade eder.  
-- **Hangi kütüphane gerekiyor?** Aspose.Email for Java (v25.4+).  
-- **Bir Exchange sunucusuna ihtiyacım var mı?** Evet, EWS etkin ve geçerli kimlik bilgilerine sahip bir sunucu gerekir.  
+- **“build exchange query java” ne anlama geliyor?** Java'da Exchange öğelerini sorgulamak için bir `ExchangeQueryBuilder` nesnesi oluşturmayı ifade eder.  
+- **Hangi kütüphane gereklidir?** Aspose.Email for Java (v25.4+).  
+- **Bir Exchange sunucusuna ihtiyacım var mı?** Evet, EWS etkin ve uygun kimlik bilgileriyle.  
 - **Tarih aralığını çalışma zamanında değiştirebilir miyim?** Kesinlikle – sadece `SimpleDateFormat` dizelerini değiştirin.  
 - **Üretim için lisans zorunlu mu?** Evet, ticari kullanım için geçerli bir Aspose.Email lisansı gereklidir.
 
-## Ön Koşullar
+## Önkoşullar
 
-Bu öğreticiyi takip edebilmek için aşağıdaki araç ve bilgiye sahip olduğunuzdan emin olun:
+Bu eğitimi takip edebilmek için aşağıdaki araç ve bilgiye sahip olduğunuzdan emin olun:
 
 ### Gerekli Kütüphaneler ve Bağımlılıklar
-- **Aspose.Email for Java**: Sürüm 25.4 veya üzeri.  
-- **Java Development Kit (JDK)**: JDK 16 veya daha yeni bir sürüm.
+- **Aspose.Email for Java**: Versiyon 25.4 veya üzeri.  
+- **Java Development Kit (JDK)**: JDK 16 veya daha yeni bir sürüm kullanın.
 
 ### Ortam Kurulum Gereksinimleri
 - IntelliJ IDEA, Eclipse veya NetBeans gibi yapılandırılmış bir IDE.  
 - EWS etkin bir Exchange sunucusuna erişim.
 
-### Bilgi Ön Koşulları
-- Java programlamaya temel düzeyde hakimiyet.  
-- Bağımlılık yönetimi için Maven bilgisi.
+### Bilgi Önkoşulları
+- Java programlamaya temel bir anlayış.  
+- Bağımlılık yönetimi için Maven'e aşina olmak.
 
-## Aspose.Email for Java’yı Kurma
+## Aspose.Email Maven Bağımlılığı Ekleme
 
-Projeye Aspose.Email kütüphanesini bağımlılık olarak eklemek için Maven kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki XML snippet’ini ekleyin:
+Başlamak için, projenize Aspose.Email kütüphanesini bir bağımlılık olarak ekleyin. Maven kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki XML parçacığını ekleyin:
 
 ```xml
 <dependency>
@@ -67,14 +79,15 @@ Projeye Aspose.Email kütüphanesini bağımlılık olarak eklemek için Maven k
 
 ### Lisans Edinme
 
-Aspose.Email for Java, özelliklerini değerlendirebilmeniz için ücretsiz bir deneme sunar. Sürekli kullanım için geçici bir lisans almayı veya tam sürümü satın almayı düşünebilirsiniz:
-- **Ücretsiz Deneme**: [Aspose Email Download](https://releases.aspose.com/email/java/) sayfası üzerinden temin edilebilir.  
-- **Geçici Lisans**: [Geçici Lisans Sayfası](https://purchase.aspose.com/temporary-license/) üzerinden alınabilir.  
-- **Satın Alma**: Uzun vadeli kullanım için [Purchase Aspose](https://purchase.aspose.com/buy) sitesinden lisans satın alın.
+Aspose.Email for Java, özelliklerini değerlendirmek için ücretsiz bir deneme sunar. Sürekli kullanım için geçici bir lisans almayı veya tam sürüm satın almayı düşünün:
+
+- **Ücretsiz Deneme**: [Aspose Email Download](https://releases.aspose.com/email/java/) sayfası üzerinden mevcuttur.  
+- **Geçici Lisans**: [Temporary License Page](https://purchase.aspose.com/temporary-license/) adresinden edinebilirsiniz.  
+- **Satın Al**: Uzun vadeli kullanım için lisansı [Purchase Aspose](https://purchase.aspose.com/buy) sitesinden satın alın.
 
 ### Temel Başlatma ve Kurulum
 
-Exchange sunucu kimlik bilgilerinizi yapılandırarak Aspose.Email for Java’yı başlatın. `IEWSClient` nesnesini aşağıdaki gibi ayarlayın:
+Aspose.Email for Java'ı başlatmak için Exchange sunucu kimlik bilgilerinizi yapılandırın. `IEWSClient`'ı aşağıdaki gibi ayarlayın:
 
 ```java
 String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // Your Exchange Server URI
@@ -85,28 +98,24 @@ String domain = "YOUR_DOMAIN";                   // Domain if required
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, username, password, domain);
 ```
 
-Bu, Aspose.Email kütüphanesini kullanarak Exchange sunucunuza bir bağlantı kurar.
-
 ## “build exchange query java” Nedir?
 
-**build exchange query java** ifadesi, bir `ExchangeQueryBuilder` örneği oluşturmayı, kriterlerini (tarih aralıkları, konu, organizatör vb.) yapılandırmayı ve ardından bu sorguyu bir Exchange posta kutusuna karşı çalıştırmayı tanımlar. Builder, karmaşık SOAP isteklerini akıcı bir Java API’si aracılığıyla soyutlayarak, **exchange takvim etkinliklerini** ham XML yazmadan **retrieve exchange calendar events** yapmanızı sağlar.
+“**build exchange query java**” ifadesi, bir `ExchangeQueryBuilder` örneği oluşturma, kriterlerini (tarih aralıkları, konu veya organizatör gibi) yapılandırma ve ardından bu sorguyu bir Exchange posta kutusuna karşı çalıştırma sürecini tanımlar. Builder, karmaşık SOAP isteklerini akıcı bir Java API'si arkasına gizleyerek, ham XML yazmadan **retrieve exchange calendar events** almayı basitleştirir.
 
 ## Neden Aspose.Email for Java Kullanmalı?
 
-- **Kapsamlı EWS desteği** – randevular, kişiler, görevler ve daha fazlasını yönetir.  
-- **Outlook gerektirmez** – doğrudan Exchange sunucusuyla çalışır.  
-- **Yüksek performans** – ağ kullanımını ve bellek yönetimini verimli tutar.  
-- **Zengin dokümantasyon** – kapsamlı örnekler, bu **aspose email java tutorial**’ı hızlıca başlatmanızı sağlar.
+- **Comprehensive EWS support** – randevular, kişiler, görevler ve daha fazlasını yönetir.  
+- **No need for Outlook** – doğrudan Exchange sunucusuyla çalışır.  
+- **High performance** – verimli ağ kullanımı ve bellek yönetimi.  
+- **Rich documentation** – kapsamlı örnekler hızlı başlangıç yapmanıza yardımcı olur ve bu da onu mükemmel bir **aspose email java tutorial** yapar.
 
-## Uygulama Kılavuzu
+## Tarihe Göre Randevu Filtreleme (Exchange Sorgu Tarih Aralığı)
 
-### Tarihe Göre Randevu Filtreleme
+Bu eğitimin temel özelliği, belirli tarihler arasındaki randevuları filtrelemektir. İşte bunu nasıl yapabileceğiniz:
 
-Bu öğreticinin temel özelliği, belirli tarih aralıkları arasında randevuları filtrelemektir. İşte adımlar:
+### Adım 1: Tarih Formatlarını Yapılandırma
 
-#### Adım 1: Tarih Formatlarını Yapılandırma
-
-Tarih dizelerini Java `Date` nesnelerine dönüştürmek için bir `SimpleDateFormat` nesnesi oluşturun.
+`SimpleDateFormat` nesnesini, tarih dizelerini Java `Date` nesnelerine ayrıştırmak için ayarlayarak başlayın.
 
 ```java
 import java.text.ParseException;
@@ -115,9 +124,7 @@ import java.text.SimpleDateFormat;
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 ```
 
-Bu format, randevularınızın başlangıç ve bitiş tarihlerini yorumlamak için kullanılacak.
-
-#### Adım 2: ExchangeQueryBuilder ile Sorgu Oluşturma
+### Adım 2: ExchangeQueryBuilder ile Sorgu Oluşturma
 
 `ExchangeQueryBuilder` örneği oluşturun ve tarih aralığı kriterlerinizi ayarlayın:
 
@@ -133,9 +140,9 @@ builder.getAppointment().getStart().since(sdf.parse("10/05/2016 10:00:00"));
 builder.getAppointment().getEnd().beforeOrEqual(sdf.parse("10/15/2016 10:00:00"));
 ```
 
-#### Adım 3: Sorguyu Çalıştırma
+### Adım 3: Sorguyu Çalıştırma
 
-`IEWSClient` örneğini kullanarak sorgunuzu yürütün ve randevuları alın:
+Sorgunuzu çalıştırmak ve randevuları almak için `IEWSClient` örneğini kullanın:
 
 ```java
 import com.aspose.email.MailQuery;
@@ -147,64 +154,70 @@ Appointment[] appointments = client.listAppointments(query);
 Bu, belirtilen tarih aralığındaki tüm randevuları getirir.
 
 ### Sorun Giderme İpuçları
-- **Tarih Ayrıştırma Hataları**: `SimpleDateFormat` içinde tanımlı desenle tarih dizelerinizin eşleştiğinden emin olun.  
-- **Kimlik Doğrulama Sorunları**: Exchange sunucu kimlik bilgilerinizi ve ağ bağlantınızı tekrar kontrol edin.  
-- **Boş Sonuçlar**: Sunucunun verilen aralıkta randevu içerdiğini doğrulayın.
+- **Date Parsing Errors**: Tarih dizelerinizin `SimpleDateFormat` içinde tanımlı desenle eşleştiğinden emin olun.  
+- **Authentication Issues**: Exchange sunucu kimlik bilgilerinizi ve ağ bağlantınızı iki kez kontrol edin.  
+- **Empty Results**: Sunucunun verilen aralıkta randevu içerdiğini doğrulayın.
 
 ## Pratik Uygulamalar
 
 Bu özellik çeşitli gerçek dünya senaryolarında kullanılabilir:
-1. **İş Takvimi Yönetimi** – Belirli bir ay için toplantıları otomatik olarak filtreleyin.  
-2. **Kaynak Planlaması** – Geçmiş rezervasyonları dışarıda bırakarak boş zaman dilimlerini belirleyin.  
-3. **Raporlama ve Analitik** – Randevu verilerinden dönem bazlı raporlar oluşturun.
+
+1. **Business Calendar Management** – Belirli bir ay için toplantıları otomatik olarak filtreleyin.  
+2. **Resource Scheduling** – Geçmiş rezervasyonları dışarıda bırakarak boş zaman dilimlerini belirleyin.  
+3. **Reporting and Analytics** – Randevu verilerinden dönem bazlı raporlar oluşturun.
 
 ## Performans Düşünceleri
 
-Aspose.Email ile çalışırken aşağıdaki ipuçlarını uygulayarak hızı koruyun:
-- Veri aktarımını azaltmak için sorgu kapsamını sınırlayın.  
-- Birden çok `SimpleDateFormat` nesnesi oluşturmak yerine tek bir örnek yeniden kullanın.  
-- Artık ihtiyaç duymadığınız nesneleri serbest bırakarak Java heap belleğini temizleyin.
+Aspose.Email ile çalışırken, işleri hızlı tutmak için şu ipuçlarını göz önünde bulundurun:
+- Sorgularınızın kapsamını sınırlayarak veri transferini azaltın.  
+- Birçok oluşturmak yerine tek bir `SimpleDateFormat` örneğini yeniden kullanın.  
+- Artık ihtiyaç duymadığınız nesneleri serbest bırakarak Java yığın belleğini temizleyin.
 
 ## Yaygın Sorunlar ve Çözümler
+
 | Sorun | Muhtemel Neden | Çözüm |
 |-------|----------------|-------|
-| **DateParseException** | Dize ile format arasında uyumsuzluk | `SimpleDateFormat` desenini ayarlayın veya giriş dizisini düzeltin. |
-| **401 Unauthorized** | Yanlış kimlik bilgileri veya eksik EWS izinleri | Kullanıcı adı/şifreyi kontrol edin ve hesabın EWS erişimine sahip olduğundan emin olun. |
-| **Randevu döndürülmedi** | Sorgu tarihleri mevcut randevuların dışında | Sunucu takviminde randevu olup olmadığını kontrol edin veya tarih aralığını genişletin. |
+| **DateParseException** | Dize ile format arasındaki uyumsuzluk | `SimpleDateFormat` içindeki deseni ayarlayın veya giriş dizisini düzeltin. |
+| **401 Unauthorized** | Yanlış kimlik bilgileri veya eksik EWS izinleri | Kullanıcı adı/parolayı doğrulayın ve hesabın EWS erişimine sahip olduğundan emin olun. |
+| **No appointments returned** | Sorgu tarihleri mevcut aralığın dışında | Sunucu takviminde randevu olup olmadığını kontrol edin veya tarih aralığını genişletin. |
 
 ## Sonuç
 
-Aspose.Email for Java kullanarak Exchange sunucusundaki randevuları tarihe göre filtrelemek, takvim yönetimini basitleştirir, verimliliği artırır ve planlama kalıpları hakkında değerli içgörüler sunar. Bu **aspose email java tutorial** sayesinde ortamı kurmayı, kütüphaneyi yapılandırmayı ve **build exchange query java** ile belirli kriterlere göre randevuları filtrelemeyi öğrendiniz.
+Aspose.Email for Java kullanarak Exchange sunucusundaki randevuları tarihe göre filtrelemek, takvim yönetimini basitleştirir, verimliliği artırır ve planlama kalıpları hakkında değerli içgörüler sağlar. Bu **aspose email java tutorial**'ı izleyerek ortamınızı nasıl kuracağınızı, kütüphaneyi nasıl yapılandıracağınızı ve **build exchange query java**'yı belirli kriterlere göre randevuları filtrelemek için nasıl oluşturacağınızı öğrendiniz.
 
 **Sonraki Adımlar**
-- Konu veya organizatör gibi ek sorgu seçeneklerini keşfedin.  
-- Alınan randevuları kendi raporlama panonuzla bütünleştirin.  
-- Toplantı istekleri gönderme veya yinelenen etkinlikleri yönetme gibi diğer Aspose.Email özelliklerini inceleyin.
+- Konu veya organizatör filtreleri gibi ek sorgu seçeneklerini keşfedin.  
+- Alınan randevuları kendi raporlama panonuzla entegre edin.  
+- Toplantı istekleri gönderme veya yinelenen etkinlikleri yönetme gibi diğer Aspose.Email özelliklerini gözden geçirin.
 
-## SSS Bölümü
+## Sıkça Sorulan Sorular
 
-1. **Aspose.Email’i satın almadan kullanabilir miyim?**  
-   - Evet, ücretsiz deneme sürümüyle başlayabilir ve özelliklerini satın almadan keşfedebilirsiniz.  
-2. **Exchange sunucusuna bağlanırken kimlik doğrulama hatalarını nasıl gideririm?**  
-   - Kimlik bilgilerinizi ve ağ ayarlarınızı doğrulayın; Exchange sunucusunun EWS erişimine izin verdiğinden emin olun.  
-3. **Bu özellikte hangi tarih formatları destekleniyor?**  
-   - `SimpleDateFormat` sınıfı çeşitli desenleri destekler; doğru şekilde belirtmeniz gerekir (ör. `"dd/MM/yyyy HH:mm:ss"`).  
-4. **Farklı bir zaman aralığını dinamik olarak nasıl filtreleyebilirim?**  
-   - `since()` ve `beforeOrEqual()` metodlarına gönderilen tarih dizelerini ihtiyacınıza göre değiştirin.  
-5. **Ek Aspose.Email işlevselliği için dokümantasyon var mı?**  
-   - Detaylı dokümantasyon [Aspose Email Documentation](https://reference.aspose.com/email/java/) adresinde mevcuttur.
+**S:** Aspose.Email'i satın almadan kullanabilir miyim?  
+**C:** Evet, ücretsiz deneme ile başlayabilir ve satın almadan önce özelliklerini keşfedebilirsiniz.
+
+**S:** Exchange sunucusuna bağlanırken kimlik doğrulama hatalarını nasıl ele alırım?  
+**C:** Kimlik bilgilerinizi ve ağ ayarlarınızı doğrulayın; Exchange hesabının EWS erişiminin etkin olduğundan emin olun.
+
+**S:** Bu eğitimde ayrıştırma için hangi tarih formatları desteklenir?  
+**C:** `SimpleDateFormat` sınıfı tanımladığınız herhangi bir deseni destekler; örnek `"dd/MM/yyyy HH:mm:ss"` biçimini kullanır.
+
+**S:** Tarih aralığını çalışma zamanında dinamik olarak nasıl değiştirebilirim?  
+**C:** Sorguyu oluşturmadan önce `since()` ve `beforeOrEqual()` metodlarına geçirilen dizeleri basitçe değiştirin.
+
+**S:** Aspose.Email özellikleri için daha fazla belgeyi nerede bulabilirim?  
+**C:** Kapsamlı belgeler [Aspose Email Documentation](https://reference.aspose.com/email/java/) sitesinde mevcuttur.
 
 ## Kaynaklar
 - **Dokümantasyon**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
 - **İndirme**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
-- **Satın Alma**: [Buy Aspose Email](https://purchase.aspose.com/buy)  
+- **Satın Alma**: [Buy Aspose](https://purchase.aspose.com/buy)  
 - **Ücretsiz Deneme**: [Get a Free Trial](https://releases.aspose.com/email/java/)  
 - **Geçici Lisans**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Destek**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Son Güncelleme:** 2025-12-18  
+**Son Güncelleme:** 2026-02-17  
 **Test Edilen Versiyon:** Aspose.Email for Java 25.4 (jdk16)  
 **Yazar:** Aspose  
 
