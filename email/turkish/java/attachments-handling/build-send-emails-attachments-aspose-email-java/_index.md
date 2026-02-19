@@ -1,13 +1,13 @@
 ---
-date: '2025-12-14'
-description: Aspose.Email for Java kullanarak ekli e‑posta göndermeyi öğrenin. Bu
-  adım adım rehber, kurulum, mesaj oluşturma, dosya ekleme ve MSG olarak kaydetmeyi
-  kapsar.
+date: '2026-02-19'
+description: Aspose.Email kullanarak Java ile ekli e-posta gönderme yöntemini öğrenin.
+  Bu kılavuz, Java’da birden fazla dosya eklemeyi, e-posta mesajı oluşturmayı ve e-postayı
+  MSG formatına dışa aktarmayı kapsar.
 keywords:
 - send emails with attachments using Aspose.Email for Java
 - Aspose.Email setup for Java
 - handling email attachments in Java
-title: Aspose.Email for Java ile Ekli E-posta Gönderme
+title: Aspose.Email Kullanarak Java'da Ekli E-posta Gönder
 url: /tr/java/attachments-handling/build-send-emails-attachments-aspose-email-java/
 weight: 1
 ---
@@ -17,49 +17,49 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email for Java Kullanarak Ekli E-posta Gönderme
+# Aspose.Email Kullanarak Java’da Ekli E-posta Gönderme
 
-## Giriş
+## Introduction
 
-Günümüz dijital ortamında, **e-posta nasıl gönderilir** sorusunun programatik olarak yanıtlanması, raporlama araçları, bildirim hizmetleri veya otomatik iş akışları geliştiren her Java geliştiricisi için temel bir beceridir. Bu öğretici, Aspose.Email for Java kullanarak nasıl e-posta oluşturulur, dosyalar eklenir ve hatta mesajlar MSG dosyası olarak kaydedilir konularını adım adım anlatır. Sonuna geldiğinizde, sadece birkaç satır kodla ekli e-posta gönderme, e-postaya dosya ekleme ve e-postayı MSG olarak kaydetme yeteneğine sahip olacaksınız.
+Eğer **ekli e-posta gönderme java** ihtiyacınız varsa doğru yerdesiniz. Modern Java uygulamalarında—raporlama araçları, bildirim servisleri veya otomatik iş akışları geliştiriyor olsanız da—programatik olarak bir e-posta oluşturabilmek, dosya ekleyebilmek ve hatta MSG dosyası olarak dışa aktarabilmek değerli bir beceridir. Bu öğretici, Aspose.Email for Java üzerinden size **birden fazla dosya ekleme java**, **e-posta mesajı oluşturma java** ve **e-postayı msg formatına dışa aktarma** işlemlerini harici bir SMTP sunucusuna ihtiyaç duymadan nasıl yapacağınızı gösterecek.
 
-**Öğrenecekleriniz**
-- Geliştirme ortamınıza Aspose.Email for Java’yı kurma  
-- Gönderici ve alıcı adresleriyle bir e-posta mesajı oluşturma  
-- Çeşitli dosya türlerini (metin, resim, belge, arşiv, PDF) ekleme  
-- Oluşturulan e-postayı daha sonra kullanılmak üzere MSG dosyası olarak kaydetme  
+**What You’ll Learn**
+- Maven projesinde Aspose.Email for Java nasıl kurulur  
+- Gönderici ve alıcı bilgileriyle bir e-posta mesajı nasıl oluşturulur  
+- Çeşitli dosya türleri (metin, resim, PDF, arşiv, Word) nasıl eklenir  
+- Oluşturulan e-posta, daha sonra kullanım veya arşivleme için MSG dosyası olarak nasıl kaydedilir  
 
-E-posta otomasyon yeteneklerinizi artırmaya hazır mısınız? Ön koşullarla başlayalım.
+Java e-posta otomasyonunuzu artırmaya hazır mısınız? Gereksinimlere göz atalım.
 
-## Hızlı Yanıtlar
-- **Hangi kütüphane gerekiyor?** Aspose.Email for Java  
-- **Herhangi bir dosya türü ekleyebilir miyim?** Evet – metin, resim, PDF, arşiv, Word belgeleri vb.  
-- **Lisans gerekli mi?** Test için geçici bir lisans yeterli; üretim ortamı için tam lisans gerekir.  
-- **E-postayı nasıl kaydederim?** `message.save(..., SaveOptions.getDefaultMsg())` kullanın.  
-- **HTML e-posta destekleniyor mu?** Kesinlikle – `message.isBodyHtml(true)` ayarlayın ve HTML içeriği sağlayın.
+## Quick Answers
+- **What library do I need?** Aspose.Email for Java  
+- **Can I attach any file type?** Yes – text, images, PDFs, archives, Word docs, etc.  
+- **Do I need a license?** A temporary license works for testing; a full license is required for production.  
+- **How do I save the email?** Use `message.save(..., SaveOptions.getDefaultMsg())`.  
+- **Is HTML email supported?** Absolutely – set `message.isBodyHtml(true)` and provide HTML content.
 
-## Aspose.Email for Java Nedir?
-Aspose.Email for Java, harici bir mail sunucusuna ihtiyaç duymadan e-posta mesajları oluşturmanıza, düzenlemenize ve göndermenize olanak tanıyan yüksek performanslı bir API’dir. MIME yapıları, ekler ve çeşitli e-posta formatları (EML, MSG, MHTML) kutudan çıktığı gibi desteklenir.
+## What is Aspose.Email for Java?
+Aspose.Email for Java, harici bir mail sunucusuna ihtiyaç duymadan e-posta mesajları oluşturmanıza, düzenlemenize ve göndermenize olanak tanıyan yüksek performanslı bir API'dir. MIME yapıları, ekler ve çeşitli e-posta formatları (EML, MSG, MHTML) kutudan çıktığı gibi desteklenir.
 
-## Neden Aspose.Email ile ekli e-posta gönderilmeli?
-- **Harici SMTP gerekmez** – mesajları oluşturup kaydedebilirsiniz.  
+## Why use Aspose.Email to send email with attachment java?
+- **Harici SMTP gerekmez** mesajları oluşturup kaydetmek için.  
 - **Zengin ek desteği** – büyük ikili dosyalar dahil her türlü dosya türünü ekleyebilirsiniz.  
-- **Çapraz platform uyumluluğu** – Windows, Linux ve macOS JVM’lerinde çalışır.  
-- **Yerleşik kaydetme** – arşivleme için MSG, EML veya MHTML formatlarına zahmetsizce dışa aktarabilirsiniz.
+- **Çapraz platform uyumluluğu** – Windows, Linux ve macOS JVM'lerinde çalışır.  
+- **Yerleşik kaydetme** – arşivleme için MSG, EML veya MHTML formatlarına zahmetsizce dışa aktarım.
 
-## Ön Koşullar
+## Prerequisites
 
-- **Java Development Kit (JDK):** 16 veya üzeri sürüm.  
+- **Java Development Kit (JDK):** Versiyon 16 veya üzeri.  
 - **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
 - **Maven:** Bağımlılıkları Maven ile yöneteceğiz.  
 
 Java ve Maven projeleri hakkında temel bir anlayış varsayılmıştır.
 
-## Aspose.Email for Java’yı Kurma
+## Setting Up Aspose.Email for Java
 
-### Maven ile Kurulum
+### Installation via Maven
 
-`pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -70,17 +70,17 @@ Java ve Maven projeleri hakkında temel bir anlayış varsayılmıştır.
 </dependency>
 ```
 
-### Lisans Edinme
+### License Acquisition
 
-Aspose.Email for Java, ücretsiz deneme veya satın alınmış lisans ile kullanılabilir. Tam özellikleri test etmek için geçici bir lisans alın:
+Aspose.Email for Java, ücretsiz deneme veya satın alınmış bir lisans ile kullanılabilir. Tam özellikleri test etmek için geçici bir lisans alın:
 
-1. [Geçici Lisans sayfasını](https://purchase.aspose.com/temporary-license/) ziyaret edin.  
-2. Ücretsiz deneme lisansınızı talep etmek için talimatları izleyin.  
+1. [Temporary License page](https://purchase.aspose.com/temporary-license/) adresini ziyaret edin.  
+2. Ücretsiz deneme lisansınızı talep etmek için yönergeleri izleyin.  
 3. Lisansı, Aspose belgelerinde açıklandığı gibi uygulamanıza ekleyin.
 
-### Temel Başlatma
+### Basic Initialization
 
-Bir `MailMessage` nesnesi oluşturup temel adresleri ayarlayarak başlayın:
+Start by creating a `MailMessage` object and setting the basic addresses:
 
 ```java
 import com.aspose.email.MailAddress;
@@ -92,11 +92,11 @@ message.setFrom(new MailAddress("sender@sender.com"));
 message.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 ```
 
-## Uygulama Kılavuzu
+## Implementation Guide
 
-### Aspose.Email for Java ile ekli e-posta nasıl gönderilir
+### How to send email with attachment java using Aspose.Email for Java
 
-#### `MailMessage` Nesnesini Başlatma
+#### Initialize the `MailMessage` Object
 
 ```java
 // Set 'From' address
@@ -106,17 +106,17 @@ message.setFrom(new MailAddress("sender@sender.com"));
 message.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 ```
 
-#### Ekler İçin Dizin Yollarını Tanımlama
+#### Define Directory Paths for Attachments
 
-`"YOUR_DOCUMENT_DIRECTORY/"` ifadesini, eklemek istediğiniz dosyaların bulunduğu yol ile değiştirin:
+Replace `"YOUR_DOCUMENT_DIRECTORY/"` with the path that contains the files you want to attach:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 ```
 
-#### Ekleri Ekleme (e-postaya dosya ekleme)
+#### Add Attachments (attach files to email)
 
-Çeşitli dosya türlerini ekleyebilirsiniz. Aşağıda bir metin dosyası, bir resim, bir Word belgesi, bir RAR arşivi ve bir PDF ekleniyor:
+You can attach a variety of file types. Below we add a text file, an image, a Word document, a RAR archive, and a PDF:
 
 ```java
 // Adding a text file
@@ -136,64 +136,75 @@ message.getAttachments().addItem(new Attachment(dataDir + "1.rar"));
 message.getAttachments().addItem(new Attachment(dataDir + "1.pdf"));
 ```
 
-#### Çıktı Dizin Yolunu Tanımlama
+#### Define Output Directory Path
 
-Final MSG dosyasının kaydedileceği klasörü ayarlayın:
+Set the folder where the final MSG file will be stored:
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 ```
 
-#### E-posta Mesajını Kaydetme (e-postayı msg olarak kaydet)
+#### Save the Email Message (export email to msg format)
 
 ```java
 message.save(outputDir + "AddAttachmentToANewEmailMessage_out.msg", SaveOptions.getDefaultMsg());
 ```
 
-## Pratik Uygulamalar
+## Practical Applications
 
-Aspose.Email for Java, gerçek dünya senaryolarında şu alanlarda öne çıkar:
+Aspose.Email for Java birçok gerçek dünya senaryosunda öne çıkar:
 
-1. **Otomatik Raporlama:** Günlük/haftalık raporlar oluşturup PDF veya Excel ekleriyle e-posta gönderme.  
-2. **Bildirim Sistemleri:** Log dosyaları, ekran görüntüleri veya yapılandırma yedeklerini ekli olarak uyarı gönderme.  
-3. **Yedekleme Çözümleri:** Veritabanı dökümlerini veya arşiv dosyalarını periyodik olarak e-posta ile dış konuma gönderme.  
+1. **Otomatik Raporlama:** Günlük/haftalık raporlar oluşturup PDF veya Excel ekleriyle e-posta gönderin.  
+2. **Bildirim Sistemleri:** Log dosyaları, ekran görüntüleri veya yapılandırma yedeklerini ekleyerek uyarılar gönderin.  
+3. **Yedekleme Çözümleri:** Veritabanı dökümlerini veya arşiv dosyalarını periyodik olarak e-posta ile dış siteye gönderin.  
 
-## Performans Düşünceleri
+## Performance Considerations
 
-- **Nesneleri serbest bırakın:** Mesaj artık gerekmediğinde `message.dispose()` çağırarak yerel kaynakları serbest bırakın.  
+- **Nesneleri serbest bırakın:** `message.dispose()` çağrısıyla mesaj artık gerekmediğinde yerel kaynakları serbest bırakın.  
 - **Ekleri akış olarak işleyin:** Büyük dosyalar için tüm dosyayı belleğe yüklemek yerine akış (stream) kullanın.  
-- **İş parçacığı havuzu:** Çok sayıda e-posta aynı anda gönderilirken, JVM üzerindeki yükü sınırlamak için bir iş parçacığı havuzu yeniden kullanın.
+- **İş parçacığı havuzu:** Aynı anda çok sayıda e-posta gönderirken, JVM yükünü sınırlamak için bir iş parçacığı havuzu yeniden kullanın.
 
-## Yaygın Sorunlar & Çözümler
+## Common Issues & Solutions
 
-| Sorun | Çözüm |
+| Issue | Solution |
 |-------|----------|
-| **Büyük ek (>25 MB) gönderilemiyor** | Kullanılan SMTP sunucusunun büyük yükleri kabul ettiğinden emin olun; gerekirse JVM yığın belleğini artırın. |
-| **Ek görünmüyor** | Dosya yolunun doğru ve dosyanın erişilebilir olduğundan emin olun; dosya izinlerini kontrol edin. |
-| **Kaydedilen MSG açılamıyor** | `SaveOptions.getDefaultMsg()` kullanın ve en son Aspose.Email sürümüne sahip olduğunuzdan emin olun. |
+| **Large attachment (>25 MB) fails** | Verify your SMTP server (if used) allows large payloads; increase JVM heap if needed. |
+| **Attachment not appearing** | Ensure the file path is correct and the file is accessible; check file permissions. |
+| **Saved MSG cannot be opened** | Use `SaveOptions.getDefaultMsg()` and make sure you have the latest Aspose.Email version. |
 
-## Sıkça Sorulan Sorular
+## Frequently Asked Questions
 
-**S: Bir e-postaya birden fazla alıcı nasıl eklenir?**  
-C: `message.getTo().addMailAddress(new MailAddress("email@example.com"));` ifadesini her alıcı için tekrarlayın.
+**Q: How do I add multiple recipients to an email?**  
+A: Use `message.getTo().addMailAddress(new MailAddress("email@example.com"));` for each recipient.
 
-**S: Aspose.Email 25 MB’dan büyük ekleri destekliyor mu?**  
-C: Evet, ancak sunucunuzun ve JVM’in yeterli belleğe sahip olduğundan ve SMTP geçişinizin büyük mesajlara izin verdiğinden emin olmalısınız.
+**Q: Can Aspose.Email handle attachments larger than 25 MB?**  
+A: Yes, but you must ensure your server and JVM have sufficient memory and that any SMTP relay permits large messages.
 
-**S: HTML e-posta göndermek mümkün mü?**  
-C: Kesinlikle! `message.isBodyHtml(true);` ayarlayın ve `message.setHtmlBody("<h1>Merhaba</h1>");` ile HTML içeriği atayın.
+**Q: Is it possible to send HTML emails with Aspose.Email?**  
+A: Absolutely! Set `message.isBodyHtml(true);` and assign HTML content to `message.setHtmlBody("<h1>Hello</h1>");`.
 
-**S: E-posta gönderirken sorunları nasıl debug ederim?**  
-C: Kodunuzu try‑catch bloğu içine alın, istisna yığın izini kaydedin ve `License.setLogFolder("path")` ile Aspose.Email loglamasını etkinleştirin.
+**Q: How can I debug issues when sending email?**  
+A: Wrap your code in a try‑catch block, log the exception stack trace, and enable Aspose.Email logging via `License.setLogFolder("path")`.
 
-**S: Güvenlik açısından hangi en iyi uygulamaları izlemeliyim?**  
-C: Tüm e-posta adreslerini doğrulayın, dosya yollarını sanitize edin ve kullanıcı tarafından sağlanan verileri e-posta gövdesine doğrudan eklemeden önce kaçış (escape) işlemi uygulayın.
+**Q: What security best practices should I follow?**  
+A: Validate all email addresses, sanitize file paths, and never embed user‑provided data directly into the email body without escaping.
 
-## Sonuç
+## FAQ (Additional)
 
-Artık **e-posta nasıl gönderilir** sorusunun yanıtını, ekli dosyalarla e-posta gönderme, e-postaya dosya ekleme ve **e-postayı msg olarak kaydetme** süreçlerini Aspose.Email for Java kullanarak eksiksiz ve üretim‑hazır bir iş akışıyla gerçekleştirebilirsiniz. Daha ileri özellikler için tam [belgelere](https://reference.aspose.com/email/java/) göz atın; SMTP gönderimi, HTML gövde oluşturma ve şifreleme gibi konulara derinlemesine dalabilirsiniz.
+**Q: Can I use this approach without an SMTP server?**  
+A: Yes—Aspose.Email lets you create and save messages (e.g., MSG, EML) without sending them through SMTP.
 
-## Kaynaklar
+**Q: Does Aspose.Email support encrypting attachments?**  
+A: Yes, you can encrypt the entire message or specific attachments using the API’s security features.
+
+**Q: What is the maximum number of attachments I can add?**  
+A: Practically, the limit is governed by memory and the receiving mail server’s policies, not the library itself.
+
+## Conclusion
+
+You now have a complete, production‑ready workflow for **send email with attachment java**, attach files to email, and **export email to msg format** using Aspose.Email for Java. Explore the full [documentation](https://reference.aspose.com/email/java/) to dive deeper into advanced features like SMTP sending, HTML body creation, and encryption.
+
+## Resources
 - [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
 - [Download Aspose.Email](https://releases.aspose.com/email/java/)
 - [Purchase a License](https://purchase.aspose.com/buy)
@@ -203,9 +214,9 @@ Artık **e-posta nasıl gönderilir** sorusunun yanıtını, ekli dosyalarla e-p
 
 ---
 
-**Son Güncelleme:** 2025-12-14  
-**Test Edilen Versiyon:** Aspose.Email 25.4 (JDK 16)  
-**Yazar:** Aspose  
+**Last Updated:** 2026-02-19  
+**Tested With:** Aspose.Email 25.4 (JDK 16)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
