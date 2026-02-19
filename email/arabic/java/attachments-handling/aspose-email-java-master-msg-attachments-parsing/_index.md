@@ -1,56 +1,74 @@
 ---
-date: '2025-12-10'
-description: تعلم كيفية استخدام Aspose Email Java لاستخراج مرفقات MSG، وتضمين الرسائل
-  الإلكترونية، وإدارة مرفقات البريد الإلكتروني بفعالية.
+date: '2026-02-19'
+description: تعلم كيفية تحويل MSG إلى EML، استخراج وحفظ مرفقات MSG، تضمين رسائل البريد
+  الإلكتروني، وإدارة مرفقات البريد الإلكتروني بفعالية باستخدام Aspose.Email للغة Java.
 keywords:
 - Aspose.Email for Java
 - parse MSG attachments
 - manage email attachments
-title: 'aspose email java: تحليل وإدارة مرفقات MSG بكفاءة'
+title: تحويل MSG إلى EML وإدارة المرفقات باستخدام Aspose.Email للـ Java
 url: /ar/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
+
+.
+
+Let's produce Arabic translation.
+
+Be careful to keep markdown syntax.
+
+Proceed.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email for Java: تحليل وإدارة مرفقات MSG بكفاءة
+# تحويل MSG إلى EML وإدارة المرفقات بفعالية مع Aspose.Email for Java
 
-## Introduction
+## المقدمة
 
-إدارة مرفقات البريد الإلكتروني بفعالية يمكن أن تكون تحديًا، خاصةً عند التعامل مع ملفات Microsoft Outlook MSG. في هذا الدليل، ستكتشف كيف تجعل **aspose email java** عملية التحليل، الحفظ، وإدراج المرفقات من ملفات MSG بسيطة، كما يمكنك إدراج رسائل داخل رسائل بريد إلكتروني، وقراءة المحتوى المضمن. من خلال إتقان هذه المهارات، ستحسن قدرتك على إدارة عمليات البريد الإلكتروني بسلاسة.
+قد يكون إدارة مرفقات البريد الإلكتروني بفعالية تحديًا، خاصة عندما تحتاج أيضًا إلى **تحويل ملفات MSG إلى EML** للمعالجة اللاحقة. في هذا الدليل، ستتعرف على كيفية جعل **aspose email java** عملية تحليل، حفظ، وتضمين المرفقات من ملفات MSG، وتضمين الرسائل داخل رسائل البريد، وقراءة المحتوى المضمّن. من خلال إتقان هذه المهارات، ستحسن قدرتك على إدارة عمليات البريد الإلكتروني بسلاسة.
 
-سنغطي:
+سنتناول:
 - تحليل وحفظ المرفقات من ملف MSG.
-- إدراج رسالة كمرفق داخل رسالة أخرى.
-- قراءة الرسائل المضمنة من المرفقات.
+- تضمين رسالة كمرفق داخل رسالة أخرى.
+- قراءة الرسائل المضمّنة من المرفقات.
+- **كيفية تحويل MSG إلى EML** باستخدام Aspose.Email for Java.
 
-لنبدأ بإعداد بيئتك باستخدام Aspose.Email for Java.
+لنبدأ بإعداد بيئتك مع Aspose.Email for Java.
 
-## Quick Answers
-- **What does aspose email java do?** It provides a Java API to read, create, and manipulate MSG, EML, and other email formats.  
-- **How can I extract msg attachments?** Use `MapiMessage.getAttachments()` and save each `MapiAttachment`.  
-- **Can I embed email in email?** Yes—add a `MapiMessage` as an attachment to another `MapiMessage`.  
-- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.  
-- **What Java version is required?** JDK 16 or later is recommended.
+## إجابات سريعة
+- **ماذا يفعل aspose email java؟** يوفر واجهة برمجة تطبيقات Java لقراءة، إنشاء، ومعالجة صيغ MSG، EML، وغيرها من صيغ البريد.  
+- **كيف يمكنني استخراج مرفقات msg؟** استخدم `MapiMessage.getAttachments()` واحفظ كل `MapiAttachment`.  
+- **هل يمكنني تضمين بريد داخل بريد؟** نعم—أضف `MapiMessage` كمرفق إلى `MapiMessage` آخر.  
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للتقييم؛ الترخيص الدائم مطلوب للإنتاج.  
+- **ما نسخة Java المطلوبة؟** يوصى بـ JDK 16 أو أحدث.
 
-## aspose email java Overview
-Aspose.Email for Java (often referred to as **aspose email java**) is a powerful library that abstracts the complexities of email file formats. Whether you need to **load msg file**, extract its contents, or **manage email attachments**, the API offers a clean, object‑oriented approach.
+## كيفية تحويل MSG إلى EML باستخدام Aspose.Email for Java
+تحويل ملف Outlook MSG إلى صيغة EML الأكثر قابلية للنقل هو طلب شائع عند التكامل مع أنظمة بريد غير مايكروسوفت. باستخدام Aspose.Email for Java يمكنك إجراء التحويل في بضع أسطر من الشيفرة:
 
-## What Is “extract msg attachments”?
-Extracting MSG attachments means reading the binary MSG file, locating each attachment object, and saving it to disk or processing it in memory. This is a common requirement for automated email processing pipelines, archiving solutions, or CRM integrations.
+1. **حمّل ملف MSG** باستخدام `MapiMessage.fromFile()`.  
+2. **استدعِ طريقة `save`** وحدد اسم الملف الهدف بامتداد `.eml`.  
+3. **اختياريًا، اضبط تنسيق الرسالة** (مثل تعيين الترميز) قبل الحفظ.
 
-## Prerequisites
-Before diving into the implementation, ensure you have:
+> **نصيحة احترافية:** يحافظ التحويل على جميع الرؤوس الأصلية، محتوى النص، والمرفقات، بحيث يمكنك إرسال ملف EML الناتج مباشرة إلى أي خادم SMTP.
 
-- **Java Development Kit (JDK)**: JDK 16 or later should be installed on your system.
-- **Maven**: This tutorial uses Maven for dependency management.
-- **Aspose.Email Library**: You will need to include Aspose.Email for Java as a library.
+## نظرة عامة على aspose email java
+Aspose.Email for Java (المعروف غالبًا باسم **aspose email java**) هو مكتبة قوية تُبسط تعقيدات صيغ ملفات البريد. سواء كنت بحاجة إلى **تحميل ملف msg**، استخراج محتوياته، أو **إدارة مرفقات البريد الإلكتروني**، توفر الـ API نهجًا كائنيًا نظيفًا.
 
-### Required Libraries
-Add the following dependency in your `pom.xml` file:
+## ما هو “استخراج مرفقات msg”؟
+استخراج مرفقات MSG يعني قراءة ملف MSG الثنائي، تحديد كل كائن مرفق، وحفظه على القرص أو معالجته في الذاكرة. هذا طلب شائع لسلاسل معالجة البريد الآلية، حلول الأرشفة، أو تكاملات CRM.
+
+## المتطلبات المسبقة
+قبل الغوص في التنفيذ، تأكد من وجود ما يلي:
+
+- **مجموعة تطوير جافا (JDK)**: يجب تثبيت JDK 16 أو أحدث على نظامك.
+- **Maven**: يستخدم هذا الدرس Maven لإدارة الاعتمادات.
+- **مكتبة Aspose.Email**: ستحتاج إلى إضافة Aspose.Email for Java كمكتبة.
+
+### المكتبات المطلوبة
+أضف الاعتماد التالي إلى ملف `pom.xml` الخاص بك:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -60,40 +78,40 @@ Add the following dependency in your `pom.xml` file:
 </dependency>
 ```
 
-### License Acquisition
-To fully utilize Aspose.Email for Java, consider acquiring a license:
-- **Free Trial**: Start with a 30‑day trial to explore features.
-- **Temporary License**: Obtain a temporary license for extended testing.
-- **Purchase**: For long‑term use, purchase a subscription.
+### الحصول على الترخيص
+لاستفادة كاملة من Aspose.Email for Java، فكر في الحصول على ترخيص:
+- **نسخة تجريبية مجانية**: ابدأ بتجربة لمدة 30 يومًا لاستكشاف الميزات.
+- **ترخيص مؤقت**: احصل على ترخيص مؤقت للاختبار الموسع.
+- **شراء**: للاستخدام طويل الأمد، اشترِ اشتراكًا.
 
-## Setting Up Aspose.Email for Java
-### Installation Information
-To install Aspose.Email for Java using Maven, include the dependency mentioned above in your `pom.xml`. This ensures all required libraries are automatically downloaded and managed.
+## إعداد Aspose.Email for Java
+### معلومات التثبيت
+لتثبيت Aspose.Email for Java باستخدام Maven، أدرج الاعتماد المذكور أعلاه في ملف `pom.xml`. سيؤدي ذلك إلى تنزيل وإدارة جميع المكتبات المطلوبة تلقائيًا.
 
-### License Setup
-1. **Free Trial**: Download and activate your trial from [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/).
-2. **Temporary License**: Apply for a temporary license at [صفحة الترخيص المؤقت لـ Aspose](https://purchase.aspose.com/temporary-license/). 
-3. **Purchase License**: For full access, visit [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+### إعداد الترخيص
+1. **نسخة تجريبية مجانية**: حمّل وفعل تجربتك من [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/).
+2. **ترخيص مؤقت**: قدّم طلبًا للحصول على ترخيص مؤقت عبر [صفحة الترخيص المؤقت لـ Aspose](https://purchase.aspose.com/temporary-license/). 
+3. **شراء ترخيص**: للوصول الكامل، زر [صفحة الشراء لـ Aspose](https://purchase.aspose.com/buy).
 
-After obtaining your license file, set it up in your Java project using:
+بعد الحصول على ملف الترخيص، قم بإعداده في مشروع Java الخاص بك باستخدام:
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Implementation Guide
-### Parse and Save Attachments from MSG Files
-#### Overview
-This feature allows you to **extract msg attachments** from an MSG file and save them locally. It's useful for processing email data or integrating with other systems.
+## دليل التنفيذ
+### تحليل وحفظ المرفقات من ملفات MSG
+#### نظرة عامة
+تتيح لك هذه الميزة **استخراج مرفقات msg** من ملف MSG وحفظها محليًا. وهي مفيدة لمعالجة بيانات البريد أو التكامل مع أنظمة أخرى.
 
-#### Steps
-1. **Load the MSG File**  
-   Load the MSG file using `MapiMessage.fromFile()` method:
+#### الخطوات
+1. **حمّل ملف MSG**  
+   استخدم طريقة `MapiMessage.fromFile()` لتحميل الملف:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Iterate and Save Attachments**  
-   Loop through each attachment, saving them with their original filenames:
+2. **التكرار وحفظ المرفقات**  
+   قم بالتكرار عبر كل مرفق، واحفظه بأسمائه الأصلية:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -102,108 +120,107 @@ This feature allows you to **extract msg attachments** from an MSG file and save
    }
    ```
 
-#### Troubleshooting
-- Ensure the directory path is correct and writable.
-- Verify that the MSG file actually contains attachments.
+#### استكشاف الأخطاء وإصلاحها
+- تأكد من أن مسار الدليل صحيح وقابل للكتابة.
+- تحقق من أن ملف MSG يحتوي فعليًا على مرفقات.
 
-### Embedding a Message as an Attachment
-#### Overview
-Embedding a message (i.e., **embed email in email**) is handy for sending reports, forwarding conversations, or bundling related communications.
+### تضمين رسالة كمرفق
+#### نظرة عامة
+تضمين رسالة (أي **embed email in email**) مفيد لإرسال تقارير، إعادة توجيه محادثات، أو تجميع اتصالات ذات صلة.
 
-#### Steps
-1. **Create Main Message**  
-   Define your main message using `MapiMessage`:
+#### الخطوات
+1. **إنشاء الرسالة الرئيسية**  
+   عرّف رسالتك الرئيسية باستخدام `MapiMessage`:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
-2. **Load and Add Embedded Message**  
-   Load the MSG file to be embedded and add it as an attachment:
+2. **حمّل وأضف الرسالة المضمنة**  
+   حمّل ملف MSG المراد تضمينه وأضفه كمرفق:
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
-3. **Save the New MSG File**  
-   Save the message with the embedded attachment:
+3. **احفظ ملف MSG الجديد**  
+   احفظ الرسالة مع المرفق المضمن:
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
-#### Troubleshooting
-- Verify that both the main embedded messages are correctly formatted.
-- Ensure file paths are accurate.
+#### استكشاف الأخطاء وإصلاحها
+- تحقق من أن كل من الرسالة الرئيسية والرسالة المضمنة مُنسقة بشكل صحيح.
+- تأكد من صحة مسارات الملفات.
 
-### Reading Embedded Messages from Attachments
-#### Overview
-Learn to extract and process a message **embedded as an attachment**, useful for automated processing of email contents.
+### قراءة الرسائل المضمنة من المرفقات
+#### نظرة عامة
+تعلم كيفية استخراج ومعالجة رسالة **مضمنة كمرفق**، وهو مفيد لمعالجة محتوى البريد تلقائيًا.
 
-#### Steps
-1. **Load MSG File**  
-   Load the MSG file containing the embedded message:
+#### الخطوات
+1. **حمّل ملف MSG**  
+   حمّل ملف MSG الذي يحتوي على الرسالة المضمنة:
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
-2. **Retrieve and Process Embedded Message**  
-   Extract the first attachment as a `MapiMessage` object:
+2. **استرجع وعالج الرسالة المضمنة**  
+   استخرج أول مرفق ككائن `MapiMessage`:
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
 
-#### Troubleshooting
-- Confirm that the attachment index is correct.
-- Check for any parsing errors.
+#### استكشاف الأخطاء وإصلاحها
+- تأكد من صحة فهرس المرفق.
+- افحص أي أخطاء في التحليل.
 
-## Practical Applications
-1. **Automated Email Processing** – Extract attachments from emails for further analysis or storage.
-2. **Report Distribution** – Embed reports within emails to ensure recipients receive comprehensive updates.
-3. **Data Archiving** – Save email contents and attachments locally for record‑keeping.
-4. **Integration with CRM Systems** – Automate the extraction of customer communications.
-5. **Email‑Based Notifications** – Use embedded messages to provide detailed alerts.
+## التطبيقات العملية
+1. **معالجة البريد الآلية** – استخراج المرفقات من الرسائل لمزيد من التحليل أو التخزين.
+2. **توزيع التقارير** – تضمين التقارير داخل الرسائل لضمان وصول المستلمين لتحديثات شاملة.
+3. **أرشفة البيانات** – حفظ محتويات البريد والمرفقات محليًا لأغراض السجلات.
+4. **التكامل مع أنظمة CRM** – أتمتة استخراج اتصالات العملاء.
+5. **الإشعارات عبر البريد** – استخدام الرسائل المضمنة لتوفير تنبيهات مفصلة.
 
-## Performance Considerations
-To optimize performance when using Aspose.Email:
-- Manage resources by closing streams after processing files.
-- Use appropriate Java memory‑management techniques, such as garbage‑collection tuning.
-- Optimize file I/O operations to minimize latency.
+## اعتبارات الأداء
+لتحسين الأداء عند استخدام Aspose.Email:
+- إدارة الموارد بإغلاق التدفقات بعد معالجة الملفات.
+- استخدم تقنيات إدارة الذاكرة في Java مثل ضبط جمع القمامة.
+- حسّن عمليات I/O للملفات لتقليل زمن الاستجابة.
 
-## Conclusion
-In this tutorial, we explored how to efficiently parse and save attachments from MSG files using **aspose email java**. We also covered embedding messages within emails and reading embedded content. With these skills, you can enhance your email management processes significantly.
+## المشكلات الشائعة والحلول
+- **المشكلة:** لا يتم حفظ المرفقات.  
+  **الحل:** تأكد من أن `dataDir` يشير إلى مجلد قابل للكتابة وأن ملف MSG يحتوي على مرفقات.
+- **المشكلة:** الرسالة المضمنة لا تظهر في عميل المستلم.  
+  **الحل:** تأكد من إضافة المرفق باسم عرض مناسب وأن MSG الداخلي ملف صالح.
+- **المشكلة:** تحويل MSG إلى EML يفقد التنسيق.  
+  **الحل:** استخدم أحدث نسخة من Aspose.Email وتجنب تعديل كائن الرسالة قبل استدعاء `save`.
 
-### Next Steps
-- Experiment with different file types as attachments.
-- Integrate these functionalities into larger applications.
+## قسم الأسئلة المتكررة
+1. **ما هو Aspose.Email for Java؟**  
+   - مكتبة تتيح لك العمل مع صيغ البريد مثل MSG وEML في تطبيقات Java.
+2. **كيف أُثبت Aspose.Email باستخدام Maven؟**  
+   - أضف الاعتماد المحدد إلى ملف `pom.xml`.
+3. **هل يمكنني تحليل مرفقات البريد دون حفظها محليًا؟**  
+   - نعم، يمكنك معالجة المرفقات مباشرة في الذاكرة.
+4. **هل يمكن تضمين رسائل متعددة في بريد واحد؟**  
+   - بالتأكيد! يمكنك إضافة عدد غير محدود من الرسائل المضمنة.
+5. **ماذا أفعل إذا لم تُظهر رسالتي المضمنة بشكل صحيح؟**  
+   - تأكد من إضافة المرفق بشكل صحيح وتحقق من أي مشكلات تنسيق.
 
-**Call to Action**: Try implementing these solutions in your projects today!
+## الأسئلة المتكررة
 
-## FAQ Section
-1. **What is Aspose.Email for Java?**
-   - A library that allows you to work with email formats like MSG and EML in Java applications.
-2. **How do I install Aspose.Email using Maven?**
-   - Add the specified dependency to your `pom.xml`.
-3. **Can I parse attachments from emails without saving them locally?**
-   - Yes, you can process attachments directly within memory.
-4. **Is it possible to embed multiple messages in one email?**
-   - Absolutely! You can add as many embedded messages as needed.
-5. **What should I do if my embedded message isn’t displaying correctly?**
-   - Ensure the attachment is added correctly and check for any formatting issues.
+**س: كيف أحمل ملف msg باستخدام aspose email java؟**  
+ج: استخدم `MapiMessage.fromFile("path/to/file.msg")` لتحميل ملف MSG إلى كائن `MapiMessage`.
 
-## Frequently Asked Questions
+**س: ما هي أفضل طريقة لاستخراج مرفقات msg؟**  
+ج: قم بالتكرار عبر `message.getAttachments()` واستدعِ `attachment.save(destinationPath)` لكل عنصر.
 
-**Q: How do I load a msg file with aspose email java?**  
-A: Use `MapiMessage.fromFile("path/to/file.msg")` to load the MSG file into a `MapiMessage` object.
+**س: هل يمكنني تضمين بريد داخل بريد آخر باستخدام aspose email java؟**  
+ج: نعم—أنشئ `MapiMessage` للبريد الداخلي وأضفه إلى مجموعة مرفقات البريد الخارجي.
 
-**Q: What is the best way to extract msg attachments?**  
-A: Iterate over `message.getAttachments()` and call `attachment.save(destinationPath)` for each item.
+**س: هل أحتاج إلى ترخيص لاستخراج المرفقات في بيئة الإنتاج؟**  
+ج: الترخيص الساري مطلوب للاستخدام في الإنتاج؛ النسخة التجريبية تكفي للتقييم فقط.
 
-**Q: Can I embed an email inside another email using aspose email java?**  
-A: Yes—create a `MapiMessage` for the inner email and add it to the outer message’s attachments collection.
+**س: هل هناك عقبات شائعة عند قراءة الرسائل المضمنة؟**  
+ج: تأكد من الإشارة إلى فهرس المرفق الصحيح وتحقق من أن المحتوى المضمن هو ملف MSG صالح.
 
-**Q: Do I need a license to extract attachments in a production environment?**  
-A: A valid license is required for production use; a free trial works for evaluation only.
-
-**Q: Are there any common pitfalls when reading embedded messages?**  
-A: Ensure you reference the correct attachment index and verify that the embedded content is a valid MSG file.
-
-## Resources
+## الموارد
 - [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
 - [Download Aspose.Email](https://releases.aspose.com/email/java/)
 - [Purchase License](https://purchase.aspose.com/buy)
@@ -213,9 +230,9 @@ A: Ensure you reference the correct attachment index and verify that the embedde
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose
+**آخر تحديث:** 2026-02-19  
+**تم الاختبار مع:** Aspose.Email 25.4 for Java (JDK 16)  
+**المؤلف:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
