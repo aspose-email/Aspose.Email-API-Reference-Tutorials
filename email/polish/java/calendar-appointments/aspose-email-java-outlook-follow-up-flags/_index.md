@@ -1,13 +1,12 @@
 ---
-date: '2025-12-19'
-description: Dowiedz się, jak ustawiać flagi śledzenia w Outlooku przy użyciu Aspose.Email
-  dla Javy, w tym jak ustawiać flagę śledzenia w Outlooku i efektywnie usuwać flagę
-  śledzenia w Outlooku.
+date: '2026-02-22'
+description: Dowiedz się, jak ustawić flagę śledzenia w Outlooku przy użyciu Aspose.Email
+  dla Javy, w tym jak ustawiać, odczytywać i usuwać flagi dla odbiorców.
 keywords:
 - Manage Outlook follow-up flags
 - Set follow-up flags in Outlook with Aspose.Email for Java
 - Integrate email task management with Aspose.Email
-title: Jak ustawić flagi śledzenia w Outlooku przy użyciu Aspose.Email dla Javy
+title: Jak ustawić flagę śledzenia w Outlooku przy użyciu Aspose.Email dla Javy
 url: /pl/java/calendar-appointments/aspose-email-java-outlook-follow-up-flags/
 weight: 1
 ---
@@ -17,41 +16,41 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Jak ustawić flagi w programie Outlook przy użyciu Aspose.Email dla Javy
+# Jak ustawić flagę śledzenia w Outlook przy użyciu Aspose.Email dla Javy
 
-## Wstęp
-Jeśli dodatek stanowi problem z pojawieniem się e-maili, wiesz, jak ważne może być flagi stosowania w Outlooku. W tym przewodniku **jak ustawić flagi** programowo przy użyciu Aspose.Email dla Javy, a także omówimy, jak **umieścić flagę w Outlooku** dla odbiorców oraz jak **u rozwiązaniu flagę ograniczenia w Outlooku**, gdy zadanie zostanie zakończone. Po wykluczeniu możliwości zautomatyzowania wystąpienia zadań, przypomnienia i kontroli audytu bezpośrednio z kodu Java.
+## Wprowadzenie
+Jeśli kiedykolwiek miałeś problem z śledzeniem ważnych wiadomości e‑mail, wiesz, jak cenna może być **flaga śledzenia w Outlook**. W tym przewodniku pokażemy, **jak programowo ustawić flagę śledzenia w Outlook** przy użyciu Aspose.Email dla Javy, a także omówimy, jak **ustawić flagę śledzenia w Outlook dla odbiorców**, oraz jak **usunąć flagę śledzenia w Outlook**, gdy zadanie zostanie zakończone. Po zakończeniu będziesz mógł automatyzować śledzenie zadań, przypomnienia i ścieżki audytu bezpośrednio z kodu Java.
 
-**Czego się uczysz**
-- Tworzenie i zastosowanie flagi w wiadomościach Outlook.
-- Usunięcie flagi dla rozstrzygnięcia.
-- flagi przebiegu jako zakończone i jej następstwa.
-- Odczytywanie opcji flagi w celu raportowania lub zgodności.
+**Czego się nauczysz**
+- Utwórz i zastosuj flagę śledzenia w wiadomości Outlook.  
+- Ustaw flagi śledzenia dla konkretnych odbiorców.  
+- Oznacz flagę jako zakończoną i później ją usuń.  
+- Odczytaj opcje flagi w celu raportowania lub zgodności.  
 
-Przedostanie się do środowiska przed wyciekiem w kod.
+Przygotujmy środowisko przed zagłębieniem się w kod.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „jak ustalić”?** Dodanie flagi z uruchomieniem, potwierdzeniem i terminem do elementu Outlook.
-- **Jakiej biblioteki wymaga?** Aspose.Email dla Javy (v25.4 lub nowsza).
-- **Czy jest to licencjat?** Tak, wymagana jest licencjat lub zakup, aby uzyskać pełne kwalifikacje.
-- **Czy mogę ustawić flagi tylko dla odbiorców?** Oczywiście – `FollowUpManager.setFlagForRecipients`.
+- **Co oznacza „jak ustawić śledzenie”?** Dodanie flagi z datą rozpoczęcia, przypomnieniem i terminem do elementu Outlook.  
+- **Jakiej biblioteki wymaga?** Aspose.Email for Java (v25.4 lub nowsza).  
+- **Czy potrzebna jest licencja?** Tak, wymagana jest licencja próbna lub zakupiona, aby uzyskać pełną funkcjonalność.  
+- **Czy mogę ustawić flagi tylko dla odbiorców?** Oczywiście – użyj `FollowUpManager.setFlagForRecipients`.  
 - **Czy można później usunąć flagę?** Tak, wywołaj `FollowUpManager.clearFlag`.
 
-## Co to jest flaga uzupełniająca?
-Oznaczenie funkcji Outlook, które oznacza e-mail jako zadanie, ewentualnie dodanie daty rozpoczęcia, przypomnienia i termin. Pomaga Tobie i Twojemu zespołowi bezpośrednio działać.
+## Co to jest flaga śledzenia w Outlook?
+Flaga śledzenia w Outlook to wbudowany znacznik zadania, który może zawierać datę rozpoczęcia, przypomnienie i termin w dowolnym elemencie pocztowym. Przekształca zwykły e‑mail w śledzoną pozycję akcji, pomagając Tobie i Twojemu zespołowi nadążać za zaległymi zadaniami.
 
-## Dlaczego warto używać Aspose.Email dla Java?
-Aspose.Email czysto‑Java API, które działa bez zainstalowanego Outlooka, umożliwia manipulację plikami .msg, ustawianie flag i zadań zarządzania na zasilaniu elektrycznym — idealne dla usług backendowych, zautomatyzowanych przepływów pracy lub zintegrowanych z narzędziami do zarządzania projektami.
+## Dlaczego warto używać Aspose.Email dla Javy?
+Aspose.Email zapewnia czyste API w Javie, które działa bez konieczności instalacji Outlook, umożliwiając manipulację plikami .msg, ustawianie flag i zarządzanie zadaniami na dowolnej platformie — idealne do **automatyzacji zadań w Outlook**, usług backendowych lub integracji z narzędziami do zarządzania projektami.
 
-## Warunki wstępne
-- **Aspose.Email dla Javy** wersja 25.4lub terazsza.
-- **JDK16+** mechanicznie.
-- IDE z Maven (IntelliJ IDEA, Eclipse itp.).
-- Podstawowa przyjemność Javy oraz koncepcje e-mail.
+## Prerequisites
+- **Aspose.Email for Java** wersja 25.4 lub nowsza (znana także jako **aspose email java**).  
+- **JDK 16+** zainstalowane.  
+- IDE kompatybilne z Maven (IntelliJ IDEA, Eclipse itp.).  
+- Podstawowa znajomość Javy oraz koncepcji e‑mail.
 
-## Konfigurowanie Aspose.Email dla Java
-### Konfiguracja Mavena
-Dodaj następującą zawartość do swojego `pom.xml`:
+## Setting Up Aspose.Email for Java
+### Maven Configuration
+Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -62,27 +61,22 @@ Dodaj następującą zawartość do swojego `pom.xml`:
 </dependency>
 ```
 
-### Nabycie licencji
-Aspose.Email wymaga licencji do użytku produkcyjnego:
+### License Acquisition
+Aspose.Email requires a license for production use:
 
-- **Bezpłatna wersja próbna** – 30-dniowa ocena.
-- **Licencja tymczasowa** – rozszerzone testowanie.
-- **Pełna licencjat** – subskrypcja na zawsze.
+- **Free trial** – 30‑day evaluation.  
+- **Temporary license** – extended testing.  
+- **Full license** – perpetual subscription.
 
-Zainicjuj obciążenie przed operacją e-mail:
+Initialize the license before any email operation:
 
 ```java
 License license = new License();
 license.setLicense("path/to/Aspose.Total.Java.lic");
 ```
 
-## Przewodnik wdrażania
-
-### Jak ustawić flagi uzupełniające (funkcja 1)
-#### Przegląd
-Ta sekcja Cię przez tworzenie wiadomości Outlook, definiowanie daty rozpoczęcia/przypomnienia/terminu oraz zastosowanie flagi zastosowania.
-
-#### Krok 1: Utwórz i zainicjuj wiadomość
+## Set Outlook Follow Up Flag (Feature 1)
+### Step 1: Create and Initialize the Message
 ```java
 MailMessage mailMsg = new MailMessage();
 mailMsg.setSender(new MailAddress("AETest12@gmail.com"));
@@ -90,9 +84,9 @@ mailMsg.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 mailMsg.setBody("This message will test if follow up options can be added to a new mapi message.");
 MapiMessage mapi = MapiMessage.fromMailMessage(mailMsg);
 ```
-*Najpierw tworzymy `MailMessage`, ustawiamy nadawcę/odbiorcę, a następnie konwertujemy go na `MapiMessage` w celu manipulacji flagą.*
+*Najpierw budujemy `MailMessage`, ustawiamy nadawcę/odbiorcę, a następnie konwertujemy go na `MapiMessage` w celu manipulacji flagą.*
 
-#### Krok 2: Określ daty dalszych działań
+### Step 2: Define Follow‑Up Dates (Outlook Flag Reminder)
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 14, 40, 0);
@@ -102,61 +96,55 @@ Date dtReminderDate = calendar.getTime();
 calendar.add(Calendar.DATE, 1);
 Date dtDueDate = calendar.getTime();
 ```
-*Tutaj ustawiamy daty rozpoczęcia, przypomnienia i terminu przy użyciu klasy `Calendar`.*
+*Tutaj ustawiamy daty rozpoczęcia, przypomnienia (**przypomnienie flagi w Outlook**) i terminu przy użyciu klasy `Calendar`.*
 
-#### Krok 3: Zastosuj opcje dalszych działań
+### Step 3: Apply Follow‑Up Options
 ```java
 FollowUpOptions options = new FollowUpOptions("Follow Up", dtStartDate, dtDueDate, dtReminderDate);
 FollowUpManager.setOptions(mapi, options);
 ```
-*Obiekt `FollowUpOptions` zawiera wszystkie szczegóły flagi, które stosujemy za pomocą `FollowUpManager.setOptions`.*
+*Obiekt `FollowUpOptions` przechowuje wszystkie szczegóły flagi, które stosujemy za pomocą `FollowUpManager.setOptions`.*
 
-#### Krok 4: Zapisz wiadomość
+### Step 4: Save the Message
 ```java
 mapi.save(outputDir + "SetFollowUpflag_out.msg");
 ```
 *Wiadomość jest zapisywana jako plik `.msg` z dołączoną flagą.*
 
-### Jak ustawić flagę uzupełniającą programu Outlook dla odbiorców (funkcja 2)
-#### Przegląd
-Czasami trzeba o dodatkową wiadomość flagą tylko dla odbiorców. Ten przykład początkowo oznacza wiadomość jako szkic, a następnie dodaje flagę.
+## How to Set Flag for Recipients (Feature 2)
+### Overview
+Czasami potrzebujesz, aby flaga pojawiła się **tylko dla odbiorców**. Ten przykład najpierw oznacza wiadomość jako szkic, a potem dodaje flagę.
 
-#### Krok 1: Oznacz jako wersję roboczą
+#### Step 1: Mark as Draft
 ```java
 mapi.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 ```
-*Oznaczenie wiadomości jako niewysłanej zapewnia, że ​​Outlook potraktuje ją jako szkic.*
+*Oznaczenie wiadomości jako niewysłanej zapewnia, że Outlook traktuje ją jako szkic.*
 
-#### Krok 2: Ustaw flagę odbiorcy
+#### Step 2: Set Recipient Flag
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 16, 40, 0);
 Date dtReminderDate = calendar.getTime();
 FollowUpManager.setFlagForRecipients(mapi, "Follow up", dtReminderDate);
 ```
-*Flaga jest teraz widoczna tylko dla odbiorców.*
+*Flaga jest teraz widoczna wyłącznie dla odbiorców – klasyczny scenariusz **flaga dla odbiorców**.*
 
-### Jak oznaczyć flagę uzupełniającą programu Outlook jako ukończoną (funkcja 3)
-#### Przegląd
-Gdy zadanie jest zakończone, możesz programowo oznaczyć flagę jako zakończoną.
-
-#### Krok 1: Załaduj wiadomość
+## How to Mark an Outlook Follow Up Flag as Completed (Feature 3)
+### Step 1: Load the Message
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 ```
 
-#### Krok 2: Oznacz jako ukończone i zapisz
+### Step 2: Mark as Completed and Save
 ```java
 FollowUpManager.markAsCompleted(mapi);
 mapi.save(outputDir + "MarkedCompleted_out.msg");
 ```
-*Status flagi zmienia się na „Completed” i zaktualizowany plik jest zapisywany.*
+*Status flagi zmienia się na „Completed”, a zaktualizowany plik jest zapisywany.*
 
-### Jak usunąć flagę uzupełniającą programu Outlook (funkcja 4)
-#### Przegląd
-Jeśli flaga nie jest już dostępna, można ją całkowicie usunąć.
-
-#### Krok 1: Załaduj i wyczyść flagę
+## How to Remove an Outlook Follow Up Flag (Feature 4)
+### Step 1: Load and Clear Flag
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpManager.clearFlag(mapi);
@@ -164,60 +152,57 @@ mapi.save(outputDir + "FollowUpFlagRemoved_out.msg");
 ```
 *Wiadomość jest zapisywana bez żadnej flagi śledzenia.*
 
-### Jak czytać opcje flagi uzupełniającej (funkcja 5)
-#### Przegląd
-Wykonaj audytu lub raportowania, jeśli potrzebujesz odczytać ustawienia flagi.
-
-#### Krok 1: Pobierz opcje
+## How to Read Flag Options (Feature 5)
+### Step 1: Retrieve Options
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpOptions options = FollowUpManager.getOptions(mapi);
 ```
-*Obiekt `options` zawiera teraz daty rozpoczęcia, terminu i przypomnienia, a także temat flagi.*
+*Obiekt `options` zawiera teraz daty rozpoczęcia, terminu i przypomnienia oraz temat flagi – przydatne, gdy musisz **odczytać opcje flagi** w raportach.*
 
-## Praktyczne zastosowania
-- **Integracja z zarządzaniem zadaniami:** Synchronizacja wyznaczonych e-maili z Jira, Trello lub Azure Boards.
-- **Automatyczne przypomnienia:** Generowanie e-maili przypominających o zaległych przepisach.
-- **Audyt zgodności:** Eksport danych flag do raportowania opisu.
+## Practical Applications
+- **Task‑Management Integration:** Synchronizuj flagowane e‑maile z Jira, Trello lub Azure Boards.  
+- **Automated Reminders:** Generuj codzienne e‑maile przypominające o zaległych śledzeniach.  
+- **Compliance Audits:** Eksportuj dane flag do raportów regulacyjnych.
 
-## Względy wydajności
-- **Obliczenia dat:** Obliczaj daty raz na partię, a nie wewnątrz całości.
-- **Zarządzanie zasobami:** Zamykaj wszystkie strumienie lub uchwyty plików po zapisaniu wiadomości.
-- **Użycie pamięci:** Przetwarzaj dużą skrzynkę pocztową w partach, aby zapewnić bezpieczeństwo sterty.
+## Performance Considerations
+- **Date Calculations:** Obliczaj daty raz na partię, a nie wewnątrz pętli.  
+- **Resource Management:** Zamykaj wszystkie strumienie lub uchwyty plików po zapisaniu wiadomości.  
+- **Memory Usage:** Przetwarzaj duże skrzynki pocztowe w partiach, aby uniknąć nadmiernego zużycia pamięci.
 
-## Typowe problemy i rozwiązania
+## Common Issues and Solutions
 | Problem | Przyczyna | Rozwiązanie |
-|--------|-----------|------------|
-| Flaga nie pojawia się w programie Outlook | Wiadomość zapisana bez oznaczenia `MessageFlags` | zostanie zastosowane, że `setMessageFlags` jest ustalane na `MSGFLAG_UNSENT` przed zastosowaniem flagi dla odbiorców. |
-| Zapis podstawowy `AccessDeniedException` | Nieprawidłowa ścieżka pliku lub brak uprawnień do zapisu | Sprawdź, czy katalog źródłowy jest aplikacją mającą uprawnienia do zapisu w tej lokalizacji. |
-| Daty są przesunięte o jeden dzień | Niezgodność strefy czasowej | Używaj `TimeZone.getTimeZone("GMT")` lub swojej strefy użytkowej. |
+|-------|-------|-----|
+| Flag not appearing in Outlook | Message saved without proper `MessageFlags` | Ensure `setMessageFlags` is set to `MSGFLAG_UNSENT` before applying recipient flags. |
+| Save throws `AccessDeniedException` | Incorrect file path or missing write permissions | Verify the output directory exists and the application has write rights. |
+| Dates are off by one day | Time‑zone mismatch | Use `TimeZone.getTimeZone("GMT")` or your local zone consistently. |
 
-## Często zadawane pytania
-**P: Czym jest Aspose.Email dla Javy?**
-Odp.: To całkowicie-Java API, które pozwala na tworzenie, udostępnianie i ustalanie plików e-mail (MSG, EML itp.) bez konieczności instalacji programu Outlook.
+## Frequently Asked Questions
+**Q: What is Aspose.Email for Java?**  
+A: It’s a pure‑Java API that lets you create, read, and manipulate email files (MSG, EML, etc.) without needing Outlook installed.
 
-**Q: Jak uzyskać dostęp do wersji próbnej licencji?**
-A: Odwiedź [stronę Aspose](https://releases.aspose.com/email/java/), aby otrzymać 30‑dniową próbę.
+**Q: How do I obtain a free trial license?**  
+A: Visit the [Aspose website](https://releases.aspose.com/email/java/) to download a 30‑day trial.
 
-**Q: Czy można ustawić wiele flag ustaleń w jednej wiadomości?**
-A: Outlook obsługuje tylko jedną flagę na wiadomość, ale może być dodatkowe dane zadań w niestandardowych wejściach MAPI.
+**Q: Can I set multiple follow‑up flags on a single message?**  
+A: Outlook supports only one flag per message, but you can store additional task data in custom MAPI properties.
 
-**P: Moja wiadomość nie jest zapisywana po ustawieniu flagi. Co powinienem sprawdzić?**
-A: zastosowanie się, że ścieżki `outputDir` są prawidłową aplikacją mającą uprawnienia do zapisu w tej lokalizacji.
+**Q: My message isn’t saved after setting a flag. What should I check?**  
+A: Confirm the `outputDir` path is valid and that the application has permission to write to that location.
 
-**P: Jak mogę usunąć flagi z wielu wiadomości jednocześnie?**
-A: Przejdź do kolekcji wiadomości i wywołanej `FollowUpManager.clearFlag` dla każdego `MapiMessage`.
+**Q: How can I remove flags from many messages at once?**  
+A: Loop through your message collection and call `FollowUpManager.clearFlag` on each `MapiMessage`.
 
-## Zasoby
-- [Dokumentacja](https://reference.aspose.com/email/java/)
-- [Pobierz Aspose.Email dla Javy](https://releases.aspose.com/email/java/)
-- [Bezpłatna wersja próbna Aspose.Email](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
+## Resources
+- [Documentation](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Aspose.Email Free Trial](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
 
 ---
 
-**Aktualizacja Ostatnia:** 2025-12-19
-**Testowano z:** Aspose.Email dla Java 25.4 (jdk16)
-**Autor:** Asponuj 
+**Last Updated:** 2026-02-22  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
