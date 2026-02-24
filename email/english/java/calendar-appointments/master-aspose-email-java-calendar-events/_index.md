@@ -1,7 +1,7 @@
 ---
-title: "Export Calendar to PST using Aspose.Email for Java"
+title: "Export calendar to PST with Aspose.Email for Java"
 description: "Learn how to export calendar to PST with Aspose.Email for Java, including how to add attendees, set start and end dates, and manage appointments efficiently."
-date: "2025-12-24"
+date: "2026-02-24"
 weight: 1
 url: "/java/calendar-appointments/master-aspose-email-java-calendar-events/"
 keywords:
@@ -16,9 +16,9 @@ keywords:
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Export Calendar to PST with Aspose.Email for Java
+# Export calendar to PST with Aspose.Email for Java
 
-Efficiently **export calendar to PST** is a common requirement when building Java applications that need to share scheduling data with Outlook or other Microsoft products. In this tutorial you’ll see exactly how to create appointments, add attendees, define start and end dates, and finally save everything into a PST file—all using Aspose.Email for Java.
+If you’re building a Java application that needs to share scheduling data with Outlook, you’ll often need to **export calendar to PST**. In this tutorial we’ll walk through everything you need—from creating a simple appointment to adding attendees and finally writing the events into a PST file, all with Aspose.Email for Java.
 
 ## Quick Answers
 - **What is the primary goal?** Export calendar events to a PST file.  
@@ -28,7 +28,7 @@ Efficiently **export calendar to PST** is a common requirement when building Jav
 - **What Java version is supported?** JDK 16 or higher.
 
 ## What is **export calendar to pst**?
-Exporting a calendar to PST means converting in‑memory `MapiCalendar` objects into a Microsoft Outlook Personal Storage Table (PST). This file can be opened in Outlook, shared with colleagues, or imported into other systems that understand the PST format.
+Exporting a calendar to PST means converting in‑memory `MapiCalendar` objects into a Microsoft Outlook Personal Storage Table (PST). The resulting file can be opened directly in Outlook, shared with colleagues, or imported into any system that understands the PST format.
 
 ## Why use Aspose.Email for Java to export calendar to PST?
 - **Full MAPI support** – create, modify, and save appointments without needing Outlook installed.  
@@ -92,7 +92,7 @@ public MapiCalendar createAppointment() {
 
 *Explanation*: This snippet creates a `MapiCalendar` with a specific location, subject, description, and the **java calendar start date** / **java calendar end date** you defined.
 
-## How to **add attendees** (how to add attendees)
+## How to **add attendees** (java add meeting attendees)
 
 ### Step 2: Build the attendee list
 Use `MapiRecipientCollection` to specify who should receive the meeting invitation:
@@ -122,7 +122,7 @@ public MapiCalendar createMeetingWithAttendees(Date startDate, Date endDate) {
 }
 ```
 
-*Explanation*: This code creates a meeting, sets the organizer, and attaches the **how to add attendees** list so everyone receives a proper invitation.
+*Explanation*: This code creates a meeting, sets the organizer, and attaches the **java add meeting attendees** list so everyone receives a proper invitation.
 
 ## How to **export calendar to pst** (Create PST with calendar events)
 
@@ -187,11 +187,11 @@ A: Absolutely – `MapiCalendar` exposes recurrence properties such as `Recurren
 A: Yes, you can export to iCalendar (`.ics`) and other formats using the appropriate API methods.
 
 **Q: What is the maximum size of a PST file I can create?**  
-A: With the Unicode format (`FileFormatVersion.Unicode`), PST files can grow up to 2 TB, limited only by disk space.
+A: With the Unicode format (`FileFormatVersion.Unicode`), PST files can grow up to 2 TB, limited only by available disk space.
 
 ---
 
-**Last Updated:** 2025-12-24  
+**Last Updated:** 2026-02-24  
 **Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Author:** Aspose  
 
