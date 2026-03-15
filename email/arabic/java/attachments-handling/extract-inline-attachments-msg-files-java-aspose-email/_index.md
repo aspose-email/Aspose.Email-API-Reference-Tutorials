@@ -1,70 +1,77 @@
 ---
-date: '2025-12-17'
-description: تعلم كيفية استخراج المرفقات المضمنة في جافا وقراءة ملفات Outlook MSG
-  باستخدام Aspose.Email للغة جافا. دليل خطوة بخطوة للتعامل مع ملفات Outlook MSG بكفاءة.
+date: '2026-03-15'
+description: تعلم كيفية قراءة ملفات MSG واستخراج المرفقات المضمنة باستخدام Aspose.Email
+  للغة Java. يوضح هذا الدرس في Aspose Email للـ Java إعداد تبعية Maven لـ Aspose Email
+  واستعراض الكود.
 keywords:
 - extract inline attachments MSG Java
 - handle Outlook email formats Java
 - use Aspose.Email library for Java
-title: استخراج المرفقات المضمنة في جافا – ملفات MSG باستخدام Aspose.Email
+title: كيفية قراءة ملف MSG – استخراج المرفقات المضمنة في Java
 url: /ar/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
 weight: 1
 ---
+
+_0}}. Keep them.
+
+Also the shortcodes at start and end.
+
+Let's construct.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# استخراج المرفقات المضمنة Java – ملفات MSG باستخدام Aspose.Email
+# كيفية قراءة ملفات MSG واستخراج المرفقات المضمنة Java – باستخدام Aspose.Email
 
-## مقدمة
+## المقدمة
 
-If you need to **extract inline attachments java** from Microsoft Outlook MSG files, you’ve come to the right place. Many developers struggle with reading Outlook msg java files because the format hides embedded images and documents inside the message body. In this tutorial we’ll walk through a clean, production‑ready solution that uses the Aspose.Email library for Java to locate, identify, and save those inline attachments.
+إذا كنت بحاجة إلى **كيفية قراءة ملفات msg** واستخراج الصور أو المستندات المضمنة، فقد وصلت إلى المكان الصحيح. يواجه العديد من المطورين تحديات عند محاولة قراءة ملفات Outlook msg java لأن الصيغة تُضمّن المرفقات المضمنة داخل جسم الرسالة. في هذا الدرس خطوة‑بخطوة لـ Aspose Email Java سنُظهر لك طريقة نظيفة وجاهزة للإنتاج لتحميل ملف MSG، واكتشاف أي المرفقات مضمَّنة، وحفظها على القرص.
 
-By the end of this guide you’ll be able to:
+بنهاية هذا الدليل ستكون قادرًا على:
 
-* إعداد Aspose.Email لـ Java في مشروع Maven.  
-* **Read Outlook msg java** files and enumerate their attachments.  
-* Detect which attachments are inline and write them to disk.  
-* Apply performance best practices for bulk processing.
+* إعداد **اعتماد Maven Aspose Email** في مشروع Java.  
+* **قراءة ملفات Outlook msg java** وعدّ مرفقاتها.  
+* اكتشاف أي المرفقات مضمَّنة وكتابتها إلى مجلد تختاره.  
+* تطبيق ممارسات صديقة للأداء للمعالجة الجماعية.
 
 ## إجابات سريعة
-- **What does “inline attachment” mean?** An attachment that is embedded in the email body (e.g., images displayed within the message).  
-- **Which library handles MSG files?** Aspose.Email for Java.  
-- **Do I need a license?** A trial works for evaluation; a permanent license removes usage limits.  
-- **Can I process many MSG files at once?** Yes – batch the logic and use thread pools for scalability.  
-- **What Java version is required?** JDK 16 or later.
+- **ماذا يعني “مرفق مضمّن”؟** مرفق مدمج في جسم البريد الإلكتروني (مثل الصور التي تُعرض داخل الرسالة).  
+- **أي مكتبة تتعامل مع ملفات MSG؟** Aspose.Email for Java.  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية تعمل للتقييم؛ الترخيص الدائم يزيل حدود الاستخدام.  
+- **هل يمكنني معالجة العديد من ملفات MSG مرة واحدة؟** نعم – اجمع المنطق في دفعات واستخدم مجموعات الخيوط للتوسع.  
+- **ما نسخة Java المطلوبة؟** JDK 16 أو أحدث.
 
 ## ما هو “extract inline attachments java”؟
 
-Extracting inline attachments in Java means programmatically opening an MSG file, scanning its attachment collection, and pulling out only those items that are flagged as *inline* (as opposed to regular file attachments). This is essential when you need the visual content of an email—such as embedded logos or screenshots—to be saved as separate image files.
+استخراج المرفقات المضمنة في Java يعني فتح ملف MSG برمجيًا، مسح مجموعة مرفقاته، واستخراج العناصر التي تم تعليمها كـ *مضمنة* (على عكس مرفقات الملفات العادية). هذا ضروري عندما تحتاج إلى المحتوى البصري للبريد—مثل الشعارات أو لقطات الشاشة المدمجة—أن تُحفظ كملفات صورة منفصلة.
 
 ## لماذا نستخدم Aspose.Email لهذه المهمة؟
 
-Aspose.Email abstracts the low‑level MAPI structures and gives you a simple, strongly‑typed API. Compared with trying to parse the binary MSG format yourself, Aspose.Email:
+Aspose.Email يُجرد هياكل MAPI منخفضة المستوى ويقدم لك API بسيطًا ومُعَرَّفًا بقوة. مقارنةً بمحاولة تحليل صيغة MSG الثنائية بنفسك، يوفر Aspose.Email:
 
-* Handles all MSG variants (Unicode, RTF, HTML).  
-* Provides reliable property access for attachment metadata.  
-* Offers built‑in licensing checks and extensive documentation.  
+* يدعم جميع متنوعات MSG (Unicode، RTF، HTML).  
+* يوفر وصولًا موثوقًا للخصائص الخاصة ببيانات المرفقات.  
+* يتضمن فحوصات ترخيص مدمجة ووثائق شاملة.  
 
 ## المتطلبات المسبقة
 
-To follow along, ensure you have:
+للمتابعة، تأكد من وجود:
 
-1. **Libraries and Dependencies**  
-   * Aspose.Email for Java (latest version).  
-   * Maven (or an IDE with Maven support).  
+1. **المكتبات والاعتمادات**  
+   * Aspose.Email for Java (أحدث نسخة).  
+   * Maven (أو بيئة تطوير تدعم Maven).  
 
-2. **Runtime**  
+2. **بيئة التشغيل**  
    * JDK 16 أو أحدث مثبت.  
 
-3. **Basic Knowledge**  
-   * Familiarity with Java I/O and exception handling.  
+3. **معرفة أساسية**  
+   * إلمام بـ Java I/O ومعالجة الاستثناءات.  
 
-## إعداد Aspose.Email لـ Java
+## إعداد Aspose.Email for Java
 
-Add the Aspose.Email dependency to your `pom.xml`. The snippet below is unchanged from the original tutorial.
+أضف اعتماد Aspose.Email إلى ملف `pom.xml`. المقتطف أدناه يبقى كما هو من الدرس الأصلي.
 
 ```xml
 <dependency>
@@ -77,17 +84,17 @@ Add the Aspose.Email dependency to your `pom.xml`. The snippet below is unchange
 
 ### خطوات الحصول على الترخيص
 
-* **Free Trial:** Download the trial DLL/JAR from the Aspose website.  
-* **Temporary License:** Request a 30‑day evaluation license for unrestricted testing.  
-* **Full Purchase:** Obtain a permanent license for production deployments.
+* **نسخة تجريبية مجانية:** حمّل ملف DLL/JAR التجريبي من موقع Aspose.  
+* **ترخيص مؤقت:** اطلب ترخيص تقييم لمدة 30 يومًا للاختبار غير المحدود.  
+* **شراء كامل:** احصل على ترخيص دائم للنشر في بيئات الإنتاج.
 
 ## دليل التنفيذ
 
-Below we break the solution into three focused features. Each feature contains a short explanation followed by the original code block (preserved exactly).
+نقسم الحل إلى ثلاث ميزات مركزة. كل ميزة تحتوي على شرح قصير يليه كتلة الكود الأصلية (محفوظة تمامًا).
 
 ### الميزة 1 – تحميل ملف MSG
 
-First, load the Outlook message into a `MapiMessage` object.
+أولاً، حمّل رسالة Outlook إلى كائن `MapiMessage`.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -98,7 +105,7 @@ MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatti
 
 ### الميزة 2 – استرجاع المرفقات
 
-Next, pull the full attachment collection from the message.
+بعد ذلك، استخرج مجموعة المرفقات الكاملة من الرسالة.
 
 ```java
 import com.aspose.email.MapiAttachmentCollection;
@@ -108,7 +115,7 @@ MapiAttachmentCollection attachments = message.getAttachments();
 
 ### الميزة 3 – تحديد وحفظ المرفقات المضمنة
 
-Loop through each attachment, check if it is inline, and then write it to disk.
+تجول عبر كل مرفق، تحقق مما إذا كان مضمّنًا، ثم احفظه على القرص.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -123,9 +130,9 @@ for (Object untypedAttachment : attachments) {
 }
 ```
 
-#### أداة: تحديد ما إذا كان المرفق مضمّنًا
+#### أداة مساعدة: تحديد ما إذا كان المرفق مضمّنًا
 
-The helper method inspects the MAPI properties to decide whether an attachment is embedded.
+طريقة المساعدة تفحص خصائص MAPI لتقرر ما إذا كان المرفق مدمجًا.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -148,9 +155,9 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-#### أداة: حفظ المرفق المضمن
+#### أداة مساعدة: حفظ المرفق المضمن
 
-Writes the binary content of the inline attachment to a file on the local filesystem.
+تكتب المحتوى الثنائي للمرفق المضمن إلى ملف على نظام الملفات المحلي.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -171,51 +178,54 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 
 ## تطبيقات عملية
 
-Extracting inline attachments is useful in many real‑world scenarios:
+استخراج المرفقات المضمنة مفيد في العديد من السيناريوهات الواقعية:
 
-* **Automated Email Processing** – Pull images from newsletters for analytics.  
-* **Data Migration** – Move embedded content when migrating from Exchange to another platform.  
-* **Archiving Solutions** – Preserve the visual fidelity of archived messages by storing inline assets separately.
+* **معالجة البريد الإلكتروني الآلية** – سحب الصور من النشرات الإخبارية للتحليل.  
+* **ترحيل البيانات** – نقل المحتوى المدمج عند الانتقال من Exchange إلى منصة أخرى.  
+* **حلول الأرشفة** – الحفاظ على الدقة البصرية للرسائل المؤرشفة بتخزين الأصول المضمنة بشكل منفصل.
 
 ## اعتبارات الأداء
 
-When dealing with hundreds or thousands of MSG files, keep these tips in mind:
+عند التعامل مع مئات أو آلاف ملفات MSG، ضع في اعتبارك النصائح التالية:
 
-* **Batch Processing:** Group files into manageable batches to avoid memory spikes.  
-* **Dispose Resources Promptly:** Close streams (`try‑with‑resources`) and let the garbage collector reclaim objects.  
-* **Parallel Execution:** Use a fixed‑size `ExecutorService` to run multiple extraction jobs concurrently, but monitor CPU usage.
+* **المعالجة الدفعية:** قسّم الملفات إلى دفعات قابلة للإدارة لتجنب ارتفاع الذاكرة المفاجئ.  
+* **تحرير الموارد بسرعة:** أغلق التدفقات (`try‑with‑resources`) ودع جامع القمامة يستعيد الكائنات.  
+* **التنفيذ المتوازي:** استخدم `ExecutorService` بحجم ثابت لتشغيل عدة مهام استخراج متزامنة، لكن راقب استهلاك المعالج.
 
-## المشكلات الشائعة & استكشاف الأخطاء وإصلاحها
+## المشكلات الشائعة & استكشاف الأخطاء
 
-| العَرَض | السبب المحتمل | الحل |
+| العرض | السبب المحتمل | الحل |
 |---------|--------------|-----|
-| `NullPointerException` on `attachment.getObjectData()` | Message lacks attachment metadata (e.g., corrupted MSG) | Validate the MSG file before processing or catch the exception and log the file name. |
-| Saved file is empty or corrupted | Incorrect property name (`"Package"` case‑sensitivity) | Verify the property name matches the MSG’s actual property; Aspose.Email documentation lists the exact string. |
-| Performance degrades with large files | Streams not closed, leading to memory leaks | Use try‑with‑resources (as shown) and consider increasing JVM heap if needed. |
+| `NullPointerException` على `attachment.getObjectData()` | الرسالة تفتقر إلى بيانات مرفق (مثلاً MSG تالف) | تحقق من صحة ملف MSG قبل المعالجة أو امسك الاستثناء وسجِّل اسم الملف. |
+| الملف المحفوظ فارغ أو تالف | اسم الخاصية غير صحيح (`"Package"` حساسية الحالة) | تأكد من أن اسم الخاصية يطابق الخاصية الفعلية في MSG؛ توثيق Aspose.Email يذكر السلسلة الدقيقة. |
+| تدهور الأداء مع الملفات الكبيرة | تدفقات غير مغلقة، مما يسبب تسرب الذاكرة | استخدم `try‑with‑resources` (كما هو موضح) وفكّر بزيادة حجم heap للـ JVM إذا لزم الأمر. |
 
 ## الأسئلة المتكررة
 
-**Q:** What is the minimum Aspose.Email version required?  
-**A:** The tutorial uses version 25.4, but any 24.x+ release that supports JDK 16 will work.
+**س: ما هي أقل نسخة من Aspose.Email مطلوبة؟**  
+ج: يستخدم الدرس النسخة 25.4، لكن أي إصدار 24.x+ يدعم JDK 16 سيعمل.
 
-**Q:** Can I extract inline attachments from encrypted MSG files?  
-**A:** Yes, provided you supply the correct decryption password when loading the `MapiMessage`.
+**س: هل يمكنني استخراج المرفقات المضمنة من ملفات MSG مشفّرة؟**  
+ج: نعم، بشرط توفير كلمة المرور الصحيحة لفك التشفير عند تحميل `MapiMessage`.
 
-**Q:** How do I differentiate between inline images and regular file attachments?  
-**A:** Use the `IsAttachmentInline` helper; it checks the MAPI `ObjInfo` flag that marks an attachment as inline.
+**س: كيف أفرق بين الصور المضمنة ومرفقات الملفات العادية؟**  
+ج: استخدم المساعدة `IsAttachmentInline`؛ فهي تتحقق من علم MAPI `ObjInfo` الذي يحدد المرفق كـ inline.
 
-**Q:** Is there a way to preserve the original file name of the inline attachment?  
-**A:** The sample generates a UUID for uniqueness, but you can read the `attachment.getLongFileName()` property and use it when calling `SaveAttachment`.
+**س: هل هناك طريقة للحفاظ على اسم الملف الأصلي للمرفق المضمن؟**  
+ج: العينة تولد UUID لضمان التفرد، لكن يمكنك قراءة خاصية `attachment.getLongFileName()` واستخدامها عند استدعاء `SaveAttachment`.
 
-**Q:** Does this approach work on Linux/macOS as well as Windows?  
-**A:** Absolutely—Aspose.Email is platform‑independent as long as the JDK is installed.
+**س: هل يعمل هذا النهج على Linux/macOS كما هو على Windows؟**  
+ج: بالتأكيد—Aspose.Email مستقل عن المنصة طالما تم تثبيت JDK.
 
-## الموارد
-- **التوثيق:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
+**س: أين يمكنني العثور على تفاصيل أكثر حول اعتماد Maven Aspose Email؟**  
+ج: راجع الوثائق الرسمية لـ Aspose في الرابط أدناه.
+
+## موارد
+- **الوثائق:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**آخر تحديث:** 2025-12-17  
+**آخر تحديث:** 2026-03-15  
 **تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16)  
 **المؤلف:** Aspose  
 
