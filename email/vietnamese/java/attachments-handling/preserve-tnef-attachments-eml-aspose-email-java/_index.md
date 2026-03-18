@@ -1,61 +1,88 @@
 ---
-date: '2025-12-17'
-description: Tìm hiểu cách bảo tồn các tệp đính kèm TNEF trong các tệp EML bằng Aspose.Email
-  cho Java. Hướng dẫn này bao gồm cài đặt, triển khai và khắc phục sự cố với các hướng
-  dẫn từng bước.
+date: '2026-03-18'
+description: Tìm hiểu cách bảo tồn các tệp đính kèm TNEF trong các tệp EML bằng Maven
+  Aspose Email cho Java. Hướng dẫn này bao gồm cài đặt, xử lý tệp đính kèm email Java,
+  triển khai và khắc phục sự cố với các hướng dẫn từng bước.
 keywords:
 - preserve tnef attachments
 - Aspose.Email for Java
 - handle TNEF in EML files
-title: 'Bảo tồn tệp đính kèm TNEF trong tệp EML bằng Aspose.Email cho Java - Hướng
-  dẫn toàn diện'
+title: 'Maven Aspose Email: Bảo tồn các tệp đính kèm TNEF trong EML (Java)'
 url: /vi/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ => **Hỗ trợ**: ...
+
+Then the line:
+
+--- (horizontal rule) keep.
+
+**Last Updated:** 2026-03-18 => Keep same.
+
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier) => Keep.
+
+**Author:** Aspose => Keep.
+
+Then closing shortcodes.
+
+Now produce final content with all translations.
+
+Make sure to keep all shortcodes unchanged.
+
+Let's construct final output.{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Cách Bảo Vệ Tệp Đính Kèm TNEF trong Tệp EML Sử Dụng Aspose.Email cho Java
+# Cách Bảo Vệ Tệp Đính Kèm TNEF trong Tệp EML Sử Dụng Maven Aspose Email cho Java
 
 ## Giới thiệu
 
-Bạn đang gặp khó khăn khi xử lý các tệp đính kèm TNEF (Transport Neutral Encapsulation Format) khi làm việc với tệp EML trong Java? **Nếu bạn cần bảo vệ các tệp đính kèm TNEF**, hướng dẫn này sẽ chỉ cho bạn cách giữ nguyên các tệp đó khi sử dụng Aspose.Email cho Java. TNEF thường được Microsoft Outlook sử dụng, và việc bảo tồn các tệp đính kèm này trong quá trình xử lý email có thể phức tạp. Với Aspose.Email, công việc trở nên đơn giản và đáng tin cậy.
+Bạn có gặp khó khăn khi xử lý các tệp đính kèm TNEF (Transport Neutral Encapsulation Format) khi làm việc với các tệp EML trong Java không? **Nếu bạn cần bảo tồn các tệp đính kèm TNEF**, hướng dẫn này sẽ chỉ cho bạn cách giữ nguyên các tệp đó bằng cách sử dụng **Maven Aspose Email** cho Java. TNEF thường được Microsoft Outlook sử dụng, và việc bảo tồn các tệp đính kèm này trong quá trình xử lý email có thể phức tạp. Với Aspose.Email, công việc trở nên đơn giản và đáng tin cậy.
 
-Trong tutorial này, bạn sẽ học cách cấu hình thư viện, tải tệp EML mà không mất các phần TNEF, và xác minh rằng các tệp đính kèm vẫn nguyên vẹn.
+Trong tutorial này, bạn sẽ học cách cấu hình thư viện, tải một tệp EML mà không mất các phần TNEF, và xác minh rằng các tệp đính kèm vẫn không bị thay đổi.
 
 **Bạn sẽ học được**
-- Cách thiết lập thư viện Aspose.Email cho Java (bao gồm ví dụ Maven aspose email java).  
-- Các bước tải tệp EML **giữ nguyên các tệp đính kèm TNEF**.  
+- Cách thiết lập phụ thuộc Maven aspose email java.  
+- Các bước tải tệp EML trong khi **bảo tồn các tệp đính kèm TNEF**.  
 - Các tùy chọn cấu hình quan trọng trong `EmlLoadOptions`.  
-- Những lỗi thường gặp và mẹo khắc phục.
+- Những lỗi thường gặp và mẹo khắc phục khi xử lý **java email attachments**.
 
-Sẵn sàng bắt đầu? Hãy chuẩn bị môi trường phát triển của bạn ngay.
+Sẵn sàng bắt đầu? Hãy bắt đầu bằng việc chuẩn bị môi trường phát triển của bạn.
 
 ## Câu trả lời nhanh
-- **“Bảo vệ các tệp đính kèm TNEF” có nghĩa là gì?** Nó giữ nguyên các tệp được mã hoá TNEF khi tải một tệp EML.  
-- **Thư viện nào thực hiện điều này?** Aspose.Email cho Java (phiên bản 25.4+).  
-- **Có cần Maven không?** Có – tutorial bao gồm đoạn phụ thuộc Maven aspose email java.  
+- **“preserve TNEF attachments” có nghĩa là gì?** Nó giữ nguyên các tệp được mã hoá TNEF gốc khi tải một EML.  
+- **Thư viện nào xử lý việc này?** Maven Aspose Email cho Java (phiên bản 25.4+).  
+- **Tôi có cần Maven không?** Có – tutorial bao gồm một đoạn mã phụ thuộc Maven aspose email java.  
 - **Cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép vĩnh viễn cần cho môi trường sản xuất.  
-- **Có thể xử lý hộp thư lớn không?** Chắc chắn, với quản lý bộ nhớ hợp lý và mẫu hủy `MailMessage`.
+- **Tôi có thể xử lý các hộp thư lớn không?** Chắc chắn, với quản lý bộ nhớ hợp lý và mẫu xử lý `MailMessage`.
+
+## Maven Aspose Email là gì?
+
+Maven Aspose Email là bản phân phối dựa trên Maven của thư viện Aspose.Email cho Java. Nó cho phép bạn thêm các khả năng xử lý email mạnh mẽ—như bảo tồn các tệp đính kèm TNEF—vào bất kỳ dự án Java nào chỉ bằng một khai báo phụ thuộc.
+
+## Tại sao nên sử dụng Maven Aspose Email để bảo tồn các tệp đính kèm TNEF?
+
+- **Tuân thủ pháp lý** – giữ nguyên định dạng tệp đính kèm gốc cho các bản ghi kiểm toán.  
+- **Độ trung thực cao** – không có chuyển đổi tự động, vì vậy dữ liệu đặc thù của Outlook vẫn giữ nguyên.  
+- **Xử lý mở rộng** – xử lý hàng ngàn tin nhắn với mức tiêu thụ bộ nhớ thấp.
 
 ## Yêu cầu trước
 
-Trước khi bắt đầu, hãy chắc chắn bạn đã có:
+Trước khi bắt đầu, hãy chắc chắn bạn có những thứ sau:
 
 ### Thư viện và phụ thuộc cần thiết
 - **Aspose.Email cho Java**: Khuyến nghị phiên bản 25.4 trở lên để đạt hiệu năng tối ưu.  
-- **Maven**: Chúng ta sẽ dùng phụ thuộc Maven aspose email java để tải thư viện.
+- **Maven**: Chúng ta sẽ sử dụng phụ thuộc Maven aspose email java để tải thư viện.
 
-### Yêu cầu cài đặt môi trường
-- Một IDE tương thích (ví dụ: IntelliJ IDEA, Eclipse) để chạy ứng dụng Java.  
-- JDK 16 hoặc cao hơn được cài đặt trên máy.
+### Yêu cầu thiết lập môi trường
+- Một IDE tương thích (ví dụ: IntelliJ IDEA, Eclipse) để chạy các ứng dụng Java.  
+- JDK 16 hoặc cao hơn được cài đặt trên máy của bạn.
 
-### Kiến thức nền
+### Kiến thức tiên quyết
 - Hiểu biết cơ bản về lập trình Java.  
-- Quen thuộc với việc xử lý các tệp email và đính kèm trong phát triển phần mềm.
+- Quen thuộc với việc xử lý các tệp email và tệp đính kèm trong phát triển phần mềm.
 
 ## Cài đặt Aspose.Email cho Java
 
@@ -72,13 +99,13 @@ Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
 </dependency>
 ```
 
-### Các bước lấy giấy phép
+### Các bước nhận giấy phép
 
-- **Dùng thử miễn phí** – bắt đầu với bản dùng thử để khám phá tính năng.  
-- **Giấy phép tạm thời** – lấy giấy phép tạm thời để thử nghiệm kéo dài hơn.  
-- **Mua bản đầy đủ** – cân nhắc mua giấy phép chính thức cho môi trường sản xuất.
+- **Free Trial** – bắt đầu với bản dùng thử để khám phá các tính năng.  
+- **Temporary License** – nhận giấy phép tạm thời cho việc thử nghiệm kéo dài.  
+- **Purchase** – cân nhắc mua giấy phép đầy đủ cho môi trường sản xuất.
 
-Để kích hoạt giấy phép, đặt tệp giấy phép vào dự án và chạy:
+Để kích hoạt giấy phép, đặt tệp giấy phép vào dự án của bạn và chạy:
 
 ```java
 License license = new License();
@@ -91,13 +118,13 @@ license.setLicense("path/to/your/license/file");
 
 #### Tổng quan
 
-Cờ `PreserveTnefAttachments` yêu cầu Aspose.Email giữ nguyên các tệp TNEF như chúng xuất hiện trong EML nguồn, ngăn ngừa bất kỳ chuyển đổi tự động nào.
+Cờ `PreserveTnefAttachments` chỉ cho Maven Aspose Email giữ nguyên các tệp TNEF gốc chính xác như chúng xuất hiện trong EML nguồn, ngăn ngừa bất kỳ chuyển đổi tự động nào.
 
-#### Thực hiện từng bước
+#### Triển khai từng bước
 
 **1. Cấu hình tùy chọn tải**
 
-Tạo một thể hiện của `EmlLoadOptions` và bật chế độ bảo vệ TNEF:
+Tạo một thể hiện của `EmlLoadOptions` và bật tính năng bảo tồn TNEF:
 
 ```java
 EmlLoadOptions options = new EmlLoadOptions();
@@ -106,7 +133,7 @@ options.setPreserveTnefAttachments(true);
 
 **2. Tải tệp EML**
 
-Cung cấp các tùy chọn khi tải tin nhắn:
+Chuyển các tùy chọn khi tải tin nhắn của bạn:
 
 ```java
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
@@ -114,7 +141,7 @@ MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 
 **3. Truy cập các tệp đính kèm**
 
-Duyệt qua các tệp đính kèm để xác nhận chúng vẫn là tệp TNEF:
+Duyệt qua các tệp đính kèm để xác minh chúng vẫn là tệp TNEF:
 
 ```java
 for (Attachment attachment : eml.getAttachments()) {
@@ -124,68 +151,72 @@ for (Attachment attachment : eml.getAttachments()) {
 
 #### Mẹo khắc phục sự cố
 
-- **Thiếu tệp đính kèm** – kiểm tra lại đường dẫn (`dataDir`) và đảm bảo tệp có thể đọc được.  
-- **Chuyển đổi không mong muốn** – xác nhận rằng `setPreserveTnefAttachments(true)` đã được gọi trước khi tải tin nhắn.  
+- **Missing Attachments** – kiểm tra lại đường dẫn tệp (`dataDir`) và đảm bảo tệp có thể đọc được.  
+- **Unexpected Conversion** – xác nhận rằng `setPreserveTnefAttachments(true)` được gọi trước khi tải tin nhắn.  
 
-## Ứng dụng thực tiễn
+## Làm việc với Java Email Attachments
 
-Bảo vệ các tệp đính kèm TNEF hữu ích trong nhiều tình huống thực tế:
+Bảo tồn các tệp đính kèm TNEF chỉ là một phần trong việc xử lý **java email attachments**. Khi đã có đối tượng `MailMessage`, bạn cũng có thể trích xuất nội dung văn bản thuần, nội dung HTML, hoặc chuyển tiếp tin nhắn mà không mất bất kỳ phần gốc nào.
 
-1. **Hệ thống lưu trữ email** – giữ nguyên định dạng đính kèm để tuân thủ pháp lý.  
-2. **Phần mềm pháp lý & tuân thủ** – lưu trữ tệp TNEF gốc để đáp ứng chính sách lưu trữ tài liệu.  
-3. **Công cụ hỗ trợ khách hàng** – chuyển tiếp email của khách hàng mà không thay đổi tệp đính kèm gốc.
+## Ứng dụng thực tế
 
-## Cân nhắc về hiệu năng
+Bảo tồn các tệp đính kèm TNEF có giá trị trong nhiều kịch bản thực tế:
 
-Khi xử lý một lượng lớn email với Aspose.Email:
+1. **Hệ thống lưu trữ email** – giữ nguyên định dạng tệp đính kèm gốc cho tuân thủ pháp lý.  
+2. **Phần mềm pháp lý & tuân thủ** – giữ lại các tệp TNEF gốc để đáp ứng chính sách lưu trữ tài liệu.  
+3. **Công cụ hỗ trợ khách hàng** – chuyển tiếp email của khách hàng mà không thay đổi các tệp đính kèm gốc.
 
-- **Giải phóng đối tượng** – gọi `eml.dispose()` (hoặc để GC tự giải phóng) sau khi xử lý xong mỗi tin nhắn.  
-- **Cài đặt bộ nhớ** – điều chỉnh kích thước heap JVM (`-Xmx`) dựa trên khối lượng email bạn xử lý.  
+## Các cân nhắc về hiệu năng
+
+Khi xử lý các lô email lớn với Maven Aspose Email:
+
+- **Giải phóng đối tượng** – gọi `eml.dispose()` (hoặc để bộ thu gom rác giải phóng) sau khi bạn hoàn thành xử lý mỗi tin nhắn.  
+- **Cài đặt bộ nhớ** – điều chỉnh kích thước heap của JVM (`-Xmx`) dựa trên khối lượng email bạn xử lý.  
 
 ## Các vấn đề thường gặp và giải pháp
 
 | Vấn đề | Nguyên nhân có thể | Giải pháp |
-|-------|-------------------|-----------|
-| Tệp đính kèm xuất hiện dưới dạng `.dat` | `PreserveTnefAttachments` chưa được bật | Đảm bảo `options.setPreserveTnefAttachments(true)` được thiết lập trước khi tải. |
-| `FileNotFoundException` | Đường dẫn `dataDir` không đúng | Kiểm tra lại thư mục và tên tệp; dùng đường dẫn tuyệt đối khi thử nghiệm. |
-| Sử dụng bộ nhớ cao khi xử lý hộp thư lớn | Không giải phóng đối tượng `MailMessage` | Gọi `eml.dispose()` hoặc gán `null` sau khi xử lý. |
+|-------|--------------------|----------|
+| Attachments appear as `.dat` files | `PreserveTnefAttachments` not enabled | Ensure `options.setPreserveTnefAttachments(true)` is set before loading. |
+| `FileNotFoundException` | Incorrect `dataDir` path | Verify the directory and file name; use absolute paths for testing. |
+| High memory usage on large mailboxes | Not disposing `MailMessage` objects | Call `eml.dispose()` or set the reference to `null` after processing. |
 
 ## Câu hỏi thường gặp
 
-**Q1: TNEF là gì và tại sao tôi cần bảo vệ định dạng này?**  
-A: TNEF (Transport Neutral Encapsulation Format) là cách Microsoft Outlook đóng gói các tệp đính kèm phong phú. Bảo vệ nó giúp dữ liệu gốc không bị thay đổi, điều này quan trọng đối với tuân thủ và hiển thị chính xác.
+**Q: TNEF là gì, và tại sao tôi nên bảo tồn định dạng của nó?**  
+A: TNEF (Transport Neutral Encapsulation Format) là cách đóng gói tệp đính kèm nội dung phong phú của Outlook. Bảo tồn nó đảm bảo dữ liệu gốc không bị thay đổi, điều này quan trọng đối với tuân thủ và việc hiển thị chính xác.
 
-**Q2: Aspose.Email có thể xử lý khối lượng lớn tệp email hiệu quả không?**  
+**Q: Maven Aspose Email có thể xử lý khối lượng lớn tệp email một cách hiệu quả không?**  
 A: Có. Với quản lý tài nguyên hợp lý (giải phóng đối tượng `MailMessage` và cấu hình bộ nhớ JVM), thư viện mở rộng tốt cho việc xử lý hàng loạt.
 
-**Q3: Làm sao khắc phục việc mất tệp đính kèm TNEF?**  
-A: Kiểm tra đường dẫn tệp, chắc chắn `setPreserveTnefAttachments(true)` đã được kích hoạt, và xác nhận EML nguồn thực sự chứa các phần TNEF.
+**Q: Làm sao tôi khắc phục việc thiếu tệp đính kèm TNEF?**  
+A: Kiểm tra lại đường dẫn tệp, đảm bảo `setPreserveTnefAttachments(true)` đang hoạt động, và xác nhận rằng EML nguồn thực sự chứa các phần TNEF.
 
-**Q4: Sử dụng Aspose.Email cho Java có tốn phí không?**  
-A: Có bản dùng thử miễn phí để đánh giá. Sử dụng trong môi trường sản xuất yêu cầu mua giấy phép hoặc giấy phép tạm thời cho việc thử nghiệm kéo dài.
+**Q: Có chi phí nào liên quan đến việc sử dụng Maven Aspose Email cho Java không?**  
+A: Một bản dùng thử miễn phí có sẵn để đánh giá. Sử dụng trong môi trường sản xuất yêu cầu mua giấy phép hoặc giấy phép tạm thời cho việc thử nghiệm kéo dài.
 
-**Q5: Tôi có thể nhận hỗ trợ khi gặp vấn đề không?**  
-A: Truy cập **Aspose Email Forum**, tham khảo tài liệu chính thức, hoặc liên hệ trực tiếp với bộ phận hỗ trợ của Aspose.
+**Q: Tôi có thể nhận hỗ trợ nếu gặp vấn đề không?**  
+A: Truy cập Aspose Email Forum, tham khảo tài liệu chính thức, hoặc liên hệ trực tiếp với bộ phận hỗ trợ của Aspose.
 
-**Q6: Phụ thuộc Maven aspose email java có hỗ trợ các phiên bản JDK khác không?**  
-A: Bộ phân loại `jdk16` nhắm tới JDK 16+. Đối với các JDK cũ hơn, sử dụng bộ phân loại phù hợp hoặc tải binary tương ứng từ trang web Aspose.
+**Q: Phụ thuộc Maven aspose email java có hỗ trợ các phiên bản JDK khác không?**  
+A: Bộ phân loại `jdk16` nhắm tới JDK 16+. Đối với các JDK cũ hơn, hãy sử dụng bộ phân loại phù hợp hoặc tải xuống binary tương ứng từ trang web Aspose.
 
-**Q7: Tôi có thể kết hợp cách này với các tính năng khác của Aspose.Email, như chuyển đổi email hoặc gửi SMTP không?**  
-A: Chắc chắn. Khi đã có đối tượng `MailMessage`, bạn có thể dùng bất kỳ API nào của Aspose.Email — chuyển đổi sang PST, gửi qua SMTP, hoặc trích xuất nội dung thân thư.
+**Q: Tôi có thể kết hợp cách tiếp cận này với các tính năng khác của Aspose.Email, chẳng hạn chuyển đổi email hoặc gửi SMTP không?**  
+A: Chắc chắn. Khi đã có đối tượng `MailMessage`, bạn có thể sử dụng bất kỳ API nào của Aspose.Email—chuyển đổi sang PST, gửi qua SMTP, hoặc trích xuất nội dung thân thư.
 
 ## Tài nguyên
 - **Tài liệu**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
 - **Tải xuống**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Mua bản quyền**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **Mua**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
 - **Dùng thử miễn phí**: [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
 - **Giấy phép tạm thời**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Hỗ trợ**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-17  
-**Kiểm tra với:** Aspose.Email cho Java 25.4 (bộ phân loại JDK 16)  
-**Tác giả:** Aspose  
+**Last Updated:** 2026-03-18  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
