@@ -1,12 +1,13 @@
 ---
-date: '2025-12-20'
-description: Pelajari cara membuat kalender MAPI Java, mengelola pola pengulangan
-  harian, dan menangani pengecualian menggunakan Aspose.Email untuk Java.
+date: '2026-03-20'
+description: Pelajari cara membuat kalender Outlook Java dengan pengulangan harian
+  dan pengecualian, serta menyimpan kalender ke PST menggunakan Aspose.Email untuk
+  Java.
 keywords:
 - MAPI Calendar creation
 - daily recurrence events
 - Java calendar exceptions
-title: Buat kalender MAPI Java dengan pengulangan harian dan pengecualian
+title: Buat kalender Outlook Java dengan pengulangan harian dan pengecualian
 url: /id/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/
 weight: 1
 ---
@@ -16,31 +17,31 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Cara membuat mapi calendar java dengan pengulangan harian dan pengecualian
+# Cara membuat outlook calendar java dengan pengulangan harian dan pengecualian
 
-Mengelola acara berulang secara efisien dapat menjadi tantangan, terutama ketika diperlukan pengecualian atau perubahan. Dalam tutorial ini Anda akan **membuat mapi calendar java** objek, menyiapkan pola pengulangan harian, dan menambahkan pengecualian menggunakan Aspose.Email for Java. Anda akan belajar cara mengotomatiskan tugas penjadwalan secara mulus dalam aplikasi Anda.
+Mengelola acara berulang secara efisien dapat menjadi tantangan, terutama ketika Anda membutuhkan **outlook calendar java** yang mendukung pola pengulangan harian dan pengecualian sesekali. Dalam tutorial ini Anda akan belajar cara membuat objek Outlook calendar Java, mengonfigurasi pengulangan harian, menambahkan contoh pengecualian, dan akhirnya **save calendar to PST** menggunakan Aspose.Email for Java. Pada akhir tutorial Anda akan memiliki potongan kode yang dapat digunakan kembali dan dapat dimasukkan ke dalam layanan penjadwalan berbasis Java mana pun.
 
 ## Jawaban Cepat
-- **Perpustakaan mana?** Aspose.Email for Java  
-- **Tugas utama?** Membuat kalender MAPI dengan pengulangan harian dan pengecualian  
+- **Library mana?** Aspose.Email for Java  
+- **Tugas utama?** Membuat Outlook calendar Java dengan pengulangan harian dan pengecualian  
 - **JDK prasyarat?** Java 16 atau lebih tinggi  
-- **Bisakah saya melampirkan file pada pengecualian?** Ya, menggunakan `MapiCalendarExceptionInfo`  
+- **Bisakah saya melampirkan file ke pengecualian?** Ya, menggunakan `MapiCalendarExceptionInfo`  
 - **Di mana kalender disimpan?** Di file PST melalui `PersonalStorage`
 
-### Apa itu kalender MAPI?
-Kalender MAPI (Messaging Application Programming Interface) adalah format standar yang digunakan oleh Microsoft Outlook dan klien email lainnya untuk menyimpan data janji. Ia mendukung aturan pengulangan yang kaya, pengecualian, dan lampiran, menjadikannya ideal untuk penjadwalan perusahaan.
+## Apa itu Outlook calendar java?
+Objek Outlook calendar Java (diimplementasikan sebagai kalender MAPI) mengikuti standar yang sama dengan janji temu Microsoft Outlook. Objek ini menyimpan aturan pengulangan yang kaya, penanganan pengecualian, peserta, dan lampiran, menjadikannya sempurna untuk penjadwalan tingkat perusahaan.
 
-### Mengapa menggunakan Aspose.Email for Java?
-Aspose.Email menyediakan API murni‑Java yang memungkinkan Anda membuat, memodifikasi, dan menyimpan objek MAPI tanpa bergantung pada Outlook. Ini berarti Anda dapat membangun fitur penjadwalan sisi‑server, menghasilkan file PST, dan menangani skenario pengulangan kompleks secara programatik.
+## Mengapa menggunakan Aspose.Email for Java?
+Aspose.Email menyediakan API murni‑Java yang memungkinkan Anda bekerja dengan objek MAPI tanpa perlu menginstal Outlook. Pendekatan **aspose email tutorial java** ini memungkinkan pembuatan file PST di sisi server, seri rapat otomatis, dan kontrol penuh atas logika pengulangan.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki pengaturan berikut:
-- **Perpustakaan Aspose.Email**: Versi 25.4 (atau lebih baru) – tersedia melalui Maven atau unduhan langsung.  
-- **Java Development Kit (JDK)**: JDK 16 atau lebih baru.  
-- **IDE**: IntelliJ IDEA, Eclipse, NetBeans, atau editor Java‑compatible lainnya.
+Sebelum kita mulai, pastikan Anda memiliki pengaturan berikut:
+- **Aspose.Email Library**: Versi 25.4 (atau lebih baru) – tersedia melalui Maven atau unduhan langsung.  
+- **Java Development Kit (JDK)**: JDK 16 atau yang lebih baru.  
+- **IDE**: IntelliJ IDEA, Eclipse, NetBeans, atau editor kompatibel Java apa pun.
 
-### Perpustakaan dan Dependensi yang Diperlukan
+### Perpustakaan dan Ketergantungan yang Diperlukan
 
 Untuk mengintegrasikan Aspose.Email ke dalam proyek Anda menggunakan Maven, tambahkan dependensi berikut ke `pom.xml` Anda:
 
@@ -56,15 +57,15 @@ Untuk mengintegrasikan Aspose.Email ke dalam proyek Anda menggunakan Maven, tamb
 ### Akuisisi Lisensi
 
 Untuk menggunakan Aspose.Email, Anda memerlukan lisensi:
-- **Uji Coba Gratis** – jelajahi semua fitur tanpa biaya.  
-- **Lisensi Sementara** – minta untuk evaluasi yang diperpanjang.  
-- **Lisensi Penuh** – beli untuk penyebaran produksi.
+- **Free Trial** – jelajahi semua fitur tanpa biaya.  
+- **Temporary License** – minta untuk evaluasi yang diperpanjang.  
+- **Full License** – beli untuk penerapan produksi.
 
-## Menyiapkan Aspose.Email for Java
+## Menyiapkan Aspose.Email untuk Java
 
 Pertama, siapkan lingkungan Anda:
 
-1. Verifikasi JDK 16 terpasang dan `JAVA_HOME` telah dikonfigurasi.  
+1. Verifikasi JDK 16 terinstal dan `JAVA_HOME` telah dikonfigurasi.  
 2. Tambahkan dependensi Maven (atau unduh JAR) ke proyek Anda.  
 
 Berikut contoh potongan kode kecil yang menunjukkan cara memuat file lisensi:
@@ -87,28 +88,28 @@ public class InitializeAspose {
 
 ## Panduan Implementasi
 
-### Membuat Kalender MAPI dengan Pengulangan Harian dan Pengecualian
+### Membuat Outlook calendar java dengan Pengulangan Harian dan Pengecualian
 
 #### Gambaran Umum
-Fitur ini memungkinkan Anda mengotomatiskan janji berulang sambil tetap dapat melewatkan atau memodifikasi instance tertentu.
+Fitur ini memungkinkan Anda mengotomatisasi janji berulang sambil tetap dapat melewatkan atau memodifikasi contoh tertentu.
 
-#### Implementasi Langkah‑demi‑Langkah
+#### Implementasi Langkah‑per‑Langkah
 
-**1. Menetapkan Tanggal Mulai Acara**  
+**1. Atur Tanggal Mulai Acara**  
 Tentukan kapan seri harus dimulai:
 
 ```java
 Date startDate = addHours(newDate(2018, 7, 19), 12);
 ```
 
-**2. Membuat Objek MAPI Calendar**  
+**2. Buat Objek Kalender MAPI**  
 Berikan lokasi, subjek, dan deskripsi:
 
 ```java
 MapiCalendar calendar = new MapiCalendar("location1", "summary1", "description1", startDate, addHours(startDate, 1));
 ```
 
-**3. Mendefinisikan Pola Pengulangan Harian**  
+**3. Tentukan Pola Pengulangan Harian**  
 Konfigurasikan acara agar berulang setiap hari:
 
 ```java
@@ -121,7 +122,7 @@ pattern.setPeriod(1); // Daily
 pattern.setEndType(MapiCalendarRecurrenceEndType.NeverEnd);
 ```
 
-**4. Menambahkan Pengecualian pada Pengulangan**  
+**4. Tambahkan Pengecualian ke Pengulangan**  
 Tentukan tanggal yang harus dikecualikan (atau diubah):
 
 ```java
@@ -143,24 +144,24 @@ pattern.getDeletedInstanceDates().addItem(exceptionDate);
 calendar.setRecurrence(recurrence);
 ```
 
-### Melampirkan File pada Pengecualian Kalender
+### Melampirkan File ke Pengecualian Kalender
 
 #### Gambaran Umum
-Anda dapat melampirkan dokumen pendukung (misalnya agenda) pada setiap instance pengecualian.
+Anda dapat melampirkan dokumen pendukung (mis., agenda) ke contoh pengecualian mana pun.
 
-**1. Membuat dan Melampirkan File**
+**1. Buat dan Lampirkan File**
 
 ```java
 MapiCalendarExceptionInfo exception = new MapiCalendarExceptionInfo();
 exception.getAttachments().add("file.txt", "hello, world!".getBytes());
 ```
 
-### Menyimpan Kalender MAPI dalam File PST
+### Menyimpan Outlook calendar java ke PST (save calendar to pst)
 
 #### Gambaran Umum
-Persistensikan kalender ke file PST sehingga Outlook atau klien lain dapat membacanya.
+Simpan kalender ke file PST sehingga Outlook atau klien lain dapat membacanya.
 
-**1. Membuat dan Menyimpan Kalender ke PST**
+**1. Buat dan Simpan Kalender ke PST**
 
 ```java
 final PersonalStorage pst = PersonalStorage.create(new ByteArrayOutputStream(), FileFormatVersion.Unicode);
@@ -173,54 +174,57 @@ try {
 ```
 
 ## Aplikasi Praktis
-- **Penjadwalan Korporat** – mengotomatisasi rangkaian rapat, secara otomatis melewatkan hari libur.  
+- **Penjadwalan Korporat** – mengotomatisasi seri rapat, secara otomatis melewatkan hari libur.  
 - **Manajemen Proyek** – melacak tonggak berulang dengan pergeseran tanggal sesekali.  
-- **Perencanaan Acara** – mengelola konferensi multi‑hari di mana beberapa sesi dibatalkan atau dijadwal ulang.
+- **Perencanaan Acara** – mengelola konferensi multi‑hari dimana beberapa sesi dibatalkan atau dijadwal ulang.
 
 ### Kemungkinan Integrasi
-Gabungkan Aspose.Email dengan platform CRM, API manajemen tugas, atau mesin alur kerja kustom untuk menggerakkan otomatisasi end‑to‑end.
+Gabungkan Aspose.Email dengan platform CRM, API manajemen tugas, atau mesin alur kerja khusus untuk menggerakkan otomatisasi end‑to‑end.
 
 ## Pertimbangan Kinerja
-- **Dispose Resources** – selalu panggil `dispose()` pada `PersonalStorage` untuk membebaskan handle file.  
+- **Buang Sumber Daya** – selalu panggil `dispose()` pada `PersonalStorage` untuk membebaskan handle file.  
 - **Penggunaan Stream** – pilih `ByteArrayOutputStream` atau stream file untuk menghindari memuat seluruh PST ke memori.  
 - **Operasi Asinkron** – untuk pembuatan kalender massal, jalankan logika pembuatan pada thread latar belakang agar UI tetap responsif.
 
 ## Kesimpulan
-Dengan mengikuti panduan ini Anda kini tahu cara **membuat mapi calendar java** objek dengan pengulangan harian, menambahkan pengecualian, melampirkan file, dan menyimpan semuanya dalam file PST. Kemampuan ini memungkinkan Anda membangun fitur penjadwalan yang kuat tanpa pernah menyentuh Outlook secara langsung.
+Dengan mengikuti panduan ini Anda kini tahu cara **create outlook calendar java** objek dengan pengulangan harian, menambahkan pengecualian, melampirkan file, dan **save calendar to PST**. Kemampuan ini memungkinkan Anda membangun fitur penjadwalan yang kuat tanpa pernah menyentuh Outlook secara langsung.
 
 ### Langkah Selanjutnya
 - Bereksperimen dengan pola pengulangan mingguan atau bulanan.  
 - Jelajahi properti MAPI tambahan seperti peserta, pengingat, dan kategori.  
-- Tinjau dokumentasi API Aspose.Email yang komprehensif untuk skenario yang lebih maju.
+- Tinjau dokumentasi API lengkap Aspose.Email untuk skenario yang lebih maju.
 
 ## Pertanyaan yang Sering Diajukan
 
-**T: Apakah perpustakaan mendukung janji yang sadar zona waktu?**  
-J: Ya, Anda dapat mengatur properti `StartTimeZone` dan `EndTimeZone` pada `MapiCalendar`.
+**Q: Apakah perpustakaan mendukung janji dengan zona waktu?**  
+A: Ya, Anda dapat mengatur properti `StartTimeZone` dan `EndTimeZone` pada `MapiCalendar`.
 
-**T: Bisakah saya secara programatis menghapus satu kejadian dari rangkaian berulang?**  
-J: Gunakan koleksi `DeletedInstanceDates` pada pola pengulangan untuk menandai tanggal tertentu sebagai dihapus.
+**Q: Bisakah saya secara program menghapus satu kejadian dari seri berulang?**  
+A: Gunakan koleksi `DeletedInstanceDates` pada pola pengulangan untuk menandai tanggal tertentu sebagai dihapus.
 
-**T: Apakah ada batas ukuran file PST yang dibuat dengan Aspose.Email?**  
-J: File PST mengikuti batas format Unicode (hingga 2 GB secara default), namun Anda dapat mengonfigurasi ukuran lebih besar melalui pengaturan `PersonalStorage`.
+**Q: Apakah ada batas ukuran file PST yang dibuat dengan Aspose.Email?**  
+A: File PST mengikuti batas format Unicode (hingga 2 GB secara default), namun Anda dapat mengonfigurasi ukuran lebih besar melalui pengaturan `PersonalStorage`.
 
-**T: Bagaimana cara menambahkan peserta ke permintaan rapat?**  
-J: Buat objek `MapiRecipient`, set `RecipientType` ke `MapiRecipientType.MAPI_TO`, dan tambahkan ke koleksi `Recipients` pada `MapiMessage`.
+**Q: Bagaimana cara menambahkan peserta ke permintaan rapat?**  
+A: Buat objek `MapiRecipient`, atur `RecipientType` mereka menjadi `MapiRecipientType.MAPI_TO`, dan tambahkan ke koleksi `Recipients` pada `MapiMessage`.
 
-**T: Apakah ada dukungan untuk tugas berulang (bukan hanya janji)?**  
-J: Ya, Aspose.Email juga menyediakan `MapiTask` dengan kemampuan pengulangan serupa.
+**Q: Apakah ada dukungan untuk tugas berulang (bukan hanya janji)?**  
+A: Ya, Aspose.Email juga menyediakan `MapiTask` dengan kemampuan pengulangan serupa.
+
+**Q: Bisakah saya menggunakan panduan ini sebagai bagian dari seri tutorial aspose email java?**  
+A: Tentu – langkah-langkah yang ditunjukkan di sini merupakan bagian inti dari tutorial Aspose.Email Java mana pun yang membahas pembuatan kalender.
 
 ## Sumber Daya
-- [Aspose.Email for Java Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email](https://releases.aspose.com/email/java/)
-- [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial Version](https://releases.aspose.com/email/java/)
-- [Request Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+- [Dokumentasi Aspose.Email untuk Java](https://reference.aspose.com/email/java/)
+- [Unduh Aspose.Email](https://releases.aspose.com/email/java/)
+- [Beli Lisensi](https://purchase.aspose.com/buy)
+- [Versi Free Trial](https://releases.aspose.com/email/java/)
+- [Minta Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
+- [Forum Dukungan Aspose](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-20  
+**Terakhir Diperbarui:** 2026-03-20  
 **Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16)  
 **Penulis:** Aspose
 

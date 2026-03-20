@@ -1,12 +1,12 @@
 ---
-date: '2025-12-20'
-description: Naučte se, jak vytvořit MAPI kalendář v Javě, spravovat denní opakovací
-  vzory a zpracovávat výjimky pomocí Aspose.Email pro Javu.
+date: '2026-03-20'
+description: Naučte se, jak vytvořit kalendář Outlook v Javě s denním opakováním a
+  výjimkami a uložit kalendář do souboru PST pomocí Aspose.Email pro Javu.
 keywords:
 - MAPI Calendar creation
 - daily recurrence events
 - Java calendar exceptions
-title: Vytvořte MAPI kalendář v Javě s denním opakováním a výjimkami
+title: Vytvořte Outlook kalendář v Javě s denním opakováním a výjimkami
 url: /cs/java/calendar-appointments/create-mapi-calendar-daily-recurrence-aspose-email-java/
 weight: 1
 ---
@@ -16,29 +16,29 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Jak vytvořit MAPI kalendář v Javě s denní opakováním a výjimkami
+# Jak vytvořit Outlook calendar Java s denní opakovatelností a výjimkami
 
-Efektivní správa opakujících se událostí může být náročná, zejména když jsou potřeba výjimky nebo změny. V tomto tutoriálu **vytvoříte mapi calendar java** objekty, nastavíte denní vzory opakování a přidáte výjimky pomocí Aspose.Email pro Java. Naučíte se, jak automatizovat plánovací úkoly plynule ve svých aplikacích.
+Správa opakujících se událostí efektivně může být náročná, zejména když potřebujete **outlook calendar java**, který podporuje denní opakovací vzory a občasné výjimky. V tomto tutoriálu se naučíte, jak vytvořit Outlook calendar Java objekty, nakonfigurovat denní opakování, přidat výjimky a nakonec **save calendar to PST** pomocí Aspose.Email pro Java. Na konci budete mít znovupoužitelný úryvek kódu, který můžete vložit do libovolné služby plánování založené na Javě.
 
 ## Rychlé odpovědi
-- **Která knihovna?** Aspose.Email pro Java  
-- **Hlavní úkol?** Vytvořit MAPI kalendář s denním opakováním a výjimkami  
-- **Požadovaný JDK?** Java 16 nebo vyšší  
-- **Mohu k výjimkám připojit soubory?** Ano, pomocí `MapiCalendarExceptionInfo`  
-- **Kde je kalendář uložen?** V souboru PST přes `PersonalStorage`
+- **Která knihovna?** Aspose.Email for Java  
+- **Hlavní úkol?** Create an Outlook calendar Java with daily recurrence and exceptions  
+- **Požadovaný JDK?** Java 16 or higher  
+- **Mohu k výjimkám připojit soubory?** Yes, using `MapiCalendarExceptionInfo`  
+- **Kde je kalendář uložen?** In a PST file via `PersonalStorage`
 
-### Co je MAPI kalendář?
-MAPI (Messaging Application Programming Interface) kalendář je standardní formát používaný Microsoft Outlook a dalšími e‑mailovými klienty k ukládání údajů o schůzkách. Podporuje bohatá pravidla opakování, výjimky a přílohy, což jej činí ideálním pro firemní plánování.
+## Co je Outlook calendar java?
+Objekt Outlook calendar Java (implementovaný jako MAPI kalendář) dodržuje stejné standardy jako schůzky Microsoft Outlook. Uchovává bohatá pravidla opakování, zpracování výjimek, účastníky a přílohy, což z něj činí ideální řešení pro podnikové plánování.
 
-### Proč použít Aspose.Email pro Java?
-Aspose.Email poskytuje čisté Java API, které vám umožní vytvářet, upravovat a ukládat MAPI objekty bez nutnosti Outlooku. To znamená, že můžete budovat server‑side plánovací funkce, generovat PST soubory a programově řešit složité scénáře opakování.
+## Proč používat Aspose.Email pro Java?
+Aspose.Email poskytuje čisté Java API, které vám umožňuje pracovat s MAPI objekty, aniž byste potřebovali nainstalovaný Outlook. Tento **aspose email tutorial java** přístup umožňuje generování PST souborů na straně serveru, automatizované série schůzek a plnou kontrolu nad logikou opakování.
 
 ## Požadavky
 
-Než začneme, ujistěte se, že máte následující nastavení:
-- **Aspose.Email knihovna**: Verze 25.4 (nebo novější) – dostupná přes Maven nebo přímé stažení.  
+Before we begin, ensure you have the following setup:
+- **Aspose.Email Library**: Verze 25.4 (nebo novější) – dostupná přes Maven nebo přímé stažení.  
 - **Java Development Kit (JDK)**: JDK 16 nebo novější.  
-- **IDE**: IntelliJ IDEA, Eclipse, NetBeans nebo jakýkoli jiný Java‑kompatibilní editor.
+- **IDE**: IntelliJ IDEA, Eclipse, NetBeans nebo jakýkoli editor kompatibilní s Javou.
 
 ### Požadované knihovny a závislosti
 
@@ -55,19 +55,19 @@ Pro integraci Aspose.Email do vašeho projektu pomocí Maven přidejte následuj
 
 ### Získání licence
 
-Pro používání Aspose.Email budete potřebovat licenci:
-- **Bezplatná zkušební verze** – prozkoumejte všechny funkce bez nákladů.  
-- **Dočasná licence** – požádejte o prodloužené hodnocení.  
-- **Plná licence** – zakupte pro produkční nasazení.
+To use Aspose.Email, you'll need a license:
+- **Free Trial** – vyzkoušejte všechny funkce zdarma.  
+- **Temporary License** – požádejte o prodloužené hodnocení.  
+- **Full License** – zakupte pro produkční nasazení.
 
 ## Nastavení Aspose.Email pro Java
 
-Nejprve nastavte své prostředí:
+First, set up your environment:
 
-1. Ověřte, že je nainstalován JDK 16 a že je nastaveno `JAVA_HOME`.  
+1. Ověřte, že je nainstalován JDK 16 a že je nastaven `JAVA_HOME`.  
 2. Přidejte Maven závislost (nebo stáhněte JAR) do svého projektu.  
 
-Zde je malý úryvek, který ukazuje, jak načíst licenční soubor:
+Zde je malý úryvek, který ukazuje, jak načíst soubor licence:
 
 ```java
 import com.aspose.email.*;
@@ -87,28 +87,28 @@ public class InitializeAspose {
 
 ## Průvodce implementací
 
-### Vytvoření MAPI kalendáře s denním opakováním a výjimkami
+### Vytvoření Outlook calendar Java s denním opakováním a výjimkami
 
 #### Přehled
-Tato funkce vám umožní automatizovat opakující se schůzky a zároveň mít možnost přeskočit nebo upravit konkrétní instance.
+Tato funkce vám umožní automatizovat opakující se schůzky a zároveň přeskočit nebo upravit konkrétní instance.
 
 #### Krok‑za‑krokem implementace
 
-**1. Nastavte datum zahájení události**  
-Určete, kdy má série začít:
+**1. Nastavení počátečního data události**  
+Určete, kdy by měla série začít:
 
 ```java
 Date startDate = addHours(newDate(2018, 7, 19), 12);
 ```
 
-**2. Vytvořte objekt MAPI kalendáře**  
+**2. Vytvoření MAPI kalendářového objektu**  
 Zadejte místo, předmět a popis:
 
 ```java
 MapiCalendar calendar = new MapiCalendar("location1", "summary1", "description1", startDate, addHours(startDate, 1));
 ```
 
-**3. Definujte denní vzor opakování**  
+**3. Definování denního opakovacího vzoru**  
 Nastavte událost tak, aby se opakovala každý den:
 
 ```java
@@ -121,7 +121,7 @@ pattern.setPeriod(1); // Daily
 pattern.setEndType(MapiCalendarRecurrenceEndType.NeverEnd);
 ```
 
-**4. Přidejte výjimku do opakování**  
+**4. Přidání výjimky k opakování**  
 Zadejte datum, které má být vyloučeno (nebo změněno):
 
 ```java
@@ -146,21 +146,21 @@ calendar.setRecurrence(recurrence);
 ### Připojování souborů k výjimkám kalendáře
 
 #### Přehled
-K libovolné výjimce můžete připojit podpůrné dokumenty (např. programy).
+Můžete připojit podpůrné dokumenty (např. agendy) k libovolné výjimkové instanci.
 
-**1. Vytvořte a připojte soubor**
+**1. Vytvoření a připojení souboru**
 
 ```java
 MapiCalendarExceptionInfo exception = new MapiCalendarExceptionInfo();
 exception.getAttachments().add("file.txt", "hello, world!".getBytes());
 ```
 
-### Ukládání MAPI kalendáře do PST souborů
+### Ukládání Outlook calendar Java do PST (save calendar to pst)
 
 #### Přehled
-Uložte kalendář do PST souboru, aby jej Outlook nebo jiní klienti mohli číst.
+Uložte kalendář do PST souboru, aby jej mohl číst Outlook nebo jiní klienti.
 
-**1. Vytvořte a uložte kalendář do PST**
+**1. Vytvoření a uložení kalendáře do PST**
 
 ```java
 final PersonalStorage pst = PersonalStorage.create(new ByteArrayOutputStream(), FileFormatVersion.Unicode);
@@ -173,55 +173,58 @@ try {
 ```
 
 ## Praktické aplikace
-- **Firemní plánování** – automatizujte sérii schůzek, automaticky přeskočte svátky.  
-- **Projektové řízení** – sledujte opakující se milníky s občasnými posuny termínů.  
-- **Organizace akcí** – spravujte vícedenní konference, kde jsou některé relace zrušeny nebo přeplánovány.
+- **Corporate Scheduling** – automatizujte série schůzek, automaticky přeskočte svátky.  
+- **Project Management** – sledujte opakující se milníky s občasnými posuny termínů.  
+- **Event Planning** – spravujte vícedenní konference, kde jsou některé relace zrušeny nebo přeplánovány.
 
 ### Možnosti integrace
-Propojte Aspose.Email s CRM platformami, API pro správu úkolů nebo vlastními workflow enginy a dosáhněte end‑to‑end automatizace.
+Kombinujte Aspose.Email s CRM platformami, API pro správu úkolů nebo vlastními workflow enginy pro kompletní automatizaci.
 
 ## Úvahy o výkonu
-- **Uvolňování prostředků** – vždy zavolejte `dispose()` na `PersonalStorage`, aby se uvolnily souborové handly.  
-- **Použití streamů** – upřednostňujte `ByteArrayOutputStream` nebo souborové streamy, abyste se vyhnuli načítání celých PST souborů do paměti.  
-- **Asynchronní operace** – při hromadném generování kalendářů spusťte logiku tvorby na pozadí, aby UI zůstalo responzivní.
+- **Dispose Resources** – vždy zavolejte `dispose()` na `PersonalStorage`, aby se uvolnily souborové handly.  
+- **Stream Usage** – upřednostněte `ByteArrayOutputStream` nebo souborové proudy, aby se nepřetěžovalo načítání celých PST do paměti.  
+- **Async Operations** – při hromadném generování kalendářů spusťte logiku tvorby na pozadí, aby UI zůstalo responzivní.
 
 ## Závěr
-Po přečtení tohoto průvodce nyní umíte **vytvořit mapi calendar java** objekty s denním opakováním, přidat výjimky, připojit soubory a uložit vše do PST souboru. Tyto možnosti vám umožní budovat robustní plánovací funkce, aniž byste se museli přímo dotýkat Outlooku.
+Po přečtení tohoto průvodce nyní víte, jak **create outlook calendar java** objekty s denním opakováním, přidávat výjimky, připojovat soubory a **save calendar to PST**. Tyto možnosti vám umožní vytvořit robustní funkce plánování, aniž byste se museli přímo dotýkat Outlooku.
 
 ### Další kroky
-- Vyzkoušejte týdenní nebo měsíční vzory opakování.  
+- Experimentujte s týdenními nebo měsíčními opakovacími vzory.  
 - Prozkoumejte další MAPI vlastnosti, jako jsou účastníci, připomenutí a kategorie.  
 - Prohlédněte si komplexní API dokumentaci Aspose.Email pro pokročilejší scénáře.
 
-## Často kladené otázky (FAQ)
+## Často kladené otázky
 
 **Q: Podporuje knihovna schůzky s časovým pásmem?**  
 A: Ano, můžete nastavit vlastnosti `StartTimeZone` a `EndTimeZone` na `MapiCalendar`.
 
-**Q: Mohu programově smazat jedinou instanci z opakující se série?**  
-A: Použijte kolekci `DeletedInstanceDates` ve vzoru opakování k označení konkrétních dat jako odstraněných.
+**Q: Mohu programově smazat jednu instanci z opakující se série?**  
+A: Použijte kolekci `DeletedInstanceDates` v opakovacím vzoru k označení konkrétních dat jako odstraněných.
 
 **Q: Existují limity velikosti PST souboru vytvořeného pomocí Aspose.Email?**  
-A: PST soubory dodržují limity Unicode formátu (až 2 GB ve výchozím nastavení), ale můžete konfigurovat větší velikosti pomocí nastavení `PersonalStorage`.
+A: PST soubory dodržují limity Unicode formátu (standardně až 2 GB), ale můžete nastavit větší velikosti pomocí nastavení `PersonalStorage`.
 
 **Q: Jak přidám účastníky do žádosti o schůzku?**  
 A: Vytvořte objekty `MapiRecipient`, nastavte jejich `RecipientType` na `MapiRecipientType.MAPI_TO` a přidejte je do kolekce `Recipients` objektu `MapiMessage`.
 
-**Q: Existuje podpora pro opakující se úkoly (ne jen schůzky)?**  
-A: Ano, Aspose.Email také poskytuje `MapiTask` s podobnými schopnostmi opakování.
+**Q: Existuje podpora pro opakující se úkoly (nejen schůzky)?**  
+A: Ano, Aspose.Email také poskytuje `MapiTask` s podobnými možnostmi opakování.
+
+**Q: Mohu tento průvodce použít jako součást série aspose email tutorial java?**  
+A: Rozhodně – kroky zde uvedené jsou základní součástí jakéhokoli Aspose.Email Java tutoriálu, který se zabývá tvorbou kalendáře.
 
 ## Zdroje
-- [Aspose.Email for Java Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email](https://releases.aspose.com/email/java/)
-- [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial Version](https://releases.aspose.com/email/java/)
-- [Request Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+- [Dokumentace Aspose.Email pro Java](https://reference.aspose.com/email/java/)
+- [Stáhnout Aspose.Email](https://releases.aspose.com/email/java/)
+- [Zakoupit licenci](https://purchase.aspose.com/buy)
+- [Verze zdarma](https://releases.aspose.com/email/java/)
+- [Požádat o dočasnou licenci](https://purchase.aspose.com/temporary-license/)
+- [Fórum podpory Aspose](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Poslední aktualizace:** 2025-12-20  
-**Testováno s:** Aspose.Email pro Java 25.4 (JDK 16)  
+**Poslední aktualizace:** 2026-03-20  
+**Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
 **Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
