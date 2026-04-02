@@ -1,11 +1,16 @@
 ---
-date: 2026-01-11
-description: Aspose.Email for Java ile özel e-posta başlığı eklemeyi ve e-posta meta
-  verilerini zenginleştirmeyi öğrenin. Bu kılavuzu kullanarak x‑custom‑header ekleyin
-  ve başlıklarla e-postayı verimli bir şekilde izleyin.
-linktitle: Add Custom Email Header – Enrich Email Metadata with Aspose.Email
+date: 2026-04-02
+description: Aspose.Email for Java ile başlık eklemeyi ve e-posta meta verilerini
+  zenginleştirmeyi öğrenin. Bu kılavuz, özel e-posta başlığı eklemeyi ve başlıklarla
+  e-postayı verimli bir şekilde izlemeyi gösterir.
+keywords:
+- how to add header
+- add custom email header
+- set custom email header
+- track email with headers
+linktitle: Başlık Nasıl Eklenir – Aspose.Email ile E-posta Metaverisini Zenginleştirme
 second_title: Aspose.Email Java Email Management API
-title: Özel E-posta Başlığı Ekle – Aspose.Email ile E-posta Metaverisini Zenginleştir
+title: Başlık Nasıl Eklenir – Aspose.Email ile E-posta Metaverisini Zenginleştirin
 url: /tr/java/customizing-email-headers/enriching-email-metadata-through-headers/
 weight: 18
 ---
@@ -16,110 +21,108 @@ weight: 18
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email ile Üst Bilgiler Kullanarak E-posta Metaverisini Zenginleştirme
+# Aspose.Email ile Başlıklar Kullanarak E-posta Metaverisini Zenginleştirme
 
-## Aspose.Email ile Üst Bilgiler Kullanarak E-posta Metaverisini Zenginleştirmeye Giriş
+## Aspose.Email ile Başlıklar Kullanarak E-posta Metaverisini Zenginleştirmeye Giriş
 
-E-posta iletişimi, modern iş ve kişisel etkileşimlerin ayrılmaz bir parçasıdır. E-posta gönderip aldığımızda genellikle mesajın içeriğine odaklanırız. Ancak, sahnenin arkasında her e-postaya eşlik eden, e-posta üst bilgileri olarak adlandırılan çok sayıda bilgi bulunur. Bu üst bilgiler, gönderen bilgileri, zaman damgaları ve yönlendirme detayları gibi kritik ayrıntıları içerir. Bu makalede, Aspose.Email for Java kullanarak **özel e-posta üst bilgisi ekleme** konusunu inceleyecek ve üst bilgileri zenginleştirmenin *üst bilgilerle e-posta takibi* yapmayı nasıl daha etkili hale getirdiğini göreceksiniz.
+Bu rehberde, Aspose.Email for Java kullanarak mesajlarınıza **başlık eklemeyi** öğrenecek ve bu sayede e-posta metaverisini zenginleştirip *başlıklarla e-postayı izlemeyi* daha verimli hale getireceksiniz. E-posta iletişimi, modern iş ve kişisel etkileşimlerin ayrılmaz bir parçasıdır. Genellikle mesaj gövdesine odaklansak da, gizli metaveri—gönderen bilgileri, zaman damgaları, yönlendirme bilgileri—otomasyon, analiz ve uyumlulukta kritik bir rol oynar. **Özel bir e-posta başlığı** ekleyerek, e-posta içeriğine dokunmadan değerli bağlamı gömebilirsiniz.
 
 ## Hızlı Yanıtlar
-- **E-posta metaverisini zenginleştirmenin temel yolu nedir?** Aspose.Email ile özel üst bilgiler ekleyerek.  
-- **Özel veri için yaygın olarak kullanılan üst bilgi hangisidir?** `X-Custom-Header` (veya `X-` ile başlayan herhangi bir ad).  
-- **Örnek kodu çalıştırmak için lisansa ihtiyacım var mı?** Test için ücretsiz deneme sürümü yeterlidir; üretim için ticari lisans gereklidir.  
+- **E-posta metaverisini zenginleştirmenin temel yolu nedir?** Aspose.Email ile özel başlıklar ekleyerek.  
+- **Özel veri için yaygın olarak kullanılan başlık hangisidir?** `X-Custom-Header` (veya `X-` önekli herhangi bir ad).  
+- **Örnek kodu çalıştırmak için bir lisansa ihtiyacım var mı?** Test için ücretsiz deneme yeterlidir; üretim için ticari lisans gereklidir.  
 - **Aspose.Email kaydetme işlemi için hangi formatı kullanır?** Başka bir format seçmediğiniz sürece orijinal `.eml` formatını korur.  
-- **Birden fazla özel üst bilgi ekleyebilir miyim?** Evet, ihtiyacınız olan her üst bilgi için `message.getHeaders().add()` çağırabilirsiniz.
+- **Birden fazla özel başlık ekleyebilir miyim?** Evet, ihtiyacınız olan her başlık için `message.getHeaders().add()` metodunu çağırın.
 
-## “özel e-posta üst bilgisi ekleme” nedir?
-Özel e-posta üst bilgisi, e-postanın üst bilgi bölümüne eklenen, kullanıcı tarafından tanımlanan bir anahtar‑değer çiftidir. İşlem kimlikleri, kampanya etiketleri veya güvenlik tokenları gibi ekstra bağlamı mesaj gövdesini değiştirmeden gömebilmenizi sağlar. E-posta istemcileri ve sunucuları bu üst bilgileri standart üst bilgiler gibi işler; bu da onları izleme ve entegrasyon senaryoları için ideal kılar.
+## Aspose.Email ile başlık ekleme
 
-## Aspose.Email ile özel e-posta üst bilgisi eklemek neden önemlidir?
-Özel üst bilgilerle e-posta metaverisini zenginleştirerek şunları elde edersiniz:
-
-- **Özelleştirme:** Uygulamaya özgü verileri (ör. sipariş numaraları) doğrudan e-postada saklayın.  
-- **İzleme:** `X-Custom-Header` kullanarak *üst bilgilerle e-posta takibi* yapın.  
-- **Entegrasyon:** Metaveriyi gövdeyi ayrıştırmadan CRM’lere, analiz platformlarına veya günlük hizmetlerine aktarın.  
-- **Uyumluluk:** Mail geçitleri tarafından incelenebilecek denetim‑ile ilgili bilgileri ekleyin.
-
-## Aspose.Email for Java Kurulumu
-
-Başlamadan önce Aspose.Email for Java’yı kurmanız gerekir. Kütüphaneyi [buradan](https://releases.aspose.com/email/java/) indirebilir ve ayrıntılı kurulum talimatları için [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) adresindeki belgeleri inceleyebilirsiniz.
-
-## Aspose.Email ile özel e-posta üst bilgisi ekleme
-
-Aşağıda, kütüphaneyi içe aktarma, bir mesaj yükleme, özel bir üst bilgi ekleme ve zenginleştirilmiş e-postayı kaydetme adımlarını gösteren adım‑adım bir rehber bulacaksınız.
+Aşağıda, **özel e-posta başlığı** eklemeyi, değerini ayarlamayı ve zenginleştirilmiş mesajı kaydetmeyi gösteren adım adım bir rehber bulacaksınız.
 
 ### Adım 1: Aspose.Email Kütüphanesini İçe Aktarın
 
-İlk olarak Aspose.Email kütüphanesini Java projenize dahil etmeniz gerekir. Kütüphaneyi indirdiğinizden ve projenizin bağımlılıklarına eklediğinizden emin olun.
+İlk olarak, Aspose.Email kütüphanesini Java projenize içe aktarın. JAR dosyasının derleme yolunuza eklendiğinden emin olun.
 
 ```java
 import com.aspose.email.*;
 ```
 
-### Adım 2: Bir E-posta Mesajını Yükleyin
+### Adım 2: Bir E-posta Mesajı Yükleyin
 
-E-posta mesajı ile çalışabilmek için önce mesajı yüklemeniz gerekir. Mesajı bir dosyadan yükleyebilir veya sıfırdan yeni bir mesaj oluşturabilirsiniz.
+Mevcut bir `.eml` dosyasını yükleyebilir veya yeni bir `MailMessage` örneği oluşturabilirsiniz. Burada bir dosyayı diskte yüklüyoruz.
 
 ```java
 // Load an email message from a file
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 
-### Adım 3: Özel Bir Üst Bilgi Ekleyin (add x-custom-header)
+### Adım 3: Özel Bir Başlık Ekle (veya Ayarla)
 
-Şimdi, e-posta metaverisini zenginleştirerek özel bir üst bilgi ekleyelim. Bu örnekte yaygın olarak kabul gören `X-Custom-Header` adını kullandık, ancak senaryonuza uygun herhangi bir `X-` ön ekli anahtarı seçebilirsiniz.
+Şimdi **özel e-posta başlığı** ekliyoruz. Daha sonra **özel e-posta başlığı** değerlerini ayarlamanız gerekirse, sadece `add` metodunu tekrar çağırın veya mevcut girişi değiştirin.
 
 ```java
 // Adding a custom header
 message.getHeaders().add("X-Custom-Header", "Custom Value");
 ```
 
-> **İpucu:** İzleme için benzersiz bir tanımlayıcı gerektiğinde değer olarak GUID veya zaman damgası kullanın.
+> **Pro tip:** Başlık değeri olarak bir GUID, işlem kimliği veya zaman damgası kullanın; bu, *başlıklarla e-postayı izlemek* için benzersiz bir tanımlayıcı gerektiğinde işe yarar.
 
 ### Adım 4: Değiştirilmiş E-postayı Kaydedin
 
-Özel üst bilgiyi ekledikten sonra e-postayı diske (veya başka bir hizmete akış olarak) kaydedin. Orijinal yapı bozulmaz, yeni üst bilgi sorunsuz bir şekilde bütünleşir.
+Metaveriyi zenginleştirdikten sonra mesajı kaydedin. Orijinal yapı bozulmaz ve yeni başlık sorunsuz bir şekilde bütünleşir.
 
 ```java
 // Save the modified email
 message.save("path/to/modified/email.eml");
 ```
 
-Tebrikler! Aspose.Email for Java kullanarak **özel e-posta üst bilgisi ekleme** işlemini başarıyla tamamladınız ve e-posta metaverisini zenginleştirdiniz.
+Tebrikler! Aspose.Email for Java kullanarak **özel e-posta başlığı eklemeyi** başarıyla gerçekleştirdiniz ve e-posta metaverisini zenginleştirdiniz.
 
-## Yaygın Hatalar & Sorun Giderme
+## Yaygın Tuzaklar ve Sorun Giderme
 
 | Sorun | Neden | Çözüm |
 |-------|-------|----------|
-| Üst bilgi kaydetme sonrasında görünmüyor | `MailMessage` nesnesi yalnızca‑okunur modda `message.getHeaders().add()` kullanılması | Mesajın düzenlenebilir modda yüklendiğinden emin olun (varsayılan `load` bunu yapar). |
-| Çift üst bilgiler | Aynı üst bilgiyi istemeden birden fazla kez eklemek | Eklemeye çalışmadan önce `message.getHeaders().containsKey("X-Custom-Header")` ile varlığını kontrol edin. |
-| Kodlama sorunları | Üst bilgi değerinde ASCII dışı karakterler | Değeri eklemeden önce `MimeUtility.encodeText()` ile kodlayın. |
+| Kaydetme sonrası başlık görünmüyor | `MailMessage` nesnesi yalnızca‑okunur iken `message.getHeaders().add()` kullanmak | Mesajın düzenlenebilir modda yüklendiğinden emin olun (varsayılan `load` bunu yapar). |
+| Yinelenen başlıklar | Aynı başlığı istemeden birden fazla kez eklemek | Eklemeye çalışmadan önce `message.getHeaders().containsKey("X-Custom-Header")` ile başlığın zaten var olup olmadığını kontrol edin. |
+| Kodlama sorunları | Başlık değerinde ASCII dışı karakterler | Eklemeye başlamadan önce değeri `MimeUtility.encodeText()` ile kodlayın. |
 
-## Sık Sorulan Sorular
+## Sıkça Sorulan Sorular
 
-**S: Özel bir üst bilgi için hangi veri türleri uygundur?**  
-C: Gövdeye konulmaması gereken her şey—işlem kimlikleri, kampanya kodları, güvenlik tokenları veya işleme bayrakları.
+**S: Özel bir başlık için hangi veri türleri uygundur?**  
+C: Gövdeye ait olmayan her şey—işlem kimlikleri, kampanya kodları, güvenlik tokenları veya işleme bayrakları.
 
-**S: Aynı e-postaya birden fazla özel üst bilgi ekleyebilir miyim?**  
-C: Evet, ihtiyacınız olan her üst bilgi için `message.getHeaders().add()` çağırabilirsiniz.
+**S: Aynı e-postaya birden fazla özel başlık ekleyebilir miyim?**  
+C: Evet, ihtiyacınız olan her başlık için `message.getHeaders().add()` metodunu çağırın.
 
-**S: Özel üst bilgiler e-posta teslimatını etkiler mi?**  
-C: Genel olarak hayır, standart adlandırma kurallarına (`X-` öneki) uyduğunuz ve üst bilgi boyutunu makul tutduğunuz sürece.
+**S: Özel başlık eklemek e-posta teslimatını etkiler mi?**  
+C: Genellikle hayır, standart adlandırma kurallarına (`X-` öneki) uyduğunuz ve başlık boyutunu makul tuttuğunuz sürece.
 
 **S: Aspose.Email aynı görev için diğer dilleri destekliyor mu?**  
-C: Kesinlikle. .NET, Python ve C++ için eşdeğer API’ler mevcuttur.
+C: Kesinlikle. .NET, Python ve C++ için eşdeğer API'ler mevcuttur.
 
-**S: Üst bilgi manipülasyonu ile ilgili daha fazla örnek nerede bulunur?**  
-C: Tüm üst bilgi‑ile ilgili metodların listesi için resmi dokümantasyonu [burada](https://reference.aspose.com/email/java/) inceleyin.
+**S: Başlık manipülasyonu ile ilgili daha fazla örnek nerede bulunabilir?**  
+C: Başlıkla ilgili tüm yöntemlerin tam listesini görmek için resmi dokümantasyona [burada](https://reference.aspose.com/email/java/) göz atın.
+
+## Aspose.Email for Java Kurulumu
+
+Başlamadan önce, Aspose.Email for Java'ı kurmanız gerekir. Kütüphaneyi [buradan](https://releases.aspose.com/email/java/) indirebilir ve ayrıntılı kurulum talimatları için dokümantasyona [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) bakabilirsiniz.
+
+## Neden E-posta Metaverisini Zenginleştirmelisiniz?
+
+Özel bir başlık eklemek size şunları sağlar:
+
+- **Özelleştirme:** Uygulamaya özgü verileri (ör. sipariş numaraları) doğrudan e-postada saklayın.  
+- **İzleme:** Sistemler arasında *başlıklarla e-postayı izlemek* için `X-Custom-Header` kullanın.  
+- **Entegrasyon:** Gövdeyi ayrıştırmadan metaveriyi CRM'lere, analiz platformlarına veya günlük hizmetlerine yönlendirin.  
+- **Uyumluluk:** Mail geçitleri tarafından incelenebilen denetimle ilgili bilgileri ekleyin.
 
 ## Sonuç
 
-Aspose.Email for Java ile **özel e-posta üst bilgisi ekleme** yöntemini öğrenerek e-posta metaverisini zenginleştirmenin, izlemeyi geliştirmenin ve iletişimi alt sistemlerle entegre etmenin güçlü yollarını keşfettiniz. Yukarıdaki adımlar sağlam bir temel sunar—iş ihtiyaçlarınıza uygun farklı üst bilgi adları ve değerleriyle denemeler yapın.
+Aspose.Email for Java ile **başlık eklemeyi** öğrenerek, e-posta metaverisini zenginleştirmenin, izlemeyi geliştirmenin ve iletişimi alt sistemlerle entegre etmenin güçlü yollarını açığa çıkarırsınız. Yukarıdaki adımlar sağlam bir temel sunar—iş ihtiyaçlarınıza uygun farklı başlık adları ve değerleriyle denemeler yapın.
 
 ---
 
-**Son Güncelleme:** 2026-01-11  
-**Test Edilen Sürüm:** Aspose.Email for Java 24.12  
+**Son Güncelleme:** 2026-04-02  
+**Test Edilen:** Aspose.Email for Java 24.12  
 **Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
