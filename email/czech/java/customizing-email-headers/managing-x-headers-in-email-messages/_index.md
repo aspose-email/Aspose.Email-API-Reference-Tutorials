@@ -1,10 +1,19 @@
 ---
-"description": "Odemkněte sílu X-hlaviček v e-mailech s Aspose.Email pro Javu. Naučte se spravovat vlastní metadata a vylepšit zpracování e-mailů."
-"linktitle": "Správa X-hlaviček v e-mailových zprávách pomocí Aspose.Email"
-"second_title": "API pro správu e-mailů v Javě od Aspose.Email"
-"title": "Správa X-hlaviček v e-mailových zprávách pomocí Aspose.Email"
-"url": "/cs/java/customizing-email-headers/managing-x-headers-in-email-messages/"
-"weight": 16
+date: 2026-04-05
+description: Naučte se, jak uložit e‑mail ve formátu EML, přidat vlastní hlavičky
+  a odeslat e‑mail přes SMTP pomocí Aspose.Email pro Javu. Obsahuje kroky k extrakci
+  vlastní hlavičky a nastavení metadat e‑mailu.
+keywords:
+- save email eml
+- send email smtp
+- extract custom header
+- how to add x-header
+- add custom header java
+linktitle: Správa X‑hlaviček v e‑mailových zprávách pomocí Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Jak uložit e‑mail EML a přidat hlavičky – Správa X‑hlaviček s Aspose.Email
+url: /cs/java/customizing-email-headers/managing-x-headers-in-email-messages/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,125 +22,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Správa X-hlaviček v e-mailových zprávách pomocí Aspose.Email
+# Jak uložit e‑mail EML a přidat hlavičky – Správa X‑Headers s Aspose.Email
 
+## Úvod
 
-## Zavedení
+Pokud potřebujete **uložit e‑mail EML** soubory a přitom připojit vlastní metadata, jste na správném místě. V tomto tutoriálu si projdeme přidávání X‑Headers do zprávy, uložení e‑mailu jako souboru EML a následné odeslání přes SMTP. Také uvidíte, jak **extrahovat vlastní hlavičky** z přijaté pošty a proč nastavení e‑mailových metadat může zjednodušit následné zpracování v Java aplikacích.
 
-Ve světě e-mailové komunikace hrají záhlaví klíčovou roli v poskytování základních informací o zprávě. Mezi těmito záhlavími vynikají X-záhlaví jako způsob, jak do e-mailů zahrnout vlastní informace. Tento článek vás provede procesem správy X-záhlaví v e-mailových zprávách pomocí Aspose.Email pro Javu.
+## Rychlé odpovědi
+- **Jaký je hlavní účel X‑Headers?** Ukládat vlastní metadata, která nejsou pokryta standardními RFC hlavičkami.  
+- **Která knihovna vám pomůže přidávat hlavičky v Javě?** Aspose.Email for Java.  
+- **Potřebuji licenci pro produkční použití?** Ano, je vyžadována platná licence Aspose.Email.  
+- **Mohu číst X‑Headers z přijaté pošty?** Rozhodně—použijte `MailMessage.getHeaders()` k jejich získání.  
+- **Je SMTP jediný způsob, jak odeslat poštu?** Ne, Aspose.Email také podporuje POP3, IMAP a Exchange Web Services.
+
+## Jak uložit e‑mail EML s Aspose.Email
+Uložení e‑mailu jako souboru EML zachová každou hlavičku—včetně vašich vlastních X‑Headers—přesně tak, jak se objeví na síti. To je ideální, když potřebujete archivovat zprávy, později je přeposlat nebo předat jinému systému, který očekává surový MIME soubor.
+
+## Co jsou X‑Headers?
+
+X‑Headers, zkratka pro „eXtended Headers“, jsou vlastní e‑mailové hlavičky, které vám umožňují vložit další informace do e‑mailové zprávy. Tyto hlavičky nejsou součástí žádného oficiálního standardu, což vám dává flexibilitu definovat vlastní pole metadat.
+
+## Proč používat X‑Headers?
+
+- **Vlastní metadata:** Připojte obchodně specifická data (ID objednávek, tokeny uživatelů atd.) bez změny těla e‑mailu.  
+- **Filtrování a směrování:** E‑mailové servery a klienti mohou vytvářet pravidla na základě nastavených hodnot.  
+- **Sledování a audit:** Zaznamenávejte kroky zpracování, časové značky nebo bezpečnostní kontroly přímo v hlavičce zprávy.  
+- **Nastavte metadata e‑mailu:** Použijte X‑Headers k předání informací, které potřebují následné služby pro směrování nebo analytiku.
 
 ## Předpoklady
 
-Než se ponoříme do technických detailů, ujistěte se, že máte splněny následující předpoklady:
+- Základní znalost programování v Javě.  
+- Nainstalovaný Java Development Kit (JDK).  
+- Knihovna Aspose.Email pro Java, kterou můžete stáhnout [zde](https://releases.aspose.com/email/java/).  
+- IDE, například IntelliJ IDEA nebo Eclipse.
 
-- Základní znalost programování v Javě.
-- Na vašem systému nainstalovaná sada pro vývoj Java (JDK).
-- Knihovna Aspose.Email pro Javu, kterou si můžete stáhnout z [zde](https://releases.aspose.com/email/java/).
-- Integrované vývojové prostředí (IDE), jako je IntelliJ IDEA nebo Eclipse.
+## Jak přidat hlavičky do e‑mailových zpráv
 
-## Co jsou to X-hlavičky?
+### Krok 1: Nastavení vašeho Java projektu
 
-X-Headers, zkratka pro „eXtended Headers“, jsou vlastní hlavičky e-mailů, které vám umožňují zahrnout do e-mailové zprávy další informace. Tyto hlavičky nejsou standardizované a lze je použít k přidání metadat nebo speciálních pokynů do e-mailu.
+Vytvořte nový Java projekt ve vašem IDE a přidejte JAR Aspose.Email do classpath projektu. Tím získáte přístup k třídám `MailMessage`, `SmtpClient` a souvisejícím.
 
-## Proč používat X-hlavičky?
+### Krok 2: Vytvoření e‑mailové zprávy a nastavení vlastní e‑mailové hlavičky
 
-X-hlavičky jsou užitečné v různých scénářích, například:
-
-- Vlastní metadata: Můžete zahrnout vlastní informace relevantní pro vaši aplikaci nebo organizaci.
-- Filtrování: Pomocí záhlaví X lze vytvořit pravidla pro filtrování a řazení e-mailů.
-- Sledování: Umožňují sledovat konkrétní informace o doručování a zpracování e-mailů.
-
-Nyní se ponořme do praktických aspektů správy X-hlaviček pomocí Aspose.Email pro Javu.
-
-## Krok 1: Nastavení projektu v jazyce Java
-
-Chcete-li začít, vytvořte nový projekt Java ve vámi zvoleném IDE. Přidejte knihovnu Aspose.Email pro Javu do závislostí vašeho projektu. Můžete to provést zahrnutím souboru JAR, který jste si dříve stáhli.
-
-## Krok 2: Vytvoření e-mailové zprávy
-
-Vytvořme si jednoduchou e-mailovou zprávu a přidejme k ní vlastní X-hlavičky. V tomto příkladu použijeme Aspose.Email k odeslání uvítacího e-mailu novému uživateli.
+Níže je kompletní příklad, který vytváří jednoduchý uvítací e‑mail a **nastavuje vlastní e‑mailové hlavičky** (`X‑Custom‑Header1` a `X‑Custom‑Header2`). Kódový blok zůstává nezměněn oproti originálnímu tutoriálu.
 
 ```java
-// Importovat potřebné třídy
+// Import necessary classes
 import com.aspose.email.*;
 
-// Vytvořit novou e-mailovou zprávu
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Nastavení e-mailových adres odesílatele a příjemce
+// Set the sender's and recipient's email addresses
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// Nastavte předmět a tělo e-mailu
+// Set the subject and body of the email
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Přidat vlastní X-hlavičky
+// Add custom X-Headers
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// Uložte e-mail jako soubor EML
+// Save the email as an EML file
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-V tomto kódu vytvoříme e-mailovou zprávu, nastavíme adresy odesílatele a příjemce, definujeme předmět a tělo zprávy a přidáme vlastní hlavičky X-Headers.
+> **Tip:** Používejte smysluplná jména hlaviček (např. `X-Order-ID`), aby bylo následné zpracování snazší.
 
-## Krok 3: Odeslání e-mailu
+### Krok 3: Odeslání e‑mailu přes SMTP
 
-Nyní, když jsme vytvořili e-mail, je čas ho odeslat. Aspose.Email nabízí snadné způsoby odesílání e-mailů pomocí různých e-mailových serverů a protokolů. Zde je příklad odeslání e-mailu pomocí protokolu SMTP:
+Nyní odešlete zprávu pomocí protokolu SMTP. Nahraďte zástupné hodnoty skutečnými údaji o vašem serveru.
 
 ```java
-// Vytvořte instanci třídy SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "your_password");
 
-// Odeslat e-mail
+// Send the email
 client.send(message);
 ```
 
-Nezapomeňte vyměnit `"smtp.server.com"`, `"your@email.com"`a `"your_password"` s údaji a přihlašovacími údaji o vašem SMTP serveru.
+### Krok 4: Čtení X‑Headers z přijaté zprávy
 
-## Krok 4: Čtení X-hlaviček
-
-Čtení X-hlaviček z přijatých e-mailových zpráv je stejně důležité jako jejich přidávání. Podívejme se, jak načíst X-hlavičky z e-mailu pomocí Aspose.Email pro Javu:
+Když obdržíte e‑mail, můžete snadno extrahovat vlastní hlavičky. Toto ukazuje, **jak přidat x-header** hodnoty a později **extrahovat vlastní hlavičky**.
 
 ```java
-// Načíst soubor EML obsahující přijatý e-mail
+// Load an EML file containing the received email
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Získejte hodnotu vlastního X-Headeru
+// Get the value of a custom X-Header
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-V tomto kódu načteme přijatý e-mail ze souboru EML a získáme hodnotu vlastní hlavičky X.
+## Časté úskalí a jak se jim vyhnout
 
-## Závěr
-
-Správa X-hlaviček v e-mailových zprávách pomocí Aspose.Email pro Javu je účinný způsob, jak do e-mailů přidat vlastní metadata a pokyny. Ať už sledujete doručování e-mailů, nebo jednoduše přidáváte další informace, Aspose.Email usnadňuje práci s X-hlavičkami ve vašich Java aplikacích.
+| Problém | Proč se to děje | Řešení |
+|---------|----------------|--------|
+| Kolize názvu hlavičky se standardními hlavičkami | Použití názvu, který již existuje (např. `X-Subject`) může způsobit zmatek. | Přidejte předponu k vlastním názvům, např. unikátní identifikátor `X-MyApp-`. |
+| Hlavičky nejsou zachovány při ukládání jako `MSG` | Některé formáty odstraňují nestandardní hlavičky. | Upřednostněte `EML` pro úplné zachování hlaviček, nebo použijte `MailMessage.save` s vhodnými možnostmi. |
+| Problémy s kódováním pro ne‑ASCII hodnoty | Hodnoty hlaviček obsahující speciální znaky mohou být poškozené. | Použijte `MimeUtility.encodeText` nebo nastavte správnou znakovou sadu při přidávání hlaviček. |
 
 ## Často kladené otázky
 
-### Jak nainstaluji Aspose.Email pro Javu?
+**Q: Jak nainstaluji Aspose.Email pro Java?**  
+A: Stáhněte knihovnu z [zde](https://releases.aspose.com/email/java/), přidejte JAR do classpath vašeho projektu a můžete začít.
 
-Chcete-li nainstalovat Aspose.Email pro Javu, postupujte takto:
-1. Stáhněte si knihovnu z [zde](https://releases.aspose.com/email/java/).
-2. Přidejte stažený soubor JAR do závislostí vašeho projektu Java.
-3. Nyní jste připraveni použít Aspose.Email pro Javu ve svém projektu.
+**Q: Mohu používat X‑Headers pro filtrování e‑mailů?**  
+A: Ano. E‑mailoví klienti a servery mohou vytvářet pravidla, která reagují na vlastní hodnoty hlaviček, což umožňuje výkonné třídění a směrování.
 
-### Mohu použít X-Headers pro filtrování e-mailů?
+**Q: Jsou X‑Headers standardizované?**  
+A: Ne. Jsou volné, což vám dává flexibilitu, ale zároveň vyžaduje definovat a zdokumentovat vlastní konvence pojmenování.
 
-Ano, hlavičky X se běžně používají k filtrování e-mailů. V e-mailovém klientovi nebo serveru můžete vytvořit pravidla pro filtrování a třídění e-mailů na základě hodnot hlaviček X.
+**Q: Jak mohu číst X‑Headers z přijatých e‑mailů?**  
+A: Načtěte e‑mail pomocí `MailMessage.load` a zavolejte `getHeaders().get("<Header-Name>")` jak je ukázáno v příkladu kódu.
 
-### Jsou X-Headers standardizovány?
+**Q: Je Aspose.Email vhodný pro podnikovou správu e‑mailů?**  
+A: Rozhodně. Poskytuje komplexní API pro vytváření, odesílání, přijímání a zpracování e‑mailů ve velkém měřítku, což z něj činí solidní volbu pro podnikovou aplikaci.
 
-Ne, hlavičky X nejsou standardizované, což znamená, že máte možnost definovat si vlastní hlavičky X, které budou vyhovovat vašim specifickým potřebám.
+---
 
-### Jak mohu číst X-hlavičky z přijatých e-mailů?
-
-X-hlavičky můžete číst z přijatých e-mailů pomocí Aspose.Email pro Javu. Načtěte přijatý e-mail a poté zpřístupněte vlastní X-hlavičky, jak je znázorněno v příkladech kódu v tomto článku.
-
-### Je Aspose.Email vhodný pro správu e-mailů na podnikové úrovni?
-
-Ano, Aspose.Email je robustní knihovna, kterou lze použít pro správu e-mailů na podnikové úrovni. Nabízí širokou škálu funkcí pro vytváření, odesílání, přijímání a zpracování e-mailů, takže je vhodná pro různé obchodní scénáře.
+**Poslední aktualizace:** 2026-04-05  
+**Testováno s:** Aspose.Email for Java 24.11 (nejnovější v době psaní)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

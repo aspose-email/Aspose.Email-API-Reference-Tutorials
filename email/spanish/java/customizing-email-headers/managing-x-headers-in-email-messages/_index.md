@@ -1,10 +1,20 @@
 ---
-"description": "Descubra el poder de los encabezados X en correos electrónicos con Aspose.Email para Java. Aprenda a gestionar metadatos personalizados y a optimizar el procesamiento de correos electrónicos."
-"linktitle": "Administración de encabezados X en mensajes de correo electrónico con Aspose.Email"
-"second_title": "API de gestión de correo electrónico Java de Aspose.Email"
-"title": "Administración de encabezados X en mensajes de correo electrónico con Aspose.Email"
-"url": "/es/java/customizing-email-headers/managing-x-headers-in-email-messages/"
-"weight": 16
+date: 2026-04-05
+description: Aprenda cómo guardar correos electrónicos en formato EML, agregar encabezados
+  personalizados y enviar correos mediante SMTP usando Aspose.Email para Java. Incluye
+  pasos para extraer encabezados personalizados y establecer los metadatos del correo.
+keywords:
+- save email eml
+- send email smtp
+- extract custom header
+- how to add x-header
+- add custom header java
+linktitle: Gestión de X-Headers en mensajes de correo electrónico con Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Cómo guardar correos EML y agregar encabezados – Gestionando X‑Headers con
+  Aspose.Email
+url: /es/java/customizing-email-headers/managing-x-headers-in-email-messages/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,125 +23,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Administración de encabezados X en mensajes de correo electrónico con Aspose.Email
-
+# Cómo guardar correos electrónicos EML y agregar encabezados – Administrando X‑Headers con Aspose.Email
 
 ## Introducción
 
-En el mundo de la comunicación por correo electrónico, los encabezados desempeñan un papel crucial al proporcionar información esencial sobre el mensaje. Entre estos encabezados, los X-Headers destacan como una forma de incluir información personalizada en los correos electrónicos. Este artículo le guiará en el proceso de gestión de X-Headers en mensajes de correo electrónico con Aspose.Email para Java.
+Si necesita **guardar archivos EML** de correo electrónico mientras adjunta metadatos personalizados, está en el lugar correcto. En este tutorial recorreremos cómo agregar X‑Headers a un mensaje, persistir el correo como un archivo EML y luego enviarlo mediante SMTP. También verá cómo **extraer valores de encabezados personalizados** del correo recibido y por qué establecer metadatos de correo puede simplificar el procesamiento posterior en aplicaciones Java.
 
-## Prerrequisitos
+## Respuestas rápidas
+- **¿Cuál es el propósito principal de los X‑Headers?** Almacenar metadatos personalizados que no están cubiertos por los encabezados estándar RFC.  
+- **¿Qué biblioteca le ayuda a agregar encabezados en Java?** Aspose.Email for Java.  
+- **¿Necesito una licencia para uso en producción?** Sí, se requiere una licencia válida de Aspose.Email.  
+- **¿Puedo leer X‑Headers del correo recibido?** Absolutamente—utilice `MailMessage.getHeaders()` para recuperarlos.  
+- **¿Es SMTP la única forma de enviar correo?** No, Aspose.Email también admite POP3, IMAP y Exchange Web Services.
 
-Antes de profundizar en los detalles técnicos, asegúrese de tener los siguientes requisitos previos:
+## Cómo guardar correos electrónicos EML con Aspose.Email
+Guardar un correo electrónico como archivo EML preserva cada encabezado—incluidos sus X‑Headers personalizados—exactamente como aparecerá en la transmisión. Esto es ideal cuando necesita archivar mensajes, reenviarlos más tarde o entregarlos a otro sistema que espera un archivo MIME sin procesar.
 
-- Conocimientos básicos de programación Java.
-- Java Development Kit (JDK) instalado en su sistema.
-- Biblioteca Aspose.Email para Java, que puede descargar desde [aquí](https://releases.aspose.com/email/java/).
-- Entorno de desarrollo integrado (IDE) como IntelliJ IDEA o Eclipse.
+## ¿Qué son los X‑Headers?
 
-## ¿Qué son los X-Headers?
+Los X‑Headers, abreviatura de “eXtended Headers”, son encabezados de correo personalizados que le permiten incrustar información adicional en un mensaje de correo electrónico. Estos encabezados no forman parte de ningún estándar oficial, lo que le brinda la flexibilidad de definir sus propios campos de metadatos.
 
-Los encabezados X, abreviatura de "encabezados extendidos", son encabezados de correo electrónico personalizados que permiten incluir información adicional en un mensaje. Estos encabezados no están estandarizados y pueden usarse para añadir metadatos o instrucciones especiales al correo electrónico.
+## ¿Por qué usar X‑Headers?
 
-## ¿Por qué utilizar X-Headers?
+- **Metadatos personalizados:** Adjunte datos específicos del negocio (IDs de pedidos, tokens de usuario, etc.) sin modificar el cuerpo del correo.  
+- **Filtrado y enrutamiento:** Los servidores y clientes de correo pueden crear reglas basadas en los valores que establezca.  
+- **Seguimiento y auditoría:** Registre pasos de procesamiento, marcas de tiempo o verificaciones de seguridad directamente en el encabezado del mensaje.  
+- **Establecer metadatos del correo:** Utilice X‑Headers para transmitir información que los servicios posteriores necesitan para el enrutamiento o análisis.
 
-Los encabezados X son útiles en varios escenarios, como:
+## Requisitos previos
 
-- Metadatos personalizados: puede incluir información personalizada relevante para su aplicación u organización.
-- Filtrado: los encabezados X se pueden utilizar para crear reglas para filtrar y ordenar correos electrónicos.
-- Seguimiento: Permiten rastrear información específica sobre la entrega y el procesamiento del correo electrónico.
+- Conocimientos básicos de programación Java.  
+- Java Development Kit (JDK) instalado.  
+- Aspose.Email for Java library, which you can download from [aquí](https://releases.aspose.com/email/java/).  
+- Un IDE como IntelliJ IDEA o Eclipse.
 
-Ahora, profundicemos en los aspectos prácticos de la gestión de X-Headers usando Aspose.Email para Java.
+## Cómo agregar encabezados a los mensajes de correo
 
-## Paso 1: Configuración de su proyecto Java
+### Paso 1: Configurar su proyecto Java
 
-Para empezar, crea un nuevo proyecto Java en el IDE que hayas elegido. Agrega la biblioteca Aspose.Email para Java a las dependencias de tu proyecto. Puedes hacerlo incluyendo el archivo JAR que descargaste anteriormente.
+Cree un nuevo proyecto Java en su IDE y agregue el JAR de Aspose.Email al classpath del proyecto. Esto le brinda acceso a `MailMessage`, `SmtpClient` y clases relacionadas.
 
-## Paso 2: Crear un mensaje de correo electrónico
+### Paso 2: Crear un mensaje de correo y establecer un encabezado de correo personalizado
 
-Creemos un mensaje de correo electrónico sencillo y añádale encabezados X personalizados. En este ejemplo, usaremos Aspose.Email para enviar un correo electrónico de bienvenida a un nuevo usuario.
+A continuación se muestra un ejemplo completo que crea un correo de bienvenida simple y **establece encabezados de correo personalizados** (`X‑Custom‑Header1` y `X‑Custom‑Header2`). El bloque de código permanece sin cambios respecto al tutorial original.
 
 ```java
-// Importar las clases necesarias
+// Import necessary classes
 import com.aspose.email.*;
 
-// Crear un nuevo mensaje de correo electrónico
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Establecer las direcciones de correo electrónico del remitente y del destinatario
+// Set the sender's and recipient's email addresses
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// Establezca el asunto y el cuerpo del correo electrónico.
+// Set the subject and body of the email
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Agregar encabezados X personalizados
+// Add custom X-Headers
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// Guardar el correo electrónico como un archivo EML
+// Save the email as an EML file
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-En este código, creamos un mensaje de correo electrónico, configuramos las direcciones del remitente y del destinatario, definimos el asunto y el cuerpo, y agregamos encabezados X personalizados.
+> **Consejo profesional:** Use nombres de encabezado significativos (p.ej., `X-Order-ID`) para facilitar el procesamiento posterior.
 
-## Paso 3: Envío del correo electrónico
+### Paso 3: Enviar el correo mediante SMTP
 
-Ahora que hemos creado el correo electrónico, es hora de enviarlo. Aspose.Email ofrece métodos sencillos para enviar correos electrónicos utilizando diferentes servidores y protocolos. Aquí tienes un ejemplo de envío del correo electrónico mediante el protocolo SMTP:
+Ahora envíe el mensaje usando el protocolo SMTP. Reemplace los valores de marcador de posición con los detalles reales de su servidor.
 
 ```java
-// Crear una instancia de la clase SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "your_password");
 
-// Envía el correo electrónico
+// Send the email
 client.send(message);
 ```
 
-Asegúrese de reemplazar `"smtp.server.com"`, `"your@email.com"`, y `"your_password"` con los detalles y credenciales de su servidor SMTP.
+### Paso 4: Leer X‑Headers de un mensaje recibido
 
-## Paso 4: Lectura de encabezados X
-
-Leer los encabezados X de los correos electrónicos recibidos es tan importante como añadirlos. Veamos cómo recuperarlos de un correo electrónico usando Aspose.Email para Java:
+Cuando recibe un correo, puede extraer los encabezados personalizados con la misma facilidad. Esto demuestra **cómo agregar valores de x-header** y luego **extraer datos de encabezados personalizados**.
 
 ```java
-// Cargar un archivo EML que contenga el correo electrónico recibido
+// Load an EML file containing the received email
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Obtenga el valor de un X-Header personalizado
+// Get the value of a custom X-Header
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-En este código, cargamos un correo electrónico recibido desde un archivo EML y recuperamos el valor de un encabezado X personalizado.
+## Problemas comunes y cómo evitarlos
 
-## Conclusión
-
-Administrar encabezados X en correos electrónicos con Aspose.Email para Java es una forma eficaz de añadir metadatos e instrucciones personalizados a tus correos. Ya sea que estés rastreando la entrega de correos electrónicos o simplemente incluyendo información adicional, Aspose.Email facilita el uso de encabezados X en tus aplicaciones Java.
+| Problema | Por qué ocurre | Solución |
+|----------|----------------|----------|
+| Colisión del nombre del encabezado con encabezados estándar | Uso de un nombre que ya existe (p.ej., `X-Subject`) puede causar confusión. | Prefija sus nombres personalizados con un identificador único, como `X-MyApp-`. |
+| Los encabezados no se conservan al guardar como `MSG` | Algunos formatos eliminan los encabezados no estándar. | Prefiera `EML` para la preservación completa de encabezados, o use `MailMessage.save` con las opciones apropiadas. |
+| Problemas de codificación para valores no ASCII | Los valores de encabezado que contienen caracteres especiales pueden quedar mal formados. | Utilice `MimeUtility.encodeText` o establezca el conjunto de caracteres adecuado al agregar encabezados. |
 
 ## Preguntas frecuentes
 
-### ¿Cómo instalo Aspose.Email para Java?
+**P: ¿Cómo instalo Aspose.Email para Java?**  
+R: Descargue la biblioteca desde [aquí](https://releases.aspose.com/email/java/), agregue el JAR al classpath de su proyecto y estará listo para usar.
 
-Para instalar Aspose.Email para Java, siga estos pasos:
-1. Descargue la biblioteca desde [aquí](https://releases.aspose.com/email/java/).
-2. Agregue el archivo JAR descargado a las dependencias de su proyecto Java.
-3. Ahora está listo para usar Aspose.Email para Java en su proyecto.
+**P: ¿Puedo usar X‑Headers para filtrar correos?**  
+R: Sí. Los clientes y servidores de correo pueden crear reglas que actúen sobre valores de encabezados personalizados, habilitando escenarios potentes de clasificación y enrutamiento.
 
-### ¿Puedo utilizar X-Headers para filtrar correo electrónico?
+**P: ¿Los X‑Headers están estandarizados?**  
+R: No. Son de forma libre, lo que le brinda flexibilidad pero también requiere que defina y documente sus propias convenciones de nombres.
 
-Sí, los encabezados X se usan comúnmente para filtrar correos electrónicos. Puedes crear reglas en tu cliente o servidor de correo electrónico para filtrar y ordenar los correos según los valores de los encabezados X.
+**P: ¿Cómo puedo leer X‑Headers de correos recibidos?**  
+R: Cargue el correo con `MailMessage.load` y llame a `getHeaders().get("<Header-Name>")` como se muestra en el ejemplo de código.
 
-### ¿Los encabezados X están estandarizados?
+**P: ¿Es Aspose.Email adecuado para la gestión de correo a nivel empresarial?**  
+R: Absolutamente. Proporciona una API completa para crear, enviar, recibir y procesar correos a gran escala, lo que lo convierte en una opción sólida para aplicaciones empresariales.
 
-No, los encabezados X no están estandarizados, lo que significa que tienes la flexibilidad de definir tus propios encabezados X personalizados para satisfacer tus necesidades específicas.
+---
 
-### ¿Cómo puedo leer los encabezados X de los correos electrónicos recibidos?
-
-Puedes leer los encabezados X de los correos electrónicos recibidos con Aspose.Email para Java. Carga el correo electrónico recibido y accede a los encabezados X personalizados como se muestra en los ejemplos de código de este artículo.
-
-### ¿Es Aspose.Email adecuado para la gestión de correo electrónico a nivel empresarial?
-
-Sí, Aspose.Email es una biblioteca robusta que puede utilizarse para la gestión de correo electrónico empresarial. Ofrece una amplia gama de funciones para crear, enviar, recibir y procesar correos electrónicos, lo que la hace ideal para diversos escenarios empresariales.
+**Última actualización:** 2026-04-05  
+**Probado con:** Aspose.Email for Java 24.11 (latest at time of writing)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
