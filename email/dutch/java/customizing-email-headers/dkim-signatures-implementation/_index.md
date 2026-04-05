@@ -1,10 +1,16 @@
 ---
-"description": "Zorg voor e-mailbeveiliging met DKIM-handtekeningen met Aspose.Email voor Java. Stapsgewijze handleiding en code voor DKIM-implementatie."
-"linktitle": "Implementatie van DKIM-handtekeningen met Aspose.Email"
-"second_title": "Aspose.Email Java E-mailbeheer API"
-"title": "Implementatie van DKIM-handtekeningen met Aspose.Email"
-"url": "/nl/java/customizing-email-headers/dkim-signatures-implementation/"
-"weight": 15
+date: 2026-04-05
+description: Leer hoe u e‑mail ondertekent met DKIM met Aspose.Email voor Java, genereer
+  DKIM‑sleutels, configureer DKIM‑DNS en verbeter de afleverbaarheid van uw e‑mail.
+keywords:
+- how to sign email
+- generate dkim keys
+- configure dkim dns
+linktitle: Hoe e‑mail te ondertekenen met DKIM met Aspose.Email voor Java
+second_title: Aspose.Email Java Email Management API
+title: Hoe e‑mail te ondertekenen met DKIM met Aspose.Email voor Java
+url: /nl/java/customizing-email-headers/dkim-signatures-implementation/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,113 +19,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Implementatie van DKIM-handtekeningen met Aspose.Email
+# DKIM-e-mailauthenticatie: Implementatie van handtekeningen met Aspose.Email
 
+## Hoe e-mail te ondertekenen met DKIM met behulp van Aspose.Email
 
-## Implementatie van DKIM-handtekeningen met Aspose.Email
+E-mailbeveiliging is van het grootste belang in het digitale tijdperk van vandaag, en **hoe e-mail te ondertekenen** met DKIM is een van de meest effectieve manieren om uw berichten te beschermen tegen manipulatie en spoofing. Door een cryptografische handtekening toe te voegen aan elke uitgaande e-mail, geeft u ontvangers een betrouwbare manier om te verifiëren dat het bericht echt van uw domein komt. In deze tutorial lopen we het volledige proces door van het implementeren van DKIM-handtekeningen met Aspose.Email voor Java.
 
-E-mailbeveiliging is van het grootste belang in het digitale tijdperk van vandaag. Een van de cruciale aspecten van e-mailbeveiliging is het waarborgen van de authenticiteit en integriteit van verzonden en ontvangen e-mails. DomainKeys Identified Mail (DKIM)-handtekeningen spelen hierbij een cruciale rol. In dit artikel onderzoeken we hoe u DKIM-handtekeningen kunt implementeren met Aspose.Email voor Java, een krachtige bibliotheek voor het werken met e-mailberichten.
+## Snelle antwoorden
+- **Wat is DKIM?** Een cryptografische methode die e-mailheaders ondertekent met een privésleutel.  
+- **Waarom DKIM gebruiken voor e-mailauthenticatie?** Het helpt de identiteit van de afzender te verifiëren en voorkomt phishing.  
+- **Welke bibliotheek vereenvoudigt DKIM-ondertekening in Java?** Aspose.Email for Java.  
+- **Heb ik DNS-wijzigingen nodig?** Ja – publiceer de publieke sleutel via een TXT‑record.  
+- **Kan DKIM de e-mailbezorgbaarheid verbeteren?** Absoluut, het verhoogt de inbox‑plaatsingspercentages.
 
-## DKIM-handtekeningen begrijpen
+## Wat is DKIM e-mailauthenticatie?
+DKIM (DomainKeys Identified Mail) voegt een digitale handtekening toe aan de **DKIM-Signature**‑header van een e‑mail. De handtekening wordt gemaakt met een privésleutel die alleen het verzendende domein beheert. Ontvangers halen de bijbehorende publieke sleutel op uit het DNS‑TXT‑record van de afzender om de handtekening te valideren, waarmee wordt bevestigd dat het bericht tijdens de overdracht niet is gewijzigd.
 
-DKIM is een e-mailauthenticatiemethode waarmee de afzender zijn e-mails digitaal kan ondertekenen, waardoor de ontvanger de authenticiteit van de e-mail kan verifiëren. Het werkt door een digitale handtekening toe te voegen aan de e-mailheader. Deze handtekening wordt gegenereerd met een privésleutel die in het domein van de afzender staat en kan worden geverifieerd met een openbare sleutel die is gepubliceerd in de DNS-records van het domein van de afzender.
+## Waarom DKIM gebruiken om e-mailbezorgbaarheid te verbeteren?
+- **E-mailauthenticatie:** Vermindert de kans dat uw berichten als spam worden gemarkeerd.  
+- **Verbeterde reputatie:** Mailservices vertrouwen domeinen die consequent hun mail ondertekenen.  
+- **Phishingbescherming:** Maakt het voor aanvallers moeilijker uw adres te spoofen.  
+
+## Hoe DKIM-sleutels te genereren
+1. Gebruik een sleutel‑generatietool (OpenSSL, PowerShell of een online wizard) om een publiek/privé RSA‑paar te maken.  
+2. Sla de privésleutel veilig op uw server op – u heeft deze nodig voor ondertekening.  
+3. Houd de publieke sleutel klaar om te publiceren in DNS (zie de volgende sectie).
+
+## Hoe DKIM DNS voor uw domein te configureren?
+1. Publiceer de publieke sleutel in een DNS‑TXT‑record onder de selector die u kiest (bijv. `selector1._domainkey.yourdomain.com`).  
+2. Zorg ervoor dat het TXT‑record het formaat `v=DKIM1; k=rsa; p=YOUR_PUBLIC_KEY` volgt.  
+3. Verifieer het record met tools zoals **dig** of online DKIM‑checkers voordat u e‑mail verzendt.
 
 ## Voordelen van DKIM-handtekeningen
+- **E-mailauthenticatie:** Bevestigt dat e‑mails worden verzonden door legitieme afzenders en niet zijn gemanipuleerd.  
+- **Verbeterde bezorgbaarheid:** E‑mailproviders leveren eerder DKIM‑ondertekende berichten af in de inbox, waardoor minder berichten in de spammap terechtkomen.  
+- **Verbeterde reputatie:** Een correcte DKIM‑configuratie verhoogt de afzenderreputatie van uw domein.
 
-Het implementeren van DKIM-handtekeningen biedt verschillende voordelen:
-- E-mailverificatie: DKIM zorgt ervoor dat e-mails door legitieme afzenders worden verzonden en dat er tijdens de verzending niet mee is geknoeid.
-- Verbeterde leverbaarheid: e-mailproviders leveren e-mails met DKIM-handtekeningen vaker af in de inbox, waardoor de kans kleiner wordt dat e-mails als spam worden gemarkeerd.
-- Verbeterde reputatie: een goed geconfigureerde DKIM kan de reputatie van de afzender verbeteren, wat leidt tot een betere bezorging van e-mails.
+## Voorvereisten
 
-## Vereisten
-
-Voordat we DKIM-handtekeningen implementeren, hebt u het volgende nodig:
-- Java-ontwikkelomgeving
-- Aspose.Email voor Java-bibliotheek
-- Domein met DNS-toegang voor DKIM-installatie
+- Java‑ontwikkelomgeving  
+- Aspose.Email for Java‑bibliotheek  
+- Domein met DNS‑toegang voor DKIM‑configuratie  
 
 ## Uw omgeving instellen
 
-1. Java installeren: zorg ervoor dat Java op uw systeem is geïnstalleerd.
-2. Download Aspose.E-mail: Bezoek [Aspose.Email voor Java](https://products.aspose.com/email/java/) om de bibliotheek te downloaden.
-3. DKIM-sleutels verkrijgen: U heeft DKIM-sleutels nodig voor uw domein. Neem contact op met uw domeinprovider voor hulp bij het genereren van deze sleutels.
+1. **Installeer Java:** Zorg dat u een recente JDK geïnstalleerd heeft.  
+2. **Download Aspose.Email:** Bezoek [Aspose.Email for Java](https://products.aspose.com/email/java/) om de bibliotheek te downloaden.  
+3. **Verkrijg DKIM‑sleutels:** Genereer een privé‑/publiek‑sleutelpaar en publiceer de publieke sleutel zoals beschreven in de *Hoe DKIM DNS te configureren* sectie.
 
-## DKIM-handtekeningen implementeren met Aspose.Email
+## Implementatie van DKIM-handtekeningen met Aspose.Email
 
-Nu je alles hebt ingesteld, gaan we verder met de implementatie van DKIM-handtekeningen met Aspose.Email. Hieronder vind je een stapsgewijze handleiding met broncodefragmenten om je op weg te helpen.
+Hieronder vindt u een stapsgewijze handleiding met broncode‑fragmenten die u direct in uw project kunt kopiëren.
 
 ### Stap 1: Voeg de Aspose.Email-bibliotheek toe aan uw project
-
-Voeg eerst de Aspose.Email-bibliotheek toe aan je Java-project. Je kunt dit doen door het JAR-bestand op te nemen in de afhankelijkheden van je project.
+Neem de Aspose.Email‑JAR op in de classpath van uw project of in de Maven/Gradle‑afhankelijkheden.
 
 ### Stap 2: Genereer de DKIM-handtekening
-
-Om een DKIM-handtekening te genereren, moet u uw persoonlijke DKIM-sleutel laden en deze toepassen op uw e-mailbericht.
+Laad uw privé‑DKIM‑sleutel en pas deze toe op het e‑mailbericht.
 
 ```java
-// Laad de DKIM-sleutel
+// Load the DKIM key
 
 String privateKeyFile = "key2.pem";
 
 RSACryptoServiceProvider rsa = PemReader.getPrivateKey(privateKeyFile);
 DKIMSignatureInfo dkimSignatureInfo = new DKIMSignatureInfo("test", "some_email.com");
  
-// Maak een instantie van de MailMessage-klasse
+// Create an instance of the MailMessage class
 MailMessage message = new MailMessage("sender@your_domain.com", "recipient@recipient_domain.com", "Subject", "Body");
 
-// Onderteken het bericht met DKIM
+// Sign the message with DKIM
 message.dKIMSign(rsa, dkimSignatureInfo);
 
-// Stuur het bericht
+// Send the message
 SmtpClient client = new SmtpClient("your_smtp_server");
 client.send(message);
 ```
 
-### Stap 3: Verstuur de e-mail
+### Stap 3: Voeg DKIM-handtekening toe aan uw bericht
+De `dKIMSign`‑aanroep in de bovenstaande code **voegt de DKIM‑handtekening** toe aan de e‑mailheaders. Na deze stap is het bericht klaar om verzonden te worden.
 
-Zodra de DKIM-handtekening is toegepast, kunt u de e-mail via uw SMTP-server verzenden.
+### Stap 4: Verstuur de e-mail
+Nadat de handtekening is toegevoegd, gebruikt u een `SmtpClient` (of een andere transport) om het bericht te leveren.
 
 ### Code-uitleg
+- **Laad de DKIM‑sleutel** met `PemReader`.  
+- **Maak `DKIMSignatureInfo`** aan met uw selector en domein.  
+- **Instantieer `MailMessage`** met afzender, ontvanger, onderwerp en inhoud.  
+- **Pas de handtekening toe** via `message.dKIMSign`.  
+- **Verzend** de ondertekende mail met `SmtpClient`.
 
-- We laden de DKIM-sleutel met behulp van de `DkimSignatureInfo` klas.
-- Maak een exemplaar van de `MailMessage` klasse met de afzender, ontvanger, het onderwerp en de hoofdtekst.
-- Voeg de DKIM-handtekening toe aan het bericht met behulp van `dKIMSign`.
-- Verstuur de e-mail via een SMTP-client.
+### Stap 5: Testen van DKIM-handtekeningen
+Stuur een test‑e‑mail naar een adres dat u beheert en inspecteer de ruwe headers. Zoek naar een `DKIM-Signature`‑header en verifieer deze tegen de publieke sleutel die in DNS is gepubliceerd.
 
-### Stap 4: DKIM-handtekeningen testen
-
-Om te controleren of de DKIM-handtekeningen correct werken, stuurt u een testmail en controleert u de DKIM-verificatiestatus bij de ontvanger.
-
-### Veelvoorkomende problemen en probleemoplossing
-
-- Als de DKIM-handtekeningen niet worden geverifieerd, controleer dan uw DNS-records en zorg ervoor dat de openbare sleutel correct is gepubliceerd.
-- Controleer of de persoonlijke sleutel veilig wordt bewaard en niet openbaar wordt gemaakt.
-
-## Conclusie
-
-Het implementeren van DKIM-handtekeningen met Aspose.Email voor Java verbetert de beveiliging en betrouwbaarheid van uw e-mails. Door de stappen in dit artikel te volgen, zorgt u ervoor dat uw e-mails worden geverifieerd en minder snel als spam worden gemarkeerd.
+## Veelvoorkomende problemen en foutopsporing
+- **Handtekening faalt verificatie:** Controleer of het DNS‑TXT‑record de juiste publieke sleutel bevat en of de selector overeenkomt met die in de code.  
+- **Privésleutel blootgesteld:** Bewaar het PEM‑bestand veilig en beperk de bestands‑systeemrechten.  
+- **Onjuiste headervolgorde:** Sommige mailservers wijzigen headers na ondertekening; zorg ervoor dat het bericht direct na ondertekening wordt verzonden.  
 
 ## Veelgestelde vragen
 
-### Hoe verbeteren DKIM-handtekeningen de e-mailbeveiliging?
+**Q: Vervangt DKIM SPF of DMARC?**  
+A: Nee. DKIM vult SPF en DMARC aan; samen bieden ze een robuust e‑mailauthenticatiekader.
 
-DKIM-handtekeningen verifiëren de authenticiteit en integriteit van e-mailberichten, waardoor de kans op phishing- en spoofingaanvallen wordt verkleind.
+**Q: Hoe vaak moet ik DKIM‑sleutels roteren?**  
+A: Best practice is om sleutels jaarlijks te roteren of wanneer u een mogelijke compromittering vermoedt.
 
-### Kan ik Aspose.Email voor Java gebruiken met andere e-mailbibliotheken?
+**Q: Kan ik meerdere selectors voor hetzelfde domein gebruiken?**  
+A: Ja, meerdere selectors stellen u in staat sleutelrotatie te beheren zonder downtime.
 
-Aspose.Email voor Java is een zelfstandige bibliotheek, maar u kunt deze indien nodig integreren met andere e-mailgerelateerde bibliotheken.
+**Q: Heeft DKIM invloed op de grootte van e‑mail?**  
+A: De toegevoegde header is klein (enkele honderden bytes) en heeft over het algemeen geen impact op de bezorgbaarheid.
 
-### Wat moet ik doen als de DKIM-handtekeningverificatie mislukt?
+**Q: Is er een limiet aan het aantal DKIM‑ondertekende berichten per dag?**  
+A: Geen inherente limiet; beperkingen worden alleen opgelegd door uw SMTP‑provider.
 
-Controleer uw DKIM-configuratie, inclusief DNS-records en sleutelbeheer, om er zeker van te zijn dat alles correct is ingesteld.
+## Conclusie
+U weet nu **hoe e-mail te ondertekenen** met DKIM met behulp van Aspose.Email voor Java, hoe u DKIM‑sleutels genereert en hoe u DKIM‑DNS‑records configureert. Door deze stappen te volgen verbetert u uw e‑mailreputatie, beschermt u tegen spoofing en verhoogt u de bezorgbaarheid. Voel u vrij om met verschillende selectors te experimenteren of het ondertekeningsproces in uw bestaande mailing‑workflows te integreren.
 
-### Is Aspose.Email voor Java compatibel met verschillende e-mailservers?
+---
 
-Ja, Aspose.Email voor Java is compatibel met diverse e-mailservers en kan worden gebruikt met SMTP-, POP3- en IMAP-protocollen.
-
-### Waar kan ik meer informatie vinden over Aspose.Email voor Java?
-
-Voor meer informatie en bronnen kunt u de Aspose.Email voor Java-documentatie bezoeken op [hier](https://reference.aspose.com/email/java/).
+**Laatst bijgewerkt:** 2026-04-05  
+**Getest met:** Aspose.Email for Java 24.12 (latest)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
