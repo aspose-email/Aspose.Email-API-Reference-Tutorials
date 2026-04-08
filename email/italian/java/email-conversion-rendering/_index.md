@@ -1,8 +1,14 @@
 ---
-date: 2026-01-14
-description: Scopri come convertire EML in MSG usando Aspose.Email per Java. Questa
-  guida passo‑passo copre la conversione di email con Aspose, la gestione degli allegati
-  e la conversione dell'email in HTML.
+date: 2026-04-08
+description: Scopri come convertire EML in MSG usando Aspose.Email per Java, salvare
+  l'email come MSG, estrarre gli allegati dell'email e renderizzare l'email in HTML
+  o PDF.
+keywords:
+- convert eml to msg
+- save email as msg
+- extract email attachments
+- save email as html
+- email to pdf conversion
 title: Converti EML in MSG con Aspose.Email per Java – Guida
 url: /it/java/email-conversion-rendering/
 weight: 15
@@ -13,59 +19,82 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Tutorial di conversione e rendering di email per Aspose.Email Java
+# Tutorial di Conversione e Rendering Email per Aspose.Email Java
 
-Se hai bisogno di **convertire EML in MSG** rapidamente e conservare ogni allegato, dettaglio di formattazione e metadati, sei nel posto giusto. In questa guida esamineremo gli scenari più comuni per la **conversione Aspose.Email**, spiegheremo perché gli sviluppatori scelgono questa libreria e ti mostreremo come renderizzare le email in HTML o MHTML quando necessario. Alla fine sarai in grado di integrare una conversione email affidabile in qualsiasi applicazione Java.
+Se hai bisogno di **convertire EML in MSG** rapidamente e mantenere ogni allegato, dettaglio di formattazione e metadati, sei nel posto giusto. In questa guida percorreremo gli scenari più comuni per la **conversione Aspose.Email**, spiegheremo perché gli sviluppatori scelgono questa libreria e ti mostreremo come rendere le email in HTML, MHTML o PDF quando necessario. Alla fine sarai in grado di integrare una conversione email affidabile in qualsiasi applicazione Java.
 
-## Risposte rapide
-- **Cosa fa realmente “convert eml to msg”?**  
-  Trasforma un file EML (formato standard RFC‑822) in un file Microsoft Outlook MSG preservando gli allegati, le intestazioni e il contenuto rich‑text.  
+## Risposte Rapide
+- **Che cosa fa realmente “convert eml to msg”?**  
+  Trasforma un file EML (formato RFC‑822 standard) in un file Microsoft Outlook MSG preservando gli allegati, le intestazioni e il contenuto rich‑text.  
 - **Ho bisogno di una licenza?**  
-  È necessaria una licenza temporanea o completa di Aspose.Email per l'uso in produzione; una versione di prova gratuita è sufficiente per la valutazione.  
-- **La libreria gestisce gli allegati email?**  
+  È necessaria una licenza temporanea o completa di Aspose.Email per l'uso in produzione; una prova gratuita è sufficiente per la valutazione.  
+- **La libreria può gestire gli allegati email?**  
   Sì – il processo di conversione copia automaticamente tutti i file allegati, così non perdi alcun dato.  
 - **Il rendering in HTML è supportato?**  
-  Assolutamente. Puoi renderizzare lo stesso messaggio in HTML o MHTML con una sola riga di codice.  
+  Assolutamente. Puoi renderizzare lo stesso messaggio in HTML o MHTML con una singola riga di codice.  
 - **Quale versione di Aspose.Email dovrei usare?**  
   L'ultima versione stabile (al 2026) offre le migliori prestazioni e correzioni di bug.
 
 ## Cos'è “convert eml to msg”?
-Convertire un file EML in MSG significa prendere un file email universalmente supportato e trasformarlo nel formato proprietario di Outlook. Questo è utile quando devi aprire i messaggi in Outlook, migrare archivi o integrare sistemi che comprendono solo MSG.
+Convertire un file EML in MSG significa prendere un file email universalmente supportato e trasformarlo nel formato proprietario di Outlook. Questo è utile quando devi aprire messaggi in Outlook, migrare archivi o integrare sistemi che comprendono solo MSG.
 
 ## Perché usare Aspose.Email per Java?
-- **Full fidelity** – Tutta la formattazione, le immagini incorporate e gli allegati sopravvivono alla conversione.  
-- **No Outlook dependency** – La libreria funziona su qualsiasi piattaforma che esegue Java, senza necessità di installare Outlook.  
-- **Rich rendering options** – Oltre a MSG puoi renderizzare in HTML, MHTML, PDF o anche testo semplice.  
-- **Extensive API** – Controllo granulare sulle impostazioni di conversione, come la conservazione dei timestamp originali o la rimozione di dati privati.
+- **Fidelità completa** – Tutta la formattazione, le immagini incorporate e gli allegati sopravvivono alla conversione.  
+- **Nessuna dipendenza da Outlook** – La libreria funziona su qualsiasi piattaforma che esegue Java, senza necessità di installare Outlook.  
+- **Opzioni di rendering avanzate** – Oltre a MSG puoi renderizzare in HTML, MHTML, PDF o anche testo semplice.  
+- **API estesa** – Controllo dettagliato sulle impostazioni di conversione, come preservare i timestamp originali o rimuovere dati privati.
 
 ## Prerequisiti
 - Java 8 o superiore.  
-- Aspose.Email for Java (scaricabile dal sito ufficiale).  
-- Un file di licenza temporanea se stai testando oltre il periodo di valutazione.
+- Aspose.Email per Java (scarica dal sito ufficiale).  
+- Un file di licenza temporaneo se stai testando oltre il periodo di valutazione.
 
-## Come convertire EML in MSG usando Aspose.Email per Java?
-Di seguito una panoramica ad alto livello. Il codice reale rimane esattamente lo stesso dei tutorial collegati, quindi puoi copiarlo e incollarlo direttamente.
+## Come salvare un'email come MSG usando Aspose.Email per Java
+1. **Aggiungi il JAR di Aspose.Email** al tuo progetto tramite Maven o posizionando il JAR nel classpath.  
+2. **Carica il file EML** con `MailMessage.load("source.eml")`.  
+3. **Salva come MSG** chiamando `mailMessage.save("output.msg", MailMessageSaveType.MSG)`.  
 
-1. **Aggiungi il JAR di Aspose.Email al tuo progetto** – tramite Maven o posizionando il JAR nel classpath.  
-2. **Carica il file EML** – la classe `MailMessage` legge il file sorgente.  
-3. **Salva come MSG** – chiama il metodo `save` con l'opzione `MailMessageSaveType.MSG`.  
-4. **(Facoltativo) Renderizza in HTML** – usa `MailMessage.save` con `MailMessageSaveType.HTML` per ottenere una versione web‑friendly.
+> **Suggerimento:** Usa `MailMessageSaveOptions.setPreserveOriginalHeaders(false)` quando hai bisogno solo del corpo del messaggio; questo riduce la dimensione finale del file.
 
-> **Consiglio professionale:** Se hai bisogno solo del corpo del messaggio in HTML, imposta `MailMessageSaveOptions.setPreserveOriginalHeaders(false)` per ridurre le dimensioni del file.
+## Come estrarre gli allegati email durante la conversione
+Quando chiami `save` con `MailMessageSaveType.MSG`, Aspose.Email copia automaticamente ogni allegato nel contenitore MSG. Se ti servono anche i file degli allegati grezzi, itera su `mailMessage.getAttachments()` e scrivi ogni stream su disco prima o dopo la conversione.
+
+## Come salvare un'email come HTML (o MHTML)
+Lo stesso metodo `save` supporta `MailMessageSaveType.HTML` e `MailMessageSaveType.MHTML`. Basta sostituire il tipo di salvataggio:
+
+`mailMessage.save("output.html", MailMessageSaveType.HTML);`
+
+Questo ti fornisce una versione web‑friendly che può essere visualizzata nei browser senza Outlook.
+
+## Come convertire un'email in PDF
+Per l'output PDF, usa `MailMessageSaveType.PDF`. La conversione mantiene il layout visivo, incluse le immagini incorporate, rendendola ideale per l'archiviazione o la generazione di report.
+
+`mailMessage.save("output.pdf", MailMessageSaveType.PDF);`
+
+## Casi d'uso comuni
+- **Progetti di migrazione** – Sposta archivi EML legacy in Outlook per l'accessibilità degli utenti finali.  
+- **e‑discovery legale** – Preserva le prove email in formato MSG o PDF con tutti i metadati.  
+- **Integrazioni Webmail** – Renderizza i messaggi EML in arrivo in HTML per la visualizzazione nelle applicazioni web.  
+- **Elaborazione batch** – Converti intere cartelle di file EML in MSG, HTML o PDF in un ciclo.
+
+## Problemi comuni e soluzioni
+- **Allegati mancanti** – Assicurati di utilizzare l'ultima versione di Aspose.Email; le versioni precedenti presentavano un bug noto con le immagini inline.  
+- **File di grandi dimensioni causano OutOfMemoryError** – Elabora i file uno alla volta e rilascia gli oggetti `MailMessage` dopo ogni salvataggio.  
+- **EML protetto da password** – Decripta il messaggio prima usando `MailMessage.load("encrypted.eml", password)` prima della conversione.
 
 ## Tutorial disponibili
 
-### [Converti EML in MSG usando Aspose.Email per Java: Guida completa](./convert-eml-to-msg-aspose-email-java/)
-Impara a convertire i file EML in formato MSG usando Aspose.Email per Java con questa guida dettagliata, incluse istruzioni di configurazione ed esempi di codice.
+### [Convertire EML in MSG usando Aspose.Email per Java&#58; Guida completa](./convert-eml-to-msg-aspose-email-java/)
+Impara come convertire i file EML in formato MSG usando Aspose.Email per Java con questa guida dettagliata, includendo istruzioni di configurazione ed esempi di codice.
 
-### [Converti messaggi MAPI in MHT usando Aspose.Email per Java: Guida completa](./convert-mapi-messages-to-mht-aspose-email-java/)
-Impara a convertire i messaggi MAPI in formato MHT usando Aspose.Email per Java. Questa guida copre il caricamento, il salvataggio e la personalizzazione dei template con applicazioni pratiche.
+### [Convertire messaggi MAPI in MHT usando Aspose.Email per Java&#58; Guida completa](./convert-mapi-messages-to-mht-aspose-email-java/)
+Impara come convertire i messaggi MAPI in formato MHT usando Aspose.Email per Java. Questa guida copre il caricamento, il salvataggio e la personalizzazione dei template con applicazioni pratiche.
 
-### [Conversione di EML in MHT/MHTML usando Aspose.Email per Java: Guida completa](./email-conversion-eml-to-mht-aspose-email-java/)
-Impara a convertire i file EML in MHT/MHTML usando Aspose.Email per Java. Ottimizza la gestione delle email e migliora la portabilità dei dati con questa guida dettagliata.
+### [Convertire EML in MHT/MHTML usando Aspose.Email per Java&#58; Guida completa](./email-conversion-eml-to-mht-aspose-email-java/)
+Impara come convertire i file EML in MHT/MHTML usando Aspose.Email per Java. Ottimizza la gestione delle email e migliora la portabilità dei dati con questa guida dettagliata.
 
 ### [Come convertire contatti VCF in MHTML usando Aspose.Email per Java](./convert-vcf-mhtml-aspose-email-java/)
-Impara a convertire efficientemente i file vCard (VCF) in formato MHTML usando Aspose.Email per Java. Questo tutorial copre tutto, dalla configurazione alla conversione, ideale per migrazioni di dati e integrazioni.
+Impara come convertire efficientemente i file vCard (VCF) in formato MHTML usando Aspose.Email per Java. Questo tutorial copre tutto, dall'installazione alla conversione, ideale per migrazioni di dati e integrazioni.
 
 ## Risorse aggiuntive
 
@@ -82,21 +111,19 @@ Impara a convertire efficientemente i file vCard (VCF) in formato MHTML usando A
 A: Sì. Scorri una directory, carica ogni file con `MailMessage` e chiama `save` per ogni MSG di output.
 
 **Q: Cosa succede alle immagini incorporate durante la conversione?**  
-A: Vengono conservate come allegati inline e appaiono correttamente nel MSG risultante o nell'HTML renderizzato.
+A: Vengono preservate come allegati inline e appaiono correttamente nel MSG risultante o nell'HTML renderizzato.
 
 **Q: È possibile saltare alcune intestazioni durante la conversione?**  
 A: Usa `MailMessageSaveOptions` per escludere intestazioni o metadati specifici se ti serve un output più leggero.
 
-**Q: La libreria supporta file EML crittografati o protetti da password?**  
+**Q: La libreria supporta file EML criptati o protetti da password?**  
 A: La decrittazione deve essere eseguita prima del caricamento; Aspose.Email può leggere il messaggio una volta fornita la password corretta.
 
 **Q: Come funziona “convert email attachments” internamente?**  
 A: L'API copia ogni stream di allegato nella collezione di allegati del formato di destinazione, garantendo l'assenza di perdita di dati.
 
----
-
-**Ultimo aggiornamento:** 2026-01-14  
-**Testato con:** Aspose.Email for Java 24.12  
+**Ultimo aggiornamento:** 2026-04-08  
+**Testato con:** Aspose.Email per Java 24.12  
 **Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
