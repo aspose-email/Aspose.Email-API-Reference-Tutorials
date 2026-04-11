@@ -1,9 +1,14 @@
 ---
-"date": "2025-05-29"
-"description": "學習使用 Aspose.Email for Java 進行進階電子郵件過濾。透過根據主題、日期、寄件者、網域等過濾電子郵件，簡化您的收件匣。"
-"title": "使用 Aspose.Email for Java 掌握進階電子郵件過濾技術"
-"url": "/zh-hant/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/"
-"weight": 1
+date: '2026-04-11'
+description: 學習如何使用 Aspose.Email for Java 按主旨、日期、寄件者和網域篩選電子郵件。透過進階篩選，簡化收件箱管理。
+keywords:
+- filter emails by subject
+- filter emails by date
+- filter emails by sender
+- filter emails by domain
+title: 使用 Aspose.Email for Java 依主旨篩選電子郵件
+url: /zh-hant/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,31 +16,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# 使用 Aspose.Email for Java 掌握進階電子郵件過濾技術
+# 以 Aspose.Email for Java 按主旨篩選電子郵件
 
 ## 介紹
 
-在當今的數位世界中，管理雜亂的收件匣是一項挑戰。無論您是每天篩選數百封電子郵件，還是希望優化電子郵件管理流程，進階過濾解決方案都至關重要。透過 Aspose.Email for Java，開發人員可以輕鬆且有效率地過濾和管理電子郵件。本指南將指導您使用 Aspose.Email for Java 實現各種電子郵件過濾功能。
+在當今的數位世界中，管理雜亂的收件匣是一項挑戰。無論您每天要篩選數百封電子郵件，或是希望優化電子郵件管理流程，高級篩選解決方案都是關鍵。**在本教學中，您將學習如何按主旨篩選電子郵件**，以及使用 Aspose.Email for Java 的日期、寄件者與網域等其他強大條件。透過 Aspose.Email for Java，開發人員能輕鬆且高效地篩選與管理電子郵件。本指南將逐步說明如何使用 Aspose.Email for Java 實作各種電子郵件篩選功能。
 
-**您將學到什麼：**
+**您將學習：**
 - 設定 Aspose.Email for Java
-- 按主題、日期、寄件者、網域和收件者過濾郵件
-- 使用邏輯 AND/OR 運算組合查詢
-- 了解電子郵件過濾器中的大小寫敏感性
+- 按主旨、日期、寄件者、網域與收件者篩選訊息
+- 使用邏輯 AND/OR 運算結合查詢
+- 了解電子郵件篩選中的大小寫敏感性
 
-讀完本指南後，您將能夠根據特定需求自訂電子郵件處理邏輯。讓我們先來了解先決條件。
+完成本指南後，您將能依據特定需求客製化電子郵件處理邏輯。讓我們先從前置條件開始。
 
-## 先決條件
+## 快速解答
+- **查詢 Exchange 信箱的主要類別是什麼？** `MailQueryBuilder` 可讓您建立彈性的篩選表達式。  
+- **我可以在單一查詢中同時依主旨與日期篩選電子郵件嗎？** 可以——在同一個 `MailQueryBuilder` 上鏈接條件。  
+- **如何篩選今天收到的訊息？** 使用 `builder.getInternalDate().on(new Date())`。  
+- **是否支援大小寫敏感的篩選？** 在 `contains` 的第二個參數傳入 `true`。  
+- **生產環境需要授權嗎？** 有效的 Aspose.Email 授權可解除所有功能限制。
 
-在使用 Aspose.Email for Java 實現進階電子郵件過濾之前，請確保您已：
+## 前置條件
 
-- **所需庫：** Aspose.Email for Java 版本 25.4
-- **環境設定：** 需要至少版本 16 的 Java 開發工具包 (JDK)。
-- **知識前提：** 對 Java 程式設計有基本的了解並熟悉電子郵件協定。
+在使用 Aspose.Email for Java 實作進階電子郵件篩選之前，請確保您已具備：
+
+- **必要函式庫：** Aspose.Email for Java 版本 25.4  
+- **環境設定：** 需要至少 JDK 16 版的 Java 開發套件 (JDK)。  
+- **知識前提：** 基本的 Java 程式設計概念與電子郵件協議的熟悉度。
 
 ## 設定 Aspose.Email for Java
 
-首先，將 Aspose.Email 庫新增到您的專案中。如果您使用 Maven，請新增下列相依性：
+首先，將 Aspose.Email 函式庫加入您的專案。若使用 Maven，請加入以下相依性：
 
 ```xml
 <dependency>
@@ -46,111 +58,111 @@
 </dependency>
 ```
 
-### 許可證獲取
+### 取得授權
 
-要充分利用 Aspose.Email，您需要一個許可證。您可以先免費試用，也可以申請臨時許可證進行評估。如果您需要生產使用，可以考慮購買許可證以解鎖所有功能。
+若要完整使用 Aspose.Email，您需要授權。您可以先使用免費試用版，或申請臨時授權以進行評估。若投入生產環境，建議購買授權以解鎖全部功能。
 
-### 基本初始化和設定
+### 基本初始化與設定
 
-初始化你的 `ExchangeClient` 具備必要的憑證：
+使用必要的認證資訊初始化您的 `ExchangeClient`：
 
 ```java
 ExchangeClient client = new ExchangeClient("YOUR_DOCUMENT_DIRECTORY", "username", "password", "domain");
 ```
 
-## 實施指南
+## 實作指南
 
-本節將每個功能分解為易於管理的步驟，使您能夠實現複雜的電子郵件過濾功能。
+本節將每項功能拆解為可管理的步驟，協助您實作複雜的電子郵件篩選功能。
 
-### 按主題和日期過濾訊息
+### 按主旨與日期篩選訊息
 
-**概述：** 此功能會根據特定主題關鍵字和內部日期過濾 Exchange 信箱中的電子郵件。
+**Overview:** 此功能可依特定主旨關鍵字與內部日期，篩選 Exchange 信箱中的電子郵件。
 
-#### 逐步實施：
-1. **初始化查詢產生器：**
+#### 步驟實作：
+1. **Initialize the Query Builder:**  
    ```java
    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
    ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
    builder.getSubject().contains("Newsletter");
    ```
-2. **設定日期過濾器：**
+2. **Set Date Filter:**  
    ```java
    try {
        builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
    } catch (ParseException e) {
-       e.printStackTrace(); // 優雅地處理解析錯誤
+       e.printStackTrace(); // Handle parsing errors gracefully
    }
    ```
-3. **執行查詢：**
+3. **Execute the Query:**  
    ```java
    MailQuery query = builder.getQuery();
    ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
    ```
 
-### 根據今天的日期過濾訊息
+### 按今日日期篩選訊息
 
-**概述：** 檢索今天收到的電子郵件。
+**Overview:** 取得今天收到的電子郵件。
 
-#### 執行：
-1. **建構查詢：**
+#### Implementation:
+1. **Build the Query:**  
    ```java
    MailQueryBuilder builderToday = new MailQueryBuilder();
    builderToday.getInternalDate().on(new Date());
    ```
-2. **列出訊息：**
-   使用以下方式執行查詢 `client.listMessages()` 與前面的範例類似，將具體日期替換為今天的日期。
+2. **List Messages:**  
+   使用 `client.listMessages()` 執行查詢，方式與前述範例相同，只需將特定日期改為今天。
 
-### 過濾特定日期範圍內的消息
+### 在特定日期範圍內篩選訊息
 
-**概述：** 過濾今天之前和一天前收到的電子郵件。
+**Overview:** 篩選在今天之前且自一天前起收到的電子郵件。
 
-#### 執行：
-1. **配置日期範圍：**
+#### Implementation:
+1. **Configure Date Range:**  
    ```java
    MailQueryBuilder builderDateRange = new MailQueryBuilder();
    builderDateRange.getInternalDate().beforeOrEqual(new Date());
    builderDateRange.getInternalDate().since(new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(1)));
    ```
 
-### 根據特定寄件者過濾訊息
+### 按特定寄件者篩選訊息
 
-**概述：** 從特定寄件者取得電子郵件。
+**Overview:** 取得來自特定寄件者的電子郵件。
 
-#### 執行：
-1. **設定查詢：**
+#### Implementation:
+1. **Set Up the Query:**  
    ```java
    MailQueryBuilder builderSender = new MailQueryBuilder();
    builderSender.getFrom().contains("saqib.razzaq@127.0.0.1");
    ```
 
-### 根據特定域過濾訊息
+### 按特定網域篩選訊息
 
-**概述：** 從特定網域檢索電子郵件。
+**Overview:** 取得來自特定網域的電子郵件。
 
-#### 執行：
-1. **基於域的過濾：**
+#### Implementation:
+1. **Domain‑Based Filtering:**  
    ```java
    MailQueryBuilder builderDomain = new MailQueryBuilder();
    builderDomain.getFrom().contains("SpecificHost.com");
    ```
 
-### 過濾傳送給特定收件人的訊息
+### 按特定收件者篩選訊息
 
-**概述：** 取得發送給特定收件者的電子郵件。
+**Overview:** 取得寄送給特定收件者的電子郵件。
 
-#### 執行：
-1. **收件者查詢設定：**
+#### Implementation:
+1. **Recipient Query Setup:**  
    ```java
    MailQueryBuilder builderRecipient = new MailQueryBuilder();
    builderRecipient.getTo().contains("recipient@example.com");
    ```
 
-### 使用 AND 邏輯組合查詢
+### 使用 AND 邏輯結合查詢
 
-**概述：** 使用邏輯「與」運算來組合多個條件。
+**Overview:** 使用邏輯 AND 運算結合多個條件。
 
-#### 執行：
-1. **設定組合條件：**
+#### Implementation:
+1. **Setup Combined Conditions:**  
    ```java
    MailQueryBuilder builderAnd = new MailQueryBuilder();
    builderAnd.getFrom().contains("SpecificHost.com");
@@ -158,63 +170,78 @@ ExchangeClient client = new ExchangeClient("YOUR_DOCUMENT_DIRECTORY", "username"
    builderAnd.getInternalDate().since(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(-7)));
    ```
 
-### 使用 OR 邏輯組合查詢
+### 使用 OR 邏輯結合查詢
 
-**概述：** 使用邏輯或條件檢索電子郵件。
+**Overview:** 使用邏輯 OR 條件取得電子郵件。
 
-#### 執行：
-1. **或條件設定：**
+#### Implementation:
+1. **OR Condition Setup:**  
    ```java
    MailQueryBuilder builderOr = new MailQueryBuilder();
    builderOr.or(builderOr.getSubject().contains("test"), builderOr.getFrom().contains("noreply@host.com"));
    ```
 
-### 根據區分大小寫來過濾訊息
+### 按大小寫敏感度篩選訊息
 
-**概述：** 對電子郵件地址使用區分大小寫的篩選器。
+**Overview:** 為電子郵件地址使用大小寫敏感的篩選。
 
-#### 執行：
-1. **區分大小寫的過濾：**
+#### Implementation:
+1. **Case‑Sensitive Filtering:**  
    ```java
    MailQueryBuilder builderCaseSensitive = new MailQueryBuilder();
    builderCaseSensitive.getFrom().contains("tesT", true);
    ```
 
-## 實際應用
+## 實務應用
 
-- **自動電子郵件分類：** 根據主題行或寄件者自動將電子郵件分類。
-- **安全過濾器：** 透過寄件者域識別並過濾潛在的網路釣魚嘗試。
-- **市場分析：** 追蹤新聞通訊和促銷電子郵件以獲取行銷見解。
-- **基於時間的歸檔：** 出於合規目的，存檔特定日期範圍內收到的電子郵件。
+- **Automated Email Sorting:** 自動依主旨或寄件者將電子郵件分類。  
+- **Security Filters:** 依寄件者網域辨識並篩選潛在的網釣攻擊。  
+- **Marketing Analysis:** 追蹤電子報與促銷郵件，以獲取行銷洞見。  
+- **Time‑Based Archiving:** 依特定日期範圍封存電子郵件，以符合法規要求。
 
-## 性能考慮
+## 效能考量
 
-處理大量電子郵件資料時，優化效能至關重要：
+優化效能在處理大量電子郵件資料時至關重要：
 
-- 使用高效率查詢來最大限度地減少資源使用。
-- 如果處理大量資料集，請實施分頁以避免記憶體過載。
-- 定期分析和監控應用程式效能。
+- 使用高效的查詢以減少資源消耗。  
+- 若資料集龐大，請實作分頁以避免記憶體過載。  
+- 定期分析與監控應用程式效能。
 
-## 結論
+## 常見問題與解決方案
 
-透過掌握 Aspose.Email for Java 提供的進階篩選功能，您可以大幅增強您的電子郵件管理流程。本指南為您提供了根據特定需求自訂複雜過濾邏輯所需的知識。繼續閱讀文檔，了解更多特性和功能。
+| 問題 | 典型原因 | 推薦解決方案 |
+|------|----------|--------------|
+| **ParseException** 在解析日期時發生 | 日期格式不正確 | 使用與輸入字串相符的 `SimpleDateFormat`，並務必以 try‑catch 包住。 |
+| 沒有返回結果 | 篩選條件過於嚴格 | 放寬條件或確認信箱中確實有符合的訊息。 |
+| 大小寫敏感未生效 | `contains` 未傳入 `true` 參數 | 在第二個參數傳入 `true` 以強制大小寫敏感匹配。 |
+| 大型信箱查詢緩慢 | 缺少分頁機制 | 使用 `client.listMessages(..., pageSize, pageNumber)` 以分批取得結果。 |
 
-## 常見問題部分
+## 常見問答
 
-**Q1：處理日期篩選器中的 ParseException 的最佳方法是什麼？**
-- **一個：** 總是包裹 `sdf.parse()` 呼叫 try-catch 區塊來優雅地處理解析異常。
+**Q1: 處理日期篩選時的 ParseException 最佳方式是什麼？**  
+- **A:** 永遠以 try‑catch 包住 `sdf.parse()` 呼叫，以優雅地處理解析例外。
 
-**問題2：除了 Exchange 之外，我可以將 Aspose.Email for Java 與其他電子郵件協定一起使用嗎？**
-- **一個：** 是的，Aspose.Email 支援多種協議，包括 IMAP 和 POP3。請參閱文件以了解更多詳情。
+**Q2: 除了 Exchange，我可以在 Java 中使用 Aspose.Email 搭配其他郵件協議嗎？**  
+- **A:** 可以，Aspose.Email 支援多種協議，包括 IMAP 與 POP3。詳情請參考文件。
 
-**問題3：如何優化大型郵箱的查詢效能？**
-- **一個：** 透過盡可能縮小篩選條件進行最佳化，並考慮使用分頁機制。
+**Q3: 如何在大型信箱中優化查詢效能？**  
+- **A:** 盡可能縮小篩選條件範圍，並考慮使用分頁機制。
 
-**Q4：免費試用後是否需要立即購買許可證？**
-- **一個：** 雖然免費試用非常適合評估，但購買許可證可以無限制地解鎖所有功能。
+**Q4: 試用免費版後是否必須立即購買授權？**  
+- **A:** 雖然免費試用適合評估，但購買授權可解除所有功能限制。
 
-**Q5：如何將 Aspose.Email 與其他 Java 應用程式整合？**
-- **一個：** 在您的 Java 專案中使用 Aspose.Email 作為函式庫。它提供直接的整合。
+**Q5: 如何將 Aspose.Email 整合至其他 Java 應用程式？**  
+- **A:** 直接將 Aspose.Email 作為函式庫加入您的 Java 專案，即可輕鬆整合。
+
+**Q6: 可以結合超過兩個條件使用 AND/OR 邏輯嗎？**  
+- **A:** 可以——在同一個 `MailQueryBuilder` 上鏈接更多條件，或依需求巢狀使用 OR 呼叫。
+
+**Q7: 大小寫敏感的篩選是否也適用於主旨欄位？**  
+- **A:** 完全支援。對任何欄位使用 `contains` 時，只要傳入 `true` 即可啟用大小寫敏感匹配。
+
+**最後更新：** 2026-04-11  
+**測試環境：** Aspose.Email for Java 25.4 (JDK 16)  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
