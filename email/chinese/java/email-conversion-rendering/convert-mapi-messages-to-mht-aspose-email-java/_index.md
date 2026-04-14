@@ -15,6 +15,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # 使用 Aspose.Email for Java 将 MSG 转换为 MHT：全面指南
 
 ## 介绍
@@ -216,6 +217,12 @@ msg.save(outputDir + "MapiTask_out.mht", opt);
 - 将转换集成到批处理作业或 REST 服务，实现按需处理。  
 - 探索 Aspose.Email 的其他功能，如 PST 处理、邮件发送和 MIME 解析。
 
+---
+
+**最后更新：** 2026-01-17  
+**测试环境：** Aspose.Email for Java 25.4（classifier `jdk16`）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -223,9 +230,3 @@ msg.save(outputDir + "MapiTask_out.mht", opt);
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-01-17  
-**测试环境：** Aspose.Email for Java 25.4（classifier `jdk16`）  
-**作者：** Aspose

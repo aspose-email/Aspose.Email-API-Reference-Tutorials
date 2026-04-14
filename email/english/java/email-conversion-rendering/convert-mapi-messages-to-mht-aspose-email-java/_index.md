@@ -1,5 +1,5 @@
 ---
-title: "How to Convert MSG to MHT Using Aspose.Email for Java: A Comprehensive Guide"
+title: "How to Convert MSG to MHT Using Aspose.Email for Java - A Comprehensive Guide"
 description: "Learn how to convert MSG to MHT with Aspose.Email for Java. This step‑by‑step tutorial covers loading, saving, and customizing templates for real‑world email conversion."
 date: "2026-01-17"
 weight: 1
@@ -15,6 +15,7 @@ keywords:
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Convert MSG to MHT Using Aspose.Email for Java: A Comprehensive Guide
 
 ## Introduction
@@ -216,6 +217,12 @@ You now have a complete, production‑ready workflow to **convert MSG to MHT** u
 - Integrate the conversion into a batch job or REST service for on‑demand processing.  
 - Explore Aspose.Email’s other features such as PST handling, email sending, and MIME parsing.
 
+---
+
+**Last Updated:** 2026-01-17  
+**Tested With:** Aspose.Email for Java 25.4 (classifier `jdk16`)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -223,9 +230,3 @@ You now have a complete, production‑ready workflow to **convert MSG to MHT** u
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-17  
-**Tested With:** Aspose.Email for Java 25.4 (classifier `jdk16`)  
-**Author:** Aspose

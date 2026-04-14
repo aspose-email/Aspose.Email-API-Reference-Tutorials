@@ -7,7 +7,7 @@ keywords:
 - convert MAPI messages
 - Aspose.Email for Java
 - MHT format conversion
-title: 'Cara Mengonversi MSG ke MHT Menggunakan Aspose.Email untuk Java: Panduan Lengkap'
+title: 'Cara Mengonversi MSG ke MHT Menggunakan Aspose.Email untuk Java - Panduan Lengkap'
 url: /id/java/email-conversion-rendering/convert-mapi-messages-to-mht-aspose-email-java/
 weight: 1
 ---
@@ -17,6 +17,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Mengonversi MSG ke MHT Menggunakan Aspose.Email untuk Java: Panduan Komprehensif
 
 ## Pendahuluan
@@ -220,6 +221,12 @@ Anda kini memiliki alur kerja lengkap dan siap produksi untuk **mengonversi MSG 
 - Integrasikan konversi ke dalam pekerjaan batch atau layanan REST untuk pemrosesan sesuai permintaan.  
 - Jelajahi fitur lain Aspose.Email seperti penanganan PST, pengiriman email, dan penguraian MIME.
 
+---
+
+**Terakhir Diperbarui:** 2026-01-17  
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier `jdk16`)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -227,9 +234,3 @@ Anda kini memiliki alur kerja lengkap dan siap produksi untuk **mengonversi MSG 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-01-17  
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier `jdk16`)  
-**Penulis:** Aspose

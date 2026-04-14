@@ -6,7 +6,7 @@ keywords:
 - convert EML to MSG Java
 - Aspose.Email for Java conversion
 - email format conversion in Java
-title: 'แปลงไฟล์ EML เป็น MSG ด้วย Aspose.Email สำหรับ Java: คู่มือฉบับสมบูรณ์'
+title: 'แปลงไฟล์ EML เป็น MSG ด้วย Aspose.Email สำหรับ Java - คู่มือฉบับสมบูรณ์'
 url: /th/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/
 weight: 1
 ---
@@ -16,56 +16,59 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Convert EML to MSG Using Aspose.Email for Java
 
-## Introduction
+# แปลง EML เป็นผงชูรสโดยใช้ Aspose.Email สำหรับ Java
 
-การแปลงรูปแบบอีเมลอาจเป็นเรื่องท้าทาย โดยเฉพาะอย่างยิ่งเมื่อจำเป็นต้องทำให้เข้ากันได้กับเวอร์ชันต่าง ๆ ของ Microsoft Outlook ด้วย **Aspose.Email for Java** กระบวนการจะเป็นไปอย่างราบรื่นและมีประสิทธิภาพ บทแนะนำนี้จะสอนคุณวิธี **convert eml to msg** ด้วย Aspose.Email for Java โดยแสดงวิธีโหลดไฟล์ EML, ใช้ตัวเลือกการแปลงที่กำหนดเอง, และบันทึกผลลัพธ์เป็นไฟล์ MSG ที่สะอาด
+## การแนะนำ
 
-**สิ่งที่คุณจะได้เรียนรู้:**
-- โหลดไฟล์ EML เข้าไปในอ็อบเจ็กต์ `MailMessage`
-- แปลง EML เป็น MSG ด้วยตัวเลือกที่กำหนดเอง
-- ตรวจสอบประเภทของเนื้อหาในไฟล์ MSG ของคุณ (HTML หรือ RTF)
+การควบคุมรูปแบบอีเมลอาจเป็นเรื่องท้าทายโดยไม่จำเป็นเมื่อไม่จำเป็นต้องทำให้จำนวนมากแตกต่างกันออกไป ของ Microsoft Outlook ด้วย **Aspose.Email for Java** จะมีการรับฟังความคิดเห็นต่างๆ บทแนะนำเพื่อให้สอนคุณวิธี **แปลง eml เป็น msg** ด้วย Aspose.Email for Java โดยแสดงวิธีโหลดไฟล์ EML, ใช้งานทั่วไป, และบันทึกผลลัพธ์เป็นไฟล์ MSG ที่สะอาด
+
+** สิ่งที่จะได้เรียนรู้:**
+- ดาวน์โหลดไฟล์ EML และอ็อบเจ็กต์ `MailMessage`
+- รูปแบบ EML เป็น MSG ด้วยวิธีต่างๆ
+- ภาพถ่ายในเนื้อหาในไฟล์ MSG ของคุณ (HTML หรือ RTF)
 - บันทึกไฟล์ MSG ที่แปลงแล้วอย่างมีประสิทธิภาพ
 
-ตอนนี้มาเริ่มตั้งค่าสภาพแวดล้อมของคุณกันเลย
+จะเริ่มดำเนินการตามที่คุณต้องการทันที
 
-## Quick Answers
-- **What library should I use?** Aspose.Email for Java (Maven dependency)  
-- **Can I convert multiple EML files at once?** Yes – loop through a directory and apply the same steps.  
-- **Do I need a license?** A temporary or purchased Aspose.Email license is required for production.  
-- **Which Java version is supported?** JDK 16 or later (classifier `jdk16`).  
-- **Is the conversion fast?** Yes – the library processes typical EML files in milliseconds.
+## คำตอบด่วน
+- **ฉันควรใช้ไลบรารีใด** Aspose.Email สำหรับ Java (การพึ่งพา Maven)
+- **ฉันสามารถแปลงไฟล์ EML หลายไฟล์พร้อมกันได้หรือไม่** ได้ – วนซ้ำไดเร็กทอรีและใช้ขั้นตอนเดียวกัน
+- **ฉันจำเป็นต้องมีใบอนุญาตหรือไม่** จำเป็นต้องมีใบอนุญาต Aspose.Email ชั่วคราวหรือที่ซื้อมาเพื่อการผลิต
+- **รองรับ Java เวอร์ชันใด** JDK16 หรือใหม่กว่า (ตัวแยกประเภท `jdk16`)
+- **การแปลงเร็วหรือไม่** ใช่ – ไลบรารีจะประมวลผลไฟล์ EML ทั่วไปในหน่วยมิลลิวินาที
 
-## What is **convert eml to msg**?
-การแปลงไฟล์ EML เป็น MSG หมายถึงการเปลี่ยนไฟล์อีเมลมาตรฐาน (RFC 822) ให้เป็นรูปแบบเฉพาะของ Microsoft Outlook ซึ่งทำให้สามารถดู, เก็บถาวร, หรือประมวลผลต่อในสภาพแวดล้อมของ Outlook ได้อย่างราบรื่น
+## **แปลง eml เป็นผงชูรส** คืออะไร?
+การพิจารณาไฟล์ EML เป็น MSG โดยทั่วไปสำหรับไฟล์อีเมลมาตรฐาน (RFC822) ให้เหตุผลเฉพาะของ Microsoft Outlook เท่านั้น, เก็บรักษาถาวร, หรือตรวจสอบต่อของ Outlook
 
-## Why use Aspose.Email for Java?
-- **Full‑feature support** for attachments, embedded resources, and calendar items.  
-- **No external Outlook installation** required – pure Java implementation.  
-- **High fidelity** conversion preserving HTML, RTF, and MIME structures.  
-- **Scalable** for batch processing in server‑side applications.
+## เหตุใดจึงต้องใช้ Aspose.Email สำหรับ Java
+- **การสนับสนุนคุณสมบัติครบถ้วน** สำหรับไฟล์แนบ ทรัพยากรที่ฝัง และรายการปฏิทิน
+- **ไม่จำเป็นต้องติดตั้ง Outlook ภายนอก** – การใช้งาน Java ล้วนๆ
+- การแปลง **ความเที่ยงตรงสูง** จะรักษาโครงสร้าง HTML, RTF และ MIME
+- **ปรับขนาดได้** สำหรับการประมวลผลเป็นชุดในแอปพลิเคชันฝั่งเซิร์ฟเวอร์
 
-## Prerequisites
+## ข้อกำหนดเบื้องต้น
 
-Before you begin, ensure you have the following:
+ก่อนเริ่มต้น โปรดตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-### Required Libraries and Dependencies
-- **Aspose.Email for Java**: The latest version is 25.4.  
-- **Java Development Kit (JDK)**: Ensure JDK 16 or later is installed on your system.  
-- **aspose email maven dependency** – see the Maven snippet below.
+### ไลบรารีและส่วนประกอบที่จำเป็น
+- **Aspose.Email สำหรับ Java**: เวอร์ชันล่าสุดคือ 25.4
+- **Java Development Kit (JDK)**: ตรวจสอบให้แน่ใจว่าได้ติดตั้ง JDK16 หรือเวอร์ชันที่ใหม่กว่าในระบบของคุณแล้ว
 
-### Environment Setup Requirements
-- An Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse.  
-- Maven configured in your project to manage dependencies.
+- **aspose email maven dependency** – ดูตัวอย่างโค้ด Maven ด้านล่าง
 
-### Knowledge Prerequisites
-- Basic understanding of Java programming.  
-- Familiarity with email file formats like EML and MSG.
+### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
+- สภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE) เช่น IntelliJ IDEA หรือ Eclipse
 
-## Setting Up Aspose.Email for Java
+- กำหนดค่า Maven ในโปรเจ็กต์ของคุณเพื่อจัดการส่วนประกอบต่างๆ
 
-To start, include the necessary library in your project using Maven:
+### ความรู้พื้นฐาน
+- ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java
+- ความคุ้นเคยกับรูปแบบไฟล์อีเมล เช่น EML และ MSG
+
+## การตั้งค่า Aspose.Email สำหรับ Java
+
+เริ่มต้นด้วยการรวมไลบรารีที่จำเป็นในโปรเจ็กต์ของคุณโดยใช้ Maven:
 
 **Maven Dependency:**
 ```xml
@@ -77,14 +80,16 @@ To start, include the necessary library in your project using Maven:
 </dependency>
 ```
 
-### License Acquisition Steps
-1. **Free Trial**: Download a free trial from the [Aspose.Email downloads page](https://releases.aspose.com/email/java/).  
-2. **Temporary License**: Obtain a temporary license for full feature access through this link: [Get Temporary License](https://purchase.aspose.com/temporary-license/).  
-3. **Purchase**: For permanent use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).
+### ขั้นตอนการขอรับใบอนุญาต
+1. **ทดลองใช้ฟรี**: ดาวน์โหลดเวอร์ชันทดลองใช้ฟรีได้จาก [หน้าดาวน์โหลด Aspose.Email](https://releases.aspose.com/email/java/)
 
-### Basic Initialization
+2. **ใบอนุญาตชั่วคราว**: ขอรับใบอนุญาตชั่วคราวเพื่อเข้าถึงฟีเจอร์ทั้งหมดได้จากลิงก์นี้: [ขอรับใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
 
-Initialize Aspose.Email in your Java project by setting up a temporary or purchased license:
+3. **ซื้อ**: สำหรับการใช้งานถาวร โปรดซื้อใบอนุญาตจาก [เว็บไซต์ Aspose](https://purchase.aspose.com/buy)
+
+### การเริ่มต้นใช้งานเบื้องต้น
+
+เริ่มต้นใช้งาน Aspose.Email ในโปรเจ็กต์ Java ของคุณโดยการตั้งค่าใบอนุญาตชั่วคราวหรือใบอนุญาตที่ซื้อแล้ว:
 ```java
 import com.aspose.email.License;
 
@@ -92,59 +97,61 @@ License license = new License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-## Implementation Guide
+## คู่มือการใช้งาน
 
-We will break down the process into logical sections, each focusing on a specific feature.
+เราจะแบ่งกระบวนการออกเป็นส่วนๆ โดยแต่ละส่วนจะเน้นที่ฟีเจอร์เฉพาะ
 
-### Loading an EML File
 
-#### Overview
-Loading an EML file is straightforward with Aspose.Email for Java. Use the `MailMessage` class to efficiently load your email data.
+### การโหลดไฟล์ EML
 
-#### Steps:
-**Step 1: Import Required Classes**
+#### ภาพรวม
+การโหลดไฟล์ EML ทำได้ง่ายด้วย Aspose.Email สำหรับ Java ใช้คลาส `MailMessage` เพื่อโหลดข้อมูลอีเมลของคุณอย่างมีประสิทธิภาพ
+
+#### ขั้นตอน:
+**ขั้นตอนที่ 1: นำเข้าคลาสที่จำเป็น**
 ```java
 import com.aspose.email.MailMessage;
 ```
 
-**Step 2: Load EML File**
+**ขั้นตอนที่ 2: โหลดไฟล์ EML**
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MailMessage mailMessage = MailMessage.load(dataDir + "TestAppointment.eml");
 ```
-*Here, `dataDir` is the directory where your EML file resides.*
+*ในที่นี้ `dataDir` คือไดเร็กทอรีที่ไฟล์ EML ของคุณอยู่*
 
-### Converting EML to MSG with Custom Options
+### การแปลง EML เป็น MSG ด้วยตัวเลือกแบบกำหนดเอง
 
-#### Overview
-Aspose.Email allows you to convert an EML file to MSG format while applying custom conversion options for better control over the output.
+#### ภาพรวม
+Aspose.Email อนุญาตให้คุณแปลงไฟล์ EML เป็นรูปแบบ MSG พร้อมกับใช้ตัวเลือกการแปลงแบบกำหนดเองเพื่อควบคุมผลลัพธ์ได้ดียิ่งขึ้น
 
-**Step 1: Import Necessary Classes**
+**ขั้นตอนที่ 1: นำเข้าคลาสที่จำเป็น**
 ```java
 import com.aspose.email.MapiConversionOptions;
 import com.aspose.email.OutlookMessageFormat;
 import com.aspose.email.MapiMessage;
 ```
 
-**Step 2: Create and Configure Conversion Options**
+**ขั้นตอนที่ 2: สร้างและกำหนดค่าตัวเลือกการแปลง**
 ```java
 MapiConversionOptions conversionOptions = new MapiConversionOptions();
 conversionOptions.setFormat(OutlookMessageFormat.Unicode);
 conversionOptions.setForcedRtfBodyForAppointment(false);
 ```
-*Setting `ForcedRtfBodyForAppointment` to false ensures that HTML is preferred over RTF when available.*
+*การตั้งค่า `ForcedRtfBodyForAppointment` เป็น false จะทำให้ HTML ถูกเลือกใช้มากกว่า RTF เมื่อมีให้ใช้งาน*
 
-**Step 3: Convert MailMessage to MapiMessage**
+**ขั้นตอนที่ 3: แปลง MailMessage เป็น MapiMessage**
 ```java
 MapiMessage mapiMessage = MapiMessage.fromMailMessage(mailMessage, conversionOptions);
 ```
 
-### Checking and Printing Body Type of MSG File
+### การตรวจสอบและพิมพ์ประเภทเนื้อหาของไฟล์ MSG
 
-#### Overview
-Determine whether the body type of your MSG file is HTML or RTF. This step helps in understanding how your email content will be rendered.
+#### ภาพรวม
+ตรวจสอบว่าประเภทเนื้อหาของไฟล์ MSG ของคุณเป็น HTML หรือ RTF ขั้นตอนนี้ช่วยให้เข้าใจว่าเนื้อหาอีเมลของคุณจะแสดงผลอย่างไร
 
-**Step 1: Check Body Content Type**
+
+**ขั้นตอนที่ 1: ตรวจสอบประเภทเนื้อหาของข้อความ**
 ```java
 import com.aspose.email.BodyContentType;
 
@@ -155,15 +162,15 @@ if(mapiMessage.getBodyType() == BodyContentType.Html){
 }
 ```
 
-### Saving MSG File to Output Directory
+### การบันทึกไฟล์ MSG ไปยังไดเร็กทอรีเอาต์พุต
 
-#### Overview
-Finally, save the converted MAPI as MSG file to your desired output directoryStep 1: Set Up Output Directory**
+#### ภาพรวม
+สุดท้ายนี้ ให้บันทึกไฟล์ MAPI ที่แปลงแล้วเป็นไฟล์ MSG ไปยังไดเร็กทอรีเอาต์พุตที่คุณต้องการ ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอาต์พุต**
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 ```
 
-**Step 2: Save MSG File**
+**ขั้นตอนที่ 2: บันทึกไฟล์ MSG**
 ```java
 try {
     mapiMessage.save(outputDir + "TestAppointment_out.msg");
@@ -171,56 +178,58 @@ try {
     e.printStackTrace();
 }
 ```
-*Ensure the directory exists to prevent `IOException`.*
+*ตรวจสอบให้แน่ใจว่าไดเร็กทอรีมีอยู่จริงเพื่อป้องกัน `IOException`*
 
-### Troubleshooting Tips
-- **File Not Found Error**: Verify that your file paths are correct.  
-- **License Issues**: Double‑check your license setup and ensure it’s correctly applied.  
-- **Conversion Errors**: Ensure you have configured conversion options appropriately.  
+### เคล็ดลับการแก้ไขปัญหา
+- **ข้อผิดพลาดไม่พบไฟล์**: ตรวจสอบว่าเส้นทางไฟล์ของคุณถูกต้อง
+- **ปัญหาเกี่ยวกับใบอนุญาต**: ตรวจสอบการตั้งค่าใบอนุญาตของคุณอีกครั้งและตรวจสอบให้แน่ใจว่าได้ใช้งานอย่างถูกต้อง
+- **ข้อผิดพลาดในการแปลง**: ตรวจสอบให้แน่ใจว่าคุณได้กำหนดค่าตัวเลือกการแปลงอย่างเหมาะสม
 
-## Practical Applications
-1. **Email Archiving** – Convert emails for archival in a format compatible with Microsoft Outlook.  
-2. **Data Migration** – Migrate from systems using EML to those requiring MSG (e.g., *migrate eml to outlook* scenarios).  
-3. **Email Processing** – Automate email data handling within Java applications, such as CRM integrations or support ticket systems.
+## การใช้งานจริง
+1. **การเก็บถาวรอีเมล** – แปลงอีเมลเพื่อเก็บถาวรในรูปแบบที่เข้ากันได้กับ Microsoft Outlook
+2. **การย้ายข้อมูล** – ย้ายข้อมูลจากระบบที่ใช้ EML ไปยังระบบที่ต้องการ MSG (เช่น สถานการณ์ *ย้าย eml ไปยัง outlook*)
+3. **การประมวลผลอีเมล** – ทำให้การจัดการข้อมูลอีเมลเป็นไปโดยอัตโนมัติภายในแอปพลิเคชัน Java เช่น การผสานรวม CRM หรือระบบตั๋วสนับสนุน
 
-## Performance Considerations
-- **Resource Usage** – Be mindful of memory usage when processing large volumes of emails. Implement efficient file handling practices.  
-- **Optimizing Conversion** – Use appropriate conversion options to reduce processing time.  
-- **Java Memory Management** – Ensure proper garbage collection by closing any opened resources.
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+- **การใช้ทรัพยากร** – คำนึงถึงการใช้หน่วยความจำเมื่อประมวลผลอีเมลจำนวนมาก ใช้แนวทางปฏิบัติในการจัดการไฟล์ที่มีประสิทธิภาพ
+- **การเพิ่มประสิทธิภาพการแปลง** – ใช้ตัวเลือกการแปลงที่เหมาะสมเพื่อลดเวลาในการประมวลผล
+- **การจัดการหน่วยความจำ Java** – ตรวจสอบให้แน่ใจว่ามีการเก็บขยะอย่างถูกต้องโดยการปิดทรัพยากรที่เปิดอยู่ทั้งหมด
 
-## Why Convert eml to msg in Java?
-Using **eml to msg java** conversion gives you a native Java solution that avoids COM interop, works on any OS, and integrates cleanly into CI/CD pipelines. It also ensures that Outlook‑specific features like appointments and rich text bodies are preserved.
+## ทำไมต้องแปลง eml เป็น msg ใน Java?
+การใช้การแปลง **eml เป็น msg java** ช่วยให้คุณได้โซลูชัน Java ดั้งเดิมที่หลีกเลี่ยงการทำงานร่วมกันของ COM ทำงานได้บนระบบปฏิบัติการใด ๆ และผสานรวมเข้ากับไปป์ไลน์ CI/CD ได้อย่างราบรื่น นอกจากนี้ยังช่วยให้มั่นใจได้ว่าคุณสมบัติเฉพาะของ Outlook เช่น การนัดหมายและเนื้อหาข้อความแบบ Rich Text จะยังคงอยู่
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: How do I handle large EML files without running out of memory?**  
-A: Stream the file content instead of loading the entire message into memory, and process attachments individually.
+**ถาม: ฉันจะจัดการไฟล์ EML ขนาดใหญ่โดยไม่ให้หน่วยความจำหมดได้อย่างไร?**
+ตอบ: สตรีมเนื้อหาไฟล์แทนการโหลดข้อความทั้งหมดลงในหน่วยความจำ และประมวลผลไฟล์แนบทีละไฟล์
 
-**Q: Can I convert multiple emails at once?**  
-A: Yes – iterate over a folder of EML files and apply the same conversion steps inside a loop.
+**ถาม: ฉันสามารถแปลงอีเมลหลายฉบับพร้อมกันได้หรือไม่?**
+ตอบ: ได้ – วนซ้ำในโฟลเดอร์ของไฟล์ EML และใช้ขั้นตอนการแปลงเดียวกันภายในลูป
 
-**Q: What if my MSG file shows a blank body after conversion?**  
-A: Verify that the original EML contains a valid HTML or RTF body and that `ForcedRtfBodyForAppointment` is set correctly.
 
-**Q: Do I need an Aspose.Email license for development?**  
-A: A temporary license removes evaluation limits; a full license is required for production use. See the *aspose email license java* steps above.
+**ถาม: ถ้าไฟล์ MSG ของฉันแสดงเนื้อหาว่างเปล่าหลังจากแปลงแล้วจะทำอย่างไร?**
+ตอบ: ตรวจสอบว่าไฟล์ EML ต้นฉบับมีเนื้อหา HTML หรือ RTF ที่ถูกต้อง และตั้งค่า `ForcedRtfBodyForAppointment` อย่างถูกต้อง
 
-**Q: Are attachments preserved during conversion?**  
-A: Absolutely. Aspose.Email automatically copies all attachments from the EML to the MSG file.
+**ถาม: ฉันต้องมีใบอนุญาต Aspose.Email สำหรับการพัฒนาหรือไม่?**
+ตอบ: ใบอนุญาตชั่วคราวจะลบข้อจำกัดในการทดลองใช้งาน ใบอนุญาตแบบเต็มจำเป็นสำหรับการใช้งานจริง ดูขั้นตอน *aspose email license java* ด้านบน
 
-## Resources
-- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial Download](https://releases.aspose.com/email/java/)
-- [Temporary License Acquisition](https://purchase.aspose.com/temporary-license/)
-- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+**ถาม: ไฟล์แนบจะถูกเก็บรักษาไว้ระหว่างการแปลงหรือไม่?**
+ตอบ: แน่นอน Aspose.Email จะคัดลอกไฟล์แนบทั้งหมดจากไฟล์ EML ไปยังไฟล์ MSG โดยอัตโนมัติ
+
+
+## แหล่งข้อมูล
+- [เอกสารประกอบการใช้งาน Aspose.Email](https://reference.aspose.com/email/java/)
+- [ดาวน์โหลด Aspose.Email สำหรับ Java](https://releases.aspose.com/email/java/)
+- [ซื้อใบอนุญาต](https://purchase.aspose.com/buy)
+- [ดาวน์โหลดเวอร์ชันทดลองใช้งานฟรี](https://releases.aspose.com/email/java/)
+- [ขอรับใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
+- [ฟอรัมสนับสนุนของ Aspose](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-01-17  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose  
+**อัปเดตล่าสุด:** 2026-01-17
+**ทดสอบกับ:** Aspose.Email สำหรับ Java 25.4 (JDK16 classifier)
+**ผู้เขียน:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -6,7 +6,7 @@ keywords:
 - convert EML to MSG Java
 - Aspose.Email for Java conversion
 - email format conversion in Java
-title: 'Конвертация EML в MSG с помощью Aspose.Email для Java: Полное руководство'
+title: 'Конвертация EML в MSG с помощью Aspose.Email для Java - Полное руководство'
 url: /ru/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/
 weight: 1
 ---
@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Преобразование EML в MSG с помощью Aspose.Email для Java
 
 ## Введение
