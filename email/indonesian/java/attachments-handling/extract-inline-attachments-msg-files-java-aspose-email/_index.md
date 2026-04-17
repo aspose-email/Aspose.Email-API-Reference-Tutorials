@@ -1,13 +1,13 @@
 ---
-date: '2025-12-17'
-description: Pelajari cara mengekstrak lampiran inline Java dan membaca file Outlook
-  MSG Java menggunakan Aspose.Email untuk Java. Panduan langkah demi langkah untuk
-  menangani file MSG Outlook secara efisien.
+date: '2026-03-15'
+description: Pelajari cara membaca file msg dan mengekstrak lampiran inline menggunakan
+  Aspose.Email untuk Java. Tutorial Aspose Email Java ini menunjukkan cara mengatur
+  dependensi Aspose Email di Maven dan penjelasan kode.
 keywords:
 - extract inline attachments MSG Java
 - handle Outlook email formats Java
 - use Aspose.Email library for Java
-title: Ekstrak Lampiran Inline Java – File MSG dengan Aspose.Email
+title: cara membaca msg – mengekstrak lampiran inline Java
 url: /id/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
 weight: 1
 ---
@@ -17,55 +17,55 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Ekstrak Lampiran Inline Java – File MSG Menggunakan Aspose.Email
+# Cara Membaca File MSG dan Mengekstrak Lampiran Inline Java – Menggunakan Aspose.Email
 
-## Pendahuluan
+## Introduction
 
-Jika Anda perlu **mengekstrak lampiran inline java** dari file Microsoft Outlook MSG, Anda berada di tempat yang tepat. Banyak pengembang mengalami kesulitan membaca file Outlook msg java karena formatnya menyembunyikan gambar dan dokumen yang disematkan di dalam tubuh pesan. Dalam tutorial ini kami akan membahas solusi bersih yang siap produksi yang menggunakan pustaka Aspose.Email untuk Java guna menemukan, mengidentifikasi, dan menyimpan lampiran inline tersebut.
+Jika Anda perlu **cara membaca msg** file dan mengekstrak gambar atau dokumen yang tersemat, Anda berada di tempat yang tepat. Banyak pengembang mengalami tantangan saat mencoba membaca file Outlook msg java karena formatnya menempatkan lampiran inline di dalam isi pesan. Dalam tutorial Aspose Email Java langkah‑demi‑langkah ini, kami akan menunjukkan cara yang bersih dan siap produksi untuk memuat MSG, mendeteksi lampiran mana yang inline, dan menyimpannya ke disk.
 
 Pada akhir panduan ini Anda akan dapat:
 
-* Menyiapkan Aspose.Email untuk Java dalam proyek Maven.  
-* **Membaca file Outlook msg java** dan mengenumerasi lampirannya.  
-* Mendeteksi lampiran mana yang inline dan menuliskannya ke disk.  
-* Menerapkan praktik terbaik kinerja untuk pemrosesan massal.
+* Menyiapkan **dependensi Maven Aspose Email** dalam proyek Java.  
+* **Membaca file Outlook msg java** dan mengenumerasi lampirannya.  
+* Mendeteksi lampiran yang inline dan menuliskannya ke folder pilihan Anda.  
+* Menerapkan praktik yang ramah kinerja untuk pemrosesan massal.
 
-## Jawaban Cepat
-- **Apa arti “lampiran inline”?** Lampiran yang disematkan dalam tubuh email (misalnya, gambar yang ditampilkan di dalam pesan).  
-- **Pustaka mana yang menangani file MSG?** Aspose.Email untuk Java.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk evaluasi; lisensi permanen menghapus batas penggunaan.  
+## Quick Answers
+- **Apa arti “lampiran inline”?** Lampiran yang disematkan di dalam isi email (misalnya, gambar yang ditampilkan dalam pesan).  
+- **Perpustakaan mana yang menangani file MSG?** Aspose.Email untuk Java.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan dapat digunakan untuk evaluasi; lisensi permanen menghilangkan batasan penggunaan.  
 - **Bisakah saya memproses banyak file MSG sekaligus?** Ya – batch logika dan gunakan thread pool untuk skalabilitas.  
-- **Versi Java apa yang diperlukan?** JDK 16 atau yang lebih baru.
+- **Versi Java apa yang dibutuhkan?** JDK 16 atau lebih baru.
 
-## Apa itu “extract inline attachments java”?
+## What is “extract inline attachments java”?
 
-Mengekstrak lampiran inline dalam Java berarti secara programatik membuka file MSG, memindai koleksi lampirannya, dan mengambil hanya item yang ditandai sebagai *inline* (berlawanan dengan lampiran file biasa). Ini penting ketika Anda memerlukan konten visual email—seperti logo atau tangkapan layar yang disematkan—untuk disimpan sebagai file gambar terpisah.
+Mengekstrak lampiran inline dalam Java berarti secara programatik membuka file MSG, memindai koleksi lampirannya, dan mengambil hanya item yang ditandai sebagai *inline* (berbeda dengan lampiran file biasa). Ini penting ketika Anda membutuhkan konten visual email—seperti logo atau screenshot yang tersemat—untuk disimpan sebagai file gambar terpisah.
 
-## Mengapa menggunakan Aspose.Email untuk tugas ini?
+## Why use Aspose.Email for this task?
 
-Aspose.Email menyederhanakan struktur MAPI tingkat rendah dan memberikan API yang sederhana serta bertipe kuat. Dibandingkan dengan mencoba mengurai format MSG biner secara manual, Aspose.Email:
+Aspose.Email mengabstraksi struktur MAPI tingkat rendah dan memberikan API yang sederhana serta bertipe kuat. Dibandingkan harus mengurai format MSG biner secara manual, Aspose.Email:
 
 * Menangani semua varian MSG (Unicode, RTF, HTML).  
-* Menyediakan akses properti yang dapat diandalkan untuk metadata lampiran.  
-* Menawarkan pemeriksaan lisensi bawaan dan dokumentasi yang luas.  
+* Menyediakan akses properti yang andal untuk metadata lampiran.  
+* Menyertakan pemeriksaan lisensi bawaan dan dokumentasi yang luas.  
 
-## Prasyarat
+## Prerequisites
 
 Untuk mengikuti tutorial ini, pastikan Anda memiliki:
 
-1. **Pustaka dan Dependensi**  
+1. **Libraries and Dependencies**  
    * Aspose.Email untuk Java (versi terbaru).  
    * Maven (atau IDE dengan dukungan Maven).  
 
 2. **Runtime**  
-   * JDK 16 atau yang lebih baru terpasang.  
+   * JDK 16 atau lebih baru terpasang.  
 
-3. **Pengetahuan Dasar**  
-   * Familiaritas dengan I/O Java dan penanganan pengecualian.  
+3. **Basic Knowledge**  
+   * Familiaritas dengan Java I/O dan penanganan exception.  
 
-## Menyiapkan Aspose.Email untuk Java
+## Setting Up Aspose.Email for Java
 
-Tambahkan dependensi Aspose.Email ke `pom.xml` Anda. Potongan kode di bawah ini tidak berubah dari tutorial asli.
+Tambahkan dependensi Aspose.Email ke dalam `pom.xml` Anda. Potongan kode di bawah ini tidak berubah dari tutorial asli.
 
 ```xml
 <dependency>
@@ -76,17 +76,17 @@ Tambahkan dependensi Aspose.Email ke `pom.xml` Anda. Potongan kode di bawah ini 
 </dependency>
 ```
 
-### Langkah-langkah Akuisisi Lisensi
+### License Acquisition Steps
 
-* **Percobaan Gratis:** Unduh DLL/JAR percobaan dari situs Aspose.  
-* **Lisensi Sementara:** Minta lisensi evaluasi 30‑hari untuk pengujian tanpa batas.  
-* **Pembelian Penuh:** Dapatkan lisensi permanen untuk penyebaran produksi.
+* **Free Trial:** Unduh trial DLL/JAR dari situs Aspose.  
+* **Temporary License:** Minta lisensi evaluasi 30‑hari untuk pengujian tanpa batas.  
+* **Full Purchase:** Dapatkan lisensi permanen untuk penggunaan produksi.
 
-## Panduan Implementasi
+## Implementation Guide
 
 Berikut kami membagi solusi menjadi tiga fitur terfokus. Setiap fitur berisi penjelasan singkat diikuti oleh blok kode asli (dipertahankan persis).
 
-### Fitur 1 – Memuat File MSG
+### Feature 1 – Load the MSG File
 
 Pertama, muat pesan Outlook ke dalam objek `MapiMessage`.
 
@@ -97,7 +97,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatting.msg");
 ```
 
-### Fitur 2 – Mengambil Lampiran
+### Feature 2 – Retrieve Attachments
 
 Selanjutnya, ambil koleksi lampiran lengkap dari pesan.
 
@@ -107,9 +107,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-### Fitur 3 – Mengidentifikasi dan Menyimpan Lampiran Inline
+### Feature 3 – Identify and Save Inline Attachments
 
-Loop melalui setiap lampiran, periksa apakah itu inline, lalu tulis ke disk.
+Iterasi setiap lampiran, periksa apakah ia inline, lalu tulis ke disk.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -124,9 +124,9 @@ for (Object untypedAttachment : attachments) {
 }
 ```
 
-#### Utilitas: Menentukan Apakah Lampiran Inline
+#### Utility: Determine If an Attachment Is Inline
 
-Metode pembantu memeriksa properti MAPI untuk memutuskan apakah lampiran disematkan.
+Metode pembantu ini memeriksa properti MAPI untuk menentukan apakah sebuah lampiran tersemat.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -149,7 +149,7 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-#### Utilitas: Menyimpan Lampiran Inline
+#### Utility: Save the Inline Attachment
 
 Menulis konten biner lampiran inline ke file pada sistem berkas lokal.
 
@@ -170,55 +170,58 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 }
 ```
 
-## Aplikasi Praktis
+## Practical Applications
 
 Mengekstrak lampiran inline berguna dalam banyak skenario dunia nyata:
 
-* **Pemrosesan Email Otomatis** – Mengambil gambar dari buletin untuk analitik.  
-* **Migrasi Data** – Memindahkan konten yang disematkan saat migrasi dari Exchange ke platform lain.  
-* **Solusi Arsip** – Mempertahankan kesetiaan visual pesan yang diarsipkan dengan menyimpan aset inline secara terpisah.
+* **Automated Email Processing** – Mengambil gambar dari buletin untuk analitik.  
+* **Data Migration** – Memindahkan konten tersemat saat migrasi dari Exchange ke platform lain.  
+* **Archiving Solutions** – Menjaga kesetiaan visual pesan yang diarsipkan dengan menyimpan aset inline secara terpisah.
 
-## Pertimbangan Kinerja
+## Performance Considerations
 
 Saat menangani ratusan atau ribuan file MSG, perhatikan tips berikut:
 
-* **Pemrosesan Batch:** Kelompokkan file menjadi batch yang dapat dikelola untuk menghindari lonjakan memori.  
-* **Buang Sumber Daya Secara Cepat:** Tutup alur (`try‑with‑resources`) dan biarkan garbage collector membersihkan objek.  
-* **Eksekusi Paralel:** Gunakan `ExecutorService` berukuran tetap untuk menjalankan beberapa pekerjaan ekstraksi secara bersamaan, tetapi pantau penggunaan CPU.
+* **Batch Processing:** Kelompokkan file ke dalam batch yang dapat dikelola untuk menghindari lonjakan memori.  
+* **Dispose Resources Promptly:** Tutup stream (`try‑with‑resources`) dan biarkan garbage collector membersihkan objek.  
+* **Parallel Execution:** Gunakan `ExecutorService` berukuran tetap untuk menjalankan beberapa pekerjaan ekstraksi secara bersamaan, namun pantau penggunaan CPU.
 
-## Masalah Umum & Pemecahan Masalah
+## Common Issues & Troubleshooting
 
-| Gejala | Penyebab Kemungkinan | Solusi |
-|--------|----------------------|--------|
-| `NullPointerException` pada `attachment.getObjectData()` | Pesan tidak memiliki metadata lampiran (mis., MSG rusak) | Validasi file MSG sebelum diproses atau tangkap pengecualian dan log nama file. |
-| File yang disimpan kosong atau rusak | Nama properti tidak tepat (`"Package"` sensitif huruf) | Pastikan nama properti cocok dengan properti aktual MSG; dokumentasi Aspose.Email mencantumkan string yang tepat. |
-| Kinerja menurun pada file besar | Alur tidak ditutup, menyebabkan kebocoran memori | Gunakan try‑with‑resources (seperti yang ditunjukkan) dan pertimbangkan meningkatkan heap JVM bila diperlukan. |
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| `NullPointerException` on `attachment.getObjectData()` | Pesan tidak memiliki metadata lampiran (misalnya, MSG rusak) | Validasi file MSG sebelum diproses atau tangkap exception dan log nama file. |
+| Saved file is empty or corrupted | Nama properti tidak tepat (`"Package"` sensitif huruf) | Pastikan nama properti cocok dengan properti sebenarnya pada MSG; dokumentasi Aspose.Email mencantumkan string yang tepat. |
+| Performance degrades with large files | Stream tidak ditutup, menyebabkan kebocoran memori | Gunakan try‑with‑resources (seperti contoh) dan pertimbangkan meningkatkan heap JVM bila diperlukan. |
 
-## Pertanyaan yang Sering Diajukan
+## Frequently Asked Questions
 
-**T: Apa versi minimum Aspose.Email yang diperlukan?**  
-J: Tutorial ini menggunakan versi 25.4, tetapi semua rilis 24.x+ yang mendukung JDK 16 akan berfungsi.
+**Q: Apa versi minimum Aspose.Email yang diperlukan?**  
+A: Tutorial ini menggunakan versi 25.4, namun semua rilis 24.x+ yang mendukung JDK 16 akan berfungsi.
 
-**T: Bisakah saya mengekstrak lampiran inline dari file MSG terenkripsi?**  
-J: Ya, asalkan Anda menyediakan kata sandi dekripsi yang benar saat memuat `MapiMessage`.
+**Q: Bisakah saya mengekstrak lampiran inline dari file MSG yang terenkripsi?**  
+A: Ya, asalkan Anda menyediakan kata sandi dekripsi yang tepat saat memuat `MapiMessage`.
 
-**T: Bagaimana cara membedakan antara gambar inline dan lampiran file biasa?**  
-J: Gunakan pembantu `IsAttachmentInline`; ia memeriksa flag MAPI `ObjInfo` yang menandai lampiran sebagai inline.
+**Q: Bagaimana cara membedakan antara gambar inline dan lampiran file biasa?**  
+A: Gunakan helper `IsAttachmentInline`; ia memeriksa flag MAPI `ObjInfo` yang menandai lampiran sebagai inline.
 
-**T: Apakah ada cara untuk mempertahankan nama file asli lampiran inline?**  
-J: Contoh menghasilkan UUID untuk keunikan, tetapi Anda dapat membaca properti `attachment.getLongFileName()` dan menggunakannya saat memanggil `SaveAttachment`.
+**Q: Apakah ada cara untuk mempertahankan nama file asli lampiran inline?**  
+A: Contoh menghasilkan UUID untuk keunikan, namun Anda dapat membaca properti `attachment.getLongFileName()` dan menggunakannya saat memanggil `SaveAttachment`.
 
-**T: Apakah pendekatan ini bekerja di Linux/macOS serta Windows?**  
-J: Tentu—Aspose.Email bersifat platform‑independen selama JDK terpasang.
+**Q: Apakah pendekatan ini bekerja di Linux/macOS serta Windows?**  
+A: Tentu—Aspose.Email bersifat platform‑independen selama JDK terpasang.
 
-## Sumber Daya
-- **Dokumentasi:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
+**Q: Di mana saya dapat menemukan detail lebih lanjut tentang dependensi Maven Aspose Email?**  
+A: Lihat dokumentasi resmi Aspose yang ditautkan di bawah.
+
+## Resources
+- **Documentation:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-17  
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (JDK 16)  
-**Penulis:** Aspose  
+**Last Updated:** 2026-03-15  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

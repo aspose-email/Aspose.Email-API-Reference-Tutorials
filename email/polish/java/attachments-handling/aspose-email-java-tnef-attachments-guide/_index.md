@@ -1,13 +1,13 @@
 ---
-date: '2025-12-13'
-description: Dowiedz się, jak konwertować pliki MSG i EML przy użyciu Aspose.Email
-  dla Javy, dodać nowy załącznik, zapisać załącznik e‑mail i obsługiwać dane TNEF.
+date: '2026-03-15'
+description: Dowiedz się, jak konwertować pliki msg na eml w Javie przy użyciu Aspose.Email,
+  dodawać załączniki do plików eml, konwertować pliki msg wsadowo oraz obsługiwać
+  dane TNEF.
 keywords:
 - Aspose.Email Java
 - TNEF Handling
 - Email Attachments
-title: Konwertuj pliki MSG i EML przy użyciu Aspose.Email Java – Przewodnik po załącznikach
-  TNEF
+title: konwertuj msg na eml java – Przewodnik po załącznikach TNEF Aspose.Email
 url: /pl/java/attachments-handling/aspose-email-java-tnef-attachments-guide/
 weight: 1
 ---
@@ -17,19 +17,19 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Opanowanie Aspose.Email Java: Obsługa TNEF i załączników e‑mail  
+# Opanowanie **convert msg to eml java** z Aspose.Email Java: Obsługa TNEF i załączników e‑mail  
 
-W nowoczesnych aplikacjach skoncentrowanych na e‑mailach często trzeba **convert msg eml** pliki, dodać nowy załącznik do istniejącej wiadomości i zachować specjalne formaty, takie jak TNEF. Niezależnie od tego, czy tworzysz usługę archiwizacji, narzędzie migracyjne, czy przeglądarkę poczty po stronie klienta, Aspose.Email for Java zapewnia czysty, programistyczny sposób na to. W tym samouczku zobaczysz dokładnie, jak **convert msg to eml**, dodać nowy załącznik, zapisać załącznik e‑mail i pracować z danymi TNEF przy użyciu biblioteki Aspose.Email Java.
+W nowoczesnych aplikacjach skoncentrowanych na e‑mailach często musisz **convert msg to eml java**, dodać nowy załącznik do istniejącej wiadomości i zachować specjalne formaty, takie jak TNEF. Niezależnie od tego, czy tworzysz usługę archiwizacji, narzędzie migracji, czy przeglądarkę poczty po stronie klienta, Aspose.Email for Java zapewnia czysty, programowy sposób realizacji. W tym samouczku zobaczysz dokładnie, jak **convert msg to eml java**, **add attachment to eml**, zapisać załącznik e‑mail oraz pracować z danymi TNEF przy użyciu biblioteki Aspose.Email Java.
 
 ## Szybkie odpowiedzi
-- **Jak konwertować MSG na EML?** Użyj `MapiMessage` z `MailConversionOptions` i ustaw `convertAsTnef` na `true`.  
+- **Jak przekonwertować MSG na EML w Javie?** Użyj `MapiMessage` z `MailConversionOptions` i ustaw `convertAsTnef` na `true`.  
 - **Czy mogę dodać załącznik do EML z włączonym TNEF?** Tak – załaduj EML, wywołaj `getAttachments().addItem(...)`, a następnie zapisz.  
-- **Jakiej wersji Aspose.Email potrzebuję?** Przykład używa wersji 25.4 (JDK 16).  
-- **Czy potrzebna jest licencja do produkcji?** Tak – wersja próbna działa do oceny, ale pełna licencja usuwa ograniczenia.  
+- **Jakie zależności Maven są potrzebne?** Dołącz **maven aspose email dependency** pokazane poniżej.  
+- **Czy potrzebna jest licencja do produkcji?** Tak – wersja próbna działa w ocenie, ale pełna licencja usuwa ograniczenia.  
 - **Czy istnieje sposób wykrycia TNEF w istniejącej wiadomości?** Wywołaj `mail.getOriginalIsTnef()` po załadowaniu EML.
 
-## Co to jest „convert msg eml”?
-Konwersja pliku Microsoft Outlook MSG do standardowego formatu EML umożliwia odczytanie wiadomości przez dowolny klient poczty zgodny z RFC‑822. Konwersja daje także możliwość zachowania lub manipulacji danymi zakodowanymi w TNEF w trakcie procesu.
+## Co to jest “convert msg to eml java”?
+Konwersja pliku Microsoft Outlook MSG do standardowego formatu EML umożliwia odczyt wiadomości przez dowolny klient poczty zgodny z RFC‑822. Konwersja daje również możliwość zachowania lub manipulacji danymi zakodowanymi w TNEF w trakcie procesu.
 
 ## Dlaczego używać Aspose.Email Java do tego zadania?
 - **Pełne wsparcie formatów** – MSG, EML, MHTML i inne.  
@@ -55,9 +55,9 @@ Add the library to your Maven `pom.xml`:
 ```
 
 ### Uzyskanie licencji
-Aspose.Email oferuje bezpłatną wersję próbną, ale wersja licencjonowana jest wymagana do nieograniczonego użycia.
+Aspose.Email oferuje darmową wersję próbną, ale wersja licencjonowana jest wymagana do nieograniczonego użycia.
 
-- **Bezpłatna wersja próbna:** Pobierz tymczasową licencję [tutaj](https://releases.aspose.com/email/java/).  
+- **Darmowa wersja próbna:** Pobierz tymczasową licencję [tutaj](https://releases.aspose.com/email/java/).  
 - **Zakup:** Aby kupić licencję, odwiedź [stronę zakupu](https://purchase.aspose.com/buy).
 
 Initialize the license in your Java code:
@@ -70,7 +70,7 @@ license.setLicense("path/to/your/license/file.lic");
 ## Przewodnik implementacji
 
 ### Dodawanie nowego załącznika do głównej wiadomości zawierającej TNEF
-**Jak dodać załącznik:** Załaduj EML, dodaj plik, a następnie zapisz.
+**Jak dodać załącznik do eml:** Załaduj EML, dodaj plik, a następnie zapisz.
 
 #### Krok 1: Załaduj istniejącą wiadomość e‑mail
 ```java
@@ -92,7 +92,7 @@ eml.save(dataDir + "test_out.eml");
 *Wskazówka:* Używaj try‑with‑resources, aby zapewnić zamknięcie strumieni i uniknąć `FileNotFoundException`.
 
 ### Tworzenie EML z włączonym TNEF z MSG
-**Jak konwertować msg na eml:** Ustaw `convertAsTnef` na `true`.
+**Jak przekonwertować msg na eml java:** Ustaw `convertAsTnef` na `true`.
 
 #### Krok 1: Załaduj plik MSG
 ```java
@@ -142,34 +142,34 @@ boolean isTnef = mail.getOriginalIsTnef();
 system.out.println("Is TNEF: " + isTnef);
 ```
 
-## Praktyczne zastosowania
-1. **Archiwizacja e‑maili:** Zachowaj każdy załącznik — w tym zakodowane w TNEF — dla audytów zgodności.  
-2. **Migracja korporacyjna:** Konwertuj starsze pliki MSG na EML, aby można je było zaimportować do nowoczesnych serwerów pocztowych.  
-3. **Wsparcie klienta:** Automatycznie wykrywaj dane TNEF, gdy użytkownicy przekazują wiadomości między Outlook a klientami web‑mail.
+## Typowe przypadki użycia i scenariusze wsadowe
+- **Wsadowa konwersja msg:** Przejdź pętlą przez folder z plikami `.msg`, zastosuj powyższe kroki konwersji i zapisz każdy wynik jako `.eml`. Idealne do migracji na dużą skalę.  
+- **Dodawanie załącznika do eml masowo:** Połącz kod „add attachment” z iteratorem systemu plików, aby wzbogacić wiele wiadomości jednocześnie.  
+- **Automatyczne archiwizowanie:** Przechowuj zarówno oryginalny MSG, jak i EML zachowujący TNEF dla audytów zgodności.
 
 ## Rozważania dotyczące wydajności
 - **Zarządzanie zasobami:** Owiń strumienie plików w try‑with‑resources, aby szybko zwalniać uchwyty.  
-- **Duże załączniki:** Przetwarzaj duże pliki w kawałkach lub strumieniowo, aby uniknąć dużego zużycia pamięci.  
-- **Monitorowanie:** Używaj narzędzi profilujących Java, aby obserwować zużycie sterty przy obsłudze wielu załączników.
+- **Duże załączniki:** Przetwarzaj duże pliki w częściach lub strumieniuj je bezpośrednio, aby uniknąć wysokiego zużycia pamięci.  
+- **Monitorowanie:** Używaj narzędzi profilujących Java, aby obserwować zużycie pamięci heap przy obsłudze wielu załączników.
 
 ## Podsumowanie
-Postępując zgodnie z powyższymi krokami, możesz **convert msg eml**, dodać nowy załącznik, zapisać załącznik e‑mail i niezawodnie pracować z danymi TNEF przy użyciu Aspose.Email for Java. Biblioteka abstrahuje niskopoziomową obsługę MIME, pozwalając skupić się na logice biznesowej. Aby zgłębić temat, sprawdź oficjalną [dokumentację Aspose](https://reference.aspose.com/email/java/) lub eksperymentuj z innymi opcjami konwersji.
+Postępując zgodnie z powyższymi krokami, możesz **convert msg to eml java**, dodać nowy załącznik, zapisać załącznik e‑mail i niezawodnie pracować z danymi TNEF przy użyciu Aspose.Email for Java. Biblioteka abstrahuje niskopoziomową obsługę MIME, pozwalając skupić się na logice biznesowej. Aby zgłębić temat, sprawdź oficjalną [dokumentację Aspose](https://reference.aspose.com/email/java/) lub eksperymentuj z innymi opcjami konwersji.
 
 ## Sekcja FAQ
 **Q1: Co to jest plik TNEF?**  
-O1: TNEF oznacza Transport Neutral Encapsulation Format i jest używany przez Microsoft Outlook do zachowania formatowania rich‑text przy wysyłaniu e‑maili jako załączników.
+A1: TNEF oznacza Transport Neutral Encapsulation Format i jest używany przez Microsoft Outlook do zachowania formatowania rich‑text przy wysyłaniu e‑maili jako załączników.
 
 **Q2: Czy mogę używać Aspose.Email bez zakupu licencji?**  
-O2: Tak, możesz rozpocząć od wersji próbnej. Jednak wersja próbna narzuca pewne ograniczenia, które mogą wpływać na pełnoskalowe użycie.
+A2: Tak, możesz rozpocząć od wersji próbnej. Jednak wersja próbna nakłada pewne ograniczenia, które mogą wpływać na pełnoskalowe użycie.
 
 **Q3: Czy można konwertować pomiędzy wszystkimi formatami e‑mail przy użyciu Aspose.Email?**  
-O3: Aspose.Email obsługuje konwersję między większością popularnych formatów — w tym EML, MSG i MHTML — ale sprawdź konkretną obsługę formatów w [dokumentacji](https://reference.aspose.com/email/java/).
+A3: Aspose.Email obsługuje konwersję między większością popularnych formatów — w tym EML, MSG i MHTML — ale sprawdź wsparcie konkretnego formatu w [dokumentacji](https://reference.aspose.com/email/java/).
 
-**Q4: Jak rozwiązać problemy z błędami plik‑nie‑znaleziony w Aspose.Email?**  
-O4: Sprawdź, czy ścieżki plików przekazywane do API są poprawne, czy pliki istnieją oraz czy proces ma odpowiednie uprawnienia odczytu/zapisu w tych katalogach.
+**Q4: Jak rozwiązać problemy z błędami „file‑not‑found” w Aspose.Email?**  
+A4: Sprawdź dokładnie, czy ścieżki plików przekazywane do API są poprawne, czy pliki istnieją oraz czy proces wykonujący ma uprawnienia odczytu/zapisu do tych katalogów.
 
 **Q5: Jaki jest najlepszy sposób obsługi dużych załączników w Aspose.Email?**  
-O5: Przetwarzaj załączniki w mniejszych strumieniach lub kawałkach i zawsze zamykaj strumienie niezwłocznie. To zmniejsza obciążenie pamięci i zapobiega `OutOfMemoryError`.
+A5: Przetwarzaj załączniki w mniejszych strumieniach lub częściach i zawsze szybko zamykaj strumienie. To zmniejsza obciążenie pamięci i zapobiega `OutOfMemoryError`.
 
 ## Często zadawane pytania (dodatkowe)
 
@@ -177,18 +177,18 @@ O5: Przetwarzaj załączniki w mniejszych strumieniach lub kawałkach i zawsze z
 A: Nie. Domyślnie dane TNEF są zachowywane. Możesz kontrolować to zachowanie za pomocą `MailConversionOptions.setConvertAsTnef`.
 
 **Q: Czy mogę programowo wylistować wszystkie załączniki w załadowanej wiadomości?**  
-A: Tak — użyj `mail.getAttachments()`, które zwraca kolekcję, którą możesz iterować.
+A: Tak — użyj `mail.getAttachments()`, które zwraca kolekcję, po której możesz iterować.
 
-**Q: Czy istnieje sposób konwertowania partii plików MSG na EML w jednym przebiegu?**  
-A: Oczywiście. Przejdź pętlą po plikach, zastosuj kroki konwersji pokazane powyżej i zapisz każdy wynik.
+**Q: Czy istnieje sposób na wsadową konwersję plików msg do eml w jednym przebiegu?**  
+A: Oczywiście. Przejdź pętlą przez pliki, zastosuj powyższe kroki konwersji i zapisz każdy wynik.
 
-**Powiązane zasoby:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
+**Powiązane zasoby:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Pobierz tymczasową licencję [tutaj](https://releases.aspose.com/email/java/).
 
 ---
 
-**Last Updated:** 2025-12-13  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Ostatnia aktualizacja:** 2026-03-15  
+**Testowano z:** Aspose.Email for Java 25.4 (JDK 16)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

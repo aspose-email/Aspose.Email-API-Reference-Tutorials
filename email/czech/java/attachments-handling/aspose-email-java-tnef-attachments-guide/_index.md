@@ -1,13 +1,12 @@
 ---
-date: '2025-12-13'
-description: Naučte se, jak převádět soubory msg a eml pomocí Aspose.Email pro Javu,
-  přidávat nové přílohy, ukládat přílohy e‑mailu a zpracovávat data TNEF.
+date: '2026-03-15'
+description: Naučte se, jak převést soubory MSG na EML v Javě pomocí Aspose.Email,
+  přidat přílohu k EML, hromadně převádět MSG a zpracovávat data TNEF.
 keywords:
 - Aspose.Email Java
 - TNEF Handling
 - Email Attachments
-title: Převod souborů MSG a EML pomocí Aspose.Email pro Javu – Průvodce přílohami
-  TNEF
+title: převod msg na eml java – Průvodce přílohami TNEF v Aspose.Email
 url: /cs/java/attachments-handling/aspose-email-java-tnef-attachments-guide/
 weight: 1
 ---
@@ -17,19 +16,19 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mistrovství Aspose.Email Java: Práce s TNEF a přílohami e‑mailu  
+# Ovládání **convert msg to eml java** s Aspose.Email Java: Práce s TNEF a přílohami e‑mailu  
 
-V moderních aplikacích zaměřených na e‑mail často potřebujete **convert msg eml** soubory, přidat novou přílohu k existující zprávě a zachovat speciální formáty jako TNEF. Ať už vytváříte archivní službu, migrační nástroj nebo klientský prohlížeč pošty, Aspose.Email pro Java vám poskytuje čistý programový způsob, jak to provést. V tomto tutoriálu uvidíte přesně, jak **convert msg to eml**, přidat novou přílohu, uložit přílohu e‑mailu a pracovat s TNEF daty pomocí knihovny Aspose.Email Java.
+V moderních aplikacích zaměřených na e‑mail často potřebujete **convert msg to eml java**, přidat novou přílohu k existující zprávě a zachovat speciální formáty jako TNEF. Ať už vytváříte archivní službu, migrační nástroj nebo klientský prohlížeč pošty, Aspose.Email pro Java vám poskytuje čistý programový způsob, jak to provést. V tomto tutoriálu uvidíte přesně, jak **convert msg to eml java**, **add attachment to eml**, uložit přílohu e‑mailu a pracovat s daty TNEF pomocí knihovny Aspose.Email Java.
 
 ## Rychlé odpovědi
-- **Jak převést MSG na EML?** Použijte `MapiMessage` s `MailConversionOptions` a nastavte `convertAsTnef` na `true`.  
-- **Mohu přidat přílohu do EML s podporou TNEF?** Ano – načtěte EML, zavolejte `getAttachments().addItem(...)` a poté uložte.  
-- **Jaká verze Aspose.Email je vyžadována?** Příklad používá verzi 25.4 (JDK 16).  
+- **Jak převést MSG na EML v Javě?** Použijte `MapiMessage` s `MailConversionOptions` a nastavte `convertAsTnef` na `true`.  
+- **Mohu přidat přílohu do EML s povoleným TNEF?** Ano – načtěte EML, zavolejte `getAttachments().addItem(...)` a poté uložte.  
+- **Jaká Maven závislost je potřeba?** Zahrňte **maven aspose email dependency** uvedenou níže.  
 - **Potřebuji licenci pro produkci?** Ano – zkušební verze funguje pro hodnocení, ale plná licence odstraňuje omezení.  
 - **Existuje způsob, jak detekovat TNEF v existující zprávě?** Zavolejte `mail.getOriginalIsTnef()` po načtení EML.
 
-## Co je “convert msg eml”?
-Převod souboru Microsoft Outlook MSG do standardního formátu EML umožňuje zprávu číst v libovolném poštovním klientu kompatibilním s RFC‑822. Převod vám také dává možnost zachovat nebo manipulovat s TNEF‑kódovanými daty během procesu.
+## Co je “convert msg to eml java”?
+Převod souboru Microsoft Outlook MSG do standardního formátu EML umožňuje zprávu číst v jakémkoli poštovním klientovi kompatibilním s RFC‑822. Převod vám také dává možnost zachovat nebo manipulovat s daty kódovanými jako TNEF během procesu.
 
 ## Proč použít Aspose.Email Java pro tento úkol?
 - **Kompletní podpora formátů** – MSG, EML, MHTML a další.  
@@ -55,7 +54,7 @@ Add the library to your Maven `pom.xml`:
 ```
 
 ### Získání licence
-Aspose.Email nabízí bezplatnou zkušební verzi, ale pro neomezené použití je vyžadována licencovaná verze.
+Aspose.Email nabízí bezplatnou zkušební verzi, ale pro neomezené používání je vyžadována licencovaná verze.
 
 - **Bezplatná zkušební verze:** Stáhněte dočasnou licenci [zde](https://releases.aspose.com/email/java/).  
 - **Koupit:** Pro zakoupení licence navštivte [stránku nákupu](https://purchase.aspose.com/buy).
@@ -70,7 +69,7 @@ license.setLicense("path/to/your/license/file.lic");
 ## Průvodce implementací
 
 ### Přidání nové přílohy do hlavní zprávy obsahující TNEF
-**Jak přidat přílohu:** Načtěte EML, přidejte soubor a poté uložte.
+**Jak přidat přílohu do eml:** Načtěte EML, přidejte soubor a poté uložte.
 
 #### Krok 1: Načtení existující e‑mailové zprávy
 ```java
@@ -91,8 +90,8 @@ eml.save(dataDir + "test_out.eml");
 ```
 *Tip:* Použijte try‑with‑resources k zajištění uzavření streamů a vyhněte se `FileNotFoundException`.
 
-### Vytvoření EML s podporou TNEF z MSG
-**Jak převést msg na eml:** Nastavte `convertAsTnef` na `true`.
+### Vytvoření EML s povoleným TNEF z MSG
+**Jak převést msg na eml java:** Nastavte `convertAsTnef` na `true`.
 
 #### Krok 1: Načtení souboru MSG
 ```java
@@ -142,31 +141,31 @@ boolean isTnef = mail.getOriginalIsTnef();
 system.out.println("Is TNEF: " + isTnef);
 ```
 
-## Praktické aplikace
-1. **Archivace e‑mailů:** Zachovat každou přílohu – včetně TNEF‑kódovaných – pro audity souladu.  
-2. **Firemní migrace:** Převést staré soubory MSG na EML, aby mohly být importovány do moderních poštovních serverů.  
-3. **Zákaznická podpora:** Automaticky detekovat TNEF data, když uživatelé přeposílají zprávy mezi Outlook a webovými poštovními klienty.
+## Běžné případy použití a dávkové scénáře
+- **Dávkový převod msg:** Procházejte složku s `.msg` soubory, aplikujte výše uvedené kroky převodu a uložte každý výsledek jako `.eml`. Ideální pro rozsáhlé migrace.  
+- **Přidání přílohy do eml hromadně:** Kombinujte kód “add attachment” s iterátorem souborového systému pro obohacení mnoha zpráv najednou.  
+- **Automatické archivování:** Uložte jak originální MSG, tak EML zachovávající TNEF pro audity souladu.
 
 ## Úvahy o výkonu
-- **Správa zdrojů:** Zabalte souborové streamy do try‑with‑resources, aby se rychle uvolnily handly.  
+- **Správa zdrojů:** Zabalte souborové streamy do try‑with‑resources, aby se rychle uvolnily handle.  
 - **Velké přílohy:** Zpracovávejte velké soubory po částech nebo je streamujte přímo, aby se předešlo vysoké spotřebě paměti.  
-- **Monitorování:** Použijte nástroje pro profilování Javy ke sledování spotřeby haldy při práci s mnoha přílohami.
+- **Monitorování:** Použijte nástroje pro profilování Javy ke sledování spotřeby haldy při zpracování mnoha příloh.
 
 ## Závěr
-Podle výše uvedených kroků můžete **convert msg eml**, přidat novou přílohu, uložit e‑mailovou přílohu a spolehlivě pracovat s TNEF daty pomocí Aspose.Email pro Java. Knihovna abstrahuje nízkoúrovňové zpracování MIME, což vám umožní soustředit se na obchodní logiku. Pro podrobnější průzkum si prohlédněte oficiální [Aspose dokumentaci](https://reference.aspose.com/email/java/) nebo experimentujte s dalšími možnostmi převodu.
+Podle výše uvedených kroků můžete **convert msg to eml java**, přidat novou přílohu, uložit e‑mailovou přílohu a spolehlivě pracovat s daty TNEF pomocí Aspose.Email pro Java. Knihovna abstrahuje nízkoúrovňové zpracování MIME, což vám umožní soustředit se na obchodní logiku. Pro podrobnější průzkum si prohlédněte oficiální [Aspose dokumentaci](https://reference.aspose.com/email/java/) nebo experimentujte s dalšími možnostmi převodu.
 
 ## Často kladené otázky
 **Q1: Co je soubor TNEF?**  
-A1: TNEF znamená Transport Neutral Encapsulation Format a používá jej Microsoft Outlook k zachování formátování rich‑textu při odesílání e‑mailů jako příloh.
+A1: TNEF znamená Transport Neutral Encapsulation Format a používá jej Microsoft Outlook k zachování formátování rich‑text při odesílání e‑mailů jako příloh.
 
-**Q2: Mohu používat Aspose.Email bez zakoupení licence?**  
-A2: Ano, můžete začít s bezplatnou zkušební verzí. Nicméně zkušební verze ukládá určitá omezení, která mohou ovlivnit plnohodnotné používání.
+**Q2: Můžu používat Aspose.Email bez zakoupení licence?**  
+A2: Ano, můžete začít s bezplatnou zkušební verzí. Nicméně zkušební verze uvaluje určitá omezení, která mohou ovlivnit plnohodnotné používání.
 
 **Q3: Je možné převádět mezi všemi e‑mailovými formáty pomocí Aspose.Email?**  
 A3: Aspose.Email podporuje převod mezi většinou populárních formátů – včetně EML, MSG a MHTML – ale ověřte konkrétní podporu formátů v [dokumentaci](https://reference.aspose.com/email/java/).
 
-**Q4: Jak řešit chyby „soubor nenalezen“ s Aspose.Email?**  
-A4: Dvakrát zkontrolujte, že cesty k souborům, které předáváte API, jsou správné, že soubory existují a že proces má oprávnění čtení/zápisu do těchto adresářů.
+**Q4: Jak řešit chyby file‑not‑found s Aspose.Email?**  
+A4: Ověřte, že cesty k souborům, které předáváte API, jsou správné, soubory existují a proces má oprávnění čtení/zápisu do těchto adresářů.
 
 **Q5: Jaký je nejlepší způsob, jak zacházet s velkými přílohami pomocí Aspose.Email?**  
 A5: Zpracovávejte přílohy v menších streamech nebo částech a vždy je rychle uzavírejte. Tím se snižuje zatížení paměti a předchází se `OutOfMemoryError`.
@@ -174,19 +173,19 @@ A5: Zpracovávejte přílohy v menších streamech nebo částech a vždy je ryc
 ## Často kladené otázky (další)
 
 **Q: Odstraňuje Aspose.Email automaticky TNEF při převodu na EML?**  
-A: Ne. Ve výchozím nastavení jsou TNEF data zachována. Toto chování můžete ovládat pomocí `MailConversionOptions.setConvertAsTnef`.
+A: Ne. Ve výchozím nastavení jsou data TNEF zachována. Toto chování můžete ovládat pomocí `MailConversionOptions.setConvertAsTnef`.
 
-**Q: Mohu programově vypsat všechny přílohy ve načtené zprávě?**  
+**Q: Můžu programově vypsat všechny přílohy v načtené zprávě?**  
 A: Ano – použijte `mail.getAttachments()`, který vrací kolekci, kterou můžete iterovat.
 
-**Q: Existuje způsob, jak převést dávku souborů MSG na EML v jednom běhu?**  
-A: Rozhodně. Procházejte soubory, aplikujte kroky převodu uvedené výše a uložte každý výsledek.
-
+**Q: Existuje způsob, jak dávkově převést soubory msg na eml v jednom běhu?**  
+A: Rozhodně. Procházejte soubory, aplikujte výše uvedené kroky převodu a uložte každý výsledek.
 
 **Související zdroje:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Stáhněte dočasnou licenci [zde](https://releases.aspose.com/email/java/).
+
 ---
 
-**Poslední aktualizace:** 2025-12-13  
+**Poslední aktualizace:** 2026-03-15  
 **Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
 **Autor:** Aspose  
 

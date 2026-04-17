@@ -1,80 +1,73 @@
 ---
-date: '2025-12-17'
-description: Apprenez à extraire les pièces jointes en ligne en Java et à lire les
-  fichiers Outlook MSG en Java avec Aspose.Email for Java. Guide étape par étape pour
-  gérer efficacement les fichiers MSG d’Outlook.
+date: '2026-03-15'
+description: Apprenez à lire les fichiers msg et à extraire les pièces jointes intégrées
+  à l’aide d’Aspose.Email pour Java. Ce tutoriel Aspose Email Java montre la configuration
+  de la dépendance Maven Aspose Email et le déroulement du code.
 keywords:
 - extract inline attachments MSG Java
 - handle Outlook email formats Java
 - use Aspose.Email library for Java
-title: Extraire les pièces jointes en ligne Java – fichiers MSG avec Aspose.Email
+title: Comment lire un MSG – extraire les pièces jointes en ligne avec Java
 url: /fr/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
 weight: 1
 ---
+
+Proceed.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Extraire les pièces jointes inline Java – Fichiers MSG avec Aspose.Email
+# Comment lire les fichiers MSG et extraire les pièces jointes en ligne Java – En utilisant Aspose.Email
 
 ## Introduction
 
-Si vous devez **extraire les pièces jointes inline java** à partir de fichiers Microsoft OutlookMSG, vous êtes au bon endroit. De nombreux développeurs rencontrent des difficultés à lire les fichiers Outlookmsgjava car le format masque les images et documents intégrés dans le corps du message. Dans ce tutoriel, nous parcourrons une solution propre, prête pour la production, qui utilise la bibliothèque Aspose.Email pour Java afin de localiser, identifier et enregistrer ces pièces jointes en ligne.
+Si vous avez besoin de **comment lire des fichiers msg** et d’extraire les images ou documents intégrés, vous êtes au bon endroit. De nombreux développeurs rencontrent des difficultés lorsqu’ils essaient de lire des fichiers Outlook msg java parce que le format imbrique les pièces jointes en ligne dans le corps du message. Dans ce tutoriel pas à pas Aspose Email Java, nous vous montrerons une méthode propre et prête pour la production afin de charger un MSG, détecter quelles pièces jointes sont en ligne, et les enregistrer sur le disque.
 
 À la fin de ce guide, vous serez capable de :
 
-* Configureur Aspose.Email pour Java dans un projet Maven.
-* **Lire les fichiers Outlookmsgjava** et énumérer leurs pièces jointes.
-* Détecter quelles pièces jointes sont en ligne et les écrire sur le disque.
-* Appliquer les meilleures pratiques de performance pour le traitement en masse.
+* Configurer la **dépendance Maven Aspose Email** dans un projet Java.  
+* **Lire des fichiers Outlook msg java** et énumérer leurs pièces jointes.  
+* Détecter quelles pièces jointes sont en ligne et les écrire dans le dossier de votre choix.  
+* Appliquer des pratiques favorables aux performances pour le traitement en masse.
 
 ## Réponses rapides
-- **Que signifie « pièce jointe en ligne » ?** Une pièce jointe intégrée au corps de l'e-mail (par exemple, des images affichées dans le message).
-- **Quelle bibliothèque gère les fichiers MSG ?** Aspose.Email pour Java.
+- **Que signifie « pièce jointe en ligne » ?** Une pièce jointe qui est intégrée dans le corps de l’e‑mail (par ex., des images affichées à l’intérieur du message).  
+- **Quelle bibliothèque gère les fichiers MSG ?** Aspose.Email pour Java.  
+- **Ai‑je besoin d’une licence ?** Une version d’essai fonctionne pour l’évaluation ; une licence permanente supprime les limites d’utilisation.  
+- **Puis‑je traiter de nombreux fichiers MSG en même temps ?** Oui – regroupez la logique et utilisez des pools de threads pour la scalabilité.  
+- **Quelle version de Java est requise ?** JDK 16 ou ultérieure.
 
-- **Ai-je besoin d'une licence ?** Une version d'essai permet l'évaluation ; une licence permanente supprime les limites d'utilisation.
+## Qu’est‑ce que « extract inline attachments java » ?
 
-- **Puis-je traiter plusieurs fichiers MSG simultanément ?** Oui : il est possible de traiter la logique par lots et d'utiliser des pools de threads pour une meilleure scalabilité.
+Extraire les pièces jointes en ligne en Java signifie ouvrir programmétiquement un fichier MSG, parcourir sa collection de pièces jointes, et ne retenir que les éléments marqués comme *inline* (par opposition aux pièces jointes classiques). C’est essentiel lorsque vous avez besoin du contenu visuel d’un e‑mail—tel que des logos ou captures d’écran intégrés—à enregistrer comme fichiers image séparés.
 
-- **Quelle version de Java est requise ?** JDK 16 ou version ultérieure.
+## Pourquoi utiliser Aspose.Email pour cette tâche ?
 
-## Qu'est-ce que « extraire les pièces jointes intégrées en Java » ?
+Aspose.Email abstrait les structures MAPI de bas niveau et vous fournit une API simple et fortement typée. Comparé à une tentative de parsing du format binaire MSG vous‑même, Aspose.Email :
 
-Extraire les pièces jointes intégrées en Java consiste à ouvrir un fichier MSG par programmation, à analyser ses pièces jointes et à extraire uniquement les éléments marqués comme *intégrés* (par opposition aux pièces jointes classiques). Cette fonctionnalité est essentielle lorsque vous devez enregistrer le contenu visuel d'un e-mail, comme des logos ou des captures d'écran intégrés, sous forme de fichiers image séparés.
-
-## Pourquoi utiliser Aspose.Email pour cette tâche ?
-
-Aspose.Email simplifie les structures MAPI de bas niveau et vous offre une API simple et fortement typée. Comparé à l'analyse manuelle du format binaire MSG, Aspose.Email :
-
-* Gère toutes les variantes MSG (Unicode, RTF, HTML).
-
-* Offre un accès fiable aux métadonnées des pièces jointes.
-
-* Intègre des vérifications de licence et propose une documentation complète.
+* Gère toutes les variantes de MSG (Unicode, RTF, HTML).  
+* Fournit un accès fiable aux propriétés des métadonnées des pièces jointes.  
+* Offre des vérifications de licence intégrées et une documentation exhaustive.  
 
 ## Prérequis
 
-Pour suivre ce tutoriel, assurez-vous de disposer des éléments suivants :
+Pour suivre le tutoriel, assurez‑vous d’avoir :
 
-1. **Bibliothèques et dépendances**
+1. **Bibliothèques et dépendances**  
+   * Aspose.Email pour Java (dernière version).  
+   * Maven (ou un IDE avec prise en charge de Maven).  
 
-* Aspose.Email pour Java (dernière version).
+2. **Environnement d’exécution**  
+   * JDK 16 ou plus récent installé.  
 
-* Maven (ou un IDE compatible avec Maven).
+3. **Connaissances de base**  
+   * Familiarité avec les I/O Java et la gestion des exceptions.  
 
-2. **Environnement d'exécution**
+## Configuration d’Aspose.Email pour Java
 
-* JDK 16 ou une version ultérieure installée.
-
-3. **Connaissances de base**
-
-* Maîtrise des entrées/sorties Java et de la gestion des exceptions.
-
-## Configuration d'Aspose.Email pour Java
-
-Ajoutez la dépendance Aspose.Email à votre fichier `pom.xml`. L'extrait de code ci-dessous est identique à celui du tutoriel original.
+Ajoutez la dépendance Aspose.Email à votre `pom.xml`. L’extrait ci‑dessous est identique à celui du tutoriel original.
 
 ```xml
 <dependency>
@@ -85,21 +78,19 @@ Ajoutez la dépendance Aspose.Email à votre fichier `pom.xml`. L'extrait de cod
 </dependency>
 ```
 
-### Étapes d'acquisition de licence
+### Étapes d’obtention de licence
 
-* **Essai gratuit :** Téléchargez la DLL/JAR d'essai depuis le site web d'Aspose.
+* **Essai gratuit :** Téléchargez le DLL/JAR d’essai depuis le site Aspose.  
+* **Licence temporaire :** Demandez une licence d’évaluation de 30 jours pour des tests sans restriction.  
+* **Achat complet :** Obtenez une licence permanente pour les déploiements en production.
 
-* **Licence temporaire :** Demandez une licence d'évaluation de 30 jours pour des tests sans restriction.
+## Guide d’implémentation
 
-* **Achat complet :** Obtenez une licence permanente pour les déploiements en production.
+Nous décomposons la solution en trois fonctionnalités ciblées. Chaque fonctionnalité contient une brève explication suivie du bloc de code original (conservé exactement).
 
-## Guide d'implémentation
+### Fonctionnalité 1 – Charger le fichier MSG
 
-Ci-dessous, nous décomposons la solution en trois fonctionnalités principales. Chaque fonctionnalité est brièvement expliquée et suivie du bloc de code original (conservé à l'identique).
-
-### Fonctionnalité 1 – Charger le fichier MSG
-
-Commencez par charger le message Outlook dans un objet `MapiMessage`.
+Tout d’abord, chargez le message Outlook dans un objet `MapiMessage`.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -110,7 +101,7 @@ MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatti
 
 ### Fonctionnalité 2 – Récupérer les pièces jointes
 
-Ensuite, récupérez l'ensemble des pièces jointes du message.
+Ensuite, récupérez la collection complète des pièces jointes du message.
 
 ```java
 import com.aspose.email.MapiAttachmentCollection;
@@ -118,9 +109,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-### Fonctionnalité 3 – Identification et enregistrement des pièces jointes intégrées
+### Fonctionnalité 3 – Identifier et enregistrer les pièces jointes en ligne
 
-Parcourir chaque pièce jointe, vérifier si elle est intégrée, puis l'enregistrer sur le disque.
+Parcourez chaque pièce jointe, vérifiez si elle est en ligne, puis écrivez‑la sur le disque.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -135,9 +126,9 @@ for (Object untypedAttachment : attachments) {
 }
 ```
 
-#### Utilitaire : Déterminer si une pièce jointe est intégrée
+#### Utilitaire : Déterminer si une pièce jointe est en ligne
 
-Cette méthode auxiliaire examine les propriétés MAPI pour déterminer si une pièce jointe est incorporée.
+La méthode d’assistance inspecte les propriétés MAPI pour décider si une pièce jointe est intégrée.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -160,9 +151,9 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-#### Utilitaire : Enregistrer la pièce jointe intégrée
+#### Utilitaire : Enregistrer la pièce jointe en ligne
 
-Enregistre le contenu binaire de la pièce jointe intégrée dans un fichier du système de fichiers local.
+Écrit le contenu binaire de la pièce jointe en ligne dans un fichier du système de fichiers local.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -183,68 +174,56 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 
 ## Applications pratiques
 
-L'extraction des pièces jointes intégrées est utile dans de nombreux cas concrets :
+L’extraction des pièces jointes en ligne est utile dans de nombreux scénarios réels :
 
-* **Traitement automatisé des e-mails** : extraire les images des newsletters à des fins d'analyse.
+* **Traitement automatisé des e‑mails** – Extraire les images des newsletters pour l’analyse.  
+* **Migration de données** – Déplacer le contenu intégré lors de la migration d’Exchange vers une autre plateforme.  
+* **Solutions d’archivage** – Conserver la fidélité visuelle des messages archivés en stockant séparément les actifs en ligne.
 
-* **Migration de données** : déplacer le contenu intégré lors de la migration d'Exchange vers une autre plateforme.
+## Considérations de performance
 
-* **Solutions d'archivage** : préserver la qualité visuelle des messages archivés en stockant les ressources intégrées séparément.
+Lorsque vous traitez des centaines ou des milliers de fichiers MSG, gardez ces conseils à l’esprit :
 
-## Considérations relatives aux performances
+* **Traitement par lots :** Regroupez les fichiers en lots gérables pour éviter les pics de mémoire.  
+* **Libération rapide des ressources :** Fermez les flux (`try‑with‑resources`) et laissez le ramasse‑miettes récupérer les objets.  
+* **Exécution parallèle :** Utilisez un `ExecutorService` à taille fixe pour exécuter plusieurs jobs d’extraction simultanément, tout en surveillant l’utilisation du CPU.
 
-Lorsque vous traitez des centaines ou des milliers de fichiers MSG, tenez compte des conseils suivants :
+## Problèmes courants & dépannage
 
-* **Traitement par lots** : regroupez les fichiers en lots gérables afin d'éviter les pics de mémoire.
-
-* **Libération rapide des ressources** : fermez les flux (`try-with-resources`) et laissez le garbage collector récupérer les objets.
-
-* **Exécution parallèle** : utilisez un `ExecutorService` de taille fixe pour exécuter plusieurs tâches d'extraction simultanément, mais surveillez l'utilisation du processeur.
-
-## Problèmes courants et dépannage
-
-| Symptôme | Cause probable | Correction |
-
+| Symptom | Likely Cause | Fix |
 |---------|--------------|-----|
+| `NullPointerException` sur `attachment.getObjectData()` | Le message manque de métadonnées de pièce jointe (ex. MSG corrompu) | Validez le fichier MSG avant le traitement ou capturez l’exception et loguez le nom du fichier. |
+| Le fichier enregistré est vide ou corrompu | Nom de propriété incorrect (`"Package"` sensible à la casse) | Vérifiez que le nom de propriété correspond à celui du MSG ; la documentation d’Aspose.Email indique la chaîne exacte. |
+| Les performances se dégradent avec de gros fichiers | Flux non fermés, entraînant des fuites de mémoire | Utilisez `try‑with‑resources` (comme montré) et envisagez d’augmenter le heap JVM si nécessaire. |
 
-| `NullPointerException` sur `attachment.getObjectData()` | Le message ne contient pas de métadonnées de pièce jointe (par exemple, fichier MSG corrompu) | Validez le fichier MSG avant traitement ou interceptez l'exception et consignez le nom du fichier. |
+## FAQ
 
-| Le fichier enregistré est vide ou corrompu | Nom de propriété incorrect (sensibilité à la casse pour `"Package"`) | Vérifiez que le nom de la propriété correspond à la propriété réelle du fichier MSG ; la documentation d'Aspose.Email indique la chaîne exacte. |
+**Q : Quelle est la version minimale d’Aspose.Email requise ?**  
+R : Le tutoriel utilise la version 25.4, mais toute version 24.x+ compatible JDK 16 fonctionnera.
 
-| Les performances se dégradent avec les fichiers volumineux | Flux non fermés, entraînant des fuites de mémoire | Utilisez try-with-resources (comme indiqué) et envisagez d'augmenter la mémoire JVM si nécessaire. |
+**Q : Puis‑je extraire des pièces jointes en ligne à partir de fichiers MSG chiffrés ?**  
+R : Oui, à condition de fournir le mot de passe de déchiffrement correct lors du chargement du `MapiMessage`.
 
-## Foire aux questions
+**Q : Comment différencier les images en ligne des pièces jointes classiques ?**  
+R : Utilisez l’assistant `IsAttachmentInline` ; il vérifie le drapeau MAPI `ObjInfo` qui marque une pièce jointe comme inline.
 
-**Q : Quelle est la version minimale d’Aspose.Email requise ?**
+**Q : Existe‑t‑il un moyen de conserver le nom de fichier original de la pièce jointe en ligne ?**  
+R : L’exemple génère un UUID pour l’unicité, mais vous pouvez lire la propriété `attachment.getLongFileName()` et l’utiliser lors de l’appel à `SaveAttachment`.
 
-R : Ce tutoriel utilise la version 25.4, mais toute version 24.x ou supérieure compatible avec JDK 16 fonctionnera.
+**Q : Cette approche fonctionne‑t‑elle sous Linux/macOS ainsi que Windows ?**  
+R : Absolument—Aspose.Email est indépendant de la plateforme tant que le JDK est installé.
 
-**Q : Puis-je extraire les pièces jointes intégrées des fichiers MSG chiffrés ?**
-
-R : Oui, à condition de fournir le mot de passe de déchiffrement correct lors du chargement de `MapiMessage`.
-
-**Q : Comment différencier les images intégrées des pièces jointes classiques ?**
-
-R : Utilisez la fonction `IsAttachmentInline` ; elle vérifie l’indicateur `ObjInfo` de MAPI qui identifie une pièce jointe comme étant intégrée.
-
-**Q : Est-il possible de conserver le nom de fichier d’origine de la pièce jointe intégrée ?**
-
-R : L’exemple génère un UUID pour garantir l’unicité, mais vous pouvez lire la propriété `attachment.getLongFileName()` et l’utiliser lors de l’appel à `SaveAttachment`.
-
-**Q : Cette approche fonctionne-t-elle aussi bien sous Linux/macOS que sous Windows ?**
-
-R : Absolument ! Aspose.Email est indépendant de la plateforme dès lors que le JDK est installé.
+**Q : Où puis‑je trouver plus de détails sur la dépendance Maven Aspose Email ?**  
+R : Consultez la documentation officielle d’Aspose via le lien ci‑dessous.
 
 ## Ressources
-- **Documentation :** [Documentation Aspose Email](https://docs.aspose.com/email/java/)
+- **Documentation :** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**Dernière mise à jour :** 17/12/2025
-
-**Testé avec :** Aspose.Email pour Java 25.4 (JDK 16)
-
-**Auteur :** Aspose  
+**Dernière mise à jour :** 2026-03-15  
+**Testé avec :** Aspose.Email pour Java 25.4 (JDK 16)  
+**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

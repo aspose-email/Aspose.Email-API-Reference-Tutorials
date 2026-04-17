@@ -1,13 +1,13 @@
 ---
-date: '2025-12-17'
-description: Pelajari cara mengekstrak lampiran email, mengurai file EML, dan menyimpan
-  lampiran EML ke disk dengan Aspose.Email untuk Java.
+date: '2026-03-15'
+description: Pelajari cara mem-parsing file EML dengan Java, mengekstrak lampiran
+  email, dan menyimpannya menggunakan Aspose.Email untuk Java. Termasuk pengaturan
+  dependensi Maven.
 keywords:
 - manage EML attachments
 - Aspose.Email for Java
 - Java email handling
-title: 'Cara Mengekstrak Lampiran Email dari File EML Menggunakan Aspose.Email untuk
-  Java - Panduan Lengkap'
+title: Mengurai File EML Java – Ekstrak Lampiran dengan Aspose.Email
 url: /id/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
@@ -17,45 +17,56 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Cara Mengekstrak Lampiran Email dari File EML Menggunakan Aspose.Email untuk Java: Panduan Lengkap
+# Mengurai File EML Java – Ekstrak Lampiran dengan Aspose.Email
 
-## Perkenalan
+## Pendahuluan
 
-Mengekstrak lampiran email dari fileEML dapat menjadi masalah, tetapi dengan **Aspose.Email for Java** prosesnya menjadi sederhana. Dalam tutorial ini Anda akan belajar cara **mengekstrak lampiran email**, mengurai file EML, dan menyimpan lampiran tersebut ke disk—semua dengan kode Java yang bersih dan siap produksi.
+Jika Anda perlu **parse EML file Java** proyek dan menarik setiap lampiran, Anda berada di tempat yang tepat. Dalam panduan langkah‑demi‑langkah ini kami akan menunjukkan cara memuat file EML, menghitung lampirannya, dan menyimpan masing‑masing ke disk menggunakan **Aspose.Email for Java**. Anda akan mendapatkan kode Java yang bersih dan siap produksi serta tip praktis untuk skenario dunia nyata seperti pengarsipan, kepatuhan, dan pemrosesan email otomatis.
 
 Dalam panduan ini kami akan membahas:
-- Memuat file EML menggunakan Aspose.Email untuk Java
-- Menginisialisasi dan mengiterasi koleksi lampiran untuk **mengambil nama lampiran**
-- menyimpan lampiran email ke folder di mesin Anda
+- Memuat file EML dengan Aspose.Email for Java  
+- Menginisialisasi dan mengiterasi koleksi lampiran untuk **get attachment names**  
+- Menyimpan lampiran email ke folder di mesin Anda  
 
-Tutorial ini sempurna untuk pengembang yang sudah mengetahui Java dasar dan menginginkan **tutorial Aspose.Email** yang praktis untuk menangani data email dunia nyata.
+Tutorial ini sempurna untuk pengembang yang sudah mengetahui Java dasar dan menginginkan **Aspose.Email tutorial** praktis untuk menangani data email dunia nyata.
 
 ## Jawaban Cepat
-- **Apa arti “mengekstrak lampiran email”?** Artinya membaca fileEML dan setiap menulis file terlampir ke penyimpanan lokal Anda.
-- **Perpustakaan mana yang harus saya gunakan?** Aspose.Email untuk Java (versi25.4+).
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh menghapus semua pengaktifan.
-- ** menghubungi saya mengurai file EML dari share jaringan?** Ya—cukup berikan jalur lengkap atau URL ke `MailMessage.load`.
-- **Apakah aman untuk lampiran berukuran besar?** Proses mereka dalam loop dan melepaskan sumber daya dengan try‑with‑resources untuk menghindari masalah memori.
+- **Apa arti “extract email attachments”?** Artinya membaca file EML dan menulis setiap file yang dilampirkan ke penyimpanan lokal Anda.  
+- **Library mana yang harus saya gunakan?** Aspose.Email for Java (version 25.4+).  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi penuh menghilangkan semua batasan.  
+- **Bisakah saya mengurai file EML dari jaringan bersama?** Ya—cukup berikan jalur lengkap atau URL ke `MailMessage.load`.  
+- **Apakah aman untuk lampiran besar?** Proses mereka dalam loop dan lepaskan sumber daya dengan try‑with‑resources untuk menghindari masalah memori.
+
+## Apa itu “parse eml file java”?
+
+Mengurai file EML di Java berarti mengubah pesan RFC‑822 mentah menjadi model objek (`MailMessage`) yang dapat Anda query untuk header, bagian tubuh, dan lampiran. Aspose.Email mengabstraksi parsing MIME tingkat rendah, memungkinkan Anda fokus pada logika bisnis.
+
+## Mengapa menggunakan Aspose.Email for Java?
+
+- **Full‑featured API** – Menangani pesan teks biasa, HTML, dan multipart secara langsung.  
+- **Maven‑ready** – Manajemen dependensi sederhana dengan paket `aspose-email` terbaru.  
+- **Robust licensing** – Versi percobaan gratis untuk pengujian, lisensi penuh menghilangkan semua batasan.  
+- **Performance‑tuned** – Dioptimalkan untuk kotak surat besar dan ekstraksi lampiran massal.
 
 ## Prasyarat
 
 ### Perpustakaan, Versi, dan Dependensi yang Diperlukan
-- **Aspose.Email untuk Java**: Versi25.4 atau lebih tinggi.
-- **Java Development Kit (JDK)**: JDK16 atau lebih baru disarankan.
+- **Aspose.Email for Java**: Versi 25.4 atau lebih tinggi (termasuk artefak Maven `aspose-email`).  
+- **Java Development Kit (JDK)**: JDK 16 atau lebih baru disarankan.  
 - **Maven**: Instal Maven untuk mengelola dependensi dengan mudah.
 
-### Persyaratan Pengaturan Lingkungan
+### Persyaratan Penyiapan Lingkungan
 Pastikan lingkungan pengembangan Anda mencakup:
-- JDK yang telah dikonfigurasi
-- IDE seperti IntelliJ IDEA, Eclipse, atau VSCode dengan dukungan Java
+- JDK yang telah dikonfigurasi  
+- IDE seperti IntelliJ IDEA, Eclipse, atau VS Code dengan dukungan Java  
 
 ### Prasyarat Pengetahuan
-- Keterampilan pemrograman dasar Java
-- Familiaritas dengan format email (MIME, EML)
+- Keterampilan pemrograman Java dasar  
+- Familiaritas dengan format email (MIME, EML)  
 
 ## Menyiapkan Aspose.Email untuk Java
 
-Untuk mengintegrasikan Aspose.Email untuk Java ke dalam proyek Anda, tambahkan dependensi berikut ke file `pom.xml` Anda jika Anda menggunakan Maven:
+Untuk mengintegrasikan Aspose.Email untuk Java ke dalam proyek Anda, tambahkan **aspose email maven dependency** ke file `pom.xml` Anda:
 
 ```xml
 <dependency>
@@ -66,14 +77,14 @@ Untuk mengintegrasikan Aspose.Email untuk Java ke dalam proyek Anda, tambahkan d
 </dependency>
 ```
 
-### Akuisisi Lisensi
-Mulailah dengan **versi percobaan gratis** mengunduh dengan perpustakaan dan mengajukan lisensi sementara dari Aspose:
-- [Uji Coba Gratis](https://releases.aspose.com/email/java/)
-- [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
+### Perolehan Lisensi
+Mulai dengan **free trial** dengan mengunduh perpustakaan dan mengajukan lisensi sementara dari Aspose:
+- [Free Trial](https://releases.aspose.com/email/java/)
+- [Temporary License](https://purchase.aspose.com/temporary-license/)
 
-Untuk penggunaan produksi, lisensi membeli penuh untuk menghapus semua batasan.
+Untuk penggunaan produksi, pertimbangkan membeli lisensi penuh untuk menghilangkan semua batasan.
 
-### Inisialisasi dan Pengaturan Dasar
+### Inisialisasi dan Penyiapan Dasar
 Setelah menyiapkan dependensi, inisialisasi Aspose.Email dengan file lisensi Anda:
 
 ```java
@@ -83,16 +94,15 @@ License license = new License();
 license.setLicense("path_to_your_license_file");
 ```
 
-## Panduan Penerapan
+## Panduan Implementasi
 
-Mari kita menjelajahi setiap fitur langkah demi langkah.
+Mari kita jelajahi setiap fitur langkah demi langkah.
 
-### Muat Berkas EML
+### Cara mengurai file EML Java
 
-#### Ringkasan
-Pelajari cara **mengurai file EML** dan memuatnya ke objek `MailMessage` menggunakan Aspose.Email untuk Java.
+#### Muat File EML
 
-#### Cuplikan Kode
+Mengurai file EML semudah memanggil `MailMessage.load`. Anda juga dapat memberikan `EmlLoadOptions` untuk menyesuaikan perilaku parsing.
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -102,16 +112,13 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Penjelasan**:
-- `dataDir` menunjuk ke folder yang berisi fileEML Anda.
-- `EmlLoadOptions` memungkinkan Anda menyesuaikan cara pesan dibaca (misalnya, penanganan gambar tersemat).
+**Penjelasan**:  
+- `dataDir` menunjuk ke folder yang berisi file EML Anda.  
+- `EmlLoadOptions` memungkinkan Anda mengontrol cara pesan dibaca (mis., penanganan gambar tersemat).
 
 ### Inisialisasi AttachmentCollection
 
-#### Ringkasan
 Setelah file EML dimuat, Anda dapat mengambil lampirannya melalui `AttachmentCollection`.
-
-#### Cuplikan Kode
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -119,15 +126,12 @@ import com.aspose.email.AttachmentCollection;
 AttachmentCollection attachments = msg.getAttachments();
 ```
 
-**Penjelasan**:
+**Penjelasan**:  
 - `getAttachments()` mengembalikan koleksi yang berisi setiap file yang dilampirkan pada email.
 
-### Ulangi Lampiran dan Nama Tampilan
+### Iterasi Lampiran dan Tampilkan Nama
 
-#### Ringkasan
-Iterasi atas koleksi memungkinkan Anda **mengambil nama lampiran**, yang berguna untuk Pencatatan atau pembuatan daftar UI.
-
-#### Cuplikan Kode
+Mengiterasi koleksi memungkinkan Anda **get attachment names**, yang berguna untuk pencatatan atau membangun daftar UI.
 
 ```java
 import com.aspose.email.Attachment;
@@ -138,16 +142,13 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Penjelasan**:
-- Loop berjalan melalui setiap lampiran berdasarkan indeks.
+**Penjelasan**:  
+- Loop berjalan melalui setiap lampiran berdasarkan indeks.  
 - `getName()` mengambil nama file asli dari lampiran.
 
 ### Simpan Lampiran ke Disk
 
-#### Ringkasan
-Akhirnya, Anda akan **menyimpan lampiran EML** ke folder di komputer Anda—sempurna untuk pengarsipan atau pemrosesan lebih lanjut.
-
-#### Cuplikan Kode
+Akhirnya, Anda akan **save EML attachments** ke folder di komputer Anda—sempurna untuk pengarsipan atau pemrosesan lanjutan.
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -158,60 +159,68 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Penjelasan**:
-- `outputDir` adalah tempat Anda ingin file ditulis.
-- `save()` membuat file baru untuk setiap lampiran; awalan `attachment_` menghindari tabrakan nama.
+**Penjelasan**:  
+- `outputDir` adalah tempat Anda ingin file ditulis.  
+- `save()` membuat file baru untuk setiap lampiran; awalan `attachment_` menghindari bentrok nama.
 
 ## Aplikasi Praktis
 
-1. **Pengarsipan Data** – menyimpan lampiran email untuk pemenuhan atau pencatatan.
-2. **Layanan Penguraian Email** – Mengekstrak faktur, resume, atau log dari pesan masuk dalam sistem dukungan.
-3. **Solusi Cadangan** – Mengotomatiskan pencadangan dokumen penting yang diterima melalui email.
+1. **Data Archiving** – Menyimpan lampiran email untuk kepatuhan atau pencatatan.  
+2. **Email Parsing Services** – Mengekstrak faktur, resume, atau log dari pesan masuk dalam sistem dukungan.  
+3. **Backup Solutions** – Mengotomatiskan pencadangan dokumen penting yang diterima melalui email.
 
 ## Pertimbangan Kinerja
 
 ### Mengoptimalkan Kinerja
-- Gunakan aliran buffer saat menangani lampiran yang sangat besar.
+- Gunakan buffered streams saat menangani lampiran yang sangat besar.  
 - Proses lampiran dalam potongan jika Anda mengharapkan file berukuran gigabyte.
 
-### Pedoman Penggunaan Sumber Daya
-- Pantau penggunaan heap; lampiran besar dapat dengan cepat mengonsumsi memori.
-- Lebih baik gunakan try‑with‑resources untuk file I/O apa pun yang Anda tambahkan selain panggilan Aspose.
+### Panduan Penggunaan Sumber Daya
+- Pantau penggunaan heap; lampiran besar dapat dengan cepat mengonsumsi memori.  
+- Lebih baik gunakan try‑with‑resources untuk I/O file tambahan apa pun yang Anda tambahkan selain panggilan Aspose.
 
 ### Praktik Terbaik untuk Manajemen Memori Java
-- Tutup streaming dengan cepat.
-- Menambah heap JVM (`-Xmx`) untuk beban kerja berat.
+- Tutup stream dengan cepat.  
+- Pertimbangkan meningkatkan heap JVM (`-Xmx`) untuk beban kerja berat.
+
+## Masalah Umum dan Solusinya
+
+| Masalah | Penyebab | Solusi |
+|-------|-------|-----|
+| **OutOfMemoryError** saat memproses file besar | Seluruh lampiran dimuat ke memori | Stream lampiran atau tingkatkan ukuran heap |
+| **Permission denied** pada `save()` | Folder output tidak dapat ditulisi | Verifikasi izin folder atau pilih direktori lain |
+| **Missing attachments** setelah pemuatan | EML menggunakan batas MIME non‑standar | Gunakan `EmlLoadOptions` untuk melonggarkan parsing ketat |
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Bagaimana cara menangani file EML yang terenkripsi?**
-A: Gunakan `LoadOptions` untuk memberikan kredensial dekripsi jika layanan email mendukungnya.
+**Q: Bagaimana cara menangani file EML terenkripsi?**  
+A: Gunakan `LoadOptions` untuk menyediakan kredensial dekripsi jika layanan email mendukungnya.
 
-**Q: Apakah Aspose.Email untuk Java dapat mengurai email HTML?**
+**Q: Bisakah Aspose.Email for Java mengurai email HTML?**  
 A: Ya—badan HTML dapat diakses melalui `msg.getHtmlBody()` dan dapat diproses seperti string apa pun.
 
-**Q: Apa masalah umum saat menyimpan lampiran?**
-A: Kurangnya ruang disk atau izin menulis yang tidak ada biasanya menjadi penyebabnya. Pastikan folder target ada dan dapat ditulisi.
+**Q: Apa masalah umum saat menyimpan lampiran?**  
+A: Ruang disk yang tidak cukup atau izin menulis yang hilang biasanya menjadi penyebabnya. Verifikasi folder target ada dan dapat ditulisi.
 
-**Q: Apakah memungkinkan memuat file EML dari lokasi jaringan?**
+**Q: Apakah memungkinkan memuat file EML dari lokasi jaringan?**  
 A: Tentu—cukup berikan jalur UNC lengkap atau URL ke `MailMessage.load`.
 
-**Q: Bagaimana cara mendapatkan lisensi untuk penggunaan produksi?**
-A: Kunjungi [Halaman Pembelian Aspose](https://purchase.aspose.com/buy) untuk mendapatkan lisensi penuh.
+**Q: Bagaimana cara mendapatkan lisensi untuk penggunaan produksi?**  
+A: Kunjungi [Aspose's Purchase Page](https://purchase.aspose.com/buy) untuk memperoleh lisensi penuh.
 
 ## Sumber Daya
-- **Dokumentasi**: [Referensi Java Aspose.Email](https://reference.aspose.com/email/java/)
-- **Unduhan**: [Rilis Aspose.Email](https://releases.aspose.com/email/java/)
-- **Pembelian**: [Beli Aspose.Email](https://purchase.aspose.com/buy)
-- **Versi Percobaan Gratis**: [Mulai dengan Uji Coba Gratis](https://releases.aspose.com/email/java/)
-- **Lisensi Sementara**: [Dapatkan Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
-- **Dukungan**: [Forum Aspose Email](https://forum.aspose.com/c/email/10)
+- **Dokumentasi**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
+- **Unduh**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
+- **Pembelian**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **Uji Coba Gratis**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
+- **Lisensi Sementara**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Dukungan**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-17
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (pengklasifikasi jdk16)
-**Penulis:** Aspose
+**Last Updated:** 2026-03-15  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
