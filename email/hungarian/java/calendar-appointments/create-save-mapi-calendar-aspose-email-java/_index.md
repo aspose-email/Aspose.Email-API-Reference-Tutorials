@@ -1,14 +1,13 @@
 ---
-date: '2026-01-01'
-description: Tanulja meg, hogyan hozhat létre MAPI naptárat Java-ban, és mentheti
-  a naptárat PST-be az Aspose.Email for Java segítségével. Lépésről‑lépésre útmutató
-  kóddal, ismétlődéssel és címzettekkel.
+date: '2026-03-20'
+description: Tudja meg, hogyan exportálhatja az Outlook naptár PST-t az Aspose.Email
+  for Java segítségével – hozzon létre MAPI naptárelemeket, állítson be ismétlődést,
+  adjon hozzá résztvevőket, és mentse PST-be.
 keywords:
 - Create MAPI Calendar Java
 - Aspose.Email Java Calendar
 - Java PST File Save
-title: MAPI naptár létrehozása Java-val az Aspose.Email segítségével – Naptár mentése
-  PST-be
+title: Outlook naptár PST exportálása az Aspose.Email segítségével – Java
 url: /hu/java/calendar-appointments/create-save-mapi-calendar-aspose-email-java/
 weight: 1
 ---
@@ -18,53 +17,56 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Hogyan hozhatunk létre MAPI naptár Java-t az Aspose.Email segítségével – Naptár mentése PST-be
+# Export Outlook calendar PST with Aspose.Email – Java
 
 ## Bevezetés
 
-Szeretné egyszerűsíteni a naptár automatizálását Java alkalmazásaiban? Az **Aspose.Email for Java** segítségével **MAPI naptár Java** elemeket hozhat létre, meghatározhat ismétlődési mintákat, hozzáadhat résztvevőket, és **naptárat menthet PST** fájlokba néhány kódsorral. Ez az útmutató végigvezeti Önt a teljes folyamaton – a könyvtár beállításától egy teljesen működőképes naptárelem létrehozásáig, amely készen áll a terjesztésre.
+Szeretné egyszerűsíteni a naptár automatizálását Java alkalmazásaiban, és **export Outlook calendar PST** fájlokra van szüksége? A **Aspose.Email for Java** segítségével **create MAPI calendar Java** elemeket hozhat létre, meghatározhatja az ismétlődési mintákat, hozzáadhat résztvevőket, és **save calendar to PST** néhány kódsorral. Ez az útmutató végigvezeti Önt a teljes folyamaton – a könyvtár beállításától egy teljesen működő naptárelem létrehozásáig, amely készen áll a terjesztésre.
 
 ### Mit fog megtanulni
-- Hogyan hozhat **MAPI naptár Java** eseményeket az Aspose.Email használatával.
-- Napi, heti vagy egyéni ismétlődési minták konfigurálása.
-- Címzettek (szervezők, résztvevők) hozzáadása a naptár meghívókhoz.
-- A naptárelem megőrzése **naptár PST-be mentésével** az Outlook kompatibilitás érdekében.
-
-Merüljünk el, és készítsük elő a fejlesztői környezetet.
+- Hogyan kell **create MAPI calendar Java** eseményeket létrehozni az Aspose.Email segítségével.  
+- Napi, heti vagy egyéni ismétlődési minták konfigurálása.  
+- Címzettek (szervezők, résztvevők) hozzáadása a naptármeghívókhoz.  
+- A naptárelem megőrzése **saving calendar to PST** segítségével az Outlook kompatibilitáshoz.  
+- Hogyan kell **automate meeting scheduling** újrahasználható kóddal.
 
 ## Gyors válaszok
 - **Melyik könyvtár?** Aspose.Email for Java  
-- **Elsődleges cél?** MAPI naptár Java létrehozása és **naptár PST-be mentése**  
+- **Elsődleges cél?** Export Outlook calendar PST és **save calendar to PST**  
 - **Előfeltételek?** Java 8+, Maven, Aspose.Email licenc  
 - **Tipikus megvalósítási idő?** 10‑15 perc egy alap eseményhez  
 - **Hozzáadhatok ismétlődést?** Igen – napi, heti, havi stb.
 
-## Mi az a MAPI naptár Java-ban?
+## Export Outlook calendar PST
 
-A MAPI (Messaging Application Programming Interface) naptárobjektum egy Outlook‑kompatibilis találkozót vagy időpontot képvisel. Az Aspose.Email segítségével programozottan építhetünk ilyen objektumokat, ami zökkenőmentes integrációt tesz lehetővé az Exchange, Outlook vagy bármely PST‑fájlokat fogyasztó klienssel.
+Ebben a szakaszban az end‑to‑end folyamatra összpontosítunk, amely lehetővé teszi a **export Outlook calendar PST** fájlok létrehozását. A MAPI naptárobjektum létrehozása után az utolsó lépés, hogy egy PST fájlba tároljuk, amelyet az Outlook közvetlenül olvasni tud.
 
-## Miért használja az Aspose.Email-t naptár automatizáláshoz?
+## Miért használja az Aspose.Email‑t naptár automatizáláshoz?
+
 - **Teljes Outlook kompatibilitás** – a generált elemek működnek Outlookban, OWA-ban és mobil klienseken.  
 - **Gazdag ismétlődés támogatás** – napi, heti, havi és egyéni minták alapból.  
-- **Nincsenek külső függőségek** – tiszta Java könyvtár, nincs szükség COM interopra.  
-- **Magas teljesítmény** – hatékony nagy PST fájlok és tömeges műveletek kezelése.
+- **Nincs külső függőség** – tiszta Java könyvtár, nincs szükség COM interopra.  
+- **Magas teljesítmény** – hatékony nagy PST fájlok és tömeges műveletek kezelése.  
+- **Automatizálja a találkozók ütemezését** – ágyazza be ezt a logikát kötegelt feladatokba vagy webszolgáltatásokba, hogy automatikusan több száz meghívót hozzon létre.
 
 ## Előfeltételek
 
+Mielőtt elkezdenénk, győződjön meg róla, hogy rendelkezik:
+
 ### Szükséges könyvtárak
-- **Aspose.Email for Java**: Verzió 25.4 vagy újabb.
+- **Aspose.Email for Java**: 25.4 vagy újabb verzió.
 
 ### Környezet beállítási követelmények
 - Java IDE, például IntelliJ IDEA vagy Eclipse.  
 - Maven telepítve a függőségek kezeléséhez.
 
 ### Tudás előfeltételek
-- Alap Java programozási ismeretek.  
+- Alapvető Java programozási ismeretek.  
 - Ismeret az objektum‑orientált koncepciókkal.
 
-## Az Aspose.Email beállítása Java-hoz
+## Az Aspose.Email for Java beállítása
 
-Add the Aspose.Email Maven dependency to your `pom.xml`:
+Adja hozzá az Aspose.Email Maven függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <dependency>
@@ -77,15 +79,15 @@ Add the Aspose.Email Maven dependency to your `pom.xml`:
 
 ### Licenc beszerzése
 
-Aspose.Email offers a free trial, but a license unlocks all features:
+Az Aspose.Email ingyenes próbaidőszakot kínál, de egy licenc feloldja az összes funkciót:
 
 - **Ingyenes próba**: Korlátok nélkül tesztelhető 30 napig.  
-- **Ideiglenes licenc**: Kérje a [Aspose weboldalán](https://purchase.aspose.com/temporary-license/) ha további időre van szüksége.  
-- **Vásárlás**: Szerezzen be állandó licencet a [vásárlási oldalon](https://purchase.aspose.com/buy).
+- **Ideiglenes licenc**: Kérje a [Aspose weboldalán](https://purchase.aspose.com/temporary-license/) extra idő esetén.  
+- **Vásárlás**: Vegyen állandó licencet a [vásárlási oldalról](https://purchase.aspose.com/buy).
 
-### Alap inicializálás
+### Alapvető inicializálás
 
-After adding the dependency, initialize the library with your license file:
+A függőség hozzáadása után inicializálja a könyvtárat a licencfájllal:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
@@ -94,7 +96,7 @@ license.setLicense("path_to_your_license.lic");
 
 ## Megvalósítási útmutató
 
-Now that you’re set up, let’s **create MAPI calendar java** and **save calendar to PST**.
+Most, hogy be van állítva, hozzunk létre **create MAPI calendar Java** elemet és **save calendar to PST**.
 
 ### MAPI naptár létrehozása ismétlődéssel
 
@@ -104,9 +106,9 @@ Létrehozunk egy naptáreseményt, alkalmazunk napi ismétlődést, hozzáadunk 
 
 #### Lépésről‑lépésre megvalósítás
 
-1. **Initialize Date and Recurrence Pattern**  
+1. **Dátum és ismétlődési minta inicializálása**  
 
-   First, define the start time and set a daily recurrence:
+   Először határozza meg a kezdési időt, és állítson be napi ismétlődést:
 
    ```java
    import java.util.Date;
@@ -118,11 +120,11 @@ Létrehozunk egy naptáreseményt, alkalmazunk napi ismétlődést, hozzáadunk 
    recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
    ```
 
-   *Magyarázat*: A `MapiCalendarEventRecurrence` tartalmazza az ismétlődés részleteit; napi mintát választunk a `MapiCalendarDailyRecurrencePattern` segítségével.
+   *Explanation*: `MapiCalendarEventRecurrence` tárolja az ismétlődés részleteit; egy napi mintát választunk a `MapiCalendarDailyRecurrencePattern` segítségével.
 
-2. **Set Up Recipients**  
+2. **Címzettek beállítása**  
 
-   Add the people who should receive the meeting invitation:
+   Adja hozzá a személyeket, akiknek meg kell kapniuk a találkozó meghívót:
 
    ```java
    import com.aspose.email.MapiRecipientCollection;
@@ -132,11 +134,11 @@ Létrehozunk egy naptáreseményt, alkalmazunk napi ismétlődést, hozzáadunk 
    recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
    ```
 
-   *Magyarázat*: A `MapiRecipientCollection` tárolja az egyes résztvevőket; a `MAPI_TO` jelöli őket elsődleges címzettként.
+   *Explanation*: `MapiRecipientCollection` tárolja az egyes résztvevőket; a `MAPI_TO` jelöli őket elsődleges címzettként.
 
-3. **Create the MAPI Calendar Item**  
+3. **MAPI naptár elem létrehozása**  
 
-   Build the calendar object with all required details:
+   Építse fel a naptárobjektumot minden szükséges részlettel:
 
    ```java
    import com.aspose.email.MapiCalendar;
@@ -153,11 +155,11 @@ Létrehozunk egy naptáreseményt, alkalmazunk napi ismétlődést, hozzáadunk 
    );
    ```
 
-   *Magyarázat*: A konstruktor a szervezőt, tárgyat, helyszínt, kezdő/vég időpontot, leírást, címzettlistát és ismétlődést várja.
+   *Explanation*: A konstruktor a szervezőt, tárgyat, helyszínt, kezdő/vég időket, leírást, címzettlistát és az ismétlődést várja.
 
-4. **Save to PST File**  
+4. **Mentés PST fájlba**  
 
-   Finally, persist the calendar by **saving calendar to PST**:
+   Végül, mentse a naptárat **saving calendar to PST** segítségével:
 
    ```java
    import com.aspose.email.PersonalStorage;
@@ -171,48 +173,48 @@ Létrehozunk egy naptáreseményt, alkalmazunk napi ismétlődést, hozzáadunk 
    calendarFolder.addMapiMessageItem(calendar);
    ```
 
-   *Magyarázat*: A `PersonalStorage.create` új PST fájlt hoz létre, és az `addMapiMessageItem` beilleszti a naptárelemeket a "Calendar" mappába.
+   *Explanation*: A `PersonalStorage.create` új PST fájlt hoz létre, és az `addMapiMessageItem` beilleszti a naptárelemeket a "Calendar" mappába.
 
-### Hibaelhárítási tippek
+### Hibakeresési tippek
 - Ellenőrizze a licenc útvonalát; egy érvénytelen licenc korlátozza a funkciókat.  
-- Győződjön meg arról, hogy a címzettek e‑mail címei helyesen vannak formázva a meghívási hibák elkerülése érdekében.  
+- Győződjön meg róla, hogy a címzettek e‑mail címei helyesen vannak formázva a meghívási hibák elkerülése érdekében.  
 - Zárja be a PST-t (`pst.dispose()`) a műveletek után a fájlkezelők felszabadításához.
 
 ## Gyakorlati alkalmazások
 
-Here are common scenarios where **creating MAPI calendar java** and **saving calendar to PST** shines:
+Itt vannak a gyakori forgatókönyvek, ahol a **create MAPI calendar Java** és a **save calendar to PST** kiemelkedik:
 
-1. **Automatikus értekezlet ütemezés** – Generáljon ismétlődő értekezleti meghívókat projektcsapatok számára manuális munka nélkül.  
+1. **Automatizált találkozó ütemezés** – Generáljon ismétlődő találkozó meghívókat projektcsapatok számára manuális munka nélkül.  
 2. **Eseménykezelő platformok** – Exportálja a konferencia üléseket Outlook‑kompatibilis naptárelemekként.  
-3. **CRM integráció** – Szinkronizálja az ügyfél találkozókat egy CRM rendszerből közvetlenül Outlookba PST fájlok segítségével.
+3. **CRM integráció** – Szinkronizálja az ügyfél időpontokat egy CRM rendszerből közvetlenül Outlookba PST fájlok segítségével.
 
-## Teljesítmény szempontok
+## Teljesítményfontosságú szempontok
 
-- **Erőforrás-kezelés**: Szabadítsa fel a `PersonalStorage` objektumokat használat után a fázlezárások elkerülése érdekében.  
+- **Erőforrás-kezelés**: Szabadítsa fel a `PersonalStorage` objektumokat használat után a fájlzárolások elkerülése érdekében.  
 - **Kötegelt feldolgozás**: Nagy mennyiség esetén dolgozza fel a naptárelemeket aszinkron módon vagy darabokban a memóriahasználat alacsonyan tartásához.  
 
 ## Összegzés
 
-Most már megtanulta, hogyan **hozzon létre MAPI naptár Java** objektumokat, konfigurálja az ismétlődést, adjon hozzá résztvevőket, és **mentse a naptárat PST-be** az Aspose.Email segítségével. Ez a megközelítés lehetővé teszi Java alkalmazásai számára, hogy automatizálják a kifinomult ütemezési munkafolyamatokat Outlook kompatibilitással.
+Most már megtanulta, hogyan **export Outlook calendar PST** MAPI naptár Java objektumok létrehozásával, ismétlődés konfigurálásával, résztvevők hozzáadásával, és **save calendar to PST** használatával az Aspose.Email segítségével. Ez a megközelítés felhatalmazza Java alkalmazásait, hogy automatizálják a kifinomult ütemezési munkafolyamatokat Outlook kompatibilitással.
 
-For deeper exploration, check the official [documentation](https://reference.aspose.com/email/java/).
+A mélyebb felfedezéshez tekintse meg a hivatalos [documentation](https://reference.aspose.com/email/java/).
 
 ## GYIK szekció
 
-### K: Létrehozhatok heti ismétlődési mintákat?
-- **V**: Igen! Használja a `MapiCalendarWeeklyRecurrencePattern`-t a heti ismétlések meghatározásához.
+### Q: Létrehozhatok heti ismétlődési mintákat?
+- **A**: Igen! Használja a `MapiCalendarWeeklyRecurrencePattern`-t a heti ismétlések meghatározásához.
 
-### K: Hogyan kezelem az esemény ismétlődés kivételeit?
-- **V**: Hívja a `setExceptions()`-t az ismétlődési objektumon, hogy megadja a mintától eltérő dátumokat.
+### Q: Hogyan kezelem az esemény ismétlődés kivételeit?
+- **A**: Hívja a `setExceptions()`-t az ismétlődési objektumon, hogy megadja a mintától eltérő dátumokat.
 
-### K: Lehetséges frissíteni egy meglévő naptárelemet?
-- **V**: Természetesen. Töltse be az elemet a PST-ből, módosítsa a tulajdonságait, és mentse vissza.
+### Q: Lehet-e frissíteni egy meglévő naptár elemet?
+- **A**: Természetesen. Töltse be az elemet a PST-ből, módosítsa a tulajdonságait, és mentse vissza.
 
-### K: Titkosíthatom a PST fájlt?
-- **V**: Igen, az Aspose.Email lehetővé teszi jelszó beállítását a `PersonalStorage`-nél a PST létrehozásakor.
+### Q: Titkosítható-e a PST fájl?
+- **A**: Igen, az Aspose.Email lehetővé teszi, hogy jelszót állítson be a `PersonalStorage`-on a PST létrehozásakor.
 
-### K: Mi van, ha csatolmányokat kell hozzáadnom a naptáreseményhez?
-- **V**: Használja a `calendar.getAttachments().addFileAttachment("path/to/file")`-t a mentés előtt.
+### Q: Mit tegyek, ha csatolmányokat kell hozzáadni a naptár eseményhez?
+- **A**: Használja a `calendar.getAttachments().addFileAttachment("path/to/file")`-t a mentés előtt.
 
 ## Erőforrások
 
@@ -225,7 +227,7 @@ For deeper exploration, check the official [documentation](https://reference.asp
 
 ---
 
-**Last Updated:** 2026-01-01  
+**Last Updated:** 2026-03-20  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose
 

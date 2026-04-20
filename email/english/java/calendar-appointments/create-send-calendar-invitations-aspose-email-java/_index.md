@@ -1,7 +1,7 @@
 ---
-title: "Manage Calendar Sharing - Aspose.Email for Java Guide"
-description: "Learn how to manage calendar sharing, set delegate permissions, and create delegate access using Aspose.Email for Java. Follow this step‑by‑step tutorial to send calendar sharing emails efficiently."
-date: "2025-12-20"
+title: "Create Calendar Sharing Invitation with Aspose.Email for Java"
+description: "Learn how to create calendar sharing invitation, configure calendar permissions, and set delegate access using Aspose.Email for Java."
+date: "2026-03-20"
 weight: 1
 url: "/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/"
 keywords:
@@ -18,7 +18,7 @@ keywords:
 # Manage Calendar Sharing: Aspose.Email for Java Guide
 
 ## Introduction to Managing Calendar Sharing
-Managing calendar sharing invitations can be a complex task, especially when dealing with multiple users across different platforms. In this tutorial you’ll learn how to **manage calendar sharing** with Aspose.Email for Java, covering everything from creating delegate access to sending calendar sharing emails. By the end, you’ll be able to set delegate permissions, configure calendar permissions, and streamline collaboration in your organization.
+Managing calendar sharing invitations can be a complex task, especially when dealing with multiple users across different platforms. In this tutorial you’ll **create calendar sharing invitation** with Aspose.Email for Java, covering everything from creating delegate access to sending calendar sharing emails. By the end, you’ll be able to set delegate permissions, **configure calendar permissions**, and streamline collaboration in your organization.
 
 **What You’ll Learn**
 - How to initialize the EWS client with Aspose.Email for Java  
@@ -30,11 +30,17 @@ Managing calendar sharing invitations can be a complex task, especially when dea
 Before we dive in, let’s make sure you have everything you need.
 
 ## Quick Answers
-- **What is the primary purpose of this guide?** To show how to **manage calendar sharing** using Aspose.Email for Java.  
+- **What is the primary purpose of this guide?** To show how to **create calendar sharing invitation** using Aspose.Email for Java.  
 - **Which library version is required?** Aspose.Email for Java 25.4 (JDK 16 classifier).  
 - **Do I need a license?** Yes – a trial or full license is required for production use.  
 - **What environment is needed?** JDK 16+, Maven, and an Exchange Online account.  
 - **Can I use this with other Exchange servers?** Yes, but you may need to adjust the service URL and permission levels.
+
+## What is a calendar sharing invitation?
+A calendar sharing invitation is an email message that grants another user access to view (or edit) your calendar without giving full mailbox rights. It’s commonly used for team coordination, project planning, and event management.
+
+## Why configure calendar permissions?
+Configuring calendar permissions lets you control exactly what a delegate can do—whether they can only read events, propose new ones, or edit existing entries. Proper permission settings protect sensitive information while enabling effective collaboration.
 
 ## Prerequisites
 - **Java Development Kit (JDK):** Version 16 or later.  
@@ -77,7 +83,7 @@ Once Maven resolves the dependency, initialize the EWS client:
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 ```
 
-## Implementation Guide
+## How to create calendar sharing invitation
 Below we cover two core features: creating and sending a calendar sharing invitation, and **set delegate permissions** for calendar access.
 
 ### Feature 1: Create and Send Calendar Sharing Invitation
@@ -130,6 +136,16 @@ client.delegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
 This snippet **sets delegate permissions** so the user can view calendar entries without full mailbox access.
 
+## How to configure calendar permissions for delegates
+When you need a delegate to do more than just view events—such as edit or delete—you can change the `ExchangeDelegateFolderPermissionLevel`:
+
+- `Reviewer` – read‑only access.  
+- `Editor` – read/write access.  
+- `Author` – create and read, but cannot delete.  
+- `Owner` – full control, including permission changes.
+
+**Pro tip:** Use the least‑privilege level that satisfies the business requirement to keep your calendar data secure.
+
 ## Practical Applications
 Real‑world scenarios where **manage calendar sharing** shines:
 1. **Corporate Meetings** – Let team members view meeting schedules without giving full mailbox rights.  
@@ -140,6 +156,13 @@ Real‑world scenarios where **manage calendar sharing** shines:
 - **Memory Management:** Dispose of large `MailMessage` objects promptly in high‑volume apps.  
 - **Exception Handling:** Wrap network calls in try‑catch blocks to handle connectivity glitches gracefully.  
 - **Library Updates:** Keep Aspose.Email up to date to benefit from performance improvements and bug fixes.
+
+## Common Issues and Solutions
+| Issue | Likely Cause | Solution |
+|-------|--------------|----------|
+| Invitation not received | Spam filters or incorrect email address | Verify recipient address and add the sending domain to safe‑senders list |
+| Permission not applied | Using wrong `ExchangeDelegateFolderPermissionLevel` | Double‑check the permission level matches the required access |
+| Runtime exception on `createCalendarSharingInvitationMessage` | Missing license or outdated library | Ensure a valid license is loaded and you’re using the latest Aspose.Email version |
 
 ## Frequently Asked Questions
 **Q: What is Aspose.Email for Java used for?**  
@@ -158,7 +181,7 @@ A: Check network connectivity, credentials, and that the delegate user has valid
 A: Absolutely – replace `ExchangeDelegateFolderPermissionLevel.Reviewer` with `Editor`, `Author`, or `Owner` as needed.
 
 ## Conclusion
-You now have a complete, end‑to‑end solution for **manage calendar sharing** with Aspose.Email for Java. By initializing the EWS client, **create delegate access**, **set delegate permissions**, and sending a **calendar sharing email**, you can automate collaboration across your organization.
+You now have a complete, end‑to‑end solution for **create calendar sharing invitation** with Aspose.Email for Java. By initializing the EWS client, **create delegate access**, **set delegate permissions**, and sending a **calendar sharing email**, you can automate collaboration across your organization.
 
 **Next Steps**
 - Experiment with other permission levels (Editor, Owner).  
@@ -167,7 +190,7 @@ You now have a complete, end‑to‑end solution for **manage calendar sharing**
 
 ---
 
-**Last Updated:** 2025-12-20  
+**Last Updated:** 2026-03-20  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
 **Author:** Aspose  
 
