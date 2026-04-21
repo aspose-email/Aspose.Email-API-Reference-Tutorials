@@ -1,8 +1,14 @@
 ---
-date: 2025-11-30
-description: 學習如何使用 Aspose.Email for Java 建立行事曆邀請、發送 Java 電子郵件、將 eml 轉換為 msg，以及加入數位簽章的電子郵件。
-linktitle: Aspose.Email for Java Tutorials
-title: 使用 Aspose.Email for Java 建立日曆邀請 – 完整教學
+date: 2026-04-21
+description: 學習如何使用 Aspose.Email for Java 產生 ics 檔案、建立行事曆邀請、發送電子郵件、將 eml 轉換為 msg，以及加入數位簽章。
+keywords:
+- generate ics file java
+- convert eml to msg java
+- add digital signature java
+- read ics file java
+- encrypt email java
+linktitle: Aspose.Email for Java 教學
+title: 產生 .ics 檔案 Java – 使用 Aspose.Email for Java 建立行事曆邀請 – 完整教學
 url: /zh-hant/java/
 weight: 10
 ---
@@ -13,161 +19,163 @@ weight: 10
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Email for Java 建立行事曆邀請 – 完整教學
+# 產生 .ics 檔案 Java – 使用 Aspose.Email for Java 建立行事曆邀請 – 完整教學
 
-歡迎來到 **Aspose.Email for Java 教學** – 您在 Java 應用程式中掌握電子郵件操作、**建立行事曆邀請** 以及管理所有郵件通訊的首選資源。無論您需要 **send email java**、**convert eml to msg**、加入 **digital signature email**，或只是解析複雜訊息，Aspose.Email for Java 都提供乾淨且程式化的解決方案。
+歡迎來到 **Aspose.Email for Java 教學** – 您掌握電子郵件操作、**建立行事曆邀請**，以及在 Java 應用程式中管理所有電子郵件通訊的首選資源。在本教學中，您將學習如何使用 Aspose.Email **產生 ics 檔案 Java**，透過 SMTP 發送邀請，並可選擇加入 **數位簽章** 或加密訊息。
 
 ## 快速解答
-- **如何在 Java 中建立行事曆邀請？** 使用 Aspose.Email 的 `MailMessage` 搭配 `Appointment` 物件。  
-- **可以透過 SMTP 發送邀請嗎？** 可以 – 設定 `SmtpClient` 後呼叫 `client.send(message)`。  
-- **邀請使用什麼格式？** 標準的 iCalendar（`.ics`）格式，可由 `Appointment` 或 `Calendar` 類別讀取。  
-- **正式環境需要授權嗎？** 商業授權是非評估使用的必要條件。  
-- **能否為邀請加入數位簽章？** 當然可以 – 使用 `MailMessage.sign` 並提供憑證。
+- **如何在 Java 中產生 .ics 檔案？** 使用 Aspose.Email 的 `Appointment` 物件，並呼叫 `save` 產生 iCalendar 串流。  
+- **我可以透過 SMTP 發送邀請嗎？** 可以 – 設定 `SmtpClient` 並呼叫 `client.send(message)`。  
+- **邀請使用什麼格式？** 標準的 iCalendar（`.ics`）格式，可被 Outlook、Google Calendar 以及大多數客戶端讀取。  
+- **正式環境需要授權嗎？** 非評估用途必須購買商業授權。  
+- **可以為邀請加入數位簽章嗎？** 當然可以 – 使用 `MailMessage.sign` 搭配 X.509 憑證。
 
-## 什麼是行事曆邀請，為何要以程式方式產生？
-行事曆邀請（iCalendar `.ics` 檔）是可攜帶的事件表示，可匯入 Outlook、Google Calendar 或任何相容 iCalendar 的客戶端。以程式方式產生邀請，可自動化會議排程、發送提醒，並將行事曆功能直接整合至您的 Java 服務。
+## 什麼是行事曆邀請以及為何要以程式方式建立？
+行事曆邀請（iCalendar `.ics` 檔案）是一種可攜式的事件表示，可匯入至 Outlook、Google Calendar 或任何相容 iCalendar 的客戶端。以程式方式產生邀請可讓您自動化會議排程、發送提醒，並將行事曆功能直接整合至 Java 服務中。
 
-## 為何選擇 Aspose.Email for Java 來建立行事曆邀請？
-- **完整的 .ics 支援** – 讀取、編輯、寫入 iCalendar 檔案，無需額外相依。  
-- **無縫整合** – 可將邀請與豐富的郵件內容、附件及數位簽章結合。  
-- **跨平台** – 在 Windows、Linux、macOS 以及任何 Java 執行環境上皆可運作。  
-- **強固安全性** – 加密訊息、套用 S/MIME 簽章，並保護附件。
+## 為何使用 Aspose.Email for Java 產生 .ics 檔案 Java？
+- **完整的 .ics 支援** – 無需外部相依，即可讀取、編輯與寫入 iCalendar 檔案。  
+- **無縫整合** – 可將邀請與豐富的電子郵件內容、附件及數位簽章結合。  
+- **跨平台** – 在 Windows、Linux 與 macOS 以及任何 Java 執行環境上皆可運作。  
+- **強韌安全性** – 加密訊息、套用 S/MIME 簽章，並保護附件。
 
-## 前置需求
-- Java Development Kit (JDK) 8 或以上。  
-- Aspose.Email for Java 套件（自 Aspose 官網下載）。  
-- 用於發送訊息的 SMTP 伺服器（如 Gmail、Office 365 或本機伺服器）。  
-- 可選：用於數位簽章的 X.509 憑證。
+## 前置條件
+- Java Development Kit（JDK）8 版或更高。  
+- Aspose.Email for Java 程式庫（從 Aspose 官方網站下載）。  
+- 用於發送訊息的 SMTP 伺服器（例如 Gmail、Office 365 或本機伺服器）。  
+- 可選：用於數位簽章的 X.509 憑證。  
+- 可選：若需加密電子郵件，請事先備妥收件者的公鑰。
 
-## 建立行事曆邀請的逐步指南
+## 產生 .ics 檔案 Java 的逐步指南
 
 ### 步驟 1：設定專案
-將 Aspose.Email JAR 加入專案的 classpath，或透過 Maven/Gradle 引入。如此即可使用 `MailMessage`、`Appointment` 及相關類別。
+將 Aspose.Email JAR 加入專案的 classpath，或透過 Maven/Gradle 引入。這樣即可使用 `MailMessage`、`Appointment` 以及相關類別。
 
 ### 步驟 2：建立 Appointment（行事曆邀請）
-建立 `Appointment` 物件，填入主旨、地點、開始/結束時間與與會者。此物件稍後會儲存為 `.ics` 檔並附加至郵件。
+建立 `Appointment` 物件，填寫主旨、地點、開始/結束時間與參與者。稍後此物件會儲存為 `.ics` 檔案並附加於電子郵件。
 
-### 步驟 3：將 Appointment 轉換為 iCalendar 檔案
-使用 `Appointment.save` 產生 iCalendar 串流。您可以將其寫入磁碟，或保留在記憶體中以供附件使用。
+### 步驟 3：將 Appointment 轉換為 iCalendar 串流
+呼叫 `appointment.save` 產生 iCalendar 資料。您可以將其寫入磁碟或保留於記憶體中作為附件。
 
-### 步驟 4：建立郵件訊息
-實例化 `MailMessage`，設定寄件者、收件者、主旨與內容。將 iCalendar 串流以 `message/rfc822` 部分附加，使郵件客戶端辨識為會議請求。
+### 步驟 4：建立電子郵件訊息
+實例化 `MailMessage`，設定寄件者、收件者、主旨與內容。將 iCalendar 串流以 `message/rfc822` 部分附加，使電子郵件客戶端辨識為會議請求。
 
 ### 步驟 5：（可選）加入數位簽章
-若需要 **digital signature email**，載入憑證後呼叫 `mailMessage.sign`。這可確保訊息的完整性與真實性。
+若需要 **digital signature java**，載入您的憑證並呼叫 `mailMessage.sign`。這可確保訊息的完整性與真實性。
 
-### 步驟 6：透過 SMTP 發送郵件
-以您的伺服器資訊設定 `SmtpClient`，必要時啟用 TLS/SSL，然後呼叫 `client.send(mailMessage)`。收件者將收到可直接接受的行事曆邀請。
+### 步驟 6：（可選）加密電子郵件
+若要 **encrypt email java**，在發送前使用收件者的公鑰呼叫 `mailMessage.encrypt`。此舉可在傳輸過程中保護邀請內容。
 
-> **專業小技巧：** 在大量邀請時重複使用同一個 `SmtpClient` 實例，可提升效能。
+### 步驟 7：透過 SMTP 發送電子郵件
+使用您的伺服器資訊設定 `SmtpClient`，如有需要啟用 TLS/SSL，然後呼叫 `client.send(mailMessage)`。收件者將收到可直接接受的行事曆邀請。
+
+> **小技巧：** 重複使用相同的 `SmtpClient` 實例以批量發送邀請，可提升效能。
 
 ## 常見使用情境
-- **自動化會議排程**，來源可為網站入口或內部工具。  
-- **含 .ics 附件的提醒郵件**。  
-- **大量邀請**，如線上研討會或培訓課程。  
+- **自動化會議排程**，來自網站入口或內部工具。  
+- **提醒郵件**，附帶 `.ics` 檔案。  
+- **大量邀請**，用於線上研討會或培訓課程。  
 - **與 CRM 系統整合**，自動同步事件。
 
-## 相關主題可供探索
-- **How to send email java** 使用 Aspose.Email 的 `SmtpClient`。  
-- **How to convert eml to msg** 以便存檔或遷移。  
-- **How to read ics file** 內容並擷取事件資訊。  
-- **How to parse email headers** 取得路由或中繼資訊。  
-- **How to apply a digital signature email** 以確保安全通訊。
+## 如何在 Java 中讀取 .ics 檔案
+若在建立邀請後需要 **read ics file java**，只要使用 `.ics` 檔案路徑或串流呼叫 `Appointment.load` 即可。回傳的 `Appointment` 物件讓您取得所有事件屬性，如開始時間、主旨與參與者。
 
----
+## 如何在 Java 中將 EML 轉換為 MSG
+Aspose.Email 亦支援 **convert eml to msg java**，同時保留任何附加的行事曆資料。使用 `MailMessage.load` 載入 EML，然後以 `mailMessage.save("output.msg", MailMessageSaveType.OutlookMessage)` 儲存為 MSG。附加的 `.ics` 仍保持完整。
 
-### Aspose.Email for Java 學習路徑
+## 如何在 Java 中加入數位簽章
+若要 **add digital signature java**，取得 X.509 憑證（PFX）及其密碼，然後呼叫 `mailMessage.sign(certificate, password)`。簽署的訊息可由收件者的電子郵件客戶端驗證。
 
-以下是我們最受歡迎的教學，協助您從入門到精通：
+## 如何在 Java 中加密電子郵件
+若要 **encrypt email java**，取得收件者的公鑰憑證，並呼叫 `mailMessage.encrypt(publicCertificate)`。產生的訊息將端對端加密，確保只有預期的收件者能解密。
 
-* ### [Getting Started with Aspose.Email for Java](./getting-started/)
-    開啟 **Aspose.Email for Java** 的旅程。學習如何安裝 API、設定授權，並建立您的第一個郵件應用程式。透過簡明步驟快速掌握基礎。
+## 相關主題您可能感興趣
+* ### [開始使用 Aspose.Email for Java](./getting-started/)
+    Begin your journey with **Aspose.Email for Java**. Learn how to install the API, configure licensing, and build your first email applications. Master the basics quickly with our easy-to-follow, step‑by‑step guides.
 
-* ### [Core Email Message Operations in Java](./email-message-operations/)
-    深入探討 **Aspose.Email for Java** 的完整郵件處理技術。學會建立、載入、儲存與在 **EML**、**MSG**、**MHTML** 等常見格式之間轉換。
+* ### [Java 核心電子郵件訊息操作](./email-message-operations/)
+    Explore comprehensive email message handling techniques with **Aspose.Email for Java**. Learn to create, load, save, and convert email messages between popular formats like **EML**, **MSG**, and **MHTML** using practical tutorials and code examples.
 
-* ### [Formatting & Customizing Email Messages in Java](./message-formatting-customization/)
-    精通郵件內容格式化。了解如何操作 **HTML bodies**、替代文字、自訂標頭與訊息編碼，打造專業且視覺吸引的郵件。
+* ### [Java 電子郵件訊息格式化與自訂](./message-formatting-customization/)
+    Master email content formatting with **Aspose.Email for Java**. Our detailed tutorials show you how to work with **HTML bodies**, alternate texts, custom headers, and message encoding to create professional and visually appealing emails.
 
-* ### [Handling Email Attachments in Java](./attachments-handling/)
-    使用 **Aspose.Email for Java** 實作強韌的附件操作。學會新增、擷取、移除與儲存各種附件，包括內嵌物件與 TNEF 格式。
+* ### [Java 電子郵件附件處理](./attachments-handling/)
+    Implement robust attachment operations in your emails using **Aspose.Email for Java**. Learn to add, extract, remove, and save attachments from various message formats, including embedded objects and TNEF formats.
 
-* ### [Managing Calendar & Appointments in Emails (Java)](./calendar-appointments/)
-    探索在應用程式中管理行事曆功能的完整教學。建立行事曆項目、產生會議請求、處理回覆，並操作 **ICS calendar files**。
+* ### [Java 電子郵件中的行事曆與約會管理](./calendar-appointments/)
+    Discover how to manage calendar functionality in your applications with our comprehensive **Aspose.Email for Java** tutorials. Create calendar items, generate meeting requests, process appointment responses, and work with **ICS calendar files**.
 
-* ### [Integrating with Exchange Server using Aspose.Email for Java](./exchange-server-integration/)
-    學習如何透過 **Aspose.Email for Java** 無縫整合 **Exchange Server**。連接 Exchange、存取信箱與資料夾，並管理訊息與約會（使用 **Exchange Web Services (EWS)**）。
+* ### [使用 Aspose.Email for Java 整合 Exchange Server](./exchange-server-integration/)
+    Learn how to seamlessly integrate with **Exchange Server** using our **Aspose.Email for Java** tutorials. Connect to Exchange servers, access mailboxes and folders, and manage messages and appointments with **Exchange Web Services (EWS)**.
 
-* ### [IMAP Client Operations with Aspose.Email for Java](./imap-client-operations/)
-    本 **IMAP client** 教學示範如何使用 **Aspose.Email for Java** 與郵件伺服器互動。連線 IMAP、瀏覽資料夾、擷取訊息，並實作進階搜尋。
+* ### [Aspose.Email for Java 的 IMAP 客戶端操作](./imap-client-operations/)
+    Our **IMAP client** tutorials demonstrate how to interact with email servers using the **IMAP protocol** in **Aspose.Email for Java**. Learn to connect to IMAP servers, browse folders, fetch messages, and implement advanced search operations.
 
-* ### [POP3 Client Operations with Aspose.Email for Java](./pop3-client-operations/)
-    透過詳細的 **POP3 mail client** 教學，學會連接 POP3 伺服器、下載訊息、取得郵件資訊，並以程式方式處理郵件。
+* ### [Aspose.Email for Java 的 POP3 客戶端操作](./pop3-client-operations/)
+    Master **POP3 mail client** implementation with our detailed **Aspose.Email for Java** tutorials. Connect to POP3 servers, download messages, retrieve mail information, and process emails programmatically.
 
-* ### [SMTP Client Operations for Sending Emails in Java](./smtp-client-operations/)
-    本 **SMTP client** 教學說明如何使用 **Aspose.Email in Java** 程式化發送郵件。設定 SMTP 伺服器、建立安全連線、處理傳遞通知，並執行大量郵件發送。
+* ### [Java 中使用 Aspose.Email 的 SMTP 客戶端操作（發送電子郵件）](./smtp-client-operations/)
+    Our **SMTP client** tutorials show you how to send emails programmatically using **Aspose.Email in Java**. Configure SMTP servers, implement secure connections, handle delivery notifications, and create bulk email operations.
 
-* ### [Working with Outlook PST & OST Files in Java](./outlook-pst-ost-operations/)
-    探索 **Microsoft Outlook** 儲存檔案的操作方法。建立、載入與操作 **PST**、**OST** 檔案，擷取與儲存訊息，並以程式方式管理資料夾。
+* ### [Java 中操作 Outlook PST 與 OST 檔案](./outlook-pst-ost-operations/)
+    Learn to work with **Microsoft Outlook storage files** using our comprehensive **Aspose.Email for Java** tutorials. Create, load, and manipulate **PST** and **OST** files, extract and save messages, and manage folders programmatically.
 
-* ### [MAPI Operations for Outlook Data in Java](./mapi-operations/)
-    精通 **MAPI message manipulation**。學會處理 MAPI 屬性，建立與修改 Outlook 相容的聯絡人、工作、筆記等項目。
+* ### [Java 中的 Outlook MAPI 操作](./mapi-operations/)
+    Master **MAPI message manipulation** with our detailed **Aspose.Email for Java** tutorials. Learn to work with MAPI properties, create and modify Outlook-compatible items like contacts, tasks, and notes programmatically.
 
-* ### [Email Security & Authentication in Java Applications](./security-authentication/)
-    本安全與驗證教學示範如何使用 **Aspose.Email for Java** 保護郵件通訊。實作郵件加密、加入數位簽章、設定 DKIM 簽名，並配置安全驗證。
+* ### [Java 應用程式的電子郵件安全與驗證](./security-authentication/)
+    Our security and authentication tutorials demonstrate how to protect email communications using **Aspose.Email for Java**. Implement email encryption, add digital signatures, configure DKIM signing, and set up secure authentication.
 
-* ### [Email Parsing & Analysis Techniques in Java](./email-parsing-analysis/)
-    透過本教學學會使用 **Aspose.Email in Java** 解析郵件，擷取標頭、收件人資訊，並以程式方式分析訊息內容。
+* ### [Java 中的電子郵件解析與分析技術](./email-parsing-analysis/)
+    Our email parsing and analysis tutorials show you how to extract valuable information from email messages using **Aspose.Email in Java**. Parse email headers, extract recipient information, and analyze message content programmatically.
 
-* ### [Email Conversion & Rendering to Various Formats (Java)](./email-conversion-rendering/)
-    掌握郵件格式轉換操作。於 **EML**、**MSG**、**MHTML**、**HTML** 等格式間轉換，正確渲染訊息並保留視覺完整性。
+* ### [Java 中的電子郵件轉換與渲染至各種格式](./email-conversion-rendering/)
+    Master email conversion operations with our detailed **Aspose.Email for Java** tutorials. Convert between various email formats (**EML**, **MSG**, **MHTML**, **HTML**), render messages with proper formatting, and preserve visual fidelity.
 
-* ### [Thunderbird & MBOX Operations with Aspose.Email for Java](./thunderbird-mbox-operations/)
-    本 Thunderbird 與 MBOX 教學提供完整指引，處理開源郵件格式。存取 Thunderbird 郵件庫、處理 **MBOX files**，並從封存中擷取訊息。
+* ### [使用 Aspose.Email for Java 的 Thunderbird 與 MBOX 操作](./thunderbird-mbox-operations/)
+    Our Thunderbird and MBOX tutorials provide comprehensive guidance for handling open‑source email formats with **Aspose.Email in Java**. Learn to access Thunderbird mail stores, process **MBOX files**, and extract messages from archives.
 
-* ### [Sending Emails with Aspose.Email for Java](./sending-emails/)
-    完整教學教您如何使用 **Aspose.Email for Java** 送出郵件，快速且有效地在 Java 應用程式中建立與傳送郵件。
+* ### [使用 Aspose.Email for Java 發送電子郵件](./sending-emails/)
+    Master the art of sending emails using **Aspose.Email for Java** with these comprehensive tutorials. Learn to craft and send emails effortlessly and efficiently from your Java applications.
 
-* ### [Receiving Emails with Aspose.Email for Java](./receiving-emails/)
-    了解如何使用 **Aspose.Email for Java** 接收與處理郵件，讓您以程式方式管理收件匣，提升工作流程效率。
+* ### [使用 Aspose.Email for Java 接收電子郵件](./receiving-emails/)
+    Learn how to receive and process emails effortlessly with **Aspose.Email for Java** tutorials. Start managing your inbox programmatically and streamline your email workflows.
 
-* ### [Configuring SMTP Servers with Aspose.Email for Java](./configuring-smtp-servers/)
-    本教學一步步說明如何使用 **Aspose.Email for Java** 設定 **SMTP servers**，確保郵件順利投遞並遵循最佳實務。
+* ### [使用 Aspose.Email for Java 設定 SMTP 伺服器](./configuring-smtp-servers/)
+    Learn how to configure **SMTP servers** effortlessly with **Aspose.Email for Java**. Our step‑by‑step tutorials guide you through seamless email delivery setup and best practices.
 
-* ### [Advanced Email Attachments with Aspose.Email for Java](./advanced-email-attachments/)
-    深入探討進階附件技術。處理各類型附件、管理大型檔案，並有效率地最佳化附件處理流程。
+* ### [使用 Aspose.Email for Java 的進階電子郵件附件](./advanced-email-attachments/)
+    Delve into advanced email attachment techniques with **Aspose.Email for Java**. Explore tutorials for handling various attachment types, managing large files, and optimizing attachment processing efficiently.
 
-* ### [Securing Email Communications with Aspose.Email for Java](./securing-email-communications/)
-    學習如何提升郵件安全性。涵蓋 **encryption**、**digital signatures** 與安全通訊協定，打造堅固的郵件防護。
+* ### [使用 Aspose.Email for Java 加強電子郵件通訊安全](./securing-email-communications/)
+    Learn how to enhance email security with **Aspose.Email for Java**. Our tutorials cover essential topics like **encryption**, **digital signatures**, and secure communication protocols for robust email protection.
 
-* ### [Customizing Email Headers with Aspose.Email for Java](./customizing-email-headers/)
-    掌握自訂郵件標頭的技巧，利用 **Aspose.Email for Java** 操作標頭，提升訊息控制與可管理性。
+* ### [使用 Aspose.Email for Java 自訂電子郵件標頭](./customizing-email-headers/)
+    Learn how to customize email headers effortlessly with **Aspose.Email for Java**. Dive into these tutorials and harness the power of email header manipulation for enhanced control over your messages.
 
-* ### [Exploring Email Security with Aspose.Email for Java](./exploring-email-security/)
-    深入了解如何在 Java 應用程式中實作安全郵件解決方案，提供完整步驟與最佳實務。
+* ### [使用 Aspose.Email for Java 探索電子郵件安全性](./exploring-email-security/)
+    Discover in-depth how to enhance email security with **Aspose.Email for Java**. Explore step‑by‑step tutorials and best practices for implementing secure email solutions in your Java applications.
 
-## 常見問題
+## 常見問與答
 
-**Q: 建立行事曆邀請後，如何讀取 .ics 檔案？**  
-A: 使用 `Appointment.load` 方法將 `.ics` 檔匯入為 `Appointment` 物件，之後即可存取開始時間、主旨、與會者等屬性。
+**Q: 如何在建立行事曆邀請後讀取 .ics 檔案？**  
+A: 使用 `Appointment.load` 方法將 `.ics` 檔案匯入回 `Appointment` 物件，然後即可存取其屬性，如開始時間、主旨與參與者。
 
-**Q: 可以不附加檔案直接發送行事曆邀請嗎？**  
-A: 可以 – 設定 `MailMessage.isCalendar` 為 `true`，並直接將 `Appointment` 物件指派給訊息內容，客戶端會將其呈現為會議請求。
+**Q: 我可以在不附加檔案的情況下發送行事曆邀請嗎？**  
+A: 可以 – 將 `MailMessage.isCalendar` 標誌設為 `true`，並直接將 `Appointment` 物件指派給訊息內容；客戶端會將其呈現為會議請求。
 
-**Q: 能否在轉換 EML 為 MSG 時保留行事曆資料？**  
-A: 完全可以。先以 `MailMessage.load` 載入 EML，然後呼叫 `mailMessage.save` 並指定 MSG 格式，任何附加的行事曆邀請都會完整保留。
+**Q: 是否能在保留行事曆資料的情況下將 EML 檔案轉換為 MSG？**  
+A: 當然可以。使用 `MailMessage.load` 載入 EML，然後呼叫 `mailMessage.save` 並指定 MSG 格式；任何附加的行事曆邀請都會保持完整。
 
-**Q: 加入數位簽章到郵件需要什麼？**  
-A: 需要有效的 X.509 憑證（PFX 檔）以及私鑰密碼。於發送前呼叫 `mailMessage.sign(certificate, password)` 即可。
+**Q: 要在電子郵件加入數位簽章需要什麼？**  
+A: 有效的 X.509 憑證（PFX 檔）與私鑰密碼。發送前呼叫 `mailMessage.sign(certificate, password)`。
 
-**Q: 如何解析郵件標頭以取得路由資訊？**  
-A: 使用 `mailMessage.getHeaders()` 或遍歷 `mailMessage.getHeaders().getAll()` 讀取 `Received`、`Message-ID`、`X-Mailer` 等欄位。
+**Q: 如何在 Java 中加密電子郵件以保護邀請？**  
+A: 取得收件者的公鑰憑證，並呼叫 `mailMessage.encrypt(publicCertificate)`。這會加密整個訊息，包括附加的 `.ics` 檔案。
 
----
-
-**最後更新：** 2025-11-30  
-**測試環境：** Aspose.Email for Java 24.11  
-**作者：** Aspose
+**Last Updated:** 2026-04-21  
+**Tested With:** Aspose.Email for Java 24.11  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
