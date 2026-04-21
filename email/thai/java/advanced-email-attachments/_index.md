@@ -1,10 +1,16 @@
 ---
-date: 2025-12-01
-description: เรียนรู้วิธีดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email สำหรับ Java. เชี่ยวชาญการจัดการไฟล์แนบขั้นสูง
-  รวมถึงวิธีฝังรูปภาพเป็นไฟล์แนบ.
-linktitle: Extract attachments from email using Aspose.Email for Java
+date: 2026-04-21
+description: เรียนรู้วิธีดึงไฟล์แนบจากไฟล์ msg ด้วย Aspose.Email สำหรับ Java คู่มือนี้แสดงวิธีดึงไฟล์แนบ,
+  ฝังรูปภาพเป็นไฟล์แนบ, และจัดการรูปแบบ eml หรือ pst.
+keywords:
+- extract attachments from msg
+- how to extract attachments
+- extract attachments from eml
+- extract attachments from pst
+- embed images as attachments
+linktitle: ดึงไฟล์แนบจาก msg ด้วย Aspose.Email สำหรับ Java
 second_title: Aspose.Email Java Email Management API
-title: ดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email สำหรับ Java
+title: ดึงไฟล์แนบจากไฟล์ msg ด้วย Aspose.Email สำหรับ Java
 url: /th/java/advanced-email-attachments/
 weight: 13
 ---
@@ -15,63 +21,57 @@ weight: 13
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ดึงไฟล์แนบจากอีเมลโดยใช้ Aspose.Email for Java
+# ดึงไฟล์แนบจาก msg ด้วย Aspose.Email for Java
 
-Email attachments play a pivotal role in modern communication, allowing users to share documents, images, and files seamlessly. **Aspose.Email for Java** empowers developers to **extract attachments from email** and implement advanced techniques efficiently.
+Email attachments are the workhorse of modern business communication, letting us share contracts, invoices, images, and more. With **Aspose.Email for Java**, you can **extract attachments from msg** files quickly and reliably, whether the messages come from Outlook, an Exchange server, or a local archive. This tutorial walks you through the essential steps, explains why this capability matters, and shows how to handle related formats such as EML and PST.
 
-## คำตอบสั้น
-- **วัตถุประสงค์หลักของ Aspose.Email for Java คืออะไร?** เพื่อสร้าง อ่าน และจัดการข้อความอีเมลโดยโปรแกรม รวมถึงการจัดการไฟล์แนบ.  
-- **ฉันจะดึงไฟล์แนบจากอีเมลได้อย่างไร?** ใช้คลาส `MailMessage` เพื่อโหลดข้อความและวนลูปผ่านคอลเลกชัน `Attachments`.  
-- **ฉันสามารถฝังรูปภาพเป็นไฟล์แนบได้หรือไม่?** ได้—รูปภาพแบบอินไลน์สามารถเพิ่มเป็นไฟล์แนบและอ้างอิงในส่วนเนื้อหา HTML.  
-- **ฉันต้องใช้ไลเซนส์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** จำเป็นต้องมีไลเซนส์ Aspose.Email ที่ถูกต้องสำหรับการใช้งานเชิงพาณิชย์.  
-- **ไลบรารีนี้เข้ากันได้กับ Java 8+ หรือไม่?** แน่นอน; ไลบรารีรองรับ Java 8 และ runtime ที่ใหม่กว่า.
+ไฟล์แนบของอีเมลเป็นหัวใจของการสื่อสารทางธุรกิจสมัยใหม่ ช่วยให้เราสามารถแชร์สัญญา ใบแจ้งหนี้ รูปภาพ และอื่น ๆ ด้วย **Aspose.Email for Java** คุณสามารถ **ดึงไฟล์แนบจาก msg** ได้อย่างรวดเร็วและเชื่อถือได้ ไม่ว่าจะเป็นข้อความที่มาจาก Outlook, เซิร์ฟเวอร์ Exchange หรือที่เก็บข้อมูลในเครื่อง บทแนะนำนี้จะพาคุณผ่านขั้นตอนสำคัญ อธิบายว่าความสามารถนี้สำคัญอย่างไร และแสดงวิธีจัดการกับรูปแบบที่เกี่ยวข้องเช่น EML และ PST.
 
-## “การดึงไฟล์แนบจากอีเมล” คืออะไร?
-Extracting attachments from email means programmatically retrieving files that are attached to an email message and saving them to a local storage or processing them further. This is essential for workflows such as automated invoice processing, document archiving, or content analysis.
+## คำตอบด่วน
+- **วัตถุประสงค์หลักของ Aspose.Email for Java คืออะไร?** To programmatically create, read, and manipulate email messages, including attachment handling.  
+- **ฉันจะดึงไฟล์แนบจาก msg ได้อย่างไร?** Load the message with `MailMessage.load()` and loop through its `Attachments` collection.  
+- **ฉันสามารถฝังรูปภาพเป็นไฟล์แนบได้หรือไม่?** Yes—inline images can be added as attachments and referenced in the HTML body.  
+- **ฉันต้องการใบอนุญาตสำหรับการใช้งานในสภาพแวดล้อมการผลิตหรือไม่?** A valid Aspose.Email license is required for commercial deployments.  
+- **รองรับ Java 8+ หรือไม่?** Absolutely; the library supports Java 8 and newer runtimes.
+
+## “ดึงไฟล์แนบจาก msg” คืออะไร?
+การดึงไฟล์แนบจาก msg หมายถึงการดึงไฟล์ใด ๆ ที่แนบอยู่ในไฟล์ Outlook .msg ออกมาโดยอัตโนมัติและบันทึกลงดิสก์หรือประมวลผลต่อไป นี่เป็นความต้องการทั่วไปสำหรับการประมวลผลใบแจ้งหนี้อัตโนมัติ การจัดเก็บเอกสาร หรือสายงานการวิเคราะห์เนื้อหา
 
 ## ทำไมต้องใช้ Aspose.Email for Java เพื่อดึงไฟล์แนบ?
 - **Full‑control API** – เข้าถึงทุกส่วนของโครงสร้าง MIME โดยไม่ต้องเขียนพาร์เซอร์ระดับต่ำ.  
-- **Format‑agnostic** – ทำงานกับรูปแบบไฟล์ EML, MSG, PST, MHTML และรูปแบบอีเมลอื่น ๆ.  
-- **Advanced features** – แปลง, บีบอัด หรือเข้ารหัสไฟล์แนบได้ทันที.  
-- **Robust documentation** – คู่มือแบบขั้นตอนและตัวอย่างโค้ดช่วยลดเวลาการพัฒนา.
+- **Format‑agnostic** – ทำงานกับ MSG, EML, PST, MHTML และรูปแบบอีเมลอื่น ๆ.  
+- **Advanced features** – แปลง บีบอัด หรือเข้ารหัสไฟล์แนบได้ทันที.  
+- **Robust documentation** – บทแนะนำแบบขั้นตอนและตัวอย่างโค้ดช่วยลดเวลาในการพัฒนา.  
 
-## สำรวจความสำคัญของไฟล์แนบในอีเมล
+## วิธีดึงไฟล์แนบจาก msg – ภาพรวมแบบขั้นตอน
+1. **Load the .msg file** – ใช้ `MailMessage.load("message.msg")` (หรือ overload ที่สตรีมไฟล์สำหรับข้อความขนาดใหญ่).  
+2. **Iterate over the `Attachments` collection** – วัตถุ `Attachment` แต่ละตัวให้ชื่อไฟล์ ชนิดเนื้อหา และข้อมูลไบต์ดิบ.  
+3. **Save or process each attachment** – เรียก `attachment.save("outputPath")` หรือส่งสตรีมไปยังบริการจัดเก็บคลาวด์.  
+4. **(Optional) Handle inline images** – รูปภาพอินไลน์ปรากฏในคอลเลกชันเดียวกัน; ตั้งค่า `ContentId` ของพวกมันและอ้างอิงในส่วนเนื้อหา HTML ด้วย URL `cid:`.  
 
-Email attachments are a fundamental aspect of email communication, enabling users to share a wide range of content with ease. However, managing attachments effectively, especially in a business context, can be challenging. Aspose.Email for Java offers a comprehensive set of tools and tutorials that cater to the diverse needs of developers, allowing them to handle email attachments with precision and efficiency.
-
-## การใช้ประโยชน์จากความสามารถของ Aspose.Email for Java
-
-Aspose.Email for Java provides developers with a powerful toolkit for working with email attachments. With this API, you can seamlessly **extract attachments from email**, add new files, and manipulate existing ones. Whether it's converting attachments to different formats, compressing files, or securing sensitive data within attachments, Aspose.Email for Java offers the necessary functionalities and guidance to achieve these tasks effectively.
-
-## วิธีดึงไฟล์แนบจากอีเมล – ภาพรวมขั้นตอนต่อขั้นตอน
-
-1. **Load the email message** – ใช้ `MailMessage.load()` เพื่ออ่านไฟล์ EML หรือ MSG.  
-2. **Iterate over the Attachments collection** – แต่ละอ็อบเจกต์ `Attachment` ให้เข้าถึงชื่อไฟล์, ชนิดของเนื้อหา, และข้อมูลดิบ.  
-3. **Save or process each attachment** – เรียก `attachment.save(filePath)` หรือสตรีมเนื้อหาโดยตรงไปยังบริการอื่น.  
-4. **(Optional) Handle inline images** – รูปภาพแบบอินไลน์ก็เป็นส่วนหนึ่งของคอลเลกชัน Attachments; อ้างอิงในส่วนเนื้อหา HTML ด้วย Content‑ID ของมัน.
-
-> **Pro tip:** เมื่อจัดการกับอีเมลขนาดใหญ่ ให้ใช้ overload ของ `MailMessage` ที่สตรีมข้อความเพื่อหลีกเลี่ยงการโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ.
-
-## เชี่ยวชาญเทคนิคไฟล์แนบขั้นสูง
-
-To harness the full potential of email attachments, developers can explore the advanced tutorials and resources provided by Aspose.Email for Java. These tutorials cover a wide array of topics, including how to **extract attachments from email**, convert attachment formats, and automate attachment‑related tasks. By following these step‑by‑step guides, developers can become proficient in managing email attachments, enhancing the overall email communication experience.
+> **เคล็ดลับ:** เมื่อจัดการกับกล่องเมลขนาดใหญ่ ควรใช้ overload แบบสตรีมของ `MailMessage.load()` เพื่อรักษาการใช้หน่วยความจำให้ต่ำ.
 
 ## ข้อผิดพลาดทั่วไปและวิธีหลีกเลี่ยง
-- **Missing contentID for inline images** – ตรวจสอบให้แน่ใจว่าได้ตั้งค่า property `ContentId` เมื่อฝังรูปภาพ; หากไม่ตั้งค่า รูปภาพจะไม่แสดงในส่วนเนื้อหาอีเมล.  
+- **Missing Content‑ID for inline images** – ตรวจสอบให้แน่ใจว่าได้ตั้งค่าคุณสมบัติ `ContentId`; มิฉะนั้นรูปภาพจะไม่แสดงในส่วนเนื้อหา HTML.  
 - **Incorrect character encoding** – ใช้ UTF‑8 เมื่อบันทึกไฟล์แนบที่เป็นข้อความเพื่อรักษาอักขระพิเศษ.  
-- **Large attachment memory usage** – สตรีมไฟล์แนบไปยังดิสก์หรือคลาวด์บัคเก็ตแทนการเก็บไว้ในหน่วยความจำ.
+- **Large attachment memory usage** – สตรีมไฟล์แนบโดยตรงไปยังดิสก์หรือบัคเก็ตคลาวด์แทนการโหลดทั้งหมดเข้าสู่หน่วยความจำ.  
 
-## การแนบไฟล์อีเมลขั้นสูงด้วยบทแนะนำ Aspose.Email for Java
+## เทคนิคการจัดการไฟล์แนบขั้นสูงที่คุณสามารถสำรวจต่อไป
+- **How to extract attachments from eml** – API `MailMessage` เดียวกันทำงานกับไฟล์ `.eml`; เพียงเปลี่ยนส่วนขยายไฟล์ในคำสั่ง `load`.  
+- **How to extract attachments from pst** – ใช้คลาส `PersonalStorage` เพื่อเปิดไฟล์ PST, แยกรายการวัตถุ `Message`, และใช้ตรรกะการดึงไฟล์แนบเดียวกัน.  
+- **Embedding images as attachments** – เพิ่มรูปภาพเป็น `Attachment`, ตั้งค่า `ContentId`, และอ้างอิงด้วย `<img src="cid:yourContentId">` ในส่วนเนื้อหา HTML.  
+
+## บทแนะนำขั้นสูงเกี่ยวกับไฟล์แนบอีเมลด้วย Aspose.Email for Java
 
 ### [ทำงานกับไฟล์แนบแบบอินไลน์ใน Aspose.Email](./working-with-inline-attachments/)
 Optimize your email communication with Aspose.Email for Java. Learn to work with inline attachments in this comprehensive guide.  
-### [จัดการไฟล์แนบขนาดใหญ่ใน Aspose.Email](./managing-large-attachments/)
-Efficiently manage large email attachments with Aspose.Email for Java. Step-by-step guide and source code for streamlined attachment handling in Java applications.  
+### [การจัดการไฟล์แนบขนาดใหญ่ใน Aspose.Email](./managing-large-attachments/)
+Efficiently manage large email attachments with Aspose.Email for Java. Step‑by‑step guide and source code for streamlined attachment handling in Java applications.  
 ### [การดึงไฟล์แนบจากข้อความอีเมลใน Aspose.Email](./extracting-attachments-from-email-messages/)
-Learn how to **extract attachments from email** effortlessly using Aspose.Email for Java. Step-by-step guide for Java developers.  
-### [ฝังรูปภาพเป็นไฟล์แนบใน Aspose.Email](./embedding-images-as-attachments/)
+Learn how to **extract attachments from email** effortlessly using Aspose.Email for Java. Step‑by‑step guide for Java developers.  
+### [การฝังรูปภาพเป็นไฟล์แนบใน Aspose.Email](./embedding-images-as-attachments/)
 Learn how to **embed images as attachments** in Aspose.Email for Java. Elevate your email communication with visually engaging content.  
-### [ใช้ Aspose.Email สำหรับไฟล์แนบเอกสาร](./using-aspose-email-for-document-attachments/)
+### [การใช้ Aspose.Email สำหรับไฟล์แนบเอกสาร](./using-aspose-email-for-document-attachments/)
 Learn how to manage document attachments in Java emails using Aspose.Email for Java. Create, send, and extract document attachments with ease.
 
 ## คำถามที่พบบ่อย
@@ -80,22 +80,22 @@ Learn how to manage document attachments in Java emails using Aspose.Email for J
 A: ได้. โหลดข้อความด้วยรหัสผ่านที่เหมาะสมแล้ววนลูปผ่านคอลเลกชัน `Attachments` ตามปกติ.
 
 **Q: ฉันจะฝังรูปภาพเป็นไฟล์แนบและอ้างอิงใน HTML อย่างไร?**  
-A: เพิ่มรูปภาพเป็น `Attachment`, ตั้งค่า `ContentId` ของมัน, แล้วใช้ `<img src="cid:yourContentId">` ในส่วนเนื้อหา HTML.
+A: เพิ่มรูปภาพเป็น `Attachment`, ตั้งค่า `ContentId` ของมัน, และใช้ `<img src="cid:yourContentId">` ในส่วนเนื้อหา HTML.
 
 **Q: มีขีดจำกัดจำนวนหรือขนาดของไฟล์แนบที่ฉันสามารถดึงได้หรือไม่?**  
-A: ไลบรารีเองไม่มีขีดจำกัดที่เข้มงวด, แต่คุณควรพิจารณาข้อจำกัดของหน่วยความจำ JVM และสตรีมไฟล์ขนาดใหญ่.
+A: ไลบรารีเองไม่มีการจำกัดอย่างเข้มงวด, แต่คุณควรพิจารณาข้อจำกัดของหน่วยความจำ JVM และสตรีมไฟล์ขนาดใหญ่.
 
 **Q: Aspose.Email รองรับการดึงไฟล์แนบจากไฟล์ PST หรือไม่?**  
 A: แน่นอน. ใช้คลาส `PersonalStorage` เพื่อเปิด PST แล้วเข้าถึงแต่ละ `Message` เพื่อดึงไฟล์แนบของมัน.
 
-**Q: ฉันต้องใช้ไลเซนส์แยกต่างหากสำหรับแต่ละสภาพแวดล้อมการปรับใช้หรือไม่?**  
-A: ไลเซนส์เดียวครอบคลุมทุกสภาพแวดล้อม (การพัฒนา, การทดสอบ, การผลิต) ตราบใดที่คุณปฏิบัติตามเงื่อนไขการให้สิทธิ์.
+**Q: ฉันต้องการใบอนุญาตแยกต่างหากสำหรับแต่ละสภาพแวดล้อมการปรับใช้หรือไม่?**  
+A: ใบอนุญาตเดียวครอบคลุมทุกสภาพแวดล้อม (การพัฒนา, การทดสอบ, การผลิต) ตราบใดที่คุณปฏิบัติตามเงื่อนไขการให้ใบอนุญาต.
 
 ---
 
-**Last Updated:** 2025-12-01  
-**Tested With:** Aspose.Email for Java 24.10  
-**Author:** Aspose  
+**อัปเดตล่าสุด:** 2026-04-21  
+**ทดสอบกับ:** Aspose.Email for Java 24.10  
+**ผู้เขียน:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
