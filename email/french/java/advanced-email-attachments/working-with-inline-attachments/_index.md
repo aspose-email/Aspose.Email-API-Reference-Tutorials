@@ -1,12 +1,16 @@
 ---
-date: 2025-12-01
-description: Apprenez à envoyer des e‑mails avec image intégrée en utilisant Aspose.Email
-  pour Java. Ce guide montre comment intégrer des images dans les e‑mails et créer
-  des e‑mails HTML en Java avec des pièces jointes en ligne.
-linktitle: Working with Inline Attachments in Aspose.Email
+date: 2026-04-28
+description: Apprenez comment intégrer une image dans un e‑mail HTML en utilisant
+  Aspose.Email pour Java et envoyer un e‑mail avec l’image intégrée via SMTP.
+keywords:
+- embed image in html email
+- send email with embedded image
+- how to embed image java
+- create html email java
+- send email via smtp java
+linktitle: Travailler avec les pièces jointes intégrées dans Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Comment envoyer un e‑mail avec une image intégrée en utilisant Aspose.Email
-  pour Java
+title: Comment intégrer une image dans un e‑mail HTML avec Aspose.Email pour Java
 url: /fr/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
@@ -17,29 +21,33 @@ weight: 10
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Comment envoyer un e‑mail avec image intégrée en utilisant Aspose.Email pour Java
+# Comment intégrer une image dans un e‑mail HTML avec Aspose.Email pour Java
 
-Intégrer des images directement dans un e‑mail rend vos messages plus soignés et garantit que le destinataire voit les graphiques sans avoir à télécharger des fichiers séparés. Dans ce tutoriel, vous apprendrez **comment envoyer un e‑mail avec image intégrée** en utilisant Aspose.Email pour Java, en couvrant tout, de la configuration de la bibliothèque à la création d’un e‑mail HTML, l’ajout de ressources en ligne, et enfin l’envoi du message.
+Intégrer une image directement dans un e‑mail rend vos messages plus professionnels et garantit que le destinataire voit les graphiques sans avoir à télécharger des fichiers séparés. Dans ce tutoriel, vous apprendrez **comment intégrer une image dans un e‑mail HTML** en utilisant Aspose.Email pour Java, couvrant tout, de la configuration de la bibliothèque à la création d’un e‑mail HTML, l’ajout de ressources en ligne, et enfin l’envoi du message via SMTP.
 
 ## Réponses rapides
 - **Quelle est la classe principale pour les images en ligne ?** `LinkedResource`
-- **Quelle méthode référence l'image dans le HTML ?** Utilisez `cid:yourContentId` dans la balise `<img>`
-- **Ai‑je besoin d'une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence est requise pour la production
-- **Puis‑je envoyer l'e‑mail via n'importe quel serveur SMTP ?** Oui, il suffit de configurer `SmtpClient` avec les détails de votre serveur
-- **Cette approche est‑elle compatible avec tous les principaux clients de messagerie ?** La plupart des clients modernes (Outlook, Gmail, Thunderbird) prennent en charge les images intégrées via CID
+- **Quelle méthode référence l’image dans le HTML ?** Utilisez `cid:yourContentId` dans la balise `<img>`
+- **Ai‑je besoin d’une licence pour le développement ?** Un essai gratuit suffit pour les tests ; une licence est requise pour la production
+- **Puis‑je envoyer l’e‑mail via n’importe quel serveur SMTP ?** Oui, configurez simplement `SmtpClient` avec les détails de votre serveur
+- **Cette approche est‑elle compatible avec tous les principaux clients de messagerie ?** La plupart des clients modernes (Outlook, Gmail, Thunderbird) prennent en charge les images intégrées par CID
 
-## Que sont les pièces jointes en ligne (images intégrées) ?
+## Comment intégrer une image dans un e‑mail HTML en utilisant Aspose.Email pour Java
 
-Les pièces jointes en ligne—parfois appelées images intégrées ou images CID—sont des fichiers qui résident à l’intérieur du corps MIME d’un e‑mail. Elles sont référencées depuis la partie HTML du message avec un **Content‑ID** (CID). Cette technique vous permet **d’intégrer des images dans l’e‑mail** afin qu’elles apparaissent exactement à l’endroit où vous placez la balise `<img>`, sans apparaître comme des pièces jointes téléchargeables séparées.
+Lorsque vous **intégrez une image dans un e‑mail HTML**, l’image devient partie du corps MIME, de sorte qu’elle s’affiche immédiatement dans le client du destinataire. Ci‑dessous, nous parcourons le processus complet, d’un simple message HTML à un e‑mail complet avec une image en ligne.
 
-## Pourquoi utiliser des images intégrées dans vos e‑mails Java ?
+### Qu’est‑ce que les pièces jointes en ligne (images intégrées) ?
 
-- **Aspect professionnel :** les logos, bannières et images de produits s’affichent instantanément.  
-- **Meilleur engagement :** les destinataires sont plus susceptibles de lire un e‑mail complet.  
-- **Pas de clics supplémentaires :** les utilisateurs n’ont pas besoin de télécharger une pièce jointe pour voir l’image.  
-- **Cohérence de la marque :** vos éléments de marque restent intégrés au contenu du message.
+Les pièces jointes en ligne—parfois appelées images intégrées ou images CID—sont des fichiers qui résident à l’intérieur du corps MIME d’un e‑mail. Elles sont référencées depuis la partie HTML du message avec un **Content‑ID** (CID). Cette technique vous permet **d’intégrer des images dans les e‑mails** afin qu’elles apparaissent exactement où vous placez la balise `<img>`, sans apparaître comme des pièces jointes téléchargeables séparées.
 
-## Prérequis
+### Pourquoi utiliser des images intégrées dans vos e‑mails Java ?
+
+- **Aspect professionnel :** Logos, bannières et photos de produits s’affichent instantanément.
+- **Meilleur engagement :** Les destinataires sont plus enclins à lire un e‑mail qui semble complet.
+- **Pas de clics supplémentaires :** Les utilisateurs n’ont pas besoin de télécharger une pièce jointe pour voir l’image.
+- **Cohérence de la marque :** Vos éléments de marque restent intégrés au contenu du message.
+
+### Prérequis
 
 - Bibliothèque Aspose.Email pour Java (téléchargez depuis la documentation officielle [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/))
 - Environnement de développement Java 8+
@@ -85,9 +93,9 @@ message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001
 
 > **Astuce :** Gardez le `ContentId` simple et unique dans le message pour éviter les conflits.
 
-### Étape 3 : Envoyer l'e‑mail via `SmtpClient`
+### Étape 3 : Envoyer l’e‑mail via `SmtpClient`
 
-Configurez vos paramètres SMTP et envoyez le message. L’image intégrée voyage avec l’e‑mail, de sorte que le destinataire la voit instantanément.
+Configurez vos paramètres SMTP et envoyez le message. L’image intégrée voyage avec l’e‑mail, de sorte que le destinataire la voit immédiatement.
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -99,9 +107,9 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 client.send(message);
 ```
 
-### Étape 4 : Recevoir et extraire les images en ligne (facultatif)
+### Étape 4 : Recevoir et extraire les images en ligne (optionnel)
 
-Si vous devez traiter des messages entrants contenant des images intégrées, vous pouvez charger le fichier `.eml` et accéder à ses `LinkedResources`.
+Si vous devez traiter les messages entrants contenant des images intégrées, vous pouvez charger le fichier `.eml` et accéder à ses `LinkedResources`.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -114,35 +122,41 @@ MailMessage receivedMessage = MailMessage.load("path/to/received_email.eml");
 LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources();
 ```
 
-## Problèmes courants et comment les résoudre
+## Problèmes courants & solutions
 
 | Problème | Pourquoi cela se produit | Solution |
 |----------|--------------------------|----------|
-| **Content‑ID mismatch** | Le référentiel `cid:` dans le HTML ne correspond pas au `ContentId` défini sur `LinkedResource`. | Assurez‑vous que les chaînes sont identiques (`image001` vs `cid:image001`). |
-| **File not found** | Le chemin vers l'image est incorrect ou le fichier est manquant. | Vérifiez le chemin absolu/relatif et assurez‑vous que le fichier existe sur le serveur. |
-| **SMTP authentication failure** | Identifiants ou paramètres du serveur incorrects. | Revérifiez l'hôte, le port, le nom d'utilisateur et le mot de passe. Activez TLS/SSL si nécessaire. |
-| **Image not displayed in some clients** | Certains clients bloquent les ressources externes. | Utilisez des images intégrées via CID (comme montré) plutôt que des URL externes. |
+| **Incohérence de Content‑ID** | La référence `cid:` dans le HTML ne correspond pas au `ContentId` défini sur `LinkedResource`. | Assurez‑vous que les chaînes sont identiques (`image001` vs `cid:image001`). |
+| **Fichier introuvable** | Le chemin vers l’image est incorrect ou le fichier est manquant. | Vérifiez le chemin absolu/relatif et assurez‑vous que le fichier existe sur le serveur. |
+| **Échec d’authentification SMTP** | Identifiants ou paramètres du serveur incorrects. | Revérifiez l’hôte, le port, le nom d’utilisateur et le mot de passe. Activez TLS/SSL si nécessaire. |
+| **Image non affichée dans certains clients** | Certains clients bloquent les ressources externes. | Utilisez des images intégrées par CID (comme montré) plutôt que des URLs externes. |
 
-## Questions fréquentes
+## Questions fréquemment posées
 
-**Q :** Comment télécharger Aspose.Email pour Java ?  
-**R :** Vous pouvez télécharger Aspose.Email pour Java depuis la [documentation](https://reference.aspose.com/email/java/). Suivez les instructions d’installation pour l’intégrer à votre projet.
+**Q : Comment télécharger Aspose.Email pour Java ?**  
+R : Vous pouvez télécharger Aspose.Email pour Java depuis la [documentation](https://reference.aspose.com/email/java/). Suivez les instructions d’installation pour l’intégrer à votre projet.
 
-**Q :** Puis‑je utiliser Aspose.Email pour Java avec d'autres bibliothèques Java ?  
-**R :** Oui, Aspose.Email s’intègre facilement avec d’autres bibliothèques Java, vous permettant de combiner le traitement des e‑mails avec la génération de PDF, l’OCR ou l’accès à une base de données.
+**Q : Puis‑je utiliser Aspose.Email pour Java avec d’autres bibliothèques Java ?**  
+R : Oui, Aspose.Email s’intègre parfaitement avec d’autres bibliothèques Java, vous permettant de combiner le traitement des e‑mails avec la génération de PDF, l’OCR ou l’accès à une base de données.
 
-**Q :** Quels formats de fichiers sont pris en charge pour les pièces jointes en ligne ?  
-**R :** Les formats d’image courants tels que PNG, JPEG, GIF, ainsi que d’autres types de documents (par ex., SVG) sont pris en charge comme ressources en ligne.
+**Q : Quels formats de fichiers sont pris en charge pour les pièces jointes en ligne ?**  
+R : Les formats d’image courants tels que PNG, JPEG, GIF, ainsi que d’autres types de documents (par ex., SVG) sont pris en charge comme ressources en ligne.
 
-**Q :** Comment gérer les pièces jointes en ligne dans les e‑mails HTML ?  
-**R :** Utilisez la classe `LinkedResource` pour attribuer un `ContentId`, ajoutez‑le à `message.getLinkedResources()`, et référencez‑le dans le corps HTML avec `<img src='cid:yourContentId'>`.
+**Q : Comment gérer les pièces jointes en ligne dans les e‑mails HTML ?**  
+R : Utilisez la classe `LinkedResource` pour attribuer un `ContentId`, ajoutez‑le à `message.getLinkedResources()`, et référencez‑le dans le corps HTML avec `<img src='cid:yourContentId'>`.
 
-**Q :** Aspose.Email pour Java est‑il compatible avec différents serveurs de messagerie ?  
-**R :** Oui, il fonctionne avec n’importe quel serveur SMTP/IMAP/POP3. Fournissez simplement l’adresse du serveur, le port et les détails d’authentification corrects.
+**Q : Aspose.Email pour Java est‑il compatible avec différents serveurs de messagerie ?**  
+R : Oui, il fonctionne avec n’importe quel serveur SMTP/IMAP/POP3. Fournissez simplement l’adresse du serveur, le port et les détails d’authentification corrects.
 
-**Dernière mise à jour :** 2025-12-01  
-**Testé avec :** Aspose.Email pour Java 24.12 (dernière version au moment de la rédaction)  
-**Auteur :** Aspose  
+## Conclusion
+
+Vous disposez maintenant d’une recette complète, prête pour la production, pour **intégrer une image dans un e‑mail HTML** avec Aspose.Email pour Java. En créant un `LinkedResource`, en assignant un Content‑ID unique et en le référencant avec `cid:` dans votre corps HTML, vous garantissez que les logos, bannières ou photos de produits apparaissent exactement où vous le souhaitez—sans téléchargements supplémentaires ni liens brisés. Combinez cela avec la robuste classe `SmtpClient` pour envoyer le message via n’importe quel serveur SMTP, et vous êtes prêt à délivrer des e‑mails soignés et cohérents avec votre marque depuis vos applications Java.
+
+---
+
+**Dernière mise à jour :** 2026-04-28  
+**Testé avec :** Aspose.Email pour Java 24.12 (dernière version au moment de la rédaction)  
+**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
