@@ -1,7 +1,7 @@
 ---
-date: 2025-12-10
+date: 2026-02-09
 description: Tanulja meg, hogyan kezelje az e‑mail melléklet méretkorlátját, hogyan
-  hozhat létre e‑mail mellékletet Java‑ban, és hogyan tölthet le e‑mail mellékletet
+  hozzon létre e‑mail mellékletet Java‑ban, és hogyan töltsön le e‑mail mellékletet
   Java‑ban az Aspose.Email for Java használatával.
 linktitle: Email Attachment Size Limit Management with Aspose.Email
 second_title: Aspose.Email Java Email Management API
@@ -10,41 +10,71 @@ url: /hu/java/advanced-email-attachments/managing-large-attachments/
 weight: 11
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+`). Keep them.
+
+Translate bullet points, tables.
+
+Let's translate.
+
+Also note "Quick Answers" => "Gyors válaszok". Keep list.
+
+Translate each bullet.
+
+Also "What is the email attachment size limit?" => "Mi az e‑mail melléklet méretkorlátja?" etc.
+
+Translate other sections.
+
+Make sure to keep code block placeholders.
+
+Also keep "Pro tip:" etc.
+
+Translate "Common Issues & Solutions" => "Gyakori problémák és megoldások". Table headings.
+
+Translate "Frequently Asked Questions" => "Gyakran ismételt kérdések".
+
+Translate Q/A.
+
+Translate "Conclusion" => "Összegzés".
+
+Translate "Last Updated", "Tested With", "Author".
+
+All other text.
+
+Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Email Attachment Size Limit Management with Aspose.Email
+# E‑mail melléklet méretkorlát kezelése az Aspose.Email segítségével
 
-Az **email attachment size limit** kezelése nehézkes lehet, különösen akkor, amikor nagy fájlokat kell küldeni vagy fogadni Java‑alkalmazásokban. Ebben az útmutatóban végigvezetünk a nagy e‑mail mellékletek létrehozásán, küldésén és letöltésén az Aspose.Email for Java segítségével, miközben a melléklet méretét kontroll alatt tartjuk. A végére megtanulod, hogyan **create email attachment java** objektumokat hozhatsz létre, hatékonyan streamelheted a nagy fájlokat, és hogyan **download email attachment java** fájlokat tölthetsz le anélkül, hogy a memória kimerülne.
+A **e‑mail melléklet méretkorlát** kezelése bonyolult lehet, különösen akkor, amikor nagy fájlok küldésére vagy fogadására van szükség Java‑alkalmazásokban. Ebben az útmutatóban végigvezetünk a nagy e‑mail mellékletek létrehozásán, küldésén és letöltésén az Aspose.Email for Java‑val, miközben a melléklet méretét kordában tartjuk. A végére meg fogod tudni **create email attachment java** objektumokat létrehozni, nagy fájlokat hatékonyan streamelni, és **download email attachment java** fájlokat letölteni anélkül, hogy a memória kimerülne.
 
-## Quick Answers
-- **Mi az email attachment size limit?** A levélkiszolgálótól függ, de a legtöbb szolgáltató 10 MB és 25 MB között korlátozza.
-- **Képes-e az Aspose.Email nagy fájlok kezelésére?** Igen, támogatja a streaminget, így a teljes fájl nem kerül a memóriába.
-- **Szükség van licencre?** Egy ingyenes próba verzió tesztelésre elegendő; a termeléshez kereskedelmi licenc szükséges.
-- **Melyik Java verzió szükséges?** Java 8 vagy újabb.
-- **Szükséges SMTP konfiguráció?** Igen, add meg az SMTP kiszolgálót, felhasználónevet és jelszót.
+## Gyors válaszok
+- **Mi az e‑mail melléklet méretkorlát?** A levélkiszolgálótól függ, de a legtöbb szolgáltató 10 MB és 25 MB között korlátozza.  
+- **Képes-e az Aspose.Email nagy fájlok kezelésére?** Igen, támogatja a streaminget, így nem kell a teljes fájlt a memóriába betölteni.  
+- **Szükség van licencre?** Egy ingyenes próba verzió tesztelésre elegendő; a termeléshez kereskedelmi licenc szükséges.  
+- **Melyik Java verzió szükséges?** Java 8 vagy újabb.  
+- **Szükséges SMTP konfiguráció?** Igen, adja meg az SMTP kiszolgáló címét, felhasználónevét és jelszavát.
 
-## What is an email attachment size limit?
-A **email attachment size limit** a maximális fájlméret, amelyet egy levélkiszolgáló elfogad vagy továbbít. Ennek a korlátnak a túllépése kézbesítési hibákat vagy alternatív átvitel módját (pl. felhőlink) eredményezhet. Az Aspose.Email olyan eszközöket biztosít, amelyekkel nagy fájlokat feloszthat, tömöríthet vagy streamelhet, hogy a megengedett határokon belül maradjanak.
+## Mi az e‑mail melléklet méretkorlát?
+A **e‑mail melléklet méretkorlát** a maximális fájlméret, amelyet egy levélkiszolgáló elfogad vagy továbbít. Ennek a korlátnak a túllépése kézbesítési hibákat vagy alternatív átvitel módját (pl. felhőlinkek) eredményezhet. Az Aspose.Email eszközöket biztosít a nagy fájlok felosztásához, tömörítéséhez vagy streameléséhez, hogy azok a megengedett határokon belül maradjanak.
 
-## Why manage large attachments with Aspose.Email?
-- **Memory‑efficient streaming** – elkerüli az OutOfMemory hibákat.
-- **Built‑in compression** – csökkenti a fájlméretet a küldés előtt.
-- **Cross‑platform support** – ugyanúgy működik Windows, Linux és macOS rendszereken.
-- **Simple API** – néhány Java sorral hozhatsz létre, küldhetsz és tölthetsz le mellékleteket.
+## Miért kezeljük a nagy mellékleteket az Aspose.Email‑del?
+- **Memóriahatékony streaming** – elkerüli az OutOfMemory hibákat.  
+- **Beépített tömörítés** – csökkenti a fájlméretet a küldés előtt.  
+- **Keresztplatformos támogatás** – ugyanúgy működik Windows, Linux és macOS rendszereken.  
+- **Egyszerű API** – néhány Java sorral hozhatunk létre, küldhetünk és tölthetünk le mellékleteket.  
 
-## Prerequisites
+## Előfeltételek
 
-- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – töltsd le és add hozzá a JAR‑t a projektedhez.
-- Java 8+ fejlesztői környezet.
-- Hozzáférés egy SMTP szerverhez a levelek küldéséhez.
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – töltse le és adja hozzá a JAR‑t a projektjéhez.  
+- Java 8+ fejlesztői környezet.  
+- Hozzáférés egy SMTP kiszolgálóhoz a levelek küldéséhez.
 
-## Step 1: Create an Email with a Large Attachment (create email attachment java)
+## 1. lépés: E‑mail létrehozása nagy melléklettel (create email attachment java)
 
-Először felépítünk egy `MailMessage`‑t, és egy nagy PDF‑et csatolunk hozzá. Az alábbi kód bemutatja, hogyan **create email attachment java** objektumokat hozhatsz létre, és hogyan mentheted a üzenetet helyileg.
+Először felépítünk egy `MailMessage`‑t, és egy nagy PDF‑et csatolunk hozzá. Az alábbi kód bemutatja, hogyan **create email attachment java** objektumokat hozhatunk létre, és hogyan menthetjük a levelet helyben.
 
 ```java
 // Import the required Aspose.Email classes
@@ -76,11 +106,11 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-> **Pro tip:** Ha a fájl meghaladja a tipikus korlátokat, fontold meg először a tömörítést vagy a kisebb részekre bontást az `AttachmentCollection` metódusaival.
+> **Pro tip:** Ha a fájl meghaladja a szokásos korlátokat, fontolja meg először a tömörítést, vagy a `AttachmentCollection` metódusokkal való felosztást kisebb részekre.
 
-## Step 2: Send the Email via SMTP
+## Hogyan küldjünk nagy e‑mail mellékletet az Aspose.Email‑el
 
-Most elküldjük a előkészített üzenetet. Az SMTP kliens streameli a mellékletet, így a teljes fájl soha nem kerül a memóriába.
+Miután a levél készen áll, át kell adni egy SMTP kiszolgálónak. Az Aspose.Email a küldés során streameli a mellékletet, így a teljes fájl soha nem kerül a memóriába.
 
 ```java
 // Import the required Aspose.Email classes
@@ -120,11 +150,11 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-Cseréld le az SMTP hostot, felhasználónevet és jelszót a saját adataidra. Az API automatikusan kezeli a MIME kódolást és a streaminget.
+Cserélje le az SMTP hostot, felhasználónevet és jelszót a saját adataira. Az API automatikusan kezeli a MIME kódolást és a streaminget.
 
-## Step 3: Receive and Download the Attachment (download email attachment java)
+## 3. lépés: A melléklet fogadása és letöltése (download email attachment java)
 
-Amikor a címzett megkapja az üzenetet, előfordulhat, hogy ki kell nyerned a nagy fájlt. Az alábbi kódrészlet megmutatja, hogyan **download email attachment java** biztonságosan.
+Amikor a címzett megkapja a levelet, előfordulhat, hogy ki kell nyernie a nagy fájlt. Az alábbi részlet megmutatja, hogyan **download email attachment java** biztonságosan.
 
 ```java
 // Import the required Aspose.Email classes
@@ -150,43 +180,46 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-A ciklus minden melléklet nevét ellenőrzi, biztosítva, hogy csak a kívánt fájlt töltsd le. Ez a megközelítés akkor is működik, ha az e‑mail több mellékletet tartalmaz.
+A ciklus minden melléklet nevét ellenőrzi, biztosítva, hogy csak a kívánt fájlt töltse le. Ez a megközelítés akkor is működik, ha a levél több mellékletet tartalmaz.
 
-## Common Issues & Solutions
+## Gyakori problémák és megoldások
 
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| **Attachment exceeds server limit** | File larger than allowed size | Compress the file or split it using `AttachmentCollection` |
-| **OutOfMemoryError** | Whole file loaded into memory | Use streaming APIs (`Attachment(String name, InputStream stream)`) |
-| **Authentication failure** | Wrong SMTP credentials | Verify host, username, password, and enable TLS if required |
-| **Attachment not downloaded** | Name mismatch | Use `attachment.getContentId()` or check MIME type |
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| **A melléklet meghaladja a szerver korlátját** | A fájl nagyobb, mint a megengedett méret | Tömörítse a fájlt vagy ossza fel a `AttachmentCollection` segítségével |
+| **OutOfMemoryError** | A teljes fájl a memóriába lett betöltve | Használja a streaming API‑kat (`Attachment(String name, InputStream stream)`) |
+| **Hitelesítési hiba** | Hibás SMTP hitelesítő adatok | Ellenőrizze a hostot, felhasználónevet, jelszót, és ha szükséges, engedélyezze a TLS‑t |
+| **A melléklet nem töltődik le** | Néveltérés | Használja az `attachment.getContentId()`‑t vagy ellenőrizze a MIME típust |
 
-## Frequently Asked Questions
+## Gyakran ismételt kérdések
 
-**Q: How can I reduce the size of a large attachment?**  
-A: Use `Attachment` constructors that accept a `java.io.InputStream` and compress the data before adding it to the message.
+**Q: Hogyan csökkenthetem egy nagy melléklet méretét?**  
+A: Használjon `Attachment` konstruktorokat, amelyek `java.io.InputStream`‑et fogadnak, és tömörítse az adatot, mielőtt hozzáadná a levélhez.
 
-**Q: Is there a hard limit imposed by Aspose.Email?**  
-A: No. The limit is defined by the mail server you use; Aspose.Email simply streams the data.
+**Q: Van-e valamilyen kemény korlát az Aspose.Email‑ben?**  
+A: Nem. A korlátot a használt levélkiszolgáló határozza meg; az Aspose.Email csak streameli az adatot.
 
-**Q: Can I send multiple large attachments in one email?**  
-A: Yes, but be mindful of the cumulative size; consider zipping them into a single archive.
+**Q: Küldhetek több nagy mellékletet egy e‑mailben?**  
+A: Igen, de vegye figyelembe a teljes méretet; érdemes őket egyetlen archívumba (zip) tömöríteni.
 
-**Q: Does Aspose.Email support async sending?**  
-A: The library provides synchronous APIs; you can wrap calls in a separate thread or use `CompletableFuture` for async behavior.
+**Q: Támogatja az Aspose.Email az aszinkron küldést?**  
+A: A könyvtár szinkron API‑kat biztosít; a hívásokat be lehet csomagolni egy külön szálba vagy `CompletableFuture`‑val aszinkron viselkedés eléréséhez.
 
-**Q: What if the recipient’s server rejects the attachment?**  
-A: Offer a download link (e.g., to a cloud storage bucket) as a fallback in the email body.
+**Q: Mi a teendő, ha a címzett szervere elutasítja a mellékletet?**  
+A: Ajánljon fel egy letöltési linket (pl. felhő tároló bucket) tartalék megoldásként a levél törzsében.
 
-## Conclusion
+**Q: Hogyan ellenőrizhetem a melléklet méretét küldés előtt?**  
+A: Hívja meg a `new File("path/to/file").length()`‑t, és hasonlítsa össze a szerver ismert korlátjával.
 
-Az Aspose.Email for Java kihasználásával hatékonyan **manage email attachment size limit** problémákat oldhatsz meg, **create email attachment java** objektumokat hozhatsz létre, és **download email attachment java** fájlokat tölthetsz le anélkül, hogy memória‑ vagy szerver‑oldali korlátokba ütköznél. Alkalmazd a bemutatott streaming és tömörítési technikákat, hogy alkalmazásaid robusztusak legyenek, és felhasználóid elégedettek maradjanak.
+## Összegzés
+
+Az Aspose.Email for Java kihasználásával hatékonyan **kezelheti az e‑mail melléklet méretkorlát** kérdéseket, **create email attachment java** objektumokat hozhat létre, és **download email attachment java** fájlokat tölthet le anélkül, hogy memória‑ vagy szerver‑oldali korlátozásokba ütközne. Alkalmazza a bemutatott streaming és tömörítési technikákat, hogy alkalmazásai robusztusak maradjanak, és felhasználói elégedettek legyenek.
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email for Java 24.12  
-**Author:** Aspose  
+**Utolsó frissítés:** 2026-02-09  
+**Tesztelve:** Aspose.Email for Java 24.12  
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
