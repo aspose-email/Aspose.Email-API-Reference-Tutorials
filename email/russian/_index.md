@@ -1,11 +1,16 @@
 ---
 additionalTitle: Aspose API References
-date: 2025-11-30
-description: Изучите, как создавать календарные встречи с помощью Aspose.Email для
-  .NET и Java, а также узнайте, как конвертировать PST в EML, проверять адреса электронной
-  почты и настраивать SMTP‑серверы.
-linktitle: Aspose.Email Tutorials
-title: Создать встречу в календаре с Aspose.Email .NET и Java
+date: 2026-05-03
+description: Узнайте, как создавать календарные встречи с помощью Aspose.Email для .NET
+  и Java, конвертировать PST в EML, проверять адреса электронной почты и настраивать
+  SMTP‑серверы.
+keywords:
+- create calendar appointment Aspose.Email
+- convert PST to EML
+- validate email address
+- SMTP server configuration
+linktitle: Учебные пособия Aspose.Email
+title: Создание календарного события Aspose.Email для .NET и Java
 url: /ru/
 weight: 10
 ---
@@ -16,152 +21,153 @@ weight: 10
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email Руководства: Освойте управление и обработку электронной почты с помощью .NET и Java API
+# Учебники Aspose.Email: Освойте управление и обработку электронной почты с помощью .NET и Java API
 
-В этом руководстве вы **create calendar appointment** объекты без усилий с помощью мощных библиотек Aspose.Email для .NET и Java. Независимо от того, создаёте ли вы функцию планирования для корпоративного приложения или вам нужно синхронизировать встречи с Outlook или Exchange, эти уроки показывают пошагово, как генерировать, редактировать и отправлять элементы календаря. К концу руководства у вас будет прочная база для создания данных встреч, конвертации файлов PST в EML, проверки адресов электронной почты и настройки SMTP‑серверов для надёжной доставки.
+В этом руководстве вы **create calendar appointment Aspose.Email** объекты без усилий, используя мощные библиотеки .NET и Java. Независимо от того, добавляете ли вы функцию планирования в корпоративную систему, синхронизируете встречи с Outlook или Exchange, или просто нужно программно генерировать файлы iCalendar, это руководство проведет вас через каждый шаг — от создания встречи до её отправки или сохранения в файл.
 
-## Quick Answers
-- **What is the primary use of Aspose.Email?** Для программного создания, чтения и манипуляции электронными сообщениями, элементами календаря и связанными данными на платформах .NET и Java.  
-- **Can I create calendar appointment programmatically?** Да — Aspose.Email предоставляет простой API для построения и сериализации iCalendar (ICS) встреч.  
-- **Do I need a license for production use?** Для продакшн‑использования требуется коммерческая лицензия; бесплатная пробная версия доступна для оценки.  
-- **Which formats can I convert to/from?** Outlook PST/OST, MSG, EML, MBOX, PDF и другие (например, конвертация PST в EML).  
-- **Is SMTP server configuration supported?** Абсолютно — библиотека включает полную поддержку SMTP‑клиента для отправки сообщений и приглашений в календаре.
+## Быстрые ответы
+- **Какова основная цель Aspose.Email?** Для программного создания, чтения, редактирования и отправки сообщений электронной почты, элементов календаря и связанных данных на платформах .NET и Java.  
+- **Могу ли я программно создать календарную встречу?** Да — Aspose.Email предоставляет простой API для создания iCalendar (ICS) встреч.  
+- **Нужна ли лицензия для продакшн?** Для использования в продакшн требуется коммерческая лицензия; бесплатная пробная версия доступна для оценки.  
+- **Какие форматы я могу конвертировать в/из?** Outlook PST/OST, MSG, EML, MBOX, PDF и многие другие (включая **convert PST to EML**).  
+- **Поддерживается ли конфигурация SMTP‑сервера?** Абсолютно — полная поддержка SMTP‑клиента позволяет безопасно отправлять сообщения и приглашения в календаре.
 
-## Что такое **create calendar appointment** в Aspose.Email?
-Создание встречи в календаре означает генерацию объекта iCalendar (ICS), представляющего событие, совещание или напоминание. Aspose.Email позволяет задать тему, время начала/окончания, участников, шаблоны повторения, а затем сохранить или отправить встречу как письмо или файл.
+## Что такое **create calendar appointment Aspose.Email**?
+Создание календарной встречи означает генерацию объекта iCalendar (ICS), представляющего событие, встречу или напоминание. С помощью Aspose.Email вы задаёте тему, диапазон времени, участников, повторения, а затем сохраняете или отправляете встречу как электронное письмо или отдельный файл.
 
 ## Почему стоит использовать Aspose.Email для **create calendar appointment**?
-- **Cross‑platform consistency:** Пишете один раз на C# или Java и запускаете на Windows, Linux или macOS.  
-- **Full format support:** Бесшовно работаете с PST, MSG, EML и даже конвертируете встречи в PDF для отчётности.  
-- **No Outlook dependency:** Все операции выполняются без необходимости установки Outlook на сервере.  
-- **Robust security:** Встроенная подпись S/MIME, шифрование и TLS/SSL для SMTP.
+- **Cross‑platform consistency:** Напишите один раз на C# или Java и запускайте на Windows, Linux или macOS.  
+- **Full format support:** Работайте с PST, MSG, EML, PDF и другими форматами без необходимости установки Outlook.  
+- **Robust security:** Встроенное подписывание S/MIME, шифрование и TLS/SSL для SMTP.  
+- **Extensible features:** Легко комбинируйте с возможностями **convert PST to EML**, **validate email address**, и **SMTP server configuration**.
 
-## Prerequisites
+## Предварительные требования
 - .NET 6+ или Java 11+ runtime.  
-- Aspose.Email for .NET / Aspose.Email for Java NuGet / Maven пакет.  
-- Действительная лицензия Aspose (или пробная).  
-- Доступ к SMTP‑серверу, если планируете отправлять встречу (см. **smtp server configuration**).
+- Aspose.Email for .NET / Aspose.Email for Java пакет NuGet / Maven.  
+- Действующая лицензия Aspose (или пробная).  
+- Доступ к SMTP‑серверу, если вы планируете отправлять встречу.
 
-## Step‑by‑Step Guide to **create calendar appointment**
+## Пошаговое руководство по **create calendar appointment**
 
-### Step 1: Initialize the MailMessage (or MailMessage for Java)
-Инициализировать объект MailMessage, который будет содержать данные календаря.
+### Шаг 1: Инициализировать MailMessage (C#) или MailMessage (Java)
+Создайте новый объект сообщения электронной почты, который будет содержать данные календаря.
 
-### Step 2: Build the Appointment
-Использовать класс `Appointment` (C#) или `Appointment` (Java) для установки темы, места, времени начала/окончания и участников.
+### Шаг 2: Создать встречу
+Используйте класс `Appointment` для установки темы, места, времени начала/окончания и участников.
 
-### Step 3: Attach the Appointment to the Message
-Преобразовать встречу в строку iCalendar и добавить её как альтернативный вид (или как вложение) к письму.
+### Шаг 3: Прикрепить встречу к сообщению
+Преобразуйте встречу в строку iCalendar и добавьте её как альтернативный вид (или как вложение) к письму.
 
-### Step 4: (Optional) Convert to PDF
-Если нужна печатная версия, вызвать `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Это демонстрирует возможность **convert email to pdf**.
+### Шаг 4: (Опционально) Конвертировать в PDF
+Если вам нужна печатная версия, вызовите `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Это демонстрирует функцию **convert email to pdf**.
 
-### Step 5: Send via SMTP (or Save to File)
-Настроить SMTP‑клиент (см. **smtp server configuration**) и отправить сообщение, либо просто сохранить файл .ics локально.
+### Шаг 5: Отправить через SMTP или сохранить локально
+Настройте ваш SMTP‑клиент (см. **SMTP server configuration**) и отправьте сообщение, либо просто сохраните файл `.ics` на диск.
 
-> **Pro tip:** Переиспользуйте один и тот же экземпляр `SmtpClient` для массовой отправки встреч, чтобы повысить производительность.
+> **Pro tip:** Повторно используйте тот же экземпляр `SmtpClient` для массовой отправки встреч, чтобы повысить производительность.
 
-## Additional Topics You’ll Find in These Tutorials
+## Распространённые сценарии использования
+- **Enterprise scheduling:** Автоматически генерировать приглашения на встречи для адаптации HR или начала проектов.  
+- **Outlook integration:** Синхронизировать встречи с календарями Outlook пользователей без необходимости установки Outlook на сервере.  
+- **Reporting:** Конвертировать встречи в PDF для архивирования или отчётности по соответствию.  
+- **Migration:** Совместить с **convert PST to EML**, чтобы перенести устаревшие данные Outlook в современные системы.
 
-- **Convert PST to EML** – Узнайте, как извлекать сообщения из файлов Outlook PST и экспортировать их как EML‑файлы для кросс‑платформенной совместимости.  
-- **Validate email address Java** – Используйте встроенный валидатор, чтобы убедиться, что адреса соответствуют стандартам RFC перед отправкой.  
-- **Email verification .NET** – Выполняйте проверки DNS MX‑записей и SMTP‑рукопожатия напрямую из вашего .NET‑кода.  
+## Дополнительные темы, которые вы найдёте в этих учебниках
+- **Convert PST to EML** – Узнайте, как извлекать сообщения из файлов Outlook PST и экспортировать их как файлы EML для кросс‑платформенной совместимости.  
+- **Validate email address Java** – Используйте встроенный валидатор, чтобы убедиться, что адреса электронной почты соответствуют стандартам RFC перед отправкой.  
+- **Email verification .NET** – Выполняйте проверку записей DNS MX и верификацию SMTP‑рукопожатия напрямую из вашего кода .NET.  
 - **SMTP server configuration** – Подробные шаги по настройке TLS, механизмов аутентификации и пользовательских портов.  
 - **Convert email to PDF** – Преобразуйте любое письмо (включая приглашения в календаре) в PDF‑документ для архивирования.
 
-## Explore Our Detailed Tutorials
+## Изучите наши подробные учебники
 
-### Aspose.Email For .NET: Comprehensive Email Processing API Tutorials
-
-{{% alert color="primary" %}}
-Discover the power of **Aspose.Email for .NET** with our in‑depth tutorials. These guides provide step‑by‑step instructions and practical C# code examples for developing robust email management solutions. Learn to compose, send, receive, convert, parse, and secure emails, integrate with Exchange Server, and handle various email formats like PST, MSG, and EML, ultimately enhancing your .NET applications and streamlining email‑centric tasks.
-{{% /alert %}}
-
-Explore our Aspose.Email for .NET tutorials:
-- [Getting Started with Aspose.Email for .NET](./net/getting-started/)
-- [Core Email Message Operations in .NET](./net/email-message-operations/)
-- [Formatting & Customizing Email Messages in .NET](./net/message-formatting-customization/)
-- [Handling Email Attachments in .NET](./net/attachments-handling/)
-- [Managing Calendar & Appointments in Emails (.NET)](./net/calendar-appointments/)
-- [Integrating with Exchange Server using Aspose.Email for .NET](./net/exchange-server-integration/)
-- [IMAP Client Operations with Aspose.Email for .NET](./net/imap-client-operations/)
-- [POP3 Client Operations with Aspose.Email for .NET](./net/pop3-client-operations/)
-- [SMTP Client Operations for Sending Emails in .NET](./net/smtp-client-operations/)
-- [Working with Outlook PST & OST Files in .NET](./net/outlook-pst-ost-operations/)
-- [MAPI Operations for Outlook Data in .NET](./net/mapi-operations/)
-- [Email Security & Authentication in .NET Applications](./net/security-authentication/)
-- [Email Parsing & Analysis Techniques in .NET](./net/email-parsing-analysis/)
-- [Email Conversion & Rendering to Various Formats (.NET)](./net/email-conversion-rendering/)
-- [Advanced Email Composition and Creation with .NET](./net/email-composition-and-creation/)
-- [Email Validation and Verification in .NET](./net/email-validation-and-verification/)
-- [Manipulating Email Headers in .NET](./net/email-header-manipulation/)
-- [Email Event and Calendar Handling with .NET](./net/email-event-and-calendar-handling/)
-- [Email Notification and Tracking in .NET](./net/email-notification-and-tracking/)
-- [Email File Storage and Retrieval Strategies (.NET)](./net/email-file-storage-and-retrieval/)
-- [Email Security and Digital Signatures in .NET](./net/email-security-and-signatures/)
-
-### Aspose.Email For Java: Powerful Email Management API Tutorials
+### Aspose.Email для .NET: Подробные учебники по API обработки электронной почты
 
 {{% alert color="primary" %}}
-Unlock the full potential of **Aspose.Email for Java** with our comprehensive tutorial library. These guides offer practical Java code examples and clear explanations for building powerful email management applications. Explore topics like sending and receiving emails, configuring SMTP servers, handling attachments, securing communications, and integrating with email services, empowering your Java development projects with robust email functionality.
+Откройте для себя возможности **Aspose.Email for .NET** с нашими подробными учебниками. Эти руководства предоставляют пошаговые инструкции и практические примеры кода на C# для разработки надёжных решений по управлению электронной почтой. Научитесь создавать, отправлять, получать, конвертировать, разбирать и защищать письма, интегрировать с Exchange Server и работать с различными форматами электронной почты, такими как PST, MSG и EML, что в конечном итоге улучшит ваши .NET‑приложения и упростит задачи, связанные с электронной почтой.
 {{% /alert %}}
 
-Explore our Aspose.Email for Java tutorials:
-- [Getting Started with Aspose.Email for Java](./java/getting-started/)
-- [Core Email Message Operations in Java](./java/email-message-operations/)
-- [Formatting & Customizing Email Messages in Java](./java/message-formatting-customization/)
-- [Handling Email Attachments in Java](./java/attachments-handling/)
-- [Managing Calendar & Appointments in Emails (Java)](./java/calendar-appointments/)
-- [Integrating with Exchange Server using Aspose.Email for Java](./java/exchange-server-integration/)
-- [IMAP Client Operations with Aspose.Email for Java](./java/imap-client-operations/)
-- [POP3 Client Operations with Aspose.Email for Java](./java/pop3-client-operations/)
-- [SMTP Client Operations for Sending Emails in Java](./java/smtp-client-operations/)
-- [Working with Outlook PST & OST Files in Java](./java/outlook-pst-ost-operations/)
-- [MAPI Operations for Outlook Data in Java](./java/mapi-operations/)
-- [Email Security & Authentication in Java Applications](./java/security-authentication/)
-- [Email Parsing & Analysis Techniques in Java](./java/email-parsing-analysis/)
-- [Email Conversion & Rendering to Various Formats (Java)](./java/email-conversion-rendering/)
-- [Thunderbird & MBOX Operations with Aspose.Email for Java](./java/thunderbird-mbox-operations/)
-- [Sending Emails Programmatically with Aspose.Email for Java](./java/sending-emails/)
-- [Receiving Emails Programmatically with Aspose.Email for Java](./java/receiving-emails/)
-- [Configuring SMTP Servers for Email Sending in Java](./java/configuring-smtp-servers/)
-- [Advanced Email Attachments Handling in Java](./java/advanced-email-attachments/)
-- [Securing Email Communications with Aspose.Email for Java](./java/securing-email-communications/)
-- [Customizing Email Headers with Aspose.Email for Java](./java/customizing-email-headers/)
-- [Exploring Email Security Features in Aspose.Email for Java](./java/exploring-email-security/)
+- [Начало работы с Aspose.Email для .NET](./net/getting-started/)
+- [Основные операции с сообщениями электронной почты в .NET](./net/email-message-operations/)
+- [Форматирование и настройка сообщений электронной почты в .NET](./net/message-formatting-customization/)
+- [Работа с вложениями электронной почты в .NET](./net/attachments-handling/)
+- [Управление календарём и встречами в письмах (.NET)](./net/calendar-appointments/)
+- [Интеграция с Exchange Server с помощью Aspose.Email для .NET](./net/exchange-server-integration/)
+- [Операции IMAP‑клиента с Aspose.Email для .NET](./net/imap-client-operations/)
+- [Операции POP3‑клиента с Aspose.Email для .NET](./net/pop3-client-operations/)
+- [Операции SMTP‑клиента для отправки писем в .NET](./net/smtp-client-operations/)
+- [Работа с файлами Outlook PST и OST в .NET](./net/outlook-pst-ost-operations/)
+- [Операции MAPI для данных Outlook в .NET](./net/mapi-operations/)
+- [Безопасность электронной почты и аутентификация в приложениях .NET](./net/security-authentication/)
+- [Разбор и анализ электронной почты в .NET](./net/email-parsing-analysis/)
+- [Конвертация и рендеринг электронной почты в различные форматы (.NET)](./net/email-conversion-rendering/)
+- [Продвинутая композиция и создание писем с .NET](./net/email-composition-and-creation/)
+- [Валидация и проверка электронной почты в .NET](./net/email-validation-and-verification/)
+- [Манипуляция заголовками электронной почты в .NET](./net/email-header-manipulation/)
+- [Обработка событий электронной почты и календаря с .NET](./net/email-event-and-calendar-handling/)
+- [Уведомления и отслеживание электронной почты в .NET](./net/email-notification-and-tracking/)
+- [Стратегии хранения и извлечения файлов электронной почты (.NET)](./net/email-file-storage-and-retrieval/)
+- [Безопасность электронной почты и цифровые подписи в .NET](./net/email-security-and-signatures/)
 
-## Common Issues & Solutions
+### Aspose.Email для Java: Мощные учебники по API управления электронной почтой
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| Calendar invite not appearing in Outlook | Missing `METHOD:REQUEST` header | Add `appointment.Save(message, SaveOptions.DefaultIcs)` before sending. |
-| PST conversion fails with “Invalid file format” | Using older Aspose version | Upgrade to the latest Aspose.Email release (supports PST v4). |
-| Email address validation returns false for valid addresses | Locale‑specific characters not supported | Use `EmailValidator.Validate(email, ValidationOptions.AllowInternational)`. |
-| SMTP authentication error | Incorrect port or TLS settings | Verify **smtp server configuration**: port 587 with `EnableSsl = true`. |
-| PDF conversion produces blank pages | Message body not loaded | Call `message.Load("msgfile.msg")` before `Save` to PDF. |
+{{% alert color="primary" %}}
+Раскройте весь потенциал **Aspose.Email for Java** с нашей обширной библиотекой учебников. Эти руководства предлагают практические примеры кода на Java и понятные объяснения по созданию мощных приложений управления электронной почтой. Изучайте такие темы, как отправка и получение писем, настройка SMTP‑серверов, работа с вложениями, обеспечение безопасности коммуникаций и интеграция с почтовыми сервисами, предоставляя вашим Java‑проектам надёжную функциональность работы с электронной почтой.
+{{% /alert %}}
 
-## Frequently Asked Questions
+- [Начало работы с Aspose.Email для Java](./java/getting-started/)
+- [Основные операции с сообщениями электронной почты в Java](./java/email-message-operations/)
+- [Форматирование и настройка сообщений электронной почты в Java](./java/message-formatting-customization/)
+- [Работа с вложениями электронной почты в Java](./java/attachments-handling/)
+- [Управление календарём и встречами в письмах (Java)](./java/calendar-appointments/)
+- [Интеграция с Exchange Server с помощью Aspose.Email для Java](./java/exchange-server-integration/)
+- [Операции IMAP‑клиента с Aspose.Email для Java](./java/imap-client-operations/)
+- [Операции POP3‑клиента с Aspose.Email для Java](./java/pop3-client-operations/)
+- [Операции SMTP‑клиента для отправки писем в Java](./java/smtp-client-operations/)
+- [Работа с файлами Outlook PST и OST в Java](./java/outlook-pst-ost-operations/)
+- [Операции MAPI для данных Outlook в Java](./java/mapi-operations/)
+- [Безопасность электронной почты и аутентификация в приложениях Java](./java/security-authentication/)
+- [Разбор и анализ электронной почты в Java](./java/email-parsing-analysis/)
+- [Конвертация и рендеринг электронной почты в различные форматы (Java)](./java/email-conversion-rendering/)
+- [Операции Thunderbird и MBOX с Aspose.Email для Java](./java/thunderbird-mbox-operations/)
+- [Программная отправка писем с Aspose.Email для Java](./java/sending-emails/)
+- [Программный приём писем с Aspose.Email для Java](./java/receiving-emails/)
+- [Настройка SMTP‑серверов для отправки писем в Java](./java/configuring-smtp-servers/)
+- [Продвинутая работа с вложениями электронной почты в Java](./java/advanced-email-attachments/)
+- [Обеспечение безопасности коммуникаций электронной почты с Aspose.Email для Java](./java/securing-email-communications/)
+- [Настройка заголовков электронной почты с Aspose.Email для Java](./java/customizing-email-headers/)
+- [Изучение функций безопасности электронной почты в Aspose.Email для Java](./java/exploring-email-security/)
 
-**Q: How do I **create calendar appointment** and send it as an iCalendar file?**  
-A: Build an `Appointment` object, set its properties, convert it to an iCalendar string with `appointment.Save()`, attach it to a `MailMessage`, and send via `SmtpClient`.
+## Распространённые проблемы и решения
 
-**Q: Can Aspose.Email **convert PST to EML** automatically?**  
-A: Yes. Load the PST with `PersonalStorage.FromFile`, enumerate `Folder` objects, and call `message.Save("output.eml", SaveOptions.DefaultEml)` for each mail item.
+| Проблема | Причина | Решение |
+|----------|---------|----------|
+| Приглашение в календаре не отображается в Outlook | Отсутствует заголовок `METHOD:REQUEST` | Добавьте `appointment.Save(message, SaveOptions.DefaultIcs)` перед отправкой. |
+| Конвертация PST завершается ошибкой «Invalid file format» | Используется более старая версия Aspose | Обновите до последней версии Aspose.Email (поддерживает PST v4). |
+| Проверка адреса электронной почты возвращает false для корректных адресов | Не поддерживаются символы, специфичные для локали | Используйте `EmailValidator.Validate(email, ValidationOptions.AllowInternational)`. |
+| Ошибка аутентификации SMTP | Неправильный порт или настройки TLS | Проверьте **SMTP server configuration**: порт 587 с `EnableSsl = true`. |
+| Конвертация в PDF создает пустые страницы | Тело сообщения не загружено | Вызовите `message.Load("msgfile.msg")` перед `Save` в PDF. |
 
-**Q: What is the best way to **validate email address Java**?**  
-A: Use `EmailValidator.IsValid(email, ValidationOptions.Default)` from Aspose.Email for Java. It checks syntax and optional DNS MX records.
+## Часто задаваемые вопросы
 
-**Q: How should I set up **smtp server configuration** for secure sending?**  
-A: Create an `SmtpClient` (or `SmtpTransport` in Java), set `Host`, `Port` (usually 587 for TLS), enable `EnableSsl`/`UseStartTls`, and provide credentials.
+**В: Как я могу **create calendar appointment** и отправить его как файл iCalendar?**  
+О: Создайте объект `Appointment`, задайте его свойства, преобразуйте его в строку iCalendar с помощью `appointment.Save()`, прикрепите к `MailMessage` и отправьте через `SmtpClient`.
 
-**Q: Is it possible to **convert email to PDF** with attachments embedded?**  
-A: Absolutely. Use `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Attachments are rendered as icons or inline depending on settings.
+**В: Может ли Aspose.Email автоматически **convert PST to EML**?**  
+О: Да. Загрузите PST с помощью `PersonalStorage.FromFile`, перечислите объекты `Folder` и вызовите `message.Save("output.eml", SaveOptions.DefaultEml)` для каждого письма.
 
----
+**В: Какой лучший способ **validate email address Java**?**  
+О: Используйте `EmailValidator.IsValid(email, ValidationOptions.Default)` из Aspose.Email для Java. Он проверяет синтаксис и, при необходимости, DNS‑записи MX.
 
-**Last Updated:** 2025-11-30  
-**Tested With:** Aspose.Email 24.11 for .NET & Java  
-**Author:** Aspose  
+**В: Как правильно настроить **SMTP server configuration** для безопасной отправки?**  
+О: Создайте `SmtpClient` (или `SmtpTransport` в Java), задайте `Host`, `Port` (обычно 587 для TLS), включите `EnableSsl`/`UseStartTls` и укажите учётные данные.
+
+**В: Можно ли **convert email to PDF** с вложениями внутри?**  
+О: Конечно. Используйте `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Вложения отображаются как значки или встроенно в зависимости от настроек.
+
+**Последнее обновление:** 2026-05-03  
+**Тестировано с:** Aspose.Email 24.11 for .NET & Java  
+**Автор:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
