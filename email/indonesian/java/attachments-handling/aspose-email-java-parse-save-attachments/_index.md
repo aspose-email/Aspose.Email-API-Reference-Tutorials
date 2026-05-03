@@ -1,13 +1,13 @@
 ---
-date: '2025-12-11'
-description: Pelajari cara mem‑parsing lampiran email dengan Java dan mengotomatisasi
-  penyimpanan lampiran email menggunakan Aspose.Email untuk Java – panduan langkah
-  demi langkah.
+date: '2026-02-11'
+description: Pelajari cara mengurai lampiran email dengan Java, mengekstrak metadata
+  lampiran, dan mengotomatisasi penyimpanan lampiran email menggunakan Aspose.Email
+  untuk Java – tutorial lengkap lampiran email dengan Java.
 keywords:
 - Aspose.Email for Java
 - parse email attachments Java
 - save email attachments Java
-title: Mengurai Lampiran Email Java menggunakan Aspose.Email
+title: Mengurai Lampiran Email Java dengan Aspose.Email
 url: /id/java/attachments-handling/aspose-email-java-parse-save-attachments/
 weight: 1
 ---
@@ -19,20 +19,20 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Mengurai Lampiran Email Java dengan Aspose.Email
 
-Di era digital saat ini, **parse email attachments java** secara efisien sangat penting bagi pengembang yang membangun alur kerja otomatis, solusi pengarsipan, atau alat dukungan pelanggan. Dengan Aspose.Email untuk Java Anda dapat dengan cepat memuat, memeriksa, dan menyimpan setiap lampiran sambil menjaga kode tetap bersih dan dapat dipelihara. Tutorial ini memandu Anda melalui proses lengkap—dari menyiapkan pustaka hingga menangani pesan tersemat—sehingga Anda juga dapat **mengotomatisasi penyimpanan lampiran email** dalam aplikasi Anda.
+Di era digital saat ini, **parse email attachments java** secara efisien sangat penting bagi pengembang yang membangun alur kerja otomatis, solusi pengarsipan, atau alat dukungan pelanggan. Dengan Aspose.Email untuk Java Anda dapat dengan cepat memuat, memeriksa, dan menyimpan setiap lampiran sambil menjaga kode Anda tetap bersih dan dapat dipelihara. Tutorial ini memandu Anda melalui proses lengkap—dari menyiapkan pustaka hingga menangani pesan tersemat—sehingga Anda juga dapat **automate email attachment saving** dalam aplikasi Anda.
 
-## Quick Answers
-- **Perpustakaan apa yang menangani lampiran email di Java?** Aspose.Email for Java.
-- **Apakah saya dapat mengurai lampiran email java tanpa lisensi?** Yes, but with evaluation limits.
-- **Dependensi Maven mana yang diperlukan?** `com.aspose:aspose-email:25.4` with the `jdk16` classifier.
-- **Bagaimana cara menyimpan lampiran ke disk?** Use the `Attachment.save` method after sanitizing the file name.
-- **Apakah penguraian rekursif email tersemat didukung?** Yes, by loading embedded `.eml` files and processing them again.
+## Jawaban Cepat
+- **Library apa yang menangani lampiran email di Java?** Aspose.Email for Java.  
+- **Bisakah saya parse email attachments java tanpa lisensi?** Ya, tetapi dengan batas evaluasi.  
+- **Dependency Maven mana yang diperlukan?** `com.aspose:aspose-email:25.4` dengan classifier `jdk16`.  
+- **Bagaimana cara menyimpan lampiran ke disk?** Gunakan metode `Attachment.save` setelah membersihkan nama file.  
+- **Apakah parsing rekursif email tersemat didukung?** Ya, dengan memuat file `.eml` tersemat dan memprosesnya kembali.
 
 ## Apa itu parse email attachments java?
-Mengurai lampiran email di Java berarti membaca file email (misalnya *.eml*), mengekstrak setiap objek `Attachment`, dan secara opsional menyimpan data biner ke sistem file atau basis data. Aspose.Email mengabstraksi penanganan MIME tingkat rendah, memungkinkan Anda fokus pada logika bisnis.
+Mengurai lampiran email di Java berarti membaca file email (misalnya *.eml*), mengekstrak setiap objek `Attachment`, dan secara opsional menyimpan data biner ke sistem file atau basis data. Aspose.Email mengabstraksi penanganan MIME tingkat rendah, memungkinkan Anda fokus pada logika bisnis sekaligus memberi kemampuan untuk **extract attachment metadata** seperti nama file, ukuran, dan tipe konten.
 
 ## Mengapa mengotomatisasi penyimpanan lampiran email?
-Mengotomatisasi proses penyimpanan menghilangkan kesalahan manual, mempercepat alur masuk data, dan memastikan kepatuhan terhadap kebijakan retensi. Hal ini juga memudahkan integrasi konten email ke sistem hilir seperti CRM, ERP, atau platform analitik.
+Mengotomatisasi proses penyimpanan menghilangkan kesalahan manual, mempercepat alur kerja ingest data, dan memastikan kepatuhan terhadap kebijakan retensi. Ini juga memudahkan integrasi konten email ke sistem hilir seperti CRM, ERP, atau platform analitik. Singkatnya, **email attachment tutorial java** ini memberi Anda cara yang andal dan dapat diulang untuk menangani lampiran dalam skala besar.
 
 ## Prasyarat
 - **Aspose.Email for Java** (versi 25.4 atau lebih baru).  
@@ -40,7 +40,7 @@ Mengotomatisasi proses penyimpanan menghilangkan kesalahan manual, mempercepat a
 - **JDK 16** (atau lebih baru) terpasang pada mesin pengembangan Anda.
 
 ### Perpustakaan dan Dependensi yang Diperlukan
-Tambahkan dependensi berikut ke file `pom.xml` Anda:
+Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
@@ -55,12 +55,12 @@ Tambahkan dependensi berikut ke file `pom.xml` Anda:
 Pastikan Maven ada di `PATH` Anda dan `java -version` melaporkan JDK 16 atau lebih tinggi.
 
 ### Langkah-langkah Akuisisi Lisensi
-1. **Free Trial** – menjelajahi pustaka tanpa biaya.  
-2. **Temporary License** – memperoleh lisensi percobaan untuk akses penuh fitur.  
-3. **Purchase** – membeli langganan dari [Aspose Purchase](https://purchase.aspose.com/buy).
+1. **Free Trial** – jelajahi pustaka tanpa biaya.  
+2. **Temporary License** – dapatkan lisensi percobaan untuk akses penuh fitur.  
+3. **Purchase** – beli langganan dari [Aspose Purchase](https://purchase.aspose.com/buy).
 
 ### Inisialisasi Dasar
-Berikut cara Anda dapat menginisialisasi Aspose.Email dalam proyek Java Anda:
+Here's how you can initialize Aspose.Email in your Java project:
 
 ```java
 import com.aspose.email.License;
@@ -85,7 +85,7 @@ Setelah mengkonfigurasi Maven, tambahkan pustaka ke proyek Anda dan panggil `Asp
 Kami akan membahas empat langkah inti: memuat email, mengurai lampirannya, menyimpannya, dan menangani pesan tersemat secara rekursif.
 
 ### Cara memuat pesan email dari file
-**Gambaran Umum** – Memuat file `.eml` ke dalam objek `MailMessage`.
+**Overview** – Load an `.eml` file into a `MailMessage` object.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -97,7 +97,7 @@ System.out.println("Email loaded successfully.");
 ```
 
 ### Cara mengurai lampiran email java
-**Gambaran Umum** – Iterasi melalui koleksi `Attachments` dan mengekstrak metadata yang berguna.
+**Overview** – Iterate through the `Attachments` collection and extract useful metadata.
 
 ```java
 for (int i = 0; i < message.getAttachments().size(); i++) {
@@ -125,7 +125,7 @@ private static String extractFileExtension(String fileName) {
 ```
 
 ### Cara menyimpan lampiran email java
-**Gambaran Umum** – Menyimpan setiap lampiran ke folder output yang dipilih.
+**Overview** – Persist each attachment to a chosen output folder.
 
 ```java
 public static void saveAttachment(Attachment attachment, String outputDir) {
@@ -137,7 +137,7 @@ public static void saveAttachment(Attachment attachment, String outputDir) {
 ```
 
 ### Cara mengotomatisasi penyimpanan lampiran email untuk pesan tersemat
-**Gambaran Umum** – Mendeteksi file `.eml` tersemat atau placeholder teks dan memprosesnya secara rekursif.
+**Overview** – Detect embedded `.eml` files or text placeholders and process them recursively.
 
 ```java
 if (isOrphanedTextFile(att)) {
@@ -160,9 +160,9 @@ private static boolean isOrphanedTextFile(Attachment att) {
 ```
 
 ## Aplikasi Praktis
-1. **Automated reporting** – Mengambil laporan harian yang terlampir pada email masuk dan menyimpannya di data lake.  
-2. **Customer‑support ticketing** – Menyimpan lampiran dari email dukungan langsung ke sistem tiket.  
-3. **Regulatory archiving** – Mengarsipkan semua korespondensi masuk/keluar dengan lampiran untuk audit kepatuhan.
+1. **Automated reporting** – Tarik laporan harian yang terlampir pada email masuk dan simpan di data lake.  
+2. **Customer‑support ticketing** – Simpan lampiran dari email dukungan langsung ke sistem tiket.  
+3. **Regulatory archiving** – Arsipkan semua korespondensi masuk/keluar dengan lampiran untuk audit kepatuhan.
 
 ## Pertimbangan Kinerja
 - **Minimize I/O** – Buffer aliran saat membaca file besar dan tutup segera.  
@@ -178,14 +178,14 @@ private static boolean isOrphanedTextFile(Attachment att) {
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Dapatkah saya menggunakan Aspose.Email tanpa lisensi?**  
-A: Ya, tersedia percobaan gratis, tetapi memiliki batas evaluasi seperti watermark dan fungsi terbatas.
+**Q: Bisakah saya menggunakan Aspose.Email tanpa lisensi?**  
+A: Ya, tersedia percobaan gratis, tetapi memiliki batas evaluasi seperti watermark dan fungsionalitas terbatas.
 
 **Q: Bagaimana cara menangani lampiran besar?**  
 A: Proses dalam potongan lebih kecil atau stream data langsung ke penyimpanan untuk menghindari memuat seluruh file ke memori.
 
 **Q: Apa yang terjadi jika lampiran dienkripsi?**  
-A: Anda harus mendekripsi konten menggunakan algoritma yang sesuai sebelum memberikannya ke Aspose.Email; pustaka tidak melakukan dekripsi secara otomatis.
+A: Anda harus mendekripsi konten menggunakan algoritma yang sesuai sebelum mengirimkannya ke Aspose.Email; pustaka tidak melakukan dekripsi secara otomatis.
 
 **Q: Apakah Aspose.Email mendukung format email lain seperti .msg?**  
 A: Tentu – pustaka dapat memuat .msg, .eml, .pst, dan format umum lainnya.
@@ -193,7 +193,9 @@ A: Tentu – pustaka dapat memuat .msg, .eml, .pst, dan format umum lainnya.
 **Q: Bagaimana saya dapat mengintegrasikan ini dengan basis data?**  
 A: Setelah mengekstrak byte lampiran, gunakan JDBC atau ORM untuk menyimpan data biner (BLOB) bersama metadata.
 
-**Terakhir Diperbarui:** 2025-12-11  
+---
+
+**Terakhir Diperbarui:** 2026-02-11  
 **Diuji Dengan:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Penulis:** Aspose  
 

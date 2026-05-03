@@ -1,13 +1,13 @@
 ---
-date: '2025-12-10'
-description: Pelajari cara menyimpan file eml dengan lampiran TNEF menggunakan Aspose.Email
-  untuk Java. Panduan ini mencakup proses memuat, memperbarui, dan menyimpan.
+date: '2026-02-11'
+description: Pelajari cara memproses lampiran email dan menyimpan file EML dengan
+  TNEF menggunakan Aspose.Email untuk Java, termasuk cara mengganti gambar tersemat
+  dan memperbarui konten pesan.
 keywords:
 - EML files with TNEF attachments
 - Aspose.Email for Java
 - Email handling in Java
-title: Cara Menyimpan File EML dengan Lampiran TNEF Menggunakan Aspose.Email untuk
-  Java
+title: 'Proses Lampiran Email: Simpan EML TNEF (Aspose.Email Java)'
 url: /id/java/attachments-handling/aspose-email-java-eml-tnef-handling/
 weight: 1
 ---
@@ -19,37 +19,37 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Menguasai Penanganan Email dengan Aspose.Email Java: Memuat dan Menyimpan File EML dengan Lampiran TNEF
 
-## Pendahuluan
+## Introduction
 
-Jika Anda mencari **cara menyimpan eml** yang berisi lampiran TNEF, Aspose.Email untuk Java menyediakan solusi yang kuat dan siap produksi. Dalam tutorial ini Anda akan mempelajari cara memuat, memperbarui, dan akhirnya **menyimpan eml** sambil mempertahankan setiap sumber daya yang tersemat. Kami juga akan menunjukkan cara **memproses lampiran email**, **memperbarui konten email**, dan menangani **cara memuat eml** secara efisien.
+Jika Anda mencari **cara menyimpan eml** file yang berisi lampiran TNEF, Aspose.Email untuk Java menyediakan solusi yang kuat, siap produksi. Dalam tutorial ini Anda akan menemukan cara **memproses lampiran email**, memuat, memperbarui, dan akhirnya **menyimpan eml** file sambil mempertahankan setiap sumber daya yang tersemat. Kami juga akan menunjukkan cara **memproses lampiran email**, **memperbarui konten email**, dan menangani **cara memuat eml** file secara efisien.
 
-**Apa yang Akan Anda Pelajari**
+**What You’ll Learn**
 - Cara **memuat** file EML dan menjaga data TNEF tetap utuh  
-- Proses langkah‑demi‑langkah untuk **menyimpan eml** setelah modifikasi  
-- Teknik untuk **memperbarui lampiran email** dan sumber daya terkait  
-- Skenario dunia nyata di mana alur kerja ini menghemat waktu dan mencegah kehilangan data  
+- Proses langkah‑demi‑langkah untuk **menyimpan eml** file setelah modifikasi  
+- Teknik untuk **memperbarui lampiran email** dan sumber daya yang terhubung  
+- Skenario dunia nyata di mana alur kerja ini menghemat waktu dan menghindari kehilangan data  
 
 Siap menguasai penanganan email? Mari kita mulai!
 
-## Jawaban Cepat
-- **Apa cara utama untuk mempertahankan lampiran TNEF?** Atur `FileCompatibilityMode.PreserveTnefAttachments` pada `EmlSaveOptions`.  
+## Quick Answers
+- **Apa cara utama untuk mempertahankan lampiran TNEF?** Set `FileCompatibilityMode.PreserveTnefAttachments` di `EmlSaveOptions`.  
 - **Kelas Aspose mana yang memuat file EML?** `MailMessage.load(String filePath)`.  
 - **Bisakah saya memperbarui gambar tersemat tanpa merusak email?** Ya – gunakan helper `UpdateResources` untuk mengganti stream.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Lisensi percobaan gratis cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi penuh diperlukan untuk produksi.  
 - **Versi Java apa yang didukung?** JDK 1.8 atau lebih tinggi (contoh menggunakan classifier JDK 16).  
 
-## Apa itu “cara menyimpan eml” dengan lampiran TNEF?
-Menyimpan file EML sambil mempertahankan data TNEF berarti menulis kembali pesan ke disk tanpa menghapus informasi lampiran khusus Outlook. `EmlSaveOptions` dari Aspose.Email memberi Anda kontrol detail atas proses ini.
+## What is “process email attachments” with TNEF attachments?
+Menyimpan file EML sambil mempertahankan data TNEF berarti menulis kembali pesan ke disk tanpa menghapus informasi lampiran khusus Outlook. `EmlSaveOptions` Aspose.Email memberikan kontrol detail atas proses ini.
 
-## Mengapa menggunakan Aspose.Email untuk Java?
+## Why use Aspose.Email for Java?
 - **Dukungan format lengkap** – MSG, EML, MHTML, dan lainnya.  
-- **API tanpa ketergantungan** – tidak ada pustaka native yang harus diinstal.  
+- **API tanpa ketergantungan** – tidak ada perpustakaan native yang harus diinstal.  
 - **Performa tingkat perusahaan** – pemrosesan berbasis stream untuk kotak surat besar.  
 
-## Prasyarat
+## Prerequisites
 
-### Perpustakaan dan Dependensi yang Diperlukan
-Anda memerlukan Aspose.Email untuk Java. Tambahkan melalui Maven:
+### Required Libraries and Dependencies
+Anda akan memerlukan Aspose.Email untuk Java. Tambahkan melalui Maven:
 
 ```xml
 <dependency>
@@ -60,25 +60,25 @@ Anda memerlukan Aspose.Email untuk Java. Tambahkan melalui Maven:
 </dependency>
 ```
 
-### Penyiapan Lingkungan
+### Environment Setup
 - Java Development Kit (JDK) 1.8 atau lebih tinggi.  
-- IDE seperti IntelliJ IDEA atau Eclipse.  
+- Sebuah IDE seperti IntelliJ IDEA atau Eclipse.  
 
-### Prasyarat Pengetahuan
-Pemrograman Java dasar dan pemahaman tentang stream I/O file sangat disarankan.
+### Knowledge Prerequisites
+Pemrograman Java dasar dan pemahaman tentang aliran I/O file disarankan.
 
-## Menyiapkan Aspose.Email untuk Java
+## Setting Up Aspose.Email for Java
 
-### Informasi Instalasi
+### Installation Information
 Tambahkan dependensi Maven di atas atau unduh JAR langsung dari [situs Aspose](https://releases.aspose.com/email/java/).
 
-### Langkah‑Langkah Akuisisi Lisensi
-- **Percobaan Gratis:** Dapatkan lisensi percobaan untuk menjelajahi API.  
-- **Lisensi Sementara:** Ajukan jika Anda memerlukan periode evaluasi yang diperpanjang.  
-- **Pembelian:** Dapatkan lisensi penuh untuk penerapan produksi.
+### License Acquisition Steps
+- **Free Trial:** Dapatkan lisensi percobaan untuk menjelajahi API.  
+- **Temporary License:** Ajukan jika Anda memerlukan periode evaluasi yang diperpanjang.  
+- **Purchase:** Dapatkan lisensi penuh untuk penerapan produksi.
 
-### Inisialisasi dan Penyiapan Dasar
-Pertama, muat lisensi Anda agar API berjalan tanpa batasan evaluasi:
+### Basic Initialization and Setup
+Pertama, muat lisensi Anda sehingga API berjalan tanpa batasan evaluasi:
 
 ```java
 import com.aspose.email.License;
@@ -87,19 +87,19 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Panduan Implementasi
+## Implementation Guide
 
-Panduan ini membawa Anda melalui **cara memuat eml**, memperbarui sumber dayanya, dan akhirnya **cara menyimpan eml** sambil mempertahankan lampiran TNEF.
+Panduan ini memandu Anda melalui **cara memuat eml**, memperbarui sumber dayanya, dan akhirnya **cara menyimpan eml** sambil mempertahankan lampiran TNEF.
 
-### Memuat dan Menyimpan File EML dengan Lampiran TNEF
+### How to process email attachments with Aspose.Email
 
-#### Gambaran Umum
-Kami akan memuat file EML yang ada, mengganti gambar tersemat, dan kemudian menyimpan pesan kembali ke disk tanpa kehilangan data TNEF.
+#### Overview
+Kami akan memuat file EML yang ada, mengganti gambar tersemat apa pun, dan kemudian menyimpan pesan kembali ke disk tanpa kehilangan data TNEF.
 
-#### Instruksi Langkah‑demi‑Langkah
+#### Step‑by‑Step Instructions
 
 1. **Muat File EML**  
-   Gunakan `MailMessage.load` untuk membawa pesan ke memori.
+   Gunakan `MailMessage.load` untuk memuat pesan ke memori.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -125,30 +125,30 @@ emlSo.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
 ```
 
 3. **Perbarui Sumber Daya dalam Mail Message**  
-   Ganti gambar tersemat (atau sumber daya lain) dengan stream konten baru.
+   Ganti gambar tersemat (atau sumber daya lain) dengan aliran konten baru.
 
 ```java
 UpdateResources(originalMailMessage, dataDir + "Untitled.jpg");
 ```
 
-4. **Simpan File EML yang Telah Diperbarui**  
-   Inilah inti dari **cara menyimpan eml** dengan data TNEF tetap utuh.
+4. **Simpan File EML yang Diperbarui**  
+   Ini adalah inti dari **cara menyimpan eml** dengan data TNEF tetap utuh.
 
 ```java
 String outFileName = dataDir + "01_SAVE_Preserve_out.eml";
 originalMailMessage.save(outFileName, emlSo);
 ```
 
-#### Penjelasan
+#### Explanation
 - `EmlLoadOptions` dan `EmlSaveOptions` memastikan loader dan saver menghormati format TNEF Outlook.  
-- Metode helper `UpdateResources` (ditunjukkan nanti) menelusuri lampiran dan sumber daya terkait, menukar stream gambar.
+- Metode helper `UpdateResources` (ditunjukkan nanti) menelusuri lampiran dan sumber daya terhubung, mengganti aliran gambar.
 
-### Memperbarui Sumber Daya dalam Pesan Email
+### How to replace embedded images in an email
 
-#### Gambaran Umum
-Saat Anda perlu **memproses lampiran email** atau **memperbarui email**, Anda harus mengiterasi baik lampiran reguler maupun sumber daya terhubung.
+#### Overview
+Saat Anda perlu **memproses lampiran email** atau **memperbarui konten email**, Anda harus mengiterasi baik lampiran reguler maupun sumber daya terhubung.
 
-#### Memperbarui Lampiran
+#### Updating Attachments
 
 ```java
 import com.aspose.email.Attachment;
@@ -171,7 +171,7 @@ for (int i = 0; i < msg.getAttachments().size(); i++) {
 }
 ```
 
-#### Memperbarui Sumber Daya Terhubung (Gambar Tersemat)
+#### Updating Linked Resources (Embedded Images)
 
 ```java
 import com.aspose.email.LinkedResource;
@@ -189,34 +189,34 @@ for (LinkedResource att : msg.getLinkedResources()) {
 }
 ```
 
-#### Penjelasan
-- Metode `UpdateResources` (dipanggil sebelumnya) menggabungkan dua loop di atas, memastikan **memperbarui lampiran email** dan gambar tersemat diperbarui dalam satu kali proses.  
-- File EML bersarang diproses secara rekursif, yang penting saat menangani pesan yang diteruskan yang juga berisi data TNEF.
+#### Explanation
+- Metode `UpdateResources` (dipanggil sebelumnya) menggabungkan dua loop di atas, memastikan **memperbarui lampiran email** dan gambar tersemat diperbarui dalam satu pass.  
+- File EML bersarang diproses secara rekursif, yang penting saat menangani pesan yang diteruskan yang juga mengandung data TNEF.
 
-### Tips Pemecahan Masalah
+### Troubleshooting Tips
 - Pastikan `dataDir` mengarah ke folder yang valid dan Anda memiliki izin baca/tulis.  
-- Gunakan `try‑with‑resources` untuk stream agar tidak terjadi kebocoran pada kode produksi.  
-- Jika lampiran TNEF menghilang setelah penyimpanan, periksa kembali bahwa `FileCompatibilityMode.PreserveTnefAttachments` telah diatur.
+- Gunakan `try‑with‑resources` untuk stream agar menghindari kebocoran dalam kode produksi.  
+- Jika lampiran TNEF menghilang setelah penyimpanan, periksa kembali bahwa `FileCompatibilityMode.PreserveTnefAttachments` telah diset.
 
-## Aplikasi Praktis
+## Practical Applications
 
-1. **Arsip Email** – Simpan salinan setia pesan Outlook, termasuk bagian TNEF proprietari, untuk audit kepatuhan.  
-2. **Alur Kerja Dukungan Otomatis** – Ekstrak gambar dari tiket masuk, ganti dengan versi berwatermark, dan simpan kembali pesan.  
-3. **Migrasi Data** – Pindahkan kotak surat dari Exchange ke arsip khusus sambil mempertahankan setiap lampiran utuh.
+1. **Email Archiving** – Simpan salinan setia pesan Outlook, termasuk bagian TNEF proprietari, untuk audit kepatuhan.  
+2. **Automated Support Workflows** – Ekstrak gambar dari tiket masuk, ganti dengan versi berwatermark, dan simpan kembali pesan.  
+3. **Data Migration** – Pindahkan kotak surat dari Exchange ke arsip khusus sambil mempertahankan setiap lampiran tetap utuh.
 
-## Pertimbangan Kinerja
+## Performance Considerations
 - Gunakan kembali objek `FileInputStream` bila memungkinkan; tutup segera setelah selesai.  
 - Untuk kotak surat besar, proses pesan dalam batch dan lepaskan referensi setelah setiap penyimpanan.  
 - Profil penggunaan memori dengan VisualVM atau alat serupa untuk menemukan bottleneck.
 
-## Kesimpulan
-Anda kini mengetahui **cara menyimpan eml** dengan lampiran TNEF, **cara memuat eml**, dan cara **memperbarui konten email** secara aman menggunakan Aspose.Email untuk Java. Kemampuan ini membuka peluang arsip email yang dapat diandalkan, pemrosesan otomatis, dan proyek migrasi yang mulus.
+## Conclusion
+Anda kini tahu **cara menyimpan eml** file dengan lampiran TNEF, cara **memuat eml**, dan cara **memperbarui konten email** secara aman menggunakan Aspose.Email untuk Java. Kemampuan ini membuka peluang arsip email yang dapat diandalkan, pemrosesan otomatis, dan proyek migrasi yang mulus.
 
-**Langkah Selanjutnya**
+**Next Steps**
 - Bereksperimen dengan pengaturan `FileCompatibilityMode` yang berbeda untuk melihat dampaknya pada format lain.  
 - Jelajahi API Aspose.Email untuk parsing bagian MIME, menangani pesan terenkripsi, dan lainnya.
 
-## Bagian FAQ
+## FAQ Section
 
 1. **Apa itu TNEF, dan mengapa penting?**  
    TNEF (Transport Neutral Encapsulation Format) digunakan oleh Microsoft Outlook untuk menggabungkan format kaya dan metadata lampiran. Mempertahankannya memastikan pesan terlihat identik saat dibuka di Outlook.
@@ -228,40 +228,40 @@ Anda kini mengetahui **cara menyimpan eml** dengan lampiran TNEF, **cara memuat 
    Stream konten pesan dan hindari memuat seluruh file ke memori; gunakan `try‑with‑resources` untuk pembersihan otomatis.
 
 4. **Opsi lisensi apa yang tersedia untuk Aspose.Email?**  
-   Mulai dengan percobaan gratis, lalu pilih lisensi sementara atau lisensi komersial penuh sesuai kebutuhan proyek Anda.
+   Mulai dengan trial gratis, kemudian pilih lisensi sementara atau lisensi komersial penuh berdasarkan kebutuhan proyek Anda.
 
 5. **Bagaimana cara memecahkan masalah umum pada penanganan file EML?**  
-   Periksa jalur file, pastikan Anda menggunakan versi pustaka yang tepat, dan verifikasi bahwa `FileCompatibilityMode` diatur untuk mempertahankan TNEF.
+   Periksa jalur file, pastikan Anda menggunakan versi perpustakaan yang tepat, dan pastikan `FileCompatibilityMode` diset untuk mempertahankan TNEF.
 
-## Pertanyaan yang Sering Diajukan
+## Frequently Asked Questions
 
-**T: Bagaimana cara secara programatis menentukan apakah file EML mengandung data TNEF?**  
-J: Periksa koleksi `MailMessage.getAttachments()` untuk lampiran dengan tipe konten `application/ms-tnef`.
+**Q: Bagaimana saya dapat secara programatis menentukan apakah file EML mengandung data TNEF?**  
+A: Periksa koleksi `MailMessage.getAttachments()` untuk lampiran dengan tipe konten `application/ms-tnef`.
 
-**T: Apakah mungkin mengonversi EML yang kaya TNEF menjadi EML teks biasa sambil tetap menyimpan lampiran asli?**  
-J: Ya—atur `FileCompatibilityMode.RemoveTnefAttachments` saat menyimpan untuk menghapus TNEF tetapi mempertahankan lampiran reguler.
+**Q: Apakah memungkinkan mengonversi EML yang kaya TNEF menjadi EML teks biasa sambil mempertahankan lampiran asli?**  
+A: Ya—set `FileCompatibilityMode.RemoveTnefAttachments` saat menyimpan untuk menghapus TNEF tetapi tetap mempertahankan lampiran reguler.
 
-**T: Apakah Aspose.Email mendukung operasi async untuk memuat dan menyimpan email besar?**  
-J: Pustaka menyediakan API sinkron; Anda dapat membungkus panggilan dalam `CompletableFuture` atau menggunakan thread pool Anda sendiri untuk perilaku asynchronous.
+**Q: Apakah Aspose.Email mendukung operasi async untuk memuat dan menyimpan email besar?**  
+A: Perpustakaan menyediakan API sinkron; Anda dapat membungkus panggilan dalam `CompletableFuture` atau menggunakan thread pool sendiri untuk perilaku asynchronous.
 
-**T: Bisakah saya memperbarui gambar tersemat tanpa mengubah batas MIME asli?**  
-J: Memperbarui `ContentStream` dari `LinkedResource` mempertahankan header MIME dan batas asli.
+**Q: Bisakah saya memperbarui gambar tersemat tanpa mengubah batas MIME asli?**  
+A: Memperbarui `ContentStream` dari `LinkedResource` mempertahankan header MIME dan batas asli.
 
-**T: Apakah file EML yang disimpan dapat dibaca oleh klien email standar seperti Thunderbird?**  
-J: Ya—ketika disimpan dengan `PreserveTnefAttachments`, Outlook dapat membaca bagian TNEF, dan klien lain akan menampilkan bagian standar dengan benar.
+**Q: Apakah file EML yang disimpan dapat dibaca oleh klien email standar seperti Thunderbird?**  
+A: Ya—ketika disimpan dengan `PreserveTnefAttachments`, Outlook dapat membaca bagian TNEF, dan klien lain akan menampilkan bagian standar dengan benar.
 
-## Sumber Daya
-- [Dokumentasi Aspose.Email](https://reference.aspose.com/email/java/)  
-- [Unduh Aspose.Email untuk Java](https://releases.aspose.com/email/java/)  
-- [Beli Lisensi](https://purchase.aspose.com/buy)  
-- [Lisensi Percobaan Gratis](https://releases.aspose.com/email/java/)  
-- [Aplikasi Lisensi Sementara](https://purchase.aspose.com/temporary-license)
+## Resources
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Purchase a License](https://purchase.aspose.com/buy)
+- [Free Trial License](https://releases.aspose.com/email/java/)
+- [Temporary License Application](https://purchase.aspose.com/temporary-license)
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-10  
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier jdk16)  
-**Penulis:** Aspose
+**Last Updated:** 2026-02-11  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
