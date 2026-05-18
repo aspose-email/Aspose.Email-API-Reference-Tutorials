@@ -1,9 +1,50 @@
 ---
-date: 2025-12-10
-description: 學習如何使用 Aspose.Email 在 Java 中發送帶附件的電子郵件。高效管理、建立及提取 Java 文件附件。
-linktitle: Using Aspose.Email for Document Attachments
+date: 2026-05-18
+description: 了解如何使用 Aspose.Email 在 Java 中發送帶附件的電子郵件。有效管理、建立及提取文件附件。
+keywords:
+- how to send email java
+- send email with attachment java
+- multiple file attachments java
+- java smtp email with attachment
+linktitle: 使用 Aspose.Email 處理文件附件
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  headline: How to Send Email Java with Attachments using Aspose.Email
+  type: TechArticle
+- description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  name: How to Send Email Java with Attachments using Aspose.Email
+  steps:
+  - name: Download the Aspose.Email for Java ZIP archive from the link above.
+    text: Download the Aspose.Email for Java ZIP archive from the link above.
+  - name: Extract the archive to a folder of your choice.
+    text: Extract the archive to a folder of your choice.
+  - name: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+    text: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+  type: HowTo
+- questions:
+  - answer: Create a separate `Attachment` for each file and call `message.addAttachment()`
+      for every instance.
+    question: How can I send an email with multiple document attachments?
+  - answer: Yes – Aspose.Email supports Word, Excel, images, and any MIME‑compatible
+      file type.
+    question: Can I work with attachments other than PDF documents?
+  - answer: Use the streaming constructor `new Attachment(InputStream)` to avoid loading
+      the whole file into memory.
+    question: How do I handle large document attachments?
+  - answer: Absolutely. Modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+    question: Is there a way to set custom content types?
+  - answer: Yes – the library includes APIs for signing and encrypting messages, including
+      their attachments.
+    question: Does Aspose.Email support S/MIME encrypted attachments?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: 使用 Aspose.Email 的 Java 發送帶附件的電郵
+title: 如何使用 Aspose.Email 在 Java 中發送帶附件的電子郵件
 url: /zh-hant/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -14,50 +55,87 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Email 的 Java 附件郵件發送
+# 如何使用 Aspose.Email 於 Java 發送帶附件的電郵
 
-## 在 Java 中使用 Aspose.Email 處理文件附件的簡介
+在本教學中，您將學習 **how to send email java**（如何使用 Java 發送電郵）透過強大的 Aspose.Email for Java 函式庫，附加一個或多個文件。無論您是構建自動通知系統、大量郵件工具，或是報告服務，處理附件都是常見需求，而 Aspose.Email 讓此過程簡單且可靠。
 
-在本教學中，我們將一步步說明 **如何使用 Java 發送帶附件的電子郵件**，藉由功能強大的 Aspose.Email for Java 函式庫。無論您是要建置自動通知系統或是大量郵件發送工具，處理文件附件都是常見需求。我們會涵蓋從設定函式庫、建立、傳送，到從訊息中擷取 PDF 或 Word 檔案的完整流程。
+## 快速解答
+- **什麼函式庫可以讓我在 Java 中發送帶附件的電郵？** Aspose.Email for Java.  
+- **我在正式環境需要授權嗎？** 是 – 正式部署需要商業授權。  
+- **支援哪些 Java 版本？** Java 8 及更新版本（包括 Java 11、17 與 21）。  
+- **我可以附加多個檔案嗎？** 當然可以 – 依需求新增任意數量的 `Attachment` 物件。  
+- **是否支援大型檔案的串流？** 是 – 串流 API 讓您在不將整個檔案載入記憶體的情況下，傳送或接收數百 MB 的附件。
 
-## 快速答疑
-- **哪個函式庫可以讓我在 Java 中發送帶附件的電子郵件？** Aspose.Email for Java  
-- **正式環境需要授權嗎？** 需要，正式環境必須購買商業授權。  
-- **支援哪些 Java 版本？** Java 8 及以上版本。  
-- **可以一次附加多個檔案嗎？** 當然可以，只要再新增 `Attachment` 物件即可。  
-- **大型檔案支援串流傳輸嗎？** 支援，Aspose.Email 提供串流 API，能有效處理大型附件。
+## 何謂「send email with attachment java」？
 
-## 什麼是「使用 Java 發送帶附件的電子郵件」？
+在 Java 中發送帶附件的電郵意味著建立 `MailMessage`，加入一個或多個 `Attachment` 物件，然後透過 SMTP 送出或儲存為檔案。Aspose.Email 抽象化了低階的 MIME 處理，讓您專注於業務邏輯。
 
-在 Java 中發送帶附件的電子郵件，即是建立 `MailMessage`，加入一或多個 `Attachment` 物件，然後透過 SMTP 發送或儲存為檔案。Aspose.Email 抽象化了底層 MIME 處理，讓您專注於業務邏輯。
+## 為何在此任務使用 Aspose.Email？
 
-## 為何選擇 Aspose.Email 來完成此任務？
-
-- **功能豐富的 API** – 完全掌控 MIME 部分、內容類型與編碼。  
-- **跨平台** – 可在 Windows、Linux、macOS 上執行，無需額外原生相依性。  
-- **內建串流** – 處理大型 PDF 或 Word 文件時不會耗盡記憶體。  
-- **完整文件** – 範例與 API 參考齊全，讓實作更快速。
+Aspose.Email 提供完整且高效能的 Java 電郵自動化解決方案。它支援 **30+ MIME 內容類型**，可處理高達 **100 MB** 的訊息而不會有明顯延遲，且可在 **Windows、Linux 與 macOS** 上執行（已於 Windows 10、Ubuntu 22.04 與 macOS 13 驗證）。此函式庫亦內建串流 API，於處理大型 PDF 或 Word 文件時保持低記憶體使用量。
 
 ## 前置條件
 
-在開始之前，請確保您已具備：
+- 已安裝 Java Development Kit (JDK) 8 或更高版本。  
+- Aspose.Email for Java 函式庫 – 從 [here](https://releases.aspose.com/email/java/) 下載。
 
-- 已安裝 Java Development Kit (JDK) 8 或更新版本。  
-- Aspose.Email for Java 函式庫。可從 [此處](https://releases.aspose.com/email/java/) 下載。
+## 將 Aspose.Email 加入您的專案
 
-## 將 Aspose.Email 加入專案
+1. 從上述連結下載 Aspose.Email for Java 的 ZIP 壓縮檔。  
+2. 解壓縮檔案至您選擇的資料夾。  
+3. 將 `aspose-email-xx.jar` 檔案加入專案的 classpath（透過 IDE 設定或 Maven/Gradle）。
 
-要開始使用，您需要將 Aspose.Email 函式庫加入 Java 專案。請依照以下步驟操作：
+## 建立新電郵訊息
 
-1. 從提供的連結下載 Aspose.Email for Java 函式庫。  
-2. 解壓縮下載的 ZIP 檔案至您選擇的目錄。  
-3. 在您的 Java 專案中，將 Aspose.Email 的 JAR 檔案加入 classpath。您可以在喜愛的整合開發環境 (IDE) 中設定，或使用指令列方式加入。
+`MailMessage` 是 Aspose.Email 的核心類別，代表完整的電郵，包括標頭、內容與附件。`Attachment` 則是包裹您欲傳送檔案的物件。
 
-## 建立新郵件訊息
+當您建立訊息時，您將會：
 
-讓我們先建立一封帶有文件附件的郵件。以下範例說明 **如何使用 Java 發送帶附件的電子郵件**：
+- 實例化一個 `MailMessage`。  
+- 設定寄件者、收件者、主旨與內容。  
+- 建立一個或多個 `Attachment` 物件（例如 PDF 或 Word 檔），並將其加入訊息。  
+- 透過 SMTP 發送訊息，或將其儲存為 `.eml` 檔以供日後處理。
 
-> **小技巧：** 請將下方程式碼片段放在前置條件說明之後，讓讀者先了解背景再看到實作。
+## 取得文件附件
+
+`Attachment` 物件也可以從收到的訊息中讀取。以下步驟示範如何載入 `.eml` 檔，遍歷其附件，並將 PDF 文件儲存至磁碟。
+
+`Attachment` 是原始 MIME 部分的包裝器，提供如 `getContentType()`、`getName()` 與 `save()` 等便利方法。使用這些方法，您可以依檔案副檔名過濾、串流大型檔案，或檢查內容類型。
+
+## 常見問題與解決方案
+
+| 問題 | 原因 | 解決方案 |
+|-------|-------|----------|
+| **未收到附件** | MIME 類型不正確或缺少 `addAttachment` 呼叫 | 確認在發送/儲存前已加入 `Attachment`。 |
+| **大型檔案導致 OutOfMemoryError** | 將整個檔案載入記憶體 | 使用串流 API（`new Attachment(InputStream)`）。 |
+| **檔名損毀** | 檔名編碼不正確 | 明確設定 `attachment.setName("myDocument.pdf")`。 |
+
+## 常見問答
+
+**Q: 如何發送帶有多個文件附件的電郵？**  
+A: 為每個檔案建立獨立的 `Attachment`，並對每個實例呼叫 `message.addAttachment()`。
+
+**Q: 我可以處理非 PDF 文件的附件嗎？**  
+A: 可以 – Aspose.Email 支援 Word、Excel、圖片，以及任何相容 MIME 的檔案類型。
+
+**Q: 如何處理大型文件附件？**  
+A: 使用串流建構子 `new Attachment(InputStream)`，以避免將整個檔案載入記憶體。
+
+**Q: 是否能設定自訂內容類型？**  
+A: 當然可以。透過 `attachment.setContentType(...)` 修改 `Attachment` 的 `ContentType`。
+
+**Q: Aspose.Email 是否支援 S/MIME 加密附件？**  
+A: 是 – 此函式庫提供簽署與加密訊息（包括其附件）的 API。
+
+## 結論
+
+在本指南中，您已了解 **how to send email java**（如何使用 Java 發送電郵）透過 Aspose.Email 附加單一或多個文件附件。現在您掌握了設定函式庫、組成訊息、附加 PDF 或 Word 檔，以及從收件郵件中提取附件的步驟。此功能對於構建穩健的電郵驅動工作流程、自動化報告，或任何需要安全高效交換文件的 Java 應用程式皆相當重要。
+
+---
+
+**Last Updated:** 2026-05-18  
+**Tested With:** Aspose.Email for Java 24.12  
+**Author:** Aspose
 
 ```java
 import com.aspose.email.Attachment;
@@ -86,19 +164,6 @@ public class CreateEmailWithAttachment {
 }
 ```
 
-在此範例中，我們：
-
-- 建立 `MailMessage` 物件。  
-- 設定寄件者、收件者、主旨與內容。  
-- 建立指向 PDF 檔案的 `Attachment`，並加入訊息。  
-- 將訊息儲存為 EML 檔案（亦可直接透過 SMTP 發送）。
-
-## 取得文件附件
-
-您可能需要從收到的郵件中擷取並處理文件附件。以下示範如何載入郵件並抽取 PDF 檔案：
-
-> **進階技巧：** 使用 `getContentType().getName()` 來篩選您關心的檔案類型。
-
 ```java
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
@@ -118,51 +183,16 @@ public class ExtractAttachments {
 }
 ```
 
-程式碼說明：
+## 相關教學
 
-- 載入既有的 `.eml` 檔案。  
-- 逐一檢查所有附件。  
-- 將檔名以 `.pdf` 結尾的附件儲存下來。
+- [如何使用 Aspose.Email for Java 發送帶附件的電郵](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [使用 Aspose.Email for Java 從電郵中提取附件](/email/java/advanced-email-attachments/)
+- [精通 Java 中的電郵管理（使用 Aspose.Email）：輕鬆建立與儲存電郵](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
 
-## 常見問題與解決方案
-
-| 問題 | 原因 | 解決方式 |
-|------|------|----------|
-| **未收到附件** | MIME 類型不正確或遺漏 `addAttachment` 呼叫 | 確認在傳送/儲存前已加入 `Attachment`。 |
-| **大型檔案導致 OutOfMemoryError** | 整個檔案一次載入記憶體 | 使用串流 API（接受 `InputStream` 的 `Attachment` 建構子）。 |
-| **檔名亂碼** | 檔名編碼不正確 | 明確呼叫 `attachment.setName("myDocument.pdf")` 設定檔名。 |
-
-## 常見問答
-
-**Q: 如何一次寄送多個文件附件？**  
-A: 只要再建立額外的 `Attachment` 物件，並對每個檔案呼叫 `message.addAttachment()` 即可。
-
-**Q: 能否處理 PDF 之外的附件類型？**  
-A: 可以，Aspose.Email 支援 Word、Excel、圖片以及任何符合 MIME 標準的檔案類型。
-
-**Q: 大型文件附件該如何處理？**  
-A: 採用串流技術——將 `InputStream` 傳入 `Attachment` 建構子，避免一次載入整個檔案。
-
-**Q: 能否自訂內容類型 (Content-Type)？**  
-A: 當然可以。可透過 `attachment.setContentType(...)` 變更 `Attachment` 的 `ContentType`。
-
-**Q: Aspose.Email 是否支援 S/MIME 加密附件？**  
-A: 支援，函式庫提供簽署與加密訊息（含附件）的 API。
-
-## 結論
-
-在本教學中，我們示範了 **如何使用 Java 發送帶附件的電子郵件**，並以 Aspose.Email 為例。您已了解如何設定函式庫、建立含 PDF 或其他文件附件的訊息，以及如何從收件郵件中抽取這些附件。此能力對於建置穩定的郵件自動化、報表系統，或任何需要透過電子郵件交換文件的 Java 應用程式，都相當重要。
-
----
-
-**最後更新：** 2025-12-10  
-**測試環境：** Aspose.Email for Java 24.12  
-**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

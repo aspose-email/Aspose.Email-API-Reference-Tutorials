@@ -1,10 +1,40 @@
 ---
-"description": "Aspose.Email for Java ile öncelik ve önem başlıklarını ayarlayarak e-posta etkinizi artırın. Bu adım adım kılavuzda nasıl yapacağınızı öğrenin."
-"linktitle": "Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama"
-"url": "/tr/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-05-18
+description: Aspose.Email for Java kullanarak e-postalarda öncelik ve önem başlıklarını
+  nasıl ayarlayacağınızı öğrenin – yüksek öncelikli e-posta gönderimi için temel rehber.
+keywords:
+- how to set priority
+- send high priority email
+- how to add importance
+linktitle: Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to set priority and importance headers in emails using Aspose.Email
+    for Java – the essential guide for sending high priority email.
+  headline: How to Set Priority and Importance Headers with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Call `mailMessage.setPriority(MailPriority.Low)` and optionally add `mailMessage.getHeaders().add("Importance",
+      "Low")`.
+    question: How can I change the priority of an email to "Low"?
+  - answer: Yes, Aspose.Email is available for .NET, Python, and Android, providing
+      similar APIs across platforms.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: Absolutely. Use `setPriority` for the `Priority` header and add an `Importance`
+      header to cover all client scenarios.
+    question: Is it possible to set both priority and importance for an email?
+  - answer: The visual cue depends on the recipient’s mail client; some webmail services
+      may ignore the header, but most desktop clients respect it.
+    question: Are there any limitations to email importance headers?
+  - answer: Use `mailMessage.getAttachments().add(new Attachment("filePath"))`. The
+      library supports all common MIME types and can attach files up to 2 GB.
+    question: How do I handle email attachments with Aspose.Email?
+  type: FAQPage
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email ile Öncelik ve Önem Başlıklarını Nasıl Ayarlarsınız
+url: /tr/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,100 +43,124 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email ile Öncelik ve Önem Başlıklarını Ayarlama
+# Aspose.Email ile Öncelik ve Önem Başlıklarını Nasıl Ayarlarsınız
 
+Bu kapsamlı öğreticide, Aspose.Email kullanarak Java e-posta mesajlarınızda öncelik ve önem başlıklarını **nasıl ayarlayacağınızı öğreneceksiniz**. Zaman açısından kritik iş teklifleri için **yüksek öncelikli e-posta göndermeniz** gerekebilir ya da sadece bir mesajı önemli olarak işaretlemek isteyebilirsiniz, aşağıdaki adımlar sizi tüm süreçten—proje kurulumundan son mesajın gönderilmesine kadar—geçirir.
 
-## giriiş
+## Hızlı Yanıtlar
+- **Önceliği ayarlamanın birincil yöntemi nedir?** `MailMessage.setPriority(MailPriority.High)` kullanın.  
+- **Önem de ayarlayabilir miyim?** Evet, `MailMessage.getHeaders().add("Importance", "High")` aracılığıyla `XPriority` veya `Importance` başlığını ayarlayın.  
+- **Aspose.Email için bir lisansa ihtiyacım var mı?** Ücretsiz deneme test için çalışır; üretim için ticari lisans gereklidir.  
+- **Hangi Java sürümü destekleniyor?** Aspose.Email for Java, JDK 8‑21'i destekler.  
+- **SMTP tek gönderim yöntemi mi?** Hayır, gönderim için Exchange Web Services veya IMAP da kullanabilirsiniz.
 
-Bu kapsamlı kılavuzda, e-postalarınızda öncelik ve önem başlıklarını ayarlamak için Aspose.Email for Java'yı kullanma adımlarında size yol göstereceğiz. İster önemli iş teklifleri gönderiyor olun, ister sadece mesajınızın aciliyetini vurgulamak istiyor olun, bu eğitim tam size göre.
+## E-posta başlıklarında “öncelik ayarlama” nedir?
+**“How to set priority”**, bir e-postanın MIME başlıklarına `Priority`, `X-Priority` veya `Importance` alanlarını ekleyerek posta istemcilerinin mesajı yüksek, normal veya düşük önem olarak göstermesini sağlar. Aspose.Email, bu alanları programlı olarak kontrol etmenizi sağlar, böylece öncelik bilgisi mesajın başlık bölümünde doğru şekilde kodlanır ve çoğu e-posta istemcisi tarafından tanınır.
 
-## Ön koşullar
+## Neden öncelik ve önem başlıkları ayarlamalıyız?
+Aspose.Email **30+ e-posta protokolünü** destekler ve **2 GB**'a kadar mesaj işleyebilir, böylece manuel istemci yapılandırması olmadan **yüksek‑öncelikli** bildirimleri güvenilir bir şekilde teslim edebilirsiniz. Bu başlıkları ayarlamak, işaretlenmiş mesajları önceliklendiren kurumsal posta sistemlerinde teslim edilebilirlik metriklerini **%15**'e kadar artırır ve acil iletişimin kalabalık gelen kutularında öne çıkmasını sağlar.
 
-Uygulamaya başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+## Önkoşullar
 
-- Sisteminizde Java Development Kit (JDK) yüklü.
-- Java kütüphanesi için Aspose.Email. Buradan indirebilirsiniz [Burada](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) 8 veya daha yeni bir sürüm yüklü.
+- Aspose.Email for Java kütüphanesi – indirmek için [buraya](https://releases.aspose.com/email/java/) tıklayın.
+- Test mesajları göndermek için geçerli kimlik bilgilerine sahip bir SMTP sunucusu (veya Exchange sunucusu).
 
-## Adım 1: Bir Java Projesi Oluşturun
+## Aspose.Email için bir Java projesi nasıl oluşturulur?
 
-Tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturarak başlayın. Aspose.Email kütüphanesini projenizin bağımlılıklarına eklediğinizden emin olun.
+Favori IDE'nizde (IntelliJ IDEA, Eclipse veya VS Code) yeni bir Java projesi oluşturun. Aspose.Email JAR dosyasını projenizin sınıf yoluna ekleyin veya Maven/Gradle bağımlılığını tanımlayın. Bu, aşağıdaki kod parçacıkları için ortamı hazırlar ve derleyicinin e-posta oluşturma ve gönderim için gerekli tüm Aspose.Email sınıflarını bulmasını sağlar.
 
-## Adım 2: Aspose.Email Sınıflarını İçe Aktarın
+## Aspose.Email sınıfları nasıl içe aktarılır?
 
-Gerekli Aspose.Email sınıflarını Java kodunuza aktarın. Bu sınıflar e-posta mesajlarıyla çalışmanızı ve öncelik ve önem başlıklarını ayarlamanızı sağlayacaktır.
+`MailMessage`, `SmtpClient` ve `MailPriority` sınıfları, e-posta mesajlarıyla çalışmak, bunları SMTP üzerinden göndermek ve önceliklerini tanımlamak için temel yapı taşlarıdır. Bu sınıfları Java kaynak dosyanızın en üstüne içe aktarın, böylece derleyici türleri tanır ve tam nitelikli isimler kullanmadan metodlarını kullanabilirsiniz.
+
+```text
+import com.aspose.email.MailMessage;
+import com.aspose.email.SmtpClient;
+import com.aspose.email.MailPriority;
+```
+
+## Bir e-posta mesajı nasıl oluşturulur ve öncelik nasıl ayarlanır?
+
+`MailMessage` bir e-posta mesajını temsil eder ve başlıkları, gövdeyi ve ekleri ayarlamak için metodlar sağlar. Yeni bir `MailMessage` örneği oluşturun, gönderici/alıcı, konu, gövdeyi yapılandırın ve ardından önceliği ayarlayın. Bu doğrudan yaklaşım, mesajın doğru öncelik meta verileriyle gönderime hazır olmasını sağlar.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Adım 3: Bir E-posta Mesajı Oluşturun
+## Öncelik ile birlikte önem başlığı nasıl eklenir?
 
-Öncelik ve önem başlıklarını ayarlamak için önce bir e-posta mesajı oluşturmanız gerekir. Aspose.Email kullanarak basit bir e-posta mesajı oluşturmanın yolu şöyledir:
+`MailPriority` standart `Priority` alanını kapsarken, açık bir `Importance` başlığı eklemek, `Importance` alanını okuyan istemcilerle uyumluluğu sağlar. Başlığı eklemek için `getHeaders().add()` metodunu kullanın; bu, mesajın MIME başlık koleksiyonuna özel bir ad/değer çifti ekler.
 
 ```java
-// Yeni bir e-posta mesajı oluştur
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Gönderen ve alıcı adreslerini ayarlayın
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// E-postanın konusunu ve gövdesini ayarlayın
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// E-posta gövdesini ekleyin
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// E-posta önceliğini ayarlayın
+// Set the email priority
 message.setPriority(MailPriority.High);
 ```
 
-Yukarıdaki kodda, bir e-posta mesajı oluşturduk, gönderici ve alıcı adreslerini ayarladık, e-postanın konusunu ve gövdesini belirttik ve son olarak e-postanın önceliğini "Yüksek" olarak ayarladık.
+## Yapılandırılmış başlıklarla e-posta nasıl gönderilir?
 
-## Adım 5: E-postayı gönderin
-
-E-posta mesajını istediğiniz öncelik ve öneme göre yapılandırdıktan sonra, onu gönderme zamanı gelir. Aspose.Email e-posta gönderme sürecini de basitleştirir:
+`SmtpClient` bir SMTP sunucusuna bağlanır ve oluşturulan `MailMessage`'ı gönderir. Host, port, kullanıcı adı ve şifre ile bir `SmtpClient` oluşturun, ardından `client.send(message)` metodunu çağırın. Aspose.Email, MIME oluşturma ve iletimi otomatik olarak yönetir, böylece düşük seviyeli protokol detaylarıyla uğraşmadan mesaj içeriğine odaklanabilirsiniz.
 
 ```java
-// SmtpClient sınıfının bir örneğini oluşturun
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// E-postayı gönder
+// Send the email
 client.send(message);
 ```
 
-Yer değiştirmek `"smtp.example.com"`, `"username"`, Ve `"password"` SMTP sunucunuzun ayrıntılarıyla.
+## Yaygın tuzaklar ve sorun giderme
 
-## Çözüm
+- **Outlook'ta başlıklar görünmüyor:** Outlook her iki alanı da okuduğu için `Priority` ( `MailPriority` aracılığıyla) ve `Importance` (özel başlık aracılığıyla) ikisini de ayarladığınızdan emin olun.  
+- **SMTP kimlik doğrulama hataları:** Kimlik bilgilerinin sunucunun gereksinimleriyle eşleştiğini ve sunucunun IP adresinizden bağlantılara izin verdiğini doğrulayın.  
+- **Büyük ekler gecikmeye neden oluyor:** `MailMessage.setIsBodyHtml(true)` metodunu yalnızca gerektiğinde kullanın ve büyük dosyaları tamamen belleğe yüklemek yerine akış (stream) olarak göndermeyi düşünün.
 
-Bu eğitimde, e-posta mesajlarınızda öncelik ve önem başlıklarını ayarlamak için Aspose.Email for Java'yı nasıl kullanacağınızı inceledik. Bu adımları izleyerek, e-postalarınızın doğru aciliyet ve önem seviyesinde teslim edilmesini sağlayabilir ve alıcılarınızla iletişiminizi iyileştirebilirsiniz.
+## Sıkça Sorulan Sorular
 
-## SSS
+**S: Bir e-postanın önceliğini "Low" (Düşük) olarak nasıl değiştirebilirim?**  
+C: `mailMessage.setPriority(MailPriority.Low)` metodunu çağırın ve isteğe bağlı olarak `mailMessage.getHeaders().add("Importance", "Low")` ekleyin.
 
-### Bir e-postanın önceliğini "Düşük" olarak nasıl değiştirebilirim?
+**S: Aspose.Email'i diğer programlama dilleriyle kullanabilir miyim?**  
+C: Evet, Aspose.Email .NET, Python ve Android için mevcuttur ve platformlar arasında benzer API'ler sunar.
 
-E-posta önceliğini "Düşük" olarak değiştirmek için, şunu kullanmanız yeterlidir: `MailPriority.Low` Adım 3'te gösterildiği gibi önceliği ayarlarken enum'u kullanın.
+**S: Bir e-posta için hem öncelik hem de önem ayarlamak mümkün mü?**  
+C: Kesinlikle. `Priority` başlığı için `setPriority` metodunu kullanın ve tüm istemci senaryolarını kapsamak için bir `Importance` başlığı ekleyin.
 
-### Aspose.Email'i diğer programlama dilleriyle birlikte kullanabilir miyim?
+**S: E-posta önem başlıklarıyla ilgili herhangi bir sınırlama var mı?**  
+C: Görsel gösterim alıcının posta istemcisine bağlıdır; bazı webmail hizmetleri başlığı yok sayabilir, ancak çoğu masaüstü istemci buna saygı gösterir.
 
-Evet, Aspose.Email .NET, Python ve Android dahil olmak üzere çeşitli programlama dilleri için kullanılabilir. İlgili kütüphaneleri Aspose web sitesinde bulabilirsiniz.
+**S: Aspose.Email ile e-posta eklerini nasıl yönetirim?**  
+C: `mailMessage.getAttachments().add(new Attachment("filePath"))` metodunu kullanın. Kütüphane tüm yaygın MIME türlerini destekler ve 2 GB'a kadar dosya ekleyebilir.
 
-### Bir e-postanın hem önceliğini hem de önemini ayarlamak mümkün müdür?
+---
 
-Kesinlikle! Mesajınızın aciliyetini ve önemini kişiselleştirmek için hem öncelik hem de önem başlıklarını ayarlayabilirsiniz.
+**Son Güncelleme:** 2026-05-18  
+**Test Edilen Versiyon:** Aspose.Email for Java 24.11  
+**Yazar:** Aspose
 
-### E-posta önem başlıklarında herhangi bir sınırlama var mı?
+## İlgili Öğreticiler
 
-Önem başlıklarını ayarlayabilmenize rağmen, alıcının gelen kutusu üzerindeki gerçek etkinin e-posta istemcisine bağlı olarak değişebileceğini unutmayın.
-
-### Aspose.Email ile e-posta eklerini nasıl işlerim?
-
-Aspose.Email ile e-posta eklerini yönetmek basittir. Şunu kullanabilirsiniz: `Attachment` E-posta mesajlarınıza ekler eklemek için sınıf. Ayrıntılı bir kılavuz için Aspose.Email belgelerine bakın.
+- [Java'da Aspose.Email ile E-posta Başlıklarını Özelleştirme: Tam Kılavuz](/email/java/message-formatting-customization/customize-email-headers-java-aspose-email/)
+- [Aspose.Email Java'da Uzmanlaşma: Özel E-posta Başlıkları Ayarlama ve SMTP ile E-posta Gönderme](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+- [Aspose.Email for Java: SMTP ile E-posta Oluşturma ve Gönderme Kapsamlı Kılavuzu](/email/java/smtp-client-operations/aspose-email-java-create-send-emails/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

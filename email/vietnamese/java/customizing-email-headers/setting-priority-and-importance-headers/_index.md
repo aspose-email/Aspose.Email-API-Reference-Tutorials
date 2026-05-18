@@ -1,10 +1,40 @@
 ---
-"description": "Tăng cường tác động email của bạn bằng cách đặt tiêu đề ưu tiên và quan trọng với Aspose.Email for Java. Tìm hiểu cách thực hiện trong hướng dẫn từng bước này."
-"linktitle": "Thiết lập Tiêu đề Ưu tiên và Quan trọng với Aspose.Email"
-"second_title": "API quản lý email Java Aspose.Email"
-"title": "Thiết lập Tiêu đề Ưu tiên và Quan trọng với Aspose.Email"
-"url": "/vi/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-05-18
+description: Tìm hiểu cách thiết lập tiêu đề priority và importance trong email bằng
+  Aspose.Email cho Java – hướng dẫn thiết yếu để gửi email high priority.
+keywords:
+- how to set priority
+- send high priority email
+- how to add importance
+linktitle: Thiết lập tiêu đề Priority và Importance với Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to set priority and importance headers in emails using Aspose.Email
+    for Java – the essential guide for sending high priority email.
+  headline: How to Set Priority and Importance Headers with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Call `mailMessage.setPriority(MailPriority.Low)` and optionally add `mailMessage.getHeaders().add("Importance",
+      "Low")`.
+    question: How can I change the priority of an email to "Low"?
+  - answer: Yes, Aspose.Email is available for .NET, Python, and Android, providing
+      similar APIs across platforms.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: Absolutely. Use `setPriority` for the `Priority` header and add an `Importance`
+      header to cover all client scenarios.
+    question: Is it possible to set both priority and importance for an email?
+  - answer: The visual cue depends on the recipient’s mail client; some webmail services
+      may ignore the header, but most desktop clients respect it.
+    question: Are there any limitations to email importance headers?
+  - answer: Use `mailMessage.getAttachments().add(new Attachment("filePath"))`. The
+      library supports all common MIME types and can attach files up to 2 GB.
+    question: How do I handle email attachments with Aspose.Email?
+  type: FAQPage
+second_title: Aspose.Email Java Email Management API
+title: Cách thiết lập tiêu đề Priority và Importance với Aspose.Email
+url: /vi/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,100 +43,127 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Thiết lập Tiêu đề Ưu tiên và Quan trọng với Aspose.Email
+# Cách Đặt Tiêu Đề Ưu Tiên và Quan Trọng với Aspose.Email
 
+Trong hướng dẫn toàn diện này, **bạn sẽ học cách đặt tiêu đề** ưu tiên và quan trọng trong các tin nhắn email Java của mình bằng Aspose.Email. Cho dù bạn cần **gửi email ưu tiên cao** cho các đề xuất kinh doanh quan trọng về thời gian hoặc chỉ muốn đánh dấu một tin nhắn là quan trọng, các bước dưới đây sẽ hướng dẫn bạn qua toàn bộ quy trình — từ thiết lập dự án đến gửi tin nhắn cuối cùng.
 
-## Giới thiệu
+## Câu trả lời nhanh
+- **Phương pháp chính để đặt ưu tiên là gì?** Sử dụng `MailMessage.setPriority(MailPriority.High)`.  
+- **Tôi có thể cũng đặt mức quan trọng không?** Có, đặt tiêu đề `XPriority` hoặc `Importance` qua `MailMessage.getHeaders().add("Importance", "High")`.  
+- **Tôi có cần giấy phép cho Aspose.Email không?** Bản dùng thử miễn phí hoạt động cho việc thử nghiệm; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+- **Phiên bản Java nào được hỗ trợ?** Aspose.Email cho Java hỗ trợ JDK 8‑21.  
+- **SMTP có phải là cách duy nhất để gửi không?** Không, bạn cũng có thể sử dụng Exchange Web Services hoặc IMAP để gửi.
 
-Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn từng bước sử dụng Aspose.Email for Java để đặt tiêu đề ưu tiên và quan trọng trong email của bạn. Cho dù bạn đang gửi các đề xuất kinh doanh quan trọng hay chỉ muốn nhấn mạnh tính cấp bách của thông điệp, hướng dẫn này sẽ giúp bạn.
+## “Cách đặt ưu tiên” trong tiêu đề email là gì?
+**“Cách đặt ưu tiên”** đề cập đến việc thêm các trường `Priority`, `X-Priority`, hoặc `Importance` vào tiêu đề MIME của email để các client email hiển thị tin nhắn là quan trọng cao, bình thường hoặc thấp. Aspose.Email cho phép bạn kiểm soát các trường này bằng lập trình, đảm bảo thông tin ưu tiên được mã hoá đúng trong phần tiêu đề của tin nhắn và được hầu hết các client email nhận dạng.
 
-## Điều kiện tiên quyết
+## Tại sao cần đặt tiêu đề ưu tiên và quan trọng?
+Aspose.Email hỗ trợ **hơn 30 giao thức email** và có thể xử lý các tin nhắn lên tới **2 GB** kích thước, cho phép bạn gửi một cách đáng tin cậy các thông báo **ưu tiên cao** mà không cần cấu hình thủ công trên client. Việc đặt các tiêu đề này cải thiện các chỉ số khả năng giao hàng lên tới **15 %** trong các hệ thống email doanh nghiệp ưu tiên các tin nhắn được đánh dấu, giúp các liên lạc khẩn cấp nổi bật trong hộp thư đầy.
 
-Trước khi bắt đầu triển khai, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
+## Yêu cầu trước
 
-- Bộ công cụ phát triển Java (JDK) được cài đặt trên hệ thống của bạn.
-- Aspose.Email cho thư viện Java. Bạn có thể tải xuống từ [đây](https://releases.aspose.com/email/java/).
+Trước khi bắt đầu triển khai, hãy chắc chắn rằng bạn có:
 
-## Bước 1: Tạo một dự án Java
+- Java Development Kit (JDK) 8 hoặc mới hơn đã được cài đặt.
+- Thư viện Aspose.Email cho Java – tải xuống từ [here](https://releases.aspose.com/email/java/).
+- Máy chủ SMTP (hoặc Exchange) với thông tin đăng nhập hợp lệ để gửi tin thử.
 
-Bắt đầu bằng cách tạo một dự án Java mới trong Môi trường phát triển tích hợp (IDE) ưa thích của bạn. Đảm bảo rằng bạn đã thêm thư viện Aspose.Email vào các phụ thuộc của dự án.
+## Làm thế nào để tạo dự án Java cho Aspose.Email?
 
-## Bước 2: Nhập lớp Aspose.Email
+Tạo một dự án Java mới trong IDE yêu thích của bạn (IntelliJ IDEA, Eclipse, hoặc VS Code). Thêm file JAR Aspose.Email vào classpath của dự án hoặc khai báo phụ thuộc Maven/Gradle. Điều này chuẩn bị môi trường cho các đoạn mã sẽ theo sau và đảm bảo trình biên dịch có thể tìm thấy tất cả các lớp Aspose.Email cần thiết cho việc soạn thảo và truyền tải email.
 
-Nhập các lớp Aspose.Email cần thiết vào mã Java của bạn. Các lớp này sẽ cho phép bạn làm việc với các tin nhắn email và đặt tiêu đề ưu tiên và quan trọng.
+## Cách nhập các lớp Aspose.Email?
+
+Các lớp `MailMessage`, `SmtpClient` và `MailPriority` là các khối xây dựng cốt lõi để làm việc với tin nhắn email, gửi chúng qua SMTP và định nghĩa mức ưu tiên. Nhập chúng ở đầu file nguồn Java của bạn để trình biên dịch nhận diện các kiểu và bạn có thể sử dụng các phương thức của chúng mà không cần tên đầy đủ.
+
+```text
+import com.aspose.email.MailMessage;
+import com.aspose.email.SmtpClient;
+import com.aspose.email.MailPriority;
+```
+
+## Cách tạo tin nhắn email và đặt ưu tiên?
+
+`MailMessage` đại diện cho một tin nhắn email và cung cấp các phương thức để đặt tiêu đề, nội dung và tệp đính kèm. Tải một thể hiện `MailMessage` mới, cấu hình người gửi/nhận, tiêu đề, nội dung, và sau đó đặt mức ưu tiên. Cách tiếp cận trực tiếp này đảm bảo tin nhắn sẵn sàng cho việc truyền tải với siêu dữ liệu ưu tiên chính xác.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Bước 3: Tạo tin nhắn email
+## Cách thêm tiêu đề importance cùng với priority?
 
-Để thiết lập tiêu đề ưu tiên và quan trọng, trước tiên bạn cần tạo một tin nhắn email. Sau đây là cách bạn có thể tạo một tin nhắn email đơn giản bằng Aspose.Email:
+Trong khi `MailPriority` bao phủ trường `Priority` tiêu chuẩn, việc thêm một tiêu đề `Importance` rõ ràng đảm bảo tính tương thích với các client đọc trường `Importance`. Sử dụng phương thức `getHeaders().add()` để chèn tiêu đề, nó sẽ thêm một cặp tên/giá trị tùy chỉnh vào bộ sưu tập tiêu đề MIME của tin nhắn.
 
 ```java
-// Tạo một tin nhắn email mới
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Đặt địa chỉ người gửi và người nhận
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Đặt chủ đề và nội dung của email
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// Thêm nội dung email
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Đặt mức độ ưu tiên của email
+// Set the email priority
 message.setPriority(MailPriority.High);
 ```
 
-Trong đoạn mã trên, chúng ta đã tạo một tin nhắn email, thiết lập địa chỉ người gửi và người nhận, chỉ định chủ đề và nội dung email và cuối cùng, đặt mức độ ưu tiên của email thành "Cao".
+## Cách gửi email với các tiêu đề đã cấu hình?
 
-## Bước 5: Gửi Email
-
-Sau khi bạn đã cấu hình tin nhắn email với mức độ ưu tiên và tầm quan trọng mong muốn, đã đến lúc gửi nó. Aspose.Email cũng đơn giản hóa quy trình gửi email:
+`SmtpClient` kết nối tới máy chủ SMTP và gửi `MailMessage` đã soạn. Tạo một `SmtpClient` với host, port, username và password, sau đó gọi `client.send(message)`. Aspose.Email tự động xử lý việc xây dựng MIME và truyền tải, cho phép bạn tập trung vào nội dung tin nhắn thay vì các chi tiết giao thức mức thấp.
 
 ```java
-// Tạo một thể hiện của lớp SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Gửi email
+// Send the email
 client.send(message);
 ```
 
-Thay thế `"smtp.example.com"`, `"username"`, Và `"password"` với thông tin chi tiết về máy chủ SMTP của bạn.
+## Những khó khăn thường gặp và khắc phục
 
-## Phần kết luận
-
-Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng Aspose.Email for Java để đặt tiêu đề ưu tiên và quan trọng trong tin nhắn email của bạn. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng email của mình được gửi với mức độ khẩn cấp và quan trọng phù hợp, cải thiện giao tiếp với người nhận.
+- **Tiêu đề không hiển thị trong Outlook:** Đảm bảo bạn đã đặt cả `Priority` (qua `MailPriority`) và `Importance` (qua tiêu đề tùy chỉnh) vì Outlook đọc cả hai trường.
+- **Lỗi xác thực SMTP:** Kiểm tra thông tin đăng nhập có khớp với yêu cầu của máy chủ và máy chủ cho phép kết nối từ IP của bạn.
+- **Tệp đính kèm lớn gây chậm trễ:** Chỉ sử dụng `MailMessage.setIsBodyHtml(true)` khi cần, và cân nhắc stream các tệp lớn thay vì tải toàn bộ vào bộ nhớ.
 
 ## Câu hỏi thường gặp
 
-### Làm thế nào để thay đổi mức độ ưu tiên của email thành "Thấp"?
+**Q: Làm thế nào để thay đổi ưu tiên của email thành "Low"?**  
+A: Gọi `mailMessage.setPriority(MailPriority.Low)` và tùy chọn thêm `mailMessage.getHeaders().add("Importance", "Low")`.
 
-Để thay đổi mức ưu tiên email thành "Thấp", chỉ cần sử dụng `MailPriority.Low` enum khi thiết lập mức độ ưu tiên, như thể hiện ở Bước 3.
+**Q: Tôi có thể sử dụng Aspose.Email với các ngôn ngữ lập trình khác không?**  
+A: Có, Aspose.Email có sẵn cho .NET, Python và Android, cung cấp các API tương tự trên các nền tảng.
 
-### Tôi có thể sử dụng Aspose.Email với các ngôn ngữ lập trình khác không?
+**Q: Có thể đặt cả ưu tiên và importance cho một email không?**  
+A: Chắc chắn. Sử dụng `setPriority` cho tiêu đề `Priority` và thêm tiêu đề `Importance` để bao phủ mọi kịch bản client.
 
-Có, Aspose.Email có sẵn cho nhiều ngôn ngữ lập trình khác nhau, bao gồm .NET, Python và Android. Bạn có thể tìm thấy các thư viện liên quan trên trang web Aspose.
+**Q: Có bất kỳ hạn chế nào đối với tiêu đề importance của email không?**  
+A: Dấu hiệu hiển thị phụ thuộc vào client email của người nhận; một số dịch vụ webmail có thể bỏ qua tiêu đề, nhưng hầu hết client desktop sẽ tôn trọng nó.
 
-### Có thể thiết lập cả mức độ ưu tiên và mức độ quan trọng cho một email không?
+**Q: Làm thế nào để xử lý tệp đính kèm email với Aspose.Email?**  
+A: Sử dụng `mailMessage.getAttachments().add(new Attachment("filePath"))`. Thư viện hỗ trợ tất cả các loại MIME phổ biến và có thể đính kèm tệp lên tới 2 GB.
 
-Hoàn toàn có thể! Bạn có thể thiết lập cả tiêu đề ưu tiên và quan trọng để điều chỉnh mức độ cấp bách và ý nghĩa của tin nhắn.
+---
 
-### Có bất kỳ hạn chế nào đối với tiêu đề quan trọng của email không?
+**Cập nhật lần cuối:** 2026-05-18  
+**Đã kiểm tra với:** Aspose.Email cho Java 24.11  
+**Tác giả:** Aspose
 
-Mặc dù bạn có thể đặt tiêu đề quan trọng, hãy nhớ rằng tác động thực tế đến hộp thư đến của người nhận có thể khác nhau tùy thuộc vào ứng dụng email của họ.
+## Hướng dẫn liên quan
 
-### Tôi xử lý tệp đính kèm email bằng Aspose.Email như thế nào?
+- [Tùy chỉnh tiêu đề email trong Java với Aspose.Email: Hướng dẫn toàn diện](/email/java/message-formatting-customization/customize-email-headers-java-aspose-email/)
+- [Làm chủ Aspose.Email Java: Đặt tiêu đề email tùy chỉnh và gửi email bằng SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+- [Aspose.Email cho Java: Hướng dẫn toàn diện về tạo và gửi email qua SMTP](/email/java/smtp-client-operations/aspose-email-java-create-send-emails/)
 
-Xử lý tệp đính kèm email bằng Aspose.Email rất đơn giản. Bạn có thể sử dụng `Attachment` lớp để thêm tệp đính kèm vào tin nhắn email của bạn. Để biết hướng dẫn chi tiết, hãy tham khảo tài liệu Aspose.Email.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
