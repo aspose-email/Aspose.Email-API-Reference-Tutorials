@@ -1,65 +1,81 @@
 ---
-date: '2025-12-22'
-description: Aspose.Email for Java를 사용하여 약속을 관리하기 위한 Java 페이징 모범 사례를 배우고, 페이지당 항목
-  수에 대한 Java 팁을 포함하여 효율적인 Exchange 데이터 검색을 수행하세요.
+date: '2026-02-22'
+description: Java용 Aspose.Email으로 약속을 관리하기 위한 페이지네이션 모범 사례를 배우고, 페이지당 항목 수에 대한 Java
+  팁을 포함해 효율적인 Exchange 데이터 검색을 구현하세요.
 keywords:
 - Aspose.Email for Java
 - Exchange server pagination
 - Java EWSClient
-title: Java 페이지네이션 모범 사례 – Aspose.Email for Exchange Servers를 사용한 페이지네이션 일정 구현
+title: Java 페이지네이션 모범 사례 – Aspose.Email for Exchange Servers를 사용한 페이지네이션된 약속 구현
 url: /ko/java/calendar-appointments/java-aspose-email-paginated-appointments/
 weight: 1
 ---
+
+ "Maven", etc.
+
+Also keep bold formatting.
+
+Let's write.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email for Exchange 서버를 사용하여 Java에서 페이지 매김된 약속 구현하기
+# Java와 Aspose.Email for Exchange Server를 사용한 페이지네이션 일정 구현 방법
 
-## 소개
+## Introduction
 
-Exchange 서버에서 약속을 관리하는 것은 특히 페이지를 처리할 때 받을 수 있습니다. **Java 페이지 매김 모범 사례**는 메모리 빼기를 방지하여 데이터를 검색하도록 허용합니다. 이 튜토리얼에서는 Aspose.Email for Java를 사용하여 Exchange 서버에 연결하고 페이지 매김 기술을 활용해 계획을 참여하는 방법을 배웁니다.
+Exchange 서버에서 대량의 일정을 관리하는 것은 특히 페이지네이션을 다룰 때 어려울 수 있습니다. **Java pagination best practices**는 메모리 사용량을 낮게 유지하면서 데이터를 효율적으로 검색하도록 도와줍니다. 이 튜토리얼에서는 Aspose.Email for Java를 사용해 Exchange 서버에 연결하고, 견고한 페이지네이션 기술을 활용해 일정을 나열하는 방법을 배웁니다.
 
-**배우가 될 내용:**
-- Aspose.Email for Java를 설정하고 사용하는 방법.
-- `EWSClient`를 사용하여 Exchange 서버에 연결하는 방법.
-- 성능을 최적화하기 위해 최선을 다하겠습니다.
-- **페이지당 항목 수 java** 고려 사항을 포함하는 Java 페이지 매김 모범 사례 구현.
+**배우게 될 내용:**
+- Aspose.Email for Java 설정 및 사용 방법.  
+- `EWSClient`를 이용한 Exchange 서버 연결.  
+- 성능 최적화를 위한 페이지네이션을 통한 일정 목록 조회.  
+- **items per page java** 고려사항을 포함한 Java 페이지네이션 모범 사례 구현.  
 
-이제 시작하기 전에 사전에 요청해 보시기 바랍니다.
+이제 시작하기 전에 필요한 사전 준비 사항을 살펴보겠습니다.
 
-## 빠른 답변
-- **어떤 라이브러리가 사용됩니까?** Java용 Aspose.Email.
-- **기본 기술은 무엇입니까?** `listAppointmentsByPage`를 사용한 Java 페이지 매김 모범 사례.
-- **페이지당 몇 개의 항목을 설정할 수 있습니까?** 모든 정수; 일반적인 값은 50~200이지만 자습서에서는 데모용으로 2를 사용합니다.
-- **라이센스가 필요합니까?** 무료 평가판을 사용하여 테스트할 수 있습니다. 영구 라이센스는 평가 제한을 제거합니다.
-- **JDK 16+와 호환됩니까?** 예, 라이브러리는 JDK 16 이상을 지원합니다.
+## Quick Answers
+- **What library is used?** Aspose.Email for Java.  
+- **Which primary technique?** Java pagination best practices with `listAppointmentsByPage`.  
+- **How many items per page can I set?** Any integer; typical values are 50–200, but the tutorial uses 2 for demonstration.  
+- **Do I need a license?** A free trial works for testing; a permanent license removes evaluation limits.  
+- **Is this compatible with JDK 16+?** Yes, the library supports JDK 16 and newer.
 
-## 전제 조건
+## Java Pagination Best Practices Overview
 
-이 튜토리얼을 진행하기 전에 다음 항목을 준비하시기 바랍니다.
+수천 개의 캘린더 항목을 다룰 때 한 번에 전체 컬렉션을 가져오면 메모리가 급격히 소모되고 응답 시간이 늘어날 수 있습니다. 결과 집합을 작고 관리 가능한 페이지로 나누면 다음과 같은 이점을 얻을 수 있습니다.
 
-### 필수 라이브러리 및 버전
-- Java 버전 25.4(또는 그 이상)용 Aspose.Email
-- JDK(Java Development Kit) 16 이상
+1. **Reduce memory footprint** – only the current page lives in RAM.  
+2. **Improve network efficiency** – each request transfers a predictable amount of data.  
+3. **Enable responsive UI** – users can navigate page‑by‑page without waiting for a massive load.  
 
-### 환경 설정 요구 사항
-- IntelliJ IDEA 또는 Eclipse와 같은 Java IDE.
-- 의존성을 관리하는 Maven 시스템에 설치해야 합니다.
+Java에서는 일반적으로 **items per page** 값을 정해 지연 시간과 메모리 사용량 사이의 균형을 맞춘 뒤, 서버가 마지막 페이지임을 알릴 때까지 페이지를 순회합니다. 아래 코드 예제는 바로 이 패턴을 그대로 따릅니다.
 
-### 지식 전제조건
-- Java 프로그래밍에 대한 기본 이해와 Maven 빌드 도구에는 있지만.
-- Exchange 웹 서비스 사용 환경이 있으면 도움이 반드시 필요합니다.
+## Prerequisites
 
-이제 개발 환경에 Aspose.Email for Java를 설정해 주셔야 합니다.
+이 튜토리얼을 진행하기 전에 다음 항목을 확인하십시오.
 
-## Java용 Aspose.Email 설정
+### Required Libraries and Versions
+- Aspose.Email for Java version 25.4 (or later)  
+- Java Development Kit (JDK) 16 or above  
 
-Aspose.Email은 이메일 처리 및 통합 작업을 허용하도록 하기 위한 것입니다. Maven을 실행하는 프로젝트에 추가하는 방법은 다음과 같습니다.
+### Environment Setup Requirements
+- IntelliJ IDEA 또는 Eclipse와 같은 Java IDE.  
+- Maven이 시스템에 설치되어 있어야 합니다.  
 
-**Maven 종속성:**
+### Knowledge Prerequisites
+- Java 프로그래밍 기본 지식 및 Maven 빌드 도구에 대한 친숙함.  
+- Exchange Web Services 사용 경험이 있으면 좋지만 필수는 아닙니다.  
+
+필수 사항을 마쳤다면 이제 개발 환경에 Aspose.Email for Java을 설정해 보겠습니다.
+
+## Setting Up Aspose.Email for Java
+
+Aspose.Email은 이메일 처리 및 통합 작업을 단순화하도록 설계된 강력한 라이브러리입니다. Maven을 사용해 프로젝트에 추가하는 방법은 다음과 같습니다.
+
+**Maven Dependency:**
 
 ```xml
 <dependency>
@@ -70,17 +86,17 @@ Aspose.Email은 이메일 처리 및 통합 작업을 허용하도록 하기 위
 </dependency>
 ```
 
-### 라이선스 취득 단계
+### License Acquisition Steps
 
-Aspose.Email은 무료 체험판을 제공하며, 일부 제한이 있는 전체 기능을 사용할 수 있습니다:
+Aspose.Email은 제한이 있는 무료 체험판을 제공하며, 전체 기능을 사용할 수 있습니다.
 
-1. **무료 평가판**: Aspose.Email을 바로 다운로드하여 사용을 시작합니다.
-2. **임시 라이센스**: 웹사이트 안내에 따라 30일 동안 사용할 수 있는 권한을 부여합니다.
-3. **구매**: 제한 없이 사용하려면 구독을 구매해야 합니다.
+1. **Free Trial**: Download and start using Aspose.Email immediately.  
+2. **Temporary License**: Obtain a temporary license for 30 days by following the instructions on their website.  
+3. **Purchase**: For unlimited use without restrictions, consider purchasing a subscription.  
 
-**기본 초기화:**
+**Basic Initialization:**
 
-Java 프로젝트에서 Aspose.Email을 호출하고 설정하는 방법:
+Java 프로젝트에서 Aspose.Email을 초기화하고 설정하는 방법은 다음과 같습니다.
 
 ```java
 // Import necessary Aspose.Email packages
@@ -99,37 +115,37 @@ public class EmailSetup {
 }
 ```
 
-Aspose.Email 설정이 종료되면 Exchange 서버에 연결하고 약속을 시작할 준비가 되는 것입니다.
+Aspose.Email 설정이 완료되면 Exchange 서버에 연결해 일정을 나열할 준비가 된 것입니다.
 
-## 구현 가이드
+## How to Connect to Exchange Java
 
-이 섹션에는 두 가지 핵심 기능을 다뤘습니다: Exchange 서버에 연결하기와 페이지 매김을 지원하는 전문가입니다. 또한 **java 페이지 매김 모범 사례**를 어디에든 적용할 수 있도록 솔루션을 확장할 수 있습니다.
+Exchange 서버에 연결하는 것은 캘린더 데이터를 검색하기 전에 반드시 수행해야 하는 첫 단계입니다. 아래 섹션에서는 **java pagination best practices**를 강조하면서 정확한 코드를 단계별로 안내합니다.
 
-### Exchange 서버에 연결
+### Connect to Exchange Server
 
-#### 개요
-EWS(Exchange Web Services) 서버에 연결하면 서버에 저장된 이메일 데이터를 프로그래밍 방식으로 처리할 수 있습니다. 이메일을 관리해야 하는 작업에 종사합니다.
+#### Overview
+Exchange Web Services (EWS) 서버에 연결하면 서버에 저장된 이메일 데이터를 프로그래밍 방식으로 조작할 수 있습니다. 이는 이메일 관리 작업을 자동화해야 하는 애플리케이션에 필수적입니다.
 
-#### 단계별 구현
+#### Step-by-Step Implementation
 
-##### 1단계: 필수 패키지 가져오기
-먼저 Aspose.Email 패키지를 임포트해야 합니다:
+##### Step 1: Import Required Packages
+먼저 필요한 Aspose.Email 패키지를 임포트합니다:
 
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 ```
 
-##### 2단계: 연결 설정
-자격 증명을 사용해 Exchange 서버에 연결하려면 `IEWSClient` 인스턴스를 생성합니다:
+##### Step 2: Establish Connection
+자격 증명을 사용해 `IEWSClient` 인스턴스를 생성하고 Exchange 서버에 연결합니다:
 
 ```java
 // Replace with your actual domain, username, and password
 IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
 ```
 
-##### 3단계: 클라이언트 처리
-사용이 끝난 후에는 `dispose()` 메서드를 호출해 리소스를 해제합니다:
+##### Step 3: Dispose of the Client
+사용이 끝난 후에는 `dispose()` 메서드로 리소스를 해제합니다:
 
 ```java
 if (client != null) {
@@ -137,19 +153,19 @@ if (client != null) {
 }
 ```
 
-**매개변수 및 구성**
-- **교환 URL** – 서버 주소.
-- **사용자 이름 및 비밀번호** – 인증된 사용 자격을 증명합니다.
+**Parameters and Configurations**
+- **Exchange URL** – 서버 주소.  
+- **Username & Password** – 인증에 필요한 자격 증명.  
 
-### 페이징 지원으로 약속 나열
+### List Appointments with Paging Support
 
-#### 개요
-여러 개의 항목을 한 번에 가져오면 메모리와 캡슐화될 수 있습니다. 페이지 매김은 데이터를 관리하는 청크로 분할 **java 페이지 매기기 모범 사례**의 핵심 요소입니다.
+#### Overview
+수천 개의 캘린더 항목을 한 번에 가져오면 메모리와 네트워크 대역폭이 압도될 수 있습니다. 페이지네이션은 데이터를 관리 가능한 청크로 나누어 **java pagination best practices**의 핵심이 됩니다.
 
-#### 단계별 구현
+#### Step-by-Step Implementation
 
-##### 1단계: 필수 패키지 가져오기
-페이지 매김 관련 클래스를 사용할 수 있도록 임포트합니다:
+##### Step 1: Import Required Packages
+페이지네이션 관련 클래스를 사용 가능하도록 임포트합니다:
 
 ```java
 import com.aspose.email.AppointmentPageInfo;
@@ -157,7 +173,7 @@ import com.aspose.email.IEWSClient;
 import com.aspose.email.system.collections.generic.List;
 ```
 
-##### 2단계: EWS 클라이언트 초기화 및 페이징 매개변수 정의
+##### Step 2: Initialize EWS Client and Define Paging Parameters
 Exchange 서버에 연결한 뒤, 시나리오에 맞는 **items per page java** 값을 설정합니다:
 
 ```java
@@ -168,7 +184,7 @@ try {
     List<AppointmentPageInfo> pages = new List<>();
 ```
 
-##### 3단계: 페이지 검색 및 처리
+##### Step 3: Retrieve and Process Pages
 마지막 페이지에 도달할 때까지 루프를 사용해 각 페이지를 가져옵니다:
 
 ```java
@@ -185,8 +201,8 @@ while (!pagedAppointmentCol.getLastPage()) {
 }
 ```
 
-##### 4단계: 고객 처리
-`finally` 블록에서 클라이언트 리소스를 해제하여 정리 작업을 보장합니다:
+##### Step 4: Dispose of the Client
+`finally` 블록에서 클라이언트 리소스를 해제하여 반드시 정리하도록 합니다:
 
 ```java
 } finally {
@@ -195,64 +211,65 @@ while (!pagedAppointmentCol.getLastPage()) {
 }
 ```
 
-**주요 구성 옵션**
-- **페이지당 항목 수** – 데이터 크기와 성능 목표에 따라 조정합니다.
-- **페이지 오프셋** – 루프가 자동으로 처리되므로 평범하게 수동 설정이 필요하지 않습니다.
+**Key Configuration Options**
+- **Items per Page** – 데이터 규모와 성능 목표에 따라 조정합니다.  
+- **Page Offset** – 루프가 자동으로 관리하므로 보통 수동 설정이 필요 없습니다.
 
-## 문제 해결 팁
+## Common Pitfalls and Tips
 
-- Exchange 서버 URL을 사용자 이름 및 선택하지 않고 확인하시기 바랍니다.
-- 네트워크 연결(방화벽, VPN 등) EWS 끝점에 대한 구별을 확인합니다.
-- `IOException` 또는 `ServiceException`을 처리 처리하도록 try‑catch 블록으로 호출을 포장합니다.
+- **Choosing the right page size** – 너무 작은 값(예: 1–5)은 라운드‑트립 횟수를 늘리고, 너무 큰 값(예: >500)은 메모리 급증을 초래할 수 있습니다. 50–200 사이로 시작하고 지연 시간 측정 결과에 따라 조정하세요.  
+- **Never forget to dispose** – `dispose()`를 호출하지 않으면 HTTP 연결이 남아 풀을 고갈시킬 수 있습니다.  
+- **Handle exceptions gracefully** – `listAppointmentsByPage` 호출을 `IOException` 또는 `ServiceException`에 대한 try‑catch 블록으로 감싸서 갑작스러운 크래시를 방지합니다.  
+- **Reuse the client when possible** – 페이지마다 새로운 `IEWSClient`를 생성하면 불필요한 오버헤드가 발생합니다.  
 
-## 실제 적용
+## Practical Applications
 
-페이지 매김된 상황 목록은 다양한 실제 시나리오에서 유용합니다:
+페이지네이션된 일정 목록은 다양한 실제 시나리오에서 유용합니다:
 
-1. **기업 이메일 관리** – 같이 정리하거나 정리할 수 있습니다.
-2. **고객 지원 시스템** – UI 없이 지원 케이스를 추적합니다.
-3. **자원 예약 플랫폼** – 추가 또는 장비 가용성을 페이지에 표시합니다.
+1. **Corporate Email Management** – 대량 캘린더 정리 또는 보고 자동화.  
+2. **Customer Support Systems** – UI를 과부하시키지 않고 지원 티켓 일정을 추적.  
+3. **Resource Booking Platforms** – 회의실 또는 장비 가용성을 페이지별로 표시.  
 
-## 성능 고려 사항
+## Performance Considerations
 
 Aspose.Email을 Java와 함께 최대한 활용하려면:
 
-- **페이징 최적화** – 라운드트립 지연 시간과 메모리 사이의 균형을 맞추는 `itemsPerPage` 값을 선택합니다.
-- **메모리 관리** – `IEWSClient`를 대신하여 즉시 떠나드립니다.
-- **연결 풀링** – 단일 클라이언트를 재사용할 수 있는 경우 다양한 작업을 수행합니다.
+- **Optimize Paging** – 라운드‑트립 지연 시간과 메모리 사용량 사이의 균형을 맞추는 `itemsPerPage` 값을 선택합니다.  
+- **Memory Management** – `IEWSClient` 인스턴스를 즉시 해제합니다.  
+- **Connection Pooling** – 가능한 경우 단일 클라이언트를 재사용합니다.  
 
-## 결론
+## Conclusion
 
-이 튜토리얼을 통해 Aspose.Email for Java를 사용하여 Exchange 서버에 연결하고 페이지 매김을 통해 이벤트를 검색하면서 **java 페이지 매기기 모범 사례**를 적용하는 방법을 배웠습니다. 이 접근 방식은 주최측 데이터셋을 처리하고 인력을 유지하는 데에 있습니다.
+이 튜토리얼을 통해 Aspose.Email for Java를 사용해 Exchange 서버에 연결하고 페이지네이션을 적용해 일정을 조회하는 **java pagination best practices**를 익혔습니다. 대용량 데이터셋을 효율적으로 처리하고 애플리케이션 응답성을 유지하는 데 필수적인 접근 방식입니다.
 
-### 다음 단계
-- 이메일 전송, 리그, MIME 파싱 등 Aspose.Email의 다른 기능을 검사하세요.
-- 환경에 맞는 환경의 `itemsPerPage` 값을 찾기 위해 다양한 값을 실험해 보세요.
+### Next Steps
+- 이메일 전송, 폴더 동기화, MIME 파싱 등 Aspose.Email의 다른 기능을 탐색해 보세요.  
+- 다양한 `itemsPerPage` 값을 실험해 환경에 가장 적합한 설정을 찾아보세요.  
 
-새로운 기술을 실제 Java 프로젝트에 적용하려면? 오늘 바로 구현해 보세요!
+새로운 기술을 실제 Java 프로젝트에 적용해 보시겠습니까? 오늘 바로 구현해 보세요!
 
-## FAQ 섹션
+## FAQ Section
 
-**Q: Java를 위한 Aspose.Email은 모든 Exchange 서버 버전에서 사용할 수 있습니까?**
-A: 네, Aspose.Email은 다양한 Exchange 버전을 지원합니다. 서버 URL과 자격 증명을 입력하면 됩니다.
+**Q: Can I use Aspose.Email for Java with any Exchange server version?**  
+A: Yes, Aspose.Email supports a wide range of Exchange versions. Just ensure the server URL and credentials are correct.
 
-**Q: 페이지에 오신 것을 환영합니다 검색의 장점은 무엇입니까?**
-A: 페이지 매김은 메모리 분리를 통해 응답 시간을 개선하며 UI 그리드나 표시에 데이터를 표시하기 쉽게 해줍니다.
+**Q: What are the benefits of using paginated appointments retrieval?**  
+A: Pagination reduces memory consumption, improves response times, and makes it easier to display data in UI grids or reports.
 
-**Q: 적절한 “페이지당 항목 수 java” 값은 어떻게 작동할까요?**
-A: 일반 작업량에서는 페이지당 50–200개의 항목을 시작점으로 삼고, 계속 지속이 낮고 메모리가 충분하면 값을 늘립니다.
+**Q: How do I decide the right “items per page java” value?**  
+A: Start with 50–200 items per page for typical workloads; increase the number if network latency is low and memory is plentiful.
 
-**Q: 권위가 필요한가요?**
-A: 영구 권한을 사용하면 평가 제한이 있어야 하며 배포해야 합니다.
+**Q: Is a license required for production use?**  
+A: A permanent license removes evaluation limits and is required for commercial deployments.
 
-**Q: Aspose.Email이 변신을 자동으로 처리해?**
-A: 네, 약속을 잡는 것은 대체 정보를 포함한 시작/종료 시간을 제공하기 때문에 필요에 따라 변환할 수 있습니다.
+**Q: Does Aspose.Email handle time‑zone conversions automatically?**  
+A: Yes, appointment objects expose start/end times with time‑zone information, which you can convert as needed.
 
 ---
 
-**최종 업데이트:** 2025년 12월 22일
-**테스트 환경:** Aspose.Email for Java 25.4 (jdk16 분류기)
-**개발자:** Aspose 
+**Last Updated:** 2026-02-22  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
