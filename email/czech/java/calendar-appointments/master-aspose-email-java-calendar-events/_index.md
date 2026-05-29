@@ -1,7 +1,7 @@
 ---
-date: '2025-12-24'
-description: Naučte se, jak exportovat kalendář do PST pomocí Aspose.Email pro Java,
-  včetně toho, jak přidávat účastníky, nastavit počáteční a koncová data a efektivně
+date: '2026-02-24'
+description: Naučte se, jak exportovat kalendář do PST pomocí Aspose.Email pro Javu,
+  včetně toho, jak přidat účastníky, nastavit počáteční a koncové datum a čas a efektivně
   spravovat schůzky.
 keywords:
 - Aspose.Email Java Calendar Events
@@ -18,33 +18,33 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Export kalendáře do PST s Aspose.Email pro Java
+# Export kalendáře do PST pomocí Aspose.Email pro Java
 
-Efektivní **export kalendáře do PST** je častý požadavek při tvorbě Java aplikací, které potřebují sdílet plánovací data s Outlookem nebo jinými Microsoft produkty. V tomto tutoriálu uvidíte přesně, jak vytvořit schůzky, přidat účastníky, definovat datum a čas začátku a konce a nakonec vše uložit do souboru PST – vše pomocí Aspose.Email pro Java.
+Pokud vytváříte Java aplikaci, která potřebuje sdílet plánovací data s Outlookem, často budete potřebovat **exportovat kalendář do PST**. V tomto tutoriálu projdeme vše, co potřebujete – od vytvoření jednoduché schůzky po přidání účastníků a nakonec zápis událostí do souboru PST, vše pomocí Aspose.Email pro Java.
 
 ## Rychlé odpovědi
-- **Jaký je hlavní cíl?** Export událostí kalendáře do souboru PST.  
-- **Která knihovna je vyžadována?** Aspose.Email pro Java (v25.4+).  
-- **Potřebuji licenci?** Ano, platná licence Aspose.Email odstraňuje omezení evaluační verze.  
-- **Mohu přidávat účastníky?** Rozhodně – použijte `MapiRecipientCollection`.  
+- **Jaký je hlavní cíl?** Exportovat události kalendáře do souboru PST.  
+- **Která knihovna je vyžadována?** Aspose.Email for Java (v25.4+).  
+- **Potřebuji licenci?** Ano, platná licence Aspose.Email odstraňuje omezení hodnocení.  
+- **Mohu přidat účastníky?** Rozhodně – použijte `MapiRecipientCollection`.  
 - **Jaká verze Javy je podporována?** JDK 16 nebo vyšší.
 
-## Co je **export kalendáře do pst**?
-Export kalendáře do PST znamená převod objektů `MapiCalendar` v paměti do Microsoft Outlook Personal Storage Table (PST). Tento soubor lze otevřít v Outlooku, sdílet s kolegy nebo importovat do jiných systémů, které rozumí formátu PST.
+## Co je **export calendar to pst**?
+Export kalendáře do PST znamená převod objektů `MapiCalendar` v paměti do Microsoft Outlook Personal Storage Table (PST). Výsledný soubor lze otevřít přímo v Outlooku, sdílet s kolegy nebo importovat do libovolného systému, který rozumí formátu PST.
 
 ## Proč použít Aspose.Email pro Java k exportu kalendáře do PST?
-- **Plná podpora MAPI** – vytvářejte, upravujte a ukládejte schůzky bez nutnosti mít nainstalovaný Outlook.  
-- **Cross‑platform** – funguje na Windows, Linuxu i macOS.  
-- **Bohaté API** – spravujte účastníky, opakování, připomenutí a další.  
-- **Optimalizovaný výkon** – zvládá velké objemy událostí s nízkou spotřebou paměti.
+- **Full MAPI support** – vytvářejte, upravujte a ukládejte schůzky bez nutnosti mít nainstalovaný Outlook.  
+- **Cross‑platform** – funguje na Windows, Linuxu a macOS.  
+- **Rich API** – spravujte účastníky, opakování, připomenutí a další.  
+- **Performance‑optimized** – zpracovávejte velké objemy událostí s nízkou spotřebou paměti.
 
-## Předpoklady
-- **Knihovny a závislosti**: Aspose.Email pro Java verze 25.4 nebo novější.  
-- **Prostředí**: JDK 16 nebo vyšší, Maven pro správu závislostí.  
-- **Znalosti**: Základy programování v Javě a orientace v Maven.
+## Požadavky
+- **Libraries & Dependencies**: Aspose.Email for Java verze 25.4 nebo novější.  
+- **Environment**: JDK 16 nebo vyšší, Maven pro správu závislostí.  
+- **Knowledge**: Základní programování v Javě a znalost Maven.
 
 ## Jak nastavit Aspose.Email pro Java
-Přidejte závislost Aspose.Email do svého `pom.xml`:
+Add the Aspose.Email dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -56,18 +56,18 @@ Přidejte závislost Aspose.Email do svého `pom.xml`:
 ```
 
 ### Získání licence
-Odstraňte evaluační omezení Aspose.Email získáním licence:
+Unlock full functionality of Aspose.Email without evaluation limitations by acquiring a license:
 
-1. **Bezplatná zkušební verze**: Navštivte [Aspose download page](https://releases.aspose.com/email/java/) a stáhněte dočasnou licenci.  
-2. **Dočasná licence**: Požádejte o ni na [purchase page](https://purchase.aspose.com/temporary-license/).  
-3. **Koupě licence**: Zvažte nákup na [Aspose's purchase portal](https://purchase.aspose.com/buy) pro dlouhodobé používání.
+1. **Free Trial**: Navštivte [Aspose download page](https://releases.aspose.com/email/java/) pro dočasnou licenci.  
+2. **Temporary License**: Požádejte prostřednictvím [purchase page](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase License**: Zvažte nákup na [Aspose's purchase portal](https://purchase.aspose.com/buy) pro dlouhodobé použití.
 
-Po získání licence ji inicializujte ve své aplikaci, aby byly povoleny všechny funkce.
+Jakmile máte licenci, inicializujte ji ve své aplikaci, aby byly povoleny všechny funkce.
 
 ## Jak **vytvořit schůzku** (Create Calendar Event Java)
 
-### Krok 1: Definujte datum a čas začátku a konce (java calendar start date / java calendar end date)
-Následující metoda ukazuje, jak nastavit datum a čas začátku a konce schůzky a vrátit objekt `MapiCalendar`:
+### Krok 1: Definujte počáteční a koncová data (java calendar start date / java calendar end date)
+The following method shows how to set the start and end dates for an appointment and return a `MapiCalendar` object:
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -92,12 +92,12 @@ public MapiCalendar createAppointment() {
 }
 ```
 
-*Vysvětlení*: Tento úryvek vytváří `MapiCalendar` s konkrétním místem, předmětem, popisem a **java calendar start date** / **java calendar end date**, které jste definovali.
+*Explanation*: Tento úryvek vytváří `MapiCalendar` s konkrétním místem, předmětem, popisem a **java calendar start date** / **java calendar end date**, které jste definovali.
 
-## Jak **přidat účastníky** (how to add attendees)
+## Jak **přidat účastníky** (java add meeting attendees)
 
-### Krok 2: Sestavte seznam účastníků
-Použijte `MapiRecipientCollection` k určení, kdo má obdržet pozvánku na schůzku:
+### Krok 2: Sestavte seznam účastníků
+Use `MapiRecipientCollection` to specify who should receive the meeting invitation:
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -124,12 +124,12 @@ public MapiCalendar createMeetingWithAttendees(Date startDate, Date endDate) {
 }
 ```
 
-*Vysvětlení*: Tento kód vytváří schůzku, nastavuje organizátora a připojuje seznam **how to add attendees**, takže všichni dostanou řádnou pozvánku.
+*Explanation*: Tento kód vytváří schůzku, nastavuje organizátora a připojuje seznam **java add meeting attendees**, aby všichni obdrželi řádnou pozvánku.
 
 ## Jak **exportovat kalendář do pst** (Create PST with calendar events)
 
-### Krok 3: Vytvořte soubor PST a přidejte události
-Níže uvedená metoda demonstruje vytvoření Unicode PST souboru a uložení jak jednoduché schůzky, tak schůzky s účastníky:
+### Krok 3: Vytvořte soubor PST a přidejte události
+The method below demonstrates creating a Unicode PST file and storing both the simple appointment and the meeting with attendees:
 
 ```java
 import com.aspose.email.FileFormatVersion;
@@ -153,48 +153,48 @@ public void createPSTWithCalendarEvents() {
 }
 ```
 
-*Vysvětlení*: Tento úryvek **exports calendar to PST** vytvořením PST kontejneru, přidáním předdefinované složky „Calendar“ a vložením dříve vytvořených objektů `MapiCalendar`.
+*Explanation*: Tento úryvek **exports calendar to PST** vytvořením PST kontejneru, přidáním předdefinované složky „Calendar“ a vložením dříve vytvořených objektů `MapiCalendar`.
 
 ## Praktické aplikace
-1. **Firemní plánování** – automatizujte tvorbu interních schůzek a jejich distribuci.  
-2. **Správa akcí** – sledování konferencí, workshopů a seznamů účastníků.  
-3. **Integrace s CRM** – synchronizace schůzek s nástroji pro řízení vztahů se zákazníky.  
-4. **Projektové plánování** – ukládání milníků projektu jako položek kalendáře.  
-5. **Spolupráce vzdálených týmů** – generování PST souborů pro offline sdílení.
+1. **Business Scheduling** – Automatizujte vytváření a distribuci interních schůzek.  
+2. **Event Management** – Sledujte konference, workshopy a seznamy účastníků.  
+3. **CRM Integration** – Synchronizujte schůzky s nástroji pro řízení vztahů se zákazníky.  
+4. **Project Planning** – Ukládejte milníky projektů jako položky kalendáře.  
+5. **Remote Team Collaboration** – Generujte soubory PST pro offline sdílení.
 
 ## Úvahy o výkonu
-- **Uvolňujte objekty**, které již nepotřebujete, aby se uvolnila paměť.  
-- **Zvolte efektivní kolekce** pro velké seznamy účastníků.  
-- **Cacheujte často přistupované události**, pokud PST dotazujete opakovaně.
+- **Dispose objects** objekty, které již nepotřebujete, aby se uvolnila paměť.  
+- **Choose efficient collections** vyberte efektivní kolekce pro velké seznamy účastníků.  
+- **Cache frequently accessed events** kešujte často přistupované události, pokud opakovaně dotazujete PST.
 
 ## Časté problémy a řešení
-| Problém | Řešení |
+| Issue | Solution |
 |-------|----------|
-| **PST soubor nebyl vytvořen** | Ověřte oprávnění zápisu do cílového adresáře a ujistěte se, že cesta složky existuje. |
-| **Účastníci nedostávají pozvánky** | Zkontrolujte, že každý `MapiRecipient` používá `MapiRecipientType.MAPI_TO` a že e‑mail organizátora je platný. |
-| **Neshoda dat** | Používejte `Calendar` konzistentně pro datum a čas začátku/konce; vyhněte se míchání `java.util.Date` s jinými knihovnami bez konverze. |
+| **PST file nebyl vytvořen** | Ověřte oprávnění k zápisu do cílového adresáře a ujistěte se, že cesta ke složce existuje. |
+| **Účastníci nedostávají pozvánky** | Potvrďte, že každý `MapiRecipient` používá `MapiRecipientType.MAPI_TO` a že e‑mail organizátora je platný. |
+| **Neshoda dat** | Používejte `Calendar` konzistentně pro počáteční a koncová data; vyhněte se míchání `java.util.Date` s jinými knihovnami dat bez konverze. |
 
 ## Často kladené otázky
 
 **Q: Jak začít s Aspose.Email pro Java?**  
-A: Přidejte Maven závislost uvedenou výše, získejte licenci a postupujte podle kroků v tomto průvodci k vytvoření a exportu událostí kalendáře.
+A: Přidejte Maven závislost uvedenou výše, získejte licenci a postupujte podle kroků v tomto průvodci k vytvoření a exportu kalendářních událostí.
 
-**Q: Můžu si přizpůsobit název a umístění PST souboru?**  
-A: Ano, změňte proměnnou `pstFilePath` v metodě `createPSTWithCalendarEvents()` na libovolnou platnou cestu ve vašem systému.
+**Q: Mohu přizpůsobit název a umístění souboru PST?**  
+A: Ano, změňte proměnnou `pstFilePath` ve funkci `createPSTWithCalendarEvents()` na libovolnou platnou cestu ve vašem systému.
 
-**Q: Lze přidat opakování událostí?**  
-A: Rozhodně – `MapiCalendar` nabízí vlastnosti opakování jako `RecurrencePattern`, které můžete nastavit před uložením.
+**Q: Je možné přidat opakování k schůzkám?**  
+A: Rozhodně – `MapiCalendar` poskytuje vlastnosti opakování jako `RecurrencePattern`, které můžete před uložením nakonfigurovat.
 
-**Q: Podporuje Aspose.Email i jiné formáty kalendářů kromě PST?**  
+**Q: Podporuje Aspose.Email jiné formáty kalendářů kromě PST?**  
 A: Ano, můžete exportovat do iCalendar (`.ics`) a dalších formátů pomocí odpovídajících metod API.
 
 **Q: Jaká je maximální velikost PST souboru, který mohu vytvořit?**  
-A: S Unicode formátem (`FileFormatVersion.Unicode`) mohou PST soubory růst až do 2 TB, omezené jen volným místem na disku.
+A: Při použití Unicode formátu (`FileFormatVersion.Unicode`) mohou soubory PST růst až do 2 TB, omezeno pouze dostupným místem na disku.
 
 ---
 
-**Poslední aktualizace:** 2025-12-24  
-**Testováno s:** Aspose.Email pro Java 25.4 (jdk16 classifier)  
+**Poslední aktualizace:** 2026-02-24  
+**Testováno s:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
