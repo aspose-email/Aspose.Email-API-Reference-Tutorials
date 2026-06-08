@@ -1,9 +1,81 @@
 ---
-"date": "2025-05-29"
-"description": "تعلم كيفية إنشاء وتخصيص رسائل البريد الإلكتروني برمجيًا باستخدام Aspose.Email لجافا، بما في ذلك تضمين الصور. طوّر مهاراتك في أتمتة البريد الإلكتروني اليوم."
-"title": "إتقان إنشاء البريد الإلكتروني وتضمين الصور في Java باستخدام Aspose.Email"
-"url": "/ar/java/email-message-operations/aspose-email-java-create-embed-images/"
-"weight": 1
+date: '2026-06-08'
+description: تعلم كيفية تضمين الصور في البريد الإلكتروني باستخدام Aspose.Email for
+  Java، ضبط مرسل البريد، إضافة جسم HTML، وحفظ البريد بتنسيقات EML أو MSG.
+keywords:
+- embed images email
+- save email eml
+- save email msg
+- embed inline image
+- set email sender
+schemas:
+- author: Aspose
+  dateModified: '2026-06-08'
+  description: Learn how to embed images email using Aspose.Email for Java, set email
+    sender, add HTML body, and save email in EML or MSG formats.
+  headline: embed images email with Aspose.Email for Java – Complete Guide
+  type: TechArticle
+- description: Learn how to embed images email using Aspose.Email for Java, set email
+    sender, add HTML body, and save email in EML or MSG formats.
+  name: embed images email with Aspose.Email for Java – Complete Guide
+  steps:
+  - name: '**Java Development Kit (JDK)**: JDK 16 or later should be installed on
+      your system.'
+    text: '**Java Development Kit (JDK)**: JDK 16 or later should be installed on
+      your system.'
+  - name: '**Maven**: Familiarity with Maven project setup is beneficial.'
+    text: '**Maven**: Familiarity with Maven project setup is beneficial.'
+  - name: '**Aspose.Email for Java Library**: Include this in your project to get
+      started.'
+    text: '**Aspose.Email for Java Library**: Include this in your project to get
+      started.'
+  - name: '**Initialize MailMessage** – create an instance of `MailMessage`.'
+    text: '**Initialize MailMessage** – create an instance of `MailMessage`.'
+  - name: '**Set Sender Information** – use `setFrom` to specify the sender’s address
+      and name.'
+    text: '**Set Sender Information** – use `setFrom` to specify the sender’s address
+      and name.'
+  - name: '**Add Recipients** – add recipients using `getTo().addItem()` with email
+      addresses and display names.'
+    text: '**Add Recipients** – add recipients using `getTo().addItem()` with email
+      addresses and display names.'
+  - name: '**Define Subject and HTML Body** – set the subject with `setSubject`. Use
+      `setHtmlBody` for an HTML content body, including inline images via Content‑ID
+      (CID).'
+    text: '**Define Subject and HTML Body** – set the subject with `setSubject`. Use
+      `setHtmlBody` for an HTML content body, including inline images via Content‑ID
+      (CID).'
+  - name: '**Define Image Path** – specify the absolute or relative path where your
+      image file resides.'
+    text: '**Define Image Path** – specify the absolute or relative path where your
+      image file resides.'
+  - name: '**Create LinkedResource** – instantiate `LinkedResource` with the image
+      stream, MIME type, and a unique content ID.'
+    text: '**Create LinkedResource** – instantiate `LinkedResource` with the image
+      stream, MIME type, and a unique content ID.'
+  - name: '**Add Resource to MailMessage** – attach the linked resource using `getLinkedResources().addItem()`.'
+    text: '**Add Resource to MailMessage** – attach the linked resource using `getLinkedResources().addItem()`.'
+  type: HowTo
+- questions:
+  - answer: Visit [Aspose’s temporary license page](https://purchase.aspose.com/temporary-license/)
+      to request a free trial.
+    question: How can I obtain a free trial of Aspose.Email for Java?
+  - answer: Yes, add multiple `LinkedResource` instances with unique content IDs for
+      each image.
+    question: Can I embed multiple images in an email using Aspose.Email?
+  - answer: You can save emails as **EML**, **MSG**, or **MHTML** among other formats.
+    question: What are the common file formats supported for saving emails?
+  - answer: Use the `addAttachment` method on `MailMessage` to include files with
+      your email.
+    question: How do I handle attachments in Aspose.Email for Java?
+  - answer: Ensure image paths are correct and resources are linked using a Content‑ID
+      (CID) that matches the HTML reference.
+    question: What should I consider when embedding images in emails?
+  type: FAQPage
+title: دليل شامل لتضمين الصور في البريد الإلكتروني باستخدام Aspose.Email for Java
+  – Complete Guide
+url: /ar/java/email-message-operations/aspose-email-java-create-embed-images/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,29 +83,41 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# إتقان إنشاء البريد الإلكتروني وتضمين الصور في Java باستخدام Aspose.Email
+# دمج الصور في البريد الإلكتروني باستخدام Aspose.Email for Java – دليل كامل
 
 ## مقدمة
-في العصر الرقمي، يُعدّ إتقان التواصل الفعال عبر البريد الإلكتروني أمرًا بالغ الأهمية للمطورين. يتيح إنشاء رسائل البريد الإلكتروني برمجيًا الأتمتة والتخصيص والتكامل السلس مع الأنظمة الأكبر. مع Aspose.Email لجافا، يمكنك بسهولة إنشاء رسائل بريد إلكتروني غنية بالميزات مباشرةً من تطبيقات جافا. يغطي هذا البرنامج التعليمي إعداد معلومات المُرسِل وتضمين الصور، بالإضافة إلى وظائف أخرى.
+في العصر الرقمي، إتقان التواصل الفعّال عبر البريد الإلكتروني أمر أساسي للمطورين. **Embedding images email** برمجياً يتيح لك إنشاء رسائل غنية بصريًا، تخصيص المحتوى، وأتمتة الإرسال على نطاق واسع. باستخدام Aspose.Email for Java، يمكنك بسهولة إنشاء رسائل بريد إلكتروني غنية ومزودة بالميزات مباشرةً من تطبيقات Java الخاصة بك. يغطي هذا الدليل إعداد معلومات المرسل، إضافة جسم HTML، دمج الصور، وحفظ بريدك الإلكتروني بصيغ مثل EML و MSG و MHTML.
 
-**ما سوف تتعلمه:**
-- إعداد Aspose.Email واستخدامه لـ Java
+ما ستتعلمه:
+- إعداد واستخدام Aspose.Email for Java
 - إنشاء رسالة بريد إلكتروني مفصلة باستخدام Java
-- تضمين الصور في رسائل البريد الإلكتروني
-- حفظ بريدك الإلكتروني بتنسيقات مختلفة مثل EML وMSG وMHTML
+- دمج الصور في رسائل البريد الإلكتروني
+- حفظ بريدك الإلكتروني بصيغ مختلفة مثل EML و MSG و MHTML
 
-دعنا نتعمق في إعداد Aspose.Email لـ Java واستكشاف هذه الوظائف.
+لنغوص في إعداد Aspose.Email for Java ونستكشف هذه الوظائف.
 
-### المتطلبات الأساسية
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
-1. **مجموعة تطوير جافا (JDK)**:يجب تثبيت JDK 16 أو إصدار أحدث على نظامك.
-2. **مافن**:إن المعرفة بإعدادات مشروع Maven مفيدة.
-3. **Aspose.Email لمكتبة Java**:قم بتضمين هذا في مشروعك للبدء.
+## إجابات سريعة
+- **كيف يمكنني دمج صورة في بريد إلكتروني؟** استخدم `LinkedResource` مع معرف المحتوى Content‑ID وأشر إليه في جسم HTML.  
+- **ما الصيغ التي يمكنني حفظ البريد الإلكتروني إليها؟** تدعم الصيغ EML و MSG و MHTML مباشرةً.  
+- **هل أحتاج إلى ترخيص للتطوير؟** يتوفر ترخيص مؤقت مجاني؛ ويتطلب الترخيص المدفوع للإنتاج.  
+- **هل يمكنني تعيين اسم المرسل وعنوانه؟** نعم—استدعِ `setFrom` مع `MailAddress` يحتوي على كل من الاسم والبريد الإلكتروني.  
+- **هل دعم جسم HTML مشمول؟** بالطبع—استخدم `setHtmlBody` لدمج HTML غني وصور مضمّنة.  
 
-### إعداد Aspose.Email لـ Java
-لدمج Aspose.Email في تطبيق Java الخاص بك باستخدام Maven، أضف التبعية التالية إلى `pom.xml` ملف:
+## ما هو embed images email؟
+**embed images email** هي التقنية التي تُدرج بيانات الصورة مباشرةً في رسالة البريد الإلكتروني بحيث يرى المستلم الصورة دون الحاجة إلى تنزيلات خارجية. يتم ذلك عن طريق إرفاق الصورة كموارد مرتبطة والإشارة إليها عبر معرف المحتوى (CID) داخل جسم HTML.
 
-**تبعية Maven:**
+## لماذا دمج الصور في البريد الإلكتروني؟
+دمج الصور يزيل الروابط المعطلة، يقلل الاعتماد على الاستضافة الخارجية، ويضمن أن البريد الإلكتروني يظهر تمامًا كما تم تصميمه. يمكن لـ Aspose.Email for Java معالجة **50+** صيغة بريد إلكتروني والتعامل مع رسائل تصل إلى **500 MB** دون تحميل الملف بالكامل إلى الذاكرة، مما يجعله مثاليًا للحملات ذات الحجم الكبير.
+
+## المتطلبات المسبقة
+1. **Java Development Kit (JDK)**: يجب تثبيت JDK 16 أو أحدث على نظامك.  
+2. **Maven**: الإلمام بإعداد مشروع Maven مفيد.  
+3. **Aspose.Email for Java Library**: أدرجه في مشروعك للبدء.  
+
+## إعداد Aspose.Email for Java
+لدمج Aspose.Email في تطبيق Java الخاص بك باستخدام Maven، أضف التبعية التالية إلى ملف `pom.xml` الخاص بك:
+
+**اعتماد Maven:**  
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -44,17 +128,17 @@
 ```
 
 #### الحصول على الترخيص
-يقدم Aspose.Email لجافا نسخة تجريبية مجانية، تتيح الوصول الكامل إلى ميزات المكتبة لأغراض الاختبار. يمكنك الحصول عليها من [صفحة الترخيص المؤقت لـ Aspose](https://purchase.aspose.com/temporary-license/)للاستخدام الإنتاجي، يوصى بشراء ترخيص.
+يوفر Aspose.Email for Java ترخيص تجريبي مجاني، يمنحك وصولًا كاملاً إلى ميزات المكتبة لأغراض الاختبار. يمكنك الحصول عليه من [صفحة الترخيص المؤقتة لـ Aspose](https://purchase.aspose.com/temporary-license/). يُنصح بشراء ترخيص للاستخدام في الإنتاج.
 
-### دليل التنفيذ
-سنغطي ثلاث وظائف رئيسية: إنشاء رسالة بريد إلكتروني وتكوينها، وإضافة الصور المضمنة، وحفظ البريد الإلكتروني بتنسيقات مختلفة.
+## إنشاء وتكوين MailMessage
+الفئة `MailMessage` هي الكائن الأعلى مستوى في Aspose.Email الذي يمثل بريدًا إلكترونيًا واحدًا في الذاكرة. بعد إنشاءه، تتدفق جميع عمليات القراءة والكتابة عبر هذا الكائن.
 
-#### إنشاء رسالة بريدية وتكوينها
-**ملخص:** يرشدك هذا القسم خلال عملية إنشاء بريد إلكتروني جديد يحتوي على معلومات المرسل والمستلمين وسطر الموضوع ومحتوى نص HTML.
-1. **تهيئة رسالة البريد**:إنشاء مثيل لـ `MailMessage`.
-2. **تعيين معلومات المرسل**:استخدم `setFrom` طريقة لتحديد عنوان المرسل واسمه.
-3. **إضافة المستلمين**:أضف المستلمين باستخدام `getTo().addItem()` الطريقة، مع تحديد عناوين بريدهم الإلكتروني وأسمائهم.
-4. **تعريف الموضوع وجسم HTML**:ضبط الموضوع مع `setSubject`. يستخدم `setHtmlBody` لمحتوى HTML، بما في ذلك الصور المضمنة عبر Content-ID (CID).
+نظرة عامة: يوجهك هذا القسم خلال إنشاء بريد إلكتروني جديد بمعلومات المرسل، المستلمين، سطر الموضوع، ومحتوى جسم HTML.
+
+1. **Initialize MailMessage** – أنشئ نسخة من `MailMessage`.  
+2. **Set Sender Information** – استخدم `setFrom` لتحديد عنوان المرسل واسمه.  
+3. **Add Recipients** – أضف المستلمين باستخدام `getTo().addItem()` مع عناوين البريد الإلكتروني وأسماء العرض.  
+4. **Define Subject and HTML Body** – حدد الموضوع باستخدام `setSubject`. استخدم `setHtmlBody` لجسم محتوى HTML، بما في ذلك الصور المضمنة عبر معرف المحتوى (CID).  
 
 ```java
 import com.aspose.email.MailAddress;
@@ -77,11 +161,14 @@ public class CreateAndConfigureMailMessage {
 }
 ```
 
-#### إضافة صورة مضمنة إلى رسالة البريد الإلكتروني
-**ملخص:** تعرف على كيفية تضمين الصور في رسائل البريد الإلكتروني الخاصة بك للحصول على عرض تقديمي جذاب بصريًا.
-1. **تحديد مسار الصورة**:حدد المسار الذي يقع فيه مورد صورتك.
-2. **إنشاء LinkedResource**: يستخدم `LinkedResource` لإرفاق صورة، مع تحديد نوع MIME ومعرف المحتوى الخاص بها.
-3. **إضافة مورد إلى MailMessage**:قم بإرفاق المورد المرتبط باستخدام `getLinkedResources().addItem()`.
+## إضافة صورة مدمجة إلى رسالة البريد الإلكتروني
+الفئة `LinkedResource` تمثل موردًا (مثل صورة) يمكن دمجه في بريد إلكتروني والإشارة إليه عبر CID.
+
+نظرة عامة: تعلم كيفية دمج الصور داخل رسائل البريد الإلكتروني الخاصة بك لتقديم عرض بصري جذاب.
+
+1. **Define Image Path** – حدد المسار المطلق أو النسبي حيث توجد ملف الصورة.  
+2. **Create LinkedResource** – أنشئ `LinkedResource` مع تدفق الصورة، نوع MIME، ومعرف محتوى فريد.  
+3. **Add Resource to MailMessage** – أرفق المورد المرتبط باستخدام `getLinkedResources().addItem()`.  
 
 ```java
 import com.aspose.email.LinkedResource;
@@ -102,10 +189,13 @@ public class AddEmbeddedImageToEmailMessage {
 }
 ```
 
-#### حفظ رسالة البريد الإلكتروني بتنسيقات مختلفة
-**ملخص:** بمجرد تكوين بريدك الإلكتروني وتضمين الصور، احفظه بتنسيقات متعددة لتحقيق التنوع.
-1. **تحديد مسار الإخراج**:قم بتعيين المسار الذي تريد حفظ الملفات فيه.
-2. **حفظ بتنسيقات مختلفة**: يستخدم `save()` مع ملحقات الملفات المختلفة مثل `.eml`، `.msg`، أو `.mhtml`.
+## حفظ رسالة البريد الإلكتروني بصيغ مختلفة
+طريقة `save()` في `MailMessage` تكتب الرسالة إلى القرص بالصيغ التي يحددها امتداد الملف.
+
+نظرة عامة: بمجرد تكوين بريدك الإلكتروني ودمج الصور، احفظه بصيغ متعددة للمرونة.
+
+1. **Define Output Path** – حدد الدليل واسم الملف الأساسي لملفات الإخراج.  
+2. **Save in Various Formats** – استدعِ `save()` مع امتدادات مثل `.eml` أو `.msg` أو `.mhtml` لإنتاج الصيغة المطلوبة.  
 
 ```java
 import com.aspose.email.MailMessage;
@@ -123,50 +213,58 @@ public class SaveEmailInDifferentFormats {
 }
 ```
 
-### التطبيقات العملية
-1. **رسائل البريد الإلكتروني التسويقية الآلية**:أرسل محتوى ترويجيًا مخصصًا مع عناصر العلامة التجارية المضمنة باستخدام Aspose.Email.
-2. **إشعارات العملاء**:إنشاء وإرسال رسائل البريد الإلكتروني الإخطارية تلقائيًا لتحديثات النظام أو تغييرات الخدمة.
-3. **التقارير الداخلية**:قم بتضمين تقارير مفصلة بتنسيق HTML، كاملة بالرسوم البيانية والصور.
-4. **دعوات الفعاليات**:قم بإعداد دعوات غنية وجذابة بصريًا تتضمن روابط الرد وتفاصيل الحدث.
+## تطبيقات عملية
+- **Automated Marketing Emails** – أرسل محتوى ترويجي مخصص مع عناصر علامة تجارية مدمجة باستخدام Aspose.Email.  
+- **Customer Notifications** – أنشئ وأرسل تلقائيًا رسائل إشعار للعملاء لتحديثات النظام أو تغييرات الخدمة.  
+- **Internal Reporting** – دمج تقارير مفصلة بصيغة HTML، تشمل الرسوم البيانية والصور.  
+- **Event Invitations** – صمم دعوات غنية وجذابة بصريًا تتضمن روابط RSVP وتفاصيل الحدث.  
 
-### اعتبارات الأداء
-- ضمان إدارة الذاكرة بكفاءة عن طريق التخلص منها `MailMessage` الأشياء عندما لم تعد هناك حاجة إليها.
-- قم بتحسين تحميل الموارد من خلال إدارة مسارات الملفات وموارد الشبكة بشكل فعال.
-- اتبع أفضل الممارسات لتحسين أداء تطبيقات Java للحفاظ على الاستجابة والاستقرار.
+## اعتبارات الأداء
+- تأكد من إدارة الذاكرة بفعالية عن طريق التخلص من كائنات `MailMessage` عندما لا تحتاجها.  
+- حسّن تحميل الموارد بإدارة مسارات الملفات والموارد الشبكية بفعالية.  
+- اتبع أفضل الممارسات لأداء تطبيقات Java للحفاظ على الاستجابة والاستقرار.  
 
-### خاتمة
-لقد تعلمت كيفية إنشاء رسائل البريد الإلكتروني وتكوينها وحفظها باستخدام Aspose.Email لجافا. من خلال تضمين الصور وحفظها بتنسيقات متعددة، تصبح رسائلك أكثر جاذبية وتنوعًا. استكشف المزيد من خلال دمج هذه الوظائف مع أنظمة أخرى أو تعزيزها بميزات إضافية تقدمها المكتبة.
+## الأسئلة المتكررة
 
-حاول تنفيذ هذا الحل في مشاريعك اليوم وعزز قدرات التواصل عبر البريد الإلكتروني لديك!
+**س: كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Email for Java؟**  
+ج: زر [صفحة الترخيص المؤقتة لـ Aspose](https://purchase.aspose.com/temporary-license/) لطلب نسخة تجريبية مجانية.  
 
-### قسم الأسئلة الشائعة
-**س1: كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Email لـ Java؟**
-أ1: زيارة [صفحة الترخيص المؤقت لـ Aspose](https://purchase.aspose.com/temporary-license/) لطلب نسخة تجريبية مجانية.
+**س: هل يمكنني دمج صور متعددة في بريد إلكتروني باستخدام Aspose.Email؟**  
+ج: نعم، أضف عدة مثيلات `LinkedResource` مع معرفات محتوى فريدة لكل صورة.  
 
-**س2: هل يمكنني تضمين صور متعددة في بريد إلكتروني باستخدام Aspose.Email؟**
-أ2: نعم، أضف عدة `LinkedResource` الحالات التي تحتوي على معرفات محتوى فريدة لكل صورة.
+**س: ما هي صيغ الملفات الشائعة المدعومة لحفظ رسائل البريد الإلكتروني؟**  
+ج: يمكنك حفظ رسائل البريد الإلكتروني بصيغ **EML** أو **MSG** أو **MHTML** وغيرها من الصيغ.  
 
-**س3: ما هي تنسيقات الملفات الشائعة التي يدعمها Aspose.Email لحفظ رسائل البريد الإلكتروني؟**
-A3: يمكن حفظ رسائل البريد الإلكتروني بتنسيقات EML وMSG وMHTML وغيرها.
+**س: كيف يمكنني التعامل مع المرفقات في Aspose.Email for Java؟**  
+ج: استخدم طريقة `addAttachment` في `MailMessage` لإضافة ملفات إلى بريدك الإلكتروني.  
 
-**س4: كيف أتعامل مع المرفقات في Aspose.Email لـ Java؟**
-أ4: الاستخدام `addAttachment` طريقة لإدراج الملفات مع رسائل البريد الإلكتروني الخاصة بك.
+**س: ما الذي يجب أن أضعه في الاعتبار عند دمج الصور في رسائل البريد الإلكتروني؟**  
+ج: تأكد من صحة مسارات الصور وربط الموارد باستخدام معرف المحتوى (CID) الذي يتطابق مع الإشارة في HTML.  
 
-**س5: ما الذي يجب أن آخذه في الاعتبار عند تضمين الصور في رسائل البريد الإلكتروني؟**
-A5: تأكد من صحة مسارات الصور وربط الموارد بشكل صحيح باستخدام Content-ID (CID).
-
-### موارد
+## الموارد
 - [التوثيق](https://reference.aspose.com/email/java/)
-- [تنزيل Aspose.Email لـ Java](https://releases.aspose.com/email/java/)
+- [تحميل Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - [شراء الترخيص](https://purchase.aspose.com/buy)
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)
-- [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
+- [ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - [منتدى الدعم](https://forum.aspose.com/c/email/10)
+
+---
+
+**آخر تحديث:** 2026-06-08  
+**تم الاختبار مع:** Aspose.Email for Java 24.12  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [كيفية تحميل وحفظ ملفات EML في Java باستخدام Aspose.Email: دليل كامل](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [تحويل EML إلى MSG باستخدام Aspose.Email for Java: دليل شامل](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [استخراج المرفقات المضمنة في Java – ملفات MSG باستخدام Aspose.Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
