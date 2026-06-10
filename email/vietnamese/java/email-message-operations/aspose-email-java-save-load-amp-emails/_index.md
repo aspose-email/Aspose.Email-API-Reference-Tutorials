@@ -152,6 +152,11 @@ Bạn đã nắm vững cách **tạo email AMP tương tác**, lưu chúng và 
 - [Đăng ký Giấy Phép Tạm Thời](https://purchase.aspose.com/temporary-license/)
 - [Diễn đàn Hỗ trợ Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Cập nhật lần cuối:** 2026-01-27  
+**Đã kiểm tra với:** Aspose.Email cho Java 25.4  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -159,8 +164,3 @@ Bạn đã nắm vững cách **tạo email AMP tương tác**, lưu chúng và 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Cập nhật lần cuối:** 2026-01-27  
-**Đã kiểm tra với:** Aspose.Email cho Java 25.4  
-**Tác giả:** Aspose

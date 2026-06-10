@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **المعالجة الدفعية للبريد الإلكتروني:** كرّر عبر مجموعة من الملفات أو استخدم تدفقات Java لمعالجة آلاف الرسائل بكفاءة.  
 - **اختيار خيارات التحميل المناسبة:** فعّل فقط الميزات التي تحتاجها (مثلاً تجنّب `preserveTnefAttachments` إذا لم يكن مطلوبًا) للحفاظ على سرعة التحميل.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-01-27  
-**تم الاختبار مع:** Aspose.Email للـ Java 25.4 (JDK 16)  
-**المؤلف:** Aspose  
-
 ## الأسئلة المتكررة
 
 **س:** *هل يمكنني استخدام هذه الأساليب لتحميل دفعة كبيرة من ملفات EML؟*  
@@ -218,3 +204,18 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **س:** *هل يمكنني قراءة رسائل مشفرة أو محمية بكلمة مرور؟*  
 **ج:** نعم. استخدم النسخة المناسبة من `MailMessage.load` التي تقبل معامل كلمة المرور.
+
+
+---
+
+**آخر تحديث:** 2026-01-27  
+**تم الاختبار مع:** Aspose.Email للـ Java 25.4 (JDK 16)  
+**المؤلف:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

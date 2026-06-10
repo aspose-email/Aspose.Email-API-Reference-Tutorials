@@ -192,6 +192,13 @@ subfolder.moveContents(deletedItems);
 **س7: كيف يمكنني التحقق من نجاح عملية النقل؟**  
 ج7: بعد استدعاء `moveItem` أو `moveSubfolders`، استعلم عن المجلد الوجهة باستخدام `getContents()` أو `getSubFolders()` لتأكيد وجود العناصر المنقولة.
 
+## الموارد
+- **الوثائق**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **التنزيل**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **الشراء**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **التجربة المجانية**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **الترخيص المؤقت**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **آخر تحديث:** 2026-01-27  
@@ -205,10 +212,3 @@ subfolder.moveContents(deletedItems);
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## الموارد
-- **الوثائق**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **التنزيل**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **الشراء**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **التجربة المجانية**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **الترخيص المؤقت**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Επεξεργασία Email σε Παρτίδες:** Επανάληψη σε συλλογή αρχείων ή χρήση Java streams για επεξεργασία χιλιάδων μηνυμάτων αποδοτικά.  
 - **Επιλογή Κατάλληλων Επιλογών Φόρτωσης:** Ενεργοποιήστε μόνο τις λειτουργίες που χρειάζεστε (π.χ. αποφύγετε το `preserveTnefAttachments` αν δεν είναι απαραίτητο) για γρήγορη φόρτωση.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-01-27  
-**Δοκιμάστηκε Με:** Aspose.Email for Java 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose  
-
 ## Συχνές Ερωτήσεις
 
 **Ε:** *Μπορώ να χρησιμοποιήσω αυτές τις μεθόδους για τη φόρτωση μεγάλου αριθμού αρχείων EML;*  
@@ -218,3 +204,18 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Ε:** *Μπορώ να διαβάσω κρυπτογραφημένα ή προστατευμένα με κωδικό πρόσβασης email;*  
 **Α:** Ναι. Χρησιμοποιήστε την κατάλληλη υπερφόρτωση του `MailMessage.load` που δέχεται παράμετρο κωδικού πρόσβασης.
+
+---
+
+**Τελευταία Ενημέρωση:** 2026-01-27  
+**Δοκιμάστηκε Με:** Aspose.Email for Java 25.4 (JDK 16)  
+**Συγγραφέας:** Aspose  
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

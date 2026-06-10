@@ -187,20 +187,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **批量邮件处理：** 循环遍历文件集合或使用 Java 流高效处理成千上万的邮件。  
 - **选择合适的加载选项：** 仅启用必要功能（例如不需要时避免 `preserveTnefAttachments`），以保持加载速度。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**最近更新：** 2026-01-27  
-**测试环境：** Aspose.Email for Java 25.4 (JDK 16)  
-**作者：** Aspose  
-
 ## 常见问题
 
 **问：** *我可以使用这些方法批量加载大量 EML 文件吗？*  
@@ -218,4 +204,19 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 **问：** *我能读取加密或受密码保护的邮件吗？*  
 **答：** 可以。使用接受密码参数的 `MailMessage.load` 重载方法即可。
 
+
 ---
+
+**最近更新：** 2026-01-27  
+**测试环境：** Aspose.Email for Java 25.4 (JDK 16)  
+**作者：** Aspose  
+
+---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

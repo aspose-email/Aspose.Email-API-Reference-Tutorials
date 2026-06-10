@@ -192,6 +192,13 @@ A6: Evet, `PersonalStorage.fromFile` çağrısı sırasında şifreyi sağlayara
 **Q7: Taşıma işleminin başarılı olduğunu nasıl doğrularım?**  
 A7: `moveItem` veya `moveSubfolders` çağrısından sonra, hedef klasörü `getContents()` veya `getSubFolders()` ile sorgulayarak taşınan öğelerin varlığını doğrulayabilirsiniz.
 
+## Kaynaklar
+- **Dokümantasyon**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **İndirme**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Satın Alma**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Geçici Lisans**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Son Güncelleme:** 2026-01-27  
@@ -205,10 +212,3 @@ A7: `moveItem` veya `moveSubfolders` çağrısından sonra, hedef klasörü `get
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Kaynaklar
-- **Dokümantasyon**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **İndirme**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Satın Alma**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Ücretsiz Deneme**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Geçici Lisans**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

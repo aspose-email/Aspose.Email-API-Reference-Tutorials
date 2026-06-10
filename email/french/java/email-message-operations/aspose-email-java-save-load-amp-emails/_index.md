@@ -152,6 +152,11 @@ Pour poursuivre votre exploration, envisagez d’intégrer d’autres fonctionna
 - [Temporary License Application](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**Dernière mise à jour**: 2026-01-27  
+**Testé avec**: Aspose.Email for Java 25.4  
+**Auteur**: Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -159,8 +164,3 @@ Pour poursuivre votre exploration, envisagez d’intégrer d’autres fonctionna
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Dernière mise à jour**: 2026-01-27  
-**Testé avec**: Aspose.Email for Java 25.4  
-**Auteur**: Aspose

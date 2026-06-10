@@ -191,6 +191,13 @@ A6: ใช่, คุณสามารถเปิด PST ที่เข้า
 **Q7: ฉันจะตรวจสอบว่าการย้ายสำเร็จหรือไม่?**  
 A7: หลังจากเรียก `moveItem` หรือ `moveSubfolders` ให้สอบถามโฟลเดอร์ปลายทางด้วย `getContents()` หรือ `getSubFolders()` เพื่อตรวจสอบว่ามีรายการที่ย้ายอยู่.
 
+## แหล่งข้อมูล
+- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 **Last Updated:** 2026-01-27  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
@@ -203,10 +210,3 @@ A7: หลังจากเรียก `moveItem` หรือ `moveSubfolders
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## แหล่งข้อมูล
-- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

@@ -192,6 +192,13 @@ A6: Sim, você pode abrir PSTs criptografados fornecendo a senha ao chamar `Pers
 **Q7: Como posso verificar se uma operação de mover foi bem‑sucedida?**  
 A7: Após chamar `moveItem` ou `moveSubfolders`, consulte a pasta de destino com `getContents()` ou `getSubFolders()` para confirmar a presença dos itens movidos.
 
+## Recursos
+- **Documentação**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Compra**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Teste Gratuito**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Licença Temporária**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Última Atualização:** 2026-01-27  
@@ -205,10 +212,3 @@ A7: Após chamar `moveItem` ou `moveSubfolders`, consulte a pasta de destino com
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Recursos
-- **Documentação**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Compra**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Teste Gratuito**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Licença Temporária**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

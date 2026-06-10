@@ -191,6 +191,13 @@ A6: Ja, je kunt versleutelde PST‑bestanden openen door het wachtwoord mee te g
 **V7: Hoe kan ik verifiëren dat een verplaatsingsactie geslaagd is?**  
 A7: Na het aanroepen van `moveItem` of `moveSubfolders`, vraag je de doelmap op met `getContents()` of `getSubFolders()` om de aanwezigheid van de verplaatste items te bevestigen.
 
+## Bronnen
+- **Documentatie**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Aankoop**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Gratis proefversie**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Tijdelijke licentie**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Laatst bijgewerkt:** 2026-01-27  
@@ -204,10 +211,3 @@ A7: Na het aanroepen van `moveItem` of `moveSubfolders`, vraag je de doelmap op 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Bronnen
-- **Documentatie**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Aankoop**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Gratis proefversie**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Tijdelijke licentie**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

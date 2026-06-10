@@ -190,11 +190,18 @@ A6: Có, bạn có thể mở các PST được mã hoá bằng cách cung cấp
 **Q7: Làm sao để xác nhận một thao tác di chuyển đã thành công?**  
 A7: Sau khi gọi `moveItem` hoặc `moveSubfolders`, truy vấn thư mục đích bằng `getContents()` hoặc `getSubFolders()` để kiểm tra sự hiện diện của các mục đã di chuyển.
 
+## Tài nguyên
+- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
-Cập nhật lần cuối: 2026-01-27  
-Được kiểm tra với: Aspose.Email for Java 25.4 (JDK 16)  
-Tác giả: Aspose  
+**Cập nhật lần cuối**: 2026-01-27  
+**Được kiểm tra với**: Aspose.Email for Java 25.4 (JDK 16)  
+**Tác giả**: Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -203,10 +210,3 @@ Tác giả: Aspose
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Tài nguyên
-- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

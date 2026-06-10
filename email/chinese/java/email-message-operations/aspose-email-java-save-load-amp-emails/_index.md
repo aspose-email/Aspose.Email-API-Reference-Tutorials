@@ -154,6 +154,11 @@ if (savedMsg instanceof AmpMessage) {
 - [临时许可证申请](https://purchase.aspose.com/temporary-license/)
 - [Aspose 支持论坛](https://forum.aspose.com/c/email/10)
 
+---
+**最后更新：** 2026-01-27  
+**测试环境：** Aspose.Email for Java 25.4  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -161,8 +166,3 @@ if (savedMsg instanceof AmpMessage) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**最后更新：** 2026-01-27  
-**测试环境：** Aspose.Email for Java 25.4  
-**作者：** Aspose

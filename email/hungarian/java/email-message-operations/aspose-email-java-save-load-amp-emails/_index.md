@@ -152,6 +152,11 @@ A további felfedezéshez fontolja meg az Aspose.Email egyéb funkcióinak integ
 - [Ideiglenes licenc kérelmezése](https://purchase.aspose.com/temporary-license/)
 - [Aspose támogatási fórum](https://forum.aspose.com/c/email/10)
 
+---
+**Utolsó frissítés:** 2026-01-27  
+**Tesztelve ezzel:** Aspose.Email for Java 25.4  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -159,8 +164,3 @@ A további felfedezéshez fontolja meg az Aspose.Email egyéb funkcióinak integ
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Utolsó frissítés:** 2026-01-27  
-**Tesztelve ezzel:** Aspose.Email for Java 25.4  
-**Szerző:** Aspose

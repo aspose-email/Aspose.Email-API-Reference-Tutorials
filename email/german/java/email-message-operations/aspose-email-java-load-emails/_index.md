@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Stapel‑E‑Mail‑Verarbeitung:** Durchlaufen einer Dateisammlung oder Verwendung von Java‑Streams, um tausende Nachrichten effizient zu verarbeiten.  
 - **Geeignete Ladeoptionen wählen:** Nur benötigte Funktionen aktivieren (z. B. `preserveTnefAttachments` vermeiden, wenn nicht nötig), um das Laden schnell zu halten.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## Häufig gestellte Fragen
 
 **Q:** *Kann ich diese Methoden verwenden, um eine große Menge von EML‑Dateien zu laden?*  
@@ -218,3 +204,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *Kann ich verschlüsselte oder passwortgeschützte E‑Mails lesen?*  
 **A:** Ja. Verwenden Sie die entsprechende Überladung von `MailMessage.load`, die einen Passwort‑Parameter akzeptiert.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

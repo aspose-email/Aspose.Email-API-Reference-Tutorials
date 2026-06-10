@@ -152,6 +152,11 @@ if (savedMsg instanceof AmpMessage) {
 - [Заявка на временную лицензию](https://purchase.aspose.com/temporary-license/)
 - [Форум поддержки Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Последнее обновление:** 2026-01-27  
+**Тестировано с:** Aspose.Email for Java 25.4  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -159,8 +164,3 @@ if (savedMsg instanceof AmpMessage) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Последнее обновление:** 2026-01-27  
-**Тестировано с:** Aspose.Email for Java 25.4  
-**Автор:** Aspose

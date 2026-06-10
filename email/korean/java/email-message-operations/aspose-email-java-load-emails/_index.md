@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **배치 이메일 처리:** 파일 컬렉션을 루프하거나 Java 스트림을 사용해 수천 개의 메시지를 효율적으로 처리합니다.  
 - **적절한 로드 옵션 선택:** 필요한 기능만 활성화합니다(예: 필요하지 않다면 `preserveTnefAttachments`를 비활성화)하여 로드 속도를 유지합니다.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## 자주 묻는 질문
 
 **Q:** *Can I use these methods to load a large batch of EML files?*  
@@ -218,3 +204,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *Can I read encrypted or password‑protected emails?*  
 **A:** 예. 비밀번호 매개변수를 받는 `MailMessage.load`의 적절한 오버로드를 사용하면 암호화된 이메일을 읽을 수 있습니다.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

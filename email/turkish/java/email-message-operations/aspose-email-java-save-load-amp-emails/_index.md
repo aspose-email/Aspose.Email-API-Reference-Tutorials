@@ -151,6 +151,11 @@ Keşfetmeye devam etmek için Aspose.Email'ın diğer özelliklerini entegre etm
 - [Geçici Lisans Başvurusu](https://purchase.aspose.com/temporary-license/)
 - [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
 
+---
+**Son Güncelleme:** 2026-01-27  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -158,8 +163,3 @@ Keşfetmeye devam etmek için Aspose.Email'ın diğer özelliklerini entegre etm
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Son Güncelleme:** 2026-01-27  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4  
-**Yazar:** Aspose

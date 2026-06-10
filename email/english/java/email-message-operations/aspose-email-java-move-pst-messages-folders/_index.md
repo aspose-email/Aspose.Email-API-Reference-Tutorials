@@ -191,6 +191,13 @@ A6: Yes, you can open encrypted PSTs by supplying the password when calling `Per
 **Q7: How can I verify that a move operation succeeded?**  
 A7: After calling `moveItem` or `moveSubfolders`, query the destination folder with `getContents()` or `getSubFolders()` to confirm the presence of the moved items.
 
+## Resources
+- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Last Updated:** 2026-01-27  
@@ -204,10 +211,3 @@ A7: After calling `moveItem` or `moveSubfolders`, query the destination folder w
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Resources
-- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

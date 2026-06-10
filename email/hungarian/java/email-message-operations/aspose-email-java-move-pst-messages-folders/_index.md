@@ -192,6 +192,13 @@ A6: Igen, a titkosított PST‑ket megnyithatja a jelszó megadásával a `Perso
 **Q7: Hogyan ellenőrizhetem, hogy a mozgatási művelet sikeres volt?**  
 A7: A `moveItem` vagy `moveSubfolders` hívása után kérdezze le a célmappát a `getContents()` vagy `getSubFolders()` segítségével, hogy megerősítse a mozgatott elemek jelenlétét.
 
+## Erőforrások
+- **Dokumentáció**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Letöltés**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Vásárlás**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Ingyenes próba**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Ideiglenes licenc**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Utolsó frissítés:** 2026-01-27  
@@ -205,10 +212,3 @@ A7: A `moveItem` vagy `moveSubfolders` hívása után kérdezze le a célmappát
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Erőforrások
-- **Dokumentáció**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Letöltés**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Vásárlás**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Ingyenes próba**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Ideiglenes licenc**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

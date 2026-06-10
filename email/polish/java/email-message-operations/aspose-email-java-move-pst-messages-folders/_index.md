@@ -17,34 +17,34 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mistrzowskie zarządzanie pocztą e‑mail przy użyciu Aspose.Email Java: Przenoszenie folderów i wiadomości PST
+# Mistrzowskie zarządzanie e-mailem przy użyciu Aspose.Email Java: Przenoszenie folderów i wiadomości PST
 
-Efektywne zarządzanie pocztą e‑mail jest kluczowe, szczególnie przy obsłudze dużych ilości danych w plikach PST programu Outlook. W tym przewodniku pokażemy **jak przenieść pst** foldery i wiadomości programowo przy użyciu Aspose.Email dla Javy, abyś mógł utrzymać skrzynki pocztowe w porządku i zautomatyzować zadania migracji.
+Efektywne zarządzanie e-mailem jest kluczowe, szczególnie przy dużych ilościach danych w plikach PST programu Outlook. W tym przewodniku przesyłki **jak pst** foldery i wiadomości programowo przy użyciu Aspose.Email dla Javy, każda inna skrzynka pocztowa w porządku i zautomatyzować zadanie zadanie.
 
-## Quick Answers
-- **Jakiej biblioteki użyto?** Aspose.Email for Java  
-- **Czy mogę przenosić zarówno foldery, jak i pojedyncze wiadomości?** Tak, przy użyciu interfejsów API `moveItem` i `moveSubfolders`  
-- **Czy potrzebna jest licencja do produkcji?** Wymagana jest ważna licencja Aspose do użytku komercyjnego  
-- **Jaka wersja Javy jest zalecana?** Java 16 lub nowsza  
-- **Czy dołączony jest przykładowy plik PST?** Użyj dowolnego pliku PST wygenerowanego przez Outlook do testów  
+## Szybkie odpowiedzi
+- **Jakiej biblioteki użyźnia?** Aspose.Email dla Java
+- **Czy można przenosić oba foldery, jak i wysyłać wiadomości?** Tak, przy użyciu interfejsów API `moveItem` i `moveSubfolders`
+- **Czy jest to licencja do produkcji?** Wymagana jest ważna licencja do użytku komercyjnego
+- **Jaka wersja Javy jest zalecana?** Java16 lub nowsza
+- **Czy jest zainstalowany przykładowy plik PST?** Użyj dowolnego pliku PST wygenerowanego przez Outlook do testów
 
-## What is “how to move pst” in the context of Java development?
-Przenoszenie danych PST oznacza programowe przenoszenie folderów lub elementów e‑mail wewnątrz pliku Personal Storage Table (PST). Jest to przydatne przy masowym czyszczeniu, archiwizacji lub migracji zawartości między magazynami poczty bez ręcznej interakcji z Outlookiem.
+## Co to jest „jak przenieść pst” w kontekście programowania w Javie?
+Przenoszenie danych PST oznacza programowe przenoszenie folderów lub elementów e-mail wewnątrz pliku Personal Storage Table (PST). Jest to rozwiązanie przy masowym czyszczeniu, archiwizacji lub zawartości zawartości między magazynami bez dostępu ręcznego z Outlookiem.
 
-## Why use Aspose.Email for Java to move PST data?
-- **Brak zależności od Outlooka** – działa na każdej platformie z środowiskiem uruchomieniowym Javy.  
-- **Pełne API PST** – obsługuje tworzenie folderów, ich usuwanie oraz przenoszenie elementów.  
-- **Wysoka wydajność** – zoptymalizowane pod kątem dużych skrzynek pocztowych.  
-- **Solidna obsługa błędów** – szczegółowe wyjątki pomagają szybko diagnozować problemy.
+## Po co używać Aspose.Email dla Java do przenoszenia danych PST?
+- **Brak zależności od Outlooka** – działa na każdej instalacji z urządzeniem uruchamiającym Javy.
+- **Pełne API PST** – obsługa tworzenia folderów, ich usuwania oraz przenoszenia elementów.
+- **Wysoka wydajność** – strumień pod dużym skrzynek pocztowych.
+- **Solidna obsługa błędów** – szczegółowe wyjątki, które szybko diagnozują problemy.
 
-## Prerequisites
-- **Aspose.Email for Java** (najnowsza wersja)  
-- **JDK 16+** (lub nowszy)  
-- System budowania Maven lub Gradle  
-- Przykładowy plik `.pst` do testów  
+## Warunki wstępne
+- **Aspose.Email dla Java** (najnowsza wersja)
+- **JDK 16+** (lub nowszy)
+- System mocowania Maven lub Gradle
+- Przykładowy plik `.pst` do testów
 
-## Setting Up Aspose.Email for Java
-Aby używać Aspose.Email, dołącz go do swojego projektu. Jeśli używasz Maven, dodaj następującą zależność do pliku `pom.xml`:
+## Konfigurowanie Aspose.Email dla Java
+Aby być członkiem Aspose.Email, dołącz go do swojego projektu. Jeśli wystąpi Maven, dodaj następującą przyczynę do pliku `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -53,13 +53,13 @@ Aby używać Aspose.Email, dołącz go do swojego projektu. Jeśli używasz Mave
     <classifier>jdk16</classifier>
 </dependency>
 ```
-### License Acquisition Steps
-1. **Bezpłatna wersja próbna** – rozpocznij od bezpłatnej wersji próbnej, aby wypróbować funkcje Aspose.Email.  
-2. **Licencja tymczasowa** – uzyskaj tymczasową licencję na dłuższe użycie ze [strony Aspose](https://purchase.aspose.com/temporary-license/).  
-3. **Zakup** – rozważ zakup pełnej licencji, jeśli biblioteka spełnia Twoje potrzeby produkcyjne.  
+### Kroki nabycia licencji
+1. **Bezpłatna wersja próbna** – rozpocznij od bezpłatnej wersji próbnej, aby uzyskać funkcje Aspose.Email.
+2. **Licencja tymczasowa** – daje tymczasową przerwę na pozostałości ze [strony Aspose](https://purchase.aspose.com/temporary-license/).
+3. **Zakup** – rozszerzenie pełnej wersji, jeśli biblioteka spełnia Twoje potrzeby produkcyjne.
 
-### Basic Initialization and Setup
-Upewnij się, że biblioteka jest prawidłowo odwoływana w konfiguracji projektu, aby rozpocząć pracę z plikami PST:
+### Podstawowa inicjalizacja i konfiguracja
+zadziała, że ​​biblioteka jest prawidłowo odwoływana w konfiguracji projektu, aby zapewnić zastosowanie z plikami PST:
 ```java
 import com.aspose.email.PersonalStorage;
 import com.aspose.email.StandardIpmFolder;
@@ -67,135 +67,140 @@ import com.aspose.email.StandardIpmFolder;
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/test.pst");
 ```
 
-## How to Move PST Folders and Messages
-Poniżej znajdują się podstawowe operacje, które musisz znać, gdy chcesz **jak przenieść pst** elementy efektywnie.
+## Jak przenosić foldery i wiadomości PST
+Poniżej znajdują się podstawowe operacje, które musisz znać, gdy chcesz **jak korzystać z pst** elementów.
 
-### Initialize and Access PST File
-**Przegląd**: Dowiedz się, jak zainicjować plik PST i uzyskać dostęp do jego predefiniowanych folderów, takich jak Skrzynka odbiorcza i Elementy usunięte.  
+### Zainicjuj i uzyskaj dostęp do pliku PST
+**Przegląd**: Dowiedz się, jak udostępnić plik PST i uzyskać dostęp do jego predefiniowanych folderów, takich jak Skrzynka odbiorcza i elementy usunięte.
 
-#### Step 1: Load the PST File
+#### Krok 1: Załaduj plik PST
 ```java
 PersonalStorage pst = PersonalStorage.fromFile("YOUR_DOCUMENT_DIRECTORY/test.pst");
 ```
 
-#### Step 2: Access Predefined Folders
-- **Folder Skrzynka odbiorcza**:
+#### Krok 2: Dostęp do predefiniowanych folderów
+- **Folder Skrzynki odbiorczej**:
     ```java
     FolderInfo inbox = pst.getPredefinedFolder(StandardIpmFolder.Inbox);
     ```
+
 - **Folder Elementy usunięte**:
     ```java
     FolderInfo deletedItems = pst.getPredefinedFolder(StandardIpmFolder.DeletedItems);
     ```
 
-### Move a Subfolder to Another Folder in PST
-**Przegląd**: Przenieś cały podfolder z jednego folderu do drugiego w pliku PST.
+### Przenoszenie podfolderu do innego folderu w pliku PST
 
-#### Step 1: Access Source and Destination Folders
+**Omówienie**: Przenieś cały podfolder z jednego folderu do drugiego w pliku PST.
+
+#### Krok 1: Dostęp do folderów źródłowych i docelowych
 ```java
 FolderInfo inbox = pst.getPredefinedFolder(StandardIpmFolder.Inbox);
 FolderInfo deletedItems = pst.getPredefinedFolder(StandardIpmFolder.DeletedItems);
 ```
 
-#### Step 2: Get a Specific Subfolder from the Inbox
+#### Krok 2: Pobieranie określonego podfolderu ze skrzynki odbiorczej
 ```java
 FolderInfo subfolder = inbox.getSubFolder("Subfolder");
 ```
 
-#### Step 3: Move the Entire Subfolder
+#### Krok 3: Przenoszenie całego podfolderu
 ```java
 pst.moveItem(subfolder, deletedItems);
 ```
 
-### Move Individual Messages Between Folders in PST
-**Przegląd**: Przenieś pojedyncze wiadomości e‑mail z jednego folderu do drugiego.
+### Przenoszenie pojedynczych wiadomości między folderami w pliku PST
 
-#### Step 1: Retrieve Messages from a Specific Subfolder
+**Przegląd**: Przenoszenie pojedynczych wiadomości e-mail z jednego folderu do drugiego.
+
+#### Krok 1: Pobieranie wiadomości z określonego podfolderu
 ```java
 FolderInfo subfolder = inbox.getSubFolder("Subfolder");
 MessageInfoCollection contents = subfolder.getContents();
 ```
 
-#### Step 2: Move the First Message to Deleted Items Folder
+#### Krok 2: Przenoszenie pierwszej wiadomości do folderu Elementy usunięte
 ```java
 pst.moveItem(contents.get_Item(0), deletedItems);
 ```
 
-### Move All Subfolders From One Folder to Another in PST
-**Przegląd**: Przenieś wszystkie podfoldery ze źródłowego folderu (np. Skrzynka odbiorcza) do folderu docelowego (np. Elementy usunięte).
+### Przenieś wszystkie podfoldery z jednego folderu do innego w pliku PST
 
-#### Step 1: Access Source and Destination Folders
+**Przegląd**: Przenoszenie wszystkich podfolderów z folderu źródłowego (np. Skrzynki odbiorczej) do folderu docelowego (np. Elementy usunięte).
+
+#### Krok 1: Dostęp do folderów źródłowych i docelowych
 ```java
 FolderInfo inbox = pst.getPredefinedFolder(StandardIpmFolder.Inbox);
 FolderInfo deletedItems = pst.getPredefinedFolder(StandardIpmFolder.DeletedItems);
 ```
 
-#### Step 2: Move All Subfolders
+#### Krok 2: Przenoszenie wszystkich podfolderów
 ```java
 inbox.moveSubfolders(deletedItems);
 ```
 
-### Move All Contents of a Subfolder to Another Folder in PST
-**Przegląd**: Przenieś wszystkie wiadomości znajdujące się w podfolderze do innego folderu.
+### Przenieś całą zawartość podfolderu do innego folderu w PST
 
-#### Step 1: Access Source and Destination Folders
+**Przegląd**: Przenoszenie wszystkich wiadomości z podfolderu do innego folderu.
+
+#### Krok 1: Dostęp do folderów źródłowych i docelowych
 ```java
 FolderInfo inbox = pst.getPredefinedFolder(StandardIpmFolder.Inbox);
 FolderInfo deletedItems = pst.getPredefinedFolder(StandardIpmFolder.DeletedItems);
 ```
 
-#### Step 2: Get a Specific Subfolder from the Inbox
+#### Krok 2: Pobieranie określonego podfolderu ze skrzynki odbiorczej
 ```java
 FolderInfo subfolder = inbox.getSubFolder("Subfolder");
 ```
 
-#### Step 3: Move All Contents of the Subfolder
+#### Krok 3: Przenoszenie całej zawartości podfolderu
 ```java
 subfolder.moveContents(deletedItems);
 ```
 
-## Practical Applications
-Przenoszenie folderów i wiadomości PST może być przydatne w następujących scenariuszach:
-- **Migracja danych** – przejście z Outlooka na inny system pocztowy.  
-- **Archiwizacja e‑mail** – systematyczne organizowanie starszych wiadomości w folderach archiwalnych.  
-- **Operacje czyszczenia** – odgracanie skrzynek odbiorczych poprzez przenoszenie przestarzałych elementów.
+## Praktyczne zastosowania
+Przeniesienie folderów i wiadomości PST może zostać uruchomione w scenariuszu:
+- **Migracja danych** – przejście z Outlooka na inny system pocztowy.
+- **Archiwizacja e-mail** – brakuje organizowania starszych wiadomości w folderach archiwalnych.
+- **Operacje jasne** – odgracanie skrzynek odbiorczych poprzez przenoszenie przestarzałych elementów.
 
-## Performance Considerations
-Podczas pracy z plikami PST przy użyciu Aspose.Email w Javie, pamiętaj o następujących wskazówkach:
-- **Optymalizacja użycia zasobów** – zamykaj obiekty `PersonalStorage` niezwłocznie (try‑with‑resources lub jawne `dispose`).  
-- **Zarządzanie pamięcią** – unikaj ładowania całych dużych folderów do pamięci; przetwarzaj elementy w partiach.  
+## Względy wydajności
+Podczas pracy z plikami PST przy użyciu Aspose.Email w Javie, błąd o wskazówkach:
+- **Optymalizacja użycia zasobów** – zamknięcie obiektów `PersonalStorage` zasobów (try-with-resources lub jawne `dispose`).
+- **Zarządzanie pamięcią** – unikaj ładowania całych dużych folderów do pamięci; elementy funkcjonalne w częściach.
 
-### Best Practices
-- Zawsze zwalniaj zasoby PST po operacjach.  
-- Sprawdzaj istnienie folderu przed próbą przeniesienia, aby uniknąć wyjątków.  
+### Najlepsze praktyki
+- Zawsze uwalniaj pozostałości PST po operacjach.
+- Sprawdzanie istnienia folderu przed próbą przetrwania, aby zapewnić wyjątków.
 
-## Frequently Asked Questions
-**Q1: Czym jest plik PST?**  
-A1: Plik PST (Personal Storage Table) jest używany przez Microsoft Outlook do lokalnego przechowywania wiadomości e‑mail, kontaktów, elementów kalendarza i innych danych.
+## Często zadawane pytania
+**Pyt. 1: Czym jest plik PST?**
+A1: Plik PST (Personal Storage Table) jest używany przez Microsoft Outlook lokalny do przechowywania wiadomości e-mail, urządzeń, elementów kalendarza i innych danych.
 
-**Q2: Czy mogę używać Aspose.Email dla Javy w projektach komercyjnych?**  
-A2: Tak, możesz używać go komercyjnie pod warunkiem posiadania ważnej licencji uzyskanej poprzez [opcje zakupu Aspose](https://purchase.aspose.com/buy).
+**Q2: Czy można zastosować Aspose.Email dla Javy w projektach wykonawczych?**
+A2: Tak, możesz przejść do komercyjnie pod warunkiem posiadania ważnej licencji uzyskanej poprzez [opcje zakupu Aspose](https://purchase.aspose.com/buy).
 
-**Q3: Jak obsługiwać wyjątki podczas pracy z plikami PST przy użyciu Aspose.Email?**  
-A3: Otaczaj kod blokami `try‑catch`, aby przechwycić `IOException`, `InvalidOperationException` lub specyficzne wyjątki Aspose i logować lub ponownie rzucać je w razie potrzeby.
+**Q3: Jak wyjątki podczas pracy z plikami PST przy użyciu Aspose.Email?**
+A3: Otaczaj kod blokami `try-catch`, aby przechwycić `IOException`, `InvalidOperationException` lub wspólne wyjątki Aspose i logować lub ponownie rzucać je w razie potrzeby.
 
-**Q4: Jakie są wymagania systemowe do uruchomienia tego kodu?**  
-A4: Potrzebujesz JDK 16 lub nowszego oraz kompatybilnego IDE, takiego jak IntelliJ IDEA lub Eclipse. Plik JAR Aspose.Email musi być uwzględniony w ścieżce klas projektu.
+**Pyt. 4: Jakie są wymagania systemowe dotyczące uruchomienia tego kodu?**
+A4: następsz JDK16 lub nowszego oraz następującego IDE, jak IntelliJ IDEA lub Eclipse. Plik JAR Aspose.Email musi być zastosowany w ścieżce klasowej projektu.
 
-**Q5: Gdzie mogę znaleźć więcej zasobów dotyczących Aspose.Email dla Javy?**  
-A5: Odwiedź oficjalną dokumentację pod adresem [Aspose Email Java Reference](https://reference.aspose.com/email/java/).
+**Pyt. 5: Gdzie mogę znaleźć więcej zasobów dotyczących Aspose.Email dla Javy?**
+A5: Odwiedź oficjalną lokalizację pod adresem [Aspose Email Java Reference](https://reference.aspose.com/email/java/).
 
-**Q6: Czy Aspose.Email obsługuje pliki PST chronione hasłem?**  
-A6: Tak, możesz otworzyć zaszyfrowane pliki PST, podając hasło podczas wywoływania `PersonalStorage.fromFile`.
+**Pyt. 6: Czy Aspose.Email obsługuje pliki PST chronione hasłem?**
+A6: Tak, możesz otworzyć zaszyfrowane pliki PST, podając hasło podczas wywołania `PersonalStorage.fromFile`.
 
-**Q7: Jak mogę zweryfikować, że operacja przeniesienia zakończyła się sukcesem?**  
-A7: Po wywołaniu `moveItem` lub `moveSubfolders` zapytaj folder docelowy przy użyciu `getContents()` lub `getSubFolders()`, aby potwierdzić obecność przeniesionych elementów.
+**Q7: Jak można zweryfikować, że działanie jest skuteczne?**
+A7: Po wywołaniu `moveItem` lub `moveSubfolders` zapytaniej o folder przy użyciu `getContents()` lub `getSubFolders()`, aby potwierdzić wykorzystanie przeniesionych elementów.
 
 ---
 
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Ostatnia aktualizacja:** 27.01.2026
+**Testowano z:** Aspose.Email dla Java 25.4 (JDK16)
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

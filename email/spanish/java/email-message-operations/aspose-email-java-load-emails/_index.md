@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Procesamiento por lotes de correos:** Recorra una colección de archivos o use streams de Java para procesar miles de mensajes de forma eficiente.  
 - **Seleccione opciones de carga apropiadas:** Active solo las funciones que necesite (p. ej., evite `preserveTnefAttachments` si no es necesario) para mantener la carga rápida.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## Preguntas frecuentes
 
 **Q:** *¿Puedo usar estos métodos para cargar un gran lote de archivos EML?*  
@@ -218,3 +204,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *¿Puedo leer correos encriptados o protegidos con contraseña?*  
 **A:** Sí. Use la sobrecarga adecuada de `MailMessage.load` que acepta un parámetro de contraseña.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

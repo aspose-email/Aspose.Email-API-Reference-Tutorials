@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Batch‑e‑mailverwerking:** Loop door een verzameling bestanden of gebruik Java‑streams om duizenden berichten efficiënt te verwerken.  
 - **Selecteer geschikte laadopties:** Schakel alleen de functies in die je nodig hebt (bijv. vermijd `preserveTnefAttachments` als deze niet vereist is) om de laadtijd snel te houden.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## Veelgestelde vragen
 
 **Q:** *Kan ik deze methoden gebruiken om een grote batch EML‑bestanden te laden?*  
@@ -218,3 +204,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *Kan ik versleutelde of met een wachtwoord beveiligde e‑mails lezen?*  
 **A:** Ja. Gebruik de juiste overload van `MailMessage.load` die een wachtwoordparameter accepteert.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -189,20 +189,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Dávkové zpracování e‑mailů:** Procházejte kolekci souborů nebo použijte Java streamy k efektivnímu zpracování tisíců zpráv.  
 - **Vyberte vhodné možnosti načítání:** Aktivujte pouze funkce, které potřebujete (např. vyhněte se `preserveTnefAttachments`, pokud není vyžadováno), aby načítání bylo rychlé.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## Často kladené otázky
 
 **Q:** *Mohu tyto metody použít k načtení velké dávky souborů EML?*  
@@ -219,3 +205,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *Mohu číst šifrované nebo chráněné heslem e‑maily?*  
 **A:** Ano. Použijte odpovídající přetížení `MailMessage.load`, které přijímá parametr hesla.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

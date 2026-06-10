@@ -191,6 +191,13 @@ R6: Sì, è possibile aprire PST crittografati fornendo la password durante la c
 **D7: Come posso verificare che un'operazione di spostamento sia riuscita?**  
 R7: Dopo aver chiamato `moveItem` o `moveSubfolders`, interroga la cartella di destinazione con `getContents()` o `getSubFolders()` per confermare la presenza degli elementi spostati.
 
+## Risorse
+- **Documentazione**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Acquisto**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Prova gratuita**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Licenza temporanea**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Ultimo aggiornamento:** 2026-01-27  
@@ -204,10 +211,3 @@ R7: Dopo aver chiamato `moveItem` o `moveSubfolders`, interroga la cartella di d
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Risorse
-- **Documentazione**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Acquisto**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Prova gratuita**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Licenza temporanea**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

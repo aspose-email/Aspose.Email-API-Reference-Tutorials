@@ -192,6 +192,13 @@ A6: Ja, du kan öppna krypterade PST‑filer genom att ange lösenordet när du 
 **Q7: Hur kan jag verifiera att en flyttoperation lyckades?**  
 A7: Efter att ha anropat `moveItem` eller `moveSubfolders`, fråga destinationsmappen med `getContents()` eller `getSubFolders()` för att bekräfta att de flyttade objekten finns.
 
+## Resurser
+- **Dokumentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Nedladdning**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Köp**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Gratis provperiod**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Tillfällig licens**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Senast uppdaterad:** 2026-01-27  
@@ -205,10 +212,3 @@ A7: Efter att ha anropat `moveItem` eller `moveSubfolders`, fråga destinationsm
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Resurser
-- **Dokumentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Nedladdning**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Köp**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Gratis provperiod**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Tillfällig licens**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

@@ -188,20 +188,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Toplu E‑posta İşleme:** Binlerce mesajı verimli bir şekilde işlemek için dosya koleksiyonları üzerinde döngü kurun veya Java akışlarını kullanın.  
 - **Uygun Yükleme Seçeneklerini Seçin:** Gereksiz özellikleri (ör. `preserveTnefAttachments`) devre dışı bırakarak yükleme hızını artırın.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-01-27  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
-**Yazar:** Aspose  
-
 ## Sıkça Sorulan Sorular
 
 **S:** *Bu yöntemleri büyük bir EML dosyası topluluğunu yüklemek için kullanabilir miyim?*  
@@ -219,4 +205,19 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 **S:** *Şifreli veya parola korumalı e‑postaları okuyabilir miyim?*  
 **C:** Evet. Parola parametresi kabul eden uygun `MailMessage.load` aşırı yüklemesini kullanın.
 
+
 ---
+
+**Son Güncelleme:** 2026-01-27  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (JDK 16)  
+**Yazar:** Aspose  
+
+---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

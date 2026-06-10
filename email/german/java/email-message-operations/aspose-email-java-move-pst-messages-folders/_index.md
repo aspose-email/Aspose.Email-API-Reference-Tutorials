@@ -192,6 +192,13 @@ A6: Ja, Sie können verschlüsselte PSTs öffnen, indem Sie das Passwort beim Au
 **F7: Wie kann ich prüfen, ob ein Verschiebe‑Vorgang erfolgreich war?**  
 A7: Nach einem Aufruf von `moveItem` oder `moveSubfolders` können Sie den Zielordner mit `getContents()` bzw. `getSubFolders()` abfragen, um das Vorhandensein der verschobenen Elemente zu bestätigen.
 
+## Resources
+- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Last Updated:** 2026-01-27  
@@ -205,10 +212,3 @@ A7: Nach einem Aufruf von `moveItem` oder `moveSubfolders` können Sie den Zielo
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Resources
-- **Documentation**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **Free Trial**: [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

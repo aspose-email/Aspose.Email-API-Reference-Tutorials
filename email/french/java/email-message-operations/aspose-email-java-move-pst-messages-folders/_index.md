@@ -191,6 +191,13 @@ R6 : Oui, vous pouvez ouvrir des PST chiffrés en fournissant le mot de passe 
 **Q7 : Comment vérifier qu’une opération de déplacement a réussi ?**  
 R7 : Après avoir appelé `moveItem` ou `moveSubfolders`, interrogez le dossier de destination avec `getContents()` ou `getSubFolders()` pour confirmer la présence des éléments déplacés.
 
+## Ressources
+- **Documentation** : [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **Téléchargement** : [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Achat** : [Acheter les produits Aspose](https://purchase.aspose.com/buy)
+- **Essai gratuit** : [Essais gratuits Aspose](https://releases.aspose.com/email/java/)
+- **Licence temporaire** : [Obtenir une licence temporaire](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **Dernière mise à jour :** 2026-01-27  
@@ -204,10 +211,3 @@ R7 : Après avoir appelé `moveItem` ou `moveSubfolders`, interrogez le dossie
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## Ressources
-- **Documentation** : [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Téléchargement** : [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Achat** : [Acheter les produits Aspose](https://purchase.aspose.com/buy)
-- **Essai gratuit** : [Essais gratuits Aspose](https://releases.aspose.com/email/java/)
-- **Licence temporaire** : [Obtenir une licence temporaire](https://purchase.aspose.com/temporary-license/)

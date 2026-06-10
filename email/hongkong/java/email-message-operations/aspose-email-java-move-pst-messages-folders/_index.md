@@ -190,6 +190,13 @@ A6: 支援，您可在呼叫 `PersonalStorage.fromFile` 時提供密碼以開啟
 **Q7: 如何驗證搬移操作是否成功？**  
 A7: 呼叫 `moveItem` 或 `moveSubfolders` 後，可使用 `getContents()` 或 `getSubFolders()` 查詢目的資料夾，以確認已搬移項目是否存在。
 
+## 資源
+- **文件**： [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
+- **下載**： [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **購買**： [Buy Aspose Products](https://purchase.aspose.com/buy)
+- **免費試用**： [Aspose Free Trials](https://releases.aspose.com/email/java/)
+- **臨時授權**： [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+
 ---
 
 **最後更新：** 2026-01-27  
@@ -203,10 +210,3 @@ A7: 呼叫 `moveItem` 或 `moveSubfolders` 後，可使用 `getContents()` 或 `
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-## 資源
-- **文件**： [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **下載**： [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **購買**： [Buy Aspose Products](https://purchase.aspose.com/buy)
-- **免費試用**： [Aspose Free Trials](https://releases.aspose.com/email/java/)
-- **臨時授權**： [Get a Temporary License](https://purchase.aspose.com/temporary-license/)

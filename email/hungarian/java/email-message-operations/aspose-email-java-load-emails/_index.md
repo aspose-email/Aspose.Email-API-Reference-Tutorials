@@ -190,20 +190,6 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 - **Kötegelt e‑mail feldolgozás:** Fájlok gyűjteményének bejárása vagy Java streamek használata ezrek üzenetének hatékony feldolgozásához.  
 - **Megfelelő betöltési beállítások kiválasztása:** Csak a szükséges funkciókat engedélyezze (pl. kerüljük a `preserveTnefAttachments` használatát, ha nincs rá szükség), hogy a betöltés gyors maradjon.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-01-27  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
-
 ## Gyakran Ismételt Kérdések
 
 **Q:** *Can I use these methods to load a large batch of EML files?*  
@@ -220,3 +206,17 @@ MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.htm
 
 **Q:** *Can I read encrypted or password‑protected emails?*  
 **A:** Yes. Use the appropriate overload of `MailMessage.load` that accepts a password parameter.
+
+---
+
+**Last Updated:** 2026-01-27  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose  
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
