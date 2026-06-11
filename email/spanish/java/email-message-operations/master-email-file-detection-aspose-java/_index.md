@@ -135,18 +135,6 @@ Al trabajar con Aspose.Email, ten en cuenta estos consejos para optimizar el ren
 | **Licencia no aplicada** | Confirma la ruta del archivo de licencia y que `setLicense` se invoque antes de cualquier uso de la API. |
 | **Formato no soportado** | Consulta la documentación más reciente de Aspose.Email para formatos recién soportados. |
 
-## Sección de preguntas frecuentes
-1. **¿Para qué se usa Aspose.Email para Java?**  
-   - Aspose.Email para Java ayuda a gestionar archivos de correo, permitiendo leer, escribir y convertir entre formatos.  
-2. **¿Cómo comienzo a detectar formatos de archivos de correo?**  
-   - Instala la biblioteca vía Maven, configura tu licencia y usa `FileFormatUtil.detectFileFormat()`.  
-3. **¿Puedo usar Aspose.Email para Java sin comprar una licencia completa?**  
-   - Sí, puedes iniciar con una prueba gratuita o una licencia temporal para explorar las funciones.  
-4. **¿Qué formatos de correo pueden detectarse?**  
-   - Se admiten formatos comunes como MSG y EML, entre otros.  
-5. **¿Cómo ayuda la detección de formato en aplicaciones prácticas?**  
-   - Garantiza la compatibilidad entre sistemas y facilita la migración y el procesamiento de datos.
-
 ## Preguntas frecuentes
 **P: ¿Cómo puedo **read msg file java** usando Aspose.Email?**  
 R: Después de detectar el formato, puedes cargar el archivo MSG con `MailMessage.load(dataDir)` y luego acceder a sus propiedades.
@@ -171,6 +159,12 @@ R: Consulta la documentación oficial enlazada a continuación.
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Última actualización:** 2026-02-27  
+**Probado con:** Aspose.Email para Java 25.4 (jdk16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -178,9 +172,3 @@ R: Consulta la documentación oficial enlazada a continuación.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-02-27  
-**Probado con:** Aspose.Email para Java 25.4 (jdk16)  
-**Autor:** Aspose

@@ -188,6 +188,12 @@ A: Bezoek het [Aspose‑forum](https://forum.aspose.com/c/email/10) om hulp te z
 - **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor volledige toegang.
 - **Ondersteuning:** Krijg hulp via het Aspose‑community‑forum.
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 for Java  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: Bezoek het [Aspose‑forum](https://forum.aspose.com/c/email/10) om hulp te z
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 for Java  
-**Author:** Aspose

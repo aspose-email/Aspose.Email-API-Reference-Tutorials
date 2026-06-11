@@ -188,6 +188,12 @@ A: Truy cập [diễn đàn Aspose](https://forum.aspose.com/c/email/10) để n
 - **Giấy phép tạm thời:** Nhận giấy phép tạm thời để truy cập đầy đủ.
 - **Hỗ trợ:** Nhận trợ giúp từ diễn đàn cộng đồng Aspose.
 
+---
+
+**Cập nhật lần cuối:** 2026-02-27  
+**Kiểm tra với:** Aspose.Email 25.4 cho Java  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: Truy cập [diễn đàn Aspose](https://forum.aspose.com/c/email/10) để n
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2026-02-27  
-**Kiểm tra với:** Aspose.Email 25.4 cho Java  
-**Tác giả:** Aspose

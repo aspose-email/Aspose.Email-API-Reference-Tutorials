@@ -202,6 +202,12 @@ A: Igen, de ügyeljen arra, hogy minden szál saját `MailMessage` példányt ha
 
 Fedezze fel ezeket az erőforrásokat részletesebben, és kérjen segítséget, ha szüksége van rá. Boldog kódolást!
 
+---
+
+**Utolsó frissítés:** 2026-02-27  
+**Tesztelt verzió:** Aspose.Email 25.4 (jdk16 classifier)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -209,9 +215,3 @@ Fedezze fel ezeket az erőforrásokat részletesebben, és kérjen segítséget,
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2026-02-27  
-**Tesztelt verzió:** Aspose.Email 25.4 (jdk16 classifier)  
-**Szerző:** Aspose

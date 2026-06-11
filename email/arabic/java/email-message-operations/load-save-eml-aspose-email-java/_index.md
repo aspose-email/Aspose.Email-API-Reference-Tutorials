@@ -11,11 +11,7 @@ url: /ar/java/email-message-operations/load-save-eml-aspose-email-java/
 weight: 1
 ---
 
-Now produce final output with everything.
-
-Be careful to preserve markdown formatting exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -204,6 +200,12 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 
 استكشف هذه الموارد أكثر وتواصل مع الدعم إذا احتجت. Happy coding!
 
+---
+
+**آخر تحديث:** 2026-02-27  
+**تم الاختبار مع:** Aspose.Email 25.4 (مصنف jdk16)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -211,9 +213,3 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-02-27  
-**تم الاختبار مع:** Aspose.Email 25.4 (مصنف jdk16)  
-**المؤلف:** Aspose

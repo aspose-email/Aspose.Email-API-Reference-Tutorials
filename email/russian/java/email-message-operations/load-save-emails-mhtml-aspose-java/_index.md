@@ -12,14 +12,6 @@ url: /ru/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
- except placeholders. So fine.
-
-We need to translate bullet lists, but keep URLs unchanged.
-
-Also keep markdown links format.
-
-Let's produce.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -217,12 +209,6 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 **В: Как обрабатывать тысячи MSG‑файлов, не исчерпав память?**  
 О: Обрабатывайте файлы пакетами, освобождайте каждый `MailMessage` после сохранения и используйте конструкцию `try‑with‑resources` Java для автоматической очистки.
 
----
-
-**Последнее обновление:** 2026-02-27  
-**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Автор:** Aspose  
-
 ## Ресурсы
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -230,6 +216,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Последнее обновление:** 2026-02-27  
+**Тестировано с:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Автор:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

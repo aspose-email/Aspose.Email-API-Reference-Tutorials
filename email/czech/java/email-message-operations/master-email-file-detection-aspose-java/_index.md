@@ -134,18 +134,6 @@ Při práci s Aspose.Email zvažte následující tipy pro optimalizaci výkonu:
 | **Licence nebyla použita** | Zkontrolujte cestu k licenčnímu souboru a ujistěte se, že `setLicense` je voláno před jakýmkoli použitím API. |
 | **Nepodporovaný formát** | Podívejte se do nejnovější dokumentace Aspose.Email pro seznam nově podporovaných formátů. |
 
-## Sekce FAQ
-1. **K čemu slouží Aspose.Email pro Java?**  
-   - Aspose.Email pro Java pomáhá spravovat soubory e‑mailů, umožňuje čtení, zápis a konverzi mezi formáty.  
-2. **Jak začít s detekcí formátů souborů e‑mailů?**  
-   - Nainstalujte knihovnu přes Maven, nastavte licenci a použijte `FileFormatUtil.detectFileFormat()`.  
-3. **Mohu používat Aspose.Email pro Java bez zakoupení plné licence?**  
-   - Ano, můžete začít s bezplatnou zkušební verzí nebo dočasnou licencí a prozkoumat funkce.  
-4. **Jaké formáty e‑mailů lze detekovat?**  
-   - Podporovány jsou běžné formáty jako MSG a EML, a také další.  
-5. **Jak detekce formátu pomáhá v praktických aplikacích?**  
-   - Zajišťuje kompatibilitu napříč systémy a usnadňuje migraci a zpracování dat.
-
 ## Často kladené otázky
 **Q: Jak mohu **read msg file java** pomocí Aspose.Email?**  
 A: Po detekci formátu můžete načíst MSG soubor pomocí `MailMessage.load(dataDir)` a poté přistupovat k jeho vlastnostem.
@@ -170,6 +158,12 @@ A: Odkaz na oficiální dokumentaci najdete níže.
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -177,9 +171,3 @@ A: Odkaz na oficiální dokumentaci najdete níže.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

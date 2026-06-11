@@ -12,10 +12,6 @@ url: /pt/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
- top and bottom.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -192,6 +188,12 @@ R: Visite o [fórum da Aspose](https://forum.aspose.com/c/email/10) para buscar 
 - **Licença Temporária:** Obtenha uma licença temporária para acesso total.
 - **Suporte:** Receba assistência no fórum da comunidade Aspose.
 
+---
+
+**Última atualização:** 2026-02-27  
+**Testado com:** Aspose.Email 25.4 para Java  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +201,3 @@ R: Visite o [fórum da Aspose](https://forum.aspose.com/c/email/10) para buscar 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-27  
-**Testado com:** Aspose.Email 25.4 para Java  
-**Autor:** Aspose

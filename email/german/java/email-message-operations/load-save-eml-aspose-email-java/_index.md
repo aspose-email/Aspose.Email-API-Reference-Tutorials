@@ -201,6 +201,12 @@ A: Ja, stellen Sie jedoch sicher, dass jeder Thread mit seiner eigenen `MailMess
 
 Erkunden Sie diese Ressourcen weiter und wenden Sie sich bei Bedarf an den Support. Viel Spaß beim Programmieren!
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-27  
+**Getestet mit:** Aspose.Email 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Erkunden Sie diese Ressourcen weiter und wenden Sie sich bei Bedarf an den Suppo
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-27  
-**Getestet mit:** Aspose.Email 25.4 (jdk16 classifier)  
-**Autor:** Aspose

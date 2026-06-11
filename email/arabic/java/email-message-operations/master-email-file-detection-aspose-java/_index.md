@@ -134,18 +134,6 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **الترخيص غير مُطبق** | تأكد من مسار ملف الترخيص وأنه تم استدعاء `setLicense` قبل أي استخدام للـ API. |
 | **صيغة غير مدعومة** | راجع أحدث وثائق Aspose.Email للتحقق من الصيغ المدعومة حديثًا. |
 
-## قسم الأسئلة المتكررة
-1. **ما هو استخدام Aspose.Email للـ Java؟**  
-   - يساعد Aspose.Email للـ Java في إدارة ملفات البريد، مما يتيح القراءة والكتابة والتحويل بين الصيغ.  
-2. **كيف أبدأ باكتشاف صيغ ملفات البريد؟**  
-   - ثبّت المكتبة عبر Maven، اضبط الترخيص، واستخدم `FileFormatUtil.detectFileFormat()`.  
-3. **هل يمكنني استخدام Aspose.Email للـ Java دون شراء ترخيص كامل؟**  
-   - نعم، يمكنك البدء بنسخة تجريبية مجانية أو ترخيص مؤقت لاستكشاف الميزات.  
-4. **ما صيغ البريد التي يمكن اكتشافها؟**  
-   - الصيغ الشائعة مثل MSG وEML مدعومة، بالإضافة إلى صيغ أخرى.  
-5. **كيف يساعد اكتشاف الصيغة في التطبيقات العملية؟**  
-   - يضمن التوافق عبر الأنظمة ويسهل ترحيل البيانات ومعالجتها.
-
 ## الأسئلة المتكررة
 **س: كيف يمكنني **read msg file java** باستخدام Aspose.Email؟**  
 ج: بعد اكتشاف الصيغة، يمكنك تحميل ملف MSG باستخدام `MailMessage.load(dataDir)` ثم الوصول إلى خصائصه.
@@ -170,6 +158,12 @@ System.out.println("The message format is: " + info.getFileFormatType());
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**آخر تحديث:** 2026-02-27  
+**تم الاختبار مع:** Aspose.Email للـ Java 25.4 (jdk16)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -177,9 +171,3 @@ System.out.println("The message format is: " + info.getFileFormatType());
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-02-27  
-**تم الاختبار مع:** Aspose.Email للـ Java 25.4 (jdk16)  
-**المؤلف:** Aspose

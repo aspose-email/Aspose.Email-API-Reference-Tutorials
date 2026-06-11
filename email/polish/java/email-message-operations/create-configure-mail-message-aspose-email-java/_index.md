@@ -12,16 +12,6 @@ url: /pl/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
- except maybe translate "Last Updated" etc? The instruction says translate all text content. So we should translate "Last Updated", "Tested With", "Author". But keep dates and version unchanged.
-
-Thus translate to Polish: "Ostatnia aktualizacja:", "Testowane z:", "Autor:".
-
-Now produce final content.
-
-Be careful to keep markdown formatting exactly.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -198,6 +188,12 @@ O: Odwiedź [forum Aspose](https://forum.aspose.com/c/email/10), aby uzyskać po
 - **Licencja tymczasowa:** Uzyskaj tymczasową licencję dla pełnego dostępu.
 - **Wsparcie:** Skorzystaj z forum społeczności Aspose.
 
+---
+
+**Ostatnia aktualizacja:** 2026-02-27  
+**Testowane z:** Aspose.Email 25.4 for Java  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -205,9 +201,3 @@ O: Odwiedź [forum Aspose](https://forum.aspose.com/c/email/10), aby uzyskać po
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-02-27  
-**Testowane z:** Aspose.Email 25.4 for Java  
-**Autor:** Aspose

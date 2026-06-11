@@ -11,26 +11,6 @@ url: /zh-hant/java/email-message-operations/load-save-eml-aspose-email-java/
 weight: 1
 ---
 
- to save eml** files programmatically, you’ve come to the right place. In this tutorial we’ll walk through loading an EML file, attaching a **custom progress handler java** to monitor the conversion, and finally saving the message with full control over the output. By the end you’ll understand not only the mechanics of saving EML, but also why tracking progress can be a game‑changer for large‑scale email processing."
-
-Translate.
-
-Make sure to keep bold markdown.
-
-Proceed similarly for other sections.
-
-Need to translate bullet points, headings, etc.
-
-Also code block placeholders remain.
-
-Let's craft translation.
-
-Be careful not to translate URLs.
-
-Also keep markdown links.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -220,6 +200,12 @@ A: 可以，但請確保每個執行緒使用自己的 `MailMessage` 實例，�
 
 深入探索上述資源，若有需要請隨時尋求支援。祝開發順利！
 
+---
+
+**最後更新：** 2026-02-27  
+**測試環境：** Aspose.Email 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -227,9 +213,3 @@ A: 可以，但請確保每個執行緒使用自己的 `MailMessage` 實例，�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-02-27  
-**測試環境：** Aspose.Email 25.4 (jdk16 classifier)  
-**作者：** Aspose

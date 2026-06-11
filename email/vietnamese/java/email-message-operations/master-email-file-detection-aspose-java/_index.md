@@ -134,18 +134,6 @@ Khi làm việc với Aspose.Email, hãy lưu ý các mẹo sau để tối ưu 
 | **Giấy phép chưa được áp dụng** | Xác nhận đường dẫn file giấy phép và gọi `setLicense` trước khi sử dụng bất kỳ API nào. |
 | **Định dạng không được hỗ trợ** | Kiểm tra tài liệu Aspose.Email mới nhất để biết các định dạng được hỗ trợ mới nhất. |
 
-## Phần Hỏi Đáp
-1. **Aspose.Email cho Java được dùng để làm gì?**  
-   - Aspose.Email cho Java giúp quản lý tệp email, cho phép đọc, ghi và chuyển đổi giữa các định dạng.  
-2. **Làm sao để bắt đầu phát hiện định dạng tệp email?**  
-   - Cài đặt thư viện qua Maven, thiết lập giấy phép, và sử dụng `FileFormatUtil.detectFileFormat()`.  
-3. **Tôi có thể dùng Aspose.Email cho Java mà không mua giấy phép đầy đủ không?**  
-   - Có, bạn có thể bắt đầu với bản dùng thử miễn phí hoặc giấy phép tạm thời để khám phá tính năng.  
-4. **Những định dạng email nào có thể được phát hiện?**  
-   - Các định dạng phổ biến như MSG và EML được hỗ trợ, cùng nhiều định dạng khác.  
-5. **Phát hiện định dạng giúp ích gì trong các ứng dụng thực tiễn?**  
-   - Nó đảm bảo tính tương thích giữa các hệ thống và hỗ trợ di chuyển dữ liệu cũng như xử lý.
-
 ## Các câu hỏi thường gặp
 **H: Làm sao tôi có thể **read msg file java** bằng Aspose.Email?**  
 Đ: Sau khi phát hiện định dạng, bạn có thể tải tệp MSG bằng `MailMessage.load(dataDir)` và truy cập các thuộc tính của nó.
@@ -170,6 +158,12 @@ Khi làm việc với Aspose.Email, hãy lưu ý các mẹo sau để tối ưu 
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -177,9 +171,3 @@ Khi làm việc với Aspose.Email, hãy lưu ý các mẹo sau để tối ưu 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

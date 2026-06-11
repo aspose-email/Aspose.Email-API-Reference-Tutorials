@@ -205,6 +205,12 @@ Ano, ale ujistěte se, že každé vlákno pracuje se svou vlastní instancí `M
 
 Prozkoumejte tyto zdroje a neváhejte se obrátit na podporu, pokud budete potřebovat pomoc. Šťastné programování!
 
+---
+
+**Poslední aktualizace:** 2026-02-27  
+**Testováno s:** Aspose.Email 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -212,9 +218,3 @@ Prozkoumejte tyto zdroje a neváhejte se obrátit na podporu, pokud budete potř
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-27  
-**Testováno s:** Aspose.Email 25.4 (jdk16 classifier)  
-**Autor:** Aspose

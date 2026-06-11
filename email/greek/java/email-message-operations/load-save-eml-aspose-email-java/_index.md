@@ -201,6 +201,12 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 
 Εξερευνήστε περαιτέρω αυτούς τους πόρους και επικοινωνήστε για υποστήριξη αν χρειαστεί. Καλή προγραμματιστική!
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

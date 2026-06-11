@@ -18,41 +18,41 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Hogyan töltsünk be MSG fájlokat és mentsük MHTML‑ként az Aspose.Email for Java segítségével
+# Hogyan töltsünk be MSG fájlokat és mentsük MHTML‑ként az Aspose.Email for Java help
 
-## Introduction
+## Bevezetés
 
-Ha **how to load msg** fájlokra van szükséged, módosítani szeretnéd az időbélyegeket, majd **convert msg to mhtml**, akkor jó helyen vagy. Ebben az útmutatóban végigvezetünk egy `.msg` e‑mail betöltésén, egy egyéni időzóna‑eltolás alkalmazásán, és az eredmény MHTML archívumként való mentésén – mindezt az Aspose.Email for Java használatával. Akár egyetlen üzenetet, akár egy **batch email processing** folyamatot kezelsz, ezek a lépések szilárd alapot biztosítanak.
+Ha **how to load msg** fájlokra van szükséged, módosítani szeretnéd az időbélyegeket, majd **convert msg to mhtml**, akkor jó helyen vagy. az útmutatóban végigvezetünk egy `.msg` e‑mail betöltésén, egy egyéni időzóna‑eltolás alkalmazásán, és az eredmény MHTML archívumként való mentésén – mindezt az Aspose.Email for Java segítségével ebben. Akár egyetlen üzenetet, akár egy **batch email processing** folyamatot kezelsz, ezek a lépések szilárd alapot biztosítanak.
 
-**What you’ll learn**
-- Hogyan töltsünk be egy `MailMessage`‑t egy `.msg` fájlból.
+**Amit meg fogsz tanulni**
+- Hogyan töltsünk be egy `MailMessage`-t egy `.msg` fájlból.
 - Hogyan állítsunk be egy egyéni időzónát és a jelenlegi dátumot.
-- Hogyan mentsük az üzenetet MHTML‑ként pontos formázással.
+- Hogyan mentsük az üzenetet MHTML-ként pontos formázással.
 - Tippek a megközelítés skálázásához kötegelt (batch) forgatókönyvekben.
 
-Készen állsz, hogy felgyorsítsd az e‑mail munkafolyamatodat? Először állítsuk be a környezetet.
+Készen állsz, hogy felgyorsítsd az e‑mail munkafolyamatodat? először állítsuk be a környezetet.
 
-## Quick Answers
-- **What is the primary library?** Aspose.Email for Java.
+## Gyors válaszok
+- **Mi az elsődleges könyvtár?** Aspose.Email for Java.
 - **Can I load MSG and export to MHTML in one step?** Nem, először betöltöd, majd módosítod, végül mented.
-- **Do I need a license for production?** Igen, egy érvényes Aspose.Email licenc szükséges.
-- **Is timezone handling supported?** Igen, a `setTimeZoneOffset` segítségével.
-- **Can this be used in batch processing?** Teljesen – csomagold a lépéseket egy ciklusba.
+- **Kell licenc a gyártáshoz?** Igen, egy érvényes Aspose.Email licenc szükséges.
+- **Támogatott az időzóna kezelés?** Igen, a `setTimeZoneOffset` segítségével.
+- **Can this use in batch processing?** Teljesen – csomagold a gyakorlatilag egy ciklusba.
 
-## Prerequisites
+## Előfeltételek
 
 Mielőtt elkezdenénk, győződj meg róla, hogy a következőkkel rendelkezel:
 
-### Required Libraries and Dependencies
-- **Aspose.Email for Java** library version 25.4 (jdk16 classifier)
+### Szükséges könyvtárak és függőségek
+- **Aspose.Email for Java** könyvtár 25.4-es verziója (jdk16 osztályozó)
 - Alap Java ismeretek.
 - IDE, például IntelliJ IDEA vagy Eclipse.
 
-### Environment Setup Requirements
-- JDK 16 vagy újabb telepítve.
+### Környezetbeállítási követelmények
+- JDK16vagy újabb telepítés.
 - Maven a függőségek kezeléséhez.
 
-## Setting Up Aspose.Email for Java
+## Az Aspose.Email beállítása Java számára
 
 A könyvtár Maven projektbe való felvételéhez add hozzá a következő függőséget:
 
@@ -65,17 +65,17 @@ A könyvtár Maven projektbe való felvételéhez add hozzá a következő függ
 </dependency>
 ```
 
-### License Acquisition Steps
+### Licencbeszerzés lépései
 
-Kezdd egy **free trial**‑nal vagy szerezz **temporary license**‑t, hogy korlátozások nélkül értékeld a könyvtár teljes funkcionalitását. Hosszú távú használathoz fontold meg a licenc vásárlását:
+Kezdd egy **free trial**‑nal vagy szerezz **temporary licenc**‑t, hogy korlátozások nélkül értékeld a könyvtár teljes funkcionalitását. Hosszú távú használathoz fontold meg a licenc vásárlását:
 
 - [Ingyenes próbaverzió](https://releases.aspose.com/email/java/)
 - [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)
-- [Licenc vásárlása](https://purchase.aspose.com/buy)
+- [Licencvásárlás](https://purchase.aspose.com/buy)
 
-### Basic Initialization
+### Alap inicializálás
 
-A függőség hozzáadása után inicializáld a licencet a Java kódban:
+A függőség után inicializálja a licencet a Java kódban:
 
 ```java
 import com.aspose.email.License;
@@ -84,39 +84,39 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## Implementation Guide
+## Megvalósítási útmutató
 
-A megvalósítást három egyértelmű funkcióra bontjuk.
+A megvalósítást három jól áttekinthető funkcióra bontjuk.
 
-### Feature 1: Loading a MailMessage from a File
+### 1. funkció: MailMessage betöltése fájlból
 
-#### Overview
-Egy `.msg` fájl betöltése teljes programozott hozzáférést biztosít az e‑mail tartalmához, mellékleteihez és metaadataihoz.
+#### Áttekintés
+Egy `.msg` fájl betöltése teljes programozott hozzáférést biztosít az e-mail tartalmához, mellékleteihez és metaadataihoz.
 
-#### Step‑by‑Step
+#### Lépésről lépésre
 
-**Import the required classes**
+**Importálja a szükséges osztályokat**
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
 
-**Load the email**
+**Töltse be az e-mailt**
 
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-A `MsgLoadOptions` lehetővé teszi, hogy szabályozd, hogyan értelmeződik a MSG fájl; az alapbeállítások a legtöbb esetben megfelelőek.
+Az `MsgLoadOptions` lehetővé teszi az MSG fájl értelmezésének szabályozását; az alapértelmezett beállítások a legtöbb esetben működnek.
 
-### Feature 2: Setting the Current Date and Custom Timezone Offset
+### 2. funkció: Az aktuális dátum és az egyéni időzóna-eltolódás beállítása
 
-#### Overview
-A pontos időbélyegek elengedhetetlenek, ha különböző régiók felhasználóival dolgozol.
+#### Áttekintés
+A pontos időbélyegek elengedhetetlenek, ha különböző régiókban lévő felhasználókkal van dolga.
 
-**Set the current date**
+**Állítsa be az aktuális dátumot**
 
 ```java
 import java.util.Date;
@@ -124,20 +124,20 @@ import java.util.Date;
 msg.setDate(new Date());
 ```
 
-**Apply a custom timezone offset (e.g., UTC+5)**
+**Alkalmazzon egyéni időzóna-eltolódást (pl. UTC+5)**
 
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-Az eltolás milliszekundumban van megadva, így negatív értékeket is átadhatsz a UTC‑tól nyugatra lévő zónákhoz.
+Az eltolás milliszekundumban van kifejezve, így negatív értékeket is átadhat az UTC-től nyugatra eső zónák esetében.
 
-### Feature 3: Saving a MailMessage as an MHTML File
+### 3. funkció: E-mail üzenet mentése MHTML fájlként
 
-#### Overview
-Az MHTML egyetlen fájlba csomagolja a HTML tartalmat és a beágyazott erőforrásokat, ami ideális archiváláshoz vagy megosztáshoz.
+#### Áttekintés
+Az MHTML egyetlen fájlba gyűjti a HTML tartalmat és a beágyazott erőforrásokat, ami tökéletes archiváláshoz vagy megosztáshoz.
 
-**Configure save options**
+**Mentési beállítások konfigurálása**
 
 ```java
 import com.aspose.email.MhtSaveOptions;
@@ -147,7 +147,7 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**Save the email**
+**Az e-mail mentése**
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
@@ -155,74 +155,74 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 
 Az így kapott `.mhtml` fájl megőrzi az eredeti formázást, képeket és mellékleteket.
 
-## Why Convert MSG to MHTML?
+## Miért kell az MSG-t MHTML-re konvertálni?
 
-Az MSG fájlok MHTML‑re konvertálása web‑barát, egyetlen fájlból álló ábrázolást biztosít, amely bármely modern böngészőben megnyitható. Különösen hasznos:
+Az MSG fájlok MHTML-re konvertálása web-barát, egyetlen fájlból álló ábrázolást biztosít, amely minden modern böngészőben megnyitható. különösen hasznos:
 
-- **Legal archiving** esetén, ahol hiteles vizuális másolat szükséges.
-- **Cross‑platform sharing** nélkülözve az Outlookot.
-- **Embedding emails** weboldalakba vagy dokumentációba.
+- **Jogi archiválás** esetén, ahol hiteles vizuális másolat szükséges.
+- **Cross-platform share** nélkülözve az Outlookot.
+- **E-mailek beágyazása** weboldalakba vagy dokumentációba.
 
-## Batch Email Processing Tips
+## Tippek kötegelt e-mail-feldolgozáshoz
 
-Ha **batch email processing**‑re van szükséged, csomagold a betöltés, időzóna‑korrekció és mentés lépéseit egy ciklusba, amely egy `.msg` fájlokból álló könyvtárat iterál. Ne feledd:
+Ha **batch email processing**-re van szükséged, csomagold a betöltés, időzóna-korrekció és mentés lépéseit egy ciklusba, amely egy `.msg` fájlokból álló könyvtárat iterál. Ne feledd:
 
 1. Használj egyetlen `License` példányt a túlterhelés elkerülése érdekében.
-2. Szabadíts fel erőforrásokat minden iteráció után (`msg.dispose()` ha alkalmazható).
+2. Szabadíts fel erőforrásokat minden iteráció után (`msg.dispose()` ha alkalmas).
 3. Naplózd a hibákat egy külön fájlba a későbbi áttekintéshez.
 
-## Practical Applications
+## Gyakorlati alkalmazások
 
-1. **Email Archiving:** Kommunikációk megőrzése hordozható formátumban a megfelelőség érdekében.
+1. **E-mail archiválás:** Kommunikációk megőrzése hordozható formátumban a megfelelőség érdekében.
 2. **Global Scheduling:** Időbélyegek egységes időzónára állítása értesítések küldése előtt.
-3. **CRM Integration:** Archivált e‑mailek automatikus importálása egy CRM rendszerbe MHTML mellékletekként.
+3. **CRM integráció:** Archivált e‑mailek automatikus importálása egy CRM rendszerbe MHTML mellékletekként.
 
-## Performance Considerations
+## Teljesítmény szempontjai
 
 - **Memory Management:** Nagy kötegeket dolgozz fel darabokban a memóriahasználat alacsonyan tartása érdekében.
-- **I/O Optimization:** Használj pufferelt stream‑eket, ha sok fájlt olvasol/írsz.
-- **Parallel Execution:** Fontold meg a Java `ForkJoinPool`‑jának használatát párhuzamos feldolgozáshoz, de ügyelj az Aspose objektumok szálbiztonságára.
+- **I/O Optimization:** Használj pufferelt stream-eket, ha sok fájlt olvasol/írsz.
+- **Parallel Execution:** Fontold meg a `ForkJoinPool`-jának a Java párhuzamos feldolgozáshoz, de ügyelj az Aspose objektumok szálbiztonságára.
 
-## Conclusion
+## Következtetés
 
-Most már tudod, hogyan **load msg** fájlokat, alkalmazz egyéni időzóna‑eltolásokat, és **convert msg to mhtml** az Aspose.Email for Java segítségével. Ezek a technikák skálázhatók **batch email processing** feladatok kezelésére, erős megoldást nyújtva e‑mail archiváláshoz, migrációhoz és automatizáláshoz.
+Most már tudod, hogyan **load msg** fájlokat, alkalmazz egyéni időzóna‑eltolásokat, és **convert msg to mhtml** az Aspose.Email for Java segítségével. Ezek a technikák skálázz**batch email processing** feladatok kezelésére, erős megoldást nyújtva e‑mail archiváláshoz, migrációhoz és automatizáláshoz.
 
-**Next Steps**  
-Fedezd fel az Aspose.Email további funkcióit, például a mellékletkezelést, naptár‑elemek kinyerését vagy az SMTP küldést, a hivatalos [documentation](https://reference.aspose.com/email/java/) meglátogatásával.
+**Következő lépések**
+Fedezd fel az Aspose.Email további funkcióit, például a mellékletkezelést, naptárelemek kinyerését vagy az SMTP küldést, a hivatalos [documentation](https://reference.aspose.com/email/java/) meglátogatásával.
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
-**Q: Can I load emails from formats other than .msg?**  
+**K: Betölthetek e-maileket az .msg-től eltérő formátumból?**
 A: Igen, az Aspose.Email támogatja az EML, MSG, MHT és több más formátumot.
 
-**Q: How can I handle very large email files efficiently?**  
-A: Használd az Aspose.Email által biztosított streaming API‑kat az adatok darabokban történő olvasásához/írásához, ez csökkenti a memória terhelését.
+**K: Hogyan kezelhetem hatékonyan a nagyon nagy e-mail fájlokat?**
+A: Használd az Aspose.Email által biztosított streaming API‑kat az adatok darabokban való olvasásához/írásához, ez csökkenti a memória terhelését.
 
-**Q: Is it possible to modify attachments within a MailMessage?**  
-A: Teljesen lehetséges. Mellékleteket hozzáadhatsz, eltávolíthatsz vagy cserélhetsz a `MailMessage.getAttachments()` gyűjteményen keresztül.
+**K: Lehetséges-e módosítani a mellékleteket egy levélben?**
+A: Teljesen lehetséges. Mellékleteket addhatsz, eltávolíthatsz vagy cserélhetsz a `MailMessage.getAttachments()` gyűjteményen keresztül.
 
-**Q: What if my timezone offset is negative (behind UTC)?**  
-A: Adj meg negatív milliszekundum értéket a `setTimeZoneOffset`‑nak, például `-3 * 60 * 60 * 1000` az UTC‑3‑hoz.
+**K: Mi van, ha az időzóna-eltolásom negatív (UTC mögött)?**
+A: Adj meg negatív milliszekundum értéket a `setTimeZoneOffset`-nak, például `-3 * 60 * 60 * 1000` az UTC-3-hoz.
 
-**Q: Can I use Aspose.Email in commercial projects?**  
-A: Igen, amennyiben érvényes kereskedelmi licenccel rendelkezel.
+**K: Használhatom az Aspose.Emailt kereskedelmi projektekben?**
+A: Igen,érvényes kereskedelmi licenccel rendelkezik.
 
-**Q: How do I process thousands of MSG files without running out of memory?**  
-A: Fájlokat dolgozz fel kötegekben, minden `MailMessage`‑t szabadíts fel a mentés után, és fontold meg a Java `try‑with‑resources` mintájának használatát az automatikus takarításért.
+**K: Hogyan dolgozhatok fel több ezer MSG-fájlt anélkül, hogy kifogyna a memória?**
+A: Fájlokat dolgozz fel köteg, minden `MailMessage`-t szabadíts fel a mentés után, és fontold meg a Java`try-with-resources` mintájának használatát az automatikus takarításért.
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
-## Resources
+## Források
 - [Dokumentáció](https://reference.aspose.com/email/java/)
 - [Könyvtár letöltése](https://releases.aspose.com/email/java/)
-- [Licenc vásárlása](https://purchase.aspose.com/buy)
+- [Licencvásárlás](https://purchase.aspose.com/buy)
 - [Ingyenes próbaverzió](https://releases.aspose.com/email/java/)
 - [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)
 - [Támogatási fórum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Utolsó frissítés:** 2026.02.27
+**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 osztályozó)
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

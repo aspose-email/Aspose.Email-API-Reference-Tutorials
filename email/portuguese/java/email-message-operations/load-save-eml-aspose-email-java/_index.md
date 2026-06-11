@@ -201,6 +201,12 @@ R: Sim, mas garanta que cada thread trabalhe com sua própria instância de `Mai
 
 Explore esses recursos mais a fundo e entre em contato para suporte, se necessário. Feliz codificação!
 
+---
+
+**Última atualização:** 2026-02-27  
+**Testado com:** Aspose.Email 25.4 (classificador jdk16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Explore esses recursos mais a fundo e entre em contato para suporte, se necessá
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-27  
-**Testado com:** Aspose.Email 25.4 (classificador jdk16)  
-**Autor:** Aspose

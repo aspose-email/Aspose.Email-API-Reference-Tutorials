@@ -12,34 +12,6 @@ url: /ru/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
-"
-
-## Introduction
-
-Translate paragraph.
-
-Make sure to keep **bold**.
-
-Also keep code names unchanged.
-
-Proceed.
-
-Will translate bullet lists.
-
-Also translate "Quick Answers" section.
-
-Make sure to keep code names unchanged.
-
-Translate "What is “how to create email” with Aspose.Email?" maybe "Что такое «как создать email» с Aspose.Email?" but better: "Что означает «создание email» с помощью Aspose.Email?" We'll translate naturally.
-
-Proceed.
-
-All code block placeholders remain.
-
-At the end, the backtop button shortcode and footer.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -216,6 +188,12 @@ try {
 - **Временная лицензия:** Получите временную лицензию для полного доступа.
 - **Поддержка:** Обратитесь за помощью на форум сообщества Aspose.
 
+---
+
+**Последнее обновление:** 2026-02-27  
+**Тестировано с:** Aspose.Email 25.4 for Java  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -223,9 +201,3 @@ try {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-02-27  
-**Тестировано с:** Aspose.Email 25.4 for Java  
-**Автор:** Aspose

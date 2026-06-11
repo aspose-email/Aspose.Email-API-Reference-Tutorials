@@ -209,12 +209,6 @@ R: Sim, desde que você possua uma licença comercial válida.
 **P: Como processar milhares de arquivos MSG sem ficar sem memória?**  
 R: Processar arquivos em lotes, liberar cada `MailMessage` após a gravação e considerar usar o padrão `try‑with‑resources` do Java para limpeza automática.
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 ## Recursos
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ R: Processar arquivos em lotes, liberar cada `MailMessage` após a gravação e 
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

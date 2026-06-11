@@ -10,15 +10,7 @@ url: /zh/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
-使用 Aspose.Email for Java 加载 MSG 并保存为 MHTML"
-
-Similarly other headings.
-
-Proceed.
-
-Make sure to keep markdown syntax.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -215,12 +207,6 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 **问：如何在处理成千上万的 MSG 文件时避免内存耗尽？**  
 答：分批处理文件，保存后释放每个 `MailMessage`，并考虑使用 Java 的 `try‑with‑resources` 语法实现自动清理。
 
----
-
-**最后更新：** 2026-02-27  
-**测试环境：** Aspose.Email for Java 25.4（jdk16 classifier）  
-**作者：** Aspose  
-
 ## 资源
 - [文档](https://reference.aspose.com/email/java/)
 - [下载库](https://releases.aspose.com/email/java/)
@@ -228,6 +214,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 - [免费试用](https://releases.aspose.com/email/java/)
 - [临时许可证](https://purchase.aspose.com/temporary-license/)
 - [支持论坛](https://forum.aspose.com/c/email/10)
+
+---
+
+**最后更新：** 2026-02-27  
+**测试环境：** Aspose.Email for Java 25.4（jdk16 classifier）  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

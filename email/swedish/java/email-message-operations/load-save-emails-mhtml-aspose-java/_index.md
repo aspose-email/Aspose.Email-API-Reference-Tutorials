@@ -17,43 +17,43 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Hur man laddar MSG och sparar som MHTML med Aspose.Email för Java
+# Hur man laddar MSG och sparar MHTML med Aspose.Email för Java
 
-## Introduction
+## Introduktion
 
-If you need to **how to load msg** files, adjust their timestamps, and then **convert msg to mhtml**, you’re in the right place. In this tutorial we’ll walk through loading a `.msg` email, applying a custom time‑zone offset, and saving the result as an MHTML archive—all with Aspose.Email for Java. Whether you’re handling a single message or a **batch email processing** pipeline, these steps will give you a solid foundation.
+Om du behöver **hur man laddar msg**-filer, justerar deras tidsstämplar och sedan **konverterar msg till mhtml**, har du kommit rätt. I den här handledningen går vi igenom hur man laddar ett `.msg`-e-postmeddelande, tillämpar en anpassad tidszonsförskjutning och sparar resultatet som ett MHTML-arkiv – allt med Aspose.Email för Java. Oavsett om du hanterar ett enskilt meddelande eller en **batch-e-postbehandlingspipeline**, kommer dessa steg att ge dig en solid grund.
 
-**What you’ll learn**
-- How to load a `MailMessage` from a `.msg` file.
-- How to set a custom time zone and current date.
-- How to save the message as MHTML with precise formatting.
-- Tips for scaling the approach to batch scenarios.
+**Vad du kommer att lära dig**
+- Hur man laddar ett `MailMessage` från en `.msg`-fil.
+- Hur man ställer in en anpassad tidszon och aktuellt datum.
+- Hur man sparar meddelandet som MHTML med exakt formatering.
+- Tips för att skala tillvägagångssättet för batchscenarier.
 
-Ready to boost your email workflow? Let’s get the environment ready first.
+Redo att förbättra ditt e-postarbetsflöde? Låt oss först förbereda miljön.
 
-## Quick Answers
-- **What is the primary library?** Aspose.Email for Java.
-- **Can I load MSG and export to MHTML in one step?** No, you load, adjust, then save.
-- **Do I need a license for production?** Yes, a valid Aspose.Email license is required.
-- **Is timezone handling supported?** Yes, via `setTimeZoneOffset`.
-- **Can this be used in batch processing?** Absolutely – wrap the steps in a loop.
+## Snabba svar
+- **Vilket är det primära biblioteket?** Aspose.Email för Java.
+- **Kan jag ladda MSG och exportera till MHTML i ett steg?** Nej, du laddar, justerar och sparar sedan.
+- **Behöver jag en licens för produktion?** Ja, en giltig Aspose.Email-licens krävs.
+- **Stöds tidszonhantering?** Ja, via `setTimeZoneOffset`.
+- **Kan detta användas i batchbehandling?** Absolut – linda stegen i en loop.
 
-## Prerequisites
+## Förutsättningar
 
-Before we begin, ensure you have the following:
+Innan vi börjar, se till att du har följande:
 
-### Required Libraries and Dependencies
-- **Aspose.Email for Java** library version 25.4 (jdk16 classifier)
-- Basic Java knowledge.
-- An IDE such as IntelliJ IDEA or Eclipse.
+### Obligatoriska bibliotek och beroenden
+- **Aspose.Email för Java** bibliotek version 25.4 (jdk16-klassificerare)
+- Grundläggande Java-kunskaper.
+- En IDE som IntelliJ IDEA eller Eclipse.
 
-### Environment Setup Requirements
-- JDK 16 or newer installed.
-- Maven for dependency management.
+### Krav för miljöinstallation
+- JDK16 eller senare installerat.
+- Maven för beroendehantering.
 
-## Setting Up Aspose.Email for Java
+## Konfigurera Aspose.Email för Java
 
-To add the library to a Maven project, include the following dependency:
+För att lägga till biblioteket i ett Maven-projekt, inkludera följande beroende:
 
 ```xml
 <dependency>
@@ -64,17 +64,17 @@ To add the library to a Maven project, include the following dependency:
 </dependency>
 ```
 
-### License Acquisition Steps
+### Steg för licensinköp
 
-Start with a **free trial** or obtain a **temporary license** to evaluate the library’s full capabilities without limitations. For long‑term use, consider purchasing a license:
+Börja med en **kostnadsfri provperiod** eller skaffa en **tillfällig licens** för att utvärdera bibliotekets fulla kapacitet utan begränsningar. För långvarig användning, överväg att köpa en licens:
 
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Purchase License](https://purchase.aspose.com/buy)
 
-### Basic Initialization
+### Grundläggande initialisering
 
-After adding the dependency, initialize the license in your Java code:
+Efter att du har lagt till beroendet, initialisera licensen i din Java-kod:
 
 ```java
 import com.aspose.email.License;
@@ -83,39 +83,39 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## Implementation Guide
+## Implementeringsguide
 
-We’ll break the implementation into three clear features.
+Vi delar upp implementeringen i tre tydliga funktioner.
 
-### Feature 1: Loading a MailMessage from a File
+### Funktion 1: Ladda ett e-postmeddelande från en fil
 
-#### Overview
-Loading a `.msg` file gives you full programmatic access to the email’s content, attachments, and metadata.
+#### Översikt
+Genom att ladda en `.msg`-fil får du fullständig programmatisk åtkomst till e-postmeddelandets innehåll, bilagor och metadata.
 
-#### Step‑by‑Step
+#### Steg för steg
 
-**Import the required classes**
+**Importera de obligatoriska klasserna**
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
 
-**Load the email**
+**Ladda e-postmeddelandet**
 
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-`MsgLoadOptions` lets you control how the MSG file is interpreted; the default settings work for most scenarios.
+`MsgLoadOptions` låter dig styra hur MSG-filen tolkas; standardinställningarna fungerar för de flesta scenarier.
 
-### Feature 2: Setting the Current Date and Custom Timezone Offset
+### Funktion 2: Ställa in aktuellt datum och anpassad tidszonsförskjutning
 
-#### Overview
-Accurate timestamps are essential when you’re dealing with users across different regions.
+#### Översikt
+Exakta tidsstämplar är viktiga när du har att göra med användare i olika regioner.
 
-**Set the current date**
+**Ställ in aktuellt datum**
 
 ```java
 import java.util.Date;
@@ -123,20 +123,20 @@ import java.util.Date;
 msg.setDate(new Date());
 ```
 
-**Apply a custom timezone offset (e.g., UTC+5)**
+**Tillämpa en anpassad tidszonsförskjutning (t.ex. UTC+5)**
 
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-The offset is expressed in milliseconds, so you can also pass negative values for zones west of UTC.
+Förskjutningen uttrycks i millisekunder, så du kan även skicka negativa värden för zoner väster om UTC.
 
-### Feature 3: Saving a MailMessage as an MHTML File
+### Funktion 3: Spara ett e-postmeddelande som en MHTML-fil
 
-#### Overview
-MHTML bundles HTML content and embedded resources into a single file, perfect for archiving or sharing.
+#### Översikt
+MHTML samlar HTML-innehåll och inbäddade resurser i en enda fil, perfekt för arkivering eller delning.
 
-**Configure save options**
+**Konfigurera sparalternativ**
 
 ```java
 import com.aspose.email.MhtSaveOptions;
@@ -146,82 +146,89 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**Save the email**
+**Spara e-postmeddelandet**
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
 ```
 
-The resulting `.mhtml` file retains the original formatting, images, and attachments.
+Den resulterande `.mhtml`-filen behåller originalformateringen, bilderna och bilagorna.
 
-## Why Convert MSG to MHTML?
+## Varför konvertera MSG till MHTML?
 
-Converting MSG files to MHTML gives you a web‑friendly, single‑file representation that can be opened in any modern browser. This is especially useful for:
+Att konvertera MSG-filer till MHTML ger dig en webbvänlig representation av en enda fil som kan öppnas i vilken modern webbläsare som helst. Detta är särskilt användbart för:
 
-- **Legal archiving** where a faithful visual copy is required.
-- **Cross‑platform sharing** without needing Outlook.
-- **Embedding emails** into web pages or documentation.
+- **Juridisk arkivering** där en korrekt visuell kopia krävs.
+- **Delning över flera plattformar** utan att behöva Outlook.
+- **Bädda in e-postmeddelanden** i webbsidor eller dokumentation.
 
-## Batch Email Processing Tips
+## Tips för batchbearbetning av e-post
 
-If you need to **batch email processing**, wrap the loading, timezone adjustment, and saving steps inside a loop that iterates over a directory of `.msg` files. Remember to:
+Om du behöver **batchbearbetning av e-post**, linda in inläsnings-, tidszonsjusterings- och sparningsstegen i en loop som itererar över en katalog med `.msg`-filer. Kom ihåg att:
 
-1. Reuse a single `License` instance to avoid overhead.
-2. Release resources after each iteration (`msg.dispose()` if applicable).
-3. Log any failures to a separate file for later review.
+1. Återanvända en enda `License`-instans för att undvika overhead.
 
-## Practical Applications
+2. Frigör resurser efter varje iteration (`msg.dispose()` om tillämpligt).
 
-1. **Email Archiving:** Preserve communications in a portable format for compliance.
-2. **Global Scheduling:** Adjust timestamps to a unified timezone before sending notifications.
-3. **CRM Integration:** Automatically import archived emails into a CRM system as MHTML attachments.
+3. Logga eventuella fel till en separat fil för senare granskning.
 
-## Performance Considerations
+## Praktiska tillämpningar
 
-- **Memory Management:** Process large batches in chunks to keep memory usage low.
-- **I/O Optimization:** Use buffered streams if you’re reading/writing many files.
-- **Parallel Execution:** Consider Java’s `ForkJoinPool` for parallel processing, but ensure thread‑safety of the Aspose objects.
+1. **E-postarkivering:** Bevara kommunikation i ett portabelt format för efterlevnad.
 
-## Conclusion
+2. **Global schemaläggning:** Justera tidsstämplar till en enhetlig tidszon innan aviseringar skickas.
 
-You now know **how to load msg** files, apply custom timezone offsets, and **convert msg to mhtml** using Aspose.Email for Java. These techniques can be scaled to handle **batch email processing** tasks, giving you a robust solution for email archiving, migration, and automation.
+3. **CRM-integration:** Importera automatiskt arkiverade e-postmeddelanden till ett CRM-system som MHTML-bilagor.
 
-**Next Steps**  
-Explore additional Aspose.Email features such as attachment handling, calendar item extraction, or SMTP sending by visiting the official [documentation](https://reference.aspose.com/email/java/).
+## Prestandaöverväganden
 
-## Frequently Asked Questions
+- **Minneshantering:** Bearbeta stora batcher i bitar för att hålla minnesanvändningen låg.
+- **I/O-optimering:** Använd buffrade strömmar om du läser/skriver många filer.
+- **Parallell exekvering:** Överväg Javas `ForkJoinPool` för parallell bearbetning, men säkerställ trådsäkerhet för Aspose-objekten.
 
-**Q: Can I load emails from formats other than .msg?**  
-A: Yes, Aspose.Email supports EML, MSG, MHT, and several other formats.
+## Slutsats
 
-**Q: How can I handle very large email files efficiently?**  
-A: Use streaming APIs provided by Aspose.Email to read/write data in chunks, reducing memory pressure.
+Du vet nu **hur man laddar msg**-filer, tillämpar anpassade tidszonsförskjutningar och **konverterar msg till mhtml** med Aspose.Email för Java. Dessa tekniker kan skalas för att hantera **batch-e-postbehandling**-uppgifter, vilket ger dig en robust lösning för e-postarkivering, migrering och automatisering.
 
-**Q: Is it possible to modify attachments within a MailMessage?**  
-A: Absolutely. You can add, remove, or replace attachments via the `MailMessage.getAttachments()` collection.
+**Nästa steg**
+Utforska ytterligare Aspose.Email-funktioner som hantering av bilagor, extrahering av kalenderobjekt eller SMTP-sändning genom att besöka den officiella [dokumentationen](https://reference.aspose.com/email/java/).
 
-**Q: What if my timezone offset is negative (behind UTC)?**  
-A: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 * 60 * 60 * 1000` for UTC‑3.
+## Vanliga frågor
 
-**Q: Can I use Aspose.Email in commercial projects?**  
-A: Yes, provided you have a valid commercial license.
+**F: Kan jag ladda e-postmeddelanden från andra format än .msg?**
 
-**Q: How do I process thousands of MSG files without running out of memory?**  
-A: Process files in batches, release each `MailMessage` after saving, and consider using Java’s `try‑with‑resources` pattern for automatic cleanup.
+S: Ja, Aspose.Email stöder EML, MSG, MHT och flera andra format.
+
+**F: Hur kan jag hantera mycket stora e-postfiler effektivt?**
+
+S: Använd streaming-API:er som tillhandahålls av Aspose.Email för att läsa/skriva data i bitar, vilket minskar minnesbelastningen.
+
+**F: Är det möjligt att ändra bilagor i ett MailMessage?**
+
+S: Absolut. Du kan lägga till, ta bort eller ersätta bilagor via samlingen `MailMessage.getAttachments()`.
+
+**F: Vad händer om min tidszonsförskjutning är negativ (bakom UTC)?**
+S: Skicka ett negativt millisekundvärde till `setTimeZoneOffset`, t.ex. `-3 * 60 * 60 * 1000` för UTC-3.
+
+**F: Kan jag använda Aspose.Email i kommersiella projekt?**
+S: Ja, förutsatt att du har en giltig kommersiell licens.
+
+**F: Hur bearbetar jag tusentals MSG-filer utan att få slut på minne?**
+S: Bearbeta filer i omgångar, släpp varje `MailMessage` efter att ha sparat och överväg att använda Javas `try-with-resources`-mönster för automatisk rensning.
+
+## Resurser
+- [Dokumentation](https://reference.aspose.com/email/java/)
+- [Nedladdningsbibliotek](https://releases.aspose.com/email/java/)
+- [Köplicens](https://purchase.aspose.com/buy)
+- [Gratis provperiod](https://releases.aspose.com/email/java/)
+- [Tillfällig licens](https://purchase.aspose.com/temporary-license/)
+- [Supportforum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
-## Resources
-- [Documentation](https://reference.aspose.com/email/java/)
-- [Download Library](https://releases.aspose.com/email/java/)
-- [Purchase License](https://purchase.aspose.com/buy)
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Support Forum](https://forum.aspose.com/c/email/10)
+**Senast uppdaterad:** 2026-02-27
+**Testad med:** Aspose.Email för Java 25.4 (jdk16-klassificerare)
+**Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

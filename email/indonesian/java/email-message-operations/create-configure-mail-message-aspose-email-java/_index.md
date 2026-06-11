@@ -12,22 +12,7 @@ url: /id/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
- Aspose.Email 25.4 for Java  
-**Author:** Aspose
-
-These lines are not to be translated? They are metadata. Probably keep as is? The instruction: translate all text content. So translate "Last Updated", "Tested With", "Author". But they are in bold. Should translate.
-
-**Last Updated:** -> "**Terakhir Diperbarui:**"
-
-**Tested With:** -> "**Diuji Dengan:**"
-
-**Author:** -> "**Penulis:**"
-
-Keep dates and version unchanged.
-
-Now produce final content with all translations, preserving shortcodes.
-
-Let's assemble.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -203,6 +188,12 @@ A: Kunjungi [forum Aspose](https://forum.aspose.com/c/email/10) untuk mencari ba
 - **Lisensi Sementara:** Dapatkan lisensi sementara untuk akses penuh.
 - **Dukungan:** Dapatkan bantuan dari forum komunitas Aspose.
 
+---
+
+**Terakhir Diperbarui:** 2026-02-27  
+**Diuji Dengan:** Aspose.Email 25.4 for Java  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -210,9 +201,3 @@ A: Kunjungi [forum Aspose](https://forum.aspose.com/c/email/10) untuk mencari ba
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-02-27  
-**Diuji Dengan:** Aspose.Email 25.4 for Java  
-**Penulis:** Aspose

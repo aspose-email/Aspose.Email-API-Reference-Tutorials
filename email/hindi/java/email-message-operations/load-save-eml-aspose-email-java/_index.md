@@ -201,6 +201,12 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 
 इन संसाधनों का और अधिक अन्वेषण करें और आवश्यकता पड़ने पर सपोर्ट से संपर्क करें। हैप्पी कोडिंग!
 
+---
+
+**अंतिम अपडेट:** 2026-02-27  
+**परीक्षण किया गया:** Aspose.Email 25.4 (jdk16 classifier)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-27  
-**परीक्षण किया गया:** Aspose.Email 25.4 (jdk16 classifier)  
-**लेखक:** Aspose

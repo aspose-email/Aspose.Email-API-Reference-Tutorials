@@ -207,12 +207,6 @@ A: Yes, provided you have a valid commercial license.
 **Q: How do I process thousands of MSG files without running out of memory?**  
 A: Process files in batches, release each `MailMessage` after saving, and consider using Java’s `try‑with‑resources` pattern for automatic cleanup.
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 ## Resources
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -220,6 +214,13 @@ A: Process files in batches, release each `MailMessage` after saving, and consid
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

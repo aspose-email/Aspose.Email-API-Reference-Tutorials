@@ -136,18 +136,6 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **不支援的格式** | 查閱最新的 Aspose.Email 文件，了解新支援的格式。 |
 
 ## 常見問答
-1. **Aspose.Email for Java 的用途是什麼？**  
-   - Aspose.Email for Java 協助管理電郵檔案，提供讀取、寫入與格式轉換功能。  
-2. **如何開始偵測電郵檔案格式？**  
-   - 透過 Maven 安裝函式庫，設定授權，然後使用 `FileFormatUtil.detectFileFormat()`。  
-3. **我可以在未購買完整授權的情況下使用 Aspose.Email for Java 嗎？**  
-   - 可以，您可以先使用免費試用或暫時授權來探索功能。  
-4. **可以偵測哪些電郵格式？**  
-   - 支援常見的格式，如 MSG 與 EML 等。  
-5. **格式偵測在實務應用上有何幫助？**  
-   - 它確保系統間的相容性，並促進資料遷移與處理。
-
-## 常見問答
 **Q: 如何使用 Aspose.Email **read msg file java**？**  
 A: 偵測格式後，您可以使用 `MailMessage.load(dataDir)` 載入 MSG 檔案，然後存取其屬性。
 
@@ -171,6 +159,12 @@ A: 請參考以下官方文件連結。
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**最後更新：** 2026-02-27  
+**測試環境：** Aspose.Email for Java 25.4 (jdk16)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -178,9 +172,3 @@ A: 請參考以下官方文件連結。
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-02-27  
-**測試環境：** Aspose.Email for Java 25.4 (jdk16)  
-**作者：** Aspose

@@ -207,12 +207,6 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 **س: كيف أعالج آلاف ملفات MSG دون نفاد الذاكرة؟**  
 ج: عالج الملفات على دفعات، حرّر كل `MailMessage` بعد الحفظ، وفكّر في نمط `try‑with‑resources` في Java لتنظيف تلقائي.
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email للـ Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 ## الموارد
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -220,6 +214,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email للـ Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

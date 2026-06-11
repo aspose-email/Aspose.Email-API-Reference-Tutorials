@@ -201,6 +201,12 @@ R: Sì, ma assicurati che ogni thread utilizzi la propria istanza di `MailMessag
 
 Esplora ulteriormente queste risorse e contatta il supporto se necessario. Buon coding!
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Esplora ulteriormente queste risorse e contatta il supporto se necessario. Buon 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

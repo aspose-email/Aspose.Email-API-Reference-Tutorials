@@ -134,18 +134,6 @@ Bij het werken met Aspose.Email, houd rekening met deze tips om de prestaties te
 | **Licentie niet toegepast** | Verifieer het licentiebestandspad en zorg dat `setLicense` wordt aangeroepen vóór enig API‑gebruik. |
 | **Niet‑ondersteund formaat** | Raadpleeg de nieuwste Aspose.Email‑documentatie voor recent toegevoegde formaten. |
 
-## FAQ‑sectie
-1. **Waar wordt Aspose.Email voor Java voor gebruikt?**  
-   - Aspose.Email voor Java helpt bij het beheren van e‑mailbestanden, waardoor lezen, schrijven en converteren tussen formaten mogelijk is.  
-2. **Hoe begin ik met het detecteren van e‑mailbestandsformaten?**  
-   - Installeer de bibliotheek via Maven, stel je licentie in, en gebruik `FileFormatUtil.detectFileFormat()`.  
-3. **Kan ik Aspose.Email voor Java gebruiken zonder een volledige licentie aan te schaffen?**  
-   - Ja, je kunt starten met een gratis proefversie of tijdelijke licentie om de functionaliteit te verkennen.  
-4. **Welke e‑mailformaten kunnen worden gedetecteerd?**  
-   - Veelvoorkomende formaten zoals MSG en EML worden ondersteund, naast andere.  
-5. **Hoe helpt formatdetectie in praktische toepassingen?**  
-   - Het waarborgt compatibiliteit tussen systemen en vergemakkelijkt datamigratie en -verwerking.
-
 ## Veelgestelde vragen
 **Q: Hoe kan ik **read msg file java** gebruiken met Aspose.Email?**  
 A: Nadat je het formaat hebt gedetecteerd, kun je het MSG‑bestand laden met `MailMessage.load(dataDir)` en vervolgens de eigenschappen benaderen.
@@ -170,6 +158,12 @@ A: Zie de officiële documentatie via de onderstaande links.
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -177,9 +171,3 @@ A: Zie de officiële documentatie via de onderstaande links.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

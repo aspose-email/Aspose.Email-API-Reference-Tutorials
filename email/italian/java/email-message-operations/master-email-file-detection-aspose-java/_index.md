@@ -13,12 +13,6 @@ url: /it/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
-.
-
-Also translate table headers and cells.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -140,18 +134,6 @@ Quando lavori con Aspose.Email, tieni presenti questi consigli per ottimizzare l
 | **Licenza non applicata** | Conferma il percorso del file di licenza e che `setLicense` venga chiamato prima di qualsiasi utilizzo dell'API. |
 | **Formato non supportato** | Controlla la documentazione più recente di Aspose.Email per i formati appena aggiunti. |
 
-## Sezione FAQ
-1. **A cosa serve Aspose.Email per Java?**  
-   - Aspose.Email per Java consente di gestire file email, permettendo lettura, scrittura e conversione tra formati.  
-2. **Come iniziare a rilevare i formati dei file email?**  
-   - Installa la libreria via Maven, imposta la licenza e usa `FileFormatUtil.detectFileFormat()`.  
-3. **Posso usare Aspose.Email per Java senza acquistare una licenza completa?**  
-   - Sì, puoi iniziare con una prova gratuita o una licenza temporanea per esplorare le funzionalità.  
-4. **Quali formati email possono essere rilevati?**  
-   - Sono supportati formati comuni come MSG ed EML, tra gli altri.  
-5. **In che modo la rilevazione del formato aiuta nelle applicazioni pratiche?**  
-   - Garantisce la compatibilità tra sistemi e facilita la migrazione e l'elaborazione dei dati.
-
 ## Domande Frequenti
 **Q: Come posso **read msg file java** usando Aspose.Email?**  
 A: Dopo aver rilevato il formato, puoi caricare il file MSG con `MailMessage.load(dataDir)` e quindi accedere alle sue proprietà.
@@ -176,6 +158,12 @@ A: Consulta i documenti ufficiali collegati qui sotto.
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -183,9 +171,3 @@ A: Consulta i documenti ufficiali collegati qui sotto.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

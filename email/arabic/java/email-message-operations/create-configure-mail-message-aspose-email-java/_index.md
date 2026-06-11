@@ -11,16 +11,6 @@ url: /ar/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
- there are bullet lists with *Explanation:* etc. Keep English words like Explanation? The rule says keep technical terms in English, but Explanation is not technical; we can translate it. However maybe keep as is? Probably translate.
-
-But we must keep the asterisk bullet formatting.
-
-Let's translate.
-
-Start with shortcodes unchanged.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -197,6 +187,12 @@ try {
 - **ترخيص مؤقت:** احصل على ترخيص مؤقت للوصول الكامل.
 - **الدعم:** احصل على مساعدة من منتدى مجتمع Aspose.
 
+---
+
+**آخر تحديث:** 2026-02-27  
+**تم الاختبار مع:** Aspose.Email 25.4 for Java  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -204,9 +200,3 @@ try {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-02-27  
-**تم الاختبار مع:** Aspose.Email 25.4 for Java  
-**المؤلف:** Aspose

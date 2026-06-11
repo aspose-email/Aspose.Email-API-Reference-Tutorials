@@ -201,6 +201,12 @@ A: Tak, ale upewnij się, że każdy wątek pracuje z własną instancją `MailM
 
 Zapoznaj się z tymi zasobami i skontaktuj się ze wsparciem w razie potrzeby. Szczęśliwego kodowania!
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Zapoznaj się z tymi zasobami i skontaktuj się ze wsparciem w razie potrzeby. S
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

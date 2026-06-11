@@ -209,12 +209,6 @@ A: Ja, vorausgesetzt, Sie besitzen eine gültige kommerzielle Lizenz.
 **F: Wie verarbeite ich tausende MSG‑Dateien, ohne dass der Speicher ausgeht?**  
 A: Verarbeiten Sie Dateien in Batches, geben Sie jedes `MailMessage` nach dem Speichern frei und nutzen Sie Java‑s `try‑with‑resources`‑Muster für automatische Bereinigung.
 
----
-
-**Zuletzt aktualisiert:** 2026-02-27  
-**Getestet mit:** Aspose.Email für Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose  
-
 ## Ressourcen
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ A: Verarbeiten Sie Dateien in Batches, geben Sie jedes `MailMessage` nach dem Sp
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Zuletzt aktualisiert:** 2026-02-27  
+**Getestet mit:** Aspose.Email für Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

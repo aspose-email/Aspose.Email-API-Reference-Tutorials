@@ -11,26 +11,6 @@ url: /zh/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
- but placeholders. Should keep them unchanged.
-
-Also there are markdown code fences? Actually not; they are placeholders. So we keep them.
-
-Now translate.
-
-Start with first shortcode line unchanged.
-
-Proceed.
-
-Let's translate each section.
-
-Will produce Chinese translation.
-
-Be careful not to translate URLs.
-
-Also keep list bullet points.
-
-Let's write.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -152,18 +132,6 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **许可证未生效** | 确认许可证文件路径，并在任何 API 调用前调用 `setLicense`。 |
 | **不支持的格式** | 查阅最新的 Aspose.Email 文档，了解新增支持的格式。 |
 
-## FAQ 区块
-1. **Aspose.Email for Java 的用途是什么？**  
-   - Aspose.Email for Java 用于管理邮件文件，支持读取、写入以及在不同格式之间转换。  
-2. **如何开始检测邮件文件格式？**  
-   - 通过 Maven 安装库，设置许可证，然后使用 `FileFormatUtil.detectFileFormat()`。  
-3. **可以在不购买完整许可证的情况下使用 Aspose.Email for Java 吗？**  
-   - 可以，免费试用或临时许可证均可用于功能探索。  
-4. **可以检测哪些邮件格式？**  
-   - 支持常见的 MSG、EML 等格式，还包括其他多种类型。  
-5. **格式检测在实际应用中有什么帮助？**  
-   - 它确保系统间的兼容性，便于数据迁移和处理。
-
 ## 常见问答
 **Q: 如何使用 Aspose.Email **read msg file java**？**  
 A: 在检测到格式后，可使用 `MailMessage.load(dataDir)` 加载 MSG 文件并访问其属性。
@@ -188,6 +156,12 @@ A: 请参阅下面的官方文档链接。
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +169,3 @@ A: 请参阅下面的官方文档链接。
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

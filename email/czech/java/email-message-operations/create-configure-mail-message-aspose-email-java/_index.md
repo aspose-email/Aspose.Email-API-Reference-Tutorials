@@ -188,6 +188,12 @@ A: Navštivte [Aspose fórum](https://forum.aspose.com/c/email/10), kde vám pom
 - **Dočasná licence:** Získejte dočasnou licenci pro plný přístup.
 - **Podpora:** Získejte pomoc na fóru komunity Aspose.
 
+---
+
+**Poslední aktualizace:** 2026-02-27  
+**Testováno s:** Aspose.Email 25.4 for Java  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: Navštivte [Aspose fórum](https://forum.aspose.com/c/email/10), kde vám pom
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-27  
-**Testováno s:** Aspose.Email 25.4 for Java  
-**Autor:** Aspose

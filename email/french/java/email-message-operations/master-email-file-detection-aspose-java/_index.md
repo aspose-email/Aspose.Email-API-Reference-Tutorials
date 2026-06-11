@@ -14,16 +14,6 @@ url: /fr/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
- mise à jour". But it's meta; still text. We'll translate.
-
-"Tested With:" -> "Testé avec:".
-
-"Author:" -> "Auteur:".
-
-Now produce final content.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -145,18 +135,6 @@ Lorsque vous travaillez avec Aspose.Email, gardez à l’esprit ces astuces pour
 | **Licence non appliquée** | Confirmez le chemin du fichier de licence et que `setLicense` est appelé avant toute utilisation de l’API. |
 | **Format non pris en charge** | Consultez la documentation la plus récente d’Aspose.Email pour les formats récemment ajoutés. |
 
-## Section FAQ
-1. **À quoi sert Aspose.Email pour Java ?**  
-   - Aspose.Email pour Java permet de gérer les fichiers d’e‑mail, offrant la lecture, l’écriture et la conversion entre différents formats.  
-2. **Comment démarrer la détection des formats de fichiers d’e‑mail ?**  
-   - Installez la bibliothèque via Maven, configurez votre licence, puis utilisez `FileFormatUtil.detectFileFormat()`.  
-3. **Puis‑je utiliser Aspose.Email pour Java sans acheter une licence complète ?**  
-   - Oui, vous pouvez commencer avec un essai gratuit ou une licence temporaire pour explorer les fonctionnalités.  
-4. **Quels formats d’e‑mail peuvent être détectés ?**  
-   - Les formats courants comme MSG et EML sont pris en charge, ainsi que d’autres formats.  
-5. **Comment la détection de format aide‑t‑elle dans les applications pratiques ?**  
-   - Elle garantit la compatibilité entre systèmes et facilite la migration et le traitement des données.
-
 ## Questions fréquentes
 **Q : Comment puis‑je **read msg file java** avec Aspose.Email ?**  
 R : Après avoir détecté le format, chargez le fichier MSG avec `MailMessage.load(dataDir)` puis accédez à ses propriétés.
@@ -181,6 +159,12 @@ R : Consultez les docs officielles via les liens ci‑dessous.
 - [Licence temporaire](https://purchase.aspose.com/temporary-license/)
 - [Forum d’assistance](https://forum.aspose.com/c/email/10)
 
+---
+
+**Dernière mise à jour** : 2026-02-27  
+**Testé avec** : Aspose.Email pour Java 25.4 (jdk16)  
+**Auteur** : Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,9 +172,3 @@ R : Consultez les docs officielles via les liens ci‑dessous.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour** : 2026-02-27  
-**Testé avec** : Aspose.Email pour Java 25.4 (jdk16)  
-**Auteur** : Aspose

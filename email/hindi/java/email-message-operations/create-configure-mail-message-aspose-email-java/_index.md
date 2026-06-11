@@ -188,6 +188,12 @@ A: सहायता के लिए [Aspose फ़ोरम](https://forum.as
 - **अस्थायी लाइसेंस:** पूर्ण एक्सेस के लिए एक अस्थायी लाइसेंस प्राप्त करें।
 - **समर्थन:** Aspose समुदाय फ़ोरम से सहायता प्राप्त करें।
 
+---
+
+**अंतिम अपडेट:** 2026-02-27  
+**परीक्षित संस्करण:** Aspose.Email 25.4 for Java  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: सहायता के लिए [Aspose फ़ोरम](https://forum.as
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-27  
-**परीक्षित संस्करण:** Aspose.Email 25.4 for Java  
-**लेखक:** Aspose

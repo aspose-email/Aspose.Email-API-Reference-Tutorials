@@ -201,6 +201,12 @@ R: Sí, pero asegúrese de que cada hilo trabaje con su propia instancia de `Mai
 
 Explore estos recursos más a fondo y solicite soporte si lo necesita. ¡Feliz codificación!
 
+---
+
+**Última actualización:** 2026-02-27  
+**Probado con:** Aspose.Email 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Explore estos recursos más a fondo y solicite soporte si lo necesita. ¡Feliz c
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-02-27  
-**Probado con:** Aspose.Email 25.4 (jdk16 classifier)  
-**Autor:** Aspose

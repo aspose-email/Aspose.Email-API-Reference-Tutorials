@@ -13,18 +13,6 @@ url: /tr/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
- placeholders unchanged.
-
-Also keep URLs unchanged.
-
-Now produce final output with all translated content.
-
-Let's craft translation.
-
-Will use Turkish.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -146,18 +134,6 @@ Aspose.Email ile çalışırken performansı artırmak için şu ipuçlarını g
 | **Lisans uygulanmadı** | Lisans dosyası yolunu doğrulayın ve `setLicense` çağrısının herhangi bir API kullanımından önce yapıldığından emin olun. |
 | **Desteklenmeyen format** | Yeni desteklenen formatlar için en son Aspose.Email belgelerine bakın. |
 
-## SSS Bölümü
-1. **Aspose.Email for Java ne için kullanılır?**  
-   - Aspose.Email for Java, e‑posta dosyalarını yönetmenizi, okumanızı, yazmanızı ve formatlar arasında dönüştürmenizi sağlar.  
-2. **E‑posta dosya formatlarını algılamaya nasıl başlayabilirim?**  
-   - Kütüphaneyi Maven ile kurun, lisansınızı ayarlayın ve `FileFormatUtil.detectFileFormat()` yöntemini kullanın.  
-3. **Tam lisans satın almadan Aspose.Email for Java’yı kullanabilir miyim?**  
-   - Evet, özellikleri keşfetmek için ücretsiz deneme ya da geçici lisansla başlayabilirsiniz.  
-4. **Hangi e‑posta formatları algılanabilir?**  
-   - MSG, EML gibi yaygın formatların yanı sıra daha fazlası desteklenir.  
-5. **Format algılaması pratik uygulamalarda nasıl yardımcı olur?**  
-   - Sistemler arası uyumluluğu sağlar, veri taşıma ve işleme süreçlerini kolaylaştırır.
-
 ## Sık Sorulan Sorular
 **S: Aspose.Email kullanarak **read msg file java** nasıl yapılır?**  
 C: Format algılandıktan sonra `MailMessage.load(dataDir)` ile MSG dosyasını yükleyebilir ve özelliklerine erişebilirsiniz.
@@ -182,6 +158,12 @@ C: Aşağıdaki resmi belgelere bakın.
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -189,9 +171,3 @@ C: Aşağıdaki resmi belgelere bakın.
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose

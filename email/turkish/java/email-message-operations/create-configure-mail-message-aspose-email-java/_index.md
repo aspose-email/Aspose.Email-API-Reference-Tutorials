@@ -188,6 +188,12 @@ C: Topluluk uzmanları ve Aspose ekibiyle iletişime geçmek için [Aspose forum
 - **Geçici Lisans:** Tam erişim için geçici bir lisans edinin.
 - **Destek:** Aspose topluluk forumundan yardım alın.
 
+---
+
+**Son Güncelleme:** 2026-02-27  
+**Test Edilen Versiyon:** Aspose.Email 25.4 for Java  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ C: Topluluk uzmanları ve Aspose ekibiyle iletişime geçmek için [Aspose forum
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-27  
-**Test Edilen Versiyon:** Aspose.Email 25.4 for Java  
-**Yazar:** Aspose

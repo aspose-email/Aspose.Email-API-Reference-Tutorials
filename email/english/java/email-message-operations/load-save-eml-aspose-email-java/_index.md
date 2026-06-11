@@ -199,6 +199,12 @@ A: Yes, but make sure each thread works with its own `MailMessage` instance and 
 
 Explore these resources further and reach out for support if needed. Happy coding!
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -206,9 +212,3 @@ Explore these resources further and reach out for support if needed. Happy codin
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

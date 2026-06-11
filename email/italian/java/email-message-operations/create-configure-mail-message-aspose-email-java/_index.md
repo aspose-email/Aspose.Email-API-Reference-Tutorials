@@ -188,6 +188,12 @@ R: Visita il [forum Aspose](https://forum.aspose.com/c/email/10) per chiedere ai
 - **Licenza temporanea:** Ottieni una licenza temporanea per accesso completo.
 - **Supporto:** Ricevi assistenza dal forum della community Aspose.
 
+---
+
+**Ultimo aggiornamento:** 2026-02-27  
+**Testato con:** Aspose.Email 25.4 per Java  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ R: Visita il [forum Aspose](https://forum.aspose.com/c/email/10) per chiedere ai
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-27  
-**Testato con:** Aspose.Email 25.4 per Java  
-**Autore:** Aspose

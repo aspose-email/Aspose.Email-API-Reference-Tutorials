@@ -187,6 +187,12 @@ A: เยี่ยมชม [Aspose forum](https://forum.aspose.com/c/email/10) 
 - **Temporary License:** รับลิขสิทธิ์ชั่วคราวเพื่อเข้าถึงเต็มรูปแบบ  
 - **Support:** รับความช่วยเหลือจากฟอรั่มชุมชน Aspose  
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 for Java  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -194,9 +200,3 @@ A: เยี่ยมชม [Aspose forum](https://forum.aspose.com/c/email/10) 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 for Java  
-**Author:** Aspose

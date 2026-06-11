@@ -132,18 +132,6 @@ Az Aspose.Email használata során vegye figyelembe ezeket a tippeket a teljesí
 | **Licenc nincs alkalmazva** | Győződjön meg a licencfájl útvonaláról, és hogy a `setLicense` hívás megtörtént-e bármely API használata előtt. |
 | **Nem támogatott formátum** | Tekintse meg a legújabb Aspose.Email dokumentációt az újonnan támogatott formátumokért. |
 
-## Gyakran ismételt kérdések (FAQ)
-1. **Miért használják az Aspose.Email for Java-t?**  
-   - Az Aspose.Email for Java segít az e-mail fájlok kezelésében, lehetővé téve azok olvasását, írását és formátumok közötti konvertálását.  
-2. **Hogyan kezdjek el e-mail fájlformátumok felismerésével?**  
-   - Telepítse a könyvtárat Maven segítségével, állítsa be a licencet, és használja a `FileFormatUtil.detectFileFormat()` metódust.  
-3. **Használhatom az Aspose.Email for Java-t teljes licenc vásárlása nélkül?**  
-   - Igen, elkezdheti ingyenes próbaverzióval vagy ideiglenes licenccel a funkciók felfedezéséhez.  
-4. **Milyen e-mail formátumok ismerhetők fel?**  
-   - Általános formátumok, mint a MSG és az EML, valamint továbbiak támogatottak.  
-5. **Hogyan segíti a formátum felismerése a gyakorlati alkalmazásokat?**  
-   - Biztosítja a kompatibilitást a rendszerek között, és megkönnyíti az adatmigrációt és feldolgozást.
-
 ## Gyakran ismételt kérdések
 **Q: Hogyan tudok **read msg file java**-t használni az Aspose.Email segítségével?**  
 A: A formátum felismerése után betöltheti a MSG fájlt a `MailMessage.load(dataDir)` metódussal, majd elérheti annak tulajdonságait.

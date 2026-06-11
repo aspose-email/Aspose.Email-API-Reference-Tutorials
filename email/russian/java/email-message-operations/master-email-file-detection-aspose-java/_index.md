@@ -134,18 +134,6 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **Лицензия не применена** | Убедитесь, что путь к файлу лицензии указан правильно и `setLicense` вызывается до любого использования API. |
 | **Неподдерживаемый формат** | Ознакомьтесь с последней документацией Aspose.Email для получения списка новых поддерживаемых форматов. |
 
-## Раздел FAQ
-1. **Для чего используется Aspose.Email для Java?**  
-   - Aspose.Email для Java помогает управлять файлами писем, позволяя читать, записывать и конвертировать их между форматами.  
-2. **Как начать обнаружение форматов файлов письма?**  
-   - Установите библиотеку через Maven, задайте лицензию и используйте `FileFormatUtil.detectFileFormat()`.  
-3. **Можно ли использовать Aspose.Email для Java без полной лицензии?**  
-   - Да, можно начать с бесплатной пробной версии или временной лицензии, чтобы изучить возможности.  
-4. **Какие форматы писем могут быть обнаружены?**  
-   - Поддерживаются распространённые форматы, такие как MSG и EML, а также другие.  
-5. **Как обнаружение формата помогает в практических приложениях?**  
-   - Оно обеспечивает совместимость между системами и упрощает миграцию и обработку данных.
-
 ## Часто задаваемые вопросы
 **В: Как я могу **read msg file java** с помощью Aspose.Email?**  
 О: После определения формата загрузите MSG‑файл с помощью `MailMessage.load(dataDir)` и затем обращайтесь к его свойствам.
@@ -170,6 +158,12 @@ System.out.println("The message format is: " + info.getFileFormatType());
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Последнее обновление:** 2026-02-27  
+**Тестировано с:** Aspose.Email для Java 25.4 (jdk16)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -177,9 +171,3 @@ System.out.println("The message format is: " + info.getFileFormatType());
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-02-27  
-**Тестировано с:** Aspose.Email для Java 25.4 (jdk16)  
-**Автор:** Aspose

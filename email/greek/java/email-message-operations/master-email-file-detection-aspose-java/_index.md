@@ -13,14 +13,6 @@ url: /el/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
- "Last Updated" to "Τελευταία Ενημέρωση", "Tested With" to "Δοκιμή Με", "Author" to "Συγγραφέας". Keep bold.
-
-Now produce final content.
-
-Be careful to keep markdown formatting.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -142,18 +134,6 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **Η άδεια δεν εφαρμόστηκε** | Επιβεβαιώστε τη διαδρομή του αρχείου άδειας και ότι το `setLicense` κλήθηκε πριν από οποιαδήποτε χρήση του API. |
 | **Μη υποστηριζόμενη μορφή** | Ελέγξτε την πιο πρόσφατη τεκμηρίωση του Aspose.Email για νέες υποστηριζόμενες μορφές. |
 
-## Ενότητα Συχνών Ερωτήσεων
-1. **Ποια είναι η χρήση του Aspose.Email για Java;**  
-   - Το Aspose.Email για Java βοηθά στη διαχείριση αρχείων email, επιτρέποντας ανάγνωση, εγγραφή και μετατροπή μεταξύ μορφών.  
-2. **Πώς ξεκινάω με την ανίχνευση μορφών αρχείων email;**  
-   - Εγκαταστήστε τη βιβλιοθήκη μέσω Maven, ορίστε την άδειά σας και χρησιμοποιήστε το `FileFormatUtil.detectFileFormat()`.  
-3. **Μπορώ να χρησιμοποιήσω το Aspose.Email για Java χωρίς πλήρη άδεια;**  
-   - Ναι, μπορείτε να ξεκινήσετε με δωρεάν δοκιμή ή προσωρινή άδεια για να εξερευνήσετε τις δυνατότητες.  
-4. **Ποιες μορφές email μπορούν να ανιχνευθούν;**  
-   - Υποστηρίζονται κοινές μορφές όπως MSG και EML, μεταξύ άλλων.  
-5. **Πώς η ανίχνευση μορφής βοηθά σε πρακτικές εφαρμογές;**  
-   - Διασφαλίζει τη συμβατότητα μεταξύ συστημάτων και διευκολύνει τη μεταφορά και επεξεργασία δεδομένων.
-
 ## Συχνές Ερωτήσεις
 **Ε: Πώς μπορώ να **read msg file java** χρησιμοποιώντας το Aspose.Email;**  
 Α: Αφού εντοπίσετε τη μορφή, μπορείτε να φορτώσετε το αρχείο MSG με `MailMessage.load(dataDir)` και να έχετε πρόσβαση στις ιδιότητές του.
@@ -178,6 +158,12 @@ System.out.println("The message format is: " + info.getFileFormatType());
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-02-27  
+**Δοκιμή Με:** Aspose.Email για Java 25.4 (jdk16)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -185,9 +171,3 @@ System.out.println("The message format is: " + info.getFileFormatType());
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-02-27  
-**Δοκιμή Με:** Aspose.Email για Java 25.4 (jdk16)  
-**Συγγραφέας:** Aspose

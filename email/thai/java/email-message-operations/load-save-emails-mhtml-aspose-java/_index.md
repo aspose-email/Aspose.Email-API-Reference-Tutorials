@@ -208,12 +208,6 @@ A: ได้, เพียงแค่มีไลเซนส์เชิงพ
 **Q: จะประมวลผลไฟล์ MSG จำนวนหลายพันไฟล์โดยไม่ให้หน่วยความจำหมดทำอย่างไร?**  
 A: ประมวลผลเป็น batch, ปล่อย `MailMessage` หลังบันทึกแต่ละครั้ง, และพิจารณาใช้ pattern `try‑with‑resources` ของ Java เพื่อทำความสะอาดอัตโนมัติ
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 ## แหล่งข้อมูล
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -221,6 +215,12 @@ A: ประมวลผลเป็น batch, ปล่อย `MailMessage` ห
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

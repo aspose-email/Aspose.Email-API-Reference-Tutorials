@@ -209,12 +209,6 @@ A: Ano, pokud máte platnou komerční licenci.
 **Q: Jak mohu zpracovat tisíce souborů MSG, aniž bych vyčerpával paměť?**  
 A: Zpracovávejte soubory po dávkách, po uložení uvolněte každý `MailMessage` a zvažte použití vzoru Java `try‑with‑resources` pro automatické čištění.
 
----
-
-**Poslední aktualizace:** 2026-02-27  
-**Testováno s:** Aspose.Email pro Java 25.4 (jdk16 classifier)  
-**Autor:** Aspose  
-
 ## Zdroje
 - [Dokumentace](https://reference.aspose.com/email/java/)
 - [Stáhnout knihovnu](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ A: Zpracovávejte soubory po dávkách, po uložení uvolněte každý `MailMess
 - [Bezplatná zkušební verze](https://releases.aspose.com/email/java/)
 - [Dočasná licence](https://purchase.aspose.com/temporary-license/)
 - [Fórum podpory](https://forum.aspose.com/c/email/10)
+
+---
+
+**Poslední aktualizace:** 2026-02-27  
+**Testováno s:** Aspose.Email pro Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

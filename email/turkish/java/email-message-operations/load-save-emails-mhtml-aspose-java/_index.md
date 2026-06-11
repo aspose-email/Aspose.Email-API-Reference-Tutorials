@@ -209,12 +209,6 @@ C: Evet, geçerli bir ticari lisansınız olduğu sürece.
 **S: Binlerce MSG dosyasını bellek tükenmeden nasıl işleyebilirim?**  
 C: Dosyaları partiler halinde işleyin, kaydettikten sonra her `MailMessage`'ı serbest bırakın ve otomatik temizlik için Java’nın `try‑with‑resources` desenini kullanmayı düşünün.
 
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
 ## Kaynaklar
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ C: Dosyaları partiler halinde işleyin, kaydettikten sonra her `MailMessage`'ı
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

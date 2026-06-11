@@ -18,41 +18,41 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # Cách tải MSG và lưu dưới dạng MHTML bằng Aspose.Email cho Java
 
-## Introduction
+## Giới thiệu
 
-Nếu bạn cần **how to load msg** các tệp, điều chỉnh dấu thời gian của chúng, và sau đó **convert msg to mhtml**, bạn đang ở đúng nơi. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách tải một email `.msg`, áp dụng độ lệch múi giờ tùy chỉnh, và lưu kết quả dưới dạng một kho lưu trữ MHTML — tất cả đều sử dụng Aspose.Email cho Java. Dù bạn đang xử lý một tin nhắn duy nhất hay một quy trình **batch email processing**, các bước này sẽ cung cấp nền tảng vững chắc.
+Nếu bạn cần **cách tải tin nhắn** các tệp, điều chỉnh dấu thời gian của chúng và sau đó **chuyển đổi tin nhắn thành mhtml**, bạn đang ở đúng nơi. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách tải một email `.msg`, áp dụng tùy chỉnh múi giờ tùy chỉnh và lưu kết quả dưới dạng kho lưu trữ MHTML — Tất cả đều sử dụng Aspose.Email cho Java. Dù bạn đang xử lý một tin nhắn duy nhất hay một quy trình **xử lý email hàng loạt**, các bước này sẽ cung cấp nền tảng vững chắc.
 
-**What you’ll learn**
+**Bạn sẽ học được gì**
 - Cách tải một `MailMessage` từ tệp `.msg`.
-- Cách đặt múi giờ tùy chỉnh và ngày hiện tại.
+- Cách cài đặt tùy chọn múi giờ và hiện tại ngày.
 - Cách lưu tin nhắn dưới dạng MHTML với định dạng chính xác.
-- Mẹo mở rộng cách tiếp cận cho các kịch bản batch.
+- Mẹo mở rộng cách tiếp cận cho lô bản script.
 
-Ready to boost your email workflow? Let’s get the environment ready first.
+Sẵn sàng để tăng cường quy trình làm việc email của bạn? Trước tiên hãy chuẩn bị sẵn sàng môi trường.
 
-## Quick Answers
-- **What is the primary library?** Aspose.Email for Java.
-- **Can I load MSG and export to MHTML in one step?** No, you load, adjust, then save.
-- **Do I need a license for production?** Yes, a valid Aspose.Email license is required.
-- **Is timezone handling supported?** Yes, via `setTimeZoneOffset`.
-- **Can this be used in batch processing?** Absolutely – wrap the steps in a loop.
+## Trả lời nhanh
+- **Thư viện chính là gì?** Aspose.Email for Java.
+- **Tôi có thể tải MSG và xuất sang MHTML trong một bước không?** Không, bạn tải, điều chỉnh rồi lưu lại.
+- **Tôi có cần giấy phép sản xuất không?** Có, cần có giấy phép Aspose.Email hợp lệ.
+- **Có hỗ trợ xử lý múi giờ không?** Có, thông qua `setTimeZoneOffset`.
+- **Điều này có thể được sử dụng trong xử lý hàng loạt không?** Hoàn toàn có thể – gói các bước trong một vòng lặp.
 
-## Prerequisites
+## Điều kiện tiên quyết
 
-Trước khi bắt đầu, hãy chắc chắn bạn có những thứ sau:
+Trước khi bắt đầu, hãy chắc chắn rằng bạn có thứ sau:
 
-### Required Libraries and Dependencies
+### Thư viện và thư viện phụ thuộc bắt buộc
 - Thư viện **Aspose.Email for Java** phiên bản 25.4 (jdk16 classifier)
 - Kiến thức cơ bản về Java.
 - Một IDE như IntelliJ IDEA hoặc Eclipse.
 
-### Environment Setup Requirements
-- JDK 16 hoặc mới hơn đã được cài đặt.
+### Yêu cầu thiết lập môi trường
+- JDK16hoặc mới hơn đã được cài đặt.
 - Maven để quản lý phụ thuộc.
 
-## Setting Up Aspose.Email for Java
+## Thiết lập Aspose.Email cho Java
 
-Để thêm thư viện vào dự án Maven, bao gồm phụ thuộc sau:
+Để thêm thư viện vào dự án Maven, bao gồm các phụ thuộc sau:
 
 ```xml
 <dependency>
@@ -63,15 +63,15 @@ Trước khi bắt đầu, hãy chắc chắn bạn có những thứ sau:
 </dependency>
 ```
 
-### License Acquisition Steps
+### Các bước lấy giấy phép
 
-Bắt đầu với một **free trial** hoặc lấy một **temporary license** để đánh giá đầy đủ khả năng của thư viện mà không có giới hạn. Đối với việc sử dụng lâu dài, hãy cân nhắc mua giấy phép:
+Bắt đầu **dùng thử miễn phí** hoặc lấy **giấy phép tạm thời** để đánh giá đầy đủ giá trị của thư viện mà không có giới hạn. Đối với việc sử dụng lâu dài, hãy cân nhắc mua giấy phép:
 
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Purchase License](https://purchase.aspose.com/buy)
+- [Dùng thử miễn phí](https://releases.aspose.com/email/java/)
+- [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)
+- [Mua giấy phép](https://purchase.aspose.com/buy)
 
-### Basic Initialization
+### Khởi tạo cơ bản
 
 Sau khi thêm phụ thuộc, khởi tạo giấy phép trong mã Java của bạn:
 
@@ -82,39 +82,39 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## Implementation Guide
+## Hướng dẫn thực hiện
 
-Chúng tôi sẽ chia triển khai thành ba tính năng rõ ràng.
+Chúng tôi sẽ chia sẻ việc khai triển thành ba tính năng rõ ràng.
 
-### Feature 1: Loading a MailMessage from a File
+### Tính năng 1: Tải Thư từ một Tệp
 
-#### Overview
-Tải một tệp `.msg` cho phép bạn truy cập đầy đủ về lập trình tới nội dung email, tệp đính kèm và siêu dữ liệu.
+#### Tổng quan
+Tải một tệp `.msg` cho phép bạn truy cập đầy đủ cài đặt tới email nội dung, tệp đính kèm và siêu dữ liệu.
 
-#### Step‑by‑Step
+#### Từng bước một
 
-**Import the required classes**
+**Nhập các lớp được yêu cầu**
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
 
-**Load the email**
+**Tải email**
 
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-`MsgLoadOptions` lets you control how the MSG file is interpreted; the default settings work for most scenarios.
+`MsgLoadOptions` cho phép bạn kiểm soát cách diễn giải tệp MSG; cài đặt mặc định hoạt động trong hầu hết các trường hợp.
 
-### Feature 2: Setting the Current Date and Custom Timezone Offset
+### Tính năng 2: Cài đặt ngày hiện tại và độ lệch múi giờ tùy chỉnh
 
-#### Overview
-Accurate timestamps are essential when you’re dealing with users across different regions.
+#### Tổng quan
+Dấu thời gian chính xác là điều cần thiết khi bạn giao dịch với người dùng ở các khu vực khác nhau.
 
-**Set the current date**
+**Đặt ngày hiện tại**
 
 ```java
 import java.util.Date;
@@ -122,20 +122,20 @@ import java.util.Date;
 msg.setDate(new Date());
 ```
 
-**Apply a custom timezone offset (e.g., UTC+5)**
+**Áp dụng độ lệch múi giờ tùy chỉnh (ví dụ: UTC+5)**
 
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-The offset is expressed in milliseconds, so you can also pass negative values for zones west of UTC.
+Độ lệch được biểu thị bằng mili giây, vì vậy bạn cũng có thể truyền các giá trị âm cho các múi giờ phía tây UTC.
 
-### Feature 3: Saving a MailMessage as an MHTML File
+### Tính năng 3: Lưu tin nhắn email dưới dạng tệp MHTML
 
-#### Overview
-MHTML bundles HTML content and embedded resources into a single file, perfect for archiving or sharing.
+#### Tổng quan
+MHTML đóng gói nội dung HTML và các tài nguyên nhúng vào một tệp duy nhất, rất phù hợp để lưu trữ hoặc chia sẻ.
 
-**Configure save options**
+**Cấu hình các tùy chọn lưu**
 
 ```java
 import com.aspose.email.MhtSaveOptions;
@@ -145,82 +145,90 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**Save the email**
+**Lưu email**
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
 ```
 
-The resulting `.mhtml` file retains the original formatting, images, and attachments.
+Tệp `.mhtml` kết quả vẫn giữ nguyên định dạng, hình ảnh và tệp đính kèm ban đầu.
 
-## Why Convert MSG to MHTML?
+## Tại sao cần chuyển đổi MSG sang MHTML?
 
-Converting MSG files to MHTML gives you a web‑friendly, single‑file representation that can be opened in any modern browser. This is especially useful for:
+Việc chuyển đổi tệp MSG sang MHTML cung cấp cho bạn một định dạng tệp duy nhất thân thiện với web, có thể mở được trên bất kỳ trình duyệt hiện đại nào. Điều này đặc biệt hữu ích cho:
 
-- **Legal archiving** where a faithful visual copy is required.
-- **Cross‑platform sharing** without needing Outlook.
-- **Embedding emails** into web pages or documentation.
+- **Lưu trữ pháp lý** khi cần bản sao hình ảnh chính xác.
 
-## Batch Email Processing Tips
+- **Chia sẻ đa nền tảng** mà không cần Outlook.
 
-If you need to **batch email processing**, wrap the loading, timezone adjustment, and saving steps inside a loop that iterates over a directory of `.msg` files. Remember to:
+- **Nhúng email** vào các trang web hoặc tài liệu.
 
-1. Reuse a single `License` instance to avoid overhead.
-2. Release resources after each iteration (`msg.dispose()` if applicable).
-3. Log any failures to a separate file for later review.
+## Mẹo xử lý email hàng loạt
 
-## Practical Applications
+Nếu bạn cần **xử lý email hàng loạt**, hãy gói các bước tải, điều chỉnh múi giờ và lưu vào trong một vòng lặp lặp lại trên thư mục chứa các tệp `.msg`. Hãy nhớ:
 
-1. **Email Archiving:** Preserve communications in a portable format for compliance.
-2. **Global Scheduling:** Adjust timestamps to a unified timezone before sending notifications.
-3. **CRM Integration:** Automatically import archived emails into a CRM system as MHTML attachments.
+1. Sử dụng lại một phiên bản `License` duy nhất để tránh lãng phí tài nguyên.
 
-## Performance Considerations
+2. Giải phóng tài nguyên sau mỗi lần lặp (`msg.dispose()` nếu có).
 
-- **Memory Management:** Process large batches in chunks to keep memory usage low.
-- **I/O Optimization:** Use buffered streams if you’re reading/writing many files.
-- **Parallel Execution:** Consider Java’s `ForkJoinPool` for parallel processing, but ensure thread‑safety of the Aspose objects.
+3. Ghi lại bất kỳ lỗi nào vào một tệp riêng để xem xét sau.
 
-## Conclusion
+## Ứng dụng thực tiễn
 
-You now know **how to load msg** files, apply custom timezone offsets, and **convert msg to mhtml** using Aspose.Email for Java. These techniques can be scaled to handle **batch email processing** tasks, giving you a robust solution for email archiving, migration, and automation.
+1. **Lưu trữ email:** Bảo quản thông tin liên lạc ở định dạng di động để tuân thủ quy định.
 
-**Next Steps**  
-Explore additional Aspose.Email features such as attachment handling, calendar item extraction, or SMTP sending by visiting the official [documentation](https://reference.aspose.com/email/java/).
+2. **Lập lịch toàn cầu:** Điều chỉnh dấu thời gian về múi giờ thống nhất trước khi gửi thông báo.
 
-## Frequently Asked Questions
+3. **Tích hợp CRM:** Tự động nhập email đã lưu trữ vào hệ thống CRM dưới dạng tệp đính kèm MHTML.
 
-**Q: Can I load emails from formats other than .msg?**  
-A: Yes, Aspose.Email supports EML, MSG, MHT, and several other formats.
+## Cân nhắc về hiệu năng
 
-**Q: How can I handle very large email files efficiently?**  
-A: Use streaming APIs provided by Aspose.Email to read/write data in chunks, reducing memory pressure.
+- **Quản lý bộ nhớ:** Xử lý các lô lớn theo từng phần để giữ mức sử dụng bộ nhớ thấp.
 
-**Q: Is it possible to modify attachments within a MailMessage?**  
-A: Absolutely. You can add, remove, or replace attachments via the `MailMessage.getAttachments()` collection.
+- **Tối ưu hóa I/O:** Sử dụng luồng đệm nếu bạn đang đọc/ghi nhiều tệp.
 
-**Q: What if my timezone offset is negative (behind UTC)?**  
-A: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 * 60 * 60 * 1000` for UTC‑3.
+- **Thực thi song song:** Cân nhắc sử dụng `ForkJoinPool` của Java để xử lý song song, nhưng đảm bảo tính an toàn luồng của các đối tượng Aspose.
 
-**Q: Can I use Aspose.Email in commercial projects?**  
-A: Yes, provided you have a valid commercial license.
+## Kết luận
 
-**Q: How do I process thousands of MSG files without running out of memory?**  
-A: Process files in batches, release each `MailMessage` after saving, and consider using Java’s `try‑with‑resources` pattern for automatic cleanup.
+Bây giờ bạn đã biết **cách tải tệp msg**, áp dụng độ lệch múi giờ tùy chỉnh và **chuyển đổi msg sang mhtml** bằng Aspose.Email cho Java. Các kỹ thuật này có thể được mở rộng để xử lý các tác vụ **xử lý email hàng loạt**, cung cấp cho bạn một giải pháp mạnh mẽ để lưu trữ, di chuyển và tự động hóa email.
+
+**Các bước tiếp theo** Khám phá thêm các tính năng của Aspose.Email như xử lý tệp đính kèm, trích xuất mục lịch hoặc gửi SMTP bằng cách truy cập tài liệu chính thức [documentation](https://reference.aspose.com/email/java/).
+
+## Câu hỏi thường gặp
+
+**H: Tôi có thể tải email từ các định dạng khác ngoài .msg không?**
+Đáp: Có, Aspose.Email hỗ trợ EML, MSG, MHT và một số định dạng khác.
+
+**H: Làm thế nào tôi có thể xử lý các tệp email rất lớn một cách hiệu quả?**
+Đáp: Sử dụng API truyền dữ liệu do Aspose.Email cung cấp để đọc/ghi dữ liệu theo từng phần, giảm áp lực bộ nhớ.
+
+**H: Có thể sửa đổi tệp đính kèm trong MailMessage không?**
+Đáp: Chắc chắn rồi. Bạn có thể thêm, xóa hoặc thay thế tệp đính kèm thông qua bộ sưu tập `MailMessage.getAttachments()`.
+
+** **Hỏi: Nếu độ lệch múi giờ của tôi là âm (chậm hơn UTC) thì sao?**
+Trả lời: Hãy truyền giá trị mili giây âm cho `setTimeZoneOffset`, ví dụ: `-3 * 60 * 60 * 1000` cho UTC-3.
+
+**Hỏi: Tôi có thể sử dụng Aspose.Email trong các dự án thương mại không?**
+Trả lời: Có, miễn là bạn có giấy phép thương mại hợp lệ.
+
+**Hỏi: Làm thế nào để xử lý hàng nghìn tệp MSG mà không bị hết bộ nhớ?**
+Trả lời: Xử lý các tệp theo lô, giải phóng mỗi `MailMessage` sau khi lưu và xem xét sử dụng mẫu `try-with-resources` của Java để tự động dọn dẹp.
+
+** ## Tài liệu tham khảo
+- [Tài liệu hướng dẫn](https://reference.aspose.com/email/java/)
+- [Tải xuống thư viện](https://releases.aspose.com/email/java/)
+- [Mua giấy phép](https://purchase.aspose.com/buy)
+
+- [Dùng thử miễn phí](https://releases.aspose.com/email/java/)
+- [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)
+- [Diễn đàn hỗ trợ](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
-## Resources
-- [Documentation](https://reference.aspose.com/email/java/)
-- [Download Library](https://releases.aspose.com/email/java/)
-- [Purchase License](https://purchase.aspose.com/buy)
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Support Forum](https://forum.aspose.com/c/email/10)
+**Cập nhật lần cuối:** 27/02/2026
+**Đã kiểm thử với:** Aspose.Email for Java 25.4 (phân loại jdk16)
+**Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

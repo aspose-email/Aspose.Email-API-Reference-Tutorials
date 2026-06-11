@@ -12,15 +12,7 @@ url: /fr/java/email-message-operations/create-configure-mail-message-aspose-emai
 weight: 1
 ---
 
- version unchanged.
-
-Translate to French: "Dernière mise à jour", "Testé avec", "Auteur". Keep date and version.
-
-Now produce final content.
-
-Be careful to preserve markdown formatting.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -81,10 +73,10 @@ Ajoutez le fragment suivant à votre `pom.xml` :
 
 Une fois la licence obtenue, placez le fichier `.lic` dans les ressources de votre projet et chargez‑le au moment de l’exécution (non montré ici pour rester concis).
 
-## Guide d’implémentation
-Voici un guide pas à pas pour créer un `MailMessage`, configurer un `SmtpClient` et envoyer l’e‑mail.
+## Guide d'implémentation
+Voici un guide pas à pas pour créer un `MailMessage`, configurer un `SmtpClient` et envoyer l'e-mail.
 
-### How to Create Email – Setting Up the Sender
+### Comment créer un e-mail – Configuration de l'expéditeur
 Instanciez d’abord un `MailMessage` et définissez l’adresse de l’expéditeur :
 
 ```java
@@ -96,7 +88,7 @@ message.setFrom(new MailAddress("sender@sender.com")); // Set sender email addre
 ```
 *Explication :* `setFrom` assigne l’adresse e‑mail de l’expéditeur au message.
 
-### How to Add Recipients, CCs, and BCCs
+### Comment ajouter des destinataires, des CC et des BCC
 Ensuite, remplissez les listes de destinataires à l’aide de `MailAddressCollection` :
 
 ```java
@@ -123,8 +115,8 @@ message.setBcc(bccList); // Set BCC email addresses
 ```
 *Explication :* `MailAddressCollection` gère les listes de destinataires, en veillant à ce que chaque adresse soit correctement formatée.
 
-### How to Configure SMTP Client
-Configurez maintenant le client SMTP avec les détails de votre serveur et les informations d’authentification :
+### Comment configurer le client SMTP
+Configurez maintenant le client SMTP avec les détails de votre serveur et les informations d'authentification :
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -138,7 +130,7 @@ client.setPort(25);                // Commonly used port for SMTP
 ```
 *Explication :* `SmtpClient` gère la connexion à votre serveur de messagerie. Pour une transmission sécurisée, vous pouvez activer SSL/TLS via `client.setSecurityOptions(SecurityOptions.SSLExplicit)` (non montré).
 
-### How to Send an Email
+### Comment envoyer un e-mail
 Enfin, envoyez le message préparé :
 
 ```java
@@ -151,42 +143,42 @@ try {
 *Explication :* La méthode `send` déclenche le processus de livraison. Tout problème réseau ou d’authentification sera intercepté dans le bloc `catch`.
 
 ## Problèmes courants et solutions
-- **Échecs d’authentification :** Vérifiez le nom d’utilisateur/mot de passe et assurez‑vous que le compte autorise l’accès SMTP.  
-- **Port bloqué par le pare‑feu :** Confirmez que le trafic sortant sur le port choisi (25, 587 ou 465) est autorisé.  
-- **Erreurs SSL/TLS :** Utilisez l’option de sécurité appropriée (`SSLExplicit` ou `SSLImplicit`) et correspondez au protocole attendu par le serveur.  
-- **Fuites de ressources :** Appelez `client.dispose()` ou encapsulez le client dans un bloc try‑with‑resources si vous utilisez une version plus récente de l’API.
+- **Échecs d’authentification :** Vérifiez le nom d’utilisateur/mot de passe et assurez‑vous que le compte autorise l’accès SMTP.
+- **Port bloqué par le pare-feu:** Confirmez que le trafic sortant sur le port choisi (25, 587 ou 465) est autorisé.
+- **Erreurs SSL/TLS :** Utilisez l'option de sécurité appropriée (`SSLExplicit` ou `SSLImplicit`) et correspondez au protocole attendu par le serveur.
+- **Fuites de ressources :** Appelez `client.dispose()` ou encapsulez le client dans un bloc try‑with‑resources si vous utilisez une version plus récente de l'API.
 
 ## Applications pratiques
 Voici des scénarios réels où cette configuration excelle :
-- **Notifications automatisées :** Envoyez des alertes, réinitialisations de mot de passe ou confirmations de commande sans intervention manuelle.  
-- **Campagnes d’e‑mail en masse :** Parcourez une liste de destinataires et expédiez des newsletters efficacement.  
-- **Intégration CRM :** Synchronisez la communication e‑mail directement depuis votre système CRM basé sur Java.
+- **Notifications automatisées :** Envoyez des alertes, réinitialisations de mot de passe ou confirmations de commande sans intervention manuelle.
+- **Campagnes d'e-mail en masse :** Parcourez une liste de destinataires et expédiez des newsletters efficacement.
+- **Intégration CRM:** Synchronisez la communication e-mail directement depuis votre système CRM basé sur Java.
 
 ## Conseils de performance
-- **Utilisez des connexions sécurisées :** Privilégiez les ports 587 (STARTTLS) ou 465 (SSL) pour un transfert chiffré.  
-- **Réutilisez les instances `SmtpClient` :** Lors de l’envoi de nombreux messages, réutilisez le client pour éviter les négociations répétées.  
-- **Fermez rapidement les ressources :** Libérez le client après le lot d’envois pour libérer les sockets.  
-- **Implémentez des tentatives de nouvelle connexion :** Ajoutez une logique de back‑off exponentiel pour les pannes réseau transitoires.
+- **Utilisez des connexions sécurisées :** Privilégiez les ports 587 (STARTTLS) ou 465 (SSL) pour un transfert chiffré.
+- **Réutilisez les instances `SmtpClient` :** Lors de l'envoi de nombreux messages, réutilisez le client pour éviter les négociations répétées.
+- **Fermez rapidement les ressources :** Libérez le client après le lot d'envois pour libérer les sockets.
+- **Implémentez des tentatives de nouvelle connexion :** Ajoute une logique de back‑off exponentiel pour les pannes réseau transitoires.
 
 ## Conclusion
-En suivant ce guide, vous savez maintenant **comment créer des e‑mails** et **configurer un client SMTP** avec Aspose.Email pour Java. Ces compétences sont essentielles pour ajouter des capacités d’e‑mail fiables à toute application Java. Continuez à expérimenter avec du contenu enrichi — corps HTML, pièces jointes et images intégrées — pour exploiter pleinement le potentiel d’Aspose.Email. Pour aller plus loin, explorez la [documentation Aspose](https://reference.aspose.com/email/java/).
+En suivant ce guide, vous savez maintenant **comment créer des e-mails** et **configurer un client SMTP** avec Aspose.Email pour Java. Ces compétences sont essentielles pour ajouter des capacités de messagerie fiables à toute application Java. Continuez à expérimenter avec du contenu enrichi — corps HTML, pièces jointes et images intégrées — pour exploiter pleinement le potentiel d’Aspose.Email. Pour aller plus loin, explorez la [documentation Aspose](https://reference.aspose.com/email/java/).
 
-## FAQ
+##FAQ
 
-**Q1 : Qu’est‑ce qu’Aspose.Email pour Java ?**  
-R : C’est une bibliothèque puissante qui facilite la création, l’envoi et la gestion des e‑mails dans les applications Java.
+**Q1 : Qu’est‑ce qu’Aspose.Email pour Java ?**
+R : C’est une bibliothèque puissante qui facilite la création, l’envoi et la gestion des e-mails dans les applications Java.
 
-**Q2 : Puis‑je utiliser Aspose.Email avec d’autres langages de programmation ?**  
-R : Oui, il prend en charge .NET, C++, Android et plus encore. Consultez leur [documentation](https://reference.aspose.com/email/java/) pour plus de détails.
+**Q2 : Puis‑je utiliser Aspose.Email avec d’autres langages de programmation ?**
+R : Oui, il prend en charge .NET, C++, Android et plus encore. Consultez leur [documentation](https://reference.aspose.com/email/java/) pour plus de détails.
 
-**Q3 : Comment gérer les pièces jointes volumineuses ?**  
-R : Envisagez de compresser les fichiers avant de les attacher afin de réduire leur taille.
+**Q3 : Comment gérer les pièces jointes volumineuses ?**
+R : Envisagez de compresser les fichiers avant de les attacher afin de réduire leur taille.
 
-**Q4 : Quels ports sont couramment utilisés pour les serveurs SMTP ?**  
-R : Le port 25 est standard, mais il est recommandé d’utiliser 587 ou 465 pour des connexions chiffrées.
+**Q4 : Quels ports sont utilisés pour les serveurs SMTP ?**
+R : Le port 25 est standard, mais il est recommandé d'utiliser 587 ou 465 pour des connexions chiffrées.
 
-**Q5 : Où puis‑je trouver de l’aide en cas de problème ?**  
-R : Visitez le [forum Aspose](https://forum.aspose.com/c/email/10) pour obtenir de l’aide auprès de la communauté et du personnel Aspose.
+**Q5 : Où puis‑je trouver de l’aide en cas de problème?**
+R : Visitez le [forum Aspose](https://forum.aspose.com/c/email/10) pour obtenir de l’aide auprès de la communauté et du personnel Aspose.
 
 ## Ressources
 - **Documentation :** Guides complets sur [Aspose Documentation](https://reference.aspose.com/email/java/)
@@ -196,6 +188,12 @@ R : Visitez le [forum Aspose](https://forum.aspose.com/c/email/10) pour obteni
 - **Licence temporaire :** Obtenez une licence temporaire pour un accès complet.
 - **Support :** Recevez de l’assistance via le forum communautaire Aspose.
 
+---
+
+**Dernière mise à jour :** 2026-02-27  
+**Testé avec :** Aspose.Email 25.4 for Java  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -203,9 +201,3 @@ R : Visitez le [forum Aspose](https://forum.aspose.com/c/email/10) pour obteni
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-02-27  
-**Testé avec :** Aspose.Email 25.4 for Java  
-**Auteur :** Aspose

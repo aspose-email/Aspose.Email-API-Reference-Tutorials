@@ -188,6 +188,12 @@ A: Besök [Aspose forum](https://forum.aspose.com/c/email/10) för att få hjäl
 - **Tillfällig licens:** Skaffa en tillfällig licens för full åtkomst.
 - **Support:** Få hjälp via Aspose community‑forum.
 
+---
+
+**Senast uppdaterad:** 2026-02-27  
+**Testat med:** Aspose.Email 25.4 for Java  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: Besök [Aspose forum](https://forum.aspose.com/c/email/10) för att få hjäl
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-02-27  
-**Testat med:** Aspose.Email 25.4 for Java  
-**Författare:** Aspose

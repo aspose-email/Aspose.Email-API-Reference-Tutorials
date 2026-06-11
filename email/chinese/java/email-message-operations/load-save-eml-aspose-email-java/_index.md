@@ -11,24 +11,6 @@ url: /zh/java/email-message-operations/load-save-eml-aspose-email-java/
 weight: 1
 ---
 
-保存 eml” 是什么？". Keep "EML" etc.
-
-Also "Why Use Aspose.Email for EML Operations?" -> "为什么在 EML 操作中使用 Aspose.Email？"
-
-And so on.
-
-Make sure to keep markdown formatting.
-
-Also note the line "## Resources" etc.
-
-Also the final "Last Updated" etc should stay as is? Probably translate "Last Updated" to Chinese? The instruction says translate all text content naturally to Chinese. So we translate "Last Updated" and "Tested With" and "Author". Keep dates unchanged.
-
-Also the "Explore these resources further and reach out for support if needed. Happy coding!" translate.
-
-Also the backtop button shortcode remains unchanged.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
@@ -218,6 +200,12 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 
 进一步探索这些资源，如有需要请获取支持。祝编码愉快！
 
+---
+
+**最后更新：** 2026-02-27  
+**测试环境：** Aspose.Email 25.4（jdk16 分类器）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -225,9 +213,3 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-02-27  
-**测试环境：** Aspose.Email 25.4（jdk16 分类器）  
-**作者：** Aspose

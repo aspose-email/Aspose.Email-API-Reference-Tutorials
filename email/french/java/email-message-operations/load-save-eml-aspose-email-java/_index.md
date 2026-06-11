@@ -201,6 +201,12 @@ R : Oui, mais veillez à ce que chaque thread travaille avec sa propre instanc
 
 Explorez ces ressources et contactez le support si besoin. Bon codage !
 
+---
+
+**Dernière mise à jour :** 2026-02-27  
+**Testé avec :** Aspose.Email 25.4 (classifier jdk16)  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -208,9 +214,3 @@ Explorez ces ressources et contactez le support si besoin. Bon codage !
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-02-27  
-**Testé avec :** Aspose.Email 25.4 (classifier jdk16)  
-**Auteur :** Aspose

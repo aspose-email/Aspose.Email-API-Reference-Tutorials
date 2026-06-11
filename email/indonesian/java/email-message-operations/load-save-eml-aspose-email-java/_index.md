@@ -175,20 +175,20 @@ Anda sekarang tahu **how to save eml** file di Java dengan Aspose.Email, cara me
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Can I use Aspose.Email without a license?**  
+**Q: Bisakah saya menggunakan Aspose.Email tanpa lisensi?**
 A: Ya, percobaan gratis tersedia, tetapi membatasi ukuran file dan beberapa fitur.
 
-**Q: How do I update to the latest version of Aspose.Email for Java?**  
+**T: Bagaimana cara memperbarui Aspose.Email untuk Java ke versi terbaru?**
 A: Ubah tag `<version>` di `pom.xml` Anda ke nomor rilis terbaru dan jalankan `mvn clean install`.
 
-**Q: Is it possible to handle other email formats besides EML?**  
-A: Tentu saja. Aspose.Email mendukung MSG, MHTML, dan beberapa format lain secara langsung.
+**T: Apakah mungkin menangani format email lain selain EML?**
+J: Tentu saja. Aspose.Email mendukung MSG, MHTML, dan beberapa format lain secara langsung.
 
-**Q: What should I do if my application crashes while processing emails?**  
-A: Periksa jejak stack untuk pengecualian `ProgressEventHandlerInfo`, pastikan stream ditutup dalam blok `finally`, dan verifikasi bahwa file lisensi dimuat dengan benar.
+**T: Apa yang harus saya lakukan jika aplikasi saya mogok saat memproses email?**
+A: Periksa jejak stack untuk memuat `ProgressEventHandlerInfo`, pastikan stream ditutup dalam blok `finally`, dan verifikasi bahwa lisensi file dimuat dengan benar.
 
-**Q: Can this setup be used in a multi‑threaded environment?**  
-A: Ya, tetapi pastikan setiap thread bekerja dengan instance `MailMessage` masing‑masing dan objek bersama (mis., `License`) diakses secara thread‑safe.
+**T: Apakah pengaturan ini dapat digunakan di lingkungan multi-thread?**
+A: Ya, tetapi pastikan setiap thread bekerja dengan instance `MailMessage` masing-masing dan objek bersama (mis., `License`) diakses secara thread‑safe.
 
 ## Sumber Daya
 - **Documentation:** [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
@@ -200,6 +200,12 @@ A: Ya, tetapi pastikan setiap thread bekerja dengan instance `MailMessage` masin
 
 Jelajahi sumber daya ini lebih lanjut dan hubungi dukungan jika diperlukan. Selamat coding!
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -207,9 +213,3 @@ Jelajahi sumber daya ini lebih lanjut dan hubungi dukungan jika diperlukan. Sela
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

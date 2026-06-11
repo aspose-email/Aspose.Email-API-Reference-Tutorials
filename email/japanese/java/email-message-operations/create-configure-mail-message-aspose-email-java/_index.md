@@ -189,6 +189,12 @@ A: [Aspose フォーラム](https://forum.aspose.com/c/email/10) でコミュニ
 - **一時ライセンス:** フルアクセス用の一時ライセンスを取得  
 - **サポート:** Aspose コミュニティフォーラムで支援を受けられます  
 
+---
+
+**最終更新日:** 2026-02-27  
+**テスト環境:** Aspose.Email 25.4 for Java  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -196,9 +202,3 @@ A: [Aspose フォーラム](https://forum.aspose.com/c/email/10) でコミュニ
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2026-02-27  
-**テスト環境:** Aspose.Email 25.4 for Java  
-**作者:** Aspose

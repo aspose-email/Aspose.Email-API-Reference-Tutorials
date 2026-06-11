@@ -12,7 +12,7 @@ url: /es/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
- content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
@@ -209,12 +209,6 @@ R: Sí, siempre que cuentes con una licencia comercial válida.
 **P: ¿Cómo proceso miles de archivos MSG sin quedarme sin memoria?**  
 R: Procesa los archivos en lotes, libera cada `MailMessage` después de guardarlo y considera usar el patrón `try‑with‑resources` de Java para la limpieza automática.
 
----
-
-**Última actualización:** 2026-02-27  
-**Probado con:** Aspose.Email para Java 25.4 (clasificador jdk16)  
-**Autor:** Aspose  
-
 ## Recursos
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ R: Procesa los archivos en lotes, libera cada `MailMessage` después de guardarl
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Última actualización:** 2026-02-27  
+**Probado con:** Aspose.Email para Java 25.4 (clasificador jdk16)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -200,6 +200,12 @@ Bạn đã biết **cách lưu eml** file trong Java với Aspose.Email, cách g
 
 Khám phá các tài nguyên này và liên hệ hỗ trợ nếu cần. Chúc bạn lập trình vui vẻ!
 
+---
+
+**Cập nhật lần cuối:** 2026-02-27  
+**Đã kiểm tra với:** Aspose.Email 25.4 (jdk16 classifier)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -207,9 +213,3 @@ Khám phá các tài nguyên này và liên hệ hỗ trợ nếu cần. Chúc b
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2026-02-27  
-**Đã kiểm tra với:** Aspose.Email 25.4 (jdk16 classifier)  
-**Tác giả:** Aspose

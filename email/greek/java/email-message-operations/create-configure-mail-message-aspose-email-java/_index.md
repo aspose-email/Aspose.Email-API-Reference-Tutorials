@@ -188,6 +188,12 @@ A: Επισκεφθείτε το [φόρουμ Aspose](https://forum.aspose.com/
 - **Προσωρινή Άδεια:** Αποκτήστε προσωρινή άδεια για πλήρη πρόσβαση.
 - **Υποστήριξη:** Λάβετε βοήθεια από το φόρουμ της κοινότητας Aspose.
 
+---
+
+**Last Updated:** 2026-02-27  
+**Tested With:** Aspose.Email 25.4 for Java  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -195,9 +201,3 @@ A: Επισκεφθείτε το [φόρουμ Aspose](https://forum.aspose.com/
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 for Java  
-**Author:** Aspose

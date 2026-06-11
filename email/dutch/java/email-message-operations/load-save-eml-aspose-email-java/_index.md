@@ -200,6 +200,12 @@ A: Ja, maar zorg ervoor dat elke thread werkt met zijn eigen `MailMessage`‑ins
 
 Verken deze bronnen verder en neem contact op voor ondersteuning indien nodig. Veel programmeerplezier!
 
+---
+
+**Laatst bijgewerkt:** 2026-02-27  
+**Getest met:** Aspose.Email 25.4 (jdk16 classifier)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -207,9 +213,3 @@ Verken deze bronnen verder en neem contact op voor ondersteuning indien nodig. V
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-27  
-**Getest met:** Aspose.Email 25.4 (jdk16 classifier)  
-**Auteur:** Aspose

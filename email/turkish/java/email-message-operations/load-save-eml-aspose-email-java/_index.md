@@ -12,51 +12,48 @@ url: /tr/java/email-message-operations/load-save-eml-aspose-email-java/
 weight: 1
 ---
 
-Let's write translation.
-
-Be careful with bold formatting: keep **...** as is, but translate inside? The rule: keep technical terms in English, but these phrases maybe not technical; but they are part of the tutorial phrase "how to save eml". Probably keep as is because they are the search phrase. So keep them unchanged.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
 # Java'da Aspose.Email ile EML Dosyalarını Kaydetme
 
-## Introduction
-Eğer programlı bir şekilde **how to save eml** dosyalarını kaydetmenin güvenilir bir yolunu arıyorsanız, doğru yerdesiniz. Bu öğreticide bir EML dosyasını yüklemeyi, dönüşümü izlemek için bir **custom progress handler java** eklemeyi ve sonunda çıktıyı tam kontrol altında tutarak mesajı kaydetmeyi adım adım göstereceğiz. Sonunda sadece EML kaydetmenin mekaniklerini değil, aynı zamanda ilerleme takibinin büyük ölçekli e‑posta işleme için neden bir dönüm noktası olduğunu da anlayacaksınız.
+## Giriiş
+Eğer programlı bir şekilde **eml nasıl kaydedilir** kaydetmenin güvenilir bir yolu mevcut, doğru yerdesiniz. Bu öğreticide bir EML çıktısını yüklemeyi, izlemek için bir **özel ilerleme işleyicisi java** eklemeyi ve sonunda çıktıyı tam kontrol tutma uyarısını kaydetmeyi adım adım gösterirsiniz. Sonunda sadece EML kaydının mekaniklerini değil, aynı zamanda ilerleme takibinin büyük değişimi e‑posta işleme için neden bir dönüm noktasında olduğunu da anlayacaksınız.
 
-**What You’ll Learn**
-- **How to load eml** dosyalarını bir `MailMessage` nesnesine yükleme.
-- **aspose email maven dependency**'yi yapılandırma ve kütüphaneyi başlatma.
-- Gerçek zamanlı geri bildirim almak için bir **custom progress handler** kurma.
-- Dönüşüm ilerlemesini gösterirken `EmlSaveOptions` ile mesajı kaydetme.
+**Ne Öğreneceksiniz**
+- **eml nasıl yüklenir** bir `MailMessage` nesnesine yüklenir.
+- **e-posta maven bağımlılığını göz önünde bulundurun**'yi yapılandırma ve kütüphaneyi başlatma.
+- Gerçek zamanlı geri bildirim almak için bir **özel ilerleme işleyicisi** kurma.
+- Dönüşüm ilerlemesini gösterirken `EmlSaveOptions` ile mesaj kaydetme.
 
-Let’s get started with the prerequisites.
+Önkoşullarla başlayalım.
 
-## Quick Answers
-- **What is the primary class for loading EML?** `MailMessage.load()`  
-- **Which Maven artifact adds Aspose.Email?** `com.aspose:aspose-email` with the `jdk16` classifier  
-- **Can I monitor conversion progress?** Yes, by implementing `ConversionProgressEventHandler`  
-- **Do I need a license for testing?** A free trial works, but a license removes evaluation limits  
-- **Is this approach thread‑safe?** The API is safe for concurrent reads; writes should be synchronized  
+## Hızlı Cevaplar
+- **EML yüklemek için kullanılan birincil sınıf nedir?** `MailMessage.load()`
+- **Hangi Maven yapıtı Aspose.Email'i ekler?** `jdk16` sınıflandırıcısıyla `com.aspose:aspose-email`
+- **Dönüştürme ilerlemesini izleyebilir miyim?** Evet, `ConversionProgressEventHandler` uygulayarak
+- **Test için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü çalışır, ancak lisans değerlendirme sınırlarını kaldırır
+- **Bu yaklaşım iş parçacığı açısından güvenli mi?** API, eş zamanlı okumalar için güvenlidir; yazmalar senkronize edilmelidir
 
-## What is “how to save eml” in Java?
-Java'da “how to save eml” bir EML dosyasını kaydetmek, bir `MailMessage` nesnesini standart RFC‑822 formatına geri dönüştürmek anlamına gelir. Aspose.Email ağır işleri üstlenir, MIME bölümlerinin, eklerin ve başlıkların doğru şekilde yazılmasını sağlar ve süreci gözlemlemeniz için kancalar sunar.
+## Java'da “how to save eml” nedir?
 
-## Why Use Aspose.Email for EML Operations?
-- **Full format support** – EML, MSG, MHTML ve daha fazlasını ek dönüştürücülere ihtiyaç duymadan işler.  
-- **Progress visibility** – Yerleşik olaylar, dönüşüm durumunu göstererek toplu işler için kritik bir görünürlük sağlar.  
-- **No external dependencies** – Saf Java kütüphanesi, JDK 16+ destekleyen herhangi bir platformda çalışır.  
+Java'da “how to save eml” bir EML dosyasını kaydetmek, bir `MailMessage` nesnesini standart RFC-822 renklerine geri dönüştürme anlamına gelir. Aspose.Email ağır işler üstlenir, MIME bölümlerinin, eklerin ve başlıkların doğru şekilde yazılmasını sağlar ve süreci gözlemlemeniz için kancalar sunar.
 
-## Prerequisites
-- **aspose email maven dependency** – Kütüphaneyi `pom.xml` dosyanıza ekleyin.  
-- **JDK 16+** – `jdk16` sınıflandırıcısı için gereklidir.  
-- **Basic Java knowledge** – Dosya I/O ve istisna yönetimi konularına aşina olun.  
+## EML İşlemleri için Neden Aspose.Email Kullanılmalı?
+- **Tam format desteği** – EML, MSG, MHTML ve daha fazlasını ek dönüştürücülere ihtiyaç duymadan işler.
+- **İlerleme görünürlüğü** – Yerleşik olaylar, dönüşümlerin gösterilmesi toplu işler için kritik bir görünüm sağlar.
+- **Harici bağımlılık yok** – Saf Java kütüphanesi, JDK16+ herhangi bir platformda çalışır.
 
-## Setting Up Aspose.Email for Java
-### Installation via Maven
-Aspose.Email for Java'yi eklemek için `pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
+## Önkoşullar
+- **e-posta maven bağımlılığını göz önünde bulundurun** – Kütüphaneyi `pom.xml` dosyanıza ekleyin.
+- **JDK 16+** – `jdk16` sınıflandırıcısı için gereklidir.
+- **Temel Java bilgisi** – Dosya I/O ve istisna yönetimi konularına ulaşılabilir olun.
+
+## Java için Aspose.Email'i Kurma
+### Maven aracılığıyla kurulum
+Aspose.Email for Java'yı seçmek için `pom.xml` dosyanıza aşağıdaki dosyayı ekleyin:
 
 ```xml
 <dependency>
@@ -67,11 +64,11 @@ Aspose.Email for Java'yi eklemek için `pom.xml` dosyanıza aşağıdaki bağım
 </dependency>
 ```
 
-### License Acquisition
-Aspose, yeteneklerini keşfetmeniz için ücretsiz bir deneme sunar. Üretim ortamı için bir lisans satın alın veya değerlendirme sınırlamalarından kaçınmak amacıyla geçici bir lisans edinin.
+### Lisans Alma
+Aspose, ayrıntıları keşfetmeniz için ücretsiz bir deneme sunar. Üretim ortamı için bir lisans satın alma veya değerlendirme sınırlamalarından hız amacıyla geçici bir lisans isteyin.
 
-### Basic Initialization and Setup
-Kurulum tamamlandıktan sonra Aspose.Email'i Java uygulamanızda doğru şekilde başlatın:
+### Temel Başlatma ve Kurulum
+Kurulum başladıktan sonra Aspose.Email'i Java uygulamanızda doğru şekilde başlatın:
 
 ```java
 // Ensure you import necessary classes from the Aspose.Email package.
@@ -88,27 +85,27 @@ class EmailSetup {
 }
 ```
 
-## Implementation Guide
-### Load and Save EML File with Custom Progress Handler
-#### Overview
-Bu bölüm, uçtan uca akışı gösterir: bir EML dosyasını yükleme, bir **custom progress handler** ekleme ve dönüşüm istatistiklerini yazdırarak mesajı kaydetme.
+## Uygulama Kılavuzu
+### Özel İlerleme İşleyicisi ile EML Dosyasını Yükleyin ve Kaydedin
+#### Genel Bakış
+Bu bölüm, uçtan uca analizlerini gösterir: bir EML kaydı yüklenir, bir **özel ilerleme işleyicisi** ekleme ve dönüşüm istatistiklerini yazdırarak mesajı kaydeder.
 
-#### Step 1: Prepare Your Environment
-Belge dizini yolunuzu ayarlayın ve çalışmak istediğiniz EML dosyasını tanımlayın:
+#### 1. Adım: Ortamınızı Hazırlayın
+Belge dizini yolunuzu düzenleyin ve istediğiniz EML miktarını tanımlayın:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "email/"; // Set your document directory
 String fileName = dataDir + "test.eml"; // Define the file name
 ```
 
-#### Step 2: Load the EML File
+#### Adım 2: EML Dosyasını Yükleyin
 Şimdi gerçekten **how to load eml** – kütüphane bunu tek satırda yapar:
 
 ```java
 MailMessage msg = MailMessage.load(fileName); // Loads the EML file
 ```
 
-#### Step 3: Set Up a Custom Progress Handler
+#### 3. Adım: Özel Bir İlerleme İşleyicisi Ayarlayın
 Bir `EmlSaveOptions` örneği oluşturun ve her dönüşüm olayı için çağrılacak bir işleyici ekleyin:
 
 ```java
@@ -122,19 +119,19 @@ opt.setCustomProgressHandler(new ConversionProgressEventHandler() {
 });
 ```
 
-#### Step 4: Save the EML File
+#### Adım 4: EML Dosyasını Kaydedin
 Son olarak, yukarıda tanımlanan seçenekleri kullanarak mesajı çıktı akışına yazın:
 
 ```java
 msg.save(bos, opt); // Save with custom progress tracking
 ```
 
-### Display EML Conversion Progress
-#### Overview
-İlerleme işleyicisi, üç ana olaya dair içgörü sağlar: MIME yapısı oluşturma, bireysel MIME bölümü kaydetme ve son akış yazma.
+### EML Dönüşüm İlerleme Durumunu Görüntüle
+#### Genel Bakış
+İlerleme işleyicisi, üç ana olaya ilişkin içgörü sağlar: MIME yapısı oluşturma, bireysel MIME bölümünü kaydetme ve son akış yazma.
 
-#### Implementing the Progress Handler
-Sınıfınıza aşağıdaki yöntemi ekleyin. Her olay türü için özlü bir durum satırı yazdırır:
+#### İlerleme İşleyicisini Uygulama
+Sınıfınıza aşağıdaki yöntemi ekleyin. Onun olay türü için özet bir durum özeti yazdırılır:
 
 ```java
 private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
@@ -161,49 +158,55 @@ private static void showEmlConversionProgress(ProgressEventHandlerInfo info) {
 }
 ```
 
-### Troubleshooting Tips
-- **File Not Found:** `dataDir` ve dosya adını iki kez kontrol edin; gerekirse mutlak yollar kullanın.  
-- **Classpath Issues:** Maven bağımlılığının doğru çözüldüğünden ve sınıf yolunda eski Aspose.Email sürümlerinin bulunmadığından emin olun.  
+### Sorun Giderme İpuçları
+- **Dosya Bulunamadı:** `dataDir` ve dosya adını iki kez kontrol edin; Örneğin mutlak denklemleri kullanın.
+- **Classpath Issues:** Maven depolamanın çözüldüğünden ve sınıf akışında eski Aspose.Email saklanabildiğinden emin olun.
 
-## Practical Applications
-1. **Email Archiving Solutions:** İlerlemeyi izleyerek gizli darboğazları önlemek için toplu arşivlemeyi otomatikleştirin.  
-2. **Customer Support Systems:** Gelen biletleri EML dosyaları olarak kaydedin ve operatörlere dönüşüm durumunu gösterin.  
-3. **Data Migration Projects:** Büyük ölçekli geçişlerde her MIME bölümünün doğru işlendiğini doğrulamak için ilerleme işleyicisini kullanın.  
+## Pratik Uygulamalar
+1. **E-posta Arşivleme Çözümleri:** İlerlemeyi izleyerek gizli darboğazları önlemek için toplu arşivlemeyi otomatikleştirin.
+2. **Müşteri Destek Sistemleri:** Gelen EML dosyalarının kaydedilmesi ve operatörlere dönüştürülmesi yasaktır.
+3. **Veri Taşıma Projeleri:** Büyük değişikliklerde her MIME bölümünde doğru iş geçişini başlatmak için ilerleme işleyicisini kullanın.
 
-## Performance Considerations
-- **Optimize I/O Operations:** Disk arama yükünü azaltmak için diske yazmadan önce çıktıyı bellek içinde (`ByteArrayOutputStream`) tamponlayın.  
-- **Memory Management:** Çok sayıda büyük e‑posta işlenirken yığın kullanımını izleyin; bellek kısıtlıysa doğrudan dosyaya akış yapmayı değerlendirin.  
-- **Parallel Processing:** Toplu işler için dosya başına ayrı bir iş parçacığı başlatın, ancak lisans nesnesi gibi paylaşılan kaynaklara erişimi senkronize edin.  
+## Performansla İlgili Hususlar
+- **G/Ç İşlemlerini Optimize Et:** Disk aramayı azaltmak için diske yazmadan önce çıkan belleği (`ByteArrayOutputStream`) tamponlayın.
+- **Bellek Yönetimi:** Çok sayıda büyük e‑posta işlenirken bölme toplanır; bellek sınırlıysa doğrudan dosyaya drenaj yapmayı değerlendirin.
+- **Paralel İşleme:** Toplu işler için dosya başına ayrı bir iş parçasıcığı başlatın, ancak lisans nesnesi gibi kaynaklara erişim olanağı edinin.
 
-## Conclusion
-Artık Java'da Aspose.Email ile **how to save eml** dosyalarını nasıl kaydedeceğinizi, **custom progress handler java** kullanarak dönüşümü nasıl izleyebileceğinizi ve bu yaklaşımı gerçek dünya projelerinde ölçeklendirmek için en iyi uygulamaları biliyorsunuz. Ek `EmlSaveOptions` ayarlarıyla denemeler yapmaktan veya bu akışı daha büyük e‑posta işleme hatlarına entegre etmekten çekinmeyin.
+## Çözüm
+Artık Java'da Aspose.Email ile **how to save eml** işlemlerini nasıl kaydedeceğinizi, **özel ilerleme işleyicisi java** kullanarak gezinmeyi nasıl izleyebileceğinizi ve bu yaklaşımı gerçek dünya projelerinde ölçeklendirmek için en iyi uygulamaları bilirsiniz. Ek `EmlSaveOptions` ayarlarıyla denemeler yapmak veya bu analizin daha büyük e‑posta işleme satırlarına entegre edilmemesi.
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: Can I use Aspose.Email without a license?**  
-A: Yes, a free trial is available, but it imposes limits on file size and certain features.
+**S: Aspose.Email'i lisans olmadan kullanabilir miyim?**
+C: Evet, ücretsiz deneme sürümü mevcut ancak dosya boyutuna ve belirli özelliklere sınırlamalar getiriyor.
 
-**Q: How do I update to the latest version of Aspose.Email for Java?**  
-A: Change the `<version>` tag in your `pom.xml` to the newest release number and run `mvn clean install`.
+**S: Aspose.Email for Java'nın en son sürümüne nasıl güncelleyebilirim?**
+C: `pom.xml` dosyanızdaki `<version>` etiketini en yeni sürüm numarasıyla değiştirin ve `mvn clean install` komutunu çalıştırın.
 
-**Q: Is it possible to handle other email formats besides EML?**  
-A: Absolutely. Aspose.Email supports MSG, MHTML, and several other formats out of the box.
+**S: EML dışında başka e-posta formatlarını da işleyebilir miyim?**
+C: Kesinlikle. Aspose.Email, MSG, MHTML ve diğer birçok formatı doğrudan destekler.
 
-**Q: What should I do if my application crashes while processing emails?**  
-A: Inspect stack traces for `ProgressEventHandlerInfo` exceptions, ensure streams are closed in a `finally` block, and verify that the license file is correctly loaded.
+**S: E-postaları işlerken uygulamam çökerse ne yapmalıyım?**
+C: `ProgressEventHandlerInfo` istisnaları için yığın izlerini inceleyin, akışların `finally` bloğunda kapatıldığından emin olun ve lisans dosyasının doğru şekilde yüklendiğini doğrulayın.
 
-**Q: Can this setup be used in a multi‑threaded environment?**  
-A: Yes, but make sure each thread works with its own `MailMessage` instance and that shared objects (e.g., the `License`) are accessed in a thread‑safe manner.
+**S: Bu kurulum çoklu iş parçacıklı bir ortamda kullanılabilir mi?**
+C: Evet, ancak her iş parçacığının kendi `MailMessage` örneğiyle çalıştığından ve paylaşılan nesnelere (örneğin, `License`) iş parçacığı güvenli bir şekilde erişildiğinden emin olun.
 
-## Resources
-- **Documentation:** [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
-- **Download:** [Aspose.Email Java Releases](https://releases.aspose.com/email/java/)
-- **Purchase:** [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial:** [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
-- **Temporary License:** [Obtain a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+## Kaynaklar
+- **Belgeler:** [Aspose.Email Java Belgeleri](https://reference.aspose.com/email/java/)
+- **İndir:** [Aspose.Email Java Sürümleri](https://releases.aspose.com/email/java/)
+- **Satın Al:** [Aspose.Email Satın Al](https://purchase.aspose.com/buy)
+- **Ücretsiz Deneme:** [Aspose.Email'i Ücretsiz Deneyin](https://releases.aspose.com/email/java/)
+- **Geçici Lisans:** [Geçici Lisans Edinin](https://purchase.aspose.com/temporary-license/)
+- **Destek:** [Aspose Email Forumu](https://forum.aspose.com/c/email/10)
 
-Explore these resources further and reach out for support if needed. Happy coding!
+Bu kaynakları daha ayrıntılı inceleyin ve gerekirse destek için iletişime geçin. Mutlu kodlamalar!
+
+---
+
+**Son Güncelleme:** 27.02.2026
+**Test Edilen Sürüm:** Aspose.Email 25.4 (jdk16 sınıflandırıcı)
+**Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -212,9 +215,3 @@ Explore these resources further and reach out for support if needed. Happy codin
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-27  
-**Tested With:** Aspose.Email 25.4 (jdk16 classifier)  
-**Author:** Aspose

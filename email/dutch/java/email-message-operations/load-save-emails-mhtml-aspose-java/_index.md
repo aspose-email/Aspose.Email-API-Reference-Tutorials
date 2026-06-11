@@ -209,12 +209,6 @@ A: Ja, mits je een geldige commerciële licentie hebt.
 **Q: Hoe verwerk ik duizenden MSG‑bestanden zonder geheugenproblemen?**  
 A: Verwerk bestanden in batches, maak elke `MailMessage` vrij na het opslaan, en overweeg Java’s `try‑with‑resources`‑patroon voor automatische opruiming.
 
----
-
-**Laatst bijgewerkt:** 2026-02-27  
-**Getest met:** Aspose.Email voor Java 25.4 (jdk16 classifier)  
-**Auteur:** Aspose  
-
 ## Bronnen
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ A: Verwerk bestanden in batches, maak elke `MailMessage` vrij na het opslaan, en
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Laatst bijgewerkt:** 2026-02-27  
+**Getest met:** Aspose.Email voor Java 25.4 (jdk16 classifier)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

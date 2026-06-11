@@ -209,12 +209,6 @@ O: Tak, pod warunkiem posiadania ważnej licencji komercyjnej.
 **P: Jak przetwarzać tysiące plików MSG bez wyczerpania pamięci?**  
 O: Przetwarzaj pliki w partiach, zwalniaj każdy `MailMessage` po zapisaniu i rozważ użycie wzorca `try‑with‑resources` w Javie dla automatycznego czyszczenia.
 
----
-
-**Ostatnia aktualizacja:** 2026-02-27  
-**Testowano z:** Aspose.Email dla Javy 25.4 (jdk16 classifier)  
-**Autor:** Aspose  
-
 ## Zasoby
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Download Library](https://releases.aspose.com/email/java/)
@@ -222,6 +216,12 @@ O: Przetwarzaj pliki w partiach, zwalniaj każdy `MailMessage` po zapisaniu i ro
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Support Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Ostatnia aktualizacja:** 2026-02-27  
+**Testowano z:** Aspose.Email dla Javy 25.4 (jdk16 classifier)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
