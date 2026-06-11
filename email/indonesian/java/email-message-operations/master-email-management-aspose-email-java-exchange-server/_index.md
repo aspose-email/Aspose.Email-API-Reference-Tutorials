@@ -191,6 +191,12 @@ A: Periksa kembali kredensial, pastikan akun tidak terkunci, dan konfirmasi bahw
 
 Dengan mengikuti panduan ini, Anda kini tahu **cara menggunakan Aspose.Email untuk Java** untuk menyambung, membuat, menambahkan, dan mengambil email pada Server Exchange. Terapkan pola ini untuk mengotomatisasi alur kerja email Anda dan meningkatkan produktivitas.
 
+---
+
+**Terakhir Diperbarui:** 2026-03-02  
+**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Dengan mengikuti panduan ini, Anda kini tahu **cara menggunakan Aspose.Email unt
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-03-02  
-**Diuji Dengan:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Penulis:** Aspose

@@ -17,36 +17,36 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Maven Aspose.Email for Java: Cara Menyimpan Email sebagai File MHT
+# Maven Aspose.Email for Java: Cara menyimpan Email sebagai File MHT
 
-## Introduction
+## Perkenalan
 
 Mengelola data email secara efisien dapat menjadi tantangan, terutama ketika harus berbagi dan mengarsipkannya. Dalam panduan ini kami akan menunjukkan **cara menyimpan** file MHT menggunakan **Maven Aspose.Email for Java**, sehingga Anda dapat mengonversi email ke MHT dengan templat khusus dan tetap mempertahankan acara kalender. Anda akan mendapatkan solusi siap‑jalan yang dapat dijalankan di lingkungan Java 16+ mana pun.
 
-## Quick Answers
-- **Perpustakaan apa yang saya perlukan?** Maven Aspose.Email for Java (v25.4+).  
-- **Format apa yang dihasilkan?** File MHT (MHTML) yang menggabungkan HTML, gambar, dan data kalender.  
-- **Apakah saya dapat menyesuaikan header?** Ya – gunakan `MhtFormatOptions` dan string templat.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi permanen diperlukan untuk produksi.  
-- **Versi Java apa yang dibutuhkan?** JDK 16 atau lebih baru.
+## Jawaban Cepat
+- **Perpustakaan apa yang saya perlukan?** Maven Aspose.Email untuk Java (v25.4+).
+- **Format apa yang dihasilkan?** File MHT (MHTML) yang menggabungkan HTML, gambar, dan data kalender.
+- **Apakah saya dapat menyesuaikan header?** Ya – gunakan `MhtFormatOptions` dan string template.
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi permanen diperlukan untuk produksi.
+- **Versi Java apa yang dibutuhkan?** JDK16 atau lebih baru.
 
-## What is Maven Aspose.Email for Java?
-Maven Aspose.Email for Java adalah API yang kuat yang memungkinkan Anda membuat, membaca, mengonversi, dan memanipulasi pesan email langsung dari kode Java. Ia mendukung beragam format—termasuk MSG, EML, dan MHT—menjadikannya ideal untuk tugas **java email conversion**.
+## Apa itu Maven Aspose.Email untuk Java?
+Maven Aspose.Email for Java adalah API yang kuat yang memungkinkan Anda membuat, membaca, mengonversi, dan memanipulasi pesan email langsung dari kode Java. Ia mendukung beragam format—termasuk MSG, EML, dan MHT—menjadikannya ideal untuk tugas **konversi email java**.
 
-## Why Convert Emails to MHT?
-- **Web‑friendly**: File MHT dapat ditampilkan di browser tanpa aset eksternal.  
-- **Stabilitas arsip**: Semua sumber daya tersemat, mempertahankan tampilan asli.  
-- **Dukungan kalender**: Anda dapat merender acara berulang dengan templat khusus.  
+## Mengapa Mengonversi Email ke MHT?
+- **Web‑friendly**: File MHT dapat ditampilkan di browser tanpa aset eksternal.
+- **Stabilitas arsip**: Semua sumber daya tersemat, mempertahankan tampilan asli.
+- **Kalender Dukungan**: Anda dapat merender acara berulang dengan templat khusus.
 
-## Prerequisites
-- **Aspose.Email for Java** (artefak Maven `com.aspose:aspose-email:25.4` dengan klasifier `jdk16`).  
-- **Maven** terpasang dan terkonfigurasi pada mesin Anda.  
-- **JDK 16+** (perpustakaan menargetkan Java 16).  
-- Pengetahuan dasar Java (penanganan file, dependensi Maven).
+## Prasyarat
+- **Aspose.Email untuk Java** (artefak Maven `com.aspose:aspose-email:25.4` dengan klasifikasi `jdk16`).
+- **Maven** terpasang dan terkonfigurasi pada mesin Anda.
+- **JDK16+** (perpustakaan menargetkan Java16).
+- dasar Pengetahuan Java (penanganan file, dependensi Maven).
 
-## Setting Up Aspose.Email for Java
+## Menyiapkan Aspose.Email untuk Java
 
-### Maven Dependency
+### Ketergantungan Maven
 
 Tambahkan dependensi berikut ke file `pom.xml` Anda:
 
@@ -59,15 +59,15 @@ Tambahkan dependensi berikut ke file `pom.xml` Anda:
 </dependency>
 ```
 
-### License Acquisition
+### Akuisisi Lisensi
 
 Aspose menawarkan percobaan gratis untuk menjelajahi kemampuannya, serta opsi untuk membeli lisensi atau memperoleh lisensi sementara.
 
-1. **Free Trial**: Unduh dari [Releases](https://releases.aspose.com/email/java/) dan jelajahi fitur tanpa batasan.  
-2. **Temporary License**: Dapatkan versi penuh dengan meminta melalui [Temporary License Page](https://purchase.aspose.com/temporary-license/).  
-3. **Purchase**: Pertimbangkan pembelian jika Aspose.Email memenuhi kebutuhan proyek jangka panjang Anda.
+1. **Uji Coba Gratis**: Unduh dari [Rilis](https://releases.aspose.com/email/java/) dan penjelajahan fitur tanpa batasan.
+2. **Lisensi Sementara**: Dapatkan versi penuh dengan meminta melalui [Halaman Lisensi Sementara](https://purchase.aspose.com/temporary-license/).
+3. **Pembelian**: mempertimbangkan pembelian jika Aspose.Email memenuhi kebutuhan proyek jangka panjang Anda.
 
-### Basic Initialization
+### Inisialisasi Dasar
 
 Setelah terpasang, inisialisasi perpustakaan dalam aplikasi Java Anda:
 
@@ -80,22 +80,22 @@ license.setLicense("path/to/your/license/file");
 
 Dengan langkah‑langkah ini selesai, Anda siap menggunakan fitur Aspose.Email untuk penanganan email yang efisien.
 
-## Implementation Guide
+## Panduan Implementasi
 
-### Feature 1: Load MailMessage
+### Fitur 1: Memuat MailMessage
 
-#### Overview
-Memuat pesan email adalah langkah pertama dalam memproses dan menyimpannya sebagai file MHT. Di sini, kami menunjukkan cara memuat file `.msg` menggunakan `MailMessage`.
+#### Gambaran Umum
+Memuat pesan email adalah langkah pertama dalam memproses dan menyimpannya sebagai file MHT. Di sini, kami mendemonstrasikan cara memuat file `.msg` menggunakan `MailMessage`.
 
-#### Step‑by‑Step
+#### Langkah demi Langkah
 
-**Import Required Classes**
+**Impor Kelas yang Diperlukan**
 
 ```java
 import com.aspose.email.MailMessage;
 ```
 
-**Load Email from File**
+**Muat Email dari File**
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/email/";
@@ -104,14 +104,14 @@ MailMessage msg = MailMessage.load(dataDir + "Meeting with Recurring Occurrences
 
 Potongan kode ini memuat pesan email yang berada di direktori yang Anda tentukan.
 
-### Feature 2: Configure MhtSaveOptions
+### Fitur 2: Mengonfigurasi MhtSaveOptions
 
-#### Overview
-Mengonfigurasi `MhtSaveOptions` penting untuk menentukan bagaimana email Anda akan disimpan sebagai file MHT, termasuk format khusus untuk acara kalender.
+#### Gambaran Umum
+Mengonfigurasi `MhtSaveOptions` sangat penting untuk menentukan bagaimana email Anda akan disimpan sebagai file MHT, termasuk pemformatan khusus untuk acara kalender.
 
-#### Step‑by‑Step
+#### Langkah demi Langkah
 
-**Import Required Classes**
+**Impor Kelas yang Diperlukan**
 
 ```java
 import com.aspose.email.MhtSaveOptions;
@@ -119,7 +119,7 @@ import com.aspose.email.MhtFormatOptions;
 import com.aspose.email.MhtTemplateName;
 ```
 
-**Set Save Options and Templates**
+**Atur Opsi dan Templat Penyimpanan**
 
 ```java
 MhtSaveOptions options = new MhtSaveOptions();
@@ -143,21 +143,21 @@ options.getFormatTemplates().addIfAbsent(MhtTemplateName.START,
 
 Konfigurasi ini menyiapkan header dan perenderan acara kalender dalam output MHT.
 
-### Feature 3: Save MailMessage as MHT
+### Fitur 3: Simpan MailMessage sebagai MHT
 
-#### Overview
-Langkah akhir adalah menyimpan `MailMessage` yang telah dikonfigurasi sebagai file MHT menggunakan opsi yang ditentukan.
+#### Gambaran Umum
+Langkah terakhir adalah menyimpan `MailMessage` yang telah dikonfigurasi sebagai file MHT menggunakan opsi yang telah ditentukan.
 
-#### Step‑by‑Step
+#### Langkah demi Langkah
 
-**Import Required Classes**
+**Impor Kelas yang Diperlukan**
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MhtSaveOptions;
 ```
 
-**Save Email Message**
+**Simpan Pesan Email**
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "Meeting with Recurring Occurrences_out.mhtml", options);
@@ -165,56 +165,64 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "Meeting with Recurring Occurrences_out.mhtml
 
 Perintah ini menulis email ke file MHT, siap untuk dibagikan atau diarsipkan.
 
-## Practical Applications
-- **Email Archiving**: Mengonversi dan menyimpan email penting dalam format yang ramah web.  
-- **Legal Documentation**: Menggunakan file MHT sebagai bagian dari bukti hukum di mana detail email perlu dipertahankan.  
-- **Cross‑Platform Sharing**: Membagikan email lintas platform tanpa masalah kompatibilitas.  
+## Aplikasi Praktis
+- **Pengarsipan Email**: Mengonversi dan menyimpan email penting dalam format yang ramah web.
+- **Dokumentasi Hukum**: Menggunakan file MHT sebagai bagian dari bukti hukum di mana detail email perlu dipertahankan.
+- **Berbagi Lintas Platform**: Membagikan email lintas platform tanpa masalah kompatibilitas.
 
 Integrasi dengan sistem lain, seperti CRM atau alat manajemen proyek, dapat meningkatkan kolaborasi dengan menyematkan data email penting langsung ke alur kerja.
 
-## Performance Considerations
+## Pertimbangan Kinerja
 Untuk memastikan kinerja optimal:
-- Kelola penggunaan memori secara efektif saat menangani batch email berukuran besar.  
-- Optimalkan operasi I/O file untuk mencegah bottleneck selama proses penyimpanan.  
+- Kelola penggunaan memori secara efektif saat menangani email batch berukuran besar.
+- Optimalkan operasi file I/O untuk mencegah kemacetan selama proses penyimpanan.
 
-Menerapkan praktik terbaik manajemen memori Java akan membuat aplikasi Anda tetap responsif.
+Penerapan praktik terbaik manajemen memori Java akan membuat aplikasi Anda tetap responsif.
 
-## Common Issues and Solutions
-| Issue | Cause | Fix |
+## Masalah Umum dan Solusinya
+| Edisi | Penyebab | Perbaiki |
 |-------|-------|-----|
-| **NullPointerException on `msg.save`** | Jalur output yang tidak tepat | Pastikan `YOUR_OUTPUT_DIRECTORY` ada dan dapat ditulisi. |
-| **Missing images in MHT** | `MhtFormatOptions` tidak diatur untuk menyematkan sumber daya | Tambahkan `MhtFormatOptions.EmbedResources` ke flag opsi. |
-| **Calendar events not rendered** | Flag `RenderCalendarEvent` terlewat | Pastikan `options.setMhtFormatOptions(MhtFormatOptions.WriteHeader \| MhtFormatOptions.RenderCalendarEvent);` |
+| **NullPointerException di `msg.save`** | Jalur keluaran yang tidak tepat | Pastikan `YOUR_OUTPUT_DIRECTORY` ada dan dapat ditulisi. |
+| **Gambar hilang di MHT** | `MhtFormatOptions` tidak diatur untuk menyematkan sumber daya | Tambahkan `MhtFormatOptions.EmbedResources` ke opsi tanda. |
+| **Acara kalender tidak ditampilkan** | Tandai `RenderCalendarEvent` terlewat | Pastikan `options.setMhtFormatOptions(MhtFormatOptions.WriteHeader \| MhtFormatOptions.RenderCalendarEvent);` |
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q: How do I handle attachments when saving emails as MHT?**  
+**T: Bagaimana cara menangani lampiran saat menyimpan email sebagai MHT?**
 A: Pastikan `MhtSaveOptions` dikonfigurasi untuk menyertakan logika penanganan lampiran. Perpustakaan mendukung penyematan lampiran ke dalam file MHT.
 
-**Q: Can I customize email headers in the output MHT file?**  
-A: Ya, gunakan `MhtFormatOptions.WriteHeader` dan definisikan templat khusus untuk berbagai bidang header seperti yang ditunjukkan dalam tutorial.
+**T: Bisakah saya menyesuaikan header email di file MHT keluaran?**
+A: Ya, gunakan `MhtFormatOptions.WriteHeader` dan definisikan template khusus untuk berbagai bidang header seperti yang ditunjukkan dalam tutorial.
 
-**Q: What are the system requirements for using Aspose.Email Java?**  
-A: Diperlukan JDK 16 atau lebih tinggi. Perpustakaan bekerja mulus dengan sebagian besar IDE modern yang mendukung proyek Maven.
+**T: Apa saja persyaratan sistem untuk menggunakan Aspose.Email Java?**
+A: Membutuhkan JDK16 atau lebih tinggi. Perpustakaan bekerja mulus dengan sebagian besar IDE modern yang mendukung proyek Maven.
 
-**Q: Is it possible to save only specific parts of an email message?**  
-A: Meskipun format MHT biasanya mencakup pesan lengkap, Anda dapat menggunakan properti `MailMessage` untuk memproses secara selektif dan menyertakan konten yang diinginkan.
+**T: Apakah mungkin untuk menyimpan hanya bagian tertentu dari pesan email?**
+J: Meskipun format MHT biasanya mencakup pesan lengkap, Anda dapat menggunakan properti `MailMessage` untuk memproses secara optik dan memasukkan konten yang diinginkan.
 
-**Q: How can I troubleshoot issues with email loading or saving?**  
-A: Periksa keakuratan jalur file, pastikan perpustakaan terpasang dengan benar di proyek Anda, dan kunjungi [support forum](https://forum.aspose.com/c/email/10) Aspose.Email untuk bantuan.
+**T: Bagaimana cara memecahkan masalah pemuatan atau penyimpanan email?**
+A: Periksa keakuratan file jalur, pastikan perpustakaan terpasang dengan benar di proyek Anda, dan kunjungi [forum dukungan](https://forum.aspose.com/c/email/10) Aspose.Email untuk bantuan.
 
-**Q: Does the library support converting other formats (EML, MSG) to MHT?**  
-A: Tentu saja. `MailMessage.load` dapat membaca EML, MSG, dan format lain, kemudian Anda dapat menyimpannya sebagai MHT menggunakan opsi yang sama.
+**T: Apakah perpustakaan mendukung konversi format lain (EML, MSG) ke MHT?**
+J: Tentu saja. `MailMessage.load` dapat membaca EML, MSG, dan format lain, kemudian Anda dapat menyimpannya sebagai MHT menggunakan opsi yang sama.
 
-## Resources
-- **Documentation**: Untuk penjelasan lebih mendalam tentang semua fungsionalitas, kunjungi [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).  
-- **Download**: Mulai dengan percobaan gratis dengan mengunduh dari [Releases](https://releases.aspose.com/email/java/).  
-- **Purchase**: Jelajahi opsi pembelian di [Official Purchase Page](https://purchase.aspose.com/buy) untuk penggunaan jangka panjang.  
-- **Free Trial and Temporary License**: Akses fitur lengkap selama percobaan gratis atau dapatkan lisensi sementara melalui tautan berikut:  
-  - [Free Trial](https://releases.aspose.com/email/java/)  
-  - [Temporary License](https://purchase.aspose.com/temporary-license/)
+## Sumber daya
+- **Dokumentasi**: Untuk penjelasan lebih mendalam tentang semua fungsionalitas, kunjungi [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).
+- **Download**: Mulai dengan percobaan gratis dengan mengunduh dari [Releases](https://releases.aspose.com/email/java/).
+- **Pembelian**: Menjelajahi opsi pembelian di [Halaman Pembelian Resmi](https://purchase.aspose.com/buy) untuk penggunaan jangka panjang.
+- **Uji Coba Gratis dan Lisensi Sementara**: Akses fitur lengkap selama percobaan gratis atau dapatkan lisensi sementara melalui tautan berikut: 
+- [Uji Coba Gratis](https://releases.aspose.com/email/java/) 
+- [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
 
-Jelajahi, terapkan, dan transformasikan penanganan email Anda dengan Aspose.Email for Java hari ini!
+Menyebarkan, menerapkan, dan mentransformasikan penanganan email Anda dengan Aspose.Email for Java hari ini!
+
+---
+
+**Terakhir Diperbarui:** 02-03-2026
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (pengklasifikasi jdk16)
+**Penulis:** Beranggapan
+
+---
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -223,11 +231,3 @@ Jelajahi, terapkan, dan transformasikan penanganan email Anda dengan Aspose.Emai
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-03-02  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
-
----

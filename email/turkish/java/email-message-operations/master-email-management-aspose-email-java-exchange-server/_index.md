@@ -191,6 +191,12 @@ C: Kimlik bilgilerini tekrar kontrol edin, hesabın kilitli olmadığından emin
 
 Bu rehberi izleyerek **Aspose.Email for Java'yı** Exchange Server'da bağlanma, oluşturma, ekleme ve alma işlemleri için nasıl kullanacağınızı öğrendiniz. Bu desenleri e-posta iş akışlarınızı otomatikleştirmek ve verimliliği artırmak için uygulayın.
 
+---
+
+**Last Updated:** 2026-03-02  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Bu rehberi izleyerek **Aspose.Email for Java'yı** Exchange Server'da bağlanma,
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-03-02  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose

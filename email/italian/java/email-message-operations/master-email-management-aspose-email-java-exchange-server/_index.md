@@ -191,6 +191,12 @@ R: Ricontrolla le credenziali, assicurati che l'account non sia bloccato e verif
 
 Seguendo questa guida, ora sai **come utilizzare Aspose.Email per Java** per connetterti, creare, aggiungere e recuperare email su un server Exchange. Applica questi modelli per automatizzare i flussi di lavoro della posta e aumentare la produttività.
 
+---
+
+**Ultimo aggiornamento:** 2026-03-02  
+**Testato con:** Aspose.Email per Java 25.4 (classificatore JDK 16)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Seguendo questa guida, ora sai **come utilizzare Aspose.Email per Java** per con
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-03-02  
-**Testato con:** Aspose.Email per Java 25.4 (classificatore JDK 16)  
-**Autore:** Aspose

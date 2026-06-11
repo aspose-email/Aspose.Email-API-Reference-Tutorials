@@ -192,6 +192,12 @@ if (client != null) {
 
 Ακολουθώντας αυτόν τον οδηγό, γνωρίζετε πλέον **πώς να χρησιμοποιήσετε το Aspose.Email για Java** για να συνδεθείτε, να δημιουργήσετε, να προσθέσετε και να ανακτήσετε email σε Exchange Server. Εφαρμόστε αυτά τα πρότυπα για να αυτοματοποιήσετε τις ροές εργασίας email και να αυξήσετε την παραγωγικότητα.
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-03-02  
+**Δοκιμή με:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -199,9 +205,3 @@ if (client != null) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-03-02  
-**Δοκιμή με:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Συγγραφέας:** Aspose

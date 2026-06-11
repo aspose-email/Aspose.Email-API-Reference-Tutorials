@@ -191,6 +191,12 @@ A: Controleer de inloggegevens nogmaals, zorg dat het account niet vergrendeld i
 
 Door deze gids te volgen, weet je nu **hoe je Aspose.Email voor Java** kunt gebruiken om te verbinden, berichten te maken, toe te voegen en e‑mails op te halen op een Exchange‑server. Pas deze patronen toe om je e‑mailworkflows te automatiseren en de productiviteit te verhogen.
 
+---
+
+**Laatst bijgewerkt:** 2026-03-02  
+**Getest met:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Door deze gids te volgen, weet je nu **hoe je Aspose.Email voor Java** kunt gebr
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-03-02  
-**Getest met:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Auteur:** Aspose

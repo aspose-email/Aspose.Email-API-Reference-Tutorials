@@ -217,6 +217,12 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "Meeting with Recurring Occurrences_out.mhtml
 
 استكشف، نفّذ، وحوّل طريقة معالجة بريدك باستخدام Aspose.Email for Java اليوم!
 
+---
+
+**آخر تحديث:** 2026-03-02  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -224,9 +230,3 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "Meeting with Recurring Occurrences_out.mhtml
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-03-02  
-**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**المؤلف:** Aspose

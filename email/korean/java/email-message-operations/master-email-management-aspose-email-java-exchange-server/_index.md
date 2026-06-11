@@ -191,6 +191,12 @@ A: 자격 증명을 다시 확인하고 계정이 잠겨 있지 않은지 확인
 
 이 가이드를 따라 하면 이제 **Aspose.Email for Java 사용 방법**을 알고 Exchange Server에서 이메일을 연결, 생성, 추가 및 검색할 수 있습니다. 이러한 패턴을 적용하여 이메일 워크플로를 자동화하고 생산성을 향상시키십시오.
 
+---
+
+**마지막 업데이트:** 2026-03-02  
+**테스트 환경:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ A: 자격 증명을 다시 확인하고 계정이 잠겨 있지 않은지 확인
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2026-03-02  
-**테스트 환경:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**작성자:** Aspose

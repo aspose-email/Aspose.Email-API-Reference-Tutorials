@@ -216,14 +216,6 @@ R: Absolutamente. `MailMessage.load` pode ler EML, MSG e outros formatos, após 
 
 Explore, implemente e transforme seu gerenciamento de emails com Aspose.Email para Java hoje!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última atualização:** 2026-03-02  
@@ -231,3 +223,11 @@ Explore, implemente e transforme seu gerenciamento de emails com Aspose.Email pa
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

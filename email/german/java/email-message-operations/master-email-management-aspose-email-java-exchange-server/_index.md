@@ -191,6 +191,12 @@ A: Anmeldedaten doppelt prüfen, sicherstellen, dass das Konto nicht gesperrt is
 
 Durch Befolgen dieses Leitfadens wissen Sie nun **wie man Aspose.Email für Java** verwendet, um sich zu verbinden, Nachrichten zu erstellen, anzuhängen und E‑Mails auf einem Exchange‑Server abzurufen. Nutzen Sie diese Muster, um Ihre E‑Mail‑Workflows zu automatisieren und die Produktivität zu steigern.
 
+---
+
+**Zuletzt aktualisiert:** 2026-03-02  
+**Getestet mit:** Aspose.Email für Java 25.4 (JDK 16‑Classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Durch Befolgen dieses Leitfadens wissen Sie nun **wie man Aspose.Email für Java
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-03-02  
-**Getestet mit:** Aspose.Email für Java 25.4 (JDK 16‑Classifier)  
-**Autor:** Aspose

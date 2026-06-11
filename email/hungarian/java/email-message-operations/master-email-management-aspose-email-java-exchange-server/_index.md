@@ -191,6 +191,12 @@ V: Ellenőrizd újra a hitelesítő adatokat, győződj meg róla, hogy a fiók 
 
 Az útmutató követésével most már tudod, **hogyan kell használni az Aspose.Email for Java-t**, hogy csatlakozz, létrehozz, hozzáfűzz és lekérj e-maileket egy Exchange Serveren. Alkalmazd ezeket a mintákat az e-mail munkafolyamatok automatizálásához és a termelékenység növeléséhez.
 
+---
+
+**Utolsó frissítés:** 2026-03-02  
+**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Az útmutató követésével most már tudod, **hogyan kell használni az Aspose
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2026-03-02  
-**Tesztelve a következővel:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Szerző:** Aspose

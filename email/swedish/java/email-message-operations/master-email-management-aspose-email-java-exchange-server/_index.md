@@ -191,6 +191,12 @@ A: Dubbelkolla inloggningsuppgifter, säkerställ att kontot inte är låst och 
 
 Genom att följa den här guiden vet du nu **hur du använder Aspose.Email för Java** för att ansluta, skapa, lägga till och hämta e‑post på en Exchange‑server. Använd dessa mönster för att automatisera dina e‑postarbetsflöden och öka produktiviteten.
 
+---
+
+**Senast uppdaterad:** 2026-03-02  
+**Testad med:** Aspose.Email för Java 25.4 (JDK 16 classifier)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Genom att följa den här guiden vet du nu **hur du använder Aspose.Email för 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-03-02  
-**Testad med:** Aspose.Email för Java 25.4 (JDK 16 classifier)  
-**Författare:** Aspose

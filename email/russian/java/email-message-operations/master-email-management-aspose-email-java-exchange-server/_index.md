@@ -191,6 +191,12 @@ if (client != null) {
 
 Следуя этому руководству, вы теперь знаете **how to use Aspose.Email for Java**, как подключаться, создавать, добавлять и получать письма на сервере Exchange. Применяйте эти шаблоны для автоматизации ваших почтовых процессов и повышения продуктивности.
 
+---
+
+**Последнее обновление:** 2026-03-02  
+**Тестировано с:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ if (client != null) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-03-02  
-**Тестировано с:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Автор:** Aspose

@@ -216,14 +216,6 @@ Việc tích hợp với các hệ thống khác, chẳng hạn CRM hoặc công
 
 Khám phá, triển khai và biến đổi cách xử lý email của bạn với Aspose.Email cho Java ngay hôm nay!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2026-03-02  
@@ -231,3 +223,11 @@ Khám phá, triển khai và biến đổi cách xử lý email của bạn vớ
 **Tác giả:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

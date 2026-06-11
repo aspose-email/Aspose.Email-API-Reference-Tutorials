@@ -191,6 +191,12 @@ A: Ponownie sprawdź dane logowania, upewnij się, że konto nie jest zablokowan
 
 Postępując zgodnie z tym przewodnikiem, teraz wiesz **jak używać Aspose.Email dla Javy**, aby łączyć się, tworzyć, dołączać i pobierać e‑maile na serwerze Exchange. Zastosuj te wzorce, aby zautomatyzować przepływy pracy poczty i zwiększyć produktywność.
 
+---
+
+**Ostatnia aktualizacja:** 2026-03-02  
+**Testowano z:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ Postępując zgodnie z tym przewodnikiem, teraz wiesz **jak używać Aspose.Emai
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-03-02  
-**Testowano z:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Autor:** Aspose

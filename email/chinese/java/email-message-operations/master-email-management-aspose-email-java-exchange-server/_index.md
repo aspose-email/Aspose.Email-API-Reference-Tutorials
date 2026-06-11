@@ -190,6 +190,12 @@ if (client != null) {
 
 通过本指南，您已经掌握了 **how to use Aspose.Email for Java** 在 Exchange Server 上进行连接、创建、追加和检索邮件的完整流程。将这些模式应用于邮件工作流自动化，提升生产力。
 
+---
+
+**最后更新：** 2026-03-02  
+**测试环境：** Aspose.Email for Java 25.4（JDK 16 classifier）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -197,9 +203,3 @@ if (client != null) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-03-02  
-**测试环境：** Aspose.Email for Java 25.4（JDK 16 classifier）  
-**作者：** Aspose

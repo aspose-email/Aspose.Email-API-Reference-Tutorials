@@ -191,6 +191,12 @@ if (client != null) {
 
 باتباعك هذا الدليل، أصبحت الآن تعرف **how to use Aspose.Email for Java** للاتصال، الإنشاء، الإلحاق، واسترجاع الرسائل على خادم Exchange. طبّق هذه الأنماط لأتمتة تدفقات عمل البريد الإلكتروني وزيادة الإنتاجية.
 
+---
+
+**آخر تحديث:** 2026-03-02  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -198,9 +204,3 @@ if (client != null) {
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-03-02  
-**تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**المؤلف:** Aspose

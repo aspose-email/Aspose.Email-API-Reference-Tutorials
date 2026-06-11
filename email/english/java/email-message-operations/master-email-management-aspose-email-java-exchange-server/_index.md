@@ -190,6 +190,12 @@ A: Double‑check credentials, ensure the account isn’t locked, and confirm th
 
 By following this guide, you now know **how to use Aspose.Email for Java** to connect, create, append, and retrieve emails on an Exchange Server. Apply these patterns to automate your email workflows and boost productivity.
 
+---
+
+**Last Updated:** 2026-03-02  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -197,9 +203,3 @@ By following this guide, you now know **how to use Aspose.Email for Java** to co
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-03-02  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose

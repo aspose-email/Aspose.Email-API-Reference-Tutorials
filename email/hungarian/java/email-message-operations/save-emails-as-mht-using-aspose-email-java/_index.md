@@ -208,14 +208,6 @@ A: Teljes mértékben. A `MailMessage.load` képes olvasni EML, MSG és egyéb f
 
 Fedezze fel, valósítsa meg, és alakítsa át e‑mail kezelését az Aspose.Email for Java-val még ma!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Legutóbb frissítve:** 2026-03-02  
@@ -223,3 +215,11 @@ Fedezze fel, valósítsa meg, és alakítsa át e‑mail kezelését az Aspose.E
 **Szerző:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
