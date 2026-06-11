@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java kullanarak e-postalarınızı MHT dosyalarına nasıl dönüştüreceğinizi ve kaydedeceğinizi öğrenin. Bu adım adım kılavuz, kurulumdan özel şablonlarla kaydetmeye kadar ihtiyacınız olan her şeyi kapsar."
-"title": "Aspose.Email for Java Kullanarak E-postaları MHT Dosyaları Olarak Nasıl Kaydedebilirsiniz? Kapsamlı Bir Kılavuz"
-"url": "/tr/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/"
-"weight": 1
+date: '2026-03-02'
+description: Maven Aspose.Email for Java'ı kullanarak e-postaları MHT dosyaları olarak
+  kaydetmeyi öğrenin. Bu adım adım kılavuz, kurulum, özel şablonlar ve e-posta MHT
+  dönüşümünü kapsar.
+keywords:
+- save emails as MHT files
+- Aspose.Email for Java
+- convert emails to MHTML
+title: 'Maven Aspose.Email for Java: E-postaları MHT Dosyaları Olarak Kaydet'
+url: /tr/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,33 +17,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email for Java Kullanarak E-postaları MHT Dosyaları Olarak Nasıl Kaydedebilirsiniz: Kapsamlı Bir Kılavuz
+# Maven Aspose.Email for Java: How to Save Emails as MHT Files
 
-## giriiş
+## Giriiş
 
-E-posta verilerini verimli bir şekilde yönetmek, özellikle paylaşım ve arşivleme söz konusu olduğunda zor olabilir. Bu kapsamlı kılavuz, e-postalarınızı özel şablonlarla MHTML dosyalarına dönüştürmek için Java'daki güçlü Aspose.Email kitaplığını nasıl kullanacağınızı gösterecek, böylece bunları platformlar arasında paylaşmayı kolaylaştıracak ve önemli iletişimleri arşivlemek için mükemmel hale getirecektir.
+E-postanın verimli bir şekilde çoğaltılması zor olabilir, özellikle paylaşım ve arşivleme söz konusu olduğunda. Bu rehberde **Maven Aspose.Email for Java** kullanarak **MHT** kartlarını nasıl kaydedeceğiniziz; böylece e-postaları özel şablonlarla MHT'ye dönüştürülebilir ve takvim etkinliklerini çoğaltabilirsiniz. Java16+ ortamında programlamayı hazır bir çözüm elde etmek.
 
-Bu eğitimde şunları öğreneceksiniz:
-- Aspose.Email for Java kullanarak bir e-posta mesajı nasıl yüklenir
-- E-postayı MHT dosyası olarak kaydetme seçeneklerini yapılandırma
-- E-postalarınızda takvim etkinliklerini görüntülemek için şablonları özelleştirme
+## Hızlı Yanıtlar
+- **Hangi kitaplığa ihtiyacım var?** Java için Maven Aspose.Email (v25.4+).
+- **Hangi format üretiliyor?** HTML, görseller ve takvim verilerini bir araya getiren bir MHT (MHTML) dosyası.
+- **Başlığı özelleştirebilir miyim?** Evet – `MhtFormatOptions`ı ve şablon dizelerini kullanın.
+- **Lisansa ihtiyacım var mı?** Ücretsiz deneme, değerlendirme için çalışır; Üretim için kalıcı bir lisans gereklidir.
+- **Hangi Java sürümü gerekli?** JDK16 veya üzeri.
 
-E-posta yönetiminizi kolaylaştırmaya hazır mısınız? Hadi başlayalım!
+## Java için Maven Aspose.Email nedir?
+Maven Aspose.Email for Java, e-posta mesajlarını doğrudan Java kodundan oluşturmanıza, okumanıza, dönüştürmenize ve manipüle teorik olanakları mevcut güçlü bir API'dir. MSG, EML ve MHT gibi geniş bir format yelpazesini desteklemek; bu da **java e-posta dönüştürme** görevleri için idealdir.
 
-## Ön koşullar
+## E-postaları Neden MHT'ye Dönüştürmelisiniz?
+- **Web dostu**: MHT dosyaları dış kaynaklara ihtiyaç duymadan tarayıcılarda görüntülenebilir.
+- **Arşivleme istikrarı**: Tüm kaynakların gömülü olduğu orijinal görünüm korunur.
+- **Takvim desteği**: Tekrarlayan etkinlikleri özel programlarla oluşturabilirsiniz.
 
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
-- **Java Kütüphanesi için Aspose.Email**: 25.4 veya üzeri sürüm önerilir.
-- **Maven Kurulumu**: Maven'ın geliştirme ortamınıza yüklendiğinden ve yapılandırıldığından emin olun.
-- **Java Geliştirme Kiti (JDK)**: Sisteminizde JDK 16 veya üzeri yüklü olmalıdır.
+## Önkoşullar
+- **Aspose.Email for Java** (Maven artefaktı `com.aspose:aspose-email:25.4` ve `jdk16` sınıflandırıcısı).
+- **Maven** makinenizde kurulu ve olmalı.
+- **JDK16+** (kütüphane Java16’yı hedefler).
+- Temel Java bilgisi (dosya işlemleri, Maven ilişkileri).
 
-Dosyaları yönetme ve harici kütüphaneleri kullanma gibi temel Java programlama bilgisine sahip olmak faydalı olacaktır.
-
-## Java için Aspose.Email Kurulumu
+## Java için Aspose.Email'i Kurma
 
 ### Maven Bağımlılığı
 
-Aşağıdaki bağımlılığı projenize ekleyerek Aspose.Email'i projenize entegre edin `pom.xml` dosya:
+`pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
 
 ```xml
 <dependency>
@@ -50,11 +61,11 @@ Aşağıdaki bağımlılığı projenize ekleyerek Aspose.Email'i projenize ente
 
 ### Lisans Edinimi
 
-Aspose, yeteneklerini keşfetmeniz için ücretsiz deneme sürümü sunuyor; ayrıca lisans satın alma veya geçici lisans edinme seçenekleri de mevcut.
+Aspose, teknik özelliklerinizi keşfetmeniz için ücretsiz bir deneme sunar; ayrıca bir lisans satın alma veya geçici lisans elde etme seçenekleri de vardır.
 
-1. **Ücretsiz Deneme**: Buradan indirin [Sürümler](https://releases.aspose.com/email/java/) ve özellikleri sınırlama olmaksızın keşfedin.
-2. **Geçici Lisans**:Tam işlevsel bir sürüme erişmek için bunu şu şekilde talep edin: [Geçici Lisans Sayfası](https://purchase.aspose.com/temporary-license/).
-3. **Satın almak**: Aspose.Email uzun vadeli proje ihtiyaçlarınızı karşılıyorsa satın almayı düşünebilirsiniz.
+1. **Ücretsiz Deneme**: [Sürümler](https://releases.aspose.com/email/java/) adresinden indirin ve sınırlama olmaksızın özellikleri keşfedin.
+2. **Geçici Lisans**: [Geçici Lisans Sayfası](https://purchase.aspose.com/temporary-license/) üzerinden talep ederek tam işlevli bir sürüme erişin.
+3. **Satın Alma**: Aspose.Email uzun vadeli proje ihtiyaçlarınızı karşılıyorsa satın almayı düşünün.
 
 ### Temel Başlatma
 
@@ -66,37 +77,41 @@ import com.aspose.email.License;
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
-Bu adımları tamamladığınızda, Aspose.Email'in e-postalarınızı verimli bir şekilde yönetmenizi sağlayan özelliklerini kullanmaya hazırsınız.
+
+Bu adımları tamamladıktan sonra, Aspose.Email'in özelliklerini verimli e-posta yönetimi için kullanmaya hazırsınız.
 
 ## Uygulama Kılavuzu
 
-### Özellik 1: MailMessage'ı Yükle
+### Özellik 1: MailMessage Yükleme
 
-#### Genel bakış
-Bir e-posta mesajını yüklemek, onu bir MHT dosyası olarak işleme ve kaydetmenin ilk adımıdır. Burada, bir e-posta mesajının nasıl yükleneceğini gösteriyoruz `.msg` dosya kullanarak `MailMessage`.
+#### Genel Bakış
+Bir e-posta mesajını yüklemek, onu işleme ve MHT dosyası olarak kaydetmenin ilk adımıdır. Burada, `MailMessage` kullanarak bir `.msg` dosyasını nasıl yükleyeceğinizi gösteriyoruz.
 
-#### Adım adım
-**Gerekli Sınıfları İçe Aktar**
+#### Adım Adım
+
+**Gerekli Sınıfları İçe Aktarma**
 
 ```java
 import com.aspose.email.MailMessage;
 ```
 
-**Dosyadan E-posta Yükle**
+**Dosyadan E-posta Yükleme**
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/email/";
 MailMessage msg = MailMessage.load(dataDir + "Meeting with Recurring Occurrences.msg");
 ```
-Bu kod parçacığı, belirttiğiniz dizinde bulunan bir e-posta mesajını yükler.
 
-### Özellik 2: MhtSaveOptions'ı yapılandırın
+Bu kod parçası, belirttiğiniz dizinde bulunan bir e-posta mesajını yükler.
 
-#### Genel bakış
-Yapılandırma `MhtSaveOptions` Takvim etkinlikleri için özel biçimlendirme de dahil olmak üzere e-postanızın MHT dosyası olarak nasıl kaydedileceğini tanımlamak çok önemlidir.
+### Özellik 2: MhtSaveOptions Yapılandırma
 
-#### Adım adım
-**Gerekli Sınıfları İçe Aktar**
+#### Genel Bakış
+`MhtSaveOptions` yapılandırması, takvim etkinlikleri için özel biçimlendirme de dahil olmak üzere e-postanızın MHT dosyası olarak nasıl kaydedileceğini tanımlamak için çok önemlidir.
+
+#### Adım Adım
+
+**Gerekli Sınıfları İçe Aktarma**
 
 ```java
 import com.aspose.email.MhtSaveOptions;
@@ -104,94 +119,117 @@ import com.aspose.email.MhtFormatOptions;
 import com.aspose.email.MhtTemplateName;
 ```
 
-**Kaydetme Seçeneklerini ve Şablonlarını Ayarla**
+**Kaydetme Seçeneklerini ve Şablonları Ayarlama**
 
 ```java
 MhtSaveOptions options = new MhtSaveOptions();
 options.setMhtFormatOptions(MhtFormatOptions.WriteHeader | MhtFormatOptions.RenderCalendarEvent);
 
-// E-posta özellikleri için şablonları özelleştirin
+// Customize templates for email properties
 for (Map.Entry<MhtTemplateName, String> entry : options.getFormatTemplates().entrySet()) {
     switch (entry.getKey()) {
         case START:
             options.getFormatTemplates().set_Item(MhtTemplateName.START,
                     "<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
             break;
-        // Benzer şekilde diğer durumları da ekleyin...
+        // Add other cases similarly...
     }
 }
 
-// Eksikse girişlerin eklendiğinden emin olun
+// Ensure entries are added if absent
 options.getFormatTemplates().addIfAbsent(MhtTemplateName.START,
             "<span class='headerLineTitle'>Start:</span><span class='headerLineText'>{0}</span><br/>");
 ```
-Bu yapılandırma, MHT çıktısında başlıkları ve takvim olayı oluşturmayı ayarlar.
 
-### Özellik 3: MailMessage'ı MHT olarak kaydet
+Bu yapılandırma, MHT çıktısında başlıkları ve takvim etkinliği oluşturmayı ayarlar.
 
-#### Genel bakış
-Son adım, yapılandırdığınızı kaydetmektir `MailMessage` belirtilen seçenekleri kullanarak bir MHT dosyası olarak.
+### Özellik 3: MailMessage'ı MHT Olarak Kaydetme
 
-#### Adım adım
-**Gerekli Sınıfları İçe Aktar**
+#### Genel Bakış
+Son adım, yapılandırılmış `MailMessage`'ınızı belirtilen seçenekleri kullanarak bir MHT dosyası olarak kaydetmektir.
+
+#### Adım Adım
+
+**Gerekli Sınıfları İçe Aktarma**
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MhtSaveOptions;
 ```
 
-**E-posta Mesajını Kaydet**
+**E-posta Mesajını Kaydetme**
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "Meeting with Recurring Occurrences_out.mhtml", options);
 ```
-Bu komut e-postayı paylaşıma veya arşivlemeye hazır hale getirmek için bir MHT dosyasına yazar.
+
+Bu komut, e-postayı paylaşım veya arşivleme için hazır bir MHT dosyasına yazar.
 
 ## Pratik Uygulamalar
-- **E-posta Arşivleme**: Önemli e-postaları web dostu bir biçime dönüştürün ve saklayın.
-- **Yasal Belgeler**: E-posta ayrıntılarının saklanması gereken durumlarda yasal delil olarak MHT dosyalarını kullanın.
-- **Platformlar Arası Paylaşım**: E-postalarınızı uyumluluk sorunları olmadan platformlar arasında paylaşın.
+- **E-posta Arşivleme**: Önemli e-postaları web dostu bir formatta dönüştürün ve saklayın.
 
-CRM veya proje yönetim araçları gibi diğer sistemlerle entegrasyon, önemli e-posta verilerinin doğrudan iş akışlarına yerleştirilmesiyle iş birliğini artırabilir.
+- **Yasal Belgeleme**: E-posta ayrıntılarının korunması gereken yasal kanıtların bir parçası olarak MHT dosyalarını kullanın.
+
+- **Platformlar Arası Paylaşım**: Uyumluluk sorunları olmadan e-postaları platformlar arasında paylaşın.
+
+CRM veya proje yönetimi araçları gibi diğer sistemlerle entegrasyon, önemli e-posta verilerini doğrudan iş akışlarına yerleştirerek iş birliğini artırabilir.
 
 ## Performans Hususları
-En iyi performansı sağlamak için:
-- Büyük miktarda e-postayı yönetirken bellek kullanımını etkili bir şekilde yönetin.
+Optimum performans sağlamak için:
+- Büyük e-posta gruplarıyla çalışırken bellek kullanımını etkili bir şekilde yönetin.
+
 - Kaydetme işlemi sırasında darboğazları önlemek için dosya G/Ç işlemlerini optimize edin.
 
-Java bellek yönetiminde en iyi uygulamalara bağlı kalmak, uygulamanız içinde verimliliği ve tepkiselliği korumanıza yardımcı olacaktır.
+Java bellek yönetimi en iyi uygulamalarını takip etmek, uygulamanızın hızlı yanıt vermesini sağlayacaktır.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Neden | Çözüm |
 
-Aspose.Email for Java kullanarak e-posta mesajlarını nasıl yükleyeceğinizi, özel şablonlarla kaydetme seçeneklerini nasıl yapılandıracağınızı ve bunları MHT dosyaları olarak nasıl dışa aktaracağınızı öğrendiniz. Bu çok yönlü yaklaşım, e-postaları verimli bir şekilde yönetme ve dağıtmada oyunun kurallarını değiştirebilir.
+|-------|-------|-----|
 
-Uygulamalarınızı daha da geliştirmek için Aspose.Email kütüphanesinin diğer özelliklerini keşfetmeyi düşünün!
+| **`msg.save` üzerinde NullPointerException hatası** | Yanlış çıktı yolu | `YOUR_OUTPUT_DIRECTORY` dizininin mevcut ve yazılabilir olduğundan emin olun. |
 
-## SSS Bölümü
-**S: E-postaları MHT olarak kaydederken ekleri nasıl işlerim?**
-A: Şunlardan emin olun: `MhtSaveOptions` ek işleme mantığını içerecek şekilde yapılandırılmıştır. Kütüphane, ekleri MHT dosyasına yerleştirmeyi destekler.
+| **MHT'de eksik resimler** | `MhtFormatOptions` kaynakları gömmek için ayarlanmamış | Seçenekler bayrağına `MhtFormatOptions.EmbedResources` ekleyin. |
 
-**S: Çıktı MHT dosyasındaki e-posta başlıklarını özelleştirebilir miyim?**
-A: Evet, kullanın `MhtFormatOptions.WriteHeader` ve eğitimde gösterildiği gibi çeşitli başlık alanları için özel şablonlar tanımlayın.
+| **Takvim etkinlikleri oluşturulmuyor** | `RenderCalendarEvent` bayrağı atlanmış | `options.setMhtFormatOptions(MhtFormatOptions.WriteHeader \| MhtFormatOptions.RenderCalendarEvent);` komutunun çalıştırıldığından emin olun. |
+
+## Sıkça Sorulan Sorular
+
+**S: E-postaları MHT olarak kaydederken ekleri nasıl ele alabilirim?**
+C: `MhtSaveOptions`'ın ek işleme mantığını içerecek şekilde yapılandırıldığından emin olun. Kütüphane, ekleri MHT dosyasına yerleştirmeyi destekler.
+
+**S: Çıktı MHT dosyasında e-posta başlıklarını özelleştirebilir miyim?**
+C: Evet, `MhtFormatOptions.WriteHeader` kullanın ve eğitimde gösterildiği gibi çeşitli başlık alanları için özel şablonlar tanımlayın.
 
 **S: Aspose.Email Java'yı kullanmak için sistem gereksinimleri nelerdir?**
-A: JDK 16 veya üzeri gereklidir. Kütüphane, Maven projelerini destekleyen çoğu modern IDE ile sorunsuz bir şekilde çalışır.
+C: JDK16 veya üstü gereklidir. Kütüphane, Maven projelerini destekleyen çoğu modern IDE ile sorunsuz çalışır.
 
-**S: Bir e-posta mesajının yalnızca belirli bölümlerini kaydetmek mümkün müdür?**
-A: MHT biçimi genellikle tam mesajları içerirken, `MailMessage`İçeriği seçici bir şekilde işleme ve dahil etme özelliklerine sahiptir.
+**S: Bir e-posta mesajının yalnızca belirli bölümlerini kaydetmek mümkün mü?**
+C: MHT formatı genellikle tam mesajları içerirken, `MailMessage`'ın özelliklerini kullanarak içeriği seçici olarak işleyebilir ve dahil edebilirsiniz.
 
-**S: E-posta yükleme veya kaydetme ile ilgili sorunları nasıl giderebilirim?**
-A: Dosya yollarının doğruluğunu kontrol edin, projenizde uygun kitaplık kurulumunu sağlayın ve Aspose.Email'e bakın [destek forumu](https://forum.aspose.com/c/email/10) yardım için.
+**S: E-posta yükleme veya kaydetme sorunlarını nasıl giderebilirim?**
+C: Dosya yollarının doğruluğunu kontrol edin, projenizde kütüphanenin doğru şekilde kurulduğundan emin olun ve yardım için Aspose.Email'in [destek forumuna](https://forum.aspose.com/c/email/10) başvurun.
+
+**S: Kütüphane diğer formatları (EML, MSG) MHT'ye dönüştürmeyi destekliyor mu?**
+C: Kesinlikle. `MailMessage.load`, EML, MSG ve diğer formatları okuyabilir ve ardından aynı seçenekleri kullanarak bunları MHT olarak kaydedebilirsiniz.
 
 ## Kaynaklar
-- **Belgeleme**: Tüm işlevler hakkında daha derinlemesine bilgi edinmek için şu adresi ziyaret edin: [Aspose E-posta Java Belgeleri](https://reference.aspose.com/email/java/).
-- **İndirmek**: Ücretsiz denemenize başlamak için şuradan indirin: [Sürümler](https://releases.aspose.com/email/java/).
-- **Satın almak**: Satın alma seçeneklerini keşfedin [Resmi Satın Alma Sayfası](https://purchase.aspose.com/buy) Uzun süreli kullanım için.
-- **Ücretsiz Deneme ve Geçici Lisans**: Ücretsiz deneme süresince kapsamlı özelliklere erişin veya bu bağlantılardan geçici bir lisans edinin:
-  - [Ücretsiz Deneme](https://releases.aspose.com/email/java/)
-  - [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
+- **Belgeler**: Tüm işlevlere daha derinlemesine bakmak için [Aspose E-posta Java Belgelerini](https://reference.aspose.com/email/java/) ziyaret edin.
+- **İndirme**: [Sürümler](https://releases.aspose.com/email/java/) adresinden indirerek ücretsiz deneme sürümünüze başlayın.
+- **Satın Alma**: Uzun süreli kullanım için [Resmi Satın Alma Sayfasını](https://purchase.aspose.com/buy) ziyaret ederek satın alma seçeneklerini inceleyin.
+- **Ücretsiz Deneme ve Geçici Lisans**: Ücretsiz deneme süresi boyunca kapsamlı özelliklere erişin veya şu bağlantılar aracılığıyla geçici bir lisans edinin:
+- [Ücretsiz Deneme](https://releases.aspose.com/email/java/)
+- [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
 
-Aspose.Email for Java ile e-posta işleme yönteminizi bugün keşfedin, uygulayın ve dönüştürün!
+Aspose.Email for Java ile e-posta yönetiminizi bugün keşfedin, uygulayın ve dönüştürün!
+
+---
+
+**Son Güncelleme:** 2026-03-02
+**Test Edilen Sürüm:** Aspose.Email for Java 25.4 (jdk16 sınıflandırıcı)
+**Yazar:** Aspose 
+
+---
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
