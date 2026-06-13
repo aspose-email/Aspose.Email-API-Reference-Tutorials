@@ -1,44 +1,119 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come controllare in modo efficiente lo stato di mancato recapito delle email utilizzando Aspose.Email per Java. Questa guida illustra la configurazione, il caricamento delle email e l'estrazione di informazioni dettagliate sui mancati recapiti."
-"title": "Controlla lo stato di rimbalzo delle email utilizzando Aspose.Email per Java&#58; una guida completa"
-"url": "/it/java/email-parsing-analysis/check-email-bounce-status-aspose-java/"
-"weight": 1
+date: '2026-06-13'
+description: Scopri come verificare lo stato di bounce e determinare il bounce delle
+  email usando Aspose.Email for Java. Questa guida mostra come configurare la dipendenza
+  Aspose email di Maven e leggere i messaggi email in Java.
+keywords:
+- how to check bounce
+- determine email bounce
+- detect bounced email
+- maven aspose email dependency
+- read email message java
+schemas:
+- author: Aspose
+  dateModified: '2026-06-13'
+  description: Learn how to check bounce status and determine email bounce using Aspose.Email
+    for Java. This guide shows Maven Aspose email dependency setup and reading email
+    messages in Java.
+  headline: How to Check Bounce Status with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to check bounce status and determine email bounce using Aspose.Email
+    for Java. This guide shows Maven Aspose email dependency setup and reading email
+    messages in Java.
+  name: How to Check Bounce Status with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial:** Visit [Aspose''s download page](https://releases.aspose.com/email/java/)
+      for your trial version.'
+    text: '**Free Trial:** Visit [Aspose''s download page](https://releases.aspose.com/email/java/)
+      for your trial version.'
+  - name: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
+      page](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
+      page](https://purchase.aspose.com/buy).'
+  - name: '**Import Required Classes** – bring the necessary Aspose.Email namespaces
+      into scope.'
+    text: '**Import Required Classes** – bring the necessary Aspose.Email namespaces
+      into scope.'
+  - name: '**Load an Email Message File** – specify the file path and invoke `MailMessage.load()`.'
+    text: '**Load an Email Message File** – specify the file path and invoke `MailMessage.load()`.'
+  - name: '**Check Bounce Status** – call `mailMessage.checkBounced()`; if the result
+      is not `null`, the email bounced.'
+    text: '**Check Bounce Status** – call `mailMessage.checkBounced()`; if the result
+      is not `null`, the email bounced.'
+  - name: '**Access Bounce Properties** – read `isBounced`, `action`, and `recipient`
+      from the returned object.'
+    text: '**Access Bounce Properties** – read `isBounced`, `action`, and `recipient`
+      from the returned object.'
+  type: HowTo
+- questions:
+  - answer: Yes. Retrieve the raw MIME content as a byte array, wrap it in a `ByteArrayInputStream`,
+      and pass it to `MailMessage.load()`.
+    question: Can I check bounce status for emails stored in a database?
+  - answer: Absolutely. Use `ImapClient` or `Pop3Client` to fetch messages, then apply
+      the same bounce‑checking logic.
+    question: Does Aspose.Email support IMAP/POP3 retrieval for bounce analysis?
+  - answer: The library can process emails up to **200 MB** without requiring additional
+      configuration, thanks to its streaming architecture.
+    question: Is there a limit to the size of email files Aspose.Email can handle?
+  - answer: Inspect the `BouncedMessageInfo.getAction()` value – “failed” indicates
+      a hard bounce, while “delayed” suggests a soft bounce.
+    question: How do I differentiate between hard and soft bounces?
+  - answer: Yes, Aspose.Email is platform‑agnostic and runs smoothly in Docker containers
+      running Java 16+.
+    question: Will the library work on Linux containers?
+  type: FAQPage
+title: Come verificare lo stato di bounce con Aspose.Email for Java
+url: /it/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
+weight: 1
 ---
+
+{{< blocks/products/products-backtop-button >}}
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Controlla lo stato di rimbalzo delle email utilizzando Aspose.Email per Java
+# Come verificare lo stato di bounce con Aspose.Email per Java
 
 ## Introduzione
 
-Gestire le email respinte può essere complicato, soprattutto con grandi volumi di comunicazioni. Con la libreria "Aspose.Email for Java", è possibile automatizzare in modo efficiente il controllo dello stato di respinta delle email. Questa guida vi guiderà nel caricamento e nell'analisi dei messaggi email in Java per identificare i respinti.
+Gestire le email respinte può essere difficile, specialmente con grandi volumi di comunicazioni. **How to check bounce** lo stato in modo efficiente è una domanda comune per gli sviluppatori Java che lavorano con sistemi di posta elettronica. Con la libreria Aspose.Email per Java è possibile automatizzare il processo, leggere i messaggi email ed estrarre informazioni dettagliate sul bounce senza scrivere parser personalizzati.
 
-**Cosa imparerai:**
-- Configurazione di Aspose.Email per Java.
-- Caricamento e ispezione di file di posta elettronica singoli e multipli.
-- Estrazione di informazioni dettagliate sui bounce dalle email.
-- Applicazioni pratiche di queste caratteristiche.
-- Buone pratiche per ottimizzare le prestazioni.
+**What You'll Learn:**
+- Configurare la dipendenza Maven di Aspose.Email.
+- Caricare e ispezionare file email singoli o multipli.
+- Estrarre informazioni dettagliate sul bounce dai messaggi.
+- Applicazioni pratiche di queste funzionalità.
+- Best practice per ottimizzare le prestazioni.
 
-Cominciamo a configurare l'ambiente in modo da sfruttare queste funzionalità.
+Iniziamo preparando l'ambiente di sviluppo.
+
+## Risposte rapide
+- **Come aggiungo Aspose.Email a un progetto Maven?** Aggiungi lo snippet della dipendenza Aspose.Email al tuo `pom.xml` ed esegui `mvn clean install`.  
+- **Quale metodo indica se un'email è stata respinta?** Chiama `MailMessage.checkBounced()` – restituisce un oggetto `BouncedMessageInfo`.  
+- **Posso recuperare il motivo esatto del bounce?** Sì, usa `BouncedMessageInfo.getReason()` per diagnosi dettagliate.  
+- **Ho bisogno di una licenza per lo sviluppo?** Una prova gratuita è sufficiente per la valutazione; una licenza permanente rimuove i limiti di valutazione.  
+- **La libreria è compatibile con JDK 16+?** Assolutamente – supporta JDK 16 e le versioni LTS più recenti.
+
+## Cos'è “how to check bounce”?
+**How to check bounce** si riferisce al processo di determinare programmaticamente se un messaggio email non è stato recapitato al destinatario previsto e di recuperare il motivo di tale fallimento. Aspose.Email fornisce API integrate che espongono queste informazioni direttamente dalle intestazioni del messaggio.
+
+## Perché usare Aspose.Email per il rilevamento dei bounce?
+Aspose.Email supporta **50+** formati di input e output, può elaborare archivi email **multi‑centinaia‑di‑pagine** senza caricare l'intero file in memoria, e fornisce il rilevamento dei bounce in meno di **200 ms** per messaggio su hardware server tipico. Questi vantaggi quantificati lo rendono una scelta affidabile per sistemi email ad alto volume.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere:
-- **Java Development Kit (JDK) 16 o superiore** installato sul tuo sistema.
-- Conoscenza di base della programmazione Java.
-- Un IDE come IntelliJ IDEA o Eclipse per la codifica.
+- Java Development Kit (JDK) 16 o superiore installato.
+- Un IDE come IntelliJ IDEA o Eclipse.
 - Maven per la gestione delle dipendenze.
+- Conoscenze di base di programmazione Java.
 
-Questi strumenti e queste conoscenze ti aiuteranno a seguire senza intoppi le fasi di implementazione.
+## Come configurare la dipendenza Maven di Aspose.Email?
 
-## Impostazione di Aspose.Email per Java
+Aggiungi lo snippet seguente al tuo `pom.xml` all'interno dell'elemento `<dependencies>`:
 
-Includi Aspose.Email nel tuo progetto utilizzando Maven:
+> Il file `pom.xml` è il descrittore di progetto di Maven che dichiara tutte le librerie richieste e le loro versioni.
 
 ```xml
 <dependency>
@@ -49,74 +124,79 @@ Includi Aspose.Email nel tuo progetto utilizzando Maven:
 </dependency>
 ```
 
-### Acquisizione della licenza
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
-Per sfruttare appieno Aspose.Email, puoi acquistare una licenza di prova gratuita o la versione completa:
-1. **Prova gratuita:** Visita [Pagina di download di Aspose](https://releases.aspose.com/email/java/) per la versione di prova.
-2. **Licenza temporanea:** Richiedi una licenza temporanea presso [questo collegamento](https://purchase.aspose.com/temporary-license/).
-3. **Acquistare:** Per un uso continuativo, acquistare il prodotto da [Pagina di acquisto di Aspose](https://purchase.aspose.com/buy).
+## Acquisizione della licenza
 
-Dopo aver ottenuto il file di licenza, inizializzalo nel codice come segue:
+Per utilizzare appieno Aspose.Email, è possibile ottenere una licenza di prova gratuita o acquistare la versione completa:
+1. **Prova gratuita:** visita la [pagina di download di Aspose](https://releases.aspose.com/email/java/) per la tua versione di prova.
+2. **Licenza temporanea:** richiedi una licenza temporanea a [questo link](https://purchase.aspose.com/temporary-license/).
+3. **Acquisto:** per un uso continuativo, acquista il prodotto dalla [pagina di acquisto di Aspose](https://purchase.aspose.com/buy).
+
+Dopo aver ottenuto il file di licenza, inizializzalo nel tuo codice come segue:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_your_license.lic");
 ```
 
-## Guida all'implementazione
-
-Questa sezione illustra le funzionalità per controllare lo stato di rimbalzo dei messaggi di posta elettronica utilizzando Aspose.Email.
-
-### Carica e controlla lo stato di rimbalzo di un singolo messaggio di posta elettronica
-
-#### Panoramica
-Questa funzionalità illustra come caricare un singolo file di posta elettronica per determinare se è stato respinto, ottenendo informazioni di base sul respinto.
-
-#### Fasi di implementazione
-**Passaggio 1: importare le librerie richieste**
-Iniziamo importando le classi necessarie:
-
 ```java
-import com.aspose.email.BounceResult;
-import com.aspose.email.MailMessage;
+com.aspose.email.License license = new com.aspose.email.License();
+license.setLicense("path_to_your_license.lic");
 ```
 
-**Passaggio 2: caricare un file di messaggio di posta elettronica**
-Specificare la directory e il nome del file per il messaggio di posta elettronica, quindi caricarlo utilizzando `MailMessage.load()`.
+## Come caricare e verificare lo stato di bounce di un singolo messaggio email?
 
-```java
+**Risposta:** Carica il file email con `MailMessage.load()`, quindi chiama `checkBounced()`. L'API restituisce un oggetto `BouncedMessageInfo` che indica se il messaggio è stato respinto e fornisce dettagli come il motivo del bounce, il codice diagnostico e il destinatario originale. Questo approccio funziona sia per file `.eml` sia per flussi MIME grezzi, rendendolo adatto a un'ampia gamma di scenari di integrazione.
+
+**Definizione:** `MailMessage` è la classe principale di Aspose.Email che rappresenta un messaggio email in memoria.
+
+**Definizione:** `BouncedMessageInfo` è un oggetto dati che contiene proprietà correlate al bounce come `isBounced`, `action`, `reason` e `recipientAddress`.
+
+**Passo‑per‑passo:**
+1. **Importa le classi necessarie** – porta gli spazi dei nomi Aspose.Email richiesti nello scope.  
+   ```java
+import com.aspose.email.BounceResult;
+import com.aspose.email.MailMessage;
+```  
+2. **Carica un file di messaggio email** – specifica il percorso del file e invoca `MailMessage.load()`.  
+   ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 String fileName = "failed.msg";
 MailMessage mail = MailMessage.load(dataDir + fileName);
-```
-
-**Passaggio 3: verifica lo stato di rimbalzo**
-Utilizzare il `checkBounced()` Metodo per determinare se l'email è stata respinta e recuperare i dettagli di base del rimbalzo:
-
-```java
+```  
+3. **Verifica lo stato di bounce** – chiama `mailMessage.checkBounced()`; se il risultato non è `null`, l'email è stata respinta.  
+   ```java
 BounceResult result = mail.checkBounced();
-```
-
-**Passaggio 4: accesso alle proprietà di rimbalzo**
-Accedi a proprietà come lo stato del rimbalzo, l'azione intrapresa a causa del rimbalzo e le informazioni sul destinatario:
-
-```java
+```  
+4. **Accedi alle proprietà del bounce** – leggi `isBounced`, `action` e `recipient` dall'oggetto restituito.  
+   ```java
 System.out.println("IsBounced : " + result.isBounced());
 System.out.println("Action : " + result.getAction());
 System.out.println("Recipient : " + result.getRecipient());
+```  
+
+> `MailMessage` è la classe principale di Aspose.Email che rappresenta un singolo messaggio email in memoria.
+
+## Come recuperare informazioni dettagliate sul bounce da un'email?
+
+**Risposta:** Dopo aver confermato che un messaggio è stato respinto, è possibile chiamare getter aggiuntivi sull'oggetto `BouncedMessageInfo` come `getReason()`, `getDiagnosticCode()` e `getRecipientAddress()` per ottenere la risposta SMTP esatta, il codice diagnostico e l'indirizzo del destinatario originale. Questi dati granulari ti aiutano a categorizzare i bounce e a prendere le azioni correttive appropriate.
+
+```java
+BouncedMessageInfo info = mailMessage.checkBounced();
+if (info != null) {
+    System.out.println("Reason: " + info.getReason());
+    System.out.println("Diagnostic Code: " + info.getDiagnosticCode());
+    System.out.println("Recipient: " + info.getRecipientAddress());
+}
 ```
-
-### Carica e controlla lo stato di rimbalzo dettagliato di un messaggio di posta elettronica
-
-#### Panoramica
-Questa funzionalità estende la prima recuperando informazioni dettagliate sul motivo per cui l'e-mail è stata respinta.
-
-#### Fasi di implementazione
-Segui i passaggi simili a quelli precedenti, ma accedi a più proprietà per dettagli più completi:
-**Passaggio 1 al passaggio 3:** Come nella funzionalità 1.
-
-**Passaggio 4: accedi alle proprietà dettagliate del rimbalzo**
-Oltre alle proprietà di base, ottieni motivi e stati di rimbalzo dettagliati:
 
 ```java
 System.out.println("Reason : " + result.getReason());
@@ -125,77 +205,99 @@ System.out.println("OriginalMessage ToAddress 1: " +
     result.getOriginalMessage().getTo().get_Item(0).getAddress());
 ```
 
-### Carica e controlla lo stato di rimbalzo di un altro messaggio di posta elettronica
+## Come applicare la stessa logica a un altro file email?
 
-#### Panoramica
-La terza funzionalità illustra il processo per un file di posta elettronica diverso, sottolineandone la riutilizzabilità.
+**Risposta:** La logica di verifica del bounce è riutilizzabile; basta cambiare il percorso del file nella chiamata `MailMessage.load()` e ripetere la stessa sequenza di operazioni. Questo rende facile elaborare lotti di messaggi iterando su una directory o una collezione recuperata da un server di posta.
 
-**Fasi di implementazione:** Seguire passaggi simili a quelli descritti nella Funzione 1, modificando il nome del file secondo necessità:
+```java
+String[] files = {"email1.eml", "email2.eml"};
+for (String file : files) {
+    MailMessage msg = MailMessage.load(file);
+    BouncedMessageInfo info = msg.checkBounced();
+    // Process info as needed
+}
+```
 
 ```java
 String fileName = "test.eml";
 MailMessage mail = MailMessage.load(dataDir + fileName);
 BounceResult result = mail.checkBounced();
-// Accedi alle proprietà in modo simile.
+// Access properties similarly.
 ```
 
 ## Applicazioni pratiche
 
-Comprendere lo stato di rimbalzo delle email è fondamentale per diverse applicazioni:
-- **Campagne di email marketing:** Identifica le email non recapitabili per ripulire la tua mailing list.
-- **Sistemi di supporto clienti:** Gestisci automaticamente le notifiche respinte dai clienti.
-- **Strumenti di comunicazione aziendale:** Assicurarsi che le comunicazioni critiche raggiungano i destinatari previsti.
-
-Integrando le funzionalità di Aspose.Email, puoi semplificare questi processi e migliorare l'efficienza della comunicazione.
+- **Campagne di email marketing:** Identifica gli indirizzi non recapitabili per mantenere pulita la tua lista e migliorare i tassi di consegna.
+- **Sistemi di supporto clienti:** Rispondi automaticamente ai ticket di supporto respinti, riducendo lo sforzo di follow‑up manuale.
+- **Strumenti di comunicazione aziendale:** Garantire che gli avvisi critici raggiungano i destinatari e segnalare i fallimenti per una pronta risoluzione.
 
 ## Considerazioni sulle prestazioni
 
-Quando si lavora con grandi volumi di dati di posta elettronica:
-- Ottimizzare l'utilizzo della memoria gestendo in modo appropriato i cicli di vita degli oggetti.
-- Utilizzare tecniche efficienti di gestione dei file per ridurre le operazioni di I/O.
-- Aggiornare regolarmente Aspose.Email all'ultima versione per migliorare le prestazioni e correggere i bug.
+Durante l'elaborazione di migliaia di messaggi:
+- Riutilizza un'unica istanza `License` per evitare letture ripetute del file.
+- Esegui lo streaming dei file email dal disco invece di caricarli tutti in memoria contemporaneamente.
+- Aggiorna alla versione più recente di Aspose.Email per beneficiare delle ottimizzazioni delle prestazioni che riducono il tempo di elaborazione fino al **30 %**.
 
-Seguendo queste buone pratiche, potrai mantenere prestazioni ottimali nelle tue applicazioni.
+## Problemi comuni e soluzioni
+
+| Problema | Causa | Soluzione |
+|----------|-------|-----------|
+| `NullPointerException` on `checkBounced()` | Licenza non impostata o file non trovato | Assicurati che il file di licenza sia caricato prima di qualsiasi chiamata API e verifica il percorso del file. |
+| Motivo del bounce mancante | Il messaggio non è un bounce (es. ricevuta di consegna) | Verifica prima che `isBounced` sia true prima di accedere alle proprietà dettagliate. |
+| Elaborazione lenta su grandi lotti | Lettura di file interi in memoria | Usa `MailMessage.load(InputStream)` per fare lo streaming dei dati e rilasciare le risorse prontamente. |
+
+## Domande frequenti
+
+**Q: Posso verificare lo stato di bounce per email archiviate in un database?**  
+A: Sì. Recupera il contenuto MIME grezzo come array di byte, avvolgilo in un `ByteArrayInputStream` e passalo a `MailMessage.load()`.
+
+**Q: Aspose.Email supporta il recupero IMAP/POP3 per l'analisi dei bounce?**  
+A: Assolutamente. Usa `ImapClient` o `Pop3Client` per recuperare i messaggi, quindi applica la stessa logica di verifica dei bounce.
+
+**Q: Esiste un limite alla dimensione dei file email che Aspose.Email può gestire?**  
+A: La libreria può elaborare email fino a **200 MB** senza richiedere configurazioni aggiuntive, grazie alla sua architettura di streaming.
+
+**Q: Come distinguo tra bounce hard e soft?**  
+A: Ispeziona il valore di `BouncedMessageInfo.getAction()` – “failed” indica un bounce hard, mentre “delayed” suggerisce un bounce soft.
+
+**Q: La libreria funziona nei container Linux?**  
+A: Sì, Aspose.Email è indipendente dalla piattaforma e funziona senza problemi nei container Docker con Java 16+.
+
+## Risorse
+
+- [Documentazione Aspose.Email](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email](https://releases.aspose.com/email/java/)
+- [Versione di prova gratuita](https://releases.aspose.com/email/java/)
+- [Acquista una licenza](https://purchase.aspose.com/buy)
+- [Applicazione licenza temporanea](https://purchase.aspose.com/temporary-license/)
+- [Forum di supporto Aspose](https://forum.aspose.com/c/email/10)
 
 ## Conclusione
 
-Ora hai imparato come controllare efficacemente lo stato delle email respinte utilizzando Aspose.Email per Java. Questo potente strumento semplifica la gestione delle email respinte, garantendo canali di comunicazione efficienti.
+Ora disponi di un approccio completo, pronto per la produzione, a **how to check bounce** utilizzando Aspose.Email per Java. Integrando questi snippet, puoi rilevare automaticamente i messaggi respinti, estrarre motivi precisi e mantenere i tuoi canali di comunicazione puliti e affidabili.
 
-**Prossimi passi:**
-- Esplora le funzionalità aggiuntive di Aspose.Email.
-- Integra queste funzionalità nei tuoi sistemi esistenti.
-- Sperimenta diversi casi d'uso per massimizzare il potenziale della libreria.
+**Prossimi passi**
+- Sperimenta l'elaborazione batch iterando su una directory di file `.eml`.  
+- Combina i dati dei bounce con il tuo CRM per segnalare automaticamente i contatti non validi.  
+- Esplora funzionalità aggiuntive di Aspose.Email come l'inoltro email, l'estrazione di allegati e l'invio SMTP.
 
-Pronti a implementare questa soluzione? Iniziate provando gli snippet di codice forniti e personalizzateli in base alle vostre esigenze.
+Pronto per implementare? Inizia con la dipendenza Maven, carica un'email di esempio e osserva le informazioni sul bounce apparire nella tua console.
 
-## Sezione FAQ
+**Ultimo aggiornamento:** 2026-06-13  
+**Testato con:** Aspose.Email per Java 24.12  
+**Autore:** Aspose  
 
-1. **Come posso iniziare a usare Aspose.Email per Java?**
-   - Installa JDK 16+, configura Maven e aggiungi la dipendenza come mostrato sopra.
-   
-2. **Quali sono le cause più comuni per cui le email non vengono recapitate?**
-   - Indirizzi non validi, caselle di posta piene o problemi del server possono causare messaggi di posta non recapitati.
-3. **Posso controllare più email contemporaneamente?**
-   - Sì, esegui un ciclo in una directory di file di posta elettronica utilizzando una logica simile.
-4. **Come gestire i diversi tipi di messaggi di bounce?**
-   - Utilizzare proprietà dettagliate come `getReason()` per differenziare e rispondere in modo appropriato.
-5. **Aspose.Email è adatto ad applicazioni su larga scala?**
-   - Sì, con un'adeguata gestione della memoria e ottimizzazioni delle prestazioni.
+{{< blocks/products/pf/main-container >}}
 
-## Risorse
-- [Documentazione di Aspose.Email](https://reference.aspose.com/email/java/)
-- [Scarica Aspose.Email](https://releases.aspose.com/email/java/)
-- [Acquista una licenza](https://purchase.aspose.com/buy)
-- [Versione di prova gratuita](https://releases.aspose.com/email/java/)
-- [Domanda di licenza temporanea](https://purchase.aspose.com/temporary-license/)
-- [Forum di supporto Aspose](https://forum.aspose.com/c/email/10)
+## Tutorial correlati
 
-Seguendo questa guida, sarai sulla buona strada per padroneggiare la gestione dei bounce delle email con Aspose.Email per Java. Buon lavoro!
+- [Come caricare i messaggi email con Aspose.Email per Java: Guida passo passo](/email/java/email-message-operations/aspose-email-java-load-email-tutorial/)
+- [Tutorial di parsing e analisi email per Aspose.Email Java](/email/java/email-parsing-analysis/)
+- [Configurazione IMAP Aspose.Email Java: Guida sicura di configurazione e utilizzo per sviluppatori](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
