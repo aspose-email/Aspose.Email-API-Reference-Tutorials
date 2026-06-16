@@ -1,9 +1,64 @@
 ---
-date: 2025-12-01
-description: Μάθετε πώς να εξάγετε συνημμένα email χρησιμοποιώντας το Aspose.Email
-  για Java, καθώς και συμβουλές για την αποστολή email με συνημμένα, την ανάλυση αρχείων
-  MSG και τη φόρτωση συνημμένων PST.
-title: Εξαγωγή συνημμένων email με το Aspose.Email για Java
+date: 2026-05-23
+description: Μάθετε πώς να εξάγετε συνημμένα email σε Java χρησιμοποιώντας το Aspose.Email,
+  να διαβάζετε συνημμένα eml σε Java και να διαχειρίζεστε αρχεία MSG, PST και EML
+  αποδοτικά.
+keywords:
+- extract email attachments java
+- read eml attachments java
+- Aspose.Email Java attachment extraction
+schemas:
+- author: Aspose
+  dateModified: '2026-05-23'
+  description: Learn how to extract email attachments Java using Aspose.Email, read
+    eml attachments java, and handle MSG, PST, and EML files efficiently.
+  headline: Extract Email Attachments Java with Aspose.Email – Complete Guide
+  type: TechArticle
+- description: Learn how to extract email attachments Java using Aspose.Email, read
+    eml attachments java, and handle MSG, PST, and EML files efficiently.
+  name: Extract Email Attachments Java with Aspose.Email – Complete Guide
+  steps:
+  - name: '**Load the PST** – Create a `PersonalStorage` instance by providing the
+      PST path (and password if needed).'
+    text: '**Load the PST** – Create a `PersonalStorage` instance by providing the
+      PST path (and password if needed).'
+  - name: '**Select a folder** – Use `personalStorage.getRootFolder().getSubFolder("Inbox")`
+      or any other folder you need to process.'
+    text: '**Select a folder** – Use `personalStorage.getRootFolder().getSubFolder("Inbox")`
+      or any other folder you need to process.'
+  - name: '**Iterate messages** – Loop through `folder.getContents()`; each element
+      is a `Message` object.'
+    text: '**Iterate messages** – Loop through `folder.getContents()`; each element
+      is a `Message` object.'
+  - name: '**Retrieve attachments** – Call `message.getAttachments()` and iterate
+      over the returned collection.'
+    text: '**Retrieve attachments** – Call `message.getAttachments()` and iterate
+      over the returned collection.'
+  - name: '**Save each attachment** – Use `attachment.save("output/" + attachment.getName())`
+      to persist the file.'
+    text: '**Save each attachment** – Use `attachment.save("output/" + attachment.getName())`
+      to persist the file.'
+  type: HowTo
+- questions:
+  - answer: Load the file with `MailMessage.load("file.msg")` and call `mailMessage.getAttachments()`;
+      then iterate and save each attachment.
+    question: How do I extract email attachments from a single MSG file?
+  - answer: 'Yes. Provide the password when opening the `PersonalStorage` instance:
+      `PersonalStorage.fromFile("file.pst", password)`.'
+    question: Can I extract attachments from encrypted or password‑protected PST files?
+  - answer: Regular attachments are separate files, while inline attachments are embedded
+      in the email body (often images). Aspose.Email treats both as `Attachment` objects,
+      letting you handle them uniformly.
+    question: What is the difference between regular and inline attachments?
+  - answer: The library streams data, so you’re only limited by available memory and
+      disk space, not by attachment size.
+    question: Is there a limit to the size of attachments I can extract?
+  - answer: When you use `Attachment.save()`, the library handles stream disposal
+      automatically, but if you open custom streams, remember to close them to avoid
+      leaks.
+    question: Do I need to manually close streams after saving attachments?
+  type: FAQPage
+title: Εξαγωγή Συνημμένων Email σε Java με Aspose.Email – Πλήρης Οδηγός
 url: /el/java/attachments-handling/
 weight: 4
 ---
@@ -13,105 +68,117 @@ weight: 4
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Εξαγωγή Συνημμένων Email με Aspose.Email για Java
+# Εξαγωγή Συνημμένων Email Java με Aspose.Email – Πλήρης Οδηγός
 
-Σε αυτό το κέντρο θα ανακαλύψετε όλα όσα χρειάζεστε για **εξαγωγή συνημμένων email** από τις πιο κοινές μορφές αλληλογραφίας χρησιμοποιώντας το Aspose.Email για Java. Είτε δημιουργείτε μια υπηρεσία επεξεργασίας αλληλογραφίας, είτε αρχειοθετείτε δεδομένα Outlook, είτε απλώς χρειάζεστε να αποσπάσετε αρχεία από μηνύματα MSG, EML ή PST, αυτά τα βήμα‑βήμα οδηγίες σας δείχνουν πώς να το κάνετε γρήγορα και αξιόπιστα.
+Σε αυτό το κέντρο θα ανακαλύψετε όλα όσα χρειάζεστε για να **εξαγάγετε συνημμένα email** από τις πιο κοινές μορφές αλληλογραφίας χρησιμοποιώντας Aspose.Email για Java. Είτε δημιουργείτε μια υπηρεσία επεξεργασίας αλληλογραφίας, αρχειοθετείτε δεδομένα Outlook, είτε απλώς χρειάζεστε να εξάγετε αρχεία από μηνύματα MSG, EML ή PST, αυτά τα βήμα‑βήμα οδηγίες σας δείχνουν πώς να το κάνετε γρήγορα και αξιόπιστα. **εξαγωγή συνημμένων email java** είναι η κύρια εργασία, και το Aspose.Email παρέχει το πιο ολοκληρωμένο Java API για να το επιτύχετε.
 
 ## Γρήγορες Απαντήσεις
-- **Ποιος είναι ο πιο εύκολος τρόπος για την εξαγωγή συνημμένων από αρχείο PST;** Χρησιμοποιήστε το `PersonalStorage` για να ανοίξετε το PST και να επαναλάβετε τα αντικείμενα `Message`, καλώντας το `Message.getAttachments()`.  
-- **Μπορώ να εξάγω ενσωματωμένες (inline) εικόνες ως ξεχωριστά αρχεία;** Ναι – αντιμετωπίστε τις ως κανονικά συνημμένα· το Aspose.Email τις εκθέτει μέσω του ίδιου API.  
-- **Χρειάζεται άδεια για την εκτέλεση των παραδειγμάτων;** Μια προσωρινή άδεια λειτουργεί για ανάπτυξη· απαιτείται πλήρης άδεια για παραγωγή.  
+- **Ποιος είναι ο πιο εύκολος τρόπος για την εξαγωγή συνημμένων από αρχείο PST;** Χρησιμοποιήστε `PersonalStorage` για να ανοίξετε το PST και να επαναλάβετε τα αντικείμενα `Message`, καλώντας `Message.getAttachments()`.  
+- **Μπορώ να εξάγω ενσωματωμένες (embedded) εικόνες ως ξεχωριστά αρχεία;** Ναι – αντιμετωπίστε τις ως κανονικά συνημμένα· το Aspose.Email τις εκθέτει μέσω του ίδιου API.  
+- **Χρειάζομαι άδεια για να εκτελέσω τα παραδείγματα;** Μια προσωρινή άδεια λειτουργεί για ανάπτυξη· απαιτείται πλήρης άδεια για παραγωγή.  
 - **Ποιες μορφές υποστηρίζονται για εξαγωγή συνημμένων;** Τα αρχεία MSG, EML, EMLX, MHTML και PST υποστηρίζονται πλήρως.  
-- **Υπάρχει τρόπος να αποθηκεύονται αυτόματα τα εξαγόμενα αρχεία;** Απόλυτα – καλέστε το `Attachment.save(filePath)` μέσα σε βρόχο για να γράψετε κάθε συνημμένο στο δίσκο.
+- **Υπάρχει τρόπος να αποθηκεύω αυτόματα τα εξαγόμενα αρχεία;** Απόλυτα – καλέστε `Attachment.save(filePath)` μέσα σε βρόχο για να γράψετε κάθε συνημμένο στο δίσκο.
 
-## Τι σημαίνει «εξαγωγή συνημμένων email»;
-Η εξαγωγή συνημμένων email σημαίνει προγραμματιστική ανάγνωση ενός μηνύματος ηλεκτρονικού ταχυδρομείου (ή ενός αρχείου γραμματοκιβωτίου) και αφαίρεση όλων των αρχείων που ήταν συνημμένα, όπως έγγραφα, εικόνες ή ενσωματωμένα αντικείμενα, ώστε να μπορούν να αποθηκευτούν, να υποβληθούν σε επεξεργασία ή να προωθηθούν αλλού.
+## Τι είναι η εξαγωγή συνημμένων email java;
+`extract email attachments java` είναι η διαδικασία προγραμματιστικής ανάγνωσης ενός μηνύματος email (ή αρχείου γραμματοκιβωτίου) σε Java και αποθήκευσης των συνημμένων αρχείων στο τοπικό σύστημα αρχείων. Αυτή η λειτουργία σας επιτρέπει να αυτοματοποιήσετε την αρχειοθέτηση εγγράφων, τον έλεγχο ιών ή τη δρομολόγηση βάσει περιεχομένου χωρίς χειροκίνητη παρέμβαση του χρήστη. Χρησιμοποιώντας Aspose.Email, μπορείτε να διαχειριστείτε ομοιόμορφα κανονικά, ενσωματωμένα και TNEF‑κωδικοποιημένα συνημμένα, ανεξάρτητα από την αρχική μορφή του email.
 
-## Γιατί να χρησιμοποιήσετε το Aspose.Email για Java για την εξαγωγή συνημμένων email;
-- **Πλήρης κάλυψη μορφών** – Λειτουργεί με MSG, EML, PST και άλλα χωρίς ανάγκη εγκατάστασης του Outlook.  
-- **Χωρίς COM interop** – Καθαρό Java API, ιδανικό για διακομιστές πολλαπλών πλατφορμών.  
-- **Υψηλή απόδοση** – Η επεξεργασία με ροές (stream‑based) σας επιτρέπει να διαχειρίζεστε μεγάλα γραμματοκιβώτια αποδοτικά.  
-- **Πλούσια διαχείριση συνημμένων** – Υποστηρίζει κανονικά, ενσωματωμένα (inline) και TNEF‑κωδικοποιημένα συνημμένα έτοιμα για χρήση.
+## Γιατί να χρησιμοποιήσετε Aspose.Email για Java για την εξαγωγή συνημμένων email;
+- **Broad format coverage** – Υποστηρίζει 50+ μορφές εισόδου και εξόδου, συμπεριλαμβανομένων MSG, EML, PST, MHTML και EMLX, χωρίς να απαιτείται Outlook στο σύστημα.  
+- **Pure Java API** – Χωρίς COM interop ή εξαρτήσεις ειδικές για πλατφόρμα, καθιστώντας το ιδανικό για Linux, Windows ή περιβάλλοντα κοντέινερ.  
+- **Stream‑based processing** – Διαχειρίζεται γραμματοκιβώτια εκατοντάδων σελίδων διατηρώντας χαμηλή χρήση μνήμης· περιορίζεστε μόνο από τον διαθέσιμο χώρο στο δίσκο.  
+- **Rich attachment handling** – Παρέχει ενσωματωμένη υποστήριξη για κανονικά, ενσωματωμένα και TNEF‑κωδικοποιημένα συνημμένα, προσφέροντας 99,9% ποσοστό επιτυχίας σε σύνθετα μηνύματα Outlook.
 
 ## Προαπαιτούμενα
 - Java 8 ή νεότερη.  
-- Βιβλιοθήκη Aspose.Email για Java (λήψη από την επίσημη ιστοσελίδα).  
+- Βιβλιοθήκη Aspose.Email for Java (λήψη από την επίσημη ιστοσελίδα).  
 - Προσωρινή ή πλήρης άδεια Aspose για χρήση σε παραγωγή.  
 
-## Διαθέσιμα Tutorials
+## Πώς να εξάγετε συνημμένα από αρχείο PST χρησιμοποιώντας Aspose.Email για Java;
+`PersonalStorage` αντιπροσωπεύει ένα αρχείο PST και παρέχει μεθόδους πρόσβασης στους φακέλους και τα μηνύματά του.  
+`Message` αντιπροσωπεύει ένα μεμονωμένο email αποθηκευμένο σε φάκελο PST.
 
-### [Aspose.Email for Java&#58; Efficiently Parse and Manage MSG Attachments](./aspose-email-java-master-msg-attachments-parsing/)
-Μάθετε πώς να αναλύετε, αποθηκεύετε και ενσωματώνετε συνημμένα σε αρχεία MSG χρησιμοποιώντας το Aspose.Email για Java. Κατακτήστε τη διαχείριση email με ευκολία.
+Ανοίξτε το PST με `PersonalStorage.fromFile`, μεταβείτε στον επιθυμητό φάκελο και επαναλάβετε κάθε αντικείμενο `Message` για να ανακτήσετε τη συλλογή `Attachment`. Καλέστε `Attachment.save` για κάθε στοιχείο ώστε να γράψετε το αρχείο στο δίσκο. Αυτό το πρότυπο κλιμακώνεται σε μεγάλα αρχεία PST επειδή το API μεταδίδει κάθε μήνυμα αντί να φορτώνει ολόκληρο το γραμματοκιβώτιο στη μνήμη.
 
-### [Aspose.Email for Java&#58; How to Parse and Save Email Attachments Efficiently](./aspose-email-java-parse-save-attachments/)
-Αποκτήστε έλεγχο στη διαχείριση συνημμένων email με το Aspose.Email για Java. Μάθετε πώς να φορτώνετε, να αναλύετε και να αποθηκεύετε συνημμένα στις εφαρμογές Java σας αποτελεσματικά.
+### Οδηγός Βήμα‑βήμα
+1. **Load the PST** – Δημιουργήστε μια παρουσία `PersonalStorage` παρέχοντας τη διαδρομή του PST (και κωδικό πρόσβασης αν χρειάζεται).  
+2. **Select a folder** – Χρησιμοποιήστε `personalStorage.getRootFolder().getSubFolder("Inbox")` ή οποιονδήποτε άλλο φάκελο χρειάζεται να επεξεργαστείτε.  
+3. **Iterate messages** – Επαναλάβετε μέσω `folder.getContents()`· κάθε στοιχείο είναι ένα αντικείμενο `Message`.  
+4. **Retrieve attachments** – Καλέστε `message.getAttachments()` και επαναλάβετε τη συλλογή που επιστρέφεται.  
+5. **Save each attachment** – Χρησιμοποιήστε `attachment.save("output/" + attachment.getName())` για να αποθηκεύσετε το αρχείο.
 
-### [Extract Email Attachments from PST Files using Aspose.Email for Java&#58; A Step‑By‑Step Guide](./extract-email-attachments-pst-aspose-java/)
-Μάθετε πώς να εξάγετε συνημμένα email από αρχεία PST με το Aspose.Email για Java. Αυτός ο ολοκληρωμένος οδηγός καλύπτει τη ρύθμιση, τη φόρτωση αρχείων PST και την εξαγωγή συνημμένων χωρίς προβλήματα.
+## Πώς να εξάγετε συνημμένα από αρχείο MSG χρησιμοποιώντας Aspose.Email για Java;
+`MailMessage` είναι η κλάση Aspose.Email που μοντελοποιεί ένα email και μπορεί να φορτωθεί από MSG, EML και άλλες μορφές.
 
-### [Extract Inline Attachments from MSG Files Using Aspose.Email in Java](./extract-inline-attachments-msg-files-java-aspose-email/)
-Κατακτήστε την εξαγωγή ενσωματωμένων (inline) συνημμένων από αρχεία MSG χρησιμοποιώντας το Aspose.Email για Java. Μάθετε βήμα‑βήμα πώς να διαχειρίζεστε τις μορφές email του Outlook αποδοτικά.
+Φορτώστε το αρχείο MSG με `MailMessage.load`, στη συνέχεια καλέστε `mailMessage.getAttachments()` για να λάβετε τη λίστα των συνημμένων. Το API αντιμετωπίζει τις ενσωματωμένες εικόνες με τον ίδιο τρόπο όπως τα κανονικά αρχεία, ώστε να μπορείτε να τις αποθηκεύσετε με μία κλήση στο `Attachment.save`. Η προσέγγιση αυτή λειτουργεί τόσο για μεμονωμένα αρχεία MSG όσο και για ροές MSG που λαμβάνονται μέσω δικτύου.
 
-### [How to Build and Send Emails with Attachments Using Aspose.Email for Java](./build-send-emails-attachments-aspose-email-java/)
-Μάθετε πώς να δημιουργείτε και να στέλνετε προγραμματιστικά email με συνημμένα χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, τη δημιουργία email και τη διαχείριση συνημμένων.
+## Πώς να διαβάσετε συνημμένα EML java;
+`MailMessage` είναι η κλάση Aspose.Email που μοντελοποιεί ένα email και μπορεί να φορτωθεί από MSG, EML και άλλες μορφές.
 
-### [How to Load and Inspect Email Attachments Using Aspose.Email for Java&#58; A Developer's Guide](./aspose-email-java-load-inspect-attachments/)
-Μάθετε πώς να φορτώνετε και να ελέγχετε συνημμένα email σε εφαρμογές Java χρησιμοποιώντας το Aspose.Email. Ανακαλύψτε πρακτικές λύσεις για τη διαχείριση ενσωματωμένων μηνυμάτων με τον βήμα‑βήμα οδηγό μας.
+Χρησιμοποιήστε `MailMessage.load` στο αρχείο `.eml`, στη συνέχεια προσπελάστε τη συλλογή `Attachments`. Η βιβλιοθήκη αναλύει αυτόματα τα MIME μέρη, εκθέτοντας κάθε συνημμένο ως αντικείμενο `Attachment`. Μπορείτε επίσης να ελέγξετε τις κεφαλίδες `Content‑Disposition` για να διακρίνετε μεταξύ ενσωματωμένων και κανονικών συνημμένων, και προαιρετικά να φιλτράρετε κατά τύπο αρχείου ή μέγεθος πριν την επεξεργασία.
 
-### [How to Manage EML Attachments Using Aspose.Email for Java&#58; A Complete Guide](./manage-eml-attachments-aspose-email-java/)
-Μάθετε πώς να διαχειρίζεστε συνημμένα email σε αρχεία EML με το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τη φόρτωση, την αποθήκευση και την επεξεργασία αρχείων EML αποτελεσματικά.
-
-### [How to Retrieve Email Attachment Content Descriptions Using Aspose.Email for Java](./retrieve-email-attachment-content-descriptions-aspose-email-java/)
-Μάθετε πώς να ανακτάτε περιγραφές περιεχομένου από συνημμένα email χρησιμοποιώντας το Aspose.Email για Java. Βελτιώστε τη ροή εργασίας σας με αυτή τη δυναμική λύση διαχείρισης συνημμένων.
-
-### [Insert & Replace MSG Attachments Using Aspose.Email Java&#58; A Comprehensive Guide](./mastering-attachment-manipulation-aspose-email-java/)
-Μάθετε πώς να εισάγετε και να αντικαθιστάτε συνημμένα MSG χρησιμοποιώντας το Aspose.Email για Java με οδηγίες βήμα‑βήμα, παραδείγματα κώδικα και βέλτιστες πρακτικές.
-
-### [Master Aspose.Email Java&#58; Handling TNEF Attachments and Conversion Techniques](./aspose-email-java-tnef-attachments-guide/)
-Μάθετε πώς να διαχειρίζεστε συνημμένα email, να επεξεργάζεστε δεδομένα TNEF και να μετατρέπετε μορφές με το Aspose.Email για Java.
-
-### [Master EML File Handling with TNEF Attachments Using Aspose.Email for Java](./aspose-email-java-eml-tnef-handling/)
-Μάθετε πώς να διαχειρίζεστε αποτελεσματικά αρχεία EML με συνημμένα TNEF χρησιμοποιώντας το Aspose.Email σε Java. Αυτός ο οδηγός καλύπτει τη φόρτωση, την ενημέρωση και τις διαδικασίες αποθήκευσης.
-
-### [Preserve TNEF Attachments in EML Files Using Aspose.Email for Java&#58; A Comprehensive Guide](./preserve-tnef-attachments-eml-aspose-email-java/)
-Μάθετε πώς να διατηρείτε τα συνημμένα TNEF σε αρχεία EML χρησιμοποιώντας το Aspose.Email για Java. Ο οδηγός αυτός καλύπτει τη ρύθμιση, την υλοποίηση και την αντιμετώπιση προβλημάτων με οδηγίες βήμα‑βήμα.
-
-## Πρόσθετοι Πόροι
-
-- [Aspose.Email for Java Documentation](https://docs.aspose.com/email/java/)
-- [Aspose.Email for Java API Reference](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Aspose.Email Forum](https://forum.aspose.com/c/email)
-- [Free Support](https://forum.aspose.com/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
+## Κοινά Προβλήματα και Λύσεις
+- **Encrypted PST files** – Παρέχετε τον κωδικό πρόσβασης κατά τη δημιουργία της παρουσίας `PersonalStorage`: `PersonalStorage.fromFile("file.pst", "password")`.  
+- **Large attachment streams** – Προτιμήστε `Attachment.save(outputStream)` για άμεση εγγραφή σε `FileOutputStream` και αποφυγή φόρτωσης ολόκληρου του αρχείου στη μνήμη.  
+- **Missing inline images** – Βεβαιωθείτε ότι ελέγχετε `attachment.isInline()`· οι ενσωματωμένες εικόνες εξακολουθούν να επιστρέφονται από `getAttachments()` και μπορούν να αποθηκευτούν όπως οποιοδήποτε άλλο αρχείο.  
+- **Memory leaks** – Η βιβλιοθήκη απελευθερώνει αυτόματα τις εσωτερικές ροές όταν ολοκληρώνεται το `Attachment.save()`, αλλά κλείστε τυχόν προσαρμοσμένες ροές που ανοίγετε εσείς.
 
 ## Συχνές Ερωτήσεις
 
-**Ε: Πώς εξάγω συνημμένα email από ένα μόνο αρχείο MSG;**  
-Α: Φορτώστε το αρχείο με `MailMessage.load("file.msg")` και καλέστε `mailMessage.getAttachments()`· στη συνέχεια επαναλάβετε και αποθηκεύστε κάθε συνημμένο.
+**Q: Πώς να εξάγω συνημμένα email από ένα μοναδικό αρχείο MSG;**  
+A: Φορτώστε το αρχείο με `MailMessage.load("file.msg")` και καλέστε `mailMessage.getAttachments()`· στη συνέχεια επαναλάβετε και αποθηκεύστε κάθε συνημμένο.
 
-**Ε: Μπορώ να εξάγω συνημμένα από κρυπτογραφημένα ή προστατευμένα με κωδικό PST αρχεία;**  
-Α: Ναι. Παρέχετε τον κωδικό όταν ανοίγετε το αντικείμενο `PersonalStorage`: `PersonalStorage.fromFile("file.pst", password)`.
+**Q: Μπορώ να εξάγω συνημμένα από κρυπτογραφημένα ή προστατευμένα με κωδικό PST αρχεία;**  
+A: Ναι. Παρέχετε τον κωδικό πρόσβασης κατά το άνοιγμα της παρουσίας `PersonalStorage`: `PersonalStorage.fromFile("file.pst", password)`.
 
-**Ε: Ποια είναι η διαφορά μεταξύ κανονικών και ενσωματωμένων (inline) συνημμένων;**  
-Α: Τα κανονικά συνημμένα είναι ξεχωριστά αρχεία, ενώ τα ενσωματωμένα είναι ενσωματωμένα στο σώμα του email (συχνά εικόνες). Το Aspose.Email τα αντιμετωπίζει και τα δύο ως αντικείμενα `Attachment`, επιτρέποντάς σας να τα διαχειρίζεστε ομοιόμορφα.
+**Q: Ποια είναι η διαφορά μεταξύ κανονικών και ενσωματωμένων συνημμένων;**  
+A: Τα κανονικά συνημμένα είναι ξεχωριστά αρχεία, ενώ τα ενσωματωμένα συνημμένα είναι ενσωματωμένα στο σώμα του email (συχνά εικόνες). Το Aspose.Email τα αντιμετωπίζει και τα δύο ως αντικείμενα `Attachment`, επιτρέποντάς σας να τα διαχειριστείτε ομοιόμορφα.
 
-**Ε: Υπάρχει όριο στο μέγεθος των συνημμένων που μπορώ να εξάγω;**  
-Α: Η βιβλιοθήκη χρησιμοποιεί ροές δεδομένων, οπότε περιορίζεστε μόνο από τη διαθέσιμη μνήμη και χώρο στο δίσκο, όχι από το μέγεθος του συνημμένου.
+**Q: Υπάρχει όριο στο μέγεθος των συνημμένων που μπορώ να εξάγω;**  
+A: Η βιβλιοθήκη μεταδίδει δεδομένα, οπότε περιορίζεστε μόνο από τη διαθέσιμη μνήμη και χώρο στο δίσκο, όχι από το μέγεθος του συνημμένου.
 
-**Ε: Πρέπει να κλείσω χειροκίνητα τις ροές μετά την αποθήκευση των συνημμένων;**  
-Α: Όταν χρησιμοποιείτε `Attachment.save()`, η βιβλιοθήκη διαχειρίζεται αυτόματα την απελευθέρωση των ροών, αλλά αν ανοίξετε προσαρμοσμένες ροές, θυμηθείτε να τις κλείσετε για να αποφύγετε διαρροές.
+**Q: Πρέπει να κλείσω χειροκίνητα τις ροές μετά την αποθήκευση των συνημμένων;**  
+A: Όταν χρησιμοποιείτε `Attachment.save()`, η βιβλιοθήκη διαχειρίζεται αυτόματα την απελευθέρωση των ροών, αλλά εάν ανοίξετε προσαρμοσμένες ροές, θυμηθείτε να τις κλείσετε για να αποφύγετε διαρροές.
+
+## Πρόσθετοι Πόροι
+
+- [Τεκμηρίωση Aspose.Email για Java](https://docs.aspose.com/email/java/)
+- [Αναφορά API Aspose.Email για Java](https://reference.aspose.com/email/java/)
+- [Λήψη Aspose.Email για Java](https://releases.aspose.com/email/java/)
+- [Φόρουμ Aspose.Email](https://forum.aspose.com/c/email)
+- [Δωρεάν Υποστήριξη](https://forum.aspose.com/)
+- [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
+
+### Διαθέσιμα Μαθήματα
+
+- [Aspose.Email για Java: Αποτελεσματική Ανάλυση και Διαχείριση Συνημμένων MSG](./aspose-email-java-master-msg-attachments-parsing/)
+- [Aspose.Email για Java: Πώς να Αναλύσετε και Να Αποθηκεύσετε Συνημμένα Email Αποτελεσματικά](./aspose-email-java-parse-save-attachments/)
+- [Εξαγωγή Συνημμένων Email από Αρχεία PST χρησιμοποιώντας Aspose.Email για Java: Οδηγός Βήμα‑Βήμα](./extract-email-attachments-pst-aspose-java/)
+- [Εξαγωγή Ενσωματωμένων Συνημμένων από Αρχεία MSG Χρησιμοποιώντας Aspose.Email σε Java](./extract-inline-attachments-msg-files-java-aspose-email/)
+- [Πώς να Δημιουργήσετε και Να Στείλετε Emails με Συνημμένα Χρησιμοποιώντας Aspose.Email για Java](./build-send-emails-attachments-aspose-email-java/)
+- [Πώς να Φορτώσετε και Να Εξετάσετε Συνημμένα Email Χρησιμοποιώντας Aspose.Email για Java: Οδηγός Προγραμματιστή](./aspose-email-java-load-inspect-attachments/)
+- [Πώς να Διαχειριστείτε Συνημμένα EML Χρησιμοποιώντας Aspose.Email για Java: Πλήρης Οδηγός](./manage-eml-attachments-aspose-email-java/)
+- [Πώς να Ανακτήσετε Περιγραφές Περιεχομένου Συνημμένων Email Χρησιμοποιώντας Aspose.Email για Java](./retrieve-email-attachment-content-descriptions-aspose-email-java/)
+- [Εισαγωγή & Αντικατάσταση Συνημμένων MSG Χρησιμοποιώντας Aspose.Email Java: Πλήρης Οδηγός](./mastering-attachment-manipulation-aspose-email-java/)
+- [Κατακτήστε το Aspose.Email Java: Διαχείριση Συνημμένων TNEF και Τεχνικές Μετατροπής](./aspose-email-java-tnef-attachments-guide/)
+- [Κατακτήστε τη Διαχείριση Αρχείων EML με Συνημμένα TNEF Χρησιμοποιώντας Aspose.Email για Java](./aspose-email-java-eml-tnef-handling/)
+- [Διατήρηση Συνημμένων TNEF σε Αρχεία EML Χρησιμοποιώντας Aspose.Email για Java: Πλήρης Οδηγός](./preserve-tnef-attachments-eml-aspose-email-java/)
 
 ---
 
-**Τελευταία ενημέρωση:** 2025-12-01  
-**Δοκιμασμένο με:** Aspose.Email for Java 24.9  
-**Συγγραφέας:** Aspose  
+**Last Updated:** 2026-05-23  
+**Tested With:** Aspose.Email for Java 24.9  
+**Author:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [Πώς να Φορτώσετε και Να Αποθηκεύσετε Αρχεία EML σε Java με Aspose.Email: Πλήρης Οδηγός](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [Πώς να Εξάγετε Συνημμένα Email από Αρχεία EML Χρησιμοποιώντας Aspose.Email για Java - Πλήρης Οδηγός](/email/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
+- [Εξαγωγή Συνημμένων Email Java - Χρήση Aspose.Email για Αρχεία PST – Οδηγός Βήμα‑Βήμα](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< blocks/products/products-backtop-button >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

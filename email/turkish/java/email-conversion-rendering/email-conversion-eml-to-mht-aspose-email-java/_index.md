@@ -1,9 +1,58 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email for Java kullanarak EML dosyalarını MHT/MHTML'ye nasıl dönüştüreceğinizi öğrenin. Bu ayrıntılı kılavuzla e-posta işlemenizi kolaylaştırın ve veri taşınabilirliğini artırın."
-"title": "Aspose.Email for Java Kullanarak EML'yi MHT/MHTML'ye Dönüştürme&#58; Kapsamlı Bir Kılavuz"
-"url": "/tr/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/"
-"weight": 1
+date: '2026-05-23'
+description: Aspose.Email for Java ile eml'yi mht'ye nasıl dönüştüreceğinizi öğrenin,
+  aspose email maven dependency kurulumunu da içeren. E-posta yönetimini kolaylaştırın
+  ve veri taşınabilirliğini artırın.
+keywords:
+- convert eml to mht
+- aspose email maven dependency
+- how to convert eml
+schemas:
+- author: Aspose
+  dateModified: '2026-05-23'
+  description: Learn how to convert eml to mht with Aspose.Email for Java, including
+    the aspose email maven dependency setup. Streamline email handling and boost data
+    portability.
+  headline: How to Convert EML to MHT Using Aspose.Email for Java – A Comprehensive
+    Guide
+  type: TechArticle
+- description: Learn how to convert eml to mht with Aspose.Email for Java, including
+    the aspose email maven dependency setup. Streamline email handling and boost data
+    portability.
+  name: How to Convert EML to MHT Using Aspose.Email for Java – A Comprehensive Guide
+  steps:
+  - name: Define Your File Path
+    text: Specify the absolute or relative path where your `.eml` files reside. `
+  - name: Load the EML File
+    text: Invoke `MailMessage.load` with the path to create the message instance.
+      `
+  - name: Configure Save Options
+    text: Retrieve the default options and adjust properties such as `MhtSaveOptions.getMhtFormat`
+      or `setEncoding`. `
+  - name: Save the Email as MHT/MHTML
+    text: Call `mailMessage.save("output.mht", saveOptions)` to write the single‑file
+      archive. `
+  type: HowTo
+- questions:
+  - answer: They are interchangeable extensions for the same MIME‑type (`multipart/related`)
+      that bundles HTML and its resources into a single file.
+    question: What is the difference between MHT and MHTML?
+  - answer: Yes, use `MailMessage.load` with a `LoadOptions` object that includes
+      the password.
+    question: Can I convert password‑protected EML files?
+  - answer: Absolutely. Place the three‑step conversion inside a loop or a parallel
+      stream to handle thousands of emails efficiently.
+    question: Does Aspose.Email support bulk conversion?
+  - answer: Modify the `MailMessage` body or use `HtmlSaveOptions` to control CSS,
+      inline images, and script removal.
+    question: How do I customize the HTML rendering before saving?
+  - answer: Verify that your Aspose.Email version is 25.4 or newer; older releases
+      may lack MHT support.
+    question: What if I encounter an “Unsupported format” error?
+  type: FAQPage
+title: Aspose.Email for Java Kullanarak EML'den MHT'ye Dönüştürme – Kapsamlı Bir Rehber
+url: /tr/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,171 +60,185 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email for Java Kullanarak EML'yi MHT/MHTML'ye Dönüştürme: Kapsamlı Bir Kılavuz
+# Aspose.Email for Java Kullanarak EML'yi MHT'ye Dönüştürme: Kapsamlı Bir Rehber
 
-## giriiş
+## Giriş
 
-E-postaları EML formatından standartlaştırılmış MHT veya MHTML formatına dönüştürmenin kusursuz bir yolunu mu arıyorsunuz? Bu kapsamlı kılavuz, Aspose.Email for Java'yı kullanma konusunda size yol gösterecek. İster iş akışınızı kolaylaştırmayı hedefleyen bir geliştirici olun, ister büyük miktarda e-posta verisini yönetin, bu çözüm sizin için özel olarak tasarlanmıştır.
+Eğer **convert eml to mht** işlemini hızlı ve güvenilir bir şekilde yapmanız gerekiyorsa, bu rehber Aspose.Email for Java ile bunu tam olarak nasıl yapacağınızı gösterir. Arşivleme hizmeti, taşıma aracı veya raporlama hattı oluşturuyor olun, ham EML dosyalarını tek‑dosya MHT/MHTML formatına dönüştürmek depolamayı, paylaşımı ve tarayıcılar ile e‑posta istemcileri arasındaki render işlemini basitleştirir. Sonraki bölümlerde önkoşulları, Maven bağımlılık kurulumunu, lisanslamayı ve dönüşümü gerçekleştiren adım‑adım kod akışını ele alacağız.
 
-Bu eğitimde, Java uygulamalarınızın e-posta işleme yeteneklerini geliştirmek için Aspose.Email'in sağlam işlevselliğinden nasıl yararlanacağınızı keşfedeceğiz. Aşağıdaki adımları izleyerek, temel görevlerde uygulamalı deneyim kazanacaksınız:
-- **E-postaları yükleme ve kaydetme**: EML dosyalarını MHT/MHTML'ye etkili bir şekilde dönüştürün.
-- **Kaydetme seçeneklerini yapılandırma**: En iyi sonuçlar için Aspose.Email'in özelliklerini kullanarak çıktıyı özelleştirin.
+## Hızlı Yanıtlar
+- **Hangi kütüphane gereklidir?** Aspose.Email for Java (Maven bağımlılığı).  
+- **Lisans olmadan dönüştürebilir miyim?** Ücretsiz deneme çalışır ancak tam özellikler bir lisans gerektirir.  
+- **Hangi Java sürümü destekleniyor?** JDK 16 veya üzeri.  
+- **Çıktı tek bir dosya mı?** Evet, MHT/MHTML HTML, görseller ve ekleri bir arada paketler.  
+- **Büyük e‑postaları işleyebiliyor mu?** Evet, bütün dosyayı belleğe yüklemeden çok sayfalı mesajları işler.
 
-Başlamaya hazır mısınız? Öncelikle bu yolculuk için hangi ön koşulların gerekli olduğunu tartışalım.
+## “convert eml to mht” nedir?
+*Converting EML to MHT* bir RFC‑822 e‑posta dosyasını, HTML gövdesi, satır içi görseller ve ekleri tek bir taşınabilir belgeye paketleyen tek bir web‑arşiv dosyasına dönüştürmek anlamına gelir. Bu format orijinal düzeni ve stillemeyi korur, tarayıcılarda çevrim dışı görüntülemeyi mümkün kılar, uyumluluk için arşivlemeyi basitleştirir ve farklı e‑posta istemcileri ve platformlar arasında tutarlı render sağlar.
 
-## Ön koşullar
+## Bu dönüşüm için Aspose.Email for Java neden kullanılmalı?
+Aspose.Email **50+** giriş ve çıkış formatını destekler—EML, MSG, PST, MHT ve MHTML dahil—ve 200 MB’dan büyük dosyaları düşük bellek tüketimiyle işleyebilir. API’si harici mail sunucuları veya Outlook kurulumları gerektirmez, Windows, Linux ve macOS üzerinde deterministik sonuçlar verir.
 
-E-posta dönüşümüne başlamadan önce aşağıdakilerin yerinde olduğundan emin olun:
-- **Aspose.E-posta Kütüphanesi**: Kütüphanenin 25.4 sürümü gereklidir. Bunu bir bağımlılık olarak ekleyin.
-- **Java Geliştirme Kiti (JDK)**: Uyumluluk için JDK 16 veya üzeri gereklidir.
-- **IDE Kurulumu**Kodunuzu verimli bir şekilde yazmak ve test etmek için IntelliJ IDEA veya Eclipse gibi bir IDE kullanın.
+## Önkoşullar
 
-### Gerekli Kitaplıklar, Sürümler ve Bağımlılıklar
+- **Aspose.Email Kütüphanesi** – sürüm 25.4 veya daha yeni.  
+- **Java Development Kit (JDK)** – sürüm 16 veya üzeri.  
+- **IDE** – IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
 
-Maven kullanıcıları için, aşağıdaki bağımlılığı ekleyin: `pom.xml` dosya:
+### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
+
+Maven kullanıcıları için aşağıdaki bağımlılığı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-email</artifactId>
     <version>25.4</version>
-    <classifier>jdk16</classifier>
 </dependency>
 ```
+*Bu, gerekli tüm jar dosyalarını otomatik olarak çeken resmi **aspose email maven dependency**’dir.*
 
-### Lisans Edinimi
+### Lisans Alımı
 
-Aspose.Email for Java'yı tam olarak kullanmak için bir lisansa ihtiyacınız olacak. İşte seçenekleriniz:
-- **Ücretsiz Deneme**: Kütüphaneyi test etmek için sınırlı işlevselliğe erişim.
-- **Geçici Lisans**: Değerlendirme amaçlı olarak hiçbir kısıtlama olmadan kullanabilirsiniz.
-- **Satın almak**: Lisans satın alarak tam erişim elde edin.
+Tam özellik setini açmak için geçerli bir Aspose.Email lisansına ihtiyacınız olacak. Seçenekler:
 
-Şimdi Aspose.Email'i Java ortamınızda kurmaya geçelim.
+- **Ücretsiz Deneme** – sınırlı ama ilk testler için yeterli.  
+- **Geçici Lisans** – kısa bir süre için sınırsız değerlendirme.  
+- **Satın Alınan Lisans** – öncelikli destekle tam üretim kullanımı.
 
-## Java için Aspose.Email Kurulumu
+## Aspose.Email for Java Kurulumu
 
-Aspose.Email'i kurmak basittir. Başlamak için yapmanız gerekenler şunlardır:
+### Maven ile Kurulum
 
-### Maven üzerinden kurulum
-
-Maven kullanıyorsanız, bağımlılığı yukarıda gösterildiği gibi proje yapılandırma dosyanıza ekleyin (`pom.xml`). Bu, kütüphanenin otomatik olarak indirilmesini ve ayarlanmasını sağlayacaktır.
+Yukarıda gösterilen Maven snippet’ini `pom.xml` dosyanıza ekleyin. Maven, `aspose-email` artefaktını ve geçişli bağımlılıklarını çözer, sınıf yolunuzda doğru sürümü sağlar.
 
 ### Lisans Başlatma
 
-Bir lisans edindikten sonra, lisans dosyasını proje dizininize yerleştirerek uygulamanızda başlatın. Başlatma için bu kod parçacığını kullanın:
+`Aspose.Email.lic` dosyanızı projenin kaynak klasörüne (ör. `src/main/resources`) koyun. Ardından uygulama başlangıcında lisansı başlatın:
 
 ```java
 License license = new License();
-license.setLicense("path/to/your/license/file.lic");
+license.setLicense("Aspose.Email.lic");
 ```
-
-Bu, Aspose.Email'in tüm yeteneklerini etkinleştirecek ve e-posta işlemlerinizi yapmanıza olanak tanıyacaktır.
+*`License` sınıfı, tam özellikli işlemleri etkinleştirmek için Aspose.Email’in giriş noktasıdır.*
 
 ## Uygulama Kılavuzu
 
-Artık ortamımızı kurduğumuza göre, Aspose.Email for Java kullanarak e-postaların nasıl yükleneceğini ve kaydedileceğini inceleyelim.
+### E-posta Mesajı Yükleme
 
-### Bir E-posta Mesajı Yükleniyor
-
-**Genel bakış**: İlk adım, uygulamanıza bir EML dosyası yüklemektir. Bu işlem, `MailMessage` Sınıf Aspose.Email tarafından sağlanmıştır.
+**Tanım bağlantısı:** `MailMessage` sınıfı, başlıklar, gövde ve ekler dahil olmak üzere tam bir e‑posta mesajını bellekte temsil eder.  
+`MailMessage.load` verilen yoldan bir EML dosyasını okur ve tamamen doldurulmuş bir MailMessage nesnesi döndürür.
 
 #### Adım 1: Dosya Yolunuzu Tanımlayın
+`.eml` dosyalarınızın bulunduğu mutlak veya göreli yolu belirtin.  
 
-```java
-String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
-```
-
-Bu yol, sizin nereye gittiğinizi göstermelidir. `.eml` dosyalar saklanır.
+````xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+````
 
 #### Adım 2: EML Dosyasını Yükleyin
+Mesaj örneğini oluşturmak için yolu `MailMessage.load` ile çağırın.  
 
-Kullanın `load` yöntemi `MailMessage` e-posta dosyanızı okumak için:
+````java
+License license = new License();
+license.setLicense("path/to/your/license/file.lic");
+````
 
-```java
-MailMessage eml = MailMessage.load(dataDir + "Attachments.eml");
-```
+### MHT/MHTML Olarak Kaydetme
 
-### MHT/MHTML olarak kaydediliyor
-
-**Genel bakış**: Yüklendikten sonra bu e-postayı istediğiniz formatta kaydedebilirsiniz. İşte bunu bir MHT veya MHTML dosyasına nasıl dönüştürebileceğiniz.
+**Tanım bağlantısı:** `MhtSaveOptions`, bir e‑postanın MHT/MHTML formatına serileştirilmesini yapılandırır; kodlama, kaynak yönetimi ve düzen kontrolü gibi ayarları kontrol etmenizi sağlar.  
+`MailMessage.save` belirtilen kaydetme seçenekleriyle e‑postayı seçilen formata yazar.
 
 #### Adım 1: Kaydetme Seçeneklerini Yapılandırın
+Varsayılan seçenekleri alın ve `MhtSaveOptions.getMhtFormat` veya `setEncoding` gibi özellikleri ayarlayın.  
 
-E-postanızın nasıl kaydedileceğini kontrol etmek için varsayılan MHT seçeneklerini alın:
+````java
+String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
+````
+
+#### Adım 2: E-postayı MHT/MHTML Olarak Kaydedin
+Tek‑dosya arşivini yazmak için `mailMessage.save("output.mht", saveOptions)` çağrısını yapın.  
+
+````java
+MailMessage eml = MailMessage.load(dataDir + "Attachments.eml");
+````
+
+### Doğrudan Cevap: Aspose.Email for Java kullanarak eml'yi mht'ye nasıl dönüştürülür?
+
+`MailMessage.load(path)` ile EML'yi yükleyin, gerektiği gibi `MhtSaveOptions` yapılandırın ve ardından `mailMessage.save("output.mht", options)` çağrısını yapın. Bu üç adımlı akış tipik mesajlar için bir saniye altında ayrıştırma, seçenek ayarı ve dosya üretimini gerçekleştirir; döngü içinde kullanıldığında toplu işleme de çalışır.
+
+## Ortak Kullanım Senaryoları
+
+1. **E-posta Arşivleme** – Uyumluluk gerektiren iletişimleri tek, bağımsız bir dosyada saklayın.  
+2. **Veri Taşınabilirliği** – Sadece web‑görüntülenebilir format gerektiren ortaklarla e‑posta içeriğini paylaşın.  
+3. **Raporlama Entegrasyonu** – Dış kaynaklar hakkında endişelenmeden e‑posta gövdelerini HTML raporlarına gömün.
+
+## Performans Düşünceleri
+
+- **Bellek Yönetimi** – Kaydetme sonrası `MailMessage` nesnelerini serbest bırakın, özellikle büyük toplu işlemlerde yığını boşaltın.  
+- **Toplu İşleme** – EML dosyalarının bulunduğu bir dizini döngüyle işleyin, nesne oluşturma yükünü azaltmak için tek bir `MhtSaveOptions` örneğini yeniden kullanın.  
+- **Eşzamanlılık** – Java’nın `ExecutorService`'ini kullanarak dönüşümü CPU çekirdekleri arasında paralelleştirin, ancak I/O bant genişliğine dikkat edin.
+
+## Sorun Giderme İpuçları
+
+- **Dosya Bulunamadı** – `MailMessage.load`'a verilen yolun mevcut bir `.eml` dosyasına işaret ettiğini ve uygulamanın okuma iznine sahip olduğunu doğrulayın.  
+- **Yanlış Düzen** – CSS işleme veya resim gömme ayarlarını ince ayarlamak için `MhtSaveOptions` özelliklerini, örneğin `setRenderOptions`, değiştirin.  
+- **Lisans Hataları** – Lisans dosyasının sınıf yolunda olduğundan ve `License.setLicense`'in herhangi bir Aspose.Email API kullanımdan önce çağrıldığından emin olun.
+
+## Sıkça Sorulan Sorular
+
+**S: MHT ve MHTML arasındaki fark nedir?**  
+C: Aynı MIME‑type (`multipart/related`) için değiştirilebilir uzantılardır; ikisi de HTML ve kaynaklarını tek bir dosyada paketler.
+
+**S: Şifre korumalı EML dosyalarını dönüştürebilir miyim?**  
+C: Evet, şifreyi içeren bir `LoadOptions` nesnesiyle `MailMessage.load` kullanabilirsiniz.
+
+**S: Aspose.Email toplu dönüşümü destekliyor mu?**  
+C: Kesinlikle. Dönüşüm adımlarını bir döngüye veya paralel akıma yerleştirerek binlerce e‑postayı verimli bir şekilde işleyebilirsiniz.
+
+**S: Kaydetmeden önce HTML render'ını nasıl özelleştirebilirim?**  
+C: `MailMessage` gövdesini değiştirin veya `HtmlSaveOptions` kullanarak CSS, satır içi görseller ve script kaldırma gibi ayarları kontrol edin.
+
+**S: “Unsupported format” hatası alırsam ne olur?**  
+C: Aspose.Email sürümünüzün 25.4 veya daha yeni olduğundan emin olun; eski sürümler MHT desteğine sahip olmayabilir.
+
+## Kaynaklar
+- **Documentation**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- **Download**: [Get Aspose.Email Java Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy a License](https://purchase.aspose.com/buy)
+- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
+- **Temporary License**: [Obtain a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+
+---
+
+**Last Updated:** 2026-05-23  
+**Tested With:** Aspose.Email for Java 25.4  
+**Author:** Aspose
 
 ```java
 MhtSaveOptions opt = SaveOptions.getDefaultMhtml();
 ```
 
-Bu yapılandırma kodlama ve düzen tercihleri gibi ayarları içerir.
-
-#### Adım 2: E-postayı MHT/MHTML olarak kaydedin
-
-Kaydetme seçenekleri ayarlandıktan sonra artık yüklenen e-postayı bir MHT dosyasına aktarabilirsiniz:
-
 ```java
 eml.save("YOUR_OUTPUT_DIRECTORY/CustomOrderOfInformationInMHTML_1.mhtml");
 ```
 
-Bu komut e-postanızı yapısını ve eklerini koruyan standart bir formatta yazar.
+## İlgili Eğitimler
 
-### Sorun Giderme İpuçları
-- **Dosya Bulunamadı**: Dizin yollarınızın doğru olduğundan emin olun.
-- **Kaydetme Seçenekleri**: İki kez kontrol edin `MhtSaveOptions` İhtiyaçlarınıza uygun yapılandırma.
+- [How to Save Emails as MHT Files Using Aspose.Email for Java&#58; A Comprehensive Guide](/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
+- [Convert EML to MSG Using Aspose.Email for Java&#58; A Comprehensive Guide](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [How to Load and Save EML Files in Java with Aspose.Email&#58; Complete Guide](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
 
-## Pratik Uygulamalar
-
-E-postaları MHT/MHTML olarak yükleme ve kaydetme yeteneğinin birkaç pratik uygulaması vardır:
-1. **E-posta Arşivleme**: E-posta iletişimlerini uzun süreli saklama için standart bir biçimde saklayın.
-2. **Veri Taşınabilirliği**: Farklı platformlar arasında uyumluluk sorunları olmadan e-posta verilerinizi kolayca paylaşın veya aktarın.
-3. **Raporlama Araçları ile Entegrasyon**: Tekdüze biçimlendirme gerektiren raporlara e-posta içeriğini dahil edin.
-
-## Performans Hususları
-
-Aspose.Email kullanarak Java uygulamanızın performansını optimize etmek için şu ipuçlarını göz önünde bulundurun:
-- **Bellek Yönetimi**: Bellek kullanımını optimize ederek ve artık ihtiyaç duyulmadığında nesneleri elden çıkararak büyük hacimli e-postaları yönetin.
-- **Toplu İşleme**: Verimliliği artırmak ve işlem süresini azaltmak için e-postaları gruplar halinde işleyin.
-- **Eşzamanlılık**:Birden fazla e-posta dosyasını aynı anda işlemek için mümkün olduğunda çoklu iş parçacığından yararlanın.
-
-## Çözüm
-
-Tebrikler! Aspose.Email for Java kullanarak e-postaları nasıl yükleyeceğinizi ve kaydedeceğinizi öğrendiniz. Bu işlevsellik, e-posta verilerinizi etkili ve verimli bir şekilde yönetmeniz için bir oyun değiştirici olabilir.
-
-Sonraki adımlarda Aspose.Email kütüphanesinin diğer özelliklerini keşfedin veya kapsamlı e-posta yönetimi çözümleri için bu yetenekleri daha büyük sistemlere entegre etmeyi düşünün.
-
-Daha derine dalmaya hazır mısınız? Bu çözümü bugün projenizde uygulamaya çalışın!
-
-## SSS Bölümü
-
-**S1: MHT/MHTML formatı ne için kullanılır?**
-A1: MHT/MHTML formatları, tam web sayfalarını (resimler, betikler vb. dahil) veya e-postaları tek bir dosya olarak depolamak için kullanılır. Bu, onları arşivleme ve paylaşım için ideal hale getirir.
-
-**S2: Aspose.Email'i diğer Java çerçeveleriyle birlikte kullanabilir miyim?**
-C2: Evet, Aspose.Email Spring Boot gibi çeşitli Java çerçeveleriyle entegre edilebilir ve bu da onu farklı proje mimarileri için çok yönlü hale getirir.
-
-**S3: Aspose.Email ile büyük e-posta dosyalarını nasıl işlerim?**
-C3: Büyük e-postaları daha küçük parçalara bölmeyi veya bellek taşması sorunlarını önlemek için etkili bellek yönetimi tekniklerini kullanmayı düşünün.
-
-**S4: MHT/MHTML olarak kaydederken çıktı formatını daha fazla özelleştirmenin bir yolu var mı?**
-A4: Evet, çeşitli yapılandırma seçeneklerini kullanabilirsiniz. `MhtSaveOptions` Kaydedilen dosyanın görünümünü ve yapısını ihtiyaçlarınıza göre uyarlamak.
-
-**S5: E-posta dönüştürme sırasında hatalarla karşılaşırsam ne yapmalıyım?**
-C5: Giriş dosyalarınızın geçerliliğini kontrol edin, tüm bağımlılıkların doğru şekilde yapılandırıldığından emin olun ve daha spesifik sorun giderme adımları için hata günlüklerini inceleyin.
-
-## Kaynaklar
-- **Belgeleme**: [Aspose.Email Java Belgeleri](https://reference.aspose.com/email/java/)
-- **İndirmek**: [Aspose.Email Java Sürümlerini Alın](https://releases.aspose.com/email/java/)
-- **Satın almak**: [Lisans satın al](https://purchase.aspose.com/buy)
-- **Ücretsiz Deneme**: [Ücretsiz Deneme ile Başlayın](https://releases.aspose.com/email/java/)
-- **Geçici Lisans**: [Geçici Lisans Alın](https://purchase.aspose.com/temporary-license/)
-- **Destek**: [Aspose E-posta Forumu](https://forum.aspose.com/c/email/10)
-
-Bu becerilere hakim olarak, artık Aspose.Email for Java kullanarak e-posta dönüştürme görevlerini kolaylıkla halletmeye hazırsınız. İyi kodlamalar!
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
