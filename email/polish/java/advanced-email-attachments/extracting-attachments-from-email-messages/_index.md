@@ -1,12 +1,15 @@
 ---
-date: 2025-11-30
-description: Dowiedz się, jak wyodrębniać załączniki e‑mail i wyodrębniać załączniki
-  z plików msg przy użyciu Aspose.Email dla Javy. Ten samouczek Aspose Email przeprowadzi
-  Cię krok po kroku.
-linktitle: Extracting Attachments from Email Messages in Aspose.Email
+date: 2026-04-21
+description: Dowiedz się, jak wyodrębnić załączniki z plików msg i zapisać je w folderze
+  przy użyciu Aspose.Email dla Javy. Ten samouczek przeprowadzi Cię przez poszczególne
+  kroki.
+keywords:
+- extract attachments from msg
+- how to extract attachments
+- extract attachments to folder
+linktitle: Wyodrębnianie załączników z wiadomości e‑mail w Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Jak wyodrębnić załączniki z wiadomości e‑mail przy użyciu Aspose.Email dla
-  Javy
+title: Jak wyodrębnić załączniki z plików MSG przy użyciu Aspose.Email dla Javy
 url: /pl/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
@@ -17,49 +20,42 @@ weight: 13
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak wyodrębnić załączniki e‑mail z wiadomości e‑mail przy użyciu Aspose.Email dla Javy
+# Jak wyodrębnić załączniki z plików msg przy użyciu Aspose.Email dla Javy
 
-Wyodrębnianie załączników e‑mail jest rutynową potrzebą przy automatyzacji przetwarzania e‑mail, a Aspose.Email dla Javy ułatwia to zadanie. W tym **tutorialu Aspose email** przeprowadzimy Cię krok po kroku przez wszystko, co musisz wiedzieć, aby **wyodrębnić załączniki e‑mail** z pliku MSG lub EML. Po zakończeniu przewodnika będziesz mieć gotowy do uruchomienia program Java, który pobierze każdy załącznik z wiadomości i zapisze go na dysku.
+Kiedy potrzebujesz **wyodrębnić załączniki z plików msg**, Aspose.Email dla Javy sprawia, że zadanie jest proste. W tym **samouczku Aspose Email** przeprowadzimy Cię przez wszystko, co musisz wiedzieć, aby **wyodrębnić załączniki e‑mail** z pliku MSG lub EML, krok po kroku. Po zakończeniu przewodnika będziesz mieć gotowy do uruchomienia program w Javie, który pobierze każdy załącznik z wiadomości i zapisze go na dysku.
 
 ## Szybkie odpowiedzi
 - **Jakiej biblioteki potrzebuję?** Aspose.Email for Java (pobierz ze strony oficjalnej).  
 - **Jakie formaty plików są obsługiwane?** MSG, EML, MIME i inne.  
 - **Czy potrzebna jest licencja do rozwoju?** Darmowa wersja próbna działa do testów; licencja komercyjna jest wymagana w produkcji.  
-- **Ile linii kodu?** Mniej niż 20 linii do wyodrębnienia wszystkich załączników.  
+- **Ile linii kodu?** Mniej niż 20 linii, aby wyodrębnić wszystkie załączniki.  
 - **Czy mogę uruchomić to na dowolnym systemie operacyjnym?** Tak – Java jest wieloplatformowa, więc kod działa na Windows, Linux i macOS.
 
-## Co to jest „wyodrębnianie załączników e‑mail”?
-Wyodrębnianie załączników e‑mail oznacza odczytanie pliku e‑mail, zlokalizowanie każdego załączonego pliku (PDF, obraz, dokument itp.) oraz zapisanie tych plików w folderze na komputerze lub serwerze. Jest to przydatne do archiwizacji, analizy danych lub przekazywania załączników do dalszych procesów.
+## Co to jest „wyodrębnić załączniki e‑mail”?
+Wyodrębnianie załączników e‑mail oznacza odczytanie pliku e‑mail, odnalezienie każdego załączonego pliku (PDF, obraz, dokument itp.) i zapisanie tych plików w folderze na komputerze lub serwerze. Jest to przydatne do archiwizacji, analizy danych lub przekazywania załączników do dalszych procesów.
 
-## Dlaczego używać Aspose.Email dla Javy do wyodrębniania załączników e‑mail?
+## Dlaczego warto używać Aspose.Email dla Javy do wyodrębniania załączników e‑mail?
 - **Pełne wsparcie formatów** – Obsługuje MSG, EML i surowe MIME bez dodatkowych konwerterów.  
 - **Brak zewnętrznych zależności** – Czysta Java, nie wymaga natywnych bibliotek.  
 - **Solidne API** – Dostarcza silnie typowane obiekty takie jak `MailMessage` i `Attachment`, które upraszczają kod.  
 - **Skoncentrowane na wydajności** – Szybko ładuje duże wiadomości i efektywnie iteruje załączniki.
 
-## Wprowadzenie do Aspose.Email dla Javy
+## Jak wyodrębnić załączniki z plików msg
+Poniżej znajdziesz zwięzły, krok po kroku przewodnik, który obejmuje wszystko od konfiguracji projektu po zapisywanie każdego załącznika na dysku.
 
-Aspose.Email dla Javy to potężna biblioteka Java, która umożliwia programistom płynną pracę z wiadomościami e‑mail i załącznikami. Oferuje szeroki zakres funkcji przetwarzania e‑mail, w tym możliwość **wyodrębniania załączników z plików msg**. W tym przewodniku krok po kroku przyjrzymy się, jak używać Aspose.Email dla Javy do łatwego wyodrębniania załączników z wiadomości e‑mail.
-
-## Wymagania wstępne
-
-Zanim przejdziemy do kodu, upewnijmy się, że wszystko jest poprawnie skonfigurowane:
-
-1. **Środowisko programistyczne Java** – Upewnij się, że masz zainstalowaną Javę w systemie (JDK 8 lub wyższy).  
+### Wymagania wstępne
+1. **Środowisko programistyczne Java** – Zainstalowany JDK 8 lub nowszy.  
 2. **Aspose.Email dla Javy** – Pobierz bibliotekę z [tutaj](https://releases.aspose.com/email/java/) i dodaj ją do swojego projektu.  
-3. **Wiadomość e‑mail** – Powinieneś mieć wiadomość e‑mail z załącznikami, na której będziesz pracować. Możesz użyć własnej wiadomości lub stworzyć przykładową wiadomość do testów.
+3. **Wiadomość e‑mail** – Plik MSG lub EML zawierający jeden lub więcej załączników.
 
-## Krok 1: Utwórz projekt Java
+### Krok 1: Utwórz projekt Java
+Rozpocznij nowy projekt Maven, Gradle lub zwykły projekt w IDE. Nie wymagana jest żadna specjalna konfiguracja poza standardowym układem projektu Java.
 
-Najpierw utwórz nowy projekt Java w swoim ulubionym zintegrowanym środowisku programistycznym (IDE). Może to być prosty projekt Maven lub Gradle, albo zwykły projekt w IDE.
+### Krok 2: Dodaj bibliotekę Aspose.Email
+Umieść pobrany plik JAR w classpath swojego projektu. Jeśli używasz Maven, dodaj zależność tak, jak pokazano w oficjalnej dokumentacji (ten sam JAR jest odwołany w powyższym linku).
 
-## Krok 2: Dodaj bibliotekę Aspose.Email
-
-Dodaj bibliotekę Aspose.Email do swojego projektu, dołączając pobrany wcześniej plik JAR. Jeśli używasz Maven, dodaj zależność tak, jak pokazano w oficjalnej dokumentacji.
-
-## Krok 3: Wyodrębnij załączniki
-
-Teraz napiszemy kod Java, który faktycznie **wyodrębnia załączniki e‑mail**. Poniższy fragment kodu demonstruje cały proces — od wczytania wiadomości po zapisanie każdego załącznika na dysku.
+### Krok 3: Napisz kod wyodrębniający
+Poniższy fragment kodu demonstruje pełny proces — od załadowania wiadomości po zapisanie każdego załącznika na dysku.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -79,44 +75,41 @@ public class ExtractAttachments {
 }
 ```
 
-W tym kodzie wczytujemy wiadomość e‑mail, iterujemy po jej załącznikach i zapisujemy każdy załącznik w określonej lokalizacji. Nie zapomnij zamienić `"path/to/your/email.msg"` na rzeczywistą ścieżkę do twojej wiadomości e‑mail.
+> **Wskazówka:** Użyj `message.getAttachments().size()`, aby zweryfikować, że wiadomość faktycznie zawiera załączniki przed wejściem w pętlę.
 
-## Krok 4: Kompiluj i uruchom
+### Krok 4: Kompiluj i uruchom
+Uruchom program z IDE lub z wiersza poleceń. Jeśli wszystko jest poprawnie skonfigurowane, załączniki pojawią się w określonym folderze.
 
-Skompiluj i uruchom program Java. Jeśli wszystko jest poprawnie skonfigurowane, zobaczysz wyodrębnione załączniki w określonym folderze.
-
-## Typowe problemy i rozwiązywanie problemów
-
+## Częste problemy i rozwiązywanie
 | Problem | Powód | Rozwiązanie |
 |-------|--------|----------|
-| **Nie zapisano żadnych załączników** | Nieprawidłowa ścieżka pliku lub wiadomość nie ma załączników | Sprawdź ścieżkę do wiadomości i zweryfikuj `message.getAttachments().size()` przed pętlą. |
-| **Odmowa dostępu przy zapisywaniu** | Uprawnienia folderu docelowego | Wybierz folder, do którego proces Java ma prawo zapisu, lub uruchom program z podwyższonymi uprawnieniami. |
-| **Nieobsługiwany format pliku** | Używanie starszej wersji Aspose.Email | Zaktualizuj do najnowszej wersji Aspose.Email for Java. |
+| **Nie zapisano żadnych załączników** | Nieprawidłowa ścieżka pliku lub wiadomość nie zawiera załączników | Sprawdź ścieżkę do wiadomości i zweryfikuj `message.getAttachments().size()` przed pętlą. |
+| **Odmowa dostępu przy zapisywaniu** | Uprawnienia folderu docelowego | Wybierz folder, w którym proces Java ma prawo zapisu, lub uruchom program z podwyższonymi uprawnieniami. |
+| **Nieobsługiwany format pliku** | Używanie starszej wersji Aspose.Email | Zaktualizuj do najnowszej wersji Aspose.Email dla Javy. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak mogę pobrać Aspose.Email dla Javy?**  
-A: Możesz pobrać Aspose.Email dla Javy ze strony internetowej pod adresem [tutaj](https://releases.aspose.com/email/java/).
+**P: Jak mogę pobrać Aspose.Email dla Javy?**  
+O: Możesz pobrać Aspose.Email dla Javy ze strony internetowej pod [tutaj](https://releases.aspose.com/email/java/).
 
-**Q: Czy mogę używać Aspose.Email dla Javy w moich projektach komercyjnych?**  
-A: Tak, Aspose.Email dla Javy może być używany zarówno w projektach prywatnych, jak i komercyjnych. Sprawdź szczegóły licencjonowania na stronie internetowej, aby uzyskać więcej informacji.
+**P: Czy mogę używać Aspose.Email dla Javy w moich projektach komercyjnych?**  
+O: Tak, Aspose.Email dla Javy może być używany zarówno w projektach prywatnych, jak i komercyjnych. Sprawdź szczegóły licencjonowania na stronie internetowej, aby uzyskać więcej informacji.
 
-**Q: Czy dostępna jest dokumentacja dla Aspose.Email dla Javy?**  
-A: Oczywiście! Dokumentację Aspose.Email dla Javy znajdziesz pod adresem [tutaj](https://reference.aspose.com/email/java/).
+**P: Czy dostępna jest dokumentacja dla Aspose.Email dla Javy?**  
+O: Oczywiście! Dokumentację Aspose.Email dla Javy znajdziesz pod [tutaj](https://reference.aspose.com/email/java/).
 
-**Q: Jakie formaty e‑mail obsługuje Aspose.Email dla Javy?**  
-A: Aspose.Email dla Javy obsługuje różne formaty e‑mail, w tym MSG, EML i inne. Zapoznaj się z dokumentacją, aby uzyskać pełną listę obsługiwanych formatów.
+**P: Jakie formaty e‑mail obsługuje Aspose.Email dla Javy?**  
+O: Aspose.Email dla Javy obsługuje różne formaty e‑mail, w tym MSG, EML i inne. Zapoznaj się z dokumentacją, aby uzyskać pełną listę obsługiwanych formatów.
 
-**Q: Gdzie mogę uzyskać wsparcie dla Aspose.Email dla Javy?**  
-A: W przypadku jakiejkolwiek pomocy technicznej lub zapytań możesz skontaktować się z zespołem wsparcia Aspose poprzez ich kanały wsparcia.
+**P: Gdzie mogę uzyskać wsparcie dla Aspose.Email dla Javy?**  
+O: W razie potrzeby pomocy technicznej lub pytań, możesz skontaktować się z zespołem wsparcia Aspose poprzez ich kanały wsparcia.
 
 ## Podsumowanie
-
-Wyodrębnianie załączników e‑mail to powszechne zadanie w aplikacjach przetwarzających e‑mail, a z Aspose.Email dla Javy możesz je wykonać w zaledwie kilku liniach kodu. Niezależnie od tego, czy musisz **wyodrębnić załączniki z plików msg**, czy zautomatyzować masowe wyodrębnianie tysięcy wiadomości, biblioteka zapewnia niezawodne, wieloplatformowe rozwiązanie. Zintegruj ten fragment z istniejącymi projektami Java i zacznij obsługiwać załączniki już dziś.
+Wyodrębnianie załączników e‑mail to powszechne zadanie w aplikacjach przetwarzających e‑maile, a z Aspose.Email dla Javy możesz je wykonać w zaledwie kilku linijkach kodu. Niezależnie od tego, czy musisz **wyodrębnić załączniki z plików msg**, czy zautomatyzować masowe wyodrębnianie tysięcy wiadomości, biblioteka zapewnia niezawodne, wieloplatformowe rozwiązanie. Zintegruj ten fragment z istniejącymi projektami Java i zacznij obsługiwać załączniki już dziś.
 
 ---
 
-**Ostatnia aktualizacja:** 2025-11-30  
+**Ostatnia aktualizacja:** 2026-04-21  
 **Testowano z:** Aspose.Email for Java 24.11 (najnowsza w momencie pisania)  
 **Autor:** Aspose  
 

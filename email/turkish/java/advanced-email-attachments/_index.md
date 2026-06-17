@@ -1,11 +1,17 @@
 ---
-date: 2025-12-01
-description: Aspose.Email for Java kullanarak e-postadan ekleri nasıl çıkaracağınızı
-  öğrenin. Görselleri ek olarak nasıl gömeceğinizi de içeren gelişmiş ek işleme konularında
-  uzmanlaşın.
-linktitle: Extract attachments from email using Aspose.Email for Java
+date: 2026-04-21
+description: Aspose.Email for Java kullanarak msg dosyalarından ekleri nasıl çıkaracağınızı
+  öğrenin. Bu kılavuz, ekleri nasıl çıkaracağınızı, görüntüleri ek olarak nasıl gömeceğinizi
+  ve eml veya pst formatlarını nasıl işleyeceğinizi gösterir.
+keywords:
+- extract attachments from msg
+- how to extract attachments
+- extract attachments from eml
+- extract attachments from pst
+- embed images as attachments
+linktitle: Aspose.Email for Java kullanarak msg dosyasından ekleri çıkar
 second_title: Aspose.Email Java Email Management API
-title: Aspose.Email for Java kullanarak e-postadan ekleri çıkarma
+title: Aspose.Email for Java kullanarak msg dosyasından ekleri çıkarma
 url: /tr/java/advanced-email-attachments/
 weight: 13
 ---
@@ -16,85 +22,77 @@ weight: 13
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email for Java ile e-posta eklerini çıkarma
+# Aspose.Email for Java kullanarak msg dosyasından ekleri çıkarma
 
-E-posta ekleri modern iletişimin temel bir rolünü oynar; kullanıcıların belgeleri, görselleri ve dosyaları sorunsuz bir şekilde paylaşmasını sağlar. **Aspose.Email for Java**, geliştiricilerin **e-posta eklerini çıkarmasını** ve gelişmiş teknikleri verimli bir şekilde uygulamasını sağlar.
+E-posta ekleri, modern iş iletişiminin belkemiğidir; sözleşmeler, faturalar, görseller ve daha fazlasını paylaşmamızı sağlar. **Aspose.Email for Java** ile **msg dosyasından ekleri çıkarma** işlemini hızlı ve güvenilir bir şekilde yapabilirsiniz; mesajlar Outlook, Exchange sunucusu veya yerel bir arşivden gelsin. Bu öğretici, temel adımları size gösterir, bu özelliğin neden önemli olduğunu açıklar ve EML ve PST gibi ilgili formatların nasıl işleneceğini gösterir.
 
 ## Hızlı Yanıtlar
-- **Aspose.Email for Java'nun temel amacı nedir?** E-posta mesajlarını programatik olarak oluşturmak, okumak ve işlemek, ek yönetimini de içerecek şekilde.  
-- **E-posta eklerini nasıl çıkarabilirim?** `MailMessage` sınıfını kullanarak mesajı yükleyin ve `Attachments` koleksiyonunu döngüyle gezinin.  
+- **Aspose.Email for Java'nun temel amacı nedir?** E-posta mesajlarını programlı olarak oluşturmak, okumak ve manipüle etmek; ek yönetimini de içerecek şekilde.  
+- **msg dosyasından ekleri nasıl çıkarabilirim?** `MailMessage.load()` ile mesajı yükleyin ve `Attachments` koleksiyonunu döngüyle işleyin.  
 - **Görselleri ek olarak gömebilir miyim?** Evet—satır içi görseller ek olarak eklenebilir ve HTML gövdesinde referans verilebilir.  
-- **Üretim ortamı için lisansa ihtiyacım var mı?** Ticari dağıtımlar için geçerli bir Aspose.Email lisansı gereklidir.  
-- **Java 8+ ile uyumlu mu?** Kesinlikle; kütüphane Java 8 ve daha yeni çalışma zamanlarını destekler.
+- **Üretim ortamında lisansa ihtiyacım var mı?** Ticari dağıtımlar için geçerli bir Aspose.Email lisansı gereklidir.  
+- **Bu, Java 8+ ile uyumlu mu?** Kesinlikle; kütüphane Java 8 ve daha yeni çalışma ortamlarını destekler.
 
-## “E-posta eklerini çıkarma” nedir?
-E-posta eklerini çıkarmak, bir e-posta mesajına eklenmiş dosyaları programatik olarak alıp yerel depolamaya kaydetmek veya daha ileri işleme tabi tutmak anlamına gelir. Bu, otomatik fatura işleme, belge arşivleme veya içerik analizi gibi iş akışları için gereklidir.
+## “msg dosyasından ekleri çıkarma” nedir?
+msg dosyasından ekleri çıkarmak, Outlook .msg dosyasına eklenmiş tüm dosyaları programlı olarak alıp diske kaydetmek veya daha ileri işlemek anlamına gelir. Bu, otomatik fatura işleme, belge arşivleme veya içerik‑analiz hatları için yaygın bir gereksinimdir.
 
-## Aspose.Email for Java ile ekleri çıkarmak neden tercih edilmeli?
-- **Tam kontrol API’si** – Düşük seviyeli ayrıştırıcılar yazmadan MIME yapısının her parçasına erişim.  
-- **Format bağımsız** – EML, MSG, PST, MHTML ve diğer e-posta formatlarıyla çalışır.  
-- **Gelişmiş özellikler** – Ekleri anında dönüştürme, sıkıştırma veya şifreleme.  
-- **Sağlam dokümantasyon** – Adım‑adım öğreticiler ve kod örnekleri geliştirme süresini azaltır.
+## Aspose.Email for Java kullanarak ekleri çıkarmak neden tercih edilmeli?
+- **Full‑control API** – Düşük seviyeli ayrıştırıcılar yazmadan MIME yapısının her parçasına erişim.  
+- **Format‑agnostic** – MSG, EML, PST, MHTML ve diğer e-posta formatlarıyla çalışır.  
+- **Advanced features** – Ekleri anında dönüştürme, sıkıştırma veya şifreleme.  
+- **Robust documentation** – Adım‑adım öğreticiler ve kod örnekleri geliştirme süresini azaltır.  
 
-## E-posta Eklerinin Önemi
+## msg dosyasından ekleri çıkarmak – Adım‑adım genel bakış
+1. **.msg dosyasını yükleyin** – `MailMessage.load("message.msg")` kullanın (veya büyük mesajlar için dosyayı akış olarak okuyan aşırı yükleme).  
+2. **`Attachments` koleksiyonunu yineleyin** – Her `Attachment` nesnesi dosya adını, içerik tipini ve ham bayt verisini sağlar.  
+3. **Her eki kaydedin veya işleyin** – `attachment.save("outputPath")` çağırın veya akışı bir bulut depolama hizmetine yönlendirin.  
+4. **(İsteğe bağlı) Satır içi görselleri işleyin** – Satır içi görseller aynı koleksiyonda bulunur; `ContentId` özelliğini ayarlayın ve HTML gövdesinde `cid:` URL'leriyle referans verin.  
 
-E-posta ekleri, e-posta iletişiminin temel bir unsurudur; kullanıcıların geniş bir içerik yelpazesini kolayca paylaşmasını sağlar. Ancak, özellikle iş ortamlarında ekleri etkili bir şekilde yönetmek zorlayıcı olabilir. Aspose.Email for Java, geliştiricilerin çeşitli ihtiyaçlarını karşılayan kapsamlı araçlar ve öğreticiler sunarak e-posta eklerini hassasiyetle ve verimlilikle ele almayı mümkün kılar.
-
-## Aspose.Email for Java’nın Yetkinliklerinden Yararlanma
-
-Aspose.Email for Java, e-posta ekleriyle çalışmak için güçlü bir araç seti sunar. Bu API sayesinde **e-posta eklerini sorunsuz bir şekilde çıkarabilir**, yeni dosyalar ekleyebilir ve mevcut olanları manipüle edebilirsiniz. Ekleri farklı formatlara dönüştürmek, dosyaları sıkıştırmak veya eklerdeki hassas verileri güvence altına almak gibi görevler için gerekli işlevsellik ve rehberlik Aspose.Email for Java’da mevcuttur.
-
-## E-posta eklerini çıkarma – Adım‑adım genel bakış
-
-1. **E-posta mesajını yükle** – `MailMessage.load()` kullanarak bir EML veya MSG dosyasını okuyun.  
-2. **Attachments koleksiyonunu döngüyle gez** – Her `Attachment` nesnesi dosya adı, içerik türü ve ham veriye erişim sağlar.  
-3. **Her eki kaydet veya işle** – `attachment.save(filePath)` çağırın veya içeriği doğrudan başka bir servise akıtın.  
-4. **(İsteğe bağlı) Satır içi görselleri işle** – Satır içi görseller de Attachments koleksiyonunun bir parçasıdır; HTML gövdesinde Content‑ID’leriyle referans verin.
-
-> **Pro ipucu:** Büyük e-postalarla çalışırken, tüm dosyayı belleğe yüklemek yerine mesajı akış olarak işleyen `MailMessage` aşırı yüklemesini kullanın.
-
-## Gelişmiş Ek Tekniklerinde Ustalaşma
-
-E-posta eklerinin tam potansiyelini kullanmak için geliştiriciler, Aspose.Email for Java tarafından sunulan ileri düzey öğreticileri ve kaynakları inceleyebilir. Bu öğreticiler, **e-posta eklerini çıkarmayı**, ek formatlarını dönüştürmeyi ve ek‑ile‑ilgili görevleri otomatikleştirmeyi kapsar. Adım‑adım rehberleri izleyerek, geliştiriciler e-posta eklerini yönetmede uzmanlaşabilir ve genel e-posta iletişim deneyimini iyileştirebilir.
+> **Pro tip:** Büyük posta kutularıyla çalışırken, bellek kullanımını düşük tutmak için `MailMessage.load()` akış aşırı yüklemesini tercih edin.
 
 ## Yaygın tuzaklar ve nasıl önlenir
-- **Satır içi görsellerde eksik Content‑ID** – Görselleri gömmeden önce `ContentId` özelliğinin ayarlandığından emin olun; aksi takdirde e-posta gövdesinde görüntülenmez.  
+- **Satır içi görsellerde eksik Content‑ID** – `ContentId` özelliğinin ayarlandığından emin olun; aksi takdirde görsel HTML gövdesinde görüntülenmez.  
 - **Yanlış karakter kodlaması** – Metin tabanlı ekleri kaydederken özel karakterleri korumak için UTF‑8 kullanın.  
-- **Büyük eklerde bellek tüketimi** – Ekleri bellekte tutmak yerine diske veya bir bulut kovasına akıtın.
+- **Büyük eklerde bellek kullanımı** – Ekleri belleğe tamamen yüklemek yerine doğrudan diske veya bir bulut kovasına akıtın.  
+
+## Sonraki keşfedebileceğiniz gelişmiş ek teknikleri
+- **eml dosyasından ekleri nasıl çıkarılır** – Aynı `MailMessage` API'si `.eml` dosyalarıyla çalışır; sadece `load` çağrısında dosya uzantısını değiştirin.  
+- **pst dosyasından ekleri nasıl çıkarılır** – PST dosyasını açmak için `PersonalStorage` sınıfını kullanın, `Message` nesnelerini listeleyin ve aynı çıkarma mantığını uygulayın.  
+- **Görselleri ek olarak gömmek** – Görseli bir `Attachment` olarak ekleyin, `ContentId`'yi ayarlayın ve HTML gövdesinde `<img src="cid:yourContentId">` ile referans verin.  
 
 ## Aspose.Email for Java ile Gelişmiş E-posta Ekleri Öğreticileri
-### [Aspose.Email’te Satır İçi Eklerle Çalışma](./working-with-inline-attachments/)
+### [Aspose.Email'de Satır İçi Eklerle Çalışma](./working-with-inline-attachments/)
 Aspose.Email for Java ile e-posta iletişiminizi optimize edin. Bu kapsamlı rehberde satır içi eklerle nasıl çalışılacağını öğrenin.  
-### [Aspose.Email’te Büyük Ekleri Yönetme](./managing-large-attachments/)
-Aspose.Email for Java ile büyük e-posta eklerini verimli bir şekilde yönetin. Java uygulamalarında akıcı ek işleme için adım‑adım rehber ve kaynak kod.  
-### [Aspose.Email’te E-posta Mesajlarından Ek Çıkarma](./extracting-attachments-from-email-messages/)
-Aspose.Email for Java kullanarak **e-posta eklerini sorunsuz bir şekilde çıkarın**. Java geliştiricileri için adım‑adım kılavuz.  
-### [Aspose.Email’te Görselleri Ek Olarak Gömme](./embedding-images-as-attachments/)
-Aspose.Email for Java’da **görselleri ek olarak gömme** yöntemini öğrenin. Görsel açıdan zengin içeriklerle e-posta iletişiminizi yükseltin.  
-### [Aspose.Email’i Belge Ekleri İçin Kullanma](./using-aspose-email-for-document-attachments/)
-Aspose.Email for Java ile Java e-postalarında belge eklerini yönetmeyi öğrenin. Belge eklerini oluşturun, gönderin ve kolayca çıkarın.
+### [Aspose.Email'de Büyük Ekleri Yönetme](./managing-large-attachments/)
+Aspose.Email for Java ile büyük e-posta eklerini verimli bir şekilde yönetin. Java uygulamalarında akıcı ek yönetimi için adım‑adım rehber ve kaynak kodu.  
+### [Aspose.Email'de E-posta Mesajlarından Ek Çıkarma](./extracting-attachments-from-email-messages/)
+Aspose.Email for Java kullanarak **e-postadan ekleri çıkarmayı** zahmetsizce öğrenin. Java geliştiricileri için adım‑adım rehber.  
+### [Aspose.Email'de Görselleri Ek Olarak Gömmek](./embedding-images-as-attachments/)
+Aspose.Email for Java'da **görselleri ek olarak gömmeyi** öğrenin. Görsel açıdan çekici içeriklerle e-posta iletişiminizi yükseltin.  
+### [Aspose.Email ile Belge Eklerini Kullanma](./using-aspose-email-for-document-attachments/)
+Aspose.Email for Java kullanarak Java e-postalarında belge eklerini nasıl yöneteceğinizi öğrenin. Belge eklerini kolayca oluşturun, gönderin ve çıkarın.
 
 ## Sıkça Sorulan Sorular
 
 **S: Şifreli e-postalardan ekleri çıkarabilir miyim?**  
-C: Evet. Mesajı uygun şifre ile yükleyin ve ardından `Attachments` koleksiyonunu normal şekilde döngüyle gezerek ekleri alın.
+C: Evet. Mesajı uygun şifreyle yükleyin ve ardından `Attachments` koleksiyonunu normal şekilde yineleyin.
 
-**S: Görselleri ek olarak nasıl gömer ve HTML içinde nasıl referans veririm?**  
-C: Görseli bir `Attachment` olarak ekleyin, `ContentId` değerini ayarlayın ve HTML gövdesinde `<img src="cid:yourContentId">` kullanın.
+**S: Görselleri ek olarak nasıl gömer ve HTML'de nasıl referans veririm?**  
+C: Görseli bir `Attachment` olarak ekleyin, `ContentId`'yi ayarlayın ve HTML gövdesinde `<img src="cid:yourContentId">` kullanın.
 
-**S: Çıkarabileceğim ek sayısı veya boyutu konusunda bir limit var mı?**  
-C: Kütüphane kendisi katı bir limit koymaz, ancak JVM bellek kısıtlamalarını ve büyük dosyaları akış olarak işlemeyi göz önünde bulundurmalısınız.
+**S: Çıkarabileceğim ek sayısı veya boyutu için bir limit var mı?**  
+C: Kütüphane kendisi katı bir limit koymaz, ancak JVM bellek kısıtlamalarını ve büyük dosyaları akıtmayı göz önünde bulundurmalısınız.
 
-**S: Aspose.Email PST dosyalarından ek çıkarma desteği sağlıyor mu?**  
-C: Kesinlikle. `PersonalStorage` sınıfını kullanarak bir PST açın ve ardından her `Message` üzerinden eklerini çıkarın.
+**S: Aspose.Email PST dosyalarından ek çıkarımını destekliyor mu?**  
+C: Kesinlikle. PST'yi açmak için `PersonalStorage` sınıfını kullanın ve ardından her `Message`'a erişerek eklerini çıkarın.
 
-**S: Her dağıtım ortamı için ayrı bir lisans almam gerekir mi?**  
-C: Tek bir lisans, geliştirme, test ve üretim dahil tüm ortamları kapsar; lisans koşullarına uyduğunuz sürece ek bir lisansa ihtiyaç yoktur.
+**S: Her dağıtım ortamı için ayrı bir lisansa ihtiyacım var mı?**  
+C: Tek bir lisans, lisans koşullarına uyduğunuz sürece tüm ortamları (geliştirme, test, üretim) kapsar.
 
 ---
 
-**Son Güncelleme:** 2025-12-01  
-**Test Edilen Versiyon:** Aspose.Email for Java 24.10  
+**Son Güncelleme:** 2026-04-21  
+**Test Edilen:** Aspose.Email for Java 24.10  
 **Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
