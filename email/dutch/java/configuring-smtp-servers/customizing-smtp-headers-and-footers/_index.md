@@ -1,10 +1,10 @@
 ---
-date: 2026-01-04
-description: Leer hoe u e‑mailberichten in Java maakt, SMTP‑headers aanpast, een aangepaste
-  e‑mailfooter toevoegt en e‑mailbranding personaliseert met Aspose.Email voor Java.
+date: 2026-03-07
+description: Leer hoe je een e‑mailfooter toevoegt en SMTP‑headers aanpast in Java,
+  een e‑mailbericht maakt in Java, en branding personaliseert met Aspose.Email.
 linktitle: Customizing SMTP Headers and Footers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: E‑mailbericht maken in Java – SMTP‑headers en voetteksten aanpassen met Aspose.Email
+title: Hoe een e-mailfooter toe te voegen & SMTP-headers aanpassen in Java
 url: /nl/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 weight: 16
 ---
@@ -15,36 +15,44 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aanpassen van SMTP-headers en -voetteksten met Aspose.Email
+# SMTP-headers en voetteksten aanpassen met Aspose.Email
 
 ## Inleiding
 
-In de snelle zakenwereld van vandaag is elke e‑mail die je verstuurt een verlengstuk van je merk. Door te leren hoe je **create email message java** projecten maakt die aangepaste headers en footers bevatten, kun je *e‑mailbranding personaliseren*, je bedrijfsidentiteit versterken en voldoen aan specifieke mail‑server vereisten. Deze tutorial leidt je door het volledige proces—van het opzetten van een Java‑project tot het toevoegen van een aangepaste e‑mailvoettekst—met behulp van Aspose.Email for Java.
+Als je zoekt naar **hoe je een e‑mailvoettekst toevoegt** en tegelijkertijd SMTP‑headers wilt aanpassen, ben je hier op de juiste plek. In deze tutorial lopen we stap voor stap door het maken van een e‑mailbericht in Java, het toevoegen van een aangepaste SMTP‑header en het bijvoegen van een professionele HTML‑voettekst — alles met de krachtige Aspose.Email for Java‑bibliotheek. Aan het einde heb je een volledig merkgebonden e‑mail klaar om te verzenden via je eigen SMTP‑server.
 
 ## Snelle antwoorden
-- **What is the primary library?** Aspose.Email for Java  
-- **Which method adds a custom email footer?** `setHtmlBody()` with your HTML snippet  
-- **Can I set custom SMTP headers?** Yes, via `message.getHeaders().add()`  
-- **Do I need a license for production?** Een geldige Aspose.Email‑licentie is vereist voor commercieel gebruik  
-- **What Java version is supported?** Java 8 and above  
+- **Wat is de primaire bibliotheek?** Aspose.Email for Java  
+- **Welke methode voegt een aangepaste e‑mailvoettekst toe?** `setHtmlBody()` met je HTML‑fragment  
+- **Kan ik aangepaste SMTP‑headers instellen?** Ja, via `message.getHeaders().add()`  
+- **Heb ik een licentie nodig voor productie?** Een geldige Aspose.Email‑licentie is vereist voor commercieel gebruik  
+- **Welke Java‑versie wordt ondersteund?** Java 8 en hoger  
+
+## Wat betekent “hoe voeg ik een e‑mailvoettekst toe” in de praktijk?
+
+Een e‑mailvoettekst toevoegen betekent een herbruikbaar HTML‑blok (vaak met juridische tekst, branding of afmeldlinks) aan het einde van je berichtinhoud plaatsen. Dit zorgt ervoor dat elke uitgaande e‑mail consistente informatie bevat zonder handmatig te kopiëren‑en‑plakken.
+
+## Waarom SMTP‑headers aanpassen?
+
+Aangepaste SMTP‑headers geven je fijnmazigere controle over hoe downstream‑mailservers je berichten verwerken — bijvoorbeeld prioriteitsvlaggen, aangepaste tracking‑ID’s of het specificeren van de mailer‑naam. Ze zijn vooral nuttig voor compliance, analytics of integratie met bedrijfs‑mailbeleid.
 
 ## Vereisten
 
-Voordat je aan het aanpassingsproces begint, zorg ervoor dat je de volgende vereisten hebt:
+Voordat je aan het aanpassingsproces begint, zorg je dat je de volgende zaken klaar hebt staan:
 
-- Aspose.Email for Java: Download and install the Aspose.Email for Java library from [here](https://releases.aspose.com/email/java/).
+- Aspose.Email for Java: Download en installeer de Aspose.Email for Java‑bibliotheek vanaf [here](https://releases.aspose.com/email/java/).
 
-## Hoe maak je email message java met Aspose.Email
+## Hoe een e‑mailbericht maken in Java met Aspose.Email
 
-Hieronder vind je een stapsgewijze handleiding die precies laat zien hoe je een e‑mail bouwt, aanpast en verzendt met Java.
+Hieronder vind je een stap‑voor‑stap‑gids die precies laat zien hoe je een e‑mail bouwt, aanpast en verzendt met Java.
 
-### Stap 1: Je Java‑project opzetten
+### Stap 1: Uw Java‑project opzetten
 
 Start een nieuw Java‑project in je favoriete IDE (IntelliJ IDEA, Eclipse of NetBeans). Voeg de Aspose.Email‑JAR toe aan de classpath van je project of importeer deze via Maven/Gradle.
 
 ### Stap 2: De vereiste klassen importeren
 
-Je hebt een aantal klassen uit de Aspose.Email‑namespace nodig. De import‑instructie blijft hetzelfde, dus je kunt deze direct kopiëren:
+Je hebt een handvol klassen uit de Aspose.Email‑namespace nodig. De import‑statement blijft gelijk, dus je kunt deze direct kopiëren:
 
 ```java
 import com.aspose.email.*;
@@ -52,7 +60,7 @@ import com.aspose.email.*;
 
 ### Stap 3: Een e‑mailbericht maken
 
-Nu maken we het kernobject `MailMessage`. Dit is waar we **create email message java** maken die later onze aangepaste header en footer zal dragen.
+Nu maken we het kern‑`MailMessage`‑object. Dit is waar we **e‑mailbericht java** creëren dat later onze aangepaste header en voettekst zal dragen.
 
 ```java
 // Create a new message
@@ -66,9 +74,9 @@ message.setTo("recipient@example.com");
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### Stap 4: Headers aanpassen
+### Hoe een aangepaste SMTP‑header toevoegen
 
-Aangepaste SMTP‑headers geven je extra controle over hoe de ontvangende server de mail verwerkt. Je kunt bijvoorbeeld prioriteit instellen of de naam van de mailer specificeren.
+Aangepaste SMTP‑headers geven je extra controle over hoe de ontvangende server de mail verwerkt. Je kunt bijvoorbeeld prioriteit instellen of de mailer‑naam specificeren.
 
 ```java
 // Customize headers
@@ -76,11 +84,11 @@ message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-> **Pro tip:** Gebruik standaard header‑namen (bijv. `X-Priority`) om compatibiliteit over verschillende mailservers te waarborgen.
+> **Pro tip:** Gebruik standaard header‑namen (bijv. `X-Priority`) om compatibiliteit over verschillende mailservers heen te waarborgen.
 
-### Stap 5: Een aangepaste e‑mailvoettekst toevoegen (add html footer to email)
+### Hoe een e‑mailvoettekst toevoegen
 
-Om **add custom email footer** en **add html footer to email** toe te voegen, plaats je simpelweg je HTML‑fragment aan het einde van de berichtinhoud. Deze aanpak stelt je ook in staat **personalize email branding** met logo’s of wettelijke vermeldingen.
+Om **e‑mailvoettekst toe te voegen** (of **HTML‑voettekst aan e‑mail toe te voegen**), plaats je simpelweg je HTML‑fragment aan het einde van de berichtinhoud. Deze aanpak laat je ook **e‑mailbranding personaliseren** met logo’s of juridische vermeldingen.
 
 ```java
 // Customize footer
@@ -88,11 +96,11 @@ String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-Je kunt `footerText` vervangen door elke HTML die je wilt—afbeeldingen, gestileerde tekst, of zelfs dynamische inhoud.
+Je kunt `footerText` vervangen door elke HTML die je wilt — afbeeldingen, gestileerde tekst of zelfs dynamische inhoud.
 
 ### Stap 6: De e‑mail verzenden
 
-Configureer tenslotte de `SmtpClient` met je serverdetails en verzend het bericht.
+Tot slot configureer je de `SmtpClient` met je serverdetails en verzend je het bericht.
 
 ```java
 // Initialize the SMTP client
@@ -102,36 +110,36 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 client.send(message);
 ```
 
-> **Warning:** Zorg ervoor dat de SMTP‑referenties toestemming hebben om te verzenden vanaf het `From`‑adres dat je hebt opgegeven; anders kan de server het bericht weigeren.
+> **Waarschuwing:** Zorg ervoor dat de SMTP‑referenties toestemming hebben om te verzenden vanaf het `From`‑adres dat je hebt opgegeven; anders kan de server het bericht weigeren.
 
 ## Veelvoorkomende problemen en oplossingen
 
-| Issue | Solution |
-|-------|----------|
-| **Headers not appearing** | Controleer of de SMTP‑server geen aangepaste headers verwijdert. Sommige providers verwijderen niet‑standaard headers. |
-| **HTML footer not rendering** | Zorg ervoor dat de e‑mailclient HTML ondersteunt en dat je HTML goed gevormd is (gesloten tags, juiste codering). |
-| **Authentication errors** | Controleer gebruikersnaam/wachtwoord en zorg dat TLS/SSL‑instellingen overeenkomen met de vereisten van je server. |
+| Probleem | Oplossing |
+|----------|-----------|
+| **Headers verschijnen niet** | Controleer of de SMTP‑server geen aangepaste headers verwijdert. Sommige providers strippen niet‑standaard headers. |
+| **HTML‑voettekst wordt niet weergegeven** | Zorg ervoor dat de e‑mailclient HTML ondersteunt en dat je HTML goed gevormd is (gesloten tags, juiste codering). |
+| **Authenticatiefouten** | Controleer gebruikersnaam/wachtwoord en zorg dat TLS/SSL‑instellingen overeenkomen met de vereisten van je server. |
 
 ## Veelgestelde vragen
 
-**Q: Hoe download ik Aspose.Email for Java?**  
-A: Je kunt Aspose.Email for Java downloaden van de website via deze link: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
+**V: Hoe download ik Aspose.Email for Java?**  
+A: Je kunt Aspose.Email for Java downloaden vanaf de website via deze link: [Download Aspose.Email for Java](https://releases.aspose.com/email/java/).
 
-**Q: Kan ik meerdere headers en footers aanpassen in één e‑mail?**  
-A: Ja, je kunt meerdere headers en footers aanpassen in één e‑mailbericht. Voeg eenvoudig de gewenste headers en footers toe zoals getoond in de voorbeelden.
+**V: Kan ik meerdere headers en voetteksten in één e‑mail aanpassen?**  
+A: Ja, je kunt meerdere headers en voetteksten in één e‑mailbericht aanpassen. Voeg simpelweg de gewenste headers en voetteksten toe zoals getoond in de voorbeelden.
 
-**Q: Is er een limiet aan de lengte van aangepaste headers en footers?**  
-A: Er is geen strikte limiet aan de lengte van aangepaste headers en footers. Het wordt echter aanbevolen ze beknopt en relevant te houden om een professionele uitstraling te behouden.
+**V: Is er een limiet aan de lengte van aangepaste headers en voetteksten?**  
+A: Er is geen strikte limiet aan de lengte van aangepaste headers en voetteksten. Het wordt echter aanbevolen ze beknopt en relevant te houden voor een professionele uitstraling.
 
-**Q: Kan ik HTML‑opmaak gebruiken in de e‑mailinhoud?**  
-A: Ja, je kunt HTML‑opmaak gebruiken in de e‑mailinhoud, inclusief headers en footers. Dit stelt je in staat visueel aantrekkelijke en informatieve e‑mails te maken.
+**V: Kan ik HTML‑opmaak gebruiken in de e‑mailinhoud?**  
+A: Ja, je kunt HTML‑opmaak gebruiken in de e‑mailinhoud, inclusief headers en voetteksten. Dit stelt je in staat visueel aantrekkelijke en informatieve e‑mails te maken.
 
-**Q: Welke SMTP‑instellingen moet ik gebruiken om aangepaste e‑mails te verzenden?**  
+**V: Welke SMTP‑instellingen moet ik gebruiken om aangepaste e‑mails te verzenden?**  
 A: Gebruik de SMTP‑instellingen die door je e‑mailserviceprovider of de IT‑afdeling van je organisatie worden verstrekt. Deze instellingen omvatten doorgaans het SMTP‑serveradres, poortnummer en authenticatie‑referenties.
 
 ---
 
-**Laatste update:** 2026-01-04  
+**Laatst bijgewerkt:** 2026-03-07  
 **Getest met:** Aspose.Email for Java 24.12  
 **Auteur:** Aspose  
 
