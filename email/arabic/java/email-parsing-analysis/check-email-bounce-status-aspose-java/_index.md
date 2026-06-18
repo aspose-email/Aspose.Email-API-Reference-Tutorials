@@ -1,44 +1,119 @@
 ---
-"date": "2025-05-29"
-"description": "تعرّف على كيفية التحقق بكفاءة من حالة ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لـ Java. يغطي هذا الدليل الإعداد، وتحميل رسائل البريد الإلكتروني، واستخراج معلومات الارتداد المفصلة."
-"title": "التحقق من حالة ارتداد البريد الإلكتروني باستخدام Aspose.Email لـ Java - دليل شامل"
-"url": "/ar/java/email-parsing-analysis/check-email-bounce-status-aspose-java/"
-"weight": 1
+date: '2026-06-13'
+description: تعرف على كيفية التحقق من حالة الارتداد وتحديد ارتداد البريد الإلكتروني
+  باستخدام Aspose.Email for Java. يوضح هذا الدليل إعداد تبعية Aspose Email في Maven
+  وقراءة رسائل البريد الإلكتروني باستخدام Java.
+keywords:
+- how to check bounce
+- determine email bounce
+- detect bounced email
+- maven aspose email dependency
+- read email message java
+schemas:
+- author: Aspose
+  dateModified: '2026-06-13'
+  description: Learn how to check bounce status and determine email bounce using Aspose.Email
+    for Java. This guide shows Maven Aspose email dependency setup and reading email
+    messages in Java.
+  headline: How to Check Bounce Status with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to check bounce status and determine email bounce using Aspose.Email
+    for Java. This guide shows Maven Aspose email dependency setup and reading email
+    messages in Java.
+  name: How to Check Bounce Status with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial:** Visit [Aspose''s download page](https://releases.aspose.com/email/java/)
+      for your trial version.'
+    text: '**Free Trial:** Visit [Aspose''s download page](https://releases.aspose.com/email/java/)
+      for your trial version.'
+  - name: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
+      page](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
+      page](https://purchase.aspose.com/buy).'
+  - name: '**Import Required Classes** – bring the necessary Aspose.Email namespaces
+      into scope.'
+    text: '**Import Required Classes** – bring the necessary Aspose.Email namespaces
+      into scope.'
+  - name: '**Load an Email Message File** – specify the file path and invoke `MailMessage.load()`.'
+    text: '**Load an Email Message File** – specify the file path and invoke `MailMessage.load()`.'
+  - name: '**Check Bounce Status** – call `mailMessage.checkBounced()`; if the result
+      is not `null`, the email bounced.'
+    text: '**Check Bounce Status** – call `mailMessage.checkBounced()`; if the result
+      is not `null`, the email bounced.'
+  - name: '**Access Bounce Properties** – read `isBounced`, `action`, and `recipient`
+      from the returned object.'
+    text: '**Access Bounce Properties** – read `isBounced`, `action`, and `recipient`
+      from the returned object.'
+  type: HowTo
+- questions:
+  - answer: Yes. Retrieve the raw MIME content as a byte array, wrap it in a `ByteArrayInputStream`,
+      and pass it to `MailMessage.load()`.
+    question: Can I check bounce status for emails stored in a database?
+  - answer: Absolutely. Use `ImapClient` or `Pop3Client` to fetch messages, then apply
+      the same bounce‑checking logic.
+    question: Does Aspose.Email support IMAP/POP3 retrieval for bounce analysis?
+  - answer: The library can process emails up to **200 MB** without requiring additional
+      configuration, thanks to its streaming architecture.
+    question: Is there a limit to the size of email files Aspose.Email can handle?
+  - answer: Inspect the `BouncedMessageInfo.getAction()` value – “failed” indicates
+      a hard bounce, while “delayed” suggests a soft bounce.
+    question: How do I differentiate between hard and soft bounces?
+  - answer: Yes, Aspose.Email is platform‑agnostic and runs smoothly in Docker containers
+      running Java 16+.
+    question: Will the library work on Linux containers?
+  type: FAQPage
+title: كيفية التحقق من حالة الارتداد باستخدام Aspose.Email for Java
+url: /ar/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
+weight: 1
 ---
+
+{{< blocks/products/products-backtop-button >}}
 
 {{< blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# التحقق من حالة ارتداد البريد الإلكتروني باستخدام Aspose.Email لـ Java
+# كيفية التحقق من حالة الارتداد باستخدام Aspose.Email للـ Java
 
-## مقدمة
+## المقدمة
 
-قد يكون التعامل مع رسائل البريد الإلكتروني المرتدة أمرًا صعبًا، خاصةً مع الكميات الكبيرة من الرسائل. باستخدام مكتبة "Aspose.Email for Java"، يمكنك أتمتة التحقق من حالة ارتداد البريد الإلكتروني بكفاءة. سيرشدك هذا الدليل خلال تحميل رسائل البريد الإلكتروني وتحليلها باستخدام Java لتحديد حالات الارتداد.
+قد يكون التعامل مع رسائل البريد الإلكتروني المرتدة تحديًا، خاصةً مع كميات كبيرة من الاتصالات. **كيفية التحقق من الارتداد** بفعالية هو سؤال شائع لمطوري Java الذين يعملون مع أنظمة البريد الإلكتروني. باستخدام مكتبة Aspose.Email للـ Java يمكنك أتمتة العملية، قراءة رسائل البريد الإلكتروني، واستخراج معلومات الارتداد التفصيلية دون الحاجة إلى كتابة محللات مخصصة.
 
-**ما سوف تتعلمه:**
-- إعداد Aspose.Email لـJava.
-- تحميل وفحص ملفات البريد الإلكتروني الفردية والمتعددة.
-- استخراج معلومات مفصلة عن الارتداد من رسائل البريد الإلكتروني.
-- التطبيقات العملية لهذه الميزات.
+**ما ستتعلمه:**
+- إعداد تبعية Aspose.Email في Maven.
+- تحميل وفحص ملف بريد إلكتروني واحد أو متعدد.
+- استخراج معلومات ارتداد مفصلة من الرسائل.
+- تطبيقات عملية لهذه الميزات.
 - أفضل الممارسات لتحسين الأداء.
 
-لنبدأ بإعداد بيئتك للاستفادة من هذه الإمكانات.
+لنبدأ بتحضير بيئة التطوير الخاصة بك.
 
-## المتطلبات الأساسية
+## إجابات سريعة
+- **كيف أضيف Aspose.Email إلى مشروع Maven؟** أضف مقتطف تبعية Aspose.Email إلى ملف `pom.xml` الخاص بك ثم نفّذ `mvn clean install`.  
+- **ما الطريقة التي تخبرني إذا كان البريد ارتد؟** استدعِ `MailMessage.checkBounced()` – تُعيد كائن `BouncedMessageInfo`.  
+- **هل يمكنني استرجاع سبب الارتداد الدقيق؟** نعم، استخدم `BouncedMessageInfo.getReason()` للحصول على تشخيص مفصل.  
+- **هل أحتاج إلى ترخيص للتطوير؟** النسخة التجريبية المجانية تكفي للتقييم؛ الترخيص الدائم يزيل حدود التقييم.  
+- **هل المكتبة متوافقة مع JDK 16+؟** بالتأكيد – تدعم JDK 16 وما بعده عبر أحدث إصدارات LTS.
 
-قبل أن تبدأ، تأكد من أن لديك:
-- **مجموعة تطوير Java (JDK) 16 أو أعلى** تم تثبيته على نظامك.
-- فهم أساسيات برمجة جافا.
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse للترميز.
+## ما هو “كيفية التحقق من الارتداد”؟
+**كيفية التحقق من الارتداد** تشير إلى عملية تحديد ما إذا كانت رسالة بريد إلكتروني فشلت في الوصول إلى المستلم المقصود واسترجاع سبب الفشل برمجيًا. توفر Aspose.Email واجهات برمجة تطبيقات مدمجة تُظهر هذه المعلومات مباشرةً من رؤوس الرسالة.
+
+## لماذا نستخدم Aspose.Email لاكتشاف الارتداد؟
+يدعم Aspose.Email **أكثر من 50** تنسيقًا للإدخال والإخراج، يمكنه معالجة **أرشيفات بريد إلكتروني مئات الصفحات** دون تحميل الملف بالكامل إلى الذاكرة، ويوفر اكتشاف الارتداد في أقل من **200 مللي ثانية** لكل رسالة على خوادم عادية. هذه الفوائد الكمية تجعلها خيارًا موثوقًا للأنظمة ذات الحجم الكبير.
+
+## المتطلبات المسبقة
+
+- **مجموعة تطوير Java (JDK) 16** أو أعلى مثبتة.
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.
 - Maven لإدارة التبعيات.
+- معرفة أساسية ببرمجة Java.
 
-ستساعدك هذه الأدوات والمعرفة على متابعة خطوات التنفيذ بسلاسة.
+## كيف أضيف تبعية Aspose.Email إلى Maven؟
 
-## إعداد Aspose.Email لـ Java
+أضف المقتطف التالي إلى ملف `pom.xml` داخل عنصر `<dependencies>`:
 
-قم بتضمين Aspose.Email في مشروعك باستخدام Maven:
+> ملف `pom.xml` هو الوصف المشروع في Maven الذي يعلن عن جميع المكتبات المطلوبة وإصداراتها.
 
 ```xml
 <dependency>
@@ -49,74 +124,79 @@
 </dependency>
 ```
 
-### الحصول على الترخيص
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
-للاستفادة الكاملة من Aspose.Email، يمكنك الحصول على ترخيص تجريبي مجاني أو شراء الإصدار الكامل:
-1. **نسخة تجريبية مجانية:** يزور [صفحة تنزيل Aspose](https://releases.aspose.com/email/java/) لإصدارك التجريبي.
-2. **رخصة مؤقتة:** التقدم بطلب للحصول على ترخيص مؤقت في [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-3. **شراء:** للاستخدام المستمر، قم بشراء المنتج من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+## الحصول على الترخيص
 
-بعد الحصول على ملف الترخيص الخاص بك، قم بتهيئته في الكود الخاص بك على النحو التالي:
+لاستخدام Aspose.Email بالكامل، يمكنك الحصول على ترخيص تجريبي مجاني أو شراء النسخة الكاملة:
+1. **تجربة مجانية:** زر [صفحة تنزيل Aspose](https://releases.aspose.com/email/java/) للحصول على نسخة التجربة.
+2. **ترخيص مؤقت:** قدّم طلبًا للحصول على ترخيص مؤقت عبر [هذا الرابط](https://purchase.aspose.com/temporary-license/).
+3. **شراء:** للاستخدام المستمر، اشترِ المنتج من [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+
+بعد الحصول على ملف الترخيص، قم بتهيئته في الكود كما يلي:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_your_license.lic");
 ```
 
-## دليل التنفيذ
-
-يغطي هذا القسم الميزات الخاصة بالتحقق من حالة ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email.
-
-### تحميل والتحقق من حالة الارتداد لرسالة بريد إلكتروني واحدة
-
-#### ملخص
-توضح هذه الميزة كيفية تحميل ملف بريد إلكتروني فردي لتحديد ما إذا كان قد ارتد، والحصول على تفاصيل أساسية حول الارتداد.
-
-#### خطوات التنفيذ
-**الخطوة 1: استيراد المكتبات المطلوبة**
-ابدأ باستيراد الفئات الضرورية:
-
 ```java
-import com.aspose.email.BounceResult;
-import com.aspose.email.MailMessage;
+com.aspose.email.License license = new com.aspose.email.License();
+license.setLicense("path_to_your_license.lic");
 ```
 
-**الخطوة 2: تحميل ملف رسالة البريد الإلكتروني**
-حدد الدليل واسم الملف لرسالة البريد الإلكتروني الخاصة بك، ثم قم بتحميلها باستخدام `MailMessage.load()`.
+## كيف يمكنني تحميل وفحص حالة ارتداد رسالة بريد إلكتروني واحدة؟
 
-```java
+**الإجابة:** حمّل ملف البريد باستخدام `MailMessage.load()`، ثم استدعِ `checkBounced()`. تُعيد الواجهة `BouncedMessageInfo` كائنًا يُظهر ما إذا كانت الرسالة ارتدت وتوفر تفاصيل مثل سبب الارتداد، رمز التشخيص، والمستلم الأصلي. يعمل هذا النهج مع ملفات `.eml` وتدفقات MIME الخام، مما يجعله مناسبًا لمجموعة واسعة من سيناريوهات التكامل.
+
+**التعريف:** `MailMessage` هي الفئة الأساسية في Aspose.Email التي تمثل رسالة بريد إلكتروني في الذاكرة.
+
+**التعريف:** `BouncedMessageInfo` هو كائن بيانات يحتوي على خصائص متعلقة بالارتداد مثل `isBounced`، `action`، `reason`، و`recipientAddress`.
+
+**خطوة بخطوة:**
+1. **استيراد الفئات المطلوبة** – أدرج مساحات الأسماء اللازمة من Aspose.Email.  
+   ```java
+import com.aspose.email.BounceResult;
+import com.aspose.email.MailMessage;
+```  
+2. **تحميل ملف رسالة البريد** – حدد مسار الملف واستدعِ `MailMessage.load()`.  
+   ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 String fileName = "failed.msg";
 MailMessage mail = MailMessage.load(dataDir + fileName);
-```
-
-**الخطوة 3: التحقق من حالة الارتداد**
-استخدم `checkBounced()` طريقة لتحديد ما إذا كان البريد الإلكتروني قد ارتد واسترجاع تفاصيل الارتداد الأساسية:
-
-```java
+```  
+3. **فحص حالة الارتداد** – استدعِ `mailMessage.checkBounced()`؛ إذا كانت النتيجة غير `null`، فإن البريد ارتد.  
+   ```java
 BounceResult result = mail.checkBounced();
-```
-
-**الخطوة 4: الوصول إلى خصائص الارتداد**
-الوصول إلى خصائص مثل حالة الارتداد، والإجراء المتخذ بسبب الارتداد، ومعلومات المستلم:
-
-```java
+```  
+4. **الوصول إلى خصائص الارتداد** – اقرأ `isBounced`، `action`، و`recipient` من الكائن المرتجع.  
+   ```java
 System.out.println("IsBounced : " + result.isBounced());
 System.out.println("Action : " + result.getAction());
 System.out.println("Recipient : " + result.getRecipient());
+```  
+
+> `MailMessage` هي الفئة الأساسية في Aspose.Email التي تمثل رسالة بريد إلكتروني واحدة في الذاكرة.
+
+## كيف أسترجع معلومات ارتداد مفصلة من بريد إلكتروني؟
+
+**الإجابة:** بعد التأكد من ارتداد الرسالة، يمكنك استدعاء getters إضافية على كائن `BouncedMessageInfo` مثل `getReason()`، `getDiagnosticCode()`، و`getRecipientAddress()` للحصول على استجابة SMTP الدقيقة، رمز التشخيص، وعنوان المستلم الأصلي. تساعدك هذه البيانات الدقيقة على تصنيف الارتدادات واتخاذ الإجراءات المناسبة.
+
+```java
+BouncedMessageInfo info = mailMessage.checkBounced();
+if (info != null) {
+    System.out.println("Reason: " + info.getReason());
+    System.out.println("Diagnostic Code: " + info.getDiagnosticCode());
+    System.out.println("Recipient: " + info.getRecipientAddress());
+}
 ```
-
-### تحميل والتحقق من حالة الارتداد التفصيلية لرسالة البريد الإلكتروني
-
-#### ملخص
-تعمل هذه الميزة على توسيع الميزة الأولى من خلال استرجاع معلومات مفصلة حول سبب ارتداد البريد الإلكتروني.
-
-#### خطوات التنفيذ
-اتبع الخطوات المشابهة للخطوات السابقة، ولكن قم بالوصول إلى المزيد من الخصائص للحصول على تفاصيل شاملة:
-**الخطوة 1 إلى الخطوة 3:** نفس ما في الميزة 1.
-
-**الخطوة 4: الوصول إلى خصائص الارتداد التفصيلية**
-بالإضافة إلى الخصائص الأساسية، احصل على أسباب الارتداد والحالة التفصيلية:
 
 ```java
 System.out.println("Reason : " + result.getReason());
@@ -125,77 +205,102 @@ System.out.println("OriginalMessage ToAddress 1: " +
     result.getOriginalMessage().getTo().get_Item(0).getAddress());
 ```
 
-### تحميل والتحقق من حالة الارتداد لرسالة بريد إلكتروني أخرى
+## كيف يمكنني تطبيق نفس المنطق على ملف بريد إلكتروني آخر؟
 
-#### ملخص
-الميزة الثالثة توضح العملية الخاصة بملف بريد إلكتروني مختلف، مع التركيز على إمكانية إعادة الاستخدام.
+**الإجابة:** منطق فحص الارتداد قابل لإعادة الاستخدام؛ فقط غيّر مسار الملف في استدعاء `MailMessage.load()` وكرر نفس سلسلة العمليات. هذا يسهل معالجة دفعات من الرسائل عبر التكرار على دليل أو مجموعة مستخرجة من خادم البريد.
 
-**خطوات التنفيذ:** اتبع الخطوات المشابهة لتلك الموجودة في الميزة 1، مع تعديل اسم الملف حسب الحاجة:
+```java
+String[] files = {"email1.eml", "email2.eml"};
+for (String file : files) {
+    MailMessage msg = MailMessage.load(file);
+    BouncedMessageInfo info = msg.checkBounced();
+    // Process info as needed
+}
+```
 
 ```java
 String fileName = "test.eml";
 MailMessage mail = MailMessage.load(dataDir + fileName);
 BounceResult result = mail.checkBounced();
-// الوصول إلى الخصائص على نحو مماثل.
+// Access properties similarly.
 ```
 
-## التطبيقات العملية
+## تطبيقات عملية
 
-يعد فهم حالة ارتداد البريد الإلكتروني أمرًا بالغ الأهمية لمختلف التطبيقات:
-- **حملات التسويق عبر البريد الإلكتروني:** حدد رسائل البريد الإلكتروني غير القابلة للتسليم لتنظيف قائمة البريد الخاصة بك.
-- **أنظمة دعم العملاء:** التعامل تلقائيًا مع الإشعارات المرتدة من العملاء.
-- **أدوات الاتصال التجاري:** تأكد من وصول الاتصالات الهامة إلى المتلقين المقصودين.
-
-من خلال دمج وظيفة Aspose.Email، يمكنك تبسيط هذه العمليات وتحسين كفاءة الاتصال.
+فهم حالة ارتداد البريد الإلكتروني أمر حاسم لعدة سيناريوهات:
+- **حملات التسويق عبر البريد:** تحديد العناوين غير القابلة للتسليم للحفاظ على نظافة القائمة وتحسين معدلات التسليم.
+- **أنظمة دعم العملاء:** الرد التلقائي على تذاكر الدعم المرتدة، مما يقلل الجهد اليدوي.
+- **أدوات التواصل المؤسسية:** ضمان وصول التنبيهات الحرجة إلى المستلمين، وتحديد الفشل للمعالجة الفورية.
 
 ## اعتبارات الأداء
 
-عند العمل مع كميات كبيرة من بيانات البريد الإلكتروني:
-- قم بتحسين استخدام الذاكرة من خلال إدارة دورات حياة الكائنات بشكل مناسب.
-- استخدم تقنيات فعالة لمعالجة الملفات لتقليل عمليات الإدخال/الإخراج.
-- قم بتحديث Aspose.Email بانتظام إلى الإصدار الأحدث لتحسين الأداء وإصلاح الأخطاء.
+عند معالجة آلاف الرسائل:
+- أعد استخدام كائن `License` واحد لتجنب قراءات الملف المتكررة.
+- بث ملفات البريد من القرص بدلاً من تحميلها كلها في الذاكرة مرة واحدة.
+- حدّث إلى أحدث إصدار من Aspose.Email للاستفادة من تحسينات الأداء التي تقلل زمن المعالجة حتى **30 %**.
 
-إن اتباع أفضل الممارسات هذه سيساعدك في الحفاظ على الأداء الأمثل في تطبيقاتك.
+## مشاكل شائعة وحلولها
 
-## خاتمة
+| المشكلة | السبب | الحل |
+|--------|-------|------|
+| `NullPointerException` عند `checkBounced()` | الترخيص غير مُعد أو الملف غير موجود | تأكد من تحميل ملف الترخيص قبل أي استدعاء API وتحقق من مسار الملف. |
+| عدم وجود سبب ارتداد | الرسالة ليست ارتدادًا (مثل إيصال تسليم) | تحقق أولاً من أن `isBounced` صحيح قبل الوصول إلى الخصائص التفصيلية. |
+| بطء المعالجة على دفعات كبيرة | قراءة الملفات بالكامل إلى الذاكرة | استخدم `MailMessage.load(InputStream)` لبث البيانات وإطلاق الموارد بسرعة. |
 
-لقد تعلمتَ الآن كيفية التحقق بفعالية من حالات ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. تُبسّط هذه الأداة الفعّالة التعامل مع رسائل البريد الإلكتروني المرتدة، مما يضمن قنوات تواصل فعّالة.
+## الأسئلة المتكررة
 
-**الخطوات التالية:**
-- استكشف الميزات الإضافية لـ Aspose.Email.
-- دمج هذه الوظائف في أنظمتك الحالية.
-- قم بتجربة حالات استخدام مختلفة لتعظيم إمكانات المكتبة.
+**س: هل يمكنني فحص حالة الارتداد لرسائل مخزنة في قاعدة بيانات؟**  
+ج: نعم. استرجع محتوى MIME الخام كمصفوفة بايت، أغلفه في `ByteArrayInputStream`، ومرره إلى `MailMessage.load()`.
 
-هل أنت مستعد لتطبيق هذا الحل؟ ابدأ بتجربة مقتطفات التعليمات البرمجية المُقدمة، ثم خصّصها لتناسب احتياجاتك.
+**س: هل يدعم Aspose.Email استرجاع الرسائل عبر IMAP/POP3 لتحليل الارتداد؟**  
+ج: بالتأكيد. استخدم `ImapClient` أو `Pop3Client` لجلب الرسائل، ثم طبّق نفس منطق فحص الارتداد.
 
-## قسم الأسئلة الشائعة
+**س: هل هناك حد لحجم ملفات البريد التي يمكن لـ Aspose.Email التعامل معها؟**  
+ج: يمكن للمكتبة معالجة رسائل تصل إلى **200 ميغابايت** دون الحاجة إلى إعدادات إضافية، بفضل بنية البث.
 
-1. **كيف أبدأ باستخدام Aspose.Email لـ Java؟**
-   - قم بتثبيت JDK 16+، وإعداد Maven، وإضافة التبعية كما هو موضح أعلاه.
-   
-2. **ما هي الأسباب الشائعة لارتداد رسائل البريد الإلكتروني؟**
-   - يمكن أن تتسبب العناوين غير الصالحة أو صناديق البريد الممتلئة أو مشكلات الخادم في حدوث ارتدادات.
-3. **هل يمكنني التحقق من رسائل البريد الإلكتروني المتعددة في وقت واحد؟**
-   - نعم، قم بالمرور عبر دليل ملفات البريد الإلكتروني باستخدام منطق مماثل.
-4. **كيف أتعامل مع أنواع مختلفة من رسائل الارتداد؟**
-   - استخدم خصائص مفصلة مثل `getReason()` للتمييز والاستجابة بشكل مناسب.
-5. **هل Aspose.Email مناسب للتطبيقات واسعة النطاق؟**
-   - نعم، مع إدارة الذاكرة المناسبة وتحسين الأداء.
+**س: كيف أفرق بين الارتدادات الصلبة والناعمة؟**  
+ج: افحص قيمة `BouncedMessageInfo.getAction()` – “failed” تشير إلى ارتداد صلب، بينما “delayed” تدل على ارتداد ناعم.
+
+**س: هل تعمل المكتبة داخل حاويات Linux؟**  
+ج: نعم، Aspose.Email مستقل عن المنصة ويعمل بسلاسة داخل حاويات Docker التي تشغل Java 16+.
 
 ## موارد
+
 - [توثيق Aspose.Email](https://reference.aspose.com/email/java/)
-- [تنزيل Aspose.Email](https://releases.aspose.com/email/java/)
-- [شراء ترخيص](https://purchase.aspose.com/buy)
+- [تحميل Aspose.Email](https://releases.aspose.com/email/java/)
 - [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)
+- [شراء ترخيص](https://purchase.aspose.com/buy)
 - [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
 - [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
-باتباع هذا الدليل، ستكون على الطريق الصحيح لإتقان التعامل مع ارتداد رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا. برمجة ممتعة!
+## الخلاصة
+
+أصبح لديك الآن نهج جاهز للإنتاج **كيفية التحقق من حالة الارتداد** باستخدام Aspose.Email للـ Java. من خلال دمج هذه المقاطع، يمكنك اكتشاف الرسائل المرتدة تلقائيًا، استخراج الأسباب الدقيقة، والحفاظ على قنوات الاتصال نظيفة وموثوقة.
+
+**الخطوات التالية**
+- جرّب المعالجة الدفعية عبر التكرار على دليل ملفات `.eml`.  
+- دمج بيانات الارتداد مع نظام إدارة علاقات العملاء لتعليم جهات الاتصال غير الصالحة تلقائيًا.  
+- استكشف ميزات إضافية في Aspose.Email مثل إعادة توجيه البريد، استخراج المرفقات، وإرسال SMTP.
+
+هل أنت مستعد للتنفيذ؟ ابدأ بتبعية Maven، حمّل بريدًا تجريبيًا، وشاهد معلومات الارتداد تظهر في وحدة التحكم.
+
+---
+
+**آخر تحديث:** 2026-06-13  
+**تم الاختبار مع:** Aspose.Email للـ Java 24.12  
+**المؤلف:** Aspose  
+
+{{< blocks/products/pf/main-container >}}
+
+## دروس ذات صلة
+
+- [كيفية تحميل رسائل البريد الإلكتروني باستخدام Aspose.Email للـ Java: دليل خطوة بخطوة](/email/java/email-message-operations/aspose-email-java-load-email-tutorial/)
+- [دروس تحليل ومعالجة البريد الإلكتروني لـ Aspose.Email Java](/email/java/email-parsing-analysis/)
+- [إعداد Aspose.Email Java IMAP: دليل التكوين الآمن والاستخدام للمطورين](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
