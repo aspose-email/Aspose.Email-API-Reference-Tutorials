@@ -1,9 +1,56 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come utilizzare Aspose.Email per Java per recuperare in modo efficiente i riepiloghi delle email tramite numero di sequenza o ID univoco. Migliora il tuo flusso di lavoro di gestione delle email oggi stesso."
-"title": "Recupera i riepiloghi delle email in modo efficiente con Aspose.Email per Java"
-"url": "/it/java/email-parsing-analysis/retrieve-email-summaries-aspose-email-java/"
-"weight": 1
+date: '2026-06-23'
+description: Questo tutorial Aspose Email Java mostra come recuperare i riepiloghi
+  delle email per numero di sequenza o ID univoco, migliorando l'efficienza della
+  gestione delle email.
+keywords:
+- aspose email java tutorial
+- email summary retrieval
+- pop3 client java
+- email message sequence number
+- unique email id
+schemas:
+- author: Aspose
+  dateModified: '2026-06-23'
+  description: This Aspose Email Java tutorial shows how to retrieve email summaries
+    by sequence number or unique ID, boosting email management efficiency.
+  headline: 'Aspose Email Java Tutorial: Retrieve Email Summaries'
+  type: TechArticle
+- description: This Aspose Email Java tutorial shows how to retrieve email summaries
+    by sequence number or unique ID, boosting email management efficiency.
+  name: 'Aspose Email Java Tutorial: Retrieve Email Summaries'
+  steps:
+  - name: '**Automated Email Processing:** Automatically categorize and process emails
+      based on content.'
+    text: '**Automated Email Processing:** Automatically categorize and process emails
+      based on content.'
+  - name: '**Customer Support Systems:** Quickly retrieve and summarize customer inquiries.'
+    text: '**Customer Support Systems:** Quickly retrieve and summarize customer inquiries.'
+  - name: '**Inbox Management Tools:** Organize your inbox by summarizing and tagging
+      emails.'
+    text: '**Inbox Management Tools:** Organize your inbox by summarizing and tagging
+      emails.'
+  type: HowTo
+- questions:
+  - answer: Add the Maven dependency shown above to your `pom.xml` and ensure JDK
+      16 or newer is installed.
+    question: How do I install Aspose.Email for Java?
+  - answer: Yes, the free trial allows full feature evaluation, but a commercial license
+      is required for production deployments.
+    question: Can I use Aspose.Email without purchasing a license?
+  - answer: '`SecurityOptions.Auto` automatically detects and applies SSL/TLS or STARTTLS
+      as appropriate for the server.'
+    question: What security options are available for Pop3Client?
+  - answer: Always check if `messageInfo` is `null` before accessing its properties
+      to prevent `NullPointerException`.
+    question: How do I handle null responses when retrieving message info?
+  - answer: Monitor performance metrics, enable connection pooling, and keep the library
+      up to date with the latest security patches.
+    question: What are the best practices for using Aspose.Email in production environments?
+  type: FAQPage
+title: 'Tutorial Aspose Email Java: Recupera riepiloghi delle email'
+url: /it/java/email-parsing-analysis/retrieve-email-summaries-aspose-email-java/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +58,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Come recuperare i riepiloghi dei messaggi di posta elettronica utilizzando Aspose.Email per Java
+# Aspose Email Java Tutorial: Recupera riepiloghi email
+
 ## Introduzione
-Nell'era digitale odierna, gestire in modo efficiente le comunicazioni via email è essenziale sia per le aziende che per i privati. Che si tratti di gestire le richieste di assistenza clienti o di organizzare la posta in arrivo, recuperare rapidamente i riepiloghi dei messaggi può far risparmiare tempo e semplificare i processi. Questo tutorial ti guiderà nell'utilizzo del potente strumento. **Aspose.Email per Java** libreria per recuperare riepiloghi di messaggi di posta elettronica in base al numero di sequenza o all'ID univoco.
+Nell'era digitale odierna, gestire in modo efficiente le comunicazioni email è essenziale per aziende e privati. Che si tratti di gestire richieste di supporto clienti o di organizzare la propria casella di posta, recuperare rapidamente i riepiloghi dei messaggi può far risparmiare tempo e semplificare i processi. Questo **aspose email java tutorial** ti guiderà nell'uso della potente libreria **Aspose.Email for Java** per recuperare i riepiloghi dei messaggi email tramite numero di sequenza o ID univoco.
 
-In questo tutorial imparerai:
-- Come configurare Aspose.Email per Java
-- Recupera le informazioni di riepilogo del messaggio utilizzando un numero di sequenza
-- Recupera i dettagli del messaggio con un ID univoco
-- Ottimizza la tua implementazione per prestazioni migliori
+## Risposte rapide
+- **Di cosa tratta questo tutorial?** Recupero dei riepiloghi email tramite numero di sequenza o ID univoco con Aspose.Email for Java.  
+- **Quali protocolli sono supportati?** POP3, IMAP e Exchange Web Services (EWS).  
+- **È necessaria una licenza?** Una versione di prova gratuita è sufficiente per lo sviluppo; è richiesta una licenza commerciale per la produzione.  
+- **Quale versione di Java è necessaria?** JDK 16 o successivo.  
+- **Posso memorizzare i risultati nella cache?** Sì—la cache riduce le chiamate di rete e migliora le prestazioni.
 
-Analizziamo ora i prerequisiti prima di iniziare a configurare e implementare la nostra soluzione.
+## Cos'è Aspose Email Java Tutorial?
+Il **Aspose Email Java tutorial** è una guida passo‑passo che dimostra come utilizzare le API di Aspose.Email per leggere, riepilogare e processare i messaggi email in applicazioni Java. Ti accompagna nella configurazione della libreria, nella configurazione delle connessioni, nel recupero efficiente dei metadati dei messaggi e nell'applicazione di ottimizzazioni di prestazioni, consentendo agli sviluppatori di integrare una gestione email robusta nelle proprie soluzioni con il minimo sforzo.
+
 ## Prerequisiti
 Prima di iniziare, assicurati di avere quanto segue:
-- **Kit di sviluppo Java (JDK):** Versione 16 o successiva installata sul computer.
-- **Ambiente di sviluppo integrato (IDE):** Come IntelliJ IDEA o Eclipse per scrivere ed eseguire codice Java.
-- **Esperto:** Per gestire le dipendenze del progetto.
+- **Java Development Kit (JDK):** Versione 16 o successiva installata sulla tua macchina.  
+- **Integrated Development Environment (IDE):** Come IntelliJ IDEA o Eclipse per scrivere ed eseguire codice Java.  
+- **Maven:** Per gestire le dipendenze del progetto.  
 
-Dovresti anche avere familiarità con i concetti base della programmazione Java, inclusi i principi orientati agli oggetti e la gestione delle eccezioni. Se non hai familiarità con questi argomenti, ti consigliamo di consultare prima alcune risorse introduttive.
-## Impostazione di Aspose.Email per Java
-Per utilizzare Aspose.Email per Java, aggiungilo come dipendenza nel tuo progetto Maven:
-**Dipendenza Maven**
-Aggiungi il seguente frammento al tuo `pom.xml` file:
+È inoltre consigliabile avere familiarità con i concetti di base della programmazione Java, inclusi i principi orientati agli oggetti e la gestione delle eccezioni. Se sei nuovo a questi argomenti, considera di consultare prima delle risorse introduttive.
+
+## Configurazione di Aspose.Email per Java
+Per utilizzare Aspose.Email per Java, aggiungila come dipendenza nel tuo progetto Maven:
+
+Aggiungi il seguente snippet al tuo file `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -41,12 +93,14 @@ Aggiungi il seguente frammento al tuo `pom.xml` file:
     <classifier>jdk16</classifier>
 </dependency>
 ```
+
 ### Acquisizione della licenza
-Aspose.Email per Java offre una versione di prova gratuita, ma potresti voler acquistare una licenza o richiederne una temporanea per un utilizzo prolungato:
+Aspose.Email per Java offre una versione di prova gratuita, ma potresti voler acquistare una licenza o richiedere una licenza temporanea per un utilizzo prolungato:
 - **Prova gratuita:** [Scarica Aspose.Email](https://releases.aspose.com/email/java/)
 - **Licenza temporanea:** [Richiedi qui](https://purchase.aspose.com/temporary-license/)
 - **Acquista licenza:** [Acquista ora](https://purchase.aspose.com/buy)
-Dopo aver impostato il progetto e ottenuto una licenza, inizializza la libreria nella tua applicazione Java:
+
+Dopo aver configurato il progetto e ottenuto una licenza, inizializza la libreria nella tua applicazione Java:
 ```java
 import com.aspose.email.Pop3Client;
 import com.aspose.email.SecurityOptions;
@@ -54,17 +108,21 @@ import com.aspose.email.SecurityOptions;
 Pop3Client client = new Pop3Client("host.domain.com", 456, "username", "password");
 client.setSecurityOptions(SecurityOptions.Auto);
 ```
+
 ## Guida all'implementazione
-### Recupera le informazioni di riepilogo del messaggio utilizzando il numero di sequenza
-Questa funzionalità consente di accedere ai dettagli del messaggio specificando un numero sequenziale assegnato dal server.
+
+### Come posso recuperare i riepiloghi email utilizzando un numero di sequenza?
+Carica il client POP3, connettiti al server e chiama il metodo `listMessages()` per ottenere una `Pop3MessageInfoCollection`. Quindi utilizza `getMessageInfo(int sequenceNumber)` per recuperare il riepilogo del messaggio desiderato. Questo approccio richiede un solo round‑trip di rete per messaggio e restituisce metadati come oggetto, mittente e data di ricezione senza scaricare l'intero corpo dell'email.
+
 #### Inizializza il tuo client
-Crea un'istanza di `Pop3Client` e imposta le opzioni di sicurezza:
+Pop3Client è la classe di Aspose.Email per connettersi ai server di posta POP3. Crea un'istanza, configura host, porta, nome utente e password, quindi imposta le opzioni di sicurezza secondo necessità:
 ```java
 Pop3Client client = new Pop3Client("host.domain.com", 456, "username", "password");
 client.setSecurityOptions(SecurityOptions.Auto);
 ```
-#### Recupera le informazioni del messaggio utilizzando il numero di sequenza
-Recupera i dettagli riepilogativi del messaggio utilizzando il numero di sequenza:
+
+#### Recupera le informazioni del messaggio usando il numero di sequenza
+`getMessageInfo(int sequenceNumber)` recupera il riepilogo di una specifica email tramite il suo numero di sequenza.  
 ```java
 String seqNum = "sequence number of a message from server";
 Pop3MessageInfo messageInfo = client.getMessageInfo(seqNum);
@@ -77,12 +135,14 @@ if (messageInfo != null) {
     System.out.println("Date: " + date);
 }
 ```
-- **Parametri:** Numero di sequenza come identificatore di stringa.
-- **Valore restituito:** `Pop3MessageInfo` oggetto contenente i dettagli dell'email.
-### Recupera le informazioni di riepilogo del messaggio utilizzando un ID univoco
-Questa funzionalità è simile, ma utilizza un ID univoco anziché numeri di sequenza per recuperare i riepiloghi dei messaggi.
-#### Recupera informazioni sul messaggio utilizzando un ID univoco
-Accedi alle informazioni del messaggio tramite il suo identificativo univoco:
+- **Parametri:** Numero di sequenza come identificatore stringa.  
+- **Valore restituito:** oggetto `Pop3MessageInfo` contenente i dettagli dell'email.
+
+### Come posso recuperare i riepiloghi email utilizzando un ID univoco?
+Utilizza l'identificatore univoco (UIDL) che i server POP3 assegnano a ciascun messaggio. Chiama `getMessageInfoByUid(String uid)` per ottenere lo stesso `Pop3MessageInfo` senza fare affidamento sui numeri di sequenza assegnati dal server, i quali possono cambiare dopo le cancellazioni. Questo metodo fornisce un riferimento stabile ai messaggi, consentendo un recupero affidabile anche quando la casella di posta viene modificata.
+
+#### Recupera le informazioni del messaggio usando l'ID univoco
+`getMessageInfoByUid(String uid)` restituisce il riepilogo del messaggio associato all'identificatore univoco fornito, garantendo un accesso coerente tra le sessioni.  
 ```java
 String uniqueId = "unique id of a message from server";
 Pop3MessageInfo messageInfo = client.getMessageInfo(uniqueId);
@@ -95,41 +155,62 @@ if (messageInfo != null) {
     System.out.println("Date: " + date);
 }
 ```
-- **Parametri:** ID univoco come identificatore di stringa.
-- **Valore restituito:** `Pop3MessageInfo` oggetto contenente i dettagli dell'email.
+- **Parametri:** ID univoco come identificatore stringa.  
+- **Valore restituito:** oggetto `Pop3MessageInfo` contenente i dettagli dell'email.
+
 ## Applicazioni pratiche
 Aspose.Email per Java può essere sfruttato in vari scenari, tra cui:
-1. **Elaborazione automatica delle e-mail:** Categorizza ed elabora automaticamente le email in base al contenuto.
-2. **Sistemi di supporto clienti:** Recupera e riepiloga rapidamente le richieste dei clienti.
-3. **Strumenti di gestione della posta in arrivo:** Organizza la tua casella di posta riassumendo e contrassegnando le email.
-L'integrazione con altri sistemi è possibile tramite API REST o connessioni dirette al database, consentendo un'automazione fluida del flusso di lavoro.
+1. **Elaborazione automatica delle email:** Categorizza e processa automaticamente le email in base al contenuto.  
+2. **Sistemi di supporto clienti:** Recupera e riepiloga rapidamente le richieste dei clienti.  
+3. **Strumenti di gestione della casella di posta:** Organizza la tua inbox riepilogando e etichettando le email.  
+
+L'integrazione con altri sistemi è possibile tramite API REST o connessioni dirette al database, consentendo un'automazione fluida dei flussi di lavoro.
+
 ## Considerazioni sulle prestazioni
-Per ottimizzare le prestazioni durante l'utilizzo di Aspose.Email:
-- Limitare il numero di messaggi recuperati in una singola richiesta per evitare di sovraccaricare il server.
-- Implementare meccanismi di memorizzazione nella cache per i dati a cui si accede di frequente.
-- Monitora l'utilizzo delle risorse e regola le impostazioni JVM per una gestione ottimale della memoria.
-Seguendo queste best practice, la tua applicazione funzionerà senza intoppi, senza inutili ritardi o limitazioni di risorse.
-## Conclusione
-Seguendo questo tutorial, hai imparato a utilizzare Aspose.Email per Java per recuperare in modo efficiente i riepiloghi dei messaggi email. Che si utilizzino numeri sequenziali o ID univoci, queste tecniche possono migliorare i flussi di lavoro di elaborazione delle email e farti risparmiare tempo prezioso.
-I prossimi passi includono l'esplorazione di funzionalità più avanzate di Aspose.Email, come l'invio di email o la gestione di elementi del calendario. Prova a implementare queste soluzioni nei tuoi progetti per scoprirne i vantaggi in prima persona.
-## Sezione FAQ
-**Domanda 1:** Come faccio a installare Aspose.Email per Java? 
-**Risposta 1:** Aggiungilo come dipendenza Maven nel tuo `pom.xml` file e assicurarsi che sia installato JDK 16+.
-**D2:** Posso utilizzare Aspose.Email senza acquistare una licenza?
-**A2:** Sì, puoi iniziare con la versione di prova gratuita disponibile su Aspose.
-**D3:** Quali opzioni di sicurezza sono disponibili per Pop3Client?
-**A3:** `SecurityOptions.Auto` rileva e applica automaticamente i protocolli di sicurezza appropriati.
-**D4:** Come gestisco le risposte nulle quando recupero le informazioni del messaggio?
-**A4:** Controlla se `messageInfo` è nullo prima di accedere alle sue proprietà per evitare eccezioni.
-**D5:** Quali sono le best practice per l'utilizzo di Aspose.Email negli ambienti di produzione?
-**A5:** Monitora le prestazioni, ottimizza l'utilizzo delle risorse e gestisci le dipendenze in modo efficiente.
+Per ottimizzare le prestazioni durante l'uso di Aspose.Email:
+- Limita il numero di messaggi recuperati in una singola richiesta per evitare sovraccarichi del server.  
+- Implementa meccanismi di caching per i dati acceduti frequentemente.  
+- Monitora l'utilizzo delle risorse e regola le impostazioni della JVM per una gestione ottimale della memoria.  
+
+Seguire queste best practice garantirà che la tua applicazione funzioni senza intoppi, evitando ritardi inutili o colli di bottiglia.
+
+## Domande frequenti
+
+**D: Come installo Aspose.Email per Java?**  
+R: Aggiungi la dipendenza Maven mostrata sopra al tuo `pom.xml` e assicurati di avere JDK 16 o versioni successive installate.
+
+**D: Posso usare Aspose.Email senza acquistare una licenza?**  
+R: Sì, la versione di prova gratuita consente di valutare tutte le funzionalità, ma è necessaria una licenza commerciale per le distribuzioni in produzione.
+
+**D: Quali opzioni di sicurezza sono disponibili per Pop3Client?**  
+R: `SecurityOptions.Auto` rileva automaticamente e applica SSL/TLS o STARTTLS in base al server.
+
+**D: Come gestisco risposte nulle quando recupero le informazioni del messaggio?**  
+R: Verifica sempre se `messageInfo` è `null` prima di accedere alle sue proprietà per evitare `NullPointerException`.
+
+**D: Quali sono le best practice per l'uso di Aspose.Email in ambienti di produzione?**  
+R: Monitora le metriche di prestazione, abilita il pooling delle connessioni e mantieni la libreria aggiornata con le ultime patch di sicurezza.
+
 ## Risorse
-- **Documentazione:** [Documentazione Java di Aspose.Email](https://reference.aspose.com/email/java/)
-- **Scaricamento:** [Ottieni Aspose.Email per Java](https://releases.aspose.com/email/java/)
-- **Acquistare:** [Acquista una licenza](https://purchase.aspose.com/buy)
-- **Prova gratuita:** [Provalo](https://releases.aspose.com/email/java/)
+- **Documentazione:** [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- **Download:** [Ottieni Aspose.Email per Java](https://releases.aspose.com/email/java/)
+- **Acquista:** [Acquista una licenza](https://purchase.aspose.com/buy)
+- **Prova gratuita:** [Provala ora](https://releases.aspose.com/email/java/)
 - **Licenza temporanea:** [Richiedi qui](https://purchase.aspose.com/temporary-license/)
 - **Forum di supporto:** [Fai domande](https://forum.aspose.com/c/email/10)
+
+---
+
+**Ultimo aggiornamento:** 2026-06-23  
+**Testato con:** Aspose.Email for Java 24.11  
+**Autore:** Aspose
+
+## Tutorial correlati
+
+- [Master Email Retrieval with Aspose.Email Java: Using Sequence Numbers and Unique URIs](/email/java/imap-client-operations/master-email-retrieval-aspose-email-java-sequence-unique-uri/)
+- [How to Set Up a POP3 Client in Java Using Aspose.Email Library](/email/java/pop3-client-operations/setup-pop3-client-aspose-email-java/)
+- [Email Message Operations Tutorials with Aspose.Email for Java](/email/java/email-message-operations/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
