@@ -1,49 +1,51 @@
 ---
-date: '2025-12-17'
-description: Dowiedz się, jak wyodrębniać załączniki inline w Javie i odczytywać pliki
-  Outlook MSG w Javie przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku,
-  jak efektywnie obsługiwać pliki Outlook MSG.
+date: '2026-03-15'
+description: Dowiedz się, jak odczytywać pliki msg i wyodrębniać załączniki inline
+  przy użyciu Aspose.Email dla Javy. Ten samouczek Aspose Email Java pokazuje konfigurację
+  zależności Maven Aspose Email oraz przegląd kodu.
 keywords:
 - extract inline attachments MSG Java
 - handle Outlook email formats Java
 - use Aspose.Email library for Java
-title: Wyodrębnianie załączników inline w Javie – pliki MSG z Aspose.Email
+title: Jak odczytać plik MSG – wyodrębnić wbudowane załączniki w Javie
 url: /pl/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
 weight: 1
 ---
+
+Let's produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Wyodrębnianie załączników inline w Javie – pliki MSG przy użyciu Aspose.Email
+# Jak odczytać pliki MSG i wyodrębnić załączniki inline w Javie – przy użyciu Aspose.Email
 
 ## Wprowadzenie
 
-Jeśli potrzebujesz **wyodrębnić załączniki inline java** z plików Microsoft Outlook MSG, trafiłeś we właściwe miejsce. Wielu programistów ma problemy z odczytem plików Outlook msg java, ponieważ format ukrywa osadzone obrazy i dokumenty wewnątrz treści wiadomości. W tym samouczku przeprowadzimy Cię przez czyste, gotowe do produkcji rozwiązanie wykorzystujące bibliotekę Aspose.Email dla Javy, które lokalizuje, identyfikuje i zapisuje te załączniki inline.
+Jeśli potrzebujesz **jak odczytać pliki msg** i wyciągnąć osadzone obrazy lub dokumenty, trafiłeś we właściwe miejsce. Wielu programistów napotyka trudności przy odczytywaniu plików Outlook msg java, ponieważ format umieszcza załączniki inline wewnątrz treści wiadomości. W tym krok‑po‑kroku tutorialu Aspose Email Java pokażemy czysty, gotowy do produkcji sposób na załadowanie pliku MSG, wykrycie, które załączniki są inline, oraz zapisanie ich na dysku.
 
-Pod koniec tego przewodnika będziesz w stanie:
+Po zakończeniu tego przewodnika będziesz w stanie:
 
-* Skonfigurować Aspose.Email dla Javy w projekcie Maven.  
-* **Odczytać pliki Outlook msg java** i wyliczyć ich załączniki.  
-* Wykrywać, które załączniki są inline i zapisywać je na dysku.  
-* Zastosować najlepsze praktyki wydajnościowe przy przetwarzaniu hurtowym.
+* Skonfigurować **Maven Aspose Email dependency** w projekcie Java.  
+* **Odczytać pliki Outlook msg java** i wyliczyć ich załączniki.  
+* Wykrywać, które załączniki są inline i zapisywać je w wybranym folderze.  
+* Stosować praktyki przyjazne wydajności przy przetwarzaniu hurtowym.
 
 ## Szybkie odpowiedzi
 - **Co oznacza „załącznik inline”?** Załącznik osadzony w treści e‑maila (np. obrazy wyświetlane w wiadomości).  
-- **Która biblioteka obsługuje pliki MSG?** Aspose.Email dla Javy.  
-- **Czy potrzebna jest licencja?** Licencja próbna działa w trybie ewaluacyjnym; licencja stała usuwa ograniczenia użytkowania.  
+- **Która biblioteka obsługuje pliki MSG?** Aspose.Email for Java.  
+- **Czy potrzebna jest licencja?** Wersja próbna działa w celach ewaluacyjnych; stała licencja usuwa ograniczenia użytkowania.  
 - **Czy mogę przetwarzać wiele plików MSG jednocześnie?** Tak – grupuj logikę i używaj puli wątków dla skalowalności.  
 - **Jakiej wersji Javy wymaga?** JDK 16 lub nowszej.
 
 ## Co to jest „extract inline attachments java”?
 
-Wyodrębnianie załączników inline w Javie oznacza programowe otwieranie pliku MSG, skanowanie jego kolekcji załączników i pobieranie wyłącznie tych elementów oznaczonych jako *inline* (w przeciwieństwie do zwykłych załączników plikowych). Jest to niezbędne, gdy potrzebujesz wizualnej zawartości e‑maila — takiej jak osadzone loga czy zrzuty ekranu — aby zapisać je jako oddzielne pliki graficzne.
+Wyodrębnianie załączników inline w Javie oznacza programowe otwieranie pliku MSG, skanowanie jego kolekcji załączników i pobieranie tylko tych elementów, które są oznaczone jako *inline* (w przeciwieństwie do zwykłych załączników plikowych). Jest to niezbędne, gdy potrzebujesz wizualnej zawartości e‑maila — takiej jak osadzone loga czy zrzuty ekranu — aby zapisać je jako oddzielne pliki graficzne.
 
 ## Dlaczego używać Aspose.Email do tego zadania?
 
-Aspose.Email abstrahuje niskopoziomowe struktury MAPI i udostępnia prosty, silnie typowany interfejs API. W porównaniu z ręcznym parsowaniem binarnego formatu MSG, Aspose.Email:
+Aspose.Email abstrahuje niskopoziomowe struktury MAPI i udostępnia prosty, silnie typowany interfejs API. W porównaniu z własnoręcznym parsowaniem binarnego formatu MSG, Aspose.Email:
 
 * Obsługuje wszystkie warianty MSG (Unicode, RTF, HTML).  
 * Zapewnia niezawodny dostęp do właściwości metadanych załączników.  
@@ -54,18 +56,18 @@ Aspose.Email abstrahuje niskopoziomowe struktury MAPI i udostępnia prosty, siln
 Aby podążać za instrukcją, upewnij się, że masz:
 
 1. **Biblioteki i zależności**  
-   * Aspose.Email dla Javy (najnowsza wersja).  
+   * Aspose.Email for Java (najnowsza wersja).  
    * Maven (lub IDE z obsługą Maven).  
 
 2. **Środowisko uruchomieniowe**  
-   * Zainstalowany JDK 16 lub nowszy.  
+   * JDK 16 lub nowszy zainstalowany.  
 
 3. **Podstawowa wiedza**  
    * Znajomość Java I/O oraz obsługi wyjątków.  
 
-## Konfiguracja Aspose.Email dla Javy
+## Konfiguracja Aspose.Email dla Java
 
-Dodaj zależność Aspose.Email do swojego `pom.xml`. Fragment poniżej jest niezmieniony w stosunku do oryginalnego samouczka.
+Dodaj zależność Aspose.Email do swojego `pom.xml`. Fragment poniżej jest niezmieniony w stosunku do oryginalnego tutorialu.
 
 ```xml
 <dependency>
@@ -84,11 +86,11 @@ Dodaj zależność Aspose.Email do swojego `pom.xml`. Fragment poniżej jest nie
 
 ## Przewodnik implementacji
 
-Poniżej dzielimy rozwiązanie na trzy skoncentrowane funkcje. Każda funkcja zawiera krótkie wyjaśnienie, a następnie oryginalny blok kodu (zachowany w całości).
+Poniżej dzielimy rozwiązanie na trzy skoncentrowane funkcje. Każda funkcja zawiera krótkie wyjaśnienie, a następnie oryginalny blok kodu (zachowany dokładnie).
 
 ### Funkcja 1 – Ładowanie pliku MSG
 
-Najpierw wczytaj wiadomość Outlook do obiektu `MapiMessage`.
+Najpierw załaduj wiadomość Outlook do obiektu `MapiMessage`.
 
 ```java
 import com.aspose.email.MapiMessage;
@@ -107,9 +109,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-### Funkcja 3 – Identyfikacja i zapisywanie załączników inline
+### Funkcja 3 – Identyfikacja i zapis załączników inline
 
-Iteruj po każdym załączniku, sprawdzaj, czy jest inline, a następnie zapisz go na dysku.
+Iteruj po każdym załączniku, sprawdzaj, czy jest inline, i zapisuj go na dysk.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -174,13 +176,13 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 
 Wyodrębnianie załączników inline jest przydatne w wielu rzeczywistych scenariuszach:
 
-* **Automatyczne przetwarzanie e‑maili** – Pobieraj obrazy z newsletterów do analiz.  
-* **Migracja danych** – Przenoś osadzoną zawartość przy migracji z Exchange na inną platformę.  
+* **Automatyczne przetwarzanie e‑maili** – Pobieraj obrazy z biuletynów w celu analizy.  
+* **Migracja danych** – Przenoś osadzoną treść przy migracji z Exchange do innej platformy.  
 * **Rozwiązania archiwizacyjne** – Zachowaj wizualną integralność archiwizowanych wiadomości, przechowując zasoby inline osobno.
 
-## Rozważania wydajnościowe
+## Wskazówki dotyczące wydajności
 
-Przy pracy z setkami lub tysiącami plików MSG pamiętaj o następujących wskazówkach:
+Przy pracy z setkami lub tysiącami plików MSG, pamiętaj o następujących radach:
 
 * **Przetwarzanie wsadowe:** Grupuj pliki w zarządzalne partie, aby uniknąć skoków pamięci.  
 * **Szybkie zwalnianie zasobów:** Zamykaj strumienie (`try‑with‑resources`) i pozwól garbage collectorowi odzyskać obiekty.  
@@ -197,27 +199,30 @@ Przy pracy z setkami lub tysiącami plików MSG pamiętaj o następujących wska
 ## Najczęściej zadawane pytania
 
 **P: Jaka jest minimalna wymagana wersja Aspose.Email?**  
-O: Samouczek używa wersji 25.4, ale każda wersja 24.x+ obsługująca JDK 16 będzie działać.
+O: Tutorial używa wersji 25.4, ale każda wersja 24.x+ obsługująca JDK 16 będzie działać.
 
 **P: Czy mogę wyodrębnić załączniki inline z zaszyfrowanych plików MSG?**  
-O: Tak, pod warunkiem podania prawidłowego hasła deszyfrującego przy ładowaniu `MapiMessage`.
+O: Tak, pod warunkiem podania poprawnego hasła deszyfrującego przy ładowaniu `MapiMessage`.
 
 **P: Jak odróżnić obrazy inline od zwykłych załączników plikowych?**  
 O: Użyj pomocnika `IsAttachmentInline`; sprawdza on flagę MAPI `ObjInfo`, która oznacza załącznik jako inline.
 
-**P: Czy istnieje sposób zachowania oryginalnej nazwy pliku załącznika inline?**  
+**P: Czy istnieje sposób na zachowanie oryginalnej nazwy pliku załącznika inline?**  
 O: Przykład generuje UUID dla unikalności, ale możesz odczytać właściwość `attachment.getLongFileName()` i użyć jej przy wywołaniu `SaveAttachment`.
 
-**P: Czy to rozwiązanie działa na Linux/macOS tak samo jak na Windows?**  
+**P: Czy to rozwiązanie działa na Linux/macOS oraz Windows?**  
 O: Absolutnie — Aspose.Email jest niezależny od platformy, o ile jest zainstalowane JDK.
+
+**P: Gdzie mogę znaleźć więcej informacji o zależności Maven Aspose Email?**  
+O: Zobacz oficjalną dokumentację Aspose pod linkiem poniżej.
 
 ## Zasoby
 - **Dokumentacja:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-17  
-**Testowano z:** Aspose.Email dla Javy 25.4 (JDK 16)  
+**Ostatnia aktualizacja:** 2026-03-15  
+**Testowano z:** Aspose.Email for Java 25.4 (JDK 16)  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

@@ -1,13 +1,13 @@
 ---
-date: '2025-12-17'
-description: Ismerje meg, hogyan lehet beágyazott mellékleteket kinyerni Java-ban,
-  és Outlook MSG fájlokat olvasni Java-val az Aspose.Email for Java segítségével.
-  Lépésről lépésre útmutató az Outlook MSG fájlok hatékony kezeléséhez.
+date: '2026-03-15'
+description: Tanulja meg, hogyan olvassa be a msg fájlokat, és hogyan nyerje ki a
+  beágyazott mellékleteket az Aspose.Email for Java segítségével. Ez az Aspose Email
+  Java oktatóanyag bemutatja a Maven Aspose Email függőség beállítását és a kód áttekintését.
 keywords:
 - extract inline attachments MSG Java
 - handle Outlook email formats Java
 - use Aspose.Email library for Java
-title: Beágyazott mellékletek kinyerése Java‑ban – MSG fájlok az Aspose.Email segítségével
+title: hogyan olvassuk a msg-t – beágyazott mellékletek kinyerése Java-ban
 url: /hu/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/
 weight: 1
 ---
@@ -17,33 +17,33 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Beágyazott mellékletek kinyerése Java‑ban – MSG fájlok Aspose.Email használatával
+# Hogyan olvassunk MSG fájlokat és vonjunk ki beágyazott mellékleteket Java – Az Aspose.Email használatával
 
 ## Bevezetés
 
-Ha **beágyazott mellékletek kinyerése Java‑ban** Microsoft Outlook MSG fájlokból szükséges, jó helyen jársz. Sok fejlesztő nehezen tudja olvasni az Outlook msg java fájlokat, mivel a formátum elrejti a beágyazott képeket és dokumentumokat az üzenettörzsben. Ebben az útmutatóban egy tiszta, termelés‑kész megoldáson keresztül vezetünk végig, amely a Aspose.Email Java könyvtárat használja a beágyazott mellékletek megtalálásához, azonosításához és mentéséhez.
+Ha **how to read msg** fájlokra van szükséged, és ki szeretnéd nyerni a beágyazott képeket vagy dokumentumokat, jó helyen vagy. Sok fejlesztő nehézségekbe ütközik, amikor Outlook msg java fájlokat próbál olvasni, mivel a formátum a beágyazott mellékleteket az üzenettörzsben helyezi el. Ebben a lépésről‑lépésre szóló Aspose Email Java útmutatóban bemutatjuk, hogyan tölts be egy MSG‑t, hogyan észleld, mely mellékletek inline‑ok, és hogyan mentheted őket lemezre egy tiszta, termelés‑kész módon.
 
 A végére a következőket fogod tudni:
 
-* Beállítani az Aspose.Email for Java-t egy Maven projektben.  
-* **Olvasni Outlook msg java** fájlokat és felsorolni a mellékleteiket.  
-* Felismerni, mely mellékletek beágyazottak, és lementeni őket lemezre.  
-* Teljesítmény‑legjobb gyakorlatokat alkalmazni tömeges feldolgozás esetén.
+* Beállítani a **Maven Aspose Email függőséget** egy Java projektben.  
+* **Outlook msg java** fájlokat olvasni és felsorolni a mellékleteiket.  
+* Felismerni, mely mellékletek inline‑ok, és egy általad választott mappába menteni őket.  
+* Teljesítmény‑barát gyakorlatokat alkalmazni tömeges feldolgozás esetén.
 
 ## Gyors válaszok
-- **Mit jelent a „beágyazott melléklet”?** Olyan melléklet, amely az e‑mail törzsében van beágyazva (pl. a levélben megjelenő képek).  
+- **Mit jelent az “inline attachment”?** Olyan melléklet, amely az e‑mail törzsében van beágyazva (pl. a levélben megjelenő képek).  
 - **Melyik könyvtár kezeli az MSG fájlokat?** Aspose.Email for Java.  
-- **Szükség van licencre?** A próbaverzió elegendő értékeléshez; egy állandó licenc eltávolítja a használati korlátokat.  
+- **Szükségem van licencre?** A próbaverzió elegendő értékeléshez; egy állandó licenc eltávolítja a használati korlátokat.  
 - **Feldolgozhatok sok MSG fájlt egyszerre?** Igen – kötegeld a logikát, és használj szálkészleteket a skálázhatóságért.  
 - **Milyen Java verzió szükséges?** JDK 16 vagy újabb.
 
-## Mi az a „extract inline attachments java”?
+## Mi az a “extract inline attachments java”?
 
-A beágyazott mellékletek kinyerése Java‑ban azt jelenti, hogy programozottan megnyitunk egy MSG fájlt, átvizsgáljuk a mellékletgyűjteményét, és csak azokat az elemeket vonjuk ki, amelyek *beágyazottként* vannak jelölve (szemben a szokásos fájlmellékletekkel). Ez elengedhetetlen, ha az e‑mail vizuális tartalmát – például beágyazott logókat vagy képernyőképeket – különálló képfájlokként szeretnénk menteni.
+Az inline mellékletek kinyerése Java‑ban azt jelenti, hogy programozottan megnyitsz egy MSG fájlt, bejársz egy melléklet‑gyűjteményt, és csak azokat az elemeket vonod ki, amelyek *inline*‑ként vannak jelölve (szemben a szokásos fájl‑mellékletekkel). Ez akkor elengedhetetlen, amikor az e‑mail vizuális tartalmát – például beágyazott logókat vagy képernyőképeket – külön képfájlokként szeretnéd menteni.
 
 ## Miért használjuk az Aspose.Email‑t ehhez a feladathoz?
 
-Az Aspose.Email elrejti az alacsony szintű MAPI struktúrákat, és egy egyszerű, erősen típusos API‑t biztosít. A bináris MSG formátum saját kézi feldolgozásához képest az Aspose.Email:
+Az Aspose.Email elrejti az alacsony szintű MAPI struktúrákat, és egy egyszerű, erősen típusos API‑t biztosít. A bináris MSG formátum saját kezű elemzésével szemben az Aspose.Email:
 
 * Kezeli az összes MSG változatot (Unicode, RTF, HTML).  
 * Megbízható tulajdonság‑hozzáférést nyújt a melléklet metaadatokhoz.  
@@ -63,9 +63,9 @@ A következőkre legyenek telepítve:
 3. **Alapvető ismeretek**  
    * Java I/O és kivételkezelés ismerete.  
 
-## Aspose.Email for Java beállítása
+## Az Aspose.Email beállítása Java-hoz
 
-Add hozzá az Aspose.Email függőséget a `pom.xml`‑hez. Az alábbi kódrészlet változatlanul marad a eredeti útmutatóból.
+Add hozzá az Aspose.Email függőséget a `pom.xml` fájlodhoz. Az alábbi kódrészlet változatlanul marad az eredeti útmutatóból.
 
 ```xml
 <dependency>
@@ -76,17 +76,17 @@ Add hozzá az Aspose.Email függőséget a `pom.xml`‑hez. Az alábbi kódrész
 </dependency>
 ```
 
-### Licenc beszerzésének lépései
+### Licenc beszerzési lépések
 
 * **Ingyenes próba:** Töltsd le a próba‑DLL/JAR‑t az Aspose weboldaláról.  
 * **Ideiglenes licenc:** Kérj 30‑napos értékelési licencet korlátlan teszteléshez.  
-* **Teljes vásárlás:** Szerezz állandó licencet a termelési környezethez.
+* **Teljes vásárlás:** Szerezz be egy állandó licencet a termelési környezethez.
 
 ## Implementációs útmutató
 
 Az alábbiakban a megoldást három fókuszált funkcióra bontjuk. Minden funkció rövid magyarázatot tartalmaz, majd az eredeti kódrészletet (pontosan úgy, ahogy van).
 
-### Funkció 1 – MSG fájl betöltése
+### 1. funkció – MSG fájl betöltése
 
 Először töltsd be az Outlook üzenetet egy `MapiMessage` objektumba.
 
@@ -97,9 +97,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 MapiMessage message = MapiMessage.fromFile(dataDir + "MSG file with RTF Formatting.msg");
 ```
 
-### Funkció 2 – Mellékletek lekérése
+### 2. funkció – Mellékletek lekérése
 
-Ezután szerezd meg a teljes mellékletgyűjteményt az üzenetből.
+Ezután szerezd meg a teljes melléklet‑gyűjteményt az üzenetből.
 
 ```java
 import com.aspose.email.MapiAttachmentCollection;
@@ -107,9 +107,9 @@ import com.aspose.email.MapiAttachmentCollection;
 MapiAttachmentCollection attachments = message.getAttachments();
 ```
 
-### Funkció 3 – Beágyazott mellékletek azonosítása és mentése
+### 3. funkció – Inline mellékletek azonosítása és mentése
 
-Iterálj végig minden mellékleten, ellenőrizd, hogy beágyazott‑e, majd írd le a lemezre.
+Iterálj végig minden mellékleten, ellenőrizd, hogy inline‑e, majd írd le a lemezre.
 
 ```java
 for (Object untypedAttachment : attachments) {
@@ -124,9 +124,9 @@ for (Object untypedAttachment : attachments) {
 }
 ```
 
-#### Segédfüggvény: Beágyazott‑e a melléklet?
+#### Segédfüggvény: Ellenőrizze, hogy a melléklet beágyazott-e
 
-Ez a segítő metódus vizsgálja a MAPI tulajdonságokat, hogy eldöntse, beágyazott‑e a melléklet.
+A segítő metódus a MAPI tulajdonságokat vizsgálja, hogy eldöntse, beágyazott‑e a melléklet.
 
 ```java
 import com.aspose.email.MapiAttachment;
@@ -149,7 +149,7 @@ static boolean IsAttachmentInline(MapiAttachment attachment) {
 }
 ```
 
-#### Segédfüggvény: Beágyazott melléklet mentése
+#### Segédfüggvény: A beágyazott melléklet mentése
 
 A beágyazott melléklet bináris tartalmát egy helyi fájlba írja.
 
@@ -172,51 +172,54 @@ static void SaveAttachment(MapiAttachment attachment, String fileName) throws IO
 
 ## Gyakorlati alkalmazások
 
-A beágyazott mellékletek kinyerése számos valós helyzetben hasznos:
+Az inline mellékletek kinyerése számos valós helyzetben hasznos:
 
-* **Automatizált e‑mail feldolgozás** – Képek kinyerése hírlevelekből elemzés céljából.  
+* **Automatizált e‑mail feldolgozás** – Képek kinyerése hírlevelekből elemzésekhez.  
 * **Adatmigráció** – Beágyazott tartalom áthelyezése Exchange‑ről más platformra.  
 * **Archiválási megoldások** – Az archivált üzenetek vizuális hűségének megőrzése az inline elemek külön tárolásával.
 
-## Teljesítmény‑szempontok
+## Teljesítménybeli megfontolások
 
-Százezrek vagy akár milliók MSG fájljainak feldolgozásakor tartsd szem előtt a következőket:
+Ha több száz vagy ezer MSG fájlt kezelsz, tartsd szem előtt ezeket a tippeket:
 
-* **Kötegelt feldolgozás:** Csoportosítsd a fájlokat kezelhető kötegekre, hogy elkerüld a memória‑csúcsokat.  
-* **Erőforrások gyors felszabadítása:** Zárd le a stream‑eket (`try‑with‑resources`) és engedd, hogy a garbage collector felszabadítsa az objektumokat.  
+* **Kötegelt feldolgozás:** Csoportosítsd a fájlokat kezelhető kötegekre, hogy elkerüld a memória‑spike‑eket.  
+* **Erőforrások azonnali felszabadítása:** Zárd le a stream‑eket (`try‑with‑resources`) és engedd, hogy a garbage collector felszabadítsa az objektumokat.  
 * **Párhuzamos végrehajtás:** Használj fix méretű `ExecutorService`‑t több kinyerési feladat egyidejű futtatásához, de figyeld a CPU‑használatot.
 
 ## Gyakori problémák és hibaelhárítás
 
 | Tünet | Valószínű ok | Megoldás |
 |-------|--------------|----------|
-| `NullPointerException` a `attachment.getObjectData()`‑nál | Az üzenet nem tartalmaz melléklet‑metaadatot (pl. sérült MSG) | Ellenőrizd a MSG fájlt a feldolgozás előtt, vagy kezeld a kivételt és logold a fájl nevét. |
-| A mentett fájl üres vagy sérült | Hibás tulajdonságnév (`"Package"` kis‑/nagybetű érzékenysége) | Ellenőrizd, hogy a tulajdonságnév pontosan megegyezik a MSG tényleges tulajdonságával; az Aspose.Email dokumentációja tartalmazza a pontos karakterláncot. |
-| Teljesítmény romlik nagy fájloknál | Nem zárt stream‑ek, memória‑szivárgás | Használj `try‑with‑resources`‑t (ahogy a példában látható) és szükség esetén növeld a JVM heap méretét. |
+| `NullPointerException` on `attachment.getObjectData()` | Az üzenet nem tartalmaz melléklet‑metaadatot (pl. sérült MSG) | Ellenőrizd a MSG fájlt a feldolgozás előtt, vagy kezeld a kivételt és logold a fájl nevét. |
+| A mentett fájl üres vagy sérült | Hibás tulajdonságnév (`"Package"` kis‑/nagybetű érzékenység) | Győződj meg róla, hogy a tulajdonságnév megegyezik a MSG tényleges tulajdonságával; az Aspose.Email dokumentációja tartalmazza a pontos karakterláncot. |
+| Teljesítmény romlik nagy fájlok esetén | Nem zárt stream‑ek, ami memória‑szivárgáshoz vezet | Használj `try‑with‑resources`‑t (ahogy a példában látható), és szükség esetén növeld a JVM heap‑méretét. |
 
 ## Gyakran feltett kérdések
 
 **Q: Mi a minimális Aspose.Email verzió, ami szükséges?**  
 A: A bemutató a 25.4‑es verziót használja, de bármely 24.x+ kiadás, amely támogatja a JDK 16‑ot, megfelelő.
 
-**Q: Kinyerhetek beágyazott mellékleteket titkosított MSG fájlokból?**  
-A: Igen, ha a `MapiMessage` betöltésekor megadod a helyes feloldási jelszót.
+**Q: Kinyerhetek inline mellékleteket titkosított MSG fájlokból?**  
+A: Igen, amennyiben a `MapiMessage` betöltésekor megadod a helyes dekódoló jelszót.
 
-**Q: Hogyan különböztetem meg a beágyazott képeket a szokásos mellékletektől?**  
-A: Használd az `IsAttachmentInline` segédfüggvényt; ez ellenőrzi a MAPI `ObjInfo` zászlót, amely beágyazottként jelöli a mellékletet.
+**Q: Hogyan különböztetem meg az inline képeket a szokásos fájl‑mellékletektől?**  
+A: Használd az `IsAttachmentInline` segédfüggvényt; ez a MAPI `ObjInfo` flag‑et ellenőrzi, amely jelzi, hogy a melléklet inline‑ként van megjelölve.
 
-**Q: Megőrizhetem az inline melléklet eredeti fájlnevét?**  
-A: A minta egy UUID‑t generál az egyediség érdekében, de a `attachment.getLongFileName()` tulajdonságot is kiolvashatod, és azt használhatod a `SaveAttachment` hívásnál.
+**Q: Van mód a beágyazott melléklet eredeti fájlnevének megőrzésére?**  
+A: A minta egy UUID‑t generál az egyediség érdekében, de felhasználhatod az `attachment.getLongFileName()` tulajdonságot, és azt adhatod át a `SaveAttachment` hívásnak.
 
-**Q: Működik ez a megoldás Linux/macOS rendszereken is, vagy csak Windowson?**  
-A: Teljesen működik – az Aspose.Email platform‑független, amíg a JDK telepítve van.
+**Q: Működik ez a megoldás Linux/macOS rendszereken is, vagy csak Windows‑on?**  
+A: Teljesen – az Aspose.Email platform‑független, amíg a JDK telepítve van.
+
+**Q: Hol találok további információkat a Maven Aspose Email függőségről?**  
+A: Lásd az alábbi hivatalos Aspose dokumentációt.
 
 ## Források
 - **Dokumentáció:** [Aspose Email Documentation](https://docs.aspose.com/email/java/)
 
 ---
 
-**Utolsó frissítés:** 2025-12-17  
+**Utolsó frissítés:** 2026-03-15  
 **Tesztelve:** Aspose.Email for Java 25.4 (JDK 16)  
 **Szerző:** Aspose  
 

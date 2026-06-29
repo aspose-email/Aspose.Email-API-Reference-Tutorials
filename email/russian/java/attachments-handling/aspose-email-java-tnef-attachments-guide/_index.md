@@ -1,47 +1,53 @@
 ---
-date: '2025-12-13'
-description: Узнайте, как конвертировать файлы msg и eml с помощью Aspose.Email для
-  Java, добавить новое вложение, сохранить вложение письма и обработать данные TNEF.
+date: '2026-03-15'
+description: Узнайте, как конвертировать msg в eml на Java с помощью Aspose.Email,
+  добавить вложение в eml, пакетно конвертировать msg и работать с данными TNEF.
 keywords:
 - Aspose.Email Java
 - TNEF Handling
 - Email Attachments
-title: Конвертация msg и eml с Aspose.Email Java – Руководство по вложениям TNEF
+title: Конвертация msg в eml на Java – Руководство по вложениям TNEF Aspose.Email
 url: /ru/java/attachments-handling/aspose-email-java-tnef-attachments-guide/
 weight: 1
 ---
+
+ markdown formatting: keep headings (#, ##, ###). Keep bold formatting.
+
+Also ensure not to translate URLs inside links.
+
+Now craft final answer.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Освоение Aspose.Email Java: работа с TNEF и вложениями электронной почты  
+# Освоение **convert msg to eml java** с Aspose.Email Java: работа с TNEF и вложениями электронной почты  
 
-В современных приложениях, ориентированных на электронную почту, часто требуется **convert msg eml** файлы, добавить новое вложение к существующему сообщению и сохранить специальные форматы, такие как TNEF. Независимо от того, создаёте ли вы сервис архивирования, инструмент миграции или клиентский просмотрщик почты, Aspose.Email for Java предоставляет чистый программный способ сделать это. В этом руководстве вы увидите, как **convert msg to eml**, добавить новое вложение, сохранить вложение письма и работать с данными TNEF, используя библиотеку Aspose.Email Java.
+В современных приложениях, ориентированных на электронную почту, часто требуется **convert msg to eml java**, добавить новое вложение к существующему сообщению и сохранить специальные форматы, такие как TNEF. Независимо от того, создаёте ли вы сервис архивации, инструмент миграции или клиентский просмотрщик почты, Aspose.Email for Java предоставляет чистый программный способ выполнить эту задачу. В этом руководстве вы увидите, как именно **convert msg to eml java**, **add attachment to eml**, сохранить вложение письма и работать с данными TNEF с помощью библиотеки Aspose.Email Java.
 
-## Быстрые ответы
-- **How do I convert MSG to EML?** Use `MapiMessage` with `MailConversionOptions` and set `convertAsTnef` to `true`.  
+## Quick Answers
+- **How do I convert MSG to EML in Java?** Use `MapiMessage` with `MailConversionOptions` and set `convertAsTnef` to `true`.  
 - **Can I add an attachment to a TNEF‑enabled EML?** Yes – load the EML, call `getAttachments().addItem(...)`, then save.  
-- **What version of Aspose.Email is required?** The example uses version 25.4 (JDK 16).  
+- **What Maven dependency is needed?** Include the **maven aspose email dependency** shown below.  
 - **Do I need a license for production?** Yes – a trial works for evaluation, but a full license removes limitations.  
 - **Is there a way to detect TNEF in an existing message?** Call `mail.getOriginalIsTnef()` after loading the EML.
 
-## Что такое “convert msg eml”?
-Преобразование файла Microsoft Outlook MSG в стандартный формат EML позволяет читать сообщение любым клиентом почты, совместимым с RFC‑822. Конверсия также даёт возможность сохранять или изменять данные, закодированные в TNEF, в процессе.
+## Что такое “convert msg to eml java”?
+Преобразование файла Microsoft Outlook MSG в стандартный формат EML позволяет открыть сообщение в любом почтовом клиенте, совместимом с RFC‑822. Конверсия также даёт возможность сохранить или изменить данные, закодированные в TNEF, во время процесса.
 
 ## Почему стоит использовать Aspose.Email Java для этой задачи?
-- **Full format support** – MSG, EML, MHTML, and more.  
-- **Built‑in TNEF handling** – no need for third‑party parsers.  
-- **Simple API** – one‑line calls for loading, converting, and saving.  
-- **Robust licensing** – trial for testing, full license for production.
+- **Full format support** – MSG, EML, MHTML и другие.  
+- **Built‑in TNEF handling** – нет необходимости в сторонних парсерах.  
+- **Simple API** – однострочные вызовы для загрузки, конвертации и сохранения.  
+- **Robust licensing** – trial для тестирования, полная лицензия для продакшна.
 
-## Предварительные требования
-- **Aspose.Email for Java** (v25.4, JDK 16) – see Maven dependency below.  
-- **Maven** or another build tool that can resolve the Aspose package.  
-- Basic knowledge of Java I/O and exception handling.  
+## Prerequisites
+- **Aspose.Email for Java** (v25.4, JDK 16) – см. зависимость Maven ниже.  
+- **Maven** или другой инструмент сборки, способный разрешить пакет Aspose.  
+- Базовые знания Java I/O и обработки исключений.  
 
-## Настройка Aspose.Email for Java
+## Setting Up Aspose.Email for Java
 Add the library to your Maven `pom.xml`:
 
 ```xml
@@ -53,7 +59,7 @@ Add the library to your Maven `pom.xml`:
 </dependency>
 ```
 
-### Приобретение лицензии
+### License Acquisition
 Aspose.Email offers a free trial, but a licensed version is required for unrestricted use.
 
 - **Free Trial:** Download a temporary license [here](https://releases.aspose.com/email/java/).  
@@ -66,93 +72,93 @@ License license = new License();
 license.setLicense("path/to/your/license/file.lic");
 ```
 
-## Руководство по реализации
+## Implementation Guide
 
-### Добавление нового вложения к основному сообщению, содержащему TNEF
-**How to add attachment:** Load the EML, add the file, then save.
+### Adding New Attachment to a Main Message Containing TNEF
+**How to add attachment to eml:** Load the EML, add the file, then save.
 
-#### Шаг 1: Загрузить существующее сообщение электронной почты
+#### Step 1: Load the Existing Email Message
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MailMessage eml = MailMessage.load(dataDir + "MainMessage.eml");
 ```
 
-#### Шаг 2: Добавить новое вложение
+#### Step 2: Add the New Attachment
 ```java
 try (FileInputStream fi = new FileInputStream(dataDir + "barcode.png")) {
     eml.getAttachments().addItem(new Attachment(fi, "barcode.png", "image/png"));
 }
 ```
 
-#### Шаг 3: Сохранить изменённое сообщение электронной почты
+#### Step 3: Save the Modified Email Message
 ```java
 eml.save(dataDir + "test_out.eml");
 ```
 *Pro tip:* Use try‑with‑resources to ensure streams are closed and avoid `FileNotFoundException`.
 
-### Создание TNEF‑enabled EML из MSG
-**How to convert msg to eml:** Set `convertAsTnef` to `true`.
+### Creating TNEF‑Enabled EML from MSG
+**How to convert msg to eml java:** Set `convertAsTnef` to `true`.
 
-#### Шаг 1: Загрузить файл MSG
+#### Step 1: Load the MSG File
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "Message.msg");
 ```
 
-#### Шаг 2: Установить параметры конверсии
+#### Step 2: Set Conversion Options
 ```java
 MailConversionOptions options = new MailConversionOptions();
 options.setConvertAsTnef(true);
 ```
 
-#### Шаг 3: Конвертировать и сохранить
+#### Step 3: Convert and Save
 ```java
 MailMessage mail = msg.toMailMessage(options);
 mail.save(dataDir + "converted_message.eml");
 ```
 
-### Сохранение вложений TNEF при загрузке файлов EML
+### Preserve TNEF Attachments When Loading EML Files
 **How to save email attachment while preserving TNEF:** Use `MsgLoadOptions`.
 
-#### Шаг 1: Установить параметры загрузки
+#### Step 1: Set Load Options
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MsgLoadOptions msgLoadOptions = new MsgLoadOptions();
 msgLoadOptions.setPreserveTnefAttachments(true);
 ```
 
-#### Шаг 2: Загрузить файл EML с параметрами
+#### Step 2: Load EML File with Options
 ```java
 MailMessage eml = MailMessage.load(dataDir + "test.eml", msgLoadOptions);
 ```
 
-### Определение, является ли сообщение TNEF
+### Detecting if a Message Is TNEF
 **How to check TNEF presence:** Call `getOriginalIsTnef()`.
 
-#### Шаг 1: Загрузить файл EML
+#### Step 1: Load the EML File
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MailMessage mail = MailMessage.load(dataDir + "test.eml");
 ```
 
-#### Шаг 2: Обнаружить наличие TNEF
+#### Step 2: Detect TNEF Presence
 ```java
 boolean isTnef = mail.getOriginalIsTnef();
 system.out.println("Is TNEF: " + isTnef);
 ```
 
-## Практические применения
-1. **Email Archiving:** Preserve every attachment—including TNEF‑encoded ones—for compliance audits.  
-2. **Corporate Migration:** Convert legacy MSG files to EML so they can be imported into modern mail servers.  
-3. **Customer Support:** Automatically detect TNEF data when users forward messages between Outlook and web‑mail clients.
+## Common Use Cases & Batch Scenarios
+- **Batch convert msg:** Loop through a folder of `.msg` files, apply the conversion steps above, and store each result as `.eml`. This is ideal for large‑scale migrations.  
+- **Add attachment to eml in bulk:** Combine the “add attachment” code with a file‑system iterator to enrich many messages at once.  
+- **Automated archiving:** Store both the original MSG and the TNEF‑preserving EML for compliance audits.
 
-## Соображения по производительности
+## Performance Considerations
 - **Resource Management:** Wrap file streams in try‑with‑resources to free handles promptly.  
 - **Large Attachments:** Process big files in chunks or stream them directly to avoid high memory usage.  
 - **Monitoring:** Use Java profiling tools to watch heap consumption when handling many attachments.
 
-## Заключение
-By following the steps above you can **convert msg eml**, add new attachment, save email attachment, and reliably work with TNEF data using Aspose.Email for Java. The library abstracts the low‑level MIME handling, letting you focus on business logic. For deeper exploration, check the official [Aspose documentation](https://reference.aspose.com/email/java/) or experiment with other conversion options.
+## Conclusion
+By following the steps above you can **convert msg to eml java**, add new attachment, save email attachment, and reliably work with TNEF data using Aspose.Email for Java. The library abstracts the low‑level MIME handling, letting you focus on business logic. For deeper exploration, check the official [Aspose documentation](https://reference.aspose.com/email/java/) or experiment with other conversion options.
 
 ## FAQ Section
 **Q1: What is a TNEF file?**  
@@ -165,7 +171,7 @@ A2: Yes, you can start with a free trial. However, the trial version imposes cer
 A3: Aspose.Email supports conversion among most popular formats—including EML, MSG, and MHTML—but verify specific format support in the [documentation](https://reference.aspose.com/email/java/).
 
 **Q4: How do I troubleshoot file‑not‑found errors with Aspose.Email?**  
-A4: Double‑check that the file paths you pass to the API are correct, that the files exist, and that the executing process has read/write permissions for those directories.
+A5: Double‑check that the file paths you pass to the API are correct, that the files exist, and that the executing process has read/write permissions for those directories.
 
 **Q5: What is the best way to handle large attachments with Aspose.Email?**  
 A5: Process attachments in smaller streams or chunks, and always close streams promptly. This reduces memory pressure and prevents `OutOfMemoryError`.
@@ -178,14 +184,14 @@ A: No. By default, TNEF data is preserved. You can control this behavior with `M
 **Q: Can I programmatically list all attachments in a loaded message?**  
 A: Yes—use `mail.getAttachments()` which returns a collection you can iterate over.
 
-**Q: Is there a way to convert a batch of MSG files to EML in one run?**  
+**Q: Is there a way to batch convert msg files to eml in one run?**  
 A: Absolutely. Loop through the files, apply the conversion steps shown above, and save each result.
 
 **Related Resources:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) | [Aspose Email Java Releases](https://releases.aspose.com/email/java/) | [Buy Aspose.Email for Java](https://purchase.aspose.com/buy) | Download a temporary license [here](https://releases.aspose.com/email/java/).
 
 ---
 
-**Last Updated:** 2025-12-13  
+**Last Updated:** 2026-03-15  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
 **Author:** Aspose  
 
