@@ -1,14 +1,12 @@
 ---
-date: '2025-12-18'
-description: Aspose Email Java के साथ मीटिंग शेड्यूल को कैसे प्रबंधित करें सीखें।
-  प्रतिभागियों की स्थिति सेट करें और कैलेंडर को आईसीएस फ़ाइलों में निर्यात करें, कई
-  इवेंट्स को सहजता से एक आईसीएस फ़ाइल में लिखें।
+date: '2026-03-18'
+description: Aspose.Email for Java के साथ ics फ़ाइलें निर्यात करना, उपस्थितियों की
+  स्थिति सेट करना, और कई कैलेंडर इवेंट्स को कुशलतापूर्वक लिखना सीखें।
 keywords:
 - Aspose.Email Java
 - set participant status in Java
 - write ICS files with Java
-title: 'Aspose.Email Java में महारत - प्रतिभागी स्थिति सेट करें और आईसीएस फ़ाइलें कुशलता
-  से लिखें'
+title: ICS निर्यात कैसे करें – स्थिति सेट करें – Aspose.Email जावा
 url: /hi/java/calendar-appointments/aspose-email-java-set-participant-status-write-ics/
 weight: 1
 ---
@@ -18,38 +16,54 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email Java में महारत: प्रतिभागी स्थिति सेट करना और प्रभावी ढंग से ICS फ़ाइलें लिखना
+# How to Export ICS – Set Status – Aspose.Email Java
 
-## परिचय
+मीटिंग शेड्यूल को कुशलता से प्रबंधित करना कई पेशेवरों के लिए एक चुनौती है, विशेष रूप से जब विभिन्न टाइम ज़ोन में कई प्रतिभागियों के साथ काम करना हो। इस ट्यूटोरियल में आप **ICS फ़ाइलें कैसे निर्यात करें** Aspose.Email for Java का उपयोग करके, प्रतिभागी (attendee) की स्थिति कैसे सेट करें, और एक ही फ़ाइल में कई कैलेंडर इवेंट्स कैसे लिखें, यह सब स्पष्ट, चरण‑बद्ध कोड के साथ सीखेंगे जिसे आप अपने प्रोजेक्ट में कॉपी कर सकते हैं।
 
-बैठक शेड्यूल को कुशलता से प्रबंधित करना कई पेशेवरों के सामने एक चुनौती है, विशेष रूप से जब विभिन्न टाइम ज़ोन में कई प्रतिभागियों के साथ काम करना हो। **aspose email java** के साथ आप उपस्थितकर्ताओं की स्थिति प्रोग्रामेटिक रूप से सेट कर सकते हैं और कैलेंडर डेटा को ICS फ़ाइल में निर्यात कर सकते हैं। यह ट्यूटोरियल आपको सटीक चरणों के माध्यम से ले जाता है, ताकि आप इन क्षमताओं को अपने जावा एप्लिकेशन में जल्दी से एकीकृत कर सकें।
+## Quick Answers
+- **Can I set attendee status with Aspose.Email for Java?** Yes – you can assign Accepted, Declined, or Tentative values.  
+  **क्या मैं Aspose.Email for Java के साथ उपस्थितकर्ता की स्थिति सेट कर सकता हूँ?** हाँ – आप Accepted, Declined, या Tentative मान असाइन कर सकते हैं।  
+- **How many events can I write to a single ICS file?** The library supports any number; the example creates ten events.  
+  **एक ही ICS फ़ाइल में मैं कितने इवेंट लिख सकता हूँ?** लाइब्रेरी किसी भी संख्या को सपोर्ट करती है; उदाहरण में दस इवेंट बनाते हैं।  
+- **Do I need a license for development?** A free temporary license works for evaluation; a purchased license is required for production.  
+  **क्या विकास के लिए लाइसेंस चाहिए?** मूल्यांकन के लिए एक मुफ्त टेम्पररी लाइसेंस काम करता है; प्रोडक्शन के लिए खरीदा गया लाइसेंस आवश्यक है।  
+- **Which Java version is recommended?** JDK 16 (or later) matches the provided classifier.  
+  **कौन सा Java संस्करण अनुशंसित है?** JDK 16 (या बाद का) प्रदान किए गए क्लासिफ़ायर से मेल खाता है।  
+- **Is time‑zone handling automatic?** You can specify the time zone when creating dates; the library respects it.  
+  **क्या टाइम‑ज़ोन हैंडलिंग ऑटोमैटिक है?** आप डेट बनाते समय टाइम ज़ोन निर्दिष्ट कर सकते हैं; लाइब्रेरी उसका सम्मान करती है।
 
-## त्वरित उत्तर
-- **क्या मैं Aspose.Email for Java के साथ उपस्थितकर्ता की स्थिति सेट कर सकता हूँ?** हाँ, आप Accepted, Declined, या Tentative स्थितियों को असाइन कर सकते हैं।  
-- **एक ICS फ़ाइल में मैं कितने इवेंट लिख सकता हूँ?** लाइब्रेरी किसी भी संख्या में इवेंट लिखने का समर्थन करती है; उदाहरण में दस इवेंट बनाते हैं।  
-- **क्या विकास के लिए लाइसेंस की आवश्यकता है?** मूल्यांकन के लिए एक मुफ्त अस्थायी लाइसेंस काम करता है; उत्पादन के लिए खरीदा हुआ लाइसेंस आवश्यक है।  
-- **कौन सा जावा संस्करण अनुशंसित है?** JDK 16 (या बाद का) इस ट्यूटोरियल में उपयोग किए गए क्लासिफायर से मेल खाता है।  
-- **क्या टाइम‑ज़ोन हैंडलिंग स्वचालित है?** आप तिथियों को बनाते समय टाइम ज़ोन निर्दिष्ट कर सकते हैं; लाइब्रेरी इसका सम्मान करती है।
+## What is “how to export ics” and why does it matter?
+ICS (iCalendar) फ़ॉर्मेट Outlook, Google Calendar, Apple Calendar और कई अन्य क्लाइंट्स के बीच कैलेंडर जानकारी साझा करने का डि‑फैक्ट मानक है। ICS में निर्यात करने से आप मीटिंग इनवाइट्स वितरित कर सकते हैं, बड़े पैमाने पर इवेंट्स बना सकते हैं, या लेगेसी सिस्टम्स को इंटीग्रेट कर सकते हैं बिना प्रतिभागी की स्थिति या कस्टम प्रॉपर्टीज़ खोए।
 
-## पूर्वापेक्षाएँ
+## Why use Aspose.Email for Java to export ics?
+- **Full control** over attendee responses (Accepted/Declined/Tentative).  
+  **पूर्ण नियंत्रण** उपस्थितकर्ता प्रतिक्रियाओं (Accepted/Declined/Tentative) पर।  
+- **No external dependencies** – the library handles all iCalendar specifications internally.  
+  **कोई बाहरी निर्भरताएँ नहीं** – लाइब्रेरी सभी iCalendar स्पेसिफ़िकेशन internally संभालती है।  
+- **Bulk writing** – you can generate dozens or hundreds of events with a single writer, keeping file handles efficient.  
+  **बुल्क राइटिंग** – आप एक ही राइटर से दर्जनों या सैकड़ों इवेंट जनरेट कर सकते हैं, जिससे फ़ाइल हैंडल्स कुशल रहते हैं।  
+- **Cross‑platform compatibility** – generated ICS files work on any calendar client that follows the RFC 5545 standard.  
+  **क्रॉस‑प्लेटफ़ॉर्म संगतता** – जनरेट की गई ICS फ़ाइलें किसी भी कैलेंडर क्लाइंट पर काम करती हैं जो RFC 5545 मानक का पालन करता है।
 
-**aspose email java** के साथ शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित सेटअप है:
+## Prerequisites
 
-### आवश्यक लाइब्रेरी और संस्करण
-- **Aspose.Email for Java** संस्करण 25.4 या बाद का।  
-- Maven निर्भरता प्रबंधन के लिए (या सीधे [Aspose](https://releases.aspose.com/email/java/) से डाउनलोड करें)।
+शुरू करने से पहले सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
-### पर्यावरण सेटअप आवश्यकताएँ
-- आपके मशीन पर स्थापित Java Development Kit (JDK), अनुशंसा के अनुसार JDK 16, ताकि इस ट्यूटोरियल में उपयोग किए गए Aspose.Email क्लासिफायर से मेल खाए।  
-- IntelliJ IDEA या Eclipse जैसे Integrated Development Environment (IDE) जावा कोड लिखने और चलाने के लिए।
+### Required Libraries and Versions
+- **Aspose.Email for Java** version 25.4 or later.  
+- Maven for dependency management (or download directly from [Aspose](https://releases.aspose.com/email/java/)).
 
-### ज्ञान पूर्वापेक्षाएँ
-- जावा प्रोग्रामिंग की बुनियादी समझ।  
-- `Calendar` और `Date` का उपयोग करके जावा में तिथियों और समय को संभालने की परिचितता।
+### Environment Setup Requirements
+- आपके मशीन पर Java Development Kit (JDK) स्थापित होना चाहिए, अनुशंसित रूप से JDK 16 ताकि इस ट्यूटोरियल में उपयोग किए गए Aspose.Email क्लासिफ़ायर से मेल खाए।  
+- IntelliJ IDEA या Eclipse जैसे Integrated Development Environment (IDE)।
 
-## Aspose.Email for Java सेट अप करना
+### Knowledge Prerequisites
+- बेसिक Java प्रोग्रामिंग स्किल्स।  
+- `java.util.Calendar` और `java.util.Date` के साथ डेट‑टाइम हैंडलिंग की परिचितता।
 
-शुरू करने के लिए, अपने प्रोजेक्ट में Aspose.Email लाइब्रेरी शामिल करें। यदि आप Maven उपयोग कर रहे हैं, तो अपने `pom.xml` फ़ाइल में निम्नलिखित निर्भरता जोड़ें:
+## Setting Up Aspose.Email for Java
+
+Maven प्रोजेक्ट में Aspose.Email लाइब्रेरी जोड़ें:
 
 ```xml
 <dependency>
@@ -60,29 +74,28 @@ weight: 1
 </dependency>
 ```
 
-### लाइसेंस प्राप्त करने के चरण
+### License Acquisition Steps
 
-1. **Free Trial**: बिना प्रतिबंधों के Aspose.Email की क्षमताओं का परीक्षण करने के लिए एक अस्थायी लाइसेंस डाउनलोड करें। विवरण के लिए [Aspose Temporary License](https://purchase.aspose.com/temporary-license/) देखें।  
-2. **Purchase**: दीर्घकालिक उपयोग के लिए, [Aspose Purchase](https://purchase.aspose.com/buy) पर सब्सक्रिप्शन खरीदें।
+1. **Free Trial** – Download a temporary license to test Aspose.Email without restrictions. Visit [Aspose Temporary License](https://purchase.aspose.com/temporary-license/) for details.  
+2. **Purchase** – For long‑term use, buy a subscription at [Aspose Purchase](https://purchase.aspose.com/buy).
 
-एक बार जब आपके पास लाइसेंस फ़ाइल हो, तो इसे निम्नानुसार इनिशियलाइज़ और सेट करें:
+कोड में लाइसेंस इनिशियलाइज़ करें:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-सेटअप पूरा होने के बाद, हम फीचर को लागू करने की ओर बढ़ सकते हैं।
+अब आप इस गाइड की दो मुख्य सुविधाओं में डुबकी लगाने के लिए तैयार हैं।
 
-## फीचर 1: अपॉइंटमेंट उपस्थितकर्ताओं की प्रतिभागी स्थिति सेट करना
+## How to export ics: Set Participant Status of Appointment Attendees
 
-### कैलेंडर अपॉइंटमेंट में प्रतिभागी स्थिति क्या है?
+### What is participant status in a calendar appointment?
+Participant status दर्शाता है कि एक उपस्थितकर्ता ने मीटिंग इनवाइट पर कैसे प्रतिक्रिया दी है—Accepted, Declined, या Tentative। Aspose.Email for Java का उपयोग करके आप इन मानों को प्रोग्रामेटिकली सेट कर सकते हैं, जो ऑटोमेटेड शेड्यूलिंग सिस्टम्स और **java calendar appointment** मैनेजमेंट के लिए आवश्यक है।
 
-प्रतिभागी स्थिति यह दर्शाती है कि एक उपस्थितकर्ता ने मीटिंग निमंत्रण का कैसे उत्तर दिया है—Accepted, Declined, या Tentative। **aspose email java** का उपयोग करके आप इन मानों को प्रोग्रामेटिक रूप से सेट कर सकते हैं, जो स्वचालित शेड्यूलिंग सिस्टम और **java calendar appointment** प्रबंधन के लिए आवश्यक है।
+### Step‑by‑step implementation
 
-### चरण‑दर‑चरण कार्यान्वयन
-
-#### 1️⃣ अपॉइंटमेंट तिथियों को बनाएं और कॉन्फ़िगर करें
+#### 1️⃣ Create and configure the appointment dates
 
 ```java
 String location = "Room 5";
@@ -97,7 +110,7 @@ calendar.set(2012, Calendar.OCTOBER, 13, 13, 11, 12);
 Date endDate = calendar.getTime();
 ```
 
-#### 2️⃣ आयोजक और उपस्थितकर्ता सूची को परिभाषित करें
+#### 2️⃣ Define the organizer and the attendee list
 
 ```java
 MailAddress organizer = new MailAddress("aaa@amail.com", "Organizer");
@@ -106,7 +119,7 @@ MailAddress organizer = new MailAddress("aaa@amail.com", "Organizer");
 MailAddressCollection attendees = new MailAddressCollection();
 ```
 
-#### 3️⃣ प्रत्येक उपस्थितकर्ता को भागीदारी स्थिति असाइन करें
+#### 3️⃣ Assign participation status to each attendee
 
 ```java
 MailAddress attendee1 = new MailAddress("bbb@bmail.com", "First attendee");
@@ -120,23 +133,23 @@ attendees.addMailAddress(attendee1);
 attendees.addMailAddress(attendee2);
 ```
 
-#### 4️⃣ `Appointment` ऑब्जेक्ट बनाएं
+#### 4️⃣ Create the `Appointment` object
 
 ```java
 Appointment target = new Appointment(location, startDate, endDate, organizer, attendees);
 ```
 
-**Pro tip:** हमेशा यह सुनिश्चित करें कि ई‑मेल पते सही फ़ॉर्मेट में हों; अन्यथा लाइब्रेरी पार्सिंग त्रुटि फेंक सकती है।
+**Pro tip:** Always verify that email addresses are correctly formatted; otherwise, the library may throw parsing errors.  
+**प्रो टिप:** हमेशा सुनिश्चित करें कि ई‑मेल एड्रेस सही फॉर्मेट में हैं; अन्यथा लाइब्रेरी पार्सिंग एरर फेंक सकती है।
 
-## फीचर 2: कई इवेंट्स को ICS फ़ाइल में लिखना
+## How to export ics: Write Multiple Events to an ICS File
 
-### जावा के साथ कैलेंडर को ICS में निर्यात क्यों करें?
+### Why export calendar to ics with Java?
+ICS फ़ॉर्मेट सार्वभौमिक रूप से समझा जाता है, जिससे आप मीटिंग जानकारी Outlook, Google Calendar, Apple Calendar और कई अन्य क्लाइंट्स के साथ साझा कर सकते हैं। Aspose.Email के साथ **write ics file java** करने से आप प्रतिभागी की स्थिति, कस्टम प्रॉपर्टीज़ और रिकरेंस रूल्स को अतिरिक्त कन्वर्ज़न स्टेप्स के बिना संरक्षित रख सकते हैं।
 
-ICS फ़ॉर्मेट Outlook, Google Calendar, Apple Calendar और कई अन्य क्लाइंट्स द्वारा सार्वभौमिक रूप से समर्थित है। Aspose.Email के साथ **write ics file java** का उपयोग करके आप मीटिंग जानकारी को प्लेटफ़ॉर्म के बीच साझा कर सकते हैं, बिना प्रतिभागी स्थिति या कस्टम प्रॉपर्टीज़ खोए।
+### Step‑by‑step implementation
 
-### चरण‑दर‑चरण कार्यान्वयन
-
-#### 1️⃣ सहेजने के विकल्प कॉन्फ़िगर करें और एक राइटर बनाएं
+#### 1️⃣ Configure save options and create a writer
 
 ```java
 IcsSaveOptions saveOptions = new IcsSaveOptions();
@@ -145,7 +158,7 @@ saveOptions.setAction(AppointmentAction.Create);
 CalendarWriter writer = new CalendarWriter("YOUR_OUTPUT_DIRECTORY/WriteMultipleEventsToICS_out.ics", saveOptions);
 ```
 
-#### 2️⃣ प्रत्येक इवेंट के लिए समय सीमा निर्धारित करें
+#### 2️⃣ Define the time frame for each event
 
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
@@ -155,14 +168,14 @@ calendar.set(2018, Calendar.JUNE, 19, 20, 0, 0); // End time
 Date endDate = calendar.getTime();
 ```
 
-#### 3️⃣ उपस्थितकर्ताओं का संग्रह तैयार करें
+#### 3️⃣ Prepare the attendees collection
 
 ```java
 MailAddressCollection attendees = new MailAddressCollection();
 attendees.addItem(new MailAddress("recepientEmail@gmail.com"));
 ```
 
-#### 4️⃣ कई अपॉइंटमेंट्स जेनरेट करें और लिखें
+#### 4️⃣ Generate and write multiple appointments
 
 ```java
 try {
@@ -179,48 +192,49 @@ try {
 }
 ```
 
-**Common pitfall:** `writer.dispose()` को कॉल करना न भूलें, अन्यथा फ़ाइल हैंडल खुले रहेंगे और बाद के रन में फ़ाइल‑एक्सेस त्रुटियाँ उत्पन्न हो सकती हैं।
+**Common pitfall:** Forgetting to call `writer.dispose()` can leave file handles open, causing access errors on subsequent runs.  
+**सामान्य गलती:** `writer.dispose()` को कॉल करना न भूलें, अन्यथा फ़ाइल हैंडल खुले रहेंगे और बाद के रन में एक्सेस एरर हो सकता है।
 
-## व्यावहारिक अनुप्रयोग
+## Practical Applications
 
-Aspose.Email for Java में उपस्थितकर्ता स्थितियों को सेट करने और ICS फ़ाइलें लिखने से परे कई उपयोग केस हैं। यहाँ कुछ परिदृश्य हैं जहाँ **java ics file generation** चमकता है:
+Aspose.Email for Java कई वास्तविक‑दुनिया परिदृश्यों में चमकता है:
 
-1. **Automated Meeting Scheduling** – आंतरिक टूल्स या CRM सिस्टम के लिए ऑन‑द‑फ़्लाई कैलेंडर इनवाइट्स जेनरेट करें।  
-2. **Cross‑Platform Calendar Integration** – लेगेसी सिस्टम से Outlook या Google Calendar में अपॉइंटमेंट्स को मानक ICS फ़ॉर्मेट का उपयोग करके निर्यात करें।  
-3. **Event Management Platforms** – कॉन्फ़्रेंस, वर्कशॉप या वेबिनार के लिए इवेंट शेड्यूल को एक ही API कॉल से बल्क‑क्रिएट करें।
+1. **Automated Meeting Scheduling** – Generate calendar invites on‑the‑fly for internal tools or CRM systems.  
+2. **Cross‑Platform Calendar Integration** – Export appointments from legacy systems to Outlook, Google Calendar, or Apple Calendar using the standard ICS format.  
+3. **Event Management Platforms** – Bulk‑create schedules for conferences, workshops, or webinars with a single API call.
 
-## प्रदर्शन संबंधी विचार
+## Performance Considerations
 
-**aspose email java** के साथ काम करते समय इष्टतम प्रदर्शन बनाए रखने के लिए इन टिप्स को याद रखें:
+जब आप **aspose email java** के साथ काम कर रहे हों, तो इन टिप्स को ध्यान में रखें:
 
-- `CalendarWriter` (या किसी भी `MailMessage`/`Appointment`) ऑब्जेक्ट को उपयोग समाप्त होते ही डिस्पोज़ करें।  
-- बड़े डेटा सेट के साथ काम करते समय अपॉइंटमेंट्स को बैच‑प्रोसेस करें ताकि गार्बेज‑कलेक्शन ओवरहेड कम हो।  
-- प्रत्येक लिखने के ऑपरेशन के लिए नया `IcsSaveOptions` बनाने के बजाय मौजूदा इंस्टेंस को पुन: उपयोग करें।
+- `CalendarWriter` (या कोई भी `MailMessage`/`Appointment`) ऑब्जेक्ट को उपयोग समाप्त होते ही डिस्पोज़ करें।  
+- बड़े डेटा सेट को हैंडल करते समय अपॉइंटमेंट्स को बैच‑प्रोसेस करें ताकि गैर्बेज‑कलेक्शन ओवरहेड कम हो।  
+- प्रत्येक राइट ऑपरेशन के लिए नया `IcsSaveOptions` बनाने के बजाय एक ही इंस्टेंस को री‑यूज़ करें।
 
-## अक्सर पूछे जाने वाले प्रश्न
+## Frequently Asked Questions
 
-**Q: क्या मैं नई फ़ाइल बनाने के बजाय मौजूदा ICS फ़ाइल को अपडेट कर सकता हूँ?**  
-A: हाँ। `saveOptions.setAction(AppointmentAction.Modify)` सेट करें और उस अपॉइंटमेंट का UID प्रदान करें जिसे आप अपडेट करना चाहते हैं।
+**Q: Can I update an existing ICS file instead of creating a new one?**  
+A: Yes. Set `saveOptions.setAction(AppointmentAction.Modify)` and provide the UID of the appointment you wish to update.
 
-**Q: क्या Aspose.Email आवर्ती इवेंट्स को सपोर्ट करता है?**  
-A: बिल्कुल। `Appointment` ऑब्जेक्ट पर रीकरेंस पैटर्न कॉन्फ़िगर करने के बाद आप इसे ICS फ़ाइल में लिख सकते हैं।
+**Q: Does Aspose.Email support recurring events?**  
+A: Absolutely. Configure recurrence patterns on the `Appointment` object before writing to the ICS file.
 
-**Q: क्या किसी ICS इवेंट में कस्टम प्रॉपर्टीज़ जोड़ना संभव है?**  
-A: हाँ। `appointment.getCustomProperties().add("X‑MyProperty", "MyValue")` का उपयोग करके गैर‑मानक फ़ील्ड एम्बेड करें।
+**Q: Is it possible to add custom properties to an ICS event?**  
+A: Yes. Use `appointment.getCustomProperties().add("X‑MyProperty", "MyValue")` to embed non‑standard fields.
 
-**Q: कौन‑से टाइम‑ज़ोन फ़ॉर्मेट स्वीकार किए जाते हैं?**  
-A: दोनों IANA टाइम‑ज़ोन IDs (जैसे “America/New_York”) और GMT ऑफ़सेट समर्थित हैं।
+**Q: What time‑zone formats are accepted?**  
+A: Both IANA time‑zone IDs (e.g., “America/New_York”) and GMT offsets are supported.
 
-**Q: क्या विकास बिल्ड्स के लिए लाइसेंस की आवश्यकता है?**  
-A: एक अस्थायी लाइसेंस मूल्यांकन प्रतिबंधों को हटाता है; उत्पादन परिनियोजन के लिए पूर्ण लाइसेंस आवश्यक है।
+**Q: Do I need a license for development builds?**  
+A: A temporary license removes evaluation restrictions; a full license is required for production deployments.
 
-## निष्कर्ष
+## Conclusion
 
-आपने अब **set participant status** और **write multiple events** को **aspose email java** का उपयोग करके ICS फ़ाइल में लिखना सीख लिया है। ये क्षमताएँ आपको मजबूत शेड्यूलिंग फीचर बनाने, किसी भी कैलेंडर क्लाइंट के साथ एकीकृत करने और आपके संगठन में इवेंट वितरण को सहज बनाने में सक्षम बनाती हैं।
+आपने अब **ICS फ़ाइलें कैसे निर्यात करें**, प्रतिभागी की स्थिति कैसे सेट करें, और Aspose.Email for Java का उपयोग करके कई इवेंट्स कैसे लिखें, यह सीख लिया है। ये क्षमताएँ आपको मजबूत शेड्यूलिंग फीचर्स बनाने, किसी भी कैलेंडर क्लाइंट के साथ इंटीग्रेट करने, और आपके संगठन में इवेंट वितरण को सहज बनाने में मदद करती हैं।
 
 ---
 
-**Last Updated:** 2025-12-18  
+**Last Updated:** 2026-03-18  
 **Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Author:** Aspose  
 
