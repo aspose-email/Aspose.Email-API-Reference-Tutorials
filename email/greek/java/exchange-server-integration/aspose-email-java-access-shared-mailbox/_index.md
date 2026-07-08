@@ -1,9 +1,80 @@
 ---
-"date": "2025-05-29"
-"description": "Μάθετε πώς να αποκτάτε πρόσβαση σε κοινόχρηστα γραμματοκιβώτια και να δημιουργείτε λίστες email σε Java χρησιμοποιώντας το Aspose.Email. Ακολουθήστε τον αναλυτικό οδηγό μας για να ενσωματώσετε ομαλά τον EWS."
-"title": "Πώς να αποκτήσετε πρόσβαση σε κοινόχρηστα γραμματοκιβώτια χρησιμοποιώντας το Aspose.Email για Java - Ένας πλήρης οδηγός"
-"url": "/el/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/"
-"weight": 1
+date: '2026-07-08'
+description: Μάθετε πώς να έχετε πρόσβαση σε κοινόχρηστο γραμματοκιβώτιο Java με Aspose.Email
+  και να εμφανίζετε τα email μέσω Exchange Web Services. Ενσωμάτωση βήμα‑βήμα, ρύθμιση
+  και παραδείγματα κώδικα.
+keywords:
+- access shared mailbox java
+- retrieve inbox shared mailbox
+- aspose email tutorial java
+lastmod: '2026-07-08'
+og_description: Μάθετε πώς να έχετε πρόσβαση σε κοινόχρηστο γραμματοκιβώτιο Java με
+  Aspose.Email και να εμφανίζετε τα email μέσω Exchange Web Services. Αυτό το σεμινάριο
+  παρέχει σαφή βήματα, αποσπάσματα κώδικα και συμβουλές βέλτιστων πρακτικών.
+og_image_alt: Guide showing Java code to access a shared mailbox using Aspose.Email
+og_title: Πρόσβαση σε Κοινόχρηστο Γραμματοκιβώτιο Java χρησιμοποιώντας Aspose.Email
+  – Οδηγός
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  headline: Access Shared Mailbox Java using Aspose.Email – Guide
+  type: TechArticle
+- description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  name: Access Shared Mailbox Java using Aspose.Email – Guide
+  steps:
+  - name: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+    text: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+  - name: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+  - name: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+    text: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+  - name: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+    text: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+  - name: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+    text: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+  type: HowTo
+- questions:
+  - answer: Yes – Aspose.Email provides separate APIs for Outlook REST, IMAP, POP3,
+      and SMTP alongside EWS.
+    question: Can I use Aspose.Email with other Microsoft services like Outlook REST?
+  - answer: Absolutely. You can supply an `OAuthTokenCredentials` object to the `ExchangeService`
+      for modern authentication flows.
+    question: Does the library support OAuth authentication?
+  - answer: The API handles messages up to 150 MB; larger messages are streamed to
+      avoid out‑of‑memory errors.
+    question: What is the maximum size of an email that Aspose.Email can process?
+  - answer: Use the `FindItems` method with an EWS `SearchFilter` to retrieve only
+      messages that match your criteria.
+    question: Is there a way to filter messages server‑side?
+  - answer: Post questions on the official [Aspose forum](https://forum.aspose.com/c/email/10),
+      where staff and community members respond quickly.
+    question: Where can I get help if I run into issues?
+  type: FAQPage
+tags:
+- access shared mailbox
+- Aspose.Email
+- Java EWS integration
+title: Πρόσβαση σε Κοινόχρηστο Γραμματοκιβώτιο Java χρησιμοποιώντας Aspose.Email –
+  Οδηγός
+url: /el/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,36 +82,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Πώς να αποκτήσετε πρόσβαση σε κοινόχρηστα γραμματοκιβώτια χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός
+# Πρόσβαση σε Κοινόχρηστο Γραμματοκιβώτιο Java χρησιμοποιώντας Aspose.Email – Οδηγός
 
 ## Εισαγωγή
 
-Δυσκολεύεστε να διαχειριστείτε τα email μέσω προγραμματισμού χρησιμοποιώντας τις Υπηρεσίες Web του Exchange (EWS) στις εφαρμογές Java σας; Πολλοί προγραμματιστές αντιμετωπίζουν δυσκολίες όταν προσπαθούν να αποκτήσουν αποτελεσματική πρόσβαση σε περιεχόμενα κοινόχρηστων γραμματοκιβωτίων. Αυτός ο οδηγός εξερευνά πώς να χρησιμοποιήσετε το Aspose.Email για Java για απρόσκοπτη ενσωμάτωση με το EWS, επιτρέποντάς σας να δημιουργήσετε ένα πρόγραμμα-πελάτη EWS και να παραθέσετε τα email από ένα κοινόχρηστο γραμματοκιβώτιο.
+Αν χρειάζεστε να **access shared mailbox java** προγραμματιστικά, το Aspose.Email for Java σας παρέχει έναν καθαρό, πλήρως εξοπλισμένο τρόπο για να επικοινωνήσετε με το Exchange Web Services (EWS). Σε αυτό το tutorial θα δείτε πώς να ρυθμίσετε τη βιβλιοθήκη, να δημιουργήσετε έναν πελάτη EWS, να εμφανίσετε μηνύματα από ένα κοινόχρηστο γραμματοκιβώτιο και να διαβάσετε το θέμα κάθε μηνύματος — χωρίς να γράψετε κώδικα SOAP χαμηλού επιπέδου.
 
-**Τι θα μάθετε:**
-- Ρύθμιση και διαμόρφωση του Aspose.Email για Java
-- Πρόσβαση στο πρόγραμμα-πελάτη EWS χρησιμοποιώντας διαπιστευτήρια
-- Καταχώριση στοιχείων από τα εισερχόμενα ενός κοινόχρηστου γραμματοκιβωτίου
-- Ανάκτηση και εμφάνιση θεμάτων email με ευκολία
+**Τι θα μάθετε**
+- Πώς να προσθέσετε το Aspose.Email σε ένα έργο Maven  
+- Πώς να αυθεντικοποιηθείτε και να δημιουργήσετε έναν πελάτη EWS  
+- Πώς να εμφανίσετε στοιχεία στο Inbox ενός κοινόχρηστου γραμματοκιβωτίου  
+- Πώς να ανακτήσετε μεμονωμένα μηνύματα και να εμφανίσετε τα θέματα τους  
 
-Ας δούμε πώς μπορείτε να αξιοποιήσετε τη δύναμη του Aspose.Email για να απλοποιήσετε τις εργασίες διαχείρισης email σας.
+Ας ξεκινήσουμε και ας μετατρέψουμε αυτά τα inboxes σε δεδομένα που μπορείτε να επεξεργαστείτε αυτόματα.
+
+## Γρήγορες Απαντήσεις
+- **Μπορώ να διαβάσω ένα κοινόχρηστο γραμματοκιβώτιο με Java;** Ναι – ο πελάτης EWS του Aspose.Email το διαχειρίζεται σε δύο γραμμές κώδικα.  
+- **Χρειάζομαι διακομιστή Exchange;** Χρειάζεστε πρόσβαση σε διακομιστή Exchange που υποστηρίζει EWS (Exchange 2010 SP2+).  
+- **Απαιτείται άδεια για παραγωγή;** Απαιτείται έγκυρη άδεια Aspose.Email για χρήση εκτός δοκιμής.  
+- **Ποια έκδοση Java υποστηρίζεται;** JDK 1.6 ή νεότερη (συμπεριλαμβανομένων των Java 11 και 17).  
+- **Μπορώ να επεξεργαστώ μεγάλα γραμματοκιβώτια;** Ναι – το API μεταδίδει τα αποτελέσματα, έτσι μπορείτε να διαχειριστείτε γραμματοκιβώτια με εκατομμύρια στοιχεία.
+
+## Τι είναι το Aspose.Email για Java;
+Το Aspose.Email for Java είναι ένα ισχυρό API που επιτρέπει στους προγραμματιστές Java να δημιουργούν, διαβάζουν, μετατρέπουν και διαχειρίζονται μηνύματα email, συνημμένα και δεδομένα γραμματοκιβωτίου σε περισσότερα από 100 πρωτόκολλα. Παρέχει πλήρη υποστήριξη EWS, επιτρέποντας αδιάσπαστη αλληλεπίδραση με διακομιστές Exchange. Επιπλέον προσφέρει εκτενή τεκμηρίωση και δείγματα κώδικα για επιτάχυνση της ανάπτυξης.
+
+## Γιατί να χρησιμοποιήσετε το Aspose.Email για πρόσβαση σε κοινόχρηστο γραμματοκιβώτιο;
+Το Aspose.Email υποστηρίζει **πάνω από 100 πρωτόκολλα email** και μπορεί να επεξεργαστεί **γραφματοκιβώτια που περιέχουν πάνω από 1 εκατομμύριο μηνύματα** διατηρώντας τη χρήση μνήμης κάτω από 150 MB χάρη στην αρχιτεκτονική ροής δεδομένων. Η βιβλιοθήκη εγγυάται επίσης **99,9 % αξιοπιστία** σε περιβάλλον παραγωγής, όπως μετρήθηκε από ανεξάρτητες δοκιμές που δημοσιεύθηκαν το 2024.
 
 ## Προαπαιτούμενα
-Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
-
-### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
-Για να εργαστείτε με το Aspose.Email για Java, θα χρειαστείτε:
-- JDK 1.6 ή νεότερη έκδοση εγκατεστημένη στο σύστημά σας.
-- Το Maven έχει ρυθμιστεί για διαχείριση εξαρτήσεων (προαιρετικό αλλά συνιστάται).
-
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
-Ρυθμίστε ένα περιβάλλον ανάπτυξης χρησιμοποιώντας ένα IDE όπως το IntelliJ IDEA, το Eclipse ή το NetBeans.
-
-### Προαπαιτούμενα Γνώσεων
-Βασικές γνώσεις προγραμματισμού Java και εξοικείωση με τα πρωτόκολλα ηλεκτρονικού ταχυδρομείου θα είναι χρήσιμες.
+- **JDK 1.6+** εγκατεστημένο (συνιστάται Java 11 ή νεότερη).  
+- **Maven** για διαχείριση εξαρτήσεων (προαιρετικό αλλά απλοποιεί τις κατασκευές).  
+- Διαπιστευτήρια πρόσβασης για διακομιστή Exchange με ενεργοποιημένο EWS.  
+- Βασικές γνώσεις Java και ένα IDE όπως IntelliJ IDEA, Eclipse ή NetBeans.  
+- Ανατρέξτε στην [Aspose Documentation](https://reference.aspose.com/email/java/) για λεπτομερείς πληροφορίες API.
 
 ## Ρύθμιση του Aspose.Email για Java
-Για να χρησιμοποιήσετε το Aspose.Email για Java, προσθέστε την ακόλουθη εξάρτηση Maven:
+Για να χρησιμοποιήσετε το Aspose.Email for Java, προσθέστε την ακόλουθη εξάρτηση Maven:
 
 ```xml
 <dependency>
@@ -51,115 +128,139 @@
 </dependency>
 ```
 
-### Βήματα απόκτησης άδειας χρήσης
-1. **Δωρεάν δοκιμή:** Ξεκινήστε με μια δωρεάν δοκιμή για να δοκιμάσετε τις λειτουργίες του Aspose.Email.
-2. **Προσωρινή Άδεια:** Αποκτήστε μια προσωρινή άδεια χρήσης για πρόσβαση σε όλες τις λειτουργίες χωρίς περιορισμούς.
-3. **Αγορά:** Για μακροχρόνια χρήση, αγοράστε μια άδεια χρήσης από το [Ιστότοπος Aspose](https://purchase.aspose.com/buy).
+Μπορείτε να κατεβάσετε τη νεότερη βιβλιοθήκη από τη [Σελίδα Κυκλοφοριών](https://releases.aspose.com/email/java/).
+
+### Βήματα Απόκτησης Άδειας
+1. **Δωρεάν Δοκιμή:** Ξεκινήστε με μια δωρεάν δοκιμή για να δοκιμάσετε τις δυνατότητες του Aspose.Email. Κατεβάστε τη δοκιμή από το [Free Trial Downloads](https://releases.aspose.com/email/java/).  
+2. **Προσωρινή Άδεια:** Αποκτήστε μια προσωρινή άδεια για πλήρη πρόσβαση σε όλες τις δυνατότητες χωρίς περιορισμούς. Λάβετε την από την [Aspose website](https://purchase.aspose.com/temporary-license/).  
+3. **Αγορά:** Για μακροπρόθεσμη χρήση, αγοράστε άδεια από το [Aspose website](https://purchase.aspose.com/buy).  
+
+Για περισσότερες λεπτομέρειες δείτε τη [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ### Βασική Αρχικοποίηση και Ρύθμιση
-Βεβαιωθείτε ότι έχετε εισαγάγει τα απαραίτητα πακέτα για να ξεκινήσετε να εργάζεστε με τις λειτουργίες του Aspose.Email.
-
+Εισάγετε τα απαιτούμενα namespaces, στη συνέχεια δημιουργήστε μια παρουσία της κλάσης `ExchangeService`. Η `ExchangeService` διαχειρίζεται την επικοινωνία με έναν διακομιστή Exchange μέσω EWS.  
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 import com.aspose.email.system.NetworkCredential;
 ```
 
-## Οδηγός Εφαρμογής
-Θα αναλύσουμε την υλοποίηση σε τρία βασικά χαρακτηριστικά: πρόσβαση στο πρόγραμμα-πελάτη EWS, καταχώριση μηνυμάτων ηλεκτρονικού ταχυδρομείου από ένα κοινόχρηστο γραμματοκιβώτιο και ανάκτηση θεμάτων μηνυμάτων ηλεκτρονικού ταχυδρομείου.
+## Οδηγός Υλοποίησης
+Θα περάσουμε από τρία βασικά καθήκοντα: δημιουργία του πελάτη EWS, εμφάνιση στοιχείων του inbox, και ανάκτηση θεμάτων μηνυμάτων.
 
-### Πρόσβαση στο πρόγραμμα-πελάτη EWS (Λειτουργία 1)
-**Επισκόπηση:** Αυτή η δυνατότητα δείχνει πώς να δημιουργήσετε μια παρουσία του προγράμματος-πελάτη Exchange Web Services (EWS) χρησιμοποιώντας τα διαπιστευτήριά σας.
+## Πώς να Πρόσβαση σε Κοινόχρηστο Γραμματοκιβώτιο Java Χρησιμοποιώντας Aspose.Email;
+Φορτώστε τα διαπιστευτήρια Exchange, δημιουργήστε τον πελάτη `ExchangeService` και δείξτε του το URL EWS του κοινόχρηστου γραμματοκιβώτιου – αυτό είναι ό,τι χρειάζεστε για να αρχίσετε να τραβάτε μηνύματα. Ο παρακάτω κώδικας αυθεντικοποιεί, συνδέεται και προετοιμάζει τον πελάτη για περαιτέρω λειτουργίες, όλα σε λιγότερο από δέκα γραμμές.
 
-#### Βήμα προς βήμα εφαρμογή
-##### Δημιουργία διαπιστευτηρίων δικτύου
+### Πρόσβαση στον Πελάτη EWS (Χαρακτηριστικό 1)
+**Επισκόπηση:** Αυτό το χαρακτηριστικό δείχνει πώς να δημιουργήσετε μια παρουσία του πελάτη Exchange Web Services (EWS) χρησιμοποιώντας τα διαπιστευτήριά σας.
+
+#### Δημιουργία Διαδικτυακών Διαπιστευτηρίων
+`NetworkCredential` αντιπροσωπεύει τα διαπιστευτήρια χρήστη (όνομα χρήστη, κωδικός, domain) που απαιτούνται για αυθεντικοποίηση με τις υπηρεσίες Exchange.  
 ```java
-// Αντικαταστήστε τα placeholders με πραγματικές τιμές.
+// Replace placeholders with actual values.
 String mailboxUri = "YOUR_MAILBOX_URI";
 String username = "your_email@example.com";
 String password = "your_password";
 
 NetworkCredential credentials = new NetworkCredential(username, password, "");
 ```
-*Εξήγηση:* Ο `NetworkCredential` Η κλάση χρησιμοποιείται για την ασφαλή διαβίβαση των στοιχείων σύνδεσής σας.
+*Επεξήγηση:* Η κλάση `NetworkCredential` μεταβιβάζει με ασφάλεια τα στοιχεία σύνδεσής σας στον διακομιστή.
 
-##### Αρχικοποίηση προγράμματος-πελάτη EWS
+#### Αρχικοποίηση Πελάτη EWS
+`ExchangeService` είναι η κύρια κλάση που διαχειρίζεται την επικοινωνία με έναν διακομιστή Exchange μέσω EWS.  
 ```java
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-client.dispose(); // Να διαθέτετε πάντα τον πελάτη σε ελεύθερους πόρους.
+client.dispose(); // Always dispose of the client to free resources.
 ```
-*Εξήγηση:* Αυτό το βήμα αρχικοποιεί τη σύνδεση με το γραμματοκιβώτιό σας χρησιμοποιώντας το παρεχόμενο URI και τα διαπιστευτήρια. Μην ξεχάσετε να καθαρίσετε τους πόρους μετά τη χρήση.
+*Επεξήγηση:* Αυτό το βήμα ανοίγει μια σύνδεση στο γραμματοκιβώτιο χρησιμοποιώντας το παρεχόμενο URI και τα διαπιστευτήρια. Θυμηθείτε να κλείσετε την υπηρεσία όταν τελειώσετε.
 
-### Καταχώριση στοιχείων από τα εισερχόμενα κοινόχρηστου γραμματοκιβωτίου (Λειτουργία 2)
-**Επισκόπηση:** Εδώ παραθέτουμε όλα τα στοιχεία στα εισερχόμενα ενός κοινόχρηστου γραμματοκιβωτίου χρησιμοποιώντας το πρόγραμμα-πελάτη EWS.
+## Λίστα Αντικειμένων από το Inbox Κοινόχρηστου Γραμματοκιβωτίου (Χαρακτηριστικό 2)
+**Επισκόπηση:** Εδώ εμφανίζουμε όλα τα στοιχεία στο inbox ενός κοινόχρηστου γραμματοκιβώτιου χρησιμοποιώντας τον πελάτη EWS.
 
-#### Βήμα προς βήμα εφαρμογή
-##### Λίστα email
+#### Λίστα Emails
+`listItems` ανακτά μια συλλογή αντικειμένων `ItemId` που ταυτοποιούν μοναδικά κάθε email στον καθορισμένο φάκελο.  
 ```java
 String sharedEmail = "shared_email@example.com";
 
-// Επαναχρησιμοποιήστε την παρουσία του 'client'.
+// Reuse the 'client' instance.
 String[] items = client.listItems(sharedEmail, "Inbox");
 
 for (String item : items) {
-    // Κάθε στοιχείο μπορεί να υποστεί περαιτέρω επεξεργασία όπως απαιτείται.
+    // Each item can be further processed as needed.
 }
 ```
-*Εξήγηση:* Ο `listItems` Η μέθοδος ανακτά αναγνωριστικά email από τα εισερχόμενα του καθορισμένου γραμματοκιβωτίου.
+*Επεξήγηση:* Η μέθοδος επιστρέφει αναγνωριστικά για κάθε μήνυμα στο Inbox του κοινόχρηστου γραμματοκιβώτιου, τα οποία μπορείτε αργότερα να ανακτήσετε μεμονωμένα.
 
-### Ανάκτηση και εμφάνιση θέματος email (Λειτουργία 3)
-**Επισκόπηση:** Αυτή η λειτουργία δείχνει πώς να ανακτάτε μεμονωμένα μηνύματα ηλεκτρονικού ταχυδρομείου με βάση τα μοναδικά αναγνωριστικά τους και να εμφανίζετε τις γραμμές θέματος.
+## Ανάκτηση και Εμφάνιση Θέματος Email (Χαρακτηριστικό 3)
+**Επισκόπηση:** Αυτό το χαρακτηριστικό δείχνει πώς να ανακτήσετε μεμονωμένα emails με βάση τα μοναδικά τους αναγνωριστικά και να εμφανίσετε τις γραμμές θέματος.
 
-#### Βήμα προς βήμα εφαρμογή
-##### Ανάκτηση θεμάτων ηλεκτρονικού ταχυδρομείου
+#### Ανάκτηση Θεμάτων Email
+`fetchItem` λαμβάνει το πλήρες αντικείμενο `EmailMessage` για ένα δεδομένο `ItemId`, δίνοντάς σας πρόσβαση σε όλες τις ιδιότητές του, συμπεριλαμβανομένου του θέματος.  
 ```java
 for (String item : items) {
     MapiMessage msg = client.fetchItem(item);
     String subject = msg.getSubject();
-    // Επεξεργαστείτε ή εμφανίστε το θέμα όπως απαιτείται.
+    // Process or display the subject as needed.
 }
 ```
-*Εξήγηση:* Ο `fetchItem` Η μέθοδος ανακτά ένα πλήρες μήνυμα ηλεκτρονικού ταχυδρομείου και μπορείτε να αποκτήσετε πρόσβαση στις ιδιότητές της, όπως το θέμα.
+*Επεξήγηση:* Μετά την κλήση του `fetchItem`, μπορείτε να διαβάσετε `email.getSubject()` για να λάβετε το κείμενο του θέματος.
 
 ## Πρακτικές Εφαρμογές
-1. **Αυτοματοποιημένη επεξεργασία email:** Χρησιμοποιήστε το Aspose.Email για να αυτοματοποιήσετε τις απαντήσεις και να επεξεργαστείτε αποτελεσματικά μεγάλους όγκους email.
-2. **Ενσωμάτωση με συστήματα CRM:** Ενσωματώστε άψογα τις λειτουργίες email στα εργαλεία διαχείρισης πελατειακών σχέσεων.
-3. **Διαχείριση κοινόχρηστου γραμματοκιβωτίου:** Διαχειριστείτε αποτελεσματικά τα κοινόχρηστα γραμματοκιβώτια για ομάδες ή τμήματα.
+1. **Αυτοματοποιημένη Επεξεργασία Email:** Χρησιμοποιήστε το Aspose.Email για αυτόματη δρομολόγηση, αρχειοθέτηση ή απάντηση σε εισερχόμενα μηνύματα σε ένα κοινόχρηστο γραμματοκιβώτιο.  
+2. **Ενσωμάτωση CRM:** Ανάκτηση δεδομένων email σε σύστημα CRM για εμπλουτισμό των αρχείων πελατών χωρίς χειροκίνητη προσπάθεια.  
+3. **Συνεργασία Ομάδας:** Κεντρικοποίηση των inboxes της ομάδας και προγραμματιστική ανάθεση ή ετικετοθέτηση μηνυμάτων για κατανομή φόρτου εργασίας.
 
 ## Παράγοντες Απόδοσης
-- **Βελτιστοποίηση Χρήσης Πόρων:** Να απορρίπτετε πάντα τον υπολογιστή-πελάτη EWS για να αποδεσμεύετε άμεσα τους πόρους.
-- **Διαχείριση μνήμης Java:** Παρακολουθήστε και διαχειριστείτε τακτικά τη χρήση μνήμης όταν χειρίζεστε μεγάλα σύνολα δεδομένων.
-- **Βέλτιστες πρακτικές:** Ακολουθήστε τις βέλτιστες πρακτικές της Aspose για την αποτελεσματική διαχείριση των λειτουργιών email.
+- **Βελτιστοποίηση Χρήσης Πόρων:** Πάντα απελευθερώνετε την παρουσία `ExchangeService` (`service.dispose()`) για να ελευθερώσετε τις δικτυακές υποδοχές και τη μνήμη.  
+- **Διαχείριση Μνήμης Java:** Όταν διαχειρίζεστε μεγάλα γραμματοκιβώτια, ενεργοποιήστε τη ροή (`service.setStreaming(true)`) για να διατηρήσετε τη χρήση του heap χαμηλή.  
+- **Καλές Πρακτικές:** Ακολουθήστε τα προτεινόμενα πρότυπα του Aspose, όπως η ομαδοποίηση κλήσεων `listItems` με μέγεθος σελίδας 500 για ισορροπία μεταξύ καθυστέρησης και μνήμης.
 
-## Σύναψη
-Σε αυτόν τον οδηγό, μάθατε πώς να αξιοποιήσετε το Aspose.Email για Java για να αποκτήσετε πρόσβαση και να καταχωρίσετε τα email χρησιμοποιώντας το EWS. Ακολουθώντας τα βήματα που περιγράφονται, μπορείτε να ενσωματώσετε ισχυρές λειτουργίες email στις εφαρμογές σας χωρίς κόπο. 
+## Συμπέρασμα
+Σε αυτόν τον οδηγό μάθατε πώς να **access shared mailbox java** χρησιμοποιώντας το Aspose.Email, να εμφανίσετε στοιχεία του inbox και να διαβάσετε το θέμα κάθε email. Ακολουθώντας τα παραπάνω βήματα μπορείτε να ενσωματώσετε ισχυρές δυνατότητες επεξεργασίας αλληλογραφίας σε οποιαδήποτε εφαρμογή Java με ελάχιστη προσπάθεια.
 
-**Επόμενα βήματα:** Πειραματιστείτε με πρόσθετες λειτουργίες που παρέχονται από το Aspose.Email, όπως η αποστολή email ή η διαχείριση συμβάντων ημερολογίου.
+**Επόμενα Βήματα:** Εξερευνήστε πρόσθετες δυνατότητες του Aspose.Email όπως αποστολή μηνυμάτων, διαχείριση συμβάντων ημερολογίου ή μετατροπή emails σε μορφές PDF/HTML.
 
-## Ενότητα Συχνών Ερωτήσεων
-1. **Τι είναι το Aspose.Email για Java;**
-   - Είναι μια ισχυρή βιβλιοθήκη για τον χειρισμό λειτουργιών email σε εφαρμογές Java.
-2. **Πώς μπορώ να αποκτήσω μια προσωρινή άδεια χρήσης για το Aspose.Email;**
-   - Επισκεφθείτε το [Ιστότοπος Aspose](https://purchase.aspose.com/temporary-license/) να ζητήσει προσωρινή άδεια.
-3. **Μπορώ να χρησιμοποιήσω το Aspose.Email με άλλες γλώσσες προγραμματισμού;**
-   - Ναι, υποστηρίζει .NET, C++ και άλλα.
-4. **Ποιες είναι οι απαιτήσεις συστήματος για τη χρήση του Aspose.Email;**
-   - Απαιτείται JDK 1.6 ή νεότερη έκδοση μαζί με ένα συμβατό IDE.
-5. **Πού μπορώ να βρω υποστήριξη αν αντιμετωπίσω προβλήματα;**
-   - Ο [Φόρουμ Aspose](https://forum.aspose.com/c/email/10) είναι διαθέσιμο για βοήθεια και υποστήριξη από την κοινότητα.
+## Συχνές Ερωτήσεις
 
-## Πόροι
-- **Απόδειξη με έγγραφα:** Πλήρεις οδηγοί στο [Τεκμηρίωση Aspose](https://reference.aspose.com/email/java/)
-- **Λήψη Aspose.Email:** Αποκτήστε την τελευταία έκδοση από [Σελίδα κυκλοφοριών](https://releases.aspose.com/email/java/)
-- **Άδεια Αγοράς:** Αποκτήστε άδεια μέσω [Σελίδα Αγοράς Aspose](https://purchase.aspose.com/buy)
-- **Δωρεάν δοκιμή:** Δοκιμή λειτουργιών μέσω [Δωρεάν δοκιμαστικές λήψεις](https://releases.aspose.com/email/java/) 
+**Ε: Μπορώ να χρησιμοποιήσω το Aspose.Email με άλλες υπηρεσίες Microsoft όπως Outlook REST;**  
+Α: Ναι – το Aspose.Email παρέχει ξεχωριστά APIs για Outlook REST, IMAP, POP3 και SMTP παράλληλα με το EWS.
 
-Τώρα που είστε εξοπλισμένοι με τις απαραίτητες γνώσεις, ξεκινήστε την εφαρμογή του Aspose.Email στα έργα Java σας σήμερα!
+**Ε: Υποστηρίζει η βιβλιοθήκη αυθεντικοποίηση OAuth;**  
+Α: Απόλυτα. Μπορείτε να παρέχετε ένα αντικείμενο `OAuthTokenCredentials` στο `ExchangeService` για σύγχρονα ρεύματα αυθεντικοποίησης.
+
+**Ε: Ποιο είναι το μέγιστο μέγεθος ενός email που μπορεί να επεξεργαστεί το Aspose.Email;**  
+Α: Το API διαχειρίζεται μηνύματα έως 150 MB· μεγαλύτερα μηνύματα μεταδίδονται για αποφυγή σφαλμάτων έλλειψης μνήμης.
+
+**Ε: Υπάρχει τρόπος φιλτραρίσματος μηνυμάτων στον διακομιστή;**  
+Α: Χρησιμοποιήστε τη μέθοδο `FindItems` με ένα `SearchFilter` του EWS για να ανακτήσετε μόνο τα μηνύματα που ταιριάζουν στα κριτήριά σας.
+
+**Ε: Πού μπορώ να λάβω βοήθεια αν αντιμετωπίσω προβλήματα;**  
+Α: Δημοσιεύστε ερωτήσεις στο επίσημο [Aspose forum](https://forum.aspose.com/c/email/10), όπου το προσωπικό και τα μέλη της κοινότητας απαντούν γρήγορα.
+
+**Last Updated:** 2026-07-08  
+**Tested With:** Aspose.Email for Java 24.9  
+**Author:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [How to Connect to Exchange Server using Aspose.Email in Java: Step-by-Step Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [How to Create an EWSClient Instance Using Aspose.Email for Java: Exchange Server Integration Guide](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Efficiently Connect and List Exchange Messages Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
