@@ -1,13 +1,12 @@
 ---
-date: '2026-01-01'
-description: تعلم كيفية إنشاء تقويم MAPI بلغة Java وحفظه إلى ملف PST باستخدام Aspose.Email
-  للـ Java. دليل خطوة بخطوة مع الكود، التكرار، والمستلمين.
+date: '2026-03-20'
+description: تعلم كيفية تصدير تقويم Outlook بصيغة PST باستخدام Aspose.Email للغة Java
+  – إنشاء عناصر تقويم MAPI، تعيين التكرار، إضافة الحضور، وحفظها إلى ملف PST.
 keywords:
 - Create MAPI Calendar Java
 - Aspose.Email Java Calendar
 - Java PST File Save
-title: كيفية إنشاء تقويم MAPI في Java باستخدام Aspose.Email – حفظ التقويم إلى ملف
-  PST
+title: تصدير تقويم Outlook بصيغة PST باستخدام Aspose.Email – Java
 url: /ar/java/calendar-appointments/create-save-mapi-calendar-aspose-email-java/
 weight: 1
 ---
@@ -17,39 +16,39 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# كيفية إنشاء تقويم MAPI Java باستخدام Aspose.Email – حفظ التقويم إلى PST
+# تصدير ملف PST لتقويم Outlook باستخدام Aspose.Email – Java
 
-## المقدمة
+## مقدمة
 
-هل تبحث عن تبسيط أتمتة التقويم في تطبيقات Java الخاصة بك؟ باستخدام **Aspose.Email for Java**، يمكنك **إنشاء تقويم MAPI Java**، تعريف أنماط التكرار، إضافة الحضور، و**حفظ التقويم إلى PST** ببضع أسطر من الشيفرة فقط. يوجهك هذا البرنامج التعليمي خلال العملية بالكامل — من إعداد المكتبة إلى إنشاء إدخال تقويم كامل الوظائف جاهز للتوزيع.
+هل تبحث عن تبسيط أتمتة التقويم في تطبيقات Java الخاصة بك وتحتاج إلى **export Outlook calendar PST**؟ باستخدام **Aspose.Email for Java**، يمكنك **create MAPI calendar Java**، تعريف أنماط التكرار، إضافة الحضور، و **save calendar to PST** ببضع أسطر من الشيفرة. يشرح هذا الدليل العملية بالكامل — من إعداد المكتبة إلى إنشاء إدخال تقويم كامل الوظائف جاهز للتوزيع.
 
 ### ما ستتعلمه
-- كيفية **إنشاء تقويم MAPI Java** باستخدام Aspose.Email.  
+- كيفية **create MAPI calendar Java** الأحداث باستخدام Aspose.Email.  
 - تكوين أنماط التكرار اليومية أو الأسبوعية أو المخصصة.  
 - إضافة المستلمين (المنظمين، الحضور) إلى دعوات التقويم الخاصة بك.  
-- حفظ عنصر التقويم عن طريق **حفظ التقويم إلى PST** لضمان توافقه مع Outlook.
-
-هيا نبدأ ونجهز بيئة التطوير الخاصة بك.
+- حفظ عنصر التقويم عن طريق **saving calendar to PST** لتوافق Outlook.  
+- كيفية **automate meeting scheduling** باستخدام كود قابل لإعادة الاستخدام.
 
 ## إجابات سريعة
-- **أي مكتبة؟** Aspose.Email for Java  
-- **الهدف الأساسي؟** إنشاء تقويم MAPI Java و**حفظ التقويم إلى PST**  
-- **المتطلبات المسبقة؟** Java 8+، Maven، ترخيص Aspose.Email  
-- **الوقت المتوقع للتنفيذ؟** 10‑15 دقيقة لإنشاء حدث أساسي  
-- **هل يمكن إضافة تكرار؟** نعم – يومي، أسبوعي، شهري، إلخ.
+- **Which library?** Aspose.Email for Java  
+- **Primary goal?** Export Outlook calendar PST و **save calendar to PST**  
+- **Prerequisites?** Java 8+, Maven, ترخيص Aspose.Email  
+- **Typical implementation time?** 10‑15 دقيقة لحدث أساسي  
+- **Can I add recurrence?** نعم – يوميًا، أسبوعيًا، شهريًا، إلخ.
 
-## ما هو تقويم MAPI في Java؟
-كائن تقويم MAPI (واجهة برمجة تطبيقات الرسائل) يمثل اجتماعًا أو موعدًا متوافقًا مع Outlook. باستخدام Aspose.Email، يمكنك إنشاء هذه الكائنات برمجيًا، مما يتيح دمجًا سلسًا مع Exchange أو Outlook أو أي عميل يستهلك ملفات PST.
+## تصدير Outlook calendar PST
 
-## لماذا نستخدم Aspose.Email لأتمتة التقويم؟
-- **توافق كامل مع Outlook** – العناصر المُنشأة تعمل في Outlook، OWA، والعملاء المتنقلين.  
-- **دعم غني للتكرار** – أنماط يومية، أسبوعية، شهرية، ومخصصة جاهزة للاستخدام.  
-- **بدون تبعيات خارجية** – مكتبة Java صافية، لا تحتاج إلى COM interop.  
-- **أداء عالي** – معالجة فعّالة لملفات PST الكبيرة والعمليات الضخمة.
+في هذا القسم نركز على تدفق شامل يتيح لك **export Outlook calendar PST**. بعد إنشاء كائن تقويم MAPI، الخطوة الأخيرة هي تخزينه داخل ملف PST يمكن لـ Outlook قراءته مباشرة.
+
+## لماذا تستخدم Aspose.Email لأتمتة التقويم؟
+
+- **Full Outlook compatibility** – العناصر المُنشأة تعمل في Outlook و OWA والعملاء المحمولين.  
+- **Rich recurrence support** – دعم يومي، أسبوعي، شهري، وأنماط مخصصة جاهزة للاستخدام.  
+- **No external dependencies** – مكتبة Java صافية، لا حاجة لتفاعل COM.  
+- **High performance** – معالجة فعّالة لملفات PST الكبيرة والعمليات الضخمة.  
+- **Automate meeting scheduling** – دمج هذه المنطق في وظائف دفعة أو خدمات ويب لإنشاء مئات الدعوات تلقائيًا.
 
 ## المتطلبات المسبقة
-
-قبل أن نبدأ، تأكد من وجود ما يلي:
 
 ### المكتبات المطلوبة
 - **Aspose.Email for Java**: الإصدار 25.4 أو أحدث.
@@ -59,12 +58,12 @@ weight: 1
 - Maven مثبت لإدارة التبعيات.
 
 ### المتطلبات المعرفية
-- مهارات أساسية في برمجة Java.  
-- إلمام بمفاهيم البرمجة الكائنية.
+- مهارات برمجة Java الأساسية.  
+- الإلمام بمفاهيم البرمجة الكائنية.
 
-## إعداد Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-أضف تبعية Aspose.Email إلى ملف `pom.xml` الخاص بك:
+أضف تبعية Aspose.Email Maven إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -77,15 +76,15 @@ weight: 1
 
 ### الحصول على الترخيص
 
-توفر Aspose.Email نسخة تجريبية مجانية، لكن الترخيص يفتح جميع الميزات:
+Aspose.Email يقدم نسخة تجريبية مجانية، لكن الترخيص يفتح جميع الميزات:
 
-- **نسخة تجريبية**: اختبر بدون قيود لمدة 30 يومًا.  
-- **ترخيص مؤقت**: اطلبه عبر [موقع Aspose](https://purchase.aspose.com/temporary-license/) إذا احتجت وقتًا إضافيًا.  
-- **شراء**: احصل على ترخيص دائم من [صفحة الشراء](https://purchase.aspose.com/buy).
+- **Free Trial**: اختبار بدون قيود لمدة 30 يومًا.  
+- **Temporary License**: طلب عبر [موقع Aspose](https://purchase.aspose.com/temporary-license/) إذا كنت بحاجة إلى وقت إضافي.  
+- **Purchase**: شراء ترخيص دائم من [صفحة الشراء](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 
-بعد إضافة التبعية، قم بتهيئة المكتبة باستخدام ملف الترخيص الخاص بك:
+بعد إضافة التبعية، قم بتهيئة المكتبة بملف الترخيص الخاص بك:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
@@ -94,9 +93,9 @@ license.setLicense("path_to_your_license.lic");
 
 ## دليل التنفيذ
 
-الآن بعد أن تم إعداد كل شيء، دعنا **ننشئ تقويم MAPI Java** و**نحفظ التقويم إلى PST**.
+الآن بعد أن تم إعدادك، دعنا **create MAPI calendar Java** و **save calendar to PST**.
 
-### إنشاء تقويم MAPI مع تكرار
+### إنشاء تقويم MAPI مع التكرار
 
 #### نظرة عامة
 
@@ -104,7 +103,7 @@ license.setLicense("path_to_your_license.lic");
 
 #### تنفيذ خطوة بخطوة
 
-1. **تهيئة التاريخ ونمط التكرار**  
+1. **Initialize Date and Recurrence Pattern**  
 
    أولاً، حدد وقت البدء وضع تكرارًا يوميًا:
 
@@ -118,9 +117,9 @@ license.setLicense("path_to_your_license.lic");
    recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
    ```
 
-   *شرح*: `MapiCalendarEventRecurrence` يحمل تفاصيل التكرار؛ نختار نمطًا يوميًا عبر `MapiCalendarDailyRecurrencePattern`.
+   *Explanation*: `MapiCalendarEventRecurrence` يحتوي على تفاصيل التكرار؛ نختار نمطًا يوميًا عبر `MapiCalendarDailyRecurrencePattern`.
 
-2. **إعداد المستلمين**  
+2. **Set Up Recipients**  
 
    أضف الأشخاص الذين يجب أن يتلقوا دعوة الاجتماع:
 
@@ -132,11 +131,11 @@ license.setLicense("path_to_your_license.lic");
    recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
    ```
 
-   *شرح*: `MapiRecipientCollection` يخزن كل حضور؛ `MAPI_TO` يحددهم كمستلمين أساسيين.
+   *Explanation*: `MapiRecipientCollection` يخزن كل حاضر؛ `MAPI_TO` يحددهم كمتلقين أساسيين.
 
-3. **إنشاء عنصر تقويم MAPI**  
+3. **Create the MAPI Calendar Item**  
 
-   بنِ كائن التقويم مع جميع التفاصيل المطلوبة:
+   بناء كائن التقويم بجميع التفاصيل المطلوبة:
 
    ```java
    import com.aspose.email.MapiCalendar;
@@ -153,11 +152,11 @@ license.setLicense("path_to_your_license.lic");
    );
    ```
 
-   *شرح*: المُنشئ يتوقع المنظم، العنوان، الموقع، وقت البدء/الانتهاء، الوصف، قائمة المستلمين، والتكرار.
+   *Explanation*: المُنشئ يتوقع المنظم، الموضوع، الموقع، أوقات البدء/الانتهاء، الوصف، قائمة المستلمين، والتكرار.
 
-4. **حفظ إلى ملف PST**  
+4. **Save to PST File**  
 
-   أخيرًا، احفظ التقويم عن طريق **حفظ التقويم إلى PST**:
+   أخيرًا، احفظ التقويم عن طريق **saving calendar to PST**:
 
    ```java
    import com.aspose.email.PersonalStorage;
@@ -171,63 +170,63 @@ license.setLicense("path_to_your_license.lic");
    calendarFolder.addMapiMessageItem(calendar);
    ```
 
-   *شرح*: `PersonalStorage.create` ينشئ ملف PST جديد، و`addMapiMessageItem` يضيف عنصر التقويم إلى مجلد "Calendar".
+   *Explanation*: `PersonalStorage.create` ينشئ ملف PST جديد، و `addMapiMessageItem` يضيف إدخال التقويم إلى مجلد "Calendar".
 
 ### نصائح استكشاف الأخطاء وإصلاحها
-- تحقق من مسار الترخيص؛ الترخيص غير صالح سيقيد الوظائف.  
-- تأكد من تنسيق عناوين البريد الإلكتروني للمستلمين لتجنب فشل الدعوات.  
-- أغلق ملف PST (`pst.dispose()`) بعد الانتهاء لتحرير مقابض الملفات.
+- تحقق من مسار الترخيص؛ الترخيص غير الصالح سيقيد الوظائف.  
+- تأكد من تنسيق عناوين البريد الإلكتروني للمستلمين بشكل صحيح لتجنب فشل الدعوات.  
+- أغلق ملف PST (`pst.dispose()`) بعد العمليات لتحرير مقبض الملف.
 
 ## تطبيقات عملية
 
-إليك بعض السيناريوهات الشائعة حيث يبرز **إنشاء تقويم MAPI Java** و**حفظ التقويم إلى PST**:
+فيما يلي سيناريوهات شائعة حيث يبرز **creating MAPI calendar Java** و **saving calendar to PST**:
 
-1. **جدولة الاجتماعات تلقائيًا** – توليد دعوات اجتماعات متكررة لفرق المشروع دون جهد يدوي.  
-2. **منصات إدارة الفعاليات** – تصدير جلسات المؤتمرات كعناصر تقويم متوافقة مع Outlook.  
-3. **تكامل CRM** – مزامنة مواعيد العملاء من نظام CRM مباشرةً إلى Outlook عبر ملفات PST.
+1. **Automated Meeting Scheduling** – إنشاء دعوات اجتماعات متكررة لفرق المشروع دون جهد يدوي.  
+2. **Event Management Platforms** – تصدير جلسات المؤتمرات كعناصر تقويم متوافقة مع Outlook.  
+3. **CRM Integration** – مزامنة مواعيد العملاء من نظام CRM مباشرةً إلى Outlook عبر ملفات PST.
 
 ## اعتبارات الأداء
 
-- **إدارة الموارد**: حرّر كائنات `PersonalStorage` بعد الاستخدام لتجنب حجز الملفات.  
-- **المعالجة الدفعية**: للكمية الكبيرة، عالج عناصر التقويم بشكل غير متزامن أو على دفعات لتقليل استهلاك الذاكرة.  
+- **Resource Management**: تخلص من كائنات `PersonalStorage` بعد الاستخدام لتجنب حجز الملفات.  
+- **Batch Processing**: للأحجام الكبيرة، عالج عناصر التقويم بشكل غير متزامن أو على دفعات للحفاظ على استهلاك الذاكرة منخفضًا.  
 
 ## الخلاصة
 
-لقد تعلمت الآن كيفية **إنشاء كائنات تقويم MAPI Java**، تكوين التكرار، إضافة الحضور، و**حفظ التقويم إلى PST** باستخدام Aspose.Email. يتيح لك هذا النهج أتمتة سير عمل جدولة متقدم في تطبيقات Java مع توافق كامل مع Outlook.
+لقد تعلمت الآن كيفية **export Outlook calendar PST** بإنشاء كائنات MAPI calendar Java، تكوين التكرار، إضافة الحضور، و **save calendar to PST** باستخدام Aspose.Email. يتيح هذا النهج لتطبيقات Java الخاصة بك أتمتة سير عمل جدولة متقدم مع توافق Outlook.
 
-للمزيد من الاستكشاف، راجع [الوثائق الرسمية](https://reference.aspose.com/email/java/).
+للتعمق أكثر، راجع [documentation](https://reference.aspose.com/email/java/).
 
 ## قسم الأسئلة المتكررة
 
-### س: هل يمكنني إنشاء نمط تكرار أسبوعي؟
+### س: هل يمكنني إنشاء أنماط تكرار أسبوعية؟
 - **ج**: نعم! استخدم `MapiCalendarWeeklyRecurrencePattern` لتحديد التكرار الأسبوعي.
 
 ### س: كيف أتعامل مع الاستثناءات في تكرار الحدث؟
 - **ج**: استدعِ `setExceptions()` على كائن التكرار لتحديد التواريخ التي تختلف عن النمط.
 
 ### س: هل يمكن تحديث عنصر تقويم موجود؟
-- **ج**: بالتأكيد. حمّل العنصر من PST، عدّل خصائصه، ثم احفظه مرة أخرى.
+- **ج**: بالتأكيد. حمّل العنصر من PST، عدّل خصائصه، واحفظه مرة أخرى.
 
-### س: هل يمكن تشفير ملف PST؟
-- **ج**: نعم، يتيح لك Aspose.Email تعيين كلمة مرور على `PersonalStorage` عند إنشاء الـ PST.
+### س: هل يمكنني تشفير ملف PST؟
+- **ج**: نعم، يتيح لك Aspose.Email تعيين كلمة مرور على `PersonalStorage` عند إنشاء PST.
 
-### س: ماذا إذا أردت إضافة مرفقات إلى حدث التقويم؟
+### س: ماذا لو أردت إضافة مرفقات إلى حدث التقويم؟
 - **ج**: استخدم `calendar.getAttachments().addFileAttachment("path/to/file")` قبل الحفظ.
 
-## موارد
+## الموارد
 
-- [توثيق Aspose.Email](https://reference.aspose.com/email/java/)  
-- [تحميل Aspose.Email for Java](https://releases.aspose.com/email/java/)  
-- [شراء ترخيص](https://purchase.aspose.com/buy)  
-- [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)  
-- [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)  
-- [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Purchase a License](https://purchase.aspose.com/buy)
+- [Free Trial Version](https://releases.aspose.com/email/java/)
+- [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
+- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**آخر تحديث:** 2026-01-01  
-**تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16)  
-**المؤلف:** Aspose
+**Last Updated:** 2026-03-20  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

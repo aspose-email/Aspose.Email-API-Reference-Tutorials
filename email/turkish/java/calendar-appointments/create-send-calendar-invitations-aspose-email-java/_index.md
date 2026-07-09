@@ -1,14 +1,12 @@
 ---
-date: '2025-12-20'
-description: Aspose.Email for Java kullanarak takvim paylaşımını nasıl yöneteceğinizi,
-  delege izinlerini nasıl ayarlayacağınızı ve delege erişimini nasıl oluşturacağınızı
-  öğrenin. Takvim paylaşım e-postalarını verimli bir şekilde göndermek için bu adım
-  adım öğreticiyi izleyin.
+date: '2026-03-20'
+description: Aspose.Email for Java kullanarak takvim paylaşım daveti oluşturmayı,
+  takvim izinlerini yapılandırmayı ve temsilci erişimini ayarlamayı öğrenin.
 keywords:
 - Aspose.Email for Java
 - create calendar invitations
 - send calendar invitations
-title: 'Takvim Paylaşımını Yönetme - Aspose.Email for Java Rehberi'
+title: Aspose.Email for Java ile Takvim Paylaşım Davetiyesi Oluştur
 url: /tr/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---
@@ -21,23 +19,29 @@ weight: 1
 # Takvim Paylaşımını Yönetme: Aspose.Email for Java Rehberi
 
 ## Takvim Paylaşımını Yönetmeye Giriş
-Takvim paylaşım davetlerini yönetmek, özellikle farklı platformlarda birden fazla kullanıcıyla çalışırken karmaşık bir görev olabilir. Bu öğreticide Aspose.Email for Java ile **takvim paylaşımını yönetmeyi** öğrenecek, temsilci erişimi oluşturulmasından takvim paylaşım e-postalarının gönderilmesine kadar her şeyi kapsayacaksınız. Sonunda temsilci izinlerini ayarlayabilecek, takvim izinlerini yapılandırabilecek ve organizasyonunuzda iş birliğini kolaylaştırabileceksiniz.
+Takvim paylaşım davetlerini yönetmek, özellikle farklı platformlarda birden fazla kullanıcıyla çalışırken karmaşık bir görev olabilir. Bu öğreticide Aspose.Email for Java ile **takvim paylaşım daveti oluşturacaksınız**, delegasyon erişimi oluşturmaktan takvim paylaşım e-postaları göndermeye kadar her şeyi kapsayacak. Sonunda delegasyon izinlerini ayarlayabilecek, **takvim izinlerini yapılandırabilecek** ve organizasyonunuzda iş birliğini kolaylaştırabileceksiniz.
 
 **Öğrenecekleriniz**
-- Aspose.Email for Java ile EWS istemcisini başlatma  
-- Temsilci bir kullanıcı oluşturma ve **temsilci izinlerini ayarlama**  
-- **Temsilci erişimi oluşturma** ve takvim izinlerini yapılandırma  
-- **Takvim paylaşım e-postası** (daveti) programlı olarak gönderme  
+- Aspose.Email for Java ile EWS istemcisini nasıl başlatılır  
+- Bir delegasyon kullanıcısı oluşturma ve **delegasyon izinlerini ayarlama**  
+- **Delegasyon erişimi oluşturma** ve takvim izinlerini yapılandırma  
+- Programlı olarak bir **takvim paylaşım e-postası** (davet) gönderme  
 - Bu özelliklerin değer kattığı gerçek dünya senaryoları  
 
-Derinlemeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım.
+Derine inmeye başlamadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım.
 
 ## Hızlı Yanıtlar
-- **Bu rehberin temel amacı nedir?** Aspose.Email for Java kullanarak **takvim paylaşımını yönetmeyi** göstermek.  
+- **Bu rehberin ana amacı nedir?** Aspose.Email for Java kullanarak **takvim paylaşım daveti oluşturmayı** göstermek.  
 - **Hangi kütüphane sürümü gereklidir?** Aspose.Email for Java 25.4 (JDK 16 sınıflandırıcısı).  
-- **Lisans gerekir mi?** Evet – üretim kullanımında bir deneme veya tam lisans gereklidir.  
-- **Hangi ortam gerekli?** JDK 16+, Maven ve bir Exchange Online hesabı.  
+- **Lisans gerekir mi?** Evet – üretim kullanımı için deneme veya tam lisans gereklidir.  
+- **Hangi ortam gerekir?** JDK 16+, Maven ve bir Exchange Online hesabı.  
 - **Bunu diğer Exchange sunucularıyla kullanabilir miyim?** Evet, ancak hizmet URL'si ve izin seviyelerini ayarlamanız gerekebilir.
+
+## Takvim paylaşım daveti nedir?
+Takvim paylaşım daveti, başka bir kullanıcıya tam posta kutusu hakları vermeden takviminizi görüntüleme (veya düzenleme) erişimi sağlayan bir e-posta mesajıdır. Genellikle ekip koordinasyonu, proje planlaması ve etkinlik yönetimi için kullanılır.
+
+## Neden takvim izinlerini yapılandırmalısınız?
+Takvim izinlerini yapılandırmak, bir delegasyonun ne yapabileceğini tam olarak kontrol etmenizi sağlar—sadece etkinlikleri okuyabilir, yeni etkinlikler önerebilir veya mevcut girdileri düzenleyebilir. Doğru izin ayarları, hassas bilgileri korurken etkili iş birliğini mümkün kılar.
 
 ## Önkoşullar
 - **Java Development Kit (JDK):** Versiyon 16 veya üzeri.  
@@ -52,11 +56,11 @@ Derinlemeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalı
 ### Bilgi Önkoşulları
 - Temel Java programlama becerileri  
 - Maven bağımlılıklarına aşinalık  
-- Opsiyonel: Exchange Web Services (EWS) deneyimi  
+- İsteğe bağlı: Exchange Web Services (EWS) deneyimi  
 
 ## Aspose.Email for Java Kurulumu
-### Maven Configuration
-Aşağıdaki bağımlılığı `pom.xml` dosyanıza ekleyin:
+### Maven Yapılandırması
+`pom.xml` dosyanıza aşağıdaki bağımlılığı ekleyin:
 
 ```xml
 <dependency>
@@ -67,42 +71,42 @@ Aşağıdaki bağımlılığı `pom.xml` dosyanıza ekleyin:
 </dependency>
 ```
 
-### License Acquisition
+### Lisans Edinme
 Aspose.Email for Java tam işlevsellik için bir lisans gerektirir. Şunları yapabilirsiniz:
-- **Ücretsiz Deneme:** [Aspose'un yayın sayfasından](https://releases.aspose.com/email/java/) indirin.  
+- **Ücretsiz Deneme:** [Aspose'un sürüm sayfasından](https://releases.aspose.com/email/java/) indirin.  
 - **Geçici Lisans:** Aspose web sitesinden geçici bir anahtar talep edin.  
 - **Satın Alma:** Üretim dağıtımları için kalıcı bir lisans edinin.
 
-### Basic Initialization and Setup
+### Temel Başlatma ve Kurulum
 Maven bağımlılığı çözdükten sonra, EWS istemcisini başlatın:
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 ```
 
-## Uygulama Kılavuzu
-Aşağıda iki temel özelliği ele alıyoruz: takvim paylaşım davetini oluşturma ve gönderme, ve takvim erişimi için **temsilci izinlerini ayarlama**.
+## Takvim paylaşım daveti nasıl oluşturulur
+Aşağıda iki temel özelliği ele alıyoruz: takvim paylaşım daveti oluşturma ve gönderme, ve takvim erişimi için **delegasyon izinlerini ayarlama**.
 
-### Özellik 1: Takvim Paylaşım Davetini Oluşturma ve Gönderme
+### Özellik 1: Takvim Paylaşım Daveti Oluşturma ve Gönderme
 #### Genel Bakış
-Bu özellik, istemciyi başlatma, **temsilci erişimi oluşturma** ve davet e-postasını gönderme adımlarını size gösterir.
+Bu özellik, istemciyi başlatma, **delegasyon erişimi oluşturma**, ve davet e-postasını gönderme adımlarını size gösterir.
 
 #### Adım‑Adım Uygulama
-##### 1️⃣ Initialize EWS Client
+##### 1️⃣ EWS İstemcisini Başlatma
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 ```
 Bu, Java uygulamanızı Exchange Online'a bağlar.
 
-##### 2️⃣ Create Delegate User
+##### 2️⃣ Delegasyon Kullanıcısı Oluşturma
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
-Burada **temsilci erişimi oluşturuyoruz** ve `Reviewer` seviyesini atıyoruz; bu, temsilcinin takvim öğelerini görmesini sağlar.
+Burada **delegasyon erişimi oluşturuyor** ve `Reviewer` seviyesini atıyoruz; bu, delegasyonun takvim öğelerini görmesini sağlar.
 
-##### 3️⃣ Send Calendar Sharing Invitation
+##### 3️⃣ Takvim Paylaşım Davetini Gönderme
 ```java
 MapiMessage mapiMessage = client.createCalendarSharingInvitationMessage("sharingfrom@domain.com");
 
@@ -112,67 +116,84 @@ options.setConvertAsTnef(true);
 MailMessage mail = mapiMessage.toMailMessage(options);
 client.send(mail);
 ```
-Kod, bir **takvim paylaşım e-postası** (daveti) oluşturur ve EWS istemcisi aracılığıyla gönderir.
+Kod, bir **takvim paylaşım e-postası** (davet) oluşturur ve EWS istemcisi aracılığıyla gönderir.
 
-### Özellik 2: Takvim Erişim İzni Verme
+### Özellik 2: Delegasyon Takvim Erişim İzni
 #### Genel Bakış
-Bu bölüm, **takvim izinlerini yapılandırmayı** ve temsilcinin doğru haklara sahip olmasını gösterir.
+Bu bölüm, **takvim izinlerini yapılandırma** ve delegasyonun doğru haklara sahip olmasını sağlama yöntemini gösterir.
 
 #### Uygulama Adımları
-##### 1️⃣ Initialize EWS Client (reuse)
+##### 1️⃣ EWS İstemcisini Başlatma (yeniden kullanım)
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 ```
 
-##### 2️⃣ Create and Set Delegate Permissions
+##### 2️⃣ Delegasyon İzinlerini Oluşturma ve Ayarlama
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
 ```
-Bu kod parçacığı, kullanıcının tam posta kutusu erişimi olmadan takvim girdilerini görebilmesi için **temsilci izinlerini ayarlar**.
+Bu kod parçacığı, kullanıcının tam posta kutusu erişimi olmadan takvim girdilerini görüntüleyebilmesi için **delegasyon izinlerini ayarlar**.
+
+## Delegasyonlar için takvim izinlerini nasıl yapılandırırsınız
+Bir delegasyonun sadece etkinlikleri görüntülemenin ötesinde—örneğin düzenleme veya silme—bir şey yapması gerektiğinde, `ExchangeDelegateFolderPermissionLevel` değerini değiştirebilirsiniz:
+
+- `Reviewer` – sadece okuma erişimi.  
+- `Editor` – okuma/yazma erişimi.  
+- `Author` – oluşturma ve okuma, ancak silme yapılamaz.  
+- `Owner` – tam kontrol, izin değişiklikleri dahil.
+
+**Pro ipucu:** Takvim verilerinizi güvenli tutmak için iş gereksinimini karşılayan en düşük ayrıcalık seviyesini kullanın.
 
 ## Pratik Uygulamalar
-**Takvim paylaşımını yönetme**'nin öne çıktığı gerçek dünya senaryoları:
-1. **Kurumsal Toplantılar** – Takım üyelerinin tam posta kutusu hakları vermeden toplantı takvimlerini görmesini sağlar.  
-2. **Proje Yönetimi** – Proje liderleri zaman çizelgelerini izleyebilir, geliştiriciler ise kendi takvimleri üzerinde kontrolü korur.  
+**Takvim paylaşımını yönet** özelliğinin öne çıktığı gerçek dünya senaryoları:
+1. **Kurumsal Toplantılar** – Takım üyelerinin tam posta kutusu hakları vermeden toplantı takvimlerini görmelerini sağlayın.  
+2. **Proje Yönetimi** – Proje liderleri zaman çizelgelerini izleyebilirken geliştiriciler kendi takvimleri üzerinde kontrol sahibi olur.  
 3. **Etkinlik Planlaması** – Satıcılar, iç detayları ortaya çıkarmadan lojistiği koordine etmek için bir **takvim paylaşım e-postası** alır.
 
 ## Performans Düşünceleri
 - **Bellek Yönetimi:** Yüksek hacimli uygulamalarda büyük `MailMessage` nesnelerini hızlıca serbest bırakın.  
-- **İstisna Yönetimi:** Ağ çağrılarını try‑catch bloklarıyla sararak bağlantı hatalarını nazikçe ele alın.  
+- **İstisna İşleme:** Ağ çağrılarını try‑catch bloklarıyla sararak bağlantı hatalarını nazikçe yönetin.  
 - **Kütüphane Güncellemeleri:** Performans iyileştirmeleri ve hata düzeltmelerinden yararlanmak için Aspose.Email'i güncel tutun.
 
-## Sıkça Sorulan Sorular
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Muhtemel Neden | Çözüm |
+|-------|----------------|-------|
+| Davet alınmadı | Spam filtreleri veya hatalı e-posta adresi | Alıcı adresini doğrulayın ve gönderim alanını güvenli göndericiler listesine ekleyin |
+| İzin uygulanmadı | `ExchangeDelegateFolderPermissionLevel` yanlış kullanımı | İzin seviyesinin gerekli erişimle eşleştiğini tekrar kontrol edin |
+| `createCalendarSharingInvitationMessage` üzerinde çalışma zamanı istisnası | Lisans eksikliği veya eski kütüphane | Geçerli bir lisans yüklendiğinden ve en son Aspose.Email sürümünü kullandığınızdan emin olun |
+
+## Sık Sorulan Sorular
 **S: Aspose.Email for Java ne için kullanılır?**  
-C: Java uygulamalarında e‑postalar, takvimler ve kişilerle çalışmak için kapsamlı bir kütüphanedir; Outlook, Exchange ve diğer protokolleri destekler.
+C: Java uygulamalarında e-posta, takvim ve kişi yönetimi için kapsamlı bir kütüphanedir; Outlook, Exchange ve diğer protokolleri destekler.
 
 **S: Aspose.Email'i kullanmak için ortamımı nasıl kurarım?**  
 C: JDK 16+, Maven kurun, `pom.xml` dosyasına Aspose.Email bağımlılığını ekleyin ve bir lisans (deneme veya tam) edinin.
 
-**S: Bu kodu Exchange Online'ın diğer sürümleriyle kullanabilir miyim?**  
-C: Evet, ancak hizmet URL'si ve izin seviyelerinin sunucu yapılandırmanızla eşleştiğinden emin olun.
+**S: Bu kodu diğer Exchange Online sürümleriyle kullanabilir miyim?**  
+C: Evet, ancak hizmet URL'si ve izin seviyelerinin sunucunuzun yapılandırmasıyla eşleştiğini doğrulayın.
 
 **S: Takvim paylaşım daveti gönderilemezse ne yapmalıyım?**  
-C: Ağ bağlantısını, kimlik bilgilerini ve temsilci kullanıcının geçerli izinlere sahip olduğunu kontrol edin. İstisna detaylarını inceleyerek ipuçları bulun.
+C: Ağ bağlantısını, kimlik bilgilerini ve delegasyon kullanıcısının geçerli izinlere sahip olduğunu kontrol edin. İstisna detaylarını inceleyerek ipuçları bulun.
 
 **S: Düzenleme veya tam erişim gibi ek izinler eklemek mümkün mü?**  
-C: Kesinlikle – ihtiyacınıza göre `ExchangeDelegateFolderPermissionLevel.Reviewer` yerine `Editor`, `Author` veya `Owner` kullanabilirsiniz.
+C: Kesinlikle – ihtiyaca göre `ExchangeDelegateFolderPermissionLevel.Reviewer` yerine `Editor`, `Author` veya `Owner` değerlerini kullanabilirsiniz.
 
 ## Sonuç
-Artık Aspose.Email for Java ile **takvim paylaşımını yönetmek** için eksiksiz, uçtan uca bir çözümünüz var. EWS istemcisini başlatarak, **temsilci erişimi oluşturma**, **temsilci izinlerini ayarlama** ve bir **takvim paylaşım e-postası** göndererek organizasyonunuzda iş birliğini otomatikleştirebilirsiniz.
+Artık Aspose.Email for Java ile **takvim paylaşım daveti oluşturma** için eksiksiz, uçtan uca bir çözümünüz var. EWS istemcisini başlatarak, **delegasyon erişimi oluşturma**, **delegasyon izinlerini ayarlama** ve bir **takvim paylaşım e-postası** göndererek organizasyonunuzda iş birliğini otomatikleştirebilirsiniz.
 
 **Sonraki Adımlar**
-- Diğer izin seviyelerini (Editor, Owner) deneyin.  
+- Başka izin seviyelerini (Editor, Owner) deneyin.  
 - Bu mantığı mevcut planlama veya İK sistemlerinize entegre edin.  
 - Tekrarlayan etkinlikler veya toplantı istekleri gibi ek Aspose.Email özelliklerini keşfedin.
 
 ---
 
-**Last Updated:** 2025-12-20  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-03-20  
+**Test Edilen:** Aspose.Email for Java 25.4 (JDK 16 sınıflandırıcısı)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
