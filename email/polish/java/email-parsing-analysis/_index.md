@@ -1,57 +1,67 @@
 ---
-"description": "Naucz się wyodrębniać elementy wiadomości e-mail, analizować ich zawartość, przetwarzać nagłówki i wdrażać inteligencję e-mailową za pomocą Aspose.Email for Java."
-"title": "Samouczki analizy i analizy wiadomości e-mail dla Aspose.Email Java"
-"url": "/pl/java/email-parsing-analysis/"
-"weight": 14
+date: 2026-03-09
+description: Dowiedz się, jak sprawdzić status odbicia wiadomości e‑mail, wyodrębnić
+  e‑maile z archiwów Zimbra i analizować treść wiadomości przy użyciu Aspose.Email
+  dla Javy.
+title: Sprawdź zwrot e‑mail – Samouczki parsowania Aspose.Email Java
+url: /pl/java/email-parsing-analysis/
+weight: 14
 ---
+
+ markdown with translations.
+
+Let's construct.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Samouczki analizy i analizy wiadomości e-mail dla Aspose.Email Java
+# Samouczki parsowania i analizy e‑maili dla Aspose.Email Java
 
-Nasze samouczki dotyczące analizy i analizy wiadomości e-mail pokazują, jak wyodrębnić cenne informacje z wiadomości e-mail za pomocą Aspose.Email w Javie. Te przewodniki krok po kroku pokazują, jak analizować nagłówki wiadomości e-mail, wyodrębniać informacje o odbiorcach, analizować zawartość wiadomości, przetwarzać powiadomienia o odrzuceniu i programowo wdrażać zaawansowaną inteligencję e-mail. Każdy samouczek zawiera praktyczne przykłady kodu Java dla typowych scenariuszy analizy wiadomości e-mail, pomagając w tworzeniu aplikacji, które mogą skutecznie wyodrębniać, przetwarzać i wykorzystywać dane e-mail.
+Nasze samouczki dotyczące parsowania i analizy e‑maili pokazują, jak **sprawdzać status odbicia e‑maili**, wyodrębniać cenne informacje i tworzyć inteligentne rozwiązania przetwarzania e‑maili przy użyciu Aspose.Email w Javie. Niezależnie od tego, czy musisz diagnozować problemy z dostawą, pobierać dane z archiwów czy analizować treść wiadomości, te przewodniki krok po kroku dostarczają kod i kontekst niezbędny do osiągnięcia sukcesu.
+
+## Jak sprawdzić odbicie e‑maili przy użyciu Aspose.Email dla Java
+Zrozumienie powiadomień o odbiciach jest kluczowe dla utrzymania reputacji nadawcy i poprawy dostarczalności. W tej sekcji krótko wyjaśniamy, dlaczego wykrywanie zdarzeń odbicia ma znaczenie, jakie rodzaje informacji o odbiciach może udostępniać Aspose.Email oraz jak biblioteka upraszcza ten proces dla programistów Java.
 
 ## Dostępne samouczki
 
-### [Sprawdź status niedostarczonych wiadomości e-mail za pomocą Aspose.Email dla Java: kompleksowy przewodnik](./check-email-bounce-status-aspose-java/)
-Dowiedz się, jak skutecznie sprawdzać status odrzuconych wiadomości e-mail za pomocą Aspose.Email for Java. Ten przewodnik obejmuje konfigurację, ładowanie wiadomości e-mail i wyodrębnianie szczegółowych informacji o odrzuconych wiadomościach.
+### [Check Email Bounce Status Using Aspose.Email for Java&#58; A Comprehensive Guide](./check-email-bounce-status-aspose-java/)
+Dowiedz się, jak efektywnie sprawdzić status odbicia e‑maili przy użyciu Aspose.Email dla Java. Ten przewodnik obejmuje konfigurację, ładowanie e‑maili oraz wyodrębnianie szczegółowych informacji o odbiciach.
 
-### [Kompleksowy przewodnik po ładowaniu i analizowaniu wiadomości e-mail w Javie przy użyciu Aspose.Email](./java-email-management-aspose-email-tutorial/)
-Opanuj analizę składniową i zarządzanie wiadomościami e-mail w aplikacjach Java dzięki temu szczegółowemu przewodnikowi dotyczącemu korzystania z zaawansowanej biblioteki Aspose.Email.
+### [Comprehensive Guide to Load and Parse Emails in Java Using Aspose.Email](./java-email-management-aspose-email-tutorial/)
+Opanuj parsowanie i zarządzanie e‑mailami w aplikacjach Java dzięki temu szczegółowemu przewodnikowi dotyczącym korzystania z potężnej biblioteki Aspose.Email.
 
-### [Jak wyodrębnić wiadomości e-mail z archiwów Zimbra TGZ za pomocą Aspose.Email dla Java: kompleksowy przewodnik](./extract-emails-zimbra-tgz-aspose-email-java/)
-Dowiedz się, jak wydajnie wyodrębniać wiadomości e-mail z archiwów Zimbra TGZ przy użyciu Aspose.Email dla Java. Ten przewodnik obejmuje konfigurację, implementację i praktyczne zastosowania.
+### [How to Extract Emails from Zimbra TGZ Archives Using Aspose.Email for Java&#58; A Comprehensive Guide](./extract-emails-zimbra-tgz-aspose-email-java/)
+Dowiedz się, jak efektywnie wyodrębnić e‑maile z archiwów Zimbra TGZ przy użyciu Aspose.Email dla Java. Ten przewodnik obejmuje konfigurację, implementację oraz praktyczne zastosowania.
 
-### [Jak wyodrębnić potwierdzenia wiadomości MSG i wyniki głosowania za pomocą Aspose.Email dla Java: kompleksowy przewodnik](./aspose-email-java-msg-receipts-vote-results/)
-Dowiedz się, jak używać Aspose.Email for Java, aby wydajnie wyodrębniać potwierdzenia dostarczenia i odczytu, a także wyniki głosowania z plików MSG. Ten przewodnik obejmuje konfigurację, implementację kodu i najlepsze praktyki.
+### [How to Extract MSG Receipts & Vote Results Using Aspose.Email for Java&#58; A Comprehensive Guide](./aspose-email-java-msg-receipts-vote-results/)
+Dowiedz się, jak używać Aspose.Email dla Java do efektywnego wyodrębniania potwierdzeń dostawy i odczytu, a także wyników głosowania z plików MSG. Ten przewodnik obejmuje konfigurację, implementację kodu oraz najlepsze praktyki.
 
-### [Ekstrakcja wiadomości e-mail w Javie z plików NSF przy użyciu Aspose.Email: kompleksowy przewodnik](./java-email-extraction-nsf-aspose-email-guide/)
-Opanuj ekstrakcję wiadomości e-mail Java z plików NSF za pomocą Aspose.Email. Poznaj konfigurację, implementację i praktyczne zastosowania dla bezproblemowej integracji.
+### [Java Email Extraction from NSF Files Using Aspose.Email&#58; A Comprehensive Guide](./java-email-extraction-nsf-aspose-email-guide/)
+Opanuj wyodrębnianie e‑maili w Javie z plików NSF przy użyciu Aspose.Email. Poznaj konfigurację, implementację oraz praktyczne zastosowania zapewniające płynną integrację.
 
-### [Filtr spamu w wiadomościach e-mail w języku Java przy użyciu Aspose.Email: kompleksowy przewodnik szkoleniowy i testowy](./java-email-spam-filter-aspose-email-training-testing/)
-Naucz się budować wydajny filtr spamu w wiadomościach e-mail w Javie za pomocą Aspose.Email. Ten przewodnik obejmuje procesy konfiguracji, szkolenia i testowania w celu skutecznego wykrywania spamu.
+### [Java Email Spam Filter using Aspose.Email&#58; A Comprehensive Training & Testing Guide](./java-email-spam-filter-aspose-email-training-testing/)
+Naucz się budować efektywny filtr spamu e‑mail w Javie przy użyciu Aspose.Email. Ten przewodnik obejmuje konfigurację, szkolenie i procesy testowania w celu skutecznego wykrywania spamu.
 
-### [Poznaj zaawansowane techniki filtrowania wiadomości e-mail za pomocą Aspose.Email dla Java](./aspose-email-java-advanced-filtering-guide/)
-Poznaj zaawansowane filtrowanie wiadomości e-mail za pomocą Aspose.Email for Java. Uprość swoją skrzynkę odbiorczą, filtrując wiadomości e-mail na podstawie tematu, daty, nadawcy, domeny i innych.
+### [Master Advanced Email Filtering Techniques Using Aspose.Email for Java](./aspose-email-java-advanced-filtering-guide/)
+Poznaj zaawansowane filtrowanie e‑maili przy użyciu Aspose.Email dla Java. Usprawnij swoją skrzynkę odbiorczą, filtrując e‑maile według tematu, daty, nadawcy, domeny i innych kryteriów.
 
-### [Opanuj filtrowanie wiadomości e-mail w Javie za pomocą Aspose.Email: Podręcznik programisty dotyczący automatyzacji](./master-email-filtering-java-aspose-email-guide/)
-Dowiedz się, jak zautomatyzować filtrowanie wiadomości e-mail za pomocą Aspose.Email for Java. Łącz, filtruj i optymalizuj wiadomości e-mail serwera IMAP w wydajny sposób.
+### [Master Email Filtering in Java with Aspose.Email&#58; A Developer's Guide to Automation](./master-email-filtering-java-aspose-email-guide/)
+Dowiedz się, jak automatyzować filtrowanie e‑maili przy użyciu Aspose.Email dla Java. Łącz się, filtruj i optymalizuj e‑maile na serwerze IMAP w sposób efektywny.
 
-### [Zarządzanie pocztą elektroniczną: Twórz i zarządzaj plikami PST za pomocą Aspose.Email dla Java](./aspose-email-java-create-pst-guide/)
-Dowiedz się, jak tworzyć, zarządzać i optymalizować pliki PST za pomocą Aspose.Email for Java. Ten przewodnik obejmuje wszystko, od konfiguracji po zaawansowaną obsługę poczty e-mail.
+### [Master Email Management&#58; Create and Manage PST Files with Aspose.Email for Java](./aspose-email-java-create-pst-guide/)
+Dowiedz się, jak tworzyć, zarządzać i optymalizować pliki PST przy użyciu Aspose.Email dla Java. Ten przewodnik obejmuje wszystko, od konfiguracji po zaawansowane przetwarzanie e‑maili.
 
-### [Efektywne pobieranie podsumowań wiadomości e-mail za pomocą Aspose.Email dla Java](./retrieve-email-summaries-aspose-email-java/)
-Dowiedz się, jak używać Aspose.Email for Java, aby wydajnie pobierać podsumowania wiadomości e-mail według numeru sekwencyjnego lub unikalnego identyfikatora. Ulepsz swój przepływ pracy zarządzania wiadomościami e-mail już dziś.
+### [Retrieve Email Summaries Efficiently with Aspose.Email for Java](./retrieve-email-summaries-aspose-email-java/)
+Dowiedz się, jak używać Aspose.Email dla Java do efektywnego pobierania podsumowań e‑maili według numeru sekwencji lub unikalnego identyfikatora. Ulepsz dziś swój przepływ pracy zarządzania e‑mailami.
 
 ## Dodatkowe zasoby
 
-- [Aspose.Email dla dokumentacji Java](https://docs.aspose.com/email/java/)
-- [Aspose.Email dla Java API Reference](https://reference.aspose.com/email/java/)
+- [Dokumentacja Aspose.Email dla Java](https://docs.aspose.com/email/java/)
+- [Referencja API Aspose.Email dla Java](https://reference.aspose.com/email/java/)
 - [Pobierz Aspose.Email dla Java](https://releases.aspose.com/email/java/)
-- [Forum e-mailowe Aspose](https://forum.aspose.com/c/email)
+- [Forum Aspose.Email](https://forum.aspose.com/c/email)
 - [Bezpłatne wsparcie](https://forum.aspose.com/)
 - [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/)
 
@@ -62,3 +72,8 @@ Dowiedz się, jak używać Aspose.Email for Java, aby wydajnie pobierać podsumo
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Ostatnia aktualizacja:** 2026-03-09  
+**Autor:** Aspose
