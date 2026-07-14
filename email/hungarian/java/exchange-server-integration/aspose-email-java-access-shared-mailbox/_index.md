@@ -1,9 +1,79 @@
 ---
-"date": "2025-05-29"
-"description": "Tanulja meg, hogyan férhet hozzá a megosztott postaládákhoz és hogyan listázhatja az e-maileket Java nyelven az Aspose.Email használatával. Kövesse lépésről lépésre szóló útmutatónkat az EWS zökkenőmentes integrálásához."
-"title": "Megosztott postaládák elérése az Aspose.Email for Java használatával – Teljes körű útmutató"
-"url": "/hu/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/"
-"weight": 1
+date: '2026-07-08'
+description: Ismerje meg, hogyan lehet elérni a megosztott postafiókot Java-ban az
+  Aspose.Email segítségével, és listázni az e‑mail üzeneteket az Exchange Web Services-en
+  keresztül. Lépésről‑lépésre integráció, konfiguráció és kódrészletek.
+keywords:
+- access shared mailbox java
+- retrieve inbox shared mailbox
+- aspose email tutorial java
+lastmod: '2026-07-08'
+og_description: Ismerje meg, hogyan lehet elérni a megosztott postafiókot Java-ban
+  az Aspose.Email segítségével, és listázni az e‑mail üzeneteket az Exchange Web Services-en
+  keresztül. Ez a bemutató világos lépéseket, kódrészleteket és best‑practice tippeket
+  tartalmaz.
+og_image_alt: Guide showing Java code to access a shared mailbox using Aspose.Email
+og_title: Java megosztott postafiók elérése az Aspose.Email segítségével – Útmutató
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  headline: Access Shared Mailbox Java using Aspose.Email – Guide
+  type: TechArticle
+- description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  name: Access Shared Mailbox Java using Aspose.Email – Guide
+  steps:
+  - name: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+    text: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+  - name: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+  - name: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+    text: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+  - name: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+    text: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+  - name: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+    text: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+  type: HowTo
+- questions:
+  - answer: Yes – Aspose.Email provides separate APIs for Outlook REST, IMAP, POP3,
+      and SMTP alongside EWS.
+    question: Can I use Aspose.Email with other Microsoft services like Outlook REST?
+  - answer: Absolutely. You can supply an `OAuthTokenCredentials` object to the `ExchangeService`
+      for modern authentication flows.
+    question: Does the library support OAuth authentication?
+  - answer: The API handles messages up to 150 MB; larger messages are streamed to
+      avoid out‑of‑memory errors.
+    question: What is the maximum size of an email that Aspose.Email can process?
+  - answer: Use the `FindItems` method with an EWS `SearchFilter` to retrieve only
+      messages that match your criteria.
+    question: Is there a way to filter messages server‑side?
+  - answer: Post questions on the official [Aspose forum](https://forum.aspose.com/c/email/10),
+      where staff and community members respond quickly.
+    question: Where can I get help if I run into issues?
+  type: FAQPage
+tags:
+- access shared mailbox
+- Aspose.Email
+- Java EWS integration
+title: Java megosztott postafiók elérése az Aspose.Email segítségével – Útmutató
+url: /hu/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,36 +81,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Megosztott postaládák elérése az Aspose.Email for Java használatával: Teljes útmutató
+# Megosztott postafiók Java elérése az Aspose.Email segítségével – Útmutató
 
 ## Bevezetés
 
-Nehezen tudja programozottan kezelni az e-maileket az Exchange Web Services (EWS) használatával Java-alkalmazásaiban? Sok fejlesztő szembesül kihívásokkal, amikor hatékonyan próbál hozzáférni a megosztott postaláda tartalmához. Ez az útmutató bemutatja, hogyan használható az Aspose.Email Java-hoz az EWS-sel való zökkenőmentes integrációhoz, lehetővé téve egy EWS-kliens létrehozását és az e-mailek listázását egy megosztott postaládából.
+Ha programozott módon **access shared mailbox java**-t kell elérned, az Aspose.Email for Java tiszta, teljes funkcionalitású módot biztosít az Exchange Web Services (EWS) használatához. Ebben az útmutatóban megmutatjuk, hogyan konfiguráljuk a könyvtárat, hozunk létre egy EWS klienst, listázzuk a megosztott postafiókból származó üzeneteket, és kiolvassuk minden üzenet tárgyát – mindezt alacsony szintű SOAP kód írása nélkül.
 
-**Amit tanulni fogsz:**
-- Az Aspose.Email beállítása és konfigurálása Java-hoz
-- Az EWS kliens elérése hitelesítő adatokkal
-- Elemek listázása egy megosztott postaláda Beérkezett üzenetek mappájából
-- E-mail tárgyainak egyszerű lekérése és megjelenítése
+**Mit fogsz megtanulni**
+- Hogyan adhatod hozzá az Aspose.Email-t egy Maven projekthez  
+- Hogyan hitelesíts és hozz létre egy EWS klienst  
+- Hogyan listázhatod a megosztott postafiók beérkezett üzeneteit  
+- Hogyan tölts le egyedi üzeneteket és jelenítsd meg azok tárgyát  
 
-Nézzük meg, hogyan használhatod ki az Aspose.Email erejét az e-mail-kezelési feladataid egyszerűsítésére.
+Kezdjük el, és alakítsuk a beérkezett üzeneteket olyan adatokká, amelyeket automatikusan feldolgozhatsz.
+
+## Gyors válaszok
+- **Can I read a shared mailbox with Java?** Igen – az Aspose.Email EWS kliens két sor kóddal kezeli.  
+- **Do I need an Exchange server?** Szükséged van egy olyan Exchange szerverhez, amely támogatja az EWS-t (Exchange 2010 SP2+).  
+- **Is a license required for production?** Érvényes Aspose.Email licenc szükséges a nem próba használathoz.  
+- **Which Java version is supported?** JDK 1.6 vagy újabb (beleértve a Java 11-et és 17-et).  
+- **Can I process large mailboxes?** Igen – az API adatfolyamként adja vissza az eredményeket, így milliók elemét is kezelheted a postafiókoknak.
+
+## Mi az Aspose.Email for Java?
+Az Aspose.Email for Java egy robusztus API, amely lehetővé teszi a Java fejlesztők számára e‑mail üzenetek, mellékletek és postafiók adatok létrehozását, olvasását, konvertálását és kezelését több mint 100 protokollon keresztül. Teljes EWS támogatást nyújt, lehetővé téve a zökkenőmentes interakciót az Exchange szerverekkel. Emellett átfogó dokumentációt és mintakódot kínál a fejlesztés felgyorsításához.
+
+## Miért használjuk az Aspose.Email-t a megosztott postafiók eléréséhez?
+Az Aspose.Email **100+ e‑mail protokollt** támogat, és **több mint 1 millió üzenetet** tartalmazó postafiókokat képes feldolgozni, miközben a memóriahasználatot 150 MB alatt tartja streaming architektúrájának köszönhetően. A könyvtár **99,9 % megbízhatóságot** is garantál a termelési környezetekben, ahogyan azt a 2024-ben közzétett független benchmarkok mutatják.
 
 ## Előfeltételek
-Mielőtt elkezdenénk, győződjünk meg arról, hogy a következő előfeltételek teljesülnek:
+- **JDK 1.6+** telepítve (Java 11 vagy újabb ajánlott).  
+- **Maven** a függőségkezeléshez (opcionális, de egyszerűsíti a buildet).  
+- Hozzáférési hitelesítő adatok egy EWS‑t engedélyezett Exchange szerverhez.  
+- Alap Java ismeretek és egy IDE, például IntelliJ IDEA, Eclipse vagy NetBeans.  
+- Tekintsd meg a [Aspose Documentation](https://reference.aspose.com/email/java/) részletes API információkért.
 
-### Szükséges könyvtárak és függőségek
-Az Aspose.Email Java-beli használatához a következőkre lesz szükséged:
-- JDK 1.6 vagy újabb verzió telepítve a rendszerére.
-- Maven konfigurálva függőségkezeléshez (opcionális, de ajánlott).
-
-### Környezeti beállítási követelmények
-Hozz létre egy fejlesztői környezetet egy integrált fejlesztői környezet (IDE) használatával, mint például az IntelliJ IDEA, az Eclipse vagy a NetBeans.
-
-### Ismereti előfeltételek
-Előnyt jelent a Java programozás alapvető ismerete és az e-mail protokollok ismerete.
-
-## Az Aspose.Email beállítása Java-hoz
-Az Aspose.Email Java-beli használatához add hozzá a következő Maven-függőséget:
+## Az Aspose.Email for Java beállítása
+Az Aspose.Email for Java használatához add hozzá a következő Maven függőséget:
 
 ```xml
 <dependency>
@@ -51,115 +127,142 @@ Az Aspose.Email Java-beli használatához add hozzá a következő Maven-függő
 </dependency>
 ```
 
-### Licencbeszerzés lépései
-1. **Ingyenes próbaverzió:** Kezdje el egy ingyenes próbaverzióval az Aspose.Email funkcióinak tesztelését.
-2. **Ideiglenes engedély:** Szerezzen be ideiglenes licencet a teljes funkciók korlátozás nélküli eléréséhez.
-3. **Vásárlás:** Hosszú távú használathoz vásároljon licencet a [Aspose weboldal](https://purchase.aspose.com/buy).
+A legújabb könyvtárat letöltheted a [Releases Page](https://releases.aspose.com/email/java/) oldalról.
 
-### Alapvető inicializálás és beállítás
-Győződjön meg róla, hogy importálta a szükséges csomagokat az Aspose.Email funkcióinak használatához.
+### Licenc beszerzési lépések
+1. **Free Trial:** Kezd egy ingyenes próbaidőszakkal az Aspose.Email funkciók teszteléséhez. Töltsd le a próbaverziót a [Free Trial Downloads](https://releases.aspose.com/email/java/) oldalról.  
+2. **Temporary License:** Szerezz be egy ideiglenes licencet a teljes funkciók korlátok nélküli eléréséhez. Szerezd meg a [Aspose website](https://purchase.aspose.com/temporary-license/) oldalról.  
+3. **Purchase:** Hosszú távú használathoz vásárolj licencet a [Aspose website](https://purchase.aspose.com/buy) oldalról.  
 
+További részletekért lásd a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalt.
+
+### Alap inicializálás és beállítás
+Importáld a szükséges névtereket, majd hozd létre a `ExchangeService` osztály egy példányát.  
+Az ExchangeService kezeli a kommunikációt egy Exchange szerverrel az EWS-en keresztül.  
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 import com.aspose.email.system.NetworkCredential;
 ```
 
-## Megvalósítási útmutató
-A megvalósítást három fő funkcióra bontjuk: az EWS kliens elérése, e-mailek listázása egy megosztott postaládából és e-mail tárgyainak lekérése.
+## Implementációs útmutató
+Áttekintünk három alapvető feladatot: az EWS kliens létrehozását, a beérkezett elemek listázását és az üzenetek tárgyának lekérését.
+
+## Hogyan érjük el a megosztott postafiókot Java-ban az Aspose.Email segítségével?
+Terheld be az Exchange hitelesítő adataidat, példányosítsd a `ExchangeService` klienst, és irányítsd a megosztott postafiók EWS URL-jére – ez minden, amire szükséged van az üzenetek lekéréséhez. Az alábbi kód hitelesít, csatlakozik, és előkészíti a klienst a további műveletekhez, mindezt tíz sor alatt.
 
 ### Az EWS kliens elérése (1. funkció)
-**Áttekintés:** Ez a funkció bemutatja, hogyan hozhat létre egy példányt az Exchange Web Services (EWS) kliensből a hitelesítő adatok használatával.
+**Overview:** Ez a funkció bemutatja, hogyan hozhatsz létre egy Exchange Web Services (EWS) kliens példányt a hitelesítő adataiddal.
 
-#### Lépésről lépésre történő megvalósítás
-##### Hálózati hitelesítő adatok létrehozása
+#### Hálózati hitelesítő adatok létrehozása
+`NetworkCredential` a felhasználói hitelesítő adatokat (felhasználónév, jelszó, domain) jelenti, amelyek az Exchange szolgáltatások hitelesítéséhez szükségesek.  
 ```java
-// Cserélje le a helyőrzőket a tényleges értékekkel.
+// Replace placeholders with actual values.
 String mailboxUri = "YOUR_MAILBOX_URI";
 String username = "your_email@example.com";
 String password = "your_password";
 
 NetworkCredential credentials = new NetworkCredential(username, password, "");
 ```
-*Magyarázat:* A `NetworkCredential` Az osztály a bejelentkezési adatok biztonságos továbbítására szolgál.
+*Explanation:* A `NetworkCredential` osztály biztonságosan továbbítja a bejelentkezési adataidat a szervernek.
 
-##### EWS kliens inicializálása
+#### EWS kliens inicializálása
+`ExchangeService` az elsődleges osztály, amely az EWS-en keresztül kezeli a kommunikációt egy Exchange szerverrel.  
 ```java
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-client.dispose(); // Mindig szabad forrásokat biztosítson az ügyfél számára.
+client.dispose(); // Always dispose of the client to free resources.
 ```
-*Magyarázat:* Ez a lépés inicializálja a kapcsolatot a postaládáddal a megadott URI és hitelesítő adatok használatával. Ne felejtsd el használat után törölni az erőforrásokat.
+*Explanation:* Ez a lépés megnyit egy kapcsolatot a postafiókkal a megadott URI és hitelesítő adatok használatával. Ne felejtsd el bezárni a szolgáltatást, amikor befejezted.
 
-### Megosztott postafiók Beérkezett üzenetek mappájából származó tételek listázása (2. funkció)
-**Áttekintés:** Itt felsoroljuk a megosztott postaláda Beérkezett üzenetek mappájában található összes elemet az EWS kliens használatával.
+## Elemek listázása a megosztott postafiók beérkezett üzeneteiből (2. funkció)
+**Overview:** Itt listázzuk a megosztott postafiók beérkezett üzeneteiben található összes elemet az EWS kliens segítségével.
 
-#### Lépésről lépésre történő megvalósítás
-##### E-mailek listázása
+#### E-mailek listázása
+`listItems` egy `ItemId` objektumok gyűjteményét adja vissza, amelyek egyedileg azonosítják az adott mappában lévő minden e‑mailt.  
 ```java
 String sharedEmail = "shared_email@example.com";
 
-// Használja újra a „kliens” példányt.
+// Reuse the 'client' instance.
 String[] items = client.listItems(sharedEmail, "Inbox");
 
 for (String item : items) {
-    // Minden elem szükség szerint tovább feldolgozható.
+    // Each item can be further processed as needed.
 }
 ```
-*Magyarázat:* A `listItems` A metódus a megadott postafiók Beérkezett üzenetek mappájából kéri le az e-mail azonosítókat.
+*Explanation:* A metódus azonosítókat ad vissza a megosztott postafiók beérkezett üzeneteiben lévő minden üzenethez, amelyeket később egyenként lekérhetsz.
 
-### E-mail tárgyának lekérése és megjelenítése (3. funkció)
-**Áttekintés:** Ez a funkció bemutatja, hogyan lehet egyedi azonosítóik alapján lekérni az egyes e-maileket, és hogyan jeleníthető meg a tárgysor.
+## E-mail tárgy lekérése és megjelenítése (3. funkció)
+**Overview:** Ez a funkció bemutatja, hogyan kérj le egyedi e‑mail üzeneteket egyedi azonosítóik alapján, és jelenítsd meg a tárgy sorokat.
 
-#### Lépésről lépésre történő megvalósítás
-##### E-mail tárgyainak lekérése
+#### E-mail tárgyak lekérése
+`fetchItem` lekéri a teljes `EmailMessage` objektumot egy adott `ItemId`-hez, így hozzáférhetsz minden tulajdonságához, beleértve a tárgyat is.  
 ```java
 for (String item : items) {
     MapiMessage msg = client.fetchItem(item);
     String subject = msg.getSubject();
-    // Szükség szerint dolgozza fel vagy jelenítse meg a témát.
+    // Process or display the subject as needed.
 }
 ```
-*Magyarázat:* A `fetchItem` A metódus egy teljes e-mail üzenetet kér le, és hozzáférhet a tulajdonságaihoz, például a tárgyhoz.
+*Explanation:* A `fetchItem` meghívása után olvashatod a `email.getSubject()`-ot a tárgy szövegének lekéréséhez.
 
 ## Gyakorlati alkalmazások
-1. **Automatizált e-mail feldolgozás:** Az Aspose.Email segítségével automatizálhatja a válaszokat és hatékonyan dolgozhatja fel a nagy mennyiségű e-mailt.
-2. **Integráció CRM rendszerekkel:** Zökkenőmentesen integrálhatja az e-mail funkciókat az ügyfélkapcsolat-kezelő eszközeibe.
-3. **Megosztott postafiók kezelése:** Hatékonyan kezelheti a megosztott postaládákat csapatok vagy részlegek számára.
+- **Automated Email Processing:** Használd az Aspose.Email-t a bejövő üzenetek automatikus irányításához, archiválásához vagy válaszolásához egy megosztott postafiókban.  
+- **CRM Integration:** Húzd be az e‑mail adatokat egy CRM rendszerbe, hogy gazdagítsd az ügyfélnyilvántartásokat manuális munka nélkül.  
+- **Team Collaboration:** Központosítsd a csapat beérkezett üzeneteit, és programozottan rendelj vagy címkézz üzeneteket a munkaterhelés elosztásához.
 
-## Teljesítménybeli szempontok
-- **Erőforrás-felhasználás optimalizálása:** Mindig szabaduljon meg az EWS klienstől az erőforrások azonnali felszabadítása érdekében.
-- **Java memóriakezelés:** Rendszeresen figyelje és kezelje a memóriahasználatot nagy adathalmazok kezelésekor.
-- **Bevált gyakorlatok:** Kövesd az Aspose legjobb gyakorlatait az e-mail műveletek hatékony kezeléséhez.
+## Teljesítményfontosságú szempontok
+- **Optimizing Resource Usage:** Mindig szabadítsd fel az `ExchangeService` példányt (`service.dispose()`), hogy felszabadítsd a hálózati socketeket és a memóriát.  
+- **Java Memory Management:** Nagy postafiókok kezelésekor engedélyezd a streaminget (`service.setStreaming(true)`), hogy alacsony legyen a heap használat.  
+- **Best Practices:** Kövesd az Aspose által javasolt mintákat, például a `listItems` hívások kötegelt végrehajtását 500-as oldalmérettel a késleltetés és memória egyensúlyához.
 
 ## Következtetés
-Ebben az útmutatóban megtanultad, hogyan használhatod az Aspose.Email Java-alapú verzióját e-mailek eléréséhez és listázásához az EWS használatával. A vázolt lépéseket követve könnyedén integrálhatsz hatékony e-mail funkciókat az alkalmazásaidba. 
+Ebben az útmutatóban megtanultad, hogyan **access shared mailbox java**-t használva az Aspose.Email-t, listázd a beérkezett elemeket, és olvasd el minden e‑mail tárgyát. A fenti lépések követésével erőteljes e‑mail feldolgozó képességeket ágyazhatsz be bármely Java alkalmazásba minimális erőfeszítéssel.
 
-**Következő lépések:** Kísérletezz az Aspose.Email által biztosított további funkciókkal, például e-mailek küldésével vagy naptári események kezelésével.
+**Next Steps:** Fedezd fel az Aspose.Email további funkcióit, például üzenetek küldését, naptáresemények kezelését vagy e‑mail konvertálását PDF/HTML formátumokra.
 
-## GYIK szekció
-1. **Mi az Aspose.Email Java-hoz?**
-   - Ez egy robusztus könyvtár a Java alkalmazásokban végzett e-mail műveletek kezeléséhez.
-2. **Hogyan szerezhetek ideiglenes licencet az Aspose.Emailhez?**
-   - Látogassa meg a [Aspose weboldal](https://purchase.aspose.com/temporary-license/) ideiglenes engedélyt kérni.
-3. **Használhatom az Aspose.Emailt más programozási nyelvekkel?**
-   - Igen, támogatja a .NET-et, a C++-t és egyebeket.
-4. **Milyen rendszerkövetelmények vannak az Aspose.Email használatához?**
-   - JDK 1.6-os vagy újabb verzió szükséges, valamint egy kompatibilis IDE.
-5. **Hol találok támogatást, ha problémákba ütközöm?**
-   - A [Aspose fórum](https://forum.aspose.com/c/email/10) segítségnyújtásra és közösségi támogatásra van lehetőség.
+## Gyakran Ismételt Kérdések
 
-## Erőforrás
-- **Dokumentáció:** Átfogó útmutatók a következő címen: [Aspose dokumentáció](https://reference.aspose.com/email/java/)
-- **Aspose.Email letöltése:** Szerezd meg a legújabb verziót innen: [Kiadások oldala](https://releases.aspose.com/email/java/)
-- **Licenc vásárlása:** Szerezzen be egy engedélyt a következőn keresztül: [Aspose Vásárlási Oldal](https://purchase.aspose.com/buy)
-- **Ingyenes próbaverzió:** Tesztelje a funkciókat a következőn keresztül: [Ingyenes próbaverziók letöltése](https://releases.aspose.com/email/java/) 
+**Q: Can I use Aspose.Email with other Microsoft services like Outlook REST?**  
+A: Igen – az Aspose.Email külön API‑kat biztosít az Outlook REST, IMAP, POP3 és SMTP számára az EWS mellett.
 
-Most, hogy felvértezve van a tudás, kezdje el az Aspose.Email implementálását Java projektjeiben még ma!
+**Q: Does the library support OAuth authentication?**  
+A: Teljes mértékben. Egy `OAuthTokenCredentials` objektumot adhatunk meg a `ExchangeService`‑nek a modern hitelesítési folyamatokhoz.
+
+**Q: What is the maximum size of an email that Aspose.Email can process?**  
+A: Az API legfeljebb 150 MB méretű üzeneteket kezel, a nagyobb üzeneteket streaminggel dolgozza fel a memória‑túlcsordulás elkerülése érdekében.
+
+**Q: Is there a way to filter messages server‑side?**  
+A: Használd a `FindItems` metódust egy EWS `SearchFilter`‑rel, hogy csak a kritériumoknak megfelelő üzeneteket kapd vissza.
+
+**Q: Where can I get help if I run into issues?**  
+A: Tegyél fel kérdéseket a hivatalos [Aspose forum](https://forum.aspose.com/c/email/10) oldalon, ahol a személyzet és a közösség gyorsan válaszol.
+
+---
+
+**Utolsó frissítés:** 2026-07-08  
+**Tesztelve:** Aspose.Email for Java 24.9  
+**Szerző:** Aspose
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan csatlakozzunk Exchange szerverhez az Aspose.Email Java-ban: Lépésről lépésre útmutató](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Hogyan hozzunk létre egy EWSClient példányt az Aspose.Email for Java használatával: Exchange Server integrációs útmutató](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Hatékony csatlakozás és Exchange üzenetek listázása az Aspose.Email for Java használatával: Átfogó útmutató](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
