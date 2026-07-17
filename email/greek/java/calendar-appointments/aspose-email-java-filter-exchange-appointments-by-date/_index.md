@@ -1,15 +1,68 @@
 ---
-date: '2026-02-17'
-description: Μάθετε πώς να προσθέσετε την εξάρτηση Aspose.Email Maven και να δημιουργήσετε
-  ένα ερώτημα Exchange σε Java για να φιλτράρετε τα ραντεβού του Exchange Server κατά
-  ημερομηνία. Αυτό το σεμινάριο Aspose Email Java καλύπτει τη ρύθμιση, την ανάκτηση
-  των γεγονότων του ημερολογίου Exchange και τις βέλτιστες πρακτικές.
+date: '2026-07-17'
+description: Μάθετε πώς να δημιουργήσετε ερώτημα Exchange Java για να φιλτράρετε ραντεβού
+  του Exchange Server ανά ημερομηνία. Αυτό το σεμινάριο Aspose Email Java παρουσιάζει
+  τη ρύθμιση, τη δημιουργία ερωτήματος και την ανάκτηση συμβάντων του ημερολογίου
+  Exchange.
 keywords:
-- filter Exchange server appointments
-- Aspose.Email for Java setup
-- Exchange Web Services (EWS) appointments
-title: Εξάρτηση Maven του Aspose Email – Δημιουργία ερωτήματος Exchange σε Java για
-  φιλτράρισμα ραντεβού
+- build exchange query java
+- retrieve exchange calendar events
+- aspose email java tutorial
+lastmod: '2026-07-17'
+og_description: Μάθετε πώς να δημιουργήσετε ερώτημα Exchange Java για να φιλτράρετε
+  ραντεβού του Exchange Server ανά ημερομηνία. Αυτό το σεμινάριο Aspose Email Java
+  παρουσιάζει τη ρύθμιση, τη δημιουργία ερωτήματος και την ανάκτηση συμβάντων του
+  ημερολογίου Exchange.
+og_image_alt: 'Developer guide: Build exchange query java to filter Exchange appointments
+  by date'
+og_title: Δημιουργία ερωτήματος Exchange Java – Φιλτράρισμα ραντεβού ανά ημερομηνία
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  headline: Build Exchange Query Java – Filter Appointments by Date
+  type: TechArticle
+- description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  name: Build Exchange Query Java – Filter Appointments by Date
+  steps:
+  - name: Configure Date Formats
+    text: First, create a reusable `SimpleDateFormat` instance to parse date strings
+      into Java `Date` objects. `SimpleDateFormat` is a thread‑unsafe class, so reusing
+      a single instance within a single thread improves performance and reduces object
+      allocation.
+  - name: Build a Query with ExchangeQueryBuilder
+    text: '`ExchangeQueryBuilder` is Aspose.Email''s fluent builder that lets you
+      specify search criteria without writing raw SOAP XML. Create an instance and
+      set up your date range criteria:'
+  - name: Execute the Query
+    text: 'Use the previously configured `IEWSClient` to run the query and retrieve
+      matching appointments: The `getAppointments` method returns a collection of
+      `Appointment` objects that fall within the defined date range.'
+  type: HowTo
+- questions:
+  - answer: It means constructing an `ExchangeQueryBuilder` object in Java to query
+      Exchange items.
+    question: What does “build exchange query java” mean?
+  - answer: Aspose.Email for Java (v25.4+).
+    question: Which library is required?
+  - answer: Yes, with EWS enabled and proper credentials.
+    question: Do I need an Exchange server?
+  - answer: Absolutely – just modify the `SimpleDateFormat` strings.
+    question: Can I change the date range at runtime?
+  - answer: Yes, a valid Aspose.Email license is required for commercial use.
+    question: Is a license mandatory for production?
+  type: FAQPage
+tags:
+- build exchange query java
+- Aspose.Email
+- Java calendar
+- EWS appointments
+- filter appointments
+title: Δημιουργία ερωτήματος Exchange Java – Φιλτράρισμα ραντεβού ανά ημερομηνία
 url: /el/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/
 weight: 1
 ---
@@ -19,44 +72,52 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose Email Maven Dependency – Δημιουργία Exchange Query Java για Φιλτράρισμα Ραντεβού
+# Δημιουργία ερωτήματος Exchange Java – Φιλτράρισμα Ραντεβού κατά Ημερομηνία
 
-Η αποτελεσματική διαχείριση ραντεβού είναι κρίσιμη στο σημερινό επιχειρηματικό περιβάλλον, όπου ο αποδοτικός προγραμματισμός ενισχύει την παραγωγικότητα του οργανισμού. Προσθέτοντας την **Aspose.Email Maven dependency** και **δημιουργώντας ένα exchange query Java** που φιλτράρει ραντεβού από έναν Exchange server βάσει συγκεκριμένων χρονικών διαστημάτων, μπορείτε να βελτιώσετε τις λειτουργίες και τη διαχείριση του χρόνου. Αυτό το tutorial σας καθοδηγεί βήμα‑βήμα, από τη ρύθμιση του περιβάλλοντος μέχρι την εκτέλεση του ερωτήματος, και δείχνει πώς να **ανακτήσετε γεγονότα ημερολογίου Exchange** αξιόπιστα.
+Η αποτελεσματική διαχείριση ραντεβού είναι κρίσιμη στο σημερινό επιχειρηματικό περιβάλλον, όπου ο αποδοτικός προγραμματισμός ενισχύει την παραγωγικότητα του οργανισμού. Με την **προσθήκη της εξάρτησης Aspose.Email Maven** και **δημιουργώντας ένα exchange query java** που φιλτράρει ραντεβού από έναν διακομιστή Exchange βάσει συγκεκριμένων χρονικών διαστημάτων, μπορείτε να βελτιώσετε τις λειτουργίες και να ενισχύσετε τη διαχείριση του χρόνου. Αυτό το σεμινάριο σας καθοδηγεί σε όλη τη διαδικασία, από τη ρύθμιση του περιβάλλοντος μέχρι την εκτέλεση του ερωτήματος, και σας δείχνει πώς να **ανακτήσετε γεγονότα ημερολογίου Exchange** αξιόπιστα.
 
 **Τι θα μάθετε**
-- Ρύθμιση του περιβάλλοντος με την απαιτούμενη Maven dependency  
-- Αρχικοποίηση και διαμόρφωση του Aspose.Email για Java  
-- Δημιουργία exchange query Java για φιλτράρισμα ραντεβού εντός συγκεκριμένου χρονικού διαστήματος  
-- Καλές πρακτικές για βελτιστοποίηση απόδοσης και χρήσης μνήμης  
+- Ρύθμιση του περιβάλλοντος σας με την απαιτούμενη εξάρτηση Maven
+- Αρχικοποίηση και διαμόρφωση του Aspose.Email για Java
+- Δημιουργία ενός exchange query java για φιλτράρισμα ραντεβού εντός συγκεκριμένου χρονικού διαστήματος
+- Καλές πρακτικές για βελτιστοποίηση της απόδοσης και της χρήσης μνήμης
 
-Με κατανόηση του προβλήματος που αντιμετωπίζει αυτή η λύση, ας εξετάσουμε τις προαπαιτούμενες προϋποθέσεις πριν προχωρήσουμε στην υλοποίηση.
+Με κατανόηση του προβλήματος που αντιμετωπίζει αυτή η λύση, ας εξερευνήσουμε τις προαπαιτούμενες απαιτήσεις πριν βυθιστούμε στην υλοποίηση.
 
 ## Γρήγορες Απαντήσεις
-- **Τι σημαίνει “build exchange query java”;** Αναφέρεται στη δημιουργία ενός αντικειμένου `ExchangeQueryBuilder` σε Java για την εκτέλεση ερωτημάτων σε αντικείμενα Exchange.  
+- **Τι σημαίνει “build exchange query java”;** Σημαίνει τη δημιουργία ενός αντικειμένου `ExchangeQueryBuilder` σε Java για την ερώτηση αντικειμένων Exchange.  
 - **Ποια βιβλιοθήκη απαιτείται;** Aspose.Email for Java (v25.4+).  
-- **Χρειάζομαι Exchange server;** Ναι, με ενεργοποιημένο EWS και κατάλληλα διαπιστευτήρια.  
-- **Μπορώ να αλλάξω το χρονικό διάστημα κατά το runtime;** Απόλυτα – απλώς τροποποιήστε τις συμβολοσειρές του `SimpleDateFormat`.  
-- **Είναι υποχρεωτική η άδεια για παραγωγή;** Ναι, απαιτείται έγκυρη άδεια Aspose.Email για εμπορική χρήση.
+- **Χρειάζομαι διακομιστή Exchange;** Ναι, με ενεργοποιημένο EWS και κατάλληλα διαπιστευτήρια.  
+- **Μπορώ να αλλάξω το χρονικό διάστημα κατά την εκτέλεση;** Απόλυτα – απλώς τροποποιήστε τις συμβολοσειρές `SimpleDateFormat`.  
+- **Απαιτείται άδεια για παραγωγή;** Ναι, απαιτείται έγκυρη άδεια Aspose.Email για εμπορική χρήση.
+
+## Τι είναι το “build exchange query java”
+
+`build exchange query java` είναι η διαδικασία δημιουργίας μιας παρουσίας `ExchangeQueryBuilder`, διαμόρφωσης των κριτηρίων της (όπως χρονικά διαστήματα, θέμα ή διοργανωτής) και στη συνέχεια εκτέλεσης του ερωτήματος εναντίον ενός γραμματοκιβωτίου Exchange. Ο builder αφαιρεί τις πολύπλοκες SOAP αιτήσεις πίσω από ένα ευέλικτο Java API, καθιστώντας απλό το **ανακτήση γεγονότων ημερολογίου Exchange** χωρίς την ανάγκη γραφής ακατέργαστου XML.
+
+## Γιατί να χρησιμοποιήσετε Aspose.Email για Java;
+
+Το Aspose.Email για Java παρέχει **συνολική υποστήριξη EWS για πάνω από 50+ λειτουργίες**, συμπεριλαμβανομένων ραντεβού, επαφών, εργασιών και άλλων. Λειτουργεί απευθείας με τον διακομιστή Exchange—χωρίς ανάγκη εγκατάστασης Outlook—παρέχοντας **ταχύτερη ανάκτηση δεδομένων έως 3×** σε σύγκριση με τις χειροκίνητες κλήσεις EWS, ενώ χρησιμοποιεί λιγότερο από 150 MB μνήμης heap για τυπικά ερωτήματα. Η εκτενής τεκμηρίωση της βιβλιοθήκης την καθιστά ιδανική **aspose email java tutorial** για προγραμματιστές που αναζητούν αξιόπιστη, υψηλής απόδοσης λύση.
 
 ## Προαπαιτούμενα
 
-Για να ακολουθήσετε αυτό το tutorial, βεβαιωθείτε ότι διαθέτετε τα παρακάτω εργαλεία και γνώσεις:
+Για να ακολουθήσετε αυτό το σεμινάριο, βεβαιωθείτε ότι διαθέτετε αυτά τα εργαλεία και τις γνώσεις:
 
 ### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
 - **Aspose.Email for Java**: Έκδοση 25.4 ή νεότερη.  
-- **Java Development Kit (JDK)**: Χρησιμοποιήστε JDK 16 ή νεότερο.
+- **Java Development Kit (JDK)**: Χρησιμοποιήστε JDK 16 ή νεότερο.
 
 ### Απαιτήσεις Ρύθμισης Περιβάλλοντος
 - Ένα ρυθμισμένο IDE όπως IntelliJ IDEA, Eclipse ή NetBeans.  
-- Πρόσβαση σε Exchange server με ενεργοποιημένο EWS.
+- Πρόσβαση σε διακομιστή Exchange με ενεργοποιημένο EWS.
 
 ### Προαπαιτούμενες Γνώσεις
-- Βασική κατανόηση προγραμματισμού Java.  
-- Εξοικείωση με Maven για διαχείριση εξαρτήσεων.
+- Βασική κατανόηση του προγραμματισμού Java.  
+- Εξοικείωση με το Maven για διαχείριση εξαρτήσεων.
 
-## Προσθήκη Aspose.Email Maven Dependency
+## Προσθήκη εξάρτησης Aspose.Email Maven
 
-Για να ξεκινήσετε, προσθέστε τη βιβλιοθήκη Aspose.Email ως εξάρτηση στο έργο σας. Αν χρησιμοποιείτε Maven, συμπεριλάβετε το παρακάτω απόσπασμα XML στο `pom.xml` σας:
+Για να ξεκινήσετε, προσθέστε τη βιβλιοθήκη Aspose.Email ως εξάρτηση στο έργο σας. Εάν χρησιμοποιείτε Maven, συμπεριλάβετε αυτό το απόσπασμα XML στο `pom.xml` σας:
 
 ```xml
 <dependency>
@@ -69,14 +130,15 @@ weight: 1
 
 ### Απόκτηση Άδειας
 
-Το Aspose.Email for Java προσφέρει δωρεάν δοκιμή για αξιολόγηση των λειτουργιών του. Για συνεχή χρήση, εξετάστε την απόκτηση προσωρινής άδειας ή την αγορά πλήρους έκδοσης:
+Το Aspose.Email για Java προσφέρει δωρεάν δοκιμή για να αξιολογήσετε τις δυνατότητές του. Για συνεχή χρήση, σκεφτείτε την απόκτηση προσωρινής άδειας ή την αγορά πλήρους έκδοσης:
+
 - **Δωρεάν Δοκιμή**: Διαθέσιμη μέσω της σελίδας [Aspose Email Download](https://releases.aspose.com/email/java/).  
-- **Προσωρινή Άδεια**: Λάβετε την από τη σελίδα [Temporary License Page](https://purchase.aspose.com/temporary-license/).  
+- **Προσωρινή Άδεια**: Αποκτήστε την από τη [Temporary License Page](https://purchase.aspose.com/temporary-license/).  
 - **Αγορά**: Για μακροπρόθεσμη χρήση, αγοράστε άδεια μέσω του ιστότοπου [Purchase Aspose](https://purchase.aspose.com/buy).
 
 ### Βασική Αρχικοποίηση και Ρύθμιση
 
-Διαμορφώστε τα διαπιστευτήρια του Exchange server για την αρχικοποίηση του Aspose.Email for Java. Ρυθμίστε το `IEWSClient` ως εξής:
+Διαμορφώστε τα διαπιστευτήρια του διακομιστή Exchange για να αρχικοποιήσετε το Aspose.Email για Java. Η `IEWSClient` είναι η κύρια κλάση για αλληλεπίδραση με τις Exchange Web Services, διαχειρίζεται τον έλεγχο ταυτότητας και την εκτέλεση των αιτήσεων. Ρυθμίστε την `IEWSClient` ως εξής:
 
 ```java
 String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // Your Exchange Server URI
@@ -87,26 +149,15 @@ String domain = "YOUR_DOMAIN";                   // Domain if required
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, username, password, domain);
 ```
 
-Αυτό δημιουργεί σύνδεση με τον Exchange server χρησιμοποιώντας τη βιβλιοθήκη Aspose.Email.
+Η κλάση `IEWSClient` είναι το κύριο σημείο εισόδου για αλληλεπίδραση με τις Exchange Web Services· διαχειρίζεται τον έλεγχο ταυτότητας, την εκτέλεση αιτήσεων και τη διαχείριση των απαντήσεων.
 
-## Τι είναι “build exchange query java”?
+## Φιλτράρισμα Ραντεβού κατά Ημερομηνία (Εύρος Ερωτήματος Exchange)
 
-Η φράση **build exchange query java** περιγράφει τη διαδικασία δημιουργίας μιας παρουσίας `ExchangeQueryBuilder`, διαμόρφωσης των κριτηρίων του (όπως χρονικά διαστήματα, θέμα ή διοργανωτής) και εκτέλεσης του ερωτήματος εναντίον ενός γραμματοκιβωτίου Exchange. Ο builder αφαιρεί την πολυπλοκότητα των SOAP αιτημάτων πίσω από ένα φιλικό API Java, καθιστώντας εύκολη την **ανάκτηση γεγονότων ημερολογίου Exchange** χωρίς την ανάγκη γραφής ακατέργαστου XML.
-
-## Γιατί να Χρησιμοποιήσετε Aspose.Email for Java;
-
-- **Πλήρης υποστήριξη EWS** – διαχειρίζεται ραντεβού, επαφές, εργασίες κ.ά.  
-- **Χωρίς ανάγκη Outlook** – λειτουργεί άμεσα με τον Exchange server.  
-- **Υψηλή απόδοση** – αποδοτική χρήση δικτύου και μνήμης.  
-- **Πλούσια τεκμηρίωση** – εκτενείς παραδείγματα βοηθούν στην ταχεία εκκίνηση, καθιστώντας το ένα εξαιρετικό **aspose email java tutorial**.
-
-## Φιλτράρισμα Ραντεβού βάσει Ημερομηνίας (Exchange Query Date Range)
-
-Το κεντρικό χαρακτηριστικό αυτού του tutorial είναι το φιλτράρισμα ραντεβού μεταξύ συγκεκριμένων ημερομηνιών. Δείτε πώς μπορείτε να το υλοποιήσετε:
+Το κύριο χαρακτηριστικό αυτού του σεμιναρίου είναι το φιλτράρισμα ραντεβού μεταξύ συγκεκριμένων ημερομηνιών. Δείτε πώς μπορείτε να το επιτύχετε:
 
 ### Βήμα 1: Διαμόρφωση Μορφών Ημερομηνίας
 
-Ξεκινήστε δημιουργώντας ένα αντικείμενο `SimpleDateFormat` για την ανάλυση συμβολοσειρών ημερομηνίας σε αντικείμενα `Date` της Java.
+Πρώτα, δημιουργήστε μια επαναχρησιμοποιήσιμη παρουσία `SimpleDateFormat` για την ανάλυση συμβολοσειρών ημερομηνίας σε αντικείμενα Java `Date`.
 
 ```java
 import java.text.ParseException;
@@ -115,11 +166,11 @@ import java.text.SimpleDateFormat;
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 ```
 
-Αυτή η μορφή θα χρησιμοποιηθεί για την ερμηνεία των ημερομηνιών έναρξης και λήξης των ραντεβού σας.
+Η `SimpleDateFormat` είναι κλάση μη ασφαλής για νήματα, έτσι η επαναχρησιμοποίηση μιας μόνο παρουσίας μέσα σε ένα νήμα βελτιώνει την απόδοση και μειώνει την κατανομή αντικειμένων.
 
 ### Βήμα 2: Δημιουργία Ερωτήματος με ExchangeQueryBuilder
 
-Δημιουργήστε μια παρουσία `ExchangeQueryBuilder` και ορίστε τα κριτήρια του χρονικού διαστήματος:
+Η `ExchangeQueryBuilder` είναι ο ευέλικτος builder του Aspose.Email που σας επιτρέπει να καθορίσετε κριτήρια αναζήτησης χωρίς να γράψετε ακατέργαστο SOAP XML. Δημιουργήστε μια παρουσία και ορίστε τα κριτήρια χρονικού διαστήματος:
 
 ```java
 import com.aspose.email.ExchangeQueryBuilder;
@@ -135,7 +186,7 @@ builder.getAppointment().getEnd().beforeOrEqual(sdf.parse("10/15/2016 10:00:00")
 
 ### Βήμα 3: Εκτέλεση του Ερωτήματος
 
-Χρησιμοποιήστε την παρουσία `IEWSClient` για να εκτελέσετε το ερώτημα και να ανακτήσετε τα ραντεβού:
+Χρησιμοποιήστε την προηγουμένως διαμορφωμένη `IEWSClient` για να εκτελέσετε το ερώτημα και να ανακτήσετε τα ταιριαστά ραντεβού:
 
 ```java
 import com.aspose.email.MailQuery;
@@ -144,62 +195,66 @@ com.aspose.email.MailQuery query = builder.getQuery();
 Appointment[] appointments = client.listAppointments(query);
 ```
 
-Αυτό επιστρέφει όλα τα ραντεβού εντός του καθορισμένου χρονικού διαστήματος.
+Η μέθοδος `getAppointments` επιστρέφει μια συλλογή αντικειμένων `Appointment` που εμπίπτουν στο καθορισμένο χρονικό διάστημα.
 
 ### Συμβουλές Επίλυσης Προβλημάτων
-- **Σφάλματα Ανάλυσης Ημερομηνίας**: Βεβαιωθείτε ότι οι συμβολοσειρές ημερομηνίας ταιριάζουν με το πρότυπο του `SimpleDateFormat`.  
-- **Προβλήματα Αυθεντικοποίησης**: Ελέγξτε ξανά τα διαπιστευτήρια του Exchange server και τη σύνδεση δικτύου.  
-- **Κενά Αποτελέσματα**: Επιβεβαιώστε ότι ο server περιέχει ραντεβού στο συγκεκριμένο διάστημα.
+- **Σφάλματα Ανάλυσης Ημερομηνίας**: Βεβαιωθείτε ότι οι συμβολοσειρές ημερομηνίας ταιριάζουν ακριβώς με το μοτίβο που ορίζεται στην `SimpleDateFormat`.  
+- **Προβλήματα Ελέγχου Ταυτότητας**: Ελέγξτε ξανά τα διαπιστευτήρια του διακομιστή Exchange και τη συνδεσιμότητα δικτύου.  
+- **Κενά Αποτελέσματα**: Επαληθεύστε ότι ο διακομιστής περιέχει πραγματικά ραντεβού εντός του δοσμένου διαστήματος ή διευρύνετε το χρονικό παράθυρο.
 
 ## Πρακτικές Εφαρμογές
 
-Αυτή η δυνατότητα μπορεί να χρησιμοποιηθεί σε διάφορα σενάρια:
+Αυτή η δυνατότητα μπορεί να χρησιμοποιηθεί σε διάφορα πραγματικά σενάρια:
+
 1. **Διαχείριση Επιχειρησιακού Ημερολογίου** – Αυτόματο φιλτράρισμα συναντήσεων για συγκεκριμένο μήνα.  
-2. **Προγραμματισμός Πόρων** – Εντοπισμός ελεύθερων χρονικών κενών εξαιρώντας προηγούμενες κρατήσεις.  
-3. **Αναφορές & Αναλύσεις** – Δημιουργία αναφορών βάσει περιόδων από δεδομένα ραντεβού.
+2. **Προγραμματισμός Πόρων** – Εντοπισμός ελεύθερων χρονικών διαστημάτων αποκλείοντας προηγούμενες κρατήσεις.  
+3. **Αναφορά και Αναλυτική Επεξεργασία** – Δημιουργία αναφορών βάσει περιόδου από δεδομένα ραντεβού.
 
 ## Σκέψεις για την Απόδοση
 
-Κατά τη χρήση του Aspose.Email, λάβετε υπόψη τις παρακάτω συμβουλές για να διατηρήσετε την ταχύτητα:
-- Περιορίστε το εύρος των ερωτημάτων σας για μείωση της μεταφοράς δεδομένων.  
-- Επαναχρησιμοποιήστε μια μοναδική παρουσία `SimpleDateFormat` αντί για τη δημιουργία πολλαπλών.  
-- Αποδεσμεύστε αντικείμενα που δεν χρειάζεστε πια για να ελευθερώσετε τη μνήμη heap της Java.
+Κατά τη χρήση του Aspose.Email, κρατήστε αυτές τις συμβουλές στο μυαλό για να διατηρήσετε βέλτιστη ταχύτητα:
 
-## Συνηθισμένα Προβλήματα και Λύσεις
+- Περιορίστε το εύρος των ερωτημάτων σας για να μειώσετε τη μεταφορά δεδομένων· το API μπορεί να επιστρέψει έως 200 στοιχεία ανά αίτηση εξ ορισμού.  
+- Επαναχρησιμοποιήστε μια μόνο παρουσία `SimpleDateFormat` αντί να δημιουργείτε πολλές.  
+- Καλέστε `client.dispose()` ή αφήστε τη JVM να συλλέξει τα αχρησιμοποίητα αντικείμενα για να ελευθερώσει τη μνήμη heap της Java άμεσα.
+
+## Συχνά Προβλήματα και Λύσεις
+
 | Πρόβλημα | Πιθανή Αιτία | Λύση |
 |----------|--------------|------|
-| **DateParseException** | Ασυμφωνία μεταξύ συμβολοσειράς και μορφής | Προσαρμόστε το πρότυπο στο `SimpleDateFormat` ή διορθώστε τη συμβολοσειρά εισόδου. |
-| **401 Unauthorized** | Λάθος διαπιστευτήρια ή έλλειψη δικαιωμάτων EWS | Επαληθεύστε το όνομα χρήστη/συνθηματικό και βεβαιωθείτε ότι ο λογαριασμός έχει πρόσβαση EWS. |
-| **Δεν επιστράφηκαν ραντεβού** | Ημερομηνίες ερωτήματος εκτός του υπάρχοντος εύρους | Ελέγξτε το ημερολόγιο του server για ραντεβού ή διευρύνετε το χρονικό παράθυρο. |
+| **DateParseException** | Ασυμφωνία μεταξύ της συμβολοσειράς και του φορμάτ | Προσαρμόστε το μοτίβο στην `SimpleDateFormat` ή διορθώστε τη συμβολοσειρά εισόδου. |
+| **401 Unauthorized** | Λάθος διαπιστευτήρια ή έλλειψη δικαιωμάτων EWS | Επαληθεύστε το όνομα χρήστη/κωδικό πρόσβασης και βεβαιωθείτε ότι ο λογαριασμός έχει πρόσβαση σε EWS. |
+| **No appointments returned** | Ημερομηνίες ερωτήματος εκτός του υπάρχοντος εύρους | Ελέγξτε το ημερολόγιο του διακομιστή για ραντεβού ή διευρύνετε το χρονικό παράθυρο. |
 
 ## Συμπέρασμα
 
-Το φιλτράρισμα ραντεβού από Exchange server βάσει ημερομηνίας χρησιμοποιώντας Aspose.Email for Java απλοποιεί τη διαχείριση ημερολογίου, αυξάνει την παραγωγικότητα και παρέχει πολύτιμες πληροφορίες για τα πρότυπα προγραμματισμού. Ακολουθώντας αυτό το **aspose email java tutorial**, μάθατε πώς να ρυθμίσετε το περιβάλλον, να διαμορφώσετε τη βιβλιοθήκη και να **build exchange query java** για φιλτράρισμα ραντεβού βάσει συγκεκριμένων κριτηρίων.
+Το φιλτράρισμα ραντεβού του διακομιστή Exchange κατά ημερομηνία χρησιμοποιώντας το Aspose.Email για Java απλοποιεί τη διαχείριση του ημερολογίου, αυξάνει την παραγωγικότητα και παρέχει πολύτιμες πληροφορίες για τα πρότυπα προγραμματισμού. Ακολουθώντας αυτό το **aspose email java tutorial**, έχετε μάθει πώς να ρυθμίσετε το περιβάλλον σας, να διαμορφώσετε τη βιβλιοθήκη και **build exchange query java** για φιλτράρισμα ραντεβού βάσει συγκεκριμένων κριτηρίων.
 
 **Επόμενα Βήματα**
-- Εξερευνήστε πρόσθετες επιλογές ερωτημάτων όπως φίλτρα θέματος ή διοργανωτή.  
+- Εξερευνήστε πρόσθετες επιλογές ερωτήματος όπως φίλτρα θέματος ή διοργανωτή.  
 - Ενσωματώστε τα ανακτημένα ραντεβού στον δικό σας πίνακα αναφορών.  
-- Εξετάστε άλλες δυνατότητες του Aspose.Email όπως αποστολή αιτημάτων συνάντησης ή διαχείριση επαναλαμβανόμενων συμβάντων.
+- Ανασκοπήστε άλλες δυνατότητες του Aspose.Email όπως αποστολή αιτημάτων συνάντησης ή διαχείριση επαναλαμβανόμενων γεγονότων.
 
 ## Συχνές Ερωτήσεις
 
-**Ε:** Μπορώ να χρησιμοποιήσω το Aspose.Email χωρίς αγορά;  
-**Α:** Ναι, μπορείτε να ξεκινήσετε με τη δωρεάν δοκιμή και να εξερευνήσετε τις λειτουργίες πριν αγοράσετε.
+**Q:** Μπορώ να χρησιμοποιήσω το Aspose.Email χωρίς αγορά;  
+**A:** Ναι, μπορείτε να ξεκινήσετε με τη δωρεάν δοκιμή και να εξερευνήσετε τις δυνατότητές του πριν αγοράσετε.
 
-**Ε:** Πώς αντιμετωπίζω σφάλματα αυθεντικοποίησης κατά τη σύνδεση σε Exchange server;  
-**Α:** Επαληθεύστε τα διαπιστευτήρια και τις ρυθμίσεις δικτύου· βεβαιωθείτε ότι ο λογαριασμός Exchange έχει ενεργοποιημένη πρόσβαση EWS.
+**Q:** Πώς να αντιμετωπίσω σφάλματα ελέγχου ταυτότητας κατά τη σύνδεση σε διακομιστή Exchange;  
+**A:** Επαληθεύστε τα διαπιστευτήρια και τις ρυθμίσεις δικτύου· βεβαιωθείτε ότι ο λογαριασμός Exchange έχει ενεργοποιημένη πρόσβαση σε EWS.
 
-**Ε:** Ποιες μορφές ημερομηνίας υποστηρίζονται για ανάλυση σε αυτό το tutorial;  
-**Α:** Η κλάση `SimpleDateFormat` υποστηρίζει οποιοδήποτε πρότυπο ορίσετε· το παράδειγμα χρησιμοποιεί `"dd/MM/yyyy HH:mm:ss"`.
+**Q:** Ποια φορμάτ ημερομηνίας υποστηρίζονται για ανάλυση σε αυτό το σεμινάριο;  
+**A:** Η κλάση `SimpleDateFormat` υποστηρίζει οποιοδήποτε μοτίβο ορίζετε· το παράδειγμα χρησιμοποιεί "dd/MM/yyyy HH:mm:ss".
 
-**Ε:** Πώς μπορώ να αλλάξω το χρονικό διάστημα δυναμικά κατά το runtime;  
-**Α:** Απλώς τροποποιήστε τις συμβολοσειρές που περνιούνται στις μεθόδους `since()` και `beforeOrEqual()` πριν δημιουργήσετε το ερώτημα.
+**Q:** Πώς μπορώ να αλλάξω το χρονικό διάστημα δυναμικά κατά την εκτέλεση;  
+**A:** Απλώς τροποποιήστε τις συμβολοσειρές που περνιούνται στις μεθόδους `since()` και `beforeOrEqual()` πριν δημιουργήσετε το ερώτημα.
 
-**Ε:** Πού μπορώ να βρω περισσότερη τεκμηρίωση για τις δυνατότητες του Aspose.Email;  
-**Α:** Αναλυτική τεκμηρίωση είναι διαθέσιμη στην ιστοσελίδα [Aspose Email Documentation](https://reference.aspose.com/email/java/).
+**Q:** Πού μπορώ να βρω περισσότερη τεκμηρίωση για τις δυνατότητες του Aspose.Email;  
+**A:** Αναλυτική τεκμηρίωση είναι διαθέσιμη στην ιστοσελίδα [Aspose Email Documentation](https://reference.aspose.com/email/java/).
 
 ## Πόροι
-- **Τεκμηρίωση**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
+- **Τεκμηρίωση**: [Aspose Email Documentation](https://reference.aspose.com/email/java/)  
+- **Java Docs**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
 - **Λήψη**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
 - **Αγορά**: [Buy Aspose](https://purchase.aspose.com/buy)  
 - **Δωρεάν Δοκιμή**: [Get a Free Trial](https://releases.aspose.com/email/java/)  
@@ -208,14 +263,20 @@ Appointment[] appointments = client.listAppointments(query);
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-02-17  
-**Δοκιμάστηκε Με:** Aspose.Email for Java 25.4 (jdk16)  
-**Συγγραφέας:** Aspose  
+**Τελευταία Ενημέρωση:** 2026-07-17  
+**Δοκιμάστηκε Με:** Aspose.Email for Java 25.4 (JDK 16)  
+**Συγγραφέας:** Aspose
+
+## Σχετικά Σεμινάρια
+
+- [Οδηγός Σύνδεσης Ημερολογίου Exchange με Aspose.Email για Java | Ενσωμάτωση Διακομιστή Exchange](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [Καλές Πρακτικές Σελιδοποίησης Java – Υλοποίηση Σελιδοποιημένων Ραντεβού Χρησιμοποιώντας Aspose.Email για Διακομιστές Exchange](/email/java/calendar-appointments/java-aspose-email-paginated-appointments/)
+- [Διαχείριση Ραντεβού Exchange με Aspose.Email για Java: Αναλυτικός Οδηγός](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

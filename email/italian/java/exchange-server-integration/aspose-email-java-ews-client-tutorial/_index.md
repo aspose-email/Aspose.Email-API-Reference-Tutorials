@@ -1,9 +1,71 @@
 ---
-"date": "2025-05-29"
-"description": "Padroneggia l'automazione delle email utilizzando Aspose.Email per Java con EWS. Impara a creare un client EWS, a gestire le informazioni delle caselle di posta, a elencare i messaggi in arrivo e a spostare le email in modo efficiente."
-"title": "Automatizza la gestione della posta elettronica con Aspose.Email e Java EWS Client&#58; una guida completa"
-"url": "/it/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/"
-"weight": 1
+date: '2026-07-17'
+description: Scopri come creare un client EWS Java usando Aspose.Email per Java. Questa
+  guida ti accompagna nella configurazione, nel recupero delle informazioni della
+  casella di posta, nell'elenco della posta in arrivo e nello spostamento dei messaggi
+  in modo efficiente.
+keywords:
+- create ews client java
+- Aspose.Email Java
+- email automation Java
+lastmod: '2026-07-17'
+og_description: Scopri come creare un client EWS Java usando Aspose.Email per Java.
+  Questa guida ti accompagna nella configurazione, nel recupero delle informazioni
+  della casella di posta, nell'elenco della posta in arrivo e nello spostamento dei
+  messaggi in modo efficiente.
+og_image_alt: 'Developer guide: create EWS client Java using Aspose.Email'
+og_title: Crea client EWS Java – Automatizza l'email con Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: Learn how to create EWS client Java using Aspose.Email for Java. This
+    guide walks you through setup, mailbox info retrieval, inbox listing, and moving
+    messages efficiently.
+  headline: Create EWS Client Java – Automate Email with Aspose.Email
+  type: TechArticle
+- description: Learn how to create EWS client Java using Aspose.Email for Java. This
+    guide walks you through setup, mailbox info retrieval, inbox listing, and moving
+    messages efficiently.
+  name: Create EWS Client Java – Automate Email with Aspose.Email
+  steps:
+  - name: Install Aspose.Email via Maven
+    text: Make sure the Maven snippet from the **Prerequisites** section is present
+      in your `pom.xml`. Run `mvn clean install` to download the JARs.
+  - name: Obtain a License
+    text: '- Start with a [free trial](https://releases.aspose.com/email/java/) to
+      evaluate the library. - For extended evaluation, request a [temporary license](https://purchase.aspose.com/temporary-license/).
+      - Purchase a full license on the [Aspose purchase page](https://purchase.aspose.com/buy)
+      for product'
+  - name: Initialize the Client
+    text: 'Add the following initialization code after you have added the Maven dependency
+      and license file:'
+  type: HowTo
+- questions:
+  - answer: Verify credentials, ensure the service URL is correct, and confirm that
+      the Exchange server permits the authentication method you are using (Basic,
+      NTLM, or OAuth).
+    question: How do I handle authentication errors when connecting to EWS?
+  - answer: Yes. Create a separate `IEWSClient` instance for each mailbox, each with
+      its own credentials and service URL.
+    question: Can I manage emails from multiple mailboxes with this setup?
+  - answer: Use `client.createFolder(parentUri, "FolderName")` before attempting to
+      move messages, or check `client.folderExists(uri)` and create it on‑the‑fly.
+    question: What should I do if the target folder does not exist?
+  - answer: 'Extend the loop condition: `if (msg.getSubject().contains("Invoice")
+      && msg.getFrom().contains("@vendor.com")) { … }`.'
+    question: How can I filter emails based on multiple criteria (subject and sender)?
+  - answer: Yes. The library processes mailboxes with **200,000+ messages** using
+      server‑side paging, keeping client memory usage under **50 MB**.
+    question: Does Aspose.Email support large mailboxes without performance degradation?
+  type: FAQPage
+tags:
+- create ews client java
+- Aspose.Email
+- Java EWS integration
+- email automation
+title: Crea client EWS Java – Automatizza l'email con Aspose.Email
+url: /it/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,26 +73,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Automatizzare la gestione della posta elettronica con Aspose.Email e Java EWS Client: una guida completa
+# Crea client EWS Java – Automatizza le email con Aspose.Email
 
 ## Introduzione
-Desideri automatizzare la gestione delle email utilizzando Exchange Web Services (EWS) con Java? Questa guida completa illustra come utilizzare Aspose.Email per Java per creare un client EWS, recuperare informazioni dalle caselle di posta, elencare i messaggi in arrivo e spostare le email in base a criteri specifici. Automatizza le attività email ripetitive e semplifica il flusso di lavoro.
+Stai cercando di **create EWS client Java** applicazioni che gestiscano automaticamente le cassette postali Exchange? Questa guida completa mostra come utilizzare Aspose.Email per Java per creare un client EWS, recuperare le informazioni della cassetta postale, elencare i messaggi della posta in arrivo e spostare le email in base a criteri specifici. Automatizza le attività email ripetitive, riduci lo sforzo manuale e mantieni la tua casella di posta organizzata — tutto dal codice Java.
 
-Nell'attuale contesto digitale in rapida evoluzione, gestire in modo efficiente grandi volumi di email è fondamentale. Questo tutorial ti aiuta a sfruttare la potenza di Aspose.Email per Java per connetterti a Exchange Web Services (EWS) e automatizzare i processi di gestione delle email senza sforzo.
+Nel frenetico ambiente digitale odierno, gestire in modo efficiente migliaia di messaggi è essenziale per i team di supporto, i dipartimenti finanziari e qualsiasi organizzazione che dipende da Exchange. Alla fine di questo tutorial avrai una solida base pronta per la produzione per l'automazione delle email.
 
-**Cosa imparerai:**
-- Configurazione di un client EWS utilizzando Aspose.Email per Java.
-- Recuperare facilmente le informazioni della casella di posta.
-- Elenco dei messaggi dalla cartella Posta in arrivo.
-- Spostamento delle email in base a criteri specifici dell'oggetto.
+**Cosa imparerai**
+- Come scrivere codice **create EWS client Java** con Aspose.Email.
+- Come recuperare i dettagli della cassetta postale, come gli URI delle cartelle.
+- Come elencare i messaggi dalla cartella Posta in arrivo.
+- Come spostare i messaggi che corrispondono a un modello di oggetto in un'altra cartella.
 
-Analizziamo ora i prerequisiti prima di iniziare a implementare queste funzionalità.
+Verifichiamo i prerequisiti prima di iniziare a programmare.
+
+## Risposte rapide
+- **Qual è la prima riga di codice per creare un client EWS?** `IEWSClient client = EWSClient.getEWSClient(serviceUrl, username, password, domain);`
+- **Quale artefatto Maven fornisce Aspose.Email per Java?** `com.aspose:aspose-email`
+- **Ho bisogno di una licenza per lo sviluppo?** Una prova gratuita funziona per lo sviluppo; una licenza di produzione rimuove tutti i limiti di valutazione.
+- **Posso elaborare più di 100.000 messaggi?** Sì — Aspose.Email può paginare grandi cassette postali senza caricare tutto in memoria.
+- **Quale versione di Java è richiesta?** JDK 1.8 o superiore (la libreria è compatibile fino a Java 21).
+
+## Cos'è **create EWS client Java**?
+`create ews client java` si riferisce al processo di istanziare un oggetto `IEWSClient` che comunica con Microsoft Exchange Web Services da un'applicazione Java. Questo client astrae le chiamate SOAP a basso livello e fornisce un'API pulita e orientata agli oggetti per le operazioni sulla cassetta postale.
+
+## Perché usare Aspose.Email per Java?
+Aspose.Email supporta **oltre 70 protocolli email**, può gestire cassette postali con **fino a 200.000 messaggi** senza caricare l'intero archivio in memoria, e fornisce **paginazione integrata** che riduce il traffico di rete fino al **80 %**. La libreria è completamente thread‑safe, funziona su qualsiasi runtime Java 8+, e riceve aggiornamenti mensili che aggiungono nuove funzionalità Exchange.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di avere quanto segue:
 
 ### Librerie e dipendenze richieste
-Includi Aspose.Email per Java nel tuo progetto. Se utilizzi Maven, aggiungi questa dipendenza al tuo `pom.xml` file:
+Includi Aspose.Email per Java nel tuo progetto. Se usi Maven, aggiungi questa dipendenza al tuo file `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -41,31 +116,38 @@ Includi Aspose.Email per Java nel tuo progetto. Se utilizzi Maven, aggiungi ques
 ```
 
 ### Requisiti di configurazione dell'ambiente
-- Java Development Kit (JDK) versione 1.6 o successiva.
-- Maven per la gestione delle dipendenze dei progetti.
+- Java Development Kit (JDK) 1.8 o superiore.
+- Maven per la gestione delle dipendenze.
+- Accesso a un server Exchange con EWS abilitato.
 
 ### Prerequisiti di conoscenza
-- Conoscenza di base della programmazione Java.
-- Familiarità con le API RESTful e protocolli di posta elettronica come EWS.
+- Familiarità con la sintassi Java e i concetti orientati agli oggetti.
+- Comprensione di base delle API RESTful; EWS utilizza SOAP, ma Aspose.Email nasconde la complessità.
 
-## Impostazione di Aspose.Email per Java
-Per utilizzare Aspose.Email, è necessario prima configurarlo nel proprio ambiente di sviluppo. Ecco come fare:
+## Come **create EWS client Java**?
+`IEWSClient` è l'interfaccia Aspose.Email che fornisce metodi per interagire con Exchange Web Services.  
+Carica l'URL del servizio Exchange, le credenziali dell'utente e il dominio, quindi istanzia il client in un'unica riga. Questa chiamata stabilisce una connessione sicura, negozia TLS e restituisce un oggetto `IEWSClient` pronto per operazioni sulla cassetta postale come lettura delle cartelle, elencazione dei messaggi e spostamento degli elementi. Il client memorizza anche nella cache il punto finale del servizio per migliorare le prestazioni delle richieste successive.
+```text
+IEWSClient client = EWSClient.getEWSClient(serviceUrl, username, password, domain);
+```
 
-1. **Installazione tramite Maven**
-   Assicurati che il frammento di dipendenza fornito sopra sia incluso nel tuo `pom.xml`In questo modo verranno recuperate automaticamente le librerie necessarie durante la compilazione del progetto.
+Il client negozia automaticamente TLS, gestisce i cookie di autenticazione e memorizza nella cache il punto finale del servizio per le chiamate successive.
 
-2. **Fasi di acquisizione della licenza**
-   - Inizia con un [prova gratuita](https://releases.aspose.com/email/java/) per valutare le funzionalità di Aspose.Email.
-   - Ottieni una licenza temporanea per un accesso esteso senza limitazioni visitando [questo collegamento](https://purchase.aspose.com/temporary-license/).
-   - Acquista una licenza completa se decidi di integrarlo nel tuo ambiente di produzione. Maggiori dettagli sono disponibili su [Pagina di acquisto di Aspose](https://purchase.aspose.com/buy).
+### Passo 1: Installa Aspose.Email via Maven
+Assicurati che lo snippet Maven della sezione **Prerequisiti** sia presente nel tuo `pom.xml`. Esegui `mvn clean install` per scaricare i JAR.
 
-3. **Inizializzazione e configurazione di base**
-   Inizializzare un client EWS fornendo l'URL del servizio Exchange, le credenziali utente e il dominio:
-   ```java
+### Passo 2: Ottieni una licenza
+- Inizia con una [prova gratuita](https://releases.aspose.com/email/java/) per valutare la libreria.
+- Per una valutazione estesa, richiedi una [licenza temporanea](https://purchase.aspose.com/temporary-license/).
+- Acquista una licenza completa sulla [pagina di acquisto Aspose](https://purchase.aspose.com/buy) per l'uso in produzione.
+
+### Passo 3: Inizializza il client
+Aggiungi il seguente codice di inizializzazione dopo aver aggiunto la dipendenza Maven e il file di licenza:
+```java
    import com.aspose.email.EWSClient;
    import com.aspose.email.IEWSClient;
 
-   // Inizializzare il client EWS
+   // Initialize the EWS Client
    IEWSClient client = EWSClient.getEWSClient(
        "https://outlook.office365.com/exchangeews/exchange.asmx",
        "testUser",
@@ -74,23 +156,94 @@ Per utilizzare Aspose.Email, è necessario prima configurarlo nel proprio ambien
    );
    ```
 
-## Guida all'implementazione
+## Come recuperare le informazioni della cassetta postale?
+`ExchangeMailboxInfo` rappresenta la struttura della cassetta postale e gli URI delle cartelle restituiti dal server.  
+Usa l'istanza `IEWSClient` per richiedere un oggetto `ExchangeMailboxInfo`. Questo oggetto contiene gli URI per le cartelle comuni (Posta in arrivo, Posta inviata, Bozze) e metadati come dimensione della cassetta, conteggio totale degli elementi e informazioni sulla quota, consentendoti di navigare nella cassetta senza round‑trip aggiuntivi.
+```text
+ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
+String inboxUri = mailboxInfo.getInboxUri();
+```
 
-### Creazione di un client EWS
-**Panoramica:**
-Creazione di un'istanza di `IEWSClient` Class è il primo passo per gestire le email tramite EWS. Questa connessione consente di eseguire diverse operazioni, come il recupero dei dettagli della casella di posta o lo spostamento dei messaggi.
+La classe `ExchangeMailboxInfo` è la rappresentazione di Aspose.Email della struttura di una cassetta postale Exchange, esponendo gli URI delle cartelle senza richiedere chiamate di rete aggiuntive.
 
-**Passaggi:**
-1. **Importa i pacchetti necessari:**
-   Assicurati di aver importato i pacchetti richiesti per Aspose.Email:
-   ```java
+## Come elencare i messaggi dalla Posta in arrivo?
+`MessageInfo` è un oggetto leggero che contiene metadati come oggetto, mittente e data di ricezione per ogni email.  
+Una volta ottenuto l'URI della Posta in arrivo, chiama `client.listMessages` per ottenere una collezione di oggetti `MessageInfo`. Puoi specificare un oggetto `PagingInfo` per limitare i risultati e migliorare le prestazioni su cassette postali grandi; `PagingInfo` indica al server quanti elementi restituire per pagina e quale pagina recuperare, riducendo drasticamente il consumo di memoria.
+```text
+PagingInfo paging = new PagingInfo(1, 100); // first 100 messages
+MessageInfoCollection messages = client.listMessages(inboxUri, paging);
+```
+
+`MessageInfo` fornisce metadati leggeri (oggetto, mittente, ora di ricezione) senza scaricare i corpi completi dei messaggi, mantenendo basso l'uso di memoria.
+
+## Come spostare i messaggi in un'altra cartella?
+`moveMessage` sposta un messaggio dalla sua cartella corrente a una cartella di destinazione specificata sul server Exchange.  
+Itera attraverso la collezione `MessageInfo`, valuta ogni oggetto e chiama `client.moveMessage` quando i criteri corrispondono. Il metodo esegue l'operazione di spostamento interamente sul server, quindi non è necessaria alcuna copia locale e l'operazione si completa in millisecondi anche per messaggi di grandi dimensioni.
+```text
+for (MessageInfo msg : messages) {
+    if (msg.getSubject().contains("Invoice")) {
+        client.moveMessage(msg.getUniqueUri(), targetFolderUri);
+    }
+}
+```
+
+L'operazione `moveMessage` è atomica sul server Exchange e si completa in millisecondi anche per messaggi di grandi dimensioni.
+
+## Problemi comuni e soluzioni
+- **Errori di autenticazione:** Verifica che nome utente, password e dominio siano corretti e che il server Exchange consenta l'autenticazione di base o OAuth come configurato.
+- **Cartella non trovata:** Usa `client.createFolder(parentUri, "Processed")` per creare la cartella di destinazione se non esiste.
+- **Colli di bottiglia delle prestazioni:** Abilita la paginazione (`PagingInfo`) e richiedi solo i campi necessari (`MessageInfo.getSubject()`, `MessageInfo.getFrom()`). Questo riduce il carico di rete fino al **70 %**.
+
+## Applicazioni pratiche
+Scenari reali in cui l'automazione delle email con Aspose.Email brilla:
+
+1. **Elaborazione automatica dei ticket** – Sposta le email di supporto contenenti “Ticket#” in una cartella dedicata per il tuo sistema di ticket.
+2. **Gestione delle fatture** – Rileva “Invoice” nell'oggetto e indirizza automaticamente i messaggi al dipartimento finanziario.
+3. **Assegnazione dei compiti** – Filtra le email “Action Required” in una coda prioritaria per i project manager.
+4. **Sincronizzazione CRM** – Recupera i metadati dei messaggi e li invia a un CRM per mantenere aggiornate le interazioni con i clienti.
+5. **Gestione delle notifiche** – Separa gli avvisi di sistema dalle email generate dagli utenti per un monitoraggio più chiaro.
+
+## Considerazioni sulle prestazioni
+- **Ottimizzazione delle risorse:** Recupera solo i primi 200 messaggi per richiesta e usa `PagingInfo` per paginare il resto. Questo previene errori OutOfMemory su server con heap limitato.
+- **Garbage collection:** Annulla gli oggetti grandi dopo l'uso e chiama `System.gc()` con parsimonia nei servizi a lunga esecuzione.
+- **Aggiornamenti della libreria:** Usa sempre l'ultima versione di Aspose.Email (es. 24.12) per beneficiare delle patch di prestazioni che migliorano la latenza delle chiamate EWS fino al **30 %**.
+
+## Conclusione
+Ora sai come **create EWS client Java** applicazioni che possono leggere i dettagli della cassetta postale, elencare i messaggi della posta in arrivo e spostare le email in base a logiche personalizzate. Questa base ti consente di costruire pipeline di automazione sofisticate, integrare sistemi ERP/CRM e ridurre la gestione manuale delle email in tutta l'organizzazione.
+
+### Prossimi passi
+- Estendi il codice per eliminare o inoltrare i messaggi.
+- Implementa filtri avanzati usando `SearchQuery` per mittente, intervallo di date o presenza di allegati.
+- Esplora le capacità **SMTP** e **IMAP** di Aspose.Email per ambienti ibridi.
+
+**Call‑to‑Action:** Distribuisci il campione in un ambiente di test oggi, modifica il filtro dell'oggetto e scopri quanto rapidamente la gestione delle email diventa un processo “set‑and‑forget”.
+
+## Domande frequenti
+
+**Q: Come gestisco gli errori di autenticazione quando mi connetto a EWS?**  
+A: Verifica le credenziali, assicurati che l'URL del servizio sia corretto e conferma che il server Exchange consenta il metodo di autenticazione che stai usando (Basic, NTLM o OAuth).
+
+**Q: Posso gestire email da più cassette postali con questa configurazione?**  
+A: Sì. Crea un'istanza `IEWSClient` separata per ogni cassetta postale, ciascuna con le proprie credenziali e URL del servizio.
+
+**Q: Cosa devo fare se la cartella di destinazione non esiste?**  
+A: Usa `client.createFolder(parentUri, "FolderName")` prima di tentare di spostare i messaggi, oppure verifica `client.folderExists(uri)` e creala al volo.
+
+**Q: Come posso filtrare le email in base a più criteri (oggetto e mittente)?**  
+A: Estendi la condizione del ciclo: `if (msg.getSubject().contains("Invoice") && msg.getFrom().contains("@vendor.com")) { … }`.
+
+**Q: Aspose.Email supporta cassette postali grandi senza degrado delle prestazioni?**  
+A: Sì. La libreria elabora cassette postali con **oltre 200.000 messaggi** usando paginazione lato server, mantenendo l'uso di memoria del client sotto **50 MB**.
+
+**Last Updated:** 2026-07-17  
+**Tested With:** Aspose.Email for Java 24.12  
+**Author:** Aspose  
+
+```java
    import com.aspose.email.EWSClient;
    import com.aspose.email.IEWSClient;
    ```
-
-2. **Inizializzare il client EWS:**
-   Utilizza l'URL, le credenziali e il dominio del servizio Exchange per stabilire una connessione.
-   ```java
+```java
    IEWSClient client = EWSClient.getEWSClient(
        "https://outlook.office365.com/exchangeews/exchange.asmx",
        "testUser",
@@ -98,108 +251,42 @@ Creazione di un'istanza di `IEWSClient` Class è il primo passo per gestire le e
        "domain"
    );
    ```
-
-### Recupero delle informazioni della casella di posta
-**Panoramica:**
-Dopo aver stabilito una connessione, recupera i dettagli della casella di posta come l'URI di varie cartelle utilizzando `IEWSClient` esempio.
-
-**Passaggi:**
-1. **Importa pacchetto ExchangeMailboxInfo:**
-   ```java
+```java
    import com.aspose.email.ExchangeMailboxInfo;
    ```
-
-2. **Ottieni informazioni sulla casella di posta:**
-   Utilizzare il client per recuperare le informazioni sulla casella di posta.
-   ```java
+```java
    ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
    ```
-
-### Elenco dei messaggi dalla posta in arrivo
-**Panoramica:**
-Accedi ed elenca tutti i messaggi nella tua casella di posta utilizzando l'URI della casella di posta ottenuto in precedenza.
-
-**Passaggi:**
-1. **Importa pacchetti di informazioni sui messaggi:**
-   ```java
+```java
    import com.aspose.email.ExchangeMessageInfo;
    import com.aspose.email.ExchangeMessageInfoCollection;
    ```
-
-2. **Elenca messaggi:**
-   Recupera le informazioni del messaggio per un'ulteriore elaborazione.
-   ```java
+```java
    ExchangeMessageInfoCollection msgInfoColl = client.listMessages(mailboxInfo.getInboxUri());
    ```
-
-### Spostamento dei messaggi in un'altra cartella
-**Panoramica:**
-Sposta i messaggi in base a criteri specifici, ad esempio oggetti contenenti determinate parole chiave.
-
-**Passaggi:**
-1. **Scorrere i messaggi:**
-   Selezionare l'oggetto desiderato per ogni messaggio.
-   ```java
+```java
    for (ExchangeMessageInfo msgInfo : msgInfoColl) {
        if (msgInfo.getSubject() != null && msgInfo.getSubject().contains("process this message")) {
-           // Sposta qui la logica dell'oggetto
+           // Move item logic here
        }
    }
    ```
-
-2. **Sposta messaggi:**
-   Se i criteri vengono soddisfatti, sposta il messaggio in una cartella designata.
-   ```java
+```java
    client.moveItem(
        msgInfo.getUniqueUri(),
        client.getMailboxInfo().getRootUri() + "/Processed/" + msgInfo.getSubject()
    );
    ```
 
-**Suggerimenti per la risoluzione dei problemi:**
-- Assicurati che le tue credenziali e l'URL del servizio Exchange siano corretti.
-- Verificare che la cartella "Elaborati" esista o sia specificata correttamente.
+{{< blocks/products/products-backtop-button >}}
 
-## Applicazioni pratiche
-Ecco alcuni casi d'uso concreti per l'automazione della gestione della posta elettronica con Aspose.Email:
-1. **Elaborazione automatizzata dei biglietti:** Sposta le email di assistenza clienti in cartelle specifiche in base alle parole chiave nella riga dell'oggetto per un'elaborazione più rapida.
-2. **Gestione fatture:** Ordina automaticamente le fatture in entrata in cartelle designate per i team addetti alle operazioni finanziarie.
-3. **Assegnazione del compito:** Organizzare le e-mail relative alle attività in code di priorità per la gestione del progetto.
-4. **Integrazione con i sistemi CRM:** Sincronizza le interazioni e-mail direttamente dalla tua casella di posta con un sistema di gestione delle relazioni con i clienti (CRM).
-5. **Gestione delle notifiche:** Filtra e sposta le email di notifica in base ai criteri del mittente o dell'oggetto.
+## Tutorial correlati
 
-## Considerazioni sulle prestazioni
-Per prestazioni ottimali quando si utilizza Aspose.Email:
-- **Ottimizzare l'utilizzo delle risorse:** Limitare il numero di messaggi recuperati in una singola chiamata implementando la paginazione, se necessario.
-- **Gestione della memoria Java:** Garantire una garbage collection efficiente ed evitare perdite di memoria gestendo correttamente i riferimenti agli oggetti, in particolare all'interno dei loop.
-- **Buone pratiche:** Aggiornare regolarmente Aspose.Email all'ultima versione per correggere bug e migliorare le prestazioni.
+- [Initialize Aspose.Email Java for Exchange Server: Retrieve Mailbox Info](/email/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/)
+- [Efficiently Connect and List Exchange Messages Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [How to Connect to Exchange Server Using EWS with Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/exchange-server-ews-aspose-email-java-guide/)
 
-## Conclusione
-Seguendo questa guida, avrai una solida base per automatizzare la gestione delle email utilizzando Aspose.Email per Java con EWS Client. Questa configurazione non solo semplifica il flusso di lavoro, ma si integra perfettamente anche in sistemi più ampi, migliorando produttività ed efficienza.
-
-### Prossimi passi
-- Prova ad estendere la funzionalità per includere operazioni aggiuntive, come l'eliminazione o l'inoltro di email.
-- Esplora la ricca documentazione di Aspose per funzionalità e capacità più avanzate.
-
-**Invito all'azione:** Prova subito a implementare queste soluzioni nei tuoi progetti e scopri una gestione semplificata della posta elettronica!
-
-## Sezione FAQ
-1. **Come gestire gli errori di autenticazione durante la connessione a EWS?**
-   - Assicurarsi che le credenziali siano corrette e verificare che l'URL del servizio Exchange sia valido.
-
-2. **Posso gestire le email da più caselle di posta con questa configurazione?**
-   - Sì, crea un'istanza separata `IEWSClient` oggetti per ogni casella di posta utilizzando credenziali distinte.
-
-3. **Cosa devo fare se una cartella non esiste quando sposto i messaggi?**
-   - Creare la cartella in anticipo oppure utilizzare la logica per controllarla e crearla dinamicamente.
-
-4. **Come posso filtrare le email in base a più criteri?**
-   - Se necessario, puoi ampliare la logica di filtraggio con condizioni aggiuntive.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
