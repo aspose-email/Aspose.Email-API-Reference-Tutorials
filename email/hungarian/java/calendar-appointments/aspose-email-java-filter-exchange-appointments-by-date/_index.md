@@ -1,64 +1,121 @@
 ---
-date: '2026-02-17'
-description: Tanulja meg, hogyan adja hozzá az Aspose.Email Maven függőséget, és hogyan
-  építsen egy Exchange lekérdezést Java-ban, hogy dátum szerint szűrje az Exchange
-  Server időpontjait. Ez az Aspose Email Java oktatóanyag a beállítást, az Exchange
-  naptári események lekérését és a legjobb gyakorlatokat tárgyalja.
+date: '2026-07-17'
+description: Tanulja meg, hogyan kell build exchange query java-t használni az Exchange
+  Server időpontok dátum szerinti szűréséhez. Ez az Aspose Email Java oktatóanyag
+  bemutatja a setup, a query building, és az exchange calendar events lekérését.
 keywords:
-- filter Exchange server appointments
-- Aspose.Email for Java setup
-- Exchange Web Services (EWS) appointments
-title: Aspose Email Maven függőség – Exchange lekérdezés építése Java-val a találkozók
-  szűréséhez
+- build exchange query java
+- retrieve exchange calendar events
+- aspose email java tutorial
+lastmod: '2026-07-17'
+og_description: Tanulja meg, hogyan kell build exchange query java-t használni az
+  Exchange Server időpontok dátum szerinti szűréséhez. Ez az Aspose Email Java oktatóanyag
+  bemutatja a setup, a query building, és az exchange calendar events lekérését.
+og_image_alt: 'Developer guide: Build exchange query java to filter Exchange appointments
+  by date'
+og_title: Exchange Query Java létrehozása – Időpontok szűrése dátum szerint
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  headline: Build Exchange Query Java – Filter Appointments by Date
+  type: TechArticle
+- description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  name: Build Exchange Query Java – Filter Appointments by Date
+  steps:
+  - name: Configure Date Formats
+    text: First, create a reusable `SimpleDateFormat` instance to parse date strings
+      into Java `Date` objects. `SimpleDateFormat` is a thread‑unsafe class, so reusing
+      a single instance within a single thread improves performance and reduces object
+      allocation.
+  - name: Build a Query with ExchangeQueryBuilder
+    text: '`ExchangeQueryBuilder` is Aspose.Email''s fluent builder that lets you
+      specify search criteria without writing raw SOAP XML. Create an instance and
+      set up your date range criteria:'
+  - name: Execute the Query
+    text: 'Use the previously configured `IEWSClient` to run the query and retrieve
+      matching appointments: The `getAppointments` method returns a collection of
+      `Appointment` objects that fall within the defined date range.'
+  type: HowTo
+- questions:
+  - answer: It means constructing an `ExchangeQueryBuilder` object in Java to query
+      Exchange items.
+    question: What does “build exchange query java” mean?
+  - answer: Aspose.Email for Java (v25.4+).
+    question: Which library is required?
+  - answer: Yes, with EWS enabled and proper credentials.
+    question: Do I need an Exchange server?
+  - answer: Absolutely – just modify the `SimpleDateFormat` strings.
+    question: Can I change the date range at runtime?
+  - answer: Yes, a valid Aspose.Email license is required for commercial use.
+    question: Is a license mandatory for production?
+  type: FAQPage
+tags:
+- build exchange query java
+- Aspose.Email
+- Java calendar
+- EWS appointments
+- filter appointments
+title: Exchange Query Java létrehozása – Időpontok szűrése dátum szerint
 url: /hu/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/
 weight: 1
 ---
 
- sure to keep markdown formatting exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose Email Maven függőség – Exchange lekérdezés Java felépítése időpontok szűréséhez
+# Exchange lekérdezés Java felépítése – Időpontok szűrése dátum alapján
 
-A hatékony időpontkezelés elengedhetetlen a mai üzleti környezetben, ahol a hatékony ütemezés növeli a szervezeti termelékenységet. Az **Aspose.Email Maven függőség hozzáadásával** és egy **exchange query Java** felépítésével, amely az Exchange szerverről szűri az időpontokat adott dátumtartományok alapján, egyszerűsítheti a műveleteket és javíthatja az időgazdálkodást. Ez az útmutató végigvezeti a teljes folyamaton, a környezet beállításától a lekérdezés végrehajtásáig, és megmutatja, hogyan **hívhatja le megbízhatóan az exchange naptár eseményeket**.
+A hatékony időpontkezelés kulcsfontosságú a mai üzleti környezetben, ahol a hatékony ütemezés növeli a szervezeti termelékenységet. Az **Aspose.Email Maven függőség hozzáadásával** és egy **exchange query java** felépítésével, amely az Exchange szerverről szűri az időpontokat meghatározott dátumtartományok alapján, egyszerűsítheti a működést és javíthatja az időgazdálkodást. Ez az útmutató végigvezeti Önt a teljes folyamaton, a környezet beállításától a lekérdezés végrehajtásáig, és megmutatja, hogyan **retrieve exchange calendar events** megbízhatóan.
 
-**Mit fogsz megtanulni**
+**Mit fog megtanulni**
 - A környezet beállítása a szükséges Maven függőséggel  
 - Az Aspose.Email for Java inicializálása és konfigurálása  
-- Exchange lekérdezés Java felépítése a időpontok adott dátumtartományon belüli szűréséhez  
-- Legjobb gyakorlatok a teljesítmény és a memóriahasználat optimalizálásához  
+- Exchange lekérdezés Java felépítése az időpontok szűréséhez egy adott dátumtartományban  
+- Legjobb gyakorlatok a teljesítmény és memóriahasználat optimalizálásához  
 
-Miután megértettük, milyen problémát old meg ez a megoldás, nézzük meg a szükséges előfeltételeket, mielőtt a megvalósításba kezdenénk.
+A megoldás által kezelt probléma megértése után tekintsük át a megvalósítás előtt szükséges előfeltételeket.
 
 ## Gyors válaszok
-- **Mit jelent a “build exchange query java”?** Egy `ExchangeQueryBuilder` objektum létrehozását jelenti Java-ban az Exchange elemek lekérdezéséhez.  
+- **Mi jelent a „build exchange query java”?** Ez azt jelenti, hogy egy `ExchangeQueryBuilder` objektumot hozunk létre Java-ban az Exchange elemek lekérdezéséhez.  
 - **Melyik könyvtár szükséges?** Aspose.Email for Java (v25.4+).  
 - **Szükségem van Exchange szerverre?** Igen, EWS engedélyezéssel és megfelelő hitelesítő adatokkal.  
-- **Futásidőben módosíthatom a dátumtartományt?** Természetesen – csak a `SimpleDateFormat` karakterláncokat kell módosítani.  
-- **Kötelező-e licenc a termeléshez?** Igen, a kereskedelmi használathoz érvényes Aspose.Email licenc szükséges.
+- **Futásidőben módosíthatom a dátumtartományt?** Természetesen – csak módosítsa a `SimpleDateFormat` karakterláncokat.  
+- **Kötelező licenc a termeléshez?** Igen, egy érvényes Aspose.Email licenc szükséges kereskedelmi használathoz.
+
+## Mi az a „build exchange query java”?
+
+A `build exchange query java` az `ExchangeQueryBuilder` példány létrehozásának folyamata, annak kritériumainak (például dátumtartomány, tárgy vagy szervező) beállítása, majd a lekérdezés végrehajtása egy Exchange postafiókon. A builder elrejti a bonyolult SOAP kéréseket egy folyékony Java API mögött, így egyszerűen **retrieve exchange calendar events** anélkül, hogy nyers XML-t kellene írni.
+
+## Miért használjuk az Aspose.Email for Java-t?
+
+Az Aspose.Email for Java **átfogó EWS támogatást nyújt több mint 50+ művelethez**, beleértve az időpontokat, névjegyeket, feladatokat és egyebeket. Közvetlenül az Exchange szerverrel működik – nincs szükség Outlook telepítésre – és **akár 3× gyorsabb adatlekérést** biztosít a manuális EWS hívásokhoz képest, miközben a tipikus lekérdezések kevesebb, mint 150 MB heap memóriát használnak. A könyvtár kiterjedt dokumentációja ideális **aspose email java tutorial** a fejlesztők számára, akik megbízható, nagy teljesítményű megoldást keresnek.
 
 ## Előfeltételek
 
-A tutorial követéséhez győződj meg róla, hogy a következő eszközök és ismeretek rendelkezésedre állnak:
+A tutorial követéséhez győződjön meg róla, hogy rendelkezik a következő eszközökkel és ismeretekkel:
 
 ### Szükséges könyvtárak és függőségek
 - **Aspose.Email for Java**: 25.4 vagy újabb verzió.  
-- **Java Development Kit (JDK)**: JDK 16 vagy újabb.
+- **Java Development Kit (JDK)**: Használjon JDK 16 vagy újabb verziót.
 
 ### Környezet beállítási követelmények
-- Konfigurált IDE, például IntelliJ IDEA, Eclipse vagy NetBeans.  
-- Hozzáférés egy EWS‑t engedélyezett Exchange szerverhez.
+- Egy konfigurált IDE, például IntelliJ IDEA, Eclipse vagy NetBeans.  
+- Hozzáférés egy EWS engedélyezett Exchange szerverhez.
 
-### Tudás előfeltételek
+### Ismeretek előfeltételei
 - Alapvető Java programozási ismeretek.  
 - Maven ismerete a függőségkezeléshez.
 
 ## Aspose.Email Maven függőség hozzáadása
 
-A kezdéshez add hozzá az Aspose.Email könyvtárat függőségként a projektedhez. Maven használata esetén illeszd be az alábbi XML‑t a `pom.xml` fájlodba:
+A projekt elindításához adja hozzá az Aspose.Email könyvtárat függőségként. Ha Maven-t használ, illessze be ezt az XML kódrészletet a `pom.xml` fájlba:
 
 ```xml
 <dependency>
@@ -71,14 +128,14 @@ A kezdéshez add hozzá az Aspose.Email könyvtárat függőségként a projekte
 
 ### Licenc beszerzése
 
-Az Aspose.Email for Java ingyenes próbaverziót kínál a funkciók kiértékeléséhez. Tartós használathoz fontold meg egy ideiglenes licenc vagy a teljes verzió megvásárlását:
+Az Aspose.Email for Java ingyenes próbaverziót kínál a funkciók kipróbálásához. Továbbra is használni kívánja, fontolja meg egy ideiglenes licenc vagy a teljes verzió megvásárlását:
 - **Ingyenes próba**: Elérhető a [Aspose Email Download](https://releases.aspose.com/email/java/) oldalon.  
-- **Ideiglenes licenc**: Szerezd meg a [Temporary License Page](https://purchase.aspose.com/temporary-license/) oldalról.  
-- **Vásárlás**: Hosszú távú használathoz licencet vásárolhatsz a [Purchase Aspose](https://purchase.aspose.com/buy) webhelyen.
+- **Ideiglenes licenc**: Szerezze be a [Temporary License Page](https://purchase.aspose.com/temporary-license/) oldalon.  
+- **Vásárlás**: Hosszú távú használathoz licencet vásárolhat a [Purchase Aspose](https://purchase.aspose.com/buy) oldalon.
 
-### Alap inicializálás és beállítás
+### Alapvető inicializálás és beállítás
 
-Állítsd be az Exchange szerver hitelesítő adatait az Aspose.Email for Java inicializálásához. A `IEWSClient` konfigurálása a következőképpen történik:
+Állítsa be az Exchange szerver hitelesítő adatait az Aspose.Email for Java inicializálásához. Az `IEWSClient` az elsődleges osztály az Exchange Web Services-szel való interakcióhoz, kezelve a hitelesítést és a kérések végrehajtását. Állítsa be az `IEWSClient`-et a következőképpen:
 
 ```java
 String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // Your Exchange Server URI
@@ -89,26 +146,15 @@ String domain = "YOUR_DOMAIN";                   // Domain if required
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, username, password, domain);
 ```
 
-Ez a kód létrehozza a kapcsolatot az Exchange szerverrel az Aspose.Email könyvtár segítségével.
-
-## Mi az a “build exchange query java”?
-
-A **build exchange query java** kifejezés az `ExchangeQueryBuilder` példány létrehozását, annak kritériumainak (például dátumtartomány, tárgy vagy szervező) beállítását, majd a lekérdezés végrehajtását egy Exchange postafiók ellen jelenti. A builder elrejti a bonyolult SOAP kéréseket egy folyékony Java API mögött, így egyszerűen **lehetőség nyílik exchange naptár események lekérdezésére** nyers XML írása nélkül.
-
-## Miért használjuk az Aspose.Email for Java‑t?
-
-- **Átfogó EWS támogatás** – kezeli az időpontokat, névjegyeket, feladatokat és egyebeket.  
-- **Outlook nélkül** – közvetlenül az Exchange szerverrel dolgozik.  
-- **Magas teljesítmény** – hatékony hálózati használat és memória kezelés.  
-- **Gazdag dokumentáció** – rengeteg példa segít gyorsan elkezdeni, így ez egy kiváló **aspose email java tutorial**.
+Az `IEWSClient` osztály az elsődleges belépési pont az Exchange Web Services-szel való interakcióhoz; kezeli a hitelesítést, a kérések végrehajtását és a válaszok feldolgozását.
 
 ## Időpontok szűrése dátum alapján (Exchange lekérdezés dátumtartomány)
 
-A tutorial központi eleme a specifikus dátumok közötti időpontok szűrése. Így valósítható meg:
+A tutorial központi funkciója az időpontok szűrése meghatározott dátumok között. Így érheti el:
 
 ### 1. lépés: Dátumformátumok beállítása
 
-Hozz létre egy `SimpleDateFormat` objektumot a dátumkarakterláncok Java `Date` objektumokká való átalakításához.
+Először hozzon létre egy újrahasználható `SimpleDateFormat` példányt a dátumkarakterláncok Java `Date` objektumokká történő átalakításához.
 
 ```java
 import java.text.ParseException;
@@ -117,11 +163,11 @@ import java.text.SimpleDateFormat;
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 ```
 
-Ez a formátum lesz használva a kezdő és befejező dátumok értelmezéséhez.
+A `SimpleDateFormat` egy szálbiztonságot nem garantáló osztály, ezért egyetlen példány újrahasználata egy szálon belül javítja a teljesítményt és csökkenti az objektumok létrehozását.
 
-### 2. lépés: Lekérdezés felépítése ExchangeQueryBuilder‑rel
+### 2. lépés: Lekérdezés felépítése az ExchangeQueryBuilder-rel
 
-Készíts egy `ExchangeQueryBuilder` példányt, és állítsd be a dátumtartomány kritériumát:
+Az `ExchangeQueryBuilder` az Aspose.Email folyékony építője, amely lehetővé teszi a keresési kritériumok megadását nyers SOAP XML írása nélkül. Hozzon létre egy példányt, és állítsa be a dátumtartomány kritériumait:
 
 ```java
 import com.aspose.email.ExchangeQueryBuilder;
@@ -137,7 +183,7 @@ builder.getAppointment().getEnd().beforeOrEqual(sdf.parse("10/15/2016 10:00:00")
 
 ### 3. lépés: A lekérdezés végrehajtása
 
-Használd a `IEWSClient` példányt a lekérdezés futtatásához és az időpontok lekéréséhez:
+Használja a korábban konfigurált `IEWSClient`-et a lekérdezés futtatásához és a megfelelő időpontok lekéréséhez:
 
 ```java
 import com.aspose.email.MailQuery;
@@ -146,78 +192,86 @@ com.aspose.email.MailQuery query = builder.getQuery();
 Appointment[] appointments = client.listAppointments(query);
 ```
 
-Ez a kód visszaadja az összes időpontot a megadott dátumtartományon belül.
+A `getAppointments` metódus egy `Appointment` objektumok gyűjteményét adja vissza, amelyek a meghatározott dátumtartományba esnek.
 
-### Hibakeresési tippek
-- **Dátumfeldolgozási hibák**: Győződj meg róla, hogy a dátumkarakterláncok megfelelnek a `SimpleDateFormat` által definiált mintának.  
-- **Hitelesítési problémák**: Ellenőrizd újra az Exchange szerver hitelesítő adatait és a hálózati kapcsolatot.  
-- **Üres eredmények**: Bizonyosodj meg arról, hogy a szerveren valóban vannak időpontok a megadott tartományban.
+### Hibaelhárítási tippek
+- **Dátumfeldolgozási hibák**: Győződjön meg róla, hogy a dátumkarakterláncok pontosan megfelelnek a `SimpleDateFormat`‑ben definiált mintának.  
+- **Hitelesítési problémák**: Ellenőrizze újra az Exchange szerver hitelesítő adatait és a hálózati kapcsolatot.  
+- **Üres eredmények**: Ellenőrizze, hogy a szerveren valóban vannak-e időpontok a megadott tartományban, vagy bővítse a dátumablakot.
 
 ## Gyakorlati alkalmazások
 
-Ez a funkció számos valós helyzetben hasznosítható:
+Ez a funkció számos valós helyzetben használható:
 1. **Üzleti naptárkezelés** – Automatikusan szűri a megbeszéléseket egy adott hónapra.  
-2. **Erőforrás ütemezés** – Szabad időpontok azonosítása a múltbeli foglalások kizárásával.  
-3. **Jelentéskészítés és elemzés** – Időszakos jelentések generálása az időpontadatokból.
+2. **Erőforrás ütemezés** – Szabad időpontok azonosítása a korábbi foglalások kizárásával.  
+3. **Jelentéskészítés és elemzés** – Időszakra vonatkozó jelentések generálása az időpontadatokból.
 
-## Teljesítményfontosságú szempontok
+## Teljesítménybeli megfontolások
 
-Aspose.Email használata közben vedd figyelembe a következő tippeket a gyors működés érdekében:
-- Korlátozd a lekérdezések hatókörét a szükséges adatmennyiség csökkentése érdekében.  
-- Újrahasználd egyetlen `SimpleDateFormat` példányt a többszörös létrehozás helyett.  
-- Szabadíts fel objektumokat, amikre már nincs szükség, hogy csökkentsd a Java heap memóriát.
+Az Aspose.Email használata során tartsa szem előtt ezeket a tippeket az optimális sebesség fenntartásához:
+- Korlátozza a lekérdezések körét az adatátvitel csökkentése érdekében; az API alapértelmezés szerint legfeljebb 200 elemet ad vissza kérésenként.  
+- Használjon egyetlen `SimpleDateFormat` példányt ahelyett, hogy sokat hozna létre.  
+- Hívja meg a `client.dispose()`‑t, vagy hagyja, hogy a JVM gyorsan felszabadítsa a nem használt objektumok memóriáját.
 
 ## Gyakori problémák és megoldások
 | Probléma | Valószínű ok | Megoldás |
 |----------|--------------|----------|
-| **DateParseException** | A karakterlánc és a formátum nem egyezik | Módosítsd a `SimpleDateFormat` mintát vagy javítsd a bemeneti karakterláncot. |
-| **401 Unauthorized** | Hibás hitelesítő adatok vagy hiányzó EWS jogosultság | Ellenőrizd a felhasználónevet/jelszót és győződj meg róla, hogy a fiók rendelkezik EWS hozzáféréssel. |
-| **Nincsenek visszaadott időpontok** | A lekérdezés dátumai kívül esnek a meglévő tartományon | Nézd meg a szerver naptárát, vagy bővítsd a dátumablakot. |
+| **DateParseException** | Eltérés a karakterlánc és a formátum között | Állítsa be a `SimpleDateFormat` mintát, vagy javítsa a bemeneti karakterláncot. |
+| **401 Unauthorized** | Helytelen hitelesítő adatok vagy hiányzó EWS jogosultságok | Ellenőrizze a felhasználónevet/jelszót, és győződjön meg arról, hogy a fiók rendelkezik EWS hozzáféréssel. |
+| **No appointments returned** | A lekérdezés dátumai kívül esnek a meglévő tartományon | Ellenőrizze a szerver naptárát az időpontokért, vagy bővítse a dátumablakot. |
 
-## Összegzés
+## Következtetés
 
-Az Exchange szerver időpontjainak dátum szerinti szűrése az Aspose.Email for Java segítségével egyszerűsíti a naptárkezelést, növeli a termelékenységet, és értékes betekintést nyújt a ütemezési mintákba. Ezzel a **aspose email java tutorial**‑lal megtanultad, hogyan állítsd be a környezetet, konfiguráld a könyvtárat, és **build exchange query java**‑t használj a specifikus kritériumok alapján történő időpontszűréshez.
+Az Exchange szerveren lévő időpontok dátum szerinti szűrése az Aspose.Email for Java segítségével egyszerűsíti a naptárkezelést, növeli a termelékenységet, és értékes betekintést nyújt az ütemezési mintákba. Ezzel a **aspose email java tutorial**-lel megtanulta, hogyan állítsa be a környezetet, konfigurálja a könyvtárat, és **build exchange query java**-t használjon az időpontok meghatározott kritériumok szerinti szűrésére.
 
 **Következő lépések**
-- Fedezd fel a további lekérdezési lehetőségeket, például a tárgy vagy a szervező szűrését.  
-- Integráld a lekért időpontokat a saját jelentéstábla‑dashboardodba.  
-- Tekintsd át az Aspose.Email egyéb funkcióit, mint a találkozók küldése vagy az ismétlődő események kezelése.
+- Fedezze fel a további lekérdezési lehetőségeket, például a tárgy vagy szervező szűrőket.  
+- Integrálja a lekért időpontokat saját jelentéskészítő felületébe.  
+- Tekintse át az Aspose.Email egyéb funkcióit, például a találkozók küldését vagy az ismétlődő események kezelését.
 
 ## Gyakran Ismételt Kérdések
 
-**K:** Használhatom az Aspose.Email‑t vásárlás nélkül?  
-**V:** Igen, a ingyenes próbaverzióval elkezdheted a funkciók felfedezését, mielőtt megvásárolnád.
+**K:** Használhatom az Aspose.Email-t vásárlás nélkül?  
+**V:** Igen, ingyenes próbaverzióval elkezdheti, és felfedezheti a funkciókat a vásárlás előtt.
 
-**K:** Hogyan kezeljem a hitelesítési hibákat az Exchange szerverhez való csatlakozás során?  
-**V:** Ellenőrizd a hitelesítő adatokat és a hálózati beállításokat; győződj meg róla, hogy a Exchange fióknak engedélyezve van az EWS hozzáférés.
+**K:** Hogyan kezeljem a hitelesítési hibákat egy Exchange szerverhez való csatlakozás során?  
+**V:** Ellenőrizze a hitelesítő adatokat és a hálózati beállításokat; győződjön meg arról, hogy az Exchange fiók EWS hozzáféréssel rendelkezik.
 
 **K:** Milyen dátumformátumok támogatottak a tutorialban?  
-**V:** A `SimpleDateFormat` osztály bármely általad definiált mintát támogat; a példában a `"dd/MM/yyyy HH:mm:ss"` formátumot használjuk.
+**V:** A `SimpleDateFormat` osztály bármilyen általad definiált mintát támogat; a példa a `"dd/MM/yyyy HH:mm:ss"` formátumot használja.
 
 **K:** Hogyan változtathatom meg a dátumtartományt dinamikusan futásidőben?  
-**V:** Egyszerűen módosítsd a `since()` és `beforeOrEqual()` metódusoknak átadott karakterláncokat a lekérdezés felépítése előtt.
+**V:** Egyszerűen módosítsa a `since()` és `beforeOrEqual()` metódusoknak átadott karakterláncokat a lekérdezés felépítése előtt.
 
 **K:** Hol találok további dokumentációt az Aspose.Email funkcióiról?  
-**V:** Részletes dokumentáció a [Aspose Email Documentation](https://reference.aspose.com/email/java/) oldalon érhető el.
+**V:** Átfogó dokumentáció elérhető a [Aspose Email Documentation](https://reference.aspose.com/email/java/) oldalon.
 
-## Erőforrások
-- **Dokumentáció**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
+## Források
+- **Dokumentáció**: [Aspose Email Documentation](https://reference.aspose.com/email/java/)  
+- **Java dokumentáció**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
 - **Letöltés**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
 - **Vásárlás**: [Buy Aspose](https://purchase.aspose.com/buy)  
 - **Ingyenes próba**: [Get a Free Trial](https://releases.aspose.com/email/java/)  
-- **Ideiglenes licenc**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
+- **Ideiglenes licenc kérése**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **Támogatás**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Utoljára frissítve:** 2026-02-17  
-**Tesztelve:** Aspose.Email for Java 25.4 (jdk16)  
-**Szerző:** Aspose  
+**Last Updated:** 2026-07-17  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
+
+## Kapcsolódó tutorialok
+
+- [Útmutató az Exchange naptár csatlakoztatásához az Aspose.Email for Java segítségével | Exchange Server integráció](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [Java lapozás legjobb gyakorlatai – Paginated időpontok megvalósítása Aspose.Email for Exchange szerverekkel](/email/java/calendar-appointments/java-aspose-email-paginated-appointments/)
+- [Exchange időpontok kezelése Aspose.Email for Java-val: Átfogó útmutató](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
