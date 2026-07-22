@@ -1,95 +1,122 @@
 ---
-date: '2026-02-19'
-description: Узнайте, как отправлять электронную почту с вложением на Java с помощью
-  Aspose.Email. Это руководство охватывает прикрепление нескольких файлов в Java,
-  создание сообщения электронной почты в Java и экспорт письма в формат MSG.
+date: '2026-07-22'
+description: Узнайте, как отправлять HTML‑письма Java с вложениями с помощью Aspose.Email.
+  Это руководство охватывает прикрепление нескольких файлов, создание сообщений и
+  экспорт в формат MSG.
 keywords:
-- send emails with attachments using Aspose.Email for Java
-- Aspose.Email setup for Java
-- handling email attachments in Java
-title: Отправка письма с вложением на Java с использованием Aspose.Email
+- send html email java
+- attach multiple files java
+- aspose.email java tutorial
+- email without smtp java
+lastmod: '2026-07-22'
+og_description: Узнайте, как отправлять HTML‑письма Java с вложениями с помощью Aspose.Email.
+  Этот учебник показывает, как прикреплять файлы, создавать сообщения и экспортировать
+  в формат MSG.
+og_image_alt: 'Guide: Send HTML email with attachments in Java using Aspose.Email'
+og_title: Отправка HTML‑письма Java с вложениями – Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-07-22'
+  description: Learn how to send HTML email java with attachments using Aspose.Email.
+    This guide covers attaching multiple files, creating messages, and exporting to
+    MSG format.
+  headline: Send HTML Email Java with Attachments Using Aspose.Email
+  type: TechArticle
+- description: Learn how to send HTML email java with attachments using Aspose.Email.
+    This guide covers attaching multiple files, creating messages, and exporting to
+    MSG format.
+  name: Send HTML Email Java with Attachments Using Aspose.Email
+  steps:
+  - name: Visit the [Temporary License page](https://purchase.aspose.com/temporary-license/).
+    text: Visit the [Temporary License page](https://purchase.aspose.com/temporary-license/).
+  - name: Follow the instructions to request your free trial license.
+    text: Follow the instructions to request your free trial license.
+  - name: Apply the license in your application as described in the Aspose documentation.
+    text: Apply the license in your application as described in the Aspose documentation.
+  - name: '**Automated Reporting:** Generate daily/weekly reports and email them with
+      PDF or Excel attachments.'
+    text: '**Automated Reporting:** Generate daily/weekly reports and email them with
+      PDF or Excel attachments.'
+  - name: '**Notification Systems:** Send alerts with log files, screenshots, or configuration
+      backups attached.'
+    text: '**Notification Systems:** Send alerts with log files, screenshots, or configuration
+      backups attached.'
+  - name: '**Backup Solutions:** Periodically email database dumps or archive files
+      for off‑site storage.'
+    text: '**Backup Solutions:** Periodically email database dumps or archive files
+      for off‑site storage.'
+  type: HowTo
+- questions:
+  - answer: Use `message.getTo().addMailAddress(new MailAddress("email@example.com"));`
+      for each recipient.
+    question: How do I add multiple recipients to an email?
+  - answer: Yes, but you must ensure your server and JVM have sufficient memory and
+      that any SMTP relay permits large messages.
+    question: Can Aspose.Email handle attachments larger than 25 MB?
+  - answer: Absolutely! Set `message.isBodyHtml(true);` and assign HTML content to
+      `message.setHtmlBody("<h1>Hello</h1>");`.
+    question: Is it possible to send HTML emails with Aspose.Email?
+  - answer: Wrap your code in a try‑catch block, log the exception stack trace, and
+      enable Aspose.Email logging via `License.setLogFolder("path")`.
+    question: How can I debug issues when sending email?
+  - answer: Validate all email addresses, sanitize file paths, and never embed user‑provided
+      data directly into the email body without escaping.
+    question: What security best practices should I follow?
+  type: FAQPage
+tags:
+- send html email
+- aspose.email
+- java email attachments
+- email automation java
+- smtp alternative
+title: Отправка HTML‑письма Java с вложениями с помощью Aspose.Email
 url: /ru/java/attachments-handling/build-send-emails-attachments-aspose-email-java/
 weight: 1
 ---
 
- Considerations
-
-Translate bullet points.
-
-## Common Issues & Solutions
-
-Table: translate Issue and Solution headings, and content.
-
-## Frequently Asked Questions
-
-Translate Q&A.
-
-## FAQ (Additional)
-
-Translate.
-
-## Conclusion
-
-Translate.
-
-## Resources
-
-List with links unchanged.
-
-Then footer.
-
-Now produce final content with same shortcodes.
-
-Let's craft translation.
-
-Be careful with markdown formatting.
-
-Proceed.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Отправка Email с вложением Java с использованием Aspose.Email
+# Отправка HTML‑письма Java с вложениями с помощью Aspose.Email
 
-## Introduction
+## Введение
 
-If you need to **send email with attachment java**, you’ve come to the right place. In modern Java applications—whether you’re building reporting tools, notification services, or automated workflows—being able to programmatically create an email, attach files, and even export it as an MSG file is a valuable skill. This tutorial walks you through Aspose.Email for Java, showing you how to **attach multiple files java**, **create email message java**, and **export email to msg format** without relying on an external SMTP server.
+Если вам нужно **send HTML email java** с одним или несколькими вложениями, вы попали в нужное место. Современные Java‑приложения — будь то инструменты отчетности, сервисы уведомлений или автоматизированные рабочие процессы — часто требуют возможности программно создавать насыщенные HTML‑письма, прикреплять файлы и при желании экспортировать сообщение в файл MSG для последующего использования. В этом руководстве мы пройдемся по Aspose.Email for Java, показывая, как **attach multiple files java**, **create email message java** и **export email to msg format** без необходимости использовать внешний SMTP‑сервер.
 
-**What You’ll Learn**
-- Как настроить Aspose.Email for Java в Maven‑проекте  
-- Как создать сообщение email с информацией об отправителе и получателе  
+**Что вы узнаете**
+- Как настроить Aspose.Email for Java в проекте Maven  
+- Как создать сообщение электронной почты с информацией об отправителе и получателе  
 - Как прикрепить различные типы файлов (текст, изображение, PDF, архив, Word)  
-- Как сохранить сформированное сообщение как MSG‑файл для последующего использования или архивирования  
+- Как сохранить сформированное письмо в файл MSG для последующего использования или архивирования  
 
-Ready to boost your Java email automation? Let’s dive into the prerequisites.
+Готовы ускорить автоматизацию электронной почты в Java? Перейдём к требованиям.
 
-## Quick Answers
-- **What library do I need?** Aspose.Email for Java  
-- **Can I attach any file type?** Yes – text, images, PDFs, archives, Word docs, etc.  
-- **Do I need a license?** A temporary license works for testing; a full license is required for production.  
-- **How do I save the email?** Use `message.save(..., SaveOptions.getDefaultMsg())`.  
-- **Is HTML email supported?** Absolutely – set `message.isBodyHtml(true)` and provide HTML content.
+## Быстрые ответы
+- **Какую библиотеку мне нужно?** Aspose.Email for Java  
+- **Можно ли прикреплять любой тип файлов?** Да — текст, изображения, PDF, архивы, документы Word и т.д.  
+- **Нужна ли лицензия?** Временная лицензия подходит для тестирования; полная лицензия требуется для продакшн.  
+- **Как сохранить письмо?** Используйте `message.save(..., SaveOptions.getDefaultMsg())`.  
+- **Поддерживается ли HTML‑почта?** Абсолютно — установите `message.isBodyHtml(true)` и передайте HTML‑содержимое.
 
-## What is Aspose.Email for Java?
-Aspose.Email for Java is a high‑performance API that lets you create, edit, and send email messages without relying on an external mail server. It handles MIME structures, attachments, and various email formats (EML, MSG, MHTML) out of the box.
+## Что такое Aspose.Email for Java?
+Aspose.Email for Java — это высокопроизводительный API, позволяющий создавать, редактировать и отправлять сообщения электронной почты без необходимости использовать внешний почтовый сервер. Он обрабатывает MIME‑структуры, вложения и различные форматы писем (EML, MSG, MHTML) «из коробки». Полностью совместим с Java 8 и более новыми версиями, предоставляя единый API для разных платформ.
 
-## Why use Aspose.Email to send email with attachment java?
-- **No external SMTP required** for building and saving messages.  
-- **Rich attachment support** – you can add any file type, including large binaries.  
-- **Cross‑platform compatibility** – works on Windows, Linux, and macOS JVMs.  
-- **Built‑in saving** – effortlessly export to MSG, EML, or MHTML for archival.
+## Почему стоит использовать Aspose.Email для отправки писем с вложениями в Java?
+Вы можете создавать и сохранять полнофункциональные сообщения электронной почты без настройки SMTP‑ретранслятора, что упрощает тестирование и офлайн‑архивирование. Aspose.Email поддерживает **более 50 форматов ввода и вывода**, обрабатывает вложения в сотни страниц без загрузки всего файла в память и работает на JVM под Windows, Linux и macOS. Это делает его предпочтительным решением для надёжной генерации писем в корпоративных Java‑средах.
 
-## Prerequisites
+## Предварительные требования
 
-- **Java Development Kit (JDK):** Version 16 or later.  
-- **IDE:** IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
-- **Maven:** We'll manage dependencies with Maven.  
+- **Java Development Kit (JDK):** версия 16 или новее.  
+- **IDE:** IntelliJ IDEA, Eclipse или любой совместимый с Java редактор.  
+- **Maven:** Мы будем управлять зависимостями с помощью Maven.  
 
-A basic understanding of Java and Maven projects is assumed.
+Предполагается базовое понимание Java и проектов Maven.
 
-## Setting Up Aspose.Email for Java
+## Настройка Aspose.Email for Java
 
-### Installation via Maven
+### Установка через Maven
 
 Add the following dependency to your `pom.xml` file:
 
@@ -102,15 +129,15 @@ Add the following dependency to your `pom.xml` file:
 </dependency>
 ```
 
-### License Acquisition
+### Получение лицензии
 
-Aspose.Email for Java can be used with a free trial or a purchased license. To test full capabilities, obtain a temporary license:
+Aspose.Email for Java можно использовать в бесплатной пробной версии или по приобретённой лицензии. Чтобы протестировать все возможности, получите временную лицензию:
 
-1. Visit the [Temporary License page](https://purchase.aspose.com/temporary-license/).  
-2. Follow the instructions to request your free trial license.  
-3. Apply the license in your application as described in the Aspose documentation.
+1. Перейдите на страницу [Temporary License page](https://purchase.aspose.com/temporary-license/).  
+2. Следуйте инструкциям, чтобы запросить бесплатную пробную лицензию.  
+3. Примените лицензию в вашем приложении, как описано в документации Aspose.
 
-### Basic Initialization
+### Базовая инициализация
 
 Start by creating a `MailMessage` object and setting the basic addresses:
 
@@ -124,12 +151,13 @@ message.setFrom(new MailAddress("sender@sender.com"));
 message.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 ```
 
-## Implementation Guide
+## Руководство по реализации
 
-### How to send email with attachment java using Aspose.Email for Java
+### Как отправить письмо с вложением в Java, используя Aspose.Email for Java
+`MailMessage` — основной класс Aspose.Email, представляющий письмо, позволяющий задавать отправителя, получателей, тему, тело и вложения.  
+Загрузите ваши PDF, изображения или файлы Word, прикрепите их к `MailMessage`, задайте HTML‑тело и затем сохраните сообщение в файл MSG — всё в нескольких простых шагах. Такой подход позволяет **send HTML email java** без SMTP‑сервера, что идеально подходит для офлайн‑обработки или пакетной генерации.
 
-#### Initialize the `MailMessage` Object
-
+#### Инициализация объекта `MailMessage`
 ```java
 // Set 'From' address
 message.setFrom(new MailAddress("sender@sender.com"));
@@ -138,16 +166,14 @@ message.setFrom(new MailAddress("sender@sender.com"));
 message.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 ```
 
-#### Define Directory Paths for Attachments
-
+#### Определите пути к каталогам для вложений
 Replace `"YOUR_DOCUMENT_DIRECTORY/"` with the path that contains the files you want to attach:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 ```
 
-#### Add Attachments (attach files to email)
-
+#### Добавьте вложения (attach files to email)
 You can attach a variety of file types. Below we add a text file, an image, a Word document, a RAR archive, and a PDF:
 
 ```java
@@ -168,87 +194,95 @@ message.getAttachments().addItem(new Attachment(dataDir + "1.rar"));
 message.getAttachments().addItem(new Attachment(dataDir + "1.pdf"));
 ```
 
-#### Define Output Directory Path
-
+#### Укажите путь к каталогу вывода
 Set the folder where the final MSG file will be stored:
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 ```
 
-#### Save the Email Message (export email to msg format)
-
+#### Сохраните сообщение электронной почты (export email to msg format)
+`SaveOptions` defines how a `MailMessage` is persisted, offering formats like MSG, EML, and MHTML.  
 ```java
 message.save(outputDir + "AddAttachmentToANewEmailMessage_out.msg", SaveOptions.getDefaultMsg());
 ```
 
-## Practical Applications
+## Как отправить HTML‑письмо Java с вложениями, используя Aspose.Email
+`SaveOptions` определяет, как сохраняется `MailMessage`, предлагая форматы MSG, EML и MHTML.  
+Загрузите `MailMessage`, установите `isBodyHtml(true)`, задайте вашу HTML‑строку через `setHtmlBody(...)`, прикрепите нужные файлы и вызовите `save(..., SaveOptions.getDefaultMsg())`. Этот однострочный шаблон создаёт полностью совместимое HTML‑письмо, готовое к хранению или последующей отправке через SMTP.
 
-Aspose.Email for Java shines in many real‑world scenarios:
+## Практические применения
+Aspose.Email for Java проявляет себя во многих реальных сценариях:
 
-1. **Automated Reporting:** Generate daily/weekly reports and email them with PDF or Excel attachments.  
-2. **Notification Systems:** Send alerts with log files, screenshots, or configuration backups attached.  
-3. **Backup Solutions:** Periodically email database dumps or archive files for off‑site storage.  
+1. **Автоматизированная отчетность:** Генерировать ежедневные/еженедельные отчёты и отправлять их по электронной почте с вложениями PDF или Excel.  
+2. **Системы уведомлений:** Отправлять оповещения с прикреплёнными лог‑файлами, скриншотами или резервными копиями конфигураций.  
+3. **Резервные решения:** Периодически отправлять по почте дампы баз данных или архивные файлы для внешнего хранения.
 
-## Performance Considerations
+## Соображения по производительности
 
-- **Dispose objects:** Call `message.dispose()` when the message is no longer needed to free native resources.  
-- **Stream attachments:** For large files, use streams to avoid loading the entire file into memory.  
-- **Thread pooling:** When sending many emails concurrently, reuse a thread pool to limit JVM overhead.
+- **Освобождение объектов:** Вызывайте `message.dispose()`, когда сообщение больше не требуется, чтобы освободить нативные ресурсы.  
+- **Потоковая передача вложений:** Для больших файлов используйте потоки, чтобы избежать загрузки всего файла в память.  
+- **Пул потоков:** При одновременной отправке большого количества писем переиспользуйте пул потоков, чтобы снизить нагрузку на JVM.
 
-## Common Issues & Solutions
+## Распространённые проблемы и решения
 
-| Issue | Solution |
-|-------|----------|
-| **Large attachment (>25 MB) fails** | Verify your SMTP server (if used) allows large payloads; increase JVM heap if needed. |
-| **Attachment not appearing** | Ensure the file path is correct and the file is accessible; check file permissions. |
-| **Saved MSG cannot be opened** | Use `SaveOptions.getDefaultMsg()` and make sure you have the latest Aspose.Email version. |
+| Проблема | Решение |
+|----------|---------|
+| **Большое вложение (>25 MB) не проходит** | Проверьте, позволяет ли ваш SMTP‑сервер (если используется) большие нагрузки; при необходимости увеличьте размер кучи JVM. |
+| **Вложение не отображается** | Убедитесь, что путь к файлу правильный и файл доступен; проверьте права доступа. |
+| **Сохранённый MSG не открывается** | Используйте `SaveOptions.getDefaultMsg()` и убедитесь, что у вас последняя версия Aspose.Email. |
 
-## Frequently Asked Questions
+## Часто задаваемые вопросы
 
-**Q: How do I add multiple recipients to an email?**  
-A: Use `message.getTo().addMailAddress(new MailAddress("email@example.com"));` for each recipient.
+**В: Как добавить несколько получателей к письму?**  
+О: Используйте `message.getTo().addMailAddress(new MailAddress("email@example.com"));` для каждого получателя.
 
-**Q: Can Aspose.Email handle attachments larger than 25 MB?**  
-A: Yes, but you must ensure your server and JVM have sufficient memory and that any SMTP relay permits large messages.
+**В: Может ли Aspose.Email обрабатывать вложения больше 25 MB?**  
+О: Да, но необходимо убедиться, что ваш сервер и JVM имеют достаточный объём памяти, и что любой SMTP‑ретранслятор допускает большие сообщения.
 
-**Q: Is it possible to send HTML emails with Aspose.Email?**  
-A: Absolutely! Set `message.isBodyHtml(true);` and assign HTML content to `message.setHtmlBody("<h1>Hello</h1>");`.
+**В: Можно ли отправлять HTML‑письма с помощью Aspose.Email?**  
+О: Конечно! Установите `message.isBodyHtml(true);` и задайте HTML‑содержимое через `message.setHtmlBody("<h1>Hello</h1>");`.
 
-**Q: How can I debug issues when sending email?**  
-A: Wrap your code in a try‑catch block, log the exception stack trace, and enable Aspose.Email logging via `License.setLogFolder("path")`.
+**В: Как отладить проблемы при отправке письма?**  
+О: Оберните код в блок try‑catch, запишите стек трассировки исключения в лог и включите логирование Aspose.Email через `License.setLogFolder("path")`.
 
-**Q: What security best practices should I follow?**  
-A: Validate all email addresses, sanitize file paths, and never embed user‑provided data directly into the email body without escaping.
+**В: Какие лучшие практики безопасности следует соблюдать?**  
+О: Проверяйте все адреса электронной почты, очищайте пути к файлам и никогда не вставляйте данные, предоставленные пользователем, напрямую в тело письма без экранирования.
 
-## FAQ (Additional)
+## FAQ (Дополнительно)
 
-**Q: Can I use this approach without an SMTP server?**  
-A: Yes—Aspose.Email lets you create and save messages (e.g., MSG, EML) without sending them through SMTP.
+**В: Можно ли использовать этот подход без SMTP‑сервера?**  
+О: Да — Aspose.Email позволяет создавать и сохранять сообщения (например, MSG, EML) без их отправки через SMTP.
 
-**Q: Does Aspose.Email support encrypting attachments?**  
-A: Yes, you can encrypt the entire message or specific attachments using the API’s security features.
+**В: Поддерживает ли Aspose.Email шифрование вложений?**  
+О: Да, вы можете зашифровать всё сообщение или отдельные вложения, используя функции безопасности API.
 
-**Q: What is the maximum number of attachments I can add?**  
-A: Practically, the limit is governed by memory and the receiving mail server’s policies, not the library itself.
+**В: Каково максимальное количество вложений, которое можно добавить?**  
+О: Практически ограничение определяется памятью и политиками почтового сервера получателя, а не самой библиотекой.
 
-## Conclusion
+## Заключение
 
-You now have a complete, production‑ready workflow for **send email with attachment java**, attach files to email, and **export email to msg format** using Aspose.Email for Java. Explore the full [documentation](https://reference.aspose.com/email/java/) to dive deeper into advanced features like SMTP sending, HTML body creation, and encryption.
+Теперь у вас есть полный, готовый к продакшн рабочий процесс для **send HTML email java**, прикрепления файлов к письму и **export email to msg format** с использованием Aspose.Email for Java. Изучите полную [documentation](https://reference.aspose.com/email/java/) для более глубокого погружения в расширенные возможности, такие как отправка через SMTP, создание HTML‑тела и шифрование.
 
-## Resources
-- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email](https://releases.aspose.com/email/java/)
-- [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial Access](https://releases.aspose.com/email/java/)
-- [Temporary License Application](https://purchase.aspose.com/temporary-license/)
-- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+## Ресурсы
+- [Документация Aspose.Email](https://reference.aspose.com/email/java/)
+- [Скачать Aspose.Email](https://releases.aspose.com/email/java/)
+- [Приобрести лицензию](https://purchase.aspose.com/buy)
+- [Доступ к бесплатной пробной версии](https://releases.aspose.com/email/java/)
+- [Заявка на временную лицензию](https://purchase.aspose.com/temporary-license/)
+- [Форум поддержки Aspose](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-02-19  
-**Tested With:** Aspose.Email 25.4 (JDK 16)  
-**Author:** Aspose  
+**Последнее обновление:** 2026-07-22  
+**Тестировано с:** Aspose.Email 25.4 (JDK 16)  
+**Автор:** Aspose
+
+## Связанные руководства
+
+- [Как отправлять письма с помощью Aspose.Email в Java: Полное руководство по операциям SMTP‑клиента](/email/java/smtp-client-operations/send-emails-aspose-email-java-tutorial/)
+- [Мастерство Aspose.Email Java: Установка пользовательских заголовков письма и отправка писем через SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+- [Как извлекать вложения из сообщений электронной почты с помощью Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
