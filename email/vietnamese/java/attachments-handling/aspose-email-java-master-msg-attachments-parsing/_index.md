@@ -1,13 +1,82 @@
 ---
-date: '2026-02-19'
-description: Tìm hiểu cách chuyển đổi MSG sang EML, trích xuất và lưu các tệp đính
-  kèm MSG, nhúng email và quản lý các tệp đính kèm email một cách hiệu quả với Aspose.Email
-  cho Java.
+date: '2026-07-22'
+description: Tìm hiểu cách nhúng email trong email và chuyển MSG sang EML bằng Aspose.Email
+  cho Java. Hướng dẫn này bao gồm attachment extraction, embedding messages và practical
+  code examples.
 keywords:
-- Aspose.Email for Java
-- parse MSG attachments
-- manage email attachments
-title: Chuyển đổi MSG sang EML và Quản lý tệp đính kèm với Aspose.Email cho Java
+- embed email in email
+- outlook msg to eml
+- embed message as attachment
+- aspose email java tutorial
+lastmod: '2026-07-22'
+og_description: Tìm hiểu cách nhúng email trong email và chuyển MSG sang EML bằng
+  Aspose.Email cho Java. Hướng dẫn này bao gồm attachment extraction, embedding messages
+  và practical code examples.
+og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
+  Aspose.Email for Java
+og_title: Nhúng email trong email – Chuyển MSG sang EML với Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-07-22'
+  description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
+    for Java. This guide covers attachment extraction, embedding messages, and practical
+    code examples.
+  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  type: TechArticle
+- description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
+    for Java. This guide covers attachment extraction, embedding messages, and practical
+    code examples.
+  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  steps:
+  - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
+      Page](https://releases.aspose.com/email/java/).'
+    text: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
+      Page](https://releases.aspose.com/email/java/).'
+  - name: '**Temporary License**: Apply for a temporary license at [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License**: Apply for a temporary license at [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase License**: For full access, visit [Aspose Purchase Page](https://purchase.aspose.com/buy).'
+    text: '**Purchase License**: For full access, visit [Aspose Purchase Page](https://purchase.aspose.com/buy).'
+  - name: '**Load the MSG File**'
+    text: '**Load the MSG File**'
+  - name: '**Iterate and Save Attachments**'
+    text: '**Iterate and Save Attachments**'
+  - name: '**Create Main Message**'
+    text: '**Create Main Message**'
+  - name: '**Load and Add Embedded Message**'
+    text: '**Load and Add Embedded Message**'
+  - name: '**Save the New MSG File**'
+    text: '**Save the New MSG File**'
+  - name: '**Load MSG File**'
+    text: '**Load MSG File**'
+  - name: '**Retrieve and Process Embedded Message**'
+    text: '**Retrieve and Process Embedded Message**'
+  type: HowTo
+- questions:
+  - answer: Use `MapiMessage.fromFile("path/to/file.msg")` to load the MSG file into
+      a `MapiMessage` object.
+    question: How do I load a MSG file with Aspose.Email for Java?
+  - answer: Iterate over `message.getAttachments()` and call `attachment.save(destinationPath)`
+      for each item.
+    question: What is the best way to extract MSG attachments?
+  - answer: Yes—create a `MapiMessage` for the inner email and add it to the outer
+      message’s attachments collection.
+    question: Can I embed an email inside another email using Aspose.Email for Java?
+  - answer: A valid license is required for production use; a free trial works for
+      evaluation only.
+    question: Do I need a license to extract attachments in a production environment?
+  - answer: Ensure you reference the correct attachment index and verify that the
+      embedded content is a valid MSG file.
+    question: Are there any common pitfalls when reading embedded messages?
+  type: FAQPage
+tags:
+- embed email
+- MSG to EML
+- Aspose.Email
+- Java email processing
+- email attachments
+title: Nhúng email trong email – Chuyển MSG sang EML với Aspose.Email
 url: /vi/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
@@ -17,50 +86,50 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Chuyển đổi MSG sang EML và Quản lý Tệp đính kèm một cách Hiệu quả với Aspose.Email cho Java
+# Nhúng Email trong Email – Chuyển đổi MSG sang EML với Aspose.Email cho Java
 
 ## Giới thiệu
 
-Quản lý các tệp đính kèm email một cách hiệu quả có thể là thách thức, đặc biệt khi bạn cũng cần **convert MSG to EML** các tệp cho quá trình xử lý tiếp theo. Trong hướng dẫn này, bạn sẽ thấy cách **aspose email java** giúp đơn giản việc phân tích, lưu và nhúng các tệp đính kèm từ các tệp MSG, nhúng tin nhắn trong email, và đọc nội dung được nhúng. Bằng cách nắm vững những kỹ năng này, bạn sẽ nâng cao khả năng quản lý quy trình email một cách suôn sẻ.
+Quản lý các tệp đính kèm email một cách hiệu quả và có khả năng **embed email in email** là những thách thức phổ biến khi tích hợp dữ liệu Outlook với các hệ thống khác. Với Aspose.Email for Java, bạn có thể chuyển đổi MSG sang EML một cách liền mạch, trích xuất và lưu các tệp đính kèm, và thậm chí nhúng một tin nhắn vào tin nhắn khác. Hướng dẫn này sẽ đưa bạn qua từng bước, giải thích tại sao các khả năng này quan trọng, và cung cấp các đoạn mã sẵn sàng chạy.
 
-Chúng tôi sẽ đề cập tới:
-- Phân tích và lưu các tệp đính kèm từ một tệp MSG.
-- Nhúng một tin nhắn dưới dạng tệp đính kèm trong một tin nhắn khác.
-- Đọc các tin nhắn được nhúng từ các tệp đính kèm.
-- **How to convert MSG to EML** using Aspose.Email for Java.
-
-Hãy bắt đầu bằng cách thiết lập môi trường của bạn với Aspose.Email cho Java.
+Chúng ta sẽ bao gồm:
+- Phân tích và lưu các tệp đính kèm từ tệp MSG.  
+- Nhúng một tin nhắn dưới dạng tệp đính kèm trong một tin nhắn khác.  
+- Đọc các tin nhắn đã nhúng từ các tệp đính kèm.  
+- **Cách chuyển đổi MSG sang EML** sử dụng Aspose.Email cho Java.
 
 ## Câu trả lời nhanh
-- **What does aspose email java do?** Nó cung cấp một API Java để đọc, tạo và thao tác với các định dạng MSG, EML và các định dạng email khác.  
-- **How can I extract msg attachments?** Sử dụng `MapiMessage.getAttachments()` và lưu mỗi `MapiAttachment`.  
-- **Can I embed email in email?** Có — thêm một `MapiMessage` dưới dạng tệp đính kèm vào một `MapiMessage` khác.  
-- **Do I need a license?** Bản dùng thử miễn phí hoạt động cho việc đánh giá; cần giấy phép vĩnh viễn cho môi trường sản xuất.  
-- **What Java version is required?** JDK 16 hoặc phiên bản mới hơn được khuyến nghị.
+- **Aspose.Email for Java làm gì?** Nó cung cấp một API Java để đọc, tạo và thao tác các định dạng email như MSG, EML và các định dạng khác.  
+- **Làm thế nào để tôi trích xuất các tệp đính kèm MSG?** Sử dụng `MapiMessage.getAttachments()` và lưu mỗi `MapiAttachment`.  
+- **Tôi có thể nhúng email trong email không?** Có—thêm một `MapiMessage` làm tệp đính kèm vào một `MapiMessage` khác.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho việc đánh giá; giấy phép vĩnh viễn là bắt buộc cho môi trường sản xuất.  
+- **Yêu cầu phiên bản Java nào?** Đề nghị JDK 16 hoặc mới hơn.
 
-## Cách chuyển đổi MSG sang EML bằng Aspose.Email cho Java
-Chuyển đổi một tệp Outlook MSG sang định dạng EML di động hơn là một yêu cầu phổ biến khi tích hợp với các hệ thống email không phải của Microsoft. Với Aspose.Email cho Java, bạn có thể thực hiện chuyển đổi chỉ trong vài dòng mã:
+## Cách chuyển đổi MSG sang EML bằng Aspose.Email cho Java?
+`MapiMessage` là lớp của Aspose.Email đại diện cho một tin nhắn email Outlook MSG. Tải tệp MSG bằng `MapiMessage.fromFile()`, sau đó gọi `save` với tên tệp `.eml`. Việc chuyển đổi một dòng này giữ nguyên tất cả tiêu đề, nội dung thân và các tệp đính kèm, vì vậy tệp EML kết quả có thể được gửi qua bất kỳ máy chủ SMTP nào mà không mất độ chính xác. Quá trình cũng giữ lại thời gian tạo gốc và các cờ ưu tiên, đảm bảo độ trung thực đầy đủ.
 
-1. **Load the MSG file** với `MapiMessage.fromFile()`.  
-2. **Call the `save` method** và chỉ định tên tệp đích có phần mở rộng `.eml`.  
-3. **Optionally, adjust the message format** (ví dụ: đặt mã hoá) trước khi lưu.
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
 
-> **Pro tip:** Quá trình chuyển đổi giữ nguyên tất cả các tiêu đề, nội dung thân và tệp đính kèm gốc, vì vậy bạn có thể ngay lập tức chuyển tiếp tệp EML kết quả tới bất kỳ máy chủ SMTP nào.
+> **Mẹo chuyên nghiệp:** Việc chuyển đổi giữ nguyên tất cả tiêu đề, nội dung thân và các tệp đính kèm gốc, vì vậy bạn có thể ngay lập tức chuyển tiếp tệp EML kết quả tới bất kỳ máy chủ SMTP nào.
 
-## Tổng quan về aspose email java
-Aspose.Email for Java (thường được gọi là **aspose email java**) là một thư viện mạnh mẽ trừu tượng hoá các phức tạp của định dạng tệp email. Dù bạn cần **load msg file**, trích xuất nội dung của nó, hay **manage email attachments**, API cung cấp một cách tiếp cận sạch sẽ, hướng đối tượng.
+## Aspose.Email cho Java là gì?
+`Aspose.Email for Java` là một thư viện mạnh mẽ trừu tượng hoá các phức tạp của định dạng tệp email. Nó hỗ trợ **hơn 50 định dạng đầu vào và đầu ra**, bao gồm MSG, EML, HTML và MIME, và có thể xử lý các tin nhắn hàng trăm trang mà không cần tải toàn bộ tệp vào bộ nhớ.
 
-## “extract msg attachments” là gì?
-Việc trích xuất tệp đính kèm MSG có nghĩa là đọc tệp MSG nhị phân, xác định từng đối tượng tệp đính kèm và lưu chúng vào đĩa hoặc xử lý trong bộ nhớ. Đây là một yêu cầu phổ biến cho các pipeline xử lý email tự động, giải pháp lưu trữ, hoặc tích hợp CRM.
+## “Trích xuất tệp đính kèm MSG” là gì?
+Việc trích xuất tệp đính kèm MSG có nghĩa là đọc tệp MSG nhị phân, xác định mỗi đối tượng đính kèm và lưu nó vào đĩa hoặc xử lý trong bộ nhớ. Điều này là cần thiết cho các pipeline xử lý email tự động, giải pháp lưu trữ, hoặc tích hợp CRM.
 
-## Các yêu cầu trước
-Trước khi bắt tay vào triển khai, hãy đảm bảo bạn có:
+## Yêu cầu trước
+Trước khi bắt đầu triển khai, hãy chắc chắn rằng bạn có:
 
-- **Java Development Kit (JDK)**: JDK 16 hoặc phiên bản mới hơn nên được cài đặt trên hệ thống của bạn.
-- **Maven**: Hướng dẫn này sử dụng Maven để quản lý phụ thuộc.
-- **Aspose.Email Library**: Bạn sẽ cần bao gồm Aspose.Email cho Java như một thư viện.
+- **Java Development Kit (JDK)**: JDK 16 hoặc mới hơn nên được cài đặt trên hệ thống của bạn.  
+- **Maven**: Hướng dẫn này sử dụng Maven để quản lý phụ thuộc.  
+- **Thư viện Aspose.Email**: Bạn sẽ cần bao gồm Aspose.Email cho Java như một thư viện.
 
-### Thư viện bắt buộc
+### Thư viện yêu cầu
 Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
 ```xml
 <dependency>
@@ -71,20 +140,12 @@ Thêm phụ thuộc sau vào tệp `pom.xml` của bạn:
 </dependency>
 ```
 
-### Đăng ký giấy phép
-Để tận dụng tối đa Aspose.Email cho Java, hãy cân nhắc mua giấy phép:
-- **Free Trial**: Bắt đầu với bản dùng thử 30‑ngày để khám phá các tính năng.
-- **Temporary License**: Nhận giấy phép tạm thời cho việc thử nghiệm kéo dài.
-- **Purchase**: Đối với việc sử dụng lâu dài, mua gói đăng ký.
+### Cách lấy giấy phép
+Để sử dụng đầy đủ Aspose.Email cho Java, hãy cân nhắc việc mua giấy phép:
 
-## Cài đặt Aspose.Email cho Java
-### Thông tin cài đặt
-Để cài đặt Aspose.Email cho Java bằng Maven, bao gồm phụ thuộc đã đề cập ở trên trong tệp `pom.xml`. Điều này sẽ tự động tải xuống và quản lý tất cả các thư viện cần thiết.
-
-### Cấu hình giấy phép
-1. **Free Trial**: Tải xuống và kích hoạt bản dùng thử từ [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).
-2. **Temporary License**: Đăng ký giấy phép tạm thời tại [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/). 
-3. **Purchase License**: Để có quyền truy cập đầy đủ, truy cập [Aspose Purchase Page](https://purchase.aspose.com/buy).
+- **Dùng thử miễn phí**: Bắt đầu với bản dùng thử 30 ngày để khám phá các tính năng.  
+- **Giấy phép tạm thời**: Nhận giấy phép tạm thời để thử nghiệm kéo dài.  
+- **Mua**: Đối với việc sử dụng lâu dài, mua một gói đăng ký.
 
 Sau khi có tệp giấy phép, thiết lập nó trong dự án Java của bạn bằng cách:
 ```java
@@ -92,19 +153,40 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Hướng dẫn triển khai
-### Phân tích và Lưu Tệp đính kèm từ Tệp MSG
-#### Tổng quan
-Tính năng này cho phép bạn **extract msg attachments** từ một tệp MSG và lưu chúng cục bộ. Nó hữu ích cho việc xử lý dữ liệu email hoặc tích hợp với các hệ thống khác.
+## Cài đặt Aspose.Email cho Java
+### Thông tin cài đặt
+Để cài đặt Aspose.Email cho Java bằng Maven, bao gồm phụ thuộc đã đề cập ở trên trong `pom.xml` của bạn. Điều này đảm bảo tất cả các thư viện cần thiết được tự động tải xuống và quản lý.
+
+### Cài đặt giấy phép
+1. **Dùng thử miễn phí**: Tải xuống và kích hoạt bản dùng thử của bạn từ [Trang dùng thử miễn phí của Aspose](https://releases.aspose.com/email/java/).  
+2. **Giấy phép tạm thời**: Đăng ký giấy phép tạm thời tại [Trang giấy phép tạm thời của Aspose](https://purchase.aspose.com/temporary-license/).  
+3. **Mua giấy phép**: Để có quyền truy cập đầy đủ, truy cập [Trang mua Aspose](https://purchase.aspose.com/buy).
+
+## Cách nhúng email trong email bằng Aspose.Email cho Java?
+Việc nhúng một email vào một email khác đơn giản như việc thêm một đối tượng `MapiMessage` vào bộ sưu tập tệp đính kèm của một `MapiMessage` cha. Tin nhắn bên trong giữ nguyên cấu trúc gốc, cho phép người nhận mở nó như một tệp đính kèm email thông thường. Bạn cũng có thể đặt tên hiển thị tùy chỉnh cho tin nhắn được đính kèm.
+
+```java
+// Direct answer: Embed one MSG inside another in three steps
+MapiMessage outer = new MapiMessage("sender@domain.com", "recipient@domain.com", "Subject", "Body");
+MapiMessage inner = MapiMessage.fromFile("inner.msg");
+outer.getAttachments().add(inner);
+outer.save("outer_with_embedded.msg");
+```
+
+## Phân tích và lưu các tệp đính kèm từ tệp MSG
+### Tổng quan
+Tính năng này cho phép bạn **trích xuất tệp đính kèm MSG** từ một tệp MSG và lưu chúng cục bộ. Nó hữu ích cho việc xử lý dữ liệu email hoặc tích hợp với các hệ thống khác.
+
+`MapiMessage` là cách biểu diễn của Aspose.Email cho một tin nhắn Outlook MSG, cung cấp cho bạn quyền truy cập lập trình vào tiêu đề, nội dung và các tệp đính kèm.
 
 #### Các bước
-1. **Load the MSG File**  
+1. **Tải tệp MSG**  
    Tải tệp MSG bằng phương thức `MapiMessage.fromFile()`:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Iterate and Save Attachments**  
-   Lặp qua mỗi tệp đính kèm, lưu chúng với tên tệp gốc:
+2. **Lặp và lưu các tệp đính kèm**  
+   Duyệt qua mỗi tệp đính kèm, lưu chúng với tên tệp gốc:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -114,123 +196,138 @@ Tính năng này cho phép bạn **extract msg attachments** từ một tệp MS
    ```
 
 #### Khắc phục sự cố
-- Đảm bảo đường dẫn thư mục đúng và có quyền ghi.
+- Đảm bảo đường dẫn thư mục đúng và có quyền ghi.  
 - Xác nhận rằng tệp MSG thực sự chứa các tệp đính kèm.
 
-### Nhúng Tin nhắn dưới dạng Tệp đính kèm
-#### Tổng quan
-Nhúng một tin nhắn (tức là **embed email in email**) rất hữu ích cho việc gửi báo cáo, chuyển tiếp cuộc trò chuyện, hoặc gộp các liên lạc liên quan.
+## Nhúng một tin nhắn dưới dạng tệp đính kèm
+### Tổng quan
+Nhúng một tin nhắn (**nhúng tin nhắn dưới dạng tệp đính kèm**) hữu ích cho việc gửi báo cáo, chuyển tiếp cuộc trò chuyện, hoặc gộp các giao tiếp liên quan.
 
 #### Các bước
-1. **Create Main Message**  
+1. **Tạo tin nhắn chính**  
    Định nghĩa tin nhắn chính của bạn bằng `MapiMessage`:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
-2. **Load and Add Embedded Message**  
+2. **Tải và thêm tin nhắn đã nhúng**  
    Tải tệp MSG cần nhúng và thêm nó như một tệp đính kèm:
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
-3. **Save the New MSG File**  
+3. **Lưu tệp MSG mới**  
    Lưu tin nhắn với tệp đính kèm đã nhúng:
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
 #### Khắc phục sự cố
-- Xác nhận rằng cả tin nhắn chính và tin nhắn được nhúng đều được định dạng đúng.
+- Xác nhận rằng cả tin nhắn chính và tin nhắn đã nhúng đều được định dạng đúng.  
 - Đảm bảo các đường dẫn tệp chính xác.
 
-### Đọc Tin nhắn Nhúng từ Tệp đính kèm
-#### Tổng quan
-Học cách trích xuất và xử lý một tin nhắn **embedded as an attachment**, hữu ích cho việc tự động xử lý nội dung email.
+## Đọc các tin nhắn đã nhúng từ tệp đính kèm
+### Tổng quan
+Học cách trích xuất và xử lý một tin nhắn **được nhúng dưới dạng tệp đính kèm**, hữu ích cho việc xử lý tự động nội dung email.
 
 #### Các bước
-1. **Load MSG File**  
-   Tải tệp MSG chứa tin nhắn được nhúng:
+1. **Tải tệp MSG**  
+   Tải tệp MSG chứa tin nhắn đã nhúng:
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
-2. **Retrieve and Process Embedded Message**  
+2. **Lấy và xử lý tin nhắn đã nhúng**  
    Trích xuất tệp đính kèm đầu tiên dưới dạng đối tượng `MapiMessage`:
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
 
 #### Khắc phục sự cố
-- Xác nhận chỉ mục tệp đính kèm đúng.
+- Xác nhận rằng chỉ số tệp đính kèm là đúng.  
 - Kiểm tra bất kỳ lỗi phân tích nào.
 
 ## Ứng dụng thực tiễn
-1. **Automated Email Processing** – Trích xuất tệp đính kèm từ email để phân tích hoặc lưu trữ thêm.  
-2. **Report Distribution** – Nhúng báo cáo trong email để đảm bảo người nhận nhận được bản cập nhật đầy đủ.  
-3. **Data Archiving** – Lưu nội dung email và tệp đính kèm cục bộ để lưu trữ hồ sơ.  
-4. **Integration with CRM Systems** – Tự động trích xuất các liên lạc của khách hàng.  
-5. **Email‑Based Notifications** – Sử dụng tin nhắn nhúng để cung cấp cảnh báo chi tiết.
+- **Xử lý email tự động** – Trích xuất tệp đính kèm từ email để phân tích hoặc lưu trữ thêm.  
+- **Phân phối báo cáo** – Nhúng báo cáo trong email để đảm bảo người nhận nhận được cập nhật toàn diện.  
+- **Lưu trữ dữ liệu** – Lưu nội dung email và tệp đính kèm cục bộ để lưu hồ sơ.  
+- **Tích hợp với hệ thống CRM** – Tự động trích xuất các giao tiếp của khách hàng.  
+- **Thông báo qua email** – Sử dụng tin nhắn đã nhúng để cung cấp cảnh báo chi tiết.
 
-## Cân nhắc về hiệu năng
-Để tối ưu hiệu năng khi sử dụng Aspose.Email:
-- Quản lý tài nguyên bằng cách đóng các luồng sau khi xử lý tệp.
-- Sử dụng các kỹ thuật quản lý bộ nhớ Java thích hợp, như tinh chỉnh garbage‑collection.
+## Các cân nhắc về hiệu suất
+Để tối ưu hiệu suất khi sử dụng Aspose.Email:
+- Quản lý tài nguyên bằng cách đóng các luồng sau khi xử lý tệp.  
+- Sử dụng các kỹ thuật quản lý bộ nhớ Java phù hợp, như tinh chỉnh garbage‑collection.  
 - Tối ưu hoá các thao tác I/O tệp để giảm độ trễ.
 
-## Vấn đề thường gặp và Giải pháp
+## Các vấn đề thường gặp và giải pháp
 - **Problem:** Attachments are not saved.  
   **Solution:** Verify that `dataDir` points to a writable folder and that the MSG file actually contains attachments.  
+  **Vấn đề:** Các tệp đính kèm không được lưu.  
+  **Giải pháp:** Xác nhận rằng `dataDir` trỏ tới thư mục có quyền ghi và tệp MSG thực sự chứa các tệp đính kèm.
+
 - **Problem:** Embedded message does not appear in the recipient’s client.  
   **Solution:** Ensure you add the attachment with a proper display name and that the inner MSG is a valid file.  
-- **Problem:** Converting MSG to EML loses formatting.  
-  **Solution:** Use the latest Aspose.Email version and avoid modifying the message object before calling `save`.
+  **Vấn đề:** Tin nhắn đã nhúng không hiển thị trong client của người nhận.  
+  **Giải pháp:** Đảm bảo bạn thêm tệp đính kèm với tên hiển thị phù hợp và MSG bên trong là tệp hợp lệ.
 
-## Phần Hỏi‑Đáp (FAQ)
-1. **What is Aspose.Email for Java?**  
+- **Problem:** Converting MSG to EML loses formatting.  
+  **Solution:** Use the latest Aspose.Email version and avoid modifying the message object before calling `save`.  
+  **Vấn đề:** Chuyển đổi MSG sang EML làm mất định dạng.  
+  **Giải pháp:** Sử dụng phiên bản Aspose.Email mới nhất và tránh sửa đổi đối tượng tin nhắn trước khi gọi `save`.
+
+## Phần Hỏi Đáp
+1. **Aspose.Email cho Java là gì?**  
    - Một thư viện cho phép bạn làm việc với các định dạng email như MSG và EML trong các ứng dụng Java.  
-2. **How do I install Aspose.Email using Maven?**  
-   - Thêm phụ thuộc đã chỉ định vào tệp `pom.xml` của bạn.  
-3. **Can I parse attachments from emails without saving them locally?**  
+2. **Làm thế nào để cài đặt Aspose.Email bằng Maven?**  
+   - Thêm phụ thuộc được chỉ định vào `pom.xml` của bạn.  
+3. **Tôi có thể phân tích tệp đính kèm từ email mà không lưu chúng cục bộ không?**  
    - Có, bạn có thể xử lý các tệp đính kèm trực tiếp trong bộ nhớ.  
-4. **Is it possible to embed multiple messages in one email?**  
-   - Chắc chắn! Bạn có thể thêm bao nhiêu tin nhắn nhúng tùy thích.  
-5. **What should I do if my embedded message isn’t displaying correctly?**  
+4. **Có thể nhúng nhiều tin nhắn trong một email không?**  
+   - Chắc chắn! Bạn có thể thêm bao nhiêu tin nhắn đã nhúng tùy ý.  
+5. **Nếu tin nhắn đã nhúng không hiển thị đúng, tôi nên làm gì?**  
    - Đảm bảo tệp đính kèm được thêm đúng và kiểm tra bất kỳ vấn đề định dạng nào.
 
-## Các Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
-**Q: How do I load a msg file with aspose email java?**  
+**Q: Làm thế nào để tải tệp MSG với Aspose.Email cho Java?**  
 A: Sử dụng `MapiMessage.fromFile("path/to/file.msg")` để tải tệp MSG vào một đối tượng `MapiMessage`.
 
-**Q: What is the best way to extract msg attachments?**  
-A: Lặp qua `message.getAttachments()` và gọi `attachment.save(destinationPath)` cho mỗi mục.
+**Q: Cách tốt nhất để trích xuất tệp đính kèm MSG là gì?**  
+A: Duyệt qua `message.getAttachments()` và gọi `attachment.save(destinationPath)` cho mỗi mục.
 
-**Q: Can I embed an email inside another email using aspose email java?**  
-A: Có — tạo một `MapiMessage` cho email bên trong và thêm nó vào bộ sưu tập tệp đính kèm của email bên ngoài.
+**Q: Tôi có thể nhúng một email vào một email khác bằng Aspose.Email cho Java không?**  
+A: Có—tạo một `MapiMessage` cho email bên trong và thêm nó vào bộ sưu tập tệp đính kèm của email bên ngoài.
 
-**Q: Do I need a license to extract attachments in a production environment?**  
-A: Cần giấy phép hợp lệ cho môi trường sản xuất; bản dùng thử miễn phí chỉ dành cho việc đánh giá.
+**Q: Tôi có cần giấy phép để trích xuất tệp đính kèm trong môi trường sản xuất không?**  
+A: Giấy phép hợp lệ là bắt buộc cho việc sử dụng trong sản xuất; bản dùng thử miễn phí chỉ dùng để đánh giá.
 
-**Q: Are there any common pitfalls when reading embedded messages?**  
-A: Đảm bảo bạn tham chiếu đúng chỉ mục tệp đính kèm và xác nhận nội dung nhúng là một tệp MSG hợp lệ.
+**Q: Có những khó khăn nào thường gặp khi đọc tin nhắn đã nhúng không?**  
+A: Đảm bảo bạn tham chiếu đúng chỉ số tệp đính kèm và xác minh nội dung đã nhúng là tệp MSG hợp lệ.
 
 ## Tài nguyên
-- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email](https://releases.aspose.com/email/java/)
-- [Purchase License](https://purchase.aspose.com/buy)
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Support Forum](https://forum.aspose.com/c/email/10)
+- [Tài liệu Aspose.Email](https://reference.aspose.com/email/java/)  
+- [Tải xuống Aspose.Email](https://releases.aspose.com/email/java/)  
+- [Mua giấy phép](https://purchase.aspose.com/buy)  
+- [Dùng thử miễn phí](https://releases.aspose.com/email/java/)  
+- [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)  
+- [Diễn đàn hỗ trợ](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-19  
-**Đã kiểm tra với:** Aspose.Email 25.4 for Java (JDK 16)  
+**Cập nhật lần cuối:** 2026-07-22  
+**Kiểm tra với:** Aspose.Email 25.4 cho Java (JDK 16)  
 **Tác giả:** Aspose
+
+{{< blocks/products/products-backtop-button >}}
+
+## Hướng dẫn liên quan
+
+- [Cách tải và phân tích tệp Outlook MSG bằng Aspose.Email cho Java: Hướng dẫn toàn diện](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Cách trích xuất tệp đính kèm email từ các tin nhắn email bằng Aspose.Email cho Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Cách chèn tệp đính kèm vào tệp MSG bằng Aspose.Email cho Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
