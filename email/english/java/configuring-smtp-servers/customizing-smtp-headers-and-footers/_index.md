@@ -1,5 +1,5 @@
 ---
-title: How to Add Email Footer & Customize SMTP Headers in Java
+title: How to Add Email Footer & Customize SMTP Headers in Java with Aspose.Email
 linktitle: Customizing SMTP Headers and Footers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
 description: Learn how to add email footer and customize SMTP headers in Java, create email message java, and personalize branding with Aspose.Email.
@@ -149,3 +149,4 @@ A: You should use the SMTP settings provided by your email service provider or y
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/products-backtop-button >}}

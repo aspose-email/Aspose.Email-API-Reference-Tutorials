@@ -1,5 +1,5 @@
 ---
-title: "Automate Email Processing: EML to MapiMessage in Java"
+title: "Automate Email Processing with Aspose.Email: Convert EML to MapiMessage in Java"
 description: "Learn how to automate email processing in Java with Aspose.Email – read EML files and convert them to MapiMessage format efficiently."
 date: "2026-03-07"
 weight: 1
@@ -187,6 +187,7 @@ Experiment with the sample and watch your email handling capabilities soar!
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/products-backtop-button >}}
 
 ---
 **Last Updated:** 2026-03-07  
