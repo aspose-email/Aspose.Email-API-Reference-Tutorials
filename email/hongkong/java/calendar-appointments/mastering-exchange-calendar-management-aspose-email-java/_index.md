@@ -10,12 +10,6 @@ url: /zh-hant/java/calendar-appointments/mastering-exchange-calendar-management-
 weight: 1
 ---
 
- Keep them.
-
-Also we have shortcodes at start and end.
-
-Now produce final content with translations.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

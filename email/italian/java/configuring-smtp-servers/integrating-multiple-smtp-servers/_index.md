@@ -10,14 +10,6 @@ url: /it/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
-.
-
-Translate each bullet.
-
-Also "Last Updated:" etc.
-
-Let's produce.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

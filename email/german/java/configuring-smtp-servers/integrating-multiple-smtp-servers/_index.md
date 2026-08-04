@@ -22,34 +22,34 @@ weight: 18
 
 In diesem Schritt‑für‑Schritt‑Leitfaden zeigen wir Ihnen, wie Sie **mehrere SMTP-Server** mit Aspose.Email für Java **konfigurieren** können. Am Ende des Tutorials verfügen Sie über eine robuste Lösung, die den E‑Mail‑Verkehr auf mehrere SMTP‑Hosts verteilt und Ihnen Lastverteilung sowie automatisches Failover bietet – unverzichtbar für geschäftskritische Kommunikation.
 
-## Quick Answers
-- **Was bedeutet „SMTP konfigurieren“?** Einrichtung von Server‑Host, Port, Anmeldeinformationen und Sicherheitsoptionen für die E‑Mail‑Zustellung.  
-- **Warum mehrere SMTP-Server verwenden?** Erhöht die Zuverlässigkeit, verteilt die Last und bietet ein Backup, falls ein Server ausfällt.  
-- **Welche Bibliothek wird benötigt?** Aspose.Email für Java (verfügbar über den offiziellen Download‑Link).  
-- **Benötige ich eine Lizenz?** Eine kostenlose Testversion reicht für die Entwicklung; für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
-- **Kann ich Server zur Laufzeit wechseln?** Ja – indem Sie basierend auf Ihrer Logik eine andere `SmtpClient`‑Instanz auswählen.
+## Schnelle Antworten
+- **Was bedeutet „SMTP konfigurieren“?** Einrichtung von Server-Host, Port, Anmeldeinformationen und Sicherheitsoptionen für die E-Mail-Zustellung.
+- **Warum mehrere SMTP-Server verwenden?** Erhöht die Zuverlässigkeit, verteilt die Last und bietet ein Backup, falls ein Server ausfällt.
+- **Welche Bibliothek wird benötigt?** Aspose.Email für Java (verfügbar über den offiziellen Download-Link).
+- **Benötige ich eine Lizenz?** Eine kostenlose Testversion reicht für die Entwicklung; Für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
+- **Kann ich einen Server zur Laufzeit verwenden?** Ja – indem Sie basierend auf Ihrer Logik eine andere `SmtpClient`-Instanz auswählen.
 
 ## Warum mehrere SMTP-Server konfigurieren?
-Die Konfiguration mehrerer SMTP-Server ermöglicht Ihrer Anwendung, E‑Mails weiterhin zu senden, selbst wenn ein Anbieter Ausfallzeiten oder Drosselungen hat. Außerdem können Sie Nachrichten nach Geografie, Priorität oder spezifischen Compliance‑Anforderungen routen, wodurch Ihre E‑Mail‑Infrastruktur widerstandsfähiger und skalierbarer wird.
+Die Konfiguration mehrerer SMTP-Server ermöglicht Ihrer Anwendung, E‑Mails weiterhin zu senden, selbst wenn ein Anbieter Ausfallzeiten oder Drosselungen hat. Außerdem können Sie Nachrichten nach Geografie, Priorität oder insbesondere Compliance-Anforderungen routen, wodurch Ihre E-Mail-Infrastruktur widerstandsfähiger und skalierbarer wird.
 
-## Aspose.Email Tutorial Java Overview
-Dieses **aspose email tutorial java** zeigt, wie die Aspose.Email‑Bibliothek in ein Standard‑Java‑Projekt integriert, mehrere `SmtpClient`‑Instanzen eingerichtet und einfache Failover‑Logik implementiert wird. Die gleichen Muster können auf dynamische Serverauswahl, Round‑Robin‑Verteilung oder erweiterte Gesundheitsprüfungs‑Mechanismen ausgeweitet werden.
+## Aspose.Email Tutorial Java-Übersicht
+Dieses **Aspose Email Tutorial Java** zeigt, wie die Aspose.Email‑Bibliothek in ein Standard‑Java‑Projekt integriert, mehrere `SmtpClient`‑Instanzen eingerichtet und einfache Failover‑Logik implementiert wird. Die gleichen Muster können auf dynamische Serverauswahl, Round-Robin-Verteilung oder erweiterte Gesundheitsprüfungs-Mechanismen ausgeweitet werden.
 
-## Prerequisites
+## Voraussetzungen
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Java Development Kit (JDK) auf Ihrem System installiert.  
-- Aspose.Email für Java Bibliothek. Sie können sie von [here](https://releases.aspose.com/email/java/) herunterladen.  
+- Java Development Kit (JDK) auf Ihrem System installiert.
+- Aspose.Email für Java Bibliothek. Sie können sie von [hier](https://releases.aspose.com/email/java/) herunterladen.
 
-## Step 1: Setting Up Your Java Project
+## Schritt 1: Einrichten Ihres Java-Projekts
 
-1. Erstellen Sie ein neues Java‑Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE) oder verwenden Sie Ihr bestehendes Projekt.  
-2. Fügen Sie die Aspose.Email für Java‑Bibliothek dem Klassenpfad Ihres Projekts hinzu. Das können Sie tun, indem Sie die im Voraus heruntergeladene JAR‑Datei einbinden.
+1. Erstellen Sie ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE) oder verwenden Sie Ihr bestehendes Projekt.
+2. Fügen Sie die Aspose.Email für Java-Bibliothek dem Klassenpfad Ihres Projekts hinzu. Das können Sie herunterladen, indem Sie die im Voraus angegebene JAR-Datei einbinden.
 
-## Step 2: Importing Necessary Classes
+## Schritt 2: Notwendige Klassen importieren
 
-Importieren Sie in Ihrem Java‑Code die erforderlichen Klassen von Aspose.Email:
+Importieren Sie in Ihrem Java-Code die erforderlichen Klassen von Aspose.Email:
 
 ```java
 import com.aspose.email.MailMessage;
@@ -57,7 +57,7 @@ import com.aspose.email.SmtpClient;
 import com.aspose.email.SmtpClientOptions;
 ```
 
-## How to Configure Multiple SMTP Servers
+## Konfiguration mehrerer SMTP-Server
 
 Um **mehrere SMTP-Server** über verschiedene Hosts zu **konfigurieren**, können Sie ein Array von `SmtpClient`‑Objekten erstellen, von denen jedes mit eigenen Serverdetails vorkonfiguriert ist. Dieses Muster ermöglicht es Ihnen, zur Laufzeit den besten Server auszuwählen.
 
@@ -75,7 +75,7 @@ smtpClients[1].setSecurityOptions(SmtpClientOptions.STARTTLS);
 
 In diesem Beispiel haben wir zwei SMTP-Server mit ihren jeweiligen Einstellungen konfiguriert. Sie können bei Bedarf weitere Server hinzufügen.
 
-## Step 3: Sending Emails with Failover Logic
+## Schritt 3: E-Mail-Versand mit Ausfallsicherung
 
 Da die SMTP-Clients nun bereit sind, können Sie eine E‑Mail mit dem Client senden, der am besten zu Ihren aktuellen Bedingungen passt (z. B. Round‑Robin, Priorität oder nach einem Fehler).
 
@@ -98,13 +98,13 @@ try {
 
 Sie können benutzerdefinierte Logik implementieren, um den SMTP-Server basierend auf Last, geografischer Lage oder Fehlerbehandlung auszuwählen. Zum Beispiel, wenn der erste Server eine Ausnahme wirft, wechseln Sie einfach zu `smtpClients[1]` und versuchen es erneut.
 
-## Common Issues and Solutions
+## Häufige Probleme und Lösungen
 
-- **Authentifizierungsfehler:** Überprüfen Sie Benutzernamen, Passwörter und ob das Konto SMTP-Relay erlaubt.  
-- **Port durch Firewall blockiert:** Stellen Sie sicher, dass die Ports 25, 465 oder 587 sowohl auf Client‑ als auch auf Serverseite geöffnet sind.  
-- **TLS/SSL-Handshake-Fehler:** Vergewissern Sie sich, dass die Sicherheitsoption (`SSLExplicit` oder `STARTTLS`) mit der Serverkonfiguration übereinstimmt.  
+- **Authentifizierungsfehler:** Überprüfen Sie Benutzernamen, Passwörter und ob das Konto SMTP-Relay erlaubt ist.
+- **Port durch Firewall blockiert:** Stellen Sie sicher, dass die Ports 25, 465 oder 587 sowohl auf Client‑ als auch auf Serverseite geöffnet sind.
+- **TLS/SSL-Handshake-Fehler:** Vergewissern Sie sich, dass die Sicherheitsoption („SSLExplicit“ oder „STARTTLS“) mit der Serverkonfiguration übereinstimmt.
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
 **F: Wie kann ich SMTP-Server-Failover handhaben?**  
 A: Wickeln Sie den `send`‑Aufruf in einen try‑catch‑Block; bei einer Ausnahme wechseln Sie zum nächsten `SmtpClient` im Array und versuchen es erneut.

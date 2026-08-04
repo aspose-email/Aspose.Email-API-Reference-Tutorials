@@ -8,15 +8,12 @@ url: /pl/java/email-parsing-analysis/
 weight: 14
 ---
 
- markdown with translations.
-
-Let's construct.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Samouczki parsowania i analizy e‑maili dla Aspose.Email Java
 
 Nasze samouczki dotyczące parsowania i analizy e‑maili pokazują, jak **sprawdzać status odbicia e‑maili**, wyodrębniać cenne informacje i tworzyć inteligentne rozwiązania przetwarzania e‑maili przy użyciu Aspose.Email w Javie. Niezależnie od tego, czy musisz diagnozować problemy z dostawą, pobierać dane z archiwów czy analizować treść wiadomości, te przewodniki krok po kroku dostarczają kod i kontekst niezbędny do osiągnięcia sukcesu.
@@ -65,6 +62,11 @@ Dowiedz się, jak używać Aspose.Email dla Java do efektywnego pobierania podsu
 - [Bezpłatne wsparcie](https://forum.aspose.com/)
 - [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Ostatnia aktualizacja:** 2026-03-09  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -72,8 +74,3 @@ Dowiedz się, jak używać Aspose.Email dla Java do efektywnego pobierania podsu
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-03-09  
-**Autor:** Aspose

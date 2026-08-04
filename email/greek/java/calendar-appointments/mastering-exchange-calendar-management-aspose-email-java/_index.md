@@ -12,15 +12,12 @@ url: /el/java/calendar-appointments/mastering-exchange-calendar-management-aspos
 weight: 1
 ---
 
-; we can keep bold around Greek translation if needed. But better to keep same pattern: the bold markers remain, but the text inside can be Greek. For example **What is the primary library?** becomes **Ποια είναι η κύρια βιβλιοθήκη;**.
-
-Also keep code blocks placeholders unchanged.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Δημιουργία Exchange Calendar Java με Aspose.Email
 
 ## Εισαγωγή
@@ -84,7 +81,7 @@ Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
 ## Σύνδεση με Exchange Java
 **Overview:** Αυτή η ενότητα δείχνει πώς να **connect to exchange java** χρησιμοποιώντας τον πελάτη EWS.
 
-### Step 1: Establish Connection
+### Βήμα 1: Δημιουργία σύνδεσης
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -108,7 +105,7 @@ public class ConnectToExchangeServer {
 ## Δημιουργία Φακέλου Ημερολογίου
 **Overview:** Δημιουργήστε έναν αφιερωμένο φάκελο μέσα στο ημερολόγιο του γραμματοκιβωτίου για να διατηρήσετε οργανωμένα τα σχετικά ραντεβού.
 
-### Step 2: Create New Calendar Folder
+### Βήμα 2: Δημιουργία νέου φακέλου ημερολογίου
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -134,7 +131,7 @@ public class CreateCalendarFolder {
 ## Δημιουργία Ραντεβού σε Φάκελο Ημερολογίου
 **Overview:** Προσθέστε μια συνάντηση ή εκδήλωση στον πρόσφατα δημιουργημένο φάκελο ημερολογίου.
 
-### Step 3: Setup Appointment Details
+### Βήμα 3: Ρύθμιση λεπτομερειών ραντεβού
 ```java
 import com.aspose.email.Appointment;
 import com.aspose.email.MailAddress;
@@ -180,7 +177,7 @@ public class CreateAppointment {
 ## Ενημέρωση Ραντεβού
 **Overview:** Τροποποιήστε τις ιδιότητες ενός υπάρχοντος ραντεβού, όπως η τοποθεσία ή το θέμα.
 
-### Step 4: Define Existing Appointment
+### Βήμα 4: Ορισμός υπάρχοντος ραντεβού
 ```java
 import com.aspose.email.Appointment;
 

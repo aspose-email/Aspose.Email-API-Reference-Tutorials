@@ -11,23 +11,12 @@ url: /cs/java/calendar-appointments/mastering-exchange-calendar-management-aspos
 weight: 1
 ---
 
-jdk16 classifier) -> translate "Testováno s:" maybe.
-
-**Author:** Aspose -> keep.
-
-Then closing shortcodes.
-
-Now produce final content with all translations.
-
-Be careful to keep code block placeholders unchanged.
-
-Also ensure we keep markdown formatting.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Vytvoření kalendáře Exchange v Javě s Aspose.Email
 
 ## Úvod

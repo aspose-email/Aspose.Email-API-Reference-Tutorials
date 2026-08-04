@@ -8,26 +8,12 @@ url: /it/java/email-parsing-analysis/
 weight: 14
 ---
 
--03-09  
-**Author:** Aspose
-
-We need to translate "Last Updated" and "Author"? The instruction: translate all text content. So translate those labels.
-
-Italian: "**Ultimo Aggiornamento:** 2026-03-09" and "**Autore:** Aspose"
-
-Make sure bold formatting preserved.
-
-Now produce final content with same markdown.
-
-Check for any other text: none.
-
-Make sure we keep the colon entity &#58; unchanged.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Tutorial di Analisi e Parsing delle Email per Aspose.Email Java
 
 I nostri tutorial di parsing e analisi delle email ti mostrano come **verificare lo stato di bounce delle email**, estrarre informazioni preziose e creare soluzioni intelligenti di elaborazione delle email con Aspose.Email in Java. Che tu abbia bisogno di diagnosticare problemi di consegna, estrarre dati dagli archivi o analizzare i corpi dei messaggi, queste guide passo‑passo ti forniscono il codice e il contesto necessari per avere successo.
@@ -76,6 +62,11 @@ Impara a usare Aspose.Email per Java per recuperare in modo efficiente sintesi d
 - [Supporto Gratuito](https://forum.aspose.com/)
 - [Licenza Temporanea](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Ultimo Aggiornamento:** 2026-03-09  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -83,8 +74,3 @@ Impara a usare Aspose.Email per Java per recuperare in modo efficiente sintesi d
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo Aggiornamento:** 2026-03-09  
-**Autore:** Aspose

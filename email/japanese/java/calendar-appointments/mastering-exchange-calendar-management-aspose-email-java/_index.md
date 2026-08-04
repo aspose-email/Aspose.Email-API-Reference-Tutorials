@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email を使用した Exchange カレンダー Java の作成
 
 ## はじめに
@@ -41,30 +42,30 @@ weight: 1
 
 Java で Exchange カレンダーを作成することは、Exchange メールボックスとプログラムでやり取りし、カレンダー項目を追加、変更、または削除することを意味します。このアプローチは、自動スケジューリング、会議管理ツール、またはエンタープライズ全体のカレンダー同期に最適です。
 
-## Why Use Aspose.Email for Java?
+## Aspose.Email for Java を使用する理由
 
-- **Full‑featured API** – Handles Exchange Web Services (EWS) without low‑level SOAP handling.  
-- **Cross‑platform** – Works on Windows, Linux, and macOS with any JDK 16+ runtime.  
-- **No external dependencies** – The library bundles everything you need to talk to Exchange.  
+- **フル機能の API** – 低レベルの SOAP 処理なしで Exchange Web Services (EWS) を処理できます。
+- **クロスプラットフォーム** – Windows、Linux、macOS で、JDK 16 以降のランタイムで動作します。
+- **外部依存関係なし** – Exchange との通信に必要なすべての機能がライブラリにバンドルされています。
 
-## Why This Matters
+## なぜこれが重要なのか
 
 カレンダー操作を自動化することで人的エラーが排除され、部門間で一貫した会議データが確保され、CRM や ERP など他の業務システムとの統合が容易になります。**create exchange calendar java** を使用すれば、カスタムスケジューリングボットの構築、データベースからの会議招待の生成、複数の Exchange テナント間でのイベント同期などが実現できます。
 
-## Common Use Cases
+## 一般的な使用例
 
 - **Enterprise meeting rooms**: Exchange に保存された空き状況に基づき、部屋を自動予約します。  
 - **Employee onboarding**: 新入社員のカレンダーに研修セッションを事前に登録します。  
 - **Project timelines**: プロジェクト管理ツールからマイルストーン日付を直接 Outlook カレンダーにプッシュします。  
 
-## Prerequisites
+## 前提条件
 
 - **Aspose.Email for Java** ライブラリ（バージョン 25.4 以降）  
 - JDK 16 以上  
 - Exchange Server へのアクセス（Office 365 またはオンプレミス）  
 - IntelliJ IDEA、Eclipse、NetBeans などの IDE  
 
-## Maven Dependency Aspose Email
+## Maven依存関係：Aspose Email
 
 `pom.xml` に以下のスニペットを追加してください。これが Maven Central からライブラリを取得するために必要な **maven dependency aspose email** です。
 
@@ -77,15 +78,15 @@ Java で Exchange カレンダーを作成することは、Exchange メール�
 </dependency>
 ```
 
-### License Acquisition Steps
-1. **Free Trial:** Download a trial version from the [Aspose website](https://releases.aspose.com/email/java/) to test features.  
-2. **Temporary License:** Obtain a temporary license for full feature access via [this link](https://purchase.aspose.com/temporary-license/).  
-3. **Purchase:** If you’re satisfied, consider purchasing a full license at [Aspose's purchase page](https://purchase.aspose.com/buy).
+### ライセンス取得手順
+1. **無料トライアル:** [Aspose Webサイト](https://releases.aspose.com/email/java/) からトライアル版をダウンロードして、機能をお試しください。
+2. **一時ライセンス:** [こちらのリンク](https://purchase.aspose.com/temporary-license/) から、すべての機能にアクセスできる一時ライセンスを取得してください。
+3. **購入:** ご満足いただけましたら、[Asposeの購入ページ](https://purchase.aspose.com/buy) でフルライセンスのご購入をご検討ください。
 
-## Connect to Exchange Java
-**Overview:** This section shows how to **connect to exchange java** using the EWS client.
+## Exchange Javaへの接続
+**概要:** このセクションでは、EWSクライアントを使用して**Exchange Javaに接続する**方法について説明します。
 
-### Step 1: Establish Connection
+### ステップ1：接続の確立
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -104,12 +105,12 @@ public class ConnectToExchangeServer {
     }
 }
 ```
-**Explanation:** Replace `"username"` and `"password"` with your actual credentials. This code creates an `IEWSClient` instance that you’ll reuse for all subsequent calendar operations.
+**説明:** `"username"`と`"password"`を実際の認証情報に置き換えてください。このコードは、以降のすべてのカレンダー操作で再利用する`IEWSClient`インスタンスを作成します。
 
-## Create Calendar Folder
-**Overview:** Create a dedicated folder inside the mailbox’s calendar to keep related appointments organized.
+## カレンダーフォルダの作成
+**概要:** メールボックスのカレンダー内に、関連する予定を整理するための専用フォルダを作成します。
 
-### Step 2: Create New Calendar Folder
+### ステップ2：新しいカレンダーフォルダの作成
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -130,12 +131,12 @@ public class CreateCalendarFolder {
     }
 }
 ```
-**Explanation:** The folder `"new calendar"` appears under the main calendar hierarchy, ready to store appointments created later.
+**説明:** メインカレンダー階層の下に「新しいカレンダー」フォルダが表示され、後で作成する予定を保存できるようになります。
 
-## Create Appointment in Calendar Folder
-**Overview:** Add a meeting or event to the newly created calendar folder.
+## カレンダーフォルダに予定を作成する
+**概要:** 新しく作成したカレンダーフォルダに会議またはイベントを追加します。
 
-### Step 3: Setup Appointment Details
+### ステップ3：予定の詳細を設定する
 ```java
 import com.aspose.email.Appointment;
 import com.aspose.email.MailAddress;
@@ -176,12 +177,12 @@ public class CreateAppointment {
     }
 }
 ```
-**Explanation:** This code builds an `Appointment` object, sets its time zone, adds attendees, and stores it in the custom calendar folder.
+**説明:** このコードは、`Appointment` オブジェクトを作成し、タイムゾーンを設定し、出席者を追加して、カスタムカレンダーフォルダに保存します。
 
-## Update Appointment
-**Overview:** Modify an existing appointment’s properties, such as location or subject.
+## 予定の更新
+**概要:** 既存の予定の場所や件名などのプロパティを変更します。
 
-### Step 4: Define Existing Appointment
+### ステップ 4: 既存の予定の定義
 ```java
 import com.aspose.email.Appointment;
 
@@ -208,17 +209,17 @@ public class UpdateAppointment {
     }
 }
 ```
-**Explanation:** Replace `"YOUR_DOCUMENT_DIRECTORY"` with the actual folder URI of the appointment you wish to update. This snippet demonstrates how to change the location field.
+**説明:** `"YOUR_DOCUMENT_DIRECTORY"` を、更新したい予定の実際のフォルダURIに置き換えてください。このコードスニペットは、場所フィールドを変更する方法を示しています。
 
-## Common Issues & Tips
-- **Authentication errors:** Verify that the account has EWS access and that multi‑factor authentication is disabled or an app password is used.  
-- **Folder URI not found:** Use `client.listSubFolders()` to discover the correct calendar URI before creating or updating items.  
-- **Time‑zone mismatches:** Always set the time zone on the `Appointment` object to avoid daylight‑saving surprises.  
+## よくある問題とヒント
+- **認証エラー:** アカウントにEWSアクセス権があり、多要素認証が無効になっているか、アプリパスワードが使用されていることを確認してください。
+- **フォルダURIが見つかりません:** アイテムを作成または更新する前に、`client.listSubFolders()` を使用して正しいカレンダーURIを確認してください。
+- **タイムゾーンの不一致:** サマータイムによる予期せぬ遅延を避けるため、`Appointment` オブジェクトのタイムゾーンを必ず設定してください。
 
-## Aspose Email Java Tutorial Overview
-This tutorial is part of the broader **Aspose Email Java tutorial** series that covers message handling, contact management, and MIME processing. If you’re looking to master the full suite, check the other guides for sending emails, parsing EML files, and working with IMAP/POP3.
+## Aspose Email Javaチュートリアルの概要
+このチュートリアルは、メッセージ処理、連絡先管理、MIME処理を網羅した、より広範な**Aspose Email Javaチュートリアル**シリーズの一部です。全機能を使いこなしたい場合は、メール送信、EMLファイルの解析、IMAP/POP3の操作に関する他のガイドもご確認ください。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: 開発にライセンスは必要ですか？**  
 A: 無料トライアルは開発・テストに使用できますが、本番環境ではフルライセンスが必要です。
@@ -238,8 +239,8 @@ A: Aspose.Email は `Recurrence` クラスを提供しており、保存前に `
 **Q: 作成できる予約数に制限はありますか？**  
 A: 制限は Exchange サーバーの設定によるもので、Aspose.Email 側にはありません。メールボックスのクォータが十分であることを確認してください。
 
-## Conclusion
-You now have a complete, end‑to‑end example of how to **create exchange calendar java** applications using Aspose.Email for Java. From establishing a secure connection to managing folders and appointments, the steps above give you a solid foundation to build more sophisticated scheduling solutions. Explore the other sections of the Aspose Email Java tutorial to expand your automation capabilities.
+## まとめ
+これで、Aspose.Email for Java を使用して Exchange カレンダー Java アプリケーションを作成する方法の、完全なエンドツーエンドの例がわかりました。安全な接続の確立からフォルダや予定の管理まで、上記の手順は、より高度なスケジュール管理ソリューションを構築するための確固たる基盤となります。Aspose Email Java チュートリアルの他のセクションも参照して、自動化機能をさらに拡張してください。
 
 ---
 

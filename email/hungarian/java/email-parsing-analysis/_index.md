@@ -8,30 +8,12 @@ url: /hu/java/email-parsing-analysis/
 weight: 14
 ---
 
- "Aspose.Email for Java Documentation" -> "Aspose.Email for Java Dokumentáció"
-- "Aspose.Email for Java API Reference" -> "Aspose.Email for Java API Referencia"
-- "Download Aspose.Email for Java" -> "Aspose.Email for Java Letöltése"
-- "Aspose.Email Forum" -> "Aspose.Email Fórum"
-- "Free Support" -> "Ingyenes Támogatás"
-- "Temporary License" -> "Ideiglenes Licenc"
-
-Then closing shortcodes.
-
-Backtop button shortcode unchanged.
-
-Then horizontal rule and last updated and author lines. Translate "Last Updated:" to "Utoljára frissítve:" and "Author:" to "Szerző:".
-
-Now produce final markdown with translations.
-
-Be careful to keep shortcodes exactly as original.
-
-Let's construct final output.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # E-mail Feldolgozási és Elemzési Oktatóanyagok az Aspose.Email Java-hoz
 
 Az e‑mail feldolgozási és elemzési oktatóanyagaink megmutatják, hogyan **ellenőrizheted az e‑mail visszapattanás** állapotát, hogyan nyerhetsz ki értékes információkat, és hogyan építhetsz intelligens e‑mail feldolgozó megoldásokat az Aspose.Email segítségével Java-ban. Akár a kézbesítési problémák diagnosztizálására, archívumok adatainak kinyerésére vagy az üzenettörzsek elemzésére van szükséged, ezek a lépésről‑lépésre útmutatók biztosítják a kódot és a kontextust a sikerhez.
@@ -80,6 +62,11 @@ Ismerd meg, hogyan használhatod az Aspose.Email for Java‑t e‑mail összefog
 - [Ingyenes Támogatás](https://forum.aspose.com/)
 - [Ideiglenes Licenc](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Utoljára frissítve:** 2026-03-09  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -87,8 +74,3 @@ Ismerd meg, hogyan használhatod az Aspose.Email for Java‑t e‑mail összefog
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2026-03-09  
-**Szerző:** Aspose

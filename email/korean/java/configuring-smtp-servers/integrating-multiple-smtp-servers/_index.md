@@ -9,14 +9,6 @@ url: /ko/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
- to keep markdown formatting exactly.
-
-Let's craft translation.
-
-We'll keep code block placeholders as they are.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

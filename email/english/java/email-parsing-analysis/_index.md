@@ -59,6 +59,11 @@ Learn how to use Aspose.Email for Java to efficiently retrieve email summaries b
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Last Updated:** 2026-03-09  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -66,8 +71,3 @@ Learn how to use Aspose.Email for Java to efficiently retrieve email summaries b
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-03-09  
-**Author:** Aspose

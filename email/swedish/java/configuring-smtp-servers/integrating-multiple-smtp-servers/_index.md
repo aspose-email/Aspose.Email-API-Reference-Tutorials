@@ -10,25 +10,7 @@ url: /sv/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
-mtpClient.setLogEnabled(true)` to capture the SMTP dialogue for troubleshooting.
-
-Translate.
-
----
-
-**Last Updated:** 2026-03-09  
-**Tested With:** Aspose.Email for Java 23.12 (latest at time of writing)  
-**Author:** Aspose  
-
-Translate "Last Updated", "Tested With", "Author". Keep dates unchanged.
-
-Then closing shortcodes.
-
-Now produce final content.
-
-Be careful to keep markdown formatting.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 

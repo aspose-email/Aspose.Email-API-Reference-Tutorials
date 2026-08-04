@@ -7,21 +7,12 @@ url: /id/java/email-parsing-analysis/
 weight: 14
 ---
 
- email‑processing solutions with Aspose.Email in Java. Whether you need to diagnose delivery problems, pull data from archives, or analyze message bodies, these step‑by‑step guides give you the code and context you need to succeed."
-
-We translated.
-
-Now ensure we kept HTML entity &#58; unchanged in link texts. Yes.
-
-Now produce final content with all shortcodes and markdown.
-
-Let's assemble.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Tutorial Parsing dan Analisis Email untuk Aspose.Email Java
 
 Tutorial parsing dan analisis email kami menunjukkan cara **memeriksa status email bounce**, mengekstrak informasi berharga, dan membangun solusi pemrosesan email yang cerdas dengan Aspose.Email di Java. Baik Anda perlu mendiagnosis masalah pengiriman, mengambil data dari arsip, atau menganalisis isi pesan, panduan langkah‑demi‑langkah ini memberikan kode dan konteks yang Anda butuhkan untuk berhasil.
@@ -70,6 +61,11 @@ Pelajari cara menggunakan Aspose.Email untuk Java untuk mengambil ringkasan emai
 - [Dukungan Gratis](https://forum.aspose.com/)
 - [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Terakhir Diperbarui:** 2026-03-09  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -77,8 +73,3 @@ Pelajari cara menggunakan Aspose.Email untuk Java untuk mengambil ringkasan emai
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-03-09  
-**Penulis:** Aspose

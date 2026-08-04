@@ -13,29 +13,12 @@ url: /hu/java/calendar-appointments/mastering-exchange-calendar-management-aspos
 weight: 1
 ---
 
- Naptár Létrehozása Java-val az Aspose.Email segítségével"
-
-- Introduction etc.
-
-We'll translate each paragraph.
-
-Make sure to keep markdown syntax.
-
-Let's craft translation.
-
-Be careful not to translate URLs.
-
-Also keep "Aspose.Email for Java" unchanged.
-
-Translate bullet points.
-
-Also keep code block placeholders as they are.
-
-Let's produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Exchange Naptár Létrehozása Java-val az Aspose.Email segítségével
 
 ## Bevezetés

@@ -13,6 +13,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Tutoriels d'analyse et de parsing d'e-mails pour Aspose.Email Java
 
 Nos tutoriels de parsing et d'analyse d'e-mails vous montrent comment **vérifier le statut de rebond d'e-mail**, extraire des informations précieuses et créer des solutions intelligentes de traitement d'e-mails avec Aspose.Email en Java. Que vous ayez besoin de diagnostiquer des problèmes de livraison, d'extraire des données d'archives ou d'analyser le corps des messages, ces guides pas à pas vous fournissent le code et le contexte nécessaires pour réussir.
@@ -61,6 +62,11 @@ Apprenez à utiliser Aspose.Email pour Java afin de récupérer efficacement les
 - [Support gratuit](https://forum.aspose.com/)
 - [Licence temporaire](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Dernière mise à jour :** 2026-03-09  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -68,8 +74,3 @@ Apprenez à utiliser Aspose.Email pour Java afin de récupérer efficacement les
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-03-09  
-**Auteur :** Aspose

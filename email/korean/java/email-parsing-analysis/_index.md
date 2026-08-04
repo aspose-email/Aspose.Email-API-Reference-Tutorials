@@ -7,15 +7,12 @@ url: /ko/java/email-parsing-analysis/
 weight: 14
 ---
 
- &#58; for colon. We kept it.
-
-Make sure we didn't translate any URLs.
-
-Now produce final output with everything.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email Java용 이메일 파싱 및 분석 튜토리얼
 
 우리의 이메일 파싱 및 분석 튜토리얼은 **check email bounce** 상태를 확인하고, 유용한 정보를 추출하며, Aspose.Email을 사용해 Java에서 지능형 이메일 처리 솔루션을 구축하는 방법을 보여줍니다. 배달 문제를 진단하거나, 아카이브에서 데이터를 추출하거나, 메시지 본문을 분석해야 할 때, 이 단계별 가이드는 성공에 필요한 코드와 컨텍스트를 제공합니다.
@@ -45,6 +42,11 @@ Now produce final output with everything.{{< blocks/products/pf/main-wrap-class 
 - [무료 지원](https://forum.aspose.com/)
 - [임시 라이선스](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**마지막 업데이트:** 2026-03-09  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -52,8 +54,3 @@ Now produce final output with everything.{{< blocks/products/pf/main-wrap-class 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2026-03-09  
-**작성자:** Aspose

@@ -7,17 +7,12 @@ url: /sv/java/email-parsing-analysis/
 weight: 14
 ---
 
-Now ensure we keep formatting.
-
-Now produce final content with all shortcodes and markdown.
-
-Let's assemble.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # E‑postparsning och analyshandledningar för Aspose.Email Java
 
 Våra handledningar för e‑postparsning och analys visar dig hur du **kontrollerar e‑post bounce‑status**, extraherar värdefull information och bygger intelligenta e‑postbearbetningslösningar med Aspose.Email i Java. Oavsett om du behöver diagnostisera leveransproblem, hämta data från arkiv eller analysera meddelandetexter, ger dessa steg‑för‑steg‑guider dig koden och sammanhanget du behöver för att lyckas.
@@ -66,6 +61,11 @@ Lär dig hur du använder Aspose.Email för Java för att effektivt hämta e‑p
 - [Gratis support](https://forum.aspose.com/)
 - [Tillfällig licens](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Senast uppdaterad:** 2026-03-09  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -73,8 +73,3 @@ Lär dig hur du använder Aspose.Email för Java för att effektivt hämta e‑p
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-03-09  
-**Författare:** Aspose

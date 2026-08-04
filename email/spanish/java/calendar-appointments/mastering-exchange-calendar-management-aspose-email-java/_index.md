@@ -12,15 +12,12 @@ url: /es/java/calendar-appointments/mastering-exchange-calendar-management-aspos
 weight: 1
 ---
 
-. Also keep markdown formatting.
-
-Let's write translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Crear Calendario Exchange Java con Aspose.Email
 
 ## Introducción

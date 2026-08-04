@@ -7,15 +7,12 @@ url: /ar/java/email-parsing-analysis/
 weight: 14
 ---
 
- colon encoded &#58; remains unchanged.
-
-Make sure we keep the shortcodes exactly as original.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # دروس تحليل واستخراج البريد الإلكتروني لـ Aspose.Email Java
 
 تُظهر لك دروسنا في استخراج وتحليل البريد الإلكتروني كيفية **التحقق من ارتداد البريد**، واستخراج معلومات قيّمة، وبناء حلول معالجة بريد إلكتروني ذكية باستخدام Aspose.Email في Java. سواءً كنت بحاجة إلى تشخيص مشاكل التسليم، أو سحب البيانات من الأرشيفات، أو تحليل محتوى الرسائل، فإن هذه الأدلة خطوة بخطوة توفر لك الشيفرة والسياق اللازمين للنجاح.
@@ -64,6 +61,11 @@ Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
 - [دعم مجاني](https://forum.aspose.com/)
 - [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**آخر تحديث:** 2026-03-09  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -71,8 +73,3 @@ Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-03-09  
-**المؤلف:** Aspose

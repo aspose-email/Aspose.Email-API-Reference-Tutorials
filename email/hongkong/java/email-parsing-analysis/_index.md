@@ -11,6 +11,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email Java 電子郵件解析與分析教學
 
 我們的電子郵件解析與分析教學將向您展示如何 **檢查電子郵件退回** 狀態、提取有價值的資訊，並使用 Aspose.Email 在 Java 中構建智慧的電子郵件處理解決方案。無論您是需要診斷投遞問題、從封存中提取資料，或是分析訊息內容，這些一步一步的指南都會提供您成功所需的程式碼與背景說明。
@@ -59,6 +60,11 @@ weight: 14
 - [免費支援](https://forum.aspose.com/)
 - [臨時授權](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**最後更新：** 2026-03-09  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -66,8 +72,3 @@ weight: 14
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-03-09  
-**作者：** Aspose

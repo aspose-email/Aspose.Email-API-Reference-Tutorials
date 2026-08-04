@@ -13,6 +13,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email Java için E-posta Ayrıştırma ve Analiz Eğitimleri
 
 E-posta ayrıştırma ve analiz eğitimlerimiz, **e-posta geri dönüşünü kontrol et** durumunu, değerli bilgiler çıkarmayı ve Java'da Aspose.Email ile akıllı e-posta‑işleme çözümleri oluşturmayı size gösterir. İster teslimat sorunlarını teşhis etmek, arşivlerden veri çekmek, ister mesaj gövdelerini analiz etmek isteyin, bu adım‑adım kılavuzlar başarılı olmanız için gereken kod ve bağlamı sunar.
@@ -61,6 +62,11 @@ Aspose.Email for Java kullanarak sıralama numarası veya benzersiz kimlik ile e
 - [Ücretsiz Destek](https://forum.aspose.com/)
 - [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Last Updated:** 2026-03-09  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -68,8 +74,3 @@ Aspose.Email for Java kullanarak sıralama numarası veya benzersiz kimlik ile e
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-03-09  
-**Author:** Aspose

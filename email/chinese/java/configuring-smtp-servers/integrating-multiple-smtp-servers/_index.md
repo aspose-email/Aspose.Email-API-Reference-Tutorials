@@ -9,12 +9,6 @@ url: /zh/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
- markdown formatting, code block placeholders unchanged.
-
-Also note bullet lists: need to keep markdown bullet syntax.
-
-Let's construct final output.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

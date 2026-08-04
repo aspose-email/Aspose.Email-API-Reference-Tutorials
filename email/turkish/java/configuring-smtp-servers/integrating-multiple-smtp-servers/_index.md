@@ -10,8 +10,6 @@ url: /tr/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
- produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

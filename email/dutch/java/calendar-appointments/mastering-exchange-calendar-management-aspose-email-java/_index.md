@@ -11,13 +11,12 @@ url: /nl/java/calendar-appointments/mastering-exchange-calendar-management-aspos
 weight: 1
 ---
 
- Dutch, ensure proper RTL formatting if needed" - not needed.
-
-Now craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Exchange Calendar Java maken met Aspose.Email
 
 ## Inleiding

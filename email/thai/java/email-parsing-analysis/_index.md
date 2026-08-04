@@ -7,19 +7,12 @@ url: /th/java/email-parsing-analysis/
 weight: 14
 ---
 
-ผู้เขียน". So "**ผู้เขียน:** Aspose"
-
-Now ensure we keep bold markers.
-
-Now produce final content with all translations.
-
-Check for any other text: "step‑by‑step" includes a non-breaking hyphen. Keep as is.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # การสอนการแยกวิเคราะห์อีเมลและการวิเคราะห์สำหรับ Aspose.Email Java
 
 บทแนะนำการแยกวิเคราะห์อีเมลของเราจะแสดงให้คุณทราบวิธี **ตรวจสอบการ bounce ของอีเมล** สถานะ, ดึงข้อมูลที่มีคุณค่า, และสร้างโซลูชันการประมวลผลอีเมลอัจฉริยะด้วย Aspose.Email ใน Java ไม่ว่าคุณจะต้องการวินิจฉัยปัญหาการส่ง, ดึงข้อมูลจากคลังเก็บ, หรือวิเคราะห์เนื้อความของข้อความ, คู่มือแบบขั้นตอนเหล่านี้จะให้โค้ดและบริบทที่คุณต้องการเพื่อประสบความสำเร็จ
@@ -68,6 +61,11 @@ Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
 - [สนับสนุนฟรี](https://forum.aspose.com/)
 - [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**อัปเดตล่าสุด:** 2026-03-09  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -75,8 +73,3 @@ Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2026-03-09  
-**ผู้เขียน:** Aspose

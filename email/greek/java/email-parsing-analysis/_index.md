@@ -8,13 +8,12 @@ url: /el/java/email-parsing-analysis/
 weight: 14
 ---
 
- exactly.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Μαθήματα Ανάλυσης και Επεξεργασίας Email με το Aspose.Email για Java
 
 Τα μαθήματα μας για την ανάλυση και επεξεργασία email σας δείχνουν πώς να **ελέγξετε την κατάσταση bounce** , να εξάγετε πολύτιμες πληροφορίες και να δημιουργήσετε έξυπνες λύσεις επεξεργασίας email με το Aspose.Email σε Java. Είτε χρειάζεστε διάγνωση προβλημάτων παράδοσης, εξαγωγή δεδομένων από αρχεία, είτε ανάλυση του σώματος των μηνυμάτων, αυτά τα βήμα‑βήμα οδηγίες σας παρέχουν τον κώδικα και το πλαίσιο που χρειάζεστε για να πετύχετε.
@@ -44,6 +43,11 @@ Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 - [Δωρεάν Υποστήριξη](https://forum.aspose.com/)
 - [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-03-09  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -51,8 +55,3 @@ Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-03-09  
-**Συγγραφέας:** Aspose

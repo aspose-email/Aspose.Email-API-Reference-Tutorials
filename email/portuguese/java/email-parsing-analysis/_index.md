@@ -13,6 +13,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Tutoriais de Análise e Processamento de Email para Aspose.Email Java
 
 Nossos tutoriais de análise e processamento de email mostram como **verificar o status de bounce de email**, extrair informações valiosas e criar soluções inteligentes de processamento de email com Aspose.Email em Java. Seja para diagnosticar problemas de entrega, extrair dados de arquivos ou analisar o corpo das mensagens, esses guias passo a passo fornecem o código e o contexto necessários para o sucesso.
@@ -61,6 +62,11 @@ Aprenda a usar Aspose.Email para Java para recuperar de forma eficiente resumos 
 - [Suporte Gratuito](https://forum.aspose.com/)
 - [Licença Temporária](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Última Atualização:** 2026-03-09  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -68,8 +74,3 @@ Aprenda a usar Aspose.Email para Java para recuperar de forma eficiente resumos 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última Atualização:** 2026-03-09  
-**Autor:** Aspose

@@ -9,17 +9,12 @@ url: /es/java/email-parsing-analysis/
 weight: 14
 ---
 
- missed any text.
-
-Also note the "## How to check email bounce with Aspose.Email for Java" we translated.
-
-Make sure we keep the colon entity &#58; unchanged.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Tutoriales de Análisis y Parseo de Correo Electrónico para Aspose.Email Java
 
 Nuestros tutoriales de parseo y análisis de correo electrónico le muestran cómo **verificar el rebote de correo** , extraer información valiosa y crear soluciones inteligentes de procesamiento de correo con Aspose.Email en Java. Ya sea que necesite diagnosticar problemas de entrega, extraer datos de archivos o analizar los cuerpos de los mensajes, estas guías paso a paso le proporcionan el código y el contexto que necesita para tener éxito.
@@ -68,6 +63,11 @@ Aprenda a usar Aspose.Email para Java para recuperar eficientemente resúmenes d
 - [Soporte Gratuito](https://forum.aspose.com/)
 - [Licencia Temporal](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Última actualización:** 2026-03-09  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -75,8 +75,3 @@ Aprenda a usar Aspose.Email para Java para recuperar eficientemente resúmenes d
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-03-09  
-**Autor:** Aspose

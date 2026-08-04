@@ -12,6 +12,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Návody na parsování a analýzu e‑mailů pro Aspose.Email Java
 
 Naše návody na parsování a analýzu e‑mailů vám ukážou, jak **zkontrolovat stav odrazu e‑mailu**, extrahovat cenné informace a vytvořit inteligentní řešení pro zpracování e‑mailů pomocí Aspose.Email v Javě. Ať už potřebujete diagnostikovat problémy s doručením, získat data z archivů nebo analyzovat těla zpráv, tyto krok‑za‑krokem průvodce vám poskytnou kód i kontext potřebný k úspěchu.
@@ -41,6 +42,11 @@ Porozumění oznámením o odrazu je zásadní pro udržení reputace odesílate
 - [Bezplatná podpora](https://forum.aspose.com/)
 - [Dočasná licence](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Poslední aktualizace:** 2026-03-09  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -48,8 +54,3 @@ Porozumění oznámením o odrazu je zásadní pro udržení reputace odesílate
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-03-09  
-**Autor:** Aspose

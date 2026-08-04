@@ -10,10 +10,6 @@ url: /ar/java/configuring-smtp-servers/integrating-multiple-smtp-servers/
 weight: 18
 ---
 
- needed but Arabic text.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}

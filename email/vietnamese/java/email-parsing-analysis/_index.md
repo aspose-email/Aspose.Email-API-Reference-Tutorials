@@ -12,6 +12,7 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Hướng Dẫn Phân Tích và Xử Lý Email cho Aspose.Email Java
 
 Các hướng dẫn phân tích và xử lý email của chúng tôi cho bạn biết cách **kiểm tra trạng thái bounce của email**, trích xuất thông tin có giá trị, và xây dựng các giải pháp xử lý email thông minh với Aspose.Email trong Java. Cho dù bạn cần chẩn đoán các vấn đề giao nhận, lấy dữ liệu từ kho lưu trữ, hay phân tích nội dung tin nhắn, những hướng dẫn từng bước này cung cấp cho bạn mã nguồn và ngữ cảnh cần thiết để thành công.
@@ -60,6 +61,11 @@ Tìm hiểu cách sử dụng Aspose.Email cho Java để truy xuất tóm tắt
 - [Hỗ trợ miễn phí](https://forum.aspose.com/)
 - [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)
 
+---
+
+**Cập Nhật Cuối Cùng:** 2026-03-09  
+**Tác Giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -67,8 +73,3 @@ Tìm hiểu cách sử dụng Aspose.Email cho Java để truy xuất tóm tắt
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập Nhật Cuối Cùng:** 2026-03-09  
-**Tác Giả:** Aspose
