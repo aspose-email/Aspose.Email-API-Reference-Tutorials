@@ -1,9 +1,9 @@
 ---
-date: 2026-01-04
-description: 了解如何使用 Aspose.Email for Java 创建电子邮件消息、定制 SMTP 标头、添加自定义电子邮件页脚以及个性化电子邮件品牌。
+date: 2026-03-07
+description: 学习如何在 Java 中添加邮件页脚并自定义 SMTP 头部，创建 Java 邮件消息，并使用 Aspose.Email 实现品牌个性化。
 linktitle: Customizing SMTP Headers and Footers with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: 在 Java 中创建电子邮件 – 使用 Aspose.Email 定制 SMTP 标头和页脚
+title: 如何在 Java 中添加邮件页脚并自定义 SMTP 头部
 url: /zh/java/configuring-smtp-servers/customizing-smtp-headers-and-footers/
 weight: 16
 ---
@@ -14,44 +14,52 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Email 自定义 SMTP 标头和页脚
+# 使用 Aspose.Email 定制 SMTP 标头和页脚
 
 ## 介绍
 
-在当今快节奏的商业环境中，您发送的每封电子邮件都是品牌的延伸。通过学习如何创建包含自定义标头和页脚的 **create email message java** 项目，您可以*个性化电子邮件品牌*，强化企业形象，并符合特定邮件服务器的要求。本教程将带您完成整个过程——从搭建 Java 项目到添加自定义电子邮件页脚——使用 Aspose.Email for Java。
+如果你正在寻找 **如何添加电子邮件页脚** 并且想要定制 SMTP 标头，那么你来对地方了。在本教程中，我们将演示如何使用 Java 创建邮件消息、添加自定义 SMTP 标头以及附加专业的 HTML 页脚——全部借助强大的 Aspose.Email for Java 库。完成后，你将拥有一封完整品牌化的电子邮件，准备通过自己的 SMTP 服务器发送。
 
-## 快速回答
-- **主要库是什么？** Aspose.Email for Java  
-- **哪个方法添加自定义电子邮件页脚？** `setHtmlBody()` with your HTML snippet  
-- **我可以设置自定义 SMTP 标头吗？** Yes, via `message.getHeaders().add()`  
-- **生产环境需要许可证吗？** A valid Aspose.Email license is required for commercial use  
-- **支持的 Java 版本是什么？** Java 8 and above  
+## 快速答案
+- **主要使用的库是什么？** Aspose.Email for Java  
+- **哪个方法用于添加自定义电子邮件页脚？** 使用 `setHtmlBody()` 并传入你的 HTML 片段  
+- **可以设置自定义 SMTP 标头吗？** 可以，通过 `message.getHeaders().add()` 实现  
+- **生产环境需要许可证吗？** 商业使用必须拥有有效的 Aspose.Email 许可证  
+- **支持的 Java 版本？** Java 8 及以上  
+
+## 在实践中，“如何添加电子邮件页脚”是什么？
+
+添加电子邮件页脚指的是在消息正文的末尾追加一个可复用的 HTML 块（通常包含法律声明、品牌信息或退订链接）。这样可以确保每封外发邮件都携带一致的信息，无需手动复制粘贴。
+
+## 为什么要定制 SMTP 标头？
+
+自定义 SMTP 标头让你能够更细致地控制下游邮件服务器对消息的处理方式——例如设置优先级标记、添加自定义跟踪 ID，或指定邮件客户端名称。它们在合规、分析或与企业邮件策略集成时尤为有用。
 
 ## 先决条件
 
-在深入定制过程之前，请确保已具备以下先决条件：
+在开始定制之前，请确保已具备以下条件：
 
-- Aspose.Email for Java：从 [here](https://releases.aspose.com/email/java/) 下载并安装 Aspose.Email for Java 库。
+- Aspose.Email for Java: 从 [here](https://releases.aspose.com/email/java/) 下载并安装 Aspose.Email for Java 库。
 
-## 如何使用 Aspose.Email 创建 email message java
+## 如何使用 Aspose.Email 创建 Java 邮件消息
 
-以下是一步步指南，向您展示如何使用 Java 构建、定制并发送电子邮件。
+下面是一份逐步指南，展示如何使用 Java 构建、定制并发送电子邮件。
 
 ### 步骤 1：设置 Java 项目
 
-在您喜欢的 IDE（IntelliJ IDEA、Eclipse 或 NetBeans）中启动一个新的 Java 项目。将 Aspose.Email JAR 添加到项目的类路径，或通过 Maven/Gradle 导入。
+在你喜欢的 IDE（IntelliJ IDEA、Eclipse 或 NetBeans）中新建一个 Java 项目。将 Aspose.Email JAR 添加到项目的类路径，或通过 Maven/Gradle 引入。
 
 ### 步骤 2：导入所需类
 
-您需要从 Aspose.Email 命名空间导入一系列类。import 语句保持不变，您可以直接复制：
+你需要从 Aspose.Email 命名空间导入若干类。导入语句保持不变，直接复制即可：
 
 ```java
 import com.aspose.email.*;
 ```
 
-### 步骤 3：创建电子邮件消息
+### 步骤 3：创建邮件消息
 
-现在我们创建核心 `MailMessage` 对象。这就是我们 **create email message java**，随后将承载自定义标头和页脚的地方。
+现在我们创建核心的 `MailMessage` 对象。这就是我们 **创建 Java 邮件消息** 的地方，随后会携带自定义标头和页脚。
 
 ```java
 // Create a new message
@@ -65,9 +73,9 @@ message.setTo("recipient@example.com");
 message.setSubject("Customized Email Header and Footer");
 ```
 
-### 步骤 4：定制标头
+### 如何添加自定义 SMTP 标头
 
-自定义 SMTP 标头让您对接收服务器处理邮件的方式拥有更多控制。例如，您可以设置优先级或指定邮件客户端名称。
+自定义 SMTP 标头让你对接收服务器处理邮件的方式拥有额外控制。例如，你可以设置优先级或指定邮件客户端名称。
 
 ```java
 // Customize headers
@@ -75,11 +83,11 @@ message.getHeaders().add("X-Priority", "1");
 message.getHeaders().add("X-Mailer", "Aspose.Email");
 ```
 
-> **专业提示：** 使用标准标头名称（例如 `X-Priority`），以确保在不同邮件服务器之间的兼容性。
+> **专业提示：** 使用标准标头名称（例如 `X-Priority`）以确保在不同邮件服务器上的兼容性。
 
-### 步骤 5：添加自定义电子邮件页脚（add html footer to email）
+### 如何添加电子邮件页脚
 
-要 **add custom email footer** 和 **add html footer to email**，只需在消息正文的末尾嵌入您的 HTML 片段。这种方式还可以让您通过徽标或法律声明 **personalize email branding**。
+要 **添加电子邮件页脚**（或 **向电子邮件添加 HTML 页脚**），只需在消息正文的末尾嵌入你的 HTML 片段。这种方式还能让你 **个性化电子邮件品牌**，比如加入徽标或法律声明。
 
 ```java
 // Customize footer
@@ -87,11 +95,11 @@ String footerText = "This email is sent using Aspose.Email for Java.";
 message.setHtmlBody("<p>Your email content here.</p><p>" + footerText + "</p>");
 ```
 
-您可以将 `footerText` 替换为任意 HTML——图片、样式化文本，甚至是动态内容。
+你可以将 `footerText` 替换为任意 HTML——图片、样式化文本，甚至是动态内容。
 
 ### 步骤 6：发送电子邮件
 
-最后，使用您的服务器详细信息配置 `SmtpClient` 并发送消息。
+最后，使用你的服务器详情配置 `SmtpClient` 并发送消息。
 
 ```java
 // Initialize the SMTP client
@@ -101,36 +109,36 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 client.send(message);
 ```
 
-> **警告：** 确保 SMTP 凭据有权从您指定的 `From` 地址发送；否则服务器可能会拒绝该消息。
+> **警告：** 确保 SMTP 凭据有权从你指定的 `From` 地址发送；否则服务器可能会拒绝该邮件。
 
 ## 常见问题及解决方案
 
 | 问题 | 解决方案 |
-|-------|----------|
-| **标头未出现** | 验证 SMTP 服务器未剥离自定义标头。有些提供商会删除非标准标头。 |
-| **HTML 页脚未渲染** | 确保邮件客户端支持 HTML，并且您的 HTML 结构完整（标签闭合、编码正确）。 |
-| **身份验证错误** | 再次检查用户名/密码，并确保 TLS/SSL 设置符合服务器要求。 |
+|------|----------|
+| **标头未出现** | 验证 SMTP 服务器是否会剥离自定义标头。有些提供商会删除非标准标头。 |
+| **HTML 页脚未渲染** | 确认邮件客户端支持 HTML，并且你的 HTML 结构完整（标签闭合、编码正确）。 |
+| **身份验证错误** | 再次检查用户名/密码，并确保 TLS/SSL 设置与服务器要求匹配。 |
 
-## 常见问题
+## 常见问答
 
-**问：如何下载 Aspose.Email for Java？**  
-答：您可以通过以下链接从网站下载 Aspose.Email for Java：[Download Aspose.Email for Java](https://releases.aspose.com/email/java/)。
+**Q: 如何下载 Aspose.Email for Java？**  
+A: 你可以通过以下链接从官网下载安装 Aspose.Email for Java： [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)。
 
-**问：我可以在同一封邮件中自定义多个标头和页脚吗？**  
-答：可以，您可以在单封邮件中自定义多个标头和页脚。只需按照示例添加所需的标头和页脚即可。
+**Q: 能否在同一封邮件中定制多个标头和页脚？**  
+A: 可以，你可以在同一封邮件中定制多个标头和页脚。只需按照示例中展示的方式添加所需的标头和页脚即可。
 
-**问：自定义标头和页脚的长度有限制吗？**  
-答：对自定义标头和页脚的长度没有严格限制。但建议保持简洁且相关，以维持专业形象。
+**Q: 定制的标头和页脚长度有限制吗？**  
+A: 对于定制的标头和页脚没有严格的长度限制。但建议保持简洁、相关，以维持专业形象。
 
-**问：我可以在邮件内容中使用 HTML 格式吗？**  
-答：可以，您可以在邮件内容中使用 HTML 格式，包括标头和页脚。这使您能够创建视觉上吸引人且信息丰富的邮件。
+**Q: 可以在邮件内容中使用 HTML 格式吗？**  
+A: 可以，在邮件内容（包括标头和页脚）中使用 HTML 格式。这使你能够创建视觉上更具吸引力且信息丰富的邮件。
 
-**问：发送自定义邮件应使用哪些 SMTP 设置？**  
-答：您应使用邮件服务提供商或组织 IT 部门提供的 SMTP 设置。这些设置通常包括 SMTP 服务器地址、端口号和身份验证凭据。
+**Q: 发送定制邮件应使用哪些 SMTP 设置？**  
+A: 请使用你的邮件服务提供商或组织 IT 部门提供的 SMTP 设置。通常包括 SMTP 服务器地址、端口号以及身份验证凭据。
 
 ---
 
-**最后更新：** 2026-01-04  
+**最后更新：** 2026-03-07  
 **测试环境：** Aspose.Email for Java 24.12  
 **作者：** Aspose  
 
