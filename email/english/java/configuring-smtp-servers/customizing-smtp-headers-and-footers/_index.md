@@ -149,4 +149,3 @@ A: You should use the SMTP settings provided by your email service provider or y
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/products-backtop-button >}}

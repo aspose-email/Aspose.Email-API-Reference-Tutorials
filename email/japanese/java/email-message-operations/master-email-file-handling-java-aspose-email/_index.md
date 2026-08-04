@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # JavaでAspose.Emailを使用したメールファイル処理のマスター
 
 ## はじめに
@@ -180,6 +181,11 @@ Java で **メール処理の自動化** を実現するための完全な本番
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**Last Updated:** 2026-03-07  
+**Tested With:** Aspose.Email 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -187,8 +193,3 @@ Java で **メール処理の自動化** を実現するための完全な本番
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Last Updated:** 2026-03-07  
-**Tested With:** Aspose.Email 25.4 (JDK 16)  
-**Author:** Aspose

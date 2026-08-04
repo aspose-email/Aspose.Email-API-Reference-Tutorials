@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Java'da Aspose.Email ile E-posta Dosya İşlemini Ustalıkla Yönetme
 
 ## Giriş
@@ -173,6 +174,11 @@ Artık Java'da **e-posta işleme otomasyonu** için tam, üretim‑hazır bir ta
 - [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
 - [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
 
+---
+**Son Güncelleme:** 2026-03-07  
+**Test Edilen Versiyon:** Aspose.Email 25.4 (JDK 16)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -180,8 +186,3 @@ Artık Java'da **e-posta işleme otomasyonu** için tam, üretim‑hazır bir ta
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Son Güncelleme:** 2026-03-07  
-**Test Edilen Versiyon:** Aspose.Email 25.4 (JDK 16)  
-**Yazar:** Aspose

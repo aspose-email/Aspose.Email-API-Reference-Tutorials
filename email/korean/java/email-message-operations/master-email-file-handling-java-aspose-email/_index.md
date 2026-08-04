@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Java에서 Aspose.Email으로 이메일 파일 처리 마스터하기
 
 ## 소개
@@ -181,6 +182,11 @@ A: 예외 메시지를 확인하고 파일 무결성을 검증한 뒤, 올바른
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**마지막 업데이트:** 2026-03-07  
+**테스트 환경:** Aspose.Email 25.4 (JDK 16)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ A: 예외 메시지를 확인하고 파일 무결성을 검증한 뒤, 올바른
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**마지막 업데이트:** 2026-03-07  
-**테스트 환경:** Aspose.Email 25.4 (JDK 16)  
-**작성자:** Aspose

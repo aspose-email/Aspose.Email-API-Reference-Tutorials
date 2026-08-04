@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # 掌握 Java 中的邮件文件处理（使用 Aspose.Email）
 
 ## 介绍
@@ -181,6 +182,11 @@ A: 检查异常信息，确认文件完整性，并确保引用了正确版本�
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**最后更新：** 2026-03-07  
+**测试环境：** Aspose.Email 25.4 (JDK 16)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ A: 检查异常信息，确认文件完整性，并确保引用了正确版本�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**最后更新：** 2026-03-07  
-**测试环境：** Aspose.Email 25.4 (JDK 16)  
-**作者：** Aspose

@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # إتقان معالجة ملفات البريد الإلكتروني في Java باستخدام Aspose.Email
 
 ## المقدمة
@@ -181,6 +182,11 @@ MapiMessage msg = MapiMessage.fromMailMessage(eml, options);
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**آخر تحديث:** 2026-03-07  
+**تم الاختبار مع:** Aspose.Email 25.4 (JDK 16)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ MapiMessage msg = MapiMessage.fromMailMessage(eml, options);
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**آخر تحديث:** 2026-03-07  
-**تم الاختبار مع:** Aspose.Email 25.4 (JDK 16)  
-**المؤلف:** Aspose

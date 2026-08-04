@@ -18,6 +18,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Dominar el manejo de archivos de correo electrónico en Java con Aspose.Email
 
 ## Introducción
@@ -183,6 +184,11 @@ Ahora tienes una receta completa y lista para producción para **automatizar el 
 - [Licencia temporal](https://purchase.aspose.com/temporary-license/)
 - [Foro de soporte de Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Última actualización:** 2026-03-07  
+**Probado con:** Aspose.Email 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -190,8 +196,3 @@ Ahora tienes una receta completa y lista para producción para **automatizar el 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Última actualización:** 2026-03-07  
-**Probado con:** Aspose.Email 25.4 (JDK 16)  
-**Autor:** Aspose

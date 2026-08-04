@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Mistrovství v manipulaci s e‑mailovými soubory v Javě s Aspose.Email
 
 ## Úvod
@@ -180,6 +181,11 @@ Experimentujte se vzorkem a sledujte, jak vaše schopnosti v manipulaci s e‑ma
 - [Dočasná licence](https://purchase.aspose.com/temporary-license/)
 - [Fórum podpory Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Last Updated:** 2026-03-07  
+**Tested With:** Aspose.Email 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -187,8 +193,3 @@ Experimentujte se vzorkem a sledujte, jak vaše schopnosti v manipulaci s e‑ma
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Last Updated:** 2026-03-07  
-**Tested With:** Aspose.Email 25.4 (JDK 16)  
-**Author:** Aspose

@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Thành thạo Xử lý Tệp Email trong Java với Aspose.Email
 
 ## Giới thiệu
@@ -181,6 +182,11 @@ Thử nghiệm với mẫu và chứng kiến khả năng xử lý email của b
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**Last Updated:** 2026-03-07  
+**Tested With:** Aspose.Email 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ Thử nghiệm với mẫu và chứng kiến khả năng xử lý email của b
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Last Updated:** 2026-03-07  
-**Tested With:** Aspose.Email 25.4 (JDK 16)  
-**Author:** Aspose

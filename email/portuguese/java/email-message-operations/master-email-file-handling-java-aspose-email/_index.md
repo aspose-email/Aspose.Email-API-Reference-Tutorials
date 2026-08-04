@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Dominando o Manipulamento de Arquivos de Email em Java com Aspose.Email
 
 ## Introdução
@@ -181,6 +182,11 @@ Experimente o exemplo e veja suas capacidades de manipulação de e‑mail decol
 - [Licença Temporária](https://purchase.aspose.com/temporary-license/)
 - [Fórum de Suporte da Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Última atualização:** 2026-03-07  
+**Testado com:** Aspose.Email 25.4 (JDK 16)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ Experimente o exemplo e veja suas capacidades de manipulação de e‑mail decol
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Última atualização:** 2026-03-07  
-**Testado com:** Aspose.Email 25.4 (JDK 16)  
-**Autor:** Aspose

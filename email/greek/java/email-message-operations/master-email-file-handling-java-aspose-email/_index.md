@@ -17,6 +17,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Κατάκτηση της Διαχείρισης Αρχείων Email σε Java με το Aspose.Email
 
 ## Εισαγωγή
@@ -182,6 +183,11 @@ MapiMessage msg = MapiMessage.fromMailMessage(eml, options);
 - [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
 - [Φόρουμ Υποστήριξης Aspose](https://forum.aspose.com/c/email/10)
 
+---
+**Τελευταία Ενημέρωση:** 2026-03-07  
+**Δοκιμάστηκε Με:** Aspose.Email 25.4 (JDK 16)  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -189,8 +195,3 @@ MapiMessage msg = MapiMessage.fromMailMessage(eml, options);
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Τελευταία Ενημέρωση:** 2026-03-07  
-**Δοκιμάστηκε Με:** Aspose.Email 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose

@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Maîtriser la gestion des fichiers e‑mail en Java avec Aspose.Email
 
 ## Introduction
@@ -181,6 +182,11 @@ Expérimentez avec l’exemple et voyez vos capacités de gestion d’e‑mail s
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 - [Aspose Support Forum](https://forum.aspose.com/c/email/10)
 
+---
+**Dernière mise à jour :** 2026-03-07  
+**Testé avec :** Aspose.Email 25.4 (JDK 16)  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -188,8 +194,3 @@ Expérimentez avec l’exemple et voyez vos capacités de gestion d’e‑mail s
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Dernière mise à jour :** 2026-03-07  
-**Testé avec :** Aspose.Email 25.4 (JDK 16)  
-**Auteur :** Aspose

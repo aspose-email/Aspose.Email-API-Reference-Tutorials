@@ -16,6 +16,7 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Beheersen van e‑mailbestandsverwerking in Java met Aspose.Email
 
 ## Introductie
@@ -179,6 +180,11 @@ Experimenteer met het voorbeeld en zie hoe je e‑mailverwerkingsmogelijkheden g
 - [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/)
 - [Aspose Supportforum](https://forum.aspose.com/c/email/10)
 
+---
+**Last Updated:** 2026-03-07  
+**Tested With:** Aspose.Email 25.4 (JDK 16)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
@@ -186,8 +192,3 @@ Experimenteer met het voorbeeld en zie hoe je e‑mailverwerkingsmogelijkheden g
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-**Last Updated:** 2026-03-07  
-**Tested With:** Aspose.Email 25.4 (JDK 16)  
-**Author:** Aspose
