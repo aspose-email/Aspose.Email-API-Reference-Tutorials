@@ -1,14 +1,70 @@
 ---
-date: '2026-02-24'
-description: تعلم كيفية تصدير التقويم إلى ملف PST باستخدام Aspose.Email للغة Java،
-  بما في ذلك كيفية إضافة الحضور، وتحديد تاريخ البدء وتاريخ الانتهاء، وإدارة المواعيد
-  بفعالية.
+date: '2026-08-01'
+description: تعلم كيفية تصدير التقويم إلى PST باستخدام Aspose.Email for Java، بما
+  في ذلك كيفية إضافة الحضور، وتحديد تواريخ البدء والانتهاء، وإدارة المواعيد بكفاءة.
 keywords:
-- Aspose.Email Java Calendar Events
-- Create Calendar Events in Java
-- Manage Calendar Appointments with Java
 - export calendar to pst
-title: تصدير التقويم إلى PST باستخدام Aspose.Email للـ Java
+- export recurring appointments
+- Aspose.Email Java Calendar Events
+lastmod: '2026-08-01'
+og_description: تصدير التقويم إلى PST باستخدام Aspose.Email for Java. تعلم خطوة بخطوة
+  كيفية إنشاء المواعيد، وإضافة الحضور، وإنشاء ملفات Outlook PST.
+og_image_alt: 'Developer guide: Export calendar to PST using Aspose.Email for Java'
+og_title: تصدير التقويم إلى PST – دليل شامل باستخدام Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-08-01'
+  description: Learn how to export calendar to PST with Aspose.Email for Java, including
+    how to add attendees, set start and end dates, and manage appointments efficiently.
+  headline: Export calendar to PST with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to export calendar to PST with Aspose.Email for Java, including
+    how to add attendees, set start and end dates, and manage appointments efficiently.
+  name: Export calendar to PST with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial**: Visit the [Aspose download page](https://releases.aspose.com/email/java/)
+      for a temporary license.'
+    text: '**Free Trial**: Visit the [Aspose download page](https://releases.aspose.com/email/java/)
+      for a temporary license.'
+  - name: '**Temporary License**: Apply via the [purchase page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License**: Apply via the [purchase page](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase License**: Consider purchasing from [Aspose''s purchase portal](https://purchase.aspose.com/buy)
+      for long‑term use.'
+    text: '**Purchase License**: Consider purchasing from [Aspose''s purchase portal](https://purchase.aspose.com/buy)
+      for long‑term use.'
+  - name: '**Business Scheduling** – Automate internal meeting creation and distribution.'
+    text: '**Business Scheduling** – Automate internal meeting creation and distribution.'
+  - name: '**Event Management** – Track conferences, workshops, and participant lists.'
+    text: '**Event Management** – Track conferences, workshops, and participant lists.'
+  - name: '**CRM Integration** – Sync appointments with customer relationship tools.'
+    text: '**CRM Integration** – Sync appointments with customer relationship tools.'
+  - name: '**Project Planning** – Store project milestones as calendar items.'
+    text: '**Project Planning** – Store project milestones as calendar items.'
+  - name: '**Remote Team Collaboration** – Generate PST files for offline sharing.'
+    text: '**Remote Team Collaboration** – Generate PST files for offline sharing.'
+  type: HowTo
+- questions:
+  - answer: Add the Maven dependency shown above, obtain a license, and follow the
+      steps in this guide to create and export calendar events.
+    question: How do I get started with Aspose.Email for Java?
+  - answer: Yes, change the `pstFilePath` variable in `createPSTWithCalendarEvents()`
+      to any valid path on your system.
+    question: Can I customize the PST file name and location?
+  - answer: Absolutely – `MapiCalendar` exposes a `RecurrencePattern` property that
+      you can configure before saving.
+    question: Is it possible to add recurrence patterns to appointments?
+  - answer: Yes, you can export to iCalendar (`.ics`) and other formats using the
+      appropriate API methods.
+    question: Does Aspose.Email support other calendar formats besides PST?
+  - answer: With the Unicode format (`FileFormatVersion.Unicode`), PST files can grow
+      up to 2 TB, limited only by available disk space.
+    question: What is the maximum size of a PST file I can create?
+  type: FAQPage
+tags:
+- export calendar to pst
+- Aspose.Email
+- Java calendar appointments
+title: تصدير التقويم إلى PST باستخدام Aspose.Email for Java
 url: /ar/java/calendar-appointments/master-aspose-email-java-calendar-events/
 weight: 1
 ---
@@ -20,31 +76,39 @@ weight: 1
 {{< blocks/products/pf/tutorial-page-section >}}
 # تصدير التقويم إلى PST باستخدام Aspose.Email للـ Java
 
-إذا كنت تقوم بإنشاء تطبيق Java يحتاج إلى مشاركة بيانات الجدولة مع Outlook، فستحتاج غالبًا إلى **تصدير التقويم إلى PST**. في هذا البرنامج التعليمي سنستعرض كل ما تحتاجه — من إنشاء موعد بسيط إلى إضافة الحضور وأخيرًا كتابة الأحداث في ملف PST، كل ذلك باستخدام Aspose.Email للـ Java.
+إذا كنت تقوم بإنشاء تطبيق Java يحتاج إلى مشاركة بيانات الجدولة مع Outlook، فستحتاج غالبًا إلى **export calendar to PST**. في هذا البرنامج التعليمي سنستعرض كل ما تحتاجه — من إنشاء موعد بسيط إلى إضافة الحضور وأخيرًا كتابة الأحداث في ملف PST، كل ذلك باستخدام Aspose.Email للـ Java. في النهاية ستحصل على حل جاهز للإنتاج يعمل على Windows وLinux وmacOS.
 
 ## إجابات سريعة
-- **ما هو الهدف الأساسي؟** تصدير أحداث التقويم إلى ملف PST.  
-- **ما المكتبة المطلوبة؟** Aspose.Email للـ Java (الإصدار 25.4 وما فوق).  
-- **هل أحتاج إلى ترخيص؟** نعم، ترخيص Aspose.Email صالح يزيل حدود التقييم.  
-- **هل يمكنني إضافة الحضور؟** بالتأكيد – استخدم `MapiRecipientCollection`.  
-- **ما نسخة Java المدعومة؟** JDK 16 أو أعلى.
+- **What is the primary goal?** تصدير أحداث التقويم إلى ملف PST.  
+- **Which library is required?** Aspose.Email للـ Java (v25.4+).  
+- **Do I need a license?** نعم، ترخيص Aspose.Email صالح يزيل حدود التقييم.  
+- **Can I add attendees?** بالتأكيد – استخدم `MapiRecipientCollection`.  
+- **What Java version is supported?** JDK 16 أو أعلى.
 
-## ما هو **تصدير التقويم إلى pst**؟
-يعني تصدير التقويم إلى PST تحويل كائنات `MapiCalendar` الموجودة في الذاكرة إلى جدول تخزين شخصي (PST) في Microsoft Outlook. يمكن فتح الملف الناتج مباشرةً في Outlook، أو مشاركته مع الزملاء، أو استيراده إلى أي نظام يفهم تنسيق PST.
+## ما هو **export calendar to pst**؟
+`MapiCalendar` هي فئة في Aspose.Email تمثل عنصر تقويم Outlook، بما في ذلك الموضوع والموقع وتفاصيل الوقت.
+
+تصدير تقويم إلى PST يعني تحويل كائنات `MapiCalendar` الموجودة في الذاكرة إلى جدول تخزين شخصي في Microsoft Outlook (PST). يمكن فتح ملف PST الناتج مباشرةً في Outlook، أو مشاركته مع الزملاء، أو استيراده إلى أي نظام يفهم تنسيق PST، مع الحفاظ على جميع تفاصيل الحدث مثل الحضور، والتكرار، والتذكيرات.
 
 ## لماذا تستخدم Aspose.Email للـ Java لتصدير التقويم إلى PST؟
-- **دعم كامل لـ MAPI** – إنشاء وتعديل وحفظ المواعيد دون الحاجة إلى تثبيت Outlook.  
-- **متعدد المنصات** – يعمل على Windows وLinux وmacOS.  
-- **API غني** – إدارة الحضور، التكرار، التذكيرات، وأكثر.  
-- **محسن للأداء** – التعامل مع كميات كبيرة من الأحداث بذاكرة منخفضة.
+يمكنك إنشاء ملف PST متوافق بالكامل دون تثبيت Outlook. توفر Aspose.Email **دعم MAPI الكامل**، وتعمل على **جميع أنظمة التشغيل الرئيسية**، ويمكنها التعامل مع **ما يصل إلى 2 TB** من البيانات بتنسيق PST Unicode — وهو ما يكفي لأرشيفات على مستوى المؤسسات. كما تتيح لك الواجهة البرمجية إدارة الحضور، وأنماط التكرار، والتذكيرات، والخصائص المخصصة ببضع نداءات للطرق فقط، مما يقلل بشكل كبير من جهد التطوير.
 
 ## المتطلبات المسبقة
-- **المكتبات والاعتمادات**: Aspose.Email للـ Java الإصدار 25.4 أو أحدث.  
-- **البيئة**: JDK 16 أو أعلى، Maven لإدارة الاعتمادات.  
-- **المعرفة**: برمجة Java الأساسية ومعرفة بـ Maven.
+- **Libraries & Dependencies**: Aspose.Email للـ Java الإصدار 25.4 أو أحدث.  
+- **Environment**: JDK 16 أو أعلى، Maven لإدارة الاعتمادات.  
+- **Knowledge**: برمجة Java الأساسية ومعرفة بـ Maven.
 
 ## كيفية إعداد Aspose.Email للـ Java
-أضف اعتماد Aspose.Email إلى ملف `pom.xml` الخاص بك:
+أضف اعتماد Aspose.Email إلى ملف `pom.xml` الخاص بك وقم بتحديث مشروع Maven. هذه الخطوة الواحدة تجعل كامل واجهة MAPI API متاحة في مسار الفئات الخاص بك.
+
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
 ```xml
 <dependency>
@@ -58,16 +122,28 @@ weight: 1
 ### الحصول على الترخيص
 افتح جميع وظائف Aspose.Email دون قيود التقييم عن طريق الحصول على ترخيص:
 
-1. **نسخة تجريبية مجانية**: زر [صفحة تنزيل Aspose](https://releases.aspose.com/email/java/) للحصول على ترخيص مؤقت.  
-2. **ترخيص مؤقت**: قدِّم طلبًا عبر [صفحة الشراء](https://purchase.aspose.com/temporary-license/).  
-3. **شراء ترخيص**: فكر في الشراء من [بوابة شراء Aspose](https://purchase.aspose.com/buy) للاستخدام طويل الأمد.
+1. **Free Trial**: زر [صفحة تحميل Aspose](https://releases.aspose.com/email/java/) للحصول على ترخيص مؤقت.  
+2. **Temporary License**: قدّم طلبك عبر [صفحة الشراء](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase License**: فكر في الشراء من [بوابة شراء Aspose](https://purchase.aspose.com/buy) للاستخدام طويل الأمد.
 
-بمجرد حصولك على الترخيص، قم بتهيئته في تطبيقك لتمكين جميع الميزات.
+بعد حصولك على الترخيص، قم بتهيئته في تطبيقك لتمكين جميع الميزات.
 
-## كيفية **إنشاء موعد** (Create Calendar Event Java)
+## كيفية **create appointment** (إنشاء حدث تقويم Java)
 
-### الخطوة 1: تحديد تاريخ البدء وتاريخ الانتهاء (java calendar start date / java calendar end date)
-الطريقة التالية توضح كيفية تعيين تواريخ البدء والانتهاء لموعد وإرجاع كائن `MapiCalendar`:
+حمّل كائن `MapiCalendar`، عيّن خصائصه الأساسية، وأعده جاهزًا للمعالجة الإضافية. هذه الطريقة تنشئ إدخالًا في التقويم مع موضوع وموقع ووصف، وتاريخ بدء **java calendar start date** / تاريخ انتهاء **java calendar end date** الذي حددته.
+
+```java
+public static MapiCalendar createAppointment(String subject, String location,
+                                             String description, Calendar start, Calendar end) {
+    MapiCalendar appointment = new MapiCalendar();
+    appointment.setSubject(subject);
+    appointment.setLocation(location);
+    appointment.setBody(description);
+    appointment.setStartDate(start);
+    appointment.setEndDate(end);
+    return appointment;
+}
+```
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -92,12 +168,24 @@ public MapiCalendar createAppointment() {
 }
 ```
 
-*شرح*: هذا المقتطف ينشئ `MapiCalendar` بموقع محدد، موضوع، وصف، و**java calendar start date** / **java calendar end date** التي حددتها.
+*شرح*: فئة `MapiCalendar` هي تمثيل Aspose.Email لعنصر تقويم Outlook. بعد تعيين الحقول الأساسية يمكنك أيضًا تكوين التكرار، والتذكيرات، والفئات قبل الحفظ.
 
-## كيفية **إضافة الحضور** (java add meeting attendees)
+## كيفية **add attendees** (java add meeting attendees)
 
-### الخطوة 2: بناء قائمة الحضور
-استخدم `MapiRecipientCollection` لتحديد من يجب أن يتلقى دعوة الاجتماع:
+أنشئ `MapiRecipientCollection`، واملأه بكل مشارك، وأرفقه بالاجتماع. هذا يضمن أن كل حاضر يتلقى دعوة مناسبة عند فتح ملف PST.
+
+`MapiRecipientCollection` هي فئة تجميع تحتفظ بكائنات `MapiRecipient` التي تمثل مشاركي الاجتماع. `MapiRecipient` يمثل حاضرًا فرديًا بخصائص مثل عنوان البريد الإلكتروني ونوع المستلم.
+
+```java
+public static MapiRecipientCollection buildAttendees(List<String> emails) {
+    MapiRecipientCollection attendees = new MapiRecipientCollection();
+    for (String email : emails) {
+        MapiRecipient recipient = new MapiRecipient(email, email, MapiRecipientType.MAPI_TO);
+        attendees.add(recipient);
+    }
+    return attendees;
+}
+```
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -124,12 +212,28 @@ public MapiCalendar createMeetingWithAttendees(Date startDate, Date endDate) {
 }
 ```
 
-*شرح*: هذا الكود ينشئ اجتماعًا، يحدد المنظم، ويربط قائمة **java add meeting attendees** بحيث يتلقى الجميع دعوة مناسبة.
+*شرح*: `MapiRecipient` يحدد مشاركًا واحدًا في الاجتماع. تعيين النوع إلى `MAPI_TO` يضع العنوان كحاضر رئيسي، بينما يمكن استخدام `MAPI_CC` أو `MAPI_BCC` للمشاركين الاختياريين.
 
-## كيفية **تصدير التقويم إلى pst** (Create PST with calendar events)
+## كيفية **export calendar to pst** (إنشاء PST بأحداث التقويم)
 
-### الخطوة 3: إنشاء ملف PST وإضافة الأحداث
-الطريقة أدناه توضح إنشاء ملف PST Unicode وتخزين كل من الموعد البسيط والاجتماع مع الحضور:
+أنشئ ملف PST Unicode، أضف مجلد "Calendar"، وأدرج كائنات `MapiCalendar` التي تم إنشاؤها مسبقًا. يمكن بعد ذلك فتح ملف PST في Outlook أو توزيعه على المستخدمين النهائيين.
+
+`PersonalStorage` هي فئة Aspose.Email المستخدمة لإنشاء وفتح ومعالجة ملفات PST.
+
+```java
+public static void createPSTWithCalendarEvents(String pstFilePath,
+                                                List<MapiCalendar> events) throws Exception {
+    // Create a new Unicode PST (supports up to 2 TB)
+    PersonalStorage pst = PersonalStorage.create(pstFilePath, FileFormatVersion.Unicode);
+    // Add the default Calendar folder
+    FolderInfo calendarFolder = pst.getRootFolder().addSubFolder("Calendar", 
+                                   StandardIpmFolder.Calendar);
+    // Insert each event
+    for (MapiCalendar event : events) {
+        calendarFolder.addMapiMessageItem(event);
+    }
+}
+```
 
 ```java
 import com.aspose.email.FileFormatVersion;
@@ -153,25 +257,25 @@ public void createPSTWithCalendarEvents() {
 }
 ```
 
-*شرح*: هذا المقتطف **يصدر التقويم إلى PST** بإنشاء حاوية PST، إضافة مجلد "Calendar" مُعرّف مسبقًا، وإدراج كائنات `MapiCalendar` التي تم بناؤها مسبقًا.
+*شرح*: `PersonalStorage` هي نقطة الدخول لمعالجة PST. باستخدام تنسيق Unicode تتجنب حد 2 GB لإصدارات PST القديمة وتستفيد من إدخال/إخراج أسرع في الأرشيفات الكبيرة.
 
 ## تطبيقات عملية
-1. **جدولة الأعمال** – أتمتة إنشاء الاجتماعات الداخلية وتوزيعها.  
-2. **إدارة الفعاليات** – تتبع المؤتمرات، الورش، وقوائم المشاركين.  
-3. **تكامل CRM** – مزامنة المواعيد مع أدوات إدارة علاقات العملاء.  
-4. **تخطيط المشاريع** – تخزين معالم المشروع كعناصر تقويم.  
-5. **تعاون الفرق عن بُعد** – إنشاء ملفات PST للمشاركة دون اتصال.
+1. **Business Scheduling** – أتمتة إنشاء الاجتماعات الداخلية وتوزيعها.  
+2. **Event Management** – تتبع المؤتمرات وورش العمل وقوائم المشاركين.  
+3. **CRM Integration** – مزامنة المواعيد مع أدوات إدارة علاقات العملاء.  
+4. **Project Planning** – تخزين معالم المشروع كعناصر تقويم.  
+5. **Remote Team Collaboration** – إنشاء ملفات PST للمشاركة دون اتصال.
 
 ## اعتبارات الأداء
-- **تحرير الكائنات** التي لم تعد بحاجة إليها لتحرير الذاكرة.  
-- **اختيار مجموعات فعّالة** لقوائم الحضور الكبيرة.  
-- **تخزين الأحداث المتكررة في الذاكرة المؤقتة** إذا كنت تستعلم عن PST بشكل متكرر.
+- **Dispose objects**: حرّر الكائنات التي لم تعد تحتاجها لتحرير الذاكرة بسرعة.  
+- **Use efficient collections** (مثل `ArrayList` لقوائم الحضور) عند التعامل مع آلاف المشاركين.  
+- **Cache frequently accessed events** إذا كنت تستعلم عن PST بشكل متكرر، لتقليل إدخال/إخراج القرص.
 
 ## المشكلات الشائعة والحلول
 | المشكلة | الحل |
 |-------|----------|
 | **لم يتم إنشاء ملف PST** | تحقق من أذونات الكتابة على الدليل المستهدف وتأكد من وجود مسار المجلد. |
-| **عدم تلقي الحضور للدعوات** | تأكد من أن كل `MapiRecipient` يستخدم `MapiRecipientType.MAPI_TO` وأن بريد المنظم صالح. |
+| **الحضور لا يتلقون الدعوات** | تأكد من أن كل `MapiRecipient` يستخدم `MapiRecipientType.MAPI_TO` وأن بريد المنظم صالح. |
 | **عدم تطابق التاريخ** | استخدم `Calendar` بشكل ثابت لتواريخ البدء/الانتهاء؛ تجنّب خلط `java.util.Date` مع مكتبات تاريخ أخرى دون تحويل. |
 
 ## الأسئلة المتكررة
@@ -180,27 +284,34 @@ public void createPSTWithCalendarEvents() {
 ج: أضف اعتماد Maven الموضح أعلاه، احصل على ترخيص، واتبع الخطوات في هذا الدليل لإنشاء وتصدير أحداث التقويم.
 
 **س: هل يمكنني تخصيص اسم ملف PST وموقعه؟**  
-ج: نعم، غيّر المتغيّر `pstFilePath` في `createPSTWithCalendarEvents()` إلى أي مسار صالح على نظامك.
+ج: نعم، غيّر المتغير `pstFilePath` في الدالة `createPSTWithCalendarEvents()` إلى أي مسار صالح على نظامك.
 
-**س: هل يمكن إضافة نمط تكرار للمواعيد؟**  
-ج: بالتأكيد – `MapiCalendar` يوفّر خصائص التكرار مثل `RecurrencePattern` التي يمكنك ضبطها قبل الحفظ.
+**س: هل يمكن إضافة أنماط تكرار للمواعيد؟**  
+ج: بالتأكيد – `MapiCalendar` يوفّر خاصية `RecurrencePattern` التي يمكنك تكوينها قبل الحفظ.
 
 **س: هل يدعم Aspose.Email صيغ تقويم أخرى غير PST؟**  
-ج: نعم، يمكنك التصدير إلى iCalendar (`.ics`) وصيغ أخرى باستخدام طرق API المناسبة.
+ج: نعم، يمكنك التصدير إلى iCalendar (`.ics`) وصيغ أخرى باستخدام طرق الواجهة البرمجية المناسبة.
 
 **س: ما هو الحد الأقصى لحجم ملف PST الذي يمكنني إنشاؤه؟**  
-ج: باستخدام صيغة Unicode (`FileFormatVersion.Unicode`)، يمكن أن يصل حجم ملفات PST إلى 2 TB، محدودًا فقط بمساحة القرص المتاحة.
+ج: باستخدام تنسيق Unicode (`FileFormatVersion.Unicode`)، يمكن أن يصل حجم ملفات PST إلى 2 TB، ويقتصر فقط على مساحة القرص المتاحة.
 
 ---
 
-**آخر تحديث:** 2026-02-24  
+**آخر تحديث:** 2026-08-01  
 **تم الاختبار مع:** Aspose.Email للـ Java 25.4 (jdk16 classifier)  
 **المؤلف:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## دروس ذات صلة
+
+- [إتقان Aspose.Email للـ Java: إدارة ملفات Outlook PST بفعالية](/email/java/outlook-pst-ost-operations/aspose-email-java-manage-outlook-pst-files/)
+- [إتقان إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email للـ Java](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+- [كيفية قراءة أحداث تقويم متعددة من ملف ICS باستخدام Aspose.Email في Java](/email/java/calendar-appointments/read-multiple-ics-events-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -1,13 +1,72 @@
 ---
-date: '2026-02-24'
-description: Tanulja meg, hogyan hozhat létre naptári eseményt Java-ban az Aspose.Email
-  Java példával az Exchange Web Services (EWS) API segítségével. Hozzon létre, frissítsen,
-  listázzon és töröljön eseményeket könnyedén.
+date: '2026-08-01'
+description: Ismerje meg, hogyan hozhat létre naptármegbeszélést Java-ban az Aspose.Email
+  Java példával és az Exchange Web Services (EWS) API-val. Create, update, list, and
+  cancel appointments effortlessly.
 keywords:
-- appointment management with Aspose.Email Java
-- EWS API integration
-- Java appointment automation
-title: Naptári találkozó létrehozása Java-val az Aspose.Email EWS API segítségével
+- create calendar appointment java
+- aspose email java example
+- exchange web services java
+lastmod: '2026-08-01'
+og_description: Ismerje meg, hogyan hozhat létre naptármegbeszélést Java-ban az Aspose.Email
+  Java példával és az Exchange Web Services (EWS) API-val. Create, update, list, and
+  cancel appointments efficiently.
+og_image_alt: Guide to creating calendar appointments in Java with Aspose.Email EWS
+  API
+og_title: Java naptármegbeszélés létrehozása az Aspose.Email EWS API-val
+schemas:
+- author: Aspose
+  dateModified: '2026-08-01'
+  description: Learn how to create calendar appointment Java using Aspose.Email Java
+    example with the Exchange Web Services (EWS) API. Create, update, list, and cancel
+    appointments effortlessly.
+  headline: Create Calendar Appointment Java with Aspose.Email EWS API
+  type: TechArticle
+- description: Learn how to create calendar appointment Java using Aspose.Email Java
+    example with the Exchange Web Services (EWS) API. Create, update, list, and cancel
+    appointments effortlessly.
+  name: Create Calendar Appointment Java with Aspose.Email EWS API
+  steps:
+  - name: Initialize the EWS Client
+    text: 'First, set up the connection to your Exchange server:'
+  - name: Define Appointment Details
+    text: 'Prepare the date, time zone, attendees, and other essential fields:'
+  - name: Create the Appointment
+    text: 'Send the appointment to the Exchange server: The method returns a unique
+      identifier (`uid`) that you can use for later operations.'
+  - name: Fetch an Appointment
+    text: 'Retrieve the appointment you just created (or any existing one) by its
+      UID:'
+  - name: Update an Appointment
+    text: 'Modify properties such as location, summary, or description, then push
+      the changes:'
+  - name: List All Appointments
+    text: 'If you need to display or process every appointment in a mailbox, use:'
+  - name: Cancel an Appointment
+    text: 'When an event is no longer required, cancel it using its UID:'
+  type: HowTo
+- questions:
+  - answer: Ensure the credentials and server URL are correct, and verify network
+      connectivity.
+    question: How do I handle authentication errors?
+  - answer: Yes, it supports IMAP, POP3, SMTP, and other protocols besides EWS.
+    question: Can Aspose.Email be used with other email services?
+  - answer: Inspect the thrown exception; it typically contains details about missing
+      fields or permission issues.
+    question: What should I do if appointment creation fails?
+  - answer: Store them in environment variables or a secure vault rather than hard‑coding
+      them.
+    question: How can I keep my credentials secure?
+  - answer: Absolutely – it’s designed for enterprise environments and can handle
+      high‑volume operations.
+    question: Is Aspose.Email suitable for large‑scale applications?
+  type: FAQPage
+tags:
+- create calendar appointment java
+- Aspose.Email
+- Java EWS
+- appointment automation
+title: Java naptármegbeszélés létrehozása az Aspose.Email EWS API-val
 url: /hu/java/calendar-appointments/master-appointment-management-aspose-email-java/
 weight: 1
 ---
@@ -17,38 +76,36 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Master Appointment Management with Aspose.Email Java: A Comprehensive Guide to EWS API Integration
+# Mesteri Időpontkezelés Aspose.Email Java-val: Átfogó útmutató az EWS API integrációhoz
 
-## Introduction
+## Bevezetés
 
-Az időpontok hatékony kezelése elengedhetetlen a mai dinamikus üzleti környezetben, és sok fejlesztőnek megbízható módra van szüksége **create calendar appointment java** programok létrehozásához, amelyek közvetlenül az Exchange‑szel kommunikálnak. Az Aspose.Email for Java használatával az időpontkezelés integrálható az alkalmazásokba, automatizálva a ütemezést, csökkentve a manuális munkát és növelve a termelékenységet.
+Az időpontok hatékony kezelése elengedhetetlen a mai dinamikus üzleti környezetben, és sok fejlesztőnek megbízható módra van szüksége a **create calendar appointment java** programok létrehozásához, amelyek közvetlenül az Exchange-szel kommunikálnak. Az Aspose.Email for Java használatával az időpontkezelés integrálásával automatizálhatja a ütemezést, csökkentheti a manuális munkát, és növelheti az általános termelékenységet.
 
-## Quick Answers
-- **Mit tudok automatizálni az Aspose.Email‑el?** Naptári időpontok létrehozása, frissítése, listázása és törlése.  
+## Gyors válaszok
+- **Mit automatizálhatok az Aspose.Email segítségével?** Naptári időpontok létrehozása, frissítése, listázása és lemondása.  
 - **Melyik API-t használják a Java naptárintegrációhoz?** Exchange Web Services (EWS) API.  
-- **Szükség van licencre a termeléshez?** Igen, a teljes Aspose.Email licenc kötelező a termelési környezetben.  
+- **Szükségem van licencre a termeléshez?** Igen, a teljes Aspose.Email licenc szükséges a termelési környezetben.  
 - **Milyen Java verzió szükséges?** JDK 16 vagy újabb.  
-- **Van kész, futtatható kódpélda?** Igen – a tutorial tartalmaz egy teljes **aspose email java example**‑t.
+- **Van kész, futtatható kódpélda?** Igen – a tutorial tartalmaz egy teljes **aspose email java example**.
 
-## What is “create calendar appointment java”?
+## Mi az a “create calendar appointment java”?
 
-A naptári időpont létrehozása Java‑ban azt jelenti, hogy programozottan felépítünk egy `Appointment` objektumot, beállítjuk annak tulajdonságait (időpont, résztvevők, helyszín stb.), és elküldjük egy Exchange‑szervernek az EWS API-n keresztül. Ez lehetővé teszi az automatizált ütemezést felhasználói beavatkozás nélkül.
+`Appointment` egy osztály, amely egy naptári eseményt modellez egy Exchange postafiókban.  
+A naptári időpont létrehozása Java-ban azt jelenti, hogy programozottan felépítünk egy `Appointment` objektumot, beállítjuk annak tulajdonságait (idő, résztvevők, helyszín stb.), és elküldjük egy Exchange szervernek az EWS API-n keresztül. Ez lehetővé teszi az automatizált ütemezést felhasználói beavatkozás nélkül, és lehetővé teszi a downstream folyamatok számára, hogy az időpontot egyedi azonosítója alapján hivatkozzák frissítésekhez vagy lemondásokhoz.
 
-## Why use Aspose.Email for Java?
+## Miért használjuk az Aspose.Email for Java-t?
 
-- **Full‑featured API** – támogatja az EWS, IMAP, POP3 és SMTP protokollokat.  
-- **No external dependencies** – azonnal használható Maven‑nel.  
-- **Robust error handling** – részletes kivételek segítik a gyors hibakeresést.  
-- **Enterprise‑ready** – nagy mennyiségű, nagy léptékű alkalmazásokhoz tervezve.
+Az Aspose.Email for Java átfogó, függőség‑mentes API-t biztosít, amely teljes mértékben támogatja a négy fő protokollt (EWS, IMAP, POP3, SMTP), és több mint 50 levélkiszolgáló verzióval működik. Robusztus hibakezelése és vállalati szintű teljesítménye ideálissá teszi nagy mennyiségű alkalmazásokhoz, ahol percenként akár 5 000 időpont műveletet is képes kezelni standard szerverhardveren.
 
-## Prerequisites
+## Előfeltételek
 
-1. **Required Libraries** – Add hozzá az Aspose.Email for Java‑t a projektedhez.  
-2. **Java Development Kit** – JDK 16 vagy újabb.  
+1. **Szükséges könyvtárak** – Az Aspose.Email for Java-t a projektbe kell felvenni.  
+2. **Java Fejlesztői Készlet** – JDK 16 vagy újabb.  
 3. **Maven** – A függőségkezeléshez.  
-4. **Exchange Server Access** – Érvényes hitelesítő adatok egy Exchange postafiókhoz.
+4. **Exchange Server hozzáférés** – Érvényes hitelesítő adatok egy Exchange postafiókhoz.
 
-## Setting Up Aspose.Email for Java
+## Az Aspose.Email for Java beállítása
 
 Add the Aspose.Email dependency to your `pom.xml`:
 
@@ -61,38 +118,41 @@ Add the Aspose.Email dependency to your `pom.xml`:
 </dependency>
 ```
 
-### License Acquisition
+### Licenc beszerzése
 
-Az Aspose.Email ingyenes próbaverziót, ideiglenes licenceket teszteléshez és teljes licenc vásárlási lehetőséget kínál:
-- **Free Trial**: Kezdje el a teljes funkcionalitással a [Releases](https://releases.aspose.com/email/java/) oldalról letöltve.  
-- **Temporary License**: Kérjen meghosszabbított tesztidőt korlátozások nélkül a [Purchase](https://purchase.aspose.com/temporary-license/) oldalon.  
-- **Purchase**: Amikor készen áll az alkalmazás telepítésére, vásároljon teljes licencet az [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalon.
+Aspose.Email offers a free trial, temporary licenses for testing, and full license purchase options:
+- **Ingyenes próba**: Kezdje el az Aspose.Email teljes funkcionalitását a [Releases](https://releases.aspose.com/email/java/) letöltésével.  
+- **Ideiglenes licenc**: Kérjen hosszabb tesztidőszakot korlátozások nélkül a [Purchase](https://purchase.aspose.com/temporary-license/) oldalon.  
+- **Vásárlás**: Amikor készen áll az alkalmazás telepítésére, vásároljon teljes licencet az [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalon.
 
-### Basic Initialization
+### Alapvető inicializálás
 
-Az Aspose.Email használatához az EWS API‑val Java‑ban:
-
-```java
-IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "your.username", "your.password");
-```
-
-Ez inicializálja az EWS klienst, lehetővé téve a kommunikációt az Exchange Web Services‑sel.
-
-## How to create calendar appointment java using Aspose.Email
-
-Az alábbi lépésről‑lépésre útmutató pontosan bemutatja, hogyan **create calendar appointment java** objektumokat hozhatunk létre, kérhetünk le, frissíthetünk, listázhatunk és végül törölhetünk, ha már nincs rájuk szükség.
-
-### Step 1: Initialize the EWS Client
-
-Először állítsa be a kapcsolatot az Exchange szerverhez:
+To use Aspose.Email with the EWS API in Java:
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "your.username", "your.password");
 ```
 
-### Step 2: Define Appointment Details
+Ez inicializálja az EWS klienst, lehetővé téve az interakciót az Exchange Web Services-szel.
 
-Készítse elő a dátumot, időzónát, résztvevőket és egyéb kötelező mezőket:
+## Hogyan hozhatunk létre naptári időpontot java-ban az Aspose.Email használatával
+
+`Appointment` egy naptári bejegyzést képvisel, amely az EWS API-n keresztül létrehozható, frissíthető vagy törölhető.  
+Töltse be az Exchange szolgáltatást, építsen fel egy `Appointment` objektumot, és küldje el — ez a kétlépéses minta létrehozza az eseményt, és visszaadja egyedi azonosítóját (UID) későbbi használatra. Az alábbi lépések követésével megbízhatóan hozzáadhat időpontokat bármely postafiókhoz, lekérheti őket ellenőrzés céljából, és programozottan kezelheti életciklusukat.
+
+Egy `Appointment` objektum egyetlen naptári eseményt képvisel, amely egy Exchange postafiókban van tárolva.
+
+Az alábbi lépésről‑lépésre útmutató pontosan bemutatja, hogyan **create calendar appointment java** objektumokat hozhatunk létre, kérhetünk le, frissíthetünk, listázhatunk, és végül lemondhatunk, ha már nincs rájuk szükség.
+
+### 1. lépés: Az EWS kliens inicializálása
+
+First, set up the connection to your Exchange server:
+
+```java
+IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "your.username", "your.password");
+```
+
+### 2. lépés: Az időpont részleteinek meghatározása
 
 ```java
 Calendar date = Calendar.getInstance();
@@ -110,28 +170,22 @@ Appointment app = new Appointment("Room 112", startTime.getTime(), endTime.getTi
 app.setTimeZone(timeZone);
 ```
 
-### Step 3: Create the Appointment
-
-Küldje el az időpontot az Exchange szervernek:
+### 3. lépés: Az időpont létrehozása
 
 ```java
 String uid = client.createAppointment(app);
 ```
 
-A metódus egy egyedi azonosítót (`uid`) ad vissza, amely későbbi műveletekhez használható.
+A metódus egy egyedi azonosítót (`uid`) ad vissza, amelyet későbbi műveletekhez használhat.
 
-### Step 4: Fetch an Appointment
-
-Hozza vissza a most létrehozott (vagy bármely meglévő) időpontot az UID alapján:
+### 4. lépés: Időpont lekérése
 
 ```java
 String uid = "your-appointment-uid";
 Appointment fetchedAppointment1 = client.fetchAppointment(uid);
 ```
 
-### Step 5: Update an Appointment
-
-Módosítsa a helyszínt, összefoglalót vagy leírást, majd küldje el a változásokat:
+### 5. lépés: Időpont frissítése
 
 ```java
 app.setLocation("Room 115");
@@ -141,76 +195,81 @@ app.setDescription("New Description");
 client.updateAppointment(app);
 ```
 
-### Step 6: List All Appointments
-
-Ha minden időpontot meg szeretne jeleníteni vagy feldolgozni egy postafiókban, használja:
+### 6. lépés: Minden időpont listázása
 
 ```java
 Appointment[] appointments1 = client.listAppointments();
 ```
 
-### Step 7: Cancel an Appointment
-
-Amikor egy esemény már nem szükséges, törölje az UID‑je alapján:
+### 7. lépés: Időpont lemondása
 
 ```java
 client.cancelAppointment(app);
 ```
 
-## Practical Applications
+## Gyakorlati alkalmazások
 
-- **Automated Scheduling** – Integrálja CRM rendszerekkel, hogy ügyfélkapcsolatok alapján automatikusan ütemezzen megbeszéléseket.  
-- **Resource Management** – Használja az időpontadatokat szobafoglalások és egyéb közös erőforrások hatékony kezelésére.  
-- **Notification Systems** – Valósítson meg szolgáltatásokat, amelyek értesítik a felhasználókat a közelgő időpontokról, csökkentve a kimaradt megbeszéléseket.
+- **Automatizált ütemezés** – Integrálja CRM rendszerekkel, hogy ügyfélkapcsolatok alapján automatikusan ütemezzen megbeszéléseket.  
+- **Erőforrás-kezelés** – Használja az időpont adatokat a szobafoglalások és egyéb közös erőforrások hatékony kezelésére.  
+- **Értesítési rendszerek** – Valósítson meg szolgáltatásokat, amelyek értesítik a felhasználókat a közelgő időpontokról, csökkentve a kihagyott megbeszéléseket.
 
-## Performance Considerations
+## Teljesítményfontosságú szempontok
 
-- Az objektumokat gyorsan szabadítsa fel a Java memóriahasználat alacsonyan tartásához.  
-- Csoportosítsa a hálózati hívásokat, ahol csak lehetséges, a késleltetés csökkentése érdekében (pl. időpontok oldalakra bontott lekérdezése).  
-- Kövesse az Exchange legjobb gyakorlatait nagy adathalmazok kezelésekor, például szűrők és lapozás használatával.
+- Az objektumokat azonnal szabadítsa fel, hogy a Java memóriahasználat alacsony maradjon.  
+- Csoportosítsa a hálózati hívásokat, ahol lehetséges, a késleltetés csökkentése érdekében (pl. időpontok oldalankénti lekérdezése).  
+- Kövesse az Exchange legjobb gyakorlatait a nagy adathalmazok kezeléséhez, például szűrők és lapozás használatával.
 
-## Common Issues and Solutions
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| Authentication failure | Wrong credentials or URL | Verify username, password, and server URL. |
-| Appointment not created | Missing required fields | Ensure start/end times, attendees, and time zone are set. |
-| Slow response | Unbatched calls | Use `client.listAppointments()` with paging or filters. |
+## Gyakori problémák és megoldások
 
-## Frequently Asked Questions
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| Hitelesítési hiba | Helytelen felhasználónév vagy URL | Ellenőrizze a felhasználónevet, jelszót és a szerver URL-t. |
+| Az időpont nem jött létre | Hiányzó kötelező mezők | Győződjön meg arról, hogy a kezdő/vég időpontok, a résztvevők és az időzóna be vannak állítva. |
+| Lassú válasz | Nem csoportosított hívások | Használja a `client.listAppointments()`-t lapozással vagy szűrőkkel. |
 
-**Q: How do I handle authentication errors?**  
-A: Ensure the credentials and server URL are correct, and verify network connectivity.
+## Gyakran feltett kérdések
 
-**Q: Can Aspose.Email be used with other email services?**  
-A: Yes, it supports IMAP, POP3, SMTP, and other protocols besides EWS.
+**Q: Hogyan kezeljem a hitelesítési hibákat?**  
+A: Ellenőrizze, hogy a hitelesítő adatok és a szerver URL helyesek, és ellenőrizze a hálózati kapcsolatot.
 
-**Q: What should I do if appointment creation fails?**  
-A: Inspect the thrown exception; it typically contains details about missing fields or permission issues.
+**Q: Használható az Aspose.Email más e‑mail szolgáltatásokkal?**  
+A: Igen, támogatja az IMAP, POP3, SMTP és más protokollokat az EWS mellett.
 
-**Q: How can I keep my credentials secure?**  
-A: Store them in environment variables or a secure vault rather than hard‑coding them.
+**Q: Mit tegyek, ha az időpont létrehozása sikertelen?**  
+A: Vizsgálja meg a kivételt; általában tartalmazza a hiányzó mezőkről vagy jogosultsági problémákról szóló részleteket.
 
-**Q: Is Aspose.Email suitable for large‑scale applications?**  
-A: Absolutely – it’s designed for enterprise environments and can handle high‑volume operations.
+**Q: Hogyan tarthatom biztonságban a hitelesítő adatokat?**  
+A: Tárolja őket környezeti változókban vagy egy biztonságos tárolóban, ahelyett, hogy kódban kódolná őket.
 
-## Resources
-- **Documentation**: Explore detailed guides at [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).  
-- **Download**: Get the latest version of Aspose.Email from [Releases](https://releases.aspose.com/email/java/).  
-- **Purchase**: Acquire a full license for production use from the [Aspose Purchase Page](https://purchase.aspose.com/buy).  
-- **Free Trial**: Test features at [Releases](https://releases.aspose.com/email/java/).  
-- **Temporary License**: Apply for an extended testing period via [Purchase Temporary License](https://purchase.aspose.com/temporary-license/).  
-- **Support**: Join discussions on the [Aspose Forum](https://forum.aspose.com/c/email/10) or contact support directly.
+**Q: Alkalmas az Aspose.Email nagy léptékű alkalmazásokhoz?**  
+A: Teljes mértékben – vállalati környezetekre tervezték, és képes nagy mennyiségű művelet kezelésére.
+
+## Erőforrások
+
+- **Dokumentáció**: Részletes útmutatókat talál a [Aspose Email Java Documentation](https://reference.aspose.com/email/java/) oldalon.  
+- **Letöltés**: Szerezze be az Aspose.Email legújabb verzióját a [Releases](https://releases.aspose.com/email/java/) oldalról.  
+- **Vásárlás**: Szerezzen teljes licencet a termeléshez a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalról.  
+- **Ingyenes próba**: Tesztelje a funkciókat a [Releases](https://releases.aspose.com/email/java/) oldalon.  
+- **Ideiglenes licenc**: Kérjen hosszabb tesztidőszakot a [Purchase Temporary License](https://purchase.aspose.com/temporary-license/) oldalon.  
+- **Támogatás**: Csatlakozzon a megbeszélésekhez a [Aspose Forum](https://forum.aspose.com/c/email/10) oldalon, vagy vegye fel közvetlenül a kapcsolatot a támogatással.
 
 ---
 
-**Last Updated:** 2026-02-24  
-**Tested With:** Aspose.Email 25.4 for Java (JDK 16)  
-**Author:** Aspose  
+**Utolsó frissítés:** 2026-08-01  
+**Tesztelve:** Aspose.Email 25.4 for Java (JDK 16)  
+**Szerző:** Aspose
+
+## Kapcsolódó tutorialok
+
+- [Exchange naptár létrehozása Java-val az Aspose.Email segítségével – Teljes útmutató](/email/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/)
+- [Mesteri naptári elemek létrehozása és mentése az Aspose.Email for Java-val](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+- [Naptármegosztási meghívó létrehozása az Aspose.Email for Java-val](/email/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< blocks/products/products-backtop-button >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

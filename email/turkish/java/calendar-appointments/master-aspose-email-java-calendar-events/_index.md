@@ -1,13 +1,71 @@
 ---
-date: '2026-02-24'
-description: Aspose.Email for Java ile takvimi PST'ye nasıl dışa aktaracağınızı, katılımcı
-  eklemeyi, başlangıç ve bitiş tarihlerini ayarlamayı ve randevuları verimli bir şekilde
-  yönetmeyi öğrenin.
+date: '2026-08-01'
+description: Aspose.Email for Java ile takvimi PST'ye nasıl dışa aktaracağınızı öğrenin;
+  katılımcı ekleme, başlangıç ve bitiş tarihlerini ayarlama ve randevuları verimli
+  bir şekilde yönetme konularını içerir.
 keywords:
-- Aspose.Email Java Calendar Events
-- Create Calendar Events in Java
-- Manage Calendar Appointments with Java
 - export calendar to pst
+- export recurring appointments
+- Aspose.Email Java Calendar Events
+lastmod: '2026-08-01'
+og_description: Aspose.Email for Java kullanarak takvimi PST'ye dışa aktarın. Randevu
+  oluşturma, katılımcı ekleme ve Outlook PST dosyaları üretme adımlarını adım adım
+  öğrenin.
+og_image_alt: 'Developer guide: Export calendar to PST using Aspose.Email for Java'
+og_title: Takvimi PST'ye Dışa Aktarma – Aspose.Email for Java ile Tam Kılavuz
+schemas:
+- author: Aspose
+  dateModified: '2026-08-01'
+  description: Learn how to export calendar to PST with Aspose.Email for Java, including
+    how to add attendees, set start and end dates, and manage appointments efficiently.
+  headline: Export calendar to PST with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to export calendar to PST with Aspose.Email for Java, including
+    how to add attendees, set start and end dates, and manage appointments efficiently.
+  name: Export calendar to PST with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial**: Visit the [Aspose download page](https://releases.aspose.com/email/java/)
+      for a temporary license.'
+    text: '**Free Trial**: Visit the [Aspose download page](https://releases.aspose.com/email/java/)
+      for a temporary license.'
+  - name: '**Temporary License**: Apply via the [purchase page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License**: Apply via the [purchase page](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase License**: Consider purchasing from [Aspose''s purchase portal](https://purchase.aspose.com/buy)
+      for long‑term use.'
+    text: '**Purchase License**: Consider purchasing from [Aspose''s purchase portal](https://purchase.aspose.com/buy)
+      for long‑term use.'
+  - name: '**Business Scheduling** – Automate internal meeting creation and distribution.'
+    text: '**Business Scheduling** – Automate internal meeting creation and distribution.'
+  - name: '**Event Management** – Track conferences, workshops, and participant lists.'
+    text: '**Event Management** – Track conferences, workshops, and participant lists.'
+  - name: '**CRM Integration** – Sync appointments with customer relationship tools.'
+    text: '**CRM Integration** – Sync appointments with customer relationship tools.'
+  - name: '**Project Planning** – Store project milestones as calendar items.'
+    text: '**Project Planning** – Store project milestones as calendar items.'
+  - name: '**Remote Team Collaboration** – Generate PST files for offline sharing.'
+    text: '**Remote Team Collaboration** – Generate PST files for offline sharing.'
+  type: HowTo
+- questions:
+  - answer: Add the Maven dependency shown above, obtain a license, and follow the
+      steps in this guide to create and export calendar events.
+    question: How do I get started with Aspose.Email for Java?
+  - answer: Yes, change the `pstFilePath` variable in `createPSTWithCalendarEvents()`
+      to any valid path on your system.
+    question: Can I customize the PST file name and location?
+  - answer: Absolutely – `MapiCalendar` exposes a `RecurrencePattern` property that
+      you can configure before saving.
+    question: Is it possible to add recurrence patterns to appointments?
+  - answer: Yes, you can export to iCalendar (`.ics`) and other formats using the
+      appropriate API methods.
+    question: Does Aspose.Email support other calendar formats besides PST?
+  - answer: With the Unicode format (`FileFormatVersion.Unicode`), PST files can grow
+      up to 2 TB, limited only by available disk space.
+    question: What is the maximum size of a PST file I can create?
+  type: FAQPage
+tags:
+- export calendar to pst
+- Aspose.Email
+- Java calendar appointments
 title: Aspose.Email for Java ile takvimi PST'ye dışa aktar
 url: /tr/java/calendar-appointments/master-aspose-email-java-calendar-events/
 weight: 1
@@ -18,33 +76,41 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Export calendar to PST with Aspose.Email for Java
+# Aspose.Email for Java ile takvimi PST'ye dışa aktar
 
-Outlook ile takvim verilerini paylaşması gereken bir Java uygulaması geliştiriyorsanız, genellikle **takvimi PST’ye dışa aktarmanız** gerekir. Bu öğreticide, basit bir randevu oluşturma, katılımcı ekleme ve son olarak olayları bir PST dosyasına yazma adımlarını Aspose.Email for Java ile adım adım inceleyeceğiz.
+Java uygulaması geliştiriyor ve Outlook ile takvim verilerini paylaşmanız gerekiyorsa, genellikle **takvimi PST'ye dışa aktarmanız** gerekir. Bu öğreticide ihtiyacınız olan her şeyi adım adım göstereceğiz—basit bir randevu oluşturulmasından katılımcı eklemeye ve sonunda olayları bir PST dosyasına yazmaya kadar, tümü Aspose.Email for Java ile. Sonunda Windows, Linux ve macOS'ta çalışan üretim‑hazır bir çözümünüz olacak.
 
-## Quick Answers
-- **What is the primary goal?** Export calendar events to a PST file.  
-- **Which library is required?** Aspose.Email for Java (v25.4+).  
-- **Do I need a license?** Yes, a valid Aspose.Email license removes evaluation limits.  
-- **Can I add attendees?** Absolutely – use `MapiRecipientCollection`.  
-- **What Java version is supported?** JDK 16 or higher.
+## Hızlı Yanıtlar
+- **Birincil hedef nedir?** Takvim olaylarını bir PST dosyasına dışa aktarmak.  
+- **Hangi kütüphane gereklidir?** Aspose.Email for Java (v25.4+).  
+- **Lisans gereklimi?** Evet, geçerli bir Aspose.Email lisansı değerlendirme sınırlamalarını kaldırır.  
+- **Katılımcı ekleyebilir miyim?** Kesinlikle – `MapiRecipientCollection` kullanın.  
+- **Hangi Java sürümü destekleniyor?** JDK 16 veya üzeri.
 
-## What is **export calendar to pst**?
-Exporting a calendar to PST means converting in‑memory `MapiCalendar` objects into a Microsoft Outlook Personal Storage Table (PST). The resulting file can be opened directly in Outlook, shared with colleagues, or imported into any system that understands the PST format.
+## **export calendar to pst** nedir?
+`MapiCalendar`, Aspose.Email'in Outlook takvim öğesini modelleyen sınıfıdır; konu, konum ve zamanlama ayrıntılarını içerir.
 
-## Why use Aspose.Email for Java to export calendar to PST?
-- **Full MAPI support** – create, modify, and save appointments without needing Outlook installed.  
-- **Cross‑platform** – works on Windows, Linux, and macOS.  
-- **Rich API** – manage attendees, recurrence, reminders, and more.  
-- **Performance‑optimized** – handle large volumes of events with low memory footprint.
+Takvimi PST'ye dışa aktarmak, bellekteki `MapiCalendar` nesnelerini Microsoft Outlook Personal Storage Table (PST) formatına dönüştürmek anlamına gelir. Oluşturulan PST dosyası doğrudan Outlook'ta açılabilir, meslektaşlarla paylaşılabilir veya PST formatını anlayan herhangi bir sisteme içe aktarılabilir; katılımcılar, yinelemeler ve hatırlatıcılar gibi tüm etkinlik ayrıntılarını korur.
 
-## Prerequisites
-- **Libraries & Dependencies**: Aspose.Email for Java version 25.4 or later.  
-- **Environment**: JDK 16 or higher, Maven for dependency management.  
-- **Knowledge**: Basic Java programming and familiarity with Maven.
+## Aspose.Email for Java ile takvimi PST'ye dışa aktarmak için neden kullanmalı?
+Outlook kurmadan tamamen uyumlu bir PST dosyası oluşturabilirsiniz. Aspose.Email **tam MAPI desteği** sunar, **tüm büyük işletim sistemlerinde** çalışır ve Unicode PST formatında **2 TB'ye kadar** veri işleyebilir—kurumsal ölçekli arşivler için yeterlidir. API ayrıca sadece birkaç metod çağrısıyla katılımcıları, yineleme desenlerini, hatırlatıcıları ve özel özellikleri yönetmenizi sağlar, geliştirme çabasını büyük ölçüde azaltır.
 
-## How to set up Aspose.Email for Java
-Add the Aspose.Email dependency to your `pom.xml`:
+## Önkoşullar
+- **Kütüphaneler ve Bağımlılıklar**: Aspose.Email for Java sürüm 25.4 veya üzeri.  
+- **Ortam**: JDK 16 veya üzeri, bağımlılık yönetimi için Maven.  
+- **Bilgi**: Temel Java programlama ve Maven'a aşinalık.
+
+## Aspose.Email for Java nasıl kurulur
+`pom.xml` dosyanıza Aspose.Email bağımlılığını ekleyin ve Maven projenizi yenileyin. Bu tek adım, tüm MAPI API'sini sınıf yolunuzda kullanılabilir hâle getirir.
+
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
 ```xml
 <dependency>
@@ -55,19 +121,30 @@ Add the Aspose.Email dependency to your `pom.xml`:
 </dependency>
 ```
 
-### License Acquisition
-Unlock full functionality of Aspose.Email without evaluation limitations by acquiring a license:
+### Lisans Edinme
+Değerlendirme sınırlamaları olmadan Aspose.Email'in tam işlevselliğini açmak için bir lisans edinin:
 
-1. **Free Trial**: Visit the [Aspose download page](https://releases.aspose.com/email/java/) for a temporary license.  
-2. **Temporary License**: Apply via the [purchase page](https://purchase.aspose.com/temporary-license/).  
-3. **Purchase License**: Consider purchasing from [Aspose's purchase portal](https://purchase.aspose.com/buy) for long‑term use.
+1. **Free Trial**: Geçici bir lisans için [Aspose indirme sayfasını](https://releases.aspose.com/email/java/) ziyaret edin.  
+2. **Temporary License**: [satın alma sayfası](https://purchase.aspose.com/temporary-license/) üzerinden başvurun.  
+3. **Purchase License**: Uzun vadeli kullanım için [Aspose satın alma portalından](https://purchase.aspose.com/buy) satın almayı düşünün.
 
-Once you have your license, initialize it in your application to enable all features.
+Lisansınızı aldıktan sonra, tüm özellikleri etkinleştirmek için uygulamanızda başlatın.
 
-## How to **create appointment** (Create Calendar Event Java)
+## **create appointment** (Create Calendar Event Java) nasıl oluşturulur
+`MapiCalendar` nesnesini yükleyin, temel özelliklerini ayarlayın ve daha fazla işleme hazır olarak geri döndürün. Bu yöntem, bir konu, konum, açıklama ve tanımladığınız **java calendar start date** / **java calendar end date** ile bir takvim girdisi oluşturur.
 
-### Step 1: Define start and end dates (java calendar start date / java calendar end date)
-The following method shows how to set the start and end dates for an appointment and return a `MapiCalendar` object:
+```java
+public static MapiCalendar createAppointment(String subject, String location,
+                                             String description, Calendar start, Calendar end) {
+    MapiCalendar appointment = new MapiCalendar();
+    appointment.setSubject(subject);
+    appointment.setLocation(location);
+    appointment.setBody(description);
+    appointment.setStartDate(start);
+    appointment.setEndDate(end);
+    return appointment;
+}
+```
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -92,12 +169,23 @@ public MapiCalendar createAppointment() {
 }
 ```
 
-*Explanation*: This snippet creates a `MapiCalendar` with a specific location, subject, description, and the **java calendar start date** / **java calendar end date** you defined.
+*Açıklama*: `MapiCalendar` sınıfı, Aspose.Email'in Outlook takvim öğesinin temsilidir. Temel alanları ayarladıktan sonra kaydetmeden önce yineleme, hatırlatıcılar ve kategorileri de yapılandırabilirsiniz.
 
-## How to **add attendees** (java add meeting attendees)
+## **add attendees** nasıl eklenir (java toplantı katılımcılarını ekleme)
+`MapiRecipientCollection` oluşturun, her katılımcı ile doldurun ve toplantıya ekleyin. Bu, PST açıldığında her katılımcının uygun bir davetiye almasını sağlar.
 
-### Step 2: Build the attendee list
-Use `MapiRecipientCollection` to specify who should receive the meeting invitation:
+`MapiRecipientCollection`, toplantı katılımcılarını temsil eden `MapiRecipient` nesnelerini tutan bir koleksiyon sınıfıdır. `MapiRecipient`, e-posta adresi ve alıcı türü gibi özelliklere sahip bireysel bir katılımcıyı temsil eder.
+
+```java
+public static MapiRecipientCollection buildAttendees(List<String> emails) {
+    MapiRecipientCollection attendees = new MapiRecipientCollection();
+    for (String email : emails) {
+        MapiRecipient recipient = new MapiRecipient(email, email, MapiRecipientType.MAPI_TO);
+        attendees.add(recipient);
+    }
+    return attendees;
+}
+```
 
 ```java
 import com.aspose.email.MapiCalendar;
@@ -124,12 +212,27 @@ public MapiCalendar createMeetingWithAttendees(Date startDate, Date endDate) {
 }
 ```
 
-*Explanation*: This code creates a meeting, sets the organizer, and attaches the **java add meeting attendees** list so everyone receives a proper invitation.
+*Açıklama*: `MapiRecipient`, tek bir toplantı katılımcısını tanımlar. Türü `MAPI_TO` olarak ayarlamak adresi birincil katılımcı olarak işaretler, `MAPI_CC` veya `MAPI_BCC` ise isteğe bağlı katılımcılar için kullanılabilir.
 
-## How to **export calendar to pst** (Create PST with calendar events)
+## **export calendar to pst** nasıl dışa aktarılır (Takvim olaylarıyla PST oluşturma)
+Unicode PST dosyası oluşturun, bir "Calendar" klasörü ekleyin ve önceden oluşturulmuş `MapiCalendar` nesnelerini ekleyin. PST daha sonra Outlook'ta açılabilir veya son kullanıcılara dağıtılabilir.
 
-### Step 3: Create a PST file and add the events
-The method below demonstrates creating a Unicode PST file and storing both the simple appointment and the meeting with attendees:
+`PersonalStorage`, PST dosyalarını oluşturmak, açmak ve manipüle etmek için kullanılan Aspose.Email sınıfıdır.
+
+```java
+public static void createPSTWithCalendarEvents(String pstFilePath,
+                                                List<MapiCalendar> events) throws Exception {
+    // Create a new Unicode PST (supports up to 2 TB)
+    PersonalStorage pst = PersonalStorage.create(pstFilePath, FileFormatVersion.Unicode);
+    // Add the default Calendar folder
+    FolderInfo calendarFolder = pst.getRootFolder().addSubFolder("Calendar", 
+                                   StandardIpmFolder.Calendar);
+    // Insert each event
+    for (MapiCalendar event : events) {
+        calendarFolder.addMapiMessageItem(event);
+    }
+}
+```
 
 ```java
 import com.aspose.email.FileFormatVersion;
@@ -153,54 +256,61 @@ public void createPSTWithCalendarEvents() {
 }
 ```
 
-*Explanation*: This snippet **exports calendar to PST** by creating a PST container, adding a predefined "Calendar" folder, and inserting the previously built `MapiCalendar` objects.
+*Açıklama*: `PersonalStorage`, PST manipülasyonu için giriş noktasıdır. Unicode formatını kullanarak eski PST sürümlerinin 2 GB sınırlamasından kaçınır ve büyük arşivlerde daha hızlı I/O avantajı elde edersiniz.
 
-## Practical Applications
-1. **Business Scheduling** – Automate internal meeting creation and distribution.  
-2. **Event Management** – Track conferences, workshops, and participant lists.  
-3. **CRM Integration** – Sync appointments with customer relationship tools.  
-4. **Project Planning** – Store project milestones as calendar items.  
-5. **Remote Team Collaboration** – Generate PST files for offline sharing.
+## Pratik Uygulamalar
+1. **Business Scheduling** – İç toplantı oluşturma ve dağıtımını otomatikleştirin.  
+2. **Event Management** – Konferansları, atölyeleri ve katılımcı listelerini izleyin.  
+3. **CRM Integration** – Randevuları müşteri ilişkileri araçlarıyla senkronize edin.  
+4. **Project Planning** – Proje kilometre taşlarını takvim öğeleri olarak saklayın.  
+5. **Remote Team Collaboration** – Çevrim dışı paylaşım için PST dosyaları oluşturun.
 
-## Performance Considerations
-- **Dispose objects** you no longer need to free memory.  
-- **Choose efficient collections** for large attendee lists.  
-- **Cache frequently accessed events** if you query the PST repeatedly.
+## Performans Düşünceleri
+- **Dispose objects**: Artık ihtiyaç duymadığınız nesneleri hemen serbest bırakarak belleği temizleyin.  
+- **Use efficient collections**: Binlerce katılımcı ile çalışırken (ör. katılımcı listeleri için `ArrayList`) verimli koleksiyonlar kullanın.  
+- **Cache frequently accessed events**: PST'yi sık sık sorguluyorsanız, disk I/O'yu azaltmak için sık erişilen olayları önbelleğe alın.
 
-## Common Issues and Solutions
-| Issue | Solution |
+## Yaygın Sorunlar ve Çözümler
+| Sorun | Çözüm |
 |-------|----------|
-| **PST file not created** | Verify write permissions on the target directory and ensure the folder path exists. |
-| **Attendees not receiving invitations** | Confirm that each `MapiRecipient` uses `MapiRecipientType.MAPI_TO` and that the organizer email is valid. |
-| **Date mismatch** | Use `Calendar` consistently for start/end dates; avoid mixing `java.util.Date` with other date libraries without conversion. |
+| **PST dosyası oluşturulmadı** | Hedef dizinde yazma izinlerini doğrulayın ve klasör yolunun mevcut olduğundan emin olun. |
+| **Katılımcılar davetiye almıyor** | `MapiRecipient`'ın her birinin `MapiRecipientType.MAPI_TO` kullandığını ve organizatör e-posta adresinin geçerli olduğunu doğrulayın. |
+| **Tarih uyumsuzluğu** | `Calendar`'ı başlangıç/bitiş tarihleri için tutarlı şekilde kullanın; `java.util.Date` ile diğer tarih kütüphanelerini dönüşüm yapmadan karıştırmayın. |
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: How do I get started with Aspose.Email for Java?**  
-A: Add the Maven dependency shown above, obtain a license, and follow the steps in this guide to create and export calendar events.
+**Q: Aspose.Email for Java ile nasıl başlayabilirim?**  
+A: Yukarıda gösterilen Maven bağımlılığını ekleyin, bir lisans edinin ve takvim olaylarını oluşturup dışa aktarmak için bu kılavuzdaki adımları izleyin.
 
-**Q: Can I customize the PST file name and location?**  
-A: Yes, change the `pstFilePath` variable in `createPSTWithCalendarEvents()` to any valid path on your system.
+**Q: PST dosyası adı ve konumunu özelleştirebilir miyim?**  
+A: Evet, sisteminizde geçerli herhangi bir yola `createPSTWithCalendarEvents()` içindeki `pstFilePath` değişkenini değiştirerek ayarlayabilirsiniz.
 
-**Q: Is it possible to add recurrence patterns to appointments?**  
-A: Absolutely – `MapiCalendar` exposes recurrence properties such as `RecurrencePattern` that you can configure before saving.
+**Q: Randevulara yineleme desenleri eklemek mümkün mü?**  
+A: Kesinlikle – `MapiCalendar`, kaydetmeden önce yapılandırabileceğiniz bir `RecurrencePattern` özelliği sunar.
 
-**Q: Does Aspose.Email support other calendar formats besides PST?**  
-A: Yes, you can export to iCalendar (`.ics`) and other formats using the appropriate API methods.
+**Q: Aspose.Email PST dışındaki diğer takvim formatlarını destekliyor mu?**  
+A: Evet, uygun API metodlarını kullanarak iCalendar (`.ics`) ve diğer formatlara dışa aktarabilirsiniz.
 
-**Q: What is the maximum size of a PST file I can create?**  
-A: With the Unicode format (`FileFormatVersion.Unicode`), PST files can grow up to 2 TB, limited only by available disk space.
+**Q: Oluşturabileceğim PST dosyasının maksimum boyutu nedir?**  
+A: Unicode formatı (`FileFormatVersion.Unicode`) ile PST dosyaları, yalnızca mevcut disk alanı ile sınırlı olmak kaydıyla 2 TB'ye kadar büyüyebilir.
 
 ---
 
-**Last Updated:** 2026-02-24  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-08-01  
+**Test Edilen Versiyon:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Yazar:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## İlgili Öğreticiler
+
+- [Aspose.Email for Java'ı Ustalaştırın: Outlook PST Dosyalarını Verimli Yönetme](/email/java/outlook-pst-ost-operations/aspose-email-java-manage-outlook-pst-files/)
+- [Aspose.Email for Java ile Takvim Öğeleri Oluşturma ve Kaydetme](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+- [Aspose.Email kullanarak Java'da bir ICS Dosyasından Birden Çok Takvim Etkinliğini Okuma](/email/java/calendar-appointments/read-multiple-ics-events-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

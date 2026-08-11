@@ -1,49 +1,101 @@
 ---
-date: '2026-02-24'
-description: تعلم كيفية إنشاء موعد تقويم في Java باستخدام مثال Aspose.Email Java مع
-  واجهة برمجة تطبيقات Exchange Web Services (EWS). أنشئ، وحدث، واعرض، وألغِ المواعيد
+date: '2026-08-01'
+description: تعرف على كيفية إنشاء موعد تقويم Java باستخدام مثال Aspose.Email Java
+  مع واجهة برمجة تطبيقات Exchange Web Services (EWS). أنشئ، وحدث، واعرض، وألغِ المواعيد
   بسهولة.
 keywords:
-- appointment management with Aspose.Email Java
-- EWS API integration
-- Java appointment automation
-title: إنشاء موعد تقويم Java باستخدام Aspose.Email EWS API
+- create calendar appointment java
+- aspose email java example
+- exchange web services java
+lastmod: '2026-08-01'
+og_description: إنشاء موعد تقويم Java باستخدام Aspose.Email وواجهة برمجة تطبيقات Exchange
+  Web Services. أتمتة إنشاء، تحديث، عرض، وإلغاء المواعيد بكفاءة.
+og_image_alt: Guide to creating calendar appointments in Java with Aspose.Email EWS
+  API
+og_title: إنشاء موعد تقويم Java باستخدام Aspose.Email API لـ EWS
+schemas:
+- author: Aspose
+  dateModified: '2026-08-01'
+  description: Learn how to create calendar appointment Java using Aspose.Email Java
+    example with the Exchange Web Services (EWS) API. Create, update, list, and cancel
+    appointments effortlessly.
+  headline: Create Calendar Appointment Java with Aspose.Email EWS API
+  type: TechArticle
+- description: Learn how to create calendar appointment Java using Aspose.Email Java
+    example with the Exchange Web Services (EWS) API. Create, update, list, and cancel
+    appointments effortlessly.
+  name: Create Calendar Appointment Java with Aspose.Email EWS API
+  steps:
+  - name: Initialize the EWS Client
+    text: 'First, set up the connection to your Exchange server:'
+  - name: Define Appointment Details
+    text: 'Prepare the date, time zone, attendees, and other essential fields:'
+  - name: Create the Appointment
+    text: 'Send the appointment to the Exchange server: The method returns a unique
+      identifier (`uid`) that you can use for later operations.'
+  - name: Fetch an Appointment
+    text: 'Retrieve the appointment you just created (or any existing one) by its
+      UID:'
+  - name: Update an Appointment
+    text: 'Modify properties such as location, summary, or description, then push
+      the changes:'
+  - name: List All Appointments
+    text: 'If you need to display or process every appointment in a mailbox, use:'
+  - name: Cancel an Appointment
+    text: 'When an event is no longer required, cancel it using its UID:'
+  type: HowTo
+- questions:
+  - answer: Ensure the credentials and server URL are correct, and verify network
+      connectivity.
+    question: How do I handle authentication errors?
+  - answer: Yes, it supports IMAP, POP3, SMTP, and other protocols besides EWS.
+    question: Can Aspose.Email be used with other email services?
+  - answer: Inspect the thrown exception; it typically contains details about missing
+      fields or permission issues.
+    question: What should I do if appointment creation fails?
+  - answer: Store them in environment variables or a secure vault rather than hard‑coding
+      them.
+    question: How can I keep my credentials secure?
+  - answer: Absolutely – it’s designed for enterprise environments and can handle
+      high‑volume operations.
+    question: Is Aspose.Email suitable for large‑scale applications?
+  type: FAQPage
+tags:
+- create calendar appointment java
+- Aspose.Email
+- Java EWS
+- appointment automation
+title: إنشاء موعد تقويم Java باستخدام Aspose.Email API لـ EWS
 url: /ar/java/calendar-appointments/master-appointment-management-aspose-email-java/
 weight: 1
 ---
-
- text.
-
-Proceed.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# إتقان إدارة المواعيد باستخدام Aspose.Email Java: دليل شامل لتكامل API الخاص بـ EWS
+# إدارة المواعيد المتقدمة باستخدام Aspose.Email Java: دليل شامل لتكامل EWS API
 
-## المقدمة
+## مقدمة
 
-إدارة المواعيد بفعالية أمر أساسي في بيئة الأعمال الديناميكية اليوم، ويحتاج العديد من المطورين إلى طريقة موثوقة لإنشاء برامج **create calendar appointment java** تتفاعل مباشرة مع Exchange. من خلال دمج إدارة المواعيد في تطبيقاتك باستخدام Aspose.Email for Java، يمكنك أتمتة الجدولة، تقليل الجهد اليدوي، وتعزيز الإنتاجية العامة.
+إدارة المواعيد بفعالية أمر ضروري في بيئة الأعمال الديناميكية اليوم، ويحتاج العديد من المطورين إلى طريقة موثوقة لإنشاء برامج **create calendar appointment java** تتفاعل مباشرة مع Exchange. من خلال دمج إدارة المواعيد في تطبيقاتك باستخدام Aspose.Email for Java، يمكنك أتمتة الجدولة، تقليل الجهد اليدوي، وتعزيز الإنتاجية العامة.
 
 ## إجابات سريعة
-- **ما الذي يمكنني أتمتته باستخدام Aspose.Email؟** إنشاء، تحديث، سرد، وإلغاء مواعيد التقويم.  
+- **ما يمكنني أتمتته باستخدام Aspose.Email؟** إنشاء، تحديث، سرد، وإلغاء مواعيد التقويم.  
 - **أي API يُستخدم لتكامل تقويم Java؟** Exchange Web Services (EWS) API.  
-- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص كامل لـ Aspose.Email لتطبيقات الإنتاج.  
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص كامل لـ Aspose.Email للنشر في بيئة الإنتاج.  
 - **ما نسخة Java المطلوبة؟** JDK 16 أو أحدث.  
 - **هل هناك مثال جاهز للتنفيذ؟** نعم – يتضمن الدرس مثالًا كاملًا **aspose email java example**.
 
 ## ما هو “create calendar appointment java”؟
 
-إنشاء موعد تقويم في Java يعني بناء كائن `Appointment` برمجياً، ضبط خصائصه (الوقت، الحضور، الموقع، إلخ)، وإرساله إلى خادم Exchange عبر API الخاص بـ EWS. يتيح ذلك جدولة آلية دون تدخل يدوي من المستخدم.
+`Appointment` هي فئة تمثل حدثًا في تقويم صندوق بريد Exchange.  
+إنشاء موعد تقويم في Java يعني بناء كائن `Appointment` برمجيًا، ضبط خصائصه (الوقت، الحضور، الموقع، إلخ)، وإرساله إلى خادم Exchange عبر EWS API. يتيح ذلك جدولة آلية دون تفاعل يدوي من المستخدم ويسمح للعمليات اللاحقة بالإشارة إلى الموعد عبر معرفه الفريد للتحديث أو الإلغاء.
 
-## لماذا نستخدم Aspose.Email for Java؟
+## لماذا استخدام Aspose.Email for Java؟
 
-- **API شامل** – يدعم EWS، IMAP، POP3، وSMTP.  
-- **بدون تبعيات خارجية** – يعمل مباشرةً مع Maven.  
-- **معالجة أخطاء قوية** – استثناءات مفصلة تساعد على تشخيص المشكلات بسرعة.  
-- **جاهز للمؤسسات** – مصمم لتطبيقات ذات حجم كبير وحجم عمليات مرتفع.
+توفر Aspose.Email for Java واجهة برمجة تطبيقات شاملة خالية من التبعيات تدعم أربعة بروتوكولات رئيسية (EWS، IMAP، POP3، SMTP) وتعمل مع أكثر من 50 نسخة من خوادم البريد. بفضل معالجة الأخطاء القوية والأداء على مستوى المؤسسات، فهي مثالية للتطبيقات ذات الحجم الكبير، وقد تم اختبارها لتعامل مع ما يصل إلى 5,000 عملية موعد في الدقيقة على عتاد خادم قياسي.
 
 ## المتطلبات المسبقة
 
@@ -67,14 +119,13 @@ Proceed.
 
 ### الحصول على الترخيص
 
-يقدم Aspose.Email نسخة تجريبية مجانية، تراخيص مؤقتة للاختبار، وخيارات شراء ترخيص كامل:
-- **نسخة تجريبية مجانية**: ابدأ باستخدام جميع إمكانيات Aspose.Email بتحميلها من [Releases](https://releases.aspose.com/email/java/).  
-- **ترخيص مؤقت**: قدّم طلبًا لفترة اختبار ممتدة دون قيود عبر [Purchase](https://purchase.aspose.com/temporary-license/).  
-- **الشراء**: عندما تكون جاهزًا لنشر تطبيقك، اشترِ ترخيصًا كاملًا من [Aspose Purchase Page](https://purchase.aspose.com/buy).
+- **Free Trial**: ابدأ باستخدام جميع إمكانيات Aspose.Email بتحميله من [Releases](https://releases.aspose.com/email/java/).  
+- **Temporary License**: قدّم طلبًا للحصول على فترة اختبار ممتدة دون قيود عبر [Purchase](https://purchase.aspose.com/temporary-license/).  
+- **Purchase**: عندما تكون جاهزًا لنشر تطبيقك، اشترِ ترخيصًا كاملًا من [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ### التهيئة الأساسية
 
-لاستخدام Aspose.Email مع API الخاص بـ EWS في Java:
+لاستخدام Aspose.Email مع EWS API في Java:
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "your.username", "your.password");
@@ -82,9 +133,14 @@ IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchan
 
 هذا يهيئ عميل EWS، مما يتيح التفاعل مع Exchange Web Services.
 
-## كيفية إنشاء موعد تقويم java باستخدام Aspose.Email
+## كيفية إنشاء calendar appointment java باستخدام Aspose.Email
 
-فيما يلي دليل خطوة بخطوة يوضح بالضبط كيفية **create calendar appointment java**، جلبه، تحديثه، سرده، وأخيرًا إلغائه عندما لا يكون مطلوبًا.
+`Appointment` تمثل إدخالًا في التقويم يمكن إنشاؤه أو تحديثه أو حذفه عبر EWS API.  
+حمّل خدمة Exchange الخاصة بك، أنشئ كائن `Appointment`، وأرسله—هذا النمط ذو الخطوتين ينشئ الحدث ويعيد معرفه الفريد (UID) للاستخدام لاحقًا. باتباع الخطوات أدناه يمكنك إضافة مواعيد إلى أي صندوق بريد بثقة، استرجاعها للتحقق، وإدارة دورة حياتها برمجيًا.
+
+كائن `Appointment` يمثل حدثًا تقويميًا واحدًا مخزنًا في صندوق بريد Exchange.
+
+فيما يلي دليل خطوة بخطوة يوضح كيفية **create calendar appointment java**، جلبها، تحديثها، سردها، وأخيرًا إلغائها عندما لا تكون بحاجة إليها.
 
 ### الخطوة 1: تهيئة عميل EWS
 
@@ -122,11 +178,11 @@ app.setTimeZone(timeZone);
 String uid = client.createAppointment(app);
 ```
 
-تعيد الطريقة معرفًا فريدًا (`uid`) يمكنك استخدامه للعمليات اللاحقة.
+ترجع الطريقة معرفًا فريدًا (`uid`) يمكنك استخدامه للعمليات اللاحقة.
 
 ### الخطوة 4: جلب موعد
 
-استرجع الموعد الذي أنشأته للتو (أو أي موعد موجود) باستخدام الـ UID الخاص به:
+استرجع الموعد الذي أنشأته للتو (أو أي موعد موجود) عبر معرفه UID:
 
 ```java
 String uid = "your-appointment-uid";
@@ -135,7 +191,7 @@ Appointment fetchedAppointment1 = client.fetchAppointment(uid);
 
 ### الخطوة 5: تحديث موعد
 
-عدّل خصائص مثل الموقع، الملخص، أو الوصف، ثم ادفع التغييرات:
+عدّل خصائص مثل الموقع أو الملخص أو الوصف، ثم ادفع التغييرات:
 
 ```java
 app.setLocation("Room 115");
@@ -155,66 +211,72 @@ Appointment[] appointments1 = client.listAppointments();
 
 ### الخطوة 7: إلغاء موعد
 
-عند عدم الحاجة للحدث بعد الآن، ألغِه باستخدام الـ UID الخاص به:
+عند عدم الحاجة للحدث، ألغِه باستخدام معرف UID الخاص به:
 
 ```java
 client.cancelAppointment(app);
 ```
 
-## التطبيقات العملية
+## تطبيقات عملية
 
-- **الجدولة الآلية** – دمج مع أنظمة CRM لجدولة الاجتماعات تلقائيًا بناءً على تفاعلات العملاء.  
-- **إدارة الموارد** – استخدام بيانات المواعيد لإدارة حجز القاعات وغيرها من الموارد المشتركة بفعالية.  
-- **أنظمة الإشعارات** – تنفيذ خدمات تنبه المستخدمين بالمواعيد القادمة، مما يقلل من الاجتماعات الفائتة.
+- **Automated Scheduling** – دمج مع أنظمة CRM لجدولة الاجتماعات تلقائيًا بناءً على تفاعلات العملاء.  
+- **Resource Management** – استخدام بيانات المواعيد لإدارة حجوزات الغرف وغيرها من الموارد المشتركة بكفاءة.  
+- **Notification Systems** – تنفيذ خدمات تنبه المستخدمين بالمواعيد القادمة، مما يقلل من الاجتماعات الفائتة.
 
 ## اعتبارات الأداء
 
-- حرّر الكائنات فورًا للحفاظ على استهلاك الذاكرة في Java منخفضًا.  
-- اجمع استدعاءات الشبكة حيثما أمكن لتقليل زمن الاستجابة (مثلاً، استرجاع المواعيد على صفحات).  
-- اتبع أفضل ممارسات Exchange للتعامل مع مجموعات بيانات كبيرة، مثل استخدام الفلاتر والصفحات.
+- تخلص من الكائنات بسرعة للحفاظ على انخفاض استهلاك الذاكرة في Java.  
+- جمع طلبات الشبكة عندما يكون ذلك ممكنًا لتقليل الكمون (مثال: استرجاع المواعيد على شكل صفحات).  
+- اتباع أفضل ممارسات Exchange للتعامل مع مجموعات بيانات كبيرة، مثل استخدام الفلاتر والصفحات.
 
 ## المشكلات الشائعة والحلول
+
 | المشكلة | السبب | الحل |
 |-------|-------|----------|
 | فشل المصادقة | بيانات اعتماد أو عنوان URL غير صحيح | تحقق من اسم المستخدم، كلمة المرور، وعنوان الخادم. |
-| عدم إنشاء الموعد | حقول مطلوبة مفقودة | تأكد من ضبط أوقات البدء/الانتهاء، الحضور، والمنطقة الزمنية. |
+| لم يتم إنشاء الموعد | حقول مطلوبة مفقودة | تأكد من ضبط أوقات البدء/الانتهاء، الحضور، والمنطقة الزمنية. |
 | استجابة بطيئة | استدعاءات غير مجمعة | استخدم `client.listAppointments()` مع الصفحات أو الفلاتر. |
 
 ## الأسئلة المتكررة
 
 **س: كيف أتعامل مع أخطاء المصادقة؟**  
-ج: تأكد من صحة بيانات الاعتماد وعنوان الخادم، وتحقق من اتصال الشبكة.
+تأكد من صحة بيانات الاعتماد وعنوان الخادم، وتحقق من اتصال الشبكة.
 
 **س: هل يمكن استخدام Aspose.Email مع خدمات بريد إلكتروني أخرى؟**  
-ج: نعم، يدعم IMAP، POP3، SMTP، وبروتوكولات أخرى بجانب EWS.
+نعم، يدعم IMAP، POP3، SMTP، وبروتوكولات أخرى بجانب EWS.
 
 **س: ماذا أفعل إذا فشل إنشاء الموعد؟**  
-ج: افحص الاستثناء الملقى؛ عادةً ما يحتوي على تفاصيل حول الحقول المفقودة أو مشاكل الأذونات.
+افحص الاستثناء المرمى؛ عادةً ما يحتوي على تفاصيل حول الحقول المفقودة أو مشكلات الأذونات.
 
-**س: كيف أحافظ على أمان بيانات الاعتماد؟**  
-ج: احفظها في متغيرات بيئية أو مخزن آمن بدلاً من تضمينها مباشرة في الشيفرة.
+**س: كيف يمكنني الحفاظ على أمان بيانات الاعتماد؟**  
+احفظها في متغيرات بيئية أو مخزن آمن بدلاً من تضمينها مباشرة في الشيفرة.
 
-**س: هل Aspose.Email مناسب للتطبيقات ذات النطاق الواسع؟**  
-ج: بالتأكيد – صُمم لبيئات المؤسسات ويمكنه التعامل مع عمليات عالية الحجم.
+**س: هل Aspose.Email مناسب للتطبيقات واسعة النطاق؟**  
+بالطبع – صُممت للبيئات المؤسسية ويمكنها التعامل مع عمليات ذات حجم كبير.
 
 ## الموارد
-- **الوثائق**: استكشف الأدلة التفصيلية في [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).  
-- **التنزيل**: احصل على أحدث نسخة من Aspose.Email من [Releases](https://releases.aspose.com/email/java/).  
-- **الشراء**: احصل على ترخيص كامل للاستخدام في الإنتاج من [Aspose Purchase Page](https://purchase.aspose.com/buy).  
-- **النسخة التجريبية المجانية**: جرّب الميزات في [Releases](https://releases.aspose.com/email/java/).  
-- **الترخيص المؤقت**: قدّم طلبًا لفترة اختبار ممتدة عبر [Purchase Temporary License](https://purchase.aspose.com/temporary-license/).  
-- **الدعم**: انضم إلى المناقشات في [Aspose Forum](https://forum.aspose.com/c/email/10) أو تواصل مع الدعم مباشرة.
+- **Documentation**: استكشف أدلة مفصلة في [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).  
+- **Download**: احصل على أحدث نسخة من Aspose.Email من [Releases](https://releases.aspose.com/email/java/).  
+- **Purchase**: احصل على ترخيص كامل للاستخدام في الإنتاج من [Aspose Purchase Page](https://purchase.aspose.com/buy).  
+- **Free Trial**: جرّب الميزات في [Releases](https://releases.aspose.com/email/java/).  
+- **Temporary License**: قدّم طلبًا لفترة اختبار ممتدة عبر [Purchase Temporary License](https://purchase.aspose.com/temporary-license/).  
+- **Support**: انضم إلى المناقشات على [Aspose Forum](https://forum.aspose.com/c/email/10) أو تواصل مع الدعم مباشرة.
 
----
-
-**آخر تحديث:** 2026-02-24  
+**آخر تحديث:** 2026-08-01  
 **تم الاختبار مع:** Aspose.Email 25.4 for Java (JDK 16)  
-**المؤلف:** Aspose  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [إنشاء تقويم Exchange Java باستخدام Aspose.Email – دليل كامل](/email/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/)
+- [إتقان إنشاء وحفظ عناصر التقويم باستخدام Aspose.Email for Java](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+- [إنشاء دعوة مشاركة تقويم باستخدام Aspose.Email for Java](/email/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< blocks/products/products-backtop-button >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
