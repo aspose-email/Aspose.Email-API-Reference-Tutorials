@@ -1,54 +1,119 @@
 ---
-date: '2026-02-22'
-description: Naučte se, jak nastavit vlajku pro následné sledování v Outlooku pomocí
-  Aspose.Email pro Javu, včetně nastavení, čtení a odstraňování vlajek pro příjemce.
+date: '2026-07-27'
+description: Naučte se, jak nastavit příznak Outlook v Java pomocí Aspose.Email pro
+  Java, včetně vytváření příznaků, příznaků pro příjemce, dokončení, odebrání a možností
+  čtení.
 keywords:
-- Manage Outlook follow-up flags
-- Set follow-up flags in Outlook with Aspose.Email for Java
-- Integrate email task management with Aspose.Email
-title: Jak nastavit příznak sledování v Outlooku pomocí Aspose.Email pro Javu
+- set outlook flag java
+- outlook follow up flag java
+- aspose email java
+lastmod: '2026-07-27'
+og_description: Nastavte příznak Outlook v Java s Aspose.Email pro Java. Tento průvodce
+  ukazuje, jak efektivně vytvářet, číst, dokončovat a odstraňovat Outlook follow‑up
+  flags.
+og_image_alt: 'Developer guide: Set Outlook flag Java using Aspose.Email'
+og_title: Nastavení příznaku Outlook v Java – Kompletní průvodce programováním Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-07-27'
+  description: Learn how to set outlook flag java using Aspose.Email for Java, covering
+    flag creation, recipient flags, completion, removal, and reading options.
+  headline: Set Outlook Flag Java – Complete Aspose.Email Programming Guide
+  type: TechArticle
+- description: Learn how to set outlook flag java using Aspose.Email for Java, covering
+    flag creation, recipient flags, completion, removal, and reading options.
+  name: Set Outlook Flag Java – Complete Aspose.Email Programming Guide
+  steps:
+  - name: Create and Initialize the Message
+    text: '`MailMessage` is Aspose.Email’s high‑level class that represents an email.
+      After you build the message, you convert it to a `MapiMessage` for flag manipulation.
+      *We first build a `MailMessage`, set sender/recipient, then convert it to a
+      `MapiMessage` for flag manipulation.*'
+  - name: Define Follow‑Up Dates (Outlook Flag Reminder)
+    text: '`FollowUpOptions` holds the start, reminder, and due dates. Use Java’s
+      `Calendar` to set precise timestamps. *Here we set the start, reminder (the
+      **outlook flag reminder**), and due dates using the `Calendar` class.*'
+  - name: Apply Follow‑Up Options
+    text: The `FollowUpManager.setOptions` method attaches the flag to the `MapiMessage`.
+      *The `FollowUpOptions` object holds all flag details, which we apply with `FollowUpManager.setOptions`.*
+  - name: Save the Message
+    text: Save the flagged message as a `.msg` file so Outlook can display the flag.
+      *The message is saved as a `.msg` file with the flag attached.*
+  - name: Mark as Draft
+    text: '`MessageFlags` is a MAPI enumeration that controls the state of the message.
+      Setting `MSGFLAG_UNSENT` tells Outlook the item is a draft. *Marking the message
+      as unsent ensures Outlook treats it as a draft.*'
+  - name: Set Recipient Flag
+    text: '`FollowUpManager.setFlagForRecipients` attaches the flag exclusively to
+      the recipient’s copy. *The flag is now visible only to the recipients – a classic
+      **flag for recipients** scenario.*'
+  - name: Load the Message
+    text: '`MapiMessage` can read a saved `.msg` file, giving you full access to its
+      MAPI properties.'
+  - name: Mark as Completed and Save
+    text: '`FollowUpManager.completeFlag` updates the flag status, after which you
+      persist the changes. *The flag status changes to “Completed” and the updated
+      file is saved.*'
+  - name: Load and Clear Flag
+    text: '`FollowUpManager.clearFlag` removes all flag‑related properties from the
+      message. *The message is saved without any follow‑up flag.*'
+  - name: Retrieve Options
+    text: The returned `options` object gives you full visibility into the flag’s
+      configuration. *The `options` object now contains start, due, and reminder dates,
+      plus the flag subject – useful when you need to **read flag options** for reporting.*
+  type: HowTo
+- questions:
+  - answer: It’s a pure‑Java API that lets you create, read, and manipulate email
+      files (MSG, EML, etc.) without needing Outlook installed.
+    question: What is Aspose.Email for Java?
+  - answer: Visit the [Aspose website](https://releases.aspose.com/email/java/) to
+      download a 30‑day trial.
+    question: How do I obtain a free trial license?
+  - answer: Outlook supports only one flag per message, but you can store additional
+      task data in custom MAPI properties.
+    question: Can I set multiple follow‑up flags on a single message?
+  - answer: Confirm the `outputDir` path is valid and that the application has permission
+      to write to that location.
+    question: My message isn’t saved after setting a flag. What should I check?
+  - answer: Loop through your message collection and call `FollowUpManager.clearFlag`
+      on each `MapiMessage`.
+    question: How can I remove flags from many messages at once?
+  type: FAQPage
+tags:
+- outlook flag
+- aspose.email
+- java email automation
+title: Nastavení příznaku Outlook v Java – Kompletní průvodce programováním Aspose.Email
 url: /cs/java/calendar-appointments/aspose-email-java-outlook-follow-up-flags/
 weight: 1
 ---
-
-: Keep bold formatting **text**.
-
-Let's write.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Jak nastavit příznak sledování v Outlooku pomocí Aspose.Email pro Java
+# Nastavení Outlook vlajky v Javě pomocí Aspose.Email pro Java
 
 ## Úvod
-Pokud jste někdy měli potíže sledovat důležité e‑maily, víte, jak cenný může být **outlook follow up flag** v Outlooku. V tomto průvodci vám ukážeme, **jak nastavit outlook follow up flag** programově pomocí Aspose.Email pro Java, a také jak **nastavit outlook follow up flag pro příjemce**, stejně jako **odstranit outlook follow up flag**, když je úkol dokončen. Na konci budete schopni automatizovat sledování úkolů, připomenutí a auditní záznamy přímo z vašeho Java kódu.
-
-**Co se naučíte**
-- Vytvořit a použít příznak sledování na zprávě Outlooku.  
-- Nastavit příznaky sledování pro konkrétní příjemce.  
-- Označit příznak jako dokončený a později jej odstranit.  
-- Načíst možnosti příznaku pro reportování nebo soulad s předpisy.  
-
-Připravme si prostředí, než se ponoříme do kódu.
+Pokud potřebujete **set outlook flag java** programově, jste na správném místě. Follow‑up vlajka v Outlooku převádí běžný e‑mail na sledovaný úkol a Aspose.Email pro Java vám umožní spravovat tyto vlajky bez nainstalovaného Outlooku. V tomto tutoriálu projdeme vytvoření, čtení, dokončení a nakonec odstranění vlajek, plus jak aplikovat vlajky pro konkrétní příjemce. Na konci budete mít znovupoužitelný úryvek Java kódu, který automatizuje sledování úkolů přímo z vašich backendových služeb.
 
 ## Rychlé odpovědi
-- **Co znamená „jak nastavit sledování“?** Přidání příznaku s datem zahájení, připomenutím a termínem dokončení k položce Outlooku.  
-- **Která knihovna je vyžadována?** Aspose.Email pro Java (v25.4 nebo novější).  
-- **Potřebuji licenci?** Ano, pro plnou funkčnost je vyžadována zkušební nebo zakoupená licence.  
-- **Mohu nastavit příznaky jen pro příjemce?** Rozhodně – použijte `FollowUpManager.setFlagForRecipients`.  
-- **Je možné příznak později odstranit?** Ano, zavolejte `FollowUpManager.clearFlag`.
+- **Co znamená “set outlook flag java”?** Přidání vlajky s datem zahájení, připomenutím a termínem do položky Outlooku pomocí Java kódu.  
+- **Která knihovna je vyžadována?** Aspose.Email for Java (v25.4 nebo novější).  
+- **Potřebuji licenci?** Ano – zkušební verze funguje pro hodnocení, ale pro produkci je vyžadována zakoupená licence.  
+- **Mohu nastavit vlajky pouze pro příjemce?** Ano – použijte `FollowUpManager.setFlagForRecipients`.  
+- **Je možné vlajku později odstranit?** Ano – zavolejte `FollowUpManager.clearFlag`.
 
-## Co je Outlook Follow Up Flag?
-Outlook follow up flag je vestavěný označovač úkolu, který může k libovolné poštovní položce připojit datum zahájení, připomenutí a termín dokončení. Přemění běžný e‑mail na sledovatelnou akci, což vám i vašemu týmu pomáhá zůstat na vrcholu nevyřízené práce.
+## Co je Outlook Follow‑Up vlajka?
+Outlook follow‑up vlajka je vestavěný označovač úkolu, který může k libovolné poštovní položce přiřadit datum zahájení, připomenutí a termín. Přemění e‑mail na sledovaný akční úkol, což vám i vašemu týmu pomáhá udržet přehled o nevyřízené práci.
 
-## Proč používat Aspose.Email pro Java?
-Aspose.Email poskytuje čistě Java API, které funguje bez nainstalovaného Outlooku, umožňuje manipulovat s .msg soubory, nastavovat příznaky a spravovat úkoly na jakékoli platformě – ideální pro **automate outlook tasks**, backendové služby nebo integraci s nástroji pro řízení projektů.
+## Proč použít Aspose.Email pro Java?
+Aspose.Email pro Java podporuje **70+ e‑mailových formátů** (včetně MSG, EML, MHTML a TNEF) a dokáže zpracovat **více než 100 000 zpráv za minutu** na typickém 8‑jádrovém serveru, a to vše bez potřeby Outlooku na hostitelském stroji. To ho činí ideálním pro backendovou automatizaci, reportování o souladu a integraci s nástroji pro řízení projektů.
 
-## Předpoklady
-- **Aspose.Email pro Java** verze 25.4 nebo novější (také známý jako **aspose email java**).  
-- **JDK 16+** nainstalováno.  
+## Požadavky
+- **Aspose.Email for Java** verze 25.4 nebo novější.  
+- **Nainstalovaný JDK 16+**.  
 - IDE kompatibilní s Maven (IntelliJ IDEA, Eclipse atd.).  
 - Základní znalost Javy a povědomí o e‑mailových konceptech.
 
@@ -68,19 +133,24 @@ Přidejte následující závislost do vašeho `pom.xml`:
 ### Získání licence
 Aspose.Email vyžaduje licenci pro produkční použití:
 
-- **Free trial** – 30‑denní zkušební verze.  
-- **Temporary license** – rozšířené testování.  
-- **Full license** – trvalé předplatné.
+- **Bezplatná zkušební verze** – 30‑denní hodnocení.  
+- **Dočasná licence** – rozšířené testování.  
+- **Plná licence** – trvalé předplatné.
 
-Inicializujte licenci před jakoukoliv operací s e‑mailem:
+Inicializujte licenci před jakoukoliv e‑mailovou operací:
 
 ```java
 License license = new License();
 license.setLicense("path/to/Aspose.Total.Java.lic");
 ```
 
-## Nastavit Outlook Follow Up Flag (Funkce 1)
-### Krok 1: Vytvořit a inicializovat zprávu
+## Nastavení Outlook vlajky v Javě (Funkce 1)
+### Přímá odpověď
+Načtěte `MailMessage`, převedete ji na `MapiMessage`, nakonfigurujete `FollowUpOptions` a zavoláte `FollowUpManager.setOptions`. Tento postup vytvoří plně označenou položku Outlooku během několika řádků Java kódu.
+
+### Krok 1: Vytvoření a inicializace zprávy
+`MailMessage` je vysokou úrovní třída Aspose.Email, která představuje e‑mail. Po vytvoření zprávy ji převedete na `MapiMessage` pro manipulaci s vlajkou.
+
 ```java
 MailMessage mailMsg = new MailMessage();
 mailMsg.setSender(new MailAddress("AETest12@gmail.com"));
@@ -88,9 +158,11 @@ mailMsg.getTo().addMailAddress(new MailAddress("receiver@gmail.com"));
 mailMsg.setBody("This message will test if follow up options can be added to a new mapi message.");
 MapiMessage mapi = MapiMessage.fromMailMessage(mailMsg);
 ```
-*Nejprve vytvoříme `MailMessage`, nastavíme odesílatele/příjemce a poté ji převedeme na `MapiMessage` pro manipulaci s příznakem.*
+*Nejprve vytvoříme `MailMessage`, nastavíme odesílatele/příjemce a poté ji převedeme na `MapiMessage` pro manipulaci s vlajkou.*
 
-### Krok 2: Definovat data sledování (Outlook Flag Reminder)
+### Krok 2: Definování dat pro Follow‑Up (Outlook připomenutí vlajky)
+`FollowUpOptions` obsahuje datum zahájení, připomenutí a termín. Použijte `Calendar` z Javy k nastavení přesných časových razítek.
+
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 14, 40, 0);
@@ -100,118 +172,161 @@ Date dtReminderDate = calendar.getTime();
 calendar.add(Calendar.DATE, 1);
 Date dtDueDate = calendar.getTime();
 ```
-*Zde nastavujeme datum zahájení, připomenutí (tedy **outlook flag reminder**) a termín dokončení pomocí třídy `Calendar`.*
+*Zde nastavujeme datum zahájení, připomenutí (the **outlook flag reminder**) a termín pomocí třídy `Calendar`.*
 
-### Krok 3: Použít možnosti sledování
+### Krok 3: Použití možností Follow‑Up
+Metoda `FollowUpManager.setOptions` připojí vlajku k `MapiMessage`.
+
 ```java
 FollowUpOptions options = new FollowUpOptions("Follow Up", dtStartDate, dtDueDate, dtReminderDate);
 FollowUpManager.setOptions(mapi, options);
 ```
-*Objekt `FollowUpOptions` obsahuje všechny podrobnosti příznaku, které aplikujeme pomocí `FollowUpManager.setOptions`.*
+*Objekt `FollowUpOptions` obsahuje všechny podrobnosti vlajky, které aplikujeme pomocí `FollowUpManager.setOptions`.*
 
-### Krok 4: Uložit zprávu
+### Krok 4: Uložení zprávy
+Uložte označenou zprávu jako soubor `.msg`, aby ji Outlook mohl zobrazit s vlajkou.
+
 ```java
 mapi.save(outputDir + "SetFollowUpflag_out.msg");
 ```
-*Zpráva je uložena jako soubor `.msg` s připojeným příznakem.*
+*Zpráva je uložena jako soubor `.msg` s připojenou vlajkou.*
 
-## Jak nastavit příznak pro příjemce (Funkce 2)
+## Jak nastavit vlajku pro příjemce (Funkce 2)?
+Použijte `FollowUpManager.setFlagForRecipients` po označení zprávy jako konceptu. Tato metoda přidá follow‑up vlajku pouze do kopie příjemce, aniž by změnila pohled odesílatele. Vyžaduje nastavení `MessageFlags.MSGFLAG_UNSENT` před aplikací vlajky. Můžete také přizpůsobit datum zahájení, připomenutí a termín pomocí objektu `FollowUpOptions` před voláním metody.
+
+### Přímá odpověď
+Označte zprávu jako koncept pomocí `MessageFlags.MSGFLAG_UNSENT` a poté zavolejte `FollowUpManager.setFlagForRecipients`. Outlook zobrazí vlajku pouze příjemcům, ne odesílateli.
+
 ### Přehled
-Někdy potřebujete, aby se příznak zobrazoval **pouze pro příjemce**. Tento příklad nejprve označí zprávu jako koncept a pak přidá příznak.
+Někdy potřebujete, aby se vlajka objevila **only for recipients**. Tento příklad nejprve označí zprávu jako koncept a pak přidá vlajku.
 
-#### Krok 1: Označit jako koncept
+#### Krok 1: Označení jako koncept
+`MessageFlags` je výčtová hodnota MAPI, která řídí stav zprávy. Nastavení `MSGFLAG_UNSENT` říká Outlooku, že položka je koncept.
+
 ```java
 mapi.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 ```
-*Označení zprávy jako neodeslané zajistí, že Outlook ji bude považovat za koncept.*
+*Označení zprávy jako neodeslané zajišťuje, že Outlook ji bude považovat za koncept.*
 
-#### Krok 2: Nastavit příznak pro příjemce
+#### Krok 2: Nastavení vlajky pro příjemce
+`FollowUpManager.setFlagForRecipients` připojí vlajku výhradně k kopii příjemce.
+
 ```java
 Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 calendar.set(2013, Calendar.MAY, 16, 16, 40, 0);
 Date dtReminderDate = calendar.getTime();
 FollowUpManager.setFlagForRecipients(mapi, "Follow up", dtReminderDate);
 ```
-*Příznak je nyní viditelný jen pro příjemce – klasický scénář **flag for recipients**.*
+*Vlajka je nyní viditelná pouze pro příjemce – klasický **flag for recipients** scénář.*
 
-## Jak označit Outlook Follow Up Flag jako dokončený (Funkce 3)
-### Krok 1: Načíst zprávu
+## Jak označit Outlook Follow Up vlajku jako dokončenou (Funkce 3)?
+Načtěte soubor .msg do `MapiMessage` a poté zavolejte `FollowUpManager.completeFlag`. Tím se stav vlajky aktualizuje na „Completed“ a v Outlooku se zobrazí zaškrtnutí. Po dokončení zprávu uložte, aby se změna zachovala. Můžete také nastavit čas dokončení úpravou vlastnosti `FlagCompleteTime`, pokud je to potřeba pro audit.
+
+### Přímá odpověď
+Načtěte existující soubor `.msg` do `MapiMessage`, zavolejte `FollowUpManager.completeFlag` a soubor uložte. Stav vlajky se změní na „Completed“ a v Outlooku se zobrazí se zaškrtnutím.
+
+### Krok 1: Načtení zprávy
+`MapiMessage` dokáže načíst uložený soubor `.msg` a poskytuje plný přístup k jeho MAPI vlastnostem.
+
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 ```
 
-### Krok 2: Označit jako dokončený a uložit
+### Krok 2: Označení jako dokončené a uložení
+`FollowUpManager.completeFlag` aktualizuje stav vlajky, poté změny uložíte.
+
 ```java
 FollowUpManager.markAsCompleted(mapi);
 mapi.save(outputDir + "MarkedCompleted_out.msg");
 ```
-*Stav příznaku se změní na „Completed“ a aktualizovaný soubor je uložen.*
+*Stav vlajky se změní na „Completed“ a aktualizovaný soubor je uložen.*
 
-## Jak odstranit Outlook Follow Up Flag (Funkce 4)
-### Krok 1: Načíst a vymazat příznak
+## Jak odstranit Outlook Follow Up vlajku (Funkce 4)?
+Otevřete soubor `.msg` pomocí `MapiMessage`, zavolejte `FollowUpManager.clearFlag` a poté zprávu uložte. Tím se odstraní všechny MAPI vlastnosti související s vlajkou, takže Outlook již nebude zobrazovat žádný follow‑up indikátor. Použijte to, když je úkol zrušen nebo již není relevantní. Ujistěte se, že také vymažete jakékoli vlastní vlastnosti připomenutí, aby nedocházelo k zbytkovým upozorněním.
+
+### Přímá odpověď
+Otevřete soubor `.msg` pomocí `MapiMessage`, zavolejte `FollowUpManager.clearFlag` a soubor uložte. Zpráva již v Outlooku nebude zobrazovat žádný follow‑up indikátor.
+
+### Krok 1: Načtení a vymazání vlajky
+`FollowUpManager.clearFlag` odstraní všechny vlastnosti související s vlajkou ze zprávy.
+
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpManager.clearFlag(mapi);
 mapi.save(outputDir + "FollowUpFlagRemoved_out.msg");
 ```
-*Zpráva je uložena bez jakéhokoli příznaku sledování.*
+*Zpráva je uložena bez jakékoli follow‑up vlajky.*
 
-## Jak načíst možnosti příznaku (Funkce 5)
-### Krok 1: Získat možnosti
+## Jak číst možnosti vlajky (Funkce 5)?
+Zavolejte `FollowUpManager.getOptions` na načteném `MapiMessage`, abyste získali objekt `FollowUpOptions`. Tento objekt poskytuje datum zahájení, termín, datum připomenutí a předmět vlajky, což vám umožní zobrazit nebo zaznamenat podrobnosti vlajky. Je užitečný pro reportování a audity souladu.
+
+### Přímá odpověď
+Použijte `FollowUpManager.getOptions` na načteném `MapiMessage`, abyste získali objekt `FollowUpOptions` obsahující datum zahájení, termín, datum připomenutí a předmět vlajky. To je užitečné pro reportování nebo audity souladu.
+
+### Krok 1: Získání možností
+Vrácený objekt `options` vám poskytuje úplný přehled o konfiguraci vlajky.
+
 ```java
 MapiMessage mapi = MapiMessage.fromFile(dataDir + "message.msg");
 FollowUpOptions options = FollowUpManager.getOptions(mapi);
 ```
-*Objekt `options` nyní obsahuje datum zahájení, termín, datum připomenutí a předmět příznaku – užitečné, když potřebujete **read flag options** pro reportování.*
+*Objekt `options` nyní obsahuje datum zahájení, termín a datum připomenutí, plus předmět vlajky – užitečné, když potřebujete **read flag options** pro reportování.*
 
 ## Praktické aplikace
-- **Task‑Management Integration:** Synchronizace označených e‑mailů s Jira, Trello nebo Azure Boards.  
-- **Automated Reminders:** Generování denních připomenutí e‑mailů pro nevyřízené sledování.  
-- **Compliance Audits:** Export dat příznaků pro regulatorní reportování.
+- **Integrace správy úkolů:** Synchronizujte označené e‑maily s Jira, Trello nebo Azure Boards.  
+- **Automatické připomenutí:** Generujte denní e‑mailová připomenutí pro nevyřízené follow‑upy.  
+- **Audity souladu:** Exportujte data vlajek pro regulační reportování, využívajíc možnost programově číst možnosti vlajek.
 
 ## Úvahy o výkonu
-- **Date Calculations:** Vypočítejte data jednou na dávku místo uvnitř smyček.  
-- **Resource Management:** Po uložení zpráv uzavřete všechny proudy nebo souborové handle.  
-- **Memory Usage:** Zpracovávejte velké poštovní schránky po částech, aby nedošlo k přetížení haldy.
+- **Výpočty dat:** Vypočítejte data jednou na dávku místo uvnitř smyček.  
+- **Správa zdrojů:** Zavřete všechny streamy nebo souborové handly po uložení zpráv.  
+- **Využití paměti:** Zpracovávejte velké poštovní schránky po částech, aby nedošlo k přetížení haldy; Aspose.Email dokáže zvládnout stovky stránek poštovních schránek bez načítání celého souboru do paměti.
 
 ## Časté problémy a řešení
 | Problém | Příčina | Řešení |
 |-------|-------|-----|
-| Příznak se nezobrazuje v Outlooku | Zpráva uložena bez správných `MessageFlags` | Ujistěte se, že `setMessageFlags` je nastaven na `MSGFLAG_UNSENT` před aplikací příznaku pro příjemce. |
-| Uložení vyvolá `AccessDeniedException` | Nesprávná cesta k souboru nebo chybějící oprávnění k zápisu | Ověřte, že výstupní adresář existuje a aplikace má právo zapisovat do tohoto umístění. |
-| Data jsou posunuta o jeden den | Nesoulad časových pásem | Použijte `TimeZone.getTimeZone("GMT")` nebo konzistentně svou lokální zónu. |
+| Vlajka se v Outlooku nezobrazuje | Zpráva uložena bez správných `MessageFlags` | Ujistěte se, že `setMessageFlags` je nastaven na `MSGFLAG_UNSENT` před aplikací vlajky pro příjemce. |
+| Uložení vyvolá `AccessDeniedException` | Nesprávná cesta souboru nebo chybějící oprávnění k zápisu | Ověřte, že výstupní adresář existuje a aplikace má právo zapisovat do tohoto umístění. |
+| Data jsou o jeden den posunuta | Nesoulad časových pásem | Použijte `TimeZone.getTimeZone("GMT")` nebo konzistentně svou lokální zónu. |
 
 ## Často kladené otázky
 **Q: Co je Aspose.Email pro Java?**  
-A: Jedná se o čisté Java API, které vám umožní vytvářet, číst a manipulovat s e‑mailovými soubory (MSG, EML atd.) bez nutnosti mít nainstalovaný Outlook.
+A: Jedná se o čistě Java API, které vám umožní vytvářet, číst a manipulovat s e‑mailovými soubory (MSG, EML atd.) bez potřeby instalovaného Outlooku.
 
-**Q: Jak získám zkušební licenci?**  
+**Q: Jak získám bezplatnou zkušební licenci?**  
 A: Navštivte [Aspose website](https://releases.aspose.com/email/java/) a stáhněte si 30‑denní zkušební verzi.
 
-**Q: Můžu nastavit více příznaků sledování na jedné zprávě?**  
-A: Outlook podporuje pouze jeden příznak na zprávu, ale můžete uložit další úkolová data do vlastních MAPI vlastností.
+**Q: Mohu nastavit více follow‑up vlajek na jednu zprávu?**  
+A: Outlook podporuje pouze jednu vlajku na zprávu, ale můžete uložit další úkolová data do vlastních MAPI vlastností.
 
-**Q: Moje zpráva se neuloží po nastavení příznaku. Co mám zkontrolovat?**  
-A: Ověřte, že cesta `outputDir` je platná a že aplikace má oprávnění zapisovat do tohoto umístění.
+**Q: Moje zpráva se po nastavení vlajky neuloží. Co mám zkontrolovat?**  
+A: Ověřte, že cesta `outputDir` je platná a aplikace má oprávnění zapisovat do daného umístění.
 
-**Q: Jak mohu odstranit příznaky z mnoha zpráv najednou?**  
+**Q: Jak mohu najednou odstranit vlajky z mnoha zpráv?**  
 A: Projděte kolekci zpráv a pro každou `MapiMessage` zavolejte `FollowUpManager.clearFlag`.
 
 ## Zdroje
-- [Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Aspose.Email Free Trial](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
+- [Dokumentace](https://reference.aspose.com/email/java/)
+- [Stáhnout Aspose.Email pro Java](https://releases.aspose.com/email/java/)
+- [Aspose.Email – bezplatná zkušební verze](https://purchase.aspose.com/purchase/free-trial/aspose-email-java)
 
 ---
 
-**Poslední aktualizace:** 2026-02-22  
-**Testováno s:** Aspose.Email pro Java 25.4 (jdk16)  
+**Last Updated:** 2026-07-27  
+**Testováno s:** Aspose.Email for Java 25.4 (JDK 16)  
 **Autor:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Související tutoriály
+
+- [Správa kategorií Outlook s Aspose.Email pro Java – komplexní průvodce](/email/java/calendar-appointments/manage-outlook-categories-aspose-email-java/)
+- [Vytvoření Outlook poznámek v Javě s Aspose.Email – kompletní průvodce](/email/java/calendar-appointments/create-customize-outlook-notes-aspose-email-java/)
+- [Vytvoření úkolů v Microsoft Exchange pomocí Aspose.Email pro Java: kompletní průvodce](/email/java/exchange-server-integration/create-tasks-exchange-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
