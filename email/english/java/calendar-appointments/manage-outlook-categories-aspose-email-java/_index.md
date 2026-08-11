@@ -1,7 +1,7 @@
 ---
-title: "Manage Outlook Categories with Aspose.Email for Java - A Comprehensive Guide"
-description: "Learn how to manage outlook categories and remove outlook category tags using Aspose.Email for Java. This guide also shows how to clear all outlook categories programmatically."
-date: "2025-12-22"
+title: "Add Outlook Categories Java with Aspose.Email – Comprehensive Guide"
+description: "Learn how to add outlook categories java using Aspose.Email for Java, retrieve them, remove specific tags, and clear all outlook categories programmatically."
+date: "2026-03-28"
 weight: 1
 url: "/java/calendar-appointments/manage-outlook-categories-aspose-email-java/"
 keywords:
@@ -18,13 +18,13 @@ keywords:
 # Managing Outlook Categories with Aspose.Email for Java
 
 ## Introduction
-In this tutorial you’ll learn how to **manage outlook categories** with Aspose.Email for Java. Managing categories in your Outlook messages can significantly enhance organization and retrieval efficiency—especially when dealing with a large volume of emails. With **Aspose.Email for Java**, you can easily add, retrieve, and **remove outlook category** tags from your Outlook messages programmatically. This guide also covers how to **clear all outlook categories** when you need a clean slate.
+In this tutorial you’ll learn how to **add outlook categories java** using Aspose.Email for Java. Managing categories in your Outlook messages can significantly enhance organization and retrieval efficiency—especially when dealing with a large volume of emails. With **Aspose.Email for Java**, you can easily add, retrieve, and **remove outlook category** tags from your Outlook messages programmatically. This guide also covers how to **clear all outlook categories** when you need a clean slate.
 
 ### What You'll Learn
-- How to add categories to an Outlook message
-- Retrieving a list of assigned categories
-- Removing specific or all categories from an email
-- Setting up Aspose.Email for Java in your environment
+- How to add categories to an Outlook message  
+- Retrieving a list of assigned categories  
+- Removing specific or all categories from an email  
+- Setting up Aspose.Email for Java in your environment  
 
 Ready to streamline your email management? Let's dive into the prerequisites and get started!
 
@@ -37,8 +37,8 @@ Ready to streamline your email management? Let's dive into the prerequisites and
 
 ## Prerequisites
 Before you begin, ensure that you have the following:
-- **Aspose.Email for Java library**: Version 25.4 or later is recommended.
-- A development environment set up with JDK 16 or higher.
+- **Aspose.Email for Java library**: Version 25.4 or later is recommended.  
+- A development environment set up with JDK 16 or higher.  
 - Basic understanding of working with email clients programmatically.
 
 ## Setting Up Aspose.Email for Java
@@ -59,16 +59,13 @@ To integrate Aspose.Email into your Java project, you can use the following Mave
 - **Temporary License**: Obtain a temporary license for full access during your evaluation period.  
 - **Purchase**: If satisfied, you can purchase a subscription to continue using Aspose.Email.
 
-## Implementation Guide
-We'll explore each feature step‑by‑step: adding categories, retrieving them, removing specific ones, and clearing all categories from an Outlook message.
-
-### Adding Categories to an Outlook Message
+## Add Outlook Categories Java – Adding Categories to an Outlook Message
 Adding categories helps in organizing emails efficiently.
 
-#### Overview
+### Overview
 This section demonstrates adding multiple categories to a single Outlook email.
 
-#### Steps
+### Steps
 1. **Load the Email**
 
    ```java
@@ -92,13 +89,13 @@ This section demonstrates adding multiple categories to a single Outlook email.
 - The `MapiMessage.fromFile()` method loads the Outlook message from a specified file path.  
 - `FollowUpManager.addCategory()` adds the specified category name to the email.
 
-### Retrieving Categories from an Outlook Message
+## Retrieving Categories from an Outlook Message
 To retrieve categories assigned to an email:
 
-#### Overview
+### Overview
 This feature fetches all categories linked with a particular email message.
 
-#### Steps
+### Steps
 1. **Load the Email**
 
    ```java
@@ -117,13 +114,13 @@ This feature fetches all categories linked with a particular email message.
 #### Explanation
 - `FollowUpManager.getCategories()` returns a list containing all categories attached to the email.
 
-### Removing Specific Category from an Outlook Message
+## Removing Specific Category from an Outlook Message
 If you need to **remove outlook category** tags, follow these steps:
 
-#### Overview
+### Overview
 This feature removes designated categories, helping maintain relevance and clarity in your message categorization.
 
-#### Steps
+### Steps
 1. **Load the Email**
 
    ```java
@@ -139,13 +136,13 @@ This feature removes designated categories, helping maintain relevance and clari
 #### Explanation
 - `FollowUpManager.removeCategory()` removes the specified category from your email.
 
-### Clearing All Categories from an Outlook Message
+## Clear All Outlook Categories Java – Clearing All Categories from an Outlook Message
 When you need to **clear all outlook categories**, use the method below:
 
-#### Overview
+### Overview
 This feature clears every category assigned to a message for complete removal of tags.
 
-#### Steps
+### Steps
 1. **Load the Email**
 
    ```java
@@ -172,7 +169,7 @@ Here are some real‑world use cases:
 - **Best Practices** – Use batching operations where possible to reduce overhead when processing large volumes of emails.
 
 ## Conclusion
-In this tutorial, we explored how to **manage outlook categories** using Aspose.Email for Java. These features not only help organize your inbox but also boost productivity through streamlined email management. To take it further, consider exploring additional capabilities of the Aspose.Email library and integrating them into your projects!
+In this tutorial, we explored how to **add outlook categories java** using Aspose.Email for Java. These features not only help organize your inbox but also boost productivity through streamlined email management. To take it further, consider exploring additional capabilities of the Aspose.Email library and integrating them into your projects!
 
 ### Next Steps
 - Experiment with different category configurations.  
@@ -210,17 +207,9 @@ A: Create separate `MapiMessage` instances per thread or synchronize access to s
 **Q: Is there a way to list all available categories in the Outlook profile?**  
 A: You can retrieve the default category list via the `FollowUpManager.getAllCategories()` method (available in newer versions).
 
-## Resources
-- **Documentation**: https://reference.aspose.com/email/java/
-- **Download**: https://releases.aspose.com/email/java/
-- **Purchase**: https://purchase.aspose.com/buy
-- **Free Trial**: https://releases.aspose.com/email/java/
-- **Temporary License**: https://purchase.aspose.com/temporary-license/
-- **Support**: https://forum.aspose.com/c/email/10
-
 ---
 
-**Last Updated:** 2025-12-22  
+**Last Updated:** 2026-03-28  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
 **Author:** Aspose
 

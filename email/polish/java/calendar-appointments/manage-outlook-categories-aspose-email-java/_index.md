@@ -1,14 +1,13 @@
 ---
-date: '2025-12-22'
-description: Dowiedz się, jak zarządzać kategoriami Outlook i usuwać tagi kategorii
-  Outlook przy użyciu Aspose.Email dla Javy. Ten przewodnik pokazuje również, jak
-  programowo wyczyścić wszystkie kategorie Outlook.
+date: '2026-03-28'
+description: Dowiedz się, jak dodać kategorie Outlook w Javie przy użyciu Aspose.Email
+  for Java, pobierać je, usuwać określone tagi oraz usuwać wszystkie kategorie Outlook
+  programowo.
 keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: 'Zarządzaj kategoriami Outlook przy użyciu Aspose.Email dla Javy - kompleksowy
-  przewodnik'
+title: Dodaj kategorie Outlook w Javie przy użyciu Aspose.Email – Kompletny przewodnik
 url: /pl/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
 ---
@@ -21,30 +20,30 @@ weight: 1
 # Zarządzanie kategoriami Outlook przy użyciu Aspose.Email dla Javy
 
 ## Wprowadzenie
-W tym samouczku dowiesz się, jak **zarządzać kategoriami Outlook** przy pomocy Aspose.Email dla Javy. Zarządzanie kategoriami w wiadomościach Outlook może znacząco zwiększyć organizację i efektywność wyszukiwania — szczególnie przy dużej liczbie e‑maili. Dzięki **Aspose.Email dla Javy** możesz łatwo dodawać, pobierać i **usuwać tagi kategorii Outlook** z wiadomości Outlook programowo. Poradnik obejmuje także, jak **wyczyścić wszystkie kategorie Outlook**, gdy potrzebujesz czystego stanu.
+W tym samouczku nauczysz się, jak **add outlook categories java** przy użyciu Aspose.Email dla Javy. Zarządzanie kategoriami w wiadomościach Outlook może znacznie zwiększyć organizację i wydajność wyszukiwania — szczególnie przy dużej liczbie e‑maili. Dzięki **Aspose.Email dla Javy** możesz łatwo dodawać, pobierać i **remove outlook category** tagi z wiadomości Outlook programowo. Ten przewodnik obejmuje również, jak **clear all outlook categories**, gdy potrzebujesz czystego stanu.
 
 ### Czego się nauczysz
-- Jak dodać kategorie do wiadomości Outlook
-- Jak pobrać listę przypisanych kategorii
-- Jak usunąć konkretne lub wszystkie kategorie z e‑maila
-- Jak skonfigurować Aspose.Email dla Javy w swoim środowisku
+- Jak dodać kategorie do wiadomości Outlook  
+- Pobieranie listy przypisanych kategorii  
+- Usuwanie konkretnych lub wszystkich kategorii z e‑maila  
+- Konfigurowanie Aspose.Email dla Javy w swoim środowisku  
 
-Gotowy, aby usprawnić zarządzanie pocztą? Przejdźmy do wymagań wstępnych i rozpocznijmy!
+Gotowy, aby usprawnić zarządzanie e‑mailami? Zanurzmy się w wymagania wstępne i rozpocznijmy!
 
 ## Szybkie odpowiedzi
 - **Jaki jest główny cel?** Programowe zarządzanie kategoriami Outlook (dodawanie, pobieranie, usuwanie, czyszczenie).  
-- **Jakiej biblioteki potrzebujesz?** Aspose.Email dla Javy (wersja 25.4 lub nowsza).  
-- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna wystarczy do oceny; licencja stała jest wymagana w produkcji.  
+- **Jakiej biblioteki wymaga?** Aspose.Email dla Javy (wersja 25.4 lub nowsza).  
+- **Czy potrzebna jest licencja?** Darmowa wersja próbna wystarcza do oceny; stała licencja jest wymagana w produkcji.  
 - **Jaką wersję Javy obsługuje?** JDK 16 lub wyższą.  
 - **Czy mogę wyczyścić wszystkie kategorie jednocześnie?** Tak, używając `FollowUpManager.clearCategories()`.
 
-## Wymagania wstępne
-Zanim rozpoczniesz, upewnij się, że masz:
-- **Bibliotekę Aspose.Email dla Javy**: zalecana wersja 25.4 lub nowsza.
-- Środowisko programistyczne skonfigurowane z JDK 16 lub wyższą.
-- Podstawową wiedzę na temat programowego korzystania z klientów poczty elektronicznej.
+## Prerequisites
+Zanim rozpoczniesz, upewnij się, że masz następujące elementy:
+- **Biblioteka Aspose.Email dla Javy**: Zalecana wersja 25.4 lub nowsza.  
+- Środowisko programistyczne skonfigurowane z JDK 16 lub wyższym.  
+- Podstawowa znajomość programowego korzystania z klientów poczty elektronicznej.  
 
-## Konfiguracja Aspose.Email dla Javy
+## Konfigurowanie Aspose.Email dla Javy
 ### Zależność Maven
 Aby zintegrować Aspose.Email z projektem Java, możesz użyć następującej zależności Maven:
 
@@ -57,22 +56,19 @@ Aby zintegrować Aspose.Email z projektem Java, możesz użyć następującej za
 </dependency>
 ```
 
-### Uzyskanie licencji
-- **Bezpłatna wersja próbna**: Rozpocznij od wersji próbnej, aby ocenić możliwości biblioteki.  
-- **Licencja tymczasowa**: Uzyskaj licencję tymczasową, aby mieć pełny dostęp w okresie oceny.  
-- **Zakup**: Jeśli jesteś zadowolony, możesz zakupić subskrypcję, aby kontynuować korzystanie z Aspose.Email.
+### Uzyskiwanie licencji
+- **Darmowa wersja próbna**: Rozpocznij od darmowej wersji próbnej, aby ocenić możliwości biblioteki.  
+- **Licencja tymczasowa**: Uzyskaj tymczasową licencję, aby mieć pełny dostęp w okresie oceny.  
+- **Zakup**: Jeśli jesteś zadowolony, możesz zakupić subskrypcję, aby kontynuować korzystanie z Aspose.Email.  
 
-## Przewodnik implementacji
-Przejdziemy krok po kroku przez każdą funkcję: dodawanie kategorii, ich pobieranie, usuwanie wybranych oraz czyszczenie wszystkich kategorii z wiadomości Outlook.
+## Dodawanie kategorii Outlook w Javie – Dodawanie kategorii do wiadomości Outlook
+Dodawanie kategorii pomaga efektywnie organizować e‑maile.
 
-### Dodawanie kategorii do wiadomości Outlook
-Dodawanie kategorii pomaga w efektywnej organizacji e‑maili.
+### Przegląd
+Ta sekcja demonstruje dodawanie wielu kategorii do jednej wiadomości Outlook.
 
-#### Przegląd
-Ten fragment pokazuje, jak dodać wiele kategorii do jednej wiadomości Outlook.
-
-#### Kroki
-1. **Wczytaj wiadomość**
+### Kroki
+1. **Wczytaj e‑mail**
 
    ```java
    import com.aspose.email.MapiMessage;
@@ -92,17 +88,17 @@ Ten fragment pokazuje, jak dodać wiele kategorii do jednej wiadomości Outlook.
    ```
 
 #### Wyjaśnienie
-- Metoda `MapiMessage.fromFile()` wczytuje wiadomość Outlook z określonej ścieżki pliku.  
+- Metoda `MapiMessage.fromFile()` ładuje wiadomość Outlook z określonej ścieżki pliku.  
 - `FollowUpManager.addCategory()` dodaje podaną nazwę kategorii do e‑maila.
 
-### Pobieranie kategorii z wiadomości Outlook
+## Pobieranie kategorii z wiadomości Outlook
 Aby pobrać kategorie przypisane do e‑maila:
 
-#### Przegląd
-Ta funkcja pobiera wszystkie kategorie powiązane z określoną wiadomością.
+### Przegląd
+Ta funkcja pobiera wszystkie kategorie powiązane z konkretną wiadomością e‑mail.
 
-#### Kroki
-1. **Wczytaj wiadomość**
+### Kroki
+1. **Wczytaj e‑mail**
 
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
@@ -118,16 +114,16 @@ Ta funkcja pobiera wszystkie kategorie powiązane z określoną wiadomością.
    ```
 
 #### Wyjaśnienie
-- `FollowUpManager.getCategories()` zwraca listę zawierającą wszystkie kategorie dołączone do wiadomości.
+- `FollowUpManager.getCategories()` zwraca listę zawierającą wszystkie kategorie dołączone do e‑maila.
 
-### Usuwanie konkretnej kategorii z wiadomości Outlook
-Jeśli musisz **usunąć tagi kategorii Outlook**, postępuj zgodnie z poniższymi krokami:
+## Usuwanie konkretnej kategorii z wiadomości Outlook
+Jeśli potrzebujesz **remove outlook category** tagów, wykonaj następujące kroki:
 
-#### Przegląd
-Ta funkcja usuwa wybrane kategorie, pomagając utrzymać przejrzystość i aktualność klasyfikacji wiadomości.
+### Przegląd
+Ta funkcja usuwa wyznaczone kategorie, pomagając utrzymać istotność i przejrzystość w kategoryzacji wiadomości.
 
-#### Kroki
-1. **Wczytaj wiadomość**
+### Kroki
+1. **Wczytaj e‑mail**
 
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
@@ -140,16 +136,16 @@ Ta funkcja usuwa wybrane kategorie, pomagając utrzymać przejrzystość i aktua
    ```
 
 #### Wyjaśnienie
-- `FollowUpManager.removeCategory()` usuwa wskazaną kategorię z e‑maila.
+- `FollowUpManager.removeCategory()` usuwa określoną kategorię z Twojego e‑maila.
 
-### Czyszczenie wszystkich kategorii z wiadomości Outlook
-Gdy potrzebujesz **wyczyścić wszystkie kategorie Outlook**, użyj poniższej metody:
+## Czyszczenie wszystkich kategorii Outlook w Javie – Usuwanie wszystkich kategorii z wiadomości Outlook
+Gdy potrzebujesz **clear all outlook categories**, użyj poniższej metody:
 
-#### Przegląd
-Ta funkcja usuwa każdą kategorię przypisaną do wiadomości, całkowicie eliminując tagi.
+### Przegląd
+Ta funkcja usuwa wszystkie kategorie przypisane do wiadomości, całkowicie usuwając tagi.
 
-#### Kroki
-1. **Wczytaj wiadomość**
+### Kroki
+1. **Wczytaj e‑mail**
 
    ```java
    MapiMessage msg = MapiMessage.fromFile("YOUR_DOCUMENT_DIRECTORY/message.msg");
@@ -165,67 +161,59 @@ Ta funkcja usuwa każdą kategorię przypisaną do wiadomości, całkowicie elim
 - `FollowUpManager.clearCategories()` usuwa wszystkie kategorie z wiadomości.
 
 ## Praktyczne zastosowania
-Oto kilka rzeczywistych scenariuszy:
-1. **Automatyczne sortowanie e‑maili** – integracja z systemami CRM w celu automatycznego tagowania wiadomości na podstawie interakcji z klientem.  
-2. **Zarządzanie projektami** – przypisywanie tagów specyficznych dla projektu, aby ułatwić wyszukiwanie i organizację.  
-3. **Kampanie marketingowe** – kategoryzowanie wiadomości promocyjnych w celu śledzenia odpowiedzi i zaangażowania.
+Oto kilka rzeczywistych przypadków użycia:
+1. **Automatyczne sortowanie e‑maili** – Integracja z systemami CRM w celu automatycznego tagowania e‑maili na podstawie interakcji z klientami.  
+2. **Zarządzanie projektami** – Przypisywanie tagów specyficznych dla projektu do e‑maili w celu łatwego ich wyszukiwania i organizacji.  
+3. **Kampanie marketingowe** – Kategoryzowanie e‑maili promocyjnych w celu śledzenia odpowiedzi i zaangażowania.
 
-## Wskazówki dotyczące wydajności
-- **Optymalizacja zużycia zasobów** – zapewnij efektywne zarządzanie pamięcią, zwalniając obiekty, gdy nie są już potrzebne.  
-- **Najlepsze praktyki** – stosuj operacje wsadowe, gdzie to możliwe, aby zmniejszyć narzut przy przetwarzaniu dużych ilości e‑maili.
+## Rozważania dotyczące wydajności
+- **Optymalizacja wykorzystania zasobów** – Zapewnienie efektywnego zarządzania pamięcią poprzez zwalnianie obiektów, gdy nie są już potrzebne.  
+- **Najlepsze praktyki** – Używaj operacji wsadowych, gdzie to możliwe, aby zmniejszyć narzut przy przetwarzaniu dużych ilości e‑maili.
 
 ## Zakończenie
-W tym samouczku omówiliśmy, jak **zarządzać kategoriami Outlook** przy użyciu Aspose.Email dla Javy. Funkcje te nie tylko pomagają uporządkować skrzynkę odbiorczą, ale także zwiększają produktywność dzięki usprawnionemu zarządzaniu pocztą. Aby poszerzyć możliwości, rozważ dalsze eksplorowanie funkcji biblioteki Aspose.Email i ich integrację w swoich projektach!
+W tym samouczku omówiliśmy, jak **add outlook categories java** przy użyciu Aspose.Email dla Javy. Funkcje te nie tylko pomagają organizować skrzynkę odbiorczą, ale także zwiększają produktywność dzięki usprawnionemu zarządzaniu e‑mailami. Aby pójść dalej, rozważ eksplorację dodatkowych możliwości biblioteki Aspose.Email i ich integrację w swoich projektach!
 
 ### Kolejne kroki
 - Eksperymentuj z różnymi konfiguracjami kategorii.  
-- Poznaj inne funkcjonalności oferowane przez Aspose.Email.
+- Poznaj inne funkcje oferowane przez Aspose.Email.
 
-Gotowy, aby wypróbować zarządzanie kategoriami w Outlook? Wdroż te rozwiązania już dziś i doświadcz lepszej organizacji e‑maili!
+Gotowy, aby wypróbować zarządzanie kategoriami w Outlook? Wdroż te rozwiązania już dziś i doświadcz ulepszonej organizacji e‑maili!
 
 ## Sekcja FAQ
-**P1: Czy mogę używać Aspose.Email dla Javy na dowolnej platformie?**  
-O1: Tak, pod warunkiem, że środowisko obsługuje JDK 16 lub wyższą.
+**Q1: Czy mogę używać Aspose.Email dla Javy na dowolnej platformie?**  
+A1: Tak, pod warunkiem że Twoje środowisko obsługuje JDK 16 lub wyższą wersję.
 
-**P2: Jak obsługiwać błędy podczas dodawania kategorii?**  
-O2: Upewnij się, że nazwy kategorii są prawidłowymi łańcuchami znaków i obsłuż wyjątki w kodzie, aby radzić sobie z nieprzewidzianymi problemami.
+**Q2: Jak obsługiwać błędy podczas dodawania kategorii?**  
+A2: Upewnij się, że nazwy kategorii są prawidłowymi łańcuchami znaków i sprawdzaj wyjątki w kodzie, aby radzić sobie z nieoczekiwanymi problemami.
 
-**P3: Czy istnieje limit liczby kategorii, które mogę dodać?**  
-O3: Outlook zazwyczaj obsługuje do 10 kategorii na wiadomość, ale zawsze warto sprawdzić najnowsze wytyczne Microsoftu.
+**Q3: Czy istnieje limit liczby kategorii, które mogę dodać?**  
+A3: Outlook zazwyczaj obsługuje do 10 kategorii na wiadomość, ale zawsze najlepiej odwołać się do najnowszych wytycznych Microsoft.
 
-**P4: Jak zapewnić wysoką wydajność przy przetwarzaniu dużych wolumenów e‑maili?**  
-O4: Implementuj efektywne zarządzanie pamięcią oraz operacje wsadowe dla optymalnej wydajności.
+**Q4: Jak zapewnić wysoką wydajność przy przetwarzaniu dużych ilości e‑maili?**  
+A4: Wdroż efektywne zarządzanie pamięcią oraz operacje wsadowe dla optymalnej wydajności.
 
-**P5: Gdzie mogę znaleźć więcej dokumentacji na temat funkcji Aspose.Email?**  
-O5: Odwiedź [Dokumentację Aspose Email](https://reference.aspose.com/email/java/), aby uzyskać szczegółowe przewodniki i odniesienia API.
+**Q5: Gdzie mogę znaleźć więcej dokumentacji na temat funkcji Aspose.Email?**  
+A5: Odwiedź [Dokumentację Aspose Email](https://reference.aspose.com/email/java/) aby uzyskać szczegółowe przewodniki i odniesienia API.
 
 ## Dodatkowe często zadawane pytania
 
-**P: Czy Aspose.Email obsługuje inne formaty e‑maili, takie jak EML czy PST?**  
-O: Tak, biblioteka potrafi odczytywać i zapisywać EML, MSG, PST oraz inne popularne formaty.
+**Pytanie: Czy Aspose.Email obsługuje inne formaty e‑maili, takie jak EML lub PST?**  
+O: Tak, biblioteka może odczytywać i zapisywać EML, MSG, PST oraz inne popularne formaty.
 
-**P: Czy mogę programowo przypisywać kolory do kategorii?**  
+**Pytanie: Czy mogę programowo przypisywać kolory do kategorii?**  
 O: Kolory kategorii są zarządzane przez Outlook; możesz ustawić nazwę kategorii, a Outlook zastosuje powiązany kolor, jeśli istnieje.
 
-**P: Jak pracować z kategoriami w środowisku wielowątkowym?**  
-O: Twórz oddzielne instancje `MapiMessage` dla każdego wątku lub synchronizuj dostęp do współdzielonych obiektów, aby uniknąć problemów z równoczesnym dostępem.
+**Pytanie: Jak pracować z kategoriami w środowisku wielowątkowym?**  
+O: Utwórz osobne instancje `MapiMessage` dla każdego wątku lub synchronizuj dostęp do współdzielonych obiektów, aby uniknąć problemów z współbieżnością.
 
-**P: Czy istnieje sposób, aby wyświetlić wszystkie dostępne kategorie w profilu Outlook?**  
+**Pytanie: Czy istnieje sposób, aby wyświetlić wszystkie dostępne kategorie w profilu Outlook?**  
 O: Możesz pobrać domyślną listę kategorii za pomocą metody `FollowUpManager.getAllCategories()` (dostępnej w nowszych wersjach).
-
-## Zasoby
-- **Dokumentacja**: https://reference.aspose.com/email/java/
-- **Pobierz**: https://releases.aspose.com/email/java/
-- **Kup**: https://purchase.aspose.com/buy
-- **Bezpłatna wersja próbna**: https://releases.aspose.com/email/java/
-- **Licencja tymczasowa**: https://purchase.aspose.com/temporary-license/
-- **Wsparcie**: https://forum.aspose.com/c/email/10
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-22  
-**Testowano z:** Aspose.Email dla Javy 25.4 (klasyfikator JDK 16)  
-**Autor:** Aspose
+**Last Updated:** 2026-03-28  
+**Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

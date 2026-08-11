@@ -1,13 +1,13 @@
 ---
-date: '2025-12-22'
-description: Aspose.Email for Java kullanarak Outlook kategorilerini nasıl yöneteceğinizi
-  ve Outlook kategori etiketlerini nasıl kaldıracağınızı öğrenin. Bu kılavuz ayrıca
-  tüm Outlook kategorilerini programlı olarak nasıl temizleyeceğinizi gösterir.
+date: '2026-03-28'
+description: Aspose.Email for Java kullanarak Outlook kategorilerini Java'ya nasıl
+  ekleyeceğinizi, bunları nasıl alacağınızı, belirli etiketleri nasıl kaldıracağınızı
+  ve tüm Outlook kategorilerini programlı olarak nasıl temizleyeceğinizi öğrenin.
 keywords:
 - manage Outlook categories with Aspose.Email for Java
 - add categories to Outlook message
 - retrieve Outlook email categories
-title: 'Aspose.Email for Java ile Outlook Kategorilerini Yönetme - Kapsamlı Bir Rehber'
+title: Aspose.Email ile Java’da Outlook Kategorileri Ekleme – Kapsamlı Rehber
 url: /tr/java/calendar-appointments/manage-outlook-categories-aspose-email-java/
 weight: 1
 ---
@@ -20,30 +20,30 @@ weight: 1
 # Outlook Kategorilerini Aspose.Email for Java ile Yönetme
 
 ## Giriş
-Bu öğreticide, Aspose.Email for Java ile **Outlook kategorilerini yönetmeyi** öğreneceksiniz. Outlook mesajlarınızdaki kategorileri yönetmek, özellikle büyük miktarda e-posta ile çalışırken organizasyonu ve geri getirme verimliliğini önemli ölçüde artırabilir. **Aspose.Email for Java** ile Outlook mesajlarınıza programlı olarak kategori etiketleri ekleyebilir, alabilir ve **Outlook kategorisini kaldırabilirsiniz**. Bu kılavuz ayrıca temiz bir başlangıç için **tüm Outlook kategorilerini temizleme** konusunu da kapsar.
+Bu öğreticide, Aspose.Email for Java kullanarak **add outlook categories java** öğreneceksiniz. Outlook mesajlarınızdaki kategorileri yönetmek, özellikle büyük miktarda e-posta ile çalışırken organizasyonu ve geri getirme verimliliğini önemli ölçüde artırabilir. **Aspose.Email for Java** ile Outlook mesajlarınıza programlı olarak kolayca kategori ekleyebilir, alabilir ve **remove outlook category** etiketlerini kaldırabilirsiniz. Bu kılavuz ayrıca temiz bir başlangıç gerektiğinde **clear all outlook categories** nasıl yapılacağını da kapsar.
 
 ### Öğrenecekleriniz
-- Outlook mesajına kategori ekleme
-- Atanan kategorilerin listesini alma
-- Bir e-postadan belirli veya tüm kategorileri kaldırma
-- Ortamınızda Aspose.Email for Java kurulumunu yapma
+- Outlook mesajına kategori ekleme  
+- Atanan kategorilerin bir listesini alma  
+- Bir e-postadan belirli ya da tüm kategorileri kaldırma  
+- Ortamınızda Aspose.Email for Java'ı kurma  
 
-E-posta yönetiminizi kolaylaştırmaya hazır mısınız? Gereksinimlere göz atalım ve başlayalım!
+E-posta yönetiminizi basitleştirmeye hazır mısınız? Gereksinimlere göz atalım ve başlayalım!
 
-## Hızlı Cevaplar
-- **Birincil amaç nedir?** Outlook kategorilerini programlı olarak yönetmek (ekleme, alma, kaldırma, temizleme).  
-- **Hangi kütüphane gereklidir?** Aspose.Email for Java (sürüm 25.4 veya üzeri).  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gerekir.  
-- **Hangi Java sürümü desteklenir?** JDK 16 veya üzeri.  
-- **Tüm kategorileri bir anda temizleyebilir miyim?** Evet, `FollowUpManager.clearCategories()` kullanarak.
+## Hızlı Yanıtlar
+- **What is the primary purpose?** Outlook kategorilerini programlı olarak yönetmek (ekleme, alma, kaldırma, temizleme).  
+- **Which library is required?** Aspose.Email for Java (sürüm 25.4 veya sonrası).  
+- **Do I need a license?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gerekir.  
+- **What Java version is supported?** JDK 16 veya üzeri.  
+- **Can I clear all categories at once?** Evet, `FollowUpManager.clearCategories()` kullanarak.
 
 ## Önkoşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
-- **Aspose.Email for Java kütüphanesi**: Sürüm 25.4 veya üzeri önerilir.
-- JDK 16 veya üzeri kurulu bir geliştirme ortamı.
-- E-posta istemcileriyle programlı olarak çalışmaya dair temel anlayış.
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
+- **Aspose.Email for Java library**: Sürüm 25.4 veya sonrası önerilir.  
+- JDK 16 veya üzeri kurulu bir geliştirme ortamı.  
+- E-posta istemcileriyle programlı olarak çalışmaya dair temel bir anlayış.
 
-## Aspose.Email for Java Kurulumu
+## Aspose.Email for Java'ı Kurma
 ### Maven Bağımlılığı
 Aspose.Email'i Java projenize entegre etmek için aşağıdaki Maven bağımlılığını kullanabilirsiniz:
 
@@ -56,21 +56,18 @@ Aspose.Email'i Java projenize entegre etmek için aşağıdaki Maven bağımlıl
 </dependency>
 ```
 
-### Lisans Edinimi
-- **Ücretsiz Deneme**: Kütüphanenin yeteneklerini değerlendirmek için ücretsiz deneme ile başlayın.  
-- **Geçici Lisans**: Değerlendirme süreniz boyunca tam erişim için geçici bir lisans edinin.  
-- **Satın Alma**: Memnun kalırsanız, Aspose.Email'i kullanmaya devam etmek için bir abonelik satın alabilirsiniz.
+### Lisans Edinme
+- **Free Trial**: Kütüphanenin yeteneklerini değerlendirmek için ücretsiz bir deneme ile başlayın.  
+- **Temporary License**: Değerlendirme süreniz boyunca tam erişim için geçici bir lisans edinin.  
+- **Purchase**: Memnun kalırsanız, Aspose.Email'i kullanmaya devam etmek için bir abonelik satın alabilirsiniz.
 
-## Uygulama Kılavuzu
-Her özelliği adım adım inceleyeceğiz: kategorileri ekleme, alma, belirli olanları kaldırma ve bir Outlook mesajından tüm kategorileri temizleme.
-
-### Outlook Mesajına Kategori Ekleme
+## Outlook Kategorileri Java Ekleme – Outlook Mesajına Kategori Ekleme
 Kategorileri eklemek, e-postaları verimli bir şekilde düzenlemeye yardımcı olur.
 
-#### Genel Bakış
+### Genel Bakış
 Bu bölüm, tek bir Outlook e-postasına birden fazla kategori eklemeyi gösterir.
 
-#### Adımlar
+### Adımlar
 1. **E-postayı Yükle**
 
    ```java
@@ -91,16 +88,16 @@ Bu bölüm, tek bir Outlook e-postasına birden fazla kategori eklemeyi gösteri
    ```
 
 #### Açıklama
-- `MapiMessage.fromFile()` yöntemi, Outlook mesajını belirtilen dosya yolundan yükler.  
+- `MapiMessage.fromFile()` yöntemi, belirtilen dosya yolundan Outlook mesajını yükler.  
 - `FollowUpManager.addCategory()` belirtilen kategori adını e-postaya ekler.
 
-### Outlook Mesajından Kategorileri Alma
+## Outlook Mesajından Kategorileri Alma
 Bir e-postaya atanan kategorileri almak için:
 
-#### Genel Bakış
+### Genel Bakış
 Bu özellik, belirli bir e-posta mesajına bağlı tüm kategorileri getirir.
 
-#### Adımlar
+### Adımlar
 1. **E-postayı Yükle**
 
    ```java
@@ -119,13 +116,13 @@ Bu özellik, belirli bir e-posta mesajına bağlı tüm kategorileri getirir.
 #### Açıklama
 - `FollowUpManager.getCategories()` e-postaya eklenmiş tüm kategorileri içeren bir liste döndürür.
 
-### Outlook Mesajından Belirli Kategoriyi Kaldırma
-Eğer **Outlook kategorisini** kaldırmanız gerekiyorsa, aşağıdaki adımları izleyin:
+## Outlook Mesajından Belirli Bir Kategoriyi Kaldırma
+Eğer **remove outlook category** etiketlerini kaldırmanız gerekiyorsa, şu adımları izleyin:
 
-#### Genel Bakış
-Bu özellik, belirlenen kategorileri kaldırarak mesaj kategorilendirmenizde alaka ve netliği korumanıza yardımcı olur.
+### Genel Bakış
+Bu özellik, belirlenen kategorileri kaldırarak mesaj kategorilendirmenizde alaka ve netliği korumaya yardımcı olur.
 
-#### Adımlar
+### Adımlar
 1. **E-postayı Yükle**
 
    ```java
@@ -141,13 +138,13 @@ Bu özellik, belirlenen kategorileri kaldırarak mesaj kategorilendirmenizde ala
 #### Açıklama
 - `FollowUpManager.removeCategory()` belirtilen kategoriyi e-postanızdan kaldırır.
 
-### Outlook Mesajından Tüm Kategorileri Temizleme
-Eğer **tüm Outlook kategorilerini temizlemeniz** gerektiğinde, aşağıdaki yöntemi kullanın:
+## Tüm Outlook Kategorilerini Java ile Temizleme – Outlook Mesajından Tüm Kategorileri Temizleme
+Eğer **clear all outlook categories** yapmanız gerektiğinde, aşağıdaki yöntemi kullanın:
 
-#### Genel Bakış
+### Genel Bakış
 Bu özellik, bir mesaja atanan tüm kategorileri temizleyerek etiketlerin tamamen kaldırılmasını sağlar.
 
-#### Adımlar
+### Adımlar
 1. **E-postayı Yükle**
 
    ```java
@@ -165,63 +162,56 @@ Bu özellik, bir mesaja atanan tüm kategorileri temizleyerek etiketlerin tamame
 
 ## Pratik Uygulamalar
 İşte bazı gerçek dünya kullanım örnekleri:
-1. **Otomatik E-posta Sıralama** – CRM sistemleriyle entegre ederek, müşteri etkileşimlerine göre e-postaları otomatik olarak etiketleyin.  
-2. **Proje Yönetimi** – E-postalara proje‑özel etiketler atayarak kolay geri getirme ve organizasyon sağlayın.  
-3. **Pazarlama Kampanyaları** – Tanıtım e-postalarını yanıtları ve etkileşimi izlemek için kategorilendirin.
+1. **Automated Email Sorting** – Müşteri etkileşimlerine göre e-postaları otomatik olarak etiketlemek için CRM sistemleriyle entegre edin.  
+2. **Project Management** – E-postalara proje‑özel etiketler atayarak kolay geri getirme ve organizasyon sağlayın.  
+3. **Marketing Campaigns** – Yanıtları ve etkileşimi izlemek için tanıtım e-postalarını kategorilendirin.
 
 ## Performans Düşünceleri
-- **Kaynak Kullanımını Optimize Et** – Gereksiz olduğunda nesneleri serbest bırakarak verimli bellek yönetimini sağlayın.  
-- **En İyi Uygulamalar** – Büyük miktarda e-posta işlenirken aşırı yükü azaltmak için mümkün olduğunda toplu işlemler kullanın.
+- **Optimize Resource Usage** – Artık ihtiyaç duyulmadığında nesneleri serbest bırakarak verimli bellek yönetimini sağlayın.  
+- **Best Practices** – Büyük miktarda e-posta işlenirken yükü azaltmak için mümkün olduğunca toplu işlemler kullanın.
 
 ## Sonuç
-Bu öğreticide, Aspose.Email for Java kullanarak **Outlook kategorilerini yönetmeyi** inceledik. Bu özellikler yalnızca gelen kutunuzu düzenlemenize yardımcı olmakla kalmaz, aynı zamanda verimli e-posta yönetimi sayesinde üretkenliği artırır. Daha ileri gitmek için Aspose.Email kütüphanesinin ek yeteneklerini keşfetmeyi ve projelerinize entegre etmeyi düşünün!
+Bu öğreticide, Aspose.Email for Java kullanarak **add outlook categories java** nasıl yapılacağını inceledik. Bu özellikler yalnızca gelen kutunuzu düzenlemenize yardımcı olmakla kalmaz, aynı zamanda e-posta yönetimini basitleştirerek verimliliği artırır. Daha ileri gitmek için Aspose.Email kütüphanesinin ek yeteneklerini keşfetmeyi ve projelerinize entegre etmeyi düşünün!
 
 ### Sonraki Adımlar
-- Farklı kategori yapılandırmalarıyla denemeler yapın.  
+- Farklı kategori yapılandırmalarıyla deney yapın.  
 - Aspose.Email tarafından sağlanan diğer işlevleri keşfedin.
 
 Outlook'ta kategorileri yönetmeye hazır mısınız? Bu çözümleri bugün uygulayın ve geliştirilmiş e-posta organizasyonunun keyfini çıkarın!
 
 ## SSS Bölümü
-**S1: Aspose.Email for Java'yi herhangi bir platformda kullanabilir miyim?**  
+**Q1: Aspose.Email for Java'ı herhangi bir platformda kullanabilir miyim?**  
 A1: Evet, ortamınız JDK 16 veya üzerini desteklediği sürece.
 
-**S2: Kategorileri eklerken hataları nasıl yönetirim?**  
+**Q2: Kategorileri eklerken hataları nasıl yönetirim?**  
 A2: Kategori adlarının geçerli stringler olduğundan emin olun ve beklenmeyen sorunları yönetmek için kodunuzda istisnaları kontrol edin.
 
-**S3: Ekleyebileceğim kategori sayısında bir limit var mı?**  
+**Q3: Ekleyebileceğim kategori sayısında bir limit var mı?**  
 A3: Outlook genellikle mesaj başına 10 kategoriye kadar destekler, ancak her zaman Microsoft'un en son yönergelerine bakmak en iyisidir.
 
-**S4: Büyük e-posta hacimlerini işlerken yüksek performansı nasıl sağlarız?**  
+**Q4: Büyük e-posta hacimlerini işlerken yüksek performansı nasıl sağlarsınız?**  
 A4: Verimli bellek yönetimi ve toplu işlemler uygulayarak optimum performans elde edin.
 
-**S5: Aspose.Email özellikleriyle ilgili daha fazla belgeyi nereden bulabilirim?**  
+**Q5: Aspose.Email özellikleri hakkında daha fazla belgeyi nerede bulabilirim?**  
 A5: Ayrıntılı kılavuzlar ve API referansları için [Aspose Email Documentation](https://reference.aspose.com/email/java/) adresini ziyaret edin.
 
-## Ek Sık Sorulan Sorular
-**S: Aspose.Email EML veya PST gibi diğer e-posta formatlarını destekliyor mu?**  
+## Ek Sıkça Sorulan Sorular
+
+**Q: Aspose.Email EML veya PST gibi diğer e-posta formatlarını destekliyor mu?**  
 A: Evet, kütüphane EML, MSG, PST ve diğer yaygın formatları okuyup yazabilir.
 
-**S: Kategorilere programlı olarak renk atayabilir miyim?**  
-A: Kategori renkleri Outlook tarafından yönetilir; kategori adını ayarlayabilirsiniz ve Outlook mevcutsa ilgili rengi uygular.
+**Q: Kategorilere programlı olarak renk atayabilir miyim?**  
+A: Kategori renkleri Outlook tarafından yönetilir; kategori adını ayarlayabilirsiniz ve Outlook mevcutsa ilişkili rengi uygular.
 
-**S: Çok iş parçacıklı bir ortamda kategorilerle nasıl çalışırım?**  
+**Q: Çok‑iş parçacıklı bir ortamda kategorilerle nasıl çalışırım?**  
 A: Her iş parçacığı için ayrı `MapiMessage` örnekleri oluşturun veya ortak nesnelere erişimi senkronize ederek eşzamanlılık sorunlarından kaçının.
 
-**S: Outlook profilindeki tüm kullanılabilir kategorileri listelemenin bir yolu var mı?**  
+**Q: Outlook profilindeki mevcut tüm kategorileri listelemenin bir yolu var mı?**  
 A: `FollowUpManager.getAllCategories()` yöntemiyle (yeni sürümlerde mevcut) varsayılan kategori listesini alabilirsiniz.
-
-## Kaynaklar
-- **Documentation**: https://reference.aspose.com/email/java/
-- **Download**: https://releases.aspose.com/email/java/
-- **Purchase**: https://purchase.aspose.com/buy
-- **Free Trial**: https://releases.aspose.com/email/java/
-- **Temporary License**: https://purchase.aspose.com/temporary-license/
-- **Support**: https://forum.aspose.com/c/email/10
 
 ---
 
-**Last Updated:** 2025-12-22  
+**Last Updated:** 2026-03-28  
 **Tested With:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
 **Author:** Aspose
 
