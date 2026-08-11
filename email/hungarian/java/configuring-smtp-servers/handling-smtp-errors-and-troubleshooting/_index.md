@@ -1,10 +1,11 @@
 ---
-date: 2026-01-09
-description: Ismerje meg, hogyan küldjön e‑mailt az Aspise.Email for Java segítségével,
-  kezelje az SMTP hibákat, és oldja meg a gyakori problémákat.
-linktitle: How to Send Email and Handle SMTP Errors with Aspose.Email
+date: 2026-03-31
+description: Tanulja meg, hogyan küldjön e‑mailt Java‑val az Aspose.Email segítségével,
+  hibaelhárítsa az SMTP Java problémákat, és oldja meg a Java SMTP hitelesítési hibát
+  vagy a Java SMTP TLS/SSL problémákat.
+linktitle: How to Send Email Java Using Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Hogyan küldjünk e-mailt és kezeljünk SMTP hibákat az Aspose.Email segítségével
+title: Hogyan küldjünk e‑mailt Java‑ban az Aspose.Email segítségével
 url: /hu/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 weight: 14
 ---
@@ -15,45 +16,47 @@ weight: 14
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# SMTP hibák kezelése és hibaelhárítás az Aspose.Email segítségével
+# SMTP hibák kezelése és hibakeresés az Aspose.Email segítségével
 
-## SMTP hibák bevezetése
+## Bevezetés az SMTP hibákba
 
-Amikor **how to send email**-t használ Java‑val, elkerülhetetlen, hogy SMTP hibaüzenetekkel találkozz, ha valami rosszul megy a szerver oldalon. Ezeket a hibákat a levélkiszolgáló generálja, amikor nem tudja kézbesíteni az üzenetedet – legyen szó érvénytelen címzettcímről, hiányzó hitelesítési tokenről vagy ideiglenes hálózati hibáról. A hibaüzenetek jelentésének megértése elengedhetetlen a megbízható e‑mail‑alapú alkalmazások építéséhez.
+Amikor **how to send email java**, elkerülhetetlen, hogy SMTP hibaüzenetekbe ütközzön, ha valami rosszul megy a szerver oldalon. Ezeket a hibákat a levélkiszolgáló generálja, amikor nem tudja kézbesíteni az üzenetet – legyen szó érvénytelen címzett címről, hiányzó hitelesítési tokenről vagy egy ideiglenes hálózati hibáról. Annak megértése, hogy mit jelentenek ezek az üzenetek, elengedhetetlen a megbízható e‑mail‑alapú alkalmazások építéséhez.
 
 ## Gyors válaszok
-- **Mi a leggyakoribb oka az SMTP hibáknak?** Helytelen szerverbeállítások vagy hitelesítési problémák.  
-- **Lekérdezhetem a részletes hibakódokat?** Igen – az Aspose.Email a SMTP válaszkódot a kivétel üzenetében jeleníti meg.  
-- **Szükség van licencre az e‑mailek küldéséhez?** Fejlesztéshez egy ingyenes próba elegendő; termeléshez kereskedelmi licenc szükséges.  
-- **Támogatott a TLS/SSL?** Teljesen – állítsd be `client.setSecurityOptions(SecurityOptions.SSLExplicit);`.  
-- **Hogyan naplózhatom az e‑mail tevékenységet?** Használj try‑catch blokkot, és írd a `ex.getMessage()`-t a naplóidba.
+- **Mi a fő oka az SMTP hibáknak?** Helytelen szerverbeállítások vagy hitelesítési problémák.  
+- **Lekérhetek részletes hibakódokat?** Igen – az Aspose.Email megjeleníti az SMTP válaszkódot a kivétel üzenetében.  
+- **Szükségem van licencre az e‑mailek küldéséhez?** A ingyenes próba verzió fejlesztéshez használható; a termeléshez kereskedelmi licenc szükséges.  
+- **Támogatott a TLS/SSL?** Teljesen – állítsa be a `client.setSecurityOptions(SecurityOptions.SSLExplicit);` értéket.  
+- **Hogyan naplózhatom az e‑mail tevékenységet?** Használjon try‑catch blokkot, és írja a `ex.getMessage()`-t a naplókba.
 
-## Mi az a “how to send email” az Aspose.Email‑el?
-Az Aspose.Email for Java használata e‑mail küldéshez azt jelenti, hogy létrehozol egy `SmtpClient`‑et, beállítod a szerveradatait, összeállítasz egy `MailMessage`‑t, majd meghívod a `client.send(message)`‑t. A könyvtár elrejti az alacsony szintű SMTP protokollt, miközben továbbra is hozzáférést biztosít a nyers szerverválaszokhoz a hibaelhárítás érdekében.
+## Mi az a “how to send email java” az Aspose.Email‑el?
 
-## Miért válaszd az Aspose.Email for Java‑t?
-- **Robusztus hiba kezelés** – részletes `SmtpException` adatok.  
-- **Melléklet támogatás** – egyszerűen adhatsz hozzá fájlokat (`send email attachment java`).  
+Az Aspose.Email for Java használatával történő e‑mail küldés azt jelenti, hogy létrehoz egy `SmtpClient` példányt, beállítja a szerver részleteit, összeállít egy `MailMessage`‑t, és meghívja a `client.send(message)` metódust. A könyvtár elrejti az alacsony szintű SMTP protokollt, miközben továbbra is hozzáférést biztosít a nyers szerverválaszokhoz a hibakereséshez.
+
+## Miért használjuk az Aspose.Email‑t Java‑ban?
+
+- **Robusztus hibakezelés** – részletes `SmtpException` adatok.  
+- **Melléklet támogatás** – fájlok egyszerű hozzáadása (`send email attachment java`).  
 - **Keresztplatformos** – bármely Java futtatókörnyezetben működik.  
-- **Átfogó dokumentáció** – ideális egy **aspose email tutorial java**‑hoz.
+- **Átfogó dokumentáció** – ideális egy **aspose email tutorial java** számára.  
 
 ## Előfeltételek
 
-Mielőtt a gyakorlati részbe merülnénk, győződj meg róla, hogy minden szükséges dolog megvan:
+Mielőtt a gyakorlati részbe merülnénk, győződjünk meg róla, hogy minden szükséges dolog rendelkezésre áll:
 
-- Java fejlesztői környezet telepítve.  
-- Aspose.Email for Java könyvtár telepítve. Letöltheted [itt](https://releases.aspose.com/email/java/).  
-- Alapvető ismeretek az SMTP‑ről és az e‑mail protokollokról.
+- Java fejlesztői környezet beállítva.  
+- Az Aspose.Email for Java könyvtár telepítve. Letöltheti [itt](https://releases.aspose.com/email/java/).  
+- Alapvető ismeretek az SMTP és e‑mail protokollokról.
 
 ## Java projekt beállítása
 
-Kezdj egy új Java projektet a kedvenc IDE‑dben. Ne felejtsd hozzáadni az Aspose.Email for Java könyvtárat a projekt függőségeihez.
+A kezdéshez hozzon létre egy új Java projektet a kedvenc IDE-jében. Győződjön meg róla, hogy az Aspose.Email for Java könyvtárat hozzáadja a projekt függőségeihez.
 
 ## E‑mail küldése
 
 ### 1. lépés: Szükséges könyvtárak importálása
 
-A Java osztályod elején importáld a szükséges könyvtárakat:
+In your Java class, start by importing the required libraries:
 
 ```java
 import com.aspose.email.*;
@@ -61,15 +64,15 @@ import com.aspose.email.*;
 
 ### 2. lépés: E‑mail kliens létrehozása
 
-Ezután hozz létre egy `SmtpClient` példányt, amely kezeli az e‑mail küldési folyamatot:
+Next, create an instance of the `SmtpClient` class, which will handle the email sending process:
 
 ```java
 SmtpClient client = new SmtpClient();
 ```
 
-### 3. lépés: SMTP szerver beállításainak konfigurálása
+### 3. lépés: SMTP szerver beállítások konfigurálása
 
-Állítsd be az SMTP szerver paramétereit, beleértve a host‑ot, portot és hitelesítő adatokat:
+Set up the SMTP server settings, including the host, port, and credentials:
 
 ```java
 client.setHost("smtp.example.com");
@@ -80,15 +83,15 @@ client.setPassword("your_password");
 
 ### 4. lépés: E‑mail összeállítása
 
-Most állítsd össze azt az e‑mailt, amelyet küldeni szeretnél:
+Now, let's compose the email you want to send:
 
 ```java
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body of the email.");
 ```
 
-### 5. lépés: E‑mail küldése
+### 5. lépés: E‑mail elküldése
 
-Küldd el az e‑mailt a `send` metódussal:
+Send the email using the `send` method:
 
 ```java
 client.send(message);
@@ -96,7 +99,7 @@ client.send(message);
 
 ## SMTP hibák kezelése
 
-SMTP hibák előfordulhatnak az e‑mail küldése közben. Ezeknek a hibáknak az elegáns kezeléséhez használj try‑catch blokkokat. Egy példa:
+SMTP errors can occur during the email sending process. To handle these errors gracefully, you can use try‑catch blocks. Here's an example:
 
 ```java
 try {
@@ -107,47 +110,47 @@ try {
 }
 ```
 
-### Hogyan kezeljük hatékonyan az SMTP problémákat
+### Hogyan kezeljünk SMTP problémákat hatékonyan
 
-- **Ellenőrizd a kivétel státuszkódját** (`ex.getStatusCode()`) az autentikációs hibák, a postafiók elérhetetlensége stb. megkülönböztetéséhez.  
-- **Újrapróbálkozási logika**: átmeneti hibák (pl. `421 Service not available`) esetén alkalmazz exponenciális késleltetést.  
-- **Teljes válasz naplózása**: tárold a `ex.getMessage()` és `ex.getInnerException()` értékeket későbbi elemzéshez.
+- **Ellenőrizze a kivétel állapotkódját** (`ex.getStatusCode()`) a hitelesítési hibák, a postafiók nem elérhető stb. közötti megkülönböztetéshez.  
+- **Újrapróbálkozási logika**: Átmeneti hibák esetén, mint a `421 Service not available`, alkalmazzon exponenciális késleltetést.  
+- **Teljes válasz naplózása**: Tárolja a `ex.getMessage()` és `ex.getInnerException()` értékeket későbbi elemzéshez.  
 
 ## Gyakori felhasználási esetek
 
-- **Sending email attachment java** – PDF‑eket, képeket vagy log fájlokat csatolj a `message.getAttachments().addItem(new Attachment("path/to/file"));` használatával.  
-- **Tömeges e‑mail küldés** – használd ugyanazt a `SmtpClient` példányt több `MailMessage` objektumhoz a teljesítmény javítása érdekében.  
-- **Dinamikus tartalom** – generálj e‑mail törzseket sablonokból (pl. Thymeleaf) a `MailMessage` létrehozása előtt.
+- **Sending email attachment java** – PDF‑eket, képeket vagy naplókat csatolhat a `message.getAttachments().addItem(new Attachment("path/to/file"));` használatával.  
+- **Tömeges e‑mail küldés** – ugyanazt a `SmtpClient` példányt használja több `MailMessage` objektumhoz a teljesítmény javítása érdekében.  
+- **Dinamikus tartalom** – a `MailMessage` létrehozása előtt sablonokból (pl. Thymeleaf) generálja az e‑mail törzseket.  
 
-## Hibaelhárítási tippek
+## Hibakeresési tippek
 
 | Tünet | Valószínű ok | Gyors megoldás |
-|-------|--------------|----------------|
-| `Authentication failed` | Hibás felhasználónév/jelszó vagy hiányzó `STARTTLS` | Ellenőrizd a hitelesítő adatokat és engedélyezd a `client.setSecurityOptions(SecurityOptions.SSLExplicit);` beállítást |
-| `Connection timed out` | Hálózat/tűzfal blokkolja a 587/465‑ös portot | Teszteld a kapcsolatot `telnet smtp.example.com 587`‑vel |
-| `Mailbox unavailable` | Érvénytelen címzettcím | Ellenőrizd a e‑mail cím formátumát |
-| `Message size exceeds limit` | Nagy méretű melléklet | Tömöríts vagy oszd szét a mellékleteket |
+|---------|--------------|-----------|
+| `Authentication failed` | Helytelen felhasználónév/jelszó vagy hiányzó `STARTTLS` | Ellenőrizze a hitelesítő adatokat, és engedélyezze a `client.setSecurityOptions(SecurityOptions.SSLExplicit);` beállítást |
+| `Connection timed out` | A hálózat/tűzfal blokkolja a 587/465 portot | Tesztelje a kapcsolatot a `telnet smtp.example.com 587` paranccsal |
+| `Mailbox unavailable` | Érvénytelen címzett cím | Ellenőrizze újra az e‑mail cím formátumát |
+| `Message size exceeds limit` | Nagy melléklet | Tömörítse vagy bontsa szét a mellékleteket |
 
-## Gyakran feltett kérdések
+## Gyakran Ismételt Kérdések
 
 **Q: Hogyan adhatok hozzá több mellékletet egy e‑mailhez?**  
-A: Használd a `message.getAttachments().addItem(new Attachment("file1.pdf"));` sort, és ismételd meg minden fájlhoz.
+A: Használja a `message.getAttachments().addItem(new Attachment("file1.pdf"));` kódot, és ismételje meg minden fájlhoz.
 
 **Q: Támogatja az Aspose.Email az OAuth2 hitelesítést?**  
-A: Igen – állítsd be a `client.setOAuthToken("your_token");`‑t, amikor Gmail‑hez hasonló szolgáltatókat használsz.
+A: Igen – állítsa be a `client.setOAuthToken("your_token");` értéket, amikor például a Gmail-t használja.
 
-**Q: Küldhetek e‑maileket proxy szerveren keresztül?**  
-A: Természetesen – konfiguráld a `client.setProxyHost("proxy.example.com");` és a `client.setProxyPort(8080);` beállításokat.
+**Q: Küldhetek e‑mailt proxy szerveren keresztül?**  
+A: Természetesen – konfigurálja a `client.setProxyHost("proxy.example.com");` és a `client.setProxyPort(8080);` beállításokat.
 
 **Q: Mely Java verziók támogatottak?**  
-A: Az Aspose.Email Java 8 és újabb futtatókörnyezetekkel működik.
+A: Az Aspose.Email a Java 8 és újabb futtatókörnyezetekkel működik.
 
-**Q: Van mód az e‑mail előnézetére küldés előtt?**  
-A: Meghívhatod a `message.getMimeContent();`‑t, hogy megkapd a nyers MIME karakterláncot ellenőrzés céljából.
+**Q: Van mód az e‑mail előnézetére a küldés előtt?**  
+A: Meghívhatja a `message.getMimeContent();` metódust, hogy lekérje a nyers MIME karakterláncot ellenőrzés céljából.
 
 ---
 
-**Utoljára frissítve:** 2026-01-09  
+**Utolsó frissítés:** 2026-03-31  
 **Tesztelve:** Aspose.Email for Java 23.12  
 **Szerző:** Aspose  
 

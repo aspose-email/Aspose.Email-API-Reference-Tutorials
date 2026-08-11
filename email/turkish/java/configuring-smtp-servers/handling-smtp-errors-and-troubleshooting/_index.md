@@ -1,10 +1,11 @@
 ---
-date: 2026-01-09
-description: Aspise.Email for Java kullanarak e-posta göndermeyi öğrenin, SMTP hatalarını
-  yönetin ve yaygın sorunları giderin.
-linktitle: How to Send Email and Handle SMTP Errors with Aspose.Email
+date: 2026-03-31
+description: Aspose.Email ile Java’da e-posta gönderme, SMTP Java sorunlarını giderme
+  ve Java SMTP kimlik doğrulama hatası veya Java SMTP TLS/SSL problemlerini çözme
+  konusunda bilgi edinin.
+linktitle: How to Send Email Java Using Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Aspose.Email ile E-posta Gönderme ve SMTP Hatalarını Yönetme
+title: Aspose.Email Kullanarak Java ile E-posta Gönderme
 url: /tr/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 weight: 14
 ---
@@ -15,41 +16,41 @@ weight: 14
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# SMTP Hatalarını İşleme ve Aspose.Email ile Sorun Giderme
+# SMTP Hatalarını Yönetme ve Aspose.Email ile Sorun Giderme
 
 ## SMTP Hatalarına Giriş
 
-Java ile **how to send email** yaptığınızda, sunucu tarafında bir şeyler ters giderse kaçınılmaz olarak SMTP hata mesajlarıyla karşılaşırsınız. Bu hatalar, posta sunucusu mesajınızı teslim edemediğinde—geçersiz alıcı adresi, eksik kimlik doğrulama belirteci veya geçici bir ağ sorunu gibi—oluşur. Bu mesajların ne anlama geldiğini anlamak, güvenilir e‑posta‑tabanlı uygulamalar geliştirmek için çok önemlidir.
+When you **how to send email java**, sunucu tarafında bir şeyler ters gittiğinde kaçınılmaz olarak SMTP hata mesajlarıyla karşılaşırsınız. Bu hatalar, geçersiz alıcı adresi, eksik kimlik doğrulama belirteci veya geçici bir ağ sorunu gibi nedenlerle posta sunucusunun mesajınızı teslim edemediği her durumda oluşturulur. Bu mesajların ne anlama geldiğini anlamak, güvenilir e‑posta‑entegre uygulamalar geliştirmek için çok önemlidir.
 
 ## Hızlı Yanıtlar
 - **SMTP hatalarının temel nedeni nedir?** Yanlış sunucu ayarları veya kimlik doğrulama sorunları.  
 - **Ayrıntılı hata kodlarını alabilir miyim?** Evet—Aspose.Email, SMTP yanıt kodunu istisna mesajında gösterir.  
-- **E-posta göndermek için lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme yeterlidir; üretim için ticari lisans gereklidir.  
+- **E‑posta göndermek için lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme yeterlidir; üretim için ticari lisans gereklidir.  
 - **TLS/SSL destekleniyor mu?** Kesinlikle—`client.setSecurityOptions(SecurityOptions.SSLExplicit);` ayarlayın.  
-- **E-posta etkinliğini nasıl kaydederim?** Bir try‑catch bloğu kullanın ve `ex.getMessage()` değerini loglarınıza yazın.
+- **E‑posta etkinliğini nasıl kaydederim?** Bir try‑catch bloğu kullanın ve `ex.getMessage()` değerini loglarınıza yazın.
 
-## Aspose.Email ile “how to send email” nedir?
-Aspose.Email for Java ile e‑posta göndermek, bir `SmtpClient` oluşturmak, sunucu ayrıntılarını yapılandırmak, bir `MailMessage` hazırlamak ve `client.send(message)` metodunu çağırmak anlamına gelir. Kütüphane, düşük seviyeli SMTP protokolünü soyutlar ancak sorun giderme için ham sunucu yanıtlarına erişim sağlar.
+## Aspose.Email ile “how to send email java” nedir?
+Aspose.Email for Java ile e‑posta göndermek, bir `SmtpClient` oluşturmayı, sunucu ayrıntılarınızı yapılandırmayı, bir `MailMessage` hazırlamayı ve `client.send(message)` çağrısını yapmayı içerir. Kütüphane, düşük seviyeli SMTP protokolünü soyutlarken, sorun giderme için ham sunucu yanıtlarına erişim sağlar.
 
-## Aspose.Email for Java Neden Kullanılmalı?
+## Aspose.Email for Java neden kullanılmalı?
 - **Sağlam hata yönetimi** – ayrıntılı `SmtpException` verileri.  
 - **Ek desteği** – dosyaları kolayca ekleyin (`send email attachment java`).  
 - **Çapraz platform** – herhangi bir Java çalışma zamanında çalışır.  
-- **Kapsamlı dokümantasyon** – **aspose email tutorial java** için idealdir.
+- **Kapsamlı dokümantasyon** – **aspose email tutorial java** için idealdir.  
 
 ## Önkoşullar
 
-Pratik bölümlere geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olun:
+Pratik konulara girmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
 - Java geliştirme ortamı kurulu.  
 - Aspose.Email for Java kütüphanesi yüklü. Bunu [buradan](https://releases.aspose.com/email/java/) indirebilirsiniz.  
-- SMTP ve e‑posta protokolleri hakkında temel bilgi.
+- SMTP ve e‑posta protokolleri hakkında temel bilgi.  
 
 ## Java Projenizi Kurma
 
-Başlamak için, favori IDE'nizde yeni bir Java projesi oluşturun. Aspose.Email for Java kütüphanesini projenizin bağımlılıklarına eklediğinizden emin olun.
+Başlamak için, sevdiğiniz IDE'de yeni bir Java projesi oluşturun. Aspose.Email for Java kütüphanesini projenizin bağımlılıklarına eklediğinizden emin olun.
 
-## E‑posta Gönderme
+## E-posta Gönderme
 
 ### Adım 1: Gerekli Kütüphaneleri İçe Aktarın
 
@@ -59,7 +60,7 @@ Java sınıfınızda, gerekli kütüphaneleri içe aktararak başlayın:
 import com.aspose.email.*;
 ```
 
-### Adım 2: Bir E‑posta İstemcisi Oluşturun
+### Adım 2: Bir E-posta İstemcisi Oluşturun
 
 Sonra, e‑posta gönderme sürecini yönetecek `SmtpClient` sınıfının bir örneğini oluşturun:
 
@@ -69,7 +70,7 @@ SmtpClient client = new SmtpClient();
 
 ### Adım 3: SMTP Sunucu Ayarlarını Yapılandırın
 
-Ana bilgisayar, port ve kimlik bilgileri dahil olmak üzere SMTP sunucu ayarlarını yapılandırın:
+Sunucu, port ve kimlik bilgileri dahil olmak üzere SMTP sunucu ayarlarını yapılandırın:
 
 ```java
 client.setHost("smtp.example.com");
@@ -78,25 +79,25 @@ client.setUsername("your_username");
 client.setPassword("your_password");
 ```
 
-### Adım 4: E‑postayı Oluşturun
+### Adım 4: E-postayı Oluşturun
 
-Şimdi, göndermek istediğiniz e‑postayı oluşturalım:
+Şimdi, göndermek istediğiniz e-postayı oluşturalım:
 
 ```java
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body of the email.");
 ```
 
-### Adım 5: E‑postayı Gönderin
+### Adım 5: E-postayı Gönderin
 
-E‑postayı `send` metodu ile gönderin:
+`send` metodunu kullanarak e-postayı gönderin:
 
 ```java
 client.send(message);
 ```
 
-## SMTP Hatalarını İşleme
+## SMTP Hatalarını Yönetme
 
-SMTP hataları, e‑posta gönderme sürecinde ortaya çıkabilir. Bu hataları nazikçe ele almak için try‑catch blokları kullanabilirsiniz. İşte bir örnek:
+SMTP hataları e‑posta gönderme sürecinde ortaya çıkabilir. Bu hataları nazikçe yönetmek için try‑catch blokları kullanabilirsiniz. İşte bir örnek:
 
 ```java
 try {
@@ -107,45 +108,45 @@ try {
 }
 ```
 
-### SMTP Sorunlarını Etkili Bir Şekilde Nasıl Ele Alırsınız
-- **İstisnanın durum kodunu kontrol edin** (`ex.getStatusCode()`) ve kimlik doğrulama hataları, posta kutusu bulunamama gibi durumları ayırın.  
-- **Yeniden deneme mantığı**: `421 Service not available` gibi geçici hatalar için üssel geri çekilme (exponential back‑off) uygulayın.  
-- **Tam yanıtı loglayın**: `ex.getMessage()` ve `ex.getInnerException()` değerlerini daha sonraki analiz için saklayın.
+### SMTP Sorunlarını Etkili Bir Şekilde Nasıl Yönetilir
+
+- **İstisnanın durum kodunu kontrol edin** (`ex.getStatusCode()`) ve kimlik doğrulama hataları, posta kutusu bulunamaması vb. durumları ayırın.  
+- **Yeniden deneme mantığı**: `421 Service not available` gibi geçici hatalar için üssel geri çekilme uygulayın.  
+- **Tam yanıtı kaydedin**: `ex.getMessage()` ve `ex.getInnerException()` değerlerini daha sonraki analiz için saklayın.  
 
 ## Yaygın Kullanım Senaryoları
-- **Sending email attachment java** – PDF, görüntü veya log dosyalarını `message.getAttachments().addItem(new Attachment("path/to/file"));` kullanarak ekleyin.  
-- **Toplu e‑posta gönderimi** – performansı artırmak için aynı `SmtpClient` örneğini birden fazla `MailMessage` nesnesiyle yeniden kullanın.  
-- **Dinamik içerik** – `MailMessage` oluşturulmadan önce şablonlardan (ör. Thymeleaf) e‑posta gövdeleri üretin.
+
+- **Sending email attachment java** – PDF, görüntü veya günlük dosyalarını `message.getAttachments().addItem(new Attachment("path/to/file"));` kullanarak ekleyin.  
+- **Toplu e-posta gönderimi** – performansı artırmak için aynı `SmtpClient` örneğini birden fazla `MailMessage` nesnesiyle yeniden kullanın.  
+- **Dinamik içerik** – `MailMessage` oluşturmadan önce şablonlardan (ör. Thymeleaf) e‑posta gövdeleri üretin.  
 
 ## Sorun Giderme İpuçları
 
 | Semptom | Muhtemel Neden | Hızlı Çözüm |
 |---------|----------------|-------------|
-| `Authentication failed` | Yanlış kullanıcı adı/şifre veya eksik `STARTTLS` | Kimlik bilgilerini doğrulayın ve `client.setSecurityOptions(SecurityOptions.SSLExplicit);` etkinleştirin. |
-| `Connection timed out` | Ağ/ firewall 587/465 portunu engelliyor | `telnet smtp.example.com 587` ile bağlantıyı test edin. |
-| `Mailbox unavailable` | Geçersiz alıcı adresi | E‑posta adresi biçimini tekrar kontrol edin. |
-| `Message size exceeds limit` | Büyük ek | Ekleri sıkıştırın veya bölün. |
+| `Authentication failed` | Yanlış kullanıcı adı/parola veya eksik `STARTTLS` | Kimlik bilgilerini doğrulayın ve `client.setSecurityOptions(SecurityOptions.SSLExplicit);` etkinleştirin |
+| `Connection timed out` | Ağ/ güvenlik duvarı 587/465 portunu engelliyor | `telnet smtp.example.com 587` ile bağlantıyı test edin |
+| `Mailbox unavailable` | Geçersiz alıcı adresi | E-posta adresi biçimini tekrar kontrol edin |
+| `Message size exceeds limit` | Büyük ek | Ekleri sıkıştırın veya bölün |
 
 ## Sıkça Sorulan Sorular
 
-**S: Bir e‑postada birden fazla ek nasıl ekleyebilirim?**  
-C: Her dosya için `message.getAttachments().addItem(new Attachment("file1.pdf"));` komutunu tekrarlayın.
+**Q: Bir e-postada birden fazla ek nasıl ekleyebilirim?**  
+A: Her dosya için `message.getAttachments().addItem(new Attachment("file1.pdf"));` kodunu kullanarak tekrarlayın.
 
-**S: Aspose.Email OAuth2 kimlik doğrulamasını destekliyor mu?**  
-C: Evet—Gmail gibi sağlayıcıları kullanırken `client.setOAuthToken("your_token");` ayarlayın.
+**Q: Aspose.Email OAuth2 kimlik doğrulamasını destekliyor mu?**  
+A: Evet—Gmail gibi sağlayıcıları kullanırken `client.setOAuthToken("your_token");` ayarlayın.
 
-**S: E‑postaları bir proxy sunucusu üzerinden gönderebilir miyim?**  
-C: Kesinlikle—`client.setProxyHost("proxy.example.com");` ve `client.setProxyPort(8080);` yapılandırın.
+**Q: Proxy sunucusu üzerinden e‑posta gönderebilir miyim?**  
+A: Kesinlikle—`client.setProxyHost("proxy.example.com");` ve `client.setProxyPort(8080);` yapılandırın.
 
-**S: Hangi Java sürümleri destekleniyor?**  
-C: Aspose.Email, Java 8 ve üzeri çalışma zamanlarıyla çalışır.
+**Q: Hangi Java sürümleri destekleniyor?**  
+A: Aspose.Email, Java 8 ve üzeri çalışma zamanlarıyla çalışır.
 
-**S: E‑postayı göndermeden önce önizleme yapmanın bir yolu var mı?**  
-C: `message.getMimeContent();` çağrısıyla ham MIME içeriğini alarak inceleyebilirsiniz.
+**Q: Göndermeden önce e‑postayı ön izleme imkanı var mı?**  
+A: `message.getMimeContent();` çağrısıyla ham MIME dizesini alarak inceleyebilirsiniz.
 
----
-
-**Son Güncelleme:** 2026-01-09  
+**Son Güncelleme:** 2026-03-31  
 **Test Edilen Versiyon:** Aspose.Email for Java 23.12  
 **Yazar:** Aspose  
 

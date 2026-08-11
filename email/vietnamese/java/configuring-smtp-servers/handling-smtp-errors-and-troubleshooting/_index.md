@@ -1,10 +1,10 @@
 ---
-date: 2026-01-09
-description: Tìm hiểu cách gửi email bằng Aspise.Email cho Java, xử lý lỗi SMTP và
-  khắc phục các vấn đề thường gặp.
-linktitle: How to Send Email and Handle SMTP Errors with Aspose.Email
+date: 2026-03-31
+description: Học cách gửi email bằng Java với Aspose.Email, khắc phục các vấn đề SMTP
+  trong Java và giải quyết lỗi xác thực SMTP Java hoặc các vấn đề TLS/SSL SMTP Java.
+linktitle: How to Send Email Java Using Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Cách gửi email và xử lý lỗi SMTP với Aspose.Email
+title: Cách gửi email Java bằng Aspose.Email
 url: /vi/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 weight: 14
 ---
@@ -15,43 +15,43 @@ weight: 14
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Xử lý Lỗi SMTP và Khắc phục Sự cố với Aspose.Email
+# Xử lý lỗi SMTP và khắc phục sự cố với Aspose.Email
 
-## Giới thiệu về Lỗi SMTP
+## Giới thiệu về lỗi SMTP
 
-Khi bạn **how to send email** với Java, bạn sẽ không tránh khỏi các thông báo lỗi SMTP nếu có gì đó sai sót ở phía máy chủ. Những lỗi này được máy chủ thư tạo ra mỗi khi không thể gửi tin nhắn của bạn — dù là do địa chỉ người nhận không hợp lệ, thiếu token xác thực, hay một sự cố mạng tạm thời. Hiểu được ý nghĩa của các thông báo này là rất quan trọng để xây dựng các ứng dụng hỗ trợ email đáng tin cậy.
+Khi bạn **how to send email java**, bạn sẽ không tránh khỏi các thông báo lỗi SMTP nếu có gì đó sai sót ở phía máy chủ. Những lỗi này được máy chủ thư tạo ra mỗi khi không thể gửi tin nhắn của bạn — dù là do địa chỉ người nhận không hợp lệ, token xác thực thiếu, hoặc sự cố mạng tạm thời. Hiểu được ý nghĩa của các thông báo này là điều cần thiết để xây dựng các ứng dụng hỗ trợ email đáng tin cậy.
 
 ## Câu trả lời nhanh
-- **Nguyên nhân chính của các lỗi SMTP là gì?** Cài đặt máy chủ không đúng hoặc vấn đề xác thực.  
+- **Nguyên nhân chính của các thất bại SMTP là gì?** Cài đặt máy chủ không đúng hoặc vấn đề xác thực.  
 - **Tôi có thể lấy mã lỗi chi tiết không?** Có — Aspose.Email hiển thị mã phản hồi SMTP trong thông báo ngoại lệ.  
-- **Có cần giấy phép để gửi email không?** Bản dùng thử miễn phí đủ cho phát triển; giấy phép thương mại cần thiết cho môi trường sản xuất.  
-- **TLS/SSL có được hỗ trợ không?** Hoàn toàn — đặt `client.setSecurityOptions(SecurityOptions.SSLExplicit);`.  
-- **Làm sao ghi lại hoạt động email?** Sử dụng khối try‑catch và ghi `ex.getMessage()` vào log của bạn.
+- **Tôi có cần giấy phép để gửi email không?** Bản dùng thử miễn phí hoạt động cho phát triển; giấy phép thương mại cần thiết cho môi trường sản xuất.  
+- **TLS/SSL có được hỗ trợ không?** Chắc chắn — đặt `client.setSecurityOptions(SecurityOptions.SSLExplicit);`.  
+- **Làm thế nào để ghi lại hoạt động email?** Sử dụng khối try‑catch và ghi `ex.getMessage()` vào log của bạn.
 
-## “how to send email” là gì với Aspose.Email?
-Gửi email với Aspose.Email for Java có nghĩa là tạo một `SmtpClient`, cấu hình nó với các chi tiết máy chủ của bạn, soạn một `MailMessage`, và gọi `client.send(message)`. Thư viện này trừu tượng hoá giao thức SMTP mức thấp trong khi vẫn cho phép bạn truy cập các phản hồi thô của máy chủ để khắc phục sự cố.
+## “how to send email java” là gì với Aspose.Email?
+Gửi email với Aspose.Email cho Java có nghĩa là tạo một `SmtpClient`, cấu hình nó với chi tiết máy chủ của bạn, soạn một `MailMessage`, và gọi `client.send(message)`. Thư viện trừu tượng giao thức SMTP cấp thấp trong khi vẫn cung cấp cho bạn quyền truy cập vào phản hồi thô của máy chủ để khắc phục sự cố.
 
-## Tại sao nên dùng Aspose.Email cho Java?
-- **Xử lý lỗi mạnh mẽ** – dữ liệu chi tiết của `SmtpException`.  
+## Tại sao nên sử dụng Aspose.Email cho Java?
+- **Xử lý lỗi mạnh mẽ** – dữ liệu chi tiết `SmtpException`.  
 - **Hỗ trợ đính kèm** – dễ dàng thêm tệp (`send email attachment java`).  
 - **Đa nền tảng** – hoạt động trên bất kỳ môi trường Java nào.  
-- **Tài liệu toàn diện** – lý tưởng cho **aspose email tutorial java**.
+- **Tài liệu toàn diện** – lý tưởng cho một **aspose email tutorial java**.  
 
 ## Yêu cầu trước
 
-Trước khi chúng ta đi vào các khía cạnh thực tế, hãy chắc chắn rằng bạn đã có mọi thứ cần thiết:
+Trước khi chúng ta đi sâu vào các khía cạnh thực tế, hãy chắc chắn rằng bạn có mọi thứ cần thiết:
 
-- Môi trường phát triển Java đã được cài đặt.  
-- Thư viện Aspose.Email for Java đã được cài đặt. Bạn có thể tải về [tại đây](https://releases.aspose.com/email/java/).  
+- Môi trường phát triển Java đã được thiết lập.  
+- Thư viện Aspose.Email cho Java đã được cài đặt. Bạn có thể tải xuống tại [here](https://releases.aspose.com/email/java/).  
 - Kiến thức cơ bản về SMTP và các giao thức email.
 
-## Cài đặt Dự án Java của Bạn
+## Cài đặt dự án Java của bạn
 
-Để bắt đầu, tạo một dự án Java mới trong IDE yêu thích của bạn. Đảm bảo thêm thư viện Aspose.Email for Java vào các phụ thuộc của dự án.
+Để bắt đầu, tạo một dự án Java mới trong IDE yêu thích của bạn. Đảm bảo thêm thư viện Aspose.Email cho Java vào các phụ thuộc của dự án.
 
-## Gửi Email
+## Gửi email
 
-### Bước 1: Nhập Các Thư Viện Cần Thiết
+### Bước 1: Nhập các thư viện cần thiết
 
 Trong lớp Java của bạn, bắt đầu bằng việc nhập các thư viện cần thiết:
 
@@ -59,7 +59,7 @@ Trong lớp Java của bạn, bắt đầu bằng việc nhập các thư viện
 import com.aspose.email.*;
 ```
 
-### Bước 2: Tạo Khách Hàng Email
+### Bước 2: Tạo client email
 
 Tiếp theo, tạo một thể hiện của lớp `SmtpClient`, lớp sẽ xử lý quá trình gửi email:
 
@@ -67,7 +67,7 @@ Tiếp theo, tạo một thể hiện của lớp `SmtpClient`, lớp sẽ xử 
 SmtpClient client = new SmtpClient();
 ```
 
-### Bước 3: Cấu Hình Cài Đặt Máy Chủ SMTP
+### Bước 3: Cấu hình cài đặt máy chủ SMTP
 
 Thiết lập các cài đặt máy chủ SMTP, bao gồm host, port và thông tin xác thực:
 
@@ -78,15 +78,15 @@ client.setUsername("your_username");
 client.setPassword("your_password");
 ```
 
-### Bước 4: Soạn Email
+### Bước 4: Soạn email
 
-Bây giờ, hãy soạn email mà bạn muốn gửi:
+Bây giờ, hãy soạn email bạn muốn gửi:
 
 ```java
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body of the email.");
 ```
 
-### Bước 5: Gửi Email
+### Bước 5: Gửi email
 
 Gửi email bằng phương thức `send`:
 
@@ -94,9 +94,9 @@ Gửi email bằng phương thức `send`:
 client.send(message);
 ```
 
-## Xử lý Lỗi SMTP
+## Xử lý lỗi SMTP
 
-Lỗi SMTP có thể xảy ra trong quá trình gửi email. Để xử lý những lỗi này một cách nhẹ nhàng, bạn có thể sử dụng khối try‑catch. Dưới đây là một ví dụ:
+Lỗi SMTP có thể xảy ra trong quá trình gửi email. Để xử lý các lỗi này một cách nhẹ nhàng, bạn có thể sử dụng khối try‑catch. Dưới đây là một ví dụ:
 
 ```java
 try {
@@ -107,30 +107,30 @@ try {
 }
 ```
 
-### Cách Xử Lý Vấn Đề SMTP Hiệu Quả
+### Cách xử lý vấn đề SMTP hiệu quả
 
-- **Kiểm tra mã trạng thái của ngoại lệ** (`ex.getStatusCode()`) để phân biệt giữa lỗi xác thực, hộp thư không tồn tại, v.v.  
-- **Logic thử lại**: Đối với các lỗi tạm thời như `421 Service not available`, triển khai cơ chế back‑off theo cấp số nhân.  
-- **Ghi lại phản hồi đầy đủ**: Lưu `ex.getMessage()` và `ex.getInnerException()` để phân tích sau.
+- **Kiểm tra mã trạng thái của ngoại lệ** (`ex.getStatusCode()`) để phân biệt giữa lỗi xác thực, hộp thư không khả dụng, v.v.  
+- **Logic retry**: Đối với các lỗi tạm thời như `421 Service not available`, triển khai back‑off theo cấp số nhân.  
+- **Ghi lại phản hồi đầy đủ**: Lưu `ex.getMessage()` và `ex.getInnerException()` để phân tích sau.  
 
-## Các Trường Hợp Sử Dụng Thông Thường
+## Các trường hợp sử dụng phổ biến
 
 - **Sending email attachment java** – đính kèm PDF, hình ảnh hoặc log bằng cách sử dụng `message.getAttachments().addItem(new Attachment("path/to/file"));`.  
-- **Gửi email hàng loạt** – tái sử dụng cùng một thể hiện `SmtpClient` cho nhiều đối tượng `MailMessage` để cải thiện hiệu năng.  
-- **Nội dung động** – tạo nội dung email từ các mẫu (ví dụ: Thymeleaf) trước khi tạo `MailMessage`.
+- **Bulk email dispatch** – tái sử dụng cùng một thể hiện `SmtpClient` cho nhiều đối tượng `MailMessage` để cải thiện hiệu suất.  
+- **Dynamic content** – tạo nội dung email từ mẫu (ví dụ, Thymeleaf) trước khi tạo `MailMessage`.  
 
-## Mẹo Khắc Phục Sự Cố
+## Mẹo khắc phục sự cố
 
-| Triệu chứng | Nguyên nhân có thể | Giải pháp nhanh |
-|------------|--------------------|-----------------|
+| Triệu chứng | Nguyên nhân có thể | Cách khắc phục nhanh |
+|------------|--------------------|----------------------|
 | `Authentication failed` | Tên người dùng/mật khẩu sai hoặc thiếu `STARTTLS` | Xác minh thông tin đăng nhập và bật `client.setSecurityOptions(SecurityOptions.SSLExplicit);` |
 | `Connection timed out` | Mạng/tường lửa chặn cổng 587/465 | Kiểm tra kết nối bằng `telnet smtp.example.com 587` |
 | `Mailbox unavailable` | Địa chỉ người nhận không hợp lệ | Kiểm tra lại định dạng địa chỉ email |
 | `Message size exceeds limit` | Tệp đính kèm quá lớn | Nén hoặc chia nhỏ các tệp đính kèm |
 
-## Các Câu Hỏi Thường Gặp
+## Câu hỏi thường gặp
 
-**Q: Làm sao thêm nhiều tệp đính kèm trong một email?**  
+**Q: Làm thế nào tôi có thể thêm nhiều tệp đính kèm trong một email?**  
 A: Sử dụng `message.getAttachments().addItem(new Attachment("file1.pdf"));` và lặp lại cho mỗi tệp.
 
 **Q: Aspose.Email có hỗ trợ xác thực OAuth2 không?**  
@@ -142,14 +142,14 @@ A: Chắc chắn — cấu hình `client.setProxyHost("proxy.example.com");` và
 **Q: Các phiên bản Java nào được hỗ trợ?**  
 A: Aspose.Email hoạt động với Java 8 và các runtime mới hơn.
 
-**Q: Có cách nào xem trước email trước khi gửi không?**  
+**Q: Có cách nào để xem trước email trước khi gửi không?**  
 A: Bạn có thể gọi `message.getMimeContent();` để lấy chuỗi MIME thô để kiểm tra.
 
 ---
 
-**Last Updated:** 2026-01-09  
-**Tested With:** Aspose.Email for Java 23.12  
-**Author:** Aspose  
+**Cập nhật lần cuối:** 2026-03-31  
+**Kiểm tra với:** Aspose.Email for Java 23.12  
+**Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

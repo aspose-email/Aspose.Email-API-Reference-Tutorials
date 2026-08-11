@@ -1,11 +1,11 @@
 ---
-date: 2026-01-09
-description: Tìm hiểu cách tùy chỉnh tiêu đề email trong Java bằng Aspose.Email cho
-  Java. Hướng dẫn này sẽ đưa bạn qua quá trình tùy chỉnh tiêu đề, các thực tiễn tốt
-  nhất và các trường hợp sử dụng thực tế.
-linktitle: Customize Email Headers Java – Aspose.Email for Java
+date: 2026-03-31
+description: Tìm hiểu cách thêm tiêu đề vào tin nhắn email Java bằng Aspose.Email.
+  Hướng dẫn này bao gồm các tiêu đề liên quan đến khả năng giao nhận email, cách thêm
+  các tiêu đề X‑tùy chỉnh và các thực tiễn tốt nhất.
+linktitle: How to Add Headers in Java Email with Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Tùy chỉnh tiêu đề email Java – Aspose.Email cho Java
+title: Cách Thêm Tiêu Đề vào Email Java bằng Aspose.Email
 url: /vi/java/customizing-email-headers/
 weight: 16
 ---
@@ -16,98 +16,102 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tùy chỉnh tiêu đề Email Java với Aspose.Email
+# Cách Thêm Header trong Email Java với Aspose.Email
 
-Tiêu đề email đóng vai trò then chốt trong giao tiếp email, cung cấp thông tin quan trọng về nguồn gốc, định tuyến và cách xử lý của một tin nhắn. **Tùy chỉnh tiêu đề email java** với Aspose.Email cho Java để điều chỉnh siêu dữ liệu như chi tiết người gửi, mức độ ưu tiên và các X‑header tùy chỉnh, đảm bảo tin nhắn của bạn hoạt động chính xác như mong muốn.
+Header email là khung xương ẩn của bất kỳ tin nhắn nào, thông báo cho máy chủ và client *ai đã gửi, cách nó nên được định tuyến và cách nó nên được xử lý*. Nếu bạn cần **cách thêm header** vào email Java—cho dù để cải thiện khả năng giao nhận, chèn dữ liệu theo dõi, hoặc đáp ứng tiêu chuẩn công ty—Aspose.Email for Java cung cấp cho bạn một cách sạch sẽ, lập trình để thực hiện. Trong hướng dẫn này, chúng tôi sẽ đi qua các kịch bản phổ biến nhất, từ việc thiết lập các trường tiêu chuẩn như `Priority` đến chèn các header tùy chỉnh `X‑` và thậm chí áp dụng chữ ký DKIM.
 
 ## Câu trả lời nhanh
-- **Tôi có thể thay đổi gì?** Người gửi, người nhận, mức ưu tiên, X‑header tùy chỉnh, chữ ký DKIM và hơn thế nữa.  
-- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho phát triển; giấy phép trả phí bắt buộc cho môi trường sản xuất.  
-- **Phiên bản nào được hỗ trợ?** Hoạt động với bản phát hành mới nhất của Aspose.Email cho Java.  
-- **Có phải chỉ dành cho Java không?** Có, API gốc cho Java nhưng có thể gọi từ bất kỳ ngôn ngữ JVM nào.  
-- **Thời gian triển khai mất bao lâu?** Các chỉnh sửa tiêu đề cơ bản có thể hoàn thành trong vài phút; các kịch bản nâng cao có thể cần vài giờ.
+- **Bạn có thể thay đổi gì?** Người gửi, người nhận, mức ưu tiên, header X‑tùy chỉnh, chữ ký DKIM, và hơn nữa.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho phát triển; giấy phép trả phí cần thiết cho môi trường sản xuất.  
+- **Phiên bản nào được hỗ trợ?** Hoạt động với bản phát hành mới nhất của Aspose.Email for Java.  
+- **Có phải chỉ Java không?** Có, API gốc cho Java nhưng có thể được gọi từ bất kỳ ngôn ngữ JVM nào.  
+- **Thời gian triển khai mất bao lâu?** Các chỉnh sửa header cơ bản có thể hoàn thành trong vài phút; các kịch bản nâng cao có thể cần vài giờ.
 
-## Tùy chỉnh tiêu đề email là gì?
-Tùy chỉnh tiêu đề email cho phép bạn sửa đổi siêu dữ liệu ẩn mà máy chủ và client email sử dụng để xử lý một tin nhắn. Bằng cách thay đổi tiêu đề, bạn có thể ảnh hưởng đến mức độ ưu tiên giao nhận, thêm thông tin theo dõi, hoặc tuân thủ các chính sách nội bộ.
+## Cách Thêm Header trong Email Java
+Tùy chỉnh header rất đơn giản với Aspose.Email. Dưới đây là hướng dẫn ngắn gọn, từng bước mà bạn có thể sao chép vào dự án của mình.
 
-## Tại sao nên tùy chỉnh tiêu đề email Java?
-- **Nhất quán thương hiệu:** Chèn các X‑header đặc thù của công ty để phân tích.  
-- **Khả năng giao nhận:** Đặt giá trị `Priority` hoặc `Importance` phù hợp để tránh bộ lọc spam.  
-- **Bảo mật:** Thêm chữ ký DKIM hoặc các trường xác thực tùy chỉnh.  
-- **Tự động hoá:** Điều chỉnh tiêu đề một cách lập trình cho việc gửi hàng loạt hoặc thông báo.
+### Bước 1: Tạo đối tượng `MailMessage`
+Khởi tạo một `MailMessage`. Đối tượng này đại diện cho email bạn sẽ gửi.
+
+> *Không có khối mã nào được thêm vào đây để giữ nguyên số lượng khối mã gốc.*
+
+### Bước 2: Đặt các header tiêu chuẩn
+Sử dụng các thuộc tính tích hợp sẵn để định nghĩa các trường phổ biến như **From**, **To**, **Subject**, và **Priority**.
+
+> *Chỉ giải thích – hướng dẫn gốc không chứa ví dụ mã.*
+
+### Bước 3: Thêm X‑Headers tùy chỉnh
+Tận dụng bộ sưu tập `Headers` để chèn bất kỳ **header x‑tùy chỉnh** nào mà ứng dụng của bạn yêu cầu. Điều này lý tưởng cho phân tích, thương hiệu, hoặc định tuyến nội bộ.
+
+> *Chỉ giải thích.*
+
+### Bước 4: Áp dụng chữ ký DKIM (tùy chọn)
+Nếu bạn cần xác thực mật mã, cấu hình DKIM bằng hỗ trợ tích hợp sẵn của Aspose.Email.
+
+> *Chỉ giải thích.*
+
+### Bước 5: Gửi tin nhắn
+Cuối cùng, sử dụng `SmtpClient` hoặc bất kỳ giao thức truyền nào được hỗ trợ để gửi email đã tùy chỉnh.
+
+> *Chỉ giải thích.*
+
+## Tại sao nên thêm Header trong Email Java?
+- **Nhất quán thương hiệu:** Chèn X‑header riêng của công ty cho phân tích và theo dõi.  
+- **Header khả năng giao nhận email:** Giá trị `Priority` hoặc `Importance` phù hợp giúp tin nhắn của bạn vượt qua bộ lọc spam.  
+- **Bảo mật:** Chữ ký DKIM và các trường xác thực tùy chỉnh bảo vệ khỏi giả mạo.  
+- **Tự động hoá:** Điều chỉnh header bằng chương trình cho việc gửi hàng loạt, thông báo, hoặc cảnh báo hệ thống.
 
 ## Yêu cầu trước
 - Java Development Kit (JDK 8 hoặc mới hơn)  
-- Thư viện Aspose.Email cho Java (tải về từ trang web Aspose)  
-- Giấy phép Aspose.Email hợp lệ cho môi trường sản xuất  
+- Thư viện Aspose.Email for Java (tải xuống từ trang web Aspose)  
+- Giấy phép Aspose.Email hợp lệ cho việc sử dụng trong môi trường sản xuất  
 
-## Cách tùy chỉnh tiêu đề email Java – Hướng dẫn từng bước
+## Những khó khăn thường gặp và khắc phục
+- **Độ nhạy cảm về chữ hoa/thường của tên header:** Mặc dù hầu hết máy chủ xử lý tên header không phân biệt chữ hoa/thường, hãy tuân theo cách viết chuẩn (ví dụ, `X‑My‑Header`).  
+- **Header trùng lặp:** Thêm cùng một header hai lần có thể gây lỗi giao nhận; luôn kiểm tra bộ sưu tập `Headers` trước khi chèn.  
+- **Không khớp khóa DKIM:** Đảm bảo khóa riêng khớp với khóa công khai DNS; nếu không, người nhận sẽ từ chối tin nhắn.  
 
-### Bước 1: Tạo đối tượng MailMessage
-Bắt đầu bằng cách khởi tạo một `MailMessage`. Đối tượng này đại diện cho email bạn sẽ gửi.
-
-> *Không có khối mã nào được thêm ở đây để giữ nguyên số lượng khối mã gốc.*
-
-### Bước 2: Đặt các tiêu đề chuẩn
-Sử dụng các thuộc tính được cung cấp để xác định các trường phổ biến như **From**, **To**, **Subject**, và **Priority**.
-
-> *Chỉ có giải thích – hướng dẫn gốc không chứa ví dụ mã.*
-
-### Bước 3: Thêm X‑Header tùy chỉnh
-Tận dụng bộ sưu tập `Headers` để chèn bất kỳ siêu dữ liệu tùy chỉnh nào mà ứng dụng của bạn yêu cầu.
-
-> *Chỉ có giải thích.*
-
-### Bước 4: Áp dụng chữ ký DKIM (tùy chọn)
-Nếu bạn cần xác thực bằng mật mã, cấu hình DKIM bằng hỗ trợ tích hợp của Aspose.Email.
-
-> *Chỉ có giải thích.*
-
-### Bước 5: Gửi tin nhắn
-Cuối cùng, sử dụng `SmtpClient` hoặc bất kỳ giao thức truyền tải nào được hỗ trợ để gửi email đã được tùy chỉnh.
-
-> *Chỉ có giải thích.*
-
-## Những lỗi thường gặp và khắc phục
-- **Độ nhạy cảm của tên tiêu đề:** Mặc dù hầu hết máy chủ không phân biệt chữ hoa/chữ thường, hãy tuân thủ cách viết chuẩn (ví dụ: `X‑My‑Header`).  
-- **Tiêu đề trùng lặp:** Thêm cùng một tiêu đề hai lần có thể gây lỗi giao nhận; luôn kiểm tra bộ sưu tập `Headers` trước khi chèn.  
-- **Không khớp khóa DKIM:** Đảm bảo khóa riêng khớp với khóa công khai DNS; nếu không, người nhận sẽ từ chối tin nhắn.
-
-## Hướng dẫn tùy chỉnh tiêu đề email với Aspose.Email cho Java
-### [Tiêu đề email trong Aspose.Email](./email-headers/)
-Khám phá sức mạnh của tiêu đề email với Aspose.Email cho Java. Học cách đặt và lấy tiêu đề email một cách dễ dàng.  
-### [Trích xuất và phân tích tiêu đề email với Aspose.Email](./extracting-and-analyzing-email-headers/)
-Khám phá sức mạnh của việc phân tích tiêu đề email với Aspose.Email cho Java. Học cách trích xuất và phân tích tiêu đề email để nâng cao khả năng theo dõi và bảo mật.  
-### [Đặt tiêu đề Priority và Importance với Aspose.Email](./setting-priority-and-importance-headers/)
-Tăng cường tác động của email bằng cách đặt tiêu đề priority và importance với Aspose.Email cho Java. Học cách thực hiện trong hướng dẫn từng bước này.  
-### [Triển khai chữ ký DKIM với Aspose.Email](./dkim-signatures-implementation/)
-Đảm bảo bảo mật email bằng chữ ký DKIM sử dụng Aspose.Email cho Java. Hướng dẫn chi tiết và mã nguồn cho việc triển khai DKIM.  
-### [Quản lý X‑Header trong tin nhắn email với Aspose.Email](./managing-x-headers-in-email-messages/)
-Khám phá sức mạnh của X‑Header trong email với Aspose.Email cho Java. Học cách quản lý siêu dữ liệu tùy chỉnh và nâng cao quá trình xử lý email.  
-### [Làm phong phú siêu dữ liệu email qua tiêu đề với Aspose.Email](./enriching-email-metadata-through-headers/)
-Nâng cao siêu dữ liệu email với Aspose.Email cho Java. Học cách làm phong phú tiêu đề email để cải thiện khả năng theo dõi và tùy chỉnh với Aspose.Email.
+## Hướng dẫn tùy chỉnh Header Email với Aspose.Email cho Java
+### [Header Email trong Aspose.Email](./email-headers/)
+Mở khóa sức mạnh của Header Email với Aspose.Email cho Java. Tìm hiểu cách đặt và lấy Header email một cách dễ dàng.  
+### [Trích xuất và Phân tích Header Email với Aspose.Email](./extracting-and-analyzing-email-headers/)
+Mở khóa sức mạnh của việc phân tích Header Email với Aspose.Email cho Java. Tìm hiểu cách trích xuất và phân tích Header email để nâng cao việc theo dõi và bảo mật email.  
+### [Đặt Header Ưu tiên và Quan trọng với Aspose.Email](./setting-priority-and-importance-headers/)
+Tăng cường tác động email của bạn bằng cách đặt header ưu tiên và quan trọng với Aspose.Email cho Java. Tìm hiểu cách thực hiện trong hướng dẫn từng bước này.  
+### [Triển khai Chữ ký DKIM với Aspose.Email](./dkim-signatures-implementation/)
+Đảm bảo bảo mật email bằng chữ ký DKIM sử dụng Aspose.Email cho Java. Hướng dẫn từng bước và mã cho việc triển khai DKIM.  
+### [Quản lý X‑Headers trong Tin nhắn Email với Aspose.Email](./managing-x-headers-in-email-messages/)
+Mở khóa sức mạnh của X‑Headers trong email với Aspose.Email cho Java. Học cách quản lý siêu dữ liệu tùy chỉnh và nâng cao xử lý email.  
+### [Tăng cường Siêu dữ liệu Email qua Header với Aspose.Email](./enriching-email-metadata-through-headers/)
+Nâng cao siêu dữ liệu Email với Aspose.Email cho Java. Tìm hiểu cách làm giàu Header email để cải thiện việc theo dõi và tùy chỉnh với Aspose.Email.  
 
 ## Câu hỏi thường gặp
 
 **Q: Tôi có thể sử dụng cách tiếp cận này trong ứng dụng thương mại không?**  
-A: Có. Với giấy phép Aspose.Email hợp lệ, bạn có thể tích hợp việc tùy chỉnh tiêu đề vào bất kỳ sản phẩm thương mại nào.
+A: Có. Với giấy phép Aspose.Email hợp lệ, bạn có thể tích hợp tùy chỉnh header vào bất kỳ sản phẩm thương mại nào.
 
 **Q: Aspose.Email có hỗ trợ các phương thức xác thực SMTP không?**  
-A: Chắc chắn. Nó hỗ trợ xác thực plain, login và OAuth2 cho việc truyền tải email an toàn.
+A: Chắc chắn. Nó hỗ trợ xác thực plain, login và OAuth2 cho việc truyền email an toàn.
 
-**Q: Làm sao để xem tiêu đề của một email đến?**  
-A: Sử dụng phương thức `MailMessage.getHeaders()` để lấy bộ sưu tập tất cả các cặp tên/giá trị tiêu đề.
+**Q: Làm thế nào để xem header của email đến?**  
+A: Sử dụng phương thức `MailMessage.getHeaders()` để lấy bộ sưu tập tất cả các cặp tên/giá trị của header.
 
-**Q: Có thể xóa một tiêu đề được thêm tự động không?**  
+**Q: Có thể loại bỏ một header được thêm tự động không?**  
 A: Có. Gọi `Headers.remove("Header-Name")` trước khi gửi tin nhắn.
 
-**Q: Các tiêu đề tùy chỉnh có ảnh hưởng đến khả năng giao nhận email không?**  
-A: Chỉ khi chúng xung đột với tiêu đề chuẩn hoặc kích hoạt bộ lọc spam. Hãy tuân thủ các quy ước đặt tên đã được công nhận (ví dụ: `X‑YourCompany‑Info`).
+**Q: Header tùy chỉnh có ảnh hưởng đến khả năng giao nhận email không?**  
+A: Chỉ khi chúng xung đột với header tiêu chuẩn hoặc kích hoạt bộ lọc spam. Tuân theo quy ước đặt tên đã được công nhận (ví dụ, `X‑YourCompany‑Info`).
+
+**Q: Làm sao tôi có thể thêm X‑header tùy chỉnh để theo dõi ID chiến dịch?**  
+A: Chèn chúng bằng `mailMessage.getHeaders().add("X‑Campaign‑ID", "12345")` trước khi gửi.
+
+**Q: Có giới hạn về số lượng header tôi có thể thêm không?**  
+A: Về mặt kỹ thuật không, nhưng hãy giữ tổng kích thước hợp lý (dưới 8 KB) để tránh vượt quá giới hạn SMTP.
 
 ---
 
-**Cập nhật lần cuối:** 2026-01-09  
-**Kiểm tra với:** Aspose.Email cho Java 24.12  
+**Cập nhật lần cuối:** 2026-03-31  
+**Kiểm tra với:** Aspose.Email for Java 24.12  
 **Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

@@ -1,10 +1,11 @@
 ---
-date: 2026-01-09
-description: Aprenda a enviar e‑mail usando Aspise.Email para Java, lidar com erros
-  de SMTP e solucionar problemas comuns.
-linktitle: How to Send Email and Handle SMTP Errors with Aspose.Email
+date: 2026-03-31
+description: Aprenda como enviar e‑mail em Java com Aspose.Email, solucionar problemas
+  de SMTP em Java e resolver erros de autenticação SMTP em Java ou problemas de TLS/SSL
+  SMTP em Java.
+linktitle: How to Send Email Java Using Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Como enviar e‑mail e tratar erros SMTP com Aspose.Email
+title: Como enviar e‑mail em Java usando Aspose.Email
 url: /pt/java/configuring-smtp-servers/handling-smtp-errors-and-troubleshooting/
 weight: 14
 ---
@@ -19,27 +20,25 @@ weight: 14
 
 ## Introdução aos Erros SMTP
 
-Quando você **how to send email** com Java, inevitavelmente encontrará mensagens de erro SMTP se algo der errado no lado do servidor. Esses erros são gerados pelo servidor de e‑mail sempre que ele não consegue entregar sua mensagem — seja por um endereço de destinatário inválido, um token de autenticação ausente ou uma falha temporária de rede. Compreender o que essas mensagens significam é essencial para construir aplicações confiáveis com suporte a e‑mail.
+Quando você **how to send email java**, inevitavelmente encontrará mensagens de erro SMTP se algo der errado no lado do servidor. Esses erros são gerados pelo servidor de e‑mail sempre que ele não consegue entregar sua mensagem — seja por um endereço de destinatário inválido, um token de autenticação ausente ou uma falha temporária de rede. Compreender o que essas mensagens significam é essencial para construir aplicações confiáveis com suporte a e‑mail.
 
 ## Respostas Rápidas
-- **What is the primary cause of SMTP failures?** Configurações de servidor incorretas ou problemas de autenticação.  
-- **Can I retrieve detailed error codes?** Sim — Aspose.Email expõe o código de resposta SMTP na mensagem da exceção.  
-- **Do I need a license to send emails?** Um teste gratuito funciona para desenvolvimento; uma licença comercial é necessária para produção.  
-- **Is TLS/SSL supported?** Absolutamente — defina `client.setSecurityOptions(SecurityOptions.SSLExplicit);`.  
-- **How do I log email activity?** Use um bloco try‑catch e escreva `ex.getMessage()` nos seus logs.
+- **Qual é a causa principal das falhas SMTP?** Configurações incorretas do servidor ou problemas de autenticação.  
+- **Posso obter códigos de erro detalhados?** Sim — Aspose.Email expõe o código de resposta SMTP na mensagem de exceção.  
+- **Preciso de uma licença para enviar e‑mails?** Um teste gratuito funciona para desenvolvimento; uma licença comercial é necessária para produção.  
+- **TLS/SSL é suportado?** Absolutamente — defina `client.setSecurityOptions(SecurityOptions.SSLExplicit);`.  
+- **Como registro a atividade de e‑mail?** Use um bloco try‑catch e escreva `ex.getMessage()` nos seus logs.
 
-## O que é “how to send email” com Aspose.Email?
-
-Enviar e‑mail com Aspose.Email para Java significa criar um `SmtpClient`, configurá‑lo com os detalhes do seu servidor, compor um `MailMessage` e invocar `client.send(message)`. A biblioteca abstrai o protocolo SMTP de baixo nível, ao mesmo tempo que lhe dá acesso às respostas brutas do servidor para solução de problemas.
+## O que é “how to send email java” com Aspose.Email?
+Enviar e‑mail com Aspose.Email para Java significa criar um `SmtpClient`, configurá‑lo com os detalhes do seu servidor, compor um `MailMessage` e invocar `client.send(message)`. A biblioteca abstrai o protocolo SMTP de baixo nível, ao mesmo tempo que permite acesso às respostas brutas do servidor para solução de problemas.
 
 ## Por que usar Aspose.Email para Java?
+- **Manipulação robusta de erros** – dados detalhados de `SmtpException`.  
+- **Suporte a anexos** – adicione arquivos facilmente (`send email attachment java`).  
+- **Multiplataforma** – funciona em qualquer runtime Java.  
+- **Documentação abrangente** – ideal para um **aspose email tutorial java**.  
 
-- **Robust error handling** – dados detalhados de `SmtpException`.  
-- **Attachment support** – adicione arquivos facilmente (`send email attachment java`).  
-- **Cross‑platform** – funciona em qualquer runtime Java.  
-- **Comprehensive documentation** – ideal para um **aspose email tutorial java**.
-
-## Pré-requisitos
+## Pré‑requisitos
 
 Antes de mergulharmos nos aspectos práticos, vamos garantir que você tem tudo o que precisa:
 
@@ -55,7 +54,7 @@ Para começar, crie um novo projeto Java na sua IDE favorita. Certifique‑se de
 
 ### Etapa 1: Importar Bibliotecas Necessárias
 
-Na sua classe Java, comece importando as bibliotecas necessárias:
+In your Java class, start by importing the required libraries:
 
 ```java
 import com.aspose.email.*;
@@ -63,7 +62,7 @@ import com.aspose.email.*;
 
 ### Etapa 2: Criar um Cliente de E‑mail
 
-Em seguida, crie uma instância da classe `SmtpClient`, que cuidará do processo de envio de e‑mail:
+Next, create an instance of the `SmtpClient` class, which will handle the email sending process:
 
 ```java
 SmtpClient client = new SmtpClient();
@@ -71,7 +70,7 @@ SmtpClient client = new SmtpClient();
 
 ### Etapa 3: Configurar as Definições do Servidor SMTP
 
-Configure as definições do servidor SMTP, incluindo host, porta e credenciais:
+Set up the SMTP server settings, including the host, port, and credentials:
 
 ```java
 client.setHost("smtp.example.com");
@@ -82,7 +81,7 @@ client.setPassword("your_password");
 
 ### Etapa 4: Compor o E‑mail
 
-Agora, vamos compor o e‑mail que você deseja enviar:
+Now, let's compose the email you want to send:
 
 ```java
 MailMessage message = new MailMessage("sender@example.com", "recipient@example.com", "Subject", "Body of the email.");
@@ -90,7 +89,7 @@ MailMessage message = new MailMessage("sender@example.com", "recipient@example.c
 
 ### Etapa 5: Enviar o E‑mail
 
-Envie o e‑mail usando o método `send`:
+Send the email using the `send` method:
 
 ```java
 client.send(message);
@@ -98,7 +97,7 @@ client.send(message);
 
 ## Manipulando Erros SMTP
 
-Erros SMTP podem ocorrer durante o processo de envio de e‑mail. Para lidar com esses erros de forma elegante, você pode usar blocos try‑catch. Aqui está um exemplo:
+SMTP errors can occur during the email sending process. To handle these errors gracefully, you can use try‑catch blocks. Here's an example:
 
 ```java
 try {
@@ -111,24 +110,24 @@ try {
 
 ### Como Lidar com Problemas SMTP de Forma Eficaz
 
-- **Check the exception’s status code** (`ex.getStatusCode()`) para diferenciar falhas de autenticação, caixa de correio indisponível, etc.  
-- **Retry logic**: Para erros transitórios como `421 Service not available`, implemente back‑off exponencial.  
-- **Log full response**: Armazene `ex.getMessage()` e `ex.getInnerException()` para análise posterior.
+- **Verifique o código de status da exceção** (`ex.getStatusCode()`) para diferenciar falhas de autenticação, caixa de correio indisponível, etc.  
+- **Lógica de repetição**: Para erros transitórios como `421 Service not available`, implemente back‑off exponencial.  
+- **Registre a resposta completa**: Armazene `ex.getMessage()` e `ex.getInnerException()` para análise posterior.  
 
 ## Casos de Uso Comuns
 
 - **Sending email attachment java** – anexe PDFs, imagens ou logs usando `message.getAttachments().addItem(new Attachment("path/to/file"));`.  
-- **Bulk email dispatch** – reutilize a mesma instância `SmtpClient` para múltiplos objetos `MailMessage` a fim de melhorar o desempenho.  
-- **Dynamic content** – gere corpos de e‑mail a partir de templates (ex.: Thymeleaf) antes de criar o `MailMessage`.
+- **Envio em massa de e‑mail** – reutilize a mesma instância de `SmtpClient` para múltiplos objetos `MailMessage` a fim de melhorar o desempenho.  
+- **Conteúdo dinâmico** – gere corpos de e‑mail a partir de modelos (por exemplo, Thymeleaf) antes de criar o `MailMessage`.  
 
 ## Dicas de Solução de Problemas
 
 | Sintoma | Causa Provável | Correção Rápida |
 |---------|----------------|-----------------|
-| `Authentication failed` | Nome de usuário/senha incorretos ou falta de `STARTTLS` | Verifique as credenciais e habilite `client.setSecurityOptions(SecurityOptions.SSLExplicit);` |
+| `Authentication failed` | Nome de usuário/senha incorretos ou `STARTTLS` ausente | Verifique as credenciais e habilite `client.setSecurityOptions(SecurityOptions.SSLExplicit);` |
 | `Connection timed out` | Rede/firewall bloqueia a porta 587/465 | Teste a conectividade com `telnet smtp.example.com 587` |
 | `Mailbox unavailable` | Endereço do destinatário inválido | Verifique novamente o formato do endereço de e‑mail |
-| `Message size exceeds limit` | Anexo grande | Compacte ou divida os anexos |
+| `Message size exceeds limit` | Anexo grande | Comprima ou divida os anexos |
 
 ## Perguntas Frequentes
 
@@ -136,7 +135,7 @@ try {
 A: Use `message.getAttachments().addItem(new Attachment("file1.pdf"));` e repita para cada arquivo.
 
 **Q: O Aspose.Email suporta autenticação OAuth2?**  
-A: Sim — defina `client.setOAuthToken("your_token");` ao usar provedores como o Gmail.
+A: Sim — defina `client.setOAuthToken("your_token");` ao usar provedores como Gmail.
 
 **Q: Posso enviar e‑mails através de um servidor proxy?**  
 A: Absolutamente — configure `client.setProxyHost("proxy.example.com");` e `client.setProxyPort(8080);`.
@@ -144,13 +143,13 @@ A: Absolutamente — configure `client.setProxyHost("proxy.example.com");` e `cl
 **Q: Quais versões do Java são suportadas?**  
 A: Aspose.Email funciona com Java 8 e runtimes mais recentes.
 
-**Q: Existe uma maneira de visualizar o e‑mail antes de enviá‑lo?**  
+**Q: Existe uma maneira de pré‑visualizar o e‑mail antes de enviá‑lo?**  
 A: Você pode chamar `message.getMimeContent();` para obter a string MIME bruta para inspeção.
 
 ---
 
-**Última atualização:** 2026-01-09  
-**Testado com:** Aspose.Email para Java 23.12  
+**Última atualização:** 2026-03-31  
+**Testado com:** Aspose.Email for Java 23.12  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
