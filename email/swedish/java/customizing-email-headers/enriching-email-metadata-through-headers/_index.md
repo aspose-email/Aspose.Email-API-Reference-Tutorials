@@ -1,11 +1,16 @@
 ---
-date: 2026-01-11
-description: Lär dig hur du lägger till en anpassad e‑postrubrik och berikar e‑postmetadata
-  med Aspose.Email för Java. Använd den här guiden för att lägga till x‑custom‑header
-  och spåra e‑post med rubriker på ett effektivt sätt.
-linktitle: Add Custom Email Header – Enrich Email Metadata with Aspose.Email
+date: 2026-04-02
+description: Lär dig hur du lägger till rubrik och berikar e‑postmetadata med Aspose.Email
+  för Java. Den här guiden visar hur du lägger till en anpassad e‑postrubrik och spårar
+  e‑post med rubriker på ett effektivt sätt.
+keywords:
+- how to add header
+- add custom email header
+- set custom email header
+- track email with headers
+linktitle: Hur man lägger till e‑posthuvud – Berika e‑postmetadata med Aspose.Email
 second_title: Aspose.Email Java Email Management API
-title: Lägg till anpassad e-postrubrik – Berika e-postmetadata med Aspose.Email
+title: Hur man lägger till rubrik – Berika e‑postmetadata med Aspose.Email
 url: /sv/java/customizing-email-headers/enriching-email-metadata-through-headers/
 weight: 18
 ---
@@ -16,39 +21,26 @@ weight: 18
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Berika e‑postmetadata via rubriker med Aspose.Email
+# Berika e-postmetadata via rubriker med Aspose.Email
 
-## Introduktion till att berika e‑postmetadata via rubriker med Aspose.Email
+## Introduktion till att berika e-postmetadata via rubriker med Aspose.Email
 
-E‑postkommunikation är en integrerad del av moderna affärs- och personliga interaktioner. När vi skickar eller tar emot e‑post fokuserar vi ofta på meddelandets innehåll. Men bakom kulisserna finns en mängd information som följer med varje e‑post, kallad e‑postmetadata. Denna metadata innehåller viktiga detaljer om e‑posten, såsom avsändarinformation, tidsstämplar och routningsdetaljer. I den här artikeln kommer vi att utforska hur man **add custom email header** med Aspose.Email för Java och varför berikning av metadata hjälper dig att *track email with headers* mer effektivt.
+I den här guiden **kommer du att lära dig hur du lägger till rubrik** till dina meddelanden med Aspose.Email för Java, vilket låter dig berika e‑postmetadata och *spåra e‑post med rubriker* mer effektivt. E‑postkommunikation är en integrerad del av moderna affärs- och personliga interaktioner. Medan vi ofta fokuserar på meddelandetexten spelar den dolda metadata—avsändardetaljer, tidsstämplar, routningsinformation—en avgörande roll i automation, analys och efterlevnad. Genom att infoga en **anpassad e‑postrubrik** kan du bädda in värdefull kontext utan att röra själva e‑postinnehållet.
 
 ## Snabba svar
 - **Vad är det primära sättet att berika e‑postmetadata?** Genom att lägga till anpassade rubriker med Aspose.Email.  
 - **Vilken rubrik används vanligtvis för anpassad data?** `X-Custom-Header` (eller något namn med prefixet `X-`).  
-- **Behöver jag en licens för att köra exempel­koden?** En gratis provversion fungerar för testning; en kommersiell licens krävs för produktion.  
-- **Vilket format använder Aspose.Email för sparande?** Den behåller det ursprungliga `.eml`‑formatet om du inte väljer ett annat.  
+- **Behöver jag en licens för att köra exempelprogrammet?** En gratis provversion fungerar för testning; en kommersiell licens krävs för produktion.  
+- **Vilket format använder Aspose.Email för sparande?** Det behåller det ursprungliga `.eml`‑formatet om du inte väljer ett annat.  
 - **Kan jag lägga till flera anpassade rubriker?** Ja, anropa `message.getHeaders().add()` för varje rubrik du behöver.
 
-## Vad är “add custom email header”?
-En anpassad e‑postrubrik är ett användardefinierat nyckel‑värde‑par som infogas i e‑postens rubrikavsnitt. Den låter dig bädda in extra kontext—såsom transaktions‑ID:n, kampanjtaggar eller säkerhetstoken—utan att ändra meddelandetexten. E‑postklienter och -servrar behandlar dessa rubriker som vanliga standardrubriker, vilket gör dem idealiska för spårnings‑ och integrationsscenarier.
+## Hur man lägger till rubrik med Aspose.Email
 
-## Varför lägga till anpassad e‑postrubrik med Aspose.Email?
-- **Anpassning:** Lagra applikationsspecifik data (t.ex. ordernummer) direkt i e‑posten.  
-- **Spårning:** Använd `X-Custom-Header` för att *track email with headers* över system.  
-- **Integration:** Skicka vidare metadata till CRM‑system, analysplattformar eller loggtjänster utan att parsra meddelandetexten.  
-- **Efterlevnad:** Lägg till revisionsrelaterad information som kan inspekteras av e‑postgateways.
+Nedan följer en steg‑för‑steg‑genomgång som visar hur du **lägger till en anpassad e‑postrubrik**, sätter dess värde och sparar det berikade meddelandet.
 
-## Installera Aspose.Email för Java
+### Steg 1: Importera Aspose.Email-biblioteket
 
-Innan vi börjar måste du installera Aspose.Email för Java. Du kan ladda ner biblioteket från [here](https://releases.aspose.com/email/java/) och hänvisa till dokumentationen på [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) för detaljerade installationsinstruktioner.
-
-## Hur man lägger till anpassad e‑postrubrik med Aspose.Email
-
-Nedan följer en steg‑för‑steg‑guide som visar hur du importerar biblioteket, laddar ett meddelande, lägger till en anpassad rubrik och sparar den berikade e‑posten.
-
-### Steg 1: Importera Aspose.Email‑biblioteket
-
-Först måste du importera Aspose.Email‑biblioteket i ditt Java‑projekt. Se till att du har laddat ner och lagt till biblioteket i ditt projekts beroenden.
+Först importerar du Aspose.Email-biblioteket till ditt Java‑projekt. Se till att JAR‑filen har lagts till i din byggsökväg.
 
 ```java
 import com.aspose.email.*;
@@ -56,53 +48,53 @@ import com.aspose.email.*;
 
 ### Steg 2: Ladda ett e‑postmeddelande
 
-För att arbeta med ett e‑postmeddelande måste du först ladda det. Du kan ladda ett e‑postmeddelande från en fil eller skapa ett nytt från grunden.
+Du kan ladda en befintlig `.eml`‑fil eller skapa en ny `MailMessage`‑instans. Här laddar vi en fil från disk.
 
 ```java
 // Load an email message from a file
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 
-### Steg 3: Lägg till en anpassad rubrik (add x-custom-header)
+### Steg 3: Lägg till (eller sätt) en anpassad rubrik
 
-Nu ska vi berika e‑postmetadata genom att lägga till en anpassad rubrik. I detta exempel använder vi det allmänt accepterade `X-Custom-Header`‑namnet, men du kan välja vilken nyckel med prefixet `X-` som passar ditt scenario.
+Nu **lägger vi till en anpassad e‑postrubrik**. Om du senare behöver **sätta värden för en anpassad e‑postrubrik**, anropa helt enkelt `add` igen eller ersätt den befintliga posten.
 
 ```java
 // Adding a custom header
 message.getHeaders().add("X-Custom-Header", "Custom Value");
 ```
 
-> **Pro tip:** Använd ett GUID eller en tidsstämpel som rubrikvärde när du behöver en unik identifierare för spårning.
+> **Pro tip:** Använd ett GUID, ett transaktions‑ID eller en tidsstämpel som rubrikvärde när du behöver en unik identifierare för *spåra e‑post med rubriker*.
 
-### Steg 4: Spara den modifierade e‑posten
+### Steg 4: Spara det modifierade e‑postmeddelandet
 
-När du har lagt till den anpassade rubriken, spara e‑posten tillbaka till disk (eller strömma den till en annan tjänst). Den ursprungliga strukturen förblir intakt, med den nya rubriken sömlöst integrerad.
+Efter att ha berikat metadata, spara meddelandet. Den ursprungliga strukturen förblir intakt och den nya rubriken integreras sömlöst.
 
 ```java
 // Save the modified email
 message.save("path/to/modified/email.eml");
 ```
 
-Grattis! Du har framgångsrikt **add custom email header** och berikat e‑postmetadata med Aspose.Email för Java.
+Grattis! Du har framgångsrikt **lagt till en anpassad e‑postrubrik** och berikat e‑postmetadata med Aspose.Email för Java.
 
 ## Vanliga fallgropar & felsökning
 
 | Problem | Orsak | Lösning |
 |-------|-------|----------|
-| Rubriken visas inte efter sparning | Använder `message.getHeaders().add()` på ett skrivskyddat `MailMessage` | Säkerställ att meddelandet laddas i redigerbart läge (standard `load` gör detta). |
-| Dubblett‑rubriker | Lägger till samma rubrik flera gånger av misstag | Kontrollera om rubriken redan finns med `message.getHeaders().containsKey("X-Custom-Header")` innan du lägger till. |
-| Kodningsproblem | Icke‑ASCII‑tecken i rubrikvärdet | Koda värdet med `MimeUtility.encodeText()` innan du lägger till. |
+| Rubrik visas inte efter sparning | Använder `message.getHeaders().add()` på ett skrivskyddat `MailMessage` | Se till att meddelandet laddas i redigerbart läge (standard `load` gör detta). |
+| Duplicerade rubriker | Lägger till samma rubrik flera gånger av misstag | Kontrollera om rubriken redan finns med `message.getHeaders().containsKey("X-Custom-Header")` innan du lägger till den. |
+| Kodningsproblem | Icke‑ASCII‑tecken i rubrikvärdet | Koda värdet med `MimeUtility.encodeText()` innan du lägger till det. |
 
 ## Vanliga frågor
 
 **Q: Vilken typ av data är lämplig för en anpassad rubrik?**  
-A: Allt som inte hör hemma i meddelandetexten—transaktions‑ID:n, kampanjkoder, säkerhetstoken eller bearbetningsflaggor.
+A: Allt som inte hör hemma i kroppen – transaktions‑ID:n, kampanjkoder, säkerhetstoken eller bearbetningsflaggor.
 
 **Q: Kan jag lägga till flera anpassade rubriker i samma e‑post?**  
 A: Ja, anropa `message.getHeaders().add()` för varje rubrik du behöver.
 
 **Q: Påverkar tillägg av anpassade rubriker e‑postleverans?**  
-A: Vanligtvis inte, så länge du följer standardnamngivningskonventioner (prefixet `X-`) och håller rubrikens storlek rimlig.
+A: Vanligtvis inte, så länge du följer standardnamngivningskonventioner (`X-`‑prefix) och håller rubrikens storlek rimlig.
 
 **Q: Stöder Aspose.Email andra språk för samma uppgift?**  
 A: Absolut. Motsvarande API:er finns för .NET, Python och C++.
@@ -110,14 +102,27 @@ A: Absolut. Motsvarande API:er finns för .NET, Python och C++.
 **Q: Var kan jag hitta fler exempel på rubrikmanipulation?**  
 A: Utforska den officiella dokumentationen på [here](https://reference.aspose.com/email/java/) för en komplett lista över rubrikrelaterade metoder.
 
+## Installera Aspose.Email för Java
+
+Innan vi börjar måste du installera Aspose.Email för Java. Du kan ladda ner biblioteket från [here](https://releases.aspose.com/email/java/) och hänvisa till dokumentationen på [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) för detaljerade installationsinstruktioner.
+
+## Varför berika e‑postmetadata?
+
+Att lägga till en anpassad rubrik ger dig:
+
+- **Anpassning:** Lagra applikationsspecifik data (t.ex. ordernummer) direkt i e‑posten.  
+- **Spårning:** Använd `X-Custom-Header` för att *spåra e‑post med rubriker* över system.  
+- **Integration:** Skicka vidare metadata till CRM‑system, analysplattformar eller loggtjänster utan att parsra kroppen.  
+- **Efterlevnad:** Lägg till revisionsrelaterad information som kan granskas av e‑postgateways.
+
 ## Slutsats
 
-Genom att lära dig hur du **add custom email header** med Aspose.Email för Java får du tillgång till kraftfulla sätt att berika e‑postmetadata, förbättra spårning och integrera kommunikation med nedströmsystem. Stegen ovan ger dig en solid grund—experimentera med olika rubriknamn och värden för att passa dina affärsbehov.
+Genom att lära dig **hur man lägger till rubrik** med Aspose.Email för Java får du kraftfulla sätt att berika e‑postmetadata, förbättra spårning och integrera kommunikation med efterföljande system. Stegen ovan ger dig en solid grund – experimentera med olika rubriknamn och värden för att passa dina affärsbehov.
 
 ---
 
-**Senast uppdaterad:** 2026-01-11  
-**Testad med:** Aspose.Email for Java 24.12  
+**Senast uppdaterad:** 2026-04-02  
+**Testad med:** Aspose.Email för Java 24.12  
 **Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

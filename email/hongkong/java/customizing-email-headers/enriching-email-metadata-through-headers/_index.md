@@ -1,10 +1,14 @@
 ---
-date: 2026-01-11
-description: 學習如何使用 Aspose.Email for Java 添加自訂電郵標頭並豐富電郵元資料。使用本指南可有效添加 x‑custom‑header
-  並透過標頭追蹤電郵。
-linktitle: Add Custom Email Header – Enrich Email Metadata with Aspose.Email
+date: 2026-04-02
+description: 學習如何使用 Aspose.Email for Java 添加標頭並豐富電郵的元資料。本指南示範如何有效地添加自訂電郵標頭以及利用標頭追蹤電郵。
+keywords:
+- how to add header
+- add custom email header
+- set custom email header
+- track email with headers
+linktitle: 如何加入標頭 – 使用 Aspose.Email 強化電子郵件元資料
 second_title: Aspose.Email Java Email Management API
-title: 新增自訂電郵標頭 – 使用 Aspose.Email 豐富電郵元資料
+title: 如何新增標頭 – 使用 Aspose.Email 強化電子郵件中繼資料
 url: /zh-hant/java/customizing-email-headers/enriching-email-metadata-through-headers/
 weight: 18
 ---
@@ -15,109 +19,107 @@ weight: 18
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Email 透過標頭豐富 Email 中繼資料
+# 透過標頭使用 Aspose.Email 豐富 Email 中繼資料
 
-## 介紹使用 Aspose.Email 透過標頭豐富 Email 中繼資料
+## 介紹透過標頭使用 Aspose.Email 豐富 Email 中繼資料
 
-電子郵件通訊是現代商業與個人互動不可或缺的一環。當我們發送或接收電子郵件時，往往只關注訊息內容。然而，在幕後，每封郵件都伴隨著大量資訊，稱為電子郵件中繼資料。此中繼資料包含關於郵件的重要細節，例如寄件者資訊、時間戳記與路由資訊。本文將探討如何使用 Aspose.Email for Java **add custom email header**，以及為何豐富中繼資料能更有效地 *track email with headers*。
+在本指南中，**您將學會如何使用 Aspose.Email for Java 為訊息新增標頭**，讓您更有效地豐富 Email 中繼資料並 *透過標頭追蹤 Email*。Email 通訊是現代商業與個人互動的核心。雖然我們常聚焦於訊息內容本身，但隱藏的中繼資料——寄件者資訊、時間戳記、路由資訊——在自動化、分析與合規性方面扮演關鍵角色。透過插入 **自訂 Email 標頭**，您可以在不觸碰郵件內容的前提下嵌入寶貴的上下文資訊。
 
-## 快速回答
-- **What is the primary way to enrich email metadata?** By adding custom headers with Aspose.Email.  
-- **Which header is commonly used for custom data?** `X-Custom-Header` (or any `X-` prefixed name).  
-- **Do I need a license to run the sample code?** A free trial works for testing; a commercial license is required for production.  
-- **What format does Aspose.Email use for saving?** It preserves the original `.eml` format unless you choose another.  
-- **Can I add multiple custom headers?** Yes, call `message.getHeaders().add()` for each header you need.
+## 快速答覆
+- **豐富 Email 中繼資料的主要方式是什麼？** 透過 Aspose.Email 新增自訂標頭。  
+- **哪個標頭常用於自訂資料？** `X-Custom-Header`（或任何以 `X-` 為前綴的名稱）。  
+- **執行範例程式碼是否需要授權？** 免費試用可用於測試；正式環境需購買商業授權。  
+- **Aspose.Email 使用什麼格式儲存？** 除非另行指定，否則保留原始 `.eml` 格式。  
+- **可以新增多個自訂標頭嗎？** 可以，對每個需要的標頭呼叫 `message.getHeaders().add()`。
 
-## 什麼是 “add custom email header”？
+## 使用 Aspose.Email 新增標頭的方法
 
-自訂電子郵件標頭是使用者自行定義的鍵值對，插入於郵件的標頭區段。它允許您在不改變訊息本文的情況下，嵌入額外的上下文資訊——例如交易 ID、活動標籤或安全令牌。電子郵件客戶端與伺服器會將這些標頭視為一般標準標頭，因而非常適合追蹤與整合情境。
+以下為逐步說明，示範如何 **新增自訂 Email 標頭**、設定其值，並儲存已豐富的訊息。
 
-## 為何使用 Aspose.Email 加入 custom email header？
+### 步驟 1：匯入 Aspose.Email 函式庫
 
-- **Customization:** Store application‑specific data (e.g., order numbers) directly in the email.  
-- **Tracking:** Use `X-Custom-Header` to *track email with headers* across systems.  
-- **Integration:** Forward metadata to CRMs, analytics platforms, or logging services without parsing the body.  
-- **Compliance:** Add audit‑related information that can be inspected by mail gateways.
-
-## 設定 Aspose.Email for Java
-
-在開始之前，您需要先設定 Aspose.Email for Java。您可以從 [here](https://releases.aspose.com/email/java/) 下載程式庫，並參考 [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) 上的文件取得詳細安裝說明。
-
-## 如何使用 Aspose.Email 加入 custom email header
-
-以下是一個逐步指南，說明如何匯入程式庫、載入訊息、加入自訂標頭，並儲存已豐富的電子郵件。
-
-### 步驟 1：匯入 Aspose.Email 庫
-
-首先，您需要將 Aspose.Email 程式庫匯入您的 Java 專案。請確保已下載並將程式庫加入專案的相依性中。
+首先，將 Aspose.Email 函式庫匯入您的 Java 專案。確保已將 JAR 檔加入建置路徑。
 
 ```java
 import com.aspose.email.*;
 ```
 
-### 步驟 2：載入電子郵件
+### 步驟 2：載入 Email 訊息
 
-若要操作電子郵件訊息，必須先將其載入。您可以從檔案載入郵件，或從頭建立新郵件。
+您可以載入現有的 `.eml` 檔案，或建立新的 `MailMessage` 例項。以下示範從磁碟載入檔案。
 
 ```java
 // Load an email message from a file
 MailMessage message = MailMessage.load("path/to/your/email.eml");
 ```
 
-### 步驟 3：新增自訂郵件頭（新增 x-custom-header）
+### 步驟 3：新增（或設定）自訂標頭
 
-現在，讓我們透過加入自訂標頭來豐富郵件的中繼資料。此範例使用廣為接受的 `X-Custom-Header` 名稱，您亦可依需求選擇任何以 `X-` 為前綴的鍵。
+現在 **新增自訂 Email 標頭**。若日後需要 **設定自訂 Email 標頭** 的值，只需再次呼叫 `add` 或取代現有條目。
 
 ```java
 // Adding a custom header
 message.getHeaders().add("X-Custom-Header", "Custom Value");
 ```
 
-> **專業提示：** 當您需要用於追蹤的唯一識別碼時，請使用 GUID 或時間戳記作為郵件頭值。
+> **專業提示：** 當需要唯一識別碼以 *透過標頭追蹤 Email* 時，可使用 GUID、交易編號或時間戳記作為標頭值。
 
-### 步驟 4：儲存修改後的電子郵件
+### 步驟 4：儲存已修改的 Email
 
-加入自訂標頭後，將郵件儲存回磁碟（或串流至其他服務）。原始結構保持不變，新的標頭會無縫整合。
+完成中繼資料豐富後，儲存訊息。原始結構保持不變，新的標頭會無縫整合。
 
 ```java
 // Save the modified email
 message.save("path/to/modified/email.eml");
 ```
 
-恭喜！您已成功 **add custom email header**，並使用 Aspose.Email for Java 豐富了電子郵件的中繼資料。
+恭喜！您已成功 **新增自訂 Email 標頭**，並使用 Aspose.Email for Java 豐富了 Email 中繼資料。
 
-## 常見問題與故障排除
+## 常見問題與除錯
 
 | 問題 | 原因 | 解決方案 |
 |------|------|----------|
-| Header not appearing after save | Using `message.getHeaders().add()` on a read‑only `MailMessage` | Ensure the message is loaded in editable mode (default `load` does this). |
-| Duplicate headers | Adding the same header multiple times unintentionally | Check if the header already exists with `message.getHeaders().containsKey("X-Custom-Header")` before adding. |
-| Encoding problems | Non‑ASCII characters in header value | Encode the value using `MimeUtility.encodeText()` before adding. |
+| 儲存後標頭未出現 | 在唯讀的 `MailMessage` 上使用 `message.getHeaders().add()` | 確認訊息以可編輯模式載入（預設 `load` 會這樣）。 |
+| 標頭重複 | 不小心多次新增相同標頭 | 在新增前使用 `message.getHeaders().containsKey("X-Custom-Header")` 檢查是否已存在。 |
+| 編碼問題 | 標頭值含非 ASCII 字元 | 在新增前使用 `MimeUtility.encodeText()` 進行編碼。 |
 
 ## 常見問答
 
-**Q: What types of data are suitable for a custom header?**  
-A: Anything that doesn’t belong in the body—transaction IDs, campaign codes, security tokens, or processing flags.
+**Q: 哪類資料適合放在自訂標頭？**  
+A: 任何不適合放在正文的資訊——交易編號、活動代碼、安全令牌或處理旗標。
 
-**Q: Can I add multiple custom headers to the same email?**  
-A: Yes, call `message.getHeaders().add()` for each header you need.
+**Q: 可以在同一封 Email 中加入多個自訂標頭嗎？**  
+A: 可以，對每個需要的標頭呼叫 `message.getHeaders().add()`。
 
-**Q: Will adding custom headers affect email deliverability?**  
-A: Generally no, as long as you follow standard naming conventions (`X-` prefix) and keep the header size reasonable.
+**Q: 新增自訂標頭會影響郵件送達率嗎？**  
+A: 通常不會，只要遵守標準命名慣例（使用 `X-` 前綴）且標頭大小適中。
 
-**Q: Does Aspose.Email support other languages for the same task?**  
-A: Absolutely. Equivalent APIs exist for .NET, Python, and C++.
+**Q: Aspose.Email 是否支援其他語言執行相同任務？**  
+A: 當然。相同功能的 API 也提供給 .NET、Python 與 C++。
 
-**Q: Where can I find more examples of header manipulation?**  
-A: Explore the official docs at [here](https://reference.aspose.com/email/java/) for a full list of header‑related methods.
+**Q: 哪裡可以找到更多標頭操作的範例？**  
+A: 前往官方文件 [here](https://reference.aspose.com/email/java/) 查看完整的標頭相關方法清單。
+
+## 設定 Aspose.Email for Java
+
+開始之前，您需要先安裝 Aspose.Email for Java。可從 [here](https://releases.aspose.com/email/java/) 下載函式庫，並參考 [https://reference.aspose.com/email/java/](https://reference.aspose.com/email/java/) 的文件取得詳細安裝說明。
+
+## 為什麼要豐富 Email 中繼資料？
+
+新增自訂標頭可為您帶來：
+
+- **客製化：** 直接在 Email 中儲存應用程式特定資料（例如訂單編號）。  
+- **追蹤：** 使用 `X-Custom-Header` 於系統間 *透過標頭追蹤 Email*。  
+- **整合：** 將中繼資料轉發至 CRM、分析平台或日誌服務，無需解析正文。  
+- **合規：** 加入可供郵件閘道檢查的稽核資訊。
 
 ## 結論
 
-透過學習如何 **add custom email header** 與 Aspose.Email for Java，您即可開啟強大的方式來豐富電子郵件中繼資料、提升追蹤效能，並將通訊整合至下游系統。上述步驟為您奠定堅實基礎——請自行嘗試不同的標頭名稱與值，以符合您的業務需求。
+透過學習 **如何使用 Aspose.Email for Java 新增標頭**，您即可開啟豐富 Email 中繼資料、提升追蹤能力，並將通訊與下游系統整合的強大方式。上述步驟提供了堅實的基礎，您可依需求嘗試不同的標頭名稱與值，以符合業務需求。
 
 ---
 
-**最後更新：** 2026-01-11  
+**最後更新：** 2026-04-02  
 **測試環境：** Aspose.Email for Java 24.12  
 **作者：** Aspose  
 
