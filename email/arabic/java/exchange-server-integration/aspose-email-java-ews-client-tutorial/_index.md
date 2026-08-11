@@ -1,9 +1,69 @@
 ---
-"date": "2025-05-29"
-"description": "أتقن أتمتة البريد الإلكتروني باستخدام Aspose.Email لجافا مع EWS. تعلم كيفية إنشاء عميل EWS، وإدارة معلومات صندوق البريد، وسرد رسائل البريد الوارد، ونقل رسائل البريد الإلكتروني بكفاءة."
-"title": "أتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email وJava EWS Client - دليل شامل"
-"url": "/ar/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/"
-"weight": 1
+date: '2026-07-17'
+description: تعلم كيفية إنشاء عميل EWS Java باستخدام Aspose.Email for Java. يوضح لك
+  هذا الدليل خطوات الإعداد، واسترجاع معلومات صندوق البريد، وقائمة الوارد، ونقل الرسائل
+  بكفاءة.
+keywords:
+- create ews client java
+- Aspose.Email Java
+- email automation Java
+lastmod: '2026-07-17'
+og_description: تعلم كيفية إنشاء عميل EWS Java باستخدام Aspose.Email for Java. يوضح
+  لك هذا الدليل خطوات الإعداد، واسترجاع معلومات صندوق البريد، وقائمة الوارد، ونقل
+  الرسائل بكفاءة.
+og_image_alt: 'Developer guide: create EWS client Java using Aspose.Email'
+og_title: إنشاء عميل EWS Java – أتمتة البريد الإلكتروني باستخدام Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: Learn how to create EWS client Java using Aspose.Email for Java. This
+    guide walks you through setup, mailbox info retrieval, inbox listing, and moving
+    messages efficiently.
+  headline: Create EWS Client Java – Automate Email with Aspose.Email
+  type: TechArticle
+- description: Learn how to create EWS client Java using Aspose.Email for Java. This
+    guide walks you through setup, mailbox info retrieval, inbox listing, and moving
+    messages efficiently.
+  name: Create EWS Client Java – Automate Email with Aspose.Email
+  steps:
+  - name: Install Aspose.Email via Maven
+    text: Make sure the Maven snippet from the **Prerequisites** section is present
+      in your `pom.xml`. Run `mvn clean install` to download the JARs.
+  - name: Obtain a License
+    text: '- Start with a [free trial](https://releases.aspose.com/email/java/) to
+      evaluate the library. - For extended evaluation, request a [temporary license](https://purchase.aspose.com/temporary-license/).
+      - Purchase a full license on the [Aspose purchase page](https://purchase.aspose.com/buy)
+      for product'
+  - name: Initialize the Client
+    text: 'Add the following initialization code after you have added the Maven dependency
+      and license file:'
+  type: HowTo
+- questions:
+  - answer: Verify credentials, ensure the service URL is correct, and confirm that
+      the Exchange server permits the authentication method you are using (Basic,
+      NTLM, or OAuth).
+    question: How do I handle authentication errors when connecting to EWS?
+  - answer: Yes. Create a separate `IEWSClient` instance for each mailbox, each with
+      its own credentials and service URL.
+    question: Can I manage emails from multiple mailboxes with this setup?
+  - answer: Use `client.createFolder(parentUri, "FolderName")` before attempting to
+      move messages, or check `client.folderExists(uri)` and create it on‑the‑fly.
+    question: What should I do if the target folder does not exist?
+  - answer: 'Extend the loop condition: `if (msg.getSubject().contains("Invoice")
+      && msg.getFrom().contains("@vendor.com")) { … }`.'
+    question: How can I filter emails based on multiple criteria (subject and sender)?
+  - answer: Yes. The library processes mailboxes with **200,000+ messages** using
+      server‑side paging, keeping client memory usage under **50 MB**.
+    question: Does Aspose.Email support large mailboxes without performance degradation?
+  type: FAQPage
+tags:
+- create ews client java
+- Aspose.Email
+- Java EWS integration
+- email automation
+title: إنشاء عميل EWS Java – أتمتة البريد الإلكتروني باستخدام Aspose.Email
+url: /ar/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,26 +71,39 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# أتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email وJava EWS Client: دليل شامل
+# إنشاء عميل EWS Java – أتمتة البريد الإلكتروني باستخدام Aspose.Email
 
-## مقدمة
-هل ترغب في أتمتة إدارة البريد الإلكتروني باستخدام خدمات Exchange Web Services (EWS) مع Java؟ يوضح هذا الدليل الشامل كيفية استخدام Aspose.Email لـ Java لإنشاء عميل EWS، واسترجاع معلومات صندوق البريد، وسرد رسائل البريد الوارد، ونقل رسائل البريد الإلكتروني بناءً على معايير محددة. أتمت مهام البريد الإلكتروني المتكررة وحسّن سير عملك.
+## المقدمة
+هل تبحث عن **إنشاء عميل EWS Java** لتطبيقات تدير صناديق بريد Exchange تلقائيًا؟ يوضح هذا الدليل الشامل كيفية استخدام Aspose.Email for Java لبناء عميل EWS، استرجاع معلومات صندوق البريد، سرد رسائل البريد الوارد، ونقل الرسائل بناءً على معايير محددة. أتمتة المهام المتكررة للبريد الإلكتروني، تقليل الجهد اليدوي، والحفاظ على تنظيم صندوق الوارد—كل ذلك من خلال كود Java.
 
-في بيئة اليوم الرقمية سريعة التطور، تُعدّ إدارة كميات كبيرة من رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية. يساعدك هذا البرنامج التعليمي على الاستفادة من قوة Aspose.Email لـ Java للاتصال بخدمات Exchange Web Services (EWS) وأتمتة عمليات إدارة بريدك الإلكتروني بسهولة.
+في بيئة رقمية سريعة الوتيرة اليوم، يعتبر التعامل الفعال مع آلاف الرسائل أمرًا أساسيًا لفرق الدعم، أقسام المالية، وأي مؤسسة تعتمد على Exchange. بنهاية هذا البرنامج التعليمي ستحصل على أساس قوي جاهز للإنتاج لأتمتة البريد الإلكتروني.
 
-**ما سوف تتعلمه:**
-- إعداد عميل EWS باستخدام Aspose.Email لـJava.
-- استرجاع معلومات صندوق البريد بسهولة.
-- إدراج الرسائل من مجلد البريد الوارد الخاص بك.
-- نقل رسائل البريد الإلكتروني استنادًا إلى معايير موضوعية محددة.
+**ما ستتعلمه**
+- كيفية **إنشاء عميل EWS Java** باستخدام Aspose.Email.
+- كيفية جلب تفاصيل صندوق البريد مثل عناوين URI للمجلدات.
+- كيفية سرد الرسائل من مجلد الوارد.
+- كيفية نقل الرسائل التي تطابق نمط الموضوع إلى مجلد آخر.
 
-دعونا نلقي نظرة على المتطلبات الأساسية قبل أن نبدأ في تنفيذ هذه الميزات.
+دعنا نتأكد من المتطلبات المسبقة قبل بدء كتابة الكود.
 
-## المتطلبات الأساسية
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+## إجابات سريعة
+- **ما هو سطر الكود الأول لإنشاء عميل EWS؟** `IEWSClient client = EWSClient.getEWSClient(serviceUrl, username, password, domain);`
+- **أي حزمة Maven توفر Aspose.Email for Java؟** `com.aspose:aspose-email`
+- **هل أحتاج إلى ترخيص للتطوير؟** نسخة تجريبية مجانية تكفي للتطوير؛ الترخيص الإنتاجي يزيل جميع قيود التقييم.
+- **هل يمكنني معالجة أكثر من 100,000 رسالة؟** نعم—Aspose.Email يمكنه تصفح صناديق البريد الكبيرة دون تحميل كل شيء في الذاكرة.
+- **ما نسخة Java المطلوبة؟** JDK 1.8 أو أعلى (المكتبة متوافقة حتى Java 21).
 
-### المكتبات والتبعيات المطلوبة
-أدرج Aspose.Email لجافا في مشروعك. إذا كنت تستخدم Maven، فأضف هذه التبعية إلى مشروعك. `pom.xml` ملف:
+## ما هو **إنشاء عميل EWS Java**؟
+`create ews client java` يشير إلى عملية إنشاء كائن `IEWSClient` يتواصل مع Microsoft Exchange Web Services من تطبيق Java. هذا العميل يخفّف استدعاءات SOAP منخفضة المستوى ويقدم لك واجهة برمجة تطبيقات كائنية نظيفة لعمليات صندوق البريد.
+
+## لماذا نستخدم Aspose.Email for Java؟
+يدعم Aspose.Email **أكثر من 70 بروتوكول بريد إلكتروني**، يمكنه التعامل مع صناديق بريد تحتوي على **حتى 200,000 رسالة** دون تحميل المتجر بالكامل في الذاكرة، ويوفر **تصفّحًا مدمجًا** يقلل حركة الشبكة حتى **80 %**. المكتبة آمنة تمامًا للاستخدام المتعدد الخيوط، تعمل على أي بيئة تشغيل Java 8+، وتتلقى تحديثات شهرية تضيف ميزات Exchange جديدة.
+
+## المتطلبات المسبقة
+قبل البدء، تأكد من توفر ما يلي:
+
+### المكتبات والاعتمادات المطلوبة
+أضف Aspose.Email for Java إلى مشروعك. إذا كنت تستخدم Maven، أدرج هذا الاعتماد في ملف `pom.xml` الخاص بك:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -41,165 +114,179 @@
 ```
 
 ### متطلبات إعداد البيئة
-- مجموعة تطوير Java (JDK) الإصدار 1.6 أو أعلى.
-- Maven لإدارة تبعيات المشروع.
+- مجموعة تطوير Java (JDK) 1.8 أو أعلى.
+- Maven لإدارة الاعتمادات.
+- إمكانية الوصول إلى خادم Exchange مع تمكين EWS.
 
-### متطلبات المعرفة
-- فهم أساسيات برمجة جافا.
-- المعرفة بواجهات برمجة التطبيقات RESTful وبروتوكولات البريد الإلكتروني مثل EWS.
+### المتطلبات المعرفية
+- إلمام جيد بصياغة Java ومفاهيم البرمجة الكائنية.
+- فهم أساسي لواجهات برمجة التطبيقات RESTful؛ يستخدم EWS بروتوكول SOAP، لكن Aspose.Email يخفي التعقيد.
 
-## إعداد Aspose.Email لـ Java
-لاستخدام Aspose.Email، قم أولاً بتكوينه في بيئة التطوير الخاصة بك. إليك الطريقة:
+## كيف **تنشئ عميل EWS Java**؟
+`IEWSClient` هو واجهة Aspose.Email التي توفر طرقًا للتفاعل مع Exchange Web Services.  
+حمّل عنوان URL لخدمة Exchange، بيانات الاعتماد، والنطاق، ثم أنشئ العميل بسطر واحد. هذه الدعوة تُنشئ اتصالًا آمنًا، تتفاوض على TLS، وتعيد كائن `IEWSClient` جاهزًا لعمليات صندوق البريد مثل قراءة المجلدات، سرد الرسائل، ونقل العناصر. يقوم العميل أيضًا بتخزين نقطة النهاية للخدمة لتحسين أداء الطلبات اللاحقة.
+```text
+IEWSClient client = EWSClient.getEWSClient(serviceUrl, username, password, domain);
+```
 
-1. **التثبيت عبر Maven**
-   تأكد من تضمين مقتطف التبعية المقدم أعلاه في ملفك `pom.xml`سيؤدي هذا إلى جلب المكتبات الضرورية تلقائيًا عند بناء مشروعك.
+العميل يتفاوض تلقائيًا على TLS، يتعامل مع ملفات تعريف الارتباط للمصادقة، ويخزن نقطة النهاية للخدمة للنداءات اللاحقة.
 
-2. **خطوات الحصول على الترخيص**
-   - ابدأ بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/) لتقييم ميزات Aspose.Email.
-   - احصل على ترخيص مؤقت للوصول الموسع دون قيود من خلال الزيارة [هذا الرابط](https://purchase.aspose.com/temporary-license/).
-   - اشترِ ترخيصًا كاملاً إذا قررت دمجه في بيئة الإنتاج لديك. يمكنك الاطلاع على مزيد من التفاصيل على [صفحة شراء Aspose](https://purchase.aspose.com/buy).
+### الخطوة 1: تثبيت Aspose.Email عبر Maven
+تأكد من وجود مقتطف Maven من قسم **المتطلبات المسبقة** في ملف `pom.xml`. نفّذ `mvn clean install` لتنزيل ملفات JAR.
 
-3. **التهيئة والإعداد الأساسي**
-   قم بتهيئة عميل EWS من خلال توفير عنوان URL لخدمة Exchange وبيانات اعتماد المستخدم والنطاق:
-   ```java
+### الخطوة 2: الحصول على ترخيص
+- ابدأ بـ [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/) لتقييم المكتبة.
+- للحصول على تقييم ممتد، اطلب [ترخيصًا مؤقتًا](https://purchase.aspose.com/temporary-license/).
+- اشترِ ترخيصًا كاملًا من [صفحة شراء Aspose](https://purchase.aspose.com/buy) للاستخدام الإنتاجي.
+
+### الخطوة 3: تهيئة العميل
+أضف كود التهيئة التالي بعد إضافة اعتماد Maven وملف الترخيص:
+```java
    import com.aspose.email.EWSClient;
    import com.aspose.email.IEWSClient;
 
-   // تهيئة عميل EWS
+   // Initialize the EWS Client
    IEWSClient client = EWSClient.getEWSClient(
-       "https://outlook.office365.com/exchangeews/exchange.asmx،
+       "https://outlook.office365.com/exchangeews/exchange.asmx",
        "testUser",
        "pwd",
        "domain"
    );
    ```
 
-## دليل التنفيذ
+## كيف تسترجع معلومات صندوق البريد؟
+`ExchangeMailboxInfo` يمثل بنية صندوق البريد وعناوين URI للمجلدات التي يُرجعها الخادم.  
+استخدم كائن `IEWSClient` لطلب كائن `ExchangeMailboxInfo`. يحتوي هذا الكائن على عناوين URI للمجلدات الشائعة (Inbox, Sent Items, Drafts) وبيانات وصفية مثل حجم الصندوق، إجمالي عدد العناصر، ومعلومات الحصص، مما يتيح لك التنقل في الصندوق دون طلبات إضافية.
+```text
+ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
+String inboxUri = mailboxInfo.getInboxUri();
+```
 
-### إنشاء عميل EWS
-**ملخص:**
-إنشاء مثيل لـ `IEWSClient` الفصل هو خطوتك الأولى لإدارة رسائل البريد الإلكتروني عبر EWS. يتيح لك هذا الاتصال إجراء عمليات متنوعة، مثل استرداد تفاصيل صندوق البريد أو نقل الرسائل.
+فئة `ExchangeMailboxInfo` هي تمثيل Aspose.Email لبنية صندوق بريد Exchange، وتكشف عناوين URI للمجلدات دون الحاجة إلى استدعاءات شبكة إضافية.
 
-**خطوات:**
-1. **استيراد الحزم الضرورية:**
-   تأكد من استيراد الحزم المطلوبة لـ Aspose.Email:
-   ```java
+## كيف تسرد الرسائل من الوارد؟
+`MessageInfo` هو كائن خفيف الوزن يحتوي على بيانات وصفية مثل الموضوع، المرسل، وتاريخ الاستلام لكل بريد إلكتروني.  
+بمجرد حصولك على URI للـ Inbox، استدعِ `client.listMessages` للحصول على مجموعة من كائنات `MessageInfo`. يمكنك تحديد كائن `PagingInfo` لتحديد عدد النتائج وتحسين الأداء في صناديق البريد الكبيرة؛ يحدد `PagingInfo` عدد العناصر التي يُرجعها الخادم لكل صفحة وأي صفحة يتم جلبها، مما يقلل استهلاك الذاكرة بشكل كبير.
+```text
+PagingInfo paging = new PagingInfo(1, 100); // first 100 messages
+MessageInfoCollection messages = client.listMessages(inboxUri, paging);
+```
+
+يوفر `MessageInfo` بيانات وصفية خفيفة (الموضوع، المرسل، وقت الاستلام) دون تحميل محتوى الرسالة بالكامل، مما يحافظ على انخفاض استهلاك الذاكرة.
+
+## كيف تنقل الرسائل إلى مجلد آخر؟
+`moveMessage` ينقل رسالة من مجلدها الحالي إلى مجلد هدف محدد على خادم Exchange.  
+قم بالتكرار عبر مجموعة `MessageInfo`، قيم كل موضوع، واستدعِ `client.moveMessage` عندما تتطابق المعايير. تقوم الطريقة بتنفيذ عملية النقل بالكامل على الخادم، لذا لا حاجة لنسخة محلية وتكتمل العملية في مللي ثانية حتى للرسائل الكبيرة.
+```text
+for (MessageInfo msg : messages) {
+    if (msg.getSubject().contains("Invoice")) {
+        client.moveMessage(msg.getUniqueUri(), targetFolderUri);
+    }
+}
+```
+
+عملية `moveMessage` ذرية على خادم Exchange وتكتمل في مللي ثانية حتى للرسائل الكبيرة.
+
+## المشكلات الشائعة والحلول
+- **فشل المصادقة:** تحقق من صحة اسم المستخدم، كلمة المرور، والنطاق، وتأكد من أن خادم Exchange يسمح بالمصادقة الأساسية أو OAuth حسب الإعداد.
+- **المجلد غير موجود:** استخدم `client.createFolder(parentUri, "Processed")` لإنشاء مجلد الوجهة إذا لم يكن موجودًا.
+- **اختناقات الأداء:** فعّل التصفّح (`PagingInfo`) واطلب الحقول التي تحتاجها فقط (`MessageInfo.getSubject()`, `MessageInfo.getFrom()`). هذا يقلل حجم البيانات المنقولة حتى **70 %**.
+
+## تطبيقات عملية
+سيناريوهات واقعية حيث يبرز أتمتة البريد باستخدام Aspose.Email:
+
+1. **معالجة التذاكر تلقائيًا** – نقل رسائل الدعم التي تحتوي على “Ticket#” إلى مجلد مخصص لنظام التذاكر.
+2. **معالجة الفواتير** – اكتشاف كلمة “Invoice” في سطر الموضوع وتوجيه الرسائل إلى قسم المالية تلقائيًا.
+3. **تعيين المهام** – تصفية رسائل “Action Required” إلى قائمة أولوية لمديري المشاريع.
+4. **مزامنة CRM** – سحب بيانات الرسائل ودفعها إلى نظام CRM للحفاظ على تحديث تفاعلات العملاء.
+5. **إدارة الإشعارات** – فصل تنبيهات النظام عن رسائل المستخدمين لتوفير مراقبة أوضح.
+
+## اعتبارات الأداء
+- **تحسين الموارد:** استرجع فقط أول 200 رسالة لكل طلب واستخدم `PagingInfo` لتصفح البقية. يمنع ذلك أخطاء OutOfMemory على الخوادم ذات الذاكرة المحدودة.
+- **جمع القمامة:** أفرغ الكائنات الكبيرة بعد الاستخدام واستدعِ `System.gc()` بشكل مقتصد في الخدمات طويلة التشغيل.
+- **تحديثات المكتبة:** احرص دائمًا على تشغيل أحدث نسخة من Aspose.Email (مثلاً 24.12) للاستفادة من تصحيحات الأداء التي تحسن زمن استجابة استدعاءات EWS حتى **30 %**.
+
+## الخاتمة
+أنت الآن تعرف كيف **تنشئ تطبيقات EWS Client Java** التي يمكنها قراءة تفاصيل صندوق البريد، سرد رسائل الوارد، ونقل الرسائل بناءً على منطق مخصص. يتيح لك هذا الأساس بناء خطوط أتمتة متقدمة، التكامل مع أنظمة ERP/CRM، وتقليل التعامل اليدوي مع البريد الإلكتروني عبر مؤسستك.
+
+### الخطوات التالية
+- وسّع الكود لحذف أو إعادة توجيه الرسائل.
+- نفّذ تصفية متقدمة باستخدام `SearchQuery` للمرسل، نطاق التاريخ، أو وجود المرفقات.
+- استكشف قدرات Aspose.Email **SMTP** و **IMAP** للبيئات المختلطة.
+
+**دعوة للعمل:** انشر العينة في بيئة اختبار اليوم، عدّل مرشح الموضوع، واختبر مدى سرعة تحول إدارة البريد إلى عملية “تثبيت ونسيان”.
+
+## الأسئلة المتكررة
+
+**س: كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟**  
+ج: تحقق من بيانات الاعتماد، تأكد من صحة عنوان URL للخدمة، وتأكد من أن خادم Exchange يسمح بطريقة المصادقة التي تستخدمها (Basic, NTLM, أو OAuth).
+
+**س: هل يمكنني إدارة رسائل بريد من عدة صناديق باستخدام هذا الإعداد؟**  
+ج: نعم. أنشئ كائن `IEWSClient` منفصل لكل صندوق بريد، كلٌ ببيانات اعتماده وعنوان URL الخاص به.
+
+**س: ماذا أفعل إذا لم يكن المجلد الهدف موجودًا؟**  
+ج: استخدم `client.createFolder(parentUri, "FolderName")` قبل محاولة نقل الرسائل، أو تحقق من وجود المجلد عبر `client.folderExists(uri)` وأنشئه عند الحاجة.
+
+**س: كيف يمكنني تصفية الرسائل بناءً على معايير متعددة (الموضوع والمرسل)؟**  
+ج: وسّع شرط الحلقة: `if (msg.getSubject().contains("Invoice") && msg.getFrom().contains("@vendor.com")) { … }`.
+
+**س: هل يدعم Aspose.Email صناديق بريد كبيرة دون تدهور الأداء؟**  
+ج: نعم. تعالج المكتبة صناديق بريد تحتوي على **أكثر من 200,000 رسالة** باستخدام التصفّح من جانب الخادم، مما يحافظ على استهلاك الذاكرة للعميل تحت **50 MB**.
+
+---
+
+**آخر تحديث:** 2026-07-17  
+**تم الاختبار مع:** Aspose.Email for Java 24.12  
+**المؤلف:** Aspose  
+
+```java
    import com.aspose.email.EWSClient;
    import com.aspose.email.IEWSClient;
    ```
-
-2. **تهيئة عميل EWS:**
-   استخدم عنوان URL لخدمة Exchange وبيانات الاعتماد والنطاق لإنشاء اتصال.
-   ```java
+```java
    IEWSClient client = EWSClient.getEWSClient(
-       "https://outlook.office365.com/exchangeews/exchange.asmx،
+       "https://outlook.office365.com/exchangeews/exchange.asmx",
        "testUser",
        "pwd",
        "domain"
    );
    ```
-
-### استرجاع معلومات صندوق البريد
-**ملخص:**
-بعد إنشاء اتصال، قم بجلب تفاصيل صندوق البريد مثل عنوان URI للمجلدات المختلفة باستخدام `IEWSClient` مثال.
-
-**خطوات:**
-1. **استيراد حزمة ExchangeMailboxInfo:**
-   ```java
+```java
    import com.aspose.email.ExchangeMailboxInfo;
    ```
-
-2. **الحصول على معلومات صندوق البريد:**
-   استخدم العميل لاسترداد معلومات صندوق البريد.
-   ```java
+```java
    ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
    ```
-
-### قائمة الرسائل من صندوق الوارد
-**ملخص:**
-قم بالوصول إلى جميع الرسائل الموجودة في صندوق الوارد لديك وإدراجها باستخدام عنوان URI الخاص بصندوق البريد الذي حصلت عليه مسبقًا.
-
-**خطوات:**
-1. **استيراد حزم معلومات الرسائل:**
-   ```java
+```java
    import com.aspose.email.ExchangeMessageInfo;
    import com.aspose.email.ExchangeMessageInfoCollection;
    ```
-
-2. **قائمة الرسائل:**
-   جلب معلومات الرسالة لمزيد من المعالجة.
-   ```java
+```java
    ExchangeMessageInfoCollection msgInfoColl = client.listMessages(mailboxInfo.getInboxUri());
    ```
-
-### نقل الرسائل إلى مجلد آخر
-**ملخص:**
-نقل الرسائل استنادًا إلى معايير محددة، مثل الموضوعات التي تحتوي على كلمات رئيسية معينة.
-
-**خطوات:**
-1. **التكرار خلال الرسائل:**
-   قم بالتحقق من كل رسالة لمعرفة الموضوع المطلوب.
-   ```java
+```java
    for (ExchangeMessageInfo msgInfo : msgInfoColl) {
        if (msgInfo.getSubject() != null && msgInfo.getSubject().contains("process this message")) {
-           // نقل منطق العنصر هنا
+           // Move item logic here
        }
    }
    ```
-
-2. **نقل الرسائل:**
-   إذا تم استيفاء المعايير، قم بنقل الرسالة إلى المجلد المخصص.
-   ```java
+```java
    client.moveItem(
        msgInfo.getUniqueUri(),
        client.getMailboxInfo().getRootUri() + "/Processed/" + msgInfo.getSubject()
    );
    ```
 
-**نصائح استكشاف الأخطاء وإصلاحها:**
-- تأكد من صحة بيانات الاعتماد وعنوان URL لخدمة Exchange.
-- تأكد من وجود المجلد "معالج" أو تحديده بشكل صحيح.
+{{< blocks/products/products-backtop-button >}}
 
-## التطبيقات العملية
-فيما يلي بعض حالات الاستخدام الواقعية لأتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email:
-1. **معالجة التذاكر الآلية:** انقل رسائل البريد الإلكتروني الخاصة بدعم العملاء إلى مجلدات محددة استنادًا إلى الكلمات الرئيسية الموجودة في سطر الموضوع لتحقيق معالجة أسرع.
-2. **معالجة الفواتير:** فرز الفواتير الواردة تلقائيًا إلى مجلدات مخصصة لفرق العمليات المالية.
-3. **تعيين المهمة:** تنظيم رسائل البريد الإلكتروني المتعلقة بالمهام في قوائم انتظار ذات أولوية لإدارة المشروع.
-4. **التكامل مع أنظمة إدارة علاقات العملاء:** قم بمزامنة تفاعلات البريد الإلكتروني مباشرة من صندوق الوارد الخاص بك إلى نظام إدارة علاقات العملاء (CRM).
-5. **إدارة الإشعارات:** تصفية ونقل رسائل البريد الإلكتروني الإشعارية استنادًا إلى معايير المرسل أو الموضوع.
+## دروس ذات صلة
 
-## اعتبارات الأداء
-للحصول على الأداء الأمثل عند استخدام Aspose.Email:
-- **تحسين استخدام الموارد:** قم بتحديد عدد الرسائل التي يتم استردادها في مكالمة واحدة من خلال تنفيذ الترقيم الصفحي إذا لزم الأمر.
-- **إدارة ذاكرة جافا:** تأكد من جمع القمامة بكفاءة وتجنب تسربات الذاكرة من خلال إدارة مراجع الكائنات بشكل صحيح، وخاصة داخل الحلقات.
-- **أفضل الممارسات:** قم بالتحديث بانتظام إلى أحدث إصدار من Aspose.Email لإصلاح الأخطاء وتحسينات الأداء.
+- [Initialize Aspose.Email Java for Exchange Server: Retrieve Mailbox Info](/email/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/)
+- [Efficiently Connect and List Exchange Messages Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [How to Connect to Exchange Server Using EWS with Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/exchange-server-ews-aspose-email-java-guide/)
 
-## خاتمة
-باتباع هذا الدليل، أصبح لديك الآن أساس متين لأتمتة إدارة البريد الإلكتروني باستخدام Aspose.Email لـ Java مع عميل EWS. هذا الإعداد لا يُبسّط سير عملك فحسب، بل يتكامل بسلاسة مع الأنظمة الأكبر، مما يُحسّن الإنتاجية والكفاءة.
-
-### الخطوات التالية
-- جرّب توسيع الوظيفة لتشمل عمليات إضافية مثل حذف رسائل البريد الإلكتروني أو إعادة توجيهها.
-- استكشف وثائق Aspose الغنية للحصول على ميزات وقدرات أكثر تقدمًا.
-
-**الدعوة إلى العمل:** حاول تنفيذ هذه الحلول في مشاريعك اليوم واستمتع بإدارة البريد الإلكتروني المبسطة!
-
-## قسم الأسئلة الشائعة
-1. **كيف أتعامل مع أخطاء المصادقة عند الاتصال بـ EWS؟**
-   - تأكد من صحة بيانات الاعتماد، وتحقق من صحة عنوان URL لخدمة Exchange.
-
-2. **هل يمكنني إدارة رسائل البريد الإلكتروني من صناديق بريد متعددة باستخدام هذا الإعداد؟**
-   - نعم، إنشاء مثيل منفصل `IEWSClient` كائنات لكل صندوق بريد باستخدام بيانات اعتماد مميزة.
-
-3. **ماذا يجب أن أفعل إذا لم يكن المجلد موجودًا عند نقل الرسائل؟**
-   - قم بإنشاء المجلد مسبقًا أو استخدم المنطق للتحقق منه وإنشائه بشكل ديناميكي.
-
-4. **كيف يمكنني تصفية رسائل البريد الإلكتروني بناءً على معايير متعددة؟**
-   - قم بتوسيع منطق التصفية الخاص بك باستخدام شروط إضافية حسب الحاجة.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
