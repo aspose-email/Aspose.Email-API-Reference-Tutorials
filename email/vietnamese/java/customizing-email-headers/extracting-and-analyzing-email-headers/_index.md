@@ -1,11 +1,17 @@
 ---
-date: 2026-01-11
-description: Hướng dẫn phân tích tiêu đề email toàn diện bằng Aspose.Email cho Java.
-  Tìm hiểu cách phân tích tệp eml bằng Java và theo dõi email qua tiêu đề.
-linktitle: Extracting and Analyzing Email Headers with Aspose.Email
+date: 2026-04-05
+description: Tìm hiểu cách trích xuất tiêu đề email từ các tệp .eml bằng Aspose.Email
+  cho Java. Hướng dẫn này bao gồm việc đọc tệp eml, kiểm tra SPF/DKIM và phát hiện
+  email lừa đảo.
+keywords:
+- extract email headers
+- email header analysis
+- read eml file
+- check spf dkim
+- detect phishing email
+linktitle: Trích xuất tiêu đề email bằng Aspose.Email – Hướng dẫn Java
 second_title: Aspose.Email Java Email Management API
-title: 'Hướng dẫn phân tích tiêu đề email - Trích xuất và phân tích tiêu đề email bằng
-  Aspose.Email'
+title: Trích xuất tiêu đề email bằng Aspose.Email – Hướng dẫn Java
 url: /vi/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---
@@ -16,45 +22,45 @@ weight: 12
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Trích xuất và Phân tích Tiêu đề Email bằng Aspose.Email
+# Trích xuất tiêu đề email với Aspose.Email – Hướng dẫn Java
 
-## Giới thiệu về Trích xuất và Phân tích Tiêu đề Email bằng Aspose.Email
+## Giới thiệu về việc trích xuất và phân tích tiêu đề email với Aspose.Email
 
-Trong **bài hướng dẫn phân tích tiêu đề email** này, chúng ta sẽ đi qua cách trích xuất, phân tích và giải thích siêu dữ liệu ẩn trong tệp *.eml* bằng Aspose.Email cho Java. Dù bạn đang xây dựng bộ lọc spam, triển khai theo dõi email, hay chỉ cần kiểm tra lộ trình tin nhắn, việc nắm vững phân tích tiêu đề sẽ cung cấp cho bạn những hiểu biết cần thiết để đưa ra quyết định thông minh.
+Trong **hướng dẫn phân tích tiêu đề email** này, chúng tôi sẽ hướng dẫn cách **trích xuất tiêu đề email** từ một tệp *.eml* bằng Aspose.Email cho Java. Cho dù bạn đang xây dựng bộ lọc spam, triển khai **theo dõi email**, hoặc cần **phát hiện email lừa đảo**, việc nắm vững việc trích xuất tiêu đề sẽ cung cấp cho bạn thông tin cần thiết để đưa ra quyết định nhanh chóng.
 
 ## Câu trả lời nhanh
-- **Thư viện chính là gì?** Aspose.Email cho Java  
-- **Định dạng tệp được phân tích là gì?** *.eml* (tin nhắn email tiêu chuẩn)  
-- **Có cần giấy phép không?** Bản dùng thử miễn phí đủ cho phát triển; cần giấy phép cho môi trường sản xuất.  
-- **Thời gian thực hiện một triển khai cơ bản là bao lâu?** Khoảng 10‑15 phút sau khi cài đặt.  
-- **Có thể tự động hoá việc trích xuất tiêu đề không?** Có – API hoàn toàn có thể script và tích hợp vào bất kỳ ứng dụng Java nào.
+- **Thư viện chính là gì?** Aspose.Email for Java  
+- **Định dạng tệp nào được phân tích?** *.eml* (standard email message)  
+- **Tôi có cần giấy phép không?** A free trial works for development; a license is required for production.  
+- **Thời gian thực hiện cơ bản là bao lâu?** Roughly 10‑15 minutes after setup.  
+- **Tôi có thể tự động hóa việc trích xuất tiêu đề không?** Yes – the API is fully scriptable and integrates with any Java application.
 
-## Bài hướng dẫn phân tích tiêu đề email là gì?
-Phân tích tiêu đề email liên quan đến việc đọc các trường có cấu trúc đi kèm với mỗi email—như **From**, **Received**, **DKIM‑Signature**, và **Received‑SPF**—để khám phá danh tính người gửi, trạng thái xác thực và lộ trình mà tin nhắn đã đi qua các máy chủ thư. Bài hướng dẫn này minh họa cách thực hiện phân tích đó một cách lập trình.
+## Phân tích tiêu đề email là gì?
+Phân tích tiêu đề email liên quan đến việc đọc các trường có cấu trúc đi kèm với mỗi email — chẳng hạn như **From**, **Received**, **DKIM‑Signature**, và **Received‑SPF** — để khám phá danh tính người gửi, trạng thái xác thực và lộ trình mà tin nhắn đã đi qua các máy chủ thư. Hướng dẫn này trình bày cách thực hiện phân tích đó một cách lập trình.
 
-## Tại sao nên sử dụng bài hướng dẫn phân tích tiêu đề email?
-- **Bảo mật:** Phát hiện người gửi giả mạo và các cuộc tấn công phishing bằng cách kiểm tra SPF/DKIM.  
-- **Theo dõi:** Tái tạo lộ trình chính xác của email, hữu ích cho việc khắc phục sự cố giao nhận.  
-- **Tuân thủ:** Trích xuất thời gian và thông tin máy chủ để tạo chuỗi kiểm toán.  
-- **Tự động hoá:** Tích hợp việc phân tích tiêu đề vào các pipeline xử lý email hàng loạt.
+## Tại sao cần trích xuất tiêu đề email?
+- **Bảo mật:** Verify SPF/DKIM and spot forged senders, a key step in **detecting phishing email**.  
+- **Theo dõi:** Reconstruct the exact route an email followed, useful for troubleshooting delivery issues.  
+- **Tuân thủ:** Pull timestamps and server information for audit trails.  
+- **Tự động hóa:** Embed header parsing into bulk‑mail processing pipelines for scalable solutions.
 
-## Các yêu cầu trước
+## Yêu cầu trước
 
-Trước khi chúng ta bắt đầu với mã, hãy chắc chắn rằng bạn đã chuẩn bị đầy đủ các yêu cầu sau:
+Before we dive into the code, make sure you have the following prerequisites in place:
 
-1. **Môi trường phát triển Java:** Đảm bảo bạn đã cài đặt Java trên hệ thống. Bạn có thể tải về từ [đây](https://www.oracle.com/java/technologies/javase-downloads.html).
+1. Java Development Environment: Ensure that you have Java installed on your system. You can download it from [here](https://www.oracle.com/java/technologies/javase-downloads.html).
 
-2. **Aspose.Email cho Java:** Bạn sẽ cần thư viện Aspose.Email cho Java. Tải về từ [trang web Aspose](https://releases.aspose.com/email/java/).
+2. Aspose.Email for Java: You'll need the Aspose.Email for Java library. You can download it from the [Aspose website](https://releases.aspose.com/email/java/).
 
-3. **Môi trường Phát triển Tích hợp (IDE):** Bạn có thể dùng bất kỳ IDE nào hỗ trợ Java, chẳng hạn Eclipse hoặc IntelliJ IDEA, để viết và chạy mã.
+3. Integrated Development Environment (IDE): You can use any Java‑compatible IDE, such as Eclipse or IntelliJ IDEA, to write and run the code.
 
 ## Bước 1: Tạo dự án Java
 
-Tạo một dự án Java mới trong IDE ưa thích và thêm file JAR Aspose.Email cho Java vào classpath của dự án. Điều này sẽ cho phép bạn truy cập các lớp `MailMessage`, `HeaderCollection` và các lớp liên quan cần thiết cho việc trích xuất tiêu đề.
+Start a new Java project in your preferred IDE and add the Aspose.Email for Java JAR to the project’s classpath. This gives you access to the `MailMessage`, `HeaderCollection`, and related classes needed for **load email message** and header extraction.
 
-## Bước 2: Phân tích Tiêu đề Email
+## Bước 2: Phân tích tiêu đề email
 
-Bây giờ dự án đã sẵn sàng, chúng ta có thể bắt đầu phân tích tiêu đề của một tệp *.eml*. Đoạn mã dưới đây minh họa cách **phân tích tệp eml bằng Java** sử dụng Aspose.Email:
+Now that the project is ready, we can begin parsing the headers of an *.eml* file. The following snippet demonstrates how to **read eml file** style using Aspose.Email:
 
 ```java
 // Load the email message
@@ -69,24 +75,24 @@ for (Header header : headers) {
 }
 ```
 
-Trong đoạn mã này, chúng ta tải một tin nhắn email từ tệp và sau đó lấy các tiêu đề của nó bằng phương thức `getHeaders()`. Chúng ta lặp qua bộ sưu tập và in ra mỗi cặp tên/giá trị tiêu đề.
+Trong đoạn mã này, chúng ta tải một email từ tệp và sau đó lấy các tiêu đề bằng phương thức `getHeaders()`. Chúng ta lặp qua bộ sưu tập và in ra mỗi cặp tên/giá trị tiêu đề.
 
-## Bước 3: Phân tích Tiêu đề Email
+## Bước 3: Phân tích tiêu đề email
 
-Với các tiêu đề thô trong tay, bạn có thể thực hiện nhiều loại phân tích khác nhau. Dưới đây là ba nhiệm vụ phổ biến minh họa **theo dõi email bằng tiêu đề**.
+With the raw headers in hand, you can perform a variety of analyses. Below are three common tasks that illustrate **check SPF DKIM** and overall email tracking.
 
-### Xác định Người gửi
+### Xác định người gửi
 
-Tiêu đề “From” (hoặc thuộc tính `MailMessage.getFrom()`) cho biết ai là người gửi tin nhắn:
+The “From” header (or the `MailMessage.getFrom()` property) tells you who sent the message:
 
 ```java
 String sender = message.getFrom().getAddress();
 System.out.println("Sender: " + sender);
 ```
 
-### Kiểm tra SPF và DKIM
+### Kiểm tra các bản ghi SPF và DKIM
 
-SPF và DKIM giúp xác minh rằng email thực sự xuất phát từ miền được khai báo. Tìm các tiêu đề tương ứng:
+SPF and DKIM help verify that the email really originates from the claimed domain. Look for the corresponding headers:
 
 ```java
 String spfRecord = headers.get("Received-SPF");
@@ -96,9 +102,9 @@ System.out.println("SPF Record: " + spfRecord);
 System.out.println("DKIM Record: " + dkimRecord);
 ```
 
-### Truy vết Lộ trình Email
+### Theo dõi lộ trình email
 
-Mỗi lần chuyển tiếp một tin nhắn sẽ thêm một tiêu đề “Received”. Bằng cách in ra các tiêu đề này, bạn có thể tái tạo đường đi:
+Every hop a message makes adds a “Received” header. By printing these, you can reconstruct the path:
 
 ```java
 for (Header header : headers) {
@@ -108,39 +114,39 @@ for (Header header : headers) {
 }
 ```
 
-## Các vấn đề thường gặp và Giải pháp
+## Các vấn đề thường gặp và giải pháp
 
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|------------|----------|
-| `NullPointerException` khi gọi `message.getFrom()` | Tin nhắn không có tiêu đề **From**. | Kiểm tra sự tồn tại của tiêu đề trước khi truy cập, hoặc dùng `message.getHeaders().get("From")`. |
-| Thiếu tiêu đề SPF/DKIM | Máy chủ của người gửi không bao gồm chúng. | Xem thiếu giá trị như “không được cung cấp” và tiếp tục phân tích. |
-| Các tệp `.eml` lớn gây áp lực bộ nhớ | Tải toàn bộ tin nhắn một lúc. | Sử dụng API streaming (`MailMessage.load(InputStream)`) cho các tệp lớn. |
+| Vấn đề | Lý do | Giải pháp |
+|-------|--------|-----|
+| `NullPointerException` on `message.getFrom()` | Tin nhắn thiếu tiêu đề **From**. | Xác thực tiêu đề tồn tại trước khi truy cập, hoặc sử dụng `message.getHeaders().get("From")`. |
+| Missing SPF/DKIM headers | Máy chủ của người gửi không bao gồm chúng. | Xem các giá trị thiếu như “không được cung cấp” và tiếp tục phân tích. |
+| Large `.eml` files cause memory pressure | Tải toàn bộ tin nhắn một lần. | Sử dụng API streaming (`MailMessage.load(InputStream)`) cho các tệp lớn. |
 
 ## Câu hỏi thường gặp
 
-**H: Làm sao tôi có thể truy cập tiêu đề email trong Aspose.Email?**  
-Đ: Tải email bằng `MailMessage.load()` và gọi `getHeaders()` để lấy một `HeaderCollection`. Duyệt qua để đọc các giá trị tiêu đề riêng lẻ.
+**Q: Làm sao tôi có thể truy cập tiêu đề email trong Aspose.Email?**  
+A: Tải email bằng `MailMessage.load()` và gọi `getHeaders()` để lấy một `HeaderCollection`. Lặp qua nó để đọc các giá trị tiêu đề riêng lẻ.
 
-**H: Tiêu đề email chứa những thông tin gì?**  
-Đ: Tiêu đề lưu trữ siêu dữ liệu như địa chỉ người gửi/nhận, thời gian, các bước chuyển tiếp (`Received`), kết quả xác thực (`DKIM`, `SPF`), và các X‑header tùy chỉnh do ứng dụng tạo.
+**Q: Tiêu đề email chứa thông tin gì?**  
+A: Tiêu đề lưu trữ siêu dữ liệu như địa chỉ người gửi/nhận, dấu thời gian, các bước máy chủ (`Received`), kết quả xác thực (`DKIM`, `SPF`), và các X‑header tùy chỉnh được ứng dụng sử dụng.
 
-**H: Làm sao kiểm tra SPF và DKIM trong tiêu đề?**  
-Đ: Tìm tiêu đề `Received-SPF` và `DKIM-Signature` trong bộ sưu tập. Sự hiện diện (và giá trị) của chúng cho biết tin nhắn đã vượt qua các kiểm tra xác thực hay chưa.
+**Q: Làm sao tôi kiểm tra các bản ghi SPF và DKIM trong tiêu đề?**  
+A: Tìm các tiêu đề `Received-SPF` và `DKIM-Signature` trong bộ sưu tập. Sự hiện diện (và giá trị) của chúng cho biết tin nhắn có vượt qua các kiểm tra xác thực đó hay không.
 
-**H: Tại sao phân tích tiêu đề email lại quan trọng?**  
-Đ: Nó giúp xác thực tính xác thực, truy vết lộ trình giao nhận, chẩn đoán vấn đề spam và tuân thủ các chính sách bảo mật—cần thiết cho bất kỳ hệ thống xử lý email nào mạnh mẽ.
+**Q: Tại sao việc phân tích tiêu đề email lại quan trọng?**  
+A: Nó giúp xác minh tính xác thực, theo dõi lộ trình giao nhận, chẩn đoán vấn đề spam, và tuân thủ các chính sách bảo mật — thiết yếu cho bất kỳ hệ thống xử lý email nào mạnh mẽ.
 
-**H: Tôi có thể tự động hoá phân tích tiêu đề email với Aspose.Email không?**  
-Đ: Chắc chắn. API của thư viện hoàn toàn lập trình được, cho phép bạn nhúng việc trích xuất và phân tích tiêu đề vào các công việc batch, micro‑service hoặc cổng mail thời gian thực.
+**Q: Tôi có thể tự động hóa phân tích tiêu đề email với Aspose.Email không?**  
+A: Chắc chắn. API của thư viện hoàn toàn lập trình được, cho phép bạn nhúng việc trích xuất và phân tích tiêu đề vào các công việc batch, micro‑service, hoặc cổng mail thời gian thực.
 
 ## Kết luận
 
-Bài **hướng dẫn phân tích tiêu đề email** này đã chỉ cho bạn cách tải một tệp *.eml*, trích xuất các tiêu đề và thực hiện các phân tích thực tiễn như xác định người gửi, kiểm tra SPF/DKIM và truy vết lộ trình. Với những kỹ thuật này, bạn có thể xây dựng các giải pháp xử lý email an toàn, có thể kiểm toán và thông minh.
+Hướng dẫn **phân tích tiêu đề email** này đã chỉ cho bạn cách **tải email**, trích xuất các tiêu đề của nó, và thực hiện các phân tích thực tiễn như xác định người gửi, **kiểm tra SPF DKIM**, và theo dõi lộ trình. Với những kỹ thuật này, bạn có thể xây dựng các giải pháp xử lý email an toàn, có thể kiểm toán và thông minh, đáng tin cậy trong việc **trích xuất tiêu đề email** và bảo vệ tổ chức của bạn khỏi các mối đe dọa phishing.
 
 ---
 
-**Cập nhật lần cuối:** 2026-01-11  
-**Đã kiểm thử với:** Aspose.Email cho Java 23.12 (phiên bản mới nhất tại thời điểm viết)  
+**Cập nhật lần cuối:** 2026-04-05  
+**Đã kiểm tra với:** Aspose.Email for Java 23.12 (latest at time of writing)  
 **Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

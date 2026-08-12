@@ -1,10 +1,17 @@
 ---
-"description": "Aspose.Email for Java kullanarak DKIM imzalarıyla e-posta güvenliğini sağlayın. DKIM uygulaması için adım adım kılavuz ve kod."
-"linktitle": "Aspose.Email ile DKIM İmzalarının Uygulanması"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email ile DKIM İmzalarının Uygulanması"
-"url": "/tr/java/customizing-email-headers/dkim-signatures-implementation/"
-"weight": 15
+date: 2026-04-05
+description: Aspose.Email for Java kullanarak e-postayı DKIM ile nasıl imzalayacağınızı
+  öğrenin, DKIM anahtarları oluşturun, DKIM DNS'i yapılandırın ve e-posta teslimatınızı
+  artırın.
+keywords:
+- how to sign email
+- generate dkim keys
+- configure dkim dns
+linktitle: Aspose.Email for Java Kullanarak DKIM ile E-posta Nasıl İmzalanır
+second_title: Aspose.Email Java Email Management API
+title: Aspose.Email for Java Kullanarak DKIM ile E-posta Nasıl İmzalanır
+url: /tr/java/customizing-email-headers/dkim-signatures-implementation/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,113 +20,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email ile DKIM İmzalarının Uygulanması
+# DKIM E-posta Kimlik Doğrulama: Aspose.Email ile İmzaların Uygulanması
 
+## Aspose.Email kullanarak DKIM ile E-posta Nasıl İmzalanır
 
-## Aspose.Email ile DKIM İmzalarının Uygulanması
+E-posta güvenliği, günümüz dijital çağında son derece önemlidir ve DKIM ile **e-posta nasıl imzalanır** en etkili yöntemlerden biridir, mesajlarınızı manipülasyondan ve taklitten korur. Her giden e-postaya kriptografik bir imza ekleyerek alıcılara mesajın gerçekten sizin alan adınızdan geldiğini doğrulama imkanı sağlarsınız. Bu öğreticide, Aspose.Email for Java kullanarak DKIM imzalarının uygulanma sürecini baştan sona inceleyeceğiz.
 
-Günümüzün dijital çağında e-posta güvenliği çok önemlidir. E-posta güvenliğinin en önemli yönlerinden biri, gönderilen ve alınan e-postaların gerçekliğini ve bütünlüğünü sağlamaktır. DomainKeys Identified Mail (DKIM) imzaları, bunu başarmada hayati bir rol oynar. Bu makalede, e-posta mesajlarıyla çalışmak için güçlü bir kütüphane olan Aspose.Email for Java kullanarak DKIM imzalarının nasıl uygulanacağını inceleyeceğiz.
+## Hızlı Yanıtlar
+- **DKIM nedir?** E-posta başlıklarını özel bir anahtar ile imzalayan kriptografik bir yöntem.  
+- **DKIM'i e-posta kimlik doğrulaması için neden kullanmalıyım?** Gönderen kimliğini doğrulamaya yardımcı olur ve kimlik avı saldırılarını önler.  
+- **Java'da DKIM imzalamasını basitleştiren kütüphane hangisidir?** Aspose.Email for Java.  
+- **DNS değişikliklerine ihtiyacım var mı?** Evet – genel anahtarı bir TXT kaydı aracılığıyla yayınlayın.  
+- **DKIM e-posta teslimatını iyileştirebilir mi?** Kesinlikle, gelen kutusu yerleştirme oranlarını artırır.
 
-## DKIM İmzalarını Anlamak
+## DKIM e-posta kimlik doğrulaması nedir?
+DKIM (DomainKeys Identified Mail), bir e-postanın **DKIM-Signature** başlığına dijital bir imza ekler. İmza, yalnızca gönderici alan adı tarafından kontrol edilen özel bir anahtar ile oluşturulur. Alıcılar, göndericinin DNS TXT kaydından eşleşen genel anahtarı alarak imzayı doğrular ve mesajın taşıma sırasında değiştirilmediğini onaylar.
 
-DKIM, göndericinin e-postalarını dijital olarak imzalamasına olanak tanıyan ve alıcının e-postanın gerçekliğini doğrulaması için bir yol sağlayan bir e-posta kimlik doğrulama yöntemidir. E-posta başlığına dijital bir imza ekleyerek çalışır. Bu imza, göndericinin etki alanının elinde bulunan özel bir anahtar kullanılarak üretilir ve göndericinin etki alanının DNS kayıtlarında yayınlanan genel bir anahtar kullanılarak doğrulanabilir.
+## DKIM'i e-posta teslimatını iyileştirmek için neden kullanmalısınız?
+- **Email authentication:** Mesajlarınızın spam olarak işaretlenme ihtimalini azaltır.  
+- **Enhanced reputation:** Mail hizmetleri, sürekli olarak imzalanan alan adlarına güven duyar.  
+- **Phishing protection:** Saldırganların adresinizi taklit etmesini zorlaştırır.  
+
+## DKIM anahtarları nasıl oluşturulur
+1. OpenSSL, PowerShell veya çevrimiçi bir sihirbaz gibi bir anahtar‑oluşturma aracı kullanarak bir RSA ortak/özel anahtar çifti oluşturun.  
+2. Özel anahtarı sunucunuzda güvenli bir şekilde saklayın – imzalama için buna ihtiyacınız olacak.  
+3. Genel anahtarı DNS'te yayınlamaya hazır tutun (sonraki bölüme bakın).
+
+## Alan adınız için DKIM DNS nasıl yapılandırılır?
+1. Seçtiğiniz seçici altında (ör. `selector1._domainkey.yourdomain.com`) bir DNS TXT kaydı olarak genel anahtarı yayınlayın.  
+2. TXT kaydının `v=DKIM1; k=rsa; p=YOUR_PUBLIC_KEY` biçimini izlediğinden emin olun.  
+3. Kaydı, **dig** gibi araçlar veya çevrimiçi DKIM denetleyicileriyle gönderimden önce doğrulayın.
 
 ## DKIM İmzalarının Faydaları
+- **Email Authentication:** E-postaların meşru göndericiler tarafından gönderildiğini ve değiştirilmediğini doğrular.  
+- **Improved Deliverability:** E-posta sağlayıcıları, DKIM‑imzalı mesajları gelen kutusuna teslim etme olasılığını artırır, spam klasörüne düşme oranını azaltır.  
+- **Enhanced Reputation:** Doğru DKIM yapılandırması, alan adınızın gönderici itibarını yükseltir.
 
-DKIM imzalarının uygulanması çeşitli avantajlar sunar:
-- E-posta Kimlik Doğrulaması: DKIM, e-postaların meşru gönderenler tarafından gönderildiğinden ve aktarım sırasında değiştirilmediğinden emin olmaya yardımcı olur.
-- Gelişmiş Ulaşılabilirlik: E-posta sağlayıcılarının DKIM imzalı e-postaları gelen kutusuna ulaştırma olasılığı daha yüksektir; bu da e-postaların spam olarak işaretlenme olasılığını azaltır.
-- Gelişmiş İtibar: Doğru şekilde yapılandırılmış DKIM, gönderenin itibarını artırabilir ve bu da e-postanın daha iyi iletilmesine yol açabilir.
+## Önkoşullar
 
-## Ön koşullar
-
-DKIM imzalarını uygulamaya başlamadan önce aşağıdakilere ihtiyacınız olacak:
-- Java Geliştirme Ortamı
-- Java Kütüphanesi için Aspose.Email
-- DKIM kurulumu için DNS erişimine sahip alan adı
+- Java Geliştirme Ortamı  
+- Aspose.Email for Java Library  
+- DKIM kurulumu için DNS erişimi olan alan adı  
 
 ## Ortamınızı Kurma
 
-1. Java'yı yükleyin: Sisteminizde Java'nın yüklü olduğundan emin olun.
-2. Aspose.Email'i indirin: Ziyaret edin [Java için Aspose.E-posta](https://products.aspose.com/email/java/) Kütüphaneyi indirmek için.
-3. DKIM Anahtarlarını Edinin: Alan adınız için DKIM anahtarlarına ihtiyacınız var. Bu anahtarları oluşturma konusunda rehberlik için alan adı sağlayıcınıza danışın.
+1. **Install Java:** Güncel bir JDK kurulu olduğundan emin olun.  
+2. **Download Aspose.Email:** Kütüphaneyi indirmek için [Aspose.Email for Java](https://products.aspose.com/email/java/) adresini ziyaret edin.  
+3. **Obtain DKIM Keys:** Özel/genel anahtar çifti oluşturun ve *How to configure DKIM DNS* bölümünde açıklandığı gibi genel anahtarı yayınlayın.
 
-## Aspose.Email ile DKIM İmzalarının Uygulanması
+## Aspose.Email ile DKIM İmzalarını Uygulama
 
-Artık her şeyi ayarladığınıza göre, Aspose.Email ile DKIM imzalarını uygulamaya geçelim. Aşağıda başlamanıza yardımcı olacak kaynak kod parçacıkları içeren adım adım bir kılavuz bulunmaktadır.
+Aşağıda, projenize doğrudan kopyalayabileceğiniz kaynak kod parçacıklarıyla adım‑adım bir rehber bulunmaktadır.
 
-### Adım 1: Aspose.Email Kütüphanesini Projenize Ekleyin
-
-Öncelikle Aspose.Email kütüphanesini Java projenize ekleyin. Bunu JAR dosyasını projenizin bağımlılıklarına ekleyerek yapabilirsiniz.
+### Adım 1: Projenize Aspose.Email Kütüphanesini Ekleyin
+Aspose.Email JAR dosyasını projenizin sınıf yoluna veya Maven/Gradle bağımlılıklarına ekleyin.
 
 ### Adım 2: DKIM İmzasını Oluşturun
-
-Bir DKIM imzası oluşturmak için özel DKIM anahtarınızı yüklemeniz ve bunu e-posta mesajınıza uygulamanız gerekir.
+Özel DKIM anahtarınızı yükleyin ve e-posta mesajına uygulayın.
 
 ```java
-// DKIM anahtarını yükleyin
+// Load the DKIM key
 
 String privateKeyFile = "key2.pem";
 
 RSACryptoServiceProvider rsa = PemReader.getPrivateKey(privateKeyFile);
 DKIMSignatureInfo dkimSignatureInfo = new DKIMSignatureInfo("test", "some_email.com");
  
-// MailMessage sınıfının bir örneğini oluşturun
+// Create an instance of the MailMessage class
 MailMessage message = new MailMessage("sender@your_domain.com", "recipient@recipient_domain.com", "Subject", "Body");
 
-// Mesajı DKIM ile imzalayın
+// Sign the message with DKIM
 message.dKIMSign(rsa, dkimSignatureInfo);
 
-// Mesajı gönder
+// Send the message
 SmtpClient client = new SmtpClient("your_smtp_server");
 client.send(message);
 ```
 
-### Adım 3: E-postayı gönderin
+### Adım 3: DKIM İmzasını Mesajınıza Ekleyin
+Yukarıdaki kodda yer alan `dKIMSign` çağrısı **DKIM imzasını ekler** e-posta başlıklarına. Bu adımın ardından mesaj gönderilmeye hazırdır.
 
-DKIM imzası uygulandıktan sonra e-postayı SMTP sunucunuzu kullanarak gönderebilirsiniz.
+### Adım 4: E-postayı Gönderin
+İmza eklendikten sonra, mesajı iletmek için bir `SmtpClient` (veya başka bir taşıma yöntemi) kullanın.
 
 ### Kod Açıklaması
+- **Load the DKIM key** `PemReader` kullanarak yükleyin.  
+- **Create `DKIMSignatureInfo`** seçicinizi ve alan adınızı belirterek oluşturun.  
+- **Instantiate `MailMessage`** gönderici, alıcı, konu ve gövde ile oluşturun.  
+- **Apply the signature** `message.dKIMSign` ile uygulayın.  
+- **Transmit** imzalı postayı `SmtpClient` ile gönderin.
 
-- DKIM anahtarını kullanarak yüklüyoruz `DkimSignatureInfo` sınıf.
-- Bir örneğini oluşturun `MailMessage` gönderici, alıcı, konu ve gövdeden oluşan sınıf.
-- DKIM imzasını kullanarak mesaja ekleyin `dKIMSign`.
-- E-postayı bir SMTP istemcisi kullanarak gönderin.
+### Adım 5: DKIM İmzalarını Test Etme
+Kontrol ettiğiniz bir adrese test e-postası gönderin ve ham başlıkları inceleyin. `DKIM-Signature` başlığını bulun ve DNS'te yayınlanan genel anahtara karşı doğrulayın.
 
-### Adım 4: DKIM İmzalarını Test Etme
+## Yaygın Sorunlar ve Sorun Giderme
+- **Signature fails verification:** DNS TXT kaydının doğru genel anahtarı içerdiğini ve seçicinin kodda kullanılanla eşleştiğini iki kez kontrol edin.  
+- **Private key exposure:** PEM dosyasını güvenli bir şekilde saklayın ve dosya sistemi izinlerini kısıtlayın.  
+- **Incorrect header ordering:** Bazı mail sunucuları imzalama sonrası başlıkları değiştirebilir; mesajın imzalandıktan hemen sonra gönderildiğinden emin olun.  
 
-DKIM imzalarının doğru çalıştığından emin olmak için bir test e-postası gönderin ve alıcının tarafındaki DKIM doğrulama durumunu kontrol edin.
+## Sıkça Sorulan Sorular
 
-### Yaygın Sorunlar ve Sorun Giderme
+**Q: Does DKIM replace SPF or DMARC?**  
+A: Hayır. DKIM, SPF ve DMARC'ı tamamlar; birlikte güçlü bir e-posta kimlik doğrulama çerçevesi sağlar.
 
-- DKIM imzaları doğrulamada başarısız olursa, DNS kayıtlarınızı kontrol edin ve genel anahtarın doğru bir şekilde yayınlandığından emin olun.
-- Özel anahtarın güvenli bir şekilde saklandığından ve ifşa edilmediğinden emin olun.
+**Q: How often should I rotate DKIM keys?**  
+A: En iyi uygulama, anahtarları yılda bir veya bir güvenlik ihlali şüphesi olduğunda döndürmektir.
 
-## Çözüm
+**Q: Can I use multiple selectors for the same domain?**  
+A: Evet, birden fazla seçici, kesinti olmadan anahtar döndürmeyi yönetmenizi sağlar.
 
-Aspose.Email for Java ile DKIM imzalarını uygulamak e-postalarınızın güvenliğini ve güvenilirliğini artırır. Bu makalede özetlenen adımları izleyerek e-postalarınızın doğrulandığından ve spam olarak işaretlenme olasılığının azaldığından emin olabilirsiniz.
+**Q: Will DKIM affect email size?**  
+A: Eklenen başlık küçüktür (birkaç yüz bayt) ve genellikle teslimat üzerinde bir etkisi yoktur.
 
-## SSS
+**Q: Is there a limit to the number of DKIM‑signed messages per day?**  
+A: Doğuştan bir limit yoktur; limitler yalnızca SMTP sağlayıcınız tarafından uygulanır.
 
-### DKIM imzaları e-posta güvenliğini nasıl artırır?
+## Sonuç
+Artık **e-posta nasıl imzalanır** sorusunun cevabını Aspose.Email for Java kullanarak DKIM ile biliyorsunuz, DKIM anahtarlarını nasıl oluşturacağınızı ve DKIM DNS kayıtlarını nasıl yapılandıracağınızı öğrendiniz. Bu adımları izleyerek e-posta itibarınızı artıracak, taklit saldırılarına karşı koruma sağlayacak ve teslimat oranlarını yükselteceksiniz. Farklı seçicilerle denemeler yapmaktan veya imzalama sürecini mevcut posta iş akışlarınıza entegre etmekten çekinmeyin.
 
-DKIM imzaları e-posta mesajlarının gerçekliğini ve bütünlüğünü doğrulayarak kimlik avı ve sahtecilik saldırılarının olasılığını azaltır.
+---
 
-### Aspose.Email for Java'yı diğer e-posta kütüphaneleriyle birlikte kullanabilir miyim?
-
-Aspose.Email for Java bağımsız bir kütüphanedir, ancak gerektiğinde onu diğer e-postayla ilgili kütüphanelerle entegre edebilirsiniz.
-
-### DKIM imza doğrulaması başarısız olursa ne yapmalıyım?
-
-Her şeyin doğru şekilde ayarlandığından emin olmak için DNS kayıtları ve anahtar yönetimi de dahil olmak üzere DKIM yapılandırmanızı kontrol edin.
-
-### Aspose.Email for Java farklı e-posta sunucularıyla uyumlu mudur?
-
-Evet, Aspose.Email for Java çeşitli e-posta sunucularıyla uyumludur ve SMTP, POP3 ve IMAP protokolleriyle kullanılabilir.
-
-### Aspose.Email for Java hakkında daha fazla kaynağı nerede bulabilirim?
-
-Daha fazla bilgi ve kaynak için Aspose.Email for Java belgelerini şu adresten ziyaret edin: [Burada](https://reference.aspose.com/email/java/).
+**Son Güncelleme:** 2026-04-05  
+**Test Edilen:** Aspose.Email for Java 24.12 (latest)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

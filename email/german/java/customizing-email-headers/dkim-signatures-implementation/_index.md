@@ -1,10 +1,17 @@
 ---
-"description": "Sorgen Sie mit DKIM-Signaturen und Aspose.Email für Java für E-Mail-Sicherheit. Schritt-für-Schritt-Anleitung und Code zur DKIM-Implementierung."
-"linktitle": "Implementierung von DKIM-Signaturen mit Aspose.Email"
-"second_title": "Aspose.Email Java E-Mail-Verwaltungs-API"
-"title": "Implementierung von DKIM-Signaturen mit Aspose.Email"
-"url": "/de/java/customizing-email-headers/dkim-signatures-implementation/"
-"weight": 15
+date: 2026-04-05
+description: Erfahren Sie, wie Sie E-Mails mit DKIM mithilfe von Aspose.Email für
+  Java signieren, DKIM‑Schlüssel generieren, DKIM‑DNS konfigurieren und die Zustellbarkeit
+  Ihrer E‑Mails steigern.
+keywords:
+- how to sign email
+- generate dkim keys
+- configure dkim dns
+linktitle: Wie man E-Mails mit DKIM unter Verwendung von Aspose.Email für Java signiert
+second_title: Aspose.Email Java Email Management API
+title: Wie man E-Mails mit DKIM unter Verwendung von Aspose.Email für Java signiert
+url: /de/java/customizing-email-headers/dkim-signatures-implementation/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,113 +20,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Implementierung von DKIM-Signaturen mit Aspose.Email
+# DKIM-E-Mail-Authentifizierung: Implementierung von Signaturen mit Aspose.Email
 
+## Wie man E-Mails mit DKIM unter Verwendung von Aspose.Email signiert
 
-## Implementierung von DKIM-Signaturen mit Aspose.Email
+E-Mail-Sicherheit hat in der heutigen digitalen Ära höchste Priorität, und **wie man E-Mails signiert** mit DKIM ist einer der effektivsten Wege, Ihre Nachrichten vor Manipulation und Spoofing zu schützen. Durch das Hinzufügen einer kryptografischen Signatur zu jeder ausgehenden E-Mail geben Sie den Empfängern eine zuverlässige Möglichkeit, zu überprüfen, dass die Nachricht wirklich von Ihrer Domain stammt. In diesem Tutorial führen wir Sie durch den gesamten Prozess der Implementierung von DKIM-Signaturen mit Aspose.Email für Java.
 
-E-Mail-Sicherheit ist im digitalen Zeitalter von größter Bedeutung. Ein entscheidender Aspekt ist die Gewährleistung der Authentizität und Integrität gesendeter und empfangener E-Mails. DomainKeys Identified Mail (DKIM)-Signaturen spielen dabei eine entscheidende Rolle. In diesem Artikel erfahren Sie, wie Sie DKIM-Signaturen mit Aspose.Email für Java implementieren, einer leistungsstarken Bibliothek für die Arbeit mit E-Mail-Nachrichten.
+## Schnelle Antworten
+- **Was ist DKIM?** Eine kryptografische Methode, die E-Mail-Header mit einem privaten Schlüssel signiert.  
+- **Warum DKIM für die E-Mail-Authentifizierung verwenden?** Es hilft, die Identität des Absenders zu überprüfen und Phishing zu verhindern.  
+- **Welche Bibliothek vereinfacht das DKIM-Signieren in Java?** Aspose.Email für Java.  
+- **Benötige ich DNS-Änderungen?** Ja – veröffentlichen Sie den öffentlichen Schlüssel über einen TXT‑Eintrag.  
+- **Kann DKIM die Zustellbarkeit von E-Mails verbessern?** Absolut, es erhöht die Zustellrate im Posteingang.
 
-## DKIM-Signaturen verstehen
+## Was ist DKIM-E-Mail-Authentifizierung?
+DKIM (DomainKeys Identified Mail) fügt dem **DKIM-Signature**‑Header einer E-Mail eine digitale Signatur hinzu. Die Signatur wird mit einem privaten Schlüssel erstellt, den nur die sendende Domain kontrolliert. Empfänger holen den passenden öffentlichen Schlüssel aus dem DNS‑TXT‑Eintrag des Absenders ab, um die Signatur zu validieren und zu bestätigen, dass die Nachricht während der Übertragung nicht verändert wurde.
 
-DKIM ist eine E-Mail-Authentifizierungsmethode, die es dem Absender ermöglicht, seine E-Mails digital zu signieren und dem Empfänger so die Authentizität der E-Mail zu überprüfen. DKIM funktioniert durch das Hinzufügen einer digitalen Signatur zum E-Mail-Header. Diese Signatur wird mithilfe eines privaten Schlüssels der Absenderdomäne generiert und kann mithilfe eines öffentlichen Schlüssels überprüft werden, der in den DNS-Einträgen der Absenderdomäne veröffentlicht ist.
+## Warum DKIM zur Verbesserung der E-Mail-Zustellbarkeit verwenden?
+- **E-Mail-Authentifizierung:** Verringert die Wahrscheinlichkeit, dass Ihre Nachrichten als Spam markiert werden.  
+- **Verbesserter Ruf:** Mail-Dienste vertrauen Domains, die ihre E-Mails konsequent signieren.  
+- **Phishing-Schutz:** Macht es Angreifern schwerer, Ihre Adresse zu fälschen.  
+
+## Wie man DKIM-Schlüssel generiert
+1. Verwenden Sie ein Schlüsselgenerierungs‑Tool (OpenSSL, PowerShell oder einen Online‑Assistenten), um ein öffentliches/privates RSA‑Paar zu erstellen.  
+2. Speichern Sie den privaten Schlüssel sicher auf Ihrem Server – Sie benötigen ihn zum Signieren.  
+3. Halten Sie den öffentlichen Schlüssel bereit, um ihn im DNS zu veröffentlichen (siehe den nächsten Abschnitt).
+
+## Wie man DKIM-DNS für Ihre Domain konfiguriert?
+1. Veröffentlichen Sie den öffentlichen Schlüssel in einem DNS‑TXT‑Eintrag unter dem von Ihnen gewählten Selector (z. B. `selector1._domainkey.yourdomain.com`).  
+2. Stellen Sie sicher, dass der TXT‑Eintrag dem Format `v=DKIM1; k=rsa; p=YOUR_PUBLIC_KEY` entspricht.  
+3. Überprüfen Sie den Eintrag mit Tools wie **dig** oder Online‑DKIM‑Prüfern, bevor Sie E-Mails senden.
 
 ## Vorteile von DKIM-Signaturen
-
-Die Implementierung von DKIM-Signaturen bietet mehrere Vorteile:
-- E-Mail-Authentifizierung: DKIM hilft sicherzustellen, dass E-Mails von legitimen Absendern gesendet werden und während der Übertragung nicht manipuliert wurden.
-- Verbesserte Zustellbarkeit: E-Mail-Anbieter stellen E-Mails mit DKIM-Signaturen eher dem Posteingang zu, wodurch die Wahrscheinlichkeit verringert wird, dass E-Mails als Spam markiert werden.
-- Verbesserte Reputation: Richtig konfiguriertes DKIM kann die Reputation des Absenders verbessern, was zu einer besseren E-Mail-Zustellbarkeit führt.
+- **Email Authentication:** Bestätigt, dass E-Mails von legitimen Absendern gesendet werden und nicht manipuliert wurden.  
+- **Improved Deliverability:** E-Mail-Anbieter liefern DKIM‑signierte Nachrichten eher in den Posteingang, wodurch Treffer im Spam‑Ordner reduziert werden.  
+- **Enhanced Reputation:** Eine korrekte DKIM-Konfiguration erhöht das Sender‑Ruf Ihrer Domain.
 
 ## Voraussetzungen
 
-Bevor wir mit der Implementierung von DKIM-Signaturen beginnen, benötigen Sie Folgendes:
-- Java-Entwicklungsumgebung
-- Aspose.Email für die Java-Bibliothek
-- Domäne mit DNS-Zugriff für die DKIM-Einrichtung
+- Java-Entwicklungsumgebung  
+- Aspose.Email für Java Bibliothek  
+- Domain mit DNS‑Zugriff für DKIM‑Einrichtung  
 
-## Einrichten Ihrer Umgebung
+## Einrichtung Ihrer Umgebung
 
-1. Installieren Sie Java: Stellen Sie sicher, dass Java auf Ihrem System installiert ist.
-2. Aspose.Email herunterladen: Besuchen [Aspose.Email für Java](https://products.aspose.com/email/java/) um die Bibliothek herunterzuladen.
-3. DKIM-Schlüssel erhalten: Sie benötigen DKIM-Schlüssel für Ihre Domain. Wenden Sie sich an Ihren Domain-Anbieter, um Informationen zur Generierung dieser Schlüssel zu erhalten.
+1. **Install Java:** Stellen Sie sicher, dass ein aktuelles JDK installiert ist.  
+2. **Download Aspose.Email:** Besuchen Sie [Aspose.Email for Java](https://products.aspose.com/email/java/), um die Bibliothek herunterzuladen.  
+3. **Obtain DKIM Keys:** Generieren Sie ein privates/öffentliches Schlüsselpaar und veröffentlichen Sie den öffentlichen Schlüssel wie im Abschnitt *Wie man DKIM-DNS konfiguriert* beschrieben.
 
-## Implementieren von DKIM-Signaturen mit Aspose.Email
+## Implementierung von DKIM-Signaturen mit Aspose.Email
 
-Nachdem Sie nun alles eingerichtet haben, können wir mit der Implementierung von DKIM-Signaturen mit Aspose.Email beginnen. Nachfolgend finden Sie eine Schritt-für-Schritt-Anleitung mit Quellcode-Ausschnitten, die Ihnen den Einstieg erleichtern.
+Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Anleitung mit Quellcode‑Ausschnitten, die Sie direkt in Ihr Projekt kopieren können.
 
-### Schritt 1: Fügen Sie Ihrem Projekt die Aspose.Email-Bibliothek hinzu
+### Schritt 1: Aspose.Email-Bibliothek zu Ihrem Projekt hinzufügen
+Fügen Sie die Aspose.Email‑JAR zu Ihrem Projekt‑Classpath oder zu den Maven/Gradle‑Abhängigkeiten hinzu.
 
-Fügen Sie zunächst die Bibliothek Aspose.Email zu Ihrem Java-Projekt hinzu. Sie können dies tun, indem Sie die JAR-Datei in die Abhängigkeiten Ihres Projekts aufnehmen.
-
-### Schritt 2: Generieren Sie die DKIM-Signatur
-
-Um eine DKIM-Signatur zu generieren, müssen Sie Ihren privaten DKIM-Schlüssel laden und auf Ihre E-Mail-Nachricht anwenden.
+### Schritt 2: DKIM-Signatur generieren
+Laden Sie Ihren privaten DKIM‑Schlüssel und wenden Sie ihn auf die E‑Mail‑Nachricht an.
 
 ```java
-// Laden Sie den DKIM-Schlüssel
+// Load the DKIM key
 
 String privateKeyFile = "key2.pem";
 
 RSACryptoServiceProvider rsa = PemReader.getPrivateKey(privateKeyFile);
 DKIMSignatureInfo dkimSignatureInfo = new DKIMSignatureInfo("test", "some_email.com");
  
-// Erstellen Sie eine Instanz der MailMessage-Klasse
+// Create an instance of the MailMessage class
 MailMessage message = new MailMessage("sender@your_domain.com", "recipient@recipient_domain.com", "Subject", "Body");
 
-// Signieren Sie die Nachricht mit DKIM
+// Sign the message with DKIM
 message.dKIMSign(rsa, dkimSignatureInfo);
 
-// Senden Sie die Nachricht
+// Send the message
 SmtpClient client = new SmtpClient("your_smtp_server");
 client.send(message);
 ```
 
-### Schritt 3: Senden Sie die E-Mail
+### Schritt 3: DKIM-Signatur zu Ihrer Nachricht hinzufügen
+Der Aufruf `dKIMSign` im obigen Code **fügt die DKIM‑Signatur** zu den E‑Mail‑Headern hinzu. Nach diesem Schritt ist die Nachricht versandbereit.
 
-Sobald die DKIM-Signatur angewendet wurde, können Sie die E-Mail über Ihren SMTP-Server senden.
+### Schritt 4: E‑Mail senden
+Nachdem die Signatur angehängt wurde, verwenden Sie einen `SmtpClient` (oder ein anderes Transportmittel), um die Nachricht zu übermitteln.
 
-### Code-Erklärung
+### Code‑Erklärung
+- **Laden Sie den DKIM‑Schlüssel** mit `PemReader`.  
+- **Erstellen Sie `DKIMSignatureInfo`** mit Ihrem Selector und Ihrer Domain.  
+- **Instanziieren Sie `MailMessage`** mit Absender, Empfänger, Betreff und Inhalt.  
+- **Wenden Sie die Signatur** über `message.dKIMSign` an.  
+- **Übermitteln** Sie die signierte Mail mit `SmtpClient`.
 
-- Wir laden den DKIM-Schlüssel mit dem `DkimSignatureInfo` Klasse.
-- Erstellen Sie eine Instanz des `MailMessage` Klasse mit Absender, Empfänger, Betreff und Text.
-- Fügen Sie der Nachricht die DKIM-Signatur hinzu mit `dKIMSign`.
-- Senden Sie die E-Mail mit einem SMTP-Client.
+### Schritt 5: DKIM-Signaturen testen
+Senden Sie eine Test‑E‑Mail an eine von Ihnen kontrollierte Adresse und prüfen Sie die rohen Header. Suchen Sie nach einem `DKIM-Signature`‑Header und verifizieren Sie ihn anhand des im DNS veröffentlichten öffentlichen Schlüssels.
 
-### Schritt 4: Testen der DKIM-Signaturen
-
-Um sicherzustellen, dass DKIM-Signaturen ordnungsgemäß funktionieren, senden Sie eine Test-E-Mail und überprüfen Sie den DKIM-Verifizierungsstatus auf der Empfängerseite.
-
-### Häufige Probleme und Fehlerbehebung
-
-- Wenn die Überprüfung der DKIM-Signaturen fehlschlägt, prüfen Sie Ihre DNS-Einträge und stellen Sie sicher, dass der öffentliche Schlüssel korrekt veröffentlicht wurde.
-- Stellen Sie sicher, dass der private Schlüssel sicher aufbewahrt und nicht offengelegt wird.
-
-## Abschluss
-
-Die Implementierung von DKIM-Signaturen mit Aspose.Email für Java erhöht die Sicherheit und Vertrauenswürdigkeit Ihrer E-Mails. Indem Sie die in diesem Artikel beschriebenen Schritte befolgen, stellen Sie sicher, dass Ihre E-Mails authentifiziert sind und weniger wahrscheinlich als Spam markiert werden.
+## Häufige Probleme und Fehlersuche
+- **Signatur schlägt bei der Verifizierung fehl:** Überprüfen Sie, ob der DNS‑TXT‑Eintrag den korrekten öffentlichen Schlüssel enthält und ob der Selector mit dem im Code verwendeten übereinstimmt.  
+- **Privater Schlüssel wurde offengelegt:** Speichern Sie die PEM‑Datei sicher und beschränken Sie die Dateisystemberechtigungen.  
+- **Falsche Header‑Reihenfolge:** Einige Mail‑Server ändern Header nach dem Signieren; stellen Sie sicher, dass die Nachricht sofort nach dem Signieren gesendet wird.  
 
 ## Häufig gestellte Fragen
 
-### Wie verbessern DKIM-Signaturen die E-Mail-Sicherheit?
+**Q: Ersetzt DKIM SPF oder DMARC?**  
+A: Nein. DKIM ergänzt SPF und DMARC; zusammen bieten sie ein robustes E‑Mail‑Authentifizierungs‑Framework.
 
-DKIM-Signaturen überprüfen die Authentizität und Integrität von E-Mail-Nachrichten und verringern so die Wahrscheinlichkeit von Phishing- und Spoofing-Angriffen.
+**Q: Wie oft sollte ich DKIM‑Schlüssel rotieren?**  
+A: Die bewährte Praxis ist, Schlüssel jährlich zu rotieren oder immer dann, wenn Sie einen Kompromiss vermuten.
 
-### Kann ich Aspose.Email für Java mit anderen E-Mail-Bibliotheken verwenden?
+**Q: Kann ich mehrere Selector für dieselbe Domain verwenden?**  
+A: Ja, mehrere Selector ermöglichen es, die Schlüsselrotation ohne Ausfallzeit zu verwalten.
 
-Aspose.Email für Java ist eine eigenständige Bibliothek, Sie können sie jedoch bei Bedarf in andere E-Mail-bezogene Bibliotheken integrieren.
+**Q: Wird DKIM die E‑Mail‑Größe beeinflussen?**  
+A: Der hinzugefügte Header ist klein (einige hundert Bytes) und wirkt sich im Allgemeinen nicht auf die Zustellbarkeit aus.
 
-### Was soll ich tun, wenn die DKIM-Signaturüberprüfung fehlschlägt?
+**Q: Gibt es ein Limit für die Anzahl der DKIM‑signierten Nachrichten pro Tag?**  
+A: Es gibt kein inhärentes Limit; Beschränkungen werden nur von Ihrem SMTP‑Provider auferlegt.
 
-Überprüfen Sie Ihre DKIM-Konfiguration, einschließlich DNS-Einträge und Schlüsselverwaltung, um sicherzustellen, dass alles richtig eingerichtet ist.
+## Fazit
+Sie wissen jetzt **wie man E-Mails signiert** mit DKIM unter Verwendung von Aspose.Email für Java, wie man DKIM‑Schlüssel generiert und wie man DKIM‑DNS‑Einträge konfiguriert. Wenn Sie diesen Schritten folgen, verbessern Sie Ihren E‑Mail‑Ruf, schützen sich vor Spoofing und erhöhen die Zustellbarkeit. Experimentieren Sie gern mit verschiedenen Selector‑Werten oder integrieren Sie den Signatur‑Prozess in Ihre bestehenden Mail‑Workflows.
 
-### Ist Aspose.Email für Java mit verschiedenen E-Mail-Servern kompatibel?
+---
 
-Ja, Aspose.Email für Java ist mit verschiedenen E-Mail-Servern kompatibel und kann mit den Protokollen SMTP, POP3 und IMAP verwendet werden.
-
-### Wo finde ich weitere Ressourcen zu Aspose.Email für Java?
-
-Weitere Informationen und Ressourcen finden Sie in der Dokumentation zu Aspose.Email für Java unter [Hier](https://reference.aspose.com/email/java/).
+**Zuletzt aktualisiert:** 2026-04-05  
+**Getestet mit:** Aspose.Email for Java 24.12 (latest)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

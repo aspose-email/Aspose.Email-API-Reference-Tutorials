@@ -1,12 +1,17 @@
 ---
-date: 2026-01-11
-description: Aspose.Email for Java का उपयोग करके व्यापक ईमेल हेडर विश्लेषण ट्यूटोरियल।
-  सीखें कि कैसे EML फ़ाइल को जावा में पार्स करें और हेडर का उपयोग करके ईमेल को ट्रैक
-  करें।
-linktitle: Extracting and Analyzing Email Headers with Aspose.Email
+date: 2026-04-05
+description: Aspose.Email for Java का उपयोग करके .eml फ़ाइलों से ईमेल हेडर निकालना
+  सीखें। यह ट्यूटोरियल .eml फ़ाइल पढ़ने, SPF/DKIM की जाँच करने और फ़िशिंग ईमेल का
+  पता लगाने को कवर करता है।
+keywords:
+- extract email headers
+- email header analysis
+- read eml file
+- check spf dkim
+- detect phishing email
+linktitle: Aspose.Email के साथ ईमेल हेडर निकालें – जावा ट्यूटोरियल
 second_title: Aspose.Email Java Email Management API
-title: 'ईमेल हेडर विश्लेषण ट्यूटोरियल - Aspose.Email के साथ ईमेल हेडर निकालना और विश्लेषण
-  करना'
+title: Aspose.Email के साथ ईमेल हेडर निकालें – जावा ट्यूटोरियल
 url: /hi/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---
@@ -17,45 +22,46 @@ weight: 12
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email के साथ ईमेल हेडर निकालना और विश्लेषण करना
+# Aspose.Email – Java ट्यूटोरियल के साथ ईमेल हेडर निकालें
 
 ## Aspose.Email के साथ ईमेल हेडर निकालने और विश्लेषण करने का परिचय
 
-इस **email header analysis tutorial** में, हम Aspose.Email for Java का उपयोग करके *.eml* फ़ाइल के भीतर छिपे मेटाडेटा को निकालने, पार्स करने और समझने की प्रक्रिया को देखेंगे। चाहे आप स्पैम‑फ़िल्टर बना रहे हों, ईमेल‑ट्रैकिंग लागू कर रहे हों, या केवल संदेश मार्गों का ऑडिट करना चाहते हों, हेडर विश्लेषण में निपुणता आपको सूचित निर्णय लेने के लिए आवश्यक अंतर्दृष्टि प्रदान करती है।
+इस **ईमेल हेडर विश्लेषण ट्यूटोरियल** में, हम Aspose.Email for Java का उपयोग करके *.eml* फ़ाइल से **ईमेल हेडर निकालने** की प्रक्रिया को समझेंगे। चाहे आप स्पैम‑फ़िल्टर बना रहे हों, **ईमेल ट्रैकिंग** लागू कर रहे हों, या **फ़िशिंग ईमेल** प्रयासों का पता लगाने की आवश्यकता हो, हेडर निष्कर्षण में निपुणता आपको तेज़ी से सूचित निर्णय लेने के लिए आवश्यक अंतर्दृष्टि प्रदान करती है।
 
 ## त्वरित उत्तर
+
 - **प्राथमिक लाइब्रेरी कौन सी है?** Aspose.Email for Java  
 - **कौन सा फ़ाइल फ़ॉर्मेट पार्स किया जाता है?** *.eml* (standard email message)  
-- **क्या मुझे लाइसेंस चाहिए?** विकास के लिए एक मुफ्त ट्रायल काम करता है; उत्पादन के लिए लाइसेंस आवश्यक है।  
+- **क्या मुझे लाइसेंस की आवश्यकता है?** विकास के लिए एक मुफ्त ट्रायल काम करता है; उत्पादन के लिए लाइसेंस आवश्यक है।  
 - **एक बुनियादी कार्यान्वयन में कितना समय लगता है?** सेटअप के बाद लगभग 10‑15 मिनट।  
-- **क्या मैं हेडर एक्सट्रैक्शन को स्वचालित कर सकता हूँ?** हाँ – API पूरी तरह स्क्रिप्टेबल है और किसी भी Java एप्लिकेशन के साथ एकीकृत होती है।
+- **क्या मैं हेडर निष्कर्षण को स्वचालित कर सकता हूँ?** हां – API पूरी तरह स्क्रिप्टेबल है और किसी भी Java एप्लिकेशन के साथ एकीकृत होती है।
 
-## email header analysis tutorial क्या है?
-ईमेल हेडर विश्लेषण में प्रत्येक ईमेल के साथ यात्रा करने वाले संरचित फ़ील्ड्स को पढ़ना शामिल है—जैसे **From**, **Received**, **DKIM‑Signature**, और **Received‑SPF**—ताकि प्रेषक की पहचान, प्रमाणीकरण स्थिति, और संदेश द्वारा मेल सर्वरों के बीच ली गई मार्ग को उजागर किया जा सके। यह ट्यूटोरियल दर्शाता है कि इस विश्लेषण को प्रोग्रामेटिक रूप से कैसे किया जाए।
+## ईमेल हेडर विश्लेषण क्या है?
 
-## email header analysis tutorial क्यों उपयोग करें?
-- **Security:** SPF/DKIM की जाँच करके नकली प्रेषकों और फ़िशिंग प्रयासों का पता लगाएँ।  
-- **Tracking:** ईमेल द्वारा ली गई सटीक मार्ग को पुनर्निर्मित करें, जो डिलीवरी समस्याओं के निवारण में उपयोगी है।  
-- **Compliance:** ऑडिट ट्रेल्स के लिए टाइमस्टैम्प और सर्वर जानकारी निकालें।  
-- **Automation:** हेडर पार्सिंग को बल्क‑मेल प्रोसेसिंग पाइपलाइन में एकीकृत करें।
+ईमेल हेडर विश्लेषण में प्रत्येक ईमेल के साथ यात्रा करने वाले संरचित फ़ील्ड्स को पढ़ना शामिल है—जैसे **From**, **Received**, **DKIM‑Signature**, और **Received‑SPF**—ताकि प्रेषक की पहचान, प्रमाणीकरण स्थिति, और संदेश द्वारा मेल सर्वरों के माध्यम से ली गई मार्ग को उजागर किया जा सके। यह ट्यूटोरियल दिखाता है कि इस विश्लेषण को प्रोग्रामेटिक रूप से कैसे किया जाए।
 
-## आवश्यकताएँ
+## ईमेल हेडर क्यों निकालें?
 
-Before we dive into the code, make sure you have the following prerequisites in place:
+- **सुरक्षा:** SPF/DKIM को सत्यापित करें और बनावटी प्रेषकों को पहचानें, जो **फ़िशिंग ईमेल का पता लगाने** में एक प्रमुख कदम है।  
+- **ट्रैकिंग:** ईमेल द्वारा अनुसरण किए गए सटीक मार्ग को पुनर्निर्मित करें, जो डिलीवरी समस्याओं के समाधान में उपयोगी है।  
+- **अनुपालन:** ऑडिट ट्रेल्स के लिए टाइमस्टैम्प और सर्वर जानकारी प्राप्त करें।  
+- **स्वचालन:** स्केलेबल समाधान के लिए हेडर पार्सिंग को बल्क‑मेल प्रोसेसिंग पाइपलाइन में एम्बेड करें।
 
-1. Java Development Environment: Ensure that you have Java installed on your system. You can download it from [here](https://www.oracle.com/java/technologies/javase-downloads.html).
+## पूर्वापेक्षाएँ
 
-2. Aspose.Email for Java: You'll need the Aspose.Email for Java library. You can download it from the [Aspose website](https://releases.aspose.com/email/java/).
+कोड में डुबकी लगाने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
 
-3. Integrated Development Environment (IDE): You can use any Java‑compatible IDE, such as Eclipse or IntelliJ IDEA, to write and run the code.
+1. Java विकास पर्यावरण: सुनिश्चित करें कि आपके सिस्टम पर Java स्थापित है। आप इसे [यहाँ](https://www.oracle.com/java/technologies/javase-downloads.html) से डाउनलोड कर सकते हैं।  
+2. Aspose.Email for Java: आपको Aspose.Email for Java लाइब्रेरी की आवश्यकता होगी। आप इसे [Aspose वेबसाइट](https://releases.aspose.com/email/java/) से डाउनलोड कर सकते हैं।  
+3. एकीकृत विकास पर्यावरण (IDE): आप कोई भी Java‑संगत IDE, जैसे Eclipse या IntelliJ IDEA, का उपयोग कोड लिखने और चलाने के लिए कर सकते हैं।
 
 ## चरण 1: एक Java प्रोजेक्ट बनाना
 
-Start a new Java project in your preferred IDE and add the Aspose.Email for Java JAR to the project’s classpath. This gives you access to the `MailMessage`, `HeaderCollection`, and related classes needed for header extraction.
+अपने पसंदीदा IDE में एक नया Java प्रोजेक्ट शुरू करें और Aspose.Email for Java JAR को प्रोजेक्ट की क्लासपाथ में जोड़ें। इससे आपको `MailMessage`, `HeaderCollection`, और संबंधित क्लासेज़ तक पहुंच मिलती है, जो **ईमेल संदेश लोड करने** और हेडर निष्कर्षण के लिए आवश्यक हैं।
 
 ## चरण 2: ईमेल हेडर पार्स करना
 
-Now that the project is ready, we can begin parsing the headers of an *.eml* file. The following snippet demonstrates how to **parse eml file java** style using Aspose.Email:
+अब जब प्रोजेक्ट तैयार है, हम *.eml* फ़ाइल के हेडर पार्स करना शुरू कर सकते हैं। निम्नलिखित स्निपेट दिखाता है कि Aspose.Email का उपयोग करके **eml फ़ाइल पढ़ने** की शैली कैसे होती है:
 
 ```java
 // Load the email message
@@ -70,15 +76,15 @@ for (Header header : headers) {
 }
 ```
 
-In this code, we load an email message from a file and then retrieve its headers using the `getHeaders()` method. We iterate through the collection and print each header name/value pair.
+इस कोड में, हम फ़ाइल से एक ईमेल संदेश लोड करते हैं और फिर `getHeaders()` मेथड का उपयोग करके उसके हेडर प्राप्त करते हैं। हम संग्रह के माध्यम से इटररेट करते हैं और प्रत्येक हेडर नाम/मान जोड़ी को प्रिंट करते हैं।
 
-## चरण 3: ईमेल हेडर विश्लेषण
+## चरण 3: ईमेल हेडर का विश्लेषण
 
-With the raw headers in hand, you can perform a variety of analyses. Below are three common tasks that illustrate **email tracking using headers**.
+कच्चे हेडर हाथ में होने पर, आप विभिन्न प्रकार के विश्लेषण कर सकते हैं। नीचे तीन सामान्य कार्य हैं जो **SPF DKIM जांच** और समग्र ईमेल ट्रैकिंग को दर्शाते हैं।
 
 ### प्रेषक की पहचान
 
-The “From” header (or the `MailMessage.getFrom()` property) tells you who sent the message:
+“From” हेडर (या `MailMessage.getFrom()` प्रॉपर्टी) आपको बताता है कि संदेश किसने भेजा है:
 
 ```java
 String sender = message.getFrom().getAddress();
@@ -87,7 +93,7 @@ System.out.println("Sender: " + sender);
 
 ### SPF और DKIM रिकॉर्ड की जाँच
 
-SPF and DKIM help verify that the email really originates from the claimed domain. Look for the corresponding headers:
+SPF और DKIM यह सत्यापित करने में मदद करते हैं कि ईमेल वास्तव में दावे किए गए डोमेन से आया है। संबंधित हेडर देखें:
 
 ```java
 String spfRecord = headers.get("Received-SPF");
@@ -99,7 +105,7 @@ System.out.println("DKIM Record: " + dkimRecord);
 
 ### ईमेल मार्ग का पता लगाना
 
-Every hop a message makes adds a “Received” header. By printing these, you can reconstruct the path:
+प्रत्येक हॉप पर संदेश एक “Received” हेडर जोड़ता है। इन्हें प्रिंट करके आप मार्ग को पुनर्निर्मित कर सकते हैं:
 
 ```java
 for (Header header : headers) {
@@ -113,36 +119,36 @@ for (Header header : headers) {
 
 | समस्या | कारण | समाधान |
 |-------|--------|-----|
-| `NullPointerException` on `message.getFrom()` | संदेश में **From** हेडर नहीं है। | हेडर तक पहुँचने से पहले उसकी उपस्थिति सत्यापित करें, या `message.getHeaders().get("From")` का उपयोग करें। |
-| Missing SPF/DKIM headers | प्रेषक के सर्वर ने इन्हें शामिल नहीं किया। | गायब मानों को “not provided” मानें और विश्लेषण जारी रखें। |
-| Large `.eml` files cause memory pressure | संपूर्ण संदेश को एक साथ लोड करना। | बड़ी फ़ाइलों के लिए स्ट्रीमिंग API (`MailMessage.load(InputStream)`) का उपयोग करें। |
+| `NullPointerException` on `message.getFrom()` | संदेश में **From** हेडर नहीं है। | हेडर तक पहुँचने से पहले उसकी मौजूदगी सत्यापित करें, या `message.getHeaders().get("From")` का उपयोग करें। |
+| Missing SPF/DKIM headers | प्रेषक के सर्वर ने उन्हें शामिल नहीं किया। | गायब मानों को “प्रदान नहीं किया गया” मानें और विश्लेषण जारी रखें। |
+| Large `.eml` files cause memory pressure | संपूर्ण संदेश को एक बार में लोड करना। | बड़ी फ़ाइलों के लिए स्ट्रीमिंग API (`MailMessage.load(InputStream)`) का उपयोग करें। |
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**Q: How can I access email headers in Aspose.Email?**  
-A: Load the email with `MailMessage.load()` and call `getHeaders()` to retrieve a `HeaderCollection`. Iterate over it to read individual header values.
+**Q:** मैं Aspose.Email में ईमेल हेडर कैसे एक्सेस कर सकता हूँ?  
+**A:** `MailMessage.load()` से ईमेल लोड करें और `getHeaders()` को कॉल करके `HeaderCollection` प्राप्त करें। इसे इटररेट करके व्यक्तिगत हेडर मान पढ़ें।
 
-**Q: What information do email headers contain?**  
-A: Headers store metadata such as sender/recipient addresses, timestamps, server hops (`Received`), authentication results (`DKIM`, `SPF`), and custom X‑headers used by applications.
+**Q:** ईमेल हेडर में कौन सी जानकारी होती है?  
+**A:** हेडर मेटाडाटा संग्रहीत करते हैं जैसे प्रेषक/प्राप्तकर्ता पते, टाइमस्टैम्प, सर्वर हॉप्स (`Received`), प्रमाणीकरण परिणाम (`DKIM`, `SPF`), और एप्लिकेशन द्वारा उपयोग किए जाने वाले कस्टम X‑हेडर।
 
-**Q: How do I check for SPF and DKIM records in headers?**  
-A: Search for the `Received-SPF` and `DKIM-Signature` headers in the collection. Their presence (and values) indicates whether the message passed those authentication checks.
+**Q:** हेडर में SPF और DKIM रिकॉर्ड की जाँच कैसे करें?  
+**A:** संग्रह में `Received-SPF` और `DKIM-Signature` हेडर खोजें। उनकी उपस्थिति (और मान) दर्शाते हैं कि संदेश ने उन प्रमाणीकरण जांचों को पास किया या नहीं।
 
-**Q: Why is analyzing email headers important?**  
-A: It helps verify authenticity, trace delivery paths, diagnose spam issues, and comply with security policies—essential for any robust email‑handling system.
+**Q:** ईमेल हेडर का विश्लेषण क्यों महत्वपूर्ण है?  
+**A:** यह प्रामाणिकता सत्यापित करने, डिलीवरी पथ को ट्रेस करने, स्पैम समस्याओं का निदान करने, और सुरक्षा नीतियों का पालन करने में मदद करता है—जो किसी भी मजबूत ईमेल‑हैंडलिंग सिस्टम के लिए आवश्यक है।
 
-**Q: Can I automate email header analysis with Aspose.Email?**  
-A: Absolutely. The library’s API is fully programmatic, allowing you to embed header extraction and analysis into batch jobs, micro‑services, or real‑time mail gateways.
+**Q:** क्या मैं Aspose.Email के साथ ईमेल हेडर विश्लेषण को स्वचालित कर सकता हूँ?  
+**A:** बिल्कुल। लाइब्रेरी का API पूरी तरह प्रोग्रामेटिक है, जिससे आप हेडर निष्कर्षण और विश्लेषण को बैच जॉब्स, माइक्रो‑सेवाओं, या रियल‑टाइम मेल गेटवे में एम्बेड कर सकते हैं।
 
 ## निष्कर्ष
 
-यह **email header analysis tutorial** ने आपको दिखाया कि कैसे एक *.eml* फ़ाइल को लोड करें, उसके हेडर निकालें, और प्रेषक पहचान, SPF/DKIM सत्यापन, तथा मार्ग ट्रेसिंग जैसी व्यावहारिक विश्लेषण करें। इन तकनीकों से सुसज्जित होकर आप सुरक्षित, ऑडिटेबल, और बुद्धिमान ईमेल प्रोसेसिंग समाधान बना सकते हैं।
+इस **ईमेल हेडर विश्लेषण ट्यूटोरियल** ने आपको दिखाया है कि **ईमेल संदेश लोड** करना, उसके हेडर निकालना, और व्यावहारिक विश्लेषण जैसे प्रेषक पहचान, **SPF DKIM जांच**, और मार्ग ट्रेसिंग कैसे किया जाए। इन तकनीकों से सुसज्जित होकर, आप सुरक्षित, ऑडिटेबल, और बुद्धिमान ईमेल प्रोसेसिंग समाधान बना सकते हैं जो विश्वसनीय रूप से **ईमेल हेडर निकालते** हैं और आपके संगठन को फ़िशिंग ख़तरों से बचाते हैं।
 
 ---
 
-**Last Updated:** 2026-01-11  
-**Tested With:** Aspose.Email for Java 23.12 (latest at time of writing)  
-**Author:** Aspose  
+**अंतिम अपडेट:** 2026-04-05  
+**परीक्षण किया गया:** Aspose.Email for Java 23.12 (latest at time of writing)  
+**लेखक:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

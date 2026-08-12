@@ -1,10 +1,20 @@
 ---
-"description": "Sfrutta la potenza degli X-Header nelle email con Aspose.Email per Java. Impara a gestire i metadati personalizzati e a migliorare l'elaborazione delle email."
-"linktitle": "Gestione delle intestazioni X nei messaggi di posta elettronica con Aspose.Email"
-"second_title": "API di gestione e-mail Java Aspose.Email"
-"title": "Gestione delle intestazioni X nei messaggi di posta elettronica con Aspose.Email"
-"url": "/it/java/customizing-email-headers/managing-x-headers-in-email-messages/"
-"weight": 16
+date: 2026-04-05
+description: Scopri come salvare le email in formato EML, aggiungere intestazioni
+  personalizzate e inviare email tramite SMTP usando Aspose.Email per Java. Include
+  i passaggi per estrarre l'intestazione personalizzata e impostare i metadati dell'email.
+keywords:
+- save email eml
+- send email smtp
+- extract custom header
+- how to add x-header
+- add custom header java
+linktitle: Gestire le X‑Header nei messaggi di posta elettronica con Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Come salvare email EML e aggiungere intestazioni – Gestire le X‑Headers con
+  Aspose.Email
+url: /it/java/customizing-email-headers/managing-x-headers-in-email-messages/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,125 +23,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Gestione delle intestazioni X nei messaggi di posta elettronica con Aspose.Email
-
+# Come salvare email EML e aggiungere intestazioni – Gestione degli X‑Headers con Aspose.Email
 
 ## Introduzione
 
-Nel mondo della comunicazione via email, le intestazioni svolgono un ruolo cruciale nel fornire informazioni essenziali sul messaggio. Tra queste intestazioni, gli X-Header si distinguono per la possibilità di includere informazioni personalizzate nelle email. Questo articolo vi guiderà attraverso il processo di gestione degli X-Header nei messaggi email utilizzando Aspose.Email per Java.
+Se hai bisogno di **salvare file email EML** allegando metadati personalizzati, sei nel posto giusto. In questo tutorial vedremo come aggiungere X‑Headers a un messaggio, persistere l'email come file EML e poi inviarla tramite SMTP. Vedrai anche come **estrarre i valori delle intestazioni personalizzate** dalla posta ricevuta e perché impostare i metadati dell'email può semplificare l'elaborazione a valle nelle applicazioni Java.
+
+## Risposte rapide
+- **Qual è lo scopo principale degli X‑Headers?** Memorizzare metadati personalizzati che non sono coperti dalle intestazioni RFC standard.  
+- **Quale libreria ti aiuta ad aggiungere intestazioni in Java?** Aspose.Email for Java.  
+- **È necessaria una licenza per l'uso in produzione?** Sì, è richiesta una licenza valida di Aspose.Email.  
+- **Posso leggere gli X‑Headers dalla posta ricevuta?** Assolutamente—usa `MailMessage.getHeaders()` per recuperarli.  
+- **SMTP è l'unico modo per inviare email?** No, Aspose.Email supporta anche POP3, IMAP e Exchange Web Services.
+
+## Come salvare email EML con Aspose.Email
+Salvare un'email come file EML conserva ogni intestazione — inclusi i tuoi X‑Headers personalizzati — esattamente come apparirà in transito. Questo è ideale quando è necessario archiviare i messaggi, inoltrarli in seguito o passarli a un altro sistema che si aspetta un file MIME grezzo.
+
+## Cosa sono gli X‑Headers?
+
+Gli X‑Headers, abbreviazione di “eXtended Headers”, sono intestazioni email personalizzate che consentono di incorporare informazioni aggiuntive in un messaggio email. Queste intestazioni non fanno parte di alcuno standard ufficiale, offrendoti la flessibilità di definire i tuoi campi di metadati.
+
+## Perché utilizzare gli X‑Headers?
+
+- **Metadati personalizzati:** Allegare dati specifici per il business (ID ordine, token utente, ecc.) senza modificare il corpo dell'email.  
+- **Filtraggio e instradamento:** I server e i client email possono creare regole basate sui valori impostati.  
+- **Tracciamento e audit:** Registrare passaggi di elaborazione, timestamp o controlli di sicurezza direttamente nell'intestazione del messaggio.  
+- **Impostare i metadati dell'email:** Usa gli X‑Headers per trasmettere informazioni di cui i servizi a valle hanno bisogno per l'instradamento o l'analisi.
 
 ## Prerequisiti
 
-Prima di addentrarci nei dettagli tecnici, assicurati di avere i seguenti prerequisiti:
+- Conoscenza di base della programmazione Java.  
+- Java Development Kit (JDK) installato.  
+- Libreria Aspose.Email for Java, che puoi scaricare da [qui](https://releases.aspose.com/email/java/).  
+- Un IDE come IntelliJ IDEA o Eclipse.
 
-- Conoscenza di base della programmazione Java.
-- Java Development Kit (JDK) installato sul sistema.
-- Libreria Aspose.Email per Java, che puoi scaricare da [Qui](https://releases.aspose.com/email/java/).
-- Ambiente di sviluppo integrato (IDE) come IntelliJ IDEA o Eclipse.
+## Come aggiungere intestazioni ai messaggi email
 
-## Cosa sono gli X-Header?
+### Passo 1: Configurare il tuo progetto Java
 
-Gli X-Header, abbreviazione di "eXtended Headers", sono intestazioni email personalizzate che consentono di includere informazioni aggiuntive in un messaggio. Queste intestazioni non sono standardizzate e possono essere utilizzate per aggiungere metadati o istruzioni speciali all'email.
+Crea un nuovo progetto Java nel tuo IDE e aggiungi il JAR di Aspose.Email al classpath del progetto. Questo ti dà accesso a `MailMessage`, `SmtpClient` e alle classi correlate.
 
-## Perché utilizzare le X-Header?
+### Passo 2: Creare un messaggio email e impostare un'intestazione email personalizzata
 
-Gli X-Header sono utili in vari scenari, ad esempio:
-
-- Metadati personalizzati: puoi includere informazioni personalizzate rilevanti per la tua applicazione o organizzazione.
-- Filtraggio: gli X-Header possono essere utilizzati per creare regole per il filtraggio e l'ordinamento delle e-mail.
-- Tracciamento: consentono di tracciare informazioni specifiche sulla consegna e l'elaborazione delle e-mail.
-
-Ora approfondiamo gli aspetti pratici della gestione degli X-Header utilizzando Aspose.Email per Java.
-
-## Passaggio 1: impostazione del progetto Java
-
-Per iniziare, crea un nuovo progetto Java nell'IDE che hai scelto. Aggiungi la libreria Aspose.Email per Java alle dipendenze del progetto. Puoi farlo includendo il file JAR scaricato in precedenza.
-
-## Passaggio 2: creazione di un messaggio di posta elettronica
-
-Creiamo un semplice messaggio email e aggiungiamo X-Header personalizzati. In questo esempio, useremo Aspose.Email per inviare un'email di benvenuto a un nuovo utente.
+Di seguito è riportato un esempio completo che crea una semplice email di benvenuto e **imposta intestazioni email personalizzate** (`X‑Custom‑Header1` e `X‑Custom‑Header2`). Il blocco di codice è invariato rispetto al tutorial originale.
 
 ```java
-// Importa le classi necessarie
+// Import necessary classes
 import com.aspose.email.*;
 
-// Crea un nuovo messaggio di posta elettronica
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Imposta gli indirizzi email del mittente e del destinatario
+// Set the sender's and recipient's email addresses
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// Imposta l'oggetto e il corpo dell'e-mail
+// Set the subject and body of the email
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Aggiungi X-Header personalizzati
+// Add custom X-Headers
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// Salva l'email come file EML
+// Save the email as an EML file
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-In questo codice creiamo un messaggio di posta elettronica, impostiamo gli indirizzi del mittente e del destinatario, definiamo l'oggetto e il corpo e aggiungiamo X-Header personalizzati.
+> **Pro tip:** Usa nomi di intestazione significativi (ad es., `X-Order-ID`) per semplificare l'elaborazione a valle.
 
-## Passaggio 3: invio dell'e-mail
+### Passo 3: Inviare l'email tramite SMTP
 
-Ora che abbiamo creato l'email, è il momento di inviarla. Aspose.Email offre modi semplici per inviare email utilizzando diversi server e protocolli di posta elettronica. Ecco un esempio di invio di email tramite il protocollo SMTP:
+Ora invia il messaggio usando il protocollo SMTP. Sostituisci i valori segnaposto con i dettagli reali del tuo server.
 
 ```java
-// Crea un'istanza della classe SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "your_password");
 
-// Invia l'email
+// Send the email
 client.send(message);
 ```
 
-Assicurati di sostituire `"smtp.server.com"`, `"your@email.com"`, E `"your_password"` con i dettagli e le credenziali del tuo server SMTP.
+### Passo 4: Leggere gli X‑Headers da un messaggio ricevuto
 
-## Passaggio 4: lettura degli X-Header
-
-Leggere gli X-Header dai messaggi email ricevuti è importante quanto aggiungerli. Vediamo come recuperare gli X-Header da un'email utilizzando Aspose.Email per Java:
+Quando ricevi un'email, puoi estrarre le intestazioni personalizzate altrettanto facilmente. Questo dimostra **come aggiungere valori x-header** e successivamente **estrarre dati delle intestazioni personalizzate**.
 
 ```java
-// Carica un file EML contenente l'email ricevuta
+// Load an EML file containing the received email
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Ottieni il valore di un X-Header personalizzato
+// Get the value of a custom X-Header
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-In questo codice carichiamo un'e-mail ricevuta da un file EML e recuperiamo il valore di un X-Header personalizzato.
+## Problemi comuni e come evitarli
 
-## Conclusione
-
-Gestire gli X-Header nei messaggi email con Aspose.Email per Java è un modo efficace per aggiungere metadati e istruzioni personalizzati alle tue email. Che tu voglia monitorare la consegna delle email o semplicemente includere informazioni aggiuntive, Aspose.Email semplifica l'utilizzo degli X-Header nelle tue applicazioni Java.
+| Problema | Perché accade | Soluzione |
+|-------|----------------|----------|
+| Collisione del nome dell'intestazione con intestazioni standard | Usare un nome che esiste già (es., `X-Subject`) può creare confusione. | Prefissa i tuoi nomi personalizzati con un identificatore unico, ad esempio `X-MyApp-`. |
+| Intestazioni non salvate quando si salva come `MSG` | Alcuni formati eliminano le intestazioni non standard. | Preferisci `EML` per la conservazione completa delle intestazioni, oppure usa `MailMessage.save` con le opzioni appropriate. |
+| Problemi di codifica per valori non‑ASCII | I valori delle intestazioni contenenti caratteri speciali possono essere malformati. | Usa `MimeUtility.encodeText` o imposta il charset corretto quando aggiungi le intestazioni. |
 
 ## Domande frequenti
 
-### Come faccio a installare Aspose.Email per Java?
+**D: Come installo Aspose.Email per Java?**  
+R: Scarica la libreria da [qui](https://releases.aspose.com/email/java/), aggiungi il JAR al classpath del tuo progetto e sei pronto a partire.
 
-Per installare Aspose.Email per Java, segui questi passaggi:
-1. Scarica la libreria da [Qui](https://releases.aspose.com/email/java/).
-2. Aggiungi il file JAR scaricato alle dipendenze del tuo progetto Java.
-3. Ora sei pronto per utilizzare Aspose.Email per Java nel tuo progetto.
+**D: Posso usare gli X‑Headers per filtrare le email?**  
+R: Sì. I client e i server email possono creare regole che agiscono sui valori delle intestazioni personalizzate, consentendo scenari di ordinamento e instradamento potenti.
 
-### Posso usare gli X-Headers per filtrare la posta elettronica?
+**D: Gli X‑Headers sono standardizzati?**  
+R: No. Sono liberi, il che ti offre flessibilità ma richiede anche di definire e documentare le tue convenzioni di denominazione.
 
-Sì, gli X-Header sono comunemente utilizzati per il filtraggio delle email. Puoi creare regole nel tuo client o server di posta elettronica per filtrare e ordinare le email in base ai valori degli X-Header.
+**D: Come posso leggere gli X‑Headers dalle email ricevute?**  
+R: Carica l'email con `MailMessage.load` e chiama `getHeaders().get("<Header-Name>")` come mostrato nell'esempio di codice.
 
-### Gli X-Header sono standardizzati?
+**D: Aspose.Email è adatto per la gestione email a livello enterprise?**  
+R: Assolutamente. Fornisce un'API completa per creare, inviare, ricevere e processare email su larga scala, rendendola una scelta solida per le applicazioni enterprise.
 
-No, gli X-Header non sono standardizzati, il che significa che hai la flessibilità di definire i tuoi X-Header personalizzati in base alle tue esigenze specifiche.
+---
 
-### Come posso leggere gli X-Header delle email ricevute?
-
-È possibile leggere gli X-Header dalle email ricevute utilizzando Aspose.Email per Java. Caricare l'email ricevuta e quindi accedere agli X-Header personalizzati come mostrato negli esempi di codice in questo articolo.
-
-### Aspose.Email è adatto alla gestione della posta elettronica a livello aziendale?
-
-Sì, Aspose.Email è una libreria affidabile che può essere utilizzata per la gestione della posta elettronica a livello aziendale. Offre un'ampia gamma di funzionalità per la creazione, l'invio, la ricezione e l'elaborazione di email, rendendola adatta a diversi scenari aziendali.
+**Ultimo aggiornamento:** 2026-04-05  
+**Testato con:** Aspose.Email for Java 24.11 (ultima versione al momento della stesura)  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

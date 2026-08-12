@@ -1,12 +1,17 @@
 ---
-date: 2026-01-11
-description: Kompletny samouczek analizy nagłówków e‑mail przy użyciu Aspose.Email
-  dla Javy. Dowiedz się, jak parsować pliki eml w Javie i śledzić wiadomości e‑mail
-  za pomocą nagłówków.
-linktitle: Extracting and Analyzing Email Headers with Aspose.Email
+date: 2026-04-05
+description: Dowiedz się, jak wyodrębnić nagłówki e‑maili z plików .eml przy użyciu
+  Aspose.Email dla Javy. Ten samouczek obejmuje odczytywanie pliku eml, sprawdzanie
+  SPF/DKIM oraz wykrywanie phishingowych wiadomości e‑mail.
+keywords:
+- extract email headers
+- email header analysis
+- read eml file
+- check spf dkim
+- detect phishing email
+linktitle: Wyodrębnianie nagłówków e‑mail przy użyciu Aspose.Email – samouczek Java
 second_title: Aspose.Email Java Email Management API
-title: 'Samouczek analizy nagłówków e‑mail - wyodrębnianie i analizowanie nagłówków
-  e‑mail przy użyciu Aspose.Email'
+title: Wyodrębnianie nagłówków e‑mail przy użyciu Aspose.Email – samouczek Java
 url: /pl/java/customizing-email-headers/extracting-and-analyzing-email-headers/
 weight: 12
 ---
@@ -17,13 +22,13 @@ weight: 12
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wyodrębnianie i analiza nagłówków e‑maili za pomocą Aspose.Email
+# Wyodrębnianie nagłówków e‑maili przy użyciu Aspose.Email – samouczek Java
 
-## Wprowadzenie do wyodrębniania i analizy nagłówków e‑maili za pomocą Aspose.Email
+## Wprowadzenie do wyodrębniania i analizy nagłówków e‑maili przy użyciu Aspose.Email
 
-W tym **tutorialu analizy nagłówków e‑maili** przeprowadzimy Cię krok po kroku przez proces wyodrębniania, parsowania i interpretacji metadanych ukrytych w pliku *.eml* przy użyciu Aspose.Email dla Javy. Niezależnie od tego, czy tworzysz filtr antyspamowy, implementujesz śledzenie e‑maili, czy po prostu potrzebujesz audytować trasy wiadomości, opanowanie analizy nagłówków dostarczy Ci wglądu niezbędnego do podejmowania świadomych decyzji.
+In this **tutorial analizy nagłówków e‑maili**, we’ll walk through how to **wyodrębnić nagłówki e‑maili** from an *.eml* file using Aspose.Email for Java. Whether you’re building a spam‑filter, implementing **śledzenie e‑maili**, or need to **wykrywać próby phishingu w e‑mailach**, mastering header extraction gives you the insight you need to make informed decisions quickly.
 
-## Quick Answers
+## Szybkie odpowiedzi
 
 - **Jaka jest główna biblioteka?** Aspose.Email for Java  
 - **Jaki format pliku jest parsowany?** *.eml* (standardowa wiadomość e‑mail)  
@@ -31,34 +36,34 @@ W tym **tutorialu analizy nagłówków e‑maili** przeprowadzimy Cię krok po k
 - **Jak długo trwa podstawowa implementacja?** Około 10‑15 minut po konfiguracji.  
 - **Czy mogę zautomatyzować wyodrębnianie nagłówków?** Tak – API jest w pełni skryptowalne i integruje się z dowolną aplikacją Java.
 
-## Czym jest tutorial analizy nagłówków e‑maili?
+## Czym jest analiza nagłówków e‑maili?
 
-Analiza nagłówków e‑maili polega na odczytywaniu ustrukturyzowanych pól, które towarzyszą każdej wiadomości — takich jak **From**, **Received**, **DKIM‑Signature** i **Received‑SPF** — w celu ujawnienia tożsamości nadawcy, statusu uwierzytelnienia oraz ścieżki, jaką wiadomość przebyła przez serwery pocztowe. Ten tutorial pokazuje, jak wykonać tę analizę programowo.
+Analiza nagłówków e‑maili polega na odczytywaniu ustrukturyzowanych pól, które towarzyszą każdej wiadomości—takich jak **From**, **Received**, **DKIM‑Signature** i **Received‑SPF**—aby ujawnić tożsamość nadawcy, status uwierzytelnienia oraz ścieżkę, jaką wiadomość przebyła przez serwery pocztowe. Ten samouczek pokazuje, jak wykonać tę analizę programowo.
 
-## Dlaczego warto używać tutorialu analizy nagłówków e‑maili?
+## Dlaczego wyodrębniać nagłówki e‑maili?
 
-- **Bezpieczeństwo:** Wykrywanie sfałszowanych nadawców i prób phishingu poprzez sprawdzanie SPF/DKIM.  
-- **Śledzenie:** Odtworzenie dokładnej trasy, jaką przebył e‑mail, przydatne przy rozwiązywaniu problemów z dostawą.  
-- **Zgodność:** Wyodrębnianie znaczników czasu i informacji o serwerach dla ścieżek audytu.  
-- **Automatyzacja:** Integracja parsowania nagłówków w potokach przetwarzania masowej poczty.
+- **Bezpieczeństwo:** Weryfikuj SPF/DKIM i wykrywaj sfałszowanych nadawców, kluczowy krok w **wykrywaniu phishingu w e‑mailach**.  
+- **Śledzenie:** Odtwórz dokładną trasę, jaką przebył e‑mail, przydatne do rozwiązywania problemów z dostawą.  
+- **Zgodność:** Pobierz znaczniki czasu i informacje o serwerach do ścieżek audytu.  
+- **Automatyzacja:** Osadź parsowanie nagłówków w potokach przetwarzania masowej poczty dla skalowalnych rozwiązań.
 
-## Prerequisites
+## Wymagania wstępne
 
-Zanim przejdziemy do kodu, upewnij się, że masz spełnione następujące wymagania:
+Zanim przejdziemy do kodu, upewnij się, że masz spełnione następujące wymagania wstępne:
 
-1. Środowisko programistyczne Java: Upewnij się, że Java jest zainstalowana w Twoim systemie. Możesz ją pobrać z [tutaj](https://www.oracle.com/java/technologies/javase-downloads.html).
+1. Środowisko programistyczne Java: Upewnij się, że masz zainstalowaną Javę w systemie. Możesz ją pobrać [tutaj](https://www.oracle.com/java/technologies/javase-downloads.html).
 
-2. Aspose.Email for Java: Potrzebna będzie biblioteka Aspose.Email for Java. Możesz ją pobrać ze [strony Aspose](https://releases.aspose.com/email/java/).
+2. Aspose.Email for Java: Będziesz potrzebował biblioteki Aspose.Email for Java. Możesz ją pobrać ze [strony Aspose](https://releases.aspose.com/email/java/).
 
 3. Zintegrowane środowisko programistyczne (IDE): Możesz używać dowolnego IDE kompatybilnego z Javą, takiego jak Eclipse lub IntelliJ IDEA, aby pisać i uruchamiać kod.
 
 ## Krok 1: Tworzenie projektu Java
 
-Rozpocznij nowy projekt Java w wybranym IDE i dodaj plik JAR Aspose.Email for Java do ścieżki klas projektu. Dzięki temu uzyskasz dostęp do klas `MailMessage`, `HeaderCollection` oraz powiązanych, niezbędnych do wyodrębniania nagłówków.
+Rozpocznij nowy projekt Java w wybranym IDE i dodaj plik JAR Aspose.Email for Java do ścieżki klas projektu. Dzięki temu uzyskasz dostęp do `MailMessage`, `HeaderCollection` oraz powiązanych klas potrzebnych do **załadowania wiadomości e‑mail** i wyodrębniania nagłówków.
 
 ## Krok 2: Parsowanie nagłówków e‑maili
 
-Teraz, gdy projekt jest gotowy, możemy rozpocząć parsowanie nagłówków pliku *.eml*. Poniższy fragment kodu demonstruje, jak **parsować plik eml w Javie** przy użyciu Aspose.Email:
+Teraz, gdy projekt jest gotowy, możemy rozpocząć parsowanie nagłówków pliku *.eml*. Poniższy fragment kodu demonstruje, jak **odczytać plik eml** przy użyciu Aspose.Email:
 
 ```java
 // Load the email message
@@ -73,15 +78,15 @@ for (Header header : headers) {
 }
 ```
 
-W tym kodzie wczytujemy wiadomość e‑mail z pliku, a następnie pobieramy jej nagłówki przy użyciu metody `getHeaders()`. Iterujemy po kolekcji i wypisujemy każdą parę nazwa/wartość nagłówka.
+W tym kodzie ładujemy wiadomość e‑mail z pliku, a następnie pobieramy jej nagłówki za pomocą metody `getHeaders()`. Iterujemy po kolekcji i wypisujemy każdą parę nazwa/wartość nagłówka.
 
 ## Krok 3: Analiza nagłówków e‑maili
 
-Mając surowe nagłówki, możesz przeprowadzić różnorodne analizy. Poniżej trzy typowe zadania ilustrujące **śledzenie e‑maili przy użyciu nagłówków**.
+Majac surowe nagłówki w ręku, możesz wykonać różnorodne analizy. Poniżej trzy typowe zadania, które ilustrują **sprawdzanie SPF DKIM** oraz ogólne śledzenie e‑maili.
 
 ### Identyfikacja nadawcy
 
-The “From” header (or the `MailMessage.getFrom()` property) tells you who sent the message:
+Nagłówek “From” (lub właściwość `MailMessage.getFrom()`) informuje, kto wysłał wiadomość:
 
 ```java
 String sender = message.getFrom().getAddress();
@@ -90,7 +95,7 @@ System.out.println("Sender: " + sender);
 
 ### Sprawdzanie rekordów SPF i DKIM
 
-SPF and DKIM help verify that the email really originates from the claimed domain. Look for the corresponding headers:
+SPF i DKIM pomagają zweryfikować, że e‑mail naprawdę pochodzi z podanej domeny. Poszukaj odpowiednich nagłówków:
 
 ```java
 String spfRecord = headers.get("Received-SPF");
@@ -102,7 +107,7 @@ System.out.println("DKIM Record: " + dkimRecord);
 
 ### Śledzenie trasy e‑maila
 
-Every hop a message makes adds a “Received” header. By printing these, you can reconstruct the path:
+Każdy przeskok wiadomości dodaje nagłówek “Received”. Drukując je, możesz odtworzyć ścieżkę:
 
 ```java
 for (Header header : headers) {
@@ -116,34 +121,34 @@ for (Header header : headers) {
 
 | Problem | Przyczyna | Rozwiązanie |
 |-------|--------|-----|
-| `NullPointerException` przy `message.getFrom()` | Wiadomość nie zawiera nagłówka **From**. | Sprawdź, czy nagłówek istnieje przed dostępem, lub użyj `message.getHeaders().get("From")`. |
-| Brak nagłówków SPF/DKIM | Serwer nadawcy ich nie dołączył. | Traktuj brakujące wartości jako „nie podano” i kontynuuj analizę. |
+| `NullPointerException` on `message.getFrom()` | Wiadomość nie zawiera nagłówka **From**. | Zweryfikuj, czy nagłówek istnieje przed dostępem, lub użyj `message.getHeaders().get("From")`. |
+| Brak nagłówków SPF/DKIM | Serwer nadawcy ich nie dodał. | Traktuj brakujące wartości jako „nie podano” i kontynuuj analizę. |
 | Duże pliki `.eml` powodują obciążenie pamięci | Ładowanie całej wiadomości jednocześnie. | Użyj API strumieniowego (`MailMessage.load(InputStream)`) dla dużych plików. |
 
-## Najczęściej zadawane pytania
+## Często zadawane pytania
 
 **Q: Jak mogę uzyskać dostęp do nagłówków e‑maili w Aspose.Email?**  
-A: Wczytaj e‑mail przy użyciu `MailMessage.load()` i wywołaj `getHeaders()`, aby otrzymać `HeaderCollection`. Iteruj po niej, aby odczytać poszczególne wartości nagłówków.
+A: Załaduj e‑mail przy użyciu `MailMessage.load()` i wywołaj `getHeaders()`, aby otrzymać `HeaderCollection`. Iteruj po niej, aby odczytać poszczególne wartości nagłówków.
 
 **Q: Jakie informacje zawierają nagłówki e‑maili?**  
-A: Nagłówki przechowują metadane, takie jak adresy nadawcy/odbiorcy, znaczniki czasu, przeskoki serwerów (`Received`), wyniki uwierzytelnienia (`DKIM`, `SPF`) oraz własne nagłówki X‑używane przez aplikacje.
+A: Nagłówki przechowują metadane takie jak adresy nadawcy/odbiorcy, znaczniki czasu, przeskoki serwerów (`Received`), wyniki uwierzytelnienia (`DKIM`, `SPF`) oraz niestandardowe nagłówki X‑ używane przez aplikacje.
 
 **Q: Jak sprawdzić rekordy SPF i DKIM w nagłówkach?**  
 A: Poszukaj nagłówków `Received-SPF` i `DKIM-Signature` w kolekcji. Ich obecność (i wartości) wskazuje, czy wiadomość przeszła te kontrole uwierzytelnienia.
 
 **Q: Dlaczego analiza nagłówków e‑maili jest ważna?**  
-A: Pomaga zweryfikować autentyczność, śledzić ścieżki dostawy, diagnozować problemy ze spamem i spełniać wymogi polityk bezpieczeństwa — co jest niezbędne w każdym solidnym systemie obsługi e‑maili.
+A: Pomaga zweryfikować autentyczność, śledzić ścieżki dostawy, diagnozować problemy ze spamem i spełniać polityki bezpieczeństwa — niezbędne dla każdego solidnego systemu obsługi e‑maili.
 
 **Q: Czy mogę zautomatyzować analizę nagłówków e‑maili przy użyciu Aspose.Email?**  
 A: Oczywiście. API biblioteki jest w pełni programowalne, co pozwala wbudować wyodrębnianie i analizę nagłówków w zadania wsadowe, mikro‑usługi lub bramki pocztowe w czasie rzeczywistym.
 
-## Zakończenie
+## Podsumowanie
 
-Ten **tutorial analizy nagłówków e‑maili** pokazał, jak wczytać plik *.eml*, wyodrębnić jego nagłówki i przeprowadzić praktyczne analizy, takie jak identyfikacja nadawcy, weryfikacja SPF/DKIM oraz śledzenie trasy. Mając te techniki, możesz tworzyć bezpieczne, audytowalne i inteligentne rozwiązania przetwarzania e‑maili.
+Ten **samouczek analizy nagłówków e‑maili** pokazał, jak **załadować wiadomość e‑mail**, wyodrębnić jej nagłówki i przeprowadzić praktyczne analizy, takie jak identyfikacja nadawcy, **sprawdzanie SPF DKIM** oraz śledzenie trasy. Dzięki tym technikom możesz tworzyć bezpieczne, audytowalne i inteligentne rozwiązania przetwarzania e‑maili, które niezawodnie **wyodrębniają nagłówki e‑maili** i chronią Twoją organizację przed zagrożeniami phishingowymi.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-01-11  
+**Ostatnia aktualizacja:** 2026-04-05  
 **Testowano z:** Aspose.Email for Java 23.12 (najnowsza w momencie pisania)  
 **Autor:** Aspose  
 

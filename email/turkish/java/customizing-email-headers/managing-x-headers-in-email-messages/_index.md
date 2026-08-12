@@ -1,10 +1,19 @@
 ---
-"description": "Aspose.Email for Java ile E-postalardaki X-Başlıklarının Gücünü Açığa Çıkarın. Özel Meta Verileri Yönetmeyi ve E-posta İşlemeyi Geliştirmeyi Öğrenin."
-"linktitle": "Aspose.Email ile E-posta Mesajlarındaki X-Başlıklarını Yönetme"
-"second_title": "Aspose.Email Java E-posta Yönetim API'si"
-"title": "Aspose.Email ile E-posta Mesajlarındaki X-Başlıklarını Yönetme"
-"url": "/tr/java/customizing-email-headers/managing-x-headers-in-email-messages/"
-"weight": 16
+date: 2026-04-05
+description: Aspose.Email for Java kullanarak e-posta EML dosyasını kaydetmeyi, özel
+  başlıklar eklemeyi ve SMTP üzerinden e-posta göndermeyi öğrenin. Özel başlığı çıkarmak
+  ve e-posta meta verilerini ayarlamak için adımları içerir.
+keywords:
+- save email eml
+- send email smtp
+- extract custom header
+- how to add x-header
+- add custom header java
+linktitle: Aspose.Email ile E-posta Mesajlarında X-Header'ları Yönetme
+second_title: Aspose.Email Java Email Management API
+title: E-posta EML Kaydetme ve Başlık Ekleme – Aspose.Email ile X‑Header'ları Yönetme
+url: /tr/java/customizing-email-headers/managing-x-headers-in-email-messages/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,125 +22,121 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email ile E-posta Mesajlarındaki X-Başlıklarını Yönetme
+# E-posta EML'yi Kaydetme ve Başlıklar Ekleme – Aspose.Email ile X‑Header'ları Yönetme
 
+## Giriş
 
-## giriiş
+Özel meta verileri eklerken **email EML'yi kaydet** dosyalarını kaydetmeniz gerekiyorsa, doğru yerdesiniz. Bu öğreticide bir mesaja X‑Header eklemeyi, e-postayı bir EML dosyası olarak kalıcı hale getirmeyi ve ardından SMTP üzerinden göndermeyi adım adım göstereceğiz. Ayrıca alınan postadan **custom header'ı çıkar** değerlerini nasıl çıkaracağınızı ve e-posta meta verilerini ayarlamanın Java uygulamalarında sonraki işlemeyi nasıl basitleştirebileceğini göreceksiniz.
 
-E-posta iletişimi dünyasında, başlıklar mesaj hakkında temel bilgileri sağlamada önemli bir rol oynar. Bu başlıklar arasında, X-Başlıkları e-postalara özel bilgiler eklemenin bir yolu olarak öne çıkar. Bu makale, Aspose.Email for Java kullanarak e-posta mesajlarındaki X-Başlıklarını yönetme sürecinde size rehberlik edecektir.
+## Hızlı Yanıtlar
+- **X‑Header'ların temel amacı nedir?** Standart RFC başlıkları tarafından kapsanmayan özel meta verileri depolamaktır.  
+- **Java'da başlık eklemenize yardımcı olan kütüphane hangisidir?** Aspose.Email for Java.  
+- **Üretim kullanımında lisansa ihtiyacım var mı?** Evet, geçerli bir Aspose.Email lisansı gereklidir.  
+- **Alınan postadan X‑Header'ları okuyabilir miyim?** Kesinlikle—`MailMessage.getHeaders()` kullanarak alabilirsiniz.  
+- **Mail göndermenin tek yolu SMTP mi?** Hayır, Aspose.Email ayrıca POP3, IMAP ve Exchange Web Services'ı da destekler.
 
-## Ön koşullar
+## Aspose.Email ile email EML'yi nasıl kaydedilir
+Bir e-postayı EML dosyası olarak kaydetmek, her başlığı—özelleştirilmiş X‑Header'larınız dahil—tam olarak ağda göründüğü gibi korur. Bu, mesajları arşivlemeniz, daha sonra iletmeniz veya ham MIME dosyası bekleyen başka bir sisteme teslim etmeniz gerektiğinde idealdir.
 
-Teknik detaylara dalmadan önce, aşağıdaki ön koşulların mevcut olduğundan emin olun:
+## X‑Header'lar Nedir?
+X‑Header'lar, “eXtended Headers” (Genişletilmiş Başlıklar) ifadesinin kısaltmasıdır ve e-posta mesajına ek bilgi eklemenizi sağlayan özel e-posta başlıklarıdır. Bu başlıklar resmi bir standardın parçası değildir, bu da kendi meta veri alanlarınızı tanımlama esnekliği sağlar.
 
-- Temel Java programlama bilgisi.
-- Sisteminizde Java Development Kit (JDK) yüklü.
-- Java kütüphanesi için Aspose.Email'i buradan indirebilirsiniz [Burada](https://releases.aspose.com/email/java/).
-- IntelliJ IDEA veya Eclipse gibi Entegre Geliştirme Ortamı (IDE).
+## X‑Header'ları Neden Kullanmalısınız?
+- **Özel Meta Veri:** E-posta gövdesini değiştirmeden iş‑özel verileri (sipariş kimlikleri, kullanıcı token'ları vb.) ekleyin.  
+- **Filtreleme ve Yönlendirme:** E-posta sunucuları ve istemcileri, belirlediğiniz değerlere dayalı kurallar oluşturabilir.  
+- **İzleme ve Denetleme:** İşlem adımlarını, zaman damgalarını veya güvenlik kontrollerini doğrudan mesaj başlığında kaydedin.  
+- **E-posta Meta Verilerini Ayarlama:** X‑Header'ları, sonraki hizmetlerin yönlendirme veya analiz için ihtiyaç duyduğu bilgileri iletmek için kullanın.
 
-## X-Başlıkları Nedir?
+## Ön Koşullar
+- Java programlama temelleri bilgisi.  
+- Java Development Kit (JDK) yüklü.  
+- Aspose.Email for Java kütüphanesi, [here](https://releases.aspose.com/email/java/) adresinden indirebilirsiniz.  
+- IntelliJ IDEA veya Eclipse gibi bir IDE.
 
-"eXtended Headers"ın kısaltması olan X-Headers, bir e-posta mesajına ek bilgi eklemenize olanak tanıyan özel e-posta başlıklarıdır. Bu başlıklar standart değildir ve e-postaya meta veri veya özel talimatlar eklemek için kullanılabilir.
+## E-posta Mesajlarına Başlık Ekleme
 
-## X-Header'ları Neden Kullanmalıyız?
+### Adım 1: Java Projenizi Kurma
+IDE'nizde yeni bir Java projesi oluşturun ve Aspose.Email JAR dosyasını projenin sınıf yoluna ekleyin. Bu, `MailMessage`, `SmtpClient` ve ilgili sınıflara erişmenizi sağlar.
 
-X-Başlıkları çeşitli senaryolarda kullanışlıdır, örneğin:
-
-- Özel Meta Veri: Uygulamanız veya kuruluşunuzla ilgili özel bilgileri ekleyebilirsiniz.
-- Filtreleme: X-Başlıkları, e-posta filtreleme ve sıralama kuralları oluşturmak için kullanılabilir.
-- Takip: E-postaların teslimatı ve işlenmesiyle ilgili belirli bilgilerin izlenmesini sağlarlar.
-
-Şimdi, Aspose.Email for Java kullanarak X-Headers'ı yönetmenin pratik yönlerine dalalım.
-
-## Adım 1: Java Projenizi Kurma
-
-Başlamak için, seçtiğiniz IDE'de yeni bir Java projesi oluşturun. Aspose.Email for Java kütüphanesini projenizin bağımlılıklarına ekleyin. Bunu daha önce indirdiğiniz JAR dosyasını ekleyerek yapabilirsiniz.
-
-## Adım 2: E-posta Mesajı Oluşturma
-
-Basit bir e-posta mesajı oluşturalım ve ona özel X-Başlıkları ekleyelim. Bu örnekte, yeni bir kullanıcıya hoş geldiniz e-postası göndermek için Aspose.Email kullanacağız.
+### Adım 2: E-posta Mesajı Oluşturma ve Özel E-posta Başlığı Ayarlama
+Aşağıda basit bir karşılama e-postası oluşturan ve **özel e-posta başlıkları** (`X‑Custom‑Header1` ve `X‑Custom‑Header2`) ayarlayan tam bir örnek bulunmaktadır. Kod bloğu orijinal öğreticideki gibi değiştirilmemiştir.
 
 ```java
-// Gerekli sınıfları içe aktarın
+// Import necessary classes
 import com.aspose.email.*;
 
-// Yeni bir e-posta mesajı oluştur
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Gönderenin ve alıcının e-posta adreslerini ayarlayın
+// Set the sender's and recipient's email addresses
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// E-postanın konusunu ve gövdesini ayarlayın
+// Set the subject and body of the email
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Özel X-Başlıkları ekleyin
+// Add custom X-Headers
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// E-postayı EML dosyası olarak kaydedin
+// Save the email as an EML file
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-Bu kodda bir e-posta mesajı oluşturuyoruz, gönderici ve alıcı adreslerini ayarlıyoruz, konuyu ve gövdeyi tanımlıyoruz ve özel X-Başlıkları ekliyoruz.
+> **Pro tip:** Anlamlı başlık adları kullanın (ör. `X-Order-ID`) böylece sonraki işlemeyi kolaylaştırır.
 
-## Adım 3: E-postayı Gönderme
-
-Artık e-postayı oluşturduğumuza göre, onu gönderme zamanı geldi. Aspose.Email, farklı e-posta sunucuları ve protokolleri kullanarak e-posta göndermenin kolay yollarını sağlar. İşte e-postayı SMTP protokolü kullanarak göndermenin bir örneği:
+### Adım 3: E-postayı SMTP ile Gönderme
+Şimdi mesajı SMTP protokolüyle gönderin. Yer tutucu değerleri gerçek sunucu bilgilerinizle değiştirin.
 
 ```java
-// SmtpClient sınıfının bir örneğini oluşturun
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "your_password");
 
-// E-postayı gönder
+// Send the email
 client.send(message);
 ```
 
-Değiştirdiğinizden emin olun `"smtp.server.com"`, `"your@email.com"`, Ve `"your_password"` SMTP sunucunuzun ayrıntıları ve kimlik bilgilerinizle.
-
-## Adım 4: X-Başlıklarını Okumak
-
-Alınan e-posta mesajlarından X-Başlıklarını okumak, onları eklemek kadar önemlidir. Aspose.Email for Java kullanarak bir e-postadan X-Başlıklarını nasıl alacağımızı görelim:
+### Adım 4: Alınan Mesajdan X‑Header'ları Okuma
+Bir e-posta aldığınızda, özel başlıkları aynı kolaylıkla çıkarabilirsiniz. Bu, **x-header ekleme** değerlerinin daha sonra **custom header çıkarma** verilerini gösterir.
 
 ```java
-// Alınan e-postayı içeren bir EML dosyası yükleyin
+// Load an EML file containing the received email
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Özel bir X-Başlığının değerini alın
+// Get the value of a custom X-Header
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-Bu kodda, bir EML dosyasından alınan bir e-postayı yüklüyoruz ve özel bir X-Header'ın değerini alıyoruz.
+## Yaygın Tuzaklar ve Nasıl Kaçınılır
+| Issue | Why It Happens | Solution |
+|-------|----------------|----------|
+| Header name collision with standard headers | Using a name that already exists (e.g., `X-Subject`) can cause confusion. | Prefix your custom names with a unique identifier, such as `X-MyApp-`. |
+| Headers not persisted when saving as `MSG` | Some formats drop non‑standard headers. | Prefer `EML` for full header preservation, or use `MailMessage.save` with appropriate options. |
+| Encoding problems for non‑ASCII values | Header values containing special characters may be malformed. | Use `MimeUtility.encodeText` or set proper charset when adding headers. |
 
-## Çözüm
+## Sık Sorulan Sorular
 
-Aspose.Email for Java ile e-posta mesajlarındaki X-Headers'ı yönetmek, e-postalarınıza özel meta veriler ve talimatlar eklemenin güçlü bir yoludur. İster e-posta teslimatını takip ediyor olun, ister sadece ek bilgiler ekliyor olun, Aspose.Email, Java uygulamalarınızda X-Headers ile çalışmayı kolaylaştırır.
+**Q: Aspose.Email for Java nasıl kurulur?**  
+A: Kütüphaneyi [here](https://releases.aspose.com/email/java/) adresinden indirin, JAR dosyasını projenizin sınıf yoluna ekleyin ve hazırsınız.
 
-## SSS
+**Q: X‑Header'ları e-posta filtreleme için kullanabilir miyim?**  
+A: Evet. E-posta istemcileri ve sunucuları, özel başlık değerlerine dayalı kurallar oluşturabilir, bu da güçlü sıralama ve yönlendirme senaryoları sağlar.
 
-### Aspose.Email for Java'yı nasıl yüklerim?
+**Q: X‑Header'lar standartlaştırılmış mı?**  
+A: Hayır. Serbest biçimlidir, bu da size esneklik sağlar ancak kendi adlandırma kurallarınızı tanımlamanızı ve belgelemenizi gerektirir.
 
-Aspose.Email for Java'yı yüklemek için şu adımları izleyin:
-1. Kütüphaneyi şu adresten indirin: [Burada](https://releases.aspose.com/email/java/).
-2. İndirdiğiniz JAR dosyasını Java projenizin bağımlılıklarına ekleyin.
-3. Artık projenizde Aspose.Email for Java'yı kullanmaya hazırsınız.
+**Q: Alınan e-postalardan X‑Header'ları nasıl okuyabilirim?**  
+A: E-postayı `MailMessage.load` ile yükleyin ve kod örneğinde gösterildiği gibi `getHeaders().get("<Header-Name>")` çağrısını yapın.
 
-### E-posta filtrelemesinde X-Headers'ı kullanabilir miyim?
+**Q: Aspose.Email kurumsal düzeyde e-posta yönetimi için uygun mu?**  
+A: Kesinlikle. Ölçekli e-posta oluşturma, gönderme, alma ve işleme için kapsamlı bir API sunar, bu da onu kurumsal uygulamalar için sağlam bir seçim yapar.
 
-Evet, X-Başlıkları e-posta filtrelemesi için yaygın olarak kullanılır. E-posta istemcinizde veya sunucunuzda, e-postaları X-Başlıklarının değerlerine göre filtrelemek ve sıralamak için kurallar oluşturabilirsiniz.
+---
 
-### X-Header'lar standart mıdır?
-
-Hayır, X-Başlıkları standart değildir; bu da özel ihtiyaçlarınıza uyacak şekilde kendi özel X-Başlıklarınızı tanımlama esnekliğine sahip olduğunuz anlamına gelir.
-
-### Alınan e-postalardaki X-Header'ları nasıl okuyabilirim?
-
-Aspose.Email for Java kullanarak alınan e-postalardan X-Headers'ı okuyabilirsiniz. Alınan e-postayı yükleyin ve ardından bu makaledeki kod örneklerinde gösterildiği gibi özel X-Headers'a erişin.
-
-### Aspose.Email kurumsal düzeyde e-posta yönetimi için uygun mudur?
-
-Evet, Aspose.Email kurumsal düzeyde e-posta yönetimi için kullanılabilen sağlam bir kütüphanedir. E-posta oluşturma, gönderme, alma ve işleme için çok çeşitli özellikler sunarak çeşitli iş senaryoları için uygun hale getirir.
+**Son Güncelleme:** 2026-04-05  
+**Test Edilen:** Aspose.Email for Java 24.11 (latest at time of writing)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

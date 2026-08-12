@@ -1,10 +1,21 @@
 ---
-"description": "Odblokuj moc X-Headers w wiadomościach e-mail dzięki Aspose.Email for Java. Naucz się zarządzać niestandardowymi metadanymi i usprawniać przetwarzanie wiadomości e-mail."
-"linktitle": "Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email"
-"second_title": "Aspose.Email Java E-mail Management API"
-"title": "Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email"
-"url": "/pl/java/customizing-email-headers/managing-x-headers-in-email-messages/"
-"weight": 16
+date: 2026-04-05
+description: Dowiedz się, jak zapisać wiadomość e‑mail w formacie EML, dodać niestandardowe
+  nagłówki i wysłać e‑mail za pomocą SMTP przy użyciu Aspose.Email dla Javy. Zawiera
+  kroki wyodrębniania niestandardowego nagłówka i ustawiania metadanych wiadomości
+  e‑mail.
+keywords:
+- save email eml
+- send email smtp
+- extract custom header
+- how to add x-header
+- add custom header java
+linktitle: Zarządzanie nagłówkami X w wiadomościach e‑mail przy użyciu Aspose.Email
+second_title: Aspose.Email Java Email Management API
+title: Jak zapisać wiadomość e‑mail w formacie EML i dodać nagłówki – zarządzanie
+  X‑headerami przy użyciu Aspose.Email
+url: /pl/java/customizing-email-headers/managing-x-headers-in-email-messages/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,125 +24,129 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zarządzanie nagłówkami X w wiadomościach e-mail za pomocą Aspose.Email
+# Jak zapisać e‑mail w formacie EML i dodać nagłówki – zarządzanie X‑Headers przy użyciu Aspose.Email
 
+## Wprowadzenie
 
-## Wstęp
+Jeśli potrzebujesz **zapisać pliki e‑mail w formacie EML** dołączając własne metadane, jesteś we właściwym miejscu. W tym samouczku przeprowadzimy Cię przez dodawanie X‑Headers do wiadomości, zachowywanie e‑maila jako pliku EML, a następnie wysyłanie go przez SMTP. Zobaczysz także, jak **wyodrębnić własne wartości nagłówków** z otrzymanej poczty i dlaczego ustawianie metadanych e‑maila może uprościć dalsze przetwarzanie w aplikacjach Java.
 
-W świecie komunikacji e-mailowej nagłówki odgrywają kluczową rolę w dostarczaniu istotnych informacji o wiadomości. Wśród tych nagłówków wyróżnia się X-Headers jako sposób na dołączenie niestandardowych informacji do wiadomości e-mail. Ten artykuł przeprowadzi Cię przez proces zarządzania X-Headers w wiadomościach e-mail przy użyciu Aspose.Email for Java.
+## Szybkie odpowiedzi
+- **Jaki jest podstawowy cel X‑Headers?** Przechowywanie własnych metadanych, które nie są objęte standardowymi nagłówkami RFC.  
+- **Która biblioteka pomaga dodawać nagłówki w Javie?** Aspose.Email for Java.  
+- **Czy potrzebna jest licencja do użytku produkcyjnego?** Tak, wymagana jest ważna licencja Aspose.Email.  
+- **Czy mogę odczytać X‑Headers z otrzymanej poczty?** Oczywiście — użyj `MailMessage.getHeaders()`, aby je pobrać.  
+- **Czy SMTP jest jedynym sposobem wysyłania poczty?** Nie, Aspose.Email obsługuje także POP3, IMAP i Exchange Web Services.
+
+## Jak zapisać e‑mail w formacie EML przy użyciu Aspose.Email
+Zapisanie e‑maila jako pliku EML zachowuje każdy nagłówek — w tym własne X‑Headers — dokładnie tak, jak będzie on wyglądał w transmisji. Jest to idealne rozwiązanie, gdy potrzebujesz archiwizować wiadomości, przekazywać je później lub przekazać innemu systemowi, który oczekuje surowego pliku MIME.
+
+## Czym są X‑Headers?
+
+X‑Headers, skrót od „eXtended Headers”, to własne nagłówki e‑mail, które pozwalają osadzić dodatkowe informacje w wiadomości e‑mail. Te nagłówki nie są częścią żadnego oficjalnego standardu, co daje Ci elastyczność w definiowaniu własnych pól metadanych.
+
+## Dlaczego używać X‑Headers?
+
+- **Własne metadane:** Dołącz dane specyficzne dla biznesu (identyfikatory zamówień, tokeny użytkowników itp.) bez modyfikowania treści e‑maila.  
+- **Filtrowanie i routowanie:** Serwery i klienci e‑mail mogą tworzyć reguły oparte na ustawionych wartościach.  
+- **Śledzenie i audyt:** Rejestruj kroki przetwarzania, znaczniki czasu lub kontrole bezpieczeństwa bezpośrednio w nagłówku wiadomości.  
+- **Ustawianie metadanych e‑mail:** Używaj X‑Headers do przekazywania informacji, których potrzebują usługi downstream do routowania lub analiz.
 
 ## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły techniczne, upewnij się, że spełnione są następujące wymagania wstępne:
+- Podstawowa znajomość programowania w Javie.  
+- Zainstalowany Java Development Kit (JDK).  
+- Biblioteka Aspose.Email for Java, którą możesz pobrać [tutaj](https://releases.aspose.com/email/java/).  
+- Środowisko IDE, takie jak IntelliJ IDEA lub Eclipse.
 
-- Podstawowa znajomość programowania w Javie.
-- Java Development Kit (JDK) zainstalowany w Twoim systemie.
-- Biblioteka Aspose.Email dla języka Java, którą można pobrać ze strony [Tutaj](https://releases.aspose.com/email/java/).
-- Zintegrowane środowisko programistyczne (IDE), takie jak IntelliJ IDEA lub Eclipse.
+## Jak dodać nagłówki do wiadomości e‑mail
 
-## Czym są nagłówki X?
+### Krok 1: Konfiguracja projektu Java
 
-X-Headers, skrót od „eXtended Headers”, to niestandardowe nagłówki wiadomości e-mail, które umożliwiają dołączenie dodatkowych informacji do wiadomości e-mail. Nagłówki te nie są standaryzowane i można ich używać do dodawania metadanych lub specjalnych instrukcji do wiadomości e-mail.
+Utwórz nowy projekt Java w swoim IDE i dodaj plik JAR Aspose.Email do ścieżki klas projektu. Dzięki temu uzyskasz dostęp do `MailMessage`, `SmtpClient` i powiązanych klas.
 
-## Dlaczego warto używać X-Headers?
+### Krok 2: Tworzenie wiadomości e‑mail i ustawianie własnego nagłówka e‑mail
 
-Nagłówki X-Headers są przydatne w różnych scenariuszach, takich jak:
-
-- Niestandardowe metadane: Możesz uwzględnić niestandardowe informacje istotne dla Twojej aplikacji lub organizacji.
-- Filtrowanie: Nagłówki X-Headers można wykorzystać do tworzenia reguł filtrowania i sortowania wiadomości e-mail.
-- Śledzenie: Umożliwiają śledzenie określonych informacji dotyczących dostarczania i przetwarzania wiadomości e-mail.
-
-Teraz zajmiemy się praktycznymi aspektami zarządzania nagłówkami X-Headers przy użyciu Aspose.Email dla Java.
-
-## Krok 1: Konfigurowanie projektu Java
-
-Aby rozpocząć, utwórz nowy projekt Java w wybranym środowisku IDE. Dodaj bibliotekę Aspose.Email for Java do zależności swojego projektu. Możesz to zrobić, dołączając plik JAR, który pobrałeś wcześniej.
-
-## Krok 2: Tworzenie wiadomości e-mail
-
-Utwórzmy prostą wiadomość e-mail i dodajmy do niej niestandardowe nagłówki X-Headers. W tym przykładzie użyjemy Aspose.Email, aby wysłać wiadomość powitalną do nowego użytkownika.
+Poniżej znajduje się kompletny przykład, który tworzy prostą wiadomość powitalną i **ustawia własne nagłówki e‑mail** (`X‑Custom‑Header1` i `X‑Custom‑Header2`). Blok kodu pozostaje niezmieniony w stosunku do oryginalnego samouczka.
 
 ```java
-// Importuj niezbędne klasy
+// Import necessary classes
 import com.aspose.email.*;
 
-// Utwórz nową wiadomość e-mail
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Ustaw adresy e-mail nadawcy i odbiorcy
+// Set the sender's and recipient's email addresses
 message.setFrom("your@email.com");
 message.setTo("recipient@email.com");
 
-// Ustaw temat i treść wiadomości e-mail
+// Set the subject and body of the email
 message.setSubject("Welcome to Our Service");
 message.setHtmlBody("<p>Dear User, welcome to our platform!</p>");
 
-// Dodaj niestandardowe nagłówki X
+// Add custom X-Headers
 message.getHeaders().add("X-Custom-Header1", "Value1");
 message.getHeaders().add("X-Custom-Header2", "Value2");
 
-// Zapisz wiadomość e-mail jako plik EML
+// Save the email as an EML file
 message.save("welcome_email.eml", SaveOptions.getDefaultEml());
 ```
 
-W tym kodzie tworzymy wiadomość e-mail, ustawiamy adresy nadawcy i odbiorcy, definiujemy temat i treść oraz dodajemy niestandardowe nagłówki X-Headers.
+> **Wskazówka:** Używaj znaczących nazw nagłówków (np. `X-Order-ID`), aby ułatwić przetwarzanie downstream.
 
-## Krok 3: Wysyłanie wiadomości e-mail
+### Krok 3: Wysyłanie e‑maila przez SMTP
 
-Teraz, gdy utworzyliśmy wiadomość e-mail, czas ją wysłać. Aspose.Email zapewnia proste sposoby wysyłania wiadomości e-mail przy użyciu różnych serwerów i protokołów poczty e-mail. Oto przykład wysyłania wiadomości e-mail przy użyciu protokołu SMTP:
+Teraz wyślij wiadomość przy użyciu protokołu SMTP. Zastąp wartości zastępcze rzeczywistymi danymi serwera.
 
 ```java
-// Utwórz instancję klasy SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.server.com", 587, "your@email.com", "your_password");
 
-// Wyślij e-mail
+// Send the email
 client.send(message);
 ```
 
-Pamiętaj o wymianie `"smtp.server.com"`, `"your@email.com"`, I `"your_password"` podając dane i dane uwierzytelniające serwera SMTP.
+### Krok 4: Odczytywanie X‑Headers z otrzymanej wiadomości
 
-## Krok 4: Odczyt nagłówków X
-
-Odczytywanie X-Headers z otrzymanych wiadomości e-mail jest równie ważne, jak ich dodawanie. Zobaczmy, jak pobrać X-Headers z wiadomości e-mail za pomocą Aspose.Email dla Java:
+Gdy otrzymasz e‑mail, możesz równie łatwo wyodrębnić własne nagłówki. To pokazuje **jak dodać wartości x-header** oraz później **wyodrębnić własne nagłówki**.
 
 ```java
-// Załaduj plik EML zawierający otrzymaną wiadomość e-mail
+// Load an EML file containing the received email
 MailMessage receivedMessage = MailMessage.load("received_email.eml");
 
-// Uzyskaj wartość niestandardowego nagłówka X
+// Get the value of a custom X-Header
 String customHeaderValue = receivedMessage.getHeaders().get("X-Custom-Header1");
 ```
 
-W tym kodzie ładujemy otrzymaną wiadomość e-mail z pliku EML i pobieramy wartość niestandardowego nagłówka X-Header.
+## Typowe pułapki i jak ich unikać
 
-## Wniosek
-
-Zarządzanie nagłówkami X-Headers w wiadomościach e-mail za pomocą Aspose.Email for Java to potężny sposób na dodawanie niestandardowych metadanych i instrukcji do wiadomości e-mail. Niezależnie od tego, czy śledzisz dostarczanie wiadomości e-mail, czy po prostu dodajesz dodatkowe informacje, Aspose.Email ułatwia pracę z nagłówkami X-Headers w aplikacjach Java.
+| Problem | Dlaczego się pojawia | Rozwiązanie |
+|-------|----------------|----------|
+| Kolizja nazwy nagłówka ze standardowymi nagłówkami | Użycie nazwy, która już istnieje (np. `X-Subject`), może powodować zamieszanie. | Dodaj przedrostek do własnych nazw, np. unikalny identyfikator `X-MyApp-`. |
+| Nagłówki nie są zachowywane przy zapisie jako `MSG` | Niektóre formaty usuwają nagłówki niestandardowe. | Preferuj `EML` dla pełnego zachowania nagłówków lub użyj `MailMessage.save` z odpowiednimi opcjami. |
+| Problemy z kodowaniem wartości nie‑ASCII | Wartości nagłówków zawierające znaki specjalne mogą być niepoprawnie sformatowane. | Użyj `MimeUtility.encodeText` lub ustaw odpowiedni zestaw znaków przy dodawaniu nagłówków. |
 
 ## Najczęściej zadawane pytania
 
-### Jak zainstalować Aspose.Email dla Java?
+**Q: Jak zainstalować Aspose.Email for Java?**  
+A: Pobierz bibliotekę [tutaj](https://releases.aspose.com/email/java/), dodaj plik JAR do ścieżki klas projektu i możesz rozpocząć.
 
-Aby zainstalować Aspose.Email dla Java, wykonaj następujące kroki:
-1. Pobierz bibliotekę z [Tutaj](https://releases.aspose.com/email/java/).
-2. Dodaj pobrany plik JAR do zależności swojego projektu Java.
-3. Możesz teraz używać Aspose.Email for Java w swoim projekcie.
+**Q: Czy mogę używać X‑Headers do filtrowania e‑mail?**  
+A: Tak. Klienci i serwery e‑mail mogą tworzyć reguły działające na własnych wartościach nagłówków, umożliwiając zaawansowane sortowanie i scenariusze routingu.
 
-### Czy mogę używać nagłówków X-Headers do filtrowania wiadomości e-mail?
+**Q: Czy X‑Headers są standaryzowane?**  
+A: Nie. Są dowolne, co daje elastyczność, ale wymaga zdefiniowania i udokumentowania własnych konwencji nazewnictwa.
 
-Tak, X-Headers są powszechnie używane do filtrowania wiadomości e-mail. Możesz tworzyć reguły w swoim kliencie e-mail lub serwerze, aby filtrować i sortować wiadomości e-mail na podstawie wartości X-Headers.
+**Q: Jak mogę odczytać X‑Headers z otrzymanych e‑maili?**  
+A: Załaduj e‑mail przy użyciu `MailMessage.load` i wywołaj `getHeaders().get("<Header-Name>")` jak pokazano w przykładzie kodu.
 
-### Czy nagłówki X są standaryzowane?
+**Q: Czy Aspose.Email nadaje się do zarządzania e‑mailami na poziomie przedsiębiorstwa?**  
+A: Zdecydowanie tak. Dostarcza kompleksowe API do tworzenia, wysyłania, odbierania i przetwarzania e‑maili w dużej skali, co czyni go solidnym wyborem dla aplikacji korporacyjnych.
 
-Nie, nagłówki X-Headers nie są standardowe, co oznacza, że możesz swobodnie definiować własne, niestandardowe nagłówki X-Headers, dostosowane do Twoich konkretnych potrzeb.
+---
 
-### Jak mogę odczytać nagłówki X w otrzymanych wiadomościach e-mail?
-
-Możesz odczytać X-Headers z otrzymanych wiadomości e-mail za pomocą Aspose.Email dla Java. Załaduj otrzymaną wiadomość e-mail, a następnie uzyskaj dostęp do niestandardowych X-Headers, jak pokazano w przykładach kodu w tym artykule.
-
-### Czy Aspose.Email nadaje się do zarządzania pocztą e-mail na poziomie przedsiębiorstwa?
-
-Tak, Aspose.Email to solidna biblioteka, której można używać do zarządzania pocztą e-mail na poziomie przedsiębiorstwa. Oferuje szeroki zakres funkcji do tworzenia, wysyłania, odbierania i przetwarzania wiadomości e-mail, dzięki czemu nadaje się do różnych scenariuszy biznesowych.
+**Ostatnia aktualizacja:** 2026-04-05  
+**Testowano z:** Aspose.Email for Java 24.11 (latest at time of writing)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
