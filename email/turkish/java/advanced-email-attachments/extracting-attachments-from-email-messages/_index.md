@@ -1,11 +1,14 @@
 ---
-date: 2025-11-30
-description: Aspose.Email for Java ile e-posta eklerini nasıl çıkaracağınızı ve msg
-  dosyalarından ekleri nasıl çıkaracağınızı öğrenin. Bu Aspose e-posta öğreticisi
-  adım adım size rehberlik eder.
-linktitle: Extracting Attachments from Email Messages in Aspose.Email
+date: 2026-04-21
+description: Aspose.Email for Java ile msg dosyalarından ekleri nasıl çıkaracağınızı
+  ve bir klasöre kaydedeceğinizi öğrenin. Bu öğretici, adımları size adım adım gösterir.
+keywords:
+- extract attachments from msg
+- how to extract attachments
+- extract attachments to folder
+linktitle: Aspose.Email'de E-posta Mesajlarından Ekleri Çıkarma
 second_title: Aspose.Email Java Email Management API
-title: Aspose.Email for Java Kullanarak E-posta Mesajlarından Ekleri Nasıl Çıkarılır
+title: Aspose.Email for Java kullanarak msg dosyalarından ekleri nasıl çıkarılır
 url: /tr/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
@@ -16,49 +19,42 @@ weight: 13
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email for Java Kullanarak E-posta Mesajlarından E-posta Eklerini Nasıl Çıkarabilirsiniz
+# msg dosyalarından ekleri Aspose.Email for Java kullanarak nasıl çıkarılır
 
-E-posta eklerini çıkarmak, e-posta işleme otomasyonu yaptığınızda rutin bir ihtiyaçtır ve Aspose.Email for Java bunu zahmetsiz hale getirir. Bu **Aspose email tutorial** içinde bir MSG veya EML dosyasından **extract email attachments** yapmanız için bilmeniz gereken her şeyi adım adım anlatacağız. Kılavuzun sonunda, bir mesajdaki tüm ekleri alıp diske kaydeden, çalıştırmaya hazır bir Java programına sahip olacaksınız.
+**extract attachments from msg** dosyalarına ihtiyacınız olduğunda, Aspose.Email for Java görevi sorunsuz hâle getirir. Bu **Aspose email tutorial**'da bir MSG veya EML dosyasından **extract email attachments** nasıl yapılacağını adım adım size göstereceğiz. Kılavuzun sonunda, bir mesajdaki tüm ekleri alıp diske kaydeden, çalıştırmaya hazır bir Java programına sahip olacaksınız.
 
 ## Hızlı Yanıtlar
-- **Hangi kütüphaneye ihtiyacım var?** Aspose.Email for Java (resmi siteden indirin).  
-- **Hangi dosya formatları destekleniyor?** MSG, EML, MIME ve daha fazlası.  
-- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme test için çalışır; üretim için ticari lisans gere  
-- **Kaç satır kod?** Tüm ekleri çıkarmak için 20 satırdan az.  
-- **Bunu herhangi bir işletim sisteminde çalıştırabilir miyim?** Evet – Java çapraz platformdur, bu yüzden kod Windows, Linux ve macOS'ta çalışır.
+- **What library do I need?** Aspose.Email for Java (resmi siteden indirin).  
+- **Which file formats are supported?** MSG, EML, MIME ve daha fazlası.  
+- **Do I need a license for development?** Test için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **How many lines of code?** Tüm ekleri çıkarmak için 20 satırdan az.  
+- **Can I run this on any OS?** Evet – Java çapraz platformdur, bu yüzden kod Windows, Linux ve macOS'ta çalışır.
 
-## “E-posta eklerini çıkarmak” nedir?
-E-posta eklerini çıkarmak, bir e-posta dosyasını okuyup her bir ekli dosyayı (PDF, resim, belge vb.) bulmak ve bu dosyaları bilgisayarınızda ya da sunucunuzda bir klasöre yazmak anlamına gelir. Bu, arşivleme, veri madenciliği veya ekleri sonraki iş akışlarına besleme gibi senaryolar için faydalıdır.
+## “extract email attachments” nedir?
+E-posta eklerini çıkarmak, bir e-posta dosyasını okuyup, her bir ekli dosyayı (PDF, görüntü, belge vb.) bulmak ve bu dosyaları bilgisayarınızdaki veya sunucunuzdaki bir klasöre yazmak anlamına gelir. Bu, arşivleme, veri madenciliği veya ekleri sonraki iş akışlarına beslemek için faydalıdır.
 
-## Aspose.Email for Java ile e-posta eklerini çıkarmak neden tercih edilmeli?
-- **Tam format desteği** – Ek dönüştürücüler olmadan MSG, EML ve ham MIME'ı işler.  
-- **Harici bağımlılık yok** – Saf Java, yerel kütüphane gerektirmez.  
-- **Sağlam API** – `MailMessage` ve `Attachment` gibi güçlü tipli nesneler sağlar ve kodu basitleştirir.  
-- **Performansa odaklı** – Büyük mesajları hızlı yükler ve ekleri verimli iterasyonla işler.
+## E-posta eklerini çıkarmak için Aspose.Email for Java neden kullanılmalı?
+- **Full format support** – MSG, EML ve ham MIME'i ekstra dönüştürücüler olmadan işler.  
+- **No external dependencies** – Saf Java, yerel kütüphaneler gerekmez.  
+- **Robust API** – `MailMessage` ve `Attachment` gibi güçlü tipli nesneler sunar, kodu basitleştirir.  
+- **Performance‑oriented** – Büyük mesajları hızlıca yükler ve ekleri verimli bir şekilde iterasyon yapar.
 
-## Aspose.Email for Java'ya Giriş
+## msg dosyalarından ekleri nasıl çıkarılır
+Aşağıda, proje kurulumundan her ekin diske kaydedilmesine kadar her şeyi kapsayan özlü, adım adım bir rehber bulacaksınız.
 
-Aspose.Email for Java, geliştiricilerin e-posta mesajları ve ekleriyle sorunsuz çalışmasını sağlayan güçlü bir Java kütüphanesidir. **msg** dosyalarından ekleri **extract attachments** yapma yeteneği dahil olmak üzere geniş bir e-posta işleme özellikleri yelpazesi sunar. Bu adım‑adım rehberde, Aspose.Email for Java’yı kullanarak e-posta mesajlarından ekleri nasıl kolayca çıkaracağınızı keşfedeceğiz.
+### Önkoşullar
+1. **Java Development Environment** – JDK 8 veya üzeri yüklü.  
+2. **Aspose.Email for Java** – Kütüphaneyi [here](https://releases.aspose.com/email/java/) adresinden indirin ve projenize ekleyin.  
+3. **Email Message** – Bir veya daha fazla ek içeren bir MSG veya EML dosyası.
 
-## Önkoşullar
+### Adım 1: Java Projesi Oluşturun
+Yeni bir Maven, Gradle veya basit IDE projesi başlatın. Standart bir Java proje düzeninin ötesinde özel bir yapılandırma gerekmez.
 
-Kodlamaya başlamadan önce her şeyin doğru kurulduğundan emin olalım:
+### Adım 2: Aspose.Email Kütüphanesini Ekleyin
+İndirilen JAR dosyasını projenizin sınıf yoluna (classpath) koyun. Maven kullanıyorsanız, resmi belgelerde gösterildiği gibi bağımlılığı ekleyin (aynı JAR yukarıdaki bağlantı tarafından referans edilir).
 
-1. **Java Geliştirme Ortamı** – Sisteminizde Java yüklü olduğundan emin olun (JDK 8 veya üzeri).  
-2. **Aspose.Email for Java** – Kütüphaneyi [buradan](https://releases.aspose.com/email/java/) indirin ve projenize ekleyin.  
-3. **E-posta Mesajı** – Üzerinde çalışmak için ekli bir e-posta mesajınız olmalı. Kendi e-postanızı kullanabilir ya da test için örnek bir e-posta oluşturabilirsiniz.
-
-## Adım 1: Java Projesi Oluşturun
-
-İlk olarak, sevdiğiniz Entegre Geliştirme Ortamı (IDE) içinde yeni bir Java projesi oluşturun. Bu basit bir Maven, Gradle projesi ya da düz bir IDE projesi olabilir.
-
-## Adım 2: Aspose.Email Kütüphanesini Ekleyin
-
-Daha önce indirdiğiniz JAR dosyasını projenize ekleyerek Aspose.Email kütüphanesini projeye dahil edin. Maven kullanıyorsanız, resmi dokümantasyonda gösterildiği gibi bağımlılığı ekleyin.
-
-## Adım 3: Ekleri Çıkarın
-
-Şimdi **extract email attachments** yapan Java kodunu yazacağız. Aşağıdaki snippet, mesajı yüklemeden ekleri diske kaydetmeye kadar tam süreci gösterir.
+### Adım 3: Çıkarma Kodunu Yazın
+Aşağıdaki kod parçacığı, mesajı yüklemeden her ekin diske kaydedilmesine kadar tam süreci gösterir.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -78,45 +74,43 @@ public class ExtractAttachments {
 }
 ```
 
-Bu kodda bir e-posta mesajını yüklüyor, eklerini döngüyle geziyor ve her bir ek'i belirtilen konuma kaydediyoruz. `"path/to/your/email.msg"` ifadesini gerçek e-posta dosyanızın yolu ile değiştirmeyi unutmayın.
+> **Pro tip:** `message.getAttachments().size()` kullanarak döngüye girmeden önce mesajın gerçekten ek içerip içermediğini doğrulayın.
 
-## Adım 4: Derleyin ve Çalıştırın
+### Adım 4: Derleyin ve Çalıştırın
+Programı IDE'nizden veya komut satırından çalıştırın. Her şey doğru şekilde ayarlandıysa, ekler belirttiğiniz klasörde görünecektir.
 
-Java programını derleyip çalıştırın. Her şey doğru kurulduysa, eklerin belirtilen klasöre çıkarıldığını göreceksiniz.
-
-## Yaygın Sorunlar & Sorun Giderme
+## Yaygın Sorunlar ve Çözüm Yolları
 
 | Sorun | Sebep | Çözüm |
 |-------|--------|----------|
-| **Ekler kaydedilmiyor** | Yanlış dosya yolu veya mesajın ekleri yok | Döngüden önce mesaj yolunu doğrulayın ve `message.getAttachments().size()` değerini kontrol edin. |
-| **Kaydetme sırasında erişim reddedildi** | Hedef klasör izinleri | Java sürecinin yazma izni olduğu bir klasör seçin veya programı yükseltilmiş ayrıcalıklarla çalıştırın. |
-| **Desteklenmeyen dosya formatı** | Eski bir Aspose.Email sürümü kullanılıyor | En son Aspose.Email for Java sürümüne güncelleyin. |
+| **No attachments are saved** | Yanlış dosya yolu veya mesajın ekleri yok | Mesaj yolunu doğrulayın ve döngüye girmeden önce `message.getAttachments().size()`'i kontrol edin. |
+| **Access denied when saving** | Hedef klasör izinleri | Java sürecinin yazma izni olduğu bir klasör seçin veya programı yükseltilmiş ayrıcalıklarla çalıştırın. |
+| **Unsupported file format** | Eski bir Aspose.Email sürümü kullanmak | En son Aspose.Email for Java sürümüne güncelleyin. |
 
 ## Sıkça Sorulan Sorular
 
-**S: Aspose.Email for Java’yı nasıl indirebilirim?**  
-C: Aspose.Email for Java’yı [buradan](https://releases.aspose.com/email/java/) web sitesinden indirebilirsiniz.
+**Q: Aspose.Email for Java'ı nasıl indirebilirim?**  
+A: Aspose.Email for Java'ı web sitesinden [here](https://releases.aspose.com/email/java/) adresinden indirebilirsiniz.
 
-**S: Aspose.Email for Java’yı ticari projelerimde kullanabilir miyim?**  
-C: Evet, Aspose.Email for Java hem kişisel hem de ticari projelerde kullanılabilir. Daha fazla bilgi için web sitesindeki lisans detaylarına bakın.
+**Q: Aspose.Email for Java'ı ticari projelerimde kullanabilir miyim?**  
+A: Evet, Aspose.Email for Java hem kişisel hem de ticari projelerde kullanılabilir. Daha fazla bilgi için web sitesindeki lisans detaylarını kontrol edin.
 
-**S: Aspose.Email for Java için dokümantasyon mevcut mu?**  
-C: Elbette! Aspose.Email for Java dokümantasyonuna [buradan](https://reference.aspose.com/email/java/) ulaşabilirsiniz.
+**Q: Aspose.Email for Java için herhangi bir dokümantasyon mevcut mu?**  
+A: Elbette! Aspose.Email for Java dokümantasyonunu [here](https://reference.aspose.com/email/java/) adresinde bulabilirsiniz.
 
-**S: Aspose.Email for Java hangi e-posta formatlarını destekliyor?**  
-C: Aspose.Email for Java, MSG, EML ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler. Desteklenen formatların tam listesi için dokümantasyona bakın.
+**Q: Aspose.Email for Java hangi e-posta formatlarını destekliyor?**  
+A: Aspose.Email for Java, MSG, EML ve daha fazlası dahil olmak üzere çeşitli e-posta formatlarını destekler. Desteklenen formatların tam listesi için dokümantasyona bakın.
 
-**S: Aspose.Email for Java için destek nereden alınabilir?**  
-C: Her türlü teknik yardım veya sorular için Aspose’un destek kanalları üzerinden destek ekibiyle iletişime geçebilirsiniz.
+**Q: Aspose.Email for Java için destek nereden alınabilir?**  
+A: Herhangi bir teknik yardım veya soru için Aspose'un destek kanalları aracılığıyla destek ekibiyle iletişime geçebilirsiniz.
 
 ## Sonuç
-
-E-posta eklerini çıkarmak, e-posta‑işleme uygulamalarında yaygın bir görevdir ve Aspose.Email for Java ile bunu sadece birkaç satır kodla halledebilirsiniz. **extract attachments from msg** dosyalarından binlerce mesajda toplu çıkarım otomasyonuna kadar, kütüphane güvenilir, çapraz‑platform bir çözüm sunar. Bu snippet’i mevcut Java projelerinize entegre edin ve ekleri bugün yönetmeye başlayın.
+E-posta eklerini çıkarmak, e-posta işleme uygulamalarında yaygın bir görevdir ve Aspose.Email for Java ile bunu sadece birkaç satır kodla yapabilirsiniz. **extract attachments from msg** dosyalarından ek çıkarmak ya da binlerce mesajda toplu çıkarımı otomatikleştirmek ister misiniz, kütüphane güvenilir, çapraz platform bir çözüm sunar. Bu kod parçacığını mevcut Java projelerinize entegre edin ve ekleri bugün yönetmeye başlayın.
 
 ---
 
-**Son Güncelleme:** 2025-11-30  
-**Test Edilen Versiyon:** Aspose.Email for Java 24.11 (yazım anındaki en yeni sürüm)  
+**Son Güncelleme:** 2026-04-21  
+**Test Edildiği Versiyon:** Aspose.Email for Java 24.11 (yazım zamanındaki en son sürüm)  
 **Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

@@ -1,12 +1,16 @@
 ---
-date: 2025-11-30
-description: Tanulja meg, hogyan lehet e‑mail mellékleteket kinyerni, és hogyan lehet
-  mellékleteket kinyerni msg fájlokból az Aspose.Email for Java segítségével. Ez az
-  Aspose e‑mail oktatóanyag végigvezeti a lépéseken.
-linktitle: Extracting Attachments from Email Messages in Aspose.Email
+date: 2026-04-21
+description: Ismerje meg, hogyan lehet kinyerni a csatolmányokat msg fájlokból, és
+  menteni őket egy mappába az Aspose.Email for Java segítségével. Ez az útmutató végigvezeti
+  Önt a lépéseken.
+keywords:
+- extract attachments from msg
+- how to extract attachments
+- extract attachments to folder
+linktitle: Mellékletek kinyerése e‑mail üzenetekből az Aspose.Email‑ben
 second_title: Aspose.Email Java Email Management API
-title: Hogyan lehet e‑mail mellékleteket kinyerni e‑mail üzenetekből az Aspose.Email
-  for Java használatával
+title: Hogyan lehet kinyerni a csatolmányokat msg fájlokból az Aspose.Email for Java
+  használatával
 url: /hu/java/advanced-email-attachments/extracting-attachments-from-email-messages/
 weight: 13
 ---
@@ -17,49 +21,42 @@ weight: 13
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan vonjunk ki e‑mail mellékleteket e‑mail üzenetekből az Aspose.Email for Java segítségével
+# Hogyan vonjunk ki mellékleteket msg fájlokból az Aspose.Email for Java segítségével
 
-Az e‑mail mellékletek kinyerése gyakori igény, amikor automatizálja az e‑mail feldolgozást, és az Aspose.Email for Java ezt könnyedén megoldja. Ebben a **Aspose email tutorial**‑ban végigvezetjük Önt minden szükséges lépésen, hogy **e‑mail mellékleteket** vonjon ki egy MSG vagy EML fájlból, lépésről lépésre. A útmutató végére egy kész‑Java programja lesz, amely minden mellékletet kinyer a üzenetből és lemezre ment.
+Amikor **msg fájlokból való mellékletek kinyerése** szükséges, az Aspose.Email for Java gond nélkül megoldja a feladatot. Ebben a **Aspose e‑mail bemutató**‑ban végigvezetünk minden fontos lépésen, hogy **e‑mail mellékletek kinyerése** egy MSG vagy EML fájlból lépésről lépésre megtörténjen. A útmutató végére egy kész, futtatható Java programot kap, amely minden mellékletet kinyer egy üzenetből, és lemezre ment.
 
 ## Gyors válaszok
-- **Milyen könyvtárra van szükségem?** Aspose.Email for Java (download from the official site).  
-- **Mely fájlformátumok támogatottak?** MSG, EML, MIME, és továbbiak.  
-- **Szükségem van licencre fejlesztéshez?** A ingyenes próba a teszteléshez működik; a termeléshez kereskedelmi licenc szükséges.  
+- **Milyen könyvtárra van szükségem?** Aspose.Email for Java (letölthető a hivatalos weboldalról).  
+- **Mely fájlformátumok támogatottak?** MSG, EML, MIME, és egyebek.  
+- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba a teszteléshez megfelelő; a termeléshez kereskedelmi licenc szükséges.  
 - **Hány sor kódra van szükség?** Kevesebb, mint 20 sor a mellékletek kinyeréséhez.  
 - **Futtatható ez bármely operációs rendszeren?** Igen – a Java platformfüggetlen, így a kód Windows, Linux és macOS rendszereken is működik.
 
 ## Mi az a „e‑mail mellékletek kinyerése”?
-Az e‑mail mellékletek kinyerése azt jelenti, hogy egy e‑mail fájlt beolvasunk, megtaláljuk az egyes csatolt fájlokat (PDF, kép, dokumentum stb.), és ezeket a fájlokat egy mappába a számítógépén vagy szerverén írjuk. Ez hasznos archiváláshoz, adatbányászathoz vagy a mellékletek downstream munkafolyamatokba való beillesztéséhez.
+Az e‑mail mellékletek kinyerése azt jelenti, hogy egy e‑mail fájlt beolvasunk, megtaláljuk az egyes csatolt fájlokat (PDF, kép, dokumentum stb.), és ezeket a fájlokat egy mappába a számítógépen vagy a szerveren írjuk. Ez hasznos archiválás, adatbányászat vagy a mellékletek további munkafolyamatokba való beviteléhez.
 
-## Miért használja az Aspose.Email for Java‑t e‑mail mellékletek kinyeréséhez?
+## Miért használjuk az Aspose.Email for Java‑t e‑mail mellékletek kinyerésére?
 - **Teljes formátumtámogatás** – Kezeli a MSG, EML és a nyers MIME formátumokat extra konverterek nélkül.  
-- **Nincs külső függőség** – Tiszta Java, natív könyvtárak nem szükségesek.  
+- **Nincs külső függőség** – Tiszta Java, nincs szükség natív könyvtárakra.  
 - **Robusztus API** – Erősen típusos objektumokat biztosít, mint a `MailMessage` és `Attachment`, amelyek egyszerűsítik a kódot.  
-- **Teljesítmény‑orientált** – Gyorsan betölti a nagy üzeneteket és hatékonyan iterál a mellékleteken.
+- **Teljesítmény‑orientált** – Gyorsan betölti a nagy üzeneteket és hatékonyan iterálja a mellékleteket.
 
-## Bevezetés az Aspose.Email for Java-ba
+## Hogyan vonjunk ki mellékleteket msg fájlokból
+Az alábbiakban egy tömör, lépésről‑lépésre útmutatót talál, amely a projekt beállításától a mellékletek lemezre mentéséig mindent lefed.
 
-Az Aspose.Email for Java egy erőteljes Java könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak e‑mail üzenetekkel és mellékletekkel. Széles körű funkciókat kínál az e‑mail feldolgozáshoz, beleértve a **extract attachments from msg** fájlok kinyerésének lehetőségét. Ebben a lépésről‑lépésre útmutatóban megvizsgáljuk, hogyan használhatja az Aspose.Email for Java‑t e‑mail mellékletek könnyű kinyeréséhez.
+### Előfeltételek
+1. **Java fejlesztői környezet** – JDK 8 vagy újabb telepítve.  
+2. **Aspose.Email for Java** – Töltse le a könyvtárat [innen](https://releases.aspose.com/email/java/) és adja hozzá a projektjéhez.  
+3. **E‑mail üzenet** – Egy MSG vagy EML fájl, amely egy vagy több mellékletet tartalmaz.
 
-## Előfeltételek
+### 1. lépés: Java projekt létrehozása
+Indítson egy új Maven, Gradle vagy egyszerű IDE projektet. Nincs szükség különleges konfigurációra a szokásos Java projekt felépítésén kívül.
 
-Mielőtt a kódba merülnénk, győződjünk meg róla, hogy minden megfelelően be van állítva:
+### 2. lépés: Aspose.Email könyvtár hozzáadása
+Helyezze a letöltött JAR‑t a projekt osztályútvonalába. Ha Maven‑t használ, adja hozzá a függőséget a hivatalos dokumentációban bemutatott módon (a fenti hivatkozás ugyanarra a JAR‑ra mutat).
 
-1. **Java fejlesztői környezet** – Győződjön meg róla, hogy a Java telepítve van a rendszerén (JDK 8 vagy újabb).  
-2. **Aspose.Email for Java** – Töltse le a könyvtárat [ide](https://releases.aspose.com/email/java/) és adja hozzá a projektjéhez.  
-3. **E‑mail üzenet** – Rendelkeznie kell egy mellékletekkel rendelkező e‑mail üzenettel a munkához. Használhatja saját e‑mailjét, vagy készíthet egy mint e‑mailt a teszteléshez.
-
-## 1. lépés: Java projekt létrehozása
-
-Először hozzunk létre egy új Java projektet a kedvenc integrált fejlesztőkörnyezetében (IDE). Ez lehet egy egyszerű Maven vagy Gradle projekt, vagy egy egyszerű IDE projekt.
-
-## 2. lépés: Aspose.Email könyvtár hozzáadása
-
-Adja hozzá az Aspose.Email könyvtárat a projekthez a korábban letöltött JAR fájl beillesztésével. Ha Maven‑t használ, adja hozzá a függőséget a hivatalos dokumentációban bemutatott módon.
-
-## 3. lépés: Mellékletek kinyerése
-
-Most megírjuk a Java kódot, amely ténylegesen **e‑mail mellékleteket nyer ki**. Az alábbi kódrészlet bemutatja a teljes folyamatot – az üzenet betöltésétől a mellékletek lemezre mentéséig.
+### 3. lépés: Kinyerő kód megírása
+Az alábbi kódrészlet bemutatja a teljes folyamatot – a üzenet betöltésétől a mellékletek lemezre mentéséig.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -79,46 +76,44 @@ public class ExtractAttachments {
 }
 ```
 
-Ebben a kódban betöltünk egy e‑mail üzenetet, végigiterálunk a mellékleteken, és minden mellékletet egy megadott helyre mentünk. Ne felejtse el a `"path/to/your/email.msg"`‑t a saját e‑mail üzenete tényleges útvonalára cserélni.
+> **Pro tip:** Használja a `message.getAttachments().size()`‑t, hogy ellenőrizze, az üzenet valóban tartalmaz‑e mellékleteket a ciklusba lépés előtt.
 
-## 4. lépés: Fordítás és futtatás
-
-Fordítsa le és futtassa a Java programot. Ha minden megfelelően be van állítva, a mellékletek a megadott mappába lesznek kinyerve.
+### 4. lépés: Fordítás és futtatás
+Futtassa a programot az IDE‑ből vagy a parancssorból. Ha minden megfelelően van beállítva, a mellékletek megjelennek a megadott mappában.
 
 ## Gyakori problémák és hibaelhárítás
 
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| **Nincsenek mentett mellékletek** | Helytelen fájlútvonal vagy az üzenetnek nincs melléklete | Ellenőrizze az üzenet útvonalát, és a ciklus előtt vizsgálja meg a `message.getAttachments().size()` értéket. |
-| **Hozzáférés megtagadva mentéskor** | Célmappa jogosultságai | Válasszon egy olyan mappát, ahol a Java folyamatnak írási joga van, vagy futtassa a programot emelt jogosultságokkal. |
+| **Nincsenek mentett mellékletek** | Helytelen fájlútvonal vagy az üzenetnek nincs melléklete | Ellenőrizze az üzenet útvonalát, és a ciklus előtt vizsgálja meg a `message.getAttachments().size()` értékét. |
+| **Mentés közben hozzáférés megtagadva** | A célmappa jogosultságai | Válasszon egy mappát, ahol a Java folyamat írási jogosultsággal rendelkezik, vagy futtassa a programot emelt jogosultságokkal. |
 | **Nem támogatott fájlformátum** | Régebbi Aspose.Email verzió használata | Frissítsen a legújabb Aspose.Email for Java kiadásra. |
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
 **Q: Hogyan tölthetem le az Aspose.Email for Java‑t?**  
-A: Letöltheti az Aspose.Email for Java‑t a weboldalról [ide](https://releases.aspose.com/email/java/).
+A: Letöltheti az Aspose.Email for Java‑t a weboldalról a [itt](https://releases.aspose.com/email/java/) található hivatkozásból.
 
 **Q: Használhatom az Aspose.Email for Java‑t kereskedelmi projektjeimben?**  
-A: Igen, az Aspose.Email for Java személyes és kereskedelmi projektekben egyaránt használható. A licenc részleteket a weboldalon találja.
+A: Igen, az Aspose.Email for Java személyes és kereskedelmi projektekben egyaránt használható. A licencelési részleteket a weboldalon tekintheti meg.
 
 **Q: Van elérhető dokumentáció az Aspose.Email for Java‑hoz?**  
-A: Természetesen! A dokumentációt megtalálja az Aspose.Email for Java‑hoz [itt](https://reference.aspose.com/email/java/).
+A: Természetesen! A dokumentációt megtalálja [itt](https://reference.aspose.com/email/java/).
 
 **Q: Milyen e‑mail formátumokat támogat az Aspose.Email for Java?**  
-A: Az Aspose.Email for Java különféle e‑mail formátumokat támogat, beleértve a MSG, EML és egyebeket. A teljes támogatott formátumlistáért tekintse meg a dokumentációt.
+A: Az Aspose.Email for Java számos e‑mail formátumot támogat, többek között a MSG‑t, EML‑t és egyebeket. A teljes támogatott formátumlistáért tekintse meg a dokumentációt.
 
 **Q: Hol kaphatok támogatást az Aspose.Email for Java‑hoz?**  
-A: Bármilyen technikai segítségért vagy kérdésért felveheti a kapcsolatot az Aspose támogatási csapatával a támogatási csatornáikon keresztül.
+A: Bármilyen technikai segítség vagy kérdés esetén forduljon az Aspose támogatási csapatához a támogatási csatornáikon keresztül.
 
 ## Következtetés
-
-Az e‑mail mellékletek kinyerése gyakori feladat az e‑mail feldolgozó alkalmazásokban, és az Aspose.Email for Java‑val mindössze néhány kódsorral megoldható. Akár **extract attachments from msg** fájlok kinyerésére van szüksége, akár több ezer üzenet tömeges kinyerését szeretné automatizálni, a könyvtár megbízható, platformfüggetlen megoldást nyújt. Integrálja ezt a kódrészletet meglévő Java projektjeibe, és kezdje el a mellékletek kezelését még ma.
+Az e‑mail mellékletek kinyerése gyakori feladat az e‑mail feldolgozó alkalmazásokban, és az Aspose.Email for Java‑val csak néhány sor kóddal megoldható. Akár **msg fájlokból való mellékletek kinyerésére**, akár több ezer üzenet tömeges kinyerésére van szükség, a könyvtár megbízható, platform‑független megoldást nyújt. Integrálja ezt a kódrészletet meglévő Java projektjeibe, és kezdje el még ma a mellékletek kezelését.
 
 ---
 
-**Last Updated:** 2025-11-30  
-**Tested With:** Aspose.Email for Java 24.11 (latest at time of writing)  
-**Author:** Aspose  
+**Legutóbb frissítve:** 2026-04-21  
+**Tesztelve ezzel:** Aspose.Email for Java 24.11 (legújabb a kiadás időpontjában)  
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
