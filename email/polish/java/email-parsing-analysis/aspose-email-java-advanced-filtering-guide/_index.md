@@ -1,9 +1,16 @@
 ---
-"date": "2025-05-29"
-"description": "Poznaj zaawansowane filtrowanie wiadomości e-mail za pomocą Aspose.Email for Java. Uprość swoją skrzynkę odbiorczą, filtrując wiadomości e-mail na podstawie tematu, daty, nadawcy, domeny i innych."
-"title": "Poznaj zaawansowane techniki filtrowania wiadomości e-mail za pomocą Aspose.Email dla Java"
-"url": "/pl/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/"
-"weight": 1
+date: '2026-04-11'
+description: Dowiedz się, jak filtrować e‑maile według tematu, daty, nadawcy i domeny
+  przy użyciu Aspose.Email dla Javy. Usprawnij zarządzanie skrzynką odbiorczą dzięki
+  zaawansowanemu filtrowaniu.
+keywords:
+- filter emails by subject
+- filter emails by date
+- filter emails by sender
+- filter emails by domain
+title: Filtrowanie e‑maili według tematu przy użyciu Aspose.Email dla Javy
+url: /pl/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,31 +18,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Poznaj zaawansowane techniki filtrowania wiadomości e-mail za pomocą Aspose.Email dla Java
+# Filtruj e‑maile według tematu przy użyciu Aspose.Email dla Javy
 
-## Wstęp
+## Wprowadzenie
 
-Zarządzanie zagraconą skrzynką odbiorczą jest wyzwaniem w dzisiejszym cyfrowym świecie. Niezależnie od tego, czy przeszukujesz setki wiadomości e-mail dziennie, czy chcesz zoptymalizować proces zarządzania wiadomościami e-mail, zaawansowane rozwiązania filtrowania są kluczowe. Dzięki Aspose.Email for Java programiści mogą sprawnie filtrować i zarządzać wiadomościami e-mail z łatwością. Ten przewodnik przeprowadzi Cię przez implementację różnych funkcji filtrowania wiadomości e-mail przy użyciu Aspose.Email for Java.
+Zarządzanie zagraconym skrzynką odbiorczą jest wyzwaniem w dzisiejszym cyfrowym świecie. Niezależnie od tego, czy przeglądasz setki e‑maili dziennie, czy dążysz do optymalizacji procesu zarządzania pocztą, zaawansowane rozwiązania filtrujące są niezbędne. **W tym samouczku nauczysz się, jak filtrować e‑maile według tematu**, a także innych potężnych kryteriów, takich jak data, nadawca i domena, przy użyciu Aspose.Email dla Javy. Dzięki Aspose.Email dla Javy programiści mogą efektywnie filtrować i zarządzać e‑mailami z łatwością. Ten przewodnik poprowadzi Cię przez implementację różnych funkcji filtrowania e‑maili przy użyciu Aspose.Email dla Javy.
 
-**Czego się nauczysz:**
-- Konfigurowanie Aspose.Email dla Java
+**Co się nauczysz:**
+- Konfiguracja Aspose.Email dla Javy
 - Filtrowanie wiadomości według tematu, daty, nadawcy, domeny i odbiorcy
-- Łączenie zapytań z logicznymi operacjami AND/OR
-- Zrozumienie rozróżniania wielkości liter w filtrach poczty e-mail
+- Łączenie zapytań przy użyciu operacji logicznych AND/OR
+- Zrozumienie wrażliwości na wielkość liter w filtrach e‑maili
 
-Pod koniec tego przewodnika będziesz w stanie dostosować logikę przetwarzania wiadomości e-mail do konkretnych potrzeb. Zacznijmy od wymagań wstępnych.
+Po zakończeniu tego przewodnika będziesz wyposażony w możliwość dostosowania logiki przetwarzania e‑maili do konkretnych potrzeb. Zacznijmy od wymagań wstępnych.
+
+## Szybkie odpowiedzi
+- **Jaka jest główna klasa do zapytań o skrzynki Exchange?** `MailQueryBuilder` pozwala budować elastyczne wyrażenia filtrów.  
+- **Czy mogę filtrować e‑maile zarówno według tematu, jak i daty w jednym zapytaniu?** Tak — łańcuchuj warunki na tym samym `MailQueryBuilder`.  
+- **Jak filtrować wiadomości, które dotarły dzisiaj?** Użyj `builder.getInternalDate().on(new Date())`.  
+- **Czy obsługiwane jest filtrowanie rozróżniające wielkość liter?** Przekaż `true` jako drugi argument do `contains`.  
+- **Czy potrzebna jest licencja do użytku produkcyjnego?** Ważna licencja Aspose.Email odblokowuje wszystkie funkcje bez ograniczeń.
 
 ## Wymagania wstępne
 
-Przed wdrożeniem zaawansowanego filtrowania wiadomości e-mail za pomocą Aspose.Email for Java upewnij się, że posiadasz:
+Przed implementacją zaawansowanego filtrowania e‑maili przy użyciu Aspose.Email dla Javy, upewnij się, że masz:
 
-- **Wymagane biblioteki:** Aspose.Email dla Java w wersji 25.4
-- **Konfiguracja środowiska:** Wymagany jest Java Development Kit (JDK) w wersji co najmniej 16.
-- **Wymagania wstępne dotyczące wiedzy:** Podstawowa znajomość programowania w języku Java i protokołów poczty elektronicznej.
+- **Wymagane biblioteki:** Aspose.Email dla Javy wersja 25.4
+- **Konfiguracja środowiska:** Wymagany Java Development Kit (JDK) w wersji co najmniej 16.
+- **Wymagania wiedzy:** Podstawowa znajomość programowania w Javie oraz znajomość protokołów e‑mail.
 
-## Konfigurowanie Aspose.Email dla Java
+## Konfiguracja Aspose.Email dla Javy
 
-Na początek uwzględnij bibliotekę Aspose.Email w swoim projekcie. Jeśli używasz Mavena, dodaj następującą zależność:
+Na początek dołącz bibliotekę Aspose.Email do swojego projektu. Jeśli używasz Maven, dodaj następującą zależność:
 
 ```xml
 <dependency>
@@ -46,175 +60,180 @@ Na początek uwzględnij bibliotekę Aspose.Email w swoim projekcie. Jeśli uży
 </dependency>
 ```
 
-### Nabycie licencji
+### Uzyskanie licencji
 
-Aby w pełni wykorzystać Aspose.Email, potrzebujesz licencji. Możesz zacząć od bezpłatnej wersji próbnej lub poprosić o tymczasową licencję do celów ewaluacyjnych. Do użytku produkcyjnego rozważ zakup licencji, aby odblokować pełne funkcje.
+Aby w pełni wykorzystać Aspose.Email, potrzebna jest licencja. Możesz rozpocząć od bezpłatnej wersji próbnej lub poprosić o tymczasową licencję do celów oceny. Do użytku produkcyjnego rozważ zakup licencji, aby odblokować wszystkie funkcje.
 
 ### Podstawowa inicjalizacja i konfiguracja
 
-Zainicjuj swój `ExchangeClient` z wymaganymi uprawnieniami:
+Zainicjalizuj swój `ExchangeClient` przy użyciu niezbędnych danych uwierzytelniających:
 
 ```java
 ExchangeClient client = new ExchangeClient("YOUR_DOCUMENT_DIRECTORY", "username", "password", "domain");
 ```
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-W tej sekcji każda funkcja jest rozbijana na łatwe do wykonania kroki, co pozwala na wdrożenie złożonych funkcjonalności filtrowania wiadomości e-mail.
+Ta sekcja rozkłada każdą funkcję na przystępne kroki, umożliwiając implementację złożonych funkcji filtrowania e‑maili.
 
-### Filtruj wiadomości według tematu i daty
+### Filtrowanie wiadomości według tematu i daty
 
-**Przegląd:** Ta funkcjonalność filtruje wiadomości e-mail w skrzynce pocztowej Exchange na podstawie określonych słów kluczowych tematu i wewnętrznych dat.
+**Przegląd:** Ta funkcja filtruje e‑maile w skrzynce Exchange na podstawie konkretnych słów kluczowych w temacie oraz dat wewnętrznych.
 
-#### Wdrażanie krok po kroku:
-1. **Zainicjuj Kreatora zapytań:**
-   ```java
+#### Implementacja krok po kroku:
+1. **Zainicjalizuj Query Builder:** ```java
    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
    ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
    builder.getSubject().contains("Newsletter");
    ```
-2. **Ustaw filtr daty:**
-   ```java
+2. **Ustaw filtr daty:** ```java
    try {
        builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
    } catch (ParseException e) {
-       e.printStackTrace(); // Obsługuj błędy analizy składniowej w sposób elegancki
+       e.printStackTrace(); // Handle parsing errors gracefully
    }
    ```
-3. **Wykonaj zapytanie:**
-   ```java
+3. **Wykonaj zapytanie:** ```java
    MailQuery query = builder.getQuery();
    ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
    ```
 
-### Filtruj wiadomości na podstawie dzisiejszej daty
+### Filtrowanie wiadomości na podstawie dzisiejszej daty
 
-**Przegląd:** Pobierz wiadomości e-mail, które otrzymaliśmy dzisiaj.
+**Przegląd:** Pobierz e‑maile, które dotarły dzisiaj.
 
-#### Realizacja:
-1. **Zbuduj zapytanie:**
-   ```java
+#### Implementacja:
+1. **Zbuduj zapytanie:** ```java
    MailQueryBuilder builderToday = new MailQueryBuilder();
    builderToday.getInternalDate().on(new Date());
    ```
-2. **Lista wiadomości:**
-   Wykonaj zapytanie za pomocą `client.listMessages()` podobnie jak w poprzednich przykładach, zastępując konkretną datę datą dzisiejszą.
+2. **Wylistuj wiadomości:**  
+   Wykonaj zapytanie przy użyciu `client.listMessages()` podobnie jak w poprzednich przykładach, zastępując konkretną datę dzisiejszą.
 
-### Filtruj wiadomości w określonym przedziale dat
+### Filtrowanie wiadomości w określonym przedziale dat
 
-**Przegląd:** Filtruj wiadomości e-mail otrzymane przed dniem dzisiejszym i od dnia poprzedniego.
+**Przegląd:** Filtruj e‑maile otrzymane przed dzisiaj i od jednego dnia temu.
 
-#### Realizacja:
-1. **Konfiguruj zakres dat:**
-   ```java
+#### Implementacja:
+1. **Skonfiguruj przedział dat:** ```java
    MailQueryBuilder builderDateRange = new MailQueryBuilder();
    builderDateRange.getInternalDate().beforeOrEqual(new Date());
    builderDateRange.getInternalDate().since(new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(1)));
    ```
 
-### Filtruj wiadomości na podstawie konkretnego nadawcy
+### Filtrowanie wiadomości na podstawie konkretnego nadawcy
 
-**Przegląd:** Pobieranie wiadomości e-mail od określonego nadawcy.
+**Przegląd:** Pobierz e‑maile od określonego nadawcy.
 
-#### Realizacja:
-1. **Konfiguracja zapytania:**
-   ```java
+#### Implementacja:
+1. **Ustaw zapytanie:** ```java
    MailQueryBuilder builderSender = new MailQueryBuilder();
    builderSender.getFrom().contains("saqib.razzaq@127.0.0.1");
    ```
 
-### Filtruj wiadomości na podstawie określonej domeny
+### Filtrowanie wiadomości na podstawie konkretnej domeny
 
-**Przegląd:** Pobieranie wiadomości e-mail z określonej domeny.
+**Przegląd:** Pobierz e‑maile z określonej domeny.
 
-#### Realizacja:
-1. **Filtrowanie oparte na domenach:**
-   ```java
+#### Implementacja:
+1. **Filtrowanie oparte na domenie:** ```java
    MailQueryBuilder builderDomain = new MailQueryBuilder();
    builderDomain.getFrom().contains("SpecificHost.com");
    ```
 
-### Filtruj wiadomości wysyłane do określonego odbiorcy
+### Filtrowanie wiadomości wysyłanych do konkretnego odbiorcy
 
-**Przegląd:** Pobierz wiadomości e-mail wysłane do określonego odbiorcy.
+**Przegląd:** Pobierz e‑maile wysłane do określonego odbiorcy.
 
-#### Realizacja:
-1. **Konfiguracja zapytania odbiorcy:**
-   ```java
+#### Implementacja:
+1. **Ustawienie zapytania odbiorcy:** ```java
    MailQueryBuilder builderRecipient = new MailQueryBuilder();
    builderRecipient.getTo().contains("recipient@example.com");
    ```
 
-### Łączenie zapytań za pomocą logiki AND
+### Łączenie zapytań przy użyciu logiki AND
 
 **Przegląd:** Użyj operacji logicznych AND, aby połączyć wiele warunków.
 
-#### Realizacja:
-1. **Konfiguracja warunków łączonych:**
-   ```java
+#### Implementacja:
+1. **Ustaw połączone warunki:** ```java
    MailQueryBuilder builderAnd = new MailQueryBuilder();
    builderAnd.getFrom().contains("SpecificHost.com");
    builderAnd.getInternalDate().before(new Date());
    builderAnd.getInternalDate().since(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(-7)));
    ```
 
-### Łączenie zapytań za pomocą logiki OR
+### Łączenie zapytań przy użyciu logiki OR
 
-**Przegląd:** Pobieraj wiadomości e-mail, stosując logiczne warunki LUB.
+**Przegląd:** Pobierz e‑maile przy użyciu warunków logicznych OR.
 
-#### Realizacja:
-1. **LUB Konfiguracja warunków:**
-   ```java
+#### Implementacja:
+1. **Ustawienie warunku OR:** ```java
    MailQueryBuilder builderOr = new MailQueryBuilder();
    builderOr.or(builderOr.getSubject().contains("test"), builderOr.getFrom().contains("noreply@host.com"));
    ```
 
-### Filtruj wiadomości na podstawie wielkości liter
+### Filtrowanie wiadomości z uwzględnieniem wielkości liter
 
-**Przegląd:** Stosuj filtry uwzględniające wielkość liter w adresach e-mail.
+**Przegląd:** Wykorzystaj filtry rozróżniające wielkość liter dla adresów e‑mail.
 
-#### Realizacja:
-1. **Filtrowanie uwzględniające wielkość liter:**
-   ```java
+#### Implementacja:
+1. **Filtrowanie rozróżniające wielkość liter:** ```java
    MailQueryBuilder builderCaseSensitive = new MailQueryBuilder();
    builderCaseSensitive.getFrom().contains("tesT", true);
    ```
 
-## Zastosowania praktyczne
+## Praktyczne zastosowania
 
-- **Automatyczne sortowanie wiadomości e-mail:** Automatycznie sortuj wiadomości e-mail według kategorii na podstawie tematu lub nadawców.
-- **Filtry bezpieczeństwa:** Identyfikuj i filtruj potencjalne próby phishingu według domeny nadawcy.
-- **Analiza marketingowa:** Śledź newslettery i e-maile promocyjne, aby uzyskać informacje marketingowe.
-- **Archiwizacja oparta na czasie:** Archiwizuj wiadomości e-mail otrzymane w określonych przedziałach dat w celu zachowania zgodności z przepisami.
+- **Automatyczne sortowanie e‑maili:** Automatycznie sortuj e‑maile do kategorii na podstawie tematów lub nadawców.  
+- **Filtry bezpieczeństwa:** Identyfikuj i filtruj potencjalne próby phishingu na podstawie domeny nadawcy.  
+- **Analiza marketingowa:** Śledź newslettery i e‑maile promocyjne w celu uzyskania wglądu marketingowego.  
+- **Archiwizacja czasowa:** Archiwizuj e‑maile otrzymane w określonych przedziałach dat w celach zgodności.
 
-## Rozważania dotyczące wydajności
+## Uwagi dotyczące wydajności
 
-Optymalizacja wydajności jest kluczowa przy obsłudze dużych ilości danych e-mail:
-
-- Stosuj wydajne zapytania, aby zminimalizować wykorzystanie zasobów.
-- W przypadku przetwarzania rozległych zbiorów danych należy zastosować stronicowanie, aby uniknąć przeciążenia pamięci.
+Optymalizacja wydajności jest kluczowa przy obsłudze dużych wolumenów danych e‑mailowych:
+- Używaj efektywnych zapytań, aby zminimalizować zużycie zasobów.
+- Wdrażaj stronicowanie przy obsłudze dużych zbiorów danych, aby uniknąć przeciążenia pamięci.
 - Regularnie profiluj i monitoruj wydajność aplikacji.
 
-## Wniosek
+## Częste problemy i rozwiązania
 
-Opanowując zaawansowane możliwości filtrowania udostępniane przez Aspose.Email for Java, możesz znacznie usprawnić procesy zarządzania pocztą e-mail. Ten przewodnik wyposażył Cię w wiedzę potrzebną do wdrożenia zaawansowanej logiki filtrowania dostosowanej do Twoich konkretnych potrzeb. Kontynuuj eksplorację dokumentacji, aby odkryć więcej funkcji i możliwości.
+| Problem | Typowa przyczyna | Zalecane rozwiązanie |
+|-------|---------------|-----------------|
+| **ParseException** przy parsowaniu dat | Nieprawidłowy format daty | Użyj `SimpleDateFormat` pasującego do ciągu wejściowego i zawsze otaczaj w try‑catch. |
+| Brak wyników | Filtry są zbyt restrykcyjne | Złagodź kryteria lub zweryfikuj, czy skrzynka faktycznie zawiera pasujące wiadomości. |
+| Nie uwzględniana wrażliwość na wielkość liter | `contains` wywołane bez flagi `true` | Przekaż `true` jako drugi argument, aby wymusić rozróżnianie wielkości liter. |
+| Duża skrzynka spowalnia zapytanie | Brak stronicowania | Użyj `client.listMessages(..., pageSize, pageNumber)`, aby pobierać wyniki w partiach. |
 
 ## Sekcja FAQ
 
-**P1: Jaki jest najlepszy sposób obsługi wyjątku ParseException w filtrach dat?**
-- **A:** Zawsze zawijaj `sdf.parse()` wywołania w blokach try-catch w celu sprawnego obsłużenia wyjątków parsowania.
+**Q1: Jaki jest najlepszy sposób obsługi ParseException w filtrach dat?**  
+- **A:** Zawsze otaczaj wywołania `sdf.parse()` blokami try‑catch, aby łagodnie obsługiwać wyjątki parsowania.
 
-**P2: Czy mogę używać Aspose.Email for Java z innymi protokołami pocztowymi poza Exchange?**
-- **A:** Tak, Aspose.Email obsługuje różne protokoły, w tym IMAP i POP3. Zapoznaj się z dokumentacją, aby uzyskać szczegółowe informacje.
+**Q2: Czy mogę używać Aspose.Email dla Javy z innymi protokołami e‑mail niż Exchange?**  
+- **A:** Tak, Aspose.Email obsługuje różne protokoły, w tym IMAP i POP3. Zapoznaj się z dokumentacją po szczegóły.
 
-**P3: Jak mogę zoptymalizować wydajność zapytań w dużych skrzynkach pocztowych?**
-- **A:** Zoptymalizuj, zawężając warunki filtrowania tak bardzo, jak to możliwe, i rozważ użycie mechanizmów stronicowania.
+**Q3: Jak mogę zoptymalizować wydajność zapytań w dużych skrzynkach?**  
+- **A:** Optymalizuj, ograniczając warunki filtrów tak bardzo, jak to możliwe, i rozważ użycie mechanizmów stronicowania.
 
-**P4: Czy konieczne jest zakupienie licencji od razu po skorzystaniu z bezpłatnego okresu próbnego?**
-- **A:** Choć bezpłatna wersja próbna doskonale nadaje się do oceny, zakup licencji odblokowuje wszystkie funkcje bez ograniczeń.
+**Q4: Czy konieczne jest natychmiastowe zakupienie licencji po wypróbowaniu wersji próbnej?**  
+- **A:** Chociaż wersja próbna jest doskonała do oceny, zakup licencji odblokowuje wszystkie funkcje bez ograniczeń.
 
-**P5: W jaki sposób mogę zintegrować Aspose.Email z innymi aplikacjami Java?**
+**Q5: Jak zintegrować Aspose.Email z innymi aplikacjami Java?**  
 - **A:** Użyj Aspose.Email jako biblioteki w swoich projektach Java. Oferuje prostą integrację.
+
+**Q6: Czy mogę połączyć więcej niż dwa warunki przy użyciu logiki AND/OR?**  
+- **A:** Tak — łańcuchuj dodatkowe warunki na tym samym `MailQueryBuilder` lub zagnieżdżaj wywołania OR w razie potrzeby.
+
+**Q7: Czy filtrowanie rozróżniające wielkość liter działa również dla tematu?**  
+- **A:** Zdecydowanie tak. Przekaż `true` do metody `contains` dla dowolnego pola, które chcesz dopasować rozróżniając wielkość liter.
+
+---
+
+**Ostatnia aktualizacja:** 2026-04-11  
+**Testowano z:** Aspose.Email dla Javy 25.4 (JDK 16)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

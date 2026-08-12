@@ -1,9 +1,15 @@
 ---
-"date": "2025-05-29"
-"description": "Tìm hiểu cách lọc email nâng cao với Aspose.Email for Java. Tối ưu hóa hộp thư đến của bạn bằng cách lọc email dựa trên chủ đề, ngày, người gửi, tên miền, v.v."
-"title": "Làm chủ các kỹ thuật lọc email nâng cao bằng Aspose.Email cho Java"
-"url": "/vi/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/"
-"weight": 1
+date: '2026-04-11'
+description: Tìm hiểu cách lọc email theo tiêu đề, ngày, người gửi và miền bằng Aspose.Email
+  cho Java. Tinh giản việc quản lý hộp thư đến với bộ lọc nâng cao.
+keywords:
+- filter emails by subject
+- filter emails by date
+- filter emails by sender
+- filter emails by domain
+title: Lọc email theo tiêu đề với Aspose.Email cho Java
+url: /vi/java/email-parsing-analysis/aspose-email-java-advanced-filtering-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,31 +17,38 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Làm chủ các kỹ thuật lọc email nâng cao bằng Aspose.Email cho Java
+# Lọc email theo tiêu đề với Aspose.Email cho Java
 
 ## Giới thiệu
 
-Quản lý hộp thư đến lộn xộn là một thách thức trong thế giới kỹ thuật số ngày nay. Cho dù bạn đang sàng lọc hàng trăm email mỗi ngày hay muốn tối ưu hóa quy trình quản lý email của mình, các giải pháp lọc nâng cao đều rất quan trọng. Với Aspose.Email for Java, các nhà phát triển có thể lọc và quản lý email hiệu quả một cách dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn cách triển khai nhiều tính năng lọc email khác nhau bằng Aspose.Email for Java.
+Quản lý hộp thư đến bừa bộn là một thách thức trong thế giới kỹ thuật số ngày nay. Cho dù bạn đang lọc qua hàng trăm email mỗi ngày hay muốn tối ưu hóa quy trình quản lý email, các giải pháp lọc nâng cao là rất quan trọng. **Trong hướng dẫn này, bạn sẽ học cách lọc email theo tiêu đề**, cũng như các tiêu chí mạnh mẽ khác như ngày, người gửi và miền, bằng cách sử dụng Aspose.Email cho Java. Với Aspose.Email cho Java, các nhà phát triển có thể lọc và quản lý email một cách hiệu quả và dễ dàng. Hướng dẫn này sẽ chỉ cho bạn cách triển khai các tính năng lọc email khác nhau bằng Aspose.Email cho Java.
 
-**Những gì bạn sẽ học được:**
-- Thiết lập Aspose.Email cho Java
-- Lọc tin nhắn theo chủ đề, ngày, người gửi, tên miền và người nhận
-- Kết hợp các truy vấn với các phép toán logic AND/OR
+**Bạn sẽ học được:**
+- Cài đặt Aspose.Email cho Java
+- Lọc tin nhắn theo tiêu đề, ngày, người gửi, miền và người nhận
+- Kết hợp các truy vấn bằng các phép toán logic AND/OR
 - Hiểu về phân biệt chữ hoa chữ thường trong bộ lọc email
 
-Đến cuối hướng dẫn này, bạn sẽ được trang bị để điều chỉnh logic xử lý email của mình để đáp ứng các nhu cầu cụ thể. Hãy bắt đầu với các điều kiện tiên quyết.
+Khi kết thúc hướng dẫn này, bạn sẽ có khả năng tùy chỉnh logic xử lý email của mình để đáp ứng các nhu cầu cụ thể. Hãy bắt đầu với các yêu cầu trước.
 
-## Điều kiện tiên quyết
+## Câu trả lời nhanh
+- **Lớp chính để truy vấn hộp thư Exchange là gì?** `MailQueryBuilder` cho phép bạn xây dựng các biểu thức lọc linh hoạt.  
+- **Tôi có thể lọc email theo cả tiêu đề và ngày trong một truy vấn duy nhất không?** Có — nối các điều kiện trên cùng một `MailQueryBuilder`.  
+- **Làm thế nào để lọc các tin nhắn đã đến hôm nay?** Sử dụng `builder.getInternalDate().on(new Date())`.  
+- **Có hỗ trợ lọc phân biệt chữ hoa chữ thường không?** Truyền `true` làm đối số thứ hai cho `contains`.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Giấy phép Aspose.Email hợp lệ sẽ mở khóa tất cả các tính năng mà không có giới hạn.
 
-Trước khi triển khai tính năng lọc email nâng cao với Aspose.Email for Java, hãy đảm bảo bạn có:
+## Yêu cầu trước
 
-- **Thư viện cần thiết:** Aspose.Email cho Java phiên bản 25.4
-- **Thiết lập môi trường:** Yêu cầu phải có Java Development Kit (JDK) phiên bản ít nhất là 16.
-- **Điều kiện tiên quyết về kiến thức:** Hiểu biết cơ bản về lập trình Java và quen thuộc với các giao thức email.
+Trước khi triển khai lọc email nâng cao với Aspose.Email cho Java, hãy đảm bảo bạn có:
 
-## Thiết lập Aspose.Email cho Java
+- **Thư viện yêu cầu:** Aspose.Email cho Java phiên bản 25.4
+- **Cấu hình môi trường:** Cần một Java Development Kit (JDK) ít nhất phiên bản 16.
+- **Yêu cầu kiến thức:** Hiểu biết cơ bản về lập trình Java và quen thuộc với các giao thức email.
 
-Để bắt đầu, hãy đưa thư viện Aspose.Email vào dự án của bạn. Nếu bạn đang sử dụng Maven, hãy thêm phần phụ thuộc sau:
+## Cài đặt Aspose.Email cho Java
+
+Để bắt đầu, hãy bao gồm thư viện Aspose.Email vào dự án của bạn. Nếu bạn đang sử dụng Maven, thêm phụ thuộc sau:
 
 ```xml
 <dependency>
@@ -46,42 +59,42 @@ Trước khi triển khai tính năng lọc email nâng cao với Aspose.Email f
 </dependency>
 ```
 
-### Mua lại giấy phép
+### Mua giấy phép
 
-Để sử dụng Aspose.Email đầy đủ, bạn sẽ cần giấy phép. Bạn có thể bắt đầu bằng bản dùng thử miễn phí hoặc yêu cầu giấy phép tạm thời để đánh giá. Đối với mục đích sử dụng sản xuất, hãy cân nhắc mua giấy phép để mở khóa đầy đủ các tính năng.
+Để sử dụng đầy đủ Aspose.Email, bạn sẽ cần một giấy phép. Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc yêu cầu giấy phép tạm thời để đánh giá. Đối với việc sử dụng trong môi trường sản xuất, hãy cân nhắc mua giấy phép để mở khóa toàn bộ tính năng.
 
-### Khởi tạo và thiết lập cơ bản
+### Khởi tạo và cấu hình cơ bản
 
-Khởi tạo của bạn `ExchangeClient` với các thông tin cần thiết:
+Khởi tạo `ExchangeClient` của bạn với các thông tin xác thực cần thiết:
 
 ```java
 ExchangeClient client = new ExchangeClient("YOUR_DOCUMENT_DIRECTORY", "username", "password", "domain");
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
 Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, cho phép bạn triển khai các chức năng lọc email phức tạp.
 
-### Lọc tin nhắn theo chủ đề và ngày
+### Lọc tin nhắn theo tiêu đề và ngày
 
-**Tổng quan:** Chức năng này lọc email trong hộp thư Exchange dựa trên từ khóa chủ đề cụ thể và ngày tháng nội bộ.
+**Tổng quan:** Chức năng này lọc email trong hộp thư Exchange dựa trên các từ khóa tiêu đề cụ thể và ngày nội bộ.
 
-#### Thực hiện từng bước:
-1. **Khởi tạo Trình xây dựng truy vấn:**
+#### Triển khai từng bước:
+1. **Khởi tạo Query Builder:**  
    ```java
    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
    ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
    builder.getSubject().contains("Newsletter");
    ```
-2. **Đặt Bộ lọc Ngày:**
+2. **Đặt bộ lọc ngày:**  
    ```java
    try {
        builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
    } catch (ParseException e) {
-       e.printStackTrace(); // Xử lý lỗi phân tích một cách khéo léo
+       e.printStackTrace(); // Handle parsing errors gracefully
    }
    ```
-3. **Thực hiện truy vấn:**
+3. **Thực thi truy vấn:**  
    ```java
    MailQuery query = builder.getQuery();
    ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
@@ -89,23 +102,23 @@ Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, c
 
 ### Lọc tin nhắn dựa trên ngày hôm nay
 
-**Tổng quan:** Lấy lại các email đã nhận trong ngày hôm nay.
+**Tổng quan:** Lấy các email đã đến hôm nay.
 
-#### Thực hiện:
-1. **Xây dựng truy vấn:**
+#### Triển khai:
+1. **Xây dựng truy vấn:**  
    ```java
    MailQueryBuilder builderToday = new MailQueryBuilder();
    builderToday.getInternalDate().on(new Date());
    ```
-2. **Liệt kê tin nhắn:**
-   Thực hiện truy vấn của bạn bằng cách sử dụng `client.listMessages()` tương tự như các ví dụ trước, thay thế ngày cụ thể bằng ngày hôm nay.
+2. **Liệt kê tin nhắn:**  
+   Thực thi truy vấn của bạn bằng `client.listMessages()` tương tự như các ví dụ trước, thay ngày cụ thể bằng ngày hôm nay.
 
-### Lọc tin nhắn trong phạm vi ngày cụ thể
+### Lọc tin nhắn trong một khoảng ngày cụ thể
 
-**Tổng quan:** Lọc các email nhận được trước ngày hôm nay và từ một ngày trước.
+**Tổng quan:** Lọc email nhận được trước hôm nay và kể từ một ngày trước.
 
-#### Thực hiện:
-1. **Cấu hình phạm vi ngày:**
+#### Triển khai:
+1. **Cấu hình khoảng ngày:**  
    ```java
    MailQueryBuilder builderDateRange = new MailQueryBuilder();
    builderDateRange.getInternalDate().beforeOrEqual(new Date());
@@ -116,41 +129,41 @@ Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, c
 
 **Tổng quan:** Lấy email từ một người gửi cụ thể.
 
-#### Thực hiện:
-1. **Thiết lập truy vấn:**
+#### Triển khai:
+1. **Thiết lập truy vấn:**  
    ```java
    MailQueryBuilder builderSender = new MailQueryBuilder();
    builderSender.getFrom().contains("saqib.razzaq@127.0.0.1");
    ```
 
-### Lọc tin nhắn dựa trên tên miền cụ thể
+### Lọc tin nhắn dựa trên miền cụ thể
 
-**Tổng quan:** Lấy email từ một tên miền cụ thể.
+**Tổng quan:** Lấy email từ một miền cụ thể.
 
-#### Thực hiện:
-1. **Lọc dựa trên miền:**
+#### Triển khai:
+1. **Lọc dựa trên miền:**  
    ```java
    MailQueryBuilder builderDomain = new MailQueryBuilder();
    builderDomain.getFrom().contains("SpecificHost.com");
    ```
 
-### Lọc tin nhắn được gửi đến người nhận cụ thể
+### Lọc tin nhắn gửi tới người nhận cụ thể
 
-**Tổng quan:** Lấy email được gửi đến một người nhận cụ thể.
+**Tổng quan:** Lấy email được gửi tới một người nhận cụ thể.
 
-#### Thực hiện:
-1. **Thiết lập truy vấn người nhận:**
+#### Triển khai:
+1. **Thiết lập truy vấn người nhận:**  
    ```java
    MailQueryBuilder builderRecipient = new MailQueryBuilder();
    builderRecipient.getTo().contains("recipient@example.com");
    ```
 
-### Kết hợp các truy vấn với Logic AND
+### Kết hợp truy vấn với logic AND
 
-**Tổng quan:** Sử dụng phép toán AND logic để kết hợp nhiều điều kiện.
+**Tổng quan:** Sử dụng các phép toán logic AND để kết hợp nhiều điều kiện.
 
-#### Thực hiện:
-1. **Thiết lập điều kiện kết hợp:**
+#### Triển khai:
+1. **Thiết lập các điều kiện kết hợp:**  
    ```java
    MailQueryBuilder builderAnd = new MailQueryBuilder();
    builderAnd.getFrom().contains("SpecificHost.com");
@@ -158,12 +171,12 @@ Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, c
    builderAnd.getInternalDate().since(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(-7)));
    ```
 
-### Kết hợp các truy vấn với Logic OR
+### Kết hợp truy vấn với logic OR
 
-**Tổng quan:** Truy xuất email bằng các điều kiện logic OR.
+**Tổng quan:** Lấy email bằng các điều kiện logic OR.
 
-#### Thực hiện:
-1. **Thiết lập điều kiện HOẶC:**
+#### Triển khai:
+1. **Thiết lập điều kiện OR:**  
    ```java
    MailQueryBuilder builderOr = new MailQueryBuilder();
    builderOr.or(builderOr.getSubject().contains("test"), builderOr.getFrom().contains("noreply@host.com"));
@@ -173,8 +186,8 @@ Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, c
 
 **Tổng quan:** Sử dụng bộ lọc phân biệt chữ hoa chữ thường cho địa chỉ email.
 
-#### Thực hiện:
-1. **Lọc phân biệt chữ hoa chữ thường:**
+#### Triển khai:
+1. **Lọc phân biệt chữ hoa chữ thường:**  
    ```java
    MailQueryBuilder builderCaseSensitive = new MailQueryBuilder();
    builderCaseSensitive.getFrom().contains("tesT", true);
@@ -182,39 +195,56 @@ Phần này chia nhỏ từng tính năng thành các bước dễ quản lý, c
 
 ## Ứng dụng thực tế
 
-- **Phân loại email tự động:** Tự động sắp xếp email thành các danh mục dựa trên dòng chủ đề hoặc người gửi.
-- **Bộ lọc bảo mật:** Xác định và lọc các nỗ lực lừa đảo tiềm ẩn theo tên miền của người gửi.
-- **Phân tích tiếp thị:** Theo dõi các bản tin và email quảng cáo để có thông tin chi tiết về tiếp thị.
-- **Lưu trữ theo thời gian:** Lưu trữ email nhận được trong phạm vi ngày cụ thể cho mục đích tuân thủ.
+- **Sắp xếp email tự động:** Tự động phân loại email vào các danh mục dựa trên tiêu đề hoặc người gửi.  
+- **Bộ lọc bảo mật:** Nhận diện và lọc các nỗ lực phishing tiềm năng dựa trên miền người gửi.  
+- **Phân tích tiếp thị:** Theo dõi bản tin và email quảng cáo để có những hiểu biết về tiếp thị.  
+- **Lưu trữ dựa trên thời gian:** Lưu trữ email nhận được trong các khoảng ngày cụ thể để đáp ứng yêu cầu tuân thủ.
 
-## Cân nhắc về hiệu suất
+## Các cân nhắc về hiệu năng
 
-Việc tối ưu hóa hiệu suất là rất quan trọng khi xử lý khối lượng lớn dữ liệu email:
+Tối ưu hóa hiệu năng là rất quan trọng khi xử lý khối lượng lớn dữ liệu email:
 
-- Sử dụng truy vấn hiệu quả để giảm thiểu việc sử dụng tài nguyên.
-- Triển khai phân trang nếu xử lý các tập dữ liệu lớn để tránh quá tải bộ nhớ.
-- Theo dõi và giám sát hiệu suất ứng dụng thường xuyên.
+- Sử dụng các truy vấn hiệu quả để giảm thiểu việc sử dụng tài nguyên.  
+- Triển khai phân trang nếu làm việc với tập dữ liệu lớn để tránh quá tải bộ nhớ.  
+- Thường xuyên phân tích và giám sát hiệu năng ứng dụng.
 
-## Phần kết luận
+## Các vấn đề thường gặp và giải pháp
 
-Bằng cách nắm vững các khả năng lọc nâng cao do Aspose.Email for Java cung cấp, bạn có thể cải thiện đáng kể các quy trình quản lý email của mình. Hướng dẫn này đã trang bị cho bạn kiến thức cần thiết để triển khai logic lọc tinh vi phù hợp với nhu cầu cụ thể của bạn. Tiếp tục khám phá tài liệu để khám phá thêm nhiều tính năng và khả năng khác.
+| Vấn đề | Nguyên nhân thường gặp | Giải pháp đề xuất |
+|-------|------------------------|-------------------|
+| **ParseException** khi phân tích ngày | Định dạng ngày không đúng | Sử dụng `SimpleDateFormat` phù hợp với chuỗi đầu vào, và luôn bao bọc trong try‑catch. |
+| Không có kết quả trả về | Bộ lọc quá hạn chế | Nới lỏng tiêu chí hoặc xác minh rằng hộp thư thực sự chứa các tin nhắn phù hợp. |
+| Phân biệt chữ hoa chữ thường không được tôn trọng | `contains` được gọi mà không có cờ `true` | Truyền `true` làm đối số thứ hai để áp dụng so khớp phân biệt chữ hoa chữ thường. |
+| Hộp thư lớn làm chậm truy vấn | Thiếu phân trang | Sử dụng `client.listMessages(..., pageSize, pageNumber)` để lấy kết quả theo từng phần. |
 
-## Phần Câu hỏi thường gặp
+## Mục FAQ
 
-**Câu hỏi 1: Cách tốt nhất để xử lý ParseException trong bộ lọc ngày là gì?**
-- **MỘT:** Luôn luôn quấn `sdf.parse()` gọi trong các khối try-catch để xử lý các ngoại lệ phân tích một cách khéo léo.
+**Q1: Cách tốt nhất để xử lý ParseException trong bộ lọc ngày là gì?**  
+- **A:** Luôn bao bọc các lời gọi `sdf.parse()` trong khối try‑catch để xử lý ngoại lệ phân tích một cách nhẹ nhàng.
 
-**Câu hỏi 2: Tôi có thể sử dụng Aspose.Email for Java với các giao thức email khác ngoài Exchange không?**
-- **MỘT:** Có, Aspose.Email hỗ trợ nhiều giao thức khác nhau bao gồm IMAP và POP3. Tham khảo tài liệu để biết chi tiết.
+**Q2: Tôi có thể sử dụng Aspose.Email cho Java với các giao thức email khác ngoài Exchange không?**  
+- **A:** Có, Aspose.Email hỗ trợ nhiều giao thức bao gồm IMAP và POP3. Tham khảo tài liệu để biết chi tiết.
 
-**Câu hỏi 3: Làm thế nào để tối ưu hóa hiệu suất truy vấn trong các hộp thư lớn?**
-- **MỘT:** Tối ưu hóa bằng cách thu hẹp các điều kiện lọc càng nhiều càng tốt và cân nhắc sử dụng cơ chế phân trang.
+**Q3: Làm thế nào để tối ưu hiệu năng truy vấn trong hộp thư lớn?**  
+- **A:** Tối ưu bằng cách thu hẹp các điều kiện lọc càng nhiều càng tốt và cân nhắc sử dụng cơ chế phân trang.
 
-**Câu hỏi 4: Có cần thiết phải mua giấy phép ngay sau khi dùng thử miễn phí không?**
-- **MỘT:** Trong khi bản dùng thử miễn phí rất tuyệt vời để đánh giá, việc mua giấy phép sẽ mở khóa toàn bộ tính năng mà không có giới hạn.
+**Q4: Có cần mua giấy phép ngay sau khi dùng thử miễn phí không?**  
+- **A:** Mặc dù bản dùng thử miễn phí rất tốt để đánh giá, việc mua giấy phép sẽ mở khóa toàn bộ tính năng mà không có giới hạn.
 
-**Câu hỏi 5: Làm thế nào để tích hợp Aspose.Email với các ứng dụng Java khác?**
-- **MỘT:** Sử dụng Aspose.Email làm thư viện trong các dự án Java của bạn. Nó cung cấp khả năng tích hợp trực tiếp.
+**Q5: Làm thế nào để tích hợp Aspose.Email với các ứng dụng Java khác?**  
+- **A:** Sử dụng Aspose.Email như một thư viện trong dự án Java của bạn. Nó cung cấp tích hợp đơn giản.
+
+**Q6: Tôi có thể kết hợp hơn hai điều kiện với logic AND/OR không?**  
+- **A:** Có — nối các điều kiện bổ sung trên cùng một `MailQueryBuilder` hoặc lồng các lời gọi OR khi cần.
+
+**Q7: Bộ lọc phân biệt chữ hoa chữ thường có hoạt động cho tiêu đề không?**  
+- **A:** Chắc chắn. Truyền `true` vào phương thức `contains` cho bất kỳ trường nào bạn muốn so khớp phân biệt chữ hoa chữ thường.
+
+---
+
+**Cập nhật lần cuối:** 2026-04-11  
+**Kiểm tra với:** Aspose.Email cho Java 25.4 (JDK 16)  
+**Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
