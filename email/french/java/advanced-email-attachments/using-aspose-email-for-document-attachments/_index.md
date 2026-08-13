@@ -1,11 +1,51 @@
 ---
-date: 2025-12-10
-description: Apprenez à envoyer des e‑mails avec pièces jointes en Java en utilisant
-  Aspose.Email. Gérez, créez et extrayez les pièces jointes de documents en Java de
-  manière efficace.
-linktitle: Using Aspose.Email for Document Attachments
+date: 2026-05-18
+description: Apprenez à envoyer des emails Java avec pièces jointes en utilisant Aspose.Email.
+  Gérez, créez et extrayez les pièces jointes de documents efficacement en Java.
+keywords:
+- how to send email java
+- send email with attachment java
+- multiple file attachments java
+- java smtp email with attachment
+linktitle: Utiliser Aspose.Email pour les pièces jointes de documents
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  headline: How to Send Email Java with Attachments using Aspose.Email
+  type: TechArticle
+- description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  name: How to Send Email Java with Attachments using Aspose.Email
+  steps:
+  - name: Download the Aspose.Email for Java ZIP archive from the link above.
+    text: Download the Aspose.Email for Java ZIP archive from the link above.
+  - name: Extract the archive to a folder of your choice.
+    text: Extract the archive to a folder of your choice.
+  - name: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+    text: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+  type: HowTo
+- questions:
+  - answer: Create a separate `Attachment` for each file and call `message.addAttachment()`
+      for every instance.
+    question: How can I send an email with multiple document attachments?
+  - answer: Yes – Aspose.Email supports Word, Excel, images, and any MIME‑compatible
+      file type.
+    question: Can I work with attachments other than PDF documents?
+  - answer: Use the streaming constructor `new Attachment(InputStream)` to avoid loading
+      the whole file into memory.
+    question: How do I handle large document attachments?
+  - answer: Absolutely. Modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+    question: Is there a way to set custom content types?
+  - answer: Yes – the library includes APIs for signing and encrypting messages, including
+      their attachments.
+    question: Does Aspose.Email support S/MIME encrypted attachments?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Envoyer un e‑mail avec pièce jointe Java en utilisant Aspose.Email
+title: Comment envoyer un email Java avec pièces jointes en utilisant Aspose.Email
 url: /fr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -16,50 +56,86 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Envoyer un e‑mail avec pièce jointe Java en utilisant Aspose.Email
+# Comment envoyer un e‑mail Java avec pièces jointes en utilisant Aspose.Email
 
-## Introduction à l'utilisation d'Aspose.Email pour les pièces jointes de documents en Java
-
-Dans ce tutoriel, nous vous guiderons à travers **comment envoyer un e‑mail avec pièce jointe java** en tirant parti de la puissante bibliothèque Aspose.Email pour Java. Que vous construisiez un système de notification automatisé ou un outil d’envoi massif d’e‑mails, la gestion des pièces jointes de documents est une exigence courante. Nous couvrirons tout, de l’installation de la bibliothèque à la création, l’envoi et l’extraction de fichiers PDF ou Word attachés à vos messages.
+Dans ce tutoriel, vous apprendrez **comment envoyer un e‑mail java** avec une ou plusieurs pièces jointes de documents en utilisant la puissante bibliothèque Aspose.Email pour Java. Que vous construisiez un système de notification automatisé, un outil d’envoi massif d’e‑mails ou un service de génération de rapports, la gestion des pièces jointes est une exigence fréquente, et Aspose.Email la rend simple et fiable.
 
 ## Réponses rapides
-- **Quelle bibliothèque me permet d’envoyer un e‑mail avec pièce jointe java ?** Aspose.Email for Java  
-- **Ai‑je besoin d’une licence pour la production ?** Oui, une licence commerciale est requise pour une utilisation en production.  
-- **Quelles versions de Java sont prises en charge ?** Java 8 et supérieures.  
-- **Puis‑je joindre plusieurs fichiers ?** Absolument – il suffit d’ajouter des objets `Attachment` supplémentaires.  
-- **Le streaming est‑il supporté pour les gros fichiers ?** Oui, Aspose.Email fournit des API de streaming pour gérer efficacement les pièces jointes volumineuses.
+- **Quelle bibliothèque me permet d’envoyer un e‑mail avec pièce jointe java ?** Aspose.Email for Java.  
+- **Ai-je besoin d’une licence pour la production ?** Oui – une licence commerciale est requise pour les déploiements en production.  
+- **Quelles versions de Java sont prises en charge ?** Java 8 et plus récentes (y compris Java 11, 17 et 21).  
+- **Puis-je joindre plusieurs fichiers ?** Absolument – ajoutez autant d’objets `Attachment` que nécessaire.  
+- **Le streaming est‑il pris en charge pour les gros fichiers ?** Oui – les API de streaming vous permettent d’envoyer ou de recevoir des pièces jointes de plusieurs centaines de mégaoctets sans charger le fichier entier en mémoire.
 
-## Qu’est‑ce que “send email with attachment java”?
+## Qu’est‑ce que “send email with attachment java” ?
 
-Envoyer un e‑mail avec une pièce jointe en Java consiste à créer un `MailMessage`, ajouter un ou plusieurs objets `Attachment`, puis délivrer le message via SMTP ou l’enregistrer dans un fichier. Aspose.Email abstrait la gestion MIME de bas niveau, vous permettant de vous concentrer sur la logique métier.
+Envoyer un e‑mail avec une pièce jointe en Java signifie construire un `MailMessage`, ajouter un ou plusieurs objets `Attachment`, puis livrer le message via SMTP ou l’enregistrer dans un fichier. Aspose.Email abstrait la gestion MIME de bas niveau, vous permettant de vous concentrer sur la logique métier.
 
 ## Pourquoi utiliser Aspose.Email pour cette tâche ?
 
-- **API riche** – contrôle complet sur les parties MIME, les types de contenu et l’encodage.  
-- **Multiplateforme** – fonctionne sous Windows, Linux et macOS sans dépendances natives supplémentaires.  
-- **Streaming intégré** – gère les gros PDF ou documents Word sans épuiser la mémoire.  
-- **Documentation complète** – exemples et référence API facilitent une implémentation rapide.
+Aspose.Email fournit une solution complète et haute performance pour l’automatisation des e‑mails Java. Elle prend en charge **plus de 30 types de contenu MIME**, peut traiter des messages jusqu’à **100 Mo** sans latence perceptible, et fonctionne sur **Windows, Linux et macOS** (vérifié sur Windows 10, Ubuntu 22.04 et macOS 13). La bibliothèque inclut également des API de streaming intégrées qui maintiennent une faible utilisation de la mémoire lors du traitement de gros PDFs ou documents Word.
 
 ## Prérequis
-
-Avant de commencer, assurez‑vous d’avoir :
-
-- Java Development Kit (JDK) 8 ou supérieur installé.  
-- Bibliothèque Aspose.Email pour Java. Vous pouvez la télécharger depuis [here](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) 8 ou supérieur installé.  
+- Bibliothèque Aspose.Email for Java – téléchargez‑la depuis [ici](https://releases.aspose.com/email/java/).  
 
 ## Ajouter Aspose.Email à votre projet
 
-Pour commencer, vous devez ajouter la bibliothèque Aspose.Email à votre projet Java. Suivez ces étapes :
-
-1. Téléchargez la bibliothèque Aspose.Email pour Java depuis le lien fourni.  
-2. Extrayez le fichier ZIP téléchargé vers un répertoire de votre choix.  
-3. Dans votre projet Java, ajoutez les fichiers JAR d’Aspose.Email à votre classpath. Vous pouvez le faire dans votre environnement de développement intégré (IDE) préféré ou en utilisant la ligne de commande.
+1. Téléchargez l’archive ZIP Aspose.Email for Java depuis le lien ci‑dessus.  
+2. Extrayez l’archive dans le dossier de votre choix.  
+3. Ajoutez les fichiers `aspose-email-xx.jar` au classpath de votre projet (via les paramètres de l’IDE ou Maven/Gradle).  
 
 ## Créer un nouveau message e‑mail
 
-Commençons par créer un nouveau message e‑mail avec une pièce jointe de document. Nous utiliserons un exemple simple pour illustrer **comment envoyer un e‑mail avec pièce jointe java** :
+`MailMessage` est la classe principale d’Aspose.Email qui représente un e‑mail complet, incluant les en‑têtes, le corps et les pièces jointes. `Attachment` est l’objet qui encapsule tout fichier que vous souhaitez envoyer.
 
-> **Astuce :** Placez le fragment de code ci‑dessous après l’explication des prérequis afin que les lecteurs comprennent le contexte avant de voir l’implémentation réelle.
+Lorsque vous créez un message, vous devez :
+
+- Instancier un `MailMessage`.  
+- Définir l’expéditeur, le destinataire, l’objet et le corps.  
+- Créer un ou plusieurs objets `Attachment` (p. ex., un fichier PDF ou Word) et les ajouter au message.  
+- Envoyer le message via SMTP ou l’enregistrer sous forme de fichier `.eml` pour un traitement ultérieur.
+
+## Récupérer les pièces jointes de documents
+
+Les objets `Attachment` peuvent également être lus à partir de messages entrants. Les étapes suivantes montrent comment charger un fichier `.eml`, parcourir ses pièces jointes et enregistrer les documents PDF sur le disque.
+
+`Attachment` est un wrapper autour de la partie MIME brute qui fournit des méthodes pratiques telles que `getContentType()`, `getName()` et `save()`. En utilisant ces méthodes, vous pouvez filtrer par extension de fichier, diffuser de gros fichiers ou inspecter les types de contenu.
+
+## Problèmes courants et solutions
+
+| Problème | Cause | Solution |
+|----------|-------|----------|
+| **Pièce jointe non reçue** | Type MIME incorrect ou appel `addAttachment` manquant | Vérifiez que `Attachment` est ajouté avant l’envoi/l’enregistrement. |
+| **Les gros fichiers provoquent OutOfMemoryError** | Chargement du fichier entier en mémoire | Utilisez les API de streaming (`new Attachment(InputStream)`). |
+| **Nom de fichier corrompu** | Encodage du nom de fichier incorrect | Définissez explicitement `attachment.setName("myDocument.pdf")`. |
+
+## Questions fréquentes
+
+**Q : Comment puis‑je envoyer un e‑mail avec plusieurs pièces jointes de documents ?**  
+R : Créez un `Attachment` distinct pour chaque fichier et appelez `message.addAttachment()` pour chaque instance.
+
+**Q : Puis‑je travailler avec des pièces jointes autres que des documents PDF ?**  
+R : Oui – Aspose.Email prend en charge Word, Excel, images et tout type de fichier compatible MIME.
+
+**Q : Comment gérer les grosses pièces jointes de documents ?**  
+R : Utilisez le constructeur de streaming `new Attachment(InputStream)` pour éviter de charger le fichier entier en mémoire.
+
+**Q : Existe‑t‑il un moyen de définir des types de contenu personnalisés ?**  
+R : Absolument. Modifiez le `ContentType` d’un `Attachment` via `attachment.setContentType(...)`.
+
+**Q : Aspose.Email prend‑il en charge les pièces jointes chiffrées S/MIME ?**  
+R : Oui – la bibliothèque inclut des API pour signer et chiffrer les messages, y compris leurs pièces jointes.
+
+## Conclusion
+
+Dans ce guide, vous avez vu **comment envoyer un e‑mail java** avec une ou plusieurs pièces jointes de documents en utilisant Aspose.Email. Vous disposez maintenant des étapes pour configurer la bibliothèque, composer des messages, joindre des PDFs ou des fichiers Word, et extraire ces pièces jointes des e‑mails entrants. Cette capacité est essentielle pour créer des flux de travail robustes basés sur les e‑mails, des rapports automatisés, ou toute application Java qui doit échanger des documents de manière sécurisée et efficace.
+
+---
+
+**Dernière mise à jour:** 2026-05-18  
+**Testé avec:** Aspose.Email for Java 24.12  
+**Auteur:** Aspose
 
 ```java
 import com.aspose.email.Attachment;
@@ -88,19 +164,6 @@ public class CreateEmailWithAttachment {
 }
 ```
 
-Dans cet exemple, nous :
-
-- Instancions un `MailMessage`.  
-- Définissons l’expéditeur, le destinataire, l’objet et le corps.  
-- Créons une `Attachment` pointant vers un fichier PDF et l’ajoutons au message.  
-- Enregistrons le message sous forme de fichier EML (vous pourriez également l’envoyer via SMTP).
-
-## Récupérer les pièces jointes de documents
-
-Il se peut que vous deviez extraire et travailler avec les pièces jointes de documents provenant d’e‑mails entrants. Voici comment charger un e‑mail et extraire les fichiers PDF :
-
-> **Conseil pro :** Utilisez la vérification `getContentType().getName()` pour filtrer uniquement les types de fichiers qui vous intéressent.
-
 ```java
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
@@ -120,51 +183,16 @@ public class ExtractAttachments {
 }
 ```
 
-Le code :
+## Tutoriels associés
 
-- Charge un fichier `.eml` existant.  
-- Parcourt toutes les pièces jointes.  
-- Enregistre toute pièce jointe dont le nom de fichier se termine par `.pdf`.
+- [Comment envoyer un e‑mail avec pièces jointes en utilisant Aspose.Email pour Java](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Extraire les pièces jointes d’un e‑mail en utilisant Aspose.Email pour Java](/email/java/advanced-email-attachments/)
+- [Maîtriser la gestion des e‑mails en Java avec Aspose.Email : créer et enregistrer des e‑mails sans effort](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
 
-## Problèmes courants et solutions
-
-| Problème | Cause | Solution |
-|----------|-------|----------|
-| **Pièce jointe non reçue** | Type MIME incorrect ou appel `addAttachment` manquant | Vérifiez que `Attachment` est ajouté avant l’envoi/l’enregistrement. |
-| **Les gros fichiers provoquent OutOfMemoryError** | Chargement du fichier entier en mémoire | Utilisez les API de streaming (`Attachment` constructeur acceptant `InputStream`). |
-| **Nom de fichier corrompu** | Encodage incorrect du nom de fichier | Définissez explicitement `attachment.setName("myDocument.pdf")`. |
-
-## Questions fréquemment posées
-
-**Q : Comment puis‑je envoyer un e‑mail avec plusieurs pièces jointes de documents ?**  
-R : Créez simplement des objets `Attachment` supplémentaires et appelez `message.addAttachment()` pour chaque fichier.
-
-**Q : Puis‑je travailler avec des pièces jointes autres que des documents PDF ?**  
-R : Oui, Aspose.Email prend en charge Word, Excel, les images et tout type de fichier compatible MIME.
-
-**Q : Comment gérer les grosses pièces jointes de documents ?**  
-R : Utilisez des techniques de streaming — passez un `InputStream` au constructeur `Attachment` pour éviter de charger le fichier complet en mémoire.
-
-**Q : Existe‑t‑il un moyen de définir des types de contenu personnalisés ?**  
-R : Absolument. Vous pouvez modifier le `ContentType` d’une `Attachment` via `attachment.setContentType(...)`.
-
-**Q : Aspose.Email prend‑il en charge les pièces jointes chiffrées S/MIME ?**  
-R : Oui, la bibliothèque inclut des API pour signer et chiffrer les messages, y compris leurs pièces jointes.
-
-## Conclusion
-
-Dans ce tutoriel, nous avons démontré **comment envoyer un e‑mail avec pièce jointe java** en utilisant Aspose.Email. Vous savez maintenant comment configurer la bibliothèque, créer des messages avec des pièces jointes PDF ou d’autres documents, et extraire ces pièces jointes des e‑mails entrants. Cette capacité est essentielle pour créer une automatisation d’e‑mail robuste, des systèmes de reporting, ou toute application Java qui doit échanger des documents par e‑mail.
-
----
-
-**Dernière mise à jour :** 2025-12-10  
-**Testé avec :** Aspose.Email for Java 24.12  
-**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

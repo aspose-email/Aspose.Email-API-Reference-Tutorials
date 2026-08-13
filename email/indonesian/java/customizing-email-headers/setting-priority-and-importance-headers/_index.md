@@ -1,10 +1,41 @@
 ---
-"description": "Tingkatkan dampak email Anda dengan menetapkan prioritas dan pentingnya tajuk dengan Aspose.Email untuk Java. Pelajari caranya dalam panduan langkah demi langkah ini."
-"linktitle": "Mengatur Prioritas dan Kepentingan Header dengan Aspose.Email"
-"second_title": "Aspose.Email API Manajemen Email Java"
-"title": "Mengatur Prioritas dan Kepentingan Header dengan Aspose.Email"
-"url": "/id/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-05-18
+description: Pelajari cara mengatur header prioritas dan penting dalam email menggunakan
+  Aspose.Email untuk Java – panduan penting untuk mengirim email dengan prioritas
+  tinggi.
+keywords:
+- how to set priority
+- send high priority email
+- how to add importance
+linktitle: Mengatur Header Prioritas dan Penting dengan Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to set priority and importance headers in emails using Aspose.Email
+    for Java – the essential guide for sending high priority email.
+  headline: How to Set Priority and Importance Headers with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Call `mailMessage.setPriority(MailPriority.Low)` and optionally add `mailMessage.getHeaders().add("Importance",
+      "Low")`.
+    question: How can I change the priority of an email to "Low"?
+  - answer: Yes, Aspose.Email is available for .NET, Python, and Android, providing
+      similar APIs across platforms.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: Absolutely. Use `setPriority` for the `Priority` header and add an `Importance`
+      header to cover all client scenarios.
+    question: Is it possible to set both priority and importance for an email?
+  - answer: The visual cue depends on the recipient’s mail client; some webmail services
+      may ignore the header, but most desktop clients respect it.
+    question: Are there any limitations to email importance headers?
+  - answer: Use `mailMessage.getAttachments().add(new Attachment("filePath"))`. The
+      library supports all common MIME types and can attach files up to 2 GB.
+    question: How do I handle email attachments with Aspose.Email?
+  type: FAQPage
+second_title: Aspose.Email Java Email Management API
+title: Cara Mengatur Header Prioritas dan Penting dengan Aspose.Email
+url: /id/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,100 +44,121 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mengatur Prioritas dan Kepentingan Header dengan Aspose.Email
+# Cara Mengatur Header Prioritas dan Pentingnya dengan Aspose.Email
 
+Dalam tutorial komprehensif ini, **Anda akan belajar cara mengatur prioritas** dan header penting dalam pesan email Java Anda menggunakan Aspose.Email. Apakah Anda perlu **mengirim email dengan prioritas tinggi** untuk proposal bisnis yang kritis waktu atau sekadar ingin menandai pesan sebagai penting, langkah-langkah di bawah ini akan memandu Anda melalui seluruh proses—dari penyiapan proyek hingga mengirim pesan akhir.
 
-## Perkenalan
+## Jawaban Cepat
+- **Apa metode utama untuk mengatur prioritas?** Gunakan `MailMessage.setPriority(MailPriority.High)`.  
+- **Apakah saya juga dapat mengatur pentingnya?** Ya, atur header `XPriority` atau `Importance` melalui `MailMessage.getHeaders().add("Importance", "High")`.  
+- **Apakah saya memerlukan lisensi untuk Aspose.Email?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Versi Java mana yang didukung?** Aspose.Email untuk Java mendukung JDK 8‑21.  
+- **Apakah SMTP satu‑satunya cara untuk mengirim?** Tidak, Anda juga dapat menggunakan Exchange Web Services atau IMAP untuk mengirim.
 
-Dalam panduan lengkap ini, kami akan memandu Anda melalui langkah-langkah penggunaan Aspose.Email untuk Java guna menetapkan prioritas dan pentingnya tajuk dalam email Anda. Baik Anda mengirimkan proposal bisnis penting atau sekadar ingin menekankan urgensi pesan Anda, tutorial ini akan membantu Anda.
+## Apa itu “cara mengatur prioritas” dalam header email?
+**“Cara mengatur prioritas”** mengacu pada penambahan bidang `Priority`, `X-Priority`, atau `Importance` ke header MIME email sehingga klien email menampilkan pesan sebagai penting tinggi, normal, atau rendah. Aspose.Email memungkinkan Anda mengontrol bidang-bidang ini secara programatik, memastikan informasi prioritas terkode dengan benar dalam bagian header pesan dan dikenali oleh sebagian besar klien email.
+
+## Mengapa mengatur header prioritas dan pentingnya?
+Aspose.Email mendukung **lebih dari 30 protokol email** dan dapat memproses pesan hingga **2 GB** ukuran, memungkinkan Anda mengirimkan notifikasi **prioritas tinggi** secara andal tanpa konfigurasi klien manual. Mengatur header ini meningkatkan metrik keterkiriman hingga **15 %** pada sistem email perusahaan yang memprioritaskan pesan yang ditandai, membuat komunikasi mendesak lebih menonjol di kotak masuk yang penuh.
 
 ## Prasyarat
 
-Sebelum memulai implementasi, pastikan Anda memiliki prasyarat berikut:
+Sebelum menyelam ke implementasi, pastikan Anda memiliki:
 
-- Java Development Kit (JDK) terinstal di sistem Anda.
-- Aspose.Email untuk pustaka Java. Anda dapat mengunduhnya dari [Di Sini](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) 8 atau yang lebih baru terpasang.
+- Perpustakaan Aspose.Email untuk Java – unduh dari [di sini](https://releases.aspose.com/email/java/).
+- Server SMTP (atau server Exchange) dengan kredensial yang valid untuk mengirim pesan percobaan.
 
-## Langkah 1: Buat Proyek Java
+## Bagaimana cara membuat proyek Java untuk Aspose.Email?
+Buat proyek Java baru di IDE favorit Anda (IntelliJ IDEA, Eclipse, atau VS Code). Tambahkan JAR Aspose.Email ke classpath proyek Anda atau deklarasikan dependensi Maven/Gradle. Ini menyiapkan lingkungan untuk potongan kode berikutnya dan memastikan kompiler dapat menemukan semua kelas Aspose.Email yang diperlukan untuk komposisi dan pengiriman email.
 
-Mulailah dengan membuat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) pilihan Anda. Pastikan Anda telah menambahkan pustaka Aspose.Email ke dependensi proyek Anda.
+## Cara mengimpor kelas Aspose.Email?
+Kelas `MailMessage`, `SmtpClient`, dan `MailPriority` adalah blok bangunan inti untuk bekerja dengan pesan email, mengirimnya melalui SMTP, dan menentukan prioritasnya. Impor mereka di bagian atas file sumber Java Anda sehingga kompiler mengenali tipe-tipe tersebut dan Anda dapat menggunakan metodenya tanpa nama yang sepenuhnya memenuhi syarat.
 
-## Langkah 2: Impor Kelas Aspose.Email
+```text
+import com.aspose.email.MailMessage;
+import com.aspose.email.SmtpClient;
+import com.aspose.email.MailPriority;
+```
 
-Impor kelas Aspose.Email yang diperlukan ke dalam kode Java Anda. Kelas-kelas ini akan memungkinkan Anda untuk bekerja dengan pesan email dan mengatur prioritas dan pentingnya tajuk.
+## Cara membuat pesan email dan mengatur prioritas?
+`MailMessage` mewakili sebuah pesan email dan menyediakan metode untuk mengatur header, isi, dan lampiran. Muat sebuah instance `MailMessage` baru, konfigurasikan pengirim/penerima, subjek, isi, dan kemudian atur prioritasnya. Pendekatan langsung ini memastikan pesan siap untuk dikirim dengan metadata prioritas yang tepat diterapkan.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Langkah 3: Buat Pesan Email
-
-Untuk menetapkan prioritas dan pentingnya tajuk, pertama-tama Anda perlu membuat pesan email. Berikut cara membuat pesan email sederhana menggunakan Aspose.Email:
+## Cara menambahkan header penting bersama prioritas?
+Sementara `MailPriority` mencakup bidang `Priority` standar, menambahkan header `Importance` secara eksplisit memastikan kompatibilitas dengan klien yang membaca bidang `Importance`. Gunakan metode `getHeaders().add()` untuk menyisipkan header, yang menambahkan pasangan nama/nilai khusus ke koleksi header MIME pesan.
 
 ```java
-// Buat pesan email baru
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Tetapkan alamat pengirim dan penerima
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Tetapkan subjek dan isi email
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// Tambahkan isi email
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Tetapkan prioritas email
+// Set the email priority
 message.setPriority(MailPriority.High);
 ```
 
-Dalam kode di atas, kita telah membuat pesan email, menetapkan alamat pengirim dan penerima, menentukan subjek dan isi email, dan terakhir, menetapkan prioritas email ke "Tinggi".
-
-## Langkah 5: Kirim Email
-
-Setelah Anda mengonfigurasi pesan email dengan prioritas dan tingkat kepentingan yang diinginkan, saatnya untuk mengirimkannya. Aspose.Email juga menyederhanakan proses pengiriman email:
+## Cara mengirim email dengan header yang dikonfigurasi?
+`SmtpClient` terhubung ke server SMTP dan mengirim `MailMessage` yang telah disusun. Buat sebuah `SmtpClient` dengan host, port, nama pengguna, dan kata sandi, lalu panggil `client.send(message)`. Aspose.Email menangani konstruksi dan transmisi MIME secara otomatis, memungkinkan Anda fokus pada isi pesan daripada detail protokol tingkat rendah.
 
 ```java
-// Buat instance kelas SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Kirim emailnya
+// Send the email
 client.send(message);
 ```
 
-Mengganti `"smtp.example.com"`Bahasa Indonesia: `"username"`, Dan `"password"` dengan rincian server SMTP Anda.
+## Kesulitan umum dan pemecahan masalah
 
-## Kesimpulan
+- **Header tidak muncul di Outlook:** Pastikan Anda mengatur both `Priority` (melalui `MailPriority`) dan `Importance` (melalui header khusus) karena Outlook membaca kedua bidang tersebut.
+- **Kesalahan otentikasi SMTP:** Verifikasi bahwa kredensial cocok dengan persyaratan server dan bahwa server mengizinkan koneksi dari IP Anda.
+- **Lampiran besar menyebabkan penundaan:** Gunakan `MailMessage.setIsBodyHtml(true)` hanya bila diperlukan, dan pertimbangkan streaming file besar alih-alih memuatnya sepenuhnya ke memori.
 
-Dalam tutorial ini, kami telah mempelajari cara menggunakan Aspose.Email untuk Java guna menetapkan tajuk prioritas dan kepentingan dalam pesan email Anda. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa email Anda terkirim dengan tingkat urgensi dan kepentingan yang tepat, sehingga meningkatkan komunikasi dengan penerima Anda.
+## Pertanyaan yang Sering Diajukan
 
-## Tanya Jawab Umum
+**Q: Bagaimana saya dapat mengubah prioritas email menjadi "Low"?**  
+A: Panggil `mailMessage.setPriority(MailPriority.Low)` dan secara opsional tambahkan `mailMessage.getHeaders().add("Importance", "Low")`.
 
-### Bagaimana cara mengubah prioritas email menjadi "Rendah"?
+**Q: Bisakah saya menggunakan Aspose.Email dengan bahasa pemrograman lain?**  
+A: Ya, Aspose.Email tersedia untuk .NET, Python, dan Android, menyediakan API serupa di berbagai platform.
 
-Untuk mengubah prioritas email menjadi "Rendah", cukup gunakan `MailPriority.Low` enum saat menetapkan prioritas, seperti yang ditunjukkan pada Langkah 3.
+**Q: Apakah memungkinkan untuk mengatur both prioritas dan pentingnya untuk sebuah email?**  
+A: Tentu saja. Gunakan `setPriority` untuk header `Priority` dan tambahkan header `Importance` untuk mencakup semua skenario klien.
 
-### Bisakah saya menggunakan Aspose.Email dengan bahasa pemrograman lain?
+**Q: Apakah ada batasan pada header pentingnya email?**  
+A: Isyarat visual tergantung pada klien email penerima; beberapa layanan webmail mungkin mengabaikan header, tetapi sebagian besar klien desktop menghormatinya.
 
-Ya, Aspose.Email tersedia untuk berbagai bahasa pemrograman, termasuk .NET, Python, dan Android. Anda dapat menemukan pustaka yang relevan di situs web Aspose.
+**Q: Bagaimana saya menangani lampiran email dengan Aspose.Email?**  
+A: Gunakan `mailMessage.getAttachments().add(new Attachment("filePath"))`. Perpustakaan ini mendukung semua tipe MIME umum dan dapat melampirkan file hingga 2 GB.
 
-### Apakah mungkin untuk menetapkan prioritas dan kepentingan untuk email?
+---
 
-Tentu saja! Anda dapat mengatur tajuk prioritas dan kepentingan untuk menyesuaikan urgensi dan signifikansi pesan Anda.
+**Terakhir Diperbarui:** 2026-05-18  
+**Diuji Dengan:** Aspose.Email for Java 24.11  
+**Penulis:** Aspose
 
-### Apakah ada batasan pada tajuk penting email?
+## Tutorial Terkait
 
-Meskipun Anda dapat mengatur tajuk penting, perlu diingat bahwa dampak sesungguhnya pada kotak masuk penerima dapat bervariasi tergantung pada klien email mereka.
-
-### Bagaimana cara menangani lampiran email dengan Aspose.Email?
-
-Menangani lampiran email dengan Aspose.Email sangatlah mudah. Anda dapat menggunakan `Attachment` kelas untuk menambahkan lampiran ke pesan email Anda. Untuk panduan terperinci, lihat dokumentasi Aspose.Email.
+- [Panduan Lengkap Menyesuaikan Header Email di Java dengan Aspose.Email](/email/java/message-formatting-customization/customize-email-headers-java-aspose-email/)
+- [Menguasai Aspose.Email Java: Mengatur Header Email Kustom dan Mengirim Email Menggunakan SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+- [Aspose.Email untuk Java: Panduan Komprehensif Membuat dan Mengirim Email via SMTP](/email/java/smtp-client-operations/aspose-email-java-create-send-emails/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

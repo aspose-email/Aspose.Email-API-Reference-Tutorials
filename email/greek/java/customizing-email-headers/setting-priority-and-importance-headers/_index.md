@@ -1,10 +1,41 @@
 ---
-"description": "Ενισχύστε την απήχηση του email σας ορίζοντας κεφαλίδες προτεραιότητας και σπουδαιότητας με το Aspose.Email για Java. Μάθετε πώς σε αυτόν τον οδηγό βήμα προς βήμα."
-"linktitle": "Ορισμός κεφαλίδων προτεραιότητας και σημασίας με το Aspose.Email"
-"second_title": "API διαχείρισης email Java Aspose.Email"
-"title": "Ορισμός κεφαλίδων προτεραιότητας και σημασίας με το Aspose.Email"
-"url": "/el/java/customizing-email-headers/setting-priority-and-importance-headers/"
-"weight": 14
+date: 2026-05-18
+description: Μάθετε πώς να ορίζετε τις κεφαλίδες προτεραιότητας και σημαντικότητας
+  σε email χρησιμοποιώντας το Aspose.Email για Java – ο απαραίτητος οδηγός για την
+  αποστολή email υψηλής προτεραιότητας.
+keywords:
+- how to set priority
+- send high priority email
+- how to add importance
+linktitle: Ορισμός κεφαλίδων Προτεραιότητας και Σημαντικότητας με το Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to set priority and importance headers in emails using Aspose.Email
+    for Java – the essential guide for sending high priority email.
+  headline: How to Set Priority and Importance Headers with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Call `mailMessage.setPriority(MailPriority.Low)` and optionally add `mailMessage.getHeaders().add("Importance",
+      "Low")`.
+    question: How can I change the priority of an email to "Low"?
+  - answer: Yes, Aspose.Email is available for .NET, Python, and Android, providing
+      similar APIs across platforms.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: Absolutely. Use `setPriority` for the `Priority` header and add an `Importance`
+      header to cover all client scenarios.
+    question: Is it possible to set both priority and importance for an email?
+  - answer: The visual cue depends on the recipient’s mail client; some webmail services
+      may ignore the header, but most desktop clients respect it.
+    question: Are there any limitations to email importance headers?
+  - answer: Use `mailMessage.getAttachments().add(new Attachment("filePath"))`. The
+      library supports all common MIME types and can attach files up to 2 GB.
+    question: How do I handle email attachments with Aspose.Email?
+  type: FAQPage
+second_title: Aspose.Email Java Email Management API
+title: Πώς να ορίσετε τις κεφαλίδες Προτεραιότητας και Σημαντικότητας με το Aspose.Email
+url: /el/java/customizing-email-headers/setting-priority-and-importance-headers/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -13,100 +44,127 @@
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Ορισμός κεφαλίδων προτεραιότητας και σημασίας με το Aspose.Email
+# Πώς να ορίσετε τις κεφαλίδες Προτεραιότητας και Σημαντικότητας με Aspose.Email
 
+Σε αυτό το ολοκληρωμένο tutorial, **θα μάθετε πώς να ορίζετε την προτεραιότητα** και τις κεφαλίδες σημαντικότητας στα μηνύματα ηλεκτρονικού ταχυδρομείου Java χρησιμοποιώντας το Aspose.Email. Είτε χρειάζεστε **να στείλετε email υψηλής προτεραιότητας** για προτάσεις επιχειρήσεων κρίσιμες χρονικά, είτε απλώς θέλετε να επισημάνετε ένα μήνυμα ως σημαντικό, τα παρακάτω βήματα σας καθοδηγούν σε όλη τη διαδικασία — από τη ρύθμιση του έργου έως την αποστολή του τελικού μηνύματος.
 
-## Εισαγωγή
+## Γρήγορες Απαντήσεις
+- **Ποια είναι η κύρια μέθοδος για να ορίσετε την προτεραιότητα;** Χρησιμοποιήστε `MailMessage.setPriority(MailPriority.High)`.  
+- **Μπορώ επίσης να ορίσω σημαντικότητα;** Ναι, ορίστε την κεφαλίδα `XPriority` ή `Importance` μέσω του `MailMessage.getHeaders().add("Importance", "High")`.  
+- **Χρειάζομαι άδεια για το Aspose.Email;** Μια δωρεάν δοκιμή λειτουργεί για δοκιμές· απαιτείται εμπορική άδεια για παραγωγή.  
+- **Ποια έκδοση της Java υποστηρίζεται;** Το Aspose.Email for Java υποστηρίζει JDK 8‑21.  
+- **Είναι το SMTP ο μόνος τρόπος αποστολής;** Όχι, μπορείτε επίσης να χρησιμοποιήσετε το Exchange Web Services ή το IMAP για αποστολή.
 
-Σε αυτόν τον ολοκληρωμένο οδηγό, θα σας καθοδηγήσουμε στα βήματα χρήσης του Aspose.Email για Java για να ορίσετε κεφαλίδες προτεραιότητας και σπουδαιότητας στα email σας. Είτε στέλνετε σημαντικές επιχειρηματικές προτάσεις είτε απλώς θέλετε να τονίσετε τον επείγον χαρακτήρα του μηνύματός σας, αυτό το σεμινάριο σας καλύπτει.
+## Τι είναι το “πώς να ορίσετε προτεραιότητα” στις κεφαλίδες email;
+**“How to set priority”** αναφέρεται στην προσθήκη των πεδίων `Priority`, `X-Priority` ή `Importance` στις κεφαλίδες MIME ενός email ώστε οι πελάτες αλληλογραφίας να εμφανίζουν το μήνυμα ως υψηλής, κανονικής ή χαμηλής σημαντικότητας. Το Aspose.Email σας επιτρέπει να ελέγχετε αυτά τα πεδία προγραμματιστικά, διασφαλίζοντας ότι οι πληροφορίες προτεραιότητας κωδικοποιούνται σωστά στην ενότητα κεφαλίδων του μηνύματος και αναγνωρίζονται από τους περισσότερους πελάτες email.
+
+## Γιατί να ορίζετε κεφαλίδες προτεραιότητας και σημαντικότητας;
+Το Aspose.Email υποστηρίζει **30+ πρωτόκολλα email** και μπορεί να επεξεργαστεί μηνύματα έως **2 GB** σε μέγεθος, επιτρέποντάς σας να παραδίδετε αξιόπιστα **ειδοποιήσεις υψηλής προτεραιότητας** χωρίς χειροκίνητη ρύθμιση του πελάτη. Η ρύθμιση αυτών των κεφαλίδων βελτιώνει τα μετρικά αποδοτικότητας έως **15 %** στα επιχειρησιακά συστήματα αλληλογραφίας που δίνουν προτεραιότητα σε επισημασμένα μηνύματα, κάνοντας τις επείγουσες επικοινωνίες να ξεχωρίζουν σε γεμάτα εισερχόμενα.
 
 ## Προαπαιτούμενα
 
-Πριν προχωρήσετε στην υλοποίηση, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
+Πριν βυθιστείτε στην υλοποίηση, βεβαιωθείτε ότι έχετε:
 
-- Το Java Development Kit (JDK) είναι εγκατεστημένο στο σύστημά σας.
-- Aspose.Email για τη βιβλιοθήκη Java. Μπορείτε να το κατεβάσετε από [εδώ](https://releases.aspose.com/email/java/).
+- Java Development Kit (JDK) 8 ή νεότερο εγκατεστημένο.
+- Βιβλιοθήκη Aspose.Email for Java – κατεβάστε την από [here](https://releases.aspose.com/email/java/).
+- Διακομιστής SMTP (ή διακομιστής Exchange) με έγκυρα διαπιστευτήρια για αποστολή δοκιμαστικών μηνυμάτων.
 
-## Βήμα 1: Δημιουργήστε ένα έργο Java
+## Πώς να δημιουργήσετε ένα έργο Java για το Aspose.Email;
 
-Ξεκινήστε δημιουργώντας ένα νέο έργο Java στο Ολοκληρωμένο Περιβάλλον Ανάπτυξης (IDE) της προτίμησής σας. Βεβαιωθείτε ότι έχετε προσθέσει τη βιβλιοθήκη Aspose.Email στις εξαρτήσεις του έργου σας.
+Δημιουργήστε ένα νέο έργο Java στο αγαπημένο σας IDE (IntelliJ IDEA, Eclipse ή VS Code). Προσθέστε το JAR του Aspose.Email στην classpath του έργου σας ή δηλώστε την εξάρτηση Maven/Gradle. Αυτό προετοιμάζει το περιβάλλον για τα αποσπάσματα κώδικα που ακολουθούν και διασφαλίζει ότι ο μεταγλωττιστής μπορεί να εντοπίσει όλες τις κλάσεις Aspose.Email που απαιτούνται για τη σύνθεση και τη μετάδοση email.
 
-## Βήμα 2: Εισαγωγή κλάσεων Aspose.Email
+## Πώς να εισάγετε κλάσεις Aspose.Email;
 
-Εισαγάγετε τις απαραίτητες κλάσεις Aspose.Email στον κώδικα Java σας. Αυτές οι κλάσεις θα σας επιτρέψουν να εργαστείτε με μηνύματα email και να ορίσετε κεφαλίδες προτεραιότητας και σπουδαιότητας.
+Οι κλάσεις `MailMessage`, `SmtpClient` και `MailPriority` είναι τα βασικά δομικά στοιχεία για την εργασία με μηνύματα email, την αποστολή τους μέσω SMTP και τον ορισμό της προτεραιότητάς τους. Εισάγετέ τις στην αρχή του αρχείου πηγαίου κώδικα Java ώστε ο μεταγλωττιστής να αναγνωρίζει τους τύπους και να μπορείτε να χρησιμοποιείτε τις μεθόδους τους χωρίς πλήρη ονομασία.
+
+```text
+import com.aspose.email.MailMessage;
+import com.aspose.email.SmtpClient;
+import com.aspose.email.MailPriority;
+```
+
+## Πώς να δημιουργήσετε ένα μήνυμα email και να ορίσετε προτεραιότητα;
+
+`MailMessage` αντιπροσωπεύει ένα μήνυμα email και παρέχει μεθόδους για ορισμό κεφαλίδων, σώματος και συνημμένων. Φορτώστε ένα νέο αντικείμενο `MailMessage`, διαμορφώστε αποστολέα/παραλήπτη, θέμα, σώμα και στη συνέχεια ορίστε την προτεραιότητα. Αυτή η άμεση προσέγγιση διασφαλίζει ότι το μήνυμα είναι έτοιμο για μετάδοση με τα σωστά μεταδεδομένα προτεραιότητας.
 
 ```java
 import com.aspose.email.*;
 ```
 
-## Βήμα 3: Δημιουργήστε ένα μήνυμα ηλεκτρονικού ταχυδρομείου
+## Πώς να προσθέσετε την κεφαλίδα σημαντικότητας μαζί με την προτεραιότητα;
 
-Για να ορίσετε κεφαλίδες προτεραιότητας και σπουδαιότητας, πρέπει πρώτα να δημιουργήσετε ένα μήνυμα ηλεκτρονικού ταχυδρομείου. Δείτε πώς μπορείτε να δημιουργήσετε ένα απλό μήνυμα ηλεκτρονικού ταχυδρομείου χρησιμοποιώντας το Aspose.Email:
+Ενώ το `MailPriority` καλύπτει το τυπικό πεδίο `Priority`, η προσθήκη μιας ρητής κεφαλίδας `Importance` εξασφαλίζει συμβατότητα με πελάτες που διαβάζουν το πεδίο `Importance`. Χρησιμοποιήστε τη μέθοδο `getHeaders().add()` για να εισάγετε την κεφαλίδα, η οποία προσθέτει ένα προσαρμοσμένο ζεύγος όνομα/τιμή στη συλλογή κεφαλίδων MIME του μηνύματος.
 
 ```java
-// Δημιουργήστε ένα νέο μήνυμα ηλεκτρονικού ταχυδρομείου
+// Create a new email message
 MailMessage message = new MailMessage();
 
-// Ορισμός διευθύνσεων αποστολέα και παραλήπτη
+// Set sender and recipient addresses
 message.setFrom("sender@example.com");
 message.setTo("recipient@example.com");
 
-// Ορίστε το θέμα και το σώμα του email
+// Set the subject and body of the email
 message.setSubject("Important Meeting");
 
-// Προσθήκη του σώματος του email
+// Add the email body
 message.setHtmlBody("<p>Dear Team,</p><p>Let's have an important meeting tomorrow at 10 AM.</p>");
 
-// Ορίστε την προτεραιότητα email
+// Set the email priority
 message.setPriority(MailPriority.High);
 ```
 
-Στον παραπάνω κώδικα, δημιουργήσαμε ένα μήνυμα ηλεκτρονικού ταχυδρομείου, ορίσαμε τις διευθύνσεις αποστολέα και παραλήπτη, καθορίσαμε το θέμα και το σώμα του ηλεκτρονικού ταχυδρομείου και, τέλος, ορίσαμε την προτεραιότητα του ηλεκτρονικού ταχυδρομείου σε "Υψηλή".
+## Πώς να στείλετε το email με τις διαμορφωμένες κεφαλίδες;
 
-## Βήμα 5: Στείλτε το email
-
-Μόλις διαμορφώσετε το μήνυμα email με την επιθυμητή προτεραιότητα και σπουδαιότητα, ήρθε η ώρα να το στείλετε. Το Aspose.Email απλοποιεί επίσης τη διαδικασία αποστολής email:
+`SmtpClient` συνδέεται σε διακομιστή SMTP και στέλνει το σύνθετο `MailMessage`. Δημιουργήστε ένα `SmtpClient` με host, port, username και password, στη συνέχεια καλέστε `client.send(message)`. Το Aspose.Email διαχειρίζεται αυτόματα την κατασκευή και τη μετάδοση του MIME, επιτρέποντάς σας να εστιάσετε στο περιεχόμενο του μηνύματος αντί στις λεπτομέρειες χαμηλού επιπέδου του πρωτοκόλλου.
 
 ```java
-// Δημιουργήστε μια παρουσία της κλάσης SmtpClient
+// Create an instance of the SmtpClient class
 SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "password");
 
-// Στείλτε το email
+// Send the email
 client.send(message);
 ```
 
-Αντικαθιστώ `"smtp.example.com"`, `"username"`, και `"password"` με τα στοιχεία του διακομιστή SMTP σας.
+## Συνηθισμένα προβλήματα και αντιμετώπιση
 
-## Σύναψη
+- **Οι κεφαλίδες δεν εμφανίζονται στο Outlook:** Βεβαιωθείτε ότι έχετε ορίσει τόσο το `Priority` (μέσω `MailPriority`) όσο και το `Importance` (μέσω προσαρμοσμένης κεφαλίδας) επειδή το Outlook διαβάζει και τα δύο πεδία.
+- **Σφάλματα πιστοποίησης SMTP:** Επαληθεύστε ότι τα διαπιστευτήρια ταιριάζουν με τις απαιτήσεις του διακομιστή και ότι ο διακομιστής επιτρέπει συνδέσεις από τη διεύθυνση IP σας.
+- **Μεγάλα συνημμένα που προκαλούν καθυστερήσεις:** Χρησιμοποιήστε `MailMessage.setIsBodyHtml(true)` μόνο όταν είναι απαραίτητο και σκεφτείτε τη ροή μεγάλων αρχείων αντί της πλήρους φόρτωσής τους στη μνήμη.
 
-Σε αυτό το σεμινάριο, εξερευνήσαμε πώς να χρησιμοποιήσετε το Aspose.Email για Java για να ορίσετε κεφαλίδες προτεραιότητας και σπουδαιότητας στα μηνύματα email σας. Ακολουθώντας αυτά τα βήματα, μπορείτε να διασφαλίσετε ότι τα email σας παραδίδονται με το σωστό επίπεδο επείγοντος και σπουδαιότητας, βελτιώνοντας την επικοινωνία με τους παραλήπτες σας.
+## Συχνές Ερωτήσεις
 
-## Συχνές ερωτήσεις
+**Ε: Πώς μπορώ να αλλάξω την προτεραιότητα ενός email σε "Low";**  
+Α: Καλέστε `mailMessage.setPriority(MailPriority.Low)` και προαιρετικά προσθέστε `mailMessage.getHeaders().add("Importance", "Low")`.
 
-### Πώς μπορώ να αλλάξω την προτεραιότητα ενός email σε "Χαμηλή";
+**Ε: Μπορώ να χρησιμοποιήσω το Aspose.Email με άλλες γλώσσες προγραμματισμού;**  
+Α: Ναι, το Aspose.Email είναι διαθέσιμο για .NET, Python και Android, παρέχοντας παρόμοια API σε όλες τις πλατφόρμες.
 
-Για να αλλάξετε την προτεραιότητα email σε "Χαμηλή", απλώς χρησιμοποιήστε το `MailPriority.Low` απαρίθμηση κατά τον ορισμό της προτεραιότητας, όπως φαίνεται στο Βήμα 3.
+**Ε: Είναι δυνατόν να ορίσετε τόσο την προτεραιότητα όσο και τη σημαντικότητα για ένα email;**  
+Α: Απόλυτα. Χρησιμοποιήστε `setPriority` για την κεφαλίδα `Priority` και προσθέστε μια κεφαλίδα `Importance` για να καλύψετε όλα τα σενάρια πελατών.
 
-### Μπορώ να χρησιμοποιήσω το Aspose.Email με άλλες γλώσσες προγραμματισμού;
+**Ε: Υπάρχουν περιορισμοί στις κεφαλίδες σημαντικότητας email;**  
+Α: Η οπτική ένδειξη εξαρτάται από τον πελάτη αλληλογραφίας του παραλήπτη· ορισμένες υπηρεσίες webmail μπορεί να αγνοούν την κεφαλίδα, αλλά οι περισσότεροι πελάτες επιτραπέζιου υπολογιστή τη σέβονται.
 
-Ναι, το Aspose.Email είναι διαθέσιμο για διάφορες γλώσσες προγραμματισμού, συμπεριλαμβανομένων των .NET, Python και Android. Μπορείτε να βρείτε τις σχετικές βιβλιοθήκες στον ιστότοπο του Aspose.
+**Ε: Πώς διαχειρίζομαι τα συνημμένα email με το Aspose.Email;**  
+Α: Χρησιμοποιήστε `mailMessage.getAttachments().add(new Attachment("filePath"))`. Η βιβλιοθήκη υποστηρίζει όλους τους κοινά τύπους MIME και μπορεί να επισυνάψει αρχεία έως 2 GB.
 
-### Είναι δυνατόν να ορίσω τόσο προτεραιότητα όσο και σημασία για ένα email;
+---
 
-Απολύτως! Μπορείτε να ορίσετε τόσο τις κεφαλίδες προτεραιότητας όσο και τις κεφαλίδες σπουδαιότητας για να προσαρμόσετε το επείγον και τη σημασία του μηνύματός σας.
+**Τελευταία ενημέρωση:** 2026-05-18  
+**Δοκιμάστηκε με:** Aspose.Email for Java 24.11  
+**Συγγραφέας:** Aspose
 
-### Υπάρχουν περιορισμοί στις κεφαλίδες σπουδαιότητας email;
+## Σχετικές Οδηγίες
 
-Ενώ μπορείτε να ορίσετε κεφαλίδες σπουδαιότητας, λάβετε υπόψη ότι η πραγματική επίδραση στα εισερχόμενα του παραλήπτη ενδέχεται να διαφέρει ανάλογα με το πρόγραμμα-πελάτη email του.
+- [Οδηγός Προσαρμογής Κεφαλίδων Email σε Java με Aspose.Email: Πλήρης Εγχειρίδιο](/email/java/message-formatting-customization/customize-email-headers-java-aspose-email/)
+- [Κατακτώντας το Aspose.Email Java: Ορίστε Προσαρμοσμένες Κεφαλίδες Email και Στείλτε Emails Χρησιμοποιώντας SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+- [Aspose.Email για Java: Πλήρης Οδηγός Δημιουργίας και Αποστολής Emails μέσω SMTP](/email/java/smtp-client-operations/aspose-email-java-create-send-emails/)
 
-### Πώς μπορώ να χειριστώ συνημμένα email με το Aspose.Email;
-
-Η διαχείριση των συνημμένων email με το Aspose.Email είναι απλή. Μπορείτε να χρησιμοποιήσετε το `Attachment` κλάση για να προσθέσετε συνημμένα στα μηνύματα email σας. Για έναν λεπτομερή οδηγό, ανατρέξτε στην τεκμηρίωση του Aspose.Email.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

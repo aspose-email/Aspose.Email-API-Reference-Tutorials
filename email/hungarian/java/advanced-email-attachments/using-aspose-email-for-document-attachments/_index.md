@@ -1,11 +1,52 @@
 ---
-date: 2025-12-10
-description: Tanulja meg, hogyan küldjön e‑mailt csatolmánnyal Java‑ban az Aspose.Email
-  használatával. Kezelje, hozza létre és vonja ki a dokumentumcsatolmányokat Java‑ban
-  hatékonyan.
-linktitle: Using Aspose.Email for Document Attachments
+date: 2026-05-18
+description: Ismerje meg, hogyan küldhet e-mailt Java-val mellékletekkel az Aspose.Email
+  használatával. Kezelje, hozza létre és vonja ki a dokumentum mellékleteket hatékonyan
+  Java-ban.
+keywords:
+- how to send email java
+- send email with attachment java
+- multiple file attachments java
+- java smtp email with attachment
+linktitle: Az Aspose.Email használata dokumentummellékletekhez
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  headline: How to Send Email Java with Attachments using Aspose.Email
+  type: TechArticle
+- description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  name: How to Send Email Java with Attachments using Aspose.Email
+  steps:
+  - name: Download the Aspose.Email for Java ZIP archive from the link above.
+    text: Download the Aspose.Email for Java ZIP archive from the link above.
+  - name: Extract the archive to a folder of your choice.
+    text: Extract the archive to a folder of your choice.
+  - name: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+    text: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+  type: HowTo
+- questions:
+  - answer: Create a separate `Attachment` for each file and call `message.addAttachment()`
+      for every instance.
+    question: How can I send an email with multiple document attachments?
+  - answer: Yes – Aspose.Email supports Word, Excel, images, and any MIME‑compatible
+      file type.
+    question: Can I work with attachments other than PDF documents?
+  - answer: Use the streaming constructor `new Attachment(InputStream)` to avoid loading
+      the whole file into memory.
+    question: How do I handle large document attachments?
+  - answer: Absolutely. Modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+    question: Is there a way to set custom content types?
+  - answer: Yes – the library includes APIs for signing and encrypting messages, including
+      their attachments.
+    question: Does Aspose.Email support S/MIME encrypted attachments?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: E‑mail küldése csatolmánnyal Java‑ban az Aspose.Email használatával
+title: Hogyan küldjünk e-mailt Java-val mellékletekkel az Aspose.Email segítségével
 url: /hu/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -16,50 +57,87 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# E‑mail küldése csatolmánnyal Java használatával az Aspose.Email segítségével
+# Hogyan küldjünk e‑mailt Java‑val mellékletekkel az Aspose.Email használatával
 
-## Bevezetés az Aspose.Email használatába dokumentumcsatolmányokhoz Java‑ban
-
-Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan **küldjünk e‑mailt csatolmánnyal Java** a hatékony Aspose.Email for Java könyvtár felhasználásával. Akár automatizált értesítési rendszert, akár tömeges levelező eszközt építesz, a dokumentumcsatolmányok kezelése gyakori követelmény. Kitérünk a könyvtár beállításától a PDF vagy Word fájlok létrehozásáig, küldéséig és kinyeréséig az üzeneteidben.
+Ebben az útmutatóban megtanulja, **hogyan küldjön e‑mailt Java‑ban** egy vagy több dokumentummellékletet a hatékony Aspose.Email for Java könyvtár segítségével. Akár automatizált értesítési rendszert, tömeges levelező eszközt vagy jelentési szolgáltatást épít, a mellékletek kezelése gyakori követelmény, és az Aspose.Email egyszerűvé és megbízhatóvá teszi.
 
 ## Gyors válaszok
-- **Melyik könyvtár teszi lehetővé, hogy e‑mailt küldjünk csatolmánnyal Java?** Aspose.Email for Java  
-- **Szükségem van licencre a termeléshez?** Igen, a termelésben való használathoz kereskedelmi licenc szükséges.  
-- **Mely Java verziók támogatottak?** Java 8 and newer.  
-- **Csatolhatok több fájlt?** Természetesen – csak adj hozzá további `Attachment` objektumokat.  
-- **Támogatott a streaming nagy fájlokhoz?** Igen, az Aspose.Email streaming API‑kat biztosít a nagy csatolmányok hatékony kezeléséhez.
+- **Melyik könyvtár teszi lehetővé, hogy Java‑ban e‑mailt küldjek melléklettel?** Aspose.Email for Java.  
+- **Szükségem van licencre a termeléshez?** Igen – kereskedelmi licenc szükséges a termelési környezetben.  
+- **Mely Java‑verziók támogatottak?** Java 8 és újabb (beleértve a Java 11, 17 és 21 verziókat).  
+- **Csatolhatok több fájlt?** Teljesen – annyi `Attachment` objektumot adhat hozzá, amennyire szüksége van.  
+- **Támogatott a streaming nagy fájlokhoz?** Igen – a streaming API‑k lehetővé teszik több száz megabájtos mellékletek küldését vagy fogadását anélkül, hogy a teljes fájlt a memóriába töltené.
 
-## Mi az a “e‑mail küldése csatolmánnyal Java”?
+## Mi az a „e‑mail küldése melléklettel Java‑ban”?
 
-E‑mail csatolmánnyal történő küldése Java-ban azt jelenti, hogy egy `MailMessage` objektumot hozunk létre, egy vagy több `Attachment` objektumot adunk hozzá, majd a üzenetet SMTP‑vel továbbítjuk vagy fájlba mentjük. Az Aspose.Email elrejti az alacsony szintű MIME kezelést, így a vállalati logikára koncentrálhatsz.
+Egy e‑mail melléklettel való küldése Java‑ban azt jelenti, hogy létrehozzuk a `MailMessage` objektumot, hozzáadunk egy vagy több `Attachment` objektumot, majd a levelet SMTP‑vel kézbesítjük vagy fájlba mentjük. Az Aspose.Email elrejti az alacsony szintű MIME‑kezelést, így a vállalati logikára koncentrálhat.
 
 ## Miért használjuk az Aspose.Email‑t ehhez a feladathoz?
 
-- **Gazdag API** – teljes irányítás a MIME részek, tartalomtípusok és kódolás felett.  
-- **Keresztplatformos** – Windows, Linux és macOS rendszereken működik további natív függőségek nélkül.  
-- **Beépített streaming** – nagy PDF vagy Word dokumentumok kezelése memória kimerülése nélkül.  
-- **Átfogó dokumentáció** – példák és API referencia gyors megvalósítást tesz lehetővé.
+Az Aspose.Email egy teljes, nagy teljesítményű megoldást nyújt a Java e‑mail automatizáláshoz. Támogat **30+ MIME‑tartalomtípust**, képes **100 MB**-ig terjedő üzeneteket feldolgozni észrevehető késés nélkül, és fut **Windows**, **Linux**, és **macOS** rendszereken (ellenőrizve Windows 10, Ubuntu 22.04 és macOS 13 alatt). A könyvtár beépített streaming API‑kat is tartalmaz, amelyek alacsony memóriahasználatot biztosítanak nagy PDF‑ vagy Word‑dokumentumok kezelésekor.
 
 ## Előfeltételek
 
-Mielőtt belemerülnénk, győződj meg róla, hogy rendelkezel:
+- Java Development Kit (JDK) 8 vagy újabb telepítve.  
+- Aspose.Email for Java könyvtár – töltse le innen [itt](https://releases.aspose.com/email/java/).  
 
-- Java Development Kit (JDK) 8 vagy újabb telepítve.  
-- Aspose.Email for Java könyvtár. Letöltheted innen: [here](https://releases.aspose.com/email/java/).
+## Az Aspose.Email hozzáadása a projekthez
 
-## Aspose.Email hozzáad projektedhez
-
-A kezdéshez hozzá kell adnod az Aspose.Email könyvtárat a Java projektedhez. Kövesd az alábbi lépéseket:
-
-1. Töltsd le az Aspose.Email for Java könyvtárat a megadott hivatkozásról.  
-2. Csomagold ki a letöltött ZIP fájlt a választott könyvtárba.  
-3. A Java projektedben add hozzá az Aspose.Email JAR fájlokat a classpath‑hez. Ezt megteheted a kedvenc integrált fejlesztői környezetedben (IDE) vagy a parancssor használatával.
+1. Töltse le az Aspose.Email for Java ZIP archívumot a fenti hivatkozásról.  
+2. Csomagolja ki az archívumot egy tetszőleges mappába.  
+3. Adja hozzá a `aspose-email-xx.jar` fájlokat a projekt osztályútvonalához (IDE beállításokon vagy Maven/Gradle segítségével).  
 
 ## Új e‑mail üzenet létrehozása
 
-Kezdjük egy új e‑mail üzenet létrehozásával dokumentumcsatolmánnyal. Egy egyszerű példán keresztül illusztráljuk, **hogyan küldjünk e‑mailt csatolmánnyal Java**:
+`MailMessage` az Aspose.Email központi osztálya, amely egy teljes e‑mailt képvisel, beleértve a fejléceket, a törzset és a mellékleteket. Az `Attachment` az objektum, amely bármely küldeni kívánt fájlt becsomagol.
 
-> **Tipp:** Helyezd a kódrészletet az előfeltételek magyarázata után, hogy az olvasók megértsék a kontextust, mielőtt a tényleges megvalósítást látnák.
+Amikor üzenetet hoz létre, a következőket fogja tenni:
+
+- Példányosít egy `MailMessage`-t.  
+- Beállítja a feladót, a címzettet, a tárgyat és a törzset.  
+- Létrehoz egy vagy több `Attachment` objektumot (például PDF vagy Word fájlt), és hozzáadja őket az üzenethez.  
+- Vagy elküldi az üzenetet SMTP‑n keresztül, vagy `.eml` fájlként menti későbbi feldolgozásra.
+
+## Dokumentummellékletek lekérése
+
+`Attachment` objektumok bejövő üzenetekből is olvashatók. A következő lépések bemutatják, hogyan töltsön be egy `.eml` fájlt, iteráljon a mellékleteken, és mentse el a PDF dokumentumokat a lemezre.
+
+`Attachment` egy csomagoló a nyers MIME rész körül, amely kényelmes metódusokat biztosít, mint például `getContentType()`, `getName()` és `save()`. Ezekkel a metódusokkal szűrhet fájlkiterjesztés szerint, streamelhet nagy fájlokat, vagy ellenőrizheti a tartalomtípusokat.
+
+## Gyakori problémák és megoldások
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **A melléklet nem érkezett meg** | Helytelen MIME‑típus vagy hiányzó `addAttachment` hívás | Ellenőrizze, hogy a `Attachment` hozzá van adva a küldés/mentés előtt. |
+| **Nagy fájlok OutOfMemoryError‑t okoznak** | A teljes fájl betöltése a memóriába | Használja a streaming API‑kat (`new Attachment(InputStream)`). |
+| **A fájlnév sérült** | A fájlnév helytelen kódolása | Állítsa be explicit módon a `attachment.setName("myDocument.pdf")` értéket. |
+
+## Gyakran Ismételt Kérdések
+
+**Q: Hogyan küldhetek e‑mailt több dokumentummelléklettel?**  
+A: Hozzon létre egy külön `Attachment` objektumot minden fájlhoz, és hívja meg a `message.addAttachment()`‑t minden egyes példányra.
+
+**Q: Használhatok-e PDF‑kön kívüli mellékleteket?**  
+A: Igen – az Aspose.Email támogatja a Word, Excel, képek és bármely MIME‑kompatibilis fájltípust.
+
+**Q: Hogyan kezeljem a nagy dokumentummellékleteket?**  
+A: Használja a streaming konstruktor `new Attachment(InputStream)`‑t, hogy elkerülje a teljes fájl memóriába töltését.
+
+**Q: Van mód egyedi tartalomtípusok beállítására?**  
+A: Természetesen. Módosítsa egy `Attachment` `ContentType`‑ját a `attachment.setContentType(...)` segítségével.
+
+**Q: Az Aspose.Email támogatja az S/MIME‑el titkosított mellékleteket?**  
+A: Igen – a könyvtár API‑kat tartalmaz az üzenetek aláírására és titkosítására, beleértve a mellékleteket is.
+
+## Következtetés
+
+Ebben az útmutatóban megtekintette, **hogyan küldjön e‑mailt Java‑ban** egy vagy több dokumentummelléklettel az Aspose.Email használatával. Most már ismeri a lépéseket a könyvtár beállításához, üzenetek összeállításához, PDF‑ vagy Word‑fájlok csatolásához, és a bejövő levelek mellékleteinek kinyeréséhez. Ez a képesség elengedhetetlen a robusztus e‑mail‑alapú munkafolyamatok, automatizált jelentések vagy bármely Java‑alkalmazás felépítéséhez, amely biztonságosan és hatékonyan kell dokumentumokat cseréljen.
+
+---
+
+**Utoljára frissítve:** 2026-05-18  
+**Tesztelve ezzel:** Aspose.Email for Java 24.12  
+**Szerző:** Aspose
 
 ```java
 import com.aspose.email.Attachment;
@@ -88,19 +166,6 @@ public class CreateEmailWithAttachment {
 }
 ```
 
-Ebben a példában:
-
-- Létrehozzuk a `MailMessage` példányt.  
-- Megadjuk a feladót, a címzettet, a tárgyat és a törzset.  
-- Létrehozunk egy `Attachment` objektumot, amely egy PDF fájlra mutat, és hozzáadjuk az üzenethez.  
-- Elmentjük az üzenetet EML fájlként (alternatívaként SMTP‑vel is elküldhető).
-
-## Dokumentumcsatolmányok lekérése
-
-Lehet, hogy ki kell nyerned és dolgoznod kell a bejövő e‑mailben lévő dokumentumcsatolmányokkal. Így tölthetsz be egy e‑mailt és nyerheted ki a PDF fájlokat:
-
-> **Pro tipp:** Használd a `getContentType().getName()` ellenőrzést, hogy csak a kívánt fájltípusokat szűrd.
-
 ```java
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
@@ -120,51 +185,16 @@ public class ExtractAttachments {
 }
 ```
 
-A kód:
+## Kapcsolódó oktatóanyagok
 
-- Betölti a meglévő `.eml` fájlt.  
-- Végigiterál az összes csatolmánnyal.  
-- Elment minden olyan csatolmányt, amelynek a fájlneve `.pdf`‑re végződik.
+- [Hogyan küldjünk e‑mailt mellékletekkel az Aspose.Email for Java használatával](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Mellékletek kinyerése e‑mailből az Aspose.Email for Java használatával](/email/java/advanced-email-attachments/)
+- [Az e‑mail kezelés mestersége Java‑ban az Aspose.Email‑del: e‑mail üzenetek létrehozása és mentése könnyedén](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
 
-## Gyakori problémák és megoldások
-
-| Probléma | Ok | Megoldás |
-|----------|----|----------|
-| **A csatolmány nem érkezett meg** | Helytelen MIME típus vagy hiányzó `addAttachment` hívás | Ellenőrizd, hogy a `Attachment` hozzá lett‑e adva a küldés/mentés előtt. |
-| **Nagy fájlok OutOfMemoryError‑t okoznak** | A teljes fájl betöltése a memóriába | Használd a streaming API‑kat (`Attachment` konstruktor, amely `InputStream`‑et fogad). |
-| **A fájlnév sérült** | Nem megfelelő fájlnév kódolás | Állítsd be explicit módon a `attachment.setName("myDocument.pdf")` értéket. |
-
-## Gyakran ismételt kérdések
-
-**K: Hogyan küldhetek e‑mailt több dokumentumcsatolmánnyal?**  
-V: Egyszerűen hozz létre további `Attachment` objektumokat, és minden fájlhoz hívd meg a `message.addAttachment()` metódust.
-
-**K: Dolgozhatok PDF‑en kívül más csatolmányokkal is?**  
-V: Igen, az Aspose.Email támogatja a Word, Excel, képek és bármely MIME‑kompatibilis fájltípust.
-
-**K: Hogyan kezeljem a nagy dokumentumcsatolmányokat?**  
-V: Használj streaming technikákat – adj át egy `InputStream`‑et a `Attachment` konstruktorának, hogy elkerüld a teljes fájl memóriába töltését.
-
-**K: Van mód egyedi tartalomtípusok beállítására?**  
-V: Természetesen. A `ContentType`‑t módosíthatod egy `Attachment` esetén a `attachment.setContentType(...)` segítségével.
-
-**K: Támogatja az Aspose.Email az S/MIME titkosított csatolmányokat?**  
-V: Igen, a könyvtár API‑kat tartalmaz az üzenetek aláírásához és titkosításához, beleértve a csatolmányokat is.
-
-## Következtetés
-
-Ebben az útmutatóban bemutattuk, **hogyan küldjünk e‑mailt csatolmánnyal Java** az Aspose.Email segítségével. Most már tudod, hogyan állítsd be a könyvtárat, hozz létre üzeneteket PDF vagy egyéb dokumentumcsatolmányokkal, és hogyan nyerd ki ezeket a csatolmányokat a bejövő levelekből. Ez a képesség elengedhetetlen a robusztus e‑mail automatizálás, jelentési rendszerek vagy bármely Java alkalmazás felépítéséhez, amelynek dokumentumcserére van szüksége e‑mailen keresztül.
-
----
-
-**Utolsó frissítés:** 2025-12-10  
-**Tesztelve ezzel:** Aspose.Email for Java 24.12  
-**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

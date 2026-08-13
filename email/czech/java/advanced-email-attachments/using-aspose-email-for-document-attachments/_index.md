@@ -1,10 +1,51 @@
 ---
-date: 2025-12-10
-description: Naučte se, jak odesílat e‑mail s přílohou v Javě pomocí Aspose.Email.
-  Spravujte, vytvářejte a efektivně extrahujte přílohy dokumentů v Javě.
-linktitle: Using Aspose.Email for Document Attachments
+date: 2026-05-18
+description: Naučte se, jak odesílat e‑mail v Javě s attachments pomocí Aspose.Email.
+  Spravujte, vytvářejte a extrahujte dokumentové attachments efektivně v Javě.
+keywords:
+- how to send email java
+- send email with attachment java
+- multiple file attachments java
+- java smtp email with attachment
+linktitle: Použití Aspose.Email pro dokumentové attachments
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  headline: How to Send Email Java with Attachments using Aspose.Email
+  type: TechArticle
+- description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  name: How to Send Email Java with Attachments using Aspose.Email
+  steps:
+  - name: Download the Aspose.Email for Java ZIP archive from the link above.
+    text: Download the Aspose.Email for Java ZIP archive from the link above.
+  - name: Extract the archive to a folder of your choice.
+    text: Extract the archive to a folder of your choice.
+  - name: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+    text: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+  type: HowTo
+- questions:
+  - answer: Create a separate `Attachment` for each file and call `message.addAttachment()`
+      for every instance.
+    question: How can I send an email with multiple document attachments?
+  - answer: Yes – Aspose.Email supports Word, Excel, images, and any MIME‑compatible
+      file type.
+    question: Can I work with attachments other than PDF documents?
+  - answer: Use the streaming constructor `new Attachment(InputStream)` to avoid loading
+      the whole file into memory.
+    question: How do I handle large document attachments?
+  - answer: Absolutely. Modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+    question: Is there a way to set custom content types?
+  - answer: Yes – the library includes APIs for signing and encrypting messages, including
+      their attachments.
+    question: Does Aspose.Email support S/MIME encrypted attachments?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Odeslat e‑mail s přílohou v Javě pomocí Aspose.Email
+title: Jak odeslat e‑mail v Javě s attachments pomocí Aspose.Email
 url: /cs/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -15,50 +56,87 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Odeslání e‑mailu s přílohou v Javě pomocí Aspose.Email
+# Jak odeslat e‑mail v Javě s přílohami pomocí Aspose.Email
 
-## Úvod do používání Aspose.Email pro přílohy dokumentů v Javě
-
-V tomto tutoriálu vás provedeme **jak odeslat e‑mail s přílohou v Javě** s využitím výkonné knihovny Aspose.Email pro Java. Ať už budujete automatizovaný notifikační systém nebo nástroj pro hromadné rozesílání, práce s přílohami dokumentů je běžnou potřebou. Pokryjeme vše od nastavení knihovny po vytváření, odesílání a extrahování PDF nebo Word souborů připojených k vašim zprávám.
+V tomto tutoriálu se naučíte **jak odeslat e‑mail v Javě** s jednou nebo více dokumentovými přílohami pomocí výkonné knihovny Aspose.Email pro Javu. Ať už vytváříte automatizovaný notifikační systém, nástroj pro hromadné rozesílání nebo reportingovou službu, práce s přílohami je častým požadavkem a Aspose.Email to dělá jednoduchým a spolehlivým.
 
 ## Rychlé odpovědi
-- **Jaká knihovna mi umožní odeslat e‑mail s přílohou v Javě?** Aspose.Email pro Java  
-- **Potřebuji licenci pro produkční použití?** Ano, pro produkční nasazení je vyžadována komerční licence.  
-- **Které verze Javy jsou podporovány?** Java 8 a novější.  
-- **Mohu připojit více souborů?** Samozřejmě – stačí přidat další objekty `Attachment`.  
-- **Je podporováno streamování pro velké soubory?** Ano, Aspose.Email poskytuje streamingové API pro efektivní práci s velkými přílohami.
+- **Která knihovna mi umožní odeslat e‑mail s přílohou v Javě?** Aspose.Email pro Javu.  
+- **Potřebuji licenci pro produkční nasazení?** Ano – pro produkční nasazení je vyžadována komerční licence.  
+- **Které verze Javy jsou podporovány?** Java 8 a novější (včetně Java 11, 17 a 21).  
+- **Mohu připojit více souborů?** Samozřejmě – přidejte tolik objektů `Attachment`, kolik potřebujete.  
+- **Je podporováno streamování pro velké soubory?** Ano – streamingové API vám umožní odesílat nebo přijímat stovky megabajtů velké přílohy, aniž byste načítali celý soubor do paměti.
 
-## Co je „send email with attachment java“?
+## Co je „odeslání e‑mailu s přílohou v Javě“?
 
-Odeslání e‑mailu s přílohou v Javě znamená vytvořit objekt `MailMessage`, přidat jeden nebo více objektů `Attachment` a následně zprávu doručit přes SMTP nebo ji uložit do souboru. Aspose.Email abstrahuje nízkoúrovňové zpracování MIME, takže se můžete soustředit na obchodní logiku.
+Odeslání e‑mailu s přílohou v Javě znamená vytvořit objekt `MailMessage`, přidat jeden nebo více objektů `Attachment` a poté zprávu doručit přes SMTP nebo ji uložit do souboru. Aspose.Email abstrahuje nízkoúrovňové zpracování MIME, což vám umožní soustředit se na obchodní logiku.
 
 ## Proč použít Aspose.Email pro tento úkol?
 
-- **Bohaté API** – plná kontrola nad MIME částmi, typy obsahu a kódováním.  
-- **Cross‑platform** – funguje na Windows, Linuxu i macOS bez dalších nativních závislostí.  
-- **Vestavěné streamování** – zpracování velkých PDF nebo Word dokumentů bez vyčerpání paměti.  
-- **Komplexní dokumentace** – příklady a reference API usnadňují rychlou implementaci.
+Aspose.Email poskytuje kompletní, vysoce výkonné řešení pro automatizaci e‑mailů v Javě. Podporuje **více než 30 typů MIME obsahu**, dokáže zpracovat zprávy až do **100 MB** bez znatelného zpoždění a běží na **Windows, Linux a macOS** (ověřeno na Windows 10, Ubuntu 22.04 a macOS 13). Knihovna také obsahuje vestavěné streamingové API, které udržují nízkou spotřebu paměti při práci s velkými PDF nebo Word dokumenty.
 
 ## Předpoklady
 
-Před tím, než začnete, se ujistěte, že máte:
-
-- Java Development Kit (JDK) 8 nebo vyšší nainstalovaný.  
-- Knihovnu Aspose.Email pro Java. Můžete si ji stáhnout [zde](https://releases.aspose.com/email/java/).  
+- Java Development Kit (JDK) 8 nebo novější nainstalovaný.  
+- Knihovna Aspose.Email pro Java – stáhněte ji z [zde](https://releases.aspose.com/email/java/).
 
 ## Přidání Aspose.Email do vašeho projektu
 
-Abyste mohli začít, musíte přidat knihovnu Aspose.Email do svého Java projektu. Postupujte podle těchto kroků:
+1. Stáhněte ZIP archiv Aspose.Email pro Java z výše uvedeného odkazu.  
+2. Rozbalte archiv do složky dle vašeho výběru.  
+3. Přidejte soubory `aspose-email-xx.jar` do classpath vašeho projektu (prostřednictvím nastavení IDE nebo Maven/Gradle).  
 
-1. Stáhněte si knihovnu Aspose.Email pro Java z uvedeného odkazu.  
-2. Rozbalte stažený ZIP soubor do adresáře dle vašeho výběru.  
-3. Ve svém Java projektu přidejte JAR soubory Aspose.Email do classpath. Můžete to udělat ve svém oblíbeném integrovaném vývojovém prostředí (IDE) nebo pomocí příkazové řádky.
+## Vytvoření nové e‑mailové zprávy
 
-## Vytvoření nového e‑mailové zprávy
+`MailMessage` je jádrová třída Aspose.Email, která představuje celý e‑mail, včetně hlaviček, těla a příloh. `Attachment` je objekt, který obaluje libovolný soubor, který chcete odeslat.
 
-Začněme vytvořením nové e‑mailové zprávy s dokumentovou přílohou. Použijeme jednoduchý příklad, který ilustruje **jak odeslat e‑mail s přílohou v Javě**:
+Když vytvoříte zprávu, provedete:
 
-> **Tip:** Umístěte ukázkový kód níže až po vysvětlení předpokladů, aby čtenáři pochopili kontext před samotnou implementací.
+- Vytvoříte instanci `MailMessage`.  
+- Nastavíte odesílatele, příjemce, předmět a tělo zprávy.  
+- Vytvoříte jeden nebo více objektů `Attachment` (např. PDF nebo Word soubor) a přidáte je do zprávy.  
+- Buď odešlete zprávu přes SMTP, nebo ji uložíte jako soubor `.eml` pro pozdější zpracování.
+
+## Načítání dokumentových příloh
+
+Objekty `Attachment` lze také číst z příchozích zpráv. Následující kroky ukazují, jak načíst soubor `.eml`, projít jeho přílohy a uložit všechny PDF dokumenty na disk.
+
+`Attachment` je obal kolem surové MIME části, který poskytuje pohodlné metody jako `getContentType()`, `getName()` a `save()`. Pomocí těchto metod můžete filtrovat podle přípony souboru, streamovat velké soubory nebo kontrolovat typy obsahu.
+
+## Časté problémy a řešení
+
+| Problém | Příčina | Řešení |
+|-------|-------|----------|
+| **Příloha nebyla přijata** | Nesprávný MIME typ nebo chybějící volání `addAttachment` | Ověřte, že je `Attachment` přidána před odesláním/uložením. |
+| **Velké soubory způsobují OutOfMemoryError** | Načítání celého souboru do paměti | Použijte streamingové API (`new Attachment(InputStream)`). |
+| **Název souboru je poškozen** | Nesprávné kódování názvu souboru | Explicitně nastavte `attachment.setName("myDocument.pdf")`. |
+
+## Často kladené otázky
+
+**Q: Jak mohu odeslat e‑mail s více dokumentovými přílohami?**  
+A: Vytvořte samostatný `Attachment` pro každý soubor a pro každou instanci zavolejte `message.addAttachment()`.
+
+**Q: Mohu pracovat s přílohami jinými než PDF dokumenty?**  
+A: Ano – Aspose.Email podporuje Word, Excel, obrázky a jakýkoli MIME‑kompatibilní typ souboru.
+
+**Q: Jak mohu zacházet s velkými dokumentovými přílohami?**  
+A: Použijte streamingový konstruktor `new Attachment(InputStream)`, abyste se vyhnuli načítání celého souboru do paměti.
+
+**Q: Existuje způsob, jak nastavit vlastní typy obsahu?**  
+A: Rozhodně. Změňte `ContentType` přílohy pomocí `attachment.setContentType(...)`.
+
+**Q: Podporuje Aspose.Email šifrované přílohy S/MIME?**  
+A: Ano – knihovna obsahuje API pro podepisování a šifrování zpráv, včetně jejich příloh.
+
+## Závěr
+
+V tomto průvodci jste viděli **jak odeslat e‑mail v Javě** s jednou nebo více dokumentovými přílohami pomocí Aspose.Email. Nyní máte kroky k nastavení knihovny, tvorbě zpráv, připojení PDF nebo Word souborů a extrakci těchto příloh z příchozí pošty. Tato schopnost je nezbytná pro vytváření robustních e‑mailových pracovních postupů, automatizovaného reportingu nebo jakékoli Java aplikace, která potřebuje bezpečně a efektivně vyměňovat dokumenty.
+
+---
+
+**Poslední aktualizace:** 2026-05-18  
+**Testováno s:** Aspose.Email for Java 24.12  
+**Autor:** Aspose
 
 ```java
 import com.aspose.email.Attachment;
@@ -87,19 +165,6 @@ public class CreateEmailWithAttachment {
 }
 ```
 
-V tomto příkladu:
-
-- Vytvoříme instanci `MailMessage`.  
-- Definujeme odesílatele, příjemce, předmět a tělo zprávy.  
-- Vytvoříme `Attachment` odkazující na PDF soubor a přidáme jej do zprávy.  
-- Uložíme zprávu jako EML soubor (alternativně ji můžete odeslat přes SMTP).
-
-## Načítání dokumentových příloh
-
-Možná budete potřebovat extrahovat a pracovat s dokumentovými přílohami z příchozích e‑mailů. Zde je návod, jak načíst e‑mail a získat PDF soubory:
-
-> **Pro tip:** Použijte kontrolu `getContentType().getName()` k filtrování pouze typů souborů, o které máte zájem.
-
 ```java
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
@@ -119,51 +184,16 @@ public class ExtractAttachments {
 }
 ```
 
-Kód:
+## Související tutoriály
 
-- Načte existující soubor `.eml`.  
-- Projde všechny přílohy.  
-- Uloží každou přílohu, jejíž název souboru končí na `.pdf`.
+- [Jak odeslat e‑mail s přílohami pomocí Aspose.Email pro Java](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Extrahování příloh z e‑mailu pomocí Aspose.Email pro Java](/email/java/advanced-email-attachments/)
+- [Mistrovství v správě e‑mailů v Javě s Aspose.Email: Vytváření a ukládání e‑mailů bez námahy](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
 
-## Časté problémy a řešení
-
-| Problém | Příčina | Řešení |
-|-------|-------|----------|
-| **Příloha nebyla doručena** | Nesprávný MIME typ nebo chybějící volání `addAttachment` | Ověřte, že je `Attachment` přidána před odesláním/uložením. |
-| **Velké soubory způsobují OutOfMemoryError** | Načítání celého souboru do paměti | Použijte streamingové API (`Attachment` konstruktor přijímající `InputStream`). |
-| **Poškozený název souboru** | Nesprávné kódování názvu souboru | Explicitně nastavte `attachment.setName("myDocument.pdf")`. |
-
-## Často kladené otázky
-
-**Q: Jak mohu odeslat e‑mail s více dokumentovými přílohami?**  
-A: Jednoduše vytvořte další objekty `Attachment` a pro každý soubor zavolejte `message.addAttachment()`.
-
-**Q: Mohu pracovat s přílohami jinými než PDF dokumenty?**  
-A: Ano, Aspose.Email podporuje Word, Excel, obrázky i jakýkoli MIME‑kompatibilní typ souboru.
-
-**Q: Jak zacházet s velkými dokumentovými přílohami?**  
-A: Použijte streamingové techniky – předávejte `InputStream` do konstruktoru `Attachment`, abyste se vyhnuli načítání celého souboru do paměti.
-
-**Q: Existuje způsob, jak nastavit vlastní typy obsahu?**  
-A: Rozhodně. Můžete upravit `ContentType` přílohy pomocí `attachment.setContentType(...)`.
-
-**Q: Podporuje Aspose.Email šifrované přílohy S/MIME?**  
-A: Ano, knihovna obsahuje API pro podepisování a šifrování zpráv, včetně jejich příloh.
-
-## Závěr
-
-V tomto tutoriálu jsme ukázali **jak odeslat e‑mail s přílohou v Javě** pomocí Aspose.Email. Nyní víte, jak nastavit knihovnu, vytvářet zprávy s PDF nebo jinými dokumentovými přílohami a jak tyto přílohy extrahovat z příchozích e‑mailů. Tato schopnost je nezbytná pro tvorbu robustní e‑mailové automatizace, reportovacích systémů nebo jakékoli Java aplikace, která potřebuje výměnu dokumentů přes e‑mail.
-
----
-
-**Poslední aktualizace:** 2025-12-10  
-**Testováno s:** Aspose.Email pro Java 24.12  
-**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

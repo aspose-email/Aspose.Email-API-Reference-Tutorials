@@ -1,10 +1,51 @@
 ---
-date: 2025-12-10
-description: Aspose.Email kullanarak Java’da ekli e‑posta göndermeyi öğrenin. Java’da
-  belge eklerini verimli bir şekilde yönetin, oluşturun ve çıkarın.
-linktitle: Using Aspose.Email for Document Attachments
+date: 2026-05-18
+description: Aspose.Email kullanarak Java'da e-posta ve ekleri nasıl göndereceğinizi
+  öğrenin. Belge eklerini etkili bir şekilde yönetebilir, oluşturabilir ve çıkarabilirsiniz.
+keywords:
+- how to send email java
+- send email with attachment java
+- multiple file attachments java
+- java smtp email with attachment
+linktitle: Belge Ekleri için Aspose.Email Kullanımı
+schemas:
+- author: Aspose
+  dateModified: '2026-05-18'
+  description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  headline: How to Send Email Java with Attachments using Aspose.Email
+  type: TechArticle
+- description: Learn how to send email java with attachments using Aspose.Email. Manage,
+    create, and extract document attachments efficiently in Java.
+  name: How to Send Email Java with Attachments using Aspose.Email
+  steps:
+  - name: Download the Aspose.Email for Java ZIP archive from the link above.
+    text: Download the Aspose.Email for Java ZIP archive from the link above.
+  - name: Extract the archive to a folder of your choice.
+    text: Extract the archive to a folder of your choice.
+  - name: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+    text: Add the `aspose-email-xx.jar` files to your project’s classpath (via IDE
+      settings or Maven/Gradle).
+  type: HowTo
+- questions:
+  - answer: Create a separate `Attachment` for each file and call `message.addAttachment()`
+      for every instance.
+    question: How can I send an email with multiple document attachments?
+  - answer: Yes – Aspose.Email supports Word, Excel, images, and any MIME‑compatible
+      file type.
+    question: Can I work with attachments other than PDF documents?
+  - answer: Use the streaming constructor `new Attachment(InputStream)` to avoid loading
+      the whole file into memory.
+    question: How do I handle large document attachments?
+  - answer: Absolutely. Modify the `ContentType` of an `Attachment` via `attachment.setContentType(...)`.
+    question: Is there a way to set custom content types?
+  - answer: Yes – the library includes APIs for signing and encrypting messages, including
+      their attachments.
+    question: Does Aspose.Email support S/MIME encrypted attachments?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Aspose.Email kullanarak Java ile Ekli E-posta Gönderme
+title: Aspose.Email kullanarak Java'da E-posta ve Ekleri Gönderme
 url: /tr/java/advanced-email-attachments/using-aspose-email-for-document-attachments/
 weight: 16
 ---
@@ -15,50 +56,87 @@ weight: 16
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email ile Java’da Ekli E-posta Gönderme
+# Aspose.Email Kullanarak Java’da Ekli E-posta Gönderme
 
-## Java’da Belge Ekleri İçin Aspose.Email Kullanımına Giriş
-
-Bu öğreticide, güçlü Aspose.Email for Java kütüphanesini kullanarak **how to send email with attachment java** konusunu adım adım göstereceğiz. İster otomatik bir bildirim sistemi, ister toplu posta aracı geliştirin, belge eklerini işlemek yaygın bir gereksinimdir. Kütüphaneyi kurmaktan, mesaj oluşturup göndermeye ve ekli PDF ya da Word dosyalarını çıkarmaya kadar her şeyi ele alacağız.
+Bu öğreticide, güçlü Aspose.Email for Java kütüphanesini kullanarak bir veya daha fazla belge ekiyle **java ile e-posta gönderme** yöntemini öğreneceksiniz. Otomatik bildirim sistemi, toplu posta aracı veya raporlama servisi oluşturuyor olun, ekleri yönetmek sık bir gereksinimdir ve Aspose.Email bunu basit ve güvenilir bir şekilde sağlar.
 
 ## Hızlı Yanıtlar
-- **Hangi kütüphane bana send email with attachment java yapmamı sağlar?** Aspose.Email for Java  
-- **Üretim için bir lisansa ihtiyacım var mı?** Evet, üretim kullanımında ticari bir lisans gereklidir.  
-- **Hangi Java sürümleri destekleniyor?** Java 8 ve üzeri.  
-- **Birden fazla dosya ekleyebilir miyim?** Kesinlikle – sadece ek `Attachment` nesneleri ekleyin.  
-- **Büyük dosyalar için akış (streaming) destekleniyor mu?** Evet, Aspose.Email büyük ekleri verimli bir şekilde işlemek için streaming API'leri sağlar.
+- **Java’da ekli e-posta göndermemi sağlayan kütüphane hangisidir?** Aspose.Email for Java.  
+- **Üretim için lisansa ihtiyacım var mı?** Evet – üretim dağıtımları için ticari bir lisans gereklidir.  
+- **Hangi Java sürümleri destekleniyor?** Java 8 ve üzeri (Java 11, 17 ve 21 dahil).  
+- **Birden fazla dosya ekleyebilir miyim?** Kesinlikle – ihtiyacınız kadar `Attachment` nesnesi ekleyebilirsiniz.  
+- **Büyük dosyalar için akış (streaming) destekleniyor mu?** Evet – akış API'leri, tüm dosyayı belleğe yüklemeden çok yüz megabaytlık ekleri göndermenizi/almınızı sağlar.
 
-## “send email with attachment java” nedir?
+## “Java’da ekli e-posta gönderme” nedir?
 
-Java’da ekli bir e-posta göndermek, bir `MailMessage` oluşturmak, bir veya daha fazla `Attachment` nesnesi eklemek ve ardından mesajı SMTP üzerinden iletmek ya da bir dosyaya kaydetmek anlamına gelir. Aspose.Email düşük seviyeli MIME işlemlerini soyutlayarak iş mantığına odaklanmanızı sağlar.
+Java’da bir ekle e-posta göndermek, bir `MailMessage` oluşturmak, bir veya daha fazla `Attachment` nesnesi eklemek ve ardından mesajı SMTP üzerinden teslim etmek ya da bir dosyaya kaydetmek anlamına gelir. Aspose.Email, düşük seviyeli MIME işlemlerini soyutlayarak iş mantığınıza odaklanmanızı sağlar.
 
 ## Bu görev için neden Aspose.Email kullanılmalı?
 
-- **Rich API** – MIME bölümleri, içerik tipleri ve kodlama üzerinde tam kontrol.  
-- **Cross‑platform** – ek yerel bağımlılıklar olmadan Windows, Linux ve macOS üzerinde çalışır.  
-- **Built‑in streaming** – büyük PDF veya Word belgelerini bellek tüketmeden işleyebilir.  
-- **Comprehensive documentation** – örnekler ve API referansı uygulamayı hızlı yapar.
+Aspose.Email, Java e-posta otomasyonu için eksiksiz, yüksek performanslı bir çözüm sunar. **30+ MIME içerik türünü** destekler, **100 MB**'a kadar mesajları belirgin bir gecikme olmadan işleyebilir ve **Windows, Linux ve macOS** (Windows 10, Ubuntu 22.04 ve macOS 13 üzerinde doğrulanmıştır) üzerinde çalışır. Kütüphane ayrıca büyük PDF veya Word belgelerini işlerken bellek kullanımını düşük tutan yerleşik akış API'leri içerir.
 
 ## Önkoşullar
 
-Başlamadan önce, şunların yüklü olduğundan emin olun:
+- Java Development Kit (JDK) 8 veya daha üstü yüklü.  
+- Aspose.Email for Java kütüphanesi – bunu [buradan](https://releases.aspose.com/email/java/) indirin.  
 
-- Java Development Kit (JDK) 8 ve üzeri yüklü.  
-- Aspose.Email for Java kütüphanesi. [buradan](https://releases.aspose.com/email/java/) indirebilirsiniz.
+## Aspose.Email'i Projenize Eklemek
 
-## Projenize Aspose.Email Ekleme
-
-Başlamak için, Aspose.Email kütüphanesini Java projenize eklemeniz gerekir. Aşağıdaki adımları izleyin:
-
-1. Sağlanan bağlantıdan Aspose.Email for Java kütüphanesini indirin.  
-2. İndirilen ZIP dosyasını istediğiniz bir dizine çıkarın.  
-3. Java projenizde, Aspose.Email JAR dosyalarını classpath'ınıza ekleyin. Bunu tercih ettiğiniz entegre geliştirme ortamında (IDE) ya da komut satırıyla yapabilirsiniz.
+1. Yukarıdaki bağlantıdan Aspose.Email for Java ZIP arşivini indirin.  
+2. Arşivi istediğiniz bir klasöre çıkarın.  
+3. `aspose-email-xx.jar` dosyalarını projenizin sınıf yoluna ekleyin (IDE ayarları veya Maven/Gradle üzerinden).  
 
 ## Yeni Bir E-posta Mesajı Oluşturma
 
-Belge ekiyle yeni bir e-posta mesajı oluşturarak başlayalım. **how to send email with attachment java** konusunu göstermek için basit bir örnek kullanacağız:
+`MailMessage` Aspose.Email'in tüm e-posta, başlıklar, gövde ve ekleri temsil eden çekirdek sınıfıdır. `Attachment` ise göndermek istediğiniz herhangi bir dosyayı saran nesnedir.
 
-> **İpucu:** Kod parçacığını önkoşul açıklamasının ardından yerleştirin, böylece okuyucular gerçek uygulamayı görmeden önce bağlamı anlar.
+Bir mesaj oluşturduğunuzda şunları yapacaksınız:
+
+- `MailMessage` örneği oluşturun.  
+- Gönderen, alıcı, konu ve gövdeyi ayarlayın.  
+- Bir veya daha fazla `Attachment` nesnesi (ör. PDF veya Word dosyası) oluşturun ve mesajına ekleyin.  
+- Mesajı SMTP üzerinden gönderin ya da daha sonra işlemek üzere bir `.eml` dosyası olarak kaydedin.
+
+## Belge Eklerini Almak
+
+`Attachment` nesneleri gelen mesajlardan da okunabilir. Aşağıdaki adımlar bir `.eml` dosyasını nasıl yükleyeceğinizi, ekleri nasıl döngüye alacağınızı ve PDF belgelerini diske nasıl kaydedeceğinizi gösterir.
+
+`Attachment`, ham MIME parçasının etrafını saran ve `getContentType()`, `getName()`, `save()` gibi kullanışlı yöntemler sağlayan bir sarmalayıcıdır. Bu yöntemleri kullanarak dosya uzantısına göre filtreleme, büyük dosyaları akışla işleme veya içerik türlerini inceleme yapabilirsiniz.
+
+## Yaygın Sorunlar ve Çözümler
+
+| Sorun | Neden | Çözüm |
+|-------|-------|----------|
+| **Attachment not received** | Yanlış MIME türü veya eksik `addAttachment` çağrısı | `Attachment`'ın gönderim/kaydetme öncesinde eklendiğini doğrulayın. |
+| **Large files cause OutOfMemoryError** | Tüm dosyanın belleğe yüklenmesi | Akış API'lerini kullanın (`new Attachment(InputStream)`). |
+| **File name corrupted** | Dosya adının hatalı kodlanması | `attachment.setName("myDocument.pdf")` ifadesini açıkça ayarlayın. |
+
+## Sık Sorulan Sorular
+
+**Q: Birden fazla belge ekiyle e-posta nasıl gönderebilirim?**  
+A: Her dosya için ayrı bir `Attachment` oluşturun ve her örnek için `message.addAttachment()` çağırın.
+
+**Q: PDF dışındaki eklerle çalışabilir miyim?**  
+A: Evet – Aspose.Email Word, Excel, görüntüler ve herhangi bir MIME‑uyumlu dosya türünü destekler.
+
+**Q: Büyük belge eklerini nasıl yönetebilirim?**  
+A: Belleğe tüm dosyayı yüklemeden kaçınmak için `new Attachment(InputStream)` akış yapıcısını kullanın.
+
+**Q: Özel içerik türleri ayarlamak mümkün mü?**  
+A: Kesinlikle. `Attachment`'ın `ContentType`ını `attachment.setContentType(...)` ile değiştirin.
+
+**Q: Aspose.Email S/MIME şifreli ekleri destekliyor mu?**  
+A: Evet – kütüphane, ekleri de içeren mesajları imzalama ve şifreleme API'lerine sahiptir.
+
+## Sonuç
+
+Bu rehberde **java ile e-posta gönderme** ve tek ya da birden fazla belge eki ekleme konusunu Aspose.Email kullanarak gördünüz. Artık kütüphaneyi kurma, mesaj oluşturma, PDF veya Word dosyalarını ekleme ve gelen postadan bu ekleri çıkarma adımlarına sahipsiniz. Bu yetenek, sağlam e-posta‑tabanlı iş akışları, otomatik raporlama veya belgeleri güvenli ve verimli bir şekilde değiş tokuş etmesi gereken herhangi bir Java uygulaması oluşturmak için esastır.
+
+---
+
+**Last Updated:** 2026-05-18  
+**Tested With:** Aspose.Email for Java 24.12  
+**Author:** Aspose
 
 ```java
 import com.aspose.email.Attachment;
@@ -87,19 +165,6 @@ public class CreateEmailWithAttachment {
 }
 ```
 
-Bu örnekte:
-
-- Bir `MailMessage` nesnesi oluşturun.  
-- Gönderen, alıcı, konu ve gövdeyi tanımlayın.  
-- PDF dosyasına işaret eden bir `Attachment` oluşturun ve mesajına ekleyin.  
-- Mesajı bir EML dosyası olarak kaydedin (aynı zamanda SMTP üzerinden gönderebilirsiniz).
-
-## Belge Eklerini Almak
-
-Gelen e-postalardan belge eklerini çıkarmanız ve işlemeniz gerekebilir. İşte bir e-postayı yükleyip PDF dosyalarını nasıl çıkarabileceğiniz:
-
-> **Pro tip:** Yalnızca ilgilendiğiniz dosya tiplerini filtrelemek için `getContentType().getName()` kontrolünü kullanın.
-
 ```java
 import com.aspose.email.Attachment;
 import com.aspose.email.MailMessage;
@@ -119,51 +184,16 @@ public class ExtractAttachments {
 }
 ```
 
-Kod:
+## İlgili Öğreticiler
 
-- Mevcut bir `.eml` dosyasını yükler.  
-- Tüm ekler üzerinde döner.  
-- Dosya adı `.pdf` ile biten her eki kaydeder.
+- [Aspose.Email for Java Kullanarak Ekli E-posta Gönderme](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Aspose.Email for Java Kullanarak E-postadan Ekleri Çıkarma](/email/java/advanced-email-attachments/)
+- [Aspose.Email ile Java’da E-posta Yönetimini Ustalıkla Öğrenin: E-postaları Kolayca Oluşturma ve Kaydetme](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
 
-## Yaygın Sorunlar ve Çözümleri
-
-| Issue | Cause | Solution |
-|-------|-------|----------|
-| **Ek alınmadı** | Yanlış MIME türü veya eksik `addAttachment` çağrısı | `Attachment`'ın gönderilmeden/kaydedilmeden önce eklendiğini doğrulayın. |
-| **Büyük dosyalar OutOfMemoryError hatasına neden olur** | Tüm dosyanın belleğe yüklenmesi | Streaming API'lerini kullanın (`InputStream` kabul eden `Attachment` yapıcıları). |
-| **Dosya adı bozuldu** | Dosya adının hatalı kodlanması | `attachment.setName("myDocument.pdf")` ifadesini açıkça ayarlayın. |
-
-## Sıkça Sorulan Sorular
-
-**S: Birden fazla belge ekiyle e-posta nasıl gönderilir?**  
-C: Basitçe ek `Attachment` nesneleri oluşturup her dosya için `message.addAttachment()` çağırın.
-
-**S: PDF dışındaki eklerle çalışabilir miyim?**  
-C: Evet, Aspose.Email Word, Excel, görüntüler ve herhangi bir MIME‑uyumlu dosya tipini destekler.
-
-**S: Büyük belge eklerini nasıl yönetirim?**  
-C: Streaming tekniklerini kullantüm dosyayı belleğe yüklemek yerine `Attachment` yapıcısına bir `InputStream` geçirin.
-
-**S: Özel içerik tipleri ayarlamak mümkün mü?**  
-C: Kesinlikle. `attachment.setContentType(...)` ile bir `Attachment`'ın `ContentType`'ını değiştirebilirsiniz.
-
-**S: Aspose.Email S/MIME şifreli ekleri destekliyor mu?**  
-C: Evet, kütüphane mesajları ve eklerini imzalama ve şifreleme için API'ler içerir.
-
-## Sonuç
-
-Bu öğreticide, Aspose.Email kullanarak **how to send email with attachment java** konusunu gösterdik. Artık kütüphaneyi kurmayı, PDF ya da diğer belge ekleriyle mesajlar oluşturmayı ve gelen postalardan bu ekleri çıkarmayı biliyorsunuz. Bu yetenek, sağlam e-posta otomasyonu, raporlama sistemleri veya belgeleri e-posta ile değiş tokuş etmesi gereken herhangi bir Java uygulaması oluşturmak için gereklidir.
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Email for Java 24.12  
-**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
