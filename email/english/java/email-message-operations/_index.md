@@ -172,9 +172,9 @@ A: Aspose offers perpetual, subscription, and temporary licenses; a temporary li
 
 ## Related Tutorials
 
-- [Convert EML to MSG with Aspose.Email for Java – Guide]({{< relref "/email/java/email-conversion-rendering/_index.md" >}})
-- [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide]({{< relref "/email/java/email-message-operations/aspose-email-java-load-emails/_index.md" >}})
-- [Email Message Operations Tutorials with Aspose.Email for Java]({{< relref "/email/java/email-message-operations/_index.md" >}})
+- [Convert EML to MSG with Aspose.Email for Java – Guide]({{< relref "../../../java/email-conversion-rendering/_index.md" >}})
+- [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide]({{< relref "../../../java/email-message-operations/aspose-email-java-load-emails/_index.md" >}})
+- [Email Message Operations Tutorials with Aspose.Email for Java]({{< relref "../../../java/email-message-operations/_index.md" >}})
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}

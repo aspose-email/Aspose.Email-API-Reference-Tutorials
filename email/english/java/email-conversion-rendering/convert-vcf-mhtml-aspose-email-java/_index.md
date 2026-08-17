@@ -100,9 +100,9 @@ Converting VCF to MHTML lets you package the contact data together with inline i
 ## License Acquisition
 Aspose.Email offers several licensing options:
 
-- **Free Trial:** [Download](https://releases.aspose.com/email/java/) the library and start experimenting with its capabilities.  
+- **Free Trial:** [Download Aspose.Email for Java library](https://releases.aspose.com/email/java/) the library and start experimenting with its capabilities.  
 - **Temporary License:** Apply for a temporary license at the [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/) or use the shortcut link [Apply for Temporary License](https://purchase.aspose.com/temporary-license/).  
-- **Purchase:** For long‑term use, visit the [Aspose Purchase](https://purchase.aspose.com/buy) page or the alternative link [Aspose Purchase Page](https://purchase.aspose.com/buy).
+- **Purchase:** For long‑term use, visit the [Purchase Aspose.Email license](https://purchase.aspose.com/buy) page or the alternative link [Purchase Aspose.Email license](https://purchase.aspose.com/buy).
 
 ## Implementation Guide
 
@@ -206,7 +206,7 @@ A: Process contacts in batches, use asynchronous I/O, and reuse the `License` ob
 
 - **Documentation:** [Aspose.Email for Java Documentation](https://reference.aspose.com/email/java/)
 - **Download Library:** [Aspose Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase Licenses:** [Aspose Purchase Page](https://purchase.aspose.com/buy)
+- **Purchase Licenses:** [Purchase Aspose.Email license](https://purchase.aspose.com/buy)
 - **Free Trial:** [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - **Temporary License:** [Apply for Temporary License](https://purchase.aspose.com/temporary-license/)
 - **Support Forum:** [Aspose Email Support](https://forum.aspose.com/c/email/10)
@@ -219,9 +219,9 @@ A: Process contacts in batches, use asynchronous I/O, and reuse the `License` ob
 
 ## Related Tutorials
 
-- {{< relref "/email/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/" >}}Converting EML to MHT/MHTML Using Aspose.Email for Java{{< /relref >}}
-- {{< relref "/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/" >}}How to Load and Save Emails as MHTML Using Aspose.Email for Java{{< /relref >}}
-- {{< relref "/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/" >}}Manage Exchange Server Contacts with Aspose.Email for Java{{< /relref >}}
+- [Converting EML to MHT/MHTML Using Aspose.Email for Java]({{< relref "/email/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/" >}})
+- [How to Load and Save Emails as MHTML Using Aspose.Email for Java]({{< relref "/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/" >}})
+- [Manage Exchange Server Contacts with Aspose.Email for Java]({{< relref "/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/" >}})
 
 
 
