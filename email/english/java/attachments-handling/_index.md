@@ -105,6 +105,18 @@ Open the PST with `PersonalStorage.fromFile`, navigate to the desired folder, an
 4. **Retrieve attachments** – Call `message.getAttachments()` and iterate over the returned collection.  
 5. **Save each attachment** – Use `attachment.save("output/" + attachment.getName())` to persist the file.
 
+```java
+// Example: Extract attachments from a PST file
+PersonalStorage pst = PersonalStorage.fromFile("sample.pst");
+FolderInfo inbox = pst.getRootFolder().getSubFolder("Inbox");
+for (MessageInfo msgInfo : inbox.getContents()) {
+    MailMessage msg = pst.extractMessage(msgInfo);
+    for (Attachment att : msg.getAttachments()) {
+        att.save("output/" + att.getName());
+    }
+}
+```
+
 ## How to extract attachments from an MSG file using Aspose.Email for Java?
 
 `MailMessage` is the Aspose.Email class that models an email message and can be loaded from MSG, EML, and other formats.
@@ -117,13 +129,13 @@ Load the MSG file with `MailMessage.load`, then call `mailMessage.getAttachments
 
 Use `MailMessage.load` on the `.eml` file, then access the `Attachments` collection. The library automatically parses MIME parts, exposing each attachment as an `Attachment` object. You can also inspect `Content‑Disposition` headers to differentiate between inline and regular attachments, and optionally filter by file type or size before processing.
 
-## Common Issues and Solutions
+## Common issues and solutions
 - **Encrypted PST files** – Provide the password when creating the `PersonalStorage` instance: `PersonalStorage.fromFile("file.pst", "password")`.  
 - **Large attachment streams** – Prefer `Attachment.save(outputStream)` to write directly to a `FileOutputStream` and avoid loading the whole file into memory.  
 - **Missing inline images** – Ensure you check `attachment.isInline()`; inline images are still returned by `getAttachments()` and can be saved like any other file.  
 - **Memory leaks** – The library disposes of internal streams automatically when `Attachment.save()` completes, but close any custom streams you open yourself.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: How do I extract email attachments from a single MSG file?**  
 A: Load the file with `MailMessage.load("file.msg")` and call `mailMessage.getAttachments()`; then iterate and save each attachment.
@@ -176,11 +188,9 @@ A: When you use `Attachment.save()`, the library handles stream disposal automat
 - [How to Extract Email Attachments from EML Files Using Aspose.Email for Java - A Complete Guide](/email/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
 - [Extract Email Attachments Java - Using Aspose.Email for PST Files – A Step‑by‑Step Guide](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

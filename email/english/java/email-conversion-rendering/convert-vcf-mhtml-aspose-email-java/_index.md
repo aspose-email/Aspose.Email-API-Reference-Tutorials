@@ -111,7 +111,7 @@ We will break down the process into manageable steps based on functionality.
 ## How to Convert VCF to MHTML in Java?
 This conversion consists of loading the VCF file, turning it into a `MailMessage`, configuring MHTML options, and finally writing the output. The entire workflow can be performed in under a quarter of a second for typical contact records, and it scales well for batch processing.
 
-### Step 1: Add the Maven Dependency
+### Step 1: add the maven dependency
 
 Include Aspose.Email in your `pom.xml`:
 
@@ -126,7 +126,7 @@ Include Aspose.Email in your `pom.xml`:
 
 This dependency brings in **over 30 KB of compiled classes** and grants access to all email‑handling APIs.
 
-### Step 2: Load and Convert the VCF Contact
+### Step 2: load and convert the VCF contact
 
 First, read the VCF file into a byte array. This prepares the raw contact data for further conversion.
 
@@ -148,7 +148,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Replace with your actual path.
 MapiContact contact = MapiContact.fromVCard(dataDir + "ContactsSaqib Razzaq.vcf");
 ```
 
-### Step 4: Configure MHT Save Options
+### Step 4: configure MHT save options
 
 `MhtSaveOptions` configures how the final MHTML file will be generated, such as encoding, CSS handling, and whether to embed images as base‑64.
 
@@ -179,13 +179,13 @@ MailMessage eml = msg.toMailMessage(op);
 - **Batch Processing:** When converting many VCF files, reuse a single `License` instance and process contacts in parallel streams to maximise CPU utilization.
 - **I/O Efficiency:** Write the MHTML output to a buffered `FileOutputStream` to reduce disk latency.
 
-## Common Issues and Solutions
+## Common issues and solutions
 
 - **Incorrect File Path:** Verify that the path you pass to `new FileInputStream()` is absolute or correctly relative to the working directory.
 - **Insufficient Permissions:** Ensure the Java process has read access to the VCF source and write access to the output folder.
 - **Large Attachments:** For contacts with embedded photos, consider increasing the JVM heap size (`-Xmx`) to avoid `OutOfMemoryError`.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: What is MHTML?**  
 A: MHTML (MIME HTML) bundles HTML, CSS, images, and other resources into a single file, making it easy to share or archive web content.
@@ -219,18 +219,18 @@ A: Process contacts in batches, use asynchronous I/O, and reuse the `License` ob
 
 ## Related Tutorials
 
-- [Converting EML to MHT/MHTML Using Aspose.Email for Java: A Comprehensive Guide](/email/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/)
-- [How to Load and Save Emails as MHTML Using Aspose.Email for Java: A Comprehensive Guide](/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/)
-- [Manage Exchange Server Contacts with Aspose.Email for Java: A Complete Guide](/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/)
+- {{< relref "/email/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/" >}}Converting EML to MHT/MHTML Using Aspose.Email for Java{{< /relref >}}
+- {{< relref "/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/" >}}How to Load and Save Emails as MHTML Using Aspose.Email for Java{{< /relref >}}
+- {{< relref "/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/" >}}Manage Exchange Server Contacts with Aspose.Email for Java{{< /relref >}}
 
 
-{{< /blocks/products/pf/tutorial-page-section >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```java
 MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
@@ -248,3 +248,10 @@ mhtSaveOptions.setRenderedContactFields(ContactFieldsSet.NameInfo | ContactField
 ```java
 eml.save("YOUR_OUTPUT_DIRECTORY" + "ContactsSaqib Razzaq_out.mhtml", mhtSaveOptions);
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

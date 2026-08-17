@@ -80,7 +80,7 @@ Before starting, make sure you have:
 - **Maven** (optional) for dependency management.  
 - Basic familiarity with Java and email concepts such as MIME, attachments, and message properties.
 
-## Setting Up Aspose.Email for Java
+## Setting up Aspose.Email for java
 
 ### Maven Setup
 
@@ -100,7 +100,7 @@ Add the Aspose.Email dependency to your `pom.xml` file:
 Aspose.Email requires a license for full functionality, but you can start with a free trial or request a temporary license:
 
 - **Free Trial**: Download it from [Aspose's release page](https://releases.aspose.com/email/java/).  
-- **Temporary License**: Request one [here](https://purchase.aspose.com/temporary-license/).  
+- **Temporary License**: Request one from the [Aspose temporary license page](https://purchase.aspose.com/temporary-license/).  
 - **Purchase**: For long‑term use, purchase a license through the [purchase portal](https://purchase.aspose.com/buy).
 
 Initialize your environment with the license as shown below:
@@ -209,7 +209,7 @@ You’ve now mastered how to **convert OFT to MSG**, update Outlook template pro
 
 Explore the full capabilities in the official [documentation](https://reference.aspose.com/email/java/) and experiment with advanced features such as attachment handling, calendar event creation, and MIME parsing.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q1: Can I use Aspose.Email Java without a license?**  
 A1: Yes, a free trial is available, but certain advanced features (e.g., high‑volume conversion) are limited until you apply a full license.
@@ -241,7 +241,7 @@ A5: Absolutely—when you batch process and release resources promptly, the libr
 **Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Related Tutorials
 
@@ -249,9 +249,9 @@ A5: Absolutely—when you batch process and release resources promptly, the libr
 - [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
 - [Master Email Management in Java: Convert EML to MSG with Aspose.Email Library](/email/java/exchange-server-integration/master-email-management-java-aspose-email/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

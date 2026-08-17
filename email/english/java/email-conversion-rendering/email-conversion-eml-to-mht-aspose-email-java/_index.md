@@ -85,7 +85,7 @@ Before you start, make sure you have:
 - **Java Development Kit (JDK)** – version 16 or later.  
 - **IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
 
-### Required Libraries, Versions, and Dependencies
+### Required libraries, versions, and dependencies
 
 For Maven users, add the following dependency to your `pom.xml` file:
 
@@ -106,7 +106,7 @@ To unlock the full feature set you’ll need a valid Aspose.Email license. Optio
 - **Temporary License** – unrestricted evaluation for a short period.  
 - **Purchased License** – full production use with priority support.
 
-## Setting Up Aspose.Email for Java
+## Setting up Aspose.Email for java
 
 ### Installation via Maven
 
@@ -129,7 +129,7 @@ license.setLicense("Aspose.Email.lic");
 **Definition anchor:** The `MailMessage` class represents a complete email message, including headers, body, and attachments, in memory.  
 `MailMessage.load` reads an EML file from the given path and returns a fully populated MailMessage object.
 
-#### Step 1: Define Your File Path
+#### Step 1: define your file path
 Specify the absolute or relative path where your `.eml` files reside.  
 
 ````xml
@@ -141,7 +141,7 @@ Specify the absolute or relative path where your `.eml` files reside.
 </dependency>
 ````
 
-#### Step 2: Load the EML File
+#### Step 2: load the EML file
 Invoke `MailMessage.load` with the path to create the message instance.  
 
 ````java
@@ -154,14 +154,14 @@ license.setLicense("path/to/your/license/file.lic");
 **Definition anchor:** `MhtSaveOptions` configures how an email is serialized to the MHT/MHTML format, allowing you to control encoding, resource handling, and layout.  
 `MailMessage.save` writes the email to the chosen format using the specified save options.
 
-#### Step 1: Configure Save Options
+#### Step 1: configure save options
 Retrieve the default options and adjust properties such as `MhtSaveOptions.getMhtFormat` or `setEncoding`.  
 
 ````java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
 ````
 
-#### Step 2: Save the Email as MHT/MHTML
+#### Step 2: save the email as mHT/MHTML
 Call `mailMessage.save("output.mht", saveOptions)` to write the single‑file archive.  
 
 ````java
@@ -172,7 +172,7 @@ MailMessage eml = MailMessage.load(dataDir + "Attachments.eml");
 
 Load the EML with `MailMessage.load(path)`, configure `MhtSaveOptions` as needed, and then call `mailMessage.save("output.mht", options)`. This three‑step flow handles parsing, option tuning, and file generation in under a second for typical messages, and it works for bulk processing when placed inside a loop.
 
-## Common Use Cases
+## Common use cases
 
 1. **Email Archiving** – Store compliance‑required communications in a single, self‑contained file.  
 2. **Data Portability** – Share email content with partners who only need a web‑viewable format.  
@@ -190,7 +190,7 @@ Load the EML with `MailMessage.load(path)`, configure `MhtSaveOptions` as needed
 - **Incorrect Layout** – Adjust `MhtSaveOptions` properties like `setRenderOptions` to fine‑tune CSS handling or image embedding.  
 - **License Errors** – Ensure the license file is on the classpath and that `License.setLicense` is called before any Aspose.Email API usage.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: What is the difference between MHT and MHTML?**  
 A: They are interchangeable extensions for the same MIME‑type (`multipart/related`) that bundles HTML and its resources into a single file.
@@ -231,9 +231,9 @@ eml.save("YOUR_OUTPUT_DIRECTORY/CustomOrderOfInformationInMHTML_1.mhtml");
 
 ## Related Tutorials
 
-- [How to Save Emails as MHT Files Using Aspose.Email for Java&#58; A Comprehensive Guide](/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
-- [Convert EML to MSG Using Aspose.Email for Java&#58; A Comprehensive Guide](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
-- [How to Load and Save EML Files in Java with Aspose.Email&#58; Complete Guide](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/_index.md" >}})
+- [Convert EML to MSG Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/_index.md" >}})
+- [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide]({{< relref "/email/java/email-message-operations/load-save-eml-aspose-email-java/_index.md" >}})
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
