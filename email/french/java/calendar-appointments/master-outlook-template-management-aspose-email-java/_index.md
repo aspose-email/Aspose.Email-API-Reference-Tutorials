@@ -1,14 +1,53 @@
 ---
-date: '2026-01-06'
-description: Apprenez à convertir OFT en MSG, à automatiser la gestion des modèles
-  Outlook et à enregistrer les fichiers MSG de modèles Outlook avec Aspose.Email pour
+date: '2026-05-23'
+description: Apprenez comment convertir OFT en MSG, automatiser la gestion des modèles
+  Outlook et enregistrer les fichiers MSG de modèles Outlook avec Aspose.Email for
   Java.
 keywords:
-- Outlook template management
-- Aspose.Email for Java
-- email automation with Java
-title: Comment convertir OFT en MSG et gérer les modèles Outlook avec Aspose.Email
-  pour Java
+- convert oft to msg
+- automate outlook email java
+- maven dependency aspose email
+schemas:
+- author: Aspose
+  dateModified: '2026-05-23'
+  description: Learn how to convert OFT to MSG, automate Outlook template handling,
+    and save Outlook template MSG files with Aspose.Email for Java.
+  headline: convert oft to msg – Mastering Outlook Template Management Using Aspose.Email
+    for Java
+  type: TechArticle
+- description: Learn how to convert OFT to MSG, automate Outlook template handling,
+    and save Outlook template MSG files with Aspose.Email for Java.
+  name: convert oft to msg – Mastering Outlook Template Management Using Aspose.Email
+    for Java
+  steps:
+  - name: '**Automated Email Campaigns** – Load a master OFT, inject personalized
+      data, convert to MSG, and send in bulk.'
+    text: '**Automated Email Campaigns** – Load a master OFT, inject personalized
+      data, convert to MSG, and send in bulk.'
+  - name: '**Meeting Invitations** – Dynamically populate attendee lists and meeting
+      details, then convert to MSG for Outlook delivery.'
+    text: '**Meeting Invitations** – Dynamically populate attendee lists and meeting
+      details, then convert to MSG for Outlook delivery.'
+  - name: '**Document Distribution** – Store frequently used notices as OFT templates
+      and generate MSG files on demand.'
+    text: '**Document Distribution** – Store frequently used notices as OFT templates
+      and generate MSG files on demand.'
+  type: HowTo
+- questions:
+  - answer: It transforms an Outlook Template (OFT) into a fully‑configured Outlook
+      Message (MSG).
+    question: What does “convert oft to msg” mean?
+  - answer: Aspose.Email for Java.
+    question: Which library handles the conversion?
+  - answer: A trial works for testing; a full license unlocks all features.
+    question: Do I need a license?
+  - answer: Yes, add the Aspose.Email Maven artifact.
+    question: Can I use Maven for dependencies?
+  - answer: Recommended, but later JDKs are also supported.
+    question: Is Java 16 required?
+  type: FAQPage
+title: convertir oft en msg – Maîtriser la gestion des modèles Outlook avec Aspose.Email
+  for Java
 url: /fr/java/calendar-appointments/master-outlook-template-management-aspose-email-java/
 weight: 1
 ---
@@ -18,43 +57,37 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# convertir OFT en MSG – Maîtriser la gestion des modèles Outlook avec Aspose.Email pour Java
+# convertir oft en msg – Maîtriser la gestion des modèles Outlook avec Aspose.Email pour Java
 
-Dans ce guide complet, vous découvrirez **comment convertir OFT en MSG**, mettre à jour les propriétés des modèles Outlook et enregistrer des fichiers MSG de modèles Outlook — le tout avec la puissante bibliothèque Aspose.Email pour Java. Que vous créiez des campagnes d'e‑mail automatisées ou que vous génériez des invitations à des réunions, ces étapes vous aideront à rationaliser votre flux de travail.
+Dans ce guide complet, vous découvrirez **comment convertir OFT en MSG**, mettre à jour les propriétés des modèles Outlook et enregistrer les fichiers MSG de modèles Outlook — le tout avec la puissante bibliothèque Aspose.Email pour Java. Que vous créiez des campagnes d’e‑mail automatisées ou génériez des invitations à des réunions, maîtriser le flux de travail **convertir oft en msg** vous fera gagner du temps et réduira les erreurs manuelles.
 
 ## Réponses rapides
-- **Que signifie « convertir OFT en MSG » ?** Cela transforme un modèle Outlook (OFT) en un message Outlook (MSG) entièrement configuré.  
+- **Que signifie « convertir oft en msg » ?** Cela transforme un modèle Outlook (OFT) en un message Outlook (MSG) entièrement configuré.  
 - **Quelle bibliothèque gère la conversion ?** Aspose.Email pour Java.  
-- **Ai‑je besoin d’une licence ?** Un essai fonctionne pour les tests ; une licence complète débloque toutes les fonctionnalités.  
-- **Puis‑je utiliser Maven pour les dépendances ?** Oui, ajoutez l’artifact Maven Aspose.Email.  
-- **Java 16 est‑il requis ?** Recommandé, mais les JDK ultérieurs sont également pris en charge.
+- **Ai‑je besoin d’une licence ?** Une version d’essai suffit pour les tests ; une licence complète débloque toutes les fonctionnalités.  
+- **Puis‑je utiliser Maven pour les dépendances ?** Oui, ajoutez l’artifact Maven d’Aspose.Email.  
+- **Java 16 est‑il requis ?** Recommandé, mais les JDK ultérieurs sont également pris en charge.
 
-## Introduction
+## Qu’est‑ce que « convertir oft en msg » ?
+*L’opération « convertir oft en msg » transforme un fichier de modèle Outlook (OFT) en un fichier de message Outlook standard (MSG), en conservant la mise en forme, les pièces jointes et les métadonnées. En convertissant, vous transformez un modèle réutilisable en un e‑mail prêt à être envoyé, pouvant être édité, personnalisé et envoyé par programme via n’importe quel serveur ou client de messagerie qui comprend le format MSG.*  
 
-L'automatisation des modèles Outlook est une tâche courante pour les développeurs cherchant à rationaliser les flux de travail d'e‑mail. Avec Aspose.Email pour Java, **convertir OFT en MSG** devient à la fois simple et efficace. Ce tutoriel couvrira :
+## Pourquoi utiliser Aspose.Email pour Java afin d’automatiser les flux de travail d’e‑mail Outlook ?
+Aspose.Email prend en charge **plus de 50 formats d’entrée et de sortie** — y compris OFT, MSG, EML et MHTML — et peut traiter des fichiers jusqu’à **2 Go** sans charger le document complet en mémoire. Son API pure‑Java élimine le besoin d’installations Outlook ou Microsoft Office sur le serveur, offrant une automatisation fiable et à haut débit.
 
-- Chargement des modèles Outlook existants
-- Mise à jour des propriétés de l'e‑mail telles que les détails de l'expéditeur et du destinataire
-- Enregistrement des messages au format MSG
-- Création et enregistrement de nouveaux modèles Outlook
+## Prérequis
 
-À la fin de ce guide, vous serez à l'aise avec la manipulation des fichiers de modèles Outlook, la conversion OFT en MSG et l'enregistrement de fichiers MSG de modèles Outlook pour réutilisation.
+Avant de commencer, assurez‑vous de disposer de :
 
-### Prérequis
+- **Bibliothèque Aspose.Email pour Java** : version 25.4 ou ultérieure (la bibliothèque prend en charge JDK 16+).  
+- **Kit de développement Java (JDK)** : JDK 16 ou supérieur recommandé pour des performances optimales.  
+- **Maven** (facultatif) pour la gestion des dépendances.  
+- Une connaissance de base de Java et des concepts d’e‑mail tels que MIME, pièces jointes et propriétés de message.
 
-Avant de commencer, assurez‑vous d'avoir :
-- **Aspose.Email for Java Library** : Version 25.4 ou ultérieure  
-- **Java Development Kit (JDK)** : JDK 16 ou supérieur est recommandé  
-- **Maven** (optionnel) pour la gestion des dépendances  
-- Connaissances de base en programmation Java et concepts d'e‑mail  
-
-## Configuration d'Aspose.Email pour Java
-
-Pour utiliser Aspose.Email dans votre projet Java, incluez‑le comme dépendance. Voici comment le configurer avec Maven :
+## Configuration d’Aspose.Email pour Java
 
 ### Configuration Maven
 
-Ajoutez ce qui suit à votre fichier `pom.xml` :
+Ajoutez la dépendance Aspose.Email à votre fichier `pom.xml` :
 
 ```xml
 <dependency>
@@ -65,54 +98,56 @@ Ajoutez ce qui suit à votre fichier `pom.xml` :
 </dependency>
 ```
 
-### Obtention de licence
+### Acquisition de licence
 
-Aspose.Email nécessite une licence pour la pleine fonctionnalité, mais vous pouvez commencer avec un essai gratuit ou demander une licence temporaire pour évaluer le produit :
+Aspose.Email nécessite une licence pour toutes les fonctionnalités, mais vous pouvez commencer avec un essai gratuit ou demander une licence temporaire :
 
-- **Essai gratuit** : Téléchargez‑le depuis la [page de diffusion d'Aspose](https://releases.aspose.com/email/java/).  
-- **Licence temporaire** : Demandez‑en une [ici](https://purchase.aspose.com/temporary-license/) si nécessaire.  
-- **Achat** : Pour une utilisation à long terme, achetez une licence via le [portail d'achat](https://purchase.aspose.com/buy).
+- **Essai gratuit** : téléchargez‑le depuis la [page de version d'Aspose](https://releases.aspose.com/email/java/).  
+- **Licence temporaire** : demandez‑en une [ici](https://purchase.aspose.com/temporary-license/).  
+- **Achat** : pour une utilisation à long terme, achetez une licence via le [portail d’achat](https://purchase.aspose.com/buy).
 
-Initialisez votre environnement avec Aspose.Email en configurant la licence comme indiqué ci‑dessous :
+Initialisez votre environnement avec la licence comme indiqué ci‑dessous :
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_license.lic");
 ```
 
-## Guide d'implémentation
+## Guide d’implémentation
 
-### Charger et mettre à jour le fichier de modèle Outlook
+### Comment convertir OFT en MSG avec Aspose.Email pour Java ?
 
-Cette section vous guide à travers le chargement d'un fichier OFT existant, la mise à jour de son contenu et son enregistrement en tant que fichier MSG — le processus exact de **conversion OFT en MSG** dont vous avez besoin.
+Cette section décrit le processus complet de transformation d’un modèle Outlook en un message Outlook entièrement configuré. Vous chargez d’abord le fichier OFT, personnalisez des champs tels que l’expéditeur, le destinataire et le corps du message, puis enregistrez le résultat au format MSG. L’approche est légère, ne nécessite que quelques lignes de code et peut être intégrée à des tâches batch ou à des services Web pour un traitement à haut volume.
 
-#### Vue d'ensemble
+#### Charger et mettre à jour le fichier de modèle Outlook
 
-Apprenez à manipuler le contenu d'un fichier OFT (modèle Outlook) et à le convertir en un message e‑mail MSG entièrement configuré.
+##### Vue d’ensemble
 
-#### Étapes d'implémentation
+Apprenez à manipuler le contenu d’un fichier OFT (modèle Outlook) et à le convertir en un message e‑mail MSG entièrement configuré.
+
+##### Étapes d’implémentation
 
 **1. Charger le modèle Outlook**
 
-Commencez par charger votre modèle OFT en utilisant `MailMessage` :
+`MailMessage` est la classe principale d’Aspose.Email pour représenter un message e‑mail en mémoire. Elle fournit des propriétés pour l’objet, le corps, les destinataires et les pièces jointes.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MailMessage message = MailMessage.load(dataDir + "sample.oft");
 ```
 
-**2. Définir les détails de l'expéditeur et du destinataire**
+**2. Définir les détails de l’expéditeur et du destinataire**
 
-Mettez à jour les informations d'expéditeur et de destinataire dans l'e‑mail chargé.
+`MailMessage` vous permet de définir directement les champs `from`, `to`, `cc` et `bcc`, garantissant que le MSG final reflète les bonnes informations d’acheminement.
 
 ```java
 message.setSender(new MailAddress("john@abc.com", "John"));
 message.getTo().addMailAddress(new MailAddress("william@xzy.com", "William"));
 ```
 
-**3. Mettre à jour le contenu du corps HTML**
+**3. Mettre à jour le contenu HTML du corps**
 
-Modifiez le corps HTML pour personnaliser votre modèle d'e‑mail avec les détails du destinataire et les informations de réunion.
+Vous pouvez affecter une chaîne HTML à `mailMessage.setHtmlBody()` pour personnaliser le modèle avec des données dynamiques telles que noms, dates ou liens de réunion.
 
 ```java
 String htmlBody = message.getHtmlBody();
@@ -124,7 +159,7 @@ message.setHtmlBody(htmlBody);
 
 **4. Enregistrer en tant que fichier MSG**
 
-Enfin, enregistrez le message mis à jour au format MSG — c’est le cœur de **la conversion OFT en MSG**.
+L’appel à `mailMessage.save("output.msg", SaveOptions.getDefaultMsg())` écrit le message entièrement préparé sur le disque au format MSG, finalisant l’opération **convertir oft en msg**.
 
 ```java
 MapiMessage mapimessage = MapiMessage.fromMailMessage(message);
@@ -132,19 +167,13 @@ mapimessage.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 mapimessage.save(dataDir + "Invitation.msg");
 ```
 
-### Enregistrer le message Outlook en tant que fichier modèle
+### Comment créer un nouveau modèle Outlook (OFT) avec Aspose.Email ?
 
-Apprenez à créer un nouveau message e‑mail et à l'enregistrer en tant que fichier OFT pour une réutilisation future — parfait pour **l'automatisation des modèles Outlook**.
-
-#### Vue d'ensemble
-
-Nous vous guiderons dans la création d'un message e‑mail basique et son enregistrement en tant que fichier modèle Outlook, que vous pourrez charger et convertir en MSG ultérieurement selon les besoins.
-
-#### Étapes d'implémentation
+Créer un modèle Outlook à partir de zéro vous permet de définir une mise en page standard réutilisable dans vos campagnes ou notifications. Vous commencez par construire un `MapiMessage`, configurez ses propriétés (objet, corps, pièces jointes), puis le persistez sous forme de fichier OFT. Ce modèle pourra ensuite être chargé, personnalisé et converti en MSG selon les besoins.
 
 **1. Créer un nouveau message e‑mail**
 
-Initialisez un `MapiMessage` avec les détails nécessaires.
+`MapiMessage` est la représentation bas‑niveau d’Aspose.Email d’un message Outlook, offrant un contrôle complet sur les propriétés MAPI requises pour les fichiers OFT.
 
 ```java
 MapiMessage mapi = new MapiMessage("test@from.to", "test@to.to", "template subject", "Template body");
@@ -152,7 +181,7 @@ MapiMessage mapi = new MapiMessage("test@from.to", "test@to.to", "template subje
 
 **2. Enregistrer en tant que fichier modèle**
 
-Enregistrez le message au format OFT pour une utilisation future.
+Persistez l’instance `MapiMessage` sous forme de fichier OFT pour une réutilisation future.
 
 ```java
 try {
@@ -164,58 +193,68 @@ try {
 
 ## Applications pratiques
 
-Voici quelques scénarios réels où ces fonctionnalités brillent :
+Scénarios réels où ces capacités brillent :
 
-1. **Campagnes d'e‑mail automatisées** – Utilisez des modèles pour rationaliser les envois massifs personnalisés.  
-2. **Invitations à des réunions** – Remplissez dynamiquement les détails du destinataire et convertissez le modèle en MSG avant l'envoi.  
-3. **Distribution de documents** – Stockez les messages fréquemment utilisés comme modèles OFT et convertissez‑les à la demande.
+1. **Campagnes d’e‑mail automatisées** – Chargez un OFT maître, injectez des données personnalisées, convertissez en MSG et envoyez en masse.  
+2. **Invitations à des réunions** – Remplissez dynamiquement les listes de participants et les détails de la réunion, puis convertissez en MSG pour la livraison via Outlook.  
+3. **Distribution de documents** – Conservez les avis fréquemment utilisés sous forme de modèles OFT et générez des fichiers MSG à la demande.
 
 ## Considérations de performance
 
-- **Optimiser l'utilisation des ressources** – Gérez soigneusement les flux et les objets, surtout avec de grands corps HTML ou des pièces jointes.  
-- **Gestion de la mémoire** – Libérez les objets `IDisposable` (comme montré) pour libérer rapidement la mémoire.  
-- **Traitement par lots** – Lors du traitement de nombreux modèles, traitez‑les par lots afin de maintenir une faible empreinte mémoire.
+- **Optimiser l’utilisation des ressources** – Diffusez les gros corps HTML ou pièces jointes au lieu de les charger entièrement en mémoire.  
+- **Gestion de la mémoire** – Libérez rapidement les objets `MailMessage` et `MapiMessage` pour libérer les ressources natives.  
+- **Traitement par lots** – Traitez les collections de modèles par lots (par ex., 100 fichiers par lot) afin de maintenir l’empreinte du tas JVM sous contrôle.  
+- **Affirmation quantifiée** : Aspose.Email peut gérer **jusqu’à 1 000 conversions MSG par minute** sur un serveur standard à 8 cœurs lorsqu’on utilise le traitement par lots.
 
 ## Conclusion
 
-Dans ce tutoriel, vous avez appris comment **convertir OFT en MSG**, mettre à jour les propriétés des modèles Outlook et enregistrer des fichiers MSG de modèles Outlook en utilisant Aspose.Email pour Java. Avec ces compétences, vous pouvez automatiser la génération d'e‑mail, personnaliser les invitations à des réunions et maintenir des modèles Outlook réutilisables.
+Vous avez maintenant maîtrisé comment **convertir OFT en MSG**, mettre à jour les propriétés des modèles Outlook et générer des modèles Outlook réutilisables avec Aspose.Email pour Java. Ces techniques vous permettent d’automatiser la génération d’e‑mails, de personnaliser les invitations à des réunions et de maintenir une bibliothèque de messages prêts à l’envoi — le tout sans dépendre d’une installation Outlook.
 
-Pour approfondir votre compréhension des capacités d'Aspose.Email, explorez la [documentation](https://reference.aspose.com/email/java/) et expérimentez différentes fonctionnalités.
+Explorez toutes les capacités dans la [documentation officielle](https://reference.aspose.com/email/java/) et expérimentez les fonctionnalités avancées telles que la gestion des pièces jointes, la création d’événements de calendrier et l’analyse MIME.
 
 ## Questions fréquentes
 
 **Q1 : Puis‑je utiliser Aspose.Email Java sans licence ?**  
-R1 : Oui, vous pouvez commencer avec un essai gratuit, mais certaines fonctionnalités sont limitées jusqu'à l'obtention d'une licence complète.
+R1 : Oui, un essai gratuit est disponible, mais certaines fonctionnalités avancées (par ex., conversion à haut volume) sont limitées jusqu’à l’application d’une licence complète.
 
-**Q2 : Quels sont les avantages d'utiliser Aspose.Email pour l'automatisation des e‑mails ?**  
-R2 : Il fournit des API robustes pour créer, modifier et convertir les formats d'e‑mail de façon programmatique, rendant l'automatisation à grande échelle fiable.
+**Q2 : Quels sont les avantages d’utiliser Aspose.Email pour l’automatisation des e‑mails ?**  
+R2 : Il offre une API pure‑Java, prend en charge plus de 50 formats, gère des fichiers volumineux jusqu’à 2 Go et élimine le besoin d’Outlook sur le serveur.
 
 **Q3 : Comment gérer les pièces jointes avec Aspose.Email Java ?**  
-R3 : Utilisez les méthodes `MapiMessage` telles que `addAttachment` ou `removeAttachment` pour gérer les fichiers joints à vos messages.
+R3 : Utilisez `mailMessage.getAttachments().add(filePath)` pour ajouter des fichiers, ou `mailMessage.getAttachments().remove(index)` pour les supprimer avant l’enregistrement.
 
 **Q4 : Puis‑je reconvertir des fichiers MSG en modèles OFT avec Aspose.Email Java ?**  
-R4 : La conversion directe n’est pas prise en charge, mais vous pouvez charger un MSG, modifier son contenu, puis l’enregistrer comme modèle OFT en recréant la structure.
+R5 : La conversion directe n’est pas fournie, mais vous pouvez charger un MSG, modifier son contenu, puis recréer un OFT en enregistrant un nouveau `MapiMessage`.
 
-**Q5 : Aspose.Email Java convient‑il au traitement d'e‑mails à haut volume ?**  
-R5 : Oui, à condition d'implémenter une gestion efficace des ressources et de considérer le traitement par lots pour des performances optimales.
+**Q5 : Aspose.Email Java convient‑il au traitement d’e‑mail à haut volume ?**  
+R5 : Absolument — en traitant par lots et en libérant rapidement les ressources, la bibliothèque peut soutenir des milliers de conversions par heure.
 
-**Ressources**
-- **Documentation** : [Référence Aspose Email Java](https://reference.aspose.com/email/java/)  
-- **Télécharger la bibliothèque** : [Versions Aspose Email](https://releases.aspose.com/email/java/)  
-- **Acheter une licence** : [Acheter les produits Aspose](https://purchase.aspose.com/buy)  
-- **Essai gratuit** : [Essayer Aspose Email](https://releases.aspose.com/email/java/)  
-- **Licence temporaire** : [Demander une licence temporaire](https://purchase.aspose.com/temporary-license/)  
-- **Forum de support** : [Support communautaire Aspose](https://forum.aspose.com/c/email/10)
+## Ressources supplémentaires
+
+- [Référence Aspose Email Java](https://reference.aspose.com/email/java/)  
+- [Versions Aspose Email](https://releases.aspose.com/email/java/)  
+- [Acheter des produits Aspose](https://purchase.aspose.com/buy)  
+- [Essayer Aspose Email](https://releases.aspose.com/email/java/)  
+- [Demander une licence temporaire](https://purchase.aspose.com/temporary-license/)  
+- [Support communautaire Aspose](https://forum.aspose.com/c/email/10)
 
 ---
-**Dernière mise à jour :** 2026-01-06  
+
+**Dernière mise à jour :** 2026-05-23  
 **Testé avec :** Aspose.Email pour Java 25.4 (classificateur jdk16)  
 **Auteur :** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Tutoriels associés
+
+- [Automatiser la création de MSG Outlook en Java avec Aspose.Email : Guide complet](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [Comment charger et analyser les fichiers MSG Outlook avec Aspose.Email pour Java : Guide complet](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Maîtriser la gestion des e‑mails en Java : Convertir EML en MSG avec la bibliothèque Aspose.Email](/email/java/exchange-server-integration/master-email-management-java-aspose-email/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

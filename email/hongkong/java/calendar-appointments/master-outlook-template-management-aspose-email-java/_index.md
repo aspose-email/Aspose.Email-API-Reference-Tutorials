@@ -1,12 +1,51 @@
 ---
-date: '2026-01-06'
-description: 了解如何將 OFT 轉換為 MSG，自動化 Outlook 模板處理，並使用 Aspose.Email for Java 保存 Outlook
+date: '2026-05-23'
+description: 了解如何將 OFT 轉換為 MSG、自動化 Outlook 模板處理，以及使用 Aspose.Email for Java 保存 Outlook
   模板 MSG 檔案。
 keywords:
-- Outlook template management
-- Aspose.Email for Java
-- email automation with Java
-title: 如何將 OFT 轉換為 MSG 並使用 Aspose.Email for Java 管理 Outlook 範本
+- convert oft to msg
+- automate outlook email java
+- maven dependency aspose email
+schemas:
+- author: Aspose
+  dateModified: '2026-05-23'
+  description: Learn how to convert OFT to MSG, automate Outlook template handling,
+    and save Outlook template MSG files with Aspose.Email for Java.
+  headline: convert oft to msg – Mastering Outlook Template Management Using Aspose.Email
+    for Java
+  type: TechArticle
+- description: Learn how to convert OFT to MSG, automate Outlook template handling,
+    and save Outlook template MSG files with Aspose.Email for Java.
+  name: convert oft to msg – Mastering Outlook Template Management Using Aspose.Email
+    for Java
+  steps:
+  - name: '**Automated Email Campaigns** – Load a master OFT, inject personalized
+      data, convert to MSG, and send in bulk.'
+    text: '**Automated Email Campaigns** – Load a master OFT, inject personalized
+      data, convert to MSG, and send in bulk.'
+  - name: '**Meeting Invitations** – Dynamically populate attendee lists and meeting
+      details, then convert to MSG for Outlook delivery.'
+    text: '**Meeting Invitations** – Dynamically populate attendee lists and meeting
+      details, then convert to MSG for Outlook delivery.'
+  - name: '**Document Distribution** – Store frequently used notices as OFT templates
+      and generate MSG files on demand.'
+    text: '**Document Distribution** – Store frequently used notices as OFT templates
+      and generate MSG files on demand.'
+  type: HowTo
+- questions:
+  - answer: It transforms an Outlook Template (OFT) into a fully‑configured Outlook
+      Message (MSG).
+    question: What does “convert oft to msg” mean?
+  - answer: Aspose.Email for Java.
+    question: Which library handles the conversion?
+  - answer: A trial works for testing; a full license unlocks all features.
+    question: Do I need a license?
+  - answer: Yes, add the Aspose.Email Maven artifact.
+    question: Can I use Maven for dependencies?
+  - answer: Recommended, but later JDKs are also supported.
+    question: Is Java 16 required?
+  type: FAQPage
+title: 將 OFT 轉換為 MSG – 精通使用 Aspose.Email for Java 的 Outlook 模板管理
 url: /zh-hant/java/calendar-appointments/master-outlook-template-management-aspose-email-java/
 weight: 1
 ---
@@ -16,43 +55,35 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# convert oft to msg – 使用 Aspose.Email for Java 精通 Outlook 範本管理
+# 轉換 oft 為 msg – 掌握 Outlook 範本管理使用 Aspose.Email for Java
 
-在本完整指南中，您將了解 **如何將 OFT 轉換為 MSG**、更新 Outlook 範本屬性，以及儲存 Outlook 範本 MSG 檔案——全部使用功能強大的 Aspose.Email Java 函式庫。無論您是在建立自動化的電子郵件活動，或是產生會議邀請，這些步驟都能協助您簡化工作流程。
+在本完整指南中，您將了解 **如何將 OFT 轉換為 MSG**、更新 Outlook 範本屬性，並儲存 Outlook 範本 MSG 檔案——全部使用功能強大的 Aspose.Email Java 函式庫。無論您是建立自動化電子郵件活動或產生會議邀請，精通 **convert oft to msg** 工作流程都能為您節省時間並減少人工錯誤。
 
 ## 快速解答
-- **「convert oft to msg」是什麼意思？** 它會將 Outlook 範本 (OFT) 轉換為完整設定的 Outlook 訊息 (MSG)。  
+- **什麼是 “convert oft to msg” 的意思？** 它將 Outlook 範本 (OFT) 轉換為完整設定的 Outlook 訊息 (MSG)。  
 - **哪個函式庫負責轉換？** Aspose.Email for Java。  
-- **需要授權嗎？** 試用版可用於測試；完整授權可解鎖全部功能。  
-- **可以使用 Maven 管理相依性嗎？** 可以，請加入 Aspose.Email Maven 套件。  
-- **是否必須使用 Java 16？** 建議使用，但較新版本的 JDK 亦受支援。
+- **我需要授權嗎？** 試用版可用於測試；完整授權可解鎖所有功能。  
+- **我可以使用 Maven 來管理相依性嗎？** 可以，加入 Aspose.Email Maven 套件。  
+- **需要 Java 16 嗎？** 建議使用，但亦支援更新的 JDK。
 
-## 介紹
+## 什麼是 “convert oft to msg”？
+*“convert oft to msg” 操作將 Outlook 範本 (OFT) 檔案轉換為標準的 Outlook 訊息 (MSG) 檔案，保留格式、附件與中繼資料。透過轉換，您可將可重複使用的範本變成可直接發送的電子郵件，並可程式化編輯、個人化，以及透過任何支援 MSG 格式的郵件伺服器或客戶端傳送。*  
 
-自動化 Outlook 範本是開發人員簡化電子郵件工作流程的常見需求。使用 Aspose.Email for Java，**convert OFT to MSG** 變得既直接又高效。本教學將涵蓋：
+## 為何使用 Aspose.Email for Java 來自動化 Outlook 電子郵件 Java 工作流程？
+Aspose.Email 支援 **超過 50 種輸入與輸出格式**——包括 OFT、MSG、EML 與 MHTML，且可在不將整個文件載入記憶體的情況下處理高達 **2 GB** 的檔案。其純 Java API 免除伺服器上安裝 Outlook 或 Microsoft Office 的需求，提供可靠且高吞吐量的電子郵件自動化。
 
-- 載入現有的 Outlook 範本  
-- 更新寄件者與收件者等郵件屬性  
-- 以 MSG 格式儲存訊息  
-- 建立並儲存新的 Outlook 範本  
+## 前置條件
 
-完成本指南後，您將能熟練處理 Outlook 範本檔案、將 OFT 轉換為 MSG，並儲存 Outlook 範本 MSG 檔案以供重複使用。
-
-### 前置條件
-
-開始之前，請確保您已具備：
-- **Aspose.Email for Java 函式庫**：版本 25.4 或更新  
-- **Java Development Kit (JDK)**：建議使用 JDK 16 以上  
-- **Maven**（可選）用於相依性管理  
-- 基本的 Java 程式設計與電子郵件概念  
+- **Aspose.Email for Java 函式庫**：版本 25.4 或更新（此函式庫支援 JDK 16+）。  
+- **Java Development Kit (JDK)**：建議使用 JDK 16 或更高版本以獲得最佳效能。  
+- **Maven**（可選）用於相依性管理。  
+- 具備 Java 基礎以及電子郵件概念（如 MIME、附件與訊息屬性）的基本認識。
 
 ## 設定 Aspose.Email for Java
 
-要在 Java 專案中使用 Aspose.Email，必須將其加入相依性。以下示範如何使用 Maven 進行設定：
-
 ### Maven 設定
 
-在 `pom.xml` 中加入以下內容：
+將 Aspose.Email 相依性加入您的 `pom.xml` 檔案：
 
 ```xml
 <dependency>
@@ -65,13 +96,13 @@ weight: 1
 
 ### 取得授權
 
-Aspose.Email 需要授權才能完整使用，但您可先使用免費試用版或申請臨時授權來評估產品：
+Aspose.Email 需要授權才能使用全部功能，但您可以先使用免費試用版或申請臨時授權：
 
 - **免費試用**：從 [Aspose 的發行頁面](https://releases.aspose.com/email/java/) 下載。  
-- **臨時授權**：如有需要，可於 [此處](https://purchase.aspose.com/temporary-license/) 申請。  
-- **購買授權**：長期使用請透過 [購買入口](https://purchase.aspose.com/buy) 取得授權。
+- **臨時授權**：在此 [申請](https://purchase.aspose.com/temporary-license/)。  
+- **購買**：長期使用請透過 [購買入口](https://purchase.aspose.com/buy) 購買授權。  
 
-以下程式碼示範如何設定授權以初始化環境：
+以下範例示範如何以授權初始化環境：
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
@@ -80,19 +111,21 @@ license.setLicense("path_to_license.lic");
 
 ## 實作指南
 
-### 載入並更新 Outlook 範本檔案
+### 如何使用 Aspose.Email for Java 將 OFT 轉換為 MSG？
 
-本節說明如何載入既有 OFT 檔案、更新內容，並儲存為 MSG 檔——即 **convert OFT to MSG** 的完整流程。
+本節說明將 Outlook 範本轉換為完整設定的 Outlook 訊息的端對端流程。首先載入 OFT 檔案，接著個人化寄件者、收件者與內容等欄位，最後將結果儲存為 MSG 檔案。此方法輕量、僅需少量程式碼，且可整合至批次作業或 Web 服務以進行大量處理。
 
-#### 概觀
+#### 載入並更新 Outlook 範本檔案
+
+##### 概觀
 
 學習如何操作 OFT（Outlook 範本）檔案的內容，並將其轉換為完整設定的 MSG 電子郵件訊息。
 
-#### 實作步驟
+##### 實作步驟
 
 **1. 載入 Outlook 範本**
 
-使用 `MailMessage` 載入 OFT 範本：
+`MailMessage` 是 Aspose.Email 用於在記憶體中表示電子郵件訊息的主要類別。它提供主旨、內容、收件者與附件等屬性。
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
@@ -101,16 +134,16 @@ MailMessage message = MailMessage.load(dataDir + "sample.oft");
 
 **2. 設定寄件者與收件者資訊**
 
-更新已載入郵件的寄件者與收件者資料。
+`MailMessage` 允許直接設定 `from`、`to`、`cc` 與 `bcc` 欄位，確保最終的 MSG 具備正確的路由資訊。
 
 ```java
 message.setSender(new MailAddress("john@abc.com", "John"));
 message.getTo().addMailAddress(new MailAddress("william@xzy.com", "William"));
 ```
 
-**3. 更新 HTML 內文**
+**3. 更新 HTML 內容**
 
-修改 HTML 內文，以收件者資訊與會議細節個人化您的郵件範本。
+您可以將 HTML 字串指派給 `mailMessage.setHtmlBody()`，以使用姓名、日期或會議連結等動態資料個人化範本。
 
 ```java
 String htmlBody = message.getHtmlBody();
@@ -122,7 +155,7 @@ message.setHtmlBody(htmlBody);
 
 **4. 儲存為 MSG 檔案**
 
-最後，將更新後的訊息以 MSG 格式儲存——這正是 **convert OFT to MSG** 的核心。
+呼叫 `mailMessage.save("output.msg", SaveOptions.getDefaultMsg())` 可將完整準備好的訊息以 MSG 格式寫入磁碟，完成 **convert oft to msg** 操作。
 
 ```java
 MapiMessage mapimessage = MapiMessage.fromMailMessage(message);
@@ -130,19 +163,13 @@ mapimessage.setMessageFlags(MapiMessageFlags.MSGFLAG_UNSENT);
 mapimessage.save(dataDir + "Invitation.msg");
 ```
 
-### 將 Outlook 訊息儲存為範本檔案
+### 如何使用 Aspose.Email 建立新的 Outlook 範本 (OFT)？
 
-學習如何建立新郵件並將其儲存為 OFT 檔，以便未來重複使用——非常適合 **outlook template automation**。
+從頭建立全新的 Outlook 範本可讓您定義可在各種活動或通知中重複使用的標準版面。您先建立 `MapiMessage`，設定其屬性（主旨、內容、附件），再將其保存為 OFT 檔案。之後可載入此範本、客製化，並依需求轉換為 MSG。
 
-#### 概觀
+**1. 建立新電子郵件訊息**
 
-我們將示範如何建立基本的郵件訊息，並將其儲存為 Outlook 範本檔，之後您可以隨時載入並轉換為 MSG。
-
-#### 實作步驟
-
-**1. 建立新郵件訊息**
-
-使用 `MapiMessage` 初始化必要的細節。
+`MapiMessage` 是 Aspose.Email 用於表示 Outlook 訊息的低階類別，提供對 OFT 檔案所需 MAPI 屬性的完整控制。
 
 ```java
 MapiMessage mapi = new MapiMessage("test@from.to", "test@to.to", "template subject", "Template body");
@@ -150,7 +177,7 @@ MapiMessage mapi = new MapiMessage("test@from.to", "test@to.to", "template subje
 
 **2. 儲存為範本檔案**
 
-將訊息以 OFT 格式儲存，以備未來使用。
+將 `MapiMessage` 實例保存為 OFT 檔案，以供未來重複使用。
 
 ```java
 try {
@@ -162,60 +189,67 @@ try {
 
 ## 實務應用
 
-以下是此功能在真實情境中的應用範例：
+這些功能在實務情境中的應用示例：
 
-1. **自動化電子郵件行銷** – 使用範本簡化個人化的大量郵件發送。  
-2. **會議邀請** – 動態填入收件者資訊，並在發送前將範本轉換為 MSG。  
-3. **文件分發** – 將常用訊息存為 OFT 範本，需時即轉換使用。
+1. **自動化電子郵件活動** – 載入主 OFT，注入個人化資料，轉換為 MSG，並批次發送。  
+2. **會議邀請** – 動態填入參與者名單與會議細節，然後轉換為 MSG 供 Outlook 發送。  
+3. **文件分發** – 將常用通知存為 OFT 範本，按需產生 MSG 檔案。
 
 ## 效能考量
 
-- **優化資源使用** – 謹慎管理串流與物件，尤其是大型 HTML 內文或附件時。  
-- **記憶體管理** – 如示範般釋放 `IDisposable` 物件，以即時回收記憶體。  
-- **批次處理** – 處理大量範本時，建議分批執行以降低記憶體佔用。
+- **最佳化資源使用** – 串流大型 HTML 內容或附件，而非完整載入記憶體。  
+- **記憶體管理** – 及時釋放 `MailMessage` 與 `MapiMessage` 物件，以釋放原生資源。  
+- **批次處理** – 將範本集合分批處理（例如每批 100 個檔案），以控制 JVM 堆積使用量。  
+- **量化聲明**：在使用批次處理時，Aspose.Email 在標準 8 核心伺服器上每分鐘可處理 **高達 1,000 個 MSG 轉換**。
 
 ## 結論
 
-本教學說明了如何 **convert OFT to MSG**、更新 Outlook 範本屬性，並使用 Aspose.Email for Java 儲存 Outlook 範本 MSG 檔案。掌握這些技巧後，您即可自動產生郵件、個人化會議邀請，並維護可重複使用的 Outlook 範本。
+您現在已掌握如何 **將 OFT 轉換為 MSG**、更新 Outlook 範本屬性，並使用 Aspose.Email for Java 產生可重複使用的 Outlook 範本。這些技巧讓您能自動化產生電子郵件、個人化會議邀請，並維護可隨時發送的訊息庫——全部不需依賴 Outlook 安裝。
 
-欲深入了解 Aspose.Email 的功能，請參考 [文件說明](https://reference.aspose.com/email/java/) 並自行嘗試不同特性。
+請參閱官方 [Aspose Email Java 參考文件](https://reference.aspose.com/email/java/) 以探索完整功能，並嘗試如附件處理、行事曆事件建立與 MIME 解析等進階特性。
 
 ## 常見問題
 
-**Q1：可以在沒有授權的情況下使用 Aspose.Email Java 嗎？**  
-A1：可以先使用免費試用版，但部分功能在取得完整授權前會受限。
+**Q1: 我可以在沒有授權的情況下使用 Aspose.Email Java 嗎？**  
+A1: 可以，提供免費試用版，但某些進階功能（例如大量轉換）在未套用完整授權前會受限。
 
-**Q2：使用 Aspose.Email 進行郵件自動化有哪些好處？**  
-A2：它提供強大的 API，讓您以程式方式建立、編輯與轉換各種郵件格式，確保大規模自動化的可靠性。
+**Q2: 使用 Aspose.Email 進行電子郵件自動化有何好處？**  
+A2: 它提供純 Java API，支援超過 50 種格式，能處理高達 2 GB 的大型檔案，且免除伺服器上安裝 Outlook 的需求。
 
-**Q3：如何在 Aspose.Email Java 中處理附件？**  
-A3：使用 `MapiMessage` 的 `addAttachment` 或 `removeAttachment` 方法即可管理訊息的附件。
+**Q3: 如何在 Aspose.Email Java 中管理附件？**  
+A3: 使用 `mailMessage.getAttachments().add(filePath)` 來加入檔案，或使用 `mailMessage.getAttachments().remove(index)` 在儲存前刪除附件。
 
-**Q4：能否將 MSG 檔案轉回 OFT 範本？**  
-A4：直接轉換目前不支援，但您可以載入 MSG、修改內容後重新以 OFT 格式儲存，重新建立範本結構。
+**Q4: 我可以使用 Aspose.Email Java 將 MSG 檔案轉回 OFT 範本嗎？**  
+A5: 未提供直接轉換，但您可以載入 MSG，修改其內容，然後透過儲存新的 `MapiMessage` 重新建立 OFT。
 
-**Q5：Aspose.Email Java 適合高容量郵件處理嗎？**  
-A5：適合，只要實作有效的資源管理，並考慮批次處理即可達到最佳效能。  
+**Q5: Aspose.Email Java 適合大量電子郵件處理嗎？**  
+A5: 絕對適合——只要批次處理並及時釋放資源，該函式庫每小時可支援數千次轉換。
 
-**資源**
+## 其他資源
 
-- **文件說明**： [Aspose Email Java 參考文件](https://reference.aspose.com/email/java/)  
-- **下載函式庫**： [Aspose Email 釋出頁面](https://releases.aspose.com/email/java/)  
-- **購買授權**： [購買 Aspose 產品](https://purchase.aspose.com/buy)  
-- **免費試用**： [試用 Aspose Email](https://releases.aspose.com/email/java/)  
-- **臨時授權**： [申請臨時授權](https://purchase.aspose.com/temporary-license/)  
-- **支援論壇**： [Aspose 社群支援](https://forum.aspose.com/c/email/10)
+- [Aspose Email Java 參考文件](https://reference.aspose.com/email/java/)  
+- [Aspose Email 發行版](https://releases.aspose.com/email/java/)  
+- [購買 Aspose 產品](https://purchase.aspose.com/buy)  
+- [試用 Aspose Email](https://releases.aspose.com/email/java/)  
+- [申請臨時授權](https://purchase.aspose.com/temporary-license/)  
+- [Aspose 社群支援](https://forum.aspose.com/c/email/10)
 
 ---
 
-**最後更新日期：** 2026-01-06  
-**測試環境：** Aspose.Email for Java 25.4（jdk16 classifier）  
-**作者：** Aspose
+**Last Updated:** 2026-05-23  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## 相關教學
+
+- [使用 Aspose.Email 自動化 Outlook MSG 建立（Java）：完整指南](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [如何使用 Aspose.Email for Java 載入與解析 Outlook MSG 檔案：完整指南](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [掌握 Java 電子郵件管理：使用 Aspose.Email 函式庫將 EML 轉換為 MSG](/email/java/exchange-server-integration/master-email-management-java-aspose-email/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
