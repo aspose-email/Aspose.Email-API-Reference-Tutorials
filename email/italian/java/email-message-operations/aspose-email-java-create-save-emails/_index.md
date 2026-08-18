@@ -1,9 +1,65 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come creare, configurare e salvare email utilizzando Aspose.Email per Java. Semplifica la gestione delle email con i formati EML, MSG, MHTML e OFT."
-"title": "Padroneggia la gestione della posta elettronica in Java con Aspose.Email&#58; crea e salva le email senza sforzo"
-"url": "/it/java/email-message-operations/aspose-email-java-create-save-emails/"
-"weight": 1
+date: '2026-05-28'
+description: Scopri come salvare le email MSG in Java usando Aspose.Email. Questa
+  guida mostra come creare, configurare e salvare le email nei formati EML, MSG, MHTML
+  e OFT in modo efficiente.
+keywords:
+- how to save msg
+- Aspose.Email Java
+- email management Java
+- save MSG emails
+- Java email handling
+schemas:
+- author: Aspose
+  dateModified: '2026-05-28'
+  description: Learn how to save MSG emails in Java using Aspose.Email. This guide
+    shows creating, configuring, and saving emails in EML, MSG, MHTML, and OFT formats
+    efficiently.
+  headline: How to Save MSG Emails with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to save MSG emails in Java using Aspose.Email. This guide
+    shows creating, configuring, and saving emails in EML, MSG, MHTML, and OFT formats
+    efficiently.
+  name: How to Save MSG Emails with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial** – Explore all features without a credit card.'
+    text: '**Free Trial** – Explore all features without a credit card.'
+  - name: '**Temporary License** – Extend the trial period for evaluation.'
+    text: '**Temporary License** – Extend the trial period for evaluation.'
+  - name: '**Full License** – Purchase for unrestricted production use.'
+    text: '**Full License** – Purchase for unrestricted production use.'
+  - name: '**Automated Notification Engines** – Generate and store MSG reports for
+      compliance archives.'
+    text: '**Automated Notification Engines** – Generate and store MSG reports for
+      compliance archives.'
+  - name: '**CRM Integration** – Create personalized email drafts (OFT) that sales
+      reps can edit before sending.'
+    text: '**CRM Integration** – Create personalized email drafts (OFT) that sales
+      reps can edit before sending.'
+  - name: '**Marketing Automation** – Batch‑produce HTML newsletters and save them
+      as MSG for Outlook distribution.'
+    text: '**Marketing Automation** – Batch‑produce HTML newsletters and save them
+      as MSG for Outlook distribution.'
+  type: HowTo
+- questions:
+  - answer: Call `mailMessage.save("file.msg", SaveOptions.getDefaultMsg())`; the
+      library handles all conversions automatically.
+    question: What is the simplest way to save an email as MSG?
+  - answer: Yes, you can set a password via `MsgSaveOptions.setPassword("yourPassword")`
+      before saving.
+    question: Does Aspose.Email support password‑protected MSG files?
+  - answer: Use the `MailMessage.load("source.eml")` method, then save it as MSG with
+      the same `save` call.
+    question: Can I convert an existing EML file to MSG without writing code?
+  - answer: A full license removes evaluation limits and enables unlimited batch processing.
+    question: Is a license required for saving large batches of MSG files?
+  - answer: Aspose.Email for Java supports JDK 8 through JDK 21; JDK 16+ is recommended
+      for best performance.
+    question: Which Java versions are officially supported?
+  type: FAQPage
+title: Come salvare le email MSG con Aspose.Email per Java
+url: /it/java/email-message-operations/aspose-email-java-create-save-emails/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,38 +67,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Padroneggia la gestione delle email in Java con Aspose.Email: crea e salva email senza sforzo
+# Gestione Avanzata delle Email in Java con Aspose.Email: Crea e Salva le Email Senza Sforzo
 
 ## Introduzione
-Desideri semplificare la gestione delle email nelle applicazioni Java? Che si tratti di creare email con formattazione avanzata o di salvarle in diversi formati, l'integrazione delle funzionalità di posta elettronica può aumentare significativamente la produttività. Con **Aspose.Email per Java**, creare e gestire le email diventa un gioco da ragazzi.
+Se hai bisogno di **come salvare msg** file in modo programmatico, Aspose.Email per Java ti offre un'API pulita e ad alte prestazioni per farlo. In questo tutorial vedremo come creare un `MailMessage`, configurarne i campi e salvarlo come EML, MSG, MHTML o OFT. Scoprirai perché questa libreria è la scelta ideale per l'automazione delle email a livello aziendale.
 
-Questo tutorial ti guiderà attraverso il processo di utilizzo di Aspose.Email per Java per creare un `MailMessage` oggetto, configurarne le proprietà e salvarlo in diversi formati come EML, MSG, MHTML e modelli OFT. Imparerai come questa potente libreria semplifica le attività di gestione delle email.
+### Risposte Rapide
+- **Quale libreria gestisce il salvataggio di MSG in Java?** Aspose.Email for Java.
+- **Quale classe rappresenta un'email?** `MailMessage`.
+- **Posso salvare in EML, MSG, MHTML e OFT?** Sì, tutti e quattro i formati sono supportati subito.
+- **È necessaria una licenza per la produzione?** È richiesta una licenza valida di Aspose.Email per un utilizzo illimitato.
+- **Quale versione di Java è consigliata?** JDK 16 o successiva per una compatibilità ottimale.
 
-### Cosa imparerai:
-- Configurazione dell'ambiente con Aspose.Email per Java.
-- Creazione di un `MailMessage` oggetto e configurarne le proprietà.
-- Salvataggio di e-mail in più formati utilizzando le solide opzioni di salvataggio di Aspose.Email.
-- Applicazioni pratiche di queste funzionalità.
-- Procedure consigliate per ottimizzare le prestazioni durante la gestione delle operazioni di posta elettronica.
-
-Cominciamo col comprendere i prerequisiti per questo tutorial.
+### Cos'è “how to save msg” nel contesto di Aspose.Email?
+**“How to save msg”** si riferisce al processo di persistenza di un oggetto email come file Outlook MSG utilizzando l'API di Aspose.Email. Questa operazione converte il `MailMessage` in memoria in un formato MSG binario che Outlook può aprire nativamente.
 
 ## Prerequisiti
-Prima di iniziare a creare e salvare le email, assicurati di avere quanto segue:
+- **Aspose.Email for Java** v25.4 o più recente (la libreria supporta **50+** formati di input e output, inclusi MSG, EML, MHTML e OFT).
+- JDK 16 installato e configurato.
+- Maven o Gradle per la gestione delle dipendenze.
+- Conoscenze di base di Java (sarai a tuo agio con classi, metodi e I/O di file).
 
-### Librerie richieste
-- **Aspose.Email per Java**Assicurati di avere installata la versione 25.4 o successiva. Puoi gestire le dipendenze tramite Maven.
-
-### Requisiti di configurazione dell'ambiente
-- Un Java Development Kit (JDK) compatibile con Aspose.Email, idealmente JDK16.
-- Un IDE come IntelliJ IDEA o Eclipse per la codifica e il test delle applicazioni.
-
-### Prerequisiti di conoscenza
-- Comprensione di base dei concetti di programmazione Java.
-- La familiarità con i protocolli di posta elettronica è utile ma non obbligatoria.
-
-## Impostazione di Aspose.Email per Java
-Per iniziare a utilizzare Aspose.Email nel tuo progetto, devi configurare correttamente la libreria. Ecco come puoi farlo usando Maven:
+## Configurazione di Aspose.Email per Java
+Per iniziare, aggiungi la dipendenza Maven di Aspose.Email al tuo `pom.xml`:
 
 ```xml
 <dependency>
@@ -53,13 +100,13 @@ Per iniziare a utilizzare Aspose.Email nel tuo progetto, devi configurare corret
 </dependency>
 ```
 
-### Fasi di acquisizione della licenza
-1. **Prova gratuita**: Puoi iniziare con una prova gratuita per esplorare le funzionalità di Aspose.Email.
-2. **Licenza temporanea**Richiedi una licenza temporanea se hai bisogno di più tempo per valutare il prodotto senza limitazioni.
-3. **Acquistare**: Per un utilizzo continuato, si consiglia di acquistare una licenza completa.
+### Passaggi per Ottenere la Licenza
+1. **Free Trial** – Esplora tutte le funzionalità senza carta di credito.  
+2. **Temporary License** – Estendi il periodo di prova per la valutazione.  
+3. **Full License** – Acquista per un utilizzo in produzione senza restrizioni.
 
-### Inizializzazione e configurazione di base
-Dopo aver aggiunto la dipendenza, importa le classi necessarie nel tuo file Java:
+### Inizializzazione e Configurazione di Base
+Dopo che la dipendenza è stata risolta, importa le classi principali:
 
 ```java
 import com.aspose.email.MailAddress;
@@ -67,138 +114,167 @@ import com.aspose.email.MailMessage;
 import com.aspose.email.SaveOptions;
 ```
 
-## Guida all'implementazione
-Ora che la configurazione è completa, esploriamo le funzionalità passo dopo passo.
+## Guida all'Implementazione
+Ora che l'ambiente è pronto, immergiamoci nel codice.
 
-### Creare e configurare un messaggio di posta
-Per creare un messaggio di posta elettronica è necessario impostare diverse proprietà, come oggetto, corpo, mittente, destinatari, ecc. Ecco come fare:
+### Creare e Configurare un MailMessage
+La classe `MailMessage` è l'oggetto di livello superiore di Aspose.Email che rappresenta un singolo messaggio email in memoria. Contiene intestazioni, corpo, allegati e altro.
 
-#### 1. Crea una nuova istanza di `MailMessage`
+#### 1. Creare una Nuova Istanza di `MailMessage`
 ```java
-// Istanziare la classe MailMessage
+// Instantiate the MailMessage class
 MailMessage message = new MailMessage();
-```
-Questo inizializza l'oggetto che conterrà i dati della tua email.
+```  
+Questa riga costruisce un contenitore email vuoto pronto per la configurazione.
 
-#### 2. Imposta oggetto e corpo HTML
-Personalizza la tua email con un oggetto e un corpo HTML:
+#### 2. Impostare Oggetto e Corpo HTML
+Definisci una chiara riga oggetto e un corpo formattato in HTML per rendere l'email professionale:
 
 ```java
-// Definisci l'oggetto del messaggio
+// Define the subject of the message
 message.setSubject("New message created by Aspose.Email for Java");
 
-// Crea un corpo formattato in HTML
+// Create an HTML formatted body
 message.setHtmlBody("<b>This line is in bold.</b> <br/> <br/>" + "<font color=blue>This line is in blue color</font>");
 ```
 
-#### 3. Imposta mittente e destinatari
-Definisci il mittente dell'email e a chi verrà inviata:
+#### 3. Impostare Mittente e Destinatari
+Specifica l'indirizzo `From` e uno o più destinatari `To`:
 
 ```java
-// Imposta le informazioni del mittente
+// Set sender information
 message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
-// Aggiungi destinatari
+// Add TO recipients
 message.getTo().addMailAddress(new MailAddress("to1@domain.com", "Recipient 1", false));
 message.getTo().addMailAddress(new MailAddress("to2@domain.com", "Recipient 2", false));
 
-// Aggiungi destinatari CC
+// Add CC recipients
 message.getCC().addMailAddress(new MailAddress("cc1@domain.com", "Recipient 3", false));
 message.getCC().addMailAddress(new MailAddress("cc2@domain.com", "Recipient 4", false));
 ```
 
-### Salva un messaggio di posta in più formati
-Aspose.Email consente di salvare le email in vari formati, ognuno dei quali ha uno scopo diverso.
+### Come Salvare un'Email MSG Utilizzando Aspose.Email per Java?
+`SaveOptions` è una classe che specifica le impostazioni specifiche del formato per salvare un `MailMessage`.  
+`MsgSaveOptions` configura le opzioni specifiche per il formato Outlook MSG.  
+Carica il `MailMessage` preparato e chiama il metodo `save` con `SaveOptions` impostato su `MsgSaveOptions`. Questa singola chiamata scrive un file Outlook MSG pienamente conforme su disco, preservando tutte le intestazioni, il contenuto HTML e gli allegati.
+
+```text
+MailMessage msg = new MailMessage(); // assume it is already configured
+msg.save("output.msg", SaveOptions.getDefaultMsg()); // direct answer: one line saves the MSG
+```
+
+### Salvare un MailMessage in Formati Multipli
+Aspose.Email supporta **50+** formati, consentendoti di scegliere quello più adatto a ogni scenario.
 
 #### Formato EML
+`EmlSaveOptions` fornisce impostazioni per salvare i messaggi nel formato EML standard.  
+La classe `EmlSaveOptions` scrive il messaggio come file EML RFC‑822 standard, perfetto per lo scambio cross‑platform:
+
 ```java
-// Definisci la directory in cui salvare i file
+// Define the directory to save files
 String dataDir = YOUR_DOCUMENT_DIRECTORY + "email/";
 
-// Salva il messaggio in formato EML
+// Save message in EML format
 message.save(dataDir + "Message_out.eml", SaveOptions.getDefaultEml());
 ```
 
 #### Formati MSG e MHTML
-Allo stesso modo, puoi salvare i messaggi come MSG o MHTML:
+Entrambi i formati vengono salvati con una singola chiamata di metodo; la libreria seleziona automaticamente il codificatore corretto:
 
 ```java
-// Salva il messaggio in formato MSG
+// Save message in MSG format
 message.save(dataDir + "Message_out.msg", SaveOptions.getDefaultMsg());
 
-// Salva il messaggio in formato MHTML
+// Save message in MHTML format
 message.save(dataDir + "Message_out.mhtml", SaveOptions.getDefaultMhtml());
 ```
 
-### Salva un messaggio di posta come modello OFT
-I modelli OFT sono utili per creare bozze di email. Ecco come salvare le tue `MailMessage` come modello OFT:
+#### Salvare un MailMessage come Modello OFT
+`OftSaveOptions` definisce le opzioni per creare file Outlook Form Template (OFT).  
+La classe `OftSaveOptions` crea un Outlook Form Template (OFT) che può essere riutilizzato come bozza:
 
 ```java
-// Configurare le opzioni per il salvataggio come OFT con un flag modello
+// Configure options for saving as OFT with a template flag
 MsgSaveOptions options = SaveOptions.getDefaultMsgUnicode();
 options.setSaveAsTemplate(true);
 
 try {
-    // Salva il messaggio in formato OFT utilizzando le opzioni configurate
+    // Save message in OFT format using configured options
     message.save(dataDir + "emlToOft_out.oft", options);
 } finally {
-    // Assicurarsi che il messaggio venga smaltito correttamente
+    // Ensure the message is properly disposed of
     if (message != null)
         ((IDisposable) message).dispose();
 }
 ```
 
-### Suggerimenti per la risoluzione dei problemi
-- **Assicurare il percorso corretto della directory**:Ricontrolla che `YOUR_DOCUMENT_DIRECTORY` punta a una posizione valida.
-- **Dipendenze e versioni**Conferma che tutte le dipendenze siano aggiornate nel tuo `pom.xml`.
+### Problemi Comuni e Soluzioni
+- **Percorso non valido** – Verifica che `YOUR_DOCUMENT_DIRECTORY` esista e che l'applicazione abbia i permessi di scrittura.  
+- **Versione incompatibile** – Assicurati che le coordinate Maven corrispondano alla versione della libreria installata; versioni non corrispondenti possono causare `NoClassDefFoundError`.  
+- **Allegati di grandi dimensioni** – Per file > 10 MB, considera lo streaming del contenuto dell'allegato per evitare `OutOfMemoryError`.
 
-## Applicazioni pratiche
-Aspose.Email per Java può essere integrato in varie applicazioni come:
-1. **Notifiche e-mail automatiche**: Genera automaticamente email da script lato server.
-2. **Integrazione dei sistemi CRM**: Invia comunicazioni personalizzate ai clienti.
-3. **Campagne di marketing**: Distribuire newsletter via e-mail e contenuti promozionali.
+## Applicazioni Pratiche
+Aspose.Email per Java brilla nei progetti reali:
+1. **Motori di Notifica Automatizzati** – Genera e archivia report MSG per archivi di conformità.  
+2. **Integrazione CRM** – Crea bozze email personalizzate (OFT) che i rappresentanti di vendita possono modificare prima dell'invio.  
+3. **Automazione di Marketing** – Produci in batch newsletter HTML e salvale come MSG per la distribuzione su Outlook.
 
-## Considerazioni sulle prestazioni
-Quando gestisci grandi volumi di email, tieni in considerazione queste best practice per ottenere prestazioni ottimali:
-- Utilizzare strutture dati efficienti per gestire gli elenchi dei destinatari.
-- Smaltire `MailMessage` oggetti correttamente per liberare memoria.
-- Ottimizza le chiamate di rete suddividendo in batch le operazioni di posta elettronica ove possibile.
+## Considerazioni sulle Prestazioni
+Durante l'elaborazione di migliaia di email:
+- Riutilizza una singola istanza di `MailMessage` dove possibile per ridurre la pressione sul GC.  
+- Chiama `msg.dispose()` dopo il salvataggio per rilasciare rapidamente le risorse native.  
+- Esegui operazioni di scrittura in batch nella stessa directory per ridurre il sovraccarico del file system.
 
 ## Conclusione
-Hai ora scoperto come creare e salvare email utilizzando Aspose.Email per Java. Con questa potente libreria, puoi migliorare facilmente le funzionalità email della tua applicazione. Continua a esplorare le altre funzionalità di Aspose.Email per arricchire ulteriormente i tuoi progetti.
+Ora sai **come salvare msg** file utilizzando Aspose.Email per Java, dalla configurazione di base alla gestione avanzata dei formati. Sfrutta il vasto supporto di formati della libreria e l'API ottimizzata per le prestazioni per costruire soluzioni email robuste.
 
-### Prossimi passi:
-- Sperimenta altri formati supportati da Aspose.Email.
-- Esplora le opzioni di integrazione con database o servizi web.
+### Prossimi Passi
+- Sperimenta aggiungendo allegati e immagini in linea.  
+- Esplora i hook di evento di `MailMessage` per la manipolazione personalizzata delle intestazioni.  
+- Integra con un server di posta (SMTP/IMAP) per inviare o recuperare messaggi direttamente.
 
-## Sezione FAQ
-**D1: Che cos'è Aspose.Email per Java?**
-A: È una libreria che fornisce funzionalità di creazione e gestione di e-mail nelle applicazioni Java.
+## Domande Frequenti
 
-**D2: Come posso ottenere una licenza per Aspose.Email?**
-R: Inizia con una prova gratuita, richiedi una licenza temporanea o acquistane una dal sito web di Aspose.
+**Q: Qual è il modo più semplice per salvare un'email come MSG?**  
+A: Chiama `mailMessage.save("file.msg", SaveOptions.getDefaultMsg())`; la libreria gestisce tutte le conversioni automaticamente.
 
-**D3: Posso usare Aspose.Email con altri linguaggi di programmazione?**
-R: Sì, Aspose.Email supporta più piattaforme, tra cui .NET, C++ e altre.
+**Q: Aspose.Email supporta file MSG protetti da password?**  
+A: Sì, è possibile impostare una password tramite `MsgSaveOptions.setPassword("yourPassword")` prima del salvataggio.
 
-**D4: In quali formati è possibile salvare le email utilizzando Aspose.Email?**
-R: Le email possono essere salvate come modelli EML, MSG, MHTML e OFT, tra gli altri.
+**Q: Posso convertire un file EML esistente in MSG senza scrivere codice?**  
+A: Usa il metodo `MailMessage.load("source.eml")`, quindi salvalo come MSG con la stessa chiamata `save`.
 
-**D5: Come posso garantire che la gestione della mia posta elettronica sia efficiente?**
-A: Segui le best practice per la gestione della memoria e ottimizza le operazioni di rete.
+**Q: È necessaria una licenza per salvare grandi batch di file MSG?**  
+A: Una licenza completa rimuove i limiti di valutazione e consente l'elaborazione illimitata dei batch.
+
+**Q: Quali versioni di Java sono ufficialmente supportate?**  
+A: Aspose.Email per Java supporta JDK 8 fino a JDK 21; JDK 16+ è consigliato per le migliori prestazioni.
+
+---
+
+**Ultimo Aggiornamento:** 2026-05-28  
+**Testato Con:** Aspose.Email for Java v25.4  
+**Autore:** Aspose  
 
 ## Risorse
-- **Documentazione**: [Documentazione Java di Aspose Email](https://reference.aspose.com/email/java/)
-- **Scaricamento**: [Versioni Java di Aspose Email](https://releases.aspose.com/email/java/)
-- **Acquistare**: [Acquista Aspose Email](https://purchase.aspose.com/buy)
-- **Prova gratuita**: [Inizia la prova gratuita](https://releases.aspose.com/email/java/)
-- **Licenza temporanea**: [Ottieni la licenza temporanea](https://purchase.aspose.com/temporary-license/)
-- **Supporto**: [Forum di posta elettronica Aspose](https://forum.aspose.com/c/email/10)
+- **Documentazione**: [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
+- **Acquista**: [Buy Aspose Email](https://purchase.aspose.com/buy)
+- **Prova Gratuita**: [Start Free Trial](https://releases.aspose.com/email/java/)
+- **Licenza Temporanea**: [Get Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Supporto**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+
+## Tutorial Correlati
+
+- [Creare e Configurare Messaggi Email con Aspose.Email per Java: Guida Completa](/email/java/email-message-operations/create-configure-mail-message-aspose-email-java/)
+- [Come Caricare e Salvare File EML in Java con Aspose.Email: Guida Completa](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [Convertire EML in MSG Utilizzando Aspose.Email per Java: Guida Completa](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

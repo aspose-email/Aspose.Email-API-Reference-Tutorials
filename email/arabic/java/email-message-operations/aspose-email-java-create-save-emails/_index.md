@@ -1,9 +1,64 @@
 ---
-"date": "2025-05-29"
-"description": "تعرّف على كيفية إنشاء رسائل البريد الإلكتروني وتكوينها وحفظها باستخدام Aspose.Email لجافا. بسّط تعاملك مع البريد الإلكتروني باستخدام صيغ EML وMSG وMHTML وOFT."
-"title": "إتقان إدارة البريد الإلكتروني في جافا مع Aspose.Email - إنشاء وحفظ رسائل البريد الإلكتروني بسهولة"
-"url": "/ar/java/email-message-operations/aspose-email-java-create-save-emails/"
-"weight": 1
+date: '2026-05-28'
+description: تعلم كيفية حفظ رسائل MSG في Java باستخدام Aspose.Email. يوضح هذا الدليل
+  إنشاء الرسائل وتكوينها وحفظها بصيغ EML و MSG و MHTML و OFT بكفاءة.
+keywords:
+- how to save msg
+- Aspose.Email Java
+- email management Java
+- save MSG emails
+- Java email handling
+schemas:
+- author: Aspose
+  dateModified: '2026-05-28'
+  description: Learn how to save MSG emails in Java using Aspose.Email. This guide
+    shows creating, configuring, and saving emails in EML, MSG, MHTML, and OFT formats
+    efficiently.
+  headline: How to Save MSG Emails with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to save MSG emails in Java using Aspose.Email. This guide
+    shows creating, configuring, and saving emails in EML, MSG, MHTML, and OFT formats
+    efficiently.
+  name: How to Save MSG Emails with Aspose.Email for Java
+  steps:
+  - name: '**Free Trial** – Explore all features without a credit card.'
+    text: '**Free Trial** – Explore all features without a credit card.'
+  - name: '**Temporary License** – Extend the trial period for evaluation.'
+    text: '**Temporary License** – Extend the trial period for evaluation.'
+  - name: '**Full License** – Purchase for unrestricted production use.'
+    text: '**Full License** – Purchase for unrestricted production use.'
+  - name: '**Automated Notification Engines** – Generate and store MSG reports for
+      compliance archives.'
+    text: '**Automated Notification Engines** – Generate and store MSG reports for
+      compliance archives.'
+  - name: '**CRM Integration** – Create personalized email drafts (OFT) that sales
+      reps can edit before sending.'
+    text: '**CRM Integration** – Create personalized email drafts (OFT) that sales
+      reps can edit before sending.'
+  - name: '**Marketing Automation** – Batch‑produce HTML newsletters and save them
+      as MSG for Outlook distribution.'
+    text: '**Marketing Automation** – Batch‑produce HTML newsletters and save them
+      as MSG for Outlook distribution.'
+  type: HowTo
+- questions:
+  - answer: Call `mailMessage.save("file.msg", SaveOptions.getDefaultMsg())`; the
+      library handles all conversions automatically.
+    question: What is the simplest way to save an email as MSG?
+  - answer: Yes, you can set a password via `MsgSaveOptions.setPassword("yourPassword")`
+      before saving.
+    question: Does Aspose.Email support password‑protected MSG files?
+  - answer: Use the `MailMessage.load("source.eml")` method, then save it as MSG with
+      the same `save` call.
+    question: Can I convert an existing EML file to MSG without writing code?
+  - answer: A full license removes evaluation limits and enables unlimited batch processing.
+    question: Is a license required for saving large batches of MSG files?
+  - answer: Aspose.Email for Java supports JDK 8 through JDK 21; JDK 16+ is recommended
+      for best performance.
+    question: Which Java versions are officially supported?
+  type: FAQPage
+title: كيفية حفظ رسائل MSG باستخدام Aspose.Email لـ Java
+url: /ar/java/email-message-operations/aspose-email-java-create-save-emails/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,38 +66,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# إتقان إدارة البريد الإلكتروني في Java مع Aspose.Email: إنشاء وحفظ رسائل البريد الإلكتروني بسهولة
+# إدارة البريد الإلكتروني المتقدمة في جافا مع Aspose.Email: إنشاء وحفظ الرسائل بسهولة
 
 ## مقدمة
-هل ترغب في تبسيط إدارة بريدك الإلكتروني في تطبيقات جافا؟ سواءً بإنشاء رسائل بريد إلكتروني بتنسيق غني أو حفظها بتنسيقات مختلفة، فإن دمج وظائف البريد الإلكتروني يُحسّن الإنتاجية بشكل ملحوظ. **Aspose.Email لـ Java**، تصبح عملية صياغة وإدارة رسائل البريد الإلكتروني سلسة.
+إذا كنت بحاجة إلى **how to save msg** ملفات برمجياً، فإن Aspose.Email for Java يوفّر لك واجهة برمجة تطبيقات نظيفة وعالية الأداء للقيام بذلك. في هذا الدرس سنستعرض إنشاء `MailMessage`، وضبط حقوله، وحفظه كـ EML أو MSG أو MHTML أو OFT. سترى لماذا تُعد هذه المكتبة خياراً مفضلاً لأتمتة البريد الإلكتروني على مستوى المؤسسات.
 
-سوف يرشدك هذا البرنامج التعليمي خلال عملية استخدام Aspose.Email لـ Java لإنشاء `MailMessage` كائن البريد الإلكتروني، وتكوين خصائصه، وحفظه بتنسيقات مختلفة مثل قوالب EML وMSG وMHTML وOFT. ستتعلم كيف تُبسّط هذه المكتبة الفعّالة مهام إدارة البريد الإلكتروني.
+### إجابات سريعة
+- **ما المكتبة التي تتعامل مع حفظ MSG في جافا؟** Aspose.Email for Java.
+- **ما الفئة التي تمثل بريدًا إلكترونيًا؟** `MailMessage`.
+- **هل يمكنني الحفظ إلى EML و MSG و MHTML و OFT؟** نعم، جميع الصيغ الأربعة مدعومة مباشرةً.
+- **هل أحتاج إلى ترخيص للإنتاج؟** يلزم وجود ترخيص Aspose.Email صالح للاستخدام غير المحدود.
+- **ما نسخة جافا الموصى بها؟** JDK 16 أو أحدث للحصول على أفضل توافق.
 
-### ما سوف تتعلمه:
-- إعداد البيئة الخاصة بك باستخدام Aspose.Email لـJava.
-- إنشاء `MailMessage` الكائن وتكوين خصائصه.
-- حفظ رسائل البريد الإلكتروني بتنسيقات متعددة باستخدام خيارات الحفظ القوية في Aspose.Email.
-- التطبيقات العملية لهذه الوظائف.
-- أفضل الممارسات لتحسين الأداء عند التعامل مع عمليات البريد الإلكتروني.
+### ما هو “how to save msg” في سياق Aspose.Email؟
+**“How to save msg”** يشير إلى عملية حفظ كائن البريد الإلكتروني كملف Outlook MSG باستخدام واجهة برمجة تطبيقات Aspose.Email. تقوم هذه العملية بتحويل `MailMessage` الموجود في الذاكرة إلى صيغة MSG ثنائية يمكن لـ Outlook فتحها مباشرةً.
 
-لنبدأ بفهم المتطلبات الأساسية لهذا البرنامج التعليمي.
+## المتطلبات المسبقة
+- **Aspose.Email for Java** v25.4 أو أحدث (المكتبة تدعم **50+** صيغ إدخال وإخراج، بما في ذلك MSG و EML و MHTML و OFT).
+- JDK 16 مثبت ومُكوَّن.
+- Maven أو Gradle لإدارة الاعتمادات.
+- معرفة أساسية بجافا (ستكون مرتاحًا مع الفئات، والطرق، وإدخال/إخراج الملفات).
 
-## المتطلبات الأساسية
-قبل البدء في إنشاء رسائل البريد الإلكتروني وحفظها، تأكد من توفر ما يلي:
-
-### المكتبات المطلوبة
-- **Aspose.Email لـ Java**تأكد من تثبيت الإصدار 25.4 أو أحدث. يمكنك إدارة التبعيات باستخدام Maven.
-
-### متطلبات إعداد البيئة
-- مجموعة تطوير Java (JDK) متوافقة مع Aspose.Email، ويفضل أن تكون JDK16.
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse لترميز تطبيقاتك واختبارها.
-
-### متطلبات المعرفة
-- فهم أساسي لمفاهيم برمجة جافا.
-- إن المعرفة ببروتوكولات البريد الإلكتروني مفيدة ولكنها ليست إلزامية.
-
-## إعداد Aspose.Email لـ Java
-لبدء استخدام Aspose.Email في مشروعك، عليك إعداد المكتبة بشكل صحيح. إليك كيفية القيام بذلك باستخدام Maven:
+## إعداد Aspose.Email لجافا
+لبدء العمل، أضف اعتماد Aspose.Email Maven إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -54,12 +100,12 @@
 ```
 
 ### خطوات الحصول على الترخيص
-1. **نسخة تجريبية مجانية**:يمكنك البدء بإصدار تجريبي مجاني لاستكشاف ميزات Aspose.Email.
-2. **رخصة مؤقتة**:تقدم بطلب للحصول على ترخيص مؤقت إذا كنت بحاجة إلى مزيد من الوقت لتقييم المنتج دون قيود.
-3. **شراء**:للاستمرار في الاستخدام، فكر في شراء ترخيص كامل.
+1. **Free Trial** – استكشف جميع الميزات دون الحاجة إلى بطاقة ائتمان.  
+2. **Temporary License** – تمديد فترة التجربة للتقييم.  
+3. **Full License** – الشراء للاستخدام الإنتاجي غير المحدود.
 
-### التهيئة والإعداد الأساسي
-بمجرد إضافة التبعية، قم باستيراد الفئات الضرورية في ملف Java الخاص بك:
+### التهيئة الأساسية والإعداد
+بعد حل الاعتماد، استورد الفئات الأساسية:
 
 ```java
 import com.aspose.email.MailAddress;
@@ -68,137 +114,167 @@ import com.aspose.email.SaveOptions;
 ```
 
 ## دليل التنفيذ
-الآن بعد اكتمال عملية الإعداد، دعنا نستكشف الميزات خطوة بخطوة.
+الآن بعد أن أصبح البيئة جاهزة، دعونا نغوص في الشيفرة.
 
-### إنشاء رسالة بريدية وتكوينها
-يتضمن إنشاء رسالة بريد إلكتروني تعيين خصائص مختلفة مثل الموضوع والنص والمرسل والمستلمين وما إلى ذلك. وإليك كيفية القيام بذلك:
+### إنشاء وتكوين MailMessage
+الفئة `MailMessage` هي الكائن الأعلى مستوى في Aspose.Email الذي يمثل رسالة بريد إلكتروني واحدة في الذاكرة. يحتوي على رؤوس، ومحتوى، ومرفقات، وأكثر.
 
-#### 1. إنشاء مثيل جديد لـ `MailMessage`
+#### 1. إنشاء نسخة جديدة من `MailMessage`
 ```java
-// إنشاء مثيل لفئة MailMessage
+// Instantiate the MailMessage class
 MailMessage message = new MailMessage();
-```
-يؤدي هذا إلى تهيئة الكائن الذي سيحمل بيانات البريد الإلكتروني الخاص بك.
+```  
+هذا السطر ينشئ حاوية بريد إلكتروني فارغة جاهزة للتكوين.
 
-#### 2. تعيين الموضوع ونص HTML
-قم بتخصيص بريدك الإلكتروني باستخدام سطر موضوع ونص HTML:
+#### 2. تعيين الموضوع وجسم HTML
+حدد سطر موضوع واضح وجسمًا بتنسيق HTML لجعل البريد يبدو احترافيًا:
 
 ```java
-// حدد موضوع الرسالة
+// Define the subject of the message
 message.setSubject("New message created by Aspose.Email for Java");
 
-// إنشاء نص بتنسيق HTML
+// Create an HTML formatted body
 message.setHtmlBody("<b>This line is in bold.</b> <br/> <br/>" + "<font color=blue>This line is in blue color</font>");
 ```
 
-#### 3. تعيين المرسل والمستلم
-حدد من هو مرسل البريد الإلكتروني ولمن سيتم إرساله:
+#### 3. تعيين المرسل والمستلمين
+حدد عنوان `From` وواحد أو أكثر من المستلمين `To`:
 
 ```java
-// تعيين معلومات المرسل
+// Set sender information
 message.setFrom(new MailAddress("from@domain.com", "Sender Name", false));
 
-// إضافة إلى المستلمين
+// Add TO recipients
 message.getTo().addMailAddress(new MailAddress("to1@domain.com", "Recipient 1", false));
 message.getTo().addMailAddress(new MailAddress("to2@domain.com", "Recipient 2", false));
 
-// إضافة مستلمي النسخة الكربونية
+// Add CC recipients
 message.getCC().addMailAddress(new MailAddress("cc1@domain.com", "Recipient 3", false));
 message.getCC().addMailAddress(new MailAddress("cc2@domain.com", "Recipient 4", false));
 ```
 
-### حفظ رسالة بريد إلكتروني بتنسيقات متعددة
-يتيح لك Aspose.Email حفظ رسائل البريد الإلكتروني بتنسيقات مختلفة، ولكل منها غرض مختلف.
+### كيفية حفظ بريد MSG باستخدام Aspose.Email لجافا؟
+`SaveOptions` هي فئة تحدد إعدادات خاصة بالصيغة لحفظ `MailMessage`.  
+`MsgSaveOptions` تُكوّن الخيارات الخاصة بصيغة Outlook MSG.  
+حمّل `MailMessage` المُعدّ واستدعِ طريقة `save` مع تعيين `SaveOptions` إلى `MsgSaveOptions`. هذه الدعوة الواحدة تكتب ملف Outlook MSG متوافق بالكامل إلى القرص، مع الحفاظ على جميع الرؤوس، ومحتوى HTML، والمرفقات.
 
-#### تنسيق EML
+```text
+MailMessage msg = new MailMessage(); // assume it is already configured
+msg.save("output.msg", SaveOptions.getDefaultMsg()); // direct answer: one line saves the MSG
+```
+
+### حفظ MailMessage بأكثر من صيغة
+Aspose.Email يدعم **50+** صيغة، مما يتيح لك اختيار الأنسب لكل سيناريو.
+
+#### صيغة EML
+`EmlSaveOptions` توفر إعدادات لحفظ الرسائل بصيغة EML القياسية.  
+فئة `EmlSaveOptions` تكتب الرسالة كملف RFC‑822 EML قياسي، مثالي لتبادل عبر المنصات:
+
 ```java
-// تحديد الدليل لحفظ الملفات
+// Define the directory to save files
 String dataDir = YOUR_DOCUMENT_DIRECTORY + "email/";
 
-// حفظ الرسالة بتنسيق EML
+// Save message in EML format
 message.save(dataDir + "Message_out.eml", SaveOptions.getDefaultEml());
 ```
 
-#### تنسيقات MSG وMHTML
-وبالمثل، يمكنك حفظ الرسائل بتنسيق MSG أو MHTML:
+#### صيغتي MSG و MHTML
+كلا الصيغتين تُحفظان باستدعاء طريقة واحدة؛ المكتبة تختار المشفر المناسب تلقائيًا:
 
 ```java
-// حفظ الرسالة بتنسيق MSG
+// Save message in MSG format
 message.save(dataDir + "Message_out.msg", SaveOptions.getDefaultMsg());
 
-// حفظ الرسالة بتنسيق MHTML
+// Save message in MHTML format
 message.save(dataDir + "Message_out.mhtml", SaveOptions.getDefaultMhtml());
 ```
 
-### حفظ رسالة بريدية كقالب OFT
-قوالب OFT مفيدة لإنشاء مسودات البريد الإلكتروني. إليك كيفية حفظها `MailMessage` كنموذج OFT:
+#### حفظ MailMessage كقالب OFT
+`OftSaveOptions` تُعرّف الخيارات لإنشاء ملفات قالب نموذج Outlook (OFT).  
+فئة `OftSaveOptions` تنشئ قالب نموذج Outlook (OFT) يمكن إعادة استخدامه كمسودة:
 
 ```java
-// تكوين خيارات الحفظ كـ OFT باستخدام علم القالب
+// Configure options for saving as OFT with a template flag
 MsgSaveOptions options = SaveOptions.getDefaultMsgUnicode();
 options.setSaveAsTemplate(true);
 
 try {
-    // حفظ الرسالة بتنسيق OFT باستخدام الخيارات المُهيأة
+    // Save message in OFT format using configured options
     message.save(dataDir + "emlToOft_out.oft", options);
 } finally {
-    // تأكد من التخلص من الرسالة بشكل صحيح
+    // Ensure the message is properly disposed of
     if (message != null)
         ((IDisposable) message).dispose();
 }
 ```
 
-### نصائح استكشاف الأخطاء وإصلاحها
-- **تأكد من مسار الدليل الصحيح**:تأكد من ذلك `YOUR_DOCUMENT_DIRECTORY` يشير إلى موقع صالح.
-- **التبعيات والإصدارات**:تأكد من تحديث جميع التبعيات في نظامك `pom.xml`.
+### المشكلات الشائعة والحلول
+- **Invalid Path** – تحقق من أن `YOUR_DOCUMENT_DIRECTORY` موجود وأن التطبيق يمتلك أذونات كتابة.  
+- **Version Mismatch** – تأكد من أن إحداثيات Maven تتطابق مع نسخة المكتبة التي قمت بتثبيتها؛ الاختلاف قد يسبب `NoClassDefFoundError`.  
+- **Large Attachments** – للملفات التي يزيد حجمها عن 10 ميغابايت، فكر في تدفق محتوى المرفق لتجنب `OutOfMemoryError`.
 
 ## التطبيقات العملية
-يمكن دمج Aspose.Email for Java في تطبيقات مختلفة مثل:
-1. **إشعارات البريد الإلكتروني الآلية**:إنشاء رسائل البريد الإلكتروني تلقائيًا من البرامج النصية الموجودة على جانب الخادم.
-2. **تكامل أنظمة إدارة علاقات العملاء**:أرسل رسائل مخصصة للعملاء.
-3. **الحملات التسويقية**:توزيع النشرات الإخبارية عبر البريد الإلكتروني والمحتوى الترويجي.
+Aspose.Email لجافا يبرز في المشاريع الواقعية:
+1. **Automated Notification Engines** – إنشاء وتخزين تقارير MSG لأرشيفات الامتثال.  
+2. **CRM Integration** – إنشاء مسودات بريد إلكتروني مخصصة (OFT) يمكن لمندوبي المبيعات تعديلها قبل الإرسال.  
+3. **Marketing Automation** – إنتاج دفعات من النشرات الإخبارية HTML وحفظها كـ MSG لتوزيع Outlook.
 
 ## اعتبارات الأداء
-عند التعامل مع كميات كبيرة من رسائل البريد الإلكتروني، ضع في اعتبارك أفضل الممارسات التالية لتحقيق الأداء الأمثل:
-- استخدم هياكل البيانات الفعالة للتعامل مع قوائم المستلمين.
-- تخلص من `MailMessage` الأشياء بشكل صحيح لتحرير الذاكرة.
-- قم بتحسين مكالمات الشبكة من خلال تجميع عمليات البريد الإلكتروني حيثما أمكن ذلك.
+عند معالجة آلاف الرسائل البريدية:
+- أعد استخدام نسخة واحدة من `MailMessage` حيثما أمكن لتقليل ضغط GC.  
+- استدعِ `msg.dispose()` بعد الحفظ لإطلاق الموارد الأصلية بسرعة.  
+- نفّذ عمليات الكتابة على دفعات إلى نفس الدليل لتقليل عبء نظام الملفات.
 
-## خاتمة
-لقد تعرفت الآن على كيفية إنشاء رسائل البريد الإلكتروني وحفظها باستخدام Aspose.Email لجافا. باستخدام هذه المكتبة القوية، يمكنك تحسين إمكانيات البريد الإلكتروني لتطبيقك بسهولة. واصل استكشاف الميزات الأخرى لـ Aspose.Email لإثراء مشاريعك بشكل أكبر.
+## الخاتمة
+أنت الآن تعرف **how to save msg** ملفات باستخدام Aspose.Email لجافا، من الإعداد الأساسي إلى معالجة الصيغ المتقدمة. استفد من الدعم الواسع للمكتبة للصيغ وواجهة برمجة التطبيقات المُحسّنة للأداء لبناء حلول بريد إلكتروني قوية.
 
-### الخطوات التالية:
-- قم بتجربة التنسيقات الإضافية التي يدعمها Aspose.Email.
-- استكشف خيارات التكامل مع قواعد البيانات أو خدمات الويب.
+### الخطوات التالية
+- جرّب إضافة مرفقات وصور مدمجة.  
+- استكشف نقاط ربط أحداث `MailMessage` لتعديل الرؤوس حسب الحاجة.  
+- دمج مع خادم بريد (SMTP/IMAP) لإرسال أو استرجاع الرسائل مباشرة.
 
-## قسم الأسئلة الشائعة
-**س1: ما هو Aspose.Email لـ Java؟**
-ج: إنها مكتبة توفر وظائف إنشاء البريد الإلكتروني وإدارته في تطبيقات Java.
+## الأسئلة المتكررة
 
-**س2: كيف يمكنني الحصول على ترخيص لـ Aspose.Email؟**
-أ: ابدأ بإصدار تجريبي مجاني، أو قم بتقديم طلب للحصول على ترخيص مؤقت، أو قم بشراء ترخيص من موقع Aspose الإلكتروني.
+**س: ما هي أبسط طريقة لحفظ بريد إلكتروني كـ MSG؟**  
+ج: استدعِ `mailMessage.save("file.msg", SaveOptions.getDefaultMsg())`؛ المكتبة تتعامل مع جميع التحويلات تلقائيًا.
 
-**س3: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**
-ج: نعم، يدعم Aspose.Email منصات متعددة بما في ذلك .NET وC++ والمزيد.
+**س: هل يدعم Aspose.Email ملفات MSG محمية بكلمة مرور؟**  
+ج: نعم، يمكنك تعيين كلمة مرور عبر `MsgSaveOptions.setPassword("yourPassword")` قبل الحفظ.
 
-**س4: ما هي التنسيقات التي يمكن حفظ رسائل البريد الإلكتروني بها باستخدام Aspose.Email؟**
-ج: يمكن حفظ رسائل البريد الإلكتروني بصيغ EML وMSG وMHTML وOFT وغيرها.
+**س: هل يمكنني تحويل ملف EML موجود إلى MSG دون كتابة كود؟**  
+ج: استخدم طريقة `MailMessage.load("source.eml")`، ثم احفظه كـ MSG باستخدام نفس استدعاء `save`.
 
-**س5: كيف أتأكد من أن التعامل مع بريدي الإلكتروني فعال؟**
-أ: اتبع أفضل الممارسات لإدارة الذاكرة وتحسين عمليات الشبكة لديك.
+**س: هل يلزم ترخيص لحفظ دفعات كبيرة من ملفات MSG؟**  
+ج: الترخيص الكامل يزيل حدود التقييم ويفتح إمكانية المعالجة غير المحدودة للدفعات.
 
-## موارد
-- **التوثيق**: [توثيق البريد الإلكتروني لـ Aspose Java](https://reference.aspose.com/email/java/)
-- **تحميل**: [إصدارات Aspose Email Java](https://releases.aspose.com/email/java/)
-- **شراء**: [شراء البريد الإلكتروني Aspose](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية**: [ابدأ التجربة المجانية](https://releases.aspose.com/email/java/)
-- **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
-- **يدعم**: [منتدى البريد الإلكتروني Aspose](https://forum.aspose.com/c/email/10)
+**س: ما هي إصدارات جافا المدعومة رسميًا؟**  
+ج: Aspose.Email لجافا يدعم JDK 8 حتى JDK 21؛ يُنصح بـ JDK 16 أو أحدث لأفضل أداء.
+
+---
+
+**آخر تحديث:** 2026-05-28  
+**تم الاختبار مع:** Aspose.Email for Java v25.4  
+**المؤلف:** Aspose  
+
+## الموارد
+- **التوثيق:** [توثيق Aspose Email Java](https://reference.aspose.com/email/java/)
+- **التنزيل:** [إصدارات Aspose Email Java](https://releases.aspose.com/email/java/)
+- **الشراء:** [شراء Aspose Email](https://purchase.aspose.com/buy)
+- **التجربة المجانية:** [ابدأ تجربة مجانية](https://releases.aspose.com/email/java/)
+- **ترخيص مؤقت:** [احصل على ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
+- **الدعم:** [منتدى Aspose Email](https://forum.aspose.com/c/email/10)
+
+## دروس ذات صلة
+
+- [إنشاء وتكوين رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا: دليل شامل](/email/java/email-message-operations/create-configure-mail-message-aspose-email-java/)
+- [كيفية تحميل وحفظ ملفات EML في جافا باستخدام Aspose.Email: دليل كامل](/email/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [تحويل EML إلى MSG باستخدام Aspose.Email لجافا: دليل شامل](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
