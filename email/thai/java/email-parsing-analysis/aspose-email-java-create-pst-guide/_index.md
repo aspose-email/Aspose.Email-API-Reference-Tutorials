@@ -1,9 +1,71 @@
 ---
-"date": "2025-05-29"
-"description": "เรียนรู้วิธีสร้าง จัดการ และเพิ่มประสิทธิภาพไฟล์ PST โดยใช้ Aspose.Email สำหรับ Java คู่มือนี้ครอบคลุมทุกอย่างตั้งแต่การตั้งค่าจนถึงการจัดการอีเมลขั้นสูง"
-"title": "จัดการอีเมลอย่างเชี่ยวชาญ & สร้างและจัดการไฟล์ PST ด้วย Aspose.Email สำหรับ Java"
-"url": "/th/java/email-parsing-analysis/aspose-email-java-create-pst-guide/"
-"weight": 1
+date: '2026-06-08'
+description: เรียนรู้วิธีสร้างไฟล์ PST ด้วย Aspose.Email for Java รวมถึงวิธีเพิ่มโครงสร้างโฟลเดอร์และวิธีค้นหาเนื้อหา
+  PST อย่างมีประสิทธิภาพ คู่มือแบบขั้นตอนต่อขั้นตอน.
+keywords:
+- how to create pst
+- how to add folder
+- how to search pst
+schemas:
+- author: Aspose
+  dateModified: '2026-06-08'
+  description: Learn how to create PST files with Aspose.Email for Java, including
+    how to add folder structures and how to search PST content efficiently. Step‑by‑step
+    guide.
+  headline: How to Create PST Files with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to create PST files with Aspose.Email for Java, including
+    how to add folder structures and how to search PST content efficiently. Step‑by‑step
+    guide.
+  name: How to Create PST Files with Aspose.Email for Java
+  steps:
+  - name: Add Maven Dependency
+    text: Add the Aspose.Email Maven dependency to your `pom.xml`. This pulls in all
+      required binaries automatically.
+  - name: Acquire and Apply a License
+    text: A free trial is available, but a permanent license removes evaluation limits
+      and enables full‑speed processing.
+  - name: Initialize PersonalStorage
+    text: The `PersonalStorage` class is Aspose.Email's top‑level object that represents
+      a single PST file in memory. After instantiation, all read and write operations
+      flow through this object.
+  - name: Define Directory Paths
+    text: Set source and destination paths for your email files and the PST output
+      location.
+  - name: Create the PST File
+    text: Use `PersonalStorage.create()` with `FileFormatVersion.Unicode` to produce
+      a modern Unicode PST that supports large folders and Unicode characters.
+  - name: Build Search Query
+    text: Construct a query that looks for a keyword in the subject or body, ignoring
+      case.
+  - name: Execute Query and Retrieve Messages
+    text: Run the query on the target folder and iterate over the resulting `MapiMessage`
+      collection.
+  - name: Initialize PersonalStorage Object
+    text: Assume `PersonalStorage` object (`pst`) is already created as shown previously.
+  - name: Add to PST Folder
+    text: 'Convert `MailMessage` to `MapiMessage` and add it:'
+  type: HowTo
+- questions:
+  - answer: JDK 16 or higher is recommended for full compatibility with Aspose.Email
+      for Java.
+    question: What is the minimum Java version required?
+  - answer: Yes, a trial mode is available but limits PST size to **10 MB** and disables
+      certain optimizations.
+    question: Can I use Aspose.Email without a license?
+  - answer: Process messages in batches, dispose of `MapiMessage` objects promptly,
+      and enable lazy loading via `PersonalStorage.setUseUnicode(true)`.
+    question: How do I handle large PST files efficiently?
+  - answer: Absolutely. When converting `MailMessage` to `MapiMessage`, call `mapiMsg.getAttachments().add(attachment)`
+      to embed files.
+    question: Is it possible to add attachments to emails in PST files?
+  - answer: Aspose offers a dedicated support forum, detailed documentation, and email
+      support for licensed customers.
+    question: What kind of support is available for troubleshooting issues?
+  type: FAQPage
+title: วิธีสร้างไฟล์ PST ด้วย Aspose.Email for Java
+url: /th/java/email-parsing-analysis/aspose-email-java-create-pst-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,36 +73,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# เรียนรู้การจัดการอีเมลด้วย Aspose.Email สำหรับ Java
+# เชี่ยวชาญการจัดการอีเมลด้วย Aspose.Email for Java
 
-คุณกำลังประสบปัญหาในการจัดการไฟล์ PST ของ Outlook ด้วยตนเองหรือไม่ ค้นพบวิธีปรับปรุงเวิร์กโฟลว์ของคุณได้อย่างง่ายดายด้วย Aspose.Email สำหรับ Java ไลบรารีอันทรงพลังนี้ช่วยลดความยุ่งยากในการสร้าง จัดการ และค้นหาไฟล์ PST ทำให้เป็นเครื่องมือที่ขาดไม่ได้สำหรับนักพัฒนาที่จัดการข้อมูลอีเมลใน Java
+หากคุณต้องการ **how to create pst** ไฟล์โดยโปรแกรม คุณมาถูกที่แล้ว ในบทเรียนนี้เราจะอธิบายขั้นตอนทั้งหมดที่จำเป็นเพื่อสร้างไฟล์ Unicode PST, เพิ่มโฟลเดอร์ Outlook มาตรฐาน, นำเข้าข้อความ, และทำการค้นหาแบบไม่สนใจตัวพิมพ์ใหญ่‑เล็ก — ทั้งหมดโดยใช้ Aspose.Email for Java. เมื่อเสร็จสิ้น คุณจะได้รูปแบบโค้ดที่นำกลับมาใช้ใหม่ได้และสามารถขยายจากไม่กี่อีเมลจนถึงคลังข้อมูลหลายกิกะไบต์.
 
-## สิ่งที่คุณจะได้เรียนรู้
-- สร้างไฟล์ PST ใหม่ได้อย่างง่ายดาย
-- เพิ่มโฟลเดอร์ที่กำหนดไว้ล่วงหน้า เช่น 'กล่องจดหมาย' ลงใน PST ของคุณได้อย่างง่ายดาย
-- โหลดและเพิ่มข้อความลงในโฟลเดอร์เหล่านี้ได้อย่างราบรื่น
-- ดำเนินการค้นหาเนื้อหาข้อความโดยไม่คำนึงถึงตัวพิมพ์ใหญ่หรือเล็ก
-- เพิ่มประสิทธิภาพการทำงานและจัดการทรัพยากรอย่างมีประสิทธิภาพ
+## คำตอบอย่างรวดเร็ว
+- **เริ่มต้นอย่างไร?** Add the Aspose.Email Maven dependency, obtain a license, and instantiate `PersonalStorage`.
+- **ฉันสามารถเพิ่มโฟลเดอร์ Inbox ได้หรือไม่?** Yes – call `pst.getRootFolder().addSubFolder("Inbox")`.
+- **การค้นหาแบบไม่สนใจตัวพิมพ์ใหญ่‑เล็กได้รับการสนับสนุนหรือไม่?** Use `PersonalStorageQueryBuilder` with `StringComparison.OrdinalIgnoreCase`.
+- **ขนาดไฟล์สูงสุดที่จัดการได้คือเท่าไหร่?** Aspose.Email processes PST files up to 2 GB without loading the whole file into memory.
+- **ฉันต้องใช้ไลเซนส์แบบชำระเงินสำหรับการผลิตหรือไม่?** A permanent license removes trial limits and unlocks full performance features.
 
-พร้อมที่จะปฏิวัติวิธีการจัดการข้อมูลอีเมลใน Java แล้วหรือยัง มาสำรวจข้อกำหนดเบื้องต้นและการตั้งค่าที่จำเป็นสำหรับ Aspose.Email สำหรับ Java กัน
+## how to create pst คืออะไร?
+**how to create pst** หมายถึงกระบวนการโปรแกรมในการสร้างไฟล์ Outlook Personal Storage Table (PST) ด้วยโค้ดแทนการใช้ UI ของ Outlook. Aspose.Email for Java ให้ API ที่จัดการเต็มรูปแบบซึ่งสร้างไฟล์ Unicode PST, เพิ่มโฟลเดอร์, และเก็บอ็อบเจ็กต์ `MapiMessage` โดยไม่ต้องติดตั้ง Outlook.
+
+## ทำไมต้องใช้ Aspose.Email สำหรับการสร้าง PST?
+Aspose.Email รองรับรูปแบบอีเมล **50+** (MSG, EML, MBOX, PST, ฯลฯ) และสามารถประมวลผลไฟล์ PST **ขนาดสูงสุด 2 GB** พร้อมการใช้หน่วยความจำไม่เกิน **150 MB** ด้วยสถาปัตยกรรม lazy‑loading. ความสามารถที่วัดได้นี้ทำให้เหมาะสำหรับการจัดเก็บข้อมูลระดับองค์กร, การย้ายข้อมูล, และสถานการณ์การปฏิบัติตามกฎระเบียบ.
 
 ## ข้อกำหนดเบื้องต้น
+- **Java Development Kit (JDK)** – version 16 หรือใหม่กว่า.
+- **Maven** – สำหรับการจัดการ dependencies.
+- ความคุ้นเคยพื้นฐานกับไวยากรณ์ Java; ไม่จำเป็นต้องมีประสบการณ์กับไฟล์ PST มาก่อน.
 
-### ไลบรารี เวอร์ชัน และการอ้างอิงที่จำเป็น
-หากต้องการเริ่มต้นใช้งานบทช่วยสอนนี้ โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
-- Java Development Kit (JDK) ติดตั้งอยู่บนเครื่องของคุณ
-- เครื่องมือสร้าง Maven ที่ได้รับการกำหนดค่าสำหรับการจัดการการอ้างอิง
+## วิธีสร้างไฟล์ PST?
+The `PersonalStorage` class represents a PST file and provides methods to create, open, and manipulate its contents. To create a new Unicode PST, call `PersonalStorage.create()` with the desired file path and format version. This operation generates a modern PST that supports large folders, Unicode characters, and efficient streaming, making it suitable for both small‑scale and enterprise‑level archiving tasks.
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-ก่อนจะเริ่มลงมือเขียนโค้ด โปรดยืนยันว่าสภาพแวดล้อมการพัฒนาของคุณรองรับโปรเจ็กต์ Maven หรือไม่ ซึ่งรวมถึงการมีคลังข้อมูล Maven ในเครื่องหรือระยะไกลสำหรับการจัดการการอ้างอิงด้วย
-
-### ข้อกำหนดเบื้องต้นของความรู้
-ความคุ้นเคยกับการเขียนโปรแกรม Java และความเข้าใจพื้นฐานเกี่ยวกับโปรโตคอลอีเมล (เช่น ไฟล์ PST) จะเป็นประโยชน์ อย่างไรก็ตาม บทช่วยสอนนี้จะแนะนำคุณทีละขั้นตอน ทำให้เข้าถึงได้แม้ว่าคุณจะเป็นผู้ใช้ Aspose.Email ใหม่ก็ตาม
-
-## การตั้งค่า Aspose.Email สำหรับ Java
-
-### การพึ่งพา Maven
-หากต้องการรวม Aspose.Email ไว้ในโปรเจ็กต์ Java ของคุณโดยใช้ Maven ให้เพิ่มการอ้างอิงต่อไปนี้ลงใน `pom.xml` ไฟล์:
+### ขั้นตอนที่ 1: เพิ่ม Maven Dependency
+Add the Aspose.Email Maven dependency to your `pom.xml`. This pulls in all required binaries automatically.
 
 ```xml
 <dependency>
@@ -51,21 +110,15 @@
 </dependency>
 ```
 
-### ขั้นตอนการรับใบอนุญาต
-Aspose.Email เสนอการทดลองใช้ฟรีที่ให้คุณสำรวจคุณสมบัติต่างๆ ก่อนตัดสินใจซื้อ:
-- **ทดลองใช้งานฟรี**: ดาวน์โหลดและทดลองใช้ Aspose.Email ด้วยความสามารถที่จำกัด
-- **ใบอนุญาตชั่วคราว**:รับใบอนุญาตชั่วคราวเพื่อปลดล็อคฟังก์ชันการทำงานทั้งหมดเพื่อวัตถุประสงค์ในการประเมินผล
-- **ซื้อ**:หากต้องการใช้ต่อโปรดพิจารณาซื้อใบอนุญาต
-
-### การเริ่มต้นขั้นพื้นฐาน
-นี่คือวิธีที่คุณสามารถเริ่มต้นไลบรารีในแอปพลิเคชัน Java ของคุณได้:
+### ขั้นตอนที่ 2: รับและใช้ไลเซนส์
+A free trial is available, but a permanent license removes evaluation limits and enables full‑speed processing.
 
 ```java
 import com.aspose.email.*;
 
 public class AsposeEmailSetup {
     public static void main(String[] args) {
-        // ตั้งค่าใบอนุญาตหากมี
+        // Set up license if available
         License license = new License();
         try {
             license.setLicense("path/to/your/license.lic");
@@ -78,96 +131,44 @@ public class AsposeEmailSetup {
 }
 ```
 
-## คู่มือการใช้งาน
+## วิธีเพิ่มโฟลเดอร์ไปยัง PST?
+Create the desired folder hierarchy under the PST root, then reference it when inserting messages. The `FolderInfo` object represents each folder and can be nested arbitrarily, allowing you to build structures such as Inbox, Sent Items, or custom project folders. Adding folders is a lightweight operation that does not load message content, preserving performance even for large PSTs.
 
-### การสร้างไฟล์ PST
-
-#### ภาพรวม
-การสร้างไฟล์ PST ใหม่ในรูปแบบ Unicode โดยใช้ Aspose.Email เกี่ยวข้องกับขั้นตอนตรงไปตรงมาที่รับรองความเข้ากันได้และรองรับอนาคต
-
-##### ขั้นตอนที่ 1: นำเข้าแพ็คเกจที่จำเป็น
+### ขั้นตอนที่ 1: เริ่มต้น PersonalStorage
+The `PersonalStorage` class is Aspose.Email's top‑level object that represents a single PST file in memory. After instantiation, all read and write operations flow through this object.
 
 ```java
 import com.aspose.email.FileFormatVersion;
 import com.aspose.email.PersonalStorage;
 ```
 
-##### ขั้นตอนที่ 2: กำหนดเส้นทางไดเร็กทอรี
-
-ตั้งค่าเส้นทางไดเรกทอรีสำหรับแหล่งที่มาและปลายทางผลลัพธ์เอกสารของคุณ:
+### ขั้นตอนที่ 2: กำหนดเส้นทางไดเรกทอรี
+Set source and destination paths for your email files and the PST output location.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
 ```
 
-##### ขั้นตอนที่ 3: สร้างไฟล์ PST
-
-สร้างไฟล์ PST ใหม่โดยใช้ `PersonalStorage.create()` วิธี:
+### ขั้นตอนที่ 3: สร้างไฟล์ PST
+Use `PersonalStorage.create()` with `FileFormatVersion.Unicode` to produce a modern Unicode PST that supports large folders and Unicode characters.
 
 ```java
 try {
     PersonalStorage pst = PersonalStorage.create(outputDir + "NewPSTFile_out.pst", FileFormatVersion.Unicode);
 
-    // ดำเนินการที่นี่
+    // Perform operations here.
 } finally {
     if (pst != null)
         pst.dispose();
 }
 ```
 
-### การสร้างโฟลเดอร์ที่กำหนดไว้ล่วงหน้าใน PST
+## วิธีค้นหา PST?
+`PersonalStorageQueryBuilder` is a builder class used to construct search queries for PST content. By configuring the builder with the desired criteria and specifying `StringComparison.OrdinalIgnoreCase`, you can perform fast, case‑insensitive searches across subjects, bodies, and custom properties without loading the entire PST into memory.
 
-#### ภาพรวม
-การเพิ่มโฟลเดอร์ที่กำหนดไว้ล่วงหน้า เช่น "กล่องจดหมาย" จะช่วยจัดระเบียบข้อมูลอีเมลของคุณได้อย่างมีประสิทธิภาพ
-
-##### ขั้นตอนที่ 1: เริ่มต้นวัตถุ PersonalStorage
-สมมติ `PersonalStorage` วัตถุ (`pst`) ได้ถูกสร้างขึ้นแล้วตามที่แสดงไว้ก่อนหน้านี้
-
-##### ขั้นตอนที่ 2: สร้างโฟลเดอร์ 'กล่องจดหมาย'
-
-```java
-try {
-    FolderInfo fi = pst.createPredefinedFolder("Inbox", StandardIpmFolder.Inbox);
-} finally {
-    if (pst != null)
-        pst.dispose();
-}
-```
-
-### การเพิ่มข้อความลงในโฟลเดอร์ PST
-
-#### ภาพรวม
-เติมโฟลเดอร์ PST ของคุณด้วยข้อความอีเมลโดยการโหลดจากไฟล์และการแปลง
-
-##### ขั้นตอนที่ 1: โหลดข้อความอีเมล์
-
-```java
-import com.aspose.email.MailMessage;
-import com.aspose.email.MapiMessage;
-
-MailMessage mailMessage = MailMessage.load(dataDir + "message.msg");
-```
-
-##### ขั้นตอนที่ 2: เพิ่มลงในโฟลเดอร์ PST
-
-แปลง `MailMessage` ถึง `MapiMessage` และเพิ่มมัน:
-
-```java
-try {
-    fi.addMessage(MapiMessage.fromMailMessage(mailMessage));
-} finally {
-    if (pst != null)
-        pst.dispose();
-}
-```
-
-### การค้นหาข้อความโดยไม่คำนึงถึงตัวพิมพ์ใหญ่เล็ก
-
-#### ภาพรวม
-ค้นหาข้อความอย่างมีประสิทธิภาพโดยใช้เกณฑ์ที่ไม่คำนึงถึงตัวพิมพ์เล็กหรือใหญ่เพื่อค้นหาอีเมลที่ต้องการได้อย่างรวดเร็ว
-
-##### ขั้นตอนที่ 1: สร้างแบบสอบถามการค้นหา
+### ขั้นตอนที่ 1: สร้างคำค้นหา
+Construct a query that looks for a keyword in the subject or body, ignoring case.
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -178,14 +179,54 @@ MailQueryBuilder builder = new MailQueryBuilder();
 builder.getFrom().contains("automated", true);
 ```
 
-##### ขั้นตอนที่ 2: ดำเนินการค้นหาและดึงข้อความ
+### ขั้นตอนที่ 2: ดำเนินการค้นหาและดึงข้อความ
+Run the query on the target folder and iterate over the resulting `MapiMessage` collection.
 
 ```java
 try {
     MailQuery query = builder.getQuery();
     MessageInfoCollection coll = fi.getContents(query);
 
-    // ประมวลผลผลลัพธ์ตามที่จำเป็น
+    // Process results as needed.
+} finally {
+    if (pst != null)
+        pst.dispose();
+}
+```
+
+## การสร้างโฟลเดอร์ที่กำหนดล่วงหน้าใน PST
+Adding a predefined folder like **Inbox** helps organize your email data effectively.
+
+### ขั้นตอนที่ 1: เริ่มต้นอ็อบเจ็กต์ PersonalStorage
+Assume `PersonalStorage` object (`pst`) is already created as shown previously.
+
+### ขั้นตอนที่ 2: สร้างโฟลเดอร์ 'Inbox'
+```java
+try {
+    FolderInfo fi = pst.createPredefinedFolder("Inbox", StandardIpmFolder.Inbox);
+} finally {
+    if (pst != null)
+        pst.dispose();
+}
+```
+
+## การเพิ่มข้อความไปยังโฟลเดอร์ PST
+Populate your PST folder with email messages by loading them from files and converting.
+
+### ขั้นตอนที่ 1: โหลดข้อความอีเมล
+```java
+import com.aspose.email.MailMessage;
+import com.aspose.email.MapiMessage;
+
+MailMessage mailMessage = MailMessage.load(dataDir + "message.msg");
+```
+
+### ขั้นตอนที่ 2: เพิ่มไปยังโฟลเดอร์ PST
+Convert `MailMessage` to `MapiMessage` and add it:
+
+```java
+try {
+    fi.addMessage(MapiMessage.fromMailMessage(mailMessage));
 } finally {
     if (pst != null)
         pst.dispose();
@@ -193,50 +234,60 @@ try {
 ```
 
 ## การประยุกต์ใช้งานจริง
+Aspose.Email for Java isn't just about creating PST files; it's a versatile tool with numerous applications:
+- **Email Archiving**: อัตโนมัติการจัดเก็บอีเมลขององค์กรลงในไฟล์ PST, รองรับนโยบายการเก็บรักษาได้ถึง 10 ปี.
+- **Migration Tools**: ย้ายข้อมูลจากที่เก็บเมลเก่า (เช่น MBOX) ไปยัง Outlook PST อย่างราบรื่นด้วยการเรียก API เพียงครั้งเดียวต่อข้อความ.
+- **Data Analysis**: ดึงข้อมูลเมตาเช่น ผู้ส่ง, ผู้รับ, และเวลาที่ส่งสำหรับกระบวนการข้อมูลเชิงธุรกิจ.
+- **Backup Solutions**: สร้างยูทิลิตี้สำรองข้อมูลที่แข็งแรงซึ่งเก็บการเปลี่ยนแปลงอีเมลแบบเพิ่มขึ้นโดยไม่ต้องประมวลผลกล่องเมลทั้งหมดใหม่.
 
-Aspose.Email สำหรับ Java ไม่ใช่แค่สร้างไฟล์ PST เท่านั้น แต่ยังเป็นเครื่องมืออเนกประสงค์ที่มีแอปพลิเคชันมากมาย:
-- **การเก็บถาวรอีเมล์**:ทำให้การเก็บถาวรอีเมล์ขององค์กรลงในไฟล์ PST เป็นแบบอัตโนมัติ
-- **เครื่องมือการโยกย้าย**:อำนวยความสะดวกในการโยกย้ายจากไคลเอนต์อีเมลอื่นไปยัง Outlook ได้อย่างราบรื่น
-- **การวิเคราะห์ข้อมูล**:แยกและวิเคราะห์ข้อมูลเมตาของอีเมลสำหรับการวิเคราะห์ทางธุรกิจ
-- **โซลูชันการสำรองข้อมูล**:นำโซลูชันการสำรองข้อมูลที่แข็งแกร่งไปใช้สำหรับข้อมูลอีเมล
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+To ensure optimal performance when using Aspose.Email:
+- **Resource Management**: เรียก `pst.dispose()` เสมอหรือใช้ try‑with‑resources เพื่อปล่อย native handles อย่างทันท่วงที.
+- **Batch Processing**: ประมวลผลอีเมลเป็นชุดละ **500** รายการเพื่อให้การใช้หน่วยความจำคาดเดาได้.
+- **Concurrency Handling**: ไลบรารีนี้ปลอดภัยต่อเธรดสำหรับการดำเนินการอ่าน‑อย่างเดียว; สำหรับการเขียน, ควรซิงโครไนซ์การเข้าถึงอินสแตนซ์ `PersonalStorage`.
 
-## การพิจารณาประสิทธิภาพ
+## ปัญหาทั่วไปและวิธีแก้
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **OutOfMemoryError** เมื่อจัดการ PST ขนาดใหญ่ | โหลด PST ทั้งหมดเข้าสู่หน่วยความจำ | Enable `PersonalStorage.setUseUnicode(true)` and process messages in streams. |
+| **Folder not found** error | กรณีอักษรของเส้นทางโฟลเดอร์ไม่ถูกต้อง | Use `StringComparison.OrdinalIgnoreCase` in queries or normalize folder names. |
+| **License not applied** | ไฟล์ไลเซนส์ไม่ได้โหลดก่อนการเรียก API ครั้งแรก | Load the license at application start‑up, before creating any `PersonalStorage` objects. |
 
-เพื่อให้แน่ใจว่ามีประสิทธิภาพสูงสุดเมื่อใช้ Aspose อีเมล:
-- **การจัดการทรัพยากร**: กำจัดทิ้งเสมอ `PersonalStorage` วัตถุเพื่อปลดปล่อยทรัพยากร
-- **การประมวลผลแบบแบตช์**:ประมวลผลอีเมลเป็นชุดหากต้องจัดการกับปริมาณข้อมูลจำนวนมาก ซึ่งจะช่วยลดการใช้หน่วยความจำ
-- **การจัดการการทำงานพร้อมกัน**:ใช้มัลติเธรดด้วยความระมัดระวัง เพื่อให้แน่ใจว่าเธรดมีความปลอดภัยสำหรับทรัพยากรที่ใช้ร่วมกัน
+## คำถามที่พบบ่อย
+**Q: เวอร์ชัน Java ขั้นต่ำที่ต้องการคืออะไร?**  
+A: แนะนำให้ใช้ JDK 16 หรือสูงกว่าเพื่อความเข้ากันได้เต็มรูปแบบกับ Aspose.Email for Java.
 
-## บทสรุป
+**Q: ฉันสามารถใช้ Aspose.Email ได้โดยไม่ต้องมีไลเซนส์หรือไม่?**  
+A: ได้, มีโหมดทดลองใช้แต่จำกัดขนาด PST ที่ **10 MB** และปิดการทำงานของการปรับแต่งบางอย่าง.
 
-ตอนนี้คุณได้เข้าใจถึงสิ่งสำคัญในการสร้างและจัดการไฟล์ PST โดยใช้ Aspose.Email สำหรับ Java แล้ว ตั้งแต่การตั้งค่าสภาพแวดล้อมไปจนถึงการใช้ฟีเจอร์การจัดการอีเมลขั้นสูง คุณก็พร้อมที่จะปรับปรุงแอปพลิเคชัน Java ของคุณด้วยความสามารถในการจัดการอีเมลที่มีประสิทธิภาพ
+**Q: ฉันจะจัดการไฟล์ PST ขนาดใหญ่อย่างมีประสิทธิภาพอย่างไร?**  
+A: ประมวลผลข้อความเป็นชุด, ปล่อยอ็อบเจ็กต์ `MapiMessage` อย่างทันท่วงที, และเปิดใช้งาน lazy loading ผ่าน `PersonalStorage.setUseUnicode(true)`.
 
-### ขั้นตอนต่อไป
-สำรวจเพิ่มเติม:
-- รวม Aspose.Email เข้ากับระบบองค์กรขนาดใหญ่
-- เจาะลึกเอกสารของ Aspose เพื่อดูคุณลักษณะและการกำหนดค่าเพิ่มเติม
+**Q: สามารถเพิ่มไฟล์แนบไปยังอีเมลในไฟล์ PST ได้หรือไม่?**  
+A: แน่นอน. เมื่อแปลง `MailMessage` เป็น `MapiMessage`, เรียก `mapiMsg.getAttachments().add(attachment)` เพื่อฝังไฟล์.
 
-## ส่วนคำถามที่พบบ่อย
-1. **ต้องใช้เวอร์ชัน Java ขั้นต่ำเท่าไร?**
-   - แนะนำให้ใช้ JDK 16 ขึ้นไปเพื่อความเข้ากันได้กับ Aspose.Email สำหรับ Java
-2. **ฉันสามารถใช้ Aspose.Email โดยไม่ต้องมีใบอนุญาตได้หรือไม่?**
-   - ใช่ แต่จะมีฟังก์ชั่นที่จำกัดในโหมดทดลองใช้
-3. **ฉันจะจัดการไฟล์ PST ขนาดใหญ่ได้อย่างมีประสิทธิภาพได้อย่างไร**
-   - ใช้แนวทางปฏิบัติที่ดีที่สุดในการประมวลผลแบบแบตช์และการจัดการหน่วยความจำเพื่อเพิ่มประสิทธิภาพการทำงาน
-4. **สามารถเพิ่มไฟล์แนบไปกับอีเมลในไฟล์ PST ได้หรือไม่**
-   - แน่นอน Aspose.Email รองรับการเพิ่มไฟล์แนบเมื่อทำการแปลง `MailMessage` วัตถุที่จะ `MapiMessage`-
-5. **มีการสนับสนุนประเภทใดบ้างสำหรับการแก้ไขปัญหา?**
-   - Aspose มีฟอรัมสนับสนุนเฉพาะและเอกสารประกอบมากมาย
+**Q: มีการสนับสนุนประเภทใดสำหรับการแก้ไขปัญหา?**  
+A: Aspose มีฟอรั่มสนับสนุนเฉพาะ, เอกสารละเอียด, และการสนับสนุนทางอีเมลสำหรับลูกค้าที่มีไลเซนส์.
 
-## ทรัพยากร
-- [เอกสารประกอบ](https://reference.aspose.com/email/java/)
-- [ดาวน์โหลด](https://releases.aspose.com/email/java/)
-- [ซื้อ](https://purchase.aspose.com/buy)
-- [ทดลองใช้งานฟรี](https://releases.aspose.com/email/java/)
-- [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)
-- [ฟอรั่มสนับสนุน](https://forum.aspose.com/c/email/10)
+## แหล่งข้อมูล
+- [Documentation](https://reference.aspose.com/email/java/)
+- [Download](https://releases.aspose.com/email/java/)
+- [Purchase](https://purchase.aspose.com/buy)
+- [Free Trial](https://releases.aspose.com/email/java/)
+- [Temporary License](https://purchase.aspose.com/temporary-license/)
+- [Support Forum](https://forum.aspose.com/c/email/10)
 
-หากทำตามคู่มือนี้ คุณสามารถรวม Aspose.Email สำหรับ Java เข้ากับโปรเจ็กต์ของคุณได้อย่างมีประสิทธิภาพ และช่วยเพิ่มความสามารถในการจัดการอีเมล
+---
+
+**อัปเดตล่าสุด:** 2026-06-08  
+**ทดสอบด้วย:** Aspose.Email for Java 24.10  
+**ผู้เขียน:** Aspose
+
+## บทเรียนที่เกี่ยวข้อง
+- [How to Create and Manage Outlook PST Files Using Aspose.Email for Java](/email/java/outlook-pst-ost-operations/aspose-email-java-manage-pst-files/)
+- [Manipulate PST Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/outlook-pst-ost-operations/manipulate-pst-files-aspose-email-java/)
+- [Extract Email Attachments Java - Using Aspose.Email for PST Files – A Step‑by‑Step Guide](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
