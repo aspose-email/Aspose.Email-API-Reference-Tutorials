@@ -1,5 +1,5 @@
 ---
-title: "How to Read MSG Files with Aspose.Email for Java"
+title: "Extract Email Tracking Data with Java"
 description: "Learn how to read MSG files and parse MSG attachments using Aspose.Email for Java, extracting delivery/read receipts and vote results efficiently. Includes setup, code, and best practices."
 date: "2026-06-13"
 weight: 1
@@ -10,14 +10,14 @@ keywords:
 - Aspose.Email for Java
 schemas:
 - type: TechArticle
-  headline: How to Read MSG Files with Aspose.Email for Java
+  headline: Extract Email Tracking Data with Java
   description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
     for Java, extracting delivery/read receipts and vote results efficiently. Includes
     setup, code, and best practices.
   dateModified: '2026-06-13'
   author: Aspose
 - type: HowTo
-  name: How to Read MSG Files with Aspose.Email for Java
+  name: Extract Email Tracking Data with Java
   description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
     for Java, extracting delivery/read receipts and vote results efficiently. Includes
     setup, code, and best practices.
@@ -69,7 +69,7 @@ schemas:
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Read MSG Files with Aspose.Email for Java
+# Extract Email Tracking Data with Java
 
 ## Introduction
 
@@ -108,7 +108,7 @@ To use Aspose.Email for Java, you need a license:
 
 Load the MSG file, iterate through its recipients, and read the `DeliveryTime` and `ReadTime` properties. This approach returns the exact timestamps when each recipient’s mail server delivered the message and when the recipient opened it, giving you precise tracking data for analysis. (53 words)
 
-### Step 1: Load the MSG File
+### Step 1: load the MSG file
 MapiMessage is the Aspose.Email class that represents an Outlook MSG message.  
 ```xml
 <dependency>
@@ -119,7 +119,7 @@ MapiMessage is the Aspose.Email class that represents an Outlook MSG message.
 </dependency>
 ```  
 
-### Step 2: Iterate Over Recipients
+### Step 2: iterate over recipients
 MapiRecipient represents a single recipient (To, CC, or BCC) in the MSG file.  
 ```java
 import com.aspose.email.MapiMessage;
@@ -132,14 +132,14 @@ public class RetrieveReceipts {
         MapiMessage msg = MapiMessage.fromFile(dataDir + "message.msg");
 ```  
 
-### Step 3: Retrieve and Print Delivery Time
+### Step 3: retrieve and print delivery time
 DeliveryTime is a property of MapiRecipient that holds the timestamp when the message was delivered to the recipient’s server.  
 ```java
         for (MapiRecipient recipient : msg.getRecipients()) {
             System.out.println("Recipient: " + recipient.getDisplayName());
 ```  
 
-### Step 4: Retrieve and Print Read Time
+### Step 4: retrieve and print read time
 ReadTime is a property of MapiRecipient indicating when the recipient opened the message, if that information is available.  
 ```java
             System.out.println("Delivery time: " + 
@@ -150,7 +150,7 @@ ReadTime is a property of MapiRecipient indicating when the recipient opened the
 
 After loading the message, the API exposes each recipient’s voting response and the time they responded, enabling you to aggregate poll outcomes programmatically. This data can be used to generate summary reports or feed directly into business intelligence dashboards for quick decision‑making. (53 words)
 
-### Step 1: Load the MSG File
+### Step 1: load the MSG file
 MapiMessage is used again to access the voting information embedded in the MSG file.  
 ```java
             System.out.println("Read time: " + 
@@ -160,7 +160,7 @@ MapiMessage is used again to access the voting information embedded in the MSG f
 }
 ```  
 
-### Step 2: Iterate Over Recipients
+### Step 2: iterate over recipients
 MapiRecipient provides access to each participant’s voting choice and response time.  
 ```java
 import com.aspose.email.MapiMessage;
@@ -173,14 +173,14 @@ public class ReadVoteResults {
         MapiMessage msg = MapiMessage.fromFile(dataDir + "message.msg");
 ```  
 
-### Step 3: Retrieve and Print Response
+### Step 3: retrieve and print response
 The `VotingResponse` property contains the actual vote (e.g., “Accept”, “Decline”, or custom options).  
 ```java
         for (MapiRecipient recipient : msg.getRecipients()) {
             System.out.println("Recipient: " + recipient.getDisplayName());
 ```  
 
-### Step 4: Retrieve and Print Response Time
+### Step 4: retrieve and print response time
 `VotingResponseTime` records when the recipient submitted their vote, allowing chronological analysis of poll activity.  
 ```java
             System.out.println("Response: " + 
@@ -201,13 +201,13 @@ Integrating these extracts with databases or BI tools amplifies the value of the
 - Use **streaming APIs** when dealing with thousands of messages.  
 - Store recipient data in lightweight collections such as `ArrayList` or `HashMap` for fast look‑ups.
 
-## Common Issues and Solutions
+## Common issues and solutions
 
 - **Null timestamps:** A missing `ReadTime` usually means the recipient hasn’t opened the message yet.  
 - **Large attachments:** If an MSG contains huge attachments, enable `LoadOptions.setPreserveEmbeddedResources(false)` to skip loading them into memory.  
 - **Encoding problems:** Ensure the correct code page is set via `MailMessage.setCharset(Charset.forName("UTF-8"))` when reading non‑ASCII content.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: How do I handle MSG files larger than 500 MB?**  
 A: Split the file into smaller segments or use the streaming API to read portions without full in‑memory loading.

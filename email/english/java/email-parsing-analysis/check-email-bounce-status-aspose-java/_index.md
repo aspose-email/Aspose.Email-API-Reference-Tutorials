@@ -1,5 +1,5 @@
 ---
-title: "How to Check Bounce Status with Aspose.Email for Java"
+title: "Check Email Bounce Status with Aspose.Email for Java"
 description: "Learn how to check bounce status and determine email bounce using Aspose.Email for Java. This guide shows Maven Aspose email dependency setup and reading email messages in Java."
 date: "2026-06-13"
 weight: 1
@@ -28,8 +28,8 @@ schemas:
       for your trial version.'
     text: '**Free Trial:** Visit [Aspose''s download page](https://releases.aspose.com/email/java/)
       for your trial version.'
-  - name: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
-    text: '**Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Temporary License:** Apply for a temporary license at [temporary license application page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Apply for a temporary license at [temporary license application page](https://purchase.aspose.com/temporary-license/).'
   - name: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
       page](https://purchase.aspose.com/buy).'
     text: '**Purchase:** For ongoing use, purchase the product from [Aspose''s purchase
@@ -135,7 +135,7 @@ Add the following snippet to your `pom.xml` inside the `<dependencies>` element:
 
 To fully utilize Aspose.Email, you can acquire a free trial license or purchase the full version:
 1. **Free Trial:** Visit [Aspose's download page](https://releases.aspose.com/email/java/) for your trial version.
-2. **Temporary License:** Apply for a temporary license at [this link](https://purchase.aspose.com/temporary-license/).
+2. **Temporary License:** Apply for a temporary license at [temporary license application page](https://purchase.aspose.com/temporary-license/).
 3. **Purchase:** For ongoing use, purchase the product from [Aspose's purchase page](https://purchase.aspose.com/buy).
 
 After obtaining your license file, initialize it in your code as follows:
@@ -237,7 +237,7 @@ When processing thousands of messages:
 - Stream email files from disk instead of loading them all into memory at once.
 - Upgrade to the latest Aspose.Email version to benefit from performance optimizations that reduce processing time by up to **30 %**.
 
-## Common Issues and Solutions
+## Common issues and solutions
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
@@ -245,7 +245,7 @@ When processing thousands of messages:
 | Missing bounce reason | Message is not a bounce (e.g., delivery receipt) | First verify `isBounced` is true before accessing detailed properties. |
 | Slow processing on large batches | Reading whole files into memory | Use `MailMessage.load(InputStream)` to stream data and release resources promptly. |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I check bounce status for emails stored in a database?**  
 A: Yes. Retrieve the raw MIME content as a byte array, wrap it in a `ByteArrayInputStream`, and pass it to `MailMessage.load()`.
