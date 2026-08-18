@@ -1,5 +1,5 @@
 ---
-title: "Analyzing Email Bounce Status Using Java"
+title: "Analyzing Email Bounce Status Using Aspose.Email for Java"
 description: "Learn how to check bounce status and determine email bounce using Aspose.Email for Java. This guide shows Maven Aspose email dependency setup and reading email messages in Java."
 date: "2026-06-13"
 weight: 1
@@ -67,9 +67,9 @@ schemas:
       running Java 16+.
 ---
 
-Below is a concise overview of how to analyze email bounce status using Java and the Aspose.Email library. This introduction prepares you for the detailed steps that follow.
-
 {{< blocks/products/products-backtop-button >}}
+
+Below is a concise overview of how to analyze email bounce status using Java and the Aspose.Email library. This introduction prepares you for the detailed steps that follow.
 
 {{< blocks/products/pf/main-wrap-class >}}
 

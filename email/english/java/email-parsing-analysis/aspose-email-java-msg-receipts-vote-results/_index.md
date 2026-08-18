@@ -1,5 +1,5 @@
 ---
-title: "Extract Email Tracking Data with Aspose.Email for Java"
+title: "Analyze Email Tracking Data from Outlook MSG Files"
 description: "Learn how to read MSG files and parse MSG attachments using Aspose.Email for Java, extracting delivery/read receipts and vote results efficiently. Includes setup, code, and best practices."
 date: "2026-06-13"
 weight: 1
@@ -10,14 +10,14 @@ keywords:
 - Aspose.Email for Java
 schemas:
 - type: TechArticle
-  headline: Extract Email Tracking Data with Aspose.Email for Java
+  headline: Analyze Email Tracking Data from Outlook MSG Files
   description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
     for Java, extracting delivery/read receipts and vote results efficiently. Includes
     setup, code, and best practices.
   dateModified: '2026-06-13'
   author: Aspose
 - type: HowTo
-  name: Extract Email Tracking Data with Aspose.Email for Java
+  name: Analyze Email Tracking Data from Outlook MSG Files
   description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
     for Java, extracting delivery/read receipts and vote results efficiently. Includes
     setup, code, and best practices.
@@ -69,7 +69,7 @@ schemas:
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Extract Email Tracking Data with Aspose.Email for Java
+# Analyze Email Tracking Data from Outlook MSG Files
 
 ## Introduction
 

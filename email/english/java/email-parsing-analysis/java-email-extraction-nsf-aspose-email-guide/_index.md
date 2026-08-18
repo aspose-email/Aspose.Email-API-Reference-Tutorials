@@ -1,5 +1,5 @@
 ---
-title: "Processing NSF Files in Java – A Comprehensive Guide"
+title: "Extract NSF Files with Aspose.Email for Java – A Comprehensive Guide"
 description: "Learn how to extract NSF files using Java, including Maven dependency setup, reading messages, and real‑world use cases."
 date: "2026-06-13"
 weight: 1
@@ -12,12 +12,12 @@ keywords:
 - nsf file processing
 schemas:
 - type: TechArticle
-  headline: Processing NSF Files in Java – A Comprehensive Guide
+  headline: Extract NSF Files with Aspose.Email for Java – A Comprehensive Guide
   description: Learn how to extract NSF files using Java, including Maven dependency setup, reading messages, and real‑world use cases.
   dateModified: '2026-06-13'
   author: Aspose
 - type: HowTo
-  name: Processing NSF Files in Java – A Comprehensive Guide
+  name: Extract NSF Files with Aspose.Email for Java – A Comprehensive Guide
   description: Learn how to extract NSF files using Java, including Maven dependency setup, reading messages, and real‑world use cases.
   steps:
   - name: '**Free Trial:** Download a trial from the Aspose website to explore core
