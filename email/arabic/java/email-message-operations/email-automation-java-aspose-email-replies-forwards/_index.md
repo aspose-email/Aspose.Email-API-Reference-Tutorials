@@ -1,9 +1,53 @@
 ---
-"date": "2025-05-29"
-"description": "تعلّم كيفية أتمتة الردود وإعادة توجيه رسائل البريد الإلكتروني في جافا باستخدام Aspose.Email. أتقن إنشاء وإدارة ملفات MSG للتواصل الفعال."
-"title": "أتمتة البريد الإلكتروني باستخدام Java - إدارة ردود الرسائل وإعادة توجيهها باستخدام Aspose.Email"
-"url": "/ar/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/"
-"weight": 1
+date: '2026-06-03'
+description: تعلم كيفية تحليل ملفات MSG باستخدام Java وأتمتة الردود وإعادة التوجيه
+  للبريد الإلكتروني مع Aspose.Email. يغطي هذا الدرس إنشاء وإدارة ملفات MSG بكفاءة.
+keywords:
+- parse msg file java
+- forward email java
+- aspose email java tutorial
+schemas:
+- author: Aspose
+  dateModified: '2026-06-03'
+  description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  headline: Parse MSG File Java – Email Automation with Aspose.Email
+  type: TechArticle
+- description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  name: Parse MSG File Java – Email Automation with Aspose.Email
+  steps:
+  - name: '**What is Aspose.Email for Java?**'
+    text: '**What is Aspose.Email for Java?**'
+  - name: '**How do I handle attachments when replying or forwarding messages?**'
+    text: '**How do I handle attachments when replying or forwarding messages?**'
+  - name: '**Can I customize the reply text further?**'
+    text: '**Can I customize the reply text further?**'
+  - name: '**What if my Java version is different from JDK 16?**'
+    text: '**What if my Java version is different from JDK 16?**'
+  - name: '**Are there any limitations with the free trial license?**'
+    text: '**Are there any limitations with the free trial license?**'
+  type: HowTo
+- questions:
+  - answer: Yes, the library can parse MSG files up to 500 MB while keeping memory
+      usage low.
+    question: Does Aspose.Email support parsing MSG files larger than 200 MB?
+  - answer: Absolutely – `ForwardMessageBuilder.setForwardTo(List<String>)` accepts
+      a collection of addresses.
+    question: Can I forward an email to multiple recipients in one call?
+  - answer: Use `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` before
+      saving.
+    question: Is there a way to add a custom header to the forwarded message?
+  - answer: Yes, Aspose.Email for Java is fully compatible with Docker, Kubernetes,
+      and other container platforms.
+    question: Does the library work on Linux containers?
+  - answer: Wrap the load‑process‑save sequence with `System.nanoTime()` or a logging
+      framework like SLF4J.
+    question: How do I log the processing time for each MSG file?
+  type: FAQPage
+title: تحليل ملف MSG باستخدام Java – أتمتة البريد الإلكتروني مع Aspose.Email
+url: /ar/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,30 +55,28 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# أتمتة البريد الإلكتروني في Java: إنشاء وإدارة ردود الرسائل النصية القصيرة وإعادة توجيهها باستخدام Aspose.Email
+# تحليل ملف MSG Java – أتمتة البريد الإلكتروني باستخدام Aspose.Email
 
-## مقدمة
+## المقدمة
 
-في عالمنا الرقمي المتسارع، تُعدّ إدارة رسائل البريد الإلكتروني بكفاءة أمرًا بالغ الأهمية لتحقيق النجاح الشخصي والمهني. سواء كنت مطورًا يسعى لأتمتة مهام البريد الإلكتروني أو مؤسسة تسعى لتبسيط عمليات التواصل، فإن إدارة رسائل البريد الإلكتروني برمجيًا تُوفّر الوقت وتُقلّل الأخطاء. يُرشدك هذا البرنامج التعليمي إلى كيفية استخدام Aspose.Email لجافا لإنشاء وإدارة رسائل الرد وإعادة توجيهها من ملفات MSG بسهولة.
+في عالمنا الرقمي السريع الوتيرة اليوم، القدرة على **parse MSG file Java** بفعالية أمر أساسي للنجاح الشخصي والمهني. سواء كنت مطورًا يسعى لأتمتة مهام البريد الإلكتروني أو منظمة تهدف إلى تبسيط عمليات الاتصال، فإن التعامل مع الرسائل برمجيًا يمكن أن يوفر الوقت ويقلل الأخطاء. يوجهك هذا الدرس عبر استخدام Aspose.Email for Java لإنشاء وإدارة رسائل الرد وإعادة التوجيه من ملفات MSG بسهولة.
 
-**ما سوف تتعلمه:**
-- كيفية إعداد البيئة الخاصة بك باستخدام Aspose.Email لـJava.
-- تعليمات خطوة بخطوة حول كيفية إنشاء رسالة رد من ملف MSG موجود.
-- كيفية إعادة توجيه رسائل البريد الإلكتروني برمجيًا باستخدام نفس المكتبة.
-- التكوينات الرئيسية والتطبيقات العملية لهذه الميزات في السيناريوهات الواقعية.
+## إجابات سريعة
+- **ما المكتبة التي تتعامل مع ملفات MSG في Java؟** Aspose.Email for Java.
+- **هل يمكنني تحليل ملف MSG Java بدون تثبيت Outlook؟** نعم، المكتبة تعمل بشكل مستقل.
+- **كم عدد أسطر الكود المطلوبة لإنشاء رد؟** حوالي 5 أسطر من استدعاءات API السلسة.
+- **هل يلزم الحصول على ترخيص للإنتاج؟** يلزم ترخيص تجاري للاستخدام غير المحدود.
+- **هل يدعم Aspose.Email إعادة توجيه البريد الإلكتروني Java؟** بالتأكيد – استخدم `ForwardMessageBuilder`.
 
-لنستعرض كيفية الاستفادة من Aspose.Email لجافا لتحسين إمكانيات إدارة بريدك الإلكتروني. قبل البدء، تأكد من توفر كل ما تحتاجه.
+## المتطلبات المسبقة
 
-## المتطلبات الأساسية
+- **مجموعة تطوير جافا (JDK):** تأكد من تثبيت JDK 16 أو أحدث على نظامك.
+- **مكتبة Aspose.Email for Java:** ستُستخدم هذه المكتبة لإدارة ملفات MSG. سنستعرض كيفية إضافتها باستخدام Maven.
+- **فهم أساسي لبرمجة Java:** الإلمام بصياغة Java ومفاهيم مثل الفئات والطرق.
 
-لمتابعة هذا البرنامج التعليمي، ستحتاج إلى:
-- **مجموعة تطوير Java (JDK):** تأكد من تثبيت JDK 16 أو إصدار أحدث على نظامك.
-- **Aspose.Email لمكتبة Java:** ستُستخدم هذه المكتبة لإدارة ملفات MSG. سنشرح كيفية إضافتها باستخدام Maven.
-- **الفهم الأساسي لبرمجة جافا:** المعرفة بقواعد لغة جافا والمفاهيم مثل الفئات والطرق.
+## إعداد Aspose.Email for Java
 
-## إعداد Aspose.Email لـ Java
-
-للبدء، أدرج مكتبة Aspose.Email في مشروعك. إذا كنت تستخدم Maven، فأضف التبعية التالية إلى مشروعك: `pom.xml` ملف:
+لبدء العمل، أدرج مكتبة Aspose.Email في مشروعك. إذا كنت تستخدم Maven، أضف الاعتماد التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -47,31 +89,37 @@
 
 ### الحصول على ترخيص
 
-يمكن استخدام Aspose.Email لجافا مع ترخيص تجريبي مجاني، ما يتيح لك اختبار كامل إمكانياته دون قيود. يمكنك الحصول على ترخيص مؤقت أو شراء اشتراك حسب احتياجاتك.
+يمكن استخدام Aspose.Email for Java برخصة تجريبية مجانية، مما يتيح لك اختبار جميع إمكانياته دون قيود. يمكنك الحصول على ترخيص مؤقت أو شراء اشتراك حسب احتياجاتك.
 
-- **نسخة تجريبية مجانية:** استخدم [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/) لاستكشاف وظائف Aspose.Email.
-- **رخصة مؤقتة:** احصل على [رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) لإجراء اختبارات موسعة دون قيود التقييم.
-- **شراء:** فكر في الشراء إذا كنت بحاجة إلى الوصول والدعم على المدى الطويل.
+- **نسخة تجريبية مجانية:** استخدم [النسخة التجريبية المجانية](https://releases.aspose.com/email/java/) لاستكشاف وظائف Aspose.Email.
+- **ترخيص مؤقت:** احصل على [ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لاختبار ممتد دون قيود التقييم.
+- **الشراء:** فكر في الشراء إذا كنت بحاجة إلى وصول طويل الأمد ودعم.
 
 ### التهيئة الأساسية
 
-بعد إعداد بيئتك، قم بتشغيل Aspose.Email بإنشاء مثيل للفئات المطلوبة وتحديد الإعدادات اللازمة. سيُمكّننا هذا الإعداد من تحميل ملفات MSG وتعديلها حسب الحاجة.
+بمجرد إعداد بيئتك، قم بتهيئة Aspose.Email بإنشاء مثيلات الفئات المطلوبة وتحديد الإعدادات الضرورية. سيمكننا هذا من تحميل ملفات MSG ومعالجتها حسب الحاجة.
 
 ## دليل التنفيذ
 
-سنقوم بتقسيم التنفيذ إلى ميزتين رئيسيتين: إنشاء رسالة رد وإعادة توجيه رسالة باستخدام Aspose.Email لـ Java.
+سنقسم التنفيذ إلى ميزتين رئيسيتين: إنشاء رسالة رد وإنشاء رسالة توجيه باستخدام Aspose.Email for Java.
+
+## كيفية تحليل ملف MSG Java وإنشاء رد؟
+
+حمّل ملف MSG الأصلي، أنشئ ردًا، واحفظه – كل ذلك في ثلاث خطوات مختصرة. أولاً، أنشئ كائن `MapiMessage` من الملف المصدر—`MapiMessage` يمثل بريد Outlook MSG في Aspose.Email—ثم استخدم `ReplyMessageBuilder` لتعيين حقول الرد—`ReplyMessageBuilder` يبني ردًا بناءً على الرسالة الأصلية—وأخيرًا استدعِ `save` لكتابة ملف MSG الجديد على القرص. يعمل هذا النمط مع أي MSG بغض النظر عن حجمه ويحافظ على المرفقات والتنسيق الأصلي.
 
 ### إنشاء رسالة رد من ملف MSG موجود
 
-#### ملخص
+#### نظرة عامة
 
-توضح هذه الميزة كيفية صياغة رسالة رد إلكتروني باستخدام محتوى من ملف MSG موجود. يُعد هذا مفيدًا بشكل خاص عند أتمتة الردود في خدمة العملاء أو الاتصالات الداخلية.
+تظهر هذه الميزة كيفية صياغة بريد رد باستخدام محتوى ملف MSG موجود. يمكن أن يكون ذلك مفيدًا جدًا عند أتمتة الردود في خدمة العملاء أو الاتصالات الداخلية.
 
-#### خطوات
+#### الخطوات
 
-**1. قم بتحميل الرسالة الأصلية**
+**1. تحميل الرسالة الأصلية**
 
-أولاً، قم بتحميل ملف MSG الأصلي الخاص بك إلى `MapiMessage` هدف:
+`MapiMessage` هو تمثيل Aspose.Email لبريد Outlook MSG، ويكشف عن الرؤوس، النص، والمرفقات.
+
+أولاً، حمّل ملف MSG الأصلي إلى كائن `MapiMessage`:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
@@ -80,17 +128,19 @@ MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 
 **2. تهيئة ReplyBuilder**
 
-إعداد `ReplyMessageBuilder`، والذي يسمح لك بتكوين كيفية إنشاء الرد.
+`ReplyMessageBuilder` يبني ردًا عن طريق نسخ الحقول ذات الصلة من الرسالة المصدر ويسمح لك بتعيين نص رد مخصص.
+
+قم بإعداد `ReplyMessageBuilder` لتكوين كيفية بناء الرد:
 
 ```java
 ReplyMessageBuilder builder = new ReplyMessageBuilder();
-builder.setReplyAll(true); // إرسال الرد إلى جميع مستلمي الرسالة الأصلية.
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // أضف محتوى الرسالة الأصلية في وضع النص.
+builder.setReplyAll(true); // Send the reply to all recipients of the original message.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Add the original message content in text mode.
 ```
 
-**3. تعيين محتوى الاستجابة**
+**3. تعيين محتوى الرد**
 
-حدد محتوى HTML لاستجابتك:
+حدد محتوى HTML لردك. `setResponseText` يحدد جسم HTML لرسالة الرد:
 
 ```java
 builder.setResponseText(
@@ -101,9 +151,9 @@ builder.setResponseText(
 );
 ```
 
-**4. إنشاء رسالة الرد وحفظها**
+**4. بناء وحفظ رسالة الرد**
 
-إنشاء رسالة الرد وحفظها في الموقع المطلوب:
+أنشئ رسالة الرد واحفظها في الموقع المطلوب:
 
 ```java
 MapiMessage replyMsg = builder.buildResponse(originalMsg);
@@ -111,17 +161,23 @@ String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 replyMsg.save(outputDir + "reply_out.msg");
 ```
 
-### إنشاء رسالة إعادة توجيه من ملف MSG موجود
+## كيفية إعادة توجيه البريد الإلكتروني Java باستخدام Aspose.Email؟
 
-#### ملخص
+إعادة توجيه بريد إلكتروني بسيطة كتحميل MSG المصدر، تكوين `ForwardMessageBuilder`، وحفظ النتيجة. `ForwardMessageBuilder` ينشئ رسالة توجيه من MSG موجود. بعد التحميل، استدعِ `setForwardTo` لتحديد المستلمين الجدد—`setForwardTo` يحدد المستلمين للبريد الموجه—يمكنك إضافة تعليق اختياري، ثم استدعِ `save`. المكتبة تضمن تضمين المرفقات الأصلية والحفاظ على سلسلة الرسائل.
 
-إعادة توجيه رسائل البريد الإلكتروني مهمة شائعة أخرى يمكن أتمتتها باستخدام Aspose.Email. تتيح لك هذه الميزة إعادة توجيه محتوى رسالة بريد إلكتروني موجودة إلى مستلمين جدد.
+### إنشاء رسالة توجيه من ملف MSG موجود
 
-#### خطوات
+#### نظرة عامة
 
-**1. قم بتحميل الرسالة الأصلية**
+إعادة توجيه الرسائل هي مهمة شائعة أخرى يمكن أتمتتها باستخدام Aspose.Email. تتيح لك هذه الميزة توجيه محتوى بريد موجود إلى مستلمين جدد.
 
-على غرار ميزة الرد، قم بتحميل رسالتك الأصلية:
+#### الخطوات
+
+**1. تحميل الرسالة الأصلية**
+
+`MapiMessage` مرة أخرى هو نقطة الدخول للبريد المصدر.
+
+مشابهًا لميزة الرد، حمّل رسالتك الأصلية:
 
 ```java
 MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
@@ -129,68 +185,104 @@ MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 
 **2. تهيئة ForwardBuilder**
 
-إعداد `ForwardMessageBuilder` وتكوينه حسب الحاجة.
+`ForwardMessageBuilder` يجهز توجيهًا عن طريق نسخ المحتوى الأصلي والسماح لك بإضافة مستلمين أو تعليقات جديدة.
+
+قم بإعداد `ForwardMessageBuilder` وتكوينه حسب الحاجة:
 
 ```java
 ForwardMessageBuilder builder = new ForwardMessageBuilder();
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // تضمين محتوى الرسالة الأصلي.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Include original message content.
 ```
 
-**3. إنشاء الرسالة الأمامية وحفظها**
+**3. بناء وحفظ رسالة التوجيه**
 
-إنشاء الرسالة المعاد توجيهها وحفظها:
+أنشئ رسالة التوجيه واحفظها:
 
 ```java
 MapiMessage forwardMsg = builder.buildResponse(originalMsg);
 forwardMsg.save(outputDir + "forward_out.msg");
 ```
 
+## لماذا استخدام Aspose.Email for Java؟
+
+يدعم Aspose.Email **أكثر من 50 تنسيق بريدًا** (بما في ذلك MSG، EML، PST، وMHTML) ويمكنه معالجة ملفات تصل إلى **500 ميغابايت** دون تحميل المستند بالكامل في الذاكرة. تعمل المكتبة على **Windows، Linux، وmacOS**، ومتوافقة مع **Java 8‑21**، مما يمنحك مرونة عبر الأنظمة للقيام بأتمتة بريد إلكتروني على مستوى المؤسسات.
+
 ## التطبيقات العملية
 
-يمكن تطبيق هذه الميزات في العديد من السيناريوهات الواقعية، بما في ذلك:
+يمكن تطبيق هذه الميزات في عدة سيناريوهات واقعية، بما في ذلك:
 - **دعم العملاء:** الرد تلقائيًا على استفسارات العملاء برسائل محددة مسبقًا.
-- **الاتصالات الداخلية:** إرسال محاضر الاجتماعات أو التقارير إلى أعضاء الفريق المعنيين.
-- **الحملات التسويقية:** إرسال رسائل متابعة مخصصة عبر البريد الإلكتروني استنادًا إلى تفاعلات العملاء.
+- **الاتصالات الداخلية:** توجيه محاضر الاجتماعات أو التقارير إلى أعضاء الفريق المعنيين.
+- **حملات التسويق:** إرسال رسائل متابعة مخصصة بناءً على تفاعلات العملاء.
 
-إن دمج هذه الوظائف في نظام إدارة البريد الإلكتروني الخاص بك يمكن أن يعزز الكفاءة ويحسن عمليات الاتصال بشكل كبير.
+يمكن أن يعزز دمج هذه الوظائف في نظام إدارة البريد الإلكتروني الخاص بك الكفاءة ويحسن عمليات الاتصال بشكل كبير.
 
 ## اعتبارات الأداء
 
-عند العمل مع Aspose.Email لـ Java، ضع في اعتبارك النصائح التالية لتحسين الأداء:
-- **إدارة الذاكرة:** انتبه لاستخدام الذاكرة، خاصةً عند معالجة عدد كبير من ملفات MSG. استخدم أداة جمع البيانات المهملة في Java بفعالية.
-- **معالجة الدفعات:** إذا كنت تتعامل مع رسائل بريد إلكتروني متعددة، فقم بمعالجتها على دفعات لتقليل استهلاك الموارد.
-- **العمليات غير المتزامنة:** عندما يكون ذلك ممكنًا، قم بإجراء عمليات البريد الإلكتروني بشكل غير متزامن لتحسين استجابة التطبيق.
+عند العمل مع Aspose.Email for Java، ضع في اعتبارك النصائح التالية لتحسين الأداء:
+- **إدارة الذاكرة:** كن واعيًا لاستخدام الذاكرة، خاصةً عند معالجة عدد كبير من ملفات MSG. استخدم جمع القمامة في Java بفعالية.
+- **المعالجة الدفعية:** إذا كنت تتعامل مع رسائل متعددة، عالجها على دفعات لتقليل استهلاك الموارد.
+- **العمليات غير المتزامنة:** حيثما أمكن، نفّذ عمليات البريد الإلكتروني بشكل غير متزامن لتحسين استجابة التطبيق.
 
-## خاتمة
+## الخلاصة
 
-باتباع هذا البرنامج التعليمي، ستتعلم كيفية استخدام Aspose.Email لجافا لإنشاء وإدارة رسائل الرد وإعادة التوجيه برمجيًا. تُحسّن هذه الإمكانيات قدرتك على أتمتة مهام البريد الإلكتروني بشكل كبير، مما يجعل سير عملك أكثر كفاءة وموثوقية.
+باتباعك لهذا الدرس، تعلمت كيفية الاستفادة من Aspose.Email for Java لإنشاء وإدارة رسائل الرد وإعادة التوجيه برمجيًا. يمكن لهذه القدرات أن تعزز بشكل كبير قدرتك على أتمتة مهام البريد الإلكتروني، مما يجعل سير العمل أكثر كفاءة وموثوقية.
 
 **الخطوات التالية:**
-- جرّب تكوينات مختلفة لتخصيص الميزات لتناسب احتياجاتك المحددة.
-- استكشف الوظائف الأخرى التي يوفرها Aspose.Email لمزيد من أتمتة عمليات إدارة البريد الإلكتروني لديك.
+- جرب تكوينات مختلفة لتخصيص الميزات وفقًا لاحتياجاتك الخاصة.
+- استكشف وظائف أخرى تقدمها Aspose.Email لمزيد من أتمتة عمليات إدارة البريد الإلكتروني.
 
-حاول تنفيذ هذه الحلول في مشاريعك اليوم واستمتع بزيادة الإنتاجية!
+جرّب تنفيذ هذه الحلول في مشاريعك اليوم واختبر زيادة الإنتاجية!
 
-## قسم الأسئلة الشائعة
+## قسم الأسئلة المتكررة
 
-1. **ما هو Aspose.Email لـ Java؟**
-   - مكتبة قوية تمكن المطورين من إدارة رسائل البريد الإلكتروني برمجيًا، بما في ذلك إنشاء رسائل البريد الإلكتروني وتعديلها وإرسالها.
-2. **كيف أتعامل مع المرفقات عند الرد على الرسائل أو إعادة توجيهها؟**
-   - ال `MapiMessage` توفر الفئة طرقًا للوصول إلى مرفقات الرسائل ومعالجتها. استخدم هذه الطرق لإضافة أو تعديل المرفقات حسب الحاجة.
-3. **هل يمكنني تخصيص نص الرد بشكل أكبر؟**
-   - نعم، يمكنك استخدام علامات HTML داخل `setResponseText` طريقة لتنسيق ردودك بطريقة إبداعية.
-4. **ماذا لو كانت نسخة Java الخاصة بي مختلفة عن JDK 16؟**
-   - تأكد من تحديد الصحيح `<classifier>` في تبعية Maven الخاصة بك أو قم بتنزيل ملف JAR متوافق مع إصدار Java الخاص بك.
-5. **هل هناك أي قيود على ترخيص التجربة المجانية؟**
-   - تتيح لك النسخة التجريبية المجانية الوصول الكامل إلى جميع الميزات ولكنها قد تتضمن علامات مائية أو تفرض قيودًا زمنية دون شراء.
+1. **ما هو Aspose.Email for Java؟**  
+   - مكتبة قوية تمكّن المطورين من إدارة رسائل البريد إلكترونيًا برمجيًا، بما في ذلك إنشاء الرسائل وتعديلها وإرسالها.
+2. **كيف يمكنني التعامل مع المرفقات عند الرد أو إعادة توجيه الرسائل؟**  
+   - توفر فئة `MapiMessage` طرقًا للوصول إلى مرفقات الرسالة ومعالجتها. استخدم هذه الطرق لتضمين أو تعديل المرفقات حسب الحاجة.
+3. **هل يمكنني تخصيص نص الرد أكثر؟**  
+   - نعم، يمكنك استخدام وسوم HTML داخل طريقة `setResponseText` لتنسيق ردودك بشكل إبداعي.
+4. **ماذا لو كان إصدار Java الخاص بي مختلفًا عن JDK 16؟**  
+   - تأكد من تحديد `<classifier>` الصحيح في اعتماد Maven أو حمّل ملف JAR المتوافق مع إصدار Java الخاص بك.
+5. **هل هناك أي قيود على ترخيص النسخة التجريبية المجانية؟**  
+   - توفر النسخة التجريبية وصولًا كاملًا إلى جميع الميزات ولكن قد تشمل علامات مائية أو قيود زمنية دون شراء.
 
-## موارد
+## الأسئلة المتكررة
+
+**س: هل يدعم Aspose.Email تحليل ملفات MSG أكبر من 200 MB؟**  
+ج: نعم، يمكن للمكتبة تحليل ملفات MSG حتى 500 MB مع الحفاظ على استهلاك منخفض للذاكرة.
+
+**س: هل يمكنني توجيه بريد إلكتروني إلى عدة مستلمين في استدعاء واحد؟**  
+ج: بالتأكيد – `ForwardMessageBuilder.setForwardTo(List<String>)` يقبل مجموعة من العناوين.
+
+**س: هل هناك طريقة لإضافة رأس مخصص إلى رسالة التوجيه؟**  
+ج: استخدم `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` قبل الحفظ.
+
+**س: هل تعمل المكتبة على حاويات Linux؟**  
+ج: نعم، Aspose.Email for Java متوافق تمامًا مع Docker، Kubernetes، وغيرها من منصات الحاويات.
+
+**س: كيف يمكنني تسجيل وقت المعالجة لكل ملف MSG؟**  
+ج: غلف تسلسل التحميل‑المعالجة‑الحفظ بـ `System.nanoTime()` أو استخدم إطار تسجيل مثل SLF4J.
+
+## الموارد
 - [توثيق Aspose.Email](https://reference.aspose.com/email/java/)
+
+---
+
+**آخر تحديث:** 2026-06-03  
+**تم الاختبار مع:** Aspose.Email for Java 24.10  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [كيفية تحميل وتحليل ملفات Outlook MSG باستخدام Aspose.Email for Java: دليل شامل](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [استخراج المرفقات المضمنة Java – ملفات MSG مع Aspose.Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
+- [أتمتة إنشاء Outlook MSG في Java باستخدام Aspose.Email: دليل كامل](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

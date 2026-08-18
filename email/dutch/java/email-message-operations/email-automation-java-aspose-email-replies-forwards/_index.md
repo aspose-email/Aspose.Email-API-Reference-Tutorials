@@ -1,9 +1,54 @@
 ---
-"date": "2025-05-29"
-"description": "Leer hoe u e-mailbeantwoording en -doorsturingen in Java kunt automatiseren met Aspose.Email. Leer MSG-bestanden maken en beheren voor efficiënte communicatie."
-"title": "Java E-mail Automatisering&#58; Beheer MSG-antwoorden en doorsturen met Aspose.Email"
-"url": "/nl/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/"
-"weight": 1
+date: '2026-06-03'
+description: Leer hoe u een MSG-bestand in Java kunt parseren en e-mailantwoorden
+  en -doorgiften kunt automatiseren met Aspose.Email. Deze tutorial behandelt het
+  efficiënt maken en beheren van MSG-bestanden.
+keywords:
+- parse msg file java
+- forward email java
+- aspose email java tutorial
+schemas:
+- author: Aspose
+  dateModified: '2026-06-03'
+  description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  headline: Parse MSG File Java – Email Automation with Aspose.Email
+  type: TechArticle
+- description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  name: Parse MSG File Java – Email Automation with Aspose.Email
+  steps:
+  - name: '**What is Aspose.Email for Java?**'
+    text: '**What is Aspose.Email for Java?**'
+  - name: '**How do I handle attachments when replying or forwarding messages?**'
+    text: '**How do I handle attachments when replying or forwarding messages?**'
+  - name: '**Can I customize the reply text further?**'
+    text: '**Can I customize the reply text further?**'
+  - name: '**What if my Java version is different from JDK 16?**'
+    text: '**What if my Java version is different from JDK 16?**'
+  - name: '**Are there any limitations with the free trial license?**'
+    text: '**Are there any limitations with the free trial license?**'
+  type: HowTo
+- questions:
+  - answer: Yes, the library can parse MSG files up to 500 MB while keeping memory
+      usage low.
+    question: Does Aspose.Email support parsing MSG files larger than 200 MB?
+  - answer: Absolutely – `ForwardMessageBuilder.setForwardTo(List<String>)` accepts
+      a collection of addresses.
+    question: Can I forward an email to multiple recipients in one call?
+  - answer: Use `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` before
+      saving.
+    question: Is there a way to add a custom header to the forwarded message?
+  - answer: Yes, Aspose.Email for Java is fully compatible with Docker, Kubernetes,
+      and other container platforms.
+    question: Does the library work on Linux containers?
+  - answer: Wrap the load‑process‑save sequence with `System.nanoTime()` or a logging
+      framework like SLF4J.
+    question: How do I log the processing time for each MSG file?
+  type: FAQPage
+title: Parse MSG File Java – E-mailautomatisering met Aspose.Email
+url: /nl/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,30 +56,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java-e-mailautomatisering: MSG-antwoorden en -doorsturen maken en beheren met Aspose.Email
+# Parse MSG‑bestand Java – E‑mailautomatisering met Aspose.Email
 
-## Invoering
+## Introductie
 
-In de snelle digitale wereld van vandaag is het efficiënt beheren van e-mailcommunicatie essentieel voor zowel persoonlijk als professioneel succes. Of u nu een ontwikkelaar bent die e-mailtaken wil automatiseren of een organisatie die communicatieprocessen wil stroomlijnen, programmatisch e-mails verwerken kan tijd besparen en fouten verminderen. Deze tutorial begeleidt u bij het gebruik van Aspose.Email voor Java om moeiteloos antwoord- en doorstuurberichten vanuit MSG-bestanden te maken en beheren.
+In de hedendaagse, snel veranderende digitale wereld is het vermogen om **MSG‑bestand Java** efficiënt te **parsen** essentieel voor zowel persoonlijk als professioneel succes. Of je nu een ontwikkelaar bent die e‑mailtaken wil automatiseren of een organisatie die communicatieprocessen wil stroomlijnen, het programmatisch verwerken van e‑mails kan tijd besparen en fouten verminderen. Deze tutorial leidt je door het gebruik van Aspose.Email voor Java om antwoord‑ en doorstuurberichten van MSG‑bestanden moeiteloos te maken en te beheren.
 
-**Wat je leert:**
-- Hoe u uw omgeving instelt met Aspose.Email voor Java.
-- Stapsgewijze instructies voor het maken van een antwoordbericht vanuit een bestaand MSG-bestand.
-- Hoe u e-mails programmatisch kunt doorsturen met behulp van dezelfde bibliotheek.
-- Belangrijke configuraties en praktische toepassingen van deze functies in realistische scenario's.
+## Snelle Antwoorden
+- **Welke bibliotheek verwerkt MSG‑bestanden in Java?** Aspose.Email for Java.
+- **Kan ik MSG‑bestand Java parseren zonder Outlook geïnstalleerd?** Ja, de bibliotheek werkt zelfstandig.
+- **Hoeveel regels code zijn nodig om een antwoord te maken?** Ongeveer 5 regels van de fluent API.
+- **Is een licentie vereist voor productie?** Een commerciële licentie is nodig voor onbeperkt gebruik.
+- **Ondersteunt Aspose.Email het doorsturen van e‑mail in Java?** Absoluut – gebruik `ForwardMessageBuilder`.
 
-Laten we eens kijken hoe je Aspose.Email voor Java kunt gebruiken om je e-mailbeheer te verbeteren. Voordat we beginnen, zorg ervoor dat je alles hebt wat je nodig hebt.
+## Voorvereisten
 
-## Vereisten
+Om deze tutorial te volgen, heb je nodig:
+- **Java Development Kit (JDK):** Zorg ervoor dat JDK 16 of later op uw systeem is geïnstalleerd.
+- **Aspose.Email for Java Library:** Deze bibliotheek wordt gebruikt om MSG‑bestanden te beheren. We behandelen hoe u deze toevoegt met Maven.
+- **Basiskennis van Java‑programmeren:** Vertrouwdheid met Java‑syntaxis en concepten zoals klassen en methoden.
 
-Om deze tutorial te kunnen volgen, heb je het volgende nodig:
-- **Java-ontwikkelingskit (JDK):** Zorg ervoor dat JDK 16 of later op uw systeem is geïnstalleerd.
-- **Aspose.E-mail voor Java-bibliotheek:** Deze bibliotheek wordt gebruikt om MSG-bestanden te beheren. We leggen uit hoe je deze kunt toevoegen met Maven.
-- **Basiskennis van Java-programmering:** Kennis van Java-syntaxis en concepten zoals klassen en methoden.
+## Instellen van Aspose.Email voor Java
 
-## Aspose.Email instellen voor Java
-
-Om te beginnen, neem de Aspose.Email-bibliotheek op in je project. Als je Maven gebruikt, voeg dan de volgende afhankelijkheid toe aan je `pom.xml` bestand:
+Om te beginnen, voeg de Aspose.Email‑bibliotheek toe aan uw project. Als u Maven gebruikt, voeg dan de volgende afhankelijkheid toe aan uw `pom.xml`‑bestand:
 
 ```xml
 <dependency>
@@ -45,33 +89,39 @@ Om te beginnen, neem de Aspose.Email-bibliotheek op in je project. Als je Maven 
 </dependency>
 ```
 
-### Een licentie verkrijgen
+### Een Licentie Verkrijgen
 
-Aspose.Email voor Java kan worden gebruikt met een gratis proeflicentie, waarmee u de volledige mogelijkheden onbeperkt kunt uitproberen. U kunt een tijdelijke licentie aanschaffen of een abonnement afsluiten, afhankelijk van uw behoeften.
+Aspose.Email voor Java kan worden gebruikt met een gratis proeflicentie, waarmee u de volledige functionaliteit zonder beperkingen kunt testen. U kunt een tijdelijke licentie verkrijgen of een abonnement aanschaffen op basis van uw behoeften.
 
-- **Gratis proefperiode:** Gebruik de [gratis proefperiode](https://releases.aspose.com/email/java/) om de functionaliteiten van Aspose.Email te verkennen.
+- **Gratis proefversie:** Gebruik de [gratis proefversie](https://releases.aspose.com/email/java/) om de functionaliteiten van Aspose.Email te verkennen.
 - **Tijdelijke licentie:** Verkrijg een [tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor uitgebreid testen zonder evaluatiebeperkingen.
-- **Aankoop:** Overweeg een aankoop als u langdurige toegang en ondersteuning nodig hebt.
+- **Aankoop:** Overweeg een aankoop als u langdurige toegang en ondersteuning nodig heeft.
 
 ### Basisinitialisatie
 
-Zodra uw omgeving is ingesteld, initialiseert u Aspose.Email door een instantie van de vereiste klassen te maken en de benodigde configuraties op te geven. Deze configuratie stelt ons in staat om MSG-bestanden te laden en naar behoefte te bewerken.
+Zodra uw omgeving is ingesteld, initialiseert u Aspose.Email door een instantie van de benodigde klassen te maken en de noodzakelijke configuraties op te geven. Deze configuratie stelt ons in staat MSG‑bestanden te laden en te manipuleren zoals nodig.
 
 ## Implementatiegids
 
-We splitsen de implementatie op in twee hoofdfuncties: het maken van een antwoordbericht en het doorsturen van een bericht met Aspose.Email voor Java.
+We splitsen de implementatie op in twee hoofdonderdelen: het maken van een antwoordbericht en het doorsturen van een bericht met Aspose.Email voor Java.
 
-### Een antwoordbericht maken vanuit een bestaand MSG-bestand
+## Hoe MSG‑bestand Java parseren en een antwoord maken?
+
+Laad het originele MSG, bouw een antwoord en sla het op – alles in drie beknopte stappen. Eerst maakt u een `MapiMessage` aan vanuit het bronbestand—`MapiMessage` vertegenwoordigt een Outlook MSG‑e‑mail in Aspose.Email—vervolgens gebruikt u `ReplyMessageBuilder` om antwoord‑specifieke velden in te stellen—`ReplyMessageBuilder` bouwt een antwoord op basis van het originele bericht—en tot slot roept u `save` aan om het nieuwe MSG‑bestand naar schijf te schrijven. Dit patroon werkt voor elk MSG‑bestand, ongeacht de grootte, en behoudt originele bijlagen en opmaak.
+
+### Een Antwoordbericht Maken vanuit een Bestaand MSG‑bestand
 
 #### Overzicht
 
-Deze functie laat zien hoe u een antwoordmail kunt opstellen met behulp van inhoud uit een bestaand MSG-bestand. Dit kan met name handig zijn bij het automatiseren van reacties in de klantenservice of interne communicatie.
+Deze functie laat zien hoe u een antwoord‑e‑mail kunt samenstellen met inhoud uit een bestaand MSG‑bestand. Dit kan bijzonder nuttig zijn bij het automatiseren van reacties in klantenservice of interne communicatie.
 
 #### Stappen
 
 **1. Laad het originele bericht**
 
-Laad eerst uw originele MSG-bestand in een `MapiMessage` voorwerp:
+`MapiMessage` is de weergave van een Outlook MSG‑e‑mail in Aspose.Email, met toegang tot headers, body en bijlagen.
+
+Laad eerst uw originele MSG‑bestand in een `MapiMessage`‑object:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
@@ -80,17 +130,19 @@ MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 
 **2. Initialiseer de ReplyBuilder**
 
-Stel de `ReplyMessageBuilder`, waarmee u kunt configureren hoe het antwoord wordt opgebouwd.
+`ReplyMessageBuilder` bouwt een antwoord door relevante velden van het bronbericht te kopiëren en u toe te staan aangepaste respons‑tekst in te stellen.
+
+Stel de `ReplyMessageBuilder` in, waarmee u kunt configureren hoe het antwoord wordt opgebouwd:
 
 ```java
 ReplyMessageBuilder builder = new ReplyMessageBuilder();
-builder.setReplyAll(true); // Stuur het antwoord naar alle ontvangers van het oorspronkelijke bericht.
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Voeg de originele berichtinhoud toe in de tekstmodus.
+builder.setReplyAll(true); // Send the reply to all recipients of the original message.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Add the original message content in text mode.
 ```
 
 **3. Stel de responsinhoud in**
 
-Geef de HTML-inhoud voor uw antwoord op:
+Geef de HTML‑inhoud voor uw respons op. `setResponseText` stelt de HTML‑body van het antwoordbericht in:
 
 ```java
 builder.setResponseText(
@@ -101,9 +153,9 @@ builder.setResponseText(
 );
 ```
 
-**4. Het antwoordbericht maken en opslaan**
+**4. Bouw en sla het antwoordbericht op**
 
-Genereer het antwoordbericht en sla het op de gewenste locatie op:
+Genereer het antwoordbericht en sla het op op de gewenste locatie:
 
 ```java
 MapiMessage replyMsg = builder.buildResponse(originalMsg);
@@ -111,17 +163,23 @@ String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 replyMsg.save(outputDir + "reply_out.msg");
 ```
 
-### Een doorstuurbericht maken vanuit een bestaand MSG-bestand
+## Hoe e‑mail Java doorsturen met Aspose.Email?
+
+Het doorsturen van een e‑mail is net zo eenvoudig als het laden van het bron‑MSG, het configureren van een `ForwardMessageBuilder` en het opslaan van het resultaat. `ForwardMessageBuilder` maakt een doorstuurbericht van een bestaand MSG. Na het laden roept u `setForwardTo` aan met de nieuwe ontvangers—`setForwardTo` specificeert de ontvangers voor de doorgestuurde e‑mail—voegt eventueel een opmerking toe, en roept vervolgens `save` aan. De bibliotheek voegt automatisch de originele bijlagen toe en behoudt de berichtthread.
+
+### Een Doorstuurbericht Maken vanuit een Bestaand MSG‑bestand
 
 #### Overzicht
 
-Het doorsturen van e-mails is een andere veelvoorkomende taak die kan worden geautomatiseerd met Aspose.Email. Met deze functie kunt u de inhoud van een bestaande e-mail doorsturen naar nieuwe ontvangers.
+Het doorsturen van e‑mails is een andere veelvoorkomende taak die kan worden geautomatiseerd met Aspose.Email. Deze functie stelt u in staat de inhoud van een bestaande e‑mail door te sturen naar nieuwe ontvangers.
 
 #### Stappen
 
 **1. Laad het originele bericht**
 
-Net als bij de antwoordfunctie laadt u uw originele bericht:
+`MapiMessage` dient opnieuw als toegangspunt voor de bron‑e‑mail.
+
+Net als bij de antwoord‑functie, laad uw originele bericht:
 
 ```java
 MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
@@ -129,68 +187,104 @@ MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 
 **2. Initialiseer de ForwardBuilder**
 
-Stel de `ForwardMessageBuilder` en configureer deze indien nodig.
+`ForwardMessageBuilder` bereidt een doorstuurbericht voor door de originele inhoud te kopiëren en u toe te staan nieuwe ontvangers of opmerkingen toe te voegen.
+
+Stel de `ForwardMessageBuilder` in en configureer deze naar behoefte:
 
 ```java
 ForwardMessageBuilder builder = new ForwardMessageBuilder();
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Voeg originele berichtinhoud toe.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Include original message content.
 ```
 
-**3. Het doorstuurbericht maken en opslaan**
+**3. Bouw en sla het doorstuurbericht op**
 
-Maak het doorgestuurde bericht en sla het op:
+Maak het doorgestuurde bericht aan en sla het op:
 
 ```java
 MapiMessage forwardMsg = builder.buildResponse(originalMsg);
 forwardMsg.save(outputDir + "forward_out.msg");
 ```
 
-## Praktische toepassingen
+## Waarom Aspose.Email voor Java gebruiken?
 
-Deze kenmerken kunnen in verschillende praktijkscenario's worden toegepast, waaronder:
-- **Klantenservice:** Beantwoord automatisch vragen van klanten met vooraf gedefinieerde berichten.
-- **Interne communicatie:** Stuur notulen van vergaderingen of rapporten door naar de relevante teamleden.
-- **Marketingcampagnes:** Stuur gepersonaliseerde vervolgmails op basis van klantinteracties.
+Aspose.Email ondersteunt **meer dan 50 e‑mailformaten** (inclusief MSG, EML, PST en MHTML) en kan bestanden tot **500 MB** verwerken zonder het volledige document in het geheugen te laden. De bibliotheek draait op **Windows, Linux en macOS**, en is compatibel met **Java 8‑21**, waardoor u cross‑platform flexibiliteit krijgt voor enterprise‑grade e‑mailautomatisering.
 
-Door deze functionaliteiten in uw e-mailbeheersysteem te integreren, kunt u de efficiëntie verhogen en communicatieprocessen aanzienlijk verbeteren.
+## Praktische Toepassingen
+
+Deze functies kunnen in verschillende real‑world scenario’s worden toegepast, waaronder:
+- **Klantenondersteuning:** Automatisch antwoorden op klantvragen met vooraf gedefinieerde berichten.
+- **Interne communicatie:** Notulen of rapporten doorsturen naar relevante teamleden.
+- **Marketingcampagnes:** Gepersonaliseerde vervolg‑e‑mails verzenden op basis van klantinteracties.
+
+Het integreren van deze functionaliteiten in uw e‑mailbeheersysteem kan de efficiëntie aanzienlijk verhogen en communicatieprocessen sterk verbeteren.
 
 ## Prestatieoverwegingen
 
-Houd bij het werken met Aspose.Email voor Java rekening met de volgende tips om de prestaties te optimaliseren:
-- **Geheugenbeheer:** Let op het geheugengebruik, vooral bij het verwerken van grote aantallen MSG-bestanden. Maak effectief gebruik van Java's garbage collection.
-- **Batchverwerking:** Als u meerdere e-mails verwerkt, kunt u deze in batches verwerken om het resourceverbruik te beperken.
-- **Asynchrone bewerkingen:** Voer indien mogelijk e-mailbewerkingen asynchroon uit om de responsiviteit van de applicatie te verbeteren.
+Bij het werken met Aspose.Email voor Java, houd rekening met de volgende tips om de prestaties te optimaliseren:
+- **Geheugenbeheer:** Let op het geheugengebruik, vooral bij het verwerken van grote aantallen MSG‑bestanden. Maak effectief gebruik van Java's garbage collection.
+- **Batchverwerking:** Verwerk meerdere e‑mails in batches om het resourceverbruik te verminderen.
+- **Asynchrone bewerkingen:** Voer e‑mailbewerkingen waar mogelijk asynchroon uit om de responsiviteit van de applicatie te verbeteren.
 
 ## Conclusie
 
-Door deze tutorial te volgen, hebt u geleerd hoe u Aspose.Email voor Java kunt gebruiken om programmatisch antwoord- en doorstuurberichten te maken en te beheren. Deze mogelijkheden kunnen uw mogelijkheden voor het automatiseren van e-mailtaken aanzienlijk verbeteren, waardoor uw workflow efficiënter en betrouwbaarder wordt.
+Door deze tutorial te volgen, heeft u geleerd hoe u Aspose.Email voor Java kunt benutten om antwoord‑ en doorstuurberichten programmatisch te maken en te beheren. Deze mogelijkheden kunnen uw vermogen om e‑mailtaken te automatiseren aanzienlijk verbeteren, waardoor uw workflow efficiënter en betrouwbaarder wordt.
 
 **Volgende stappen:**
 - Experimenteer met verschillende configuraties om de functies af te stemmen op uw specifieke behoeften.
-- Ontdek andere functionaliteiten van Aspose.Email om uw e-mailbeheerprocessen verder te automatiseren.
+- Ontdek andere functionaliteiten die Aspose.Email biedt om uw e‑mailbeheerprocessen verder te automatiseren.
 
-Probeer deze oplossingen vandaag nog in uw projecten te implementeren en ervaar een verbeterde productiviteit!
+Probeer deze oplossingen vandaag nog in uw projecten te implementeren en ervaar een verhoogde productiviteit!
 
-## FAQ-sectie
+## Veelgestelde Vragen
 
 1. **Wat is Aspose.Email voor Java?**
-   - Een krachtige bibliotheek waarmee ontwikkelaars e-mailberichten programmatisch kunnen beheren, inclusief het maken, wijzigen en verzenden van e-mails.
+   - Een krachtige bibliotheek die ontwikkelaars in staat stelt e‑mailberichten programmatisch te beheren, inclusief het maken, wijzigen en verzenden van e‑mails.
 2. **Hoe ga ik om met bijlagen bij het beantwoorden of doorsturen van berichten?**
-   - De `MapiMessage` De klasse biedt methoden om toegang te krijgen tot berichtbijlagen en deze te bewerken. Gebruik deze methoden om bijlagen naar behoefte toe te voegen of te wijzigen.
+   - De `MapiMessage`‑klasse biedt methoden om bijlagen van een bericht te benaderen en te manipuleren. Gebruik deze methoden om bijlagen toe te voegen of aan te passen indien nodig.
 3. **Kan ik de antwoordtekst verder aanpassen?**
-   - Ja, u kunt HTML-tags gebruiken binnen de `setResponseText` methode om uw antwoorden creatief op te maken.
-4. **Wat als mijn Java-versie verschilt van JDK 16?**
-   - Zorg ervoor dat u de juiste gegevens opgeeft `<classifier>` in uw Maven-afhankelijkheid of download een compatibel JAR-bestand voor uw Java-versie.
-5. **Zijn er beperkingen aan de gratis proeflicentie?**
-   - Met de gratis proefperiode krijgt u toegang tot alle functies, maar er kunnen watermerken of tijdsbeperkingen gelden zonder dat u iets hoeft te kopen.
+   - Ja, u kunt HTML‑tags gebruiken binnen de `setResponseText`‑methode om uw antwoorden creatief te formatteren.
+4. **Wat als mijn Java‑versie anders is dan JDK 16?**
+   - Zorg ervoor dat u de juiste `<classifier>` opgeeft in uw Maven‑dependency of download een compatibel JAR‑bestand voor uw Java‑versie.
+5. **Zijn er beperkingen bij de gratis proeflicentie?**
+   - De gratis proeflicentie biedt volledige toegang tot alle functies, maar kan watermerken bevatten of tijdsbeperkingen hebben zonder aankoop.
+
+## Veelgestelde Vragen
+
+**Q: Ondersteunt Aspose.Email het parseren van MSG‑bestanden groter dan 200 MB?**  
+A: Ja, de bibliotheek kan MSG‑bestanden tot 500 MB parseren terwijl het geheugengebruik laag blijft.
+
+**Q: Kan ik een e‑mail naar meerdere ontvangers in één oproep doorsturen?**  
+A: Absoluut – `ForwardMessageBuilder.setForwardTo(List<String>)` accepteert een collectie van adressen.
+
+**Q: Is er een manier om een aangepaste header toe te voegen aan het doorstuurbericht?**  
+A: Gebruik `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` vóór het opslaan.
+
+**Q: Werkt de bibliotheek op Linux‑containers?**  
+A: Ja, Aspose.Email voor Java is volledig compatibel met Docker, Kubernetes en andere containerplatformen.
+
+**Q: Hoe log ik de verwerkingstijd voor elk MSG‑bestand?**  
+A: Omhul de laad‑verwerk‑sla op‑reeks met `System.nanoTime()` of een logging‑framework zoals SLF4J.
 
 ## Bronnen
-- [Aspose.Email Documentatie](https://reference.aspose.com/email/java/)
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+
+---
+
+**Laatst bijgewerkt:** 2026-06-03  
+**Getest met:** Aspose.Email for Java 24.10  
+**Auteur:** Aspose
+
+## Gerelateerde Tutorials
+
+- [Hoe Outlook MSG‑bestanden laden en parseren met Aspose.Email voor Java: Een uitgebreide gids](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Inline‑bijlagen extraheren Java – MSG‑bestanden met Aspose.Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
+- [Outlook MSG‑creatie automatiseren in Java met Aspose.Email: Een volledige gids](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

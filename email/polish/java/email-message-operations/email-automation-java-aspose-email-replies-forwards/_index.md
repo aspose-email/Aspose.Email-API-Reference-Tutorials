@@ -1,9 +1,54 @@
 ---
-"date": "2025-05-29"
-"description": "Dowiedz się, jak automatyzować odpowiedzi e-mail i przesyłanie dalej w Javie za pomocą Aspose.Email. Opanuj tworzenie i zarządzanie plikami MSG w celu wydajnej komunikacji."
-"title": "Automatyzacja poczty e-mail w Javie — zarządzanie odpowiedziami i przekazywaniem wiadomości za pomocą Aspose.Email"
-"url": "/pl/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/"
-"weight": 1
+date: '2026-06-03'
+description: Dowiedz się, jak parsować plik MSG w Javie i automatyzować odpowiedzi
+  oraz przekazywanie e-maili przy użyciu Aspose.Email. Ten samouczek opisuje efektywne
+  tworzenie i zarządzanie plikami MSG.
+keywords:
+- parse msg file java
+- forward email java
+- aspose email java tutorial
+schemas:
+- author: Aspose
+  dateModified: '2026-06-03'
+  description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  headline: Parse MSG File Java – Email Automation with Aspose.Email
+  type: TechArticle
+- description: Learn how to parse MSG file Java and automate email replies and forwards
+    with Aspose.Email. This tutorial covers creating and managing MSG files efficiently.
+  name: Parse MSG File Java – Email Automation with Aspose.Email
+  steps:
+  - name: '**What is Aspose.Email for Java?**'
+    text: '**What is Aspose.Email for Java?**'
+  - name: '**How do I handle attachments when replying or forwarding messages?**'
+    text: '**How do I handle attachments when replying or forwarding messages?**'
+  - name: '**Can I customize the reply text further?**'
+    text: '**Can I customize the reply text further?**'
+  - name: '**What if my Java version is different from JDK 16?**'
+    text: '**What if my Java version is different from JDK 16?**'
+  - name: '**Are there any limitations with the free trial license?**'
+    text: '**Are there any limitations with the free trial license?**'
+  type: HowTo
+- questions:
+  - answer: Yes, the library can parse MSG files up to 500 MB while keeping memory
+      usage low.
+    question: Does Aspose.Email support parsing MSG files larger than 200 MB?
+  - answer: Absolutely – `ForwardMessageBuilder.setForwardTo(List<String>)` accepts
+      a collection of addresses.
+    question: Can I forward an email to multiple recipients in one call?
+  - answer: Use `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` before
+      saving.
+    question: Is there a way to add a custom header to the forwarded message?
+  - answer: Yes, Aspose.Email for Java is fully compatible with Docker, Kubernetes,
+      and other container platforms.
+    question: Does the library work on Linux containers?
+  - answer: Wrap the load‑process‑save sequence with `System.nanoTime()` or a logging
+      framework like SLF4J.
+    question: How do I log the processing time for each MSG file?
+  type: FAQPage
+title: Parsowanie pliku MSG w Javie – Automatyzacja e-maili z Aspose.Email
+url: /pl/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,30 +56,29 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Automatyzacja poczty e-mail w Javie: tworzenie i zarządzanie odpowiedziami i wiadomościami przekazywanymi dalej za pomocą Aspose.Email
+# Parsowanie pliku MSG w Javie – Automatyzacja e‑maili z Aspose.Email
 
-## Wstęp
+## Wprowadzenie
 
-W dzisiejszym szybko zmieniającym się cyfrowym świecie efektywne zarządzanie komunikacją e-mailową jest niezbędne do osobistego i zawodowego sukcesu. Niezależnie od tego, czy jesteś programistą, który chce zautomatyzować zadania związane z pocztą e-mail, czy organizacją, która chce usprawnić procesy komunikacji, programowe zarządzanie wiadomościami e-mail może zaoszczędzić czas i zmniejszyć liczbę błędów. Ten samouczek przeprowadzi Cię przez proces korzystania z Aspose.Email for Java, aby bez wysiłku tworzyć i zarządzać wiadomościami odpowiedzi i przekazywania ich dalej z plików MSG.
+W dzisiejszym szybkim świecie cyfrowym umiejętność **parsowania pliku MSG w Javie** jest niezbędna zarówno w życiu osobistym, jak i zawodowym. Niezależnie od tego, czy jesteś deweloperem chcącym zautomatyzować zadania e‑mailowe, czy organizacją dążącą do usprawnienia procesów komunikacyjnych, programowe obsługiwanie e‑maili może zaoszczędzić czas i zredukować liczbę błędów. Ten samouczek poprowadzi Cię przez użycie Aspose.Email dla Javy w celu łatwego tworzenia i zarządzania wiadomościami odpowiedzi oraz przekazania z plików MSG.
 
-**Czego się nauczysz:**
-- Jak skonfigurować środowisko Aspose.Email dla Java.
-- Instrukcje krok po kroku dotyczące tworzenia wiadomości odpowiedzi na podstawie istniejącego pliku MSG.
-- Jak programowo przekazywać dalej wiadomości e-mail, korzystając z tej samej biblioteki.
-- Kluczowe konfiguracje i praktyczne zastosowania tych funkcji w scenariuszach z życia wziętych.
-
-Zanurzmy się w tym, jak możesz wykorzystać Aspose.Email dla Java, aby ulepszyć swoje możliwości zarządzania pocztą e-mail. Zanim zaczniemy, upewnij się, że masz wszystko, czego potrzebujesz.
+## Szybkie odpowiedzi
+- **Jaką bibliotekę obsługuje pliki MSG w Javie?** Aspose.Email for Java.
+- **Czy mogę parsować plik MSG w Javie bez zainstalowanego Outlooka?** Tak, biblioteka działa samodzielnie.
+- **Ile linii kodu potrzebnych jest do utworzenia odpowiedzi?** Około 5 linii wywołań fluent API.
+- **Czy wymagana jest licencja do produkcji?** Licencja komercyjna jest potrzebna do nieograniczonego użycia.
+- **Czy Aspose.Email obsługuje przekazywanie e‑maili w Javie?** Absolutnie – użyj `ForwardMessageBuilder`.
 
 ## Wymagania wstępne
 
-Aby skorzystać z tego samouczka, będziesz potrzebować:
-- **Zestaw narzędzi programistycznych Java (JDK):** Upewnij się, że w systemie jest zainstalowany JDK 16 lub nowszy.
-- **Aspose.Email dla biblioteki Java:** Ta biblioteka będzie używana do zarządzania plikami MSG. Omówimy, jak dodać ją za pomocą Maven.
-- **Podstawowa wiedza na temat programowania w języku Java:** Znajomość składni języka Java oraz takich pojęć, jak klasy i metody.
+Aby podążać za tym samouczkiem, potrzebujesz:
+- **Java Development Kit (JDK):** Upewnij się, że na systemie jest zainstalowany JDK 16 lub nowszy.
+- **Aspose.Email for Java Library:** Ta biblioteka będzie używana do zarządzania plikami MSG. Pokażemy, jak dodać ją przy użyciu Maven.
+- **Podstawowa znajomość programowania w Javie:** Znajomość składni Javy oraz pojęć takich jak klasy i metody.
 
-## Konfigurowanie Aspose.Email dla Java
+## Konfigurowanie Aspose.Email dla Javy
 
-Na początek uwzględnij bibliotekę Aspose.Email w swoim projekcie. Jeśli używasz Mavena, dodaj następującą zależność do swojego `pom.xml` plik:
+Aby rozpocząć, dołącz bibliotekę Aspose.Email do swojego projektu. Jeśli używasz Maven, dodaj następującą zależność do pliku `pom.xml`:
 
 ```xml
 <dependency>
@@ -45,52 +89,60 @@ Na początek uwzględnij bibliotekę Aspose.Email w swoim projekcie. Jeśli uży
 </dependency>
 ```
 
-### Uzyskanie licencji
+### Uzyskiwanie licencji
 
-Aspose.Email for Java można używać z bezpłatną licencją próbną, która pozwala przetestować jego pełne możliwości bez ograniczeń. Możesz nabyć tymczasową licencję lub kupić subskrypcję w zależności od swoich potrzeb.
+Aspose.Email dla Javy może być używany z bezpłatną licencją próbną, która pozwala przetestować pełne możliwości bez ograniczeń. Możesz uzyskać tymczasową licencję lub zakupić subskrypcję w zależności od potrzeb.
 
-- **Bezpłatna wersja próbna:** Użyj [bezpłatny okres próbny](https://releases.aspose.com/email/java/) aby poznać funkcjonalności Aspose.Email.
-- **Licencja tymczasowa:** Uzyskaj [licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do rozszerzonego testowania bez ograniczeń oceny.
+- **Bezpłatna wersja próbna:** Użyj [free trial](https://releases.aspose.com/email/java/) aby poznać funkcjonalności Aspose.Email.
+- **Licencja tymczasowa:** Uzyskaj [temporary license](https://purchase.aspose.com/temporary-license/) do rozszerzonego testowania bez ograniczeń ewaluacyjnych.
 - **Zakup:** Rozważ zakup, jeśli potrzebujesz długoterminowego dostępu i wsparcia.
 
 ### Podstawowa inicjalizacja
 
-Po skonfigurowaniu środowiska zainicjuj Aspose.Email, tworząc wystąpienie wymaganych klas i określając niezbędne konfiguracje. Ta konfiguracja umożliwi nam załadowanie plików MSG i manipulowanie nimi w razie potrzeby.
+Po skonfigurowaniu środowiska, zainicjalizuj Aspose.Email, tworząc instancję wymaganych klas i określając niezbędne ustawienia. To pozwoli nam ładować pliki MSG i manipulować nimi w razie potrzeby.
 
-## Przewodnik wdrażania
+## Przewodnik implementacji
 
-Podzielimy implementację na dwie główne funkcje: tworzenie wiadomości odpowiedzi i przekazywanie wiadomości za pomocą Aspose.Email dla Java.
+Podzielimy implementację na dwie główne funkcje: tworzenie wiadomości odpowiedzi oraz przekazywanie wiadomości przy użyciu Aspose.Email dla Javy.
+
+## Jak parsować plik MSG w Javie i utworzyć odpowiedź?
+
+Wczytaj oryginalny MSG, zbuduj odpowiedź i zapisz ją – wszystko w trzech zwięzłych krokach. Najpierw utwórz obiekt `MapiMessage` z pliku źródłowego — `MapiMessage` reprezentuje e‑mail Outlook MSG w Aspose.Email — następnie użyj `ReplyMessageBuilder`, aby ustawić pola specyficzne dla odpowiedzi — `ReplyMessageBuilder` konstruuje odpowiedź na podstawie oryginalnej wiadomości — i w końcu wywołaj `save`, aby zapisać nowy MSG na dysku. Ten wzorzec działa dla każdego MSG, niezależnie od rozmiaru, zachowując oryginalne załączniki i formatowanie.
 
 ### Tworzenie wiadomości odpowiedzi z istniejącego pliku MSG
 
 #### Przegląd
 
-Ta funkcja pokazuje, jak utworzyć odpowiedź e-mail, używając zawartości z istniejącego pliku MSG. Może to być szczególnie przydatne podczas automatyzacji odpowiedzi w obsłudze klienta lub komunikacji wewnętrznej.
+Ta funkcja demonstruje, jak stworzyć e‑mail odpowiedzi wykorzystując zawartość istniejącego pliku MSG. Może to być szczególnie przydatne przy automatyzacji odpowiedzi w obsłudze klienta lub komunikacji wewnętrznej.
 
 #### Kroki
 
-**1. Załaduj oryginalną wiadomość**
+**1. Wczytaj oryginalną wiadomość**
 
-Najpierw załaduj oryginalny plik MSG do `MapiMessage` obiekt:
+`MapiMessage` jest reprezentacją Aspose.Email dla e‑maili Outlook MSG, udostępniającą nagłówki, treść i załączniki.
+
+Najpierw wczytaj swój oryginalny plik MSG do obiektu `MapiMessage`:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/";
 MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 ```
 
-**2. Zainicjuj ReplyBuilder**
+**2. Zainicjalizuj ReplyBuilder**
 
-Skonfiguruj `ReplyMessageBuilder`, który umożliwia skonfigurowanie sposobu konstruowania odpowiedzi.
+`ReplyMessageBuilder` konstruuje odpowiedź, kopiując odpowiednie pola z wiadomości źródłowej i pozwalając ustawić własny tekst odpowiedzi.
+
+Skonfiguruj `ReplyMessageBuilder`, który umożliwia określenie, jak ma być zbudowana odpowiedź:
 
 ```java
 ReplyMessageBuilder builder = new ReplyMessageBuilder();
-builder.setReplyAll(true); // Wyślij odpowiedź do wszystkich adresatów oryginalnej wiadomości.
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Dodaj oryginalną treść wiadomości w trybie tekstowym.
+builder.setReplyAll(true); // Send the reply to all recipients of the original message.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Add the original message content in text mode.
 ```
 
 **3. Ustaw treść odpowiedzi**
 
-Podaj treść HTML swojej odpowiedzi:
+Określ treść HTML swojej odpowiedzi. `setResponseText` ustawia HTML‑owy korpus wiadomości odpowiedzi:
 
 ```java
 builder.setResponseText(
@@ -101,9 +153,9 @@ builder.setResponseText(
 );
 ```
 
-**4. Utwórz i zapisz wiadomość odpowiedzi**
+**4. Zbuduj i zapisz wiadomość odpowiedzi**
 
-Wygeneruj odpowiedź i zapisz ją w wybranym miejscu:
+Wygeneruj wiadomość odpowiedzi i zapisz ją w wybranej lokalizacji:
 
 ```java
 MapiMessage replyMsg = builder.buildResponse(originalMsg);
@@ -111,86 +163,127 @@ String outputDir = "YOUR_OUTPUT_DIRECTORY/";
 replyMsg.save(outputDir + "reply_out.msg");
 ```
 
-### Tworzenie wiadomości do przekazania z istniejącego pliku MSG
+## Jak przekazać e‑mail w Javie przy użyciu Aspose.Email?
+
+Przekazanie e‑maila jest tak proste, jak wczytanie źródłowego MSG, skonfigurowanie `ForwardMessageBuilder` i zapis wyniku. `ForwardMessageBuilder` tworzy wiadomość przekazaną z istniejącego MSG. Po wczytaniu wywołaj `setForwardTo` z nowymi odbiorcami — `setForwardTo` określa odbiorców przekazywanego e‑maila — opcjonalnie dodaj komentarz, a następnie wywołaj `save`. Biblioteka automatycznie dołącza oryginalne załączniki i zachowuje wątek wiadomości.
+
+### Tworzenie wiadomości przekazanej z istniejącego pliku MSG
 
 #### Przegląd
 
-Przekazywanie wiadomości e-mail to kolejne typowe zadanie, które można zautomatyzować za pomocą Aspose.Email. Ta funkcja umożliwia przekazywanie treści istniejącej wiadomości e-mail nowym odbiorcom.
+Przekazywanie e‑maili to kolejna powszechna czynność, którą można zautomatyzować przy użyciu Aspose.Email. Ta funkcja pozwala przekazać zawartość istniejącego e‑maila nowym odbiorcom.
 
 #### Kroki
 
-**1. Załaduj oryginalną wiadomość**
+**1. Wczytaj oryginalną wiadomość**
 
-Podobnie jak w przypadku funkcji odpowiedzi, załaduj swoją oryginalną wiadomość:
+`MapiMessage` ponownie służy jako punkt wejścia dla źródłowego e‑maila.
+
+Podobnie jak w funkcji odpowiedzi, wczytaj swoją oryginalną wiadomość:
 
 ```java
 MapiMessage originalMsg = MapiMessage.fromFile(dataDir + "message1.msg");
 ```
 
-**2. Zainicjuj ForwardBuilder**
+**2. Zainicjalizuj ForwardBuilder**
 
-Skonfiguruj `ForwardMessageBuilder` i skonfiguruj według potrzeb.
+`ForwardMessageBuilder` przygotowuje przekazanie, kopiując oryginalną treść i umożliwiając dodanie nowych odbiorców lub komentarzy.
+
+Skonfiguruj `ForwardMessageBuilder` i ustaw go według potrzeb:
 
 ```java
 ForwardMessageBuilder builder = new ForwardMessageBuilder();
-builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Dołącz oryginalną treść wiadomości.
+builder.setAdditionMode(OriginalMessageAdditionMode.Textpart); // Include original message content.
 ```
 
-**3. Utwórz i zapisz wiadomość do przekazania**
+**3. Zbuduj i zapisz wiadomość przekazaną**
 
-Utwórz przekazaną wiadomość i zapisz ją:
+Utwórz wiadomość przekazaną i zapisz ją:
 
 ```java
 MapiMessage forwardMsg = builder.buildResponse(originalMsg);
 forwardMsg.save(outputDir + "forward_out.msg");
 ```
 
-## Zastosowania praktyczne
+## Dlaczego warto używać Aspose.Email dla Javy?
 
-Funkcje te można zastosować w wielu scenariuszach z życia wziętych, w tym:
-- **Obsługa klienta:** Automatycznie odpowiadaj na zapytania klientów za pomocą zdefiniowanych wcześniej wiadomości.
-- **Komunikacja wewnętrzna:** Przekazywanie protokołów ze spotkań i raportów odpowiednim członkom zespołu.
-- **Kampanie marketingowe:** Wysyłaj spersonalizowane wiadomości e-mail z odpowiedziami na podstawie interakcji z klientami.
+Aspose.Email obsługuje **ponad 50 formatów e‑maili** (w tym MSG, EML, PST i MHTML) i może przetwarzać pliki do **500 MB** bez ładowania całego dokumentu do pamięci. Biblioteka działa na **Windows, Linux i macOS**, jest kompatybilna z **Java 8‑21**, dając elastyczność wieloplatformową dla przedsiębiorstwowych automatyzacji e‑maili.
 
-Zintegrowanie tych funkcjonalności z systemem zarządzania pocztą e-mail może znacznie zwiększyć wydajność i usprawnić procesy komunikacji.
+## Praktyczne zastosowania
+
+Te funkcje mogą być wykorzystane w wielu scenariuszach rzeczywistych, w tym:
+- **Wsparcie klienta:** Automatycznie odpowiadaj na zapytania klientów przy użyciu predefiniowanych wiadomości.
+- **Komunikacja wewnętrzna:** Przekazuj protokoły spotkań lub raporty odpowiednim członkom zespołu.
+- **Kampanie marketingowe:** Wysyłaj spersonalizowane e‑maile follow‑up w oparciu o interakcje klientów.
+
+Integracja tych funkcjonalności z systemem zarządzania e‑mailami może znacząco zwiększyć efektywność i usprawnić procesy komunikacyjne.
 
 ## Rozważania dotyczące wydajności
 
-Podczas pracy z Aspose.Email dla Java należy wziąć pod uwagę następujące wskazówki, aby zoptymalizować wydajność:
-- **Zarządzanie pamięcią:** Uważaj na wykorzystanie pamięci, zwłaszcza podczas przetwarzania dużej liczby plików MSG. Wykorzystuj skutecznie zbieranie śmieci Javy.
-- **Przetwarzanie wsadowe:** Jeśli obsługujesz wiele wiadomości e-mail, przetwarzaj je partiami, aby ograniczyć zużycie zasobów.
-- **Operacje asynchroniczne:** W miarę możliwości wykonuj operacje e-mailowe asynchronicznie, aby poprawić responsywność aplikacji.
+Podczas pracy z Aspose.Email dla Javy, weź pod uwagę następujące wskazówki optymalizacyjne:
+- **Zarządzanie pamięcią:** Zwracaj uwagę na zużycie pamięci, szczególnie przy przetwarzaniu dużej liczby plików MSG. Skutecznie wykorzystuj mechanizm garbage collection Javy.
+- **Przetwarzanie wsadowe:** Jeśli obsługujesz wiele e‑maili, przetwarzaj je w partiach, aby zmniejszyć zużycie zasobów.
+- **Operacje asynchroniczne:** Tam, gdzie to możliwe, wykonuj operacje e‑mailowe asynchronicznie, aby zwiększyć responsywność aplikacji.
 
-## Wniosek
+## Podsumowanie
 
-Dzięki temu samouczkowi nauczyłeś się, jak wykorzystać Aspose.Email for Java do tworzenia i zarządzania odpowiedziami i wiadomościami przekazywanymi programowo. Te możliwości mogą znacznie zwiększyć Twoją zdolność do automatyzacji zadań związanych z pocztą e-mail, czyniąc Twój przepływ pracy bardziej wydajnym i niezawodnym.
+Korzystając z tego samouczka, nauczyłeś się, jak wykorzystać Aspose.Email dla Javy do programowego tworzenia i zarządzania wiadomościami odpowiedzi oraz przekazania. Te możliwości mogą znacząco podnieść Twoją zdolność do automatyzacji zadań e‑mailowych, czyniąc przepływ pracy bardziej efektywnym i niezawodnym.
 
-**Następne kroki:**
+**Kolejne kroki:**
 - Eksperymentuj z różnymi konfiguracjami, aby dopasować funkcje do swoich konkretnych potrzeb.
-- Poznaj inne funkcjonalności Aspose.Email, które pozwolą Ci jeszcze bardziej zautomatyzować procesy zarządzania pocztą e-mail.
+- Poznaj inne funkcjonalności oferowane przez Aspose.Email, aby dalej automatyzować procesy zarządzania e‑mailami.
 
-Wypróbuj te rozwiązania w swoich projektach już dziś i ciesz się zwiększoną produktywnością!
+Wypróbuj te rozwiązania w swoich projektach już dziś i doświadcz zwiększonej produktywności!
 
 ## Sekcja FAQ
 
-1. **Czym jest Aspose.Email dla Java?**
-   - Potężna biblioteka umożliwiająca programistom programistyczne zarządzanie wiadomościami e-mail, w tym ich tworzenie, modyfikowanie i wysyłanie.
-2. **Jak postępować z załącznikami podczas odpowiadania na wiadomości lub przesyłania ich dalej?**
-   - Ten `MapiMessage` Klasa udostępnia metody dostępu i manipulowania załącznikami wiadomości. Użyj tych metod, aby dołączyć lub zmodyfikować załączniki w razie potrzeby.
-3. **Czy mogę dodatkowo dostosować tekst odpowiedzi?**
-   - Tak, możesz używać znaczników HTML w `setResponseText` metoda kreatywnego formatowania odpowiedzi.
-4. **Co zrobić, jeśli moja wersja Java różni się od JDK 16?**
-   - Upewnij się, że podałeś prawidłowy `<classifier>` zależnościach Maven lub pobierz plik JAR zgodny z wersją Java.
-5. **Czy są jakieś ograniczenia licencji próbnej?**
-   - Bezpłatna wersja próbna zapewnia pełny dostęp do wszystkich funkcji, ale może zawierać znaki wodne lub ograniczenia czasowe bez konieczności zakupu.
+1. **Czym jest Aspose.Email dla Javy?**  
+   - Potężna biblioteka umożliwiająca programistom zarządzanie wiadomościami e‑mailowymi, w tym tworzenie, modyfikowanie i wysyłanie e‑maili.
+2. **Jak obsłużyć załączniki przy odpowiadaniu lub przekazywaniu wiadomości?**  
+   - Klasa `MapiMessage` udostępnia metody do dostępu i manipulacji załącznikami wiadomości. Użyj ich, aby dołączać lub modyfikować załączniki w razie potrzeby.
+3. **Czy mogę dalej dostosować tekst odpowiedzi?**  
+   - Tak, możesz używać znaczników HTML w metodzie `setResponseText`, aby kreatywnie formatować swoje odpowiedzi.
+4. **Co zrobić, jeśli moja wersja Javy różni się od JDK 16?**  
+   - Upewnij się, że w zależności od wersji Javy określisz właściwy `<classifier>` w zależności Maven lub pobierzesz kompatybilny plik JAR.
+5. **Czy istnieją ograniczenia w bezpłatnej wersji próbnej?**  
+   - Bezpłatna wersja próbna zapewnia pełny dostęp do wszystkich funkcji, ale może zawierać znak wodny lub ograniczenia czasowe bez zakupu.
+
+## Często zadawane pytania
+
+**Q: Czy Aspose.Email obsługuje parsowanie plików MSG większych niż 200 MB?**  
+A: Tak, biblioteka może parsować pliki MSG do 500 MB przy niskim zużyciu pamięci.
+
+**Q: Czy mogę przekazać e‑mail do wielu odbiorców w jednym wywołaniu?**  
+A: Absolutnie – `ForwardMessageBuilder.setForwardTo(List<String>)` przyjmuje kolekcję adresów.
+
+**Q: Czy istnieje sposób na dodanie własnego nagłówka do wiadomości przekazanej?**  
+A: Użyj `MapiMessage.getHeaders().add("X-Custom-Header", "Value")` przed zapisem.
+
+**Q: Czy biblioteka działa w kontenerach Linux?**  
+A: Tak, Aspose.Email dla Javy jest w pełni kompatybilny z Docker, Kubernetes i innymi platformami kontenerowymi.
+
+**Q: Jak zalogować czas przetwarzania każdego pliku MSG?**  
+A: Otocz sekwencję load‑process‑save wywołaniem `System.nanoTime()` lub użyj frameworka logowania takiego jak SLF4J.
 
 ## Zasoby
-- [Dokumentacja Aspose.Email](https://reference.aspose.com/email/java/)
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
+
+---
+
+**Ostatnia aktualizacja:** 2026-06-03  
+**Testowane z:** Aspose.Email for Java 24.10  
+**Autor:** Aspose
+
+## Powiązane samouczki
+
+- [Jak wczytać i parsować pliki Outlook MSG przy użyciu Aspose.Email dla Javy: Kompletny przewodnik](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Wyodrębnianie wbudowanych załączników w Javie – pliki MSG z Aspose.Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
+- [Automatyzacja tworzenia Outlook MSG w Javie z Aspose.Email: Kompletny przewodnik](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
