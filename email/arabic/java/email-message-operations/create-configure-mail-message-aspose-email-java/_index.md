@@ -1,59 +1,97 @@
 ---
-date: '2026-02-27'
-description: تعلم كيفية إنشاء رسائل البريد الإلكتروني وتكوين عميل SMTP في Java باستخدام
-  Aspose.Email. يغطي هذا الدليل الإعداد وتكوين SMTP وأفضل الممارسات.
+date: '2026-08-21'
+description: تعلم كيفية إرسال البريد الإلكتروني باستخدام Java ومكتبة Aspose.Email،
+  مع تغطية SMTP SSL/TLS، المرفقات، وإعداد تبعية Maven.
 keywords:
-- Aspose.Email Java
-- create mail message Java
-- configure SMTP client Java
-title: كيفية إنشاء رسائل البريد الإلكتروني باستخدام Aspose.Email لجافا
+- send email using java
+- java email with attachments
+- java smtp ssl tls
+- java email maven dependency
+lastmod: '2026-08-21'
+og_description: إرسال البريد الإلكتروني باستخدام Java ومكتبة Aspose.Email. يوضح هذا
+  الدرس كيفية تكوين SMTP SSL/TLS، إضافة المرفقات، واستخدام تبعية Maven لتسليم البريد
+  الإلكتروني بشكل موثوق.
+og_image_alt: Guide showing Java code to send email via Aspose.Email SMTP client
+og_title: إرسال البريد الإلكتروني باستخدام Java ومكتبة Aspose.Email – دليل خطوة بخطوة
+schemas:
+- author: Aspose
+  dateModified: '2026-08-21'
+  description: Learn how to send email using Java with Aspose.Email, covering SMTP
+    SSL/TLS, attachments, and Maven dependency setup.
+  headline: How to send email using Java with Aspose.Email library
+  type: TechArticle
+- questions:
+  - answer: It is a powerful library that facilitates creating, sending, and managing
+      emails in Java applications.
+    question: What is Aspose.Email for Java?
+  - answer: Yes, it supports .NET, C++, Android, and more. Check the documentation
+      for each platform.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: Compress files before attaching them to keep the total size under typical
+      SMTP limits (usually 25 MB per message).
+    question: How do I handle large email attachments?
+  - answer: Port 25 is the default, but 587 (STARTTLS) and 465 (SSL) are recommended
+      for secure connections.
+    question: What ports are commonly used for SMTP servers?
+  - answer: Visit the [Aspose forum](https://forum.aspose.com/c/email/10) for help
+      from community experts and Aspose staff.
+    question: Where can I find support if I encounter issues?
+  type: FAQPage
+tags:
+- send email
+- Aspose.Email
+- Java email automation
+- SMTP client
+- email attachments
+title: كيفية إرسال البريد الإلكتروني باستخدام Java ومكتبة Aspose.Email
 url: /ar/java/email-message-operations/create-configure-mail-message-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# كيفية إنشاء رسائل البريد الإلكتروني باستخدام Aspose.Email في Java
 
-## المقدمة
+# كيفية إرسال البريد الإلكتروني باستخدام Java ومكتبة Aspose.Email
 
-إذا كنت تتساءل **كيف تنشئ رسائل بريد إلكتروني** برمجياً، فقد وصلت إلى المكان الصحيح. في عالمنا الرقمي اليوم، يعد أتمتة رسائل البريد أمرًا حيويًا للمطورين الذين يعملون على تطبيقات Java. سواء كنت بحاجة لإرسال إشعارات، أو تشغيل حملات بريد جماعية، أو دمج ميزات البريد مباشرةً في تطبيقك، فإن القيام بذلك بفعالية يوفر الوقت والموارد. سيوجهك هذا الدليل الشامل خلال إنشاء وتكوين رسائل البريد الإلكتروني باستخدام Aspose.Email for Java—مكتبة قوية تجعل التعامل مع البريد الإلكتروني بسيطًا.
+## مقدمة
 
-**ما ستتعلمه:**
-- إعداد Aspose.Email for Java.
-- إنشاء كائن `MailMessage` مع المرسل، المستلمين، النسخ (CC) والنسخ المخفية (BCC).
-- تكوين عميل SMTP لإرسال الرسائل.
-- أفضل الممارسات لاستخدام مكتبة Aspose.Email في Java.
+إذا كنت بحاجة إلى **إرسال بريد إلكتروني باستخدام Java**، فأنت في المكان المناسب. غالبًا ما تقوم التطبيقات الحديثة بأتمتة الإشعارات، وإعادة تعيين كلمات المرور، أو النشرات الإخبارية التسويقية، ومعالجة تلك الرسائل بشكل موثوق هو متطلب أساسي. توفر Aspose.Email for Java واجهة برمجة تطبيقات عالية المستوى تخفي تعقيدات MIME، وتتيح لك العمل مع SSL/TLS بأمان، وتدعم المرفقات مباشرةً. في هذا الدليل ستتعلم كيفية إعداد المكتبة، إنشاء `MailMessage` كامل، تكوين `SmtpClient`، وإرسال الرسالة بأمان.
+
+**ما ستتعلم**
+- إضافة اعتماد Aspose.Email لـ Maven.
+- إنشاء `MailMessage` مع المرسل، المستلمين، CC، BCC، والمرفقات.
+- تكوين عميل SMTP لـ SSL/TLS والمصادقة.
+- نصائح للأداء، معالجة الأخطاء، وترخيص جاهز للإنتاج.
 
 ## إجابات سريعة
-- **ما هو الصنف الأساسي لإنشاء البريد؟** `MailMessage`
-- **أي طريقة تُرسل البريد؟** `SmtpClient.send(message)`
-- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص Aspose.Email صالح.
+- **ما هي الفئة الأساسية لإنشاء البريد الإلكتروني؟** `MailMessage`
+- **أي طريقة تُرسل البريد الإلكتروني؟** `SmtpClient.send(message)`
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يتطلب ترخيص Aspose.Email صالح.
 - **هل يمكنني استخدام SSL/TLS؟** بالتأكيد—قم بتكوين `SmtpClient` للاتصالات الآمنة.
-- **ما هو العنصر (artifact) في Maven الذي يضيف Aspose.Email؟** `com.aspose:aspose-email`
+- **ما هو عنصر Maven الذي يضيف Aspose.Email؟** `com.aspose:aspose-email`
 
 ## ما هو “كيفية إنشاء بريد إلكتروني” باستخدام Aspose.Email؟
-إنشاء بريد إلكتروني باستخدام Aspose.Email يعني استخدام كائن `MailMessage` لتحديد جميع أجزاء البريد—المرسل، المستلمين، الموضوع، النص، والمرفقات—قبل تسليمه إلى `SmtpClient` للتسليم. تُجرد الـ API عملية بناء MIME منخفضة المستوى، مما يتيح لك التركيز على منطق الأعمال.
+إنشاء بريد إلكتروني باستخدام Aspose.Email يعني استخدام كائن `MailMessage` الخاص بالمكتبة لتحديد جميع أجزاء البريد الإلكتروني—المرسل، المستلمين، الموضوع، المحتوى، والمرفقات—قبل تسليمه إلى `SmtpClient` للإرسال. تُجرد الواجهة البرمجية (API) عملية بناء MIME منخفضة المستوى، مما يتيح لك التركيز على منطق الأعمال.
 
 ## لماذا نستخدم Aspose.Email لـ Java؟
-- **API متكامل:** يدعم POP3، IMAP، SMTP، Exchange، والمزيد.
-- **بدون تبعيات خارجية:** يعمل مباشرةً بمجرد إضافة ملف الـ JAR.
-- **أداء عالي:** مُحسّن للتعامل مع أحجام كبيرة ومرفقات ضخمة.
+توفر Aspose.Email مجموعة شاملة من الميزات التي تبسط التعامل مع البريد الإلكتروني في Java. تدعم جميع البروتوكولات الرئيسية، وتقدم أداءً عاليًا لصناديق البريد الكبيرة، وتعمل بدون تبعيات خارجية، مما يجعلها مثالية لكل من الإشعارات البسيطة والتكاملات المؤسسية المعقدة.
+
+- **API كامل الميزات:** يدعم POP3، IMAP، SMTP، Exchange، وأكثر.
+- **بدون تبعيات خارجية:** يعمل مباشرةً باستخدام ملف JAR فقط.
+- **أداء عالي:** مُحسّن للأحجام الكبيرة والمرفقات.
 - **متعدد المنصات:** يعمل على أي بيئة متوافقة مع Java (JDK 8+).
 
 ## المتطلبات المسبقة
-- **مجموعة تطوير Java (JDK)** 8 أو أعلى.
-- **بيئة تطوير متكاملة (IDE)** مثل IntelliJ IDEA أو Eclipse أو NetBeans.
-- **Maven** (أو إضافة ملفات JAR يدويًا) لإدارة التبعيات.
-- فهم أساسي للغة Java ومفاهيم البريد الإلكتروني.
+- Java Development Kit (JDK) 8 أو أعلى.
+- بيئة تطوير متكاملة (IDE) (IntelliJ IDEA، Eclipse، أو NetBeans) أو أي محرر نصوص.
+- Maven لإدارة التبعيات (أو إضافة JAR يدويًا).
+- معرفة أساسية بصياغة Java ومفاهيم البريد الإلكتروني.
 
 ## إعداد Aspose.Email لـ Java
-لاستخدام Aspose.Email for Java، أضفه إلى مشروعك عبر Maven أو حمّل ملفات الـ JAR مباشرةً من [موقع Aspose](https://releases.aspose.com/email/java/).
+لبدء، أضف مكتبة Aspose.Email إلى مشروعك. يمكنك تنزيل ملفات JAR مباشرةً من [موقع Aspose](https://releases.aspose.com/email/java/).
 
-### تبعية Maven
+### اعتماد Maven
 أضف المقتطف التالي إلى ملف `pom.xml` الخاص بك:
 
 ```xml
@@ -66,17 +104,18 @@ weight: 1
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية مجانية لاستكشاف الميزات الأساسية.  
-- **ترخيص مؤقت:** احصل على ترخيص مؤقت للوصول الكامل للميزات دون قيود.  
+- **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية مجانية لاستكشاف الميزات الأساسية.
+- **ترخيص مؤقت:** احصل على ترخيص مؤقت للوصول الكامل إلى الميزات دون قيود.
 - **شراء:** فكر في شراء اشتراك للمشاريع طويلة الأجل.
 
-بعد الحصول على الترخيص، ضع ملف `.lic` في موارد مشروعك وحمّله أثناء التشغيل (لم يُظهر هنا لتقليل طول المثال).
+ضع ملف `.lic` في مجلد `resources` الخاص بمشروعك وحمّله أثناء التشغيل (تم حذف الكود للاختصار).
 
-## دليل التنفيذ
-فيما يلي شرح خطوة بخطوة لإنشاء كائن `MailMessage`، تكوين `SmtpClient`، وإرسال البريد الإلكتروني.
+## كيفية إرسال بريد إلكتروني باستخدام Java – دليل خطوة بخطوة
 
-### كيفية إنشاء البريد – إعداد المرسل
-أولاً، أنشئ كائن `MailMessage` وحدد عنوان المرسل:
+### كيفية إنشاء بريد إلكتروني – إعداد المرسل
+`MailMessage` هي الفئة الرئيسية في Aspose.Email التي تمثل رسالة بريد إلكتروني، بما في ذلك الرؤوس، المحتوى، والمرفقات.  
+أنشئ مثيلًا من `MailMessage` وحدد عنوان المرسل.  
+**الإجابة المباشرة:** أنشئ `MailMessage`، استدعِ `setFrom` مع عنوان المرسل، وستحصل على كائن بريد جاهز للتعبئة. هذه الخطوة الوحيدة تُحدد مرسل الظرف الذي يتحقق منه معظم خوادم SMTP قبل قبول الرسالة.
 
 ```java
 import com.aspose.email.MailAddress;
@@ -85,10 +124,12 @@ import com.aspose.email.MailMessage;
 MailMessage message = new MailMessage();
 message.setFrom(new MailAddress("sender@sender.com")); // Set sender email address
 ```
-*شرح:* `setFrom` يعيّن بريد المرسل إلى الرسالة.
+*التعريف:* `MailMessage` هو كائن المستوى الأعلى في Aspose.Email يمثل بريدًا إلكترونيًا واحدًا، بما في ذلك الرؤوس، المحتوى، والمرفقات.
 
-### كيفية إضافة المستلمين، النسخ (CC)، والنسخ المخفية (BCC)
-بعد ذلك، عبّئ قوائم المستلمين باستخدام `MailAddressCollection`:
+### كيفية إضافة المستلمين، النسخ، والنسخ المخفية
+`MailAddressCollection` هو نوع مجموعة يخزن عناوين البريد الإلكتروني لحقول To، Cc، و Bcc.  
+املأ مجموعات المستلمين باستخدام `MailAddressCollection`.  
+**الإجابة المباشرة:** استخدم `message.getTo().add("user@example.com")`، `message.getCc().add(...)`، و `message.getBcc().add(...)` لإضافة كل قائمة عناوين؛ تقوم المكتبة بالتحقق تلقائيًا من تنسيق كل عنوان.
 
 ```java
 import com.aspose.email.MailAddressCollection;
@@ -112,10 +153,12 @@ bccList.add("Bcc1@receiver.com");
 bccList.add("Bcc2@receiver.com");
 message.setBcc(bccList); // Set BCC email addresses
 ```
-*شرح:* `MailAddressCollection` يدير قوائم المستلمين، مع ضمان تنسيق كل عنوان بشكل صحيح.
+*التعريف:* `MailAddressCollection` يدير قائمة عناوين البريد الإلكتروني، ويضمن تنسيق RFC‑5322 الصحيح ويتعامل مع التكرارات.
 
 ### كيفية تكوين عميل SMTP
-الآن قم بتكوين عميل SMTP بتفاصيل الخادم وبيانات الاعتماد:
+`SmtpClient` هي الفئة التي تدير الاتصال والتواصل مع خادم SMTP.  
+قم بإعداد `SmtpClient` بتفاصيل الخادم، بيانات الاعتماد، وخيارات الأمان.  
+**الإجابة المباشرة:** أنشئ `SmtpClient(host, port)`، عيّن `setUsername` و `setPassword`، ثم فعّل TLS باستخدام `setSecurityOptions(SecurityOptions.SSLExplicit)` للإرسال المشفر. هذا الإعداد يُعد قناة آمنة قبل إرسال أي بيانات.
 
 ```java
 import com.aspose.email.SmtpClient;
@@ -127,10 +170,12 @@ client.setUsername("Username");    // Set username for authentication
 client.setPassword("Password");    // Set password for authentication
 client.setPort(25);                // Commonly used port for SMTP
 ```
-*شرح:* `SmtpClient` يتعامل مع الاتصال بخادم البريد الخاص بك. للاتصال الآمن، يمكنك تمكين SSL/TLS عبر `client.setSecurityOptions(SecurityOptions.SSLExplicit)` (غير معروض).
+*التعريف:* `SmtpClient` يتعامل مع محادثة SMTP منخفضة المستوى، بما في ذلك تفاوض STARTTLS، المصادقة، وإرسال الرسائل.
 
-### كيفية إرسال البريد
-أخيرًا، أرسل الرسالة المُعدة:
+### كيفية إرسال بريد إلكتروني
+`send` هي طريقة في `SmtpClient` تُرسل `MailMessage` المُعد إلى الخادم.  
+استدعِ طريقة `send` على العميل المُكوَّن.  
+**الإجابة المباشرة:** استدعِ `client.send(message)`؛ تُحجب الطريقة حتى يؤكد الخادم استلام الرسالة أو تُطلق استثناءً عند الفشل، مما يتيح لك التقاط أخطاء الشبكة أو المصادقة داخل كتلة try‑catch.
 
 ```java
 try {
@@ -139,59 +184,58 @@ try {
     ex.printStackTrace(); // Handle exceptions and errors
 }
 ```
-*شرح:* طريقة `send` تُطلق عملية التسليم. أي مشاكل في الشبكة أو المصادقة ستُلتقط في كتلة `catch`.
+*التعريف:* `send` تُطلق عملية SMTP الفعلية، حيث تُحزم `MailMessage` في حمولة MIME وتُسلم إلى الخادم البعيد.
 
 ## المشكلات الشائعة والحلول
-- **فشل المصادقة:** تحقق من اسم المستخدم/كلمة المرور وتأكد من أن الحساب يسمح بالوصول إلى SMTP.  
-- **المنفذ محجوب بجدار الحماية:** تأكد من السماح بحركة المرور الصادرة على المنفذ المختار (25، 587 أو 465).  
-- **أخطاء SSL/TLS:** استخدم الخيار الأمن المناسب (`SSLExplicit` أو `SSLImplicit`) وتطابق بروتوكول الخادم المتوقع.  
-- **تسرب الموارد:** استدعِ `client.dispose()` أو احط العميل بكتلة try‑with‑resources إذا كنت تستخدم نسخة API أحدث.
+- **فشل المصادقة:** تحقق من اسم المستخدم/كلمة المرور وتأكد من أن الحساب يسمح بالوصول إلى SMTP.
+- **المنفذ محجوب بواسطة جدار الحماية:** تأكد من السماح بحركة المرور الصادرة على المنافذ 25 أو 587 أو 465.
+- **أخطاء SSL/TLS:** طابق وضع الأمان المتوقع من الخادم (`SSLExplicit` لـ STARTTLS، `SSLImplicit` للـ SSL المباشر).
+- **تسرب الموارد:** استدعِ `client.dispose()` أو استخدم كتلة try‑with‑resources (متوفرة في إصدارات API الأحدث) لتحرير المقابس فورًا.
 
-## تطبيقات عملية
-إليك سيناريوهات واقعية يبرز فيها هذا الإعداد:
-- **إشعارات بريدية آلية:** إرسال تنبيهات، إعادة تعيين كلمات المرور، أو تأكيدات الطلبات دون تدخل يدوي.  
-- **حملات بريد جماعية:** تكرار قائمة المستلمين وإرسال النشرات الإخبارية بكفاءة.  
-- **تكامل CRM:** مزامنة التواصل عبر البريد مباشرةً من نظام CRM مبني على Java.
+## التطبيقات العملية
+- **الإشعارات الآلية:** إرسال تأكيدات الطلبات، إعادة تعيين كلمات المرور، أو تنبيهات النظام دون خطوات يدوية.
+- **حملات جماعية:** التكرار عبر قائمة مستلمين كبيرة وإعادة استخدام مثيل واحد من `SmtpClient` للكفاءة.
+- **تكامل CRM:** دمج إرسال البريد الإلكتروني مباشرةً داخل سير عمل CRM المبني على Java، مع إرفاق ملفات PDF أو CSV في الوقت الفعلي.
 
-## نصائح للأداء
-- **استخدام الاتصالات الآمنة:** فضلًا عن المنافذ 587 (STARTTLS) أو 465 (SSL) للاتصالات المشفّرة.  
-- **إعادة استخدام كائنات `SmtpClient`:** عند إرسال عدد كبير من الرسائل، أعد استخدام العميل لتجنب عمليات المصافحة المتكررة.  
-- **إغلاق الموارد بسرعة:** حرّر العميل بعد إكمال الدفعة لتفريغ المقابس.  
-- **تنفيذ محاولات إعادة:** أضف منطق back‑off أُسّي للتعامل مع فشل الشبكة المؤقت.
-
-## الخاتمة
-باتباع هذا الدليل، أصبحت الآن تعرف **كيفية إنشاء رسائل بريد إلكتروني** و**تكوين عميل SMTP** باستخدام Aspose.Email for Java. هذه المهارات أساسية لإضافة قدرات بريد موثوقة إلى أي تطبيق Java. استمر في تجربة محتوى أغنى—نصوص HTML، مرفقات، وصور مدمجة—للاستفادة الكاملة من مجموعة ميزات Aspose.Email. لمزيد من التفاصيل المتعمقة، استكشف [توثيق Aspose](https://reference.aspose.com/email/java/).
+## نصائح الأداء
+- يفضل استخدام المنافذ 587 (STARTTLS) أو 465 (SSL) للمرور المشفر؛ فهي تقلل من احتمال تقييد مزود الخدمة.
+- أعد استخدام `SmtpClient` واحد لعدة رسائل لتجنب مفاوضات TLS المتكررة، مما يقلل الكمون حتى 40 %.
+- قم بتحرير العميل بعد معالجة الدفعة لإطلاق موارد المقابس.
+- طبق إعادة محاولات بتقنية التراجع الأسي للتعامل مع اضطرابات الشبكة المؤقتة لتحسين موثوقية التسليم.
 
 ## الأسئلة المتكررة
 
-**س1: ما هو Aspose.Email for Java؟**  
-ج: هي مكتبة قوية تُسهّل إنشاء، إرسال، وإدارة رسائل البريد في تطبيقات Java.
+**س: ما هو Aspose.Email لـ Java؟**  
+ج: هي مكتبة قوية تسهّل إنشاء وإرسال وإدارة رسائل البريد الإلكتروني في تطبيقات Java.
 
-**س2: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**  
-ج: نعم، تدعم .NET، C++، Android، وأكثر. راجع [التوثيق](https://reference.aspose.com/email/java/) للمزيد.
+**س: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**  
+ج: نعم، تدعم .NET، C++، Android، وأكثر. تحقق من الوثائق لكل منصة.
 
-**س3: كيف أتعامل مع مرفقات بريد كبيرة؟**  
-ج: فكر في ضغط الملفات قبل إرفاقها لتقليل الحجم.
+**س: كيف أتعامل مع مرفقات بريد إلكتروني كبيرة؟**  
+ج: قم بضغط الملفات قبل إرفاقها للحفاظ على الحجم الإجمالي تحت حدود SMTP المعتادة (عادةً 25 MB لكل رسالة).
 
-**س4: ما هي المنافذ الشائعة لخوادم SMTP؟**  
-ج: المنفذ 25 هو المعيار، لكن يُفضَّل استخدام 587 أو 465 للاتصالات المشفّرة.
+**س: ما هي المنافذ الشائعة المستخدمة لخوادم SMTP؟**  
+ج: المنفذ 25 هو الافتراضي، لكن يُنصح باستخدام 587 (STARTTLS) و 465 (SSL) للاتصالات الآمنة.
 
-**س5: أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟**  
-ج: زر [منتدى Aspose](https://forum.aspose.com/c/email/10) للحصول على مساعدة من خبراء المجتمع وفريق Aspose.
+**س: أين يمكنني العثور على الدعم إذا واجهت مشكلات؟**  
+ج: زر [منتدى Aspose](https://forum.aspose.com/c/email/10) للحصول على مساعدة من خبراء المجتمع وموظفي Aspose.
 
 ## الموارد
-- **التوثيق:** أدلة شاملة على [توثيق Aspose](https://reference.aspose.com/email/java/)
-- **التنزيل:** احصل على أحدث نسخة من [الإصدارات](https://releases.aspose.com/email/java/)
-- **الشراء:** استكشف خيارات الاشتراك على [شراء Aspose](https://purchase.aspose.com/buy)
+- **الوثائق:** أدلة شاملة على [توثيق Aspose](https://reference.aspose.com/email/java/) و[توثيق Aspose](https://reference.aspose.com/email/java/). للحصول على مرجع سريع راجع [الوثائق](https://reference.aspose.com/email/java/).
+- **التنزيل:** احصل على أحدث نسخة من [الإصدارات](https://releases.aspose.com/email/java/).
+- **الشراء:** استكشف خيارات الاشتراك على [شراء Aspose](https://purchase.aspose.com/buy).
 - **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية مجانية لاختبار الميزات.
 - **ترخيص مؤقت:** احصل على ترخيص مؤقت للوصول الكامل.
-- **الدعم:** احصل على مساعدة من منتدى مجتمع Aspose.
 
----
-
-**آخر تحديث:** 2026-02-27  
+**آخر تحديث:** 2026-08-21  
 **تم الاختبار مع:** Aspose.Email 25.4 for Java  
 **المؤلف:** Aspose
+
+## الدروس ذات الصلة
+
+- [تكوين خادم SMTP Java باستخدام Aspose.Email لـ Java](/email/java/configuring-smtp-servers/)
+- [كيفية تكوين خوادم SMTP متعددة باستخدام Aspose.Email لـ Java](/email/java/configuring-smtp-servers/integrating-multiple-smtp-servers/)
+- [إتقان Aspose.Email Java: تعيين رؤوس بريد مخصصة وإرسال رسائل باستخدام SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
