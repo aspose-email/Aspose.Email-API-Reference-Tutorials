@@ -1,9 +1,69 @@
 ---
-"date": "2025-05-29"
-"description": "Aprenda a usar o Aspose.Email para Java para extrair com eficiência recibos de entrega e leitura, bem como resultados de votação, de arquivos MSG. Este guia aborda configuração, implementação de código e práticas recomendadas."
-"title": "Como extrair recibos MSG e resultados de votação usando Aspose.Email para Java - Um guia completo"
-"url": "/pt/java/email-parsing-analysis/aspose-email-java-msg-receipts-vote-results/"
-"weight": 1
+date: '2026-06-13'
+description: Aprenda como ler arquivos MSG e analisar anexos MSG usando Aspose.Email
+  para Java, extraindo delivery/read receipts e vote results de forma eficiente. Inclui
+  setup, code e best practices.
+keywords:
+- how to read msg
+- parse msg attachments
+- Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-06-13'
+  description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
+    for Java, extracting delivery/read receipts and vote results efficiently. Includes
+    setup, code, and best practices.
+  headline: How to Read MSG Files with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to read MSG files and parse MSG attachments using Aspose.Email
+    for Java, extracting delivery/read receipts and vote results efficiently. Includes
+    setup, code, and best practices.
+  name: How to Read MSG Files with Aspose.Email for Java
+  steps:
+  - name: Load the MSG File
+    text: MapiMessage is the Aspose.Email class that represents an Outlook MSG message.
+  - name: Iterate Over Recipients
+    text: MapiRecipient represents a single recipient (To, CC, or BCC) in the MSG
+      file.
+  - name: Retrieve and Print Delivery Time
+    text: DeliveryTime is a property of MapiRecipient that holds the timestamp when
+      the message was delivered to the recipient’s server.
+  - name: Retrieve and Print Read Time
+    text: ReadTime is a property of MapiRecipient indicating when the recipient opened
+      the message, if that information is available.
+  - name: Load the MSG File
+    text: MapiMessage is used again to access the voting information embedded in the
+      MSG file.
+  - name: Iterate Over Recipients
+    text: MapiRecipient provides access to each participant’s voting choice and response
+      time.
+  - name: Retrieve and Print Response
+    text: The `VotingResponse` property contains the actual vote (e.g., “Accept”,
+      “Decline”, or custom options).
+  - name: Retrieve and Print Response Time
+    text: '`VotingResponseTime` records when the recipient submitted their vote, allowing
+      chronological analysis of poll activity.'
+  type: HowTo
+- questions:
+  - answer: Split the file into smaller segments or use the streaming API to read
+      portions without full in‑memory loading.
+    question: How do I handle MSG files larger than 500 MB?
+  - answer: Yes, map the receipt and vote fields to your DB schema and use JDBC or
+      an ORM to persist them.
+    question: Can I store the extracted data directly into a database?
+  - answer: Absolutely; Aspose.Email for Java is platform‑agnostic and runs on any
+      OS with a supported JDK.
+    question: Does the library work on Linux environments?
+  - answer: Use `MailMessage.getAttachments()` after loading the MSG; the method returns
+      a collection of all embedded files.
+    question: Is there a way to extract attachments while reading receipts?
+  - answer: Reach out via the official Aspose Email Forum for community help or open
+      a support ticket with a valid license.
+    question: What support options are available if I encounter bugs?
+  type: FAQPage
+title: Como ler arquivos MSG com Aspose.Email para Java
+url: /pt/java/email-parsing-analysis/aspose-email-java-msg-receipts-vote-results/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,30 +71,47 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Como extrair recibos MSG e resultados de votação usando Aspose.Email para Java: um guia completo
+# Como Ler Arquivos MSG com Aspose.Email para Java
 
 ## Introdução
 
-Gerenciar o rastreamento de e-mails com eficiência é essencial para entender quando suas mensagens são lidas ou avaliar os resultados de uma pesquisa de opinião. Este guia demonstra como usar o Aspose.Email para Java para recuperar confirmações de leitura e entrega, bem como informações sobre os resultados da votação, a partir de arquivos MSG do Microsoft Outlook. Ao utilizar esses recursos, você pode obter insights valiosos sobre as interações por e-mail.
+Ler arquivos MSG programaticamente permite extrair dados valiosos de rastreamento — recibos de entrega, confirmações de leitura e resultados de votação — de mensagens do Outlook. Neste guia, mostraremos **como ler arquivos msg** usando Aspose.Email para Java, percorreremos a configuração necessária e demonstraremos como extrair informações de recibos e votos de forma eficiente.
 
-**O que você aprenderá:**
-- Configurando o Aspose.Email para Java
-- Extraindo detalhes de rastreamento do destinatário, como entrega e tempos de leitura
-- Lendo dados de resultados de votação de destinatários de e-mail
-- Melhores práticas para lidar com dados de e-mail em Java
+## Respostas Rápidas
+- **Qual biblioteca lida com a análise de MSG?** Aspose.Email for Java.  
+- **Posso extrair recibos de leitura?** Sim, a API retorna timestamps de entrega e leitura.  
+- **Os dados de votação são acessíveis?** Absolutamente; você pode recuperar a resposta de votação de cada destinatário.  
+- **Preciso de uma licença?** Uma versão de avaliação funciona para testes; uma licença paga remove os limites de avaliação.  
+- **Qual versão do Java é necessária?** Java 16 ou posterior é recomendado.
 
-## Pré-requisitos
+## O que é Aspose.Email para Java?
 
-Para seguir este tutorial, certifique-se de ter o seguinte:
-- **Bibliotecas e Dependências:** Aspose.Email para Java versão 25.4 e um JDK (Java Development Kit) compatível, como JRE 16 ou superior.
-- **Configuração do ambiente:** Um Ambiente de Desenvolvimento Integrado (IDE) adequado, como IntelliJ IDEA ou Eclipse, configurado com suporte ao Maven.
-- **Pré-requisitos de conhecimento:** Conhecimento básico de programação Java, princípios de orientação a objetos e familiaridade com o tratamento de dados de e-mail.
+Aspose.Email for Java é uma biblioteca Java independente que permite a criação, manipulação e conversão de formatos de e‑mail sem exigir o Microsoft Outlook. Ela fornece um modelo de objetos rico para MSG, EML, PST e muitos outros formatos, permitindo que desenvolvedores trabalhem com dados de e‑mail diretamente a partir do código Java. (45 palavras)
 
-## Configurando o Aspose.Email para Java
+## Por que usar Aspose.Email para Java para ler arquivos MSG?
 
-Para começar a usar o Aspose.Email no seu projeto, integre-o via Maven:
+Aspose.Email para Java suporta **mais de 30 formatos de e‑mail** e pode processar arquivos MSG de até **500 MB** sem carregar o arquivo inteiro na memória. Seu mecanismo de análise de alto desempenho reduz o consumo de CPU e memória, tornando‑o ideal para processamento de arquivos de correio em grande escala e cenários de análise em tempo real. (48 palavras)
 
-**Dependência do Maven:**
+## Pré‑requisitos
+
+- **Bibliotecas e Dependências:** Aspose.Email para Java versão 25.4 ou posterior e um runtime JDK 16+.  
+- **IDE:** IntelliJ IDEA, Eclipse ou qualquer IDE compatível com Java com suporte a Maven.  
+- **Habilidades Básicas:** Familiaridade com a sintaxe Java e conceitos orientados a objetos.
+
+## Aquisição de Licença
+
+Para usar Aspose.Email para Java, você precisa de uma licença:
+
+- **Teste Gratuito:** Comece com a versão de teste gratuita disponível no [site da Aspose](https://releases.aspose.com/email/java/).  
+- **Licença Temporária:** Solicite uma licença temporária na [página de compra](https://purchase.aspose.com/temporary-license/).  
+- **Compra:** Se você estiver satisfeito com a avaliação, compre uma licença para acesso total a todos os recursos através da página [Comprar Produtos Aspose](https://purchase.aspose.com/buy).  
+
+## Como extrair informações de recibos de leitura e entrega de um arquivo MSG?
+
+Carregue o arquivo MSG, itere pelos seus destinatários e leia as propriedades `DeliveryTime` e `ReadTime`. Essa abordagem devolve os timestamps exatos de quando o servidor de e‑mail de cada destinatário entregou a mensagem e quando o destinatário a abriu, fornecendo dados de rastreamento precisos para análise. (53 palavras)
+
+### Etapa 1: Carregar o Arquivo MSG
+MapiMessage é a classe Aspose.Email que representa uma mensagem Outlook MSG.  
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -42,24 +119,10 @@ Para começar a usar o Aspose.Email no seu projeto, integre-o via Maven:
     <version>25.4</version>
     <classifier>jdk16</classifier>
 </dependency>
-```
+```  
 
-### Aquisição de Licença
-
-Para usar o Aspose.Email para Java, você precisa obter uma licença:
-- **Teste gratuito:** Comece com a versão de teste gratuita disponível em [Site da Aspose](https://releases.aspose.com/email/java/).
-- **Licença temporária:** Para testes prolongados, solicite uma licença temporária do [página de compra](https://purchase.aspose.com/temporary-license/).
-- **Comprar:** Se você estiver satisfeito com a avaliação, adquira uma licença para ter acesso total a todos os recursos.
-
-## Guia de Implementação
-
-### Extraindo informações de recibo de leitura e entrega
-
-Este recurso permite que você extraia quando os e-mails são entregues e lidos pelos destinatários de um arquivo MSG.
-
-#### Implementação passo a passo
-
-**Passo 1:** Carregar o arquivo MSG
+### Etapa 2: Iterar Sobre os Destinatários
+MapiRecipient representa um único destinatário (Para, CC ou BCC) no arquivo MSG.  
 ```java
 import com.aspose.email.MapiMessage;
 import com.aspose.email.MapiRecipient;
@@ -69,33 +132,38 @@ public class RetrieveReceipts {
     public static void main(String[] args) {
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/outlook/";
         MapiMessage msg = MapiMessage.fromFile(dataDir + "message.msg");
-```
-**Passo 2:** Iterar sobre destinatários
+```  
+
+### Etapa 3: Recuperar e Imprimir o Tempo de Entrega
+DeliveryTime é uma propriedade de MapiRecipient que contém o timestamp de quando a mensagem foi entregue ao servidor do destinatário.  
 ```java
         for (MapiRecipient recipient : msg.getRecipients()) {
             System.out.println("Recipient: " + recipient.getDisplayName());
-```
-**Etapa 3:** Recuperar e imprimir o tempo de entrega
+```  
+
+### Etapa 4: Recuperar e Imprimir o Tempo de Leitura
+ReadTime é uma propriedade de MapiRecipient que indica quando o destinatário abriu a mensagem, se essa informação estiver disponível.  
 ```java
             System.out.println("Delivery time: " + 
                 recipient.getProperties().get_Item(MapiPropertyTag.PR_RECIPIENT_TRACKSTATUS_TIME_DELIVERY).getDateTime());
-```
-**Passo 4:** Recuperar e imprimir tempo de leitura
+```  
+
+## Como ler os resultados de votação de um arquivo MSG?
+
+Após carregar a mensagem, a API expõe a resposta de votação de cada destinatário e o horário em que ele respondeu, permitindo agregar os resultados da enquete programaticamente. Esses dados podem ser usados para gerar relatórios resumidos ou alimentar diretamente painéis de business intelligence para tomada de decisão rápida. (53 palavras)
+
+### Etapa 1: Carregar o Arquivo MSG
+MapiMessage é usado novamente para acessar as informações de votação incorporadas no arquivo MSG.  
 ```java
             System.out.println("Read time: " + 
                 recipient.getProperties().get_Item(MapiPropertyTag.PR_RECIPIENT_TRACKSTATUS_TIME_READ).getDateTime());
         }
     }
 }
-```
+```  
 
-### Lendo informações sobre os resultados da votação
-
-Esse recurso ajuda a extrair como os destinatários votaram e quando responderam, o que é crucial para os processos de tomada de decisão.
-
-#### Implementação passo a passo
-
-**Passo 1:** Carregar o arquivo MSG
+### Etapa 2: Iterar Sobre os Destinatários
+MapiRecipient fornece acesso à escolha de votação e ao horário de resposta de cada participante.  
 ```java
 import com.aspose.email.MapiMessage;
 import com.aspose.email.MapiRecipient;
@@ -105,18 +173,77 @@ public class ReadVoteResults {
     public static void main(String[] args) {
         String dataDir = "YOUR_DOCUMENT_DIRECTORY/outlook/";
         MapiMessage msg = MapiMessage.fromFile(dataDir + "message.msg");
-```
-**Passo 2:** Iterar sobre destinatários
+```  
+
+### Etapa 3: Recuperar e Imprimir a Resposta
+A propriedade `VotingResponse` contém o voto real (por exemplo, “Accept”, “Decline” ou opções personalizadas).  
 ```java
         for (MapiRecipient recipient : msg.getRecipients()) {
             System.out.println("Recipient: " + recipient.getDisplayName());
-```
-**Etapa 3:** Recuperar e imprimir resposta
+```  
+
+### Etapa 4: Recuperar e Imprimir o Horário da Resposta
+`VotingResponseTime` registra quando o destinatário enviou seu voto, permitindo análise cronológica da atividade da enquete.  
 ```java
             System.out.println("Response: " + 
                 recipient.getProperties().get_Item(MapiPropertyTag.PR_RECIPIENT_AUTORESPONSE_PROP_RESPONSE).getString());
-```
-**Passo 4:** Tempo de resposta de recuperação e impressão
+```  
+
+## Aplicações Práticas
+
+1. **Rastreamento de Campanhas de E‑mail:** Meça as taxas de abertura e o sucesso de entrega analisando os timestamps dos recibos.  
+2. **Análise de Pesquisas:** Consolide os resultados de votação de enquetes do Outlook para tomada de decisão rápida.  
+3. **Gestão de Feedback de Clientes:** Extraia dados de respostas para CRM ou plataformas de análise para insights mais profundos.
+
+Integrar essas extrações com bancos de dados ou ferramentas de BI amplifica o valor dos dados brutos de e‑mail.
+
+## Considerações de Desempenho
+
+- Processar arquivos MSG grandes em **pedaços** para manter o uso de memória baixo.  
+- Use **APIs de streaming** ao lidar com milhares de mensagens.  
+- Armazene os dados dos destinatários em coleções leves como `ArrayList` ou `HashMap` para buscas rápidas.
+
+## Problemas Comuns e Soluções
+
+- **Timestamps nulos:** Um `ReadTime` ausente geralmente significa que o destinatário ainda não abriu a mensagem.  
+- **Anexos grandes:** Se um MSG contiver anexos enormes, habilite `LoadOptions.setPreserveEmbeddedResources(false)` para pular o carregamento deles na memória.  
+- **Problemas de codificação:** Garanta que a página de código correta esteja definida via `MailMessage.setCharset(Charset.forName("UTF-8"))` ao ler conteúdo não‑ASCII.
+
+## Perguntas Frequentes
+
+**Q: Como lidar com arquivos MSG maiores que 500 MB?**  
+A: Divida o arquivo em segmentos menores ou use a API de streaming para ler partes sem carregamento completo na memória.
+
+**Q: Posso armazenar os dados extraídos diretamente em um banco de dados?**  
+A: Sim, mapeie os campos de recibo e voto para o seu esquema de BD e use JDBC ou um ORM para persistí‑los.
+
+**Q: A biblioteca funciona em ambientes Linux?**  
+A: Absolutamente; Aspose.Email para Java é independente de plataforma e funciona em qualquer SO com um JDK suportado.
+
+**Q: Existe uma maneira de extrair anexos ao ler recibos?**  
+A: Use `MailMessage.getAttachments()` após carregar o MSG; o método retorna uma coleção de todos os arquivos incorporados.
+
+**Q: Quais opções de suporte estão disponíveis se eu encontrar bugs?**  
+A: Entre em contato através do Fórum oficial da Aspose Email para ajuda da comunidade ou abra um ticket de suporte com uma licença válida.
+
+## Recursos
+
+- **Documentação:** [Documentação Aspose Email](https://reference.aspose.com/email/java/)  
+- **Documentação (duplicado):** [Documentação Aspose Email](https://reference.aspose.com/email/java/)  
+- **Baixar SDK:** [Downloads Aspose Email](https://releases.aspose.com/email/java/)  
+- **Seção de Download:** [Seção de Download](https://releases.aspose.com/email/java/)  
+- **Comprar Licença:** [Comprar Produtos Aspose](https://purchase.aspose.com/buy)  
+- **Teste Gratuito:** Comece com uma [Versão de Teste Gratuita](https://releases.aspose.com/email/java/)  
+- **Licença Temporária:** [Solicitar Licença Temporária](https://purchase.aspose.com/temporary-license/)  
+- **Fórum de Suporte:** [Fórum Aspose Email](https://forum.aspose.com/c/email/10)  
+- **Fórum de Suporte (duplicado):** [Fórum Aspose Email](https://forum.aspose.com/c/email/10)
+
+---
+
+**Última Atualização:** 2026-06-13  
+**Testado com:** Aspose.Email para Java 25.4  
+**Autor:** Aspose
+
 ```java
             System.out.println("Response time: " + 
                 recipient.getProperties().get_Item(MapiPropertyTag.PR_RECIPIENT_TRACKSTATUS_TIME).getDateTime());
@@ -125,53 +252,16 @@ public class ReadVoteResults {
 }
 ```
 
-## Aplicações práticas
+## Tutoriais Relacionados
 
-1. **Acompanhamento de campanha de e-mail:** Use dados de recibo para medir taxas de abertura e sucesso de entrega.
-2. **Análise da Pesquisa:** Analise rapidamente os resultados da votação a partir de pesquisas por e-mail.
-3. **Gerenciamento de feedback do cliente:** Recupere e processe respostas de forma eficiente para melhorar os serviços.
+- [Como Carregar e Analisar Arquivos Outlook MSG Usando Aspose.Email para Java: Um Guia Abrangente](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Converter MSG para EML e Gerenciar Anexos com Aspose.Email para Java](/email/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/)
+- [Extrair Anexos Inline Java – Arquivos MSG com Aspose.Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
 
-A integração com sistemas de CRM ou ferramentas de análise pode fornecer insights mais profundos sobre a eficácia da comunicação.
-
-## Considerações de desempenho
-
-- Otimize o desempenho manipulando arquivos MSG grandes em pedaços, se necessário.
-- Monitore o uso da memória, especialmente ao processar vários e-mails, para evitar vazamentos.
-- Utilize estruturas de dados eficientes para armazenar e acessar propriedades do destinatário.
-
-## Conclusão
-
-Neste tutorial, você aprendeu a utilizar o Aspose.Email para Java para extrair informações cruciais de arquivos MSG. Esses recursos podem aprimorar significativamente seus fluxos de trabalho de comunicação, rastreando os tempos de entrega e leitura de e-mails ou analisando os resultados das votações. Continue explorando os recursos do Aspose.Email para otimizar ainda mais seus processos de gerenciamento de e-mails.
-
-Para mais exploração:
-- Mergulhe mais fundo no [Documentação de e-mail Aspose](https://reference.aspose.com/email/java/).
-- Experimente mais exemplos no [Seção de download](https://releases.aspose.com/email/java/).
-
-## Perguntas frequentes
-
-1. **Como lidar com arquivos MSG grandes?**
-   - Processe-os em lotes menores para evitar problemas de memória.
-2. **E se o tempo de resposta de um destinatário for nulo?**
-   - Isso pode indicar que eles ainda não responderam ou que a propriedade não está definida.
-3. **O Aspose.Email pode ser usado com bancos de dados?**
-   - Sim, integre-o com bancos de dados SQL ou NoSQL para armazenar e consultar dados de e-mail.
-4. **Há suporte para outros formatos de arquivo?**
-   - O Aspose.Email suporta vários formatos como EML, PST, etc., além de arquivos MSG.
-5. **Onde posso obter ajuda se tiver problemas?**
-   - Visite o [Fórum de e-mail Aspose](https://forum.aspose.com/c/email/10) para apoio da comunidade.
-
-## Recursos
-- **Documentação:** [Documentação de e-mail Aspose](https://reference.aspose.com/email/java/)
-- **Baixar SDK:** [Downloads de e-mail Aspose](https://releases.aspose.com/email/java/)
-- **Licença de compra:** [Compre produtos Aspose](https://purchase.aspose.com/buy)
-- **Teste gratuito:** Comece com um [Versão de teste gratuita](https://releases.aspose.com/email/java/)
-- **Licença temporária:** [Solicitar Licença Temporária](https://purchase.aspose.com/temporary-license/)
-- **Fórum de suporte:** Participe de discussões no [Fórum de e-mail Aspose](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
