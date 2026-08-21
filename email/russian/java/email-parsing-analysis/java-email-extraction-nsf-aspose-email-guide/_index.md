@@ -71,10 +71,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Как извлечь файлы NSF с помощью Aspose.Email для Java
 
 ## Введение
@@ -269,7 +268,7 @@ import com.aspose.email.*;
 - [Бесплатная пробная версия и временная лицензия](https://releases.aspose.com/email/java/)
 - [Форум поддержки](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Связанные руководства
 
@@ -277,9 +276,9 @@ import com.aspose.email.*;
 - [Как извлечь письма из архивов Zimbra TGZ с помощью Aspose.Email для Java: Подробное руководство](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Извлечение вложений из писем Java — используя Aspose.Email для PST файлов – Пошаговое руководство](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

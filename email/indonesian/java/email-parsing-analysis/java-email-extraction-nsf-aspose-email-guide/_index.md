@@ -72,10 +72,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Cara Mengekstrak File NSF Menggunakan Aspose.Email untuk Java
 
 ## Pendahuluan
@@ -270,7 +269,7 @@ Anda kini memiliki peta jalan lengkap dan siap produksi untuk **how to extract n
 - [Uji Coba Gratis dan Lisensi Sementara](https://releases.aspose.com/email/java/)
 - [Forum Dukungan](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Tutorial Terkait
 
@@ -278,9 +277,9 @@ Anda kini memiliki peta jalan lengkap dan siap produksi untuk **how to extract n
 - [Cara Mengekstrak Email dari Arsip Zimbra TGZ Menggunakan Aspose.Email untuk Java: Panduan Komprehensif](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Ekstrak Lampiran Email Java - Menggunakan Aspose.Email untuk File PST – Panduan Langkah demi Langkah](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

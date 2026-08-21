@@ -69,11 +69,15 @@ url: /fr/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Comment vérifier le statut de rebond avec Aspose.Email pour Java
 
 ## Introduction
@@ -286,7 +290,7 @@ Prêt à implémenter ? Commencez par la dépendance Maven, chargez un e‑mai
 **Testé avec :** Aspose.Email for Java 24.12  
 **Auteur :** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## Tutoriels associés
 
@@ -294,9 +298,9 @@ Prêt à implémenter ? Commencez par la dépendance Maven, chargez un e‑mai
 - [Tutoriels d’analyse et de parsing d’e‑mail pour Aspose.Email Java](/email/java/email-parsing-analysis/)
 - [Configuration IMAP Aspose.Email Java : guide de configuration sécurisée et d’utilisation pour les développeurs](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

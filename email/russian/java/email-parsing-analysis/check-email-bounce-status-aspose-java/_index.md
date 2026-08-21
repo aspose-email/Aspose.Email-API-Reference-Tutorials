@@ -69,11 +69,15 @@ url: /ru/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Как проверить статус отскока с Aspose.Email для Java
 
 ## Введение
@@ -289,7 +293,7 @@ A: Да, Aspose.Email платформенно‑независима и без 
 **Tested With:** Aspose.Email for Java 24.12  
 **Author:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## Связанные руководства
 
@@ -297,9 +301,9 @@ A: Да, Aspose.Email платформенно‑независима и без 
 - [Учебники по разбору и анализу email для Aspose.Email Java](/email/java/email-parsing-analysis/)
 - [Настройка Aspose.Email Java IMAP: безопасная конфигурация и руководство для разработчиков](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

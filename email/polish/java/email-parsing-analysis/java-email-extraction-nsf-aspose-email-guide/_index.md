@@ -72,10 +72,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Jak wyodrębnić pliki NSF przy użyciu Aspose.Email dla Javy
 
 ## Wprowadzenie
@@ -270,7 +269,7 @@ Masz teraz kompletną, gotową do produkcji mapę drogową dla **how to extract 
 - [Bezpłatna wersja próbna i tymczasowa licencja](https://releases.aspose.com/email/java/)
 - [Forum wsparcia](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Powiązane samouczki
 
@@ -278,9 +277,9 @@ Masz teraz kompletną, gotową do produkcji mapę drogową dla **how to extract 
 - [Jak wyodrębnić e‑maile z archiwów Zimbra TGZ przy użyciu Aspose.Email dla Javy: Kompleksowy przewodnik](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Wyodrębnianie załączników e‑mail w Javie – przy użyciu Aspose.Email dla plików PST – Przewodnik krok po kroku](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

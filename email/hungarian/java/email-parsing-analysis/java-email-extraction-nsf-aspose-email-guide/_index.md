@@ -73,10 +73,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Hogyan lehet NSF fájlokat kinyerni az Aspose.Email for Java segítségével
 
 ## Bevezetés
@@ -267,7 +266,7 @@ Most már rendelkezik egy teljes, termelésre kész útmutatóval a **how to ext
 - [Ingyenes próba és ideiglenes licenc](https://releases.aspose.com/email/java/)
 - [Támogatási fórum](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Kapcsolódó oktatóanyagok
 
@@ -275,9 +274,9 @@ Most már rendelkezik egy teljes, termelésre kész útmutatóval a **how to ext
 - [Hogyan nyerjen ki e‑maileket Zimbra TGZ archívumokból az Aspose.Email for Java segítségével: Átfogó útmutató](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [E‑mail mellékletek kinyerése Java - Aspose.Email PST fájlok használatával – Lépésről‑lépésre útmutató](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

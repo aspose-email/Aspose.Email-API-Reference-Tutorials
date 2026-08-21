@@ -71,10 +71,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email for Java का उपयोग करके NSF फ़ाइलें निकालने का तरीका
 
 ## परिचय
@@ -271,7 +270,7 @@ A: `.lic` फ़ाइल को अपने क्लासपाथ में
 - [फ़्री ट्रायल और टेम्पररी लाइसेंस](https://releases.aspose.com/email/java/)
 - [सपोर्ट फ़ोरम](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## संबंधित ट्यूटोरियल
 
@@ -279,9 +278,9 @@ A: `.lic` फ़ाइल को अपने क्लासपाथ में
 - [Aspose.Email for Java का उपयोग करके Zimbra TGZ आर्काइव से ईमेल निकालने का तरीका: एक व्यापक गाइड](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Aspose.Email for PST फ़ाइलों का उपयोग करके ईमेल अटैचमेंट्स निकालें - चरण‑बद्ध गाइड](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

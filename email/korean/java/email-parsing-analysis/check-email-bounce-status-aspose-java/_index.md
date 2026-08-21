@@ -68,11 +68,15 @@ url: /ko/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Aspose.Email for Java를 사용한 반송 상태 확인 방법
 
 ## 소개
@@ -289,7 +293,7 @@ A: 네, Aspose.Email은 플랫폼에 구애받지 않으며 Java 16+가 설치
 **테스트 환경:** Aspose.Email for Java 24.12  
 **작성자:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## 관련 튜토리얼
 
@@ -297,9 +301,9 @@ A: 네, Aspose.Email은 플랫폼에 구애받지 않으며 Java 16+가 설치
 - [Aspose.Email Java용 이메일 파싱 및 분석 튜토리얼](/email/java/email-parsing-analysis/)
 - [Aspose.Email Java IMAP 설정: 개발자를 위한 보안 구성 및 사용 가이드](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

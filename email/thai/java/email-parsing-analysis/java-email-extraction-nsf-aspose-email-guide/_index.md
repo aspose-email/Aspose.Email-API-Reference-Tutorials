@@ -71,10 +71,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # วิธีการสกัดไฟล์ NSF ด้วย Aspose.Email สำหรับ Java
 
 ## บทนำ
@@ -267,7 +266,7 @@ A: วางไฟล์ `.lic` ใน classpath ของคุณและเ�
 - [ทดลองใช้ฟรีและใบอนุญาตชั่วคราว](https://releases.aspose.com/email/java/)
 - [ฟอรั่มสนับสนุน](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## บทแนะนำที่เกี่ยวข้อง
 
@@ -275,9 +274,9 @@ A: วางไฟล์ `.lic` ใน classpath ของคุณและเ�
 - [วิธีสกัดอีเมลจากไฟล์ Zimbra TGZ ด้วย Aspose.Email สำหรับ Java: คู่มือเชิงลึก](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [สกัดไฟล์แนบอีเมล Java - ใช้ Aspose.Email สำหรับไฟล์ PST – คู่มือขั้นตอนต่อขั้นตอน](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

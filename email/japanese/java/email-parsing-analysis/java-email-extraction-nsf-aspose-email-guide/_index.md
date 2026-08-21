@@ -70,10 +70,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Aspose.Email for Java を使用した NSF ファイルの抽出方法
 
 ## はじめに
@@ -270,7 +269,7 @@ Aspose.Email で NSF ファイルを読み取ることで、さまざまな実�
 - [無料トライアルと一時ライセンス](https://releases.aspose.com/email/java/)
 - [サポートフォーラム](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## 関連チュートリアル
 
@@ -278,9 +277,9 @@ Aspose.Email で NSF ファイルを読み取ることで、さまざまな実�
 - [Aspose.Email for Java を使用した Zimbra TGZ アーカイブからのメール抽出方法：包括的ガイド](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Aspose.Email for PST ファイルを使用したメール添付ファイル抽出（Java） - ステップバイステップガイド](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

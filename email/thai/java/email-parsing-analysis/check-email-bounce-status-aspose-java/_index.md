@@ -69,11 +69,15 @@ url: /th/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # วิธีตรวจสอบสถานะการ Bounce ด้วย Aspose.Email สำหรับ Java
 
 ## บทนำ
@@ -281,7 +285,7 @@ A: ใช่, Aspose.Email เป็นแบบ platform‑agnostic และ�
 **Tested With:** Aspose.Email for Java 24.12  
 **Author:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## บทเรียนที่เกี่ยวข้อง
 
@@ -289,9 +293,9 @@ A: ใช่, Aspose.Email เป็นแบบ platform‑agnostic และ�
 - [บทเรียนการแยกวิเคราะห์อีเมลสำหรับ Aspose.Email Java](/email/java/email-parsing-analysis/)
 - [การตั้งค่า Aspose.Email Java IMAP: คู่มือการกำหนดค่าและการใช้งานอย่างปลอดภัยสำหรับนักพัฒนา](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

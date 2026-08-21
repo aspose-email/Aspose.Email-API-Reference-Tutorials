@@ -71,10 +71,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Jak extrahovat soubory NSF pomocí Aspose.Email pro Java
 
 ## Úvod
@@ -267,7 +266,7 @@ Nyní máte kompletní, produkčně připravenou roadmapu pro **how to extract n
 - [Bezplatná zkušební verze a dočasná licence](https://releases.aspose.com/email/java/)
 - [Fórum podpory](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Související tutoriály
 
@@ -275,9 +274,9 @@ Nyní máte kompletní, produkčně připravenou roadmapu pro **how to extract n
 - [Jak extrahovat e‑maily ze Zimbra TGZ archivů pomocí Aspose.Email pro Java: Komplexní průvodce](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Extrahovat přílohy e‑mailů v Javě – Použití Aspose.Email pro PST soubory – Průvodce krok za krokem](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

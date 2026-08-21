@@ -68,11 +68,15 @@ url: /ja/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Aspose.Email for Java を使用したバウンスステータスの確認方法
 
 ## はじめに
@@ -292,7 +296,7 @@ A: はい、Aspose.Email はプラットフォームに依存せず、Java 16+
 **テスト環境:** Aspose.Email for Java 24.12  
 **作者:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## 関連チュートリアル
 
@@ -300,9 +304,9 @@ A: はい、Aspose.Email はプラットフォームに依存せず、Java 16+
 - [Aspose.Email Java 用メール解析チュートリアル](/email/java/email-parsing-analysis/)
 - [Aspose.Email Java IMAP 設定：開発者向け安全な構成と使用ガイド](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

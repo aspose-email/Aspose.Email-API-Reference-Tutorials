@@ -69,11 +69,15 @@ url: /vi/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Cách Kiểm Tra Trạng Thái Bounce với Aspose.Email cho Java
 
 ## Giới thiệu
@@ -285,7 +289,7 @@ Sẵn sàng triển khai? Bắt đầu với phụ thuộc Maven, tải một em
 **Được kiểm tra với:** Aspose.Email for Java 24.12  
 **Tác giả:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## Hướng dẫn liên quan
 
@@ -293,9 +297,9 @@ Sẵn sàng triển khai? Bắt đầu với phụ thuộc Maven, tải một em
 - [Hướng dẫn phân tích và xử lý email cho Aspose.Email Java](/email/java/email-parsing-analysis/)
 - [Cài đặt Aspose.Email Java IMAP: Hướng dẫn cấu hình bảo mật và sử dụng cho nhà phát triển](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

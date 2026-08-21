@@ -68,11 +68,15 @@ url: /zh/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # 如何使用 Aspose.Email for Java 检查退信状态
 
 ## 介绍
@@ -289,7 +293,7 @@ A: 能，Aspose.Email 与平台无关，可在运行 Java 16+ 的 Docker 容�
 **测试环境：** Aspose.Email for Java 24.12  
 **作者：** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## 相关教程
 
@@ -297,9 +301,9 @@ A: 能，Aspose.Email 与平台无关，可在运行 Java 16+ 的 Docker 容�
 - [Email Parsing and Analysis Tutorials for Aspose.Email Java](/email/java/email-parsing-analysis/)
 - [Aspose.Email Java IMAP Setup: Secure Configuration and Usage Guide for Developers](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

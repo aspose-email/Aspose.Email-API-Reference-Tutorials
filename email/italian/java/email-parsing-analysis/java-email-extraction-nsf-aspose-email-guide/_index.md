@@ -72,10 +72,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Come Estrarre File NSF Utilizzando Aspose.Email per Java
 
 ## Introduzione
@@ -268,7 +267,7 @@ Ora disponi di una roadmap completa e pronta per la produzione per **how to extr
 - [Prova Gratuita e Licenza Temporanea](https://releases.aspose.com/email/java/)
 - [Forum di Supporto](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Tutorial Correlati
 
@@ -276,9 +275,9 @@ Ora disponi di una roadmap completa e pronta per la produzione per **how to extr
 - [Come Estrarre Email da Archivi Zimbra TGZ Utilizzando Aspose.Email per Java: Guida Completa](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Estrarre Allegati Email Java - Utilizzando Aspose.Email per File PST – Guida Passo‑Passo](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

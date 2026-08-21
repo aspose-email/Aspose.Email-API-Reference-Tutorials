@@ -72,10 +72,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Hur man extraherar NSF-filer med Aspose.Email för Java
 
 ## Introduktion
@@ -268,7 +267,7 @@ Du har nu en komplett, produktionsklar färdplan för **how to extract nsf**‑f
 - [Gratis provversion och tillfällig licens](https://releases.aspose.com/email/java/)
 - [Supportforum](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Relaterade handledningar
 
@@ -276,9 +275,9 @@ Du har nu en komplett, produktionsklar färdplan för **how to extract nsf**‑f
 - [Hur man extraherar e‑post från Zimbra TGZ‑arkiv med Aspose.Email för Java: En omfattande guide](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Extrahera e‑postbilagor Java – Använd Aspose.Email för PST‑filer – En steg‑för‑steg‑guide](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -72,10 +72,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # Cách Trích Xuất Tệp NSF Sử Dụng Aspose.Email cho Java
 
 ## Giới thiệu
@@ -270,7 +269,7 @@ Bạn hiện đã có một lộ trình hoàn chỉnh, sẵn sàng cho sản xu�
 - [Dùng thử miễn phí và Giấy phép tạm thời](https://releases.aspose.com/email/java/)
 - [Diễn đàn hỗ trợ](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Hướng dẫn liên quan
 
@@ -278,9 +277,9 @@ Bạn hiện đã có một lộ trình hoàn chỉnh, sẵn sàng cho sản xu�
 - [Cách Trích Xuất Email từ Lưu Trữ Zimbra TGZ Sử Dụng Aspose.Email cho Java: Hướng Dẫn Toàn Diện](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Trích Xuất Tệp Đính Kèm Email Java - Sử Dụng Aspose.Email cho Tệp PST – Hướng Dẫn Từng Bước](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

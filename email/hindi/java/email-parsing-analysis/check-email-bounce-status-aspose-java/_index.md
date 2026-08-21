@@ -69,11 +69,15 @@ url: /hi/java/email-parsing-analysis/check-email-bounce-status-aspose-java/
 weight: 1
 ---
 
-{{< blocks/products/products-backtop-button >}}
-
 {{< blocks/products/pf/main-wrap-class >}}
-
+{{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
+
+
 # Aspose.Email for Java के साथ बाउंस स्टेटस कैसे जांचें
 
 ## परिचय
@@ -276,7 +280,7 @@ BounceResult result = mail.checkBounced();
 **परीक्षित संस्करण:** Aspose.Email for Java 24.12  
 **लेखक:** Aspose  
 
-{{< blocks/products/pf/main-container >}}
+
 
 ## संबंधित ट्यूटोरियल
 
@@ -284,9 +288,9 @@ BounceResult result = mail.checkBounced();
 - [Aspose.Email Java के लिए ईमेल पार्सिंग और विश्लेषण ट्यूटोरियल](/email/java/email-parsing-analysis/)
 - [Aspose.Email Java IMAP सेटअप: डेवलपर्स के लिए सुरक्षित कॉन्फ़िगरेशन और उपयोग गाइड](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

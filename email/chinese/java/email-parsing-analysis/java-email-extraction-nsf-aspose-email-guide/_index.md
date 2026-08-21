@@ -71,10 +71,9 @@ weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # 如何使用 Aspose.Email for Java 提取 NSF 文件
 
 ## 介绍
@@ -269,7 +268,7 @@ A: 将 `.lic` 文件放入类路径，并按前述方式调用 `License.setLicen
 - [免费试用和临时许可证](https://releases.aspose.com/email/java/)
 - [支持论坛](https://forum.aspose.com/c/email/10)
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## 相关教程
 
@@ -277,9 +276,9 @@ A: 将 `.lic` 文件放入类路径，并按前述方式调用 `License.setLicen
 - [如何使用 Aspose.Email for Java 从 Zimbra TGZ 存档中提取电子邮件：综合指南](/email/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java/)
 - [Java 提取电子邮件附件 - 使用 Aspose.Email 处理 PST 文件 – 步骤指南](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
