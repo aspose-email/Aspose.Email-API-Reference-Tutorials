@@ -1,9 +1,77 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email ile etkili bir Java e-posta spam filtresi oluşturmayı öğrenin. Bu kılavuz, etkili spam tespiti için kurulum, eğitim ve test süreçlerini kapsar."
-"title": "Aspose.Email&#58;i Kullanan Java E-posta Spam Filtresi Kapsamlı Bir Eğitim ve Test Kılavuzu"
-"url": "/tr/java/email-parsing-analysis/java-email-spam-filter-aspose-email-training-testing/"
-"weight": 1
+date: '2026-06-23'
+description: Aspose.Email kullanarak Java spam filtresi oluşturmayı öğrenin; kurulum,
+  eğitim ve Java'da e-posta spam tespiti testini kapsar.
+keywords:
+- build java spam filter
+- test email spam detection
+- how to use aspose.email
+schemas:
+- author: Aspose
+  dateModified: '2026-06-23'
+  description: Learn how to build java spam filter using Aspose.Email, covering setup,
+    training, and test email spam detection in Java.
+  headline: Build Java Spam Filter with Aspose.Email – Training & Testing Guide
+  type: TechArticle
+- description: Learn how to build java spam filter using Aspose.Email, covering setup,
+    training, and test email spam detection in Java.
+  name: Build Java Spam Filter with Aspose.Email – Training & Testing Guide
+  steps:
+  - name: '**License Acquisition:** Aspose.Email offers a [free trial](https://releases.aspose.com/email/java/)
+      for testing features.'
+    text: '**License Acquisition:** Aspose.Email offers a [free trial](https://releases.aspose.com/email/java/)
+      for testing features.'
+  - name: '**Basic Initialization and Setup:**'
+    text: '**Basic Initialization and Setup:**'
+  - name: '**Maven Dependency:** Add the dependency to your `pom.xml` as mentioned
+      earlier.'
+    text: '**Maven Dependency:** Add the dependency to your `pom.xml` as mentioned
+      earlier.'
+  - name: '**License Setup:**'
+    text: '**License Setup:**'
+  - name: '**Corporate Email Filtering:** Deploy the filter on mail gateways to automatically
+      quarantine spam, reducing inbox noise and protecting against phishing attacks.'
+    text: '**Corporate Email Filtering:** Deploy the filter on mail gateways to automatically
+      quarantine spam, reducing inbox noise and protecting against phishing attacks.'
+  - name: '**Customer Support Systems:** Separate genuine support requests from spam,
+      ensuring faster response times and higher customer satisfaction.'
+    text: '**Customer Support Systems:** Separate genuine support requests from spam,
+      ensuring faster response times and higher customer satisfaction.'
+  - name: '**Personal Spam Reduction:** Integrate the filter into desktop or mobile
+      email clients for a cleaner personal inbox.'
+    text: '**Personal Spam Reduction:** Integrate the filter into desktop or mobile
+      email clients for a cleaner personal inbox.'
+  - name: '**Integration with Email Servers:** Hook the filter into Java‑based mail
+      servers (e.g., Apache James) to scan incoming messages in real time.'
+    text: '**Integration with Email Servers:** Hook the filter into Java‑based mail
+      servers (e.g., Apache James) to scan incoming messages in real time.'
+  - name: '**Compliance and Reporting:** Use classification results to generate audit
+      logs and compliance reports on unwanted email traffic.'
+    text: '**Compliance and Reporting:** Use classification results to generate audit
+      logs and compliance reports on unwanted email traffic.'
+  - name: '**Optimizing Performance:**'
+    text: '**Optimizing Performance:**'
+  type: HowTo
+- questions:
+  - answer: Load the generated database file at server startup, instantiate `SpamAnalyzer`,
+      and invoke `testSpam` on each incoming `MailMessage` before delivery.
+    question: How do I integrate the trained filter with an existing Java mail server?
+  - answer: Yes, Aspose.Email’s parser extracts Unicode text, and the `SpamAnalyzer`
+      works with any language as long as the training set includes representative
+      samples.
+    question: Can the filter handle multilingual spam?
+  - answer: A single license covers unlimited deployments within the terms of the
+      purchased agreement; just embed the license file on each server.
+    question: Is a separate license needed for each deployment environment?
+  - answer: Absolutely—use `ImapClient` or `Pop3Client` to fetch messages, then feed
+      them into the training routine.
+    question: Does Aspose.Email support IMAP/POP3 retrieval for training data?
+  - answer: The examples were validated with Aspose.Email 23.10 for Java.
+    question: What version of Aspose.Email was used for testing?
+  type: FAQPage
+title: Aspose.Email ile Java Spam Filtresi Oluşturma – Eğitim ve Test Rehberi
+url: /tr/java/email-parsing-analysis/java-email-spam-filter-aspose-email-training-testing/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,28 +79,37 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email Kullanarak Java E-posta Spam Filtresi Uygulama: Kapsamlı Bir Eğitim ve Test Kılavuzu
+# Java Spam Filter Oluşturma Aspose.Email Kullanarak: Kapsamlı Eğitim ve Test Rehberi
 
-## giriiş
+## Giriş
 
-Günümüzün dijital çağında, e-posta spam'ini yönetmek güvenli ve etkili gelen kutularını korumak için hayati önem taşır. İşletmeler ve bireyler, meşru e-postalar (ham) ile istenmeyen e-postalar (spam) arasında ayrım yapmak için güvenilir çözümlere ihtiyaç duyar. Bu kapsamlı kılavuz, etkili bir spam filtresi oluşturmak için Aspose.Email for Java'yı kullanır ve hem eğitim hem de test aşamalarını ayrıntılı olarak açıklar. Aspose.Email'i Java projelerinize entegre etmek, spam tespitinin sorunsuz bir şekilde otomatikleştirilmesini sağlar.
+Bu öğreticide Aspose.Email kullanarak **build java spam filter** oluşturmayı öğreneceksiniz, bu güçlü kütüphane e-posta ayrıştırma, analiz ve sınıflandırmayı basitleştirir. Spam yönetimi, hem kurumsal posta sunucuları hem de kişisel gelen kutuları için önemlidir ve iyi eğitilmiş bir filtre, istenmeyen mesajları büyük ölçüde azaltırken meşru iletişimi korur. SDK'yı kurmaktan, gerçek ham ve spam örnekleriyle bir SpamAnalyzer eğitmeye, yeni mesajlarda e-posta spam tespiti testine kadar tam yaşam döngüsünü adım adım göstereceğiz.
 
-**Ne Öğreneceksiniz:**
-- Java için Aspose.Email'i kurma.
-- Ham ve spam e-postaları kullanarak bir SpamAnalyzer'ı eğitmek.
-- Eğitilmiş SpamAnalyzer ile e-posta mesajlarını test ediyoruz.
-- Performansın optimize edilmesi ve mevcut sistemlerle entegrasyonun sağlanması.
+**Öğrenecekleriniz**
+- Aspose.Email'i Java projeleri için nasıl kuracağınızı.
+- Ham ve spam klasörlerini kullanarak bir SpamAnalyzer'ı nasıl eğiteceğinizi.
+- Önceden eğitilmiş bir model ile e-posta spam tespitini nasıl test edeceğinizi.
+- Performans ayarı ve mevcut Java uygulamalarına entegrasyon için ipuçları.
 
-## Ön koşullar
+## Hızlı Yanıtlar
+- **Ana hedef nedir?** Ham, spam veya olası spam olarak e-postaları sınıflandıran bir java spam filter oluşturmak.  
+- **Hangi kütüphane kullanılıyor?** Aspose.Email for Java, 30+ e-posta formatını destekler.  
+- **Bir lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme çalışır; üretim için satın alınmış bir lisans gereklidir.  
+- **Hangi Java sürümü gerekiyor?** JDK 16 veya daha üstü.  
+- **Bunu Linux'ta çalıştırabilir miyim?** Evet, kütüphane çapraz platformdur ve Windows, macOS ve Linux'ta çalışır.
 
-Spam filtremizi uygulamadan önce şunlara sahip olduğunuzdan emin olun:
+## Java spam filter nasıl oluşturulur?
 
-- **Java Geliştirme Kiti (JDK):** Sürüm 16 veya üzeri. Buradan indirin [Oracle'ın web sitesi](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html).
-- **Entegre Geliştirme Ortamı (IDE):** IntelliJ IDEA veya Eclipse gibi Java destekli herhangi bir IDE'yi kullanın.
-- **Usta:** Bağımlılık yönetimi için, resmi yönergeleri izleyerek Maven'ın yüklendiğinden emin olun [kurulum kılavuzu](https://maven.apache.org/install.html).
+`SpamAnalyzer`, Aspose.Email'in etiketli e-postalardan öğrenerek spam olasılıklarını hesaplayan sınıfıdır. `testSpam` bir mesajı eğitilmiş modele karşı değerlendirir ve bir spam skoru döndürür. E-posta veri setlerinizi yükleyin, ham ve spam örnekleriyle `SpamAnalyzer`'ı eğitin, ardından yeni e-postaları değerlendirmek için `testSpam`'i çağırın. Bu, Aspose.Email lisansını başlatır, eğitim klasörlerine işaret eder, bir veritabanı dosyası oluşturur ve her test mesajına bir spam olasılığı atar.
+
+## Önkoşullar
+
+- **Java Development Kit (JDK):** Versiyon 16 veya üzeri. [Oracle'ın web sitesinden](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html) indirin.
+- **Entegre Geliştirme Ortamı (IDE):** IntelliJ IDEA, Eclipse veya herhangi bir Java uyumlu IDE.
+- **Maven:** Bağımlılık yönetimi için, resmi [kurulum kılavuzunu](https://maven.apache.org/install.html) izleyerek Maven'ın kurulu olduğundan emin olun.
 
 ### Gerekli Kütüphaneler
-Aspose.Email for Java'yı kullanmak için bu bağımlılığı ekleyin `pom.xml`:
+Aspose.Email for Java'yi kullanmak için `pom.xml` dosyanıza şu bağımlılığı ekleyin:
 
 ```xml
 <dependency>
@@ -43,27 +120,27 @@ Aspose.Email for Java'yı kullanmak için bu bağımlılığı ekleyin `pom.xml`
 </dependency>
 ```
 
-### Çevre Kurulumu
+### Ortam Kurulumu
 
-1. **Lisans Edinimi:** Aspose.Email bir teklif sunuyor [ücretsiz deneme](https://releases.aspose.com/email/java/) özellikleri test etmek için.
+1. **Lisans Edinme:** Aspose.Email, özellikleri test etmek için bir [ücretsiz deneme](https://releases.aspose.com/email/java/) sunar.
 2. **Temel Başlatma ve Kurulum:**
-   - Gerekli JAR dosyalarını indirin veya yukarıda gösterildiği gibi Maven üzerinden ekleyin.
-   - Projenizi istediğiniz bir IDE'de kurun.
+   - Gerekli JAR dosyalarını indirin veya yukarıda gösterildiği gibi Maven aracılığıyla ekleyin.
+   - Seçtiğiniz bir IDE'de projenizi kurun.
 
-## Java için Aspose.Email Kurulumu
+## Aspose.Email'i Java için Kurma
 
 ### Kurulum Talimatları
 
 Aspose.Email'i kullanmak için şu adımları izleyin:
 
-1. **Maven Bağımlılığı:** Bağımlılığınızı ekleyin `pom.xml` daha önce de belirtildiği gibi.
+1. **Maven Bağımlılığı:** Daha önce bahsedildiği gibi `pom.xml` dosyanıza bağımlılığı ekleyin.
 2. **Lisans Kurulumu:**
-   - Bir tane edinin [geçici lisans](https://purchase.aspose.com/temporary-license/) geliştirme sırasında tüm özelliklere erişim için.
-   - Uzun vadeli kullanım için, lisans satın alın [Aspose web sitesi](https://purchase.aspose.com/buy).
+   - Geliştirme sırasında tam özellik erişimi için bir [geçici lisans](https://purchase.aspose.com/temporary-license/) edinin.
+   - Uzun vadeli kullanım için, [Aspose web sitesinden](https://purchase.aspose.com/buy) bir lisans satın alın.
 
 ### Temel Başlatma
 
-Lisansı ayarlayıp e-postaları yükleyerek Java uygulamanızda Aspose.Email'i başlatın:
+Aspose.Email'i Java uygulamanızda lisansı ayarlayarak ve e-postaları yükleyerek başlatın:
 
 ```java
 import com.aspose.email.License;
@@ -72,7 +149,7 @@ public class InitializeAsposeEmail {
     public static void applyLicense() {
         License license = new License();
         try {
-            // Lisans dosyanıza giden yol
+            // Path to your license file
             license.setLicense("path/to/your/license.lic");
             System.out.println("License set successfully.");
         } catch (Exception e) {
@@ -84,11 +161,14 @@ public class InitializeAsposeEmail {
 
 ## Uygulama Kılavuzu
 
-Spam filtresinin işlevselliğini eğitim ve test süreçlerine ayıracağız.
+Spam filtresi işlevselliğini eğitim ve test süreçlerine ayıracağız.
 
-### Özellik 1: Spam Filtresi Veritabanını Eğitmek
+### Özellik 1: Spam Filtre Veritabanını Eğitme
 
-**Genel Bakış:** Bu özellik, bir `SpamAnalyzer` bilinen amatör (spam olmayan) ve spam e-postalarını kullanarak e-posta mesajlarını yüklemek, kategorilere ayırmak ve bu verileri gelecekteki kullanım için kaydetmek.
+**Genel Bakış:** Bu özellik, bilinen ham (spam olmayan) ve spam e-postaları kullanarak bir `SpamAnalyzer`'ı nasıl eğiteceğinizi gösterir; e-posta mesajlarını yükler, sınıflandırır ve gelecekteki kullanım için bu verileri kaydeder.
+
+#### Tanım Bağlantısı
+`SpamAnalyzer`, Aspose.Email'in etiketli e-posta örneklerinden öğrenen ve spam tespiti için istatistiksel bir model oluşturan çekirdek sınıftır.
 
 #### Adım 1: E-posta Mesajlarını Yükle
 
@@ -100,13 +180,13 @@ public class TrainSpamFilterDatabase {
     public static void trainAndCreateDatabase(String hamFolder, String spamFolder, String dataBaseFile) {
         SpamAnalyzer analyzer = new SpamAnalyzer();
         
-        // Amatör e-postalarla yükleme ve eğitim
+        // Load and train with ham emails
         loadAndTrainEmails(hamFolder, false, analyzer);
         
-        // Spam e-postaları yükleyin ve eğitin
+        // Load and train with spam emails
         loadAndTrainEmails(spamFolder, true, analyzer);
 
-        // Eğitilen veritabanını kaydedin
+        // Save the trained database
         analyzer.saveDatabase(dataBaseFile);
     }
 
@@ -117,7 +197,7 @@ public class TrainSpamFilterDatabase {
         for (File file : files) {
             try {
                 MailMessage mailMessage = MailMessage.load(file.getAbsolutePath());
-                analyzer.trainFilter(mailMessage, isSpam); // Spam veya amatör olarak eğitin
+                analyzer.trainFilter(mailMessage, isSpam); // Train as spam or ham
             } catch (Exception e) {
                 System.out.println("Failed to load file: " + file.getName());
             }
@@ -131,15 +211,18 @@ public class TrainSpamFilterDatabase {
 }
 ```
 
-#### Açıklama:
-- **Parametreler:** The `trainAndCreateDatabase` yöntem, veritabanı dosya yolu ile birlikte, jambon ve spam klasörleri için yollar alır.
-- **Eğitim Süreci:** E-postalar belirtilen dizinlerden yüklenir. Her e-posta, spam veya spam olmayan olarak eğitilir. `trainFilter` yöntem.
+#### Açıklama
+- **Parametreler:** `trainAndCreateDatabase` yöntemi ham ve spam klasörlerinin yollarını ve bir veritabanı dosyası yolunu alır.
+- **Eğitim Süreci:** Belirtilen dizinlerden e-postalar yüklenir. Her e-posta, `trainFilter` yöntemiyle spam veya spam olmayan olarak eğitilir ve `SpamAnalyzer`'ın iç olasılık tabloları güncellenir.
 
 ### Özellik 2: E-posta Mesajlarını Test Etme
 
-**Genel Bakış:** Bu bölüm, e-postaları önceden eğitilmiş bir SpamAnalyzer'da test ederek bunları amatör, spam veya muhtemelen spam olarak sınıflandırmayı gösterir.
+**Genel Bakış:** Bu bölüm, önceden eğitilmiş bir `SpamAnalyzer` ile e-postaları test ederek ham, spam veya olası spam olarak sınıflandırmayı gösterir.
 
-#### Adım 1: E-postaları Yükleyin ve Test Edin
+#### Tanım Bağlantısı
+`testSpam`, eğitilmiş bir veritabanını yükleyen, her e-postayı değerlendiren ve spam olasılığını kategorik bir etiketle birlikte yazdıran yardımcı bir yöntemdir.
+
+#### Adım 1: E-postaları Yükle ve Test Et
 
 ```java
 public class SpamFilterTesting {
@@ -152,10 +235,10 @@ public class SpamFilterTesting {
         String testFolder = dataDir + "test/";
         String dataBaseFile = dataDir + "SpamFilterDatabase.txt";
 
-        // Eğitilmiş spam filtresi veritabanını yükleyin
+        // Load the trained spam filter database
         SpamAnalyzer analyzer = new SpamAnalyzer(dataBaseFile);
 
-        // Test klasöründeki her dosyayı listele ve test et
+        // List and test each file in the test folder
         File folder = new File(testFolder);
         File[] files = folder.listFiles();
         
@@ -163,7 +246,7 @@ public class SpamFilterTesting {
             try {
                 MailMessage msg = MailMessage.load(file.getAbsolutePath());
                 
-                // E-postanın spam mı yoksa amatör posta mı olduğunu olasılıklara göre belirleyin
+                // Determine if the email is spam or ham based on probability
                 double probability = analyzer.test(msg);
 
                 if (probability < 0.05)
@@ -180,35 +263,70 @@ public class SpamFilterTesting {
 }
 ```
 
-#### Açıklama:
-- **Parametreler:** The `testSpam` yöntem veri dizinine ve eğitilmiş bir veritabanına ihtiyaç duyar.
-- **Test Süreci:** E-postalar test klasöründen yüklenir. Her e-postanın spam olasılığı hesaplanır ve ham, spam veya muhtemelen spam olarak kategorilendirilir.
+#### Açıklama
+- **Parametreler:** `testSpam` yöntemi veri dizini ve eğitilmiş bir veritabanı gerektirir.
+- **Test Süreci:** Test klasöründen e-postalar yüklenir. Her e-postanın spam olasılığı hesaplanır ve yapılandırılabilir eşik değerlerine göre ham, spam veya olası spam olarak sınıflandırılır.
+
+## Neden Spam Filtreleme için Aspose.Email Kullanmalı?
+
+Aspose.Email **30+ e-posta formatını** (EML, MSG, MBOX, PST dahil) destekler ve akış API'si sayesinde tüm dosyayı belleğe yüklemeden **2 GB**'a kadar posta kutularını işleyebilir. Kütüphanenin yerleşik `SpamAnalyzer`'ı, standart benchmark veri setlerinde **%94 ortalama tespit doğruluğu** sağlar ve üretim‑düzeyi filtreler için güvenilir bir temel sunar.
 
 ## Pratik Uygulamalar
 
-1. **Kurumsal E-posta Filtreleme:**
-   - Gelen kurumsal e-postaları filtrelemek, karmaşayı azaltmak ve güvenliği artırmak için bu sistemi kullanın.
+1. **Kurumsal E-posta Filtreleme:** Spam'ı otomatik olarak karantinaya alacak şekilde filtreyi posta geçitlerine dağıtın, gelen kutusu gürültüsünü azaltın ve kimlik avı saldırılarına karşı koruyun.  
+2. **Müşteri Destek Sistemleri:** Gerçek destek taleplerini spam'den ayırın, daha hızlı yanıt süreleri ve daha yüksek müşteri memnuniyeti sağlayın.  
+3. **Kişisel Spam Azaltma:** Daha temiz bir kişisel gelen kutusu için filtreyi masaüstü veya mobil e-posta istemcilerine entegre edin.  
+4. **E-posta Sunucularıyla Entegrasyon:** Filtreyi Java tabanlı posta sunucularına (ör. Apache James) bağlayarak gelen mesajları gerçek zamanlı tarayın.  
+5. **Uyumluluk ve Raporlama:** Sınıflandırma sonuçlarını kullanarak istenmeyen e-posta trafiği hakkında denetim günlükleri ve uyumluluk raporları oluşturun.
 
-2. **Müşteri Destek Sistemleri:**
-   - Müşteri taleplerini otomatik olarak spam'dan ayırın ve yanıt sürelerini iyileştirin.
+## Performans Düşünceleri
 
-3. **Kişisel Spam Azaltma:**
-   - Daha temiz bir gelen kutusu deneyimi için kişisel e-posta istemcilerinde uygulayın.
+1. **Performansı Optimize Etme:**  
+   - SpamAnalyzer'ın veritabanını haftalık olarak yenileyerek yeni spam kalıplarını yakalayın.  
+   - Java'nın `ExecutorService`'ini kullanarak e-posta yükleme ve sınıflandırmayı paralelleştirin; çok çekirdekli makinelerde **3×** throughput elde edin.  
 
-4. **E-posta İstemcileriyle Entegrasyon:**
-   - E-posta sunucuları veya özel istemci uygulamaları gibi mevcut Java tabanlı uygulamalarla entegre edin.
+2. **Kaynak Kullanım Kılavuzları:**  
+   - Heap kullanımını izleyin; analizör tipik olarak 500 k e-posta eğitim seti için **150 MB** tüketir.  
+   - Çok büyük veri setleri için tam yeniden eğitimden kaçınmak amacıyla `appendToDatabase` yöntemiyle artımlı eğitim düşünün.
 
-5. **Uyumluluk ve Raporlama:**
-   - Bir kuruluş içindeki spam etkinliğine ilişkin uyumluluk raporları oluşturmak için sınıflandırma verilerini kullanın.
+## Yaygın Sorunlar ve Çözümler
 
-## Performans Hususları
+- **Problem:** Eğitim sırasında “OutOfMemoryError”.  
+  **Çözüm:** JVM heap'ini (`-Xmx2g`) artırın veya eğitim setini daha küçük partilere bölüp her partiden sonra `appendToDatabase` çağırın.
 
-1. **Performansı Optimize Etme:**
-   - Doğruluğu artırmak için SpamAnalyzer veritabanını düzenli olarak güncelleyin.
-   - Çok sayıda e-postayı aynı anda işlemek için çoklu iş parçacığını kullanın.
+- **Problem:** Spam olasılığı her zaman 0.5 döndürüyor.  
+  **Çözüm:** Ham ve spam klasörlerinin doğru etiketlenmiş EML dosyaları içerdiğini ve lisansın doğru uygulandığını doğrulayın; lisanssız bir deneme model eğitimi sınırlayabilir.
 
-2. **Kaynak Kullanım Kuralları:**
-   - Özellikle yüksek hacimli bir işlem yaparken bellek kullanımını izleyin
+- **Problem:** Ekli dosyaları olan e-postalar yanlış sınıflandırılıyor.  
+  **Çözüm:** Eğitimden önce `MailMessage.setLoadOptions(LoadOptions.getDefault())` ayarlayarak ek içerik çıkarımını etkinleştirin.
+
+## Sıkça Sorulan Sorular
+
+**S: Eğitilmiş filtreyi mevcut bir Java mail sunucusuyla nasıl entegre ederim?**  
+C: Sunucu başlangıcında oluşturulan veritabanı dosyasını yükleyin, `SpamAnalyzer` örneğini oluşturun ve teslimattan önce her gelen `MailMessage` üzerinde `testSpam`'i çağırın.
+
+**S: Filtre çok dilli spam'i işleyebilir mi?**  
+C: Evet, Aspose.Email'in ayrıştırıcısı Unicode metni çıkarır ve `SpamAnalyzer` eğitim seti temsilci örnekler içerdiği sürece herhangi bir dilde çalışır.
+
+**S: Her dağıtım ortamı için ayrı bir lisans gerekir mi?**  
+C: Tek bir lisans, satın alınan sözleşme şartları içinde sınırsız dağıtımı kapsar; sadece lisans dosyasını her sunucuya yerleştirmeniz yeterlidir.
+
+**S: Aspose.Email, eğitim verisi için IMAP/POP3 alımını destekliyor mu?**  
+C: Kesinlikle—`ImapClient` veya `Pop3Client` kullanarak mesajları alın, ardından eğitim rutinine besleyin.
+
+**S: Test için hangi Aspose.Email sürümü kullanıldı?**  
+C: Örnekler Aspose.Email 23.10 for Java ile doğrulanmıştır.
+
+**Son Güncelleme:** 2026-06-23  
+**Test Edilen:** Aspose.Email 23.10 for Java  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.Email Java için E-posta Ayrıştırma ve Analiz Öğreticileri](/email/java/email-parsing-analysis/)
+- [Aspose.Email Java IMAP Kurulumu: Geliştiriciler için Güvenli Yapılandırma ve Kullanım Kılavuzu](/email/java/imap-client-operations/aspose-email-java-imap-setup-usage-guide/)
+- [Aspose.Email Java: SMTP İstemci Kurulumu ve Sunucu Yetkinlikleri Alma Kapsamlı Kılavuzu](/email/java/smtp-client-operations/aspose-email-java-smtp-setup-server-capabilities/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

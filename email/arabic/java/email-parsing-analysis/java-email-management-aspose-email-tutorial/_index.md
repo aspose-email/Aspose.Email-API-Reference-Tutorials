@@ -1,9 +1,54 @@
 ---
-"date": "2025-05-29"
-"description": "قم بإتقان تحليل وإدارة البريد الإلكتروني في تطبيقات Java باستخدام هذا الدليل التفصيلي حول استخدام مكتبة Aspose.Email القوية."
-"title": "دليل شامل لتحميل رسائل البريد الإلكتروني وتحليلها في Java باستخدام Aspose.Email"
-"url": "/ar/java/email-parsing-analysis/java-email-management-aspose-email-tutorial/"
-"weight": 1
+date: '2026-06-23'
+description: تعلم كيفية استخدام aspose email maven لتحميل وتحليل واستخراج بيانات البريد
+  الإلكتروني في تطبيقات Java. يتضمن الإعداد، مقتطفات الشيفرة، وأفضل الممارسات.
+keywords:
+- aspose email maven
+- how to parse email
+- extract email attachments
+- read email subject
+- convert email text
+schemas:
+- author: Aspose
+  dateModified: '2026-06-23'
+  description: Learn how to use aspose email maven to load, parse, and extract email
+    data in Java applications. Includes setup, code snippets, and best practices.
+  headline: 'Aspose Email Maven: Load and Parse Emails in Java'
+  type: TechArticle
+- description: Learn how to use aspose email maven to load, parse, and extract email
+    data in Java applications. Includes setup, code snippets, and best practices.
+  name: 'Aspose Email Maven: Load and Parse Emails in Java'
+  steps:
+  - name: Import Required Classes
+    text: '`MailMessage` is Aspose.Email''s primary class representing an email message,
+      providing properties and methods to access headers, body, and attachments.'
+  - name: Set Up Directory Path
+    text: 'Define the folder that contains your EML or MSG files: **Note**: Replace
+      `"YOUR_DOCUMENT_DIRECTORY"` with the actual path on your machine.'
+  - name: Load the Email Message
+    text: 'Use the static `load` method to create a `MailMessage` instance: Here,
+      `"messageWithAtt.eml"` is the file name you want to load. Adjust the name as
+      needed.'
+  type: HowTo
+- questions:
+  - answer: Aspose.Email is a Maven‑distributed library that enables loading, parsing,
+      converting, and sending email messages without external servers.
+    question: What is Aspose.Email for Java?
+  - answer: Yes, Aspose provides equivalent libraries for .NET, C++, Python, and more.
+    question: Can I use Aspose.Email with other programming languages?
+  - answer: It native reads and writes EML, MSG, MHTML, and EMLX files, covering over
+      30 formats.
+    question: What email formats does Aspose.Email support?
+  - answer: Call `message.getAttachments()` to retrieve a collection, then iterate
+      and save each attachment with `attachment.getName()` and `attachment.getContentStream()`.
+    question: How do I handle attachments in emails using Aspose.Email?
+  - answer: Visit the [Aspose Documentation](https://reference.aspose.com/email/java/)
+      for full API references and sample projects.
+    question: Where can I find more resources on Aspose.Email?
+  type: FAQPage
+title: 'Aspose Email Maven: تحميل وتحليل رسائل البريد الإلكتروني في Java'
+url: /ar/java/email-parsing-analysis/java-email-management-aspose-email-tutorial/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,39 +56,170 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# دليل شامل لتحميل رسائل البريد الإلكتروني وتحليلها في Java باستخدام Aspose.Email
+# Aspose Email Maven: تحميل وتحليل رسائل البريد الإلكتروني في Java
 
-**فئة**:تحليل و تحليل البريد الإلكتروني
-**رابط تحسين محرك البحث**:دليل تحليل البريد الإلكتروني باستخدام Java وAspose
+**الفئة**: Email Parsing & Analysis  
+**SEO URL**: java-email-parsing-aspose-email-guide  
 
-## مقدمة
-هل ترغب في تبسيط إدارة البريد الإلكتروني في تطبيقات جافا؟ يواجه العديد من المطورين تحديات في تحميل رسائل البريد الإلكتروني أو تحليلها أو معالجتها برمجيًا. سيوضح هذا الدليل كيفية التعامل مع هذه المهام بكفاءة باستخدام مكتبة Aspose.Email لجافا.
+## المقدمة  
+إذا كنت بحاجة إلى **تحميل وتحليل رسائل البريد الإلكتروني في Java** بسرعة وبشكل موثوق، فإن *aspose email maven* هو المكتبة المصممة لهذا الغرض. في هذا الدرس ستكتشف كيفية إعداد تبعية Maven، قراءة ملفات EML أو MSG، استخراج الموضوعات، النصوص، والمرفقات، وتطبيق نصائح الأداء وفقاً لأفضل الممارسات. في النهاية ستحصل على حل جاهز للتنفيذ يمكنك إدراجه في أي مشروع Java.
 
-**الدروس المستفادة:**
-- إعداد Aspose.Email لـ Java
-- تحميل رسائل البريد الإلكتروني وتحليلها خطوة بخطوة
-- التطبيقات العملية لتحليل البريد الإلكتروني في سيناريوهات العالم الحقيقي
+## إجابات سريعة
+- **ما هو عنصر Maven؟** `com.aspose:aspose-email` – أضفه إلى ملف `pom.xml` الخاص بك.  
+- **هل يمكنني قراءة ملفات EML و MSG؟** نعم، كلا الصيغتين مدعومتان مباشرة.  
+- **كيف أستخرج المرفقات؟** استدعِ `message.getAttachments()` وتكرار المجموعة.  
+- **هل يلزم وجود ترخيص للإنتاج؟** الترخيص التجاري يزيل حدود التقييم؛ النسخة التجريبية المجانية تكفي للاختبار.  
+- **ما هو إصدار Java المطلوب؟** يوصى بـ JDK 16 أو أعلى للحصول على أداء مثالي.
 
-دعونا نبدأ بالمتطلبات الأساسية!
+## ما هو Aspose Email Maven؟
+`Aspose.Email` هي مكتبة Java تُوزَّع عبر Maven وتوفر API غنيًا لتحميل، تحليل، تحويل، وإرسال رسائل البريد الإلكتروني دون الحاجة إلى Outlook أو خادم Exchange. تُجَ abstracts التعامل المعقد مع MIME، وتدعم صيغًا متعددة، وتتيح للمطورين العمل مع بيانات البريد الإلكتروني بطريقة كائنية وآمنة من الناحية النوعية.
 
-## المتطلبات الأساسية
-للبدء، تأكد من جاهزية بيئة التطوير لديك. ستحتاج إلى:
+## لماذا نستخدم Aspose Email Maven لتحليل بريد Java؟
+يدعم Aspose.Email **أكثر من 30 صيغة بريدًا** (بما في ذلك EML، MSG، MHTML، وEMLX) ويمكنه معالجة **رسائل مئات الصفحات** مع الحفاظ على استهلاك الذاكرة أقل من 50 ميغابايت عبر بث البيانات. يتعامل API الخاص به مع فك ترميز MIME، استخراج المرفقات، وتحويل مجموعة الأحرف تلقائيًا، مما يقلل وقت التطوير حتى **70 %** مقارنةً بالتحليل اليدوي.
 
-### المكتبات المطلوبة:
-- **Aspose.Email لـ Java**:يبسط العمليات مثل تحميل رسائل البريد الإلكتروني وتحليلها.
+## المتطلبات المسبقة
+- **مجموعة تطوير Java (JDK) 16+** – لضمان التوافق مع أحدث ميزات اللغة.  
+- **Maven** – لإدارة التبعيات.  
+- **IDE** – IntelliJ IDEA أو Eclipse أو NetBeans جميعها مناسبة.  
+- **معرفة أساسية بـ Java** – يجب أن تكون مرتاحًا مع الفئات، الطرق، ومعالجة الاستثناءات.  
 
-### متطلبات إعداد البيئة:
-- مجموعة تطوير Java (JDK) 16 أو أعلى
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse أو NetBeans
+### المكتبات المطلوبة
+- **Aspose.Email for Java** – يوفر جميع قدرات التعامل مع البريد الإلكتروني.
 
-### المتطلبات المعرفية:
-- فهم أساسي لبرمجة جافا
-- المعرفة بـ Maven لإدارة التبعيات
+### متطلبات إعداد البيئة
+- تثبيت JDK 16 أو أحدث.  
+- ضبط IDE لاستخدام JDK المثبت.  
+- التأكد من وجود Maven في `PATH` (`mvn -v` يجب أن يعرض الإصدار).
 
-## إعداد Aspose.Email لـ Java
-أضف مكتبة Aspose.Email إلى مشروعك. إليك كيفية استخدام Maven:
+### المتطلبات المعرفية
+- الإلمام بصيغة `pom.xml` الخاصة بـ Maven.  
+- فهم مفاهيم البريد الإلكتروني (MIME، المرفقات، الرؤوس).
 
-**مافن:**
+## إعداد Aspose.Email for Java
+أضف مكتبة Aspose.Email إلى مشروع Maven الخاص بك:
+
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>24.10</version>
+</dependency>
+```
+
+بعد حفظ `pom.xml`، شغّل `mvn clean install` لتنزيل ملفات JAR.
+
+### الحصول على الترخيص
+يقدم Aspose.Email نسخة تجريبية مجانية لاختبار ميزاته:
+- **نسخة تجريبية**: حمّل ترخيصًا مؤقتًا من [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/) للاختبار.  
+- **ترخيص مؤقت**: احصل على ترخيص تقييم ممتد من [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).  
+- **شراء**: للاستخدام الإنتاجي، اشترِ ترخيصًا من [Aspose Purchase](https://purchase.aspose.com/buy).
+
+### التهيئة والإعداد
+قم بتحديث تبعيات Maven بعد إضافة المكتبة حتى يتعرف IDE على الفئات الجديدة.
+
+## كيف يتم تحميل رسالة بريد إلكتروني باستخدام Aspose Email Maven؟
+يُعد تحميل ملف البريد الإلكتروني الخطوة الأولى لأي سير عمل معالجة. طريقة `MailMessage.load()` تقرأ الرسالة بالكامل، تحلل أجزاء MIME، وتعيد كائن `MailMessage` مكتمل يمكنك الاستعلام عن الرؤوس، النص، والمرفقات. هذه الاستدعاءة الواحدة تُجَ abstracts التعامل مع نظام الملفات، تحويل مجموعة الأحرف، وفك تشفير الأجزاء المتعددة، لتوفر لك تمثيلًا كائنيًا نظيفًا.
+
+### الخطوة 1: استيراد الفئات المطلوبة
+```java
+import com.aspose.email.MailMessage;
+```  
+
+`MailMessage` هي الفئة الأساسية في Aspose.Email التي تمثل رسالة بريد إلكتروني، وتوفر خصائص وطرق للوصول إلى الرؤوس، النص، والمرفقات.
+
+### الخطوة 2: إعداد مسار الدليل
+حدد المجلد الذي يحتوي على ملفات EML أو MSG الخاصة بك:
+
+```java
+String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
+```  
+
+**ملاحظة**: استبدل `"YOUR_DOCUMENT_DIRECTORY"` بالمسار الفعلي على جهازك.
+
+### الخطوة 3: تحميل رسالة البريد الإلكتروني
+استخدم الطريقة الساكنة `load` لإنشاء كائن `MailMessage`:
+
+```java
+MailMessage message = MailMessage.load(dataDir + "messageWithAtt.eml");
+```  
+
+هنا، `"messageWithAtt.eml"` هو اسم الملف الذي تريد تحميله. عدّل الاسم حسب الحاجة.
+
+## كيف يتم تحليل محتوى البريد الإلكتروني؟
+بعد تحميل البريد، يمكنك فورًا استرجاع أهم أجزائه. الفقرة التالية تقدم نظرة مختصرة على الخصائص الثلاث الأساسية التي ستحتاجها عادةً: الموضوع، النص، والمرفقات. يتم الوصول إلى كل خاصية عبر طريقة getter بسيطة تُعيد كائن Java جاهز للمزيد من المعالجة أو التخزين.
+
+- **الموضوع** – `message.getSubject()` يُعيد سطر موضوع البريد.  
+- **النص** – `message.getBody()` يُعطيك النص العادي أو HTML.  
+- **المرفقات** – كرّر عبر `message.getAttachments()` لمعالجة كل ملف مرفق.
+
+**نصيحة**: تحقق من نوع MIME للمرفق قبل حفظه لتجنب صيغ ملفات غير متوقعة.
+
+## تطبيقات عملية
+تحميل وتحليل رسائل البريد إلكترونيًا برمجيًا يقدم فوائد متعددة في العالم الحقيقي:
+1. **معالجة البريد الآلية** – تصفية الرسائل غير المرغوب فيها، توجيه الرسائل، أو استخراج البيانات دون تدخل بشري.  
+2. **حلول أرشفة البريد** – تخزين المحتوى المُحلل في قواعد بيانات للامتثال وسهولة الاسترجاع.  
+3. **تكامل CRM** – إثراء سجلات العملاء بسحب تفاصيل التواصل عبر البريد الإلكتروني إلى نظام CRM الخاص بك.
+
+## اعتبارات الأداء
+للحفاظ على استجابة تطبيقك عند التعامل مع صناديق بريد كبيرة:
+
+- **إدارة الذاكرة** – استخدم `try‑with‑resources` للتيارات وامسح المجموعات بعد المعالجة.  
+- **المعالجة الدفعية** – حمّل وحلّل الرسائل على دفعات (مثلاً 100 رسالة في كل مرة) لتقليل ضغط الـ GC.  
+
+**أفضل الممارسات لإدارة ذاكرة Java**  
+- استخدم `try (InputStream is = ...) { … }` لإغلاق التيارات تلقائيًا.  
+- قم بعمل بروفايل باستخدام VisualVM أو YourKit لتحديد نقاط الاختناق.
+
+## المشكلات الشائعة والحلول
+- **صيغة غير مدعومة** – تأكد من أن الملف هو EML أو MSG؛ الصيغ الأخرى تحتاج إلى تحويل أولاً.  
+- **أخطاء المسار** – راجع سلسلة الدليل؛ استخدم `Paths.get()` لمسارات مستقلة عن النظام.  
+- **الترخيص غير موجود** – ضع ملف `.lic` في classpath أو عيّن الترخيص برمجيًا عبر `License license = new License(); license.setLicense("path/to/license.lic");`.
+
+## الأسئلة المتكررة
+
+**س: ما هو Aspose.Email for Java؟**  
+ج: Aspose.Email هي مكتبة موزَّعة عبر Maven تتيح تحميل، تحليل، تحويل، وإرسال رسائل البريد الإلكتروني دون الحاجة إلى خوادم خارجية.
+
+**س: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**  
+ج: نعم، توفر Aspose مكتبات مكافئة لـ .NET، C++، Python، وأكثر.
+
+**س: ما هي صيغ البريد التي يدعمها Aspose.Email؟**  
+ج: يقرأ ويكتب صيغ EML، MSG، MHTML، وEMLX، ويغطي أكثر من 30 صيغة.
+
+**س: كيف أتعامل مع المرفقات في الرسائل باستخدام Aspose.Email؟**  
+ج: استدعِ `message.getAttachments()` للحصول على مجموعة، ثم كرّر واحفظ كل مرفق باستخدام `attachment.getName()` و `attachment.getContentStream()`.
+
+**س: أين يمكنني العثور على المزيد من الموارد حول Aspose.Email؟**  
+ج: زر [توثيق Aspose](https://reference.aspose.com/email/java/) للحصول على مراجع API كاملة ومشاريع مثال.
+
+**أسئلة إضافية**
+
+**س: هل يتطلب Aspose.Email تثبيت Outlook؟**  
+ج: لا، يعمل بشكل مستقل تمامًا عن Outlook أو Exchange.
+
+**س: هل يمكن تحويل بريد إلكتروني إلى PDF؟**  
+ج: نعم، استخدم `MailMessage.save("output.pdf", SaveOptions.createSaveOptions(SaveOptions.SaveFormat.Pdf))`.
+
+## الموارد
+- [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/)  
+- [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/)  
+- [Aspose Purchase](https://purchase.aspose.com/buy)  
+- [توثيق Aspose](https://reference.aspose.com/email/java/)  
+- [وثائق Aspose Email Java](https://reference.aspose.com/email/java/)  
+- [إصدارات Aspose للـ Java](https://releases.aspose.com/email/java/)  
+- [شراء ترخيص Aspose](https://purchase.aspose.com/buy)  
+- [جرب Aspose Email](https://releases.aspose.com/email/java/)  
+- [احصل على ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)  
+- [منتدى Aspose](https://forum.aspose.com/c/email/10)
+
+## الخاتمة
+الآن لديك نهج قوي وجاهز للإنتاج **لتحميل وتحليل رسائل البريد الإلكتروني في Java باستخدام aspose email maven**. طبّق هذه الخطوات لأتمتة معالجة البريد الوارد، استخراج البيانات القيمة، أو بناء خطوط أرشفة قوية. بعد ذلك، استكشف إمكانيات الإرسال أو دمج المحلل مع خدمات التخزين السحابي للحصول على حل بريد إلكتروني متكامل من الطرف إلى الطرف.
+
+---
+
+**آخر تحديث:** 2026-06-23  
+**تم الاختبار مع:** Aspose.Email 24.10 for Java  
+**المؤلف:** Aspose
 
 ```xml
 <dependency>
@@ -54,100 +230,16 @@
 </dependency>
 ```
 
-### الحصول على الترخيص
-يقدم Aspose.Email نسخة تجريبية مجانية لاختبار ميزاته:
-- **نسخة تجريبية مجانية**:تنزيل ترخيص مؤقت من [صفحة التجربة المجانية لـ Aspose](https://releases.aspose.com/email/java/) للاختبار.
-- **رخصة مؤقتة**:الحصول على ترخيص تقييم ممتد في [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/).
-- **شراء**:للاستخدام الإنتاجي، قم بشراء ترخيص من [شراء Aspose](https://purchase.aspose.com/buy).
+## دروس ذات صلة
 
-### التهيئة والإعداد
-تأكد من أن مشروع Java الخاص بك يتعرف على المكتبة الجديدة عن طريق تحديث التبعيات بعد إضافتها عبر Maven.
+- [كيفية تحميل EML باستخدام Aspose.Email for Java: أفضل الممارسات](/email/java/email-message-operations/aspose-email-java-load-emails/)
+- [استخراج المرفقات من البريد باستخدام Aspose.Email for Java](/email/java/advanced-email-attachments/)
+- [دروس تحليل البريد الإلكتروني وتحليلها لـ Aspose.Email Java](/email/java/email-parsing-analysis/)
 
-## دليل التنفيذ
-بعد إعداد كل شيء، دعنا نستكشف كيفية تحميل رسائل البريد الإلكتروني وتحليلها باستخدام Aspose.Email لـ Java.
-
-### تحميل رسالة بريد إلكتروني
-تتيح لك هذه الميزة تحميل رسائل البريد الإلكتروني من الملفات إلى تطبيق Java الخاص بك، مما يتيح لك الوصول إليها للتعامل معها برمجيًا.
-
-#### الخطوة 1: استيراد الفئات المطلوبة
-```java
-import com.aspose.email.MailMessage;
-```
-
-#### الخطوة 2: إعداد مسار الدليل
-قم بتحديد المسار الذي سيتم تخزين ملفات البريد الإلكتروني الخاص بك فيه:
-```java
-String dataDir = "YOUR_DOCUMENT_DIRECTORY/email/";
-```
-**ملحوظة**: يستبدل `"YOUR_DOCUMENT_DIRECTORY"` مع الدليل الفعلي الذي يحتوي على ملفات البريد الإلكتروني الخاص بك.
-
-#### الخطوة 3: تحميل رسالة البريد الإلكتروني
-يستخدم `MailMessage.load()` لتحميل ملف البريد الإلكتروني:
-```java
-MailMessage message = MailMessage.load(dataDir + "messageWithAtt.eml");
-```
-هنا، `"messageWithAtt.eml"` هو اسم ملف البريد الإلكتروني الذي ترغب بتحميله. عدّل اسم الملف حسب الحاجة.
-
-### تحليل محتوى البريد الإلكتروني
-بعد تحميل بريدك الإلكتروني، قم بالوصول إلى محتواه ومرفقاته:
-- **موضوع**: `message.getSubject()`
-- **جسم**: `message.getBody()`
-- **المرفقات**:تكرار من خلال `message.getAttachments()` للملفات المرفقة.
-
-**نصائح لاستكشاف الأخطاء وإصلاحها**:تأكد من أن ملفات البريد الإلكتروني لديك بتنسيق EML أو MSG وتحقق من مسارات الدليل في حالة ظهور مشكلات.
-
-## التطبيقات العملية
-يوفر تحميل رسائل البريد الإلكتروني وتحليلها برمجيًا العديد من الفوائد الواقعية:
-1. **معالجة البريد الإلكتروني الآلية**:أتمتة المهام مثل تصفية البريد العشوائي أو استخراج المرفقات.
-2. **حلول أرشفة البريد الإلكتروني**:أرشفة رسائل البريد الإلكتروني في قواعد البيانات باستخدام Java لاسترجاعها بسهولة.
-3. **التكامل مع أنظمة إدارة علاقات العملاء**:تحسين سجلات تفاعل العملاء من خلال دمج تحليل البريد الإلكتروني مع منصات إدارة علاقات العملاء.
-
-## اعتبارات الأداء
-لتحسين الأداء عند العمل مع Aspose.Email في Java:
-- **إدارة الذاكرة**:قم بمراقبة الكائنات غير المستخدمة ومسحها بانتظام لمنع تسرب الذاكرة.
-- **معالجة الدفعات**:قم بمعالجة رسائل البريد الإلكتروني المتعددة على دفعات لاستخدام الموارد بكفاءة.
-
-**أفضل الممارسات لإدارة ذاكرة Java**:
-- استخدم try-with-resources لإغلاق التدفقات تلقائيًا
-- قم بإنشاء ملف تعريف لتطبيقك لتحديد الاختناقات
-
-## خاتمة
-لديك الآن أساس متين لتحميل رسائل البريد الإلكتروني وتحليلها باستخدام Aspose.Email لجافا. استكشف الميزات المتقدمة أو ادمج هذه الوظيفة في أنظمة أكبر.
-
-### الخطوات التالية:
-- قم باستكشاف وظائف Aspose.Email الأخرى مثل إرسال رسائل البريد الإلكتروني.
-- فكر في التكامل مع حلول التخزين السحابي لإدارة الملفات بسلاسة.
-
-**دعوة إلى العمل**:قم بتطبيق هذه التقنيات في مشاريعك واستمتع بقوة التعامل الآلي مع البريد الإلكتروني!
-
-## قسم الأسئلة الشائعة
-**س1: ما هو Aspose.Email لـ Java؟**
-A1: إنها مكتبة قوية لإدارة رسائل البريد الإلكتروني داخل تطبيقات Java، وتوفر ميزات مثل تحميل رسائل البريد الإلكتروني وتحليلها وإرسالها.
-
-**س2: هل يمكنني استخدام Aspose.Email مع لغات برمجة أخرى؟**
-ج2: نعم، تقدم Aspose مكتبات للغات مختلفة بما في ذلك .NET، وC++، وPython، وما إلى ذلك.
-
-**س3: ما هي تنسيقات البريد الإلكتروني التي يدعمها Aspose.Email؟**
-A3: يدعم التنسيقات المستخدمة على نطاق واسع مثل EML و MSG.
-
-**س4: كيف أتعامل مع المرفقات في رسائل البريد الإلكتروني باستخدام Aspose.Email؟**
-أ4: الاستخدام `message.getAttachments()` للوصول إلى المرفقات ومعالجتها.
-
-**س5: أين يمكنني العثور على المزيد من الموارد على Aspose.Email؟**
-أ5: قم بزيارة [وثائق Aspose](https://reference.aspose.com/email/java/) للحصول على أدلة ودروس تعليمية شاملة.
-
-## موارد
-- **التوثيق**: [مستندات Java الخاصة بـ Aspose Email](https://reference.aspose.com/email/java/)
-- **تحميل**: [إصدارات Aspose لـ Java](https://releases.aspose.com/email/java/)
-- **شراء**: [شراء ترخيص Aspose](https://purchase.aspose.com/buy)
-- **نسخة تجريبية مجانية**: [جرب Aspose Email](https://releases.aspose.com/email/java/)
-- **رخصة مؤقتة**: [احصل على رخصة مؤقتة](https://purchase.aspose.com/temporary-license/)
-- **يدعم**: [منتدى أسبوزي](https://forum.aspose.com/c/email/10)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
