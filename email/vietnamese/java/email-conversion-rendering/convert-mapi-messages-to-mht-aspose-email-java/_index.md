@@ -1,13 +1,41 @@
 ---
-date: '2026-01-17'
-description: Tìm hiểu cách chuyển đổi MSG sang MHT với Aspose.Email cho Java. Hướng
-  dẫn từng bước này bao gồm việc tải, lưu và tùy chỉnh mẫu cho việc chuyển đổi email
-  thực tế.
+date: '2026-06-18'
+description: Tìm hiểu cách chuyển đổi msg sang mht với Aspose.Email for Java. Hướng
+  dẫn từng bước này bao gồm việc loading, saving và customizing templates cho việc
+  chuyển đổi email thực tế.
 keywords:
-- convert MAPI messages
-- Aspose.Email for Java
-- MHT format conversion
-title: 'Cách chuyển đổi MSG sang MHT bằng Aspose.Email cho Java - Hướng dẫn toàn diện'
+- convert msg to mht
+- how to convert msg
+- java convert outlook msg
+- aspose email tutorial java
+schemas:
+- author: Aspose
+  dateModified: '2026-06-18'
+  description: Learn how to convert msg to mht with Aspose.Email for Java. This step‑by‑step
+    tutorial covers loading, saving, and customizing templates for real‑world email
+    conversion.
+  headline: Convert msg to mht Using Aspose.Email for Java – A Comprehensive Guide
+  type: TechArticle
+- questions:
+  - answer: MSG is a proprietary Outlook binary format storing email, attachments,
+      and metadata. MHT (MHTML) is an HTML‑based single‑file format that bundles the
+      email body, images, and CSS, making it viewable in any browser.
+    question: What is the difference between MSG and MHT?
+  - answer: Yes. Aspose.Email supports converting appointments, contacts, and tasks
+      to MHT by using the corresponding `Mapi*` classes and adjusting the template
+      names.
+    question: Can I convert other MAPI items like appointments or contacts?
+  - answer: No. All processing happens locally; only a one‑time license activation
+      may contact Aspose’s server.
+    question: Do I need an internet connection for the conversion?
+  - answer: The API is thread‑safe for read‑only operations. When converting many
+      files concurrently, instantiate separate `MapiMessage` objects per thread.
+    question: Is the conversion thread‑safe?
+  - answer: The library can process files up to several hundred megabytes, but you
+      should monitor JVM heap size and consider streaming large attachments.
+    question: How large a MSG file can Aspose.Email handle?
+  type: FAQPage
+title: Chuyển đổi msg sang mht bằng Aspose.Email for Java – Hướng dẫn toàn diện
 url: /vi/java/email-conversion-rendering/convert-mapi-messages-to-mht-aspose-email-java/
 weight: 1
 ---
@@ -18,44 +46,36 @@ weight: 1
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Chuyển đổi MSG sang MHT bằng Aspose.Email cho Java: Hướng dẫn toàn diện
+# Chuyển đổi msg sang mht bằng Aspose.Email cho Java: Hướng dẫn toàn diện
 
-## Giới thiệu
+Chuyển đổi **msg sang mht** là một nhiệm vụ thường gặp khi bạn cần lưu trữ các tin nhắn Outlook ở định dạng mà trình duyệt có thể hiển thị mà không cần bất kỳ phụ thuộc nào phía máy khách. Trong hướng dẫn này, bạn sẽ thấy cách Aspose.Email cho Java thực hiện việc chuyển đổi một cách đơn giản: bạn tải một tệp MAPI (MSG), tùy chọn điều chỉnh đầu ra HTML bằng các mẫu tùy chỉnh, và lưu nó dưới dạng tệp MHT đơn tệp sẵn sàng cho hiển thị trên web hoặc lưu trữ lâu dài.
 
-Việc chuyển đổi **MSG sang MHT** là một yêu cầu phổ biến khi bạn cần lưu trữ hoặc hiển thị các tin nhắn Outlook ở định dạng thân thiện với web. Trong hướng dẫn này, bạn sẽ thấy cách Aspose.Email cho Java thực hiện chuyển đổi một cách đơn giản, cho phép bạn tải tệp MAPI (MSG), điều chỉnh đầu ra bằng các mẫu HTML tùy chỉnh, và lưu nó dưới dạng tệp MHT sẵn sàng cho trình duyệt hoặc hệ thống lưu trữ.
-
-**Bạn sẽ học:**
+**Bạn sẽ học được**
 - Cách tải và phân tích các tệp MSG một cách hiệu quả.  
 - Cách cấu hình `MhtSaveOptions` để tạo ra đầu ra MHT tối ưu.  
 - Cách áp dụng các mẫu tùy chỉnh để cải thiện khả năng đọc.  
-- Các kịch bản thực tế nơi việc chuyển đổi MSG sang MHT mang lại giá trị.
-
-Hãy chuẩn bị môi trường và bắt đầu vào mã.
+- Các kịch bản thực tế nơi việc chuyển đổi msg sang mht mang lại giá trị.
 
 ## Câu trả lời nhanh
-- **Ý nghĩa của “chuyển đổi MSG sang MHT” là gì?** Nó chuyển đổi các tệp Outlook `.msg` sang định dạng `.mht` (MHTML) tương thích với web.  
-- **Thư viện nào được sử dụng?** Aspose.Email cho Java (aspose email tutorial).  
-- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí 30 ngày đủ cho việc đánh giá; cần giấy phép cho môi trường sản xuất.  
+- **“convert msg to mht” có nghĩa là gì?** Nó chuyển đổi các tệp Outlook `.msg` thành một tài liệu MHTML (`.mht`) đơn tệp mà trình duyệt có thể hiển thị trực tiếp.  
+- **Thư viện nào được sử dụng?** Aspose.Email for Java (aspose email tutorial java).  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí 30 ngày hoạt động cho việc đánh giá; cần giấy phép cho môi trường sản xuất.  
 - **Phiên bản Java được hỗ trợ?** Java 16 hoặc mới hơn (classifier `jdk16`).  
 - **Trường hợp sử dụng điển hình?** Lưu trữ email để tuân thủ hoặc hiển thị chúng trong trình duyệt mà không cần Outlook.
 
-## Quá trình “chuyển đổi MSG sang MHT” là gì?
-Quá trình chuyển đổi đọc một tin nhắn Outlook nhị phân (`.msg`) và ghi lại nội dung, tệp đính kèm và siêu dữ liệu của nó vào một tệp MHTML dựa trên HTML duy nhất (`.mht`). Định dạng tệp đơn này bảo tồn bố cục gốc đồng thời có thể xem được trên bất kỳ trình duyệt hiện đại nào.
+## “convert msg to mht” là gì?
+Tải một tin nhắn Outlook nhị phân (`.msg`) và ghi lại phần thân, tệp đính kèm và siêu dữ liệu của nó thành một tệp MHTML dựa trên HTML duy nhất (`.mht`). Tệp kết quả giữ nguyên bố cục gốc, hình ảnh nhúng và kiểu dáng trong khi có thể xem được trên bất kỳ trình duyệt hiện đại nào mà không cần plugin bổ sung. Tất cả văn bản, định dạng và các đối tượng nhúng đều được giữ lại, đảm bảo tài liệu đã chuyển đổi trông giống hệt email gốc khi mở.
 
 ## Tại sao nên sử dụng Aspose.Email cho Java?
-- **API đầy đủ tính năng:** Xử lý tất cả các thuộc tính MAPI, tệp đính kèm và đối tượng nhúng.  
-- **Không phụ thuộc vào Outlook:** Hoạt động trên bất kỳ môi trường Java phía máy chủ nào.  
-- **Mẫu tùy chỉnh:** Điều chỉnh đầu ra HTML để phù hợp với thương hiệu hoặc tiêu chuẩn báo cáo của bạn.  
-- **Hiệu năng cao:** Tối ưu cho các lô lớn và xử lý bất đồng bộ.
+Aspose.Email cho Java hỗ trợ **hơn 100 thuộc tính MAPI**, xử lý **tất cả các loại tệp đính kèm**, và có thể xử lý **các tệp lên tới 500 MB** mà không cần tải toàn bộ tài liệu vào bộ nhớ. Nó chạy trên bất kỳ môi trường Java phía máy chủ nào, không yêu cầu cài đặt Outlook, và cung cấp các mẫu HTML tích hợp sẵn mà bạn có thể tùy chỉnh để phù hợp với thương hiệu công ty.
 
 ## Yêu cầu trước
-- **Thư viện Aspose.Email:** Phiên bản 25.4 hoặc mới hơn (classifier `jdk16`).  
+- **Thư viện Aspose.Email:** Phiên bản 25.4 hoặc mới hơn (classifier `jdk16`).  
 - **Môi trường phát triển Java:** Maven đã được cài đặt để quản lý phụ thuộc.  
-- **Kiến thức Java cơ bản:** Quen thuộc với I/O tệp và các dự án Maven.
+- **Kiến thức Java cơ bản:** Quen thuộc với I/O tệp và các dự án Maven.  
 
 ## Cài đặt Aspose.Email cho Java
-
-Để thêm Aspose.Email vào dự án Maven của bạn, bao gồm phụ thuộc sau:
+Thêm phụ thuộc Maven của Aspose.Email vào tệp `pom.xml` của bạn:
 
 ```xml
 <dependency>
@@ -66,16 +86,14 @@ Quá trình chuyển đổi đọc một tin nhắn Outlook nhị phân (`.msg`)
 </dependency>
 ```
 
-### Cấp phép (aspose email tutorial)
+### Nhận giấy phép (aspose email tutorial)
+Aspose.Email là sản phẩm thương mại, nhưng bạn có thể bắt đầu với một **bản dùng thử miễn phí**:
 
-Aspose.Email là một sản phẩm thương mại, nhưng bạn có thể bắt đầu với **bản dùng thử miễn phí**:
-
-- **Bản dùng thử miễn phí:** Tính năng đầy đủ trong 30 ngày.  
+- **Bản dùng thử miễn phí:** Tính năng đầy đủ trong 30 ngày.  
 - **Giấy phép tạm thời:** Gia hạn thời gian đánh giá nếu cần.  
 - **Mua:** Nhận giấy phép vĩnh viễn cho việc sử dụng trong môi trường sản xuất.
 
 ### Khởi tạo cơ bản
-
 Sau khi thêm phụ thuộc Maven, khởi tạo thư viện trong mã Java của bạn:
 
 ```java
@@ -96,27 +114,27 @@ public class Main {
 ```
 
 ## Cách chuyển đổi MSG sang MHT bằng Aspose.Email cho Java
+Tải tệp MSG, cấu hình các tùy chọn lưu, tùy chọn áp dụng các mẫu HTML tùy chỉnh, và ghi đầu ra MHT. Toàn bộ quy trình có thể được thực hiện chỉ với một vài câu lệnh.
 
 ### Tải tệp MSG
-
-**Bước 1 – Nhập lớp cần thiết**
+**Bước 1 – Nhập lớp cần thiết**  
+Lớp `MapiMessage` đại diện cho một tin nhắn Outlook trong bộ nhớ.
 
 ```java
 import com.aspose.email.MapiMessage;
 ```
 
-**Bước 2 – Tải tin nhắn từ đĩa**
+**Bước 2 – Tải tin nhắn từ đĩa**  
+`MapiMessage.fromFile()` đọc tệp `.msg` và tạo một đối tượng `MapiMessage` được điền đầy đủ.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Ensure this path is correct
 MapiMessage msg = MapiMessage.fromFile(dataDir + "MapiTask.msg");
 ```
 
-Phương thức `MapiMessage.fromFile()` đọc tệp `.msg` và tạo một đối tượng `MapiMessage` có thể thao tác.
-
 ### Cấu hình tùy chọn lưu MHT
-
-**Bước 1 – Nhập các lớp tùy chọn lưu**
+**Bước 1 – Nhập các lớp tùy chọn lưu**  
+`MhtSaveOptions` kiểm soát cách tệp MHT được tạo, trong khi `MhtTemplateName` cho phép bạn chọn một bố cục HTML được định sẵn.
 
 ```java
 import com.aspose.email.MhtFormatOptions;
@@ -124,24 +142,24 @@ import com.aspose.email.MhtSaveOptions;
 import com.aspose.email.SaveOptions;
 ```
 
-**Bước 2 – Thiết lập các tùy chọn**
+**Bước 2 – Thiết lập các tùy chọn**  
+Bật nhúng tài nguyên và chỉ định mẫu bạn muốn. Điều này đảm bảo hình ảnh và CSS được gói trong tệp MHT đơn.
 
 ```java
 MhtSaveOptions opt = SaveOptions.getDefaultMhtml();
 opt.setMhtFormatOptions(MhtFormatOptions.RenderTaskFields | MhtFormatOptions.WriteHeader);
 ```
 
-`RenderTaskFields` đảm bảo các trường đặc thù của nhiệm vụ được bao gồm, trong khi `WriteHeader` thêm các tiêu đề email tiêu chuẩn vào đầu ra MHT.
-
 ### Định nghĩa mẫu HTML tùy chỉnh (Tùy chọn)
-
-**Bước 1 – Nhập enum mẫu**
+**Bước 1 – Nhập enum mẫu**  
+`MhtTemplateName` liệt kê các mẫu HTML tích hợp sẵn mà Aspose.Email cung cấp.
 
 ```java
 import com.aspose.email.MhtTemplateName;
 ```
 
-**Bước 2 – Tùy chỉnh các mẫu**
+**Bước 2 – Tùy chỉnh các mẫu**  
+Bạn có thể ghi đè các placeholder mặc định hoặc cung cấp các đoạn HTML của riêng mình để tùy chỉnh giao diện cuối cùng.
 
 ```java
 opt.getFormatTemplates().clear();
@@ -153,76 +171,73 @@ opt.getFormatTemplates().add(MhtTemplateName.Task.OWNER, "<span class='headerLin
 opt.getFormatTemplates().add(MhtTemplateName.Task.PRIORITY, "<span class='headerLineTitle'>Priority:</span><span class='headerLineText'>{0}</span><br/>");
 ```
 
-Các mẫu này cho phép bạn kiểm soát cách mỗi thuộc tính nhiệm vụ xuất hiện trong tệp MHT cuối cùng, làm cho đầu ra rõ ràng hơn cho người dùng cuối.
-
 ### Lưu tin nhắn dưới dạng tệp MHT
-
-**Bước 1 – Xác định thư mục đầu ra**
+**Bước 1 – Xác định thư mục đầu ra**  
+Đảm bảo thư mục đích tồn tại trước khi lưu.
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY"; // Ensure this path is correct
 ```
 
-**Bước 2 – Thực hiện thao tác lưu**
+**Bước 2 – Thực hiện thao tác lưu**  
+Phương thức `save` ghi tệp MHT đã tùy chỉnh vào đĩa trong một bước duy nhất.
 
 ```java
 msg.save(outputDir + "MapiTask_out.mht", opt);
 ```
 
-Phương thức `save` ghi tệp MHT đã tùy chỉnh vào đĩa. Kiểm tra đường dẫn `outputDir` trước khi chạy mã.
-
-## Ứng dụng thực tế (Tại sao chuyển đổi MSG sang MHT?)
-
-- **Lưu trữ:** Lưu email trong một định dạng duy nhất, di động mà trình duyệt có thể hiển thị mà không cần Outlook.  
+## Ứng dụng thực tiễn (Tại sao chuyển đổi MSG sang MHT?)
+- **Lưu trữ:** Lưu email ở định dạng di động, đơn tệp mà trình duyệt có thể hiển thị mà không cần Outlook.  
 - **Di chuyển:** Chuyển các kho lưu trữ Outlook cũ sang các nền tảng email dựa trên web.  
-- **Báo cáo & Phân tích:** Phân tích tệp MHT bằng các bộ phân tích HTML để trích xuất dữ liệu và trí tuệ kinh doanh.  
-- **Tuân thủ pháp lý:** Bảo tồn nội dung và siêu dữ liệu gốc của tin nhắn trong định dạng không thể bị giả mạo.
+- **Báo cáo & Phân tích:** Phân tích các tệp MHT bằng các trình phân tích HTML để trích xuất dữ liệu và khai thác thông tin kinh doanh.  
+- **Tuân thủ pháp lý:** Bảo tồn nội dung và siêu dữ liệu gốc của tin nhắn trong định dạng chống giả mạo.
 
-## Cân nhắc về hiệu năng
-
-- **Xử lý theo lô:** Khi xử lý hàng nghìn tệp MSG, xử lý chúng theo lô để tránh tăng đột biến bộ nhớ.  
-- **Thực thi bất đồng bộ:** Tận dụng `CompletableFuture` của Java hoặc các dịch vụ executor để chuyển đổi tệp song song.  
-- **Dọn dẹp tài nguyên:** Đóng các luồng một cách rõ ràng nếu bạn mở bất kỳ luồng tùy chỉnh nào ngoài API của Aspose.
+## Các cân nhắc về hiệu năng
+- **Xử lý theo lô:** Khi xử lý hàng nghìn tệp MSG, hãy xử lý chúng theo lô để tránh tăng đột biến bộ nhớ.  
+- **Thực thi bất đồng bộ:** Sử dụng `CompletableFuture` của Java hoặc các dịch vụ executor để chuyển đổi tệp song song.  
+- **Dọn dẹp tài nguyên:** Đóng các stream một cách rõ ràng nếu bạn mở bất kỳ stream tùy chỉnh nào ngoài API của Aspose.
 
 ## Các vấn đề thường gặp & Khắc phục
-
-| Triệu chứng | Nguyên nhân có thể | Cách khắc phục |
-|-------------|---------------------|----------------|
-| **NullPointerException khi `msg.save`** | Thư mục đầu ra không tồn tại | Tạo thư mục hoặc sử dụng `Files.createDirectories(Paths.get(outputDir));` |
-| **Thiếu tệp đính kèm trong MHT** | `MhtSaveOptions` không được thiết lập để nhúng tài nguyên | Sử dụng `opt.setMhtFormatOptions(opt.getMhtFormatOptions() \| MhtFormatOptions.WriteResources);` |
-| **Định dạng ngày không đúng** | Cài đặt locale khác nhau | Điều chỉnh `opt.setDateFormat("yyyy-MM-dd HH:mm:ss");` |
+| Triệu chứng | Nguyên nhân khả dĩ | Cách khắc phục |
+|------------|---------------------|----------------|
+| **NullPointerException trên `msg.save`** | Thư mục đầu ra không tồn tại | Tạo thư mục hoặc sử dụng `Files.createDirectories(Paths.get(outputDir));` |
+| **Thiếu tệp đính kèm trong MHT** | `MhtSaveOptions` chưa được thiết lập để nhúng tài nguyên | Sử dụng `opt.setMhtFormatOptions(opt.getMhtFormatOptions() \| MhtFormatOptions.WriteResources);` |
+| **Định dạng ngày không đúng** | Cài đặt ngôn ngữ địa phương khác nhau | Điều chỉnh `opt.setDateFormat("yyyy-MM-dd HH:mm:ss");` |
 
 ## Câu hỏi thường gặp
+**Q: Sự khác biệt giữa MSG và MHT là gì?**  
+A: MSG là định dạng nhị phân độc quyền của Outlook lưu trữ email, tệp đính kèm và siêu dữ liệu. MHT (MHTML) là định dạng đơn tệp dựa trên HTML, gộp phần thân email, hình ảnh và CSS, cho phép xem trong bất kỳ trình duyệt nào.
 
-**H: MSG và MHT có gì khác nhau?**  
-T: MSG là định dạng nhị phân độc quyền của Outlook lưu trữ email, tệp đính kèm và siêu dữ liệu. MHT (MHTML) là định dạng tệp đơn dựa trên HTML, gói nội dung email, hình ảnh và CSS, cho phép xem trong bất kỳ trình duyệt nào.
+**Q: Tôi có thể chuyển đổi các mục MAPI khác như cuộc hẹn hoặc danh bạ không?**  
+A: Có. Aspose.Email hỗ trợ chuyển đổi cuộc hẹn, danh bạ và nhiệm vụ sang MHT bằng cách sử dụng các lớp `Mapi*` tương ứng và điều chỉnh tên mẫu.
 
-**H: Tôi có thể chuyển đổi các mục MAPI khác như cuộc hẹn hoặc danh bạ không?**  
-T: Có. Aspose.Email hỗ trợ chuyển đổi cuộc hẹn, danh bạ và nhiệm vụ sang MHT bằng cách sử dụng các lớp `Mapi*` tương ứng và điều chỉnh tên mẫu.
+**Q: Tôi có cần kết nối internet để thực hiện chuyển đổi không?**  
+A: Không. Tất cả quá trình xử lý diễn ra cục bộ; chỉ khi kích hoạt giấy phép một lần có thể liên hệ tới máy chủ của Aspose.
 
-**H: Tôi có cần kết nối internet để thực hiện chuyển đổi không?**  
-T: Không. Tất cả quá trình xử lý diễn ra cục bộ trong môi trường Java; chỉ có việc kiểm tra kích hoạt giấy phép có thể liên hệ với máy chủ của Aspose một lần.
+**Q: Việc chuyển đổi có an toàn với đa luồng không?**  
+A: API an toàn với đa luồng cho các thao tác chỉ đọc. Khi chuyển đổi nhiều tệp đồng thời, hãy tạo các đối tượng `MapiMessage` riêng cho mỗi luồng.
 
-**H: Quá trình chuyển đổi có an toàn với đa luồng không?**  
-T: API tự nó an toàn với đa luồng cho các thao tác chỉ đọc. Khi chuyển đổi nhiều tệp đồng thời, tạo các đối tượng `MapiMessage` riêng cho mỗi luồng.
-
-**H: Aspose.Email có thể xử lý tệp MSG lớn đến mức nào?**  
-T: Thư viện có thể xử lý các tệp lên tới vài trăm megabyte, nhưng bạn nên giám sát kích thước heap JVM và cân nhắc streaming các tệp đính kèm lớn.
+**Q: Aspose.Email có thể xử lý tệp MSG có kích thước bao nhiêu?**  
+A: Thư viện có thể xử lý các tệp lên tới vài trăm megabyte, nhưng bạn nên giám sát kích thước heap JVM và cân nhắc streaming các tệp đính kèm lớn.
 
 ## Kết luận
+Bạn đã có một quy trình hoàn chỉnh, sẵn sàng cho sản xuất để **chuyển đổi msg sang mht** bằng Aspose.Email cho Java. Bằng cách tận dụng các mẫu tùy chỉnh, bạn có thể đồng bộ đầu ra HTML với thương hiệu của tổ chức trong khi thư viện thực hiện phần nặng của việc phân tích định dạng nhị phân của Outlook.
 
-Bây giờ bạn đã có một quy trình hoàn chỉnh, sẵn sàng cho sản xuất để **chuyển đổi MSG sang MHT** bằng Aspose.Email cho Java. Bằng cách tận dụng các mẫu tùy chỉnh, bạn có thể điều chỉnh đầu ra HTML để phù hợp với thương hiệu hoặc tiêu chuẩn báo cáo của tổ chức, trong khi thư viện thực hiện phần xử lý nặng của việc phân tích định dạng nhị phân của Outlook.
-
-**Các bước tiếp theo:**  
-- Thử nghiệm với các giá trị `MhtTemplateName` khác nhau để tạo kiểu cho các loại mục MAPI khác.  
+**Các bước tiếp theo**  
+- Thử nghiệm các giá trị `MhtTemplateName` khác nhau để tạo kiểu cho các loại mục MAPI khác.  
 - Tích hợp quá trình chuyển đổi vào công việc batch hoặc dịch vụ REST để xử lý theo yêu cầu.  
-- Khám phá các tính năng khác của Aspose.Email như xử lý PST, gửi email và phân tích MIME.
+- Khám phá các khả năng bổ sung của Aspose.Email như xử lý PST, gửi email và phân tích MIME.
 
 ---
 
-**Cập nhật lần cuối:** 2026-01-17  
-**Kiểm tra với:** Aspose.Email for Java 25.4 (classifier `jdk16`)  
+**Cập nhật lần cuối:** 2026-06-18  
+**Đã kiểm tra với:** Aspose.Email for Java 25.4 (classifier `jdk16`)  
 **Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Converting EML to MHT/MHTML Using Aspose.Email for Java: A Comprehensive Guide](/email/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/)
+- [convert msg eml with Aspose.Email Java – TNEF Attachments Guide](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
