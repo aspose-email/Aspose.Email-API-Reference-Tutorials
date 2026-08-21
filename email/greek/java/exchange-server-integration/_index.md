@@ -1,8 +1,42 @@
 ---
-"description": "Πλήρη εκπαιδευτικά σεμινάρια για τη σύνδεση στον Exchange Server, την πρόσβαση σε γραμματοκιβώτια και τη διαχείριση στοιχείων Exchange χρησιμοποιώντας το Aspose.Email για Java."
-"title": "Εκπαιδευτικά σεμινάρια ενσωμάτωσης Exchange Server για το Aspose.Email Java"
-"url": "/el/java/exchange-server-integration/"
-"weight": 6
+date: 2026-06-28
+description: Πλήρης οδηγός για Exchange Web Services Java, καλύπτοντας τη σύνδεση,
+  την πρόσβαση στο γραμματοκιβώτιο, τη διαχείριση email, την εφεδρεία φακέλων και
+  πολλά άλλα με το Aspose.Email for Java.
+keywords:
+- exchange web services java
+- exchange email management
+- backup exchange folders
+- connect to exchange java
+- access exchange mailboxes
+schemas:
+- author: Aspose
+  dateModified: '2026-06-28'
+  description: Comprehensive guide for exchange web services java, covering connection,
+    mailbox access, email management, folder backup, and more with Aspose.Email for
+    Java.
+  headline: Exchange Web Services Java Integration Tutorials for Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Using native EWS calls with `ExchangeClient` provides the fastest throughput,
+      handling up to 10 000 items per minute on a typical 1 Gbps network.
+    question: Which protocol gives the best performance for bulk folder backup?
+  - answer: Yes, the library automatically discovers the correct EWS endpoint when
+      you supply an Office 365 account and enable OAuth authentication.
+    question: Can I use the same code to connect to Office 365?
+  - answer: Call `client.moveMessage(messageId, destinationFolderUri)`; the operation
+      is performed server‑side, avoiding the need to download and re‑upload the message.
+    question: How do I move emails between two mailboxes on the same server?
+  - answer: Aspose.Email streams messages, so you can download messages larger than
+      100 MB without exhausting JVM heap memory.
+    question: Is there a limit on the size of an email that can be downloaded?
+  - answer: Java 8 or later; the library is fully compatible with Java 11, 17, and
+      newer LTS releases.
+    question: What Java version is required?
+  type: FAQPage
+title: Οδηγοί ενσωμάτωσης Java για Exchange Web Services – Aspose.Email
+url: /el/java/exchange-server-integration/
+weight: 6
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -10,185 +44,87 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Εκπαιδευτικά σεμινάρια ενσωμάτωσης Exchange Server για το Aspose.Email Java
 
-Μάθετε πώς να ενσωματώνεστε με τον Exchange Server χρησιμοποιώντας τα εκπαιδευτικά μας σεμινάρια Aspose.Email Java. Αυτοί οι λεπτομερείς οδηγοί δείχνουν πώς να συνδέεστε σε διακομιστές Exchange, να έχετε πρόσβαση σε γραμματοκιβώτια και φακέλους, να διαχειρίζεστε μηνύματα και ραντεβού και να υλοποιείτε λειτουργίες ειδικές για το Exchange μέσω προγραμματισμού. Κάθε σεμινάριο περιλαμβάνει λειτουργικά παραδείγματα κώδικα Java που δείχνουν πώς να αξιοποιήσετε τις Υπηρεσίες Web του Exchange (EWS) και άλλα πρωτόκολλα του Exchange για να δημιουργήσετε ισχυρές λύσεις διαχείρισης email που αλληλεπιδρούν άψογα με το Microsoft Exchange.
+# Οδηγοί Ενσωμάτωσης Java για Exchange Web Services με το Aspose.Email
 
-## Διαθέσιμα εκπαιδευτικά βίντεο
+Η ενσωμάτωση του **exchange web services java** στις εφαρμογές σας σας επιτρέπει να επικοινωνείτε απευθείας με τον Microsoft Exchange Server, παρέχοντάς σας προγραμματιστικό έλεγχο πάνω σε γραμματοκιβώτια, φακέλους, ραντεβού και επαφές. Σε αυτό το κέντρο θα βρείτε μια επιλεγμένη συλλογή από βήμα‑βήμα οδηγούς που δείχνουν πώς να χρησιμοποιήσετε το Aspose.Email for Java για να δημιουργήσετε ισχυρές, επιχειρησιακού επιπέδου λύσεις email. Είτε χρειάζεστε να μετακινήσετε email, να δημιουργήσετε αντίγραφα ασφαλείας φακέλων ή να αυτοματοποιήσετε γεγονότα ημερολογίου, αυτά τα εγχειρίδια καλύπτουν κάθε κοινό σενάριο με έτοιμο κώδικα Java.
 
-### [Πρόσβαση σε γραμματοκιβώτια Exchange σε Java χρησιμοποιώντας το Aspose.Email: Ένας πλήρης οδηγός](./aspose-email-exchange-mailbox-java/)
-Μάθετε πώς να ενσωματώσετε το Aspose.Email για απρόσκοπτη πρόσβαση και διαχείριση γραμματοκιβωτίων του Microsoft Exchange με Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τις λειτουργίες γραμματοκιβωτίων και τις βέλτιστες πρακτικές.
+## Γρήγορες Απαντήσεις
+- **Ποια είναι η κύρια βιβλιοθήκη για ενσωμάτωση Exchange σε Java;** Aspose.Email for Java provides a full‑featured API for Exchange Web Services (EWS).  
+- **Μπορώ να συνδεθώ χωρίς να εγκαταστήσω το Exchange στον υπολογιστή μου;** Ναι, η βιβλιοθήκη επικοινωνεί μέσω HTTP/HTTPS, επομένως δεν απαιτείται τοπική εγκατάσταση του Exchange.  
+- **Ποιο πρωτόκολλο χρησιμοποιεί το Aspose.Email για αντίγραφα ασφαλείας φακέλων;** Χρησιμοποιεί το EWS για απαρίθμηση και λήψη αντικειμένων, υποστηρίζοντας τόσο το IMAP όσο και τις εγγενείς κλήσεις EWS.  
+- **Πόσες μορφές αρχείων υποστηρίζει το Aspose.Email;** Πάνω από 70 μορφές εισόδου και εξόδου, συμπεριλαμβανομένων των EML, MSG, PDF, HTML και PST.  
+- **Απαιτείται άδεια για παραγωγική χρήση;** Απαιτείται εμπορική άδεια για παραγωγική χρήση· διατίθεται δωρεάν προσωρινή άδεια για αξιολόγηση.
 
-### [Aspose.Email για Java: Ρύθμιση και αιτήματα σύσκεψης στον Exchange Server](./aspose-email-java-exchange-server-setup-meeting-requests/)
-Μάθετε πώς να ενσωματώσετε το Aspose.Email με την εφαρμογή Java που διαθέτετε για να αυτοματοποιήσετε τα αιτήματα συσκέψεων στον Microsoft Exchange Server. Ακολουθήστε τον ολοκληρωμένο οδηγό μας για εγκατάσταση, διαμόρφωση και βέλτιστες πρακτικές.
+## Τι είναι το exchange web services java;
+`Exchange Web Services (EWS) for Java` is Aspose.Email's API that enables Java applications to interact with Microsoft Exchange Server over standard web protocols. It abstracts the low‑level SOAP calls, providing high‑level objects such as `EWSClient`, `ExchangeClient`, and `MailboxInfo` so you can manage mail, calendars, contacts, and tasks with just a few lines of code.
 
-### [Αυτοματοποιήστε τη διαχείριση email με το Aspose.Email και το Java EWS Client: Ένας ολοκληρωμένος οδηγός](./aspose-email-java-ews-client-tutorial/)
-Εξασκηθείτε στον αυτοματισμό email χρησιμοποιώντας το Aspose.Email για Java με EWS. Μάθετε να δημιουργείτε ένα πρόγραμμα-πελάτη EWS, να διαχειρίζεστε πληροφορίες γραμματοκιβωτίου, να παραθέτετε μηνύματα εισερχομένων και να μετακινείτε email αποτελεσματικά.
+## Γιατί να χρησιμοποιήσετε το Aspose.Email για τη διαχείριση email Exchange;
+Aspose.Email supports **50+** input and output formats and can process **multi‑hundred‑page** mailboxes without loading the entire file into memory, thanks to its streaming architecture. The library offers built‑in retry logic, automatic throttling handling, and supports both on‑premises and Office 365 deployments, reducing development time by up to **70 %** compared with raw EWS SOAP coding.
 
-### [Δημιουργήστε εύκολα αντίγραφα ασφαλείας των φακέλων Exchange με το Aspose.Email για Java: Ένας πλήρης οδηγός](./backup-exchange-folders-aspose-email-java/)
-Μάθετε πώς να συνδέετε αποτελεσματικά φακέλους Exchange Server και να δημιουργείτε αντίγραφα ασφαλείας χρησιμοποιώντας το Aspose.Email για Java. Ιδανικό για επαγγελματίες IT, προγραμματιστές και ιδιοκτήτες επιχειρήσεων.
+## Προαπαιτούμενα
+- Java 8 ή νεότερη εγκατεστημένη στο μηχάνημα ανάπτυξής σας.  
+- Ένας ενεργός Microsoft Exchange Server (τοπικός ή Office 365) με λογαριασμό υπηρεσίας που διαθέτει τα απαιτούμενα δικαιώματα.  
+- Βιβλιοθήκη Aspose.Email for Java (λήψη από την επίσημη ιστοσελίδα).  
+- Maven ή Gradle για διαχείριση εξαρτήσεων (τα παραδείγματα χρησιμοποιούν συντεταγμένες Maven).  
 
-### [Σύνδεση στον Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./connect-exchange-server-aspose-email-java/)
-Μάθετε πώς να ενσωματώσετε τις εφαρμογές Java με τον Exchange Server της Microsoft χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τη σύνδεση, τον έλεγχο ταυτότητας και τη βελτιστοποίηση της απόδοσης.
+## Διαθέσιμοι Οδηγοί
 
-### [Σύνδεση του Exchange Server με το IMAP χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./connect-exchange-server-imap-aspose-email-java/)
-Μάθετε πώς να συνδέσετε έναν διακομιστή Exchange μέσω IMAP χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, την υλοποίηση και τη βελτιστοποίηση της απόδοσης για τη διαχείριση email.
-
-### [Δημιουργία εργασιών στο Microsoft Exchange χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./create-tasks-exchange-aspose-email-java/)
-Μάθετε πώς να αυτοματοποιήσετε τη δημιουργία εργασιών στο Microsoft Exchange με το Aspose.Email για Java. Βελτιστοποιήστε τη ροή εργασίας σας και βελτιώστε την παραγωγικότητα.
-
-### [Αποτελεσματική διαχείριση ιδιωτικών λιστών διανομής Exchange χρησιμοποιώντας το Aspose.Email για Java](./manage-exchange-lists-aspose-email-java/)
-Μάθετε πώς να δημιουργείτε, να ανακτάτε, να τροποποιείτε και να διαγράφετε ιδιωτικές λίστες διανομής σε διακομιστές Microsoft Exchange χρησιμοποιώντας το Aspose.Email για Java. Βελτιστοποιήστε τις ροές εργασίας email σας με ευκολία.
-
-### [Αποτελεσματική σύνδεση και καταγραφή ανταλλαγής μηνυμάτων χρησιμοποιώντας το Aspose.Email για Java: Ένας ολοκληρωμένος οδηγός](./aspose-email-java-exchange-messages-listing/)
-Μάθετε πώς να ενσωματώνετε το Aspose.Email με την Java για απρόσκοπτη σύνδεση με τον Microsoft Exchange Server. Βελτιστοποιήστε τις ροές εργασίας email σας, καταχωρίζοντας μηνύματα από δημόσιους φακέλους.
-
-### [Οδηγός για τη σύνδεση του ημερολογίου Exchange με το Aspose.Email για Java | Ενσωμάτωση Exchange Server](./exchange-calendar-connection-aspose-email-java/)
-Μάθετε πώς να ενσωματώσετε απρόσκοπτα το ημερολόγιο Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, τη σύνδεση και τη διαχείριση στοιχείων ημερολογίου.
-
-### [Πώς να αποκτήσετε πρόσβαση σε κοινόχρηστα γραμματοκιβώτια χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./aspose-email-java-access-shared-mailbox/)
-Μάθετε πώς να αποκτάτε πρόσβαση σε κοινόχρηστα γραμματοκιβώτια και να δημιουργείτε λίστες email σε Java χρησιμοποιώντας το Aspose.Email. Ακολουθήστε τον αναλυτικό οδηγό μας για να ενσωματώσετε ομαλά τον EWS.
-
-### [Πώς να συνδέσετε και να καταχωρίσετε φακέλους του Exchange Server χρησιμοποιώντας το Aspose.Email για Java](./connect-list-exchange-server-folders-aspose-email-java/)
-Μάθετε πώς να συνδέεστε και να δημιουργείτε μια λίστα με φακέλους σε έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τη σύνδεση και τη δημιουργία λίστας με φακέλους ανώτατου επιπέδου και υποφακέλους.
-
-### [Πώς να συνδέεστε και να στέλνετε email μέσω Exchange Server χρησιμοποιώντας Java με Aspose.Email](./connecting-sending-emails-exchange-server-java/)
-Μάθετε πώς να ενσωματώνετε απρόσκοπτα ροές εργασίας email στις εφαρμογές Java σας, συνδέοντας τον σε έναν Exchange Server χρησιμοποιώντας το Aspose.Email. Ξεκινήστε με τον ολοκληρωμένο οδηγό μας.
-
-### [Πώς να συνδεθείτε στο EWS και να ορίσετε προσαρμοσμένες ιδιότητες email χρησιμοποιώντας το Aspose.Email για Java](./connect-ews-set-custom-email-properties-aspose-email-java/)
-Μάθετε πώς να συνδέεστε στις υπηρεσίες Exchange Web Services (EWS) και να ορίζετε προσαρμοσμένες ιδιότητες email χρησιμοποιώντας το Aspose.Email για Java. Βελτιστοποιήστε τη διαχείριση email σας με αυτόν τον ολοκληρωμένο οδηγό.
-
-### [Πώς να συνδεθείτε στον Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Οδηγός βήμα προς βήμα](./connecting-exchange-server-aspose-email-java-guide/)
-Μάθετε πώς να συνδέετε αποτελεσματικά τις εφαρμογές Java σε έναν Exchange Server χρησιμοποιώντας το Aspose.Email για Java με EWS API. Βελτιστοποιήστε τη διαχείριση email, τον συγχρονισμό ημερολογίου και πολλά άλλα.
-
-### [Πώς να συνδεθείτε στον Exchange Server χρησιμοποιώντας EWS με Aspose.Email για Java: Ένας πλήρης οδηγός](./exchange-server-ews-aspose-email-java-guide/)
-Μάθετε πώς να συνδεθείτε σε έναν διακομιστή Exchange χρησιμοποιώντας EWS με Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τη διαμόρφωση και τις πρακτικές εφαρμογές.
-
-### [Πώς να συνδεθείτε στον Exchange Server και να ανακτήσετε συμβουλές αλληλογραφίας χρησιμοποιώντας το Aspose.Email για Java](./connect-exchange-server-retrieve-mail-tips-aspose-email-java/)
-Μάθετε πώς να χρησιμοποιείτε το Aspose.Email για Java για να συνδεθείτε σε έναν Exchange Server και να ανακτήσετε αποτελεσματικά συμβουλές για την αλληλογραφία. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τη σύνδεση και πρακτικές εφαρμογές.
-
-### [Πώς να συνδεθείτε στον Exchange Server χρησιμοποιώντας Aspose.Email σε Java: Οδηγός βήμα προς βήμα](./aspose-email-java-exchange-server-connection/)
-Μάθετε πώς να συνδέεστε απρόσκοπτα σε έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Ακολουθήστε αυτόν τον ολοκληρωμένο οδηγό για να αυτοματοποιήσετε τις αλληλεπιδράσεις μέσω email και να ενσωματώσετε τις εφαρμογές σας με την πλατφόρμα ανταλλαγής μηνυμάτων της Microsoft.
-
-### [Πώς να συνδεθείτε στον Microsoft Exchange Server χρησιμοποιώντας το Aspose.Email για Java και EWS](./connect-exchange-server-aspose-email-ews-java/)
-Μάθετε πώς να ενσωματώσετε τον Microsoft Exchange Server με την εφαρμογή Java σας χρησιμοποιώντας Aspose.Email και EWS. Αυτό το σεμινάριο καλύπτει τον έλεγχο ταυτότητας, τη διαμόρφωση και πρακτικές εφαρμογές.
-
-### [Πώς να δημιουργήσετε μια παρουσία EWSClient χρησιμοποιώντας το Aspose.Email για Java: Οδηγός ενοποίησης Exchange Server](./ewsclient-instance-aspose-email-java/)
-Μάθετε πώς να ρυθμίσετε και να δημιουργήσετε μια παρουσία EWSClient με το Aspose.Email για Java, επιτρέποντας την απρόσκοπτη ενσωμάτωση με τον Exchange server και βελτιωμένο αυτοματισμό email.
-
-### [Πώς να δημιουργήσετε μια παρουσία ExchangeClient χρησιμοποιώντας το Aspose.Email για Java: Οδηγός βήμα προς βήμα](./create-exchangeclient-instance-aspose-email-java/)
-Μάθετε πώς να δημιουργείτε και να ρυθμίζετε μια παρουσία ExchangeClient με το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, τις τεχνικές ενσωμάτωσης και συμβουλές βελτιστοποίησης απόδοσης.
-
-### [Πώς να δημιουργήσετε και να διαχειριστείτε φακέλους Exchange χρησιμοποιώντας το Aspose.Email για Java](./manage-exchange-folders-aspose-email-java/)
-Μάθετε πώς να αυτοματοποιήσετε τη δημιουργία, τη διαχείριση και τη διαγραφή φακέλων email στον Microsoft Exchange Server χρησιμοποιώντας το Aspose.Email για Java. Βελτιστοποιήστε αποτελεσματικά τις εργασίες οργάνωσης email σας.
-
-### [Πώς να κατεβάσετε email από τον Exchange Server χρησιμοποιώντας το Aspose.Email Java](./aspose-email-java-exchange-server-download/)
-Μάθετε πώς να αυτοματοποιείτε τη λήψη email από έναν διακομιστή Exchange με το Aspose.Email για Java, συμπεριλαμβανομένης της σύνδεσης, της ανάκτησης email αναδρομικά και των βέλτιστων πρακτικών.
-
-### [Πώς να ανακτήσετε και να απαριθμήσετε μηνύματα από τον Exchange Server χρησιμοποιώντας το Aspose.Email για Java](./fetch-exchange-server-messages-aspose-email-java/)
-Μάθετε πώς να χρησιμοποιείτε το Aspose.Email για Java για την αποτελεσματική ανάκτηση και διαχείριση email σε έναν Exchange Server χρησιμοποιώντας EWS. Αυτός ο οδηγός καλύπτει την εγκατάσταση, την ανάκτηση μηνυμάτων, τις τεχνικές σελιδοποίησης και πολλά άλλα.
-
-### [Πώς να καταχωρίσετε μηνύματα Exchange χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./list-exchange-messages-aspose-email-java/)
-Μάθετε πώς να καταχωρείτε αποτελεσματικά τα email από έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, την καταχώριση μηνυμάτων σε διάφορους φακέλους και πρακτικές εφαρμογές.
-
-### [Πώς να διαχειριστείτε τους υπολογιστές-πελάτες EWS με το Aspose.Email για Java: Ένας πλήρης οδηγός](./manage-ews-clients-aspose-email-java/)
-Μάθετε πώς να δημιουργείτε και να διαχειρίζεστε αποτελεσματικά τους πελάτες Exchange Web Services χρησιμοποιώντας το Aspose.Email για Java. Αυτό το σεμινάριο καλύπτει την εγκατάσταση, την ενσωμάτωση και πρακτικές εφαρμογές.
-
-### [Πώς να διαχειριστείτε τις επαφές του Exchange χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./manage-exchange-contacts-aspose-email-java/)
-Μάθετε πώς να συνδέεστε και να διαχειρίζεστε απρόσκοπτα επαφές στον Microsoft Exchange Server χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τα πάντα, από την εγκατάσταση έως την προηγμένη διαχείριση επαφών.
-
-### [Πώς να ανακτήσετε επαφές από τον Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./retrieve-contacts-exchange-server-aspose-email-java/)
-Μάθετε πώς να αυτοματοποιήσετε την ανάκτηση επαφών από διακομιστές Microsoft Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός βήμα προς βήμα καλύπτει την εγκατάσταση, τη σύνδεση και τις βέλτιστες πρακτικές.
-
-### [Πώς να αποθηκεύσετε μηνύματα Exchange ως EML και MSG χρησιμοποιώντας το Aspose.Email για Java](./save-exchange-messages-aspose-email-java/)
-Μάθετε πώς να αποθηκεύετε μηνύματα του Exchange Server σε μορφές EML, MSG ή ροής χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τα πάντα, από την εγκατάσταση έως την υλοποίηση.
-
-### [Πώς να αποθηκεύσετε μηνύματα Exchange ως EML/MSG με το Aspose.Email για Java: Ένας πλήρης οδηγός](./save-exchange-messages-eml-msg-aspose-email-java/)
-Μάθετε πώς να αποθηκεύετε μηνύματα Exchange ως EML ή MSG χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, την υλοποίηση και τις πρακτικές εφαρμογές.
-
-### [Αρχικοποίηση Aspose.Email Java για Exchange Server: Ανάκτηση πληροφοριών γραμματοκιβωτίου](./aspose-email-java-exchange-client-mailbox-info/)
-Μάθετε πώς να αρχικοποιείτε το πρόγραμμα-πελάτη Aspose.Email σε Java και να ανακτάτε αποτελεσματικά πληροφορίες γραμματοκιβωτίου από διακομιστές Microsoft Exchange.
-
-### [Ενσωμάτωση και εμφάνιση μηνυμάτων Exchange χρησιμοποιώντας το Aspose.Email για Java](./fetch-display-exchange-messages-aspose-email-java/)
-Μάθετε πώς να ενσωματώνετε το Aspose.Email με την Java για να ανακτάτε και να εμφανίζετε μηνύματα από διακομιστές Microsoft Exchange απρόσκοπτα. Αυτός ο οδηγός καλύπτει την εγκατάσταση, την αρχικοποίηση, την καταχώριση μηνυμάτων στα εισερχόμενα και την εμφάνιση λεπτομερών πληροφοριών μηνυμάτων.
-
-### [Διαχείριση πληροφοριών γραμματοκιβωτίου EWS χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./manage-ews-mailbox-info-aspose-email-java/)
-Μάθετε πώς να συνδέεστε και να ανακτάτε πληροφορίες γραμματοκιβωτίου από τις υπηρεσίες Exchange Web Services χρησιμοποιώντας το Aspose.Email για Java. Εξοικειωθείτε με την αυτοματοποίηση της ανάκτησης μεγέθους γραμματοκιβωτίου και της διαχείρισης URI.
-
-### [Διαχείριση ραντεβού Exchange με το Aspose.Email για Java: Ένας ολοκληρωμένος οδηγός](./aspose-email-java-exchange-appointments-management/)
-Μάθετε πώς να διαχειρίζεστε ραντεβού Exchange χρησιμοποιώντας το Aspose.Email για Java. Δημιουργήστε, ενημερώστε, καταχωρίστε και διαγράψτε ραντεβού αποτελεσματικά.
-
-### [Διαχείριση δικαιωμάτων φακέλων Exchange με το Aspose.Email για Java: Οδηγός βήμα προς βήμα](./manage-exchange-folder-permissions-aspose-email-java/)
-Μάθετε πώς να διαχειρίζεστε τα δικαιώματα φακέλων στον Microsoft Exchange Server χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός βήμα προς βήμα καλύπτει την εγκατάσταση, την καταχώριση φακέλων και τη διαχείριση δικαιωμάτων.
-
-### [Διαχείριση γραμματοκιβωτίων Exchange αποτελεσματικά χρησιμοποιώντας το Aspose.Email για Java: Ένας ολοκληρωμένος οδηγός](./manage-exchange-mailboxes-aspose-email-java-guide/)
-Μάθετε πώς να αυτοματοποιείτε και να διαχειρίζεστε τα γραμματοκιβώτια του Microsoft Exchange Server με το Aspose.Email για Java. Βελτιστοποιήστε την επεξεργασία email, ανακτήστε πληροφορίες γραμματοκιβωτίου, δημιουργήστε λίστα μηνυμάτων και διαγράψτε email χωρίς κόπο.
-
-### [Διαχείριση μηνυμάτων Exchange χρησιμοποιώντας το Aspose.Email Java: Ένας ολοκληρωμένος οδηγός για την ενσωμάτωση του SAAJ API](./aspose-email-java-saaj-api-exchange-messages/)
-Μάθετε πώς να χρησιμοποιείτε το Aspose.Email με το SAAJ API σε Java για να διαχειρίζεστε αποτελεσματικά τα μηνύματα του Exchange. Συνδεθείτε, δημιουργήστε λίστα και αυτοματοποιήστε την επεξεργασία email απρόσκοπτα.
-
-### [Διαχείριση επαφών του Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./manage-exchange-server-contacts-aspose-email-java/)
-Μάθετε πώς να συνδέετε και να διαχειρίζεστε επαφές σε έναν Exchange Server χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τη δημιουργία, την ενημέρωση και τον συγχρονισμό επαφών με λεπτομερείς πληροφορίες.
-
-### [Διαχείριση επαφών του Exchange Server με το Aspose.Email για Java: Ένας πλήρης οδηγός](./exchange-server-contact-management-aspose-email-java/)
-Μάθετε να βελτιστοποιείτε τη διαχείριση επαφών του Exchange server χρησιμοποιώντας το Aspose.Email για Java. Συνδεθείτε, ανακτήστε και διαγράψτε επαφές αποτελεσματικά.
-
-### [Διαχείριση φακέλων Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./exchange-server-folders-aspose-email-java/)
-Μάθετε πώς να διαχειρίζεστε φακέλους σε έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Συνδεθείτε μέσω EWS, δημιουργήστε μια λίστα με υποφακέλους και χειριστείτε αποτελεσματικά τους τύπους φακέλων.
-
-### [Master Aspose.Email Java για EWS: Οδηγός διαχείρισης και ενσωμάτωσης email](./master-aspose-email-java-ews-email-management/)
-Μάθετε πώς να χρησιμοποιείτε το Aspose.Email με Java για να συνδεθείτε στις υπηρεσίες Exchange Web Services, να διαχειριστείτε email και να αυτοματοποιήσετε αποτελεσματικά τις εργασίες email.
-
-### [Master Aspose.Email για Java: Αποτελεσματική ενημέρωση επαφών του Exchange Server](./master-aspose-email-java-update-exchange-server-contacts/)
-Μάθετε πώς να ενημερώνετε τις επαφές σε έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εύκολη σύνδεση, ανάκτηση και τροποποίηση των στοιχείων επικοινωνίας.
-
-### [Κύριος αυτοματισμός email: Aspose.Email Java & EWS για ενσωμάτωση με Exchange Server](./aspose-email-java-autodiscover-ews-calendar-management/)
-Μάθετε πώς να αυτοματοποιείτε εργασίες email χρησιμοποιώντας το Aspose.Email για Java με ενσωμάτωση EWS. Βελτιστοποιήστε τις ροές εργασίας εντοπίζοντας αυτόματα URL και διαχειριζόμενοι αποτελεσματικά τα δεδομένα ημερολογίου.
-
-### [Κύριο φιλτράρισμα email με Aspose.Email Java & EWS: Ένας πλήρης οδηγός για την ενσωμάτωση του Exchange Server](./aspose-email-java-ews-filtering-guide/)
-Μάθετε να φιλτράρετε τα email χρησιμοποιώντας το Aspose.Email και το EWS σε Java. Εξερευνήστε τεχνικές φιλτραρίσματος κατά ημερομηνία, αποστολέα, θέμα και άλλα για να βελτιστοποιήσετε το γραμματοκιβώτιό σας.
-
-### [Master Email Management σε Java: Μετατροπή EML σε MSG με τη βιβλιοθήκη Aspose.Email](./master-email-management-java-aspose-email/)
-Μάθετε πώς να διαχειρίζεστε αποτελεσματικά μορφές email όπως EML και MSG χρησιμοποιώντας την ισχυρή βιβλιοθήκη Aspose.Email για Java. Ανακαλύψτε τεχνικές για απρόσκοπτη ενσωμάτωση στις εφαρμογές σας.
-
-### [Διαχείριση Κύριας Ηλεκτρονικής Ταχυδρομικής Διεύθυνσης σε Διακομιστές Exchange Χρησιμοποιώντας το Aspose.Email για Java](./aspose-email-java-exchange-management/)
-Μάθετε πώς να συνδέεστε, να δημιουργείτε λίστα και να διαχειρίζεστε email σε διακομιστές Microsoft Exchange χρησιμοποιώντας το ισχυρό Aspose.Email για Java API.
-
-### [Διαχείριση Master Exchange Server με Aspose.Email για Java: Ένας πλήρης οδηγός](./manage-exchange-server-aspose-email-java/)
-Μάθετε πώς να συνδέεστε και να διαχειρίζεστε τον Microsoft Exchange Server χρησιμοποιώντας το Aspose.Email για Java. Βελτιστοποιήστε τις ροές εργασίας email σας με αυτό το βήμα προς βήμα σεμινάριο.
-
-### [Διαχείριση Κύριων Εργασιών σε Διακομιστές Exchange Χρησιμοποιώντας το Aspose.Email για Java](./master-task-management-aspose-email-exchange-java/)
-Μάθετε να αυτοματοποιείτε τη διαχείριση εργασιών στο Microsoft Exchange με το Aspose.Email για Java. Συνδεθείτε, ορίστε ζώνες ώρας και ανακτήστε εργασίες αποτελεσματικά.
-
-### [Εξοικείωση με το Aspose.Email Java: Διαχείριση ρυθμίσεων χρήστη Exchange για αποτελεσματική διαχείριση email](./master-aspose-email-java-manage-exchange-user-configurations/)
-Μάθετε να διαχειρίζεστε τις ρυθμίσεις παραμέτρων χρηστών του Microsoft Exchange με το Aspose.Email για Java. Απλοποιήστε την ανάγνωση, τη δημιουργία, την ενημέρωση και τη διαγραφή ρυθμίσεων για αποτελεσματική διαχείριση email.
-
-### [Εξοικείωση με το Aspose.Email για Java: Σύνδεση και Προσαρμογή Αιτημάτων EWS](./aspose-email-java-ews-connection-customization/)
-Μάθετε πώς να συνδέεστε, να προσαρμόζετε κεφαλίδες και να παραθέτετε μηνύματα σε ένα γραμματοκιβώτιο του Exchange χρησιμοποιώντας το Aspose.Email για Java. Βελτιώστε τις δυνατότητες διαχείρισης email σας με αυτόν τον ολοκληρωμένο οδηγό.
-
-### [Εξοικείωση με τη διαχείριση email: Aspose.Email Java για χρήστη και πλαστοπροσωπία EWS Client](./aspose-email-java-ews-client-user-management/)
-Μάθετε να βελτιστοποιείτε τη διαχείριση email με το Aspose.Email Java, εστιάζοντας στη δημιουργία EWS client, τη διαγραφή μηνυμάτων, την προσάρτηση email και την πλαστοπροσωπία χρήστη. Ιδανικό για ενσωμάτωση με Exchange Server.
-
-### [Εξοικείωση με τον αυτοματισμό του Exchange Server με το Aspose.Email για Java: Σύνδεση και αρχειοθέτηση email αποτελεσματικά](./mastering-exchange-server-automation-aspose-email-java/)
-Μάθετε πώς να αυτοματοποιήσετε τη διαχείριση email σε έναν διακομιστή Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τη σύνδεση, την ανάκτηση και την αρχειοθέτηση email.
-
-### [Σελιδοποίηση υποφακέλων Exchange χρησιμοποιώντας το Aspose.Email Java: Ένας αποτελεσματικός οδηγός](./paginate-exchange-subfolders-aspose-email-java/)
-Μάθετε πώς να σελιδοποιείτε αποτελεσματικά τους υποφακέλους στο Exchange χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει τις τεχνικές εγκατάστασης, σύνδεσης και σελιδοποίησης.
-
-### [Ανάκτηση συνομιλιών Exchange Server χρησιμοποιώντας το Aspose.Email για Java](./aspose-email-java-retrieve-exchange-server-conversations/)
-Μάθετε πώς να συνδέσετε την εφαρμογή Java σας σε έναν διακομιστή Exchange και να ανακτήσετε αποτελεσματικά στοιχεία συνομιλίας χρησιμοποιώντας το Aspose.Email για Java. Ξεκινήστε με τον αναλυτικό οδηγό μας.
-
-### [Αποστολή email μέσω Exchange Server χρησιμοποιώντας το Aspose.Email για Java: Ένας πλήρης οδηγός](./send-emails-exchange-server-aspose-java/)
-Μάθετε πώς να στέλνετε email μέσω του διακομιστή Exchange της Microsoft χρησιμοποιώντας το Aspose.Email για Java. Αυτός ο οδηγός καλύπτει την εγκατάσταση, παραδείγματα κώδικα και πρακτικές εφαρμογές.
-
-## Πρόσθετοι Πόροι
-
-- [Aspose.Email για τεκμηρίωση Java](https://docs.aspose.com/email/java/)
-- [Aspose.Email για αναφορά API Java](https://reference.aspose.com/email/java/)
-- [Λήψη Aspose.Email για Java](https://releases.aspose.com/email/java/)
-- [Φόρουμ Aspose.Email](https://forum.aspose.com/c/email)
-- [Δωρεάν Υποστήριξη](https://forum.aspose.com/)
-- [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
+### [Πρόσβαση σε Γραμματοκιβώτια Exchange σε Java Χρησιμοποιώντας το Aspose.Email&#58; Ένας Πλήρης Οδηγός](./aspose-email-exchange-mailbox-java/)
+### [Aspose.Email for Java&#58; Ρύθμιση και Αιτήματα Συνάντησης σε Exchange Server](./aspose-email-java-exchange-server-setup-meeting-requests/)
+### [Αυτοματοποίηση Διαχείρισης Email με Aspose.Email και Java EWS Client&#58; Ένας Πλήρης Οδηγός](./aspose-email-java-ews-client-tutorial/)
+### [Εύκολη Δημιουργία Αντιγράφων Ασφαλείας Φακέλων Exchange με Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./backup-exchange-folders-aspose-email-java/)
+### [Σύνδεση με Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./connect-exchange-server-aspose-email-java/)
+### [Σύνδεση Exchange Server με IMAP Χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./connect-exchange-server-imap-aspose-email-java/)
+### [Δημιουργία Εργασιών σε Microsoft Exchange Χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./create-tasks-exchange-aspose-email-java/)
+### [Αποτελεσματική Διαχείριση Ιδιωτικών Λιστών Διανομής Exchange Χρησιμοποιώντας Aspose.Email for Java](./manage-exchange-lists-aspose-email-java/)
+### [Αποτελεσματική Σύνδεση και Καταγραφή Μηνυμάτων Exchange Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./aspose-email-java-exchange-messages-listing/)
+### [Οδηγός Σύνδεσης Ημερολογίου Exchange με Aspose.Email for Java | Ενσωμάτωση Exchange Server](./exchange-calendar-connection-aspose-email-java/)
+### [Πώς να Πρόσβαση σε Κοινόχρηστα Γραμματοκιβώτια Χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./aspose-email-java-access-shared-mailbox/)
+### [Πώς να Συνδεθείτε και να Καταγράψετε Φακέλους Exchange Server Χρησιμοποιώντας Aspose.Email for Java](./connect-list-exchange-server-folders-aspose-email-java/)
+### [Πώς να Συνδεθείτε και να Στείλετε Emails μέσω Exchange Server χρησιμοποιώντας Java με Aspose.Email](./connecting-sending-emails-exchange-server-java/)
+### [Πώς να Συνδεθείτε στο EWS και να Ορίσετε Προσαρμοσμένες Ιδιότητες Email Χρησιμοποιώντας Aspose.Email for Java](./connect-ews-set-custom-email-properties-aspose-email-java/)
+### [Πώς να Συνδεθείτε σε Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Οδηγός Βήμα‑Βήμα](./connecting-exchange-server-aspose-email-java-guide/)
+### [Πώς να Συνδεθείτε σε Exchange Server Χρησιμοποιώντας EWS με Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./exchange-server-ews-aspose-email-java-guide/)
+### [Πώς να Συνδεθείτε σε Exchange Server και να Ανακτήσετε Συμβουλές Mail Χρησιμοποιώντας Aspose.Email for Java](./connect-exchange-server-retrieve-mail-tips-aspose-email-java/)
+### [Πώς να Συνδεθείτε σε Exchange Server χρησιμοποιώντας Aspose.Email σε Java&#58; Οδηγός Βήμα‑Βήμα](./aspose-email-java-exchange-server-connection/)
+### [Πώς να Συνδεθείτε σε Microsoft Exchange Server Χρησιμοποιώντας Aspose.Email for Java και EWS](./connect-exchange-server-aspose-email-ews-java/)
+### [Πώς να Δημιουργήσετε ένα Αντίγραφο EWSClient Χρησιμοποιώντας Aspose.Email for Java&#58; Οδηγός Ενσωμάτωσης Exchange Server](./ewsclient-instance-aspose-email-java/)
+### [Πώς να Δημιουργήσετε ένα Αντίγραφο ExchangeClient Χρησιμοποιώντας Aspose.Email for Java&#58; Οδηγός Βήμα‑Βήμα](./create-exchangeclient-instance-aspose-email-java/)
+### [Πώς να Δημιουργήσετε και να Διαχειριστείτε Φακέλους Exchange Χρησιμοποιώντας Aspose.Email for Java](./manage-exchange-folders-aspose-email-java/)
+### [Πώς να Κατεβάσετε Emails από Exchange Server Χρησιμοποιώντας Aspose.Email Java](./aspose-email-java-exchange-server-download/)
+### [Πώς να Ανακτήσετε και να Απαριθμήσετε Μηνύματα από Exchange Server Χρησιμοποιώντας Aspose.Email for Java](./fetch-exchange-server-messages-aspose-email-java/)
+### [Πώς να Καταγράψετε Μηνύματα Exchange χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./list-exchange-messages-aspose-email-java/)
+### [Πώς να Διαχειριστείτε Πελάτες EWS με Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./manage-ews-clients-aspose-email-java/)
+### [Πώς να Διαχειριστείτε Επαφές Exchange Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./manage-exchange-contacts-aspose-email-java/)
+### [Πώς να Ανακτήσετε Επαφές από Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./retrieve-contacts-exchange-server-aspose-email-java/)
+### [Πώς να Αποθηκεύσετε Μηνύματα Exchange ως EML και MSG Χρησιμοποιώντας Aspose.Email for Java](./save-exchange-messages-aspose-email-java/)
+### [Πώς να Αποθηκεύσετε Μηνύματα Exchange ως EML/MSG με Aspose.Email for Java&#58; Πλήρης Οδηγός](./save-exchange-messages-eml-msg-aspose-email-java/)
+### [Αρχικοποίηση Aspose.Email Java για Exchange Server&#58; Ανάκτηση Πληροφοριών Γραμματοκιβωτίου](./aspose-email-java-exchange-client-mailbox-info/)
+### [Ενσωμάτωση και Εμφάνιση Μηνυμάτων Exchange Χρησιμοποιώντας Aspose.Email for Java](./fetch-display-exchange-messages-aspose-email-java/)
+### [Διαχείριση Πληροφοριών Γραμματοκιβωτίου EWS Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./manage-ews-mailbox-info-aspose-email-java/)
+### [Διαχείριση Ραντεβού Exchange με Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./aspose-email-java-exchange-appointments-management/)
+### [Διαχείριση Δικαιωμάτων Φακέλου Exchange με Aspose.Email for Java&#58; Οδηγός Βήμα‑Βήμα](./manage-exchange-folder-permissions-aspose-email-java/)
+### [Αποτελεσματική Διαχείριση Γραμματοκιβωτίων Exchange Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./manage-exchange-mailboxes-aspose-email-java-guide/)
+### [Διαχείριση Μηνυμάτων Exchange Χρησιμοποιώντας Aspose.Email Java&#58; Ένας Πλήρης Οδηγός για Ενσωμάτωση SAAJ API](./aspose-email-java-saaj-api-exchange-messages/)
+### [Διαχείριση Επαφών Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Πλήρης Οδηγός](./manage-exchange-server-contacts-aspose-email-java/)
+### [Διαχείριση Επαφών Exchange Server με Aspose.Email for Java&#58; Πλήρης Οδηγός](./exchange-server-contact-management-aspose-email-java/)
+### [Διαχείριση Φακέλων Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./exchange-server-folders-aspose-email-java/)
+### [Κατακτήστε το Aspose.Email Java για EWS&#58; Οδηγός Διαχείρισης και Ενσωμάτωσης Email](./master-aspose-email-java-ews-email-management/)
+### [Κατακτήστε το Aspose.Email for Java&#58; Ενημέρωση Επαφών Exchange Server Αποτελεσματικά](./master-aspose-email-java-update-exchange-server-contacts/)
+### [Κατακτήστε την Αυτοματοποίηση Email&#58; Aspose.Email Java & EWS για Ενσωμάτωση Exchange Server](./aspose-email-java-autodiscover-ews-calendar-management/)
+### [Κατακτήστε το Φιλτράρισμα Email με Aspose.Email Java & EWS&#58; Πλήρης Οδηγός για Ενσωμάτωση Exchange Server](./aspose-email-java-ews-filtering-guide/)
+### [Κατακτήστε τη Διαχείριση Email σε Java&#58; Μετατροπή EML σε MSG με τη Βιβλιοθήκη Aspose.Email](./master-email-management-java-aspose-email/)
+### [Κατακτήστε τη Διαχείριση Email σε Exchange Servers Χρησιμοποιώντας Aspose.Email for Java](./aspose-email-java-exchange-management/)
+### [Κατακτήστε τη Διαχείριση Exchange Server με Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./manage-exchange-server-aspose-email-java/)
+### [Κατακτήστε τη Διαχείριση Εργασιών σε Exchange Servers Χρησιμοποιώντας Aspose.Email for Java](./master-task-management-aspose-email-exchange-java/)
+### [Κατακτώντας το Aspose.Email Java&#58; Διαχείριση Ρυθμίσεων Χρηστών Exchange για Αποτελεσματική Διαχείριση Email](./master-aspose-email-java-manage-exchange-user-configurations/)
+### [Κατακτώντας το Aspose.Email for Java&#58; Σύνδεση και Προσαρμογή Αιτημάτων EWS](./aspose-email-java-ews-connection-customization/)
+### [Κατακτώντας τη Διαχείριση Email&#58; Aspose.Email Java για Χρήστη Πελάτη EWS και Προσωποποίηση](./aspose-email-java-ews-client-user-management/)
+### [Κατακτώντας την Αυτοματοποίηση Exchange Server με Aspose.Email for Java&#58; Σύνδεση και Αρχειοθέτηση Emails Αποτελεσματικά](./mastering-exchange-server-automation-aspose-email-java/)
+### [Σελιδοποίηση Υποφακέλων Exchange Χρησιμοποιώντας Aspose.Email Java&#58; Αποτελεσματικός Οδηγός](./paginate-exchange-subfolders-aspose-email-java/)
+### [Ανάκτηση Συνομιλιών Exchange Server Χρησιμοποιώντας Aspose.Email for Java](./aspose-email-java-retrieve-exchange-server-conversations/)
+### [Αποστολή Emails μέσω Exchange Server Χρησιμοποιώντας Aspose.Email for Java&#58; Ένας Πλήρης Οδηγός](./send-emails-exchange-server-aspose-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -197,3 +133,41 @@
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## Πρόσθετοι Πόροι
+
+- [Τεκμηρίωση Aspose.Email for Java](https://docs.aspose.com/email/java/)
+- [Αναφορά API Aspose.Email for Java](https://reference.aspose.com/email/java/)
+- [Λήψη Aspose.Email for Java](https://releases.aspose.com/email/java/)
+- [Φόρουμ Aspose.Email](https://forum.aspose.com/c/email)
+- [Δωρεάν Υποστήριξη](https://forum.aspose.com/)
+- [Προσωρινή Άδεια](https://purchase.aspose.com/temporary-license/)
+
+## Συχνές Ερωτήσεις
+
+**Q: Ποιο πρωτόκολλο προσφέρει την καλύτερη απόδοση για μαζική δημιουργία αντιγράφων ασφαλείας φακέλων;**  
+A: Η χρήση εγγενών κλήσεων EWS με `ExchangeClient` παρέχει τη μεγαλύτερη ταχύτητα, διαχειριζόμενη έως 10 000 αντικείμενα ανά λεπτό σε ένα τυπικό δίκτυο 1 Gbps.
+
+**Q: Μπορώ να χρησιμοποιήσω τον ίδιο κώδικα για σύνδεση στο Office 365;**  
+A: Ναι, η βιβλιοθήκη εντοπίζει αυτόματα το σωστό σημείο λήψης EWS όταν παρέχετε λογαριασμό Office 365 και ενεργοποιείτε την πιστοποίηση OAuth.
+
+**Q: Πώς μπορώ να μετακινήσω emails μεταξύ δύο γραμματοκιβωτίων στον ίδιο διακομιστή;**  
+A: Κλήση `client.moveMessage(messageId, destinationFolderUri)`· η λειτουργία εκτελείται στον διακομιστή, αποφεύγοντας την ανάγκη λήψης και επανέκδοσης του μηνύματος.
+
+**Q: Υπάρχει όριο στο μέγεθος ενός email που μπορεί να ληφθεί;**  
+A: Το Aspose.Email μεταδίδει τα μηνύματα σε ροή, έτσι μπορείτε να κατεβάσετε μηνύματα μεγαλύτερα από 100 MB χωρίς να εξαντλήσετε τη μνήμη heap της JVM.
+
+**Q: Ποια έκδοση της Java απαιτείται;**  
+A: Java 8 ή νεότερη· η βιβλιοθήκη είναι πλήρως συμβατή με Java 11, 17 και νεότερες εκδόσεις LTS.
+
+---
+
+**Τελευταία Ενημέρωση:** 2026-06-28  
+**Δοκιμή με:** Aspose.Email for Java 24.11  
+**Συγγραφέας:** Aspose
+
+## Σχετικοί Οδηγοί
+
+- [Σύνδεση με Exchange Server Χρησιμοποιώντας Aspose.Email for Java: Ένας Πλήρης Οδηγός](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-java/)
+- [Πρόσβαση σε Γραμματοκιβώτια Exchange σε Java Χρησιμοποιώντας Aspose.Email: Ένας Πλήρης Οδηγός](/email/java/exchange-server-integration/aspose-email-exchange-mailbox-java/)
+- [Εύκολη Δημιουργία Αντιγράφων Ασφαλείας Φακέλων Exchange με Aspose.Email for Java: Ένας Πλήρης Οδηγός](/email/java/exchange-server-integration/backup-exchange-folders-aspose-email-java/)

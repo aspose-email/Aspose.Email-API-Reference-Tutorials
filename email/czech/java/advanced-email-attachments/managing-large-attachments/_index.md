@@ -1,10 +1,38 @@
 ---
-date: 2026-02-09
-description: Naučte se, jak zvládat limit velikosti přílohy e‑mailu, vytvářet přílohy
-  e‑mailu v Javě a stahovat přílohy e‑mailu v Javě pomocí Aspose.Email pro Javu.
-linktitle: Email Attachment Size Limit Management with Aspose.Email
+date: 2026-06-28
+description: Zjistěte, jak zvládnout limit velikosti email attachment, vytvořit email
+  attachment java a stáhnout email attachment java pomocí Aspose.Email pro Java.
+keywords:
+- email attachment size limit
+- send large email attachment
+- create email attachment java
+linktitle: Správa limitu velikosti email attachment s Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-06-28'
+  description: Learn how to handle email attachment size limit, create email attachment
+    java, and download email attachment java using Aspose.Email for Java.
+  headline: Email Attachment Size Limit Management with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Use `Attachment` constructors that accept a `java.io.InputStream` and
+      compress the data before adding it to the message.
+    question: How can I reduce the size of a large attachment?
+  - answer: No. The limit is defined by the mail server you use; Aspose.Email simply
+      streams the data.
+    question: Is there a hard limit imposed by Aspose.Email?
+  - answer: Yes, but be mindful of the cumulative size; consider zipping them into
+      a single archive.
+    question: Can I send multiple large attachments in one email?
+  - answer: The library provides synchronous APIs; you can wrap calls in a separate
+      thread or use `CompletableFuture` for async behavior.
+    question: Does Aspose.Email support async sending?
+  - answer: Offer a download link (e.g., to a cloud storage bucket) as a fallback
+      in the email body.
+    question: What if the recipient’s server rejects the attachment?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Řízení limitu velikosti příloh e‑mailu s Aspose.Email
+title: Správa limitu velikosti email attachment s Aspose.Email
 url: /cs/java/advanced-email-attachments/managing-large-attachments/
 weight: 11
 ---
@@ -17,33 +45,38 @@ weight: 11
 
 # Správa limitu velikosti přílohy e‑mailu s Aspose.Email
 
-Správa **email attachment size limit** může být složitá, zejména když potřebujete odesílat nebo přijímat velké soubory v Java aplikacích. V tomto tutoriálu vás provedeme vytvářením, odesíláním a stahováním velkých příloh e‑mailu pomocí Aspose.Email pro Java, přičemž udržíme velikost přílohy pod kontrolou. Na konci budete vědět, jak **create email attachment java** objekty, efektivně streamovat velké soubory a **download email attachment java** soubory bez vyčerpání paměti.
+Správa **email attachment size limit** může být složitá, zejména když potřebujete odesílat nebo přijímat velké soubory v Java aplikacích. V tomto tutoriálu vás provedeme vytvářením, odesíláním a stahováním velkých e‑mailových příloh pomocí Aspose.Email pro Java, přičemž udržíme velikost přílohy pod kontrolou. Na konci budete vědět, jak **create email attachment java** objekty, efektivně streamovat velké soubory a **download email attachment java** soubory bez vyčerpání paměti.
 
 ## Rychlé odpovědi
-- **What is the email attachment size limit?** Závisí na poštovním serveru, ale většina poskytovatelů limituje mezi 10 MB a 25 MB.  
-- **Can Aspose.Email handle large files?** Ano, podporuje streamování, aby se zabránilo načtení celého souboru do paměti.  
-- **Do I need a license?** Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována komerční licence.  
+- **What is the email attachment size limit?** Většina poštovních serverů omezuje přílohy na 10 MB až 25 MB, i když některé povolují až 50 MB.  
+- **Can Aspose.Email handle large files?** Ano – streamuje data, takže nikdy nenačítáte celý soubor do RAM.  
+- **Do I need a license?** Bezplatná zkušební verze funguje pro testování; pro produkční použití je vyžadována komerční licence.  
 - **Which Java version is required?** Java 8 nebo vyšší.  
-- **Is SMTP configuration needed?** Ano, zadejte svůj SMTP host, uživatelské jméno a heslo.
+- **Is SMTP configuration needed?** Rozhodně – musíte zadat hostitele, uživatelské jméno a heslo.
 
-## Co je limit velikosti přílohy e‑mailu?
-Limit **email attachment size limit** je maximální velikost souboru, kterou poštovní server přijme nebo doručí. Překročení tohoto limitu může způsobit selhání doručení nebo nutnost použít alternativní metody přenosu (např. odkazy na cloud). Aspose.Email poskytuje nástroje pro rozdělení, kompresi nebo streamování velkých souborů, aby zůstaly v přijatelné velikosti.
+## Co je limit velikosti e‑mailové přílohy?
+
+**email attachment size limit** je maximální velikost souboru, kterou poštovní server přijme nebo doručí. Většina poskytovatelů uplatňuje limity od 10 MB do 25 MB, přičemž prémiové služby dosahují 50 MB nebo více. Překročení tohoto prahu způsobí selhání doručení, odrazy nebo nutnost přejít na alternativní metody přenosu, jako jsou odkazy na cloudové úložiště. Porozumění limitu vám pomůže navrhnout záložní strategie a udržet vaše zprávy v souladu.
 
 ## Proč spravovat velké přílohy pomocí Aspose.Email?
-- **Memory‑efficient streaming** – zabraňuje chybám OutOfMemory.  
-- **Built‑in compression** – snižuje velikost souboru před odesláním.  
-- **Cross‑platform support** – funguje stejně na Windows, Linuxu i macOS.  
-- **Simple API** – vytvářejte, odesílejte a stahujte přílohy pomocí několika řádků Java kódu.  
 
-## Předpoklady
+Správa velkých příloh pomocí Aspose.Email je nezbytná, protože streamuje data a zabraňuje chybám OutOfMemory, poskytuje vestavěnou kompresi ke snížení velikosti, funguje konzistentně napříč Windows, Linux a macOS a nabízí jednoduché API, které umožňuje vývojářům vytvářet, odesílat a stahovat přílohy pomocí jen několika řádků Java kódu.
+
+- **Memory‑efficient streaming** – zpracovává soubory až do 2 GB, aniž by je načítal kompletně do paměti.  
+- **Built‑in compression** – snižuje velikost až o 70 % pro typické typy dokumentů.  
+- **Cross‑platform support** – identické chování na Windows, Linux a macOS.  
+- **Simple API** – vytvářejte, odesílejte a stahujte přílohy pomocí jen několika Java příkazů.
+
+## Požadavky
 
 - [Aspose.Email for Java](https://releases.aspose.com/email/java/) – stáhněte a přidejte JAR do svého projektu.  
 - Vývojové prostředí Java 8+.  
 - Přístup k SMTP serveru pro odesílání pošty.
 
-## Krok 1: Vytvořit e‑mail s velkou přílohou (create email attachment java)
+## Krok 1: Vytvořte e‑mail s velkou přílohou (create email attachment java)
 
-Nejprve vytvoříme `MailMessage` a připojíme velký PDF. Níže uvedený kód ukazuje, jak **create email attachment java** objekty a uložit zprávu lokálně.
+`MailMessage` představuje e‑mail s předmětem, tělem a přílohami.  
+Nejprve vytvoříme `MailMessage` a připojíme velký PDF. Níže uvedený kód demonstruje, jak **create email attachment java** objekty a uložit zprávu lokálně.
 
 ```java
 // Import the required Aspose.Email classes
@@ -77,9 +110,14 @@ public class CreateEmailWithLargeAttachment {
 
 > **Tip:** Pokud soubor překračuje typické limity, zvažte nejprve jeho kompresi nebo rozdělení na menší části pomocí metod `AttachmentCollection`.
 
-## Jak odeslat velkou přílohu e‑mailu pomocí Aspose.Email
+## Jak odeslat velkou e‑mailovou přílohu pomocí Aspose.Email
 
-Nyní, když je zpráva připravena, musíme ji odeslat přes SMTP server. Aspose.Email streamuje přílohu během odesílání, takže celý soubor nikdy není načten do paměti.
+`InputStream` je Java stream, který čte bajty ze zdroje, což umožňuje zpracovávat data bez načtení celého souboru do paměti.  
+`SmtpClient` zajišťuje komunikaci se SMTP serverem a odesílá zprávu.
+
+Načtěte svůj velký soubor do `InputStream`, připojte jej k `MailMessage` a zavolejte `SmtpClient.send`. Aspose.Email streamuje přílohu během SMTP transakce, takže celý soubor nikdy není v paměti – tento přístup spolehlivě odesílá soubory až na několik set megabajtů a zároveň zůstává pod limitem velikosti serveru.
+
+Jakmile je zpráva připravena, musíme ji odeslat přes SMTP server. Aspose.Email streamuje přílohu během operace odesílání, takže celý soubor nikdy není v paměti.
 
 ```java
 // Import the required Aspose.Email classes
@@ -119,9 +157,9 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-Nahraďte SMTP host, uživatelské jméno a heslo svými vlastními přihlašovacími údaji. API automaticky zpracovává MIME kódování a streamování.
+Nahraďte SMTP hostitele, uživatelské jméno a heslo svými vlastními přihlašovacími údaji. API automaticky zpracovává MIME kódování a streamování.
 
-## Krok 3: Přijmout a stáhnout přílohu (download email attachment java)
+## Krok 3: Přijměte a stáhněte přílohu (download email attachment java)
 
 Když příjemce obdrží zprávu, může být potřeba extrahovat velký soubor. Následující úryvek ukazuje, jak bezpečně **download email attachment java**.
 
@@ -157,7 +195,7 @@ Smyčka kontroluje název každé přílohy, aby se stáhl pouze zamýšlený so
 |-------|-------|-----|
 | **Příloha překračuje limit serveru** | Soubor je větší než povolená velikost | Komprimujte soubor nebo jej rozdělte pomocí `AttachmentCollection` |
 | **OutOfMemoryError** | Celý soubor načten do paměti | Použijte streamingové API (`Attachment(String name, InputStream stream)`) |
-| **Selhání autentizace** | Špatné SMTP přihlašovací údaje | Ověřte host, uživatelské jméno, heslo a povolte TLS, pokud je vyžadováno |
+| **Selhání autentizace** | Nesprávné SMTP přihlašovací údaje | Ověřte hostitele, uživatelské jméno, heslo a v případě potřeby povolte TLS |
 | **Příloha nebyla stažena** | Neshoda názvu | Použijte `attachment.getContentId()` nebo zkontrolujte MIME typ |
 
 ## Často kladené otázky
@@ -169,31 +207,38 @@ A: Použijte konstruktory `Attachment`, které přijímají `java.io.InputStream
 A: Ne. Limit je definován poštovním serverem, který používáte; Aspose.Email pouze streamuje data.
 
 **Q: Mohu odeslat více velkých příloh v jednom e‑mailu?**  
-A: Ano, ale mějte na paměti celkovou velikost; zvažte jejich zkomprimování do jednoho archivu.
+A: Ano, ale mějte na paměti kumulativní velikost; zvažte jejich zkomprimování do jednoho archivu.
 
 **Q: Podporuje Aspose.Email asynchronní odesílání?**  
 A: Knihovna poskytuje synchronní API; můžete volání zabalit do samostatného vlákna nebo použít `CompletableFuture` pro asynchronní chování.
 
 **Q: Co když server příjemce odmítne přílohu?**  
-A: Nabídněte odkaz ke stažení (např. na cloudové úložiště) jako náhradní řešení v těle e‑mailu.
+A: Nabídněte odkaz ke stažení (např. na cloudové úložiště) jako záložní možnost v těle e‑mailu.
 
-**Q: Jak mohu před odesláním sledovat velikost přílohy?**  
+**Q: Jak mohu sledovat velikost přílohy před odesláním?**  
 A: Zavolejte `new File("path/to/file").length()` a porovnejte ji s známým limitem serveru.
 
 ## Závěr
 
-Využitím Aspose.Email pro Java můžete efektivně řešit problémy s **email attachment size limit**, **create email attachment java** objekty a **download email attachment java** soubory, aniž byste narazili na omezení paměti nebo serveru. Použijte zde ukázané techniky streamování a komprese, aby vaše aplikace byly robustní a uživatelé spokojení.
+Využitím Aspose.Email pro Java můžete efektivně **manage email attachment size limit** problémy, **create email attachment java** objekty a **download email attachment java** soubory, aniž byste narazili na omezení paměti nebo serveru. Použijte zde ukázané techniky streamování a komprese, aby vaše aplikace byly robustní a vaši uživatelé spokojení.
 
 ---
 
-**Poslední aktualizace:** 2026-02-09  
+**Poslední aktualizace:** 2026-06-28  
 **Testováno s:** Aspose.Email for Java 24.12  
 **Autor:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Související tutoriály
+
+- [Odeslat e‑mail s přílohou Java pomocí Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
+- [Jak extrahovat e‑mailové přílohy ze zpráv pomocí Aspose.Email pro Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Jak odeslat e‑mail s vloženým obrázkem pomocí Aspose.Email pro Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

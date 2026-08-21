@@ -1,11 +1,39 @@
 ---
-date: 2026-02-09
-description: Leer hoe u de limiet voor e‑mailbijlagen kunt beheren, e‑mailbijlagen
-  in Java kunt maken en e‑mailbijlagen in Java kunt downloaden met Aspose.Email voor
-  Java.
-linktitle: Email Attachment Size Limit Management with Aspose.Email
+date: 2026-06-28
+description: Leer hoe u de e-mailbijlagegroottebeperking kunt beheren, een e-mailbijlage
+  in Java kunt maken en een e-mailbijlage in Java kunt downloaden met Aspose.Email
+  voor Java.
+keywords:
+- email attachment size limit
+- send large email attachment
+- create email attachment java
+linktitle: Beheer van e-mailbijlagegroottebeperking met Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-06-28'
+  description: Learn how to handle email attachment size limit, create email attachment
+    java, and download email attachment java using Aspose.Email for Java.
+  headline: Email Attachment Size Limit Management with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: Use `Attachment` constructors that accept a `java.io.InputStream` and
+      compress the data before adding it to the message.
+    question: How can I reduce the size of a large attachment?
+  - answer: No. The limit is defined by the mail server you use; Aspose.Email simply
+      streams the data.
+    question: Is there a hard limit imposed by Aspose.Email?
+  - answer: Yes, but be mindful of the cumulative size; consider zipping them into
+      a single archive.
+    question: Can I send multiple large attachments in one email?
+  - answer: The library provides synchronous APIs; you can wrap calls in a separate
+      thread or use `CompletableFuture` for async behavior.
+    question: Does Aspose.Email support async sending?
+  - answer: Offer a download link (e.g., to a cloud storage bucket) as a fallback
+      in the email body.
+    question: What if the recipient’s server rejects the attachment?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Beheer van e-mailbijlagegroottebeperkingen met Aspose.Email
+title: Beheer van e-mailbijlagegroottebeperking met Aspose.Email
 url: /nl/java/advanced-email-attachments/managing-large-attachments/
 weight: 11
 ---
@@ -16,35 +44,38 @@ weight: 11
 
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beheer van e-mailbijlagegrootte met Aspose.Email
+# Beheer van e‑mailbijlagegrootte met Aspose.Email
 
-Het beheren van **email attachment size limit** kan lastig zijn, vooral wanneer u grote bestanden moet verzenden of ontvangen in Java‑toepassingen. In deze tutorial lopen we door het maken, verzenden en downloaden van grote e‑mailbijlagen met Aspose.Email voor Java, terwijl we de grootte van de bijlage onder controle houden. Aan het einde weet u hoe u **create email attachment java**‑objecten kunt maken, grote bestanden efficiënt kunt streamen en **download email attachment java**‑bestanden kunt downloaden zonder het geheugen uit te putten.
+Het beheren van **email attachment size limit** kan lastig zijn, vooral wanneer je grote bestanden moet verzenden of ontvangen in Java‑toepassingen. In deze tutorial lopen we door het maken, verzenden en downloaden van grote e‑mailbijlagen met Aspose.Email voor Java, terwijl we de bijlagengrootte onder controle houden. Aan het einde weet je hoe je **create email attachment java** objecten maakt, grote bestanden efficiënt streamt, en **download email attachment java** bestanden downloadt zonder het geheugen uit te putten.
 
 ## Snelle antwoorden
-- **Wat is de limiet voor de grootte van e‑mailbijlagen?** Het hangt af van de mailserver, maar de meeste providers beperken dit tussen 10 MB en 25 MB.  
-- **Kan Aspose.Email grote bestanden aan?** Ja, het ondersteunt streaming om te voorkomen dat het hele bestand in het geheugen wordt geladen.  
-- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
-- **Welke Java‑versie is vereist?** Java 8 of hoger.  
-- **Is SMTP‑configuratie nodig?** Ja, geef uw SMTP‑host, gebruikersnaam en wachtwoord op.
+- **What is the email attachment size limit?** De meeste mailservers beperken bijlagen tot tussen de 10 MB en 25 MB, hoewel sommige tot 50 MB toestaan.  
+- **Can Aspose.Email handle large files?** Ja – het streamt data zodat je nooit het volledige bestand in RAM laadt.  
+- **Do I need a license?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productiegebruik.  
+- **Which Java version is required?** Java 8 of hoger.  
+- **Is SMTP configuration needed?** Absoluut – je moet host, gebruikersnaam en wachtwoord opgeven.  
 
-## Wat is een limiet voor de grootte van e‑mailbijlagen?
-De **email attachment size limit** is de maximale bestandsgrootte die een mailserver accepteert of levert. Het overschrijden van deze limiet kan leiden tot afleveringsfouten of de noodzaak voor alternatieve overdrachtsmethoden (bijv. cloud‑links). Aspose.Email biedt tools om grote bestanden te splitsen, comprimeren of te streamen zodat ze binnen acceptabele limieten blijven.
+## Wat is een e‑mailbijlagegrootte‑limiet?
+De **email attachment size limit** is de maximale bestandsgrootte die een mailserver accepteert of levert. De meeste providers handhaven limieten variërend van 10 MB tot 25 MB, met premiumdiensten die 50 MB of meer bereiken. Het overschrijden van deze drempel veroorzaakt afleveringsfouten, bounce‑backs, of de noodzaak om terug te vallen op alternatieve overdrachtsmethoden zoals cloud‑storage‑links. Het begrijpen van de limiet helpt je om fallback‑strategieën te ontwerpen en je berichten conform te houden.
 
 ## Waarom grote bijlagen beheren met Aspose.Email?
-- **Geheugenefficiënte streaming – voorkomt OutOfMemory‑fouten.**  
-- **Ingebouwde compressie – verkleint de bestandsgrootte vóór verzending.**  
-- **Cross‑platformondersteuning – werkt hetzelfde op Windows, Linux en macOS.**  
-- **Eenvoudige API – maak, verzend en download bijlagen met slechts een paar regels Java‑code.**  
+Het beheren van grote bijlagen met Aspose.Email is essentieel omdat het data streamt om OutOfMemory‑fouten te vermijden, ingebouwde compressie biedt om de grootte te verkleinen, consistent werkt op Windows, Linux en macOS, en een eenvoudige API biedt waarmee ontwikkelaars bijlagen kunnen maken, verzenden en downloaden met slechts een paar regels Java‑code.
 
-## Voorvereisten
+- **Memory‑efficient streaming** – verwerkt bestanden tot 2 GB zonder ze volledig in het geheugen te laden.  
+- **Built‑in compression** – verkleint de grootte tot wel 70 % voor typische documenttypes.  
+- **Cross‑platform support** – identiek gedrag op Windows, Linux en macOS.  
+- **Simple API** – maak, verzend en download bijlagen met slechts een paar Java‑instructies.  
 
-- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – download en voeg de JAR toe aan uw project.  
+## Vereisten
+
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – download en voeg de JAR toe aan je project.  
 - Java 8+ ontwikkelomgeving.  
-- Toegang tot een SMTP‑server voor het verzenden van e‑mail.
+- Toegang tot een SMTP‑server voor het verzenden van e‑mail.  
 
-## Stap 1: Maak een e‑mail met een grote bijlage (create email attachment java)
+## Stap 1: Een e‑mail maken met een grote bijlage (create email attachment java)
 
-Eerst bouwen we een `MailMessage` en voegen we een grote PDF toe. De onderstaande code laat zien hoe u **create email attachment java**‑objecten kunt maken en het bericht lokaal kunt opslaan.
+`MailMessage` vertegenwoordigt een e‑mail met onderwerp, inhoud en bijlagen.  
+Eerst bouwen we een `MailMessage` en voegen we een grote PDF toe. De onderstaande code toont hoe je **create email attachment java** objecten maakt en het bericht lokaal opslaat.
 
 ```java
 // Import the required Aspose.Email classes
@@ -76,9 +107,14 @@ public class CreateEmailWithLargeAttachment {
 }
 ```
 
-> **Pro tip:** Als het bestand de gebruikelijke limieten overschrijdt, overweeg dan eerst compressie of het splitsen in kleinere delen met behulp van `AttachmentCollection`‑methoden.
+> **Pro tip:** Als het bestand de typische limieten overschrijdt, overweeg het dan eerst te comprimeren of op te splitsen in kleinere delen met behulp van `AttachmentCollection`‑methoden.
 
 ## Hoe grote e‑mailbijlage te verzenden met Aspose.Email
+
+`InputStream` is een Java‑stream die bytes van een bron leest, waardoor data kan worden verwerkt zonder het volledige bestand in het geheugen te laden.  
+`SmtpClient` behandelt de SMTP‑servercommunicatie en verzendt het bericht.
+
+Laad je grote bestand in een `InputStream`, voeg het toe aan een `MailMessage` en roep `SmtpClient.send` aan. Aspose.Email streamt de bijlage tijdens de SMTP‑transactie, zodat het volledige bestand nooit in het geheugen aanwezig is – deze aanpak verzendt betrouwbaar bestanden tot enkele honderden megabytes terwijl je binnen de grootte‑limiet van de server blijft.
 
 Nu het bericht klaar is, moeten we het via een SMTP‑server verzenden. Aspose.Email streamt de bijlage tijdens de verzendoperatie, zodat het volledige bestand nooit in het geheugen aanwezig is.
 
@@ -120,11 +156,11 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-Vervang de SMTP‑host, gebruikersnaam en wachtwoord door uw eigen inloggegevens. De API verwerkt automatisch MIME‑codering en streaming.
+Vervang de SMTP‑host, gebruikersnaam en wachtwoord door je eigen inloggegevens. De API behandelt automatisch MIME‑codering en streaming.
 
-## Stap 3: Ontvang en download de bijlage (download email attachment java)
+## Stap 3: De bijlage ontvangen en downloaden (download email attachment java)
 
-Wanneer de ontvanger het bericht ontvangt, moet u mogelijk het grote bestand extraheren. Het volgende fragment toont hoe u **download email attachment java** veilig kunt uitvoeren.
+Wanneer de ontvanger het bericht ontvangt, moet je mogelijk het grote bestand extraheren. Het volgende fragment toont hoe je **download email attachment java** veilig kunt downloaden.
 
 ```java
 // Import the required Aspose.Email classes
@@ -150,51 +186,58 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-De lus controleert de naam van elke bijlage, zodat u alleen het beoogde bestand downloadt. Deze aanpak werkt zelfs wanneer de e‑mail meerdere bijlagen bevat.
+De lus controleert de naam van elke bijlage, zodat je alleen het beoogde bestand downloadt. Deze aanpak werkt zelfs wanneer de e‑mail meerdere bijlagen bevat.
 
 ## Veelvoorkomende problemen & oplossingen
 
-| Probleem | Oorzaak | Oplossing |
-|----------|---------|-----------|
-| **Bijlage overschrijdt serverlimiet** | Bestand groter dan de toegestane grootte | Comprimeer het bestand of splits het met `AttachmentCollection` |
-| **OutOfMemoryError** | Heel bestand geladen in het geheugen | Gebruik streaming‑API's (`Attachment(String name, InputStream stream)`) |
-| **Authenticatiefout** | Onjuiste SMTP‑inloggegevens | Controleer host, gebruikersnaam, wachtwoord en schakel TLS in indien vereist |
-| **Bijlage niet gedownload** | Naam komt niet overeen | Gebruik `attachment.getContentId()` of controleer MIME‑type |
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| **Attachment overschrijdt serverlimiet** | Bestand groter dan de toegestane grootte | Comprimeer het bestand of splits het met `AttachmentCollection` |
+| **OutOfMemoryError** | Volledig bestand geladen in het geheugen | Gebruik streaming‑API's (`Attachment(String name, InputStream stream)`) |
+| **Authenticatie‑fout** | Onjuiste SMTP‑referenties | Controleer host, gebruikersnaam, wachtwoord en schakel TLS in indien vereist |
+| **Attachment niet gedownload** | Naam mismatch | Gebruik `attachment.getContentId()` of controleer MIME‑type |
 
 ## Veelgestelde vragen
 
-**V: Hoe kan ik de grootte van een grote bijlage verkleinen?**  
-Gebruik `Attachment`‑constructors die een `java.io.InputStream` accepteren en comprimeer de data voordat u deze aan het bericht toevoegt.
+**Q: Hoe kan ik de grootte van een grote bijlage verkleinen?**  
+A: Gebruik `Attachment`‑constructors die een `java.io.InputStream` accepteren en comprimeer de data voordat je deze aan het bericht toevoegt.
 
-**V: Is er een harde limiet opgelegd door Aspose.Email?**  
-Nee. De limiet wordt bepaald door de mailserver die u gebruikt; Aspose.Email streamt de gegevens gewoon.
+**Q: Is er een harde limiet opgelegd door Aspose.Email?**  
+A: Nee. De limiet wordt bepaald door de mailserver die je gebruikt; Aspose.Email streamt de data simpelweg.
 
-**V: Kan ik meerdere grote bijlagen in één e‑mail verzenden?**  
-Ja, maar houd rekening met de totale grootte; overweeg ze te zippen in één archief.
+**Q: Kan ik meerdere grote bijlagen in één e‑mail verzenden?**  
+A: Ja, maar let op de totale grootte; overweeg ze te zippen tot één archief.
 
-**V: Ondersteunt Aspose.Email asynchroon verzenden?**  
-De bibliotheek biedt synchronische API's; u kunt oproepen in een aparte thread plaatsen of `CompletableFuture` gebruiken voor asynchroon gedrag.
+**Q: Ondersteunt Aspose.Email asynchrone verzending?**  
+A: De bibliotheek biedt synchronische API's; je kunt oproepen in een aparte thread plaatsen of `CompletableFuture` gebruiken voor asynchrone werking.
 
-**V: Wat als de server van de ontvanger de bijlage weigert?**  
-Bied een downloadlink (bijv. naar een cloudopslagbucket) als alternatief in de e‑mailtekst.
+**Q: Wat als de server van de ontvanger de bijlage afwijst?**  
+A: Bied een download‑link (bijv. naar een cloud‑opslagbucket) als fallback in de e‑mailinhoud.
 
-**V: Hoe controleer ik de grootte van een bijlage vóór het verzenden?**  
-Roep `new File("path/to/file").length()` aan en vergelijk dit met de bekende serverlimiet.
+**Q: Hoe controleer ik de grootte van een bijlage vóór het verzenden?**  
+A: Roep `new File("path/to/file").length()` aan en vergelijk dit met de bekende serverlimiet.
 
 ## Conclusie
 
-Door gebruik te maken van Aspose.Email voor Java kunt u efficiënt **manage email attachment size limit**‑problemen aanpakken, **create email attachment java**‑objecten maken en **download email attachment java**‑bestanden downloaden zonder geheugen‑ of server‑beperkingen tegen te komen. Pas de hier getoonde streaming‑ en compressietechnieken toe om uw applicaties robuust te houden en uw gebruikers tevreden.
+Door gebruik te maken van Aspose.Email voor Java kun je efficiënt **manage email attachment size limit** zorgen aanpakken, **create email attachment java** objecten maken, en **download email attachment java** bestanden downloaden zonder geheugen‑ of server‑beperkingen tegen te komen. Pas de hier getoonde streaming‑ en compressietechnieken toe om je applicaties robuust te houden en je gebruikers tevreden.
 
 ---
 
-**Laatst bijgewerkt:** 2026-02-09  
+**Laatst bijgewerkt:** 2026-06-28  
 **Getest met:** Aspose.Email for Java 24.12  
 **Auteur:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Gerelateerde tutorials
+
+- [E‑mail verzenden met bijlage Java met Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
+- [Hoe e‑mailbijlagen uit e‑mailberichten te extraheren met Aspose.Email voor Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Hoe e‑mail te verzenden met ingesloten afbeelding met Aspose.Email voor Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

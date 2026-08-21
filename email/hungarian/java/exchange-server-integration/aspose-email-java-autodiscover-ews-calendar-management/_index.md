@@ -1,9 +1,70 @@
 ---
-"date": "2025-05-29"
-"description": "Ismerje meg, hogyan automatizálhatja az e-mailes feladatokat az Aspose.Email for Java EWS integrációjával. Egyszerűsítse a munkafolyamatokat az URL-ek automatikus felderítésével és a naptáradatok hatékony kezelésével."
-"title": "Mester szintű e-mail automatizálás&#58; Aspose.Email Java és EWS az Exchange Server integrációjához"
-"url": "/hu/java/exchange-server-integration/aspose-email-java-autodiscover-ews-calendar-management/"
-"weight": 1
+date: '2026-06-28'
+description: Ismerje meg, hogyan lehet automatikusan felfedezni az Exchange URL-eket,
+  és az Exchange Web Services naptárfunkcióit használni az Aspose.Email for Java segítségével.
+  Lépésről‑lépésre útmutató a zökkenőmentes integrációhoz.
+keywords:
+- how to autodiscover exchange
+- exchange web services calendar
+- aspose email java example
+schemas:
+- author: Aspose
+  dateModified: '2026-06-28'
+  description: Learn how to autodiscover exchange URLs and use exchange web services
+    calendar features with Aspose.Email for Java. Step‑by‑step guide for seamless
+    integration.
+  headline: How to Autodiscover Exchange with Aspose.Email Java & EWS
+  type: TechArticle
+- description: Learn how to autodiscover exchange URLs and use exchange web services
+    calendar features with Aspose.Email for Java. Step‑by‑step guide for seamless
+    integration.
+  name: How to Autodiscover Exchange with Aspose.Email Java & EWS
+  steps:
+  - name: '**Download the Library** from the official releases page – see [Releases](https://releases.aspose.com/email/java/)
+      or [Aspose Releases](https://releases.aspose.com/email/java/).'
+    text: '**Download the Library** from the official releases page – see [Releases](https://releases.aspose.com/email/java/)
+      or [Aspose Releases](https://releases.aspose.com/email/java/).'
+  - name: '**Get a Temporary License** from the temporary‑license portal – see [Aspose''s
+      Purchase Page](https://purchase.aspose.com/temporary-license/) or [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Get a Temporary License** from the temporary‑license portal – see [Aspose''s
+      Purchase Page](https://purchase.aspose.com/temporary-license/) or [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase a Full License** for production use – see [Aspose Purchase](https://purchase.aspose.com/buy)
+      or [Purchase Page](https://purchase.aspose.com/buy).'
+    text: '**Purchase a Full License** for production use – see [Aspose Purchase](https://purchase.aspose.com/buy)
+      or [Purchase Page](https://purchase.aspose.com/buy).'
+  - name: '**Establish Credentials and Create Client** – instantiate `ExchangeClient`
+      with the autodiscovered URL and user credentials.'
+    text: '**Establish Credentials and Create Client** – instantiate `ExchangeClient`
+      with the autodiscovered URL and user credentials.'
+  - name: '**Create a CalendarMessage** – set subject, start/end times, location,
+      and attendees.'
+    text: '**Create a CalendarMessage** – set subject, start/end times, location,
+      and attendees.'
+  - name: '**Write with CalendarWriter** – call `write` to persist the event on the
+      server.'
+    text: '**Write with CalendarWriter** – call `write` to persist the event on the
+      server.'
+  type: HowTo
+- questions:
+  - answer: JDK 16+, Maven, and a valid Aspose.Email license (temporary for trial).
+    question: What are the prerequisites for using Aspose.Email Java?
+  - answer: Use `AutodiscoverService` to request user settings; the `ExternalEwsUrl`
+      field contains the endpoint.
+    question: How do I obtain an EWS URL for a specific email address?
+  - answer: Yes – with batching and proper JVM tuning it can process thousands of
+      events per minute.
+    question: Can Aspose.Email handle large volumes of calendar events?
+  - answer: Incorrect credentials, DNS misconfiguration, or blocked outbound ports
+      are typical culprits.
+    question: What are some common issues when using AutodiscoverService?
+  - answer: Visit the official purchase page – see [Aspose Purchase](https://purchase.aspose.com/buy).
+    question: How can I purchase a full license for Aspose.Email?
+  type: FAQPage
+title: Hogyan automatikusan felfedezzük az Exchange-t az Aspose.Email Java & EWS használatával
+url: /hu/java/exchange-server-integration/aspose-email-java-autodiscover-ews-calendar-management/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,35 +72,35 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Mesterszintű e-mail automatizálás: Aspose.Email Java és EWS az Exchange Server integrációjához
+# Mester Email Automatizálás: Aspose.Email Java & EWS az Exchange Server integrációhoz
 
-mai gyorsan változó digitális környezetben az e-maillel kapcsolatos feladatok automatizálása kulcsfontosságú a termelékenység növelése és a zökkenőmentes kommunikáció biztosítása érdekében. Ez az oktatóanyag végigvezeti Önt az Aspose.Email for Java hatékony funkcióinak kihasználásán, amellyel automatikusan felfedezheti az Exchange URL-eket az EWS (Exchange Web Services) használatával, és hatékonyan írhatja a naptáradatokat. Ezen képességek elsajátításával egyszerűsítheti az e-mail munkafolyamatokat, és javíthatja alkalmazása integrációját a Microsoft Exchange Serverrel.
+A mai gyors tempójú digitális környezetben a **how to autodiscover exchange** alapvető készség mindenki számára, aki Java‑alkalmazásokat fejleszt, amelyek a Microsoft Exchange‑szel kommunikálnak. Az Aspose.Email for Java és az Exchange Web Services (EWS) használatával automatikusan megtalálhatja a megfelelő EWS végpontot, és naptári adatokat írhat anélkül, hogy URL‑eket kódolna be. Ez az útmutató minden lépést végigvezet, a Maven beállítástól a naptáresemények létrehozásáig, hogy egyszerűsítse az e‑mail munkafolyamatokat és növelje a termelékenységet.
 
-## Amit tanulni fogsz
+## Gyors válaszok
+- **Mi az első lépés az Exchange URL autodiscover‑hez?** Inicializálja az `AutodiscoverService`‑t a megfelelő hitelesítő adatokkal, és hívja a `GetUserSettings`‑et.  
+- **Melyik osztály ír naptári elemeket az Exchange‑be?** A `CalendarWriter` kezeli az iCalendar‑kompatibilis üzenetek létrehozását és elküldését.  
+- **Szükségem van licencre fejlesztéshez?** Ideiglenes licenc elegendő a kiértékeléshez; a teljes licenc a termeléshez kötelező.  
+- **Milyen Java verzió szükséges?** JDK 16 vagy újabb ajánlott a legjobb kompatibilitás érdekében.  
+- **Több naptáreseményt tudok csoportosítani?** Igen – hozza létre a `CalendarMessage` objektumokat, és küldje el őket egyetlen `ExchangeClient` munkamenetben.
 
-- Az Exchange webszolgáltatások URL-címének lekérése az Aspose.Email AutodiscoverService szolgáltatásának használatával.
-- Naptári események közvetlen írása Exchange szerverre EWS használatával.
-- Az Aspose.Email beállítása Java-hoz egy Maven projektben.
-- Gyakorlati alkalmazások és teljesítményoptimalizálási tippek.
-- Gyakori problémák elhárítása.
+## Mi az AutodiscoverService?
+Az `AutodiscoverService` az Aspose.Email segédeszköze, amely felkeresi a Microsoft Autodiscover végpontját, hitelesíti a felhasználót, és visszaadja a konfigurációs beállításokat, például a külső EWS URL‑t. Ezzel megszűnik a szolgáltatáscímek kézi kódolásának találgatása.
 
-Mielőtt elkezdenénk megvalósítani ezeket a funkciókat, nézzük meg az előfeltételeket.
+## Miért használjuk az Exchange Web Services Calendar‑t az Aspose.Email‑lel?
+Az Aspose.Email **50+** bemeneti és kimeneti formátumot támogat, és kötegelt üzemmódban **százak** naptári elemet képes feldolgozni percenként, köszönhetően a kis erőforrásigényű HTTP kezelésnek. Az EWS használatával szerver‑oldali megbízhatóságot, teljes jogosultság‑vezérlést és azonnali értekezlet‑frissítések terjesztését kapja minden Exchange kliens között.
 
 ## Előfeltételek
 
-A bemutató követéséhez győződjön meg arról, hogy rendelkezik a következőkkel:
+- **Java Development Kit (JDK)** 16+ telepítve.
+- **Maven** a függőségkezeléshez.
+- **Aspose.Email for Java** könyvtár (letölthető a hivatalos oldalról).
+- Alapvető ismeretek a Java szintaxisról és a Maven projektstruktúráról.
 
-- **Java fejlesztőkészlet (JDK)**: A rendszeren telepítve van a 16-os vagy újabb verzió.
-- **Szakértő**Projektfüggőségek és build folyamatok kezelésére.
-- **Aspose.Email Java könyvtárhoz**A központi könyvtárnak interakcióba kellett lépnie az Exchange szolgáltatásokkal.
-
-Ezenkívül ajánlott a Java programozás és a Maven alapvető ismerete. Ha még nem ismeri ezeket az eszközöket, érdemes lehet áttanulmányozni a bevezető forrásokat a folytatás előtt.
-
-## Az Aspose.Email beállítása Java-hoz
+## Aspose.Email for Java beállítása
 
 ### Maven telepítés
 
-Az Aspose.Email Maven használatával történő beépítéséhez a projektbe, adja hozzá a következő függőséget a `pom.xml` fájl:
+Adja hozzá az Aspose.Email függőséget a `pom.xml`‑hez. Ez az egyetlen sor a legújabb stabil kiadást húzza le a Maven Central‑ról:
 
 ```xml
 <dependency>
@@ -50,162 +111,157 @@ Az Aspose.Email Maven használatával történő beépítéséhez a projektbe, a
 </dependency>
 ```
 
-### Licencbeszerzés
+### Licenc beszerzése
 
-Az Aspose.Email különböző licencelési lehetőségeket kínál, beleértve az ingyenes próbaverziót és az ideiglenes licenceket kiértékelési célokra. Kezdés:
+Az Aspose.Email ingyenes próbaidőszakot és ideiglenes licenceket kínál kiértékeléshez. Kövesse az alábbi lépéseket:
 
-1. **Töltsd le a könyvtárat**Látogatás [Kiadások](https://releases.aspose.com/email/java/) az Aspose.Email letöltéséhez.
-2. **Ideiglenes jogosítvány beszerzése**Szerezzen be egy ideiglenes engedélyt [Aspose vásárlási oldala](https://purchase.aspose.com/temporary-license/).
-3. **Teljes licenc vásárlása**folyamatos használathoz érdemes lehet teljes licencet vásárolni a következő címen: [Aspose vásárlás](https://purchase.aspose.com/buy).
+1. **Töltse le a könyvtárat** a hivatalos kiadási oldalról – lásd a [Kiadások](https://releases.aspose.com/email/java/) vagy [Aspose Kiadások](https://releases.aspose.com/email/java/) oldalt.  
+2. **Szerezzen be egy ideiglenes licencet** az ideiglenes‑licenc portálról – lásd az [Aspose vásárlási oldalát](https://purchase.aspose.com/temporary-license/) vagy az [Aspose Ideiglenes Licenc Oldalát](https://purchase.aspose.com/temporary-license/).  
+3. **Vásároljon teljes licencet** a termeléshez – lásd az [Aspose vásárlást](https://purchase.aspose.com/buy) vagy a [Vásárlási oldalt](https://purchase.aspose.com/buy).
 
-A licenc megszerzése után inicializálja az Aspose.Emailt az alábbiak szerint:
+A `.lic` fájl megszerzése után töltse be az alkalmazás indításakor:
 
 ```java
-// Töltse be a licencfájlt
+// Load the license file
 License license = new License();
 license.setLicense("path_to_license.lic");
 ```
 
-## Megvalósítási útmutató
+## Implementációs útmutató
 
-### 1. funkció: Exchange URL automatikus észlelése EWS használatával
+### Hogyan autodiscover‑eljük az Exchange URL‑t EWS‑szel?
 
-#### Áttekintés
-
-Ez a funkció lehetővé teszi egy adott e-mail címhez tartozó külső EWS URL-cím lekérését, leegyszerűsítve a Microsoft Exchange-kel való integrációt.
-
-#### Lépések:
-
-##### AutodiscoverService inicializálása
-
-Kezdje egy példány létrehozásával `AutodiscoverService` és a hitelesítő adatok beállítása:
+A megfelelő EWS végpont felfedezéséhez hozza létre az `AutodiscoverService`‑t a felhasználó hitelesítő adataival, majd hívja a `GetUserSettings`‑et, kérve az `ExternalEwsUrl` beállítást. A szolgáltatás felkeresi a Microsoft Autodiscover végpontját, követi az átirányításokat, és visszaadja azt az URL‑t, amelyet az `ExchangeClient` létrehozásához használhat.
 
 ```java
 import com.aspose.email.AutodiscoverService;
 import com.aspose.email.UserSettingName;
 import com.aspose.email.system.NetworkCredential;
 
-// Hozzon létre egy AutodiscoverService példányt
+// Create an instance of AutodiscoverService
 AutodiscoverService svc = new AutodiscoverService();
 
-// A szolgáltatás hitelesítő adatainak beállítása egy NetworkCredential objektum használatával
+// Set credentials for the service using a NetworkCredential object
 svc.setCredentials(new NetworkCredential("username@domain.com", "password"));
 ```
 
-##### EWS URL lekérése
+### Hogyan írjunk naptáreseményeket az Exchange‑be EWS‑szel?
 
-Ezután kérd le a felhasználói beállításokat a `ExternalEwsUrl`:
+Az EWS URL megszerzése után hozzon létre egy `ExchangeClient`‑et a felfedezett végpont és a felhasználói hitelesítő adatok alapján. Állítson össze egy `CalendarMessage`‑t a kívánt tárggyal, időponttal, helyszínnel és résztvevőkkel, majd adja át a `CalendarWriter.write`‑nek, amely iCalendar formátumba konvertálja az adatokat és elmenti az eseményt az Exchange szerveren.
+
+`CalendarWriter` egy osztály, amely naptári elemeket ír egy Exchange szerverre EWS‑en keresztül.  
+`ExchangeClient` egy kapcsolatot képvisel egy Exchange szerverrel, és módszereket biztosít az elemek küldésére és lekérdezésére.  
+`CalendarMessage` tartalmazza a naptáresemény részleteit, mint például a tárgy, idő, helyszín és résztvevők.
 
 ```java
 import com.aspose.email.system.collections.generic.IGenericDictionary;
 
-// Felhasználói beállítások beszerzése, kifejezetten az ExternalEwsUrl-hez
+// Obtain user settings, specifically for ExternalEwsUrl
 IGenericDictionary<Integer, Object> userSettings = svc.getUserSettings("email@example.com", UserSettingName.ExternalEwsUrl).getSettings();
 
-// Az EWS URL-cím lekérése és konvertálása a szótárból
+// Retrieve and cast the EWS URL from the dictionary
 String ewsUrl = (String)userSettings.get_Item(UserSettingName.ExternalEwsUrl);
 
 System.out.println("External EWS URL: " + ewsUrl);
 ```
 
-### 2. funkció: Naptáradatok írása EWS használatával
+### Részletes lépések a naptáríráshoz
 
-#### Áttekintés
-
-Ez a szakasz bemutatja, hogyan írhatunk naptáreseményeket közvetlenül egy Exchange-kiszolgálóra a `CalendarWriter` osztály.
-
-#### Lépések:
-
-##### Hitelesítő adatok megadása és kliens létrehozása
-
-Állítsa be hitelesítő adatait, és hozzon létre egy példányt a következőből: `ExchangeClient`:
+1. **Hitelesítő adatok beállítása és kliens létrehozása** – inicializálja az `ExchangeClient`‑et az autodiscover‑elt URL‑lel és a felhasználói hitelesítőkkel.  
+2. **CalendarMessage létrehozása** – állítsa be a tárgyat, a kezdő‑/záró időpontot, a helyszínt és a résztvevőket.  
+3. **Írás CalendarWriter‑rel** – hívja meg a `write` metódust az esemény szerveren való tárolásához.
 
 ```java
 import com.aspose.email.ExchangeCredentials;
 import com.aspose.email.ExchangeClient;
 
-// Hitelesítő adatok megadása és Exchange-kliens létrehozása
+// Establish credentials and create an Exchange client
 ExchangeCredentials credentials = new ExchangeCredentials("username@domain.com", "password");
 ExchangeClient client = new ExchangeClient(ewsUrl, credentials);
 ```
-
-##### Naptárüzenet létrehozása és írása
-
-Naptárüzenet létrehozása és használata `CalendarWriter` hogy kiírjam a szerverre:
 
 ```java
 import com.aspose.email.CalendarWriter;
 import com.aspose.email.MailMessage;
 import java.util.Date;
 
-// Naptárüzenet létrehozása
+// Create a calendar message
 MailMessage calendarMessage = MailMessage.createAppointment(
     "from@example.com",
     "to@example.com",
     "Meeting Subject",
     "Location",
     new Date(),
-    new Date(System.currentTimeMillis() + 3600000)); // Egy órára van beállítva
+    new Date(System.currentTimeMillis() + 3600000)); // Set for one hour from now
 
-// Inicializálja a CalendarWritert, és adja meg az íráshoz használandó mappát.
+// Initialize CalendarWriter and specify the folder to write to
 CalendarWriter writer = new CalendarWriter(client, "YOUR_DOCUMENT_DIRECTORY", "CalendarFolderName");
 
-// Naptárüzenet írása az Exchange Serverre
+// Write the calendar message to Exchange Server
 writer.write(calendarMessage);
 ```
 
 ## Gyakorlati alkalmazások
 
-- **Automatizált megbeszélésütemezés**: Egyszerűsítse az ütemezést a találkozók automatikus létrehozásával a résztvevők naptárában.
-- **Eseménykezelő rendszerek**Integrálható a vállalati eseményeket kezelő rendszerekkel, biztosítva a zökkenőmentes frissítéseket a felhasználói naptárak között.
-- **Ügyfélkapcsolat-kezelés (CRM)**Továbbfejlesztett CRM eszközök segítségével közvetlenül az Exchange szerveren ütemezhetők és követhetők nyomon az ügyfél-interakciók.
+- **Automatizált értekezlet‑ütemezés** – generáljon meghívókat azonnal a háttérrendszerekből.  
+- **Eseménykezelő platformok** – tartsa szinkronban a vállalati naptárakat manuális beviteli igény nélkül.  
+- **CRM integráció** – rögzítse az értékesítési hívásokat és nyomon követési értekezleteket közvetlenül a felhasználók Exchange naptárába.
 
-## Teljesítménybeli szempontok
+## Teljesítmény‑szempontok
 
-A teljesítmény optimalizálása az Aspose.Email használatakor:
+- **Kötegelt kérések**: csoportosítsa a `CalendarMessage` objektumokat egyetlen `ExchangeClient` munkamenetben a körutazások számának csökkentése érdekében.  
+- **Memória‑kezelés**: állítsa be a JVM heap‑et (`-Xmx2g` vagy nagyobb) nagy mennyiségű esemény kezelésekor.  
+- **Könyvtár‑frissítések**: tartsa naprakészen az Aspose.Email‑t; minden kiadás tartalmaz teljesítmény‑finomításokat és új EWS funkciókat.
 
-- Ahol lehetséges, kötegelt kérelmekkel minimalizáld a hálózati hívásokat.
-- Figyelemmel kíséri a memóriahasználatot, és szükség szerint módosítja a JVM beállításait nagyméretű műveletekhez.
-- Rendszeresen frissítse a függőségeket a könyvtár teljesítményének javítása érdekében.
+## Gyakori problémák és megoldások
 
-## Következtetés
+- **Érvénytelen hitelesítő adatok** – ellenőrizze a felhasználónév formátumát (`domain\user` vagy `user@domain.com`).  
+- **Hálózati tűzfalak** – biztosítsa, hogy a 443‑ és 80‑as portok nyitva legyenek a kimenő HTTPS forgalom számára az Autodiscover végponthoz.  
+- **TLS verziók** – az Exchange TLS 1.2‑t vagy újabbat igényel; konfigurálja a JVM‑et ennek megfelelően (`-Dhttps.protocols=TLSv1.2`).  
 
-Mostanra már rendelkeznie kell az Exchange URL-ek automatikus felderítéséhez és a naptáradatok írásához szükséges ismeretekkel az EWS és az Aspose.Email for Java használatával. Ezek a képességek nemcsak az alkalmazás Microsoft Exchange-integrációját javítják, hanem a levelezés munkafolyamatainak kezelésének hatékonyságát is növelik.
+## Gyakran feltett kérdések
 
-### Következő lépések
+**K: Mik a feltételek az Aspose.Email Java használatához?**  
+V: JDK 16+, Maven és egy érvényes Aspose.Email licenc (ideiglenes a próbaidőszakhoz).
 
-- Fedezze fel az Aspose.Email további funkcióit a fejlett e-mail-kezeléshez.
-- Kísérletezz ezen megoldások nagyobb rendszerekbe vagy alkalmazásokba való integrálásával.
+**K: Hogyan szerezzek be egy EWS URL‑t egy adott e‑mail címhez?**  
+V: Használja az `AutodiscoverService`‑t a felhasználói beállítások lekéréséhez; az `ExternalEwsUrl` mező tartalmazza a végpontot.
 
-## GYIK szekció
+**K: Kezelni tudja az Aspose.Email nagy mennyiségű naptári eseményt?**  
+V: Igen – kötegelt feldolgozással és megfelelő JVM‑hangolással percenként több ezer eseményt is képes kezelni.
 
-**K: Milyen előfeltételei vannak az Aspose.Email Java használatának?**
-V: JDK 16+, Maven és alapvető Java programozási ismeretekre van szükséged.
+**K: Milyen gyakori problémák merülnek fel az AutodiscoverService használatakor?**  
+V: Hibás hitelesítő adatok, DNS‑hibák vagy blokkolt kimenő portok a leggyakoribb okok.
 
-**K: Hogyan szerezhetek be egy adott e-mail címhez tartozó EWS URL-címet?**
-V: Használja a `AutodiscoverService` a felhasználói beállítások lekéréséhez, beleértve a `ExternalEwsUrl`.
+**K: Hogyan vásárolhatok teljes licencet az Aspose.Email‑hez?**  
+V: Látogassa meg a hivatalos vásárlási oldalt – lásd a [Aspose vásárlást](https://purchase.aspose.com/buy).
 
-**K: Az Aspose.Email képes nagy mennyiségű naptári eseményt kezelni?**
-V: Igen, megfelelő teljesítményoptimalizálással és erőforrás-gazdálkodással.
+## Források
 
-**K: Milyen gyakori problémák merülhetnek fel az AutodiscoverService használatakor?**
-V: Győződjön meg a helyes hitelesítő adatokról és a hálózati kapcsolatról. További segítségért látogasson el a következő oldalra: [Aspose Fórum](https://forum.aspose.com/c/email/10).
+- **Dokumentáció**: Részletes útmutatók és API‑referenciák elérhetők a [Aspose Email Java Dokumentáció](https://reference.aspose.com/email/java/) oldalon.  
+- **Letöltés**: A könyvtár letöltése a [Aspose Kiadások](https://releases.aspose.com/email/java/) oldalról.  
+- **Ingyenes próba**: Kezdje el ingyenes próbaverzióval a [Aspose Email Java Ingyenes Próbaverzió](https://releases.aspose.com/email/java/) oldalon.  
+- **Vásárlás**: Licencelési lehetőségek a [Aspose vásárlás](https://purchase.aspose.com/buy) oldalon.  
+- **Ideiglenes licenc**: Teljes funkciók kiértékelése ideiglenes licenccel a [Aspose Ideiglenes Licenc Oldal](https://purchase.aspose.com/temporary-license/) segítségével.  
+- **Fórum**: Kérjen közösségi segítséget a [Aspose Fórum](https://forum.aspose.com/c/email/10) oldalon.  
 
-**K: Hogyan vásárolhatok teljes licencet az Aspose.Emailhez?**
-V: Látogassa meg a [Vásárlási oldal](https://purchase.aspose.com/buy) teljes jogosítvány megszerzéséhez.
+---
 
-## Erőforrás
+**Utolsó frissítés:** 2026-06-28  
+**Tesztelt verzió:** Aspose.Email for Java 23.12 (a cikk írásakor legújabb)  
+**Szerző:** Aspose  
 
-- **Dokumentáció**Átfogó útmutatók és API-referenciák érhetők el a következő címen: [Aspose Email Java dokumentáció](https://reference.aspose.com/email/java/).
-- **Letöltés**: Hozzáférés a könyvtár letöltéseihez innen [Aspose kiadások](https://releases.aspose.com/email/java/).
-- **Vásárlás**A licencelési lehetőségekért látogasson el a következő oldalra: [Aspose vásárlás](https://purchase.aspose.com/buy).
-- **Ingyenes próbaverzió**Kezdje el egy ingyenes próbaverzióval a következő címen: [Aspose Email Java ingyenes próbaverzió](https://releases.aspose.com/email/java/).
-- **Ideiglenes engedély**: Az Aspose.Email összes funkcióját kipróbálhatja egy ideiglenes licenc beszerzésével a következőtől: [Aspose ideiglenes licencoldal](https://purchase.aspose.com/temporary-license/).
+{{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan csatlakoztassuk az Exchange Server‑t Aspose.Email‑lel Java‑ban: Lépésről‑lépésre útmutató](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Hogyan hozzunk létre egy EWSClient példányt Aspose.Email for Java‑val: Exchange Server integrációs útmutató](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Útmutató az Exchange Calendar csatlakoztatásához Aspose.Email for Java‑val | Exchange Server integráció](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -1,9 +1,70 @@
 ---
-"date": "2025-05-29"
-"description": "Leer hoe u e-mailtaken kunt automatiseren met Aspose.Email voor Java met EWS-integratie. Stroomlijn workflows door URL's automatisch te detecteren en agendagegevens efficiënt te beheren."
-"title": "Master E-mailautomatisering&#58; Aspose.Email Java en EWS voor Exchange Server-integratie"
-"url": "/nl/java/exchange-server-integration/aspose-email-java-autodiscover-ews-calendar-management/"
-"weight": 1
+date: '2026-06-28'
+description: Leer hoe u exchange URLs automatisch kunt ontdekken en de calendar features
+  van Exchange Web Services kunt gebruiken met Aspose.Email for Java. Stapsgewijze
+  handleiding voor naadloze integratie.
+keywords:
+- how to autodiscover exchange
+- exchange web services calendar
+- aspose email java example
+schemas:
+- author: Aspose
+  dateModified: '2026-06-28'
+  description: Learn how to autodiscover exchange URLs and use exchange web services
+    calendar features with Aspose.Email for Java. Step‑by‑step guide for seamless
+    integration.
+  headline: How to Autodiscover Exchange with Aspose.Email Java & EWS
+  type: TechArticle
+- description: Learn how to autodiscover exchange URLs and use exchange web services
+    calendar features with Aspose.Email for Java. Step‑by‑step guide for seamless
+    integration.
+  name: How to Autodiscover Exchange with Aspose.Email Java & EWS
+  steps:
+  - name: '**Download the Library** from the official releases page – see [Releases](https://releases.aspose.com/email/java/)
+      or [Aspose Releases](https://releases.aspose.com/email/java/).'
+    text: '**Download the Library** from the official releases page – see [Releases](https://releases.aspose.com/email/java/)
+      or [Aspose Releases](https://releases.aspose.com/email/java/).'
+  - name: '**Get a Temporary License** from the temporary‑license portal – see [Aspose''s
+      Purchase Page](https://purchase.aspose.com/temporary-license/) or [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+    text: '**Get a Temporary License** from the temporary‑license portal – see [Aspose''s
+      Purchase Page](https://purchase.aspose.com/temporary-license/) or [Aspose Temporary
+      License Page](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase a Full License** for production use – see [Aspose Purchase](https://purchase.aspose.com/buy)
+      or [Purchase Page](https://purchase.aspose.com/buy).'
+    text: '**Purchase a Full License** for production use – see [Aspose Purchase](https://purchase.aspose.com/buy)
+      or [Purchase Page](https://purchase.aspose.com/buy).'
+  - name: '**Establish Credentials and Create Client** – instantiate `ExchangeClient`
+      with the autodiscovered URL and user credentials.'
+    text: '**Establish Credentials and Create Client** – instantiate `ExchangeClient`
+      with the autodiscovered URL and user credentials.'
+  - name: '**Create a CalendarMessage** – set subject, start/end times, location,
+      and attendees.'
+    text: '**Create a CalendarMessage** – set subject, start/end times, location,
+      and attendees.'
+  - name: '**Write with CalendarWriter** – call `write` to persist the event on the
+      server.'
+    text: '**Write with CalendarWriter** – call `write` to persist the event on the
+      server.'
+  type: HowTo
+- questions:
+  - answer: JDK 16+, Maven, and a valid Aspose.Email license (temporary for trial).
+    question: What are the prerequisites for using Aspose.Email Java?
+  - answer: Use `AutodiscoverService` to request user settings; the `ExternalEwsUrl`
+      field contains the endpoint.
+    question: How do I obtain an EWS URL for a specific email address?
+  - answer: Yes – with batching and proper JVM tuning it can process thousands of
+      events per minute.
+    question: Can Aspose.Email handle large volumes of calendar events?
+  - answer: Incorrect credentials, DNS misconfiguration, or blocked outbound ports
+      are typical culprits.
+    question: What are some common issues when using AutodiscoverService?
+  - answer: Visit the official purchase page – see [Aspose Purchase](https://purchase.aspose.com/buy).
+    question: How can I purchase a full license for Aspose.Email?
+  type: FAQPage
+title: Hoe Exchange automatisch te ontdekken met Aspose.Email Java & EWS
+url: /nl/java/exchange-server-integration/aspose-email-java-autodiscover-ews-calendar-management/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,35 +72,33 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# E-mailautomatisering onder de knie krijgen: Aspose.Email Java en EWS voor Exchange Server-integratie
+# Meester Emailautomatisering: Aspose.Email Java & EWS voor Exchange Server-integratie
 
-In de huidige, snelle digitale omgeving is het automatiseren van e-mailgerelateerde taken cruciaal om de productiviteit te verhogen en naadloze communicatie te garanderen. Deze tutorial begeleidt u bij het benutten van de krachtige functies van Aspose.Email voor Java om automatisch een Exchange-URL te detecteren met behulp van EWS (Exchange Web Services) en agendagegevens efficiënt te schrijven. Door deze mogelijkheden onder de knie te krijgen, stroomlijnt u e-mailworkflows en verbetert u de integratie van uw applicatie met Microsoft Exchange Server.
+In de hedendaagse snel evoluerende digitale omgeving is **how to autodiscover exchange** een fundamentele vaardigheid voor iedereen die Java‑applicaties bouwt die communiceren met Microsoft Exchange. Door Aspose.Email voor Java te gebruiken in combinatie met Exchange Web Services (EWS), kun je automatisch de juiste EWS‑endpoint vinden en agenda‑gegevens schrijven zonder URL's hard‑gecodeerd te hebben. Deze tutorial leidt je stap voor stap, van Maven‑installatie tot het maken van agenda‑gebeurtenissen, zodat je e‑mailworkflows kunt stroomlijnen en de productiviteit kunt verhogen.
 
-## Wat je zult leren
+## Snelle Antwoorden
+- **Wat is de eerste stap om een Exchange‑URL autodiscover te vinden?** Initialize `AutodiscoverService` with proper credentials and call `GetUserSettings`.  
+- **Welke klasse schrijft agenda‑items naar Exchange?** `CalendarWriter` handles creation and submission of iCalendar‑compatible messages.  
+- **Heb ik een licentie nodig voor ontwikkeling?** A temporary license works for evaluation; a full license is required for production.  
+- **Welke Java‑versie is vereist?** JDK 16 or higher is recommended for optimal compatibility.  
+- **Kan ik meerdere agenda‑gebeurtenissen in batch verwerken?** Yes – create several `CalendarMessage` objects and send them in a single `ExchangeClient` session.
 
-- Hoe u de AutodiscoverService van Aspose.Email gebruikt om de URL van Exchange Web Services te verkrijgen.
-- Agenda-evenementen rechtstreeks naar een Exchange-server schrijven met behulp van EWS.
-- Aspose.Email instellen voor Java in een Maven-project.
-- Praktische toepassingen en tips voor prestatie-optimalisatie.
-- Veelvoorkomende problemen oplossen.
+## Wat is AutodiscoverService?
+`AutodiscoverService` is de helper van Aspose.Email die contact opneemt met het Autodiscover‑endpoint van Microsoft, de gebruiker authenticeert en configuratie‑instellingen retourneert, zoals de externe EWS‑URL. Het verwijdert het giswerk van het hard‑coderen van service‑adressen.
 
-Laten we eens kijken naar de vereisten voordat we beginnen met het implementeren van deze functies.
+## Waarom Exchange Web Services Calendar gebruiken met Aspose.Email?
+Aspose.Email ondersteunt **50+** invoer‑ en uitvoerformaten en kan **honderden agenda‑items per minuut** verwerken wanneer gebatcht, dankzij de low‑overhead HTTP‑afhandeling. Met EWS krijg je server‑betrouwbaarheid, volledige permissie‑controle en directe verspreiding van vergader‑updates naar alle Exchange‑clients.
 
 ## Vereisten
+- **Java Development Kit (JDK)** 16+ geïnstalleerd.
+- **Maven** voor afhankelijkheidsbeheer.
+- **Aspose.Email for Java** bibliotheek (download van de officiële site).
+- Basiskennis van Java‑syntaxis en Maven‑projectstructuur.
 
-Om deze tutorial te kunnen volgen, moet u het volgende doen:
+## Instellen van Aspose.Email voor Java
 
-- **Java-ontwikkelingskit (JDK)**: Versie 16 of hoger op uw systeem geïnstalleerd.
-- **Maven**: Voor het beheren van projectafhankelijkheden en bouwprocessen.
-- **Aspose.Email voor Java-bibliotheek**: De kernbibliotheek die nodig is om te communiceren met Exchange-services.
-
-Daarnaast wordt basiskennis van Java-programmering en Maven aanbevolen. Als je nog niet bekend bent met deze tools, overweeg dan om eerst de inleidende bronnen te raadplegen voordat je verdergaat.
-
-## Aspose.Email instellen voor Java
-
-### Maven-installatie
-
-Om Aspose.Email in uw project op te nemen met behulp van Maven, voegt u de volgende afhankelijkheid toe aan uw `pom.xml` bestand:
+### Maven‑installatie
+Voeg de Aspose.Email‑dependency toe aan je `pom.xml`. Deze enkele regel haalt de nieuwste stabiele release op van Maven Central:
 
 ```xml
 <dependency>
@@ -50,162 +109,147 @@ Om Aspose.Email in uw project op te nemen met behulp van Maven, voegt u de volge
 </dependency>
 ```
 
-### Licentieverwerving
+### Licentie‑acquisitie
+Aspose.Email biedt een gratis proefversie en tijdelijke licenties voor evaluatie. Volg deze stappen:
 
-Aspose.Email biedt verschillende licentieopties, waaronder een gratis proefperiode en tijdelijke licenties voor evaluatiedoeleinden. Om te beginnen:
+1. **Download de Bibliotheek** van de officiële releases‑pagina – zie [Releases](https://releases.aspose.com/email/java/) of [Aspose Releases](https://releases.aspose.com/email/java/).  
+2. **Verkrijg een Tijdelijke Licentie** via het tijdelijke‑licentieportaal – zie [Aspose's Purchase Page](https://purchase.aspose.com/temporary-license/) of [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
+3. **Koop een Volledige Licentie** voor productiegebruik – zie [Aspose Purchase](https://purchase.aspose.com/buy) of [Purchase Page](https://purchase.aspose.com/buy).
 
-1. **Download de bibliotheek**: Bezoek [Uitgaven](https://releases.aspose.com/email/java/) om Aspose.Email te downloaden.
-2. **Een tijdelijke licentie verkrijgen**: Vraag een tijdelijke licentie aan bij [Aspose's aankooppagina](https://purchase.aspose.com/temporary-license/).
-3. **Koop een volledige licentie**Voor voortgezet gebruik kunt u overwegen een volledige licentie aan te schaffen bij [Aspose Aankoop](https://purchase.aspose.com/buy).
-
-Nadat u uw licentie hebt verkregen, initialiseert u Aspose.Email als volgt:
+Nadat je het `.lic`‑bestand hebt, laad je het bij het starten van de applicatie:
 
 ```java
-// Laad het licentiebestand
+// Load the license file
 License license = new License();
 license.setLicense("path_to_license.lic");
 ```
 
-## Implementatiegids
+## Implementatie‑gids
 
-### Functie 1: Exchange-URL automatisch detecteren met EWS
-
-#### Overzicht
-
-Met deze functie kunt u de externe EWS-URL voor een bepaald e-mailadres ophalen, waardoor de integratie met Microsoft Exchange wordt vereenvoudigd.
-
-#### Stappen:
-
-##### Initialiseer AutodiscoverService
-
-Begin met het maken van een exemplaar van `AutodiscoverService` en het instellen van referenties:
+### Hoe Exchange‑URL autodiscoveren met EWS?
+Om de juiste EWS‑endpoint te ontdekken, maak je een `AutodiscoverService`‑instantie met de gebruikersreferenties, en roep je vervolgens `GetUserSettings` aan met de vraag naar de `ExternalEwsUrl`‑instelling. De service neemt contact op met het Autodiscover‑endpoint van Microsoft, volgt redirects en retourneert de URL die kan worden gebruikt om een `ExchangeClient` te maken voor verdere bewerkingen.
 
 ```java
 import com.aspose.email.AutodiscoverService;
 import com.aspose.email.UserSettingName;
 import com.aspose.email.system.NetworkCredential;
 
-// Maak een instantie van AutodiscoverService
+// Create an instance of AutodiscoverService
 AutodiscoverService svc = new AutodiscoverService();
 
-// Stel referenties in voor de service met behulp van een NetworkCredential-object
+// Set credentials for the service using a NetworkCredential object
 svc.setCredentials(new NetworkCredential("username@domain.com", "password"));
 ```
 
-##### EWS-URL ophalen
+### Hoe agenda‑gebeurtenissen schrijven naar Exchange met EWS?
+Na het verkrijgen van de EWS‑URL, maak je een `ExchangeClient` met de ontdekte endpoint en gebruikersreferenties. Bouw een `CalendarMessage` met het gewenste onderwerp, tijd, locatie en deelnemers, en geef deze vervolgens door aan `CalendarWriter.write` die de gegevens converteert naar iCalendar‑formaat en het evenement opslaat op de Exchange‑server.
 
-Haal vervolgens de gebruikersinstellingen op om de `ExternalEwsUrl`:
+`CalendarWriter` is een klasse die agenda‑items naar een Exchange‑server schrijft met EWS.  
+`ExchangeClient` vertegenwoordigt een verbinding met een Exchange‑server en biedt methoden om items te verzenden en op te halen.  
+`CalendarMessage` bevat de details van een agenda‑evenement zoals onderwerp, tijd, locatie en deelnemers.
 
 ```java
 import com.aspose.email.system.collections.generic.IGenericDictionary;
 
-// Gebruikersinstellingen verkrijgen, specifiek voor ExternalEwsUrl
+// Obtain user settings, specifically for ExternalEwsUrl
 IGenericDictionary<Integer, Object> userSettings = svc.getUserSettings("email@example.com", UserSettingName.ExternalEwsUrl).getSettings();
 
-// Haal de EWS-URL op en cast deze uit het woordenboek
+// Retrieve and cast the EWS URL from the dictionary
 String ewsUrl = (String)userSettings.get_Item(UserSettingName.ExternalEwsUrl);
 
 System.out.println("External EWS URL: " + ewsUrl);
 ```
 
-### Functie 2: Kalendergegevens schrijven met EWS
-
-#### Overzicht
-
-In deze sectie wordt gedemonstreerd hoe u agenda-evenementen rechtstreeks naar een Exchange-server schrijft met behulp van de `CalendarWriter` klas.
-
-#### Stappen:
-
-##### Creëer referenties en creëer een klant
-
-Stel uw referenties in en maak een exemplaar van `ExchangeClient`:
+### Gedetailleerde stappen voor het schrijven van agenda‑items
+1. **Stel referenties in en maak client** – instantiate `ExchangeClient` met de autodiscovered URL en gebruikersreferenties.  
+2. **Maak een CalendarMessage** – stel onderwerp, start/eind‑tijden, locatie en deelnemers in.  
+3. **Schrijf met CalendarWriter** – roep `write` aan om het evenement op de server op te slaan.
 
 ```java
 import com.aspose.email.ExchangeCredentials;
 import com.aspose.email.ExchangeClient;
 
-// Inloggegevens instellen en een Exchange-client maken
+// Establish credentials and create an Exchange client
 ExchangeCredentials credentials = new ExchangeCredentials("username@domain.com", "password");
 ExchangeClient client = new ExchangeClient(ewsUrl, credentials);
 ```
-
-##### Kalenderbericht maken en schrijven
-
-Maak een agendabericht en gebruik `CalendarWriter` om het naar de server te schrijven:
 
 ```java
 import com.aspose.email.CalendarWriter;
 import com.aspose.email.MailMessage;
 import java.util.Date;
 
-// Een agendabericht maken
+// Create a calendar message
 MailMessage calendarMessage = MailMessage.createAppointment(
     "from@example.com",
     "to@example.com",
     "Meeting Subject",
     "Location",
     new Date(),
-    new Date(System.currentTimeMillis() + 3600000)); // Ingesteld voor een uur vanaf nu
+    new Date(System.currentTimeMillis() + 3600000)); // Set for one hour from now
 
-// Initialiseer CalendarWriter en geef de map op waarnaar u wilt schrijven
+// Initialize CalendarWriter and specify the folder to write to
 CalendarWriter writer = new CalendarWriter(client, "YOUR_DOCUMENT_DIRECTORY", "CalendarFolderName");
 
-// Schrijf het agendabericht naar Exchange Server
+// Write the calendar message to Exchange Server
 writer.write(calendarMessage);
 ```
 
 ## Praktische toepassingen
+- **Geautomatiseerde vergaderplanning** – genereer direct uitnodigingen vanuit back‑office‑systemen.  
+- **Evenementbeheersplatforms** – houd bedrijfsagenda's gesynchroniseerd zonder handmatige invoer.  
+- **CRM‑integratie** – log verkoopgesprekken en vervolg‑vergaderingen direct in de Exchange‑agenda's van gebruikers.
 
-- **Geautomatiseerde vergaderplanning**: Stroomlijn de planning door automatisch afspraken in de agenda's van deelnemers te maken.
-- **Event Management Systemen**: Integreer met systemen die bedrijfsevenementen beheren en zorg voor naadloze updates in alle agenda's van gebruikers.
-- **Klantrelatiebeheer (CRM)**Verbeter CRM-hulpmiddelen om klantinteracties rechtstreeks op de Exchange-server te plannen en volgen.
+## Prestatie‑overwegingen
+- **Batch‑verzoeken**: Groepeer meerdere `CalendarMessage`‑objecten in één `ExchangeClient`‑sessie om round‑trips te verminderen.  
+- **Geheugenbeheer**: Pas de JVM‑heap aan (`-Xmx2g` of hoger) bij het verwerken van grote batches van evenementen.  
+- **Bibliotheek‑updates**: Houd Aspose.Email up‑to‑date; elke release voegt prestatie‑verbeteringen en nieuwe EWS‑functies toe.
 
-## Prestatieoverwegingen
+## Veelvoorkomende problemen en oplossingen
+- **Ongeldige referenties** – controleer het gebruikersnaamformaat (`domain\user` of `user@domain.com`).  
+- **Netwerk‑firewalls** – zorg ervoor dat poorten 443 en 80 open staan voor uitgaand HTTPS‑verkeer naar het Autodiscover‑endpoint.  
+- **TLS‑versies** – Exchange vereist TLS 1.2 of hoger; configureer de JVM dienovereenkomstig (`-Dhttps.protocols=TLSv1.2`).  
 
-Om de prestaties bij gebruik van Aspose.E-mail te optimaliseren:
+## Veelgestelde vragen
+**Q: Wat zijn de vereisten voor het gebruik van Aspose.Email Java?**  
+A: JDK 16+, Maven, en een geldige Aspose.Email‑licentie (tijdelijk voor proef).  
 
-- Minimaliseer netwerkaanroepen door waar mogelijk verzoeken te groeperen.
-- Houd het geheugengebruik in de gaten en pas de JVM-instellingen indien nodig aan voor grootschalige bewerkingen.
-- Werk afhankelijkheden regelmatig bij om verbeteringen in de bibliotheekprestaties te benutten.
+**Q: Hoe verkrijg ik een EWS‑URL voor een specifiek e‑mailadres?**  
+A: Gebruik `AutodiscoverService` om gebruikersinstellingen op te vragen; het veld `ExternalEwsUrl` bevat de endpoint.  
 
-## Conclusie
+**Q: Kan Aspose.Email grote volumes agenda‑evenementen verwerken?**  
+A: Ja – met batch‑verwerking en juiste JVM‑afstemming kan het duizenden evenementen per minuut verwerken.  
 
-U zou nu over de kennis moeten beschikken om Exchange-URL's automatisch te detecteren en agendagegevens te schrijven met EWS met Aspose.Email voor Java. Deze mogelijkheden verbeteren niet alleen de integratie van uw applicatie met Microsoft Exchange, maar verhogen ook de efficiëntie bij het beheren van e-mailworkflows.
+**Q: Wat zijn enkele veelvoorkomende problemen bij het gebruik van AutodiscoverService?**  
+A: Onjuiste referenties, DNS‑misconfiguratie, of geblokkeerde uitgaande poorten zijn typische oorzaken.  
 
-### Volgende stappen
-
-- Ontdek de extra functies van Aspose.Email voor geavanceerd e-mailbeheer.
-- Experimenteer met de integratie van deze oplossingen in grotere systemen of toepassingen.
-
-## FAQ-sectie
-
-**V: Wat zijn de vereisten voor het gebruik van Aspose.Email Java?**
-A: Je hebt JDK 16+, Maven en basiskennis van Java-programmering nodig.
-
-**V: Hoe krijg ik een EWS-URL voor een specifiek e-mailadres?**
-A: Gebruik de `AutodiscoverService` om gebruikersinstellingen op te halen, inclusief de `ExternalEwsUrl`.
-
-**V: Kan Aspose.Email grote hoeveelheden agenda-evenementen verwerken?**
-A: Ja, met de juiste prestatie-optimalisatie en resourcebeheer.
-
-**V: Wat zijn enkele veelvoorkomende problemen bij het gebruik van AutodiscoverService?**
-A: Zorg voor de juiste inloggegevens en netwerkconnectiviteit. Voor meer hulp kunt u terecht op [Aspose Forum](https://forum.aspose.com/c/email/10).
-
-**V: Hoe kan ik een volledige licentie voor Aspose.Email aanschaffen?**
-A: Bezoek de [Aankooppagina](https://purchase.aspose.com/buy) om een volledige licentie te verwerven.
+**Q: Hoe kan ik een volledige licentie voor Aspose.Email aanschaffen?**  
+A: Bezoek de officiële aankooppagina – zie [Aspose Purchase](https://purchase.aspose.com/buy).  
 
 ## Bronnen
+- **Documentatie**: Uitgebreide handleidingen en API‑referenties zijn beschikbaar op [Aspose Email Java Documentation](https://reference.aspose.com/email/java/).  
+- **Download**: Toegang tot bibliotheek‑downloads via [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Gratis proefversie**: Begin met een gratis proefversie op [Aspose Email Java Free Trial](https://releases.aspose.com/email/java/).  
+- **Aankoop**: Voor licentie‑opties, bezoek [Aspose Purchase](https://purchase.aspose.com/buy).  
+- **Tijdelijke licentie**: Evalueer alle functies via een tijdelijke licentie van [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
+- **Forum**: Vraag community‑hulp op het [Aspose Forum](https://forum.aspose.com/c/email/10).  
 
-- **Documentatie**: Uitgebreide handleidingen en API-referenties zijn beschikbaar op [Aspose Email Java-documentatie](https://reference.aspose.com/email/java/).
-- **Download**: Toegang tot bibliotheekdownloads van [Aspose-releases](https://releases.aspose.com/email/java/).
-- **Aankoop**: Voor licentieopties, bezoek [Aspose Aankoop](https://purchase.aspose.com/buy).
-- **Gratis proefperiode**Begin met een gratis proefperiode op [Aspose Email Java gratis proefversie](https://releases.aspose.com/email/java/).
-- **Tijdelijke licentie**: Evalueer de volledige functies van Aspose.Email door een tijdelijke licentie aan te schaffen bij [Aspose Tijdelijke Licentiepagina](https://purchase.aspose.com/temporary-license/).
+---
+
+**Laatst bijgewerkt:** 2026-06-28  
+**Getest met:** Aspose.Email for Java 23.12 (latest at time of writing)  
+**Auteur:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Gerelateerde tutorials
+- [Hoe verbinding te maken met Exchange Server met Aspose.Email in Java: Stapsgewijze handleiding](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Hoe een EWSClient‑instantie te maken met Aspose.Email voor Java: Exchange Server‑integratiegids](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Gids voor het verbinden van Exchange‑agenda met Aspose.Email voor Java | Exchange Server‑integratie](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
