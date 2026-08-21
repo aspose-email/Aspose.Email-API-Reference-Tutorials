@@ -1,5 +1,5 @@
 ---
-title: "How to Use Aspose.Email for Java: Extract Emails from Zimbra TGZ Archives"
+title: "Extract Emails from Zimbra TGZ Archives with Aspose.Email for Java"
 description: "Learn how to use Aspose.Email for Java to extract emails from Zimbra TGZ archives. Includes Maven dependency Aspose Email setup and practical examples."
 date: "2026-06-18"
 weight: 1
@@ -10,13 +10,13 @@ keywords:
 - extract emails from zimbra tgz
 schemas:
 - type: TechArticle
-  headline: 'How to Use Aspose.Email for Java: Extract Emails from Zimbra TGZ Archives'
+  headline: 'Extract Emails from Zimbra TGZ Archives with Aspose.Email for Java'
   description: Learn how to use Aspose.Email for Java to extract emails from Zimbra
     TGZ archives. Includes Maven dependency Aspose Email setup and practical examples.
   dateModified: '2026-06-18'
   author: Aspose
 - type: HowTo
-  name: 'How to Use Aspose.Email for Java: Extract Emails from Zimbra TGZ Archives'
+  name: 'Extract Emails from Zimbra TGZ Archives with Aspose.Email for Java'
   description: Learn how to use Aspose.Email for Java to extract emails from Zimbra
     TGZ archives. Includes Maven dependency Aspose Email setup and practical examples.
   steps:
@@ -49,11 +49,10 @@ schemas:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# How to Use Aspose.Email for Java: Extract Emails from Zimbra TGZ Archives
+
+# Extract Emails from Zimbra TGZ Archives with Aspose.Email for Java
 
 ## Introduction
 
@@ -112,7 +111,7 @@ import com.aspose.email.*;
 
 The `TgzReader` class is Aspose.Email’s streaming API for reading Zimbra TGZ storage files without loading the entire archive into memory.
 
-#### Step 1: Define File Path
+#### Step 1: define file path
 
 Specify the absolute or relative path to the TGZ file you want to process.
 
@@ -120,7 +119,7 @@ Specify the absolute or relative path to the TGZ file you want to process.
 String tgzPath = "C:/archives/zimbra_backup.tgz";
 ```
 
-#### Step 2: Initialize TgzReader
+#### Step 2: initialize tgzReader
 
 Create a `TgzReader` instance using the file path.
 
@@ -130,7 +129,7 @@ TgzReader tgzReader = new TgzReader(tgzPath);
 
 *Direct answer:* Initializing `TgzReader` opens the archive and prepares it for sequential message extraction.
 
-#### Step 3: Extract Emails
+#### Step 3: extract emails
 
 Iterate through each stored message, retrieve its folder location, and obtain a `MailMessage` object.
 
@@ -206,7 +205,7 @@ Extracting emails from Zimbra TGZ archives is useful for:
 - **Data Migration** – move legacy Zimbra data into Exchange, Office 365, or custom storage.
 - **Forensic Analysis** – review historical communications without restoring an entire Zimbra instance.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: What are the prerequisites for using Aspose.Email for Java?**  
 A: JDK 16+, Maven, and the `com.aspose:aspose-email` Maven artifact.
@@ -244,13 +243,13 @@ A: Save each `MailMessage` as EML, JSON, or XML using `SaveOptions`, then feed t
 - [Load and Display EML Emails Efficiently with Aspose.Email for Java](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
 
 
-{{< /blocks/products/pf/tutorial-page-section >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```xml
 <dependency>
@@ -301,3 +300,10 @@ public class ExampleUtils {
 String dataDir = ExampleUtils.getSharedDataDir(ExampleUtils.class) + "email/";
 // 'dataDir' now points to a specific subdirectory for email-related operations.
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,5 +1,5 @@
 ---
-title: "Convert msg to mht Using Aspose.Email for Java – A Comprehensive Guide"
+title: "How to Convert MSG to MHT Using Aspose.Email for Java – Step‑by‑Step Guide"
 description: "Learn how to convert msg to mht with Aspose.Email for Java. This step‑by‑step tutorial covers loading, saving, and customizing templates for real‑world email conversion."
 date: "2026-06-18"
 weight: 1
@@ -11,7 +11,7 @@ keywords:
   - aspose email tutorial java
 schemas:
 - type: TechArticle
-  headline: Convert msg to mht Using Aspose.Email for Java – A Comprehensive Guide
+  headline: How to Convert MSG to MHT Using Aspose.Email for Java – Step‑by‑Step Guide
   description: Learn how to convert msg to mht with Aspose.Email for Java. This step‑by‑step
     tutorial covers loading, saving, and customizing templates for real‑world email
     conversion.
@@ -39,9 +39,7 @@ schemas:
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Convert msg to mht Using Aspose.Email for Java: A Comprehensive Guide
@@ -75,7 +73,7 @@ Aspose.Email for Java supports **100+ MAPI properties**, handles **all attachmen
 - **Java Development Environment:** Maven installed for dependency management.  
 - **Basic Java knowledge:** Familiarity with file I/O and Maven projects.  
 
-## Setting Up Aspose.Email for Java
+## Setting up Aspose.Email for java
 
 Add the Aspose.Email Maven dependency to your `pom.xml`:
 
@@ -140,7 +138,7 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY"; // Ensure this path is correct
 MapiMessage msg = MapiMessage.fromFile(dataDir + "MapiTask.msg");
 ```
 
-### Configure MHT Save Options
+### Configure MHT save options
 
 **Step 1 – Import the save‑option classes**  
 
@@ -216,7 +214,7 @@ msg.save(outputDir + "MapiTask_out.mht", opt);
 - **Asynchronous Execution:** Use Java’s `CompletableFuture` or executor services to convert files in parallel.  
 - **Resource Cleanup:** Explicitly close streams if you open any custom streams beyond Aspose’s API.
 
-## Common Issues & Troubleshooting
+## Common issues & troubleshooting
 
 | Symptom | Likely Cause | Fix |
 |---------|---------------|-----|
@@ -224,7 +222,7 @@ msg.save(outputDir + "MapiTask_out.mht", opt);
 | **Missing attachments in MHT** | `MhtSaveOptions` not set to embed resources | Use `opt.setMhtFormatOptions(opt.getMhtFormatOptions() \| MhtFormatOptions.WriteResources);` |
 | **Incorrect date format** | Locale settings differ | Adjust `opt.setDateFormat("yyyy-MM-dd HH:mm:ss");` |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: What is the difference between MSG and MHT?**  
 A: MSG is a proprietary Outlook binary format storing email, attachments, and metadata. MHT (MHTML) is an HTML‑based single‑file format that bundles the email body, images, and CSS, making it viewable in any browser.
