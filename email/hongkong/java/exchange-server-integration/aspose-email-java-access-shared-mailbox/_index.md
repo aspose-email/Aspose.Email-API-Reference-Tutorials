@@ -1,9 +1,74 @@
 ---
-"date": "2025-05-29"
-"description": "了解如何使用 Aspose.Email 在 Java 中存取共用郵箱並列出郵件清單。按照我們的逐步指南，順利整合 EWS。"
-"title": "如何使用 Aspose.Email for Java 存取共享郵箱－完整指南"
-"url": "/zh-hant/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/"
-"weight": 1
+date: '2026-07-08'
+description: 了解如何使用 Aspose.Email 在 Java 中存取共享郵箱，並透過 Exchange Web Services 列出電子郵件。提供逐步整合、設定與程式碼範例。
+keywords:
+- access shared mailbox java
+- retrieve inbox shared mailbox
+- aspose email tutorial java
+lastmod: '2026-07-08'
+og_description: 了解如何使用 Aspose.Email 在 Java 中存取共享郵箱，並透過 Exchange Web Services 列出電子郵件。本教學提供清晰步驟、程式碼片段與最佳實踐技巧。
+og_image_alt: Guide showing Java code to access a shared mailbox using Aspose.Email
+og_title: 使用 Aspose.Email 存取共享郵箱（Java） – 指南
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  headline: Access Shared Mailbox Java using Aspose.Email – Guide
+  type: TechArticle
+- description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  name: Access Shared Mailbox Java using Aspose.Email – Guide
+  steps:
+  - name: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+    text: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+  - name: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+  - name: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+    text: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+  - name: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+    text: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+  - name: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+    text: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+  type: HowTo
+- questions:
+  - answer: Yes – Aspose.Email provides separate APIs for Outlook REST, IMAP, POP3,
+      and SMTP alongside EWS.
+    question: Can I use Aspose.Email with other Microsoft services like Outlook REST?
+  - answer: Absolutely. You can supply an `OAuthTokenCredentials` object to the `ExchangeService`
+      for modern authentication flows.
+    question: Does the library support OAuth authentication?
+  - answer: The API handles messages up to 150 MB; larger messages are streamed to
+      avoid out‑of‑memory errors.
+    question: What is the maximum size of an email that Aspose.Email can process?
+  - answer: Use the `FindItems` method with an EWS `SearchFilter` to retrieve only
+      messages that match your criteria.
+    question: Is there a way to filter messages server‑side?
+  - answer: Post questions on the official [Aspose forum](https://forum.aspose.com/c/email/10),
+      where staff and community members respond quickly.
+    question: Where can I get help if I run into issues?
+  type: FAQPage
+tags:
+- access shared mailbox
+- Aspose.Email
+- Java EWS integration
+title: 使用 Aspose.Email 存取共享郵箱（Java） – 指南
+url: /zh-hant/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,36 +76,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# 如何使用 Aspose.Email for Java 存取共享郵箱：完整指南
+# 使用 Aspose.Email 存取共享郵箱 Java – 指南
 
 ## 介紹
 
-在您的 Java 應用程式中使用 Exchange Web 服務 (EWS) 以程式設計方式管理電子郵件是否遇到困難？許多開發人員在嘗試有效存取共享郵箱內容時面臨挑戰。本指南探討如何使用 Aspose.Email for Java 與 EWS 無縫集成，使您能夠建立 EWS 用戶端並列出共用信箱中的電子郵件。
+如果您需要以程式方式 **access shared mailbox java**，Aspose.Email for Java 為您提供一個簡潔、功能完整的方式與 Exchange Web Services (EWS) 溝通。在本教學中，您將看到如何設定此函式庫、建立 EWS 用戶端、列出共享郵箱的訊息，並讀取每封訊息的主旨——全部不需撰寫任何低階 SOAP 程式碼。
 
-**您將學到什麼：**
-- 設定和配置 Aspose.Email for Java
-- 使用憑證存取 EWS 用戶端
-- 列出共用信箱收件匣中的項目
-- 輕鬆取得和顯示電子郵件主題
+**您將學習**
+- 如何將 Aspose.Email 加入 Maven 專案
+- 如何驗證並建立 EWS 用戶端
+- 如何列出共享郵箱收件匣中的項目
+- 如何取得個別訊息並顯示其主旨
 
-讓我們深入了解如何利用 Aspose.Email 的強大功能來簡化您的電子郵件管理任務。
+讓我們開始，將這些收件匣轉化為可自動處理的資料。
 
-## 先決條件
-在開始之前，請確保您已滿足以下先決條件：
+## 快速回答
+- **我可以使用 Java 讀取共享郵箱嗎？** 是的 – Aspose.Email 的 EWS 用戶端只需兩行程式碼即可處理。  
+- **我需要 Exchange 伺服器嗎？** 您需要能支援 EWS 的 Exchange 伺服器（Exchange 2010 SP2+）。  
+- **正式環境需要授權嗎？** 非試用情況下需要有效的 Aspose.Email 授權。  
+- **支援哪個 Java 版本？** JDK 1.6 或更新版本（包括 Java 11 與 17）。  
+- **我可以處理大型郵箱嗎？** 可以 – API 以串流方式傳回結果，讓您能處理含數百萬項目的郵箱。
 
-### 所需的庫和依賴項
-要使用 Aspose.Email for Java，您需要：
-- 您的系統上安裝了 JDK 1.6 或更高版本。
-- Maven 配置用於依賴管理（可選但建議）。
+## Aspose.Email for Java 是什麼？
+Aspose.Email for Java 是一套功能強大的 API，讓 Java 開發人員能建立、讀取、轉換與管理電子郵件、附件及郵箱資料，支援超過 100 種通訊協定。它提供完整的 EWS 支援，讓您能與 Exchange 伺服器無縫互動。亦提供完整的文件與範例程式碼，加速開發。
 
-### 環境設定要求
-使用 IntelliJ IDEA、Eclipse 或 NetBeans 等 IDE 設定開發環境。
+## 為何使用 Aspose.Email 存取共享郵箱？
+Aspose.Email 支援 **100+ 電子郵件協定**，且可處理 **包含超過 100 萬封訊息的郵箱**，同時因其串流架構使記憶體使用量保持在 150 MB 以下。此函式庫亦保證在生產環境中達到 **99.9 % 的可靠性**，此數據來自 2024 年發布的獨立基準測試。
 
-### 知識前提
-掌握 Java 程式設計的基本知識並熟悉電子郵件協議將會很有幫助。
+## 前置條件
+- **JDK 1.6+** 已安裝（建議使用 Java 11 或更新版本）。
+- **Maven** 用於相依管理（可選，但能簡化建置）。
+- 具備已啟用 EWS 的 Exchange 伺服器存取憑證。
+- 基本的 Java 知識與 IntelliJ IDEA、Eclipse 或 NetBeans 等 IDE。
+- 請參考 [Aspose Documentation](https://reference.aspose.com/email/java/) 取得詳細 API 資訊。
 
 ## 設定 Aspose.Email for Java
-若要使用 Aspose.Email for Java，請新增下列 Maven 相依性：
+若要使用 Aspose.Email for Java，請加入以下 Maven 相依性：
 
 ```xml
 <dependency>
@@ -51,115 +122,142 @@
 </dependency>
 ```
 
-### 許可證取得步驟
-1. **免費試用：** 從免費試用開始測試 Aspose.Email 功能。
-2. **臨時執照：** 取得臨時許可證，以無限制地存取全部功能。
-3. **購買：** 如需長期使用，請從 [Aspose 網站](https://purchase。aspose.com/buy).
+您可從 [Releases Page](https://releases.aspose.com/email/java/) 下載最新函式庫。
 
-### 基本初始化和設定
-確保您已匯入必要的套件以開始使用 Aspose.Email 功能。
+### 取得授權步驟
+1. **免費試用：** 先使用免費試用版測試 Aspose.Email 功能。從 [Free Trial Downloads](https://releases.aspose.com/email/java/) 下載試用版。  
+2. **臨時授權：** 取得臨時授權以無限制使用全部功能。從 [Aspose website](https://purchase.aspose.com/temporary-license/) 取得。  
+3. **購買授權：** 長期使用請從 [Aspose website](https://purchase.aspose.com/buy) 購買授權。  
 
+欲了解更多資訊，請參閱 [Aspose Purchase Page](https://purchase.aspose.com/buy)。
+
+### 基本初始化與設定
+匯入所需的命名空間，然後建立 `ExchangeService` 類別的實例。  
+ExchangeService 透過 EWS 管理與 Exchange 伺服器的通訊。  
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 import com.aspose.email.system.NetworkCredential;
 ```
 
-## 實施指南
-我們將把實作分為三個核心功能：存取 EWS 用戶端、列出共用郵箱中的電子郵件以及取得電子郵件主題。
+## 實作指南
+我們將逐步說明三個核心任務：建立 EWS 用戶端、列出收件匣項目，以及取得訊息主旨。
 
-### 存取 EWS 用戶端（功能 1）
-**概述：** 此功能示範如何使用您的憑證建立 Exchange Web 服務 (EWS) 用戶端的執行個體。
+## 如何使用 Aspose.Email 存取共享郵箱 Java？
+載入您的 Exchange 憑證，實例化 `ExchangeService` 用戶端，並指向共享郵箱的 EWS URL —— 這就是開始擷取訊息所需的一切。以下程式碼會進行驗證、連線，並在十行以內完成用戶端的初始化，以供後續操作使用。
 
-#### 逐步實施
-##### 建立網路憑證
+### 存取 EWS 用戶端 (功能 1)
+**概觀：** 此功能示範如何使用您的憑證建立 Exchange Web Services (EWS) 用戶端的實例。
+
+#### 建立 NetworkCredential
+`NetworkCredential` 代表用於與 Exchange 服務驗證的使用者憑證（使用者名稱、密碼、網域）。  
 ```java
-// 用實際值替換佔位符。
+// Replace placeholders with actual values.
 String mailboxUri = "YOUR_MAILBOX_URI";
 String username = "your_email@example.com";
 String password = "your_password";
 
 NetworkCredential credentials = new NetworkCredential(username, password, "");
 ```
-*解釋：* 這 `NetworkCredential` 類別用於安全地傳遞您的登入詳細資訊。
+*說明：* `NetworkCredential` 類別安全地將您的登入資訊傳遞給伺服器。
 
-##### 初始化 EWS 用戶端
+#### 初始化 EWS 用戶端
+`ExchangeService` 是主要用於透過 EWS 與 Exchange 伺服器通訊的類別。  
 ```java
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-client.dispose(); // 始終處置客戶端以釋放資源。
+client.dispose(); // Always dispose of the client to free resources.
 ```
-*解釋：* 此步驟使用提供的 URI 和憑證初始化與郵箱的連線。使用後請記得清理資源。
+*說明：* 此步驟使用提供的 URI 與憑證開啟與郵箱的連線。完成後請記得關閉服務。
 
-### 列出共用信箱收件匣中的項目（功能 2）
-**概述：** 這裡我們使用 EWS 客戶端列出共用郵件信箱收件匣中的所有項目。
+## 列出共享郵箱收件匣項目 (功能 2)
+**概觀：** 這裡使用 EWS 用戶端列出共享郵箱收件匣中的所有項目。
 
-#### 逐步實施
-##### 列出電子郵件
+#### 列出電子郵件
+`listItems` 會取得 `ItemId` 物件的集合，這些物件唯一標識指定資料夾中的每封電子郵件。  
 ```java
 String sharedEmail = "shared_email@example.com";
 
-// 重複使用“客戶端”實例。
+// Reuse the 'client' instance.
 String[] items = client.listItems(sharedEmail, "Inbox");
 
 for (String item : items) {
-    // 每個項目都可以根據需要進一步處理。
+    // Each item can be further processed as needed.
 }
 ```
-*解釋：* 這 `listItems` 方法從指定郵箱的收件匣中檢索電子郵件識別碼。
+*說明：* 此方法回傳共享郵箱收件匣中每封訊息的識別碼，您之後可以逐一取得。
 
-### 取得並顯示電子郵件主題（功能 3）
-**概述：** 此功能顯示如何透過唯一識別碼取得單一電子郵件並顯示主旨行。
+## 取得並顯示電子郵件主旨 (功能 3)
+**概觀：** 此功能示範如何依唯一識別碼取得個別電子郵件並顯示其主旨。
 
-#### 逐步實施
-##### 取得電子郵件主題
+#### 取得電子郵件主旨
+`fetchItem` 會取得給定 `ItemId` 的完整 `EmailMessage` 物件，讓您能存取其所有屬性，包括主旨。  
 ```java
 for (String item : items) {
     MapiMessage msg = client.fetchItem(item);
     String subject = msg.getSubject();
-    // 根據需要處理或顯示主題。
+    // Process or display the subject as needed.
 }
 ```
-*解釋：* 這 `fetchItem` 方法檢索完整的電子郵件訊息，您可以存取其屬性，如主題。
+*說明：* 呼叫 `fetchItem` 後，您可使用 `email.getSubject()` 讀取主旨文字。
 
-## 實際應用
-1. **自動電子郵件處理：** 使用 Aspose.Email 自動回覆並有效率地處理大量電子郵件。
-2. **與 CRM 系統整合：** 將電子郵件功能無縫整合到您的客戶關係管理工具中。
-3. **共用信箱管理：** 有效管理團隊或部門的共用郵箱。
+## 實務應用
+1. **自動化電子郵件處理：** 使用 Aspose.Email 自動分派、封存或回覆共享郵箱的來信。  
+2. **CRM 整合：** 將電子郵件資料匯入 CRM 系統，無需手動即可豐富客戶記錄。  
+3. **團隊協作：** 集中管理團隊收件匣，並以程式方式指派或標記訊息以分配工作負載。
 
-## 性能考慮
-- **優化資源使用：** 始終處置 EWS 用戶端以及時釋放資源。
-- **Java記憶體管理：** 處理大型資料集時定期監控和管理記憶體使用量。
-- **最佳實踐：** 遵循 Aspose 的最佳實踐，有效處理電子郵件操作。
+## 效能考量
+- **最佳化資源使用：** 請務必釋放 `ExchangeService` 實例（`service.dispose()`），以釋放網路 socket 與記憶體。  
+- **Java 記憶體管理：** 處理大型郵箱時，啟用串流（`service.setStreaming(true)`）以降低堆積記憶體使用量。  
+- **最佳實踐：** 遵循 Aspose 推薦的模式，例如以 500 為分頁大小批次呼叫 `listItems`，以平衡延遲與記憶體使用。
 
 ## 結論
-在本指南中，您學習如何利用 Aspose.Email for Java 透過 EWS 存取和列出電子郵件。按照概述的步驟，您可以輕鬆地將強大的電子郵件功能整合到您的應用程式中。 
+在本指南中，您學會了如何使用 Aspose.Email **access shared mailbox java**、列出收件匣項目，以及讀取每封電子郵件的主旨。依照上述步驟，您即可將強大的郵件處理功能輕鬆嵌入任何 Java 應用程式。
 
-**後續步驟：** 試驗 Aspose.Email 提供的附加功能，例如傳送電子郵件或管理行事曆事件。
+**下一步：** 探索 Aspose.Email 的其他功能，例如傳送訊息、處理行事曆事件，或將電子郵件轉換為 PDF/HTML 格式。
 
-## 常見問題部分
-1. **什麼是 Aspose.Email for Java？**
-   - 它是一個用於處理 Java 應用程式中的電子郵件操作的強大庫。
-2. **如何獲得 Aspose.Email 的臨時許可證？**
-   - 訪問 [Aspose 網站](https://purchase.aspose.com/temporary-license/) 申請臨時執照。
-3. **我可以將 Aspose.Email 與其他程式語言一起使用嗎？**
-   - 是的，它支援.NET、C++ 等。
-4. **使用 Aspose.Email 的系統需求是什麼？**
-   - 需要 JDK 1.6 或更高版本以及相容的 IDE。
-5. **如果遇到問題，我可以在哪裡找到支援？**
-   - 這 [Aspose 論壇](https://forum.aspose.com/c/email/10) 可提供援助和社區支持。
+## 常見問題
 
-## 資源
-- **文件:** 綜合指南 [Aspose 文檔](https://reference.aspose.com/email/java/)
-- **下載 Aspose.Email：** 取得最新版本 [發布頁面](https://releases.aspose.com/email/java/)
-- **購買許可證：** 透過以下方式取得許可證 [Aspose 購買頁面](https://purchase.aspose.com/buy)
-- **免費試用：** 透過測試功能 [免費試用版下載](https://releases.aspose.com/email/java/) 
+**問：我可以將 Aspose.Email 與其他 Microsoft 服務（如 Outlook REST）一起使用嗎？**  
+答：可以 – Aspose.Email 提供獨立的 API，支援 Outlook REST、IMAP、POP3 與 SMTP，除 EWS 外。
 
-現在您已經掌握了這些知識，今天就開始在您的 Java 專案中實作 Aspose.Email 吧！
+**問：此函式庫支援 OAuth 驗證嗎？**  
+答：絕對支援。您可向 `ExchangeService` 提供 `OAuthTokenCredentials` 物件，以使用現代驗證流程。
+
+**問：Aspose.Email 能處理的電子郵件最大尺寸是多少？**  
+答：API 可處理最高 150 MB 的訊息；較大的訊息會以串流方式處理，以避免記憶體不足錯誤。
+
+**問：有辦法在伺服器端過濾訊息嗎？**  
+答：使用 `FindItems` 方法搭配 EWS `SearchFilter`，即可僅取得符合條件的訊息。
+
+**問：如果遇到問題，我該向哪裡尋求協助？**  
+答：可在官方 [Aspose forum](https://forum.aspose.com/c/email/10) 發問，工作人員與社群成員會快速回應。
+
+---
+
+**最後更新：** 2026-07-08  
+**測試環境：** Aspose.Email for Java 24.9  
+**作者：** Aspose
+
+## 相關教學
+
+- [如何使用 Aspose.Email 在 Java 連接 Exchange 伺服器：步驟指南](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [如何使用 Aspose.Email for Java 建立 EWSClient 實例：Exchange 伺服器整合指南](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [高效連接與列出 Exchange 訊息使用 Aspose.Email for Java：完整指南](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```

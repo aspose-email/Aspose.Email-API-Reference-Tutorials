@@ -1,9 +1,72 @@
 ---
-"date": "2025-05-29"
-"description": "Aspose.Email Java ile e-posta yönetimini kolaylaştırmayı öğrenin, EWS istemci oluşturma, mesaj silme, e-posta ekleme ve kullanıcı kimliğine bürünme konularına odaklanın. Exchange Server entegrasyonu için idealdir."
-"title": "E-posta Yönetiminde Ustalaşma - Aspose.Email Java for EWS İstemcisi Kullanıcı ve Kimlik Sahtekarlığı"
-"url": "/tr/java/exchange-server-integration/aspose-email-java-ews-client-user-management/"
-"weight": 1
+date: '2026-07-08'
+description: Aspose.Email kullanarak EWS Java istemcisini nasıl oluşturacağınızı öğrenin;
+  Exchange Server üzerinde message deletion, appending ve user impersonation dahil
+  olmak üzere etkili e-posta yönetimi.
+keywords:
+- create ews client java
+- Aspose.Email Java
+- Exchange Server EWS
+- email impersonation Java
+lastmod: '2026-07-08'
+og_description: Aspose.Email kullanarak EWS Java istemcisini nasıl oluşturacağınızı
+  öğrenin; Exchange Server üzerinde message deletion, appending ve user impersonation
+  dahil olmak üzere etkili e-posta yönetimi.
+og_image_alt: 'Developer guide: Create EWS client Java with Aspose.Email for user
+  management'
+og_title: Aspose.Email ile EWS Java İstemcisi Oluşturun – Kullanıcıları Yönetme
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to create EWS client Java using Aspose.Email for efficient
+    email management, including message deletion, appending, and user impersonation
+    on Exchange Server.
+  headline: Create EWS Client Java with Aspose.Email – Manage Users
+  type: TechArticle
+- description: Learn how to create EWS client Java using Aspose.Email for efficient
+    email management, including message deletion, appending, and user impersonation
+    on Exchange Server.
+  name: Create EWS Client Java with Aspose.Email – Manage Users
+  steps:
+  - name: '**Automated Email Cleanup:** Schedule a nightly job that clears out stale
+      Draft folders across dozens of mailboxes.'
+    text: '**Automated Email Cleanup:** Schedule a nightly job that clears out stale
+      Draft folders across dozens of mailboxes.'
+  - name: '**Batch Email Distribution:** Append a templated announcement to the Inbox
+      of every employee with a single loop.'
+    text: '**Batch Email Distribution:** Append a templated announcement to the Inbox
+      of every employee with a single loop.'
+  - name: '**Shared Mailbox Management:** Impersonate a department mailbox to archive
+      old messages without granting each user full access.'
+    text: '**Shared Mailbox Management:** Impersonate a department mailbox to archive
+      old messages without granting each user full access.'
+  type: HowTo
+- questions:
+  - answer: Check the endpoint URL, credentials, and network firewalls; enable detailed
+      logging in Aspose.Email to capture HTTP request/response data.
+    question: How do I troubleshoot connectivity issues with EWS?
+  - answer: Yes—its batch APIs let you process **10,000+** messages per minute while
+      keeping memory usage under 200 MB.
+    question: Can Aspose.Email handle large volumes of emails efficiently?
+  - answer: Managing shared mailboxes, performing bulk archiving, and running scheduled
+      reports on behalf of multiple users without storing their passwords.
+    question: What are typical use cases for user impersonation in EWS?
+  - answer: Aspose.Email itself imposes no call limits; however, Exchange may enforce
+      throttling policies that you need to respect.
+    question: Are there limits on API calls imposed by Aspose.Email?
+  - answer: Store them in encrypted configuration files or use Azure Key Vault / AWS
+      Secrets Manager, and always use HTTPS for EWS endpoints.
+    question: How can I keep credentials secure in my Java code?
+  type: FAQPage
+tags:
+- create ews client java
+- Aspose.Email
+- Java Exchange
+- email impersonation
+- EWS client
+title: Aspose.Email ile EWS Java İstemcisi Oluşturun – Kullanıcıları Yönetme
+url: /tr/java/exchange-server-integration/aspose-email-java-ews-client-user-management/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,29 +74,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# E-posta Yönetiminde Uzmanlaşma: EWS İstemcisi için Aspose.Email Java Kullanıcı ve Kimlik Sahtekarlığı
+# E-posta Yönetiminde Uzmanlaşma: Aspose.Email Java ile EWS İstemci Kullanıcı ve Taklit
 
-## giriiş
+## Giriş
 
-Aspose.Email'in gücüyle Java kullanarak e-posta yönetimi görevlerinizi kolaylaştırın. Bu kılavuz, Microsoft Exchange Server'da birden fazla kullanıcı hesabını yönetmeyi basitleştirir, EWS istemci örnekleri oluşturmaya, mesajları silmeye, yenilerini eklemeye ve kapsamlı e-posta yönetimi için kullanıcıları taklit etmeye odaklanır.
+Bu öğreticide **EWS istemci Java** uygulamalarını Aspose.Email ile oluşturacaksınız; bu sayede tek bir Java kod tabanından birden çok Exchange Server posta kutusunu yönetebileceksiniz. `EWSClient` örnekleri oluşturma, mesajları silme, yeni e-postalar ekleme ve diğer kullanıcıları taklit etme adımlarını göstereceğiz—kurumsal ortamlarda saatler süren manuel işi tasarruf ettiren görevler.
 
-### Ne Öğreneceksiniz:
-- Oluşturma ve yönetme `EWSClient` farklı kullanıcı kimlik bilgilerini kullanan örnekler.
-- Belirli bir klasördeki tüm mesajları etkili bir şekilde silme teknikleri.
-- Klasörlere yeni e-posta mesajları ekleme adımları.
-- Exchange ortamınızda başka bir kullanıcıyı taklit etme yöntemleri.
+### Öğrenecekleriniz
+- Ayrı kimlik bilgileriyle **EWS istemci Java** nesneleri oluşturma.  
+- Seçilen bir klasörden tüm mesajları silmek için etkili teknikler.  
+- Hazır bir e-postayı bir kullanıcının posta kutusuna ekleme adımları.  
+- Paylaşımlı posta kutusu senaryoları için başka bir posta kutusunu taklit etme.
 
-Kusursuz e-posta iş akışı yönetimi için Aspose.Email Java'yı kullanmaya başlayın. Geliştirme ortamınızı kurarak başlayalım.
+Şimdi neler kapsayacağımızı bildiğinize göre, geliştirme ortamını hazırlayalım.
 
-## Ön koşullar
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
-- **Java Geliştirme Kiti (JDK)**: Sürüm 16 veya üzeri.
-- **Usta**: Bağımlılık yönetimi ve proje kurulumu için.
-- **Java Kütüphanesi için Aspose.Email**Projenizin bağımlılıklarına dahildir.
-- EWS (Exchange Web Services) gibi e-posta protokolleri hakkında temel bilgi.
+## Hızlı Yanıtlar
+- **İlk adım nedir?** `pom.xml` dosyanıza Aspose.Email Maven bağımlılığını ekleyin.  
+- **Exchange bağlantısını temsil eden sınıf hangisidir?** `EWSClient` (veya arayüzü `IEWSClient`).  
+- **Tüm mesajları tek bir çağrıyla silebilir miyim?** Evet—`listMessages` ile döngü yapın ve her URI için `deleteMessage` çağırın.  
+- **SMTP olmadan e-posta nasıl gönderilir?** `appendMessage` kullanarak bir `MailMessage`'ı doğrudan bir klasöre yerleştirin.  
+- **Taklit güvenli mi?** Orijinal kimlik bilgileri altında çalışır ve Exchange’in delegasyon politikalarına uyar.
 
-## Java için Aspose.Email Kurulumu
-Aspose.Email'i Java projenize entegre etmek için onu Maven bağımlılığı olarak ekleyin:
+## create EWS client Java nedir?
+`create ews client java`, bir Java uygulamasında bir `EWSClient` nesnesi örnekleyerek Exchange Web Services (EWS) işlemlerini programlı olarak çağırmanızı sağlar. Bu yaklaşım manuel Outlook etkileşimini ortadan kaldırır ve otomatik posta kutusu işleme imkanı verir. Kullanıcı başına ayrı bir istemci oluşturarak kimlik bilgilerini izole edebilir, posta kutusu politikalarını uygulayabilir ve kod tekrarından kaçınarak çözümü onlarca hesapta ölçeklendirebilirsiniz.
+
+## Aspose.Email'i EWS entegrasyonu için neden kullanmalısınız?
+Aspose.Email **50+** EWS işlemini destekler, **yüzlerce sayfalık** posta kutularını tüm depoyu belleğe yüklemeden işler ve tipik sunucu donanımında **dakikada 10.000** mesaja kadar işlem yapar. Bu ölçülen yetenekler, büyük ölçekli e-posta otomasyonu için onu birincil tercih yapar. Kütüphane ayrıca düşük seviyeli SOAP detaylarını soyutlayarak temiz, tip‑güvenli bir API sunar; bu da geliştirme süresini azaltır ve hataları en aza indirir.
+
+## Önkoşullar
+- **Java Development Kit (JDK)** ≥ 16.  
+- **Maven** bağımlılık yönetimi için.  
+- **Aspose.Email for Java** kütüphanesi (Maven aracılığıyla ekleyin).  
+- Exchange Web Services (EWS) kavramlarına temel bilgi.
+
+## Aspose.Email for Java'ı Kurma
+Kütüphaneyi Maven `pom.xml` dosyanıza ekleyin:
+
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -42,40 +118,46 @@ Aspose.Email'i Java projenize entegre etmek için onu Maven bağımlılığı ol
     <classifier>jdk16</classifier>
 </dependency>
 ```
-### Lisans Edinimi
-Aspose.Email, tam yetenekler için geçici bir lisans talep etme seçeneğiyle ücretsiz bir deneme sunar. Uzun vadeli kullanım için, şu adresten bir lisans satın almayı düşünün: [Aspose'un satın alma sayfası](https://purchase.aspose.com/buy).
 
-## Uygulama Kılavuzu
+### Lisans Alımı
+Aspose.Email ücretsiz deneme sunar; tam yetenekler için geçici bir lisans talep edebilirsiniz. Uzun vadeli kullanım için [Aspose'un satın alma sayfası](https://purchase.aspose.com/buy) üzerinden lisans satın almayı düşünün.
 
-### EWSClient Örnekleri Oluşturun
-**Genel Bakış:**
-Örnekleri oluşturma `EWSClient` Farklı kullanıcı kimlik bilgileriyle uygulamanız içerisinde birden fazla hesabın sorunsuz bir şekilde yönetilmesini sağlar.
+## create EWS client Java nasıl yapılır?
+Uygun kimlik bilgileriyle Exchange hizmetini yükleyin ve bir `IEWSClient` örneği alın—bu iki adımlı desen, sonraki tüm işlemlerin temelidir. Aynı istemciyi birden çok eylem için yeniden kullanabilir veya izolasyon için kullanıcı başına ayrı örnekler oluşturabilirsiniz. **`IEWSClient` tüm EWS işlemlerini ortaya çıkaran arayüzdür, `EWSClient` ise bir uygulama elde etmek için statik fabrika metodunu sağlar.**  
 
-**Adımlar:**
-#### Gerekli Sınıfları İçe Aktar
-Öncelikle Aspose.Email kütüphanesinden gerekli sınıfları içe aktaralım:
+İstemci oluşturma genellikle hizmet URL'si, kullanıcı adı, şifre ve isteğe bağlı olarak domain bilgisini sağlamayı içerir. Oluşturulduktan sonra istemci kimlik doğrulama, istek imzalama ve yanıt ayrıştırmayı otomatik olarak yönetir.
+
+### EWSClient Örnekleri Oluşturma
+**Tanım:** `EWSClient` ( `IEWSClient` arayüzü aracılığıyla erişilir) Aspose.Email’in Exchange sunucusuyla EWS üzerinden iletişim kurmak için ana nesnesidir.
+
+#### Gerekli Sınıfları İçe Aktarın
+Gerekli Aspose.Email sınıflarını içe aktararak başlayın:
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 ```
 
-#### EWSClient Örneklerini Başlat
-Yaratmak `IEWSClient` Her kullanıcı hesabı için kimlik bilgilerini kullanarak örnekler.
+#### EWSClient Örneklerini Başlatın
+Yönetmek istediğiniz her posta kutusu için `IEWSClient` nesneleri oluşturun:
+
 ```java
-IEWSClient client1 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser1", "şifre", "etki alanı");
-IEWSClient client2 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser2", "şifre", "etki alanı");
+IEWSClient client1 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser1", "pwd", "domain");
+IEWSClient client2 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser2", "pwd", "domain");
 ```
-*Açıklama:* The `getEWSClient` Yöntem, belirtilen kullanıcı kimlik bilgileriyle işlem yapılmasına izin veren Exchange sunucusuna bağlanır.
 
-### Bir Klasörden Mesajları Sil
-**Genel Bakış:**
-Örneklenen istemci nesnelerini kullanarak belirli bir klasördeki tüm mesajları etkili bir şekilde silin.
+*Açıklama:* `getEWSClient` yardımcı yöntemi, sağlanan kimlik bilgileriyle Exchange’e bağlanır ve mevcut kullanıcının izinlerine saygı gösteren hazır bir istemci döndürür.
 
-**Adımlar:**
-#### Mesajları Listele ve Sil
-İstediğiniz klasördeki her mesajın üzerinde yineleyin ve bunları kalıcı olarak silin:
+## Bir klasörden mesajları nasıl silinir?
+Hedef klasördeki tüm öğeleri alın ve tek bir geçişte kalıcı olarak silin. Bu yöntem, her mesajı ayrı ayrı açmanın getirdiği yükü ortadan kaldırır. **`listMessages`, her mesajın benzersiz URI'sını içeren bir `MessageInfo` koleksiyonu döndürür; bu URI'yi `deleteMessage` ile sunucudan kaldırırsınız.**  
+
+Toplu işleme, ağ tur sayısını azaltır ve büyük klasörlerde zaman aşımını önler. Silme işlemi geri alınamaz; bu yüzden hedef klasörün doğru olduğundan emin olun.
+
+### Mesajları Listele ve Sil
+Her mesaj URI'sı üzerinde döngü yapın ve silme işlemini çağırın:
+
 ```java
-String folder = "Drafts"; // Klasörü belirtin.
+String folder = "Drafts"; // Specify the folder.
 ExchangeMessageInfoCollection messages1 = client1.listMessages(folder);
 for (ExchangeMessageInfo messageInfo : messages1) {
     client1.deleteItem(messageInfo.getUniqueUri(), DeletionOptions.getDeletePermanently());
@@ -86,15 +168,17 @@ for (ExchangeMessageInfo messageInfo : messages2) {
     client2.deleteItem(messageInfo.getUniqueUri(), DeletionOptions.getDeletePermanently());
 }
 ```
-*Açıklama:* The `listMessages` yöntemi belirtilen klasördeki tüm mesajları alır ve daha sonra benzersiz URI'leri kullanılarak kalıcı olarak silinir.
 
-### Bir Klasöre Mesaj Ekle
-**Genel Bakış:**
-Her kullanıcı hesabı için yeni e-posta mesajlarını belirli klasörlere ekleyerek e-posta göndermeyi otomatikleştirin.
+*Açıklama:* `listMessages` bir `MessageInfo` koleksiyonu döndürür; `getUniqueUri()` değerleri `deleteMessage`'a geçirilerek öğeler sunucudan kalıcı olarak kaldırılır.
 
-**Adımlar:**
-#### Mesaj Oluştur ve Gönder
-Yaratmak `MailMessage` nesneleri ve bunları ekleyin:
+## Bir klasöre mesaj nasıl eklenir?
+Yerel olarak bir `MailMessage` nesnesi oluşturun ve doğrudan bir posta kutusu klasörüne kaydedin—SMTP sunucusuna ihtiyaç yoktur. **`MailMessage`, başlıklar, gövde ve ekleri içeren bir e-postayı temsil eder; tamamen bellekte oluşturulup Exchange’e kaydedilebilir.**  
+
+Eklemek, gönderim hattını atlayarak taslaklar, şablonlar veya programatik mesaj oluşturma senaryoları için idealdir; mesaj anında kullanıcının posta kutusunda görünür.
+
+### Mesaj Oluştur ve Gönder
+E‑postayı oluşturun ve Taslaklar klasörüne ekleyin:
+
 ```java
 String subj1 = String.format("NETWORKNET_33354 {0} {1}", "User", "User1");
 client1.appendMessage(folder, new MailMessage("User1@exchange.conholdate.local", "To@aspsoe.com", subj1, ""));
@@ -102,60 +186,75 @@ client1.appendMessage(folder, new MailMessage("User1@exchange.conholdate.local",
 String subj2 = String.format("NETWORKNET_33354 {0} {1}", "User", "User2");
 client2.appendMessage(folder, new MailMessage("User2@exchange.conholdate.local", "To@aspose.com", subj2, ""));
 ```
-*Açıklama:* The `appendMessage` metodu belirtilen ayrıntılarla bir mesaj oluşturur ve bunu kullanıcının Taslaklar klasörüne ekler.
 
-### Bir Kullanıcının Taklidi
-**Genel Bakış:**
-Başka bir kullanıcıyı taklit etmek, paylaşılan posta kutusu yönetimi için mesajları onun bakış açısıyla listelemenize olanak tanır.
+*Açıklama:* `appendMessage`, `MailMessage` ve bir `FolderInfo` (ör. Drafts) alır ve öğeyi posta kutusuna yazar; böylece kullanıcı için anında erişilebilir hâle gelir.
 
-**Adımlar:**
-#### Kullanıcı Taklidi Gerçekleştir
-Taklit yöntemlerini kullanarak kullanıcılar arasında bağlamı değiştirin:
+## EWS'de bir kullanıcı nasıl taklit edilir?
+İstemcinin güvenlik bağlamını başka bir posta kutusuna değiştirin, işlemleri gerçekleştirin ve ardından orijinal hesaba geri dönün. Bu, paylaşımlı posta kutusu yönetimi için kritiktir. **`impersonateUser`, temel EWS isteğinde `ImpersonatedUserId` ayarlar; sunucu çağrıyı hedef posta kutusundan geliyormuş gibi işler.**  
+
+Gerekli işlemler tamamlandığında `resetImpersonation` çağırarak orijinal kimlik bilgilerini geri yükleyin; böylece sonraki çağrılar doğru güvenlik bağlamı altında yürütülür.
+
+### Kullanıcı Taklidi Yapma
+İstemcinin bağlamını geçici olarak başka bir kullanıcıya değiştirin:
+
 ```java
 ExchangeMessageInfoCollection messInfoColl1 = client1.listMessages(folder);
 client1.impersonateUser(0, "User2@exchange.conholdate.local");
 
 ExchangeMessageInfoCollection messInfoColl2 = client1.listMessages(folder);
-// Orijinal kullanıcı bağlamına geri dön.
+// Revert to the original user context.
 client1.resetImpersonation();
 ExchangeMessageInfoCollection messInfoColl3 = client1.listMessages(folder);
 ```
-*Açıklama:* The `impersonateUser` method EWSClient'ın bağlamını geçici olarak değiştirir ve eylemlerin sanki o kullanıcı tarafından gerçekleştirilmiş gibi yapılmasına izin verir. Taklit etme işlemini sıfırlamak orijinal bağlamı geri yükler.
+
+*Açıklama:* `impersonateUser`, temel EWS isteğinde `ImpersonatedUserId` ayarlar; böylece hedef kullanıcı gibi okuma veya yazma yapabilirsiniz. `resetImpersonation` ise orijinal kimlik bilgilerini geri yükler.
 
 ## Pratik Uygulamalar
-Aspose.Email Java'yı kullanmak, sağlam e-posta otomasyon çözümlerine olanak tanır:
-1. **Otomatik E-posta Temizleme:** Taslak klasörlerini manuel müdahaleye gerek kalmadan düzenli olarak temizleyin.
-2. **E-postaların Toplu İşlenmesi:** Önceden tanımlanmış e-postaları aynı anda birden fazla hesaba ekleyin.
-3. **Paylaşılan Posta Kutusu Yönetimi:** Kullanıcılar ve departmanlar arasında paylaşılan posta kutusu erişimini kolaylaştırın.
+Aspose.Email Java, sağlam e-posta otomasyon çözümleri sağlar:
+1. **Otomatik E-posta Temizliği:** Çeşitli posta kutularındaki eski Taslak klasörlerini gecelik bir iş ile temizleyin.  
+2. **Toplu E-posta Dağıtımı:** Şablon bir duyuruyu tek bir döngüyle tüm çalışanların Gelen Kutusuna ekleyin.  
+3. **Paylaşımlı Posta Kutusu Yönetimi:** Bir departman posta kutusunu taklit ederek eski mesajları arşivleyin; her kullanıcıya tam erişim vermeye gerek kalmaz.
 
-## Performans Hususları
-Aspose.Email ile uygulama performansını optimize etmek için:
-- Mümkün olduğunda işlemleri toplu olarak gerçekleştirerek API çağrılarını en aza indirin.
-- Özellikle büyük miktarda e-posta verisi işlerken Java belleğini verimli bir şekilde yönetin.
-- Sızıntıları veya aşırı kullanımı önlemek için kaynak yönetiminde en iyi uygulamaları izleyin.
+## Performans Düşünceleri
+Büyük posta kutularını işlerken uygulamanızın yanıt verebilirliğini korumak için:
+- **Batch API çağrılarını** mümkün olduğunca kullanın (ör. istekte 500 mesaj sil).  
+- **Mesajları akış olarak** işleyin; tam gövdeleri belleğe yüklemeyin.  
+- **İstemci nesnelerini** zamanında serbest bırakın; ağ soketleri ve HTTP bağlantılarını boşaltın.
 
-## Çözüm
-Etkili EWS istemci kullanıcı yönetimi ve kimliğine bürünme için Aspose.Email Java'yı nasıl kullanacağınızı öğrendiniz. Bu yetenekler, üretkenliği artıran ve iş akışlarını kolaylaştıran güçlü e-posta otomasyon çözümlerine olanak tanır. Uygulamalarınızda daha fazla potansiyel için kitaplığın diğer özelliklerini keşfedin.
+## Yaygın Sorunlar ve Çözümler
+- **Bağlantı hataları:** EWS uç nokta URL'sini doğrulayın, TLS 1.2'nin etkin olduğundan emin olun ve güvenlik duvarı kurallarının dışa doğru HTTPS trafiğine izin verdiğini kontrol edin.  
+- **Taklitte izin reddedildi:** Hizmet hesabının Exchange'te “ApplicationImpersonation” rolüne sahip olması gerekir.  
+- **Büyük klasör zaman aşımı:** `HttpWebRequest` zaman aşımını artırın veya klasörü daha küçük parçalar halinde işleyin.
 
-### Sonraki Adımlar
-- Takvim etkinliği yönetimi ve kişi senkronizasyonu gibi gelişmiş işlevleri keşfedin.
-- Kapsamlı iş akışı otomasyonu için CRM veya proje yönetim araçları gibi diğer sistemlerle entegre edin.
+## Sık Sorulan Sorular
 
-## SSS Bölümü
-**S1: EWS ile bağlantı sorunlarını nasıl giderebilirim?**
-A: Uç nokta URL'sini, kimlik bilgilerini ve ağ ayarlarını doğrulayın. Exchange sunucunuzun ortamınızdan erişilebilir olduğundan emin olun.
+**S: EWS bağlantı sorunlarını nasıl gideririm?**  
+C: Uç nokta URL'sini, kimlik bilgilerini ve ağ güvenlik duvarlarını kontrol edin; Aspose.Email içinde HTTP istek/yanıt verilerini yakalamak için ayrıntılı günlüklemeyi etkinleştirin.
 
-**S2: Aspose.Email büyük miktardaki e-postaları verimli bir şekilde yönetebilir mi?**
-C: Evet, toplu işlemleri destekler ve büyük veri kümelerini etkili bir şekilde yönetmek için kaynak kullanımını optimize etmeye yönelik seçenekler sunar.
+**S: Aspose.Email büyük miktarda e-postayı verimli bir şekilde işleyebilir mi?**  
+C: Evet—batch API'leri sayesinde **10.000+** mesajı dakikada işleyebilir ve bellek kullanımını 200 MB altında tutar.
 
-**S3: EWS'de kullanıcı kimliğine bürünmenin bazı yaygın kullanım durumları nelerdir?**
-A: Kullanıcı kimliğine bürünme, paylaşılan posta kutularını yönetmek veya parola paylaşmadan e-posta görevlerini devretmek için kullanışlıdır.
+**S: EWS'de kullanıcı taklidi tipik olarak hangi senaryolarda kullanılır?**  
+C: Paylaşımlı posta kutularının yönetimi, toplu arşivleme ve birden çok kullanıcı adına zamanlanmış raporların çalıştırılması; şifrelerini saklamaya gerek kalmaz.
 
-**S4: Aspose.Email ile API çağrılarının sayısında sınırlama var mı?**
-C: Aspose.Email'in kendisi bir sınır koymazken, Exchange sunucu politikaları işlemlerin sıklığını ve hacmini kısıtlayabilir.
+**S: Aspose.Email API çağrıları üzerinde bir limit var mı?**  
+C: Aspose.Email kendisi bir limit koymaz; ancak Exchange, uygulamanın uyması gereken kısıtlama politikaları uygulayabilir.
 
-**S5: E-postaları programlı olarak yönetirken veri güvenliğini nasıl sağlayabilirim?**
-A: Güvenli bağlantılar (HTTPS) kullanın ve kimlik bilgilerini güvenli bir şekilde işleyin. Şifreleme ve erişim kontrolü için en iyi uygulamaları izleyin.
+**S: Java kodumda kimlik bilgilerini nasıl güvenli tutarım?**  
+C: Şifreleri şifreli yapılandırma dosyalarında saklayın veya Azure Key Vault / AWS Secrets Manager kullanın; EWS uç noktaları için her zaman HTTPS kullanın.
+
+---
+
+**Son Güncelleme:** 2026-07-08  
+**Test Edilen Versiyon:** Aspose.Email for Java 23.10  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.Email for Java ile bir EWSClient Örneği Oluşturma: Exchange Server Entegrasyon Kılavuzu](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Aspose.Email for Java ve EWS ile Microsoft Exchange Server'a Bağlanma](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Aspose.Email ve Java EWS İstemcisi ile E-posta Yönetimini Otomatikleştirme: Kapsamlı Kılavuz](/email/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

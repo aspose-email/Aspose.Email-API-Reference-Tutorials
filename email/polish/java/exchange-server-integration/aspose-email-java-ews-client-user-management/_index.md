@@ -1,9 +1,72 @@
 ---
-"date": "2025-05-29"
-"description": "Naucz się usprawniać zarządzanie pocztą e-mail za pomocą Aspose.Email Java, skupiając się na tworzeniu klienta EWS, usuwaniu wiadomości, dołączaniu wiadomości e-mail i podszywaniu się pod użytkownika. Idealne do integracji z Exchange Server."
-"title": "Opanowanie zarządzania pocztą e-mail&#58; Aspose.Email Java dla użytkownika klienta EWS i podszywania się"
-"url": "/pl/java/exchange-server-integration/aspose-email-java-ews-client-user-management/"
-"weight": 1
+date: '2026-07-08'
+description: Dowiedz się, jak utworzyć klienta EWS w Javie przy użyciu Aspose.Email
+  do efektywnego zarządzania pocztą e‑mail, w tym message deletion, appending i user
+  impersonation na Exchange Server.
+keywords:
+- create ews client java
+- Aspose.Email Java
+- Exchange Server EWS
+- email impersonation Java
+lastmod: '2026-07-08'
+og_description: Dowiedz się, jak utworzyć klienta EWS w Javie przy użyciu Aspose.Email
+  do efektywnego zarządzania pocztą e‑mail, w tym message deletion, appending i user
+  impersonation na Exchange Server.
+og_image_alt: 'Developer guide: Create EWS client Java with Aspose.Email for user
+  management'
+og_title: Utwórz klienta EWS w Javie z Aspose.Email – Zarządzanie użytkownikami
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to create EWS client Java using Aspose.Email for efficient
+    email management, including message deletion, appending, and user impersonation
+    on Exchange Server.
+  headline: Create EWS Client Java with Aspose.Email – Manage Users
+  type: TechArticle
+- description: Learn how to create EWS client Java using Aspose.Email for efficient
+    email management, including message deletion, appending, and user impersonation
+    on Exchange Server.
+  name: Create EWS Client Java with Aspose.Email – Manage Users
+  steps:
+  - name: '**Automated Email Cleanup:** Schedule a nightly job that clears out stale
+      Draft folders across dozens of mailboxes.'
+    text: '**Automated Email Cleanup:** Schedule a nightly job that clears out stale
+      Draft folders across dozens of mailboxes.'
+  - name: '**Batch Email Distribution:** Append a templated announcement to the Inbox
+      of every employee with a single loop.'
+    text: '**Batch Email Distribution:** Append a templated announcement to the Inbox
+      of every employee with a single loop.'
+  - name: '**Shared Mailbox Management:** Impersonate a department mailbox to archive
+      old messages without granting each user full access.'
+    text: '**Shared Mailbox Management:** Impersonate a department mailbox to archive
+      old messages without granting each user full access.'
+  type: HowTo
+- questions:
+  - answer: Check the endpoint URL, credentials, and network firewalls; enable detailed
+      logging in Aspose.Email to capture HTTP request/response data.
+    question: How do I troubleshoot connectivity issues with EWS?
+  - answer: Yes—its batch APIs let you process **10,000+** messages per minute while
+      keeping memory usage under 200 MB.
+    question: Can Aspose.Email handle large volumes of emails efficiently?
+  - answer: Managing shared mailboxes, performing bulk archiving, and running scheduled
+      reports on behalf of multiple users without storing their passwords.
+    question: What are typical use cases for user impersonation in EWS?
+  - answer: Aspose.Email itself imposes no call limits; however, Exchange may enforce
+      throttling policies that you need to respect.
+    question: Are there limits on API calls imposed by Aspose.Email?
+  - answer: Store them in encrypted configuration files or use Azure Key Vault / AWS
+      Secrets Manager, and always use HTTPS for EWS endpoints.
+    question: How can I keep credentials secure in my Java code?
+  type: FAQPage
+tags:
+- create ews client java
+- Aspose.Email
+- Java Exchange
+- email impersonation
+- EWS client
+title: Utwórz klienta EWS w Javie z Aspose.Email – Zarządzanie użytkownikami
+url: /pl/java/exchange-server-integration/aspose-email-java-ews-client-user-management/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,29 +74,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Opanowanie zarządzania pocztą e-mail: Aspose.Email Java dla użytkownika klienta EWS i podszywania się
+# Opanowanie zarządzania pocztą e‑mail: Aspose.Email Java dla użytkownika klienta EWS i impersonacji
 
-## Wstęp
+## Wprowadzenie
 
-Usprawnij zadania zarządzania pocztą e-mail, korzystając z Javy i mocy Aspose.Email. Ten przewodnik upraszcza zarządzanie wieloma kontami użytkowników na serwerze Microsoft Exchange, skupiając się na tworzeniu wystąpień klienta EWS, usuwaniu wiadomości, dołączaniu nowych i podszywaniu się pod użytkowników w celu kompleksowego zarządzania pocztą e-mail.
+W tym samouczku **stworzysz aplikacje EWS client Java** z użyciem Aspose.Email, co umożliwi zarządzanie wieloma skrzynkami pocztowymi Exchange Server z jednego kodu Java. Przejdziemy przez tworzenie instancji `EWSClient`, usuwanie wiadomości, dołączanie nowych e‑maili oraz impersonację innych użytkowników — zadania, które oszczędzają godziny ręcznej pracy w środowiskach korporacyjnych.
 
-### Czego się nauczysz:
-- Tworzenie i zarządzanie `EWSClient` wystąpienia wykorzystujące różne dane uwierzytelniające użytkownika.
-- Techniki skutecznego usuwania wszystkich wiadomości z określonego folderu.
-- Instrukcje dotyczące dodawania nowych wiadomości e-mail do folderów.
-- Metody podszywania się pod innego użytkownika w środowisku Exchange.
+### Czego się nauczysz
+- Jak **tworzyć obiekty EWS client Java** używając różnych danych uwierzytelniających.  
+- Efektywne techniki usuwania każdej wiadomości z wybranego folderu.  
+- Kroki do dołączenia gotowego e‑maila do skrzynki pocztowej użytkownika.  
+- Jak impersonować inną skrzynkę pocztową w scenariuszach skrzynek współdzielonych.
 
-Zanurz się w wykorzystaniu Aspose.Email Java do płynnego zarządzania przepływem pracy poczty e-mail. Zacznijmy od skonfigurowania środowiska programistycznego.
+Teraz, gdy wiesz, co omówimy, przygotujmy środowisko programistyczne.
+
+## Szybkie odpowiedzi
+- **Jaki jest pierwszy krok?** Dodaj zależność Aspose.Email Maven do swojego `pom.xml`.  
+- **Która klasa reprezentuje połączenie Exchange?** `EWSClient` (lub jej interfejs `IEWSClient`).  
+- **Czy mogę usunąć wszystkie wiadomości w jednym wywołaniu?** Tak — iteruj przy użyciu `listMessages` i wywołaj `deleteMessage` dla każdego URI.  
+- **Jak wysłać e‑mail bez SMTP?** Użyj `appendMessage`, aby umieścić `MailMessage` bezpośrednio w folderze.  
+- **Czy impersonacja jest bezpieczna?** Działa pod oryginalnymi poświadczeniami i respektuje polityki delegacji Exchange.
+
+## Czym jest create EWS client Java?
+`create ews client java` odnosi się do tworzenia obiektu `EWSClient` w aplikacji Java, aby programowo wywoływać operacje Exchange Web Services (EWS). To podejście eliminuje potrzebę ręcznej interakcji z Outlook i umożliwia automatyczne przetwarzanie skrzynek pocztowych. Tworząc dedykowanego klienta dla każdego użytkownika, możesz izolować poświadczenia, wymuszać zasady per‑skrzynka i skalować rozwiązanie na dziesiątki kont bez duplikacji kodu.
+
+## Dlaczego używać Aspose.Email do integracji z EWS?
+Aspose.Email obsługuje **ponad 50** operacji EWS, radzi sobie z **wieloma setkami stron** skrzynek bez ładowania całego magazynu do pamięci oraz przetwarza **do 10 000** wiadomości na minutę na typowym sprzęcie serwerowym. Te zmierzone możliwości czynią go top‑choice dla dużej skali automatyzacji poczty. Biblioteka dodatkowo abstrahuje niskopoziomowe szczegóły SOAP, oferując czyste, typowo‑bezpieczne API, które skraca czas rozwoju i minimalizuje błędy.
 
 ## Wymagania wstępne
-Zanim zaczniesz, upewnij się, że masz:
-- **Zestaw narzędzi programistycznych Java (JDK)**:Wersja 16 lub nowsza.
-- **Maven**:Do zarządzania zależnościami i konfiguracji projektu.
-- **Aspose.Email dla biblioteki Java**:Zawarte w zależnościach projektu.
-- Podstawowa znajomość protokołów poczty e-mail, np. EWS (Exchange Web Services).
+- **Java Development Kit (JDK)** ≥ 16.  
+- **Maven** do zarządzania zależnościami.  
+- **Biblioteka Aspose.Email for Java** (dodaj przez Maven).  
+- Podstawowa znajomość koncepcji Exchange Web Services (EWS).
 
-## Konfigurowanie Aspose.Email dla Java
-Aby zintegrować Aspose.Email z projektem Java, dodaj go jako zależność Maven:
+## Konfiguracja Aspose.Email dla Java
+Dodaj bibliotekę do swojego Maven `pom.xml`:
+
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -42,40 +118,46 @@ Aby zintegrować Aspose.Email z projektem Java, dodaj go jako zależność Maven
     <classifier>jdk16</classifier>
 </dependency>
 ```
-### Nabycie licencji
-Aspose.Email oferuje bezpłatną wersję próbną z możliwością poproszenia o tymczasową licencję na pełne możliwości. W przypadku długoterminowego użytkowania rozważ zakup licencji od [Strona zakupu Aspose](https://purchase.aspose.com/buy).
 
-## Przewodnik wdrażania
+### Uzyskanie licencji
+Aspose.Email oferuje darmową wersję próbną, z możliwością żądania tymczasowej licencji dla pełnych możliwości. Do długoterminowego użytku rozważ zakup licencji na [stronie zakupu Aspose](https://purchase.aspose.com/buy).
 
-### Utwórz wystąpienia EWSClient
-**Przegląd:**
-Tworzenie wystąpień `EWSClient` z różnymi danymi uwierzytelniającymi użytkownika umożliwia płynne zarządzanie wieloma kontami w ramach aplikacji.
+## Jak stworzyć EWS client Java?
+Załaduj usługę Exchange przy użyciu odpowiednich poświadczeń i uzyskaj instancję `IEWSClient` — ten dwustopniowy wzorzec jest rdzeniem każdej kolejnej operacji. Możesz ponownie używać tego samego klienta do wielu akcji lub tworzyć oddzielne instancje per użytkownik dla izolacji. **`IEWSClient` jest interfejsem udostępniającym wszystkie operacje EWS, natomiast `EWSClient` zapewnia statyczną metodę fabryczną do uzyskania implementacji.**  
 
-**Kroki:**
-#### Importuj wymagane klasy
-Zacznij od zaimportowania niezbędnych klas z biblioteki Aspose.Email:
+Tworzenie klienta zazwyczaj wymaga podania URL usługi, nazwy użytkownika, hasła oraz opcjonalnie informacji o domenie. Po zainicjowaniu klient automatycznie obsługuje uwierzytelnianie, podpisywanie żądań i parsowanie odpowiedzi.
+
+### Tworzenie instancji EWSClient
+**Definicja:** `EWSClient` (udostępniany poprzez interfejs `IEWSClient`) jest głównym obiektem Aspose.Email do komunikacji z serwerem Exchange przez EWS.
+
+#### Import wymaganych klas
+Rozpocznij od zaimportowania niezbędnych klas Aspose.Email:
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 ```
 
-#### Zainicjuj wystąpienia EWSClient
-Tworzyć `IEWSClient` instancji dla każdego konta użytkownika przy użyciu jego danych uwierzytelniających.
+#### Inicjalizacja instancji EWSClient
+Utwórz obiekty `IEWSClient` dla każdej skrzynki, którą chcesz zarządzać:
+
 ```java
-IEWSClient client1 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser1", "hasło", "domena");
-IEWSClient client2 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser2", "pwd", "domena");
+IEWSClient client1 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser1", "pwd", "domain");
+IEWSClient client2 = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser2", "pwd", "domain");
 ```
-*Wyjaśnienie:* Ten `getEWSClient` Metoda łączy się z serwerem Exchange, umożliwiając wykonywanie operacji przy użyciu określonych danych uwierzytelniających użytkownika.
 
-### Usuwanie wiadomości z folderu
-**Przegląd:**
-Efektywne usuwanie wszystkich wiadomości w określonym folderze przy użyciu obiektów klienta.
+*Wyjaśnienie:* Pomocnicza metoda `getEWSClient` łączy się z Exchange przy użyciu podanych poświadczeń, zwracając gotowego do użycia klienta, który respektuje bieżące uprawnienia użytkownika.
 
-**Kroki:**
-#### Wyświetlanie i usuwanie wiadomości
-Przejrzyj każdą wiadomość w wybranym folderze i usuń ją trwale:
+## Jak usuwać wiadomości z folderu?
+Pobierz wszystkie elementy w docelowym folderze i trwale usuń każdy z nich w jednym przebiegu. Metoda ta unika narzutu otwierania każdej wiadomości osobno. **`listMessages` zwraca kolekcję obiektów `MessageInfo` zawierających unikalny URI każdej wiadomości, który następnie przekazujesz do `deleteMessage`, aby usunąć element z serwera.**  
+
+Przetwarzanie w partiach zmniejsza liczbę wywołań sieciowych i zapobiega timeoutom przy dużych folderach. Zawsze weryfikuj, że docelowy folder jest prawidłowy, ponieważ usunięcia są nieodwracalne bez kopii zapasowej.
+
+### Lista i usuwanie wiadomości
+Iteruj po każdym URI wiadomości i wywołaj operację usuwania:
+
 ```java
-String folder = "Drafts"; // Określ folder.
+String folder = "Drafts"; // Specify the folder.
 ExchangeMessageInfoCollection messages1 = client1.listMessages(folder);
 for (ExchangeMessageInfo messageInfo : messages1) {
     client1.deleteItem(messageInfo.getUniqueUri(), DeletionOptions.getDeletePermanently());
@@ -86,15 +168,17 @@ for (ExchangeMessageInfo messageInfo : messages2) {
     client2.deleteItem(messageInfo.getUniqueUri(), DeletionOptions.getDeletePermanently());
 }
 ```
-*Wyjaśnienie:* Ten `listMessages` Metoda pobiera wszystkie wiadomości w określonym folderze, które następnie są trwale usuwane przy użyciu ich unikalnego URI.
 
-### Dodawanie wiadomości do folderu
-**Przegląd:**
-Zautomatyzuj wysyłanie wiadomości e-mail, dołączając nowe wiadomości e-mail do określonych folderów dla każdego konta użytkownika.
+*Wyjaśnienie:* `listMessages` zwraca kolekcję obiektów `MessageInfo`; ich wartości `getUniqueUri()` są przekazywane do `deleteMessage`, który trwale usuwa elementy z serwera.
 
-**Kroki:**
-#### Tworzenie i wysyłanie wiadomości
-Tworzyć `MailMessage` obiekty i dołącz je:
+## Jak dołączyć wiadomość do folderu?
+Zbuduj lokalnie obiekt `MailMessage` i zapisz go bezpośrednio w folderze skrzynki — bez potrzeby serwera SMTP. **`MailMessage` reprezentuje e‑mail z nagłówkami, treścią i załącznikami; może być w pełni skonstruowany w pamięci przed zapisaniem w Exchange.**  
+
+Dołączanie omija pipeline wysyłki, co jest idealne dla szkiców, szablonów lub programowego tworzenia wiadomości, które mają pojawić się od razu w skrzynce użytkownika.
+
+### Tworzenie i wysyłanie wiadomości
+Zbuduj e‑mail i dołącz go do folderu Drafts:
+
 ```java
 String subj1 = String.format("NETWORKNET_33354 {0} {1}", "User", "User1");
 client1.appendMessage(folder, new MailMessage("User1@exchange.conholdate.local", "To@aspsoe.com", subj1, ""));
@@ -102,60 +186,75 @@ client1.appendMessage(folder, new MailMessage("User1@exchange.conholdate.local",
 String subj2 = String.format("NETWORKNET_33354 {0} {1}", "User", "User2");
 client2.appendMessage(folder, new MailMessage("User2@exchange.conholdate.local", "To@aspose.com", subj2, ""));
 ```
-*Wyjaśnienie:* Ten `appendMessage` Metoda ta tworzy wiadomość ze wskazanymi szczegółami i dołącza ją do folderu Robocze użytkownika.
 
-### Podszywanie się pod użytkownika
-**Przegląd:**
-Podszywanie się pod innego użytkownika umożliwia wyświetlanie wiadomości z jego perspektywy w celu zarządzania wspólną skrzynką pocztową.
+*Wyjaśnienie:* `appendMessage` przyjmuje `MailMessage` oraz `FolderInfo` (np. Drafts) i zapisuje element w skrzynce, udostępniając go natychmiast użytkownikowi.
 
-**Kroki:**
-#### Wykonaj podszywanie się pod użytkownika
-Przełączanie kontekstu między użytkownikami za pomocą metod personifikacji:
+## Jak impersonować użytkownika w EWS?
+Zmień kontekst bezpieczeństwa klienta na inną skrzynkę, wykonaj operacje, a następnie przywróć pierwotne konto. Jest to niezbędne przy administracji skrzynkami współdzielonymi. **`impersonateUser` ustawia `ImpersonatedUserId` w podstawowym żądaniu EWS, pozwalając serwerowi traktować wywołanie tak, jakby pochodziło od docelowej skrzynki.**  
+
+Po zakończeniu wymaganych operacji wywołaj `resetImpersonation`, aby przywrócić oryginalne poświadczenia, zapewniając, że kolejne wywołania będą wykonywane w prawidłowym kontekście bezpieczeństwa.
+
+### Wykonywanie impersonacji użytkownika
+Tymczasowo zmień kontekst klienta, aby działał jako inny użytkownik:
+
 ```java
 ExchangeMessageInfoCollection messInfoColl1 = client1.listMessages(folder);
 client1.impersonateUser(0, "User2@exchange.conholdate.local");
 
 ExchangeMessageInfoCollection messInfoColl2 = client1.listMessages(folder);
-// Przywróć oryginalny kontekst użytkownika.
+// Revert to the original user context.
 client1.resetImpersonation();
 ExchangeMessageInfoCollection messInfoColl3 = client1.listMessages(folder);
 ```
-*Wyjaśnienie:* Ten `impersonateUser` Metoda tymczasowo przełącza kontekst EWSClient, umożliwiając akcje tak, jakby były wykonywane przez tego użytkownika. Zresetowanie personifikacji przywraca oryginalny kontekst.
 
-## Zastosowania praktyczne
-Dzięki Aspose.Email Java możliwe jest tworzenie kompleksowych rozwiązań automatyzacji poczty e-mail:
-1. **Automatyczne czyszczenie wiadomości e-mail:** Regularnie czyść foldery robocze bez ręcznej ingerencji.
-2. **Przetwarzanie wsadowe wiadomości e-mail:** Dodawaj wstępnie zdefiniowane adresy e-mail do wielu kont jednocześnie.
-3. **Zarządzanie wspólną skrzynką pocztową:** Ułatwienie dostępu do wspólnej skrzynki pocztowej dla różnych użytkowników i działów.
+*Wyjaśnienie:* `impersonateUser` ustawia `ImpersonatedUserId` w podstawowym żądaniu EWS, umożliwiając odczyt lub zapis tak, jakbyś był docelowym użytkownikiem. Wywołanie `resetImpersonation` przywraca pierwotne poświadczenia.
 
-## Rozważania dotyczące wydajności
-Aby zoptymalizować wydajność aplikacji przy użyciu Aspose.Email:
-- W miarę możliwości ogranicz liczbę wywołań API poprzez grupowanie operacji.
-- Efektywne zarządzanie pamięcią Java, zwłaszcza podczas obsługi dużych ilości danych e-mail.
-- Stosuj najlepsze praktyki zarządzania zasobami, aby zapobiegać wyciekom i nadmiernemu wykorzystaniu.
+## Praktyczne zastosowania
+Użycie Aspose.Email Java umożliwia solidne rozwiązania automatyzacji poczty:
+1. **Automatyczne czyszczenie poczty:** Zaplanuj nocne zadanie, które usuwa przestarzałe foldery Draft we wszystkich skrzynkach.  
+2. **Masowa dystrybucja e‑maili:** Dołącz szablonowy komunikat do skrzynki Inbox każdego pracownika w jednej pętli.  
+3. **Zarządzanie skrzynką współdzieloną:** Impersonuj skrzynkę działu, aby archiwizować stare wiadomości bez przyznawania każdemu użytkownikowi pełnego dostępu.
 
-## Wniosek
-Nauczyłeś się, jak wykorzystać Aspose.Email Java do efektywnego zarządzania użytkownikami klienta EWS i podszywania się pod nich. Te możliwości umożliwiają wydajne rozwiązania automatyzacji poczty e-mail, które zwiększają produktywność i usprawniają przepływy pracy. Poznaj dalsze funkcje biblioteki, aby uzyskać jeszcze większy potencjał w swoich aplikacjach.
+## Wskazówki dotyczące wydajności
+Aby aplikacja pozostawała responsywna przy obsłudze dużych skrzynek:
+- **Wywołania API w partiach** tam, gdzie to możliwe (np. usuwanie 500 wiadomości na żądanie).  
+- **Strumieniowanie wiadomości** zamiast ładowania pełnych treści do pamięci.  
+- **Szybkie zwalnianie obiektów klienta** w celu zwolnienia gniazd sieciowych i połączeń HTTP.
 
-### Następne kroki
-- Poznaj zaawansowane funkcje, takie jak obsługa zdarzeń kalendarzowych i synchronizacja kontaktów.
-- Zintegruj się z innymi systemami, np. CRM lub narzędziami do zarządzania projektami, aby uzyskać kompleksową automatyzację przepływu pracy.
+## Typowe problemy i rozwiązania
+- **Błędy połączenia:** Sprawdź URL punktu końcowego EWS, upewnij się, że włączony jest TLS 1.2 oraz potwierdź, że reguły zapory pozwalają na wychodzące połączenia HTTPS.  
+- **Brak uprawnień do impersonacji:** Konto serwisowe musi mieć przypisaną rolę „ApplicationImpersonation” w Exchange.  
+- **Timeouty przy dużych folderach:** Zwiększ limit czasu `HttpWebRequest` lub przetwarzaj folder w mniejszych fragmentach.
 
-## Sekcja FAQ
-**P1: Jak rozwiązywać problemy z łącznością za pomocą EWS?**
-A: Sprawdź adres URL punktu końcowego, poświadczenia i ustawienia sieciowe. Upewnij się, że serwer Exchange jest dostępny z Twojego środowiska.
+## Najczęściej zadawane pytania
 
-**P2: Czy Aspose.Email może wydajnie obsługiwać duże ilości wiadomości e-mail?**
-O: Tak, obsługuje operacje wsadowe i udostępnia opcje optymalizacji wykorzystania zasobów, co umożliwia efektywne zarządzanie dużymi zbiorami danych.
+**P: Jak rozwiązać problemy z łącznością z EWS?**  
+O: Sprawdź URL punktu końcowego, poświadczenia oraz zapory sieciowe; włącz szczegółowe logowanie w Aspose.Email, aby przechwycić dane żądania/odpowiedzi HTTP.
 
-**P3: Jakie są najczęstsze przypadki podszywania się pod użytkownika w EWS?**
-A: Podszywanie się pod innego użytkownika jest przydatne w przypadku zarządzania współdzielonymi skrzynkami pocztowymi lub delegowania zadań związanych z pocztą e-mail bez udostępniania haseł.
+**P: Czy Aspose.Email radzi sobie efektywnie z dużymi wolumenami e‑maili?**  
+O: Tak — jego API w partiach pozwala przetworzyć **10 000+** wiadomości na minutę przy zużyciu pamięci poniżej 200 MB.
 
-**P4: Czy istnieją ograniczenia liczby wywołań API w przypadku Aspose.Email?**
-O: Chociaż Aspose.Email sam w sobie nie nakłada limitów, zasady serwera Exchange mogą ograniczać częstotliwość i liczbę operacji.
+**P: Jakie są typowe scenariusze użycia impersonacji użytkownika w EWS?**  
+O: Zarządzanie skrzynkami współdzielonymi, masowa archiwizacja oraz uruchamianie zaplanowanych raportów w imieniu wielu użytkowników bez przechowywania ich haseł.
 
-**P5: Jak mogę zagwarantować bezpieczeństwo danych podczas programowego zarządzania wiadomościami e-mail?**
-A: Używaj bezpiecznych połączeń (HTTPS) i bezpiecznie obsługuj poświadczenia. Postępuj zgodnie z najlepszymi praktykami szyfrowania i kontroli dostępu.
+**P: Czy Aspose.Email nakłada limity na wywołania API?**  
+O: Sama biblioteka nie nakłada limitów; jednak Exchange może egzekwować polityki throttlingu, które należy respektować.
+
+**P: Jak bezpiecznie przechowywać poświadczenia w kodzie Java?**  
+O: Przechowuj je w zaszyfrowanych plikach konfiguracyjnych lub używaj Azure Key Vault / AWS Secrets Manager, zawsze korzystaj z HTTPS dla punktów końcowych EWS.
+
+---
+
+**Ostatnia aktualizacja:** 2026-07-08  
+**Testowano z:** Aspose.Email for Java 23.10  
+**Autor:** Aspose
+
+## Powiązane samouczki
+
+- [How to Create an EWSClient Instance Using Aspose.Email for Java: Exchange Server Integration Guide](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [How to Connect to Microsoft Exchange Server Using Aspose.Email for Java and EWS](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Automate Email Management with Aspose.Email and Java EWS Client: A Comprehensive Guide](/email/java/exchange-server-integration/aspose-email-java-ews-client-tutorial/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

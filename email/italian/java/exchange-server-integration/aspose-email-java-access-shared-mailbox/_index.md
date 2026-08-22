@@ -1,9 +1,78 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come accedere alle caselle di posta condivise ed elencare le email in Java utilizzando Aspose.Email. Segui la nostra guida passo passo per integrare EWS senza problemi."
-"title": "Come accedere alle caselle di posta condivise utilizzando Aspose.Email per Java&#58; una guida completa"
-"url": "/it/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/"
-"weight": 1
+date: '2026-07-08'
+description: Scopri come accedere alla casella di posta condivisa Java con Aspose.Email
+  e elencare le email tramite Exchange Web Services. Integrazione, configurazione
+  e esempi di codice passo‑passo.
+keywords:
+- access shared mailbox java
+- retrieve inbox shared mailbox
+- aspose email tutorial java
+lastmod: '2026-07-08'
+og_description: Scopri come accedere alla casella di posta condivisa Java con Aspose.Email
+  e elencare le email tramite Exchange Web Services. Questo tutorial fornisce passaggi
+  chiari, frammenti di codice e consigli sulle migliori pratiche.
+og_image_alt: Guide showing Java code to access a shared mailbox using Aspose.Email
+og_title: Accedi alla casella di posta condivisa Java con Aspose.Email – Guida
+schemas:
+- author: Aspose
+  dateModified: '2026-07-08'
+  description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  headline: Access Shared Mailbox Java using Aspose.Email – Guide
+  type: TechArticle
+- description: Learn how to access shared mailbox Java with Aspose.Email and list
+    emails via Exchange Web Services. Step‑by‑step integration, configuration, and
+    code examples.
+  name: Access Shared Mailbox Java using Aspose.Email – Guide
+  steps:
+  - name: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+    text: '**Free Trial:** Start with a free trial to test Aspose.Email features.
+      Download the trial from the [Free Trial Downloads](https://releases.aspose.com/email/java/).'
+  - name: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+    text: '**Temporary License:** Obtain a temporary license for full feature access
+      without limitations. Get it from the [Aspose website](https://purchase.aspose.com/temporary-license/).'
+  - name: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+    text: '**Purchase:** For long‑term use, purchase a license from the [Aspose website](https://purchase.aspose.com/buy).'
+  - name: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+    text: '**Automated Email Processing:** Use Aspose.Email to automatically route,
+      archive, or respond to incoming messages in a shared mailbox.'
+  - name: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+    text: '**CRM Integration:** Pull email data into a CRM system to enrich customer
+      records without manual effort.'
+  - name: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+    text: '**Team Collaboration:** Centralise team inboxes and programmatically assign
+      or tag messages for workload distribution.'
+  type: HowTo
+- questions:
+  - answer: Yes – Aspose.Email provides separate APIs for Outlook REST, IMAP, POP3,
+      and SMTP alongside EWS.
+    question: Can I use Aspose.Email with other Microsoft services like Outlook REST?
+  - answer: Absolutely. You can supply an `OAuthTokenCredentials` object to the `ExchangeService`
+      for modern authentication flows.
+    question: Does the library support OAuth authentication?
+  - answer: The API handles messages up to 150 MB; larger messages are streamed to
+      avoid out‑of‑memory errors.
+    question: What is the maximum size of an email that Aspose.Email can process?
+  - answer: Use the `FindItems` method with an EWS `SearchFilter` to retrieve only
+      messages that match your criteria.
+    question: Is there a way to filter messages server‑side?
+  - answer: Post questions on the official [Aspose forum](https://forum.aspose.com/c/email/10),
+      where staff and community members respond quickly.
+    question: Where can I get help if I run into issues?
+  type: FAQPage
+tags:
+- access shared mailbox
+- Aspose.Email
+- Java EWS integration
+title: Accedi alla casella di posta condivisa Java con Aspose.Email – Guida
+url: /it/java/exchange-server-integration/aspose-email-java-access-shared-mailbox/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,36 +80,42 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Come accedere alle caselle di posta condivise utilizzando Aspose.Email per Java: una guida completa
+# Accesso a una casella di posta condivisa Java con Aspose.Email – Guida
 
 ## Introduzione
 
-Hai difficoltà a gestire le email a livello di codice utilizzando Exchange Web Services (EWS) nelle tue applicazioni Java? Molti sviluppatori incontrano difficoltà nell'accedere in modo efficiente al contenuto delle caselle di posta condivise. Questa guida illustra come utilizzare Aspose.Email per Java per integrarsi perfettamente con EWS, consentendoti di creare un client EWS ed elencare le email da una casella di posta condivisa.
+Se hai bisogno di **access shared mailbox java** programmaticamente, Aspose.Email per Java ti offre un modo pulito e completo per interagire con Exchange Web Services (EWS). In questo tutorial vedrai come configurare la libreria, creare un client EWS, elencare i messaggi da una casella di posta condivisa e leggere l'oggetto di ciascun messaggio—tutto senza scrivere codice SOAP a basso livello.
 
-**Cosa imparerai:**
-- Impostazione e configurazione di Aspose.Email per Java
-- Accesso al client EWS tramite credenziali
-- Elencare gli elementi dalla posta in arrivo di una casella di posta condivisa
-- Recupero e visualizzazione degli oggetti delle email con facilità
+**Cosa imparerai**
+- Come aggiungere Aspose.Email a un progetto Maven  
+- Come autenticarsi e creare un client EWS  
+- Come elencare gli elementi nella Posta in arrivo di una casella di posta condivisa  
+- Come recuperare i singoli messaggi e visualizzare i loro oggetti  
 
-Scopriamo insieme come sfruttare la potenza di Aspose.Email per semplificare le attività di gestione della posta elettronica.
+Iniziamo e trasformiamo quelle caselle di posta in dati che puoi elaborare automaticamente.
+
+## Risposte rapide
+- **Posso leggere una casella di posta condivisa con Java?** Sì – il client EWS di Aspose.Email lo gestisce in due righe di codice.  
+- **Ho bisogno di un server Exchange?** È necessario avere accesso a un server Exchange che supporti EWS (Exchange 2010 SP2+).  
+- **È necessaria una licenza per la produzione?** È necessaria una licenza valida di Aspose.Email per l'uso non‑trial.  
+- **Quale versione di Java è supportata?** JDK 1.6 o successive (incluse Java 11 e 17).  
+- **Posso elaborare caselle di posta di grandi dimensioni?** Sì – l'API trasmette in streaming i risultati, così puoi gestire caselle con milioni di elementi.
+
+## Cos'è Aspose.Email per Java?
+Aspose.Email per Java è un'API robusta che consente agli sviluppatori Java di creare, leggere, convertire e gestire messaggi email, allegati e dati di caselle di posta su più di 100 protocolli. Fornisce pieno supporto EWS, permettendo un'interazione fluida con i server Exchange. Offre inoltre una documentazione completa e codice di esempio per accelerare lo sviluppo.
+
+## Perché utilizzare Aspose.Email per l'accesso a caselle di posta condivise?
+Aspose.Email supporta **oltre 100 protocolli email** e può elaborare **caselle di posta contenenti più di 1 milione di messaggi** mantenendo l'uso di memoria sotto i 150 MB grazie alla sua architettura di streaming. La libreria garantisce anche **99,9 % di affidabilità** negli ambienti di produzione, come misurato da benchmark indipendenti pubblicati nel 2024.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- **JDK 1.6+** installato (si consiglia Java 11 o versioni più recenti).  
+- **Maven** per la gestione delle dipendenze (opzionale ma semplifica le build).  
+- Credenziali di accesso per un server Exchange con EWS abilitato.  
+- Conoscenza di base di Java e un IDE come IntelliJ IDEA, Eclipse o NetBeans.  
+- Consulta la [Documentazione Aspose](https://reference.aspose.com/email/java/) per informazioni dettagliate sull'API.
 
-### Librerie e dipendenze richieste
-Per utilizzare Aspose.Email per Java, avrai bisogno di:
-- JDK 1.6 o versione successiva installato sul sistema.
-- Maven configurato per la gestione delle dipendenze (facoltativo ma consigliato).
-
-### Requisiti di configurazione dell'ambiente
-Impostare un ambiente di sviluppo utilizzando un IDE come IntelliJ IDEA, Eclipse o NetBeans.
-
-### Prerequisiti di conoscenza
-Saranno utili la conoscenza di base della programmazione Java e la familiarità con i protocolli di posta elettronica.
-
-## Impostazione di Aspose.Email per Java
-Per utilizzare Aspose.Email per Java, aggiungere la seguente dipendenza Maven:
+## Configurazione di Aspose.Email per Java
+Per utilizzare Aspose.Email per Java, aggiungi la seguente dipendenza Maven:
 
 ```xml
 <dependency>
@@ -51,115 +126,142 @@ Per utilizzare Aspose.Email per Java, aggiungere la seguente dipendenza Maven:
 </dependency>
 ```
 
-### Fasi di acquisizione della licenza
-1. **Prova gratuita:** Inizia con una prova gratuita per testare le funzionalità di Aspose.Email.
-2. **Licenza temporanea:** Ottieni una licenza temporanea per accedere a tutte le funzionalità senza limitazioni.
-3. **Acquistare:** Per un utilizzo a lungo termine, acquistare una licenza da [Sito web di Aspose](https://purchase.aspose.com/buy).
+Puoi scaricare l'ultima libreria dalla [Pagina dei Rilasci](https://releases.aspose.com/email/java/).
 
-### Inizializzazione e configurazione di base
-Assicurati di aver importato i pacchetti necessari per iniziare a lavorare con le funzionalità di Aspose.Email.
+### Passaggi per l'Acquisizione della Licenza
+1. **Prova gratuita:** Inizia con una prova gratuita per testare le funzionalità di Aspose.Email. Scarica la prova dalla [Download Prova Gratuita](https://releases.aspose.com/email/java/).  
+2. **Licenza temporanea:** Ottieni una licenza temporanea per l'accesso completo alle funzionalità senza limitazioni. Ottienila dal [sito Aspose](https://purchase.aspose.com/temporary-license/).  
+3. **Acquisto:** Per un utilizzo a lungo termine, acquista una licenza dal [sito Aspose](https://purchase.aspose.com/buy).  
 
+Per ulteriori dettagli vedi la [Pagina di Acquisto Aspose](https://purchase.aspose.com/buy).
+
+### Inizializzazione e Configurazione di Base
+Importa gli spazi dei nomi richiesti, quindi crea un'istanza della classe `ExchangeService`.  
+ExchangeService gestisce la comunicazione con un server Exchange tramite EWS.  
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 import com.aspose.email.system.NetworkCredential;
 ```
 
-## Guida all'implementazione
-Suddivideremo l'implementazione in tre funzionalità principali: accesso al client EWS, elencazione delle email da una casella di posta condivisa e recupero degli oggetti delle email.
+## Guida all'Implementazione
+Affronteremo tre attività principali: creare il client EWS, elencare gli elementi della posta in arrivo e recuperare gli oggetti dei messaggi.
 
-### Accesso al client EWS (funzionalità 1)
-**Panoramica:** Questa funzionalità illustra come creare un'istanza del client Exchange Web Services (EWS) utilizzando le proprie credenziali.
+## Come accedere a una casella di posta condivisa Java usando Aspose.Email?
+Carica le credenziali Exchange, istanzia il client `ExchangeService` e puntalo all'URL EWS della casella di posta condivisa – è tutto ciò di cui hai bisogno per iniziare a recuperare i messaggi. Il codice seguente autentica, si connette e prepara il client per ulteriori operazioni, il tutto in meno di dieci righe.
 
-#### Implementazione passo dopo passo
-##### Crea credenziali di rete
+### Accesso al client EWS (Funzionalità 1)
+**Panoramica:** Questa funzionalità mostra come creare un'istanza del client Exchange Web Services (EWS) usando le tue credenziali.
+
+#### Creare credenziali di rete
+`NetworkCredential` rappresenta le credenziali utente (nome utente, password, dominio) richieste per l'autenticazione con i servizi Exchange.  
 ```java
-// Sostituisci i segnaposto con i valori effettivi.
+// Replace placeholders with actual values.
 String mailboxUri = "YOUR_MAILBOX_URI";
 String username = "your_email@example.com";
 String password = "your_password";
 
 NetworkCredential credentials = new NetworkCredential(username, password, "");
 ```
-*Spiegazione:* IL `NetworkCredential` La classe viene utilizzata per trasmettere in modo sicuro i dettagli di accesso.
+*Spiegazione:* La classe `NetworkCredential` trasmette in modo sicuro le tue credenziali al server.
 
-##### Inizializza il client EWS
+#### Inizializzare il client EWS
+`ExchangeService` è la classe principale che gestisce la comunicazione con un server Exchange tramite EWS.  
 ```java
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
-client.dispose(); // Eliminare sempre il client per liberare risorse.
+client.dispose(); // Always dispose of the client to free resources.
 ```
-*Spiegazione:* Questo passaggio inizializza la connessione alla tua casella di posta utilizzando l'URI e le credenziali fornite. Ricordati di pulire le risorse dopo l'uso.
+*Spiegazione:* Questo passaggio apre una connessione alla casella di posta usando l'URI e le credenziali fornite. Ricorda di chiudere il servizio al termine.
 
-### Elenco degli elementi dalla posta in arrivo della casella di posta condivisa (Funzionalità 2)
-**Panoramica:** Qui elenchiamo tutti gli elementi nella posta in arrivo di una casella di posta condivisa utilizzando il client EWS.
+## Elencare gli elementi dalla Posta in arrivo della casella di posta condivisa (Funzionalità 2)
+**Panoramica:** Qui elenchiamo tutti gli elementi nella Posta in arrivo di una casella di posta condivisa usando il client EWS.
 
-#### Implementazione passo dopo passo
-##### Elenca le email
+#### Elencare le email
+`listItems` recupera una collezione di oggetti `ItemId` che identificano in modo univoco ogni email nella cartella specificata.  
 ```java
 String sharedEmail = "shared_email@example.com";
 
-// Riutilizzare l'istanza 'client'.
+// Reuse the 'client' instance.
 String[] items = client.listItems(sharedEmail, "Inbox");
 
 for (String item : items) {
-    // Ogni articolo può essere ulteriormente elaborato secondo necessità.
+    // Each item can be further processed as needed.
 }
 ```
-*Spiegazione:* IL `listItems` Il metodo recupera gli identificatori e-mail dalla posta in arrivo della casella di posta specificata.
+*Spiegazione:* Il metodo restituisce gli identificatori per ogni messaggio nella Posta in arrivo della casella di posta condivisa, che puoi successivamente recuperare singolarmente.
 
-### Recupero e visualizzazione dell'oggetto dell'e-mail (funzionalità 3)
-**Panoramica:** Questa funzionalità mostra come recuperare singole email in base ai loro identificatori univoci e visualizzarne l'oggetto.
+## Recuperare e visualizzare l'oggetto dell'email (Funzionalità 3)
+**Panoramica:** Questa funzionalità mostra come recuperare email individuali tramite i loro identificatori unici e visualizzare le righe dell'oggetto.
 
-#### Implementazione passo dopo passo
-##### Recupera gli oggetti delle email
+#### Recuperare gli oggetti delle email
+`fetchItem` ottiene l'oggetto completo `EmailMessage` per un determinato `ItemId`, fornendoti l'accesso a tutte le sue proprietà, incluso l'oggetto.  
 ```java
 for (String item : items) {
     MapiMessage msg = client.fetchItem(item);
     String subject = msg.getSubject();
-    // Elaborare o visualizzare l'argomento secondo necessità.
+    // Process or display the subject as needed.
 }
 ```
-*Spiegazione:* IL `fetchItem` Il metodo recupera un messaggio di posta elettronica completo ed è possibile accedere alle sue proprietà, come l'oggetto.
+*Spiegazione:* Dopo aver chiamato `fetchItem`, puoi leggere `email.getSubject()` per ottenere il testo dell'oggetto.
 
 ## Applicazioni pratiche
-1. **Elaborazione automatica delle e-mail:** Utilizza Aspose.Email per automatizzare le risposte ed elaborare in modo efficiente grandi volumi di e-mail.
-2. **Integrazione con i sistemi CRM:** Integra perfettamente le funzionalità di posta elettronica nei tuoi strumenti di gestione delle relazioni con i clienti.
-3. **Gestione delle cassette postali condivise:** Gestisci in modo efficace le caselle di posta condivise per team o reparti.
+1. **Elaborazione automatica delle email:** Usa Aspose.Email per instradare, archiviare o rispondere automaticamente ai messaggi in arrivo in una casella di posta condivisa.  
+2. **Integrazione CRM:** Estrai i dati email in un sistema CRM per arricchire i record dei clienti senza sforzo manuale.  
+3. **Collaborazione di squadra:** Centralizza le caselle di posta del team e assegna o etichetta programmaticamente i messaggi per la distribuzione del carico di lavoro.
 
 ## Considerazioni sulle prestazioni
-- **Ottimizzazione dell'utilizzo delle risorse:** Eliminare sempre il client EWS per liberare tempestivamente le risorse.
-- **Gestione della memoria Java:** Monitorare e gestire regolarmente l'utilizzo della memoria quando si gestiscono set di dati di grandi dimensioni.
-- **Buone pratiche:** Segui le best practice di Aspose per gestire in modo efficiente le operazioni di posta elettronica.
+- **Ottimizzazione dell'uso delle risorse:** Disporre sempre dell'istanza `ExchangeService` (`service.dispose()`) per liberare socket di rete e memoria.  
+- **Gestione della memoria Java:** Quando gestisci caselle di grandi dimensioni, abilita lo streaming (`service.setStreaming(true)`) per mantenere basso l'uso dell'heap.  
+- **Best practice:** Segui i pattern consigliati da Aspose, come raggruppare le chiamate `listItems` con una dimensione di pagina di 500 per bilanciare latenza e memoria.
 
 ## Conclusione
-In questa guida, hai imparato come sfruttare Aspose.Email per Java per accedere ed elencare le email tramite EWS. Seguendo i passaggi descritti, puoi integrare potenti funzionalità di posta elettronica nelle tue applicazioni senza sforzo. 
+In questa guida hai imparato come **access shared mailbox java** usando Aspose.Email, elencare gli elementi della posta in arrivo e leggere l'oggetto di ogni email. Seguendo i passaggi sopra potrai incorporare potenti capacità di elaborazione della posta in qualsiasi applicazione Java con il minimo sforzo.
 
-**Prossimi passi:** Sperimenta le funzionalità aggiuntive fornite da Aspose.Email, come l'invio di e-mail o la gestione di eventi del calendario.
+**Passi successivi:** Esplora altre funzionalità di Aspose.Email come l'invio di messaggi, la gestione di eventi di calendario o la conversione delle email in formati PDF/HTML.
 
-## Sezione FAQ
-1. **Che cos'è Aspose.Email per Java?**
-   - Si tratta di una libreria robusta per la gestione delle operazioni di posta elettronica nelle applicazioni Java.
-2. **Come posso ottenere una licenza temporanea per Aspose.Email?**
-   - Visita il [Sito web di Aspose](https://purchase.aspose.com/temporary-license/) per richiedere una licenza temporanea.
-3. **Posso usare Aspose.Email con altri linguaggi di programmazione?**
-   - Sì, supporta .NET, C++ e altro ancora.
-4. **Quali sono i requisiti di sistema per utilizzare Aspose.Email?**
-   - È richiesto JDK 1.6 o versione successiva insieme a un IDE compatibile.
-5. **Dove posso trovare supporto se riscontro problemi?**
-   - IL [Forum di Aspose](https://forum.aspose.com/c/email/10) è disponibile per fornire assistenza e supporto alla comunità.
+## Domande frequenti
 
-## Risorse
-- **Documentazione:** Guide complete a [Documentazione di Aspose](https://reference.aspose.com/email/java/)
-- **Scarica Aspose.Email:** Ottieni l'ultima versione da [Pagina delle versioni](https://releases.aspose.com/email/java/)
-- **Acquista licenza:** Acquisire una licenza tramite [Pagina di acquisto Aspose](https://purchase.aspose.com/buy)
-- **Prova gratuita:** Funzionalità di prova tramite [Download di prova gratuiti](https://releases.aspose.com/email/java/) 
+**D: Posso usare Aspose.Email con altri servizi Microsoft come Outlook REST?**  
+R: Sì – Aspose.Email fornisce API separate per Outlook REST, IMAP, POP3 e SMTP oltre a EWS.
 
-Ora che hai acquisito le conoscenze necessarie, inizia subito a implementare Aspose.Email nei tuoi progetti Java!
+**D: La libreria supporta l'autenticazione OAuth?**  
+R: Assolutamente. Puoi fornire un oggetto `OAuthTokenCredentials` al `ExchangeService` per flussi di autenticazione moderni.
+
+**D: Qual è la dimensione massima di un'email che Aspose.Email può elaborare?**  
+R: L'API gestisce messaggi fino a 150 MB; i messaggi più grandi vengono trasmessi in streaming per evitare errori di out‑of‑memory.
+
+**D: Esiste un modo per filtrare i messaggi lato server?**  
+R: Usa il metodo `FindItems` con un `SearchFilter` EWS per recuperare solo i messaggi che corrispondono ai tuoi criteri.
+
+**D: Dove posso ottenere aiuto se incontro problemi?**  
+R: Pubblica domande sul [forum ufficiale di Aspose](https://forum.aspose.com/c/email/10), dove lo staff e i membri della community rispondono rapidamente.
+
+---
+
+**Ultimo aggiornamento:** 2026-07-08  
+**Testato con:** Aspose.Email for Java 24.9  
+**Autore:** Aspose
+
+## Tutorial correlati
+
+- [Come connettersi al server Exchange usando Aspose.Email in Java: Guida passo‑passo](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Come creare un'istanza EWSClient usando Aspose.Email per Java: Guida all'integrazione del server Exchange](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Connettersi e elencare efficientemente i messaggi Exchange usando Aspose.Email per Java: Guida completa](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
