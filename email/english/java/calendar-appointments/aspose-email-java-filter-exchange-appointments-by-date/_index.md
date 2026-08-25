@@ -62,7 +62,7 @@ tags:
 - Java calendar
 - EWS appointments
 - filter appointments
-title: Use Aspose.Email for Java to Build an Exchange Query that Filters Appointments by Date
+title: Filter Exchange Server appointments by date using a query
 url: /java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/
 weight: 1
 ---
@@ -151,7 +151,7 @@ The `IEWSClient` class is the primary entry point for interacting with Exchange 
 
 ## Filtering appointments by date (Exchange query date range)
 
-The core feature of this tutorial is filtering appointments between specific dates. Here's how you can achieve that:
+The core feature of this tutorial is filtering appointments between specific dates. Here’s how you can achieve that:
 
 ### Step 1: configure date formats
 
