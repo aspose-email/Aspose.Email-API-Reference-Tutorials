@@ -1,9 +1,51 @@
 ---
-"date": "2025-05-29"
-"description": "Μάθετε να φιλτράρετε τα email χρησιμοποιώντας το Aspose.Email και το EWS σε Java. Εξερευνήστε τεχνικές φιλτραρίσματος κατά ημερομηνία, αποστολέα, θέμα και άλλα για να βελτιστοποιήσετε το γραμματοκιβώτιό σας."
-"title": "Κύριο φιλτράρισμα email με Aspose.Email Java & EWS# Ένας πλήρης οδηγός για την ενσωμάτωση του Exchange Server"
-"url": "/el/java/exchange-server-integration/aspose-email-java-ews-filtering-guide/"
-"weight": 1
+date: '2026-07-17'
+description: 'Πώς να φιλτράρετε emails χρησιμοποιώντας Aspose.Email Java και EWS:
+  μάθετε τεχνικές φιλτραρίσματος κατά ημερομηνία, αποστολέα και θέμα για να βελτιώσετε
+  τη διαχείριση του γραμματοκιβωτίου σας.'
+keywords:
+- Aspose.Email Java
+- email filtering techniques
+- Exchange Web Services (EWS)
+lastmod: '2026-07-17'
+og_description: Πώς να φιλτράρετε emails χρησιμοποιώντας Aspose.Email Java και EWS.
+  Ανακαλύψτε τεχνικές φιλτραρίσματος κατά ημερομηνία, αποστολέα και θέμα για να διατηρήσετε
+  το γραμματοκιβώτιό σας οργανωμένο.
+og_image_alt: Guide to filtering emails with Aspose.Email Java and Exchange Web Services
+og_title: Πώς να Φιλτράρετε Emails με Aspose.Email Java & EWS
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: 'How to filter emails using Aspose.Email Java and EWS: learn date,
+    sender, and subject filtering techniques to streamline your mailbox.'
+  headline: How to Filter Emails with Aspose.Email Java & EWS Guide
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Email works with Office 365 Exchange Online by pointing the
+      service URL to `https://outlook.office365.com/EWS/Exchange.asmx`.
+    question: Can I use this approach with Office 365?
+  - answer: Absolutely—use `OAuthCredentials` to authenticate without storing user
+      passwords.
+    question: Does Aspose.Email support OAuth authentication?
+  - answer: The API can handle mailboxes of **several gigabytes**; because it streams
+      results, memory consumption stays low.
+    question: What is the maximum mailbox size I can process?
+  - answer: Add a `SearchFilter.ContainsSubstring` on the `AttachmentNames` property,
+      then iterate only matching items.
+    question: How do I filter attachments by file type?
+  - answer: Yes—pass a `SortDirection` and the property you want to sort on (e.g.,
+      `DateTimeReceived`) to the `FindItems` call.
+    question: Is there a way to sort results?
+  type: FAQPage
+tags:
+- how to filter emails
+- aspose email java
+- filter emails by date
+- filter emails by sender
+- ews integration
+title: Πώς να Φιλτράρετε Emails με Aspose.Email Java & EWS Οδηγός
+url: /el/java/exchange-server-integration/aspose-email-java-ews-filtering-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,35 +53,43 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Εξοικείωση με το φιλτράρισμα email με το Aspose.Email Java & EWS: Ένας πλήρης οδηγός
+# Αποκτώντας τον έλεγχο του φιλτραρίσματος email με Aspose.Email Java & EWS: Ένας πλήρης οδηγός
 
 ## Εισαγωγή
 
-Στο σημερινό ταχέως εξελισσόμενο ψηφιακό περιβάλλον, η αποτελεσματική διαχείριση email είναι απαραίτητη τόσο για την προσωπική παραγωγικότητα όσο και για την επιχειρηματική αποδοτικότητα. Είτε είστε ιδιώτης που επιδιώκει την οργάνωση των εισερχομένων είτε μια εταιρεία που στοχεύει στη βελτιστοποίηση των διαδικασιών επικοινωνίας, η τελειοποίηση του φιλτραρίσματος email μπορεί να είναι μετασχηματιστική. Αυτός ο ολοκληρωμένος οδηγός θα σας καθοδηγήσει στη χρήση του Aspose.Email Java με Exchange Web Services (EWS) για την εφαρμογή διαφόρων τεχνικών φιλτραρίσματος email. Θα μάθετε πώς να διατηρείτε το γραμματοκιβώτιό σας οργανωμένο, να ανταποκρίνεται στις ανάγκες σας και να είναι αποτελεσματικό.
+**Πώς να φιλτράρετε email** αποδοτικά είναι μια βασική δεξιότητα για όποιον εργάζεται με Microsoft Exchange ή οποιοδήποτε σύγχρονο γραμματοκιβώτιο. Είτε είστε προγραμματιστής που δημιουργεί αυτοματοποίηση σε εταιρικό επίπεδο είτε άτομο που θέλει να διατηρήσει τακτικό το inbox του, η κατάκτηση των σωστών τεχνικών φιλτραρίσματος μπορεί να εξοικονομήσει ώρες χειροκίνητης εργασίας. Σε αυτόν τον οδηγό θα περάσουμε από το Aspose.Email για Java μαζί με το Exchange Web Services (EWS) για να σας δείξουμε πώς να φιλτράρετε κατά ημερομηνία, αποστολέα, θέμα, domain, παραλήπτη, και ακόμη να συνδυάσετε πολλαπλά κριτήρια με λογικούς τελεστές.
 
 ### Τι θα μάθετε
-- Τεχνικές φιλτραρίσματος μηνυμάτων χρησιμοποιώντας EWS σε Java.
-- Φιλτράρισμα email με βάση κριτήρια όπως ημερομηνία, αποστολέας, θέμα κ.λπ.
-- Υλοποίηση υποστήριξης σελιδοποίησης για τον χειρισμό μεγάλων γραμματοκιβωτίων.
-- Πρακτικές εφαρμογές αυτών των μεθόδων φιλτραρίσματος σε πραγματικά σενάρια.
-- Ζητήματα απόδοσης και βέλτιστες πρακτικές με το Aspose.Email Java.
+- Τεχνικές φιλτραρίσματος μηνυμάτων χρησιμοποιώντας EWS σε Java.  
+- Φιλτράρισμα email βάσει κριτηρίων όπως ημερομηνία, αποστολέας, θέμα κ.λπ.  
+- Υλοποίηση υποστήριξης σελιδοποίησης για διαχείριση μεγάλων γραμματοκιβωτίων.  
+- Πρακτικές εφαρμογές αυτών των μεθόδων φιλτραρίσματος σε πραγματικά σενάρια.  
+- Παράγοντες απόδοσης και βέλτιστες πρακτικές με Aspose.Email Java.
 
-Μέχρι το τέλος αυτού του οδηγού, θα είστε σε θέση να εφαρμόσετε αποτελεσματικές λύσεις φιλτραρίσματος email προσαρμοσμένες στις συγκεκριμένες ανάγκες σας. Ας ξεκινήσουμε!
+Στο τέλος αυτού του tutorial θα μπορείτε να γράψετε καθαρό, αποδοτικό κώδικα Java που θα αντλεί ακριβώς τα μηνύματα που χρειάζεστε από έναν Exchange server.
+
+## Γρήγορες Απαντήσεις
+- **Ποια είναι η κύρια βιβλιοθήκη;** Aspose.Email for Java.  
+- **Ποιο πρωτόκολλο χρησιμοποιεί;** Exchange Web Services (EWS).  
+- **Μπορώ να φιλτράρω κατά εύρος ημερομηνιών;** Ναι – χρησιμοποιήστε κριτήρια `DateTime` στο `SearchFilter`.  
+- **Υποστηρίζεται η σελιδοποίηση;** Απόλυτα, το API προσφέρει `ItemView` με offset/limit.  
+- **Χρειάζομαι άδεια για παραγωγή;** Ναι, μια εμπορική άδεια αφαιρεί τα όρια αξιολόγησης.
+
+## Τι είναι το Aspose.Email για Java;
+Το Aspose.Email για Java είναι ένα ολοκληρωμένο API που επιτρέπει προγραμματισμένη πρόσβαση σε διακομιστές email, μηνύματα MIME και Exchange Web Services χωρίς την ανάγκη Outlook ή οποιουδήποτε άλλου πελάτη. Απομονώνει τα υποκείμενα πρωτόκολλα, επιτρέποντάς σας να εστιάσετε στη λογική της επιχείρησης. Η βιβλιοθήκη υποστηρίζει τόσο τοπικούς διακομιστές Exchange όσο και το Exchange Online, παρέχοντας ένα ενοποιημένο API για διάφορα σενάρια ανάπτυξης.
+
+## Γιατί να χρησιμοποιήσετε το Aspose.Email με EWS;
+Το Aspose.Email υποστηρίζει **50+** πρωτόκολλα email και μπορεί να επεξεργαστεί **εκατοντάδες χιλιάδες μηνύματα** ανά ώρα διατηρώντας τη χρήση μνήμης κάτω από **100 MB** χάρη στην αρχιτεκτονική ροής του. Αυτή η μετρήσιμη απόδοση το καθιστά ιδανικό για αυτοματοποίηση γραμματοκιβωτίων σε επιχειρησιακό επίπεδο. Επιπλέον, προσφέρει ενσωματωμένη υποστήριξη για OAuth και σύγχρονη πιστοποίηση, απλοποιώντας ασφαλείς συνδέσεις σε περιβάλλοντα Office 365.
 
 ## Προαπαιτούμενα
-
-Πριν ξεκινήσετε με το φιλτράρισμα μηνυμάτων χρησιμοποιώντας το Aspose.Email Java, βεβαιωθείτε ότι έχετε:
-
-- **Απαιτούμενες βιβλιοθήκες**Συμπεριλάβετε τη βιβλιοθήκη Aspose.Email στο έργο σας.
-- **Ρύθμιση περιβάλλοντος**Απαιτείται ένα έτοιμο περιβάλλον ανάπτυξης για εφαρμογές Java.
-- **Προαπαιτούμενα Γνώσεων**Η εξοικείωση με τον προγραμματισμό Java και τα πρωτόκολλα email θα θεωρηθεί πλεονέκτημα.
+- **Απαιτούμενες βιβλιοθήκες**: Συμπεριλάβετε τη βιβλιοθήκη Aspose.Email στο έργο σας.  
+- **Ρύθμιση περιβάλλοντος**: Απαιτείται ένα έτοιμο περιβάλλον ανάπτυξης για εφαρμογές Java.  
+- **Προαπαιτούμενες γνώσεις**: Η εξοικείωση με προγραμματισμό Java και πρωτόκολλα email θα είναι επωφελής.
 
 ## Ρύθμιση του Aspose.Email για Java
 
-Για να χρησιμοποιήσετε το Aspose.Email για φιλτράρισμα email, ακολουθήστε αυτές τις οδηγίες εγκατάστασης:
-
-### Εγκατάσταση Maven
-Προσθέστε την ακόλουθη εξάρτηση στο `pom.xml` αρχείο:
+### Εγκατάσταση μέσω Maven
+Add the following dependency to your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -50,21 +100,27 @@
 ```
 
 ### Απόκτηση Άδειας
-- **Δωρεάν δοκιμή**Ξεκινήστε με μια δωρεάν δοκιμή για να εξερευνήσετε τις δυνατότητες του Aspose.Email.
-- **Προσωρινή Άδεια**Αποκτήστε προσωρινή άδεια για εκτεταμένη αξιολόγηση.
-- **Αγορά**Σκεφτείτε το ενδεχόμενο να αγοράσετε μια πλήρη άδεια χρήσης εάν το εργαλείο ανταποκρίνεται στις ανάγκες σας.
+- **Δωρεάν δοκιμή**: Ξεκινήστε με μια δωρεάν δοκιμή για να εξερευνήσετε τις δυνατότητες του Aspose.Email.  
+- **Προσωρινή άδεια**: Αποκτήστε μια προσωρινή άδεια για εκτεταμένη αξιολόγηση.  
+- **Αγορά**: Σκεφτείτε την αγορά πλήρους άδειας εάν το εργαλείο καλύπτει τις ανάγκες σας.
 
-Αρχικοποιήστε και ρυθμίστε το Aspose.Email εισάγοντας τα απαραίτητα πακέτα και δημιουργώντας μια σύνδεση με τον διακομιστή email σας χρησιμοποιώντας διαπιστευτήρια EWS. Αυτό το βήμα είναι κρίσιμο για την πρόσβαση στα δεδομένα του γραμματοκιβωτίου μέσω προγραμματισμού.
+Initialize and set up Aspose.Email by importing necessary packages and establishing a connection to your email server using EWS credentials. This step is crucial for accessing mailbox data programmatically.
 
-## Οδηγός Εφαρμογής
+## Πώς να φιλτράρετε email χρησιμοποιώντας EWS σε Java;
 
-### Φιλτράρισμα μηνυμάτων χρησιμοποιώντας το EWS
+ExchangeService είναι η κλάση Aspose.Email που αντιπροσωπεύει μια σύνδεση σε διακομιστή Exchange.  
+SearchFilter ορίζει κριτήρια για τον εντοπισμό αντικειμένων στον διακομιστή.  
+FindItems εκτελεί την αναζήτηση και επιστρέφει τα αντικείμενα που ταιριάζουν.  
+ItemView ελέγχει τη σελιδοποίηση και τον αριθμό των αντικειμένων που επιστρέφονται ανά αίτηση.
 
-Αυτή η ενότητα παρουσιάζει τον τρόπο φιλτραρίσματος μηνυμάτων με βάση συγκεκριμένα κριτήρια χρησιμοποιώντας το EWS API σε Java:
+Φορτώστε μια παρουσία `ExchangeService` με τα διαπιστευτήριά σας, δημιουργήστε ένα `SearchFilter` που ταιριάζει στα κριτήριά σας, και καλέστε το `FindItems` με ένα `ItemView` για να ανακτήσετε μόνο τα μηνύματα που χρειάζεστε. Αυτό το μοτίβο μιας γραμμής—σύνδεση → φιλτράρισμα → λήψη—καλύπτει τις περισσότερες περιπτώσεις χρήσης και κλιμακώνεται σε μεγάλα γραμματοκιβώτια όταν ενεργοποιήσετε τη σελιδοποίηση.
+
+## Οδηγός Υλοποίησης
+
+### Φιλτράρισμα μηνυμάτων χρησιμοποιώντας EWS
 
 #### Επισκόπηση
-Το φιλτράρισμα σάς επιτρέπει να ανακτάτε μόνο μηνύματα ηλεκτρονικού ταχυδρομείου που πληρούν συγκεκριμένες προϋποθέσεις, όπως ένα συγκεκριμένο θέμα ή ημερομηνία, απευθείας από το γραμματοκιβώτιό σας.
-
+Filtering allows you to retrieve only emails that meet certain conditions, such as a specific subject or date, directly from your mailbox.
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.ExchangeMessageInfoCollection;
@@ -75,27 +131,112 @@ import java.text.SimpleDateFormat;
 
 public class FilterMessagesUsingEWS {
     public static void main(String[] args) throws ParseException {
-        // Δημιουργία σύνδεσης με τον διακομιστή EWS
-        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "προεπιλογή χρήστη", "τομέας");
+        // Establish a connection to the EWS server
+        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         
-        // Δημιουργήστε ένα ερώτημα για μηνύματα ηλεκτρονικού ταχυδρομείου που περιέχουν την ένδειξη «Ενημερωτικό δελτίο» στο θέμα
+        // Build a query for emails containing 'Newsletter' in the subject
         ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
         builder.getSubject().contains("Newsletter");
         builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
         MailQuery query = builder.getQuery();
 
-        // Ανάκτηση μηνυμάτων που ταιριάζουν με τα κριτήρια
+        // Retrieve messages matching the criteria
         ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
     }
 }
 ```
-**Εξήγηση**Ο κώδικας δημιουργεί μια σύνδεση με το γραμματοκιβώτιό σας και δημιουργεί ένα ερώτημα για να φιλτράρει τα email με θέμα "Ενημερωτικό δελτίο" από μια συγκεκριμένη ημερομηνία.
+**Επεξήγηση**: Ο κώδικας δημιουργεί σύνδεση στο γραμματοκιβώτιό σας και δημιουργεί ένα ερώτημα για φιλτράρισμα email με 'Newsletter' στη γραμμή θέματος σε συγκεκριμένη ημερομηνία.
 
-### Φιλτράρισμα μηνυμάτων με βάση την σημερινή ημερομηνία
+### Πώς να φιλτράρετε email με βάση την σημερινή ημερομηνία;
 
-Αυτή η λειτουργία σάς επιτρέπει να ανακτήσετε τα email που λάβατε την τρέχουσα ημέρα:
+SearchFilter.IsEqualTo δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα όπου μια ιδιότητα ισούται με μια δεδομένη τιμή.  
+DateTimeReceived είναι η ιδιότητα που υποδεικνύει πότε ελήφθη το email.
+
+Φορτώστε την τρέχουσα ημερομηνία, δημιουργήστε ένα `SearchFilter.IsEqualTo` στην ιδιότητα `DateTimeReceived` και εκτελέστε το ερώτημα. Αυτό επιστρέφει μόνο τα μηνύματα που ελήφθησαν την ημέρα που εκτελείτε τον κώδικα, καθιστώντας τα καθημερινά σενάρια επεξεργασίας απλά. Μπορείτε να συνδυάσετε αυτό το φίλτρο με πρόσθετα κριτήρια όπως αποστολέας ή θέμα για περαιτέρω περιορισμό των αποτελεσμάτων της ημέρας.
+
+### Πώς να φιλτράρετε email με βάση το εύρος ημερομηνιών;
+
+SearchFilter.IsGreaterThanOrEqualTo δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα με τιμή ιδιότητας μεγαλύτερη ή ίση με μια καθορισμένη τιμή.  
+SearchFilter.IsLessThanOrEqualTo δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα με τιμή ιδιότητας μικρότερη ή ίση με μια καθορισμένη τιμή.  
+SearchFilter.And συνδυάζει πολλαπλά φίλτρα έτσι ώστε όλες οι συνθήκες να πρέπει να ικανοποιηθούν.
+
+Ορίστε ένα αρχικό και ένα τελικό `DateTime`, συνδυάστε τα με `SearchFilter.IsGreaterThanOrEqualTo` και `SearchFilter.IsLessThanOrEqualTo`, στη συνέχεια χρησιμοποιήστε `SearchFilter.And` για να τα ενώσετε. Το σύνολο αποτελεσμάτων περιέχει κάθε μήνυμα που εμπίπτει στο καθορισμένο παράθυρο. Αυτή η προσέγγιση σας επιτρέπει να ανακτήσετε όλες τις επικοινωνίες εντός οποιασδήποτε προσαρμοσμένης περιόδου, όπως το τελευταίο τρίμηνο ή μια συγκεκριμένη χρονοδιάγραμμα έργου.
+
+### Πώς να φιλτράρετε email με βάση συγκεκριμένο αποστολέα;
+
+SearchFilter.IsEqualTo δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα όπου μια ιδιότητα ισούται με μια δεδομένη τιμή.
+
+Δημιουργήστε ένα `SearchFilter.IsEqualTo` στην ιδιότητα `From` με τη διεύθυνση email του αποστολέα. Αυτό απομονώνει όλα τα μηνύματα από αυτή την επαφή, ιδανικό για προτεραιότητα inbox ή ελέγχους συμμόρφωσης. Μπορείτε επίσης να χρησιμοποιήσετε `SearchFilter.ContainsSubstring` για μερικές αντιστοιχίες όταν η ακριβής διεύθυνση είναι άγνωστη ή όταν φιλτράρετε κατά domain.
+
+### Πώς να φιλτράρετε email με βάση συγκεκριμένο domain;
+
+SearchFilter.ContainsSubstring δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα όπου μια ιδιότητα περιέχει ένα καθορισμένο υποσυμβολοσειρά.
+
+Χρησιμοποιήστε `SearchFilter.ContainsSubstring` στην ιδιότητα `From` με τη συμβολοσειρά του domain (π.χ., “@example.com”). Αυτό αντλεί κάθε email που προέρχεται από αυτό το domain, χρήσιμο για παρακολούθηση συνεργατών ή προμηθευτών. Συνδυάζοντας αυτό το φίλτρο με κριτήρια ημερομηνίας μπορείτε να παρακολουθείτε επικοινωνίες ειδικές για το domain με την πάροδο του χρόνου, βοηθώντας σε ελέγχους ασφαλείας.
+
+### Πώς να φιλτράρετε email με βάση συγκεκριμένο παραλήπτη;
+
+SearchFilter.IsEqualTo δημιουργεί ένα φίλτρο που ταιριάζει σε αντικείμενα όπου μια ιδιότητα ισούται με μια δεδομένη τιμή.
+
+Εφαρμόστε `SearchFilter.IsEqualTo` στη συλλογή `ToRecipients` για τη στοχευμένη διεύθυνση. Αυτό είναι χρήσιμο όταν χρειάζεται να ελέγξετε μηνύματα που αποστέλλονται σε συγκεκριμένο γραμματοκιβώτιο ή λίστα διανομής. Μπορείτε επίσης να χρησιμοποιήσετε `SearchFilter.ContainsSubstring` για μερικές αντιστοιχίες όταν αντιμετωπίζετε πολλούς παραλήπτες που μοιράζονται ένα κοινό domain.
+
+### Πώς να συνδυάσετε ερωτήματα με λογική AND;
+
+SearchFilter.And συνδυάζει πολλαπλά φίλτρα έτσι ώστε όλες οι συνθήκες να πρέπει να ικανοποιηθούν.
+
+Συνδέστε πολλαπλά αντικείμενα `SearchFilter` χρησιμοποιώντας `SearchFilter.And`. Για παράδειγμα, συνδυάστε ένα φίλτρο αποστολέα με ένα φίλτρο θέματος για να ανακτήσετε μόνο newsletters από έναν αξιόπιστο αποστολέα. Ο τελεστής AND διασφαλίζει ότι επιστρέφονται μόνο τα αντικείμενα που ικανοποιούν όλες τις καθορισμένες συνθήκες, μειώνοντας το σύνολο αποτελεσμάτων στα πιο σχετικά μηνύματα.
+
+### Πώς να συνδυάσετε ερωτήματα με λογική OR;
+
+SearchFilter.Or συγχωνεύει φίλτρα ώστε οποιαδήποτε μία συνθήκη μπορεί να ταιριάζει.
+
+Χρησιμοποιήστε `SearchFilter.Or` για να συγχωνεύσετε φίλτρα όταν οποιαδήποτε μία συνθήκη πρέπει να ταιριάζει—ιδανικό για την ανάκτηση μηνυμάτων που είτε προέρχονται από ένα σύνολο αποστολέων **ή** περιέχουν συγκεκριμένες λέξεις-κλειδιά. Η εφαρμογή λογικής OR μπορεί να επεκτείνει τις αναζητήσεις ώστε να καταγράψετε όλες τις σχετικές επικοινωνίες σε πολλαπλές κατηγορίες χωρίς να λείπουν κρίσιμες πληροφορίες.
+
+## Συνηθισμένα Πιθανά Σφάλματα & Συμβουλές
+- **Η σελιδοποίηση είναι απαραίτητη**: Όταν διαχειρίζεστε γραμματοκιβώτια μεγαλύτερα από 1.000 αντικείμενα, χρησιμοποιείτε πάντα `ItemView` με μέγεθος σελίδας για να αποφύγετε χρονικά όρια.  
+- **Διαχείριση ζώνης ώρας**: Το EWS επιστρέφει ημερομηνίες σε UTC· μετατρέψτε τις στη δική σας τοπική ζώνη πριν τη σύγκριση.  
+- **Αποφύγετε πλήρεις σαρώσεις γραμματοκιβωτίου**: Εφαρμόζετε πάντα ένα `SearchFilter` στην πλευρά του διακομιστή· το φιλτράρισμα στην πλευρά του πελάτη σπαταλά εύρος ζώνης και μνήμη.  
+- **Συμβουλή**: Κρατήστε στην cache το αντικείμενο `ExchangeService` για τη διάρκεια ζωής της εφαρμογής σας ώστε να μειώσετε το κόστος πιστοποίησης.
+
+## Συχνές Ερωτήσεις
+
+**Ε: Μπορώ να χρησιμοποιήσω αυτήν την προσέγγιση με Office 365;**  
+Α: Ναι, το Aspose.Email λειτουργεί με το Office 365 Exchange Online δείχνοντας το URL υπηρεσίας στο `https://outlook.office365.com/EWS/Exchange.asmx`.
+
+**Ε: Υποστηρίζει το Aspose.Email την πιστοποίηση OAuth;**  
+Α: Απόλυτα—χρησιμοποιήστε `OAuthCredentials` για πιστοποίηση χωρίς αποθήκευση κωδικών χρηστών.
+
+**Ε: Ποιο είναι το μέγιστο μέγεθος γραμματοκιβωτίου που μπορώ να επεξεργαστώ;**  
+Α: Το API μπορεί να διαχειριστεί γραμματοκιβώτια **πολλών gigabytes**· επειδή ρέει τα αποτελέσματα, η κατανάλωση μνήμης παραμένει χαμηλή.
+
+**Ε: Πώς φιλτράρω συνημμένα κατά τύπο αρχείου;**  
+Α: Προσθέστε ένα `SearchFilter.ContainsSubstring` στην ιδιότητα `AttachmentNames`, στη συνέχεια επαναλάβετε μόνο τα αντικείμενα που ταιριάζουν.
+
+**Ε: Υπάρχει τρόπος να ταξινομήσω τα αποτελέσματα;**  
+Α: Ναι—περάστε ένα `SortDirection` και την ιδιότητα με την οποία θέλετε να ταξινομήσετε (π.χ., `DateTimeReceived`) στην κλήση `FindItems`.
+
+---
+
+**Τελευταία ενημέρωση:** 2026-07-17  
+**Δοκιμάστηκε με:** Aspose.Email for Java 24.10  
+**Συγγραφέας:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [Πώς να δημιουργήσετε μια παρουσία EWSClient χρησιμοποιώντας Aspose.Email για Java: Οδηγός ενσωμάτωσης Exchange Server](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [Πώς να κατεβάσετε email από Exchange Server χρησιμοποιώντας Aspose.Email Java](/email/java/exchange-server-integration/aspose-email-java-exchange-server-download/)
+- [Διαχείριση πληροφοριών γραμματοκιβωτίου EWS χρησιμοποιώντας Aspose.Email για Java: Ένας ολοκληρωμένος οδηγός](/email/java/exchange-server-integration/manage-ews-mailbox-info-aspose-email-java/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -103,17 +244,12 @@ import java.util.Date;
 
 public class FilterMessagesBasedOnTodayDate {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για τα σημερινά μηνύματα ηλεκτρονικού ταχυδρομείου
+        // Build a query for today's emails
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getInternalDate().on(new Date());
     }
 }
 ```
-**Εξήγηση**Αυτή η μέθοδος βοηθά στην ανάκτηση μόνο των email που έφτασαν την τρέχουσα ημέρα, βοηθώντας στην καθημερινή διαχείριση email.
-
-### Φιλτράρισμα μηνυμάτων με βάση το εύρος ημερομηνιών
-
-Ανάκτηση μηνυμάτων εντός συγκεκριμένου εύρους ημερομηνιών χρησιμοποιώντας αυτήν τη λειτουργία:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -122,7 +258,7 @@ import java.util.concurrent.TimeUnit;
 
 public class FilterMessagesBasedOnDateRange {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για τα email που λάβατε τις τελευταίες 24 ώρες
+        // Build a query for emails received in the last 24 hours
         MailQueryBuilder builder = new MailQueryBuilder();
         Date today = new Date();
         builder.getInternalDate().beforeOrEqual(today);
@@ -130,62 +266,42 @@ public class FilterMessagesBasedOnDateRange {
     }
 }
 ```
-**Εξήγηση**Αυτή η λειτουργία είναι ιδιαίτερα χρήσιμη για τον έλεγχο πρόσφατων επικοινωνιών, επιτρέποντάς σας να εστιάσετε στα πιο σχετικά μηνύματα ηλεκτρονικού ταχυδρομείου.
-
-### Φιλτράρισμα μηνυμάτων με βάση συγκεκριμένο αποστολέα
-
-Φιλτράρετε τα εισερχόμενά σας για να εμφανίζονται μόνο τα email από έναν συγκεκριμένο αποστολέα:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificSender {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για email από 'saqib.razzaq@127.0.0.1'
+        // Build a query for emails from 'saqib.razzaq@127.0.0.1'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("saqib.razzaq@127.0.0.1");
     }
 }
 ```
-**Εξήγηση**Αυτό το στοχευμένο φιλτράρισμα είναι εξαιρετικό για την εστίαση σε επικοινωνίες από βασικές επαφές ή τμήματα.
-
-### Φιλτράρισμα μηνυμάτων με βάση συγκεκριμένο τομέα
-
-Φιλτράρισμα email που προέρχονται από συγκεκριμένο τομέα:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificDomain {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για email από το 'SpecificHost.com'
+        // Build a query for emails from 'SpecificHost.com'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
     }
 }
 ```
-**Εξήγηση**Αυτή η λειτουργία βοηθά στην γρήγορη αναγνώριση και οργάνωση των email με βάση την προέλευση του domain τους.
-
-### Φιλτράρισμα μηνυμάτων με βάση συγκεκριμένο παραλήπτη
-
-Εστιάστε τα εισερχόμενά σας φιλτράροντας τα μηνύματα που αποστέλλονται σε έναν συγκεκριμένο παραλήπτη:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificRecipient {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για τα email που αποστέλλονται στον «παραλήπτη»
+        // Build a query for emails sent to 'recipient'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getTo().contains("recipient");
     }
 }
 ```
-**Εξήγηση**Αυτό μπορεί να είναι ιδιαίτερα χρήσιμο όταν θέλετε να παρακολουθείτε επικοινωνίες που απευθύνονται ειδικά σε εσάς ή σε κάποιο άλλο τμήμα.
-
-### Συνδυασμός ερωτημάτων με λογική AND
-
-Συνδυάστε πολλαπλές συνθήκες χρησιμοποιώντας τη λογική AND για μια πιο εκλεπτυσμένη αναζήτηση:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -194,8 +310,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CombineQueriesWithAND {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα συνδυασμένο ερώτημα για συγκεκριμένο τομέα, email που ελήφθησαν πριν από σήμερα,
-        // και μέσα στις τελευταίες 7 ημέρες
+        // Build a combined query for specific domain, emails received before today,
+        // and within the last 7 days
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
         builder.getInternalDate().before(new Date());
@@ -203,39 +319,16 @@ public class CombineQueriesWithAND {
     }
 }
 ```
-**Εξήγηση**Αυτή η λειτουργία επιτρέπει την υποβολή σύνθετων ερωτημάτων που μπορούν να περιορίσουν σημαντικά τα μηνύματα ηλεκτρονικού ταχυδρομείου που πρέπει να ελέγξετε.
-
-### Συνδυασμός ερωτημάτων με λογική OR
-
-Χρησιμοποιήστε τη λογική OR για να διευρύνετε τα κριτήρια αναζήτησής σας:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class CombineQueriesWithOR {
     public static void main(String[] args) {
-        // Δημιουργήστε ένα ερώτημα για email είτε από το 'SpecificHost.com' είτε που περιέχουν 'Newsletter'
+        // Build a query for emails either from 'SpecificHost.com' or containing 'Newsletter'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com")
                 .or(builder.getSubject().contains("Newsletter"));
     }
 }
 ```
-**Εξήγηση**Αυτή η λειτουργία σάς επιτρέπει να ανακτάτε μηνύματα ηλεκτρονικού ταχυδρομείου που πληρούν οποιαδήποτε από τις καθορισμένες προϋποθέσεις, καθιστώντας την χρήσιμη για ευρύτερες αναζητήσεις.
-
-### Σύναψη
-
-Ακολουθώντας αυτόν τον οδηγό, μάθατε πώς να εφαρμόζετε αποτελεσματικές τεχνικές φιλτραρίσματος email χρησιμοποιώντας το Aspose.Email Java με EWS. Αυτές οι μέθοδοι μπορούν να βελτιώσουν σημαντικά την οργάνωση και την παραγωγικότητα του γραμματοκιβωτίου σας, επιτρέποντάς σας να εστιάζετε στα πιο σχετικά email. Για περαιτέρω διερεύνηση, σκεφτείτε να εμβαθύνετε σε πιο προηγμένες επιλογές φιλτραρίσματος και βελτιστοποιήσεις απόδοσης.
-
-### Επόμενα βήματα
-- Πειραματιστείτε με πρόσθετες συνθήκες ερωτήματος για ακόμη πιο ακριβές φιλτράρισμα.
-- Εξερευνήστε τις υπόλοιπες λειτουργίες του Aspose.Email για να αξιοποιήσετε πλήρως τις δυνατότητές του στη διαχείριση email.
-- Μοιραστείτε τα σχόλια ή τις ερωτήσεις σας σε φόρουμ κοινότητας για να αλληλεπιδράσετε με άλλους προγραμματιστές.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

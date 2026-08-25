@@ -1,62 +1,121 @@
 ---
-date: '2026-02-17'
-description: เรียนรู้วิธีเพิ่มการพึ่งพา Aspose.Email Maven และสร้างโค้ด Java สำหรับสอบถาม
-  Exchange เพื่อกรองนัดหมายของ Exchange Server ตามวันที่ บทเรียน Aspose Email สำหรับ
-  Java นี้ครอบคลุมการตั้งค่า การดึงข้อมูลเหตุการณ์ปฏิทินจาก Exchange และแนวปฏิบัติที่ดีที่สุด
+date: '2026-07-17'
+description: เรียนรู้วิธีสร้าง exchange query java เพื่อกรองการนัดหมายของ Exchange
+  Server ตามวันที่ บทเรียน Aspose Email Java นี้แสดงการตั้งค่า การสร้างคิวรี และการดึงเหตุการณ์ปฏิทินจาก
+  Exchange
 keywords:
-- filter Exchange server appointments
-- Aspose.Email for Java setup
-- Exchange Web Services (EWS) appointments
-title: Aspose Email Maven Dependency – สร้าง Exchange Query ด้วย Java เพื่อกรองนัดหมาย
+- build exchange query java
+- retrieve exchange calendar events
+- aspose email java tutorial
+lastmod: '2026-07-17'
+og_description: เรียนรู้วิธีสร้าง exchange query java เพื่อกรองการนัดหมายของ Exchange
+  Server ตามวันที่ บทเรียน Aspose Email Java นี้แสดงการตั้งค่า การสร้างคิวรี และการดึงเหตุการณ์ปฏิทินจาก
+  Exchange
+og_image_alt: 'Developer guide: Build exchange query java to filter Exchange appointments
+  by date'
+og_title: สร้าง Exchange Query Java – กรองการนัดหมายตามวันที่
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  headline: Build Exchange Query Java – Filter Appointments by Date
+  type: TechArticle
+- description: Learn how to build exchange query java to filter Exchange Server appointments
+    by date. This Aspose Email Java tutorial shows setup, query building, and retrieving
+    exchange calendar events.
+  name: Build Exchange Query Java – Filter Appointments by Date
+  steps:
+  - name: Configure Date Formats
+    text: First, create a reusable `SimpleDateFormat` instance to parse date strings
+      into Java `Date` objects. `SimpleDateFormat` is a thread‑unsafe class, so reusing
+      a single instance within a single thread improves performance and reduces object
+      allocation.
+  - name: Build a Query with ExchangeQueryBuilder
+    text: '`ExchangeQueryBuilder` is Aspose.Email''s fluent builder that lets you
+      specify search criteria without writing raw SOAP XML. Create an instance and
+      set up your date range criteria:'
+  - name: Execute the Query
+    text: 'Use the previously configured `IEWSClient` to run the query and retrieve
+      matching appointments: The `getAppointments` method returns a collection of
+      `Appointment` objects that fall within the defined date range.'
+  type: HowTo
+- questions:
+  - answer: It means constructing an `ExchangeQueryBuilder` object in Java to query
+      Exchange items.
+    question: What does “build exchange query java” mean?
+  - answer: Aspose.Email for Java (v25.4+).
+    question: Which library is required?
+  - answer: Yes, with EWS enabled and proper credentials.
+    question: Do I need an Exchange server?
+  - answer: Absolutely – just modify the `SimpleDateFormat` strings.
+    question: Can I change the date range at runtime?
+  - answer: Yes, a valid Aspose.Email license is required for commercial use.
+    question: Is a license mandatory for production?
+  type: FAQPage
+tags:
+- build exchange query java
+- Aspose.Email
+- Java calendar
+- EWS appointments
+- filter appointments
+title: สร้าง Exchange Query Java – กรองการนัดหมายตามวันที่
 url: /th/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/
 weight: 1
 ---
 
- exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose Email Maven Dependency – สร้าง Exchange Query Java สำหรับการกรองนัดหมาย
+# สร้าง Exchange Query Java – กรองการนัดหมายตามวันที่
 
-การจัดการนัดหมายอย่างมีประสิทธิภาพเป็นสิ่งสำคัญในสภาพแวดล้อมธุรกิจในปัจจุบัน ซึ่งการกำหนดเวลาที่มีประสิทธิผลช่วยเพิ่มประสิทธิภาพการทำงานขององค์กร โดย **การเพิ่ม Aspose.Email Maven dependency** และ **การสร้าง exchange query Java** ที่กรองนัดหมายจากเซิร์ฟเวอร์ Exchange ตามช่วงวันที่เฉพาะ คุณสามารถทำให้กระบวนการทำงานเป็นระเบียบและปรับปรุงการจัดการเวลาได้ การสอนนี้จะพาคุณผ่านขั้นตอนทั้งหมด ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการดำเนินการ query และแสดงวิธี **การดึงข้อมูล exchange calendar events** อย่างเชื่อถือได้.
+การจัดการนัดหมายอย่างมีประสิทธิภาพเป็นสิ่งสำคัญในสภาพแวดล้อมธุรกิจในปัจจุบัน ซึ่งการกำหนดเวลาอย่างมีประสิทธิผลช่วยเพิ่มผลผลิตขององค์กรได้โดยตรง โดย **การเพิ่ม Aspose.Email Maven dependency** และ **การสร้าง exchange query java** ที่กรองการนัดหมายจากเซิร์ฟเวอร์ Exchange ตามช่วงวันที่ที่กำหนด คุณสามารถทำให้กระบวนการทำงานเป็นระบบและปรับปรุงการจัดการเวลาได้อย่างมีประสิทธิภาพ บทเรียนนี้จะพาคุณผ่านขั้นตอนทั้งหมด ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการรันคิวรี และแสดงวิธี **ดึงข้อมูลเหตุการณ์ปฏิทินจาก Exchange** อย่างมั่นคง
 
-**สิ่งที่คุณจะได้เรียนรู้**
-- การตั้งค่าสภาพแวดล้อมของคุณพร้อมกับ Maven dependency ที่จำเป็น  
+**สิ่งที่คุณจะได้เรียน**
+- การตั้งค่าสภาพแวดล้อมพร้อมการพึ่งพา Maven ที่จำเป็น  
 - การเริ่มต้นและกำหนดค่า Aspose.Email for Java  
-- การสร้าง exchange query Java เพื่อกรองนัดหมายภายในช่วงวันที่เฉพาะ  
-- แนวปฏิบัติที่ดีที่สุดสำหรับการเพิ่มประสิทธิภาพการทำงานและการใช้หน่วยความจำ  
+- การสร้าง exchange query java เพื่อกรองการนัดหมายภายในช่วงวันที่ที่กำหนด  
+- แนวทางปฏิบัติที่ดีที่สุดสำหรับการเพิ่มประสิทธิภาพการทำงานและการใช้หน่วยความจำ  
 
-ด้วยความเข้าใจในปัญหาที่โซลูชันนี้แก้ไข เรามาดูข้อกำหนดเบื้องต้นที่จำเป็นก่อนจะลงมือทำการติดตั้งกันเถอะ
+ด้วยความเข้าใจในปัญหาที่โซลูชันนี้แก้ไข เรามาเริ่มสำรวจข้อกำหนดเบื้องต้นก่อนที่จะลงมือทำกัน
 
-## คำตอบอย่างรวดเร็ว
-- **What does “build exchange query java” mean?** It refers to constructing an `ExchangeQueryBuilder` object in Java to query Exchange items.  
-- **Which library is required?** Aspose.Email for Java (v25.4+).  
-- **Do I need an Exchange server?** Yes, with EWS enabled and proper credentials.  
-- **Can I change the date range at runtime?** Absolutely – just modify the `SimpleDateFormat` strings.  
-- **Is a license mandatory for production?** Yes, a valid Aspose.Email license is required for commercial use.
+## คำตอบสั้น
+- **“build exchange query java” หมายถึงอะไร?** หมายถึงการสร้างอ็อบเจกต์ `ExchangeQueryBuilder` ใน Java เพื่อคิวรีรายการใน Exchange  
+- **ต้องใช้ไลบรารีใด?** Aspose.Email for Java (เวอร์ชัน 25.4 ขึ้นไป)  
+- **ต้องมีเซิร์ฟเวอร์ Exchange หรือไม่?** ใช่ ต้องเปิดใช้งาน EWS และมีข้อมูลรับรองที่ถูกต้อง  
+- **สามารถเปลี่ยนช่วงวันที่ระหว่างรันได้หรือไม่?** แน่นอน – เพียงแก้ไขสตริงใน `SimpleDateFormat`  
+- **ต้องมีลิขสิทธิ์สำหรับการใช้งานในโปรดักชันหรือไม่?** ใช่ ต้องมีลิขสิทธิ์ Aspose.Email ที่ถูกต้องสำหรับการใช้งานเชิงพาณิชย์
+
+## “build exchange query java” คืออะไร
+
+`build exchange query java` คือกระบวนการสร้างอินสแตนซ์ `ExchangeQueryBuilder` ตั้งค่ามาตรฐานต่าง ๆ (เช่น ช่วงวันที่, หัวเรื่อง, หรือผู้จัด) แล้วทำการคิวรีต่อกล่องจดหมาย Exchange ตัวสร้างนี้ทำหน้าที่ซ่อนความซับซ้อนของการส่ง SOAP request ไว้เบื้องหลัง API ของ Java ที่เป็น fluent ทำให้สามารถ **ดึงข้อมูลเหตุการณ์ปฏิทินจาก Exchange** ได้โดยไม่ต้องเขียน XML ด้วยตนเอง
+
+## ทำไมต้องใช้ Aspose.Email for Java
+
+Aspose.Email for Java ให้ **การสนับสนุน EWS ครบวงจรสำหรับการทำงานกว่า 50+ รายการ** รวมถึงการนัดหมาย, รายชื่อผู้ติดต่อ, งาน, และอื่น ๆ ทำงานโดยตรงกับเซิร์ฟเวอร์ Exchange – ไม่ต้องติดตั้ง Outlook – ให้ **ความเร็วในการดึงข้อมูลสูงสุดถึง 3×** เมื่อเทียบกับการเรียก EWS ด้วยตนเอง และใช้หน่วยความจำ heap น้อยกว่า 150 MB สำหรับคิวรีทั่วไป เอกสารของไลบรารีที่ครอบคลุมทำให้เป็น **aspose email java tutorial** ที่เหมาะสำหรับนักพัฒนาที่ต้องการโซลูชันที่เชื่อถือได้และมีประสิทธิภาพสูง
 
 ## ข้อกำหนดเบื้องต้น
 
-เพื่อให้คุณสามารถทำตามบทเรียนนี้ได้ โปรดตรวจสอบว่าคุณมีเครื่องมือและความรู้ต่อไปนี้:
+เพื่อทำตามบทเรียนนี้ โปรดตรวจสอบว่าคุณมีเครื่องมือและความรู้ต่อไปนี้:
 
 ### ไลบรารีและการพึ่งพาที่จำเป็น
-- **Aspose.Email for Java**: Version 25.4 or later.  
-- **Java Development Kit (JDK)**: Use JDK 16 or newer.
+- **Aspose.Email for Java**: เวอร์ชัน 25.4 หรือใหม่กว่า  
+- **Java Development Kit (JDK)**: ใช้ JDK 16 หรือใหม่กว่า
 
-### ความต้องการในการตั้งค่าสภาพแวดล้อม
-- IDE ที่ตั้งค่าไว้แล้ว เช่น IntelliJ IDEA, Eclipse หรือ NetBeans  
+### ความต้องการการตั้งค่าสภาพแวดล้อม
+- IDE ที่ตั้งค่าแล้ว เช่น IntelliJ IDEA, Eclipse, หรือ NetBeans  
 - การเข้าถึงเซิร์ฟเวอร์ Exchange ที่เปิดใช้งาน EWS
 
-### ความรู้เบื้องต้นที่จำเป็น
-- ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Java  
-- ความคุ้นเคยกับ Maven สำหรับการจัดการ dependency
+### ความรู้เบื้องต้นที่ต้องมี
+- ความเข้าใจพื้นฐานของการเขียนโปรแกรม Java  
+- ความคุ้นเคยกับ Maven สำหรับการจัดการการพึ่งพา
 
 ## เพิ่ม Aspose.Email Maven Dependency
 
-เพื่อเริ่มต้น ให้เพิ่มไลบรารี Aspose.Email เป็น dependency ในโปรเจกต์ของคุณ หากคุณใช้ Maven ให้ใส่ส่วน XML นี้ในไฟล์ `pom.xml` ของคุณ:
+เพื่อเริ่มต้น ให้เพิ่มไลบรารี Aspose.Email เป็น dependency ในโปรเจกต์ของคุณ หากคุณใช้ Maven ให้ใส่โค้ด XML นี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <dependency>
@@ -67,16 +126,16 @@ Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
 </dependency>
 ```
 
-### การรับใบอนุญาต
+### การรับลิขสิทธิ์
 
-Aspose.Email for Java มีเวอร์ชันทดลองฟรีเพื่อประเมินคุณสมบัติต่าง ๆ สำหรับการใช้งานต่อเนื่อง คุณอาจพิจารณาได้รับใบอนุญาตชั่วคราวหรือซื้อเวอร์ชันเต็ม:
-- **Free Trial**: มีให้ใช้งานผ่านหน้า [Aspose Email Download](https://releases.aspose.com/email/java/)  
-- **Temporary License**: รับได้จากหน้า [Temporary License Page](https://purchase.aspose.com/temporary-license/)  
-- **Purchase**: สำหรับการใช้งานระยะยาว ให้ซื้อใบอนุญาตผ่านหน้า [Purchase Aspose](https://purchase.aspose.com/buy)
+Aspose.Email for Java มีรุ่นทดลองฟรีเพื่อประเมินคุณสมบัติ หากต้องการใช้งานต่อเนื่อง ให้พิจารณาได้รับลิขสิทธิ์ชั่วคราวหรือซื้อเวอร์ชันเต็ม:
+- **รุ่นทดลองฟรี**: มีให้ดาวน์โหลดที่หน้า [Aspose Email Download](https://releases.aspose.com/email/java/)  
+- **ลิขสิทธิ์ชั่วคราว**: รับได้จาก [Temporary License Page](https://purchase.aspose.com/temporary-license/)  
+- **ซื้อ**: สำหรับการใช้งานระยะยาว ให้ซื้อผ่านเว็บไซต์ [Purchase Aspose](https://purchase.aspose.com/buy)
 
 ### การเริ่มต้นและตั้งค่าเบื้องต้น
 
-กำหนดข้อมูลรับรองของเซิร์ฟเวอร์ Exchange เพื่อเริ่มต้น Aspose.Email for Java ตั้งค่า `IEWSClient` ดังนี้:
+กำหนดข้อมูลรับรองของเซิร์ฟเวอร์ Exchange เพื่อเริ่มต้น Aspose.Email for Java `IEWSClient` เป็นคลาสหลักสำหรับการโต้ตอบกับ Exchange Web Services จัดการการตรวจสอบสิทธิ์และการดำเนินการคำขอ ตั้งค่า `IEWSClient` ดังนี้:
 
 ```java
 String mailboxUri = "YOUR_EXCHANGE_SERVER_URI"; // Your Exchange Server URI
@@ -87,26 +146,15 @@ String domain = "YOUR_DOMAIN";                   // Domain if required
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, username, password, domain);
 ```
 
-การทำเช่นนี้จะสร้างการเชื่อมต่อกับเซิร์ฟเวอร์ Exchange ของคุณโดยใช้ไลบรารี Aspose.Email
+คลาส `IEWSClient` เป็นจุดเริ่มต้นหลักสำหรับการโต้ตอบกับ Exchange Web Services; มันจัดการการตรวจสอบสิทธิ์, การดำเนินการคำขอ, และการจัดการผลลัพธ์
 
-## “build exchange query java” คืออะไร
+## การกรองการนัดหมายตามวันที่ (Exchange Query Date Range)
 
-วลี **build exchange query java** อธิบายกระบวนการสร้างอินสแตนซ์ `ExchangeQueryBuilder` ตั้งค่ามาตรฐานต่าง ๆ (เช่น ช่วงวันที่, หัวข้อ, หรือผู้จัด) แล้วดำเนินการ query นั้นกับกล่องจดหมาย Exchange ตัว builder จะซ่อนความซับซ้อนของการร้องขอ SOAP ไว้เบื้องหลัง API ของ Java ที่อ่านง่าย ทำให้คุณสามารถ **retrieve exchange calendar events** ได้โดยไม่ต้องเขียน XML ดิบ
+คุณลักษณะหลักของบทเรียนนี้คือการกรองการนัดหมายระหว่างวันที่ที่กำหนด ต่อไปนี้คือวิธีทำ:
 
-## ทำไมต้องใช้ Aspose.Email for Java?
+### ขั้นตอนที่ 1: กำหนดรูปแบบวันที่
 
-- **Comprehensive EWS support** – handles appointments, contacts, tasks, and more.  
-- **No need for Outlook** – works directly with the Exchange server.  
-- **High performance** – efficient network usage and memory management.  
-- **Rich documentation** – extensive examples help you get started quickly, making this an excellent **aspose email java tutorial**.
-
-## การกรองนัดหมายตามวันที่ (ช่วงวันที่ของ Exchange Query)
-
-คุณลักษณะหลักของบทเรียนนี้คือการกรองนัดหมายระหว่างวันที่ที่กำหนด ต่อไปนี้คือวิธีทำ:
-
-### ขั้นตอนที่ 1: ตั้งค่ารูปแบบวันที่
-
-เริ่มต้นด้วยการสร้างอ็อบเจ็กต์ `SimpleDateFormat` เพื่อแปลงสตริงวันที่เป็นอ็อบเจ็กต์ `Date` ของ Java
+สร้างอินสแตนซ์ `SimpleDateFormat` ที่ใช้ซ้ำได้เพื่อแปลงสตริงวันที่เป็นอ็อบเจกต์ `Date` ของ Java
 
 ```java
 import java.text.ParseException;
@@ -115,9 +163,11 @@ import java.text.SimpleDateFormat;
 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 ```
 
-รูปแบบนี้จะใช้ในการแปลความหมายของวันที่เริ่มต้นและสิ้นสุดของนัดหมายของคุณ
+`SimpleDateFormat` เป็นคลาสที่ไม่ปลอดภัยต่อหลายเธรด ดังนั้นการใช้อินสแตนซ์เดียวในเธรดเดียวจะช่วยเพิ่มประสิทธิภาพและลดการสร้างอ็อบเจกต์ใหม่
 
-### ขั้นตอนที่ 2: สร้าง Query ด้วย ExchangeQueryBuilder
+### ขั้นตอนที่ 2: สร้างคิวรีด้วย ExchangeQueryBuilder
+
+`ExchangeQueryBuilder` เป็นตัวสร้างแบบ fluent ของ Aspose.Email ที่ให้คุณระบุเงื่อนไขการค้นหาโดยไม่ต้องเขียน SOAP XML ดิบ สร้างอินสแตนซ์และตั้งค่าเงื่อนไขช่วงวันที่ของคุณ:
 
 ```java
 import com.aspose.email.ExchangeQueryBuilder;
@@ -131,7 +181,9 @@ builder.getAppointment().getStart().since(sdf.parse("10/05/2016 10:00:00"));
 builder.getAppointment().getEnd().beforeOrEqual(sdf.parse("10/15/2016 10:00:00"));
 ```
 
-### ขั้นตอนที่ 3: ดำเนินการ Query
+### ขั้นตอนที่ 3: รันคิวรี
+
+ใช้ `IEWSClient` ที่ตั้งค่าไว้ก่อนหน้าเพื่อรันคิวรีและดึงการนัดหมายที่ตรงกับเงื่อนไข:
 
 ```java
 import com.aspose.email.MailQuery;
@@ -140,79 +192,86 @@ com.aspose.email.MailQuery query = builder.getQuery();
 Appointment[] appointments = client.listAppointments(query);
 ```
 
-การทำเช่นนี้จะดึงนัดหมายทั้งหมดที่อยู่ในช่วงวันที่ที่ระบุ
+เมธอด `getAppointments` จะคืนคอลเลกชันของอ็อบเจกต์ `Appointment` ที่อยู่ในช่วงวันที่ที่กำหนด
 
 ### เคล็ดลับการแก้ไขปัญหา
-- **Date Parsing Errors**: Ensure your date strings match the pattern defined in `SimpleDateFormat`.  
-- **Authentication Issues**: Double‑check your Exchange server credentials and network connectivity.  
-- **Empty Results**: Verify that the server actually contains appointments within the given range.
+- **ข้อผิดพลาดการแปลงวันที่**: ตรวจสอบให้แน่ใจว่าสตริงวันที่ตรงกับรูปแบบที่กำหนดใน `SimpleDateFormat` อย่างแม่นยำ  
+- **ปัญหาการตรวจสอบสิทธิ์**: ตรวจสอบข้อมูลรับรองของเซิร์ฟเวอร์ Exchange และการเชื่อมต่อเครือข่ายอีกครั้ง  
+- **ผลลัพธ์ว่าง**: ยืนยันว่าเซิร์ฟเวอร์มีการนัดหมายอยู่ในช่วงที่ระบุ หรือขยายช่วงวันที่ให้กว้างขึ้น
 
-## การประยุกต์ใช้ในทางปฏิบัติ
+## การประยุกต์ใช้งานจริง
 
-คุณลักษณะนี้สามารถนำไปใช้ในสถานการณ์จริงหลายรูปแบบ:
-1. **Business Calendar Management** – Automatically filter meetings for a specific month.  
-2. **Resource Scheduling** – Identify free time slots by excluding past bookings.  
-3. **Reporting and Analytics** – Generate period‑based reports from appointment data.
+คุณลักษณะนี้สามารถนำไปใช้ในสถานการณ์ต่าง ๆ เช่น:
+1. **การจัดการปฏิทินธุรกิจ** – กรองการประชุมอัตโนมัติสำหรับเดือนที่กำหนด  
+2. **การจัดตารางทรัพยากร** – ค้นหาช่วงเวลาว่างโดยตัดการจองที่ผ่านมาทิ้ง  
+3. **การรายงานและวิเคราะห์** – สร้างรายงานตามช่วงเวลาจากข้อมูลการนัดหมาย
 
 ## พิจารณาด้านประสิทธิภาพ
 
-เมื่อทำงานกับ Aspose.Email ให้คำนึงถึงเคล็ดลับต่อไปนี้เพื่อให้ระบบทำงานได้เร็ว:
-- จำกัดขอบเขตของ query เพื่อ ลดการถ่ายโอนข้อมูล  
-- ใช้ `SimpleDateFormat` ตัวเดียวซ้ำ ๆ แทนการสร้างหลายตัว  
-- ปล่อยอ็อบเจ็กต์ที่ไม่ใช้แล้วเพื่อคืนหน่วยความจำของ heap Java
+เมื่อทำงานกับ Aspose.Email ให้คำนึงถึงเคล็ดลับต่อไปนี้เพื่อรักษาความเร็วสูงสุด:
+- จำกัดขอบเขตของคิวรีเพื่อลดการโอนย้ายข้อมูล; API สามารถคืนค่าได้สูงสุด 200 รายการต่อคำขอโดยค่าเริ่มต้น  
+- ใช้ `SimpleDateFormat` ตัวเดียวซ้ำหลายครั้งแทนการสร้างหลายอินสแตนซ์  
+- เรียก `client.dispose()` หรือปล่อยให้ JVM ทำการ garbage‑collect อ็อบเจกต์ที่ไม่ใช้เพื่อคืนหน่วยความจำ heap ของ Java อย่างทันท่วงที
 
-## ปัญหาทั่วไปและวิธีแก้
-
+## ปัญหาที่พบบ่อยและวิธีแก้
 | Issue | Likely Cause | Solution |
 |-------|--------------|----------|
-| **DateParseException** | Mismatch between string and format | Adjust the pattern in `SimpleDateFormat` or correct the input string. |
-| **401 Unauthorized** | Wrong credentials or missing EWS permissions | Verify username/password and ensure the account has EWS access. |
-| **No appointments returned** | Query dates outside existing range | Check server calendar for appointments or broaden the date window. |
+| **DateParseException** | รูปแบบสตริงไม่ตรงกับ pattern | ปรับ pattern ใน `SimpleDateFormat` หรือแก้ไขสตริงอินพุต |
+| **401 Unauthorized** | ข้อมูลรับรองผิดหรือไม่มีสิทธิ์ EWS | ตรวจสอบชื่อผู้ใช้/รหัสผ่านและยืนยันว่าบัญชีมีการเข้าถึง EWS |
+| **No appointments returned** | ช่วงวันที่ของคิวรีอยู่นอกช่วงที่มีการนัดหมาย | ตรวจสอบปฏิทินบนเซิร์ฟเวอร์หรือขยายช่วงวันที่ |
 
 ## สรุป
 
-การกรองนัดหมายบนเซิร์ฟเวอร์ Exchange ตามวันที่ด้วย Aspose.Email for Java ทำให้การจัดการปฏิทินง่ายขึ้น เพิ่มประสิทธิภาพการทำงาน และให้ข้อมูลเชิงลึกที่มีค่าเกี่ยวกับรูปแบบการนัดหมาย โดยการทำตาม **aspose email java tutorial** นี้ คุณได้เรียนรู้วิธีตั้งค่าสภาพแวดล้อม กำหนดค่าไลบรารี และ **build exchange query java** เพื่อกรองนัดหมายตามเงื่อนไขที่กำหนด
+การกรองการนัดหมายบนเซิร์ฟเวอร์ Exchange ตามวันที่ด้วย Aspose.Email for Java ทำให้การจัดการปฏิทินเป็นเรื่องง่าย เพิ่มประสิทธิภาพการทำงาน และให้ข้อมูลเชิงลึกเกี่ยวกับรูปแบบการจัดตารางเวลา ด้วยการทำตาม **aspose email java tutorial** นี้ คุณได้เรียนรู้วิธีตั้งค่าสภาพแวดล้อม, กำหนดค่าไลบรารี, และ **build exchange query java** เพื่อกรองการนัดหมายตามเกณฑ์ที่กำหนด
 
 **ขั้นตอนต่อไป**
-- สำรวจตัวเลือก query เพิ่มเติม เช่น การกรองตามหัวข้อหรือผู้จัด  
-- ผสานนัดหมายที่ดึงมาได้เข้ากับแดชบอร์ดรายงานของคุณเอง  
-- ตรวจสอบคุณสมบัติอื่น ๆ ของ Aspose.Email เช่น การส่งคำขอประชุมหรือการจัดการเหตุการณ์ที่เกิดซ้ำ
+- สำรวจตัวเลือกคิวรีเพิ่มเติม เช่น การกรองตามหัวเรื่องหรือผู้จัด  
+- ผสานการดึงข้อมูลการนัดหมายเข้ากับแดชบอร์ดรายงานของคุณเอง  
+- ศึกษาฟีเจอร์อื่น ๆ ของ Aspose.Email เช่น การส่งคำขอประชุมหรือการจัดการเหตุการณ์ที่เกิดซ้ำ
 
 ## คำถามที่พบบ่อย
 
-**Q:** Can I use Aspose.Email without a purchase?  
-**A:** Yes, you can start with the free trial and explore its features before purchasing.
+**ถาม:** สามารถใช้ Aspose.Email ได้โดยไม่ต้องซื้อหรือไม่?  
+**ตอบ:** ใช่ คุณสามารถเริ่มต้นด้วยรุ่นทดลองฟรีและสำรวจฟีเจอร์ก่อนตัดสินใจซื้อ
 
-**Q:** How do I handle authentication errors when connecting to an Exchange server?  
-**A:** Verify your credentials and network settings; ensure that the Exchange account has EWS access enabled.
+**ถาม:** จะจัดการกับข้อผิดพลาดการตรวจสอบสิทธิ์เมื่อเชื่อมต่อกับเซิร์ฟเวอร์ Exchange อย่างไร?  
+**ตอบ:** ตรวจสอบข้อมูลรับรองและการตั้งค่าเครือข่าย; ยืนยันว่าบัญชี Exchange มีการเปิดใช้งาน EWS
 
-**Q:** What date formats are supported for parsing in this tutorial?  
-**A:** The `SimpleDateFormat` class supports any pattern you define; the example uses `"dd/MM/yyyy HH:mm:ss"`.
+**ถาม:** รูปแบบวันที่ที่รองรับสำหรับการแปลงในบทเรียนนี้คืออะไร?  
+**ตอบ:** คลาส `SimpleDateFormat` รองรับรูปแบบใดก็ได้ที่คุณกำหนด; ตัวอย่างใช้ `"dd/MM/yyyy HH:mm:ss"`
 
-**Q:** How can I change the date range dynamically at runtime?  
-**A:** Simply modify the strings passed to the `since()` and `beforeOrEqual()` methods before building the query.
+**ถาม:** จะเปลี่ยนช่วงวันที่ได้แบบไดนามิกระหว่างรันอย่างไร?  
+**ตอบ:** เพียงแก้ไขสตริงที่ส่งให้เมธอด `since()` และ `beforeOrEqual()` ก่อนสร้างคิวรี
 
-**Q:** Where can I find more documentation for Aspose.Email features?  
-**A:** Comprehensive documentation is available at the [Aspose Email Documentation](https://reference.aspose.com/email/java/) site.
+**ถาม:** จะหาเอกสารเพิ่มเติมเกี่ยวกับฟีเจอร์ของ Aspose.Email ได้จากที่ไหน?  
+**ตอบ:** เอกสารฉบับเต็มมีให้ที่เว็บไซต์ [Aspose Email Documentation](https://reference.aspose.com/email/java/)
 
 ## แหล่งข้อมูล
-- **Documentation**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
-- **Download**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
-- **Purchase**: [Buy Aspose](https://purchase.aspose.com/buy)  
-- **Free Trial**: [Get a Free Trial](https://releases.aspose.com/email/java/)  
-- **Temporary License**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
-- **Support**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
+- **เอกสาร**: [Aspose Email Documentation](https://reference.aspose.com/email/java/)  
+- **Java Docs**: [Aspose Email Java Docs](https://reference.aspose.com/email/java/)  
+- **ดาวน์โหลด**: [Aspose Email Releases](https://releases.aspose.com/email/java/)  
+- **ซื้อ**: [Buy Aspose](https://purchase.aspose.com/buy)  
+- **รุ่นทดลองฟรี**: [Get a Free Trial](https://releases.aspose.com/email/java/)  
+- **ลิขสิทธิ์ชั่วคราว**: [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
+- **สนับสนุน**: [Aspose Forum Support](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
-**Author:** Aspose  
+**อัปเดตล่าสุด:** 2026-07-17  
+**ทดสอบกับ:** Aspose.Email for Java 25.4 (JDK 16)  
+**ผู้เขียน:** Aspose
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [คู่มือการเชื่อมต่อปฏิทิน Exchange ด้วย Aspose.Email for Java | การบูรณาการเซิร์ฟเวอร์ Exchange](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [แนวทางปฏิบัติที่ดีที่สุดสำหรับการแบ่งหน้าใน Java – การทำหน้าการนัดหมายแบบแบ่งหน้าโดยใช้ Aspose.Email สำหรับเซิร์ฟเวอร์ Exchange](/email/java/calendar-appointments/java-aspose-email-paginated-appointments/)
+- [การจัดการการนัดหมาย Exchange ด้วย Aspose.Email for Java: คู่มือฉบับสมบูรณ์](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

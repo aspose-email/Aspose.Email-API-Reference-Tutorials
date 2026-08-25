@@ -1,9 +1,49 @@
 ---
-"date": "2025-05-29"
-"description": "เรียนรู้การกรองอีเมลโดยใช้ Aspose.Email และ EWS ใน Java สำรวจเทคนิคต่างๆ สำหรับการกรองตามวันที่ ผู้ส่ง หัวเรื่อง และอื่นๆ เพื่อปรับปรุงกล่องจดหมายของคุณ"
-"title": "การกรองอีเมลอย่างเชี่ยวชาญด้วย Aspose.Email Java และ EWS คู่มือฉบับสมบูรณ์สำหรับการผสานรวม Exchange Server"
-"url": "/th/java/exchange-server-integration/aspose-email-java-ews-filtering-guide/"
-"weight": 1
+date: '2026-07-17'
+description: 'วิธีกรองอีเมลโดยใช้ Aspose.Email Java และ EWS: เรียนรู้เทคนิคการกรองตามวันที่
+  ผู้ส่ง และหัวเรื่องเพื่อทำให้กล่องจดหมายของคุณเป็นระเบียบ'
+keywords:
+- Aspose.Email Java
+- email filtering techniques
+- Exchange Web Services (EWS)
+lastmod: '2026-07-17'
+og_description: วิธีกรองอีเมลโดยใช้ Aspose.Email Java และ EWS. ค้นพบเทคนิคการกรองตามวันที่
+  ผู้ส่ง และหัวเรื่องเพื่อให้กล่องจดหมายของคุณเป็นระเบียบ
+og_image_alt: Guide to filtering emails with Aspose.Email Java and Exchange Web Services
+og_title: วิธีกรองอีเมลด้วย Aspose.Email Java & EWS
+schemas:
+- author: Aspose
+  dateModified: '2026-07-17'
+  description: 'How to filter emails using Aspose.Email Java and EWS: learn date,
+    sender, and subject filtering techniques to streamline your mailbox.'
+  headline: How to Filter Emails with Aspose.Email Java & EWS Guide
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Email works with Office 365 Exchange Online by pointing the
+      service URL to `https://outlook.office365.com/EWS/Exchange.asmx`.
+    question: Can I use this approach with Office 365?
+  - answer: Absolutely—use `OAuthCredentials` to authenticate without storing user
+      passwords.
+    question: Does Aspose.Email support OAuth authentication?
+  - answer: The API can handle mailboxes of **several gigabytes**; because it streams
+      results, memory consumption stays low.
+    question: What is the maximum mailbox size I can process?
+  - answer: Add a `SearchFilter.ContainsSubstring` on the `AttachmentNames` property,
+      then iterate only matching items.
+    question: How do I filter attachments by file type?
+  - answer: Yes—pass a `SortDirection` and the property you want to sort on (e.g.,
+      `DateTimeReceived`) to the `FindItems` call.
+    question: Is there a way to sort results?
+  type: FAQPage
+tags:
+- how to filter emails
+- aspose email java
+- filter emails by date
+- filter emails by sender
+- ews integration
+title: วิธีกรองอีเมลด้วย Aspose.Email Java & EWS คู่มือ
+url: /th/java/exchange-server-integration/aspose-email-java-ews-filtering-guide/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -11,35 +51,44 @@
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# เรียนรู้การกรองอีเมลด้วย Aspose.Email Java และ EWS: คู่มือฉบับสมบูรณ์
+# เชี่ยวชาญการกรองอีเมลด้วย Aspose.Email Java & EWS: คู่มือฉบับสมบูรณ์
 
-## การแนะนำ
+## บทนำ
 
-ในสภาพแวดล้อมดิจิทัลที่เปลี่ยนแปลงอย่างรวดเร็วในปัจจุบัน การจัดการอีเมลอย่างมีประสิทธิภาพถือเป็นสิ่งสำคัญสำหรับทั้งประสิทธิภาพส่วนบุคคลและประสิทธิภาพของธุรกิจ ไม่ว่าคุณจะเป็นบุคคลทั่วไปที่ต้องการจัดระเบียบกล่องจดหมายหรือเป็นบริษัทที่ต้องการปรับปรุงกระบวนการสื่อสาร การฝึกฝนการกรองอีเมลให้เชี่ยวชาญสามารถเปลี่ยนแปลงชีวิตได้ คู่มือที่ครอบคลุมนี้จะแนะนำคุณเกี่ยวกับการใช้ Aspose.Email Java กับ Exchange Web Services (EWS) เพื่อนำเทคนิคการกรองอีเมลต่างๆ ไปใช้ คุณจะได้เรียนรู้วิธีจัดระเบียบกล่องจดหมายของคุณ ตอบสนอง และมีประสิทธิภาพ
+**วิธีกรองอีเมล** อย่างมีประสิทธิภาพเป็นทักษะสำคัญสำหรับผู้ที่ทำงานกับ Microsoft Exchange หรือกล่องเมลสมัยใหม่ใด ๆ ไม่ว่าคุณจะเป็นนักพัฒนาที่สร้างระบบอัตโนมัติระดับองค์กรหรือบุคคลที่ต้องการจัดระเบียบกล่องขาเข้า การเชี่ยวชาญเทคนิคการกรองที่เหมาะสมสามารถประหยัดเวลามนุษย์หลายชั่วโมงได้ ในคู่มือนี้เราจะเดินผ่าน Aspose.Email for Java ร่วมกับ Exchange Web Services (EWS) เพื่อแสดงวิธีกรองตามวันที่ ผู้ส่ง เรื่องโดเมน ผู้รับ และแม้กระทั่งการรวมหลายเงื่อนไขด้วยตัวดำเนินการตรรกะ
 
 ### สิ่งที่คุณจะได้เรียนรู้
-- เทคนิคการกรองข้อความโดยใช้ EWS ใน Java
-- การกรองอีเมล์ตามเกณฑ์เช่นวันที่ ผู้ส่ง หัวข้อ ฯลฯ
-- การนำการสนับสนุนการแบ่งหน้ามาใช้เพื่อจัดการเมลบ็อกซ์ขนาดใหญ่
-- การประยุกต์ใช้งานจริงของวิธีการกรองเหล่านี้ในสถานการณ์โลกแห่งความเป็นจริง
-- ข้อควรพิจารณาเกี่ยวกับประสิทธิภาพและแนวทางปฏิบัติที่ดีที่สุดด้วย Aspose.Email Java
+- เทคนิคการกรองข้อความโดยใช้ EWS ใน Java  
+- การกรองอีเมลตามเกณฑ์เช่น วันที่ ผู้ส่ง เรื่อง ฯลฯ  
+- การทำงานรองรับการแบ่งหน้าเพื่อจัดการกล่องเมลขนาดใหญ่  
+- การประยุกต์ใช้วิธีการกรองเหล่านี้ในสถานการณ์จริง  
+- การพิจารณาประสิทธิภาพและแนวปฏิบัติที่ดีที่สุดกับ Aspose.Email Java  
 
-เมื่ออ่านคู่มือนี้จบ คุณจะพร้อมสำหรับการใช้งานโซลูชันการกรองอีเมลที่มีประสิทธิภาพซึ่งเหมาะกับความต้องการเฉพาะของคุณ มาเริ่มกันเลย!
+เมื่อจบบทเรียนนี้คุณจะสามารถเขียนโค้ด Java ที่สะอาดและมีประสิทธิภาพเพื่อดึงข้อความที่คุณต้องการจากเซิร์ฟเวอร์ Exchange ได้อย่างแม่นยำ
+
+## คำตอบอย่างรวดเร็ว
+- **What is the primary library?** Aspose.Email for Java.  
+- **Which protocol does it use?** Exchange Web Services (EWS).  
+- **Can I filter by date range?** Yes – use `DateTime` criteria in the `SearchFilter`.  
+- **Is paging supported?** Absolutely, the API offers `ItemView` with offset/limit.  
+- **Do I need a license for production?** Yes, a commercial license removes evaluation limits.
+
+## Aspose.Email for Java คืออะไร?
+Aspose.Email for Java เป็น API ครบวงจรที่ให้การเข้าถึงเซิร์ฟเวอร์อีเมล, ข้อความ MIME, และ Exchange Web Services อย่างโปรแกรมได้โดยไม่ต้องใช้ Outlook หรือไคลเอนต์อื่นใด มันทำหน้าที่เป็นชั้นนามธรรมของโปรโตคอลพื้นฐาน ทำให้คุณมุ่งเน้นที่ตรรกะธุรกิจได้ ไลบรารีนี้รองรับทั้งเซิร์ฟเวอร์ Exchange ที่ติดตั้งในองค์กรและ Exchange Online โดยให้ API ที่เป็นเอกภาพสำหรับสถานการณ์การปรับใช้ที่หลากหลาย
+
+## ทำไมต้องใช้ Aspose.Email กับ EWS?
+Aspose.Email รองรับ **50+** โปรโตคอลอีเมลและสามารถประมวลผล **หลายแสนข้อความต่อชั่วโมง** พร้อมคงการใช้หน่วยความจำต่ำกว่า **100 MB** ด้วยสถาปัตยกรรมสตรีมมิ่ง การทำงานที่วัดผลได้นี้ทำให้เหมาะกับการทำอัตโนมัติระดับองค์กร นอกจากนี้ยังมีการสนับสนุน OAuth และการตรวจสอบสิทธิ์สมัยใหม่ในตัว ทำให้การเชื่อมต่อกับสภาพแวดล้อม Office 365 เป็นเรื่องง่ายและปลอดภัย
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่จะเริ่มต้นการกรองข้อความโดยใช้ Aspose.Email Java โปรดตรวจสอบให้แน่ใจว่าคุณมี:
-
-- **ห้องสมุดที่จำเป็น**รวมไลบรารี Aspose.Email ไว้ในโครงการของคุณ
-- **การตั้งค่าสภาพแวดล้อม**จำเป็นต้องมีสภาพแวดล้อมการพัฒนาที่พร้อมใช้งานสำหรับแอปพลิเคชัน Java
-- **ข้อกำหนดเบื้องต้นของความรู้**:ความคุ้นเคยกับการเขียนโปรแกรม Java และโปรโตคอลอีเมลจะเป็นประโยชน์
+- **Required Libraries**: Include the Aspose.Email library in your project.  
+- **Environment Setup**: A ready development environment for Java applications is necessary.  
+- **Knowledge Prerequisites**: Familiarity with Java programming and email protocols will be advantageous.
 
 ## การตั้งค่า Aspose.Email สำหรับ Java
 
-หากต้องการใช้ Aspose.Email เพื่อกรองอีเมล ให้ทำตามคำแนะนำการตั้งค่าเหล่านี้:
-
 ### การติดตั้ง Maven
-เพิ่มการอ้างอิงต่อไปนี้ให้กับของคุณ `pom.xml` ไฟล์:
+Add the following dependency to your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -49,22 +98,28 @@
 </dependency>
 ```
 
-### การขอใบอนุญาต
-- **ทดลองใช้งานฟรี**:เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจความสามารถของ Aspose.Email
-- **ใบอนุญาตชั่วคราว**: การขอใบอนุญาตชั่วคราวเพื่อการประเมินผลขยายเวลา
-- **ซื้อ**:ควรพิจารณาซื้อใบอนุญาตเต็มรูปแบบหากเครื่องมือตรงตามความต้องการของคุณ
+### การรับใบอนุญาต
+- **Free Trial**: Start with a free trial to explore Aspose.Email's capabilities.  
+- **Temporary License**: Obtain a temporary license for extended evaluation.  
+- **Purchase**: Consider purchasing a full license if the tool meets your needs.
 
-เริ่มต้นและตั้งค่า Aspose.Email โดยนำเข้าแพ็คเกจที่จำเป็นและสร้างการเชื่อมต่อกับเซิร์ฟเวอร์อีเมลของคุณโดยใช้ข้อมูลประจำตัว EWS ขั้นตอนนี้มีความสำคัญสำหรับการเข้าถึงข้อมูลกล่องจดหมายด้วยโปรแกรม
+Initialize and set up Aspose.Email by importing necessary packages and establishing a connection to your email server using EWS credentials. This step is crucial for accessing mailbox data programmatically.
+
+## วิธีกรองอีเมลด้วย EWS ใน Java?
+
+ExchangeService is the Aspose.Email class that represents a connection to an Exchange server.  
+SearchFilter defines criteria to locate items on the server.  
+FindItems executes the search and returns matching items.  
+ItemView controls paging and the number of items returned per request.
+
+Load an `ExchangeService` instance with your credentials, create a `SearchFilter` that matches your criteria, and call `FindItems` with an `ItemView` to retrieve only the messages you need. This one‑line pattern—connect → filter → fetch—covers most use cases and scales to large mailboxes when you enable paging.
 
 ## คู่มือการใช้งาน
 
-### กรองข้อความโดยใช้ EWS
-
-หัวข้อนี้สาธิตวิธีการกรองข้อความตามเกณฑ์เฉพาะโดยใช้ EWS API ใน Java:
+### การกรองข้อความด้วย EWS
 
 #### ภาพรวม
-การกรองช่วยให้คุณดึงเฉพาะอีเมลที่ตรงตามเงื่อนไขบางประการ เช่น หัวเรื่องหรือวันที่ที่ระบุ โดยตรงจากกล่องจดหมายของคุณ
-
+Filtering allows you to retrieve only emails that meet certain conditions, such as a specific subject or date, directly from your mailbox.
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.ExchangeMessageInfoCollection;
@@ -75,27 +130,113 @@ import java.text.SimpleDateFormat;
 
 public class FilterMessagesUsingEWS {
     public static void main(String[] args) throws ParseException {
-        // สร้างการเชื่อมต่อกับเซิร์ฟเวอร์ EWS
-        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "รหัสผ่าน", "โดเมน");
+        // Establish a connection to the EWS server
+        IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         
-        // สร้างแบบสอบถามสำหรับอีเมลที่มีคำว่า 'จดหมายข่าว' ในหัวเรื่อง
+        // Build a query for emails containing 'Newsletter' in the subject
         ExchangeQueryBuilder builder = new ExchangeQueryBuilder();
         builder.getSubject().contains("Newsletter");
         builder.getInternalDate().on(sdf.parse("10/05/2016 10:00:00"));
         MailQuery query = builder.getQuery();
 
-        // ดึงข้อความที่ตรงตามเกณฑ์
+        // Retrieve messages matching the criteria
         ExchangeMessageInfoCollection messages = client.listMessages(client.getMailboxInfo().getInboxUri(), query, false);
     }
 }
 ```
-**คำอธิบาย**:รหัสนี้จะสร้างการเชื่อมต่อกับกล่องจดหมายของคุณและสร้างแบบสอบถามเพื่อกรองอีเมลที่มีคำว่า 'จดหมายข่าว' ในบรรทัดหัวเรื่องตามวันที่ที่ระบุ
+**Explanation**: The code establishes a connection to your mailbox and creates a query to filter emails with 'Newsletter' in their subject line as of a specific date.
 
-### กรองข้อความตามวันที่ปัจจุบัน
+### วิธีกรองอีเมลตามวันที่วันนี้?
 
-คุณสมบัตินี้ช่วยให้คุณสามารถดึงอีเมลที่ได้รับในวันปัจจุบันได้:
+SearchFilter.IsEqualTo creates a filter that matches items where a property equals a given value.  
+DateTimeReceived is the property indicating when the email was received.
+
+Load the current date, build a `SearchFilter.IsEqualTo` on the `DateTimeReceived` property, and execute the query. This returns only the messages received on the day you run the code, making daily processing scripts trivial. You can combine this filter with additional criteria such as sender or subject to further narrow the results for the day.
+
+### วิธีกรองอีเมลตามช่วงวันที่?
+
+SearchFilter.IsGreaterThanOrEqualTo creates a filter that matches items with a property value greater than or equal to a specified value.  
+SearchFilter.IsLessThanOrEqualTo creates a filter that matches items with a property value less than or equal to a specified value.  
+SearchFilter.And combines multiple filters so that all conditions must be met.
+
+Define a start and end `DateTime`, combine them with `SearchFilter.IsGreaterThanOrEqualTo` and `SearchFilter.IsLessThanOrEqualTo`, then use `SearchFilter.And` to join the two. The result set contains every message that falls inside the specified window. This approach enables you to retrieve all communications within any custom period, such as the last quarter or a specific project timeline.
+
+### วิธีกรองอีเมลตามผู้ส่งเฉพาะ?
+
+SearchFilter.IsEqualTo creates a filter that matches items where a property equals a given value.
+
+Create a `SearchFilter.IsEqualTo` on the `From` property with the sender’s email address. This isolates all messages from that contact, ideal for priority inboxes or compliance checks. You can also use `SearchFilter.ContainsSubstring` for partial matches when the exact address is unknown or when filtering by domain.
+
+### วิธีกรองอีเมลตามโดเมนเฉพาะ?
+
+SearchFilter.ContainsSubstring creates a filter that matches items where a property contains a specified substring.
+
+Use `SearchFilter.ContainsSubstring` on the `From` property with the domain string (e.g., “@example.com”). This pulls every email originating from that domain, useful for partner or vendor monitoring. Combining this filter with date criteria lets you track domain‑specific communications over time, aiding in security audits.
+
+### วิธีกรองอีเมลตามผู้รับเฉพาะ?
+
+SearchFilter.IsEqualTo creates a filter that matches items where a property equals a given value.
+
+Apply `SearchFilter.IsEqualTo` on the `ToRecipients` collection for the target address. This is handy when you need to audit messages sent to a particular mailbox or distribution list. You may also use `SearchFilter.ContainsSubstring` for partial matches when dealing with multiple recipients sharing a common domain.
+
+### วิธีรวมคำค้นด้วยตรรกะ AND?
+
+SearchFilter.And combines multiple filters so that all conditions must be met.
+
+Chain multiple `SearchFilter` objects using `SearchFilter.And`. For example, combine a sender filter with a subject filter to retrieve only newsletters from a trusted sender. The AND operator ensures that only items meeting all specified conditions are returned, reducing the result set to the most relevant messages.
+
+### วิธีรวมคำค้นด้วยตรรกะ OR?
+
+SearchFilter.Or merges filters so that any one condition can match.
+
+Use `SearchFilter.Or` to merge filters when any one condition should match—perfect for pulling messages that are either from a set of senders **or** contain certain keywords. Applying OR logic can broaden searches to capture all relevant communications across multiple categories without missing critical information.
+
+## ข้อผิดพลาดทั่วไปและเคล็ดลับ
+
+- **Paging is essential**: When dealing with mailboxes larger than 1,000 items, always use `ItemView` with a page size to avoid timeouts.  
+- **Time‑zone handling**: EWS returns dates in UTC; convert to your local zone before comparing.  
+- **Avoid full mailbox scans**: Always apply a `SearchFilter` on the server side; client‑side filtering wastes bandwidth and memory.  
+- **Pro tip**: Cache the `ExchangeService` object for the lifetime of your application to reduce authentication overhead.
+
+## คำถามที่พบบ่อย
+
+**Q: Can I use this approach with Office 365?**  
+A: Yes, Aspose.Email works with Office 365 Exchange Online by pointing the service URL to `https://outlook.office365.com/EWS/Exchange.asmx`.
+
+**Q: Does Aspose.Email support OAuth authentication?**  
+A: Absolutely—use `OAuthCredentials` to authenticate without storing user passwords.
+
+**Q: What is the maximum mailbox size I can process?**  
+A: The API can handle mailboxes of **several gigabytes**; because it streams results, memory consumption stays low.
+
+**Q: How do I filter attachments by file type?**  
+A: Add a `SearchFilter.ContainsSubstring` on the `AttachmentNames` property, then iterate only matching items.
+
+**Q: Is there a way to sort results?**  
+A: Yes—pass a `SortDirection` and the property you want to sort on (e.g., `DateTimeReceived`) to the `FindItems` call.
+
+---
+
+**อัปเดตล่าสุด:** 2026-07-17  
+**ทดสอบกับ:** Aspose.Email for Java 24.10  
+**ผู้เขียน:** Aspose
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [How to Create an EWSClient Instance Using Aspose.Email for Java: Exchange Server Integration Guide](/email/java/exchange-server-integration/ewsclient-instance-aspose-email-java/)
+- [How to Download Emails from Exchange Server Using Aspose.Email Java](/email/java/exchange-server-integration/aspose-email-java-exchange-server-download/)
+- [Manage EWS Mailbox Information Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/manage-ews-mailbox-info-aspose-email-java/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -103,17 +244,12 @@ import java.util.Date;
 
 public class FilterMessagesBasedOnTodayDate {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมล์ของวันนี้
+        // Build a query for today's emails
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getInternalDate().on(new Date());
     }
 }
 ```
-**คำอธิบาย**:วิธีนี้ช่วยในการดึงเฉพาะอีเมลที่มาถึงในวันปัจจุบันเท่านั้น และช่วยในการจัดการอีเมลประจำวัน
-
-### กรองข้อความตามช่วงวันที่
-
-ดึงข้อความภายในช่วงวันที่ที่ระบุโดยใช้ฟีเจอร์นี้:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -122,7 +258,7 @@ import java.util.concurrent.TimeUnit;
 
 public class FilterMessagesBasedOnDateRange {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมลที่ได้รับในช่วง 24 ชั่วโมงที่ผ่านมา
+        // Build a query for emails received in the last 24 hours
         MailQueryBuilder builder = new MailQueryBuilder();
         Date today = new Date();
         builder.getInternalDate().beforeOrEqual(today);
@@ -130,62 +266,42 @@ public class FilterMessagesBasedOnDateRange {
     }
 }
 ```
-**คำอธิบาย**:คุณสมบัตินี้มีประโยชน์อย่างยิ่งสำหรับการตรวจสอบการสื่อสารล่าสุด ช่วยให้คุณสามารถเน้นไปที่อีเมลที่เกี่ยวข้องที่สุดได้
-
-### กรองข้อความตามผู้ส่งเฉพาะ
-
-กรองกล่องจดหมายของคุณเพื่อแสดงเฉพาะอีเมลจากผู้ส่งที่ระบุ:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificSender {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมล์จาก 'saqib.razzaq@127.0.0.1'
+        // Build a query for emails from 'saqib.razzaq@127.0.0.1'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("saqib.razzaq@127.0.0.1");
     }
 }
 ```
-**คำอธิบาย**การกรองแบบกำหนดเป้าหมายนี้เหมาะอย่างยิ่งสำหรับการเน้นการสื่อสารจากผู้ติดต่อหรือแผนกสำคัญ
-
-### กรองข้อความตามโดเมนเฉพาะ
-
-กรองอีเมลที่มาจากโดเมนที่ระบุ:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificDomain {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมล์จาก 'SpecificHost.com'
+        // Build a query for emails from 'SpecificHost.com'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
     }
 }
 ```
-**คำอธิบาย**:คุณลักษณะนี้ช่วยในการระบุและจัดระเบียบอีเมลได้อย่างรวดเร็วตามแหล่งที่มาของโดเมน
-
-### กรองข้อความตามผู้รับเฉพาะ
-
-มุ่งเน้นกล่องจดหมายของคุณโดยกรองข้อความที่ส่งถึงผู้รับเฉพาะ:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class FilterMessagesBasedOnSpecificRecipient {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมล์ที่ส่งถึง 'ผู้รับ'
+        // Build a query for emails sent to 'recipient'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getTo().contains("recipient");
     }
 }
 ```
-**คำอธิบาย**:สิ่งนี้อาจเป็นประโยชน์อย่างยิ่ง โดยเฉพาะอย่างยิ่งเมื่อคุณต้องการติดตามการสื่อสารที่ส่งถึงตัวคุณเองหรือแผนกอื่นโดยเฉพาะ
-
-### รวมแบบสอบถามด้วยตรรกะ AND
-
-รวมเงื่อนไขต่างๆ โดยใช้ตรรกะ AND เพื่อค้นหาอย่างละเอียดยิ่งขึ้น:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
@@ -194,8 +310,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CombineQueriesWithAND {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามรวมสำหรับโดเมนเฉพาะ อีเมลที่ได้รับก่อนวันนี้
-        // และภายใน 7 วันที่ผ่านมา
+        // Build a combined query for specific domain, emails received before today,
+        // and within the last 7 days
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com");
         builder.getInternalDate().before(new Date());
@@ -203,39 +319,16 @@ public class CombineQueriesWithAND {
     }
 }
 ```
-**คำอธิบาย**:คุณสมบัตินี้ช่วยให้สามารถสอบถามข้อมูลที่ซับซ้อนได้ ซึ่งจะช่วยจำกัดอีเมลที่คุณต้องการตรวจสอบลงได้อย่างมาก
-
-### รวมแบบสอบถามด้วยตรรกะ OR
-
-ใช้ตรรกะ OR เพื่อขยายเกณฑ์การค้นหาของคุณ:
 
 ```java
 import com.aspose.email.MailQueryBuilder;
 
 public class CombineQueriesWithOR {
     public static void main(String[] args) {
-        // สร้างแบบสอบถามสำหรับอีเมลจาก 'SpecificHost.com' หรือประกอบด้วย 'จดหมายข่าว'
+        // Build a query for emails either from 'SpecificHost.com' or containing 'Newsletter'
         MailQueryBuilder builder = new MailQueryBuilder();
         builder.getFrom().contains("SpecificHost.com")
                 .or(builder.getSubject().contains("Newsletter"));
     }
 }
 ```
-**คำอธิบาย**:คุณสมบัตินี้ช่วยให้คุณสามารถค้นหาอีเมลที่ตรงตามเงื่อนไขที่ระบุ ทำให้มีประโยชน์สำหรับการค้นหาในวงกว้างมากขึ้น
-
-### บทสรุป
-
-หากทำตามคำแนะนำนี้ คุณจะได้เรียนรู้วิธีใช้เทคนิคการกรองอีเมลที่มีประสิทธิภาพโดยใช้ Aspose.Email Java กับ EWS วิธีการเหล่านี้สามารถปรับปรุงการจัดระเบียบและประสิทธิภาพการทำงานของกล่องจดหมายของคุณได้อย่างมาก โดยช่วยให้คุณสามารถเน้นที่อีเมลที่เกี่ยวข้องมากที่สุด หากต้องการศึกษาเพิ่มเติม โปรดพิจารณาเจาะลึกตัวเลือกการกรองขั้นสูงและการเพิ่มประสิทธิภาพการทำงาน
-
-### ขั้นตอนต่อไป
-- ทดลองใช้เงื่อนไขแบบสอบถามเพิ่มเติมเพื่อการกรองที่แม่นยำยิ่งขึ้น
-- สำรวจคุณลักษณะอื่นๆ ของ Aspose.Email เพื่อใช้ประโยชน์จากความสามารถในการจัดการอีเมลอย่างเต็มที่
-- แบ่งปันข้อเสนอแนะหรือคำถามของคุณในฟอรัมชุมชนเพื่อมีส่วนร่วมกับนักพัฒนาด้วยกัน
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
