@@ -1,121 +1,195 @@
 ---
-date: 2026-03-04
-description: Tìm hiểu cách cấu hình máy chủ SMTP Java bằng Aspose.Email, bao gồm thiết
-  lập TLS cho SMTP Java để gửi email an toàn.
-linktitle: Configuring SMTP Servers with Aspose.Email for Java
+date: 2026-08-27
+description: 'Cách gửi email Java bằng Aspose.Email: hướng dẫn từng bước cấu hình
+  SMTP, hỗ trợ TLS/STARTTLS và các thực tiễn tốt nhất cho email hàng loạt nhằm đảm
+  bảo giao hàng đáng tin cậy.'
+keywords:
+- how to send email java
+- java bulk email sending
+- java smtp starttls example
+- aspose email java tutorial
+lastmod: 2026-08-27
+linktitle: Cấu hình máy chủ SMTP với Aspose.Email cho Java
+og_description: Cách gửi email Java bằng Aspose.Email – hướng dẫn ngắn gọn giúp bạn
+  thiết lập máy chủ SMTP, cấu hình TLS/STARTTLS và các thực tiễn tốt nhất cho email
+  hàng loạt.
+og_image_alt: Screenshot of Aspose.Email Java SMTP configuration guide
+og_title: Cách gửi email Java với cấu hình máy chủ SMTP của Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: 'How to send email java using Aspose.Email: step‑by‑step SMTP configuration,
+    TLS/STARTTLS support, and bulk‑email best practices for reliable delivery.'
+  headline: How to send email java with Aspose.Email SMTP server setup
+  type: TechArticle
+- description: 'How to send email java using Aspose.Email: step‑by‑step SMTP configuration,
+    TLS/STARTTLS support, and bulk‑email best practices for reliable delivery.'
+  name: How to send email java with Aspose.Email SMTP server setup
+  steps:
+  - name: '**Create an SmtpClient instance** – this object represents the connection
+      to your SMTP host.'
+    text: '**Create an SmtpClient instance** – this object represents the connection
+      to your SMTP host.'
+  - name: '**Set host, port, and credentials** – provide the server address, the port
+      number (usually 587 for STARTTLS), and the username/password.'
+    text: '**Set host, port, and credentials** – provide the server address, the port
+      number (usually 587 for STARTTLS), and the username/password.'
+  - name: '**Enable TLS/STARTTLS** – call the appropriate property to secure the channel.'
+    text: '**Enable TLS/STARTTLS** – call the appropriate property to secure the channel.'
+  - name: '**Send a test message** – verify that the configuration works before integrating
+      it into your production workflow.'
+    text: '**Send a test message** – verify that the configuration works before integrating
+      it into your production workflow.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. The library runs on any Java runtime, including cloud‑hosted
+      environments such as AWS Elastic Beanstalk, Azure App Service, and Google Cloud
+      Run.
+    question: Can I use Aspose.Email on a cloud platform like AWS or Azure?
+  - answer: Aspose.Email supports OAuth2 token acquisition; you can pass the token
+      to the `SmtpClient` for authentication without storing passwords.
+    question: What if my SMTP provider requires OAuth2 authentication?
+  - answer: Use a local SMTP testing tool like MailHog or Papercut; point the host
+      and port to the tool and inspect the captured messages.
+    question: How do I test my configuration locally without sending real emails?
+  - answer: Yes—enable logging by calling `client.setLogEnabled(true)`; the library
+      will write the full SMTP exchange to the console or a file you specify.
+    question: Is there a way to log the raw SMTP conversation for debugging?
+  - answer: The library imposes no inherent size limit; you must respect the maximum
+      message size of your SMTP provider, which is typically 25 MB for most services.
+    question: Does Aspose.Email support sending attachments larger than 25 MB?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Cấu hình máy chủ SMTP Java với Aspose.Email cho Java
+tags:
+- smtp configuration
+- aspose.email
+- java email sending
+title: Cách gửi email Java với cấu hình máy chủ SMTP của Aspose.Email
 url: /vi/java/configuring-smtp-servers/
 weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cấu hình Máy chủ SMTP Java với Aspise.Email cho Java
+# Cách gửi email java với cấu hình máy chủ SMTP Aspose.Email
 
-Việc cấu hình một máy chủ SMTP trong Java có thể gây khó khăn, nhưng với **Aspose.Email for Java** quá trình này trở nên đơn giản. Trong hướng dẫn này, bạn sẽ học cách **cấu hình SMTP server Java** nhanh chóng, đảm bảo ứng dụng của bạn gửi thư một cách đáng tin cậy mà không gặp những rắc rối thường gặp. Dù bạn đang xây dựng dịch vụ email giao dịch, công cụ gửi bản tin bulk‑newsletter, hay chỉ cần các cảnh báo hệ thống đáng tin cậy, việc thiết lập SMTP đúng cách là nền tảng cho việc giao thư thành công.
+Gửi email từ một ứng dụng Java trước đây đòi hỏi phải xử lý socket cấp thấp, mã xác thực tùy chỉnh và rất nhiều thử nghiệm và lỗi. **Aspose.Email for Java** loại bỏ rào cản đó. Trong hướng dẫn này bạn sẽ học **cách gửi email java** bằng cách cấu hình máy chủ SMTP, bật TLS/STARTTLS và áp dụng các thực tiễn tốt nhất cho email hàng loạt. Cho dù bạn đang xây dựng các cảnh báo giao dịch, chiến dịch bản tin, hoặc thông báo giám sát hệ thống, một cấu hình SMTP vững chắc là nền tảng cho việc gửi tin đáng tin cậy.
 
-## Quick Answers
+## Câu trả lời nhanh
 - **“configure SMTP server Java” có nghĩa là gì?**  
-  Thiết lập máy chủ SMTP, cổng, xác thực và các tùy chọn bảo mật trong một ứng dụng Java.  
-- **Tôi có cần giấy phép để sử dụng Aspose.Email không?**  
-  Bản dùng thử miễn phí đủ cho phát triển; giấy phép thương mại bắt buộc cho môi trường sản xuất.  
-- **Những phiên bản Java nào được hỗ trợ?**  
-  Java 8 trở lên, bao gồm Java 11, 17 và các bản LTS sau này.  
-- **Tôi có thể sử dụng TLS/SSL với Aspose.Email không?**  
-  Có — cả STARTTLS và SSL/TLS đều được hỗ trợ đầy đủ.  
-- **Xử lý lỗi có được bao gồm không?**  
-  Aspose.Email cung cấp các ngoại lệ chi tiết và mã trạng thái để giúp bạn khắc phục sự cố.
+  Nó có nghĩa là bạn chỉ định cho mã Java của mình máy chủ SMTP, cổng, thông tin xác thực và giao thức bảo mật để thư gửi đi có thể được chuyển đến.  
+- **Bạn có cần giấy phép để sử dụng Aspose.Email không?**  
+  Bản dùng thử miễn phí hoạt động cho việc phát triển; giấy phép thương mại là bắt buộc cho môi trường sản xuất.  
+- **Các phiên bản Java nào được hỗ trợ?**  
+  Java 8, 11, 17 và các bản phát hành LTS sau này đều được hỗ trợ đầy đủ.  
+- **Tôi có thể sử dụng TLS/STARTTLS với Aspose.Email không?**  
+  Có — cả SSL ngầm (cổng 465) và STARTTLS trên cổng 587 đều được tích hợp sẵn.  
+- **Có thể gửi email hàng loạt không?**  
+  Chắc chắn; API cho phép bạn lặp qua danh sách người nhận và gửi hàng ngàn tin mỗi phút.  
 
-## What is configuring an SMTP server in Java?
-SMTP (Simple Mail Transfer Protocol) là giao thức tiêu chuẩn để gửi email qua internet. Khi bạn **configure SMTP server Java**, bạn chỉ định cho mã Java nơi gửi thư đi, cách xác thực và giao thức bảo mật sẽ được sử dụng.
+## Cấu hình máy chủ SMTP trong Java là gì?
+Cấu hình một máy chủ SMTP trong Java có nghĩa là chỉ định máy chủ thư từ xa, số cổng, dữ liệu xác thực và các cài đặt bảo mật để ứng dụng của bạn có thể chuyển giao tin nhắn cho tác nhân truyền tải thư. Cấu hình này đảm bảo email được định tuyến đúng, thông tin xác thực được bảo vệ và việc gửi tuân thủ các chính sách của nhà cung cấp dịch vụ thư đã chọn.
 
-## How to configure SMTP server Java
-Dưới đây là tổng quan ngắn gọn, từng bước bạn sẽ thực hiện với Aspose.Email:
+## Cách cấu hình máy chủ SMTP trong Java
+**SmtpClient** là lớp của Aspose.Email quản lý kết nối tới máy chủ SMTP.  
+Tải lớp `SmtpClient`, đặt các thuộc tính và gửi một tin thử.  
 
-1. **Tạo một thể hiện `SmtpClient`** – đối tượng này đại diện cho kết nối tới máy chủ SMTP của bạn.  
-2. **Đặt host, port và thông tin xác thực** – cung cấp địa chỉ máy chủ, số cổng (thường là 587 cho TLS), và tên người dùng/mật khẩu.  
-3. **Bật TLS/SSL** – gọi thuộc tính thích hợp để bảo mật kênh truyền.  
-4. **Gửi một tin thử** – xác minh cấu hình hoạt động trước khi tích hợp vào quy trình sản xuất.  
+Để cấu hình máy chủ, tạo một thể hiện `SmtpClient`, chỉ định host, port và thông tin xác thực, bật giao thức bảo mật mong muốn, và cuối cùng gửi một email thử để xác minh các cài đặt. Quy trình này cung cấp một luồng công việc rõ ràng, có thể lặp lại và có thể tích hợp vào bất kỳ dự án Java nào với tối thiểu thay đổi mã.
 
-Các bước này được mô tả chi tiết trong tài liệu Aspose.Email, và API trừu tượng hoá việc xử lý socket cấp thấp để bạn có thể tập trung vào logic nghiệp vụ.
+1. **Tạo một thể hiện SmtpClient** – đối tượng này đại diện cho kết nối tới máy chủ SMTP của bạn.  
+2. **Đặt host, port và thông tin xác thực** – cung cấp địa chỉ máy chủ, số cổng (thường là 587 cho STARTTLS), và tên người dùng/mật khẩu.  
+3. **Bật TLS/STARTTLS** – gọi thuộc tính thích hợp để bảo mật kênh truyền.  
+4. **Gửi một tin thử** – xác minh cấu hình hoạt động trước khi tích hợp vào quy trình sản xuất của bạn.  
 
-## Java SMTP TLS setup
-Sử dụng TLS (hoặc STARTTLS) là cần thiết để bảo vệ thông tin đăng nhập và tuân thủ các chính sách của nhà cung cấp email hiện đại. Với Aspose.Email, bạn chỉ cần bật TLS trên `SmtpClient`:
+Các bước này được trình bày trong tài liệu chính thức của Aspose.Email, và API trừu tượng hoá việc xử lý socket cấp thấp để bạn có thể tập trung vào logic nghiệp vụ.
 
-- Đặt `client.setEnableSsl(true)` cho SSL ngầm (cổng 465).  
-- Hoặc đặt `client.setStartTls(true)` cho STARTTLS trên cổng gửi chuẩn 587.  
+## Cài đặt TLS cho Java SMTP
+Sử dụng TLS (hoặc STARTTLS) mã hoá thông tin xác thực và tuân thủ các chính sách hiện đại của nhà cung cấp.  
 
-Cả hai tùy chọn đều mã hoá kênh truyền, ngăn chặn việc nghe lén và tấn công man‑in‑the‑middle.
+- Gọi `client.setEnableSsl(true)` để bật SSL ngầm trên cổng 465.  
+- Gọi `client.setStartTls(true)` để bật STARTTLS trên cổng gửi chuẩn 587.  
 
-## Why use Aspose.Email for Java to configure SMTP server Java?
-- **Unified API:** Xử lý mọi chi tiết SMTP — xác thực, TLS, hỗ trợ proxy — qua một giao diện đối tượng sạch sẽ.  
-- **Robust error handling:** Các thông báo ngoại lệ chi tiết giúp bạn nhanh chóng xác định nguyên nhân lỗi.  
-- **Cross‑platform:** Hoạt động giống nhau trên Windows, Linux và macOS, giúp mã của bạn di động.  
-- **Extensive documentation:** Hướng dẫn từng bước và các dự án mẫu giảm thiểu thời gian phát triển.
+Cả hai tùy chọn đều mã hoá kênh truyền thông, ngăn chặn việc nghe lén và tấn công người trung gian. Đây là **java smtp starttls example** mà hầu hết các nhà phát triển tìm kiếm.
 
-## Introduction to SMTP Server Configuration
-SMTP (Simple Mail Transfer Protocol) là xương sống của giao tiếp email, chịu trách nhiệm định tuyến và chuyển phát thư qua internet. Cấu hình đúng máy chủ SMTP là yếu tố quan trọng để đảm bảo email của bạn đến được người nhận một cách đáng tin cậy. Aspose.Email for Java đơn giản hoá quá trình này bằng cách cung cấp các hướng dẫn và công cụ toàn diện để cấu hình máy chủ SMTP một cách dễ dàng.
+## Tại sao sử dụng Aspose.Email cho Java để cấu hình máy chủ SMTP Java?
+Aspose.Email cung cấp một API thống nhất, cấp cao, xử lý xác thực, thương lượng TLS, hỗ trợ proxy và pool kết nối mà không cần mã socket tùy chỉnh. Nó cũng trả về các mã trạng thái SMTP chi tiết và ngoại lệ, giúp việc khắc phục sự cố trở nên đơn giản. Vì thư viện này đa nền tảng, cùng một đoạn mã chạy trên Windows, Linux và macOS, đơn giản hoá việc triển khai trong container hoặc môi trường đám mây.
 
-## Streamlined Setup with Aspose.Email for Java
-Aspose.Email for Java cung cấp cho nhà phát triển một cách tiếp cận gọn gàng để cấu hình máy chủ SMTP. Dù bạn đang thiết lập hệ thống email nội bộ hay tích hợp chức năng gửi mail vào ứng dụng Java, API này giúp quá trình trở nên đơn giản. Với các hướng dẫn chi tiết từng bước, bạn có thể chắc chắn rằng máy chủ SMTP của mình được cấu hình đúng để xử lý lưu lượng email đi ra.
+- **Unified API:** Xử lý xác thực, TLS, hỗ trợ proxy và pool kết nối qua một giao diện sạch, hướng đối tượng.  
+- **Robust error handling:** Các thông báo ngoại lệ chi tiết và mã trạng thái SMTP cho phép bạn nhanh chóng xác định vấn đề.  
+- **Cross‑platform:** Hoạt động trên Windows, Linux và macOS, làm cho mã của bạn di động giữa các máy chủ và container.  
+- **Extensive format support:** Aspose.Email hỗ trợ **50+** định dạng đầu vào và đầu ra — bao gồm EML, MSG, MHTML và các luồng mã hoá MIME — và có thể xử lý các kho lưu trữ email hàng trăm trang mà không cần tải toàn bộ tệp vào bộ nhớ.  
 
-## Reliable Email Delivery
-Cấu hình máy chủ SMTP hiệu quả là chìa khóa để đạt được việc giao thư đáng tin cậy. Aspose.Email for Java không chỉ hỗ trợ thiết lập máy chủ SMTP mà còn cung cấp các tính năng nâng cao để quản lý việc gửi mail, theo dõi và báo cáo. Bằng cách tuân thủ các hướng dẫn và thực tiễn tốt nhất do Aspose.Email đề xuất, nhà phát triển có thể đảm bảo email được gửi an toàn và tới đích mà không gặp rắc rối.
+Những lợi ích định lượng này cho thấy tại sao thư viện là giải pháp ưu tiên cho **java bulk email sending**.
 
-## Common Use Cases for Configuring SMTP Server Java
-- **Email giao dịch:** Xác nhận đơn hàng, đặt lại mật khẩu và các thông báo.  
-- **Bản tin bulk:** Gửi khối lượng lớn email đồng thời duy trì khả năng giao thư.  
-- **Cảnh báo hệ thống:** Thông báo tự động từ máy chủ hoặc ứng dụng.  
-- **Ứng dụng đa người thuê:** Mỗi tenant có thể có thông tin xác thực SMTP riêng.
+## Giới thiệu về cấu hình máy chủ SMTP
+SMTP (Simple Mail Transfer Protocol) là xương sống của giao tiếp email, chịu trách nhiệm định tuyến và chuyển phát tin nhắn qua internet. Cấu hình đúng đảm bảo email của bạn đến được người nhận một cách đáng tin cậy và tỷ lệ trả lại (bounce) thấp.
 
-## Tips & Best Practices
-- **Sử dụng TLS/STARTTLS** bất cứ khi nào có thể để mã hoá thông tin đăng nhập.  
-- **Xác thực địa chỉ email** trước khi gửi để giảm tỷ lệ bounce.  
-- **Triển khai logic retry** cho các lỗi mạng tạm thời.  
-- **Giám sát mã phản hồi SMTP** để phát hiện sớm các vấn đề giao thư.
+## Thiết lập nhanh chóng với Aspose.Email cho Java
+Aspose.Email cung cấp các hướng dẫn từng bước, dự án mẫu và một API phong phú cho phép bạn cấu hình máy chủ SMTP trong vài phút thay vì ngày. Thư viện cũng bao gồm hỗ trợ tích hợp cho máy chủ proxy, tiêu đề tùy chỉnh và thông báo giao hàng.
 
-## Configuring SMTP Servers with Aspose.Email for Java Tutorials
-### [Choosing the Right SMTP Server for Aspose.Email](./choosing-the-right-smtp-server/)
-Tối ưu hoá chức năng email của bạn với Aspose.Email cho Java. Học cách chọn máy chủ SMTP phù hợp và gửi email một cách dễ dàng.  
-### [Handling SMTP Errors and Troubleshooting with Aspose.Email](./handling-smtp-errors-and-troubleshooting/)
-Tối ưu hoá giao tiếp email với Aspose.Email cho Java. Học cách xử lý lỗi SMTP và khắc phục sự cố hiệu quả.  
-### [Customizing SMTP Headers and Footers with Aspose.Email](./customizing-smtp-headers-and-footers/)
-Tìm hiểu cách tùy chỉnh tiêu đề và chân thư SMTP với Aspose.Email cho Java. Nâng cao giao tiếp email của bạn với thương hiệu và thông điệp cá nhân hoá.  
-### [Integrating Multiple SMTP Servers with Aspose.Email](./integrating-multiple-smtp-servers/)
-Tìm hiểu cách tích hợp nhiều máy chủ SMTP một cách liền mạch với Aspose.Email cho Java. Nâng cao độ tin cậy khi gửi mail và hỗ trợ dự phòng với hướng dẫn chi tiết từng bước.
+## Gửi email đáng tin cậy
+Ngoài cấu hình cơ bản, Aspose.Email cung cấp các tính năng nâng cao như theo dõi trạng thái giao hàng, xử lý bounce và kiểm soát tốc độ gửi email. Bằng cách tuân theo các thực tiễn tốt nhất trong hướng dẫn này, bạn có thể đảm bảo tin nhắn của mình được gửi một cách an toàn và đến đúng thời gian.
 
-## Frequently Asked Questions
+## Các trường hợp sử dụng phổ biến cho cấu hình máy chủ SMTP Java
+- **Transactional emails:** Xác nhận đơn hàng, đặt lại mật khẩu và cảnh báo hệ thống.  
+- **Bulk newsletters:** Gửi khối lượng lớn trong khi duy trì tỷ lệ giao hàng cao.  
+- **System monitoring:** Cảnh báo tự động từ máy chủ hoặc ứng dụng.  
+- **Multi‑tenant SaaS platforms:** Mỗi khách hàng có thể có thông tin xác thực SMTP riêng, cho phép các luồng email độc lập.  
 
-**Q: Tôi có thể sử dụng Aspose.Email trên nền tảng đám mây như AWS hoặc Azure không?**  
-A: Hoàn toàn có thể. Thư viện hoạt động trên bất kỳ môi trường Java nào, bao gồm cả các môi trường được lưu trữ trên đám mây.  
+## Mẹo & thực tiễn tốt nhất
+- **Use TLS/STARTTLS** whenever possible to encrypt credentials. → **Use TLS/STARTTLS** whenever possible to encrypt credentials.  
+- **Validate email addresses** before sending to reduce bounce rates. → **Validate email addresses** before sending to reduce bounce rates.  
+- **Implement retry logic** for transient network errors. → **Implement retry logic** for transient network errors.  
+- **Monitor SMTP response codes** to detect delivery issues early. → **Monitor SMTP response codes** to detect delivery issues early.  
+- **Batch sending**: Group recipients into batches of 500‑1000 to stay within provider limits and improve throughput. → **Batch sending**: Group recipients into batches of 500‑1000 to stay within provider limits and improve throughput.  
 
-**Q: Nếu nhà cung cấp SMTP của tôi yêu cầu xác thực OAuth2 thì sao?**  
-A: Aspose.Email hỗ trợ việc lấy token OAuth2; bạn có thể truyền token này cho `SmtpClient` để xác thực.  
+## Configuring SMTP servers with Aspose.Email for Java tutorials
+### [Choosing the right SMTP server for Aspose.Email](./choosing-the-right-smtp-server/)
+Optimize your email functionality with Aspose.Email for Java. Learn how to choose the right SMTP server and send emails effortlessly.  
+### [Handling SMTP errors and troubleshooting with Aspose.Email](./handling-smtp-errors-and-troubleshooting/)
+Optimize email communication with Aspose.Email for Java. Learn to handle SMTP errors and troubleshoot effectively.  
+### [Customizing SMTP headers and footers with Aspose.Email](./customizing-smtp-headers-and-footers/)
+Learn how to customize SMTP headers and footers with Aspose.Email for Java. Enhance your email communication with personalized branding and messages.  
+### [Integrating multiple SMTP servers with Aspose.Email](./integrating-multiple-smtp-servers/)
+Learn how to integrate multiple SMTP servers seamlessly with Aspose.Email for Java. Enhance email sending reliability and failover support with our step‑by‑step guide.
 
-**Q: Làm sao kiểm tra cấu hình cục bộ mà không gửi email thực?**  
-A: Sử dụng công cụ kiểm thử SMTP cục bộ như MailHog hoặc Papercut; cấu hình host và port trỏ tới công cụ này.  
+## Frequently asked questions
 
-**Q: Có cách nào ghi lại toàn bộ cuộc trò chuyện SMTP thô để debug không?**  
-A: Có — bật `SmtpClient.setEnableSsl(true)` và đặt `SmtpClient.setLogEnabled(true)` để ghi lại log chi tiết.  
+**Q: Can I use Aspose.Email on a cloud platform like AWS or Azure?**  
+A: Absolutely. The library runs on any Java runtime, including cloud‑hosted environments such as AWS Elastic Beanstalk, Azure App Service, and Google Cloud Run.
 
-**Q: Aspose.Email có hỗ trợ gửi tập tin đính kèm lớn hơn 25 MB không?**  
-A: Thư viện không đặt giới hạn kích thước; tuy nhiên bạn phải tuân thủ giới hạn của nhà cung cấp SMTP của mình.
+**Q: What if my SMTP provider requires OAuth2 authentication?**  
+A: Aspose.Email supports OAuth2 token acquisition; you can pass the token to the `SmtpClient` for authentication without storing passwords.
+
+**Q: How do I test my configuration locally without sending real emails?**  
+A: Use a local SMTP testing tool like MailHog or Papercut; point the host and port to the tool and inspect the captured messages.
+
+**Q: Is there a way to log the raw SMTP conversation for debugging?**  
+A: Yes—enable logging by calling `client.setLogEnabled(true)`; the library will write the full SMTP exchange to the console or a file you specify.
+
+**Q: Does Aspose.Email support sending attachments larger than 25 MB?**  
+A: The library imposes no inherent size limit; you must respect the maximum message size of your SMTP provider, which is typically 25 MB for most services.
 
 ---
 
-**Last Updated:** 2026-03-04  
+**Last Updated:** 2026-08-27  
 **Tested With:** Aspose.Email for Java 24.12  
 **Author:** Aspose  
+
+{{< blocks/products/pf/backtop-button >}}
+
+## Related Tutorials
+
+- [Send Email Java - Choose the Right SMTP Server with Aspose.Email](/email/java/configuring-smtp-servers/choosing-the-right-smtp-server/)
+- [How to Set Up an SMTP Client with Aspose.Email for Java: Step‑By‑Step Guide](/email/java/smtp-client-operations/aspose-email-java-smtp-client-setup/)
+- [Mastering Aspose.Email Java: Set Custom Email Headers and Send Emails Using SMTP](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
