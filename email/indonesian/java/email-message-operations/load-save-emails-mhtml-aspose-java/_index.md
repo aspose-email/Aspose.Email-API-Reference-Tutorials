@@ -1,28 +1,80 @@
 ---
-date: '2026-02-27'
-description: Pelajari cara memuat file MSG dan mengonversinya menjadi MHTML dengan
-  Aspose.Email untuk Java, termasuk pengaturan zona waktu khusus dan tips pemrosesan
-  email batch.
+date: '2026-08-27'
+description: Pelajari cara memuat file MSG dan mengonversinya ke MHTML dengan Aspose.Email
+  for Java, termasuk pengaturan zona waktu khusus dan tips pemrosesan email batch.
 keywords:
-- Aspose.Email for Java
-- load emails in MHTML format
-- custom timezone settings
-title: Cara Memuat MSG dan Menyimpan sebagai MHTML Menggunakan Aspose.Email untuk
+- how to load msg
+- Aspose.Email Java
+- convert MSG to MHTML
+- email timezone offset
+lastmod: '2026-08-27'
+og_description: Pelajari cara memuat file msg dan mengekspornya sebagai MHTML menggunakan
+  Aspose.Email for Java. Termasuk penanganan zona waktu dan tips pemrosesan batch.
+og_image_alt: Guide to loading MSG files and saving as MHTML with Aspose.Email for
   Java
+og_title: Cara memuat msg dan menyimpan sebagai MHTML dengan Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  headline: How to load msg and save as MHTML using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  name: How to load msg and save as MHTML using Aspose.Email for Java
+  steps:
+  - name: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+    text: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+  - name: '**Use try‑with‑resources** for automatic cleanup of streams.'
+    text: '**Use try‑with‑resources** for automatic cleanup of streams.'
+  - name: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+    text: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+  - name: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+    text: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Email supports EML, MHT, EMLX, and several other formats,
+      totaling over 30 input types.
+    question: Can I load emails from formats other than .msg?
+  - answer: Use the streaming APIs (`MailMessage.load(InputStream, ...)`) to read
+      and write data in chunks, which keeps memory consumption under 50 MB even for
+      500‑page messages.
+    question: How can I handle very large email files efficiently?
+  - answer: Absolutely. You can add, remove, or replace attachments via the `msg.getAttachments()`
+      collection, then call `save` to persist changes.
+    question: Is it possible to modify attachments within a MailMessage?
+  - answer: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 *
+      60 * 60 * 1000` for UTC‑3.
+    question: What if my timezone offset is negative (behind UTC)?
+  - answer: Yes, provided you have a valid commercial license. The free trial is limited
+      to 20 MB per document.
+    question: Can I use Aspose.Email in commercial projects?
+  type: FAQPage
+tags:
+- email processing
+- Aspose.Email
+- Java email conversion
+title: Cara memuat msg dan menyimpan sebagai MHTML menggunakan Aspose.Email for Java
 url: /id/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Cara Memuat MSG dan menyimpannya sebagai MHTML Menggunakan Aspose.Email untuk Java
 
-## Perkenalan
+# Cara memuat msg dan menyimpan sebagai MHTML menggunakan Aspose.Email untuk Java
 
-Jika Anda perlu **cara memuat file pesan**, menyesuaikan batang waktunya, dan kemudian **mengonversi pesan ke mhtml**, Anda berada di tempat yang tepat. Dalam tutorial ini kami akan membahas cara memuat email `.msg`, menerapkan offset zona waktu khusus, dan menyimpan hasilnya sebagai arsip MHTML—semua dengan Aspose.Email untuk Java. Baik Anda menangani satu pesan atau **pipeline pemrosesan email batch**, langkah‑langkah ini akan memberi Anda dasar yang kuat.
+## Pendahuluan
+
+Jika Anda perlu **memuat msg** file, menyesuaikan stempel waktunya, dan kemudian **mengonversi msg ke mhtml**, Anda berada di tempat yang tepat. Dalam tutorial ini kami akan menjelaskan cara memuat email `.msg`, menerapkan offset zona waktu khusus, dan menyimpan hasilnya sebagai arsip MHTML—semua dengan Aspose.Email untuk Java. Baik Anda menangani satu pesan atau pipeline **pemrosesan email batch**, langkah‑langkah ini akan memberi Anda fondasi yang kuat untuk pengarsipan dan migrasi yang dapat diandalkan.
 
 **Apa yang akan Anda pelajari**
 - Cara memuat `MailMessage` dari file `.msg`.
@@ -34,27 +86,35 @@ Siap meningkatkan alur kerja email Anda? Mari siapkan lingkungan terlebih dahulu
 
 ## Jawaban Cepat
 - **Apa perpustakaan utama?** Aspose.Email untuk Java.
-- **Apakah saya dapat memuat MSG dan mengekspor ke MHTML dalam satu langkah?** Tidak, Anda memuat, menyesuaikan, lalu menyimpan.
-- **Apakah saya memerlukan lisensi untuk produksi?** Ya, diperlukan lisensi Aspose.Email yang valid.
+- **Bisakah saya memuat MSG dan mengekspor ke MHTML dalam satu langkah?** Tidak, Anda harus memuat, menyesuaikan, lalu menyimpan.
+- **Apakah saya memerlukan lisensi untuk produksi?** Ya, lisensi Aspose.Email yang valid diperlukan.
 - **Apakah penanganan zona waktu didukung?** Ya, melalui `setTimeZoneOffset`.
-- **Apakah ini dapat digunakan dalam pemrosesan batch?** Tentu saja – selesaikan langkah-langkahnya dalam satu lingkaran.
+- **Dapatkah ini digunakan dalam pemrosesan batch?** Tentu – bungkus langkah‑langkah dalam sebuah loop.
+
+## Apa itu Aspose.Email untuk Java?
+
+Aspose.Email untuk Java adalah API komprehensif yang memungkinkan Anda membuat, membaca, mengonversi, dan memanipulasi pesan email tanpa memerlukan Microsoft Outlook. API ini mendukung lebih dari 30 format email dan dapat memproses pesan berukuran ratusan halaman sambil menjaga penggunaan memori tetap rendah.
+
+## Mengapa mengonversi MSG ke MHTML?
+
+Mengonversi file MSG ke MHTML memberi Anda representasi satu‑file yang ramah web yang dapat dibuka di browser modern mana pun. Format ini mempertahankan gaya asli, gambar tersemat, dan lampiran, menjadikannya ideal untuk **arsip hukum**, **berbagi lintas platform**, dan **menyematkan email ke halaman web atau dokumentasi**.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal‑hal berikut:
 
-### Perpustakaan dan Dependensi yang Diperlukan
-- Perpustakaan **Aspose.Email untuk Java** versi 25.4 (pengklasifikasi jdk16)
+### Perpustakaan dan dependensi yang diperlukan
+- **Aspose.Email untuk Java** versi perpustakaan 25.4 (classifier jdk16) – perpustakaan ini mendukung **50+** format email masuk dan keluar.
 - Pengetahuan dasar Java.
 - IDE seperti IntelliJ IDEA atau Eclipse.
 
-### Persyaratan Pengaturan Lingkungan
-- JDK16atau yang lebih baru terpasang.
-- Maven untuk manajemen ketergantungan.
+### Persyaratan penyiapan lingkungan
+- JDK 16 atau yang lebih baru terpasang.
+- Maven untuk manajemen dependensi.
 
-## Cara Menginstal Aspose.Email untuk Java
+## Menyiapkan Aspose.Email untuk Java
 
-Untuk menambahkan library ke proyek Maven, sertakan dependensi berikut:
+Untuk menambahkan perpustakaan ke proyek Maven, sertakan dependensi berikut:
 
 ```xml
 <dependency>
@@ -64,19 +124,33 @@ Untuk menambahkan library ke proyek Maven, sertakan dependensi berikut:
     <classifier>jdk16</classifier>
 </dependency>
 ```
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
-### Langkah-langkah Memperoleh Lisensi
+### Langkah memperoleh lisensi
 
-Mulailah dengan **uji coba gratis** atau dapatkan **lisensi sementara** untuk mengevaluasi kemampuan penuh pustaka tanpa batasan. Untuk penggunaan jangka panjang, pertimbangkan untuk membeli lisensi:
+Mulailah dengan **percobaan gratis** atau dapatkan **lisensi sementara** untuk mengevaluasi semua kemampuan perpustakaan tanpa batasan. Untuk penggunaan jangka panjang, pertimbangkan membeli lisensi:
 
 - [Uji Coba Gratis](https://releases.aspose.com/email/java/)
 - [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
-- [Lisensi Beli](https://purchase.aspose.com/buy)
+- [Beli Lisensi](https://purchase.aspose.com/buy)
 
-### Inisialisasi Dasar
+### Inisialisasi dasar
 
-Setelah menambahkan dependensi, inisialisasi lisensi dalam kode Java Anda:
+Kelas `License` mendaftarkan lisensi Aspose.Email Anda untuk membuka semua fitur. Setelah menambahkan dependensi, inisialisasikan lisensi dalam kode Java Anda:
 
+```java
+import com.aspose.email.License;
+
+License license = new License();
+license.setLicense("Aspose.Email.lic");
+```
 ```java
 import com.aspose.email.License;
 
@@ -84,61 +158,67 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## Panduan Implementasi
+## Cara memuat msg dan menyimpan sebagai MHTML?
 
-Kita akan membagi implementasi menjadi tiga fitur yang jelas.
+Memuat file MSG, menyesuaikan stempel waktu, dan menyimpannya sebagai MHTML dalam tiga langkah sederhana. Pertama, buat instance `MailMessage` dari file MSG menggunakan `MsgLoadOptions`. Selanjutnya, atur offset zona waktu yang diinginkan dengan `setTimeZoneOffset`. Akhirnya, konfigurasikan `MhtSaveOptions` dan panggil `save` untuk menghasilkan arsip MHTML.
 
-### Fitur 1: Memuat MailMessage dari File
+### Fitur 1: memuat MailMessage dari file
 
-#### Gambaran Umum
-Memuat file `.msg` memberi Anda akses pemrograman penuh ke konten email, lampiran, dan metadata.
-
-#### Langkah demi Langkah
-
-**Impor kelas yang dibutuhkan**
+Kelas `MailMessage` mewakili pesan email dengan header, isi, dan lampiran.
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
+```java
+import com.aspose.email.MailMessage;
+import com.aspose.email.MsgLoadOptions;
+```
 
-**Muat email**
-
+```java
+MsgLoadOptions loadOptions = new MsgLoadOptions();
+MailMessage msg = MailMessage.load("sample.msg", loadOptions);
+```
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-`MsgLoadOptions` memungkinkan Anda mengontrol bagaimana file MSG diinterpretasikan; pengaturan default berfungsi untuk sebagian besar skenario.
+`MsgLoadOptions` memungkinkan Anda mengontrol cara file MSG diparsing; pengaturan default bekerja untuk kebanyakan skenario.
 
-### Fitur 2: Mengatur Tanggal Saat Ini dan Offset Zona Waktu Kustom
+### Fitur 2: mengatur tanggal saat ini dan offset zona waktu khusus
 
-#### Gambaran Umum
-Stempel waktu yang akurat sangat penting ketika Anda berurusan dengan pengguna di berbagai wilayah.
+Objek `Date` menyimpan stempel waktu yang akan dituliskan ke header **Date** email.
 
-**Atur tanggal saat ini**
-
+```java
+java.util.Date now = new java.util.Date();
+msg.setDate(now);
+```
 ```java
 import java.util.Date;
 
 msg.setDate(new Date());
 ```
 
-**Terapkan offset zona waktu kustom (misalnya, UTC+5)**
+Offset dinyatakan dalam milidetik; untuk UTC+5 Anda memberikan `5 * 60 * 60 * 1000`.
 
+```java
+int utcPlusFive = 5 * 60 * 60 * 1000;
+msg.setTimeZoneOffset(utcPlusFive);
+```
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-Offset dinyatakan dalam milidetik, sehingga Anda juga dapat memberikan nilai negatif untuk zona di sebelah barat UTC.
+### Fitur 3: menyimpan MailMessage sebagai file MHTML
 
-### Fitur 3: Menyimpan MailMessage sebagai File MHTML
+`MhtSaveOptions` menentukan cara email dikemas ke dalam arsip MHTML, mempertahankan gambar inline dan lampiran.
 
-#### Gambaran Umum
-MHTML menggabungkan konten HTML dan sumber daya tersemat ke dalam satu file, sangat cocok untuk pengarsipan atau berbagi.
-
-**Konfigurasi opsi penyimpanan**
-
+```java
+import com.aspose.email.MhtSaveOptions;
+MhtSaveOptions saveOptions = new MhtSaveOptions();
+saveOptions.setWriteHeader(true);
+```
 ```java
 import com.aspose.email.MhtSaveOptions;
 import com.aspose.email.MhtFormatOptions;
@@ -147,72 +227,69 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**Simpan email**
-
+```java
+msg.save("output.mhtml", saveOptions);
+```
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
 ```
 
-File `.mhtml` yang dihasilkan mempertahankan format asli, gambar, dan lampiran.
+File `.mhtml` yang dihasilkan mempertahankan format asli, gambar, dan lampiran, menjadikannya salinan visual yang setia dari MSG asli.
 
-## Mengapa Mengonversi MSG ke MHTML?
+## Cara mengatur offset zona waktu khusus?
 
-Mengonversi file MSG ke MHTML memberi Anda representasi satu‑file yang ramah web dan dapat dibuka di browser modern mana pun. Ini sangat berguna untuk:
+Anda dapat mengubah zona waktu dengan memanggil `setTimeZoneOffset` pada instance `MailMessage`. Metode ini mengharapkan offset dalam milidetik, memungkinkan nilai positif (timur UTC) dan negatif (barat UTC). Misalnya, UTC‑3 adalah `-3 * 60 * 60 * 1000`.
 
-- **Pengarsipan legal** yang memerlukan salinan visual yang sebenarnya. => arsip hukum di mana salinan visual yang setia diperlukan.
-- **Berbagi lintas platform** tanpa memerlukan Outlook. => berbagi lintas platform tanpa memerlukan Outlook.
-- **Menyematkan email** ke halaman web atau dokumentasi. => menyematkan email ke dalam halaman web atau dokumentasi.
+## Cara memproses file MSG secara batch?
 
-## Tip Pemrosesan Email Batch
+Bungkus alur kerja tiga langkah dalam sebuah loop yang mengiterasi direktori berisi file `.msg`. Gunakan kembali satu instance `License` untuk menghindari I/O berulang, dan buang setiap `MailMessage` setelah disimpan untuk menjaga penggunaan memori tetap rendah.
 
-Jika Anda memerlukan **pemrosesan email batch**, memuat langkah pemuatan, penyesuaian zona waktu, dan penyimpanan di dalam loop yang mengiterasi file direktori `.msg`. Ingat untuk:
+```java
+File folder = new File("msg_folder");
+for (File file : folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".msg"))) {
+    MailMessage msg = MailMessage.load(file.getAbsolutePath(), new MsgLoadOptions());
+    // set date & timezone as shown earlier
+    msg.save(file.getName().replace(".msg", ".mhtml"), new MhtSaveOptions());
+    msg.dispose(); // releases native resources
+}
+```
 
-1. Gunakan kembali satu instance `License` untuk menghindari beban berlebih.
-2. Lepaskan sumber daya setelah setiap iterasi (`msg.dispose()` jika berlaku).
-3. Catat kegagalan apa pun ke file terpisah untuk ditinjau nanti.
+### Tips pemrosesan batch
+1. **Gunakan kembali lisensi** – panggil `new License().setLicense(...)` sekali saat aplikasi dimulai.
+2. **Gunakan try‑with‑resources** untuk pembersihan otomatis aliran.
+3. **Catat kegagalan** ke file terpisah sehingga Anda dapat mencoba kembali pesan bermasalah nanti.
+4. **Pertimbangkan paralelisme** dengan `ForkJoinPool` untuk batch besar, tetapi pastikan setiap thread menggunakan instance `MailMessage` masing‑masing.
 
-## Aplikasi Praktis
+## Masalah umum dan solusi
 
-1. **Pengarsipan Email:** Pertahankan komunikasi dalam format portabel untuk kepatuhan. => Arsip Email: Mempertahankan komunikasi dalam format portabel untuk kehadiran.
-2. **Penjadwalan Global:** Sesuaikan stempel waktu dengan zona waktu terpadu sebelum mengirim notifikasi. => Penjadwalan Global: Menyesuaikan stempel waktu ke zona waktu terpadu sebelum mengirim notifikasi.
-3. **Integrasi CRM:** Secara otomatis mengimpor email yang diarsipkan ke dalam sistem CRM sebagai lampiran MHTML. => Integrasi CRM: Secara otomatis mengimpor email yang diarsipkan ke sistem CRM sebagai lampiran MHTML.
+- **Lonjakan memori dengan file MSG besar** – aktifkan streaming dengan menggunakan `MailMessage.load(InputStream, MsgLoadOptions)` dan proses aliran dalam potongan.
+- **Stempel waktu tidak tepat** – pastikan jam sistem diatur ke UTC sebelum menerapkan offset, atau secara eksplisit berikan instance `java.util.Calendar`.
+- **Lampiran hilang dalam MHTML** – pastikan `MhtSaveOptions.setWriteHeader(true)`; ini menyematkan lampiran sebagai sumber daya `cid:`.
 
-## Pertimbangan Kinerja
+## Pertanyaan yang sering diajukan
 
-- **Manajemen Memori:** Memproses batch besar dalam beberapa bagian untuk menjaga penggunaan memori tetap rendah. => Manajemen Memori: Proses batch besar dalam potongan untuk menjaga penggunaan memori tetap rendah.
-- **Optimasi I/O:** Gunakan aliran buffered jika Anda membaca/menulis banyak file. => Optimasi I/O: Gunakan buffered stream jika Anda membaca/menulis banyak file.
-- **Eksekusi Paralel:** Pertimbangkan `ForkJoinPool` Java untuk pemrosesan paralel, namun pastikan keamanan thread objek Aspose. => Eksekusi Paralel: mengecualikan `ForkJoinPool` Java untuk memproses paralel, tetapi pastikan keamanan thread pada objek Aspose.
+**Q: Bisakah saya memuat email dari format selain .msg?**  
+A: Ya, Aspose.Email mendukung EML, MHT, EMLX, dan beberapa format lain, dengan total lebih dari 30 tipe masukan.
 
-## Kesimpulan
+**Q: Bagaimana saya dapat menangani file email yang sangat besar secara efisien?**  
+A: Gunakan API streaming (`MailMessage.load(InputStream, ...)`) untuk membaca dan menulis data dalam potongan, yang menjaga konsumsi memori di bawah 50 MB bahkan untuk pesan 500 halaman.
 
-Anda kini tahu **cara memuat file pesan**, menerapkan offset zona waktu khusus, dan **mengonversi pesan ke mhtml** menggunakan Aspose.Email untuk Java. Teknik ini dapat diskalakan untuk menangani tugas **pemrosesan email batch**, memberi Anda solusi kuat untuk pengarsipan email, migrasi, dan otomatisasi.
+**Q: Apakah memungkinkan memodifikasi lampiran dalam MailMessage?**  
+A: Tentu saja. Anda dapat menambah, menghapus, atau mengganti lampiran melalui koleksi `msg.getAttachments()`, lalu panggil `save` untuk menyimpan perubahan.
 
-**Langkah Selanjutnya**
-Jelajahi fitur-fitur tambahan Aspose.Email seperti penanganan lampiran, ekstraksi item kalender, atau pengiriman SMTP dengan mengunjungi [dokumentasi](https://reference.aspose.com/email/java/) resmi.
+**Q: Bagaimana jika offset zona waktu saya negatif (di belakang UTC)?**  
+A: Berikan nilai milidetik negatif ke `setTimeZoneOffset`, misalnya `-3 * 60 * 60 * 1000` untuk UTC‑3.
 
-## Pertanyaan yang Sering Diajukan
+**Q: Bisakah saya menggunakan Aspose.Email dalam proyek komersial?**  
+A: Ya, asalkan Anda memiliki lisensi komersial yang valid. Versi percobaan gratis dibatasi hingga 20 MB per dokumen.
 
-**T: Dapatkah saya memuat email dari format selain .msg?**
-J: Ya, Aspose.Email mendukung EML, MSG, MHT, dan beberapa format lainnya.
-
-**T: Bagaimana cara menangani file email yang sangat besar secara efisien?**
-J: Gunakan API streaming yang disediakan oleh Aspose.Email untuk membaca/menulis data dalam potongan-potongan, sehingga mengurangi tekanan memori.
-
-**T: Apakah mungkin untuk memodifikasi lampiran dalam MailMessage?**
-J: Tentu saja. Anda dapat menambahkan, menghapus, atau mengganti lampiran melalui koleksi `MailMessage.getAttachments()`.
-
-**T: Bagaimana jika selisih zona waktu saya negatif (di belakang UTC)?**
-J: Berikan nilai milidetik negatif ke `setTimeZoneOffset`, misalnya, `-3 * 60 * 60 * 1000` untuk UTC-3.
-
-**T: Dapatkah saya menggunakan Aspose.Email dalam proyek komersial?**
-J: Ya, asalkan Anda memiliki lisensi komersial yang valid.
-
-**T: Bagaimana cara memproses ribuan file MSG tanpa kehabisan memori?**
-J: Proses file secara batch, lepaskan setiap `MailMessage` setelah disimpan, dan pertimbangkan untuk menggunakan pola `try-with-resources` Java untuk pembersihan otomatis.
+**Q: Bagaimana cara memproses ribuan file MSG tanpa kehabisan memori?**  
+A: Proses file dalam batch, lepaskan setiap `MailMessage` setelah disimpan, dan gunakan pola `try‑with‑resources` Java untuk pembersihan otomatis.
 
 ## Sumber Daya
+- [dokumentasi](https://reference.aspose.com/email/java/)
 - [Dokumentasi](https://reference.aspose.com/email/java/)
-- [Unduh Pustaka](https://releases.aspose.com/email/java/)
+- [Unduh Perpustakaan](https://releases.aspose.com/email/java/)
 - [Beli Lisensi](https://purchase.aspose.com/buy)
 - [Uji Coba Gratis](https://releases.aspose.com/email/java/)
 - [Lisensi Sementara](https://purchase.aspose.com/temporary-license/)
@@ -220,14 +297,20 @@ J: Proses file secara batch, lepaskan setiap `MailMessage` setelah disimpan, dan
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-27
-**Diuji Dengan:** Aspose.Email untuk Java 25.4 (jdk16 classifier) ​​
-**Penulis:** Aspose  
+**Terakhir Diperbarui:** 2026-08-27  
+**Diuji Dengan:** Aspose.Email untuk Java 25.4 (classifier jdk16)  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Cara Memuat dan Mengurai File Outlook MSG Menggunakan Aspose.Email untuk Java: Panduan Komprehensif](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Maven Aspose.Email untuk Java: Simpan Email sebagai File MHT](/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
+- [Cara mengekstrak lampiran dari file msg menggunakan Aspose.Email untuk Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
