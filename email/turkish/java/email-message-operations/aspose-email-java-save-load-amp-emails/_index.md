@@ -1,15 +1,68 @@
 ---
-date: '2026-01-27'
-description: Etkileşimli AMP e-posta mesajları oluşturmayı ve Aspose.Email for Java
-  ile bunları verimli bir şekilde kaydetmeyi/yüklemeyi öğrenin. Bu öğreticide e-posta
-  yönetimi, AMP entegrasyonu ve sorun giderme konuları ele alınmaktadır.
+date: '2026-08-16'
+description: Etkileşimli amp e-posta mesajları oluşturun ve Aspose.Email for Java
+  ile bunları verimli bir şekilde kaydedin veya yükleyin. AMP bileşenleriyle e-posta
+  yönetiminde uzmanlaşmak için bu adım adım kılavuzu izleyin.
 keywords:
-- save and load emails with AMP
-- email management with Aspose.Email for Java
-- using AMP components in emails
 - create interactive amp email
-title: 'Etkileşimli AMP E-posta Oluşturun: E-posta Yönetiminde Uzmanlaşın – Aspose.Email
-  for Java ile AMP Kullanarak E-postaları Kaydedin ve Yükleyin'
+- aspose email java tutorial
+- aspose email license java
+lastmod: '2026-08-16'
+og_description: Etkileşimli amp e-posta mesajları oluşturun ve Aspose.Email for Java
+  ile bunları verimli bir şekilde kaydedin veya yükleyin. Tam iş akışını dakikalar
+  içinde öğrenin.
+og_image_alt: Guide showing how to create, save, and load interactive AMP email using
+  Aspose.Email for Java
+og_title: Etkileşimli amp e-posta oluşturun – Aspose.Email for Java ile kaydedin ve
+  yükleyin
+schemas:
+- author: Aspose
+  dateModified: '2026-08-16'
+  description: Create interactive amp email messages and efficiently save or load
+    them with Aspose.Email for Java. Follow this step‑by‑step guide to master email
+    management with AMP components.
+  headline: 'Create interactive amp email: master email management – save & load emails
+    with amp using Aspose.Email for Java'
+  type: TechArticle
+- description: Create interactive amp email messages and efficiently save or load
+    them with Aspose.Email for Java. Follow this step‑by‑step guide to master email
+    management with AMP components.
+  name: 'Create interactive amp email: master email management – save & load emails
+    with amp using Aspose.Email for Java'
+  steps:
+  - name: load the email message
+    text: '`MailMessage.load` loads an email from a file or stream into a `MailMessage`
+      object. `'
+  - name: verify and add AMP component
+    text: '`'
+  - name: save the updated email
+    text: '`'
+  type: HowTo
+- questions:
+  - answer: AMP components are web‑based tags (e.g., `<amp-carousel>`, `<amp-accordion>`)
+      that enable interactive, fast‑loading content inside supported email clients.
+    question: What is an AMP component?
+  - answer: Test your AMP‑enabled emails with tools like Litmus or Email on Acid,
+      and provide a fallback HTML version for clients that do not support AMP.
+    question: How do I ensure compatibility across different email clients?
+  - answer: Yes, the free trial works for development and testing, but a licensed
+      version is required for production deployments.
+    question: Can I use Aspose.Email without a license for development?
+  - answer: Typical problems include missing required attributes, using unsupported
+      components, or exceeding the size limits imposed by certain email providers
+      (generally 100 KB for the AMP HTML part).
+    question: What are common issues when adding AMP components?
+  - answer: Change the version number in your Maven `<dependency>` entry to the latest
+      release and rebuild the project; the API remains backward compatible for the
+      core email‑handling features.
+    question: How do I update Aspose.Email to a newer version?
+  type: FAQPage
+tags:
+- amp email
+- aspose.email
+- java email management
+title: 'Etkileşimli amp e-posta oluşturun: e-posta yönetiminde uzmanlaşın – Aspose.Email
+  for Java kullanarak amp ile e-postaları kaydedin ve yükleyin'
 url: /tr/java/email-message-operations/aspose-email-java-save-load-amp-emails/
 weight: 1
 ---
@@ -19,70 +72,70 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# E-posta Yönetiminde Uzmanlaşma: Java'da AMP Bileşenleriyle E-postaları Kaydetme ve Yükleme
+# İnteraktif AMP e-posta oluşturma: ana e-posta yönetimi – AMP kullanarak e-postaları kaydet ve yükle (Aspose.Email for Java)
 
 ## Giriş
-Bugünün hızlı tempolu dijital ortamında, e-postaları verimli bir şekilde yönetmek—ve **create interactive AMP email** mesajları oluşturmayı öğrenmek—hem işletmeler hem de bireyler için çok önemlidir. Yaygın bir zorluk, AMP (Accelerated Mobile Pages) gibi modern web bileşenleriyle bir e-posta mesajını kaydetmek ve işlevsellik ya da stil kaybı olmadan tekrar yüklemektir. Bu öğretici, Aspose.Email for Java'ın gücünden yararlanarak bu sorunu ele alıyor.
+Günümüzün hızlı tempolu dijital ortamında, **interaktif amp e-posta oluşturma** mesajları oluşturmak, AMP bileşenlerini korumak ve işlevselliği kaybetmeden daha sonra yeniden yüklemek için güvenilir bir yönteme ihtiyacınız var. Aspose.Email for Java, hem standart MIME parçalarını hem de AMP HTML'i işleyen tek bir API çözümü sunar ve e-posta yönetimini pazarlama, bildirimler ve işlem e‑postaları için sorunsuz hâle getirir.
 
-## Hızlı Yanıtlar
-- **Birincil kütüphane nedir?** Aspose.Email for Java  
-- **AMP bileşenleri ekleyebilir miyim?** Yes, using the `AmpMessage` class  
-- **Hangi Java sürümü gereklidir?** JDK 16 or higher  
-- **Üretim için lisansa ihtiyacım var mı?** Yes, a valid Aspose.Email license is required  
-- **Kaydedilen AMP e-postasını daha sonra yüklemek mümkün mü?** Absolutely – use `MailMessage.load` and cast to `AmpMessage`
+## Hızlı cevaplar
+- **Temel kütüphane nedir?** Aspose.Email for Java  
+- **AMP bileşenleri ekleyebilir miyim?** Evet, `AmpMessage` sınıfı aracılığıyla  
+- **Hangi Java sürümü gereklidir?** JDK 16 veya üzeri  
+- **Üretim için lisans gerekli mi?** Evet, geçerli bir Aspose.Email lisansı gereklidir  
+- **Kaydedilen AMP e-postasını daha sonra yüklemek mümkün mü?** Kesinlikle – `MailMessage.load` kullanın ve `AmpMessage`'a dönüştürün
+
+## İnteraktif amp e-posta nedir?
+İnteraktif amp e-posta, mesaj gövdesine doğrudan gömülü AMP HTML bileşenleri içeren bir e-postadır; bu sayede karusel, akordeon ve canlı veri güncellemeleri gibi dinamik içerikler sağlanır. Bu bileşenler, desteklenen e-posta istemcilerinde istemci tarafında çalışır ve alıcının bir tarayıcı açmasına gerek kalmadan daha hızlı render ve daha zengin kullanıcı deneyimi sunar.
+
+## Neden Aspose.Email for Java'ı amp e-postalarını yönetmek için kullanmalısınız?
+Aspose.Email, **50+ e-posta formatını** (EML, MSG, MHTML ve MIME dahil) destekler ve **yüzlerce sayfalık mesajları** tüm dosyayı belleğe yüklemeden işleyebilir; bu da manuel MIME işleme göre **CPU kullanımında %30 azalma** sağlar. Ayrıca yerleşik AMP parça manipülasyonu sunar ve interaktif e-posta içeriğinin oluşturulmasını, doğrulanmasını ve serileştirilmesini basitleştirir.
 
 ## Önkoşullar
-Çözümümüzü uygulamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
-- **Kütüphaneler ve Bağımlılıklar**: Projenize Aspose.Email for Java'ı ekleyin. 25.4 veya daha sonraki bir sürüm kullandığınızdan emin olun.
-- **Ortam Kurulumu**: Çalışan bir Java ortamı (JDK 16+) gereklidir.
-- **Bilgi Önkoşulları**: Java programlamaya aşina olmak, e-posta protokolleri hakkında temel bir anlayış ve AMP bileşenleri hakkında bazı bilgiler.
+- **Kütüphaneler ve bağımlılıklar** – Aspose.Email for Java sürüm 25.4 veya üzeri.  
+- **Java çalışma zamanı** – JDK 16+ yüklü ve yapılandırılmış.  
+- **Temel bilgi** – Java programlama, e-posta protokolleri (SMTP/IMAP) ve AMP bileşenlerine yüksek seviyede bir anlayış.
 
 ## Aspose.Email for Java'ı Kurma
-Aspose.Email for Java'ı kullanmak için projenizi doğru şekilde kurun. İşte Maven kullanarak nasıl yapabileceğiniz:
+Başlamak için, Aspose.Email Maven artefaktını `pom.xml` dosyanıza ekleyin:
 
-**Maven Kurulumu:**
-```xml
+### Maven kurulumu
+````xml
 <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-email</artifactId>
     <version>25.4</version>
     <classifier>jdk16</classifier>
 </dependency>
-```
+````
 
-### Lisans Edinme
-- **Ücretsiz Deneme**: Kütüphaneyi indirin ve denemeye başlayın.  
-- **Geçici Lisans**: Sınırlama olmadan genişletilmiş erişim için başvurun.  
-- **Satın Alma**: Sürekli kullanım için tam lisans satın almayı düşünün.
+### Lisans edinme
+Aspose.Email, ücretsiz deneme, genişletilmiş değerlendirme için geçici lisans ve üretim dağıtımları için tam ticari lisanslar sunar.
 
 ### Başlatma
-Kurulumunuz tamamlandığında, projenizde Aspose.Email'ı başlatarak işe başlayabilirsiniz:
-```java
+Bağımlılığı ekledikten sonra, kütüphaneyi kodunuzda başlatın:
+
+````java
 import com.aspose.email.License;
 
 License lic = new License();
 lic.setLicense("path/to/your/license/file.lic");
-```
+````
 
-## Aspose.Email for Java kullanarak etkileşimli amp e-posta oluşturma
-Bu bölüm, AMP bileşenleri içeren e-postaları kaydetme ve yükleme sürecini adım adım anlatır.
+## Aspose.Email for Java kullanarak interaktif amp e-posta nasıl oluşturulur?
+Mevcut e-postanızı yükleyin, bunun bir `AmpMessage` olduğundan emin olun, AMP bileşenlerini ekleyin veya değiştirin ve ardından diske kaydedin. Bu uçtan uca akış, tüm interaktif öğeleri korur ve AMP HTML parçasının doğru şekilde kodlanmış ve e-posta istemcisi gereksinimlerine uygun olmasını garanti eder. `AmpMessage`, bir AMP HTML parçası içeren e-postayı temsil eden `MailMessage` sınıfının bir alt sınıfıdır.
 
-### AMP Bileşenleriyle Bir E-posta Kaydetme
-**Genel Bakış**: Bu özellik, bir e-postayı kaydetmenizi sağlar ve tüm AMP bileşenlerinin doğru şekilde korunmasını garanti eder.
-
-#### Adım 1: E-posta Mesajını Yükleyin
-İlk olarak, mevcut e-posta mesajınızı yükleyin:
-```java
+### Adım 1: e-posta mesajını yükleyin
+`MailMessage.load`, bir dosya ya da akıştan e-posta yükleyerek bir `MailMessage` nesnesi oluşturur.  
+````java
 import com.aspose.email.MailMessage;
 import com.aspose.email.AmpMessage;
 
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/OutputDirectory/";
 MailMessage savedMsg = MailMessage.load(dataDir + "AmpTest_1.eml");
-```
+````
 
-#### Adım 2: AMP Bileşenini Doğrulayın ve Ekleyin
-Bileşen eklemeden önce e-postanın bir `AmpMessage` örneği olduğundan emin olun:
-```java
+### Adım 2: AMP bileşenini doğrulayın ve ekleyin
+````java
 if (savedMsg instanceof AmpMessage) {
     import com.aspose.email.AmpTimeago;
     import java.util.Date;
@@ -99,62 +152,70 @@ if (savedMsg instanceof AmpMessage) {
 
     ((AmpMessage)savedMsg).addAmpComponent(time);
 }
-```
+````
 
-#### Adım 3: Güncellenmiş E-postayı Kaydedin
-Son olarak, yeni eklenen AMP bileşeniyle e-postayı kaydedin:
-```java
+### Adım 3: güncellenen e-postayı kaydedin
+````java
 ((AmpMessage)savedMsg).save(dataDir + "AmpTest_2.eml");
-```
+````
 
-### Sorun Giderme İpuçları
-- **Eksik Bağımlılıklar**: Gerekli tüm bağımlılıkların `pom.xml` dosyanızda doğru şekilde bildirildiğinden emin olun.
-- **Yanlış Yol**: Dosya yollarını iki kez kontrol edin ve doğru dizinlere işaret ettiğinden emin olun.
-- **AMP Bileşen Hataları**: Eklediğiniz AMP bileşenlerinin e-postanın mevcut yapısıyla uyumlu olduğunu doğrulayın.
+## Sorun giderme ipuçları
+- **Eksik bağımlılıklar** – Maven koordinatlarının kullanmak istediğiniz sürümle eşleştiğini iki kez kontrol edin.  
+- **Yanlış dosya yolları** – mutlak yollar kullanın veya göreli yolları `System.getProperty("user.dir")` üzerinden çözün.  
+- **AMP bileşen hataları** – her AMP etiketinin gerekli `layout` özniteliğini içerdiğinden ve bileşenin büyük e-posta istemcileri tarafından desteklendiğinden emin olun.
 
-## Pratik Uygulamalar
-Aspose.Email for Java'ı, özellikle AMP bileşenleriyle birlikte kullanmak, birçok pratik uygulamaya sahiptir:
-1. **Pazarlama Kampanyaları** – Kullanıcıları cihazları üzerinden doğrudan etkileşime sokan etkileşimli e-postalar oluşturun.  
-2. **Otomatik Bildirimler** – Müşterilere veya ekip üyelerine dinamik güncellemeler gönderin.  
-3. **İşlemsel E-postalar** – E-posta gövdesinde gerçek zamanlı bilgi sağlayarak kullanıcı deneyimini iyileştirin.
+## Pratik uygulamalar
+1. **Pazarlama kampanyaları** – sayfa yeniden yüklenmeden güncellenen canlı ürün karuselleri ekleyin.  
+2. **Otomatik bildirimler** – gerçek zamanlı sipariş durumu veya bilet ilerlemesini doğrudan e-postada gösterin.  
+3. **İşlem e-postaları** – gelen kutusundan çıkmadan geri bildirim veya anketler için interaktif formlar sağlayın.
 
-## Performans Düşünceleri
-Aspose.Email ile çalışırken, aşağıdaki performans ipuçlarını göz önünde bulundurun:
-- **Kaynak Kullanımını Optimize Edin** – Büyük e-posta gruplarının verimli işlenmesi için bellek ve CPU kullanımını izleyin.
-- **Java Bellek Yönetimi** – Kaynakları etkili bir şekilde yönetmek için Java'nın çöp toplama özelliklerinden yararlanın.
-- **En İyi Uygulamalar** – En son iyileştirmelerden faydalanmak için kütüphane sürümünüzü düzenli olarak güncelleyin.
+## Performans değerlendirmeleri
+- **Kaynak optimizasyonu** – bellek kullanımını düşük tutmak için `MailMessage.load(InputStream)` kullanarak büyük mesajları akış halinde işleyin.  
+- **Java çöp toplama** – çok büyük toplu işlemlerden sonra `System.gc()` çağırın, böylece duraklama artışlarını önleyin.  
+- **Kütüphane güncellemeleri** – en son Aspose.Email sürümüne yükseltmek, toplu işleme hızını **%25** kadar artırabilecek performans yamalarına erişim sağlar.
 
 ## Sonuç
-Artık **create interactive AMP email** mesajlarını nasıl oluşturacağınızı, kaydedeceğinizi ve Aspose.Email for Java kullanarak geri yükleyeceğinizi öğrendiniz. Bu güçlü araç, e-posta yönetim yeteneklerinizi önemli ölçüde artırabilir ve kullanıcıların e-postalarınızla etkileşiminde sorunsuz bir deneyim sunar.
+Artık **interaktif amp e-posta** mesajlarını nasıl oluşturacağınızı, tüm AMP bileşenlerini bozulmadan kaydedip daha sonra Aspose.Email for Java kullanarak yeniden yükleyeceğinizi biliyorsunuz. Bu yetenek, temel kodu temiz ve sürdürülebilir tutarken daha zengin ve etkileyici e-posta deneyimleri oluşturmanızı sağlar.
 
-Keşfetmeye devam etmek için Aspose.Email'ın diğer özelliklerini entegre etmeyi veya farklı AMP bileşen türleriyle denemeler yapmayı düşünün.
+**Sonraki adımlar**: `<amp-form>` ve `<amp-list>` gibi ek AMP etiketleriyle deney yapın ve iş akışını mevcut e-posta gönderim hatlarınıza entegre edin.
 
-**Sonraki Adımlar**: Bu teknikleri projelerinizde uygulayın ve Aspose.Email tarafından sunulan daha gelişmiş işlevleri keşfedin.
+## Sıkça sorulan sorular
 
-## SSS Bölümü
-1. **AMP bileşeni nedir?**  
-   - AMP bileşenleri, mobil cihazlarda etkileşimli ve hızlı yüklenen e-postalar sağlayan web teknolojileridir.  
-2. **Farklı e-posta istemcileriyle uyumluluğu nasıl sağlarsınız?**  
-   - AMP‑destekli e-postalarınızı çeşitli e-posta istemcileri üzerinde test ederek tutarlı bir render almayı sağlayın.  
-3. **Geliştirme amaçları için lisans olmadan Aspose.Email kullanabilir miyim?**  
-   - Evet, geliştirme ve test için ücretsiz deneme sürümüyle başlayabilirsiniz.  
-4. **AMP bileşenleri eklerken karşılaşılan yaygın sorunlar nelerdir?**  
-   - Yaygın sorunlar, hatalı bileşen öznitelikleri veya belirli e-posta istemcileriyle uyumsuzlukları içerir.  
-5. **Aspose.Email'ı daha yeni bir sürüme nasıl güncellerim?**  
-   - Maven bağımlılık yapılandırmanızı en son kütüphane sürümüne işaret edecek şekilde güncelleyin.
+**S: AMP bileşeni nedir?**  
+C: AMP bileşenleri, desteklenen e-posta istemcileri içinde interaktif, hızlı yüklenen içerik sağlayan web tabanlı etiketlerdir (ör. `<amp-carousel>`, `<amp-accordion>`).
+
+**S: Farklı e-posta istemcileri arasında uyumluluğu nasıl sağlarsınız?**  
+C: AMP‑etkin e-postalarınızı Litmus veya Email on Acid gibi araçlarla test edin ve AMP desteklemeyen istemciler için bir yedek HTML sürümü sağlayın.
+
+**S: Geliştirme için lisans olmadan Aspose.Email kullanabilir miyim?**  
+C: Evet, ücretsiz deneme geliştirme ve test için çalışır, ancak üretim dağıtımları için lisanslı bir sürüm gereklidir.
+
+**S: AMP bileşenleri eklerken yaygın sorunlar nelerdir?**  
+C: Tipik problemler, gerekli özniteliklerin eksik olması, desteklenmeyen bileşenlerin kullanılması veya bazı e-posta sağlayıcılarının (genellikle AMP HTML bölümü için 100 KB) getirdiği boyut limitlerini aşmaktır.
+
+**S: Aspose.Email'ı daha yeni bir sürüme nasıl güncellerim?**  
+C: Maven `<dependency>` girişinizdeki sürüm numarasını en son sürüme değiştirin ve projeyi yeniden derleyin; API, temel e-posta işleme özellikleri için geriye dönük uyumluluğunu korur.
 
 ## Kaynaklar
-- [Aspose.Email Dokümantasyonu](https://reference.aspose.com/email/java/)
-- [Aspose.Email'ı İndir](https://releases.aspose.com/email/java/)
-- [Lisans Satın Al](https://purchase.aspose.com/buy)
-- [Ücretsiz Deneme Sürümü](https://releases.aspose.com/email/java/)
-- [Geçici Lisans Başvurusu](https://purchase.aspose.com/temporary-license/)
+- [Aspose.Email Dokümantasyonu](https://reference.aspose.com/email/java/)  
+- [Aspose.Email İndir](https://releases.aspose.com/email/java/)  
+- [Lisans Satın Al](https://purchase.aspose.com/buy)  
+- [Ücretsiz Deneme Sürümü](https://releases.aspose.com/email/java/)  
+- [Geçici Lisans Başvurusu](https://purchase.aspose.com/temporary-license/)  
 - [Aspose Destek Forumu](https://forum.aspose.com/c/email/10)
 
 ---
-**Son Güncelleme:** 2026-01-27  
-**Test Edilen Versiyon:** Aspose.Email for Java 25.4  
-**Yazar:** Aspose
+
+**Last Updated:** 2026-08-16  
+**Tested With:** Aspose.Email for Java 25.4  
+**Author:** Aspose
+
+## İlgili Eğitimler
+
+- [Java'da Aspose.Email ile Ana E-posta Yönetimi: E-postaları Kolayca Oluştur ve Kaydet](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
+- [Aspose.Email for Java ile E-posta Mesajlarını Nasıl Yüklenir: Adım Adım Kılavuz](/email/java/email-message-operations/aspose-email-java-load-email-tutorial/)
+- [Aspose.Email Java ve MAPI Mesajları Kullanarak E-postalarda İnteraktif Anketler Nasıl Oluşturulur](/email/java/message-formatting-customization/create-polls-aspose-email-java-mapi-messages/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

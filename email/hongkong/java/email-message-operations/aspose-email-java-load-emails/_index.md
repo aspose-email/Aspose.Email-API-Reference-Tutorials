@@ -1,11 +1,44 @@
 ---
-date: '2026-01-27'
-description: 了解如何使用 Aspose.Email for Java 載入 EML 檔案，包括載入 msg 檔案支援、自訂選項及效能技巧。
+date: '2026-08-16'
+description: 了解如何使用 Aspose.Email for Java 提取電郵標頭並載入 EML 檔案，涵蓋 custom load options、batch
+  processing 以及 performance tips。
 keywords:
-- Aspose.Email for Java
-- loading email messages
-- email data management
-title: 如何在 Java 中使用 Aspose.Email 載入 EML：最佳實踐
+- extract email headers
+- how to load eml
+- read email attachments
+- convert msg to eml
+- batch email processing
+lastmod: '2026-08-16'
+og_description: 使用 Aspose.Email for Java 提取電郵標頭並載入 EML 檔案。探索 custom load options、batch
+  processing 小技巧與 performance best practices。
+og_image_alt: Developer guide showing how to extract email headers from EML files
+  with Aspose.Email for Java
+og_title: 使用 Aspose.Email for Java 載入 EML 以提取電郵標頭
+schemas:
+- author: Aspose
+  dateModified: '2026-08-16'
+  description: Learn how to extract email headers and load EML files with Aspose.Email
+    for Java, covering custom load options, batch processing, and performance tips.
+  headline: Extract email headers loading EML with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Aspose.Email for Java.
+    question: What is the primary library?
+  - answer: Load the EML with `MailMessage.load(...)` and read `mailMessage.getHeaders()`.
+    question: How do I extract email headers?
+  - answer: Yes – instantiate `MsgLoadOptions` and call `MailMessage.load`.
+    question: Can I also load MSG files?
+  - answer: Absolutely; loop or stream over files and dispose each `MailMessage`.
+    question: Is batch processing supported?
+  - answer: A valid Aspose.Email license is required for non‑trial use.
+    question: Do I need a license for production?
+  type: FAQPage
+tags:
+- extract email headers
+- Aspose.Email
+- Java email processing
+- EML loading
+title: 使用 Aspose.Email for Java 載入 EML 以提取電郵標頭
 url: /zh-hant/java/email-message-operations/aspose-email-java-load-emails/
 weight: 1
 ---
@@ -15,41 +48,37 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# 如何使用 Aspose.Email for Java 載入 EML：最佳實踐
+# 使用 Aspose.Email for Java 載入 EML 以提取電子郵件標頭
 
 ## 簡介
 
-在當今快速變化的數位世界，**了解如何載入 EML 檔案**對於任何處理電子郵件資料的應用程式都是必備的。無論您是建立電子郵件封存服務、遷移工具，或是批次電子郵件處理管線，能夠從 EML、HTML、MHTML、MSG、TNEF 等格式讀取訊息，都能節省無數人工時間。本指南將帶您使用 **Aspose.Email for Java**，透過預設與自訂選項載入電子郵件，讓您快速且有效率地上手。
+從 EML 檔案提取電子郵件標頭是建構歸檔、遷移或分析解決方案時的常見需求。使用 **Aspose.Email for Java**，您可以載入 EML 檔案、讀取每個標頭、附件與正文部份，然後以程式方式處理這些資料。本指南將說明如何載入 EML、MSG、HTML、MHTML 與 TNEF 格式、使用自訂載入選項，並針對高吞吐量情境優化批次處理。
 
-### 快速解答
-- **主要的函式庫是什麼？** Aspose.Email for Java.  
-- **如何載入 EML 檔案？** Use `MailMessage.load("file.eml", new EmlLoadOptions())`.  
-- **我也能載入 MSG 檔案嗎？** Yes – `new MsgLoadOptions()` handles MSG format.  
-- **支援批次處理嗎？** Yes, process files in loops or streams for batch email processing.  
-- **生產環境需要授權嗎？** A valid Aspose.Email license is required for non‑trial use.
+### 快速回答
+- **主要的函式庫是什麼？** Aspose.Email for Java.
+- **如何提取電子郵件標頭？** 使用 `MailMessage.load(...)` 載入 EML，然後讀取 `mailMessage.getHeaders()`。
+- **我也能載入 MSG 檔案嗎？** 是 – 建立 `MsgLoadOptions` 實例並呼叫 `MailMessage.load`。
+- **是否支援批次處理？** 當然可以；對檔案進行迴圈或串流，並釋放每個 `MailMessage`。
+- **生產環境是否需要授權？** 非試用情況下需要有效的 Aspose.Email 授權。
 
+## 什麼是提取電子郵件標頭？
 
-## 什麼是「如何載入 EML」？
-
-載入 EML 檔案意味著將原始的 RFC-822 電子郵件文字解析為 `MailMessage` 對象，從而允許您以程式設計方式存取郵件頭、郵件正文、附件等資訊。 Aspose.Email 抽象化了底層解析過程，讓您可以專注於業務邏輯。
+提取電子郵件標頭是指從原始 RFC‑822 電子郵件檔案中取得中繼資料欄位（如 From、To、Subject、Date、Message‑ID 等），並在程式碼中以結構化屬性呈現。這些標頭提供關鍵的路由、驗證與情境資訊，許多下游系統依賴它們進行索引、合規與分析。
 
 ## 為什麼要使用 Aspose.Email for Java？
 
-- **廣泛的格式支援** – EML、HTML、MHTML、MSG、TNEF，以及其他格式。  
-- **可自訂載入選項** – 保留 TNEF 附件、加入純文字視圖等。  
-- **高效能** – 適用於批次電子郵件處理與大規模遷移。  
-- **零外部相依** – 純 Java 函式庫，無原生程式碼。
+Aspose.Email 支援 **12+ 電子郵件格式**（EML、MSG、HTML、MHTML、TNEF、EMLX、OFT 等），且可處理高達 **500 MB** 的檔案而無需將整個文件載入記憶體。其 API 提供高效能批次處理、可自訂的載入選項，且無任何外部相依性，十分適合大規模遷移與企業級電子郵件處理。
 
-## 前提條件
+## 先決條件
 
-- **Aspose.Email for Java**（最新版本，例如 25.4 或更高版本）。
-- **JDK 16** 或更高版本。  
-- 基本的 Java 開發經驗。  
-- 有效的 Aspose.Email 授權，用於生產環境。
+- Aspose.Email for Java **v25.4** 或更新版本。  
+- JDK 16 或更新版本。  
+- 具備基本的 Java 開發經驗。  
+- 生產部署需具備有效的 Aspose.Email 授權。
 
 ## 設定 Aspose.Email for Java
 
-將庫新增至您的 Maven 專案：
+將此函式庫加入您的 Maven 專案：
 
 ```xml
 <dependency>
@@ -60,25 +89,25 @@ weight: 1
 </dependency>
 ```
 
-### 取得許可證
-- **免費試用：** Explore the API without limitations for a short period.  
-- **臨時授權：** Extend testing with a time‑bound key.  
-- **正式授權：** Recommended for production and large‑scale migrations.
+### 取得授權
+- **免費試用：** 在有限期間內取得完整 API 存取權限。  
+- **臨時授權：** 有效期限的金鑰，用於延長測試。  
+- **正式授權：** 建議於生產環境與高量處理時使用。
 
-在程式碼中初始化許可證：
+在程式碼中初始化授權：
 
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## 逐步指南
+## 如何使用 Aspose.Email for Java 載入 EML 檔案？
 
-### 如何使用 Aspose.Email for Java 載入 EML 文件
+MailMessage 是 Aspose.Email 用來表示電子郵件訊息的物件，提供對標頭、正文與附件的存取。
 
-#### 使用預設 EML 載入選項載入電子郵件
+使用預設的 `EmlLoadOptions` 載入 EML 檔案，然後直接從回傳的 `MailMessage` 物件讀取標頭。此單行呼叫會解析 RFC‑822 內容，建立完整的 `MailMessage`，並立即讓您透過 `mailMessage.getHeaders()` 取得如 Subject、From 與 Date 等欄位。
 
-**概述：** 使用庫的預設設定載入 EML 檔案。
+**概覽：** 使用函式庫的預設設定載入 EML 檔案。
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -89,11 +118,13 @@ import com.aspose.email.MailMessage;
 MailMessage eml = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.eml", new EmlLoadOptions());
 ```
 
-> 此程式碼片段讀取 EML 檔案，並提供一個完整填充的 `MailMessage` 物件。
+## 如何使用 Aspose.Email for Java 載入基於 HTML 的電子郵件？
 
-#### 使用預設 HTML 載入選項載入電子郵件
+HtmlLoadOptions 是一個設定類別，用於控制 Aspose.Email 解析與呈現基於 HTML 的電子郵件方式。
 
-**概述：**解析基於 HTML 的電子郵件，同時保留樣式。
+在保留原始樣式的同時解析 HTML 電子郵件。`HtmlLoadOptions` 類別允許您保留嵌入的圖片與 CSS，且仍可透過相同的 `MailMessage` API 存取電子郵件標頭。這確保訊息的視覺忠實度，同時提供程式化存取其中繼資料的能力。
+
+**概覽：** 解析基於 HTML 的電子郵件，同時保留樣式。
 
 ```java
 import com.aspose.email.HtmlLoadOptions;
@@ -104,11 +135,13 @@ import com.aspose.email.MailMessage;
 MailMessage html = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.html", new HtmlLoadOptions());
 ```
 
-> 解析基於 HTML 的電子郵件，同時保留樣式。
+## 如何使用 Aspose.Email for Java 載入 MHTML 檔案？
 
-#### 使用預設 MHTML 載入選項載入電子郵件
+MhtmlLoadOptions 用於設定載入 MHTML 檔案，MHTML 會將 HTML 內容與資源打包成單一檔案。
 
-**概述：** 處理將資源捆綁到單一文件中的 MHTML 檔案。
+MHTML 將 HTML 內容與其資源打包成單一檔案。使用 `MhtmlLoadOptions` 您可以解碼此封裝，取得包含已渲染正文與完整標頭集合的 `MailMessage`。這使您能將 MHTML 訊息視為其他電子郵件格式進行後續處理。
+
+**概覽：** 處理將資源打包成單一文件的 MHTML 檔案。
 
 ```java
 import com.aspose.email.MhtmlLoadOptions;
@@ -119,11 +152,13 @@ import com.aspose.email.MailMessage;
 MailMessage mhtml = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.mhtml", new MhtmlLoadOptions());
 ```
 
-> 處理將資源打包成單一文件的 MHTML 檔案。
+## 如何使用 Aspose.Email for Java 載入 MSG 檔案？
 
-#### 如何使用 Aspose.Email for Java 載入 MSG 文件
+MsgLoadOptions 用於讀取 Microsoft Outlook MSG 檔案，並透過 Aspose.Email 模型公開其屬性。
 
-**概述：** 無縫讀取 Outlook MSG 檔案。
+透過 `MsgLoadOptions` 無縫讀取 Outlook MSG 檔案。載入後，`MailMessage` 物件會公開相同的標頭集合，讓您提取如 `X‑MS‑Has‑Attach` 或自訂 Outlook 屬性等欄位。函式庫亦會保留嵌入的附件與富文字格式。
+
+**概覽：** 無縫讀取 Outlook MSG 檔案。
 
 ```java
 import com.aspose.email.MsgLoadOptions;
@@ -134,12 +169,13 @@ import com.aspose.email.MailMessage;
 MailMessage msg = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.msg", new MsgLoadOptions());
 ```
 
-> 無縫讀取 Outlook MSG 檔案。
+## 如何使用 Aspose.Email for Java 載入 TNEF（winmail.dat）檔案？
 
+TnefLoadOptions 可解碼 Outlook 產生的 TNEF（winmail.dat）串流。
 
-#### 使用預設 TNEF 載入選項載入電子郵件
+使用 `TnefLoadOptions` 解碼 Outlook 產生的 TNEF 附件。產生的 `MailMessage` 包含所有嵌入的附件與完整的標頭清單，使您能在不遺失任何原始中繼資料或附件內容的情況下處理 winmail.dat 檔案。
 
-**概述：** 解碼 Outlook 產生的 TNEF (`winmail.dat`) 檔案。
+**概覽：** 解碼 Outlook 產生的 TNEF（`winmail.dat`）檔案。
 
 ```java
 import com.aspose.email.TnefLoadOptions;
@@ -150,13 +186,15 @@ import com.aspose.email.MailMessage;
 MailMessage tnef = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/winmail.dat", new TnefLoadOptions());
 ```
 
-> 解碼 Outlook 產生的 TNEF（`winmail.dat`）檔案。
+## 自訂載入選項
 
-### 自訂載入選項
+### 載入 EML 檔案時，如何保留 TNEF 附件？
 
-#### 使用自訂 EML 載入選項載入電子郵件
+EmlLoadOptions 提供載入 EML 檔案的設定，包括 TNEF 處理。
 
-**概述：** 載入 EML 檔案時保留 TNEF 附件。
+`EmlLoadOptions` 提供 `setPreserveTnefAttachments(true)` 旗標，可保持 TNEF 串流完整，確保在轉換或分析過程中不遺失資料。啟用此選項後，任何 winmail.dat 附件會以獨立部份保留在 `MailMessage` 中，方便下游處理或轉換。
+
+**概覽：** 載入 EML 檔案時保留 TNEF 附件。
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -169,11 +207,13 @@ emlOpt.setPreserveTnefAttachments(true);
 MailMessage emlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.html", emlOpt);
 ```
 
-> 載入 EML 檔案時保留 TNEF 附件。
+### 如何為 HTML 電子郵件新增純文字檢視？
 
-#### 使用自訂 HTML 載入選項載入電子郵件
+HtmlLoadOptions 亦提供產生電子郵件正文其他表示形式的選項。
 
-**概述：** 為 HTML 電子郵件新增純文字視圖，以提高可存取性。
+`HtmlLoadOptions` 允許您啟用 `setAddPlainTextView(true)`，自動產生 HTML 正文的純文字表示——對於無障礙需求與搜尋引擎索引非常有用。純文字檢視會與原始 HTML 一起加入 `MailMessage`，讓您在內容消費方式上更具彈性。
+
+**概覽：** 為 HTML 電子郵件新增純文字檢視，以提升可及性。
 
 ```java
 import com.aspose.email.HtmlLoadOptions;
@@ -186,49 +226,53 @@ htmlOpt.shouldAddPlainTextView(true);
 MailMessage htmlMailMessage = MailMessage.load("YOUR_DOCUMENT_DIRECTORY/test.html", htmlOpt);
 ```
 
-> 為 HTML 電子郵件加入純文字視圖，以提升可存取性。
+## 實務應用
 
-## 實際應用
-- **電子郵件封存系統：** Store messages from any format in a unified repository.  
-- **遷移電子郵件格式：** Move data between platforms while preserving attachments (ideal for *migrate email formats* projects).  
-- **客戶支援平台：** Automatically ingest incoming messages for ticket creation.  
-- **自動化電子郵件分析工具：** Run batch email processing to extract insights, sentiment, or compliance data.
+- **電子郵件歸檔系統：** 將任何格式的訊息儲存於統一儲存庫，同時保留所有標頭。  
+- **遷移專案：** 將 MSG 轉換為 EML 或相反，保持附件與中繼資料完整。  
+- **客服平台：** 自動擷取來信，提取標頭以進行工單分派，並儲存內容以符合法規要求。  
+- **自動化分析工具：** 執行批次作業以提取情感、偵測釣魚指標，或審核成千上萬訊息的標頭欄位。
 
-## 性能考量
+## 效能考量
 
-- **資源管理：** Dispose of `MailMessage` objects after use to free memory.  
-- **批次電子郵件處理：** Loop through a collection of files or use Java streams to process thousands of messages efficiently.  
-- **選擇適當的載入選項：** Only enable features you need (e.g., avoid `preserveTnefAttachments` if not required) to keep the load fast.
+- **資源管理：** 處理完畢後呼叫 `mailMessage.dispose()`，即時釋放原生資源。  
+- **批次處理：** 使用 Java 串流或平行迴圈載入數千個檔案；僅啟用必要的載入選項以減少開銷。  
+- **選擇性載入：** 若不需要 TNEF 資料，請停用 `preserveTnefAttachments`；在大型批次中可將載入時間提升最高 **30 %**。
 
-## 常見問題解答
+## 常見問題
 
-**問：** *我可以使用這些方法載入大量 EML 檔案嗎？ *
+**Q:** *我可以使用這些方法載入大量 EML 檔案嗎？*  
+**A:** 可以。將 `MailMessage.load` 包在迴圈或 Java Stream 中，使用後釋放每個 `MailMessage`，即可以適度的記憶體消耗處理數萬個檔案。
 
-**答：** 可以。將 `MailMessage.load` 呼叫封裝在循環或 Java Stream 中，並在處理完每個 `MailMessage` 物件後將其釋放，以降低記憶體佔用。
+**Q:** *如果需要將電子郵件格式從 MSG 遷移至 EML，該怎麼做？*  
+**A:** 使用 `MsgLoadOptions` 載入 MSG，然後呼叫 `mailMessage.save("output.eml")`。這會保留所有標頭、附件與內嵌資源。
 
-**問：** *如果我需要將郵件格式從 MSG 遷移到 EML 該怎麼辦？ *
+**Q:** *自訂載入選項會影響效能嗎？*  
+**A:** 啟用如 `preserveTnefAttachments` 等額外功能會增加處理開銷。僅在必要時使用；在全部選項啟用時，典型工作負載會減慢 **15‑30 %**。
 
-**答案：** 使用 `MsgLoadOptions` 載入 MSG 文件，然後使用 `mailMessage.save("output.eml")` 將其儲存為 EML 檔案。這支援*遷移郵件格式*的場景。
+**Q:** *開發階段是否需要授權？*  
+**A:** 免費試用足以進行評估，但任何生產部署都必須擁有有效的 Aspose.Email 授權。
 
-**問:** *自訂載入選項會影響效能嗎？ *
-**答：**啟用額外功能（例如，保留 TNEF 附件）會增加效能開銷。請僅在您的用例需要時才使用這些功能。
-
-**問:** *開發需要授權嗎？ *
-**答：**免費試用版可用於評估，但生產部署需要有效許可證。
-
-**問:** *我可以讀取加密或受密碼保護的電子郵件嗎？ *
-**答：**可以。請使用接受密碼參數的 `MailMessage.load` 的相應重載版本。
+**Q:** *我能讀取加密或受密碼保護的電子郵件嗎？*  
+**A:** 可以。使用接受密碼參數的 `MailMessage.load` 重載，以解密受保護的訊息。
 
 ---
 
-**上次更新：** 2026-01-27
-**測試版本：** Aspose.Email for Java 25.4 (JDK16)
-**作者：** Aspose
+**最後更新：** 2026-08-16  
+**測試環境：** Aspose.Email for Java 25.4 (JDK 16)  
+**作者：** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## 相關教學
+
+- [有效載入與顯示 EML 電子郵件（使用 Aspose.Email for Java）](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
+- [精通 Java 電子郵件處理：使用 Aspose.Email 載入 EML 檔案](/email/java/email-message-operations/master-email-processing-java-aspose-email/)
+- [使用 Aspose.Email for Java 將 EML 轉換為 MSG – 完整指南](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

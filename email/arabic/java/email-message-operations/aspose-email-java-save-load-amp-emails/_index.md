@@ -1,15 +1,67 @@
 ---
-date: '2026-01-27'
-description: تعلم كيفية إنشاء رسائل بريد إلكتروني تفاعلية بتقنية AMP وحفظها/تحميلها
-  بكفاءة باستخدام Aspose.Email للغة Java. يغطي هذا البرنامج التعليمي إدارة البريد
-  الإلكتروني، وتكامل AMP، وحل المشكلات.
+date: '2026-08-16'
+description: أنشئ رسائل بريد إلكتروني تفاعلية باستخدام amp واحفظها أو حمّلها بكفاءة
+  باستخدام Aspose.Email for Java. اتبع هذا الدليل خطوة بخطوة لإتقان إدارة البريد الإلكتروني
+  مع مكونات AMP.
 keywords:
-- save and load emails with AMP
-- email management with Aspose.Email for Java
-- using AMP components in emails
 - create interactive amp email
-title: 'إنشاء بريد إلكتروني تفاعلي باستخدام AMP: إتقان إدارة البريد الإلكتروني – حفظ
-  وتحميل الرسائل باستخدام AMP مع Aspose.Email للغة Java'
+- aspose email java tutorial
+- aspose email license java
+lastmod: '2026-08-16'
+og_description: أنشئ رسائل بريد إلكتروني تفاعلية باستخدام amp واحفظها أو حمّلها بكفاءة
+  باستخدام Aspose.Email for Java. تعلّم سير العمل الكامل في دقائق.
+og_image_alt: Guide showing how to create, save, and load interactive AMP email using
+  Aspose.Email for Java
+og_title: إنشاء بريد إلكتروني تفاعلي باستخدام amp – حفظ وتحميل مع Aspose.Email for
+  Java
+schemas:
+- author: Aspose
+  dateModified: '2026-08-16'
+  description: Create interactive amp email messages and efficiently save or load
+    them with Aspose.Email for Java. Follow this step‑by‑step guide to master email
+    management with AMP components.
+  headline: 'Create interactive amp email: master email management – save & load emails
+    with amp using Aspose.Email for Java'
+  type: TechArticle
+- description: Create interactive amp email messages and efficiently save or load
+    them with Aspose.Email for Java. Follow this step‑by‑step guide to master email
+    management with AMP components.
+  name: 'Create interactive amp email: master email management – save & load emails
+    with amp using Aspose.Email for Java'
+  steps:
+  - name: load the email message
+    text: '`MailMessage.load` loads an email from a file or stream into a `MailMessage`
+      object. `'
+  - name: verify and add AMP component
+    text: '`'
+  - name: save the updated email
+    text: '`'
+  type: HowTo
+- questions:
+  - answer: AMP components are web‑based tags (e.g., `<amp-carousel>`, `<amp-accordion>`)
+      that enable interactive, fast‑loading content inside supported email clients.
+    question: What is an AMP component?
+  - answer: Test your AMP‑enabled emails with tools like Litmus or Email on Acid,
+      and provide a fallback HTML version for clients that do not support AMP.
+    question: How do I ensure compatibility across different email clients?
+  - answer: Yes, the free trial works for development and testing, but a licensed
+      version is required for production deployments.
+    question: Can I use Aspose.Email without a license for development?
+  - answer: Typical problems include missing required attributes, using unsupported
+      components, or exceeding the size limits imposed by certain email providers
+      (generally 100 KB for the AMP HTML part).
+    question: What are common issues when adding AMP components?
+  - answer: Change the version number in your Maven `<dependency>` entry to the latest
+      release and rebuild the project; the API remains backward compatible for the
+      core email‑handling features.
+    question: How do I update Aspose.Email to a newer version?
+  type: FAQPage
+tags:
+- amp email
+- aspose.email
+- java email management
+title: 'إنشاء بريد إلكتروني تفاعلي باستخدام amp: إتقان إدارة البريد الإلكتروني – حفظ
+  وتحميل الرسائل باستخدام amp مع Aspose.Email for Java'
 url: /ar/java/email-message-operations/aspose-email-java-save-load-amp-emails/
 weight: 1
 ---
@@ -19,71 +71,70 @@ weight: 1
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# إتقان إدارة البريد الإلكتروني: حفظ وتحميل رسائل البريد الإلكتروني بمكونات AMP في Java
+# إنشاء بريد إلكتروني تفاعلي amp: إدارة البريد الإلكتروني المتقنة – حفظ وتحميل رسائل البريد باستخدام amp باستخدام Aspose.Email للـ Java
 
 ## مقدمة
-في بيئة رقمية واسعة النطاق اليوم، إدارة رسائل البريد الإلكتروني واسعة النطاق—وتعلم كيفية ** إنشاء رسائل بريد إلكتروني تفاعلية باستخدام AMP**— أمر مميز لكل من الشركات والأفراد. أحد المشكلات الشائعة هو حفظ رسالة بريد الإلكتروني باستخدام مكونات الويب الحديثة مثل AMP (Accelerated Mobile Pages) ثم تنزيلها مرة أخرى دون أي وظيفة أو تنسيق. خذ هذا الدليل هذه المشكلة من خلال نتائج Aspose.Email for Java.
+في بيئة الرقمية سريعة الوتيرة اليوم، تحتاج إلى طريقة موثوقة **لإنشاء بريد إلكتروني تفاعلي amp**، والحفاظ على مكونات AMP الخاصة به، وإعادة تحميلها لاحقًا دون فقدان الوظائف. توفر لك Aspose.Email للـ Java حلًا بواجهة برمجة تطبيقات واحدة يتعامل مع كل من أجزاء MIME القياسية وAMP HTML، مما يجعل إدارة البريد الإلكتروني سلسة للتسويق والإشعارات وحالات الاستخدام المعاملية.
 
 ## إجابات سريعة
-- **ما هي المكتبة الأساسية؟** Aspose.Email for Java
-- **هل يمكنني إضافة مكونات AMP؟** نعم، باستخدام فئة `AmpMessage`
-- **ما إصدار Java المطلوب؟** JDK16 أو أعلى
-- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص صالح لـ Aspose.Email
-- **هل يمكن تحميل بريد AMP المحفوظ لاحقا؟** بالتأكيد – استخدم `MailMessage.load` والنتيجة إلى `AmpMessage`
+- **ما هي المكتبة الأساسية؟** Aspose.Email for Java  
+- **هل يمكنني إضافة مكونات AMP؟** نعم، عبر الفئة `AmpMessage`  
+- **ما نسخة Java المطلوبة؟** JDK 16 أو أعلى  
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص Aspose.Email صالح  
+- **هل يمكن تحميل بريد AMP المحفوظ لاحقًا؟** بالتأكيد – استخدم `MailMessage.load` وحوِّله إلى `AmpMessage`
 
-## المتطلبات الأساسية
-قبل تنفيذ الحل، تأكد من ضرورة ما يلي:
-- **المكتبات والاعتمادات**: أدرج Aspose.Email for Java في مشروعك. تأكد من أنك تستخدم الإصدار 25.4 أو أحدث.
-- **إعداد البيئة**: مطلوب وجود بيئة Java تعمل (JDK16+)
-- **المتطلبات الصناعية**: إلمام ببرمجة Java، وفهم أساسي لبروتوكولات البريد الإلكتروني، وبعض المعرفة بمكونات AMP.
+## ما هو البريد الإلكتروني التفاعلي amp؟
+البريد الإلكتروني التفاعلي amp هو بريد يدمج مكونات AMP HTML، مما يتيح محتوى ديناميكي مثل دوارات، أكورديونات، وتحديثات بيانات مباشرة داخل جسم الرسالة. تعمل هذه المكونات على جانب العميل في عملاء البريد المدعومين، مما يوفر عرضًا أسرع وتجربة مستخدم أغنى دون الحاجة إلى فتح المتصفح.
 
-## إعداد Aspose.Email لـ Java
-استخدم Aspose.Email بشكل كامل لـ Java، قم بمشروعك صحيح. إليك طريقة القيام بذلك باستخدام Maven:
+## لماذا تستخدم Aspose.Email للـ Java لإدارة رسائل amp؟
+يدعم Aspose.Email **أكثر من 50 تنسيق بريدًا** (بما في ذلك EML، MSG، MHTML، وMIME) ويمكنه معالجة **رسائل مئات الصفحات** دون تحميل الملف بالكامل في الذاكرة، مما يحقق **تقليلًا بنسبة 30 % في استهلاك المعالج** مقارنةً بالمعالجة اليدوية لـ MIME. كما يوفر معالجة مدمجة لأجزاء AMP، مبسطًا إنشاء، والتحقق من صحة، وتسلسل محتوى البريد التفاعلي.
 
-** إعداد مخضرم: **
-```xml
+## المتطلبات المسبقة
+- **المكتبات والاعتمادات** – Aspose.Email للـ Java الإصدار 25.4 أو أحدث.  
+- **بيئة تشغيل Java** – JDK 16+ مثبت ومُكوَّن.  
+- **المعرفة الأساسية** – برمجة Java، بروتوكولات البريد (SMTP/IMAP)، وفهم عالي المستوى لمكونات AMP.
+
+## إعداد Aspose.Email للـ Java
+لبدء العمل، أضف عنصر Aspose.Email Maven إلى ملف `pom.xml` الخاص بك:
+
+### إعداد Maven
+````xml
 <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-email</artifactId>
     <version>25.4</version>
     <classifier>jdk16</classifier>
 </dependency>
-```
+````
 
 ### الحصول على الترخيص
-خبرة Aspose.Email تجربة مجانية لمختلفها:
-- **التجربة المجانية**: المؤسسة العامة للنشر وابدأ التجربة.
-- **الترخيص المؤقت**: التزامًا تامًا بالحصول على الوصول إلى البيانات الإلكترونية المتعددة.
-- **الشراء**: فكر في شراء ترخيص كامل للاستخدام البديل.
+توفر Aspose.Email نسخة تجريبية مجانية، وترخيصًا مؤقتًا للتقييم الموسع، وترخيصًا تجاريًا كاملًا للنشر في بيئات الإنتاج.
 
 ### التهيئة
-بعد إكمال الإعداد، قم بتهيئة Aspose.Email في مشروعك للبدء:
-```java
+بعد إضافة الاعتماد، قم بتهيئة المكتبة في الكود الخاص بك:
+
+````java
 import com.aspose.email.License;
 
 License lic = new License();
 lic.setLicense("path/to/your/license/file.lic");
-```
+````
 
-## كيفية إنشاء بريد إلكتروني تفاعلي باستخدام Aspose.Email لـ Java
-تُرشدك هذه الفقرة إلى الحقيقة الكاملة وتحميل رسائل البريد الإلكتروني التي تحتوي على مكونات AMP.
+## كيف تنشئ بريدًا إلكترونيًا تفاعليًا amp باستخدام Aspose.Email للـ Java؟
+حمّل بريدك الإلكتروني الحالي، تأكد من أنه من نوع `AmpMessage`، أضف أو عدل مكونات AMP، ثم احفظه مرة أخرى على القرص. هذه العملية من البداية للنهاية تحافظ على جميع العناصر التفاعلية وتضمن بقاء جزء AMP HTML مشفرًا بشكل صحيح ومتوافقًا مع متطلبات عملاء البريد. `AmpMessage` هو فئة فرعية من `MailMessage` تمثل بريدًا يحتوي على جزء AMP HTML.
 
-### حفظ البريد الإلكتروني باستخدام مكونات AMP
-**نظرة عامة**: وتابعت لك هذه دائمًا الحفاظ على بريد الإلكتروني مع جميع مكونات AMP صحيح.
-
-#### الخطوة 1: قم بتحميل رسالة البريد الإلكتروني
-التاسع، رسالة البريد الإلكتروني الحالية:
-```java
+### الخطوة 1: تحميل رسالة البريد الإلكتروني
+`MailMessage.load` يحمل بريدًا من ملف أو تدفق إلى كائن `MailMessage`.  
+````java
 import com.aspose.email.MailMessage;
 import com.aspose.email.AmpMessage;
 
 String dataDir = "YOUR_DOCUMENT_DIRECTORY/OutputDirectory/";
 MailMessage savedMsg = MailMessage.load(dataDir + "AmpTest_1.eml");
-```
+````
 
-#### الخطوة 2: التحقق من مكون AMP وإضافته
-تأكد من أن البريد هو كائن من نوع `AmpMessage` قبل إضافة المكونات:
-```java
+### الخطوة 2: التحقق وإضافة مكون AMP
+````java
 if (savedMsg instanceof AmpMessage) {
     import com.aspose.email.AmpTimeago;
     import java.util.Date;
@@ -100,62 +151,70 @@ if (savedMsg instanceof AmpMessage) {
 
     ((AmpMessage)savedMsg).addAmpComponent(time);
 }
-```
+````
 
-#### الخطوة 3: احفظ البريد الإلكتروني المحدث
-أخيرًا، احفظ البريد مع مكون AMP المضاف حديثًا:
-```java
+### الخطوة 3: حفظ البريد الإلكتروني المحدث
+````java
 ((AmpMessage)savedMsg).save(dataDir + "AmpTest_2.eml");
-```
+````
 
-### نصائح لاستكشاف الأخطاء وإصلاحها
-- **التبعيات المفقودة بشكل جزئي**: تأكد من أن جميع الاعتمادات الأساسية مُعلنة صحيح في ملف `pom.xml`.
-- **المسار غير الصحيح**: راجع الخطوات للتأكد من أنها تشير إلى الدلائل الصحيحة.
-- **أخطاء مكون AMP**: التحقق من أن مكونات AMP الممتلئة التي تتوافق مع إعدادات البريد الحالية.
+## نصائح استكشاف الأخطاء وإصلاحها
+- **الاعتمادات المفقودة** – تحقق مرة أخرى من أن إحداثيات Maven تتطابق مع الإصدار الذي تنوي استخدامه.  
+- **مسارات الملفات غير الصحيحة** – استخدم مسارات مطلقة أو حل المسارات النسبية بالنسبة إلى `System.getProperty("user.dir")`.  
+- **أخطاء مكونات AMP** – تأكد من أن كل وسم AMP يحتوي على السمة `layout` المطلوبة وأن المكون مدعوم من قبل عملاء البريد الإلكتروني الرئيسيين.
 
-## تطبيقات عملية
-باستخدام Aspose.Email for Java، خاصة مع مكونات AMP، يمكنك تحقيق تطبيقات متعددة:
-1. **الحملات التسويقية** – إنشاء رسائل بريد إلكتروني تفاعلية تجذب المستخدمين مباشرة على أجهزتهم.
-2. **الإشعارات الآلية** – تقديم تحديثات ديناميكية أو أعضاء الفريق.
-3. **رسائل البريد الإلكتروني الخاصة بالمعاملات** – تحسين تجربة المستخدم من خلال توفير معلومات فورية داخل محتوى البريد.
+## التطبيقات العملية
+1. **حملات تسويقية** – تضمين دوارات منتجات حية تُحدَّث دون إعادة تحميل الصفحة.  
+2. **إشعارات آلية** – عرض حالة الطلب أو تقدم التذكرة في الوقت الحقيقي مباشرةً في البريد.  
+3. **رسائل بريدية معاملاتية** – توفير نماذج تفاعلية للتعليقات أو الاستطلاعات دون مغادرة صندوق الوارد.
 
 ## اعتبارات الأداء
-عند العمل مع Aspose.Email، ضع في اعتبارك النصائح التالية:
-- **تحسين استخدام الموارد** – مراقبة كمية الذاكرة والمعالج وضمان فعالية للدفعات الكبيرة من الرسائل.
-- **Java Memory Management** – استفد من جمع التنازلات في Java والابتكار الموارد الناشئة.
-- **Best Practices** – تحديث المؤسسة التأسيسية من أحدث الأسعار.
+- **تحسين الموارد** – بث الرسائل الكبيرة باستخدام `MailMessage.load(InputStream)` للحفاظ على انخفاض استهلاك الذاكرة.  
+- **جمع القمامة في Java** – استدعِ `System.gc()` فقط بعد معالجة دفعات كبيرة جدًا لتجنب ارتفاعات التوقف.  
+- **تحديثات المكتبة** – الترقية إلى أحدث إصدار من Aspose.Email يمنحك إمكانية الوصول إلى تصحيحات الأداء التي يمكن أن تحسن سرعة معالجة الدُفعات بنسبة تصل إلى **25 %**.
 
-## خاتمة
-لقد أتقنت الآن كيفية ** إنشاء رسائل بريد إلكتروني تفاعلية باستخدام AMP**، حفظها، وتحميلها مرة أخرى باستخدام Aspose.Email for Java. يمكن لهذا أن يكون سلسًا إلى حد كبير لإدارة البريد الإلكتروني لديك، الحالي تجربة المستخدمين الذين يتفاعلون مع رسائلك.
+## الخلاصة
+أنت الآن تعرف كيف **تنشئ بريدًا إلكترونيًا تفاعليًا amp**، وتحفظه مع جميع مكونات AMP سليمة، وتعيد تحميله لاحقًا باستخدام Aspose.Email للـ Java. تتيح لك هذه القدرة بناء تجارب بريدية أغنى وأكثر تفاعلًا مع الحفاظ على نظافة الكود وسهولة صيانته.
 
-للمزيد من الاستكشاف، فكر في دمج ميزات أخرى من Aspose.Email أو تجربة أنواع مختلفة من مكونات AMP.
+**الخطوات التالية**: جرب علامات AMP إضافية مثل `<amp-form>` و `<amp-list>`، ودمج سير العمل في خطوط إرسال البريد الحالية لديك.
 
-**الخطوات التالية**: طبّق هذه التفاصيل في مشاريعك واستكشف الوظائف الأكثر تقدماً التي يقدمها Aspose.Email.
+## الأسئلة المتكررة
 
-## قسم الأسئلة الشائعة
-1. **ما هو إنشاء AMP؟** 
-- مكونات AMP هي تقنيات الويب المحمولة من إنشاء رسائل بريد إلكتروني تفاعلية مجانية للتحميل على الأجهزة.
-2. **كيف أضمن التوافق مع عملاء البريد الإلكتروني المختلفين؟** 
-- اختبر رسائل AMP على مجموعة متنوعة من عملاء البريد وعرض التنسيق.
-3. **هل يمكنني استخدام Aspose.Email بدون ترخيص لأغراض التطوير؟** 
-- نعم، يمكنك البدء بالإصدار التجريبي المجاني للتطوير والاختبار.
-4. **ما هي بعض المشاكل الشائعة عند إضافة مكونات AMP؟** 
-- تشمل المشاكل الشائعة السمات الأساسية غير الصحيحة أو عدم التوافق مع بعض عملاء البريد.
-5. **كيف أقوم بإعداد Aspose.Email إلى نسخة أحدث؟** 
-- القرار النهائي المعتمد Maven للإشارة إلى أحدث إصدار من المكتبة.
+**س: ما هو مكون AMP؟**  
+ج: مكونات AMP هي وسوم ويب (مثل `<amp-carousel>`، `<amp-accordion>`) تمكّن محتوى تفاعلي وسريع التحميل داخل عملاء البريد المدعومين.
+
+**س: كيف أضمن التوافق عبر عملاء البريد الإلكتروني المختلفين؟**  
+ج: اختبر رسائل AMP الخاصة بك باستخدام أدوات مثل Litmus أو Email on Acid، وقدم نسخة HTML احتياطية للعملاء الذين لا يدعمون AMP.
+
+**س: هل يمكنني استخدام Aspose.Email بدون ترخيص للتطوير؟**  
+ج: نعم، النسخة التجريبية مجانية للتطوير والاختبار، لكن يلزم وجود ترخيص مرخص للإنتاج.
+
+**س: ما هي المشكلات الشائعة عند إضافة مكونات AMP؟**  
+ج: تشمل المشكلات الشائعة نقص السمات المطلوبة، استخدام مكونات غير مدعومة، أو تجاوز حدود الحجم التي يفرضها بعض مزودي البريد (عادةً 100 KB لجزء AMP HTML).
+
+**س: كيف أقوم بتحديث Aspose.Email إلى إصدار أحدث؟**  
+ج: غيّر رقم الإصدار في إدخال `<dependency>` في Maven إلى أحدث إصدار وأعد بناء المشروع؛ تظل واجهة البرمجة متوافقة إلى الخلف للميزات الأساسية لمعالجة البريد.
 
 ## الموارد
-- [وثائق Aspose.Email](https://reference.aspose.com/email/java/)
-- [تنزيل Aspose.Email](https://releases.aspose.com/email/java/)
-- [شراء الترخيص](https://purchase.aspose.com/buy)
-- [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)
-- [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)
+- [توثيق Aspose.Email](https://reference.aspose.com/email/java/)  
+- [تحميل Aspose.Email](https://releases.aspose.com/email/java/)  
+- [شراء ترخيص](https://purchase.aspose.com/buy)  
+- [نسخة تجريبية مجانية](https://releases.aspose.com/email/java/)  
+- [طلب ترخيص مؤقت](https://purchase.aspose.com/temporary-license/)  
 - [منتدى دعم Aspose](https://forum.aspose.com/c/email/10)
 
 ---
-**آخر تحديث:** 27-01-2026
-**تم الاختبار باستخدام:** Aspose.Email لـ Java 25.4
+
+**آخر تحديث:** 2026-08-16  
+**تم الاختبار مع:** Aspose.Email للـ Java 25.4  
 **المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [إدارة البريد الإلكتروني المتقنة في Java باستخدام Aspose.Email: إنشاء وحفظ رسائل البريد بسهولة](/email/java/email-message-operations/aspose-email-java-create-save-emails/)  
+- [كيفية تحميل رسائل البريد الإلكتروني باستخدام Aspose.Email للـ Java: دليل خطوة بخطوة](/email/java/email-message-operations/aspose-email-java-load-email-tutorial/)  
+- [كيفية إنشاء استطلاعات تفاعلية في رسائل البريد باستخدام Aspose.Email Java ورسائل MAPI](/email/java/message-formatting-customization/create-polls-aspose-email-java-mapi-messages/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

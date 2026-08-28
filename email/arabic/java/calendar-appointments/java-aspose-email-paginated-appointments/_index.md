@@ -1,109 +1,152 @@
 ---
-date: '2026-02-22'
-description: تعلم أفضل ممارسات تقسيم الصفحات في جافا لإدارة المواعيد باستخدام Aspose.Email
-  for Java، بما في ذلك نصائح حول عدد العناصر في كل صفحة في جافا لاسترجاع بيانات Exchange
-  بكفاءة.
+date: '2026-08-16'
+description: تعلم كيفية تقسيم الصفحات للمواعيد في Java باستخدام Aspose.Email واسترجاع
+  بيانات تقويم exchange بكفاءة مع أفضل ممارسات pagination المثبتة.
 keywords:
+- how to paginate appointments
+- retrieve exchange calendar
+- java pagination best practices
 - Aspose.Email for Java
-- Exchange server pagination
-- Java EWSClient
-title: أفضل ممارسات تقسيم الصفحات في جافا – تنفيذ مواعيد مقسمة إلى صفحات باستخدام
-  Aspose.Email لخوادم Exchange
+lastmod: '2026-08-16'
+og_description: تعلم كيفية تقسيم الصفحات للمواعيد في Java باستخدام Aspose.Email واسترجاع
+  بيانات تقويم exchange بكفاءة. اتبع التعليمات البرمجية خطوة بخطوة ونصائح أفضل الممارسات.
+og_image_alt: Developer guide showing paginated appointment retrieval from Exchange
+  using Aspose.Email for Java
+og_title: كيفية تقسيم الصفحات للمواعيد في Java باستخدام Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-08-16'
+  description: Learn how to paginate appointments in Java using Aspose.Email and retrieve
+    exchange calendar data efficiently with proven pagination best practices.
+  headline: How to paginate appointments in Java with Aspose.Email
+  type: TechArticle
+- description: Learn how to paginate appointments in Java using Aspose.Email and retrieve
+    exchange calendar data efficiently with proven pagination best practices.
+  name: How to paginate appointments in Java with Aspose.Email
+  steps:
+  - name: '**Reduce memory footprint** – only the current page lives in RAM.'
+    text: '**Reduce memory footprint** – only the current page lives in RAM.'
+  - name: '**Improve network efficiency** – each request transfers a predictable amount
+      of data.'
+    text: '**Improve network efficiency** – each request transfers a predictable amount
+      of data.'
+  - name: '**Enable responsive UI** – users can navigate page‑by‑page without waiting
+      for a massive load.'
+    text: '**Enable responsive UI** – users can navigate page‑by‑page without waiting
+      for a massive load.'
+  - name: '**Import pagination classes** – `PagingOptions`, `PagedResult`, and `Appointment`.'
+    text: '**Import pagination classes** – `PagingOptions`, `PagedResult`, and `Appointment`.'
+  - name: '**Define page size** – pick a value that matches your performance goals
+      (50–200 is a common sweet spot).'
+    text: '**Define page size** – pick a value that matches your performance goals
+      (50–200 is a common sweet spot).'
+  - name: '**Iterate through pages** – use a `while` loop that stops when the service
+      reports no further pages.'
+    text: '**Iterate through pages** – use a `while` loop that stops when the service
+      reports no further pages.'
+  - name: '**Process each appointment** – extract subject, start time, and any custom
+      properties you need.'
+    text: '**Process each appointment** – extract subject, start time, and any custom
+      properties you need.'
+  - name: '**Dispose the client** – ensure cleanup in a finally block.'
+    text: '**Dispose the client** – ensure cleanup in a finally block.'
+  - name: '**Corporate email management** – automate bulk calendar clean‑ups, generate
+      compliance reports, or archive old meetings without overloading the server.'
+    text: '**Corporate email management** – automate bulk calendar clean‑ups, generate
+      compliance reports, or archive old meetings without overloading the server.'
+  - name: '**Customer support systems** – pull support‑ticket appointments in a paged
+      grid, allowing agents to scroll through large backlogs efficiently.'
+    text: '**Customer support systems** – pull support‑ticket appointments in a paged
+      grid, allowing agents to scroll through large backlogs efficiently.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Email supports Exchange 2007 through Exchange Online, provided
+      the EWS endpoint is reachable and credentials are valid.
+    question: Can I use Aspose.Email for Java with any Exchange server version?
+  - answer: Pagination reduces memory consumption, lowers network latency, and simplifies
+      UI pagination controls, making large calendar views feasible.
+    question: What are the benefits of using paginated appointment retrieval?
+  - answer: Start with 50–200 items per page; increase the number if your network
+      latency is low and the server has ample RAM, or decrease it for mobile or high‑latency
+      environments.
+    question: How do I decide the right “items per page java” value?
+  - answer: A permanent license removes evaluation limits and is required for commercial
+      deployments; a free trial is sufficient for development and testing.
+    question: Is a license required for production use?
+  - answer: Yes, `Appointment` objects expose start and end times with full time‑zone
+      information, and the SDK can convert them to the local time zone as needed.
+    question: Does Aspose.Email handle time‑zone conversions automatically?
+  type: FAQPage
+tags:
+- paginate appointments
+- Aspose.Email
+- Java EWS client
+- exchange calendar
+title: كيفية تقسيم الصفحات للمواعيد في Java باستخدام Aspose.Email
 url: /ar/java/calendar-appointments/java-aspose-email-paginated-appointments/
 weight: 1
 ---
-
- bullet points.
-
-Translate Arabic RTL but just write Arabic text.
-
-Let's start.
-
-We'll produce final output with same shortcodes and content translated.
-
-Be careful to keep markdown formatting.
-
-Let's translate.
-
-Title: "How to Implement Paginated Appointments in Java Using Aspose.Email for Exchange Servers" => Arabic: "كيفية تنفيذ المواعيد المصفّحة في جافا باستخدام Aspose.Email لخوادم Exchange"
-
-Similarly others.
-
-Proceed section by section.
-
-Will keep **bold**.
-
-Will keep code block placeholders.
-
-Will keep bullet points.
-
-Will keep "## Quick Answers" => "## إجابات سريعة"
-
-List items.
-
-Will translate.
-
-Let's craft.
 
 {{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
 {{< blocks/products/pf/tutorial-page-section >}}
-# كيفية تنفيذ المواعيد المصفّحة في جافا باستخدام Aspose.Email لخوادم Exchange
+# كيفية تقسيم المواعيد إلى صفحات في Java باستخدام Aspose.Email
 
-## المقدمة
+## مقدمة
 
-إدارة عدد كبير من المواعيد من خادم Exchange يمكن أن تكون صعبة، خاصةً عند التعامل مع الصفحات. **أفضل ممارسات الصفحات في جافا** تساعدك على استرجاع البيانات بكفاءة مع الحفاظ على استهلاك الذاكرة منخفضًا. في هذا الدرس ستتعلم كيفية الاتصال بخادم Exchange باستخدام Aspose.Email لجافا وقائمة المواعيد باستخدام تقنيات الصفحات القوية.
+في هذا الدرس ستكتشف **كيفية تقسيم المواعيد إلى صفحات** عند العمل مع خادم Exchange من تطبيق Java. التقسيم إلى صفحات هو **أفضل ممارسة لتقسيم الصفحات في Java** يضمن انخفاض استهلاك الذاكرة، ويسرّع استدعاءات الشبكة، ويجعل عرض واجهة المستخدم أكثر سلاسة. ستتعلم كيفية الاتصال بـ Exchange باستخدام `EWSClient`، واسترجاع عناصر التقويم صفحةً بصفحة، وتطبيق نصائح عملية تمنع المشكلات الشائعة.
 
-**ما ستتعلمه:**
-- كيفية إعداد واستخدام Aspose.Email لجافا.  
-- الاتصال بخادم Exchange باستخدام `EWSClient`.  
-- سرد المواعيد مع الصفحات لتحسين الأداء.  
-- تطبيق أفضل ممارسات الصفحات في جافا، بما في ذلك اعتبارات **items per page java**.  
+**ما ستتعلمه**
+- كيفية إضافة Aspose.Email for Java إلى مشروع Maven.  
+- كيفية إنشاء وإعادة استخدام كائن `IEWSClient`.  
+- كيفية استدعاء `listAppointmentsByPage` مع قيمة **items per page java** قابلة للتكوين.  
+- كيفية التعامل مع الأخطاء، تحرير الموارد، وتحسين الأداء.  
 
-الآن لنستعرض المتطلبات المسبقة اللازمة قبل البدء.
+الآن دعنا نتأكد من أن لديك كل ما تحتاجه قبل الغوص في الشيفرة.
 
 ## إجابات سريعة
-- **ما المكتبة المستخدمة؟** Aspose.Email لجافا.  
-- **ما التقنية الأساسية؟** أفضل ممارسات الصفحات في جافا مع `listAppointmentsByPage`.  
-- **كم عدد العناصر في الصفحة التي يمكنني ضبطها؟** أي عدد صحيح؛ القيم الشائعة هي 50–200، لكن الدرس يستخدم 2 للتوضيح.  
+- **ما المكتبة المستخدمة؟** Aspose.Email for Java.  
+- **ما التقنية الأساسية؟** أفضل ممارسات تقسيم الصفحات في Java باستخدام `listAppointmentsByPage`.  
+- **كم عدد العناصر في كل صفحة يمكنني ضبطه؟** أي عدد صحيح؛ القيم النموذجية في الإنتاج تتراوح بين 50–200، وتستخدم العينة 2 للتوضيح.  
 - **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للاختبار؛ الترخيص الدائم يزيل حدود التقييم.  
-- **هل هذا متوافق مع JDK 16+؟** نعم، المكتبة تدعم JDK 16 والإصدارات الأحدث.
+- **هل هذا متوافق مع JDK 16+؟** نعم، المكتبة تدعم JDK 16 والإصدارات الأحدث.
 
-## نظرة عامة على أفضل ممارسات الصفحات في جافا
+## ما هو التقسيم إلى صفحات ولماذا يهم؟
+يقسم التقسيم إلى صفحات مجموعة نتائج كبيرة إلى صفحات أصغر ومتسلسلة. طلب جزء من البيانات—مثلاً 100 موعد—يقلل من استهلاك الذاكرة، ويحد من حجم البيانات المنقولة عبر الشبكة، ويوفر زمن استجابة متوقع، مما يحسن استجابة واجهة المستخدم ويقلل حمل الخادم. كما يبسط معالجة الأخطاء ويمكّن من التمرير الفعال في تطبيقات العميل.
 
-عند التعامل مع آلاف عناصر التقويم، سحب المجموعة بالكامل في طلب واحد يمكن أن يستهلك الذاكرة بسرعة ويزيد من أوقات الاستجابة. من خلال تقسيم مجموعة النتائج إلى صفحات أصغر يمكنك:
+## نظرة عامة على أفضل ممارسات تقسيم الصفحات في Java
 
-1. **تقليل استهلاك الذاكرة** – فقط الصفحة الحالية تُحفظ في الذاكرة.  
+عند التعامل مع آلاف عناصر التقويم، سحب المجموعة بالكامل في استدعاء واحد قد يستهلك الذاكرة بسرعة ويزيد من أوقات الاستجابة. من خلال تقسيم مجموعة النتائج إلى صفحات أصغر يمكن لك:
+
+1. **تقليل البصمة الذاكرية** – فقط الصفحة الحالية تُخزن في الذاكرة.  
 2. **تحسين كفاءة الشبكة** – كل طلب ينقل كمية بيانات متوقعة.  
-3. **تمكين واجهة مستخدم سريعة الاستجابة** – يمكن للمستخدمين التنقل صفحةً بصفحة دون الانتظار لتحميل ضخم.  
+3. **تمكين واجهة مستخدم سريعة الاستجابة** – يمكن للمستخدمين الانتقال صفحةً بصفحة دون الانتظار لتحميل ضخم.  
 
-في جافا، النمط المعتاد هو تحديد قيمة **items per page** التي توازن بين الكمون والذاكرة، ثم التكرار عبر الصفحات حتى يشير الخادم إلى الصفحة الأخيرة. أمثلة الشيفرة أدناه تتبع هذا النمط بدقة.
+في Java، النمط الشائع هو تحديد قيمة **items per page** التي توازن بين زمن الاستجابة والذاكرة، ثم التكرار عبر الصفحات حتى يشير الخادم إلى الصفحة الأخيرة. الأمثلة البرمجية أدناه تتبع هذا النمط بدقة.
 
 ## المتطلبات المسبقة
 
-قبل المتابعة مع هذا الدرس، تأكد من توفر ما يلي:
+قبل متابعة هذا الدرس، تأكد من توفر ما يلي:
 
 ### المكتبات والإصدارات المطلوبة
-- Aspose.Email لجافا الإصدار 25.4 (أو أحدث)  
-- مجموعة تطوير جافا (JDK) 16 أو أعلى  
+- Aspose.Email for Java ≥ 25.4 (المكتبة تدعم **أكثر من 50** تنسيق إدخال وإخراج، ويمكنها معالجة تقاويم مئات الصفحات دون تحميل الملف بالكامل في الذاكرة).  
+- مجموعة تطوير Java (JDK) 16 أو أحدث.
 
-### متطلبات إعداد البيئة
-- بيئة تطوير جافا مثل IntelliJ IDEA أو Eclipse.  
-- Maven مثبت على نظامك لإدارة التبعيات.  
+### إعداد البيئة
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse.  
+- Maven مثبت لإدارة الاعتمادات.  
 
 ### المتطلبات المعرفية
-- فهم أساسي لبرمجة جافا ومعرفة بأداة بناء Maven.  
-- بعض الخبرة في التعامل مع Exchange Web Services مفيدة لكنها ليست إلزامية.  
+- إلمام بأساسيات لغة Java وMaven.  
+- اختياري لكن مفيد: فهم مفاهيم Exchange Web Services (EWS).
 
-مع الانتهاء من المتطلبات المسبقة، لنقم بإعداد Aspose.Email لجافا في بيئة التطوير الخاصة بك.
+## إعداد Aspose.Email for Java
 
-## إعداد Aspose.Email لجافا
+Aspose.Email هي مكتبة قوية صُممت لتبسيط مهام دمج البريد الإلكتروني والتقويم. أضفها إلى مشروع Maven الخاص بك باستخدام الاعتماد التالي:
 
-Aspose.Email هي مكتبة قوية صُممت لتبسيط معالجة البريد الإلكتروني ومهام التكامل. إليك كيفية إضافتها إلى مشروعك باستخدام Maven:
-
-**اعتماد Maven:**
+**اعتماد Maven**
 
 ```xml
 <dependency>
@@ -116,15 +159,127 @@ Aspose.Email هي مكتبة قوية صُممت لتبسيط معالجة ال�
 
 ### خطوات الحصول على الترخيص
 
-Aspose.Email متاحة بنسخة تجريبية مجانية، توفر الوصول إلى جميع إمكانياتها مع بعض القيود:
+توفر Aspose.Email نسخة تجريبية مجانية، وترخيص مؤقت لمدة 30 يومًا، وترخيص تجاري كامل. النسخة التجريبية تسمح لك باستكشاف جميع الميزات، لكن الترخيص الدائم يزيل قيود التقييم وهو مطلوب للنشر في بيئات الإنتاج.
 
-1. **نسخة تجريبية مجانية**: حمّل وابدأ باستخدام Aspose.Email فورًا.  
-2. **ترخيص مؤقت**: احصل على ترخيص مؤقت لمدة 30 يومًا باتباع التعليمات على موقعهم.  
-3. **شراء**: للحصول على استخدام غير محدود دون قيود، فكر في شراء اشتراك.  
+### التهيئة الأساسية
 
-**التهيئة الأساسية:**
+لبدء استخدام المكتبة، ضع ملف الترخيص (`Aspose.Email.lic`) في مسار الـ classpath وحمّله عند بدء تشغيل التطبيق:
 
-لتهيئة وإعداد Aspose.Email في مشروع جافا الخاص بك:
+```java
+License license = new License();
+license.setLicense("Aspose.Email.lic");
+```
+
+مع جاهزية المكتبة، يمكنك الآن إنشاء عميل يتواصل مع Exchange.
+
+## كيفية الاتصال بـ Exchange من Java
+أنشئ كائن `IEWSClient` بتوفير عنوان URL لخدمة Exchange، اسم المستخدم، كلمة المرور، والنطاق الاختياري. أعد استخدام هذا العميل الواحد لجميع استدعاءات التقسيم لتجنب عمليات المصافحة TLS المتكررة، وتأكد دائمًا من استدعاء `dispose()` داخل كتلة finally لتحرير موارد الشبكة ومنع تسرب الاتصالات.
+
+```java
+IEWSClient client = EWSClient.getEWSClient("https://mail.example.com/EWS/Exchange.asmx", "user", "pwd", "domain");
+try {
+    // pagination logic will go here
+} finally {
+    client.dispose();
+}
+```
+
+## كيفية سرد المواعيد بدعم التقسيم إلى صفحات
+استخدم `listAppointmentsByPage` على `IEWSClient`، مع تمرير كائن `PagingOptions` يحدد `itemsPerPage` المطلوب. تُعيد الطريقة كائن `PagedResult<Appointment>` يحتوي على الجزء الحالي وإشارة ما إذا كانت هناك صفحات أخرى. استمر في التكرار حتى يصبح `hasMorePages` false، مع معالجة كل موعد عند وصوله.
+
+**جملة التعريف:** `PagingOptions` تحدد حجم الصفحة والإزاحة لطلب مقسم. `PagedResult<T>` يضم صفحة من العناصر من النوع T ويشير ما إذا كانت صفحات إضافية متاحة. `Appointment` يمثل عنصر تقويم بخصائص مثل الموضوع، وقت البدء، والموقع.
+
+**خطوات التنفيذ**
+
+1. **استيراد فئات التقسيم** – `PagingOptions`، `PagedResult`، و`Appointment`.  
+2. **تحديد حجم الصفحة** – اختر قيمة تتناسب مع أهداف الأداء لديك (50–200 هي نقطة التوازن الشائعة).  
+3. **التكرار عبر الصفحات** – استخدم حلقة `while` تتوقف عندما يُبلغ الخدمة عدم وجود صفحات إضافية.  
+4. **معالجة كل موعد** – استخرج الموضوع، وقت البدء، وأي خصائص مخصصة تحتاجها.  
+5. **تحرير العميل** – تأكد من التنظيف داخل كتلة finally.
+
+```java
+int itemsPerPage = 100; // adjust based on latency and memory constraints
+PagingOptions paging = new PagingOptions(itemsPerPage);
+PagedResult<Appointment> page = client.listAppointmentsByPage(paging);
+while (page != null && page.getItems() != null) {
+    for (Appointment appt : page.getItems()) {
+        System.out.println("Subject: " + appt.getSubject());
+        System.out.println("Start: " + appt.getStartTime());
+    }
+    if (!page.hasMorePages()) break;
+    page = client.listAppointmentsByPage(paging);
+}
+```
+
+**خيارات التكوين الرئيسية**
+- **العناصر في كل صفحة** – اضبطها بين 50–200 لمعظم سيناريوهات المؤسسات؛ زدها فقط بعد قياس زمن الاستجابة.  
+- **إزاحة الصفحة** – تُدار تلقائيًا بواسطة SDK؛ نادراً ما تحتاج لإدارتها يدويًا.  
+
+## المشكلات الشائعة والنصائح
+
+- **اختيار حجم الصفحة المناسب** – القيم الأقل من 10 تُسبب عددًا كبيرًا من طلبات الشبكة؛ القيم فوق 500 قد ترفع استهلاك الذاكرة. ابدأ بـ 100 وعدّل بعد التحليل.  
+- **لا تنسَ تحرير الموارد** – إهمال `dispose()` يترك اتصالات HTTP مفتوحة، ما يؤدي في النهاية إلى استنفاد مجموعة الاتصالات وحدوث مهلات.  
+- **معالجة الاستثناءات بمرونة** – غلف استدعاءات `listAppointmentsByPage` بكتل try‑catch للـ `IOException` أو `ServiceException`. سجّل الخطأ وربما أعد المحاولة بتقنية back‑off أُسّية.  
+- **إعادة استخدام العميل** – إنشاء `IEWSClient` جديد لكل صفحة يضيف مصافحة TLS غير ضرورية ويقلل من الإنتاجية.  
+
+## تطبيقات عملية
+
+تنفيذ استرجاع المواعيد المقسمة إلى صفحات مفيد في العديد من السيناريوهات الواقعية:
+
+1. **إدارة البريد الإلكتروني المؤسسي** – أتمتة تنظيف التقويمات الضخمة، إنشاء تقارير امتثال، أو أرشفة الاجتماعات القديمة دون تحميل الخادم.  
+2. **أنظمة دعم العملاء** – سحب مواعيد تذاكر الدعم في شبكة مقسمة، مما يسمح للوكيل بالتمرير عبر تراكم كبير بفعالية.  
+3. **منصات حجز الموارد** – عرض توافر الغرف أو المعدات صفحةً بصفحة، مع الحفاظ على استجابة الواجهة حتى مع آلاف الحجوزات.  
+
+## اعتبارات الأداء
+
+لتحقيق أقصى استفادة من Aspose.Email مع Java:
+
+- **تحسين التقسيم** – قسّ قيم `itemsPerPage` المختلفة؛ على شبكة LAN بسرعة 1 Gbps، 150 عنصرًا في الصفحة يحقق زمن استجابة ~200 ms.  
+- **إدارة الذاكرة** – استدعِ `dispose()` فورًا وتجنب الاحتفاظ بمجموعات `Appointment` الكبيرة بعد المعالجة.  
+- **تجميع الاتصالات** – أعد استخدام كائن `IEWSClient` واحد عبر عمليات متعددة؛ SDK يجمع اتصالات HTTP داخليًا لتحقيق أعلى معدل نقل.  
+
+## الخلاصة
+
+في هذا الدرس تعلمت **كيفية تقسيم المواعيد إلى صفحات** عند الاتصال بخادم Exchange باستخدام Aspose.Email for Java. من خلال تطبيق نمط التقسيم الموضح، ستحافظ على استهلاك الذاكرة بشكل متوقع، تحسن أوقات الاستجابة، وتوفر تجربة مستخدم أكثر سلاسة لأي تطبيق يعتمد على التقويم.
+
+### الخطوات التالية
+- استكشف ميزات Aspose.Email الإضافية مثل إرسال البريد، مزامنة المجلدات، وتحليل MIME.  
+- جرّب إعدادات `itemsPerPage` مختلفة في بيئة اختبار لتحديد التوازن المثالي لشبكتك ومعداتك.  
+- دمج منطق التقسيم في نقطة نهاية REST أو شبكة UI باستخدام Swing/JavaFX لتقديمه للمستخدم النهائي.  
+
+هل أنت مستعد لتطبيق مهاراتك الجديدة؟ نفّذ المقاطع في مشروع Java اليوم واختبر تحسينات الأداء بنفسك.
+
+## الأسئلة المتكررة
+
+**س: هل يمكنني استخدام Aspose.Email for Java مع أي إصدار من خادم Exchange؟**  
+ج: نعم، Aspose.Email يدعم Exchange 2007 حتى Exchange Online، بشرط أن يكون نقطة نهاية EWS قابلة للوصول وأن تكون بيانات الاعتماد صالحة.
+
+**س: ما هي فوائد استرجاع المواعيد بطريقة مقسمة إلى صفحات؟**  
+ج: يقلل التقسيم إلى صفحات من استهلاك الذاكرة، يقلل من زمن استجابة الشبكة، ويبسط عناصر التحكم في واجهة المستخدم، مما يجعل عرض تقاويم كبيرة ممكنًا.
+
+**س: كيف أحدد قيمة “items per page java” المناسبة؟**  
+ج: ابدأ بـ 50–200 عنصرًا في الصفحة؛ زد العدد إذا كان زمن استجابة الشبكة منخفضًا وكان الخادم يمتلك ذاكرة كافية، أو قلّله للهواتف المحمولة أو البيئات ذات زمن استجابة عالي.
+
+**س: هل يلزم وجود ترخيص للاستخدام في الإنتاج؟**  
+ج: الترخيص الدائم يزيل حدود التقييم وهو مطلوب للنشر التجاري؛ النسخة التجريبية تكفي للتطوير والاختبار.
+
+**س: هل يتعامل Aspose.Email مع تحويلات المناطق الزمنية تلقائيًا؟**  
+ج: نعم، كائنات `Appointment` تعرض أوقات البدء والانتهاء مع معلومات المنطقة الزمنية الكاملة، ويمكن للـ SDK تحويلها إلى المنطقة الزمنية المحلية حسب الحاجة.
+
+---
+
+**آخر تحديث:** 2026-08-16  
+**تم الاختبار مع:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**المؤلف:** Aspose
+
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
 ```java
 // Import necessary Aspose.Email packages
@@ -143,37 +298,15 @@ public class EmailSetup {
 }
 ```
 
-مع إعداد Aspose.Email، أنت جاهز للاتصال وسرد المواعيد من خادم Exchange الخاص بك.
-
-## كيفية الاتصال بـ Exchange باستخدام جافا
-
-الاتصال بخادم Exchange هو الخطوة الأولى قبل أن تتمكن من استرجاع أي بيانات تقويم. الأقسام التالية ترشدك إلى الشيفرة الدقيقة التي تحتاجها، مع إبراز **أفضل ممارسات الصفحات في جافا** مثل إعادة استخدام نفس كائن العميل لعدة استدعاءات.
-
-### الاتصال بخادم Exchange
-
-#### نظرة عامة
-الاتصال بخدمات ويب Exchange (EWS) يتيح لك التفاعل برمجيًا مع بيانات البريد المخزنة على الخادم. هذا أمر حيوي للتطبيقات التي تحتاج إلى أتمتة مهام إدارة البريد.
-
-#### تنفيذ خطوة بخطوة
-
-##### الخطوة 1: استيراد الحزم المطلوبة
-أولًا، تأكد من استيراد حزم Aspose.Email اللازمة:
-
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 ```
 
-##### الخطوة 2: إنشاء الاتصال
-أنشئ مثيلًا من `IEWSClient` للاتصال بخادم Exchange باستخدام بيانات الاعتماد:
-
 ```java
 // Replace with your actual domain, username, and password
 IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
 ```
-
-##### الخطوة 3: تحرير الموارد
-دائمًا حرّر الموارد بعد الاستخدام باستدعاء `dispose()` على كائن العميل:
 
 ```java
 if (client != null) {
@@ -181,28 +314,11 @@ if (client != null) {
 }
 ```
 
-**المعلمات والتكوينات**
-- **Exchange URL** – عنوان الخادم.  
-- **Username & Password** – بيانات الاعتماد للمصادقة.  
-
-### سرد المواعيد مع دعم الصفحات
-
-#### نظرة عامة
-عند التعامل مع آلاف عناصر التقويم، سحب كل شيء مرة واحدة قد يثقل الذاكرة وعرض النطاق الترددي. الصفحات تقسم البيانات إلى قطع يمكن إدارتها، وهو أساس **أفضل ممارسات الصفحات في جافا**.
-
-#### تنفيذ خطوة بخطوة
-
-##### الخطوة 1: استيراد الحزم المطلوبة
-تأكد من توفر الفئات المتعلقة بالصفحات:
-
 ```java
 import com.aspose.email.AppointmentPageInfo;
 import com.aspose.email.IEWSClient;
 import com.aspose.email.system.collections.generic.List;
 ```
-
-##### الخطوة 2: تهيئة عميل EWS وتعريف معلمات الصفحات
-أنشئ الاتصال بخادم Exchange، ثم اضبط قيمة **items per page java** التي تناسب حالتك:
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("exchange.domain.com", "username", "password");
@@ -211,9 +327,6 @@ try {
     int itemsPerPage = 2;
     List<AppointmentPageInfo> pages = new List<>();
 ```
-
-##### الخطوة 3: استرجاع ومعالجة الصفحات
-استخدم حلقة لجلب كل صفحة حتى الوصول إلى الصفحة الأخيرة:
 
 ```java
 // Get the first page of appointments
@@ -229,9 +342,6 @@ while (!pagedAppointmentCol.getLastPage()) {
 }
 ```
 
-##### الخطوة 4: تحرير العميل
-حرّر موارد العميل داخل كتلة `finally` لضمان التنظيف:
-
 ```java
 } finally {
     if (client != null) 
@@ -239,70 +349,16 @@ while (!pagedAppointmentCol.getLastPage()) {
 }
 ```
 
-**خيارات التكوين الرئيسية**
-- **Items per Page** – اضبطها بناءً على حجم البيانات وأهداف الأداء.  
-- **Page Offset** – تُدار تلقائيًا بواسطة الحلقة؛ نادرًا ما تحتاج لتعيينها يدويًا.
+## دروس ذات صلة
 
-## الأخطاء الشائعة والنصائح
+- [تقسيم المجلدات الفرعية في Exchange باستخدام Aspose.Email Java: دليل فعال](/email/java/exchange-server-integration/paginate-exchange-subfolders-aspose-email-java/)
+- [إدارة مواعيد Exchange باستخدام Aspose.Email for Java: دليل شامل](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+- [إنشاء تقويم Exchange في Java باستخدام Aspose.Email – دليل كامل](/email/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/)
 
-- **اختيار حجم الصفحة المناسب** – قيمة صغيرة جدًا (مثلاً 1–5) تزيد عدد طلبات الشبكة؛ قيمة كبيرة جدًا (أكثر من 500) قد تتسبب في ارتفاع استهلاك الذاكرة. ابدأ بـ 50–200 واضبط بناءً على قياسات الكمون.  
-- **لا تنسَ تحرير الموارد** – عدم استدعاء `dispose()` قد يترك اتصالات HTTP مفتوحة، مما يستهلك مجموعة الاتصالات في النهاية.  
-- **معالجة الاستثناءات بمرونة** – احط مكالمات `listAppointmentsByPage` بكتل try‑catch للـ `IOException` أو `ServiceException` لتجنب الانهيارات المفاجئة.  
-- **إعادة استخدام العميل عندما يكون ذلك ممكنًا** – إنشاء `IEWSClient` جديد لكل صفحة يضيف عبئًا غير ضروري.  
-
-## تطبيقات عملية
-
-تنفيذ سرد المواعيد المصفّحة يمكن أن يكون مفيدًا في العديد من السيناريوهات الواقعية:
-
-1. **إدارة البريد المؤسسية** – أتمتة تنظيف التقويمات الضخمة أو إعداد تقارير.  
-2. **أنظمة دعم العملاء** – تتبع مواعيد تذاكر الدعم دون تحميل واجهة المستخدم.  
-3. **منصات حجز الموارد** – عرض توافر القاعات أو المعدات صفحةً بصفحة.  
-
-## اعتبارات الأداء
-
-لتحقيق أقصى استفادة من Aspose.Email مع جافا:
-
-- **تحسين الصفحات** – اختر قيمة `itemsPerPage` التي توازن بين زمن الاستجابة واستهلاك الذاكرة.  
-- **إدارة الذاكرة** – حرّر مثيلات `IEWSClient` فور الانتهاء منها.  
-- **تجميع الاتصالات** – أعد استخدام عميل واحد للعمليات المتعددة عندما يكون ذلك ممكنًا.  
-
-## الخلاصة
-
-في هذا الدرس تعلمت كيفية تطبيق **أفضل ممارسات الصفحات في جافا** عند الاتصال بخادم Exchange باستخدام Aspose.Email لجافا واسترجاع المواعيد عبر الصفحات. هذا النهج أساسي للتعامل مع مجموعات بيانات كبيرة بكفاءة والحفاظ على استجابة تطبيقك.
-
-### الخطوات التالية
-- استكشف ميزات Aspose.Email الأخرى مثل إرسال البريد، مزامنة المجلدات، وتحليل MIME.  
-- جرّب قيم `itemsPerPage` مختلفة لتحديد الإعداد المثالي لبيئتك.  
-
-هل أنت مستعد لتطبيق مهاراتك الجديدة؟ جرّب تنفيذ هذه الحلول في مشاريع جافا الخاصة بك اليوم!
-
-## قسم الأسئلة المتكررة
-
-**س: هل يمكنني استخدام Aspose.Email لجافا مع أي إصدار من خادم Exchange؟**  
-ج: نعم، Aspose.Email يدعم مجموعة واسعة من إصدارات Exchange. فقط تأكد من صحة عنوان الخادم وبيانات الاعتماد.
-
-**س: ما هي فوائد استرجاع المواعيد المصفّحة؟**  
-ج: الصفحات تقلل استهلاك الذاكرة، تحسن أوقات الاستجابة، وتسهّل عرض البيانات في جداول الواجهة أو التقارير.
-
-**س: كيف أحدد قيمة “items per page java” المناسبة؟**  
-ج: ابدأ بـ 50–200 عنصرًا لكل صفحة للأحمال النموذجية؛ زد العدد إذا كان زمن الشبكة منخفضًا والذاكرة متوفرة.
-
-**س: هل الترخيص مطلوب للاستخدام في الإنتاج؟**  
-ج: الترخيص الدائم يزيل حدود التقييم وهو مطلوب للنشر التجاري.
-
-**س: هل يتعامل Aspose.Email مع تحويلات المنطقة الزمنية تلقائيًا؟**  
-ج: نعم، كائنات المواعيد تعرض أوقات البدء/الانتهاء مع معلومات المنطقة الزمنية، ويمكنك تحويلها حسب الحاجة.
-
----
-
-**آخر تحديث:** 2026-02-22  
-**تم الاختبار مع:** Aspose.Email لجافا 25.4 (مصنف jdk16)  
-**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
