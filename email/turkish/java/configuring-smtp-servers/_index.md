@@ -1,119 +1,192 @@
 ---
-date: 2026-03-04
-description: Aspose.Email kullanarak Java’da SMTP sunucusunu nasıl yapılandıracağınızı,
-  güvenli e-posta gönderimi için Java SMTP TLS kurulumunu da içerecek şekilde öğrenin.
-linktitle: Configuring SMTP Servers with Aspose.Email for Java
+date: 2026-08-27
+description: 'Aspose.Email kullanarak Java''da e-posta gönderme: adım adım SMTP yapılandırması,
+  TLS/STARTTLS desteği ve güvenilir teslimat için toplu e-posta en iyi uygulamaları.'
+keywords:
+- how to send email java
+- java bulk email sending
+- java smtp starttls example
+- aspose email java tutorial
+lastmod: 2026-08-27
+linktitle: Java için Aspose.Email ile SMTP Sunucularını Yapılandırma
+og_description: Aspose.Email kullanarak Java'da e-posta gönderme – SMTP ana bilgisayar
+  kurulumu, TLS/STARTTLS yapılandırması ve toplu e-posta en iyi uygulamaları hakkında
+  kısa bir rehber.
+og_image_alt: Screenshot of Aspose.Email Java SMTP configuration guide
+og_title: Aspose.Email SMTP sunucu kurulumu ile Java'da e-posta gönderme
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: 'How to send email java using Aspose.Email: step‑by‑step SMTP configuration,
+    TLS/STARTTLS support, and bulk‑email best practices for reliable delivery.'
+  headline: How to send email java with Aspose.Email SMTP server setup
+  type: TechArticle
+- description: 'How to send email java using Aspose.Email: step‑by‑step SMTP configuration,
+    TLS/STARTTLS support, and bulk‑email best practices for reliable delivery.'
+  name: How to send email java with Aspose.Email SMTP server setup
+  steps:
+  - name: '**Create an SmtpClient instance** – this object represents the connection
+      to your SMTP host.'
+    text: '**Create an SmtpClient instance** – this object represents the connection
+      to your SMTP host.'
+  - name: '**Set host, port, and credentials** – provide the server address, the port
+      number (usually 587 for STARTTLS), and the username/password.'
+    text: '**Set host, port, and credentials** – provide the server address, the port
+      number (usually 587 for STARTTLS), and the username/password.'
+  - name: '**Enable TLS/STARTTLS** – call the appropriate property to secure the channel.'
+    text: '**Enable TLS/STARTTLS** – call the appropriate property to secure the channel.'
+  - name: '**Send a test message** – verify that the configuration works before integrating
+      it into your production workflow.'
+    text: '**Send a test message** – verify that the configuration works before integrating
+      it into your production workflow.'
+  type: HowTo
+- questions:
+  - answer: Absolutely. The library runs on any Java runtime, including cloud‑hosted
+      environments such as AWS Elastic Beanstalk, Azure App Service, and Google Cloud
+      Run.
+    question: Can I use Aspose.Email on a cloud platform like AWS or Azure?
+  - answer: Aspose.Email supports OAuth2 token acquisition; you can pass the token
+      to the `SmtpClient` for authentication without storing passwords.
+    question: What if my SMTP provider requires OAuth2 authentication?
+  - answer: Use a local SMTP testing tool like MailHog or Papercut; point the host
+      and port to the tool and inspect the captured messages.
+    question: How do I test my configuration locally without sending real emails?
+  - answer: Yes—enable logging by calling `client.setLogEnabled(true)`; the library
+      will write the full SMTP exchange to the console or a file you specify.
+    question: Is there a way to log the raw SMTP conversation for debugging?
+  - answer: The library imposes no inherent size limit; you must respect the maximum
+      message size of your SMTP provider, which is typically 25 MB for most services.
+    question: Does Aspose.Email support sending attachments larger than 25 MB?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Java için Aspose.Email ile SMTP Sunucusunu Yapılandırma
+tags:
+- smtp configuration
+- aspose.email
+- java email sending
+title: Aspose.Email SMTP sunucu kurulumu ile Java'da e-posta gönderme
 url: /tr/java/configuring-smtp-servers/
 weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Java için Aspose.Email ile SMTP Sunucusunu Yapılandırma
+# Java ile e-posta gönderme ve Aspose.Email SMTP sunucu kurulumu
 
-Java’da bir SMTP sunucusunu yapılandırmak göz korkutucu görünebilir, ancak **Aspose.Email for Java** ile süreç oldukça basitleşir. Bu öğreticide **SMTP sunucusunu Java'da yapılandırma** yöntemini hızlıca öğrenecek, uygulamalarınızın e‑postaları sorunsuz ve güvenilir bir şekilde göndermesini sağlayacaksınız. İster işlem e‑postası hizmeti, ister toplu bülten göndericisi, ister sadece güvenilir sistem uyarılarına ihtiyaç duyuyor olun, doğru bir SMTP kurulumu başarılı e‑posta tesliminin temelidir.
+Java uygulamasından e-posta göndermek, düşük seviyeli soket yönetimi, özel kimlik doğrulama kodu ve çok sayıda deneme‑yanılma sürecini içerirdi. **Aspose.Email for Java** bu zorluğu ortadan kaldırır. Bu öğreticide, bir SMTP sunucusunu yapılandırarak, TLS/STARTTLS etkinleştirerek ve toplu e-posta en iyi uygulamalarını uygulayarak **java ile e-posta gönderme** yöntemini öğreneceksiniz. İşlem bildirimleri, bülten kampanyaları veya sistem izleme bildirimleri oluşturuyor olsanız da, sağlam bir SMTP yapılandırması güvenilir teslimatın temelidir.
 
-## Hızlı Yanıtlar
+## Hızlı yanıtlar
 - **“configure SMTP server Java” ne anlama geliyor?**  
-  Java uygulamasında SMTP ana bilgisayarını, portunu, kimlik doğrulamasını ve güvenlik seçeneklerini ayarlamaktır.  
-- **Aspose.Email kullanmak için lisansa ihtiyacım var mı?**  
-  Geliştirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gereklidir.  
+  Bu, Java kodunuza SMTP sunucusunun ana bilgisayarını, portunu, kimlik doğrulama bilgilerini ve güvenlik protokolünü belirterek giden e-postanın teslim edilmesini sağlar.  
+- **Aspose.Email'i kullanmak için bir lisansa ihtiyacım var mı?**  
+  Geliştirme için ücretsiz deneme sürümü yeterlidir; üretim kullanımı için ticari lisans gereklidir.  
 - **Hangi Java sürümleri destekleniyor?**  
-  Java 8 ve üzeri, Java 11, 17 ve sonraki LTS sürümleri dahil.  
-- **Aspose.Email ile TLS/SSL kullanabilir miyim?**  
-  Evet—hem STARTTLS hem de SSL/TLS tam olarak desteklenir.  
-- **Hata işleme dahil mi?**  
-  Aspose.Email, sorunları hızlıca tespit etmenize yardımcı olmak için ayrıntılı istisna mesajları ve durum kodları sunar.
+  Java 8, 11, 17 ve sonraki LTS sürümleri tam olarak desteklenir.  
+- **Aspose.Email ile TLS/STARTTLS kullanabilir miyim?**  
+  Evet—hem örtük SSL (port 465) hem de port 587'de STARTTLS yerleşiktir.  
+- **Toplu e-posta gönderimi mümkün mü?**  
+  Kesinlikle; API, alıcı listeleri üzerinden döngü yapmanıza ve dakikada binlerce mesaj göndermenize olanak tanır.
 
-## Java'da bir SMTP sunucusunu yapılandırmak ne demektir?
-SMTP (Simple Mail Transfer Protocol), internet üzerinden e‑posta gönderiminin standart protokolüdür. **SMTP sunucusunu Java'da yapılandırma** yaptığınızda, Java kodunuza giden e‑postaların nereye gönderileceğini, nasıl kimlik doğrulaması yapılacağını ve hangi güvenlik protokolünün kullanılacağını belirtmiş olursunuz.
+## Java'da SMTP sunucusunu yapılandırmak ne demektir?
+Java'da bir SMTP sunucusunu yapılandırmak, uzak posta sunucusunun ana bilgisayarını, port numarasını, kimlik doğrulama verilerini ve güvenlik ayarlarını belirlemek anlamına gelir; böylece uygulamanız mesajları posta taşıma aracına iletebilir. Bu yapılandırma, e-postaların doğru yönlendirilmesini, kimlik bilgilerinin korunmasını ve teslimatın seçilen posta hizmeti sağlayıcısının politikalarına uygun olmasını sağlar.
 
-## SMTP sunucusunu Java'da nasıl yapılandırılır
-Aşağıda Aspose.Email ile gerçekleştireceğiniz adımların özlü, adım‑adım bir özeti yer alıyor:
+## Java'da SMTP sunucusunu nasıl yapılandırılır
+**SmtpClient**, Aspose.Email'in bir SMTP sunucusuna bağlantıyı yöneten sınıfıdır.  
+`SmtpClient` sınıfını yükleyin, özelliklerini ayarlayın ve bir test mesajı gönderin.  
 
-1. **`SmtpClient` örneği oluşturun** – bu nesne SMTP ana bilgisayarınıza bağlantıyı temsil eder.  
-2. **Ana bilgisayarı, portu ve kimlik bilgilerini ayarlayın** – sunucu adresini, port numarasını (genellikle TLS için 587) ve kullanıcı adı/şifreyi sağlayın.  
-3. **TLS/SSL'yi etkinleştirin** – kanalı güvence altına almak için ilgili özelliği çağırın.  
-4. **Test mesajı gönderin** – yapılandırmanın çalıştığını, üretim iş akışınıza entegre etmeden önce doğrulayın.  
+Sunucuyu yapılandırmak için bir `SmtpClient` örneği oluşturun, ana bilgisayarı, portu ve kimlik bilgilerini atayın, istenen güvenlik protokolünü etkinleştirin ve ayarları doğrulamak için bir test e-postası gönderin. Bu sıralama, herhangi bir Java projesine minimum kod değişikliğiyle entegre edilebilecek net, tekrarlanabilir bir iş akışı sağlar.
 
-Bu adımlar, Aspose.Email belgelerinde ayrıntılı olarak ele alınmıştır ve API, düşük seviyeli soket yönetimini soyutlayarak iş mantığınıza odaklanmanızı sağlar.
+1. **SmtpClient örneği oluşturun** – bu nesne SMTP ana bilgisayarınıza olan bağlantıyı temsil eder.  
+2. **Ana bilgisayarı, portu ve kimlik bilgilerini ayarlayın** – sunucu adresini, port numarasını (genellikle STARTTLS için 587) ve kullanıcı adı/şifreyi sağlayın.  
+3. **TLS/STARTTLS'i etkinleştirin** – kanalı güvenli hale getirmek için ilgili özelliği çağırın.  
+4. **Bir test mesajı gönderin** – üretim iş akışınıza entegre etmeden önce yapılandırmanın çalıştığını doğrulayın.  
+
+Bu adımlar resmi Aspose.Email belgelerinde ele alınmıştır ve API, düşük seviyeli soket yönetimini soyutlayarak iş mantığına odaklanmanızı sağlar.
 
 ## Java SMTP TLS kurulumu
-TLS (veya STARTTLS) kullanmak, kimlik bilgilerini korumak ve modern e‑posta sağlayıcı politikalarına uymak için gereklidir. Aspose.Email ile `SmtpClient` üzerinde TLS'yi şu şekilde etkinleştirirsiniz:
+TLS (veya STARTTLS) kullanmak, kimlik bilgilerini şifreler ve modern sağlayıcı politikalarına uyar.  
 
-- **`client.setEnableSsl(true)`**'ı gizli SSL (port 465) için ayarlayın.  
-- **Veya `client.setStartTls(true)`**'ı standart gönderim portu 587'de STARTTLS için ayarlayın.  
+- `client.setEnableSsl(true)` çağrısı, port 465'te örtük SSL için kullanılır.  
+- `client.setStartTls(true)` çağrısı, standart gönderim portu 587'de STARTTLS için kullanılır.  
 
-Her iki seçenek de iletişim kanalını şifreleyerek dinlemeyi ve ortadaki adam saldırılarını önler.
+Her iki seçenek de iletişim kanalını şifreleyerek dinlemeyi ve ortadaki adam saldırılarını önler. Bu, çoğu geliştiricinin aradığı **java smtp starttls örneği**'dir.
 
-## Java için SMTP sunucusunu yapılandırmak için neden Aspose.Email for Java kullanmalısınız?
-- **Unified API:** Kimlik doğrulama, TLS, proxy desteği gibi tüm SMTP ayrıntılarını temiz, nesne‑yönelimli bir arayüzle yönetir.  
-- **Robust error handling:** Ayrıntılı istisna mesajları, sorunları hızlıca tespit etmenize yardımcı olur.  
-- **Cross‑platform:** Windows, Linux ve macOS'ta aynı şekilde çalışır, kodunuzun taşınabilirliğini artırır.  
-- **Extensive documentation:** Adım‑adım kılavuzlar ve örnek projeler geliştirme süresini azaltır.
+## Java'da SMTP sunucusunu yapılandırmak için Aspose.Email for Java neden kullanılmalı?
+Aspose.Email, kimlik doğrulama, TLS müzakeresi, proxy desteği ve bağlantı havuzlamasını özelleştirilmiş soket kodu gerektirmeden yöneten birleşik, yüksek seviyeli bir API sağlar. Ayrıca ayrıntılı SMTP durum kodları ve istisnalar döndürerek sorun gidermeyi basitleştirir. Kütüphane çapraz platform olduğundan, aynı kod Windows, Linux ve macOS'ta çalışır ve konteynerlerde ya da bulut ortamlarında dağıtımı kolaylaştırır.
 
-## SMTP Sunucu Yapılandırmasına Giriş
-SMTP (Simple Mail Transfer Protocol), e‑posta iletişiminin omurgasını oluşturur ve e‑postaların internet üzerinden yönlendirilip teslim edilmesinden sorumludur. SMTP sunucularını doğru bir şekilde yapılandırmak, e‑postalarınızın alıcılarına güvenilir bir şekilde ulaşmasını sağlamak için hayati öneme sahiptir. Aspose.Email for Java, bu süreci kapsamlı öğreticiler ve araçlar sunarak kolaylaştırır.
+- **Unified API:** Kimlik doğrulama, TLS, proxy desteği ve bağlantı havuzlamasını temiz, nesne‑yönelimli bir arayüz üzerinden yönetir.  
+- **Robust error handling:** Ayrıntılı istisna mesajları ve SMTP durum kodları, sorunları hızlı bir şekilde belirlemenizi sağlar.  
+- **Cross‑platform:** Windows, Linux ve macOS'ta çalışır, kodunuzun sunucular ve konteynerler arasında taşınabilir olmasını sağlar.  
+- **Extensive format support:** Aspose.Email, **50+** giriş ve çıkış formatını destekler—EML, MSG, MHTML ve MIME‑kodlu akışlar dahil—ve tüm dosyayı belleğe yüklemeden çok sayfalı e-posta arşivlerini işleyebilir.  
 
-## Aspose.Email for Java ile Hızlı Kurulum
-Aspose.Email for Java, geliştiricilere SMTP sunucularını yapılandırmak için akıcı bir yaklaşım sunar. İster şirket içi bir e‑posta sistemi kuruyor olun, ister Java uygulamalarınıza e‑posta işlevselliği entegre ediyor olun, bu API süreci basitleştirir. Açık adım‑adım öğreticiler sayesinde SMTP sunucunuzun giden e‑posta trafiğini doğru bir şekilde yönetecek şekilde yapılandırıldığından emin olabilirsiniz.
+Bu sayısal faydalar, kütüphanenin **java bulk email sending** için tercih edilen bir çözüm olmasının nedenini gösterir.
 
-## Güvenilir E‑posta Teslimi
-Etkili bir SMTP sunucu yapılandırması, güvenilir e‑posta tesliminin anahtarıdır. Aspose.Email for Java yalnızca SMTP sunucularının kurulmasına yardımcı olmakla kalmaz, aynı zamanda e‑posta gönderimi, izleme ve raporlama için gelişmiş özellikler sunar. Aspose.Email tarafından sağlanan öğreticileri ve en iyi uygulamaları izleyerek, geliştiriciler e‑postalarının güvenli bir şekilde gönderildiğinden ve sorunsuz bir şekilde hedeflerine ulaştığından emin olabilirler.
+## SMTP sunucu yapılandırmasına giriş
+SMTP (Simple Mail Transfer Protocol), e-posta iletişiminin omurgasını oluşturur ve internet üzerinden mesajların yönlendirilmesi ve teslim edilmesinden sorumludur. Doğru yapılandırma, e-postalarınızın alıcılara güvenilir bir şekilde ulaşmasını ve geri dönüş oranlarının düşük kalmasını sağlar.
 
-## SMTP Sunucusunu Java'da Yapılandırmak için Yaygın Kullanım Senaryoları
-- **İşlem e‑postaları:** Sipariş onayları, şifre sıfırlamaları ve bildirimler.  
-- **Toplu bültenler:** Büyük hacimlerde gönderim yaparken teslim edilebilirliği koruyun.  
-- **Sistem uyarıları:** Sunuculardan veya uygulamalardan otomatik izleme uyarıları.  
-- **Çok kiracılı uygulamalar:** Her kiracı kendi SMTP kimlik bilgilerine sahip olabilir.
+## Aspose.Email for Java ile hızlı kurulum
+Aspose.Email, adım adım öğreticiler, örnek projeler ve bir SMTP sunucusunu dakikalar içinde yapılandırmanızı sağlayan zengin bir API sunar; günler yerine dakikalar içinde. Kütüphane ayrıca proxy sunucuları, özel başlıklar ve teslimat bildirimleri için yerleşik destek içerir.
 
-## İpuçları & En İyi Uygulamalar
-- **Mümkün olduğunca TLS/STARTTLS kullanın** kimlik bilgilerini şifrelemek için.  
-- **E‑posta adreslerini doğrulayın** göndermeden önce geri dönüş oranlarını azaltmak için.  
+## Güvenilir e-posta teslimatı
+Temel yapılandırmanın ötesinde, Aspose.Email teslimat durumu takibi, geri dönüş yönetimi ve e-posta sınırlaması gibi gelişmiş özellikler sunar. Bu kılavuzdaki en iyi uygulamaları izleyerek mesajlarınızın güvenli bir şekilde gönderildiğinden ve zamanında ulaştığından emin olabilirsiniz.
+
+## Java'da SMTP sunucusunu yapılandırmak için yaygın kullanım senaryoları
+- **Transactional emails:** Sipariş onayları, şifre sıfırlamaları ve sistem uyarıları.  
+- **Bulk newsletters:** Yüksek teslimat oranını koruyarak büyük hacimlerde gönderim.  
+- **System monitoring:** Sunuculardan veya uygulamalardan otomatik uyarılar.  
+- **Multi‑tenant SaaS platforms:** Her kiracı kendi SMTP kimlik bilgilerine sahip olabilir, izole e-posta akışları sağlar.
+
+## İpuçları ve en iyi uygulamalar
+- **TLS/STARTTLS kullanın** mümkün olduğunca kimlik bilgilerini şifrelemek için.  
+- **E-posta adreslerini doğrulayın** göndermeden önce geri dönüş oranlarını azaltmak için.  
 - **Geçici ağ hataları için yeniden deneme mantığını uygulayın**.  
-- **SMTP yanıt kodlarını izleyin** teslim sorunlarını erken tespit etmek için.
+- **SMTP yanıt kodlarını izleyin** teslimat sorunlarını erken tespit etmek için.  
+- **Toplu gönderim**: Alıcıları 500‑1000 arası gruplara ayırarak sağlayıcı limitleri içinde kalın ve verimliliği artırın.
 
-## Aspose.Email for Java ile SMTP Sunucularını Yapılandırma Öğreticileri
-### [Aspose.Email için Doğru SMTP Sunucusunu Seçme](./choosing-the-right-smtp-server/)
-Aspose.Email for Java ile e‑posta işlevselliğinizi optimize edin. Doğru SMTP sunucusunu nasıl seçeceğinizi ve e‑postaları sorunsuz bir şekilde nasıl göndereceğinizi öğrenin.  
-### [Aspose.Email ile SMTP Hatalarını Yönetme ve Sorun Giderme](./handling-smtp-errors-and-troubleshooting/)
-Aspose.Email for Java ile e‑posta iletişiminizi optimize edin. SMTP hatalarını nasıl yöneteceğinizi ve etkili bir şekilde sorunları nasıl giderileceğini öğrenin.  
-### [Aspose.Email ile SMTP Başlıklarını ve Altbilgilerini Özelleştirme](./customizing-smtp-headers-and-footers/)
-Aspose.Email for Java ile SMTP başlıklarını ve altbilgilerini nasıl özelleştireceğinizi öğrenin. E‑posta iletişiminizi kişiselleştirilmiş marka ve mesajlarla geliştirin.  
-### [Aspose.Email ile Birden Çok SMTP Sunucusunu Entegre Etme](./integrating-multiple-smtp-servers/)
-Aspose.Email for Java ile birden çok SMTP sunucusunu sorunsuz bir şekilde nasıl entegre edeceğinizi öğrenin. E‑posta gönderim güvenilirliğini ve yedekleme desteğini adım‑adım rehberimizle artırın.
+## Aspose.Email for Java ile SMTP sunucularını yapılandırma öğreticileri
+### [Aspose.Email için doğru SMTP sunucusunu seçme](./choosing-the-right-smtp-server/)
+Aspose.Email for Java ile e-posta işlevselliğinizi optimize edin. Doğru SMTP sunucusunu nasıl seçeceğinizi ve e-postaları sorunsuz bir şekilde göndereceğinizi öğrenin.  
+### [Aspose.Email ile SMTP hatalarını yönetme ve sorun giderme](./handling-smtp-errors-and-troubleshooting/)
+Aspose.Email for Java ile e-posta iletişimini optimize edin. SMTP hatalarını yönetmeyi ve etkili bir şekilde sorun gidermeyi öğrenin.  
+### [Aspose.Email ile SMTP başlıklarını ve altbilgilerini özelleştirme](./customizing-smtp-headers-and-footers/)
+Aspose.Email for Java ile SMTP başlıklarını ve altbilgilerini nasıl özelleştireceğinizi öğrenin. E-posta iletişiminizi kişiselleştirilmiş marka ve mesajlarla geliştirin.  
+### [Aspose.Email ile birden fazla SMTP sunucusunu entegre etme](./integrating-multiple-smtp-servers/)
+Aspose.Email for Java ile birden fazla SMTP sunucusunu sorunsuz bir şekilde entegre etmeyi öğrenin. Adım adım rehberimizle e-posta gönderim güvenilirliğini ve yedekleme desteğini artırın.
 
 ## Sıkça Sorulan Sorular
 
-**S: Aspose.Email'i AWS veya Azure gibi bir bulut platformunda kullanabilir miyim?**  
-C: Kesinlikle. Kütüphane, bulut ortamları dahil olmak üzere herhangi bir Java çalışma zamanında çalışır.
+**Q: Aspose.Email'i AWS veya Azure gibi bir bulut platformunda kullanabilir miyim?**  
+A: Kesinlikle. Kütüphane, AWS Elastic Beanstalk, Azure App Service ve Google Cloud Run gibi bulut ortamları dahil olmak üzere herhangi bir Java çalışma zamanında çalışır.
 
-**S: SMTP sağlayıcım OAuth2 kimlik doğrulaması gerektiriyorsa ne olur?**  
-C: Aspose.Email, OAuth2 token alımını destekler; token'ı kimlik doğrulama için `SmtpClient`'a aktarabilirsiniz.
+**Q: SMTP sağlayıcım OAuth2 kimlik doğrulaması gerektirirse ne olur?**  
+A: Aspose.Email, OAuth2 token alımını destekler; şifreleri depolamadan kimlik doğrulama için token'ı `SmtpClient`'a geçirebilirsiniz.
 
-**S: Gerçek e‑posta göndermeden yapılandırmamı yerel olarak nasıl test edebilirim?**  
-C: MailHog veya Papercut gibi yerel bir SMTP test aracını kullanın; ana bilgisayar ve portu bu araca yönlendirin.
+**Q: Gerçek e-posta göndermeden yapılandırmamı yerel olarak nasıl test edebilirim?**  
+A: MailHog veya Papercut gibi bir yerel SMTP test aracını kullanın; ana bilgisayar ve portu araca yönlendirin ve yakalanan mesajları inceleyin.
 
-**S: Hata ayıklama için ham SMTP iletişimini kaydetmenin bir yolu var mı?**  
-C: Evet—`SmtpClient.setEnableSsl(true)` ve `SmtpClient.setLogEnabled(true)` ayarlarını etkinleştirerek ayrıntılı günlükleri yakalayabilirsiniz.
+**Q: Hata ayıklama için ham SMTP iletişimini kaydetmenin bir yolu var mı?**  
+A: Evet—`client.setLogEnabled(true)` çağrısı ile günlük kaydını etkinleştirin; kütüphane tam SMTP değişimini konsola veya belirttiğiniz bir dosyaya yazacaktır.
 
-**S: Aspose.Email 25 MB'den büyük eklerin gönderilmesini destekliyor mu?**  
-C: Kütüphane kendisi bir boyut sınırlaması getirmez; ancak SMTP sağlayıcınızın limitlerine uymanız gerekir.
+**Q: Aspose.Email 25 MB'den büyük ek dosyaları göndermeyi destekliyor mu?**  
+A: Kütüphane doğal bir boyut sınırlaması getirmez; ancak SMTP sağlayıcınızın maksimum mesaj boyutuna, genellikle çoğu hizmet için 25 MB, uymak zorundasınız.
 
-**Last Updated:** 2026-03-04  
-**Tested With:** Aspose.Email for Java 24.12  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-08-27  
+**Test Edilen Versiyon:** Aspose.Email for Java 24.12  
+**Yazar:** Aspose  
+
+{{< blocks/products/pf/backtop-button >}}
+
+## İlgili Öğreticiler
+
+- [Java ile E-posta Gönder - Aspose.Email ile Doğru SMTP Sunucusunu Seçin](/email/java/configuring-smtp-servers/choosing-the-right-smtp-server/)
+- [Aspose.Email for Java ile SMTP İstemcisi Nasıl Kurulur: Adım Adım Kılavuz](/email/java/smtp-client-operations/aspose-email-java-smtp-client-setup/)
+- [Aspose.Email Java'da Uzmanlaşma: Özel E-posta Başlıkları Ayarlama ve SMTP ile E-posta Gönderme](/email/java/smtp-client-operations/aspose-email-java-custom-headers-smtp/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

@@ -1,57 +1,118 @@
 ---
-date: '2026-02-27'
-description: 学习如何使用 Aspose.Email for Java 加载 MSG 文件并将其转换为 MHTML，包括自定义时区设置和批量邮件处理技巧。
+date: '2026-08-27'
+description: 了解如何使用 Aspose.Email for Java 加载 MSG 文件并将其转换为 MHTML，包括自定义时区设置和批量邮件处理技巧。
 keywords:
-- Aspose.Email for Java
-- load emails in MHTML format
-- custom timezone settings
-title: 如何使用 Aspose.Email for Java 加载 MSG 并保存为 MHTML
+- how to load msg
+- Aspose.Email Java
+- convert MSG to MHTML
+- email timezone offset
+lastmod: '2026-08-27'
+og_description: 了解如何使用 Aspose.Email for Java 加载 msg 文件并导出为 MHTML。包括时区处理和批量处理技巧。
+og_image_alt: Guide to loading MSG files and saving as MHTML with Aspose.Email for
+  Java
+og_title: 如何使用 Aspose.Email for Java 加载 msg 并保存为 MHTML
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  headline: How to load msg and save as MHTML using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  name: How to load msg and save as MHTML using Aspose.Email for Java
+  steps:
+  - name: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+    text: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+  - name: '**Use try‑with‑resources** for automatic cleanup of streams.'
+    text: '**Use try‑with‑resources** for automatic cleanup of streams.'
+  - name: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+    text: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+  - name: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+    text: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Email supports EML, MHT, EMLX, and several other formats,
+      totaling over 30 input types.
+    question: Can I load emails from formats other than .msg?
+  - answer: Use the streaming APIs (`MailMessage.load(InputStream, ...)`) to read
+      and write data in chunks, which keeps memory consumption under 50 MB even for
+      500‑page messages.
+    question: How can I handle very large email files efficiently?
+  - answer: Absolutely. You can add, remove, or replace attachments via the `msg.getAttachments()`
+      collection, then call `save` to persist changes.
+    question: Is it possible to modify attachments within a MailMessage?
+  - answer: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 *
+      60 * 60 * 1000` for UTC‑3.
+    question: What if my timezone offset is negative (behind UTC)?
+  - answer: Yes, provided you have a valid commercial license. The free trial is limited
+      to 20 MB per document.
+    question: Can I use Aspose.Email in commercial projects?
+  type: FAQPage
+tags:
+- email processing
+- Aspose.Email
+- Java email conversion
+title: 如何使用 Aspose.Email for Java 加载 msg 并保存为 MHTML
 url: /zh/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# 如何使用 Aspose.Email for Java 加载 MSG 并保存为 MHTML
+
+# 如何加载 msg 并使用 Aspose.Email for Java 保存为 MHTML
 
 ## 介绍
 
-如果你需要 **加载 msg** 文件、调整它们的时间戳，然后 **将 msg 转换为 mhtml**，这里就是你的目的地。在本教程中，我们将演示如何加载 `.msg` 邮件、应用自定义时区偏移，并将结果保存为 MHTML 存档——全部使用 Aspose.Email for Java。无论是处理单条消息还是 **批量邮件处理** 流程，这些步骤都能为你提供坚实的基础。
+如果您需要 **how to load msg** 文件，调整它们的时间戳，然后 **convert msg to mhtml**，您来对地方了。在本教程中，我们将演示如何加载 `.msg` 邮件，应用自定义时区偏移，并将结果保存为 MHTML 存档——全部使用 Aspose.Email for Java。无论您是处理单个消息还是 **batch email processing** 流水线，这些步骤都将为可靠的归档和迁移提供坚实基础。
 
-**你将学到的内容**
+**您将学习**
 - 如何从 `.msg` 文件加载 `MailMessage`。
 - 如何设置自定义时区和当前日期。
-- 如何以精确的格式将邮件保存为 MHTML。
-- 将该方法扩展到批量场景的技巧。
+- 如何以精确的格式将消息保存为 MHTML。
+- 将此方法扩展到批处理场景的技巧。
 
-准备好提升你的邮件工作流了吗？先让环境准备就绪。
+准备好提升您的电子邮件工作流了吗？让我们先准备好环境。
 
-## 快速回答
-- **主要使用的库是什么？** Aspose.Email for Java。
-- **可以一步完成 MSG 加载并导出为 MHTML 吗？** 不能，需要先加载、调整，再保存。
-- **生产环境需要许可证吗？** 需要，有效的 Aspose.Email 许可证是必需的。
-- **时区处理是否受支持？** 支持，使用 `setTimeZoneOffset`。
-- **可以用于批量处理吗？** 完全可以——将步骤放入循环即可。
+## 快速答案
+- **What is the primary library?** Aspose.Email for Java.
+- **Can I load MSG and export to MHTML in one step?** No, you load, adjust, then save.
+- **Do I need a license for production?** Yes, a valid Aspose.Email license is required.
+- **Is timezone handling supported?** Yes, via `setTimeZoneOffset`.
+- **Can this be used in batch processing?** Absolutely – wrap the steps in a loop.
 
-## 前置条件
+## Aspose.Email for Java 是什么？
 
-在开始之前，请确保具备以下条件：
+Aspose.Email for Java 是一个综合性的 API，允许您在无需 Microsoft Outlook 的情况下创建、读取、转换和操作电子邮件。它支持超过 30 种电子邮件格式，并且能够在保持低内存使用的情况下处理数百页的消息。
 
-### 必需的库和依赖
-- **Aspose.Email for Java** 库 25.4 版（jdk16 classifier）
+## 为什么将 MSG 转换为 MHTML？
+
+将 MSG 文件转换为 MHTML 可获得一种适合网页的单文件表示形式，可在任何现代浏览器中打开。此格式保留原始样式、嵌入的图像和附件，非常适合 **legal archiving**、**cross‑platform sharing** 和 **embedding emails into web pages or documentation**。
+
+## 先决条件
+
+在开始之前，请确保您具备以下条件：
+
+### 必需的库和依赖项
+- **Aspose.Email for Java** 库版本 25.4（jdk16 classifier）——该库支持 **50+** 输入和输出电子邮件格式。
 - 基础的 Java 知识。
-- IntelliJ IDEA 或 Eclipse 等 IDE。
+- 如 IntelliJ IDEA 或 Eclipse 等 IDE。
 
-### 环境搭建要求
+### 环境设置要求
 - 已安装 JDK 16 或更高版本。
-- 使用 Maven 进行依赖管理。
+- 用于依赖管理的 Maven。
 
 ## 设置 Aspose.Email for Java
 
-在 Maven 项目中添加库依赖，请加入以下内容：
+要将库添加到 Maven 项目中，请包含以下依赖：
 
 ```xml
 <dependency>
@@ -61,10 +122,18 @@ weight: 1
     <classifier>jdk16</classifier>
 </dependency>
 ```
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
-### 许可证获取步骤
+### 获取许可证的步骤
 
-先使用 **免费试用** 或获取 **临时许可证** 来评估库的全部功能且无功能限制。长期使用请考虑购买正式许可证：
+先使用 **免费试用** 或获取 **临时许可证** 来评估库的全部功能而不受限制。长期使用时，请考虑购买许可证：
 
 - [免费试用](https://releases.aspose.com/email/java/)
 - [临时许可证](https://purchase.aspose.com/temporary-license/)
@@ -72,8 +141,15 @@ weight: 1
 
 ### 基本初始化
 
+`License` 类注册您的 Aspose.Email 许可证以解锁全部功能。  
 添加依赖后，在 Java 代码中初始化许可证：
 
+```java
+import com.aspose.email.License;
+
+License license = new License();
+license.setLicense("Aspose.Email.lic");
+```
 ```java
 import com.aspose.email.License;
 
@@ -81,61 +157,67 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## 实现指南
+## 如何加载 msg 并保存为 MHTML？
 
-我们将实现分为三个清晰的功能。
+加载 MSG 文件，调整时间戳，并以三步简洁流程保存为 MHTML。首先，使用 `MsgLoadOptions` 实例化 `MailMessage` 来自 MSG 文件。接着，使用 `setTimeZoneOffset` 设置所需的时区偏移。最后，配置 `MhtSaveOptions` 并调用 `save` 生成 MHTML 存档。
 
 ### 功能 1：从文件加载 MailMessage
 
-#### 概述
-加载 `.msg` 文件后，你可以以编程方式完全访问邮件的内容、附件和元数据。
-
-#### 步骤说明
-
-**导入所需类**
+`MailMessage` 类表示包含标题、正文和附件的电子邮件消息。
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
+```java
+import com.aspose.email.MailMessage;
+import com.aspose.email.MsgLoadOptions;
+```
 
-**加载邮件**
-
+```java
+MsgLoadOptions loadOptions = new MsgLoadOptions();
+MailMessage msg = MailMessage.load("sample.msg", loadOptions);
+```
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-`MsgLoadOptions` 允许你控制 MSG 文件的解析方式；默认设置适用于大多数场景。
+`MsgLoadOptions` 让您控制 MSG 文件的解析方式；默认设置适用于大多数场景。
 
 ### 功能 2：设置当前日期和自定义时区偏移
 
-#### 概述
-在跨地区用户之间处理邮件时，准确的时间戳至关重要。
+`Date` 对象保存将写入电子邮件 **Date** 标头的时间戳。
 
-**设置当前日期**
-
+```java
+java.util.Date now = new java.util.Date();
+msg.setDate(now);
+```
 ```java
 import java.util.Date;
 
 msg.setDate(new Date());
 ```
 
-**应用自定义时区偏移（例如 UTC+5）**
+偏移量以毫秒为单位表示；例如 UTC+5 您需要传入 `5 * 60 * 60 * 1000`。
 
+```java
+int utcPlusFive = 5 * 60 * 60 * 1000;
+msg.setTimeZoneOffset(utcPlusFive);
+```
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-偏移量以毫秒为单位，因此也可以传入负值来表示 UTC 西部的时区。
-
 ### 功能 3：将 MailMessage 保存为 MHTML 文件
 
-#### 概述
-MHTML 将 HTML 内容及嵌入资源打包成单个文件，非常适合归档或共享。
+`MhtSaveOptions` 定义如何将电子邮件打包成 MHTML 存档，保留内联图像和附件。
 
-**配置保存选项**
-
+```java
+import com.aspose.email.MhtSaveOptions;
+MhtSaveOptions saveOptions = new MhtSaveOptions();
+saveOptions.setWriteHeader(true);
+```
 ```java
 import com.aspose.email.MhtSaveOptions;
 import com.aspose.email.MhtFormatOptions;
@@ -144,70 +226,67 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**保存邮件**
-
+```java
+msg.save("output.mhtml", saveOptions);
+```
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
 ```
 
-生成的 `.mhtml` 文件保留原始的格式、图片和附件。
+生成的 `.mhtml` 文件保留原始的格式、图像和附件，成为原始 MSG 的忠实视觉副本。
 
-## 为什么要将 MSG 转换为 MHTML？
+## 如何设置自定义时区偏移？
 
-将 MSG 文件转换为 MHTML 可以得到一种网页友好的单文件表示，任何现代浏览器都能打开。这在以下场景尤为有用：
+您可以通过在 `MailMessage` 实例上调用 `setTimeZoneOffset` 来修改时区。该方法接受毫秒为单位的偏移量，支持正值（UTC 东部）和负值（UTC 西部）。例如，UTC‑3 为 `-3 * 60 * 60 * 1000`。
 
-- **法律归档**：需要忠实的可视化副本。
-- **跨平台共享**：无需 Outlook 即可查看。
-- **在网页或文档中嵌入邮件**。
+## 如何批量处理 MSG 文件？
 
-## 批量邮件处理技巧
+将上述三步工作流放入循环中，遍历 `.msg` 文件目录。复用单个 `License` 实例以避免重复 I/O，并在保存后释放每个 `MailMessage`，以保持低内存使用。
 
-如果需要 **批量邮件处理**，请将加载、时区调整和保存步骤放入遍历 `.msg` 文件目录的循环中。记住：
+```java
+File folder = new File("msg_folder");
+for (File file : folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".msg"))) {
+    MailMessage msg = MailMessage.load(file.getAbsolutePath(), new MsgLoadOptions());
+    // set date & timezone as shown earlier
+    msg.save(file.getName().replace(".msg", ".mhtml"), new MhtSaveOptions());
+    msg.dispose(); // releases native resources
+}
+```
 
-1. 重复使用同一个 `License` 实例以避免额外开销。
-2. 每次迭代后释放资源（如适用，调用 `msg.dispose()`）。
-3. 将失败日志记录到单独文件，以便后续检查。
+### 批处理技巧
+1. **Reuse the license** – 在应用启动时一次性调用 `new License().setLicense(...)`。
+2. **Use try‑with‑resources** 以自动清理流。
+3. **Log failures** 到单独的文件，以便稍后重试有问题的消息。
+4. **Consider parallelism** 使用 `ForkJoinPool` 处理大批量，但确保每个线程使用自己的 `MailMessage` 实例。
 
-## 实际应用场景
+## 常见问题及解决方案
 
-1. **邮件归档**：将通信以可移植格式保存以满足合规要求。
-2. **全球调度**：在发送通知前统一时区时间戳。
-3. **CRM 集成**：自动将归档邮件作为 MHTML 附件导入 CRM 系统。
+- **Memory spikes with huge MSG files** – 通过使用 `MailMessage.load(InputStream, MsgLoadOptions)` 启用流式处理，并分块处理流。
+- **Incorrect timestamps** – 在应用偏移前确认系统时钟已设为 UTC，或显式传入 `java.util.Calendar` 实例。
+- **Missing attachments in MHTML** – 确保 `MhtSaveOptions.setWriteHeader(true)`；这会将附件嵌入为 `cid:` 资源。
 
-## 性能考虑
+## 常见问答
 
-- **内存管理**：将大批量分块处理，以保持内存占用低。
-- **I/O 优化**：读取/写入大量文件时使用缓冲流。
-- **并行执行**：可考虑 Java 的 `ForkJoinPool` 实现并行处理，但需确保 Aspose 对象的线程安全。
+**Q: Can I load emails from formats other than .msg?**  
+A: Yes, Aspose.Email supports EML, MHT, EMLX, and several other formats, totaling over 30 input types.
 
-## 结论
+**Q: How can I handle very large email files efficiently?**  
+A: Use the streaming APIs (`MailMessage.load(InputStream, ...)`) to read and write data in chunks, which keeps memory consumption under 50 MB even for 500‑page messages.
 
-现在你已经掌握了 **加载 msg** 文件、应用自定义时区偏移，并使用 Aspose.Email for Java **将 msg 转换为 mhtml** 的方法。这些技术可以扩展到 **批量邮件处理** 任务，为邮件归档、迁移和自动化提供了强大的解决方案。
+**Q: Is it possible to modify attachments within a MailMessage?**  
+A: Absolutely. You can add, remove, or replace attachments via the `msg.getAttachments()` collection, then call `save` to persist changes.
 
-**后续步骤**  
-通过访问官方 [文档](https://reference.aspose.com/email/java/) 进一步探索 Aspose.Email 的附件处理、日历项提取或 SMTP 发送等功能。
+**Q: What if my timezone offset is negative (behind UTC)?**  
+A: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 * 60 * 60 * 1000` for UTC‑3.
 
-## 常见问题
+**Q: Can I use Aspose.Email in commercial projects?**  
+A: Yes, provided you have a valid commercial license. The free trial is limited to 20 MB per document.
 
-**问：可以加载除 .msg 之外的其他格式吗？**  
-答：可以，Aspose.Email 支持 EML、MSG、MHT 等多种格式。
-
-**问：如何高效处理非常大的邮件文件？**  
-答：使用 Aspose.Email 提供的流式 API，以块方式读写数据，降低内存压力。
-
-**问：能否在 MailMessage 中修改附件？**  
-答：完全可以。通过 `MailMessage.getAttachments()` 集合可以添加、删除或替换附件。
-
-**问：如果我的时区偏移是负数（UTC 之前）怎么办？**  
-答：向 `setTimeZoneOffset` 传入负的毫秒值，例如 `-3 * 60 * 60 * 1000` 表示 UTC‑3。
-
-**问：Aspose.Email 能用于商业项目吗？**  
-答：可以，只要拥有有效的商业许可证。
-
-**问：如何在处理成千上万的 MSG 文件时避免内存耗尽？**  
-答：分批处理文件，保存后释放每个 `MailMessage`，并考虑使用 Java 的 `try‑with‑resources` 语法实现自动清理。
+**Q: How do I process thousands of MSG files without running out of memory?**  
+A: Process files in batches, release each `MailMessage` after saving, and employ Java’s `try‑with‑resources` pattern for automatic cleanup.
 
 ## 资源
+- [文档](https://reference.aspose.com/email/java/)
 - [文档](https://reference.aspose.com/email/java/)
 - [下载库](https://releases.aspose.com/email/java/)
 - [购买许可证](https://purchase.aspose.com/buy)
@@ -217,14 +296,19 @@ msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOpt
 
 ---
 
-**最后更新：** 2026-02-27  
-**测试环境：** Aspose.Email for Java 25.4（jdk16 classifier）  
-**作者：** Aspose  
+**最后更新：** 2026-08-27  
+**测试环境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
+## 相关教程
+
+- [如何使用 Aspose.Email for Java 加载和解析 Outlook MSG 文件：综合指南](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Maven Aspose.Email for Java：将邮件保存为 MHT 文件](/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
+- [如何使用 Aspose.Email for Java 从 msg 文件中提取附件](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

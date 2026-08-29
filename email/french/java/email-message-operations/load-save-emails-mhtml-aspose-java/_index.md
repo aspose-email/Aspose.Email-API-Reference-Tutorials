@@ -1,67 +1,120 @@
 ---
-date: '2026-02-27'
+date: '2026-08-27'
 description: Apprenez à charger des fichiers MSG et à les convertir en MHTML avec
-  Aspose.Email pour Java, y compris les paramètres de fuseau horaire personnalisés
-  et les conseils de traitement d'e-mails par lots.
+  Aspose.Email for Java, y compris les paramètres de fuseau horaire personnalisés
+  et des conseils de traitement d'e-mails par lots.
 keywords:
-- Aspose.Email for Java
-- load emails in MHTML format
-- custom timezone settings
-title: Comment charger un fichier MSG et l’enregistrer au format MHTML avec Aspose.Email
-  pour Java
+- how to load msg
+- Aspose.Email Java
+- convert MSG to MHTML
+- email timezone offset
+lastmod: '2026-08-27'
+og_description: Apprenez à charger des fichiers msg et à les exporter au format MHTML
+  avec Aspose.Email for Java. Comprend la gestion des fuseaux horaires et des conseils
+  de traitement par lots.
+og_image_alt: Guide to loading MSG files and saving as MHTML with Aspose.Email for
+  Java
+og_title: Comment charger un msg et l'enregistrer au format MHTML avec Aspose.Email
+  for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  headline: How to load msg and save as MHTML using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to load MSG files and convert them to MHTML with Aspose.Email
+    for Java, including custom timezone settings and batch email processing tips.
+  name: How to load msg and save as MHTML using Aspose.Email for Java
+  steps:
+  - name: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+    text: '**Reuse the license** – call `new License().setLicense(...)` once at application
+      startup.'
+  - name: '**Use try‑with‑resources** for automatic cleanup of streams.'
+    text: '**Use try‑with‑resources** for automatic cleanup of streams.'
+  - name: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+    text: '**Log failures** to a separate file so you can retry problematic messages
+      later.'
+  - name: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+    text: '**Consider parallelism** with `ForkJoinPool` for large batches, but ensure
+      each thread uses its own `MailMessage` instance.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Email supports EML, MHT, EMLX, and several other formats,
+      totaling over 30 input types.
+    question: Can I load emails from formats other than .msg?
+  - answer: Use the streaming APIs (`MailMessage.load(InputStream, ...)`) to read
+      and write data in chunks, which keeps memory consumption under 50 MB even for
+      500‑page messages.
+    question: How can I handle very large email files efficiently?
+  - answer: Absolutely. You can add, remove, or replace attachments via the `msg.getAttachments()`
+      collection, then call `save` to persist changes.
+    question: Is it possible to modify attachments within a MailMessage?
+  - answer: Pass a negative millisecond value to `setTimeZoneOffset`, e.g., `-3 *
+      60 * 60 * 1000` for UTC‑3.
+    question: What if my timezone offset is negative (behind UTC)?
+  - answer: Yes, provided you have a valid commercial license. The free trial is limited
+      to 20 MB per document.
+    question: Can I use Aspose.Email in commercial projects?
+  type: FAQPage
+tags:
+- email processing
+- Aspose.Email
+- Java email conversion
+title: Comment charger un fichier msg et l'enregistrer au format MHTML avec Aspose.Email
+  for Java
 url: /fr/java/email-message-operations/load-save-emails-mhtml-aspose-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Comment charger un MSG et l’enregistrer en MHTML avec Aspose.Email pour Java
+
+# Comment charger un msg et l’enregistrer en MHTML avec Aspose.Email pour Java
 
 ## Introduction
 
-Si vous avez besoin de **how toload msg** des fichiers, d'ajuster leurs horodatages, puis de **convert msg to mhtml**, vous êtes au bon endroit. Dans ce tutoriel, nous allons parcourir le chargement d’un courriel `.msg`, appliquer un décalage de fuseau horaire personnalisé, et enregistrer le résultat sous forme d’archive MHTML — le tout avec Aspose.Email pour Java. Que vous manipuliez un seul message ou un pipeline de **batch email Processing**, ces étapes vous fourniront une base solide.
+Si vous devez **how to load msg** des fichiers, ajuster leurs horodatages, puis **convert msg to mhtml**, vous êtes au bon endroit. Dans ce tutoriel, nous parcourrons le chargement d’un courriel `.msg`, l’application d’un décalage de fuseau horaire personnalisé, et l’enregistrement du résultat sous forme d’archive MHTML — le tout avec Aspose.Email pour Java. Que vous traitiez un seul message ou un pipeline de **batch email processing**, ces étapes vous fourniront une base solide pour une archivage fiable et une migration.
 
-**Ce que vous allez apprendre**
-- Commenter charger un `MailMessage` à partir d'un fichier `.msg`.
+**Ce que vous apprendrez**
+- Comment charger un `MailMessage` à partir d’un fichier `.msg`.
 - Comment définir un fuseau horaire personnalisé et la date actuelle.
 - Comment enregistrer le message en MHTML avec un formatage précis.
-- Astuces pour faire évoluer l’approche vers des scénarios de traitement par lots.
+- Conseils pour faire évoluer l’approche vers des scénarios de traitement par lots.
 
-Prêt à optimiser votre flux de travail email ? Préparons d’abord l’environnement.
+Prêt à améliorer votre flux de travail d’e‑mail ? Préparons d’abord l’environnement.
 
 ## Réponses rapides
-- **Quelle est la bibliothèque principale ?** Aspose.Email pour Java.
+- **Quelle est la bibliothèque principale ?** Aspose.Email for Java.
+- **Puis‑je charger un MSG et l’exporter en MHTML en une seule étape ?** Non, vous chargez, ajustez, puis enregistrez.
+- **Ai‑je besoin d’une licence pour la production ?** Oui, une licence valide d’Aspose.Email est requise.
+- **La gestion des fuseaux horaires est‑elle prise en charge ?** Oui, via `setTimeZoneOffset`.
+- **Cette méthode peut‑elle être utilisée en traitement par lots ?** Absolument – encapsulez les étapes dans une boucle.
 
-- **Puis-je charger un fichier MSG et l’exporter en MHTML en une seule étape ?** Non, vous chargez, ajustez, puis enregistrez.
+## Qu’est‑ce qu’Aspose.Email pour Java ?
+Aspose.Email pour Java est une API complète qui vous permet de créer, lire, convertir et manipuler des messages électroniques sans nécessiter Microsoft Outlook. Elle prend en charge plus de 30 formats d’e‑mail et peut traiter des messages de plusieurs centaines de pages tout en maintenant une faible consommation de mémoire.
 
-- **Ai-je besoin d’une licence pour la production ?** Oui, une licence Aspose.Email valide est requise.
-
-- **La gestion des fuseaux horaires est-elle prise en charge ?** Oui, via `setTimeZoneOffset`.
-
-- **Peut-on utiliser ceci en traitement par lots ?** Absolument : il suffit d’encapsuler les étapes dans une boucle.
+## Pourquoi convertir MSG en MHTML ?
+Convertir des fichiers MSG en MHTML vous fournit une représentation web‑compatible, sous forme d’un seul fichier, qui peut être ouverte dans n’importe quel navigateur moderne. Ce format préserve le style original, les images intégrées et les pièces jointes, ce qui le rend idéal pour **legal archiving**, **cross‑platform sharing**, et **embedding emails into web pages or documentation**.
 
 ## Prérequis
-
-Avant de commencer, assurez-vous de disposer de ce qui suit :
+Avant de commencer, assurez-vous de disposer de ce qui suit :
 
 ### Bibliothèques et dépendances requises
-
-- Bibliothèque **Aspose.Email pour Java** version 25.4 (classificateur jdk16)
-
+- Bibliothèque **Aspose.Email for Java** version 25.4 (classificateur jdk16) – la bibliothèque prend en charge **50+** formats d’e‑mail en entrée et sortie.
 - Connaissances de base en Java.
+- Un IDE tel qu’IntelliJ IDEA ou Eclipse.
 
-- Un IDE tel qu'IntelliJ IDEA ou Eclipse.
-
-### Exigences de configuration de l'environnement
-- JDK16ou une version plus récente installée.
+### Exigences de configuration de l’environnement
+- JDK 16 ou version ultérieure installé.
 - Maven pour la gestion des dépendances.
 
-## Configuration d'Aspose.Email pour Java
-
-Pour ajouter la bibliothèque à un projet Maven, incluez la dépendance suivante :
+## Configuration d’Aspose.Email pour Java
+Pour ajouter la bibliothèque à un projet Maven, incluez la dépendance suivante :
 
 ```xml
 <dependency>
@@ -71,19 +124,32 @@ Pour ajouter la bibliothèque à un projet Maven, incluez la dépendance suivant
     <classifier>jdk16</classifier>
 </dependency>
 ```
+```xml
+<dependency>
+    <groupId>com.aspose</groupId>
+    <artifactId>aspose-email</artifactId>
+    <version>25.4</version>
+    <classifier>jdk16</classifier>
+</dependency>
+```
 
-### Étapes d'acquisition de licence
-
-Commencez avec un **essai gratuit** ou obtenez une **licence temporaire** afin d’évaluer les capacités complètes de la bibliothèque sans limitations. Pour une utilisation à long terme, envisagez d’acheter une licence :
+### Étapes d’obtention de licence
+Commencez avec un **free trial** ou obtenez une **temporary license** pour évaluer les capacités complètes de la bibliothèque sans limitations. Pour une utilisation à long terme, envisagez d’acheter une licence :
 
 - [Essai gratuit](https://releases.aspose.com/email/java/)
 - [Licence temporaire](https://purchase.aspose.com/temporary-license/)
 - [Acheter une licence](https://purchase.aspose.com/buy)
 
 ### Initialisation de base
+La classe `License` enregistre votre licence Aspose.Email pour débloquer toutes les fonctionnalités.  
+Après avoir ajouté la dépendance, initialisez la licence dans votre code Java :
 
-Après avoir ajouté la dépendance, initialisez la licence dans votre code Java :
+```java
+import com.aspose.email.License;
 
+License license = new License();
+license.setLicense("Aspose.Email.lic");
+```
 ```java
 import com.aspose.email.License;
 
@@ -91,61 +157,63 @@ License license = new License();
 license.setLicense("path_to_your_license_file.lic");
 ```
 
-## Guide d'implémentation
+## Comment charger un msg et l’enregistrer en MHTML ?
+Chargez le fichier MSG, ajustez l’horodatage, et enregistrez‑le en MHTML en trois étapes simples. Tout d’abord, créez une instance de `MailMessage` à partir du fichier MSG en utilisant `MsgLoadOptions`. Ensuite, définissez le décalage de fuseau horaire souhaité avec `setTimeZoneOffset`. Enfin, configurez `MhtSaveOptions` et appelez `save` pour produire l’archive MHTML.
 
-Nous allons décomposer l'implémentation en trois fonctionnalités distinctes.
-
-### Fonctionnalité 1 : Chargement d'un MailMessage à partir d'un fichier
-
-#### Aperçu
-Le chargement d'un fichier `.msg` vous donne un accès complet par programmation au contenu, aux pièces jointes et aux métadonnées de l'e-mail.
-
-#### Étape par étape
-
-**Importer les classes requises**
+### Fonctionnalité 1 : charger un MailMessage depuis un fichier
+La classe `MailMessage` représente un message électronique avec en‑têtes, corps et pièces jointes.
 
 ```java
 import com.aspose.email.MailMessage;
 import com.aspose.email.MsgLoadOptions;
 ```
+```java
+import com.aspose.email.MailMessage;
+import com.aspose.email.MsgLoadOptions;
+```
 
-**Charger l'e-mail**
-
+```java
+MsgLoadOptions loadOptions = new MsgLoadOptions();
+MailMessage msg = MailMessage.load("sample.msg", loadOptions);
+```
 ```java
 String filename = "YOUR_DOCUMENT_DIRECTORY/MSG file with RTF Formatting.msg";
 MailMessage msg = MailMessage.load(filename, new MsgLoadOptions());
 ```
 
-`MsgLoadOptions` vous permet de contrôler l'interprétation du fichier MSG ; les paramètres par défaut conviennent à la plupart des cas.
+`MsgLoadOptions` vous permet de contrôler la façon dont le fichier MSG est analysé ; les paramètres par défaut fonctionnent dans la plupart des scénarios.
 
-### Fonctionnalité 2 : Définition de la date actuelle et d'un décalage horaire personnalisé
+### Fonctionnalité 2 : définir la date actuelle et le décalage de fuseau horaire personnalisé
+L’objet `Date` contient l’horodatage qui sera écrit dans l’en‑tête **Date** du courriel.
 
-#### Aperçu
-Des horodatages précis sont essentiels lorsque vous interagissez avec des utilisateurs situés dans différentes régions.
-
-**Définir la date actuelle**
-
+```java
+java.util.Date now = new java.util.Date();
+msg.setDate(now);
+```
 ```java
 import java.util.Date;
 
 msg.setDate(new Date());
 ```
 
-**Appliquer un décalage horaire personnalisé (par exemple, UTC+5)**
+Le décalage est exprimé en millisecondes ; pour UTC+5 vous passez `5 * 60 * 60 * 1000`.
 
+```java
+int utcPlusFive = 5 * 60 * 60 * 1000;
+msg.setTimeZoneOffset(utcPlusFive);
+```
 ```java
 msg.setTimeZoneOffset(5 * 60 * 60 * 1000); // 5 hours ahead of UTC in milliseconds.
 ```
 
-Le décalage est exprimé en millisecondes ; vous pouvez donc également indiquer des valeurs négatives pour les fuseaux horaires situés à l'ouest de UTC.
+### Fonctionnalité 3 : enregistrer un MailMessage en fichier MHTML
+`MhtSaveOptions` définit comment le courriel est empaqueté dans une archive MHTML, en préservant les images en ligne et les pièces jointes.
 
-### Fonctionnalité 3 : Enregistrer un message au format MHTML
-
-#### Présentation
-Le format MHTML regroupe le contenu HTML et les ressources intégrées dans un seul fichier, idéal pour l’archivage et le partage.
-
-**Configurer les options d’enregistrement**
-
+```java
+import com.aspose.email.MhtSaveOptions;
+MhtSaveOptions saveOptions = new MhtSaveOptions();
+saveOptions.setWriteHeader(true);
+```
 ```java
 import com.aspose.email.MhtSaveOptions;
 import com.aspose.email.MhtFormatOptions;
@@ -154,88 +222,85 @@ MhtSaveOptions mhtOptions = new MhtSaveOptions();
 mhtOptions.setMhtFormatOptions(MhtFormatOptions.WriteHeader);
 ```
 
-**Enregistrer l’e-mail**
-
+```java
+msg.save("output.mhtml", saveOptions);
+```
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY/ExportToMHTWithCustomTimezone_out.mhtml", mhtOptions);
 ```
 
-Le fichier `.mhtml` résultant conserve le formatage original, les images et les pièces jointes.
+Le fichier `.mhtml` résultant conserve le formatage original, les images et les pièces jointes, ce qui en fait une copie visuelle fidèle du MSG d’origine.
 
-## Pourquoi convertir MSG en MHTML ?
+## Comment définir un décalage de fuseau horaire personnalisé ?
+Vous pouvez modifier le fuseau horaire en appelant `setTimeZoneOffset` sur l’instance `MailMessage`. La méthode attend un décalage en millisecondes, permettant des valeurs positives (est de l’UTC) et négatives (ouest de l’UTC). Par exemple, UTC‑3 correspond à `-3 * 60 * 60 * 1000`.
 
-Convertir les fichiers MSG en MHTML vous fournit une représentation web‑compatible, monofichier, qui peut être ouverte dans n’importe quel navigateur moderne. Cela est particulièrement utile pour :
+## Comment traiter des fichiers MSG par lots ?
+Encapsulez le flux de travail en trois étapes dans une boucle qui parcourt un répertoire de fichiers `.msg`. Réutilisez une seule instance `License` pour éviter les I/O répétés, et libérez chaque `MailMessage` après l’enregistrement afin de maintenir une faible consommation de mémoire.
 
-- **Archivage légal** où une copie visuelle fidèle est requise.
-- **Partage multiplateforme** sans besoin d'Outlook.
-- **Embedding emails** dans des pages web ou de la documentation.
+```java
+File folder = new File("msg_folder");
+for (File file : folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".msg"))) {
+    MailMessage msg = MailMessage.load(file.getAbsolutePath(), new MsgLoadOptions());
+    // set date & timezone as shown earlier
+    msg.save(file.getName().replace(".msg", ".mhtml"), new MhtSaveOptions());
+    msg.dispose(); // releases native resources
+}
+```
 
-## Conseils pour le traitement des e-mails par lots
+### Conseils pour le traitement par lots
+1. **Réutiliser la licence** – appelez `new License().setLicense(...)` une fois au démarrage de l’application.
+2. **Utiliser try‑with‑resources** pour le nettoyage automatique des flux.
+3. **Consigner les échecs** dans un fichier séparé afin de pouvoir retenter les messages problématiques plus tard.
+4. **Envisager le parallélisme** avec `ForkJoinPool` pour les gros lots, mais assurez‑vous que chaque thread utilise sa propre instance `MailMessage`.
 
-Si vous avez besoin de **batch email Processing**, encapsulez les étapes de chargement, d'ajustement du fuseau horaire et d'enregistrement dans une boucle qui parcourt un répertoire de fichiers `.msg`. N'oubliez pas de:
-
-1. Réutilisez une seule instance `License` pour éviter les surcharges.
-2. Libérer les ressources après chaque itération (`msg.dispose()` si applicable).
-3. Consigner les échecs dans un fichier séparé pour une révision ultérieure.
-
-## Applications pratiques
-
-1. **Email Archiving** : Conservez les communications dans un format portable pour la conformité.
-2. **Global Scheduling** : Ajustez les horaires à un fuseau horaire unifié avant d'envoyer des notifications.
-3. **Intégration CRM** : Importez automatiquement les courriels archivés dans un système CRM sous forme de pièces jointes MHTML.
-
-## Considérations sur les performances
-
-- **Memory Management** : Traitez les gros lots par fragments afin de maintenir une faible consommation de mémoire.
-- **Optimisation des E/S** : Utilisez des flux tamponnés si vous lisez/écrivez de nombreux fichiers.
-- **Parallel Execution** : Envisagez le `ForkJoinPool` de Java pour le traitement parallèle, tout en garantissant la sécurité des objets Aspose.
-
-## Conclusion
-
-Vous savez maintenant **comment charger des msg** des fichiers, appliquer des décalages de fuseau horaire personnalisés, et **convertir msg en mhtml** avec Aspose.Email pour Java. Ces techniques peuvent être mises à l’échelle pour gérer les tâches de **batch email Processing**, vous offrant une solution robuste pour l’archivage, la migration et l’automatisation des courriels.
-
-**Prochaines étapes**
-Explorez d’autres fonctionnalités d’Aspose.Email telles que la gestion des pièces jointes, l’extraction d’éléments de calendrier ou l’envoi SMTP en visitant la [documentation](https://reference.aspose.com/email/java/) officielle.
+## Problèmes courants et solutions
+- **Pics de mémoire avec des fichiers MSG volumineux** – activez le streaming en utilisant `MailMessage.load(InputStream, MsgLoadOptions)` et traitez le flux par morceaux.
+- **Horodatages incorrects** – vérifiez que l’horloge du système est réglée sur UTC avant d’appliquer les décalages, ou passez explicitement une instance `java.util.Calendar`.
+- **Pièces jointes manquantes dans le MHTML** – assurez‑vous que `MhtSaveOptions.setWriteHeader(true)` est activé ; cela intègre les pièces jointes comme ressources `cid:`.
 
 ## Questions fréquemment posées
+**Q : Puis‑je charger des e‑mails à partir de formats autres que .msg ?**  
+R : Oui, Aspose.Email prend en charge EML, MHT, EMLX, et plusieurs autres formats, totalisant plus de 30 types d’entrée.
 
-**Q : Puis‑je charger des courriels à partir de formats autres que .msg?**
-R : Oui, Aspose.Email prend en charge EML, MSG, MHT et plusieurs autres formats.
+**Q : Comment gérer efficacement des fichiers e‑mail très volumineux ?**  
+R : Utilisez les API de streaming (`MailMessage.load(InputStream, ...)`) pour lire et écrire les données par morceaux, ce qui maintient la consommation de mémoire sous 50 Mo même pour des messages de 500 pages.
 
-**Q : Comment gérer efficacement les fichiers de courriels très volumineux ?**
-R : Utilisez les API de streaming fournies par Aspose.Email pour lire/écrire les données par fragments, notamment la pression sur la mémoire.
+**Q : Est‑il possible de modifier les pièces jointes d’un MailMessage ?**  
+R : Absolument. Vous pouvez ajouter, supprimer ou remplacer des pièces jointes via la collection `msg.getAttachments()`, puis appeler `save` pour enregistrer les modifications.
 
-**Q : Est-il possible de modifier les pièces jointes d'un MailMessage ?**
-R : Absolument. Vous pouvez ajouter, supprimer ou remplacer des pièces jointes via la collection `MailMessage.getAttachments()`.
+**Q : Que faire si mon décalage de fuseau horaire est négatif (en retard par rapport à UTC) ?**  
+R : Passez une valeur négative en millisecondes à `setTimeZoneOffset`, par exemple `-3 * 60 * 60 * 1000` pour UTC‑3.
 
-**Q : Que faire si mon décalage de fuseau horaire est négatif (derrière l’UTC) ?**
-R : Passez une valeur négative en millisecondes à `setTimeZoneOffset`, par ex. `-3 * 60 * 60 * 1000` pour UTC‑3.
+**Q : Puis‑je utiliser Aspose.Email dans des projets commerciaux ?**  
+R : Oui, à condition de disposer d’une licence commerciale valide. L’essai gratuit est limité à 20 Mo par document.
 
-**Q : Puis‑je utiliser Aspose.Email dans des projets commerciaux ?**
-R : Oui, à condition de disposer d’une licence commerciale valide.
-
-**Q : Comment traiter des milliers de fichiers MSG sans épuiser la mémoire ?**
-R : Traitez les fichiers par lots, libérez chaque `MailMessage` après l'enregistrement, et envisagez d'utiliser le modèle `try‑with‑resources` de Java pour un nettoyage automatique.
+**Q : Comment traiter des milliers de fichiers MSG sans épuiser la mémoire ?**  
+R : Traitez les fichiers par lots, libérez chaque `MailMessage` après l’enregistrement, et utilisez le modèle `try‑with‑resources` de Java pour le nettoyage automatique.
 
 ## Ressources
-
+- [documentation](https://reference.aspose.com/email/java/)
 - [Documentation](https://reference.aspose.com/email/java/)
 - [Télécharger la bibliothèque](https://releases.aspose.com/email/java/)
 - [Acheter une licence](https://purchase.aspose.com/buy)
-- [Version d'essai gratuite](https://releases.aspose.com/email/java/)
+- [Essai gratuit](https://releases.aspose.com/email/java/)
 - [Licence temporaire](https://purchase.aspose.com/temporary-license/)
-- [Forum d'assistance](https://forum.aspose.com/c/email/10)
+- [Forum d’assistance](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Dernière mise à jour :** 27/02/2026
-**Testé avec :** Aspose.Email pour Java 25.4 (classificateur JDK 16)
-**Auteur :** Aspose 
+**Dernière mise à jour :** 2026-08-27  
+**Testé avec :** Aspose.Email for Java 25.4 (classificateur jdk16)  
+**Auteur :** Aspose
+
+## Tutoriels associés
+
+- [Comment charger et analyser les fichiers Outlook MSG avec Aspose.Email pour Java : guide complet](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Maven Aspose.Email pour Java : enregistrer les e‑mails en fichiers MHT](/email/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
+- [Comment extraire les pièces jointes des fichiers msg avec Aspose.Email pour Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

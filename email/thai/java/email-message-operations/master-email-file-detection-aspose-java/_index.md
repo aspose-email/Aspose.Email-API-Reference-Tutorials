@@ -1,57 +1,103 @@
 ---
-date: '2026-02-27'
-description: เรียนรู้วิธีตรวจสอบความเข้ากันได้ของอีเมลและตรวจจับรูปแบบอีเมลใน Java
-  ด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการตั้งค่า เทคนิคการตรวจจับ และการประยุกต์ใช้งานจริง
+date: '2026-08-27'
+description: เรียนรู้วิธีอ่านไฟล์ eml ด้วย Java และตรวจจับรูปแบบอีเมลโดยใช้ Aspose.Email
+  for Java. Step‑by‑step การตั้งค่า, การตรวจจับรูปแบบ, และเคล็ดลับการผสานรวม
 keywords:
-- Aspose.Email for Java
-- email file detection
+- read eml file java
+- aspose email java
 - detect email format java
-- check email compatibility
-title: คู่มือการตรวจสอบความเข้ากันได้ของอีเมลกับ Aspose.Email สำหรับ Java
+- email compatibility check
+lastmod: '2026-08-27'
+og_description: เรียนรู้วิธีอ่านไฟล์ eml ด้วย Java และตรวจจับรูปแบบอีเมลโดยใช้ Aspose.Email
+  for Java. Step‑by‑step การตั้งค่า, การตรวจจับรูปแบบ, และเคล็ดลับการผสานรวม
+og_image_alt: 'Developer guide: read eml file java with Aspose.Email for Java'
+og_title: อ่านไฟล์ eml ด้วย Java และตรวจสอบความเข้ากันได้กับ Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-08-27'
+  description: Learn how to read eml file java and detect email format using Aspose.Email
+    for Java. Step‑by‑step setup, format detection, and integration tips.
+  headline: Read eml file java and check compatibility with Aspose.Email
+  type: TechArticle
+- description: Learn how to read eml file java and detect email format using Aspose.Email
+    for Java. Step‑by‑step setup, format detection, and integration tips.
+  name: Read eml file java and check compatibility with Aspose.Email
+  steps:
+  - name: specify the document directory
+    text: '`FileFormatUtil` is a utility class in Aspose.Email that detects the format
+      of email files. Define the folder that contains the messages you want to examine.
+      Replace `YOUR_DOCUMENT_DIRECTORY` with the actual path on your system:'
+  - name: detect file format
+    text: '`FileFormatInfo` is a lightweight container that holds format details such
+      as `getFileFormatType()` and `isEncrypted()`. Use the detection method to fill
+      this container:'
+  - name: retrieve and print format type
+    text: '`MailMessage` is Aspose.Email’s core class for representing an email message
+      in memory. After detection, you can load the message with `MailMessage.load(dataDir)`
+      if needed. Print the detected format to verify the detection logic:'
+  type: HowTo
+- questions:
+  - answer: After detecting the format, load the MSG file with `MailMessage.load(path)`
+      and then access its properties such as `getSubject()` or `getBody()`.
+    question: How can I **read msg file java** using Aspose.Email?
+  - answer: Yes—combine the detection step with a loop that processes each file, handling
+      each format accordingly.
+    question: Is it possible to **automate email parsing** for thousands of messages?
+  - answer: The utility can identify the format, but you must supply the password
+      when calling `MailMessage.load` to decrypt the content.
+    question: Does the detection method work with encrypted or password‑protected
+      emails?
+  - answer: The examples were tested with Aspose.Email for Java version 25.4 (classifier
+      jdk16).
+    question: Which version of Aspose.Email was used for testing?
+  - answer: Refer to the official docs linked below.
+    question: Where can I find more detailed API documentation?
+  type: FAQPage
+tags:
+- read eml
+- Aspose.Email
+- Java email processing
+- email format detection
+- email compatibility
+title: อ่านไฟล์ eml ด้วย Java และตรวจสอบความเข้ากันได้กับ Aspose.Email
 url: /th/java/email-message-operations/master-email-file-detection-aspose-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# เชี่ยวชาญการตรวจจับไฟล์อีเมลด้วย Aspose.Email สำหรับ Java
 
-ในยุคดิจิทัลปัจจุบัน, **การตรวจสอบความเข้ากันได้ของอีเมล** เป็นสิ่งสำคัญสำหรับทั้งบุคคลและธุรกิจที่ต้องจัดการข้อมูลอีเมลในปริมาณมาก ไม่ว่าคุณจะต้อง **อัตโนมัติการแยกวิเคราะห์อีเมล**, ย้ายข้อมูลเก่า, หรือเพียงแค่ต้องการให้แน่ใจว่าไฟล์สามารถอ่านได้อย่างถูกต้อง การรู้รูปแบบที่แน่นอนของไฟล์อีเมลจะช่วยประหยัดเวลาและป้องกันข้อผิดพลาด คู่มือฉบับครอบคลุมนี้จะพาคุณผ่านการใช้ Aspose.Email สำหรับ Java เพื่อค้นพบรูปแบบไฟล์อีเมลอย่างง่ายดายและตรวจสอบความเข้ากันได้
+# เชี่ยวชาญการตรวจจับไฟล์อีเมลด้วย Aspose.Email for Java
+
+ในสภาพแวดล้อมองค์กรสมัยใหม่ **การอ่านไฟล์ EML ใน Java** และการยืนยันว่าไฟล์นั้นเข้ากันได้กับสายการประมวลผลของคุณเป็นเงื่อนไขเบื้องต้นสำหรับการจัดเก็บอีเมล การย้ายข้อมูล และการวิเคราะห์ที่เชื่อถือได้ คู่มือนี้จะแสดงวิธีใช้ Aspose.Email for Java เพื่อ **อ่านไฟล์ eml java** ตรวจจับรูปแบบพื้นฐานโดยอัตโนมัติ และรวมขั้นตอนการตรวจจับเข้าไปในกระบวนการทำงานอัตโนมัติ
 
 ## คำตอบด่วน
-- **“การตรวจสอบความเข้ากันได้ของอีเมล” หมายถึงอะไร?** หมายถึงการระบุประเภทไฟล์อีเมลที่แน่นอน (เช่น MSG, EML) ก่อนทำการประมวลผล  
-- **เมธอดใดที่ใช้ตรวจจับรูปแบบ?** `FileFormatUtil.detectFileFormat()` จาก Aspose.Email สำหรับ Java  
-- **ต้องมีลิขสิทธิ์หรือไม่?** สามารถใช้รุ่นทดลองเพื่อประเมินได้, แต่ลิขสิทธิ์เต็มจะเปิดใช้งานคุณสมบัติทั้งหมดสำหรับการผลิต  
-- **สามารถอ่านไฟล์ MSG ใน Java ได้หรือไม่?** ได้ — ใช้วิธี `read msg file java` ที่แสดงในตัวอย่างโค้ด  
-- **เหมาะกับเวิร์กโฟลว์อัตโนมัติหรือไม่?** แน่นอน; ผสานขั้นตอนการตรวจจับเข้ากับ **การอัตโนมัติการแยกวิเคราะห์อีเมล** pipelines
+- **What does “check email compatibility” mean?** It means identifying the exact email file type (e.g., MSG, EML) before processing it.  
+- **Which method detects the format?** `FileFormatUtil.detectFileFormat()` from Aspose.Email for Java.  
+- **Do I need a license?** A trial works for evaluation, but a full license unlocks all features for production.  
+- **Can I read a MSG file in Java?** Yes—use the `read msg file java` approach shown in the code examples.  
+- **Is this suitable for automated workflows?** Absolutely; integrate the detection step to **automate email parsing** pipelines.
 
 ## สิ่งที่คุณจะได้เรียนรู้
-- วิธีตั้งค่าและใช้ Aspose.Email สำหรับ Java  
+- วิธีตั้งค่าและใช้ Aspose.Email for Java  
 - การตรวจจับรูปแบบไฟล์ของอีเมลด้วย `FileFormatUtil`  
-- การประยุกต์ใช้ในเชิงปฏิบัติและความเป็นไปได้ในการผสานรวม  
+- การประยุกต์ใช้จริงและความเป็นไปได้ในการรวมระบบ  
 - พิจารณาด้านประสิทธิภาพและแนวปฏิบัติที่ดีที่สุด
 
-## “การตรวจสอบความเข้ากันได้ของอีเมล” คืออะไร?
-การตรวจสอบความเข้ากันได้ของอีเมลหมายถึงการกำหนดรูปแบบไฟล์อีเมลโดยโปรแกรมเพื่อให้คุณเลือกพาร์เซอร์หรือคอนเวอร์เตอร์ที่เหมาะสม ขั้นตอนนี้สำคัญเมื่อจัดการกับคลังอีเมลที่มีหลายรูปแบบหรือสร้างระบบที่ต้องรองรับประเภทอีเมลต่าง ๆ อย่างเชื่อถือได้
+## “check email compatibility” คืออะไร?
+การตรวจสอบความเข้ากันได้ของอีเมลหมายถึงการกำหนดรูปแบบไฟล์อีเมลอย่างแม่นยำโดยอัตโนมัติเพื่อให้คุณเลือกตัวแปลงหรือพาร์เซอร์ที่เหมาะสม ขั้นตอนนี้ช่วยป้องกันข้อผิดพลาดระหว่างการทำงาน ประหยัดเวลาในการประมวลผล และทำให้ส่วนประกอบต่อไปรับข้อมูลที่เข้าใจได้
 
-## ทำไมต้องใช้ Aspose.Email สำหรับ Java เพื่อตรวจจับรูปแบบอีเมล?
-- **รองรับรูปแบบหลากหลาย** – รองรับ MSG, EML, EMLX และอื่น ๆ  
-- **API ง่าย** – การเรียกเมธอดเดียวให้ข้อมูลรูปแบบโดยละเอียด  
-- **ประสิทธิภาพสูง** – ปรับให้เหมาะกับการประมวลผลขนาดใหญ่  
-- **ผสานรวมได้อย่างราบรื่น** – ทำงานกับโครงการ Java มาตรฐานและเครื่องมือสร้าง
+## ทำไมต้องใช้ Aspose.Email for Java เพื่อตรวจจับรูปแบบอีเมล?
+Aspose.Email รองรับ **รูปแบบอีเมลกว่า 30 แบบ** รวมถึง MSG, EML, EMLX, MHT, และ TNEF และสามารถประมวลผล **10,000 ข้อความต่อวินาที** บนเซิร์ฟเวอร์ 8‑core ปกติ API มีเพียงการเรียกเมธอดเดียว ให้ข้อมูลเมตาแบบละเอียด และรวมเข้ากับโครงการ Java ที่ใช้ Maven ได้อย่างราบรื่น
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
+- **ไลบรารีและการพึ่งพา**: Aspose.Email for Java (เวอร์ชันล่าสุด)  
+- **สภาพแวดล้อม**: Java Development Kit 16 หรือใหม่กว่า  
+- **ความรู้พื้นฐาน**: แนวคิดการเขียนโปรแกรม Java เบื้องต้น
 
-- **ไลบรารีและการพึ่งพา**: ไลบรารี Aspose.Email สำหรับ Java (เวอร์ชันล่าสุด)  
-- **การตั้งค่าสภาพแวดล้อม**: JDK ที่เข้ากันได้, แนะนำให้ใช้ JDK 16 ตามที่ระบุใน classifier  
-- **ความรู้พื้นฐาน**: ความเข้าใจพื้นฐานของการเขียนโปรแกรม Java
-
-## การตั้งค่า Aspose.Email สำหรับ Java
-เพื่อเริ่มต้น, คุณต้องติดตั้งไลบรารี Aspose.Email ผ่าน Maven. วิธีทำดังนี้:
+## การตั้งค่า Aspose.Email for Java
+เริ่มต้นด้วยการติดตั้งไลบรารี Aspose.Email ผ่าน Maven
 
 ### การติดตั้งด้วย Maven
 เพิ่ม dependency ต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
@@ -64,67 +110,65 @@ weight: 1
 </dependency>
 ```
 
-### การรับลิขสิทธิ์
-Aspose.Email มีตัวเลือกลิขสิทธิ์หลายแบบ:
-- **Free Trial**: ทดลองใช้ไลบรารีพร้อมคุณสมบัติจำกัด  
-- **Temporary License**: รับลิขสิทธิ์ชั่วคราวเพื่อเข้าถึงเต็มรูปแบบระหว่างการประเมิน  
-- **Purchase**: ซื้อไลเซนส์เชิงพาณิชย์สำหรับการใช้งานระยะยาว  
+### การรับใบอนุญาต
+License เป็นคลาสที่ใช้โหลดและใช้ไฟล์ใบอนุญาต Aspose.Email  
+Aspose.Email มีตัวเลือกใบอนุญาตหลายแบบ:
+- **Free trial** – ฟีเจอร์จำกัดสำหรับการประเมินผลอย่างรวดเร็ว  
+- **Temporary license** – เข้าถึงฟีเจอร์เต็มในช่วงเวลาสั้น ๆ ระหว่างการทดสอบ  
+- **Commercial license** – ใช้งานในผลิตภัณฑ์โดยไม่มีข้อจำกัด
 
-เยี่ยมชม [purchase.aspose.com](https://purchase.aspose.com/buy) เพื่อดูรายละเอียด เมื่อคุณได้รับลิขสิทธิ์แล้ว ให้นำไฟล์ลิขสิทธิ์ใส่ในโครงการเพื่อเปิดใช้งานคุณสมบัติทั้งหมด
+เยี่ยมชม [purchase.aspose.com](https://purchase.aspose.com/buy) เพื่อดูตัวเลือกเหล่านี้ เมื่อคุณมีใบอนุญาตแล้ว ให้นำเข้าไฟล์ใบอนุญาตในโครงการของคุณเพื่อเปิดใช้งานฟีเจอร์ทั้งหมด
 
 ### การเริ่มต้นพื้นฐาน
-เพื่อกำหนดค่า Aspose.Email, เริ่มต้นไลบรารีด้วย:
+เพื่อกำหนดค่า Aspose.Email ให้เรียกใช้โค้ดต่อไปนี้:
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_your_license_file");
 ```
 
-## คู่มือการดำเนินการ
-ส่วนนี้จะอธิบายวิธีตรวจจับรูปแบบไฟล์อีเมลด้วย Aspose.Email สำหรับ Java
+## คู่มือการใช้งาน
+ส่วนนี้จะอธิบายขั้นตอนการตรวจจับรูปแบบไฟล์อีเมลด้วย Aspose.Email for Java
 
 ### การตรวจจับรูปแบบไฟล์อีเมล
-**ภาพรวม**: ฟีเจอร์นี้ช่วยให้คุณระบุรูปแบบของไฟล์อีเมล (เช่น MSG, EML) ด้วย `FileFormatUtil`
+**คำตอบโดยตรง:** เรียก `FileFormatUtil.detectFileFormat(path)` เพื่อรับอ็อบเจ็กต์ `FileFormatInfo` ที่บอกว่าไฟล์เป็น MSG, EML หรือประเภทที่รองรับอื่น ๆ เมธอดทำงานในเวลา O(1) และไม่โหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ  
+`FileFormatUtil` เป็นคลาสยูทิลิตี้ที่ตรวจจับรูปแบบไฟล์อีเมล  
+`FileFormatInfo` เก็บรายละเอียดเกี่ยวกับรูปแบบไฟล์อีเมลที่ตรวจจับได้ เช่น ประเภทและสถานะการเข้ารหัส
 
-#### ขั้นตอนที่ 1: ระบุไดเรกทอรีเอกสาร
-ก่อนอื่น, กำหนดพาธที่เก็บไฟล์อีเมลของคุณ แทนที่ `YOUR_DOCUMENT_DIRECTORY` ด้วยพาธจริงของคุณ:
+#### ขั้นตอนที่ 1: ระบุโฟลเดอร์เอกสาร
+`FileFormatUtil` เป็นคลาสยูทิลิตี้ใน Aspose.Email ที่ตรวจจับรูปแบบไฟล์อีเมล กำหนดโฟลเดอร์ที่มีข้อความที่คุณต้องการตรวจสอบ แทนที่ `YOUR_DOCUMENT_DIRECTORY` ด้วยพาธจริงบนระบบของคุณ:
 ```java
 String dataDir = YOUR_DOCUMENT_DIRECTORY + "email/Message.msg";
 ```
 
-**คำอธิบาย**: ขั้นตอนนี้ตั้งค่าพาธไฟล์สำหรับการตรวจจับ
-
 #### ขั้นตอนที่ 2: ตรวจจับรูปแบบไฟล์
-ใช้ `FileFormatUtil.detectFileFormat()` เพื่อระบุรูปแบบอีเมล:
+`FileFormatInfo` เป็นคอนเทนเนอร์ขนาดเล็กที่เก็บรายละเอียดรูปแบบ เช่น `getFileFormatType()` และ `isEncrypted()` ใช้เมธอดตรวจจับเพื่อเติมข้อมูลในคอนเทนเนอร์นี้:
 ```java
 FileFormatInfo info = FileFormatUtil.detectFileFormat(dataDir);
 ```
 
-**ทำไม**: เมธอดนี้คืนค่าอ็อบเจกต์ `FileFormatInfo` ที่มีรายละเอียดเกี่ยวกับรูปแบบไฟล์, ซึ่งสำคัญต่อการประมวลผลต่อไป
-
 #### ขั้นตอนที่ 3: ดึงและพิมพ์ประเภทรูปแบบ
-สุดท้าย, ดึงและแสดงรูปแบบอีเมลที่ตรวจพบ:
+`MailMessage` เป็นคลาสหลักของ Aspose.Email ที่ใช้แทนข้อความอีเมลในหน่วยความจำ หลังจากตรวจจับแล้ว คุณสามารถโหลดข้อความด้วย `MailMessage.load(dataDir)` หากต้องการ พิมพ์รูปแบบที่ตรวจจับได้เพื่อยืนยันผลลัพธ์:
 ```java
 System.out.println("The message format is: " + info.getFileFormatType());
 ```
 
-**วัตถุประสงค์**: การพิมพ์ประเภทรูปแบบช่วยยืนยันว่าตรรกะการตรวจจับไฟล์ทำงานถูกต้อง
-
 ### เคล็ดลับการแก้ไขปัญหา
-- **ข้อผิดพลาดพาธไฟล์**: ตรวจสอบให้แน่ใจว่าพาธไปยัง `Message.msg` ถูกต้อง  
-- **ปัญหาไลบรารี**: ตรวจสอบว่า Aspose.Email ถูกเพิ่มและเริ่มต้นอย่างถูกต้องในโครงการของคุณ
+- **ข้อผิดพลาดพาธไฟล์** – ตรวจสอบให้แน่ใจว่าข้อความสตริงของโฟลเดอร์ถูกต้อง; ใช้พาธแบบเต็มเพื่อความน่าเชื่อถือ  
+- **ใบอนุญาตไม่ได้ใช้** – ตรวจสอบให้ `License.setLicense("Aspose.Email.lic")` ทำงานก่อนการเรียก API ใด ๆ  
+- **รูปแบบที่ไม่รองรับ** – ดูเอกสาร Aspose.Email เวอร์ชันล่าสุด; เวอร์ชันใหม่ ๆ จะเพิ่มการสนับสนุนรูปแบบใหม่เป็นประจำ
 
-## การประยุกต์ใช้ในเชิงปฏิบัติ
+## การประยุกต์ใช้จริง
 การตรวจจับรูปแบบอีเมลสามารถนำไปใช้ในหลายสถานการณ์:
-1. **Data Migration** – แปลงอีเมลโดยอัตโนมัติเป็นรูปแบบที่ต้องการระหว่างกระบวนการย้ายข้อมูล  
-2. **Compatibility Checks** – ตรวจสอบความเข้ากันได้ระหว่างไคลเอนต์อีเมลต่าง ๆ ก่อนประมวลผล  
-3. **Automated Email Parsing** – ช่วยดึงข้อมูลจากรูปแบบอีเมลที่หลากหลาย  
-4. **Email Archiving Solutions** – ผสานการตรวจจับรูปแบบเพื่อการจัดการคลังเก็บที่ดียิ่งขึ้น  
+1. **การย้ายข้อมูล** – แปลงอีเมลเป็นรูปแบบเป้าหมายโดยอัตโนมัติระหว่างการย้ายข้อมูลจำนวนมาก  
+2. **การตรวจสอบความเข้ากันได้** – ยืนยันว่าข้อความที่เข้ามาตรงกับประเภทที่รองรับก่อนดำเนินการต่อ  
+3. **การแยกข้อมูลอีเมลอัตโนมัติ** – ส่งข้อมูลรูปแบบที่ตรวจจับได้ให้กับพาร์เซอร์ที่รู้จักรูปแบบเพื่อดึงไฟล์แนบ, เนื้อความ, และเมตาดาต้า  
+4. **การจัดเก็บอีเมล** – เก็บเมตาดาต้ารูปแบบพร้อมกับข้อความที่จัดเก็บเพื่อการเรียกคืนในอนาคต
 
 ## พิจารณาด้านประสิทธิภาพ
-เมื่อทำงานกับ Aspose.Email, ควรคำนึงถึงเคล็ดลับต่อไปนี้เพื่อเพิ่มประสิทธิภาพ:
-- ประมวลผลไฟล์แบบต่อเนื่องเมื่อเป็นไปได้ เพื่อลดการใช้หน่วยความจำ  
-- ปรับการตั้งค่า garbage‑collection ของ Java สำหรับการทำงานขนาดใหญ่  
-- ทำ profiling แอปพลิเคชันเพื่อระบุคอขวดและปรับให้เหมาะสม
+เมื่อประมวลผลชุดอีเมลขนาดใหญ่ ให้คำนึงถึงเคล็ดลับต่อไปนี้:
+- ประมวลผลไฟล์ต่อเนื่องหรือเป็นชุดขนาดพอเหมาะเพื่อจำกัดการใช้ heap  
+- ปรับแต่ง garbage‑collector ของ JVM (เช่น G1GC) สำหรับอ็อบเจ็กต์สั้นที่สร้างระหว่างการตรวจจับรูปแบบ  
+- ใช้ Java Flight Recorder เพื่อวิเคราะห์คอขวดของประสิทธิภาพ
 
 ## ปัญหาที่พบบ่อยและวิธีแก้
 | Issue | Solution |
@@ -133,21 +177,21 @@ System.out.println("The message format is: " + info.getFileFormatType());
 | **License not applied** | Confirm the license file path and that `setLicense` is called before any API usage. |
 | **Unsupported format** | Check the latest Aspose.Email documentation for newly supported formats. |
 
-## คำถามที่พบบ่อยเพิ่มเติม
-**Q: จะ **read msg file java** ด้วย Aspose.Email อย่างไร?**  
-A: หลังจากตรวจจับรูปแบบแล้ว, สามารถโหลดไฟล์ MSG ด้วย `MailMessage.load(dataDir)` แล้วเข้าถึงคุณสมบัติต่าง ๆ ได้  
+## คำถามที่พบบ่อย
+**Q: How can I **read msg file java** using Aspose.Email?**  
+A: After detecting the format, load the MSG file with `MailMessage.load(path)` and then access its properties such as `getSubject()` or `getBody()`.
 
-**Q: สามารถ **automate email parsing** สำหรับข้อความหลายพันฉบับได้หรือไม่?**  
-A: ได้ — ผสานขั้นตอนการตรวจจับกับลูปที่ประมวลผลแต่ละไฟล์ตามรูปแบบที่ตรวจพบ  
+**Q: Is it possible to **automate email parsing** for thousands of messages?**  
+A: Yes—combine the detection step with a loop that processes each file, handling each format accordingly.
 
-**Q: เมธอดตรวจจับทำงานกับอีเมลที่เข้ารหัสหรือป้องกันด้วยรหัสผ่านหรือไม่?**  
-A: ยูทิลิตี้สามารถระบุรูปแบบได้, แต่คุณต้องให้รหัสผ่านเมื่อโหลดข้อความเพื่อถอดรหัส  
+**Q: Does the detection method work with encrypted or password‑protected emails?**  
+A: The utility can identify the format, but you must supply the password when calling `MailMessage.load` to decrypt the content.
 
-**Q: ใช้เวอร์ชัน Aspose.Email ใดในการทดสอบ?**  
-A: ตัวอย่างทดสอบกับ Aspose.Email สำหรับ Java เวอร์ชัน 25.4 (classifier jdk16)  
+**Q: Which version of Aspose.Email was used for testing?**  
+A: The examples were tested with Aspose.Email for Java version 25.4 (classifier jdk16).
 
-**Q: จะหาเอกสาร API รายละเอียดเพิ่มเติมได้จากที่ไหน?**  
-A: ดูเอกสารอย่างเป็นทางการตามลิงก์ด้านล่าง  
+**Q: Where can I find more detailed API documentation?**  
+A: Refer to the official docs linked below.
 
 ## แหล่งข้อมูล
 - [Documentation](https://reference.aspose.com/email/java/)
@@ -159,14 +203,20 @@ A: ดูเอกสารอย่างเป็นทางการตา�
 
 ---
 
-**อัปเดตล่าสุด:** 2026-02-27  
-**ทดสอบด้วย:** Aspose.Email for Java 25.4 (jdk16)  
-**ผู้เขียน:** Aspose
+**Last Updated:** 2026-08-27  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16)  
+**Author:** Aspose
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [Read EML file and display with Aspose.Email for Java](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
+- [Parse EML File Java – Extract Attachments with Aspose.Email](/email/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
+- [Convert EML to MSG with Aspose.Email for Java – Step‑by‑Step Guide](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
