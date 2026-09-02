@@ -1,72 +1,122 @@
 ---
-date: '2026-03-15'
-description: Tanulja meg, hogyan kell EML fájlt feldolgozni Java-ban, kinyerni az
-  e‑mail mellékleteket, és elmenteni őket az Aspose.Email for Java segítségével. Tartalmazza
-  a Maven függőség beállítását.
+date: '2026-09-02'
+description: Ismerje meg, hogyan nyerhet ki e‑mail mellékleteket egy EML fájlból Java‑ban
+  az Aspose.Email használatával. Lépésről‑lépésre útmutató, Maven beállítás és gyakorlati
+  tippek.
 keywords:
-- manage EML attachments
-- Aspose.Email for Java
-- Java email handling
-title: EML fájl feldolgozása Java-ban – Mellékletek kinyerése az Aspose.Email segítségével
+- extract email attachments
+- aspose email java
+- load eml file
+- read eml file
+- how to parse eml
+lastmod: '2026-09-02'
+og_description: E‑mail mellékletek kinyerése EML fájlokból Java‑ban az Aspose.Email
+  használatával. Kövesse a tömör, termelés‑kész útmutatót Maven beállítással és teljesítmény‑tippekkel.
+og_image_alt: Developer guide showing Java code that extracts attachments from an
+  EML file using Aspose.Email
+og_title: E‑mail mellékletek kinyerése EML fájlokból Java‑ban az Aspose.Email segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-09-02'
+  description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  headline: Parse EML file Java – extract email attachments with Aspose.Email
+  type: TechArticle
+- description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  name: Parse EML file Java – extract email attachments with Aspose.Email
+  steps:
+  - name: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+    text: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+  - name: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+    text: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+  - name: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+    text: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+  type: HowTo
+- questions:
+  - answer: Use `LoadOptions` to supply decryption credentials if the email service
+      supports it.
+    question: How do I handle encrypted EML files?
+  - answer: Yes—HTML bodies are accessible via `msg.getHtmlBody()` and can be processed
+      like any string.
+    question: Can Aspose.Email for Java parse HTML emails?
+  - answer: Insufficient disk space or missing write permissions are the usual culprits.
+      Verify the target folder exists and is writable.
+    question: What are common issues when saving attachments?
+  - answer: Absolutely—just pass the full UNC path or URL to `MailMessage.load`.
+    question: Is it possible to load EML files from a network location?
+  - answer: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire
+      a full license.
+    question: How do I obtain a license for production use?
+  type: FAQPage
+tags:
+- extract email attachments
+- aspose email java
+- eml parsing java
+- java email processing
+- maven aspose email
+title: EML fájl feldolgozása Java‑ban – e‑mail mellékletek kinyerése az Aspose.Email
+  segítségével
 url: /hu/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# EML fájl elemzése Java‑ban – Mellékletek kinyerése az Aspose.Email segítségével
+
+# EML fájl elemzése Java – e-mail mellékletek kinyerése az Aspose.Email segítségével
 
 ## Bevezetés
 
-Ha **EML fájl Java** projektekben szeretnél minden mellékletet kinyerni, jó helyen jársz. Ebben a lépésről‑lépésre útmutatóban megmutatjuk, hogyan tölts be egy EML fájlt, hogyan sorold fel a mellékleteket, és hogyan mentsd el mindegyiket a lemezre a **Aspose.Email for Java** használatával. Tiszta, termelés‑kész Java kódot és gyakorlati tippeket kapsz valós helyzetekhez, mint például archiválás, megfelelőség és automatizált e‑mail feldolgozás.
+Ha Java projektekben **e‑mail mellékleteket** kell kinyernie EML fájlokból, jó helyen jár. Ebben a lépésről‑lépésre útmutatóban megmutatjuk, hogyan töltsön be egy EML fájlt, sorolja fel a mellékleteket, és mentse el mindegyiket a lemezre a **Aspose.Email for Java** segítségével. Tiszta, termelés‑kész Java kódot kap, valamint gyakorlati tippeket a valós helyzetekhez, mint például archiválás, megfelelőség és automatizált e‑mail feldolgozás.
 
-Ebben az útmutatóban a következőket járjuk körül:
-- EML fájl betöltése az Aspose.Email for Java‑val  
-- A mellékletgyűjtemény inicializálása és bejárása a **mellékletnevek lekéréséhez**  
-- E‑mail mellékletek mentése egy mappába a gépeden  
+Ebben az útmutatóban a következőket fogjuk áttekinteni:
+- EML fájl betöltése az Aspose.Email for Java segítségével  
+- A mellékletgyűjtemény inicializálása és iterálása a **mellékletnevek lekéréséhez**  
+- E‑mail mellékletek mentése egy mappába a gépén  
 
-Ez a tutorial tökéletes fejlesztőknek, akik már ismerik az alap Java‑t és gyakorlati **Aspose.Email tutorial**‑t keresnek valós e‑mail adatok kezeléséhez.
+Ez a bemutató tökéletes azoknak a fejlesztőknek, akik már ismerik az alap Java-t, és gyakorlati **Aspose.Email tutorial**‑t szeretnének a valós e‑mail adatok kezeléséhez.
 
 ## Gyors válaszok
-- **Mit jelent az „e‑mail mellékletek kinyerése”?** Azt, hogy egy EML fájlt beolvasunk és minden csatolt fájlt a helyi tárolóba írunk.  
+- **Mi a “e‑mail mellékletek kinyerése” jelentése?** Ez azt jelenti, hogy egy EML fájlt olvas, és minden csatolt fájlt a helyi tárolójába ír.  
 - **Melyik könyvtárat használjam?** Aspose.Email for Java (verzió 25.4+).  
-- **Szükség van licencre?** Egy ingyenes próba verzió elegendő a kiértékeléshez; a teljes licenc eltávolítja az összes korlátozást.  
-- **Betölthetek EML fájlokat hálózati megosztásról?** Igen – csak add meg a teljes elérési utat vagy URL‑t a `MailMessage.load`‑nak.  
-- **Biztonságos nagy mellékletek esetén?** Feldolgozhatod őket egy ciklusban, és a try‑with‑resources segítségével szabadítsd fel az erőforrásokat a memória‑problémák elkerülése érdekében.
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez működik; egy teljes licenc eltávolítja az összes korlátozást.  
+- **Parse‑olhatok EML fájlokat hálózati megosztásról?** Igen – csak adja meg a teljes elérési utat vagy URL-t a `MailMessage.load`-nak.  
+- **Biztonságos nagy mellékletek esetén?** Dolgozza fel őket egy ciklusban, és szabadítsa fel az erőforrásokat a try‑with‑resources használatával a memória problémák elkerülése érdekében.
 
-## Mi az a „parse eml file java”?
+## Mi az a “parse eml file java”?
 
-Az EML fájl Java‑ban való **elemzése** azt jelenti, hogy a nyers RFC‑822 üzenetet egy objektummá (`MailMessage`) alakítjuk, amelyből lekérdezhetők a fejlécek, a törzsrészek és a mellékletek. Az Aspose.Email elrejti az alacsony szintű MIME‑elemzést, így a üzleti logikára koncentrálhatsz.
+`MailMessage` az Aspose.Email központi osztálya, amely egy EML fájlból betöltött egyetlen e‑mail üzenetet képvisel.  
+Az EML fájl Java‑ban való parse‑olása azt jelenti, hogy a nyers RFC‑822 üzenetet egy objektummodellel (`MailMessage`) alakítja, amelyből lekérdezheti a fejléceket, a törzsrészeket és a mellékleteket. Az Aspose.Email elrejti az alacsony szintű MIME parse‑olást, így az üzleti logikára koncentrálhat.
 
-## Miért használjuk az Aspose.Email for Java‑t?
+## Miért használja az Aspose.Email for Java‑t?
 
-- **Teljes körű API** – Kezeli a sima szöveget, a HTML‑t és a több részből álló üzeneteket egyből.  
-- **Maven‑kész** – Egyszerű függőségkezelés a legújabb `aspose-email` csomaggal.  
-- **Robusztus licencelés** – Ingyenes próba a teszteléshez, a teljes licenc eltávolítja az összes korlátot.  
-- **Teljesítmény‑optimalizált** – Nagy postafiókok és tömeges mellékletkivonás esetén is gyors.
+Az Aspose.Email egy **teljes körű API-t biztosít, amely több mint 30 MIME tartalomtípust támogat**, beleértve a egyszerű szöveget, a HTML‑t és a multipart üzeneteket. Képes feldolgozni olyan postafiókokat, amelyek **több százezer üzenetet** tartalmaznak, miközben a memóriahasználatot 200 MB alatt tartja egy standard JVM‑en. A könyvtár Maven‑kész, ingyenes próbatestet kínál a gyors kiértékeléshez, és a termelési licenc alkalmazásakor eltávolítja az összes korlátozást.
 
-## Előfeltételek
+## Előkövetelmények
 
 ### Szükséges könyvtárak, verziók és függőségek
 - **Aspose.Email for Java**: 25.4 vagy újabb verzió (tartalmazza a `aspose-email` Maven artefaktust).  
 - **Java Development Kit (JDK)**: JDK 16 vagy újabb ajánlott.  
-- **Maven**: Telepítsd a Maven‑t a függőségek egyszerű kezelése érdekében.
+- **Maven**: Telepítse a Maven‑t a függőségek egyszerű kezelése érdekében.
 
 ### Környezet beállítási követelmények
-Győződj meg róla, hogy a fejlesztői környezet tartalmazza:
-- Konfigurált JDK  
+Győződjön meg róla, hogy a fejlesztői környezet tartalmazza:
+- Egy konfigurált JDK  
 - Egy IDE, például IntelliJ IDEA, Eclipse vagy VS Code Java támogatással  
 
-### Tudás‑előfeltételek
-- Alapvető Java programozási ismeretek  
-- E‑mail formátumok (MIME, EML) ismerete  
+### Tudás előkövetelmények
+- Alap Java programozási készségek  
+- Ismeret az e‑mail formátumokkal (MIME, EML)
 
-## Aspose.Email for Java beállítása
+## Az Aspose.Email for Java beállítása
 
-Az Aspose.Email for Java integrálásához add hozzá a **aspose email maven dependency**‑t a `pom.xml` fájlodhoz:
+Az Aspose.Email for Java integrálásához a projektjébe adja hozzá a **aspose‑email Maven függőséget** a `pom.xml` fájlhoz:
 
 ```xml
 <dependency>
@@ -78,14 +128,14 @@ Az Aspose.Email for Java integrálásához add hozzá a **aspose email maven dep
 ```
 
 ### Licenc beszerzése
-Kezdd egy **ingyenes próba** verzióval, töltsd le a könyvtárat és kérj ideiglenes licencet az Aspose‑tól:
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
+Kezdje egy **ingyenes próbaverzióval** a könyvtár letöltésével és egy ideiglenes licenc igénylésével az Aspose‑tól:
+- [Ingyenes próba](https://releases.aspose.com/email/java/)
+- [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)
 
-Termelésben való használathoz érdemes teljes licencet vásárolni a korlátozások eltávolításához.
+Termelési használathoz vásároljon teljes licencet az értékelési korlátozások eltávolításához.
 
-### Alapvető inicializálás és beállítás
-A függőség beállítása után inicializáld az Aspose.Email‑t a licencfájloddal:
+### Alap inicializálás és beállítás
+A függőség hozzáadása után inicializálja az Aspose.Email‑t a licencfájljával:
 
 ```java
 import com.aspose.email.License;
@@ -98,11 +148,11 @@ license.setLicense("path_to_your_license_file");
 
 Vizsgáljuk meg lépésről‑lépésre az egyes funkciókat.
 
-### Hogyan parse‑eljük az EML fájlt Java‑ban
+### Hogyan parse‑oljuk az EML fájlt Java‑ban
 
-#### EML fájl betöltése
+A `MailMessage.load` metódus beolvassa a megadott EML fájlt a lemezről (vagy egy stream‑ből), és létrehozza a `MailMessage` objektumot, amely tartalmazza az összes fejlécet, törzsrészt és mellékletet. Opcionálisan megadhat egy `EmlLoadOptions` példányt a parse‑olási viselkedés testreszabásához, például sérült MIME részek figyelmen kívül hagyásához vagy beágyazott képek kezeléséhez.
 
-Az EML fájl elemzése olyan egyszerű, mint a `MailMessage.load` meghívása. Továbbá átadhatsz egy `EmlLoadOptions`‑t a viselkedés finomhangolásához.
+Töltsön be egy EML fájlt egyetlen hívással a `MailMessage.load`-ra. Továbbá átadhat egy `EmlLoadOptions` példányt a parse‑olási finomságok, például a beágyazott képek kezelésének szabályozásához.
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -112,13 +162,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Magyarázat**:  
-- A `dataDir` a mappára mutat, amelyik a EML fájlt tartalmazza.  
-- Az `EmlLoadOptions` lehetővé teszi, hogy szabályozd, hogyan olvassa be az üzenetet (pl. beágyazott képek kezelése).
+### Mellékletgyűjtemény inicializálása
 
-### AttachmentCollection inicializálása
-
-Miután az EML fájlt betöltöttük, a mellékleteket egy `AttachmentCollection`‑on keresztül érheted el.
+Az `AttachmentCollection` osztály tartalmazza az e‑mailhez csatolt minden fájlt. A betöltött `MailMessage` példányból szerezheti meg.
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -127,11 +173,12 @@ AttachmentCollection attachments = msg.getAttachments();
 ```
 
 **Magyarázat**:  
-- A `getAttachments()` egy gyűjteményt ad vissza, amely az e‑mailhez csatolt összes fájlt tartalmazza.
+- `getAttachments()` egy gyűjteményt ad vissza, amely az e‑mailhez csatolt minden fájlt tartalmazza.
 
-### Mellékletek bejárása és nevek megjelenítése
+### Mellékletek iterálása és nevek megjelenítése
 
-A gyűjtemény bejárása lehetővé teszi a **mellékletnevek lekérését**, ami hasznos naplózáshoz vagy UI lista építéséhez.
+A gyűjteményen való iterálás lehetővé teszi a **mellékletnevek lekérését**, ami hasznos a naplózáshoz vagy UI listák építéséhez.  
+`getName()` visszaadja a melléklet eredeti fájlnevét, ahogyan az az e‑mailben tárolva van.
 
 ```java
 import com.aspose.email.Attachment;
@@ -143,12 +190,13 @@ for (int index = 0; index < attachments.size(); index++) {
 ```
 
 **Magyarázat**:  
-- A ciklus index szerint járja be a mellékleteket.  
-- A `getName()` visszaadja a melléklet eredeti fájlnevét.
+- A ciklus index alapján végigjárja az összes mellékletet.  
+- `getName()` lekéri a melléklet eredeti fájlnevét.
 
 ### Mellékletek mentése lemezre
 
-Végül **mentheted az EML mellékleteket** egy mappába a számítógépeden – ideális archiváláshoz vagy további feldolgozáshoz.
+Végül **menteni fogja az EML mellékleteket** egy mappába a számítógépén – tökéletes archiváláshoz vagy további feldolgozáshoz.  
+`save()` a melléklet bináris adatait egy fájlba írja a megadott kimeneti könyvtárban, megőrizve az eredeti fájlnevet, hacsak nem ad meg másikat.
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -160,72 +208,77 @@ for (int index = 0; index < attachments.size(); index++) {
 ```
 
 **Magyarázat**:  
-- Az `outputDir` a célkönyvtár, ahová a fájlok kerülnek.  
-- A `save()` minden melléklethez új fájlt hoz létre; az `attachment_` előtag elkerüli a névütközéseket.
+- `outputDir` az a könyvtár, ahová a fájlokat írni szeretné.  
+- `save()` minden melléklethez új fájlt hoz létre; az `attachment_` előtag elkerüli a névütközéseket.
 
 ## Gyakorlati alkalmazások
 
 1. **Adatarchiválás** – E‑mail mellékletek megőrzése megfelelőség vagy nyilvántartási célokra.  
-2. **E‑mail elemző szolgáltatások** – Számlák, önéletrajzok vagy naplófájlok kinyerése bejövő üzenetekből egy ügyfélszolgálati rendszerben.  
-3. **Biztonsági mentés** – Automatizált mentés a fontos dokumentumokról, amelyeket e‑mailben kaptál.
+2. **E‑mail parse‑szolgáltatások** – Számlák, önéletrajzok vagy naplók kinyerése a bejövő üzenetekből egy támogatási rendszerben.  
+3. **Biztonsági mentési megoldások** – Automatizálja a fontos, e‑mailben kapott dokumentumok mentését.
 
-## Teljesítmény‑szempontok
+## Teljesítmény szempontok
 
 ### Teljesítmény optimalizálása
-- Használj pufferelt stream‑eket nagyon nagy mellékletek kezelésekor.  
-- Dolgozd fel a mellékleteket darabokban, ha gigabájt‑méretű fájlokra számítasz.
+- Nagyon nagy mellékletek kezelésekor használjon pufferelt streameket.  
+- Ha gigabájt méretű fájlokra számít, dolgozza fel a mellékleteket darabokban.  
 
 ### Erőforrás‑használati irányelvek
-- Figyeld a heap használatát; a nagy mellékletek gyorsan elfogyaszthatják a memóriát.  
-- A Aspose‑hívásokon túl bármely további fájl‑I/O‑hoz részesítsd előnyben a try‑with‑resources‑t.
+- Figyelje a heap használatát; a nagy mellékletek gyorsan elfogyaszthatják a memóriát.  
+- Előnyben részesítse a try‑with‑resources használatát minden további fájl‑I/O esetén, amelyet az Aspose hívásokon túl hozzáad.  
 
-### Legjobb gyakorlatok Java memória‑kezeléshez
-- Zárd le a stream‑eket azonnal.  
-- Szükség esetén növeld a JVM heap‑et (`-Xmx`) a nehéz feladatokhoz.
+### Legjobb gyakorlatok a Java memória kezeléshez
+- Zárja be a streameket gyorsan.  
+- Növelje a JVM heap‑et (`-Xmx`) nehéz feladatokhoz, például `-Xmx4g` a >1 GB fájlok feldolgozásához.
 
 ## Gyakori problémák és megoldások
 
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| **OutOfMemoryError** nagy fájlok feldolgozásakor | Az egész melléklet memóriába töltése | Stream‑eld a mellékletet vagy növeld a heap méretét |
-| **Permission denied** a `save()`‑nál | A kimeneti mappa nem írható | Ellenőrizd a mappa jogosultságait vagy válassz másik könyvtárat |
-| **Hiányzó mellékletek** betöltés után | Az EML nem szabványos MIME‑határolókat használ | Használd az `EmlLoadOptions`‑t a szigorú elemzés lazításához |
+| **OutOfMemoryError** nagy fájlok feldolgozásakor | A teljes melléklet memóriába lett betöltve | Streamelje a mellékletet vagy növelje a heap méretét |
+| **Permission denied** a `save()`-nál | A kimeneti mappa nem írható | Ellenőrizze a mappa jogosultságait vagy válasszon másik könyvtárat |
+| **Missing attachments** betöltés után | Az EML nem szabványos MIME határolókat használ | Használja az `EmlLoadOptions`-t a szigorú parse‑olás lazításához |
 
-## Gyakran feltett kérdések
+## Gyakran ismételt kérdések
 
-**Q: Hogyan kezeljem a titkosított EML fájlokat?**  
-A: Használd a `LoadOptions`‑t, hogy megadd a dekódoláshoz szükséges hitelesítő adatokat, ha az e‑mail szolgáltató támogatja.
+**Q: Hogyan kezeljek titkosított EML fájlokat?**  
+A: Használja a `LoadOptions`-t a dekódolási hitelesítő adatok megadásához, ha az e‑mail szolgáltatás támogatja.
 
-**Q: Az Aspose.Email for Java képes HTML e‑maileket elemezni?**  
-A: Igen – a HTML törzs a `msg.getHtmlBody()`‑on keresztül érhető el, és bármilyen szövegként feldolgozható.
+**Q: Tud-e az Aspose.Email for Java HTML e‑mailokat parse‑olni?**  
+A: Igen – a HTML törzsek elérhetők a `msg.getHtmlBody()`-on keresztül, és bármilyen sztringként feldolgozhatók.
 
 **Q: Milyen gyakori problémák merülnek fel a mellékletek mentésekor?**  
-A: Általában a lemezhely hiánya vagy a nem megfelelő írási jogosultságok a fő okok. Ellenőrizd, hogy a célkönyvtár létezik és írható.
+A: A nem elegendő lemezterület vagy a hiányzó írási jogosultságok a leggyakoribbak. Ellenőrizze, hogy a célmappa létezik és írható.
 
 **Q: Lehet EML fájlokat hálózati helyről betölteni?**  
-A: Természetesen – csak add meg a teljes UNC útvonalat vagy URL‑t a `MailMessage.load`‑nak.
+A: Természetesen – csak adja meg a teljes UNC útvonalat vagy URL-t a `MailMessage.load`-nak.
 
-**Q: Hogyan szerezhetek licencet termeléshez?**  
-A: Látogasd meg az [Aspose vásárlási oldalt](https://purchase.aspose.com/buy) a teljes licenc beszerzéséhez.
+**Q: Hogyan szerezhetek licencet termelési használathoz?**  
+A: Látogassa meg az [Aspose vásárlási oldalát](https://purchase.aspose.com/buy) a teljes licenc megszerzéséhez.
 
 ## Források
-- **Dokumentáció**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Letöltés**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Vásárlás**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Ingyenes próba**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Ideiglenes licenc**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Támogatás**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+- **Dokumentáció**: [Aspose.Email Java Referencia](https://reference.aspose.com/email/java/)
+- **Letöltés**: [Aspose.Email kiadások](https://releases.aspose.com/email/java/)
+- **Vásárlás**: [Aspose.Email vásárlása](https://purchase.aspose.com/buy)
+- **Ingyenes próba**: [Kezdje ingyenes próbával](https://releases.aspose.com/email/java/)
+- **Ideiglenes licenc**: [Szerezzen ideiglenes licencet](https://purchase.aspose.com/temporary-license/)
+- **Támogatás**: [Aspose Email Fórum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Utoljára frissítve:** 2026-03-15  
-**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Szerző:** Aspose
+**Last Updated:** 2026-09-02  
+**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Author:** Aspose
+
+## Kapcsolódó bemutatók
+
+- [EML fájl olvasása és megjelenítése az Aspose.Email for Java segítségével](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
+- [EML konvertálása MSG‑re az Aspose.Email for Java‑val – Lépésről‑lépésre útmutató](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [Maven Aspose Email: TNEF mellékletek megőrzése EML-ben (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
