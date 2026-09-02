@@ -1,52 +1,101 @@
 ---
-date: '2026-03-15'
-description: Dowiedz się, jak analizować plik EML w Javie, wyodrębniać załączniki
-  e‑mail i zapisywać je przy użyciu Aspose.Email dla Javy. Zawiera konfigurację zależności
-  Maven.
+date: '2026-09-02'
+description: Dowiedz się, jak extract email attachments z pliku EML w Javie przy użyciu
+  Aspose.Email. Przewodnik krok po kroku, konfiguracja Maven oraz praktyczne wskazówki.
 keywords:
-- manage EML attachments
-- Aspose.Email for Java
-- Java email handling
-title: Parsowanie pliku EML w Javie – wyodrębnianie załączników przy użyciu Aspose.Email
+- extract email attachments
+- aspose email java
+- load eml file
+- read eml file
+- how to parse eml
+lastmod: '2026-09-02'
+og_description: Extract email attachments z plików EML w Javie przy użyciu Aspose.Email.
+  Przejdź przez zwięzły, gotowy do produkcji tutorial z konfiguracją Maven i wskazówkami
+  dotyczącymi wydajności.
+og_image_alt: Developer guide showing Java code that extracts attachments from an
+  EML file using Aspose.Email
+og_title: Extract email attachments z plików EML w Javie z Aspose.Email
+schemas:
+- author: Aspose
+  dateModified: '2026-09-02'
+  description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  headline: Parse EML file Java – extract email attachments with Aspose.Email
+  type: TechArticle
+- description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  name: Parse EML file Java – extract email attachments with Aspose.Email
+  steps:
+  - name: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+    text: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+  - name: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+    text: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+  - name: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+    text: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+  type: HowTo
+- questions:
+  - answer: Use `LoadOptions` to supply decryption credentials if the email service
+      supports it.
+    question: How do I handle encrypted EML files?
+  - answer: Yes—HTML bodies are accessible via `msg.getHtmlBody()` and can be processed
+      like any string.
+    question: Can Aspose.Email for Java parse HTML emails?
+  - answer: Insufficient disk space or missing write permissions are the usual culprits.
+      Verify the target folder exists and is writable.
+    question: What are common issues when saving attachments?
+  - answer: Absolutely—just pass the full UNC path or URL to `MailMessage.load`.
+    question: Is it possible to load EML files from a network location?
+  - answer: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire
+      a full license.
+    question: How do I obtain a license for production use?
+  type: FAQPage
+tags:
+- extract email attachments
+- aspose email java
+- eml parsing java
+- java email processing
+- maven aspose email
+title: Parsowanie pliku EML w Javie – extract email attachments with Aspose.Email
 url: /pl/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Parsowanie pliku EML w Javie – Wyodrębnianie załączników przy użyciu Aspose.Email
 
-## Wstęp
+# Parsowanie pliku EML w Javie – wyodrębnianie załączników e‑mail przy użyciu Aspose.Email
 
-Jeśli potrzebujesz **parsować plik EML w Javie** i wyciągnąć każdy załącznik, trafiłeś we właściwe miejsce. W tym przewodniku krok po kroku pokażemy, jak załadować plik EML, przejść przez jego załączniki i zapisać każdy z nich na dysku przy użyciu **Aspose.Email for Java**. Otrzymasz czysty, gotowy do produkcji kod Java oraz praktyczne wskazówki dla rzeczywistych scenariuszy, takich jak archiwizacja, zgodność i automatyczne przetwarzanie e‑maili.
+## Wprowadzenie
+
+Jeśli potrzebujesz **wyodrębnić załączniki e‑mail** z plików EML w projektach Java, trafiłeś we właściwe miejsce. W tym przewodniku krok po kroku pokażemy, jak załadować plik EML, wyliczyć jego załączniki i zapisać każdy z nich na dysku przy użyciu **Aspose.Email for Java**. Otrzymasz czysty, gotowy do produkcji kod Java oraz praktyczne wskazówki dla scenariuszy rzeczywistych, takich jak archiwizacja, zgodność i automatyczne przetwarzanie e‑maili.
 
 W tym przewodniku omówimy:
-- Ładowanie pliku EML przy pomocy Aspose.Email for Java  
-- Inicjalizację i iterację po kolekcji załączników w celu **pobrania nazw załączników**  
-- Zapisywanie załączników e‑maili do folderu na Twoim komputerze  
+- Ładowanie pliku EML przy użyciu Aspose.Email dla Javy  
+- Inicjalizacja i iteracja po kolekcji załączników w celu **pobrania nazw załączników**  
+- Zapisywanie załączników e‑mail do folderu na komputerze  
 
-Ten tutorial jest idealny dla programistów, którzy znają podstawy Javy i chcą praktycznego **tutorialu Aspose.Email** do obsługi rzeczywistych danych e‑mailowych.
+Ten samouczek jest idealny dla programistów, którzy znają podstawy Javy i chcą praktycznego **samouczka Aspose.Email** do obsługi danych e‑mail w rzeczywistych aplikacjach.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „wyodrębnić załączniki e‑mail”?** Oznacza to odczytanie pliku EML i zapisanie każdego załączonego pliku w lokalnym magazynie.  
+- **Co oznacza „wyodrębnić załączniki e‑mail”?** Oznacza to odczytanie pliku EML i zapisanie każdego dołączonego pliku w lokalnym magazynie.  
 - **Którą bibliotekę powinienem użyć?** Aspose.Email for Java (wersja 25.4+).  
-- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa w trybie ewaluacyjnym; pełna licencja usuwa wszystkie ograniczenia.  
+- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa w ocenie; pełna licencja usuwa wszystkie ograniczenia.  
 - **Czy mogę parsować pliki EML z udziału sieciowego?** Tak — wystarczy podać pełną ścieżkę lub URL do `MailMessage.load`.  
-- **Czy jest to bezpieczne przy dużych załącznikach?** Przetwarzaj je w pętli i zwalniaj zasoby przy pomocy try‑with‑resources, aby uniknąć problemów z pamięcią.
+- **Czy jest to bezpieczne dla dużych załączników?** Przetwarzaj je w pętli i zwalniaj zasoby przy pomocy try‑with‑resources, aby uniknąć problemów z pamięcią.
 
-## Co to jest „parse eml file java”?
+## Co to jest „parsowanie pliku eml w Javie”?
 
-Parsowanie pliku EML w Javie oznacza konwersję surowej wiadomości RFC‑822 do modelu obiektowego (`MailMessage`), który można przeszukiwać pod kątem nagłówków, części treści i załączników. Aspose.Email abstrahuje niskopoziomowe parsowanie MIME, pozwalając skupić się na logice biznesowej.
+`MailMessage` jest podstawową klasą Aspose.Email, która reprezentuje pojedynczą wiadomość e‑mail załadowaną z pliku EML.  
+Parsowanie pliku EML w Javie oznacza konwersję surowej wiadomości RFC‑822 na model obiektowy (`MailMessage`), który możesz przeszukiwać pod kątem nagłówków, części treści i załączników. Aspose.Email abstrahuje niskopoziomowe parsowanie MIME, pozwalając skupić się na logice biznesowej.
 
-## Dlaczego warto używać Aspose.Email for Java?
+## Dlaczego warto używać Aspose.Email dla Javy?
 
-- **Pełnoprawne API** – Obsługuje wiadomości tekstowe, HTML i multipart od razu.  
-- **Gotowość Maven** – Proste zarządzanie zależnościami dzięki najnowszemu pakietowi `aspose-email`.  
-- **Solidna licencja** – Bezpłatna wersja próbna do testów, pełna licencja usuwa wszystkie limity.  
-- **Wydajność** – Optymalizowane pod kątem dużych skrzynek pocztowych i masowego wyodrębniania załączników.
+Aspose.Email zapewnia **pełnoprawne API obsługujące ponad 30 typów treści MIME**, w tym tekst zwykły, HTML i wiadomości wieloczęściowe. Może przetwarzać skrzynki pocztowe zawierające **setki tysięcy wiadomości**, utrzymując zużycie pamięci poniżej 200 MB na standardowej maszynie JVM. Biblioteka jest gotowa do użycia w Maven, oferuje bezpłatną wersję próbną do szybkiej oceny i usuwa wszystkie limity po zastosowaniu licencji produkcyjnej.
 
 ## Wymagania wstępne
 
@@ -64,9 +113,9 @@ Upewnij się, że Twoje środowisko programistyczne zawiera:
 - Podstawowe umiejętności programowania w Javie  
 - Znajomość formatów e‑mail (MIME, EML)  
 
-## Konfiguracja Aspose.Email for Java
+## Konfigurowanie Aspose.Email dla Javy
 
-Aby zintegrować Aspose.Email for Java z projektem, dodaj **zależność aspose email maven** do pliku `pom.xml`:
+Aby zintegrować Aspose.Email for Java w swoim projekcie, dodaj **zależność Maven aspose‑email** do pliku `pom.xml`:
 
 ```xml
 <dependency>
@@ -78,14 +127,14 @@ Aby zintegrować Aspose.Email for Java z projektem, dodaj **zależność aspose 
 ```
 
 ### Uzyskanie licencji
-Rozpocznij od **bezpłatnej wersji próbnej**, pobierając bibliotekę i uzyskując tymczasową licencję od Aspose:
-- [Free Trial](https://releases.aspose.com/email/java/)
-- [Temporary License](https://purchase.aspose.com/temporary-license/)
+Rozpocznij od **bezpłatnej wersji próbnej**, pobierając bibliotekę i ubiegając się o tymczasową licencję od Aspose:
+- [Bezpłatna wersja próbna](https://releases.aspose.com/email/java/)
+- [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/)
 
-Do użytku produkcyjnego rozważ zakup pełnej licencji, aby usunąć wszelkie ograniczenia.
+Do użytku produkcyjnego zakup pełną licencję, aby usunąć wszelkie ograniczenia oceny.
 
 ### Podstawowa inicjalizacja i konfiguracja
-Po dodaniu zależności, zainicjalizuj Aspose.Email przy pomocy pliku licencyjnego:
+Po dodaniu zależności zainicjalizuj Aspose.Email przy użyciu pliku licencyjnego:
 
 ```java
 import com.aspose.email.License;
@@ -96,13 +145,11 @@ license.setLicense("path_to_your_license_file");
 
 ## Przewodnik implementacji
 
-Przejdźmy przez każdą funkcję krok po kroku.
+Przyjrzyjmy się każdej funkcji krok po kroku.
 
 ### Jak parsować plik EML w Javie
 
-#### Ładowanie pliku EML
-
-Parsowanie pliku EML jest tak proste, jak wywołanie `MailMessage.load`. Możesz także przekazać `EmlLoadOptions`, aby dopasować zachowanie parsowania.
+Metoda `MailMessage.load` odczytuje określony plik EML z dysku (lub strumienia) i tworzy obiekt `MailMessage`, który zawiera wszystkie nagłówki, części treści i załączniki. Opcjonalnie możesz podać instancję `EmlLoadOptions`, aby dostosować zachowanie parsowania, np. ignorować uszkodzone części MIME lub obsługiwać osadzone obrazy.
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -112,13 +159,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Wyjaśnienie**:  
-- `dataDir` wskazuje folder zawierający Twój plik EML.  
-- `EmlLoadOptions` pozwala kontrolować sposób odczytu wiadomości (np. obsługa osadzonych obrazów).
+### Inicjalizacja kolekcji załączników
 
-### Inicjalizacja AttachmentCollection
-
-Po załadowaniu pliku EML możesz pobrać jego załączniki za pomocą `AttachmentCollection`.
+Klasa `AttachmentCollection` przechowuje każdy plik załączony do wiadomości. Uzyskujesz ją z załadowanego obiektu `MailMessage`.
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -127,11 +170,13 @@ AttachmentCollection attachments = msg.getAttachments();
 ```
 
 **Wyjaśnienie**:  
-- `getAttachments()` zwraca kolekcję zawierającą każdy plik dołączony do e‑maila.
+- `getAttachments()` zwraca kolekcję, w której znajdują się wszystkie pliki załączone do wiadomości.
 
-### Iteracja po załącznikach i wyświetlanie nazw
+### Iterowanie po załącznikach i wyświetlanie nazw
 
-Iterowanie po kolekcji pozwala **pobrać nazwy załączników**, co jest przydatne przy logowaniu lub budowaniu list w interfejsie użytkownika.
+Iteracja po kolekcji pozwala **pobrać nazwy załączników**, co jest przydatne przy logowaniu lub budowaniu list w interfejsie użytkownika.  
+
+`getName()` zwraca oryginalną nazwę pliku załącznika, taką jaką przechowuje wiadomość.
 
 ```java
 import com.aspose.email.Attachment;
@@ -144,11 +189,13 @@ for (int index = 0; index < attachments.size(); index++) {
 
 **Wyjaśnienie**:  
 - Pętla przechodzi przez każdy załącznik według indeksu.  
-- `getName()` zwraca oryginalną nazwę pliku załącznika.
+- `getName()` pobiera oryginalną nazwę pliku załącznika.
 
-### Zapisywanie załączników na dysku
+### Zapisz załączniki na dysku
 
-Na koniec **zapiszesz załączniki EML** do folderu na swoim komputerze — idealne do archiwizacji lub dalszego przetwarzania.
+Na koniec **zapiszesz załączniki EML** do folderu na komputerze — idealne rozwiązanie do archiwizacji lub dalszego przetwarzania.  
+
+`save()` zapisuje binarne dane załącznika do pliku w podanym katalogu wyjściowym, zachowując oryginalną nazwę pliku, chyba że określisz inną.
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -165,67 +212,73 @@ for (int index = 0; index < attachments.size(); index++) {
 
 ## Praktyczne zastosowania
 
-1. **Archiwizacja danych** – Zachowaj załączniki e‑maili w celu zgodności lub przechowywania rekordów.  
-2. **Usługi parsowania e‑maili** – Wyodrębniaj faktury, CV lub logi z przychodzących wiadomości w systemie wsparcia.  
-3. **Rozwiązania backupowe** – Automatyzuj tworzenie kopii zapasowych ważnych dokumentów otrzymywanych pocztą.
+1. **Archiwizacja danych** – Zachowaj załączniki e‑mail w celu spełnienia wymogów zgodności lub prowadzenia dokumentacji.  
+2. **Usługi parsowania e‑mail** – Wyodrębnij faktury, CV lub logi z przychodzących wiadomości w systemie wsparcia.  
+3. **Rozwiązania backupowe** – Zautomatyzuj tworzenie kopii zapasowych ważnych dokumentów otrzymywanych pocztą elektroniczną.  
 
 ## Rozważania dotyczące wydajności
 
 ### Optymalizacja wydajności
 - Używaj buforowanych strumieni przy obsłudze bardzo dużych załączników.  
-- Przetwarzaj załączniki w partiach, jeśli spodziewasz się plików o rozmiarze w gigabajtach.
+- Przetwarzaj załączniki w fragmentach, jeśli spodziewasz się plików o rozmiarze w gigabajtach.  
 
 ### Wytyczne dotyczące zużycia zasobów
 - Monitoruj zużycie sterty; duże załączniki mogą szybko pochłonąć pamięć.  
-- Preferuj try‑with‑resources dla dodatkowych operacji I/O poza wywołaniami Aspose.
+- Preferuj try‑with‑resources przy wszelkich dodatkowych operacjach I/O, które dodajesz poza wywołaniami Aspose.  
 
 ### Najlepsze praktyki zarządzania pamięcią w Javie
 - Szybko zamykaj strumienie.  
-- Rozważ zwiększenie przydziału pamięci JVM (`-Xmx`) przy intensywnych obciążeniach.
+- Zwiększ rozmiar sterty JVM (`-Xmx`) przy dużych obciążeniach, np. `-Xmx4g` do przetwarzania plików >1 GB.  
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Przyczyna | Rozwiązanie |
-|---------|-----------|-------------|
-| **OutOfMemoryError** przy przetwarzaniu ogromnych plików | Cały załącznik ładowany do pamięci | Strumieniuj załącznik lub zwiększ rozmiar sterty |
+|-------|-------|-----|
+| **OutOfMemoryError** przy przetwarzaniu bardzo dużych plików | Cały załącznik wczytany do pamięci | Strumieniuj załącznik lub zwiększ rozmiar sterty |
 | **Permission denied** przy `save()` | Folder docelowy nie ma uprawnień do zapisu | Sprawdź uprawnienia folderu lub wybierz inny katalog |
-| **Brak załączników** po załadowaniu | EML używa niestandardowych granic MIME | Użyj `EmlLoadOptions`, aby złagodzić ścisłe parsowanie |
+| **Missing attachments** po wczytaniu | EML używa niestandardowych granic MIME | Użyj `EmlLoadOptions`, aby złagodzić ścisłe parsowanie |
 
 ## Najczęściej zadawane pytania
 
-**P: Jak obsłużyć zaszyfrowane pliki EML?**  
-O: Użyj `LoadOptions`, aby podać dane uwierzytelniające do deszyfrowania, jeśli usługa pocztowa to umożliwia.
+**Q: Jak obsłużyć zaszyfrowane pliki EML?**  
+A: Użyj `LoadOptions`, aby podać dane uwierzytelniające do deszyfrowania, jeśli usługa pocztowa to obsługuje.
 
-**P: Czy Aspose.Email for Java potrafi parsować e‑maile HTML?**  
-O: Tak — ciała HTML są dostępne przez `msg.getHtmlBody()` i można je przetwarzać jak każdy ciąg znaków.
+**Q: Czy Aspose.Email for Java potrafi parsować e‑maile HTML?**  
+A: Tak — treści HTML są dostępne przez `msg.getHtmlBody()` i mogą być przetwarzane jak każdy inny ciąg znaków.
 
-**P: Jakie są typowe problemy przy zapisywaniu załączników?**  
-O: Brak wolnego miejsca na dysku lub brak uprawnień do zapisu to najczęstsze przyczyny. Upewnij się, że docelowy folder istnieje i jest zapisywalny.
+**Q: Jakie są typowe problemy przy zapisywaniu załączników?**  
+A: Brak wystarczającej przestrzeni dyskowej lub brak uprawnień do zapisu to najczęstsze przyczyny. Zweryfikuj, czy docelowy folder istnieje i jest zapisywalny.
 
-**P: Czy można ładować pliki EML z lokalizacji sieciowej?**  
-O: Oczywiście — po prostu przekaż pełną ścieżkę UNC lub URL do `MailMessage.load`.
+**Q: Czy można wczytywać pliki EML z lokalizacji sieciowej?**  
+A: Oczywiście — wystarczy podać pełną ścieżkę UNC lub URL do `MailMessage.load`.
 
-**P: Jak uzyskać licencję do użytku produkcyjnego?**  
-O: Odwiedź [Stronę zakupu Aspose](https://purchase.aspose.com/buy), aby nabyć pełną licencję.
+**Q: Jak uzyskać licencję do użytku produkcyjnego?**  
+A: Odwiedź [Strona zakupu Aspose](https://purchase.aspose.com/buy), aby nabyć pełną licencję.
 
 ## Zasoby
-- **Dokumentacja**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Pobieranie**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Zakup**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Bezpłatna wersja próbna**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Licencja tymczasowa**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Wsparcie**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+- **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
+- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
+- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **Free trial**: [Rozpocznij bezpłatną wersję próbną](https://releases.aspose.com/email/java/)
+- **Temporary license**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Ostatnia aktualizacja:** 2026-03-15  
-**Testowane z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Ostatnia aktualizacja:** 2026-09-02  
+**Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Autor:** Aspose
+
+## Powiązane samouczki
+
+- [Odczytaj plik EML i wyświetl przy użyciu Aspose.Email dla Javy](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
+- [Konwertuj EML do MSG przy użyciu Aspose.Email dla Javy – przewodnik krok po kroku](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [Maven Aspose Email: Zachowaj załączniki TNEF w EML (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

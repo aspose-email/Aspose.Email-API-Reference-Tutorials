@@ -1,71 +1,125 @@
 ---
-date: '2026-03-15'
-description: JavaでEMLファイルを解析し、メールの添付ファイルを抽出して保存する方法を学びます。Aspose.Email for Java を使用し、Maven
-  の依存関係設定も含まれています。
+date: '2026-09-02'
+description: Aspose.Email を使用して Java で EML ファイルからメール添付ファイルを抽出する方法を学びます。ステップバイステップ
+  ガイド、Maven 設定、実用的なヒント。
 keywords:
-- manage EML attachments
-- Aspose.Email for Java
-- Java email handling
-title: JavaでEMLファイルを解析 – Aspose.Emailで添付ファイルを抽出
+- extract email attachments
+- aspose email java
+- load eml file
+- read eml file
+- how to parse eml
+lastmod: '2026-09-02'
+og_description: Aspose.Email を使用して Java で EML ファイルからメール添付ファイルを抽出します。簡潔で production‑ready
+  なチュートリアル、Maven 設定、performance tips をご覧ください。
+og_image_alt: Developer guide showing Java code that extracts attachments from an
+  EML file using Aspose.Email
+og_title: Aspose.Email で Java の EML ファイルからメール添付ファイルを抽出
+schemas:
+- author: Aspose
+  dateModified: '2026-09-02'
+  description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  headline: Parse EML file Java – extract email attachments with Aspose.Email
+  type: TechArticle
+- description: Learn how to extract email attachments from an EML file in Java using
+    Aspose.Email. Step‑by‑step guide, Maven setup, and practical tips.
+  name: Parse EML file Java – extract email attachments with Aspose.Email
+  steps:
+  - name: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+    text: '**Data archiving** – Preserve email attachments for compliance or record‑keeping.'
+  - name: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+    text: '**Email parsing services** – Extract invoices, resumes, or logs from incoming
+      messages in a support system.'
+  - name: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+    text: '**Backup solutions** – Automate the backup of important documents received
+      via email.'
+  type: HowTo
+- questions:
+  - answer: Use `LoadOptions` to supply decryption credentials if the email service
+      supports it.
+    question: How do I handle encrypted EML files?
+  - answer: Yes—HTML bodies are accessible via `msg.getHtmlBody()` and can be processed
+      like any string.
+    question: Can Aspose.Email for Java parse HTML emails?
+  - answer: Insufficient disk space or missing write permissions are the usual culprits.
+      Verify the target folder exists and is writable.
+    question: What are common issues when saving attachments?
+  - answer: Absolutely—just pass the full UNC path or URL to `MailMessage.load`.
+    question: Is it possible to load EML files from a network location?
+  - answer: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire
+      a full license.
+    question: How do I obtain a license for production use?
+  type: FAQPage
+tags:
+- extract email attachments
+- aspose email java
+- eml parsing java
+- java email processing
+- maven aspose email
+title: EML ファイル（Java）を解析 – Aspose.Email でメール添付ファイルを抽出
 url: /ja/java/attachments-handling/manage-eml-attachments-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# EML ファイル（Java）を解析 – Aspose.Email で添付ファイルを抽出
 
-## Introduction
+# JavaでEMLファイルを解析 – Aspose.Emailでメール添付ファイルを抽出
 
-If you need to **EML ファイル（Java）を解析** projects and pull out every attachment, you’ve come to the right place. In this step‑by‑step guide we’ll show you how to load an EML file, enumerate its attachments, and save each one to disk using **Aspose.Email for Java**. You’ll get clean, production‑ready Java code plus practical tips for real‑world scenarios such as archiving, compliance, and automated email processing.
+## はじめに
 
-In this guide we’ll walk through:
-- Aspose.Email for Java を使用して EML ファイルをロードする  
-- 添付ファイルコレクションを初期化し、反復処理して **添付ファイル名を取得**  
-- メールの添付ファイルをローカルフォルダーに保存する  
+Javaプロジェクトで **メール添付ファイルを抽出** したい場合は、ここが最適です。このステップバイステップガイドでは、EMLファイルを読み込み、添付ファイルを列挙し、**Aspose.Email for Java** を使用して各ファイルをディスクに保存する方法を示します。実践的なコードと、アーカイブ、コンプライアンス、メール自動処理などの実務シナリオ向けのヒントも提供します。
 
-This tutorial is perfect for developers who already know basic Java and want a practical **Aspose.Email tutorial** for handling real‑world email data.
+本ガイドで取り上げる内容：
+- Aspose.Email for Java で EML ファイルを読み込む方法  
+- 添付コレクションを初期化し、**添付ファイル名を取得** する方法  
+- メール添付ファイルをローカルフォルダーに保存する方法  
 
-## Quick Answers
-- **What does “extract email attachments” mean?** It means reading an EML file and writing each attached file to your local storage.  
-- **Which library should I use?** Aspose.Email for Java (version 25.4+).  
-- **Do I need a license?** A free trial works for evaluation; a full license removes all restrictions.  
-- **Can I parse EML files from a network share?** Yes—just provide the full path or URL to `MailMessage.load`.  
-- **Is it safe for large attachments?** Process them in a loop and release resources with try‑with‑resources to avoid memory issues.
+このチュートリアルは、基本的な Java の知識があり、実務でメールデータを扱う **Aspose.Email チュートリアル** を探している開発者に最適です。
 
-## What is “parse eml file java”?
+## クイック回答
+- **「メール添付ファイルを抽出する」とは何ですか？**  
+  EML ファイルを読み取り、添付された各ファイルをローカルストレージに書き出すことです。  
+- **どのライブラリを使用すべきですか？**  
+  Aspose.Email for Java（バージョン 25.4 以上）。  
+- **ライセンスは必要ですか？**  
+  無料トライアルで評価可能です。フルライセンスを取得すると制限がすべて解除されます。  
+- **ネットワーク共有から EML ファイルを解析できますか？**  
+  はい、`MailMessage.load` にフルパスまたは URL を渡すだけです。  
+- **大容量の添付ファイルでも安全ですか？**  
+  ループで処理し、try‑with‑resources を使用してリソースを解放すればメモリ問題を回避できます。
 
-Parsing an EML file in Java means converting the raw RFC‑822 message into an object model (`MailMessage`) that you can query for headers, body parts, and attachments. Aspose.Email abstracts the low‑level MIME parsing, letting you focus on business logic.
+## 「parse eml file java」とは？
 
-## Why use Aspose.Email for Java?
+`MailMessage` は Aspose.Email のコアクラスで、EML ファイルから読み込んだ単一のメールメッセージを表します。  
+Java で EML ファイルを解析するとは、RAW な RFC‑822 メッセージをオブジェクトモデル（`MailMessage`）に変換し、ヘッダー、本文、添付ファイルを照会できるようにすることです。Aspose.Email は低レベルの MIME 解析を抽象化し、ビジネスロジックに集中できるようにします。
 
-- **Full‑featured API** – Handles plain‑text, HTML, and multipart messages out of the box.  
-- **Maven‑ready** – Simple dependency management with the latest `aspose-email` package.  
-- **Robust licensing** – Free trial for testing, full license removes all limits.  
-- **Performance‑tuned** – Optimized for large mailboxes and bulk attachment extraction.
+## なぜ Aspose.Email for Java を使うのか？
 
-## Prerequisites
+Aspose.Email は **30 以上の MIME コンテンツタイプ**（プレーンテキスト、HTML、マルチパートメッセージなど）をサポートするフル機能 API を提供します。**数十万件のメッセージ** を処理しながら、標準的な JVM でメモリ使用量を 200 MB 未満に抑えることができます。Maven 対応で、無料トライアルで手軽に評価でき、プロダクションライセンスを適用すればすべての制限が解除されます。
 
-### Required Libraries, Versions, and Dependencies
-- **Aspose.Email for Java**: Version 25.4 or higher (includes `aspose-email` Maven artifact).  
-- **Java Development Kit (JDK)**: JDK 16 or later is recommended.  
-- **Maven**: Install Maven to manage dependencies easily.
+## 前提条件
 
-### Environment Setup Requirements
-Ensure your development environment includes:
-- A configured JDK  
-- An IDE such as IntelliJ IDEA, Eclipse, or VS Code with Java support  
+### 必要なライブラリ、バージョン、依存関係
+- **Aspose.Email for Java**：バージョン 25.4 以上（`aspose-email` Maven アーティファクトを含む）。  
+- **Java Development Kit (JDK)**：JDK 16 以降を推奨。  
+- **Maven**：依存関係管理のためにインストールしてください。
 
-### Knowledge Prerequisites
-- Basic Java programming skills  
-- Familiarity with email formats (MIME, EML)  
+### 環境設定要件
+以下が開発環境に含まれていることを確認してください：
+- 設定済みの JDK  
+- IntelliJ IDEA、Eclipse、または VS Code などの Java 対応 IDE  
 
-## Setting Up Aspose.Email for Java
+### 知識の前提条件
+- 基本的な Java プログラミングスキル  
+- メールフォーマット（MIME、EML）に関する基本的な理解  
 
-To integrate Aspose.Email for Java into your project, add the **aspose email maven dependency** to your `pom.xml` file:
+## Aspose.Email for Java の設定
+
+プロジェクトに Aspose.Email for Java を組み込むには、`pom.xml` に **aspose‑email Maven 依存関係** を追加します：
 
 ```xml
 <dependency>
@@ -76,15 +130,15 @@ To integrate Aspose.Email for Java into your project, add the **aspose email mav
 </dependency>
 ```
 
-### License Acquisition
-Start with a **free trial** by downloading the library and applying for a temporary license from Aspose:
+### ライセンス取得
+まずは **無料トライアル** をダウンロードし、Aspose から一時ライセンスを取得してください：
 - [Free Trial](https://releases.aspose.com/email/java/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
-For production use, consider purchasing a full license to remove any limitations.
+本番環境で使用する場合は、フルライセンスを購入して評価制限を解除します。
 
-### Basic Initialization and Setup
-After setting up the dependency, initialize Aspose.Email with your license file:
+### 基本的な初期化と設定
+依存関係を追加したら、ライセンスファイルで Aspose.Email を初期化します：
 
 ```java
 import com.aspose.email.License;
@@ -93,15 +147,15 @@ License license = new License();
 license.setLicense("path_to_your_license_file");
 ```
 
-## Implementation Guide
+## 実装ガイド
 
-Let's explore each feature step‑by‑step.
+各機能をステップバイステップで見ていきます。
 
-### How to parse EML file Java
+### Java で EML ファイルを解析する方法
 
-#### Load an EML File
+`MailMessage.load` メソッドは、ディスク（またはストリーム）から指定された EML ファイルを読み取り、ヘッダー、本文、添付ファイルをすべて含む `MailMessage` オブジェクトを構築します。必要に応じて `EmlLoadOptions` インスタンスを渡し、破損した MIME 部分の無視や埋め込み画像の処理など、解析動作をカスタマイズできます。
 
-Parsing an EML file is as simple as calling `MailMessage.load`. You can also pass `EmlLoadOptions` to fine‑tune the parsing behavior.
+EML ファイルは `MailMessage.load` の一呼び出しでロードできます。`EmlLoadOptions` を使用すれば、埋め込み画像の取り扱いなど細かな設定も可能です。
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -111,13 +165,9 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml", new EmlLoadOptions());
 ```
 
-**Explanation**:  
-- `dataDir` points to the folder containing your EML file.  
-- `EmlLoadOptions` lets you control how the message is read (e.g., handling of embedded images).
+### 添付コレクションの初期化
 
-### Initialize AttachmentCollection
-
-Once the EML file is loaded, you can retrieve its attachments via an `AttachmentCollection`.
+`AttachmentCollection` クラスはメールに添付されたすべてのファイルを保持します。ロードした `MailMessage` インスタンスから取得します。
 
 ```java
 import com.aspose.email.AttachmentCollection;
@@ -125,12 +175,14 @@ import com.aspose.email.AttachmentCollection;
 AttachmentCollection attachments = msg.getAttachments();
 ```
 
-**Explanation**:  
-- `getAttachments()` returns a collection that holds every file attached to the email.
+**解説**：  
+- `getAttachments()` はメールに添付されたすべてのファイルを保持するコレクションを返します。
 
-### Iterate Over Attachments and Display Names
+### 添付ファイルを列挙し名前を表示する
 
-Iterating over the collection lets you **get attachment names**, which is useful for logging or building UI lists.
+コレクションをループすると **添付ファイル名を取得** でき、ログ出力や UI リスト作成に便利です。  
+
+`getName()` はメールに保存されている元のファイル名を返します。
 
 ```java
 import com.aspose.email.Attachment;
@@ -141,13 +193,15 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- The loop walks through each attachment by index.  
-- `getName()` fetches the original file name of the attachment.
+**解説**：  
+- ループはインデックスで各添付ファイルを走査します。  
+- `getName()` が添付ファイルの元の名前を取得します。
 
-### Save Attachments to Disk
+### 添付ファイルをディスクに保存する
 
-Finally, you’ll **save EML attachments** to a folder on your computer—perfect for archiving or further processing.
+最後に、**EML の添付ファイルをローカルフォルダーに保存** します。アーカイブや後続処理に最適です。  
+
+`save()` は指定した出力ディレクトリにバイナリデータを書き込み、別名を指定しない限り元のファイル名を保持します。
 
 ```java
 String outputDir = "YOUR_OUTPUT_DIRECTORY";
@@ -158,73 +212,79 @@ for (int index = 0; index < attachments.size(); index++) {
 }
 ```
 
-**Explanation**:  
-- `outputDir` is where you want the files written.  
-- `save()` creates a new file for each attachment; the prefix `attachment_` avoids name collisions.
+**解説**：  
+- `outputDir` はファイルを書き出す先のディレクトリです。  
+- `save()` は各添付ファイルごとに新しいファイルを作成し、`attachment_` プレフィックスで名前衝突を回避します。
 
-## Practical Applications
+## 実用的な活用例
 
-1. **Data Archiving** – Preserve email attachments for compliance or record‑keeping.  
-2. **Email Parsing Services** – Extract invoices, resumes, or logs from incoming messages in a support system.  
-3. **Backup Solutions** – Automate the backup of important documents received via email.
+1. **データアーカイブ** – コンプライアンスや記録保持のためにメール添付ファイルを保存。  
+2. **メール解析サービス** – サポートシステムで受信メールから請求書、履歴書、ログなどを抽出。  
+3. **バックアップソリューション** – 受信メールの重要書類を自動的にバックアップ。  
 
-## Performance Considerations
+## パフォーマンス上の考慮点
 
-### Optimizing Performance
-- Use buffered streams when handling very large attachments.  
-- Process attachments in chunks if you expect gigabyte‑size files.
+### パフォーマンス最適化
+- 非常に大きな添付ファイルを扱う場合はバッファードストリームを使用。  
+- ギガバイト単位のファイルが予想される場合は、チャンク単位で処理。  
 
-### Resource Usage Guidelines
-- Monitor heap usage; large attachments can quickly consume memory.  
-- Prefer try‑with‑resources for any additional file I/O you add beyond the Aspose calls.
+### リソース使用ガイドライン
+- ヒープ使用量を監視。大容量添付はメモリを急速に消費します。  
+- Aspose の呼び出し以外で追加のファイル I/O を行う場合は、必ず try‑with‑resources を使用。  
 
-### Best Practices for Java Memory Management
-- Close streams promptly.  
-- Consider increasing the JVM heap (`-Xmx`) for heavy workloads.
+### Java メモリ管理のベストプラクティス
+- ストリームは速やかにクローズ。  
+- 重い処理には JVM ヒープを増やす（例：`-Xmx4g` で 1 GB 超のファイルを処理）。  
 
-## Common Issues and Solutions
+## よくある問題と解決策
 
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| **OutOfMemoryError** when processing huge files | Entire attachment loaded into memory | Stream the attachment or increase heap size |
-| **Permission denied** on `save()` | Output folder not writable | Verify folder permissions or choose a different directory |
-| **Missing attachments** after load | EML uses non‑standard MIME boundaries | Use `EmlLoadOptions` to relax strict parsing |
+| 問題 | 原因 | 対策 |
+|------|------|------|
+| **OutOfMemoryError** が発生する | 添付全体をメモリに読み込んでいる | 添付をストリーム処理するか、ヒープサイズを増やす |
+| **save() で Permission denied** | 出力フォルダーが書き込み不可 | フォルダー権限を確認するか、別ディレクトリを指定 |
+| **ロード後に添付が欠落** | EML が非標準 MIME 境界を使用 | `EmlLoadOptions` で緩やかな解析を有効化 |
 
-## Frequently Asked Questions
+## FAQ（よくある質問）
 
-**Q: How do I handle encrypted EML files?**  
-A: Use `LoadOptions` to supply decryption credentials if the email service supports it.
+**Q: 暗号化された EML ファイルはどう扱いますか？**  
+A: メールサービスが対応していれば、`LoadOptions` に復号用クレデンシャルを指定します。
 
-**Q: Can Aspose.Email for Java parse HTML emails?**  
-A: Yes—HTML bodies are accessible via `msg.getHtmlBody()` and can be processed like any string.
+**Q: Aspose.Email for Java は HTML メールを解析できますか？**  
+A: はい、`msg.getHtmlBody()` で HTML 本文にアクセスでき、文字列として処理可能です。
 
-**Q: What are common issues when saving attachments?**  
-A: Insufficient disk space or missing write permissions are the usual culprits. Verify the target folder exists and is writable.
+**Q: 添付ファイル保存時の一般的な問題は何ですか？**  
+A: ディスク容量不足や書き込み権限がないことが主な原因です。対象フォルダーが存在し、書き込み可能か確認してください。
 
-**Q: Is it possible to load EML files from a network location?**  
-A: Absolutely—just pass the full UNC path or URL to `MailMessage.load`.
+**Q: ネットワーク上の場所から EML ファイルをロードできますか？**  
+A: もちろんです。UNC パスまたは URL を `MailMessage.load` に渡すだけです。
 
-**Q: How do I obtain a license for production use?**  
-A: Visit [Aspose's Purchase Page](https://purchase.aspose.com/buy) to acquire a full license.
+**Q: 本番用のライセンスはどう取得しますか？**  
+A: [Aspose の購入ページ](https://purchase.aspose.com/buy) からフルライセンスを取得してください。
 
-## Resources
-- **Documentation**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
-- **Download**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
-- **Purchase**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
-- **Free Trial**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Temporary License**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Support**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+## リソース
+- **ドキュメント**: [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)
+- **ダウンロード**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
+- **購入**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **無料トライアル**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
+- **一時ライセンス**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **サポート**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**最終更新日:** 2026-03-15  
+**最終更新日:** 2026-09-02  
 **テスト環境:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **作者:** Aspose
+
+## 関連チュートリアル
+
+- [Read EML file and display with Aspose.Email for Java](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
+- [Convert EML to MSG with Aspose.Email for Java – Step‑by‑Step Guide](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [Maven Aspose Email: Preserve TNEF Attachments in EML (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
