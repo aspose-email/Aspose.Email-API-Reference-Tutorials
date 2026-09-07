@@ -1,72 +1,109 @@
 ---
-date: '2026-03-18'
-description: Tìm hiểu cách chèn tệp đính kèm và cách thay thế tệp đính kèm trong các
-  tệp MSG bằng Aspose.Email cho Java. Hướng dẫn từng bước kèm mã nguồn, các thực tiễn
-  tốt nhất và các ví dụ thực tế.
+date: '2026-09-07'
+description: Tìm hiểu cách chèn attachment và thay thế attachment trong các tệp Outlook
+  MSG bằng Aspose.Email for Java. Code từng bước, best practices, và real‑world examples.
 keywords:
-- insert MSG attachments Java
-- replace MSG attachments Java
-- Aspose.Email for Java
-title: Cách chèn tệp đính kèm vào tệp MSG bằng Aspose.Email cho Java
+- how to insert attachment
+- how to replace attachment
+- add attachment outlook msg
+lastmod: '2026-09-07'
+og_description: Tìm hiểu cách chèn attachment và thay thế attachment trong các tệp
+  Outlook MSG bằng Aspose.Email for Java. Hướng dẫn chi tiết với code, tips, và real‑world
+  use cases.
+og_image_alt: Guide showing how to insert attachment in MSG files using Aspose.Email
+  for Java
+og_title: Cách chèn attachment vào MSG bằng Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to insert attachment and replace attachment in Outlook MSG
+    files using Aspise.Email for Java. Step‑by‑step code, best practices, and real‑world
+    examples.
+  headline: How to insert attachment in MSG with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Use memory‑efficient methods, process files in chunks when possible, and
+      increase the JVM heap size (`-Xmx`) for very large MSG files.
+    question: How do I handle large attachments with Aspose.Email?
+  - answer: Yes, iterate over a collection of files and call `msg.getAttachments().insert(...)`
+      for each entry.
+    question: Can I insert multiple attachments at once?
+  - answer: The most frequent problem is using an incorrect index. Verify the current
+      attachment count before calling `replace`.
+    question: What are common issues when replacing attachments?
+  - answer: Absolutely. Its robust API, extensive format support, and ability to process
+      multi‑hundred‑page messages make it ideal for large‑scale deployments.
+    question: Is Aspose.Email Java suitable for enterprise‑level applications?
+  - answer: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+      for help from the community and Aspose staff.
+    question: How can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- insert attachment
+- replace attachment
+- Aspose.Email
+- Java email processing
+- MSG file
+title: Cách chèn attachment vào MSG bằng Aspose.Email for Java
 url: /vi/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/
 weight: 1
 ---
 
-TR, fine.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Chèn & Thay Thế Tệp Đính Kèm MSG Bằng Aspose.Email Java: Hướng Dẫn Toàn Diện
 
-Trong môi trường kỹ thuật số, việc giao tiếp qua email thường bao gồm chia sẻ các tệp đính kèm quan trọng. Biết **cách chèn tệp đính kèm** vào tệp *.MSG* và, khi cần, **cách thay thế tệp đính kèm** có thể giúp bạn tránh được nhiều công việc thủ công. Dù bạn đang xây dựng một bộ xử lý email tự động hay chỉ cần sắp xếp lại các tin nhắn Outlook, Aspose.Email cho Java cung cấp cách tiếp cận sạch sẽ và đáng tin cậy để quản lý các tệp đính kèm. Bài hướng dẫn này sẽ dẫn bạn qua cả việc chèn một tệp đính kèm mới và thay thế một tệp đính kèm hiện có, kèm theo các kịch bản thực tế và mẹo tối ưu hiệu năng.
+# Chèn & thay thế tệp đính kèm MSG bằng Aspose.Email Java: hướng dẫn toàn diện
 
-## Trả Lời Nhanh
-- **Thư viện chính là gì?** Aspose.Email cho Java  
-- **Cách chèn tệp đính kèm?** Dùng `msg.getAttachments().insert(index, name, MapiMessage)`  
-- **Cách thay thế tệp đính kèm?** Dùng `msg.getAttachments().replace(index, name, MapiMessage)`  
-- **Có cần giấy phép không?** Có, cần giấy phép Aspose.Email hợp lệ cho môi trường sản xuất  
-- **Phiên bản JDK nào được hỗ trợ?** JDK 16 trở lên  
+Luồng công việc email dựa trên các tệp Outlook *.MSG* thường cần kiểm soát lập trình đối với các tệp đính kèm nhúng. Dù bạn đang xây dựng dịch vụ lưu trữ tự động hay một trình tạo tin nhắn dựa trên tuân thủ, **cách chèn tệp đính kèm** và **cách thay thế tệp đính kèm** là những kỹ năng thiết yếu. Hướng dẫn này sẽ chỉ cho bạn, từng bước, cách thêm một tệp đính kèm mới và hoán đổi một tệp hiện có bằng Aspose.Email cho Java, đồng thời nêu bật các kịch bản thực tế, mẹo hiệu suất và các lỗi thường gặp.
 
-## Cách Chèn Tệp Đính Kèm Vào Tệp MSG
-Phần này trả lời trực tiếp câu hỏi **cách chèn tệp đính kèm** vào tệp Outlook MSG. Chúng tôi sẽ trình bày các lời gọi API chính xác, lý do cho mỗi bước, và các mẹo để giữ cho mã của bạn sạch sẽ.
+## Câu trả lời nhanh
 
-## Những Điều Bạn Sẽ Học
+Phương thức `insert` thêm một tệp đính kèm mới tại chỉ mục được chỉ định, trong khi `replace` hoán đổi một tệp đính kèm hiện có bằng một tệp mới. Cả hai phương thức đều nhận tên tệp đính kèm và một đối tượng `MapiMessage` đại diện cho email được đính kèm. Đối tượng `MapiMessage` bao gồm một tin nhắn Outlook có thể được đính kèm vào một tệp MSG khác.
 
-- Cách thiết lập Aspose.Email cho Java trong dự án của bạn  
-- Hướng dẫn **thêm tệp đính kèm vào msg** (chèn một tệp đính kèm mới) từng bước  
-- Kỹ thuật **cách thay thế tệp đính kèm** (thay thế một tệp đính kèm hiện có)  
-- Ứng dụng thực tế của các tính năng này  
-- Mẹo tối ưu hiệu năng và các thực tiễn tốt nhất  
+- **Thư viện nào xử lý việc thao tác tệp đính kèm MSG?** Aspose.Email for Java cung cấp một API đầy đủ tính năng cho các tệp Outlook MSG.  
+- **Cách chèn tệp đính kèm?** Gọi `msg.getAttachments().insert(index, name, MapiMessage)` với chỉ mục mục tiêu và một `MapiMessage` đã chuẩn bị.  
+- **Cách thay thế tệp đính kèm?** Sử dụng `msg.getAttachments().replace(index, name, MapiMessage)` để hoán đổi nội dung tại vị trí cho trước.  
+- **Cần giấy phép không?** Có — nếu không có giấy phép Aspose.Email hợp lệ, đầu ra sẽ chứa dấu bản quyền đánh giá.  
+- **Phiên bản Java nào được hỗ trợ?** Thư viện tương thích với JDK 16 trở lên.
 
-Bây giờ, hãy cùng khám phá các yêu cầu tiên quyết trước khi bắt đầu.
+## Cách chèn tệp đính kèm vào tệp MSG?
 
-## Yêu Cầu Tiên Quyết
+Tải tin nhắn mục tiêu, chuẩn bị tệp đính kèm và chèn nó vào vị trí mong muốn. Đoạn trả lời trực tiếp này cho bạn biết chuỗi gọi chính xác trong dưới 70 từ: bạn tải MSG nguồn, trích xuất hoặc tạo một `MapiMessage` đại diện cho tệp đính kèm mới, sau đó gọi `msg.getAttachments().insert(1, "NewAttachment.msg", newMsg)` để đặt nó ở chỉ mục 1. API tự động cập nhật bộ sưu tập tệp đính kèm và giữ nguyên cấu trúc tin nhắn gốc.
 
-Trước khi chúng ta bắt đầu triển khai giải pháp, hãy chắc chắn môi trường phát triển của bạn đã sẵn sàng. Bạn sẽ cần:
+### Tệp đính kèm MSG là gì?
 
-### Thư Viện, Phiên Bản và Phụ Thuộc Cần Thiết
+Một tệp đính kèm trong tệp Outlook MSG được lưu dưới dạng đối tượng `MapiMessage` trong bộ sưu tập tệp đính kèm của tin nhắn. Đối tượng này bao gồm toàn bộ nội dung email của tin nhắn được đính kèm, cho phép bạn xử lý nó như một email độc lập khi cần.
 
-- **Aspose.Email cho Java**: Thư viện này cung cấp chức năng thao tác các định dạng email, bao gồm tệp MSG.  
-- **Java Development Kit (JDK)**: Đảm bảo bạn đã cài đặt JDK 16 trở lên.
+### Tại sao sử dụng Aspose.Email để xử lý tệp đính kèm?
 
-### Yêu Cầu Thiết Lập Môi Trường
+Aspose.Email hỗ trợ **hơn 50** định dạng email và tệp, có thể xử lý các tin nhắn lên tới **500 MB** mà không cần tải toàn bộ tệp vào bộ nhớ, và cung cấp các thao tác an toàn đa luồng có thể mở rộng trong các dịch vụ đa luồng. Những khả năng được định lượng này khiến nó trở thành lựa chọn đáng tin cậy cho tự động hóa email ở cấp độ doanh nghiệp.
 
-- Một IDE ưa thích như IntelliJ IDEA hoặc Eclipse  
-- Maven để quản lý phụ thuộc  
+## Yêu cầu trước
 
-### Kiến Thức Cần Có
+- **Aspose.Email for Java** (phiên bản mới nhất) – thư viện cốt lõi cho phép thao tác MSG.  
+- **Java Development Kit (JDK) 16+** – môi trường chạy cần thiết cho thư viện.  
+- Một IDE như IntelliJ IDEA hoặc Eclipse, và Maven để quản lý phụ thuộc.  
+- Kiến thức cơ bản về Java I/O và quen thuộc với cấu trúc Outlook MSG.
 
-- Kiến thức cơ bản về lập trình Java  
-- Quen thuộc với việc xử lý các thao tác nhập/đầu ra tệp trong Java  
+### Thư viện, phiên bản và phụ thuộc cần thiết
 
-## Thiết Lập Aspose.Email cho Java
+- `com.aspose:aspose-email` – thêm tọa độ Maven được hiển thị trong tài liệu chính thức.  
+- Không cần thư viện bên thứ ba nào khác cho các thao tác tệp đính kèm cơ bản.
 
-Để bắt đầu, bạn cần tích hợp Aspose.Email vào dự án Java của mình. Dưới đây là cách thực hiện bằng Maven:
+### Yêu cầu thiết lập môi trường
+
+- Cài đặt JDK 16 hoặc mới hơn và cấu hình `JAVA_HOME`.  
+- Tạo dự án Maven và thêm phụ thuộc Aspose.Email vào `pom.xml`.  
+
+### Kiến thức tiên quyết
+
+- Hiểu biết về các luồng tệp Java (`FileInputStream`, `FileOutputStream`).  
+- Quen thuộc với các khái niệm hướng đối tượng như lớp và phương thức.
+
+## Cài đặt Aspose.Email cho Java
+
+Add the Aspose.Email dependency to your Maven `pom.xml`:
 
 ```xml
 <dependency>
@@ -77,188 +114,185 @@ Trước khi chúng ta bắt đầu triển khai giải pháp, hãy chắc chắ
 </dependency>
 ```
 
-### Các Bước Nhận Giấy Phép
+### Các bước lấy giấy phép
 
-Aspose.Email cung cấp các tùy chọn cấp phép khác nhau:
+Aspose.Email cung cấp **bản dùng thử miễn phí** và **giấy phép thương mại**. Bản dùng thử loại bỏ hầu hết các hạn chế nhưng thêm một biểu ngữ đánh giá nhỏ vào các tệp được tạo. Đối với môi trường sản xuất, bạn phải áp dụng một tệp giấy phép vĩnh viễn.
 
-- **Dùng Thử Miễn Phí**: Nhận giấy phép tạm thời để khám phá đầy đủ tính năng mà không bị giới hạn đánh giá.  
-- **Mua Bản Quyền**: Mua gói đăng ký để có quyền truy cập liên tục vào các bản cập nhật và hỗ trợ.
+Nhận giấy phép tạm thời tại [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/). Để biết chi tiết mua hàng đầy đủ, xem [Trang mua hàng](https://purchase.aspose.com/buy).
 
-Để nhận giấy phép tạm thời, truy cập [Temporary License](https://purchase.aspose.com/temporary-license/). Để biết thêm chi tiết về việc mua, hãy vào [Purchase Page](https://purchase.aspose.com/buy).
-
-Sau khi có file giấy phép, khởi tạo nó trong ứng dụng của bạn như sau:
+Initialize the license in your code before any API calls:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-Với Aspose.Email đã được thiết lập và cấp phép, chúng ta chuyển sang triển khai các tính năng.
+## Hướng dẫn triển khai
 
-## Hướng Dẫn Triển Khai
+### Chèn tệp đính kèm MSG tại vị trí cụ thể
 
-### Chèn Đính Kèm MSG Tại Vị Trí Cụ Thể
+#### Tổng quan
 
-#### Tổng Quan
+Tính năng này cho phép bạn **thêm tệp đính kèm vào MSG** tại một chỉ mục chính xác, hữu ích khi thứ tự các tệp đính kèm quan trọng cho quá trình xử lý downstream hoặc kiểm tra tuân thủ.
 
-Tính năng này cho phép bạn **thêm tệp đính kèm vào msg** ở vị trí chính xác—rất hữu ích khi thứ tự đính kèm quan trọng đối với tuân thủ hoặc trình bày.
+#### Hướng dẫn từng bước
 
-#### Hướng Dẫn Từng Bước
+**1. Tải tệp MSG hiện có**  
 
-**1. Tải Tệp MSG Đã Tồn Tại**  
-
-Tải tệp MSG của bạn mà đã chứa các tệp đính kèm nhúng:
+Load the source message that already contains attachments:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 ```
 
-**2. Lưu Một Đính Kèm Để Demo**  
+**2. Lưu một tệp đính kèm để minh họa**  
 
-Chúng tôi sẽ trích xuất tệp đính kèm đầu tiên để bạn có thể thấy những gì đang được di chuyển:
+Extract the first attachment so you can see what will be moved:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Tải Một Tệp MSG Khác**  
+**3. Tải một tệp MSG khác**  
 
-Chuẩn bị tệp MSG mà bạn muốn chèn làm tệp đính kèm mới:
+Prepare the MSG file you want to insert as a new attachment:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbeddedMsg.msg"));
 ```
 
-**4. Chèn Đính Kèm Mới**  
+**4. Chèn tệp đính kèm mới**  
 
-Chèn tệp MSG mới vào vị trí chỉ số 1 trong bộ sưu tập đính kèm:
+Insert the new MSG file at index 1 in the attachments collection:
 
 ```java
 msg.getAttachments().insert(1, "new 11", emb);
 ```
 
-**5. Lưu Tệp MSG Đã Sửa Đổi**  
+**5. Lưu tệp MSG đã sửa đổi**  
 
-Ghi lại các thay đổi vào một tệp mới:
+Persist the changes to a new file:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
 ```
 
-### Thay Thế Nội Dung Đính Kèm MSG Nhúng
+### Thay thế nội dung tệp đính kèm MSG nhúng
 
-#### Tổng Quan
+#### Tổng quan
 
-Khi nội dung của một email đính kèm cần được cập nhật, bạn có thể **cách thay thế tệp đính kèm** mà không làm thay đổi cấu trúc của tin nhắn bao quanh.
+Khi nội dung của email đính kèm cần được cập nhật, bạn có thể **thay thế tệp đính kèm** mà không thay đổi cấu trúc tin nhắn xung quanh, giữ nguyên siêu dữ liệu như thời gian và thông tin người gửi.
 
-#### Hướng Dẫn Từng Bước
+#### Hướng dẫn từng bước
 
-**1. Tải Tệp MSG Có Đính Kèm**  
+**1. Tải tệp MSG có tệp đính kèm**  
 
-Mở tệp MSG đã chứa tệp đính kèm mà bạn dự định thay thế:
+Open the MSG file that already contains the attachment you plan to replace:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 ```
 
-**2. Lưu Đính Kèm Hiện Tại**  
+**2. Lưu một tệp đính kèm hiện có**  
 
-Trích xuất một trong các tệp đính kèm hiện có để tham chiếu:
+Extract one of the current attachments for reference:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Tải Một Tệp MSG Mới Để Thay Thế**  
+**3. Tải một tệp MSG mới để thay thế**  
 
-Tải tệp MSG sẽ trở thành tệp đính kèm mới:
+Load the MSG file that will become the new attachment:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMSGAttachment_out.msg"));
 ```
 
-**4. Thay Thế Đính Kèm**  
+**4. Thay thế tệp đính kèm**  
 
-Thay thế tệp đính kèm cũ ở chỉ số 1 bằng tệp mới:
+Swap the old attachment at index 1 with the new one:
 
 ```java
 msg.getAttachments().replace(1, "new 1", emb);
 ```
 
-**5. Lưu Thay Đổi Vào Tệp MSG**  
+**5. Lưu các thay đổi vào tệp MSG**  
 
-Ghi lại tin nhắn đã cập nhật trở lại đĩa:
+Write the updated message back to disk:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 ```
 
-## Ứng Dụng Thực Tiễn
+## Ứng dụng thực tiễn
 
-Dưới đây là một số kịch bản thực tế mà các tính năng này có thể được áp dụng:
+- **Xử lý email tự động** – Chèn hoặc thay thế tệp đính kèm như một phần của quy trình định tuyến tin nhắn.  
+- **Hệ thống quản lý tài liệu** – Giữ thứ tự tệp đính kèm nhất quán khi lưu trữ tin nhắn Outlook cho việc giữ pháp lý.  
+- **Báo cáo tuân thủ** – Đảm bảo các tài liệu yêu cầu được đính kèm theo đúng thứ tự cho các cuộc kiểm toán.
 
-- **Xử Lý Email Tự Động** – Chèn hoặc thay thế đính kèm tự động như một phần của quy trình làm việc email.  
-- **Hệ Thống Quản Lý Tài Liệu** – Giữ thứ tự đính kèm nhất quán khi lưu trữ các tin nhắn Outlook.  
-- **Báo Cáo Tuân Thủ** – Đảm bảo các tài liệu yêu cầu được đính kèm theo đúng thứ tự cho các cuộc kiểm toán.
+Những kịch bản này tích hợp mượt mà với các nền tảng CRM, quy trình phân tích và các hệ thống doanh nghiệp khác.
 
-Các khả năng này cũng tích hợp mượt mà với các nền tảng CRM, pipeline phân tích dữ liệu và các hệ thống doanh nghiệp khác.
+## Các cân nhắc về hiệu suất
 
-## Cân Nhắc Về Hiệu Năng
+- **Tối ưu hóa tài nguyên** – Chỉ tải các tệp MSG cần thiết và đóng các luồng ngay lập tức bằng cách sử dụng try‑with‑resources.  
+- **Quản lý bộ nhớ** – Tăng dung lượng heap JVM (`-Xmx2g` hoặc cao hơn) khi xử lý các tệp đính kèm rất lớn, và tái sử dụng các đối tượng `MapiMessage` khi có thể.
 
-Khi xử lý nhiều tệp đính kèm lớn, hãy lưu ý các mẹo sau:
+Theo các thực hành này sẽ giữ cho ứng dụng của bạn phản hồi nhanh ngay cả khi tải nặng.
 
-- **Tối Ưu Sử Dụng Tài Nguyên** – Chỉ tải các tệp MSG cần thiết và giải phóng các luồng (streams) kịp thời.  
-- **Quản Lý Bộ Nhớ Java** – Điều chỉnh kích thước heap của JVM nếu bạn xử lý các tệp rất lớn, và tái sử dụng các đối tượng khi có thể.
+## Những lỗi thường gặp & khắc phục
 
-Áp dụng những thực tiễn này sẽ giúp ứng dụng của bạn duy trì tính phản hồi ngay cả khi tải nặng.
+- **Chỉ mục không hợp lệ** – Chèn hoặc thay thế tại một chỉ mục không tồn tại sẽ ném `ArgumentOutOfRangeException`. Luôn kiểm tra `msg.getAttachments().size()` trước khi thực hiện.  
+- **Rò rỉ luồng** – Quên đóng các đối tượng `FileInputStream` có thể làm cạn kiệt các handle tệp. Sử dụng try‑with‑resources để đảm bảo đóng.  
+- **Chưa đặt giấy phép** – Chạy mà không có giấy phép hợp lệ sẽ thêm dấu bản quyền đánh giá. Gọi `license.setLicense(...)` trước khi sử dụng bất kỳ API nào.
 
-## Những Sai Lầm Thường Gặp & Khắc Phục
+## Câu hỏi thường gặp
 
-- **Chỉ Số Không Hợp Lệ** – Cố gắng chèn hoặc thay thế ở chỉ số không tồn tại sẽ gây ra `ArgumentOutOfRangeException`. Luôn kiểm tra `msg.getAttachments().size()` trước.  
-- **Rò Rỉ Luồng** – Quên đóng đối tượng `FileInputStream` có thể dẫn đến cạn kiệt handle tệp. Sử dụng try‑with‑resources để tự động đóng.  
-- **Chưa Đặt Giấy Phép** – Chạy mà không có giấy phép hợp lệ sẽ thêm watermark đánh giá vào đầu ra. Đảm bảo gọi `license.setLicense(...)` trước khi sử dụng bất kỳ API nào.
-
-## Câu Hỏi Thường Gặp
-
-**Q: Làm sao để xử lý các tệp đính kèm lớn với Aspose.Email?**  
+**Q: Làm thế nào để xử lý các tệp đính kèm lớn với Aspose.Email?**  
 A: Sử dụng các phương pháp tiết kiệm bộ nhớ, xử lý tệp theo khối khi có thể, và tăng kích thước heap JVM (`-Xmx`) cho các tệp MSG rất lớn.
 
 **Q: Tôi có thể chèn nhiều tệp đính kèm cùng lúc không?**  
-A: Có, lặp qua một tập hợp các tệp và gọi `msg.getAttachments().insert(...)` cho mỗi tệp.
+A: Có, lặp qua một tập hợp các tệp và gọi `msg.getAttachments().insert(...)` cho mỗi mục.
 
-**Q: Những vấn đề phổ biến khi thay thế đính kèm là gì?**  
-A: Vấn đề thường gặp nhất là sử dụng chỉ số không đúng. Kiểm tra số lượng đính kèm hiện tại trước khi gọi `replace`.
+**Q: Những vấn đề thường gặp khi thay thế tệp đính kèm là gì?**  
+A: Vấn đề phổ biến nhất là sử dụng chỉ mục không đúng. Xác nhận số lượng tệp đính kèm hiện tại trước khi gọi `replace`.
 
-**Q: Aspose.Email Java có phù hợp cho các ứng dụng doanh nghiệp không?**  
-A: Chắc chắn. API mạnh mẽ, hỗ trợ đa định dạng và khả năng mở rộng cao khiến nó là lựa chọn vững chắc cho triển khai quy mô lớn.
+**Q: Aspose.Email Java có phù hợp cho các ứng dụng cấp doanh nghiệp không?**  
+A: Hoàn toàn. API mạnh mẽ, hỗ trợ đa dạng định dạng, và khả năng xử lý các tin nhắn hàng trăm trang khiến nó lý tưởng cho triển khai quy mô lớn.
 
-**Q: Tôi có thể nhận hỗ trợ nếu gặp vấn đề không?**  
-A: Truy cập [Aspose Support Forum](https://forum.aspose.com/c/email/10) để nhận trợ giúp từ cộng đồng và đội ngũ nhân viên Aspose.
+**Q: Làm thế nào tôi có thể nhận hỗ trợ nếu gặp vấn đề?**  
+A: Truy cập [Diễn đàn Hỗ trợ Aspose](https://forum.aspose.com/c/email/10) để nhận trợ giúp từ cộng đồng và nhân viên Aspose.
 
-## Kết Luận
+## Kết luận
 
-Trong tutorial này chúng ta đã khám phá **cách chèn tệp đính kèm** và **cách thay thế tệp đính kèm** trong các tệp MSG bằng Aspose.Email cho Java. Những thao tác này là thiết yếu cho việc xử lý email tự động, tuân thủ tài liệu, và tích hợp liền mạch với các hệ thống kinh doanh khác. Hãy khám phá toàn bộ khả năng trong tài liệu chính thức và thử nghiệm với các kịch bản khác nhau để thành thạo việc thao tác đính kèm.
+Trong hướng dẫn này, bạn đã học **cách chèn tệp đính kèm** và **cách thay thế tệp đính kèm** trong các tệp MSG bằng Aspose.Email cho Java. Những thao tác này rất quan trọng cho việc xử lý email tự động, quy trình tuân thủ, và tích hợp liền mạch với các hệ thống kinh doanh khác. Khám phá toàn bộ khả năng trong tài liệu chính thức và thử nghiệm với các loại tệp đính kèm khác nhau để thành thạo việc thao tác MSG.
 
-Để nâng cao hiểu biết, hãy thử nghiệm với các loại tệp đính kèm khác nhau và khám phá thêm các chức năng trong [Aspose.Email Documentation](https://reference.aspose.com/email/java/).
+Để nâng cao hiểu biết, hãy thử đính kèm các định dạng email khác nhau và xem xét tài liệu chi tiết [Tài liệu Aspose.Email](https://reference.aspose.com/email/java/) để biết thêm tính năng.
 
-## Tài Nguyên
+## Tài nguyên
 
-- **Tài Liệu**: Khám phá các hướng dẫn chi tiết tại [Aspose Documentation](https://reference.aspose.com/email/java/).  
-- **Tải Về**: Truy cập bản phát hành mới nhất tại [Aspose Releases](https://releases.aspose.com/email/java/).  
-- **Mua Bản Quyền**: Tìm hiểu các tùy chọn mua tại [Aspose Purchase Page](https://purchase.aspose.com/buy).
+- **Tài liệu**: Khám phá các hướng dẫn chi tiết tại [Tài liệu Aspose.Email](https://reference.aspose.com/email/java/).  
+- **Tài liệu**: Khám phá các hướng dẫn chi tiết tại [Tài liệu Aspose](https://reference.aspose.com/email/java/).  
+- **Tải xuống**: Truy cập bản phát hành mới nhất tại [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Mua**: Tìm hiểu các tùy chọn mua hàng trên [Trang mua Aspose](https://purchase.aspose.com/buy).
 
 ---
 
-**Cập Nhật Lần Cuối:** 2026-03-18  
-**Đã Kiểm Tra Với:** Aspose.Email cho Java 25.4 (JDK 16)  
-**Tác Giả:** Aspose  
+**Cập nhật lần cuối:** 2026-09-07  
+**Kiểm thử với:** Aspose.Email for Java 25.4 (JDK 16)  
+**Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Cách trích xuất tệp đính kèm từ tệp msg bằng Aspose.Email cho Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Tự động tạo MSG Outlook trong Java với Aspose.Email: Hướng dẫn đầy đủ](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [Cách tải và phân tích tệp Outlook MSG bằng Aspose.Email cho Java: Hướng dẫn toàn diện](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

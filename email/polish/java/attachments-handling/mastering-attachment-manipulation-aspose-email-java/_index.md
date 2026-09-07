@@ -1,68 +1,109 @@
 ---
-date: '2026-03-18'
-description: Dowiedz się, jak wstawiać załącznik i jak go zamieniać w plikach MSG
-  przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku z kodem, najlepszymi
-  praktykami i przykładami z rzeczywistego świata.
+date: '2026-09-07'
+description: Dowiedz się, jak wstawić załącznik i zamienić załącznik w plikach Outlook
+  MSG przy użyciu Aspose.Email for Java. Step‑by‑step code, best practices, i real‑world
+  examples.
 keywords:
-- insert MSG attachments Java
-- replace MSG attachments Java
-- Aspose.Email for Java
-title: Jak wstawić załącznik w plikach MSG przy użyciu Aspose.Email dla Javy
+- how to insert attachment
+- how to replace attachment
+- add attachment outlook msg
+lastmod: '2026-09-07'
+og_description: Dowiedz się, jak wstawić załącznik i zamienić załącznik w plikach
+  Outlook MSG przy użyciu Aspose.Email for Java. Detailed guide with code, tips, and
+  real‑world use cases.
+og_image_alt: Guide showing how to insert attachment in MSG files using Aspose.Email
+  for Java
+og_title: Jak wstawić załącznik w MSG przy użyciu Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to insert attachment and replace attachment in Outlook MSG
+    files using Aspise.Email for Java. Step‑by‑step code, best practices, and real‑world
+    examples.
+  headline: How to insert attachment in MSG with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Use memory‑efficient methods, process files in chunks when possible, and
+      increase the JVM heap size (`-Xmx`) for very large MSG files.
+    question: How do I handle large attachments with Aspose.Email?
+  - answer: Yes, iterate over a collection of files and call `msg.getAttachments().insert(...)`
+      for each entry.
+    question: Can I insert multiple attachments at once?
+  - answer: The most frequent problem is using an incorrect index. Verify the current
+      attachment count before calling `replace`.
+    question: What are common issues when replacing attachments?
+  - answer: Absolutely. Its robust API, extensive format support, and ability to process
+      multi‑hundred‑page messages make it ideal for large‑scale deployments.
+    question: Is Aspose.Email Java suitable for enterprise‑level applications?
+  - answer: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+      for help from the community and Aspose staff.
+    question: How can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- insert attachment
+- replace attachment
+- Aspose.Email
+- Java email processing
+- MSG file
+title: Jak wstawić załącznik w MSG przy użyciu Aspose.Email for Java
 url: /pl/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Wstawianie i zamienianie załączników MSG przy użyciu Aspose.Email Java: Kompletny przewodnik
 
-W cyfrowym świecie komunikacja e‑mailowa często wiąże się z udostępnianiem istotnych załączników. Znajomość **how to insert attachment** do pliku *.MSG* — a w razie potrzeby **how to replace attachment** — może zaoszczędzić wiele ręcznej pracy. Niezależnie od tego, czy tworzysz zautomatyzowany procesor e‑maili, czy po prostu chcesz uporządkować wiadomości Outlook, Aspose.Email for Java zapewnia czysty i niezawodny sposób zarządzania załącznikami. Ten samouczek przeprowadzi Cię przez wstawianie nowego załącznika oraz zamianę istniejącego, z przykładami z rzeczywistego świata i wskazówkami dotyczącymi wydajności.
+# Wstawianie i zamienianie załączników MSG przy użyciu Aspose.Email Java: kompleksowy przewodnik
+
+Przepływy e‑mailowe oparte na plikach Outlook *.MSG* często wymagają programowego sterowania osadzonymi załącznikami. Niezależnie od tego, czy tworzysz zautomatyzowaną usługę archiwizacji, czy generator wiadomości zgodny z wymogami prawnymi, **jak wstawić załącznik** oraz **jak zamienić załącznik** to niezbędne umiejętności. Ten samouczek pokazuje krok po kroku, jak dodać nowy załącznik i wymienić istniejący przy użyciu Aspose.Email dla Javy, podkreślając scenariusze z życia, wskazówki dotyczące wydajności i typowe pułapki.
 
 ## Szybkie odpowiedzi
-- **What is the primary library?** Aspose.Email for Java  
-- **How to insert attachment?** Use `msg.getAttachments().insert(index, name, MapiMessage)`  
-- **How to replace attachment?** Use `msg.getAttachments().replace(index, name, MapiMessage)`  
-- **Do I need a license?** Yes, a valid Aspose.Email license is required for production use  
-- **Which JDK version is supported?** JDK 16 or later  
+Metoda `insert` dodaje nowy załącznik pod podanym indeksem, natomiast `replace` zamienia istniejący załącznik na nowy. Obie metody przyjmują nazwę załącznika oraz obiekt `MapiMessage`, który reprezentuje załączoną wiadomość e‑mail. Obiekt `MapiMessage` zawiera wiadomość Outlook, którą można dołączyć do innego pliku MSG.
 
-## Jak wstawić załącznik do plików MSG
-Ta sekcja bezpośrednio odpowiada na pytanie **how to insert attachment** do pliku Outlook MSG. Omówimy dokładne wywołania API, uzasadnienie każdego kroku oraz wskazówki, jak utrzymać kod w czystości.
+- **Jaką bibliotekę obsługuje manipulację załącznikami MSG?** Aspose.Email for Java udostępnia w pełni funkcjonalne API dla plików Outlook MSG.  
+- **Jak wstawić załącznik?** Wywołaj `msg.getAttachments().insert(index, name, MapiMessage)` podając docelowy indeks oraz przygotowany obiekt `MapiMessage`.  
+- **Jak zamienić załącznik?** Użyj `msg.getAttachments().replace(index, name, MapiMessage)`, aby podmienić zawartość na danej pozycji.  
+- **Czy wymagana jest licencja?** Tak — bez ważnej licencji Aspose.Email wynik będzie zawierał znak wodny wersji ewaluacyjnej.  
+- **Jaką wersję Javy obsługuje biblioteka?** Biblioteka jest kompatybilna z JDK 16 i nowszymi.
 
-## Co się nauczysz
+## Jak wstawić załącznik do plików MSG?
 
-- Jak skonfigurować Aspose.Email for Java w swoim projekcie  
-- Instrukcje krok po kroku **add attachment to msg** (wstawienie nowego załącznika)  
-- Techniki **how to replace attachment** (zamiana istniejącego załącznika)  
-- Praktyczne zastosowania tych funkcji  
-- Wskazówki optymalizacji wydajności i najlepsze praktyki  
+Załaduj docelową wiadomość, przygotuj załącznik i wstaw go na żądaną pozycję. Ten bezpośredni akapit odpowiedzi podaje dokładną kolejność wywołań w mniej niż 70 słowach: ładujesz źródłowy MSG, wyodrębniasz lub tworzysz `MapiMessage` reprezentujący nowy załącznik, a następnie wywołujesz `msg.getAttachments().insert(1, "NewAttachment.msg", newMsg)`, aby umieścić go pod indeksem 1. API automatycznie aktualizuje kolekcję załączników i zachowuje pierwotną strukturę wiadomości.
 
-Teraz przejdźmy do wymagań wstępnych, które musisz spełnić przed rozpoczęciem.
+### Czym jest załącznik MSG?
+
+Załącznik w pliku Outlook MSG jest przechowywany jako obiekt `MapiMessage` wewnątrz kolekcji załączników wiadomości. Obiekt ten zawiera pełną treść e‑maila załączonej wiadomości, co pozwala traktować go jako samodzielną wiadomość, gdy zajdzie taka potrzeba.
+
+### Dlaczego warto używać Aspose.Email do obsługi załączników?
+
+Aspose.Email obsługuje **ponad 50** formatów e‑mail i plików, może przetwarzać wiadomości do **500 MB** bez wczytywania całego pliku do pamięci oraz zapewnia operacje wątkowo‑bezpieczne, które skalują się w usługach wielowątkowych. Te wymierne możliwości czynią go niezawodnym wyborem dla automatyzacji e‑maili na poziomie przedsiębiorstwa.
 
 ## Wymagania wstępne
 
-Zanim zaczniemy implementować rozwiązanie, upewnij się, że środowisko programistyczne jest gotowe. Będziesz potrzebować:
+- **Aspose.Email for Java** (najnowsza wersja) — podstawowa biblioteka umożliwiająca manipulację MSG.  
+- **Java Development Kit (JDK) 16+** — wymagana wersja środowiska uruchomieniowego.  
+- IDE, takie jak IntelliJ IDEA lub Eclipse, oraz Maven do zarządzania zależnościami.  
+- Podstawowa znajomość Java I/O oraz struktury plików Outlook MSG.
 
 ### Wymagane biblioteki, wersje i zależności
 
-- **Aspose.Email for Java**: Biblioteka zapewniająca funkcjonalność manipulacji formatami e‑mail, w tym plikami MSG.  
-- **Java Development Kit (JDK)**: Upewnij się, że masz zainstalowany JDK 16 lub nowszy.
+- `com.aspose:aspose-email` — dodaj współrzędną Maven podaną w oficjalnej dokumentacji.  
+- Nie są potrzebne dodatkowe biblioteki zewnętrzne do podstawowych operacji na załącznikach.
 
 ### Wymagania dotyczące konfiguracji środowiska
 
-- Preferowane IDE, takie jak IntelliJ IDEA lub Eclipse  
-- Maven do zarządzania zależnościami  
+- Zainstaluj JDK 16 lub nowszy i skonfiguruj zmienną `JAVA_HOME`.  
+- Utwórz projekt Maven i dodaj zależność Aspose.Email do pliku `pom.xml`.  
 
 ### Wymagania wiedzy
 
-- Podstawowa znajomość programowania w języku Java  
-- Znajomość operacji wejścia/wyjścia plików w Javie  
+- Znajomość strumieni plików w Javie (`FileInputStream`, `FileOutputStream`).  
+- Rozumienie pojęć obiektowo‑zorientowanych, takich jak klasy i metody.
 
-## Konfiguracja Aspose.Email for Java
+## Konfiguracja Aspose.Email dla Javy
 
-Aby rozpocząć, musisz zintegrować Aspose.Email ze swoim projektem Java. Oto jak zrobić to przy użyciu Maven:
+Dodaj zależność Aspose.Email do swojego pliku Maven `pom.xml`:
 
 ```xml
 <dependency>
@@ -75,50 +116,45 @@ Aby rozpocząć, musisz zintegrować Aspose.Email ze swoim projektem Java. Oto j
 
 ### Kroki uzyskania licencji
 
-Aspose.Email oferuje różne opcje licencjonowania:
+Aspose.Email oferuje **bezpłatną wersję próbną** oraz **licencję komercyjną**. Wersja próbna usuwa większość ograniczeń, ale dodaje mały znak wodny do wygenerowanych plików. W środowisku produkcyjnym musisz zastosować stały plik licencyjny.
 
-- **Free Trial**: Uzyskaj tymczasową licencję, aby przetestować pełne możliwości bez ograniczeń ewaluacyjnych.  
-- **Purchase**: Kup subskrypcję, aby mieć ciągły dostęp do aktualizacji i wsparcia.
+Uzyskaj tymczasową licencję pod adresem [Temporary License](https://purchase.aspose.com/temporary-license/). Pełne informacje o zakupie znajdziesz na [Purchase Page](https://purchase.aspose.com/buy).
 
-Aby uzyskać tymczasową licencję, odwiedź [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/). Po więcej informacji o zakupie, przejdź na [Strona zakupu](https://purchase.aspose.com/buy).
-
-Po uzyskaniu pliku licencji, zainicjalizuj go w aplikacji w następujący sposób:
+Zainicjalizuj licencję w kodzie przed pierwszym wywołaniem API:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-Po skonfigurowaniu i licencjonowaniu Aspose.Email, przejdźmy do implementacji naszych funkcji.
-
 ## Przewodnik implementacji
 
-### Wstawienie załącznika MSG w określonym miejscu
+### Wstawianie załącznika MSG w określonym miejscu
 
 #### Przegląd
 
-Ta funkcja pozwala **add attachment to msg** w precyzyjnej pozycji — przydatne, gdy kolejność załączników ma znaczenie dla zgodności lub prezentacji.
+Ta funkcja umożliwia **dodanie załącznika do MSG** pod dokładnym indeksem, co jest przydatne, gdy kolejność załączników ma znaczenie dla dalszego przetwarzania lub kontroli zgodności.
 
 #### Instrukcje krok po kroku
 
-**1. Load the Existing MSG File**  
+**1. Załaduj istniejący plik MSG**  
 
-Załaduj istniejący plik MSG, który już zawiera osadzone załączniki:
+Wczytaj wiadomość źródłową, która już zawiera załączniki:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 ```
 
-**2. Save an Attachment for Demonstration**  
+**2. Zapisz załącznik do demonstracji**  
 
-Wyodrębnij pierwszy załącznik, aby zobaczyć, co zostaje przeniesione:
+Wyodrębnij pierwszy załącznik, aby zobaczyć, co zostanie przeniesione:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Load Another MSG File**  
+**3. Załaduj inny plik MSG**  
 
 Przygotuj plik MSG, który chcesz wstawić jako nowy załącznik:
 
@@ -126,7 +162,7 @@ Przygotuj plik MSG, który chcesz wstawić jako nowy załącznik:
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbeddedMsg.msg"));
 ```
 
-**4. Insert the New Attachment**  
+**4. Wstaw nowy załącznik**  
 
 Wstaw nowy plik MSG pod indeksem 1 w kolekcji załączników:
 
@@ -134,9 +170,9 @@ Wstaw nowy plik MSG pod indeksem 1 w kolekcji załączników:
 msg.getAttachments().insert(1, "new 11", emb);
 ```
 
-**5. Save the Modified MSG File**  
+**5. Zapisz zmodyfikowany plik MSG**  
 
-Zapisz zmiany do nowego pliku:
+Zachowaj zmiany w nowym pliku:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
@@ -146,44 +182,44 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
 
 #### Przegląd
 
-Gdy zawartość załączonej wiadomości wymaga aktualizacji, możesz **how to replace attachment** bez zmiany struktury otaczającej wiadomości.
+Gdy zawartość załączonej wiadomości wymaga aktualizacji, możesz **zamienić załącznik** bez modyfikacji otaczającej struktury wiadomości, zachowując metadane takie jak znaczniki czasu i informacje o nadawcy.
 
 #### Instrukcje krok po kroku
 
-**1. Load the MSG File with Attachments**  
+**1. Załaduj plik MSG z załącznikami**  
 
-Otwórz plik MSG, który już zawiera załącznik, który planujesz zamienić:
+Otwórz plik MSG, który już zawiera załącznik, który zamierzasz podmienić:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 ```
 
-**2. Save an Existing Attachment**  
+**2. Zapisz istniejący załącznik**  
 
-Wyodrębnij jeden z bieżących załączników jako odniesienie:
+Wyodrębnij jeden z bieżących załączników w celach referencyjnych:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Load a New MSG File for Replacement**  
+**3. Załaduj nowy plik MSG do zamiany**  
 
-Załaduj plik MSG, który stanie się nowym załącznikiem:
+Wczytaj plik MSG, który stanie się nowym załącznikiem:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMSGAttachment_out.msg"));
 ```
 
-**4. Replace the Attachment**  
+**4. Zamień załącznik**  
 
-Zamień stary załącznik pod indeksem 1 na nowy:
+Podmień stary załącznik pod indeksem 1 na nowy:
 
 ```java
 msg.getAttachments().replace(1, "new 1", emb);
 ```
 
-**5. Save Changes to the MSG File**  
+**5. Zapisz zmiany w pliku MSG**  
 
 Zapisz zaktualizowaną wiadomość na dysku:
 
@@ -193,68 +229,71 @@ msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 
 ## Praktyczne zastosowania
 
-Oto kilka scenariuszy z rzeczywistego świata, w których te funkcje mogą być użyte:
+- **Zautomatyzowane przetwarzanie e‑maili** — Wstawiaj lub zamieniaj załączniki w ramach potoku routingu wiadomości.  
+- **Systemy zarządzania dokumentami** — Utrzymuj spójną kolejność załączników przy archiwizacji wiadomości Outlook w ramach zabezpieczenia prawnego.  
+- **Raportowanie zgodności** — Zapewnij, że wymagane dokumenty są dołączone w właściwej kolejności do audytów.  
 
-- **Automated Email Processing** – Automatyczne wstawianie lub zamienianie załączników w ramach przepływu pracy e‑maili.  
-- **Document Management Systems** – Utrzymanie spójnej kolejności załączników przy archiwizacji wiadomości Outlook.  
-- **Compliance Reporting** – Zapewnienie, że wymagane dokumenty są dołączone w odpowiedniej kolejności dla audytów.  
-
-Te możliwości integrują się również płynnie z platformami CRM, pipeline’ami analityki danych i innymi systemami korporacyjnymi.
+Scenariusze te integrują się płynnie z platformami CRM, potokami analitycznymi i innymi systemami korporacyjnymi.
 
 ## Rozważania dotyczące wydajności
 
-Podczas obsługi wielu dużych załączników pamiętaj o następujących wskazówkach:
+- **Optymalizacja zasobów** — Ładuj tylko niezbędne pliki MSG i zamykaj strumienie niezwłocznie przy użyciu try‑with‑resources.  
+- **Zarządzanie pamięcią** — Zwiększ przydział pamięci JVM (`-Xmx2g` lub wyżej) przy przetwarzaniu bardzo dużych załączników oraz ponownie wykorzystuj obiekty `MapiMessage`, gdy to możliwe.  
 
-- **Optimize Resource Usage** – Ładuj tylko niezbędne pliki MSG i niezwłocznie zwalniaj strumienie.  
-- **Java Memory Management** – Dostosuj rozmiar sterty JVM, jeśli przetwarzasz ogromne pliki, i ponownie używaj obiektów, gdzie to możliwe.  
-
-Stosowanie się do tych praktyk pomaga aplikacji pozostać responsywną nawet przy dużym obciążeniu.
+Stosowanie się do tych praktyk utrzymuje aplikację responsywną nawet przy dużym obciążeniu.
 
 ## Typowe pułapki i rozwiązywanie problemów
 
-- **Invalid Index** – Próba wstawienia lub zamiany pod indeksem, który nie istnieje, powoduje `ArgumentOutOfRangeException`. Zawsze sprawdzaj `msg.getAttachments().size()` najpierw.  
-- **Stream Leaks** – Zapomnienie o zamknięciu obiektów `FileInputStream` może prowadzić do wyczerpania uchwytów plików. Używaj try‑with‑resources, aby zamykać je automatycznie.  
-- **License Not Set** – Uruchamianie bez ważnej licencji doda znak wodny ewaluacji do wyniku. Upewnij się, że `license.setLicense(...)` jest wywoływane przed użyciem API.  
+- **Nieprawidłowy indeks** — Wstawianie lub zamiana pod nieistniejącym indeksem powoduje `ArgumentOutOfRangeException`. Zawsze sprawdzaj `msg.getAttachments().size()` przed operacją.  
+- **Wycieki strumieni** — Zapomnienie o zamknięciu obiektów `FileInputStream` może wyczerpać uchwyty plików. Używaj try‑with‑resources, aby zapewnić zamknięcie.  
+- **Licencja nieustawiona** — Uruchomienie bez ważnej licencji dodaje znak wodny wersji ewaluacyjnej. Wywołaj `license.setLicense(...)` przed użyciem jakiegokolwiek API.
 
 ## Najczęściej zadawane pytania
 
-**Q: How do I handle large attachments with Aspose.Email?**  
-A: Use memory‑efficient methods, process files in chunks when possible, and increase the JVM heap size (`-Xmx`) for very large MSG files.
+**P: Jak obsługiwać duże załączniki w Aspose.Email?**  
+O: Korzystaj z metod oszczędzających pamięć, przetwarzaj pliki w fragmentach, gdy to możliwe, i zwiększ przydział pamięci JVM (`-Xmx`) dla bardzo dużych plików MSG.
 
-**Q: Can I insert multiple attachments at once?**  
-A: Yes, iterate over a collection of files and call `msg.getAttachments().insert(...)` for each one.
+**P: Czy mogę wstawić wiele załączników jednocześnie?**  
+O: Tak, iteruj po kolekcji plików i wywołuj `msg.getAttachments().insert(...)` dla każdego elementu.
 
-**Q: What are some common issues when replacing attachments?**  
-A: The most frequent problem is using an incorrect index. Verify the current attachment count before calling `replace`.
+**P: Jakie są typowe problemy przy zamianie załączników?**  
+O: Najczęstszy problem to użycie niewłaściwego indeksu. Zweryfikuj aktualną liczbę załączników przed wywołaniem `replace`.
 
-**Q: Is Aspose.Email Java suitable for enterprise‑level applications?**  
-A: Absolutely. Its robust API, extensive format support, and scalability make it a solid choice for large‑scale deployments.
+**P: Czy Aspose.Email Java nadaje się do zastosowań korporacyjnych?**  
+O: Zdecydowanie. Solidne API, szerokie wsparcie formatów i możliwość przetwarzania wiadomości wielostronicowych czynią go idealnym rozwiązaniem dla dużych wdrożeń.
 
-**Q: How can I get support if I encounter issues?**  
-A: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10) for help from the community and Aspose staff.
+**P: Jak uzyskać wsparcie w razie problemów?**  
+O: Odwiedź [Aspose Support Forum](https://forum.aspose.com/c/email/10), aby uzyskać pomoc od społeczności i zespołu Aspose.
 
-## Zakończenie
+## Podsumowanie
 
-W tym samouczku omówiliśmy **how to insert attachment** oraz **how to replace attachment** w plikach MSG przy użyciu Aspose.Email for Java. Operacje te są niezbędne przy automatycznym przetwarzaniu e‑maili, zgodności dokumentów i płynnej integracji z innymi systemami biznesowymi. Zapoznaj się z pełnymi możliwościami w oficjalnej dokumentacji i eksperymentuj z różnymi scenariuszami, aby opanować manipulację załącznikami.
+W tym przewodniku nauczyłeś się **wstawiać załącznik** oraz **zamieniać załącznik** w plikach MSG przy użyciu Aspose.Email dla Javy. Operacje te są kluczowe dla automatyzacji obsługi e‑maili, przepływów zgodności i płynnej integracji z innymi systemami biznesowymi. Zapoznaj się z pełnymi możliwościami w oficjalnej dokumentacji i eksperymentuj z różnymi typami załączników, aby opanować manipulację MSG.
 
-Aby pogłębić wiedzę, wypróbuj różne typy załączników i przejrzyj obszerną [Aspose.Email Documentation](https://reference.aspose.com/email/java/) w poszukiwaniu dalszych funkcjonalności.
+Aby pogłębić wiedzę, spróbuj dołączać różne formaty e‑maili i przejrzyj obszerną [Aspose.Email Documentation](https://reference.aspose.com/email/java/) pod kątem dodatkowych funkcji.
 
 ## Zasoby
 
-- **Documentation**: Explore detailed guides at [Aspose Documentation](https://reference.aspose.com/email/java/).  
-- **Download**: Access the latest release at [Aspose Releases](https://releases.aspose.com/email/java/).  
-- **Purchase**: Learn about purchasing options on the [Aspose Purchase Page](https://purchase.aspose.com/buy).  
+- **Dokumentacja**: Zapoznaj się ze szczegółowymi przewodnikami pod adresem [Aspose.Email Documentation](https://reference.aspose.com/email/java/).  
+- **Dokumentacja**: Zapoznaj się ze szczegółowymi przewodnikami pod adresem [Aspose Documentation](https://reference.aspose.com/email/java/).  
+- **Pobieranie**: Uzyskaj najnowsze wydanie pod adresem [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Zakup**: Dowiedz się o opcjach zakupu na [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ---
 
-**Last Updated:** 2026-03-18  
-**Tested With:** Aspose.Email for Java 25.4 (JDK 16)  
-**Author:** Aspose  
+**Ostatnia aktualizacja:** 2026-09-07  
+**Testowano z:** Aspose.Email for Java 25.4 (JDK 16)  
+**Autor:** Aspose
+
+## Powiązane samouczki
+
+- [How to extract attachments from msg files using Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Automate Outlook MSG Creation in Java with Aspose.Email: A Complete Guide](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

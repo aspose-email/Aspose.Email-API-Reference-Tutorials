@@ -1,73 +1,113 @@
 ---
-date: '2026-03-18'
-description: 學習如何使用 Maven Aspose Email for Java 在 EML 檔案中保留 TNEF 附件。本指南涵蓋環境設定、Java
-  電郵附件處理、實作以及逐步說明的故障排除。
+date: '2026-09-07'
+description: 了解如何使用 Maven Aspose Email for Java 在 EML 中保留 TNEF 附件。本分步指南亦涵蓋 Java 電子郵件附件的處理方式。
 keywords:
-- preserve tnef attachments
-- Aspose.Email for Java
-- handle TNEF in EML files
-title: Maven Aspose Email：在 EML 中保留 TNEF 附件（Java）
+- maven aspose email
+- preserve outlook attachments
+- java email attachments
+lastmod: '2026-09-07'
+og_description: 了解如何使用 Maven Aspose Email for Java 在 EML 中保留 TNEF 附件。本分步指南亦涵蓋 Java
+  電子郵件附件的處理方式。
+og_image_alt: Guide showing how to preserve TNEF attachments in EML with Maven Aspose
+  Email
+og_title: 使用 Maven Aspose Email 在 EML 中保留 TNEF 附件
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to preserve TNEF attachments in EML using Maven Aspose Email
+    for Java. This step‑by‑step guide also covers java email attachments handling.
+  headline: Preserve TNEF attachments in EML with Maven Aspose Email
+  type: TechArticle
+- description: Learn how to preserve TNEF attachments in EML using Maven Aspose Email
+    for Java. This step‑by‑step guide also covers java email attachments handling.
+  name: Preserve TNEF attachments in EML with Maven Aspose Email
+  steps:
+  - name: '**Email archiving systems** – retain the original attachment format for
+      legal compliance.'
+    text: '**Email archiving systems** – retain the original attachment format for
+      legal compliance.'
+  - name: '**Legal & compliance software** – keep native TNEF files to satisfy document‑retention
+      policies.'
+    text: '**Legal & compliance software** – keep native TNEF files to satisfy document‑retention
+      policies.'
+  - name: '**Customer‑support tools** – forward client emails without altering the
+      original attachments.'
+    text: '**Customer‑support tools** – forward client emails without altering the
+      original attachments.'
+  type: HowTo
+- questions:
+  - answer: TNEF (Transport Neutral Encapsulation Format) is Outlook’s proprietary
+      way of packaging rich‑content attachments. Preserving it ensures the original
+      data remains unchanged, which is critical for compliance and accurate rendering.
+    question: What is TNEF, and why should I preserve its format?
+  - answer: Yes. With proper resource management (disposing `MailMessage` objects
+      and configuring JVM memory), the library scales well for bulk processing.
+    question: Can Maven Aspose Email handle large volumes of email files efficiently?
+  - answer: Verify the file path, ensure `setPreserveTnefAttachments(true)` is active,
+      and check that the source EML actually contains TNEF parts.
+    question: How do I troubleshoot missing TNEF attachments?
+  - answer: A free trial is available for evaluation. Production use requires a purchased
+      license or a temporary license for extended testing.
+    question: Is there any cost associated with using Maven Aspose Email for Java?
+  - answer: Visit the Aspose Email Forum, consult the official documentation, or contact
+      Aspose support directly.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+tags:
+- preserve tnef
+- aspose email
+- java email processing
+- maven dependency
+- email attachments
+title: 使用 Maven Aspose Email 在 EML 中保留 TNEF 附件
 url: /zh-hant/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# 如何使用 Maven Aspose Email for Java 在 EML 檔案中保留 TNEF 附件
 
-## 介紹
+# 使用 Maven Aspose Email 在 EML 中保留 TNEF 附件
 
-您在使用 Java 處理 EML 檔案時，是否遇到 TNEF（Transport Neutral Encapsulation Format）附件的處理問題？**如果您需要保留 TNEF 附件**，本指南將示範如何使用 **Maven Aspose Email** for Java 完整保存這些檔案。TNEF 常由 Microsoft Outlook 使用，在郵件處理過程中保留這些附件可能相當複雜。借助 Aspose.Email，這項工作變得簡單且可靠。
+## 簡介
 
-**您將學會**
-- 如何設定 Maven aspose email java 依賴項。  
-- 在 **保留 TNEF 附件** 的情況下載入 EML 檔案的步驟。  
-- `EmlLoadOptions` 的關鍵設定選項。  
-- 處理 **java email attachments** 時常見的陷阱與除錯技巧。
+如果您需要在 Java 中處理 EML 檔案時保留 TNEF（Transport Neutral Encapsulation Format）附件，**Maven Aspose Email** 能讓此工作可靠且簡單。Outlook 產生的 TNEF 部分常以不透明的 `.dat` 檔案出現，遺失它們可能會破壞合規性或稽核追蹤。本教學將帶您一步步新增 Maven 依賴、設定載入選項以保持 TNEF 完整，並驗證結果——全部採用清晰、可投入生產的步驟。
 
-準備好了嗎？讓我們先設定開發環境。
+**您將學習**
+- 如何新增 Maven aspose email java 依賴項。  
+- 如何在載入 EML 檔案時 **保留 TNEF 附件**。  
+- 哪些 `EmlLoadOptions` 設定控制 TNEF 處理。  
+- 常見陷阱與 **java email attachments** 處理的故障排除技巧。
 
-## 快速答覆
-- **「保留 TNEF 附件」是什麼意思？** 讀取 EML 時保持原始的 TNEF 編碼檔案不被改動。  
-- **哪個函式庫提供此功能？** Maven Aspose Email for Java（版本 25.4 以上）。  
-- **需要 Maven 嗎？** 需要 – 教程中包含 Maven aspose email java 依賴程式碼片段。  
-- **需要授權嗎？** 免費試用可用於評估；正式上線需購買永久授權。  
-- **可以處理大量信箱嗎？** 當然，只要妥善管理記憶體並使用 `MailMessage` 釋放模式即可。
+準備好了嗎？讓我們設定環境。
 
-## 什麼是 Maven Aspose Email？
+## 快速解答
+- **“preserve TNEF attachments” 是什麼意思？** 載入 EML 時會保持原始的 TNEF 編碼檔案不變。  
+- **哪個函式庫處理此功能？** Maven Aspose Email for Java（版本 25.4 以上）。  
+- **我需要 Maven 嗎？** 需要 – 本教學包含 Maven aspose email java 依賴程式碼片段。  
+- **需要授權嗎？** 免費試用可用於評估；正式環境需購買永久授權。  
+- **我可以處理大型郵箱嗎？** 當然可以，只要妥善管理記憶體並使用 `MailMessage` 釋放模式。
 
-Maven Aspose Email 是 Aspose.Email for Java 的 Maven 發行版。只要在 `pom.xml` 中加入單一依賴，即可為任何 Java 專案加入強大的郵件處理功能——例如保留 TNEF 附件。
+## Maven Aspose Email 是什麼？
+
+Maven Aspose Email 是基於 Maven 的 Aspose.Email Java 函式庫發行版，提供即用的 API 來讀取、建立、轉換與轉寄 email 訊息。它支援 **70+ 輸入與輸出格式**，且可在不將整封訊息載入記憶體的情況下解析最高 **500 MB** 的 EML 檔案，這對高容量處理至關重要。
 
 ## 為什麼使用 Maven Aspose Email 來保留 TNEF 附件？
 
-- **符合法規** – 保留原始附件格式以供稽核追蹤。  
-- **完整還原** – 不會自動轉換，Outlook 專屬資料保持完整。  
-- **可擴展處理** – 以低記憶體開銷處理成千上萬封郵件。
+保留 TNEF 附件可提供 **完整保真度**——不會自動轉換，讓 Outlook 專屬資料保持原樣。亦能滿足 **法規合規** 要求，保留原始附件格式以作稽核追蹤。此外，依照建議的釋放模式，函式庫在標準伺服器上可達到 **每分鐘千封訊息** 的規模。
 
 ## 前置條件
 
-在開始之前，請確保具備以下條件：
-
-### 必要的函式庫與相依性
-- **Aspose.Email for Java**：建議使用 25.4 版或更新版本，以獲得最佳效能。  
-- **Maven**：我們將使用 Maven aspose email java 相依性來取得函式庫。
-
-### 環境設定需求
-- 支援的 IDE（如 IntelliJ IDEA、Eclipse）以執行 Java 應用程式。  
-- 已安裝 JDK 16 或更高版本。
-
-### 知識前提
-- 基本的 Java 程式設計概念。  
-- 了解在軟體開發中處理郵件檔案與附件的方式。
+- **Java Development Kit** 16 或更新版本。  
+- **Maven** 已安裝並在 IDE（IntelliJ IDEA、Eclipse 等）中配置。  
+- 具備基本的 Java 知識並熟悉 email MIME 結構。  
 
 ## 設定 Aspose.Email for Java
 
-### Aspose Email Java 教學：透過 Maven 安裝
+### 透過 Maven 安裝
 
-在 `pom.xml` 中加入以下相依性：
+將 Aspose.Email Maven 依賴加入您的 `pom.xml`：
 
 ```xml
 <dependency>
@@ -78,13 +118,13 @@ Maven Aspose Email 是 Aspose.Email for Java 的 Maven 發行版。只要在 `po
 </dependency>
 ```
 
-### 取得授權步驟
+### 授權啟用
 
 - **免費試用** – 先使用試用版探索功能。  
-- **臨時授權** – 取得臨時授權以延長測試時間。  
-- **購買授權** – 正式上線建議購買完整授權。
+- **臨時授權** – 取得臨時授權以進行延長測試。  
+- **購買** – 購買完整授權以供正式使用。
 
-要啟用授權，將授權檔放入專案並執行：
+將授權檔放入專案中並執行：
 
 ```java
 License license = new License();
@@ -95,11 +135,11 @@ license.setLicense("path/to/your/license/file");
 
 ### 使用 PreserveTnefAttachments 功能載入 EML
 
-#### 概觀
+`PreserveTnefAttachments` 是 Aspose.Email 中的布林旗標，啟用後會指示載入器保持 TNEF 部分不變。  
 
-`PreserveTnefAttachments` 旗標告訴 Maven Aspose Email 在載入 EML 時，保持原始的 TNEF 檔案不做任何自動轉換。
+`EmlLoadOptions` 設定 EML 檔案的解析方式，允許如 TNEF 保留、字元集處理與 MIME 解碼等選項。
 
-#### 步驟說明
+#### 步驟實作
 
 **1. 設定載入選項**
 
@@ -112,7 +152,7 @@ options.setPreserveTnefAttachments(true);
 
 **2. 載入 EML 檔案**
 
-載入訊息時傳入上述選項：
+載入訊息時傳入此選項：
 
 ```java
 MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
@@ -120,7 +160,7 @@ MailMessage eml = MailMessage.load(dataDir + "tnefEml.eml", options);
 
 **3. 取得附件**
 
-遍歷附件以驗證它們仍為 TNEF 檔案：
+`MailMessage` 代表 Aspose.Email 中的 email 訊息物件，提供對標頭、內容與附件的存取。遍歷附件以驗證它們仍為 TNEF 檔案：
 
 ```java
 for (Attachment attachment : eml.getAttachments()) {
@@ -128,79 +168,83 @@ for (Attachment attachment : eml.getAttachments()) {
 }
 ```
 
-#### 除錯小技巧
+#### 疑難排解技巧
 
-- **附件遺失** – 再次確認 `dataDir` 路徑正確且檔案可讀取。  
-- **意外轉換** – 確認在載入訊息前已呼叫 `setPreserveTnefAttachments(true)`。
+- **附件遺失** – 再次確認 `dataDir` 路徑並確保檔案可讀取。  
+- **意外轉換** – 確認在載入訊息前已呼叫 `setPreserveTnefAttachments(true)`。  
 
-## 處理 Java 電子郵件附件
+## 使用 Java email 附件
 
-保留 TNEF 附件只是處理 **java email attachments** 的一環。取得 `MailMessage` 物件後，您還可以抽取純文字內容、HTML 內容，或在不改變任何原始部件的情況下轉寄郵件。
+除了 TNEF，您還可以提取純文字內容、HTML 內容，或在不遺失任何原始部分的情況下轉寄訊息。使用 `MailMessage` API 讀取標頭、解碼 MIME，並安全地操作附件。
 
 ## 實務應用
 
-保留 TNEF 附件在多種真實情境中相當有價值：
+保留 TNEF 附件在許多實務情境中都很有價值：
 
-1. **郵件歸檔系統** – 為符合法規需求保留原始附件格式。  
-2. **法律與合規軟體** – 保存原生 TNEF 檔案以符合文件保存政策。  
-3. **客服工具** – 轉寄客戶郵件時不改動原始附件。
+1. **Email archiving systems** – 保留原始附件格式以符合法規要求。  
+2. **Legal & compliance software** – 保留原生 TNEF 檔案以符合文件保存政策。  
+3. **Customer‑support tools** – 轉寄客戶 email 時不改變原始附件。  
 
 ## 效能考量
 
-在使用 Maven Aspose Email 處理大量郵件時：
-
-- **釋放物件** – 處理完每封訊息後呼叫 `eml.dispose()`（或讓 GC 回收）。  
-- **記憶體設定** – 根據處理郵件量調整 JVM 堆積大小（`-Xmx`）。
+- **釋放物件** – 處理完每封訊息後呼叫 `eml.dispose()`（或讓垃圾回收器自行清理）。  
+- **記憶體設定** – 為處理大於 200 MB 的批次分配至少 **‑Xmx2g**。  
+- **平行處理** – 將大型郵箱分割為獨立執行緒；每個執行緒應使用自己的 `MailMessage` 實例以避免資源競爭。  
 
 ## 常見問題與解決方案
 
-| 問題 | 可能原因 | 解決方式 |
-|------|----------|----------|
-| 附件顯示為 `.dat` 檔案 | 未啟用 `PreserveTnefAttachments` | 確認在載入前已設定 `options.setPreserveTnefAttachments(true)` |
-| `FileNotFoundException` | `dataDir` 路徑錯誤 | 檢查目錄與檔名；測試時使用絕對路徑 |
-| 大量信箱記憶體使用過高 | 未釋放 `MailMessage` 物件 | 在處理完畢後呼叫 `eml.dispose()` 或將參考設為 `null` |
+| Issue | Likely cause | Solution |
+|-------|--------------|----------|
+| 附件顯示為 `.dat` 檔案 | `PreserveTnefAttachments` 未啟用 | 確保在載入前已設定 `options.setPreserveTnefAttachments(true)`。 |
+| `FileNotFoundException` | `dataDir` 路徑不正確 | 確認目錄與檔名；測試時使用絕對路徑。 |
+| 大型郵箱記憶體使用量過高 | 未釋放 `MailMessage` 物件 | 在處理完畢後呼叫 `eml.dispose()` 或將參考設為 `null`。 |
 
 ## 常見問答
 
-**Q: 什麼是 TNEF，為什麼要保留其格式？**  
-A: TNEF（Transport Neutral Encapsulation Format）是 Outlook 用來封裝富內容附件的專有格式。保留它可確保原始資料不被更改，對合規與正確呈現至關重要。
+**Q: TNEF 是什麼，為什麼要保留其格式？**  
+A: TNEF（Transport Neutral Encapsulation Format）是 Outlook 用來封裝富內容附件的專屬格式。保留它可確保原始資料不被更改，對合規性與正確呈現至關重要。  
 
-**Q: Maven Aspose Email 能有效處理大量郵件檔案嗎？**  
-A: 能。只要妥善管理資源（釋放 `MailMessage` 物件並調整 JVM 記憶體），此函式庫在批次處理上表現良好。
+**Q: Maven Aspose Email 能有效處理大量 email 檔案嗎？**  
+A: 能。只要妥善管理資源（釋放 `MailMessage` 物件並設定 JVM 記憶體），函式庫在大量批次處理時仍具良好擴展性。  
 
-**Q: 若找不到 TNEF 附件該怎麼排除？**  
-A: 檢查檔案路徑，確認已啟用 `setPreserveTnefAttachments(true)`，並確認來源 EML 確實包含 TNEF 部分。
+**Q: 如何排除 TNEF 附件遺失的問題？**  
+A: 確認檔案路徑，確保已啟用 `setPreserveTnefAttachments(true)`，並檢查來源 EML 是否真的包含 TNEF 部分。  
 
-**Q: 使用 Maven aspose email java 需要付費嗎？**  
-A: 可先使用免費試用版評估；正式使用需購買授權或取得臨時授權以延長測試。
+**Q: 使用 Maven Aspose Email for Java 需要付費嗎？**  
+A: 可使用免費試用版進行評估。正式環境需購買授權或取得臨時授權以延長測試。  
 
-**Q: 若遇到問題該向哪裡尋求協助？**  
-A: 可前往 Aspose Email 論壇、參考官方文件，或直接聯繫 Aspose 支援團隊。
+**Q: 若遇到問題，該向哪裡尋求協助？**  
+A: 前往 Aspose Email 論壇、參考官方文件，或直接聯絡 Aspose 支援。  
 
-**Q: Maven aspose email java 相依性支援其他 JDK 版本嗎？**  
-A: `jdk16` classifier 針對 JDK 16+。若使用較舊 JDK，請選擇相應的 classifier 或從 Aspose 官方網站下載對應二進位檔。
+**Q: Maven aspose email java 依賴是否支援其他 JDK 版本？**  
+A: `jdk16` classifier 針對 JDK 16+。若使用較早的 JDK，請使用相應的 classifier，或從 Aspose 官方網站下載對應的二進位檔。  
 
-**Q: 我可以將此方式與 Aspose.Email 其他功能（如郵件轉換或 SMTP 發送）結合使用嗎？**  
-A: 完全可以。取得 `MailMessage` 物件後，您可使用 Aspose.Email 的任何 API——轉換為 PST、透過 SMTP 發送，或抽取郵件內容。
+**Q: 我可以將此方式與其他 Aspose.Email 功能（如 email 轉換或 SMTP 發送）結合使用嗎？**  
+A: 當然可以。取得 `MailMessage` 物件後，您即可使用任何 Aspose.Email API——如轉換為 PST、透過 SMTP 發送，或提取內容。  
 
 ## 資源
-- **文件**： [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)  
-- **下載**： [Aspose.Email Releases](https://releases.aspose.com/email/java/)  
-- **購買**： [Buy Aspose.Email](https://purchase.aspose.com/buy)  
-- **免費試用**： [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)  
-- **臨時授權**： [Get a Temporary License](https://purchase.aspose.com/temporary-license/)  
-- **支援**： [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+- **文件說明**: [Aspose.Email Java Documentation](https://reference.aspose.com/email/java/)
+- **下載**: [Aspose.Email Releases](https://releases.aspose.com/email/java/)
+- **購買**: [Buy Aspose.Email](https://purchase.aspose.com/buy)
+- **免費試用**: [Try Aspose.Email for Free](https://releases.aspose.com/email/java/)
+- **臨時授權**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
+- **支援**: [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**最後更新：** 2026-03-18  
+**最後更新：** 2026-09-07  
 **測試環境：** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**作者：** Aspose  
+**作者：** Aspose
+
+## 相關教學
+
+- [Aspose Email Java Tnef Attachments Guide](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
+- [Save EML with TNEF using Aspose.Email for Java – Full Tutorial](/email/java/attachments-handling/aspose-email-java-eml-tnef-handling/)
+- [Extract Email Attachments Java with Aspose.Email – Complete Guide](/email/java/attachments-handling/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

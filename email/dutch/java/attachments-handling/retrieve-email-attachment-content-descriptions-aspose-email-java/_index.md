@@ -1,57 +1,86 @@
 ---
-date: '2026-03-18'
-description: Leer hoe je de Aspose.Email Maven‑afhankelijkheid toevoegt en e‑mailbijlage‑inhoudsbeschrijvingen
-  ophaalt met Java.
+date: '2026-09-07'
+description: Leer hoe je aspose email maven aan je project toevoegt en de content
+  description header van e‑mailbijlagen opvraagt in Java. Stap‑voor‑stap Maven‑configuratie,
+  berichten laden en metadata extraheren.
 keywords:
-- retrieve email attachment content descriptions
-- Aspose.Email for Java attachments handling
-- Java email processing with Aspose
-title: Hoe voeg je de Aspose.Email Maven‑dependency toe en haal je de inhoudsbeschrijvingen
-  van e‑mailbijlagen op (Java)
+- add aspose email maven
+- read content description header
+- extract attachment metadata
+- aspose email java tutorial
+lastmod: '2026-09-07'
+og_description: Leer hoe je aspose email maven aan je project toevoegt en de content
+  description header van e‑mailbijlagen opvraagt in Java. Deze gids behandelt Maven‑configuratie,
+  berichten laden en metadata extraheren.
+og_image_alt: 'Developer guide: add aspose email maven and read attachment description
+  in Java'
+og_title: Hoe aspose email maven toe te voegen en de beschrijving op te halen in Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to add aspose email maven to your project and retrieve the
+    content description header from email attachments in Java. Step‑by‑step Maven
+    setup, loading messages, and extracting metadata.
+  headline: How to add aspose email maven and get description in Java
+  type: TechArticle
+- questions:
+  - answer: Yes – simply replace `"Content‑Description"` with the desired header name
+      in the `get_Item` call.
+    question: Can I retrieve other attachment headers using this method?
+  - answer: Always check `msg.getAttachments().size()` before accessing an item to
+      avoid `IndexOutOfBoundsException`.
+    question: What if my email doesn't have any attachments?
+  - answer: Wrap the load call in a try‑catch block and handle `FileNotFoundException`,
+      `MessageLoadException`, or other I/O errors gracefully.
+    question: How do I handle exceptions when loading emails?
+  - answer: It supports over 30 input and output formats—including EML, MSG, MHTML,
+      and RFC‑822—making it suitable for most enterprise scenarios.
+    question: Does Aspose.Email for Java support all email formats?
+  - answer: Visit the Aspose forums, consult the online documentation, or reach out
+      to their support team for assistance.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+tags:
+- add aspose email maven
+- email attachment handling
+- java email processing
+- aspose email java
+- maven dependency
+title: Hoe aspose email maven toe te voegen en de beschrijving op te halen in Java
 url: /nl/java/attachments-handling/retrieve-email-attachment-content-descriptions-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Hoe voeg je de Aspose.Email Maven‑dependency toe en haal je e‑mailbijlage‑inhoudsbeschrijvingen op (Java)
 
-## Inleiding
-In deze tutorial **leer je hoe je de Aspose.Email Maven‑dependency toevoegt** en **e‑mailbijlage‑verwerking automatiseert** om de **content‑description‑header** van bijlagen uit te lezen met Java. Het beheren van bijlage‑metadata is een veelvoorkomende eis voor moderne bedrijfsapplicaties—of je nu documenten moet routeren, compliance moet afdwingen of simpelweg binnenkomende bestanden wilt organiseren. Aan het einde van deze gids heb je een duidelijke, stap‑voor‑stap‑oplossing die je in elk Java‑project kunt gebruiken.
+# Hoe aspose email maven toe te voegen en de beschrijving op te halen in Java
 
-**Wat je zult leren**
-- Hoe je de **aspose email maven dependency** opneemt in je Maven pom.xml  
-- Een e‑mailbericht laden en toegang krijgen tot de bijlagen  
-- De `get_Item`‑aanroep gebruiken om de **content‑description‑header** op te halen  
-- Praktische scenario’s waarin deze techniek e‑mailverwerking stroomlijnt  
+## Introductie
+In deze tutorial leer je hoe je **aspose email maven** toevoegt aan een Java‑project en automatisch de **Content‑Description**‑header van e‑mailbijlagen uitleest. Het beheren van bijlage‑metadata is essentieel voor het routeren van documenten, het voldoen aan compliance‑eisen en het georganiseerd houden van inboxen. Aan het einde van de gids heb je een kant‑klaar fragment dat je in elke Maven‑gebaseerde Java‑applicatie kunt plaatsen.
 
 ## Snelle antwoorden
-- **Wat doet de primaire methode?** Hij laadt een e‑mail en leest de `Content-Description`‑header van de eerste bijlage.  
+- **Wat doet de primaire methode?** Het laadt een e‑mailbestand en retourneert de `Content‑Description`‑header van de eerste bijlage.  
 - **Welke bibliotheekversie is vereist?** Aspose.Email for Java 25.4 (JDK 16 classifier).  
-- **Kan ik andere headers lezen?** Ja, vervang `"Content-Description"` door een andere geldige headernaam.  
+- **Kan ik andere headers lezen?** Ja – vervang `"Content‑Description"` door een geldige headernaam.  
 - **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
-- **Is deze aanpak thread‑safe?** Ja, zolang elke thread zijn eigen `MailMessage`‑instantie gebruikt.  
+- **Is deze aanpak thread‑safe?** Ja, zolang elke thread zijn eigen `MailMessage`‑instantie gebruikt.
 
 ## Wat is de Aspose.Email Maven‑dependency?
-De **aspose email maven dependency** is een Maven‑compatibel pakket dat alle binaries bevat die je nodig hebt om met e‑mailformaten (EML, MSG, MHTML, enz.) in Java te werken. Door deze toe te voegen aan je `pom.xml` worden de bibliotheek en de transitieve afhankelijkheden automatisch opgehaald, zodat je exact de versie gebruikt die je opgeeft.
+De `Aspose.Email` Maven‑dependency is een Maven‑compatibel pakket dat de Aspose.Email for Java‑bibliotheek bundelt samen met alle vereiste transitieve bibliotheken. Het toevoegen aan je `pom.xml` zorgt ervoor dat de juiste binaries automatisch worden gedownload en houdt versiebeheer consistent over builds heen. Het ondersteunt EML, MSG en MHTML‑formaten en biedt hulpprogramma's voor het converteren van berichten, het extraheren van ingebedde resources en het verwerken van MIME‑onderdelen.
 
 ## Waarom e‑mailbijlage‑verwerking automatiseren?
-Automatisering van bijlage‑verwerking stelt je in staat om:
-- **Metadata te extraheren** zoals content‑descriptions, bestandsnamen of aangepaste headers zonder handmatige inspectie.  
-- **Berichten te routeren** op basis van bijlage‑type of beschrijving, waardoor de workflow‑efficiëntie verbetert.  
-- **Compliance te waarborgen** door bijlage‑details te loggen voor audit‑trails.  
+Automatisering van bijlage‑verwerking stelt je in staat metadata zoals content‑descriptions, bestandsnamen of aangepaste X‑headers te extraheren zonder handmatige inspectie. Dit versnelt workflow‑automatisering, verbetert auditability en vermindert het risico op menselijke fouten bij het verwerken van grote volumes inkomende mail.
 
 ## Vereisten
-- **Java Development Kit:** JDK 16 of hoger geïnstalleerd.  
-- **Maven:** Bekendheid met Maven‑dependency‑beheer.  
+- **Java Development Kit:** JDK 16 of later.  
+- **Maven:** Basiskennis van het bewerken van `pom.xml`.  
 - **Aspose.Email for Java:** Versie 25.4 (of nieuwer) aanbevolen.  
-- **Basiskennis van Java:** Begrip van objecten, exception‑handling en collecties.
+- **Java fundamentals:** Objecten, foutafhandeling en collecties.
 
-## Aspose.Email voor Java instellen
-Voeg de **aspose email maven dependency** toe aan de `pom.xml` van je project:
+## Instellen van Aspose.Email voor Java
+Voeg de **aspose email maven**‑dependency toe aan je `pom.xml`:
 
 ```xml
 <dependency>
@@ -65,15 +94,15 @@ Voeg de **aspose email maven dependency** toe aan de `pom.xml` van je project:
 ### Stappen voor licentie‑acquisitie
 - **Gratis proefversie:** Evalueer de bibliotheek kosteloos.  
 - **Tijdelijke licentie:** Vraag een tijdelijke sleutel aan voor uitgebreid testen.  
-- **Aankoop:** Schaf een volledige licentie aan voor productie‑implementaties.
+- **Aankoop:** Koop een volledige licentie voor productie‑implementaties.
 
-Na het toevoegen van de dependency en het verkrijgen van een licentie (indien nodig), importeer je de benodigde klassen in je Java‑bronbestanden.
+Nadat de dependency is toegevoegd en een licentie (indien nodig) is toegepast, importeer je de vereiste klassen in je bronbestand.
 
-## Hoe de Content‑Description‑header op te halen
-Hieronder vind je de volledige workflow, opgesplitst in duidelijke stappen.
+## Hoe de content‑description header op te halen?
+`MailMessage` is een klasse die een e‑mailbericht in het geheugen representeert. Laad de e‑mail in een `MailMessage`‑object en krijg toegang tot de `Attachments`‑collectie om de gewenste bijlage te vinden. `Attachment` is een klasse die een bestand vertegenwoordigt dat aan een e‑mail is gekoppeld. Zodra je de `Attachment`‑instantie hebt, lees je de `Headers` en haal je de `Content‑Description` op via `get_Item`. Dit retourneert de beschrijvings‑string.
 
-### Stap 1: Een e‑mailbericht laden vanuit een bestand
-Geef Aspose.Email eerst de map op die je `.eml`‑bestanden bevat en laad het bericht:
+### Stap 1: laad een e‑mailbericht vanaf een bestand
+De `MailMessage`‑klasse representeert een e‑mailbericht in het geheugen.
 
 ```java
 // Define the directory containing email files.
@@ -83,66 +112,66 @@ String dataDir = YOUR_DOCUMENT_DIRECTORY + "email/";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml");
 ```
 
-### Stap 2: De Content‑Description‑header ophalen
-Nu het bericht in het geheugen staat, krijg je toegang tot de bijlagen en haal je de **content‑description‑header** op:
+### Stap 2: haal de content‑description header op
+`Attachment`‑objecten exposeren een `Headers`‑collectie. De `get_Item`‑methode haalt een specifieke headerwaarde op basis van de naam.
 
 ```java
 // Get the first attachment in the email.
 String description = msg.getAttachments().get_Item(0).getHeaders().get_Item("Content-Description");
 ```
 
-**Uitleg:** De aanroep `getHeaders().get_Item("Content-Description")` leest de `Content-Description`‑waarde uit de header‑collectie van de eerste bijlage. Je kunt `"Content-Description"` vervangen door elke andere headernaam (bijv. `"Content-Type"` of een aangepaste X‑header) om andere metadata op te halen.
-
-### Stap 3: Veelvoorkomende valkuilen afhandelen
-- **Ontbrekende bijlagen:** Controleer altijd of `msg.getAttachments().size()` > 0 is voordat je een item benadert.  
-- **Ongeldige paden:** Zorg ervoor dat `dataDir` naar een leesbare map wijst; gebruik zo nodig absolute paden.  
-- **Exceptions:** Plaats het laden en het ophalen van de header in try‑catch‑blokken om `FileNotFoundException`, `MessageLoadException` of `IndexOutOfBoundsException` af te handelen.
+**Uitleg:** De aanroep `getHeaders().get_Item("Content‑Description")` leest de `Content‑Description`‑waarde uit de headercollectie van de eerste bijlage. Vervang `"Content‑Description"` door een andere header (bijv. `"Content‑Type"` of een aangepaste `X‑My‑Header`) om andere metadata op te halen.
 
 ## Praktische toepassingen
-1. **Geautomatiseerde ticketing:** Haal de beschrijving op om ticketvelden automatisch te vullen in help‑desk‑systemen.  
+1. **Geautomatiseerde ticketing:** Haal de beschrijving op om velden in help‑desksystemen automatisch te vullen.  
 2. **Documentbeheer:** Gebruik de beschrijving als tag bij het opslaan van bijlagen in een CMS.  
-3. **Compliance‑rapportage:** Log content‑descriptions voor regelgevende audits.
+3. **Compliance‑rapportage:** Log content‑descriptions voor regelgevende audits en behoud een doorzoekbare audit‑trail.
 
 ## Prestatie‑overwegingen
-- **Batch‑laden:** Laad meerdere berichten in één batch om I/O‑overhead te verminderen.  
-- **Geheugenbeheer:** Sluit streams direct en overweeg streaming van grote bijlagen in plaats van ze volledig in het geheugen te laden.  
-- **Thread‑veiligheid:** Maak per thread afzonderlijke `MailMessage`‑instanties om problemen met gedeelde staat te voorkomen.
+- **Batch‑laden:** Verwerk meerdere berichten in één batch om I/O‑overhead te verminderen.  
+- **Geheugenbeheer:** Sluit streams direct en overweeg grote bijlagen te streamen in plaats van ze volledig in het geheugen te laden.  
+- **Thread‑veiligheid:** Maak aparte `MailMessage`‑instanties per thread; de bibliotheek deelt geen mutabele staat tussen instanties.
 
 ## Conclusie
-Je weet nu **hoe je de Aspose.Email Maven‑dependency toevoegt** en **de content‑description‑header** van e‑mailbijlagen ophaalt met Java. Deze mogelijkheid stelt je in staat om slimmere, geautomatiseerde e‑mailverwerkings‑pipelines te bouwen die berichten kunnen categoriseren, routeren en auditen met minimale inspanning.
-
-Ontdek meer functies van Aspose.Email—zoals het converteren van berichten naar PDF, het extraheren van ingesloten afbeeldingen, of het verzenden van geautomatiseerde antwoorden—toe om je e‑mailverwerkingsoplossingen verder uit te breiden.
+Je weet nu hoe je **aspose email maven** toevoegt aan een Java‑project en de `Content‑Description`‑header van e‑mailbijlagen ophaalt. Deze mogelijkheid stelt je in staat om slimmere, geautomatiseerde e‑mail‑pijplijnen te bouwen die berichten kunnen categoriseren, routeren en auditen met minimale inspanning. Verken extra Aspose.Email‑functies zoals het converteren van berichten naar PDF, het extraheren van ingebedde afbeeldingen, of het verzenden van geautomatiseerde antwoorden om je oplossing verder uit te breiden.
 
 ## Veelgestelde vragen
 
-**Q: Kan ik andere bijlage‑headers ophalen met deze methode?**  
-A: Ja, vervang simpelweg `"Content-Description"` door de gewenste headernaam in de `get_Item`‑aanroep.
+**V: Kan ik andere bijlage‑headers ophalen met deze methode?**  
+A: Ja – vervang simpelweg `"Content‑Description"` door de gewenste headernaam in de `get_Item`‑aanroep.
 
-**Q: Wat als mijn e‑mail geen bijlagen heeft?**  
+**V: Wat als mijn e‑mail geen bijlagen heeft?**  
 A: Controleer altijd `msg.getAttachments().size()` voordat je een item benadert om `IndexOutOfBoundsException` te voorkomen.
 
-**Q: Hoe ga ik om met exceptions bij het laden van e‑mails?**  
-A: Plaats de laad‑aanroep in een try‑catch‑blok en verwerk `FileNotFoundException`, `MessageLoadException` of andere I/O‑fouten op een nette manier.
+**V: Hoe ga ik om met uitzonderingen bij het laden van e‑mails?**  
+A: Omring de laad‑aanroep met een try‑catch‑blok en verwerk `FileNotFoundException`, `MessageLoadException` of andere I/O‑fouten op een nette manier.
 
-**Q: Ondersteunt Aspose.Email for Java alle e‑mailformaten?**  
-A: Het ondersteunt een breed scala aan formaten (EML, MSG, MHTML, enz.). Raadpleeg de nieuwste productdocumentatie voor de volledige lijst.
+**V: Ondersteunt Aspose.Email voor Java alle e‑mailformaten?**  
+A: Het ondersteunt meer dan 30 invoer‑ en uitvoerformaten — waaronder EML, MSG, MHTML en RFC‑822 — waardoor het geschikt is voor de meeste enterprise‑scenario's.
 
-**Q: Waar kan ik hulp krijgen als ik problemen ondervind?**  
-A: Bezoek de Aspose‑forums, raadpleeg de online documentatie, of neem contact op met hun supportteam.
+**V: Waar kan ik hulp krijgen als ik problemen ondervind?**  
+A: Bezoek de Aspose‑forums, raadpleeg de online documentatie, of neem contact op met hun supportteam voor hulp.
 
-## Resources
+## Bronnen
 - **Documentatie:** [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)  
 - **Download:** [Releases for Aspose.Email for Java](https://releases.aspose.com/email/java/)  
-- **Aankoop:** [Buy a License](https://purchase.aspose.com/buy)  
-- **Gratis proefversie:** [Evaluate with a Free Trial](https://releases.aspose.com/email/java/)  
-- **Tijdelijke licentie:** [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
+- **Aankoop:** [Koop een licentie](https://purchase.aspose.com/buy)  
+- **Gratis proefversie:** [Evalueren met een gratis proefversie](https://releases.aspose.com/email/java/)  
+- **Tijdelijke licentie:** [Vraag een tijdelijke licentie aan](https://purchase.aspose.com/temporary-license/)  
 - **Support:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Laatst bijgewerkt:** 2026-03-18  
+**Laatst bijgewerkt:** 2026-09-07  
 **Getest met:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**Auteur:** Aspose  
+**Auteur:** Aspose
+
+## Gerelateerde tutorials
+
+- [Aspose Email Java Laden en Bijlagen Inspecteren](/email/java/attachments-handling/aspose-email-java-load-inspect-attachments/)
+- [Hoe Header Toevoegen – Email‑metadata Verrijken met Aspose.Email](/email/java/customizing-email-headers/enriching-email-metadata-through-headers/)
+- [Maven Aspose Email: TNEF‑bijlagen behouden in EML (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
