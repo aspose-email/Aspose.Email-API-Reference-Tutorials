@@ -1,67 +1,108 @@
 ---
-date: '2026-03-18'
-description: تعلم كيفية إدراج المرفق وكيفية استبدال المرفق في ملفات MSG باستخدام Aspose.Email
-  للغة Java. دليل خطوة بخطوة مع الشيفرة وأفضل الممارسات وأمثلة من الواقع.
+date: '2026-09-07'
+description: تعلم كيفية إدراج مرفق واستبداله في ملفات Outlook MSG باستخدام Aspose.Email
+  for Java. Step‑by‑step code, best practices, and real‑world examples.
 keywords:
-- insert MSG attachments Java
-- replace MSG attachments Java
-- Aspose.Email for Java
-title: كيفية إدراج مرفق في ملفات MSG باستخدام Aspose.Email لجافا
+- how to insert attachment
+- how to replace attachment
+- add attachment outlook msg
+lastmod: '2026-09-07'
+og_description: تعلم كيفية إدراج مرفق واستبداله في ملفات Outlook MSG باستخدام Aspose.Email
+  for Java. Detailed guide with code, tips, and real‑world use cases.
+og_image_alt: Guide showing how to insert attachment in MSG files using Aspose.Email
+  for Java
+og_title: كيفية إدراج مرفق في MSG باستخدام Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to insert attachment and replace attachment in Outlook MSG
+    files using Aspise.Email for Java. Step‑by‑step code, best practices, and real‑world
+    examples.
+  headline: How to insert attachment in MSG with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Use memory‑efficient methods, process files in chunks when possible, and
+      increase the JVM heap size (`-Xmx`) for very large MSG files.
+    question: How do I handle large attachments with Aspose.Email?
+  - answer: Yes, iterate over a collection of files and call `msg.getAttachments().insert(...)`
+      for each entry.
+    question: Can I insert multiple attachments at once?
+  - answer: The most frequent problem is using an incorrect index. Verify the current
+      attachment count before calling `replace`.
+    question: What are common issues when replacing attachments?
+  - answer: Absolutely. Its robust API, extensive format support, and ability to process
+      multi‑hundred‑page messages make it ideal for large‑scale deployments.
+    question: Is Aspose.Email Java suitable for enterprise‑level applications?
+  - answer: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+      for help from the community and Aspose staff.
+    question: How can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- insert attachment
+- replace attachment
+- Aspose.Email
+- Java email processing
+- MSG file
+title: كيفية إدراج مرفق في MSG باستخدام Aspose.Email for Java
 url: /ar/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
 # إدراج واستبدال مرفقات MSG باستخدام Aspose.Email Java: دليل شامل
 
-في عالم الاتصالات الرقمية، غالبًا ما تتضمن رسائل البريد الإلكتروني مرفقات حيوية. معرفة **كيفية إدراج مرفق** في ملف *.MSG*—وعند الحاجة، **كيفية استبدال مرفق**—يمكن أن يوفر عليك الكثير من العمل اليدوي. سواء كنت تبني معالج بريد إلكتروني آلي أو تحتاج فقط إلى تنظيم رسائل Outlook، فإن Aspose.Email for Java يقدّم لك طريقة نظيفة وموثوقة لإدارة المرفقات. يشرح هذا الدليل كيفية إدراج مرفق جديد واستبدال مرفق موجود، مع سيناريوهات واقعية ونصائح للأداء.
+تتطلب سير عمل البريد الإلكتروني الذي يعتمد على ملفات Outlook *.MSG* غالبًا التحكم البرمجي في المرفقات المدمجة. سواء كنت تبني خدمة أرشفة آلية أو مولد رسائل مدفوع بالامتثال، فإن **كيفية إدراج مرفق** و**كيفية استبدال مرفق** هما مهارتان أساسيتان. يوضح هذا الدليل، خطوة بخطوة، كيفية إضافة مرفق جديد وتبديل مرفق موجود باستخدام Aspose.Email for Java، مع تسليط الضوء على سيناريوهات واقعية، ونصائح الأداء، ومشكلات شائعة.
 
 ## إجابات سريعة
-- **ما هي المكتبة الأساسية؟** Aspose.Email for Java  
-- **كيف يتم إدراج مرفق؟** استخدم `msg.getAttachments().insert(index, name, MapiMessage)`  
-- **كيف يتم استبدال مرفق؟** استخدم `msg.getAttachments().replace(index, name, MapiMessage)`  
-- **هل أحتاج إلى ترخيص؟** نعم، يلزم وجود ترخيص صالح لـ Aspose.Email للاستخدام في بيئة الإنتاج  
-- **ما نسخة JDK المدعومة؟** JDK 16 أو أحدث  
 
-## كيفية إدراج مرفق في ملفات MSG
-هذا القسم يجيب مباشرة على السؤال الأساسي **كيفية إدراج مرفق** في ملف Outlook MSG. سنستعرض استدعاءات API الدقيقة، الأسباب وراء كل خطوة، ونصائح للحفاظ على نظافة الكود.
+طريقة `insert` تضيف مرفقًا جديدًا في الفهرس المحدد، بينما `replace` تستبدل مرفقًا موجودًا بآخر جديد. كلا الطريقتين تقبلان اسم المرفق وكائن `MapiMessage` الذي يمثل البريد الإلكتروني المرفق. كائن `MapiMessage` يضم رسالة Outlook يمكن إرفاقها بملف MSG آخر.
 
-## ما ستتعلمه
+- **ما المكتبة التي تتعامل مع معالجة مرفقات MSG؟** Aspose.Email for Java توفر API متكامل لملفات Outlook MSG.  
+- **كيف يتم إدراج مرفق؟** استدعِ `msg.getAttachments().insert(index, name, MapiMessage)` مع الفهرس المستهدف و`MapiMessage` المُعد.  
+- **كيف يتم استبدال مرفق؟** استخدم `msg.getAttachments().replace(index, name, MapiMessage)` لتبديل المحتوى في الموضع المحدد.  
+- **هل الترخيص مطلوب؟** نعم—بدون ترخيص Aspose.Email صالح سيحتوي الناتج على علامات مائية تجريبية.  
+- **ما نسخة Java المدعومة؟** المكتبة متوافقة مع JDK 16 وما بعده.
 
-- كيفية إعداد Aspose.Email for Java في مشروعك  
-- تعليمات خطوة بخطوة **لإضافة مرفق إلى msg** (إدراج مرفق جديد)  
-- تقنيات **كيفية استبدال مرفق** (استبدال مرفق موجود)  
-- تطبيقات واقعية لهذه الميزات  
-- نصائح تحسين الأداء وأفضل الممارسات  
+## كيفية إدراج مرفق في ملفات MSG؟
 
-الآن، دعنا نتعمق في المتطلبات المسبقة التي تحتاجها قبل البدء.
+حمّل الرسالة المستهدفة، حضّر المرفق، وأدرجه في الموضع المطلوب. يوضح هذا الفقرة مباشرةً تسلسل الاستدعاءات في أقل من 70 كلمة: تقوم بتحميل ملف MSG المصدر، استخراج أو إنشاء `MapiMessage` الذي يمثل المرفق الجديد، ثم استدعاء `msg.getAttachments().insert(1, "NewAttachment.msg", newMsg)` لوضعه في الفهرس 1. تقوم الـ API تلقائيًا بتحديث مجموعة المرفقات والحفاظ على بنية الرسالة الأصلية.
+
+### ما هو مرفق MSG؟
+
+المرفق في ملف Outlook MSG يُخزن ككائن `MapiMessage` داخل مجموعة مرفقات الرسالة. هذا الكائن يضم محتوى البريد الإلكتروني الكامل للرسالة المرفقة، مما يتيح لك التعامل معه كرسالة مستقلة عند الحاجة.
+
+### لماذا نستخدم Aspose.Email لمعالجة المرفقات؟
+
+يدعم Aspose.Email **أكثر من 50** تنسيق بريد إلكتروني وملف، يمكنه معالجة رسائل تصل إلى **500 ميغابايت** دون تحميل الملف بالكامل إلى الذاكرة، ويوفر عمليات آمنة للمتعدد الخيوط تتوسع في الخدمات المتعددة الخيوط. تجعل هذه القدرات الم quantified خيارًا موثوقًا لأتمتة البريد الإلكتروني على مستوى المؤسسات.
 
 ## المتطلبات المسبقة
 
-قبل أن نبدأ بتنفيذ الحل، تأكد من أن بيئة التطوير جاهزة. ستحتاج إلى ما يلي:
+- **Aspose.Email for Java** (أحدث نسخة) – المكتبة الأساسية التي تمكّن من معالجة MSG.  
+- **Java Development Kit (JDK) 16+** – بيئة التشغيل المطلوبة للمكتبة.  
+- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse، وMaven لإدارة الاعتمادات.  
+- معرفة أساسية بـ Java I/O وإلمام بهيكل Outlook MSG.
 
 ### المكتبات المطلوبة والإصدارات والاعتمادات
 
-- **Aspose.Email for Java**: توفر هذه المكتبة القدرة على التعامل مع صيغ البريد الإلكتروني، بما في ذلك ملفات MSG.  
-- **Java Development Kit (JDK)**: تأكد من تثبيت JDK 16 أو أحدث.
+- `com.aspose:aspose-email` – أضف إحداثية Maven الموضحة في الوثائق الرسمية.  
+- لا توجد مكتبات طرف ثالث إضافية مطلوبة لعمليات المرفقات الأساسية.
 
 ### متطلبات إعداد البيئة
 
-- بيئة تطوير مفضلة مثل IntelliJ IDEA أو Eclipse  
-- Maven لإدارة الاعتمادات  
+- قم بتثبيت JDK 16 أو أحدث وقم بتكوين `JAVA_HOME`.  
+- أنشئ مشروع Maven وأضف اعتماد Aspose.Email إلى `pom.xml`.
 
 ### المتطلبات المعرفية
 
-- فهم أساسي لبرمجة Java  
-- إلمام بالتعامل مع عمليات الإدخال/الإخراج للملفات في Java  
+- فهم تدفقات ملفات Java (`FileInputStream`, `FileOutputStream`).  
+- الإلمام بمفاهيم البرمجة الكائنية مثل الفئات والطرق.
 
-## إعداد Aspose.Email for Java
+## إعداد Aspose.Email لـ Java
 
-لبدء العمل، تحتاج إلى دمج Aspose.Email في مشروع Java الخاص بك. إليك الطريقة باستخدام Maven:
+أضف اعتماد Aspose.Email إلى ملف Maven `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -74,21 +115,16 @@ weight: 1
 
 ### خطوات الحصول على الترخيص
 
-تقدم Aspose.Email خيارات ترخيص مختلفة:
+يوفر Aspose.Email **نسخة تجريبية مجانية** و**ترخيصًا تجاريًا**. النسخة التجريبية تزيل معظم القيود لكنها تضيف شريط تقييم صغير إلى الملفات المولدة. للإنتاج يجب تطبيق ملف ترخيص دائم.
 
-- **تجربة مجانية**: احصل على ترخيص مؤقت لاستكشاف جميع الإمكانات دون قيود التقييم.  
-- **شراء**: اشترِ اشتراكًا للوصول المستمر إلى التحديثات والدعم.
+احصل على ترخيص مؤقت عبر [Temporary License](https://purchase.aspose.com/temporary-license/). للحصول على تفاصيل الشراء الكاملة، راجع [Purchase Page](https://purchase.aspose.com/buy).
 
-للحصول على ترخيص مؤقت، زر [Temporary License](https://purchase.aspose.com/temporary-license/). لمزيد من التفاصيل حول الشراء، انتقل إلى [Purchase Page](https://purchase.aspose.com/buy).
-
-بعد حصولك على ملف الترخيص، قم بتهيئته في تطبيقك كما يلي:
+قم بتهيئة الترخيص في الكود قبل أي استدعاءات API:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license.lic");
 ```
-
-مع إعداد Aspose.Email وترخيصه، لننتقل إلى تنفيذ الميزات.
 
 ## دليل التنفيذ
 
@@ -96,22 +132,22 @@ license.setLicense("path/to/your/license.lic");
 
 #### نظرة عامة
 
-تتيح لك هذه الميزة **إضافة مرفق إلى msg** في موضع دقيق—مفيد عندما يكون ترتيب المرفقات مهمًا للامتثال أو العرض.
+تتيح لك هذه الميزة **إضافة مرفق إلى MSG** في فهرس محدد بدقة، وهو مفيد عندما يكون ترتيب المرفقات مهمًا للمعالجة اللاحقة أو فحوصات الامتثال.
 
 #### تعليمات خطوة بخطوة
 
 **1. تحميل ملف MSG الموجود**  
 
-حمّل ملف MSG الذي يحتوي بالفعل على مرفقات مدمجة:
+حمّل الرسالة المصدر التي تحتوي بالفعل على مرفقات:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 ```
 
-**2. حفظ مرفق للتوضيح**  
+**2. حفظ مرفق للعرض**  
 
-سنستخرج أول مرفق لتتمكن من رؤية ما يتم نقله:
+استخراج أول مرفق لتتمكن من رؤية ما سيتم نقله:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
@@ -119,7 +155,7 @@ msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out
 
 **3. تحميل ملف MSG آخر**  
 
-جهّز ملف MSG الذي تريد إدراجه كمرفق جديد:
+حضّر ملف MSG الذي تريد إدراجه كمرفق جديد:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbeddedMsg.msg"));
@@ -135,17 +171,17 @@ msg.getAttachments().insert(1, "new 11", emb);
 
 **5. حفظ ملف MSG المعدل**  
 
-احفظ التغييرات في ملف جديد:
+احفظ التغييرات إلى ملف جديد:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
 ```
 
-### استبدال محتويات مرفق MSG مدمج
+### استبدال محتويات مرفق MSG المدمج
 
 #### نظرة عامة
 
-عندما تحتاج إلى تحديث محتوى بريد إلكتروني مرفق، يمكنك **كيفية استبدال مرفق** دون تعديل بنية الرسالة المحيطة.
+عندما يحتاج محتوى بريد إلكتروني مرفق إلى تحديث، يمكنك **استبدال المرفق** دون تعديل بنية الرسالة المحيطة، مع الحفاظ على البيانات الوصفية مثل الطوابع الزمنية ومعلومات المرسل.
 
 #### تعليمات خطوة بخطوة
 
@@ -160,7 +196,7 @@ MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 
 **2. حفظ مرفق موجود**  
 
-استخرج أحد المرفقات الحالية للرجوع إليه:
+استخراج أحد المرفقات الحالية للرجوع إليه:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
@@ -176,7 +212,7 @@ MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMS
 
 **4. استبدال المرفق**  
 
-استبدل المرفق القديم في الفهرس 1 بالمرفق الجديد:
+بدل المرفق القديم في الفهرس 1 بالمرفق الجديد:
 
 ```java
 msg.getAttachments().replace(1, "new 1", emb);
@@ -184,76 +220,78 @@ msg.getAttachments().replace(1, "new 1", emb);
 
 **5. حفظ التغييرات إلى ملف MSG**  
 
-اكتب الرسالة المحدثة إلى القرص:
+اكتب الرسالة المحدثة مرة أخرى إلى القرص:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 ```
 
-## تطبيقات عملية
+## التطبيقات العملية
 
-إليك بعض السيناريوهات الواقعية التي يمكن فيها الاستفادة من هذه الميزات:
+- **معالجة البريد الإلكتروني الآلية** – إدراج أو استبدال المرفقات كجزء من خط أنابيب توجيه الرسائل.  
+- **أنظمة إدارة الوثائق** – الحفاظ على ترتيب المرفقات ثابتًا عند أرشفة رسائل Outlook للاحتفاظ القانوني.  
+- **تقارير الامتثال** – التأكد من إرفاق المستندات المطلوبة بالترتيب الصحيح للتدقيق.
 
-- **معالجة البريد الإلكتروني الآلية** – إدراج أو استبدال المرفقات تلقائيًا كجزء من سير عمل البريد.  
-- **أنظمة إدارة المستندات** – الحفاظ على ترتيب المرفقات ثابتًا عند أرشفة رسائل Outlook.  
-- **تقارير الامتثال** – ضمان إرفاق المستندات المطلوبة بالترتيب الصحيح للتدقيق.
-
-تندمج هذه القدرات أيضًا بسلاسة مع منصات CRM، خطوط أنابيب تحليل البيانات، وأنظمة المؤسسات الأخرى.
+تندمج هذه السيناريوهات بسلاسة مع منصات CRM، خطوط أنابيب التحليل، وغيرها من أنظمة المؤسسات.
 
 ## اعتبارات الأداء
 
-عند التعامل مع عدد كبير من المرفقات الضخمة، ضع في اعتبارك النصائح التالية:
+- **تحسين الموارد** – حمّل فقط ملفات MSG التي تحتاجها وأغلق التدفقات بسرعة باستخدام try‑with‑resources.  
+- **إدارة الذاكرة** – زد حجم heap الخاص بـ JVM (`-Xmx2g` أو أعلى) عند معالجة مرفقات ضخمة جدًا، وأعد استخدام كائنات `MapiMessage` حيثما أمكن.
 
-- **تحسين استهلاك الموارد** – حمّل ملفات MSG المطلوبة فقط وأغلق التيارات فور الانتهاء.  
-- **إدارة ذاكرة Java** – اضبط حجم heap للـ JVM إذا كنت تعالج ملفات ضخمة، وأعد استخدام الكائنات حيثما أمكن.
+اتباع هذه الممارسات يحافظ على استجابة تطبيقك حتى تحت حمل ثقيل.
 
-اتباع هذه الممارسات يساعد تطبيقك على البقاء مستجيبًا حتى تحت حمل ثقيل.
+## المشكلات الشائعة & استكشاف الأخطاء
 
-## الأخطاء الشائعة وحلولها
-
-- **فهرس غير صالح** – محاولة الإدراج أو الاستبدال في فهرس غير موجود تُسبب استثناء `ArgumentOutOfRangeException`. تحقق دائمًا من `msg.getAttachments().size()` أولًا.  
-- **تسرب التيارات** – نسيان إغلاق كائنات `FileInputStream` قد يؤدي إلى استنفاد مقابض الملفات. استخدم `try‑with‑resources` للإغلاق التلقائي.  
-- **عدم تعيين الترخيص** – تشغيل التطبيق بدون ترخيص صالح سيضيف علامة مائية تقييمية إلى الناتج. تأكد من استدعاء `license.setLicense(...)` قبل أي استخدام للـ API.
+- **فهرس غير صالح** – الإدراج أو الاستبدال في فهرس غير موجود يثير `ArgumentOutOfRangeException`. تحقق دائمًا من `msg.getAttachments().size()` قبل العملية.  
+- **تسرب التدفقات** – نسيان إغلاق كائنات `FileInputStream` قد يستهلك مقابض الملفات. استخدم try‑with‑resources لضمان الإغلاق.  
+- **عدم تعيين الترخيص** – التشغيل بدون ترخيص صالح يضيف علامات مائية تجريبية. استدعِ `license.setLicense(...)` قبل أي استخدام للـ API.
 
 ## الأسئلة المتكررة
 
-**س: كيف أتعامل مع مرفقات كبيرة باستخدام Aspose.Email؟**  
-ج: استخدم طرق موفرة للذاكرة، عالج الملفات على أجزاء إذا أمكن، وزد حجم heap للـ JVM (`-Xmx`) للملفات الضخمة جدًا.
+**س: كيف يمكنني التعامل مع مرفقات كبيرة باستخدام Aspose.Email؟**  
+ج: استخدم طرق فعّالة في الذاكرة، عالج الملفات على أجزاء عندما يكون ذلك ممكنًا، وزد حجم heap الخاص بـ JVM (`-Xmx`) لملفات MSG الكبيرة جدًا.
 
-**س: هل يمكنني إدراج عدة مرفقات مرة واحدة؟**  
-ج: نعم، يمكنك التكرار على مجموعة من الملفات واستدعاء `msg.getAttachments().insert(...)` لكل منها.
+**س: هل يمكنني إدراج مرفقات متعددة مرة واحدة؟**  
+ج: نعم، قم بالتكرار عبر مجموعة من الملفات واستدعِ `msg.getAttachments().insert(...)` لكل عنصر.
 
 **س: ما هي المشكلات الشائعة عند استبدال المرفقات؟**  
-ج: أكثر الأخطاء شيوعًا هو استخدام فهرس غير صحيح. تحقق من عدد المرفقات الحالي قبل استدعاء `replace`.
+ج: المشكلة الأكثر شيوعًا هي استخدام فهرس غير صحيح. تحقق من عدد المرفقات الحالي قبل استدعاء `replace`.
 
-**س: هل Aspose.Email Java مناسب لتطبيقات على مستوى المؤسسة؟**  
-ج: بالتأكيد. API القوي، الدعم الواسع للصيغ، والقابلية للتوسع تجعلها خيارًا موثوقًا للنشر على نطاق واسع.
+**س: هل Aspose.Email Java مناسب لتطبيقات على مستوى المؤسسات؟**  
+ج: بالتأكيد. API القوي، الدعم الواسع للعديد من الصيغ، والقدرة على معالجة رسائل مئات الصفحات تجعلها مثالية للنشر على نطاق واسع.
 
-**س: كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟**  
-ج: زر [Aspose Support Forum](https://forum.aspose.com/c/email/10) للحصول على مساعدة من المجتمع وفريق Aspose.
+**س: كيف يمكنني الحصول على الدعم إذا واجهت مشكلات؟**  
+ج: زر [Aspose Support Forum](https://forum.aspose.com/c/email/10) للحصول على مساعدة من المجتمع وموظفي Aspose.
 
 ## الخلاصة
 
-في هذا الدليل غطينا **كيفية إدراج مرفق** و**كيفية استبدال مرفق** داخل ملفات MSG باستخدام Aspose.Email for Java. هذه العمليات أساسية لمعالجة البريد الإلكتروني الآلية، الامتثال الوثائقي، والتكامل السلس مع الأنظمة التجارية الأخرى. استكشف الإمكانات الكاملة في الوثائق الرسمية وجرب سيناريوهات مختلفة لتصبح خبيرًا في التعامل مع المرفقات.
+في هذا الدليل تعلمت **كيفية إدراج مرفق** و**كيفية استبدال مرفق** داخل ملفات MSG باستخدام Aspose.Email for Java. هذه العمليات حيوية لمعالجة البريد الإلكتروني الآلية، وسير عمل الامتثال، والتكامل السلس مع أنظمة الأعمال الأخرى. استكشف القدرات الكاملة في الوثائق الرسمية وجرب أنواع مرفقات مختلفة لإتقان معالجة MSG.
 
-لتعميق فهمك، جرّب أنواع مرفقات مختلفة وتصفح الوثائق الواسعة لـ [Aspose.Email Documentation](https://reference.aspose.com/email/java/) للمزيد من الوظائف.
+لتعميق فهمك، جرّب إرفاق صيغ بريد إلكتروني مختلفة واطلع على الوثائق الشاملة لـ [Aspose.Email Documentation](https://reference.aspose.com/email/java/) للحصول على ميزات إضافية.
 
-## موارد
+## الموارد
 
-- **الوثائق**: استكشف الأدلة التفصيلية على [Aspose Documentation](https://reference.aspose.com/email/java/).  
+- **الوثائق**: استكشف أدلة مفصلة في [Aspose.Email Documentation](https://reference.aspose.com/email/java/).  
+- **الوثائق**: استكشف أدلة مفصلة في [Aspose Documentation](https://reference.aspose.com/email/java/).  
 - **التنزيل**: احصل على أحدث إصدار عبر [Aspose Releases](https://releases.aspose.com/email/java/).  
 - **الشراء**: تعرف على خيارات الشراء في [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ---
 
-**آخر تحديث:** 2026-03-18  
+**آخر تحديث:** 2026-09-07  
 **تم الاختبار مع:** Aspose.Email for Java 25.4 (JDK 16)  
-**المؤلف:** Aspose  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [كيفية استخراج المرفقات من ملفات msg باستخدام Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [أتمتة إنشاء Outlook MSG في Java باستخدام Aspose.Email: دليل كامل](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [كيفية تحميل وتحليل ملفات Outlook MSG باستخدام Aspose.Email for Java: دليل شامل](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

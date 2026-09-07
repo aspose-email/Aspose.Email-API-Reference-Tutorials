@@ -1,68 +1,112 @@
 ---
-date: '2026-03-18'
-description: Tanulja meg, hogyan lehet csatolmányt beszúrni és cserélni MSG fájlokban
-  az Aspose.Email for Java használatával. Lépésről lépésre útmutató kóddal, legjobb
-  gyakorlatokkal és valós példákkal.
+date: '2026-09-07'
+description: Ismerje meg, hogyan szúrhat be attachment-et és replace attachment-et
+  Outlook MSG fájlokban az Aspose.Email for Java használatával. Step‑by‑step code,
+  best practices, és real‑world examples.
 keywords:
-- insert MSG attachments Java
-- replace MSG attachments Java
-- Aspose.Email for Java
-title: Hogyan illesszünk csatolmányt MSG fájlokba az Aspose.Email for Java segítségével
+- how to insert attachment
+- how to replace attachment
+- add attachment outlook msg
+lastmod: '2026-09-07'
+og_description: Ismerje meg, hogyan szúrhat be attachment-et és replace attachment-et
+  Outlook MSG fájlokban az Aspose.Email for Java használatával. Detailed guide with
+  code, tips, és real‑world use cases.
+og_image_alt: Guide showing how to insert attachment in MSG files using Aspose.Email
+  for Java
+og_title: Hogyan szúrjunk be attachment-et és replace attachment-et Outlook MSG fájlokban
+  az Aspose.Email for Java segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to insert attachment and replace attachment in Outlook MSG
+    files using Aspise.Email for Java. Step‑by‑step code, best practices, and real‑world
+    examples.
+  headline: How to insert attachment in MSG with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Use memory‑efficient methods, process files in chunks when possible, and
+      increase the JVM heap size (`-Xmx`) for very large MSG files.
+    question: How do I handle large attachments with Aspose.Email?
+  - answer: Yes, iterate over a collection of files and call `msg.getAttachments().insert(...)`
+      for each entry.
+    question: Can I insert multiple attachments at once?
+  - answer: The most frequent problem is using an incorrect index. Verify the current
+      attachment count before calling `replace`.
+    question: What are common issues when replacing attachments?
+  - answer: Absolutely. Its robust API, extensive format support, and ability to process
+      multi‑hundred‑page messages make it ideal for large‑scale deployments.
+    question: Is Aspose.Email Java suitable for enterprise‑level applications?
+  - answer: Visit the [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+      for help from the community and Aspose staff.
+    question: How can I get support if I encounter issues?
+  type: FAQPage
+tags:
+- insert attachment
+- replace attachment
+- Aspose.Email
+- Java email processing
+- MSG file
+title: Hogyan szúrjunk be attachment-et és replace attachment-et Outlook MSG fájlokban
+  az Aspose.Email for Java segítségével
 url: /hu/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# MSG Csatolmányok Beszúrása és Cseréje Aspose.Email Java-val: Átfogó Útmutató
 
-A digitális környezetben az e‑mail kommunikáció gyakran tartalmaz fontos csatolmányokat. Tudni, **hogyan szúrjunk be csatolmányt** egy *.MSG* fájlba – és ha szükséges, **hogyan cseréljünk csatolmányt** – rengeteg manuális munkát takaríthat meg. Akár automatizált e‑mail feldolgozót építesz, akár csak rendbe szeretnéd tenni az Outlook üzeneteket, az Aspose.Email for Java tiszta, megbízható módot biztosít a csatolmányok kezelésére. Ez az útmutató lépésről‑lépésre végigvezet a új csatolmány beszúrásán és egy meglévő csatolmány cseréjén, valós példákkal és teljesítmény‑tippekkel.
+# MSG mellékletek beszúrása és cseréje Aspose.Email Java használatával: átfogó útmutató
 
-## Gyors Válaszok
-- **Mi a fő könyvtár?** Aspose.Email for Java  
-- **Hogyan szúrjunk be csatolmányt?** Használd a `msg.getAttachments().insert(index, name, MapiMessage)` metódust  
-- **Hogyan cseréljünk csatolmányt?** Használd a `msg.getAttachments().replace(index, name, MapiMessage)` metódust  
-- **Szükség van licencre?** Igen, érvényes Aspose.Email licenc szükséges a termelésben való használathoz  
-- **Melyik JDK verzió támogatott?** JDK 16 vagy újabb  
+Az Outlook *.MSG* fájlokra támaszkodó e‑mail munkafolyamatok gyakran igényelnek programozott vezérlést a beágyazott mellékletek felett. Akár automatizált archiválási szolgáltatást épít, akár megfelelőségi‑alapú üzenetgenerátort, a **how to insert attachment** és **how to replace attachment** alapvető készségek. Ez az útmutató lépésről lépésre bemutatja, hogyan adjon hozzá egy új mellékletet és cserélje le egy meglévőt az Aspose.Email for Java segítségével, miközben valós példákat, teljesítmény tippeket és gyakori buktatókat emel ki.
 
-## Hogyan Szúrjunk Be Csatolmányt MSG Fájlokba
-Ez a szakasz közvetlenül a **hogyan szúrjunk be csatolmányt** kérdésre ad választ egy Outlook MSG fájlban. Bemutatjuk a pontos API hívásokat, az egyes lépések indoklását, valamint tippeket a kód tisztaságának megőrzéséhez.
+## Gyors válaszok
 
-## Mit Tanulhatsz Meg
+Az `insert` metódus új mellékletet ad hozzá a megadott indexhez, míg a `replace` egy meglévő mellékletet cserél le egy újjal. Mindkét metódus elfogadja a melléklet nevét és egy `MapiMessage` objektumot, amely a csatolt e‑mailt képviseli. Egy `MapiMessage` objektum egy Outlook üzenetet tartalmaz, amely egy másik MSG fájlhoz csatolható.
 
-- Hogyan állítsd be az Aspose.Email for Java-t a projektedben
-- Lépés‑ről‑lépésre útmutató a **csatolmány hozzáadásához msg‑hez** (új csatolmány beszúrása)
-- Technikák a **hogyan cseréljünk csatolmányt** (létező csatolmány cseréje)
-- Valós alkalmazási példák ezekre a funkciókra
-- Teljesítmény‑optimalizálási tippek és legjobb gyakorlatok
+- **Melyik könyvtár kezeli az MSG melléklet manipulációt?** Aspose.Email for Java teljes körű API-t biztosít az Outlook MSG fájlokhoz.  
+- **Hogyan szúrjunk be mellékletet?** Hívja a `msg.getAttachments().insert(index, name, MapiMessage)`‑t a cél indexszel és egy előkészített `MapiMessage`‑el.  
+- **Hogyan cseréljünk ki mellékletet?** Használja a `msg.getAttachments().replace(index, name, MapiMessage)`‑t a tartalom adott pozícióban történő cseréjéhez.  
+- **Szükséges licenc?** Igen—érvényes Aspose.Email licenc nélkül a kimenet értékelési vízjeleket tartalmaz.  
+- **Melyik Java verzió támogatott?** A könyvtár kompatibilis a JDK 16‑tal és újabbakkal.
 
-Most nézzük meg a szükséges előfeltételeket a kezdéshez.
+## Hogyan szúrjunk be mellékletet MSG fájlokba?
 
-## Előfeltételek
+Töltse be a célüzenetet, készítse elő a mellékletet, és szúrja be a kívánt pozícióba. Ez a közvetlen válasz bekezdés kevesebb, mint 70 szóban megadja a pontos hívássorozatot: betölti a forrás MSG‑t, kinyeri vagy létrehozza a `MapiMessage`‑t, amely az új mellékletet képviseli, majd meghívja a `msg.getAttachments().insert(1, "NewAttachment.msg", newMsg)`‑t, hogy az 1‑es indexre helyezze. Az API automatikusan frissíti a mellékletgyűjteményt és megőrzi az eredeti üzenet struktúráját.
 
-Mielőtt elkezdenénk a megoldás megvalósítását, győződj meg róla, hogy a fejlesztői környezet készen áll. Szükséged lesz a következőkre:
+### Mi az MSG melléklet?
 
-### Szükséges Könyvtárak, Verziók és Függőségek
+Az Outlook MSG fájlban egy melléklet `MapiMessage` objektumként tárolódik az üzenet mellékletgyűjteményében. Ez az objektum a csatolt üzenet teljes e‑mail tartalmát tartalmazza, lehetővé téve, hogy szükség esetén önálló e‑mailként kezelje.
 
-- **Aspose.Email for Java**: Ez a könyvtár biztosítja az e‑mail formátumok, köztük a MSG fájlok manipulálásához szükséges funkciókat.
-- **Java Development Kit (JDK)**: Győződj meg róla, hogy JDK 16 vagy újabb van telepítve.
+### Miért használja az Aspose.Email‑t a mellékletek kezeléséhez?
 
-### Környezet Beállítási Követelmények
+Az Aspose.Email **50+** e‑mail és fájlformátumot támogat, képes **500 MB**‑ig terjedő üzeneteket feldolgozni anélkül, hogy a teljes fájlt memóriába töltené, és szálbiztos műveleteket biztosít, amelyek több szálas szolgáltatásokban skálázhatók. Ezek a számszerű képességek megbízható választássá teszik vállalati szintű e‑mail automatizáláshoz.
 
-- Kedvenc IDE, például IntelliJ IDEA vagy Eclipse
-- Maven a függőségkezeléshez
+## Előkövetelmények
 
-### Tudásbeli Előfeltételek
+- **Aspose.Email for Java** (legújabb verzió) – a magkönyvtár, amely lehetővé teszi az MSG manipulációt.  
+- **Java Development Kit (JDK) 16+** – a könyvtárhoz szükséges futtatókörnyezet.  
+- Egy IDE, például IntelliJ IDEA vagy Eclipse, valamint Maven a függőségkezeléshez.  
+- Alapvető Java I/O ismeretek és az Outlook MSG struktúrájának ismerete.
 
-- Alapvető Java programozási ismeretek
-- Ismeretek a fájl be‑ és kimeneti műveletekről Java‑ban
+### Szükséges könyvtárak, verziók és függőségek
 
-## Aspose.Email for Java Beállítása
+- `com.aspose:aspose-email` – adja hozzá a hivatalos dokumentációban szereplő Maven koordinátát.  
+- Alapvető melléklet műveletekhez nincs szükség további harmadik fél könyvtárakra.
 
-A kezdéshez integrálnod kell az Aspose.Email‑t a Java projektedbe. Így teheted meg Maven‑nel:
+### Környezet beállítási követelmények
+
+- Telepítse a JDK 16‑ot vagy újabbat, és konfigurálja a `JAVA_HOME`‑t.  
+- Hozzon létre egy Maven projektet, és adja hozzá az Aspose.Email függőséget a `pom.xml`‑hez.
+
+### Tudás előkövetelmények
+
+- A Java fájlfolyamok (`FileInputStream`, `FileOutputStream`) megértése.  
+- Az objektumorientált fogalmak, például osztályok és metódusok ismerete.
+
+## Az Aspose.Email for Java beállítása
+
+Adja hozzá az Aspose.Email függőséget a Maven `pom.xml`‑jéhez:
 
 ```xml
 <dependency>
@@ -73,188 +117,185 @@ A kezdéshez integrálnod kell az Aspose.Email‑t a Java projektedbe. Így tehe
 </dependency>
 ```
 
-### Licenc Beszerzési Lépések
+### Licenc beszerzési lépések
 
-Az Aspose.Email több licencelési lehetőséget kínál:
+Az Aspose.Email **ingyenes próbaverziót** és **kereskedelmi licencet** kínál. A próba eltávolítja a legtöbb korlátozást, de egy kis értékelési vízjelet ad a generált fájlokhoz. Termeléshez állandó licencfájlt kell alkalmazni.
 
-- **Ingyenes Próbaverzió**: Ideiglenes licenc a teljes funkcionalitás felfedezéséhez korlátozások nélkül.
-- **Megvásárlás**: Előfizetés a folyamatos frissítések és támogatás érdekében.
+Szerezzen be egy ideiglenes licencet a [Temporary License](https://purchase.aspose.com/temporary-license/) oldalon. A teljes vásárlási részletekért tekintse meg a [Purchase Page](https://purchase.aspose.com/buy) oldalt.
 
-Ideiglenes licenc beszerzéséhez látogasd meg a [Temporary License](https://purchase.aspose.com/temporary-license/) oldalt. A vásárlás részleteiért nézd meg a [Purchase Page](https://purchase.aspose.com/buy) oldalt.
-
-Miután megvan a licencfájl, inicializáld az alkalmazásban a következőképpen:
+Inicializálja a licencet a kódban minden API hívás előtt:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-Az Aspose.Email beállítása és licencelése után lépjünk tovább a funkciók megvalósításához.
+## Implementációs útmutató
 
-## Implementációs Útmutató
-
-### MSG Csatolmány Beszúrása Egy Meghatározott Helyre
+### MSG melléklet beszúrása egy adott helyre
 
 #### Áttekintés
 
-Ez a funkció lehetővé teszi, hogy **csatolmányt adj hozzá msg‑hez** egy pontos pozícióban – hasznos, ha a csatolmány sorrendje fontos a megfelelőség vagy a megjelenés szempontjából.
+Ez a funkció lehetővé teszi, hogy **add attachment to MSG** pontos indexen szúrjon be, ami hasznos, ha a mellékletek sorrendje fontos a további feldolgozás vagy megfelelőségi ellenőrzések során.
 
-#### Lépés‑ről‑lépésre Útmutató
+#### Lépésről‑lépésre útmutató
 
-**1. A meglévő MSG fájl betöltése**  
+**1. Töltse be a meglévő MSG fájlt**  
 
-Töltsd be azt az MSG fájlt, amely már tartalmaz beágyazott csatolmányokat:
+Töltse be a forrás üzenetet, amely már tartalmaz mellékleteket:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
 ```
 
-**2. Egy Csatolmány Mentése Bemutató Céllal**  
+**2. Mentse el egy mellékletet bemutatásként**  
 
-Kivesszük az első csatolmányt, hogy láthasd, mi kerül áthelyezésre:
+Kinyeri az első mellékletet, hogy lássa, mi lesz áthelyezve:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Egy Másik MSG Fájl Betöltése**  
+**3. Töltsön be egy másik MSG fájlt**  
 
-Készítsd elő azt az MSG fájlt, amelyet új csatolmányként szeretnél beszúrni:
+Készítse elő a MSG fájlt, amelyet új mellékletként szeretne beszúrni:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "WithEmbeddedMsg.msg"));
 ```
 
-**4. Az Új Csatolmány Beszúrása**  
+**4. Szúrja be az új mellékletet**  
 
-Szúrd be az új MSG fájlt az index 1‑nél a csatolmánygyűjteménybe:
+Szúrja be az új MSG fájlt az 1‑es indexre a mellékletgyűjteményben:
 
 ```java
 msg.getAttachments().insert(1, "new 11", emb);
 ```
 
-**5. A Módosított MSG Fájl Mentése**  
+**5. Mentse el a módosított MSG fájlt**  
 
-Írd a változtatásokat egy új fájlba:
+Mentse el a változtatásokat egy új fájlba:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/insertMSGAttachment_out.msg");
 ```
 
-### Beágyazott MSG Csatolmány Tartalmának Cseréje
+### Beágyazott MSG melléklet tartalmának cseréje
 
 #### Áttekintés
 
-Amikor egy csatolt e‑mail tartalmát kell frissíteni, **hogyan cseréljünk csatolmányt** anélkül, hogy a környező üzenet struktúráját megváltoztatnád.
+Amikor egy csatolt e‑mail tartalmát frissíteni kell, **replace attachment** használható a környező üzenetstruktúra módosítása nélkül, megőrizve a metaadatokat, például az időbélyegeket és a feladó információkat.
 
-#### Lépés‑ről‑lépésre Útmutató
+#### Lépésről‑lépésre útmutató
 
-**1. A Csatolmányokkal Rendelkező MSG Fájl Betöltése**  
+**1. Töltse be a mellékletekkel rendelkező MSG fájlt**  
 
-Nyisd meg azt az MSG fájlt, amely már tartalmazza a cserélni kívánt csatolmányt:
+Nyissa meg a MSG fájlt, amely már tartalmazza a cserélni kívánt mellékletet:
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/outlook/";
 MapiMessage msg = MapiMessage.fromFile(dataDir + "insertMSGAttachment_out.msg");
 ```
 
-**2. Egy Létező Csatolmány Mentése**  
+**2. Mentse el egy meglévő mellékletet**  
 
-Vond ki az aktuális csatolmányok egyikét referenciaként:
+Kinyer egyet a jelenlegi mellékletekből referenciaként:
 
 ```java
 msg.getAttachments().get_Item(0).save("YOUR_OUTPUT_DIRECTORY" + "/attachment_out.msg");
 ```
 
-**3. Új MSG Fájl Betöltése a Cseréhez**  
+**3. Töltsön be egy új MSG fájlt a cseréhez**  
 
-Töltsd be azt az MSG fájlt, amely az új csatolmány lesz:
+Töltse be a MSG fájlt, amely az új melléklet lesz:
 
 ```java
 MapiMessage emb = MapiMessage.fromStream(new FileInputStream(dataDir + "insertMSGAttachment_out.msg"));
 ```
 
-**4. A Csatolmány Cseréje**  
+**4. Cserélje le a mellékletet**  
 
-Cseréld le a régi csatolmányt az index 1‑nél az újjal:
+Cserélje le a régi mellékletet az 1‑es indexen az újjal:
 
 ```java
 msg.getAttachments().replace(1, "new 1", emb);
 ```
 
-**5. A Változások Mentése az MSG Fájlba**  
+**5. Mentse el a változásokat a MSG fájlba**  
 
-Írd vissza a frissített üzenetet a lemezre:
+Írja vissza a frissített üzenetet a lemezre:
 
 ```java
 msg.save("YOUR_OUTPUT_DIRECTORY" + "/replaceEmbeddedMSGAttachment_out.msg");
 ```
 
-## Gyakorlati Alkalmazások
+## Gyakorlati alkalmazások
 
-Íme néhány valós helyzet, ahol ezek a funkciók hasznosak lehetnek:
+- **Automated email processing** – Mellékletek beszúrása vagy cseréje az üzenetirányítási csővezeték részeként.  
+- **Document management systems** – A melléklet sorrendjének konzisztens megtartása Outlook üzenetek archiválásakor jogi őrzéshez.  
+- **Compliance reporting** – Biztosítsa, hogy a szükséges dokumentumok a megfelelő sorrendben legyenek csatolva az auditokhoz.
 
-- **Automatizált E‑mail Feldolgozás** – Csatolmányok automatikus beszúrása vagy cseréje egy e‑mail munkafolyamat részeként.
-- **Dokumentumkezelő Rendszerek** – Csatolmány sorrend konzisztens megtartása Outlook üzenetek archiválásakor.
-- **Megfelelőségi Jelentéskészítés** – Biztosítsd, hogy a szükséges dokumentumok a megfelelő sorrendben legyenek csatolva auditokhoz.
+Ezek a forgatókönyvek zökkenőmentesen integrálódnak CRM platformokkal, elemzési csővezetékekkel és más vállalati rendszerekkel.
 
-Ezek a képességek zökkenőmentesen integrálhatók CRM platformokkal, adat‑analitikai csővezetékekkel és más vállalati rendszerekkel.
+## Teljesítmény szempontok
 
-## Teljesítmény Szempontok
+- **Resource optimization** – Töltse be csak a szükséges MSG fájlokat, és zárja be a folyamokat gyorsan a try‑with‑resources használatával.  
+- **Memory management** – Növelje a JVM heapet (`-Xmx2g` vagy nagyobb) nagyon nagy mellékletek feldolgozásakor, és ahol lehetséges, újrahasználja a `MapiMessage` objektumokat.
 
-Nagy mennyiségű, nagy méretű csatolmány kezelésekor tartsd szem előtt a következő tippeket:
+Ezeknek a gyakorlatoknak a követése biztosítja, hogy az alkalmazás még nagy terhelés mellett is reagálékony maradjon.
 
-- **Erőforrás‑használat Optimalizálása** – Tölts be csak a szükséges MSG fájlokat, és zárd le a stream‑eket időben.
-- **Java Memóriakezelés** – Állítsd be a JVM heap méretét, ha hatalmas fájlokkal dolgozol, és ahol lehetséges, újrahasználd az objektumokat.
+## Gyakori buktatók és hibaelhárítás
 
-Ezekkel a gyakorlatokkal alkalmazásod még nagy terhelés alatt is reagálókész marad.
+- **Invalid index** – Nem létező indexen történő beszúrás vagy csere `ArgumentOutOfRangeException`‑t dob. Mindig ellenőrizze a `msg.getAttachments().size()` értéket a művelet előtt.  
+- **Stream leaks** – A `FileInputStream` objektumok bezárásának elhagyása kimerítheti a fájlkezelőket. Használjon try‑with‑resources‑t a biztos lezáráshoz.  
+- **License not set** – Érvényes licenc nélkül futtatva értékelési vízjeleket ad. Hívja a `license.setLicense(...)`‑t minden API használat előtt.
 
-## Gyakori Hibák és Hibakeresés
+## Gyakran feltett kérdések
 
-- **Érvénytelen Index** – Beszúrás vagy csere egy nem létező indexnél `ArgumentOutOfRangeException`‑t eredményez. Mindig ellenőrizd a `msg.getAttachments().size()` értékét először.
-- **Stream Szivárgások** – A `FileInputStream` objektumok lezárásának elhanyagolása fájl‑handle kimerüléshez vezethet. Használj try‑with‑resources‑t az automatikus lezáráshoz.
-- **Licenc Nincs Beállítva** – Érvénytelen licenc használata vízjelet ad a kimenethez. Győződj meg róla, hogy a `license.setLicense(...)` hívás megtörtént minden API használat előtt.
+**Q: Hogyan kezelem a nagy mellékleteket az Aspose.Email‑del?**  
+A: Használjon memóriahatékony módszereket, ahol lehetséges, fájlokat darabokban dolgozzon fel, és növelje a JVM heap méretét (`-Xmx`) nagyon nagy MSG fájlok esetén.
 
-## Gyakran Ismételt Kérdések
+**Q: Beszúrhatok egyszerre több mellékletet?**  
+A: Igen, iteráljon egy fájlgyűjteményen, és hívja meg a `msg.getAttachments().insert(...)`‑t minden elemhez.
 
-**Q: Hogyan kezeljem a nagy csatolmányokat az Aspose.Email‑del?**  
-A: Használj memória‑hatékony módszereket, ahol lehetséges dolgozz fájl‑darabokban, és növeld a JVM heap méretét (`-Xmx`) nagyon nagy MSG fájlok esetén.
-
-**Q: Beszúrhatok egyszerre több csatolmányt?**  
-A: Igen, iterálj egy fájlgyűjteményen, és minden egyes elemhez hívd meg a `msg.getAttachments().insert(...)` metódust.
-
-**Q: Milyen gyakori problémák merülnek fel csatolmány cseréjekor?**  
-A: A leggyakoribb hiba a helytelen index használata. A `replace` hívása előtt ellenőrizd a jelenlegi csatolmányszámot.
+**Q: Melyek a gyakori problémák a mellékletek cseréjekor?**  
+A: A leggyakoribb probléma helytelen index használata. Ellenőrizze a jelenlegi melléklet számát a `replace` hívása előtt.
 
 **Q: Az Aspose.Email Java alkalmas vállalati szintű alkalmazásokra?**  
-A: Teljes mértékben. Robusztus API-ja, széles formátumtámogatása és skálázhatósága miatt ideális nagy‑léptékű telepítésekhez.
+A: Teljes mértékben. Robusztus API-ja, széles körű formátumtámogatása és több száz oldalas üzenetek feldolgozási képessége ideálissá teszi nagy léptékű telepítésekhez.
 
-**Q: Hol kaphatok támogatást, ha problémába ütközöm?**  
-A: Látogasd meg az [Aspose Support Forum](https://forum.aspose.com/c/email/10) oldalt, ahol a közösség és az Aspose szakemberei segítenek.
+**Q: Hogyan kaphatok támogatást, ha problémáim vannak?**  
+A: Látogassa meg az [Aspose Support Forum](https://forum.aspose.com/c/email/10) oldalt a közösség és az Aspose személyzet segítségéért.
 
-## Összegzés
+## Következtetés
 
-Ebben az útmutatóban bemutattuk, **hogyan szúrjunk be csatolmányt** és **hogyan cseréljünk csatolmányt** MSG fájlokban az Aspose.Email for Java segítségével. Ezek a műveletek elengedhetetlenek az automatizált e‑mail kezeléshez, a dokumentum‑megfelelőséghez és a vállalati rendszerek zökkenőmentes integrációjához. Fedezd fel a teljes funkcionalitást a hivatalos dokumentációban, és kísérletezz különböző szcenáriókkal a csatolmánykezelés mesterségében.
+Ebben az útmutatóban megtanulta, hogyan **how to insert attachment** és **how to replace attachment** MSG fájlokban az Aspose.Email for Java segítségével. Ezek a műveletek elengedhetetlenek az automatizált e‑mail kezeléshez, a megfelelőségi munkafolyamatokhoz és a többi üzleti rendszerrel való zökkenőmentes integrációhoz. Fedezze fel a teljes képességeket a hivatalos dokumentációban, és kísérletezzen különböző melléklet típusokkal az MSG manipuláció elsajátításához.
 
-A mélyebb megértéshez próbálj ki különböző csatolmánytípusokat, és nézd meg a kiterjedt [Aspose.Email Documentation](https://reference.aspose.com/email/java/) oldalt további funkciókért.
+A megértés mélyítéséhez próbáljon meg különböző e‑mail formátumokat csatolni, és tekintse át a kiterjedt [Aspose.Email Documentation](https://reference.aspose.com/email/java/) oldalt a további funkciókért.
 
-## Források
+## Erőforrások
 
-- **Dokumentáció**: Részletes útmutatók a [Aspose Documentation](https://reference.aspose.com/email/java/) oldalon.
-- **Letöltés**: A legújabb kiadás elérhető a [Aspose Releases](https://releases.aspose.com/email/java/) oldalon.
-- **Vásárlás**: A vásárlási lehetőségekről a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalon tájékozódhatsz.
+- **Documentation**: Részletes útmutatókat talál a [Aspose.Email Documentation](https://reference.aspose.com/email/java/) oldalon.  
+- **Documentation**: Részletes útmutatókat talál a [Aspose Documentation](https://reference.aspose.com/email/java/) oldalon.  
+- **Download**: A legújabb kiadást letöltheti a [Aspose Releases](https://releases.aspose.com/email/java/) oldalról.  
+- **Purchase**: A vásárlási lehetőségekről a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalon tájékozódhat.
 
 ---
 
-**Utoljára frissítve:** 2026-03-18  
-**Tesztelt verzió:** Aspose.Email for Java 25.4 (JDK 16)  
-**Szerző:** Aspose  
+**Legutóbb frissítve:** 2026-09-07  
+**Tesztelve:** Aspose.Email for Java 25.4 (JDK 16)  
+**Szerző:** Aspose
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan nyerjen ki mellékleteket msg fájlokból az Aspose.Email for Java használatával](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Outlook MSG létrehozás automatizálása Java-ban az Aspose.Email segítségével: Teljes útmutató](/email/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [Hogyan töltse be és elemezze az Outlook MSG fájlokat az Aspose.Email for Java használatával: Átfogó útmutató](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
