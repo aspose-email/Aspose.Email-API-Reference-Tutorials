@@ -1,57 +1,86 @@
 ---
-date: '2026-03-18'
-description: Pelajari cara menambahkan dependensi Aspose.Email Maven dan mengambil
-  deskripsi konten lampiran email menggunakan Java.
+date: '2026-09-07'
+description: Pelajari cara menambahkan aspose email maven ke proyek Anda dan mengambil
+  header deskripsi konten dari lampiran email di Java. Panduan langkah demi langkah
+  untuk menyiapkan Maven, memuat pesan, dan mengekstrak metadata.
 keywords:
-- retrieve email attachment content descriptions
-- Aspose.Email for Java attachments handling
-- Java email processing with Aspose
-title: Cara Menambahkan Dependensi Maven Aspose.Email dan Mengambil Deskripsi Konten
-  Lampiran Email (Java)
+- add aspose email maven
+- read content description header
+- extract attachment metadata
+- aspose email java tutorial
+lastmod: '2026-09-07'
+og_description: Pelajari cara menambahkan aspose email maven ke proyek Anda dan mengambil
+  header deskripsi konten dari lampiran email di Java. Panduan langkah demi langkah
+  untuk menyiapkan Maven, memuat pesan, dan mengekstrak metadata.
+og_image_alt: 'Developer guide: add aspose email maven and read attachment description
+  in Java'
+og_title: Cara menambahkan aspose email maven dan mendapatkan deskripsi di Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to add aspose email maven to your project and retrieve the
+    content description header from email attachments in Java. Step‑by‑step Maven
+    setup, loading messages, and extracting metadata.
+  headline: How to add aspose email maven and get description in Java
+  type: TechArticle
+- questions:
+  - answer: Yes – simply replace `"Content‑Description"` with the desired header name
+      in the `get_Item` call.
+    question: Can I retrieve other attachment headers using this method?
+  - answer: Always check `msg.getAttachments().size()` before accessing an item to
+      avoid `IndexOutOfBoundsException`.
+    question: What if my email doesn't have any attachments?
+  - answer: Wrap the load call in a try‑catch block and handle `FileNotFoundException`,
+      `MessageLoadException`, or other I/O errors gracefully.
+    question: How do I handle exceptions when loading emails?
+  - answer: It supports over 30 input and output formats—including EML, MSG, MHTML,
+      and RFC‑822—making it suitable for most enterprise scenarios.
+    question: Does Aspose.Email for Java support all email formats?
+  - answer: Visit the Aspose forums, consult the online documentation, or reach out
+      to their support team for assistance.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+tags:
+- add aspose email maven
+- email attachment handling
+- java email processing
+- aspose email java
+- maven dependency
+title: Cara menambahkan aspose email maven dan mendapatkan deskripsi di Java
 url: /id/java/attachments-handling/retrieve-email-attachment-content-descriptions-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Cara Menambahkan Dependensi Aspose.Email Maven dan Mengambil Deskripsi Konten Lampiran Email (Java)
+
+# Cara menambahkan aspose email maven dan mendapatkan deskripsi dalam Java
 
 ## Pendahuluan
-Dalam tutorial ini, **Anda akan belajar cara menambahkan dependensi Aspose.Email Maven** dan **mengotomatiskan penanganan lampiran email** untuk membaca **header deskripsi konten** dari lampiran menggunakan Java. Mengelola metadata lampiran adalah kebutuhan umum untuk aplikasi bisnis modern—baik Anda perlu mengarahkan dokumen, menegakkan kepatuhan, atau sekadar mengatur file masuk. Pada akhir panduan ini Anda akan memiliki solusi langkah‑demi‑langkah yang dapat langsung dipasang ke proyek Java mana pun.
-
-**Apa yang Akan Anda Pelajari**
-- Cara menyertakan **aspose email maven dependency** di file `pom.xml` Maven Anda  
-- Memuat pesan email dan mengakses lampirannya  
-- Menggunakan panggilan `get_Item` untuk **mengambil header deskripsi konten**  
-- Skenario dunia nyata di mana teknik ini memperlancar pemrosesan email  
+In tutorial ini Anda akan belajar cara menambahkan **aspose email maven** ke proyek Java dan secara otomatis membaca header **Content‑Description** dari lampiran email. Mengelola metadata lampiran penting untuk mengarahkan dokumen, memenuhi persyaratan kepatuhan, dan menjaga kotak masuk tetap teratur. Pada akhir panduan, Anda akan memiliki potongan kode siap‑jalankan yang dapat Anda sisipkan ke aplikasi Java berbasis Maven mana pun.
 
 ## Jawaban Cepat
-- **Apa yang dilakukan metode utama?** Metode ini memuat sebuah email dan membaca header `Content-Description` dari lampiran pertama.  
-- **Versi pustaka apa yang diperlukan?** Aspose.Email for Java 25.4 (klasifier JDK 16).  
-- **Bisakah saya membaca header lain?** Ya, ganti `"Content-Description"` dengan nama header yang valid.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
-- **Apakah pendekatan ini thread‑safe?** Ya, selama setiap thread menggunakan instance `MailMessage` masing‑masing.  
+- **Apa yang dilakukan metode utama?** Ia memuat file email dan mengembalikan header `Content‑Description` dari lampiran pertama.  
+- **Versi perpustakaan apa yang diperlukan?** Aspose.Email for Java 25.4 (JDK 16 classifier).  
+- **Bisakah saya membaca header lain?** Ya – ganti `"Content‑Description"` dengan nama header yang valid.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Uji coba gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Apakah pendekatan ini thread‑safe?** Ya, selama setiap thread menggunakan instance `MailMessage` masing‑masing.
 
-## Apa Itu Aspose.Email Maven Dependency?
-**aspose email maven dependency** adalah paket yang kompatibel dengan Maven yang menyatukan semua binary yang Anda perlukan untuk bekerja dengan format email (EML, MSG, MHTML, dll.) di Java. Menambahkannya ke `pom.xml` Anda akan secara otomatis mengunduh pustaka beserta dependensi transitive dan memastikan Anda menggunakan versi yang tepat.
+## Apa itu dependensi Aspose.Email Maven?
+Dependensi Maven `Aspose.Email` adalah paket yang kompatibel dengan Maven yang menggabungkan perpustakaan Aspose.Email untuk Java bersama semua dependensi transitif yang diperlukan. Menambahkannya ke `pom.xml` Anda memastikan binari yang tepat diunduh secara otomatis dan menjaga konsistensi versi di seluruh build. Ini mendukung format EML, MSG, dan MHTML serta menyediakan utilitas untuk mengonversi pesan, mengekstrak sumber daya tersemat, dan menangani bagian MIME.
 
-## Mengapa Mengotomatiskan Penanganan Lampiran Email?
-Mengotomatiskan penanganan lampiran memungkinkan Anda:
-- **Mengekstrak metadata** seperti deskripsi konten, nama file, atau header khusus tanpa inspeksi manual.  
-- **Mengarahkan pesan** berdasarkan tipe atau deskripsi lampiran, meningkatkan efisiensi alur kerja.  
-- **Mempertahankan kepatuhan** dengan mencatat detail lampiran untuk jejak audit.  
+## Mengapa mengotomatisasi penanganan lampiran email?
+Mengotomatisasi penanganan lampiran memungkinkan Anda mengekstrak metadata seperti deskripsi konten, nama file, atau X‑header khusus tanpa inspeksi manual. Hal ini mempercepat otomasi alur kerja, meningkatkan auditabilitas, dan mengurangi risiko kesalahan manusia saat memproses volume besar surat masuk.
 
 ## Prasyarat
-- **Java Development Kit:** JDK 16 atau yang lebih baru sudah terpasang.  
-- **Maven:** Familiaritas dengan manajemen dependensi Maven.  
-- **Aspose.Email for Java:** Disarankan versi 25.4 (atau lebih baru).  
-- **Pengetahuan dasar Java:** Memahami objek, penanganan pengecualian, dan koleksi.  
+- **Java Development Kit:** JDK 16 atau lebih baru.  
+- **Maven:** Familiaritas dasar dengan pengeditan `pom.xml`.  
+- **Aspose.Email for Java:** Versi 25.4 (atau lebih baru) disarankan.  
+- **Java fundamentals:** Objek, penanganan pengecualian, dan koleksi.
 
-## Menyiapkan Aspose.Email for Java
-Tambahkan **aspose email maven dependency** ke `pom.xml` proyek Anda:
+## Menyiapkan Aspose.Email untuk Java
+Tambahkan dependensi **aspose email maven** ke `pom.xml` Anda:
 
 ```xml
 <dependency>
@@ -62,18 +91,18 @@ Tambahkan **aspose email maven dependency** ke `pom.xml` proyek Anda:
 </dependency>
 ```
 
-### Langkah Akuisisi Lisensi
-- **Percobaan Gratis:** Evaluasi pustaka tanpa biaya.  
-- **Lisensi Sementara:** Minta kunci sementara untuk pengujian yang lebih lama.  
-- **Pembelian:** Beli lisensi penuh untuk penerapan produksi.
+### Langkah-langkah memperoleh lisensi
+- **Free trial:** Evaluasi perpustakaan tanpa biaya.  
+- **Temporary license:** Minta kunci sementara untuk pengujian yang lebih lama.  
+- **Purchase:** Beli lisensi penuh untuk penerapan produksi.
 
-Setelah menambahkan dependensi dan memperoleh lisensi (jika diperlukan), impor kelas yang dibutuhkan di file sumber Java Anda.
+Setelah dependensi ditambahkan dan lisensi (jika diperlukan) diterapkan, impor kelas yang diperlukan dalam file sumber Anda.
 
-## Cara Mengambil Header Deskripsi Konten
-Berikut alur kerja lengkap, dibagi menjadi langkah‑langkah jelas.
+## Cara mengambil header deskripsi konten?
+MailMessage adalah kelas yang merepresentasikan pesan email dalam memori. Muat email ke dalam objek `MailMessage` dan akses koleksi `Attachments`‑nya untuk menemukan lampiran yang diinginkan. Attachment adalah kelas yang mewakili file yang dilampirkan pada email. Setelah Anda memiliki instance `Attachment`, baca `Headers`‑nya dan ambil `Content‑Description` menggunakan `get_Item`. Ini mengembalikan string deskripsi.
 
-### Langkah 1: Memuat Pesan Email dari File
-Pertama, arahkan Aspose.Email ke folder yang berisi file `.eml` Anda dan muat pesannya:
+### Langkah 1: muat pesan email dari file
+Kelas `MailMessage` merepresentasikan pesan email dalam memori.
 
 ```java
 // Define the directory containing email files.
@@ -83,66 +112,65 @@ String dataDir = YOUR_DOCUMENT_DIRECTORY + "email/";
 MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml");
 ```
 
-### Langkah 2: Mengambil Header Deskripsi Konten
-Setelah pesan berada di memori, akses lampirannya dan ambil **header deskripsi konten**:
+### Langkah 2: ambil header deskripsi konten
+Objek `Attachment` menampilkan koleksi `Headers`. Metode `get_Item` mengambil nilai header tertentu berdasarkan nama.
 
 ```java
 // Get the first attachment in the email.
 String description = msg.getAttachments().get_Item(0).getHeaders().get_Item("Content-Description");
 ```
 
-**Penjelasan:** Panggilan `getHeaders().get_Item("Content-Description")` membaca nilai `Content-Description` dari koleksi header lampiran pertama. Anda dapat mengganti `"Content-Description"` dengan nama header lain (misalnya `"Content-Type"` atau header X‑kustom) untuk mengambil metadata yang berbeda.
+**Penjelasan:** Pemanggilan `getHeaders().get_Item("Content‑Description")` membaca nilai `Content‑Description` dari koleksi header lampiran pertama. Ganti `"Content‑Description"` dengan header lain (mis., `"Content‑Type"` atau `X‑My‑Header` khusus) untuk mengambil metadata yang berbeda.
 
-### Langkah 3: Menangani Kendala Umum
-- **Lampiran Tidak Ada:** Selalu pastikan `msg.getAttachments().size()` > 0 sebelum mengakses item.  
-- **Path Tidak Valid:** Pastikan `dataDir` mengarah ke direktori yang dapat dibaca; gunakan path absolut bila diperlukan.  
-- **Pengecualian:** Bungkus proses pemuatan dan pengambilan header dalam blok try‑catch untuk mengelola `FileNotFoundException`, `MessageLoadException`, atau `IndexOutOfBoundsException`.
+## Aplikasi praktis
+1. **Automated ticketing:** Mengambil deskripsi untuk mengisi otomatis bidang di sistem help‑desk.  
+2. **Document management:** Gunakan deskripsi sebagai tag saat menyimpan lampiran di CMS.  
+3. **Compliance reporting:** Catat deskripsi konten untuk audit regulasi dan pertahankan jejak audit yang dapat dicari.
 
-## Aplikasi Praktis
-1. **Ticketing Otomatis:** Ambil deskripsi untuk mengisi otomatis bidang tiket di sistem help‑desk.  
-2. **Manajemen Dokumen:** Gunakan deskripsi sebagai tag saat menyimpan lampiran di CMS.  
-3. **Pelaporan Kepatuhan:** Catat deskripsi konten untuk audit regulasi.  
-
-## Pertimbangan Kinerja
-- **Pemrosesan Batch:** Muat beberapa pesan sekaligus dalam satu batch untuk mengurangi overhead I/O.  
-- **Manajemen Memori:** Tutup stream segera dan pertimbangkan streaming lampiran besar alih‑alih memuat seluruhnya ke memori.  
-- **Keamanan Thread:** Buat instance `MailMessage` terpisah per thread untuk menghindari masalah status bersama.  
+## Pertimbangan kinerja
+- **Batch loading:** Proses beberapa pesan dalam satu batch untuk mengurangi beban I/O.  
+- **Memory management:** Tutup stream segera dan pertimbangkan streaming lampiran besar alih-alih memuatnya sepenuhnya ke memori.  
+- **Thread safety:** Buat instance `MailMessage` terpisah per thread; perpustakaan tidak berbagi state yang dapat diubah antar instance.
 
 ## Kesimpulan
-Anda kini mengetahui **cara menambahkan dependensi Aspose.Email Maven** dan **mengambil header deskripsi konten** dari lampiran email menggunakan Java. Kemampuan ini memungkinkan Anda membangun pipeline pemrosesan email yang lebih cerdas dan otomatis, yang dapat mengkategorikan, mengarahkan, dan mengaudit pesan dengan upaya minimal.
+Anda kini tahu cara menambahkan **aspose email maven** ke proyek Java dan mengambil header `Content‑Description` dari lampiran email. Kemampuan ini memungkinkan Anda membangun pipeline email otomatis yang lebih cerdas yang dapat mengkategorikan, mengarahkan, dan mengaudit pesan dengan usaha minimal. Jelajahi fitur Aspose.Email tambahan seperti mengonversi pesan ke PDF, mengekstrak gambar tersemat, atau mengirim balasan otomatis untuk memperluas solusi Anda.
 
-Jelajahi lebih banyak fitur Aspose.Email—seperti mengonversi pesan ke PDF, mengekstrak gambar tersemat, atau mengirim balasan otomatis—untuk memperluas solusi penanganan email Anda.
+## Pertanyaan yang sering diajukan
 
-## Pertanyaan yang Sering Diajukan
+**Q: Bisakah saya mengambil header lampiran lain menggunakan metode ini?**  
+A: Ya – cukup ganti `"Content‑Description"` dengan nama header yang diinginkan dalam pemanggilan `get_Item`.
 
-**T: Bisakah saya mengambil header lampiran lain dengan metode ini?**  
-J: Ya, cukup ganti `"Content-Description"` dengan nama header yang diinginkan pada panggilan `get_Item`.
+**Q: Bagaimana jika email saya tidak memiliki lampiran?**  
+A: Selalu periksa `msg.getAttachments().size()` sebelum mengakses item untuk menghindari `IndexOutOfBoundsException`.
 
-**T: Bagaimana jika email saya tidak memiliki lampiran?**  
-J: Selalu periksa `msg.getAttachments().size()` sebelum mengakses item untuk menghindari `IndexOutOfBoundsException`.
+**Q: Bagaimana cara menangani pengecualian saat memuat email?**  
+A: Bungkus pemanggilan load dalam blok try‑catch dan tangani `FileNotFoundException`, `MessageLoadException`, atau kesalahan I/O lainnya secara elegan.
 
-**T: Bagaimana cara menangani pengecualian saat memuat email?**  
-J: Bungkus pemanggilan muat dalam blok try‑catch dan tangani `FileNotFoundException`, `MessageLoadException`, atau kesalahan I/O lainnya secara elegan.
+**Q: Apakah Aspose.Email untuk Java mendukung semua format email?**  
+A: Ia mendukung lebih dari 30 format input dan output—termasuk EML, MSG, MHTML, dan RFC‑822—menjadikannya cocok untuk sebagian besar skenario perusahaan.
 
-**T: Apakah Aspose.Email for Java mendukung semua format email?**  
-J: Ia mendukung beragam format (EML, MSG, MHTML, dll.). Lihat dokumentasi produk terbaru untuk daftar lengkapnya.
-
-**T: Di mana saya dapat mendapatkan bantuan jika mengalami masalah?**  
-J: Kunjungi forum Aspose, konsultasikan dokumentasi online, atau hubungi tim dukungan mereka.
+**Q: Di mana saya dapat mendapatkan bantuan jika mengalami masalah?**  
+A: Kunjungi forum Aspose, konsultasikan dokumentasi online, atau hubungi tim dukungan mereka untuk bantuan.
 
 ## Sumber Daya
-- **Dokumentasi:** [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)  
-- **Unduhan:** [Releases for Aspose.Email for Java](https://releases.aspose.com/email/java/)  
-- **Pembelian:** [Buy a License](https://purchase.aspose.com/buy)  
-- **Percobaan Gratis:** [Evaluate with a Free Trial](https://releases.aspose.com/email/java/)  
-- **Lisensi Sementara:** [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
-- **Dukungan:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
+- **Documentation:** [Referensi Aspose.Email Java](https://reference.aspose.com/email/java/)  
+- **Download:** [Rilis untuk Aspose.Email untuk Java](https://releases.aspose.com/email/java/)  
+- **Purchase:** [Beli Lisensi](https://purchase.aspose.com/buy)  
+- **Free trial:** [Evaluasi dengan Uji Coba Gratis](https://releases.aspose.com/email/java/)  
+- **Temporary license:** [Minta Lisensi Sementara](https://purchase.aspose.com/temporary-license/)  
+- **Support:** [Forum Aspose Email](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Terakhir Diperbarui:** 2026-03-18  
+**Terakhir Diperbarui:** 2026-09-07  
 **Diuji Dengan:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
-**Penulis:** Aspose  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [Aspose Email Java Muat Periksa Lampiran](/email/java/attachments-handling/aspose-email-java-load-inspect-attachments/)
+- [Cara Menambahkan Header – Memperkaya Metadata Email dengan Aspose.Email](/email/java/customizing-email-headers/enriching-email-metadata-through-headers/)
+- [Maven Aspose Email: Pertahankan Lampiran TNEF dalam EML (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,77 +1,86 @@
 ---
-date: '2026-03-18'
-description: تعلم كيفية إضافة تبعية Aspose.Email لمشروع Maven واسترجاع أوصاف محتوى
-  مرفقات البريد الإلكتروني باستخدام Java.
+date: '2026-09-07'
+description: تعلم كيفية إضافة aspose email maven إلى مشروعك واسترجاع رأس وصف المحتوى
+  من مرفقات البريد الإلكتروني في Java. إعداد Maven خطوة بخطوة، تحميل الرسائل، واستخراج
+  metadata.
 keywords:
-- retrieve email attachment content descriptions
-- Aspose.Email for Java attachments handling
-- Java email processing with Aspose
-title: كيفية إضافة تبعية Aspose.Email لمشروع Maven واسترجاع أوصاف محتوى مرفقات البريد
-  الإلكتروني (Java)
+- add aspose email maven
+- read content description header
+- extract attachment metadata
+- aspose email java tutorial
+lastmod: '2026-09-07'
+og_description: تعلم كيفية إضافة aspose email maven إلى مشروعك واسترجاع رأس وصف المحتوى
+  من مرفقات البريد الإلكتروني في Java. إعداد Maven خطوة بخطوة، تحميل الرسائل، واستخراج
+  metadata.
+og_image_alt: 'Developer guide: add aspose email maven and read attachment description
+  in Java'
+og_title: كيفية إضافة aspose email maven والحصول على الوصف في Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-07'
+  description: Learn how to add aspose email maven to your project and retrieve the
+    content description header from email attachments in Java. Step‑by‑step Maven
+    setup, loading messages, and extracting metadata.
+  headline: How to add aspose email maven and get description in Java
+  type: TechArticle
+- questions:
+  - answer: Yes – simply replace `"Content‑Description"` with the desired header name
+      in the `get_Item` call.
+    question: Can I retrieve other attachment headers using this method?
+  - answer: Always check `msg.getAttachments().size()` before accessing an item to
+      avoid `IndexOutOfBoundsException`.
+    question: What if my email doesn't have any attachments?
+  - answer: Wrap the load call in a try‑catch block and handle `FileNotFoundException`,
+      `MessageLoadException`, or other I/O errors gracefully.
+    question: How do I handle exceptions when loading emails?
+  - answer: It supports over 30 input and output formats—including EML, MSG, MHTML,
+      and RFC‑822—making it suitable for most enterprise scenarios.
+    question: Does Aspose.Email for Java support all email formats?
+  - answer: Visit the Aspose forums, consult the online documentation, or reach out
+      to their support team for assistance.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+tags:
+- add aspose email maven
+- email attachment handling
+- java email processing
+- aspose email java
+- maven dependency
+title: كيفية إضافة aspose email maven والحصول على الوصف في Java
 url: /ar/java/attachments-handling/retrieve-email-attachment-content-descriptions-aspose-email-java/
 weight: 1
 ---
 
-)". Keep same heading level.
-
-Proceed.
-
-We'll translate each paragraph.
-
-Make sure to keep **bold** formatting.
-
-Translate bullet lists.
-
-Also code block placeholders remain.
-
-Let's craft translation.
-
-Be careful with list items that contain code snippets like `get_Item`. Keep as is.
-
-Also keep inline code formatting.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# كيفية إضافة تبعية Aspose.Email Maven واسترجاع أوصاف محتوى مرفقات البريد الإلكتروني (Java)
 
-## المقدمة
-في هذا الدرس، **ستتعلم كيفية إضافة تبعية Aspose.Email Maven** و**أتمتة معالجة مرفقات البريد الإلكتروني** لقراءة **رأس وصف المحتوى** من المرفقات باستخدام Java. إدارة بيانات تعريف المرفقات هي حاجة شائعة لتطبيقات الأعمال الحديثة—سواء كنت تحتاج إلى توجيه المستندات، أو فرض الامتثال، أو مجرد تنظيم الملفات الواردة. بنهاية هذا الدليل ستحصل على حل واضح خطوة بخطوة يمكنك إدراجه في أي مشروع Java.
+# كيفية إضافة aspose email maven والحصول على الوصف في Java
 
-**ما ستتعلمه**
-- كيفية تضمين **aspose email maven dependency** في ملف Maven pom.xml  
-- تحميل رسالة بريد إلكتروني والوصول إلى مرفقاتها  
-- استخدام استدعاء `get_Item` للحصول على **رأس وصف المحتوى**  
-- سيناريوهات واقعية حيث يبسط هذا الأسلوب معالجة البريد الإلكتروني  
+## مقدمة
+في هذا الدرس ستتعلم كيفية إضافة **aspose email maven** إلى مشروع Java وقراءة رأس **Content‑Description** تلقائيًا من مرفقات البريد الإلكتروني. إدارة بيانات التعريف للمرفقات أمر أساسي لتوجيه المستندات، وتلبية متطلبات الامتثال، والحفاظ على تنظيم صناديق البريد. في نهاية الدليل ستحصل على مقتطف جاهز للتنفيذ يمكنك إدراجه في أي تطبيق Java يعتمد على Maven.
 
 ## إجابات سريعة
-- **ماذا يفعل الأسلوب الأساسي؟** يقوم بتحميل بريد إلكتروني وقراءة رأس `Content-Description` للمرفق الأول.  
-- **ما نسخة المكتبة المطلوبة؟** Aspose.Email for Java 25.4 (مصنف JDK 16).  
-- **هل يمكن قراءة رؤوس أخرى؟** نعم، استبدل `"Content-Description"` بأي اسم رأس صالح.  
-- **هل أحتاج إلى ترخيص للتطوير؟** نسخة تجريبية مجانية تكفي للاختبار؛ الترخيص التجاري مطلوب للإنتاج.  
-- **هل هذا النهج آمن للـ thread؟** نعم، طالما أن كل خيط يستخدم نسخة خاصة به من `MailMessage`.  
+- **ماذا يفعل الأسلوب الأساسي؟** يقوم بتحميل ملف بريد إلكتروني ويعيد رأس `Content‑Description` للمرفق الأول.  
+- **ما هو إصدار المكتبة المطلوب؟** Aspose.Email for Java 25.4 (JDK 16 classifier).  
+- **هل يمكنني قراءة رؤوس أخرى؟** نعم – استبدل `"Content‑Description"` بأي اسم رأس صالح.  
+- **هل أحتاج إلى ترخيص للتطوير؟** التجربة المجانية تعمل للاختبار؛ الترخيص التجاري مطلوب للإنتاج.  
+- **هل هذه الطريقة آمنة للخطوط المتعددة؟** نعم، طالما أن كل خيط يستخدم نسخة `MailMessage` الخاصة به.
 
 ## ما هي تبعية Aspose.Email Maven؟
-**aspose email maven dependency** هي حزمة متوافقة مع Maven تجمع جميع الملفات الثنائية التي تحتاجها للعمل مع صيغ البريد الإلكتروني (EML، MSG، MHTML، إلخ) في Java. إضافة هذه الحزمة إلى `pom.xml` تجلب المكتبة تلقائيًا، وتتعامل مع التبعيات المتداخلة وتضمن أنك تستخدم النسخة المحددة بالضبط.
+تبعيات Maven `Aspose.Email` هي حزمة متوافقة مع Maven تجمع مكتبة Aspose.Email for Java مع جميع المكتبات المتداخلة المطلوبة. إضافة ذلك إلى `pom.xml` يضمن تنزيل الثنائيات الصحيحة تلقائيًا ويحافظ على توافق الإصدارات عبر عمليات البناء. تدعم صيغ EML و MSG و MHTML وتوفر أدوات لتحويل الرسائل، واستخراج الموارد المدمجة، ومعالجة أجزاء MIME.
 
-## لماذا نُؤتمت معالجة مرفقات البريد الإلكتروني؟
-أتمتة معالجة المرفقات تمكنك من:
-- **استخراج بيانات التعريف** مثل أوصاف المحتوى، أسماء الملفات، أو رؤوس مخصصة دون فحص يدوي.  
-- **توجيه الرسائل** بناءً على نوع المرفق أو وصفه، مما يحسن كفاءة سير العمل.  
-- **الحفاظ على الامتثال** عبر تسجيل تفاصيل المرفقات لسجلات التدقيق.  
+## لماذا أتمتة معالجة مرفقات البريد الإلكتروني؟
+تتيح أتمتة معالجة المرفقات استخراج بيانات التعريف مثل أوصاف المحتوى، أسماء الملفات، أو رؤوس X مخصصة دون فحص يدوي. هذا يسرّع أتمتة سير العمل، يحسن القدرة على التدقيق، ويقلل من خطر الأخطاء البشرية عند معالجة كميات كبيرة من البريد الوارد.
 
 ## المتطلبات المسبقة
-- **مجموعة تطوير جافا:** JDK 16 أو أحدث مثبتة.  
-- **Maven:** إلمام بإدارة تبعيات Maven.  
-- **Aspose.Email for Java:** يُفضَّل الإصدار 25.4 (أو أحدث).  
-- **معرفة أساسية بجافا:** فهم الكائنات، معالجة الاستثناءات، والمجموعات.  
+- **Java Development Kit:** JDK 16 أو أحدث.  
+- **Maven:** إلمام أساسي بتحرير `pom.xml`.  
+- **Aspose.Email for Java:** يُنصح بالإصدار 25.4 (أو أحدث).  
+- **Java fundamentals:** الكائنات، معالجة الاستثناءات، والمجموعات.
 
 ## إعداد Aspose.Email for Java
-أضف **aspose email maven dependency** إلى ملف `pom.xml` الخاص بمشروعك:
+أضف تبعية **aspose email maven** إلى `pom.xml` الخاص بك:
 
 ```xml
 <dependency>
@@ -83,17 +92,17 @@ Proceed.
 ```
 
 ### خطوات الحصول على الترخيص
-- **نسخة تجريبية مجانية:** جرب المكتبة دون تكلفة.  
-- **ترخيص مؤقت:** اطلب مفتاحًا مؤقتًا للاختبار الموسع.  
-- **شراء:** احصل على ترخيص كامل للنشر في بيئات الإنتاج.
+- **Free trial:** تقييم المكتبة بدون تكلفة.  
+- **Temporary license:** طلب مفتاح مؤقت للاختبار الموسع.  
+- **Purchase:** شراء ترخيص كامل للنشر في بيئة الإنتاج.
 
-بعد إضافة التبعية والحصول على الترخيص (إن لزم)، استورد الفئات المطلوبة في ملفات مصدر Java الخاصة بك.
+بعد إضافة التبعية وتطبيق الترخيص (إذا لزم الأمر)، استورد الفئات المطلوبة في ملف المصدر الخاص بك.
 
-## كيفية استرجاع رأس وصف المحتوى
-فيما يلي سير العمل الكامل، مقسم إلى خطوات واضحة.
+## كيفية استرجاع رأس وصف المحتوى؟
+MailMessage هي فئة تمثل رسالة بريد إلكتروني في الذاكرة. قم بتحميل البريد الإلكتروني إلى كائن `MailMessage` وادخل إلى مجموعة `Attachments` لتحديد المرفق المطلوب. Attachment هي فئة تمثل ملفًا مرفقًا برسالة بريد إلكتروني. بمجرد حصولك على مثيل `Attachment`، اقرأ `Headers` الخاصة به واسترجع `Content‑Description` باستخدام `get_Item`. هذا يُعيد سلسلة الوصف.
 
 ### الخطوة 1: تحميل رسالة بريد إلكتروني من ملف
-أولاً، حدّد مسار Aspose.Email إلى المجلد الذي يحتوي على ملفات `.eml` وحمّل الرسالة:
+فئة `MailMessage` تمثل رسالة بريد إلكتروني في الذاكرة.
 
 ```java
 // Define the directory containing email files.
@@ -104,65 +113,63 @@ MailMessage msg = MailMessage.load(dataDir + "EmailWithAttachment.eml");
 ```
 
 ### الخطوة 2: الحصول على رأس وصف المحتوى
-الآن بعد أن أصبحت الرسالة في الذاكرة، يمكن الوصول إلى مرفقاتها وجلب **رأس وصف المحتوى**:
+كائنات `Attachment` تعرض مجموعة `Headers`. طريقة `get_Item` تجلب قيمة رأس معينة بالاسم.
 
 ```java
 // Get the first attachment in the email.
 String description = msg.getAttachments().get_Item(0).getHeaders().get_Item("Content-Description");
 ```
 
-**شرح:** استدعاء `getHeaders().get_Item("Content-Description")` يقرأ قيمة `Content-Description` من مجموعة رؤوس المرفق الأول. يمكنك استبدال `"Content-Description"` بأي اسم رأس آخر (مثل `"Content-Type"` أو رأس X‑مخصص) لاسترجاع بيانات تعريف مختلفة.
-
-### الخطوة 3: معالجة المشكلات الشائعة
-- **غياب المرفقات:** تحقق دائمًا أن `msg.getAttachments().size()` > 0 قبل الوصول إلى عنصر.  
-- **مسارات غير صالحة:** تأكد من أن `dataDir` يشير إلى دليل قابل للقراءة؛ استخدم مسارات مطلقة إذا لزم الأمر.  
-- **الاستثناءات:** غلف عملية التحميل واسترجاع الرأس بكتل try‑catch لإدارة `FileNotFoundException`، `MessageLoadException`، أو `IndexOutOfBoundsException`.
+**Explanation:** استدعاء `getHeaders().get_Item("Content‑Description")` يقرأ قيمة `Content‑Description` من مجموعة رؤوس المرفق الأول. استبدل `"Content‑Description"` بأي رأس آخر (مثل `"Content‑Type"` أو رأس مخصص `X‑My‑Header`) لاسترجاع بيانات تعريف مختلفة.
 
 ## تطبيقات عملية
-1. **نظام تذاكر آلي:** استخدم الوصف لتعبئة حقول التذكرة تلقائيًا في أنظمة الدعم.  
-2. **إدارة المستندات:** استخدم الوصف كعلامة عند تخزين المرفقات في نظام إدارة محتوى.  
-3. **تقارير الامتثال:** سجِّل أوصاف المحتوى لتلبية متطلبات التدقيق التنظيمي.  
+1. **Automated ticketing:** سحب الوصف لتعبئة الحقول تلقائيًا في أنظمة مكتب المساعدة.  
+2. **Document management:** استخدام الوصف كعلامة عند تخزين المرفقات في نظام إدارة المحتوى (CMS).  
+3. **Compliance reporting:** تسجيل أوصاف المحتوى لتدقيقات التنظيمية والاحتفاظ بسجل تدقيق قابل للبحث.
 
 ## اعتبارات الأداء
-- **التحميل على دفعات:** حمّل رسائل متعددة في دفعة واحدة لتقليل عبء الإدخال/الإخراج.  
-- **إدارة الذاكرة:** أغلق التدفقات فورًا وفكّر في بث المرفقات الكبيرة بدلاً من تحميلها بالكامل في الذاكرة.  
-- **سلامة الخيوط:** أنشئ نسخًا منفصلة من `MailMessage` لكل خيط لتجنب مشاكل الحالة المشتركة.  
+- **Batch loading:** معالجة رسائل متعددة في دفعة واحدة لتقليل عبء الإدخال/الإخراج.  
+- **Memory management:** إغلاق التدفقات فورًا والنظر في تدفق المرفقات الكبيرة بدلاً من تحميلها بالكامل في الذاكرة.  
+- **Thread safety:** إنشاء نسخ `MailMessage` منفصلة لكل خيط؛ المكتبة لا تشارك حالة قابلة للتغيير بين النسخ.
 
 ## الخلاصة
-أنت الآن تعرف **كيفية إضافة تبعية Aspose.Email Maven** و**استرجاع رأس وصف المحتوى** من مرفقات البريد الإلكتروني باستخدام Java. هذه القدرة تمكنك من بناء خطوط معالجة بريد إلكتروني أذكى، آلية، قادرة على تصنيف، توجيه، وتدقيق الرسائل بأقل جهد.
-
-استكشف المزيد من ميزات Aspose.Email—مثل تحويل الرسائل إلى PDF، استخراج الصور المدمجة، أو إرسال ردود آلية—لتوسيع حلول معالجة البريد الإلكتروني الخاصة بك.
+أنت الآن تعرف كيفية إضافة **aspose email maven** إلى مشروع Java واسترجاع رأس `Content‑Description` من مرفقات البريد الإلكتروني. تتيح لك هذه القدرة بناء خطوط أنابيب بريد إلكتروني أكثر ذكاءً وأتمتة يمكنها تصنيف الرسائل وتوجيهها وتدقيقها بأقل جهد. استكشف ميزات Aspose.Email الإضافية مثل تحويل الرسائل إلى PDF، استخراج الصور المدمجة، أو إرسال ردود آلية لتوسيع حلك.
 
 ## الأسئلة المتكررة
 
-**س: هل يمكنني استرجاع رؤوس مرفقات أخرى باستخدام هذه الطريقة؟**  
-ج: نعم، استبدل ببساطة `"Content-Description"` باسم الرأس المطلوب في استدعاء `get_Item`.
+**Q: هل يمكنني استرجاع رؤوس مرفقات أخرى باستخدام هذه الطريقة؟**  
+A: نعم – ما عليك سوى استبدال `"Content‑Description"` باسم الرأس المطلوب في استدعاء `get_Item`.
 
-**س: ماذا لو لم يحتوي بريدي على مرفقات؟**  
-ج: تحقق دائمًا من `msg.getAttachments().size()` قبل الوصول إلى عنصر لتجنب `IndexOutOfBoundsException`.
+**Q: ماذا لو لم يحتوي بريدي الإلكتروني على أي مرفقات؟**  
+A: تحقق دائمًا من `msg.getAttachments().size()` قبل الوصول إلى عنصر لتجنب `IndexOutOfBoundsException`.
 
-**س: كيف أتعامل مع الاستثناءات عند تحميل الرسائل؟**  
-ج: غلف استدعاء التحميل بكتلة try‑catch وتعامل مع `FileNotFoundException`، `MessageLoadException`، أو أي أخطاء إدخال/إخراج أخرى بشكل ملائم.
+**Q: كيف أتعامل مع الاستثناءات عند تحميل رسائل البريد؟**  
+A: غلف استدعاء التحميل بكتلة try‑catch وتعامل مع `FileNotFoundException`، `MessageLoadException`، أو أي أخطاء إدخال/إخراج أخرى بشكل ملائم.
 
-**س: هل يدعم Aspose.Email for Java جميع صيغ البريد الإلكتروني؟**  
-ج: يدعم مجموعة واسعة من الصيغ (EML، MSG، MHTML، إلخ). راجع أحدث وثائق المنتج للحصول على القائمة الكاملة.
+**Q: هل يدعم Aspose.Email for Java جميع صيغ البريد الإلكتروني؟**  
+A: يدعم أكثر من 30 صيغة إدخال وإخراج — بما في ذلك EML و MSG و MHTML و RFC‑822 — مما يجعله مناسبًا لمعظم سيناريوهات المؤسسات.
 
-**س: أين يمكنني الحصول على المساعدة إذا واجهت مشكلات؟**  
-ج: زر منتديات Aspose، راجع الوثائق على الإنترنت، أو تواصل مع فريق الدعم الخاص بهم.
+**Q: أين يمكنني الحصول على المساعدة إذا واجهت مشاكل؟**  
+A: زر منتديات Aspose، راجع الوثائق عبر الإنترنت، أو تواصل مع فريق الدعم للحصول على المساعدة.
 
 ## الموارد
 - **الوثائق:** [Aspose.Email Java Reference](https://reference.aspose.com/email/java/)  
 - **التنزيل:** [Releases for Aspose.Email for Java](https://releases.aspose.com/email/java/)  
 - **الشراء:** [Buy a License](https://purchase.aspose.com/buy)  
-- **نسخة تجريبية مجانية:** [Evaluate with a Free Trial](https://releases.aspose.com/email/java/)  
+- **التجربة المجانية:** [Evaluate with a Free Trial](https://releases.aspose.com/email/java/)  
 - **ترخيص مؤقت:** [Request a Temporary License](https://purchase.aspose.com/temporary-license/)  
 - **الدعم:** [Aspose Email Forum](https://forum.aspose.com/c/email/10)
 
----
+**آخر تحديث:** 2026-09-07  
+**تم الاختبار مع:** Aspose.Email 25.4 for Java (JDK 16 classifier)  
+**المؤلف:** Aspose
 
-**آخر تحديث:** 2026-03-18  
-**تم الاختبار مع:** Aspose.Email 25.4 for Java (مصنف JDK 16)  
-**المؤلف:** Aspose  
+## دروس ذات صلة
+
+- [تحميل وفحص مرفقات Aspose Email Java](/email/java/attachments-handling/aspose-email-java-load-inspect-attachments/)
+- [كيفية إضافة رأس – إثراء بيانات تعريف البريد الإلكتروني باستخدام Aspose.Email](/email/java/customizing-email-headers/enriching-email-metadata-through-headers/)
+- [Maven Aspose Email: الحفاظ على مرفقات TNEF في EML (Java)](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
