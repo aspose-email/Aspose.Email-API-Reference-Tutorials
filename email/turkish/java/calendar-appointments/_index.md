@@ -1,155 +1,190 @@
 ---
-date: 2026-03-18
-description: Aspose.Email kullanarak Java’da ICS dosyası oluşturmayı ve adım adım
-  kod örnekleriyle takvim etkinlikleri yaratmayı öğrenin.
-title: Java ile ICS Dosyası Oluşturma – Aspose.Email ile Davet
+date: 2026-09-12
+description: Aspose.Email kullanarak ics file java oluşturmayı, calendar event java
+  oluşturmayı ve iCalendar randevularını tam kod örnekleriyle dışa aktarmayı öğrenin.
+keywords:
+- generate ics file java
+- create calendar event java
+- Aspose.Email Java
+- iCalendar generation Java
+lastmod: 2026-09-12
+og_description: Aspose.Email ile Generate ics file java. Bu öğreticide calendar event
+  java oluşturmayı, recurrence tanımlamayı ve Outlook, Google Calendar ve Apple Calendar
+  ile çalışan iCalendar dosyalarını dışa aktarmayı öğrenebilirsiniz.
+og_image_alt: 'Aspose.Email Java tutorial: generate ics file and calendar event'
+og_title: Aspose.Email ile Generate ics file java – adım adım kılavuz
+schemas:
+- author: Aspose
+  dateModified: '2026-09-12'
+  description: Learn how to generate ics file java using Aspose.Email, create calendar
+    event java, and export iCalendar appointments with full code examples.
+  headline: Generate ics file java – email calendar and appointments with Aspose.Email
+  type: TechArticle
+- description: Learn how to generate ics file java using Aspose.Email, create calendar
+    event java, and export iCalendar appointments with full code examples.
+  name: Generate ics file java – email calendar and appointments with Aspose.Email
+  steps:
+  - name: Set up the project and add the Aspose.Email JAR
+    text: Create a Maven or Gradle project and include the Aspose.Email dependency.
+      This gives you access to the `MailMessage`, `MapiMessage`, and `Appointment`
+      classes needed for calendar handling.
+  - name: Create a new `Appointment` object
+    text: '`Appointment` is Aspose.Email''s core class that represents a calendar
+      event and holds all event properties such as subject, location, and attendees.
+      Instantiate `Appointment` and fill in the essential fields such as subject,
+      location, start/end times, and attendees. This object represents the calend'
+  - name: Define recurrence or exceptions (optional)
+    text: '`RecurrencePattern` defines how an appointment repeats over time, supporting
+      daily, weekly, monthly, and custom patterns. If the meeting repeats, use the
+      `RecurrencePattern` class to specify daily, weekly, or custom patterns. You
+      can also add exception dates to skip specific occurrences.'
+  - name: Save the appointment as an .ics file
+    text: Call `appointment.save("MyMeeting.ics", AppointmentSaveFormat.Ics)` to write
+      the iCalendar data to disk. The file can now be attached to an email or uploaded
+      to a server.
+  - name: (optional) Send the invitation via email
+    text: '`MailMessage` represents an email message that can contain attachments,
+      body, and recipients. `SmtpClient` is the class used to send email messages
+      through an SMTP server. Wrap the saved .ics file in a `MailMessage` and use
+      `SmtpClient` to deliver it to recipients. This step demonstrates the full wo'
+  type: HowTo
+- questions:
+  - answer: Yes. Aspose.Email creates iCalendar files locally, so no server connection
+      is required.
+    question: Can I generate an .ics file without an Exchange server?
+  - answer: Use `appointment.getReminder().setMinutesBeforeStart(15);` to set a 15‑minute
+      reminder.
+    question: How do I add a reminder to the event?
+  - answer: Absolutely. Call `appointment.getCustomFields().add("X‑MyProperty", "MyValue");`
+      to add non‑standard iCal fields.
+    question: Is it possible to embed custom properties?
+  - answer: Any recent version that supports `AppointmentSaveFormat.Ics`; we tested
+      with the latest release.
+    question: What version of Aspose.Email is required?
+  - answer: Yes. Load the Outlook item with `MapiMessage.fromFile("appointment.msg")`
+      and then call `appointment.save(..., AppointmentSaveFormat.Ics)`.
+    question: Can I convert existing Outlook appointments to .ics?
+  type: FAQPage
+tags:
+- generate ics
+- Aspose.Email
+- Java calendar events
+- iCalendar
+title: Generate ics file java – Aspose.Email ile e-posta takvimi ve randevular
 url: /tr/java/calendar-appointments/
 weight: 5
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Java ile ICS Dosyası Oluşturma – Aspose.Email ile E-posta Takvimi ve Randevular
 
-Bu öğreticide **generate ICS file Java** programlarını Aspose.Email ile nasıl oluşturacağınızı keşfedeceksiniz. İster bir toplantı planlayıcı, Microsoft Exchange entegrasyonu ya da sadece takvim verilerini dışa aktarmanız gerekse, sizi olay nesnesi oluşturulmasından standart‑uyumlu .ics dosyasının kaydedilmesine kadar tam süreçte yönlendireceğiz. Ayrıca **create calendar events Java** nasıl oluşturup gönderilebileceğini, depolanabileceğini veya herhangi bir takvim istemcisine içe aktarılabileceğini göreceksiniz.
+# ics dosyası java oluşturma – Aspose.Email ile e-posta takvimi ve randevular
 
-## Hızlı Yanıtlar
-- **Hangi kütüphane gerekiyor?** Aspose.Email for Java
-- **Lisans olmadan .ics dosyası oluşturabilir miyim?** Geçici bir lisans test için çalışır; üretim için tam lisans gereklidir.
-- **API hangi formatı üretir?** Outlook, Google Calendar vb. ile uyumlu standart iCalendar (.ics) dosyaları.
-- **Exchange sunucusuna ihtiyacım var mı?** Hayır, API dosyaları yerel olarak sunucuya bağlanmadan oluşturabilir.
-- **Tekrarlama destekleniyor mu?** Evet, günlük, haftalık veya özel tekrarlama desenleri tanımlayabilirsiniz.
+Bu öğreticide Aspose.Email ile **generate ics file java** programlarını nasıl oluşturacağınızı keşfedeceksiniz. İster bir toplantı planlayıcı oluşturuyor olun, Microsoft Exchange ile entegre ediyor olun ya da sadece takvim verilerini dışa aktarmanız gerekiyor olsun, sizi sürecin tamamı boyunca yönlendireceğiz—olay nesnesi oluşturulmasından standart‑uyumlu .ics dosyasının kaydedilmesine kadar. Ayrıca **create calendar event java**'nın nasıl gönderilebileceğini, saklanabileceğini veya herhangi bir takvim istemcisine içe aktarılabileceğini de göreceksiniz.
 
-## “generate ics file java” nedir?
-Java’da bir ICS dosyası oluşturmak, bir toplantı veya randevu için iCalendar temsiliyi programlı olarak yaratmak anlamına gelir. Ortaya çıkan dosya RFC 5545 spesifikasyonuna uyar ve herhangi bir takvim uygulamasının olayı okumasını, görüntülemesini ve işlemesini sağlar.
+## Hızlı cevaplar
+- **Gerekli kütüphane nedir?** Aspose.Email for Java
+- **Lisans olmadan bir .ics dosyası oluşturabilir miyim?** Geçici bir lisans test için çalışır; üretim için tam lisans gereklidir.
+- **API hangi formatı çıktılar?** Outlook, Google Calendar vb. ile uyumlu Standard iCalendar (.ics) dosyaları.
+- **Exchange sunucusuna ihtiyacım var mı?** Hayır, API dosyaları bir sunucuya bağlanmadan yerel olarak oluşturabilir.
+- **Tekrarlama destekleniyor mu?** Evet, günlük, haftalık veya özel tekrarlama desenlerini tanımlayabilirsiniz.
+
+## “generate ics file java” nedir?
+Java'da bir .ics dosyası oluşturmak, bir toplantı veya randevunun iCalendar temsiliğini programlı olarak inşa etmek anlamına gelir; konu, konum, zaman, katılımcılar ve hatırlatıcılar gibi ayrıntıları içerir. Dosya RFC 5545 spesifikasyonuna uygun olup, Outlook, Google Calendar, Apple Calendar veya diğer takvim uygulamalarının olayı doğru şekilde okumasını, görüntülemesini ve işlemesini sağlar.
 
 ## Aspose.Email ile iCalendar dosyaları neden oluşturulmalı?
-- **Çapraz platform uyumluluğu** – Outlook, Google Calendar, Apple Calendar ve iCal‑uyumlu tüm istemcilerle çalışır.  
-- **Harici bağımlılık yok** – Saf Java kütüphanesi; yerel bileşenler veya COM etkileşimi yok.  
-- **Etkinlik detayları üzerinde tam kontrol** – Katılımcılar, hatırlatıcılar, tekrarlama ve özel özellikler ayarlanabilir.  
-- **Kolay dönüşüm** – Mevcut Outlook/MAPI öğelerini tek bir çağrı ile .ics dosyasına dönüştürün.
+Aspose.Email ile iCalendar dosyaları oluşturmalısınız çünkü kütüphane tam RFC 5545 spesifikasyonunu yönetir, **50'den fazla takvim‑ile‑ilgili özelliği** destekler ve dış bağımlılıklar olmadan herhangi bir Java platformunda çalışır. .ics dosyalarının Outlook, Google Calendar, Apple Calendar ve diğer istemcilerde doğru şekilde açılmasını garanti ederken, katılımcılar, hatırlatıcılar ve tekrarlama üzerinde ayrıntılı kontrol sağlar.
 
 ## Önkoşullar
 - Java 8 ve üzeri  
 - Aspose.Email for Java (resmi siteden indirin)  
-- Aspose.Email için geçerli geçici veya tam lisans  
+- Aspose.Email için geçerli bir geçici veya tam lisans  
 
-## Adım Adım Kılavuz
+## Aspose.Email ile calendar event java nasıl oluşturulur?
+Java projenizi yükleyin, bir `Appointment` nesnesi oluşturun, ayrıntılarını yapılandırın ve bir .ics dosyası olarak kaydedin—bütün bunlar birkaç basit satırda. `Appointment` sınıfı konu, konum, başlangıç/bitiş zamanları, katılımcılar ve tekrarlama gibi tüm etkinlik bilgilerini kapsar. İstenen özellikleri ayarladıktan sonra, `AppointmentSaveFormat.Ics` ile `save` metodunu çağırarak herhangi bir takvim istemcisine içe aktarılabilecek standart‑uyumlu bir dosya üretin.
 
-### Adım 1: Projeyi kurun ve Aspose.Email JAR dosyasını ekleyin
-Maven ya da Gradle projesi oluşturun ve Aspose.Email bağımlılığını ekleyin. Bu, takvim işlemleri için gereken `MailMessage`, `MapiMessage` ve `Appointment` sınıflarına erişim sağlar.
+## Adım‑adım kılavuz
+
+### Adım 1: Projeyi kurun ve Aspose.Email JAR'ını ekleyin
+Bir Maven veya Gradle projesi oluşturun ve Aspose.Email bağımlılığını ekleyin. Bu, takvim işlemleri için gerekli `MailMessage`, `MapiMessage` ve `Appointment` sınıflarına erişim sağlar.
 
 ### Adım 2: Yeni bir `Appointment` nesnesi oluşturun
-`Appointment` sınıfını örnekleyin ve konu, konum, başlangıç/bitiş zamanları ve katılımcılar gibi temel alanları doldurun. Bu nesne dışa aktarmak istediğiniz takvim etkinliğini temsil eder.
+`Appointment`, Aspose.Email'in takvim etkinliğini temsil eden ve konu, konum ve katılımcılar gibi tüm etkinlik özelliklerini tutan temel sınıfıdır.  
+`Appointment` nesnesini örnekleyin ve konu, konum, başlangıç/bitiş zamanları ve katılımcılar gibi temel alanları doldurun. Bu nesne dışa aktarmak istediğiniz takvim etkinliğini temsil eder.
 
-### Adım 3: Tekrarlama veya istisnaları tanımlayın (isteğe bağlı)
-Toplantı tekrarlanıyorsa, günlük, haftalık veya özel desenleri belirtmek için `RecurrencePattern` sınıfını kullanın. Belirli oluşumları atlamak için istisna tarihleri de ekleyebilirsiniz.
+### Adım 3: Tekrarlamayı veya istisnaları tanımlayın (isteğe bağlı)
+`RecurrencePattern`, bir randevunun zaman içinde nasıl tekrar edeceğini tanımlar; günlük, haftalık, aylık ve özel desenleri destekler.  
+Toplantı tekrarlanıyorsa, günlük, haftalık veya özel desenleri belirtmek için `RecurrencePattern` sınıfını kullanın. Ayrıca belirli oluşumları atlamak için istisna tarihleri ekleyebilirsiniz.
 
-### Adım 4: Randevuyu .ics dosyası olarak kaydedin
-`appointment.save("MyMeeting.ics", AppointmentSaveFormat.Ics)` kodunu çağırarak iCalendar verisini diske yazın. Dosya artık bir e-postaya eklenebilir veya bir sunucuya yüklenebilir.
+### Adım 4: Randevuyu bir .ics dosyası olarak kaydedin
+`appointment.save("MyMeeting.ics", AppointmentSaveFormat.Ics)` çağrısını yaparak iCalendar verisini diske yazın. Dosya artık bir e-postaya eklenebilir veya bir sunucuya yüklenebilir.
 
-### Adım 5: (İsteğe bağlı) Daveti e-posta ile gönderin
-Kaydedilen .ics dosyasını bir `MailMessage` içine yerleştirin ve `SmtpClient` ile alıcılara gönderin. Bu adım, olay oluşturulmasından dağıtıma kadar tam iş akışını gösterir.
+### Adım 5: (isteğe bağlı) Daveti e-posta ile gönderin
+`MailMessage`, ekler, gövde ve alıcılar içerebilen bir e-posta mesajını temsil eder. `SmtpClient`, bir SMTP sunucusu üzerinden e-posta mesajları göndermek için kullanılan sınıftır.  
+Kaydedilen .ics dosyasını bir `MailMessage` içine sarın ve alıcılara iletmek için `SmtpClient` kullanın. Bu adım, etkinlik oluşturulmasından dağıtıma kadar tam iş akışını gösterir.
 
-## Yaygın Sorunlar ve Çözümler
-- **Saat dilimi uyumsuzlukları** – Randevunun `TimeZoneInfo` değerinin hedef saat dilimiyle eşleştiğinden emin olun; aksi takdirde alıcılar yanlış saatler görebilir.  
+## Yaygın sorunlar ve çözümler
+- **Saat dilimi uyumsuzlukları** – Randevunun `TimeZoneInfo` değerinin hedef bölgeyle eşleştiğinden emin olun; aksi takdirde alıcılar yanlış zamanlar görebilir.  
 - **Katılımcı eksikliği** – Her katılımcıyı `appointment.getAttendees().add(new MailAddress("user@example.com"));` ile ekleyin.  
 - **Dosya Outlook'ta açılmıyor** – Dosya uzantısının `.ics` olduğundan ve içeriğin RFC 5545'e (Aspose.Email bunu otomatik olarak halleder) uygun olduğundan emin olun.  
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: Lisans olmadan .ics dosyası oluşturabilir miyim?**  
-C: Evet. Aspose.Email iCalendar dosyalarını yerel olarak oluşturur, bu yüzden sunucu bağlantısı gerekmez.
+**Q: Exchange sunucusu olmadan bir .ics dosyası oluşturabilir miyim?**  
+**A:** Evet. Aspose.Email iCalendar dosyalarını yerel olarak oluşturur, bu yüzden sunucu bağlantısı gerekmez.
 
-**S: Olaya bir hatırlatıcı nasıl eklerim?**  
-C: `appointment.getReminder().setMinutesBeforeStart(15);` kodunu kullanarak 15 dakikalık bir hatırlatıcı ayarlayın.
+**Q: Etkinliğe nasıl bir hatırlatıcı ekleyebilirim?**  
+**A:** 15 dakikalık bir hatırlatıcı ayarlamak için `appointment.getReminder().setMinutesBeforeStart(15);` kullanın.
 
-**S: Özel özellikler eklemek mümkün mü?**  
-C: Kesinlikle. `appointment.getCustomFields().add("X‑MyProperty", "MyValue");` ile standart dışı iCal alanları ekleyebilirsiniz.
+**Q: Özel özellikler eklemek mümkün mü?**  
+**A:** Kesinlikle. Standart dışı iCal alanları eklemek için `appointment.getCustomFields().add("X‑MyProperty", "MyValue");` çağırın.
 
-**S: Hangi Aspose.Email sürümü gerekiyor?**  
-C: `AppointmentSaveFormat.Ics` destekleyen herhangi bir güncel sürüm yeterlidir; en son sürümle test ettik.
+**Q: Hangi Aspose.Email sürümü gereklidir?**  
+**A:** `AppointmentSaveFormat.Ics`'i destekleyen herhangi bir yeni sürüm; en son sürümle test ettik.
 
-**S: Mevcut Outlook randevularını .ics'ye dönüştürebilir miyim?**  
-C: Evet. Outlook öğesini `MapiMessage.fromFile("appointment.msg")` ile yükleyin ve ardından `appointment.save(..., AppointmentSaveFormat.Ics)` çağrısını yapın.
+**Q: Mevcut Outlook randevularını .ics'ye dönüştürebilir miyim?**  
+**A:** Evet. Outlook öğesini `MapiMessage.fromFile("appointment.msg")` ile yükleyin ve ardından `appointment.save(..., AppointmentSaveFormat.Ics)` çağırın.
 
-## Ek Kaynaklar
-
-### Aspose.Email for Java ile Takvim Davetiyeleri Oluşturma ve Gönderme: Adım Adım Kılavuz
-[Aspose.Email for Java ile Takvim Davetiyeleri Oluşturma ve Gönderme: Adım Adım Kılavuz](./create-send-calendar-invitations-aspose-email-java/)
-
-### Aspose.Email ile Java'da MAPI Takvimleri Oluşturma ve Kaydetme: Kapsamlı Kılavuz
-[Aspose.Email ile Java'da MAPI Takvimleri Oluşturma ve Kaydetme: Kapsamlı Kılavuz](./create-save-mapi-calendar-aspose-email-java/)
-
-### Aspose.Email for Java Kullanarak Outlook Takvim Öğelerini ICS'ye Dönüştürme
-[How to Convert Outlook Calendar Items to ICS Using Aspose.Email for Java](./extract-outlook-calendar-to-ics-aspose-email-java/)
-
-### Aspose.Email Kullanarak Java'da Taslak E-posta Randevuları Oluşturma
-[How to Create Draft Email Appointments in Java Using Aspose.Email](./create-draft-email-appointment-java-aspose/)
-
-### Aspose.Email for Java ile Günlük Tekrarlama ve İstisnalar İçeren MAPI Takvimi Oluşturma
-[How to Create a MAPI Calendar with Daily Recurrence and Exceptions Using Aspose.Email for Java](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
-
-### Aspose.Email for Java ile Outlook Notlarını Oluşturma ve Özelleştirme: Kapsamlı Kılavuz
-[How to Create and Customize Outlook Notes with Aspose.Email for Java&#58; A Comprehensive Guide](./create-customize-outlook-notes-aspose-email-java/)
-
-### Aspose.Email Java Kullanarak Exchange Sunucu Randevularını Tarihe Göre Filtreleme
-[How to Filter Exchange Server Appointments by Date Using Aspose.Email Java](./aspose-email-java-filter-exchange-appointments-by-date/)
-
-### Aspose.Email for Exchange Sunucuları ile Java'da Sayfalı Randevular Uygulama
-[How to Implement Paginated Appointments in Java Using Aspose.Email for Exchange Servers](./java-aspose-email-paginated-appointments/)
-
-### Aspose.Email ile Java'da Çoklu ICS Etkinliklerini Okuma: Kapsamlı Kılavuz
-[How to Read Multiple ICS Events Using Aspose.Email in Java&#58; A Comprehensive Guide](./read-multiple-ics-events-aspose-email-java/)
-
-### Aspose.Email for Java ile Outlook Kategorilerini Yönetme: Kapsamlı Kılavuz
-[Manage Outlook Categories with Aspose.Email for Java&#58; A Comprehensive Guide](./manage-outlook-categories-aspose-email-java/)
-
-### Aspose.Email for Java ile Outlook Takip Bayraklarını Yönetme: Geliştirici Kılavuzu
-[Manage Outlook Follow‑Up Flags with Aspose.Email for Java&#58; A Developer's Guide](./aspose-email-java-outlook-follow-up-flags/)
-
-### Aspose.Email for Java ile Görevleri Etkin Yönetme: Takvim ve Randevu Kılavuzu
-[Manage Tasks Efficiently with Aspose.Email for Java&#58; Calendar & Appointments Guide](./aspose-email-java-task-management/)
-
-### Aspose.Email Java ile Randevu Yönetimini Ustalaştırma: EWS API Entegrasyonu Kapsamlı Kılavuz
-[Master Appointment Management with Aspose.Email Java&#58; A Comprehensive Guide to EWS API Integration](./master-appointment-management-aspose-email-java/)
-
-### Aspose.Email Java Ustası: Takvim Etkinliklerini Oluşturma ve Yönetme
-[Master Aspose.Email Java&#58; Create and Manage Calendar Events Efficiently](./master-aspose-email-java-calendar-events/)
-
-### Aspose.Email Java Ustası: Katılımcı Durumunu Ayarlama ve ICS Dosyalarını Verimli Yazma
-[Master Aspose.Email Java&#58; Set Participant Status & Write ICS Files Efficiently](./aspose-email-java-set-participant-status-write-ics/)
-
-### Aspose.Email for Java ile Takvim Öğeleri Oluşturma ve Kaydetme Ustası
-[Master Creating and Saving Calendar Items with Aspose.Email for Java](./create-save-calendar-items-aspose-email-java/)
-
-### Aspose.Email for Java ile Exchange Takvim Yönetimini Ustalaştırma: Kapsamlı Kılavuz
-[Master Exchange Calendar Management with Aspose.Email for Java&#58; A Comprehensive Guide](./mastering-exchange-calendar-management-aspose-email-java/)
-
-### Aspose.Email for Java Kullanarak Outlook Şablon Yönetimi Ustası
-[Master Outlook Template Management Using Aspose.Email for Java](./master-outlook-template-management-aspose-email-java/)
-
-#### Ek Kaynaklar
+## Ek kaynaklar
+- [Aspose.Email for Java ile Takvim Davetleri Oluşturma ve Gönderme: Adım‑Adım Kılavuz](./create-send-calendar-invitations-aspose-email-java/)
+- [Java'da Aspose.Email ile MAPI Takvimleri Oluşturma ve Kaydetme: Kapsamlı Kılavuz](./create-save-mapi-calendar-aspose-email-java/)
+- [Aspose.Email for Java Kullanarak Outlook Takvim Öğelerini ICS'ye Dönüştürme](./extract-outlook-calendar-to-ics-aspose-email-java/)
+- [Aspose.Email Kullanarak Java'da Taslak E-posta Randevuları Oluşturma](./create-draft-email-appointment-java-aspose/)
+- [Aspose.Email for Java ile Günlük Tekrarlama ve İstisnalar İçeren MAPI Takvimi Oluşturma](./create-mapi-calendar-daily-recurrence-aspose-email-java/)
+- [Aspose.Email for Java ile Outlook Notlarını Oluşturma ve Özelleştirme: Kapsamlı Kılavuz](./create-customize-outlook-notes-aspose-email-java/)
+- [Aspose.Email Java Kullanarak Exchange Sunucusu Randevularını Tarihe Göre Filtreleme](./aspose-email-java-filter-exchange-appointments-by-date/)
+- [Aspose.Email for Exchange Sunucuları ile Java'da Sayfalı Randevular Uygulama](./java-aspose-email-paginated-appointments/)
+- [Aspose.Email ile Java'da Çoklu ICS Olaylarını Okuma: Kapsamlı Kılavuz](./read-multiple-ics-events-aspose-email-java/)
+- [Aspose.Email for Java ile Outlook Kategorilerini Yönetme: Kapsamlı Kılavuz](./manage-outlook-categories-aspose-email-java/)
+- [Aspose.Email for Java ile Outlook Takip‑İşaretlerini Yönetme: Geliştirici Kılavuzu](./aspose-email-java-outlook-follow-up-flags/)
+- [Aspose.Email for Java ile Görevleri Etkin Yönetme: Takvim ve Randevular Kılavuzu](./aspose-email-java-task-management/)
+- [Aspose.Email Java ile Randevu Yönetimini Ustalaştırma: EWS API Entegrasyonu Kapsamlı Kılavuz](./master-appointment-management-aspose-email-java/)
+- [Aspose.Email Java'yı Ustalaştırma: Takvim Etkinliklerini Etkin Oluşturma ve Yönetme](./master-aspose-email-java-calendar-events/)
+- [Aspose.Email Java'yı Ustalaştırma: Katılımcı Durumunu Ayarlama ve ICS Dosyalarını Etkin Yazma](./aspose-email-java-set-participant-status-write-ics/)
+- [Aspose.Email for Java ile Takvim Öğeleri Oluşturma ve Kaydetme Ustası](./create-save-calendar-items-aspose-email-java/)
+- [Aspose.Email for Java ile Exchange Takvim Yönetimini Ustalaştırma: Kapsamlı Kılavuz](./mastering-exchange-calendar-management-aspose-email-java/)
+- [Aspose.Email for Java Kullanarak Outlook Şablon Yönetimini Ustalaştırma](./master-outlook-template-management-aspose-email-java/)
 - [Aspose.Email for Java Belgeleri](https://docs.aspose.com/email/java/)
 - [Aspose.Email for Java API Referansı](https://reference.aspose.com/email/java/)
 - [Aspose.Email for Java'ı İndir](https://releases.aspose.com/email/java/)
-- [Aspose.Email Forum](https://forum.aspose.com/c/email)
+- [Aspose.Email Forumu](https://forum.aspose.com/c/email)
 - [Ücretsiz Destek](https://forum.aspose.com/)
 - [Geçici Lisans](https://purchase.aspose.com/temporary-license/)
 
----
-
-**Son Güncelleme:** 2026-03-18  
-**Test Edilen:** Aspose.Email for Java (latest release)  
+**Son Güncelleme:** 2026-09-12  
+**Test Edilen:** Aspose.Email for Java (en son sürüm)  
 **Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [ics dosyası java ayrıştırma – Aspose.Email ile Takvim Olaylarını Okuma](/email/java/calendar-appointments/read-multiple-ics-events-aspose-email-java/)
+- [ICS'yi Dışa Aktarma – Durum Ayarlama – Aspose.Email Java](/email/java/calendar-appointments/aspose-email-java-set-participant-status-write-ics/)
+- [Aspose.Email Kullanarak Java'da Takvim Öğesi Oluşturma](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
