@@ -1,75 +1,142 @@
 ---
-date: '2026-03-20'
-description: Dowiedz się, jak wyświetlać zadania Exchange w Javie przy użyciu Aspose.Email
-  dla Javy. Ten samouczek pokazuje, jak filtrować zadania według statusu i efektywnie
-  zarządzać zadaniami serwera Exchange.
+date: '2026-09-12'
+description: Dowiedz się, jak wyświetlać zadania i filtrować je w Javie przy użyciu
+  Aspose.Email. Ten przewodnik pokazuje step‑by‑step setup, pobieranie zadań oraz
+  filtrowanie statusu dla Exchange Server.
 keywords:
-- Aspose.Email for Java
-- Exchange Server tasks management
-- Java task automation
-title: lista zadań Exchange w Javie z Aspose.Email for Java – przewodnik
+- how to list tasks
+- how to filter tasks
+- Aspose.Email Java
+- Exchange Server task automation
+lastmod: '2026-09-12'
+og_description: Jak wyświetlać zadania przy użyciu Aspose.Email dla Java. Postępuj
+  zgodnie z tym samouczkiem, aby wykonać setup, pobrać i efektywnie filtrować zadania
+  Exchange Server.
+og_image_alt: Tutorial screenshot showing Java code listing Exchange tasks with Aspose.Email
+og_title: Jak wyświetlić zadania przy użyciu Aspose.Email dla Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-12'
+  description: Learn how to list tasks and how to filter tasks in Java using Aspose.Email.
+    This guide shows step‑by‑step setup, task retrieval, and status filtering for
+    Exchange Server.
+  headline: How to list tasks with Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to list tasks and how to filter tasks in Java using Aspose.Email.
+    This guide shows step‑by‑step setup, task retrieval, and status filtering for
+    Exchange Server.
+  name: How to list tasks with Aspose.Email for Java
+  steps:
+  - name: '**Automated task sync** – Keep tasks in sync between Exchange and a project‑management
+      tool.'
+    text: '**Automated task sync** – Keep tasks in sync between Exchange and a project‑management
+      tool.'
+  - name: '**Status reporting** – Generate daily or weekly summaries that compare
+      completed versus pending tasks.'
+    text: '**Status reporting** – Generate daily or weekly summaries that compare
+      completed versus pending tasks.'
+  - name: '**Workflow triggers** – Launch CI/CD pipelines or notification services
+      when a task reaches a particular status.'
+    text: '**Workflow triggers** – Launch CI/CD pipelines or notification services
+      when a task reaches a particular status.'
+  - name: '**Bulk updates** – Reassign owners or change categories for many tasks
+      in a single operation.'
+    text: '**Bulk updates** – Reassign owners or change categories for many tasks
+      in a single operation.'
+  - name: '**Free trial** – Begin with a free trial to explore features.'
+    text: '**Free trial** – Begin with a free trial to explore features.'
+  - name: '**Temporary license** – Apply for an extended testing license if needed.'
+    text: '**Temporary license** – Apply for an extended testing license if needed.'
+  - name: '**Purchase** – Consider buying a full license after evaluating the library.'
+    text: '**Purchase** – Consider buying a full license after evaluating the library.'
+  - name: '**Automated task management** – Synchronize and update tasks across platforms
+      automatically.'
+    text: '**Automated task management** – Synchronize and update tasks across platforms
+      automatically.'
+  - name: '**Reporting tools** – Generate reports based on task completion status.'
+    text: '**Reporting tools** – Generate reports based on task completion status.'
+  - name: '**Workflow automation** – Trigger downstream processes when a task reaches
+      a defined state.'
+    text: '**Workflow automation** – Trigger downstream processes when a task reaches
+      a defined state.'
+  type: HowTo
+- questions:
+  - answer: Aspose.Email for Java is a library that simplifies interaction with email
+      servers—including Exchange—through a clean, object‑oriented API.
+    question: What is Aspose.Email for Java?
+  - answer: Start with a free trial or request a temporary license; purchase a full
+      license for production use via the Aspose website.
+    question: How do I obtain an Aspose.Email license?
+  - answer: It supports Java 16 or later; newer LTS releases are also fully compatible.
+    question: Can I use Aspose.Email on any version of Java?
+  - answer: Incorrect credentials, insufficient folder permissions, and not setting
+      the correct time zone are the most frequent issues.
+    question: What are common pitfalls when listing exchange tasks java?
+  - answer: Visit the [official documentation](https://reference.aspose.com/email/java/)
+      and [support forums](https://forum.aspose.com/c/email/10) for detailed guides
+      and community help.
+    question: Where can I find more resources on Aspose.Email for Java?
+  type: FAQPage
+tags:
+- list tasks
+- Aspose.Email
+- Java task management
+- Exchange Server
+- filter tasks
+title: Jak wyświetlić zadania przy użyciu Aspose.Email dla Java
 url: /pl/java/calendar-appointments/aspose-email-java-task-management/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Zarządzaj zadaniami efektywnie z Aspose.Email dla Javy
+
+# Jak wyświetlić zadania przy użyciu Aspose.Email dla Javy
 
 ## Wprowadzenie
 
-Efektywne zarządzanie zadaniami jest niezbędne w intensywnych środowiskach pracy, szczególnie gdy musisz **list exchange tasks java** na wielu serwerach pocztowych. **Aspose.Email for Java** upraszcza ten proces, umożliwiając płynną interakcję z serwerami Microsoft Exchange. W tym **aspose email java tutorial** dowiesz się, jak zainicjować klienta, wyświetlić wszystkie zadania oraz filtrować zadania według statusu — abyś mógł utrzymać kontrolę nad przepływem pracy od skrzynki odbiorczej do listy zadań.
-
-**Co się nauczysz:**
-- Inicjalizacja klienta Exchange przy użyciu Aspose.Email
-- Wyświetlanie wszystkich zadań z serwera Exchange
-- Zapytania o konkretne zadania na podstawie ich statusu
-- Integracja Aspose.Email z aplikacjami Java
-
-Gotowy, aby usprawnić swój przepływ pracy zarządzania zadaniami? Zacznijmy od przyjrzenia się wymaganiom wstępnym.
+W nowoczesnych przedsiębiorstwach automatyzacja obsługi zadań w Microsoft Exchange zmniejsza ręczny wysiłek i zwiększa dokładność. Ten samouczek wyjaśnia **jak wyświetlić zadania** z skrzynki pocztowej Exchange przy użyciu Aspose.Email dla Javy oraz pokazuje **jak filtrować zadania** według statusu, dzięki czemu możesz tworzyć potoki raportujące lub silniki synchronizacji bez konieczności korzystania z Outlooka. Zobaczysz niezbędną konfigurację, dokładne wywołania API oraz wskazówki najlepszych praktyk dotyczące wydajności i niezawodności.
 
 ## Szybkie odpowiedzi
-- **Co robi „list exchange tasks java”?** Pobiera zadania z skrzynki pocztowej Exchange za pośrednictwem Aspose.Email for Java.  
-- **Jakiej biblioteki wymaga?** Aspose.Email for Java (wersja 25.4 lub nowsza).  
+- **Co robi „list exchange tasks java”?** Pobiera zadania ze skrzynki pocztowej Exchange za pośrednictwem Aspose.Email dla Javy.  
+- **Jakiej biblioteki wymaga?** Aspose.Email dla Javy (wersja 25.4 lub nowsza).  
 - **Czy mogę filtrować zadania według statusu?** Tak — użyj `ExchangeQueryBuilder` z `TaskStatus`.  
-- **Czy potrzebuję licencji do rozwoju?** Darmowa wersja próbna działa do testów; pełna licencja jest wymagana w produkcji.  
-- **Jaką wersję Javy obsługuje?** Zalecana jest Java 16 lub nowsza.  
+- **Czy potrzebna jest licencja do rozwoju?** Darmowa wersja próbna działa do testów; pełna licencja jest wymagana w produkcji.  
+- **Jaką wersję Javy obsługuje?** Zalecana jest Java 16 lub nowsza.
 
 ## Co to jest „list exchange tasks java”?
-Wyświetlanie zadań Exchange przy użyciu Javy oznacza programowe połączenie z serwerem Exchange, pobranie kolekcji zadań i opcjonalne ich filtrowanie. Umożliwia to automatyzację, taką jak masowe aktualizacje, raportowanie lub wyzwalanie przepływów pracy bez ręcznej interakcji z Outlookiem.
+Wyświetlanie zadań Exchange przy użyciu Javy oznacza programowe połączenie z serwerem Exchange, pobranie kolekcji zadań i opcjonalne ich filtrowanie. Umożliwia to automatyzację, taką jak masowe aktualizacje, raportowanie lub wyzwalanie przepływów pracy bez ręcznej interakcji z Outlookiem. Może być używane do generowania inwentaryzacji zadań, synchronizacji z narzędziami do zarządzania projektami lub dostarczania danych do potoków analitycznych, co zmniejsza ręczny wysiłek i zapewnia spójność w całym systemie.
 
 ## Dlaczego filtrować zadania według statusu?
-Filtrowanie zadań według statusu (np. Completed, InProgress) pozwala skupić się na najważniejszych w danym momencie zadaniach — niezależnie od tego, czy generujesz raport statusowy, synchronizujesz tylko otwarte pozycje, czy sprzątasz zakończone zadania.
+Filtrowanie zadań według statusu pozwala wyodrębnić pracę, która jest istotna w danej chwili — np. wyświetlić tylko otwarte pozycje na codziennym pulpicie lub pobrać zakończone zadania do raportu zamknięcia. Zmniejsza to wolumen danych, przyspiesza przetwarzanie i umożliwia systemom downstream reagowanie wyłącznie na istotne zmiany.
 
 ## Wymagania wstępne
 
 Zanim rozpoczniesz, upewnij się, że masz:
 
 ### Wymagane biblioteki i zależności
-- **Aspose.Email for Java**: Wymagana wersja 25.4 lub nowsza.  
+- **Aspose.Email dla Javy**: Wersja 25.4 lub nowsza.  
 - **Java Development Kit (JDK)**: Użyj wersji 16 lub nowszej.
 
-### Wymagania dotyczące konfiguracji środowiska
-- Działające środowisko programistyczne Java z zainstalowanym Mavenem.
+### Konfiguracja środowiska
+- Funkcjonalne środowisko programistyczne Java z zainstalowanym Mavenem.
 
 ### Wymagania wiedzy
-- Podstawowa znajomość Javy i koncepcji programowania obiektowego.
+- Podstawowa znajomość składni Javy i koncepcji programowania obiektowego.
 
 ## Dlaczego to ma znaczenie
 
-Użycie Aspose.Email do **list exchange tasks java** zapewnia programistyczną kontrolę, której interfejs Outlooka po prostu nie oferuje. Możesz automatyzować powtarzalne czyszczenie zadań, integrować dane zadań w pulpitach raportowych lub wyzwalać procesy zależne w aplikacjach korporacyjnych — wszystko z jednego, łatwego w utrzymaniu kodu Java.
+Użycie Aspose.Email do **list exchange tasks java** zapewnia programistyczną kontrolę, której interfejs Outlooka nie może dorównać. Możesz automatyzować powtarzalne czyszczenia, integrować dane zadań w pulpitach BI lub wyzwalać usługi downstream — wszystko z jednego, łatwego w utrzymaniu kodu Javy. Aspose.Email obsługuje **ponad 50 operacji Exchange** i może przetwarzać **kolekcje zadań liczące setki stron** bez ładowania całej skrzynki pocztowej do pamięci, zapewniając niskie opóźnienia i zużycie pamięci.
 
 ## Typowe przypadki użycia
 
 1. **Automatyczna synchronizacja zadań** – Utrzymuj zadania w synchronizacji między Exchange a narzędziem do zarządzania projektami.  
-2. **Raportowanie statusu** – Generuj codzienne lub tygodniowe raporty podsumowujące zadania zakończone w porównaniu do oczekujących.  
+2. **Raportowanie statusu** – Generuj codzienne lub tygodniowe podsumowania porównujące zadania zakończone i oczekujące.  
 3. **Wyzwalacze przepływu pracy** – Uruchamiaj potoki CI/CD lub usługi powiadomień, gdy zadanie osiągnie określony status.  
-4. **Masowe aktualizacje** – Wprowadzaj zmiany (np. przypisywanie właścicieli) do wielu zadań w jednej operacji.
+4. **Masowe aktualizacje** – Przypisuj ponownie właścicieli lub zmieniaj kategorie wielu zadań w jednej operacji.
 
-## Samouczek Aspose Email Java – Konfiguracja
+## Samouczek Aspose Email Java – konfiguracja
 
 Aby zintegrować bibliotekę Aspose.Email w swoim projekcie, dodaj tę zależność do pliku `pom.xml`, jeśli używasz Maven:
 
@@ -84,9 +151,9 @@ Aby zintegrować bibliotekę Aspose.Email w swoim projekcie, dodaj tę zależno�
 
 ### Kroki uzyskania licencji
 
-1. **Darmowa wersja próbna**: Rozpocznij od darmowej wersji próbnej, aby poznać funkcje.  
-2. **Licencja tymczasowa**: Złóż wniosek o rozszerzoną licencję testową, jeśli potrzebujesz.  
-3. **Zakup**: Rozważ zakup pełnej licencji po ocenie biblioteki.
+1. **Darmowa wersja próbna** – Rozpocznij od darmowej wersji próbnej, aby przetestować funkcje.  
+2. **Licencja tymczasowa** – Złóż wniosek o rozszerzoną licencję testową, jeśli to konieczne.  
+3. **Zakup** – Rozważ zakup pełnej licencji po ocenie biblioteki.
 
 Po skonfigurowaniu środowiska i uzyskaniu licencji, zainicjalizuj bibliotekę w następujący sposób:
 
@@ -100,14 +167,11 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-Ten fragment konfiguruje klienta Exchange przy użyciu podanych danych uwierzytelniających.
-
 ## Przewodnik implementacji
 
 ### Inicjalizacja klienta Exchange
 
-#### Przegląd
-Zainicjalizuj klienta Aspose.Email Java, aby połączyć się i uwierzytelnić z serwerem Exchange. Jest to niezbędne do programowego dostępu do zadań w skrzynce pocztowej.
+`ExchangeClient` jest główną klasą Aspose.Email służącą do łączenia się z serwerem Exchange. Obsługuje uwierzytelnianie, zarządzanie sesją i zapewnia dostęp do folderów skrzynki pocztowej.
 
 ```java
 String mailboxUri = "https://ex2010/exchangeews/exchange.asmx";
@@ -119,14 +183,13 @@ NetworkCredential credentials = new NetworkCredential(username, password, domain
 IEWSClient client = EWSClient.getEWSClient(mailboxUri, credentials);
 ```
 
-- **Parametry**:
+- **Parametry**:  
   - `mailboxUri`: URL punktu końcowego Twojego serwera Exchange.  
   - `username`, `password`, `domain`: Dane uwierzytelniające.
 
-### Wyświetlanie wszystkich zadań z serwera Exchange
+### Wyświetlenie wszystkich zadań z serwera Exchange
 
-#### Przegląd
-Pobierz wszystkie zadania przechowywane w Twojej skrzynce Exchange przy użyciu zainicjalizowanego klienta. To jest sedno operacji **list exchange tasks java**.
+`TaskCollection` reprezentuje zestaw zadań przechowywanych w folderze skrzynki pocztowej. Pobranie go zwraca każdy element zadania, niezależnie od statusu.
 
 ```java
 client.setTimezoneId("Central Europe Standard Time");
@@ -138,13 +201,12 @@ for (int i = 0; i < iTasksCount; i++) {
 }
 ```
 
-- **Parametry**:
+- **Parametry**:  
   - `setTimezoneId`: Zapewnia wyświetlanie zadań w odpowiedniej lokalnej strefie czasowej.
 
 ### Zapytanie i wyświetlenie konkretnych zadań z serwera Exchange
 
-#### Przegląd
-Filtruj i wyświetlaj konkretne zadania na podstawie ich statusu przy użyciu możliwości zapytań — tak **filtrujesz zadania według statusu**.
+`ExchangeQueryBuilder` tworzy zapytania po stronie serwera, umożliwiając filtrowanie zadań według właściwości, takich jak `TaskStatus`. To jest sedno **jak filtrować zadania**.
 
 ```java
 Integer[] selectedStatuses = new Integer[]{
@@ -164,73 +226,79 @@ for (int i = 0; i < iTasksCount; i++) {
 }
 ```
 
-- **Parametry**:
-  - `selectedStatuses`: Tablica określająca, które statusy mają być użyte do filtrowania zadań.
+- **Parametry**:  
+  - `selectedStatuses`: Tablica określająca, które statusy mają być uwzględnione w zestawie wyników.
 
 ## Praktyczne zastosowania
 
-Integracja Aspose.Email z Javą umożliwia różne scenariusze w rzeczywistym świecie:
+Integracja Aspose.Email z Javą umożliwia szereg rzeczywistych scenariuszy:
 
-1. **Automatyczne zarządzanie zadaniami** – Automatycznie synchronizuj i aktualizuj zadania pomiędzy platformami.  
-2. **Narzędzia raportujące** – Generuj raporty na podstawie statusu realizacji zadań.  
-3. **Automatyzacja przepływu pracy** – Wyzwalaj przepływy, gdy spełnione są określone warunki (np. zadanie jest zakończone).  
-4. **Integracja międzyplatformowa** – Bezproblemowo integruj z narzędziami CRM lub do zarządzania projektami.
+1. **Zautomatyzowane zarządzanie zadaniami** – Automatycznie synchronizuj i aktualizuj zadania między platformami.  
+2. **Narzędzia raportujące** – Generuj raporty na podstawie statusu ukończenia zadań.  
+3. **Automatyzacja przepływu pracy** – Wyzwalaj procesy downstream, gdy zadanie osiągnie określony stan.  
+4. **Integracja międzyplatformowa** – Bezproblemowo łącz się z systemami CRM lub zarządzania projektami.
 
 ## Rozważania dotyczące wydajności
 
-Aby zapewnić optymalną wydajność:
+Aby utrzymać rozwiązanie szybkie i oszczędne pod względem pamięci:
 
-- **Optymalizacja wykorzystania sieci** – Pobieraj tylko potrzebne pola, aby ograniczyć ruch.  
-- **Efektywne zarządzanie pamięcią** – Zwracaj uwagę na zużycie sterty Javy przy obsłudze dużych obiektów `TaskCollection`.  
-- **Najlepsze praktyki Aspose.Email** – Postępuj zgodnie z oficjalną dokumentacją w celu zaawansowanej konfiguracji i strategii buforowania.
+- **Optymalizacja wykorzystania sieci** – Żądaj tylko pól, które są potrzebne (np. temat, termin).  
+- **Efektywne zarządzanie pamięcią** – Przetwarzaj `TaskCollection` w partiach zamiast ładować cały zestaw jednorazowo.  
+- **Najlepsze praktyki Aspose.Email** – Postępuj zgodnie z oficjalną dokumentacją dotyczącą buforowania i puli połączeń.
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Prawdopodobna przyczyna | Rozwiązanie |
-|-------|--------------|----------|
-| **Uwierzytelnianie nie powiodło się** | Nieprawidłowe dane uwierzytelniające lub domena | Sprawdź wartości `username`, `password` i `domain`; upewnij się, że URL Exchange jest dostępny. |
-| **Brak zwróconych zadań** | Nieprawidłowy URI skrzynki lub brak uprawnień | Sprawdź, czy konto serwisowe ma dostęp do folderu Tasks. |
-| **Niezgodność strefy czasowej** | `setTimezoneId` nie ustawione lub niepoprawne | Użyj odpowiedniego identyfikatora strefy czasowej Windows dla swojego regionu. |
-| **Duże kolekcje zadań powodują OOM** | Ładowanie wszystkich zadań jednocześnie | Zaimplementuj stronicowanie, używając `client.listTasks(..., query, offset, limit)` (zobacz dokumentację Aspose). |
+|---------|--------------------------|-------------|
+| **Uwierzytelnianie nie powiodło się** | Nieprawidłowe dane uwierzytelniające lub domena | Sprawdź `username`, `password` i `domain`; upewnij się, że URL Exchange jest dostępny. |
+| **Brak zwróconych zadań** | Nieprawidłowy URI skrzynki pocztowej lub brak uprawnień | Potwierdź, że konto serwisowe ma dostęp do folderu Zadania. |
+| **Niezgodność strefy czasowej** | `setTimezoneId` nie ustawione lub nieprawidłowe | Użyj odpowiedniego identyfikatora strefy czasowej Windows dla swojego regionu. |
+| **Duże kolekcje zadań powodują OOM** | Ładowanie wszystkich zadań jednocześnie | Zaimplementuj stronicowanie przy użyciu `client.listTasks(..., query, offset, limit)` zgodnie z opisem w dokumentacji. |
 
 ## Najczęściej zadawane pytania
 
-**Q: Czym jest Aspose.Email for Java?**  
-A: Biblioteka, która upraszcza interakcję z serwerami poczty, w tym Exchange Server, poprzez przejrzyste API w Javie.
+**P: Czym jest Aspose.Email dla Javy?**  
+O: Aspose.Email dla Javy to biblioteka upraszczająca interakcję z serwerami poczty — w tym Exchange — poprzez przejrzyste, obiektowo‑zorientowane API.
 
-**Q: Jak uzyskać licencję Aspose.Email?**  
-A: Rozpocznij od darmowej wersji próbnej lub poproś o licencję tymczasową; zakup pełną licencję do użytku produkcyjnego.
+**P: Jak uzyskać licencję Aspose.Email?**  
+O: Rozpocznij od darmowej wersji próbnej lub poproś o licencję tymczasową; zakup pełną licencję do użytku produkcyjnego poprzez stronę Aspose.
 
-**Q: Czy mogę używać Aspose.Email na dowolnej wersji Javy?**  
-A: Obsługuje Javę 16 lub nowszą; nowsze wersje również są kompatybilne.
+**P: Czy mogę używać Aspose.Email na dowolnej wersji Javy?**  
+O: Obsługuje Javę 16 lub nowszą; nowsze wydania LTS są również w pełni kompatybilne.
 
-**Q: Jakie są typowe pułapki przy wyświetlaniu exchange tasks java?**  
-A: Nieprawidłowe dane uwierzytelniające, brak uprawnień oraz nieustawienie właściwej strefy czasowej to najczęstsze problemy.
+**P: Jakie są typowe pułapki przy wyświetlaniu zadań Exchange w Javie?**  
+O: Nieprawidłowe dane uwierzytelniające, niewystarczające uprawnienia do folderu oraz nieustawienie właściwej strefy czasowej to najczęstsze problemy.
 
-**Q: Gdzie mogę znaleźć więcej zasobów na temat Aspose.Email for Java?**  
-A: Odwiedź [oficjalną dokumentację](https://reference.aspose.com/email/java/) oraz [fora wsparcia](https://forum.aspose.com/c/email/10) w celu uzyskania szczegółowych przewodników i pomocy społeczności.
+**P: Gdzie mogę znaleźć więcej zasobów dotyczących Aspose.Email dla Javy?**  
+O: Odwiedź [oficjalną dokumentację](https://reference.aspose.com/email/java/) oraz [fora wsparcia](https://forum.aspose.com/c/email/10) w celu uzyskania szczegółowych przewodników i pomocy społeczności.
 
 ## Zasoby
 
-- **Dokumentacja**: [Aspose Email Java Reference](https://reference.aspose.com/email/java/)
-- **Pobieranie**: [Aspose Email Java Releases](https://releases.aspose.com/email/java/)
-- **Zakup**: [Buy Aspose License](https://purchase.aspose.com/buy)
-- **Darmowa wersja próbna**: [Start with a Free Trial](https://releases.aspose.com/email/java/)
-- **Licencja tymczasowa**: [Get a Temporary License](https://purchase.aspose.com/temporary-license/)
-- **Wsparcie**: [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+- **Dokumentacja**: [Odwołanie Aspose Email Java](https://reference.aspose.com/email/java/)
+- **Pobranie**: [Wydania Aspose Email Java](https://releases.aspose.com/email/java/)
+- **Zakup**: [Kup licencję Aspose](https://purchase.aspose.com/buy)
+- **Darmowa wersja próbna**: [Rozpocznij od darmowej wersji próbnej](https://releases.aspose.com/email/java/)
+- **Licencja tymczasowa**: [Uzyskaj licencję tymczasową](https://purchase.aspose.com/temporary-license/)
+- **Wsparcie**: [Forum wsparcia Aspose](https://forum.aspose.com/c/email/10)
 
-Wykorzystaj moc Aspose.Email for Java i usprawnij dziś interakcje z serwerem poczty!
+Wykorzystaj moc Aspose.Email dla Javy i usprawnij zarządzanie zadaniami Exchange już dziś!
 
 ---
 
-**Ostatnia aktualizacja:** 2026-03-20  
+**Ostatnia aktualizacja:** 2026-09-12  
 **Testowano z:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Autor:** Aspose
+
+## Powiązane samouczki
+
+- [Tworzenie zadań w Microsoft Exchange przy użyciu Aspose.Email dla Javy: Kompletny przewodnik](/email/java/exchange-server-integration/create-tasks-exchange-aspose-email-java/)
+- [Jak połączyć się z serwerem Exchange przy użyciu Aspose.Email w Javie: Przewodnik krok po kroku](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Zarządzanie spotkaniami Exchange przy użyciu Aspose.Email dla Javy: Kompleksowy przewodnik](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
