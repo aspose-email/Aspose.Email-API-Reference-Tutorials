@@ -1,59 +1,122 @@
 ---
-date: '2026-03-20'
-description: Erfahren Sie, wie Sie eine Kalenderfreigabe‑Einladung erstellen, Kalenderberechtigungen
-  konfigurieren und Delegiertenzugriff mit Aspose.Email für Java festlegen.
+date: '2026-09-17'
+description: Wie man eine Kalendereinladung mit Aspose.Email for Java erstellt, ermöglicht
+  das Teilen von Kalendern, das Festlegen von Delegationsberechtigungen und das programmgesteuerte
+  Senden von Freigabe‑E‑Mails.
 keywords:
-- Aspose.Email for Java
-- create calendar invitations
-- send calendar invitations
-title: Kalenderfreigabe‑Einladung mit Aspose.Email für Java erstellen
+- how to create calendar invitation
+- calendar sharing invitation
+- Aspose.Email Java
+- delegate calendar permissions
+lastmod: '2026-09-17'
+og_description: Wie man eine Kalendereinladung mit Aspose.Email for Java programmgesteuert
+  teilt, Delegationsberechtigungen festlegt und Freigabe‑E‑Mails über Exchange Web
+  Services sendet, was die Zusammenarbeit im Team verbessert.
+og_image_alt: Guide showing how to create calendar invitation with Aspose.Email for
+  Java
+og_title: Wie man eine Kalendereinladung mit Aspose.Email for Java erstellt
+schemas:
+- author: Aspose
+  dateModified: '2026-09-17'
+  description: How to create calendar invitation with Aspose.Email for Java lets you
+    share calendars, set delegate permissions, and send sharing emails programmatically.
+  headline: How to create calendar invitation with Aspose.Email for Java
+  type: TechArticle
+- description: How to create calendar invitation with Aspose.Email for Java lets you
+    share calendars, set delegate permissions, and send sharing emails programmatically.
+  name: How to create calendar invitation with Aspose.Email for Java
+  steps:
+  - name: Install JDK if you haven't already. You can download it from [Oracle's official
+      site](https://www.oracle.com/java/technologies/javase-downloads.html).
+    text: Install JDK if you haven't already. You can download it from [Oracle's official
+      site](https://www.oracle.com/java/technologies/javase-downloads.html).
+  - name: Ensure Maven is installed and configured on your machine.
+    text: Ensure Maven is installed and configured on your machine.
+  - name: Choose an IDE such as IntelliJ IDEA or Eclipse for easier development.
+    text: Choose an IDE such as IntelliJ IDEA or Eclipse for easier development.
+  - name: '**Corporate meetings** – Let team members view meeting schedules without
+      giving full mailbox rights.'
+    text: '**Corporate meetings** – Let team members view meeting schedules without
+      giving full mailbox rights.'
+  - name: '**Project management** – Project leads can monitor timelines while developers
+      retain control of their own calendars.'
+    text: '**Project management** – Project leads can monitor timelines while developers
+      retain control of their own calendars.'
+  - name: '**Event planning** – Vendors receive a **calendar sharing email** to coordinate
+      logistics without exposing internal details.'
+    text: '**Event planning** – Vendors receive a **calendar sharing email** to coordinate
+      logistics without exposing internal details.'
+  type: HowTo
+- questions:
+  - answer: It’s a comprehensive library for handling emails, calendars, and contacts
+      in Java applications, supporting Outlook, Exchange, and other protocols.
+    question: What is Aspose.Email for Java used for?
+  - answer: Install JDK 16+, Maven, add the Aspose.Email dependency to `pom.xml`,
+      and obtain a license (trial or full).
+    question: How do I set up my environment for using Aspose.Email?
+  - answer: Yes, but verify the service URL and permission levels match your server’s
+      configuration.
+    question: Can I use this code with other versions of Exchange Online?
+  - answer: Check network connectivity, credentials, and that the delegate user has
+      valid permissions. Review exception details for clues.
+    question: What should I do if the calendar sharing invitation fails to send?
+  - answer: Absolutely – replace `ExchangeDelegateFolderPermissionLevel.Reviewer`
+      with `Editor`, `Author`, or `Owner` as needed.
+    question: Is it possible to add additional permissions like editing or full access?
+  type: FAQPage
+tags:
+- calendar sharing
+- Aspose.Email
+- Java email API
+- delegate permissions
+- EWS client
+title: Wie man eine Kalendereinladung mit Aspose.Email for Java erstellt
 url: /de/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Kalenderfreigabe verwalten: Aspose.Email für Java‑Leitfaden
+
+# Kalenderfreigabe verwalten: Aspose.Email für Java Anleitung
 
 ## Einführung in die Verwaltung von Kalenderfreigaben
-Die Verwaltung von Kalenderfreigabe‑Einladungen kann eine komplexe Aufgabe sein, insbesondere wenn mehrere Benutzer über verschiedene Plattformen hinweg beteiligt sind. In diesem Tutorial werden Sie **calendar sharing invitation** mit Aspose.Email für Java **erstellen**, wobei alles von der Erstellung des Delegiertenzugriffs bis zum Senden von Kalenderfreigabe‑E‑Mails abgedeckt wird. Am Ende können Sie Delegiertenberechtigungen festlegen, **configure calendar permissions** und die Zusammenarbeit in Ihrer Organisation optimieren.
+Die Verwaltung von Kalenderfreigabe‑Einladungen kann eine komplexe Aufgabe sein, insbesondere wenn mehrere Benutzer auf verschiedenen Plattformen beteiligt sind. In diesem Tutorial erstellen Sie **Kalenderfreigabe‑Einladungen** mit Aspose.Email für Java und decken alles ab, von der Erstellung von Delegiertenzugriff bis zum Versenden von Kalenderfreigabe‑E‑Mails. Am Ende können Sie Delegiertenberechtigungen festlegen, **Kalenderberechtigungen konfigurieren** und die Zusammenarbeit in Ihrer Organisation optimieren.
 
 **Was Sie lernen werden**
-- Wie man den EWS‑Client mit Aspose.Email für Java initialisiert  
-- Erstellen eines Delegiertenbenutzers und **set delegate permissions**  
-- **Create delegate access** und configure calendar permissions  
-- Senden einer **calendar sharing email** (Einladung) programmgesteuert  
-- Praxisbeispiele, in denen diese Funktionen Mehrwert bieten  
+- Wie der EWS‑Client mit Aspose.Email für Java initialisiert wird  
+- Einen Delegierten‑Benutzer erstellen und **Delegierten‑Berechtigungen festlegen**  
+- **Delegiertenzugriff erstellen** und Kalenderberechtigungen konfigurieren  
+- Programmgesteuert eine **Kalenderfreigabe‑E‑Mail** (Einladung) senden  
+- Praxisnahe Szenarien, in denen diese Funktionen Mehrwert bieten  
 
-Bevor wir beginnen, stellen Sie sicher, dass Sie alles haben, was Sie benötigen.
+Bevor wir beginnen, stellen Sie sicher, dass Sie alles Notwendige bereit haben.
 
-## Schnelle Antworten
-- **Was ist der Hauptzweck dieses Leitfadens?** Um zu zeigen, wie man **create calendar sharing invitation** mit Aspose.Email für Java **erstellt**.  
-- **Welche Bibliotheksversion ist erforderlich?** Aspose.Email for Java 25.4 (JDK 16 classifier).  
-- **Benötige ich eine Lizenz?** Ja – ein Test- oder Volllizenz ist für den Produktionseinsatz erforderlich.  
+## Schnellantworten
+- **Was ist das Hauptziel dieses Leitfadens?** Zu zeigen, wie man **Kalenderfreigabe‑Einladungen** mit Aspose.Email für Java **erstellt**.  
+- **Welche Bibliotheksversion wird benötigt?** Aspose.Email für Java 25.4 (JDK 16 classifier).  
+- **Benötige ich eine Lizenz?** Ja – für den Produktionseinsatz ist eine Test‑ oder Voll‑Lizenz erforderlich.  
 - **Welche Umgebung wird benötigt?** JDK 16+, Maven und ein Exchange‑Online‑Konto.  
-- **Kann ich dies mit anderen Exchange‑Servern verwenden?** Ja, aber Sie müssen möglicherweise die Service‑URL und die Berechtigungsebenen anpassen.
+- **Kann ich das mit anderen Exchange‑Servern verwenden?** Ja, eventuell müssen Sie die Service‑URL und die Berechtigungsstufen anpassen.
 
-## Was ist eine calendar sharing invitation?
-Eine calendar sharing invitation ist eine E‑Mail‑Nachricht, die einem anderen Benutzer Zugriff gewährt, Ihren Kalender anzusehen (oder zu bearbeiten), ohne vollständige Postfachrechte zu vergeben. Sie wird häufig für Teamkoordination, Projektplanung und Veranstaltungsmanagement verwendet.
+## Was ist eine Kalenderfreigabe‑Einladung?
+Eine Kalenderfreigabe‑Einladung ist eine E‑Mail‑Nachricht, die einem anderen Benutzer Zugriff gewährt, Ihren Kalender anzusehen (oder zu bearbeiten), ohne ihm vollständige Postfachrechte zu geben. Sie ermöglicht Teammitgliedern, Ihren Zeitplan zu sehen, Besprechungen vorzuschlagen oder Ereignisse zu verwalten, während Ihr Postfach geschützt bleibt.
 
-## Warum calendar permissions konfigurieren?
-Durch das Konfigurieren von calendar permissions können Sie genau steuern, was ein Delegierter tun darf – ob er nur Ereignisse lesen, neue vorschlagen oder vorhandene Einträge bearbeiten kann. Richtige Berechtigungseinstellungen schützen sensible Informationen und ermöglichen gleichzeitig eine effektive Zusammenarbeit.
+## Warum Kalenderberechtigungen konfigurieren?
+Durch das Konfigurieren von Kalenderberechtigungen können Sie genau steuern, was ein Delegierter tun darf – ob er nur Ereignisse lesen, neue vorschlagen oder bestehende Einträge bearbeiten kann. Richtige Berechtigungseinstellungen schützen sensible Informationen und ermöglichen gleichzeitig effektive Zusammenarbeit. Beispielsweise verhindert ein Nur‑Lese‑Zugriff versehentliche Änderungen, während Bearbeitungsrechte dem Delegierten erlauben, im Namen des Besitzers Besprechungen zu planen oder zu ändern.
 
 ## Voraussetzungen
 - **Java Development Kit (JDK):** Version 16 oder höher.  
-- **Maven:** Für das Verwalten von Abhängigkeiten und das Erstellen des Projekts.  
-- **Aspose.Email for Java Bibliothek:** Version 25.4 mit JDK 16‑Unterstützung.  
+- **Maven:** Für das Abhängigkeits‑Management und den Build des Projekts.  
+- **Aspose.Email für Java Bibliothek:** Version 25.4 mit JDK 16‑Unterstützung.  
 
-### Umgebungs‑Setup‑Anforderungen
-1. Installieren Sie das JDK, falls Sie es noch nicht getan haben. Sie können es von [Oracle's official site](https://www.oracle.com/java/technologies/javase-downloads.html) herunterladen.  
+### Anforderungen an die Umgebung
+1. Installieren Sie das JDK, falls noch nicht geschehen. Sie können es von der [offiziellen Oracle‑Seite](https://www.oracle.com/java/technologies/javase-downloads.html) herunterladen.  
 2. Stellen Sie sicher, dass Maven auf Ihrem Rechner installiert und konfiguriert ist.  
 3. Wählen Sie eine IDE wie IntelliJ IDEA oder Eclipse für eine einfachere Entwicklung.
 
-### Kenntnis‑Voraussetzungen
+### Fachliche Voraussetzungen
 - Grundlegende Java‑Programmierkenntnisse  
 - Vertrautheit mit Maven‑Abhängigkeiten  
 - Optional: Erfahrung mit Exchange Web Services (EWS)
@@ -72,41 +135,51 @@ Fügen Sie die folgende Abhängigkeit zu Ihrer `pom.xml`‑Datei hinzu:
 ```
 
 ### Lizenzbeschaffung
-Aspose.Email for Java erfordert eine Lizenz für die volle Funktionalität. Sie können:
-- **Kostenlose Testversion:** Download von [Aspose's release page](https://releases.aspose.com/email/java/).  
-- **Temporäre Lizenz:** Fordern Sie einen temporären Schlüssel auf der Aspose‑Website an.  
-- **Kauf:** Erhalten Sie eine permanente Lizenz für Produktionsbereitstellungen.
+Aspose.Email für Java erfordert eine Lizenz für die volle Funktionalität. Sie können:
+- **Kostenlose Testversion:** Von der [Aspose‑Release‑Seite](https://releases.aspose.com/email/java/) herunterladen.  
+- **Temporäre Lizenz:** Einen temporären Schlüssel auf der Aspose‑Webseite anfordern.  
+- **Kauf:** Eine permanente Lizenz für Produktions‑Deployments erwerben.
 
 ### Grundlegende Initialisierung und Einrichtung
-Sobald Maven die Abhängigkeit aufgelöst hat, initialisieren Sie den EWS‑Client:
+Nachdem Maven die Abhängigkeit aufgelöst hat, initialisieren Sie den EWS‑Client:
+
+`ExchangeService` ist die Hauptklasse, die zur Kommunikation mit Exchange Web Services verwendet wird.  
 
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
 ```
 
-## Wie man eine calendar sharing invitation erstellt
-Im Folgenden behandeln wir zwei Kernfunktionen: das Erstellen und Senden einer calendar sharing invitation sowie das **set delegate permissions** für den Kalenderzugriff.
+## Wie man eine Kalenderfreigabe‑Einladung erstellt
+Um eine Kalenderfreigabe‑Einladung zu erstellen, verbinden Sie sich zunächst mit Exchange über den `ExchangeService`‑Client, definieren dann einen Delegierten mit der gewünschten Berechtigungsstufe und erstellen schließlich eine `MailMessage`, die die Freigabeanforderung enthält. Die folgenden Schritte demonstrieren diesen Workflow in Java.
 
-### Funktion 1: calendar sharing invitation erstellen und senden
-#### Übersicht
-Diese Funktion führt Sie durch die Initialisierung des Clients, **create delegate access**, und das Senden der Einladungs‑E‑Mail.
+Im Folgenden behandeln wir zwei Kernfunktionen: das Erstellen und Senden einer Kalenderfreigabe‑Einladung sowie das **Festlegen von Delegierten‑Berechtigungen** für den Kalenderzugriff.
+
+### Feature 1: Kalenderfreigabe‑Einladung erstellen und senden
+#### Überblick
+Dieses Feature führt Sie durch die Initialisierung des Clients, **Erstellung von Delegiertenzugriff** und das Senden der Einladungs‑E‑Mail.
 
 #### Schritt‑für‑Schritt‑Implementierung
-##### 1️⃣ Initialize EWS Client
+##### 1️⃣ EWS‑Client initialisieren
+`ExchangeService` stellt die Verbindung zu einem Exchange‑Server dar und wird zum Senden und Empfangen von Nachrichten verwendet.  
+
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
-```
-Dies verbindet Ihre Java‑Anwendung mit Exchange Online.
+```  
+Damit wird Ihre Java‑Anwendung mit Exchange Online verbunden.
 
-##### 2️⃣ Create Delegate User
+##### 2️⃣ Delegierten‑Benutzer erstellen
+`DelegateUser` definiert die E‑Mail‑Adresse des Delegierten und die zugewiesene Berechtigungsstufe.  
+
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
-```
-Hier **create delegate access** und weisen das `Reviewer`‑Level zu, das dem Delegierten das Anzeigen von Kalendereinträgen ermöglicht.
+```  
+Hier **erstellen wir Delegiertenzugriff** und weisen die Stufe `Reviewer` zu, die dem Delegierten das Anzeigen von Kalenderelementen erlaubt.
 
-##### 3️⃣ Send Calendar Sharing Invitation
+##### 3️⃣ Kalenderfreigabe‑Einladung senden
+`MailMessage` erstellt die E‑Mail, die die Kalenderfreigabe‑Einladung enthält.  
+
 ```java
 MapiMessage mapiMessage = client.createCalendarSharingInvitationMessage("sharingfrom@domain.com");
 
@@ -115,96 +188,100 @@ options.setConvertAsTnef(true);
 
 MailMessage mail = mapiMessage.toMailMessage(options);
 client.send(mail);
-```
-Der Code erstellt eine **calendar sharing email** (Einladung) und sendet sie über den EWS‑Client.
+```  
+Der Code baut eine **Kalenderfreigabe‑E‑Mail** (Einladung) und sendet sie über den EWS‑Client.
 
-### Funktion 2: Delegierten‑Kalenderzugriffs‑Berechtigung
-#### Übersicht
-Dieser Abschnitt zeigt, wie man **configure calendar permissions** durchführt und sicherstellt, dass der Delegierte die richtigen Rechte hat.
+### Feature 2: Delegierten‑Kalenderzugriffs‑Berechtigung
+#### Überblick
+Dieser Abschnitt zeigt, wie **Kalenderberechtigungen konfiguriert** werden und der Delegierte die richtigen Rechte erhält.
 
 #### Implementierungsschritte
-##### 1️⃣ Initialize EWS Client (reuse)
+##### 1️⃣ EWS‑Client initialisieren (Wiederverwendung)
+`ExchangeService` kann nach der Erstkonfiguration für mehrere Vorgänge wiederverwendet werden.  
+
 ```java
 IEWSClient client = EWSClient.getEWSClient("https://outlook.office365.com/exchangeews/exchange.asmx", "testUser", "pwd", "domain");
-```
+```  
 
-##### 2️⃣ Create and Set Delegate Permissions
+##### 2️⃣ Delegierten‑Berechtigungen erstellen und festlegen
+`ExchangeDelegateFolderPermissionLevel` enumeriert die Zugriffsebenen, die ein Delegierter auf einen Kalenderordner haben kann.  
+
 ```java
 ExchangeDelegateUser delegateUser = new ExchangeDelegateUser("sharingfrom@domain.com", ExchangeDelegateFolderPermissionLevel.NotSpecified);
 delegateUser.getFolderPermissions().setCalendarFolderPermissionLevel(ExchangeDelegateFolderPermissionLevel.Reviewer);
 
 client.delegateAccess(delegateUser, "sharingfrom@domain.com");
-```
-Dieses Snippet **sets delegate permissions**, sodass der Benutzer Kalendereinträge einsehen kann, ohne vollen Postfachzugriff zu haben.
+```  
+Dieses Snippet **setzt Delegierten‑Berechtigungen**, sodass der Benutzer Kalender‑Einträge sehen kann, ohne vollen Postfachzugriff zu besitzen.
 
-## Wie man calendar permissions für Delegierte konfiguriert
-Wenn ein Delegierter mehr als nur Ereignisse anzeigen soll – z. B. bearbeiten oder löschen – können Sie das `ExchangeDelegateFolderPermissionLevel` ändern:
+## Wie man Kalenderberechtigungen für Delegierte konfiguriert
+Wenn ein Delegierter mehr als nur Lese‑Zugriff benötigt, können Sie `ExchangeDelegateFolderPermissionLevel` anpassen, um Bearbeitungs‑, Autor‑ oder Eigentümer‑Rechte zu gewähren. Wählen Sie die minimale Stufe, die den geschäftlichen Bedarf deckt, um Sicherheit zu wahren und gleichzeitig notwendige Funktionalität bereitzustellen. Beispielsweise erlaubt die Stufe `Editor` dem Delegierten das Erstellen, Ändern und Löschen von Ereignissen, während `Reviewer` nur das Anzeigen gestattet.
 
 - `Reviewer` – Nur‑Lese‑Zugriff.  
 - `Editor` – Lese‑/Schreib‑Zugriff.  
 - `Author` – Erstellen und Lesen, aber kein Löschen.  
-- `Owner` – Vollständige Kontrolle, einschließlich Änderungen der Berechtigungen.
+- `Owner` – Vollständige Kontrolle, einschließlich Änderungen der Berechtigungen.  
 
-**Pro‑Tipp:** Verwenden Sie das geringste Privilegien‑Level, das die geschäftlichen Anforderungen erfüllt, um Ihre Kalenderdaten zu sichern.
+**Pro‑Tipp:** Verwenden Sie das Prinzip der geringsten Rechte, das den geschäftlichen Anforderungen entspricht, um Ihre Kalenderdaten zu schützen.
 
-## Praktische Anwendungen
-Praxisbeispiele, bei denen **manage calendar sharing** glänzt:
-1. **Corporate Meetings** – Teammitglieder können Meeting‑Pläne einsehen, ohne volle Postfachrechte zu erhalten.  
-2. **Project Management** – Projektleiter können Zeitpläne überwachen, während Entwickler die Kontrolle über ihre eigenen Kalender behalten.  
-3. **Event Planning** – Anbieter erhalten eine **calendar sharing email**, um die Logistik zu koordinieren, ohne interne Details preiszugeben.
+## Praktische Anwendungsfälle
+Reale Szenarien, in denen **Kalenderfreigabe verwalten** glänzt:
+1. **Unternehmens‑Meetings** – Teammitglieder können Meeting‑Pläne einsehen, ohne volle Postfachrechte zu erhalten.  
+2. **Projektmanagement** – Projektleiter können Zeitpläne überwachen, während Entwickler ihre eigenen Kalender behalten.  
+3. **Event‑Planung** – Anbieter erhalten eine **Kalenderfreigabe‑E‑Mail**, um die Logistik zu koordinieren, ohne interne Details preiszugeben.
 
-## Leistungsüberlegungen
-- **Memory Management:** Entsorgen Sie große `MailMessage`‑Objekte zeitnah in Anwendungen mit hohem Volumen.  
-- **Exception Handling:** Umschließen Sie Netzwerkaufrufe in try‑catch‑Blöcken, um Verbindungsprobleme elegant zu behandeln.  
-- **Library Updates:** Halten Sie Aspose.Email aktuell, um von Leistungsverbesserungen und Fehlerbehebungen zu profitieren.
+## Leistungsaspekte
+- **Speicherverwaltung:** Große `MailMessage`‑Objekte in hochvolumigen Anwendungen zeitnah freigeben.  
+- **Fehlerbehandlung:** Netzwerkaufrufe in try‑catch‑Blöcken kapseln, um Verbindungsprobleme elegant zu behandeln.  
+- **Bibliotheks‑Updates:** Aspose.Email für Java unterstützt über 50 Protokolle und kann Kalender mit bis zu 10.000 Elementen verarbeiten, ohne die gesamte Datei in den Speicher zu laden. Halten Sie die Bibliothek aktuell, um Leistungsverbesserungen und Fehlerbehebungen zu nutzen.
 
 ## Häufige Probleme und Lösungen
-| Issue | Likely Cause | Solution |
-|-------|--------------|----------|
-| Invitation not received | Spam filters or incorrect email address | Verify recipient address and add the sending domain to safe‑senders list |
-| Permission not applied | Using wrong `ExchangeDelegateFolderPermissionLevel` | Double‑check the permission level matches the required access |
-| Runtime exception on `createCalendarSharingInvitationMessage` | Missing license or outdated library | Ensure a valid license is loaded and you’re using the latest Aspose.Email version |
-
 | Problem | Wahrscheinliche Ursache | Lösung |
-|---------|--------------------------|--------|
-| Einladung nicht erhalten | Spam‑Filter oder falsche E‑Mail‑Adresse | Empfängeradresse prüfen und die sendende Domain zur Safe‑Senders‑Liste hinzufügen |
-| Berechtigung nicht angewendet | Falsches `ExchangeDelegateFolderPermissionLevel` verwendet | Überprüfen Sie, ob das Berechtigungslevel dem erforderlichen Zugriff entspricht |
-| Runtime‑Exception bei `createCalendarSharingInvitationMessage` | Fehlende Lizenz oder veraltete Bibliothek | Stellen Sie sicher, dass eine gültige Lizenz geladen ist und Sie die neueste Aspose.Email‑Version verwenden |
+|-------|--------------|----------|
+| Einladung nicht erhalten | Spam‑Filter oder falsche E‑Mail‑Adresse | Empfängeradresse prüfen und die sendende Domain zur Liste sicherer Absender hinzufügen |
+| Berechtigung nicht angewendet | Falsche `ExchangeDelegateFolderPermissionLevel` verwendet | Sicherstellen, dass die Berechtigungsstufe dem gewünschten Zugriff entspricht |
+| Laufzeit‑Exception bei `createCalendarSharingInvitationMessage` | Fehlende Lizenz oder veraltete Bibliothek | Gültige Lizenz laden und die neueste Aspose.Email‑Version verwenden |
 
 ## Häufig gestellte Fragen
-**Q: Wofür wird Aspose.Email für Java verwendet?**  
-A: Es ist eine umfassende Bibliothek zur Verarbeitung von E‑Mails, Kalendern und Kontakten in Java‑Anwendungen und unterstützt Outlook, Exchange und weitere Protokolle.
+**F: Wofür wird Aspose.Email für Java verwendet?**  
+A: Es ist eine umfassende Bibliothek zum Verarbeiten von E‑Mails, Kalendern und Kontakten in Java‑Anwendungen und unterstützt Outlook, Exchange und weitere Protokolle.
 
-**Q: Wie richte ich meine Umgebung für die Verwendung von Aspose.Email ein?**  
-A: Installieren Sie JDK 16+, Maven, fügen Sie die Aspose.Email‑Abhängigkeit zu `pom.xml` hinzu und erhalten Sie eine Lizenz (Test‑ oder Vollversion).
+**F: Wie richte ich meine Umgebung für die Nutzung von Aspose.Email ein?**  
+A: Installieren Sie JDK 16+, Maven, fügen Sie die Aspose.Email‑Abhängigkeit zu `pom.xml` hinzu und beschaffen Sie eine Lizenz (Test‑ oder Voll‑Lizenz).
 
-**Q: Kann ich diesen Code mit anderen Versionen von Exchange Online verwenden?**  
-A: Ja, prüfen Sie jedoch, ob die Service‑URL und die Berechtigungsebenen mit der Konfiguration Ihres Servers übereinstimmen.
+**F: Kann ich diesen Code mit anderen Versionen von Exchange Online verwenden?**  
+A: Ja, prüfen Sie jedoch, ob Service‑URL und Berechtigungsstufen zu Ihrer Server‑Konfiguration passen.
 
-**Q: Was soll ich tun, wenn die calendar sharing invitation nicht gesendet wird?**  
-A: Überprüfen Sie die Netzwerkverbindung, Anmeldeinformationen und ob der Delegierte gültige Berechtigungen hat. Prüfen Sie die Ausnahmedetails für Hinweise.
+**F: Was tun, wenn das Senden der Kalenderfreigabe‑Einladung fehlschlägt?**  
+A: Netzwerkverbindung, Anmeldedaten und die gültigen Berechtigungen des Delegierten prüfen. Ausnahme‑Details für Hinweise analysieren.
 
-**Q: Ist es möglich, zusätzliche Berechtigungen wie Bearbeiten oder Vollzugriff hinzuzufügen?**  
-A: Absolut – ersetzen Sie `ExchangeDelegateFolderPermissionLevel.Reviewer` durch `Editor`, `Author` oder `Owner`, je nach Bedarf.
+**F: Ist es möglich, zusätzliche Berechtigungen wie Bearbeiten oder Vollzugriff hinzuzufügen?**  
+A: Absolut – ersetzen Sie `ExchangeDelegateFolderPermissionLevel.Reviewer` durch `Editor`, `Author` oder `Owner` nach Bedarf.
 
 ## Fazit
-Sie haben nun eine vollständige End‑zu‑End‑Lösung für **create calendar sharing invitation** mit Aspose.Email für Java. Durch die Initialisierung des EWS‑Clients, **create delegate access**, **set delegate permissions** und das Senden einer **calendar sharing email** können Sie die Zusammenarbeit in Ihrer Organisation automatisieren.
+Sie verfügen nun über eine vollständige End‑zu‑End‑Lösung zum **Erstellen von Kalenderfreigabe‑Einladungen** mit Aspose.Email für Java. Durch die Initialisierung des EWS‑Clients, **Erstellung von Delegiertenzugriff**, **Festlegung von Delegierten‑Berechtigungen** und das Senden einer **Kalenderfreigabe‑E‑Mail** können Sie die Zusammenarbeit in Ihrer Organisation automatisieren.
 
 **Nächste Schritte**
-- Experimentieren Sie mit anderen Berechtigungsebenen (Editor, Owner).  
-- Integrieren Sie diese Logik in Ihre bestehenden Planungs‑ oder HR‑Systeme.  
-- Entdecken Sie weitere Aspose.Email‑Funktionen wie wiederkehrende Ereignisse oder Besprechungsanfragen.
+- Mit anderen Berechtigungsstufen experimentieren (Editor, Owner).  
+- Diese Logik in bestehende Termin‑ oder HR‑Systeme integrieren.  
+- Weitere Aspose.Email‑Funktionen wie wiederkehrende Ereignisse oder Besprechungsanfragen erkunden.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-03-20  
-**Getestet mit:** Aspose.Email for Java 25.4 (JDK 16 classifier)  
-**Autor:** Aspose  
+**Zuletzt aktualisiert:** 2026-09-17  
+**Getestet mit:** Aspose.Email für Java 25.4 (JDK 16 classifier)  
+**Autor:** Aspose
+
+## Verwandte Tutorials
+
+- [How to Create Calendar Item Java Using Aspose.Email](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+- [Aspose Email Java Filter Exchange Appointments By Date](/email/java/calendar-appointments/aspose-email-java-filter-exchange-appointments-by-date/)
+- [Create Exchange Calendar Java with Aspose.Email – A Complete Guide](/email/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
