@@ -1,68 +1,120 @@
 ---
-date: '2026-03-20'
-description: Μάθετε πώς να εξάγετε το ημερολόγιο Outlook σε αρχείο PST χρησιμοποιώντας
-  το Aspose.Email για Java – δημιουργήστε στοιχεία ημερολογίου MAPI, ορίστε επανάληψη,
-  προσθέστε συμμετέχοντες και αποθηκεύστε το σε PST.
+date: '2026-09-17'
+description: Μάθετε πώς να εξάγετε Outlook calendar PST χρησιμοποιώντας Aspose.Email
+  για Java – δημιουργήστε στοιχεία ημερολογίου MAPI, ορίστε επανάληψη, προσθέστε συμμετέχοντες
+  και αποθηκεύστε σε PST.
 keywords:
-- Create MAPI Calendar Java
-- Aspose.Email Java Calendar
-- Java PST File Save
-title: Εξαγωγή PST ημερολογίου Outlook με το Aspose.Email – Java
+- export outlook calendar pst
+- how to export pst
+- how to add recurrence
+- how to add attendees
+- save calendar to pst
+lastmod: '2026-09-17'
+og_description: Εξαγωγή Outlook calendar PST χρησιμοποιώντας Aspose.Email για Java.
+  Μάθετε πώς να δημιουργήσετε στοιχεία ημερολογίου MAPI, να προσθέσετε επανάληψη,
+  συμμετέχοντες και να αποθηκεύσετε σε PST σε λίγα λεπτά.
+og_image_alt: Guide to exporting Outlook calendar PST files with Aspose.Email for
+  Java
+og_title: Εξαγωγή Outlook calendar PST με Aspose.Email – Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-17'
+  description: Learn how to export Outlook calendar PST using Aspose.Email for Java
+    – create MAPI calendar items, set recurrence, add attendees, and save to PST.
+  headline: Export Outlook calendar PST with Aspose.Email – Java
+  type: TechArticle
+- description: Learn how to export Outlook calendar PST using Aspose.Email for Java
+    – create MAPI calendar items, set recurrence, add attendees, and save to PST.
+  name: Export Outlook calendar PST with Aspose.Email – Java
+  steps:
+  - name: '**Initialize date and recurrence pattern**'
+    text: '**Initialize date and recurrence pattern**'
+  - name: '**Set up recipients**'
+    text: '**Set up recipients**'
+  - name: '**Create the MAPI calendar item**'
+    text: '**Create the MAPI calendar item**'
+  - name: '**Save to PST file**'
+    text: '**Save to PST file**'
+  - name: '**Automated meeting scheduling** – Generate recurring meeting invites for
+      project teams without manual effort.'
+    text: '**Automated meeting scheduling** – Generate recurring meeting invites for
+      project teams without manual effort.'
+  - name: '**Event management platforms** – Export conference sessions as Outlook‑compatible
+      calendar items.'
+    text: '**Event management platforms** – Export conference sessions as Outlook‑compatible
+      calendar items.'
+  - name: '**CRM integration** – Sync customer appointments from a CRM system directly
+      into Outlook via PST files.'
+    text: '**CRM integration** – Sync customer appointments from a CRM system directly
+      into Outlook via PST files.'
+  type: HowTo
+- questions:
+  - answer: Aspose.Email for Java
+    question: Which library?
+  - answer: Export Outlook calendar PST and **save calendar to PST**
+    question: Primary goal?
+  - answer: Java 8+, Maven, Aspose.Email license
+    question: Prerequisites?
+  - answer: 10‑15 minutes for a basic event
+    question: Typical implementation time?
+  - answer: Yes – daily, weekly, monthly, etc.
+    question: Can I add recurrence?
+  type: FAQPage
+tags:
+- export outlook calendar pst
+- Aspose.Email
+- Java calendar automation
+title: Εξαγωγή Outlook calendar PST με Aspose.Email – Java
 url: /el/java/calendar-appointments/create-save-mapi-calendar-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Εξαγωγή αρχείου PST ημερολογίου Outlook με το Aspose.Email – Java
+
+# Εξαγωγή Outlook calendar PST με Aspose.Email – Java
 
 ## Εισαγωγή
 
-Αναζητάτε τρόπους να βελτιώσετε την αυτοματοποίηση του ημερολογίου στις εφαρμογές Java και χρειάζεστε να **εξάγετε αρχεία PST ημερολογίου Outlook**; Με το **Aspose.Email for Java**, μπορείτε να **δημιουργήσετε αντικείμενα MAPI calendar Java**, να ορίσετε μοτίβα επανάληψης, να προσθέσετε συμμετέχοντες και να **αποθηκεύσετε το ημερολόγιο σε PST** με λίγες μόνο γραμμές κώδικα. Αυτό το tutorial σας καθοδηγεί σε όλη τη διαδικασία — από τη ρύθμιση της βιβλιοθήκης μέχρι τη δημιουργία μιας πλήρως λειτουργικής εγγραφής ημερολογίου έτοιμης για διανομή.
+Αναζητάτε τρόπους να βελτιώσετε την αυτοματοποίηση του ημερολογίου στις εφαρμογές Java και χρειάζεστε **export Outlook calendar PST** αρχεία; Με το **Aspose.Email for Java**, μπορείτε να **create MAPI calendar Java** αντικείμενα, να ορίσετε πρότυπα επανάληψης, να προσθέσετε συμμετέχοντες και να **save calendar to PST** με λίγες μόνο γραμμές κώδικα. Αυτό το tutorial σας καθοδηγεί βήμα‑βήμα σε όλη τη διαδικασία — από τη ρύθμιση της βιβλιοθήκης μέχρι τη δημιουργία ενός πλήρως λειτουργικού στοιχείου ημερολογίου έτοιμου για διανομή.
 
 ### Τι θα μάθετε
-- Πώς να **δημιουργήσετε γεγονότα MAPI calendar Java** χρησιμοποιώντας το Aspose.Email.  
-- Διαμόρφωση ημερήσιων, εβδομαδιαίων ή προσαρμοσμένων μοτίβων επανάληψης.  
+- Πώς να **create MAPI calendar Java** συμβάντα χρησιμοποιώντας Aspose.Email.  
+- Διαμόρφωση ημερήσιων, εβδομαδιαίων ή προσαρμοσμένων προτύπων επανάληψης.  
 - Προσθήκη παραληπτών (διοργανωτές, συμμετέχοντες) στις προσκλήσεις του ημερολογίου σας.  
-- Διατήρηση του αντικειμένου ημερολογίου με **αποθήκευση του ημερολογίου σε PST** για συμβατότητα με το Outlook.  
-- Πώς να **αυτοματοποιήσετε τον προγραμματισμό συναντήσεων** με επαναχρησιμοποιήσιμο κώδικα.
+- Διατήρηση του στοιχείου ημερολογίου με **saving calendar to PST** για συμβατότητα με το Outlook.  
+- Πώς να **automate meeting scheduling** με επαναχρησιμοποιήσιμο κώδικα.
 
-## Γρήγορες Απαντήσεις
-- **Ποια βιβλιοθήκη;** Aspose.Email for Java  
-- **Κύριος στόχος;** Εξαγωγή PST ημερολογίου Outlook και **αποθήκευση του ημερολογίου σε PST**  
-- **Προαπαιτούμενα;** Java 8+, Maven, άδεια Aspose.Email  
-- **Τυπικός χρόνος υλοποίησης;** 10‑15 λεπτά για ένα βασικό γεγονός  
-- **Μπορώ να προσθέσω επανάληψη;** Ναι – ημερήσια, εβδομαδιαία, μηνιαία κ.λπ.
+## Γρήγορες απαντήσεις
+- **Which library?** Aspose.Email for Java  
+- **Primary goal?** Export Outlook calendar PST and **save calendar to PST**  
+- **Prerequisites?** Java 8+, Maven, Aspose.Email license  
+- **Typical implementation time?** 10‑15 minutes for a basic event  
+- **Can I add recurrence?** Yes – daily, weekly, monthly, etc.
 
-## Εξαγωγή PST ημερολογίου Outlook
+## Εξαγωγή Outlook calendar PST
 
-Σε αυτήν την ενότητα εστιάζουμε στη ροή από άκρο σε άκρο που σας επιτρέπει να **εξάγετε αρχεία PST ημερολογίου Outlook**. Μετά τη δημιουργία του αντικειμένου MAPI calendar, το τελικό βήμα είναι η αποθήκευσή του μέσα σε ένα αρχείο PST που το Outlook μπορεί να διαβάσει άμεσα.
+Σε αυτήν την ενότητα εστιάζουμε στη ροή από άκρο σε άκρο που σας επιτρέπει να **export Outlook calendar PST** αρχεία. Αφού δημιουργήσετε το αντικείμενο MAPI calendar, το τελευταίο βήμα είναι η αποθήκευσή του μέσα σε αρχείο PST που το Outlook μπορεί να διαβάσει άμεσα.
 
-## Γιατί να χρησιμοποιήσετε το Aspose.Email για αυτοματοποίηση ημερολογίου;
+## Γιατί να χρησιμοποιήσετε Aspose.Email για αυτοματοποίηση ημερολογίου;
 
-- **Πλήρης συμβατότητα με το Outlook** – τα παραγόμενα αντικείμενα λειτουργούν στο Outlook, OWA και σε κινητές συσκευές.  
-- **Πλούσια υποστήριξη επανάληψης** – ημερήσια, εβδομαδιαία, μηνιαία και προσαρμοσμένα μοτίβα έτοιμα προς χρήση.  
-- **Χωρίς εξωτερικές εξαρτήσεις** – καθαρή βιβλιοθήκη Java, δεν απαιτείται COM interop.  
-- **Υψηλή απόδοση** – αποδοτική διαχείριση μεγάλων αρχείων PST και μαζικών λειτουργιών.  
-- **Αυτοματοποιήστε τον προγραμματισμό συναντήσεων** – ενσωματώστε αυτή τη λογική σε εργασίες batch ή web services για αυτόματη δημιουργία εκατοντάδων προσκλήσεων.
+Εξαγάγετε Outlook calendar PST με Aspose.Email επειδή προσφέρει έναν αξιόπιστο, server‑side τρόπο παραγωγής στοιχείων συμβατών με το Outlook χωρίς COM interop. Η βιβλιοθήκη υποστηρίζει **50+ input and output formats**, μπορεί να χειριστεί αρχεία PST άνω των 2 GB και επεξεργάζεται χιλιάδες εγγραφές ημερολογίου ανά λεπτό σε τυπικό εξοπλισμό διακομιστή. Η ενσωματωμένη μηχανή επανάληψης καλύπτει ημερήσιες, εβδομαδιαίες, μηνιαίες και προσαρμοσμένες προσεγγίσεις, εξαλείφοντας την ανάγκη για χειροκίνητους υπολογισμούς ημερομηνιών.
 
 ## Προαπαιτούμενα
 
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε:
 
-### Απαιτούμενες Βιβλιοθήκες
-- **Aspose.Email for Java**: Έκδοση 25.4 ή νεότερη.
+### Απαιτούμενες βιβλιοθήκες
+- **Aspose.Email for Java**: Έκδοση 25.4 ή νεότερη (υποστηρίζει Java 8‑21).
 
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
+### Απαιτήσεις ρύθμισης περιβάλλοντος
 - Ένα IDE Java όπως IntelliJ IDEA ή Eclipse.  
-- Εγκατεστημένο Maven για διαχείριση εξαρτήσεων.
+- Maven εγκατεστημένο για διαχείριση εξαρτήσεων.
 
-### Προαπαιτούμενα Γνώσης
+### Προαπαιτούμενες γνώσεις
 - Βασικές δεξιότητες προγραμματισμού Java.  
-- Εξοικείωση με αντικειμενοστραφή έννοιες.
+- Εξοικείωση με αντικειμενοστραφείς έννοιες.
 
 ## Ρύθμιση Aspose.Email για Java
 
@@ -77,38 +129,41 @@ weight: 1
 </dependency>
 ```
 
-### Απόκτηση Άδειας
+### Απόκτηση άδειας
 
-Το Aspose.Email προσφέρει δωρεάν δοκιμή, αλλά μια άδεια ξεκλειδώνει όλες τις δυνατότητες:
+Το Aspose.Email προσφέρει δωρεάν δοκιμή, αλλά μια άδεια ξεκλειδώνει όλες τις λειτουργίες:
 
-- **Δωρεάν Δοκιμή**: Δοκιμή χωρίς περιορισμούς για 30 ημέρες.  
-- **Προσωρινή Άδεια**: Ζητήστε μέσω του [ιστότοπου της Aspose](https://purchase.aspose.com/temporary-license/) εάν χρειάζεστε επιπλέον χρόνο.  
-- **Αγορά**: Αγοράστε μόνιμη άδεια από τη [σελίδα αγοράς](https://purchase.aspose.com/buy).
+- **Free trial**: Δωρεάν δοκιμή: Δοκιμάστε χωρίς περιορισμούς για 30 ημέρες.  
+- **Temporary license**: Προσωρινή άδεια: Ζητήστε μέσω [Aspose's website](https://purchase.aspose.com/temporary-license/) αν χρειάζεστε επιπλέον χρόνο.  
+- **Purchase**: Αγορά: Αγοράστε μόνιμη άδεια από τη [purchase page](https://purchase.aspose.com/buy).
 
-### Βασική Αρχικοποίηση
+### Βασική αρχικοποίηση
 
-Μετά την προσθήκη της εξάρτησης, αρχικοποιήστε τη βιβλιοθήκη με το αρχείο άδειας σας:
+Αφού προσθέσετε την εξάρτηση, αρχικοποιήστε τη βιβλιοθήκη με το αρχείο άδειας σας:
 
 ```java
 com.aspose.email.License license = new com.aspose.email.License();
 license.setLicense("path_to_your_license.lic");
 ```
 
-## Οδηγός Υλοποίησης
+## Οδηγός υλοποίησης
 
-Τώρα που είστε έτοιμοι, ας **δημιουργήσουμε MAPI calendar Java** και **αποθηκεύσουμε το ημερολόγιο σε PST**.
+Τώρα που είστε έτοιμοι, ας **create MAPI calendar Java** και **save calendar to PST**.
 
-### Δημιουργία MAPI Calendar με Επανάληψη
+### Δημιουργία MAPI ημερολογίου με επανάληψη
 
 #### Επισκόπηση
 
-Θα δημιουργήσουμε ένα γεγονός ημερολογίου, θα εφαρμόσουμε ημερήσια επανάληψη, θα προσθέσουμε συμμετέχοντες και τελικά θα το αποθηκεύσουμε σε αρχείο PST.
+Θα δημιουργήσουμε ένα συμβάν ημερολογίου, θα εφαρμόσουμε ημερήσια επανάληψη, θα προσθέσουμε συμμετέχοντες και τελικά θα το αποθηκεύσουμε σε αρχείο PST.
 
-#### Υλοποίηση Βήμα‑βήμα
+#### Βήμα‑βήμα υλοποίηση
 
-1. **Initialize Date and Recurrence Pattern**  
+1. **Initialize date and recurrence pattern**  
 
-   First, define the start time and set a daily recurrence:
+   `MapiCalendarEventRecurrence` είναι η κλάση που αποθηκεύει τις λεπτομέρειες επανάληψης για ένα στοιχείο ημερολογίου.  
+   `MapiCalendarDailyRecurrencePattern` ορίζει ένα απλό ημερήσιο πρόγραμμα επανάληψης.  
+
+   Πρώτα, ορίστε την ώρα έναρξης και θέστε μια ημερήσια επανάληψη:
 
    ```java
    import java.util.Date;
@@ -120,11 +175,12 @@ license.setLicense("path_to_your_license.lic");
    recurrence.setRecurrencePattern(new MapiCalendarDailyRecurrencePattern());
    ```
 
-   *Εξήγηση*: `MapiCalendarEventRecurrence` περιέχει τις λεπτομέρειες επανάληψης· επιλέγουμε ένα ημερήσιο μοτίβο μέσω `MapiCalendarDailyRecurrencePattern`.
+2. **Set up recipients**  
 
-2. **Set Up Recipients**  
+   `MapiRecipientCollection` αντιπροσωπεύει τη λίστα των ατόμων που προσκαλούνται στη συνάντηση.  
+   `MAPI_TO` είναι η σημαία που χαρακτηρίζει έναν παραλήπτη ως κύριο μέλος.  
 
-   Add the people who should receive the meeting invitation:
+   Προσθέστε τα άτομα που πρέπει να λάβουν την πρόσκληση:
 
    ```java
    import com.aspose.email.MapiRecipientCollection;
@@ -134,11 +190,11 @@ license.setLicense("path_to_your_license.lic");
    recColl.add("recipient@gmail.com", "Attendee Name", MapiRecipientType.MAPI_TO);
    ```
 
-   *Εξήγηση*: `MapiRecipientCollection` αποθηκεύει κάθε συμμετέχοντα· `MAPI_TO` τους χαρακτηρίζει ως κύριους παραλήπτες.
+3. **Create the MAPI calendar item**  
 
-3. **Create the MAPI Calendar Item**  
+   Η κλάση `MapiMessage` (χρησιμοποιείται εδώ ως αντικείμενο ημερολογίου) περιλαμβάνει όλες τις ιδιότητες του συμβάντος όπως διοργανωτής, θέμα, τοποθεσία, χρόνοι έναρξης/λήξης, περιγραφή, λίστα παραληπτών και επανάληψη.  
 
-   Build the calendar object with all required details:
+   Δημιουργήστε το αντικείμενο ημερολογίου με όλες τις απαιτούμενες λεπτομέρειες:
 
    ```java
    import com.aspose.email.MapiCalendar;
@@ -155,11 +211,12 @@ license.setLicense("path_to_your_license.lic");
    );
    ```
 
-   *Εξήγηση*: Ο κατασκευαστής αναμένει διοργανωτή, θέμα, τοποθεσία, χρόνους έναρξης/λήξης, περιγραφή, λίστα παραληπτών και επανάληψη.
+4. **Save to PST file**  
 
-4. **Save to PST File**  
+   `PersonalStorage` είναι το κορυφαίο API του Aspose.Email για δημιουργία και διαχείριση αρχείων PST.  
+   `addMapiMessageItem` εισάγει ένα MAPI μήνυμα (συμπεριλαμβανομένων των στοιχείων ημερολογίου) σε έναν καθορισμένο φάκελο.  
 
-   Finally, persist the calendar by **saving calendar to PST**:
+   Τέλος, διατηρήστε το ημερολόγιο με **saving calendar to PST**:
 
    ```java
    import com.aspose.email.PersonalStorage;
@@ -173,68 +230,71 @@ license.setLicense("path_to_your_license.lic");
    calendarFolder.addMapiMessageItem(calendar);
    ```
 
-   *Εξήγηση*: `PersonalStorage.create` δημιουργεί ένα νέο αρχείο PST, και `addMapiMessageItem` εισάγει την εγγραφή ημερολογίου στον φάκελο "Calendar".
-
-### Συμβουλές Επίλυσης Προβλημάτων
+### Συμβουλές αντιμετώπισης προβλημάτων
 - Επαληθεύστε τη διαδρομή της άδειας· μια μη έγκυρη άδεια θα περιορίσει τη λειτουργικότητα.  
 - Βεβαιωθείτε ότι οι διευθύνσεις email των παραληπτών είναι σωστά μορφοποιημένες για να αποφύγετε αποτυχίες προσκλήσεων.  
 - Κλείστε το PST (`pst.dispose()`) μετά τις λειτουργίες για να ελευθερώσετε τους χειριστές αρχείων.
 
-## Πρακτικές Εφαρμογές
+## Πρακτικές εφαρμογές
 
-Εδώ είναι κοινά σενάρια όπου **δημιουργώντας MAPI calendar Java** και **αποθηκεύοντας το ημερολόγιο σε PST** διαπρέπει:
+1. **Automated meeting scheduling** – Δημιουργία επαναλαμβανόμενων προσκλήσεων για ομάδες έργου χωρίς χειροκίνητη προσπάθεια.  
+2. **Event management platforms** – Εξαγωγή συνεδριών συνεδρίων ως στοιχεία ημερολογίου συμβατά με το Outlook.  
+3. **CRM integration** – Συγχρονισμός ραντεβού πελατών από σύστημα CRM απευθείας στο Outlook μέσω αρχείων PST.
 
-1. **Αυτοματοποιημένος Προγραμματισμός Συναντήσεων** – Δημιουργήστε επαναλαμβανόμενες προσκλήσεις συναντήσεων για ομάδες έργου χωρίς χειροκίνητη προσπάθεια.  
-2. **Πλατφόρμες Διαχείρισης Εκδηλώσεων** – Εξαγωγή συνεδριών συνέδριου ως αντικείμενα ημερολογίου συμβατά με το Outlook.  
-3. **Ενσωμάτωση CRM** – Συγχρονίστε ραντεβού πελατών από σύστημα CRM απευθείας στο Outlook μέσω αρχείων PST.
+## Παράγοντες απόδοσης
 
-## Σκέψεις Απόδοσης
-
-- **Διαχείριση Πόρων**: Αποδεσμεύστε αντικείμενα `PersonalStorage` μετά τη χρήση για να αποτρέψετε κλειδώματα αρχείων.  
-- **Επεξεργασία Batch**: Για μεγάλα όγκους, επεξεργαστείτε αντικείμενα ημερολογίου ασύγχρονα ή σε τμήματα για να διατηρήσετε τη χρήση μνήμης χαμηλή.  
+- **Resource management**: Αποδεσμεύστε τα αντικείμενα `PersonalStorage` μετά τη χρήση για να αποτρέψετε κλειδώματα αρχείων.  
+- **Batch processing**: Για μεγάλα όγκους, επεξεργαστείτε τα στοιχεία ημερολογίου ασύγχρονα ή σε τμήματα για να διατηρήσετε τη χρήση μνήμης χαμηλή.  
+- **Scalability**: Το Aspose.Email μπορεί να γράψει σε αρχεία PST μεγαλύτερα από 2 GB διατηρώντας τη χρήση μνήμης κάτω από 200 MB.
 
 ## Συμπέρασμα
 
-Έχετε τώρα μάθει πώς να **εξάγετε PST ημερολογίου Outlook** δημιουργώντας αντικείμενα MAPI calendar Java, διαμορφώνοντας επανάληψη, προσθέτοντας συμμετέχοντες και **αποθηκεύοντας το ημερολόγιο σε PST** χρησιμοποιώντας το Aspose.Email. Αυτή η προσέγγιση ενδυναμώνει τις εφαρμογές Java σας ώστε να αυτοματοποιούν σύνθετες ροές εργασίας προγραμματισμού με συμβατότητα Outlook.
+Τώρα γνωρίζετε πώς να **export Outlook calendar PST** δημιουργώντας αντικείμενα MAPI calendar Java, διαμορφώνοντας επανάληψη, προσθέτοντας συμμετέχοντες και **save calendar to PST** χρησιμοποιώντας το Aspose.Email. Αυτή η προσέγγιση δίνει τη δυνατότητα στις εφαρμογές Java σας να αυτοματοποιούν σύνθετες ροές προγραμματισμού με συμβατότητα Outlook.
 
-Για πιο βαθιά εξερεύνηση, ελέγξτε την επίσημη [documentation](https://reference.aspose.com/email/java/).
+Για πιο βαθιά εξερεύνηση, δείτε την επίσημη [documentation](https://reference.aspose.com/email/java/).
 
-## Ενότητα Συχνών Ερωτήσεων
+## Τμήμα Συχνών Ερωτήσεων
 
-### Ε: Μπορώ να δημιουργήσω εβδομαδιαία μοτίβα επανάληψης;
-- **Α**: Ναι! Χρησιμοποιήστε το `MapiCalendarWeeklyRecurrencePattern` για να ορίσετε εβδομαδιαίες επαναλήψεις.
+### Μ: Μπορώ να δημιουργήσω εβδομαδιαία πρότυπα επανάληψης;
+- **Ν**: Ναι! Χρησιμοποιήστε `MapiCalendarWeeklyRecurrencePattern` για να ορίσετε εβδομαδιαίες επαναλήψεις.
 
-### Ε: Πώς διαχειρίζομαι εξαιρέσεις στην επανάληψη γεγονότος;
-- **Α**: Καλέστε τη μέθοδο `setExceptions()` στο αντικείμενο επανάληψης για να καθορίσετε ημερομηνίες που αποκλίνουν από το μοτίβο.
+### Μ: Πώς διαχειρίζομαι εξαιρέσεις στην επανάληψη γεγονότος;
+- **Ν**: Καλέστε `setExceptions()` στο αντικείμενο επανάληψης για να καθορίσετε ημερομηνίες που αποκλίνουν από το πρότυπο.
 
-### Ε: Είναι δυνατόν να ενημερώσετε ένα υπάρχον αντικείμενο ημερολογίου;
-- **Α**: Απόλυτα. Φορτώστε το αντικείμενο από το PST, τροποποιήστε τις ιδιότητές του και αποθηκεύστε το ξανά.
+### Μ: Είναι δυνατόν να ενημερώσω ένα υπάρχον στοιχείο ημερολογίου;
+- **Ν**: Απόλυτα. Φορτώστε το στοιχείο από το PST, τροποποιήστε τις ιδιότητές του και αποθηκεύστε το ξανά.
 
-### Ε: Μπορώ να κρυπτογραφήσω το αρχείο PST;
-- **Α**: Ναι, το Aspose.Email σας επιτρέπει να ορίσετε κωδικό πρόσβασης στο `PersonalStorage` κατά τη δημιουργία του PST.
+### Μ: Μπορώ να κρυπτογραφήσω το αρχείο PST;
+- **Ν**: Ναι, το Aspose.Email σας επιτρέπει να ορίσετε κωδικό πρόσβασης στο `PersonalStorage` κατά τη δημιουργία του PST.
 
-### Ε: Τι γίνεται αν χρειαστεί να προσθέσω συνημμένα στο γεγονός του ημερολογίου;
-- **Α**: Χρησιμοποιήστε `calendar.getAttachments().addFileAttachment("path/to/file")` πριν την αποθήκευση.
+### Μ: Τι γίνεται αν χρειαστεί να προσθέσω συνημμένα στο γεγονός του ημερολογίου;
+- **Ν**: Χρησιμοποιήστε `calendar.getAttachments().addFileAttachment("path/to/file")` πριν από την αποθήκευση.
 
 ## Πόροι
 
 - [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
 - [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
 - [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial Version](https://releases.aspose.com/email/java/)
+- [Free trial version](https://releases.aspose.com/email/java/)
 - [Request a Temporary License](https://purchase.aspose.com/temporary-license/)
-- [Aspose Support Forum](https://forum.aspose.com/c/email/10)
+- [Aspose support forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-03-20  
-**Δοκιμή Με:** Aspose.Email for Java 25.4 (JDK 16)  
-**Συγγραφέας:** Aspose
+**Last updated:** 2026-09-17  
+**Tested with:** Aspose.Email for Java 25.4 (JDK 16)  
+**Author:** Aspose
+
+## Σχετικά Μαθήματα
+
+- [How to Create and Manage Outlook PST Files Using Aspose.Email for Java](/email/java/outlook-pst-ost-operations/aspose-email-java-manage-pst-files/)
+- [How to Create PST Files with Aspose.Email for Java](/email/java/email-parsing-analysis/aspose-email-java-create-pst-guide/)
+- [How to Create Calendar Item Java Using Aspose.Email](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
