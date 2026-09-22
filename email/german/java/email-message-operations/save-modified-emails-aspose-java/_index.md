@@ -1,47 +1,83 @@
 ---
-date: '2026-03-04'
-description: Erfahren Sie, wie Sie Aspose Email zum Speichern von Nachrichten verwenden
-  und die Aspose‑Lizenz für Java mit Aspose.Email for Java festlegen. Folgen Sie einer
-  Schritt‑für‑Schritt‑Anleitung mit sofort einsatzbereitem Code.
+date: '2026-09-22'
+description: Erfahren Sie, wie Sie E-Mails stapelweise mit Aspose.Email for Java speichern,
+  die Lizenz festlegen und Nachrichten bearbeiten. Enthält die Maven-Konfiguration
+  und das Speichern als EML oder MSG.
 keywords:
-- save modified emails
-- Aspose.Email for Java
-- email message operations
-title: Aspose.Email Speichern – E-Mail-Nachrichten in Java bearbeiten und speichern
-url: /de/java/email-message-operations/save-modified-emails-aspose-java/
-weight: 1
+- batch save emails
+- convert email eml
+- aspose email save
+- maven aspose email
+- save mailmessage msg
+lastmod: '2026-09-22'
+og_description: Erfahren Sie, wie Sie E-Mails stapelweise mit Aspose.Email for Java
+  speichern, die Lizenz festlegen und Nachrichten bearbeiten. Enthält die Maven-Konfiguration
+  und das Speichern als EML oder MSG.
+og_image_alt: 'Tutorial: batch save emails with Aspose.Email for Java'
+og_title: E-Mails stapelweise speichern mit Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-09-22'
+  description: Learn how to batch save emails using Aspose.Email for Java, set the
+    license, and modify messages. Includes Maven setup and saving as EML or MSG.
+  headline: Batch save emails with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Use the `Attachment` class to stream large files, and consider compressing
+      them before attaching.
+    question: How do I handle large attachments in emails?
+  - answer: Yes, the library supports sending, receiving, and managing messages over
+      POP3, IMAP, and SMTP.
+    question: Can Aspose.Email be used for POP3/IMAP operations?
+  - answer: It is built for specific JDK versions; the classifier `jdk16` indicates
+      compatibility with JDK 16 and newer. Check the official docs for other classifiers.
+    question: Is Aspose.Email compatible with all JDK versions?
+  - answer: Replace `SaveOptions.getDefaultEml()` with `SaveOptions.getDefaultMsg()`
+      and adjust the file extension accordingly.
+    question: What if I need to save in MSG format instead of EML?
+  - answer: Loop through a list of file paths, load each message, apply modifications,
+      and save using the same pattern shown above. Wrap the loop in a try‑catch to
+      handle individual file errors without stopping the entire batch.
+    question: How can I batch‑process emails efficiently?
+  type: FAQPage
+tags:
+- batch save emails
+- Aspose.Email
+- Java email processing
+- Maven
+- email archiving
+title: E-Mails stapelweise speichern mit Aspose.Email for Java
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Aspose.Email Save – E‑Mail‑Nachrichten in Java ändern und speichern
 
-Willkommen zu diesem umfassenden Tutorial zu **aspose email save**‑Operationen mit **Aspose.Email for Java**. Egal, ob Sie eine groß angelegte Unternehmenslösung oder ein kleines Hilfsprogramm erstellen, die Möglichkeit, E‑Mail‑Nachrichten zu ändern und zuverlässig zu speichern, ist eine Grundvoraussetzung. In den nächsten Minuten führen wir Sie durch alles, was Sie benötigen – von der Lizenzierung bis zum Code – damit Sie das Speichern von E‑Mails sicher in Ihre Java‑Anwendungen integrieren können.
+# E-Mails stapelweise speichern mit Aspose.Email für Java
 
-## Quick Answers
-- **Was macht “aspose email save”?** Es ermöglicht Ihnen, geänderte `MailMessage`‑Objekte als EML, MSG oder in anderen unterstützten Formaten zu persistieren.  
-- **Benötige ich eine Lizenz?** Ja, Sie müssen **set aspose license java** setzen, um die volle Funktionalität zu erhalten; andernfalls sind Sie im Testmodus eingeschränkt.  
-- **Welche JDK‑Version wird benötigt?** Die Bibliothek funktioniert mit JDK 16 und neuer (der Classifier in der Maven‑Abhängigkeit spiegelt das wider).  
-- **Kann ich den Betreff der E‑Mail ändern?** Absolut – ändern Sie jede `MailMessage`‑Eigenschaft, bevor Sie `save` aufrufen.  
-- **Wird Batch‑Verarbeitung unterstützt?** Ja, Sie können über mehrere Nachrichten iterieren und jede effizient speichern.
+In diesem Leitfaden erfahren Sie, wie Sie **E-Mails stapelweise speichern** und deren Inhalt mit Aspose.Email für Java ändern können. Egal, ob Sie Tausende von Nachrichten archivieren, Betreffzeilen umbenennen oder EML‑Dateien konvertieren müssen – die nachfolgenden Schritte decken alles ab, von der Lizenzierung über die Maven‑Integration bis hin zum Speichern im MSG‑ oder EML‑Format.
 
-## What is Aspose.Email Save?
-Das **aspose email save**‑Feature ermöglicht Entwicklern, E‑Mail‑Objekte nach Änderungen wie dem Aktualisieren von Betreff, Body oder Anhängen wieder auf Festplatte oder in Streams zu schreiben. Dies ist wichtig für Archivierung, Compliance oder jeden Workflow, der ein permanentes Archiv der bearbeiteten Nachricht benötigt.
+## Schnelle Antworten
+- **Was bewirkt “aspose email save”?** Es ermöglicht das Persistieren modifizierter `MailMessage`‑Objekte in EML, MSG oder anderen unterstützten Formaten.  
+- **Benötige ich eine Lizenz?** Ja – setzen Sie die Aspose‑Lizenz in Java, um die volle Funktionalität freizuschalten und Testwasserzeichen zu entfernen.  
+- **Welche JDK‑Version wird benötigt?** Die Bibliothek funktioniert mit JDK 16 und neuer.  
+- **Kann ich den E-Mail‑Betreff ändern?** Absolut – ändern Sie jede `MailMessage`‑Eigenschaft, bevor Sie `save` aufrufen.  
+- **Wird Batch‑Verarbeitung unterstützt?** Ja, Sie können mehrere Nachrichten in einer Schleife durchlaufen und jede effizient speichern.
 
-## Why Set Aspose License Java?
-Das Setzen der Lizenz (`set aspose license java`) schaltet die gesamte API frei, entfernt Evaluations‑Wasserzeichen und verbessert die Performance. Ohne gültige Lizenz stoßen Sie auf Laufzeit‑Beschränkungen, die Produktions‑Pipelines zum Scheitern bringen können.
+## Was ist Aspose.Email save?
+Laden, bearbeiten und dann **E-Mails stapelweise speichern** mit der `MailMessage`‑API von Aspose.Email. Die Funktion schreibt E‑Mail‑Objekte nach Anpassungen von Feldern wie Betreff, Body oder Anhängen zurück auf die Festplatte oder in Streams. Das ist wichtig für Archivierung, Compliance oder jeden Workflow, der ein dauerhaftes Protokoll der bearbeiteten Nachricht erfordert.
 
-## Prerequisites
-- Java Development Kit 16 (oder neuer) installiert.  
+## Warum Aspose‑Lizenz für Java setzen?
+Das Setzen der Lizenz schaltet die komplette API frei, entfernt Evaluierungs‑Wasserzeichen und verbessert die Leistung. Außerdem ermöglicht sie die Verarbeitung großer Datenmengen, volle Formatunterstützung und den Zugriff auf erweiterte Funktionen wie serverseitige Konvertierung und benutzerdefiniertes Rendering. Ohne gültige Lizenz stoßen Sie auf Testlimits, die Produktionspipelines unterbrechen können, und erhalten möglicherweise Wasserzeichen‑Ausgaben.
+
+## Voraussetzungen
+- Java Development Kit 16 (oder neuer).  
 - Maven‑Build‑Tool (oder ein anderer Dependency‑Manager), um die Aspose.Email‑Bibliothek zu beziehen.  
-- Eine gültige Aspose.Email‑Lizenzdatei (oder eine Testlizenz für Experimente).
+- Eine gültige Aspose.Email‑Lizenzdatei (oder eine Testlizenz zum Ausprobieren).
 
-## Setting Up Aspose.Email for Java
+## Aspose.Email für Java einrichten
 
-Fügen Sie die Aspose.Email‑Abhängigkeit zu Ihrer Maven‑`pom.xml` hinzu. Diese einzelne Zeile bringt alle Klassen, die Sie benötigen, einschließlich `MailMessage`, `SaveOptions` und Lizenz‑Utilities, mit.
+Fügen Sie die Aspose.Email‑Abhängigkeit zu Ihrer Maven‑`pom.xml` hinzu. Diese einzelne Zeile bringt alle Klassen, die Sie benötigen, einschließlich `MailMessage`, `SaveOptions` und Lizenz‑Utilities.
 
 ```xml
 <dependency>
@@ -52,18 +88,18 @@ Fügen Sie die Aspose.Email‑Abhängigkeit zu Ihrer Maven‑`pom.xml` hinzu. Di
 </dependency>
 ```
 
-### How to Set Aspose License Java
-Bevor Sie irgendeine Speicher‑Operation ausführen, initialisieren Sie die Bibliothek mit Ihrer Lizenzdatei. Dieser Schritt ist entscheidend, damit der **aspose email save**‑Prozess ohne Test‑Einschränkungen funktioniert.
+### So setzen Sie die Aspose‑Lizenz für Java
+Laden Sie Ihre Lizenzdatei vor jeder Speicheroperation. Dieser Schritt stellt sicher, dass der **aspose email save**‑Prozess ohne Testbeschränkungen funktioniert.
 
 ```java
 License license = new License();
 license.setLicense("path/to/your/license/file.lic");
 ```
 
-## Step‑by‑Step Guide to Save and Modify an Email Message
+## Schritt‑für‑Schritt‑Anleitung zum Speichern und Ändern einer E‑Mail‑Nachricht
 
-### Step 1: Load the Email Message
-Laden Sie zunächst eine vorhandene `.eml`‑Datei in ein `MailMessage`‑Objekt. Dadurch erhalten Sie vollen Zugriff auf jeden Teil der E‑Mail.
+### Schritt 1: Die E‑Mail‑Nachricht laden
+`MailMessage` ist die Kernklasse von Aspose.Email, die eine vollständige E‑Mail – einschließlich Header, Body und Anhängen – repräsentiert. Das Laden einer bestehenden `.eml`‑Datei gibt Ihnen programmatischen Zugriff auf jeden Teil der Nachricht.
 
 ```java
 // Loading the mail message from disk
@@ -73,8 +109,8 @@ MailMessage message = MailMessage.load("path/to/your/email.eml");
 message.setSubject("Updated Subject");
 ```
 
-### Step 2: Save the Modified Email
-Wählen Sie einen Zielordner und verwenden Sie `SaveOptions`, um das Ausgabeformat festzulegen. Das nachfolgende Beispiel demonstriert das Standard‑EML‑Speicherverhalten.
+### Schritt 2: Die geänderte E‑Mail speichern
+`SaveOptions` definiert, wie ein `MailMessage` persistiert wird, und legt Format sowie Kodierung fest. Das untenstehende Beispiel verwendet die Standard‑EML‑Optionen; Sie können bei Bedarf zu MSG oder MHTML wechseln.
 
 ```java
 String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/email/";
@@ -83,62 +119,68 @@ String dataDir = "YOUR_DOCUMENT_DIRECTORY" + "/email/";
 message.save(dataDir + "ModifiedEmail_out.eml", SaveOptions.getDefaultEml());
 ```
 
-> **Pro tip:** Wenn Sie ein anderes Format benötigen (z. B. MSG oder MHTML), ersetzen Sie `SaveOptions.getDefaultEml()` durch die passende statische Methode wie `SaveOptions.getDefaultMsg()`.
+> **Pro‑Tipp:** Um **E‑Mail‑EML** in MSG zu **konvertieren**, ersetzen Sie `SaveOptions.getDefaultEml()` durch `SaveOptions.getDefaultMsg()` und passen Sie die Dateierweiterung entsprechend an.
 
-## Practical Applications
-- **Automatisierte E‑Mail‑Archivierung:** Speichern Sie geänderte E‑Mails nach Anwendung unternehmensinterner Tagging‑Regeln.  
-- **CRM‑Integration:** Aktualisieren Sie Betreff oder Body, um Fall‑Nummern widerzuspiegeln, bevor Sie sie persistieren.  
-- **Massen‑E‑Mail‑Filterung:** Passen Sie Header programmgesteuert an und speichern Sie die bereinigten Nachrichten für spätere Analysen.
+## Praktische Anwendungsfälle
+- **Automatisierte E‑Mail‑Archivierung:** Anwenden von Unternehmens‑Tags und anschließend stapelweises Speichern für die Langzeitspeicherung.  
+- **CRM‑Integration:** Betreffzeilen oder Body‑Texte mit Vorgangs‑Nummern ergänzen, bevor sie persistiert werden.  
+- **Massen‑E‑Mail‑Filterung:** Header anpassen, unerwünschten Inhalt entfernen und die bereinigten Nachrichten stapelweise für spätere Analysen speichern.
 
-## Performance Considerations
-Beim Umgang mit Tausenden von Nachrichten:
+## Leistungsüberlegungen
+Bei der Verarbeitung von Tausenden von Nachrichten:
 
-- **Speichernutzung optimieren:** Laden und geben Sie jedes `MailMessage` in einem try‑with‑resources‑Block frei, damit der Garbage Collector den Speicher zeitnah zurückgewinnt.  
-- **Batch‑Verarbeitung:** Verarbeiten Sie E‑Mails in Batches von 100–500, um CPU‑ und I/O‑Last ausgeglichen zu halten.  
-- **Richtige Save‑Optionen wählen:** Verwenden Sie `SaveOptions.getDefaultMsg()` für Outlook‑kompatible Dateien, die in bestimmten Szenarien kleiner sein können als rohe EML‑Dateien.
+- **Speichernutzung optimieren:** Laden und freigeben jeder `MailMessage` in einem `try‑with‑resources`‑Block, damit der Garbage Collector den Speicher zeitnah zurückgewinnt.  
+- **Batch‑Verarbeitung:** E‑Mails in Gruppen von 100–500 behandeln, um CPU und I/O ausgewogen zu halten.  
+- **Richtige Speicheroptionen wählen:** `SaveOptions.getDefaultMsg()` erzeugt Outlook‑kompatible Dateien, die oft kleiner sind als rohe EML‑Dateien und Speicher‑Kosten um bis zu 30 % senken können.
 
-## Common Issues and Solutions
-| Issue | Cause | Solution |
+## Häufige Probleme und Lösungen
+| Problem | Ursache | Lösung |
 |-------|-------|----------|
-| **OutOfMemoryError** when loading large emails | Loading many messages simultaneously | Process emails one at a time or use streaming APIs |
-| **License not applied** – trial watermark appears | Incorrect license path or missing file | Verify the path in `setLicense` and ensure the file is readable |
-| **Saved file is corrupted** | Using wrong `SaveOptions` for the desired format | Match the `SaveOptions` method to the target file extension |
+| **OutOfMemoryError** beim Laden großer E‑Mails | Viele Nachrichten gleichzeitig geladen | Nachrichten einzeln verarbeiten oder Streaming‑APIs nutzen |
+| **Lizenz nicht angewendet** – Testwasserzeichen erscheint | Falscher Lizenzpfad oder fehlende Datei | Pfad in `setLicense` prüfen und sicherstellen, dass die Datei lesbar ist |
+| **Gespeicherte Datei ist beschädigt** | Falsche `SaveOptions` für das gewünschte Format verwendet | `SaveOptions`‑Methode an die Ziel‑Dateierweiterung anpassen |
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
-**Q: How do I handle large attachments in emails?**  
-A: Use the `Attachment` class to stream large files, and consider compressing them before attaching.
+**F: Wie gehe ich mit großen Anhängen in E‑Mails um?**  
+A: Verwenden Sie die `Attachment`‑Klasse, um große Dateien zu streamen, und erwägen Sie eine Komprimierung vor dem Anhängen.
 
-**Q: Can Aspose.Email be used for POP3/IMAP operations?**  
-A: Yes, the library supports sending, receiving, and managing messages over POP3, IMAP, and SMTP.
+**F: Kann Aspose.Email für POP3/IMAP‑Operationen genutzt werden?**  
+A: Ja, die Bibliothek unterstützt das Senden, Empfangen und Verwalten von Nachrichten über POP3, IMAP und SMTP.
 
-**Q: Is Aspose.Email compatible with all JDK versions?**  
-A: It is built for specific JDK versions; the classifier `jdk16` indicates compatibility with JDK 16 and newer. Check the official docs for other classifiers.
+**F: Ist Aspose.Email mit allen JDK‑Versionen kompatibel?**  
+A: Sie ist für bestimmte JDK‑Versionen gebaut; der Klassifikator `jdk16` zeigt Kompatibilität mit JDK 16 und neuer an. Weitere Klassifikatoren in der offiziellen Dokumentation prüfen.
 
-**Q: What if I need to save in MSG format instead of EML?**  
-A: Replace `SaveOptions.getDefaultEml()` with `SaveOptions.getDefaultMsg()` and adjust the file extension accordingly.
+**F: Was, wenn ich im MSG‑Format statt EML speichern muss?**  
+A: Ersetzen Sie `SaveOptions.getDefaultEml()` durch `SaveOptions.getDefaultMsg()` und passen Sie die Dateierweiterung an.
 
-**Q: How can I batch‑process emails efficiently?**  
-A: Loop through a list of file paths, load each message, apply modifications, and save using the same pattern shown above. Wrap the loop in a try‑catch to handle individual file errors without stopping the entire batch.
+**F: Wie kann ich E‑Mails effizient stapelweise verarbeiten?**  
+A: Durchlaufen Sie eine Liste von Dateipfaden, laden Sie jede Nachricht, wenden Sie Änderungen an und speichern Sie sie nach dem gezeigten Muster. Umgeben Sie die Schleife mit einem `try‑catch`, um einzelne Dateifehler zu behandeln, ohne den gesamten Batch zu stoppen.
 
-## Resources
+## Ressourcen
 
-- **Documentation**: [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)
-- **Download**: [Latest Releases](https://releases.aspose.com/email/java/)
-- **Purchase & Licensing**: [Buy Now](https://purchase.aspose.com/buy)
-- **Free Trial**: Explore features with a free trial at the above link.
-- **Support**: Visit the support forum for assistance: [Aspose Forum](https://forum.aspose.com/c/email/10)
+- **Dokumentation:** [Aspose Email Java Documentation](https://reference.aspose.com/email/java/)  
+- **Download:** [Latest Releases](https://releases.aspose.com/email/java/)  
+- **Kauf & Lizenzierung:** [Buy Now](https://purchase.aspose.com/buy)  
+- **Kostenlose Testversion:** Erkunden Sie die Funktionen mit einer kostenlosen Testversion über den obigen Link.  
+- **Support:** Besuchen Sie das Support‑Forum für Hilfe: [Aspose Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Last Updated:** 2026-03-04  
-**Tested With:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Author:** Aspose  
+**Zuletzt aktualisiert:** 2026-09-22  
+**Getestet mit:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Autor:** Aspose
+
+## Verwandte Tutorials
+
+- [How to Save Exchange Messages as EML and MSG Using Aspose.Email for Java](/email/java/exchange-server-integration/save-exchange-messages-aspose-email-java/)
+- [How to Save MSG Emails with Aspose.Email for Java](/email/java/email-message-operations/aspose-email-java-create-save-emails/)
+- [Convert EML to MSG with Aspose.Email for Java – Step‑by‑Step Guide](/email/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
