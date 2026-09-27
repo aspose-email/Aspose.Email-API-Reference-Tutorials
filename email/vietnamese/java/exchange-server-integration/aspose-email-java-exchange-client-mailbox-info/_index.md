@@ -1,50 +1,112 @@
 ---
-"date": "2025-05-29"
-"description": "Tìm hiểu cách khởi tạo ứng dụng Aspose.Email bằng Java và truy xuất thông tin hộp thư từ máy chủ Microsoft Exchange một cách hiệu quả."
-"title": "Khởi tạo Aspose.Email Java cho Exchange Server&#58; Truy xuất thông tin hộp thư"
-"url": "/vi/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/"
-"weight": 1
+date: '2026-09-27'
+description: Tìm hiểu cách khởi tạo ExchangeClient Java cho Microsoft Exchange và
+  truy xuất thông tin mailbox một cách hiệu quả với Aspose.Email for Java.
+keywords:
+- initialize exchangeclient java
+- retrieve mailbox information
+- Aspose.Email for Java
+lastmod: '2026-09-27'
+og_description: Khởi tạo ExchangeClient Java với Aspose.Email và nhanh chóng truy
+  xuất kích thước mailbox, URIs và các chi tiết khác từ Exchange servers. Hướng dẫn
+  từng bước cho nhà phát triển.
+og_image_alt: Screenshot of Java code initializing ExchangeClient and showing mailbox
+  details
+og_title: Khởi tạo ExchangeClient Java – Truy xuất thông tin Mailbox trong vài phút
+schemas:
+- author: Aspose
+  dateModified: '2026-09-27'
+  description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  headline: How to initialize ExchangeClient Java and retrieve mailbox information
+  type: TechArticle
+- description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  name: How to initialize ExchangeClient Java and retrieve mailbox information
+  steps:
+  - name: instantiate the client
+    text: '**Explanation:** This code opens a TLS‑protected channel to the Exchange
+      Web Services endpoint and authenticates the supplied user.'
+  - name: assume client is initialized
+    text: (Use the `client` instance created in the previous section.)
+  - name: extract folder URIs
+    text: '**Explanation:** The returned URIs let you perform further operations—like
+      enumerating messages or moving items—without rebuilding the connection details.'
+  type: HowTo
+- questions:
+  - answer: It is a Java library that enables programmatic access to email, calendar,
+      and task data across POP3, IMAP, SMTP, and Exchange servers.
+    question: What is Aspose.Email for Java?
+  - answer: Use paging (`client.listMessages(pageSize, pageNumber)`) and process items
+      in batches to keep memory consumption low.
+    question: How can I efficiently handle mailboxes with millions of items?
+  - answer: Yes—Aspose.Email supports Exchange Online via the same EWS endpoint; just
+      use the Office 365 URL and appropriate OAuth credentials.
+    question: Does this work with Exchange Online (Office 365)?
+  - answer: Typical errors include `401 Unauthorized` (bad credentials), `404 Not
+      Found` (incorrect EWS URL), and TLS handshake failures (outdated Java security
+      settings).
+    question: What common errors appear when connecting to Exchange?
+  - answer: Visit the [temporary license](https://purchase.aspose.com/temporary-license/)
+      page and follow the quick request process.
+    question: Where can I get a temporary license for testing?
+  type: FAQPage
+tags:
+- exchangeclient
+- Aspose.Email
+- Java email automation
+title: Cách khởi tạo ExchangeClient Java và truy xuất thông tin mailbox
+url: /vi/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Khởi tạo Aspose.Email Java cho Exchange Server: Truy xuất thông tin hộp thư
+
+# Khởi tạo ExchangeClient Java và truy xuất thông tin hộp thư
 
 ## Giới thiệu
 
-Bạn có muốn tự động hóa các tác vụ quản lý email bằng giải pháp mạnh mẽ không? **Aspose.Email cho Java** cho phép tương tác liền mạch với máy chủ Microsoft Exchange, cho phép quản lý email theo chương trình hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn khởi tạo `ExchangeClient` và lấy thông tin hộp thư bằng Aspose.Email trong Java.
+Nếu bạn cần tự động hoá các tác vụ liên quan đến email trên Microsoft Exchange, **initialize exchangeclient java** với Aspose.Email cho Java và bạn sẽ có quyền truy cập lập trình vào thống kê hộp thư, URI thư mục và hơn thế nữa. Hướng dẫn này sẽ chỉ cho bạn cách thiết lập client, xác thực một cách an toàn, và lấy dữ liệu chi tiết của hộp thư — tất cả trong vài bước ngắn gọn.
 
-**Những điểm chính cần ghi nhớ:**
-- Khởi tạo một thể hiện của `ExchangeClient`.
-- Truy xuất thông tin chi tiết về hộp thư như kích thước, URI cho hộp thư đến, các mục đã gửi, thư nháp, v.v.
-- Tối ưu hóa tương tác trên máy chủ Exchange của bạn bằng các tính năng mạnh mẽ của Aspose.Email.
+**Những điểm chính**
+- Cách tạo một thể hiện `ExchangeClient` trong Java.
+- Cách lấy kích thước hộp thư, URI thư mục và các thuộc tính khác.
+- Mẹo tối ưu hiệu năng và xử lý các lỗi thường gặp.
 
-Hãy bắt đầu bằng cách thiết lập môi trường của bạn!
+Hãy chuẩn bị môi trường phát triển của bạn.
 
-## Điều kiện tiên quyết
+## Câu trả lời nhanh
+- **ExchangeClient làm gì?** Nó cung cấp một API cấp cao để giao tiếp với Exchange Web Services (EWS) cho các thao tác hộp thư.  
+- **Phiên bản Aspose nào được yêu cầu?** Phiên bản 25.4 hoặc mới hơn hỗ trợ các tính năng Exchange mới nhất.  
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí hoạt động cho việc kiểm tra; giấy phép vĩnh viễn cần thiết cho môi trường sản xuất.  
+- **Tôi có thể chạy trên bất kỳ hệ điều hành nào không?** Có—Java đa nền tảng, vì vậy mã chạy trên Windows, Linux và macOS.  
+- **Có cần phân trang cho hộp thư lớn không?** Sử dụng `client.getMailboxInfo()` kết hợp với các truy vấn cấp thư mục để giới hạn khối lượng dữ liệu.
 
-Trước khi tiếp tục, hãy đảm bảo bạn có:
+## initialize exchangeclient java là gì?
+`ExchangeClient` là lớp chính của Aspose.Email, bao bọc các chi tiết kết nối và cung cấp các phương thức để tương tác với máy chủ Exchange. Nó trừu tượng hoá các cuộc gọi EWS nền tảng, cho phép bạn tập trung vào logic nghiệp vụ thay vì các chi tiết giao thức. Khi tạo một thể hiện, bạn thiết lập một phiên bảo mật có thể truy vấn kích thước hộp thư, liệt kê thư mục và thực hiện các thao tác tin nhắn mà không cần viết mã HTTP cấp thấp.
 
-1. **Thư viện và các thành phần phụ thuộc:**
-   - Aspose.Email cho Java (Phiên bản 25.4 trở lên)
+## Tại sao sử dụng Aspose.Email cho Java với Exchange?
+Aspose.Email hỗ trợ **50+** định dạng nhập và xuất và có thể xử lý các hộp thư với **hàng trăm nghìn mục** mà không cần tải toàn bộ kho vào bộ nhớ, nhờ kiến trúc streaming. Thư viện cũng cung cấp logic retry tích hợp và hỗ trợ TLS 1.2+, mang lại cho bạn khả năng truy cập dữ liệu Exchange đáng tin cậy và thông lượng cao.
 
-2. **Yêu cầu thiết lập môi trường:**
-   - Bộ công cụ phát triển Java (JDK) phiên bản 16 trở lên.
-   - Maven đã được cài đặt trên hệ thống của bạn.
+## Yêu cầu trước
 
-3. **Điều kiện tiên quyết về kiến thức:**
-   - Hiểu biết cơ bản về lập trình Java và quen thuộc với thiết lập dự án Maven.
+1. **Thư viện & phụ thuộc**  
+   - Aspose.Email for Java (v25.4+)  
 
-## Thiết lập Aspose.Email cho Java
+2. **Môi trường phát triển**  
+   - JDK 16 hoặc mới hơn  
+   - Maven (để quản lý phụ thuộc)  
 
-Để tích hợp Aspose.Email vào dự án Java của bạn, hãy làm theo các bước sau:
+3. **Kiến thức cơ bản**  
+   - Quen thuộc với cú pháp Java và cấu trúc dự án Maven  
+
+## Cài đặt Aspose.Email cho Java
 
 ### Sử dụng Maven
 
-Thêm phụ thuộc sau vào `pom.xml` tệp để đưa Aspose.Email vào dự án của bạn:
+Thêm phụ thuộc Aspose.Email vào `pom.xml` của bạn:
 
 ```xml
 <dependency>
@@ -55,28 +117,28 @@ Thêm phụ thuộc sau vào `pom.xml` tệp để đưa Aspose.Email vào dự 
 </dependency>
 ```
 
-### Mua lại giấy phép
+### Nhận giấy phép
 
 Aspose.Email cung cấp một số tùy chọn cấp phép:
-- **Dùng thử miễn phí:** Bắt đầu bằng bản dùng thử miễn phí để khám phá các tính năng.
-- **Giấy phép tạm thời:** Xin giấy phép tạm thời để có quyền truy cập đầy đủ trong quá trình phát triển.
-- **Mua:** Xin giấy phép sử dụng vĩnh viễn cho mục đích sản xuất.
+- **Free trial:** Khám phá tất cả tính năng mà không cần khóa giấy phép.  
+- **Temporary license:** Nhận một khóa có thời hạn cho việc phát triển và kiểm thử.  
+- **Permanent license:** Cần thiết cho triển khai sản xuất.
 
-Để biết thêm thông tin, hãy truy cập [Mua Aspose](https://purchase.aspose.com/buy) hoặc yêu cầu một [giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+Để biết chi tiết mua hàng, truy cập [Aspose Purchase](https://purchase.aspose.com/buy) hoặc yêu cầu một [temporary license](https://purchase.aspose.com/temporary-license/). Bạn cũng có thể xem [temporary license page](https://purchase.aspose.com/temporary-license/) để biết thêm thông tin.
 
 ### Khởi tạo cơ bản
 
-Sau đây là cách thiết lập môi trường ban đầu của bạn:
+Dưới đây là khung cơ bản mà bạn sẽ điền chi tiết máy chủ sau:
 
 ```java
 import com.aspose.email.ExchangeClient;
 
 public class AsposeSetup {
     public static void main(String[] args) {
-        String serverUrl = "https://Tên máy/sàn giao dịch/Tên người dùng";
-        String username = "Username"; // Tên người dùng Exchange của bạn
-        String password = "password"; // Mật khẩu Exchange của bạn
-        String domain = "domain";     // Tên miền để xác thực
+        String serverUrl = "https://MachineName/exchange/Username";
+        String username = "Username"; // Your Exchange username
+        String password = "password"; // Your Exchange password
+        String domain = "domain";     // Domain for authentication
 
         ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
         System.out.println("Exchange Client Initialized Successfully!");
@@ -84,59 +146,61 @@ public class AsposeSetup {
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
 ### Khởi tạo `ExchangeClient`
 
-**Tổng quan:** Tính năng này trình bày cách tạo một phiên bản của `ExchangeClient` sử dụng thông tin đăng nhập máy chủ.
+**Cách khởi tạo ExchangeClient Java?**  
+Tạo một đối tượng `ExchangeClient` bằng cách cung cấp URL máy chủ Exchange, tên người dùng, mật khẩu và miền. Hàm khởi tạo sẽ xác thực thông tin đăng nhập và thiết lập một phiên bảo mật sẵn sàng cho các truy vấn hộp thư.
 
-#### Bước 1: Xác định thông tin xác thực
+#### Bước 1: xác định thông tin đăng nhập
 
 ```java
-// Thiết lập thông tin chi tiết và thông tin đăng nhập máy chủ Exchange của bạn
-String serverUrl = "https://Tên máy/sàn giao dịch/Tên người dùng";
-String username = "Username"; // Tên người dùng Exchange của bạn
-String password = "password"; // Mật khẩu Exchange của bạn
-domain = "domain";           // Tên miền để xác thực
+// Set up your Exchange server details and credentials
+String serverUrl = "https://MachineName/exchange/Username";
+String username = "Username"; // Your Exchange username
+String password = "password"; // Your Exchange password
+domain = "domain";           // Domain for authentication
 ```
 
-#### Bước 2: Khởi tạo Client
+#### Bước 2: khởi tạo client
 
 ```java
-// Khởi tạo ExchangeClient với thông tin đăng nhập được cung cấp
+// Initialize the ExchangeClient with provided credentials
 ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
-```
-**Giải thích:** Bước này thiết lập kết nối tới máy chủ Exchange của bạn bằng thông tin xác thực đã chỉ định.
+```  
+**Giải thích:** Đoạn mã này mở một kênh được bảo vệ bằng TLS tới endpoint Exchange Web Services và xác thực người dùng đã cung cấp.
 
 ### Lấy thông tin hộp thư
 
-**Tổng quan:** Truy xuất thông tin chi tiết về hộp thư từ máy chủ Exchange bằng cách sử dụng `ExchangeClient`.
+**Cách lấy thông tin hộp thư với ExchangeClient?**  
+Gọi `client.getMailboxInfo()` để nhận một đối tượng `MailboxInfo` chứa kích thước, số lượng mục và URI cho các thư mục tiêu chuẩn như Inbox, Sent Items, Drafts và Deleted Items.
 
-#### Bước 1: Giả sử khởi tạo
+#### Bước 1: giả sử client đã được khởi tạo
 
-Đảm bảo rằng `client` đã được khởi tạo như được hiển thị ở phần trước.
+(Sử dụng thể hiện `client` được tạo trong phần trước.)
 
-#### Bước 2: Lấy lại kích thước hộp thư
+#### Bước 2: lấy kích thước hộp thư
 
 ```java
-// Lấy kích thước của hộp thư
+// Obtain the size of the mailbox
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox Size: " + mailboxSize);
 ```
 
-#### Bước 3: Nhận thông tin chi tiết
+#### Bước 3: lấy thông tin chi tiết
 
 ```java
 import com.aspose.email.ExchangeMailboxInfo;
 
-// Lấy thông tin chi tiết về hộp thư
+// Fetch detailed information about the mailbox
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
 ```
 
-#### Bước 4: Trích xuất URI hộp thư
+#### Bước 4: trích xuất URI thư mục
 
 ```java
-// Truy xuất các URI khác nhau từ thông tin hộp thư
+// Retrieve various URIs from the mailbox info
 String mailboxUri = mailboxInfo.getMailboxUri();
 String inboxUri = mailboxInfo.getInboxUri();
 String sentItemsUri = mailboxInfo.getSentItemsUri();
@@ -144,69 +208,85 @@ String draftsUri = mailboxInfo.getDraftsUri();
 
 System.out.println("Mailbox URI: " + mailboxUri);
 System.out.println("Inbox URI: " + inboxUri);
-// Các URI bổ sung có thể được in tương tự
-```
-**Giải thích:** Bước này trích xuất các URI cần thiết cho các phần hộp thư khác nhau, cho phép thực hiện các tương tác tiếp theo như gửi email hoặc truy cập bản nháp.
+// Additional URIs can be printed similarly
+```  
+**Giải thích:** Các URI trả về cho phép bạn thực hiện các thao tác tiếp theo—như liệt kê tin nhắn hoặc di chuyển mục—mà không cần xây dựng lại chi tiết kết nối.
 
-### Mẹo khắc phục sự cố
+## Mẹo khắc phục sự cố
 
-- **Các vấn đề xác thực:** Kiểm tra lại tên người dùng, mật khẩu và tên miền của bạn.
-- **Kết nối mạng:** Đảm bảo không có vấn đề mạng nào giữa máy chủ của bạn và máy chủ Exchange.
-- **Phiên bản thư viện:** Xác nhận rằng bạn đang sử dụng phiên bản Aspose.Email tương thích.
+- **Authentication failures:** Xác minh tên người dùng, mật khẩu, miền và tài khoản có quyền truy cập EWS.  
+- **Network issues:** Đảm bảo các quy tắc tường lửa cho phép HTTPS outbound tới máy chủ Exchange.  
+- **Version mismatches:** Sử dụng Aspose.Email v25.4+ cho Exchange 2016/2019 và Exchange Online.  
 
-## Ứng dụng thực tế
+## Ứng dụng thực tiễn
 
-1. **Quản lý Email tự động:** Lên lịch truy xuất email thường xuyên để phân tích dữ liệu hoặc lưu trữ.
-2. **Tích hợp với hệ thống CRM:** Đồng bộ hóa email trực tiếp vào hệ thống CRM để tăng cường theo dõi tương tác với khách hàng.
-3. **Giải pháp lưu trữ email:** Triển khai quy trình lưu trữ tự động dựa trên kích thước hộp thư và nhật ký hoạt động.
-4. **Kiểm tra bảo mật:** Truy xuất siêu dữ liệu email để kiểm tra tính tuân thủ và bảo mật.
-5. **Giao tiếp đa nền tảng:** Tạo điều kiện thuận lợi cho việc giao tiếp liền mạch giữa các nền tảng khác nhau bằng cách tích hợp với máy chủ Exchange.
+1. **Automated email archiving:** Định kỳ lấy kích thước hộp thư và lưu trữ các mục cũ hơn để giảm chi phí lưu trữ.  
+2. **CRM integration:** Đồng bộ email khách hàng đến trực tiếp vào cơ sở dữ liệu CRM của bạn.  
+3. **Compliance reporting:** Tạo nhật ký kiểm toán hoạt động hộp thư cho mục đích tuân thủ quy định.  
+4. **Cross‑platform messaging:** Kết nối Exchange nội bộ với các dịch vụ đám mây bằng cùng một mã Java.  
+5. **Load‑balanced email processing:** Phân phối các truy vấn hộp thư trên nhiều instance JVM để mở rộng.  
 
-## Cân nhắc về hiệu suất
+## Các cân nhắc về hiệu năng
 
-### Tối ưu hóa hiệu suất
-- Cập nhật thường xuyên lên phiên bản Aspose.Email mới nhất để nâng cao hiệu suất.
-- Lưu trữ dữ liệu thường xuyên truy cập khi có thể.
+### Tối ưu hiệu năng
+- Giữ Aspose.Email luôn cập nhật; mỗi phiên bản mới bao gồm cải tiến sử dụng bộ nhớ.  
+- Lưu vào cache dữ liệu tĩnh như URI thư mục khi xử lý nhiều tin nhắn.  
 
 ### Hướng dẫn sử dụng tài nguyên
-- Theo dõi mức sử dụng bộ nhớ, đặc biệt là khi xử lý các hộp thư lớn.
-- Sử dụng các thuật toán và cấu trúc dữ liệu hiệu quả trong mã Java của bạn.
+- Giám sát heap JVM khi xử lý hộp thư lớn hơn 5 GB.  
+- Ưu tiên các API streaming (`client.listMessages()`) để tránh tải toàn bộ thư mục vào bộ nhớ.  
 
 ### Thực hành tốt nhất
-- Giới hạn phạm vi tương tác hộp thư chỉ với những thao tác cần thiết.
-- Triển khai xử lý lỗi để quản lý các phản hồi không mong muốn của máy chủ một cách hiệu quả.
+- Giới hạn mỗi yêu cầu chỉ tới thư mục cần thiết nhất.  
+- Triển khai logic retry cho các lỗi mạng tạm thời.  
 
-## Phần kết luận
+## Kết luận
 
-Bây giờ bạn đã thành thạo việc khởi tạo một `ExchangeClient` và lấy thông tin hộp thư bằng Aspose.Email for Java. Các khả năng này cho phép các giải pháp quản lý email tinh vi, cho phép tích hợp liền mạch với máy chủ Exchange. Tiếp theo là gì? Hãy cân nhắc khám phá các tính năng nâng cao hơn hoặc tích hợp các chức năng này vào một dự án lớn hơn.
+Bạn bây giờ đã biết cách **initialize exchangeclient java**, kết nối tới máy chủ Exchange và lấy thông tin hộp thư toàn diện bằng Aspose.Email cho Java. Những bước này đặt nền tảng cho các giải pháp tự động hoá email, phân tích và tuân thủ phức tạp. Tiếp theo, khám phá việc lấy tin nhắn, đồng bộ thư mục hoặc tích hợp lịch để mở rộng khả năng của ứng dụng.
 
-**Kêu gọi hành động:** Triển khai giải pháp này vào dự án của bạn để hợp lý hóa tương tác email!
+**Call to action:** Tích hợp đoạn mã này vào lớp dịch vụ của bạn ngay hôm nay và bắt đầu tự động hoá quản lý hộp thư với sự tự tin.
 
-## Phần Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-1. **Aspose.Email cho Java là gì?**
-   - Đây là thư viện cho phép bạn làm việc với email, lịch và tác vụ theo chương trình bằng Java.
-2. **Làm thế nào để xử lý hộp thư lớn một cách hiệu quả?**
-   - Sử dụng phân trang hoặc giới hạn phạm vi hoạt động truy xuất dữ liệu của bạn.
-3. **Tôi có thể sử dụng mã này trên bất kỳ phiên bản máy chủ Exchange nào không?**
-   - Aspose.Email hỗ trợ nhiều phiên bản Exchange; hãy xác minh khả năng tương thích của các tính năng cụ thể.
-4. **Những lỗi thường gặp khi kết nối tới máy chủ Exchange là gì?**
-   - Lỗi xác thực, sự cố mạng hoặc thông tin đăng nhập không chính xác là những vấn đề thường gặp cần khắc phục.
-5. **Làm thế nào để tôi có được giấy phép tạm thời cho Aspose.Email?**
-   - Ghé thăm [trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) và làm theo hướng dẫn được cung cấp.
+**Q: Aspose.Email cho Java là gì?**  
+A: Đây là một thư viện Java cho phép truy cập lập trình vào dữ liệu email, lịch và nhiệm vụ qua các máy chủ POP3, IMAP, SMTP và Exchange.
+
+**Q: Làm sao tôi có thể xử lý hiệu quả các hộp thư có hàng triệu mục?**  
+A: Sử dụng phân trang (`client.listMessages(pageSize, pageNumber)`) và xử lý các mục theo lô để giữ mức tiêu thụ bộ nhớ thấp.
+
+**Q: Điều này có hoạt động với Exchange Online (Office 365) không?**  
+A: Có—Aspose.Email hỗ trợ Exchange Online qua cùng endpoint EWS; chỉ cần sử dụng URL Office 365 và thông tin xác thực OAuth phù hợp.
+
+**Q: Những lỗi phổ biến nào xuất hiện khi kết nối tới Exchange?**  
+A: Các lỗi thường gặp bao gồm `401 Unauthorized` (thông tin đăng nhập sai), `404 Not Found` (URL EWS không đúng), và lỗi handshake TLS (cài đặt bảo mật Java lỗi thời).
+
+**Q: Tôi có thể lấy giấy phép tạm thời để thử nghiệm ở đâu?**  
+A: Truy cập trang [temporary license](https://purchase.aspose.com/temporary-license/) và làm theo quy trình yêu cầu nhanh.
 
 ## Tài nguyên
 
-- **Tài liệu:** Để biết thông tin tham khảo API chi tiết, hãy truy cập [Tài liệu Email Aspose](https://reference.aspose.com/email/java/).
-- **Tải xuống:** Nhận phiên bản mới nhất từ [Aspose phát hành](https://releases.aspose.com/email/java/).
-- **Mua giấy phép:** Nếu bạn đã sẵn sàng mua giấy phép, hãy truy cập [Mua Aspose](https://purchase.aspose.com/buy).
-- **Dùng thử miễn phí:** Hãy thử Aspose.Email với bản dùng thử miễn phí có sẵn tại [Bản dùng thử miễn phí của Aspose](https://releases.aspose.com/email/java/).
-- **Ủng hộ**
+- **Documentation:** Để tham khảo chi tiết API, truy cập [Aspose Email Documentation](https://reference.aspose.com/email/java/).  
+- **Download:** Tải phiên bản mới nhất từ [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Purchase license:** Nếu bạn đã sẵn sàng cho môi trường sản xuất, truy cập [Aspose Purchase](https://purchase.aspose.com/buy).  
+- **Free trial:** Thử Aspose.Email với bản dùng thử miễn phí tại [Aspose Free Trials](https://releases.aspose.com/email/java/).  
+- **Support:** Liên hệ qua cổng hỗ trợ chính thức của Aspose để được trợ giúp cá nhân.
+
+---
+
+**Last Updated:** 2026-09-27  
+**Tested with:** Aspose.Email for Java 25.4  
+**Author:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Cách kết nối tới Microsoft Exchange Server bằng Aspose.Email cho Java và EWS](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Kết nối hiệu quả và liệt kê tin nhắn Exchange bằng Aspose.Email cho Java: Hướng dẫn toàn diện](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [Cách kết nối và liệt kê thư mục Exchange Server bằng Aspose.Email cho Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

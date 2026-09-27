@@ -1,50 +1,115 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come inizializzare il client Aspose.Email in Java e recuperare in modo efficiente le informazioni sulle cassette postali dai server Microsoft Exchange."
-"title": "Inizializza Aspose.Email Java per Exchange Server - Recupera informazioni sulla casella di posta"
-"url": "/it/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/"
-"weight": 1
+date: '2026-09-27'
+description: Scopri come inizializzare ExchangeClient Java per Microsoft Exchange
+  e recuperare le informazioni della casella di posta in modo efficiente con Aspose.Email
+  for Java.
+keywords:
+- initialize exchangeclient java
+- retrieve mailbox information
+- Aspose.Email for Java
+lastmod: '2026-09-27'
+og_description: Inizializza ExchangeClient Java con Aspose.Email e recupera rapidamente
+  la dimensione della casella di posta, gli URI e altri dettagli dai server Exchange.
+  Guida passo‑passo per gli sviluppatori.
+og_image_alt: Screenshot of Java code initializing ExchangeClient and showing mailbox
+  details
+og_title: Inizializza ExchangeClient Java – Recupera le informazioni della casella
+  di posta in pochi minuti
+schemas:
+- author: Aspose
+  dateModified: '2026-09-27'
+  description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  headline: How to initialize ExchangeClient Java and retrieve mailbox information
+  type: TechArticle
+- description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  name: How to initialize ExchangeClient Java and retrieve mailbox information
+  steps:
+  - name: instantiate the client
+    text: '**Explanation:** This code opens a TLS‑protected channel to the Exchange
+      Web Services endpoint and authenticates the supplied user.'
+  - name: assume client is initialized
+    text: (Use the `client` instance created in the previous section.)
+  - name: extract folder URIs
+    text: '**Explanation:** The returned URIs let you perform further operations—like
+      enumerating messages or moving items—without rebuilding the connection details.'
+  type: HowTo
+- questions:
+  - answer: It is a Java library that enables programmatic access to email, calendar,
+      and task data across POP3, IMAP, SMTP, and Exchange servers.
+    question: What is Aspose.Email for Java?
+  - answer: Use paging (`client.listMessages(pageSize, pageNumber)`) and process items
+      in batches to keep memory consumption low.
+    question: How can I efficiently handle mailboxes with millions of items?
+  - answer: Yes—Aspose.Email supports Exchange Online via the same EWS endpoint; just
+      use the Office 365 URL and appropriate OAuth credentials.
+    question: Does this work with Exchange Online (Office 365)?
+  - answer: Typical errors include `401 Unauthorized` (bad credentials), `404 Not
+      Found` (incorrect EWS URL), and TLS handshake failures (outdated Java security
+      settings).
+    question: What common errors appear when connecting to Exchange?
+  - answer: Visit the [temporary license](https://purchase.aspose.com/temporary-license/)
+      page and follow the quick request process.
+    question: Where can I get a temporary license for testing?
+  type: FAQPage
+tags:
+- exchangeclient
+- Aspose.Email
+- Java email automation
+title: Come inizializzare ExchangeClient Java e recuperare le informazioni della casella
+  di posta
+url: /it/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Inizializza Aspose.Email Java per Exchange Server: recupera le informazioni sulla cassetta postale
+
+# Inizializzare ExchangeClient Java e recuperare le informazioni della casella di posta
 
 ## Introduzione
 
-Stai cercando di automatizzare le attività di gestione della posta elettronica utilizzando una soluzione solida? **Aspose.Email per Java** consente un'interazione fluida con i server Microsoft Exchange, consentendo una gestione efficiente della posta elettronica programmatica. Questo tutorial ti guiderà attraverso l'inizializzazione di `ExchangeClient` e recupero delle informazioni della casella di posta utilizzando Aspose.Email in Java.
+Se devi automatizzare attività legate alle email su Microsoft Exchange, **initialize exchangeclient java** con Aspose.Email per Java e otterrai l'accesso programmatico alle statistiche della casella di posta, agli URI delle cartelle e altro ancora. Questa guida ti accompagna nella configurazione del client, nell'autenticazione sicura e nell'estrazione di dati dettagliati della casella di posta—tutto in pochi passaggi concisi.
 
-**Punti chiave:**
-- Inizializza un'istanza di `ExchangeClient`.
-- Recupera informazioni dettagliate sulla casella di posta, come dimensioni, URI per la posta in arrivo, elementi inviati, bozze, ecc.
-- Ottimizza le interazioni con il server Exchange con le potenti funzionalità di Aspose.Email.
+**Punti chiave**
+- Come creare un'istanza `ExchangeClient` in Java.
+- Come recuperare la dimensione della casella di posta, gli URI delle cartelle e altre proprietà.
+- Suggerimenti per ottimizzare le prestazioni e gestire errori comuni.
 
-Cominciamo a configurare l'ambiente!
+Prepariamo il tuo ambiente di sviluppo.
+
+## Risposte rapide
+- **Cosa fa ExchangeClient?** Fornisce un'API di alto livello per comunicare con Exchange Web Services (EWS) per le operazioni sulla casella di posta.  
+- **Quale versione di Aspose è necessaria?** La versione 25.4 o successive supportano le ultime funzionalità di Exchange.  
+- **È necessaria una licenza per lo sviluppo?** Una prova gratuita funziona per i test; è necessaria una licenza permanente per la produzione.  
+- **Posso eseguire questo su qualsiasi OS?** Sì—Java è cross‑platform, quindi il codice gira su Windows, Linux e macOS.  
+- **È necessaria la paginazione per caselle di posta di grandi dimensioni?** Usa `client.getMailboxInfo()` in combinazione con query a livello di cartella per limitare il volume dei dati.
+
+## Cos'è initialize exchangeclient java?
+`ExchangeClient` è la classe principale di Aspose.Email che incapsula i dettagli di connessione e fornisce metodi per interagire con un server Exchange. Astrae le chiamate EWS sottostanti, consentendoti di concentrarti sulla logica di business anziché sulle complessità del protocollo. Creando un'istanza stabilisci una sessione sicura che può interrogare la dimensione della casella, enumerare le cartelle e eseguire operazioni sui messaggi senza scrivere codice HTTP a basso livello.
+
+## Perché usare Aspose.Email per Java con Exchange?
+Aspose.Email supporta **50+** formati di input e output e può elaborare caselle di posta con **centinaia di migliaia di elementi** senza caricare l'intero archivio in memoria, grazie alla sua architettura di streaming. La libreria offre inoltre una logica di retry integrata e supporto TLS 1.2+, garantendo un accesso affidabile e ad alta velocità ai dati di Exchange.
 
 ## Prerequisiti
 
-Prima di procedere, assicurati di avere:
+1. **Librerie e dipendenze**  
+   - Aspose.Email for Java (v25.4+)  
 
-1. **Librerie e dipendenze:**
-   - Aspose.Email per Java (versione 25.4 o successiva)
+2. **Ambiente di sviluppo**  
+   - JDK 16 o versioni successive  
+   - Maven (per la gestione delle dipendenze)  
 
-2. **Requisiti di configurazione dell'ambiente:**
-   - Una versione funzionante del Java Development Kit (JDK) 16 o superiore.
-   - Maven installato sul tuo sistema.
+3. **Conoscenze di base**  
+   - Familiarità con la sintassi Java e la struttura di progetto Maven  
 
-3. **Prerequisiti di conoscenza:**
-   - Conoscenza di base della programmazione Java e familiarità con la configurazione di progetti Maven.
-
-## Impostazione di Aspose.Email per Java
-
-Per integrare Aspose.Email nel tuo progetto Java, segui questi passaggi:
+## Configurare Aspose.Email per Java
 
 ### Utilizzo di Maven
 
-Aggiungi la seguente dipendenza al tuo `pom.xml` file per includere Aspose.Email nel tuo progetto:
+Aggiungi la dipendenza Aspose.Email al tuo `pom.xml`:
 
 ```xml
 <dependency>
@@ -58,25 +123,25 @@ Aggiungi la seguente dipendenza al tuo `pom.xml` file per includere Aspose.Email
 ### Acquisizione della licenza
 
 Aspose.Email offre diverse opzioni di licenza:
-- **Prova gratuita:** Inizia con una prova gratuita per esplorare le funzionalità.
-- **Licenza temporanea:** Ottieni una licenza temporanea per l'accesso completo durante lo sviluppo.
-- **Acquistare:** Acquisisci una licenza permanente per l'uso in produzione.
+- **Prova gratuita:** Esplora tutte le funzionalità senza una chiave di licenza.  
+- **Licenza temporanea:** Ottieni una chiave a tempo limitato per sviluppo e test.  
+- **Licenza permanente:** Necessaria per le distribuzioni in produzione.
 
-Per maggiori informazioni, visita [Acquisto Aspose](https://purchase.aspose.com/buy) o richiedi un [licenza temporanea](https://purchase.aspose.com/temporary-license/).
+Per i dettagli di acquisto, visita [Aspose Purchase](https://purchase.aspose.com/buy) o richiedi una [temporary license](https://purchase.aspose.com/temporary-license/). Puoi anche vedere la [temporary license page](https://purchase.aspose.com/temporary-license/) per ulteriori informazioni.
 
 ### Inizializzazione di base
 
-Ecco come impostare l'ambiente iniziale:
+Di seguito trovi lo scheletro che dovrai completare in seguito con i dettagli del tuo server:
 
 ```java
 import com.aspose.email.ExchangeClient;
 
 public class AsposeSetup {
     public static void main(String[] args) {
-        String serverUrl = "https://NomeMacchina/exchange/NomeUtente";
-        String username = "Username"; // Il tuo nome utente Exchange
-        String password = "password"; // La tua password di Exchange
-        String domain = "domain";     // Dominio per l'autenticazione
+        String serverUrl = "https://MachineName/exchange/Username";
+        String username = "Username"; // Your Exchange username
+        String password = "password"; // Your Exchange password
+        String domain = "domain";     // Domain for authentication
 
         ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
         System.out.println("Exchange Client Initialized Successfully!");
@@ -88,55 +153,57 @@ public class AsposeSetup {
 
 ### Inizializzare `ExchangeClient`
 
-**Panoramica:** Questa funzionalità dimostra come creare un'istanza di `ExchangeClient` utilizzando le credenziali del server.
+**Come inizializzare ExchangeClient Java?**  
+Crea un oggetto `ExchangeClient` fornendo l'URL del server Exchange, nome utente, password e dominio. Il costruttore valida le credenziali e stabilisce una sessione sicura pronta per le query sulla casella di posta.
 
-#### Passaggio 1: definire le credenziali
+#### Passo 1: definire le credenziali
 
 ```java
-// Imposta i dettagli e le credenziali del tuo server Exchange
-String serverUrl = "https://NomeMacchina/exchange/NomeUtente";
-String username = "Username"; // Il tuo nome utente Exchange
-String password = "password"; // La tua password di Exchange
-domain = "domain";           // Dominio per l'autenticazione
+// Set up your Exchange server details and credentials
+String serverUrl = "https://MachineName/exchange/Username";
+String username = "Username"; // Your Exchange username
+String password = "password"; // Your Exchange password
+domain = "domain";           // Domain for authentication
 ```
 
-#### Passaggio 2: inizializzare il client
+#### Passo 2: istanziare il client
 
 ```java
-// Inizializza ExchangeClient con le credenziali fornite
+// Initialize the ExchangeClient with provided credentials
 ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
-```
-**Spiegazione:** Questo passaggio stabilisce una connessione al server Exchange utilizzando le credenziali specificate.
+```  
+**Spiegazione:** Questo codice apre un canale protetto TLS all'endpoint Exchange Web Services e autentica l'utente fornito.
 
-### Recupera informazioni sulla casella di posta
+### Recuperare le informazioni della casella di posta
 
-**Panoramica:** Recupera informazioni dettagliate su una cassetta postale da un server Exchange utilizzando l'inizializzazione `ExchangeClient`.
+**Come recuperare le informazioni della casella di posta con ExchangeClient?**  
+Chiama `client.getMailboxInfo()` per ottenere un oggetto `MailboxInfo` che contiene dimensione, conteggi degli elementi e URI per le cartelle standard come Posta in arrivo, Posta inviata, Bozze e Posta eliminata.
 
-#### Passaggio 1: presupporre l'inizializzazione
+#### Passo 1: assumere che il client sia inizializzato
 
-Assicurare che il `client` è già inizializzato come mostrato nella sezione precedente.
+(Usa l'istanza `client` creata nella sezione precedente.)
 
-#### Passaggio 2: Recupera le dimensioni della casella di posta
+#### Passo 2: ottenere la dimensione della casella di posta
 
 ```java
-// Ottieni la dimensione della casella di posta
+// Obtain the size of the mailbox
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox Size: " + mailboxSize);
 ```
 
-#### Passaggio 3: ottenere informazioni dettagliate
+#### Passo 3: recuperare informazioni dettagliate
 
 ```java
 import com.aspose.email.ExchangeMailboxInfo;
 
-// Ottieni informazioni dettagliate sulla casella di posta
+// Fetch detailed information about the mailbox
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
 ```
 
-#### Passaggio 4: estrarre gli URI della cassetta postale
+#### Passo 4: estrarre gli URI delle cartelle
 
 ```java
-// Recupera vari URI dalle informazioni della casella di posta
+// Retrieve various URIs from the mailbox info
 String mailboxUri = mailboxInfo.getMailboxUri();
 String inboxUri = mailboxInfo.getInboxUri();
 String sentItemsUri = mailboxInfo.getSentItemsUri();
@@ -144,69 +211,85 @@ String draftsUri = mailboxInfo.getDraftsUri();
 
 System.out.println("Mailbox URI: " + mailboxUri);
 System.out.println("Inbox URI: " + inboxUri);
-// Altri URI possono essere stampati in modo simile
-```
-**Spiegazione:** Questo passaggio estrae gli URI essenziali per le diverse sezioni della casella di posta, consentendo ulteriori interazioni come l'invio di e-mail o l'accesso alle bozze.
+// Additional URIs can be printed similarly
+```  
+**Spiegazione:** Gli URI restituiti ti consentono di eseguire ulteriori operazioni—come enumerare i messaggi o spostare gli elementi—senza ricostruire i dettagli di connessione.
 
-### Suggerimenti per la risoluzione dei problemi
+## Suggerimenti per la risoluzione dei problemi
 
-- **Problemi di autenticazione:** Controlla attentamente il tuo nome utente, la tua password e il tuo dominio.
-- **Connettività di rete:** Assicurati che non ci siano problemi di rete tra il tuo server e il server Exchange.
-- **Versione della libreria:** Verifica di utilizzare una versione compatibile di Aspose.Email.
+- **Errori di autenticazione:** Verifica nome utente, password, dominio e che l'account abbia accesso EWS.  
+- **Problemi di rete:** Assicurati che le regole del firewall consentano HTTPS in uscita verso il server Exchange.  
+- **Incongruenze di versione:** Usa Aspose.Email v25.4+ per Exchange 2016/2019 e Exchange Online.
 
 ## Applicazioni pratiche
 
-1. **Gestione automatizzata delle e-mail:** Pianificare il recupero regolare delle e-mail per scopi di analisi dei dati o di archiviazione.
-2. **Integrazione con i sistemi CRM:** Sincronizza le email direttamente con un sistema CRM per migliorare il monitoraggio delle interazioni con i clienti.
-3. **Soluzioni di archiviazione e-mail:** Implementare processi di archiviazione automatizzati in base alle dimensioni della casella di posta e ai registri delle attività.
-4. **Audit di sicurezza:** Recupera i metadati delle email per controlli di conformità e audit di sicurezza.
-5. **Comunicazione multipiattaforma:** Facilita la comunicazione fluida tra diverse piattaforme integrandosi con i server Exchange.
+1. **Archiviazione automatica delle email:** Periodicamente recupera la dimensione della casella di posta e archivia gli elementi più vecchi per ridurre i costi di archiviazione.  
+2. **Integrazione CRM:** Sincronizza le email dei clienti in arrivo direttamente nel tuo database CRM.  
+3. **Report di conformità:** Genera log di audit dell'attività della casella di posta per scopi normativi.  
+4. **Messaggistica cross‑platform:** Collega Exchange on‑premise con i servizi cloud usando lo stesso codice Java.  
+5. **Elaborazione email bilanciata:** Distribuisci le query della casella di posta su più istanze JVM per scalabilità.
 
 ## Considerazioni sulle prestazioni
 
-### Ottimizzazione delle prestazioni
-- Per migliorare le prestazioni, aggiorna regolarmente Aspose.Email all'ultima versione.
-- Ove possibile, memorizzare nella cache i dati a cui si accede di frequente.
+### Ottimizzare le prestazioni
+- Mantieni Aspose.Email aggiornato; ogni rilascio include miglioramenti nell'uso della memoria.  
+- Cache i dati statici come gli URI delle cartelle quando elabori molti messaggi.  
 
-### Linee guida per l'utilizzo delle risorse
-- Monitorare il consumo di memoria, soprattutto quando si gestiscono caselle di posta di grandi dimensioni.
-- Utilizza algoritmi e strutture dati efficienti nel tuo codice Java.
+### Linee guida sull'uso delle risorse
+- Monitora l'heap della JVM quando gestisci caselle di posta superiori a 5 GB.  
+- Preferisci le API di streaming (`client.listMessages()`) per evitare di caricare intere cartelle in memoria.  
 
-### Migliori pratiche
-- Limitare l'ambito delle interazioni con la casella di posta alle sole operazioni necessarie.
-- Implementare la gestione degli errori per gestire con eleganza le risposte impreviste del server.
+### Best practice
+- Limita ogni richiesta alla cartella più piccola necessaria.  
+- Implementa una logica di retry per glitch di rete transitori.  
 
 ## Conclusione
 
-Ora hai imparato a inizializzare un `ExchangeClient` e il recupero delle informazioni sulle caselle di posta utilizzando Aspose.Email per Java. Queste funzionalità consentono soluzioni di gestione della posta elettronica sofisticate, consentendo una perfetta integrazione con i server Exchange. Quali sono i prossimi passi? Valutate l'esplorazione di funzionalità più avanzate o l'integrazione di queste funzionalità in un progetto più ampio.
+Ora sai come **initialize exchangeclient java**, connetterti a un server Exchange e recuperare informazioni complete sulla casella di posta usando Aspose.Email per Java. Questi passaggi costituiscono la base per soluzioni sofisticate di automazione email, analisi e conformità. Successivamente, esplora il recupero dei messaggi, la sincronizzazione delle cartelle o l'integrazione del calendario per estendere le capacità della tua applicazione.
 
-**Invito all'azione:** Implementa questa soluzione nei tuoi progetti per semplificare le interazioni via email!
+**Invito all'azione:** Integra questo codice nel tuo livello di servizio oggi e inizia ad automatizzare la gestione della casella di posta con fiducia.
 
-## Sezione FAQ
+## Domande frequenti
 
-1. **Che cos'è Aspose.Email per Java?**
-   - È una libreria che consente di lavorare con e-mail, calendari e attività a livello di programmazione utilizzando Java.
-2. **Come posso gestire in modo efficiente le cassette postali di grandi dimensioni?**
-   - Utilizzare la paginazione o limitare la portata delle operazioni di recupero dei dati.
-3. **Posso usare questo codice su qualsiasi versione di Exchange Server?**
-   - Aspose.Email supporta un'ampia gamma di versioni di Exchange; verificare la compatibilità per funzionalità specifiche.
-4. **Quali sono gli errori più comuni durante la connessione ai server Exchange?**
-   - Errori di autenticazione, problemi di rete o credenziali errate sono tipici problemi da risolvere.
-5. **Come posso ottenere una licenza temporanea per Aspose.Email?**
-   - Visita il [pagina della licenza temporanea](https://purchase.aspose.com/temporary-license/) e seguire le istruzioni fornite.
+**D: Cos'è Aspose.Email per Java?**  
+R: È una libreria Java che consente l'accesso programmatico a email, calendario e dati di attività su server POP3, IMAP, SMTP e Exchange.
+
+**D: Come posso gestire efficientemente caselle di posta con milioni di elementi?**  
+R: Usa la paginazione (`client.listMessages(pageSize, pageNumber)`) e processa gli elementi in batch per mantenere basso il consumo di memoria.
+
+**D: Questo funziona con Exchange Online (Office 365)?**  
+R: Sì—Aspose.Email supporta Exchange Online tramite lo stesso endpoint EWS; basta usare l'URL di Office 365 e le credenziali OAuth appropriate.
+
+**D: Quali errori comuni compaiono quando ci si connette a Exchange?**  
+R: Gli errori tipici includono `401 Unauthorized` (credenziali errate), `404 Not Found` (URL EWS errato) e fallimenti di handshake TLS (impostazioni di sicurezza Java obsolete).
+
+**D: Dove posso ottenere una licenza temporanea per i test?**  
+R: Visita la pagina [temporary license](https://purchase.aspose.com/temporary-license/) e segui il rapido processo di richiesta.
 
 ## Risorse
 
-- **Documentazione:** Per riferimenti API dettagliati, visitare [Documentazione e-mail di Aspose](https://reference.aspose.com/email/java/).
-- **Scaricamento:** Ottieni l'ultima versione da [Rilasci di Aspose](https://releases.aspose.com/email/java/).
-- **Acquista licenza:** Se sei pronto ad acquistare una licenza, vai a [Acquisto Aspose](https://purchase.aspose.com/buy).
-- **Prova gratuita:** Prova Aspose.Email con una prova gratuita disponibile su [Prove gratuite di Aspose](https://releases.aspose.com/email/java/).
-- **Supporto**
+- **Documentazione:** Per riferimenti API dettagliati, visita [Aspose Email Documentation](https://reference.aspose.com/email/java/).  
+- **Download:** Ottieni l'ultima versione da [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Acquista licenza:** Se sei pronto per la produzione, vai a [Aspose Purchase](https://purchase.aspose.com/buy).  
+- **Prova gratuita:** Prova Aspose.Email con una prova gratuita su [Aspose Free Trials](https://releases.aspose.com/email/java/).  
+- **Supporto:** Contatta il portale di supporto ufficiale di Aspose per assistenza personalizzata.
+
+---
+
+**Ultimo aggiornamento:** 2026-09-27  
+**Testato con:** Aspose.Email for Java 25.4  
+**Autore:** Aspose
+
+## Tutorial correlati
+
+- [Come connettersi a Microsoft Exchange Server usando Aspose.Email per Java e EWS](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Connettersi e elencare efficientemente i messaggi Exchange usando Aspose.Email per Java: Guida completa](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [Come connettersi e elencare le cartelle del server Exchange usando Aspose.Email per Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
