@@ -1,50 +1,114 @@
 ---
-"date": "2025-05-29"
-"description": "Java'da Aspose.Email istemcisini nasıl başlatacağınızı ve Microsoft Exchange sunucularından posta kutusu bilgilerini nasıl etkili bir şekilde alacağınızı öğrenin."
-"title": "Exchange Server için Aspose.Email Java'yı Başlatın&#58; Posta Kutusu Bilgilerini Alın"
-"url": "/tr/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/"
-"weight": 1
+date: '2026-09-27'
+description: Microsoft Exchange için ExchangeClient Java'yı nasıl başlatacağınızı
+  ve Aspose.Email for Java ile posta kutusu bilgilerini verimli bir şekilde almayı
+  öğrenin.
+keywords:
+- initialize exchangeclient java
+- retrieve mailbox information
+- Aspose.Email for Java
+lastmod: '2026-09-27'
+og_description: Aspose.Email ile ExchangeClient Java'yı başlatın ve Exchange sunucularından
+  posta kutusu boyutu, URI'ler ve diğer detayları hızlıca alın. Geliştiriciler için
+  adım adım kılavuz.
+og_image_alt: Screenshot of Java code initializing ExchangeClient and showing mailbox
+  details
+og_title: ExchangeClient Java'yı Başlatın – Dakikalar içinde Posta Kutusu Bilgilerini
+  Alın
+schemas:
+- author: Aspose
+  dateModified: '2026-09-27'
+  description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  headline: How to initialize ExchangeClient Java and retrieve mailbox information
+  type: TechArticle
+- description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  name: How to initialize ExchangeClient Java and retrieve mailbox information
+  steps:
+  - name: instantiate the client
+    text: '**Explanation:** This code opens a TLS‑protected channel to the Exchange
+      Web Services endpoint and authenticates the supplied user.'
+  - name: assume client is initialized
+    text: (Use the `client` instance created in the previous section.)
+  - name: extract folder URIs
+    text: '**Explanation:** The returned URIs let you perform further operations—like
+      enumerating messages or moving items—without rebuilding the connection details.'
+  type: HowTo
+- questions:
+  - answer: It is a Java library that enables programmatic access to email, calendar,
+      and task data across POP3, IMAP, SMTP, and Exchange servers.
+    question: What is Aspose.Email for Java?
+  - answer: Use paging (`client.listMessages(pageSize, pageNumber)`) and process items
+      in batches to keep memory consumption low.
+    question: How can I efficiently handle mailboxes with millions of items?
+  - answer: Yes—Aspose.Email supports Exchange Online via the same EWS endpoint; just
+      use the Office 365 URL and appropriate OAuth credentials.
+    question: Does this work with Exchange Online (Office 365)?
+  - answer: Typical errors include `401 Unauthorized` (bad credentials), `404 Not
+      Found` (incorrect EWS URL), and TLS handshake failures (outdated Java security
+      settings).
+    question: What common errors appear when connecting to Exchange?
+  - answer: Visit the [temporary license](https://purchase.aspose.com/temporary-license/)
+      page and follow the quick request process.
+    question: Where can I get a temporary license for testing?
+  type: FAQPage
+tags:
+- exchangeclient
+- Aspose.Email
+- Java email automation
+title: ExchangeClient Java'yı nasıl başlatır ve posta kutusu bilgilerini alabilirsiniz
+url: /tr/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Exchange Server için Aspose.Email Java'yı Başlatın: Posta Kutusu Bilgilerini Alın
 
-## giriiş
+# ExchangeClient Java'yı Başlatma ve Posta Kutusu Bilgilerini Getirme
 
-Güçlü bir çözüm kullanarak e-posta yönetimi görevlerini otomatikleştirmek mi istiyorsunuz? **Java için Aspose.E-posta** Microsoft Exchange sunucularıyla sorunsuz etkileşimi mümkün kılarak verimli programatik e-posta yönetimine olanak tanır. Bu eğitim, başlatma konusunda size rehberlik edecektir `ExchangeClient` ve Java'da Aspose.Email kullanarak posta kutusu bilgilerini alma.
+## Giriş
 
-**Önemli Noktalar:**
-- Bir örneğini başlat `ExchangeClient`.
-- Boyut, gelen kutusu URI'leri, gönderilen öğeler, taslaklar vb. gibi ayrıntılı posta kutusu bilgilerini alın.
-- Aspose.Email'in güçlü özellikleriyle Exchange sunucu etkileşimlerinizi optimize edin.
+Microsoft Exchange üzerinde e-posta ile ilgili görevleri otomatikleştirmeniz gerekiyorsa, Aspose.Email for Java ile **initialize exchangeclient java** yapın ve posta kutusu istatistiklerine, klasör URI'lerine ve daha fazlasına programatik erişim elde edin. Bu kılavuz, istemciyi kurma, güvenli kimlik doğrulama ve ayrıntılı posta kutusu verilerini çekme adımlarını birkaç kısa adımda gösterir.
 
-Ortamınızı ayarlayarak başlayalım!
+**Anahtar Çıkarımlar**
+- Java'da bir `ExchangeClient` örneği nasıl oluşturulur.
+- Posta kutusu boyutunu, klasör URI'lerini ve diğer özellikleri nasıl alırsınız.
+- Performansı optimize etme ve yaygın hataları ele alma ipuçları.
 
-## Ön koşullar
+Geliştirme ortamınızı hazırlayalım.
 
-Devam etmeden önce şunlara sahip olduğunuzdan emin olun:
+## Hızlı Yanıtlar
+- **ExchangeClient ne işe yarar?** Posta kutusu işlemleri için Exchange Web Services (EWS) ile iletişim kuran yüksek seviyeli bir API sağlar.  
+- **Hangi Aspose sürümü gereklidir?** Version 25.4 veya üzeri, en yeni Exchange özelliklerini destekler.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme test için çalışır; üretim için kalıcı bir lisans gerekir.  
+- **Bunu herhangi bir işletim sisteminde çalıştırabilir miyim?** Evet—Java platform bağımsızdır, bu yüzden kod Windows, Linux ve macOS'ta çalışır.  
+- **Büyük posta kutuları için sayfalama gerekli mi?** Veri hacmini sınırlamak için `client.getMailboxInfo()`'yu klasör‑seviyesi sorgularla birlikte kullanın.
 
-1. **Kütüphaneler ve Bağımlılıklar:**
-   - Aspose.Email for Java (Sürüm 25.4 veya üzeri)
+## initialize exchangeclient java nedir?
+`ExchangeClient`, bağlantı ayrıntılarını kapsülleyen ve bir Exchange sunucusuyla etkileşim için yöntemler sağlayan Aspose.Email'in temel sınıfıdır. Altındaki EWS çağrılarını soyutlayarak iş mantığına odaklanmanızı sağlar, protokol ayrıntılarına takılmadan. Bir örnek oluşturarak posta kutusu boyutunu sorgulayabilen, klasörleri listeleyebilen ve düşük seviyeli HTTP kodu yazmadan mesaj işlemleri yapabilen güvenli bir oturum kurarsınız.
 
-2. **Çevre Kurulum Gereksinimleri:**
-   - Çalışan bir Java Geliştirme Kiti (JDK) sürüm 16 veya üzeri.
-   - Maven sisteminize yüklendi.
+## Neden Aspose.Email for Java ile Exchange Kullanmalı?
+Aspose.Email, **50+** giriş ve çıkış formatını destekler ve **yüzbinlerce öğe** içeren posta kutularını, tüm depoyu belleğe yüklemeden işleyebilir; bu, akış mimarisi sayesinde mümkündür. Kütüphane ayrıca yerleşik yeniden deneme mantığı ve TLS 1.2+ desteği sunar, bu da Exchange verilerine güvenilir, yüksek verimli erişim sağlar.
 
-3. **Bilgi Ön Koşulları:**
-   - Temel Java programlama bilgisi ve Maven proje kurulumuna aşinalık.
+## Önkoşullar
 
-## Java için Aspose.Email Kurulumu
+1. **Kütüphaneler ve bağımlılıklar**  
+   - Aspose.Email for Java (v25.4+)  
 
-Aspose.Email'i Java projenize entegre etmek için şu adımları izleyin:
+2. **Geliştirme ortamı**  
+   - JDK 16 ve üzeri  
+   - Maven (bağımlılık yönetimi için)  
 
-### Maven'ı Kullanma
+3. **Temel bilgi**  
+   - Java sözdizimi ve Maven proje yapısına aşinalık  
 
-Aşağıdaki bağımlılığı ekleyin `pom.xml` Aspose.Email'i projenize dahil etmek için dosya:
+## Aspose.Email for Java'ı Kurma
+
+### Maven Kullanarak
+
+Add the Aspose.Email dependency to your `pom.xml`:
 
 ```xml
 <dependency>
@@ -55,28 +119,28 @@ Aşağıdaki bağımlılığı ekleyin `pom.xml` Aspose.Email'i projenize dahil 
 </dependency>
 ```
 
-### Lisans Edinimi
+### Lisans edinme
 
-Aspose.Email çeşitli lisanslama seçenekleri sunmaktadır:
-- **Ücretsiz Deneme:** Özellikleri keşfetmek için ücretsiz denemeyle başlayın.
-- **Geçici Lisans:** Geliştirme sırasında tam erişim için geçici bir lisans edinin.
-- **Satın almak:** Üretim amaçlı kullanım için kalıcı lisans edinin.
+Aspose.Email offers several licensing options:
+- **Ücretsiz deneme:** Lisans anahtarı olmadan tüm özellikleri keşfedin.  
+- **Geçici lisans:** Geliştirme ve test için zaman sınırlı bir anahtar edinin.  
+- **Kalıcı lisans:** Üretim dağıtımları için gereklidir.
 
-Daha fazla bilgi için ziyaret edin [Aspose Satın Alma](https://purchase.aspose.com/buy) veya bir talepte bulunun [geçici lisans](https://purchase.aspose.com/temporary-license/).
+Satın alma detayları için [Aspose Purchase](https://purchase.aspose.com/buy) adresini ziyaret edin veya bir [temporary license](https://purchase.aspose.com/temporary-license/) isteyin. Ek bilgi için ayrıca [temporary license page](https://purchase.aspose.com/temporary-license/) sayfasına bakabilirsiniz.
 
-### Temel Başlatma
+### Temel başlatma
 
-Başlangıç ortamınızı nasıl kuracağınız aşağıda açıklanmıştır:
+Below is the skeleton you’ll fill in later with your server details:
 
 ```java
 import com.aspose.email.ExchangeClient;
 
 public class AsposeSetup {
     public static void main(String[] args) {
-        String serverUrl = "https://MakineAdı/değişim/KullanıcıAdı";
-        String username = "Username"; // Borsa kullanıcı adınız
-        String password = "password"; // Exchange şifreniz
-        String domain = "domain";     // Kimlik doğrulama için alan adı
+        String serverUrl = "https://MachineName/exchange/Username";
+        String username = "Username"; // Your Exchange username
+        String password = "password"; // Your Exchange password
+        String domain = "domain";     // Domain for authentication
 
         ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
         System.out.println("Exchange Client Initialized Successfully!");
@@ -84,59 +148,61 @@ public class AsposeSetup {
 }
 ```
 
-## Uygulama Kılavuzu
+## Uygulama Rehberi
 
-### Başlat `ExchangeClient`
+### `ExchangeClient`'ı Başlatma
 
-**Genel Bakış:** Bu özellik, bir örneğin nasıl oluşturulacağını gösterir `ExchangeClient` sunucu kimlik bilgilerini kullanarak.
+**ExchangeClient Java nasıl başlatılır?**  
+Exchange sunucusu URL'si, kullanıcı adı, şifre ve domain'i sağlayarak bir `ExchangeClient` nesnesi oluşturun. Yapıcı, kimlik bilgilerini doğrular ve posta kutusu sorguları için hazır güvenli bir oturum kurar.
 
-#### Adım 1: Kimlik Bilgilerini Tanımlayın
+#### Adım 1: kimlik bilgilerini tanımla
 
 ```java
-// Exchange sunucunuzun ayrıntılarını ve kimlik bilgilerini ayarlayın
-String serverUrl = "https://MakineAdı/değişim/KullanıcıAdı";
-String username = "Username"; // Borsa kullanıcı adınız
-String password = "password"; // Exchange şifreniz
-domain = "domain";           // Kimlik doğrulama için alan adı
+// Set up your Exchange server details and credentials
+String serverUrl = "https://MachineName/exchange/Username";
+String username = "Username"; // Your Exchange username
+String password = "password"; // Your Exchange password
+domain = "domain";           // Domain for authentication
 ```
 
-#### Adım 2: İstemciyi Başlatın
+#### Adım 2: istemciyi örnekle
 
 ```java
-// ExchangeClient'ı sağlanan kimlik bilgileriyle başlatın
+// Initialize the ExchangeClient with provided credentials
 ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
-```
-**Açıklama:** Bu adım, belirtilen kimlik bilgilerini kullanarak Exchange sunucunuza bir bağlantı kurar.
+```  
+**Açıklama:** Bu kod, Exchange Web Services uç noktasına TLS korumalı bir kanal açar ve sağlanan kullanıcıyı kimlik doğrular.
 
-### Posta Kutusu Bilgilerini Al
+### Posta Kutusu Bilgilerini Getirme
 
-**Genel Bakış:** Başlatılan bir Exchange sunucusundan bir posta kutusu hakkında ayrıntılı bilgi alın `ExchangeClient`.
+**ExchangeClient ile posta kutusu bilgileri nasıl alınır?**  
+`client.getMailboxInfo()` çağrısı, Inbox, Sent Items, Drafts ve Deleted Items gibi standart klasörlerin boyut, öğe sayısı ve URI'lerini içeren bir `MailboxInfo` nesnesi döndürür.
 
-#### Adım 1: Başlatmayı Varsayın
+#### Adım 1: istemcinin başlatıldığını varsay
 
-Şunların sağlanmasını temin edin: `client` Önceki bölümde gösterildiği gibi zaten başlatıldı.
+(Önceki bölümde oluşturulan `client` örneğini kullanın.)
 
-#### Adım 2: Posta Kutusu Boyutunu Alın
+#### Adım 2: posta kutusu boyutunu al
 
 ```java
-// Posta kutusunun boyutunu elde edin
+// Obtain the size of the mailbox
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox Size: " + mailboxSize);
 ```
 
-#### Adım 3: Ayrıntılı Bilgi Alın
+#### Adım 3: ayrıntılı bilgileri al
 
 ```java
 import com.aspose.email.ExchangeMailboxInfo;
 
-// Posta kutusu hakkında ayrıntılı bilgi alın
+// Fetch detailed information about the mailbox
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
 ```
 
-#### Adım 4: Posta Kutusu URI'lerini ayıklayın
+#### Adım 4: klasör URI'lerini çıkar
 
 ```java
-// Posta kutusu bilgilerinden çeşitli URI'leri alın
+// Retrieve various URIs from the mailbox info
 String mailboxUri = mailboxInfo.getMailboxUri();
 String inboxUri = mailboxInfo.getInboxUri();
 String sentItemsUri = mailboxInfo.getSentItemsUri();
@@ -144,69 +210,84 @@ String draftsUri = mailboxInfo.getDraftsUri();
 
 System.out.println("Mailbox URI: " + mailboxUri);
 System.out.println("Inbox URI: " + inboxUri);
-// Ek URI'ler benzer şekilde yazdırılabilir
-```
-**Açıklama:** Bu adım, farklı posta kutusu bölümleri için temel URI'leri çıkarır ve e-posta gönderme veya taslaklara erişme gibi daha fazla etkileşime olanak tanır.
+// Additional URIs can be printed similarly
+```  
+**Açıklama:** Dönen URI'ler, bağlantı ayrıntılarını yeniden oluşturmak zorunda kalmadan mesajları listeleme veya öğeleri taşıma gibi ek işlemler yapmanıza olanak tanır.
 
-### Sorun Giderme İpuçları
+## Sorun Giderme İpuçları
 
-- **Kimlik Doğrulama Sorunları:** Kullanıcı adınızı, şifrenizi ve alan adınızı iki kez kontrol edin.
-- **Ağ Bağlantısı:** Sunucunuz ile Exchange sunucusu arasında herhangi bir ağ sorunu olmadığından emin olun.
-- **Kütüphane Sürümü:** Aspose.Email'in uyumlu bir sürümünü kullandığınızı doğrulayın.
+- **Kimlik doğrulama hataları:** Kullanıcı adı, şifre, domain'i ve hesabın EWS erişimine sahip olduğunu doğrulayın.  
+- **Ağ sorunları:** Güvenlik duvarı kurallarının Exchange sunucusuna giden HTTPS trafiğine izin verdiğinden emin olun.  
+- **Sürüm uyumsuzlukları:** Exchange 2016/2019 ve Exchange Online için Aspose.Email v25.4+ kullanın.
 
 ## Pratik Uygulamalar
 
-1. **Otomatik E-posta Yönetimi:** Veri analizi veya arşivleme amacıyla düzenli e-posta alımını planlayın.
-2. **CRM Sistemleriyle Entegrasyon:** Müşteri etkileşim takibini geliştirmek için e-postaları doğrudan bir CRM sistemine senkronize edin.
-3. **E-posta Arşivleme Çözümleri:** Posta kutusu boyutuna ve etkinlik günlüklerine göre otomatik arşivleme süreçlerini uygulayın.
-4. **Güvenlik Denetimleri:** Uyumluluk kontrolleri ve güvenlik denetimleri için e-posta meta verilerini alın.
-5. **Platformlar Arası İletişim:** Exchange sunucularıyla entegre olarak farklı platformlar arasında kesintisiz iletişimi kolaylaştırın.
+1. **Otomatik e-posta arşivleme:** Periyodik olarak posta kutusu boyutunu alıp eski öğeleri arşivleyerek depolama maliyetlerini azaltın.  
+2. **CRM entegrasyonu:** Gelen müşteri e-postalarını doğrudan CRM veritabanınıza senkronize edin.  
+3. **Uyumluluk raporlaması:** Düzenleyici amaçlar için posta kutusu etkinliği denetim günlükleri oluşturun.  
+4. **Çapraz‑platform mesajlaşma:** Aynı Java kod tabanını kullanarak yerel Exchange'i bulut hizmetleriyle bağlayın.  
+5. **Yük‑dengeli e-posta işleme:** Ölçeklenebilirlik için posta kutusu sorgularını birden fazla JVM örneğine dağıtın.
 
-## Performans Hususları
+## Performans Düşünceleri
 
 ### Performansı Optimize Etme
-- Performans iyileştirmeleri için Aspose.Email'in en son sürümüne düzenli olarak güncelleme yapın.
-- Mümkün olduğunda sık erişilen verileri önbelleğe alın.
+- Aspose.Email'i güncel tutun; her sürüm bellek kullanım iyileştirmeleri içerir.  
+- Çok sayıda mesaj işlenirken klasör URI'leri gibi sabit verileri önbelleğe alın.  
 
-### Kaynak Kullanım Yönergeleri
-- Özellikle büyük posta kutularıyla uğraşırken bellek tüketimini izleyin.
-- Java kodunuzda verimli algoritmalar ve veri yapıları kullanın.
+### Kaynak Kullanım Kılavuzları
+- 5 GB'den büyük posta kutularını işlerken JVM yığınını izleyin.  
+- Tüm klasörleri belleğe yüklemekten kaçınmak için akış API'lerini (`client.listMessages()`) tercih edin.  
 
 ### En İyi Uygulamalar
-- Posta kutusu etkileşimlerinin kapsamını yalnızca gerekli işlemlerle sınırlayın.
-- Beklenmeyen sunucu yanıtlarını zarif bir şekilde yönetmek için hata işlemeyi uygulayın.
+- Her isteği en küçük gerekli klasöre sınırlayın.  
+- Geçici ağ hataları için yeniden deneme mantığını uygulayın.  
 
-## Çözüm
+## Sonuç
 
-Artık bir başlatmayı öğrendiniz `ExchangeClient` ve Aspose.Email for Java kullanarak posta kutusu bilgilerini alma. Bu yetenekler, Exchange sunucularıyla sorunsuz entegrasyona izin veren gelişmiş e-posta yönetim çözümlerine olanak tanır. Sırada ne var? Daha gelişmiş özellikleri keşfetmeyi veya bu işlevleri daha büyük bir projeye entegre etmeyi düşünün.
+Artık **initialize exchangeclient java**'ı nasıl yapacağınızı, bir Exchange sunucusuna nasıl bağlanacağınızı ve Aspose.Email for Java kullanarak kapsamlı posta kutusu bilgilerini nasıl alacağınızı biliyorsunuz. Bu adımlar, gelişmiş e-posta otomasyonu, analiz ve uyumluluk çözümleri için temeli oluşturur. Sonraki adımda mesaj alımını, klasör senkronizasyonunu veya takvim entegrasyonunu keşfederek uygulamanızın yeteneklerini genişletebilirsiniz.
 
-**Harekete Geçme Çağrısı:** E-posta etkileşimlerinizi kolaylaştırmak için bu çözümü projelerinize uygulayın!
+**Eylem çağrısı:** Bu kodu hizmet katmanınıza bugün entegre edin ve posta kutusu yönetimini güvenle otomatikleştirmeye başlayın.
 
-## SSS Bölümü
+## Sık Sorulan Sorular
 
-1. **Java için Aspose.Email nedir?**
-   - Java kullanarak e-postalar, takvimler ve görevlerle programlı bir şekilde çalışmanıza olanak sağlayan bir kütüphanedir.
-2. **Büyük posta kutularını nasıl verimli bir şekilde yönetebilirim?**
-   - Sayfalandırmayı kullanın veya veri alma işlemlerinizin kapsamını sınırlayın.
-3. **Bu kodu herhangi bir Exchange sunucu sürümünde kullanabilir miyim?**
-   - Aspose.Email, Exchange sürümlerinin geniş bir yelpazesini destekler; belirli özellikler için uyumluluğu doğrulayın.
-4. **Exchange sunucularına bağlanırken karşılaşılan yaygın hatalar nelerdir?**
-   - Kimlik doğrulama hataları, ağ sorunları veya yanlış kimlik bilgileri, giderilmesi gereken tipik sorunlardır.
-5. **Aspose.Email için geçici lisansı nasıl alabilirim?**
-   - Ziyaret edin [geçici lisans sayfası](https://purchase.aspose.com/temporary-license/) ve verilen talimatları izleyin.
+**S: Aspose.Email for Java nedir?**  
+C: POP3, IMAP, SMTP ve Exchange sunucularında e-posta, takvim ve görev verilerine programatik erişim sağlayan bir Java kütüphanesidir.
+
+**S: Milyonlarca öğe içeren posta kutularını verimli bir şekilde nasıl yönetebilirim?**  
+C: Sayfalama (`client.listMessages(pageSize, pageNumber)`) kullanın ve öğeleri toplu işleyerek bellek tüketimini düşük tutun.
+
+**S: Bu, Exchange Online (Office 365) ile çalışır mı?**  
+C: Evet—Aspose.Email aynı EWS uç noktasını kullanarak Exchange Online'ı destekler; sadece Office 365 URL'sini ve uygun OAuth kimlik bilgilerini kullanın.
+
+**S: Exchange'e bağlanırken hangi yaygın hatalar ortaya çıkar?**  
+C: Tipik hatalar arasında `401 Unauthorized` (yanlış kimlik bilgileri), `404 Not Found` (yanlış EWS URL'si) ve TLS el sıkışma hataları (eski Java güvenlik ayarları) bulunur.
+
+**S: Test için geçici bir lisansı nereden alabilirim?**  
+C: [temporary license](https://purchase.aspose.com/temporary-license/) sayfasını ziyaret edin ve hızlı talep sürecini izleyin.
 
 ## Kaynaklar
 
-- **Belgeler:** Ayrıntılı API referansları için şu adresi ziyaret edin: [Aspose E-posta Belgeleri](https://reference.aspose.com/email/java/).
-- **İndirmek:** En son sürümü şu adresten edinin: [Aspose Sürümleri](https://releases.aspose.com/email/java/).
-- **Lisans Satın Al:** Lisans satın almaya hazırsanız şuraya gidin: [Aspose Satın Alma](https://purchase.aspose.com/buy).
-- **Ücretsiz Deneme:** Aspose.Email'i ücretsiz deneme sürümüyle deneyin [Aspose Ücretsiz Denemeler](https://releases.aspose.com/email/java/).
-- **Destek**
+- **Dokümantasyon:** Ayrıntılı API referansları için [Aspose Email Documentation](https://reference.aspose.com/email/java/) adresini ziyaret edin.  
+- **İndirme:** En son sürümü [Aspose Releases](https://releases.aspose.com/email/java/) üzerinden alın.  
+- **Lisans satın al:** Üretime hazır olduğunuzda [Aspose Purchase](https://purchase.aspose.com/buy) adresine gidin.  
+- **Ücretsiz deneme:** [Aspose Free Trials](https://releases.aspose.com/email/java/) adresinde ücretsiz deneme ile Aspose.Email'i deneyin.  
+- **Destek:** Kişiselleştirilmiş yardım için resmi Aspose destek portalına başvurun.
+
+---
+
+**Son Güncelleme:** 2026-09-27  
+**Test Edilen:** Aspose.Email for Java 25.4  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.Email for Java ve EWS Kullanarak Microsoft Exchange Sunucusuna Nasıl Bağlanılır](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Aspose.Email for Java Kullanarak Exchange Mesajlarını Verimli Bir Şekilde Bağlanma ve Listeleme: Kapsamlı Rehber](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [Aspose.Email for Java Kullanarak Exchange Sunucu Klasörlerine Nasıl Bağlanılır ve Listelenir](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

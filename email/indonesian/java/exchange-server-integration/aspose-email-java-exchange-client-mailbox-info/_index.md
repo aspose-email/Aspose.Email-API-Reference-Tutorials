@@ -1,50 +1,112 @@
 ---
-"date": "2025-05-29"
-"description": "Pelajari cara menginisialisasi klien Aspose.Email di Java dan mengambil informasi kotak surat dari server Microsoft Exchange secara efisien."
-"title": "Inisialisasi Aspose.Email Java untuk Exchange Server&#58; Ambil Info Kotak Surat"
-"url": "/id/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/"
-"weight": 1
+date: '2026-09-27'
+description: Pelajari cara menginisialisasi ExchangeClient Java untuk Microsoft Exchange
+  dan mengambil informasi mailbox secara efisien dengan Aspose.Email untuk Java.
+keywords:
+- initialize exchangeclient java
+- retrieve mailbox information
+- Aspose.Email for Java
+lastmod: '2026-09-27'
+og_description: Inisialisasi ExchangeClient Java dengan Aspose.Email dan dengan cepat
+  mengambil mailbox size, URIs, serta detail lainnya dari Exchange servers. Step‑by‑step
+  guide untuk developers.
+og_image_alt: Screenshot of Java code initializing ExchangeClient and showing mailbox
+  details
+og_title: Inisialisasi ExchangeClient Java – Ambil Info Mailbox dalam Hitungan Menit
+schemas:
+- author: Aspose
+  dateModified: '2026-09-27'
+  description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  headline: How to initialize ExchangeClient Java and retrieve mailbox information
+  type: TechArticle
+- description: Learn how to initialize ExchangeClient Java for Microsoft Exchange
+    and retrieve mailbox information efficiently with Aspose.Email for Java.
+  name: How to initialize ExchangeClient Java and retrieve mailbox information
+  steps:
+  - name: instantiate the client
+    text: '**Explanation:** This code opens a TLS‑protected channel to the Exchange
+      Web Services endpoint and authenticates the supplied user.'
+  - name: assume client is initialized
+    text: (Use the `client` instance created in the previous section.)
+  - name: extract folder URIs
+    text: '**Explanation:** The returned URIs let you perform further operations—like
+      enumerating messages or moving items—without rebuilding the connection details.'
+  type: HowTo
+- questions:
+  - answer: It is a Java library that enables programmatic access to email, calendar,
+      and task data across POP3, IMAP, SMTP, and Exchange servers.
+    question: What is Aspose.Email for Java?
+  - answer: Use paging (`client.listMessages(pageSize, pageNumber)`) and process items
+      in batches to keep memory consumption low.
+    question: How can I efficiently handle mailboxes with millions of items?
+  - answer: Yes—Aspose.Email supports Exchange Online via the same EWS endpoint; just
+      use the Office 365 URL and appropriate OAuth credentials.
+    question: Does this work with Exchange Online (Office 365)?
+  - answer: Typical errors include `401 Unauthorized` (bad credentials), `404 Not
+      Found` (incorrect EWS URL), and TLS handshake failures (outdated Java security
+      settings).
+    question: What common errors appear when connecting to Exchange?
+  - answer: Visit the [temporary license](https://purchase.aspose.com/temporary-license/)
+      page and follow the quick request process.
+    question: Where can I get a temporary license for testing?
+  type: FAQPage
+tags:
+- exchangeclient
+- Aspose.Email
+- Java email automation
+title: Cara menginisialisasi ExchangeClient Java dan mengambil informasi mailbox
+url: /id/java/exchange-server-integration/aspose-email-java-exchange-client-mailbox-info/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Inisialisasi Aspose.Email Java untuk Exchange Server: Ambil Informasi Kotak Surat
 
-## Perkenalan
+# Inisialisasi ExchangeClient Java dan mengambil informasi kotak surat
 
-Apakah Anda ingin mengotomatiskan tugas manajemen email menggunakan solusi yang tangguh? **Aspose.Email untuk Java** memungkinkan interaksi yang lancar dengan server Microsoft Exchange, memungkinkan manajemen email terprogram yang efisien. Tutorial ini akan memandu Anda melalui inisialisasi `ExchangeClient` dan mengambil informasi kotak surat menggunakan Aspose.Email di Java.
+## Pendahuluan
 
-**Poin-poin Utama:**
-- Inisialisasi sebuah instance dari `ExchangeClient`.
-- Ambil informasi kotak surat terperinci seperti ukuran, URI untuk kotak masuk, item terkirim, draf, dll.
-- Optimalkan interaksi server Exchange Anda dengan fitur-fitur Aspose.Email yang hebat.
+Jika Anda perlu mengotomatisasi tugas‑tugas terkait email pada Microsoft Exchange, **initialize exchangeclient java** dengan Aspose.Email untuk Java dan Anda akan mendapatkan akses programatik ke statistik kotak surat, URI folder, dan lainnya. Panduan ini akan membawa Anda melalui penyiapan klien, otentikasi yang aman, dan pengambilan data kotak surat secara detail—semua dalam beberapa langkah singkat.
 
-Mari mulai dengan menyiapkan lingkungan Anda!
+**Poin penting**
+- Cara membuat instance `ExchangeClient` di Java.  
+- Cara mengambil ukuran kotak surat, URI folder, dan properti lainnya.  
+- Tips mengoptimalkan kinerja dan menangani kesalahan umum.
+
+Mari siapkan lingkungan pengembangan Anda.
+
+## Jawaban cepat
+- **Apa yang dilakukan ExchangeClient?** Menyediakan API tingkat tinggi untuk berkomunikasi dengan Exchange Web Services (EWS) untuk operasi kotak surat.  
+- **Versi Aspose mana yang diperlukan?** Versi 25.4 atau yang lebih baru mendukung fitur Exchange terbaru.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi permanen diperlukan untuk produksi.  
+- **Bisakah saya menjalankannya di sistem operasi apa pun?** Ya—Java bersifat lintas‑platform, sehingga kode dapat dijalankan di Windows, Linux, dan macOS.  
+- **Apakah pagination diperlukan untuk kotak surat besar?** Gunakan `client.getMailboxInfo()` bersamaan dengan kueri tingkat folder untuk membatasi volume data.
+
+## Apa itu inisialisasi exchangeclient java?
+`ExchangeClient` adalah kelas utama Aspose.Email yang mengenkapsulasi detail koneksi dan menyediakan metode untuk berinteraksi dengan server Exchange. Kelas ini menyembunyikan panggilan EWS yang mendasar, memungkinkan Anda fokus pada logika bisnis tanpa harus mengurusi detail protokol. Dengan membuat sebuah instance, Anda membangun sesi aman yang dapat menanyakan ukuran kotak surat, menelusuri folder, dan melakukan operasi pesan tanpa menulis kode HTTP tingkat rendah.
+
+## Mengapa menggunakan Aspose.Email untuk Java dengan Exchange?
+Aspose.Email mendukung **50+** format input dan output serta dapat memproses kotak surat dengan **ratusan ribu item** tanpa memuat seluruh penyimpanan ke memori, berkat arsitektur streaming‑nya. Perpustakaan ini juga menyediakan logika retry bawaan dan dukungan TLS 1.2+, memberikan akses yang andal dan berkecepatan tinggi ke data Exchange.
 
 ## Prasyarat
 
-Sebelum melanjutkan, pastikan Anda memiliki:
+1. **Pustaka & dependensi**  
+   - Aspose.Email untuk Java (v25.4+)  
 
-1. **Perpustakaan & Ketergantungan:**
-   - Aspose.Email untuk Java (Versi 25.4 atau lebih baru)
+2. **Lingkungan pengembangan**  
+   - JDK 16 atau yang lebih baru  
+   - Maven (untuk manajemen dependensi)  
 
-2. **Persyaratan Pengaturan Lingkungan:**
-   - Java Development Kit (JDK) versi 16 atau lebih tinggi yang berfungsi.
-   - Maven terinstal di sistem Anda.
-
-3. **Prasyarat Pengetahuan:**
-   - Pemahaman dasar tentang pemrograman Java dan keakraban dengan pengaturan proyek Maven.
+3. **Pengetahuan dasar**  
+   - Familiaritas dengan sintaks Java dan struktur proyek Maven  
 
 ## Menyiapkan Aspose.Email untuk Java
 
-Untuk mengintegrasikan Aspose.Email ke dalam proyek Java Anda, ikuti langkah-langkah berikut:
-
 ### Menggunakan Maven
 
-Tambahkan dependensi berikut ke `pom.xml` file untuk menyertakan Aspose.Email dalam proyek Anda:
+Tambahkan dependensi Aspose.Email ke `pom.xml` Anda:
 
 ```xml
 <dependency>
@@ -55,28 +117,28 @@ Tambahkan dependensi berikut ke `pom.xml` file untuk menyertakan Aspose.Email da
 </dependency>
 ```
 
-### Akuisisi Lisensi
+### Perolehan lisensi
 
 Aspose.Email menawarkan beberapa opsi lisensi:
-- **Uji Coba Gratis:** Mulailah dengan uji coba gratis untuk menjelajahi fitur-fiturnya.
-- **Lisensi Sementara:** Dapatkan lisensi sementara untuk akses penuh selama pengembangan.
-- **Pembelian:** Dapatkan lisensi permanen untuk penggunaan produksi.
+- **Trial gratis:** Jelajahi semua fitur tanpa kunci lisensi.  
+- **Lisensi sementara:** Dapatkan kunci berjangka waktu untuk pengembangan dan pengujian.  
+- **Lisensi permanen:** Diperlukan untuk penyebaran produksi.
 
-Untuk informasi lebih lanjut, kunjungi [Aspose Pembelian](https://purchase.aspose.com/buy) atau meminta [lisensi sementara](https://purchase.aspose.com/temporary-license/).
+Untuk detail pembelian, kunjungi [Aspose Purchase](https://purchase.aspose.com/buy) atau minta [lisensi sementara](https://purchase.aspose.com/temporary-license/). Anda juga dapat melihat [halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk informasi tambahan.
 
-### Inisialisasi Dasar
+### Inisialisasi dasar
 
-Berikut cara menyiapkan lingkungan awal Anda:
+Berikut adalah kerangka yang akan Anda lengkapi nanti dengan detail server Anda:
 
 ```java
 import com.aspose.email.ExchangeClient;
 
 public class AsposeSetup {
     public static void main(String[] args) {
-        String serverUrl = "https://NamaMesin/pertukaran/NamaPengguna";
-        String username = "Username"; // Nama pengguna Exchange Anda
-        String password = "password"; // Kata sandi Exchange Anda
-        String domain = "domain";     // Domain untuk otentikasi
+        String serverUrl = "https://MachineName/exchange/Username";
+        String username = "Username"; // Your Exchange username
+        String password = "password"; // Your Exchange password
+        String domain = "domain";     // Domain for authentication
 
         ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
         System.out.println("Exchange Client Initialized Successfully!");
@@ -84,59 +146,61 @@ public class AsposeSetup {
 }
 ```
 
-## Panduan Implementasi
+## Panduan implementasi
 
 ### Inisialisasi `ExchangeClient`
 
-**Ringkasan:** Fitur ini menunjukkan cara membuat instance `ExchangeClient` menggunakan kredensial server.
+**Bagaimana cara menginisialisasi ExchangeClient Java?**  
+Buat objek `ExchangeClient` dengan menyediakan URL server Exchange, nama pengguna, kata sandi, dan domain. Konstruktor akan memvalidasi kredensial dan membangun sesi aman yang siap untuk kueri kotak surat.
 
-#### Langkah 1: Tentukan Kredensial
+#### Langkah 1: definisikan kredensial
 
 ```java
-// Siapkan detail dan kredensial server Exchange Anda
-String serverUrl = "https://NamaMesin/pertukaran/NamaPengguna";
-String username = "Username"; // Nama pengguna Exchange Anda
-String password = "password"; // Kata sandi Exchange Anda
-domain = "domain";           // Domain untuk otentikasi
+// Set up your Exchange server details and credentials
+String serverUrl = "https://MachineName/exchange/Username";
+String username = "Username"; // Your Exchange username
+String password = "password"; // Your Exchange password
+domain = "domain";           // Domain for authentication
 ```
 
-#### Langkah 2: Inisialisasi Klien
+#### Langkah 2: buat instance klien
 
 ```java
-// Inisialisasi ExchangeClient dengan kredensial yang disediakan
+// Initialize the ExchangeClient with provided credentials
 ExchangeClient client = new ExchangeClient(serverUrl, username, password, domain);
-```
-**Penjelasan:** Langkah ini membuat koneksi ke server Exchange Anda menggunakan kredensial yang ditentukan.
+```  
+**Penjelasan:** Kode ini membuka saluran yang dilindungi TLS ke endpoint Exchange Web Services dan mengotentikasi pengguna yang diberikan.
 
-### Ambil Informasi Kotak Surat
+### Mengambil informasi kotak surat
 
-**Ringkasan:** Ambil informasi terperinci tentang kotak surat dari server Exchange menggunakan inisialisasi `ExchangeClient`.
+**Bagaimana cara mengambil informasi kotak surat dengan ExchangeClient?**  
+Panggil `client.getMailboxInfo()` untuk memperoleh objek `MailboxInfo` yang berisi ukuran, jumlah item, dan URI untuk folder standar seperti Inbox, Sent Items, Drafts, dan Deleted Items.
 
-#### Langkah 1: Asumsikan Inisialisasi
+#### Langkah 1: asumsikan klien telah diinisialisasi
 
-Pastikan bahwa `client` sudah diinisialisasi seperti ditunjukkan pada bagian sebelumnya.
+(Gunakan instance `client` yang dibuat pada bagian sebelumnya.)
 
-#### Langkah 2: Ambil Ukuran Kotak Surat
+#### Langkah 2: dapatkan ukuran kotak surat
 
 ```java
-// Dapatkan ukuran kotak surat
+// Obtain the size of the mailbox
 long mailboxSize = client.getMailboxSize();
 System.out.println("Mailbox Size: " + mailboxSize);
 ```
 
-#### Langkah 3: Dapatkan Informasi Terperinci
+#### Langkah 3: ambil info detail
 
 ```java
 import com.aspose.email.ExchangeMailboxInfo;
 
-// Ambil informasi terperinci tentang kotak surat
+// Fetch detailed information about the mailbox
 ExchangeMailboxInfo mailboxInfo = client.getMailboxInfo();
 ```
 
-#### Langkah 4: Ekstrak URI Kotak Surat
+#### Langkah 4: ekstrak URI folder
 
 ```java
-// Ambil berbagai URI dari info kotak surat
+// Retrieve various URIs from the mailbox info
 String mailboxUri = mailboxInfo.getMailboxUri();
 String inboxUri = mailboxInfo.getInboxUri();
 String sentItemsUri = mailboxInfo.getSentItemsUri();
@@ -144,69 +208,85 @@ String draftsUri = mailboxInfo.getDraftsUri();
 
 System.out.println("Mailbox URI: " + mailboxUri);
 System.out.println("Inbox URI: " + inboxUri);
-// URI tambahan dapat dicetak dengan cara yang sama
-```
-**Penjelasan:** Langkah ini mengekstrak URI penting untuk berbagai bagian kotak surat, yang memungkinkan interaksi lebih lanjut seperti mengirim email atau mengakses draf.
+// Additional URIs can be printed similarly
+```  
+**Penjelasan:** URI yang dikembalikan memungkinkan Anda melakukan operasi lanjutan—seperti menelusuri pesan atau memindahkan item—tanpa harus membangun kembali detail koneksi.
 
-### Tips Pemecahan Masalah
+## Tips pemecahan masalah
 
-- **Masalah Autentikasi:** Periksa kembali nama pengguna, kata sandi, dan domain Anda.
-- **Konektivitas Jaringan:** Pastikan tidak ada masalah jaringan antara server Anda dan server Exchange.
-- **Versi Perpustakaan:** Konfirmasikan bahwa Anda menggunakan versi Aspose.Email yang kompatibel.
+- **Kegagalan otentikasi:** Verifikasi nama pengguna, kata sandi, domain, dan pastikan akun memiliki akses EWS.  
+- **Masalah jaringan:** Pastikan aturan firewall mengizinkan HTTPS keluar ke server Exchange.  
+- **Ketidaksesuaian versi:** Gunakan Aspose.Email v25.4+ untuk Exchange 2016/2019 dan Exchange Online.
 
-## Aplikasi Praktis
+## Aplikasi praktis
 
-1. **Manajemen Email Otomatis:** Jadwalkan pengambilan email rutin untuk tujuan analisis data atau pengarsipan.
-2. **Integrasi dengan Sistem CRM:** Sinkronkan email langsung ke sistem CRM untuk meningkatkan pelacakan interaksi pelanggan.
-3. **Solusi Pengarsipan Email:** Terapkan proses pengarsipan otomatis berdasarkan ukuran kotak surat dan log aktivitas.
-4. **Audit Keamanan:** Ambil metadata email untuk pemeriksaan kepatuhan dan audit keamanan.
-5. **Komunikasi Lintas Platform:** Memfasilitasi komunikasi yang lancar antara berbagai platform dengan mengintegrasikan dengan server Exchange.
+1. **Arsip email otomatis:** Secara periodik tarik ukuran kotak surat dan arsipkan item lama untuk mengurangi biaya penyimpanan.  
+2. **Integrasi CRM:** Sinkronkan email pelanggan yang masuk langsung ke basis data CRM Anda.  
+3. **Pelaporan kepatuhan:** Hasilkan log audit aktivitas kotak surat untuk keperluan regulasi.  
+4. **Messaging lintas‑platform:** Jembatani Exchange on‑premise dengan layanan cloud menggunakan basis kode Java yang sama.  
+5. **Pemrosesan email terdistribusi:** Sebarkan kueri kotak surat ke beberapa instance JVM untuk skalabilitas.
 
-## Pertimbangan Kinerja
+## Pertimbangan kinerja
 
-### Mengoptimalkan Kinerja
-- Perbarui secara berkala ke versi Aspose.Email terbaru untuk peningkatan kinerja.
-- Cache data yang sering diakses jika memungkinkan.
+### Mengoptimalkan kinerja
+- Jaga Aspose.Email tetap terbaru; setiap rilis menyertakan perbaikan penggunaan memori.  
+- Cache data statis seperti URI folder saat memproses banyak pesan.  
 
-### Pedoman Penggunaan Sumber Daya
-- Pantau konsumsi memori, terutama saat menangani kotak surat besar.
-- Gunakan algoritma dan struktur data yang efisien dalam kode Java Anda.
+### Pedoman penggunaan sumber daya
+- Pantau heap JVM ketika menangani kotak surat lebih besar dari 5 GB.  
+- Pilih API streaming (`client.listMessages()`) untuk menghindari pemuatan seluruh folder ke memori.  
 
-### Praktik Terbaik
-- Batasi cakupan interaksi kotak surat hanya pada operasi yang diperlukan.
-- Terapkan penanganan kesalahan untuk mengelola respons server yang tidak diharapkan dengan baik.
+### Praktik terbaik
+- Batasi setiap permintaan ke folder terkecil yang diperlukan.  
+- Implementasikan logika retry untuk gangguan jaringan yang bersifat sementara.  
 
 ## Kesimpulan
 
-Anda sekarang telah menguasai inisialisasi `ExchangeClient` dan mengambil informasi kotak surat menggunakan Aspose.Email untuk Java. Kemampuan ini memungkinkan solusi manajemen email yang canggih, yang memungkinkan integrasi yang lancar dengan server Exchange. Apa selanjutnya? Pertimbangkan untuk menjelajahi fitur yang lebih canggih atau mengintegrasikan fungsi ini ke dalam proyek yang lebih besar.
+Anda kini tahu cara **initialize exchangeclient java**, terhubung ke server Exchange, dan mengambil informasi kotak surat yang komprehensif menggunakan Aspose.Email untuk Java. Langkah‑langkah ini menjadi dasar bagi otomatisasi email yang canggih, analitik, dan solusi kepatuhan. Selanjutnya, jelajahi pengambilan pesan, sinkronisasi folder, atau integrasi kalender untuk memperluas kemampuan aplikasi Anda.
 
-**Ajakan Bertindak:** Terapkan solusi ini dalam proyek Anda untuk menyederhanakan interaksi email Anda!
+**Ajakan bertindak:** Integrasikan kode ini ke lapisan layanan Anda hari ini dan mulailah mengotomatisasi manajemen kotak surat dengan percaya diri.
 
-## Bagian FAQ
+## Pertanyaan yang sering diajukan
 
-1. **Apa itu Aspose.Email untuk Java?**
-   - Ini adalah pustaka yang memungkinkan Anda bekerja dengan email, kalender, dan tugas secara terprogram menggunakan Java.
-2. **Bagaimana cara menangani kotak surat besar secara efisien?**
-   - Gunakan pagination atau batasi cakupan operasi pengambilan data Anda.
-3. **Dapatkah saya menggunakan kode ini pada versi server Exchange mana pun?**
-   - Aspose.Email mendukung berbagai versi Exchange; verifikasi kompatibilitas untuk fitur tertentu.
-4. **Apa saja kesalahan umum saat menghubungkan ke server Exchange?**
-   - Kegagalan autentikasi, masalah jaringan, atau kredensial yang salah merupakan masalah umum yang perlu dipecahkan.
-5. **Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Email?**
-   - Kunjungi [halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) dan ikuti petunjuk yang diberikan.
+**T: Apa itu Aspose.Email untuk Java?**  
+J: Merupakan pustaka Java yang memungkinkan akses programatik ke data email, kalender, dan tugas melalui POP3, IMAP, SMTP, dan server Exchange.
+
+**T: Bagaimana cara menangani kotak surat dengan jutaan item secara efisien?**  
+J: Gunakan paging (`client.listMessages(pageSize, pageNumber)`) dan proses item dalam batch untuk menjaga konsumsi memori tetap rendah.
+
+**T: Apakah ini bekerja dengan Exchange Online (Office 365)?**  
+J: Ya—Aspose.Email mendukung Exchange Online melalui endpoint EWS yang sama; cukup gunakan URL Office 365 dan kredensial OAuth yang sesuai.
+
+**T: Kesalahan umum apa yang muncul saat terhubung ke Exchange?**  
+J: Kesalahan tipikal meliputi `401 Unauthorized` (kredensial salah), `404 Not Found` (URL EWS tidak tepat), dan kegagalan handshake TLS (pengaturan keamanan Java usang).
+
+**T: Di mana saya dapat memperoleh lisensi sementara untuk pengujian?**  
+J: Kunjungi halaman [temporary license](https://purchase.aspose.com/temporary-license/) dan ikuti proses permintaan cepat.
 
 ## Sumber daya
 
-- **Dokumentasi:** Untuk referensi API terperinci, kunjungi [Dokumentasi Email Aspose](https://reference.aspose.com/email/java/).
-- **Unduh:** Dapatkan versi terbaru dari [Rilis Aspose](https://releases.aspose.com/email/java/).
-- **Beli Lisensi:** Jika Anda siap untuk membeli lisensi, kunjungi [Aspose Pembelian](https://purchase.aspose.com/buy).
-- **Uji Coba Gratis:** Cobalah Aspose.Email dengan uji coba gratis yang tersedia di [Uji Coba Gratis Aspose](https://releases.aspose.com/email/java/).
-- **Mendukung**
+- **Dokumentasi:** Untuk referensi API detail, kunjungi [Aspose Email Documentation](https://reference.aspose.com/email/java/).  
+- **Unduhan:** Dapatkan versi terbaru dari [Aspose Releases](https://releases.aspose.com/email/java/).  
+- **Pembelian lisensi:** Jika Anda siap untuk produksi, buka [Aspose Purchase](https://purchase.aspose.com/buy).  
+- **Trial gratis:** Coba Aspose.Email dengan trial gratis di [Aspose Free Trials](https://releases.aspose.com/email/java/).  
+- **Dukungan:** Hubungi portal dukungan resmi Aspose untuk bantuan pribadi.
+
+---
+
+**Terakhir diperbarui:** 2026-09-27  
+**Diuji dengan:** Aspose.Email untuk Java 25.4  
+**Penulis:** Aspose
+
+## Tutorial Terkait
+
+- [How to Connect to Microsoft Exchange Server Using Aspose.Email for Java and EWS](/email/java/exchange-server-integration/connect-exchange-server-aspose-email-ews-java/)
+- [Efficiently Connect and List Exchange Messages Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/)
+- [How to Connect and List Exchange Server Folders Using Aspose.Email for Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
