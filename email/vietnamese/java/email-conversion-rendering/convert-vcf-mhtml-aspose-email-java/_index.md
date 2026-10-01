@@ -62,11 +62,13 @@ url: /vi/java/email-conversion-rendering/convert-vcf-mhtml-aspose-email-java/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # Cách Chuyển Đổi Danh Bạ VCF Sang MHTML Sử Dụng Aspose.Email cho Java
 
 ## Giới thiệu
@@ -226,13 +228,13 @@ A: Xử lý danh bạ theo lô, sử dụng I/O bất đồng bộ, và tái s�
 - [Quản Lý Danh Bạ Exchange Server với Aspose.Email cho Java: Hướng Dẫn Đầy Đủ](/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/)
 
 
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```java
 MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
@@ -250,3 +252,10 @@ mhtSaveOptions.setRenderedContactFields(ContactFieldsSet.NameInfo | ContactField
 ```java
 eml.save("YOUR_OUTPUT_DIRECTORY" + "ContactsSaqib Razzaq_out.mhtml", mhtSaveOptions);
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

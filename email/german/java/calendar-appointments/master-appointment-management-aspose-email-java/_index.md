@@ -71,11 +71,13 @@ url: /de/java/calendar-appointments/master-appointment-management-aspose-email-j
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # Meisterhafte Terminverwaltung mit Aspose.Email Java: Ein umfassender Leitfaden zur EWS API-Integration
 
 ## Einleitung
@@ -271,11 +273,9 @@ A: Absolut – es ist für Unternehmensumgebungen konzipiert und kann Hochvolume
 - [Meisterhaftes Erstellen und Speichern von Kalenderelementen mit Aspose.Email für Java](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
 - [Kalenderfreigabeeinladung mit Aspose.Email für Java erstellen](/email/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/)
 
+{{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< blocks/products/pf/main-wrap-class >}}

@@ -50,11 +50,13 @@ url: /cs/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email-java
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # Jak používat Aspose.Email pro Java: Extrahovat e‑maily ze Zimbra TGZ archivů
 
 ## Úvod
@@ -246,13 +248,13 @@ A: Uložte každý `MailMessage` jako EML, JSON nebo XML pomocí `SaveOptions` a
 - [Load and Display EML Emails Efficiently with Aspose.Email for Java](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
 
 
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```xml
 <dependency>
@@ -303,3 +305,10 @@ public class ExampleUtils {
 String dataDir = ExampleUtils.getSharedDataDir(ExampleUtils.class) + "email/";
 // 'dataDir' now points to a specific subdirectory for email-related operations.
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

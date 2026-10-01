@@ -60,11 +60,13 @@ url: /zh-hant/java/email-conversion-rendering/convert-vcf-mhtml-aspose-email-jav
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # 如何使用 Aspose.Email for Java 將 VCF 聯絡人轉換為 MHTML
 
 ## 介紹
@@ -211,13 +213,13 @@ MailMessage eml = msg.toMailMessage(op);
 - [如何使用 Aspose.Email for Java 載入與儲存電子郵件為 MHTML：完整指南](/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/)
 - [使用 Aspose.Email for Java 管理 Exchange Server 聯絡人：完整指南](/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/)
 
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```java
 MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
@@ -235,3 +237,10 @@ mhtSaveOptions.setRenderedContactFields(ContactFieldsSet.NameInfo | ContactField
 ```java
 eml.save("YOUR_OUTPUT_DIRECTORY" + "ContactsSaqib Razzaq_out.mhtml", mhtSaveOptions);
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
