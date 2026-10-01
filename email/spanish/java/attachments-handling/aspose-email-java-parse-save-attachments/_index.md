@@ -13,15 +13,10 @@ url: /es/java/attachments-handling/aspose-email-java-parse-save-attachments/
 weight: 1
 ---
 
- jdk16)"
 
-**Author:** Aspose -> "**Autor:** Aspose"
 
-Then closing shortcodes.
 
-Now ensure we keep all shortcodes unchanged.
 
-Let's assemble final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 

@@ -12,19 +12,13 @@ url: /ar/java/attachments-handling/aspose-email-java-parse-save-attachments/
 weight: 1
 ---
 
-.Email for Java 25.4 (jdk16 classifier) (keep)
 
-**Author:** Aspose (keep)
 
-Close shortcode.
 
-Then remaining shortcodes.
 
-Now produce final content with same markdown.
 
-Make sure to keep code block placeholders unchanged.
 
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 

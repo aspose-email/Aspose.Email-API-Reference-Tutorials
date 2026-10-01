@@ -13,15 +13,10 @@ url: /fr/java/attachments-handling/aspose-email-java-parse-save-attachments/
 weight: 1
 ---
 
- in cells.
 
-Let's translate table rows.
 
-Issue column: "Issue" -> "Problème". "Solution" -> "Solution". Then each row content.
 
-Also translate FAQ questions and answers.
 
-Let's produce final output.
 
 {{< blocks/products/pf/main-wrap-class >}}
 

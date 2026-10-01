@@ -12,13 +12,10 @@ url: /it/java/attachments-handling/aspose-email-java-parse-save-attachments/
 weight: 1
 ---
 
- Aspose" keep.
 
-Then closing shortcodes.
 
-Make sure to keep markdown formatting.
 
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/pf/main-container >}}
 
