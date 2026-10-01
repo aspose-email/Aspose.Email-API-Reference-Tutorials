@@ -64,11 +64,13 @@ url: /hu/java/attachments-handling/
 weight: 4
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # E‑mail mellékletek kinyerése Java‑val az Aspose.Email segítségével – Teljes útmutató
 
 Ebben a központban mindent megtudhat, amire szüksége van az **e‑mail mellékletek** kinyeréséhez a leggyakoribb levélformátumokból az Aspose.Email for Java használatával. Akár levelezésfeldolgozó szolgáltatást épít, Outlook adatokat archivál, vagy egyszerűen csak fájlokat szeretne kinyerni MSG, EML vagy PST üzenetekből, ezek a lépésről‑lépésre útmutatók gyorsan és megbízhatóan megmutatják, hogyan teheti meg. **extract email attachments java** a fő feladat, és az Aspose.Email a legátfogóbb Java API‑t biztosítja ennek elvégzéséhez.
@@ -172,10 +174,9 @@ A: Ha a `Attachment.save()`‑t használja, a könyvtár automatikusan kezeli a 
 - [Hogyan nyerjünk ki e‑mail mellékleteket EML fájlokból az Aspose.Email for Java segítségével – Teljes útmutató](/email/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
 - [E‑mail mellékletek kinyerése Java‑ban – Aspose.Email PST fájlokhoz – Lépésről‑lépésre útmutató](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< blocks/products/pf/main-wrap-class >}}

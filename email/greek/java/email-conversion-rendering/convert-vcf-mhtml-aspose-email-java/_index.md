@@ -62,11 +62,13 @@ url: /el/java/email-conversion-rendering/convert-vcf-mhtml-aspose-email-java/
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # Πώς να Μετατρέψετε Επαφές VCF σε MHTML Χρησιμοποιώντας το Aspose.Email για Java
 
 ## Εισαγωγή
@@ -214,13 +216,13 @@ MailMessage eml = msg.toMailMessage(op);
 - [Πώς να Φορτώσετε και Αποθηκεύσετε Emails ως MHTML Χρησιμοποιώντας το Aspose.Email για Java: Ένας Πλήρης Οδηγός](/email/java/email-message-operations/load-save-emails-mhtml-aspose-java/)
 - [Διαχείριση Επαφών Exchange Server με Aspose.Email για Java: Ένας Πλήρης Οδηγός](/email/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/)
 
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```java
 MhtSaveOptions mhtSaveOptions = new MhtSaveOptions();
@@ -238,3 +240,10 @@ mhtSaveOptions.setRenderedContactFields(ContactFieldsSet.NameInfo | ContactField
 ```java
 eml.save("YOUR_OUTPUT_DIRECTORY" + "ContactsSaqib Razzaq_out.mhtml", mhtSaveOptions);
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

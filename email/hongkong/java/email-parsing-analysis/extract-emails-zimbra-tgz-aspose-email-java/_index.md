@@ -49,11 +49,13 @@ url: /zh-hant/java/email-parsing-analysis/extract-emails-zimbra-tgz-aspose-email
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # 如何使用 Aspose.Email for Java：從 Zimbra TGZ 檔案中提取電子郵件
 
 ## 簡介
@@ -241,13 +243,13 @@ Aspose.Email 提供完整且高效能的解決方案，用於從 Zimbra TGZ 檔�
 - [使用 Aspose.Email for Java 提取電子郵件附件](/email/java/advanced-email-attachments/)
 - [使用 Aspose.Email for Java 高效載入與顯示 EML 電子郵件](/email/java/email-message-operations/load-display-eml-emails-aspose-java/)
 
-{{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
 
-{{< /blocks/products/pf/main-container >}}
 
-{{< blocks/products/pf/main-wrap-class >}}
+
+
+
+
 
 ```xml
 <dependency>
@@ -298,3 +300,10 @@ public class ExampleUtils {
 String dataDir = ExampleUtils.getSharedDataDir(ExampleUtils.class) + "email/";
 // 'dataDir' now points to a specific subdirectory for email-related operations.
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

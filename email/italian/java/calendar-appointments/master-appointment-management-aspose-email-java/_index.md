@@ -71,11 +71,13 @@ url: /it/java/calendar-appointments/master-appointment-management-aspose-email-j
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # Gestione Avanzata degli Appuntamenti con Aspose.Email Java: Guida Completa all'Integrazione dell'API EWS
 
 ## Introduzione
@@ -273,11 +275,9 @@ A: Assolutamente – è progettato per ambienti enterprise e può gestire operaz
 - [Guida completa alla creazione e salvataggio di elementi del calendario con Aspose.Email per Java](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
 - [Crea Invito di Condivisione del Calendario con Aspose.Email per Java](/email/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/)
 
+{{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< blocks/products/pf/main-wrap-class >}}

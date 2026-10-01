@@ -54,11 +54,13 @@ url: /zh-hant/java/email-message-operations/aspose-email-java-eml-embedded-messa
 weight: 1
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
+
 # 如何使用 Aspose.Email for Java 在 EML 檔案中保留嵌入式訊息
 
 ## 介紹
@@ -218,11 +220,9 @@ A: 確認附件的內容串流可存取，並升級至最新的 Aspose.Email 版
 - [Preserve TNEF Attachments in EML Files Using Aspose.Email for Java - A Comprehensive Guide](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
 - [Master Email Processing in Java&#58; Load EML Files with Aspose.Email](/email/java/email-message-operations/master-email-processing-java-aspose-email/)
 
+{{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-container >}}
-
-{{< blocks/products/pf/main-wrap-class >}}
