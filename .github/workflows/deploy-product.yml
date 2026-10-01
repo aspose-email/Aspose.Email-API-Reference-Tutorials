@@ -1,0 +1,31 @@
+name: Build and Deploy Tutorials
+
+# PILOT (see aspose-tutorials-workflows PR plan): calls the new reusable
+# deploy-product.yml workflow directly instead of relying on
+# CopyChangesToThemeRepo (main.yml) + a manual trigger of
+# aspose-tutorials-workflows. `push:` is deliberately commented out while
+# this is being verified by hand via workflow_dispatch -- re-enable it,
+# and remove main.yml's Copycat step, once a manual run has been diffed
+# clean against today's pipeline.
+
+on:
+  # push:
+  #   branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    strategy:
+      matrix:
+        environment: [production, staging]
+    uses: Aspose/aspose-tutorials-workflows/.github/workflows/deploy-product.yml@main
+    with:
+      product: email
+      environment: ${{ matrix.environment }}
+    secrets:
+      REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      CEPH_S3_LIVE_ACCESS_KEY: ${{ secrets.CEPH_S3_LIVE_ACCESS_KEY }}
+      CEPH_S3_LIVE_SECRET_KEY: ${{ secrets.CEPH_S3_LIVE_SECRET_KEY }}
+      CEPH_S3_QA_ACCESS_KEY: ${{ secrets.CEPH_S3_QA_ACCESS_KEY }}
+      CEPH_S3_QA_SECRET_KEY: ${{ secrets.CEPH_S3_QA_SECRET_KEY }}
+      BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
