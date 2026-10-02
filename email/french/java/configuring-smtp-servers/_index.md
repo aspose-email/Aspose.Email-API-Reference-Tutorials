@@ -178,7 +178,6 @@ R : La bibliothèque n’impose aucune limite de taille intrinsèque ; vous 
 **Testé avec :** Aspose.Email for Java 24.12  
 **Auteur :** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Tutoriels associés
 

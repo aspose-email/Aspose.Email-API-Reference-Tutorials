@@ -188,7 +188,6 @@ A: ライブラリ自体にサイズ制限はありませんが、SMTP プロバ
 **テスト環境:** Aspose.Email for Java 24.12  
 **作者:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## 関連チュートリアル
 

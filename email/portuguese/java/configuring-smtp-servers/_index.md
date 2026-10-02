@@ -176,7 +176,6 @@ A: A biblioteca não impõe limite de tamanho inerente; você deve respeitar o t
 **Testado com:** Aspose.Email for Java 24.12  
 **Autor:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Tutoriais Relacionados
 

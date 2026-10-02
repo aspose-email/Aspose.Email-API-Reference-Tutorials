@@ -187,7 +187,6 @@ A: 该库本身没有固有的大小限制；您必须遵守 SMTP 提供商的�
 **测试环境：** Aspose.Email for Java 24.12  
 **作者：** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## 相关教程
 

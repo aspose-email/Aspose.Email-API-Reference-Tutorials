@@ -176,7 +176,6 @@ A: ไลบรารีไม่มีขีดจำกัดขนาดไ�
 **Tested With:** Aspose.Email for Java 24.12  
 **Author:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## บทแนะนำที่เกี่ยวข้อง
 

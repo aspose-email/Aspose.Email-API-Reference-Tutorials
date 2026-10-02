@@ -173,7 +173,6 @@ A: 函式庫本身沒有大小限制；你需要遵守 SMTP 供應商的最大�
 **測試環境：** Aspose.Email for Java 24.12  
 **作者：** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## 相關教學
 

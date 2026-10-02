@@ -175,7 +175,6 @@ A: The library imposes no inherent size limit; you must respect the maximum mess
 **Tested With:** Aspose.Email for Java 24.12  
 **Author:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Relaterade handledningar
 
