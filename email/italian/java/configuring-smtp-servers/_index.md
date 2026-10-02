@@ -177,7 +177,6 @@ A: La libreria non impone limiti di dimensione intrinseci; devi rispettare la di
 **Testato con:** Aspose.Email for Java 24.12  
 **Autore:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Tutorial correlati
 

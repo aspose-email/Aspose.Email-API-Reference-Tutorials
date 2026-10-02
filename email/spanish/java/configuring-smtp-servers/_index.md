@@ -178,7 +178,6 @@ Aprende a integrar múltiples servidores SMTP sin problemas con Aspose.Email for
 **Probado con:** Aspose.Email for Java 24.12  
 **Autor:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Tutoriales relacionados
 

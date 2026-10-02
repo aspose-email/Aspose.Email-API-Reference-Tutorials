@@ -180,7 +180,6 @@ A: A könyvtár nem szab meg saját méretkorlátot; be kell tartania az SMTP sz
 **Tesztelve:** Aspose.Email for Java 24.12  
 **Szerző:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Kapcsolódó útmutatók
 

@@ -174,7 +174,6 @@ A: 라이브러리 자체에 크기 제한은 없으며, SMTP 제공자의 최�
 **테스트 환경:** Aspose.Email for Java 24.12  
 **작성자:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## 관련 튜토리얼
 

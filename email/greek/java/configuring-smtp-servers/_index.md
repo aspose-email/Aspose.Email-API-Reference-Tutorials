@@ -178,7 +178,6 @@ A: Η βιβλιοθήκη δεν επιβάλλει ενσωματωμένο ό
 **Δοκιμάστηκε με:** Aspose.Email for Java 24.12  
 **Συγγραφέας:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Σχετικά Μαθήματα
 

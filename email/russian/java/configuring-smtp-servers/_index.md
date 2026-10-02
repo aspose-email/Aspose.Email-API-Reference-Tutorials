@@ -176,7 +176,6 @@ Aspose.Email предоставляет пошаговые руководств�
 **Тестировано с:** Aspose.Email for Java 24.12  
 **Автор:** Aspose  
 
-{{< blocks/products/pf/backtop-button >}}
 
 ## Связанные руководства
 
